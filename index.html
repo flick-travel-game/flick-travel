@@ -117,6 +117,19 @@ body.playing{overflow:hidden}
 .intro small{color:var(--muted);font-size:13px}
 .intro p{margin:6px 0 0;font-size:14px;line-height:1.75}
 .btns{display:grid;gap:10px}
+/* レベルえらび */
+.lv-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0 4px}
+.lv-head h2{font-size:24px;margin:0}
+.lv-lead{color:var(--muted);margin:0 0 14px;font-size:14px;line-height:1.7}
+.levels{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lv{text-align:left;width:100%;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 14px}
+.lv:active{transform:scale(.98)}
+.lv b{display:block;font-size:17px}
+.lv small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.lv .bt{color:var(--blue);font-weight:700;font-size:13px;margin-top:4px}
+.lv.done{border-color:var(--ok)}
+.intro ruby rt{font-size:.55em;color:var(--muted)}
+.intro p.rb{line-height:2.2}
 .primary{background:var(--blue);color:#fff;border:none;border-radius:12px;padding:16px;font-size:17px;font-weight:700}
 .ghost{background:none;border:2px solid var(--line);border-radius:12px;padding:14px;font-size:15px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -128,7 +141,7 @@ body.playing{overflow:hidden}
   <!-- ホーム -->
   <section id="home">
     <h1 class="title display">世界フリック旅行</h1>
-    <p class="lead">世界の名言や名所を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しよう。</p>
+    <p class="lead">世界の名言や名所を、ひらがなでどれだけ速く打てるか。レベルごとに10問のトータルタイムで勝負しよう。</p>
     <div class="modes">
       <button class="mode" data-mode="quote">
         <div class="ic">📜</div>
@@ -144,6 +157,13 @@ body.playing{overflow:hidden}
       <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
       <p class="rule">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名言や名所も自然と覚えられるよ。</p>
     </div>
+  </section>
+
+  <!-- レベルえらび -->
+  <section id="levels" class="hidden">
+    <div class="lv-head"><h2 class="display" id="lv-title">名所モード</h2><button class="quit" id="lv-back">もどる</button></div>
+    <p class="lv-lead">レベル1がいちばんかんたん。数字が大きいほど、打つ文字が長くなるよ。どのレベルも いつも同じ10問なので、タイムをくらべられる。</p>
+    <div class="levels" id="lv-list"></div>
   </section>
 
   <!-- ゲーム -->
@@ -176,8 +196,9 @@ body.playing{overflow:hidden}
     </div>
     <ul class="list" id="r-list"></ul>
     <div class="btns">
+      <button class="primary hidden" id="next-lv">次のレベルへ</button>
       <button class="primary" id="again">もう一度あそぶ</button>
-      <button class="ghost" id="home-btn">モードをえらぶ</button>
+      <button class="ghost" id="home-btn">レベルをえらぶ</button>
     </div>
   </section>
 </div>
@@ -207,7 +228,15 @@ const QUOTES = [
   {t:"天は人の上に人を造らず、人の下に人を造らず", a:"福沢諭吉", r:"てんはひとのうえにひとをつくらずひとのしたにひとをつくらず", ar:"ふくざわゆきち"},
   {t:"和を以て貴しと為す", a:"聖徳太子", r:"わをもってとうとしとなす", ar:"しょうとくたいし"},
   {t:"それでも地球は動く", a:"ガリレオ", r:"それでもちきゅうはうごく", ar:"がりれお"},
-  {t:"千里の道も一歩から", a:"老子", r:"せんりのみちもいっぽから", ar:"ろうし"}
+  {t:"千里の道も一歩から", a:"老子", r:"せんりのみちもいっぽから", ar:"ろうし"},
+  {t:"時は金なり", a:"フランクリン", r:"ときはかねなり", ar:"ふらんくりん"},
+  {t:"初心忘るべからず", a:"世阿弥", r:"しょしんわするべからず", ar:"ぜあみ"},
+  {t:"彼を知り己を知れば百戦殆うからず", a:"孫子", r:"かれをしりおのれをしればひゃくせんあやうからず", ar:"そんし"},
+  {t:"人間は自由の刑に処せられている", a:"サルトル", r:"にんげんはじゆうのけいにしょせられている", ar:"さるとる"},
+  {t:"知らざるを知らずと為す、是知るなり", a:"孔子", r:"しらざるをしらずとなすこれしるなり", ar:"こうし"},
+  {t:"心頭を滅却すれば火もまた涼し", a:"快川紹喜", r:"しんとうをめっきゃくすればひもまたすずし", ar:"かいせんじょうき"},
+  {t:"人生は近くで見ると悲劇だが、遠くから見れば喜劇だ", a:"チャップリン", r:"じんせいはちかくでみるとひげきだがとおくからみればきげきだ", ar:"ちゃっぷりん"},
+  {t:"私は失敗したことがない。うまくいかない方法を1万通り見つけただけだ", a:"エジソン", r:"わたしはしっぱいしたことがないうまくいかないほうほうをいちまんとおりみつけただけだ", ar:"えじそん"}
 ];
 /* 名所のイラスト（SVG）。写真が読めないときの予備の絵 */
 const R=(x,y,w,h,f)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${f}"/>`;
@@ -403,6 +432,110 @@ const SPOTS = [
   {n:"鎌倉大仏", c:"日本・神奈川", r:"かまくらだいぶつ", art:"kamakura", d:"高さ約11mの青銅の大仏。大仏殿がなくなったため、今は外に座っている。"},
   {n:"アンテロープキャニオン", c:"アメリカ", r:"あんてろーぷきゃにおん", art:"antelope", d:"砂岩が水と風でけずられてできた細い谷。上から差しこむ光で、岩のかべがなみのように光る。"}
 ];
+/* 解説のふりがな(tools/make_ruby.py が作る) RUBY-START */
+const RUBY = {
+ "eiffel": "1889<ruby>年<rt>ねん</rt></ruby>のパリ<ruby>万博<rt>ばんぱく</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせて<ruby>建<rt>た</rt></ruby>てられた<ruby>鉄<rt>てつ</rt></ruby>の<ruby>塔<rt>とう</rt></ruby>。<ruby>完成<rt>かんせい</rt></ruby>したときは<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>建物<rt>たてもの</rt></ruby>で、<ruby>今<rt>いま</rt></ruby>の<ruby>高<rt>たか</rt></ruby>さは<ruby>約<rt>やく</rt></ruby>330m。",
+ "liberty": "アメリカ<ruby>独立<rt>どくりつ</rt></ruby>100<ruby>周年<rt>しゅうねん</rt></ruby>のお<ruby>祝<rt>いわ</rt></ruby>いに、フランスから<ruby>贈<rt>おく</rt></ruby>られた<ruby>像<rt>ぞう</rt></ruby>。<ruby>右手<rt>みぎて</rt></ruby>のたいまつは「<ruby>自由<rt>じゆう</rt></ruby>の<ruby>光<rt>ひかり</rt></ruby>」を<ruby>表<rt>あらわ</rt></ruby>している。",
+ "pyramid": "<ruby>約<rt>やく</rt></ruby>4500<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>に<ruby>王<rt>おう</rt></ruby>のお<ruby>墓<rt>はか</rt></ruby>として<ruby>造<rt>つく</rt></ruby>られた。<ruby>一番<rt>いちばん</rt></ruby><ruby>大<rt>おお</rt></ruby>きいクフ<ruby>王<rt>おう</rt></ruby>のピラミッドは、<ruby>約<rt>やく</rt></ruby>230<ruby>万<rt>まん</rt></ruby><ruby>個<rt>こ</rt></ruby>の<ruby>石<rt>いし</rt></ruby>を<ruby>積<rt>つ</rt></ruby>んでできている。",
+ "wall": "<ruby>北<rt>きた</rt></ruby>からの<ruby>侵入<rt>しんにゅう</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐために、<ruby>長<rt>なが</rt></ruby>い<ruby>年月<rt>としつき</rt></ruby>をかけて<ruby>造<rt>つく</rt></ruby>られた<ruby>城壁<rt>じょうへき</rt></ruby>。<ruby>全長<rt>ぜんちょう</rt></ruby>は2<ruby>万<rt>まん</rt></ruby>km<ruby>以上<rt>いじょう</rt></ruby>といわれている。",
+ "taj": "ムガル<ruby>帝国<rt>ていこく</rt></ruby>の<ruby>皇帝<rt>こうてい</rt></ruby>が、<ruby>亡<rt>な</rt></ruby>くなった<ruby>妃<rt>きさき</rt></ruby>のために<ruby>建<rt>た</rt></ruby>てたお<ruby>墓<rt>はか</rt></ruby>。<ruby>白<rt>しろ</rt></ruby>い<ruby>大理石<rt>だいりせき</rt></ruby>は、<ruby>朝<rt>あさ</rt></ruby>や<ruby>夕方<rt>ゆうがた</rt></ruby>で<ruby>色<rt>いろ</rt></ruby>が<ruby>変<rt>か</rt></ruby>わって<ruby>見<rt>み</rt></ruby>える。",
+ "fuji": "<ruby>標高<rt>ひょうこう</rt></ruby>3776mの<ruby>日本一<rt>にほんいち</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>。2013<ruby>年<rt>ねん</rt></ruby>に<ruby>世界<rt>せかい</rt></ruby><ruby>文化<rt>ぶんか</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>に<ruby>登録<rt>とうろく</rt></ruby>された。",
+ "colosseum": "<ruby>約<rt>やく</rt></ruby>2000<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>に<ruby>造<rt>つく</rt></ruby>られた<ruby>古代<rt>こだい</rt></ruby>ローマの<ruby>円形<rt>えんけい</rt></ruby><ruby>闘技場<rt>とうぎじょう</rt></ruby>。<ruby>約<rt>やく</rt></ruby>5<ruby>万<rt>まん</rt></ruby><ruby>人<rt>にん</rt></ruby>もの<ruby>観客<rt>かんきゃく</rt></ruby>が<ruby>入<rt>い</rt></ruby>れたといわれている。",
+ "machu": "<ruby>標高<rt>ひょうこう</rt></ruby><ruby>約<rt>やく</rt></ruby>2400mの<ruby>山<rt>やま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>にあるインカ<ruby>帝国<rt>ていこく</rt></ruby>の<ruby>遺跡<rt>いせき</rt></ruby>。ふもとから<ruby>見<rt>み</rt></ruby>えないので「<ruby>空中<rt>くうちゅう</rt></ruby><ruby>都市<rt>とし</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ばれる。",
+ "opera": "<ruby>貝殻<rt>かいがら</rt></ruby>や<ruby>船<rt>ふね</rt></ruby>の<ruby>帆<rt>ほ</rt></ruby>のような<ruby>屋根<rt>やね</rt></ruby>が<ruby>目印<rt>めじるし</rt></ruby>の<ruby>劇場<rt>げきじょう</rt></ruby>。1973<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>し、2007<ruby>年<rt>ねん</rt></ruby>に<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になった。",
+ "bigben": "<ruby>国会議事堂<rt>こっかいぎじどう</rt></ruby>の<ruby>時計塔<rt>とけいとう</rt></ruby>にある<ruby>大<rt>おお</rt></ruby>きな<ruby>鐘<rt>かね</rt></ruby>の<ruby>愛称<rt>あいしょう</rt></ruby>。<ruby>塔<rt>とう</rt></ruby>の<ruby>正式<rt>せいしき</rt></ruby>な<ruby>名前<rt>なまえ</rt></ruby>は「エリザベス・タワー」。",
+ "sagrada": "<ruby>建築家<rt>けんちくか</rt></ruby>ガウディが<ruby>設計<rt>せっけい</rt></ruby>した<ruby>教会<rt>きょうかい</rt></ruby>。1882<ruby>年<rt>ねん</rt></ruby>に<ruby>工事<rt>こうじ</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まり、<ruby>今<rt>いま</rt></ruby>も<ruby>建設<rt>けんせつ</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>いている。",
+ "angkor": "12<ruby>世紀<rt>せいき</rt></ruby>に<ruby>造<rt>つく</rt></ruby>られた<ruby>寺院<rt>じいん</rt></ruby>。<ruby>朝日<rt>あさひ</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かぶシルエットが<ruby>有名<rt>ゆうめい</rt></ruby>で、カンボジアの<ruby>国旗<rt>こっき</rt></ruby>にも<ruby>描<rt>えが</rt></ruby>かれている。",
+ "pisa": "<ruby>大聖堂<rt>だいせいどう</rt></ruby>の<ruby>鐘楼<rt>しょうろう</rt></ruby>として12<ruby>世紀<rt>せいき</rt></ruby>に<ruby>建<rt>た</rt></ruby>て<ruby>始<rt>はじ</rt></ruby>められた<ruby>塔<rt>とう</rt></ruby>。<ruby>工事中<rt>こうじちゅう</rt></ruby>から<ruby>地面<rt>じめん</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>んで<ruby>傾<rt>かたむ</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>め、<ruby>今<rt>いま</rt></ruby>も<ruby>約<rt>やく</rt></ruby>4<ruby>度<rt>ど</rt></ruby><ruby>傾<rt>かたむ</rt></ruby>いている。",
+ "arc": "ナポレオンが<ruby>戦<rt>たたか</rt></ruby>いの<ruby>勝利<rt>しょうり</rt></ruby>を<ruby>記念<rt>きねん</rt></ruby>して<ruby>造<rt>つく</rt></ruby>らせた<ruby>門<rt>もん</rt></ruby>。<ruby>完成<rt>かんせい</rt></ruby>は1836<ruby>年<rt>ねん</rt></ruby>で、<ruby>屋上<rt>おくじょう</rt></ruby>からパリの<ruby>街<rt>まち</rt></ruby>を<ruby>見渡<rt>みわた</rt></ruby>せる。",
+ "moai": "<ruby>南<rt>みなみ</rt></ruby><ruby>太平洋<rt>たいへいよう</rt></ruby>のイースター<ruby>島<rt>とう</rt></ruby>に900<ruby>体<rt>たい</rt></ruby><ruby>近<rt>ちか</rt></ruby>くある<ruby>石像<rt>せきぞう</rt></ruby>。<ruby>島<rt>しま</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>祖先<rt>そせん</rt></ruby>をまつるために<ruby>造<rt>つく</rt></ruby>ったと<ruby>考<rt>かんが</rt></ruby>えられている。",
+ "golden": "1937<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した<ruby>全長<rt>ぜんちょう</rt></ruby><ruby>約<rt>やく</rt></ruby>2.7kmのつり<ruby>橋<rt>ばし</rt></ruby>。<ruby>霧<rt>きり</rt></ruby>の<ruby>中<rt>なか</rt></ruby>でも<ruby>目立<rt>めだ</rt></ruby>つよう、<ruby>赤<rt>あか</rt></ruby>みがかったオレンジ<ruby>色<rt>いろ</rt></ruby>に<ruby>塗<rt>ぬ</rt></ruby>られている。",
+ "castle": "バイエルン<ruby>王<rt>おう</rt></ruby>ルートヴィヒ2<ruby>世<rt>せい</rt></ruby>が<ruby>建<rt>た</rt></ruby>てた<ruby>城<rt>しろ</rt></ruby>。おとぎ<ruby>話<rt>ばなし</rt></ruby>のような<ruby>姿<rt>すがた</rt></ruby>で、ディズニーの<ruby>城<rt>しろ</rt></ruby>のモデルの<ruby>一<rt>ひと</rt></ruby>つといわれる。",
+ "basil": "モスクワの<ruby>赤<rt>あか</rt></ruby>の<ruby>広場<rt>ひろば</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ、カラフルなたまねぎ<ruby>形<rt>がた</rt></ruby>の<ruby>屋根<rt>やね</rt></ruby>が<ruby>目印<rt>めじるし</rt></ruby>の<ruby>教会<rt>きょうかい</rt></ruby>。16<ruby>世紀<rt>せいき</rt></ruby>に<ruby>建<rt>た</rt></ruby>てられた。",
+ "stone": "<ruby>約<rt>やく</rt></ruby>5000<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>から<ruby>造<rt>つく</rt></ruby>られ<ruby>始<rt>はじ</rt></ruby>めた<ruby>巨大<rt>きょだい</rt></ruby>な<ruby>石<rt>いし</rt></ruby>の<ruby>遺跡<rt>いせき</rt></ruby>。<ruby>夏至<rt>げし</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>、<ruby>石<rt>いし</rt></ruby>の<ruby>並<rt>なら</rt></ruby>びに<ruby>合<rt>あ</rt></ruby>わせて<ruby>朝日<rt>あさひ</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>るように<ruby>配置<rt>はいち</rt></ruby>されている。",
+ "kinkaku": "<ruby>正式<rt>せいしき</rt></ruby>な<ruby>名前<rt>なまえ</rt></ruby>は<ruby>鹿苑<rt>ろくおん</rt></ruby><ruby>寺<rt>じ</rt></ruby>。<ruby>金箔<rt>きんぱく</rt></ruby>で<ruby>覆<rt>おお</rt></ruby>われた<ruby>建物<rt>たてもの</rt></ruby>が<ruby>池<rt>いけ</rt></ruby>に<ruby>映<rt>うつ</rt></ruby>る<ruby>姿<rt>すがた</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>で、1994<ruby>年<rt>ねん</rt></ruby>に<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>に<ruby>登録<rt>とうろく</rt></ruby>された。",
+ "uluru": "<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>350mの<ruby>巨大<rt>きょだい</rt></ruby>な<ruby>一<rt>いち</rt></ruby><ruby>枚<rt>まい</rt></ruby><ruby>岩<rt>いわ</rt></ruby>。<ruby>先住民<rt>せんじゅうみん</rt></ruby>アボリジニの<ruby>聖地<rt>せいち</rt></ruby>で、2019<ruby>年<rt>ねん</rt></ruby>から<ruby>登<rt>のぼ</rt></ruby>ることが<ruby>禁止<rt>きんし</rt></ruby>されている。",
+ "petra": "<ruby>岩山<rt>いわやま</rt></ruby>を<ruby>削<rt>けず</rt></ruby>って<ruby>造<rt>つく</rt></ruby>られた<ruby>古代<rt>こだい</rt></ruby><ruby>都市<rt>とし</rt></ruby>の<ruby>遺跡<rt>いせき</rt></ruby>。ばら<ruby>色<rt>いろ</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>から「<ruby>バラ色<rt>ばらいろ</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>」とも<ruby>呼<rt>よ</rt></ruby>ばれている。",
+ "mtsaint": "<ruby>海<rt>うみ</rt></ruby>にうかぶ<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ<ruby>修道院<rt>しゅうどういん</rt></ruby>。<ruby>潮<rt>しお</rt></ruby>が<ruby>満<rt>み</rt></ruby>ちると<ruby>島<rt>しま</rt></ruby>のまわりが<ruby>海<rt>うみ</rt></ruby>になり、まわりの<ruby>湾<rt>わん</rt></ruby>とともに<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になっている。",
+ "versailles": "ルイ14<ruby>世<rt>せい</rt></ruby>が<ruby>建<rt>た</rt></ruby>てた<ruby>豪華<rt>ごうか</rt></ruby>な<ruby>宮殿<rt>きゅうでん</rt></ruby>。<ruby>長<rt>なが</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>73mの「<ruby>鏡<rt>かがみ</rt></ruby>の<ruby>間<rt>ま</rt></ruby>」には、357<ruby>枚<rt>まい</rt></ruby>の<ruby>鏡<rt>かがみ</rt></ruby>が<ruby>並<rt>なら</rt></ruby>んでいる。",
+ "notredame": "12<ruby>世紀<rt>せいき</rt></ruby>に<ruby>建<rt>た</rt></ruby>て<ruby>始<rt>はじ</rt></ruby>められたゴシック<ruby>様式<rt>ようしき</rt></ruby>の<ruby>大聖堂<rt>だいせいどう</rt></ruby>。2019<ruby>年<rt>ねん</rt></ruby>の<ruby>火事<rt>かじ</rt></ruby>で<ruby>屋根<rt>やね</rt></ruby>と<ruby>尖塔<rt>せんとう</rt></ruby>が<ruby>焼<rt>や</rt></ruby>けたが、2024<ruby>年<rt>ねん</rt></ruby>に<ruby>再開<rt>さいかい</rt></ruby>した。",
+ "peter": "<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>小<rt>ちい</rt></ruby>さな<ruby>国<rt>くに</rt></ruby>バチカンにある、カトリックの<ruby>総本山<rt>そうほんざん</rt></ruby>の<ruby>教会<rt>きょうかい</rt></ruby>。<ruby>大<rt>おお</rt></ruby>きなドームはミケランジェロが<ruby>設計<rt>せっけい</rt></ruby>した。",
+ "venice": "100<ruby>以上<rt>いじょう</rt></ruby>の<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>がつながった<ruby>水<rt>みず</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>。<ruby>車<rt>くるま</rt></ruby>は<ruby>走<rt>はし</rt></ruby>れず、<ruby>運河<rt>うんが</rt></ruby>をゴンドラや<ruby>水上<rt>すいじょう</rt></ruby>バスで<ruby>移動<rt>いどう</rt></ruby>する。",
+ "florence": "<ruby>赤<rt>あか</rt></ruby>いレンガの<ruby>大<rt>おお</rt></ruby>きなドームが<ruby>目印<rt>めじるし</rt></ruby>の<ruby>大聖堂<rt>だいせいどう</rt></ruby>。ドームはブルネレスキの<ruby>設計<rt>せっけい</rt></ruby>で15<ruby>世紀<rt>せいき</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した。",
+ "pompeii": "<ruby>西暦<rt>せいれき</rt></ruby>79<ruby>年<rt>ねん</rt></ruby>、ベスビオ<ruby>火山<rt>かざん</rt></ruby>の<ruby>噴火<rt>ふんか</rt></ruby>で<ruby>灰<rt>はい</rt></ruby>に<ruby>埋<rt>う</rt></ruby>もれた<ruby>古代<rt>こだい</rt></ruby>ローマの<ruby>町<rt>まち</rt></ruby>。<ruby>発掘<rt>はっくつ</rt></ruby>で<ruby>当時<rt>とうじ</rt></ruby>のくらしの<ruby>様子<rt>ようす</rt></ruby>がわかった。",
+ "parthenon": "<ruby>約<rt>やく</rt></ruby>2500<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>、アテネの<ruby>丘<rt>おか</rt></ruby>アクロポリスに<ruby>建<rt>た</rt></ruby>てられた<ruby>神殿<rt>しんでん</rt></ruby>。<ruby>女神<rt>めがみ</rt></ruby>アテナをまつっている。",
+ "santorini": "エーゲ<ruby>海<rt>かい</rt></ruby>にうかぶ<ruby>島<rt>しま</rt></ruby>。がけの<ruby>上<rt>うえ</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>い<ruby>壁<rt>かべ</rt></ruby>と<ruby>青<rt>あお</rt></ruby>い<ruby>屋根<rt>やね</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>が<ruby>並<rt>なら</rt></ruby>ぶ<ruby>景色<rt>けしき</rt></ruby>で<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "alhambra": "<ruby>イスラム教<rt>いすらむきょう</rt></ruby>の<ruby>王朝<rt>おうちょう</rt></ruby>がグラナダに<ruby>築<rt>きず</rt></ruby>いた<ruby>宮殿<rt>きゅうでん</rt></ruby>。<ruby>細<rt>こま</rt></ruby>かい<ruby>模様<rt>もよう</rt></ruby>の<ruby>壁<rt>かべ</rt></ruby>や、<ruby>水<rt>みず</rt></ruby>を<ruby>使<rt>つか</rt></ruby>った<ruby>美<rt>うつく</rt></ruby>しい<ruby>庭<rt>にわ</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
+ "towerbridge": "テムズ<ruby>川<rt>かわ</rt></ruby>にかかる1894<ruby>年<rt>ねん</rt></ruby><ruby>完成<rt>かんせい</rt></ruby>の<ruby>橋<rt>はし</rt></ruby>。<ruby>大<rt>おお</rt></ruby>きな<ruby>船<rt>ふね</rt></ruby>が<ruby>通<rt>とお</rt></ruby>るときは、<ruby>橋<rt>はし</rt></ruby>の<ruby>真ん中<rt>まんなか</rt></ruby>がはね<ruby>上<rt>あ</rt></ruby>がる。",
+ "edinburgh": "<ruby>火山<rt>かざん</rt></ruby>の<ruby>岩山<rt>いわやま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ<ruby>城<rt>しろ</rt></ruby>。スコットランド<ruby>王家<rt>おうけ</rt></ruby>のかんむりなど「<ruby>三<rt>さん</rt></ruby><ruby>種<rt>しゅ</rt></ruby>の<ruby>宝器<rt>ほうき</rt></ruby>」が<ruby>保管<rt>ほかん</rt></ruby>されている。",
+ "brandenburg": "1791<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した<ruby>門<rt>もん</rt></ruby>。<ruby>東西<rt>とうざい</rt></ruby>ドイツが<ruby>分<rt>わ</rt></ruby>かれていた<ruby>時代<rt>じだい</rt></ruby>は<ruby>壁<rt>かべ</rt></ruby>のそばにあり、<ruby>今<rt>いま</rt></ruby>は<ruby>統一<rt>とういつ</rt></ruby>のシンボルになっている。",
+ "cologne": "1248<ruby>年<rt>ねん</rt></ruby>に<ruby>工事<rt>こうじ</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まり、<ruby>完成<rt>かんせい</rt></ruby>したのは1880<ruby>年<rt>ねん</rt></ruby>。2<ruby>本<rt>ほん</rt></ruby>の<ruby>塔<rt>とう</rt></ruby>の<ruby>高<rt>たか</rt></ruby>さは<ruby>約<rt>やく</rt></ruby>157mある。",
+ "charles": "14<ruby>世紀<rt>せいき</rt></ruby>に<ruby>造<rt>つく</rt></ruby>られた<ruby>石<rt>いし</rt></ruby>の<ruby>橋<rt>はし</rt></ruby>。<ruby>橋<rt>はし</rt></ruby>の<ruby>両側<rt>りょうがわ</rt></ruby>には30<ruby>体<rt>たい</rt></ruby>の<ruby>聖人<rt>せいじん</rt></ruby>の<ruby>像<rt>ぞう</rt></ruby>が<ruby>並<rt>なら</rt></ruby>んでいる。",
+ "matterhorn": "<ruby>標高<rt>ひょうこう</rt></ruby>4478mの、ピラミッドのようにとがった<ruby>山<rt>やま</rt></ruby>。アルプスを<ruby>代表<rt>だいひょう</rt></ruby>する<ruby>山<rt>やま</rt></ruby>のひとつ。",
+ "hagia": "537<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した<ruby>大<rt>おお</rt></ruby>きなドームの<ruby>建物<rt>たてもの</rt></ruby>。<ruby>キリスト教<rt>きりすときょう</rt></ruby>の<ruby>大聖堂<rt>だいせいどう</rt></ruby>から、<ruby>イスラム教<rt>いすらむきょう</rt></ruby>のモスクへと<ruby>役目<rt>やくめ</rt></ruby>が<ruby>変<rt>か</rt></ruby>わってきた。",
+ "cappadocia": "<ruby>火山灰<rt>かざんばい</rt></ruby>が<ruby>固<rt>かた</rt></ruby>まった<ruby>岩<rt>いわ</rt></ruby>が、<ruby>雨<rt>あめ</rt></ruby>や<ruby>風<rt>かぜ</rt></ruby>でけずられてできた<ruby>不思議<rt>ふしぎ</rt></ruby>な<ruby>景色<rt>けしき</rt></ruby>。<ruby>岩<rt>いわ</rt></ruby>をくりぬいた<ruby>家<rt>いえ</rt></ruby>や<ruby>教会<rt>きょうかい</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>っている。",
+ "schonbrunn": "ハプスブルク<ruby>家<rt>か</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>の<ruby>宮殿<rt>きゅうでん</rt></ruby>。<ruby>部屋<rt>へや</rt></ruby>の<ruby>数<rt>かず</rt></ruby>は1400<ruby>以上<rt>いじょう</rt></ruby>あり、6<ruby>歳<rt>さい</rt></ruby>のモーツァルトがここで<ruby>演奏<rt>えんそう</rt></ruby>した。",
+ "kinderdijk": "18<ruby>世紀<rt>せいき</rt></ruby>に<ruby>造<rt>つく</rt></ruby>られた19<ruby>基<rt>き</rt></ruby>の<ruby>風車<rt>ふうしゃ</rt></ruby>が<ruby>並<rt>なら</rt></ruby>ぶ<ruby>場所<rt>ばしょ</rt></ruby>。<ruby>低<rt>ひく</rt></ruby>い<ruby>土地<rt>とち</rt></ruby>から<ruby>水<rt>みず</rt></ruby>をくみ<ruby>出<rt>だ</rt></ruby>して、<ruby>洪水<rt>こうずい</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>いできた。",
+ "britishmuseum": "1753<ruby>年<rt>ねん</rt></ruby>につくられた<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>博物館<rt>はくぶつかん</rt></ruby>。ロゼッタストーンなど、<ruby>約<rt>やく</rt></ruby>800<ruby>万<rt>まん</rt></ruby><ruby>点<rt>てん</rt></ruby>の<ruby>品物<rt>しなもの</rt></ruby>を<ruby>持<rt>も</rt></ruby>っている。",
+ "trevi": "1762<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した<ruby>大<rt>おお</rt></ruby>きな<ruby>噴水<rt>ふんすい</rt></ruby>。<ruby>後ろ向<rt>うしろむ</rt></ruby>きにコインを<ruby>投げ入<rt>なげい</rt></ruby>れると、またローマに<ruby>来<rt>こ</rt></ruby>られるといわれる。",
+ "kiyomizu": "がけの<ruby>上<rt>うえ</rt></ruby>にせり<ruby>出<rt>だ</rt></ruby>した「<ruby>清水<rt>きよみず</rt></ruby>の<ruby>舞台<rt>ぶたい</rt></ruby>」で<ruby>有名<rt>ゆうめい</rt></ruby>なお<ruby>寺<rt>てら</rt></ruby>。<ruby>舞台<rt>ぶたい</rt></ruby>は<ruby>釘<rt>くぎ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>わずに<ruby>木<rt>き</rt></ruby>を<ruby>組<rt>く</rt></ruby>んで<ruby>造<rt>つく</rt></ruby>られている。",
+ "itsukushima": "<ruby>海<rt>うみ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ<ruby>神社<rt>じんじゃ</rt></ruby>。<ruby>満潮<rt>まんちょう</rt></ruby>になると、<ruby>大鳥居<rt>おおとりい</rt></ruby>が<ruby>海<rt>うみ</rt></ruby>にうかんでいるように<ruby>見<rt>み</rt></ruby>える。",
+ "himeji": "<ruby>白<rt>しろ</rt></ruby>い<ruby>壁<rt>かべ</rt></ruby>が<ruby>美<rt>うつく</rt></ruby>しく「<ruby>白鷺<rt>しらさぎ</rt></ruby><ruby>城<rt>じょう</rt></ruby>」とも<ruby>呼<rt>よ</rt></ruby>ばれる。1993<ruby>年<rt>ねん</rt></ruby>、<ruby>法隆寺<rt>ほうりゅうじ</rt></ruby>とともに<ruby>日本<rt>にほん</rt></ruby>で<ruby>最初<rt>さいしょ</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になった。",
+ "todaiji": "<ruby>奈良<rt>なら</rt></ruby><ruby>時代<rt>じだい</rt></ruby>に<ruby>聖武<rt>しょうむ</rt></ruby><ruby>天皇<rt>てんのう</rt></ruby>が<ruby>建<rt>た</rt></ruby>てたお<ruby>寺<rt>てら</rt></ruby>。<ruby>大仏殿<rt>だいぶつでん</rt></ruby>には<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>15mの<ruby>大仏<rt>だいぶつ</rt></ruby>がまつられている。",
+ "nikko": "<ruby>徳川家康<rt>とくがわいえやす</rt></ruby>をまつる<ruby>神社<rt>じんじゃ</rt></ruby>。<ruby>色<rt>いろ</rt></ruby>あざやかな<ruby>陽明<rt>ようめい</rt></ruby><ruby>門<rt>もん</rt></ruby>や「<ruby>見<rt>み</rt></ruby>ざる・<ruby>言<rt>い</rt></ruby>わざる・<ruby>聞<rt>き</rt></ruby>かざる」の<ruby>三猿<rt>さんえん</rt></ruby>の<ruby>彫刻<rt>ちょうこく</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "skytree": "2012<ruby>年<rt>ねん</rt></ruby>に<ruby>開業<rt>かいぎょう</rt></ruby>した<ruby>高<rt>たか</rt></ruby>さ634mの<ruby>電波塔<rt>でんぱとう</rt></ruby>。<ruby>自立<rt>じりつ</rt></ruby><ruby>式<rt>しき</rt></ruby>の<ruby>電波塔<rt>でんぱとう</rt></ruby>としては<ruby>世界一<rt>せかいいち</rt></ruby>の<ruby>高<rt>たか</rt></ruby>さ。",
+ "tokyotower": "1958<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した<ruby>高<rt>たか</rt></ruby>さ333mの<ruby>電波塔<rt>でんぱとう</rt></ruby>。<ruby>赤<rt>あか</rt></ruby>と<ruby>白<rt>しろ</rt></ruby>にぬられているのは、<ruby>飛行機<rt>ひこうき</rt></ruby>から<ruby>見<rt>み</rt></ruby>やすくするため。",
+ "fushimi": "<ruby>全国<rt>ぜんこく</rt></ruby>の<ruby>稲荷<rt>いなり</rt></ruby><ruby>神社<rt>じんじゃ</rt></ruby>の<ruby>総<rt>そう</rt></ruby><ruby>本宮<rt>ほんぐう</rt></ruby>。<ruby>朱色<rt>しゅいろ</rt></ruby>の<ruby>鳥居<rt>とりい</rt></ruby>がトンネルのように<ruby>続<rt>つづ</rt></ruby>く「<ruby>千本<rt>せんぼん</rt></ruby><ruby>鳥居<rt>とりい</rt></ruby>」で<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "shirakawa": "<ruby>手<rt>て</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせたような<ruby>形<rt>かたち</rt></ruby>のかやぶき<ruby>屋根<rt>やね</rt></ruby>「<ruby>合掌造<rt>がっしょうづく</rt></ruby>り」の<ruby>家<rt>いえ</rt></ruby>が<ruby>並<rt>なら</rt></ruby>ぶ<ruby>村<rt>むら</rt></ruby>。<ruby>雪<rt>ゆき</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちやすいよう<ruby>屋根<rt>やね</rt></ruby>が<ruby>急<rt>きゅう</rt></ruby>になっている。",
+ "genbaku": "1945<ruby>年<rt>ねん</rt></ruby>8<ruby>月<rt>がつ</rt></ruby>6日の<ruby>原子爆弾<rt>げんしばくだん</rt></ruby>で<ruby>焼け残<rt>やけのこ</rt></ruby>った<ruby>建物<rt>たてもの</rt></ruby>。<ruby>平和<rt>へいわ</rt></ruby>を<ruby>願<rt>ねが</rt></ruby>うシンボルとして<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になっている。",
+ "yakushima": "1993<ruby>年<rt>ねん</rt></ruby>に<ruby>世界<rt>せかい</rt></ruby><ruby>自然<rt>しぜん</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になった<ruby>島<rt>しま</rt></ruby>。<ruby>樹齢<rt>じゅれい</rt></ruby><ruby>数千<rt>すうせん</rt></ruby><ruby>年<rt>ねん</rt></ruby>といわれる<ruby>縄文<rt>じょうもん</rt></ruby><ruby>杉<rt>すぎ</rt></ruby>などの<ruby>屋久<rt>やく</rt></ruby><ruby>杉<rt>すぎ</rt></ruby>が<ruby>育<rt>そだ</rt></ruby>つ。",
+ "forbidden": "<ruby>明<rt>みん</rt></ruby>と<ruby>清<rt>しん</rt></ruby>の<ruby>皇帝<rt>こうてい</rt></ruby>が<ruby>住<rt>す</rt></ruby>んだ<ruby>宮殿<rt>きゅうでん</rt></ruby>。<ruby>今<rt>いま</rt></ruby>は「<ruby>故宮<rt>こきゅう</rt></ruby><ruby>博物<rt>はくぶつ</rt></ruby><ruby>院<rt>いん</rt></ruby>」として<ruby>公開<rt>こうかい</rt></ruby>されている。",
+ "terracotta": "<ruby>秦<rt>しん</rt></ruby>の<ruby>始<rt>し</rt></ruby><ruby>皇帝<rt>こうてい</rt></ruby>のお<ruby>墓<rt>はか</rt></ruby>を<ruby>守<rt>まも</rt></ruby>るために<ruby>作<rt>つく</rt></ruby>られた、<ruby>等身大<rt>とうしんだい</rt></ruby>の<ruby>兵士<rt>へいし</rt></ruby>や<ruby>馬<rt>うま</rt></ruby>の<ruby>焼き物<rt>やきもの</rt></ruby>。8000<ruby>体<rt>たい</rt></ruby>ほどあると<ruby>考<rt>かんが</rt></ruby>えられている。",
+ "potala": "<ruby>標高<rt>ひょうこう</rt></ruby><ruby>約<rt>やく</rt></ruby>3700mに<ruby>建<rt>た</rt></ruby>つ<ruby>宮殿<rt>きゅうでん</rt></ruby>。チベット<ruby>仏教<rt>ぶっきょう</rt></ruby>の<ruby>指導者<rt>しどうしゃ</rt></ruby>ダライ・ラマが<ruby>住<rt>す</rt></ruby>んでいた。",
+ "guilin": "とがった<ruby>形<rt>かたち</rt></ruby>の<ruby>山<rt>やま</rt></ruby>がいくつも<ruby>並<rt>なら</rt></ruby>ぶ<ruby>景色<rt>けしき</rt></ruby>が、<ruby>水墨画<rt>すいぼくが</rt></ruby>のようだといわれる<ruby>場所<rt>ばしょ</rt></ruby>。<ruby>漓江<rt>りこう</rt></ruby>の<ruby>川下<rt>かわくだ</rt></ruby>りが<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "borobudur": "8〜9<ruby>世紀<rt>せいき</rt></ruby>に<ruby>造<rt>つく</rt></ruby>られた<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>仏教<rt>ぶっきょう</rt></ruby><ruby>遺跡<rt>いせき</rt></ruby>。ピラミッドのような<ruby>形<rt>かたち</rt></ruby>で、たくさんの<ruby>仏像<rt>ぶつぞう</rt></ruby>や<ruby>石<rt>いし</rt></ruby>の<ruby>塔<rt>とう</rt></ruby>が<ruby>並<rt>なら</rt></ruby>ぶ。",
+ "halong": "<ruby>海<rt>うみ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に2000<ruby>近<rt>ちか</rt></ruby>くの<ruby>岩<rt>いわ</rt></ruby>の<ruby>島<rt>しま</rt></ruby>がそびえる<ruby>湾<rt>わん</rt></ruby>。「<ruby>竜<rt>りゅう</rt></ruby>が<ruby>降り立<rt>おりた</rt></ruby>った<ruby>湾<rt>わん</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>。",
+ "watarun": "チャオプラヤー<ruby>川<rt>かわ</rt></ruby>のほとりに<ruby>建<rt>た</rt></ruby>つお<ruby>寺<rt>てら</rt></ruby>。「<ruby>暁<rt>あかつき</rt></ruby>の<ruby>寺<rt>てら</rt></ruby>」とも<ruby>呼<rt>よ</rt></ruby>ばれ、<ruby>塔<rt>とう</rt></ruby>は<ruby>陶器<rt>とうき</rt></ruby>のかけらで<ruby>飾<rt>かざ</rt></ruby>られている。",
+ "bagan": "<ruby>平原<rt>へいげん</rt></ruby>に2000を<ruby>超<rt>こ</rt></ruby>える<ruby>仏塔<rt>ぶっとう</rt></ruby>や<ruby>寺院<rt>じいん</rt></ruby>が<ruby>立ち並<rt>たちなら</rt></ruby>ぶ<ruby>遺跡<rt>いせき</rt></ruby>。2019<ruby>年<rt>ねん</rt></ruby>に<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になった。",
+ "everest": "<ruby>標高<rt>ひょうこう</rt></ruby>8848mの<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>。1953<ruby>年<rt>ねん</rt></ruby>にヒラリーとテンジンが<ruby>初<rt>はじ</rt></ruby>めて<ruby>頂上<rt>ちょうじょう</rt></ruby>に<ruby>立<rt>た</rt></ruby>った。",
+ "goldentemple": "<ruby>シク教<rt>しくきょう</rt></ruby>のいちばん<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>寺院<rt>じいん</rt></ruby>。<ruby>金色<rt>きんいろ</rt></ruby>の<ruby>建物<rt>たてもの</rt></ruby>が<ruby>池<rt>いけ</rt></ruby>の<ruby>真ん中<rt>まんなか</rt></ruby>に<ruby>建<rt>た</rt></ruby>ち、だれでも<ruby>無料<rt>むりょう</rt></ruby>で<ruby>食事<rt>しょくじ</rt></ruby>をいただける。",
+ "shwedagon": "<ruby>金色<rt>きんいろ</rt></ruby>にかがやく<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>100mの<ruby>仏塔<rt>ぶっとう</rt></ruby>。ミャンマーの<ruby>人々<rt>ひとびと</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>聖地<rt>せいち</rt></ruby>のひとつ。",
+ "victoria": "<ruby>幅<rt>はば</rt></ruby><ruby>約<rt>やく</rt></ruby>1.7kmの<ruby>大<rt>おお</rt></ruby>きな<ruby>滝<rt>たき</rt></ruby>。<ruby>地元<rt>じもと</rt></ruby>では「<ruby>雷鳴<rt>らいめい</rt></ruby>のとどろく<ruby>水煙<rt>すいえん</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>で<ruby>呼<rt>よ</rt></ruby>ばれている。",
+ "kilimanjaro": "<ruby>標高<rt>ひょうこう</rt></ruby>5895mのアフリカでいちばん<ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>。<ruby>赤道<rt>せきどう</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くなのに、<ruby>頂上<rt>ちょうじょう</rt></ruby>には<ruby>雪<rt>ゆき</rt></ruby>や<ruby>氷<rt>こおり</rt></ruby>がある。",
+ "sahara": "アフリカ<ruby>北部<rt>ほくぶ</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>がる、<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>暑<rt>あつ</rt></ruby>い<ruby>砂漠<rt>さばく</rt></ruby>。<ruby>広<rt>ひろ</rt></ruby>さは<ruby>日本<rt>にほん</rt></ruby>の<ruby>約<rt>やく</rt></ruby>24<ruby>倍<rt>ばい</rt></ruby>もある。",
+ "tablemtn": "ケープタウンの<ruby>町<rt>まち</rt></ruby>の<ruby>後<rt>うし</rt></ruby>ろにそびえる、てっぺんが<ruby>平<rt>たい</rt></ruby>らな<ruby>山<rt>やま</rt></ruby>。<ruby>山頂<rt>さんちょう</rt></ruby>までロープウェイで<ruby>登<rt>のぼ</rt></ruby>れる。",
+ "abusimbel": "ラムセス2<ruby>世<rt>せい</rt></ruby>が<ruby>造<rt>つく</rt></ruby>らせた<ruby>岩<rt>いわ</rt></ruby>の<ruby>神殿<rt>しんでん</rt></ruby>。ダムの<ruby>湖<rt>みずうみ</rt></ruby>に<ruby>沈<rt>しず</rt></ruby>むのを<ruby>防<rt>ふせ</rt></ruby>ぐため、1960<ruby>年<rt>ねん</rt></ruby><ruby>代<rt>だい</rt></ruby>に<ruby>神殿<rt>しんでん</rt></ruby>ごと<ruby>移<rt>うつ</rt></ruby>された。",
+ "sphinx": "ライオンの<ruby>体<rt>からだ</rt></ruby>と<ruby>人<rt>ひと</rt></ruby>の<ruby>顔<rt>かお</rt></ruby>をもつ<ruby>巨大<rt>きょだい</rt></ruby>な<ruby>石像<rt>せきぞう</rt></ruby>。<ruby>長<rt>なが</rt></ruby>さは<ruby>約<rt>やく</rt></ruby>73mあり、ピラミッドを<ruby>守<rt>まも</rt></ruby>るように<ruby>座<rt>すわ</rt></ruby>っている。",
+ "baobab": "<ruby>高<rt>たか</rt></ruby>さ30mほどのバオバブの<ruby>木<rt>き</rt></ruby>が<ruby>道<rt>みち</rt></ruby>の<ruby>両側<rt>りょうがわ</rt></ruby>に<ruby>並<rt>なら</rt></ruby>ぶ<ruby>場所<rt>ばしょ</rt></ruby>。<ruby>夕日<rt>ゆうひ</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>がとくに<ruby>美<rt>うつく</rt></ruby>しいと<ruby>人気<rt>にんき</rt></ruby>。",
+ "grandcanyon": "コロラド<ruby>川<rt>かわ</rt></ruby>が<ruby>長<rt>なが</rt></ruby>い<ruby>時間<rt>じかん</rt></ruby>をかけて<ruby>大地<rt>だいち</rt></ruby>をけずってできた<ruby>大<rt>だい</rt></ruby><ruby>峡谷<rt>きょうこく</rt></ruby>。<ruby>深<rt>ふか</rt></ruby>いところは<ruby>約<rt>やく</rt></ruby>1.8kmもある。",
+ "niagara": "アメリカとカナダの<ruby>国境<rt>こっきょう</rt></ruby>にある<ruby>滝<rt>たき</rt></ruby>。<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って、<ruby>滝<rt>たき</rt></ruby>のすぐ<ruby>近<rt>ちか</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>くことができる。",
+ "rushmore": "<ruby>岩山<rt>いわやま</rt></ruby>に4<ruby>人<rt>にん</rt></ruby>の<ruby>大統領<rt>だいとうりょう</rt></ruby>の<ruby>顔<rt>かお</rt></ruby>がほられている。ワシントン、ジェファーソン、セオドア・ルーズベルト、リンカーンの<ruby>顔<rt>かお</rt></ruby>。",
+ "yellowstone": "1872<ruby>年<rt>ねん</rt></ruby>にできた<ruby>世界<rt>せかい</rt></ruby>で<ruby>最初<rt>さいしょ</rt></ruby>の<ruby>国立公園<rt>こくりつこうえん</rt></ruby>。<ruby>間欠泉<rt>かんけつせん</rt></ruby>がたくさんあり、<ruby>熱<rt>あつ</rt></ruby>いお<ruby>湯<rt>ゆ</rt></ruby>がふき<ruby>出<rt>だ</rt></ruby>す。",
+ "whitehouse": "アメリカの<ruby>大統領<rt>だいとうりょう</rt></ruby>が<ruby>住<rt>す</rt></ruby>み、<ruby>仕事<rt>しごと</rt></ruby>をする<ruby>建物<rt>たてもの</rt></ruby>。1800<ruby>年<rt>ねん</rt></ruby>から<ruby>大統領<rt>だいとうりょう</rt></ruby>の<ruby>住<rt>す</rt></ruby>まいとして<ruby>使<rt>つか</rt></ruby>われている。",
+ "empire": "1931<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した102<ruby>階<rt>かい</rt></ruby><ruby>建<rt>だ</rt></ruby>てのビル。<ruby>完成<rt>かんせい</rt></ruby>から<ruby>約<rt>やく</rt></ruby>40<ruby>年間<rt>ねんかん</rt></ruby>、<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>いビルだった。",
+ "chichen": "マヤ<ruby>文明<rt>ぶんめい</rt></ruby>の<ruby>遺跡<rt>いせき</rt></ruby>。ピラミッド「エル・カスティーヨ」では、<ruby>春分<rt>しゅんぶん</rt></ruby>と<ruby>秋分の日<rt>しゅうぶんのひ</rt></ruby>にへびの<ruby>影<rt>かげ</rt></ruby>が<ruby>階段<rt>かいだん</rt></ruby>に<ruby>現<rt>あらわ</rt></ruby>れる。",
+ "christ": "リオデジャネイロの<ruby>山<rt>やま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ、<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>30mのキリスト<ruby>像<rt>ぞう</rt></ruby>。1931<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した。",
+ "iguazu": "<ruby>大小<rt>だいしょう</rt></ruby>275ほどの<ruby>滝<rt>たき</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まった<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>滝<rt>たき</rt></ruby>。いちばん<ruby>迫力<rt>はくりょく</rt></ruby>のある<ruby>場所<rt>ばしょ</rt></ruby>は「<ruby>悪魔<rt>あくま</rt></ruby>の<ruby>喉笛<rt>のどぶえ</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ばれる。",
+ "uyuni": "<ruby>標高<rt>ひょうこう</rt></ruby><ruby>約<rt>やく</rt></ruby>3700mに<ruby>広<rt>ひろ</rt></ruby>がる<ruby>真っ白<rt>まっしろ</rt></ruby>な<ruby>塩<rt>しお</rt></ruby>の<ruby>大地<rt>だいち</rt></ruby>。<ruby>雨<rt>あめ</rt></ruby>のあとは<ruby>水<rt>みず</rt></ruby>が<ruby>張<rt>は</rt></ruby>り、<ruby>空<rt>そら</rt></ruby>が<ruby>鏡<rt>かがみ</rt></ruby>のように<ruby>映<rt>うつ</rt></ruby>る。",
+ "teotihuacan": "メキシコシティの<ruby>近<rt>ちか</rt></ruby>くにある<ruby>古代<rt>こだい</rt></ruby><ruby>都市<rt>とし</rt></ruby>の<ruby>遺跡<rt>いせき</rt></ruby>。<ruby>大<rt>おお</rt></ruby>きな「<ruby>太陽<rt>たいよう</rt></ruby>のピラミッド」と「<ruby>月<rt>つき</rt></ruby>のピラミッド」がある。",
+ "perito": "パタゴニアにある<ruby>大<rt>おお</rt></ruby>きな<ruby>氷河<rt>ひょうが</rt></ruby>。<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>60mの<ruby>氷<rt>こおり</rt></ruby>のかべがくずれ<ruby>落<rt>お</rt></ruby>ちる<ruby>様子<rt>ようす</rt></ruby>を<ruby>見<rt>み</rt></ruby>られる。",
+ "monument": "<ruby>赤<rt>あか</rt></ruby>い<ruby>大地<rt>だいち</rt></ruby>に<ruby>岩<rt>いわ</rt></ruby>の<ruby>塔<rt>とう</rt></ruby>がそびえる<ruby>場所<rt>ばしょ</rt></ruby>。ナバホ<ruby>族<rt>ぞく</rt></ruby>の<ruby>土地<rt>とち</rt></ruby>にあり、<ruby>西部劇<rt>せいぶげき</rt></ruby>の<ruby>映画<rt>えいが</rt></ruby>にたびたび<ruby>登場<rt>とうじょう</rt></ruby>した。",
+ "angel": "<ruby>落差<rt>らくさ</rt></ruby><ruby>約<rt>やく</rt></ruby>979mの<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>滝<rt>たき</rt></ruby>。<ruby>見<rt>み</rt></ruby>つけたパイロット、ジミー・エンジェルの<ruby>名前<rt>なまえ</rt></ruby>がついている。",
+ "reef": "<ruby>長<rt>なが</rt></ruby>さ2000km<ruby>以上<rt>いじょう</rt></ruby>つづく<ruby>世界<rt>せかい</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>の<ruby>サンゴ礁<rt>さんごしょう</rt></ruby>。<ruby>宇宙<rt>うちゅう</rt></ruby>からも<ruby>見<rt>み</rt></ruby>えるといわれる。",
+ "milford": "<ruby>氷河<rt>ひょうが</rt></ruby>がけずってできた<ruby>深<rt>ふか</rt></ruby>い<ruby>入り江<rt>いりえ</rt></ruby>(フィヨルド)。<ruby>切り立<rt>きりた</rt></ruby>ったがけから<ruby>滝<rt>たき</rt></ruby>が<ruby>流れ落<rt>ながれお</rt></ruby>ちる。",
+ "harbour": "1932<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>したアーチ<ruby>橋<rt>はし</rt></ruby>。その<ruby>形<rt>かたち</rt></ruby>から「<ruby>古<rt>ふる</rt></ruby>いハンガー」というあだ<ruby>名<rt>な</rt></ruby>がある。",
+ "milan": "<ruby>完成<rt>かんせい</rt></ruby>までに<ruby>約<rt>やく</rt></ruby>500<ruby>年<rt>ねん</rt></ruby>かかった<ruby>大聖堂<rt>だいせいどう</rt></ruby>。<ruby>屋根<rt>やね</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>には、とがった<ruby>塔<rt>とう</rt></ruby>が135<ruby>本<rt>ほん</rt></ruby>も<ruby>立<rt>た</rt></ruby>っている。",
+ "buckingham": "イギリスの<ruby>国王<rt>こくおう</rt></ruby>が<ruby>住<rt>す</rt></ruby>む<ruby>宮殿<rt>きゅうでん</rt></ruby>。<ruby>宮殿<rt>きゅうでん</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で<ruby>行<rt>おこな</rt></ruby>われる<ruby>衛兵<rt>えいへい</rt></ruby>の<ruby>交代式<rt>こうたいしき</rt></ruby>が<ruby>人気<rt>にんき</rt></ruby>。",
+ "hallstatt": "<ruby>湖<rt>みずうみ</rt></ruby>と<ruby>山<rt>やま</rt></ruby>にかこまれた<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>。「<ruby>世界一<rt>せかいいち</rt></ruby><ruby>美<rt>うつく</rt></ruby>しい<ruby>湖畔<rt>こはん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>」ともいわれ、<ruby>昔<rt>むかし</rt></ruby>は<ruby>塩<rt>しお</rt></ruby>の<ruby>産地<rt>さんち</rt></ruby>として<ruby>栄<rt>さか</rt></ruby>えた。",
+ "bluemosque": "<ruby>正式<rt>せいしき</rt></ruby>な<ruby>名前<rt>なまえ</rt></ruby>はスルタンアフメト・モスク。<ruby>中<rt>なか</rt></ruby>の<ruby>壁<rt>かべ</rt></ruby>を<ruby>青<rt>あお</rt></ruby>いタイルが<ruby>飾<rt>かざ</rt></ruby>っていることから、この<ruby>名<rt>な</rt></ruby>で<ruby>呼<rt>よ</rt></ruby>ばれる。",
+ "diamondhead": "ワイキキの<ruby>近<rt>ちか</rt></ruby>くにある<ruby>火山<rt>かざん</rt></ruby>のあと。<ruby>岩<rt>いわ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の<ruby>光<rt>ひか</rt></ruby>る<ruby>結晶<rt>けっしょう</rt></ruby>をダイヤモンドとまちがえたことから<ruby>名<rt>な</rt></ruby>づけられた。",
+ "londoneye": "2000<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した<ruby>高<rt>たか</rt></ruby>さ135mの<ruby>大<rt>だい</rt></ruby><ruby>観覧車<rt>かんらんしゃ</rt></ruby>。1<ruby>周<rt>しゅう</rt></ruby><ruby>約<rt>やく</rt></ruby>30<ruby>分<rt>ふん</rt></ruby>で、ロンドンの<ruby>街<rt>まち</rt></ruby>を<ruby>見渡<rt>みわた</rt></ruby>せる。",
+ "westminster": "イギリス<ruby>国王<rt>こくおう</rt></ruby>の<ruby>戴冠式<rt>たいかんしき</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われる<ruby>教会<rt>きょうかい</rt></ruby>。ニュートンやダーウィンなど、<ruby>偉人<rt>いじん</rt></ruby>のお<ruby>墓<rt>はか</rt></ruby>もある。",
+ "budapest": "ドナウ<ruby>川<rt>かわ</rt></ruby>のほとりに<ruby>建<rt>た</rt></ruby>つ、1904<ruby>年<rt>ねん</rt></ruby><ruby>完成<rt>かんせい</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きな<ruby>建物<rt>たてもの</rt></ruby>。ハンガリーでいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>建物<rt>たてもの</rt></ruby>のひとつ。",
+ "kamakura": "<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>11mの<ruby>青銅<rt>せいどう</rt></ruby>の<ruby>大仏<rt>だいぶつ</rt></ruby>。<ruby>大仏殿<rt>だいぶつでん</rt></ruby>がなくなったため、<ruby>今<rt>いま</rt></ruby>は<ruby>外<rt>そと</rt></ruby>に<ruby>座<rt>すわ</rt></ruby>っている。",
+ "antelope": "<ruby>砂岩<rt>さがん</rt></ruby>が<ruby>水<rt>みず</rt></ruby>と<ruby>風<rt>かぜ</rt></ruby>でけずられてできた<ruby>細<rt>ほそ</rt></ruby>い<ruby>谷<rt>たに</rt></ruby>。<ruby>上<rt>うえ</rt></ruby>から<ruby>差<rt>さ</rt></ruby>しこむ<ruby>光<rt>ひかり</rt></ruby>で、<ruby>岩<rt>いわ</rt></ruby>のかべがなみのように<ruby>光<rt>ひか</rt></ruby>る。"
+};
+/* RUBY-END */
 const ROUNDS = 10;
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
 
@@ -410,16 +543,38 @@ const $ = s => document.querySelector(s);
 if(("ontouchstart" in window) || navigator.maxTouchPoints > 0) document.documentElement.classList.add("touch");
 const ans = $("#ans");
 let lastLen = 0, warnT = 0, penalties = 0;
+let level = 0;
 let mode = "quote", qs = [], idx = 0, times = [], qStart = 0, running = false, locked = true, raf = 0, sepAt = -1, target = "";
 
 function store(k, v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k, v); }catch(e){ return null; } }
+/* 打つ文字の多さで むずかしさを決める。濁点・小さい字・のばす棒は フリックで1回よけいに押すので 少し重く数える */
+function textOf(m, q){ return m === "quote" ? q.r + q.ar : q.r; }
+function cost(s){
+  let c = 0;
+  for(const ch of s){
+    c += 1;
+    if(/[がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽゔ]/.test(ch)) c += .5;
+    if(/[ぁぃぅぇぉっゃゅょゎ]/.test(ch)) c += .5;
+    if(ch === "ー") c += .3;
+  }
+  return c;
+}
+/* かんたんな順にならべて 10問ずつに分ける。どのレベルも いつも同じ10問・同じ順番 */
+const LEVELS = {};
+for(const m of ["quote","spot"]){
+  const pool = m === "quote" ? QUOTES : SPOTS;
+  const sorted = pool.map((q,i) => ({q, i, c:cost(textOf(m,q))})).sort((a,b) => a.c - b.c || a.i - b.i).map(x => x.q);
+  LEVELS[m] = [];
+  for(let i = 0; i + ROUNDS <= sorted.length; i += ROUNDS) LEVELS[m].push(sorted.slice(i, i + ROUNDS));
+}
+function bestOf(m, lv){ return parseFloat(store("flick-best-"+m+"-"+(lv+1))); }
 function showBest(){
   for(const m of ["quote","spot"]){
-    const b = parseFloat(store("flick-best-"+m));
-    $("#best-"+m).textContent = isNaN(b) ? "自己ベスト：まだなし" : "自己ベスト：" + b.toFixed(2) + "秒";
+    const n = LEVELS[m].length, done = LEVELS[m].filter((_,i) => !isNaN(bestOf(m,i))).length;
+    $("#best-"+m).textContent = "全" + n + "レベル・クリア " + done + " / " + n;
   }
 }
-function show(id){ for(const s of ["home","game","result"]) $("#"+s).classList.toggle("hidden", s!==id); document.body.classList.toggle("playing", id==="game"); window.scrollTo(0,0); fit(); }
+function show(id){ for(const s of ["home","levels","game","result"]) $("#"+s).classList.toggle("hidden", s!==id); document.body.classList.toggle("playing", id==="game"); window.scrollTo(0,0); fit(); }
 function fit(){
   const vv = window.visualViewport, r = document.documentElement.style;
   if(!vv){ r.setProperty("--vvh", window.innerHeight+"px"); return; }
@@ -473,7 +628,7 @@ function renderCard(){
   }
   h += '<div class="target" id="tgt"></div>';
   $("#card").innerHTML = h;
-  $("#prog").textContent = (idx+1) + " / " + ROUNDS;
+  $("#prog").textContent = "Lv." + (level+1) + "　" + (idx+1) + " / " + ROUNDS;
   renderTarget(0, false);
   $("#card").scrollTop = $("#card").scrollHeight;
 }
@@ -485,9 +640,22 @@ function tick(){
   raf = requestAnimationFrame(tick);
 }
 
-function start(m){
+function openLevels(m){
   mode = m;
-  qs = shuffle(m === "quote" ? QUOTES : SPOTS).slice(0, ROUNDS);
+  $("#lv-title").textContent = m === "quote" ? "名言モード" : "名所モード";
+  $("#lv-list").innerHTML = LEVELS[m].map((set, i) => {
+    const lens = set.map(q => textOf(m,q).length), b = bestOf(m,i);
+    return '<button class="lv'+(isNaN(b) ? '' : ' done')+'" data-lv="'+i+'"><b>レベル'+(i+1)+'</b>'+
+      '<small>1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字</small>'+
+      '<div class="bt">'+(isNaN(b) ? '自己ベスト：まだなし' : '自己ベスト：'+b.toFixed(2)+'秒')+'</div></button>';
+  }).join("");
+  document.querySelectorAll(".lv").forEach(b => b.addEventListener("click", () => start(mode, +b.dataset.lv)));
+  show("levels");
+}
+
+function start(m, lv){
+  mode = m; level = lv;
+  qs = LEVELS[m][lv];
   idx = 0; times = []; running = false; locked = true; penalties = 0;
   show("game");
   renderCard();
@@ -538,7 +706,7 @@ function finish(){
   running = false; cancelAnimationFrame(raf);
   const total = times.reduce((a,b)=>a+b,0);
   const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
-  const key = "flick-best-"+mode, prev = parseFloat(store(key));
+  const key = "flick-best-"+mode+"-"+(level+1), prev = parseFloat(store(key));
   const isNew = isNaN(prev) || total < prev;
   if(isNew) store(key, total.toFixed(2));
   const best = isNew ? total : prev;
@@ -551,17 +719,21 @@ function finish(){
   $("#r-list").innerHTML = mode === "spot"
     ? qs.map((q,i) => { const pc = pic(q); return '<li class="intro"><div class="pic">'+pc.html+'</div><div class="body">'+
         '<div class="head"><b>'+q.n+'</b><span>'+times[i].toFixed(2)+'秒</span></div>'+
-        '<small>'+q.c+'</small><p>'+q.d+'</p>'+(pc.credit ? '<em class="credit">'+pc.credit+'</em>' : '')+'</div></li>'; }).join("")
+        '<small>'+q.c+'</small>'+(RUBY[q.art] ? '<p class="rb">'+RUBY[q.art]+'</p>' : '<p>'+q.d+'</p>')+(pc.credit ? '<em class="credit">'+pc.credit+'</em>' : '')+'</div></li>'; }).join("")
     : qs.map((q,i) => '<li><span>'+q.a+'「'+q.t+'」</span><span>'+times[i].toFixed(2)+'秒</span></li>').join("");
+  $("#next-lv").classList.toggle("hidden", level >= LEVELS[mode].length - 1);
+  $("#again").className = level >= LEVELS[mode].length - 1 ? "primary" : "ghost";
   ans.blur();
   show("result");
   showBest();
 }
 
-document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => start(b.dataset.mode)));
-$("#quit").addEventListener("click", () => { running = false; locked = true; cancelAnimationFrame(raf); ans.blur(); show("home"); showBest(); });
-$("#again").addEventListener("click", () => start(mode));
-$("#home-btn").addEventListener("click", () => { show("home"); showBest(); });
+document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => openLevels(b.dataset.mode)));
+$("#lv-back").addEventListener("click", () => { show("home"); showBest(); });
+$("#quit").addEventListener("click", () => { running = false; locked = true; cancelAnimationFrame(raf); ans.blur(); openLevels(mode); });
+$("#again").addEventListener("click", () => start(mode, level));
+$("#next-lv").addEventListener("click", () => start(mode, level + 1));
+$("#home-btn").addEventListener("click", () => openLevels(mode));
 showBest();
 </script>
 </body>

@@ -2,7 +2,7 @@
 """カラフルな地図(トップの絵と そろえた 明るい色)を作る。
 
     python3 tools/make_color_map.py world <world.svg(BlankMap-Equirectangular)> <出力.svg>
-    python3 tools/make_color_map.py japan <ne_10m_land.shp> <出力.svg>
+    python3 tools/make_color_map.py japan <ne_10m_admin_1_states_provinces.shp> <出力.svg>   # 同じフォルダに ne_10m_land.shp も置く
 
 そのあと ブラウザで 3倍に描いて 1080px に縮める(scratchpad の render.mjs)。
 切りかた(viewBox・南西諸島のわく)は モノクロ版(make_japan_map.py / world-map-mono)と 同じなので、ピンの位置は 変えなくてよい。
@@ -13,11 +13,12 @@ import sys
 STYLE = '''
 <defs>
  <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{SEA1}"/><stop offset="1" stop-color="{SEA0}"/></linearGradient>
+ <linearGradient id="tn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{NB0}"/><stop offset="1" stop-color="{NB1}"/></linearGradient>
  {TONEDEFS}
  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".42"/><stop offset=".58" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
  <filter id="shade" x="-5%" y="-5%" width="110%" height="110%">
   <feGaussianBlur in="SourceAlpha" stdDeviation="{S2}" result="b"/><feOffset in="b" dx="0" dy="{S}" result="o"/>
-  <feFlood flood-color="#001a4d" flood-opacity=".45"/><feComposite in2="o" operator="in" result="sh"/>
+  <feFlood flood-color="#0b3f8a" flood-opacity=".35"/><feComposite in2="o" operator="in" result="sh"/>
   <feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge>
  </filter>
  <!-- ボタンと同じ キラキラ(docs/ボタンの色.md の feTurbulence)。3倍で描くので 粒は 少し大きめに -->
@@ -76,25 +77,26 @@ def star(cx, cy, r):
     return f'<polygon points="{" ".join(pts)}" fill="#fff8b0" opacity=".9"/>'
 
 
-# ⚠️ ボタンと 同じ色(index.html の TONE と COLORS.level。docs/ボタンの色.md)。左上→右下の グラデーション
-TONES = [("#f20077", "#ff4da3"), ("#e0202e", "#ff5c66"), ("#f25c00", "#ff8a33"), ("#00b33c", "#00d948"), ("#006b57", "#12a889"),
-         ("#0077b3", "#33aaee"), ("#3324db", "#6a5cff"), ("#8a2be0", "#bb55ff"), ("#eb14b5", "#ff6fd8")]
-SEA = ("#1d6bff", "#649aff")  # 世界の旅の ボタンの青
+# トップの絵(hero.webp)の 字と同じ あかるい キャンディ色(けいくん 2026-09-24「さわやかな青ベースで カラフルに」)。上→下で 少し こくなる
+TONES = [("#ff6b6b", "#ff2f4f"), ("#ffd23f", "#ff9f1c"), ("#8ae234", "#2fb84a"), ("#5cc8ff", "#1e7bff"), ("#c58bff", "#8a3cff"),
+         ("#ffa63b", "#ff6b2b"), ("#ff7fc8", "#ff2f8e"), ("#5ee6d6", "#12b3a8"), ("#b9f26b", "#6ccf2e")]
+SEA = ("#4fb8ff", "#c9efff")  # さわやかな 空色(下が こい・上が うすい)
+NEIGHBOR = ("#eaf6ff", "#cfe6ff")  # 日本の となりの国(色を付けない)
 
 
 def wrap(paths, vb, W, H, extra=""):
     x0, y0, vw, vh = vb
     k = vw / 360
-    tonedefs = "".join(f'<linearGradient id="t{i}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{a}"/><stop offset="1" stop-color="{b}"/></linearGradient>' for i, (a, b) in enumerate(TONES))
+    tonedefs = "".join(f'<linearGradient id="t{i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{a}"/><stop offset="1" stop-color="{b}"/></linearGradient>' for i, (a, b) in enumerate(TONES))
     style = (STYLE.replace("{S2}", f"{0.9*k:.3f}").replace("{S}", f"{0.45*k:.3f}").replace("{F}", f"{0.55/k:.3f}").replace("{F2}", f"{0.4/k:.3f}")
-             .replace("{SEA0}", SEA[0]).replace("{SEA1}", SEA[1]).replace("{TONEDEFS}", tonedefs))
+             .replace("{SEA0}", SEA[0]).replace("{SEA1}", SEA[1]).replace("{NB0}", NEIGHBOR[0]).replace("{NB1}", NEIGHBOR[1]).replace("{TONEDEFS}", tonedefs))
     box = f'x="{x0}" y="{y0}" width="{vw}" height="{vh}"'
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="{x0} {y0} {vw} {vh}" preserveAspectRatio="none">
 {style}
 <rect {box} fill="url(#sea)"/>
 <rect {box} fill="url(#gloss)" opacity=".5"/>
-<g transform="translate(0,{1.0*k:.3f})" fill="#0b2a7a" stroke="#0b2a7a" stroke-width="{0.5*k:.3f}" stroke-linejoin="round" opacity=".75">{paths}</g>
-<g filter="url(#shade)"><g fill="url(#t0)" stroke="#ffffff" stroke-width="{0.3*k:.3f}" stroke-opacity=".7" stroke-linejoin="round">{paths}</g></g>
+<g transform="translate(0,{1.0*k:.3f})" fill="#1a63c9" stroke="#1a63c9" stroke-width="{0.5*k:.3f}" stroke-linejoin="round" opacity=".6">{paths}</g>
+<g filter="url(#shade)"><g fill="url(#t0)" stroke="#ffffff" stroke-width="{0.3*k:.3f}" stroke-opacity=".9" stroke-linejoin="round">{paths}</g></g>
 <g fill="url(#gloss)">{paths}</g>
 {extra}
 <rect {box} filter="url(#glit1)" opacity=".9"/>
@@ -123,22 +125,45 @@ def world(src, out):
 
 
 def japan(shp, out):
+    """shp = ne_10m_admin_1_states_provinces.shp(都道府県)。同じフォルダの ne_10m_land.shp(となりの国)も読む"""
     import shapefile
     sys.path.insert(0, __file__.rsplit("/", 1)[0])
     import make_japan_map as J
-    sf = shapefile.Reader(shp)
-    land = J.paths(sf, (J.LON0, J.LON1, J.LAT0, J.LAT1), J.main_xy)
-    inset = J.paths(sf, (J.ILON0, J.ILON1, J.ILAT0, J.ILAT1), J.inset_xy)
-    k = 1 / 25
+    land = shapefile.Reader(shp.replace("ne_10m_admin_1_states_provinces", "ne_10m_land"))
+    adm = shapefile.Reader(shp)
+    fields = [f[0] for f in adm.fields[1:]]
+    ia, iname = fields.index("adm0_a3"), fields.index("name")
+    prefs = [(sr.record[iname], sr.shape) for sr in adm.iterShapeRecords() if sr.record[ia] == "JPN"]
+    print(f"都道府県 {len(prefs)}")
+
+    def pref_paths(box, xy):
+        out = []
+        for i, (name, sh) in enumerate(prefs):
+            parts = list(sh.parts) + [len(sh.points)]
+            d = ""
+            for j in range(len(parts) - 1):
+                pts = sh.points[parts[j]:parts[j + 1]]
+                if not any(box[0] - 1 <= x <= box[1] + 1 and box[2] - 1 <= y <= box[3] + 1 for x, y in pts):
+                    continue
+                d += "M" + "L".join(f"{x:.2f} {y:.2f}" for x, y in (xy(x, y) for x, y in pts)) + "Z"
+            if d:
+                out.append(f'<path fill="url(#t{(i * 4) % len(TONES)})" d="{d}"><title>{name}</title></path>')
+        return "\n".join(out)
+
+    def neighbor_paths(box, xy):
+        return J.paths(land, box, xy).replace("<path ", '<path fill="url(#tn)" ')
+
+    main_box, inset_box = (J.LON0, J.LON1, J.LAT0, J.LAT1), (J.ILON0, J.ILON1, J.ILAT0, J.ILAT1)
+    main = neighbor_paths(main_box, J.main_xy) + pref_paths(main_box, J.main_xy)
+    inset = pref_paths(inset_box, J.inset_xy)
     box = f'x="{J.IX}" y="{J.IY}" width="{J.IW:.2f}" height="{J.IH:.2f}"'
     extra = (f'<clipPath id="ic"><rect {box}/></clipPath>'
              f'<rect {box} fill="url(#sea)" stroke="#ffffff" stroke-width="0.6" opacity=".97"/>'
-             f'<g clip-path="url(#ic)"><g filter="url(#shade)"><g fill="url(#t0)" stroke="#ffffff" stroke-width="0.3" stroke-opacity=".7" stroke-linejoin="round">{inset}</g></g>'
+             f'<g clip-path="url(#ic)"><g filter="url(#shade)"><g stroke="#ffffff" stroke-width="0.3" stroke-opacity=".9" stroke-linejoin="round">{inset}</g></g>'
              f'<g fill="url(#gloss)" opacity=".9">{inset}</g></g>'
              f'<rect {box} fill="none" stroke="#ffffff" stroke-width="1.2"/>')
-    d = 1  # 日本の絵は 1単位が 世界の 1/25 なので、かざりは 単位で書けば 同じ見た目
-    main = f'<clipPath id="mc"><rect x="0" y="0" width="{J.W:.2f}" height="{J.H:.2f}"/></clipPath><g clip-path="url(#mc)">{land}</g>'
-    svg = wrap(main, (0, 0, J.W, J.H), 1080, round(1080 * J.H / J.W), extra)
+    mainp = f'<clipPath id="mc"><rect x="0" y="0" width="{J.W:.2f}" height="{J.H:.2f}"/></clipPath><g clip-path="url(#mc)">{main}</g>'
+    svg = wrap(mainp, (0, 0, J.W, J.H), 1080, round(1080 * J.H / J.W), extra)
     open(out, "w", encoding="utf-8").write(svg)
 
 

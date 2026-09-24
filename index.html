@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>世界フリック旅行</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#eef2f7; --card:#ffffff; --ink:#15233b; --muted:#6b7890;
+  --red:#d7263d; --blue:#1b4f9c; --ok:#1f8a5b; --line:#d6deea; --soft:#e3e9f2;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f1726; --card:#18233a; --ink:#e8eef8; --muted:#8b98b0;
+    --red:#ff5a6e; --blue:#6f9df0; --ok:#4fd19a; --line:#2a3854; --soft:#223049;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f1726; --card:#18233a; --ink:#e8eef8; --muted:#8b98b0;
+  --red:#ff5a6e; --blue:#6f9df0; --ok:#4fd19a; --line:#2a3854; --soft:#223049;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+body{margin:0;min-height:100%;background:var(--paper);color:var(--ink);
+  font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
+  -webkit-tap-highlight-color:transparent}
+.wrap{max-width:520px;margin:0 auto;padding:16px 16px 40px}
+.display{font-family:"Dela Gothic One","Hiragino Sans","Yu Gothic",sans-serif;font-weight:400}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.hidden{display:none!important}
+
+.airmail{position:relative;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.airmail>.inner{border-radius:12px;padding:12px}
+
+/* ホーム */
+.title{font-size:34px;line-height:1.15;margin:12px 0 4px;letter-spacing:.02em}
+.lead{color:var(--muted);margin:0 0 20px;font-size:15px;line-height:1.7}
+.modes{display:grid;gap:12px}
+.mode{display:flex;gap:14px;align-items:center;text-align:left;width:100%;
+  background:var(--card);border:2px solid var(--line);border-radius:12px;padding:16px}
+.mode:active{transform:scale(.98)}
+.mode .ic{font-size:34px;width:52px;height:52px;display:grid;place-items:center;background:var(--soft);border-radius:10px;flex:none}
+.mode b{display:block;font-size:18px}
+.mode small{color:var(--muted);font-size:13px}
+.how{margin-top:22px;font-size:14px;line-height:1.8;color:var(--muted)}
+.how p{margin:0 0 6px}
+.how .rule{color:var(--ink);font-weight:700;background:var(--soft);border-radius:10px;padding:10px 12px;margin-top:10px}
+
+/* ゲーム：キーボードが出ても画面内に収まるよう、見えている範囲に合わせて固定 */
+body.playing{overflow:hidden}
+#game{position:fixed;left:0;right:0;top:0;height:var(--vvh,100%);transform:translateY(var(--vvt,0px));
+  display:flex;flex-direction:column;justify-content:flex-end;gap:8px;max-width:520px;margin:0 auto;
+  padding:calc(env(safe-area-inset-top,0px) + 8px) 12px 8px;background:var(--paper);z-index:5}
+.prog.warn{color:var(--red);font-weight:700}
+.bar{display:flex;align-items:center;justify-content:space-between;flex:none}
+.quit{background:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--muted)}
+.prog{font-size:13px;color:var(--muted)}
+.clock{font-size:20px;font-variant-numeric:tabular-nums}
+#game .airmail{flex:none}
+#game .airmail>.inner{display:flex;flex-direction:column}
+.qtext{font-size:17px;line-height:1.5;font-weight:700;margin:0 0 4px;flex:none}
+.who{font-size:14px;color:var(--blue);font-weight:700;margin:0 0 8px;flex:none}
+.photo{flex:none;height:clamp(70px,calc(var(--vvh,100vh) - 360px),240px);border-radius:8px;overflow:hidden;margin-bottom:8px;position:relative}
+.photo svg,.intro svg,.photo img,.intro img{display:block;width:100%;height:100%}
+.ph{position:relative;width:100%;height:100%;overflow:hidden}
+.ph .blur{position:absolute;inset:0;object-fit:cover;filter:blur(16px) brightness(.9);transform:scale(1.25)}
+.ph .main{position:relative;object-fit:contain}
+.intro .credit{display:block;margin-top:8px;font-size:11px;font-style:normal;color:var(--muted)}
+.intro .credit a{color:inherit}
+.photo span{position:absolute;right:8px;bottom:6px;font-size:11px;color:#fff;background:rgba(0,0,0,.35);padding:2px 8px;border-radius:999px}
+.spot{font-size:22px;font-weight:700;margin:0;flex:none}
+.country{font-size:13px;color:var(--muted);margin:0 0 8px;flex:none}
+.target{font-size:18px;line-height:1.75;letter-spacing:.03em;background:var(--soft);border-radius:8px;padding:8px 10px;word-break:break-all;flex:none}
+.target .c{color:var(--muted)}
+.target .d{color:var(--ok)}
+.target .n{color:var(--ink);border-bottom:3px solid var(--blue)}
+.target .x{color:#fff;background:var(--red);border-radius:3px}
+.target .sep{display:inline-block;width:.8em;color:var(--muted)}
+.answer{flex:none;width:100%;font:inherit;font-size:18px;padding:10px 12px;border-radius:10px;
+  border:2px solid var(--line);background:var(--card);color:var(--ink)}
+.answer.bad{border-color:var(--red)}
+.field{position:relative;flex:none}
+.field .answer{color:transparent;caret-color:transparent}
+.field .answer::selection{background:transparent}
+.typed{position:absolute;left:14px;right:14px;top:50%;transform:translateY(-50%);font-size:18px;
+  white-space:nowrap;overflow:hidden;pointer-events:none;color:var(--ink)}
+.typed:empty::before{content:"ここに打つ（青い線が次の文字）";color:var(--muted)}
+.count{position:absolute;inset:0;border-radius:12px;background:var(--card);display:grid;place-items:center;font-size:72px;color:var(--red);z-index:2}
+
+/* 結果 */
+.stamp{width:170px;height:170px;border-radius:50%;margin:10px auto 14px;border:4px double var(--red);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--red);transform:rotate(-8deg)}
+.stamp .t{font-size:40px;line-height:1}
+.stamp small{font-size:13px;margin-top:6px}
+.new{text-align:center;color:var(--red);font-weight:700;margin:0 0 6px}
+.stats{display:flex;justify-content:center;gap:26px;margin:4px 0 18px;text-align:center}
+.stats b{display:block;font-size:22px}
+.stats small{color:var(--muted);font-size:12px}
+.list{list-style:none;padding:0;margin:0 0 20px;border-top:1px solid var(--line)}
+.list li{display:flex;justify-content:space-between;gap:12px;padding:10px 2px;border-bottom:1px solid var(--line);font-size:14px}
+.list li span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.list li span:last-child{font-variant-numeric:tabular-nums;flex:none}
+.intros{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:14px}
+.intro{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.intro .pic{height:200px}
+.intro .body{padding:12px 14px 14px}
+.intro .head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.intro .head b{font-size:18px}
+.intro .head span{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:700;flex:none}
+.intro small{color:var(--muted);font-size:13px}
+.intro p{margin:6px 0 0;font-size:14px;line-height:1.75}
+.btns{display:grid;gap:10px}
+.primary{background:var(--blue);color:#fff;border:none;border-radius:12px;padding:16px;font-size:17px;font-weight:700}
+.ghost{background:none;border:2px solid var(--line);border-radius:12px;padding:14px;font-size:15px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ホーム -->
+  <section id="home">
+    <h1 class="title display">世界フリック旅行</h1>
+    <p class="lead">世界の名言や名所を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しよう。</p>
+    <div class="modes">
+      <button class="mode" data-mode="quote">
+        <div class="ic">📜</div>
+        <div><b>名言モード</b><small id="best-quote">自己ベスト：まだなし</small></div>
+      </button>
+      <button class="mode" data-mode="spot">
+        <div class="ic">🗺️</div>
+        <div><b>名所モード</b><small id="best-spot">自己ベスト：まだなし</small></div>
+      </button>
+    </div>
+    <div class="how">
+      <p>表示されたひらがなを、そのまま打ち写してね。名言モードは名言のあとに、言った人の名前まで打つとクリア。</p>
+      <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
+      <p class="rule">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名言や名所も自然と覚えられるよ。</p>
+    </div>
+  </section>
+
+  <!-- ゲーム -->
+  <section id="game" class="hidden">
+    <div class="airmail">
+      <div class="count display hidden" id="count">3</div>
+      <div class="inner" id="card"></div>
+    </div>
+    <div class="bar">
+      <button class="quit" id="quit">やめる</button>
+      <span class="prog" id="prog">1 / 10</span>
+      <span class="clock display" id="clock">0.00</span>
+    </div>
+    <div class="field">
+    <input class="answer" id="ans" type="text" lang="ja" inputmode="text"
+      autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done"
+      aria-label="ここに入力">
+    <span class="typed" id="typed"></span>
+    </div>
+  </section>
+
+  <!-- 結果 -->
+  <section id="result" class="hidden">
+    <div class="stamp display"><span class="t" id="r-time">0.00</span><small>秒</small></div>
+    <p class="new hidden" id="r-new">自己ベスト更新！</p>
+    <div class="stats">
+      <div><b id="r-cps">0.0</b><small>文字 / 秒</small></div>
+      <div><b id="r-chars">0</b><small>打った文字数</small></div>
+      <div><b id="r-best">-</b><small>自己ベスト</small></div>
+    </div>
+    <ul class="list" id="r-list"></ul>
+    <div class="btns">
+      <button class="primary" id="again">もう一度あそぶ</button>
+      <button class="ghost" id="home-btn">モードをえらぶ</button>
+    </div>
+  </section>
+</div>
+
+<!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
+<script src="photos.js"></script>
+<script>
+const QUOTES = [
+  {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
+  {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
+  {t:"過ちて改めざる、是を過ちという", a:"孔子", r:"あやまちてあらためざるこれをあやまちという", ar:"こうし"},
+  {t:"明日死ぬかのように生きよ。永遠に生きるかのように学べ", a:"ガンジー", r:"あすしぬかのようにいきよえいえんにいきるかのようにまなべ", ar:"がんじー"},
+  {t:"想像力は知識よりも大切だ", a:"アインシュタイン", r:"そうぞうりょくはちしきよりもたいせつだ", ar:"あいんしゅたいん"},
+  {t:"余の辞書に不可能という文字はない", a:"ナポレオン", r:"よのじしょにふかのうというもじはない", ar:"なぽれおん"},
+  {t:"世の人は我を何とも言わば言え 我が成すことは我のみぞ知る", a:"坂本龍馬", r:"よのひとはわれをなんともいわばいえわがなすことはわれのみぞしる", ar:"さかもとりょうま"},
+  {t:"ただ生きるのではなく、よく生きることが大切だ", a:"ソクラテス", r:"ただいきるのではなくよくいきることがたいせつだ", ar:"そくらてす"},
+  {t:"終わりよければすべてよし", a:"シェイクスピア", r:"おわりよければすべてよし", ar:"しぇいくすぴあ"},
+  {t:"人間は努力する限り迷うものだ", a:"ゲーテ", r:"にんげんはどりょくするかぎりまようものだ", ar:"げーて"},
+  {t:"努力だ。勉強だ。それが天才だ", a:"野口英世", r:"どりょくだべんきょうだそれがてんさいだ", ar:"のぐちひでよ"},
+  {t:"人の一生は重荷を負うて遠き道を行くが如し", a:"徳川家康", r:"ひとのいっしょうはおもにをおうてとおきみちをゆくがごとし", ar:"とくがわいえやす"},
+  {t:"為せば成る 為さねば成らぬ 何事も 成らぬは人の 為さぬなりけり", a:"上杉鷹山", r:"なせばなるなさねばならぬなにごともならぬはひとのなさぬなりけり", ar:"うえすぎようざん"},
+  {t:"我思う、ゆえに我あり", a:"デカルト", r:"われおもうゆえにわれあり", ar:"でかると"},
+  {t:"知識は力なり", a:"ベーコン", r:"ちしきはちからなり", ar:"べーこん"},
+  {t:"人間は考える葦である", a:"パスカル", r:"にんげんはかんがえるあしである", ar:"ぱすかる"},
+  {t:"賽は投げられた", a:"カエサル", r:"さいはなげられた", ar:"かえさる"},
+  {t:"少年よ、大志を抱け", a:"クラーク", r:"しょうねんよたいしをいだけ", ar:"くらーく"},
+  {t:"天は人の上に人を造らず、人の下に人を造らず", a:"福沢諭吉", r:"てんはひとのうえにひとをつくらずひとのしたにひとをつくらず", ar:"ふくざわゆきち"},
+  {t:"和を以て貴しと為す", a:"聖徳太子", r:"わをもってとうとしとなす", ar:"しょうとくたいし"},
+  {t:"それでも地球は動く", a:"ガリレオ", r:"それでもちきゅうはうごく", ar:"がりれお"},
+  {t:"千里の道も一歩から", a:"老子", r:"せんりのみちもいっぽから", ar:"ろうし"}
+];
+/* 名所のイラスト（SVG）。写真が読めないときの予備の絵 */
+const R=(x,y,w,h,f)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${f}"/>`;
+const P=(pts,f)=>`<polygon points="${pts}" fill="${f}"/>`;
+const C=(x,y,r,f)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${f}"/>`;
+const PA=(d,f,extra="")=>`<path d="${d}" fill="${f}" ${extra}/>`;
+const svg=inner=>`<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`;
+const ART={
+  eiffel:()=>svg(R(0,0,320,180,"#bcd4f2")+C(60,45,14,"#fff4c2")+R(0,150,320,30,"#7fae6a")+
+    P("157,18 163,18 170,70 192,150 172,150 160,114 148,150 128,150 150,70","#6b4f3a")+
+    PA("M149 150 Q160 116 171 150Z","#bcd4f2")+R(145,68,30,5,"#5a412f")+R(137,104,46,5,"#5a412f")+
+    `<line x1="160" y1="6" x2="160" y2="18" stroke="#5a412f" stroke-width="2"/>`),
+  liberty:()=>svg(R(0,0,320,180,"#cfe6e0")+R(0,140,320,40,"#5a9fb0")+R(130,130,60,12,"#8e979c")+R(140,108,40,24,"#9aa3a8")+
+    P("150,110 170,110 166,62 154,62","#4fa38e")+C(160,54,7,"#4fa38e")+
+    P("153,50 150,42 156,47 160,38 164,47 170,42 167,50","#4fa38e")+
+    P("164,60 170,60 179,24 174,23","#4fa38e")+P("171,25 181,25 179,17 173,17","#3f8c78")+C(176,12,5,"#f2b544")+R(147,68,6,14,"#3f8c78")),
+  pyramid:()=>svg(R(0,0,320,180,"#f3dcb0")+C(255,42,18,"#f7c65c")+R(0,140,320,40,"#e0b877")+
+    P("15,140 48,106 81,140","#caa060")+P("60,140 130,58 200,140","#d19a4e")+P("130,58 200,140 150,140","#b98040")+
+    P("175,140 228,82 281,140","#c9914a")+P("228,82 281,140 242,140","#ad7a3d")),
+  wall:()=>svg(R(0,0,320,180,"#cfe0f0")+PA("M0 120 Q60 70 120 110 T240 100 T320 88 V180 H0Z","#7c9a4d")+
+    PA("M0 140 Q80 115 160 140 T320 130 V180 H0Z","#5f7d38")+
+    PA("M0 125 Q60 78 120 116 T240 106 T320 94","none",'stroke="#b59a6d" stroke-width="9"')+
+    R(52,74,16,18,"#a3875a")+R(172,96,16,18,"#a3875a")+R(284,82,16,18,"#a3875a")),
+  taj:()=>svg(R(0,0,320,180,"#f3d7ea")+R(0,140,320,40,"#cfe3c0")+R(135,140,50,40,"#9cc7e0")+R(70,120,180,20,"#efe9f2")+
+    R(76,62,9,58,"#fbf8fc")+C(80.5,60,6,"#fbf8fc")+R(235,62,9,58,"#fbf8fc")+C(239.5,60,6,"#fbf8fc")+
+    R(110,80,100,42,"#fbf8fc")+PA("M150 122 V98 Q160 86 170 98 V122Z","#d9cfe0")+
+    C(120,80,9,"#fbf8fc")+C(200,80,9,"#fbf8fc")+PA("M126 82 Q124 42 160 32 Q196 42 194 82Z","#ffffff")+
+    `<line x1="160" y1="20" x2="160" y2="33" stroke="#d9cfe0" stroke-width="2"/>`),
+  fuji:()=>svg(R(0,0,320,180,"#d3e2fa")+C(255,48,16,"#f28b82")+P("10,160 160,38 310,160","#4f7fcf")+
+    P("160,38 126,66 140,64 150,74 162,64 175,72 194,66","#ffffff")+R(0,150,320,30,"#8fb8e8")),
+  colosseum:()=>{let a="";for(const y of [78,103,128])for(let x=52;x<262;x+=22)a+=PA(`M${x} ${y+18} V${y+6} Q${x+7} ${y-2} ${x+14} ${y+6} V${y+18}Z`,"#9b6a45");
+    return svg(R(0,0,320,180,"#f3dcc8")+R(0,150,320,30,"#d9c4a0")+PA("M40 150 V72 Q120 58 210 60 L230 66 L240 58 L280 70 V150Z","#d8a476")+a)},
+  machu:()=>svg(R(0,0,320,180,"#cdebd5")+`<ellipse cx="90" cy="40" rx="40" ry="10" fill="#ffffff" opacity=".8"/>`+
+    P("170,160 228,36 292,160","#3f7f4f")+P("0,160 0,118 130,104 210,160","#5a9a62")+R(0,158,320,22,"#4f8a58")+
+    [112,122,132,142].map(y=>`<line x1="10" y1="${y}" x2="${120+(y-104)}" y2="${y}" stroke="#86c28b" stroke-width="3"/>`).join("")+
+    R(60,98,12,8,"#b8b0a0")+R(80,95,14,10,"#b8b0a0")+R(100,99,10,7,"#b8b0a0")),
+  opera:()=>svg(R(0,0,320,180,"#cbe6f7")+R(0,130,320,50,"#3b8cc4")+R(60,118,200,14,"#d9c9a8")+
+    PA("M80 118 Q95 62 132 50 Q118 90 125 118Z","#ffffff")+PA("M122 118 Q142 55 182 42 Q166 90 173 118Z","#ffffff")+
+    PA("M168 118 Q187 70 216 62 Q206 95 211 118Z","#f2f6f9")+PA("M208 118 Q220 88 242 84 Q236 104 240 118Z","#e6edf2")),
+  bigben:()=>svg(R(0,0,320,180,"#e6dcc6")+R(40,120,105,40,"#c9ad72")+R(175,120,105,40,"#c9ad72")+
+    R(145,50,30,110,"#b89a5e")+P("143,50 160,10 177,50","#7a6a45")+C(160,72,10,"#fff8e0")+
+    `<path d="M160 72 V65 M160 72 H166" stroke="#5a4a2a" stroke-width="2"/>`+R(0,160,320,20,"#8a7a5a")),
+  sagrada:()=>{let a="";[[92,70],[112,40],[132,26],[152,16],[172,22],[192,38],[212,60],[232,80]].forEach(([x,t])=>{a+=P(`${x},120 ${x+7},${t} ${x+14},120`,"#c9a37a")+C(x+7,t+2,3,"#e8c890")});
+    return svg(R(0,0,320,180,"#f5d3c5")+a+R(80,118,170,42,"#b8905f")+PA("M150 160 V138 Q165 124 180 138 V160Z","#8a6a45")+R(0,160,320,20,"#9a7a55"))},
+  angkor:()=>{const t=(x,w,top)=>PA(`M${x} 128 V${top+30} Q${x+w/2} ${top-8} ${x+w} ${top+30} V128Z`,"#4a3b2a");
+    const sil=t(70,26,76)+t(110,30,62)+t(145,30,34)+t(180,30,62)+t(224,26,76)+R(60,112,200,16,"#4a3b2a");
+    return svg(R(0,0,320,180,"#efe0bb")+C(160,70,26,"#f5b86b")+R(0,128,320,52,"#8fb4c9")+sil+`<g transform="translate(0,256) scale(1,-1)" opacity=".28">${sil}</g>`)},
+  pisa:()=>svg(R(0,0,320,180,"#d9e6f5")+R(0,150,320,30,"#8fbf7a")+`<g transform="rotate(6 160 150)">`+R(140,40,40,110,"#f4efe4")+
+    [58,76,94,112,130].map(y=>R(140,y,40,3,"#d8cfbd")).join("")+R(146,28,28,13,"#efe8da")+`</g>`),
+  arc:()=>svg(R(0,0,320,180,"#cfdcf0")+R(0,150,320,30,"#b9b1a3")+R(95,48,130,102,"#e6d8bb")+R(90,40,140,12,"#d8c8a6")+
+    PA("M135 150 V102 Q160 72 185 102 V150Z","#cfdcf0")+R(104,64,22,40,"#dccba8")+R(194,64,22,40,"#dccba8")),
+  moai:()=>{const hd=(x,h)=>P(`${x},140 ${x},${140-h+15} ${x+8},${140-h} ${x+30},${140-h} ${x+34},${140-h+15} ${x+34},140`,"#6d6259")+R(x+4,140-h+22,28,5,"#51483f")+R(x+14,140-h+27,8,22,"#5c5249");
+    return svg(R(0,0,320,180,"#f6d9b8")+C(250,60,20,"#f4a261")+R(0,140,320,40,"#7fa35a")+hd(70,80)+hd(140,92)+hd(210,76))},
+  golden:()=>svg(R(0,0,320,180,"#f1d6c8")+R(0,128,320,52,"#5f8fb0")+R(80,36,10,100,"#c0392b")+R(230,36,10,100,"#c0392b")+
+    R(0,108,320,7,"#b03224")+PA("M0 64 Q45 58 85 38 Q160 112 235 38 Q280 58 320 64","none",'stroke="#c0392b" stroke-width="3"')),
+  castle:()=>{const tw=(x,y,w,h)=>R(x,y,w,h,"#f3f1ee")+P(`${x-3},${y} ${x+w/2},${y-26} ${x+w+3},${y}`,"#3d5a80");
+    return svg(R(0,0,320,180,"#d6e4f2")+P("0,130 70,70 140,120 210,60 320,125 320,180 0,180","#9fb8a8")+
+      R(128,78,70,62,"#f3f1ee")+P("124,78 163,56 202,78","#3d5a80")+tw(108,58,20,82)+tw(200,46,18,94)+tw(150,40,14,40)+
+      [140,160,180].map(x=>R(x,96,8,12,"#9fb0c4")).join("")+PA("M0 150 Q80 130 160 148 T320 142 V180 H0Z","#4f7d52"))},
+  basil:()=>{const on=(x,y,r,c)=>PA(`M${x-r} ${y} Q${x-r} ${y-r*1.3} ${x} ${y-r*2.2} Q${x+r} ${y-r*1.3} ${x+r} ${y} Q${x} ${y+r*.7} ${x-r} ${y}Z`,c);
+    return svg(R(0,0,320,180,"#dce8f5")+R(0,150,320,30,"#b9a8a0")+R(88,104,144,46,"#b9523c")+
+      R(104,72,20,34,"#c9674f")+on(114,72,13,"#2a9d8f")+R(196,72,20,34,"#c9674f")+on(206,72,13,"#e9c46a")+
+      R(150,48,20,58,"#c9674f")+P("148,50 160,8 172,50","#2a9d8f")+R(126,86,16,20,"#c9674f")+on(134,86,10,"#e76f51")+
+      R(178,86,16,20,"#c9674f")+on(186,86,10,"#457b9d"))},
+  stone:()=>{const st=(x,h)=>R(x,130-h,16,h,"#8a8f94");
+    return svg(R(0,0,320,180,"#dfe7ef")+R(0,130,320,50,"#8fb36a")+st(60,52)+st(92,58)+R(56,70,56,10,"#7b8085")+
+      st(140,62)+st(172,62)+R(136,62,56,10,"#7b8085")+st(222,50)+st(250,38)+R(218,76,34,9,"#7b8085"))},
+  kinkaku:()=>{const pav=`${R(125,98,70,22,"#d8b24a")}${P("112,98 208,98 192,88 128,88","#5a4a3a")}${R(132,70,56,18,"#e0bd57")}${P("120,70 200,70 185,60 135,60","#5a4a3a")}${R(141,47,38,13,"#e6c460")}${P("132,47 188,47 168,34 152,34","#5a4a3a")}`;
+    return svg(R(0,0,320,180,"#cfe3ef")+`<ellipse cx="50" cy="100" rx="70" ry="40" fill="#5f8f5a"/><ellipse cx="280" cy="96" rx="70" ry="44" fill="#557f50"/>`+
+      R(0,118,320,62,"#6f9fb5")+pav+`<g transform="translate(0,238) scale(1,-1)" opacity=".3">${pav}</g>`)},
+  uluru:()=>svg(R(0,0,320,180,"#f2c79a")+R(0,140,320,40,"#d9884a")+PA("M36 140 Q48 96 100 90 Q170 80 250 88 Q292 96 292 140Z","#c1552b")+
+    PA("M120 140 Q126 110 140 100","none",'stroke="#a8461f" stroke-width="3"')+PA("M200 140 Q206 112 222 98","none",'stroke="#a8461f" stroke-width="3"')),
+  petra:()=>svg(R(0,0,320,180,"#d98f73")+R(0,0,70,180,"#c47a5f")+R(250,0,70,180,"#c47a5f")+R(106,56,108,110,"#e8a98c")+
+    P("102,58 160,30 218,58","#e3a086")+[114,138,176,200].map(x=>R(x,62,8,104,"#d49379")).join("")+R(148,112,24,54,"#6b3a2c")+R(0,166,320,14,"#b86d52"))
+};
+/* 本物の写真は photos.js の PHOTOS から読む（写真・撮影者・ライセンス）。無ければイラストを出す */
+const PHOTO_LIST = (typeof PHOTOS === "object" && PHOTOS) ? PHOTOS : {};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function creditOf(ph){
+  const lic = ph.licenseUrl ? '<a href="'+esc(ph.licenseUrl)+'" target="_blank" rel="noopener">'+esc(ph.license)+'</a>' : esc(ph.license);
+  const who = ph.page ? '<a href="'+esc(ph.page)+'" target="_blank" rel="noopener">'+esc(ph.author)+'</a>' : esc(ph.author);
+  return "写真："+who+"（"+lic+"）／Wikimedia Commons";
+}
+function pic(q){
+  const ph = PHOTO_LIST[q.art];
+  if(!ph) return {html:ART[q.art](), label:"イラスト", credit:""};
+  return {html:'<div class="ph"><img class="blur" src="'+esc(ph.src)+'" alt=""><img class="main" src="'+esc(ph.src)+'" alt="'+esc(q.n)+'"></div>', label:"写真", credit:creditOf(ph)};
+}
+const SPOTS = [
+  {n:"エッフェル塔", c:"フランス・パリ", r:"えっふぇるとう", art:"eiffel", d:"1889年のパリ万博に合わせて建てられた鉄の塔。完成したときは世界一高い建物で、今の高さは約330m。"},
+  {n:"自由の女神", c:"アメリカ・ニューヨーク", r:"じゆうのめがみ", art:"liberty", d:"アメリカ独立100周年のお祝いに、フランスから贈られた像。右手のたいまつは「自由の光」を表している。"},
+  {n:"ギザのピラミッド", c:"エジプト", r:"ぎざのぴらみっど", art:"pyramid", d:"約4500年前に王のお墓として造られた。一番大きいクフ王のピラミッドは、約230万個の石を積んでできている。"},
+  {n:"万里の長城", c:"中国", r:"ばんりのちょうじょう", art:"wall", d:"北からの侵入を防ぐために、長い年月をかけて造られた城壁。全長は2万km以上といわれている。"},
+  {n:"タージ・マハル", c:"インド", r:"たーじまはる", art:"taj", d:"ムガル帝国の皇帝が、亡くなった妃のために建てたお墓。白い大理石は、朝や夕方で色が変わって見える。"},
+  {n:"富士山", c:"日本・静岡／山梨", r:"ふじさん", art:"fuji", d:"標高3776mの日本一高い山。2013年に世界文化遺産に登録された。"},
+  {n:"コロッセオ", c:"イタリア・ローマ", r:"ころっせお", art:"colosseum", d:"約2000年前に造られた古代ローマの円形闘技場。約5万人もの観客が入れたといわれている。"},
+  {n:"マチュピチュ", c:"ペルー", r:"まちゅぴちゅ", art:"machu", d:"標高約2400mの山の上にあるインカ帝国の遺跡。ふもとから見えないので「空中都市」と呼ばれる。"},
+  {n:"シドニー・オペラハウス", c:"オーストラリア", r:"しどにーおぺらはうす", art:"opera", d:"貝殻や船の帆のような屋根が目印の劇場。1973年に完成し、2007年に世界遺産になった。"},
+  {n:"ビッグ・ベン", c:"イギリス・ロンドン", r:"びっぐべん", art:"bigben", d:"国会議事堂の時計塔にある大きな鐘の愛称。塔の正式な名前は「エリザベス・タワー」。"},
+  {n:"サグラダ・ファミリア", c:"スペイン・バルセロナ", r:"さぐらだふぁみりあ", art:"sagrada", d:"建築家ガウディが設計した教会。1882年に工事が始まり、今も建設が続いている。"},
+  {n:"アンコール・ワット", c:"カンボジア", r:"あんこーるわっと", art:"angkor", d:"12世紀に造られた寺院。朝日に浮かぶシルエットが有名で、カンボジアの国旗にも描かれている。"},
+  {n:"ピサの斜塔", c:"イタリア・ピサ", r:"ぴさのしゃとう", art:"pisa", d:"大聖堂の鐘楼として12世紀に建て始められた塔。工事中から地面が沈んで傾き始め、今も約4度傾いている。"},
+  {n:"凱旋門", c:"フランス・パリ", r:"がいせんもん", art:"arc", d:"ナポレオンが戦いの勝利を記念して造らせた門。完成は1836年で、屋上からパリの街を見渡せる。"},
+  {n:"モアイ像", c:"チリ・イースター島", r:"もあいぞう", art:"moai", d:"南太平洋のイースター島に900体近くある石像。島の人々が祖先をまつるために造ったと考えられている。"},
+  {n:"ゴールデン・ゲート・ブリッジ", c:"アメリカ・サンフランシスコ", r:"ごーるでんげーとぶりっじ", art:"golden", d:"1937年に完成した全長約2.7kmのつり橋。霧の中でも目立つよう、赤みがかったオレンジ色に塗られている。"},
+  {n:"ノイシュヴァンシュタイン城", c:"ドイツ", r:"のいしゅゔぁんしゅたいんじょう", art:"castle", d:"バイエルン王ルートヴィヒ2世が建てた城。おとぎ話のような姿で、ディズニーの城のモデルの一つといわれる。"},
+  {n:"聖ワシリイ大聖堂", c:"ロシア・モスクワ", r:"せいわしりいだいせいどう", art:"basil", d:"モスクワの赤の広場に立つ、カラフルなたまねぎ形の屋根が目印の教会。16世紀に建てられた。"},
+  {n:"ストーンヘンジ", c:"イギリス", r:"すとーんへんじ", art:"stone", d:"約5000年前から造られ始めた巨大な石の遺跡。夏至の日、石の並びに合わせて朝日が昇るように配置されている。"},
+  {n:"金閣寺", c:"日本・京都", r:"きんかくじ", art:"kinkaku", d:"正式な名前は鹿苑寺。金箔で覆われた建物が池に映る姿が有名で、1994年に世界遺産に登録された。"},
+  {n:"ウルル（エアーズロック）", c:"オーストラリア", r:"うるる", art:"uluru", d:"高さ約350mの巨大な一枚岩。先住民アボリジニの聖地で、2019年から登ることが禁止されている。"},
+  {n:"ペトラ", c:"ヨルダン", r:"ぺとら", art:"petra", d:"岩山を削って造られた古代都市の遺跡。ばら色の岩から「バラ色の都市」とも呼ばれている。"}
+];
+const ROUNDS = 10;
+const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
+
+const $ = s => document.querySelector(s);
+if(("ontouchstart" in window) || navigator.maxTouchPoints > 0) document.documentElement.classList.add("touch");
+const ans = $("#ans");
+let lastLen = 0, warnT = 0, penalties = 0;
+let mode = "quote", qs = [], idx = 0, times = [], qStart = 0, running = false, locked = true, raf = 0, sepAt = -1, target = "";
+
+function store(k, v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k, v); }catch(e){ return null; } }
+function showBest(){
+  for(const m of ["quote","spot"]){
+    const b = parseFloat(store("flick-best-"+m));
+    $("#best-"+m).textContent = isNaN(b) ? "自己ベスト：まだなし" : "自己ベスト：" + b.toFixed(2) + "秒";
+  }
+}
+function show(id){ for(const s of ["home","game","result"]) $("#"+s).classList.toggle("hidden", s!==id); document.body.classList.toggle("playing", id==="game"); window.scrollTo(0,0); fit(); }
+function fit(){
+  const vv = window.visualViewport, r = document.documentElement.style;
+  if(!vv){ r.setProperty("--vvh", window.innerHeight+"px"); return; }
+  r.setProperty("--vvh", vv.height+"px");
+  r.setProperty("--vvt", vv.offsetTop+"px");
+  const inner = document.querySelector("#card"); if(inner) inner.scrollTop = inner.scrollHeight;
+}
+if(window.visualViewport){ visualViewport.addEventListener("resize", fit); visualViewport.addEventListener("scroll", fit); }
+window.addEventListener("resize", fit);
+function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+
+function norm(s){
+  return s.replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0)-0x60))
+          .replace(/[\s、。・，．,.!！?？「」『』〜]/g, "");
+}
+function base(c){ c = c.normalize("NFD").replace(/[゙゚]/g, ""); return SMALL[c] || c; }
+
+function judge(input){
+  let n = 0, err = false;
+  for(let i=0;i<input.length;i++){
+    if(i >= target.length){ err = true; break; }
+    if(input[i] === target[i]){ n++; continue; }
+    // 最後の1文字は濁点・小文字の切り替え途中を許す
+    if(i === input.length-1 && base(input[i]) === base(target[i])) break;
+    err = true; break;
+  }
+  return {n, err, done: input === target};
+}
+
+function renderTarget(n, err){
+  let h = "";
+  for(let i=0;i<target.length;i++){
+    if(i === sepAt) h += '<span class="sep">／</span>';
+    const cls = i < n ? "d" : (i === n ? (err ? "x" : "n") : "c");
+    h += '<span class="'+cls+'">'+target[i]+'</span>';
+  }
+  $("#tgt").innerHTML = h;
+}
+
+function renderCard(){
+  const q = qs[idx];
+  let h = "";
+  if(mode === "quote"){
+    target = q.r + q.ar; sepAt = q.r.length;
+    h += '<p class="qtext">「'+q.t+'」</p><p class="who">'+q.a+'</p>';
+  }else{
+    target = q.r; sepAt = -1;
+    const pc = pic(q);
+    h += '<div class="photo">'+pc.html+'<span>'+pc.label+'</span></div>';
+    h += '<p class="spot">'+q.n+'</p><p class="country">'+q.c+'</p>';
+  }
+  h += '<div class="target" id="tgt"></div>';
+  $("#card").innerHTML = h;
+  $("#prog").textContent = (idx+1) + " / " + ROUNDS;
+  renderTarget(0, false);
+  $("#card").scrollTop = $("#card").scrollHeight;
+}
+
+function tick(){
+  if(!running) return;
+  const total = times.reduce((a,b)=>a+b,0) + (performance.now()-qStart)/1000;
+  $("#clock").textContent = total.toFixed(2);
+  raf = requestAnimationFrame(tick);
+}
+
+function start(m){
+  mode = m;
+  qs = shuffle(m === "quote" ? QUOTES : SPOTS).slice(0, ROUNDS);
+  idx = 0; times = []; running = false; locked = true; penalties = 0;
+  show("game");
+  renderCard();
+  $("#clock").textContent = "0.00";
+  ans.value = ""; baseRaw = 0; lastLen = 0; $("#typed").textContent = "";
+  ans.classList.remove("bad");
+  ans.focus(); // タップ直後に呼んでキーボードを出す
+  const cd = $("#count"); cd.classList.remove("hidden");
+  let k = 3; cd.textContent = k;
+  const iv = setInterval(() => {
+    k--;
+    if(k > 0){ cd.textContent = k; return; }
+    clearInterval(iv); cd.classList.add("hidden");
+    resetBase(); locked = false; running = true;
+    qStart = performance.now(); tick();
+    ans.focus();
+  }, 650);
+}
+
+/* 入力欄は途中で消さない（消すとキーボードの変換状態とズレて誤判定になる）。
+   代わりに「この問題はここから」という位置を覚えて、その後ろだけを判定する。 */
+let baseRaw = 0;
+function resetBase(){ baseRaw = ans.value.length; lastLen = 0; $("#typed").textContent = ""; }
+
+function next(){
+  times.push((performance.now()-qStart)/1000);
+  idx++;
+  resetBase();
+  if(idx >= ROUNDS){ finish(); return; }
+  renderCard(); ans.classList.remove("bad");
+  qStart = performance.now();
+}
+
+ans.addEventListener("input", () => {
+  if(baseRaw > ans.value.length) baseRaw = ans.value.length;
+  if(locked){ resetBase(); return; }
+  const raw = ans.value.slice(baseRaw);
+  const v = norm(raw);
+  lastLen = v.length;
+  $("#typed").textContent = raw;
+  const r = judge(v);
+  renderTarget(r.n, r.err);
+  ans.classList.toggle("bad", r.err);
+  if(r.done) next();
+});
+
+function finish(){
+  running = false; cancelAnimationFrame(raf);
+  const total = times.reduce((a,b)=>a+b,0);
+  const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
+  const key = "flick-best-"+mode, prev = parseFloat(store(key));
+  const isNew = isNaN(prev) || total < prev;
+  if(isNew) store(key, total.toFixed(2));
+  const best = isNew ? total : prev;
+  $("#r-time").textContent = total.toFixed(2);
+  $("#r-cps").textContent = (chars/total).toFixed(1);
+  $("#r-chars").textContent = chars;
+  $("#r-best").textContent = best.toFixed(2);
+  $("#r-new").classList.toggle("hidden", !isNew || isNaN(prev));
+  $("#r-list").className = mode === "spot" ? "intros" : "list";
+  $("#r-list").innerHTML = mode === "spot"
+    ? qs.map((q,i) => { const pc = pic(q); return '<li class="intro"><div class="pic">'+pc.html+'</div><div class="body">'+
+        '<div class="head"><b>'+q.n+'</b><span>'+times[i].toFixed(2)+'秒</span></div>'+
+        '<small>'+q.c+'</small><p>'+q.d+'</p>'+(pc.credit ? '<em class="credit">'+pc.credit+'</em>' : '')+'</div></li>'; }).join("")
+    : qs.map((q,i) => '<li><span>'+q.a+'「'+q.t+'」</span><span>'+times[i].toFixed(2)+'秒</span></li>').join("");
+  ans.blur();
+  show("result");
+  showBest();
+}
+
+document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => start(b.dataset.mode)));
+$("#quit").addEventListener("click", () => { running = false; locked = true; cancelAnimationFrame(raf); ans.blur(); show("home"); showBest(); });
+$("#again").addEventListener("click", () => start(mode));
+$("#home-btn").addEventListener("click", () => { show("home"); showBest(); });
+showBest();
+</script>
+</body>
+</html>

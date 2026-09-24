@@ -104,22 +104,34 @@ def wrap(paths, vb, W, H, extra=""):
 </svg>'''
 
 
+# 大きな国の色は 決めておく(けいくん 2026-09-24「右上に赤が多くて怖い → 北海道と同じ色(むらさき)に」)。番号は TONES の並び
+BIG = {"RUS": 4, "CHN": 7, "USA": 2, "CAN": 5, "BRA": 1, "AUS": 8, "IND": 6, "KAZ": 1, "MNG": 8, "GRL": 3, "ARG": 4, "DZA": 3,
+       "SAU": 1, "IRN": 2, "MEX": 6, "IDN": 5, "LBY": 5, "SDN": 7, "COD": 4, "ZAF": 6, "PER": 3, "COL": 1, "EGY": 8, "TUR": 2,
+       "UKR": 1, "FRA": 3, "ESP": 6, "DEU": 1, "SWE": 6, "NOR": 8, "FIN": 3, "POL": 5, "ITA": 2, "GBR": 6, "JPN": 6, "MDG": 4,
+       "TCD": 3, "NER": 4, "MLI": 8, "MRT": 5, "AGO": 3, "NAM": 1, "BWA": 8, "ETH": 4, "TZA": 1, "KEN": 5, "MOZ": 7, "ZMB": 3,
+       "PAK": 5, "AFG": 8, "MMR": 1, "THA": 7, "VNM": 3, "MYS": 1, "PNG": 6, "NZL": 8, "CHL": 6, "BOL": 5, "VEN": 5, "ISL": 6}
+
+
 def world(src, out):
     s = open(src, encoding="utf-8").read()
-    # BlankMap-Equirectangular: <g id="positioner" transform="translate(180, 90) scale(1, -1)"> の中に 国ごとの <path>
+    # BlankMap-Equirectangular: <g class="country XXX"> ごとに <path>。国の記号(XXX)で 色を決める
     body = s[s.index('<g id="positioner"'):s.rindex("</svg>")]
     body = re.sub(r"<style.*?</style>", "", body, flags=re.S)
-    paths = '<g transform="translate(180, 90) scale(1, -1)">' + re.sub(r'class="[^"]*"', "", body.split(">", 1)[1]).rsplit("</g>", 1)[0] + "</g>"
-    paths = re.sub(r'<g[^>]*>|</g>', lambda m: m.group(0) if 'transform' in m.group(0) or m.group(0) == '</g>' else '<g>', paths)
-    n = [0]
-    def color(m):
-        n[0] += 1
-        return f'<path fill="url(#t{(n[0] * 4) % len(TONES)})" '
-    paths = re.sub(r'<path ', color, paths)
+    inner = body.split(">", 1)[1].rsplit("</g>", 1)[0]
+    out_parts = []
+    def repl(m):
+        code, paths = m.group(1), m.group(2)
+        if code in BIG:
+            t = BIG[code]
+        else:
+            t = (sum(ord(c) for c in code) * 7) % len(TONES)
+            if len(paths) > 20000 and t == 0:
+                t = 8  # 大きな国は 赤にしない
+        return re.sub(r"<path ", f'<path fill="url(#t{t})" ', paths)
+    inner = re.sub(r'<g[^>]*class="country ([A-Z]+)"[^>]*>(.*?)</g>', repl, inner, flags=re.S)
+    inner = re.sub(r"<g[^>]*>|</g>", "", inner)
+    paths = '<g transform="translate(180, 90) scale(1, -1)">' + inner + "</g>"
     deco = ""  # かざりは 無し(けいくん 2026-09-24「やっぱり絵は無い方がいい」)
-    _unused = (sun(16, 136, 1) + cloud(40, 60, 1.2) + cloud(120, 24, 1) + cloud(310, 130, 1.1) + cloud(230, 132, .9) + cloud(345, 26, .8)
-            + balloon(66, 92, 1, "#ff7eb6", "#ffe066") + balloon(300, 104, 1, "#7ecbff", "#ffffff") + balloon(155, 128, .9, "#ffb36b", "#ff5e8a")
-            + boat(150, 96, 1) + boat(250, 118, .9) + boat(52, 128, .8) + plane(200, 140, 1) + plane(330, 60, .9))
     svg = wrap(paths, (0, 6, 360, 144), 1080, 432, deco)
     open(out, "w", encoding="utf-8").write(svg)
 

@@ -12,7 +12,10 @@
   (世界地図と同じ ペン画風。フィルターは `tools/map-defs.svgfrag`)。本土は 東経128.5〜146.5 / 北緯29.8〜46、南西諸島(沖縄・八重山)は 左上の わく。
   ピンの位置は `index.html` の `JAPAN_MAP` / `japanPos` が 同じ数字で計算する。**地図の切りかたを変えたら 両方 直す**。
   作りかた: `ne_10m_land.zip` をほどく → `python3 tools/make_japan_map.py ne_10m_land.shp japan.svg` → ブラウザで 3240px幅に描いて 1080px に縮める
-- **世界一周マップ**: クリアしたレベルの名所に ピンが立つ。地図は `world-map-mono.jpg`
+- **世界一周マップ**: クリアしたレベルの名所に ピンが立つ。地図は **`world-map-color.jpg`**(2026-09-24 けいくん「世界フリック旅行みたいな カラフルで綺麗な画像にしたい」→
+  `tools/make_color_map.py` で 同じ地図データを キャンディ色(国ごとに 8色)・青い海・星で 描いた。日本は `japan-map-color.jpg`)。
+  ⚠️ AI に地図を描かせない(場所が ずれて ピンが合わなくなる)。**切りかたは モノクロ版と同じ**なので ピンの計算は そのまま。
+  モノクロ版(`world-map-mono.jpg` / `japan-map-mono.jpg`)は 使っていないが、作りかたの記録として 下に残す。もとの地図は `world-map-mono.jpg`
   (Wikimedia Commons の BlankMap-Equirectangular.svg。CC0。Natural Earth のデータ)を 北緯84度〜南緯60度で 切り、
   SVG のフィルター(紙のきめ・ペンの斜線・ゆらぐ黒い海岸線・海岸にそった波紋の線)で モノクロのペン画風にして 3倍で描いてから 縮めたもの。
   海の名前と方位は HTML の字(手書き風の書体 Yomogi)。
@@ -36,7 +39,8 @@
 |---|---|
 | `index.html` | ゲーム本体(遊びかた・デザイン) |
 | `hero.webp` / `logo-word.webp` / `logo-mark.webp` | トップの絵と そこから切った ロゴ(`tools/logo-word-cut.py`) |
-| `world-map-mono.jpg` | 世界一周マップの モノクロのペン画風の地図(もとは CC0) |
+| `world-map-color.jpg` / `japan-map-color.jpg` | いま使っている カラフルな地図(`tools/make_color_map.py`) |
+| `world-map-mono.jpg` | まえの モノクロのペン画風の地図(もとは CC0)。いまは使っていない |
 | `japan-map-mono.jpg` | 日本一周マップ(もとは Natural Earth。パブリックドメイン) |
 | `tools/spots-*.tsv` | 足した名所の一覧(ここを直す)。`tools/add_spots.py` で index.html に流しこむ |
 | `tools/make_japan_map.py` | 日本一周マップを作る台本 |

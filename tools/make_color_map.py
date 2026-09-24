@@ -35,6 +35,43 @@ STYLE = '''
 </defs>
 '''
 
+# かざりの 部品(絵に寄せる。けいくん 2026-09-24「もっと絵に寄せて」)。位置は 海の上に 手で置く
+def cloud(x, y, k):
+    c = "".join(f'<circle cx="{x+dx*k:.2f}" cy="{y+dy*k:.2f}" r="{r*k:.2f}"/>' for dx, dy, r in [(0,0,3.2),(3.4,-1.2,3.8),(7,0,3),(3.5,1.4,3.4),(-2.6,1.2,2.4),(9.4,1.2,2.2)])
+    return f'<g fill="#ffffff" opacity=".96">{c}</g><g fill="#dff0ff" opacity=".8"><ellipse cx="{x+3.5*k:.2f}" cy="{y+3.6*k:.2f}" rx="{7.2*k:.2f}" ry="{1.4*k:.2f}"/></g>'
+
+
+def balloon(x, y, k, c1, c2):
+    return (f'<g><line x1="{x-1.6*k:.2f}" y1="{y+3.6*k:.2f}" x2="{x-1.0*k:.2f}" y2="{y+6.2*k:.2f}" stroke="#7a4a1e" stroke-width="{0.25*k:.2f}"/>'
+            f'<line x1="{x+1.6*k:.2f}" y1="{y+3.6*k:.2f}" x2="{x+1.0*k:.2f}" y2="{y+6.2*k:.2f}" stroke="#7a4a1e" stroke-width="{0.25*k:.2f}"/>'
+            f'<ellipse cx="{x:.2f}" cy="{y:.2f}" rx="{3.4*k:.2f}" ry="{4*k:.2f}" fill="{c1}"/>'
+            f'<path d="M{x-1.4*k:.2f} {y-3.7*k:.2f} Q{x:.2f} {y+4.5*k:.2f} {x+1.4*k:.2f} {y-3.7*k:.2f} Z" fill="{c2}" opacity=".9"/>'
+            f'<ellipse cx="{x-1.2*k:.2f}" cy="{y-1.6*k:.2f}" rx="{1.1*k:.2f}" ry="{1.6*k:.2f}" fill="#fff" opacity=".45"/>'
+            f'<rect x="{x-1.1*k:.2f}" y="{y+6*k:.2f}" width="{2.2*k:.2f}" height="{1.5*k:.2f}" rx="{0.3*k:.2f}" fill="#b87333"/></g>')
+
+
+def boat(x, y, k):
+    return (f'<g><path d="M{x-3.2*k:.2f} {y:.2f} L{x+3.2*k:.2f} {y:.2f} L{x+2.2*k:.2f} {y+1.6*k:.2f} L{x-2.4*k:.2f} {y+1.6*k:.2f} Z" fill="#e0552b"/>'
+            f'<path d="M{x:.2f} {y-0.4*k:.2f} L{x:.2f} {y-5.6*k:.2f} L{x+3.4*k:.2f} {y-0.4*k:.2f} Z" fill="#ffffff"/>'
+            f'<path d="M{x-0.5*k:.2f} {y-0.4*k:.2f} L{x-0.5*k:.2f} {y-4.6*k:.2f} L{x-2.8*k:.2f} {y-0.4*k:.2f} Z" fill="#ffe9a8"/></g>')
+
+
+def plane(x, y, k):
+    return (f'<g transform="translate({x:.2f},{y:.2f}) rotate(-20)"><path d="M0 0 L{-7*k:.2f} {-2.6*k:.2f} L{-5*k:.2f} 0 L{-7*k:.2f} {2.2*k:.2f} Z" fill="#ffffff" stroke="#9fc6ee" stroke-width="{0.2*k:.2f}"/>'
+            f'<path d="M0 0 L{-5*k:.2f} 0 L{-6*k:.2f} {1.1*k:.2f} Z" fill="#cfe4fb"/></g>')
+
+
+def sun(x, y, k):
+    rays = "".join(f'<line x1="{x:.2f}" y1="{y:.2f}" x2="{x+9*k*__import__("math").cos(a):.2f}" y2="{y+9*k*__import__("math").sin(a):.2f}" stroke="#fff3a8" stroke-width="{0.6*k:.2f}" opacity=".85"/>' for a in [i*3.14159/6 for i in range(12)])
+    return f'<g>{rays}<circle cx="{x:.2f}" cy="{y:.2f}" r="{5.2*k:.2f}" fill="#fff3a8"/><circle cx="{x:.2f}" cy="{y:.2f}" r="{3.6*k:.2f}" fill="#ffe36b"/></g>'
+
+
+def sakura(x, y, k):
+    import math
+    pet = "".join(f'<ellipse cx="{x+1.5*k*math.cos(a):.2f}" cy="{y+1.5*k*math.sin(a):.2f}" rx="{1.3*k:.2f}" ry="{0.9*k:.2f}" transform="rotate({a*180/math.pi:.1f} {x+1.5*k*math.cos(a):.2f} {y+1.5*k*math.sin(a):.2f})" fill="#ffb3d9"/>' for a in [i*2*math.pi/5 for i in range(5)])
+    return f'<g opacity=".95">{pet}<circle cx="{x:.2f}" cy="{y:.2f}" r="{0.7*k:.2f}" fill="#ffe3f1"/></g>'
+
+
 STARS = [(0.08, 0.12, 1.6), (0.22, 0.78, 1.1), (0.41, 0.2, 1.0), (0.62, 0.86, 1.4), (0.87, 0.18, 1.2), (0.94, 0.62, 0.9), (0.35, 0.55, 0.8), (0.75, 0.42, 1.0)]
 
 
@@ -57,6 +94,7 @@ def wrap(paths, vb, W, H, extra=""):
 {style}
 <rect x="{x0}" y="{y0}" width="{vw}" height="{vh}" fill="url(#sea)"/>
 <rect x="{x0}" y="{y0}" width="{vw}" height="{vh}" filter="url(#sparkle)" opacity=".7"/>
+<g transform="translate(0,{1.1*k:.3f})" fill="#3f9a3a" stroke="#3f9a3a" stroke-width="{0.5*k:.3f}" stroke-linejoin="round" opacity=".95">{paths}</g>
 <g filter="url(#shade)"><g fill="url(#land)" stroke="#2f9c4a" stroke-width="{0.35*k:.3f}" stroke-linejoin="round">{paths}</g></g>
 <g fill="url(#gloss)" opacity=".9">{paths}</g>
 {extra}
@@ -80,7 +118,10 @@ def world(src, out):
         n[0] += 1
         return f'<path fill="{CANDY[(n[0] * 5) % len(CANDY)]}" '
     paths = re.sub(r'<path ', color, paths)
-    svg = wrap(paths, (0, 6, 360, 144), 1080, 432)
+    deco = (sun(16, 136, 1) + cloud(40, 60, 1.2) + cloud(120, 24, 1) + cloud(310, 130, 1.1) + cloud(230, 132, .9) + cloud(345, 26, .8)
+            + balloon(66, 92, 1, "#ff7eb6", "#ffe066") + balloon(300, 104, 1, "#7ecbff", "#ffffff") + balloon(155, 128, .9, "#ffb36b", "#ff5e8a")
+            + boat(150, 96, 1) + boat(250, 118, .9) + boat(52, 128, .8) + plane(200, 140, 1) + plane(330, 60, .9))
+    svg = wrap(paths, (0, 6, 360, 144), 1080, 432, deco)
     open(out, "w", encoding="utf-8").write(svg)
 
 
@@ -98,6 +139,11 @@ def japan(shp, out):
              f'<g clip-path="url(#ic)"><g filter="url(#shade)"><g fill="url(#land)" stroke="#2f9c4a" stroke-width="{0.35:.2f}" stroke-linejoin="round">{inset}</g></g>'
              f'<g fill="url(#gloss)" opacity=".9">{inset}</g></g>'
              f'<rect {box} fill="none" stroke="#ffffff" stroke-width="1.2"/>')
+    d = 1  # 日本の絵は 1単位が 世界の 1/25 なので、かざりは 単位で書けば 同じ見た目
+    extra += (sun(335, 30, 1.8) + cloud(200, 60, 2.4) + cloud(70, 250, 2.0) + cloud(300, 335, 1.9) + cloud(150, 130, 1.5)
+              + balloon(110, 205, 1.9, "#ff7eb6", "#ffe066") + balloon(290, 250, 1.9, "#7ecbff", "#ffffff")
+              + boat(230, 300, 1.9) + boat(140, 335, 1.7) + boat(300, 385, 1.7) + plane(120, 105, 1.9) + plane(335, 180, 1.7)
+              + sakura(60, 315, 2) + sakura(250, 150, 2.2) + sakura(200, 380, 1.8) + sakura(330, 120, 1.6))
     main = f'<clipPath id="mc"><rect x="0" y="0" width="{J.W:.2f}" height="{J.H:.2f}"/></clipPath><g clip-path="url(#mc)">{land}</g>'
     svg = wrap(main, (0, 0, J.W, J.H), 1080, round(1080 * J.H / J.W), extra)
     open(out, "w", encoding="utf-8").write(svg)

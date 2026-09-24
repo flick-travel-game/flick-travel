@@ -1,0 +1,45 @@
+<pattern id="hatch" width="1.1" height="1.1" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+  <line x1="0" y1="0" x2="0" y2="1.1" stroke="#3a3a3a" stroke-width="0.22"/>
+ </pattern>
+ <filter id="paper" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="4" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.2  0 0 0 0 0.2  0 0 0 0 0.2  0 0 0 0.08 0"/>
+ </filter>
+ <filter id="landmask" x="-5%" y="-5%" width="110%" height="110%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.35" numOctaves="2" seed="7" result="wob"/>
+  <feGaussianBlur in="SourceAlpha" stdDeviation="0.35" result="soft"/>
+  <feComponentTransfer in="soft" result="solid"><feFuncA type="discrete" tableValues="0 0 1 1 1 1"/></feComponentTransfer>
+  <feDisplacementMap in="solid" in2="wob" scale="0.9" xChannelSelector="R" yChannelSelector="G" result="land"/>
+  <feFlood flood-color="#fff"/><feComposite in2="land" operator="in"/>
+ </filter>
+ <filter id="coast" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB">
+  <feTurbulence type="fractalNoise" baseFrequency="0.35" numOctaves="2" seed="7" result="wob"/>
+  <feGaussianBlur in="SourceAlpha" stdDeviation="0.35" result="soft"/>
+  <feComponentTransfer in="soft" result="solid"><feFuncA type="discrete" tableValues="0 0 1 1 1 1"/></feComponentTransfer>
+  <feDisplacementMap in="solid" in2="wob" scale="0.9" xChannelSelector="R" yChannelSelector="G" result="land"/>
+  <feMorphology in="land" operator="dilate" radius="0.5" result="fat"/>
+  <feComposite in="fat" in2="land" operator="out" result="edge"/>
+  <feFlood flood-color="#111"/><feComposite in2="edge" operator="in" result="ink"/>
+  <feGaussianBlur in="land" stdDeviation="1.0" result="r1ob"/>
+  <feComponentTransfer in="r1ob" result="r1o"><feFuncA type="linear" slope="30" intercept="-6.0"/></feComponentTransfer>
+  <feGaussianBlur in="land" stdDeviation="1.0" result="r1ib"/>
+  <feComponentTransfer in="r1ib" result="r1i"><feFuncA type="linear" slope="30" intercept="-8.100000000000001"/></feComponentTransfer>
+  <feComposite in="r1o" in2="r1i" operator="out" result="r1c"/>
+  <feFlood flood-color="#2a2a2a" flood-opacity="0.55"/>
+  <feComposite in2="r1c" operator="in" result="r1"/>
+  <feGaussianBlur in="land" stdDeviation="1.9" result="r2ob"/>
+  <feComponentTransfer in="r2ob" result="r2o"><feFuncA type="linear" slope="30" intercept="-3.5999999999999996"/></feComponentTransfer>
+  <feGaussianBlur in="land" stdDeviation="1.9" result="r2ib"/>
+  <feComponentTransfer in="r2ib" result="r2i"><feFuncA type="linear" slope="30" intercept="-4.8"/></feComponentTransfer>
+  <feComposite in="r2o" in2="r2i" operator="out" result="r2c"/>
+  <feFlood flood-color="#2a2a2a" flood-opacity="0.38"/>
+  <feComposite in2="r2c" operator="in" result="r2"/>
+  <feGaussianBlur in="land" stdDeviation="2.9" result="r3ob"/>
+  <feComponentTransfer in="r3ob" result="r3o"><feFuncA type="linear" slope="30" intercept="-2.4"/></feComponentTransfer>
+  <feGaussianBlur in="land" stdDeviation="2.9" result="r3ib"/>
+  <feComponentTransfer in="r3ib" result="r3i"><feFuncA type="linear" slope="30" intercept="-3.1500000000000004"/></feComponentTransfer>
+  <feComposite in="r3o" in2="r3i" operator="out" result="r3c"/>
+  <feFlood flood-color="#2a2a2a" flood-opacity="0.24"/>
+  <feComposite in2="r3c" operator="in" result="r3"/>
+  <feMerge><feMergeNode in="r3"/><feMergeNode in="r2"/><feMergeNode in="r1"/><feMergeNode in="ink"/></feMerge>
+ </filter>

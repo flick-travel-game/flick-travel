@@ -6,7 +6,7 @@
 <title>世界フリック旅行</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Yomogi&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#ffffff; --card:#ffffff; --ink:#4a3b63; --muted:#6b7890;
@@ -40,9 +40,10 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-o
 .airmail>.inner{border-radius:12px;padding:12px}
 
 /* ホーム */
-.title{font-size:34px;line-height:1.15;margin:12px 0 4px;letter-spacing:.02em}
 .lead{color:var(--muted);margin:0 0 20px;font-size:15px;line-height:1.7}
-.modes{display:grid;gap:12px}
+.modes{display:grid;gap:12px;margin:0 0 18px}
+.mode.cur{box-shadow:0 0 0 3px #fff,0 0 0 6px var(--sk-a),0 14px 26px -12px color-mix(in srgb,var(--sk-a) 60%,transparent)}
+.mode:not(.cur){opacity:.72}
 .mode{display:flex;gap:14px;align-items:center;text-align:left;width:100%;
   background:var(--card);border:2px solid var(--line);border-radius:12px;padding:16px}
 .mode:active{transform:scale(.98)}
@@ -118,6 +119,28 @@ body.playing{overflow:hidden}
 .intro p{margin:6px 0 0;font-size:14px;line-height:1.75}
 .btns{display:grid;gap:10px}
 /* レベルえらび */
+.map-card{margin:4px 0 22px}
+.map-head{display:flex;justify-content:space-between;align-items:baseline;margin:0 2px 8px}
+.map-head b{font-size:20px;font-family:"Yomogi","Zen Maru Gothic",sans-serif;color:#1f1f1f;letter-spacing:.06em}
+.map-head span{font-weight:700;color:#1f1f1f;font-family:"Yomogi","Zen Maru Gothic",sans-serif;font-size:18px;font-variant-numeric:tabular-nums}
+.map{position:relative;border-radius:.75rem;overflow:hidden;box-shadow:0 10px 22px -14px rgba(0,0,0,.55)}
+.map .sea,.map .compass{position:absolute;transform:translate(-50%,-50%);font-family:"Yomogi","Zen Maru Gothic",sans-serif;
+  color:#3a3a3a;font-size:clamp(10px,3vw,16px);letter-spacing:.3em;pointer-events:none;white-space:nowrap}
+.map .compass{color:#111;letter-spacing:0;text-align:center;line-height:1;font-size:clamp(10px,2.8vw,15px)}
+.map .sea.small{font-size:clamp(9px,2.4vw,13px);letter-spacing:.1em}
+.map[data-map="world"] .j,.map[data-map="japan"] .w{display:none}
+.map img{display:block;width:100%;height:auto}
+.pin{position:absolute;width:18px;height:18px;margin:-9px 0 0 -9px;padding:0;border:none;background:none;display:grid;place-items:center}
+.pin i{display:block;width:5px;height:5px;border-radius:50%;background:#555;opacity:.55}
+.pin.on i{width:9px;height:9px;opacity:1;background:var(--c);box-shadow:0 0 0 1.5px #fff,0 1px 3px rgba(0,0,0,.5)}
+.pin.sel i{transform:scale(1.5)}
+.map-cap{font-size:13px;color:var(--muted);margin:8px 2px 0;min-height:1.6em}
+.map-cap b{color:var(--ink)}
+.gmap{display:inline-block;margin-top:6px;padding:7px 14px;border-radius:999px;background:#fff;border:1.5px solid var(--line);
+  color:#1d6bff;font-weight:700;font-size:13px;text-decoration:none}
+.intro .gmap{margin-top:10px}
+.lv-title{font-size:22px;margin:0 0 12px;color:#004fe6}
+.pins-msg{text-align:center;font-weight:700;color:#004fe6;margin:0 0 10px}
 .lv-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0 4px}
 .lv-head h2{font-size:24px;margin:0}
 .lv-lead{color:var(--muted);margin:0 0 14px;font-size:14px;line-height:1.7}
@@ -136,7 +159,12 @@ body.playing{overflow:hidden}
 /* ── ボタンの色 ──
    sanctuary-chiba/speed-king の docs/ボタンの色.md(かずとも の ボタン)の とおり。
    ⚠️ 色は この CSS に 書かない。JS の COLORS(1か所)から style で わたす */
-.title{background:linear-gradient(90deg,#ff3d8b,#ff8a2b,#ffc93c,#2fd27a,#2f9bff,#9b5cff);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:38px}
+/* ── ロゴ(docs/ロゴの文字.md の とおり。ぜんぶ 44px) ── */
+.logo{display:flex;align-items:center;gap:6px;margin:0 0 10px}
+.logo-mark{height:44px;width:44px;border-radius:10px;object-fit:cover}
+.logo-word{height:44px;width:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.hero{display:block;width:100%;height:auto;border-radius:.75rem;margin:0 0 14px;box-shadow:0 10px 22px -14px rgba(0,0,0,.55)}
 .sk-card{
   --sk-a:#f20077; --sk-b:#ff4da3; --sk-on:#ffffff;
   position:relative; overflow:hidden; border:none; border-radius:0.75rem;
@@ -186,32 +214,38 @@ body.playing{overflow:hidden}
 
   <!-- ホーム -->
   <section id="home">
-    <h1 class="title display">世界フリック旅行</h1>
-    <p class="lead">世界の名言や名所を、ひらがなでどれだけ速く打てるか。レベルごとに10問のトータルタイムで勝負しよう。</p>
-    <div class="modes">
-      <button class="mode sk-card sk-card-1" data-mode="quote">
-        <div class="ic">📜</div>
-        <div><b>名言モード</b><small id="best-quote">自己ベスト：まだなし</small></div>
-      <span class="go" aria-hidden="true">▶</span>
-      </button>
-      <button class="mode sk-card sk-card-2" data-mode="spot">
-        <div class="ic">🗺️</div>
-        <div><b>名所モード</b><small id="best-spot">自己ベスト：まだなし</small></div>
-      <span class="go" aria-hidden="true">▶</span>
-      </button>
+    <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
+         読みあげソフトには かくして、下の <h1> が 名前を言う -->
+    <div class="logo" aria-hidden="true">
+      <img class="logo-mark" src="logo-mark.webp" alt="" width="144" height="144">
+      <img class="logo-word" src="logo-word.webp" alt="" width="1170" height="209">
     </div>
-    <div class="how">
-      <p>表示されたひらがなを、そのまま打ち写してね。名言モードは名言のあとに、言った人の名前まで打つとクリア。</p>
-      <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
-      <p class="rule">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名言や名所も自然と覚えられるよ。</p>
+    <h1 class="sr-only">世界フリック旅行</h1>
+    <img class="hero" src="hero.webp" alt="世界フリック旅行。世界の名所と ひらがなが 空にうかぶ 絵" width="1536" height="1024">
+    <p class="lead">世界と日本の名所を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
+    <div class="modes" id="modes"></div>
+    <div class="map-card">
+      <div class="map-head"><b id="map-title">世界一周マップ</b><span id="map-count">0 / 100か所</span></div>
+      <div class="map" id="map" data-map="world"><img id="map-img" src="world-map-mono.jpg" alt="世界地図" width="1080" height="432">
+        <span class="sea w" style="left:14%;top:51%">太平洋</span>
+        <span class="sea w" style="left:92%;top:44%">太平洋</span>
+        <span class="sea w" style="left:39%;top:41%">大西洋</span>
+        <span class="sea w" style="left:72%;top:76%">インド洋</span>
+        <span class="compass w" style="left:5%;top:84%">N<br>↑</span>
+        <span class="sea j" style="left:44%;top:40%">日本海</span>
+        <span class="sea j" style="left:72%;top:80%">太平洋</span>
+        <span class="sea j small" style="left:21%;top:26%">沖縄・八重山</span>
+        <span class="compass j" style="left:93%;top:93%">N<br>↑</span>
+      </div>
+      <p class="map-cap" id="map-cap">レベルをクリアすると、その名所に ピンが立つよ。ピンを押すと 名前が出るよ。</p>
     </div>
-  </section>
-
-  <!-- レベルえらび -->
-  <section id="levels" class="hidden">
-    <div class="lv-head"><h2 class="display" id="lv-title">名所モード</h2><button class="quit" id="lv-back">もどる</button></div>
-    <p class="lv-lead">レベル1がいちばんかんたん。数字が大きいほど、打つ文字が長くなるよ。どのレベルも いつも同じ10問なので、タイムをくらべられる。</p>
+    <h2 class="lv-title display" id="lv-title">レベルをえらぶ</h2>
     <div class="levels" id="lv-list"></div>
+    <div class="how">
+      <p>表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。世界の旅は25レベル、日本の旅は10レベル。</p>
+      <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
+      <p class="rule">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
+    </div>
   </section>
 
   <!-- ゲーム -->
@@ -237,6 +271,7 @@ body.playing{overflow:hidden}
   <section id="result" class="hidden">
     <div class="stamp display"><span class="t" id="r-time">0.00</span><small>秒</small></div>
     <p class="new hidden" id="r-new">自己ベスト更新！</p>
+    <p class="pins-msg hidden" id="r-pins"></p>
     <div class="stats">
       <div><b id="r-cps">0.0</b><small>文字 / 秒</small></div>
       <div><b id="r-chars">0</b><small>打った文字数</small></div>
@@ -246,7 +281,7 @@ body.playing{overflow:hidden}
     <div class="btns">
       <button class="primary hidden" id="next-lv">次のレベルへ</button>
       <button class="primary" id="again">もう一度あそぶ</button>
-      <button class="ghost" id="home-btn">レベルをえらぶ</button>
+      <button class="ghost" id="home-btn">地図にもどる</button>
     </div>
   </section>
 </div>
@@ -520,7 +555,7 @@ const TONE = {
   orange: {a:"#f25c00", b:"#ff8a33", ink:"#c24f00", on:"#ffffff"},
 };
 const COLORS = {
-  mode: { quote: TONE.pink, spot: TONE.blue },
+  mode: { world: TONE.blue, japan: TONE.pink },
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
@@ -629,10 +664,538 @@ const RUBY = {
  "westminster": "イギリス<ruby>国王<rt>こくおう</rt></ruby>の<ruby>戴冠式<rt>たいかんしき</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われる<ruby>教会<rt>きょうかい</rt></ruby>。ニュートンやダーウィンなど、<ruby>偉人<rt>いじん</rt></ruby>のお<ruby>墓<rt>はか</rt></ruby>もある。",
  "budapest": "ドナウ<ruby>川<rt>かわ</rt></ruby>のほとりに<ruby>建<rt>た</rt></ruby>つ、1904<ruby>年<rt>ねん</rt></ruby><ruby>完成<rt>かんせい</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きな<ruby>建物<rt>たてもの</rt></ruby>。ハンガリーでいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>建物<rt>たてもの</rt></ruby>のひとつ。",
  "kamakura": "<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>11mの<ruby>青銅<rt>せいどう</rt></ruby>の<ruby>大仏<rt>だいぶつ</rt></ruby>。<ruby>大仏殿<rt>だいぶつでん</rt></ruby>がなくなったため、<ruby>今<rt>いま</rt></ruby>は<ruby>外<rt>そと</rt></ruby>に<ruby>座<rt>すわ</rt></ruby>っている。",
- "antelope": "<ruby>砂岩<rt>さがん</rt></ruby>が<ruby>水<rt>みず</rt></ruby>と<ruby>風<rt>かぜ</rt></ruby>でけずられてできた<ruby>細<rt>ほそ</rt></ruby>い<ruby>谷<rt>たに</rt></ruby>。<ruby>上<rt>うえ</rt></ruby>から<ruby>差<rt>さ</rt></ruby>しこむ<ruby>光<rt>ひかり</rt></ruby>で、<ruby>岩<rt>いわ</rt></ruby>のかべがなみのように<ruby>光<rt>ひか</rt></ruby>る。"
+ "antelope": "<ruby>砂岩<rt>さがん</rt></ruby>が<ruby>水<rt>みず</rt></ruby>と<ruby>風<rt>かぜ</rt></ruby>でけずられてできた<ruby>細<rt>ほそ</rt></ruby>い<ruby>谷<rt>たに</rt></ruby>。<ruby>上<rt>うえ</rt></ruby>から<ruby>差<rt>さ</rt></ruby>しこむ<ruby>光<rt>ひかり</rt></ruby>で、<ruby>岩<rt>いわ</rt></ruby>のかべがなみのように<ruby>光<rt>ひか</rt></ruby>る。",
+ "shiretoko": "<ruby>北海道<rt>ほっかいどう</rt></ruby>の<ruby>東<rt>ひがし</rt></ruby>のはしにある<ruby>半島<rt>はんとう</rt></ruby>。ヒグマやシャチなど たくさんの<ruby>野生<rt>やせい</rt></ruby><ruby>動物<rt>どうぶつ</rt></ruby>がすみ、<ruby>世界<rt>せかい</rt></ruby><ruby>自然<rt>しぜん</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になっている。",
+ "goryokaku": "<ruby>星<rt>ほし</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>をした <ruby>江戸<rt>えど</rt></ruby><ruby>時代<rt>じだい</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりの<ruby>城<rt>しろ</rt></ruby>。<ruby>春<rt>はる</rt></ruby>には<ruby>約<rt>やく</rt></ruby>1500<ruby>本<rt>ぽん</rt></ruby>の<ruby>桜<rt>さくら</rt></ruby>がさき、タワーから<ruby>星形<rt>ほしがた</rt></ruby>がよく<ruby>見<rt>み</rt></ruby>える。",
+ "otaru": "1923<ruby>年<rt>ねん</rt></ruby>にできた<ruby>運河<rt>うんが</rt></ruby>。<ruby>石造<rt>いしづく</rt></ruby>りの<ruby>倉庫<rt>そうこ</rt></ruby>がならび、<ruby>夕方<rt>ゆうがた</rt></ruby>には<ruby>ガス灯<rt>がすとう</rt></ruby>がともる。",
+ "furano": "7<ruby>月<rt>がつ</rt></ruby>に<ruby>紫色<rt>むらさきいろ</rt></ruby>のラベンダーが<ruby>一面<rt>いちめん</rt></ruby>にさく。<ruby>北海道<rt>ほっかいどう</rt></ruby>のまん<ruby>中<rt>なか</rt></ruby>にあり「へそのまち」ともよばれる。",
+ "biei": "ゆるやかな<ruby>丘<rt>おか</rt></ruby>が<ruby>波<rt>なみ</rt></ruby>のようにつづく<ruby>風景<rt>ふうけい</rt></ruby>。<ruby>畑<rt>はたけ</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>がパッチワークのように<ruby>見<rt>み</rt></ruby>える。",
+ "hirosaki": "<ruby>江戸<rt>えど</rt></ruby><ruby>時代<rt>じだい</rt></ruby>の<ruby>天守<rt>てんしゅ</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>る<ruby>城<rt>しろ</rt></ruby>。<ruby>春<rt>はる</rt></ruby>の<ruby>桜<rt>さくら</rt></ruby>まつりでは <ruby>約<rt>やく</rt></ruby>2600<ruby>本<rt>ぽん</rt></ruby>の<ruby>桜<rt>さくら</rt></ruby>がさき、お<ruby>堀<rt>ほり</rt></ruby>が<ruby>花<rt>はな</rt></ruby>びらでピンクにそまる。",
+ "oirase": "<ruby>十和田湖<rt>とわだこ</rt></ruby>から<ruby>流れ出<rt>ながれだ</rt></ruby>す <ruby>約<rt>やく</rt></ruby>14kmの<ruby>渓流<rt>けいりゅう</rt></ruby>。<ruby>苔<rt>こけ</rt></ruby>むした<ruby>岩<rt>いわ</rt></ruby>と いくつもの<ruby>滝<rt>たき</rt></ruby>がつづき、<ruby>秋<rt>あき</rt></ruby>は<ruby>紅葉<rt>こうよう</rt></ruby>がきれい。",
+ "towada": "<ruby>青森<rt>あおもり</rt></ruby>と<ruby>秋田<rt>あきた</rt></ruby>にまたがる<ruby>火山<rt>かざん</rt></ruby>の<ruby>湖<rt>みずうみ</rt></ruby>。<ruby>深<rt>ふか</rt></ruby>さは<ruby>約<rt>やく</rt></ruby>327mで<ruby>日本<rt>にほん</rt></ruby>で3<ruby>番目<rt>ばんめ</rt></ruby>。",
+ "chusonji": "<ruby>平安<rt>へいあん</rt></ruby><ruby>時代<rt>じだい</rt></ruby>に<ruby>奥州<rt>おうしゅう</rt></ruby><ruby>藤原<rt>ふじわら</rt></ruby><ruby>氏<rt>し</rt></ruby>が<ruby>建<rt>た</rt></ruby>てた<ruby>寺<rt>てら</rt></ruby>。<ruby>金色<rt>こんじき</rt></ruby><ruby>堂<rt>どう</rt></ruby>は<ruby>全体<rt>ぜんたい</rt></ruby>が<ruby>金<rt>きん</rt></ruby>ぱくでかざられていて、<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になっている。",
+ "matsushima": "260あまりの<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>がうかぶ<ruby>湾<rt>わん</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby><ruby>三<rt>さん</rt></ruby><ruby>景<rt>けい</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つで、<ruby>松<rt>まつ</rt></ruby>がはえた<ruby>島々<rt>しまじま</rt></ruby>を<ruby>船<rt>ふね</rt></ruby>からながめられる。",
+ "yamadera": "<ruby>正<rt>ただ</rt></ruby>しくは<ruby>立石<rt>りっしゃく</rt></ruby><ruby>寺<rt>じ</rt></ruby>。1015<ruby>段<rt>だん</rt></ruby>の<ruby>石段<rt>いしだん</rt></ruby>を<ruby>登<rt>のぼ</rt></ruby>った<ruby>先<rt>さき</rt></ruby>に お<ruby>堂<rt>どう</rt></ruby>がある。<ruby>松尾<rt>まつお</rt></ruby><ruby>芭蕉<rt>ばしょう</rt></ruby>が「<ruby>閑<rt>しずか</rt></ruby>さや<ruby>岩<rt>いわ</rt></ruby>にしみ<ruby>入<rt>い</rt></ruby>る<ruby>蝉<rt>せみ</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>」とよんだ。",
+ "zao": "<ruby>冬<rt>ふゆ</rt></ruby>に<ruby>木<rt>き</rt></ruby>が<ruby>雪<rt>ゆき</rt></ruby>と<ruby>氷<rt>こおり</rt></ruby>におおわれてできる「スノーモンスター」。ロープウェイからながめられる。",
+ "ginzan": "<ruby>大正<rt>たいしょう</rt></ruby><ruby>時代<rt>じだい</rt></ruby>の<ruby>木造<rt>もくぞう</rt></ruby>の<ruby>旅館<rt>りょかん</rt></ruby>が<ruby>川<rt>かわ</rt></ruby>ぞいにならぶ<ruby>温泉街<rt>おんせんがい</rt></ruby>。<ruby>雪<rt>ゆき</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に<ruby>ガス灯<rt>がすとう</rt></ruby>がともる<ruby>風景<rt>ふうけい</rt></ruby>が<ruby>人気<rt>にんき</rt></ruby>。",
+ "kakunodate": "<ruby>江戸<rt>えど</rt></ruby><ruby>時代<rt>じだい</rt></ruby>の<ruby>武士<rt>ぶし</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>る<ruby>町<rt>まち</rt></ruby>。<ruby>春<rt>はる</rt></ruby>はしだれ<ruby>桜<rt>ざくら</rt></ruby>が<ruby>通<rt>とお</rt></ruby>りをおおい「みちのくの<ruby>小京都<rt>しょうきょうと</rt></ruby>」とよばれる。",
+ "tsuruga": "<ruby>会津若松<rt>あいづわかまつ</rt></ruby>のシンボルの<ruby>城<rt>しろ</rt></ruby>。<ruby>幕末<rt>ばくまつ</rt></ruby>の<ruby>戊辰<rt>ぼしん</rt></ruby><ruby>戦争<rt>せんそう</rt></ruby>で<ruby>一<rt>いち</rt></ruby>か<ruby>月<rt>げつ</rt></ruby>こもって<ruby>戦<rt>たたか</rt></ruby>った。<ruby>赤<rt>あか</rt></ruby>い<ruby>瓦<rt>かわら</rt></ruby>の<ruby>天守<rt>てんしゅ</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>でめずらしい。",
+ "ouchijuku": "<ruby>江戸<rt>えど</rt></ruby><ruby>時代<rt>じだい</rt></ruby>の<ruby>宿場町<rt>しゅくばまち</rt></ruby>。かやぶき<ruby>屋根<rt>やね</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>が<ruby>道<rt>みち</rt></ruby>の<ruby>両側<rt>りょうがわ</rt></ruby>にならび、ねぎ1<ruby>本<rt>ぽん</rt></ruby>で<ruby>食<rt>た</rt></ruby>べる「ねぎそば」で<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "sensoji": "<ruby>東京<rt>とうきょう</rt></ruby>でいちばん<ruby>古<rt>ふる</rt></ruby>い<ruby>寺<rt>てら</rt></ruby>。<ruby>入り口<rt>いりぐち</rt></ruby>の<ruby>雷門<rt>かみなりもん</rt></ruby>には <ruby>大<rt>おお</rt></ruby>きな<ruby>赤<rt>あか</rt></ruby>いちょうちんが<ruby>下<rt>さ</rt></ruby>がり、<ruby>仲見世<rt>なかみせ</rt></ruby><ruby>通<rt>とお</rt></ruby>りには お<ruby>店<rt>みせ</rt></ruby>がならぶ。",
+ "meiji": "<ruby>明治<rt>めいじ</rt></ruby><ruby>天皇<rt>てんのう</rt></ruby>をまつる<ruby>神社<rt>じんじゃ</rt></ruby>。<ruby>都会<rt>とかい</rt></ruby>のまん<ruby>中<rt>なか</rt></ruby>にありながら <ruby>約<rt>やく</rt></ruby>10<ruby>万<rt>まん</rt></ruby><ruby>本<rt>ぼん</rt></ruby>の<ruby>木<rt>き</rt></ruby>がしげる<ruby>森<rt>もり</rt></ruby>に<ruby>包<rt>つつ</rt></ruby>まれている。",
+ "shibuya": "<ruby>一度<rt>いちど</rt></ruby>に3000<ruby>人<rt>にん</rt></ruby>が<ruby>横断<rt>おうだん</rt></ruby>するといわれる <ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>交差点<rt>こうさてん</rt></ruby>。<ruby>信号<rt>しんごう</rt></ruby>が<ruby>変<rt>か</rt></ruby>わると<ruby>人<rt>ひと</rt></ruby>が<ruby>四方<rt>しほう</rt></ruby>から<ruby>歩<rt>ある</rt></ruby>き<ruby>出<rt>だ</rt></ruby>す。",
+ "tokyostation": "1914<ruby>年<rt>ねん</rt></ruby>にできた<ruby>赤<rt>あか</rt></ruby>レンガの<ruby>駅<rt>えき</rt></ruby>。<ruby>丸の内<rt>まるのうち</rt></ruby><ruby>側<rt>がわ</rt></ruby>の<ruby>駅舎<rt>えきしゃ</rt></ruby>は <ruby>戦争<rt>せんそう</rt></ruby>でこわれた<ruby>屋根<rt>やね</rt></ruby>を2012<ruby>年<rt>ねん</rt></ruby>に<ruby>元<rt>もと</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby>にもどした。",
+ "kokyo": "<ruby>天皇<rt>てんのう</rt></ruby>のすまい。<ruby>江戸<rt>えど</rt></ruby><ruby>城<rt>じょう</rt></ruby>のあとに<ruby>建<rt>た</rt></ruby>てられ、<ruby>二重橋<rt>にじゅうばし</rt></ruby>や<ruby>石垣<rt>いしがき</rt></ruby>、<ruby>広<rt>ひろ</rt></ruby>いお<ruby>堀<rt>ほり</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>っている。",
+ "minatomirai": "<ruby>港<rt>みなと</rt></ruby>のそばの<ruby>新<rt>あたら</rt></ruby>しい<ruby>街<rt>まち</rt></ruby>。<ruby>高<rt>たか</rt></ruby>さ296mのランドマークタワーや <ruby>大<rt>だい</rt></ruby><ruby>観覧車<rt>かんらんしゃ</rt></ruby>があり、<ruby>赤<rt>あか</rt></ruby>レンガ<ruby>倉庫<rt>そうこ</rt></ruby>も<ruby>近<rt>ちか</rt></ruby>い。",
+ "enoshima": "<ruby>湘南<rt>しょうなん</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>にうかぶ<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>。<ruby>橋<rt>はし</rt></ruby>でわたれて、<ruby>展望<rt>てんぼう</rt></ruby><ruby>灯台<rt>とうだい</rt></ruby>からは<ruby>富士山<rt>ふじさん</rt></ruby>が<ruby>見<rt>み</rt></ruby>える。",
+ "ashinoko": "<ruby>箱根<rt>はこね</rt></ruby>にある<ruby>火山<rt>かざん</rt></ruby>の<ruby>湖<rt>みずうみ</rt></ruby>。<ruby>海賊船<rt>かいぞくせん</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>の<ruby>遊覧船<rt>ゆうらんせん</rt></ruby>が<ruby>走<rt>はし</rt></ruby>り、<ruby>湖<rt>みずうみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうに<ruby>富士山<rt>ふじさん</rt></ruby>が<ruby>見<rt>み</rt></ruby>える。",
+ "kegon": "<ruby>高<rt>たか</rt></ruby>さ97mを<ruby>一気<rt>いっき</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちる<ruby>滝<rt>たき</rt></ruby>。<ruby>中禅寺<rt>ちゅうぜんじ</rt></ruby><ruby>湖<rt>こ</rt></ruby>の<ruby>水<rt>みず</rt></ruby>が<ruby>流れ落<rt>ながれお</rt></ruby>ちていて、<ruby>日本<rt>にほん</rt></ruby><ruby>三<rt>さん</rt></ruby><ruby>名<rt>めい</rt></ruby><ruby>瀑<rt>ばく</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つ。",
+ "kusatsu": "<ruby>日本<rt>にほん</rt></ruby>を<ruby>代表<rt>だいひょう</rt></ruby>する<ruby>温泉<rt>おんせん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つ。まん<ruby>中<rt>なか</rt></ruby>の「<ruby>湯畑<rt>ゆばたけ</rt></ruby>」から <ruby>毎分<rt>まいふん</rt></ruby>4000リットルの<ruby>湯<rt>ゆ</rt></ruby>がわき<ruby>出<rt>だ</rt></ruby>している。",
+ "fukuroda": "<ruby>高<rt>たか</rt></ruby>さ120m、<ruby>幅<rt>はば</rt></ruby>73mの<ruby>大<rt>おお</rt></ruby>きな<ruby>滝<rt>たき</rt></ruby>。4<ruby>段<rt>だん</rt></ruby>に<ruby>分<rt>わ</rt></ruby>かれて<ruby>落<rt>お</rt></ruby>ちるので「<ruby>四<rt>よん</rt></ruby><ruby>度<rt>ど</rt></ruby>の<ruby>滝<rt>たき</rt></ruby>」ともよばれ、<ruby>冬<rt>ふゆ</rt></ruby>はこおる。",
+ "matsumoto": "<ruby>黒<rt>くろ</rt></ruby>い<ruby>壁<rt>かべ</rt></ruby>から「<ruby>烏<rt>からす</rt></ruby><ruby>城<rt>じょう</rt></ruby>」とよばれる<ruby>城<rt>しろ</rt></ruby>。<ruby>天守<rt>てんしゅ</rt></ruby>は<ruby>約<rt>やく</rt></ruby>400<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>のもので、<ruby>国宝<rt>こくほう</rt></ruby>。うしろに<ruby>北アルプス<rt>きたあるぷす</rt></ruby>が<ruby>見<rt>み</rt></ruby>える。",
+ "zenkoji": "<ruby>約<rt>やく</rt></ruby>1400<ruby>年<rt>ねん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>をもつ<ruby>寺<rt>てら</rt></ruby>。<ruby>宗派<rt>しゅうは</rt></ruby>をこえて だれでもお<ruby>参<rt>まい</rt></ruby>りでき、<ruby>暗<rt>くら</rt></ruby>い<ruby>回廊<rt>かいろう</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>く「お<ruby>戒壇<rt>かいだん</rt></ruby>めぐり」で<ruby>知<rt>し</rt></ruby>られる。",
+ "kamikochi": "<ruby>北アルプス<rt>きたあるぷす</rt></ruby>のふもとの<ruby>高原<rt>こうげん</rt></ruby>。<ruby>梓川<rt>あずさがわ</rt></ruby>にかかる<ruby>河童<rt>かっぱ</rt></ruby><ruby>橋<rt>はし</rt></ruby>から <ruby>穂高<rt>ほたか</rt></ruby>の<ruby>山々<rt>やまやま</rt></ruby>が<ruby>見<rt>み</rt></ruby>える。<ruby>車<rt>くるま</rt></ruby>では<ruby>入<rt>い</rt></ruby>れない。",
+ "yukinootani": "<ruby>立山<rt>たてやま</rt></ruby><ruby>黒部<rt>くろべ</rt></ruby>アルペンルートの<ruby>春<rt>はる</rt></ruby>の<ruby>名物<rt>めいぶつ</rt></ruby>。<ruby>道<rt>みち</rt></ruby>の<ruby>両側<rt>りょうがわ</rt></ruby>に<ruby>高<rt>たか</rt></ruby>さ20m<ruby>近<rt>ちか</rt></ruby>い<ruby>雪<rt>ゆき</rt></ruby>の<ruby>壁<rt>かべ</rt></ruby>がそびえる。",
+ "kurobe": "<ruby>高<rt>たか</rt></ruby>さ186mで<ruby>日本一<rt>にほんいち</rt></ruby><ruby>高<rt>たか</rt></ruby>いダム。7<ruby>年<rt>ねん</rt></ruby>かけて<ruby>造<rt>つく</rt></ruby>られ、<ruby>夏<rt>なつ</rt></ruby>には<ruby>毎秒<rt>まいびょう</rt></ruby>10トン<ruby>以上<rt>いじょう</rt></ruby>の<ruby>水<rt>みず</rt></ruby>を<ruby>放水<rt>ほうすい</rt></ruby>する。",
+ "kenrokuen": "<ruby>加賀<rt>かが</rt></ruby>の<ruby>殿様<rt>とのさま</rt></ruby>が<ruby>作<rt>つく</rt></ruby>った<ruby>庭園<rt>ていえん</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby><ruby>三<rt>さん</rt></ruby><ruby>名<rt>めい</rt></ruby><ruby>園<rt>えん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つ。<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>から<ruby>木<rt>き</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る「<ruby>雪<rt>ゆき</rt></ruby>づり」の<ruby>風景<rt>ふうけい</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "senmaida": "<ruby>海<rt>うみ</rt></ruby>にむかう<ruby>斜面<rt>しゃめん</rt></ruby>に 1000<ruby>枚<rt>まい</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>の<ruby>小<rt>ちい</rt></ruby>さな<ruby>田<rt>た</rt></ruby>んぼがならぶ<ruby>棚田<rt>たなだ</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>の<ruby>棚田<rt>たなだ</rt></ruby><ruby>百<rt>ひゃく</rt></ruby><ruby>選<rt>せん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つ。",
+ "tojinbo": "<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>25mの<ruby>岩<rt>いわ</rt></ruby>の<ruby>崖<rt>がけ</rt></ruby>が 1kmつづく。<ruby>柱<rt>はしら</rt></ruby>のように<ruby>割<rt>わ</rt></ruby>れた<ruby>岩<rt>いわ</rt></ruby>は <ruby>世界<rt>せかい</rt></ruby>でも3か<ruby>所<rt>しょ</rt></ruby>しかないめずらしい<ruby>形<rt>かたち</rt></ruby>。",
+ "miho": "<ruby>約<rt>やく</rt></ruby>3<ruby>万<rt>まん</rt></ruby><ruby>本<rt>ぼん</rt></ruby>の<ruby>松<rt>まつ</rt></ruby>がつづく<ruby>海岸<rt>かいがん</rt></ruby>。<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうに<ruby>富士山<rt>ふじさん</rt></ruby>が<ruby>見<rt>み</rt></ruby>え、<ruby>富士山<rt>ふじさん</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>の<ruby>一部<rt>いちぶ</rt></ruby>になっている。",
+ "kawaguchiko": "<ruby>富士<rt>ふじ</rt></ruby><ruby>五<rt>ご</rt></ruby><ruby>湖<rt>こ</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つ。<ruby>湖<rt>みずうみ</rt></ruby>に<ruby>富士山<rt>ふじさん</rt></ruby>がうつる「<ruby>逆<rt>さか</rt></ruby>さ<ruby>富士<rt>ふじ</rt></ruby>」が<ruby>見<rt>み</rt></ruby>られ、<ruby>春<rt>はる</rt></ruby>のしば<ruby>桜<rt>さくら</rt></ruby>や<ruby>秋<rt>あき</rt></ruby>の<ruby>紅葉<rt>こうよう</rt></ruby>も<ruby>人気<rt>にんき</rt></ruby>。",
+ "nagoyajo": "<ruby>徳川家康<rt>とくがわいえやす</rt></ruby>が<ruby>建<rt>た</rt></ruby>てた<ruby>城<rt>しろ</rt></ruby>。<ruby>天守<rt>てんしゅ</rt></ruby>の<ruby>屋根<rt>やね</rt></ruby>には <ruby>金<rt>きん</rt></ruby>のしゃちほこが2つのっていて、<ruby>名古屋<rt>なごや</rt></ruby>のシンボル。",
+ "inuyama": "<ruby>木曽<rt>きそ</rt></ruby><ruby>川<rt>かわ</rt></ruby>のほとりの<ruby>小高<rt>こだか</rt></ruby>い<ruby>丘<rt>おか</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ<ruby>城<rt>しろ</rt></ruby>。<ruby>天守<rt>てんしゅ</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>でもっとも<ruby>古<rt>ふる</rt></ruby>いものの<ruby>一<rt>ひと</rt></ruby>つで、<ruby>国宝<rt>こくほう</rt></ruby>。",
+ "takayama": "<ruby>江戸<rt>えど</rt></ruby><ruby>時代<rt>じだい</rt></ruby>の<ruby>商人<rt>しょうにん</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>がならぶ<ruby>町<rt>まち</rt></ruby>。「<ruby>飛驒<rt>ひだ</rt></ruby>の<ruby>小京都<rt>しょうきょうと</rt></ruby>」とよばれ、<ruby>朝市<rt>あさいち</rt></ruby>や<ruby>春秋<rt>しゅんじゅう</rt></ruby>の<ruby>高山<rt>たかやま</rt></ruby><ruby>祭<rt>まつり</rt></ruby>でにぎわう。",
+ "ise": "<ruby>日本<rt>にほん</rt></ruby>でもっとも<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>神社<rt>じんじゃ</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つ。20<ruby>年<rt>ねん</rt></ruby>ごとに<ruby>社殿<rt>しゃでん</rt></ruby>を<ruby>建<rt>た</rt></ruby>てかえる「<ruby>式年<rt>しきねん</rt></ruby><ruby>遷宮<rt>せんぐう</rt></ruby>」を1300<ruby>年<rt>ねん</rt></ruby>つづけている。",
+ "osakajo": "<ruby>豊臣秀吉<rt>とよとみひでよし</rt></ruby>が<ruby>建<rt>た</rt></ruby>てた<ruby>城<rt>しろ</rt></ruby>。<ruby>今<rt>いま</rt></ruby>の<ruby>天守<rt>てんしゅ</rt></ruby>は1931<ruby>年<rt>ねん</rt></ruby>に<ruby>建て直<rt>たてなお</rt></ruby>したもので、<ruby>緑<rt>みどり</rt></ruby>の<ruby>屋根<rt>やね</rt></ruby>と<ruby>金<rt>きん</rt></ruby>のかざりが<ruby>目立<rt>めだ</rt></ruby>つ。",
+ "dotonbori": "<ruby>大阪<rt>おおさか</rt></ruby>でいちばんにぎやかな<ruby>繁華街<rt>はんかがい</rt></ruby>。<ruby>川<rt>かわ</rt></ruby>ぞいに<ruby>大<rt>おお</rt></ruby>きな<ruby>看板<rt>かんばん</rt></ruby>がならび、たこ<ruby>焼<rt>や</rt></ruby>きや<ruby>串カツ<rt>くしかつ</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
+ "tsutenkaku": "<ruby>大阪<rt>おおさか</rt></ruby>・<ruby>新世界<rt>しんせかい</rt></ruby>にある<ruby>高<rt>たか</rt></ruby>さ108mの<ruby>塔<rt>とう</rt></ruby>。1912<ruby>年<rt>ねん</rt></ruby>にパリのエッフェル<ruby>塔<rt>とう</rt></ruby>をまねて<ruby>建<rt>た</rt></ruby>てられた。",
+ "byodoin": "1053<ruby>年<rt>ねん</rt></ruby>に<ruby>建<rt>た</rt></ruby>てられた お<ruby>堂<rt>どう</rt></ruby>。<ruby>池<rt>いけ</rt></ruby>にうつる<ruby>姿<rt>すがた</rt></ruby>が<ruby>美<rt>うつく</rt></ruby>しく、10<ruby>円<rt>えん</rt></ruby><ruby>玉<rt>たま</rt></ruby>のデザインになっている。",
+ "horyuji": "<ruby>聖徳太子<rt>しょうとくたいし</rt></ruby>が<ruby>建<rt>た</rt></ruby>てた<ruby>寺<rt>てら</rt></ruby>。<ruby>五重塔<rt>ごじゅうのとう</rt></ruby>などは <ruby>世界<rt>せかい</rt></ruby>でもっとも<ruby>古<rt>ふる</rt></ruby>い<ruby>木造<rt>もくぞう</rt></ruby>の<ruby>建物<rt>たてもの</rt></ruby>で、<ruby>日本<rt>にほん</rt></ruby>で<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になった。",
+ "kasuga": "<ruby>奈良<rt>なら</rt></ruby><ruby>公園<rt>こうえん</rt></ruby>の<ruby>森<rt>もり</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にある<ruby>神社<rt>じんじゃ</rt></ruby>。<ruby>約<rt>やく</rt></ruby>3000<ruby>基<rt>き</rt></ruby>の<ruby>灯籠<rt>とうろう</rt></ruby>がならび、まわりには<ruby>神<rt>かみ</rt></ruby>の<ruby>使<rt>つか</rt></ruby>いとされる<ruby>鹿<rt>しか</rt></ruby>がいる。",
+ "nijo": "<ruby>徳川家康<rt>とくがわいえやす</rt></ruby>が<ruby>京都<rt>きょうと</rt></ruby>に<ruby>建<rt>た</rt></ruby>てた<ruby>城<rt>しろ</rt></ruby>。<ruby>廊下<rt>ろうか</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>くとキュッキュッと<ruby>鳴<rt>な</rt></ruby>る「うぐいす<ruby>張<rt>ば</rt></ruby>り」が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "ginkaku": "<ruby>足利<rt>あしかが</rt></ruby><ruby>義政<rt>よしまさ</rt></ruby>が<ruby>建<rt>た</rt></ruby>てた<ruby>寺<rt>てら</rt></ruby>。<ruby>銀<rt>ぎん</rt></ruby>ははられていないが、しずかな<ruby>庭<rt>にわ</rt></ruby>と <ruby>砂<rt>すな</rt></ruby>を<ruby>盛<rt>も</rt></ruby>った「<ruby>向<rt>こう</rt></ruby><ruby>月台<rt>げつだい</rt></ruby>」が<ruby>美<rt>うつく</rt></ruby>しい。",
+ "arashiyama": "<ruby>高<rt>たか</rt></ruby>さ10m<ruby>以上<rt>いじょう</rt></ruby>の<ruby>竹<rt>たけ</rt></ruby>が<ruby>両側<rt>りょうがわ</rt></ruby>にそびえる<ruby>小道<rt>こみち</rt></ruby>。<ruby>風<rt>かぜ</rt></ruby>で<ruby>竹<rt>たけ</rt></ruby>がゆれる<ruby>音<rt>おと</rt></ruby>が「<ruby>日本<rt>にほん</rt></ruby>の<ruby>音<rt>おん</rt></ruby><ruby>風景<rt>ふうけい</rt></ruby>100<ruby>選<rt>せん</rt></ruby>」に<ruby>選<rt>えら</rt></ruby>ばれている。",
+ "amanohashidate": "<ruby>海<rt>うみ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>約<rt>やく</rt></ruby>3.6kmのびる<ruby>細長<rt>ほそなが</rt></ruby>い<ruby>砂<rt>すな</rt></ruby>の<ruby>道<rt>みち</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby><ruby>三<rt>さん</rt></ruby><ruby>景<rt>けい</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つで、またの<ruby>間<rt>あいだ</rt></ruby>からのぞく「<ruby>股<rt>また</rt></ruby>のぞき」で<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "koyasan": "<ruby>空海<rt>くうかい</rt></ruby>が1200<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>に<ruby>開<rt>ひら</rt></ruby>いた <ruby>仏教<rt>ぶっきょう</rt></ruby>の<ruby>聖地<rt>せいち</rt></ruby>。<ruby>山<rt>やま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に100<ruby>以上<rt>いじょう</rt></ruby>の<ruby>寺<rt>てら</rt></ruby>があり、お<ruby>寺<rt>てら</rt></ruby>にとまることができる。",
+ "nachi": "<ruby>高<rt>たか</rt></ruby>さ133mで<ruby>日本一<rt>にほんいち</rt></ruby>の<ruby>落差<rt>らくさ</rt></ruby>をほこる<ruby>滝<rt>たき</rt></ruby>。<ruby>滝<rt>たき</rt></ruby>そのものが<ruby>神<rt>かみ</rt></ruby><ruby>様<rt>さま</rt></ruby>としてまつられ、<ruby>三重<rt>さんじゅう</rt></ruby><ruby>塔<rt>とう</rt></ruby>とならぶ<ruby>風景<rt>ふうけい</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "hikone": "<ruby>琵琶湖<rt>びわこ</rt></ruby>のほとりに<ruby>立<rt>た</rt></ruby>つ<ruby>城<rt>しろ</rt></ruby>。<ruby>天守<rt>てんしゅ</rt></ruby>は<ruby>国宝<rt>こくほう</rt></ruby>で、ゆるキャラ「ひこにゃん」でも<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "yoshino": "<ruby>山<rt>やま</rt></ruby>ぜんたいに<ruby>約<rt>やく</rt></ruby>3<ruby>万<rt>まん</rt></ruby><ruby>本<rt>ぼん</rt></ruby>の<ruby>桜<rt>さくら</rt></ruby>がさく。ふもとから<ruby>順<rt>じゅん</rt></ruby>に「<ruby>下<rt>しも</rt></ruby><ruby>千本<rt>せんぼん</rt></ruby>・<ruby>中<rt>なか</rt></ruby><ruby>千本<rt>せんぼん</rt></ruby>・<ruby>上<rt>かみ</rt></ruby><ruby>千本<rt>せんぼん</rt></ruby>・<ruby>奥<rt>おく</rt></ruby><ruby>千本<rt>せんぼん</rt></ruby>」とよぶ。",
+ "takeda": "<ruby>山<rt>やま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>石垣<rt>いしがき</rt></ruby>だけが<ruby>残<rt>のこ</rt></ruby>る<ruby>城<rt>しろ</rt></ruby>あと。<ruby>秋<rt>あき</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>雲海<rt>うんかい</rt></ruby>にうかぶ<ruby>姿<rt>すがた</rt></ruby>から「<ruby>天空<rt>てんくう</rt></ruby>の<ruby>城<rt>しろ</rt></ruby>」とよばれる。",
+ "akashi": "<ruby>神戸<rt>こうべ</rt></ruby>と<ruby>淡路<rt>あわじ</rt></ruby><ruby>島<rt>しま</rt></ruby>をむすぶ<ruby>橋<rt>はし</rt></ruby>。<ruby>主塔<rt>しゅとう</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>は1991mで、<ruby>世界<rt>せかい</rt></ruby>でもっとも<ruby>長<rt>なが</rt></ruby>いつり<ruby>橋<rt>ばし</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つ。",
+ "izumo": "<ruby>縁<rt>えん</rt></ruby>むすびの<ruby>神<rt>かみ</rt></ruby><ruby>様<rt>さま</rt></ruby>をまつる<ruby>神社<rt>じんじゃ</rt></ruby>。<ruby>神楽殿<rt>かぐらでん</rt></ruby>の<ruby>大<rt>おお</rt></ruby>しめなわは<ruby>長<rt>なが</rt></ruby>さ13m、<ruby>重<rt>おも</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>5トンもある。",
+ "tottori": "<ruby>東西<rt>とうざい</rt></ruby>16kmにひろがる<ruby>日本<rt>にほん</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>砂丘<rt>さきゅう</rt></ruby>。<ruby>風<rt>かぜ</rt></ruby>がつくる<ruby>風紋<rt>ふうもん</rt></ruby>が<ruby>美<rt>うつく</rt></ruby>しく、ラクダに<ruby>乗<rt>の</rt></ruby>ることもできる。",
+ "matsue": "<ruby>宍道<rt>しんじ</rt></ruby><ruby>湖<rt>こ</rt></ruby>のそばに<ruby>立<rt>た</rt></ruby>つ<ruby>城<rt>しろ</rt></ruby>。<ruby>天守<rt>てんしゅ</rt></ruby>は<ruby>国宝<rt>こくほう</rt></ruby>で、<ruby>黒<rt>くろ</rt></ruby>い<ruby>板<rt>いた</rt></ruby>の<ruby>壁<rt>かべ</rt></ruby>から「<ruby>千鳥<rt>ちどり</rt></ruby><ruby>城<rt>じょう</rt></ruby>」ともよばれる。",
+ "korakuen": "<ruby>岡山<rt>おかやま</rt></ruby>の<ruby>殿様<rt>とのさま</rt></ruby>が<ruby>作<rt>つく</rt></ruby>った<ruby>庭園<rt>ていえん</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby><ruby>三<rt>さん</rt></ruby><ruby>名<rt>めい</rt></ruby><ruby>園<rt>えん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つで、<ruby>広<rt>ひろ</rt></ruby>い<ruby>芝生<rt>しばふ</rt></ruby>と<ruby>池<rt>いけ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうに<ruby>岡山<rt>おかやま</rt></ruby><ruby>城<rt>じょう</rt></ruby>が<ruby>見<rt>み</rt></ruby>える。",
+ "kurashiki": "<ruby>白<rt>しろ</rt></ruby>い<ruby>壁<rt>かべ</rt></ruby>の<ruby>蔵<rt>くら</rt></ruby>と<ruby>柳<rt>やなぎ</rt></ruby>の<ruby>並木<rt>なみき</rt></ruby>が<ruby>川<rt>かわ</rt></ruby>ぞいにつづく<ruby>町<rt>まち</rt></ruby>。<ruby>江戸<rt>えど</rt></ruby><ruby>時代<rt>じだい</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>運<rt>はこ</rt></ruby>んだ<ruby>川<rt>かわ</rt></ruby>で、<ruby>小舟<rt>こぶね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>見物<rt>けんぶつ</rt></ruby>できる。",
+ "kintaikyo": "5つのアーチがつらなる<ruby>木<rt>き</rt></ruby>の<ruby>橋<rt>はし</rt></ruby>。1673<ruby>年<rt>ねん</rt></ruby>に<ruby>作<rt>つく</rt></ruby>られ、くぎをほとんど<ruby>使<rt>つか</rt></ruby>わない<ruby>組<rt>く</rt></ruby>み<ruby>方<rt>かた</rt></ruby>で<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "akiyoshidai": "<ruby>日本<rt>にほん</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>のカルスト<ruby>台地<rt>だいち</rt></ruby>。<ruby>草原<rt>そうげん</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>い<ruby>石灰岩<rt>せっかいがん</rt></ruby>がいくつも<ruby>顔<rt>かお</rt></ruby>を<ruby>出<rt>だ</rt></ruby>し、<ruby>地下<rt>ちか</rt></ruby>には<ruby>秋芳<rt>あきよし</rt></ruby><ruby>洞<rt>どう</rt></ruby>という<ruby>大<rt>おお</rt></ruby>きな<ruby>鍾乳<rt>しょうにゅう</rt></ruby><ruby>洞<rt>どう</rt></ruby>がある。",
+ "motonosumi": "<ruby>海<rt>うみ</rt></ruby>にむかって123<ruby>基<rt>き</rt></ruby>の<ruby>赤<rt>あか</rt></ruby>い<ruby>鳥居<rt>とりい</rt></ruby>がならぶ<ruby>神社<rt>じんじゃ</rt></ruby>。アメリカのテレビで「<ruby>日本<rt>にほん</rt></ruby>の<ruby>美<rt>うつく</rt></ruby>しい<ruby>場所<rt>ばしょ</rt></ruby>」に<ruby>選<rt>えら</rt></ruby>ばれた。",
+ "tsunoshima": "エメラルド<ruby>色<rt>いろ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>を <ruby>約<rt>やく</rt></ruby>1780mまっすぐのびる<ruby>橋<rt>はし</rt></ruby>。CMや<ruby>映画<rt>えいが</rt></ruby>によく<ruby>登場<rt>とうじょう</rt></ruby>する。",
+ "dogo": "3000<ruby>年<rt>ねん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>があるといわれる<ruby>日本<rt>にほん</rt></ruby><ruby>最古<rt>さいこ</rt></ruby>の<ruby>温泉<rt>おんせん</rt></ruby>。<ruby>本館<rt>ほんかん</rt></ruby>の<ruby>木造<rt>もくぞう</rt></ruby>の<ruby>建物<rt>たてもの</rt></ruby>は <ruby>国<rt>くに</rt></ruby>の<ruby>重要文化財<rt>じゅうようぶんかざい</rt></ruby>。",
+ "matsuyama": "<ruby>松山<rt>まつやま</rt></ruby>の<ruby>街<rt>まち</rt></ruby>のまん<ruby>中<rt>なか</rt></ruby>の<ruby>山<rt>やま</rt></ruby>にたつ<ruby>城<rt>しろ</rt></ruby>。<ruby>江戸<rt>えど</rt></ruby><ruby>時代<rt>じだい</rt></ruby>の<ruby>天守<rt>てんしゅ</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>る12の<ruby>城<rt>しろ</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つで、ロープウェイで<ruby>登<rt>のぼ</rt></ruby>れる。",
+ "kotohira": "「こんぴらさん」の<ruby>名<rt>な</rt></ruby>で<ruby>親<rt>した</rt></ruby>しまれる<ruby>神社<rt>じんじゃ</rt></ruby>。<ruby>本宮<rt>ほんぐう</rt></ruby>まで785<ruby>段<rt>だん</rt></ruby>、<ruby>奥<rt>おく</rt></ruby><ruby>社<rt>しゃ</rt></ruby>まで1368<ruby>段<rt>だん</rt></ruby>の<ruby>石段<rt>いしだん</rt></ruby>を<ruby>登<rt>のぼ</rt></ruby>る。",
+ "naruto": "<ruby>潮<rt>しお</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れがぶつかってできる<ruby>大<rt>おお</rt></ruby>きなうず。<ruby>直径<rt>ちょっけい</rt></ruby>は<ruby>最大<rt>さいだい</rt></ruby>20mにもなり、<ruby>橋<rt>はし</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>や<ruby>船<rt>ふね</rt></ruby>から<ruby>見<rt>み</rt></ruby>られる。",
+ "katsurahama": "<ruby>太平<rt>たいへい</rt></ruby><ruby>洋<rt>よう</rt></ruby>にむかう<ruby>弓<rt>ゆみ</rt></ruby>なりの<ruby>浜<rt>はま</rt></ruby>。<ruby>丘<rt>おか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>には <ruby>坂本龍馬<rt>さかもとりょうま</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きな<ruby>像<rt>ぞう</rt></ruby>が<ruby>海<rt>うみ</rt></ruby>をながめて<ruby>立<rt>た</rt></ruby>っている。",
+ "shimanto": "「<ruby>日本<rt>にほん</rt></ruby><ruby>最後<rt>さいご</rt></ruby>の<ruby>清流<rt>せいりゅう</rt></ruby>」とよばれる<ruby>川<rt>かわ</rt></ruby>。<ruby>大水<rt>おおみず</rt></ruby>のとき<ruby>水<rt>みず</rt></ruby>にしずむ「<ruby>沈下橋<rt>ちんかばし</rt></ruby>」がいくつもかかっている。",
+ "kazurabashi": "<ruby>山<rt>やま</rt></ruby>の<ruby>谷<rt>たに</rt></ruby>にかかる <ruby>植物<rt>しょくぶつ</rt></ruby>のつるで<ruby>編<rt>あ</rt></ruby>んだ<ruby>橋<rt>はし</rt></ruby>。<ruby>長<rt>なが</rt></ruby>さ45mで、<ruby>足元<rt>あしもと</rt></ruby>のすき<ruby>間<rt>ま</rt></ruby>から<ruby>川<rt>かわ</rt></ruby>が<ruby>見<rt>み</rt></ruby>えてスリルがある。",
+ "dazaifu": "<ruby>学問<rt>がくもん</rt></ruby>の<ruby>神<rt>かみ</rt></ruby><ruby>様<rt>さま</rt></ruby>・<ruby>菅原<rt>すがわら</rt></ruby><ruby>道真<rt>みちざね</rt></ruby>をまつる<ruby>神社<rt>じんじゃ</rt></ruby>。<ruby>受験生<rt>じゅけんせい</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くおとずれ、<ruby>名物<rt>めいぶつ</rt></ruby>は「<ruby>梅ヶ枝<rt>うめがえ</rt></ruby><ruby>餅<rt>もち</rt></ruby>」。",
+ "gunkanjima": "<ruby>正<rt>ただ</rt></ruby>しくは<ruby>端島<rt>はしま</rt></ruby>。<ruby>海底<rt>かいてい</rt></ruby>の<ruby>炭鉱<rt>たんこう</rt></ruby>で<ruby>栄<rt>さか</rt></ruby>えた<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>で、<ruby>高<rt>たか</rt></ruby>いビルがならぶ<ruby>姿<rt>すがた</rt></ruby>が<ruby>軍艦<rt>ぐんかん</rt></ruby>に<ruby>見<rt>み</rt></ruby>える。<ruby>今<rt>いま</rt></ruby>は<ruby>無人島<rt>むじんとう</rt></ruby>。",
+ "glover": "<ruby>幕末<rt>ばくまつ</rt></ruby>に<ruby>長崎<rt>ながさき</rt></ruby>で<ruby>貿易<rt>ぼうえき</rt></ruby>をした<ruby>イギリス人<rt>いぎりすじん</rt></ruby>グラバーの<ruby>家<rt>いえ</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>に<ruby>残<rt>のこ</rt></ruby>る いちばん<ruby>古<rt>ふる</rt></ruby>い<ruby>木造<rt>もくぞう</rt></ruby>の<ruby>西洋<rt>せいよう</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>。",
+ "nagasakipeace": "<ruby>原爆<rt>げんばく</rt></ruby>が<ruby>落<rt>お</rt></ruby>とされた<ruby>場所<rt>ばしょ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くにある<ruby>公園<rt>こうえん</rt></ruby>。<ruby>高<rt>たか</rt></ruby>さ9.7mの<ruby>平和<rt>へいわ</rt></ruby><ruby>祈念<rt>きねん</rt></ruby><ruby>像<rt>ぞう</rt></ruby>が、<ruby>天<rt>てん</rt></ruby>を<ruby>指<rt>さ</rt></ruby>し <ruby>平和<rt>へいわ</rt></ruby>をねがっている。",
+ "kumamotojo": "<ruby>加藤清正<rt>かとうきよまさ</rt></ruby>が<ruby>建<rt>た</rt></ruby>てた<ruby>城<rt>しろ</rt></ruby>。「<ruby>武者<rt>むしゃ</rt></ruby><ruby>返<rt>かえ</rt></ruby>し」とよばれる<ruby>高<rt>たか</rt></ruby>い<ruby>石垣<rt>いしがき</rt></ruby>で<ruby>知<rt>し</rt></ruby>られ、2016<ruby>年<rt>ねん</rt></ruby>の<ruby>地震<rt>じしん</rt></ruby>から<ruby>修理<rt>しゅうり</rt></ruby>が<ruby>進<rt>すす</rt></ruby>んでいる。",
+ "aso": "<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>のカルデラをもつ<ruby>火山<rt>かざん</rt></ruby>。<ruby>中岳<rt>なかだけ</rt></ruby>の<ruby>火口<rt>かこう</rt></ruby>からは<ruby>今<rt>いま</rt></ruby>も<ruby>白<rt>しろ</rt></ruby>い<ruby>煙<rt>けむり</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がり、<ruby>草原<rt>そうげん</rt></ruby>では<ruby>牛<rt>うし</rt></ruby>や<ruby>馬<rt>うま</rt></ruby>が<ruby>草<rt>くさ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる。",
+ "beppu": "<ruby>湯<rt>ゆ</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>の<ruby>温泉<rt>おんせん</rt></ruby>。「<ruby>地獄<rt>じごく</rt></ruby>めぐり」では、<ruby>青<rt>あお</rt></ruby>い<ruby>海<rt>うみ</rt></ruby><ruby>地獄<rt>じごく</rt></ruby>や<ruby>赤<rt>あか</rt></ruby>い<ruby>血の池<rt>ちのいけ</rt></ruby><ruby>地獄<rt>じごく</rt></ruby>などをめぐる。",
+ "yufuin": "<ruby>由布<rt>ゆふ</rt></ruby><ruby>岳<rt>たけ</rt></ruby>のふもとにある<ruby>温泉<rt>おんせん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。<ruby>朝<rt>あさ</rt></ruby>に<ruby>霧<rt>きり</rt></ruby>がわく<ruby>金鱗湖<rt>きんりんこ</rt></ruby>や、おしゃれなお<ruby>店<rt>みせ</rt></ruby>がならぶ<ruby>通<rt>とお</rt></ruby>りが<ruby>人気<rt>にんき</rt></ruby>。",
+ "takachiho": "<ruby>阿蘇<rt>あそ</rt></ruby>の<ruby>溶岩<rt>ようがん</rt></ruby>が<ruby>川<rt>かわ</rt></ruby>にけずられてできた<ruby>谷<rt>たに</rt></ruby>。ボートに<ruby>乗<rt>の</rt></ruby>って<ruby>真名井<rt>まない</rt></ruby>の<ruby>滝<rt>たき</rt></ruby>を<ruby>見上<rt>みあ</rt></ruby>げられる。",
+ "sakurajima": "<ruby>鹿児島<rt>かごしま</rt></ruby>の<ruby>町<rt>まち</rt></ruby>の<ruby>目<rt>め</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>にある<ruby>活火山<rt>かつかざん</rt></ruby>。<ruby>今<rt>いま</rt></ruby>もよく<ruby>噴火<rt>ふんか</rt></ruby>して<ruby>灰<rt>はい</rt></ruby>をふらせる。1914<ruby>年<rt>ねん</rt></ruby>の<ruby>噴火<rt>ふんか</rt></ruby>で<ruby>大隅<rt>おおすみ</rt></ruby><ruby>半島<rt>はんとう</rt></ruby>と<ruby>陸<rt>りく</rt></ruby>つづきになった。",
+ "shuri": "<ruby>琉球<rt>りゅうきゅう</rt></ruby><ruby>王国<rt>おうこく</rt></ruby>の<ruby>王<rt>おう</rt></ruby>のすまいだった<ruby>城<rt>しろ</rt></ruby>。<ruby>赤<rt>あか</rt></ruby>い<ruby>正殿<rt>せいでん</rt></ruby>は2019<ruby>年<rt>ねん</rt></ruby>の<ruby>火事<rt>かじ</rt></ruby>で<ruby>焼<rt>や</rt></ruby>け、<ruby>今<rt>いま</rt></ruby> <ruby>建て直<rt>たてなお</rt></ruby>しが<ruby>進<rt>すす</rt></ruby>んでいる。",
+ "taketomi": "<ruby>赤<rt>あか</rt></ruby>い<ruby>瓦<rt>かわら</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>と<ruby>白<rt>しろ</rt></ruby>い<ruby>砂<rt>すな</rt></ruby>の<ruby>道<rt>みち</rt></ruby>、<ruby>石垣<rt>いしがき</rt></ruby>がつづく <ruby>昔<rt>むかし</rt></ruby>ながらの<ruby>沖縄<rt>おきなわ</rt></ruby>の<ruby>島<rt>しま</rt></ruby>。<ruby>水牛<rt>すいぎゅう</rt></ruby><ruby>車<rt>しゃ</rt></ruby>でゆっくり<ruby>回<rt>まわ</rt></ruby>れる。",
+ "kabira": "<ruby>石垣島<rt>いしがきじま</rt></ruby>にある <ruby>白<rt>しろ</rt></ruby>い<ruby>砂<rt>すな</rt></ruby>とエメラルドグリーンの<ruby>海<rt>うみ</rt></ruby>の<ruby>湾<rt>わん</rt></ruby>。グラスボートからサンゴや<ruby>魚<rt>さかな</rt></ruby>が<ruby>見<rt>み</rt></ruby>える。",
+ "chambord": "ロワール<ruby>川<rt>かわ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くに<ruby>建<rt>た</rt></ruby>つ フランス<ruby>最大<rt>さいだい</rt></ruby>の<ruby>城<rt>しろ</rt></ruby>。<ruby>二<rt>に</rt></ruby><ruby>重<rt>じゅう</rt></ruby>のらせん<ruby>階段<rt>かいだん</rt></ruby>は レオナルド・ダ・ヴィンチが<ruby>考<rt>かんが</rt></ruby>えたともいわれる。",
+ "carcassonne": "<ruby>二<rt>に</rt></ruby><ruby>重<rt>じゅう</rt></ruby>の<ruby>城壁<rt>じょうへき</rt></ruby>にかこまれた<ruby>中世<rt>ちゅうせい</rt></ruby>の<ruby>城塞<rt>じょうさい</rt></ruby><ruby>都市<rt>とし</rt></ruby>。52の<ruby>塔<rt>とう</rt></ruby>があり、ヨーロッパ<ruby>最大級<rt>さいだいきゅう</rt></ruby>。<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "etretat": "<ruby>海<rt>うみ</rt></ruby>にむかう<ruby>白<rt>しろ</rt></ruby>い<ruby>崖<rt>がけ</rt></ruby>に、<ruby>波<rt>なみ</rt></ruby>がけずった<ruby>大<rt>おお</rt></ruby>きなアーチがある。<ruby>画家<rt>がか</rt></ruby>モネがくり<ruby>返<rt>かえ</rt></ruby>し<ruby>描<rt>えが</rt></ruby>いた<ruby>風景<rt>ふうけい</rt></ruby>。",
+ "nice": "<ruby>地中<rt>ちちゅう</rt></ruby><ruby>海<rt>かい</rt></ruby>にのぞむ <ruby>南<rt>みなみ</rt></ruby>フランスのリゾート<ruby>地<rt>ち</rt></ruby>。<ruby>青<rt>あお</rt></ruby>い<ruby>海<rt>うみ</rt></ruby>ぞいの「プロムナード・デ・ザングレ」を<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>散歩<rt>さんぽ</rt></ruby>する。",
+ "strasbourg": "<ruby>高<rt>たか</rt></ruby>さ142mの<ruby>塔<rt>とう</rt></ruby>をもつ<ruby>大聖堂<rt>だいせいどう</rt></ruby>。<ruby>赤<rt>あか</rt></ruby>みがかった<ruby>石<rt>いし</rt></ruby>でできていて、<ruby>中<rt>なか</rt></ruby>には<ruby>天文<rt>てんもん</rt></ruby><ruby>時計<rt>とけい</rt></ruby>がある。",
+ "amalfi": "<ruby>崖<rt>がけ</rt></ruby>にカラフルな<ruby>家<rt>いえ</rt></ruby>がはりつくように<ruby>建<rt>た</rt></ruby>つ<ruby>海岸<rt>かいがん</rt></ruby>。レモンの<ruby>名産<rt>めいさん</rt></ruby><ruby>地<rt>ち</rt></ruby>で、<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "cinqueterre": "「5つの<ruby>村<rt>むら</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>。<ruby>海<rt>うみ</rt></ruby>にせまる<ruby>崖<rt>がけ</rt></ruby>に<ruby>色<rt>いろ</rt></ruby>とりどりの<ruby>家<rt>いえ</rt></ruby>が<ruby>建<rt>た</rt></ruby>ち、<ruby>村<rt>むら</rt></ruby>と<ruby>村<rt>むら</rt></ruby>は<ruby>歩道<rt>ほどう</rt></ruby>と<ruby>電車<rt>でんしゃ</rt></ruby>でむすばれている。",
+ "pantheon": "<ruby>約<rt>やく</rt></ruby>1900<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>てられた ローマの<ruby>神殿<rt>しんでん</rt></ruby>。<ruby>丸<rt>まる</rt></ruby>い<ruby>天井<rt>てんじょう</rt></ruby>のまん<ruby>中<rt>なか</rt></ruby>に<ruby>穴<rt>あな</rt></ruby>があいていて、そこから<ruby>光<rt>ひかり</rt></ruby>が<ruby>入<rt>はい</rt></ruby>る。",
+ "spanishsteps": "135<ruby>段<rt>だん</rt></ruby>の<ruby>階段<rt>かいだん</rt></ruby>がある<ruby>広場<rt>ひろば</rt></ruby>。<ruby>映画<rt>えいが</rt></ruby>「ローマの<ruby>休日<rt>きゅうじつ</rt></ruby>」でヒロインがジェラートを<ruby>食<rt>た</rt></ruby>べた<ruby>場所<rt>ばしょ</rt></ruby>として<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "dolomites": "<ruby>北<rt>きた</rt></ruby>イタリアのアルプス。ギザギザの<ruby>岩山<rt>いわやま</rt></ruby>がそびえ、<ruby>夕日<rt>ゆうひ</rt></ruby>で<ruby>岩<rt>いわ</rt></ruby>がピンクにそまる。<ruby>世界<rt>せかい</rt></ruby><ruby>自然<rt>しぜん</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "jungfrau": "<ruby>標高<rt>ひょうこう</rt></ruby>3454mにある ヨーロッパでいちばん<ruby>高<rt>たか</rt></ruby>い<ruby>駅<rt>えき</rt></ruby>。<ruby>登山<rt>とざん</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>登<rt>のぼ</rt></ruby>れて、<ruby>氷河<rt>ひょうが</rt></ruby>と<ruby>雪<rt>ゆき</rt></ruby>の<ruby>山<rt>やま</rt></ruby>を<ruby>見<rt>み</rt></ruby>わたせる。",
+ "lucerne": "14<ruby>世紀<rt>せいき</rt></ruby>にかけられた <ruby>屋根<rt>やね</rt></ruby>つきの<ruby>木<rt>き</rt></ruby>の<ruby>橋<rt>はし</rt></ruby>。ヨーロッパ<ruby>最古<rt>さいこ</rt></ruby>の<ruby>木<rt>き</rt></ruby>の<ruby>橋<rt>はし</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つで、<ruby>花<rt>はな</rt></ruby>でかざられている。",
+ "montblanc": "<ruby>標高<rt>ひょうこう</rt></ruby>4808mで アルプスの<ruby>最高峰<rt>さいこうほう</rt></ruby>。「<ruby>白<rt>しろ</rt></ruby>い<ruby>山<rt>やま</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>で、ふもとのシャモニーから ロープウェイで<ruby>近<rt>ちか</rt></ruby>づける。",
+ "rothenburg": "<ruby>中世<rt>ちゅうせい</rt></ruby>の<ruby>町並<rt>まちな</rt></ruby>みがそのまま<ruby>残<rt>のこ</rt></ruby>る<ruby>町<rt>まち</rt></ruby>。<ruby>城壁<rt>じょうへき</rt></ruby>にかこまれ、カラフルな<ruby>木組<rt>きぐ</rt></ruby>みの<ruby>家<rt>いえ</rt></ruby>がならぶ。",
+ "heidelberg": "<ruby>川<rt>かわ</rt></ruby>を<ruby>見<rt>み</rt></ruby>おろす<ruby>丘<rt>おか</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ <ruby>赤<rt>あか</rt></ruby>い<ruby>石<rt>いし</rt></ruby>の<ruby>城<rt>しろ</rt></ruby>あと。<ruby>中<rt>なか</rt></ruby>には<ruby>約<rt>やく</rt></ruby>22<ruby>万<rt>まん</rt></ruby>リットルも<ruby>入<rt>はい</rt></ruby>る<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>のワインだるがある。",
+ "dresden": "<ruby>戦争<rt>せんそう</rt></ruby>でくずれた<ruby>教会<rt>きょうかい</rt></ruby>を、がれきの<ruby>石<rt>いし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って2005<ruby>年<rt>ねん</rt></ruby>に<ruby>建て直<rt>たてなお</rt></ruby>した。<ruby>黒<rt>くろ</rt></ruby>い<ruby>石<rt>いし</rt></ruby>が<ruby>元<rt>もと</rt></ruby>の<ruby>部分<rt>ぶぶん</rt></ruby>。",
+ "berlinwall": "1961<ruby>年<rt>ねん</rt></ruby>から1989<ruby>年<rt>ねん</rt></ruby>まで <ruby>東西<rt>とうざい</rt></ruby>ベルリンを<ruby>分<rt>わ</rt></ruby>けていた<ruby>壁<rt>かべ</rt></ruby>。<ruby>今<rt>いま</rt></ruby>も<ruby>一部<rt>いちぶ</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>り、<ruby>歴史<rt>れきし</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えている。",
+ "windsor": "<ruby>約<rt>やく</rt></ruby>1000<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>から<ruby>使<rt>つか</rt></ruby>われている <ruby>世界<rt>せかい</rt></ruby><ruby>最古<rt>さいこ</rt></ruby>で<ruby>最大<rt>さいだい</rt></ruby>の「<ruby>今<rt>いま</rt></ruby>も<ruby>人<rt>ひと</rt></ruby>が<ruby>住<rt>す</rt></ruby>む<ruby>城<rt>しろ</rt></ruby>」。イギリス<ruby>国王<rt>こくおう</rt></ruby>の<ruby>住<rt>す</rt></ruby>まいの<ruby>一<rt>ひと</rt></ruby>つ。",
+ "cotswolds": "はちみつ<ruby>色<rt>いろ</rt></ruby>の<ruby>石<rt>いし</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>がならぶ <ruby>田園<rt>でんえん</rt></ruby><ruby>地帯<rt>ちたい</rt></ruby>。「イギリスでいちばん<ruby>美<rt>うつく</rt></ruby>しい<ruby>村<rt>むら</rt></ruby>」とよばれるバイブリーがある。",
+ "sevensisters": "<ruby>白<rt>しろ</rt></ruby>い<ruby>崖<rt>がけ</rt></ruby>が7つの<ruby>波<rt>なみ</rt></ruby>のようにつづく<ruby>海岸<rt>かいがん</rt></ruby>。チョークでできていて、<ruby>海<rt>うみ</rt></ruby>からよく<ruby>目立<rt>めだ</rt></ruby>つ。",
+ "lakedistrict": "<ruby>湖<rt>みずうみ</rt></ruby>と<ruby>山<rt>やま</rt></ruby>がつづく<ruby>美<rt>うつく</rt></ruby>しい<ruby>地方<rt>ちほう</rt></ruby>。「ピーターラビット」の<ruby>作者<rt>さくしゃ</rt></ruby>がここに<ruby>住<rt>す</rt></ruby>み、<ruby>物語<rt>ものがたり</rt></ruby>の<ruby>舞台<rt>ぶたい</rt></ruby>にした。",
+ "giantscauseway": "<ruby>六<rt>ろっ</rt></ruby><ruby>角形<rt>かくけい</rt></ruby>の<ruby>柱<rt>はしら</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>が<ruby>約<rt>やく</rt></ruby>4<ruby>万<rt>まん</rt></ruby><ruby>本<rt>ぼん</rt></ruby>もならぶ<ruby>海岸<rt>かいがん</rt></ruby>。<ruby>火山<rt>かざん</rt></ruby>の<ruby>溶岩<rt>ようがん</rt></ruby>が<ruby>冷<rt>ひ</rt></ruby>えてできた。「<ruby>巨人<rt>きょじん</rt></ruby>の<ruby>道<rt>みち</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>。",
+ "moher": "<ruby>高<rt>たか</rt></ruby>さ<ruby>最大<rt>さいだい</rt></ruby>214m、<ruby>長<rt>なが</rt></ruby>さ8kmの<ruby>崖<rt>がけ</rt></ruby>が<ruby>大西<rt>たいせい</rt></ruby><ruby>洋<rt>よう</rt></ruby>にそびえる。アイルランドでいちばん<ruby>人気<rt>にんき</rt></ruby>の<ruby>観光地<rt>かんこうち</rt></ruby>。",
+ "lochness": "<ruby>怪獣<rt>かいじゅう</rt></ruby>「ネッシー」の<ruby>伝説<rt>でんせつ</rt></ruby>で<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>細長<rt>ほそなが</rt></ruby>い<ruby>湖<rt>みずうみ</rt></ruby>。<ruby>深<rt>ふか</rt></ruby>さは<ruby>約<rt>やく</rt></ruby>230mあり、ほとりに<ruby>古<rt>ふる</rt></ruby>い<ruby>城<rt>しろ</rt></ruby>あとが<ruby>立<rt>た</rt></ruby>つ。",
+ "warsaw": "<ruby>戦争<rt>せんそう</rt></ruby>でほとんどこわされた<ruby>町<rt>まち</rt></ruby>を、<ruby>絵<rt>え</rt></ruby>や<ruby>写真<rt>しゃしん</rt></ruby>をもとに<ruby>元<rt>もと</rt></ruby>どおりに<ruby>建て直<rt>たてなお</rt></ruby>した。その<ruby>努力<rt>どりょく</rt></ruby>で<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>になった。",
+ "krakow": "ポーランドの<ruby>古<rt>ふる</rt></ruby>い<ruby>都<rt>みやこ</rt></ruby>。ヨーロッパ<ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>中世<rt>ちゅうせい</rt></ruby>の<ruby>広場<rt>ひろば</rt></ruby>があり、まん<ruby>中<rt>なか</rt></ruby>に<ruby>織物<rt>おりもの</rt></ruby><ruby>会館<rt>かいかん</rt></ruby>が<ruby>建<rt>た</rt></ruby>つ。",
+ "meteora": "<ruby>高<rt>たか</rt></ruby>さ<ruby>数百<rt>すうひゃく</rt></ruby>mの<ruby>岩<rt>いわ</rt></ruby>の<ruby>柱<rt>はしら</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ<ruby>修道院<rt>しゅうどういん</rt></ruby>。「<ruby>空中<rt>くうちゅう</rt></ruby>にうかぶ」という<ruby>意味<rt>いみ</rt></ruby>で、<ruby>昔<rt>むかし</rt></ruby>は はしごやロープで<ruby>登<rt>のぼ</rt></ruby>った。",
+ "mykonos": "<ruby>白<rt>しろ</rt></ruby>い<ruby>壁<rt>かべ</rt></ruby>と<ruby>青<rt>あお</rt></ruby>い<ruby>屋根<rt>やね</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>、<ruby>丘<rt>おか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>の<ruby>風車<rt>ふうしゃ</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる<ruby>島<rt>しま</rt></ruby>。エーゲ<ruby>海<rt>かい</rt></ruby>の「<ruby>白<rt>しろ</rt></ruby>い<ruby>宝石<rt>ほうせき</rt></ruby>」とよばれる。",
+ "ephesus": "<ruby>古代<rt>こだい</rt></ruby>ギリシャ・ローマの<ruby>大<rt>おお</rt></ruby>きな<ruby>都市<rt>とし</rt></ruby>のあと。<ruby>図書館<rt>としょかん</rt></ruby>のりっぱな<ruby>正面<rt>しょうめん</rt></ruby>や、2<ruby>万5千<rt>まんごせん</rt></ruby><ruby>人<rt>にん</rt></ruby>が<ruby>入<rt>はい</rt></ruby>った<ruby>劇場<rt>げきじょう</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>る。",
+ "pamukkale": "<ruby>温泉<rt>おんせん</rt></ruby>の<ruby>石灰<rt>せっかい</rt></ruby>がつもってできた <ruby>真っ白<rt>まっしろ</rt></ruby>な<ruby>段々<rt>だんだん</rt></ruby>の<ruby>池<rt>いけ</rt></ruby>。「<ruby>綿<rt>わた</rt></ruby>の<ruby>城<rt>しろ</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>で、<ruby>青<rt>あお</rt></ruby>い<ruby>水<rt>みず</rt></ruby>がたまる。",
+ "kremlin": "ロシアの<ruby>大統領<rt>だいとうりょう</rt></ruby>がいる <ruby>城壁<rt>じょうへき</rt></ruby>にかこまれた<ruby>宮殿<rt>きゅうでん</rt></ruby>。<ruby>赤<rt>あか</rt></ruby>い<ruby>壁<rt>かべ</rt></ruby>と<ruby>金<rt>きん</rt></ruby>の<ruby>塔<rt>とう</rt></ruby>、<ruby>大<rt>おお</rt></ruby>きな<ruby>時計<rt>とけい</rt></ruby>のスパスカヤ<ruby>塔<rt>とう</rt></ruby>がある。",
+ "hermitage": "<ruby>皇帝<rt>こうてい</rt></ruby>の<ruby>宮殿<rt>きゅうでん</rt></ruby>(<ruby>冬宮<rt>とうきゅう</rt></ruby>)を<ruby>使<rt>つか</rt></ruby>った <ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>美術館<rt>びじゅつかん</rt></ruby>。<ruby>約<rt>やく</rt></ruby>300<ruby>万<rt>まん</rt></ruby><ruby>点<rt>てん</rt></ruby>の<ruby>作品<rt>さくひん</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち、<ruby>緑<rt>みどり</rt></ruby>と<ruby>白<rt>しろ</rt></ruby>の<ruby>建物<rt>たてもの</rt></ruby>が<ruby>美<rt>うつく</rt></ruby>しい。",
+ "helsinki": "<ruby>白<rt>しろ</rt></ruby>い<ruby>壁<rt>かべ</rt></ruby>に<ruby>緑<rt>みどり</rt></ruby>のドームの<ruby>教会<rt>きょうかい</rt></ruby>。<ruby>高<rt>たか</rt></ruby>い<ruby>階段<rt>かいだん</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>ち、ヘルシンキのシンボル。",
+ "tallinn": "<ruby>中世<rt>ちゅうせい</rt></ruby>の<ruby>城壁<rt>じょうへき</rt></ruby>と<ruby>塔<rt>とう</rt></ruby>がそのまま<ruby>残<rt>のこ</rt></ruby>る<ruby>町<rt>まち</rt></ruby>。「おとぎの<ruby>国<rt>くに</rt></ruby>」のような<ruby>赤<rt>あか</rt></ruby>い<ruby>屋根<rt>やね</rt></ruby>の<ruby>町並<rt>まちな</rt></ruby>みが<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "nyhavn": "<ruby>色<rt>いろ</rt></ruby>とりどりの<ruby>古<rt>ふる</rt></ruby>い<ruby>家<rt>いえ</rt></ruby>が<ruby>運河<rt>うんが</rt></ruby>ぞいにならぶ<ruby>港<rt>みなと</rt></ruby>。<ruby>童話<rt>どうわ</rt></ruby><ruby>作家<rt>さっか</rt></ruby>アンデルセンもここに<ruby>住<rt>す</rt></ruby>んでいた。",
+ "gamlastan": "ストックホルムの<ruby>古<rt>ふる</rt></ruby>い<ruby>町<rt>まち</rt></ruby>。<ruby>島<rt>しま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>中世<rt>ちゅうせい</rt></ruby>の<ruby>細<rt>ほそ</rt></ruby>い<ruby>道<rt>みち</rt></ruby>と <ruby>色<rt>いろ</rt></ruby>のちがう<ruby>建物<rt>たてもの</rt></ruby>がならび、<ruby>王宮<rt>おうきゅう</rt></ruby>もある。",
+ "geiranger": "<ruby>氷河<rt>ひょうが</rt></ruby>がけずった<ruby>深<rt>ふか</rt></ruby>い<ruby>入り江<rt>いりえ</rt></ruby>。<ruby>両側<rt>りょうがわ</rt></ruby>に<ruby>高<rt>たか</rt></ruby>い<ruby>崖<rt>がけ</rt></ruby>がせまり、「<ruby>七<rt>なな</rt></ruby><ruby>姉妹<rt>しまい</rt></ruby>」など たくさんの<ruby>滝<rt>たき</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちる。<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "preikestolen": "フィヨルドの<ruby>上<rt>うえ</rt></ruby> <ruby>高<rt>たか</rt></ruby>さ604mにつき<ruby>出<rt>だ</rt></ruby>した <ruby>平<rt>たい</rt></ruby>らな<ruby>岩<rt>いわ</rt></ruby>。「<ruby>説教<rt>せっきょう</rt></ruby><ruby>壇<rt>だん</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>で、<ruby>歩<rt>ある</rt></ruby>いて<ruby>登<rt>のぼ</rt></ruby>れる。",
+ "bluelagoon": "<ruby>地熱<rt>じねつ</rt></ruby><ruby>発電所<rt>はつでんしょ</rt></ruby>の<ruby>湯<rt>ゆ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>った <ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>露天風呂<rt>ろてんぶろ</rt></ruby>。ミルクのような<ruby>青白<rt>あおじろ</rt></ruby>い<ruby>湯<rt>ゆ</rt></ruby>で、<ruby>溶岩<rt>ようがん</rt></ruby>にかこまれている。",
+ "gullfoss": "2<ruby>段<rt>だん</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちる<ruby>大<rt>おお</rt></ruby>きな<ruby>滝<rt>たき</rt></ruby>。「<ruby>黄金<rt>おうごん</rt></ruby>の<ruby>滝<rt>たき</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>で、<ruby>晴<rt>は</rt></ruby>れた<ruby>日<rt>ひ</rt></ruby>には<ruby>虹<rt>にじ</rt></ruby>がかかる。",
+ "dubrovnik": "「アドリア<ruby>海<rt>かい</rt></ruby>の<ruby>真珠<rt>しんじゅ</rt></ruby>」とよばれる <ruby>城壁<rt>じょうへき</rt></ruby>にかこまれた<ruby>町<rt>まち</rt></ruby>。オレンジ<ruby>色<rt>いろ</rt></ruby>の<ruby>屋根<rt>やね</rt></ruby>がならび、<ruby>城壁<rt>じょうへき</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>ける。",
+ "plitvice": "16の<ruby>湖<rt>みずうみ</rt></ruby>が<ruby>滝<rt>たき</rt></ruby>でつながり、<ruby>階段<rt>かいだん</rt></ruby>のように<ruby>流れ落<rt>ながれお</rt></ruby>ちる。<ruby>水<rt>みず</rt></ruby>はエメラルド<ruby>色<rt>いろ</rt></ruby>で、<ruby>木<rt>き</rt></ruby>の<ruby>道<rt>みち</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いて<ruby>回<rt>まわ</rt></ruby>る。",
+ "brussels": "<ruby>金<rt>きん</rt></ruby>でかざられた<ruby>古<rt>ふる</rt></ruby>い<ruby>建物<rt>たてもの</rt></ruby>にかこまれた<ruby>広場<rt>ひろば</rt></ruby>。2<ruby>年<rt>ねん</rt></ruby>に<ruby>一度<rt>いちど</rt></ruby>、<ruby>花<rt>はな</rt></ruby>のじゅうたんで<ruby>広場<rt>ひろば</rt></ruby>がうめつくされる。",
+ "bruges": "<ruby>運河<rt>うんが</rt></ruby>がめぐる<ruby>中世<rt>ちゅうせい</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。「<ruby>北<rt>きた</rt></ruby>のベニス」とよばれ、レンガの<ruby>家<rt>いえ</rt></ruby>と<ruby>鐘楼<rt>しょうろう</rt></ruby>が<ruby>水<rt>みず</rt></ruby>にうつる。",
+ "amsterdam": "<ruby>町<rt>まち</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>運河<rt>うんが</rt></ruby>が165<ruby>本<rt>ぽん</rt></ruby>もあり、<ruby>細長<rt>ほそなが</rt></ruby>い<ruby>家<rt>いえ</rt></ruby>がならぶ。<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>移動<rt>いどう</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
+ "keukenhof": "<ruby>春<rt>はる</rt></ruby>だけ<ruby>開<rt>ひら</rt></ruby>く <ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>花<rt>はな</rt></ruby>の<ruby>公園<rt>こうえん</rt></ruby>。<ruby>約<rt>やく</rt></ruby>700<ruby>万<rt>まん</rt></ruby><ruby>本<rt>ぼん</rt></ruby>のチューリップなどがいっせいにさく。",
+ "pena": "<ruby>山<rt>やま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ<ruby>赤<rt>あか</rt></ruby>と<ruby>黄色<rt>きいろ</rt></ruby>のカラフルな<ruby>宮殿<rt>きゅうでん</rt></ruby>。いろいろな<ruby>様式<rt>ようしき</rt></ruby>がまざった おとぎ<ruby>話<rt>ばなし</rt></ruby>のような<ruby>姿<rt>すがた</rt></ruby>。",
+ "belem": "<ruby>大航海<rt>だいこうかい</rt></ruby><ruby>時代<rt>じだい</rt></ruby>に<ruby>船<rt>ふね</rt></ruby>を<ruby>見<rt>み</rt></ruby>はるため <ruby>川<rt>かわ</rt></ruby>のほとりに<ruby>建<rt>た</rt></ruby>てられた<ruby>塔<rt>とう</rt></ruby>。<ruby>白<rt>しろ</rt></ruby>い<ruby>石<rt>いし</rt></ruby>のかざりが<ruby>美<rt>うつく</rt></ruby>しく<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "porto": "<ruby>川<rt>かわ</rt></ruby>ぞいにカラフルな<ruby>家<rt>いえ</rt></ruby>がならぶ<ruby>港町<rt>みなとまち</rt></ruby>。<ruby>二<rt>に</rt></ruby><ruby>階<rt>かい</rt></ruby><ruby>建<rt>だ</rt></ruby>ての<ruby>鉄<rt>てつ</rt></ruby>の<ruby>橋<rt>はし</rt></ruby>「ドン・ルイス1<ruby>世<rt>せい</rt></ruby><ruby>橋<rt>きょう</rt></ruby>」がシンボル。",
+ "seville": "<ruby>世界<rt>せかい</rt></ruby>でもっとも<ruby>大<rt>おお</rt></ruby>きな ゴシック<ruby>様式<rt>ようしき</rt></ruby>の<ruby>大聖堂<rt>だいせいどう</rt></ruby>。コロンブスのお<ruby>墓<rt>はか</rt></ruby>があり、<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>100mの<ruby>塔<rt>とう</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>れる。",
+ "toledo": "<ruby>川<rt>かわ</rt></ruby>に<ruby>三<rt>さん</rt></ruby><ruby>方<rt>ほう</rt></ruby>をかこまれた<ruby>丘<rt>おか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>の<ruby>古<rt>ふる</rt></ruby>い<ruby>町<rt>まち</rt></ruby>。<ruby>キリスト教<rt>きりすときょう</rt></ruby>・<ruby>イスラム教<rt>いすらむきょう</rt></ruby>・<ruby>ユダヤ教<rt>ゆだやきょう</rt></ruby>の<ruby>文化<rt>ぶんか</rt></ruby>がまざっている。",
+ "guell": "<ruby>建築家<rt>けんちくか</rt></ruby>ガウディが<ruby>作<rt>つく</rt></ruby>った<ruby>公園<rt>こうえん</rt></ruby>。カラフルなタイルのトカゲやベンチがあり、<ruby>街<rt>まち</rt></ruby>を<ruby>見<rt>み</rt></ruby>わたせる。",
+ "santiago": "<ruby>聖<rt>せい</rt></ruby>ヤコブのお<ruby>墓<rt>はか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ<ruby>大聖堂<rt>だいせいどう</rt></ruby>。ヨーロッパ<ruby>中<rt>じゅう</rt></ruby>から<ruby>歩<rt>ある</rt></ruby>いてくる<ruby>巡礼<rt>じゅんれい</rt></ruby>の<ruby>道<rt>みち</rt></ruby>の ゴール。",
+ "valletta": "<ruby>地中<rt>ちちゅう</rt></ruby><ruby>海<rt>かい</rt></ruby>の<ruby>小<rt>ちい</rt></ruby>さな<ruby>島国<rt>しまぐに</rt></ruby>の<ruby>首都<rt>しゅと</rt></ruby>。はちみつ<ruby>色<rt>いろ</rt></ruby>の<ruby>石<rt>いし</rt></ruby>の<ruby>建物<rt>たてもの</rt></ruby>がならび、<ruby>町<rt>まち</rt></ruby>ぜんたいが<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "monaco": "<ruby>世界<rt>せかい</rt></ruby>で2<ruby>番目<rt>ばんめ</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さな<ruby>国<rt>くに</rt></ruby>。<ruby>港<rt>みなと</rt></ruby>に<ruby>豪華<rt>ごうか</rt></ruby>なヨットがならび、<ruby>街<rt>まち</rt></ruby>の<ruby>道<rt>みち</rt></ruby>を<ruby>走<rt>はし</rt></ruby>るF1レースで<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "praguecastle": "<ruby>世界<rt>せかい</rt></ruby>でもっとも<ruby>大<rt>おお</rt></ruby>きな<ruby>古<rt>ふる</rt></ruby>い<ruby>城<rt>しろ</rt></ruby>。<ruby>中<rt>なか</rt></ruby>に<ruby>聖<rt>せい</rt></ruby>ヴィート<ruby>大聖堂<rt>だいせいどう</rt></ruby>があり、<ruby>川<rt>かわ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうから<ruby>見<rt>み</rt></ruby>る<ruby>姿<rt>すがた</rt></ruby>が<ruby>美<rt>うつく</rt></ruby>しい。",
+ "stephansdom": "ウィーンのまん<ruby>中<rt>なか</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ <ruby>高<rt>たか</rt></ruby>さ137mの<ruby>塔<rt>とう</rt></ruby>をもつ<ruby>大聖堂<rt>だいせいどう</rt></ruby>。<ruby>屋根<rt>やね</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>つき<ruby>瓦<rt>かわら</rt></ruby>のもようが<ruby>目<rt>め</rt></ruby>をひく。",
+ "salzburg": "<ruby>山<rt>やま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>の<ruby>城<rt>しろ</rt></ruby>が<ruby>見<rt>み</rt></ruby>おろす<ruby>古<rt>ふる</rt></ruby>い<ruby>町<rt>まち</rt></ruby>。<ruby>作曲家<rt>さっきょくか</rt></ruby>モーツァルトが<ruby>生<rt>う</rt></ruby>まれ、<ruby>映画<rt>えいが</rt></ruby>「サウンド・オブ・ミュージック」の<ruby>舞台<rt>ぶたい</rt></ruby>。",
+ "rila": "<ruby>山<rt>やま</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にある ブルガリアでいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>修道院<rt>しゅうどういん</rt></ruby>。<ruby>白黒<rt>しろくろ</rt></ruby>のしま<ruby>模様<rt>もよう</rt></ruby>のアーチと <ruby>色<rt>いろ</rt></ruby>あざやかな<ruby>壁画<rt>へきが</rt></ruby>で<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "bran": "「ドラキュラ<ruby>城<rt>じょう</rt></ruby>」とよばれる <ruby>岩<rt>いわ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>の<ruby>城<rt>しろ</rt></ruby>。<ruby>小説<rt>しょうせつ</rt></ruby>のモデルになったといわれ、<ruby>細<rt>ほそ</rt></ruby>い<ruby>階段<rt>かいだん</rt></ruby>と<ruby>塔<rt>とう</rt></ruby>がある。",
+ "domeofrock": "<ruby>金色<rt>きんいろ</rt></ruby>のドームをもつ <ruby>イスラム教<rt>いすらむきょう</rt></ruby>の<ruby>建物<rt>たてもの</rt></ruby>。エルサレムの<ruby>旧市街<rt>きゅうしがい</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>にあり、いくつもの<ruby>宗教<rt>しゅうきょう</rt></ruby>の<ruby>聖地<rt>せいち</rt></ruby>。",
+ "deadsea": "<ruby>海面<rt>かいめん</rt></ruby>より<ruby>約<rt>やく</rt></ruby>430m<ruby>低<rt>ひく</rt></ruby>い<ruby>場所<rt>ばしょ</rt></ruby>にある<ruby>湖<rt>みずうみ</rt></ruby>。<ruby>塩<rt>しお</rt></ruby>の<ruby>濃<rt>こ</rt></ruby>さが<ruby>海<rt>うみ</rt></ruby>の10<ruby>倍<rt>ばい</rt></ruby>で、<ruby>体<rt>からだ</rt></ruby>がぷかぷかとうく。",
+ "wadirum": "<ruby>赤<rt>あか</rt></ruby>い<ruby>砂<rt>すな</rt></ruby>と<ruby>岩山<rt>いわやま</rt></ruby>の<ruby>砂漠<rt>さばく</rt></ruby>。「<ruby>月<rt>つき</rt></ruby>の<ruby>谷<rt>たに</rt></ruby>」とよばれ、<ruby>火星<rt>かせい</rt></ruby>の<ruby>映画<rt>えいが</rt></ruby>の<ruby>撮影<rt>さつえい</rt></ruby>にも<ruby>使<rt>つか</rt></ruby>われた。",
+ "burj": "<ruby>高<rt>たか</rt></ruby>さ828mで<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>いビル。2010<ruby>年<rt>ねん</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>し、160<ruby>階<rt>かい</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>ある。<ruby>展望台<rt>てんぼうだい</rt></ruby>は555mの<ruby>高<rt>たか</rt></ruby>さ。",
+ "zayed": "<ruby>真っ白<rt>まっしろ</rt></ruby>な<ruby>大理石<rt>だいりせき</rt></ruby>でできた <ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>のモスク。82のドームがあり、<ruby>中<rt>なか</rt></ruby>のじゅうたんは<ruby>世界一<rt>せかいいち</rt></ruby><ruby>大<rt>おお</rt></ruby>きい。",
+ "persepolis": "<ruby>約<rt>やく</rt></ruby>2500<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>のペルシャ<ruby>帝国<rt>ていこく</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>のあと。<ruby>大<rt>おお</rt></ruby>きな<ruby>石<rt>いし</rt></ruby>の<ruby>階段<rt>かいだん</rt></ruby>や<ruby>柱<rt>はしら</rt></ruby>、<ruby>動物<rt>どうぶつ</rt></ruby>の<ruby>彫刻<rt>ちょうこく</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>る。<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "isfahan": "<ruby>世界<rt>せかい</rt></ruby>で2<ruby>番目<rt>ばんめ</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きな<ruby>広場<rt>ひろば</rt></ruby>。<ruby>青<rt>あお</rt></ruby>いタイルのモスクにかこまれ、「<ruby>世界<rt>せかい</rt></ruby>の<ruby>半分<rt>はんぶん</rt></ruby>」とたたえられた<ruby>町<rt>まち</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>。",
+ "marrakech": "マラケシュの<ruby>旧市街<rt>きゅうしがい</rt></ruby>の<ruby>広場<rt>ひろば</rt></ruby>。<ruby>昼<rt>ひる</rt></ruby>は<ruby>市場<rt>しじょう</rt></ruby>、<ruby>夜<rt>よる</rt></ruby>は<ruby>大道<rt>だいどう</rt></ruby><ruby>芸人<rt>げいにん</rt></ruby>や<ruby>屋台<rt>やたい</rt></ruby>でにぎわう。",
+ "chefchaouen": "<ruby>家<rt>いえ</rt></ruby>も<ruby>道<rt>みち</rt></ruby>も <ruby>青<rt>あお</rt></ruby>くぬられた<ruby>山<rt>やま</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。「<ruby>青<rt>あお</rt></ruby>い<ruby>真珠<rt>しんじゅ</rt></ruby>」とよばれ、<ruby>写真<rt>しゃしん</rt></ruby>をとる<ruby>人<rt>ひと</rt></ruby>でにぎわう。",
+ "hassan": "<ruby>海<rt>うみ</rt></ruby>にせり<ruby>出<rt>だ</rt></ruby>すように<ruby>建<rt>た</rt></ruby>つ<ruby>大<rt>おお</rt></ruby>きなモスク。<ruby>塔<rt>とう</rt></ruby>の<ruby>高<rt>たか</rt></ruby>さは210mで、<ruby>世界<rt>せかい</rt></ruby>でもっとも<ruby>高<rt>たか</rt></ruby>い<ruby>塔<rt>とう</rt></ruby>をもつモスクの<ruby>一<rt>ひと</rt></ruby>つ。",
+ "sossusvlei": "<ruby>世界<rt>せかい</rt></ruby><ruby>最古<rt>さいこ</rt></ruby>の<ruby>砂漠<rt>さばく</rt></ruby>にある オレンジ<ruby>色<rt>いろ</rt></ruby>の<ruby>砂丘<rt>さきゅう</rt></ruby>。<ruby>白<rt>しろ</rt></ruby>い<ruby>干上<rt>ひあ</rt></ruby>がった<ruby>湖<rt>みずうみ</rt></ruby>に <ruby>枯<rt>か</rt></ruby>れた<ruby>木<rt>き</rt></ruby>が<ruby>立<rt>た</rt></ruby>つ「デッドフレイ」で<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "serengeti": "ライオンやゾウがくらす<ruby>広<rt>ひろ</rt></ruby>い<ruby>草原<rt>そうげん</rt></ruby>。<ruby>毎年<rt>まいとし</rt></ruby>150<ruby>万<rt>まん</rt></ruby><ruby>頭<rt>とう</rt></ruby>のヌーが<ruby>草<rt>くさ</rt></ruby>を<ruby>求<rt>もと</rt></ruby>めて<ruby>大<rt>だい</rt></ruby><ruby>移動<rt>いどう</rt></ruby>する。",
+ "lalibela": "<ruby>大<rt>おお</rt></ruby>きな<ruby>一<rt>いち</rt></ruby><ruby>枚<rt>まい</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>を<ruby>上<rt>うえ</rt></ruby>からほって<ruby>作<rt>つく</rt></ruby>った<ruby>教会<rt>きょうかい</rt></ruby><ruby>群<rt>ぐん</rt></ruby>。<ruby>十字<rt>じゅうじ</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>の<ruby>聖<rt>せい</rt></ruby>ギオルギス<ruby>教会<rt>きょうかい</rt></ruby>がいちばん<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "karnak": "<ruby>古代<rt>こだい</rt></ruby>エジプト<ruby>最大<rt>さいだい</rt></ruby>の<ruby>神殿<rt>しんでん</rt></ruby>。<ruby>高<rt>たか</rt></ruby>さ20m<ruby>以上<rt>いじょう</rt></ruby>の<ruby>柱<rt>はしら</rt></ruby>が134<ruby>本<rt>ぽん</rt></ruby>も<ruby>林<rt>はやし</rt></ruby>のようにならぶ<ruby>大<rt>だい</rt></ruby><ruby>列柱<rt>れっちゅう</rt></ruby><ruby>室<rt>しつ</rt></ruby>がある。",
+ "valleyofkings": "<ruby>古代<rt>こだい</rt></ruby>エジプトの<ruby>王<rt>おう</rt></ruby>たちのお<ruby>墓<rt>はか</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まる<ruby>谷<rt>たに</rt></ruby>。<ruby>少年<rt>しょうねん</rt></ruby><ruby>王<rt>おう</rt></ruby>ツタンカーメンの<ruby>墓<rt>はか</rt></ruby>が、<ruby>宝物<rt>ほうもつ</rt></ruby>とともに<ruby>見<rt>み</rt></ruby>つかった。",
+ "capeofgoodhope": "<ruby>アフリカ大陸<rt>あふりかたいりく</rt></ruby>の<ruby>南西<rt>なんせい</rt></ruby>のはしにある<ruby>岬<rt>みさき</rt></ruby>。1488<ruby>年<rt>ねん</rt></ruby>にヨーロッパの<ruby>船<rt>ふね</rt></ruby>がここを<ruby>回<rt>まわ</rt></ruby>って、インドへの<ruby>道<rt>みち</rt></ruby>が<ruby>開<rt>あ</rt></ruby>けた。",
+ "boulders": "<ruby>大<rt>おお</rt></ruby>きな<ruby>丸<rt>まる</rt></ruby>い<ruby>岩<rt>いわ</rt></ruby>と<ruby>白<rt>しろ</rt></ruby>い<ruby>砂<rt>すな</rt></ruby>の<ruby>浜<rt>はま</rt></ruby>。<ruby>野生<rt>やせい</rt></ruby>のアフリカペンギンが<ruby>約<rt>やく</rt></ruby>2000<ruby>羽<rt>わ</rt></ruby>くらし、すぐ<ruby>近<rt>ちか</rt></ruby>くで<ruby>見<rt>み</rt></ruby>られる。",
+ "okavango": "<ruby>砂漠<rt>さばく</rt></ruby>のまん<ruby>中<rt>なか</rt></ruby>に<ruby>川<rt>かわ</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がってできた <ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>内陸<rt>ないりく</rt></ruby>の<ruby>三角州<rt>さんかくす</rt></ruby>。ゾウやカバがくらす。",
+ "masaimara": "ケニアの<ruby>草原<rt>そうげん</rt></ruby>の<ruby>保護区<rt>ほごく</rt></ruby>。ライオン・ゾウ・キリンなどに<ruby>会<rt>あ</rt></ruby>えるサファリで<ruby>有名<rt>ゆうめい</rt></ruby>。マサイの<ruby>人々<rt>ひとびと</rt></ruby>の<ruby>土地<rt>とち</rt></ruby>。",
+ "tiantan": "<ruby>皇帝<rt>こうてい</rt></ruby>が<ruby>豊作<rt>ほうさく</rt></ruby>をいのった<ruby>祭壇<rt>さいだん</rt></ruby>。<ruby>青<rt>あお</rt></ruby>い<ruby>瓦<rt>かわら</rt></ruby>の<ruby>丸<rt>まる</rt></ruby>い<ruby>屋根<rt>やね</rt></ruby>が3<ruby>段<rt>だん</rt></ruby>に<ruby>重<rt>かさ</rt></ruby>なる「<ruby>祈年<rt>きねん</rt></ruby><ruby>殿<rt>でん</rt></ruby>」が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "summerpalace": "<ruby>皇帝<rt>こうてい</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>の<ruby>宮殿<rt>きゅうでん</rt></ruby>。<ruby>大<rt>おお</rt></ruby>きな<ruby>湖<rt>みずうみ</rt></ruby>と<ruby>丘<rt>おか</rt></ruby>があり、<ruby>長<rt>なが</rt></ruby>さ728mの<ruby>絵<rt>え</rt></ruby>が<ruby>描<rt>えが</rt></ruby>かれた<ruby>回廊<rt>かいろう</rt></ruby>がつづく。",
+ "bund": "<ruby>上海<rt>しゃんはい</rt></ruby>の<ruby>川<rt>かわ</rt></ruby>ぞいの<ruby>通<rt>とお</rt></ruby>り。<ruby>古<rt>ふる</rt></ruby>い<ruby>西洋風<rt>せいようふう</rt></ruby>の<ruby>建物<rt>たてもの</rt></ruby>がならび、<ruby>川<rt>かわ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうに<ruby>超高層<rt>ちょうこうそう</rt></ruby>ビルがそびえる。",
+ "jiuzhaigou": "<ruby>山<rt>やま</rt></ruby>の<ruby>谷<rt>たに</rt></ruby>に <ruby>青<rt>あお</rt></ruby>や<ruby>緑<rt>みどり</rt></ruby>にすきとおった<ruby>湖<rt>みずうみ</rt></ruby>が100<ruby>以上<rt>いじょう</rt></ruby>ある。<ruby>石灰<rt>せっかい</rt></ruby>がとけた<ruby>水<rt>みず</rt></ruby>で、<ruby>秋<rt>あき</rt></ruby>は<ruby>紅葉<rt>こうよう</rt></ruby>がうつる。",
+ "zhangjiajie": "<ruby>高<rt>たか</rt></ruby>さ200m<ruby>以上<rt>いじょう</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>の<ruby>柱<rt>はしら</rt></ruby>が3000<ruby>本<rt>ぽん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>そびえる。<ruby>映画<rt>えいが</rt></ruby>「アバター」の<ruby>浮<rt>う</rt></ruby>かぶ<ruby>山<rt>やま</rt></ruby>のモデルになった。",
+ "huangshan": "ふしぎな<ruby>形<rt>かたち</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>と<ruby>松<rt>まつ</rt></ruby>、<ruby>雲海<rt>うんかい</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる<ruby>山<rt>やま</rt></ruby>。<ruby>昔<rt>むかし</rt></ruby>から<ruby>山水画<rt>さんすいが</rt></ruby>の<ruby>題材<rt>だいざい</rt></ruby>になった。<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "leshan": "<ruby>川<rt>かわ</rt></ruby>ぞいの<ruby>崖<rt>がけ</rt></ruby>にほられた <ruby>高<rt>たか</rt></ruby>さ71mの<ruby>世界<rt>せかい</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>の<ruby>石<rt>いし</rt></ruby>の<ruby>仏像<rt>ぶつぞう</rt></ruby>。<ruby>約<rt>やく</rt></ruby>1200<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>に<ruby>完成<rt>かんせい</rt></ruby>した。",
+ "lijiang": "800<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>からの<ruby>町並<rt>まちな</rt></ruby>みが<ruby>残<rt>のこ</rt></ruby>る。<ruby>水路<rt>すいろ</rt></ruby>が<ruby>町中<rt>まちなか</rt></ruby>を<ruby>流<rt>なが</rt></ruby>れ、<ruby>石<rt>いし</rt></ruby>だたみの<ruby>道<rt>みち</rt></ruby>と<ruby>木<rt>き</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>がつづく。<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "victoriapeak": "<ruby>香港<rt>ほんこん</rt></ruby>でいちばん<ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>。<ruby>頂上<rt>ちょうじょう</rt></ruby>からは<ruby>高層<rt>こうそう</rt></ruby>ビルの<ruby>森<rt>もり</rt></ruby>と<ruby>港<rt>みなと</rt></ruby>が<ruby>見<rt>み</rt></ruby>わたせ、<ruby>急<rt>きゅう</rt></ruby>な<ruby>坂<rt>さか</rt></ruby>をトラムで<ruby>登<rt>のぼ</rt></ruby>る。",
+ "macau": "<ruby>火事<rt>かじ</rt></ruby>で<ruby>正面<rt>しょうめん</rt></ruby>の<ruby>壁<rt>かべ</rt></ruby>だけが<ruby>残<rt>のこ</rt></ruby>った<ruby>教会<rt>きょうかい</rt></ruby>あと。<ruby>石<rt>いし</rt></ruby>の<ruby>壁<rt>かべ</rt></ruby>に<ruby>日本人<rt>にほんじん</rt></ruby>が<ruby>作<rt>つく</rt></ruby>ったといわれる<ruby>彫刻<rt>ちょうこく</rt></ruby>がある。",
+ "taipei101": "<ruby>高<rt>たか</rt></ruby>さ508mの<ruby>超高層<rt>ちょうこうそう</rt></ruby>ビル。<ruby>竹<rt>たけ</rt></ruby>の<ruby>節<rt>ふし</rt></ruby>のような<ruby>形<rt>かたち</rt></ruby>で、2004<ruby>年<rt>ねん</rt></ruby>の<ruby>完成<rt>かんせい</rt></ruby><ruby>時<rt>じ</rt></ruby>は<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>かった。",
+ "jiufen": "<ruby>山<rt>やま</rt></ruby>の<ruby>斜面<rt>しゃめん</rt></ruby>に<ruby>赤<rt>あか</rt></ruby>いちょうちんの<ruby>店<rt>みせ</rt></ruby>がならぶ<ruby>町<rt>まち</rt></ruby>。<ruby>金<rt>きん</rt></ruby>の<ruby>採掘<rt>さいくつ</rt></ruby>でにぎわい、<ruby>今<rt>いま</rt></ruby>は<ruby>茶芸<rt>ちゃげい</rt></ruby><ruby>館<rt>かん</rt></ruby>や<ruby>屋台<rt>やたい</rt></ruby>が<ruby>人気<rt>にんき</rt></ruby>。",
+ "taroko": "<ruby>大理石<rt>だいりせき</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>くそびえる<ruby>峡谷<rt>きょうこく</rt></ruby>。<ruby>川<rt>かわ</rt></ruby>がけずった<ruby>白<rt>しろ</rt></ruby>い<ruby>岩<rt>いわ</rt></ruby>の<ruby>谷<rt>たに</rt></ruby>に、<ruby>道<rt>みち</rt></ruby>とトンネルが<ruby>通<rt>かよ</rt></ruby>っている。",
+ "gyeongbok": "<ruby>朝鮮<rt>ちょうせん</rt></ruby><ruby>王朝<rt>おうちょう</rt></ruby>の<ruby>王<rt>おう</rt></ruby>の<ruby>宮殿<rt>きゅうでん</rt></ruby>。<ruby>色<rt>いろ</rt></ruby>あざやかな<ruby>門<rt>もん</rt></ruby>と<ruby>屋根<rt>やね</rt></ruby>があり、<ruby>衛兵<rt>えいへい</rt></ruby>の<ruby>交代式<rt>こうたいしき</rt></ruby>が<ruby>見<rt>み</rt></ruby>られる。",
+ "grandpalace": "<ruby>王宮<rt>おうきゅう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にある<ruby>寺<rt>てら</rt></ruby>。<ruby>金色<rt>きんいろ</rt></ruby>に<ruby>光<rt>ひか</rt></ruby>る<ruby>仏塔<rt>ぶっとう</rt></ruby>と、ヒスイでできたエメラルド<ruby>仏<rt>ぶつ</rt></ruby>がまつられている。",
+ "ayutthaya": "400<ruby>年<rt>ねん</rt></ruby>つづいた<ruby>王国<rt>おうこく</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>のあと。<ruby>木<rt>き</rt></ruby>の<ruby>根<rt>ね</rt></ruby>に<ruby>包<rt>つつ</rt></ruby>まれた<ruby>仏像<rt>ぶつぞう</rt></ruby>の<ruby>頭<rt>あたま</rt></ruby>や、たくさんの<ruby>仏塔<rt>ぶっとう</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>る。<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "doisuthep": "<ruby>山<rt>やま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>にある<ruby>金色<rt>きんいろ</rt></ruby>の<ruby>仏塔<rt>ぶっとう</rt></ruby>の<ruby>寺<rt>てら</rt></ruby>。306<ruby>段<rt>だん</rt></ruby>の<ruby>階段<rt>かいだん</rt></ruby>を<ruby>登<rt>のぼ</rt></ruby>ると、チェンマイの<ruby>町<rt>まち</rt></ruby>を<ruby>見<rt>み</rt></ruby>わたせる。",
+ "railay": "<ruby>石灰岩<rt>せっかいがん</rt></ruby>の<ruby>崖<rt>がけ</rt></ruby>にかこまれ、<ruby>船<rt>ふね</rt></ruby>でしか<ruby>行<rt>い</rt></ruby>けないビーチ。<ruby>白<rt>しろ</rt></ruby>い<ruby>砂<rt>すな</rt></ruby>とエメラルドの<ruby>海<rt>うみ</rt></ruby>で、ロッククライミングでも<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "hoian": "<ruby>昔<rt>むかし</rt></ruby>の<ruby>貿易港<rt>ぼうえきこう</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。<ruby>黄色<rt>きいろ</rt></ruby>い<ruby>壁<rt>かべ</rt></ruby>の<ruby>古<rt>ふる</rt></ruby>い<ruby>家<rt>いえ</rt></ruby>と <ruby>色<rt>いろ</rt></ruby>とりどりのランタンがならび、<ruby>日本人<rt>にほんじん</rt></ruby>が<ruby>作<rt>つく</rt></ruby>ったといわれる<ruby>橋<rt>はし</rt></ruby>がある。",
+ "hue": "ベトナム<ruby>最後<rt>さいご</rt></ruby>の<ruby>王朝<rt>おうちょう</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>。<ruby>城壁<rt>じょうへき</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>赤<rt>あか</rt></ruby>い<ruby>門<rt>もん</rt></ruby>と<ruby>宮殿<rt>きゅうでん</rt></ruby>があり、<ruby>川<rt>かわ</rt></ruby>のそばに<ruby>建<rt>た</rt></ruby>つ。<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "luangprabang": "メコン<ruby>川<rt>かわ</rt></ruby>ぞいの<ruby>古<rt>ふる</rt></ruby>い<ruby>都<rt>みやこ</rt></ruby>。<ruby>金色<rt>きんいろ</rt></ruby>にかがやく<ruby>寺<rt>てら</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く、<ruby>朝<rt>あさ</rt></ruby>にはお<ruby>坊<rt>ぼう</rt></ruby>さんの<ruby>托鉢<rt>たくはつ</rt></ruby>の<ruby>列<rt>れつ</rt></ruby>が<ruby>歩<rt>ある</rt></ruby>く。",
+ "petronas": "<ruby>高<rt>たか</rt></ruby>さ452mの2つの<ruby>塔<rt>とう</rt></ruby>。41<ruby>階<rt>かい</rt></ruby>と42<ruby>階<rt>かい</rt></ruby>が<ruby>橋<rt>はし</rt></ruby>でつながっていて、ツインタワーとしては<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>い。",
+ "marinabay": "3つのビルの<ruby>上<rt>うえ</rt></ruby>に<ruby>船<rt>ふね</rt></ruby>のような<ruby>屋上<rt>おくじょう</rt></ruby>がのった ホテル。<ruby>屋上<rt>おくじょう</rt></ruby>のプールは<ruby>地上<rt>ちじょう</rt></ruby>200mの<ruby>高<rt>たか</rt></ruby>さにある。",
+ "merlion": "<ruby>頭<rt>あたま</rt></ruby>がライオン、<ruby>体<rt>からだ</rt></ruby>が<ruby>魚<rt>さかな</rt></ruby>の<ruby>像<rt>ぞう</rt></ruby>。<ruby>口<rt>くち</rt></ruby>から<ruby>水<rt>みず</rt></ruby>を<ruby>出<rt>だ</rt></ruby>しながら<ruby>港<rt>みなと</rt></ruby>を<ruby>見<rt>み</rt></ruby>ている、シンガポールのシンボル。",
+ "prambanan": "9<ruby>世紀<rt>せいき</rt></ruby>に<ruby>建<rt>た</rt></ruby>てられた<ruby>ヒンドゥー教<rt>ひんどぅーきょう</rt></ruby>の<ruby>寺院<rt>じいん</rt></ruby><ruby>群<rt>ぐん</rt></ruby>。<ruby>高<rt>たか</rt></ruby>さ47mの<ruby>塔<rt>とう</rt></ruby>をふくめ、とがった<ruby>塔<rt>とう</rt></ruby>がならぶ。",
+ "tanahlot": "<ruby>海<rt>うみ</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ<ruby>寺<rt>てら</rt></ruby>。<ruby>潮<rt>しお</rt></ruby>が<ruby>満<rt>み</rt></ruby>ちると<ruby>島<rt>しま</rt></ruby>になり、<ruby>夕日<rt>ゆうひ</rt></ruby>とともに<ruby>見<rt>み</rt></ruby>る<ruby>姿<rt>すがた</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "tegalalang": "<ruby>谷<rt>たに</rt></ruby>の<ruby>斜面<rt>しゃめん</rt></ruby>に<ruby>階段<rt>かいだん</rt></ruby>のように<ruby>広<rt>ひろ</rt></ruby>がる<ruby>田<rt>た</rt></ruby>んぼ。1000<ruby>年<rt>ねん</rt></ruby>つづく<ruby>水<rt>みず</rt></ruby>の<ruby>分<rt>わ</rt></ruby>け<ruby>方<rt>かた</rt></ruby>「スバック」で<ruby>守<rt>まも</rt></ruby>られている。",
+ "komodo": "<ruby>世界<rt>せかい</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>のトカゲ、コモドオオトカゲがすむ<ruby>島<rt>しま</rt></ruby>。<ruby>体長<rt>たいちょう</rt></ruby>3m<ruby>以上<rt>いじょう</rt></ruby>になり、この<ruby>島<rt>しま</rt></ruby>のまわりにしかいない。",
+ "bromo": "<ruby>砂<rt>すな</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>のまん<ruby>中<rt>なか</rt></ruby>にそびえる<ruby>火山<rt>かざん</rt></ruby>。<ruby>今<rt>いま</rt></ruby>も<ruby>煙<rt>けむり</rt></ruby>を<ruby>上<rt>あ</rt></ruby>げていて、<ruby>朝日<rt>あさひ</rt></ruby>に<ruby>照<rt>て</rt></ruby>らされる<ruby>姿<rt>すがた</rt></ruby>が<ruby>人気<rt>にんき</rt></ruby>。",
+ "chocolatehills": "<ruby>高<rt>たか</rt></ruby>さ30〜50mのまるい<ruby>丘<rt>おか</rt></ruby>が1200<ruby>以上<rt>いじょう</rt></ruby>ならぶ。<ruby>乾季<rt>かんき</rt></ruby>に<ruby>草<rt>くさ</rt></ruby>が<ruby>茶色<rt>ちゃいろ</rt></ruby>になり、チョコレートのように<ruby>見<rt>み</rt></ruby>える。",
+ "banaue": "2000<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>から<ruby>山<rt>やま</rt></ruby>の<ruby>斜面<rt>しゃめん</rt></ruby>に<ruby>作<rt>つく</rt></ruby>られてきた<ruby>田<rt>た</rt></ruby>んぼ。「<ruby>天国<rt>てんごく</rt></ruby>への<ruby>階段<rt>かいだん</rt></ruby>」とよばれ<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "hawamahal": "<ruby>ピンク色<rt>ぴんくいろ</rt></ruby>の<ruby>壁<rt>かべ</rt></ruby>に953の<ruby>小<rt>ちい</rt></ruby>さな<ruby>窓<rt>まど</rt></ruby>がならぶ<ruby>宮殿<rt>きゅうでん</rt></ruby>。<ruby>宮殿<rt>きゅうでん</rt></ruby>の<ruby>女性<rt>じょせい</rt></ruby>たちが<ruby>外<rt>そと</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>を<ruby>見<rt>み</rt></ruby>るために<ruby>作<rt>つく</rt></ruby>られた。",
+ "amber": "<ruby>丘<rt>おか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>つ <ruby>黄色<rt>きいろ</rt></ruby>い<ruby>石<rt>いし</rt></ruby>の<ruby>城<rt>しろ</rt></ruby>。ゾウに<ruby>乗<rt>の</rt></ruby>って<ruby>坂<rt>さか</rt></ruby>を<ruby>登<rt>のぼ</rt></ruby>り、<ruby>鏡<rt>かがみ</rt></ruby>でかざられた<ruby>部屋<rt>へや</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "varanasi": "ガンジス<ruby>川<rt>かわ</rt></ruby>のほとりの<ruby>聖<rt>せい</rt></ruby>なる<ruby>町<rt>まち</rt></ruby>。<ruby>川岸<rt>かわぎし</rt></ruby>の<ruby>階段<rt>かいだん</rt></ruby>(ガート)で<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>沐浴<rt>もくよく</rt></ruby>し、いのりをささげる。",
+ "ellora": "<ruby>岩山<rt>いわやま</rt></ruby>をほって<ruby>作<rt>つく</rt></ruby>った34の<ruby>寺院<rt>じいん</rt></ruby>。カイラーサ<ruby>寺院<rt>じいん</rt></ruby>は<ruby>一<rt>いち</rt></ruby><ruby>枚<rt>まい</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>を<ruby>上<rt>うえ</rt></ruby>から<ruby>下<rt>した</rt></ruby>へ100<ruby>年<rt>ねん</rt></ruby>かけてほった。",
+ "gateway": "<ruby>港<rt>みなと</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ<ruby>高<rt>たか</rt></ruby>さ26mの<ruby>門<rt>もん</rt></ruby>。イギリス<ruby>国王<rt>こくおう</rt></ruby>の<ruby>来訪<rt>らいほう</rt></ruby>を<ruby>記念<rt>きねん</rt></ruby>して1924<ruby>年<rt>ねん</rt></ruby>に<ruby>建<rt>た</rt></ruby>てられた。",
+ "sigiriya": "<ruby>高<rt>たか</rt></ruby>さ<ruby>約<rt>やく</rt></ruby>200mの<ruby>岩<rt>いわ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>王宮<rt>おうきゅう</rt></ruby>のあとがある。1500<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>の<ruby>壁画<rt>へきが</rt></ruby>「シギリヤ・レディ」でも<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "taktsang": "<ruby>崖<rt>がけ</rt></ruby>にはりつくように<ruby>建<rt>た</rt></ruby>つ<ruby>寺<rt>てら</rt></ruby>。「<ruby>虎<rt>とら</rt></ruby>の<ruby>巣<rt>す</rt></ruby>」という<ruby>意味<rt>いみ</rt></ruby>で、<ruby>標高<rt>ひょうこう</rt></ruby>3000mの<ruby>山道<rt>さんどう</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いて<ruby>登<rt>のぼ</rt></ruby>る。",
+ "boudhanath": "<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>仏塔<rt>ぶっとう</rt></ruby>。<ruby>白<rt>しろ</rt></ruby>いドームの<ruby>上<rt>うえ</rt></ruby>に「ブッダの<ruby>目<rt>め</rt></ruby>」が<ruby>描<rt>えが</rt></ruby>かれていて、<ruby>四方<rt>しほう</rt></ruby>を<ruby>見<rt>み</rt></ruby>ている。",
+ "registan": "<ruby>青<rt>あお</rt></ruby>いタイルでかざられた3つの<ruby>学校<rt>がっこう</rt></ruby>(マドラサ)にかこまれた<ruby>広場<rt>ひろば</rt></ruby>。シルクロードの<ruby>中心<rt>ちゅうしん</rt></ruby>だった。",
+ "baikal": "<ruby>深<rt>ふか</rt></ruby>さ1642mで<ruby>世界一<rt>せかいいち</rt></ruby><ruby>深<rt>ふか</rt></ruby>い<ruby>湖<rt>みずうみ</rt></ruby>。<ruby>世界<rt>せかい</rt></ruby>の<ruby>淡水<rt>たんすい</rt></ruby>の<ruby>約<rt>やく</rt></ruby>2<ruby>割<rt>わり</rt></ruby>がここにあり、<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>透明<rt>とうめい</rt></ruby>な<ruby>氷<rt>こおり</rt></ruby>におおわれる。",
+ "yosemite": "<ruby>氷河<rt>ひょうが</rt></ruby>がけずった<ruby>大<rt>おお</rt></ruby>きな<ruby>谷<rt>たに</rt></ruby>。<ruby>高<rt>たか</rt></ruby>さ1000mの<ruby>岩<rt>いわ</rt></ruby>「エル・キャピタン」や、ハーフドームがそびえる。",
+ "zion": "<ruby>赤<rt>あか</rt></ruby>い<ruby>岩<rt>いわ</rt></ruby>の<ruby>崖<rt>がけ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>さ600mもそびえる<ruby>谷<rt>たに</rt></ruby>。<ruby>川<rt>かわ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>く「ナローズ」というコースで<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "delicatearch": "<ruby>赤<rt>あか</rt></ruby>い<ruby>岩<rt>いわ</rt></ruby>が<ruby>自然<rt>しぜん</rt></ruby>にけずられてできた <ruby>高<rt>たか</rt></ruby>さ16mのアーチ。アーチーズ<ruby>国立公園<rt>こくりつこうえん</rt></ruby>には2000<ruby>以上<rt>いじょう</rt></ruby>のアーチがある。",
+ "bryce": "オレンジ<ruby>色<rt>いろ</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>の<ruby>柱<rt>はしら</rt></ruby>「フードゥー」が<ruby>何千<rt>なんぜん</rt></ruby><ruby>本<rt>ぽん</rt></ruby>も<ruby>立<rt>た</rt></ruby>つ。<ruby>朝日<rt>あさひ</rt></ruby>に<ruby>照<rt>て</rt></ruby>らされると<ruby>赤<rt>あか</rt></ruby>くかがやく。",
+ "horseshoe": "コロラド<ruby>川<rt>かわ</rt></ruby>が<ruby>馬<rt>うま</rt></ruby>のひづめの<ruby>形<rt>かたち</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きく<ruby>曲<rt>ま</rt></ruby>がる<ruby>場所<rt>ばしょ</rt></ruby>。<ruby>高<rt>たか</rt></ruby>さ300mの<ruby>崖<rt>がけ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>から<ruby>見<rt>み</rt></ruby>おろす。",
+ "hollywood": "<ruby>丘<rt>おか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ<ruby>高<rt>たか</rt></ruby>さ14mの<ruby>白<rt>しろ</rt></ruby>い<ruby>文字<rt>もじ</rt></ruby>。1923<ruby>年<rt>ねん</rt></ruby>に<ruby>不動産<rt>ふどうさん</rt></ruby>の<ruby>広告<rt>こうこく</rt></ruby>として<ruby>作<rt>つく</rt></ruby>られ、<ruby>映画<rt>えいが</rt></ruby>の<ruby>町<rt>まち</rt></ruby>のシンボルになった。",
+ "alcatraz": "<ruby>湾<rt>わん</rt></ruby>にうかぶ<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>。かつて「<ruby>脱出<rt>だっしゅつ</rt></ruby>できない<ruby>刑務所<rt>けいむしょ</rt></ruby>」があり、<ruby>今<rt>いま</rt></ruby>は<ruby>見学<rt>けんがく</rt></ruby>できる。",
+ "spaceneedle": "1962<ruby>年<rt>ねん</rt></ruby>の<ruby>万博<rt>ばんぱく</rt></ruby>で<ruby>建<rt>た</rt></ruby>てられた<ruby>高<rt>たか</rt></ruby>さ184mの<ruby>塔<rt>とう</rt></ruby>。UFOのような<ruby>展望台<rt>てんぼうだい</rt></ruby>がのっている。",
+ "brooklyn": "1883<ruby>年<rt>ねん</rt></ruby>にできた<ruby>石<rt>いし</rt></ruby>の<ruby>塔<rt>とう</rt></ruby>をもつつり<ruby>橋<rt>ばし</rt></ruby>。<ruby>完成<rt>かんせい</rt></ruby>したときは<ruby>世界一<rt>せかいいち</rt></ruby><ruby>長<rt>なが</rt></ruby>いつり<ruby>橋<rt>ばし</rt></ruby>だった。<ruby>歩<rt>ある</rt></ruby>いてわたれる。",
+ "centralpark": "<ruby>高層<rt>こうそう</rt></ruby>ビルにかこまれた <ruby>大<rt>おお</rt></ruby>きな<ruby>公園<rt>こうえん</rt></ruby>。<ruby>広<rt>ひろ</rt></ruby>さは<ruby>東京ドーム<rt>とうきょうどーむ</rt></ruby><ruby>約<rt>やく</rt></ruby>73<ruby>個<rt>こ</rt></ruby><ruby>分<rt>ぶん</rt></ruby>で、<ruby>池<rt>いけ</rt></ruby>や<ruby>動物園<rt>どうぶつえん</rt></ruby>がある。",
+ "washington": "<ruby>初代<rt>しょだい</rt></ruby><ruby>大統領<rt>だいとうりょう</rt></ruby>ワシントンを<ruby>記念<rt>きねん</rt></ruby>した<ruby>高<rt>たか</rt></ruby>さ169mの<ruby>塔<rt>とう</rt></ruby>。<ruby>白<rt>しろ</rt></ruby>い<ruby>石<rt>いし</rt></ruby>でできていて、<ruby>池<rt>いけ</rt></ruby>にうつる<ruby>姿<rt>すがた</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "waikiki": "ハワイでいちばん<ruby>有名<rt>ゆうめい</rt></ruby>なビーチ。ホテルがならぶ<ruby>浜<rt>はま</rt></ruby>からダイヤモンドヘッドが<ruby>見<rt>み</rt></ruby>え、サーフィンが<ruby>人気<rt>にんき</rt></ruby>。",
+ "kilauea": "<ruby>世界<rt>せかい</rt></ruby>でもっとも<ruby>活発<rt>かっぱつ</rt></ruby>な<ruby>火山<rt>かざん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つ。<ruby>火口<rt>かこう</rt></ruby>から<ruby>溶岩<rt>ようがん</rt></ruby>が<ruby>流れ出<rt>ながれだ</rt></ruby>し、<ruby>新<rt>あたら</rt></ruby>しい<ruby>土地<rt>とち</rt></ruby>を<ruby>作<rt>つく</rt></ruby>りつづけている。",
+ "napali": "カウアイ<ruby>島<rt>とう</rt></ruby>の<ruby>北西<rt>ほくせい</rt></ruby>にそびえる <ruby>緑<rt>みどり</rt></ruby>の<ruby>崖<rt>がけ</rt></ruby>の<ruby>海岸<rt>かいがん</rt></ruby>。<ruby>道<rt>みち</rt></ruby>が<ruby>無<rt>な</rt></ruby>く、<ruby>船<rt>ふね</rt></ruby>やヘリコプターから<ruby>見<rt>み</rt></ruby>る。",
+ "denali": "<ruby>標高<rt>ひょうこう</rt></ruby>6190mで<ruby>北<rt>きた</rt></ruby>アメリカでいちばん<ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>。「<ruby>偉大<rt>いだい</rt></ruby>なもの」という<ruby>意味<rt>いみ</rt></ruby>の<ruby>先住民<rt>せんじゅうみん</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>。",
+ "deathvalley": "<ruby>北<rt>きた</rt></ruby>アメリカでいちばん<ruby>暑<rt>あつ</rt></ruby>く<ruby>低<rt>ひく</rt></ruby>い<ruby>場所<rt>ばしょ</rt></ruby>。<ruby>気温<rt>きおん</rt></ruby>56.7℃の<ruby>世界<rt>せかい</rt></ruby><ruby>記録<rt>きろく</rt></ruby>があり、しま<ruby>模様<rt>もよう</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>の<ruby>丘<rt>おか</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる。",
+ "louise": "<ruby>氷河<rt>ひょうが</rt></ruby>がとけたエメラルド<ruby>色<rt>いろ</rt></ruby>の<ruby>湖<rt>みずうみ</rt></ruby>。カナディアンロッキーの<ruby>山<rt>やま</rt></ruby>にかこまれ、<ruby>湖<rt>みずうみ</rt></ruby>のほとりにホテルがある。",
+ "moraine": "10の<ruby>山<rt>やま</rt></ruby>にかこまれた<ruby>青<rt>あお</rt></ruby>い<ruby>湖<rt>みずうみ</rt></ruby>。<ruby>昔<rt>むかし</rt></ruby>のカナダの20ドル<ruby>札<rt>さつ</rt></ruby>に<ruby>描<rt>えが</rt></ruby>かれていた。",
+ "cntower": "<ruby>高<rt>たか</rt></ruby>さ553mの<ruby>塔<rt>とう</rt></ruby>。1976<ruby>年<rt>ねん</rt></ruby>から30<ruby>年<rt>ねん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby> <ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>塔<rt>とう</rt></ruby>だった。ガラスの<ruby>床<rt>ゆか</rt></ruby>の<ruby>展望台<rt>てんぼうだい</rt></ruby>がある。",
+ "quebec": "<ruby>城壁<rt>じょうへき</rt></ruby>にかこまれた<ruby>北<rt>きた</rt></ruby>アメリカで<ruby>唯一<rt>ゆいいつ</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。お<ruby>城<rt>しろ</rt></ruby>のようなホテルが<ruby>崖<rt>がけ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>立<rt>た</rt></ruby>ち、<ruby>フランス語<rt>ふらんすご</rt></ruby>が<ruby>話<rt>はな</rt></ruby>される。",
+ "tulum": "カリブ<ruby>海<rt>かい</rt></ruby>の<ruby>崖<rt>がけ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>つマヤの<ruby>遺跡<rt>いせき</rt></ruby>。<ruby>青<rt>あお</rt></ruby>い<ruby>海<rt>うみ</rt></ruby>を<ruby>見<rt>み</rt></ruby>おろす<ruby>神殿<rt>しんでん</rt></ruby>があり、ビーチで<ruby>泳<rt>およ</rt></ruby>げる。",
+ "guanajuato": "<ruby>銀<rt>ぎん</rt></ruby>で<ruby>栄<rt>さか</rt></ruby>えた<ruby>山<rt>やま</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。<ruby>色<rt>いろ</rt></ruby>とりどりの<ruby>家<rt>いえ</rt></ruby>が<ruby>谷<rt>たに</rt></ruby>にひしめき、<ruby>町<rt>まち</rt></ruby>の<ruby>下<rt>した</rt></ruby>を<ruby>地下<rt>ちか</rt></ruby><ruby>道<rt>どう</rt></ruby>が<ruby>通<rt>とお</rt></ruby>る。<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "havana": "カラフルな<ruby>古<rt>ふる</rt></ruby>い<ruby>建物<rt>たてもの</rt></ruby>と、1950<ruby>年<rt>ねん</rt></ruby><ruby>代<rt>だい</rt></ruby>の<ruby>アメリカ車<rt>あめりかしゃ</rt></ruby>が<ruby>走<rt>はし</rt></ruby>る<ruby>町<rt>まち</rt></ruby>。<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "panama": "<ruby>太平<rt>たいへい</rt></ruby><ruby>洋<rt>よう</rt></ruby>と<ruby>大西<rt>たいせい</rt></ruby><ruby>洋<rt>よう</rt></ruby>をむすぶ<ruby>全長<rt>ぜんちょう</rt></ruby>80kmの<ruby>運河<rt>うんが</rt></ruby>。<ruby>船<rt>ふね</rt></ruby>を<ruby>水<rt>みず</rt></ruby>の<ruby>階段<rt>かいだん</rt></ruby>(<ruby>閘門<rt>こうもん</rt></ruby>)で<ruby>持ち上<rt>もちあ</rt></ruby>げて<ruby>山<rt>やま</rt></ruby>をこえる。",
+ "arenal": "きれいな<ruby>円<rt>えん</rt></ruby>すいの<ruby>形<rt>かたち</rt></ruby>をした<ruby>火山<rt>かざん</rt></ruby>。ふもとに<ruby>温泉<rt>おんせん</rt></ruby>があり、ジャングルにはナマケモノもいる。",
+ "galapagos": "ゾウガメやイグアナなど めずらしい<ruby>生き物<rt>いきもの</rt></ruby>がくらす<ruby>島々<rt>しまじま</rt></ruby>。ダーウィンが<ruby>進化論<rt>しんかろん</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えるきっかけになった。",
+ "nazca": "<ruby>砂漠<rt>さばく</rt></ruby>に<ruby>描<rt>えが</rt></ruby>かれた <ruby>何百<rt>なんびゃく</rt></ruby>もの<ruby>巨大<rt>きょだい</rt></ruby>な<ruby>絵<rt>え</rt></ruby>。ハチドリやサルなど、<ruby>空<rt>そら</rt></ruby>から<ruby>見<rt>み</rt></ruby>ないと<ruby>形<rt>かたち</rt></ruby>がわからない。",
+ "cusco": "インカ<ruby>帝国<rt>ていこく</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>だった<ruby>町<rt>まち</rt></ruby>。カミソリの<ruby>刃<rt>は</rt></ruby>も<ruby>通<rt>とお</rt></ruby>らないといわれる<ruby>石組<rt>いしぐ</rt></ruby>みの<ruby>壁<rt>かべ</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>る。<ruby>標高<rt>ひょうこう</rt></ruby>3400m。",
+ "titicaca": "<ruby>標高<rt>ひょうこう</rt></ruby>3800mにある「<ruby>船<rt>ふね</rt></ruby>が<ruby>通<rt>とお</rt></ruby>れる いちばん<ruby>高<rt>たか</rt></ruby>い<ruby>湖<rt>みずうみ</rt></ruby>」。アシで<ruby>作<rt>つく</rt></ruby>った<ruby>浮き島<rt>うきしま</rt></ruby>に<ruby>人<rt>ひと</rt></ruby>がくらしている。",
+ "rainbowmtn": "<ruby>赤<rt>あか</rt></ruby>・<ruby>黄<rt>き</rt></ruby>・<ruby>緑<rt>みどり</rt></ruby>・<ruby>青<rt>あお</rt></ruby>など 7<ruby>色<rt>いろ</rt></ruby>のしま<ruby>模様<rt>もよう</rt></ruby>の<ruby>山<rt>やま</rt></ruby>。<ruby>標高<rt>ひょうこう</rt></ruby>5000mを<ruby>歩<rt>ある</rt></ruby>いて<ruby>登<rt>のぼ</rt></ruby>る。",
+ "torres": "3<ruby>本<rt>ぽん</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>の<ruby>塔<rt>とう</rt></ruby>がそびえる パタゴニアの<ruby>国立公園<rt>こくりつこうえん</rt></ruby>。<ruby>氷河<rt>ひょうが</rt></ruby>と<ruby>青<rt>あお</rt></ruby>い<ruby>湖<rt>みずうみ</rt></ruby>、グアナコなどの<ruby>動物<rt>どうぶつ</rt></ruby>がいる。",
+ "atacama": "<ruby>世界<rt>せかい</rt></ruby>でもっとも<ruby>乾<rt>かわ</rt></ruby>いた<ruby>砂漠<rt>さばく</rt></ruby>。「<ruby>月<rt>つき</rt></ruby>の<ruby>谷<rt>たに</rt></ruby>」のような<ruby>風景<rt>ふうけい</rt></ruby>で、<ruby>夜空<rt>よぞら</rt></ruby>がきれいなため<ruby>天文台<rt>てんもんだい</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
+ "caminito": "<ruby>色<rt>いろ</rt></ruby>とりどりにぬられた<ruby>家<rt>いえ</rt></ruby>がならぶ<ruby>通<rt>とお</rt></ruby>り。タンゴが<ruby>生<rt>う</rt></ruby>まれた<ruby>港町<rt>みなとまち</rt></ruby>ボカ<ruby>地区<rt>ちく</rt></ruby>にある。",
+ "sugarloaf": "「<ruby>砂糖<rt>さとう</rt></ruby>パン」という<ruby>意味<rt>いみ</rt></ruby>の<ruby>高<rt>たか</rt></ruby>さ396mの<ruby>岩山<rt>いわやま</rt></ruby>。ロープウェイで<ruby>登<rt>のぼ</rt></ruby>ると、リオの<ruby>海岸<rt>かいがん</rt></ruby>が<ruby>見<rt>み</rt></ruby>わたせる。",
+ "lencois": "<ruby>真っ白<rt>まっしろ</rt></ruby>な<ruby>砂丘<rt>さきゅう</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>に、<ruby>雨季<rt>うき</rt></ruby>だけ<ruby>青<rt>あお</rt></ruby>い<ruby>湖<rt>みずうみ</rt></ruby>がいくつも<ruby>現<rt>あらわ</rt></ruby>れる。「シーツ」という<ruby>意味<rt>いみ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>。",
+ "amazon": "<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>水<rt>みず</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>川<rt>かわ</rt></ruby>。まわりの<ruby>熱帯雨林<rt>ねったいうりん</rt></ruby>は「<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>肺<rt>はい</rt></ruby>」とよばれ、たくさんの<ruby>生き物<rt>いきもの</rt></ruby>がくらす。",
+ "cartagena": "カリブ<ruby>海<rt>かい</rt></ruby>にのぞむ<ruby>城壁<rt>じょうへき</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。カラフルな<ruby>家<rt>いえ</rt></ruby>とバルコニーが、スペイン<ruby>時代<rt>じだい</rt></ruby>のまま<ruby>残<rt>のこ</rt></ruby>る。",
+ "twelveapostles": "<ruby>海<rt>うみ</rt></ruby>にそびえる<ruby>石灰岩<rt>せっかいがん</rt></ruby>の<ruby>柱<rt>はしら</rt></ruby>。グレート・オーシャン・ロードのハイライトで、<ruby>波<rt>なみ</rt></ruby>にけずられて<ruby>数<rt>かず</rt></ruby>がへっている。",
+ "bluemountains": "ユーカリの<ruby>森<rt>もり</rt></ruby>がつづく<ruby>山地<rt>さんち</rt></ruby>。3<ruby>本<rt>ぽん</rt></ruby>の<ruby>岩<rt>いわ</rt></ruby>「スリー・シスターズ」が<ruby>有名<rt>ゆうめい</rt></ruby>で、<ruby>森<rt>もり</rt></ruby>が<ruby>青<rt>あお</rt></ruby>くかすんで<ruby>見<rt>み</rt></ruby>える。",
+ "whitehaven": "7kmつづく<ruby>真っ白<rt>まっしろ</rt></ruby>な<ruby>砂浜<rt>すなはま</rt></ruby>。<ruby>砂<rt>すな</rt></ruby>は98%がシリカで、<ruby>雪<rt>ゆき</rt></ruby>のように<ruby>白<rt>しろ</rt></ruby>く さらさらしている。",
+ "tekapo": "ミルキーブルーの<ruby>湖<rt>みずうみ</rt></ruby>のほとりに<ruby>小<rt>ちい</rt></ruby>さな<ruby>石<rt>いし</rt></ruby>の<ruby>教会<rt>きょうかい</rt></ruby>が<ruby>建<rt>た</rt></ruby>つ。<ruby>夜空<rt>よぞら</rt></ruby>がきれいで、<ruby>星空<rt>ほしぞら</rt></ruby>の<ruby>保護区<rt>ほごく</rt></ruby>。",
+ "mtcook": "<ruby>標高<rt>ひょうこう</rt></ruby>3724mでニュージーランドの<ruby>最高峰<rt>さいこうほう</rt></ruby>。<ruby>氷河<rt>ひょうが</rt></ruby>をたたえ、<ruby>先住民<rt>せんじゅうみん</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>で「<ruby>雲<rt>くも</rt></ruby>をつきぬける<ruby>山<rt>やま</rt></ruby>」。",
+ "rotorua": "<ruby>温泉<rt>おんせん</rt></ruby>と<ruby>間欠泉<rt>かんけつせん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。「ポフツ」の<ruby>間欠泉<rt>かんけつせん</rt></ruby>は<ruby>高<rt>たか</rt></ruby>さ30mまで<ruby>湯<rt>ゆ</rt></ruby>をふき<ruby>上<rt>あ</rt></ruby>げる。マオリの<ruby>文化<rt>ぶんか</rt></ruby>も<ruby>体験<rt>たいけん</rt></ruby>できる。",
+ "borabora": "<ruby>青<rt>あお</rt></ruby>いラグーンにかこまれた<ruby>火山<rt>かざん</rt></ruby>の<ruby>島<rt>しま</rt></ruby>。<ruby>水上<rt>すいじょう</rt></ruby>コテージが<ruby>並<rt>なら</rt></ruby>ぶ「<ruby>太平<rt>たいへい</rt></ruby><ruby>洋<rt>よう</rt></ruby>の<ruby>真珠<rt>しんじゅ</rt></ruby>」。"
 };
 /* RUBY-END */
+/* Googleマップで ひらく(登録も お金も いらない ふつうのリンク) */
+function gmapUrl(q){ return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q.n + " " + q.c.replace(/・/g, " ")); }
+function gmapLink(q){ return '<a class="gmap" href="' + gmapUrl(q) + '" target="_blank" rel="noopener">🗺 Googleマップで見る</a>'; }
+/* 名所の 緯度・経度(世界一周マップの ピンの位置)。地図は 北緯84度〜南緯60度 を 横長に切ったもの */
+const LATLON = {};
+"eiffel 48.86 2.29|liberty 40.69 -74.04|pyramid 29.98 31.13|wall 40.43 116.57|taj 27.17 78.04|fuji 35.36 138.73|colosseum 41.89 12.49|machu -13.16 -72.55|opera -33.86 151.21|bigben 51.50 -0.12|sagrada 41.40 2.17|angkor 13.41 103.87|pisa 43.72 10.40|arc 48.87 2.30|moai -27.12 -109.35|golden 37.82 -122.48|castle 47.56 10.75|basil 55.75 37.62|stone 51.18 -1.83|kinkaku 35.04 135.73|uluru -25.34 131.04|petra 30.33 35.44|mtsaint 48.64 -1.51|versailles 48.80 2.12|notredame 48.85 2.35|peter 41.90 12.45|venice 45.44 12.33|florence 43.77 11.26|pompeii 40.75 14.49|parthenon 37.97 23.73|santorini 36.46 25.38|alhambra 37.18 -3.59|towerbridge 51.51 -0.08|edinburgh 55.95 -3.20|brandenburg 52.52 13.38|cologne 50.94 6.96|charles 50.09 14.41|matterhorn 45.98 7.66|hagia 41.01 28.98|cappadocia 38.64 34.83|schonbrunn 48.18 16.31|kinderdijk 51.88 4.64|britishmuseum 51.52 -0.13|trevi 41.90 12.48|kiyomizu 34.99 135.78|itsukushima 34.30 132.32|himeji 34.84 134.69|todaiji 34.69 135.84|nikko 36.76 139.60|skytree 35.71 139.81|tokyotower 35.66 139.75|fushimi 34.97 135.77|shirakawa 36.26 136.91|genbaku 34.40 132.45|yakushima 30.36 130.53|forbidden 39.92 116.40|terracotta 34.38 109.28|potala 29.66 91.12|guilin 25.27 110.29|borobudur -7.61 110.20|halong 20.91 107.18|watarun 13.74 100.49|bagan 21.17 94.86|everest 27.99 86.93|goldentemple 31.62 74.88|shwedagon 16.80 96.15|victoria -17.92 25.86|kilimanjaro -3.07 37.35|sahara 23.40 13.00|tablemtn -33.96 18.40|abusimbel 22.34 31.63|sphinx 29.98 31.14|baobab -20.25 44.42|grandcanyon 36.10 -112.10|niagara 43.08 -79.07|rushmore 43.88 -103.46|yellowstone 44.43 -110.59|whitehouse 38.90 -77.04|empire 40.75 -73.99|chichen 20.68 -88.57|christ -22.95 -43.21|iguazu -25.69 -54.44|uyuni -20.13 -67.49|teotihuacan 19.69 -98.84|perito -50.50 -73.05|monument 36.98 -110.11|angel 5.97 -62.54|reef -18.29 147.70|milford -44.67 167.93|harbour -33.85 151.21|milan 45.46 9.19|buckingham 51.50 -0.14|hallstatt 47.56 13.65|bluemosque 41.01 28.98|diamondhead 21.26 -157.81|londoneye 51.50 -0.12|westminster 51.50 -0.13|budapest 47.51 19.05|kamakura 35.32 139.54|antelope 36.86 -111.37".split("|").forEach(s => { const [k,la,lo] = s.split(" "); LATLON[k] = [+la, +lo]; });
+/* 名所の追加ぶん(tools/spots-*.tsv から tools/add_spots.py が作る。手で直さない) SPOTS-MORE-START */
+SPOTS.push(
+  {n:"知床", c:"日本・北海道", r:"しれとこ", art:"shiretoko", d:"北海道の東のはしにある半島。ヒグマやシャチなど たくさんの野生動物がすみ、世界自然遺産になっている。"},
+  {n:"五稜郭", c:"日本・北海道・函館", r:"ごりょうかく", art:"goryokaku", d:"星の形をした 江戸時代の終わりの城。春には約1500本の桜がさき、タワーから星形がよく見える。"},
+  {n:"小樽運河", c:"日本・北海道・小樽", r:"おたるうんが", art:"otaru", d:"1923年にできた運河。石造りの倉庫がならび、夕方にはガス灯がともる。"},
+  {n:"富良野のラベンダー畑", c:"日本・北海道", r:"ふらののらべんだーばたけ", art:"furano", d:"7月に紫色のラベンダーが一面にさく。北海道のまん中にあり「へそのまち」ともよばれる。"},
+  {n:"美瑛の丘", c:"日本・北海道", r:"びえいのおか", art:"biei", d:"ゆるやかな丘が波のようにつづく風景。畑の色がパッチワークのように見える。"},
+  {n:"弘前城", c:"日本・青森・弘前", r:"ひろさきじょう", art:"hirosaki", d:"江戸時代の天守が残る城。春の桜まつりでは 約2600本の桜がさき、お堀が花びらでピンクにそまる。"},
+  {n:"奥入瀬渓流", c:"日本・青森", r:"おいらせけいりゅう", art:"oirase", d:"十和田湖から流れ出す 約14kmの渓流。苔むした岩と いくつもの滝がつづき、秋は紅葉がきれい。"},
+  {n:"十和田湖", c:"日本・青森・秋田", r:"とわだこ", art:"towada", d:"青森と秋田にまたがる火山の湖。深さは約327mで日本で3番目。"},
+  {n:"中尊寺", c:"日本・岩手・平泉", r:"ちゅうそんじ", art:"chusonji", d:"平安時代に奥州藤原氏が建てた寺。金色堂は全体が金ぱくでかざられていて、世界遺産になっている。"},
+  {n:"松島", c:"日本・宮城", r:"まつしま", art:"matsushima", d:"260あまりの小さな島がうかぶ湾。日本三景の一つで、松がはえた島々を船からながめられる。"},
+  {n:"山寺", c:"日本・山形", r:"やまでら", art:"yamadera", d:"正しくは立石寺。1015段の石段を登った先に お堂がある。松尾芭蕉が「閑さや岩にしみ入る蝉の声」とよんだ。"},
+  {n:"蔵王の樹氷", c:"日本・山形", r:"ざおうのじゅひょう", art:"zao", d:"冬に木が雪と氷におおわれてできる「スノーモンスター」。ロープウェイからながめられる。"},
+  {n:"銀山温泉", c:"日本・山形", r:"ぎんざんおんせん", art:"ginzan", d:"大正時代の木造の旅館が川ぞいにならぶ温泉街。雪の日にガス灯がともる風景が人気。"},
+  {n:"角館の武家屋敷", c:"日本・秋田", r:"かくのだてのぶけやしき", art:"kakunodate", d:"江戸時代の武士の家が残る町。春はしだれ桜が通りをおおい「みちのくの小京都」とよばれる。"},
+  {n:"鶴ヶ城", c:"日本・福島・会津若松", r:"つるがじょう", art:"tsuruga", d:"会津若松のシンボルの城。幕末の戊辰戦争で一か月こもって戦った。赤い瓦の天守は日本でめずらしい。"},
+  {n:"大内宿", c:"日本・福島", r:"おおうちじゅく", art:"ouchijuku", d:"江戸時代の宿場町。かやぶき屋根の家が道の両側にならび、ねぎ1本で食べる「ねぎそば」で有名。"},
+  {n:"浅草寺", c:"日本・東京", r:"せんそうじ", art:"sensoji", d:"東京でいちばん古い寺。入り口の雷門には 大きな赤いちょうちんが下がり、仲見世通りには お店がならぶ。"},
+  {n:"明治神宮", c:"日本・東京", r:"めいじじんぐう", art:"meiji", d:"明治天皇をまつる神社。都会のまん中にありながら 約10万本の木がしげる森に包まれている。"},
+  {n:"渋谷スクランブル交差点", c:"日本・東京", r:"しぶやすくらんぶるこうさてん", art:"shibuya", d:"一度に3000人が横断するといわれる 世界でいちばん有名な交差点。信号が変わると人が四方から歩き出す。"},
+  {n:"東京駅", c:"日本・東京", r:"とうきょうえき", art:"tokyostation", d:"1914年にできた赤レンガの駅。丸の内側の駅舎は 戦争でこわれた屋根を2012年に元の姿にもどした。"},
+  {n:"皇居", c:"日本・東京", r:"こうきょ", art:"kokyo", d:"天皇のすまい。江戸城のあとに建てられ、二重橋や石垣、広いお堀が残っている。"},
+  {n:"横浜みなとみらい", c:"日本・神奈川・横浜", r:"よこはまみなとみらい", art:"minatomirai", d:"港のそばの新しい街。高さ296mのランドマークタワーや 大観覧車があり、赤レンガ倉庫も近い。"},
+  {n:"江の島", c:"日本・神奈川", r:"えのしま", art:"enoshima", d:"湘南の海にうかぶ小さな島。橋でわたれて、展望灯台からは富士山が見える。"},
+  {n:"芦ノ湖", c:"日本・神奈川・箱根", r:"あしのこ", art:"ashinoko", d:"箱根にある火山の湖。海賊船の形の遊覧船が走り、湖の向こうに富士山が見える。"},
+  {n:"華厳の滝", c:"日本・栃木・日光", r:"けごんのたき", art:"kegon", d:"高さ97mを一気に落ちる滝。中禅寺湖の水が流れ落ちていて、日本三名瀑の一つ。"},
+  {n:"草津温泉", c:"日本・群馬", r:"くさつおんせん", art:"kusatsu", d:"日本を代表する温泉の一つ。まん中の「湯畑」から 毎分4000リットルの湯がわき出している。"},
+  {n:"袋田の滝", c:"日本・茨城", r:"ふくろだのたき", art:"fukuroda", d:"高さ120m、幅73mの大きな滝。4段に分かれて落ちるので「四度の滝」ともよばれ、冬はこおる。"},
+  {n:"松本城", c:"日本・長野・松本", r:"まつもとじょう", art:"matsumoto", d:"黒い壁から「烏城」とよばれる城。天守は約400年前のもので、国宝。うしろに北アルプスが見える。"},
+  {n:"善光寺", c:"日本・長野", r:"ぜんこうじ", art:"zenkoji", d:"約1400年の歴史をもつ寺。宗派をこえて だれでもお参りでき、暗い回廊を歩く「お戒壇めぐり」で知られる。"},
+  {n:"上高地", c:"日本・長野", r:"かみこうち", art:"kamikochi", d:"北アルプスのふもとの高原。梓川にかかる河童橋から 穂高の山々が見える。車では入れない。"},
+  {n:"雪の大谷", c:"日本・富山", r:"ゆきのおおたに", art:"yukinootani", d:"立山黒部アルペンルートの春の名物。道の両側に高さ20m近い雪の壁がそびえる。"},
+  {n:"黒部ダム", c:"日本・富山", r:"くろべだむ", art:"kurobe", d:"高さ186mで日本一高いダム。7年かけて造られ、夏には毎秒10トン以上の水を放水する。"},
+  {n:"兼六園", c:"日本・石川・金沢", r:"けんろくえん", art:"kenrokuen", d:"加賀の殿様が作った庭園。日本三名園の一つ。冬は雪から木を守る「雪づり」の風景が有名。"},
+  {n:"白米千枚田", c:"日本・石川・能登", r:"しろよねせんまいだ", art:"senmaida", d:"海にむかう斜面に 1000枚以上の小さな田んぼがならぶ棚田。日本の棚田百選の一つ。"},
+  {n:"東尋坊", c:"日本・福井", r:"とうじんぼう", art:"tojinbo", d:"高さ約25mの岩の崖が 1kmつづく。柱のように割れた岩は 世界でも3か所しかないめずらしい形。"},
+  {n:"三保松原", c:"日本・静岡", r:"みほのまつばら", art:"miho", d:"約3万本の松がつづく海岸。海の向こうに富士山が見え、富士山の世界遺産の一部になっている。"},
+  {n:"河口湖", c:"日本・山梨", r:"かわぐちこ", art:"kawaguchiko", d:"富士五湖の一つ。湖に富士山がうつる「逆さ富士」が見られ、春のしば桜や秋の紅葉も人気。"},
+  {n:"名古屋城", c:"日本・愛知・名古屋", r:"なごやじょう", art:"nagoyajo", d:"徳川家康が建てた城。天守の屋根には 金のしゃちほこが2つのっていて、名古屋のシンボル。"},
+  {n:"犬山城", c:"日本・愛知・犬山", r:"いぬやまじょう", art:"inuyama", d:"木曽川のほとりの小高い丘に建つ城。天守は日本でもっとも古いものの一つで、国宝。"},
+  {n:"高山の古い町並み", c:"日本・岐阜・高山", r:"たかやまのふるいまちなみ", art:"takayama", d:"江戸時代の商人の家がならぶ町。「飛驒の小京都」とよばれ、朝市や春秋の高山祭でにぎわう。"},
+  {n:"伊勢神宮", c:"日本・三重・伊勢", r:"いせじんぐう", art:"ise", d:"日本でもっとも大切な神社の一つ。20年ごとに社殿を建てかえる「式年遷宮」を1300年つづけている。"},
+  {n:"大阪城", c:"日本・大阪", r:"おおさかじょう", art:"osakajo", d:"豊臣秀吉が建てた城。今の天守は1931年に建て直したもので、緑の屋根と金のかざりが目立つ。"},
+  {n:"道頓堀", c:"日本・大阪", r:"どうとんぼり", art:"dotonbori", d:"大阪でいちばんにぎやかな繁華街。川ぞいに大きな看板がならび、たこ焼きや串カツの店が多い。"},
+  {n:"通天閣", c:"日本・大阪", r:"つうてんかく", art:"tsutenkaku", d:"大阪・新世界にある高さ108mの塔。1912年にパリのエッフェル塔をまねて建てられた。"},
+  {n:"平等院鳳凰堂", c:"日本・京都・宇治", r:"びょうどういんほうおうどう", art:"byodoin", d:"1053年に建てられた お堂。池にうつる姿が美しく、10円玉のデザインになっている。"},
+  {n:"法隆寺", c:"日本・奈良", r:"ほうりゅうじ", art:"horyuji", d:"聖徳太子が建てた寺。五重塔などは 世界でもっとも古い木造の建物で、日本で最初に世界遺産になった。"},
+  {n:"春日大社", c:"日本・奈良", r:"かすがたいしゃ", art:"kasuga", d:"奈良公園の森の中にある神社。約3000基の灯籠がならび、まわりには神の使いとされる鹿がいる。"},
+  {n:"二条城", c:"日本・京都", r:"にじょうじょう", art:"nijo", d:"徳川家康が京都に建てた城。廊下を歩くとキュッキュッと鳴る「うぐいす張り」が有名。"},
+  {n:"銀閣寺", c:"日本・京都", r:"ぎんかくじ", art:"ginkaku", d:"足利義政が建てた寺。銀ははられていないが、しずかな庭と 砂を盛った「向月台」が美しい。"},
+  {n:"嵐山の竹林", c:"日本・京都", r:"あらしやまのちくりん", art:"arashiyama", d:"高さ10m以上の竹が両側にそびえる小道。風で竹がゆれる音が「日本の音風景100選」に選ばれている。"},
+  {n:"天橋立", c:"日本・京都", r:"あまのはしだて", art:"amanohashidate", d:"海の上に約3.6kmのびる細長い砂の道。日本三景の一つで、またの間からのぞく「股のぞき」で有名。"},
+  {n:"高野山", c:"日本・和歌山", r:"こうやさん", art:"koyasan", d:"空海が1200年前に開いた 仏教の聖地。山の上に100以上の寺があり、お寺にとまることができる。"},
+  {n:"那智の滝", c:"日本・和歌山", r:"なちのたき", art:"nachi", d:"高さ133mで日本一の落差をほこる滝。滝そのものが神様としてまつられ、三重塔とならぶ風景が有名。"},
+  {n:"彦根城", c:"日本・滋賀・彦根", r:"ひこねじょう", art:"hikone", d:"琵琶湖のほとりに立つ城。天守は国宝で、ゆるキャラ「ひこにゃん」でも有名。"},
+  {n:"吉野山の桜", c:"日本・奈良", r:"よしのやまのさくら", art:"yoshino", d:"山ぜんたいに約3万本の桜がさく。ふもとから順に「下千本・中千本・上千本・奥千本」とよぶ。"},
+  {n:"竹田城跡", c:"日本・兵庫", r:"たけだじょうせき", art:"takeda", d:"山の上に石垣だけが残る城あと。秋の朝、雲海にうかぶ姿から「天空の城」とよばれる。"},
+  {n:"明石海峡大橋", c:"日本・兵庫", r:"あかしかいきょうおおはし", art:"akashi", d:"神戸と淡路島をむすぶ橋。主塔の間は1991mで、世界でもっとも長いつり橋の一つ。"},
+  {n:"出雲大社", c:"日本・島根", r:"いずもたいしゃ", art:"izumo", d:"縁むすびの神様をまつる神社。神楽殿の大しめなわは長さ13m、重さ約5トンもある。"},
+  {n:"鳥取砂丘", c:"日本・鳥取", r:"とっとりさきゅう", art:"tottori", d:"東西16kmにひろがる日本最大級の砂丘。風がつくる風紋が美しく、ラクダに乗ることもできる。"},
+  {n:"松江城", c:"日本・島根・松江", r:"まつえじょう", art:"matsue", d:"宍道湖のそばに立つ城。天守は国宝で、黒い板の壁から「千鳥城」ともよばれる。"},
+  {n:"岡山後楽園", c:"日本・岡山", r:"おかやまこうらくえん", art:"korakuen", d:"岡山の殿様が作った庭園。日本三名園の一つで、広い芝生と池の向こうに岡山城が見える。"},
+  {n:"倉敷美観地区", c:"日本・岡山・倉敷", r:"くらしきびかんちく", art:"kurashiki", d:"白い壁の蔵と柳の並木が川ぞいにつづく町。江戸時代に米を運んだ川で、小舟に乗って見物できる。"},
+  {n:"錦帯橋", c:"日本・山口・岩国", r:"きんたいきょう", art:"kintaikyo", d:"5つのアーチがつらなる木の橋。1673年に作られ、くぎをほとんど使わない組み方で有名。"},
+  {n:"秋吉台", c:"日本・山口", r:"あきよしだい", art:"akiyoshidai", d:"日本最大のカルスト台地。草原に白い石灰岩がいくつも顔を出し、地下には秋芳洞という大きな鍾乳洞がある。"},
+  {n:"元乃隅神社", c:"日本・山口", r:"もとのすみじんじゃ", art:"motonosumi", d:"海にむかって123基の赤い鳥居がならぶ神社。アメリカのテレビで「日本の美しい場所」に選ばれた。"},
+  {n:"角島大橋", c:"日本・山口", r:"つのしまおおはし", art:"tsunoshima", d:"エメラルド色の海の上を 約1780mまっすぐのびる橋。CMや映画によく登場する。"},
+  {n:"道後温泉", c:"日本・愛媛・松山", r:"どうごおんせん", art:"dogo", d:"3000年の歴史があるといわれる日本最古の温泉。本館の木造の建物は 国の重要文化財。"},
+  {n:"松山城", c:"日本・愛媛・松山", r:"まつやまじょう", art:"matsuyama", d:"松山の街のまん中の山にたつ城。江戸時代の天守が残る12の城の一つで、ロープウェイで登れる。"},
+  {n:"金刀比羅宮", c:"日本・香川", r:"ことひらぐう", art:"kotohira", d:"「こんぴらさん」の名で親しまれる神社。本宮まで785段、奥社まで1368段の石段を登る。"},
+  {n:"鳴門の渦潮", c:"日本・徳島", r:"なるとのうずしお", art:"naruto", d:"潮の流れがぶつかってできる大きなうず。直径は最大20mにもなり、橋の上や船から見られる。"},
+  {n:"桂浜", c:"日本・高知", r:"かつらはま", art:"katsurahama", d:"太平洋にむかう弓なりの浜。丘の上には 坂本龍馬の大きな像が海をながめて立っている。"},
+  {n:"四万十川", c:"日本・高知", r:"しまんとがわ", art:"shimanto", d:"「日本最後の清流」とよばれる川。大水のとき水にしずむ「沈下橋」がいくつもかかっている。"},
+  {n:"祖谷のかずら橋", c:"日本・徳島", r:"いやのかずらばし", art:"kazurabashi", d:"山の谷にかかる 植物のつるで編んだ橋。長さ45mで、足元のすき間から川が見えてスリルがある。"},
+  {n:"太宰府天満宮", c:"日本・福岡", r:"だざいふてんまんぐう", art:"dazaifu", d:"学問の神様・菅原道真をまつる神社。受験生が多くおとずれ、名物は「梅ヶ枝餅」。"},
+  {n:"軍艦島", c:"日本・長崎", r:"ぐんかんじま", art:"gunkanjima", d:"正しくは端島。海底の炭鉱で栄えた小さな島で、高いビルがならぶ姿が軍艦に見える。今は無人島。"},
+  {n:"グラバー園", c:"日本・長崎", r:"ぐらばーえん", art:"glover", d:"幕末に長崎で貿易をしたイギリス人グラバーの家。日本に残る いちばん古い木造の西洋の家。"},
+  {n:"長崎平和公園", c:"日本・長崎", r:"ながさきへいわこうえん", art:"nagasakipeace", d:"原爆が落とされた場所の近くにある公園。高さ9.7mの平和祈念像が、天を指し 平和をねがっている。"},
+  {n:"熊本城", c:"日本・熊本", r:"くまもとじょう", art:"kumamotojo", d:"加藤清正が建てた城。「武者返し」とよばれる高い石垣で知られ、2016年の地震から修理が進んでいる。"},
+  {n:"阿蘇山", c:"日本・熊本", r:"あそさん", art:"aso", d:"世界最大級のカルデラをもつ火山。中岳の火口からは今も白い煙が上がり、草原では牛や馬が草を食べる。"},
+  {n:"別府温泉", c:"日本・大分・別府", r:"べっぷおんせん", art:"beppu", d:"湯の量が日本一の温泉。「地獄めぐり」では、青い海地獄や赤い血の池地獄などをめぐる。"},
+  {n:"由布院", c:"日本・大分", r:"ゆふいん", art:"yufuin", d:"由布岳のふもとにある温泉の町。朝に霧がわく金鱗湖や、おしゃれなお店がならぶ通りが人気。"},
+  {n:"高千穂峡", c:"日本・宮崎", r:"たかちほきょう", art:"takachiho", d:"阿蘇の溶岩が川にけずられてできた谷。ボートに乗って真名井の滝を見上げられる。"},
+  {n:"桜島", c:"日本・鹿児島", r:"さくらじま", art:"sakurajima", d:"鹿児島の町の目の前にある活火山。今もよく噴火して灰をふらせる。1914年の噴火で大隅半島と陸つづきになった。"},
+  {n:"首里城", c:"日本・沖縄・那覇", r:"しゅりじょう", art:"shuri", d:"琉球王国の王のすまいだった城。赤い正殿は2019年の火事で焼け、今 建て直しが進んでいる。"},
+  {n:"竹富島", c:"日本・沖縄", r:"たけとみじま", art:"taketomi", d:"赤い瓦の家と白い砂の道、石垣がつづく 昔ながらの沖縄の島。水牛車でゆっくり回れる。"},
+  {n:"川平湾", c:"日本・沖縄・石垣島", r:"かびらわん", art:"kabira", d:"石垣島にある 白い砂とエメラルドグリーンの海の湾。グラスボートからサンゴや魚が見える。"},
+  {n:"シャンボール城", c:"フランス", r:"しゃんぼーるじょう", art:"chambord", d:"ロワール川の近くに建つ フランス最大の城。二重のらせん階段は レオナルド・ダ・ヴィンチが考えたともいわれる。"},
+  {n:"カルカソンヌ", c:"フランス", r:"かるかそんぬ", art:"carcassonne", d:"二重の城壁にかこまれた中世の城塞都市。52の塔があり、ヨーロッパ最大級。世界遺産。"},
+  {n:"エトルタの断崖", c:"フランス", r:"えとるたのだんがい", art:"etretat", d:"海にむかう白い崖に、波がけずった大きなアーチがある。画家モネがくり返し描いた風景。"},
+  {n:"ニース", c:"フランス", r:"にーす", art:"nice", d:"地中海にのぞむ 南フランスのリゾート地。青い海ぞいの「プロムナード・デ・ザングレ」を人々が散歩する。"},
+  {n:"ストラスブール大聖堂", c:"フランス", r:"すとらすぶーるだいせいどう", art:"strasbourg", d:"高さ142mの塔をもつ大聖堂。赤みがかった石でできていて、中には天文時計がある。"},
+  {n:"アマルフィ海岸", c:"イタリア", r:"あまるふぃかいがん", art:"amalfi", d:"崖にカラフルな家がはりつくように建つ海岸。レモンの名産地で、世界遺産。"},
+  {n:"チンクエ・テッレ", c:"イタリア", r:"ちんくえてっれ", art:"cinqueterre", d:"「5つの村」という意味。海にせまる崖に色とりどりの家が建ち、村と村は歩道と電車でむすばれている。"},
+  {n:"パンテオン", c:"イタリア・ローマ", r:"ぱんておん", art:"pantheon", d:"約1900年前に建てられた ローマの神殿。丸い天井のまん中に穴があいていて、そこから光が入る。"},
+  {n:"スペイン広場", c:"イタリア・ローマ", r:"すぺいんひろば", art:"spanishsteps", d:"135段の階段がある広場。映画「ローマの休日」でヒロインがジェラートを食べた場所として有名。"},
+  {n:"ドロミテ", c:"イタリア", r:"どろみて", art:"dolomites", d:"北イタリアのアルプス。ギザギザの岩山がそびえ、夕日で岩がピンクにそまる。世界自然遺産。"},
+  {n:"ユングフラウヨッホ", c:"スイス", r:"ゆんぐふらうよっほ", art:"jungfrau", d:"標高3454mにある ヨーロッパでいちばん高い駅。登山電車で登れて、氷河と雪の山を見わたせる。"},
+  {n:"ルツェルンのカペル橋", c:"スイス", r:"るつぇるんのかぺるばし", art:"lucerne", d:"14世紀にかけられた 屋根つきの木の橋。ヨーロッパ最古の木の橋の一つで、花でかざられている。"},
+  {n:"モンブラン", c:"フランス・イタリア", r:"もんぶらん", art:"montblanc", d:"標高4808mで アルプスの最高峰。「白い山」という意味で、ふもとのシャモニーから ロープウェイで近づける。"},
+  {n:"ローテンブルク", c:"ドイツ", r:"ろーてんぶるく", art:"rothenburg", d:"中世の町並みがそのまま残る町。城壁にかこまれ、カラフルな木組みの家がならぶ。"},
+  {n:"ハイデルベルク城", c:"ドイツ", r:"はいでるべるくじょう", art:"heidelberg", d:"川を見おろす丘に建つ 赤い石の城あと。中には約22万リットルも入る世界最大級のワインだるがある。"},
+  {n:"ドレスデンのフラウエン教会", c:"ドイツ", r:"どれすでんのふらうえんきょうかい", art:"dresden", d:"戦争でくずれた教会を、がれきの石を使って2005年に建て直した。黒い石が元の部分。"},
+  {n:"ベルリンの壁", c:"ドイツ", r:"べるりんのかべ", art:"berlinwall", d:"1961年から1989年まで 東西ベルリンを分けていた壁。今も一部が残り、歴史を伝えている。"},
+  {n:"ウィンザー城", c:"イギリス", r:"うぃんざーじょう", art:"windsor", d:"約1000年前から使われている 世界最古で最大の「今も人が住む城」。イギリス国王の住まいの一つ。"},
+  {n:"コッツウォルズ", c:"イギリス", r:"こっつうぉるず", art:"cotswolds", d:"はちみつ色の石の家がならぶ 田園地帯。「イギリスでいちばん美しい村」とよばれるバイブリーがある。"},
+  {n:"セブン・シスターズ", c:"イギリス", r:"せぶんしすたーず", art:"sevensisters", d:"白い崖が7つの波のようにつづく海岸。チョークでできていて、海からよく目立つ。"},
+  {n:"湖水地方", c:"イギリス", r:"こすいちほう", art:"lakedistrict", d:"湖と山がつづく美しい地方。「ピーターラビット」の作者がここに住み、物語の舞台にした。"},
+  {n:"ジャイアンツ・コーズウェイ", c:"イギリス・北アイルランド", r:"じゃいあんつこーずうぇい", art:"giantscauseway", d:"六角形の柱の岩が約4万本もならぶ海岸。火山の溶岩が冷えてできた。「巨人の道」という意味。"},
+  {n:"モハーの断崖", c:"アイルランド", r:"もはーのだんがい", art:"moher", d:"高さ最大214m、長さ8kmの崖が大西洋にそびえる。アイルランドでいちばん人気の観光地。"},
+  {n:"ネス湖", c:"イギリス・スコットランド", r:"ねすこ", art:"lochness", d:"怪獣「ネッシー」の伝説で有名な細長い湖。深さは約230mあり、ほとりに古い城あとが立つ。"},
+  {n:"ワルシャワ旧市街", c:"ポーランド", r:"わるしゃわきゅうしがい", art:"warsaw", d:"戦争でほとんどこわされた町を、絵や写真をもとに元どおりに建て直した。その努力で世界遺産になった。"},
+  {n:"クラクフ旧市街", c:"ポーランド", r:"くらくふきゅうしがい", art:"krakow", d:"ポーランドの古い都。ヨーロッパ最大級の中世の広場があり、まん中に織物会館が建つ。"},
+  {n:"メテオラ", c:"ギリシャ", r:"めておら", art:"meteora", d:"高さ数百mの岩の柱の上に建つ修道院。「空中にうかぶ」という意味で、昔は はしごやロープで登った。"},
+  {n:"ミコノス島", c:"ギリシャ", r:"みこのすとう", art:"mykonos", d:"白い壁と青い屋根の家、丘の上の風車で知られる島。エーゲ海の「白い宝石」とよばれる。"},
+  {n:"エフェソス", c:"トルコ", r:"えふぇそす", art:"ephesus", d:"古代ギリシャ・ローマの大きな都市のあと。図書館のりっぱな正面や、2万5千人が入った劇場が残る。"},
+  {n:"パムッカレ", c:"トルコ", r:"ぱむっかれ", art:"pamukkale", d:"温泉の石灰がつもってできた 真っ白な段々の池。「綿の城」という意味で、青い水がたまる。"},
+  {n:"クレムリン", c:"ロシア・モスクワ", r:"くれむりん", art:"kremlin", d:"ロシアの大統領がいる 城壁にかこまれた宮殿。赤い壁と金の塔、大きな時計のスパスカヤ塔がある。"},
+  {n:"エルミタージュ美術館", c:"ロシア・サンクトペテルブルク", r:"えるみたーじゅびじゅつかん", art:"hermitage", d:"皇帝の宮殿(冬宮)を使った 世界最大級の美術館。約300万点の作品を持ち、緑と白の建物が美しい。"},
+  {n:"ヘルシンキ大聖堂", c:"フィンランド", r:"へるしんきだいせいどう", art:"helsinki", d:"白い壁に緑のドームの教会。高い階段の上に建ち、ヘルシンキのシンボル。"},
+  {n:"タリン旧市街", c:"エストニア", r:"たりんきゅうしがい", art:"tallinn", d:"中世の城壁と塔がそのまま残る町。「おとぎの国」のような赤い屋根の町並みが世界遺産。"},
+  {n:"ニューハウン", c:"デンマーク・コペンハーゲン", r:"にゅーはうん", art:"nyhavn", d:"色とりどりの古い家が運河ぞいにならぶ港。童話作家アンデルセンもここに住んでいた。"},
+  {n:"ガムラスタン", c:"スウェーデン・ストックホルム", r:"がむらすたん", art:"gamlastan", d:"ストックホルムの古い町。島の上に中世の細い道と 色のちがう建物がならび、王宮もある。"},
+  {n:"ガイランゲルフィヨルド", c:"ノルウェー", r:"がいらんげるふぃよるど", art:"geiranger", d:"氷河がけずった深い入り江。両側に高い崖がせまり、「七姉妹」など たくさんの滝が落ちる。世界遺産。"},
+  {n:"プレーケストーレン", c:"ノルウェー", r:"ぷれーけすとーれん", art:"preikestolen", d:"フィヨルドの上 高さ604mにつき出した 平らな岩。「説教壇」という意味で、歩いて登れる。"},
+  {n:"ブルーラグーン", c:"アイスランド", r:"ぶるーらぐーん", art:"bluelagoon", d:"地熱発電所の湯を使った 世界最大級の露天風呂。ミルクのような青白い湯で、溶岩にかこまれている。"},
+  {n:"グトルフォス", c:"アイスランド", r:"ぐとるふぉす", art:"gullfoss", d:"2段に落ちる大きな滝。「黄金の滝」という意味で、晴れた日には虹がかかる。"},
+  {n:"ドブロブニク", c:"クロアチア", r:"どぶろぶにく", art:"dubrovnik", d:"「アドリア海の真珠」とよばれる 城壁にかこまれた町。オレンジ色の屋根がならび、城壁の上を歩ける。"},
+  {n:"プリトヴィツェ湖群", c:"クロアチア", r:"ぷりとゔぃつぇこぐん", art:"plitvice", d:"16の湖が滝でつながり、階段のように流れ落ちる。水はエメラルド色で、木の道を歩いて回る。"},
+  {n:"グラン・プラス", c:"ベルギー・ブリュッセル", r:"ぐらんぷらす", art:"brussels", d:"金でかざられた古い建物にかこまれた広場。2年に一度、花のじゅうたんで広場がうめつくされる。"},
+  {n:"ブルージュ", c:"ベルギー", r:"ぶるーじゅ", art:"bruges", d:"運河がめぐる中世の町。「北のベニス」とよばれ、レンガの家と鐘楼が水にうつる。"},
+  {n:"アムステルダムの運河", c:"オランダ", r:"あむすてるだむのうんが", art:"amsterdam", d:"町の中に運河が165本もあり、細長い家がならぶ。自転車で移動する人が多い。"},
+  {n:"キューケンホフ公園", c:"オランダ", r:"きゅーけんほふこうえん", art:"keukenhof", d:"春だけ開く 世界最大級の花の公園。約700万本のチューリップなどがいっせいにさく。"},
+  {n:"ペーナ宮殿", c:"ポルトガル・シントラ", r:"ぺーなきゅうでん", art:"pena", d:"山の上に建つ赤と黄色のカラフルな宮殿。いろいろな様式がまざった おとぎ話のような姿。"},
+  {n:"ベレンの塔", c:"ポルトガル・リスボン", r:"べれんのとう", art:"belem", d:"大航海時代に船を見はるため 川のほとりに建てられた塔。白い石のかざりが美しく世界遺産。"},
+  {n:"ポルト", c:"ポルトガル", r:"ぽると", art:"porto", d:"川ぞいにカラフルな家がならぶ港町。二階建ての鉄の橋「ドン・ルイス1世橋」がシンボル。"},
+  {n:"セビリア大聖堂", c:"スペイン", r:"せびりあだいせいどう", art:"seville", d:"世界でもっとも大きな ゴシック様式の大聖堂。コロンブスのお墓があり、高さ約100mの塔に登れる。"},
+  {n:"トレド", c:"スペイン", r:"とれど", art:"toledo", d:"川に三方をかこまれた丘の上の古い町。キリスト教・イスラム教・ユダヤ教の文化がまざっている。"},
+  {n:"グエル公園", c:"スペイン・バルセロナ", r:"ぐえるこうえん", art:"guell", d:"建築家ガウディが作った公園。カラフルなタイルのトカゲやベンチがあり、街を見わたせる。"},
+  {n:"サンティアゴ大聖堂", c:"スペイン", r:"さんてぃあごだいせいどう", art:"santiago", d:"聖ヤコブのお墓の上に建つ大聖堂。ヨーロッパ中から歩いてくる巡礼の道の ゴール。"},
+  {n:"バレッタ", c:"マルタ", r:"ばれった", art:"valletta", d:"地中海の小さな島国の首都。はちみつ色の石の建物がならび、町ぜんたいが世界遺産。"},
+  {n:"モナコ", c:"モナコ", r:"もなこ", art:"monaco", d:"世界で2番目に小さな国。港に豪華なヨットがならび、街の道を走るF1レースで有名。"},
+  {n:"プラハ城", c:"チェコ", r:"ぷらはじょう", art:"praguecastle", d:"世界でもっとも大きな古い城。中に聖ヴィート大聖堂があり、川の向こうから見る姿が美しい。"},
+  {n:"シュテファン大聖堂", c:"オーストリア・ウィーン", r:"しゅてふぁんだいせいどう", art:"stephansdom", d:"ウィーンのまん中に立つ 高さ137mの塔をもつ大聖堂。屋根の色つき瓦のもようが目をひく。"},
+  {n:"ザルツブルク", c:"オーストリア", r:"ざるつぶるく", art:"salzburg", d:"山の上の城が見おろす古い町。作曲家モーツァルトが生まれ、映画「サウンド・オブ・ミュージック」の舞台。"},
+  {n:"リラ修道院", c:"ブルガリア", r:"りらしゅうどういん", art:"rila", d:"山の中にある ブルガリアでいちばん大きな修道院。白黒のしま模様のアーチと 色あざやかな壁画で有名。"},
+  {n:"ブラン城", c:"ルーマニア", r:"ぶらんじょう", art:"bran", d:"「ドラキュラ城」とよばれる 岩の上の城。小説のモデルになったといわれ、細い階段と塔がある。"},
+  {n:"岩のドーム", c:"エルサレム", r:"いわのどーむ", art:"domeofrock", d:"金色のドームをもつ イスラム教の建物。エルサレムの旧市街の中心にあり、いくつもの宗教の聖地。"},
+  {n:"死海", c:"ヨルダン", r:"しかい", art:"deadsea", d:"海面より約430m低い場所にある湖。塩の濃さが海の10倍で、体がぷかぷかとうく。"},
+  {n:"ワディ・ラム", c:"ヨルダン", r:"わでぃらむ", art:"wadirum", d:"赤い砂と岩山の砂漠。「月の谷」とよばれ、火星の映画の撮影にも使われた。"},
+  {n:"ブルジュ・ハリファ", c:"アラブ首長国連邦・ドバイ", r:"ぶるじゅはりふぁ", art:"burj", d:"高さ828mで世界一高いビル。2010年に完成し、160階以上ある。展望台は555mの高さ。"},
+  {n:"シェイク・ザイード・グランドモスク", c:"アラブ首長国連邦・アブダビ", r:"しぇいくざいーどぐらんどもすく", art:"zayed", d:"真っ白な大理石でできた 世界最大級のモスク。82のドームがあり、中のじゅうたんは世界一大きい。"},
+  {n:"ペルセポリス", c:"イラン", r:"ぺるせぽりす", art:"persepolis", d:"約2500年前のペルシャ帝国の都のあと。大きな石の階段や柱、動物の彫刻が残る。世界遺産。"},
+  {n:"イマーム広場", c:"イラン・イスファハン", r:"いまーむひろば", art:"isfahan", d:"世界で2番目に大きな広場。青いタイルのモスクにかこまれ、「世界の半分」とたたえられた町の中心。"},
+  {n:"ジャマ・エル・フナ広場", c:"モロッコ・マラケシュ", r:"じゃまえるふなひろば", art:"marrakech", d:"マラケシュの旧市街の広場。昼は市場、夜は大道芸人や屋台でにぎわう。"},
+  {n:"シャウエン", c:"モロッコ", r:"しゃうえん", art:"chefchaouen", d:"家も道も 青くぬられた山の町。「青い真珠」とよばれ、写真をとる人でにぎわう。"},
+  {n:"ハッサン2世モスク", c:"モロッコ・カサブランカ", r:"はっさんにせいもすく", art:"hassan", d:"海にせり出すように建つ大きなモスク。塔の高さは210mで、世界でもっとも高い塔をもつモスクの一つ。"},
+  {n:"ソススフレイ", c:"ナミビア", r:"そすすふれい", art:"sossusvlei", d:"世界最古の砂漠にある オレンジ色の砂丘。白い干上がった湖に 枯れた木が立つ「デッドフレイ」で有名。"},
+  {n:"セレンゲティ", c:"タンザニア", r:"せれんげてぃ", art:"serengeti", d:"ライオンやゾウがくらす広い草原。毎年150万頭のヌーが草を求めて大移動する。"},
+  {n:"ラリベラの岩窟教会", c:"エチオピア", r:"らりべらのがんくつきょうかい", art:"lalibela", d:"大きな一枚の岩を上からほって作った教会群。十字の形の聖ギオルギス教会がいちばん有名。"},
+  {n:"カルナック神殿", c:"エジプト・ルクソール", r:"かるなっくしんでん", art:"karnak", d:"古代エジプト最大の神殿。高さ20m以上の柱が134本も林のようにならぶ大列柱室がある。"},
+  {n:"王家の谷", c:"エジプト・ルクソール", r:"おうけのたに", art:"valleyofkings", d:"古代エジプトの王たちのお墓が集まる谷。少年王ツタンカーメンの墓が、宝物とともに見つかった。"},
+  {n:"喜望峰", c:"南アフリカ", r:"きぼうほう", art:"capeofgoodhope", d:"アフリカ大陸の南西のはしにある岬。1488年にヨーロッパの船がここを回って、インドへの道が開けた。"},
+  {n:"ボルダーズビーチ", c:"南アフリカ", r:"ぼるだーずびーち", art:"boulders", d:"大きな丸い岩と白い砂の浜。野生のアフリカペンギンが約2000羽くらし、すぐ近くで見られる。"},
+  {n:"オカバンゴ・デルタ", c:"ボツワナ", r:"おかばんごでるた", art:"okavango", d:"砂漠のまん中に川が広がってできた 世界最大級の内陸の三角州。ゾウやカバがくらす。"},
+  {n:"マサイマラ", c:"ケニア", r:"まさいまら", art:"masaimara", d:"ケニアの草原の保護区。ライオン・ゾウ・キリンなどに会えるサファリで有名。マサイの人々の土地。"},
+  {n:"天壇", c:"中国・北京", r:"てんだん", art:"tiantan", d:"皇帝が豊作をいのった祭壇。青い瓦の丸い屋根が3段に重なる「祈年殿」が有名。"},
+  {n:"頤和園", c:"中国・北京", r:"いわえん", art:"summerpalace", d:"皇帝の夏の宮殿。大きな湖と丘があり、長さ728mの絵が描かれた回廊がつづく。"},
+  {n:"外灘", c:"中国・上海", r:"わいたん", art:"bund", d:"上海の川ぞいの通り。古い西洋風の建物がならび、川の向こうに超高層ビルがそびえる。"},
+  {n:"九寨溝", c:"中国", r:"きゅうさいこう", art:"jiuzhaigou", d:"山の谷に 青や緑にすきとおった湖が100以上ある。石灰がとけた水で、秋は紅葉がうつる。"},
+  {n:"張家界", c:"中国", r:"ちょうかかい", art:"zhangjiajie", d:"高さ200m以上の岩の柱が3000本以上そびえる。映画「アバター」の浮かぶ山のモデルになった。"},
+  {n:"黄山", c:"中国", r:"こうざん", art:"huangshan", d:"ふしぎな形の岩と松、雲海で知られる山。昔から山水画の題材になった。世界遺産。"},
+  {n:"楽山大仏", c:"中国", r:"らくさんだいぶつ", art:"leshan", d:"川ぞいの崖にほられた 高さ71mの世界最大の石の仏像。約1200年前に完成した。"},
+  {n:"麗江古城", c:"中国", r:"れいこうこじょう", art:"lijiang", d:"800年前からの町並みが残る。水路が町中を流れ、石だたみの道と木の家がつづく。世界遺産。"},
+  {n:"ビクトリア・ピーク", c:"香港", r:"びくとりあぴーく", art:"victoriapeak", d:"香港でいちばん高い山。頂上からは高層ビルの森と港が見わたせ、急な坂をトラムで登る。"},
+  {n:"聖ポール天主堂跡", c:"マカオ", r:"せいぽーるてんしゅどうあと", art:"macau", d:"火事で正面の壁だけが残った教会あと。石の壁に日本人が作ったといわれる彫刻がある。"},
+  {n:"台北101", c:"台湾・台北", r:"たいぺいいちまるいち", art:"taipei101", d:"高さ508mの超高層ビル。竹の節のような形で、2004年の完成時は世界一高かった。"},
+  {n:"九份", c:"台湾", r:"きゅうふん", art:"jiufen", d:"山の斜面に赤いちょうちんの店がならぶ町。金の採掘でにぎわい、今は茶芸館や屋台が人気。"},
+  {n:"太魯閣", c:"台湾", r:"たろこ", art:"taroko", d:"大理石の岩が高くそびえる峡谷。川がけずった白い岩の谷に、道とトンネルが通っている。"},
+  {n:"景福宮", c:"韓国・ソウル", r:"けいふくきゅう", art:"gyeongbok", d:"朝鮮王朝の王の宮殿。色あざやかな門と屋根があり、衛兵の交代式が見られる。"},
+  {n:"ワット・プラケオ", c:"タイ・バンコク", r:"わっとぷらけお", art:"grandpalace", d:"王宮の中にある寺。金色に光る仏塔と、ヒスイでできたエメラルド仏がまつられている。"},
+  {n:"アユタヤ", c:"タイ", r:"あゆたや", art:"ayutthaya", d:"400年つづいた王国の都のあと。木の根に包まれた仏像の頭や、たくさんの仏塔が残る。世界遺産。"},
+  {n:"ドイ・ステープ", c:"タイ・チェンマイ", r:"どいすてーぷ", art:"doisuthep", d:"山の上にある金色の仏塔の寺。306段の階段を登ると、チェンマイの町を見わたせる。"},
+  {n:"ライレイ", c:"タイ・クラビ", r:"らいれい", art:"railay", d:"石灰岩の崖にかこまれ、船でしか行けないビーチ。白い砂とエメラルドの海で、ロッククライミングでも有名。"},
+  {n:"ホイアン", c:"ベトナム", r:"ほいあん", art:"hoian", d:"昔の貿易港の町。黄色い壁の古い家と 色とりどりのランタンがならび、日本人が作ったといわれる橋がある。"},
+  {n:"フエの王宮", c:"ベトナム", r:"ふえのおうきゅう", art:"hue", d:"ベトナム最後の王朝の都。城壁の中に赤い門と宮殿があり、川のそばに建つ。世界遺産。"},
+  {n:"ルアンパバーン", c:"ラオス", r:"るあんぱばーん", art:"luangprabang", d:"メコン川ぞいの古い都。金色にかがやく寺が多く、朝にはお坊さんの托鉢の列が歩く。"},
+  {n:"ペトロナスツインタワー", c:"マレーシア・クアラルンプール", r:"ぺとろなすついんたわー", art:"petronas", d:"高さ452mの2つの塔。41階と42階が橋でつながっていて、ツインタワーとしては世界一高い。"},
+  {n:"マリーナベイ・サンズ", c:"シンガポール", r:"まりーなべいさんず", art:"marinabay", d:"3つのビルの上に船のような屋上がのった ホテル。屋上のプールは地上200mの高さにある。"},
+  {n:"マーライオン", c:"シンガポール", r:"まーらいおん", art:"merlion", d:"頭がライオン、体が魚の像。口から水を出しながら港を見ている、シンガポールのシンボル。"},
+  {n:"プランバナン", c:"インドネシア", r:"ぷらんばなん", art:"prambanan", d:"9世紀に建てられたヒンドゥー教の寺院群。高さ47mの塔をふくめ、とがった塔がならぶ。"},
+  {n:"タナロット寺院", c:"インドネシア・バリ島", r:"たなろっとじいん", art:"tanahlot", d:"海の岩の上に建つ寺。潮が満ちると島になり、夕日とともに見る姿が有名。"},
+  {n:"テガララン", c:"インドネシア・バリ島", r:"てがららん", art:"tegalalang", d:"谷の斜面に階段のように広がる田んぼ。1000年つづく水の分け方「スバック」で守られている。"},
+  {n:"コモド島", c:"インドネシア", r:"こもどとう", art:"komodo", d:"世界最大のトカゲ、コモドオオトカゲがすむ島。体長3m以上になり、この島のまわりにしかいない。"},
+  {n:"ブロモ山", c:"インドネシア", r:"ぶろもさん", art:"bromo", d:"砂の海のまん中にそびえる火山。今も煙を上げていて、朝日に照らされる姿が人気。"},
+  {n:"チョコレートヒルズ", c:"フィリピン", r:"ちょこれーとひるず", art:"chocolatehills", d:"高さ30〜50mのまるい丘が1200以上ならぶ。乾季に草が茶色になり、チョコレートのように見える。"},
+  {n:"バナウェの棚田", c:"フィリピン", r:"ばなうぇのたなだ", art:"banaue", d:"2000年前から山の斜面に作られてきた田んぼ。「天国への階段」とよばれ世界遺産。"},
+  {n:"風の宮殿", c:"インド・ジャイプール", r:"かぜのきゅうでん", art:"hawamahal", d:"ピンク色の壁に953の小さな窓がならぶ宮殿。宮殿の女性たちが外の様子を見るために作られた。"},
+  {n:"アンベール城", c:"インド・ジャイプール", r:"あんべーるじょう", art:"amber", d:"丘の上に建つ 黄色い石の城。ゾウに乗って坂を登り、鏡でかざられた部屋が有名。"},
+  {n:"バラナシ", c:"インド", r:"ばらなし", art:"varanasi", d:"ガンジス川のほとりの聖なる町。川岸の階段(ガート)で人々が沐浴し、いのりをささげる。"},
+  {n:"エローラ石窟", c:"インド", r:"えろーらせっくつ", art:"ellora", d:"岩山をほって作った34の寺院。カイラーサ寺院は一枚の岩を上から下へ100年かけてほった。"},
+  {n:"インド門", c:"インド・ムンバイ", r:"いんどもん", art:"gateway", d:"港に立つ高さ26mの門。イギリス国王の来訪を記念して1924年に建てられた。"},
+  {n:"シギリヤ・ロック", c:"スリランカ", r:"しぎりやろっく", art:"sigiriya", d:"高さ約200mの岩の上に王宮のあとがある。1500年前の壁画「シギリヤ・レディ」でも有名。"},
+  {n:"タクツァン僧院", c:"ブータン", r:"たくつぁんそういん", art:"taktsang", d:"崖にはりつくように建つ寺。「虎の巣」という意味で、標高3000mの山道を歩いて登る。"},
+  {n:"ボダナート", c:"ネパール・カトマンズ", r:"ぼだなーと", art:"boudhanath", d:"世界最大級の仏塔。白いドームの上に「ブッダの目」が描かれていて、四方を見ている。"},
+  {n:"レギスタン広場", c:"ウズベキスタン・サマルカンド", r:"れぎすたんひろば", art:"registan", d:"青いタイルでかざられた3つの学校(マドラサ)にかこまれた広場。シルクロードの中心だった。"},
+  {n:"バイカル湖", c:"ロシア", r:"ばいかるこ", art:"baikal", d:"深さ1642mで世界一深い湖。世界の淡水の約2割がここにあり、冬は透明な氷におおわれる。"},
+  {n:"ヨセミテ", c:"アメリカ", r:"よせみて", art:"yosemite", d:"氷河がけずった大きな谷。高さ1000mの岩「エル・キャピタン」や、ハーフドームがそびえる。"},
+  {n:"ザイオン", c:"アメリカ", r:"ざいおん", art:"zion", d:"赤い岩の崖が高さ600mもそびえる谷。川の中を歩く「ナローズ」というコースで有名。"},
+  {n:"デリケート・アーチ", c:"アメリカ", r:"でりけーとあーち", art:"delicatearch", d:"赤い岩が自然にけずられてできた 高さ16mのアーチ。アーチーズ国立公園には2000以上のアーチがある。"},
+  {n:"ブライスキャニオン", c:"アメリカ", r:"ぶらいすきゃにおん", art:"bryce", d:"オレンジ色の岩の柱「フードゥー」が何千本も立つ。朝日に照らされると赤くかがやく。"},
+  {n:"ホースシューベンド", c:"アメリカ", r:"ほーすしゅーべんど", art:"horseshoe", d:"コロラド川が馬のひづめの形に大きく曲がる場所。高さ300mの崖の上から見おろす。"},
+  {n:"ハリウッドサイン", c:"アメリカ・ロサンゼルス", r:"はりうっどさいん", art:"hollywood", d:"丘の上に立つ高さ14mの白い文字。1923年に不動産の広告として作られ、映画の町のシンボルになった。"},
+  {n:"アルカトラズ島", c:"アメリカ・サンフランシスコ", r:"あるかとらずとう", art:"alcatraz", d:"湾にうかぶ小さな島。かつて「脱出できない刑務所」があり、今は見学できる。"},
+  {n:"スペースニードル", c:"アメリカ・シアトル", r:"すぺーすにーどる", art:"spaceneedle", d:"1962年の万博で建てられた高さ184mの塔。UFOのような展望台がのっている。"},
+  {n:"ブルックリン橋", c:"アメリカ・ニューヨーク", r:"ぶるっくりんばし", art:"brooklyn", d:"1883年にできた石の塔をもつつり橋。完成したときは世界一長いつり橋だった。歩いてわたれる。"},
+  {n:"セントラルパーク", c:"アメリカ・ニューヨーク", r:"せんとらるぱーく", art:"centralpark", d:"高層ビルにかこまれた 大きな公園。広さは東京ドーム約73個分で、池や動物園がある。"},
+  {n:"ワシントン記念塔", c:"アメリカ・ワシントン", r:"わしんとんきねんとう", art:"washington", d:"初代大統領ワシントンを記念した高さ169mの塔。白い石でできていて、池にうつる姿が有名。"},
+  {n:"ワイキキビーチ", c:"アメリカ・ハワイ", r:"わいききびーち", art:"waikiki", d:"ハワイでいちばん有名なビーチ。ホテルがならぶ浜からダイヤモンドヘッドが見え、サーフィンが人気。"},
+  {n:"キラウエア火山", c:"アメリカ・ハワイ", r:"きらうえあかざん", art:"kilauea", d:"世界でもっとも活発な火山の一つ。火口から溶岩が流れ出し、新しい土地を作りつづけている。"},
+  {n:"ナパリコースト", c:"アメリカ・ハワイ", r:"なぱりこーすと", art:"napali", d:"カウアイ島の北西にそびえる 緑の崖の海岸。道が無く、船やヘリコプターから見る。"},
+  {n:"デナリ", c:"アメリカ・アラスカ", r:"でなり", art:"denali", d:"標高6190mで北アメリカでいちばん高い山。「偉大なもの」という意味の先住民の言葉。"},
+  {n:"デスバレー", c:"アメリカ", r:"ですばれー", art:"deathvalley", d:"北アメリカでいちばん暑く低い場所。気温56.7℃の世界記録があり、しま模様の岩の丘が広がる。"},
+  {n:"レイクルイーズ", c:"カナダ", r:"れいくるいーず", art:"louise", d:"氷河がとけたエメラルド色の湖。カナディアンロッキーの山にかこまれ、湖のほとりにホテルがある。"},
+  {n:"モレーン湖", c:"カナダ", r:"もれーんこ", art:"moraine", d:"10の山にかこまれた青い湖。昔のカナダの20ドル札に描かれていた。"},
+  {n:"CNタワー", c:"カナダ・トロント", r:"しーえぬたわー", art:"cntower", d:"高さ553mの塔。1976年から30年以上 世界一高い塔だった。ガラスの床の展望台がある。"},
+  {n:"ケベック旧市街", c:"カナダ", r:"けべっくきゅうしがい", art:"quebec", d:"城壁にかこまれた北アメリカで唯一の町。お城のようなホテルが崖の上に立ち、フランス語が話される。"},
+  {n:"トゥルム遺跡", c:"メキシコ", r:"とぅるむいせき", art:"tulum", d:"カリブ海の崖の上に建つマヤの遺跡。青い海を見おろす神殿があり、ビーチで泳げる。"},
+  {n:"グアナフアト", c:"メキシコ", r:"ぐあなふあと", art:"guanajuato", d:"銀で栄えた山の町。色とりどりの家が谷にひしめき、町の下を地下道が通る。世界遺産。"},
+  {n:"ハバナ旧市街", c:"キューバ", r:"はばなきゅうしがい", art:"havana", d:"カラフルな古い建物と、1950年代のアメリカ車が走る町。世界遺産。"},
+  {n:"パナマ運河", c:"パナマ", r:"ぱなまうんが", art:"panama", d:"太平洋と大西洋をむすぶ全長80kmの運河。船を水の階段(閘門)で持ち上げて山をこえる。"},
+  {n:"アレナル火山", c:"コスタリカ", r:"あれなるかざん", art:"arenal", d:"きれいな円すいの形をした火山。ふもとに温泉があり、ジャングルにはナマケモノもいる。"},
+  {n:"ガラパゴス諸島", c:"エクアドル", r:"がらぱごすしょとう", art:"galapagos", d:"ゾウガメやイグアナなど めずらしい生き物がくらす島々。ダーウィンが進化論を考えるきっかけになった。"},
+  {n:"ナスカの地上絵", c:"ペルー", r:"なすかのちじょうえ", art:"nazca", d:"砂漠に描かれた 何百もの巨大な絵。ハチドリやサルなど、空から見ないと形がわからない。"},
+  {n:"クスコ", c:"ペルー", r:"くすこ", art:"cusco", d:"インカ帝国の都だった町。カミソリの刃も通らないといわれる石組みの壁が残る。標高3400m。"},
+  {n:"チチカカ湖", c:"ペルー・ボリビア", r:"ちちかかこ", art:"titicaca", d:"標高3800mにある「船が通れる いちばん高い湖」。アシで作った浮き島に人がくらしている。"},
+  {n:"レインボーマウンテン", c:"ペルー", r:"れいんぼーまうんてん", art:"rainbowmtn", d:"赤・黄・緑・青など 7色のしま模様の山。標高5000mを歩いて登る。"},
+  {n:"トーレス・デル・パイネ", c:"チリ", r:"とーれすでるぱいね", art:"torres", d:"3本の岩の塔がそびえる パタゴニアの国立公園。氷河と青い湖、グアナコなどの動物がいる。"},
+  {n:"アタカマ砂漠", c:"チリ", r:"あたかまさばく", art:"atacama", d:"世界でもっとも乾いた砂漠。「月の谷」のような風景で、夜空がきれいなため天文台が多い。"},
+  {n:"カミニート", c:"アルゼンチン・ブエノスアイレス", r:"かみにーと", art:"caminito", d:"色とりどりにぬられた家がならぶ通り。タンゴが生まれた港町ボカ地区にある。"},
+  {n:"ポン・ヂ・アスーカル", c:"ブラジル・リオデジャネイロ", r:"ぽんぢあすーかる", art:"sugarloaf", d:"「砂糖パン」という意味の高さ396mの岩山。ロープウェイで登ると、リオの海岸が見わたせる。"},
+  {n:"レンソイス", c:"ブラジル", r:"れんそいす", art:"lencois", d:"真っ白な砂丘の間に、雨季だけ青い湖がいくつも現れる。「シーツ」という意味の名前。"},
+  {n:"アマゾン川", c:"ブラジル", r:"あまぞんがわ", art:"amazon", d:"世界でいちばん水の量が多い川。まわりの熱帯雨林は「地球の肺」とよばれ、たくさんの生き物がくらす。"},
+  {n:"カルタヘナ", c:"コロンビア", r:"かるたへな", art:"cartagena", d:"カリブ海にのぞむ城壁の町。カラフルな家とバルコニーが、スペイン時代のまま残る。"},
+  {n:"12使徒", c:"オーストラリア", r:"じゅうにしと", art:"twelveapostles", d:"海にそびえる石灰岩の柱。グレート・オーシャン・ロードのハイライトで、波にけずられて数がへっている。"},
+  {n:"ブルー・マウンテンズ", c:"オーストラリア", r:"ぶるーまうんてんず", art:"bluemountains", d:"ユーカリの森がつづく山地。3本の岩「スリー・シスターズ」が有名で、森が青くかすんで見える。"},
+  {n:"ホワイトヘブンビーチ", c:"オーストラリア", r:"ほわいとへぶんびーち", art:"whitehaven", d:"7kmつづく真っ白な砂浜。砂は98%がシリカで、雪のように白く さらさらしている。"},
+  {n:"テカポ湖", c:"ニュージーランド", r:"てかぽこ", art:"tekapo", d:"ミルキーブルーの湖のほとりに小さな石の教会が建つ。夜空がきれいで、星空の保護区。"},
+  {n:"マウント・クック", c:"ニュージーランド", r:"まうんとくっく", art:"mtcook", d:"標高3724mでニュージーランドの最高峰。氷河をたたえ、先住民の言葉で「雲をつきぬける山」。"},
+  {n:"ロトルア", c:"ニュージーランド", r:"ろとるあ", art:"rotorua", d:"温泉と間欠泉の町。「ポフツ」の間欠泉は高さ30mまで湯をふき上げる。マオリの文化も体験できる。"},
+  {n:"ボラボラ島", c:"フランス領ポリネシア", r:"ぼらぼらとう", art:"borabora", d:"青いラグーンにかこまれた火山の島。水上コテージが並ぶ「太平洋の真珠」。"}
+);
+Object.assign(LATLON, {shiretoko:[44.07,145.1], goryokaku:[41.797,140.757], otaru:[43.199,141.0], furano:[43.42,142.43], biei:[43.59,142.47], hirosaki:[40.608,140.464], oirase:[40.58,140.95], towada:[40.47,140.87], chusonji:[39.001,141.099], matsushima:[38.37,141.06], yamadera:[38.31,140.44], zao:[38.13,140.44], ginzan:[38.57,140.53], kakunodate:[39.6,140.56], tsuruga:[37.488,139.93], ouchijuku:[37.334,139.861], sensoji:[35.7148,139.7967], meiji:[35.676,139.699], shibuya:[35.6595,139.7005], tokyostation:[35.6812,139.7671], kokyo:[35.685,139.753], minatomirai:[35.455,139.632], enoshima:[35.3,139.48], ashinoko:[35.21,139.0], kegon:[36.741,139.503], kusatsu:[36.622,138.596], fukuroda:[36.767,140.409], matsumoto:[36.238,137.969], zenkoji:[36.662,138.188], kamikochi:[36.25,137.64], yukinootani:[36.577,137.596], kurobe:[36.567,137.664], kenrokuen:[36.562,136.663], senmaida:[37.36,137.05], tojinbo:[36.238,136.126], miho:[34.998,138.525], kawaguchiko:[35.51,138.75], nagoyajo:[35.185,136.899], inuyama:[35.388,136.939], takayama:[36.143,137.259], ise:[34.455,136.725], osakajo:[34.687,135.526], dotonbori:[34.669,135.501], tsutenkaku:[34.652,135.506], byodoin:[34.889,135.808], horyuji:[34.614,135.734], kasuga:[34.681,135.848], nijo:[35.014,135.748], ginkaku:[35.027,135.798], arashiyama:[35.017,135.672], amanohashidate:[35.57,135.19], koyasan:[34.213,135.585], nachi:[33.673,135.89], hikone:[35.277,136.252], yoshino:[34.36,135.86], takeda:[35.3,134.829], akashi:[34.617,135.021], izumo:[35.402,132.685], tottori:[35.54,134.23], matsue:[35.475,133.051], korakuen:[34.667,133.936], kurashiki:[34.596,133.771], kintaikyo:[34.167,132.178], akiyoshidai:[34.24,131.31], motonosumi:[34.42,130.91], tsunoshima:[34.35,130.89], dogo:[33.852,132.786], matsuyama:[33.845,132.766], kotohira:[34.184,133.81], naruto:[34.24,134.65], katsurahama:[33.497,133.575], shimanto:[33.1,132.95], kazurabashi:[33.88,133.83], dazaifu:[33.521,130.535], gunkanjima:[32.628,129.738], glover:[32.734,129.869], nagasakipeace:[32.776,129.864], kumamotojo:[32.806,130.706], aso:[32.884,131.104], beppu:[33.317,131.472], yufuin:[33.264,131.372], takachiho:[32.7,131.3], sakurajima:[31.58,130.66], shuri:[26.217,127.719], taketomi:[24.33,124.09], kabira:[24.455,124.145], chambord:[47.616,1.517], carcassonne:[43.206,2.364], etretat:[49.71,0.2], nice:[43.695,7.265], strasbourg:[48.582,7.751], amalfi:[40.628,14.485], cinqueterre:[44.107,9.727], pantheon:[41.899,12.477], spanishsteps:[41.906,12.482], dolomites:[46.62,12.3], jungfrau:[46.547,7.985], lucerne:[47.052,8.307], montblanc:[45.833,6.865], rothenburg:[49.375,10.179], heidelberg:[49.41,8.715], dresden:[51.052,13.741], berlinwall:[52.535,13.39], windsor:[51.484,-0.604], cotswolds:[51.758,-1.834], sevensisters:[50.75,0.15], lakedistrict:[54.37,-2.93], giantscauseway:[55.241,-6.512], moher:[52.972,-9.427], lochness:[57.32,-4.44], warsaw:[52.25,21.012], krakow:[50.062,19.937], meteora:[39.716,21.63], mykonos:[37.445,25.325], ephesus:[37.939,27.341], pamukkale:[37.924,29.123], kremlin:[55.752,37.617], hermitage:[59.94,30.313], helsinki:[60.17,24.952], tallinn:[59.437,24.745], nyhavn:[55.68,12.591], gamlastan:[59.325,18.071], geiranger:[62.1,7.09], preikestolen:[58.986,6.19], bluelagoon:[63.88,-22.449], gullfoss:[64.327,-20.121], dubrovnik:[42.641,18.108], plitvice:[44.88,15.62], brussels:[50.847,4.352], bruges:[51.208,3.227], amsterdam:[52.372,4.893], keukenhof:[52.27,4.546], pena:[38.788,-9.391], belem:[38.692,-9.216], porto:[41.14,-8.611], seville:[37.386,-5.993], toledo:[39.857,-4.024], guell:[41.414,2.153], santiago:[42.881,-8.545], valletta:[35.899,14.514], monaco:[43.738,7.425], praguecastle:[50.091,14.401], stephansdom:[48.209,16.373], salzburg:[47.795,13.047], rila:[42.133,23.34], bran:[45.515,25.367], domeofrock:[31.778,35.235], deadsea:[31.5,35.5], wadirum:[29.58,35.42], burj:[25.197,55.274], zayed:[24.412,54.475], persepolis:[29.935,52.891], isfahan:[32.657,51.677], marrakech:[31.626,-7.989], chefchaouen:[35.169,-5.264], hassan:[33.608,-7.633], sossusvlei:[-24.73,15.34], serengeti:[-2.33,34.83], lalibela:[12.033,39.041], karnak:[25.719,32.657], valleyofkings:[25.74,32.601], capeofgoodhope:[-34.357,18.474], boulders:[-34.197,18.451], okavango:[-19.28,22.9], masaimara:[-1.49,35.14], tiantan:[39.882,116.407], summerpalace:[39.999,116.275], bund:[31.24,121.49], jiuzhaigou:[33.26,103.92], zhangjiajie:[29.32,110.43], huangshan:[30.13,118.17], leshan:[29.545,103.773], lijiang:[26.87,100.23], victoriapeak:[22.275,114.145], macau:[22.198,113.541], taipei101:[25.034,121.565], jiufen:[25.109,121.845], taroko:[24.16,121.49], gyeongbok:[37.58,126.977], grandpalace:[13.751,100.492], ayutthaya:[14.357,100.568], doisuthep:[18.805,98.922], railay:[8.01,98.84], hoian:[15.877,108.327], hue:[16.47,107.579], luangprabang:[19.886,102.135], petronas:[3.158,101.712], marinabay:[1.284,103.86], merlion:[1.287,103.855], prambanan:[-7.752,110.492], tanahlot:[-8.621,115.087], tegalalang:[-8.432,115.279], komodo:[-8.55,119.49], bromo:[-7.942,112.953], chocolatehills:[9.83,124.14], banaue:[16.93,121.06], hawamahal:[26.924,75.827], amber:[26.985,75.851], varanasi:[25.31,83.01], ellora:[20.026,75.179], gateway:[18.922,72.835], sigiriya:[7.957,80.76], taktsang:[27.492,89.363], boudhanath:[27.721,85.362], registan:[39.655,66.976], baikal:[53.5,108.0], yosemite:[37.746,-119.593], zion:[37.3,-113.05], delicatearch:[38.744,-109.499], bryce:[37.593,-112.187], horseshoe:[36.879,-111.51], hollywood:[34.134,-118.322], alcatraz:[37.827,-122.423], spaceneedle:[47.62,-122.349], brooklyn:[40.706,-73.997], centralpark:[40.782,-73.965], washington:[38.889,-77.035], waikiki:[21.277,-157.827], kilauea:[19.421,-155.287], napali:[22.18,-159.65], denali:[63.069,-151.007], deathvalley:[36.42,-116.87], louise:[51.417,-116.217], moraine:[51.328,-116.182], cntower:[43.643,-79.387], quebec:[46.812,-71.205], tulum:[20.215,-87.429], guanajuato:[21.019,-101.257], havana:[23.136,-82.359], panama:[8.995,-79.591], arenal:[10.463,-84.703], galapagos:[-0.6,-90.4], nazca:[-14.7,-75.14], cusco:[-13.517,-71.978], titicaca:[-15.9,-69.3], rainbowmtn:[-13.87,-71.303], torres:[-51.0,-73.0], atacama:[-22.92,-68.2], caminito:[-34.639,-58.363], sugarloaf:[-22.949,-43.155], lencois:[-2.55,-43.0], amazon:[-3.1,-60.0], cartagena:[10.424,-75.551], twelveapostles:[-38.666,143.104], bluemountains:[-33.732,150.312], whitehaven:[-20.28,149.04], tekapo:[-44.004,170.477], mtcook:[-43.595,170.142], rotorua:[-38.16,176.25], borabora:[-16.5,-151.74]});
+/* SPOTS-MORE-END */
 const ROUNDS = 10;
+/* 2つの旅。日本の名所は 場所が「日本」ではじまるもの */
+const isJapan = q => q.c.startsWith("日本");
+const POOLS = { world: SPOTS.filter(q => !isJapan(q)), japan: SPOTS.filter(isJapan) };
+/* 日本一周マップの 決めごと(tools/make_japan_map.py と 同じ数字)。本土は 東経128.5〜146.5 / 北緯29.8〜46。
+   南西諸島(北緯28度より南)は 左上の わく(東経122.5〜 / 北緯27.5〜)に 同じ縮尺で */
+const JAPAN_MAP = { lon0:128.5, lat1:46, kx:20, k:25, w:360, h:405, ix:6, iy:6, ilon0:122.5, ilat1:27.5 };
+function japanPos(la, lo){
+  const J = JAPAN_MAP;
+  const x = la < 28 ? J.ix + (lo - J.ilon0) * J.kx : (lo - J.lon0) * J.kx;
+  const y = la < 28 ? J.iy + (J.ilat1 - la) * J.k : (J.lat1 - la) * J.k;
+  return [x / J.w, y / J.h];
+}
+const MAPS = {
+  world: { src:"world-map-mono.jpg", w:1080, h:432, title:"世界一周マップ", word:"世界地図", icon:"🌍", name:"世界の旅",
+           pos:(la, lo) => [(lo + 180) / 360, (84 - la) / 144] },
+  japan: { src:"japan-map-mono.jpg", w:1080, h:1215, title:"日本一周マップ", word:"日本地図", icon:"🗾", name:"日本の旅", pos:japanPos },
+};
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
 
 const $ = s => document.querySelector(s);
@@ -640,11 +1203,12 @@ if(("ontouchstart" in window) || navigator.maxTouchPoints > 0) document.document
 const ans = $("#ans");
 let lastLen = 0, warnT = 0, penalties = 0;
 let level = 0;
-let mode = "quote", qs = [], idx = 0, times = [], qStart = 0, running = false, locked = true, raf = 0, sepAt = -1, target = "";
+let mode = (store("flick-mode") === "japan") ? "japan" : "world", qs = [], idx = 0, times = [], qStart = 0, running = false, locked = true, raf = 0, sepAt = -1, target = "";
 
 function store(k, v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k, v); }catch(e){ return null; } }
 /* 打つ文字の多さで むずかしさを決める。濁点・小さい字・のばす棒は フリックで1回よけいに押すので 少し重く数える */
 function textOf(m, q){ return m === "quote" ? q.r + q.ar : q.r; }
+function poolOf(m){ return m === "quote" ? QUOTES : POOLS[m]; }
 function cost(s){
   let c = 0;
   for(const ch of s){
@@ -657,20 +1221,63 @@ function cost(s){
 }
 /* かんたんな順にならべて 10問ずつに分ける。どのレベルも いつも同じ10問・同じ順番 */
 const LEVELS = {};
-for(const m of ["quote","spot"]){
-  const pool = m === "quote" ? QUOTES : SPOTS;
+for(const m of ["world","japan"]){
+  const pool = poolOf(m);
   const sorted = pool.map((q,i) => ({q, i, c:cost(textOf(m,q))})).sort((a,b) => a.c - b.c || a.i - b.i).map(x => x.q);
   LEVELS[m] = [];
   for(let i = 0; i + ROUNDS <= sorted.length; i += ROUNDS) LEVELS[m].push(sorted.slice(i, i + ROUNDS));
 }
 function bestOf(m, lv){ return parseFloat(store("flick-best-"+m+"-"+(lv+1))); }
-function showBest(){
-  for(const m of ["quote","spot"]){
-    const n = LEVELS[m].length, done = LEVELS[m].filter((_,i) => !isNaN(bestOf(m,i))).length;
-    $("#best-"+m).textContent = "全" + n + "レベル・クリア " + done + " / " + n;
-  }
+function clearedSpots(m){
+  const set = new Set();
+  LEVELS[m].forEach((lv, i) => { if(!isNaN(bestOf(m, i))) lv.forEach(q => set.add(q.art)); });
+  return set;
 }
-function show(id){ for(const s of ["home","levels","game","result"]) $("#"+s).classList.toggle("hidden", s!==id); document.body.classList.toggle("playing", id==="game"); window.scrollTo(0,0); fit(); }
+function levelTone(i){ return COLORS.level[i % COLORS.level.length]; }
+function drawModes(){
+  $("#modes").innerHTML = ["world","japan"].map((m, i) => {
+    const M = MAPS[m], done = clearedSpots(m).size;
+    return '<button class="mode sk-card sk-card-'+(i+1)+(m === mode ? ' cur' : '')+'" data-mode="'+m+'" style="'+toneStyle(COLORS.mode[m])+'">'+
+      '<span class="ic">'+M.icon+'</span><span><b>'+M.name+'</b><small>'+POOLS[m].length+'か所・'+LEVELS[m].length+'レベル　行った所 '+done+'</small></span><span class="go">›</span></button>';
+  }).join("");
+  document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => setMode(b.dataset.mode)));
+}
+function setMode(m){
+  mode = m; store("flick-mode", m);
+  const M = MAPS[m], img = $("#map-img");
+  if(!img.src.endsWith(M.src)){ img.src = M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
+  $("#map").dataset.map = m;
+  $("#map-title").textContent = M.title;
+  $("#map-cap").innerHTML = "レベルをクリアすると、その名所に ピンが立つよ。ピンを押すと 名前が出るよ。";
+  $("#lv-title").textContent = M.name + "　レベルをえらぶ";
+  drawModes(); drawMap(); openLevels(m);
+}
+function drawMap(){
+  const done = clearedSpots(mode), map = $("#map"), M = MAPS[mode];
+  map.querySelectorAll(".pin").forEach(p => p.remove());
+  LEVELS[mode].forEach((lv, i) => lv.forEach(q => {
+    const ll = LATLON[q.art]; if(!ll) return;
+    const b = document.createElement("button");
+    b.className = "pin" + (done.has(q.art) ? " on" : "");
+    const xy = M.pos(ll[0], ll[1]);
+    b.style.left = (xy[0] * 100) + "%";
+    b.style.top = (xy[1] * 100) + "%";
+    b.style.setProperty("--c", levelTone(i).a);
+    b.setAttribute("aria-label", done.has(q.art) ? q.n : "まだ行っていない名所");
+    b.innerHTML = "<i></i>";
+    b.addEventListener("click", () => {
+      map.querySelectorAll(".pin.sel").forEach(p => p.classList.remove("sel"));
+      b.classList.add("sel");
+      $("#map-cap").innerHTML = done.has(q.art)
+        ? "📍 <b>" + q.n + "</b>(" + q.c + ")・レベル" + (i+1) + "<br>" + gmapLink(q)
+        : "❔ まだ行っていない名所。レベル" + (i+1) + "をクリアすると わかるよ";
+    });
+    if(done.has(q.art)) map.appendChild(b); else map.insertBefore(b, map.children[1] || null);
+  }));
+  $("#map-count").textContent = done.size + " / " + POOLS[mode].length + "か所";
+}
+function showBest(){ setMode(mode); }
+function show(id){ for(const s of ["home","game","result"]) $("#"+s).classList.toggle("hidden", s!==id); document.body.classList.toggle("playing", id==="game"); window.scrollTo(0,0); fit(); }
 function fit(){
   const vv = window.visualViewport, r = document.documentElement.style;
   if(!vv){ r.setProperty("--vvh", window.innerHeight+"px"); return; }
@@ -738,16 +1345,13 @@ function tick(){
 
 function openLevels(m){
   mode = m;
-  $("#lv-title").textContent = m === "quote" ? "名言モード" : "名所モード";
-  $("#lv-title").style.color = COLORS.mode[m].ink;
   $("#lv-list").innerHTML = LEVELS[m].map((set, i) => {
     const lens = set.map(q => textOf(m,q).length), b = bestOf(m,i);
-    return '<button class="lv sk-card sk-card-'+(i%4+1)+(isNaN(b) ? '' : ' done')+'" style="'+toneStyle(COLORS.level[i])+'" data-lv="'+i+'"><b>レベル'+(i+1)+'</b>'+
+    return '<button class="lv sk-card sk-card-'+(i%4+1)+(isNaN(b) ? '' : ' done')+'" style="'+toneStyle(levelTone(i))+'" data-lv="'+i+'"><b>レベル'+(i+1)+'</b>'+
       '<small>1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字</small>'+
       '<div class="bt">'+(isNaN(b) ? '自己ベスト：まだなし' : '自己ベスト：'+b.toFixed(2)+'秒')+'</div></button>';
   }).join("");
   document.querySelectorAll(".lv").forEach(b => b.addEventListener("click", () => start(mode, +b.dataset.lv)));
-  show("levels");
 }
 
 function start(m, lv){
@@ -805,20 +1409,24 @@ function finish(){
   const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
   const key = "flick-best-"+mode+"-"+(level+1), prev = parseFloat(store(key));
   const isNew = isNaN(prev) || total < prev;
+  const firstClear = isNaN(prev);
   if(isNew) store(key, total.toFixed(2));
+  const pinsNow = mode === "quote" ? 0 : clearedSpots(mode).size;
+  $("#r-pins").classList.toggle("hidden", !(mode !== "quote" && firstClear));
+  $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ!(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + "か所)";
   const best = isNew ? total : prev;
   $("#r-time").textContent = total.toFixed(2);
-  const ink = COLORS.level[level].ink;
+  const ink = levelTone(level).ink;
   $(".stamp").style.color = ink; $(".stamp").style.borderColor = ink;
   $("#r-cps").textContent = (chars/total).toFixed(1);
   $("#r-chars").textContent = chars;
   $("#r-best").textContent = best.toFixed(2);
   $("#r-new").classList.toggle("hidden", !isNew || isNaN(prev));
-  $("#r-list").className = mode === "spot" ? "intros" : "list";
-  $("#r-list").innerHTML = mode === "spot"
+  $("#r-list").className = mode !== "quote" ? "intros" : "list";
+  $("#r-list").innerHTML = mode !== "quote"
     ? qs.map((q,i) => { const pc = pic(q); return '<li class="intro"><div class="pic">'+pc.html+'</div><div class="body">'+
         '<div class="head"><b>'+q.n+'</b><span>'+times[i].toFixed(2)+'秒</span></div>'+
-        '<small>'+q.c+'</small>'+(RUBY[q.art] ? '<p class="rb">'+RUBY[q.art]+'</p>' : '<p>'+q.d+'</p>')+(pc.credit ? '<em class="credit">'+pc.credit+'</em>' : '')+'</div></li>'; }).join("")
+        '<small>'+q.c+'</small>'+(RUBY[q.art] ? '<p class="rb">'+RUBY[q.art]+'</p>' : '<p>'+q.d+'</p>')+gmapLink(q)+(pc.credit ? '<em class="credit">'+pc.credit+'</em>' : '')+'</div></li>'; }).join("")
     : qs.map((q,i) => '<li><span>'+q.a+'「'+q.t+'」</span><span>'+times[i].toFixed(2)+'秒</span></li>').join("");
   $("#next-lv").classList.toggle("hidden", level >= LEVELS[mode].length - 1);
   $("#again").className = level >= LEVELS[mode].length - 1 ? "primary" : "ghost";
@@ -827,12 +1435,11 @@ function finish(){
   showBest();
 }
 
-document.querySelectorAll(".mode").forEach(b => { b.style.cssText = toneStyle(COLORS.mode[b.dataset.mode]); b.addEventListener("click", () => openLevels(b.dataset.mode)); });
-$("#lv-back").addEventListener("click", () => { show("home"); showBest(); });
-$("#quit").addEventListener("click", () => { running = false; locked = true; cancelAnimationFrame(raf); ans.blur(); openLevels(mode); });
+/* 名言モード(QUOTES)は しくみを 残して 画面には 出さない(2026-09 に 名所だけに した) */
+$("#quit").addEventListener("click", () => { running = false; locked = true; cancelAnimationFrame(raf); ans.blur(); show("home"); showBest(); });
 $("#again").addEventListener("click", () => start(mode, level));
 $("#next-lv").addEventListener("click", () => start(mode, level + 1));
-$("#home-btn").addEventListener("click", () => openLevels(mode));
+$("#home-btn").addEventListener("click", () => { show("home"); showBest(); });
 showBest();
 </script>
 </body>

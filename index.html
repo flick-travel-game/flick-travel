@@ -41,7 +41,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-o
 
 /* ホーム */
 .lead{color:var(--muted);margin:0 0 20px;font-size:15px;line-height:1.7}
-.modes{display:grid;gap:12px;margin:0 0 18px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 18px}
 .mode.cur{box-shadow:0 0 0 3px #fff,0 0 0 6px var(--sk-a),0 14px 26px -12px color-mix(in srgb,var(--sk-a) 60%,transparent)}
 .mode:not(.cur){opacity:.72}
 .mode{display:flex;gap:14px;align-items:center;text-align:left;width:100%;
@@ -73,6 +73,11 @@ body.playing{overflow:hidden}
 .ph{position:relative;width:100%;height:100%;overflow:hidden}
 .ph .blur{position:absolute;inset:0;object-fit:cover;filter:blur(16px) brightness(.9);transform:scale(1.25)}
 .ph .main{position:relative;object-fit:contain}
+.ph.emoji{display:grid;place-items:center;background:linear-gradient(135deg,#c9efff,#4fb8ff)}
+.ph.emoji span{font-size:clamp(48px,18vw,120px);line-height:1;filter:drop-shadow(0 4px 8px rgba(0,60,120,.35))}
+.intro .ph.emoji span{font-size:44px}
+.photo .ph.emoji span{position:static;background:none;padding:0;right:auto;bottom:auto}
+.intro .pic:has(.emoji){height:96px}
 .intro .credit{display:block;margin-top:8px;font-size:11px;font-style:normal;color:var(--muted)}
 .intro .credit a{color:inherit}
 .photo span{position:absolute;right:8px;bottom:6px;font-size:11px;color:#fff;background:rgba(0,0,0,.35);padding:2px 8px;border-radius:999px}
@@ -189,10 +194,12 @@ body.playing{overflow:hidden}
 @media (prefers-reduced-motion: reduce){.sk-card::before,.sk-card::after{animation:none;opacity:0.7}}
 .sk-card>*{position:relative;z-index:1}
 
-.mode.sk-card{padding:22px;min-height:104px}
-.mode .ic{background:rgba(255,255,255,.25);border-radius:.75rem}
-.mode b{font-size:26px;letter-spacing:.04em}
-.mode small{color:inherit;opacity:.92;font-size:14px}
+.mode.sk-card{padding:14px 12px;min-height:96px;flex-direction:column;align-items:flex-start;gap:8px}
+.mode .tx{display:block;min-width:0}
+.mode .tx small{display:block}
+.mode .ic{background:rgba(255,255,255,.25);border-radius:.75rem;font-size:28px;width:44px;height:44px}
+.mode b{font-size:20px;letter-spacing:.02em}
+.mode small{color:inherit;opacity:.92;font-size:12px}
 .mode .go{margin-left:auto;font-size:30px;line-height:1}
 .lv.sk-card{padding:14px 16px;min-height:92px}
 .lv b{font-size:21px}
@@ -409,6 +416,7 @@ function creditOf(ph){
   return "写真："+who+"（"+lic+"）／Wikimedia Commons";
 }
 function pic(q){
+  if(q.e) return {html:'<div class="ph emoji"><span>'+q.e+'</span></div>', label:"", credit:""};  // 地名は 絵文字のカード
   const ph = PHOTO_LIST[q.art];
   if(!ph) return {html:(ART[q.art]||ART_WORLD)(), label:"イラスト", credit:""};
   return {html:'<div class="ph"><img class="blur" src="'+esc(ph.src)+'" alt=""><img class="main" src="'+esc(ph.src)+'" alt="'+esc(q.n)+'"></div>', label:"写真", credit:creditOf(ph)};
@@ -555,7 +563,7 @@ const TONE = {
   orange: {a:"#f25c00", b:"#ff8a33", ink:"#c24f00", on:"#ffffff"},
 };
 const COLORS = {
-  mode: { world: TONE.blue, japan: TONE.pink },
+  mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange },
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
@@ -914,7 +922,207 @@ const RUBY = {
  "tekapo": "ミルキーブルーの<ruby>湖<rt>みずうみ</rt></ruby>のほとりに<ruby>小<rt>ちい</rt></ruby>さな<ruby>石<rt>いし</rt></ruby>の<ruby>教会<rt>きょうかい</rt></ruby>が<ruby>建<rt>た</rt></ruby>つ。<ruby>夜空<rt>よぞら</rt></ruby>がきれいで、<ruby>星空<rt>ほしぞら</rt></ruby>の<ruby>保護区<rt>ほごく</rt></ruby>。",
  "mtcook": "<ruby>標高<rt>ひょうこう</rt></ruby>3724mでニュージーランドの<ruby>最高峰<rt>さいこうほう</rt></ruby>。<ruby>氷河<rt>ひょうが</rt></ruby>をたたえ、<ruby>先住民<rt>せんじゅうみん</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>で「<ruby>雲<rt>くも</rt></ruby>をつきぬける<ruby>山<rt>やま</rt></ruby>」。",
  "rotorua": "<ruby>温泉<rt>おんせん</rt></ruby>と<ruby>間欠泉<rt>かんけつせん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。「ポフツ」の<ruby>間欠泉<rt>かんけつせん</rt></ruby>は<ruby>高<rt>たか</rt></ruby>さ30mまで<ruby>湯<rt>ゆ</rt></ruby>をふき<ruby>上<rt>あ</rt></ruby>げる。マオリの<ruby>文化<rt>ぶんか</rt></ruby>も<ruby>体験<rt>たいけん</rt></ruby>できる。",
- "borabora": "<ruby>青<rt>あお</rt></ruby>いラグーンにかこまれた<ruby>火山<rt>かざん</rt></ruby>の<ruby>島<rt>しま</rt></ruby>。<ruby>水上<rt>すいじょう</rt></ruby>コテージが<ruby>並<rt>なら</rt></ruby>ぶ「<ruby>太平<rt>たいへい</rt></ruby><ruby>洋<rt>よう</rt></ruby>の<ruby>真珠<rt>しんじゅ</rt></ruby>」。"
+ "borabora": "<ruby>青<rt>あお</rt></ruby>いラグーンにかこまれた<ruby>火山<rt>かざん</rt></ruby>の<ruby>島<rt>しま</rt></ruby>。<ruby>水上<rt>すいじょう</rt></ruby>コテージが<ruby>並<rt>なら</rt></ruby>ぶ「<ruby>太平<rt>たいへい</rt></ruby><ruby>洋<rt>よう</rt></ruby>の<ruby>真珠<rt>しんじゅ</rt></ruby>」。",
+ "hokkaido": "<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>北<rt>きた</rt></ruby>にある いちばん<ruby>広<rt>ひろ</rt></ruby>い<ruby>都道府県<rt>とどうふけん</rt></ruby>。<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>まつり、<ruby>夏<rt>なつ</rt></ruby>はラベンダー。<ruby>県庁<rt>けんちょう</rt></ruby><ruby>所在地<rt>しょざいち</rt></ruby>は<ruby>札幌<rt>さっぽろ</rt></ruby>。",
+ "aomori": "<ruby>本州<rt>ほんしゅう</rt></ruby>の<ruby>北<rt>きた</rt></ruby>のはし。りんごの<ruby>生産<rt>せいさん</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>で、<ruby>夏<rt>なつ</rt></ruby>のねぶた<ruby>祭<rt>まつり</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "iwate": "<ruby>北海道<rt>ほっかいどう</rt></ruby>の<ruby>次<rt>つぎ</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>い<ruby>県<rt>けん</rt></ruby>。わんこそばと、<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>の<ruby>平泉<rt>ひらいずみ</rt></ruby>、<ruby>宮沢賢治<rt>みやざわけんじ</rt></ruby>のふるさと。",
+ "miyagi": "<ruby>東北<rt>とうほく</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>町<rt>まち</rt></ruby> <ruby>仙台<rt>せんだい</rt></ruby>がある。<ruby>牛タン<rt>ぎゅうたん</rt></ruby>と、<ruby>日本<rt>にほん</rt></ruby><ruby>三<rt>さん</rt></ruby><ruby>景<rt>けい</rt></ruby>の<ruby>松島<rt>まつしま</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
+ "akita": "なまはげと<ruby>秋田犬<rt>あきたけん</rt></ruby>、きりたんぽの<ruby>県<rt>けん</rt></ruby>。<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く、かまくらが<ruby>作<rt>つく</rt></ruby>られる。",
+ "yamagata": "さくらんぼの<ruby>生産<rt>せいさん</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>。<ruby>蔵王<rt>ざおう</rt></ruby>の<ruby>樹氷<rt>じゅひょう</rt></ruby>と、<ruby>山寺<rt>やまでら</rt></ruby>、<ruby>銀山<rt>ぎんざん</rt></ruby><ruby>温泉<rt>おんせん</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
+ "fukushima": "<ruby>東北<rt>とうほく</rt></ruby>の<ruby>南<rt>みなみ</rt></ruby>のはし。ももの<ruby>産地<rt>さんち</rt></ruby>で、<ruby>会津<rt>あいづ</rt></ruby>の<ruby>鶴ヶ城<rt>つるがじょう</rt></ruby>と<ruby>大内<rt>おおうち</rt></ruby><ruby>宿<rt>やど</rt></ruby>がある。",
+ "ibaraki": "<ruby>納豆<rt>なっとう</rt></ruby>とメロンの<ruby>産地<rt>さんち</rt></ruby>。<ruby>梅<rt>うめ</rt></ruby>の<ruby>名所<rt>めいしょ</rt></ruby> <ruby>偕楽園<rt>かいらくえん</rt></ruby>と、<ruby>袋田<rt>ふくろだ</rt></ruby>の<ruby>滝<rt>たき</rt></ruby>がある。",
+ "tochigi": "いちごの<ruby>生産<rt>せいさん</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>。<ruby>日光<rt>にっこう</rt></ruby><ruby>東照宮<rt>とうしょうぐう</rt></ruby>、<ruby>華厳<rt>けごん</rt></ruby>の<ruby>滝<rt>たき</rt></ruby>、<ruby>餃子<rt>ぎょうざ</rt></ruby>の<ruby>町<rt>まち</rt></ruby> <ruby>宇都宮<rt>うつのみや</rt></ruby>。",
+ "gunma": "<ruby>草津<rt>くさつ</rt></ruby>・<ruby>伊香保<rt>いかほ</rt></ruby>などの<ruby>温泉<rt>おんせん</rt></ruby>と、<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>の<ruby>富岡<rt>とみおか</rt></ruby><ruby>製糸<rt>せいし</rt></ruby><ruby>場<rt>じょう</rt></ruby>。だるまの<ruby>生産<rt>せいさん</rt></ruby>も<ruby>日本一<rt>にほんいち</rt></ruby>。",
+ "saitama": "<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>北<rt>きた</rt></ruby>どなり。<ruby>川越<rt>かわごえ</rt></ruby>の<ruby>古<rt>ふる</rt></ruby>い<ruby>町並<rt>まちな</rt></ruby>み、<ruby>秩父<rt>ちちぶ</rt></ruby>の<ruby>自然<rt>しぜん</rt></ruby>、さつまいもで<ruby>知<rt>し</rt></ruby>られる。",
+ "chiba": "<ruby>成田空港<rt>なりたくうこう</rt></ruby>と<ruby>東京<rt>とうきょう</rt></ruby>ディズニーリゾートがある<ruby>県<rt>けん</rt></ruby>。<ruby>落花生<rt>らっかせい</rt></ruby>の<ruby>生産<rt>せいさん</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>。",
+ "tokyo": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>首都<rt>しゅと</rt></ruby>。<ruby>国会<rt>こっかい</rt></ruby>や<ruby>皇居<rt>こうきょ</rt></ruby>があり、<ruby>約<rt>やく</rt></ruby>1400<ruby>万<rt>まん</rt></ruby><ruby>人<rt>にん</rt></ruby>がくらす。<ruby>東京<rt>とうきょう</rt></ruby>タワーとスカイツリー。",
+ "kanagawa": "<ruby>港町<rt>みなとまち</rt></ruby>の<ruby>横浜<rt>よこはま</rt></ruby>、<ruby>鎌倉<rt>かまくら</rt></ruby>の<ruby>大仏<rt>だいぶつ</rt></ruby>、<ruby>箱根<rt>はこね</rt></ruby>の<ruby>温泉<rt>おんせん</rt></ruby>がある。<ruby>人口<rt>じんこう</rt></ruby>は<ruby>全国<rt>ぜんこく</rt></ruby>2<ruby>位<rt>い</rt></ruby>。",
+ "niigata": "お<ruby>米<rt>こめ</rt></ruby>「コシヒカリ」の<ruby>産地<rt>さんち</rt></ruby>で、<ruby>日本一<rt>にほんいち</rt></ruby>の<ruby>米<rt>こめ</rt></ruby>どころ。<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>雪<rt>ゆき</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く、<ruby>佐渡島<rt>さどがしま</rt></ruby>がある。",
+ "toyama": "<ruby>立山<rt>たてやま</rt></ruby><ruby>連峰<rt>れんぽう</rt></ruby>と<ruby>黒部ダム<rt>くろべだむ</rt></ruby>、<ruby>春<rt>はる</rt></ruby>の「<ruby>雪<rt>ゆき</rt></ruby>の<ruby>大谷<rt>おおや</rt></ruby>」。<ruby>海<rt>うみ</rt></ruby>のホタルイカも<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "ishikawa": "<ruby>金沢<rt>かなざわ</rt></ruby>の<ruby>兼六<rt>けんろく</rt></ruby><ruby>園<rt>えん</rt></ruby>と<ruby>金箔<rt>きんぱく</rt></ruby>、<ruby>能登<rt>のと</rt></ruby><ruby>半島<rt>はんとう</rt></ruby>。<ruby>新鮮<rt>しんせん</rt></ruby>な<ruby>魚<rt>さかな</rt></ruby>とおいしいお<ruby>寿司<rt>すし</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
+ "fukui": "<ruby>恐竜<rt>きょうりゅう</rt></ruby>の<ruby>化石<rt>かせき</rt></ruby>がたくさん<ruby>見<rt>み</rt></ruby>つかる<ruby>県<rt>けん</rt></ruby>。<ruby>東尋坊<rt>とうじんぼう</rt></ruby>の<ruby>崖<rt>がけ</rt></ruby>と、<ruby>永平寺<rt>えいへいじ</rt></ruby>、めがねの<ruby>生産<rt>せいさん</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>。",
+ "yamanashi": "<ruby>富士山<rt>ふじさん</rt></ruby>の<ruby>北側<rt>きたがわ</rt></ruby>にある<ruby>県<rt>けん</rt></ruby>。ぶどうとももの<ruby>生産<rt>せいさん</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>で、<ruby>富士<rt>ふじ</rt></ruby><ruby>五<rt>ご</rt></ruby><ruby>湖<rt>こ</rt></ruby>がある。",
+ "nagano": "<ruby>日本<rt>にほん</rt></ruby>アルプスの<ruby>山<rt>やま</rt></ruby>に<ruby>囲<rt>かこ</rt></ruby>まれた<ruby>県<rt>けん</rt></ruby>。<ruby>冬季<rt>とうき</rt></ruby>オリンピックが<ruby>開<rt>ひら</rt></ruby>かれ、りんごとそばが<ruby>名物<rt>めいぶつ</rt></ruby>。",
+ "gifu": "<ruby>白川<rt>しらかわ</rt></ruby><ruby>郷<rt>ごう</rt></ruby>の<ruby>合掌造<rt>がっしょうづく</rt></ruby>りと、<ruby>高山<rt>たかやま</rt></ruby>の<ruby>古<rt>ふる</rt></ruby>い<ruby>町並<rt>まちな</rt></ruby>み。<ruby>鵜飼<rt>うか</rt></ruby>いや<ruby>飛驒<rt>ひだ</rt></ruby><ruby>牛<rt>うし</rt></ruby>でも<ruby>知<rt>し</rt></ruby>られる。",
+ "shizuoka": "<ruby>富士山<rt>ふじさん</rt></ruby>の<ruby>南側<rt>みなみがわ</rt></ruby>。お<ruby>茶<rt>ちゃ</rt></ruby>の<ruby>生産<rt>せいさん</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>で、うなぎやみかん、<ruby>熱海<rt>あたみ</rt></ruby>の<ruby>温泉<rt>おんせん</rt></ruby>。",
+ "aichi": "<ruby>名古屋城<rt>なごやじょう</rt></ruby>と<ruby>金<rt>きん</rt></ruby>のしゃちほこ。<ruby>自動車<rt>じどうしゃ</rt></ruby>づくりの<ruby>中心<rt>ちゅうしん</rt></ruby>で、みそカツやひつまぶしが<ruby>名物<rt>めいぶつ</rt></ruby>。",
+ "mie": "<ruby>伊勢<rt>いせ</rt></ruby><ruby>神宮<rt>じんぐう</rt></ruby>がある<ruby>県<rt>けん</rt></ruby>。<ruby>真珠<rt>しんじゅ</rt></ruby>の<ruby>養殖<rt>ようしょく</rt></ruby>、<ruby>伊勢<rt>いせ</rt></ruby>えび、<ruby>鈴鹿<rt>すずか</rt></ruby>サーキットで<ruby>知<rt>し</rt></ruby>られる。",
+ "shiga": "<ruby>日本一<rt>にほんいち</rt></ruby><ruby>大<rt>おお</rt></ruby>きな<ruby>湖<rt>みずうみ</rt></ruby> <ruby>琵琶<rt>びわ</rt></ruby><ruby>湖<rt>こ</rt></ruby>が<ruby>県<rt>けん</rt></ruby>の6<ruby>分<rt>ぶん</rt></ruby>の1をしめる。<ruby>彦根<rt>ひこね</rt></ruby><ruby>城<rt>じょう</rt></ruby>と<ruby>近江<rt>おうみ</rt></ruby><ruby>牛<rt>うし</rt></ruby>。",
+ "kyoto": "1000<ruby>年<rt>ねん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby> <ruby>都<rt>みやこ</rt></ruby>だった<ruby>古<rt>ふる</rt></ruby>い<ruby>町<rt>まち</rt></ruby>。<ruby>金閣<rt>きんかく</rt></ruby><ruby>寺<rt>じ</rt></ruby>、<ruby>清水<rt>きよみず</rt></ruby><ruby>寺<rt>てら</rt></ruby>、<ruby>伏見稲荷<rt>ふしみいなり</rt></ruby>など たくさんの<ruby>寺<rt>てら</rt></ruby>と<ruby>神社<rt>じんじゃ</rt></ruby>。",
+ "osaka": "<ruby>西日本<rt>にしにほん</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>の<ruby>大都市<rt>だいとし</rt></ruby>。たこ<ruby>焼<rt>や</rt></ruby>きとお<ruby>好み焼<rt>このみや</rt></ruby>き、<ruby>大阪城<rt>おおさかじょう</rt></ruby>、お<ruby>笑<rt>わら</rt></ruby>いで<ruby>知<rt>し</rt></ruby>られる。",
+ "hyogo": "<ruby>港町<rt>みなとまち</rt></ruby>の<ruby>神戸<rt>こうべ</rt></ruby>と、<ruby>白<rt>しろ</rt></ruby>い<ruby>姫路<rt>ひめじ</rt></ruby><ruby>城<rt>じょう</rt></ruby>、<ruby>神戸<rt>こうべ</rt></ruby><ruby>牛<rt>うし</rt></ruby>。<ruby>明石<rt>あかし</rt></ruby><ruby>海峡<rt>かいきょう</rt></ruby><ruby>大橋<rt>おおはし</rt></ruby>で<ruby>淡路島<rt>あわじしま</rt></ruby>とつながる。",
+ "nara": "<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>古<rt>ふる</rt></ruby>い<ruby>都<rt>みやこ</rt></ruby>があった<ruby>県<rt>けん</rt></ruby>。<ruby>東大寺<rt>とうだいじ</rt></ruby>の<ruby>大仏<rt>だいぶつ</rt></ruby>と、<ruby>公園<rt>こうえん</rt></ruby>の<ruby>鹿<rt>しか</rt></ruby>、<ruby>法隆寺<rt>ほうりゅうじ</rt></ruby>。",
+ "wakayama": "みかんと<ruby>梅<rt>うめ</rt></ruby>の<ruby>生産<rt>せいさん</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>。<ruby>高野山<rt>こうやさん</rt></ruby>、<ruby>熊野<rt>くまの</rt></ruby><ruby>古道<rt>こどう</rt></ruby>、<ruby>白浜<rt>しらはま</rt></ruby>の<ruby>温泉<rt>おんせん</rt></ruby>とパンダ。",
+ "tottoriken": "<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>人口<rt>じんこう</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ない<ruby>県<rt>けん</rt></ruby>。<ruby>鳥取<rt>とっとり</rt></ruby><ruby>砂丘<rt>さきゅう</rt></ruby>とラクダ、<ruby>梨<rt>なし</rt></ruby>の「<ruby>二十<rt>にじゅう</rt></ruby><ruby>世紀<rt>せいき</rt></ruby>」、<ruby>大山<rt>たいさん</rt></ruby>。",
+ "shimane": "<ruby>縁<rt>えん</rt></ruby>むすびの<ruby>出雲大社<rt>いずもたいしゃ</rt></ruby>と、<ruby>松江<rt>まつえ</rt></ruby><ruby>城<rt>じょう</rt></ruby>、<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>の<ruby>石見<rt>いわみ</rt></ruby><ruby>銀山<rt>ぎんざん</rt></ruby>がある。",
+ "okayama": "<ruby>桃太郎<rt>ももたろう</rt></ruby>の<ruby>伝説<rt>でんせつ</rt></ruby>の<ruby>県<rt>けん</rt></ruby>。<ruby>白桃<rt>はくとう</rt></ruby>とマスカット、<ruby>後楽園<rt>こうらくえん</rt></ruby>、<ruby>倉敷<rt>くらしき</rt></ruby>の<ruby>美観<rt>びかん</rt></ruby><ruby>地区<rt>ちく</rt></ruby>。「<ruby>晴<rt>は</rt></ruby>れの<ruby>国<rt>くに</rt></ruby>」。",
+ "hiroshima": "<ruby>原爆<rt>げんばく</rt></ruby>ドームと<ruby>厳島神社<rt>いつくしまじんじゃ</rt></ruby>の2つの<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。お<ruby>好み焼<rt>このみや</rt></ruby>きとカキ、もみじまんじゅう。",
+ "yamaguchi": "<ruby>本州<rt>ほんしゅう</rt></ruby>の<ruby>西<rt>にし</rt></ruby>のはし。ふぐの<ruby>本場<rt>ほんば</rt></ruby> <ruby>下関<rt>しものせき</rt></ruby>、<ruby>錦帯橋<rt>きんたいきょう</rt></ruby>、<ruby>秋吉台<rt>あきよしだい</rt></ruby>のカルスト。",
+ "tokushima": "<ruby>阿波<rt>あわ</rt></ruby>おどりと<ruby>鳴門<rt>なると</rt></ruby>の<ruby>渦潮<rt>うずしお</rt></ruby>。すだちの<ruby>生産<rt>せいさん</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>で、<ruby>祖谷<rt>いや</rt></ruby>のかずら<ruby>橋<rt>ばし</rt></ruby>がある。",
+ "kagawa": "<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>小<rt>ちい</rt></ruby>さい<ruby>県<rt>けん</rt></ruby>。「うどん<ruby>県<rt>けん</rt></ruby>」とよばれ、<ruby>金刀比羅<rt>ことひら</rt></ruby><ruby>宮<rt>ぐう</rt></ruby>と<ruby>栗林公園<rt>りつりんこうえん</rt></ruby>がある。",
+ "ehime": "みかんの<ruby>県<rt>けん</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby><ruby>最古<rt>さいこ</rt></ruby>の<ruby>道後温泉<rt>どうごおんせん</rt></ruby>と<ruby>松山<rt>まつやま</rt></ruby><ruby>城<rt>じょう</rt></ruby>、しまなみ<ruby>海道<rt>かいどう</rt></ruby>で<ruby>本州<rt>ほんしゅう</rt></ruby>とつながる。",
+ "kochi": "<ruby>太平<rt>たいへい</rt></ruby><ruby>洋<rt>よう</rt></ruby>に<ruby>面<rt>めん</rt></ruby>した<ruby>県<rt>けん</rt></ruby>。<ruby>坂本龍馬<rt>さかもとりょうま</rt></ruby>のふるさとで、カツオのたたきと<ruby>四万十<rt>しまんと</rt></ruby><ruby>川<rt>かわ</rt></ruby>、よさこい<ruby>祭<rt>まつ</rt></ruby>り。",
+ "fukuoka": "<ruby>九州<rt>きゅうしゅう</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>県<rt>けん</rt></ruby>。とんこつラーメン、<ruby>明太子<rt>めんたいこ</rt></ruby>、<ruby>博多<rt>はかた</rt></ruby>どんたく、<ruby>太宰府<rt>だざいふ</rt></ruby><ruby>天満宮<rt>てんまんぐう</rt></ruby>。",
+ "saga": "<ruby>有田焼<rt>ありたやき</rt></ruby>や<ruby>伊万里焼<rt>いまりやき</rt></ruby>などの<ruby>焼き物<rt>やきもの</rt></ruby>で<ruby>有名<rt>ゆうめい</rt></ruby>。<ruby>吉野ヶ里<rt>よしのがり</rt></ruby><ruby>遺跡<rt>いせき</rt></ruby>と、バルーンフェスタ。",
+ "nagasaki": "<ruby>昔<rt>むかし</rt></ruby>から<ruby>外国<rt>がいこく</rt></ruby>と<ruby>交流<rt>こうりゅう</rt></ruby>した<ruby>港町<rt>みなとまち</rt></ruby>。ちゃんぽん、カステラ、グラバー<ruby>園<rt>えん</rt></ruby>、<ruby>軍艦<rt>ぐんかん</rt></ruby><ruby>島<rt>とう</rt></ruby>。",
+ "kumamoto": "<ruby>熊本城<rt>くまもとじょう</rt></ruby>とくまモンの<ruby>県<rt>けん</rt></ruby>。<ruby>阿蘇山<rt>あそさん</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きなカルデラと、<ruby>馬刺<rt>ばさ</rt></ruby>しやからしれんこん。",
+ "oita": "<ruby>温泉<rt>おんせん</rt></ruby>の<ruby>数<rt>かず</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>。<ruby>別府<rt>べっぷ</rt></ruby>と<ruby>由布院<rt>ゆふいん</rt></ruby>の<ruby>温泉<rt>おんせん</rt></ruby>、とり<ruby>天<rt>てん</rt></ruby>やだんご<ruby>汁<rt>しる</rt></ruby>が<ruby>名物<rt>めいぶつ</rt></ruby>。",
+ "miyazaki": "<ruby>南国<rt>なんごく</rt></ruby>のような<ruby>暖<rt>あたた</rt></ruby>かい<ruby>県<rt>けん</rt></ruby>。マンゴーとチキン<ruby>南蛮<rt>なんばん</rt></ruby>、<ruby>高千穂<rt>たかちほ</rt></ruby><ruby>峡<rt>きょう</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>の<ruby>神話<rt>しんわ</rt></ruby>の<ruby>舞台<rt>ぶたい</rt></ruby>。",
+ "kagoshima": "<ruby>活火山<rt>かつかざん</rt></ruby>の<ruby>桜島<rt>さくらじま</rt></ruby>と、<ruby>黒豚<rt>くろぶた</rt></ruby>、さつまいも。<ruby>屋久島<rt>やくしま</rt></ruby>や<ruby>種子島<rt>たねがしま</rt></ruby>の<ruby>宇宙<rt>うちゅう</rt></ruby>センターもある。",
+ "okinawa": "<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>南<rt>みなみ</rt></ruby>の<ruby>県<rt>けん</rt></ruby>。<ruby>青<rt>あお</rt></ruby>い<ruby>海<rt>うみ</rt></ruby>とサンゴ、<ruby>首里<rt>しゅり</rt></ruby><ruby>城<rt>じょう</rt></ruby>、ゴーヤーチャンプルー。<ruby>昔<rt>むかし</rt></ruby>は<ruby>琉球<rt>りゅうきゅう</rt></ruby><ruby>王国<rt>おうこく</rt></ruby>。",
+ "sapporo": "<ruby>北海道<rt>ほっかいどう</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。2<ruby>月<rt>がつ</rt></ruby>の<ruby>雪<rt>ゆき</rt></ruby>まつり、<ruby>時計台<rt>とけいだい</rt></ruby>、みそラーメンとジンギスカン。",
+ "hakodate": "<ruby>北海道<rt>ほっかいどう</rt></ruby>の<ruby>南<rt>みなみ</rt></ruby>の<ruby>港町<rt>みなとまち</rt></ruby>。<ruby>函館山<rt>はこだてやま</rt></ruby>からの<ruby>夜景<rt>やけい</rt></ruby>と、<ruby>朝市<rt>あさいち</rt></ruby>の<ruby>海鮮丼<rt>かいせんどん</rt></ruby>、<ruby>星形<rt>ほしがた</rt></ruby>の<ruby>五稜郭<rt>ごりょうかく</rt></ruby>。",
+ "asahikawa": "<ruby>北海道<rt>ほっかいどう</rt></ruby>で2<ruby>番目<rt>ばんめ</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きな<ruby>町<rt>まち</rt></ruby>。<ruby>動物<rt>どうぶつ</rt></ruby>の<ruby>見<rt>み</rt></ruby>せ<ruby>方<rt>かた</rt></ruby>が<ruby>工夫<rt>くふう</rt></ruby>された<ruby>旭山<rt>あさひやま</rt></ruby><ruby>動物園<rt>どうぶつえん</rt></ruby>と、<ruby>旭川<rt>あさひかわ</rt></ruby>ラーメン。",
+ "sendai": "「<ruby>杜<rt>もり</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>」とよばれる<ruby>東北<rt>とうほく</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。<ruby>伊達政宗<rt>だてまさむね</rt></ruby>の<ruby>城下町<rt>じょうかまち</rt></ruby>で、<ruby>七夕<rt>たなばた</rt></ruby>まつりと<ruby>牛タン<rt>ぎゅうたん</rt></ruby>。",
+ "nikkocity": "<ruby>東照宮<rt>とうしょうぐう</rt></ruby>、<ruby>華厳<rt>けごん</rt></ruby>の<ruby>滝<rt>たき</rt></ruby>、<ruby>中禅寺湖<rt>ちゅうぜんじこ</rt></ruby>。「<ruby>日光<rt>にっこう</rt></ruby>を<ruby>見<rt>み</rt></ruby>ずして<ruby>結構<rt>けっこう</rt></ruby>と<ruby>言<rt>い</rt></ruby>うなかれ」と<ruby>言<rt>い</rt></ruby>われる。",
+ "kamakuracity": "<ruby>約<rt>やく</rt></ruby>800<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>に<ruby>武士<rt>ぶし</rt></ruby>の<ruby>政府<rt>せいふ</rt></ruby>が<ruby>置<rt>お</rt></ruby>かれた<ruby>古<rt>ふる</rt></ruby>い<ruby>町<rt>まち</rt></ruby>。<ruby>大仏<rt>だいぶつ</rt></ruby>と、たくさんの<ruby>寺<rt>てら</rt></ruby>、<ruby>江ノ電<rt>えのでん</rt></ruby>。",
+ "hakone": "<ruby>東京<rt>とうきょう</rt></ruby>から<ruby>近<rt>ちか</rt></ruby>い<ruby>温泉<rt>おんせん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。<ruby>芦ノ湖<rt>あしのこ</rt></ruby>から<ruby>富士山<rt>ふじさん</rt></ruby>が<ruby>見<rt>み</rt></ruby>え、お<ruby>正月<rt>しょうがつ</rt></ruby>の<ruby>駅伝<rt>えきでん</rt></ruby>で<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "karuizawa": "<ruby>夏<rt>なつ</rt></ruby>でも<ruby>涼<rt>すず</rt></ruby>しい<ruby>高原<rt>こうげん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。<ruby>別荘<rt>べっそう</rt></ruby>とおしゃれなお<ruby>店<rt>みせ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く、テニスや<ruby>自転車<rt>じてんしゃ</rt></ruby>が<ruby>楽<rt>たの</rt></ruby>しめる。",
+ "matsumotocity": "<ruby>国宝<rt>こくほう</rt></ruby>の<ruby>松本<rt>まつもと</rt></ruby><ruby>城<rt>じょう</rt></ruby>がある<ruby>町<rt>まち</rt></ruby>。<ruby>北アルプス<rt>きたあるぷす</rt></ruby>の<ruby>玄関口<rt>げんかんぐち</rt></ruby>で、<ruby>上高地<rt>かみこうち</rt></ruby>へのバスが<ruby>出<rt>で</rt></ruby>る。",
+ "kanazawa": "<ruby>加賀<rt>かが</rt></ruby><ruby>百万<rt>ひゃくまん</rt></ruby><ruby>石<rt>こく</rt></ruby>の<ruby>城下町<rt>じょうかまち</rt></ruby>。<ruby>兼六<rt>けんろく</rt></ruby><ruby>園<rt>えん</rt></ruby>、<ruby>金箔<rt>きんぱく</rt></ruby>、<ruby>近江町市場<rt>おうみちょういちば</rt></ruby>の<ruby>海鮮<rt>かいせん</rt></ruby>、ひがし<ruby>茶屋<rt>ちゃや</rt></ruby><ruby>街<rt>がい</rt></ruby>。",
+ "nagoya": "<ruby>日本<rt>にほん</rt></ruby>で4<ruby>番目<rt>ばんめ</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きな<ruby>町<rt>まち</rt></ruby>。<ruby>名古屋城<rt>なごやじょう</rt></ruby>の<ruby>金<rt>きん</rt></ruby>のしゃちほこ、みそカツ、<ruby>手羽先<rt>てばさき</rt></ruby>、ひつまぶし。",
+ "kobe": "おしゃれな<ruby>港町<rt>みなとまち</rt></ruby>。<ruby>神戸<rt>こうべ</rt></ruby><ruby>牛<rt>うし</rt></ruby>、<ruby>中華街<rt>ちゅうかがい</rt></ruby>の<ruby>南京町<rt>なんきんまち</rt></ruby>、<ruby>山<rt>やま</rt></ruby>からの<ruby>夜景<rt>やけい</rt></ruby>、<ruby>有馬温泉<rt>ありまおんせん</rt></ruby>。",
+ "himejicity": "<ruby>白<rt>しろ</rt></ruby>い<ruby>姫路<rt>ひめじ</rt></ruby><ruby>城<rt>じょう</rt></ruby>がシンボルの<ruby>町<rt>まち</rt></ruby>。<ruby>城<rt>しろ</rt></ruby>は「<ruby>白鷺<rt>しらさぎ</rt></ruby><ruby>城<rt>じょう</rt></ruby>」ともよばれ、<ruby>日本<rt>にほん</rt></ruby>で<ruby>最初<rt>さいしょ</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "hiroshimacity": "<ruby>原爆<rt>げんばく</rt></ruby>ドームと<ruby>平和<rt>へいわ</rt></ruby><ruby>記念公園<rt>きねんこうえん</rt></ruby>がある<ruby>平和<rt>へいわ</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。お<ruby>好み焼<rt>このみや</rt></ruby>きと、カープの<ruby>野球<rt>やきゅう</rt></ruby>。",
+ "hakata": "<ruby>福岡<rt>ふくおか</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>。とんこつラーメン、<ruby>屋台<rt>やたい</rt></ruby>、<ruby>明太子<rt>めんたいこ</rt></ruby>、<ruby>博多<rt>はかた</rt></ruby><ruby>祇園<rt>ぎおん</rt></ruby><ruby>山笠<rt>やまかさ</rt></ruby>の<ruby>祭<rt>まつ</rt></ruby>り。",
+ "nagasakicity": "<ruby>坂<rt>さか</rt></ruby>の<ruby>多<rt>おお</rt></ruby>い<ruby>港町<rt>みなとまち</rt></ruby>。<ruby>眼鏡橋<rt>めがねばし</rt></ruby>、<ruby>平和公園<rt>へいわこうえん</rt></ruby>、ちゃんぽん、<ruby>夜景<rt>やけい</rt></ruby>がきれい。",
+ "naha": "<ruby>沖縄<rt>おきなわ</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。<ruby>国際<rt>こくさい</rt></ruby><ruby>通<rt>とお</rt></ruby>りのお<ruby>店<rt>みせ</rt></ruby>、<ruby>首里<rt>しゅり</rt></ruby><ruby>城<rt>じょう</rt></ruby>、<ruby>沖縄<rt>おきなわ</rt></ruby>そばとサーターアンダギー。",
+ "ishigaki": "<ruby>沖縄<rt>おきなわ</rt></ruby>の<ruby>南西<rt>なんせい</rt></ruby>にある<ruby>島<rt>しま</rt></ruby>。<ruby>川平湾<rt>かびらわん</rt></ruby>のエメラルドの<ruby>海<rt>うみ</rt></ruby>、マンタと<ruby>泳<rt>およ</rt></ruby>げるダイビング。",
+ "miyakojima": "「<ruby>宮古<rt>みやこ</rt></ruby>ブルー」とよばれる<ruby>透<rt>す</rt></ruby>きとおった<ruby>海<rt>うみ</rt></ruby>。<ruby>長<rt>なが</rt></ruby>い<ruby>橋<rt>はし</rt></ruby>で<ruby>近<rt>ちか</rt></ruby>くの<ruby>島<rt>しま</rt></ruby>とつながる。",
+ "sado": "<ruby>新潟<rt>にいがた</rt></ruby>の<ruby>沖<rt>おき</rt></ruby>にある<ruby>大<rt>おお</rt></ruby>きな<ruby>島<rt>しま</rt></ruby>。<ruby>特別<rt>とくべつ</rt></ruby><ruby>天然記念物<rt>てんねんきねんぶつ</rt></ruby>のトキがすみ、<ruby>金山<rt>きんざん</rt></ruby>のあとが<ruby>残<rt>のこ</rt></ruby>る。",
+ "awaji": "<ruby>瀬戸内海<rt>せとないかい</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>島<rt>しま</rt></ruby>。たまねぎの<ruby>名産<rt>めいさん</rt></ruby><ruby>地<rt>ち</rt></ruby>で、<ruby>明石<rt>あかし</rt></ruby><ruby>海峡<rt>かいきょう</rt></ruby><ruby>大橋<rt>おおはし</rt></ruby>で<ruby>神戸<rt>こうべ</rt></ruby>とつながる。",
+ "biwako": "<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>湖<rt>みずうみ</rt></ruby>。<ruby>約<rt>やく</rt></ruby>400<ruby>万<rt>まん</rt></ruby><ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>からある<ruby>古<rt>ふる</rt></ruby>い<ruby>湖<rt>みずうみ</rt></ruby>で、ここにしかいない<ruby>魚<rt>さかな</rt></ruby>がいる。",
+ "setonaikai": "<ruby>本州<rt>ほんしゅう</rt></ruby>・<ruby>四国<rt>しこく</rt></ruby>・<ruby>九州<rt>きゅうしゅう</rt></ruby>にかこまれた おだやかな<ruby>海<rt>うみ</rt></ruby>。<ruby>約<rt>やく</rt></ruby>700の<ruby>島<rt>しま</rt></ruby>が<ruby>浮<rt>う</rt></ruby>かび、みかんやレモンが<ruby>育<rt>そだ</rt></ruby>つ。",
+ "fujisan": "<ruby>高<rt>たか</rt></ruby>さ3776mで<ruby>日本一<rt>にほんいち</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>山<rt>やま</rt></ruby>。<ruby>世界<rt>せかい</rt></ruby><ruby>文化<rt>ぶんか</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>で、<ruby>夏<rt>なつ</rt></ruby>には<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>が<ruby>登<rt>のぼ</rt></ruby>る。",
+ "kanto": "<ruby>東京<rt>とうきょう</rt></ruby>・<ruby>神奈川<rt>かながわ</rt></ruby>・<ruby>埼玉<rt>さいたま</rt></ruby>・<ruby>千葉<rt>ちば</rt></ruby>・<ruby>茨城<rt>いばらき</rt></ruby>・<ruby>栃木<rt>とちぎ</rt></ruby>・<ruby>群馬<rt>ぐんま</rt></ruby>の7つ。<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>地方<rt>ちほう</rt></ruby>。",
+ "kansai": "<ruby>大阪<rt>おおさか</rt></ruby>・<ruby>京都<rt>きょうと</rt></ruby>・<ruby>兵庫<rt>ひょうご</rt></ruby>・<ruby>奈良<rt>なら</rt></ruby>・<ruby>滋賀<rt>しが</rt></ruby>・<ruby>和歌山<rt>わかやま</rt></ruby>など。<ruby>古<rt>ふる</rt></ruby>い<ruby>都<rt>みやこ</rt></ruby>と<ruby>商売<rt>しょうばい</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。「<ruby>近畿<rt>きんき</rt></ruby>」ともいう。",
+ "tohoku": "<ruby>本州<rt>ほんしゅう</rt></ruby>の<ruby>北<rt>きた</rt></ruby>の6<ruby>県<rt>けん</rt></ruby>。<ruby>青森<rt>あおもり</rt></ruby>・<ruby>岩手<rt>いわて</rt></ruby>・<ruby>宮城<rt>みやぎ</rt></ruby>・<ruby>秋田<rt>あきた</rt></ruby>・<ruby>山形<rt>やまがた</rt></ruby>・<ruby>福島<rt>ふくしま</rt></ruby>。<ruby>雪<rt>ゆき</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く、お<ruby>米<rt>こめ</rt></ruby>とくだものがおいしい。",
+ "kyushu": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>南西<rt>なんせい</rt></ruby>にある<ruby>大<rt>おお</rt></ruby>きな<ruby>島<rt>しま</rt></ruby>。<ruby>福岡<rt>ふくおか</rt></ruby>・<ruby>佐賀<rt>さが</rt></ruby>・<ruby>長崎<rt>ながさき</rt></ruby>・<ruby>熊本<rt>くまもと</rt></ruby>・<ruby>大分<rt>おおいた</rt></ruby>・<ruby>宮崎<rt>みやざき</rt></ruby>・<ruby>鹿児島<rt>かごしま</rt></ruby>の7<ruby>県<rt>けん</rt></ruby>。<ruby>火山<rt>かざん</rt></ruby>と<ruby>温泉<rt>おんせん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
+ "shikoku": "<ruby>徳島<rt>とくしま</rt></ruby>・<ruby>香川<rt>かがわ</rt></ruby>・<ruby>愛媛<rt>えひめ</rt></ruby>・<ruby>高知<rt>こうち</rt></ruby>の4<ruby>県<rt>けん</rt></ruby>からなる<ruby>島<rt>しま</rt></ruby>。88のお<ruby>寺<rt>てら</rt></ruby>をめぐる「お<ruby>遍路<rt>へんろ</rt></ruby>」で<ruby>知<rt>し</rt></ruby>られる。",
+ "chubu": "<ruby>本州<rt>ほんしゅう</rt></ruby>のまん<ruby>中<rt>なか</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>アルプスの<ruby>高<rt>たか</rt></ruby>い<ruby>山々<rt>やまやま</rt></ruby>があり、<ruby>名古屋<rt>なごや</rt></ruby>や<ruby>金沢<rt>かなざわ</rt></ruby>などの<ruby>町<rt>まち</rt></ruby>がある。",
+ "chugoku": "<ruby>本州<rt>ほんしゅう</rt></ruby>の<ruby>西<rt>にし</rt></ruby>のはし。<ruby>鳥取<rt>とっとり</rt></ruby>・<ruby>島根<rt>しまね</rt></ruby>・<ruby>岡山<rt>おかやま</rt></ruby>・<ruby>広島<rt>ひろしま</rt></ruby>・<ruby>山口<rt>やまぐち</rt></ruby>の5<ruby>県<rt>けん</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby><ruby>海<rt>かい</rt></ruby><ruby>側<rt>がわ</rt></ruby>を<ruby>山陰<rt>さんいん</rt></ruby>、<ruby>瀬戸内海<rt>せとないかい</rt></ruby><ruby>側<rt>がわ</rt></ruby>を<ruby>山陽<rt>さんよう</rt></ruby>という。",
+ "tsukiji": "<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>魚市場<rt>うおいちば</rt></ruby>があった<ruby>町<rt>まち</rt></ruby>。<ruby>今<rt>いま</rt></ruby>も<ruby>場外<rt>じょうがい</rt></ruby><ruby>市場<rt>しじょう</rt></ruby>に お<ruby>寿司<rt>すし</rt></ruby>や<ruby>海鮮<rt>かいせん</rt></ruby>のお<ruby>店<rt>みせ</rt></ruby>がならぶ。",
+ "asakusa": "<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>下町<rt>したまち</rt></ruby>。<ruby>浅草<rt>あさくさ</rt></ruby><ruby>寺<rt>てら</rt></ruby>と<ruby>雷門<rt>かみなりもん</rt></ruby>、<ruby>人力車<rt>じんりきしゃ</rt></ruby>、<ruby>仲見世<rt>なかみせ</rt></ruby><ruby>通<rt>とお</rt></ruby>りの おみやげ<ruby>屋<rt>や</rt></ruby>さん。",
+ "shinjuku": "<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>乗り降<rt>のりお</rt></ruby>りする<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>駅<rt>えき</rt></ruby>がある<ruby>町<rt>まち</rt></ruby>。<ruby>高層<rt>こうそう</rt></ruby>ビルと<ruby>都庁<rt>とちょう</rt></ruby>、<ruby>新宿御苑<rt>しんじゅくぎょえん</rt></ruby>。",
+ "akihabara": "<ruby>電気<rt>でんき</rt></ruby><ruby>製品<rt>せいひん</rt></ruby>とアニメ、ゲームの<ruby>町<rt>まち</rt></ruby>。<ruby>世界中<rt>せかいじゅう</rt></ruby>からファンが<ruby>集<rt>あつ</rt></ruby>まる。",
+ "yokohamacity": "<ruby>日本<rt>にほん</rt></ruby>で2<ruby>番目<rt>ばんめ</rt></ruby>に<ruby>人口<rt>じんこう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>町<rt>まち</rt></ruby>。<ruby>港<rt>みなと</rt></ruby>のみなとみらい、<ruby>中華街<rt>ちゅうかがい</rt></ruby>、<ruby>赤<rt>あか</rt></ruby>レンガ<ruby>倉庫<rt>そうこ</rt></ruby>。",
+ "kawagoe": "「<ruby>小江戸<rt>こえど</rt></ruby>」とよばれる<ruby>蔵<rt>くら</rt></ruby>の<ruby>町並<rt>まちな</rt></ruby>み。<ruby>時<rt>じ</rt></ruby>の<ruby>鐘<rt>かね</rt></ruby>と、さつまいものお<ruby>菓子<rt>かし</rt></ruby>。",
+ "narita": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>空<rt>そら</rt></ruby>の<ruby>玄関<rt>げんかん</rt></ruby> <ruby>成田空港<rt>なりたくうこう</rt></ruby>がある<ruby>町<rt>まち</rt></ruby>。<ruby>成田山<rt>なりたさん</rt></ruby><ruby>新勝<rt>しんしょう</rt></ruby><ruby>寺<rt>じ</rt></ruby>は<ruby>初<rt>はつ</rt></ruby>もうでの<ruby>人<rt>ひと</rt></ruby>でにぎわう。",
+ "atami": "<ruby>海<rt>うみ</rt></ruby>が<ruby>見<rt>み</rt></ruby>える<ruby>温泉<rt>おんせん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。<ruby>海岸<rt>かいがん</rt></ruby>で<ruby>花火<rt>はなび</rt></ruby><ruby>大会<rt>たいかい</rt></ruby>が1<ruby>年<rt>ねん</rt></ruby>に<ruby>何度<rt>なんど</rt></ruby>も<ruby>開<rt>ひら</rt></ruby>かれる。",
+ "nagano2": "<ruby>長野市<rt>ながのし</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>にある<ruby>約<rt>やく</rt></ruby>1400<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>からの<ruby>寺<rt>てら</rt></ruby>。<ruby>町<rt>まち</rt></ruby>は<ruby>寺<rt>てら</rt></ruby>の<ruby>門前町<rt>もんぜんちょう</rt></ruby>として<ruby>発展<rt>はってん</rt></ruby>した。",
+ "takayamacity": "「<ruby>飛驒<rt>ひだ</rt></ruby>の<ruby>小京都<rt>しょうきょうと</rt></ruby>」。<ruby>江戸<rt>えど</rt></ruby><ruby>時代<rt>じだい</rt></ruby>の<ruby>町並<rt>まちな</rt></ruby>みが<ruby>残<rt>のこ</rt></ruby>り、<ruby>朝市<rt>あさいち</rt></ruby>と<ruby>高山<rt>たかやま</rt></ruby><ruby>祭<rt>さい</rt></ruby>、<ruby>飛驒<rt>ひだ</rt></ruby><ruby>牛<rt>うし</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "ise2": "<ruby>伊勢<rt>いせ</rt></ruby><ruby>神宮<rt>じんぐう</rt></ruby>の<ruby>門前町<rt>もんぜんちょう</rt></ruby>。おかげ<ruby>横丁<rt>よこちょう</rt></ruby>の<ruby>赤福<rt>あかふく</rt></ruby>もちと、<ruby>伊勢<rt>いせ</rt></ruby>えび、<ruby>夫婦岩<rt>めおといわ</rt></ruby>。",
+ "uji": "お<ruby>茶<rt>ちゃ</rt></ruby>の<ruby>名産<rt>めいさん</rt></ruby><ruby>地<rt>ち</rt></ruby>。10<ruby>円<rt>えん</rt></ruby><ruby>玉<rt>たま</rt></ruby>の<ruby>平等院<rt>びょうどういん</rt></ruby><ruby>鳳凰<rt>ほうおう</rt></ruby><ruby>堂<rt>どう</rt></ruby>があり、「<ruby>源氏<rt>げんじ</rt></ruby><ruby>物語<rt>ものがたり</rt></ruby>」の<ruby>舞台<rt>ぶたい</rt></ruby>。",
+ "arashiyamacity": "<ruby>京都<rt>きょうと</rt></ruby>の<ruby>西<rt>にし</rt></ruby>の<ruby>観光地<rt>かんこうち</rt></ruby>。<ruby>渡月<rt>とげつ</rt></ruby><ruby>橋<rt>きょう</rt></ruby>と<ruby>竹林<rt>ちくりん</rt></ruby>の<ruby>小道<rt>こみち</rt></ruby>、<ruby>紅葉<rt>こうよう</rt></ruby>とトロッコ<ruby>列車<rt>れっしゃ</rt></ruby>。",
+ "namba": "<ruby>大阪<rt>おおさか</rt></ruby>の<ruby>南<rt>みなみ</rt></ruby>の<ruby>繁華街<rt>はんかがい</rt></ruby>。<ruby>道頓堀<rt>どうとんぼり</rt></ruby>のグリコの<ruby>看板<rt>かんばん</rt></ruby>、たこ<ruby>焼<rt>や</rt></ruby>き、お<ruby>笑<rt>わら</rt></ruby>いの<ruby>劇場<rt>げきじょう</rt></ruby>。",
+ "umeda": "<ruby>大阪<rt>おおさか</rt></ruby>の<ruby>北<rt>きた</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>。<ruby>大阪駅<rt>おおさかえき</rt></ruby>のまわりに<ruby>高<rt>たか</rt></ruby>いビルとデパート、<ruby>赤<rt>あか</rt></ruby>い<ruby>観覧車<rt>かんらんしゃ</rt></ruby>。",
+ "kurashikicity": "<ruby>白<rt>しろ</rt></ruby>い<ruby>壁<rt>かべ</rt></ruby>の<ruby>蔵<rt>くら</rt></ruby>がならぶ<ruby>美観<rt>びかん</rt></ruby><ruby>地区<rt>ちく</rt></ruby>と、ジーンズの<ruby>町<rt>まち</rt></ruby>。<ruby>大原<rt>おおはら</rt></ruby><ruby>美術館<rt>びじゅつかん</rt></ruby>がある。",
+ "miyajima": "<ruby>海<rt>うみ</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かぶ<ruby>赤<rt>あか</rt></ruby>い<ruby>鳥居<rt>とりい</rt></ruby>の<ruby>厳島神社<rt>いつくしまじんじゃ</rt></ruby>がある<ruby>島<rt>しま</rt></ruby>。<ruby>鹿<rt>しか</rt></ruby>が<ruby>歩<rt>ある</rt></ruby>き、もみじまんじゅうが<ruby>名物<rt>めいぶつ</rt></ruby>。",
+ "dogocity": "3000<ruby>年<rt>ねん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>をもつ<ruby>日本<rt>にほん</rt></ruby><ruby>最古<rt>さいこ</rt></ruby>といわれる<ruby>温泉<rt>おんせん</rt></ruby>。<ruby>松山<rt>まつやま</rt></ruby>の<ruby>町<rt>まち</rt></ruby>にあり、<ruby>路面電車<rt>ろめんでんしゃ</rt></ruby>で<ruby>行<rt>い</rt></ruby>ける。",
+ "beppucity": "わき<ruby>出<rt>で</rt></ruby>るお<ruby>湯<rt>ゆ</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>が<ruby>日本一<rt>にほんいち</rt></ruby>の<ruby>温泉<rt>おんせん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。「<ruby>地獄<rt>じごく</rt></ruby>めぐり」で<ruby>青<rt>あお</rt></ruby>や<ruby>赤<rt>あか</rt></ruby>の<ruby>温泉<rt>おんせん</rt></ruby>を<ruby>見<rt>み</rt></ruby>る。",
+ "yakushimacity": "<ruby>樹齢<rt>じゅれい</rt></ruby>1000<ruby>年<rt>ねん</rt></ruby>をこえる<ruby>屋久<rt>やく</rt></ruby><ruby>杉<rt>すぎ</rt></ruby>の<ruby>森<rt>もり</rt></ruby>がある<ruby>島<rt>しま</rt></ruby>。<ruby>雨<rt>あめ</rt></ruby>がとても<ruby>多<rt>おお</rt></ruby>く、<ruby>世界<rt>せかい</rt></ruby><ruby>自然<rt>しぜん</rt></ruby><ruby>遺産<rt>いさん</rt></ruby>。",
+ "kushiro": "<ruby>北海道<rt>ほっかいどう</rt></ruby>の<ruby>東<rt>ひがし</rt></ruby>の<ruby>港町<rt>みなとまち</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>の<ruby>湿原<rt>しつげん</rt></ruby> <ruby>釧路湿原<rt>くしろしつげん</rt></ruby>にタンチョウがくらし、<ruby>霧<rt>きり</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
+ "shirahama": "<ruby>白<rt>しろ</rt></ruby>い<ruby>砂浜<rt>すなはま</rt></ruby>と<ruby>温泉<rt>おんせん</rt></ruby>のリゾート。パンダのいるアドベンチャーワールドと、<ruby>円月<rt>えんげつ</rt></ruby><ruby>島<rt>とう</rt></ruby>の<ruby>夕日<rt>ゆうひ</rt></ruby>。",
+ "usa": "50の<ruby>州<rt>しゅう</rt></ruby>からなる <ruby>世界一<rt>せかいいち</rt></ruby>の<ruby>経済<rt>けいざい</rt></ruby><ruby>大国<rt>たいこく</rt></ruby>。<ruby>首都<rt>しゅと</rt></ruby>はワシントンで、いちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>町<rt>まち</rt></ruby>はニューヨーク。",
+ "canada": "ロシアに<ruby>次<rt>つ</rt></ruby>いで <ruby>世界<rt>せかい</rt></ruby>で2<ruby>番目<rt>ばんめ</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>い<ruby>国<rt>くに</rt></ruby>。<ruby>国旗<rt>こっき</rt></ruby>はカエデの<ruby>葉<rt>は</rt></ruby>。<ruby>英語<rt>えいご</rt></ruby>と<ruby>フランス語<rt>ふらんすご</rt></ruby>が<ruby>使<rt>つか</rt></ruby>われる。",
+ "mexico": "マヤやアステカの<ruby>文明<rt>ぶんめい</rt></ruby>が<ruby>栄<rt>さか</rt></ruby>えた<ruby>国<rt>くに</rt></ruby>。タコスや ソンブレロ、サボテンで<ruby>知<rt>し</rt></ruby>られる。",
+ "brazil": "<ruby>南<rt>みなみ</rt></ruby>アメリカでいちばん<ruby>広<rt>ひろ</rt></ruby>い<ruby>国<rt>くに</rt></ruby>。アマゾンの<ruby>熱帯雨林<rt>ねったいうりん</rt></ruby>、サッカー、リオのカーニバルが<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "argentina": "タンゴとサッカーの<ruby>国<rt>くに</rt></ruby>。<ruby>広<rt>ひろ</rt></ruby>い<ruby>草原<rt>そうげん</rt></ruby>パンパで<ruby>牛<rt>うし</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>て、<ruby>南<rt>みなみ</rt></ruby>のはしはパタゴニア。",
+ "peru": "インカ<ruby>帝国<rt>ていこく</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。マチュピチュやナスカの<ruby>地上絵<rt>ちじょうえ</rt></ruby>があり、ジャガイモの<ruby>生<rt>う</rt></ruby>まれた<ruby>土地<rt>とち</rt></ruby>。",
+ "chile": "<ruby>南北<rt>なんぼく</rt></ruby>に<ruby>約<rt>やく</rt></ruby>4300kmもある <ruby>細長<rt>ほそなが</rt></ruby>い<ruby>国<rt>くに</rt></ruby>。アンデス<ruby>山脈<rt>さんみゃく</rt></ruby>と <ruby>太平<rt>たいへい</rt></ruby><ruby>洋<rt>よう</rt></ruby>にはさまれている。",
+ "colombia": "コーヒーの<ruby>名産<rt>めいさん</rt></ruby><ruby>地<rt>ち</rt></ruby>。<ruby>南<rt>みなみ</rt></ruby>アメリカで<ruby>唯一<rt>ゆいいつ</rt></ruby>、<ruby>太平<rt>たいへい</rt></ruby><ruby>洋<rt>よう</rt></ruby>とカリブ<ruby>海<rt>かい</rt></ruby>の<ruby>両方<rt>りょうほう</rt></ruby>に<ruby>面<rt>めん</rt></ruby>している。",
+ "cuba": "カリブ<ruby>海<rt>かい</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かぶ<ruby>島<rt>しま</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>古<rt>ふる</rt></ruby>い<ruby>アメリカ車<rt>あめりかしゃ</rt></ruby>が<ruby>走<rt>はし</rt></ruby>り、<ruby>音楽<rt>おんがく</rt></ruby>とサルサ、<ruby>葉巻<rt>はまき</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
+ "uk": "イングランド・スコットランド・ウェールズ・<ruby>北<rt>きた</rt></ruby>アイルランドの4つからなる<ruby>島<rt>しま</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>首都<rt>しゅと</rt></ruby>はロンドン。",
+ "france": "<ruby>首都<rt>しゅと</rt></ruby>はパリ。ワインやチーズ、ファッションや<ruby>美術<rt>びじゅつ</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>観光客<rt>かんこうきゃく</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>国<rt>くに</rt></ruby>。",
+ "germany": "<ruby>首都<rt>しゅと</rt></ruby>はベルリン。<ruby>自動車<rt>じどうしゃ</rt></ruby>づくりが<ruby>得意<rt>とくい</rt></ruby>で、ソーセージとビール、お<ruby>城<rt>しろ</rt></ruby>でも<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "italy": "<ruby>長<rt>なが</rt></ruby>ぐつの<ruby>形<rt>かたち</rt></ruby>をした<ruby>国<rt>くに</rt></ruby>。ローマの<ruby>古<rt>ふる</rt></ruby>い<ruby>遺跡<rt>いせき</rt></ruby>、ピザやパスタ、ルネサンスの<ruby>美術<rt>びじゅつ</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
+ "spain": "<ruby>首都<rt>しゅと</rt></ruby>はマドリード。フラメンコ、<ruby>闘牛<rt>とうぎゅう</rt></ruby>、サッカー、パエリアが<ruby>有名<rt>ゆうめい</rt></ruby>で、<ruby>昼寝<rt>ひるね</rt></ruby>のシエスタの<ruby>習慣<rt>しゅうかん</rt></ruby>がある。",
+ "portugal": "ヨーロッパの<ruby>西<rt>にし</rt></ruby>のはし。<ruby>大航海<rt>だいこうかい</rt></ruby><ruby>時代<rt>じだい</rt></ruby>に<ruby>日本<rt>にほん</rt></ruby>へ<ruby>鉄砲<rt>てっぽう</rt></ruby>やパンを<ruby>伝<rt>つた</rt></ruby>えた<ruby>国<rt>くに</rt></ruby>。<ruby>首都<rt>しゅと</rt></ruby>はリスボン。",
+ "netherlands": "<ruby>国土<rt>こくど</rt></ruby>の4<ruby>分<rt>ぶん</rt></ruby>の1が<ruby>海<rt>うみ</rt></ruby>より<ruby>低<rt>ひく</rt></ruby>い。<ruby>風車<rt>ふうしゃ</rt></ruby>、チューリップ、<ruby>運河<rt>うんが</rt></ruby>、<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。<ruby>首都<rt>しゅと</rt></ruby>はアムステルダム。",
+ "belgium": "チョコレートとワッフル、ビールの<ruby>国<rt>くに</rt></ruby>。<ruby>首都<rt>しゅと</rt></ruby>ブリュッセルにはEUの<ruby>本部<rt>ほんぶ</rt></ruby>がある。",
+ "switzerland": "アルプスの<ruby>山<rt>やま</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>時計<rt>とけい</rt></ruby>とチーズ、チョコレートで<ruby>有名<rt>ゆうめい</rt></ruby>。どの<ruby>国<rt>くに</rt></ruby>とも<ruby>同盟<rt>どうめい</rt></ruby>しない「<ruby>永世<rt>えいせい</rt></ruby><ruby>中立国<rt>ちゅうりつこく</rt></ruby>」。",
+ "austria": "<ruby>音楽<rt>おんがく</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>ウィーンがある<ruby>国<rt>くに</rt></ruby>。モーツァルトが<ruby>生<rt>う</rt></ruby>まれ、アルプスの<ruby>山<rt>やま</rt></ruby>とスキーでも<ruby>知<rt>し</rt></ruby>られる。",
+ "sweden": "<ruby>北ヨーロッパ<rt>きたよーろっぱ</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>ノーベル賞<rt>のーべるしょう</rt></ruby>の<ruby>授賞式<rt>じゅしょうしき</rt></ruby>が<ruby>首都<rt>しゅと</rt></ruby>ストックホルムで<ruby>行<rt>おこな</rt></ruby>われる。<ruby>家具<rt>かぐ</rt></ruby>や<ruby>音楽<rt>おんがく</rt></ruby>も<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "norway": "<ruby>氷河<rt>ひょうが</rt></ruby>がけずった<ruby>深<rt>ふか</rt></ruby>い<ruby>入り江<rt>いりえ</rt></ruby>「フィヨルド」の<ruby>国<rt>くに</rt></ruby>。<ruby>冬<rt>ふゆ</rt></ruby>はオーロラ、<ruby>夏<rt>なつ</rt></ruby>は<ruby>夜<rt>よる</rt></ruby>も<ruby>明<rt>あか</rt></ruby>るい<ruby>白夜<rt>びゃくや</rt></ruby>が<ruby>見<rt>み</rt></ruby>られる。",
+ "denmark": "<ruby>童話<rt>どうわ</rt></ruby><ruby>作家<rt>さっか</rt></ruby>アンデルセンと、ブロックのおもちゃレゴが<ruby>生<rt>う</rt></ruby>まれた<ruby>国<rt>くに</rt></ruby>。<ruby>首都<rt>しゅと</rt></ruby>はコペンハーゲン。",
+ "finland": "<ruby>森<rt>もり</rt></ruby>と<ruby>湖<rt>みずうみ</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。サウナが<ruby>生<rt>う</rt></ruby>まれた<ruby>場所<rt>ばしょ</rt></ruby>で、ムーミンの<ruby>作者<rt>さくしゃ</rt></ruby>の<ruby>故郷<rt>こきょう</rt></ruby>。サンタクロース<ruby>村<rt>そん</rt></ruby>もある。",
+ "iceland": "<ruby>火山<rt>かざん</rt></ruby>と<ruby>氷河<rt>ひょうが</rt></ruby>の<ruby>島<rt>しま</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>温泉<rt>おんせん</rt></ruby>や<ruby>間欠泉<rt>かんけつせん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く、<ruby>冬<rt>ふゆ</rt></ruby>にはオーロラが<ruby>見<rt>み</rt></ruby>られる。",
+ "poland": "ショパンとコペルニクスが<ruby>生<rt>う</rt></ruby>まれた<ruby>国<rt>くに</rt></ruby>。<ruby>首都<rt>しゅと</rt></ruby>はワルシャワ。",
+ "czech": "<ruby>古<rt>ふる</rt></ruby>い<ruby>町並<rt>まちな</rt></ruby>みのプラハが<ruby>首都<rt>しゅと</rt></ruby>。ビールを<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>飲<rt>の</rt></ruby>む<ruby>国<rt>くに</rt></ruby>といわれる。",
+ "hungary": "ドナウ<ruby>川<rt>かわ</rt></ruby>が<ruby>流<rt>なが</rt></ruby>れる<ruby>首都<rt>しゅと</rt></ruby>ブダペストは「ドナウの<ruby>真珠<rt>しんじゅ</rt></ruby>」。<ruby>温泉<rt>おんせん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く、パプリカ<ruby>料理<rt>りょうり</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "greece": "オリンピックと<ruby>哲学<rt>てつがく</rt></ruby>が<ruby>生<rt>う</rt></ruby>まれた<ruby>国<rt>くに</rt></ruby>。パルテノン<ruby>神殿<rt>しんでん</rt></ruby>や、<ruby>白<rt>しろ</rt></ruby>い<ruby>家<rt>いえ</rt></ruby>がならぶエーゲ<ruby>海<rt>かい</rt></ruby>の<ruby>島々<rt>しまじま</rt></ruby>。",
+ "turkey": "ヨーロッパとアジアにまたがる<ruby>国<rt>くに</rt></ruby>。イスタンブールのモスク、ケバブ、のびるアイスで<ruby>知<rt>し</rt></ruby>られる。",
+ "russia": "<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>広<rt>ひろ</rt></ruby>い<ruby>国<rt>くに</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>の45<ruby>倍<rt>ばい</rt></ruby>の<ruby>広<rt>ひろ</rt></ruby>さで、11の<ruby>時間帯<rt>じかんたい</rt></ruby>がある。<ruby>首都<rt>しゅと</rt></ruby>はモスクワ。",
+ "ireland": "「エメラルドの<ruby>島<rt>しま</rt></ruby>」とよばれる<ruby>緑<rt>みどり</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>妖精<rt>ようせい</rt></ruby>の<ruby>伝説<rt>でんせつ</rt></ruby>と、<ruby>音楽<rt>おんがく</rt></ruby>やダンスで<ruby>知<rt>し</rt></ruby>られる。",
+ "egypt": "ナイル<ruby>川<rt>かわ</rt></ruby>のめぐみで<ruby>栄<rt>さか</rt></ruby>えた<ruby>古代<rt>こだい</rt></ruby><ruby>文明<rt>ぶんめい</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。ピラミッドとスフィンクス、<ruby>首都<rt>しゅと</rt></ruby>はカイロ。",
+ "morocco": "アフリカの<ruby>北西<rt>ほくせい</rt></ruby>のはし。サハラ<ruby>砂漠<rt>さばく</rt></ruby>、<ruby>青<rt>あお</rt></ruby>い<ruby>町<rt>まち</rt></ruby>シャウエン、<ruby>市場<rt>しじょう</rt></ruby>のにぎわいで<ruby>知<rt>し</rt></ruby>られる。",
+ "kenya": "サバンナにライオンやゾウがくらす<ruby>国<rt>くに</rt></ruby>。マラソンの<ruby>強<rt>つよ</rt></ruby>い<ruby>選手<rt>せんしゅ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。<ruby>赤道<rt>せきどう</rt></ruby>が<ruby>通<rt>とお</rt></ruby>る。",
+ "tanzania": "アフリカ<ruby>最高峰<rt>さいこうほう</rt></ruby>キリマンジャロと、<ruby>動物<rt>どうぶつ</rt></ruby>の<ruby>大<rt>だい</rt></ruby><ruby>移動<rt>いどう</rt></ruby>で<ruby>有名<rt>ゆうめい</rt></ruby>なセレンゲティがある<ruby>国<rt>くに</rt></ruby>。",
+ "southafrica": "<ruby>アフリカ大陸<rt>あふりかたいりく</rt></ruby>の<ruby>南<rt>みなみ</rt></ruby>のはし。<ruby>喜望<rt>きぼう</rt></ruby><ruby>峰<rt>ぼん</rt></ruby>、ペンギン、ダイヤモンドや<ruby>金<rt>きん</rt></ruby>が<ruby>採<rt>と</rt></ruby>れる。",
+ "nigeria": "アフリカでいちばん<ruby>人口<rt>じんこう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>国<rt>くに</rt></ruby>。<ruby>約<rt>やく</rt></ruby>2<ruby>億<rt>おく</rt></ruby><ruby>人<rt>にん</rt></ruby>がくらし、<ruby>映画<rt>えいが</rt></ruby>づくりもさかん。",
+ "ethiopia": "コーヒーが<ruby>生<rt>う</rt></ruby>まれた<ruby>国<rt>くに</rt></ruby>。アフリカで<ruby>唯一<rt>ゆいいつ</rt></ruby>、ほかの<ruby>国<rt>くに</rt></ruby>の<ruby>植民地<rt>しょくみんち</rt></ruby>にならなかった。",
+ "madagascar": "アフリカの<ruby>東<rt>ひがし</rt></ruby>にうかぶ<ruby>大<rt>おお</rt></ruby>きな<ruby>島<rt>しま</rt></ruby>。バオバブの<ruby>木<rt>き</rt></ruby>や、ここにしかいない<ruby>生き物<rt>いきもの</rt></ruby>キツネザルがくらす。",
+ "saudi": "アラビア<ruby>半島<rt>はんとう</rt></ruby>の<ruby>大部分<rt>だいぶぶん</rt></ruby>をしめる<ruby>砂漠<rt>さばく</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>石油<rt>せきゆ</rt></ruby>がたくさん<ruby>採<rt>と</rt></ruby>れ、<ruby>イスラム教<rt>いすらむきょう</rt></ruby>の<ruby>聖地<rt>せいち</rt></ruby>メッカがある。",
+ "uae": "7つの<ruby>首長国<rt>しゅちょうこく</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まった<ruby>国<rt>くに</rt></ruby>。ドバイには<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>いビル ブルジュ・ハリファがある。",
+ "israel": "<ruby>ユダヤ教<rt>ゆだやきょう</rt></ruby>・<ruby>キリスト教<rt>きりすときょう</rt></ruby>・<ruby>イスラム教<rt>いすらむきょう</rt></ruby>の<ruby>聖地<rt>せいち</rt></ruby>エルサレムがある。<ruby>死海<rt>しかい</rt></ruby>では<ruby>体<rt>からだ</rt></ruby>が<ruby>浮<rt>う</rt></ruby>く。",
+ "iran": "<ruby>昔<rt>むかし</rt></ruby>はペルシャとよばれた<ruby>国<rt>くに</rt></ruby>。<ruby>美<rt>うつく</rt></ruby>しいモスクとペルシャじゅうたん、ペルセポリスの<ruby>遺跡<rt>いせき</rt></ruby>がある。",
+ "india": "<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>人口<rt>じんこう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>国<rt>くに</rt></ruby>。タージ・マハル、カレー、ヨガ、<ruby>映画<rt>えいが</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "nepal": "<ruby>世界<rt>せかい</rt></ruby><ruby>最高峰<rt>さいこうほう</rt></ruby>エベレストがあるヒマラヤの<ruby>国<rt>くに</rt></ruby>。<ruby>国旗<rt>こっき</rt></ruby>は<ruby>世界<rt>せかい</rt></ruby>で<ruby>唯一<rt>ゆいいつ</rt></ruby> <ruby>四角<rt>しかく</rt></ruby>ではない。",
+ "srilanka": "インドの<ruby>南<rt>みなみ</rt></ruby>にうかぶ<ruby>島<rt>しま</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>紅茶<rt>こうちゃ</rt></ruby>の<ruby>名産<rt>めいさん</rt></ruby><ruby>地<rt>ち</rt></ruby>で、<ruby>昔<rt>むかし</rt></ruby>は「セイロン」とよばれた。",
+ "thailand": "「ほほえみの<ruby>国<rt>くに</rt></ruby>」。<ruby>金色<rt>きんいろ</rt></ruby>の<ruby>寺<rt>てら</rt></ruby>、ゾウ、トムヤムクンなどの<ruby>料理<rt>りょうり</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。<ruby>首都<rt>しゅと</rt></ruby>はバンコク。",
+ "vietnam": "<ruby>細長<rt>ほそなが</rt></ruby>い<ruby>国<rt>くに</rt></ruby>で、フォーや<ruby>生春巻<rt>なまはるま</rt></ruby>きの<ruby>料理<rt>りょうり</rt></ruby>、アオザイという<ruby>民族<rt>みんぞく</rt></ruby><ruby>衣装<rt>いしょう</rt></ruby>、<ruby>ハロン湾<rt>はろんわん</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "cambodia": "<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>寺院<rt>じいん</rt></ruby><ruby>遺跡<rt>いせき</rt></ruby>アンコール・ワットがある<ruby>国<rt>くに</rt></ruby>。<ruby>国旗<rt>こっき</rt></ruby>にもその<ruby>絵<rt>え</rt></ruby>が<ruby>描<rt>えが</rt></ruby>かれている。",
+ "singapore": "<ruby>東京<rt>とうきょう</rt></ruby>23<ruby>区<rt>く</rt></ruby>ほどの<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。マーライオン<ruby>像<rt>ぞう</rt></ruby>と、<ruby>船<rt>ふね</rt></ruby>をのせたようなホテルが<ruby>有名<rt>ゆうめい</rt></ruby>。とても<ruby>清潔<rt>せいけつ</rt></ruby>。",
+ "malaysia": "ペトロナスツインタワーがある<ruby>首都<rt>しゅと</rt></ruby>クアラルンプール。<ruby>熱帯<rt>ねったい</rt></ruby>のジャングルにオランウータンがくらす。",
+ "indonesia": "1<ruby>万7000<rt>まんななれいれいれい</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>の<ruby>島<rt>しま</rt></ruby>からなる<ruby>国<rt>くに</rt></ruby>。バリ<ruby>島<rt>とう</rt></ruby>のリゾート、コモドオオトカゲ、ボロブドゥールで<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "philippines": "7000<ruby>以上<rt>いじょう</rt></ruby>の<ruby>島<rt>しま</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>白<rt>しろ</rt></ruby>い<ruby>砂浜<rt>すなはま</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>、バナナやマンゴー、<ruby>明<rt>あか</rt></ruby>るい<ruby>人々<rt>ひとびと</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
+ "china": "<ruby>万里<rt>ばんり</rt></ruby>の<ruby>長城<rt>ちょうじょう</rt></ruby>、パンダ、4000<ruby>年<rt>ねん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>。<ruby>人口<rt>じんこう</rt></ruby>は<ruby>約<rt>やく</rt></ruby>14<ruby>億<rt>おく</rt></ruby><ruby>人<rt>にん</rt></ruby>で、<ruby>日本<rt>にほん</rt></ruby>のとなりの<ruby>大<rt>おお</rt></ruby>きな<ruby>国<rt>くに</rt></ruby>。",
+ "korea": "<ruby>日本<rt>にほん</rt></ruby>にいちばん<ruby>近<rt>ちか</rt></ruby>い<ruby>国<rt>くに</rt></ruby>。キムチ、K-POP、ハングル<ruby>文字<rt>もじ</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。<ruby>首都<rt>しゅと</rt></ruby>はソウル。",
+ "mongolia": "<ruby>草原<rt>そうげん</rt></ruby>と<ruby>遊牧民<rt>ゆうぼくみん</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>移動<rt>いどう</rt></ruby><ruby>式<rt>しき</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>ゲルでくらし、<ruby>馬<rt>うま</rt></ruby>に<ruby>乗<rt>の</rt></ruby>るのが<ruby>上手<rt>じょうず</rt></ruby>。<ruby>相撲<rt>すもう</rt></ruby>の<ruby>力士<rt>りきし</rt></ruby>も<ruby>多<rt>おお</rt></ruby>い。",
+ "taiwan": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>南<rt>みなみ</rt></ruby>にある<ruby>島<rt>しま</rt></ruby>。<ruby>夜市<rt>よいち</rt></ruby>の<ruby>屋台<rt>やたい</rt></ruby>、タピオカミルクティー、<ruby>高<rt>たか</rt></ruby>さ508mの<ruby>台北<rt>たいぺい</rt></ruby>101で<ruby>知<rt>し</rt></ruby>られる。",
+ "australia": "<ruby>大陸<rt>たいりく</rt></ruby>まるごと1つの<ruby>国<rt>くに</rt></ruby>。コアラやカンガルー、グレートバリアリーフ、<ruby>赤<rt>あか</rt></ruby>い<ruby>岩<rt>いわ</rt></ruby>ウルルが<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "newzealand": "<ruby>人<rt>ひと</rt></ruby>より<ruby>羊<rt>ひつじ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>国<rt>くに</rt></ruby>。<ruby>飛<rt>と</rt></ruby>べない<ruby>鳥<rt>とり</rt></ruby>キウイと、ラグビーのオールブラックスで<ruby>知<rt>し</rt></ruby>られる。",
+ "fiji": "<ruby>南<rt>みなみ</rt></ruby><ruby>太平洋<rt>たいへいよう</rt></ruby>にうかぶ300<ruby>以上<rt>いじょう</rt></ruby>の<ruby>島<rt>しま</rt></ruby>の<ruby>国<rt>くに</rt></ruby>。<ruby>青<rt>あお</rt></ruby>いサンゴの<ruby>海<rt>うみ</rt></ruby>と、あたたかい「ブラ！」のあいさつ。",
+ "newyork": "アメリカ<ruby>最大<rt>さいだい</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>。<ruby>自由<rt>じゆう</rt></ruby>の<ruby>女神<rt>めがみ</rt></ruby>、タイムズスクエア、<ruby>高層<rt>こうそう</rt></ruby>ビルがならぶマンハッタン。",
+ "losangeles": "<ruby>映画<rt>えいが</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>ハリウッドがある<ruby>町<rt>まち</rt></ruby>。1<ruby>年<rt>ねん</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>あたたかく、ビーチとヤシの<ruby>木<rt>き</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる。",
+ "sanfrancisco": "<ruby>赤<rt>あか</rt></ruby>いゴールデン・ゲート・ブリッジと、<ruby>坂<rt>さか</rt></ruby>を<ruby>走<rt>はし</rt></ruby>るケーブルカーの<ruby>町<rt>まち</rt></ruby>。<ruby>霧<rt>きり</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
+ "honolulu": "ハワイのいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>町<rt>まち</rt></ruby>。ワイキキビーチとダイヤモンドヘッドがあり、フラダンスの<ruby>本場<rt>ほんば</rt></ruby>。",
+ "chicago": "<ruby>五大湖<rt>ごだいこ</rt></ruby>のほとりの<ruby>大都市<rt>だいとし</rt></ruby>。<ruby>高層<rt>こうそう</rt></ruby>ビルの<ruby>生<rt>う</rt></ruby>まれた<ruby>町<rt>まち</rt></ruby>で、<ruby>深皿<rt>ふかざら</rt></ruby>ピザが<ruby>名物<rt>めいぶつ</rt></ruby>。",
+ "lasvegas": "<ruby>砂漠<rt>さばく</rt></ruby>のまん<ruby>中<rt>なか</rt></ruby>にできた <ruby>光<rt>ひか</rt></ruby>りかがやく<ruby>町<rt>まち</rt></ruby>。<ruby>世界中<rt>せかいじゅう</rt></ruby>から<ruby>人<rt>ひと</rt></ruby>がショーやホテルを<ruby>見<rt>み</rt></ruby>に<ruby>集<rt>あつ</rt></ruby>まる。",
+ "vancouver": "<ruby>海<rt>うみ</rt></ruby>と<ruby>山<rt>やま</rt></ruby>にかこまれた <ruby>住<rt>す</rt></ruby>みやすさ<ruby>世界一<rt>せかいいち</rt></ruby>といわれる<ruby>町<rt>まち</rt></ruby>。<ruby>冬季<rt>とうき</rt></ruby>オリンピックが<ruby>開<rt>ひら</rt></ruby>かれた。",
+ "toronto": "カナダ<ruby>最大<rt>さいだい</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>。<ruby>高<rt>たか</rt></ruby>さ553mのCNタワーが<ruby>目印<rt>めじるし</rt></ruby>で、<ruby>世界中<rt>せかいじゅう</rt></ruby>から<ruby>人<rt>ひと</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まる<ruby>国際都市<rt>こくさいとし</rt></ruby>。",
+ "rio": "コルコバードの<ruby>丘<rt>おか</rt></ruby>のキリスト<ruby>像<rt>ぞう</rt></ruby>と、<ruby>世界一<rt>せかいいち</rt></ruby>のカーニバルで<ruby>有名<rt>ゆうめい</rt></ruby>。コパカバーナの<ruby>海岸<rt>かいがん</rt></ruby>も。",
+ "buenosaires": "「<ruby>南米<rt>なんべい</rt></ruby>のパリ」とよばれる<ruby>美<rt>うつく</rt></ruby>しい<ruby>町<rt>まち</rt></ruby>。タンゴが<ruby>生<rt>う</rt></ruby>まれ、ステーキが<ruby>名物<rt>めいぶつ</rt></ruby>。",
+ "london": "イギリスの<ruby>首都<rt>しゅと</rt></ruby>。<ruby>時計台<rt>とけいだい</rt></ruby>ビッグ・ベン、<ruby>赤<rt>あか</rt></ruby>い<ruby>二<rt>に</rt></ruby><ruby>階<rt>かい</rt></ruby><ruby>建<rt>だ</rt></ruby>てバス、テムズ<ruby>川<rt>かわ</rt></ruby>の<ruby>大<rt>だい</rt></ruby><ruby>観覧車<rt>かんらんしゃ</rt></ruby>。",
+ "paris": "「<ruby>花<rt>はな</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>」。エッフェル<ruby>塔<rt>とう</rt></ruby>、ルーブル<ruby>美術館<rt>びじゅつかん</rt></ruby>、セーヌ<ruby>川<rt>かわ</rt></ruby>、おしゃれなカフェで<ruby>知<rt>し</rt></ruby>られる。",
+ "rome": "2700<ruby>年<rt>ねん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>がある「<ruby>永遠<rt>えいえん</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>」。コロッセオやトレビの<ruby>泉<rt>いずみ</rt></ruby>があり、<ruby>中<rt>なか</rt></ruby>に<ruby>バチカン市国<rt>ばちかんしこく</rt></ruby>がある。",
+ "milancity": "ファッションとデザインの<ruby>都<rt>みやこ</rt></ruby>。<ruby>大<rt>おお</rt></ruby>きなドゥオーモと、サッカーの<ruby>強<rt>つよ</rt></ruby>いチームで<ruby>知<rt>し</rt></ruby>られる。",
+ "berlin": "ドイツの<ruby>首都<rt>しゅと</rt></ruby>。<ruby>東西<rt>とうざい</rt></ruby>に<ruby>分<rt>わ</rt></ruby>けていた「ベルリンの<ruby>壁<rt>かべ</rt></ruby>」のあとが<ruby>残<rt>のこ</rt></ruby>る。<ruby>市<rt>し</rt></ruby>のシンボルはクマ。",
+ "munich": "<ruby>世界一<rt>せかいいち</rt></ruby>のビール<ruby>祭<rt>まつ</rt></ruby>り「オクトーバーフェスト」の<ruby>町<rt>まち</rt></ruby>。<ruby>近<rt>ちか</rt></ruby>くにノイシュヴァンシュタイン<ruby>城<rt>じょう</rt></ruby>がある。",
+ "madrid": "スペインの<ruby>首都<rt>しゅと</rt></ruby>。プラド<ruby>美術館<rt>びじゅつかん</rt></ruby>と、サッカーのレアル・マドリードで<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "barcelona": "<ruby>建築家<rt>けんちくか</rt></ruby>ガウディの<ruby>町<rt>まち</rt></ruby>。サグラダ・ファミリアが100<ruby>年<rt>ねん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>かけて <ruby>今<rt>いま</rt></ruby>も<ruby>建<rt>た</rt></ruby>てられている。",
+ "amsterdamcity": "<ruby>運河<rt>うんが</rt></ruby>が<ruby>町中<rt>まちなか</rt></ruby>をめぐるオランダの<ruby>首都<rt>しゅと</rt></ruby>。<ruby>自転車<rt>じてんしゃ</rt></ruby>が<ruby>人<rt>ひと</rt></ruby>より<ruby>多<rt>おお</rt></ruby>く、ゴッホ<ruby>美術館<rt>びじゅつかん</rt></ruby>がある。",
+ "vienna": "「<ruby>音楽<rt>おんがく</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>」。ベートーベンやモーツァルトが<ruby>活躍<rt>かつやく</rt></ruby>し、<ruby>オペラ座<rt>おぺらざ</rt></ruby>や<ruby>宮殿<rt>きゅうでん</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>る。",
+ "prague": "「<ruby>百<rt>ひゃく</rt></ruby><ruby>塔<rt>とう</rt></ruby>の<ruby>町<rt>まち</rt></ruby>」とよばれる <ruby>中世<rt>ちゅうせい</rt></ruby>そのままの<ruby>美<rt>うつく</rt></ruby>しい<ruby>首都<rt>しゅと</rt></ruby>。カレル<ruby>橋<rt>きょう</rt></ruby>とプラハ<ruby>城<rt>じょう</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
+ "moscow": "ロシアの<ruby>首都<rt>しゅと</rt></ruby>。<ruby>赤<rt>あか</rt></ruby>の<ruby>広場<rt>ひろば</rt></ruby>と、たまねぎ<ruby>型<rt>がた</rt></ruby>の<ruby>屋根<rt>やね</rt></ruby>の<ruby>聖<rt>せい</rt></ruby>ワシリイ<ruby>大聖堂<rt>だいせいどう</rt></ruby>、<ruby>城壁<rt>じょうへき</rt></ruby>のクレムリン。",
+ "istanbul": "ヨーロッパとアジアにまたがる<ruby>唯一<rt>ゆいいつ</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>。ボスポラス<ruby>海峡<rt>かいきょう</rt></ruby>と<ruby>大<rt>おお</rt></ruby>きなモスクで<ruby>知<rt>し</rt></ruby>られる。",
+ "dubai": "<ruby>砂漠<rt>さばく</rt></ruby>に<ruby>生<rt>う</rt></ruby>まれた<ruby>未来<rt>みらい</rt></ruby><ruby>都市<rt>とし</rt></ruby>。<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>いビル ブルジュ・ハリファと、ヤシの<ruby>形<rt>かたち</rt></ruby>の<ruby>人工<rt>じんこう</rt></ruby><ruby>島<rt>とう</rt></ruby>。",
+ "cairo": "アフリカ<ruby>最大<rt>さいだい</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>で エジプトの<ruby>首都<rt>しゅと</rt></ruby>。すぐ<ruby>近<rt>ちか</rt></ruby>くにギザのピラミッドがある。",
+ "capetown": "テーブルのように<ruby>平<rt>たい</rt></ruby>らなテーブルマウンテンのふもとの<ruby>町<rt>まち</rt></ruby>。<ruby>近<rt>ちか</rt></ruby>くに<ruby>喜望<rt>きぼう</rt></ruby><ruby>峰<rt>みね</rt></ruby>がある。",
+ "mumbai": "インド<ruby>最大<rt>さいだい</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>。インド<ruby>映画<rt>えいが</rt></ruby>「ボリウッド」の<ruby>中心地<rt>ちゅうしんち</rt></ruby>で、<ruby>港<rt>みなと</rt></ruby>にインド<ruby>門<rt>もん</rt></ruby>が<ruby>立<rt>た</rt></ruby>つ。",
+ "bangkok": "タイの<ruby>首都<rt>しゅと</rt></ruby>。<ruby>金色<rt>きんいろ</rt></ruby>にかがやく<ruby>王宮<rt>おうきゅう</rt></ruby>と<ruby>寺院<rt>じいん</rt></ruby>、<ruby>水上<rt>すいじょう</rt></ruby>マーケット、<ruby>屋台<rt>やたい</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
+ "hongkong": "<ruby>高層<rt>こうそう</rt></ruby>ビルがぎっしりならぶ<ruby>港町<rt>みなとまち</rt></ruby>。ビクトリア・ピークからの<ruby>夜景<rt>やけい</rt></ruby>は「100<ruby>万<rt>まん</rt></ruby>ドルの<ruby>夜景<rt>やけい</rt></ruby>」。",
+ "shanghai": "<ruby>中国<rt>ちゅうごく</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>。<ruby>川<rt>かわ</rt></ruby>ぞいの<ruby>外灘<rt>わいたん</rt></ruby>に<ruby>古<rt>ふる</rt></ruby>い<ruby>西洋<rt>せいよう</rt></ruby>の<ruby>建物<rt>たてもの</rt></ruby>と、<ruby>対岸<rt>たいがん</rt></ruby>に<ruby>超高層<rt>ちょうこうそう</rt></ruby>ビルがならぶ。",
+ "beijing": "<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>首都<rt>しゅと</rt></ruby>。<ruby>皇帝<rt>こうてい</rt></ruby>の<ruby>宮殿<rt>きゅうでん</rt></ruby>だった<ruby>故宮<rt>こきゅう</rt></ruby>、<ruby>天安門<rt>てんあんもん</rt></ruby><ruby>広場<rt>ひろば</rt></ruby>、<ruby>近<rt>ちか</rt></ruby>くに<ruby>万里<rt>ばんり</rt></ruby>の<ruby>長城<rt>ちょうじょう</rt></ruby>がある。",
+ "seoul": "<ruby>韓国<rt>かんこく</rt></ruby>の<ruby>首都<rt>しゅと</rt></ruby>。<ruby>漢江<rt>かんこう</rt></ruby>が<ruby>流<rt>なが</rt></ruby>れ、<ruby>宮殿<rt>きゅうでん</rt></ruby>と<ruby>最新<rt>さいしん</rt></ruby>のビルがまざる。<ruby>人口<rt>じんこう</rt></ruby>は<ruby>約<rt>やく</rt></ruby>1000<ruby>万<rt>まん</rt></ruby><ruby>人<rt>にん</rt></ruby>。",
+ "taipei": "<ruby>台湾<rt>たいわん</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>の<ruby>町<rt>まち</rt></ruby>。<ruby>台北<rt>たいぺい</rt></ruby>101と、<ruby>夜市<rt>よいち</rt></ruby>の<ruby>屋台<rt>やたい</rt></ruby>、<ruby>故宮<rt>こきゅう</rt></ruby><ruby>博物<rt>はくぶつ</rt></ruby><ruby>院<rt>いん</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
+ "sydney": "オーストラリア<ruby>最大<rt>さいだい</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>。オペラハウスとハーバーブリッジが<ruby>港<rt>みなと</rt></ruby>のシンボル。",
+ "venicecity": "<ruby>道<rt>みち</rt></ruby>のかわりに<ruby>運河<rt>うんが</rt></ruby>が<ruby>通<rt>とお</rt></ruby>る「<ruby>水<rt>みず</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>」。ゴンドラに<ruby>乗<rt>の</rt></ruby>って<ruby>町<rt>まち</rt></ruby>をめぐる。",
+ "athens": "ギリシャの<ruby>首都<rt>しゅと</rt></ruby>。<ruby>丘<rt>おか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>のパルテノン<ruby>神殿<rt>しんでん</rt></ruby>は<ruby>約<rt>やく</rt></ruby>2500<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>のもの。<ruby>近代<rt>きんだい</rt></ruby>オリンピック<ruby>発祥<rt>はっしょう</rt></ruby>の<ruby>地<rt>ち</rt></ruby>。",
+ "lisbon": "7つの<ruby>丘<rt>おか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>がるポルトガルの<ruby>首都<rt>しゅと</rt></ruby>。<ruby>黄色<rt>きいろ</rt></ruby>い<ruby>路面電車<rt>ろめんでんしゃ</rt></ruby>と、<ruby>赤<rt>あか</rt></ruby>い<ruby>屋根<rt>やね</rt></ruby>の<ruby>町並<rt>まちな</rt></ruby>み。",
+ "stockholm": "14の<ruby>島<rt>しま</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>にできたスウェーデンの<ruby>首都<rt>しゅと</rt></ruby>。<ruby>ノーベル賞<rt>のーべるしょう</rt></ruby>の<ruby>授賞式<rt>じゅしょうしき</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われる。",
+ "kualalumpur": "マレーシアの<ruby>首都<rt>しゅと</rt></ruby>。2<ruby>本<rt>ぽん</rt></ruby>の<ruby>塔<rt>とう</rt></ruby>がつながったペトロナスツインタワーが<ruby>目印<rt>めじるし</rt></ruby>。",
+ "hanoi": "ベトナムの<ruby>首都<rt>しゅと</rt></ruby>。<ruby>湖<rt>みずうみ</rt></ruby>のまわりに<ruby>古<rt>ふる</rt></ruby>い<ruby>町<rt>まち</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がり、バイクがたくさん<ruby>走<rt>はし</rt></ruby>る。"
 };
 /* RUBY-END */
 /* Googleマップで ひらく(登録も お金も いらない ふつうのリンク) */
@@ -1174,14 +1382,216 @@ SPOTS.push(
   {n:"テカポ湖", c:"ニュージーランド", r:"てかぽこ", art:"tekapo", d:"ミルキーブルーの湖のほとりに小さな石の教会が建つ。夜空がきれいで、星空の保護区。"},
   {n:"マウント・クック", c:"ニュージーランド", r:"まうんとくっく", art:"mtcook", d:"標高3724mでニュージーランドの最高峰。氷河をたたえ、先住民の言葉で「雲をつきぬける山」。"},
   {n:"ロトルア", c:"ニュージーランド", r:"ろとるあ", art:"rotorua", d:"温泉と間欠泉の町。「ポフツ」の間欠泉は高さ30mまで湯をふき上げる。マオリの文化も体験できる。"},
-  {n:"ボラボラ島", c:"フランス領ポリネシア", r:"ぼらぼらとう", art:"borabora", d:"青いラグーンにかこまれた火山の島。水上コテージが並ぶ「太平洋の真珠」。"}
+  {n:"ボラボラ島", c:"フランス領ポリネシア", r:"ぼらぼらとう", art:"borabora", d:"青いラグーンにかこまれた火山の島。水上コテージが並ぶ「太平洋の真珠」。"},
+  {n:"北海道", c:"日本", r:"ほっかいどう", art:"hokkaido", k:"name", e:"🗾", d:"日本でいちばん北にある いちばん広い都道府県。冬は雪まつり、夏はラベンダー。県庁所在地は札幌。"},
+  {n:"青森県", c:"日本", r:"あおもりけん", art:"aomori", k:"name", e:"🍎", d:"本州の北のはし。りんごの生産が日本一で、夏のねぶた祭が有名。"},
+  {n:"岩手県", c:"日本", r:"いわてけん", art:"iwate", k:"name", e:"🍜", d:"北海道の次に広い県。わんこそばと、世界遺産の平泉、宮沢賢治のふるさと。"},
+  {n:"宮城県", c:"日本", r:"みやぎけん", art:"miyagi", k:"name", e:"🐟", d:"東北でいちばん大きな町 仙台がある。牛タンと、日本三景の松島で知られる。"},
+  {n:"秋田県", c:"日本", r:"あきたけん", art:"akita", k:"name", e:"🐕", d:"なまはげと秋田犬、きりたんぽの県。冬は雪が多く、かまくらが作られる。"},
+  {n:"山形県", c:"日本", r:"やまがたけん", art:"yamagata", k:"name", e:"🍒", d:"さくらんぼの生産が日本一。蔵王の樹氷と、山寺、銀山温泉で知られる。"},
+  {n:"福島県", c:"日本", r:"ふくしまけん", art:"fukushima", k:"name", e:"🍑", d:"東北の南のはし。ももの産地で、会津の鶴ヶ城と大内宿がある。"},
+  {n:"茨城県", c:"日本", r:"いばらきけん", art:"ibaraki", k:"name", e:"🌊", d:"納豆とメロンの産地。梅の名所 偕楽園と、袋田の滝がある。"},
+  {n:"栃木県", c:"日本", r:"とちぎけん", art:"tochigi", k:"name", e:"🍓", d:"いちごの生産が日本一。日光東照宮、華厳の滝、餃子の町 宇都宮。"},
+  {n:"群馬県", c:"日本", r:"ぐんまけん", art:"gunma", k:"name", e:"♨", d:"草津・伊香保などの温泉と、世界遺産の富岡製糸場。だるまの生産も日本一。"},
+  {n:"埼玉県", c:"日本", r:"さいたまけん", art:"saitama", k:"name", e:"🍠", d:"東京の北どなり。川越の古い町並み、秩父の自然、さつまいもで知られる。"},
+  {n:"千葉県", c:"日本", r:"ちばけん", art:"chiba", k:"name", e:"🥜", d:"成田空港と東京ディズニーリゾートがある県。落花生の生産が日本一。"},
+  {n:"東京都", c:"日本", r:"とうきょうと", art:"tokyo", k:"name", e:"🗼", d:"日本の首都。国会や皇居があり、約1400万人がくらす。東京タワーとスカイツリー。"},
+  {n:"神奈川県", c:"日本", r:"かながわけん", art:"kanagawa", k:"name", e:"⛵", d:"港町の横浜、鎌倉の大仏、箱根の温泉がある。人口は全国2位。"},
+  {n:"新潟県", c:"日本", r:"にいがたけん", art:"niigata", k:"name", e:"🍚", d:"お米「コシヒカリ」の産地で、日本一の米どころ。冬は雪が多く、佐渡島がある。"},
+  {n:"富山県", c:"日本", r:"とやまけん", art:"toyama", k:"name", e:"🏔", d:"立山連峰と黒部ダム、春の「雪の大谷」。海のホタルイカも有名。"},
+  {n:"石川県", c:"日本", r:"いしかわけん", art:"ishikawa", k:"name", e:"🍣", d:"金沢の兼六園と金箔、能登半島。新鮮な魚とおいしいお寿司で知られる。"},
+  {n:"福井県", c:"日本", r:"ふくいけん", art:"fukui", k:"name", e:"🦖", d:"恐竜の化石がたくさん見つかる県。東尋坊の崖と、永平寺、めがねの生産が日本一。"},
+  {n:"山梨県", c:"日本", r:"やまなしけん", art:"yamanashi", k:"name", e:"🍇", d:"富士山の北側にある県。ぶどうとももの生産が日本一で、富士五湖がある。"},
+  {n:"長野県", c:"日本", r:"ながのけん", art:"nagano", k:"name", e:"⛷", d:"日本アルプスの山に囲まれた県。冬季オリンピックが開かれ、りんごとそばが名物。"},
+  {n:"岐阜県", c:"日本", r:"ぎふけん", art:"gifu", k:"name", e:"🏠", d:"白川郷の合掌造りと、高山の古い町並み。鵜飼いや飛驒牛でも知られる。"},
+  {n:"静岡県", c:"日本", r:"しずおかけん", art:"shizuoka", k:"name", e:"🍵", d:"富士山の南側。お茶の生産が日本一で、うなぎやみかん、熱海の温泉。"},
+  {n:"愛知県", c:"日本", r:"あいちけん", art:"aichi", k:"name", e:"🚗", d:"名古屋城と金のしゃちほこ。自動車づくりの中心で、みそカツやひつまぶしが名物。"},
+  {n:"三重県", c:"日本", r:"みえけん", art:"mie", k:"name", e:"⛩", d:"伊勢神宮がある県。真珠の養殖、伊勢えび、鈴鹿サーキットで知られる。"},
+  {n:"滋賀県", c:"日本", r:"しがけん", art:"shiga", k:"name", e:"🌊", d:"日本一大きな湖 琵琶湖が県の6分の1をしめる。彦根城と近江牛。"},
+  {n:"京都府", c:"日本", r:"きょうとふ", art:"kyoto", k:"name", e:"🎎", d:"1000年以上 都だった古い町。金閣寺、清水寺、伏見稲荷など たくさんの寺と神社。"},
+  {n:"大阪府", c:"日本", r:"おおさかふ", art:"osaka", k:"name", e:"🐙", d:"西日本の中心の大都市。たこ焼きとお好み焼き、大阪城、お笑いで知られる。"},
+  {n:"兵庫県", c:"日本", r:"ひょうごけん", art:"hyogo", k:"name", e:"🏯", d:"港町の神戸と、白い姫路城、神戸牛。明石海峡大橋で淡路島とつながる。"},
+  {n:"奈良県", c:"日本", r:"ならけん", art:"nara", k:"name", e:"🦌", d:"日本でいちばん古い都があった県。東大寺の大仏と、公園の鹿、法隆寺。"},
+  {n:"和歌山県", c:"日本", r:"わかやまけん", art:"wakayama", k:"name", e:"🍊", d:"みかんと梅の生産が日本一。高野山、熊野古道、白浜の温泉とパンダ。"},
+  {n:"鳥取県", c:"日本", r:"とっとりけん", art:"tottoriken", k:"name", e:"🐫", d:"日本でいちばん人口が少ない県。鳥取砂丘とラクダ、梨の「二十世紀」、大山。"},
+  {n:"島根県", c:"日本", r:"しまねけん", art:"shimane", k:"name", e:"⛩", d:"縁むすびの出雲大社と、松江城、世界遺産の石見銀山がある。"},
+  {n:"岡山県", c:"日本", r:"おかやまけん", art:"okayama", k:"name", e:"🍑", d:"桃太郎の伝説の県。白桃とマスカット、後楽園、倉敷の美観地区。「晴れの国」。"},
+  {n:"広島県", c:"日本", r:"ひろしまけん", art:"hiroshima", k:"name", e:"🍁", d:"原爆ドームと厳島神社の2つの世界遺産。お好み焼きとカキ、もみじまんじゅう。"},
+  {n:"山口県", c:"日本", r:"やまぐちけん", art:"yamaguchi", k:"name", e:"🐡", d:"本州の西のはし。ふぐの本場 下関、錦帯橋、秋吉台のカルスト。"},
+  {n:"徳島県", c:"日本", r:"とくしまけん", art:"tokushima", k:"name", e:"🌀", d:"阿波おどりと鳴門の渦潮。すだちの生産が日本一で、祖谷のかずら橋がある。"},
+  {n:"香川県", c:"日本", r:"かがわけん", art:"kagawa", k:"name", e:"🍜", d:"日本でいちばん小さい県。「うどん県」とよばれ、金刀比羅宮と栗林公園がある。"},
+  {n:"愛媛県", c:"日本", r:"えひめけん", art:"ehime", k:"name", e:"🍊", d:"みかんの県。日本最古の道後温泉と松山城、しまなみ海道で本州とつながる。"},
+  {n:"高知県", c:"日本", r:"こうちけん", art:"kochi", k:"name", e:"🐟", d:"太平洋に面した県。坂本龍馬のふるさとで、カツオのたたきと四万十川、よさこい祭り。"},
+  {n:"福岡県", c:"日本", r:"ふくおかけん", art:"fukuoka", k:"name", e:"🍜", d:"九州でいちばん大きな県。とんこつラーメン、明太子、博多どんたく、太宰府天満宮。"},
+  {n:"佐賀県", c:"日本", r:"さがけん", art:"saga", k:"name", e:"🏺", d:"有田焼や伊万里焼などの焼き物で有名。吉野ヶ里遺跡と、バルーンフェスタ。"},
+  {n:"長崎県", c:"日本", r:"ながさきけん", art:"nagasaki", k:"name", e:"⛪", d:"昔から外国と交流した港町。ちゃんぽん、カステラ、グラバー園、軍艦島。"},
+  {n:"熊本県", c:"日本", r:"くまもとけん", art:"kumamoto", k:"name", e:"🐻", d:"熊本城とくまモンの県。阿蘇山の大きなカルデラと、馬刺しやからしれんこん。"},
+  {n:"大分県", c:"日本", r:"おおいたけん", art:"oita", k:"name", e:"♨", d:"温泉の数が日本一。別府と由布院の温泉、とり天やだんご汁が名物。"},
+  {n:"宮崎県", c:"日本", r:"みやざきけん", art:"miyazaki", k:"name", e:"🥭", d:"南国のような暖かい県。マンゴーとチキン南蛮、高千穂峡、日本の神話の舞台。"},
+  {n:"鹿児島県", c:"日本", r:"かごしまけん", art:"kagoshima", k:"name", e:"🌋", d:"活火山の桜島と、黒豚、さつまいも。屋久島や種子島の宇宙センターもある。"},
+  {n:"沖縄県", c:"日本", r:"おきなわけん", art:"okinawa", k:"name", e:"🌺", d:"日本でいちばん南の県。青い海とサンゴ、首里城、ゴーヤーチャンプルー。昔は琉球王国。"},
+  {n:"札幌", c:"日本・北海道", r:"さっぽろ", art:"sapporo", k:"name", e:"⛄", d:"北海道の中心の町。2月の雪まつり、時計台、みそラーメンとジンギスカン。"},
+  {n:"函館", c:"日本・北海道", r:"はこだて", art:"hakodate", k:"name", e:"🌃", d:"北海道の南の港町。函館山からの夜景と、朝市の海鮮丼、星形の五稜郭。"},
+  {n:"旭川", c:"日本・北海道", r:"あさひかわ", art:"asahikawa", k:"name", e:"🐧", d:"北海道で2番目に大きな町。動物の見せ方が工夫された旭山動物園と、旭川ラーメン。"},
+  {n:"仙台", c:"日本・宮城", r:"せんだい", art:"sendai", k:"name", e:"🎋", d:"「杜の都」とよばれる東北最大の町。伊達政宗の城下町で、七夕まつりと牛タン。"},
+  {n:"日光", c:"日本・栃木", r:"にっこう", art:"nikkocity", k:"name", e:"⛩", d:"東照宮、華厳の滝、中禅寺湖。「日光を見ずして結構と言うなかれ」と言われる。"},
+  {n:"鎌倉", c:"日本・神奈川", r:"かまくら", art:"kamakuracity", k:"name", e:"🧘", d:"約800年前に武士の政府が置かれた古い町。大仏と、たくさんの寺、江ノ電。"},
+  {n:"箱根", c:"日本・神奈川", r:"はこね", art:"hakone", k:"name", e:"♨", d:"東京から近い温泉の町。芦ノ湖から富士山が見え、お正月の駅伝で有名。"},
+  {n:"軽井沢", c:"日本・長野", r:"かるいざわ", art:"karuizawa", k:"name", e:"🌲", d:"夏でも涼しい高原の町。別荘とおしゃれなお店が多く、テニスや自転車が楽しめる。"},
+  {n:"松本", c:"日本・長野", r:"まつもと", art:"matsumotocity", k:"name", e:"🏯", d:"国宝の松本城がある町。北アルプスの玄関口で、上高地へのバスが出る。"},
+  {n:"金沢", c:"日本・石川", r:"かなざわ", art:"kanazawa", k:"name", e:"🍣", d:"加賀百万石の城下町。兼六園、金箔、近江町市場の海鮮、ひがし茶屋街。"},
+  {n:"名古屋", c:"日本・愛知", r:"なごや", art:"nagoya", k:"name", e:"🐉", d:"日本で4番目に大きな町。名古屋城の金のしゃちほこ、みそカツ、手羽先、ひつまぶし。"},
+  {n:"神戸", c:"日本・兵庫", r:"こうべ", art:"kobe", k:"name", e:"🚢", d:"おしゃれな港町。神戸牛、中華街の南京町、山からの夜景、有馬温泉。"},
+  {n:"姫路", c:"日本・兵庫", r:"ひめじ", art:"himejicity", k:"name", e:"🏯", d:"白い姫路城がシンボルの町。城は「白鷺城」ともよばれ、日本で最初の世界遺産。"},
+  {n:"広島", c:"日本・広島", r:"ひろしま", art:"hiroshimacity", k:"name", e:"🕊", d:"原爆ドームと平和記念公園がある平和の町。お好み焼きと、カープの野球。"},
+  {n:"博多", c:"日本・福岡", r:"はかた", art:"hakata", k:"name", e:"🍥", d:"福岡の中心。とんこつラーメン、屋台、明太子、博多祇園山笠の祭り。"},
+  {n:"長崎", c:"日本・長崎", r:"ながさき", art:"nagasakicity", k:"name", e:"🌉", d:"坂の多い港町。眼鏡橋、平和公園、ちゃんぽん、夜景がきれい。"},
+  {n:"那覇", c:"日本・沖縄", r:"なは", art:"naha", k:"name", e:"🌴", d:"沖縄の中心の町。国際通りのお店、首里城、沖縄そばとサーターアンダギー。"},
+  {n:"石垣島", c:"日本・沖縄", r:"いしがきじま", art:"ishigaki", k:"name", e:"🏝", d:"沖縄の南西にある島。川平湾のエメラルドの海、マンタと泳げるダイビング。"},
+  {n:"宮古島", c:"日本・沖縄", r:"みやこじま", art:"miyakojima", k:"name", e:"🏝", d:"「宮古ブルー」とよばれる透きとおった海。長い橋で近くの島とつながる。"},
+  {n:"佐渡島", c:"日本・新潟", r:"さどがしま", art:"sado", k:"name", e:"🐦", d:"新潟の沖にある大きな島。特別天然記念物のトキがすみ、金山のあとが残る。"},
+  {n:"淡路島", c:"日本・兵庫", r:"あわじしま", art:"awaji", k:"name", e:"🧅", d:"瀬戸内海でいちばん大きな島。たまねぎの名産地で、明石海峡大橋で神戸とつながる。"},
+  {n:"琵琶湖", c:"日本・滋賀", r:"びわこ", art:"biwako", k:"name", e:"🌊", d:"日本でいちばん大きな湖。約400万年前からある古い湖で、ここにしかいない魚がいる。"},
+  {n:"瀬戸内海", c:"日本", r:"せとないかい", art:"setonaikai", k:"name", e:"⛴", d:"本州・四国・九州にかこまれた おだやかな海。約700の島が浮かび、みかんやレモンが育つ。"},
+  {n:"富士山", c:"日本・静岡／山梨", r:"ふじさん", art:"fujisan", k:"name", e:"🗻", d:"高さ3776mで日本一高い山。世界文化遺産で、夏には多くの人が登る。"},
+  {n:"関東", c:"日本", r:"かんとう", art:"kanto", k:"name", e:"🏙", d:"東京・神奈川・埼玉・千葉・茨城・栃木・群馬の7つ。日本でいちばん人が多い地方。"},
+  {n:"関西", c:"日本", r:"かんさい", art:"kansai", k:"name", e:"🏯", d:"大阪・京都・兵庫・奈良・滋賀・和歌山など。古い都と商売の町。「近畿」ともいう。"},
+  {n:"東北", c:"日本", r:"とうほく", art:"tohoku", k:"name", e:"🍎", d:"本州の北の6県。青森・岩手・宮城・秋田・山形・福島。雪が多く、お米とくだものがおいしい。"},
+  {n:"九州", c:"日本", r:"きゅうしゅう", art:"kyushu", k:"name", e:"🌋", d:"日本の南西にある大きな島。福岡・佐賀・長崎・熊本・大分・宮崎・鹿児島の7県。火山と温泉が多い。"},
+  {n:"四国", c:"日本", r:"しこく", art:"shikoku", k:"name", e:"🚶", d:"徳島・香川・愛媛・高知の4県からなる島。88のお寺をめぐる「お遍路」で知られる。"},
+  {n:"中部", c:"日本", r:"ちゅうぶ", art:"chubu", k:"name", e:"🏔", d:"本州のまん中。日本アルプスの高い山々があり、名古屋や金沢などの町がある。"},
+  {n:"中国地方", c:"日本", r:"ちゅうごくちほう", art:"chugoku", k:"name", e:"🍁", d:"本州の西のはし。鳥取・島根・岡山・広島・山口の5県。日本海側を山陰、瀬戸内海側を山陽という。"},
+  {n:"築地", c:"日本・東京", r:"つきじ", art:"tsukiji", k:"name", e:"🍣", d:"東京の魚市場があった町。今も場外市場に お寿司や海鮮のお店がならぶ。"},
+  {n:"浅草", c:"日本・東京", r:"あさくさ", art:"asakusa", k:"name", e:"🏮", d:"東京の下町。浅草寺と雷門、人力車、仲見世通りの おみやげ屋さん。"},
+  {n:"新宿", c:"日本・東京", r:"しんじゅく", art:"shinjuku", k:"name", e:"🚉", d:"世界でいちばん乗り降りする人が多い駅がある町。高層ビルと都庁、新宿御苑。"},
+  {n:"秋葉原", c:"日本・東京", r:"あきはばら", art:"akihabara", k:"name", e:"🎮", d:"電気製品とアニメ、ゲームの町。世界中からファンが集まる。"},
+  {n:"横浜", c:"日本・神奈川", r:"よこはま", art:"yokohamacity", k:"name", e:"🚢", d:"日本で2番目に人口が多い町。港のみなとみらい、中華街、赤レンガ倉庫。"},
+  {n:"川越", c:"日本・埼玉", r:"かわごえ", art:"kawagoe", k:"name", e:"🏘", d:"「小江戸」とよばれる蔵の町並み。時の鐘と、さつまいものお菓子。"},
+  {n:"成田", c:"日本・千葉", r:"なりた", art:"narita", k:"name", e:"✈", d:"日本の空の玄関 成田空港がある町。成田山新勝寺は初もうでの人でにぎわう。"},
+  {n:"熱海", c:"日本・静岡", r:"あたみ", art:"atami", k:"name", e:"♨", d:"海が見える温泉の町。海岸で花火大会が1年に何度も開かれる。"},
+  {n:"善光寺", c:"日本・長野", r:"ぜんこうじ", art:"nagano2", k:"name", e:"🙏", d:"長野市の中心にある約1400年前からの寺。町は寺の門前町として発展した。"},
+  {n:"高山", c:"日本・岐阜", r:"たかやま", art:"takayamacity", k:"name", e:"🏘", d:"「飛驒の小京都」。江戸時代の町並みが残り、朝市と高山祭、飛驒牛が有名。"},
+  {n:"伊勢", c:"日本・三重", r:"いせ", art:"ise2", k:"name", e:"⛩", d:"伊勢神宮の門前町。おかげ横丁の赤福もちと、伊勢えび、夫婦岩。"},
+  {n:"宇治", c:"日本・京都", r:"うじ", art:"uji", k:"name", e:"🍵", d:"お茶の名産地。10円玉の平等院鳳凰堂があり、「源氏物語」の舞台。"},
+  {n:"嵐山", c:"日本・京都", r:"あらしやま", art:"arashiyamacity", k:"name", e:"🎋", d:"京都の西の観光地。渡月橋と竹林の小道、紅葉とトロッコ列車。"},
+  {n:"なんば", c:"日本・大阪", r:"なんば", art:"namba", k:"name", e:"🎤", d:"大阪の南の繁華街。道頓堀のグリコの看板、たこ焼き、お笑いの劇場。"},
+  {n:"梅田", c:"日本・大阪", r:"うめだ", art:"umeda", k:"name", e:"🎡", d:"大阪の北の中心。大阪駅のまわりに高いビルとデパート、赤い観覧車。"},
+  {n:"倉敷", c:"日本・岡山", r:"くらしき", art:"kurashikicity", k:"name", e:"🏘", d:"白い壁の蔵がならぶ美観地区と、ジーンズの町。大原美術館がある。"},
+  {n:"宮島", c:"日本・広島", r:"みやじま", art:"miyajima", k:"name", e:"⛩", d:"海に浮かぶ赤い鳥居の厳島神社がある島。鹿が歩き、もみじまんじゅうが名物。"},
+  {n:"道後温泉", c:"日本・愛媛", r:"どうごおんせん", art:"dogocity", k:"name", e:"♨", d:"3000年の歴史をもつ日本最古といわれる温泉。松山の町にあり、路面電車で行ける。"},
+  {n:"別府", c:"日本・大分", r:"べっぷ", art:"beppucity", k:"name", e:"♨", d:"わき出るお湯の量が日本一の温泉の町。「地獄めぐり」で青や赤の温泉を見る。"},
+  {n:"屋久島", c:"日本・鹿児島", r:"やくしま", art:"yakushimacity", k:"name", e:"🌳", d:"樹齢1000年をこえる屋久杉の森がある島。雨がとても多く、世界自然遺産。"},
+  {n:"釧路", c:"日本・北海道", r:"くしろ", art:"kushiro", k:"name", e:"🦢", d:"北海道の東の港町。日本最大の湿原 釧路湿原にタンチョウがくらし、霧が多い。"},
+  {n:"白浜", c:"日本・和歌山", r:"しらはま", art:"shirahama", k:"name", e:"🐼", d:"白い砂浜と温泉のリゾート。パンダのいるアドベンチャーワールドと、円月島の夕日。"},
+  {n:"アメリカ", c:"北アメリカ", r:"あめりか", art:"usa", k:"name", e:"🇺🇸", d:"50の州からなる 世界一の経済大国。首都はワシントンで、いちばん大きな町はニューヨーク。"},
+  {n:"カナダ", c:"北アメリカ", r:"かなだ", art:"canada", k:"name", e:"🇨🇦", d:"ロシアに次いで 世界で2番目に広い国。国旗はカエデの葉。英語とフランス語が使われる。"},
+  {n:"メキシコ", c:"北アメリカ", r:"めきしこ", art:"mexico", k:"name", e:"🇲🇽", d:"マヤやアステカの文明が栄えた国。タコスや ソンブレロ、サボテンで知られる。"},
+  {n:"ブラジル", c:"南アメリカ", r:"ぶらじる", art:"brazil", k:"name", e:"🇧🇷", d:"南アメリカでいちばん広い国。アマゾンの熱帯雨林、サッカー、リオのカーニバルが有名。"},
+  {n:"アルゼンチン", c:"南アメリカ", r:"あるぜんちん", art:"argentina", k:"name", e:"🇦🇷", d:"タンゴとサッカーの国。広い草原パンパで牛を育て、南のはしはパタゴニア。"},
+  {n:"ペルー", c:"南アメリカ", r:"ぺるー", art:"peru", k:"name", e:"🇵🇪", d:"インカ帝国の国。マチュピチュやナスカの地上絵があり、ジャガイモの生まれた土地。"},
+  {n:"チリ", c:"南アメリカ", r:"ちり", art:"chile", k:"name", e:"🇨🇱", d:"南北に約4300kmもある 細長い国。アンデス山脈と 太平洋にはさまれている。"},
+  {n:"コロンビア", c:"南アメリカ", r:"ころんびあ", art:"colombia", k:"name", e:"🇨🇴", d:"コーヒーの名産地。南アメリカで唯一、太平洋とカリブ海の両方に面している。"},
+  {n:"キューバ", c:"カリブ海", r:"きゅーば", art:"cuba", k:"name", e:"🇨🇺", d:"カリブ海に浮かぶ島の国。古いアメリカ車が走り、音楽とサルサ、葉巻で知られる。"},
+  {n:"イギリス", c:"ヨーロッパ", r:"いぎりす", art:"uk", k:"name", e:"🇬🇧", d:"イングランド・スコットランド・ウェールズ・北アイルランドの4つからなる島の国。首都はロンドン。"},
+  {n:"フランス", c:"ヨーロッパ", r:"ふらんす", art:"france", k:"name", e:"🇫🇷", d:"首都はパリ。ワインやチーズ、ファッションや美術で知られる。世界でいちばん観光客が多い国。"},
+  {n:"ドイツ", c:"ヨーロッパ", r:"どいつ", art:"germany", k:"name", e:"🇩🇪", d:"首都はベルリン。自動車づくりが得意で、ソーセージとビール、お城でも有名。"},
+  {n:"イタリア", c:"ヨーロッパ", r:"いたりあ", art:"italy", k:"name", e:"🇮🇹", d:"長ぐつの形をした国。ローマの古い遺跡、ピザやパスタ、ルネサンスの美術で知られる。"},
+  {n:"スペイン", c:"ヨーロッパ", r:"すぺいん", art:"spain", k:"name", e:"🇪🇸", d:"首都はマドリード。フラメンコ、闘牛、サッカー、パエリアが有名で、昼寝のシエスタの習慣がある。"},
+  {n:"ポルトガル", c:"ヨーロッパ", r:"ぽるとがる", art:"portugal", k:"name", e:"🇵🇹", d:"ヨーロッパの西のはし。大航海時代に日本へ鉄砲やパンを伝えた国。首都はリスボン。"},
+  {n:"オランダ", c:"ヨーロッパ", r:"おらんだ", art:"netherlands", k:"name", e:"🇳🇱", d:"国土の4分の1が海より低い。風車、チューリップ、運河、自転車で知られる。首都はアムステルダム。"},
+  {n:"ベルギー", c:"ヨーロッパ", r:"べるぎー", art:"belgium", k:"name", e:"🇧🇪", d:"チョコレートとワッフル、ビールの国。首都ブリュッセルにはEUの本部がある。"},
+  {n:"スイス", c:"ヨーロッパ", r:"すいす", art:"switzerland", k:"name", e:"🇨🇭", d:"アルプスの山の国。時計とチーズ、チョコレートで有名。どの国とも同盟しない「永世中立国」。"},
+  {n:"オーストリア", c:"ヨーロッパ", r:"おーすとりあ", art:"austria", k:"name", e:"🇦🇹", d:"音楽の都ウィーンがある国。モーツァルトが生まれ、アルプスの山とスキーでも知られる。"},
+  {n:"スウェーデン", c:"ヨーロッパ", r:"すうぇーでん", art:"sweden", k:"name", e:"🇸🇪", d:"北ヨーロッパの国。ノーベル賞の授賞式が首都ストックホルムで行われる。家具や音楽も有名。"},
+  {n:"ノルウェー", c:"ヨーロッパ", r:"のるうぇー", art:"norway", k:"name", e:"🇳🇴", d:"氷河がけずった深い入り江「フィヨルド」の国。冬はオーロラ、夏は夜も明るい白夜が見られる。"},
+  {n:"デンマーク", c:"ヨーロッパ", r:"でんまーく", art:"denmark", k:"name", e:"🇩🇰", d:"童話作家アンデルセンと、ブロックのおもちゃレゴが生まれた国。首都はコペンハーゲン。"},
+  {n:"フィンランド", c:"ヨーロッパ", r:"ふぃんらんど", art:"finland", k:"name", e:"🇫🇮", d:"森と湖の国。サウナが生まれた場所で、ムーミンの作者の故郷。サンタクロース村もある。"},
+  {n:"アイスランド", c:"ヨーロッパ", r:"あいすらんど", art:"iceland", k:"name", e:"🇮🇸", d:"火山と氷河の島の国。温泉や間欠泉が多く、冬にはオーロラが見られる。"},
+  {n:"ポーランド", c:"ヨーロッパ", r:"ぽーらんど", art:"poland", k:"name", e:"🇵🇱", d:"ショパンとコペルニクスが生まれた国。首都はワルシャワ。"},
+  {n:"チェコ", c:"ヨーロッパ", r:"ちぇこ", art:"czech", k:"name", e:"🇨🇿", d:"古い町並みのプラハが首都。ビールを世界でいちばん飲む国といわれる。"},
+  {n:"ハンガリー", c:"ヨーロッパ", r:"はんがりー", art:"hungary", k:"name", e:"🇭🇺", d:"ドナウ川が流れる首都ブダペストは「ドナウの真珠」。温泉が多く、パプリカ料理が有名。"},
+  {n:"ギリシャ", c:"ヨーロッパ", r:"ぎりしゃ", art:"greece", k:"name", e:"🇬🇷", d:"オリンピックと哲学が生まれた国。パルテノン神殿や、白い家がならぶエーゲ海の島々。"},
+  {n:"トルコ", c:"ヨーロッパ・アジア", r:"とるこ", art:"turkey", k:"name", e:"🇹🇷", d:"ヨーロッパとアジアにまたがる国。イスタンブールのモスク、ケバブ、のびるアイスで知られる。"},
+  {n:"ロシア", c:"ヨーロッパ・アジア", r:"ろしあ", art:"russia", k:"name", e:"🇷🇺", d:"世界でいちばん広い国。日本の45倍の広さで、11の時間帯がある。首都はモスクワ。"},
+  {n:"アイルランド", c:"ヨーロッパ", r:"あいるらんど", art:"ireland", k:"name", e:"🇮🇪", d:"「エメラルドの島」とよばれる緑の国。妖精の伝説と、音楽やダンスで知られる。"},
+  {n:"エジプト", c:"アフリカ", r:"えじぷと", art:"egypt", k:"name", e:"🇪🇬", d:"ナイル川のめぐみで栄えた古代文明の国。ピラミッドとスフィンクス、首都はカイロ。"},
+  {n:"モロッコ", c:"アフリカ", r:"もろっこ", art:"morocco", k:"name", e:"🇲🇦", d:"アフリカの北西のはし。サハラ砂漠、青い町シャウエン、市場のにぎわいで知られる。"},
+  {n:"ケニア", c:"アフリカ", r:"けにあ", art:"kenya", k:"name", e:"🇰🇪", d:"サバンナにライオンやゾウがくらす国。マラソンの強い選手が多い。赤道が通る。"},
+  {n:"タンザニア", c:"アフリカ", r:"たんざにあ", art:"tanzania", k:"name", e:"🇹🇿", d:"アフリカ最高峰キリマンジャロと、動物の大移動で有名なセレンゲティがある国。"},
+  {n:"南アフリカ", c:"アフリカ", r:"みなみあふりか", art:"southafrica", k:"name", e:"🇿🇦", d:"アフリカ大陸の南のはし。喜望峰、ペンギン、ダイヤモンドや金が採れる。"},
+  {n:"ナイジェリア", c:"アフリカ", r:"ないじぇりあ", art:"nigeria", k:"name", e:"🇳🇬", d:"アフリカでいちばん人口が多い国。約2億人がくらし、映画づくりもさかん。"},
+  {n:"エチオピア", c:"アフリカ", r:"えちおぴあ", art:"ethiopia", k:"name", e:"🇪🇹", d:"コーヒーが生まれた国。アフリカで唯一、ほかの国の植民地にならなかった。"},
+  {n:"マダガスカル", c:"アフリカ", r:"まだがすかる", art:"madagascar", k:"name", e:"🇲🇬", d:"アフリカの東にうかぶ大きな島。バオバブの木や、ここにしかいない生き物キツネザルがくらす。"},
+  {n:"サウジアラビア", c:"中東", r:"さうじあらびあ", art:"saudi", k:"name", e:"🇸🇦", d:"アラビア半島の大部分をしめる砂漠の国。石油がたくさん採れ、イスラム教の聖地メッカがある。"},
+  {n:"アラブ首長国連邦", c:"中東", r:"あらぶしゅちょうこくれんぽう", art:"uae", k:"name", e:"🇦🇪", d:"7つの首長国が集まった国。ドバイには世界一高いビル ブルジュ・ハリファがある。"},
+  {n:"イスラエル", c:"中東", r:"いすらえる", art:"israel", k:"name", e:"🇮🇱", d:"ユダヤ教・キリスト教・イスラム教の聖地エルサレムがある。死海では体が浮く。"},
+  {n:"イラン", c:"中東", r:"いらん", art:"iran", k:"name", e:"🇮🇷", d:"昔はペルシャとよばれた国。美しいモスクとペルシャじゅうたん、ペルセポリスの遺跡がある。"},
+  {n:"インド", c:"アジア", r:"いんど", art:"india", k:"name", e:"🇮🇳", d:"世界でいちばん人口が多い国。タージ・マハル、カレー、ヨガ、映画が有名。"},
+  {n:"ネパール", c:"アジア", r:"ねぱーる", art:"nepal", k:"name", e:"🇳🇵", d:"世界最高峰エベレストがあるヒマラヤの国。国旗は世界で唯一 四角ではない。"},
+  {n:"スリランカ", c:"アジア", r:"すりらんか", art:"srilanka", k:"name", e:"🇱🇰", d:"インドの南にうかぶ島の国。紅茶の名産地で、昔は「セイロン」とよばれた。"},
+  {n:"タイ", c:"アジア", r:"たい", art:"thailand", k:"name", e:"🇹🇭", d:"「ほほえみの国」。金色の寺、ゾウ、トムヤムクンなどの料理で知られる。首都はバンコク。"},
+  {n:"ベトナム", c:"アジア", r:"べとなむ", art:"vietnam", k:"name", e:"🇻🇳", d:"細長い国で、フォーや生春巻きの料理、アオザイという民族衣装、ハロン湾が有名。"},
+  {n:"カンボジア", c:"アジア", r:"かんぼじあ", art:"cambodia", k:"name", e:"🇰🇭", d:"世界最大級の寺院遺跡アンコール・ワットがある国。国旗にもその絵が描かれている。"},
+  {n:"シンガポール", c:"アジア", r:"しんがぽーる", art:"singapore", k:"name", e:"🇸🇬", d:"東京23区ほどの小さな島の国。マーライオン像と、船をのせたようなホテルが有名。とても清潔。"},
+  {n:"マレーシア", c:"アジア", r:"まれーしあ", art:"malaysia", k:"name", e:"🇲🇾", d:"ペトロナスツインタワーがある首都クアラルンプール。熱帯のジャングルにオランウータンがくらす。"},
+  {n:"インドネシア", c:"アジア", r:"いんどねしあ", art:"indonesia", k:"name", e:"🇮🇩", d:"1万7000以上の島からなる国。バリ島のリゾート、コモドオオトカゲ、ボロブドゥールで有名。"},
+  {n:"フィリピン", c:"アジア", r:"ふぃりぴん", art:"philippines", k:"name", e:"🇵🇭", d:"7000以上の島の国。白い砂浜の海、バナナやマンゴー、明るい人々で知られる。"},
+  {n:"中国", c:"アジア", r:"ちゅうごく", art:"china", k:"name", e:"🇨🇳", d:"万里の長城、パンダ、4000年の歴史。人口は約14億人で、日本のとなりの大きな国。"},
+  {n:"韓国", c:"アジア", r:"かんこく", art:"korea", k:"name", e:"🇰🇷", d:"日本にいちばん近い国。キムチ、K-POP、ハングル文字で知られる。首都はソウル。"},
+  {n:"モンゴル", c:"アジア", r:"もんごる", art:"mongolia", k:"name", e:"🇲🇳", d:"草原と遊牧民の国。移動式の家ゲルでくらし、馬に乗るのが上手。相撲の力士も多い。"},
+  {n:"台湾", c:"アジア", r:"たいわん", art:"taiwan", k:"name", e:"🇹🇼", d:"日本の南にある島。夜市の屋台、タピオカミルクティー、高さ508mの台北101で知られる。"},
+  {n:"オーストラリア", c:"オセアニア", r:"おーすとらりあ", art:"australia", k:"name", e:"🇦🇺", d:"大陸まるごと1つの国。コアラやカンガルー、グレートバリアリーフ、赤い岩ウルルが有名。"},
+  {n:"ニュージーランド", c:"オセアニア", r:"にゅーじーらんど", art:"newzealand", k:"name", e:"🇳🇿", d:"人より羊が多い国。飛べない鳥キウイと、ラグビーのオールブラックスで知られる。"},
+  {n:"フィジー", c:"オセアニア", r:"ふぃじー", art:"fiji", k:"name", e:"🇫🇯", d:"南太平洋にうかぶ300以上の島の国。青いサンゴの海と、あたたかい「ブラ！」のあいさつ。"},
+  {n:"ニューヨーク", c:"アメリカ", r:"にゅーよーく", art:"newyork", k:"name", e:"🗽", d:"アメリカ最大の都市。自由の女神、タイムズスクエア、高層ビルがならぶマンハッタン。"},
+  {n:"ロサンゼルス", c:"アメリカ", r:"ろさんぜるす", art:"losangeles", k:"name", e:"🎬", d:"映画の都ハリウッドがある町。1年中あたたかく、ビーチとヤシの木が広がる。"},
+  {n:"サンフランシスコ", c:"アメリカ", r:"さんふらんしすこ", art:"sanfrancisco", k:"name", e:"🌉", d:"赤いゴールデン・ゲート・ブリッジと、坂を走るケーブルカーの町。霧が多い。"},
+  {n:"ホノルル", c:"アメリカ・ハワイ", r:"ほのるる", art:"honolulu", k:"name", e:"🌺", d:"ハワイのいちばん大きな町。ワイキキビーチとダイヤモンドヘッドがあり、フラダンスの本場。"},
+  {n:"シカゴ", c:"アメリカ", r:"しかご", art:"chicago", k:"name", e:"🏙", d:"五大湖のほとりの大都市。高層ビルの生まれた町で、深皿ピザが名物。"},
+  {n:"ラスベガス", c:"アメリカ", r:"らすべがす", art:"lasvegas", k:"name", e:"🎰", d:"砂漠のまん中にできた 光りかがやく町。世界中から人がショーやホテルを見に集まる。"},
+  {n:"バンクーバー", c:"カナダ", r:"ばんくーばー", art:"vancouver", k:"name", e:"🏔", d:"海と山にかこまれた 住みやすさ世界一といわれる町。冬季オリンピックが開かれた。"},
+  {n:"トロント", c:"カナダ", r:"とろんと", art:"toronto", k:"name", e:"🗼", d:"カナダ最大の都市。高さ553mのCNタワーが目印で、世界中から人が集まる国際都市。"},
+  {n:"リオデジャネイロ", c:"ブラジル", r:"りおでじゃねいろ", art:"rio", k:"name", e:"🎭", d:"コルコバードの丘のキリスト像と、世界一のカーニバルで有名。コパカバーナの海岸も。"},
+  {n:"ブエノスアイレス", c:"アルゼンチン", r:"ぶえのすあいれす", art:"buenosaires", k:"name", e:"💃", d:"「南米のパリ」とよばれる美しい町。タンゴが生まれ、ステーキが名物。"},
+  {n:"ロンドン", c:"イギリス", r:"ろんどん", art:"london", k:"name", e:"🎡", d:"イギリスの首都。時計台ビッグ・ベン、赤い二階建てバス、テムズ川の大観覧車。"},
+  {n:"パリ", c:"フランス", r:"ぱり", art:"paris", k:"name", e:"🗼", d:"「花の都」。エッフェル塔、ルーブル美術館、セーヌ川、おしゃれなカフェで知られる。"},
+  {n:"ローマ", c:"イタリア", r:"ろーま", art:"rome", k:"name", e:"🏛", d:"2700年の歴史がある「永遠の都」。コロッセオやトレビの泉があり、中にバチカン市国がある。"},
+  {n:"ミラノ", c:"イタリア", r:"みらの", art:"milancity", k:"name", e:"👗", d:"ファッションとデザインの都。大きなドゥオーモと、サッカーの強いチームで知られる。"},
+  {n:"ベルリン", c:"ドイツ", r:"べるりん", art:"berlin", k:"name", e:"🐻", d:"ドイツの首都。東西に分けていた「ベルリンの壁」のあとが残る。市のシンボルはクマ。"},
+  {n:"ミュンヘン", c:"ドイツ", r:"みゅんへん", art:"munich", k:"name", e:"🍺", d:"世界一のビール祭り「オクトーバーフェスト」の町。近くにノイシュヴァンシュタイン城がある。"},
+  {n:"マドリード", c:"スペイン", r:"まどりーど", art:"madrid", k:"name", e:"⚽", d:"スペインの首都。プラド美術館と、サッカーのレアル・マドリードで有名。"},
+  {n:"バルセロナ", c:"スペイン", r:"ばるせろな", art:"barcelona", k:"name", e:"🏗", d:"建築家ガウディの町。サグラダ・ファミリアが100年以上かけて 今も建てられている。"},
+  {n:"アムステルダム", c:"オランダ", r:"あむすてるだむ", art:"amsterdamcity", k:"name", e:"🚲", d:"運河が町中をめぐるオランダの首都。自転車が人より多く、ゴッホ美術館がある。"},
+  {n:"ウィーン", c:"オーストリア", r:"うぃーん", art:"vienna", k:"name", e:"🎻", d:"「音楽の都」。ベートーベンやモーツァルトが活躍し、オペラ座や宮殿が残る。"},
+  {n:"プラハ", c:"チェコ", r:"ぷらは", art:"prague", k:"name", e:"🏰", d:"「百塔の町」とよばれる 中世そのままの美しい首都。カレル橋とプラハ城が有名。"},
+  {n:"モスクワ", c:"ロシア", r:"もすくわ", art:"moscow", k:"name", e:"⛪", d:"ロシアの首都。赤の広場と、たまねぎ型の屋根の聖ワシリイ大聖堂、城壁のクレムリン。"},
+  {n:"イスタンブール", c:"トルコ", r:"いすたんぶーる", art:"istanbul", k:"name", e:"🕌", d:"ヨーロッパとアジアにまたがる唯一の都市。ボスポラス海峡と大きなモスクで知られる。"},
+  {n:"ドバイ", c:"アラブ首長国連邦", r:"どばい", art:"dubai", k:"name", e:"🏙", d:"砂漠に生まれた未来都市。世界一高いビル ブルジュ・ハリファと、ヤシの形の人工島。"},
+  {n:"カイロ", c:"エジプト", r:"かいろ", art:"cairo", k:"name", e:"🐪", d:"アフリカ最大の都市で エジプトの首都。すぐ近くにギザのピラミッドがある。"},
+  {n:"ケープタウン", c:"南アフリカ", r:"けーぷたうん", art:"capetown", k:"name", e:"⛰", d:"テーブルのように平らなテーブルマウンテンのふもとの町。近くに喜望峰がある。"},
+  {n:"ムンバイ", c:"インド", r:"むんばい", art:"mumbai", k:"name", e:"🎥", d:"インド最大の都市。インド映画「ボリウッド」の中心地で、港にインド門が立つ。"},
+  {n:"バンコク", c:"タイ", r:"ばんこく", art:"bangkok", k:"name", e:"🛕", d:"タイの首都。金色にかがやく王宮と寺院、水上マーケット、屋台の料理で知られる。"},
+  {n:"香港", c:"中国", r:"ほんこん", art:"hongkong", k:"name", e:"🌃", d:"高層ビルがぎっしりならぶ港町。ビクトリア・ピークからの夜景は「100万ドルの夜景」。"},
+  {n:"上海", c:"中国", r:"しゃんはい", art:"shanghai", k:"name", e:"🏙", d:"中国最大の都市。川ぞいの外灘に古い西洋の建物と、対岸に超高層ビルがならぶ。"},
+  {n:"北京", c:"中国", r:"ぺきん", art:"beijing", k:"name", e:"🏯", d:"中国の首都。皇帝の宮殿だった故宮、天安門広場、近くに万里の長城がある。"},
+  {n:"ソウル", c:"韓国", r:"そうる", art:"seoul", k:"name", e:"🏙", d:"韓国の首都。漢江が流れ、宮殿と最新のビルがまざる。人口は約1000万人。"},
+  {n:"台北", c:"台湾", r:"たいぺい", art:"taipei", k:"name", e:"🧋", d:"台湾の中心の町。台北101と、夜市の屋台、故宮博物院で知られる。"},
+  {n:"シドニー", c:"オーストラリア", r:"しどにー", art:"sydney", k:"name", e:"⛵", d:"オーストラリア最大の都市。オペラハウスとハーバーブリッジが港のシンボル。"},
+  {n:"ベネチア", c:"イタリア", r:"べねちあ", art:"venicecity", k:"name", e:"🚣", d:"道のかわりに運河が通る「水の都」。ゴンドラに乗って町をめぐる。"},
+  {n:"アテネ", c:"ギリシャ", r:"あてね", art:"athens", k:"name", e:"🏛", d:"ギリシャの首都。丘の上のパルテノン神殿は約2500年前のもの。近代オリンピック発祥の地。"},
+  {n:"リスボン", c:"ポルトガル", r:"りすぼん", art:"lisbon", k:"name", e:"🚃", d:"7つの丘の上に広がるポルトガルの首都。黄色い路面電車と、赤い屋根の町並み。"},
+  {n:"ストックホルム", c:"スウェーデン", r:"すとっくほるむ", art:"stockholm", k:"name", e:"👑", d:"14の島の上にできたスウェーデンの首都。ノーベル賞の授賞式が行われる。"},
+  {n:"クアラルンプール", c:"マレーシア", r:"くあらるんぷーる", art:"kualalumpur", k:"name", e:"🏙", d:"マレーシアの首都。2本の塔がつながったペトロナスツインタワーが目印。"},
+  {n:"ハノイ", c:"ベトナム", r:"はのい", art:"hanoi", k:"name", e:"🛵", d:"ベトナムの首都。湖のまわりに古い町が広がり、バイクがたくさん走る。"}
 );
-Object.assign(LATLON, {shiretoko:[44.07,145.1], goryokaku:[41.797,140.757], otaru:[43.199,141.0], furano:[43.42,142.43], biei:[43.59,142.47], hirosaki:[40.608,140.464], oirase:[40.58,140.95], towada:[40.47,140.87], chusonji:[39.001,141.099], matsushima:[38.37,141.06], yamadera:[38.31,140.44], zao:[38.13,140.44], ginzan:[38.57,140.53], kakunodate:[39.6,140.56], tsuruga:[37.488,139.93], ouchijuku:[37.334,139.861], sensoji:[35.7148,139.7967], meiji:[35.676,139.699], shibuya:[35.6595,139.7005], tokyostation:[35.6812,139.7671], kokyo:[35.685,139.753], minatomirai:[35.455,139.632], enoshima:[35.3,139.48], ashinoko:[35.21,139.0], kegon:[36.741,139.503], kusatsu:[36.622,138.596], fukuroda:[36.767,140.409], matsumoto:[36.238,137.969], zenkoji:[36.662,138.188], kamikochi:[36.25,137.64], yukinootani:[36.577,137.596], kurobe:[36.567,137.664], kenrokuen:[36.562,136.663], senmaida:[37.36,137.05], tojinbo:[36.238,136.126], miho:[34.998,138.525], kawaguchiko:[35.51,138.75], nagoyajo:[35.185,136.899], inuyama:[35.388,136.939], takayama:[36.143,137.259], ise:[34.455,136.725], osakajo:[34.687,135.526], dotonbori:[34.669,135.501], tsutenkaku:[34.652,135.506], byodoin:[34.889,135.808], horyuji:[34.614,135.734], kasuga:[34.681,135.848], nijo:[35.014,135.748], ginkaku:[35.027,135.798], arashiyama:[35.017,135.672], amanohashidate:[35.57,135.19], koyasan:[34.213,135.585], nachi:[33.673,135.89], hikone:[35.277,136.252], yoshino:[34.36,135.86], takeda:[35.3,134.829], akashi:[34.617,135.021], izumo:[35.402,132.685], tottori:[35.54,134.23], matsue:[35.475,133.051], korakuen:[34.667,133.936], kurashiki:[34.596,133.771], kintaikyo:[34.167,132.178], akiyoshidai:[34.24,131.31], motonosumi:[34.42,130.91], tsunoshima:[34.35,130.89], dogo:[33.852,132.786], matsuyama:[33.845,132.766], kotohira:[34.184,133.81], naruto:[34.24,134.65], katsurahama:[33.497,133.575], shimanto:[33.1,132.95], kazurabashi:[33.88,133.83], dazaifu:[33.521,130.535], gunkanjima:[32.628,129.738], glover:[32.734,129.869], nagasakipeace:[32.776,129.864], kumamotojo:[32.806,130.706], aso:[32.884,131.104], beppu:[33.317,131.472], yufuin:[33.264,131.372], takachiho:[32.7,131.3], sakurajima:[31.58,130.66], shuri:[26.217,127.719], taketomi:[24.33,124.09], kabira:[24.455,124.145], chambord:[47.616,1.517], carcassonne:[43.206,2.364], etretat:[49.71,0.2], nice:[43.695,7.265], strasbourg:[48.582,7.751], amalfi:[40.628,14.485], cinqueterre:[44.107,9.727], pantheon:[41.899,12.477], spanishsteps:[41.906,12.482], dolomites:[46.62,12.3], jungfrau:[46.547,7.985], lucerne:[47.052,8.307], montblanc:[45.833,6.865], rothenburg:[49.375,10.179], heidelberg:[49.41,8.715], dresden:[51.052,13.741], berlinwall:[52.535,13.39], windsor:[51.484,-0.604], cotswolds:[51.758,-1.834], sevensisters:[50.75,0.15], lakedistrict:[54.37,-2.93], giantscauseway:[55.241,-6.512], moher:[52.972,-9.427], lochness:[57.32,-4.44], warsaw:[52.25,21.012], krakow:[50.062,19.937], meteora:[39.716,21.63], mykonos:[37.445,25.325], ephesus:[37.939,27.341], pamukkale:[37.924,29.123], kremlin:[55.752,37.617], hermitage:[59.94,30.313], helsinki:[60.17,24.952], tallinn:[59.437,24.745], nyhavn:[55.68,12.591], gamlastan:[59.325,18.071], geiranger:[62.1,7.09], preikestolen:[58.986,6.19], bluelagoon:[63.88,-22.449], gullfoss:[64.327,-20.121], dubrovnik:[42.641,18.108], plitvice:[44.88,15.62], brussels:[50.847,4.352], bruges:[51.208,3.227], amsterdam:[52.372,4.893], keukenhof:[52.27,4.546], pena:[38.788,-9.391], belem:[38.692,-9.216], porto:[41.14,-8.611], seville:[37.386,-5.993], toledo:[39.857,-4.024], guell:[41.414,2.153], santiago:[42.881,-8.545], valletta:[35.899,14.514], monaco:[43.738,7.425], praguecastle:[50.091,14.401], stephansdom:[48.209,16.373], salzburg:[47.795,13.047], rila:[42.133,23.34], bran:[45.515,25.367], domeofrock:[31.778,35.235], deadsea:[31.5,35.5], wadirum:[29.58,35.42], burj:[25.197,55.274], zayed:[24.412,54.475], persepolis:[29.935,52.891], isfahan:[32.657,51.677], marrakech:[31.626,-7.989], chefchaouen:[35.169,-5.264], hassan:[33.608,-7.633], sossusvlei:[-24.73,15.34], serengeti:[-2.33,34.83], lalibela:[12.033,39.041], karnak:[25.719,32.657], valleyofkings:[25.74,32.601], capeofgoodhope:[-34.357,18.474], boulders:[-34.197,18.451], okavango:[-19.28,22.9], masaimara:[-1.49,35.14], tiantan:[39.882,116.407], summerpalace:[39.999,116.275], bund:[31.24,121.49], jiuzhaigou:[33.26,103.92], zhangjiajie:[29.32,110.43], huangshan:[30.13,118.17], leshan:[29.545,103.773], lijiang:[26.87,100.23], victoriapeak:[22.275,114.145], macau:[22.198,113.541], taipei101:[25.034,121.565], jiufen:[25.109,121.845], taroko:[24.16,121.49], gyeongbok:[37.58,126.977], grandpalace:[13.751,100.492], ayutthaya:[14.357,100.568], doisuthep:[18.805,98.922], railay:[8.01,98.84], hoian:[15.877,108.327], hue:[16.47,107.579], luangprabang:[19.886,102.135], petronas:[3.158,101.712], marinabay:[1.284,103.86], merlion:[1.287,103.855], prambanan:[-7.752,110.492], tanahlot:[-8.621,115.087], tegalalang:[-8.432,115.279], komodo:[-8.55,119.49], bromo:[-7.942,112.953], chocolatehills:[9.83,124.14], banaue:[16.93,121.06], hawamahal:[26.924,75.827], amber:[26.985,75.851], varanasi:[25.31,83.01], ellora:[20.026,75.179], gateway:[18.922,72.835], sigiriya:[7.957,80.76], taktsang:[27.492,89.363], boudhanath:[27.721,85.362], registan:[39.655,66.976], baikal:[53.5,108.0], yosemite:[37.746,-119.593], zion:[37.3,-113.05], delicatearch:[38.744,-109.499], bryce:[37.593,-112.187], horseshoe:[36.879,-111.51], hollywood:[34.134,-118.322], alcatraz:[37.827,-122.423], spaceneedle:[47.62,-122.349], brooklyn:[40.706,-73.997], centralpark:[40.782,-73.965], washington:[38.889,-77.035], waikiki:[21.277,-157.827], kilauea:[19.421,-155.287], napali:[22.18,-159.65], denali:[63.069,-151.007], deathvalley:[36.42,-116.87], louise:[51.417,-116.217], moraine:[51.328,-116.182], cntower:[43.643,-79.387], quebec:[46.812,-71.205], tulum:[20.215,-87.429], guanajuato:[21.019,-101.257], havana:[23.136,-82.359], panama:[8.995,-79.591], arenal:[10.463,-84.703], galapagos:[-0.6,-90.4], nazca:[-14.7,-75.14], cusco:[-13.517,-71.978], titicaca:[-15.9,-69.3], rainbowmtn:[-13.87,-71.303], torres:[-51.0,-73.0], atacama:[-22.92,-68.2], caminito:[-34.639,-58.363], sugarloaf:[-22.949,-43.155], lencois:[-2.55,-43.0], amazon:[-3.1,-60.0], cartagena:[10.424,-75.551], twelveapostles:[-38.666,143.104], bluemountains:[-33.732,150.312], whitehaven:[-20.28,149.04], tekapo:[-44.004,170.477], mtcook:[-43.595,170.142], rotorua:[-38.16,176.25], borabora:[-16.5,-151.74]});
+Object.assign(LATLON, {shiretoko:[44.07,145.1], goryokaku:[41.797,140.757], otaru:[43.199,141.0], furano:[43.42,142.43], biei:[43.59,142.47], hirosaki:[40.608,140.464], oirase:[40.58,140.95], towada:[40.47,140.87], chusonji:[39.001,141.099], matsushima:[38.37,141.06], yamadera:[38.31,140.44], zao:[38.13,140.44], ginzan:[38.57,140.53], kakunodate:[39.6,140.56], tsuruga:[37.488,139.93], ouchijuku:[37.334,139.861], sensoji:[35.7148,139.7967], meiji:[35.676,139.699], shibuya:[35.6595,139.7005], tokyostation:[35.6812,139.7671], kokyo:[35.685,139.753], minatomirai:[35.455,139.632], enoshima:[35.3,139.48], ashinoko:[35.21,139.0], kegon:[36.741,139.503], kusatsu:[36.622,138.596], fukuroda:[36.767,140.409], matsumoto:[36.238,137.969], zenkoji:[36.662,138.188], kamikochi:[36.25,137.64], yukinootani:[36.577,137.596], kurobe:[36.567,137.664], kenrokuen:[36.562,136.663], senmaida:[37.36,137.05], tojinbo:[36.238,136.126], miho:[34.998,138.525], kawaguchiko:[35.51,138.75], nagoyajo:[35.185,136.899], inuyama:[35.388,136.939], takayama:[36.143,137.259], ise:[34.455,136.725], osakajo:[34.687,135.526], dotonbori:[34.669,135.501], tsutenkaku:[34.652,135.506], byodoin:[34.889,135.808], horyuji:[34.614,135.734], kasuga:[34.681,135.848], nijo:[35.014,135.748], ginkaku:[35.027,135.798], arashiyama:[35.017,135.672], amanohashidate:[35.57,135.19], koyasan:[34.213,135.585], nachi:[33.673,135.89], hikone:[35.277,136.252], yoshino:[34.36,135.86], takeda:[35.3,134.829], akashi:[34.617,135.021], izumo:[35.402,132.685], tottori:[35.54,134.23], matsue:[35.475,133.051], korakuen:[34.667,133.936], kurashiki:[34.596,133.771], kintaikyo:[34.167,132.178], akiyoshidai:[34.24,131.31], motonosumi:[34.42,130.91], tsunoshima:[34.35,130.89], dogo:[33.852,132.786], matsuyama:[33.845,132.766], kotohira:[34.184,133.81], naruto:[34.24,134.65], katsurahama:[33.497,133.575], shimanto:[33.1,132.95], kazurabashi:[33.88,133.83], dazaifu:[33.521,130.535], gunkanjima:[32.628,129.738], glover:[32.734,129.869], nagasakipeace:[32.776,129.864], kumamotojo:[32.806,130.706], aso:[32.884,131.104], beppu:[33.317,131.472], yufuin:[33.264,131.372], takachiho:[32.7,131.3], sakurajima:[31.58,130.66], shuri:[26.217,127.719], taketomi:[24.33,124.09], kabira:[24.455,124.145], chambord:[47.616,1.517], carcassonne:[43.206,2.364], etretat:[49.71,0.2], nice:[43.695,7.265], strasbourg:[48.582,7.751], amalfi:[40.628,14.485], cinqueterre:[44.107,9.727], pantheon:[41.899,12.477], spanishsteps:[41.906,12.482], dolomites:[46.62,12.3], jungfrau:[46.547,7.985], lucerne:[47.052,8.307], montblanc:[45.833,6.865], rothenburg:[49.375,10.179], heidelberg:[49.41,8.715], dresden:[51.052,13.741], berlinwall:[52.535,13.39], windsor:[51.484,-0.604], cotswolds:[51.758,-1.834], sevensisters:[50.75,0.15], lakedistrict:[54.37,-2.93], giantscauseway:[55.241,-6.512], moher:[52.972,-9.427], lochness:[57.32,-4.44], warsaw:[52.25,21.012], krakow:[50.062,19.937], meteora:[39.716,21.63], mykonos:[37.445,25.325], ephesus:[37.939,27.341], pamukkale:[37.924,29.123], kremlin:[55.752,37.617], hermitage:[59.94,30.313], helsinki:[60.17,24.952], tallinn:[59.437,24.745], nyhavn:[55.68,12.591], gamlastan:[59.325,18.071], geiranger:[62.1,7.09], preikestolen:[58.986,6.19], bluelagoon:[63.88,-22.449], gullfoss:[64.327,-20.121], dubrovnik:[42.641,18.108], plitvice:[44.88,15.62], brussels:[50.847,4.352], bruges:[51.208,3.227], amsterdam:[52.372,4.893], keukenhof:[52.27,4.546], pena:[38.788,-9.391], belem:[38.692,-9.216], porto:[41.14,-8.611], seville:[37.386,-5.993], toledo:[39.857,-4.024], guell:[41.414,2.153], santiago:[42.881,-8.545], valletta:[35.899,14.514], monaco:[43.738,7.425], praguecastle:[50.091,14.401], stephansdom:[48.209,16.373], salzburg:[47.795,13.047], rila:[42.133,23.34], bran:[45.515,25.367], domeofrock:[31.778,35.235], deadsea:[31.5,35.5], wadirum:[29.58,35.42], burj:[25.197,55.274], zayed:[24.412,54.475], persepolis:[29.935,52.891], isfahan:[32.657,51.677], marrakech:[31.626,-7.989], chefchaouen:[35.169,-5.264], hassan:[33.608,-7.633], sossusvlei:[-24.73,15.34], serengeti:[-2.33,34.83], lalibela:[12.033,39.041], karnak:[25.719,32.657], valleyofkings:[25.74,32.601], capeofgoodhope:[-34.357,18.474], boulders:[-34.197,18.451], okavango:[-19.28,22.9], masaimara:[-1.49,35.14], tiantan:[39.882,116.407], summerpalace:[39.999,116.275], bund:[31.24,121.49], jiuzhaigou:[33.26,103.92], zhangjiajie:[29.32,110.43], huangshan:[30.13,118.17], leshan:[29.545,103.773], lijiang:[26.87,100.23], victoriapeak:[22.275,114.145], macau:[22.198,113.541], taipei101:[25.034,121.565], jiufen:[25.109,121.845], taroko:[24.16,121.49], gyeongbok:[37.58,126.977], grandpalace:[13.751,100.492], ayutthaya:[14.357,100.568], doisuthep:[18.805,98.922], railay:[8.01,98.84], hoian:[15.877,108.327], hue:[16.47,107.579], luangprabang:[19.886,102.135], petronas:[3.158,101.712], marinabay:[1.284,103.86], merlion:[1.287,103.855], prambanan:[-7.752,110.492], tanahlot:[-8.621,115.087], tegalalang:[-8.432,115.279], komodo:[-8.55,119.49], bromo:[-7.942,112.953], chocolatehills:[9.83,124.14], banaue:[16.93,121.06], hawamahal:[26.924,75.827], amber:[26.985,75.851], varanasi:[25.31,83.01], ellora:[20.026,75.179], gateway:[18.922,72.835], sigiriya:[7.957,80.76], taktsang:[27.492,89.363], boudhanath:[27.721,85.362], registan:[39.655,66.976], baikal:[53.5,108.0], yosemite:[37.746,-119.593], zion:[37.3,-113.05], delicatearch:[38.744,-109.499], bryce:[37.593,-112.187], horseshoe:[36.879,-111.51], hollywood:[34.134,-118.322], alcatraz:[37.827,-122.423], spaceneedle:[47.62,-122.349], brooklyn:[40.706,-73.997], centralpark:[40.782,-73.965], washington:[38.889,-77.035], waikiki:[21.277,-157.827], kilauea:[19.421,-155.287], napali:[22.18,-159.65], denali:[63.069,-151.007], deathvalley:[36.42,-116.87], louise:[51.417,-116.217], moraine:[51.328,-116.182], cntower:[43.643,-79.387], quebec:[46.812,-71.205], tulum:[20.215,-87.429], guanajuato:[21.019,-101.257], havana:[23.136,-82.359], panama:[8.995,-79.591], arenal:[10.463,-84.703], galapagos:[-0.6,-90.4], nazca:[-14.7,-75.14], cusco:[-13.517,-71.978], titicaca:[-15.9,-69.3], rainbowmtn:[-13.87,-71.303], torres:[-51.0,-73.0], atacama:[-22.92,-68.2], caminito:[-34.639,-58.363], sugarloaf:[-22.949,-43.155], lencois:[-2.55,-43.0], amazon:[-3.1,-60.0], cartagena:[10.424,-75.551], twelveapostles:[-38.666,143.104], bluemountains:[-33.732,150.312], whitehaven:[-20.28,149.04], tekapo:[-44.004,170.477], mtcook:[-43.595,170.142], rotorua:[-38.16,176.25], borabora:[-16.5,-151.74], hokkaido:[43.06,141.35], aomori:[40.82,140.74], iwate:[39.7,141.15], miyagi:[38.27,140.87], akita:[39.72,140.1], yamagata:[38.24,140.36], fukushima:[37.75,140.47], ibaraki:[36.34,140.45], tochigi:[36.57,139.88], gunma:[36.39,139.06], saitama:[35.86,139.65], chiba:[35.61,140.12], tokyo:[35.69,139.69], kanagawa:[35.45,139.64], niigata:[37.9,139.02], toyama:[36.7,137.21], ishikawa:[36.59,136.63], fukui:[36.07,136.22], yamanashi:[35.66,138.57], nagano:[36.65,138.18], gifu:[35.39,136.72], shizuoka:[34.98,138.38], aichi:[35.18,136.91], mie:[34.73,136.51], shiga:[35.0,135.87], kyoto:[35.02,135.76], osaka:[34.69,135.52], hyogo:[34.69,135.18], nara:[34.69,135.83], wakayama:[34.23,135.17], tottoriken:[35.5,134.24], shimane:[35.47,133.05], okayama:[34.66,133.93], hiroshima:[34.4,132.46], yamaguchi:[34.19,131.47], tokushima:[34.07,134.56], kagawa:[34.34,134.04], ehime:[33.84,132.77], kochi:[33.56,133.53], fukuoka:[33.61,130.42], saga:[33.25,130.3], nagasaki:[32.74,129.87], kumamoto:[32.79,130.74], oita:[33.24,131.61], miyazaki:[31.91,131.42], kagoshima:[31.56,130.56], okinawa:[26.21,127.68], sapporo:[43.06,141.35], hakodate:[41.77,140.73], asahikawa:[43.77,142.37], sendai:[38.27,140.87], nikkocity:[36.75,139.6], kamakuracity:[35.32,139.55], hakone:[35.23,139.03], karuizawa:[36.35,138.63], matsumotocity:[36.24,137.97], kanazawa:[36.56,136.66], nagoya:[35.18,136.91], kobe:[34.69,135.2], himejicity:[34.82,134.69], hiroshimacity:[34.39,132.46], hakata:[33.59,130.42], nagasakicity:[32.75,129.88], naha:[26.21,127.68], ishigaki:[24.34,124.16], miyakojima:[24.8,125.28], sado:[38.02,138.37], awaji:[34.38,134.85], biwako:[35.33,136.1], setonaikai:[34.2,133.5], fujisan:[35.36,138.73], kanto:[36.0,139.6], kansai:[34.8,135.6], tohoku:[39.0,140.6], kyushu:[32.6,131.0], shikoku:[33.7,133.4], chubu:[36.2,137.5], chugoku:[34.9,133.0], tsukiji:[35.67,139.77], asakusa:[35.71,139.8], shinjuku:[35.69,139.7], akihabara:[35.7,139.77], yokohamacity:[35.44,139.64], kawagoe:[35.92,139.49], narita:[35.78,140.32], atami:[35.1,139.07], nagano2:[36.66,138.19], takayamacity:[36.14,137.25], ise2:[34.49,136.71], uji:[34.88,135.8], arashiyamacity:[35.01,135.68], namba:[34.67,135.5], umeda:[34.7,135.5], kurashikicity:[34.6,133.77], miyajima:[34.3,132.32], dogocity:[33.85,132.79], beppucity:[33.28,131.49], yakushimacity:[30.36,130.53], kushiro:[42.98,144.38], shirahama:[33.68,135.34], usa:[39.5,-98.4], canada:[56.1,-106.3], mexico:[23.6,-102.6], brazil:[-14.2,-51.9], argentina:[-38.4,-63.6], peru:[-9.2,-75.0], chile:[-35.7,-71.5], colombia:[4.6,-74.3], cuba:[21.5,-79.5], uk:[54.0,-2.5], france:[46.6,2.2], germany:[51.2,10.4], italy:[42.8,12.6], spain:[40.4,-3.7], portugal:[39.6,-8.2], netherlands:[52.1,5.3], belgium:[50.5,4.5], switzerland:[46.8,8.2], austria:[47.5,14.6], sweden:[62.0,17.0], norway:[64.5,11.0], denmark:[56.0,10.0], finland:[64.0,26.0], iceland:[64.9,-19.0], poland:[52.0,19.5], czech:[49.8,15.5], hungary:[47.2,19.5], greece:[39.1,22.0], turkey:[39.0,35.2], russia:[61.5,105.3], ireland:[53.4,-8.0], egypt:[26.8,30.8], morocco:[31.8,-7.1], kenya:[0.0,37.9], tanzania:[-6.4,34.9], southafrica:[-30.6,22.9], nigeria:[9.1,8.7], ethiopia:[9.1,40.5], madagascar:[-18.8,46.9], saudi:[23.9,45.1], uae:[23.4,53.8], israel:[31.0,34.9], iran:[32.4,53.7], india:[20.6,79.0], nepal:[28.4,84.1], srilanka:[7.9,80.8], thailand:[15.9,100.9], vietnam:[14.1,108.3], cambodia:[12.6,104.9], singapore:[1.35,103.8], malaysia:[4.2,102.0], indonesia:[-0.8,113.9], philippines:[12.9,121.8], china:[35.9,104.2], korea:[36.5,127.9], mongolia:[46.9,103.8], taiwan:[23.7,121.0], australia:[-25.3,133.8], newzealand:[-40.9,174.9], fiji:[-17.7,178.0], newyork:[40.7,-74.0], losangeles:[34.05,-118.2], sanfrancisco:[37.8,-122.4], honolulu:[21.3,-157.9], chicago:[41.9,-87.6], lasvegas:[36.2,-115.1], vancouver:[49.3,-123.1], toronto:[43.7,-79.4], rio:[-22.9,-43.2], buenosaires:[-34.6,-58.4], london:[51.5,-0.13], paris:[48.86,2.35], rome:[41.9,12.5], milancity:[45.46,9.19], berlin:[52.52,13.4], munich:[48.14,11.58], madrid:[40.4,-3.7], barcelona:[41.39,2.17], amsterdamcity:[52.37,4.9], vienna:[48.2,16.37], prague:[50.08,14.42], moscow:[55.75,37.6], istanbul:[41.0,28.98], dubai:[25.2,55.27], cairo:[30.04,31.24], capetown:[-33.9,18.4], mumbai:[19.08,72.88], bangkok:[13.75,100.5], hongkong:[22.3,114.17], shanghai:[31.23,121.47], beijing:[39.9,116.4], seoul:[37.57,126.98], taipei:[25.03,121.57], sydney:[-33.87,151.2], venicecity:[45.44,12.33], athens:[37.98,23.73], lisbon:[38.72,-9.14], stockholm:[59.33,18.07], kualalumpur:[3.14,101.69], hanoi:[21.03,105.85]});
 /* SPOTS-MORE-END */
 const ROUNDS = 10;
 /* 2つの旅。日本の名所は 場所が「日本」ではじまるもの */
 const isJapan = q => q.c.startsWith("日本");
-const POOLS = { world: SPOTS.filter(q => !isJapan(q)), japan: SPOTS.filter(isJapan) };
+/* 4つの旅: 名所(写真あり)と 地名(k:"name"。絵文字のカード) × 世界・日本 */
+const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filter(q => !q.k && isJapan(q)),
+                wnames: SPOTS.filter(q => q.k === "name" && !isJapan(q)), jnames: SPOTS.filter(q => q.k === "name" && isJapan(q)) };
 /* 日本一周マップの 決めごと(tools/make_japan_map.py と 同じ数字)。本土は 東経128.5〜146.5 / 北緯29.8〜46。
    南西諸島(北緯28度より南)は 左上の わく(東経122.5〜 / 北緯27.5〜)に 同じ縮尺で */
 const JAPAN_MAP = { lon0:128.5, lat1:46, kx:20, k:25, w:360, h:405, ix:6, iy:6, ilon0:122.5, ilat1:27.5 };
@@ -1196,6 +1606,9 @@ const MAPS = {
            pos:(la, lo) => [(lo + 180) / 360, (84 - la) / 144] },
   japan: { src:"japan-map-color.jpg", w:1080, h:1215, title:"日本一周マップ", word:"日本地図", icon:"🗾", name:"日本の旅", pos:japanPos },
 };
+MAPS.wnames = Object.assign({}, MAPS.world, { icon:"🗺", name:"世界の地名", sub:"国と町" });
+MAPS.jnames = Object.assign({}, MAPS.japan, { icon:"📍", name:"日本の地名", sub:"都道府県と町" });
+const MODES = ["world", "japan", "wnames", "jnames"];
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
 
 const $ = s => document.querySelector(s);
@@ -1203,7 +1616,7 @@ if(("ontouchstart" in window) || navigator.maxTouchPoints > 0) document.document
 const ans = $("#ans");
 let lastLen = 0, warnT = 0, penalties = 0;
 let level = 0;
-let mode = (store("flick-mode") === "japan") ? "japan" : "world", qs = [], idx = 0, times = [], qStart = 0, running = false, locked = true, raf = 0, sepAt = -1, target = "";
+let mode = ["japan","wnames","jnames"].includes(store("flick-mode")) ? store("flick-mode") : "world", qs = [], idx = 0, times = [], qStart = 0, running = false, locked = true, raf = 0, sepAt = -1, target = "";
 
 function store(k, v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k, v); }catch(e){ return null; } }
 /* 打つ文字の多さで むずかしさを決める。濁点・小さい字・のばす棒は フリックで1回よけいに押すので 少し重く数える */
@@ -1221,7 +1634,7 @@ function cost(s){
 }
 /* かんたんな順にならべて 10問ずつに分ける。どのレベルも いつも同じ10問・同じ順番 */
 const LEVELS = {};
-for(const m of ["world","japan"]){
+for(const m of MODES){
   const pool = poolOf(m);
   const sorted = pool.map((q,i) => ({q, i, c:cost(textOf(m,q))})).sort((a,b) => a.c - b.c || a.i - b.i).map(x => x.q);
   LEVELS[m] = [];
@@ -1235,10 +1648,10 @@ function clearedSpots(m){
 }
 function levelTone(i){ return COLORS.level[i % COLORS.level.length]; }
 function drawModes(){
-  $("#modes").innerHTML = ["world","japan"].map((m, i) => {
+  $("#modes").innerHTML = MODES.map((m, i) => {
     const M = MAPS[m], done = clearedSpots(m).size;
     return '<button class="mode sk-card sk-card-'+(i+1)+(m === mode ? ' cur' : '')+'" data-mode="'+m+'" style="'+toneStyle(COLORS.mode[m])+'">'+
-      '<span class="ic">'+M.icon+'</span><span><b>'+M.name+'</b><small>'+POOLS[m].length+'か所・'+LEVELS[m].length+'レベル　行った所 '+done+'</small></span><span class="go">›</span></button>';
+      '<span class="ic">'+M.icon+'</span><span class="tx"><b>'+M.name+'</b><small>'+POOLS[m].length+'か所・'+LEVELS[m].length+'レベル</small><small>行った所 '+done+'</small></span></button>';
   }).join("");
   document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => setMode(b.dataset.mode)));
 }
@@ -1326,7 +1739,7 @@ function renderCard(){
   }else{
     target = q.r; sepAt = -1;
     const pc = pic(q);
-    h += '<div class="photo">'+pc.html+'<span>'+pc.label+'</span></div>';
+    h += '<div class="photo">'+pc.html+(pc.label ? '<span>'+pc.label+'</span>' : '')+'</div>';
     h += '<p class="spot">'+q.n+'</p><p class="country">'+q.c+'</p>';
   }
   h += '<div class="target" id="tgt"></div>';

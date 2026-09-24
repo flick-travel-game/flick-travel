@@ -34,6 +34,16 @@ FIX = {
     "数百": "すうひゃく",
     "都": "みやこ",
     "金": "きん",
+    "高山": "たかやま",
+    "高野山": "こうやさん",
+    "台北": "たいぺい",
+    "夜市": "よいち",
+    "金山": "きんざん",
+    "阿蘇山": "あそさん",
+    "餃子": "ぎょうざ",
+    "郷": "ごう",
+    "言う": "いう",
+    "西日本": "にしにほん",
 }
 # その名所の文の中でだけ 読みを変えるもの((名所のキー, 見出し語) → よみ)
 SPOT_FIX = {
@@ -61,6 +71,9 @@ SPOT_FIX = {
     ("akiyoshidai", "秋芳"): "あきよし",
     ("kurashiki", "米"): "こめ",
     ("yufuin", "由布"): "ゆふ",
+    ("hyogo", "島"): "しま",
+    ("awaji", "島"): "しま",
+    ("setonaikai", "島"): "しま",
 }
 # Sudachi は「階段(ガート)」を 1語にしてしまうので、かっこで 切ってから 読む
 SPLIT = re.compile(r"([()（）「」])")
@@ -95,7 +108,7 @@ def main():
     tok = dictionary.Dictionary().create()
     mode = tokenizer.Tokenizer.SplitMode.C
     out = {}
-    for m in re.finditer(r'\{n:"([^"]*)", c:"[^"]*", r:"[^"]*", art:"(\w+)", d:"([^"]*)"\}', page):
+    for m in re.finditer(r'\{n:"([^"]*)", c:"[^"]*", r:"[^"]*", art:"(\w+)", (?:k:"name", e:"[^"]*", )?d:"([^"]*)"\}', page):
         name, key, desc = m.groups()
         parts, plain = [], []
         prev = ""

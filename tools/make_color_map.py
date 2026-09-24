@@ -12,26 +12,17 @@ import sys
 
 STYLE = '''
 <defs>
- <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="#7fd4ff"/><stop offset=".55" stop-color="#4fb6f7"/><stop offset="1" stop-color="#2f8fe6"/>
- </linearGradient>
- <linearGradient id="land" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="#fff3a0"/><stop offset=".45" stop-color="#b8f07a"/><stop offset="1" stop-color="#5ec95a"/>
- </linearGradient>
- <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/>
- </linearGradient>
- <filter id="soft" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="{S}"/></filter>
+ <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{SEA1}"/><stop offset="1" stop-color="{SEA0}"/></linearGradient>
+ {TONEDEFS}
+ <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".42"/><stop offset=".58" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
  <filter id="shade" x="-5%" y="-5%" width="110%" height="110%">
-  <feGaussianBlur in="SourceAlpha" stdDeviation="{S2}" result="b"/>
-  <feOffset in="b" dx="0" dy="{S}" result="o"/>
-  <feFlood flood-color="#1b6bb3" flood-opacity=".45"/><feComposite in2="o" operator="in" result="sh"/>
+  <feGaussianBlur in="SourceAlpha" stdDeviation="{S2}" result="b"/><feOffset in="b" dx="0" dy="{S}" result="o"/>
+  <feFlood flood-color="#001a4d" flood-opacity=".45"/><feComposite in2="o" operator="in" result="sh"/>
   <feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge>
  </filter>
- <filter id="sparkle" x="-20%" y="-20%" width="140%" height="140%">
-  <feTurbulence type="fractalNoise" baseFrequency="{F}" numOctaves="1" seed="5" result="n"/>
-  <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 9 -7.4"/>
- </filter>
+ <!-- ボタンと同じ キラキラ(docs/ボタンの色.md の feTurbulence)。3倍で描くので 粒は 少し大きめに -->
+ <filter id="glit1" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="{F}" numOctaves="1" seed="3" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  10 0 0 0 -7.3"/></filter>
+ <filter id="glit2" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="{F2}" numOctaves="1" seed="11" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  12 0 0 0 -9.1"/></filter>
 </defs>
 '''
 
@@ -85,25 +76,30 @@ def star(cx, cy, r):
     return f'<polygon points="{" ".join(pts)}" fill="#fff8b0" opacity=".9"/>'
 
 
+# ⚠️ ボタンと 同じ色(index.html の TONE と COLORS.level。docs/ボタンの色.md)。左上→右下の グラデーション
+TONES = [("#f20077", "#ff4da3"), ("#e0202e", "#ff5c66"), ("#f25c00", "#ff8a33"), ("#00b33c", "#00d948"), ("#006b57", "#12a889"),
+         ("#0077b3", "#33aaee"), ("#3324db", "#6a5cff"), ("#8a2be0", "#bb55ff"), ("#eb14b5", "#ff6fd8")]
+SEA = ("#1d6bff", "#649aff")  # 世界の旅の ボタンの青
+
+
 def wrap(paths, vb, W, H, extra=""):
     x0, y0, vw, vh = vb
-    k = vw / 360  # 単位の大きさ(世界=1度, 日本=1/25度)
-    style = STYLE.replace("{S2}", f"{0.9*k:.3f}").replace("{S}", f"{0.45*k:.3f}").replace("{F}", f"{0.06/k:.3f}")
-    stars = "".join(star(x0 + vw * fx, y0 + vh * fy, r * k * 1.6) for fx, fy, r in STARS)
+    k = vw / 360
+    tonedefs = "".join(f'<linearGradient id="t{i}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{a}"/><stop offset="1" stop-color="{b}"/></linearGradient>' for i, (a, b) in enumerate(TONES))
+    style = (STYLE.replace("{S2}", f"{0.9*k:.3f}").replace("{S}", f"{0.45*k:.3f}").replace("{F}", f"{0.55/k:.3f}").replace("{F2}", f"{0.4/k:.3f}")
+             .replace("{SEA0}", SEA[0]).replace("{SEA1}", SEA[1]).replace("{TONEDEFS}", tonedefs))
+    box = f'x="{x0}" y="{y0}" width="{vw}" height="{vh}"'
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="{x0} {y0} {vw} {vh}" preserveAspectRatio="none">
 {style}
-<rect x="{x0}" y="{y0}" width="{vw}" height="{vh}" fill="url(#sea)"/>
-<rect x="{x0}" y="{y0}" width="{vw}" height="{vh}" filter="url(#sparkle)" opacity=".7"/>
-<g transform="translate(0,{1.1*k:.3f})" fill="#3f9a3a" stroke="#3f9a3a" stroke-width="{0.5*k:.3f}" stroke-linejoin="round" opacity=".95">{paths}</g>
-<g filter="url(#shade)"><g fill="url(#land)" stroke="#2f9c4a" stroke-width="{0.35*k:.3f}" stroke-linejoin="round">{paths}</g></g>
-<g fill="url(#gloss)" opacity=".9">{paths}</g>
+<rect {box} fill="url(#sea)"/>
+<rect {box} fill="url(#gloss)" opacity=".5"/>
+<g transform="translate(0,{1.0*k:.3f})" fill="#0b2a7a" stroke="#0b2a7a" stroke-width="{0.5*k:.3f}" stroke-linejoin="round" opacity=".75">{paths}</g>
+<g filter="url(#shade)"><g fill="url(#t0)" stroke="#ffffff" stroke-width="{0.3*k:.3f}" stroke-opacity=".7" stroke-linejoin="round">{paths}</g></g>
+<g fill="url(#gloss)">{paths}</g>
 {extra}
-{stars}
-<rect x="{x0}" y="{y0}" width="{vw}" height="{vh}" fill="url(#gloss)" opacity=".5"/>
+<rect {box} filter="url(#glit1)" opacity=".9"/>
+<rect {box} filter="url(#glit2)" opacity=".7"/>
 </svg>'''
-
-
-CANDY = ["#ff9bc7", "#ffb36b", "#ffe66b", "#a6ef7a", "#7be0d4", "#8fc9ff", "#c6a6ff", "#ff8f8f"]
 
 
 def world(src, out):
@@ -116,9 +112,10 @@ def world(src, out):
     n = [0]
     def color(m):
         n[0] += 1
-        return f'<path fill="{CANDY[(n[0] * 5) % len(CANDY)]}" '
+        return f'<path fill="url(#t{(n[0] * 4) % len(TONES)})" '
     paths = re.sub(r'<path ', color, paths)
-    deco = (sun(16, 136, 1) + cloud(40, 60, 1.2) + cloud(120, 24, 1) + cloud(310, 130, 1.1) + cloud(230, 132, .9) + cloud(345, 26, .8)
+    deco = ""  # かざりは 無し(けいくん 2026-09-24「やっぱり絵は無い方がいい」)
+    _unused = (sun(16, 136, 1) + cloud(40, 60, 1.2) + cloud(120, 24, 1) + cloud(310, 130, 1.1) + cloud(230, 132, .9) + cloud(345, 26, .8)
             + balloon(66, 92, 1, "#ff7eb6", "#ffe066") + balloon(300, 104, 1, "#7ecbff", "#ffffff") + balloon(155, 128, .9, "#ffb36b", "#ff5e8a")
             + boat(150, 96, 1) + boat(250, 118, .9) + boat(52, 128, .8) + plane(200, 140, 1) + plane(330, 60, .9))
     svg = wrap(paths, (0, 6, 360, 144), 1080, 432, deco)
@@ -135,15 +132,11 @@ def japan(shp, out):
     k = 1 / 25
     box = f'x="{J.IX}" y="{J.IY}" width="{J.IW:.2f}" height="{J.IH:.2f}"'
     extra = (f'<clipPath id="ic"><rect {box}/></clipPath>'
-             f'<rect {box} fill="url(#sea)" stroke="#ffffff" stroke-width="{0.6*k*25:.2f}" opacity=".97"/>'
-             f'<g clip-path="url(#ic)"><g filter="url(#shade)"><g fill="url(#land)" stroke="#2f9c4a" stroke-width="{0.35:.2f}" stroke-linejoin="round">{inset}</g></g>'
+             f'<rect {box} fill="url(#sea)" stroke="#ffffff" stroke-width="0.6" opacity=".97"/>'
+             f'<g clip-path="url(#ic)"><g filter="url(#shade)"><g fill="url(#t0)" stroke="#ffffff" stroke-width="0.3" stroke-opacity=".7" stroke-linejoin="round">{inset}</g></g>'
              f'<g fill="url(#gloss)" opacity=".9">{inset}</g></g>'
              f'<rect {box} fill="none" stroke="#ffffff" stroke-width="1.2"/>')
     d = 1  # 日本の絵は 1単位が 世界の 1/25 なので、かざりは 単位で書けば 同じ見た目
-    extra += (sun(335, 30, 1.8) + cloud(200, 60, 2.4) + cloud(70, 250, 2.0) + cloud(300, 335, 1.9) + cloud(150, 130, 1.5)
-              + balloon(110, 205, 1.9, "#ff7eb6", "#ffe066") + balloon(290, 250, 1.9, "#7ecbff", "#ffffff")
-              + boat(230, 300, 1.9) + boat(140, 335, 1.7) + boat(300, 385, 1.7) + plane(120, 105, 1.9) + plane(335, 180, 1.7)
-              + sakura(60, 315, 2) + sakura(250, 150, 2.2) + sakura(200, 380, 1.8) + sakura(330, 120, 1.6))
     main = f'<clipPath id="mc"><rect x="0" y="0" width="{J.W:.2f}" height="{J.H:.2f}"/></clipPath><g clip-path="url(#mc)">{land}</g>'
     svg = wrap(main, (0, 0, J.W, J.H), 1080, round(1080 * J.H / J.W), extra)
     open(out, "w", encoding="utf-8").write(svg)

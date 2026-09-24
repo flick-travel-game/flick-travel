@@ -13,7 +13,9 @@
   ピンの位置は `index.html` の `JAPAN_MAP` / `japanPos` が 同じ数字で計算する。**地図の切りかたを変えたら 両方 直す**。
   作りかた: `ne_10m_land.zip` をほどく → `python3 tools/make_japan_map.py ne_10m_land.shp japan.svg` → ブラウザで 3240px幅に描いて 1080px に縮める
 - **世界一周マップ**: クリアしたレベルの名所に ピンが立つ。地図は **`world-map-color.jpg`**(2026-09-24 けいくん「世界フリック旅行みたいな カラフルで綺麗な画像にしたい」→
-  `tools/make_color_map.py` で 同じ地図データを キャンディ色(国ごとに 8色)・青い海・星で 描いた。日本は `japan-map-color.jpg`)。
+  `tools/make_color_map.py` で 同じ地図データを 描いた。同日「やっぱり絵は無い方がいい / 地図をボタンと同じカラーを使って キラキラ地図にしたい」→
+  **ボタンと同じ色(`TONE` / `COLORS.level` の 9色)で 国を ぬり、海は 世界の旅のボタンの青、ボタンと同じ feTurbulence の キラキラ**を 重ねる。
+  かざり(雲・気球など)は 無し。日本は `japan-map-color.jpg`(日本の旅のボタンの ピンク))。
   ⚠️ AI に地図を描かせない(場所が ずれて ピンが合わなくなる)。**切りかたは モノクロ版と同じ**なので ピンの計算は そのまま。
   モノクロ版(`world-map-mono.jpg` / `japan-map-mono.jpg`)は 使っていないが、作りかたの記録として 下に残す。もとの地図は `world-map-mono.jpg`
   (Wikimedia Commons の BlankMap-Equirectangular.svg。CC0。Natural Earth のデータ)を 北緯84度〜南緯60度で 切り、

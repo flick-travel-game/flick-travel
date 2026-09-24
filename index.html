@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#eef2f7; --card:#ffffff; --ink:#15233b; --muted:#6b7890;
-  --red:#d7263d; --blue:#1b4f9c; --ok:#1f8a5b; --line:#d6deea; --soft:#e3e9f2;
+  --paper:#ffffff; --card:#ffffff; --ink:#4a3b63; --muted:#6b7890;
+  --red:#d7263d; --blue:#1b4f9c; --ok:#1f8a5b; --line:#e6e2ee; --soft:#f4f1f8;
   box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px);
   padding-bottom:env(safe-area-inset-bottom,0px);
@@ -133,48 +133,51 @@ body.playing{overflow:hidden}
 .primary{background:var(--blue);color:#fff;border:none;border-radius:12px;padding:16px;font-size:17px;font-weight:700}
 .ghost{background:none;border:2px solid var(--line);border-radius:12px;padding:14px;font-size:15px}
 
-/* ── カラフルな見た目(大きな つやのある色のボタン) ── */
+/* ── ボタンの色 ──
+   sanctuary-chiba/speed-king の docs/ボタンの色.md(かずとも の ボタン)の とおり。
+   ⚠️ 色は この CSS に 書かない。JS の COLORS(1か所)から style で わたす */
 .title{background:linear-gradient(90deg,#ff3d8b,#ff8a2b,#ffc93c,#2fd27a,#2f9bff,#9b5cff);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:38px}
-.mode{position:relative;overflow:hidden;border:none;border-radius:28px;padding:22px 22px;color:#fff;min-height:104px;
-  box-shadow:0 12px 24px -10px var(--glow,rgba(0,0,0,.3))}
-.mode::before,.lv::before{content:"";position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(rgba(255,255,255,.55) 1px,transparent 1.6px) 0 0/22px 22px,
-             radial-gradient(rgba(255,255,255,.35) 1px,transparent 1.6px) 11px 11px/22px 22px;opacity:.5}
-.mode::after,.lv::after{content:"";position:absolute;left:0;right:0;top:0;height:48%;pointer-events:none;
-  background:linear-gradient(rgba(255,255,255,.32),rgba(255,255,255,0));border-radius:inherit}
-.mode>*{position:relative;z-index:1}
-.mode .ic{background:rgba(255,255,255,.25);border-radius:16px}
-.mode b{font-size:26px;letter-spacing:.04em;text-shadow:0 1px 2px rgba(0,0,0,.15)}
-.mode small{color:rgba(255,255,255,.92);font-size:14px}
-.mode .go{margin-left:auto;font-size:30px;line-height:1;opacity:.95}
-.mode[data-mode="quote"]{background:linear-gradient(135deg,#ff6aa8,#f0287a);--glow:rgba(240,40,122,.55)}
-.mode[data-mode="spot"]{background:linear-gradient(135deg,#6aa9ff,#2f6bff);--glow:rgba(47,107,255,.55)}
-.lv{position:relative;overflow:hidden;border:none;border-radius:22px;color:#fff;padding:14px 16px;min-height:92px;
-  background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 10px 20px -10px var(--b)}
-.lv>*{position:relative;z-index:1}
-.lv b{font-size:21px;text-shadow:0 1px 2px rgba(0,0,0,.15)}
-.lv small{color:rgba(255,255,255,.9)}
-.lv .bt{color:#fff}
-.lv.done{border:none}
+.sk-card{
+  --sk-a:#f20077; --sk-b:#ff4da3; --sk-on:#ffffff;
+  position:relative; overflow:hidden; border:none; border-radius:0.75rem;
+  color:var(--sk-on); text-shadow:0 1px 2px rgba(0,0,0,0.18);
+  background-image:
+    url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%3E%3Cfilter%20id='f'%20filterUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='180'%20height='180'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.9'%20numOctaves='1'%20seed='3'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%201%200%200%200%200%201%2010%200%200%200%20-7.3'/%3E%3C/filter%3E%3Crect%20width='180'%20height='180'%20filter='url%28%23f%29'/%3E%3C/svg%3E"),
+    linear-gradient(180deg,rgba(255,255,255,0.28),rgba(255,255,255,0) 58%),
+    linear-gradient(135deg,var(--sk-a),var(--sk-b));
+  background-size:180px 180px,100% 100%,100% 100%;
+  box-shadow:0 14px 26px -12px color-mix(in srgb,var(--sk-a) 60%,transparent),inset 0 2px 0 rgba(255,255,255,0.4);
+}
+.sk-card::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%3E%3Cfilter%20id='f'%20filterUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='180'%20height='180'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.9'%20numOctaves='1'%20seed='11'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%201%200%200%200%200%201%2012%200%200%200%20-9.1'/%3E%3C/filter%3E%3Crect%20width='180'%20height='180'%20filter='url%28%23f%29'/%3E%3C/svg%3E");background-size:180px 180px;animation:sk-glitter 1.6s ease-in-out infinite}
+.sk-card::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%3E%3Cfilter%20id='f'%20filterUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='180'%20height='180'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.9'%20numOctaves='1'%20seed='23'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%201%200%200%200%200%201%2012%200%200%200%20-9.5'/%3E%3C/filter%3E%3Crect%20width='180'%20height='180'%20filter='url%28%23f%29'/%3E%3C/svg%3E");background-size:180px 180px;animation:sk-glitter 2.3s ease-in-out infinite;animation-delay:0.8s}
+@keyframes sk-glitter{0%,100%{opacity:0.15}50%{opacity:1}}
+/* ⚠️ ならぶ ボタンは 光る 時こくを ずらす */
+.sk-card-1::before{animation-delay:0s} .sk-card-2::before{animation-delay:0.45s}
+.sk-card-3::before{animation-delay:0.9s} .sk-card-4::before{animation-delay:1.35s}
+.sk-card-1::after{animation-delay:0.8s} .sk-card-2::after{animation-delay:1.4s}
+.sk-card-3::after{animation-delay:0.2s} .sk-card-4::after{animation-delay:1.9s}
+@media (prefers-reduced-motion: reduce){.sk-card::before,.sk-card::after{animation:none;opacity:0.7}}
+.sk-card>*{position:relative;z-index:1}
+
+.mode.sk-card{padding:22px;min-height:104px}
+.mode .ic{background:rgba(255,255,255,.25);border-radius:.75rem}
+.mode b{font-size:26px;letter-spacing:.04em}
+.mode small{color:inherit;opacity:.92;font-size:14px}
+.mode .go{margin-left:auto;font-size:30px;line-height:1}
+.lv.sk-card{padding:14px 16px;min-height:92px}
+.lv b{font-size:21px}
+.lv small,.lv .bt{color:inherit}
+.lv small{opacity:.9}
 .lv.done b::after{content:" ✓";font-size:16px}
-.lv:nth-child(1){--a:#ff7ab0;--b:#f0287a}
-.lv:nth-child(2){--a:#ffa05a;--b:#f06418}
-.lv:nth-child(3){--a:#ffbf3a;--b:#e08a00}
-.lv:nth-child(4){--a:#8be06a;--b:#2fb54a}
-.lv:nth-child(5){--a:#4ee0b0;--b:#11a888}
-.lv:nth-child(6){--a:#5fd4ff;--b:#1398d8}
-.lv:nth-child(7){--a:#6aa9ff;--b:#2f6bff}
-.lv:nth-child(8){--a:#8f8dff;--b:#4d45e8}
-.lv:nth-child(9){--a:#c07aff;--b:#8a2be2}
-.lv:nth-child(10){--a:#ff7ae0;--b:#c21fb0}
-.lv-head h2{background:linear-gradient(90deg,#ff3d8b,#ff8a2b,#2f9bff,#9b5cff);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:28px}
+.lv-head h2{font-size:28px}
 .primary{background:#1e2940;border-radius:999px;padding:18px}
 :root[data-theme="dark"] .primary{background:#3b5bdb}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .primary{background:#3b5bdb}}
 .ghost{border-radius:999px;background:var(--card)}
 .quit{background:var(--card)}
 .how .rule{border-radius:16px}
-.stamp{border-color:#f0287a;color:#f0287a}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -186,12 +189,12 @@ body.playing{overflow:hidden}
     <h1 class="title display">世界フリック旅行</h1>
     <p class="lead">世界の名言や名所を、ひらがなでどれだけ速く打てるか。レベルごとに10問のトータルタイムで勝負しよう。</p>
     <div class="modes">
-      <button class="mode" data-mode="quote">
+      <button class="mode sk-card sk-card-1" data-mode="quote">
         <div class="ic">📜</div>
         <div><b>名言モード</b><small id="best-quote">自己ベスト：まだなし</small></div>
       <span class="go" aria-hidden="true">▶</span>
       </button>
-      <button class="mode" data-mode="spot">
+      <button class="mode sk-card sk-card-2" data-mode="spot">
         <div class="ic">🗺️</div>
         <div><b>名所モード</b><small id="best-spot">自己ベスト：まだなし</small></div>
       <span class="go" aria-hidden="true">▶</span>
@@ -477,6 +480,54 @@ const SPOTS = [
   {n:"鎌倉大仏", c:"日本・神奈川", r:"かまくらだいぶつ", art:"kamakura", d:"高さ約11mの青銅の大仏。大仏殿がなくなったため、今は外に座っている。"},
   {n:"アンテロープキャニオン", c:"アメリカ", r:"あんてろーぷきゃにおん", art:"antelope", d:"砂岩が水と風でけずられてできた細い谷。上から差しこむ光で、岩のかべがなみのように光る。"}
 ];
+/* ── ボタンの色(1か所だけ) ──
+   docs/ボタンの色.md(sanctuary-chiba/speed-king)の 5色 + toneFrom で作った 5色。
+   a=こい方 / b=うすい方 / ink=白い地の上の字 / on=ボタンの上の字 */
+function hexToRgb(hex){ const n = parseInt(hex.slice(1), 16); return [(n>>16)&255, (n>>8)&255, n&255]; }
+function hexToHsl(hex){
+  const [r255,g255,b255] = hexToRgb(hex); const r=r255/255, g=g255/255, b=b255/255;
+  const max=Math.max(r,g,b), min=Math.min(r,g,b), l=(max+min)/2;
+  if(max===min) return [0,0,l*100];
+  const d=max-min, s = l>0.5 ? d/(2-max-min) : d/(max+min);
+  let h; if(max===r) h=((g-b)/d+(g<b?6:0))/6; else if(max===g) h=((b-r)/d+2)/6; else h=((r-g)/d+4)/6;
+  return [h*360, s*100, l*100];
+}
+function hslToHex(h,s,l){
+  const sat=s/100, lig=l/100, c=(1-Math.abs(2*lig-1))*sat, x=c*(1-Math.abs(((h/60)%2)-1)), m=lig-c/2;
+  const t=Math.floor((((h%360)+360)%360)/60);
+  const [r,g,b]=[[c,x,0],[x,c,0],[0,c,x],[0,x,c],[x,0,c],[c,0,x]][t];
+  const hx=v=>Math.round((v+m)*255).toString(16).padStart(2,"0");
+  return "#"+hx(r)+hx(g)+hx(b);
+}
+function contrastWithWhite(hex){
+  const ch=v=>{ const c=v/255; return c<=0.03928 ? c/12.92 : ((c+0.055)/1.055)**2.4; };
+  const [r,g,b]=hexToRgb(hex); const lum=0.2126*ch(r)+0.7152*ch(g)+0.0722*ch(b);
+  return 1.05/(lum+0.05);
+}
+function inkFor(h,s,l){ let light=Math.min(l,45), hex=hslToHex(h,s,light);
+  while(contrastWithWhite(hex)<4 && light>12){ light-=2; hex=hslToHex(h,s,light); } return hex; }
+/* こい色 1つから、ボタンに いる 4つの色を 作る(数字は docs のとおり。思いつきで 変えない) */
+function toneFrom(hex){
+  const [h,s,l]=hexToHsl(hex);
+  return { a:hex.toLowerCase(), b:hslToHex(h,s,Math.min(l+14,80)), ink:inkFor(h,s,l),
+    on: contrastWithWhite(hslToHex(h,s,Math.min(l+14,80))) >= 2.6 ? "#ffffff" : "#2d2a4a" };
+}
+const TONE = {
+  pink:   {a:"#f20077", b:"#ff4da3", ink:"#e6006e", on:"#ffffff"},
+  blue:   {a:"#1d6bff", b:"#649aff", ink:"#004fe6", on:"#ffffff"},
+  green:  {a:"#00b33c", b:"#00d948", ink:"#008a2e", on:"#ffffff"},
+  purple: {a:"#8a2be0", b:"#bb55ff", ink:"#7b1fe0", on:"#ffffff"},
+  orange: {a:"#f25c00", b:"#ff8a33", ink:"#c24f00", on:"#ffffff"},
+};
+const COLORS = {
+  mode: { quote: TONE.pink, spot: TONE.blue },
+  /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
+     ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
+     黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
+  level: [TONE.pink, toneFrom("#e0202e"), TONE.orange, TONE.green, toneFrom("#006b57"),
+          toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
+};
+function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }
 /* 解説のふりがな(tools/make_ruby.py が作る) RUBY-START */
 const RUBY = {
  "eiffel": "1889<ruby>年<rt>ねん</rt></ruby>のパリ<ruby>万博<rt>ばんぱく</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせて<ruby>建<rt>た</rt></ruby>てられた<ruby>鉄<rt>てつ</rt></ruby>の<ruby>塔<rt>とう</rt></ruby>。<ruby>完成<rt>かんせい</rt></ruby>したときは<ruby>世界一<rt>せかいいち</rt></ruby><ruby>高<rt>たか</rt></ruby>い<ruby>建物<rt>たてもの</rt></ruby>で、<ruby>今<rt>いま</rt></ruby>の<ruby>高<rt>たか</rt></ruby>さは<ruby>約<rt>やく</rt></ruby>330m。",
@@ -688,9 +739,10 @@ function tick(){
 function openLevels(m){
   mode = m;
   $("#lv-title").textContent = m === "quote" ? "名言モード" : "名所モード";
+  $("#lv-title").style.color = COLORS.mode[m].ink;
   $("#lv-list").innerHTML = LEVELS[m].map((set, i) => {
     const lens = set.map(q => textOf(m,q).length), b = bestOf(m,i);
-    return '<button class="lv'+(isNaN(b) ? '' : ' done')+'" data-lv="'+i+'"><b>レベル'+(i+1)+'</b>'+
+    return '<button class="lv sk-card sk-card-'+(i%4+1)+(isNaN(b) ? '' : ' done')+'" style="'+toneStyle(COLORS.level[i])+'" data-lv="'+i+'"><b>レベル'+(i+1)+'</b>'+
       '<small>1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字</small>'+
       '<div class="bt">'+(isNaN(b) ? '自己ベスト：まだなし' : '自己ベスト：'+b.toFixed(2)+'秒')+'</div></button>';
   }).join("");
@@ -756,6 +808,8 @@ function finish(){
   if(isNew) store(key, total.toFixed(2));
   const best = isNew ? total : prev;
   $("#r-time").textContent = total.toFixed(2);
+  const ink = COLORS.level[level].ink;
+  $(".stamp").style.color = ink; $(".stamp").style.borderColor = ink;
   $("#r-cps").textContent = (chars/total).toFixed(1);
   $("#r-chars").textContent = chars;
   $("#r-best").textContent = best.toFixed(2);
@@ -773,7 +827,7 @@ function finish(){
   showBest();
 }
 
-document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => openLevels(b.dataset.mode)));
+document.querySelectorAll(".mode").forEach(b => { b.style.cssText = toneStyle(COLORS.mode[b.dataset.mode]); b.addEventListener("click", () => openLevels(b.dataset.mode)); });
 $("#lv-back").addEventListener("click", () => { show("home"); showBest(); });
 $("#quit").addEventListener("click", () => { running = false; locked = true; cancelAnimationFrame(raf); ans.blur(); openLevels(mode); });
 $("#again").addEventListener("click", () => start(mode, level));

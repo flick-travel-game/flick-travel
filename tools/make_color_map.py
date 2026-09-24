@@ -78,7 +78,7 @@ def star(cx, cy, r):
 
 
 # トップの絵(hero.webp)の 字と同じ あかるい キャンディ色(けいくん 2026-09-24「さわやかな青ベースで カラフルに」)。上→下で 少し こくなる
-TONES = [("#ff6b6b", "#ff2f4f"), ("#ffd23f", "#ff9f1c"), ("#8ae234", "#2fb84a"), ("#5cc8ff", "#1e7bff"), ("#c58bff", "#8a3cff"),
+TONES = [("#ff6b6b", "#ff2f4f"), ("#ffd23f", "#ff9f1c"), ("#8ae234", "#2fb84a"), ("#4d9dff", "#1e5fff"), ("#c58bff", "#8a3cff"),
          ("#ffa63b", "#ff6b2b"), ("#ff7fc8", "#ff2f8e"), ("#5ee6d6", "#12b3a8"), ("#b9f26b", "#6ccf2e")]
 SEA = ("#4fb8ff", "#c9efff")  # さわやかな 空色(下が こい・上が うすい)
 NEIGHBOR = ("#eaf6ff", "#cfe6ff")  # 日本の となりの国(色を付けない)
@@ -105,11 +105,14 @@ def wrap(paths, vb, W, H, extra=""):
 
 
 # 大きな国の色は 決めておく(けいくん 2026-09-24「右上に赤が多くて怖い → 北海道と同じ色(むらさき)に」)。番号は TONES の並び
-BIG = {"RUS": 4, "CHN": 7, "USA": 2, "CAN": 5, "BRA": 1, "AUS": 8, "IND": 6, "KAZ": 1, "MNG": 8, "GRL": 3, "ARG": 4, "DZA": 3,
-       "SAU": 1, "IRN": 2, "MEX": 6, "IDN": 5, "LBY": 5, "SDN": 7, "COD": 4, "ZAF": 6, "PER": 3, "COL": 1, "EGY": 8, "TUR": 2,
-       "UKR": 1, "FRA": 3, "ESP": 6, "DEU": 1, "SWE": 6, "NOR": 8, "FIN": 3, "POL": 5, "ITA": 2, "GBR": 6, "JPN": 6, "MDG": 4,
-       "TCD": 3, "NER": 4, "MLI": 8, "MRT": 5, "AGO": 3, "NAM": 1, "BWA": 8, "ETH": 4, "TZA": 1, "KEN": 5, "MOZ": 7, "ZMB": 3,
-       "PAK": 5, "AFG": 8, "MMR": 1, "THA": 7, "VNM": 3, "MYS": 1, "PNG": 6, "NZL": 8, "CHL": 6, "BOL": 5, "VEN": 5, "ISL": 6}
+BIG = {"RUS": 4, "CHN": 7, "USA": 2, "CAN": 1, "BRA": 5, "AUS": 8, "IND": 6, "KAZ": 1, "MNG": 6, "GRL": 6, "ARG": 3, "DZA": 3,
+       "SAU": 0, "IRN": 2, "MEX": 0, "IDN": 5, "LBY": 7, "SDN": 3, "COD": 4, "ZAF": 6, "PER": 8, "COL": 1, "EGY": 8, "TUR": 2,
+       "UKR": 6, "FRA": 3, "ESP": 6, "DEU": 1, "SWE": 6, "NOR": 8, "FIN": 3, "POL": 5, "ITA": 2, "GBR": 6, "JPN": 6, "MDG": 4,
+       "TCD": 1, "NER": 4, "MLI": 8, "MRT": 0, "AGO": 3, "NAM": 6, "BWA": 8, "ETH": 4, "TZA": 1, "KEN": 5, "MOZ": 7, "ZMB": 3,
+       "PAK": 5, "AFG": 8, "MMR": 1, "THA": 7, "VNM": 3, "MYS": 1, "PNG": 6, "NZL": 8, "CHL": 7, "BOL": 5, "VEN": 2, "ISL": 6,
+       "NGA": 7, "ETH": 4, "SOM": 0, "CAF": 8, "CMR": 5, "GAB": 1, "MAR": 6, "TUN": 2, "IRQ": 3, "SYR": 5, "YEM": 7, "OMN": 6,
+       "UZB": 3, "TKM": 5, "PRY": 2, "URY": 4, "ECU": 4, "GUY": 6, "ROU": 2, "BGR": 0, "GRC": 5, "HUN": 8, "AUT": 6, "CHE": 0,
+       "PRT": 1, "IRL": 8, "BLR": 5, "LTU": 2, "LVA": 6, "EST": 4, "NPL": 0, "BGD": 5, "LKA": 8, "PHL": 1, "KOR": 3, "PRK": 5}
 
 
 def world(src, out):

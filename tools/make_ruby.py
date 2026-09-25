@@ -126,7 +126,7 @@ def main():
     tok = dictionary.Dictionary().create()
     mode = tokenizer.Tokenizer.SplitMode.C
     out = {}
-    for m in re.finditer(r'\{n:"([^"]*)", c:"[^"]*", r:"[^"]*", art:"(\w+)", (?:k:"name", e:"[^"]*", )?d:"([^"]*)"\}', page):
+    for m in re.finditer(r'\{n:"([^"]*)", c:"[^"]*", r:"[^"]*", art:"(\w+)", (?:k:"name", e:"[^"]*", )?(?:f:1, )?d:"([^"]*)"\}', page):
         name, key, desc = m.groups()
         parts, plain = [], []
         prev = ""

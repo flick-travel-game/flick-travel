@@ -24,6 +24,22 @@ CACHE = ROOT / "tools" / "people-portraits.json"
 INFO_CACHE = ROOT / "tools" / "people-fileinfo.json"  # Commons の 写真の情報(作者・ライセンス・大きさ)の 写し
 # 代表画像が 花押(サイン)や 無い人は、Commons を見て 決めたファイル名を ここに(Wikipedia の題名 → File: なしの名前)
 MANUAL = {}
+# キー → Commons のファイル名(File: なし)。Commons を英語名でさがして 2026-09-25 に えらんだもの(代表画像が 花押・風景・無い人)
+MANUAL_KEY = {
+    "nobunaga": "Oda-Nobunaga.jpg", "masamune": "Date Masamune02.jpg", "kukai": "Portrait of Kōbō Daishi.jpg", "shinran": "Shinran Shonin.jpg",
+    "uemura": "Naomi Uemura.jpg", "dogen": "Soto-Zen-Master-Dogen-Zenji-Portrait.png", "hideyoshi": "Toyotomi hideyoshi.jpg", "ieyasu": "Tokugawa Ieyasu2.JPG",
+    "kenshin": "Uesugi Kenshin.jpg", "tsuda": "Tsuda Umeko Portrait c1900.png", "ogai": "Mori Ogai (cropped).jpg", "ichiyo": "Higuchi Ichiyou.png",
+    "toyoda": "Sakichi Toyoda.jpg", "iwasaki": "Iwasaki Yataro.jpg", "tanaka": "Tanaka Shozo.jpg", "makino": "Makino Tomitaro.jpg",
+    "chuya": "Nakahara Chuya.jpg", "misuzu": "Kaneko Misuzu.jpg", "mizuki": "Shigeru Mizuki at age 18.jpg", "futabayama": "Futabayama Sadaji.jpg",
+    "issai": "A portrait of Satoh Issai by Watanabe Kazan.jpg", "hisashige": "TanakaHisashige.jpg",
+    "columbus": "Portrait of a Man, Said to be Christopher Columbus.jpg", "confucius": "Confucius Tang Dynasty.jpg",
+    "alexander": "Alexander the Great mosaic (cropped).jpg", "tolstoy": "L.N.Tolstoy Prokudin-Gorsky.jpg",
+    "exupery": "Antoine de Saint-Exupéry.jpg", "chopin": "Frederic Chopin photo.jpeg",
+}
+
+
+class TooBusy(Exception):
+    pass
 
 
 def get(url):
@@ -36,9 +52,8 @@ def get(url):
             if e.code == 429:
                 wait = int(e.headers.get("Retry-After", "30") or 30)
                 if wait > 120:
-                    # 長い「待て」は いったん 終わる(裏で 眠らせておくと 途中で止められる)。あとで もう一度 走らせれば つづきから
-                    print(f"PAUSE {wait}秒 待てと言われたので いったん終わる {urllib.parse.urlparse(url).netloc}", flush=True)
-                    sys.exit(3)
+                    # 長い「待て」は その絵だけ あきらめて 次へ(1枚の絵(新しい大きさの縮小版)に対して 出ることが多い)。あとで もう一度 走らせれば つづきから
+                    raise TooBusy(f"{wait}秒待て {url[:120]}")
                 print(f"  ...429 {wait}秒まって やりなおし", file=sys.stderr, flush=True)
                 time.sleep(wait + 1)
                 continue
@@ -79,7 +94,7 @@ def main():
     for k in keys:
         if k in photos and not "--redo" in sys.argv:
             continue  # もう取ってある(止まっても つづきから)
-        name = cache.get(PEOPLE[k][0])
+        name = MANUAL_KEY.get(k) or cache.get(PEOPLE[k][0])
         if not name:
             print(f"✗ {k}({PEOPLE[k][1]}): Wikipedia に 代表画像が無い", flush=True)
             continue
@@ -132,8 +147,9 @@ def main():
         img = None
         try:
             img = Image.open(io.BytesIO(get(thumb))).convert("RGB")
-        except SystemExit:
-            raise
+        except TooBusy as e:
+            print(f"✗ {k}: あとで {e}", flush=True)
+            continue
         except Exception as e:  # noqa
             print(f"  ...落とせない {thumb[:80]} {e}", flush=True)
         if img is None:

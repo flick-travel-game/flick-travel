@@ -4056,22 +4056,6 @@ const PHOTOS = {
   "page": "https://commons.wikimedia.org/wiki/File:Sei_Sh%C3%B4nagon_(titel_op_object)_Vergelijkingen_met_de_honderd_Ogura_gedichten_(serietitel)_Ogura_nazorae_hyakunin_isshu_(serietitel_op_object),_RP-P-2016-3-6.jpg",
   "file": "File:Sei Shônagon (titel op object) Vergelijkingen met de honderd Ogura gedichten (serietitel) Ogura nazorae hyakunin isshu (serietitel op object), RP-P-2016-3-6.jpg"
  },
- "masako": {
-  "src": "photo-masako.jpg",
-  "author": "Indiana jo",
-  "license": "CC BY-SA 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E6%9D%A1%E6%94%BF%E5%AD%90%E7%94%A3%E6%B9%AF%E3%81%AE%E4%BA%95%E6%88%B8.jpg",
-  "file": "File:北条政子産湯の井戸.jpg"
- },
- "kukai": {
-  "src": "photo-kukai.jpg",
-  "author": "Daderot",
-  "license": "CC0（パブリックドメイン）",
-  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "page": "https://commons.wikimedia.org/wiki/File:Lan_Su_Chinese_Garden_-_Portland,_Oregon_-_DSC01296.jpg",
-  "file": "File:Lan Su Chinese Garden - Portland, Oregon - DSC01296.jpg"
- },
  "saicho": {
   "src": "photo-saicho.jpg",
   "author": "Unknown authorUnknown author",
@@ -4087,14 +4071,6 @@ const PHOTOS = {
   "licenseUrl": "",
   "page": "https://commons.wikimedia.org/wiki/File:Takanobu-no-miei.jpg",
   "file": "File:Takanobu-no-miei.jpg"
- },
- "shinran": {
-  "src": "photo-shinran.jpg",
-  "author": "Hyppolyte de Saint-Rambert",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Takada_Honzan_Senjuji_(Tsu,_Mie)_VLux5_hdsr_18.jpg",
-  "file": "File:Takada Honzan Senjuji (Tsu, Mie) VLux5 hdsr 18.jpg"
  },
  "nichiren": {
   "src": "photo-nichiren.jpg",
@@ -4207,5 +4183,1341 @@ const PHOTOS = {
   "licenseUrl": "",
   "page": "https://commons.wikimedia.org/wiki/File:Noguchi_Hideyo.jpg",
   "file": "File:Noguchi Hideyo.jpg"
+ },
+ "buson": {
+  "src": "photo-buson.jpg",
+  "author": "Matsumura Goshun",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yosa_Buson.jpg",
+  "file": "File:Yosa Buson.jpg"
+ },
+ "issa": {
+  "src": "photo-issa.jpg",
+  "author": "Yoshi Canopus",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kobayashi_Issa-Portrait.jpg",
+  "file": "File:Kobayashi Issa-Portrait.jpg"
+ },
+ "sontoku": {
+  "src": "photo-sontoku.jpg",
+  "author": "岡本秋暉（（1807-1862）",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ninomiya-Sontoku.jpg",
+  "file": "File:Ninomiya-Sontoku.jpg"
+ },
+ "saigo": {
+  "src": "photo-saigo.jpg",
+  "author": "Ishikawa Shizumasa (1848-1925)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Saigo_Takamori_Portrait_by_Ishikawa_Shizumasa.jpg",
+  "file": "File:Saigo Takamori Portrait by Ishikawa Shizumasa.jpg"
+ },
+ "shinsaku": {
+  "src": "photo-shinsaku.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Takasugi_Sinsaku.jpg",
+  "file": "File:Takasugi Sinsaku.jpg"
+ },
+ "fukuzawa": {
+  "src": "photo-fukuzawa.jpg",
+  "author": "Fukuzawa Research Center",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fukuzawa_Yukichi_1891.jpg",
+  "file": "File:Fukuzawa Yukichi 1891.jpg"
+ },
+ "nitobe": {
+  "src": "photo-nitobe.jpg",
+  "author": "Auguste Léon",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Monsieur_Inaz%C5%8D_Nitobe.jpg",
+  "file": "File:Monsieur Inazō Nitobe.jpg"
+ },
+ "kitasato": {
+  "src": "photo-kitasato.jpg",
+  "author": "北里研究所",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shibasabur%C5%8D_Kitasato_1910.jpg",
+  "file": "File:Shibasaburō Kitasato 1910.jpg"
+ },
+ "kenji": {
+  "src": "photo-kenji.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Miyazawa_Kenji.jpg",
+  "file": "File:Miyazawa Kenji.jpg"
+ },
+ "dazai": {
+  "src": "photo-dazai.jpg",
+  "author": "Shigeru Tamura",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Osamu_Dazai.jpg",
+  "file": "File:Osamu Dazai.jpg"
+ },
+ "akutagawa": {
+  "src": "photo-akutagawa.jpg",
+  "author": "- The person in the photo is Ryunosuke Akutagawa.",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AkutagawaRyunosuke.jpg",
+  "file": "File:AkutagawaRyunosuke.jpg"
+ },
+ "takuboku": {
+  "src": "photo-takuboku.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Takuboku_Ishikawa.jpg",
+  "file": "File:Takuboku Ishikawa.jpg"
+ },
+ "shiki": {
+  "src": "photo-shiki.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Masaoka_Shiki.jpg",
+  "file": "File:Masaoka Shiki.jpg"
+ },
+ "akiko": {
+  "src": "photo-akiko.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Akiko_Yosano_younger.jpg",
+  "file": "File:Akiko Yosano younger.jpg"
+ },
+ "kawabata": {
+  "src": "photo-kawabata.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yasunari_Kawabata_1938.jpg",
+  "file": "File:Yasunari Kawabata 1938.jpg"
+ },
+ "matsushita": {
+  "src": "photo-matsushita.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Konosuke_Matsushita_01.jpg",
+  "file": "File:Konosuke Matsushita 01.jpg"
+ },
+ "honda": {
+  "src": "photo-honda.jpg",
+  "author": "朝日新聞社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Asahigraph-1955-Shinshun-1.jpg",
+  "file": "File:Asahigraph-1955-Shinshun-1.jpg"
+ },
+ "tezuka": {
+  "src": "photo-tezuka.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Osamu_Tezuka_1951_Scan10008-2.JPG",
+  "file": "File:Osamu Tezuka 1951 Scan10008-2.JPG"
+ },
+ "kurosawa": {
+  "src": "photo-kurosawa.jpg",
+  "author": "キネマ旬報社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kinema-Junpo-1960-December-Special-1.jpg",
+  "file": "File:Kinema-Junpo-1960-December-Special-1.jpg"
+ },
+ "yukawa": {
+  "src": "photo-yukawa.jpg",
+  "author": "Nobel Foundation archive",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yukawa.jpg",
+  "file": "File:Yukawa.jpg"
+ },
+ "kano": {
+  "src": "photo-kano.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_late_Mr._Kano.jpg",
+  "file": "File:Portrait of late Mr. Kano.jpg"
+ },
+ "okamoto": {
+  "src": "photo-okamoto.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tar%C5%8D_Okamoto.jpg",
+  "file": "File:Tarō Okamoto.jpg"
+ },
+ "sugihara": {
+  "src": "photo-sugihara.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sugihara_b.jpg",
+  "file": "File:Sugihara b.jpg"
+ },
+ "niijima": {
+  "src": "photo-niijima.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Niijima_Jo.jpg",
+  "file": "File:Niijima Jo.jpg"
+ },
+ "uchimura": {
+  "src": "photo-uchimura.jpg",
+  "author": "益本重雄, 藤沢音吉",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Uchimura_Kanzo.jpg",
+  "file": "File:Uchimura Kanzo.jpg"
+ },
+ "itagaki": {
+  "src": "photo-itagaki.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ITAGAKI_Taisuke.jpg",
+  "file": "File:ITAGAKI Taisuke.jpg"
+ },
+ "ito": {
+  "src": "photo-ito.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:IT%C5%8C_Hirobumi.jpg",
+  "file": "File:ITŌ Hirobumi.jpg"
+ },
+ "okuma": {
+  "src": "photo-okuma.jpg",
+  "author": "Photographer working for the government of Japan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shigenobu_Okuma_5.jpg",
+  "file": "File:Shigenobu Okuma 5.jpg"
+ },
+ "ogata": {
+  "src": "photo-ogata.jpg",
+  "author": "Painted by Goseda Yoshimatsu",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Koan_Ogata_1901.jpg",
+  "file": "File:Koan Ogata 1901.jpg"
+ },
+ "shirasu": {
+  "src": "photo-shirasu.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jir%C5%8D_Shirasu.jpg",
+  "file": "File:Jirō Shirasu.jpg"
+ },
+ "kotaro": {
+  "src": "photo-kotaro.jpg",
+  "author": "Shigeru Tamura",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotaro_Takamura_by_Shigeru_Tamura.jpg",
+  "file": "File:Kotaro Takamura by Shigeru Tamura.jpg"
+ },
+ "maejima": {
+  "src": "photo-maejima.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Maejima_Hisoka_1.jpg",
+  "file": "File:Maejima Hisoka 1.jpg"
+ },
+ "hijikata": {
+  "src": "photo-hijikata.jpg",
+  "author": "Tamoto Kenzō",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hijikata_Toshizo.jpg",
+  "file": "File:Hijikata Toshizo.jpg"
+ },
+ "yozan": {
+  "src": "photo-yozan.jpg",
+  "author": "不明。",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E6%9D%89%E9%B7%B9%E5%B1%B1.jpg",
+  "file": "File:上杉鷹山.jpg"
+ },
+ "shozan": {
+  "src": "photo-shozan.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sakuma_Shozan.jpg",
+  "file": "File:Sakuma Shozan.jpg"
+ },
+ "isoroku": {
+  "src": "photo-isoroku.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Yamamoto_Isoroku.jpg",
+  "file": "File:Portrait of Yamamoto Isoroku.jpg"
+ },
+ "togo": {
+  "src": "photo-togo.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:T%C5%8Dg%C5%8D_Heihachir%C5%8D.jpg",
+  "file": "File:Tōgō Heihachirō.jpg"
+ },
+ "raicho": {
+  "src": "photo-raicho.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Raicho_Hiratsuka.jpg",
+  "file": "File:Raicho Hiratsuka.jpg"
+ },
+ "ibuka": {
+  "src": "photo-ibuka.jpg",
+  "author": "中日新聞社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chunichi1966-01-17-1.jpg",
+  "file": "File:Chunichi1966-01-17-1.jpg"
+ },
+ "komachi": {
+  "src": "photo-komachi.jpg",
+  "author": "Suzuki Harunobu",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Suzuki_Harunobu_-_The_Poetess_Ono_no_Komachi_-_1925.2046_-_Art_Institute_of_Chicago.jpg",
+  "file": "File:Suzuki Harunobu - The Poetess Ono no Komachi - 1925.2046 - Art Institute of Chicago.jpg"
+ },
+ "michizane": {
+  "src": "photo-michizane.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9D%9F%E5%B8%AF%E5%A4%A9%E7%A5%9E%E5%83%8F.png",
+  "file": "File:束帯天神像.png"
+ },
+ "michinaga": {
+  "src": "photo-michinaga.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fujiwara_no_Michinaga_2.jpg",
+  "file": "File:Fujiwara no Michinaga 2.jpg"
+ },
+ "saigyo": {
+  "src": "photo-saigyo.jpg",
+  "author": "Unknown",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:PORTRAIT_OF_THE_PRIEST-POET_SAIGYO_-_Google_Art_Project.jpg",
+  "file": "File:PORTRAIT OF THE PRIEST-POET SAIGYO - Google Art Project.jpg"
+ },
+ "chomei": {
+  "src": "photo-chomei.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kamo_no_Chomei.jpg",
+  "file": "File:Kamo no Chomei.jpg"
+ },
+ "kenko": {
+  "src": "photo-kenko.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yoshida_Kenko.jpg",
+  "file": "File:Yoshida Kenko.jpg"
+ },
+ "nakamaro": {
+  "src": "photo-nakamaro.jpg",
+  "author": "Kikuchi Yosai（菊池容斎）",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Abeno_Nakamaro.jpg",
+  "file": "File:Abeno Nakamaro.jpg"
+ },
+ "masashige": {
+  "src": "photo-masashige.jpg",
+  "author": "Kanō Sanraku",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kusunoki_Masashige.jpg",
+  "file": "File:Kusunoki Masashige.jpg"
+ },
+ "kanbei": {
+  "src": "photo-kanbei.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yoshitaka_Kuroda.jpg",
+  "file": "File:Yoshitaka Kuroda.jpg"
+ },
+ "kuranosuke": {
+  "src": "photo-kuranosuke.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%C5%8Cishi_Yoshio.jpg",
+  "file": "File:Ōishi Yoshio.jpg"
+ },
+ "norinaga": {
+  "src": "photo-norinaga.jpg",
+  "author": "Hannah",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%AC%E5%B1%85%E5%AE%A3%E9%95%B702.jpg",
+  "file": "File:本居宣長02.jpg"
+ },
+ "kaibara": {
+  "src": "photo-kaibara.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait-Kaibara-Ekiken-(cropped)-c1700.png",
+  "file": "File:Portrait-Kaibara-Ekiken-(cropped)-c1700.png"
+ },
+ "nishida": {
+  "src": "photo-nishida.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait-of-Kitaro-Nishida.png",
+  "file": "File:Portrait-of-Kitaro-Nishida.png"
+ },
+ "nakamura": {
+  "src": "photo-nakamura.jpg",
+  "author": "在アフガニスタン日本国大使館",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tetsu_Nakamura_cropped_2_Mitsuji_Suzuka_and_Tetsu_Nakamura_20161117.jpg",
+  "file": "File:Tetsu Nakamura cropped 2 Mitsuji Suzuka and Tetsu Nakamura 20161117.jpg"
+ },
+ "ogatasadako": {
+  "src": "photo-ogatasadako.jpg",
+  "author": "World Economic Forum",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sadako_Ogata_-_World_Economic_Forum_on_Africa_2008.jpg",
+  "file": "File:Sadako Ogata - World Economic Forum on Africa 2008.jpg"
+ },
+ "tenshin": {
+  "src": "photo-tenshin.jpg",
+  "author": "Unknown",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Okakura_Kakuzo_Portrait_c1905.png",
+  "file": "File:Okakura Kakuzo Portrait c1905.png"
+ },
+ "davinci": {
+  "src": "photo-davinci.jpg",
+  "author": "Leonardo da Vinci",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_presumed_self-portrait_-_WGA12798.jpg",
+  "file": "File:Leonardo da Vinci - presumed self-portrait - WGA12798.jpg"
+ },
+ "einstein": {
+  "src": "photo-einstein.jpg",
+  "author": "International News Service",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Albert_Einstein_sticks_his_tongue.jpg",
+  "file": "File:Albert Einstein sticks his tongue.jpg"
+ },
+ "edison": {
+  "src": "photo-edison.jpg",
+  "author": "Louis Bachrach, Bachrach Studios, restored by Michel Vuijlst…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Thomas_Edison2.jpg",
+  "file": "File:Thomas Edison2.jpg"
+ },
+ "nightingale": {
+  "src": "photo-nightingale.jpg",
+  "author": "H. Lenthall, London",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Florence_Nightingale_CDV_by_H_Lenthall.jpg",
+  "file": "File:Florence Nightingale CDV by H Lenthall.jpg"
+ },
+ "gandhi": {
+  "src": "photo-gandhi.jpg",
+  "author": "Elliott & Fry",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi,_studio,_1931.jpg",
+  "file": "File:Mahatma-Gandhi, studio, 1931.jpg"
+ },
+ "mlk": {
+  "src": "photo-mlk.jpg",
+  "author": "Bernie Faingold",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Martin_Luther_King,_Jr..jpg",
+  "file": "File:Martin Luther King, Jr..jpg"
+ },
+ "lincoln": {
+  "src": "photo-lincoln.jpg",
+  "author": "Alexander Gardner",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+  "file": "File:Abraham Lincoln O-77 matte collodion print.jpg"
+ },
+ "keller": {
+  "src": "photo-keller.jpg",
+  "author": "Los Angeles Times; restored by User:Rhododendrites",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Helen_Keller_circa_1920_-_restored.jpg",
+  "file": "File:Helen Keller circa 1920 - restored.jpg"
+ },
+ "beethoven": {
+  "src": "photo-beethoven.jpg",
+  "author": "Joseph Karl Stieler",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg",
+  "file": "File:Joseph Karl Stieler's Beethoven mit dem Manuskript der Missa solemnis.jpg"
+ },
+ "mozart": {
+  "src": "photo-mozart.jpg",
+  "author": "Barbara Krafft",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wolfgang-amadeus-mozart_1.jpg",
+  "file": "File:Wolfgang-amadeus-mozart 1.jpg"
+ },
+ "newton": {
+  "src": "photo-newton.jpg",
+  "author": "Godfrey Kneller",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg",
+  "file": "File:Portrait of Sir Isaac Newton, 1689 (brightened).jpg"
+ },
+ "galileo": {
+  "src": "photo-galileo.jpg",
+  "author": "Justus Sustermans",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Justus_Sustermans_-_Portrait_of_Galileo_Galilei_(Uffizi).jpg",
+  "file": "File:Justus Sustermans - Portrait of Galileo Galilei (Uffizi).jpg"
+ },
+ "shakespeare": {
+  "src": "photo-shakespeare.jpg",
+  "author": "Attributed to John Taylor",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shakespeare.jpg",
+  "file": "File:Shakespeare.jpg"
+ },
+ "picasso": {
+  "src": "photo-picasso.jpg",
+  "author": "Argentina. Revista Vea y Lea",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pablo_picasso_1.jpg",
+  "file": "File:Pablo picasso 1.jpg"
+ },
+ "gogh": {
+  "src": "photo-gogh.jpg",
+  "author": "Vincent van Gogh",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:VanGogh_1887_Selbstbildnis.jpg",
+  "file": "File:VanGogh 1887 Selbstbildnis.jpg"
+ },
+ "monet": {
+  "src": "photo-monet.jpg",
+  "author": "Nadar",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Claude_Monet_1899_Nadar.jpg",
+  "file": "File:Claude Monet 1899 Nadar.jpg"
+ },
+ "napoleon": {
+  "src": "photo-napoleon.jpg",
+  "author": "Workshop of François Gérard",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_G%C3%A9rard_-_Napoleon_I_001.JPG",
+  "file": "File:François Gérard - Napoleon I 001.JPG"
+ },
+ "jeanne": {
+  "src": "photo-jeanne.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Joan_of_Arc_miniature_graded.jpg",
+  "file": "File:Joan of Arc miniature graded.jpg"
+ },
+ "curie": {
+  "src": "photo-curie.jpg",
+  "author": "Henri Manuel",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Marie_Curie_c._1920s.jpg",
+  "file": "File:Marie Curie c. 1920s.jpg"
+ },
+ "anne": {
+  "src": "photo-anne.jpg",
+  "author": "Photo Collection Anne Frank House",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Anne_Frank,_1942.jpg",
+  "file": "File:Anne Frank, 1942.jpg"
+ },
+ "teresa": {
+  "src": "photo-teresa.jpg",
+  "author": "Túrelio",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:MotherTeresa_090.jpg",
+  "file": "File:MotherTeresa 090.jpg"
+ },
+ "franklin": {
+  "src": "photo-franklin.jpg",
+  "author": "After Joseph-Siffred Duplessis",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:BenFranklinDuplessis.jpg",
+  "file": "File:BenFranklinDuplessis.jpg"
+ },
+ "socrates": {
+  "src": "photo-socrates.jpg",
+  "author": "Copy of Lysippos (?)",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Socrate_du_Louvre.jpg",
+  "file": "File:Socrate du Louvre.jpg"
+ },
+ "plato": {
+  "src": "photo-plato.jpg",
+  "author": "Unknown artistUnknown artist",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Plato_Pio-Clemetino_Inv305.jpg",
+  "file": "File:Plato Pio-Clemetino Inv305.jpg"
+ },
+ "aristotle": {
+  "src": "photo-aristotle.jpg",
+  "author": "After Lysippos",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg",
+  "file": "File:Aristotle Altemps Inv8575.jpg"
+ },
+ "laozi": {
+  "src": "photo-laozi.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lao-Tzu_on_his_buffalo,_followed_by_a_disciple.jpg",
+  "file": "File:Lao-Tzu on his buffalo, followed by a disciple.jpg"
+ },
+ "buddha": {
+  "src": "photo-buddha.jpg",
+  "author": "พระมหาเทวประภาส วชิรญาณเมธี (ผู้ถ่าย-ปล่อยสัญญาอนุญาตภาพให้น…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg",
+  "file": "File:Buddha in Sarnath Museum (Dhammajak Mutra).jpg"
+ },
+ "caesar": {
+  "src": "photo-caesar.jpg",
+  "author": "Nicolas Coustou",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Julius_Caesar_Coustou_Louvre_MR1798.jpg",
+  "file": "File:Julius Caesar Coustou Louvre MR1798.jpg"
+ },
+ "marcopolo": {
+  "src": "photo-marcopolo.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Marco_Polo_portrait.jpg",
+  "file": "File:Marco Polo portrait.jpg"
+ },
+ "michelangelo": {
+  "src": "photo-michelangelo.jpg",
+  "author": "Attributed to Daniele da Volterra",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Miguel_%C3%81ngel,_por_Daniele_da_Volterra_(detalle).jpg",
+  "file": "File:Miguel Ángel, por Daniele da Volterra (detalle).jpg"
+ },
+ "darwin": {
+  "src": "photo-darwin.jpg",
+  "author": "Leonard Darwin",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1878_Darwin_photo_by_Leonard_from_Woodall_1884.jpg",
+  "file": "File:1878 Darwin photo by Leonard from Woodall 1884.jpg"
+ },
+ "pasteur": {
+  "src": "photo-pasteur.jpg",
+  "author": "Paul Nadar",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Louis_Pasteur,_foto_av_Paul_Nadar,_Crisco_edit.jpg",
+  "file": "File:Louis Pasteur, foto av Paul Nadar, Crisco edit.jpg"
+ },
+ "nobel": {
+  "src": "photo-nobel.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:AlfredNobel2.jpg",
+  "file": "File:AlfredNobel2.jpg"
+ },
+ "bell": {
+  "src": "photo-bell.jpg",
+  "author": "Moffett Studio",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Alexander_Graham_Bell.jpg",
+  "file": "File:Alexander Graham Bell.jpg"
+ },
+ "ford": {
+  "src": "photo-ford.jpg",
+  "author": "Fred Hartsook",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Henry_ford_1919.jpg",
+  "file": "File:Henry ford 1919.jpg"
+ },
+ "jobs": {
+  "src": "photo-jobs.jpg",
+  "author": "Matthew Yohe",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010_(cropped_4).jpg",
+  "file": "File:Steve Jobs Headshot 2010 (cropped 4).jpg"
+ },
+ "disney": {
+  "src": "photo-disney.jpg",
+  "author": "NASA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Walt_disney_portrait.jpg",
+  "file": "File:Walt disney portrait.jpg"
+ },
+ "chaplin": {
+  "src": "photo-chaplin.jpg",
+  "author": "Strauss-Peyton Studio",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Charlie_Chaplin_portrait_Getty_1739411952.jpg",
+  "file": "File:Charlie Chaplin portrait Getty 1739411952.jpg"
+ },
+ "hepburn": {
+  "src": "photo-hepburn.jpg",
+  "author": "Bud Fraker (1916-2002) [1]",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:AudreyKHepburn.jpg",
+  "file": "File:AudreyKHepburn.jpg"
+ },
+ "armstrong": {
+  "src": "photo-armstrong.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Neil_Armstrong_pose.jpg",
+  "file": "File:Neil Armstrong pose.jpg"
+ },
+ "gagarin": {
+  "src": "photo-gagarin.jpg",
+  "author": "Александр Моклецов / СовИнформБюро",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yuri_Gagarin_with_awards.jpg",
+  "file": "File:Yuri Gagarin with awards.jpg"
+ },
+ "tesla": {
+  "src": "photo-tesla.jpg",
+  "author": "Napoleon Sarony",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tesla_circa_1890.jpeg",
+  "file": "File:Tesla circa 1890.jpeg"
+ },
+ "ruth": {
+  "src": "photo-ruth.jpg",
+  "author": "Paul Thompson, NY",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Babe_Ruth_circa_1920.jpg",
+  "file": "File:Babe Ruth circa 1920.jpg"
+ },
+ "pele": {
+  "src": "photo-pele.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pele_con_brasil_(cropped).jpg",
+  "file": "File:Pele con brasil (cropped).jpg"
+ },
+ "ali": {
+  "src": "photo-ali.jpg",
+  "author": "Ira Rosenberg",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Muhammad_Ali_NYWTS.jpg",
+  "file": "File:Muhammad Ali NYWTS.jpg"
+ },
+ "goethe": {
+  "src": "photo-goethe.jpg",
+  "author": "Joseph Karl Stieler",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Goethe_(Stieler_1828).jpg",
+  "file": "File:Goethe (Stieler 1828).jpg"
+ },
+ "andersen": {
+  "src": "photo-andersen.jpg",
+  "author": "Thora Hallager",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hans_Christian_Andersen_by_Thora_Hallager_1869.jpg",
+  "file": "File:Hans Christian Andersen by Thora Hallager 1869.jpg"
+ },
+ "dostoevsky": {
+  "src": "photo-dostoevsky.jpg",
+  "author": "Vasily Perov",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg",
+  "file": "File:Vasily Perov - Портрет Ф.М.Достоевского - Google Art Project.jpg"
+ },
+ "hemingway": {
+  "src": "photo-hemingway.jpg",
+  "author": "Lloyd Arnold",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ErnestHemingway.jpg",
+  "file": "File:ErnestHemingway.jpg"
+ },
+ "hugo": {
+  "src": "photo-hugo.jpg",
+  "author": "Étienne Carjat",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg",
+  "file": "File:Victor Hugo by Étienne Carjat 1876 - full.jpg"
+ },
+ "dante": {
+  "src": "photo-dante.jpg",
+  "author": "Sandro Botticelli",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_de_Dante.jpg",
+  "file": "File:Portrait de Dante.jpg"
+ },
+ "cervantes": {
+  "src": "photo-cervantes.jpg",
+  "author": "Attributed to Juan de Jáuregui",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cervantes_J%C3%A1uregui.jpg",
+  "file": "File:Cervantes Jáuregui.jpg"
+ },
+ "twain": {
+  "src": "photo-twain.jpg",
+  "author": "A.F. Bradley, New York",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mark_Twain_by_AF_Bradley.jpg",
+  "file": "File:Mark Twain by AF Bradley.jpg"
+ },
+ "dickens": {
+  "src": "photo-dickens.jpg",
+  "author": "Jeremiah Gurney",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Dickens_Gurney_head.jpg",
+  "file": "File:Dickens Gurney head.jpg"
+ },
+ "bach": {
+  "src": "photo-bach.jpg",
+  "author": "Elias Gottlob Haussmann",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.jpg",
+  "file": "File:Johann Sebastian Bach.jpg"
+ },
+ "lennon": {
+  "src": "photo-lennon.jpg",
+  "author": "Tony Barnard, Los Angeles Times",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:John_Lennon,_1974_(restored_cropped).jpg",
+  "file": "File:John Lennon, 1974 (restored cropped).jpg"
+ },
+ "mandela": {
+  "src": "photo-mandela.jpg",
+  "author": "Kingkongphoto & www.celebrity-photos.com from Laurel",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg",
+  "file": "File:Nelson Mandela 1994.jpg"
+ },
+ "churchill": {
+  "src": "photo-churchill.jpg",
+  "author": "Yousuf Karsh",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948.jpg",
+  "file": "File:Sir Winston Churchill - 19086236948.jpg"
+ },
+ "kennedy": {
+  "src": "photo-kennedy.jpg",
+  "author": "Cecil W. Stoughton",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy,_White_House_color_photo_portrait.jpg",
+  "file": "File:John F. Kennedy, White House color photo portrait.jpg"
+ },
+ "gwashington": {
+  "src": "photo-gwashington.jpg",
+  "author": "Gilbert Stuart",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington_(cropped)(2).jpg",
+  "file": "File:Gilbert Stuart Williamstown Portrait of George Washington (cropped)(2).jpg"
+ },
+ "elizabeth1": {
+  "src": "photo-elizabeth1.jpg",
+  "author": "Unidentified painter",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Darnley_stage_3.jpg",
+  "file": "File:Darnley stage 3.jpg"
+ },
+ "antoinette": {
+  "src": "photo-antoinette.jpg",
+  "author": "Élisabeth Louise Vigée Le Brun",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Vig%C3%A9e-Lebrun_Marie_Antoinette_1783.jpg",
+  "file": "File:Vigée-Lebrun Marie Antoinette 1783.jpg"
+ },
+ "louis14": {
+  "src": "photo-louis14.jpg",
+  "author": "Hyacinthe Rigaud",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Louis_XIV_of_France.jpg",
+  "file": "File:Louis XIV of France.jpg"
+ },
+ "hippocrates": {
+  "src": "photo-hippocrates.jpg",
+  "author": "Paulus Pontius / After Peter Paul Rubens",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hippocrates_rubens.jpg",
+  "file": "File:Hippocrates rubens.jpg"
+ },
+ "archimedes": {
+  "src": "photo-archimedes.jpg",
+  "author": "Domenico Fetti",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Retrato_de_un_erudito_(%C2%BFArqu%C3%ADmedes%3F),_por_Domenico_Fetti.jpg",
+  "file": "File:Retrato de un erudito (¿Arquímedes?), por Domenico Fetti.jpg"
+ },
+ "pythagoras": {
+  "src": "photo-pythagoras.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pythagoras_in_the_Roman_Forum,_Colosseum.jpg",
+  "file": "File:Pythagoras in the Roman Forum, Colosseum.jpg"
+ },
+ "schweitzer": {
+  "src": "photo-schweitzer.jpg",
+  "author": "UnknownUnknown",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-D0116-0041-019,_Albert_Schweitzer.jpg",
+  "file": "File:Bundesarchiv Bild 183-D0116-0041-019, Albert Schweitzer.jpg"
+ },
+ "parks": {
+  "src": "photo-parks.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Rosa_Parks,_November_1956_(cropped).jpg",
+  "file": "File:Rosa Parks, November 1956 (cropped).jpg"
+ },
+ "mendel": {
+  "src": "photo-mendel.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gregor_Mendel_2.jpg",
+  "file": "File:Gregor Mendel 2.jpg"
+ },
+ "fleming": {
+  "src": "photo-fleming.jpg",
+  "author": "Official photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Synthetic_Production_of_Penicillin_TR1468.jpg",
+  "file": "File:Synthetic Production of Penicillin TR1468.jpg"
+ },
+ "freud": {
+  "src": "photo-freud.jpg",
+  "author": "Max Halberstadt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sigmund_Freud,_by_Max_Halberstadt_(cropped).jpg",
+  "file": "File:Sigmund Freud, by Max Halberstadt (cropped).jpg"
+ },
+ "descartes": {
+  "src": "photo-descartes.jpg",
+  "author": "After Frans Hals",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+  "file": "File:Frans Hals - Portret van René Descartes.jpg"
+ },
+ "pascal": {
+  "src": "photo-pascal.jpg",
+  "author": "unknown; a copy of the painting of François II Quesnel, whic…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Blaise_Pascal_Versailles.JPG",
+  "file": "File:Blaise Pascal Versailles.JPG"
+ },
+ "kant": {
+  "src": "photo-kant.jpg",
+  "author": "Johann Gottlieb Becker (1720-1782)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_-_Gemaelde_1.jpg",
+  "file": "File:Immanuel Kant - Gemaelde 1.jpg"
+ },
+ "nietzsche": {
+  "src": "photo-nietzsche.jpg",
+  "author": "Gustav-Adolf Schultze (d. 1897)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nietzsche1882.jpg",
+  "file": "File:Nietzsche1882.jpg"
+ },
+ "rousseau": {
+  "src": "photo-rousseau.jpg",
+  "author": "Maurice Quentin de La Tour",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Maurice_Quentin_de_La_Tour_-_Portrait_of_Jean-Jacques_Rousseau_-_WGA12360.jpg",
+  "file": "File:Maurice Quentin de La Tour - Portrait of Jean-Jacques Rousseau - WGA12360.jpg"
+ },
+ "voltaire": {
+  "src": "photo-voltaire.jpg",
+  "author": "Nicolas de Largillière",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Atelier_de_Nicolas_de_Largilli%C3%A8re,_portrait_de_Voltaire,_d%C3%A9tail_(mus%C3%A9e_Carnavalet)_-002.jpg",
+  "file": "File:Atelier de Nicolas de Largillière, portrait de Voltaire, détail (musée Carnavalet) -002.jpg"
+ },
+ "machiavelli": {
+  "src": "photo-machiavelli.jpg",
+  "author": "Santi di Tito",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg",
+  "file": "File:Portrait of Niccolò Machiavelli by Santi di Tito.jpg"
+ },
+ "smith": {
+  "src": "photo-smith.jpg",
+  "author": "Etching created by Cadell and Davies (1811), John Horsburgh …",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:AdamSmith.jpg",
+  "file": "File:AdamSmith.jpg"
+ },
+ "jefferson": {
+  "src": "photo-jefferson.jpg",
+  "author": "Rembrandt Peale",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Official_Presidential_portrait_of_Thomas_Jefferson_(by_Rembrandt_Peale,_1800).jpg",
+  "file": "File:Official Presidential portrait of Thomas Jefferson (by Rembrandt Peale, 1800).jpg"
+ },
+ "gaudi": {
+  "src": "photo-gaudi.jpg",
+  "author": "Pau Audouard Deglaire",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Antoni_Gaudi_1878.jpg",
+  "file": "File:Antoni Gaudi 1878.jpg"
+ },
+ "renoir": {
+  "src": "photo-renoir.jpg",
+  "author": "UnknownUnknown Musée d'Orsay, Dist. RMN-Grand Palais / Patri…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pierre_Auguste_Renoir,_uncropped_image.jpg",
+  "file": "File:Pierre Auguste Renoir, uncropped image.jpg"
+ },
+ "cezanne": {
+  "src": "photo-cezanne.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne.jpg",
+  "file": "File:Paul Cézanne.jpg"
+ },
+ "doyle": {
+  "src": "photo-doyle.jpg",
+  "author": "Walter Benington",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Arthur_Conan_Doyle_by_Walter_Benington,_1914.png",
+  "file": "File:Arthur Conan Doyle by Walter Benington, 1914.png"
+ },
+ "carroll": {
+  "src": "photo-carroll.jpg",
+  "author": "Lewis Carroll",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:LewisCarrollSelfPhoto.jpg",
+  "file": "File:LewisCarrollSelfPhoto.jpg"
+ },
+ "verne": {
+  "src": "photo-verne.jpg",
+  "author": "Nadar",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg",
+  "file": "File:Félix Nadar 1820-1910 portraits Jules Verne.jpg"
+ },
+ "hawking": {
+  "src": "photo-hawking.jpg",
+  "author": "NASA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Stephen_Hawking.StarChild.jpg",
+  "file": "File:Stephen Hawking.StarChild.jpg"
+ },
+ "chanel": {
+  "src": "photo-chanel.jpg",
+  "author": "Los Angeles Times",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Coco_Chanel_in_Los_Angeles,_1931_(cropped).jpg",
+  "file": "File:Coco Chanel in Los Angeles, 1931 (cropped).jpg"
+ },
+ "earhart": {
+  "src": "photo-earhart.jpg",
+  "author": "Copyright by Underwood and Underwood (not renewed)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Earhart.jpg",
+  "file": "File:Earhart.jpg"
+ },
+ "sunyatsen": {
+  "src": "photo-sunyatsen.jpg",
+  "author": "上海波尔照相馆",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%AD%99%E4%B8%AD%E5%B1%B1%E8%82%96%E5%83%8F.jpg",
+  "file": "File:孙中山肖像.jpg"
+ },
+ "zhugeliang": {
+  "src": "photo-zhugeliang.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%98%8E%E4%BA%BA%E7%BB%98_%E3%80%8A%E8%AF%B8%E8%91%9B%E4%BA%AE%E5%83%8F%E3%80%8B%EF%BC%88%E5%8D%97%E8%96%B0%E6%AE%BF%E6%9C%AC%EF%BC%89.jpg",
+  "file": "File:明人绘 《诸葛亮像》（南薰殿本）.jpg"
+ },
+ "sunzi": {
+  "src": "photo-sunzi.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%90%B4%E5%8F%B8%E9%A9%AC%E5%AD%99%E6%AD%A6.jpg",
+  "file": "File:吴司马孙武.jpg"
+ },
+ "sejong": {
+  "src": "photo-sejong.jpg",
+  "author": "Republic of Korea from Seoul, Republic of Korea",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korea_Yeouido_Summer_20140805_11_(14862134703).jpg",
+  "file": "File:Korea Yeouido Summer 20140805 11 (14862134703).jpg"
+ },
+ "tagore": {
+  "src": "photo-tagore.jpg",
+  "author": "Generalstabens litografiska anstalt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_in_1909.jpg",
+  "file": "File:Rabindranath Tagore in 1909.jpg"
+ },
+ "kukai": {
+  "src": "photo-kukai.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_K%C5%8Db%C5%8D_Daishi.jpg",
+  "file": "File:Portrait of Kōbō Daishi.jpg"
+ },
+ "shinran": {
+  "src": "photo-shinran.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shinran_Shonin.jpg",
+  "file": "File:Shinran Shonin.jpg"
+ },
+ "nobunaga": {
+  "src": "photo-nobunaga.jpg",
+  "author": "Kano Soshu (1551-1601)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oda-Nobunaga.jpg",
+  "file": "File:Oda-Nobunaga.jpg"
+ },
+ "hideyoshi": {
+  "src": "photo-hideyoshi.jpg",
+  "author": "Kanō Mitsunobu",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Toyotomi_hideyoshi.jpg",
+  "file": "File:Toyotomi hideyoshi.jpg"
+ },
+ "ieyasu": {
+  "src": "photo-ieyasu.jpg",
+  "author": "Kanō Tan'yū",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG",
+  "file": "File:Tokugawa Ieyasu2.JPG"
+ },
+ "kenshin": {
+  "src": "photo-kenshin.jpg",
+  "author": "(unknown)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Uesugi_Kenshin.jpg",
+  "file": "File:Uesugi Kenshin.jpg"
+ },
+ "masamune": {
+  "src": "photo-masamune.jpg",
+  "author": "Tosa Mitsusada",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Date_Masamune02.jpg",
+  "file": "File:Date Masamune02.jpg"
+ },
+ "tsuda": {
+  "src": "photo-tsuda.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsuda_Umeko_Portrait_c1900.png",
+  "file": "File:Tsuda Umeko Portrait c1900.png"
+ },
+ "ogai": {
+  "src": "photo-ogai.jpg",
+  "author": "Ohashi Otowa (大橋乙羽, 1869 – 1901)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mori_Ogai_(cropped).jpg",
+  "file": "File:Mori Ogai (cropped).jpg"
+ },
+ "uemura": {
+  "src": "photo-uemura.jpg",
+  "author": "ThatGuyOnline",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Naomi_Uemura.jpg",
+  "file": "File:Naomi Uemura.jpg"
+ },
+ "iwasaki": {
+  "src": "photo-iwasaki.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Iwasaki_Yataro.jpg",
+  "file": "File:Iwasaki Yataro.jpg"
+ },
+ "mizuki": {
+  "src": "photo-mizuki.jpg",
+  "author": "水木しげる",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shigeru_Mizuki_at_age_18.jpg",
+  "file": "File:Shigeru Mizuki at age 18.jpg"
+ },
+ "futabayama": {
+  "src": "photo-futabayama.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Futabayama_Sadaji.jpg",
+  "file": "File:Futabayama Sadaji.jpg"
+ },
+ "columbus": {
+  "src": "photo-columbus.jpg",
+  "author": "Sebastiano del Piombo",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg",
+  "file": "File:Portrait of a Man, Said to be Christopher Columbus.jpg"
+ },
+ "confucius": {
+  "src": "photo-confucius.jpg",
+  "author": "Wu Daozi, 685-758, Tang Dynasty.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg",
+  "file": "File:Confucius Tang Dynasty.jpg"
+ },
+ "alexander": {
+  "src": "photo-alexander.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Alexander_the_Great_mosaic_(cropped).jpg",
+  "file": "File:Alexander the Great mosaic (cropped).jpg"
+ },
+ "tolstoy": {
+  "src": "photo-tolstoy.jpg",
+  "author": "Sergei Prokudin-Gorskii",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg",
+  "file": "File:L.N.Tolstoy Prokudin-Gorsky.jpg"
+ },
+ "chopin": {
+  "src": "photo-chopin.jpg",
+  "author": "Louis-Auguste Bisson",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_photo.jpeg",
+  "file": "File:Frederic Chopin photo.jpeg"
  }
 };

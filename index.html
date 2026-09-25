@@ -1695,12 +1695,17 @@ const RUBY = {
 };
 /* RUBY-END */
 /* Googleマップで ひらく(登録も お金も いらない ふつうのリンク) */
-/* Googleマップは 緯度・経度で ひらく(けいくん 2026-09-25「Googleマップ開いたら 現在地に飛んだよ」。
-   名前の文字で渡すと iPhone のアプリが 検索語を落として 現在地で ひらくことがある)。数字が無い所だけ 名前で */
+/* Googleマップは「名前 + 緯度・経度」の 場所リンクで ひらく(けいくん 2026-09-25)。
+   ・名前の文字だけだと iPhone のアプリが 検索語を落として 現在地で ひらくことがあった
+   ・数字だけだと ピンの名前が「15°54'00"N…」になって どこか分からない
+   → /maps/place/<名前>/@緯度,経度,ズーム で 両方 渡す。ズームは 国 5 / 都道府県 8 / 町・山・川 10 / 名所 15 */
 function gmapUrl(q){
   const ll = LATLON[q.art];
-  const query = ll ? ll[0] + "," + ll[1] : q.n + " " + q.c.replace(/・/g, " ");
-  return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query);
+  const jp = q.c.startsWith("日本");
+  const name = q.f && q.k === "name" ? q.n : q.n + " " + q.c.replace(/・/g, " ");
+  if(!ll) return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(name);
+  const zoom = q.k === "name" ? (q.f ? (jp ? 8 : 5) : 10) : 15;
+  return "https://www.google.com/maps/place/" + encodeURIComponent(name) + "/@" + ll[0] + "," + ll[1] + "," + zoom + "z";
 }
 function gmapLink(q){ return '<a class="gmap" href="' + gmapUrl(q) + '" target="_blank" rel="noopener">🗺 Googleマップで見る</a>'; }
 /* 名所の 緯度・経度(世界一周マップの ピンの位置)。地図は 北緯84度〜南緯60度 を 横長に切ったもの */

@@ -127,6 +127,23 @@ body.playing{overflow:hidden}
 .intro .body{padding:12px 14px 14px}
 .intro .head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .intro .head b{font-size:18px}
+.board{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 14px}
+.board-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.board-head b{font-size:16px}
+.board-head span{font-size:12px;color:var(--muted)}
+.board-tabs{display:flex;gap:6px;margin:8px 0}
+.board-tabs button{flex:1;padding:6px 0;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700}
+.board-tabs button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.board-body{min-height:2.4em}
+.board-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-top:1px solid var(--line);font-size:14px}
+.board-row:first-child{border-top:none}
+.board-row .rk{width:2.2em;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.board-row .rk.top{color:#c24f00}
+.board-row .nm{flex:1;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board-row .tm{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:700}
+.board-row.me{background:var(--soft);border-radius:8px;padding-left:6px;padding-right:6px}
+.board-note{font-size:12px;color:var(--muted);line-height:1.7;margin:4px 0 0}
+.board-note button{font:inherit;font-weight:700;color:var(--blue);background:none;border:none;text-decoration:underline;padding:0}
 ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02em}
 .map-cap ruby.nm rt{font-size:9px}
 .intro .head span{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:700;flex:none}
@@ -274,18 +291,6 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <img class="logo-word" src="logo-word.webp" alt="" width="1170" height="209" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="だれが あそぶか"><span class="ic">👤</span><span class="nm"></span></button>
     </div>
-    <div class="prof-sheet hidden" id="prof">
-      <div class="prof-box">
-        <div class="prof-head"><b>だれが あそぶ?</b><button class="prof-x" id="prof-close" aria-label="とじる">✕</button></div>
-        <div id="prof-list" class="prof-list"></div>
-        <form id="prof-form" class="prof-form hidden">
-          <div class="prof-icons" id="prof-icons"></div>
-          <label>なまえ(8文字まで)<input class="answer" id="prof-name" maxlength="8" autocomplete="off" placeholder="ニックネーム"></label>
-          <label>学年<select id="prof-grade"></select></label>
-          <div class="prof-btns"><button type="submit" class="primary" id="prof-save">決める</button><button type="button" class="ghost" id="prof-cancel">やめる</button><button type="button" class="ghost danger hidden" id="prof-del">この人を消す</button></div>
-        </form>
-        <p class="prof-note">記録(自己ベストとピン)は 人ごとに この端末の中だけに残ります。名前や学年は どこにも送りません。</p>
-      </div>
     </div>
     <h1 class="sr-only">世界フリック旅行</h1>
     <img class="hero" src="hero.webp" alt="世界フリック旅行。世界の名所と ひらがなが 空にうかぶ 絵" width="1536" height="1024">
@@ -345,6 +350,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <div><b id="r-chars">0</b><small>打った文字数</small></div>
       <div><b id="r-best">-</b><small>自己ベスト</small></div>
     </div>
+    <section class="board" id="board" hidden>
+      <div class="board-head"><b>🏆 みんなのランキング</b><span id="board-sub"></span></div>
+      <div class="board-tabs" id="board-tabs"></div>
+      <div id="board-body" class="board-body"></div>
+    </section>
     <ul class="list" id="r-list"></ul>
     <div class="btns">
       <button class="primary hidden" id="next-lv">次のレベルへ</button>
@@ -352,6 +362,19 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="ghost" id="home-btn">地図にもどる</button>
     </div>
   </section>
+  <!-- だれが あそぶか(どの画面からも ひらけるよう section の外) -->
+    <div class="prof-sheet hidden" id="prof">
+      <div class="prof-box">
+        <div class="prof-head"><b>だれが あそぶ?</b><button class="prof-x" id="prof-close" aria-label="とじる">✕</button></div>
+        <div id="prof-list" class="prof-list"></div>
+        <form id="prof-form" class="prof-form hidden">
+          <div class="prof-icons" id="prof-icons"></div>
+          <label>なまえ(8文字まで)<input class="answer" id="prof-name" maxlength="8" autocomplete="off" placeholder="ニックネーム"></label>
+          <label>学年<select id="prof-grade"></select></label>
+          <div class="prof-btns"><button type="submit" class="primary" id="prof-save">決める</button><button type="button" class="ghost" id="prof-cancel">やめる</button><button type="button" class="ghost danger hidden" id="prof-del">この人を消す</button></div>
+        </form>
+        <p class="prof-note">記録(自己ベストとピン)は 人ごとに この端末の中だけに残ります。名前や学年は どこにも送りません。</p>
+      </div>
 </div>
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
@@ -3648,7 +3671,16 @@ for(const m of MODES){
    だれも登録していないときは いままでどおり(flick-best-<旅>-<レベル>)。はじめて登録したとき その記録を その人に引きつぐ */
 const MAX_PROFILES = 6;
 const PROFILE_ICONS = ["😀","😎","🐶","🐱","🐼","🦊","🐸","🦁","🐧","🦄","🐙","🌟","⚽","🚀","🍙","🍓"];
-const GRADES = ["年長より下","年長","小1","小2","小3","小4","小5","小6","中1","中2","中3","高校生","おとな"];
+const GRADES = [["k","年長より下・年長"],["e1","小1"],["e2","小2"],["e3","小3"],["e4","小4"],["e5","小5"],["e6","小6"],["j1","中1"],["j2","中2"],["j3","中3"],["h","高校生"],["adult","おとな"]];
+const GRADE_NAME = Object.fromEntries(GRADES);
+const GRADE_OLD = {"年長より下":"k","年長":"k","小1":"e1","小2":"e2","小3":"e3","小4":"e4","小5":"e5","小6":"e6","中1":"j1","中2":"j2","中3":"j3","高校生":"h","おとな":"adult"};
+function gradeKey(g){ return GRADE_NAME[g] ? g : (GRADE_OLD[g] || "e1"); }
+function gradeName(g){ return GRADE_NAME[gradeKey(g)] || g; }
+/* みんなのランキング(けいくん 2026-09-25「スピードランキングもかずとものように 学年順で競走出来るように」)。
+   記録の受けつけと 読み出しは かずとも(kazutomo.app)の サーバーが 代わりにやる(speed-king の /api/flick/*)。
+   ここには 鍵も 表も 無い。つながらなくても あそびは 止めない */
+const RANK_API = "https://kazutomo.app/api/flick";
+const PERIODS = [["today","きょう"],["week","今週"],["all","いままで"]];
 function profiles(){ try{ const a = JSON.parse(store("flick-profiles") || "[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
 function saveProfiles(a){ store("flick-profiles", JSON.stringify(a)); }
 function curProfile(){ const id = store("flick-profile"); return profiles().find(p => p.id === id) || null; }
@@ -3842,8 +3874,46 @@ function finish(){
      (けいくん 2026-09-25「戻るボタンで元のゲーム画面に戻らない」)。1時間で 忘れる */
   store("flick-last", JSON.stringify(r));
   renderResult(r);
+  boardSent = "";
+  submitScore(r).then(v => { boardSent = v; drawBoard(r.mode, r.level); });
 }
 
+/* ── みんなのランキング ── */
+let boardPeriod = "today", boardSent = "";  // 送った結果(のった / 理由)
+async function submitScore(r){
+  const p = curProfile();
+  if(!p || r.mode === "quote" || !r.times || r.times.length !== ROUNDS) return "";
+  const ms = Math.round(r.times.reduce((a,b)=>a+b,0) * 1000);
+  try{
+    const res = await fetch(RANK_API + "/score", { method:"POST", headers:{"content-type":"application/json"},
+      body: JSON.stringify({ name:p.name, grade:gradeKey(p.grade), mode:r.mode, level:r.level+1, ms, times:r.times.map(t => Math.round(t*1000)) }) });
+    const js = await res.json().catch(() => null);
+    if(res.ok && js && js.ok) return "ok";
+    return (js && js.reason) ? js.reason : "おくれませんでした(" + res.status + ")";
+  }catch(e){ return "つながりませんでした"; }
+}
+async function drawBoard(m, lv){
+  const box = $("#board"), p = curProfile();
+  box.hidden = false;
+  $("#board-sub").textContent = MAPS[m].name + " レベル" + (lv+1) + (p ? "・" + gradeName(p.grade) : "");
+  $("#board-tabs").innerHTML = PERIODS.map(([k,n]) => '<button type="button" data-p="'+k+'"'+(k === boardPeriod ? ' class="on"' : '')+'>'+n+'</button>').join("");
+  $("#board-tabs").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { boardPeriod = b.dataset.p; drawBoard(m, lv); }));
+  if(!p){
+    $("#board-body").innerHTML = '<p class="board-note">右上の 👤 で なまえと学年を登録すると、同じ学年の みんなと タイムをくらべられるよ。<button type="button" id="board-reg">登録する</button></p>';
+    $("#board-reg").addEventListener("click", openProf);
+    return;
+  }
+  $("#board-body").innerHTML = '<p class="board-note">よみこみ中…</p>';
+  try{
+    const res = await fetch(RANK_API + "/board?" + new URLSearchParams({ mode:m, level:String(lv+1), grade:gradeKey(p.grade), period:boardPeriod }));
+    const js = await res.json().catch(() => null);
+    if(!res.ok || !js || !js.ok){ $("#board-body").innerHTML = '<p class="board-note">いまは ランキングを 読めません' + (js && js.reason ? "(" + esc(js.reason) + ")" : "") + '</p>'; return; }
+    const rows = js.rows || [];
+    const note = boardSent && boardSent !== "ok" ? '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>' : "";
+    if(!rows.length){ $("#board-body").innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも!</p>' + note; return; }
+    $("#board-body").innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '"><span class="rk' + (i < 3 ? ' top' : '') + '">' + (i+1) + '位</span><span class="nm">' + esc(r.name) + '</span><span class="tm">' + (r.ms/1000).toFixed(2) + '秒</span></div>').join("") + note;
+  }catch(e){ $("#board-body").innerHTML = '<p class="board-note">いまは ランキングを 読めません(つながりませんでした)</p>'; }
+}
 /* こたえの名前に ふりがな(けいくん 2026-09-25「こたえの名前にもふりがなを振って下さい」)。よみは 打つ字(q.r)そのもの */
 function nameRuby(q){ return '<ruby class="nm">' + esc(q.n) + '<rt>' + esc(q.r) + '</rt></ruby>'; }
 /* 偉人の 名言と その解説(結果カード) */
@@ -3876,6 +3946,7 @@ function renderResult(r){
   ans.blur();
   show("result");
   showBest();
+  drawBoard(mode, level);
 }
 
 /* ひらいたとき、1時間いないの 結果が 残っていれば その画面から(Googleマップから もどってきたとき用) */
@@ -3897,7 +3968,7 @@ function drawProfBtn(){
 }
 function drawProfList(){
   const list = profiles(), cur = store("flick-profile");
-  $("#prof-list").innerHTML = list.map(p => '<button class="prof-row'+(p.id === cur ? ' cur' : '')+'" data-id="'+p.id+'"><span class="ic">'+esc(p.icon)+'</span><span><b>'+esc(p.name)+'</b><small>'+esc(p.grade)+(p.id === cur ? '・いま この人' : '')+'</small></span><span class="edit" data-edit="'+p.id+'">なおす</span></button>').join("")
+  $("#prof-list").innerHTML = list.map(p => '<button class="prof-row'+(p.id === cur ? ' cur' : '')+'" data-id="'+p.id+'"><span class="ic">'+esc(p.icon)+'</span><span><b>'+esc(p.name)+'</b><small>'+esc(gradeName(p.grade))+(p.id === cur ? '・いま この人' : '')+'</small></span><span class="edit" data-edit="'+p.id+'">なおす</span></button>').join("")
     + (list.length < MAX_PROFILES ? '<button class="prof-add" id="prof-add">＋ あたらしい人を 登録する('+list.length+' / '+MAX_PROFILES+'人)</button>' : '');
   $("#prof-list").querySelectorAll(".prof-row").forEach(b => b.addEventListener("click", e => {
     if(e.target.dataset.edit){ openProfForm(e.target.dataset.edit); return; }
@@ -3911,7 +3982,7 @@ function openProfForm(id){
   $("#prof-form").classList.remove("hidden"); $("#prof-list").classList.add("hidden");
   $("#prof-icons").innerHTML = PROFILE_ICONS.map(ic => '<button type="button" data-ic="'+ic+'"'+((p ? p.icon : PROFILE_ICONS[0]) === ic ? ' class="on"' : '')+'>'+ic+'</button>').join("");
   $("#prof-icons").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { $("#prof-icons").querySelectorAll("button").forEach(x => x.classList.remove("on")); b.classList.add("on"); }));
-  $("#prof-grade").innerHTML = GRADES.map(g => '<option'+((p ? p.grade : "小1") === g ? ' selected' : '')+'>'+g+'</option>').join("");
+  $("#prof-grade").innerHTML = GRADES.map(([k, n]) => '<option value="'+k+'"'+((p ? gradeKey(p.grade) : "e1") === k ? ' selected' : '')+'>'+n+'</option>').join("");
   $("#prof-name").value = p ? p.name : "";
   $("#prof-del").classList.toggle("hidden", !p);
   $("#prof-save").textContent = p ? "なおす" : "登録する";

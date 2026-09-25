@@ -50,7 +50,7 @@
 | `index.html` | ゲーム本体(遊びかた・デザイン) |
 | `about.html` / `lp-*.webp` | 紹介ページ(2026-09-25 けいくん「販売ページを作成してください」)。おうちの方むけに、4つの旅・あそびかた・守っていること・よくある質問。写真は 手元のゲームを Playwright で自動で遊ばせて撮ったもの(scratchpad の `lp-shots.mjs`)。⚠️ 無料・登録なし・広告なし と書いてある。お金を取る形にするときは ここも書きかえる。ゲームの いちばん下から リンク |
 | `hero.webp` / `logo-word.webp` / `logo-mark2.webp` | トップの絵と そこから切った ロゴの字、左のマーク(ホーム画面のアイコンと同じ絵)(`tools/logo-word-cut.py`) |
-| `apple-touch-icon.png` / `icon-512.png` / `favicon.png` / `manifest.webmanifest` | ホーム画面に追加したときのアイコン(2026-09-25 けいくん「左上の画像に」。同日 けいくんの正方形の絵(1254px)に差しかえ。いま `?v=2`)と アプリのように開く設定。絵を差しかえたら `?v=` を上げる |
+| `apple-touch-icon.png` / `icon-512.png` / `favicon.png` / `manifest.webmanifest` | ホーム画面に追加したときのアイコンと名前(ゲーム=「世界フリック旅行ゲーム」/ 紹介ページ=「世界フリック旅行」。けいくん 2026-09-25。⚠️ 紹介ページには manifest を付けない — 付けると start_url のゲームが ひらいてしまう)(2026-09-25 けいくん「左上の画像に」。同日 けいくんの正方形の絵(1254px)に差しかえ。いま `?v=2`)と アプリのように開く設定。絵を差しかえたら `?v=` を上げる |
 | `world-map-color.jpg` / `japan-map-color.jpg` | いま使っている カラフルな地図(`tools/make_color_map.py`) |
 | `world-map-mono.jpg` | まえの モノクロのペン画風の地図(もとは CC0)。いまは使っていない |
 | `japan-map-mono.jpg` | 日本一周マップ(もとは Natural Earth。パブリックドメイン) |

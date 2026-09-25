@@ -129,8 +129,8 @@ body.playing{overflow:hidden}
 .intro .head b{font-size:18px}
 .board{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 14px}
 .board-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.board-head b{font-size:16px}
-.board-head span{font-size:12px;color:var(--muted)}
+.board-head b{font-size:16px;white-space:nowrap}
+.board-head span{font-size:12px;color:var(--muted);text-align:right}
 .board-tabs{display:flex;gap:6px;margin:8px 0}
 .board-tabs button{flex:1;padding:6px 0;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700}
 .board-tabs button.on{background:var(--blue);border-color:var(--blue);color:#fff}
@@ -143,6 +143,28 @@ body.playing{overflow:hidden}
 .board-row .tm{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:700}
 .board-row.me{background:var(--soft);border-radius:8px;padding-left:6px;padding-right:6px}
 .board-note{font-size:12px;color:var(--muted);line-height:1.7;margin:4px 0 0}
+.board-row .rk.md{font-size:18px;color:inherit;text-align:center}
+/* のび(かずとも Growth.tsx と 同じ絵。上に いくほど 速い) */
+.growbox{background:#f8fafc;border-radius:24px;padding:16px;margin:0 0 14px;color:#334155}
+.grow-ttl{margin:0 0 4px;text-align:center;font-size:12px;font-weight:900;color:#64748b}
+.growbox svg{display:block;width:100%;height:auto}
+.growbox .gl{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 0;text-align:center}
+.growbox .gl dt{font-size:12px;font-weight:700;color:#94a3b8}
+.growbox .gl dd{margin:0;font-size:16px;font-weight:900;font-variant-numeric:tabular-nums;color:#64748b}
+.growbox .gl dd.ink{color:var(--sk-ink)}
+.growbox .gg{margin:8px 0 0;text-align:center;font-size:16px;font-weight:900}
+.growbox .gg .ink{color:var(--sk-ink)}
+.growbox .gg .no{color:#94a3b8}
+.growbox .gn{margin:8px 0 0;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.growbox .gn+.gn{margin-top:0}
+.growbox .g1{margin:0;text-align:center;font-size:14px;font-weight:700;line-height:28px;color:#64748b}
+.growbox .g0{margin:0;text-align:center;font-size:14px;font-weight:700;color:#94a3b8}
+.rec{margin:0 0 26px}
+.rec-ttl{margin:24px 0 0;text-align:center;font-size:20px;font-weight:900;color:#334155}
+.rec-sub{margin:4px 0 12px;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.rec-lv{display:flex;gap:6px;overflow-x:auto;padding:0 0 10px;-webkit-overflow-scrolling:touch}
+.rec-lv button{flex:none;padding:6px 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700}
+.rec-lv button.on{background:#1e293b;border-color:#1e293b;color:#fff}
 .board-note button{font:inherit;font-weight:700;color:var(--blue);background:none;border:none;text-decoration:underline;padding:0}
 ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02em}
 .map-cap ruby.nm rt{font-size:9px}
@@ -356,6 +378,20 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     </div>
     <h2 class="lv-title display" id="lv-title">レベルをえらぶ</h2>
     <div class="levels" id="lv-list"></div>
+    <!-- いままでの きろく(かずともの ランキング・のび と 同じ並び。あそんだ人にだけ 出る) -->
+    <section class="rec hidden" id="rec">
+      <h2 class="rec-ttl">きろく</h2>
+      <p class="rec-sub" id="rec-sub"></p>
+      <div class="rec-lv" id="rec-lv"></div>
+      <section class="board" id="board2">
+        <div class="board-head"><b>🏆 みんなのランキング</b><span id="board2-sub"></span></div>
+        <div class="board-tabs" id="board2-tabs"></div>
+        <div id="board2-body" class="board-body"></div>
+      </section>
+      <h2 class="rec-ttl">のび</h2>
+      <p class="rec-sub" id="grow-sub"></p>
+      <div class="growbox" id="h-grow"><div id="h-grow-body"></div></div>
+    </section>
     <div class="how">
       <p>表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。偉人の旅は 名前を打つと、結果で その人のプロフィールと 名言が読めるよ。</p>
       <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
@@ -393,6 +429,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <div><b id="r-chars">0</b><small>打った文字数</small></div>
       <div><b id="r-best">-</b><small>自己ベスト</small></div>
     </div>
+    <div class="growbox hidden" id="r-grow"><p class="grow-ttl">のび</p><div id="r-grow-body"></div></div>
     <section class="board" id="board" hidden>
       <div class="board-head"><b>🏆 みんなのランキング</b><span id="board-sub"></span></div>
       <div class="board-tabs" id="board-tabs"></div>
@@ -3769,7 +3806,7 @@ function setMode(m){
   $("#map-title").textContent = M.title;
   $("#map-cap").innerHTML = "レベルをクリアすると、その" + (M.thing || "名所") + "に 📍が立つよ。📍を押すと 名前が出るよ。2本の指で 地図を大きくできるよ。";
   $("#lv-title").textContent = M.name + "　レベルをえらぶ";
-  drawModes(); drawMap(); openLevels(m);
+  drawModes(); drawMap(); openLevels(m); drawRec();
 }
 function drawMap(){
   const done = clearedSpots(mode), map = $("#map"), M = MAPS[mode];
@@ -4015,9 +4052,75 @@ function finish(){
   /* 最後の結果を 端末に覚える。Googleマップから もどったとき ページが 作りなおされても 同じ結果画面に もどれるように
      (けいくん 2026-09-25「戻るボタンで元のゲーム画面に戻らない」)。1時間で 忘れる */
   store("flick-last", JSON.stringify(r));
+  pushHist(mode, level, Math.round(total * 1000), r.at);
   renderResult(r);
   boardSent = "";
   submitScore(r).then(v => { boardSent = v; drawBoard(r.mode, r.level); });
+}
+/* ── いままでの きろく(1回ごと。のび の グラフのため。けいくん 2026-09-26「いままでの記録をかずとものようにグラフ表示」) ──
+   人ごとに 端末の中(flick-hist-p<id>。だれも登録していなければ flick-hist)。新しい順に 400回まで */
+function histKey(){ const p = curProfile(); return "flick-hist" + (p ? "-p" + p.id : ""); }
+function hist(){ try{ const a = JSON.parse(store(histKey()) || "[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
+function pushHist(m, lv, ms, at){
+  const a = hist(); a.push({m, lv, ms, at}); while(a.length > 400) a.shift();
+  store(histKey(), JSON.stringify(a));
+}
+const GROWTH_POINTS = 12;
+function growthOf(m, lv){
+  const mine = hist().filter(h => h.m === m && h.lv === lv).sort((a,b) => a.at - b.at);
+  if(!mine.length) return null;
+  let bestMs = mine[0].ms; for(const h of mine) if(h.ms < bestMs) bestMs = h.ms;
+  const shown = mine.slice(-GROWTH_POINTS); let crowned = false;
+  return { points: shown.map(h => { const best = !crowned && h.ms === bestMs; if(best) crowned = true; return {at:h.at, ms:h.ms, best}; }),
+           plays: mine.length, firstMs: mine[0].ms, lastMs: mine[mine.length-1].ms, bestMs };
+}
+function fmtT(ms){ const s = ms / 1000; if(s < 60) return s.toFixed(1) + "びょう"; const mi = Math.floor(s / 60); return mi + "分" + (s - mi*60).toFixed(1) + "びょう"; }
+/* かずとも `Growth.tsx` の GrowthChart と 同じ絵(SVG 320×128。ベストの点線・うすい面・👑・はじめ/いま・速くなった ぶん) */
+function growthHtml(g, m, lv){
+  const t = COLORS.mode[m], vars = 'style="' + toneStyle(t) + ';--sk-ink:' + t.ink + '"';
+  if(g.points.length === 1) return '<div ' + vars + '><p class="g1">まだ 1回だけ(' + fmtT(g.points[0].ms) + ')。<br>もう1回 あそぶと ここに のびが 出ます</p></div>';
+  const W = 320, H = 128, L = 30, R = W - 14, T = 26, B = H - 22;
+  const maxMs = Math.max(g.bestMs, ...g.points.map(p => p.ms)), span = maxMs - g.bestMs;
+  const pad = span === 0 ? Math.max(maxMs * 0.1, 500) : span * 0.18, lo = g.bestMs - pad, hi = maxMs + pad;
+  const y = ms => T + ((ms - lo) / (hi - lo)) * (B - T), n = g.points.length;
+  const x = i => n === 1 ? (L + R) / 2 : L + (i / (n - 1)) * (R - L);
+  const pts = g.points.map((p, i) => x(i).toFixed(1) + "," + y(p.ms).toFixed(1));
+  const area = "M " + x(0).toFixed(1) + "," + B + " L " + pts.join(" L ") + " L " + x(n-1).toFixed(1) + "," + B + " Z";
+  const by = y(g.bestMs).toFixed(1), gid = "sk-growth-" + m + "-" + lv, gain = g.firstMs - g.lastMs;
+  const label = MAPS[m].name + " レベル" + (lv+1);
+  return '<div ' + vars + '><svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(label) + ' の きろく。' + g.plays + '回 あそんで、いちばん速いのは ' + fmtT(g.bestMs) + '">' +
+    '<defs><linearGradient id="' + gid + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="' + t.a + '" stop-opacity="0.28"/><stop offset="100%" stop-color="' + t.b + '" stop-opacity="0.02"/></linearGradient></defs>' +
+    '<line x1="' + L + '" y1="' + by + '" x2="' + R + '" y2="' + by + '" stroke="' + t.ink + '" stroke-width="1" stroke-dasharray="3 3" opacity="0.45"/>' +
+    '<text x="' + (L-4) + '" y="' + (+by + 3.5).toFixed(1) + '" text-anchor="end" fill="#94a3b8" font-size="9" font-weight="700">ベスト</text>' +
+    '<path d="' + area + '" fill="url(#' + gid + ')"/>' +
+    '<polyline points="' + pts.join(" ") + '" fill="none" stroke="' + t.a + '" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>' +
+    g.points.map((p, i) => '<circle cx="' + x(i).toFixed(1) + '" cy="' + y(p.ms).toFixed(1) + '" r="' + (p.best ? 5.5 : 3.5) + '" fill="' + t.a + '" stroke="#ffffff" stroke-width="' + (p.best ? 2 : 1.5) + '"/>' +
+      (p.best ? '<text x="' + x(i).toFixed(1) + '" y="' + (y(p.ms) - 9).toFixed(1) + '" text-anchor="middle" font-size="12">👑</text>' : '')).join("") +
+    '<text x="' + (L-4) + '" y="' + (T-12) + '" text-anchor="end" font-size="9" font-weight="700" fill="#94a3b8">↑速い</text>' +
+    '<text x="' + L + '" y="' + (H-5) + '" font-size="9" font-weight="700" fill="#94a3b8">まえ</text>' +
+    '<text x="' + R + '" y="' + (H-5) + '" text-anchor="end" font-size="9" font-weight="700" fill="#94a3b8">いま</text></svg>' +
+    '<dl class="gl"><div><dt>はじめ</dt><dd>' + fmtT(g.firstMs) + '</dd></div><div><dt>いま</dt><dd class="ink">' + fmtT(g.lastMs) + '</dd></div></dl>' +
+    '<p class="gg">' + (gain > 0 ? '<span class="ink">🎉 ' + fmtT(gain) + ' 速くなった！</span>' : '<span class="no">つづけると 速くなるよ</span>') + '</p>' +
+    '<p class="gn">' + g.plays + '回 あそんだ ・ ベスト ' + fmtT(g.bestMs) + '</p>' +
+    (g.plays > n ? '<p class="gn">（グラフは さいきんの ' + n + '回）</p>' : '') + '</div>';
+}
+/* トップの「きろく」(ランキング と のび)。いまの旅で あそんだ レベルの ふだを ならべ、えらんだ レベルの ぶんを 出す */
+let recLv = null, recMode = null;
+function drawRec(){
+  if(recMode !== mode){ recMode = mode; recLv = null; }  // 旅を 切りかえたら いちばん新しく あそんだ レベルに
+  const sec = $("#rec"), all = hist().filter(h => h.m === mode);
+  if(!all.length){ sec.classList.add("hidden"); return; }
+  sec.classList.remove("hidden");
+  const lvs = [...new Set(all.map(h => h.lv))].sort((a,b) => a - b);
+  if(recLv === null || !lvs.includes(recLv)) recLv = all[all.length-1].lv;
+  const p = curProfile();
+  $("#rec-sub").textContent = (p ? p.name + " の " : "") + MAPS[mode].name;
+  $("#rec-lv").innerHTML = lvs.map(l => '<button type="button" data-lv="' + l + '"' + (l === recLv ? ' class="on"' : '') + '>レベル' + (l+1) + '</button>').join("");
+  $("#rec-lv").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { recLv = +b.dataset.lv; drawRec(); }));
+  $("#grow-sub").textContent = (p ? p.name + " の " : "") + MAPS[mode].name + " レベル" + (recLv+1);
+  const g = growthOf(mode, recLv);
+  $("#h-grow-body").innerHTML = g ? growthHtml(g, mode, recLv) : '<p class="g0">まだ あそんでいません</p>';
+  drawBoard(mode, recLv, "board2");
 }
 
 /* ── みんなのランキング ── */
@@ -4034,27 +4137,33 @@ async function submitScore(r){
     return (js && js.reason) ? js.reason : "おくれませんでした(" + res.status + ")";
   }catch(e){ return "つながりませんでした"; }
 }
-async function drawBoard(m, lv){
-  const box = $("#board"), p = curProfile();
+const MEDALS = ["🥇","🥈","🥉"];  // 1〜3位(かずともと同じ。けいくん 2026-09-26)
+async function drawBoard(m, lv, id){
+  id = id || "board";  // "board"=結果画面 / "board2"=トップの きろく
+  const box = $("#" + id), p = curProfile(), body = $("#" + id + "-body");
   box.hidden = false;
-  $("#board-sub").textContent = MAPS[m].name + " レベル" + (lv+1) + "・" + (p && byGrade() ? gradeName(p.grade) : "ぜんいん");
-  $("#board-tabs").innerHTML = PERIODS.map(([k,n]) => '<button type="button" data-p="'+k+'"'+(k === boardPeriod ? ' class="on"' : '')+'>'+n+'</button>').join("");
-  $("#board-tabs").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { boardPeriod = b.dataset.p; drawBoard(m, lv); }));
+  $("#" + id + "-sub").textContent = MAPS[m].name + " レベル" + (lv+1) + "・" + (p && byGrade() ? gradeName(p.grade) : "ぜんいん");
+  $("#" + id + "-tabs").innerHTML = PERIODS.map(([k,n]) => '<button type="button" data-p="'+k+'"'+(k === boardPeriod ? ' class="on"' : '')+'>'+n+'</button>').join("");
+  $("#" + id + "-tabs").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { boardPeriod = b.dataset.p; drawBoard(m, lv, id); }));
   if(!p){
-    $("#board-body").innerHTML = '<p class="board-note">右上の アイコンで なまえを 入れると、みんなと タイムをくらべられるよ。<button type="button" id="board-reg">なまえを 入れる</button></p>';
-    $("#board-reg").addEventListener("click", openProf);
+    body.innerHTML = '<p class="board-note">右上の アイコンで なまえを 入れると、みんなと タイムをくらべられるよ。<button type="button" class="board-reg">なまえを 入れる</button></p>';
+    body.querySelector(".board-reg").addEventListener("click", openProf);
     return;
   }
-  $("#board-body").innerHTML = '<p class="board-note">よみこみ中…</p>';
+  body.innerHTML = '<p class="board-note">よみこみ中…</p>';
+  const mine = m, mylv = lv;
   try{
     const res = await fetch(RANK_API + "/board?" + new URLSearchParams({ mode:m, level:String(lv+1), grade:(byGrade() ? gradeKey(p.grade) : "all"), period:boardPeriod }));
     const js = await res.json().catch(() => null);
-    if(!res.ok || !js || !js.ok){ $("#board-body").innerHTML = '<p class="board-note">いまは ランキングを 読めません' + (js && js.reason ? "(" + esc(js.reason) + ")" : "") + '</p>'; return; }
+    if(id === "board2" && (mine !== mode || mylv !== recLv)) return;  // 読んでいるあいだに 別の レベルに 変わった
+    if(!res.ok || !js || !js.ok){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません' + (js && js.reason ? "(" + esc(js.reason) + ")" : "") + '</p>'; return; }
     const rows = js.rows || [];
-    const note = boardSent && boardSent !== "ok" ? '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>' : "";
-    if(!rows.length){ $("#board-body").innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも!</p>' + note; return; }
-    $("#board-body").innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '"><span class="rk' + (i < 3 ? ' top' : '') + '">' + (i+1) + '位</span><span class="nm">' + esc(r.name) + '</span><span class="tm">' + (r.ms/1000).toFixed(2) + '秒</span></div>').join("") + note;
-  }catch(e){ $("#board-body").innerHTML = '<p class="board-note">いまは ランキングを 読めません(つながりませんでした)</p>'; }
+    const note = id === "board" && boardSent && boardSent !== "ok" ? '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>' : "";
+    if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも!</p>' + note; return; }
+    body.innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
+      (i < 3 ? '<span class="rk md">' + MEDALS[i] + '</span>' : '<span class="rk">' + (i+1) + '位</span>') +
+      '<span class="nm">' + esc(r.name) + '</span><span class="tm">' + (r.ms/1000).toFixed(2) + '秒</span></div>').join("") + note;
+  }catch(e){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません(つながりませんでした)</p>'; }
 }
 /* こたえの名前に ふりがな(けいくん 2026-09-25「こたえの名前にもふりがなを振って下さい」)。よみは 打つ字(q.r)そのもの */
 function nameRuby(q){ return '<ruby class="nm">' + esc(q.n) + '<rt>' + esc(q.r) + '</rt></ruby>'; }
@@ -4076,6 +4185,9 @@ function renderResult(r){
   $("#r-cps").textContent = (chars/total).toFixed(1);
   $("#r-chars").textContent = chars;
   $("#r-best").textContent = r.best.toFixed(2);
+  const g = growthOf(mode, level);   // のび(かずともと同じで 2回め から)
+  $("#r-grow").classList.toggle("hidden", !(g && g.plays > 1));
+  if(g && g.plays > 1) $("#r-grow-body").innerHTML = growthHtml(g, mode, level);
   $("#r-new").classList.toggle("hidden", !r.isNew);
   $("#r-list").className = mode !== "quote" ? "intros" : "list";
   $("#r-list").innerHTML = mode !== "quote"

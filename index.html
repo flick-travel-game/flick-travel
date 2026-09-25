@@ -1700,6 +1700,9 @@ function gmapLink(q){ return '<a class="gmap" href="' + gmapUrl(q) + '" target="
 /* 名所の 緯度・経度(世界一周マップの ピンの位置)。地図は 北緯84度〜南緯60度 を 横長に切ったもの */
 const LATLON = {};
 "eiffel 48.86 2.29|liberty 40.69 -74.04|pyramid 29.98 31.13|wall 40.43 116.57|taj 27.17 78.04|fuji 35.36 138.73|colosseum 41.89 12.49|machu -13.16 -72.55|opera -33.86 151.21|bigben 51.50 -0.12|sagrada 41.40 2.17|angkor 13.41 103.87|pisa 43.72 10.40|arc 48.87 2.30|moai -27.12 -109.35|golden 37.82 -122.48|castle 47.56 10.75|basil 55.75 37.62|stone 51.18 -1.83|kinkaku 35.04 135.73|uluru -25.34 131.04|petra 30.33 35.44|mtsaint 48.64 -1.51|versailles 48.80 2.12|notredame 48.85 2.35|peter 41.90 12.45|venice 45.44 12.33|florence 43.77 11.26|pompeii 40.75 14.49|parthenon 37.97 23.73|santorini 36.46 25.38|alhambra 37.18 -3.59|towerbridge 51.51 -0.08|edinburgh 55.95 -3.20|brandenburg 52.52 13.38|cologne 50.94 6.96|charles 50.09 14.41|matterhorn 45.98 7.66|hagia 41.01 28.98|cappadocia 38.64 34.83|schonbrunn 48.18 16.31|kinderdijk 51.88 4.64|britishmuseum 51.52 -0.13|trevi 41.90 12.48|kiyomizu 34.99 135.78|itsukushima 34.30 132.32|himeji 34.84 134.69|todaiji 34.69 135.84|nikko 36.76 139.60|skytree 35.71 139.81|tokyotower 35.66 139.75|fushimi 34.97 135.77|shirakawa 36.26 136.91|genbaku 34.40 132.45|yakushima 30.36 130.53|forbidden 39.92 116.40|terracotta 34.38 109.28|potala 29.66 91.12|guilin 25.27 110.29|borobudur -7.61 110.20|halong 20.91 107.18|watarun 13.74 100.49|bagan 21.17 94.86|everest 27.99 86.93|goldentemple 31.62 74.88|shwedagon 16.80 96.15|victoria -17.92 25.86|kilimanjaro -3.07 37.35|sahara 23.40 13.00|tablemtn -33.96 18.40|abusimbel 22.34 31.63|sphinx 29.98 31.14|baobab -20.25 44.42|grandcanyon 36.10 -112.10|niagara 43.08 -79.07|rushmore 43.88 -103.46|yellowstone 44.43 -110.59|whitehouse 38.90 -77.04|empire 40.75 -73.99|chichen 20.68 -88.57|christ -22.95 -43.21|iguazu -25.69 -54.44|uyuni -20.13 -67.49|teotihuacan 19.69 -98.84|perito -50.50 -73.05|monument 36.98 -110.11|angel 5.97 -62.54|reef -18.29 147.70|milford -44.67 167.93|harbour -33.85 151.21|milan 45.46 9.19|buckingham 51.50 -0.14|hallstatt 47.56 13.65|bluemosque 41.01 28.98|diamondhead 21.26 -157.81|londoneye 51.50 -0.12|westminster 51.50 -0.13|budapest 47.51 19.05|kamakura 35.32 139.54|antelope 36.86 -111.37".split("|").forEach(s => { const [k,la,lo] = s.split(" "); LATLON[k] = [+la, +lo]; });
+/* はじめの100か所(エッフェル塔・富士山などの 定番)は f:1 = 先のレベルに出す。
+   そのあとに TSV で足した 世界遺産検定レベルの名所(けいくん 2026-09-25「1でお願いします」= 有名な名所から はじめる) */
+SPOTS.forEach(q => { q.f = 1; });
 /* 名所の追加ぶん(tools/spots-*.tsv から tools/add_spots.py が作る。手で直さない) SPOTS-MORE-START */
 SPOTS.push(
   {n:"知床", c:"日本・北海道", r:"しれとこ", art:"shiretoko", d:"北海道の東のはしにある半島。ヒグマやシャチなど たくさんの野生動物がすみ、世界自然遺産になっている。"},
@@ -2765,7 +2768,7 @@ function cost(s){
 const LEVELS = {};
 for(const m of MODES){
   const pool = poolOf(m);
-  /* f:1(国・都道府県)を 先に。その中で かんたんな順(けいくん 2026-09-25「まずは世界の国名や 日本は県から」) */
+  /* f:1(名所=はじめの100か所の定番 / 地名=国・都道府県)を 先に。その中で かんたんな順(けいくん 2026-09-25) */
   const sorted = pool.map((q,i) => ({q, i, f:q.f ? 0 : 1, c:cost(textOf(m,q))})).sort((a,b) => a.f - b.f || a.c - b.c || a.i - b.i).map(x => x.q);
   LEVELS[m] = [];
   for(let i = 0; i + ROUNDS <= sorted.length; i += ROUNDS) LEVELS[m].push(sorted.slice(i, i + ROUNDS));

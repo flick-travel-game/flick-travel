@@ -166,8 +166,10 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .map[data-map="world"] .j,.map[data-map="japan"] .w{display:none}
 .map img{display:block;width:100%;height:auto}
 .pin{position:absolute;width:18px;height:18px;margin:-9px 0 0 -9px;padding:0;border:none;background:none;display:grid;place-items:center}
-.pin i{display:block;width:5px;height:5px;border-radius:50%;background:#fff;opacity:.8;box-shadow:0 1px 2px rgba(0,60,120,.5)}
-.pin.on i{width:9px;height:9px;opacity:1;background:var(--c);box-shadow:0 0 0 1.5px #fff,0 1px 3px rgba(0,0,0,.5)}
+/* まだの所 = うすい小さな点 / やった所 = 白い大きなピン(けいくん 2026-09-26「赤ピンだと地図が赤くなって 見えなくなってくる」)。
+   レベルの色(--c)は ふちに 細く 出すだけ */
+.pin i{display:block;width:4px;height:4px;border-radius:50%;background:#fff;opacity:.45;box-shadow:0 1px 2px rgba(0,60,120,.4)}
+.pin.on i{width:10px;height:10px;opacity:1;background:#fff;box-shadow:0 0 0 1.5px var(--c),0 1px 3px rgba(0,0,0,.55)}
 .pin.sel i{transform:scale(1.5)}
 .map-cap{font-size:13px;color:var(--muted);margin:8px 2px 0;min-height:1.6em}
 .map-cap b{color:var(--ink)}
@@ -560,7 +562,7 @@ const SPOTS = [
   {n:"聖ワシリイ大聖堂", c:"ロシア・モスクワ", r:"せいわしりいだいせいどう", art:"basil", d:"モスクワの赤の広場に立つ、カラフルなたまねぎ形の屋根が目印の教会。16世紀に建てられた。"},
   {n:"ストーンヘンジ", c:"イギリス", r:"すとーんへんじ", art:"stone", d:"約5000年前から造られ始めた巨大な石の遺跡。夏至の日、石の並びに合わせて朝日が昇るように配置されている。"},
   {n:"金閣寺", c:"日本・京都", r:"きんかくじ", art:"kinkaku", d:"正式な名前は鹿苑寺。金箔で覆われた建物が池に映る姿が有名で、1994年に世界遺産に登録された。"},
-  {n:"ウルル（エアーズロック）", c:"オーストラリア", r:"うるる", art:"uluru", d:"高さ約350mの巨大な一枚岩。先住民アボリジニの聖地で、2019年から登ることが禁止されている。"},
+  {n:"エアーズロック（ウルル）", c:"オーストラリア", r:"えあーずろっく", art:"uluru", d:"高さ約350mの巨大な一枚岩。先住民アボリジニの聖地で、2019年から登ることが禁止されている。"},
   {n:"ペトラ", c:"ヨルダン", r:"ぺとら", art:"petra", d:"岩山を削って造られた古代都市の遺跡。ばら色の岩から「バラ色の都市」とも呼ばれている。"},
   {n:"モン・サン・ミシェル", c:"フランス", r:"もんさんみっしぇる", art:"mtsaint", d:"海にうかぶ小さな島に建つ修道院。潮が満ちると島のまわりが海になり、まわりの湾とともに世界遺産になっている。"},
   {n:"ベルサイユ宮殿", c:"フランス", r:"べるさいゆきゅうでん", art:"versailles", d:"ルイ14世が建てた豪華な宮殿。長さ約73mの「鏡の間」には、357枚の鏡が並んでいる。"},

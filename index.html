@@ -2963,22 +2963,32 @@ ans.addEventListener("input", () => {
 function finish(){
   running = false; cancelAnimationFrame(raf);
   const total = times.reduce((a,b)=>a+b,0);
-  const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
   const key = "flick-best-"+mode+"-"+(level+1), prev = parseFloat(store(key));
   const isNew = isNaN(prev) || total < prev;
   const firstClear = isNaN(prev);
   if(isNew) store(key, total.toFixed(2));
-  const pinsNow = mode === "quote" ? 0 : clearedSpots(mode).size;
-  $("#r-pins").classList.toggle("hidden", !(mode !== "quote" && firstClear));
-  $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ!(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + "か所)";
   const best = isNew ? total : prev;
+  const r = { mode, level, times: times.slice(), isNew: isNew && !isNaN(prev), firstClear, best, at: Date.now() };
+  /* 最後の結果を 端末に覚える。Googleマップから もどったとき ページが 作りなおされても 同じ結果画面に もどれるように
+     (けいくん 2026-09-25「戻るボタンで元のゲーム画面に戻らない」)。1時間で 忘れる */
+  store("flick-last", JSON.stringify(r));
+  renderResult(r);
+}
+
+function renderResult(r){
+  mode = r.mode; level = r.level; qs = LEVELS[mode][level]; times = r.times;
+  const total = times.reduce((a,b)=>a+b,0);
+  const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
+  const pinsNow = mode === "quote" ? 0 : clearedSpots(mode).size;
+  $("#r-pins").classList.toggle("hidden", !(mode !== "quote" && r.firstClear));
+  $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ!(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + "か所)";
   $("#r-time").textContent = total.toFixed(2);
   const ink = levelTone(level).ink;
   $(".stamp").style.color = ink; $(".stamp").style.borderColor = ink;
   $("#r-cps").textContent = (chars/total).toFixed(1);
   $("#r-chars").textContent = chars;
-  $("#r-best").textContent = best.toFixed(2);
-  $("#r-new").classList.toggle("hidden", !isNew || isNaN(prev));
+  $("#r-best").textContent = r.best.toFixed(2);
+  $("#r-new").classList.toggle("hidden", !r.isNew);
   $("#r-list").className = mode !== "quote" ? "intros" : "list";
   $("#r-list").innerHTML = mode !== "quote"
     ? qs.map((q,i) => { const pc = pic(q); return '<li class="intro"><div class="pic">'+pc.html+'</div><div class="body">'+
@@ -2992,12 +3002,23 @@ function finish(){
   showBest();
 }
 
+/* ひらいたとき、1時間いないの 結果が 残っていれば その画面から(Googleマップから もどってきたとき用) */
+function restoreLast(){
+  try{
+    const r = JSON.parse(store("flick-last") || "null");
+    if(!r || Date.now() - r.at > 60*60*1000 || !LEVELS[r.mode] || !LEVELS[r.mode][r.level] || !Array.isArray(r.times) || r.times.length !== ROUNDS) return;
+    if(r.mode !== mode){ setMode(r.mode); }
+    renderResult(r);
+  }catch(e){}
+}
+
 /* 名言モード(QUOTES)は しくみを 残して 画面には 出さない(2026-09 に 名所だけに した) */
 $("#quit").addEventListener("click", () => { running = false; locked = true; cancelAnimationFrame(raf); ans.blur(); show("home"); showBest(); });
-$("#again").addEventListener("click", () => start(mode, level));
-$("#next-lv").addEventListener("click", () => start(mode, level + 1));
-$("#home-btn").addEventListener("click", () => { show("home"); showBest(); });
+$("#again").addEventListener("click", () => { store("flick-last", ""); start(mode, level); });
+$("#next-lv").addEventListener("click", () => { store("flick-last", ""); start(mode, level + 1); });
+$("#home-btn").addEventListener("click", () => { store("flick-last", ""); show("home"); showBest(); });
 showBest();
+restoreLast();
 </script>
 </body>
 </html>

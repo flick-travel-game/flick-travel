@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>世界フリック旅行 とは｜世界と日本の名所を ひらがなで打つ タイピングゲーム</title>
+<meta name="description" content="世界と日本の名所の名前を ひらがなでフリック入力して タイムをきそう、無料のタイピングゲーム。打ち終わると 名所の写真と やさしい解説が出て、地図にピンが立ちます。登録も インストールも いりません。">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="favicon.png?v=2">
+<meta property="og:title" content="世界フリック旅行">
+<meta property="og:description" content="名所の名前を ひらがなで打って、世界一周。写真と解説つき。無料・登録なし。">
+<meta property="og:image" content="https://flick-travel-game.github.io/flick-travel/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff;--ink:#4a3b63;--muted:#6b7890;--soft:#f4f1f8;--line:#e6e2ee;--blue:#004fe6;box-sizing:border-box}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;-webkit-tap-highlight-color:transparent;font-weight:500}
+.wrap{max-width:520px;margin:0 auto;padding:16px 16px 48px}
+.display{font-family:"Dela Gothic One","Hiragino Sans","Yu Gothic",sans-serif;font-weight:400}
+.logo{display:flex;align-items:center;gap:6px;margin:0 0 10px}
+.logo-mark{height:44px;width:44px;border-radius:10px;object-fit:cover}
+.logo-word{height:44px;width:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hero{display:block;width:100%;height:auto;border-radius:.75rem;margin:0 0 14px;box-shadow:0 10px 22px -14px rgba(0,0,0,.55)}
+.lead{font-size:17px;line-height:1.85;margin:0 0 14px;font-weight:700}
+.lead b{color:var(--blue)}
+p{line-height:1.85;margin:0 0 10px;font-size:15px}
+h2{font-size:22px;margin:34px 0 10px;color:var(--blue);line-height:1.4}
+h3{font-size:16px;margin:16px 0 4px}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:64px;padding:14px 18px;margin:14px 0 6px;
+  font:inherit;font-size:20px;font-weight:700;text-decoration:none;cursor:pointer}
+.cta small{display:block;font-size:12px;font-weight:700;opacity:.92}
+.cta .tx{text-align:center}
+.free{text-align:center;color:var(--muted);font-size:13px;margin:0 0 6px}
+.shot{display:block;width:100%;height:auto;border-radius:.75rem;border:1px solid var(--line);margin:8px 0 6px;box-shadow:0 10px 22px -16px rgba(0,0,0,.4)}
+.cap{color:var(--muted);font-size:13px;margin:0 0 14px;line-height:1.7}
+.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{position:relative;padding:0 0 0 46px;margin:0 0 22px;min-width:0}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;
+  display:grid;place-items:center;color:#fff;font-family:"Dela Gothic One",sans-serif;font-size:16px;background:linear-gradient(135deg,var(--sk-a),var(--sk-b))}
+.steps li b{display:block;font-size:17px;margin:4px 0 4px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 6px}
+.mode{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:14px 12px;min-height:96px;text-align:left;min-width:0}
+.mode .ic{background:rgba(255,255,255,.25);border-radius:.75rem;font-size:28px;width:44px;height:44px;display:grid;place-items:center}
+.mode b{display:block;font-size:19px;letter-spacing:.02em}
+.mode small{display:block;font-size:12px;opacity:.92}
+.points{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}
+.points li{background:var(--soft);border-radius:16px;padding:12px 14px;min-width:0}
+.points li b{display:block;font-size:15px;margin-bottom:2px}
+.points li span{display:block;font-size:14px;line-height:1.75;color:#5a4d70}
+.qa{margin:0 0 12px}
+.qa dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.qa dd{margin:0;font-size:14px;line-height:1.8;color:#5a4d70}
+.foot{margin:44px 0 0;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.8}
+.foot a{color:inherit}
+a.inl{color:var(--blue)}
+.sk-card{
+  --sk-a:#f20077; --sk-b:#ff4da3; --sk-on:#ffffff;
+  position:relative; overflow:hidden; border:none; border-radius:0.75rem;
+  color:var(--sk-on); text-shadow:0 1px 2px rgba(0,0,0,0.18);
+  background-image:
+    url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%3E%3Cfilter%20id='f'%20filterUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='180'%20height='180'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.9'%20numOctaves='1'%20seed='3'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%201%200%200%200%200%201%2010%200%200%200%20-7.3'/%3E%3C/filter%3E%3Crect%20width='180'%20height='180'%20filter='url%28%23f%29'/%3E%3C/svg%3E"),
+    linear-gradient(180deg,rgba(255,255,255,0.28),rgba(255,255,255,0) 58%),
+    linear-gradient(135deg,var(--sk-a),var(--sk-b));
+  background-size:180px 180px,100% 100%,100% 100%;
+  box-shadow:0 14px 26px -12px color-mix(in srgb,var(--sk-a) 60%,transparent),inset 0 2px 0 rgba(255,255,255,0.4);
+}
+.sk-card::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%3E%3Cfilter%20id='f'%20filterUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='180'%20height='180'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.9'%20numOctaves='1'%20seed='11'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%201%200%200%200%200%201%2012%200%200%200%20-9.1'/%3E%3C/filter%3E%3Crect%20width='180'%20height='180'%20filter='url%28%23f%29'/%3E%3C/svg%3E");background-size:180px 180px;animation:sk-glitter 1.6s ease-in-out infinite}
+.sk-card::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%3E%3Cfilter%20id='f'%20filterUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='180'%20height='180'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.9'%20numOctaves='1'%20seed='23'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%201%200%200%200%200%201%2012%200%200%200%20-9.5'/%3E%3C/filter%3E%3Crect%20width='180'%20height='180'%20filter='url%28%23f%29'/%3E%3C/svg%3E");background-size:180px 180px;animation:sk-glitter 2.3s ease-in-out infinite;animation-delay:0.8s}
+@keyframes sk-glitter{0%,100%{opacity:0.15}50%{opacity:1}}
+/* ⚠️ ならぶ ボタンは 光る 時こくを ずらす */
+.sk-card-1::before{animation-delay:0s} .sk-card-2::before{animation-delay:0.45s}
+.sk-card-3::before{animation-delay:0.9s} .sk-card-4::before{animation-delay:1.35s}
+.sk-card-1::after{animation-delay:0.8s} .sk-card-2::after{animation-delay:1.4s}
+.sk-card-3::after{animation-delay:0.2s} .sk-card-4::after{animation-delay:1.9s}
+@media (prefers-reduced-motion: reduce){.sk-card::before,.sk-card::after{animation:none;opacity:0.7}}
+.sk-card>*{position:relative;z-index:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo" aria-hidden="true">
+    <img class="logo-mark" src="logo-mark2.webp" alt="" width="144" height="144">
+    <img class="logo-word" src="logo-word.webp" alt="" width="1170" height="209">
+  </div>
+  <h1 class="sr-only">世界フリック旅行 とは</h1>
+  <img class="hero" src="hero.webp" alt="世界フリック旅行。世界の名所と ひらがなが 空にうかぶ 絵" width="1536" height="1024">
+
+  <p class="lead">世界と日本の名所の名前を、<b>ひらがなで フリック入力</b>して タイムをきそうゲームです。打ち終わるたびに <b>名所の写真と やさしい解説</b>が出て、<b>地図にピン</b>が立ちます。速くなるほど、世界の名所も 自然と おぼえられます。</p>
+
+  <a class="cta sk-card sk-card-1" href="./" style="--sk-a:#1d6bff;--sk-b:#649aff;--sk-on:#fff"><span class="tx">いますぐ あそぶ<small>無料・登録なし・インストールなし</small></span></a>
+  <p class="free">スマホでも タブレットでも パソコンでも、ひらいたら すぐ あそべます。</p>
+
+  <h2>4つの旅</h2>
+  <p>名所の旅と 地名の旅、それぞれ 世界と日本。あわせて <b>1,110か所</b>。</p>
+  <div class="modes">
+    <div class="mode sk-card sk-card-1" style="--sk-a:#1d6bff;--sk-b:#649aff;--sk-on:#fff"><span class="ic">🌍</span><span><b>世界の旅</b><small>名所 360か所・36レベル</small></span></div>
+    <div class="mode sk-card sk-card-2" style="--sk-a:#f20077;--sk-b:#ff4da3;--sk-on:#fff"><span class="ic">🗾</span><span><b>日本の旅</b><small>名所 150か所・15レベル</small></span></div>
+    <div class="mode sk-card sk-card-3" style="--sk-a:#00b33c;--sk-b:#00d948;--sk-on:#fff"><span class="ic">🗺</span><span><b>世界の地名</b><small>国・町・山脈・川・海 350か所</small></span></div>
+    <div class="mode sk-card sk-card-4" style="--sk-a:#f25c00;--sk-b:#ff8a33;--sk-on:#fff"><span class="ic">📍</span><span><b>日本の地名</b><small>都道府県・町・平野・川 250か所</small></span></div>
+  </div>
+  <p class="cap">名所は <b>世界遺産検定</b>、地名は <b>大学受験</b>に出るレベルまで 入っています。小学生は レベル1から、受験生は 後ろのレベルから。</p>
+
+  <h2>あそびかた</h2>
+  <ol class="steps">
+    <li style="--sk-a:#1d6bff;--sk-b:#649aff"><b>名所の写真と ひらがなが出る</b>そのまま フリックで 打ち写します。漢字に 変えなくて OK。まちがえると 赤くなって 教えてくれます。
+      <img class="shot" src="lp-play.webp" alt="ゲーム画面。ネス湖の写真と「ねすこ」の文字。下に入力欄" width="780" height="968"></li>
+    <li style="--sk-a:#f20077;--sk-b:#ff4da3"><b>10問で 1レベル。トータルタイムで 勝負</b>どのレベルも いつも 同じ10問・同じ順番なので、きのうの自分と タイムを くらべられます。自己ベストを こえたら お祝い。</li>
+    <li style="--sk-a:#00b33c;--sk-b:#00d948"><b>打ち終わると 名所カード</b>写真・どこの国か・やさしい解説(ふりがなつき)。「Googleマップで見る」を 押すと その場所に 飛べます。
+      <img class="shot" src="lp-card.webp" alt="結果の名所カード。キト(エクアドル)の写真と 解説、Googleマップで見るボタン" width="780" height="885"></li>
+    <li style="--sk-a:#f25c00;--sk-b:#ff8a33"><b>地図に ピンが立つ</b>クリアした名所の場所に ピンが立って、旅の あしあとになります。ぜんぶ立てたら 世界一周・日本一周。
+      <img class="shot" src="lp-map.webp" alt="世界一周マップ。カラフルな世界地図に ピンが 20本" width="780" height="486">
+      <img class="shot" src="lp-map-japan.webp" alt="日本一周マップ。都道府県ごとに 色分けした日本地図に ピン" width="780" height="1050"></li>
+  </ol>
+
+  <h2>ここが うれしい</h2>
+  <ul class="points">
+    <li><b>📸 ぜんぶ 本物の写真</b><span>名所は 1か所ずつ 本物の写真つき。解説には ふりがなが ふってあるので、小学生でも 読めます。</span></li>
+    <li><b>⌨️ フリック入力が 速くなる</b><span>ひらがなを 見て そのまま打つだけなので、打ちかたの練習に ちょうどいい。濁点や 小さい字も 自然に おぼえます。</span></li>
+    <li><b>🌏 地理と 世界遺産が 身につく</b><span>国の名前・首都・山脈・川・海峡。世界遺産検定・大学受験レベルの 地名まで 入っています。</span></li>
+    <li><b>⏱ 1レベル 1〜2分</b><span>10問で 終わるので、すきま時間に 1回。</span></li>
+    <li><b>🗺 旅の あしあとが 残る</b><span>ピンの数が ふえていくのが 楽しい。1,110か所 ぜんぶ 立てられるかな。</span></li>
+  </ul>
+
+  <h2>おうちの方へ</h2>
+  <ul class="points">
+    <li><b>無料です</b><span>お金は かかりません。課金も 広告も ありません。</span></li>
+    <li><b>なにも 聞きません</b><span>名前も メールアドレスも 入れる欄が そもそも ありません。自己ベストと ピンは お使いの端末の中にだけ 残ります。</span></li>
+    <li><b>人と やりとりする 道が ありません</b><span>チャット・ランキング・フォローの ような しくみは ありません。知らない人と つながる 入口を 作らない ためです。</span></li>
+    <li><b>外に出るのは Googleマップだけ</b><span>「Googleマップで見る」と 写真の出どころ(Wikimedia Commons)へのリンクだけ、別の画面で ひらきます。</span></li>
+    <li><b>写真は ルールを守って 使っています</b><span>Wikimedia Commons の パブリックドメイン・CC BY・CC BY-SA の写真だけを使い、カードに 撮影者と ライセンスを 書いています。</span></li>
+  </ul>
+
+  <h2>ホーム画面に 置くと アプリのように 使えます</h2>
+  <p>iPhone の Safari で ゲームをひらき、下の <b>共有ボタン(□↑)</b> → <b>「ホーム画面に追加」</b>。「Webアプリとして開く」を ON にすると、Safari の枠なしで ゲームだけが ひらきます。</p>
+
+  <h2>よくある質問</h2>
+  <dl class="qa">
+    <dt>予測変換を使っても いいですか?</dt>
+    <dd>ルールは「自分の指で 打ち切る」。予測変換や コピペを使うと タイムの意味が なくなるので、使わずに あそんでね。</dd>
+    <dt>漢字に 変換しないと だめ?</dt>
+    <dd>ひらがなのまま で OK。句読点や スペースも 打たなくて 大丈夫です。</dd>
+    <dt>パソコンでも あそべますか?</dt>
+    <dd>あそべます。ローマ字入力の 練習にも なります。</dd>
+    <dt>記録は どこに残りますか?</dt>
+    <dd>お使いの ブラウザの中だけ。別の端末には 持っていけません。ブラウザの データを消すと 記録も消えます。</dd>
+    <dt>写真が 出ない名所が あります</dt>
+    <dd>ルールに合う写真が 見つからなかった 名所は、イラストで 出しています。</dd>
+  </dl>
+
+  <a class="cta sk-card sk-card-2" href="./" style="--sk-a:#f20077;--sk-b:#ff4da3;--sk-on:#fff"><span class="tx">世界フリック旅行を はじめる<small>無料・登録なし</small></span></a>
+
+  <p class="foot">写真は Wikimedia Commons(パブリックドメイン / CC BY / CC BY-SA)。地図は Natural Earth のデータから 作りました。<br>
+  <a href="./">ゲームへ</a></p>
+</div>
+</body>
+</html>

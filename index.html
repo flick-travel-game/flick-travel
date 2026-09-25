@@ -253,7 +253,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .prof-set .on{background:#1e293b;color:#fff;box-shadow:0 1px 3px rgba(0,0,0,.2)}
 .prof-set .off{color:#64748b}
 .prof-set .sel{position:relative}
-.prof-set select{width:100%;appearance:none;-webkit-appearance:none;padding:12px 28px 12px 12px;outline:none;color:inherit;background-color:transparent}
+.prof-set select{width:100%;appearance:none;-webkit-appearance:none;border:none;border-radius:16px;margin:0;padding:12px 28px 12px 12px;outline:none;font:inherit;font-size:16px;font-weight:900;text-align:center;text-align-last:center;color:inherit;background-color:transparent;box-shadow:none}
 .prof-set .sel.on select{background-color:#1e293b}
 .prof-set .sel.off select{background-color:#fff}
 .prof-set .arw{pointer-events:none;position:absolute;top:50%;right:12px;transform:translateY(-50%);font-size:12px;color:#94a3b8}
@@ -3989,6 +3989,10 @@ function renderResult(r){
 /* ひらいたとき、1時間いないの 結果が 残っていれば その画面から(Googleマップから もどってきたとき用) */
 function restoreLast(){
   try{
+    /* ⚠️ もどすのは「もどる」で 帰ってきたとき(Googleマップから)だけ。リンク・ホーム画面から ひらいたときは トップ
+       (けいくん 2026-09-26「リンクからトップ画面ではなく終わった後のページに飛ぶ」) */
+    const nav = (performance.getEntriesByType("navigation")[0] || {}).type;
+    if(nav !== "back_forward" && nav !== "reload") return;
     const r = JSON.parse(store("flick-last") || "null");
     if(!r || Date.now() - r.at > 60*60*1000 || !LEVELS[r.mode] || !LEVELS[r.mode][r.level] || !Array.isArray(r.times) || r.times.length !== ROUNDS) return;
     if(r.mode !== mode){ setMode(r.mode); }

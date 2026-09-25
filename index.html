@@ -161,11 +161,14 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 /* 地図は 2本の指(ピンチ)・＋－・ダブルタップで 8倍まで 大きくできる(けいくん 2026-09-26「もっと地図を拡大出来るようにならないと 目的のピンにたどり着かない」)。
    .map-in を transform で 大きくし、ピンは --k(=1/倍率)で 小さくもどすので **ピンの大きさは 変わらず 場所だけ 離れる** */
 .map{position:relative;border-radius:.75rem;overflow:hidden;box-shadow:0 10px 22px -14px rgba(0,0,0,.55);touch-action:pan-y;user-select:none;-webkit-user-select:none}
-.map-in{position:relative;transform-origin:0 0;--k:1}
+/* ⚠️ 大きくするのは transform の scale ではなく **幅(width)**。Safari は scale した層を 1倍で描いた絵のまま 引きのばすので
+   4k の絵に差しかえても ぼやけたままだった(けいくん 2026-09-26「まだボヤけてる」)。幅を変えれば 絵を 描きなおす。
+   動かすのは translate(ぼやけない) */
+.map-in{position:absolute;left:0;top:0;width:100%}
 .map-zoom{position:absolute;right:8px;bottom:8px;display:flex;flex-direction:column;gap:6px;z-index:5}
 .map-zoom button{width:34px;height:34px;border-radius:10px;border:none;background:rgba(255,255,255,.92);color:#1f1f1f;font:inherit;font-size:20px;font-weight:900;line-height:1;box-shadow:0 2px 6px rgba(0,0,0,.25);padding:0}
 .map-zoom button:active{background:#fff;transform:translateY(1px)}
-.map .sea,.map .compass{position:absolute;transform:translate(-50%,-50%) scale(var(--k,1));font-family:"Yomogi","Zen Maru Gothic",sans-serif;
+.map .sea,.map .compass{position:absolute;transform:translate(-50%,-50%);font-family:"Yomogi","Zen Maru Gothic",sans-serif;
   color:#fff;text-shadow:0 1px 3px rgba(0,60,120,.6);font-size:clamp(10px,3vw,16px);letter-spacing:.3em;pointer-events:none;white-space:nowrap}
 .map .compass{letter-spacing:0;text-align:center;line-height:1;font-size:clamp(10px,2.8vw,15px)}
 .map .sea.small{font-size:clamp(9px,2.4vw,13px);letter-spacing:.1em}
@@ -174,8 +177,8 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 /* やった所だけ 📍(けいくん 2026-09-26「📍にする?」)。まだの所は 出さない。
    針の先が その場所。大きくしても ピンの大きさは 変わらない(--k で 打ち消す)。えらんだ ピンは 少し大きく */
 .pin{position:absolute;width:0;height:0;padding:0;border:none;background:none;overflow:visible}
-.pin i{position:absolute;left:0;bottom:0;transform:translate(-50%,0) scale(var(--k,1));transform-origin:50% 100%;font-style:normal;font-size:22px;line-height:1;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.45));cursor:pointer;padding:2px 4px 0}
-.pin.sel i{transform:translate(-50%,0) scale(calc(var(--k,1) * 1.4));z-index:2}
+.pin i{position:absolute;left:0;bottom:0;transform:translate(-50%,0);transform-origin:50% 100%;font-style:normal;font-size:22px;line-height:1;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.45));cursor:pointer;padding:2px 4px 0}
+.pin.sel i{transform:translate(-50%,0) scale(1.4);z-index:2}
 .pin.sel{z-index:2}
 .map-cap{font-size:13px;color:var(--muted);margin:8px 2px 0;min-height:1.6em}
 .map-cap b{color:var(--ink)}
@@ -3666,9 +3669,9 @@ function japanPos(la, lo){
   return [x / J.w, y / J.h];
 }
 const MAPS = {
-  world: { src:"world-map-color.jpg", hi:"world-map-color-4k.jpg", w:1080, h:432, title:"世界一周マップ", word:"世界地図", icon:"🌍", name:"世界の旅",
+  world: { src:"world-map-color.jpg", hi:"world-map-color-4k.jpg", hi2:"world-map-color-8k.jpg", w:1080, h:432, title:"世界一周マップ", word:"世界地図", icon:"🌍", name:"世界の旅",
            pos:(la, lo) => [(lo + 180) / 360, (84 - la) / 144] },
-  japan: { src:"japan-map-color.jpg", hi:"japan-map-color-4k.jpg", w:1080, h:1215, title:"日本一周マップ", word:"日本地図", icon:"🗾", name:"日本の旅", pos:japanPos },
+  japan: { src:"japan-map-color.jpg", hi:"japan-map-color-4k.jpg", hi2:"japan-map-color-8k.jpg", w:1080, h:1215, title:"日本一周マップ", word:"日本地図", icon:"🗾", name:"日本の旅", pos:japanPos },
 };
 MAPS.wnames = Object.assign({}, MAPS.world, { icon:"🗺", name:"世界の地名", sub:"まず国、つぎに町・山脈・川・海" });
 MAPS.jnames = Object.assign({}, MAPS.japan, { icon:"📍", name:"日本の地名", sub:"まず都道府県、つぎに町・平野・川・海" });
@@ -3759,7 +3762,8 @@ function drawModes(){
 function setMode(m){
   mode = m; store("flick-mode", m);
   const M = MAPS[m], img = $("#map-img");
-  if(!img.src.endsWith(M.src) && !(img.src.endsWith(M.hi || "@") && MZ.s > 1.2)){ img.src = M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
+  if(!img.src.endsWith(M.src) && !((img.src.endsWith(M.hi || "@") || img.src.endsWith(M.hi2 || "@")) && MZ.s > 1.2)){ img.src = M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
+  $("#map").style.aspectRatio = M.w + " / " + M.h;  // 中身が absolute なので 高さは ここで決める
   if($("#map").dataset.map !== m) mapReset();  // 地図を切りかえたら 拡大を もどす
   $("#map").dataset.map = m;
   $("#map-title").textContent = M.title;
@@ -3793,19 +3797,21 @@ function drawMap(){
   $("#map-count").textContent = done.size + " / " + POOLS[mode].length + "か所";
 }
 /* ── 地図の 拡大(ピンチ・＋－・ダブルタップ・Ctrl+ホイール)。1〜8倍。はみ出さないように おさえる ── */
-const MZ = { s:1, tx:0, ty:0, max:8 };
+const MZ = { s:1, tx:0, ty:0, max:12 };
 function mapApply(){
   const inn = $("#map-in"), map = $("#map"), W = map.clientWidth, H = map.clientHeight;
   MZ.s = Math.min(MZ.max, Math.max(1, MZ.s));
   MZ.tx = Math.min(0, Math.max(W - W * MZ.s, MZ.tx)); MZ.ty = Math.min(0, Math.max(H - H * MZ.s, MZ.ty));
   if(MZ.s === 1){ MZ.tx = 0; MZ.ty = 0; }
-  inn.style.transform = "translate(" + MZ.tx + "px," + MZ.ty + "px) scale(" + MZ.s + ")";
-  inn.style.setProperty("--k", String(1 / MZ.s));
+  inn.style.width = (MZ.s * 100) + "%";
+  inn.style.transform = "translate(" + MZ.tx + "px," + MZ.ty + "px)";
   map.style.touchAction = MZ.s > 1 ? "none" : "pan-y";   // 大きくしているあいだは 1本の指で 地図を動かす(ページは 動かさない)
-  /* 大きくしたら 4320px の地図に 差しかえる(けいくん 2026-09-26「拡大すると地図がボヤけて見えない」)。
-     はじめは 1080px(90KB)で 速く出し、4k(500〜600KB)は 大きくした人にだけ */
+  /* 大きくしたら 大きい絵に 差しかえる(けいくん 2026-09-26「拡大すると地図がボヤけて見えない」→「もっと拡大しても対応出来るように」)。
+     はじめは 1080px(90KB)。1.2倍をこえたら 4320px(500〜600KB)、3.5倍をこえたら 8640px(1.3〜1.6MB)。大きくした人にだけ 読みこむ。
+     ⚠️ 小さくもどしても 絵は もどさない(読みなおしの むだ) */
   const M = MAPS[mode], img = $("#map-img");
-  if(MZ.s > 1.2 && M.hi && !img.src.endsWith(M.hi)) img.src = M.hi;
+  const want = MZ.s > 3.5 && M.hi2 ? M.hi2 : (MZ.s > 1.2 && M.hi ? M.hi : null);
+  if(want && !img.src.endsWith(want) && !(want === M.hi && M.hi2 && img.src.endsWith(M.hi2))) img.src = want;
   $("#zoom-reset").hidden = MZ.s === 1;
 }
 /* 画面の点(px,py。地図の左上から)を 動かさずに 倍率を s2 に */

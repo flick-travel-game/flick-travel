@@ -22,9 +22,11 @@ def read_tsv(path, names=False, people=False):
         if not line.strip() or line.startswith("#"):
             continue
         f = line.split("\t")
-        assert len(f) == (12 if people else 8), (path.name, line[:40])
+        assert len(f) == (12 if people else (9 if names else 8)), (path.name, line[:40])
         key, name, place, yomi, query, desc, lat, lon = f[:8]
         extra = dict(zip(("s", "sd", "first", "b"), f[8:])) if people else {}
+        if names and f[8]:
+            extra["m"] = f[8]  # 地図の目印(けいくん 2026-09-25「説明に書いてある有名な場所に Googleマップ飛んだ方がいい」)
         assert re.fullmatch(r"[a-z0-9]+", key), key
         for s in (name, place, desc, *extra.values()):
             assert '"' not in s and "\\" not in s, (key, s)
@@ -65,7 +67,9 @@ def main():
     def extra(r):
         if "s" in r:
             return f'k:"person", s:"{r["s"]}", sd:"{r["sd"]}", b:"{r["b"]}", '
-        return f'k:"name", e:"{r["e"]}", ' if r["e"] else ""
+        if r["e"]:
+            return f'k:"name", e:"{r["e"]}", ' + (f'm:"{r["m"]}", ' if r.get("m") else "")
+        return ""
     spots = ",\n".join(f'  {{n:"{r["n"]}", c:"{r["c"]}", r:"{r["r"]}", art:"{r["key"]}", ' + extra(r) + ("f:1, " if first_of(r) else "") + f'd:"{r["d"]}"}}' for r in rows)
     ll = ", ".join(f'{r["key"]}:[{r["lat"]},{r["lon"]}]' for r in rows)
     block = ("/* 名所の追加ぶん(tools/spots-*.tsv から tools/add_spots.py が作る。手で直さない) SPOTS-MORE-START */\n"

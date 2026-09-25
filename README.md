@@ -35,7 +35,7 @@
   解説の文を変えたら もう一度 走らせる。読みのまちがいは 台本の `FIX` / `SPOT_FIX` で直す)
 
 - **ロゴと トップの絵**(2026-09-24。speed-king の `docs/ロゴの文字.md` の とおり): けいくんが ChatGPT で作った `hero.webp`(1536×1024)の中の
-  題名を `tools/logo-word-cut.py` で 切りぬいた `logo-word.webp`(1170×209。**もとの大きさのまま**しまう)+ 絵の地球儀を切った `logo-mark.webp`(144×144)。
+  題名を `tools/logo-word-cut.py` で 切りぬいた `logo-word.webp`(1170×209。**もとの大きさのまま**しまう)+ 左のマークは `logo-mark2.webp`(144×144。2026-09-25 けいくん「この左上のアイコンも変更して」で、ホーム画面のアイコンと同じ 正方形の絵に。まえは 絵の地球儀を切ったもの)。
   画面では どちらも **44px**。⚠️ **CSS・フォントで 似せない**。絵を変えたら 道具を走らせなおす(`FRAC` と `parts[:7]` = 7文字)。
   名前は `<h1 class="sr-only">` でも 置いてある(読みあげ・検索のため)
 
@@ -48,7 +48,7 @@
 | ファイル | 中身 |
 |---|---|
 | `index.html` | ゲーム本体(遊びかた・デザイン) |
-| `hero.webp` / `logo-word.webp` / `logo-mark.webp` | トップの絵と そこから切った ロゴ(`tools/logo-word-cut.py`) |
+| `hero.webp` / `logo-word.webp` / `logo-mark2.webp` | トップの絵と そこから切った ロゴの字、左のマーク(ホーム画面のアイコンと同じ絵)(`tools/logo-word-cut.py`) |
 | `apple-touch-icon.png` / `icon-512.png` / `favicon.png` / `manifest.webmanifest` | ホーム画面に追加したときのアイコン(2026-09-25 けいくん「左上の画像に」。同日 けいくんの正方形の絵(1254px)に差しかえ。いま `?v=2`)と アプリのように開く設定。絵を差しかえたら `?v=` を上げる |
 | `world-map-color.jpg` / `japan-map-color.jpg` | いま使っている カラフルな地図(`tools/make_color_map.py`) |
 | `world-map-mono.jpg` | まえの モノクロのペン画風の地図(もとは CC0)。いまは使っていない |

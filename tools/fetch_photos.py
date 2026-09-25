@@ -260,6 +260,28 @@ CANDIDATES.update({
     "kilauea": ["Kilauea Volcano and lava flows from fissures near Leilani Estates, Hawaii, USA (40544299770).jpg", "Lava Dome (24366962292).jpg"],
     "zayed": ["Sheikh Zayed Grand Mosque @ Abu Dhabi (15856602738).jpg", "Grand mosque in Abu Dhabi - P1030160.jpg", "Sheikh Zayed Grand Mosque in Abu Dhabi - panoramio.jpg"],
 })
+CANDIDATES.update({
+    "amamioshima": ["Amami island Honohoshi beach.jpg", "Amami beach.jpg"],
+    "shimogamo": ["Kyoto Shimogamo-jinja Romon 1.jpg", "Kyoto Shimogamo-jinja Romon 3.jpg"],
+    "rinnoji": ["NikkoRinnoji5390.jpg", "Exterieur van Sanbutsudo, het hoofdgebouw van het Rinnoji-tempelcomplex in Nikko, RP-F-F01102-CB.jpg"],
+    "gunkanjima2": ["Hashima, Nagasaki, Japan, 20240814 1421 3377.jpg", "Hashima, Nagasaki, Japan, 20240814 1424 3410.jpg"],
+    "lascaux": ["Lascaux, replica 03.JPG", "Cave painting, Anthropos (2).jpeg"],
+    "verona": ["Arena di Verona, Verona - panoramio.jpg", "The Arena, Piazza Bra, Verona (4809401837).jpg"],
+    "canterbury": ["Canterbury cathedral 20160901.jpg", "Exterior of Canterbury Cathedral, August 2022.jpg"],
+    "mycenae": ["Lions-Gate-Mycenae.jpg", "The Lion Gate on 26 March 2019.jpg"],
+    "seokguram": ["Front view of Seokguram from front chamber.jpg", "Seokguram at Palgong Mountain, Daegu.jpg"],
+    "ajanta": ["Ajanta Caves Exterior View-51.jpg", "Ajanta caves - Exterior views vrvbajel0924 (17).jpg"],
+    "anuradhapura": ["Ruwanwelisaya Stupa Anuradhapura 2017-10-15 (2).jpg", "Anuradhapura 2019.jpg"],
+    "copan": ["Copán archaeological site, Honduras 19.jpg", "Honduras-0121 - Copan (2214380168).jpg"],
+    "palenque": ["2013-12-31 Palenque Temple of Inscriptions anagoria.JPG", "Palenque Temple of Inscriptions.JPG"],
+    "ouropreto": ["Ouro Preto November 2009-13.jpg", "Ouro Preto église St François d'Assise en 2005.jpg"],
+    "axum": ["The North Stelae Park, Axum, Ethiopia (2812686646).jpg", "Stelen von Aksum.JPG"],
+    "split": ["Peristyle of Diocletian's Palace, Split (11907674235).jpg", "Split - Peristyle 002.JPG"],
+    "mountathos": ["Simonopetra Monastery.jpg", "Simonopetra monastery.JPG"],
+    "tongariro": ["Mount Ngauruhoe 01.jpg", "Le Ngauruhoe et le Ruapehu vus du sommet du Tongariro.jpg"],
+    "wurzburg": ["Residenz Würzburg, East facade 20181228 1.jpg", "Bayern, Würzburg, Residenz und Schlossgarten NIK 5624.jpg"],
+    "aachen": ["Aachen Germany Imperial-Cathedral-01.jpg", "Aachen, Dom -- 2016 -- 2768.jpg"],
+})
 CANDIDATES["kasuga"] = ["Nara city, Kasuga-taisha Shrine.jpg", "Kasuga-taisha Shrine, Nara Prefecture; April 2017 (02).jpg"]
 CANDIDATES["strasbourg"] = ["Strasbourg Cathedral Exterior - Diliff.jpg", "Cathédrale Notre-Dame de Strasbourg.jpg", "Strasbourg Cathedral.jpg"]
 
@@ -284,6 +306,14 @@ CATS = {
     "guanajuato": "Guanajuato City", "arenal": "Arenal Volcano", "sugarloaf": "Sugarloaf Mountain (Rio de Janeiro)",
     "cartagena": "Cartagena, Colombia", "borabora": "Bora Bora", "bund": "The Bund", "zhangjiajie": "Zhangjiajie National Forest Park",
     "hoian": "Hội An", "petronas": "Petronas Twin Towers", "marinabay": "Marina Bay Sands", "tanahlot": "Tanah Lot",
+    # 2026-09-25 世界遺産検定の 追加ぶんで 検索が はずれたもの
+    "sefa": "Sefa-utaki", "kumanokodo": "Kumano Kodō", "miike": "Manda Pit", "amamioshima": "Amami Ōshima", "kamigamo": "Kamigamo Shrine",
+    "shimogamo": "Shimogamo Shrine", "rinnoji": "Rinnō-ji (Nikkō)", "gunkanjima2": "Hashima Island", "horyujiyumedono": "Yumedono",
+    "shirakamisanchi": "Shirakami-Sanchi", "yahata": "Yawata Steel Works", "harajo": "Hara Castle", "nintoku": "Daisen Kofun",
+    "ogasawaraislands": "Chichijima", "auschwitz": "Auschwitz I", "sanssouci": "Sanssouci", "lascaux": "Lascaux", "verona": "Arena di Verona",
+    "lastsupper": "Santa Maria delle Grazie (Milan)", "cordoba": "Mosque–Cathedral of Córdoba", "casabatllo": "Casa Batlló",
+    "canterbury": "Canterbury Cathedral", "mycenae": "Mycenae", "saintcatherine": "Saint Catherine's Monastery", "longmen": "Longmen Grottoes",
+    "seokguram": "Seokguram", "wurzburg": "Würzburg Residence", "chartres": "Chartres Cathedral", "aachen": "Aachen Cathedral",
 }
 
 

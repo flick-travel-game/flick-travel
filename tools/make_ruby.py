@@ -56,6 +56,12 @@ FIX = {
     "拙": "せっ",
     "憂い": "うれい",
     "大極": "だいごく",
+    "何": "なに",  # 何も/何を(「何人」「何時」は 1語なので ひびかない)
+    "忘る": "わする",
+    "灯火": "ともしび",
+    "木鶏": "もっけい",
+    "四十九": "しじゅうく",
+    "七生": "しちしょう",
 }
 # その名所の文の中でだけ 読みを変えるもの((名所のキー, 見出し語) → よみ)
 SPOT_FIX = {
@@ -92,6 +98,33 @@ SPOT_FIX = {
     ("iwatesan", "片"): "かた",
     ("qufu", "孔"): "こう",
     ("enryakuji", "母"): "ぼ",
+    # 偉人の 名言(2026-09-25)
+    ("masako", "深い"): "ふかい",
+    ("rikyu", "離"): "はな",
+    ("rikyu", "本"): "もと",
+    ("hideyoshi", "露"): "つゆ",
+    ("masamune", "仁"): "じん",
+    ("ryoma", "申"): "もうし",
+    ("ryoma", "候"): "そうろう",
+    ("yukawa", "一日"): "いちにち",
+    ("komachi", "身世"): "みよ",
+    ("michizane", "東風"): "こち",
+    ("kuranosuke", "捨"): "す",
+    ("mitsukuni", "種"): "たね",
+    ("issai", "少"): "しょう",
+    ("nakamura", "一"): "いっ",
+    ("togo", "一"): "いっ",
+    ("akutagawa", "一"): "ひと",
+    ("akutagawa", "箱"): "はこ",
+    ("ogai", "小"): "ちい",
+    ("nakamaro", "天"): "あま",
+    ("laozi", "一"): "いっ",
+    ("laozi", "歩"): "ぽ",
+    ("armstrong", "一"): "いっ",
+    ("armstrong", "歩"): "ぽ",
+    ("descartes", "我"): "われ",
+    ("zhugeliang", "後"): "のち",
+    ("carroll", "行っ"): "いっ",
 }
 # Sudachi は「階段(ガート)」を 1語にしてしまうので、かっこで 切ってから 読む
 SPLIT = re.compile(r"([()（）「」])")
@@ -126,9 +159,8 @@ def main():
     tok = dictionary.Dictionary().create()
     mode = tokenizer.Tokenizer.SplitMode.C
     out = {}
-    for m in re.finditer(r'\{n:"([^"]*)", c:"[^"]*", r:"[^"]*", art:"(\w+)", (?:k:"name", e:"[^"]*", )?(?:f:1, )?d:"([^"]*)"\}', page):
-        name, key, desc = m.groups()
-        parts, plain = [], []
+    def rubify(key, desc, plain):
+        parts = []
         prev = ""
         for w in (w for seg in SPLIT.split(desc) for w in (tok.tokenize(seg, mode) if not SPLIT.fullmatch(seg) else [seg])):
             if isinstance(w, str):
@@ -155,7 +187,16 @@ def main():
                 if KANJI.search(s):
                     plain.append(f"{s}({r})")
             prev = s
-        out[key] = "".join(parts)
+        return "".join(parts)
+
+    PAT = r'\{n:"([^"]*)", c:"[^"]*", r:"[^"]*", art:"(\w+)", (?:k:"name", e:"[^"]*", )?(?:k:"person", s:"([^"]*)", sd:"([^"]*)", b:"[^"]*", )?(?:f:1, )?d:"([^"]*)"\}'
+    for m in re.finditer(PAT, page):
+        name, key, quote, qdesc, desc = m.groups()
+        plain = []
+        out[key] = rubify(key, desc, plain)
+        if quote is not None:
+            out[key + "|s"] = rubify(key, quote, plain)
+            out[key + "|sd"] = rubify(key, qdesc, plain)
         if check:
             print(f"{name}: {' '.join(plain)}")
     if check:

@@ -234,6 +234,40 @@ for _tsv in sorted((ROOT / "tools").glob("spots-*.tsv")):
             _f = _line.split("\t")
             SEARCH.setdefault(_f[0], _f[4])
             CANDIDATES.setdefault(_f[0], [])
+# 偉人(tools/people-*.tsv)。5列目は Wikipedia(日本語版)の 題名。その記事の 代表画像(pageimages)を 肖像として使う。
+# ⚠️ 肖像は 白黒の古い写真・たて長・小さめ が ふつうなので、PEOPLE の キーだけ 明るさ・色・形・大きさの きまりを ゆるめる
+PEOPLE = {}
+for _tsv in sorted((ROOT / "tools").glob("people-*.tsv")):
+    for _line in _tsv.read_text(encoding="utf-8").splitlines():
+        if _line.strip() and not _line.startswith("#"):
+            _f = _line.split("\t")
+            PEOPLE[_f[0]] = _f[4]
+            SEARCH.setdefault(_f[0], _f[1])
+            CANDIDATES.setdefault(_f[0], [])
+PORTRAIT_CACHE = ROOT / "tools" / "people-portraits.json"  # 題名 → 代表画像の ファイル名(2回目から 速い)
+
+
+def lead_image(title):
+    """Wikipedia(日本語版)の 記事の 代表画像の ファイル名(File: なし)。無ければ 英語版も 見る"""
+    cache = json.loads(PORTRAIT_CACHE.read_text(encoding="utf-8")) if PORTRAIT_CACHE.exists() else {}
+    if title in cache:
+        return cache[title]
+    name = None
+    for host in ("ja.wikipedia.org", "en.wikipedia.org"):
+        url = f"https://{host}/w/api.php?" + urllib.parse.urlencode({"action": "query", "prop": "pageimages", "piprop": "name", "titles": title, "redirects": 1, "format": "json", "formatversion": 2})
+        try:
+            js = json.loads(fetch(url, 60))
+            pg = (js.get("query", {}).get("pages") or [{}])[0]
+            if pg.get("pageimage"):
+                name = pg["pageimage"]
+                break
+        except Exception as e:  # noqa
+            print(f"  ...Wikipedia に聞けなかった {title}: {e}", file=sys.stderr)
+    cache[title] = name
+    PORTRAIT_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+    return name
+
+
 # 検索だと まだ ちがう物が出た場所は、Commons を見て 決めた ファイル名(2026-09-24)
 CANDIDATES.update({
     "chusonji": ["Konjikido (Chusonji) 02.jpg", "Golden Hall, Chusonji temple, Hiraizumi - Nov 13, 2011.jpg", "Hondo Chusonji.jpg"],
@@ -432,7 +466,11 @@ def pick(key, skip=()):
     # ① 候補リスト → ② Commons の「品質の良い写真」から検索 → ③ ふつうの検索
     for kind in ("list", "cat", "quality", "search"):
         if kind == "list":
-            titles = CANDIDATES[key]
+            titles = list(CANDIDATES[key])
+            if key in PEOPLE and not titles:
+                li = lead_image(PEOPLE[key])
+                if li:
+                    titles = [li]
         elif kind == "cat":
             if key not in CATS:
                 continue
@@ -470,7 +508,12 @@ def pick(key, skip=()):
             if not lic:
                 tried.append((page["title"], "ライセンス " + short))
                 continue
-            if (kind != "list" and not (ii["height"] * 1.2 <= ii["width"] <= ii["height"] * 2.2)) or ii["width"] < ii["height"] * 0.6 or ii["width"] > ii["height"] * 2.4 or ii["width"] <= 960 or "/thumb/" not in (ii.get("thumburl") or ""):  # 960px の縮小版が作れるものだけ
+            if key in PEOPLE:
+                # 肖像: たて長でよい。400px 以上あればよい(縮小版が作れなければ もとの絵を使う)
+                if ii["width"] < ii["height"] * 0.45 or ii["width"] > ii["height"] * 2.4 or ii["width"] < 400:
+                    tried.append((page["title"], "形・大きさ"))
+                    continue
+            elif (kind != "list" and not (ii["height"] * 1.2 <= ii["width"] <= ii["height"] * 2.2)) or ii["width"] < ii["height"] * 0.6 or ii["width"] > ii["height"] * 2.4 or ii["width"] <= 960 or "/thumb/" not in (ii.get("thumburl") or ""):  # 960px の縮小版が作れるものだけ
                 tried.append((page["title"], "形・大きさ"))
                 continue
             lic_url = plain(meta.get("LicenseUrl", {}).get("value"))
@@ -485,7 +528,7 @@ def pick(key, skip=()):
                 author = author[:60] + "…"
             return {
                 "title": page["title"],
-                "thumb": ii.get("thumburl") or ii["url"],
+                "thumb": (ii.get("thumburl") if "/thumb/" in (ii.get("thumburl") or "") else None) or ii["url"],
                 "author": author,
                 "license": lic,
                 "licenseUrl": lic_url,
@@ -536,7 +579,7 @@ def main():
             bright = sum(ImageStat.Stat(img.convert("L")).mean)
             # 白黒・セピアの古い写真も とばす(色の こさの平均が 小さい)
             satur = ImageStat.Stat(img.convert("HSV").getchannel("S")).mean[0]
-            if bright >= 90 and satur >= 40:
+            if key in PEOPLE or (bright >= 90 and satur >= 40):  # 肖像は 白黒・セピアでも よい
                 break
             print(f"  ...暗い/白黒の写真なので とばす(明るさ{bright:.0f} 色{satur:.0f}) {p['title']}", file=sys.stderr)
             skip.add(p["title"][5:])

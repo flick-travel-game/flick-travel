@@ -4031,5 +4031,181 @@ const PHOTOS = {
   "licenseUrl": "",
   "page": "https://commons.wikimedia.org/wiki/File:Higashida_First_Blast_Furnace.JPG",
   "file": "File:Higashida First Blast Furnace.JPG"
+ },
+ "shotoku": {
+  "src": "photo-shotoku.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sh%C5%8Dtoku_Taishi_Sh%C5%8Dmanky%C5%8D_K%C5%8Dsan.jpg",
+  "file": "File:Shōtoku Taishi Shōmankyō Kōsan.jpg"
+ },
+ "murasaki": {
+  "src": "photo-murasaki.jpg",
+  "author": "Tosa Mitsuoki (1617-1691)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tosa_Mitsuoki_001.jpg",
+  "file": "File:Tosa Mitsuoki 001.jpg"
+ },
+ "seishonagon": {
+  "src": "photo-seishonagon.jpg",
+  "author": "Rijksmuseum",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Sei_Sh%C3%B4nagon_(titel_op_object)_Vergelijkingen_met_de_honderd_Ogura_gedichten_(serietitel)_Ogura_nazorae_hyakunin_isshu_(serietitel_op_object),_RP-P-2016-3-6.jpg",
+  "file": "File:Sei Shônagon (titel op object) Vergelijkingen met de honderd Ogura gedichten (serietitel) Ogura nazorae hyakunin isshu (serietitel op object), RP-P-2016-3-6.jpg"
+ },
+ "masako": {
+  "src": "photo-masako.jpg",
+  "author": "Indiana jo",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E6%9D%A1%E6%94%BF%E5%AD%90%E7%94%A3%E6%B9%AF%E3%81%AE%E4%BA%95%E6%88%B8.jpg",
+  "file": "File:北条政子産湯の井戸.jpg"
+ },
+ "kukai": {
+  "src": "photo-kukai.jpg",
+  "author": "Daderot",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Lan_Su_Chinese_Garden_-_Portland,_Oregon_-_DSC01296.jpg",
+  "file": "File:Lan Su Chinese Garden - Portland, Oregon - DSC01296.jpg"
+ },
+ "saicho": {
+  "src": "photo-saicho.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%80%E6%BE%84%E5%83%8F_%E4%B8%80%E4%B9%97%E5%AF%BA%E8%94%B5_%E5%B9%B3%E5%AE%89%E6%99%82%E4%BB%A3.jpg",
+  "file": "File:最澄像 一乗寺蔵 平安時代.jpg"
+ },
+ "honen": {
+  "src": "photo-honen.jpg",
+  "author": "Fujiwara, Takanobu (1142-1205)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Takanobu-no-miei.jpg",
+  "file": "File:Takanobu-no-miei.jpg"
+ },
+ "shinran": {
+  "src": "photo-shinran.jpg",
+  "author": "Hyppolyte de Saint-Rambert",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Takada_Honzan_Senjuji_(Tsu,_Mie)_VLux5_hdsr_18.jpg",
+  "file": "File:Takada Honzan Senjuji (Tsu, Mie) VLux5 hdsr 18.jpg"
+ },
+ "nichiren": {
+  "src": "photo-nichiren.jpg",
+  "author": "Fujiwara-no Chikayasu",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nichiren_Daishonin_Hakii_Portrait.jpg",
+  "file": "File:Nichiren Daishonin Hakii Portrait.jpg"
+ },
+ "shingen": {
+  "src": "photo-shingen.jpg",
+  "author": "Unknown",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Takeda_Harunobu.jpg",
+  "file": "File:Takeda Harunobu.jpg"
+ },
+ "basho": {
+  "src": "photo-basho.jpg",
+  "author": "Morikawa Kyoriku (1656-1715)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Basho_by_Morikawa_Kyoriku_(1656-1715).jpg",
+  "file": "File:Basho by Morikawa Kyoriku (1656-1715).jpg"
+ },
+ "musashi": {
+  "src": "photo-musashi.jpg",
+  "author": "Miyamoto Musashi",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Miyamoto_Musashi_Self-Portrait.jpg",
+  "file": "File:Miyamoto Musashi Self-Portrait.jpg"
+ },
+ "kaishu": {
+  "src": "photo-kaishu.jpg",
+  "author": "published by 東洋文化協會 (The Eastern Culture Association)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kaishu_Katsu_2.jpg",
+  "file": "File:Kaishu Katsu 2.jpg"
+ },
+ "hokusai": {
+  "src": "photo-hokusai.jpg",
+  "author": "Katsushika Hokusai",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hokusai_portrait.jpg",
+  "file": "File:Hokusai portrait.jpg"
+ },
+ "ryoma": {
+  "src": "photo-ryoma.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sakamoto_Ryoma.jpg",
+  "file": "File:Sakamoto Ryoma.jpg"
+ },
+ "okubo": {
+  "src": "photo-okubo.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Toshimichi_Okubo_4.jpg",
+  "file": "File:Toshimichi Okubo 4.jpg"
+ },
+ "shoin": {
+  "src": "photo-shoin.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yoshida_Shoin2.jpg",
+  "file": "File:Yoshida Shoin2.jpg"
+ },
+ "rikyu": {
+  "src": "photo-rikyu.jpg",
+  "author": "painted by 長谷川等伯, calligraphy by 春屋宗園",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sen_no_Rikyu_JPN.jpg",
+  "file": "File:Sen no Rikyu JPN.jpg"
+ },
+ "soseki": {
+  "src": "photo-soseki.jpg",
+  "author": "Ogawa Kazumasa",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Natsume_Soseki_photo.jpg",
+  "file": "File:Natsume Soseki photo.jpg"
+ },
+ "ikkyu": {
+  "src": "photo-ikkyu.jpg",
+  "author": "Bokusai",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Ikky%C5%AB_by_Bokusai.jpg",
+  "file": "File:Portrait of Ikkyū by Bokusai.jpg"
+ },
+ "shibusawa": {
+  "src": "photo-shibusawa.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Eiichi_Shibusawa.jpg",
+  "file": "File:Eiichi Shibusawa.jpg"
+ },
+ "noguchi": {
+  "src": "photo-noguchi.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Noguchi_Hideyo.jpg",
+  "file": "File:Noguchi Hideyo.jpg"
  }
 };

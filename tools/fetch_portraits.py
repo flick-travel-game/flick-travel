@@ -143,15 +143,22 @@ def main():
         #    かならず もとの幅より 小さい幅を頼む → 縮小版は thumb.wikimedia.org から来る(こちらは 止められない)
         ow = ii["width"]
         want_w = F.MAX_W if ow > 900 else next((b for b in (640, 500, 400, 320, 250, 200, 150) if b < ow * 0.9), 120)
-        thumb = "https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(page["title"][5:].replace(" ", "_")) + "?width=" + str(want_w)
+        # ⚠️ 新しい大きさの縮小版を作らせると 絵によっては「600秒待て」になる。そのときは もうある大きさ(330 / 250)で がまんする
         img = None
-        try:
-            img = Image.open(io.BytesIO(get(thumb))).convert("RGB")
-        except TooBusy as e:
-            print(f"✗ {k}: あとで {e}", flush=True)
+        for w in (want_w, 330, 250):
+            if w > want_w:
+                continue
+            thumb = "https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(page["title"][5:].replace(" ", "_")) + "?width=" + str(w)
+            try:
+                img = Image.open(io.BytesIO(get(thumb))).convert("RGB")
+                break
+            except TooBusy as e:
+                print(f"  ...{w}px は {e}", flush=True)
+            except Exception as e:  # noqa
+                print(f"  ...落とせない {thumb[:80]} {e}", flush=True)
+        if img is None:
+            print(f"✗ {k}: あとで(どの大きさも だめ)", flush=True)
             continue
-        except Exception as e:  # noqa
-            print(f"  ...落とせない {thumb[:80]} {e}", flush=True)
         if img is None:
             print(f"✗ {k}: 落とせない", flush=True)
             continue

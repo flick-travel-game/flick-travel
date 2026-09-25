@@ -5519,5 +5519,69 @@ const PHOTOS = {
   "licenseUrl": "",
   "page": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_photo.jpeg",
   "file": "File:Frederic Chopin photo.jpeg"
+ },
+ "toyoda": {
+  "src": "photo-toyoda.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sakichi_Toyoda.jpg",
+  "file": "File:Sakichi Toyoda.jpg"
+ },
+ "makino": {
+  "src": "photo-makino.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Makino_Tomitaro.jpg",
+  "file": "File:Makino Tomitaro.jpg"
+ },
+ "exupery": {
+  "src": "photo-exupery.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Antoine_de_Saint-Exup%C3%A9ry.jpg",
+  "file": "File:Antoine de Saint-Exupéry.jpg"
+ },
+ "dogen": {
+  "src": "photo-dogen.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Soto-Zen-Master-Dogen-Zenji-Portrait.png",
+  "file": "File:Soto-Zen-Master-Dogen-Zenji-Portrait.png"
+ },
+ "ichiyo": {
+  "src": "photo-ichiyo.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Higuchi_Ichiyou.png",
+  "file": "File:Higuchi Ichiyou.png"
+ },
+ "tanaka": {
+  "src": "photo-tanaka.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tanaka_Shozo.jpg",
+  "file": "File:Tanaka Shozo.jpg"
+ },
+ "misuzu": {
+  "src": "photo-misuzu.jpg",
+  "author": "Unknown photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kaneko_Misuzu.jpg",
+  "file": "File:Kaneko Misuzu.jpg"
+ },
+ "issai": {
+  "src": "photo-issai.jpg",
+  "author": "Watanabe Kazan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:A_portrait_of_Satoh_Issai_by_Watanabe_Kazan.jpg",
+  "file": "File:A portrait of Satoh Issai by Watanabe Kazan.jpg"
  }
 };

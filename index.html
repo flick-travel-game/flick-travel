@@ -289,7 +289,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     </div>
     <h1 class="sr-only">世界フリック旅行</h1>
     <img class="hero" src="hero.webp" alt="世界フリック旅行。世界の名所と ひらがなが 空にうかぶ 絵" width="1536" height="1024">
-    <p class="lead">世界と日本の名所を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
+    <p class="lead">世界と日本の名所・地名・偉人を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div class="map-card">
       <div class="map-head"><b id="map-title">世界一周マップ</b><span id="map-count">0 / 100か所</span></div>
@@ -3664,7 +3664,7 @@ function drawModes(){
   $("#modes").innerHTML = MODES.map((m, i) => {
     const M = MAPS[m], done = clearedSpots(m).size;
     return '<button class="mode sk-card sk-card-'+(i+1)+(m === mode ? ' cur' : '')+'" data-mode="'+m+'" style="'+toneStyle(COLORS.mode[m])+'">'+
-      '<span class="ic">'+M.icon+'</span><span class="tx"><b>'+M.name+'</b><small>'+POOLS[m].length+'か所・'+LEVELS[m].length+'レベル</small><small>行った所 '+done+'</small></span></button>';
+      '<span class="ic">'+M.icon+'</span><span class="tx"><b>'+M.name+'</b><small>'+POOLS[m].length+(M.thing ? '人' : 'か所')+'・'+LEVELS[m].length+'レベル</small><small>'+(M.thing ? '知った人 ' : '行った所 ')+done+'</small></span></button>';
   }).join("");
   document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => setMode(b.dataset.mode)));
 }

@@ -1695,7 +1695,13 @@ const RUBY = {
 };
 /* RUBY-END */
 /* Googleマップで ひらく(登録も お金も いらない ふつうのリンク) */
-function gmapUrl(q){ return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q.n + " " + q.c.replace(/・/g, " ")); }
+/* Googleマップは 緯度・経度で ひらく(けいくん 2026-09-25「Googleマップ開いたら 現在地に飛んだよ」。
+   名前の文字で渡すと iPhone のアプリが 検索語を落として 現在地で ひらくことがある)。数字が無い所だけ 名前で */
+function gmapUrl(q){
+  const ll = LATLON[q.art];
+  const query = ll ? ll[0] + "," + ll[1] : q.n + " " + q.c.replace(/・/g, " ");
+  return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query);
+}
 function gmapLink(q){ return '<a class="gmap" href="' + gmapUrl(q) + '" target="_blank" rel="noopener">🗺 Googleマップで見る</a>'; }
 /* 名所の 緯度・経度(世界一周マップの ピンの位置)。地図は 北緯84度〜南緯60度 を 横長に切ったもの */
 const LATLON = {};

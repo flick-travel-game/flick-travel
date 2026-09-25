@@ -5583,5 +5583,37 @@ const PHOTOS = {
   "licenseUrl": "",
   "page": "https://commons.wikimedia.org/wiki/File:A_portrait_of_Satoh_Issai_by_Watanabe_Kazan.jpg",
   "file": "File:A portrait of Satoh Issai by Watanabe Kazan.jpg"
+ },
+ "shirahige": {
+  "src": "photo-shirahige.jpg",
+  "author": "Hyppolyte de Saint-Rambert",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shirahige_jinja_(Takashima,_Shiga)_hdsr_Shrine_S5_39.jpg",
+  "file": "File:Shirahige jinja (Takashima, Shiga) hdsr Shrine S5 39.jpg"
+ },
+ "kujukushima": {
+  "src": "photo-kujukushima.jpg",
+  "author": "663highland",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:200320_Kujukushima_Islands_Sasebo_Nagasaki_pref_Japan01s3.jpg",
+  "file": "File:200320 Kujukushima Islands Sasebo Nagasaki pref Japan01s3.jpg"
+ },
+ "narapark": {
+  "src": "photo-narapark.jpg",
+  "author": "Daniel Lu (User:dllu)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sika_deer_doe_and_fawn_Nara_2026_dllu.jpg",
+  "file": "File:Sika deer doe and fawn Nara 2026 dllu.jpg"
+ },
+ "kobeport": {
+  "src": "photo-kobeport.jpg",
+  "author": "KishujiRapid",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kobe_Port_Tower_and_Hotel_Okura_Kobe.jpg",
+  "file": "File:Kobe Port Tower and Hotel Okura Kobe.jpg"
  }
 };

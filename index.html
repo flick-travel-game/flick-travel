@@ -166,10 +166,9 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .map[data-map="world"] .j,.map[data-map="japan"] .w{display:none}
 .map img{display:block;width:100%;height:auto}
 .pin{position:absolute;width:18px;height:18px;margin:-9px 0 0 -9px;padding:0;border:none;background:none;display:grid;place-items:center}
-/* まだの所 = うすい小さな点 / やった所 = 白い大きなピン(けいくん 2026-09-26「赤ピンだと地図が赤くなって 見えなくなってくる」)。
-   レベルの色(--c)は ふちに 細く 出すだけ */
-.pin i{display:block;width:4px;height:4px;border-radius:50%;background:#fff;opacity:.45;box-shadow:0 1px 2px rgba(0,60,120,.4)}
-.pin.on i{width:10px;height:10px;opacity:1;background:#fff;box-shadow:0 0 0 1.5px var(--c),0 1px 3px rgba(0,0,0,.55)}
+/* やった所だけ 白いピン(ふちは レベルの色)。まだの所は 出さない
+   (けいくん 2026-09-26「赤ピンだと地図が赤くなって」→「やってない問題の白ピンはすべて削除して」) */
+.pin i{display:block;border-radius:50%;width:10px;height:10px;opacity:1;background:#fff;box-shadow:0 0 0 1.5px var(--c),0 1px 3px rgba(0,0,0,.55)}
 .pin.sel i{transform:scale(1.5)}
 .map-cap{font-size:13px;color:var(--muted);margin:8px 2px 0;min-height:1.6em}
 .map-cap b{color:var(--ink)}
@@ -3763,8 +3762,9 @@ function drawMap(){
   map.querySelectorAll(".pin").forEach(p => p.remove());
   LEVELS[mode].forEach((lv, i) => lv.forEach(q => {
     const ll = LATLON[q.art]; if(!ll) return;
+    if(!done.has(q.art)) return;  // やった所だけ(けいくん 2026-09-26「やってない問題の白ピンはすべて削除して」)
     const b = document.createElement("button");
-    b.className = "pin" + (done.has(q.art) ? " on" : "");
+    b.className = "pin on";
     const xy = M.pos(ll[0], ll[1]);
     b.style.left = (xy[0] * 100) + "%";
     b.style.top = (xy[1] * 100) + "%";

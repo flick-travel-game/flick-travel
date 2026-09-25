@@ -3666,9 +3666,9 @@ function japanPos(la, lo){
   return [x / J.w, y / J.h];
 }
 const MAPS = {
-  world: { src:"world-map-color.jpg", w:1080, h:432, title:"世界一周マップ", word:"世界地図", icon:"🌍", name:"世界の旅",
+  world: { src:"world-map-color.jpg", hi:"world-map-color-4k.jpg", w:1080, h:432, title:"世界一周マップ", word:"世界地図", icon:"🌍", name:"世界の旅",
            pos:(la, lo) => [(lo + 180) / 360, (84 - la) / 144] },
-  japan: { src:"japan-map-color.jpg", w:1080, h:1215, title:"日本一周マップ", word:"日本地図", icon:"🗾", name:"日本の旅", pos:japanPos },
+  japan: { src:"japan-map-color.jpg", hi:"japan-map-color-4k.jpg", w:1080, h:1215, title:"日本一周マップ", word:"日本地図", icon:"🗾", name:"日本の旅", pos:japanPos },
 };
 MAPS.wnames = Object.assign({}, MAPS.world, { icon:"🗺", name:"世界の地名", sub:"まず国、つぎに町・山脈・川・海" });
 MAPS.jnames = Object.assign({}, MAPS.japan, { icon:"📍", name:"日本の地名", sub:"まず都道府県、つぎに町・平野・川・海" });
@@ -3759,7 +3759,7 @@ function drawModes(){
 function setMode(m){
   mode = m; store("flick-mode", m);
   const M = MAPS[m], img = $("#map-img");
-  if(!img.src.endsWith(M.src)){ img.src = M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
+  if(!img.src.endsWith(M.src) && !(img.src.endsWith(M.hi || "@") && MZ.s > 1.2)){ img.src = M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
   if($("#map").dataset.map !== m) mapReset();  // 地図を切りかえたら 拡大を もどす
   $("#map").dataset.map = m;
   $("#map-title").textContent = M.title;
@@ -3802,6 +3802,10 @@ function mapApply(){
   inn.style.transform = "translate(" + MZ.tx + "px," + MZ.ty + "px) scale(" + MZ.s + ")";
   inn.style.setProperty("--k", String(1 / MZ.s));
   map.style.touchAction = MZ.s > 1 ? "none" : "pan-y";   // 大きくしているあいだは 1本の指で 地図を動かす(ページは 動かさない)
+  /* 大きくしたら 4320px の地図に 差しかえる(けいくん 2026-09-26「拡大すると地図がボヤけて見えない」)。
+     はじめは 1080px(90KB)で 速く出し、4k(500〜600KB)は 大きくした人にだけ */
+  const M = MAPS[mode], img = $("#map-img");
+  if(MZ.s > 1.2 && M.hi && !img.src.endsWith(M.hi)) img.src = M.hi;
   $("#zoom-reset").hidden = MZ.s === 1;
 }
 /* 画面の点(px,py。地図の左上から)を 動かさずに 倍率を s2 に */

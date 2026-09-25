@@ -49,7 +49,7 @@
 |---|---|
 | `index.html` | ゲーム本体(遊びかた・デザイン) |
 | `hero.webp` / `logo-word.webp` / `logo-mark.webp` | トップの絵と そこから切った ロゴ(`tools/logo-word-cut.py`) |
-| `apple-touch-icon.png` / `icon-512.png` / `favicon.png` / `manifest.webmanifest` | ホーム画面に追加したときのアイコン(2026-09-25 けいくん「左上の画像に」。`hero.webp` のまん中を 正方形に切ったもの)と アプリのように開く設定。絵を差しかえたら `?v=` を上げる |
+| `apple-touch-icon.png` / `icon-512.png` / `favicon.png` / `manifest.webmanifest` | ホーム画面に追加したときのアイコン(2026-09-25 けいくん「左上の画像に」。同日 けいくんの正方形の絵(1254px)に差しかえ。いま `?v=2`)と アプリのように開く設定。絵を差しかえたら `?v=` を上げる |
 | `world-map-color.jpg` / `japan-map-color.jpg` | いま使っている カラフルな地図(`tools/make_color_map.py`) |
 | `world-map-mono.jpg` | まえの モノクロのペン画風の地図(もとは CC0)。いまは使っていない |
 | `japan-map-mono.jpg` | 日本一周マップ(もとは Natural Earth。パブリックドメイン) |

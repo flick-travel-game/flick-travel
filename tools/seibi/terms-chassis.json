@@ -971,5 +971,969 @@
    "ch-tire"
   ],
   "description": "空気圧が 低い まま 速く 走ると、タイヤが 波の ように ゆがむ 現象です。熱を もって、タイヤが こわれる ことが あります。"
+ },
+ {
+  "id": "ch-radial",
+  "name": "ラジアルタイヤ",
+  "reading": "らじあるたいや",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-tire",
+   "ch-tread"
+  ],
+  "description": "タイヤの 骨組みに なる コードが、中心から 放射状に ならんだ タイヤです。いまの 乗用車の ほとんどが この 形で、曲がるときの しっかり感と 燃費に すぐれます。"
+ },
+ {
+  "id": "ch-tubeless",
+  "name": "チューブレスタイヤ",
+  "reading": "ちゅーぶれすたいや",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-tire",
+   "ch-wheel"
+  ],
+  "description": "中に チューブを 入れず、タイヤと ホイールの あいだで 空気を 閉じこめる タイヤです。くぎなどが ささっても、空気が 急には ぬけにくいのが 特長です。"
+ },
+ {
+  "id": "ch-tread",
+  "name": "トレッド",
+  "reading": "とれっど",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔲",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-tiregroove",
+   "ch-sidewall"
+  ],
+  "description": "タイヤが 地面に ふれる 部分の 厚い ゴムです。溝の 模様が きざまれていて、水を はいたり 地面を つかんだり します。"
+ },
+ {
+  "id": "ch-sidewall",
+  "name": "サイドウォール",
+  "reading": "さいどうぉーる",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-tread",
+   "ch-aspect"
+  ],
+  "description": "タイヤの 横の 部分です。大きさなどの 表示が 書かれています。曲げられながら 走るので、ここの きずや ひびわれは とても 危険です。"
+ },
+ {
+  "id": "ch-slipsign",
+  "name": "スリップサイン",
+  "reading": "すりっぷさいん",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-tiregroove",
+   "ch-tread"
+  ],
+  "description": "タイヤの 溝の 底に ある、少し 高く なった 部分です。すりへって この 部分が 表に 出たら、溝が 足りない しるしで、そのままでは 使えません。"
+ },
+ {
+  "id": "ch-clutchdisc",
+  "name": "クラッチディスク",
+  "reading": "くらっちでぃすく",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💿",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-clutch",
+   "ch-clutchcover"
+  ],
+  "description": "フライホイールと クラッチカバーの あいだに はさまる 円い 板です。摩擦で エンジンの 回転を 変速機へ 伝え、すりへると すべりの 原因に なります。"
+ },
+ {
+  "id": "ch-clutchcover",
+  "name": "クラッチカバー",
+  "reading": "くらっちかばー",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥏",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-clutchdisc",
+   "ch-diaphragm"
+  ],
+  "description": "クラッチディスクを フライホイールに 押しつける 部品です。中の ばねの ちからで 押しつけ、ペダルを 踏むと その ちからが ぬけて 切れます。"
+ },
+ {
+  "id": "ch-releasebearing",
+  "name": "レリーズベアリング",
+  "reading": "れりーずべありんぐ",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔘",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-clutchcover",
+   "ch-diaphragm"
+  ],
+  "description": "クラッチペダルを 踏んだ とき、回っている クラッチカバーの ばねを 押す ための ベアリングです。回るものと 回らないものの あいだで 押す ちからを 伝えます。"
+ },
+ {
+  "id": "ch-atf",
+  "name": "ATF",
+  "reading": "えーてぃーえふ",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫗",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-at",
+   "ch-torqueconverter"
+  ],
+  "description": "オートマチック車の 変速機に 入れる 専用の オイルです。ちからを 伝える、油圧で 変速を 動かす、潤滑と 冷却、と 多くの 役目を もちます。"
+ },
+ {
+  "id": "ch-gearoil",
+  "name": "ギヤオイル",
+  "reading": "ぎやおいる",
+  "journey": "chassis",
+  "category": "駆動",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛢️",
+  "mapNode": "car:drive",
+  "relatedTerms": [
+   "ch-differential",
+   "ch-mt"
+  ],
+  "description": "手動の 変速機や デフの 歯車を 守る、ねばりの 強い オイルです。歯車どうしが 強く 押しあう 部分で、金属が じかに こすれないように します。"
+ },
+ {
+  "id": "ch-knuckle",
+  "name": "ナックル",
+  "reading": "なっくる",
+  "journey": "chassis",
+  "category": "ステアリング",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦴",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-tierod",
+   "ch-balljoint"
+  ],
+  "description": "タイヤを 回す ハブを ささえ、サスペンションや タイロッドと つながる 部品です。ハンドルを きると ナックルごと 向きが 変わり、タイヤが 曲がります。"
+ },
+ {
+  "id": "ch-lowerarm",
+  "name": "ロアアーム",
+  "reading": "ろああーむ",
+  "journey": "chassis",
+  "category": "サスペンション",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦿",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-balljoint",
+   "ch-bushing"
+  ],
+  "description": "タイヤの 下の ほうと 車体を つなぐ うでです。タイヤが 上下に 動くのを ゆるし、前後や 左右には ずれないように ささえます。"
+ },
+ {
+  "id": "ch-bushing",
+  "name": "ブッシュ",
+  "reading": "ぶっしゅ",
+  "journey": "chassis",
+  "category": "サスペンション",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍩",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-lowerarm",
+   "ch-stabilizer"
+  ],
+  "description": "サスペンションの うでなどの つけねに 入れる ゴムの 部品です。動きを ゆるしながら、細かい ゆれや 音を 吸いとります。"
+ },
+ {
+  "id": "ch-column",
+  "name": "ステアリングコラム",
+  "reading": "すてありんぐこらむ",
+  "journey": "chassis",
+  "category": "ステアリング",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-steeringwheel",
+   "ch-rackpinion"
+  ],
+  "description": "ハンドルの 回転を 下の ギヤへ 伝える 軸と、それを 包む 筒です。ぶつかった ときに ちぢんで、運転する 人を 守る つくりの ものが 多いです。"
+ },
+ {
+  "id": "ch-toeout",
+  "name": "トーアウト",
+  "reading": "とーあうと",
+  "journey": "chassis",
+  "category": "アライメント",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↖️",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-toein",
+   "ch-alignment"
+  ],
+  "description": "上から 見て、左右の タイヤの 前側が 後ろ側より 外へ ひらいている 状態です。トーインの 反対で、タイヤの すりへりかたや まっすぐ 走る 力に えいきょうします。"
+ },
+ {
+  "id": "ch-diaphragm",
+  "name": "ダイヤフラムスプリング",
+  "reading": "だいやふらむすぷりんぐ",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-clutchcover",
+   "ch-releasebearing"
+  ],
+  "description": "クラッチカバーの 中に ある、皿の 形を した 板ばねです。ふちで ディスクを 押しつけ、中心を 押されると てこの ように 反って 押す ちからを ぬきます。"
+ },
+ {
+  "id": "ch-overdrive",
+  "name": "オーバードライブ",
+  "reading": "おーばーどらいぶ",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-gearratio",
+   "ch-transmission"
+  ],
+  "description": "変速比が 1より 小さい ギヤの ことです。出る 側の 回転が エンジンより 速く なり、高速で 走る ときに エンジンの 回転を 下げて 燃費を よく します。"
+ },
+ {
+  "id": "ch-subframe",
+  "name": "サブフレーム",
+  "reading": "さぶふれーむ",
+  "journey": "chassis",
+  "category": "車体",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "ch-monocoque",
+   "ch-lowerarm"
+  ],
+  "description": "サスペンションや エンジンなどを とりつけて、ボディに つなぐ 小さな 骨組みです。ゆれや 音が 車内に 伝わりにくく なります。"
+ },
+ {
+  "id": "ch-bumpstop",
+  "name": "バンプストッパー",
+  "reading": "ばんぷすとっぱー",
+  "journey": "chassis",
+  "category": "サスペンション",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-shockabsorber",
+   "ch-coilspring"
+  ],
+  "description": "サスペンションが 大きく ちぢんだ ときに 当たる ゴムなどの 部品です。金属どうしが ぶつかるのを ふせぎ、ショックを やわらげます。"
+ },
+ {
+  "id": "ch-damping",
+  "name": "減衰力",
+  "reading": "げんすいりょく",
+  "journey": "chassis",
+  "category": "サスペンション",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-shockabsorber",
+   "ch-vardamper"
+  ],
+  "description": "ショックアブソーバーが ばねの 動きを おさえる ちからです。油が 小さな 穴を 通る ときの ていこうで 生まれ、強いほど ゆれが 早く おさまります。"
+ },
+ {
+  "id": "ch-understeer",
+  "name": "アンダーステア",
+  "reading": "あんだーすてあ",
+  "journey": "chassis",
+  "category": "ステアリング",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-oversteer",
+   "ch-slipangle"
+  ],
+  "description": "曲がるときに、ハンドルを きった ぶんより 車が 外へ ふくらむ 性質です。前の タイヤの グリップが 先に 足りなく なると 起きやすく なります。"
+ },
+ {
+  "id": "ch-oversteer",
+  "name": "オーバーステア",
+  "reading": "おーばーすてあ",
+  "journey": "chassis",
+  "category": "ステアリング",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-understeer",
+   "ch-slipangle"
+  ],
+  "description": "曲がるときに、ハンドルを きった ぶんより 車が 内側へ 回りこむ 性質です。後ろの タイヤの グリップが 先に 足りなく なると 起きやすく、スピンに つながります。"
+ },
+ {
+  "id": "ch-aspect",
+  "name": "偏平率",
+  "reading": "へんぺいりつ",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-sidewall",
+   "ch-loadindex"
+  ],
+  "description": "タイヤの 幅に くらべた 高さの 割合です。数字が 小さいほど うすい タイヤで、曲がるときの しっかり感は 増しますが、乗りごこちは かたく なりがちです。"
+ },
+ {
+  "id": "ch-loadindex",
+  "name": "ロードインデックス",
+  "reading": "ろーどいんでっくす",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏋️",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-aspect",
+   "ch-airpressure"
+  ],
+  "description": "タイヤ 1本が ささえられる 重さの 大きさを あらわす 数字です。タイヤの 横に 書かれていて、車に あった 数字の タイヤを 使う ことが 大事です。"
+ },
+ {
+  "id": "ch-inset",
+  "name": "インセット",
+  "reading": "いんせっと",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-wheel",
+   "ch-scrub"
+  ],
+  "description": "ホイールの 幅の まん中から、ハブに とりつける 面までの きょりです。この 値が 変わると、タイヤの 出っぱりかたや ハンドルの 手ごたえが 変わります。"
+ },
+ {
+  "id": "ch-runflat",
+  "name": "ランフラットタイヤ",
+  "reading": "らんふらっとたいや",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-sidewall",
+   "ch-sparetire"
+  ],
+  "description": "パンクして 空気が ぬけても、決められた 速さと きょりなら 走りつづけられる タイヤです。横の 部分を 強く つくり、重さを ささえます。"
+ },
+ {
+  "id": "ch-wheelbalance",
+  "name": "ホイールバランス",
+  "reading": "ほいーるばらんす",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-wheel",
+   "ch-tire"
+  ],
+  "description": "タイヤと ホイールを 組んだ ときの 重さの かたよりの ことです。かたよりが あると 回るときに ゆれが 出て、ハンドルや 車体が ふるえる 原因に なります。"
+ },
+ {
+  "id": "ch-ujoint",
+  "name": "ユニバーサルジョイント",
+  "reading": "ゆにばーさるじょいんと",
+  "journey": "chassis",
+  "category": "駆動",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "car:drive",
+  "relatedTerms": [
+   "ch-propshaft",
+   "ch-cvjoint"
+  ],
+  "description": "角度の ついた 2本の 軸を つなぎ、回転を 伝える 十字の 形の 継ぎ手です。プロペラシャフトに 使われます。角度が つくと 回る 速さに むらが 出ます。"
+ },
+ {
+  "id": "ch-transfer",
+  "name": "トランスファー",
+  "reading": "とらんすふぁー",
+  "journey": "chassis",
+  "category": "駆動",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "car:drive",
+  "relatedTerms": [
+   "ch-fourwd",
+   "ch-centerdiff"
+  ],
+  "description": "4WD車で、変速機から 来た ちからを 前輪と 後輪に 分ける 装置です。2WDと 4WDを 切りかえる 役目を もつ ものも あります。"
+ },
+ {
+  "id": "ch-sidegear",
+  "name": "サイドギヤ",
+  "reading": "さいどぎや",
+  "journey": "chassis",
+  "category": "駆動",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "car:drive",
+  "relatedTerms": [
+   "ch-differential",
+   "ch-driveshaft"
+  ],
+  "description": "デフの 中で、左右の ドライブシャフトに つながる 歯車です。あいだの ピニオンギヤが 回ることで、左右の タイヤが ちがう 速さで 回れます。"
+ },
+ {
+  "id": "ch-ecat",
+  "name": "電子制御式AT",
+  "reading": "でんしせいぎょしきえーてぃー",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-at",
+   "ch-shiftsol"
+  ],
+  "description": "車の 速さや アクセルの 踏みかたを センサーで 見て、ECUが 変速の 時と 油圧を 決める ATです。変速ショックを へらし、燃費の よい ギヤを えらびます。"
+ },
+ {
+  "id": "ch-shiftsol",
+  "name": "シフトソレノイドバルブ",
+  "reading": "しふとそれのいどばるぶ",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-ecat",
+   "ch-valvebody"
+  ],
+  "description": "ECUの 信号で 開け閉め し、ATの 中の 油の 通り道を 切りかえる 電磁弁です。これで どの クラッチを 動かすかが 決まり、ギヤが 変わります。"
+ },
+ {
+  "id": "ch-linearsol",
+  "name": "リニアソレノイド",
+  "reading": "りにあそれのいど",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-shiftsol",
+   "ch-linepressure"
+  ],
+  "description": "流す 電流の 大きさに あわせて、油圧を なめらかに 変えられる 電磁弁です。クラッチを つなぐ 強さを 細かく 調整し、変速を なめらかに します。"
+ },
+ {
+  "id": "ch-valvebody",
+  "name": "バルブボディ",
+  "reading": "ばるぶぼでぃ",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-shiftsol",
+   "ch-linepressure"
+  ],
+  "description": "ATの 下の ほうに ある、油の 通り道と 弁が 集まった かたまりです。油圧を 調整し、中の それぞれの クラッチなどへ 配ります。"
+ },
+ {
+  "id": "ch-linepressure",
+  "name": "ライン圧",
+  "reading": "らいんあつ",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-valvebody",
+   "ch-atf"
+  ],
+  "description": "ATの 油圧の もとに なる 圧力です。オイルポンプの 圧を 調整して つくり、エンジンの ちからが 大きい ときほど 高く して、クラッチが すべらないように します。"
+ },
+ {
+  "id": "ch-owc",
+  "name": "ワンウェイクラッチ",
+  "reading": "わんうぇいくらっち",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-torqueconverter",
+   "ch-planetary"
+  ],
+  "description": "一方向には 回転を 止め、反対の 方向には 自由に 回る クラッチです。ATの 変速を なめらかに したり、トルクコンバーターの ステーターを ささえたり します。"
+ },
+ {
+  "id": "ch-steelbelt",
+  "name": "スチールベルト",
+  "reading": "すちーるべると",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-cvt",
+   "ch-primarypulley"
+  ],
+  "description": "CVTで 2つの プーリーの あいだに かける 金属の ベルトです。たくさんの 小さな こまを 帯で たばねた つくりで、押す ちからで 回転を 伝えます。"
+ },
+ {
+  "id": "ch-primarypulley",
+  "name": "プライマリプーリー",
+  "reading": "ぷらいまりぷーりー",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🥁",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-secondarypulley",
+   "ch-steelbelt"
+  ],
+  "description": "CVTの エンジン側に ある プーリーです。みぞの 幅を 油圧で 変えて ベルトが かかる 大きさを 変え、変速比を 切れめなく 変えます。"
+ },
+ {
+  "id": "ch-secondarypulley",
+  "name": "セカンダリプーリー",
+  "reading": "せかんだりぷーりー",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🪘",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-primarypulley",
+   "ch-steelbelt"
+  ],
+  "description": "CVTの タイヤ側に ある プーリーです。プライマリプーリーと 反対に みぞの 幅が 変わり、ベルトを はさむ ちからで すべりを ふせぎます。"
+ },
+ {
+  "id": "ch-stallrpm",
+  "name": "ストール回転数",
+  "reading": "すとーるかいてんすう",
+  "journey": "chassis",
+  "category": "変速・クラッチ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "car:trans",
+  "relatedTerms": [
+   "ch-torqueconverter",
+   "ch-at"
+  ],
+  "description": "トルクコンバーターの 出る 側を 止めた まま、アクセルを いっぱいに 踏んだ ときの エンジン回転数です。高すぎれば ATの すべり、低すぎれば エンジンの ちから不足などを うたがいます。"
+ },
+ {
+  "id": "ch-eccoupling",
+  "name": "電子制御カップリング",
+  "reading": "でんしせいぎょかっぷりんぐ",
+  "journey": "chassis",
+  "category": "駆動",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "car:drive",
+  "relatedTerms": [
+   "ch-fourwd",
+   "ch-viscous"
+  ],
+  "description": "4WD車で、前後の タイヤへ 送る ちからの 割合を、電子制御の クラッチで 変える 装置です。すべりやすい 道では 後ろにも 多く 送り、ふだんは 2WDに 近く 走ります。"
+ },
+ {
+  "id": "ch-torquevector",
+  "name": "トルクベクタリング",
+  "reading": "とるくべくたりんぐ",
+  "journey": "chassis",
+  "category": "駆動",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "car:drive",
+  "relatedTerms": [
+   "ch-differential",
+   "ch-understeer"
+  ],
+  "description": "左右の タイヤへ 送る ちからを 変えて、車の 向きを 変える 手助けを する しくみです。外側の タイヤに 多く 送ると、曲がりやすく なります。"
+ },
+ {
+  "id": "ch-tightcorner",
+  "name": "タイトコーナーブレーキング現象",
+  "reading": "たいとこーなーぶれーきんぐげんしょう",
+  "journey": "chassis",
+  "category": "駆動",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "car:drive",
+  "relatedTerms": [
+   "ch-centerdiff",
+   "ch-fourwd"
+  ],
+  "description": "前後が 直結の 4WDで、せまい カーブを ゆっくり 曲がると、ブレーキが かかった ように 重く なる 現象です。前と 後ろの タイヤの 進む きょりの ちがいが 原因です。"
+ },
+ {
+  "id": "ch-activesus",
+  "name": "アクティブサスペンション",
+  "reading": "あくてぃぶさすぺんしょん",
+  "journey": "chassis",
+  "category": "サスペンション",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🤖",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-airsus",
+   "ch-vardamper"
+  ],
+  "description": "センサーで 車の 動きを 見て、油圧や 電気の ちからで 車体を 積極的に ささえる サスペンションです。曲がるときなどの 車体の かたむきを おさえます。"
+ },
+ {
+  "id": "ch-vardamper",
+  "name": "減衰力可変ダンパー",
+  "reading": "げんすいりょくかへんだんぱー",
+  "journey": "chassis",
+  "category": "サスペンション",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-damping",
+   "ch-shockabsorber"
+  ],
+  "description": "道の 状態や 走りかたに あわせて、減衰力を 切りかえられる ショックアブソーバーです。電子制御で 弁を 動かし、乗りごこちと 安定を 両立させます。"
+ },
+ {
+  "id": "ch-airsus",
+  "name": "エアサスペンション",
+  "reading": "えあさすぺんしょん",
+  "journey": "chassis",
+  "category": "サスペンション",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-coilspring",
+   "ch-activesus"
+  ],
+  "description": "金属の ばねの かわりに、空気を つめた ゴムの 袋を ばねに する サスペンションです。空気の 量を 変えて、車の 高さを 調整できます。"
+ },
+ {
+  "id": "ch-sbw",
+  "name": "ステアバイワイヤ",
+  "reading": "すてあばいわいや",
+  "journey": "chassis",
+  "category": "ステアリング",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-eps",
+   "ch-vgr"
+  ],
+  "description": "ハンドルと タイヤの あいだを 軸で つながず、電気の 信号で つなぐ しくみです。ハンドルの 角度を センサーで 読み、モーターで タイヤの 向きを 変えます。"
+ },
+ {
+  "id": "ch-vgr",
+  "name": "可変ギヤレシオステアリング",
+  "reading": "かへんぎやれしおすてありんぐ",
+  "journey": "chassis",
+  "category": "ステアリング",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-rackpinion",
+   "ch-sbw"
+  ],
+  "description": "ハンドルを 回した 角度と タイヤの 切れる 角度の 割合が、場面に よって 変わる ステアリングです。まっすぐ 付近は おだやかに、大きく 切るときは 少ない 回転で すみます。"
+ },
+ {
+  "id": "ch-fourws",
+  "name": "四輪操舵",
+  "reading": "よんりんそうだ",
+  "journey": "chassis",
+  "category": "ステアリング",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-steeringwheel",
+   "ch-ackermann"
+  ],
+  "description": "前だけでなく 後ろの タイヤの 向きも 変える しくみです。ゆっくりの ときは 前と 反対に 切って 小回りを よく し、速い ときは 同じ 向きに 切って 安定させます。",
+  "acceptedReadings": [
+   "よんりんそうだ",
+   "よんだぶりゅーえす"
+  ]
+ },
+ {
+  "id": "ch-unsprung",
+  "name": "ばね下重量",
+  "reading": "ばねしたじゅうりょう",
+  "journey": "chassis",
+  "category": "サスペンション",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-coilspring",
+   "ch-wheel"
+  ],
+  "description": "ばねより 下に ある、タイヤや ホイールなどの 重さです。軽いほど タイヤが でこぼこに よく ついていき、乗りごこちや グリップが よく なります。"
+ },
+ {
+  "id": "ch-rollcenter",
+  "name": "ロールセンター",
+  "reading": "ろーるせんたー",
+  "journey": "chassis",
+  "category": "サスペンション",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-stabilizer",
+   "ch-doublewishbone"
+  ],
+  "description": "曲がるときに 車体が かたむく 中心と 考える 点です。サスペンションの 形で 高さが 決まり、重心との きょりが 大きいほど 車体は かたむきやすく なります。"
+ },
+ {
+  "id": "ch-slipangle",
+  "name": "スリップ角",
+  "reading": "すりっぷかく",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-cornering",
+   "ch-understeer"
+  ],
+  "description": "タイヤが 向いている 方向と、実際に 進んでいる 方向との ずれの 角度です。曲がる ちからは、この ずれで タイヤの ゴムが ねじれる ことで 生まれます。"
+ },
+ {
+  "id": "ch-cornering",
+  "name": "コーナリングフォース",
+  "reading": "こーなりんぐふぉーす",
+  "journey": "chassis",
+  "category": "タイヤ・ホイール",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🏎️",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "ch-slipangle",
+   "ch-sat"
+  ],
+  "description": "スリップ角が ついた タイヤに 生まれる、車を 曲げる 横向きの ちからです。スリップ角が 小さい うちは 角度に あわせて 大きく なり、限界を こえると のびなく なります。"
+ },
+ {
+  "id": "ch-sat",
+  "name": "セルフアライニングトルク",
+  "reading": "せるふあらいにんぐとるく",
+  "journey": "chassis",
+  "category": "アライメント",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔙",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-caster",
+   "ch-cornering"
+  ],
+  "description": "曲がっている タイヤを、まっすぐに もどそうと する ねじる ちからです。ハンドルが 自然に もどる 手ごたえの もとの 1つで、キャスターの はたらきと あわせて 生まれます。"
+ },
+ {
+  "id": "ch-scrub",
+  "name": "スクラブ半径",
+  "reading": "すくらぶはんけい",
+  "journey": "chassis",
+  "category": "アライメント",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-kingpin",
+   "ch-inset"
+  ],
+  "description": "キングピンの 軸を のばした 線が 地面に とどく 点と、タイヤの 接地の 中心との きょりです。大きいと、路面から 受ける ちからで ハンドルが とられやすく なります。"
+ },
+ {
+  "id": "ch-thrust",
+  "name": "スラスト角",
+  "reading": "すらすとかく",
+  "journey": "chassis",
+  "category": "アライメント",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "car:sus",
+  "relatedTerms": [
+   "ch-alignment",
+   "ch-toein"
+  ],
+  "description": "後ろの タイヤが 進もうと する 向きと、車体の 中心線との ずれの 角度です。ずれが あると、まっすぐ 走るのに ハンドルを 少し きった ままに なります。"
+ },
+ {
+  "id": "ch-torquesteer",
+  "name": "トルクステア",
+  "reading": "とるくすてあ",
+  "journey": "chassis",
+  "category": "ステアリング",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "↗️",
+  "mapNode": "car:steer",
+  "relatedTerms": [
+   "ch-ff",
+   "ch-driveshaft"
+  ],
+  "description": "FF車で 強く 加速した とき、ハンドルが どちらかに とられる 現象です。左右の ドライブシャフトの 長さや 角度の ちがいなどが 原因に なります。"
+ },
+ {
+  "id": "ch-hts",
+  "name": "高張力鋼板",
+  "reading": "こうちょうりょくこうはん",
+  "journey": "chassis",
+  "category": "車体",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "ch-monocoque",
+   "ch-crushablezone"
+  ],
+  "description": "ふつうの 鋼板より 引っぱりに 強い 鉄の 板です。うすくても 強いので、ボディを 軽く しながら ぶつかった ときの 強さを たもてます。ハイテンとも いいます。"
+ },
+ {
+  "id": "ch-inwheel",
+  "name": "インホイールモーター",
+  "reading": "いんほいーるもーたー",
+  "journey": "chassis",
+  "category": "駆動",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "car:drive",
+  "relatedTerms": [
+   "ch-eaxle",
+   "ch-unsprung"
+  ],
+  "description": "ホイールの 中に モーターを 入れて、タイヤを じかに 回す しくみです。ドライブシャフトが いらず、4輪を べつべつに 制御できますが、ばね下が 重く なります。"
+ },
+ {
+  "id": "ch-eaxle",
+  "name": "eアクスル",
+  "reading": "いーあくする",
+  "journey": "chassis",
+  "category": "駆動",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "car:drive",
+  "relatedTerms": [
+   "ch-inwheel",
+   "ch-differential"
+  ],
+  "description": "モーター・インバーター・減速ギヤを 1つに まとめた 駆動の 装置です。電動車の タイヤを 回す ちからを 生み、小さく 軽く つくれます。"
  }
 ]

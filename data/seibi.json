@@ -210,6 +210,12 @@
     "name": "2級めやす",
     "icon": "🥈",
     "lead": "2級 自動車整備士の 試験範囲の めやす"
+   },
+   {
+    "difficulty": 4,
+    "name": "1級めやす",
+    "icon": "🥇",
+    "lead": "1級 自動車整備士の 試験範囲の めやす(電子制御・故障の 見つけかた・環境・新しい 技術)"
    }
   ],
   "titles": [
@@ -244,14 +250,24 @@
     "3級めざし隊"
    ],
    [
-    250,
+    300,
     "🏎️",
     "メカ博士"
    ],
    [
-    300,
+    400,
     "🥈",
     "2級めざし隊"
+   ],
+   [
+    500,
+    "🧠",
+    "電子制御の達人"
+   ],
+   [
+    600,
+    "🥇",
+    "1級めざし隊"
    ]
   ],
   "allTitle": [
@@ -1770,6 +1786,974 @@
    "description": "エンジンの 回る ちからで ベルトなどを 通して 回し、空気を 押しこむ 装置です。アクセルを ふんだ 直後から よく 効きます。"
   },
   {
+   "id": "en-oilpan",
+   "name": "オイルパン",
+   "reading": "おいるぱん",
+   "journey": "engine",
+   "category": "潤滑・冷却",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🛢️",
+   "mapNode": "engine:lube",
+   "relatedTerms": [
+    "en-engineoil",
+    "en-oilstrainer"
+   ],
+   "description": "エンジンの いちばん 下に ある、エンジンオイルを ためておく 皿の ような 入れものです。ここから オイルポンプが オイルを 吸いあげます。"
+  },
+  {
+   "id": "en-cylinderblock",
+   "name": "シリンダーブロック",
+   "reading": "しりんだーぶろっく",
+   "journey": "engine",
+   "category": "エンジンの基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧱",
+   "mapNode": "engine:basic",
+   "relatedTerms": [
+    "en-cylinder",
+    "en-cylinderhead"
+   ],
+   "description": "シリンダーが ならんで つくられた、エンジンの 土台に なる 大きな かたまりです。中には 冷却水や オイルの 通り道も あります。"
+  },
+  {
+   "id": "en-headgasket",
+   "name": "ヘッドガスケット",
+   "reading": "へっどがすけっと",
+   "journey": "engine",
+   "category": "エンジンの基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🟫",
+   "mapNode": "engine:cyl",
+   "relatedTerms": [
+    "en-cylinderhead",
+    "en-cylinderblock"
+   ],
+   "description": "シリンダーヘッドと シリンダーブロックの あいだに はさむ 薄い 板です。燃焼の ガスや 冷却水、オイルが もれないように すきまを ふさぎます。"
+  },
+  {
+   "id": "en-rockerarm",
+   "name": "ロッカーアーム",
+   "reading": "ろっかーあーむ",
+   "journey": "engine",
+   "category": "バルブ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🦾",
+   "mapNode": "engine:valve",
+   "relatedTerms": [
+    "en-camshaft",
+    "en-valve"
+   ],
+   "description": "カムの 動きを 受けて、支点を 中心に ゆれて バルブを 押す うでの 形の 部品です。カムと バルブの あいだで 動きを 伝えます。"
+  },
+  {
+   "id": "en-valvespring",
+   "name": "バルブスプリング",
+   "reading": "ばるぶすぷりんぐ",
+   "journey": "engine",
+   "category": "バルブ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "engine:valve",
+   "relatedTerms": [
+    "en-valve",
+    "en-camshaft"
+   ],
+   "description": "カムに 押されて 開いた バルブを、もとの 閉じた 位置に もどす ばねです。回転が 高くても バルブが きちんと 閉じるように ささえます。"
+  },
+  {
+   "id": "en-timingchain",
+   "name": "タイミングチェーン",
+   "reading": "たいみんぐちぇーん",
+   "journey": "engine",
+   "category": "バルブ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⛓️",
+   "mapNode": "engine:valve",
+   "relatedTerms": [
+    "en-timingbelt",
+    "en-camshaft"
+   ],
+   "description": "クランクシャフトの 回転を カムシャフトへ 伝える 金属の くさりです。タイミングベルトと 同じ 役目で、エンジンの 中で オイルに ぬれて 動きます。"
+  },
+  {
+   "id": "en-intakevalve",
+   "name": "吸気バルブ",
+   "reading": "きゅうきばるぶ",
+   "journey": "engine",
+   "category": "バルブ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🚪",
+   "mapNode": "engine:valve",
+   "relatedTerms": [
+    "en-exhaustvalve",
+    "en-intakestroke"
+   ],
+   "description": "燃焼室の 入り口に ある バルブです。吸気行程で 開き、空気や 混合気を シリンダーの 中へ 入れます。ふつう 排気バルブより 傘が 大きく つくられます。"
+  },
+  {
+   "id": "en-exhaustvalve",
+   "name": "排気バルブ",
+   "reading": "はいきばるぶ",
+   "journey": "engine",
+   "category": "バルブ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🚪",
+   "mapNode": "engine:valve",
+   "relatedTerms": [
+    "en-intakevalve",
+    "en-exhauststroke"
+   ],
+   "description": "燃焼室の 出口に ある バルブです。排気行程で 開き、燃えおわった ガスを 外へ 出します。とても 熱い ガスに ふれるので、熱に 強い 材料で できています。"
+  },
+  {
+   "id": "en-fuelfilter",
+   "name": "燃料フィルター",
+   "reading": "ねんりょうふぃるたー",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧃",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-fuelpump",
+    "en-injector"
+   ],
+   "description": "燃料の 中の ごみを こしとる 部品です。インジェクターの 細い 穴が つまらないように、燃料を きれいに してから 送ります。"
+  },
+  {
+   "id": "en-tdc",
+   "name": "上死点",
+   "reading": "じょうしてん",
+   "journey": "engine",
+   "category": "ピストン・クランク",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔝",
+   "mapNode": "engine:crank",
+   "relatedTerms": [
+    "en-bdc",
+    "en-piston"
+   ],
+   "description": "ピストンが いちばん 上まで 上がって、一瞬 止まる 位置です。点火時期や バルブの 開く 時は、この 位置を もとに して あらわします。"
+  },
+  {
+   "id": "en-bdc",
+   "name": "下死点",
+   "reading": "かしてん",
+   "journey": "engine",
+   "category": "ピストン・クランク",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⬇️",
+   "mapNode": "engine:crank",
+   "relatedTerms": [
+    "en-tdc",
+    "en-piston"
+   ],
+   "description": "ピストンが いちばん 下まで 下がって、向きを 変える 位置です。上死点から 下死点までの きょりが、ピストンの 動く 長さに なります。"
+  },
+  {
+   "id": "en-waterjacket",
+   "name": "ウォータージャケット",
+   "reading": "うぉーたーじゃけっと",
+   "journey": "engine",
+   "category": "潤滑・冷却",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "💧",
+   "mapNode": "engine:cool",
+   "relatedTerms": [
+    "en-coolant",
+    "en-cylinderblock"
+   ],
+   "description": "シリンダーの まわりを 包むように つくられた、冷却水の 通り道です。ここを 流れる クーラントが 燃焼の 熱を うばって エンジンを 冷やします。"
+  },
+  {
+   "id": "en-reservoirtank",
+   "name": "リザーバータンク",
+   "reading": "りざーばーたんく",
+   "journey": "engine",
+   "category": "潤滑・冷却",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🫙",
+   "mapNode": "engine:cool",
+   "relatedTerms": [
+    "en-pressurecap",
+    "en-coolant"
+   ],
+   "description": "ラジエーターと つながった、冷却水の 予備を ためる 半透明の タンクです。熱で ふえた 冷却水を 受けとめ、冷えると ラジエーターへ もどします。"
+  },
+  {
+   "id": "en-fanbelt",
+   "name": "ファンベルト",
+   "reading": "ふぁんべると",
+   "journey": "engine",
+   "category": "潤滑・冷却",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "➰",
+   "mapNode": "engine:cool",
+   "relatedTerms": [
+    "en-waterpump",
+    "en-crankshaft"
+   ],
+   "description": "クランクシャフトの 回転で、ウォーターポンプや 発電機などを 回す ゴムの ベルトです。むかしは 冷却ファンも 回して いたので、この 名前で よばれます。"
+  },
+  {
+   "id": "en-pistonpin",
+   "name": "ピストンピン",
+   "reading": "ぴすとんぴん",
+   "journey": "engine",
+   "category": "ピストン・クランク",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📌",
+   "mapNode": "engine:crank",
+   "relatedTerms": [
+    "en-piston",
+    "en-conrod"
+   ],
+   "description": "ピストンと コンロッドを つなぐ 短い 筒の ような ピンです。ここを 支点に コンロッドが ふれて、ピストンの 動きを クランクへ 伝えます。"
+  },
+  {
+   "id": "en-bore",
+   "name": "ボア",
+   "reading": "ぼあ",
+   "journey": "engine",
+   "category": "エンジンの基本",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⭕",
+   "mapNode": "engine:cyl",
+   "relatedTerms": [
+    "en-stroke",
+    "en-displacement"
+   ],
+   "description": "シリンダーの 内側の 直径の ことです。ストロークと あわせて、エンジンの 大きさや 性格を あらわす 大事な 寸法に なります。"
+  },
+  {
+   "id": "en-stroke",
+   "name": "ストローク",
+   "reading": "すとろーく",
+   "journey": "engine",
+   "category": "エンジンの基本",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "↕️",
+   "mapNode": "engine:crank",
+   "relatedTerms": [
+    "en-bore",
+    "en-tdc"
+   ],
+   "description": "ピストンが 上死点から 下死点まで 動く きょりです。ボアより ストロークが 長い エンジンは、低い 回転で ちからが 出やすい 性格に なりやすいです。"
+  },
+  {
+   "id": "en-sohc",
+   "name": "SOHC",
+   "reading": "えすおーえいちしー",
+   "journey": "engine",
+   "category": "バルブ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔧",
+   "mapNode": "engine:valve",
+   "relatedTerms": [
+    "en-dohc",
+    "en-camshaft"
+   ],
+   "description": "シリンダーヘッドに カムシャフトを 1本 おく しくみです。1本の カムシャフトで 吸気と 排気の 両方の バルブを 動かします。部品が 少なく、軽く つくれます。"
+  },
+  {
+   "id": "en-lashadjuster",
+   "name": "ラッシュアジャスター",
+   "reading": "らっしゅあじゃすたー",
+   "journey": "engine",
+   "category": "バルブ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🪛",
+   "mapNode": "engine:valve",
+   "relatedTerms": [
+    "en-valveclearance",
+    "en-rockerarm"
+   ],
+   "description": "オイルの 圧力を 使って、バルブの すきまを いつも ゼロに たもつ 部品です。すきまの 調整が いらなく なり、バルブの 音も 静かに なります。"
+  },
+  {
+   "id": "en-oilring",
+   "name": "オイルリング",
+   "reading": "おいるりんぐ",
+   "journey": "engine",
+   "category": "ピストン・クランク",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "💍",
+   "mapNode": "engine:crank",
+   "relatedTerms": [
+    "en-pistonring",
+    "en-oilagari"
+   ],
+   "description": "ピストンリングの うち いちばん 下に ある リングです。シリンダーの かべに ついた よぶんな オイルを かきおとし、燃焼室へ 入らないように します。"
+  },
+  {
+   "id": "en-pcv",
+   "name": "PCVバルブ",
+   "reading": "ぴーしーぶいばるぶ",
+   "journey": "engine",
+   "category": "排気・浄化",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "engine:clean",
+   "relatedTerms": [
+    "en-blowby",
+    "en-intakemanifold"
+   ],
+   "description": "ブローバイガスを 吸気の ほうへ もどして、もう一度 燃やす ための バルブです。有害な ガスを 大気に 出さない ために つけられています。"
+  },
+  {
+   "id": "en-canister",
+   "name": "チャコールキャニスター",
+   "reading": "ちゃこーるきゃにすたー",
+   "journey": "engine",
+   "category": "排気・浄化",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🫧",
+   "mapNode": "engine:clean",
+   "relatedTerms": [
+    "en-fueltank",
+    "en-pcv"
+   ],
+   "description": "燃料タンクで 蒸発した ガソリンの ガスを、活性炭に 吸わせて ためておく 入れものです。ためた ガスは エンジンが 動いて いる ときに 吸いこんで 燃やします。"
+  },
+  {
+   "id": "en-oxicat",
+   "name": "酸化触媒",
+   "reading": "さんかしょくばい",
+   "journey": "engine",
+   "category": "排気・浄化",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "engine:clean",
+   "relatedTerms": [
+    "en-dpf",
+    "en-threewaycatalyst"
+   ],
+   "description": "ディーゼルエンジンの 排気に 使う 触媒です。排気の 中の 酸素を 使って、一酸化炭素や 燃えのこりの 燃料を 水や 二酸化炭素に 変えます。"
+  },
+  {
+   "id": "en-directinjection",
+   "name": "直噴",
+   "reading": "ちょくふん",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "💉",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-injector",
+    "en-stratified"
+   ],
+   "description": "燃料を シリンダーの 中へ 直接 ふきこむ しくみです。燃料が 蒸発する ときに 中を 冷やすので、ノッキングが 起きにくく なります。",
+   "acceptedReadings": [
+    "ちょくふん",
+    "ちょくせつふんしゃ"
+   ]
+  },
+  {
+   "id": "en-portinjection",
+   "name": "ポート噴射",
+   "reading": "ぽーとふんしゃ",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌬️",
+   "mapNode": "engine:intake",
+   "relatedTerms": [
+    "en-directinjection",
+    "en-injector"
+   ],
+   "description": "吸気バルブの 手前の 吸気ポートへ 燃料を ふきこむ しくみです。空気と 燃料が よく まざってから シリンダーに 入ります。"
+  },
+  {
+   "id": "en-firingorder",
+   "name": "点火順序",
+   "reading": "てんかじゅんじょ",
+   "journey": "engine",
+   "category": "点火・燃焼",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔢",
+   "mapNode": "engine:ignition",
+   "relatedTerms": [
+    "en-ignitiontiming",
+    "en-crankshaft"
+   ],
+   "description": "何本も ある シリンダーが、どの 順番で 燃えるかの 決まりです。ゆれが 少なく、クランクシャフトに むりが かからない 順番に 決められています。"
+  },
+  {
+   "id": "en-oilcooler",
+   "name": "オイルクーラー",
+   "reading": "おいるくーらー",
+   "journey": "engine",
+   "category": "潤滑・冷却",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "❄️",
+   "mapNode": "engine:lube",
+   "relatedTerms": [
+    "en-engineoil",
+    "en-radiator"
+   ],
+   "description": "熱く なった エンジンオイルを 冷やす 小さな 放熱器です。オイルは 熱すぎると ねばりが なくなり、部品を 守る ちからが 弱く なるからです。"
+  },
+  {
+   "id": "en-reliefvalve",
+   "name": "リリーフバルブ",
+   "reading": "りりーふばるぶ",
+   "journey": "engine",
+   "category": "潤滑・冷却",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎚️",
+   "mapNode": "engine:lube",
+   "relatedTerms": [
+    "en-oilpump",
+    "en-trochoid"
+   ],
+   "description": "オイルポンプに ついていて、油の 圧力が 高く なりすぎると 開いて にがす バルブです。回転が 高い ときに 圧が 上がりすぎるのを ふせぎます。"
+  },
+  {
+   "id": "en-trochoid",
+   "name": "トロコイドポンプ",
+   "reading": "とろこいどぽんぷ",
+   "journey": "engine",
+   "category": "潤滑・冷却",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌼",
+   "mapNode": "engine:lube",
+   "relatedTerms": [
+    "en-oilpump",
+    "en-reliefvalve"
+   ],
+   "description": "内側と 外側の 花の ような 形の ローターが かみあって 回る オイルポンプです。すきまの 大きさが 変わる ことで、オイルを 吸って 送りだします。"
+  },
+  {
+   "id": "en-turbolag",
+   "name": "ターボラグ",
+   "reading": "たーぼらぐ",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⏳",
+   "mapNode": "engine:turbo",
+   "relatedTerms": [
+    "en-turbo",
+    "en-vgturbo"
+   ],
+   "description": "アクセルを 踏んでから、ターボが しっかり 空気を 押しこむまでの おくれです。排気で 羽根を 回す ため、回りはじめに 少し 時間が かかります。"
+  },
+  {
+   "id": "en-affeedback",
+   "name": "空燃比フィードバック制御",
+   "reading": "くうねんひふぃーどばっくせいぎょ",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-stoichiometric",
+    "en-threewaycatalyst"
+   ],
+   "description": "排気の 酸素の 量を 見ながら、燃料の 量を 少しずつ ふやしたり へらしたり する 制御です。理論空燃比の 近くに たもち、三元触媒が よく はたらくように します。"
+  },
+  {
+   "id": "en-aflearn",
+   "name": "空燃比学習",
+   "reading": "くうねんひがくしゅう",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧠",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-affeedback",
+    "en-injector"
+   ],
+   "description": "部品の ばらつきや 古く なった ずれを、ECUが 補正の 値として おぼえておく しくみです。補正が 大きく かたよって いるときは、空気の もれや 燃料系の 不具合を うたがいます。"
+  },
+  {
+   "id": "en-fuelcut",
+   "name": "燃料カット",
+   "reading": "ねんりょうかっと",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "✂️",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-injector",
+    "en-throttle"
+   ],
+   "description": "アクセルを はなして 減速する ときなどに、燃料の 噴射を 止める 制御です。むだな 燃料を 使わずに すみます。回転が 上がりすぎた ときにも 使われます。"
+  },
+  {
+   "id": "en-leanburn",
+   "name": "リーンバーン",
+   "reading": "りーんばーん",
+   "journey": "engine",
+   "category": "点火・燃焼",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🍃",
+   "mapNode": "engine:cyl",
+   "relatedTerms": [
+    "en-stoichiometric",
+    "en-noxtrap"
+   ],
+   "description": "理論空燃比より 空気を 多く した うすい 混合気で 燃やす 方法です。燃費は よく なりますが、三元触媒で NOxを へらしにくく なる 弱点が あります。"
+  },
+  {
+   "id": "en-stratified",
+   "name": "成層燃焼",
+   "reading": "せいそうねんしょう",
+   "journey": "engine",
+   "category": "点火・燃焼",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🥞",
+   "mapNode": "engine:cyl",
+   "relatedTerms": [
+    "en-directinjection",
+    "en-leanburn"
+   ],
+   "description": "点火プラグの まわりだけ こい 混合気を つくり、全体は うすく して 燃やす 方法です。直噴エンジンで 使われ、少ない 燃料で 走れます。"
+  },
+  {
+   "id": "en-noxtrap",
+   "name": "NOx吸蔵還元触媒",
+   "reading": "のっくすきゅうぞうかんげんしょくばい",
+   "journey": "engine",
+   "category": "排気・浄化",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧲",
+   "mapNode": "engine:clean",
+   "relatedTerms": [
+    "en-leanburn",
+    "en-threewaycatalyst"
+   ],
+   "description": "うすい 燃焼の ときに 出る NOx(窒素酸化物)を いったん ためこみ、ときどき 混合気を こく して 無害な 窒素に 変える 触媒です。"
+  },
+  {
+   "id": "en-pm",
+   "name": "粒子状物質",
+   "reading": "りゅうしじょうぶっしつ",
+   "journey": "engine",
+   "category": "排気・浄化",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌫️",
+   "mapNode": "engine:clean",
+   "relatedTerms": [
+    "en-dpf",
+    "en-dpfregen"
+   ],
+   "description": "ディーゼルの 排気に ふくまれる、すすなどの とても 小さな つぶです。PMとも いいます。吸いこむと 体に わるいので、DPFで こしとります。"
+  },
+  {
+   "id": "en-dpfregen",
+   "name": "DPF再生",
+   "reading": "でぃーぴーえふさいせい",
+   "journey": "engine",
+   "category": "排気・浄化",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔥",
+   "mapNode": "engine:clean",
+   "relatedTerms": [
+    "en-dpf",
+    "en-postinjection"
+   ],
+   "description": "DPFに たまった すすを、排気の 温度を 上げて 燃やし、フィルターを もとに もどす しくみです。うまく 再生できないと、すすが たまりすぎて 警告が 出ます。"
+  },
+  {
+   "id": "en-postinjection",
+   "name": "ポスト噴射",
+   "reading": "ぽすとふんしゃ",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💨",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-dpfregen",
+    "en-commonrail"
+   ],
+   "description": "主な 噴射の あとに、もう一度 少しだけ 燃料を ふく 噴射です。排気の 温度を 上げて、触媒を あたためたり DPFの すすを 燃やしたり するのに 使います。"
+  },
+  {
+   "id": "en-pilotinjection",
+   "name": "パイロット噴射",
+   "reading": "ぱいろっとふんしゃ",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔹",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-commonrail",
+    "en-postinjection"
+   ],
+   "description": "主な 噴射の 前に、ほんの 少し 燃料を ふいて おく 噴射です。燃えはじめが おだやかに なり、ディーゼル 特有の ガラガラ音や NOxを へらします。"
+  },
+  {
+   "id": "en-piezo",
+   "name": "ピエゾインジェクター",
+   "reading": "ぴえぞいんじぇくたー",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💎",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-injector",
+    "en-commonrail"
+   ],
+   "description": "電気を かけると 形が 少し 変わる ピエゾ素子で 開け閉め する インジェクターです。とても すばやく 動くので、1回の 燃焼で 何回にも 分けて ふけます。"
+  },
+  {
+   "id": "en-cetane",
+   "name": "セタン価",
+   "reading": "せたんか",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🛢️",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-diesel",
+    "en-pilotinjection"
+   ],
+   "description": "軽油の 火の つきやすさを あらわす 数です。高いほど 圧縮されて すぐに 燃えはじめ、始動が しやすく、音も 静かに なります。"
+  },
+  {
+   "id": "en-octane",
+   "name": "オクタン価",
+   "reading": "おくたんか",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⛽",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-gasoline",
+    "en-knocking"
+   ],
+   "description": "ガソリンの ノッキングの 起きにくさを あらわす 数です。高いほど 異常な 燃えかたを しにくく、圧縮比の 高い エンジンに 向いています。"
+  },
+  {
+   "id": "en-hcci",
+   "name": "予混合圧縮着火",
+   "reading": "よこんごうあっしゅくちゃっか",
+   "journey": "engine",
+   "category": "点火・燃焼",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💥",
+   "mapNode": "engine:cyl",
+   "relatedTerms": [
+    "en-compressionratio",
+    "en-leanburn"
+   ],
+   "description": "ガソリンと 空気を まぜた うすい 混合気を、火花に たよらず 圧縮の 熱で いっせいに 燃やす 方法です。燃費が よく NOxも 少ないですが、制御が むずかしい 技術です。"
+  },
+  {
+   "id": "en-atkinson",
+   "name": "アトキンソンサイクル",
+   "reading": "あときんそんさいくる",
+   "journey": "engine",
+   "category": "エンジンの基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔃",
+   "mapNode": "engine:basic",
+   "relatedTerms": [
+    "en-compressionratio",
+    "en-vvt"
+   ],
+   "description": "吸気バルブを おそく 閉じて、圧縮する 行程より 膨張する 行程を 長く つかう 考えかたです。燃費を よく する ため、ハイブリッド車の エンジンで よく 使われます。"
+  },
+  {
+   "id": "en-chargeeff",
+   "name": "充填効率",
+   "reading": "じゅうてんこうりつ",
+   "journey": "engine",
+   "category": "エンジンの基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📦",
+   "mapNode": "engine:intake",
+   "relatedTerms": [
+    "en-displacement",
+    "en-intakestroke"
+   ],
+   "description": "シリンダーに 実際に 入った 新しい 空気の 量を、シリンダーの 容積ぶんの 空気と くらべた 割合です。高いほど 多くの 燃料を 燃やせて、ちからが 出ます。"
+  },
+  {
+   "id": "en-varintake",
+   "name": "可変吸気システム",
+   "reading": "かへんきゅうきしすてむ",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎺",
+   "mapNode": "engine:intake",
+   "relatedTerms": [
+    "en-intakemanifold",
+    "en-chargeeff"
+   ],
+   "description": "回転数に あわせて 吸気の 通り道の 長さや 太さを 切りかえる しくみです。空気の 流れの いきおいを 使い、ひろい 回転で 空気を 多く 入れます。"
+  },
+  {
+   "id": "en-vgturbo",
+   "name": "可変ノズルターボ",
+   "reading": "かへんのずるたーぼ",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "engine:turbo",
+   "relatedTerms": [
+    "en-turbo",
+    "en-turbolag"
+   ],
+   "description": "タービンの まわりの 羽根の 角度を 変えて、排気の 流れる いきおいを 調整する ターボです。低い 回転から よく きいて、ターボラグを へらせます。"
+  },
+  {
+   "id": "en-etc",
+   "name": "電子制御スロットル",
+   "reading": "でんしせいぎょすろっとる",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎛️",
+   "mapNode": "engine:intake",
+   "relatedTerms": [
+    "en-throttle",
+    "en-fuelcut"
+   ],
+   "description": "アクセルペダルと スロットルバルブを ワイヤーで つながず、ECUが モーターで バルブを 開け閉め する しくみです。運転支援などの 制御とも 連携できます。"
+  },
+  {
+   "id": "en-misfire",
+   "name": "失火",
+   "reading": "しっか",
+   "journey": "engine",
+   "category": "点火・燃焼",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚫",
+   "mapNode": "engine:ignition",
+   "relatedTerms": [
+    "en-sparkplug",
+    "en-ignitioncoil"
+   ],
+   "description": "シリンダーの 中で 混合気が うまく 燃えない ことです。ECUは クランクの 回転の わずかな ゆれから 見つけます。点火・燃料・圧縮の どこに 原因が あるかを 考えます。"
+  },
+  {
+   "id": "en-advance",
+   "name": "進角",
+   "reading": "しんかく",
+   "journey": "engine",
+   "category": "点火・燃焼",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⏩",
+   "mapNode": "engine:ignition",
+   "relatedTerms": [
+    "en-ignitiontiming",
+    "en-knocking"
+   ],
+   "description": "点火時期を 上死点より 早い ほうへ ずらす ことです。回転が 高いほど 早めに 火を つけると ちからが 出ますが、早すぎると ノッキングが 起きます。"
+  },
+  {
+   "id": "en-cyldeact",
+   "name": "気筒休止",
+   "reading": "きとうきゅうし",
+   "journey": "engine",
+   "category": "エンジンの基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💤",
+   "mapNode": "engine:basic",
+   "relatedTerms": [
+    "en-valve",
+    "en-fuelcut"
+   ],
+   "description": "ちからが あまり いらない ときに、一部の シリンダーの バルブと 燃料を 止めて 休ませる しくみです。残りの シリンダーで 効率よく 走り、燃費を よく します。"
+  },
+  {
+   "id": "en-ewp",
+   "name": "電動ウォーターポンプ",
+   "reading": "でんどううぉーたーぽんぷ",
+   "journey": "engine",
+   "category": "潤滑・冷却",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔌",
+   "mapNode": "engine:cool",
+   "relatedTerms": [
+    "en-waterpump",
+    "en-thermostat"
+   ],
+   "description": "エンジンの 回転ではなく モーターで 回す ウォーターポンプです。必要な ぶんだけ 冷却水を 流せるので、暖まるのが 早く、むだも へります。"
+  },
+  {
+   "id": "en-balancer",
+   "name": "バランサーシャフト",
+   "reading": "ばらんさーしゃふと",
+   "journey": "engine",
+   "category": "ピストン・クランク",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "engine:crank",
+   "relatedTerms": [
+    "en-crankshaft",
+    "en-piston"
+   ],
+   "description": "クランクシャフトの 2倍の 速さで 回る、おもりの ついた 軸です。直列4気筒などで 出る 細かい ゆれを 打ち消します。"
+  },
+  {
+   "id": "en-oilagari",
+   "name": "オイル上がり",
+   "reading": "おいるあがり",
+   "journey": "engine",
+   "category": "ピストン・クランク",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⬆️",
+   "mapNode": "engine:crank",
+   "relatedTerms": [
+    "en-oilring",
+    "en-pistonring"
+   ],
+   "description": "ピストンリングの すりへりなどで、オイルが シリンダーの かべから 燃焼室へ 上がって 燃える ことです。青白い 排気の 煙や オイルの へりが 手がかりに なります。"
+  },
+  {
+   "id": "en-oilsagari",
+   "name": "オイル下がり",
+   "reading": "おいるさがり",
+   "journey": "engine",
+   "category": "バルブ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔽",
+   "mapNode": "engine:valve",
+   "relatedTerms": [
+    "en-oilagari",
+    "en-valve"
+   ],
+   "description": "バルブの 軸の まわりの シールが いたむなどして、オイルが 上から 燃焼室へ 下がって くる ことです。始動した 直後に 青白い 煙が 出やすいのが 手がかりです。"
+  },
+  {
+   "id": "en-preignition",
+   "name": "プレイグニッション",
+   "reading": "ぷれいぐにっしょん",
+   "journey": "engine",
+   "category": "点火・燃焼",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "☄️",
+   "mapNode": "engine:cyl",
+   "relatedTerms": [
+    "en-knocking",
+    "en-sparkplug"
+   ],
+   "description": "点火プラグの 火花より 前に、熱く なった 部分などが 火種に なって 燃えはじめる 異常燃焼です。過早着火とも いい、エンジンを いためる 原因に なります。",
+   "acceptedReadings": [
+    "ぷれいぐにっしょん",
+    "かそうちゃっか"
+   ]
+  },
+  {
+   "id": "en-h2engine",
+   "name": "水素エンジン",
+   "reading": "すいそえんじん",
+   "journey": "engine",
+   "category": "エンジンの基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🫧",
+   "mapNode": "engine:basic",
+   "relatedTerms": [
+    "en-engine",
+    "en-efuel"
+   ],
+   "description": "ガソリンの かわりに 水素を シリンダーで 燃やす エンジンです。燃えても 二酸化炭素が 出ないのが 特長ですが、NOxへの 対策は 必要です。"
+  },
+  {
+   "id": "en-efuel",
+   "name": "合成燃料",
+   "reading": "ごうせいねんりょう",
+   "journey": "engine",
+   "category": "吸気・燃料・過給",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧫",
+   "mapNode": "engine:fuel",
+   "relatedTerms": [
+    "en-h2engine",
+    "en-gasoline"
+   ],
+   "description": "二酸化炭素と 水素から 人の 手で つくる 燃料です。いまの エンジンで 使える 燃料を、石油に たよらずに つくれると 期待されています。"
+  },
+  {
+   "id": "en-squish",
+   "name": "スキッシュ",
+   "reading": "すきっしゅ",
+   "journey": "engine",
+   "category": "点火・燃焼",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌪️",
+   "mapNode": "engine:cyl",
+   "relatedTerms": [
+    "en-tdc",
+    "en-combustionstroke"
+   ],
+   "description": "ピストンが 上死点に 近づく とき、ピストンと ヘッドの せまい すきまから 混合気が 押しだされて できる 流れです。かきまぜて 燃えかたを 速く します。"
+  },
+  {
    "id": "ch-tire",
    "name": "タイヤ",
    "reading": "たいや",
@@ -2741,6 +3725,970 @@
     "ch-tire"
    ],
    "description": "空気圧が 低い まま 速く 走ると、タイヤが 波の ように ゆがむ 現象です。熱を もって、タイヤが こわれる ことが あります。"
+  },
+  {
+   "id": "ch-radial",
+   "name": "ラジアルタイヤ",
+   "reading": "らじあるたいや",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🛞",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-tire",
+    "ch-tread"
+   ],
+   "description": "タイヤの 骨組みに なる コードが、中心から 放射状に ならんだ タイヤです。いまの 乗用車の ほとんどが この 形で、曲がるときの しっかり感と 燃費に すぐれます。"
+  },
+  {
+   "id": "ch-tubeless",
+   "name": "チューブレスタイヤ",
+   "reading": "ちゅーぶれすたいや",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⭕",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-tire",
+    "ch-wheel"
+   ],
+   "description": "中に チューブを 入れず、タイヤと ホイールの あいだで 空気を 閉じこめる タイヤです。くぎなどが ささっても、空気が 急には ぬけにくいのが 特長です。"
+  },
+  {
+   "id": "ch-tread",
+   "name": "トレッド",
+   "reading": "とれっど",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔲",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-tiregroove",
+    "ch-sidewall"
+   ],
+   "description": "タイヤが 地面に ふれる 部分の 厚い ゴムです。溝の 模様が きざまれていて、水を はいたり 地面を つかんだり します。"
+  },
+  {
+   "id": "ch-sidewall",
+   "name": "サイドウォール",
+   "reading": "さいどうぉーる",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🏷️",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-tread",
+    "ch-aspect"
+   ],
+   "description": "タイヤの 横の 部分です。大きさなどの 表示が 書かれています。曲げられながら 走るので、ここの きずや ひびわれは とても 危険です。"
+  },
+  {
+   "id": "ch-slipsign",
+   "name": "スリップサイン",
+   "reading": "すりっぷさいん",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📏",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-tiregroove",
+    "ch-tread"
+   ],
+   "description": "タイヤの 溝の 底に ある、少し 高く なった 部分です。すりへって この 部分が 表に 出たら、溝が 足りない しるしで、そのままでは 使えません。"
+  },
+  {
+   "id": "ch-clutchdisc",
+   "name": "クラッチディスク",
+   "reading": "くらっちでぃすく",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "💿",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-clutch",
+    "ch-clutchcover"
+   ],
+   "description": "フライホイールと クラッチカバーの あいだに はさまる 円い 板です。摩擦で エンジンの 回転を 変速機へ 伝え、すりへると すべりの 原因に なります。"
+  },
+  {
+   "id": "ch-clutchcover",
+   "name": "クラッチカバー",
+   "reading": "くらっちかばー",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🥏",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-clutchdisc",
+    "ch-diaphragm"
+   ],
+   "description": "クラッチディスクを フライホイールに 押しつける 部品です。中の ばねの ちからで 押しつけ、ペダルを 踏むと その ちからが ぬけて 切れます。"
+  },
+  {
+   "id": "ch-releasebearing",
+   "name": "レリーズベアリング",
+   "reading": "れりーずべありんぐ",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔘",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-clutchcover",
+    "ch-diaphragm"
+   ],
+   "description": "クラッチペダルを 踏んだ とき、回っている クラッチカバーの ばねを 押す ための ベアリングです。回るものと 回らないものの あいだで 押す ちからを 伝えます。"
+  },
+  {
+   "id": "ch-atf",
+   "name": "ATF",
+   "reading": "えーてぃーえふ",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🫗",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-at",
+    "ch-torqueconverter"
+   ],
+   "description": "オートマチック車の 変速機に 入れる 専用の オイルです。ちからを 伝える、油圧で 変速を 動かす、潤滑と 冷却、と 多くの 役目を もちます。"
+  },
+  {
+   "id": "ch-gearoil",
+   "name": "ギヤオイル",
+   "reading": "ぎやおいる",
+   "journey": "chassis",
+   "category": "駆動",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🛢️",
+   "mapNode": "car:drive",
+   "relatedTerms": [
+    "ch-differential",
+    "ch-mt"
+   ],
+   "description": "手動の 変速機や デフの 歯車を 守る、ねばりの 強い オイルです。歯車どうしが 強く 押しあう 部分で、金属が じかに こすれないように します。"
+  },
+  {
+   "id": "ch-knuckle",
+   "name": "ナックル",
+   "reading": "なっくる",
+   "journey": "chassis",
+   "category": "ステアリング",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🦴",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-tierod",
+    "ch-balljoint"
+   ],
+   "description": "タイヤを 回す ハブを ささえ、サスペンションや タイロッドと つながる 部品です。ハンドルを きると ナックルごと 向きが 変わり、タイヤが 曲がります。"
+  },
+  {
+   "id": "ch-lowerarm",
+   "name": "ロアアーム",
+   "reading": "ろああーむ",
+   "journey": "chassis",
+   "category": "サスペンション",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🦿",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-balljoint",
+    "ch-bushing"
+   ],
+   "description": "タイヤの 下の ほうと 車体を つなぐ うでです。タイヤが 上下に 動くのを ゆるし、前後や 左右には ずれないように ささえます。"
+  },
+  {
+   "id": "ch-bushing",
+   "name": "ブッシュ",
+   "reading": "ぶっしゅ",
+   "journey": "chassis",
+   "category": "サスペンション",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🍩",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-lowerarm",
+    "ch-stabilizer"
+   ],
+   "description": "サスペンションの うでなどの つけねに 入れる ゴムの 部品です。動きを ゆるしながら、細かい ゆれや 音を 吸いとります。"
+  },
+  {
+   "id": "ch-column",
+   "name": "ステアリングコラム",
+   "reading": "すてありんぐこらむ",
+   "journey": "chassis",
+   "category": "ステアリング",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧭",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-steeringwheel",
+    "ch-rackpinion"
+   ],
+   "description": "ハンドルの 回転を 下の ギヤへ 伝える 軸と、それを 包む 筒です。ぶつかった ときに ちぢんで、運転する 人を 守る つくりの ものが 多いです。"
+  },
+  {
+   "id": "ch-toeout",
+   "name": "トーアウト",
+   "reading": "とーあうと",
+   "journey": "chassis",
+   "category": "アライメント",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "↖️",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-toein",
+    "ch-alignment"
+   ],
+   "description": "上から 見て、左右の タイヤの 前側が 後ろ側より 外へ ひらいている 状態です。トーインの 反対で、タイヤの すりへりかたや まっすぐ 走る 力に えいきょうします。"
+  },
+  {
+   "id": "ch-diaphragm",
+   "name": "ダイヤフラムスプリング",
+   "reading": "だいやふらむすぷりんぐ",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌸",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-clutchcover",
+    "ch-releasebearing"
+   ],
+   "description": "クラッチカバーの 中に ある、皿の 形を した 板ばねです。ふちで ディスクを 押しつけ、中心を 押されると てこの ように 反って 押す ちからを ぬきます。"
+  },
+  {
+   "id": "ch-overdrive",
+   "name": "オーバードライブ",
+   "reading": "おーばーどらいぶ",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🚀",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-gearratio",
+    "ch-transmission"
+   ],
+   "description": "変速比が 1より 小さい ギヤの ことです。出る 側の 回転が エンジンより 速く なり、高速で 走る ときに エンジンの 回転を 下げて 燃費を よく します。"
+  },
+  {
+   "id": "ch-subframe",
+   "name": "サブフレーム",
+   "reading": "さぶふれーむ",
+   "journey": "chassis",
+   "category": "車体",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧩",
+   "mapNode": "car:body",
+   "relatedTerms": [
+    "ch-monocoque",
+    "ch-lowerarm"
+   ],
+   "description": "サスペンションや エンジンなどを とりつけて、ボディに つなぐ 小さな 骨組みです。ゆれや 音が 車内に 伝わりにくく なります。"
+  },
+  {
+   "id": "ch-bumpstop",
+   "name": "バンプストッパー",
+   "reading": "ばんぷすとっぱー",
+   "journey": "chassis",
+   "category": "サスペンション",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧱",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-shockabsorber",
+    "ch-coilspring"
+   ],
+   "description": "サスペンションが 大きく ちぢんだ ときに 当たる ゴムなどの 部品です。金属どうしが ぶつかるのを ふせぎ、ショックを やわらげます。"
+  },
+  {
+   "id": "ch-damping",
+   "name": "減衰力",
+   "reading": "げんすいりょく",
+   "journey": "chassis",
+   "category": "サスペンション",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎚️",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-shockabsorber",
+    "ch-vardamper"
+   ],
+   "description": "ショックアブソーバーが ばねの 動きを おさえる ちからです。油が 小さな 穴を 通る ときの ていこうで 生まれ、強いほど ゆれが 早く おさまります。"
+  },
+  {
+   "id": "ch-understeer",
+   "name": "アンダーステア",
+   "reading": "あんだーすてあ",
+   "journey": "chassis",
+   "category": "ステアリング",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "↪️",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-oversteer",
+    "ch-slipangle"
+   ],
+   "description": "曲がるときに、ハンドルを きった ぶんより 車が 外へ ふくらむ 性質です。前の タイヤの グリップが 先に 足りなく なると 起きやすく なります。"
+  },
+  {
+   "id": "ch-oversteer",
+   "name": "オーバーステア",
+   "reading": "おーばーすてあ",
+   "journey": "chassis",
+   "category": "ステアリング",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "↩️",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-understeer",
+    "ch-slipangle"
+   ],
+   "description": "曲がるときに、ハンドルを きった ぶんより 車が 内側へ 回りこむ 性質です。後ろの タイヤの グリップが 先に 足りなく なると 起きやすく、スピンに つながります。"
+  },
+  {
+   "id": "ch-aspect",
+   "name": "偏平率",
+   "reading": "へんぺいりつ",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-sidewall",
+    "ch-loadindex"
+   ],
+   "description": "タイヤの 幅に くらべた 高さの 割合です。数字が 小さいほど うすい タイヤで、曲がるときの しっかり感は 増しますが、乗りごこちは かたく なりがちです。"
+  },
+  {
+   "id": "ch-loadindex",
+   "name": "ロードインデックス",
+   "reading": "ろーどいんでっくす",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏋️",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-aspect",
+    "ch-airpressure"
+   ],
+   "description": "タイヤ 1本が ささえられる 重さの 大きさを あらわす 数字です。タイヤの 横に 書かれていて、車に あった 数字の タイヤを 使う ことが 大事です。"
+  },
+  {
+   "id": "ch-inset",
+   "name": "インセット",
+   "reading": "いんせっと",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "↔️",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-wheel",
+    "ch-scrub"
+   ],
+   "description": "ホイールの 幅の まん中から、ハブに とりつける 面までの きょりです。この 値が 変わると、タイヤの 出っぱりかたや ハンドルの 手ごたえが 変わります。"
+  },
+  {
+   "id": "ch-runflat",
+   "name": "ランフラットタイヤ",
+   "reading": "らんふらっとたいや",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛡️",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-sidewall",
+    "ch-sparetire"
+   ],
+   "description": "パンクして 空気が ぬけても、決められた 速さと きょりなら 走りつづけられる タイヤです。横の 部分を 強く つくり、重さを ささえます。"
+  },
+  {
+   "id": "ch-wheelbalance",
+   "name": "ホイールバランス",
+   "reading": "ほいーるばらんす",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-wheel",
+    "ch-tire"
+   ],
+   "description": "タイヤと ホイールを 組んだ ときの 重さの かたよりの ことです。かたよりが あると 回るときに ゆれが 出て、ハンドルや 車体が ふるえる 原因に なります。"
+  },
+  {
+   "id": "ch-ujoint",
+   "name": "ユニバーサルジョイント",
+   "reading": "ゆにばーさるじょいんと",
+   "journey": "chassis",
+   "category": "駆動",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "✖️",
+   "mapNode": "car:drive",
+   "relatedTerms": [
+    "ch-propshaft",
+    "ch-cvjoint"
+   ],
+   "description": "角度の ついた 2本の 軸を つなぎ、回転を 伝える 十字の 形の 継ぎ手です。プロペラシャフトに 使われます。角度が つくと 回る 速さに むらが 出ます。"
+  },
+  {
+   "id": "ch-transfer",
+   "name": "トランスファー",
+   "reading": "とらんすふぁー",
+   "journey": "chassis",
+   "category": "駆動",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔀",
+   "mapNode": "car:drive",
+   "relatedTerms": [
+    "ch-fourwd",
+    "ch-centerdiff"
+   ],
+   "description": "4WD車で、変速機から 来た ちからを 前輪と 後輪に 分ける 装置です。2WDと 4WDを 切りかえる 役目を もつ ものも あります。"
+  },
+  {
+   "id": "ch-sidegear",
+   "name": "サイドギヤ",
+   "reading": "さいどぎや",
+   "journey": "chassis",
+   "category": "駆動",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⚙️",
+   "mapNode": "car:drive",
+   "relatedTerms": [
+    "ch-differential",
+    "ch-driveshaft"
+   ],
+   "description": "デフの 中で、左右の ドライブシャフトに つながる 歯車です。あいだの ピニオンギヤが 回ることで、左右の タイヤが ちがう 速さで 回れます。"
+  },
+  {
+   "id": "ch-ecat",
+   "name": "電子制御式AT",
+   "reading": "でんしせいぎょしきえーてぃー",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🖥️",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-at",
+    "ch-shiftsol"
+   ],
+   "description": "車の 速さや アクセルの 踏みかたを センサーで 見て、ECUが 変速の 時と 油圧を 決める ATです。変速ショックを へらし、燃費の よい ギヤを えらびます。"
+  },
+  {
+   "id": "ch-shiftsol",
+   "name": "シフトソレノイドバルブ",
+   "reading": "しふとそれのいどばるぶ",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔌",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-ecat",
+    "ch-valvebody"
+   ],
+   "description": "ECUの 信号で 開け閉め し、ATの 中の 油の 通り道を 切りかえる 電磁弁です。これで どの クラッチを 動かすかが 決まり、ギヤが 変わります。"
+  },
+  {
+   "id": "ch-linearsol",
+   "name": "リニアソレノイド",
+   "reading": "りにあそれのいど",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📶",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-shiftsol",
+    "ch-linepressure"
+   ],
+   "description": "流す 電流の 大きさに あわせて、油圧を なめらかに 変えられる 電磁弁です。クラッチを つなぐ 強さを 細かく 調整し、変速を なめらかに します。"
+  },
+  {
+   "id": "ch-valvebody",
+   "name": "バルブボディ",
+   "reading": "ばるぶぼでぃ",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧊",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-shiftsol",
+    "ch-linepressure"
+   ],
+   "description": "ATの 下の ほうに ある、油の 通り道と 弁が 集まった かたまりです。油圧を 調整し、中の それぞれの クラッチなどへ 配ります。"
+  },
+  {
+   "id": "ch-linepressure",
+   "name": "ライン圧",
+   "reading": "らいんあつ",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-valvebody",
+    "ch-atf"
+   ],
+   "description": "ATの 油圧の もとに なる 圧力です。オイルポンプの 圧を 調整して つくり、エンジンの ちからが 大きい ときほど 高く して、クラッチが すべらないように します。"
+  },
+  {
+   "id": "ch-owc",
+   "name": "ワンウェイクラッチ",
+   "reading": "わんうぇいくらっち",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "➡️",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-torqueconverter",
+    "ch-planetary"
+   ],
+   "description": "一方向には 回転を 止め、反対の 方向には 自由に 回る クラッチです。ATの 変速を なめらかに したり、トルクコンバーターの ステーターを ささえたり します。"
+  },
+  {
+   "id": "ch-steelbelt",
+   "name": "スチールベルト",
+   "reading": "すちーるべると",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔗",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-cvt",
+    "ch-primarypulley"
+   ],
+   "description": "CVTで 2つの プーリーの あいだに かける 金属の ベルトです。たくさんの 小さな こまを 帯で たばねた つくりで、押す ちからで 回転を 伝えます。"
+  },
+  {
+   "id": "ch-primarypulley",
+   "name": "プライマリプーリー",
+   "reading": "ぷらいまりぷーりー",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🥁",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-secondarypulley",
+    "ch-steelbelt"
+   ],
+   "description": "CVTの エンジン側に ある プーリーです。みぞの 幅を 油圧で 変えて ベルトが かかる 大きさを 変え、変速比を 切れめなく 変えます。"
+  },
+  {
+   "id": "ch-secondarypulley",
+   "name": "セカンダリプーリー",
+   "reading": "せかんだりぷーりー",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🪘",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-primarypulley",
+    "ch-steelbelt"
+   ],
+   "description": "CVTの タイヤ側に ある プーリーです。プライマリプーリーと 反対に みぞの 幅が 変わり、ベルトを はさむ ちからで すべりを ふせぎます。"
+  },
+  {
+   "id": "ch-stallrpm",
+   "name": "ストール回転数",
+   "reading": "すとーるかいてんすう",
+   "journey": "chassis",
+   "category": "変速・クラッチ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "car:trans",
+   "relatedTerms": [
+    "ch-torqueconverter",
+    "ch-at"
+   ],
+   "description": "トルクコンバーターの 出る 側を 止めた まま、アクセルを いっぱいに 踏んだ ときの エンジン回転数です。高すぎれば ATの すべり、低すぎれば エンジンの ちから不足などを うたがいます。"
+  },
+  {
+   "id": "ch-eccoupling",
+   "name": "電子制御カップリング",
+   "reading": "でんしせいぎょかっぷりんぐ",
+   "journey": "chassis",
+   "category": "駆動",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧷",
+   "mapNode": "car:drive",
+   "relatedTerms": [
+    "ch-fourwd",
+    "ch-viscous"
+   ],
+   "description": "4WD車で、前後の タイヤへ 送る ちからの 割合を、電子制御の クラッチで 変える 装置です。すべりやすい 道では 後ろにも 多く 送り、ふだんは 2WDに 近く 走ります。"
+  },
+  {
+   "id": "ch-torquevector",
+   "name": "トルクベクタリング",
+   "reading": "とるくべくたりんぐ",
+   "journey": "chassis",
+   "category": "駆動",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧭",
+   "mapNode": "car:drive",
+   "relatedTerms": [
+    "ch-differential",
+    "ch-understeer"
+   ],
+   "description": "左右の タイヤへ 送る ちからを 変えて、車の 向きを 変える 手助けを する しくみです。外側の タイヤに 多く 送ると、曲がりやすく なります。"
+  },
+  {
+   "id": "ch-tightcorner",
+   "name": "タイトコーナーブレーキング現象",
+   "reading": "たいとこーなーぶれーきんぐげんしょう",
+   "journey": "chassis",
+   "category": "駆動",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "car:drive",
+   "relatedTerms": [
+    "ch-centerdiff",
+    "ch-fourwd"
+   ],
+   "description": "前後が 直結の 4WDで、せまい カーブを ゆっくり 曲がると、ブレーキが かかった ように 重く なる 現象です。前と 後ろの タイヤの 進む きょりの ちがいが 原因です。"
+  },
+  {
+   "id": "ch-activesus",
+   "name": "アクティブサスペンション",
+   "reading": "あくてぃぶさすぺんしょん",
+   "journey": "chassis",
+   "category": "サスペンション",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🤖",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-airsus",
+    "ch-vardamper"
+   ],
+   "description": "センサーで 車の 動きを 見て、油圧や 電気の ちからで 車体を 積極的に ささえる サスペンションです。曲がるときなどの 車体の かたむきを おさえます。"
+  },
+  {
+   "id": "ch-vardamper",
+   "name": "減衰力可変ダンパー",
+   "reading": "げんすいりょくかへんだんぱー",
+   "journey": "chassis",
+   "category": "サスペンション",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎛️",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-damping",
+    "ch-shockabsorber"
+   ],
+   "description": "道の 状態や 走りかたに あわせて、減衰力を 切りかえられる ショックアブソーバーです。電子制御で 弁を 動かし、乗りごこちと 安定を 両立させます。"
+  },
+  {
+   "id": "ch-airsus",
+   "name": "エアサスペンション",
+   "reading": "えあさすぺんしょん",
+   "journey": "chassis",
+   "category": "サスペンション",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎈",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-coilspring",
+    "ch-activesus"
+   ],
+   "description": "金属の ばねの かわりに、空気を つめた ゴムの 袋を ばねに する サスペンションです。空気の 量を 変えて、車の 高さを 調整できます。"
+  },
+  {
+   "id": "ch-sbw",
+   "name": "ステアバイワイヤ",
+   "reading": "すてあばいわいや",
+   "journey": "chassis",
+   "category": "ステアリング",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📡",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-eps",
+    "ch-vgr"
+   ],
+   "description": "ハンドルと タイヤの あいだを 軸で つながず、電気の 信号で つなぐ しくみです。ハンドルの 角度を センサーで 読み、モーターで タイヤの 向きを 変えます。"
+  },
+  {
+   "id": "ch-vgr",
+   "name": "可変ギヤレシオステアリング",
+   "reading": "かへんぎやれしおすてありんぐ",
+   "journey": "chassis",
+   "category": "ステアリング",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔧",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-rackpinion",
+    "ch-sbw"
+   ],
+   "description": "ハンドルを 回した 角度と タイヤの 切れる 角度の 割合が、場面に よって 変わる ステアリングです。まっすぐ 付近は おだやかに、大きく 切るときは 少ない 回転で すみます。"
+  },
+  {
+   "id": "ch-fourws",
+   "name": "四輪操舵",
+   "reading": "よんりんそうだ",
+   "journey": "chassis",
+   "category": "ステアリング",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-steeringwheel",
+    "ch-ackermann"
+   ],
+   "description": "前だけでなく 後ろの タイヤの 向きも 変える しくみです。ゆっくりの ときは 前と 反対に 切って 小回りを よく し、速い ときは 同じ 向きに 切って 安定させます。",
+   "acceptedReadings": [
+    "よんりんそうだ",
+    "よんだぶりゅーえす"
+   ]
+  },
+  {
+   "id": "ch-unsprung",
+   "name": "ばね下重量",
+   "reading": "ばねしたじゅうりょう",
+   "journey": "chassis",
+   "category": "サスペンション",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🪶",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-coilspring",
+    "ch-wheel"
+   ],
+   "description": "ばねより 下に ある、タイヤや ホイールなどの 重さです。軽いほど タイヤが でこぼこに よく ついていき、乗りごこちや グリップが よく なります。"
+  },
+  {
+   "id": "ch-rollcenter",
+   "name": "ロールセンター",
+   "reading": "ろーるせんたー",
+   "journey": "chassis",
+   "category": "サスペンション",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-stabilizer",
+    "ch-doublewishbone"
+   ],
+   "description": "曲がるときに 車体が かたむく 中心と 考える 点です。サスペンションの 形で 高さが 決まり、重心との きょりが 大きいほど 車体は かたむきやすく なります。"
+  },
+  {
+   "id": "ch-slipangle",
+   "name": "スリップ角",
+   "reading": "すりっぷかく",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-cornering",
+    "ch-understeer"
+   ],
+   "description": "タイヤが 向いている 方向と、実際に 進んでいる 方向との ずれの 角度です。曲がる ちからは、この ずれで タイヤの ゴムが ねじれる ことで 生まれます。"
+  },
+  {
+   "id": "ch-cornering",
+   "name": "コーナリングフォース",
+   "reading": "こーなりんぐふぉーす",
+   "journey": "chassis",
+   "category": "タイヤ・ホイール",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🏎️",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "ch-slipangle",
+    "ch-sat"
+   ],
+   "description": "スリップ角が ついた タイヤに 生まれる、車を 曲げる 横向きの ちからです。スリップ角が 小さい うちは 角度に あわせて 大きく なり、限界を こえると のびなく なります。"
+  },
+  {
+   "id": "ch-sat",
+   "name": "セルフアライニングトルク",
+   "reading": "せるふあらいにんぐとるく",
+   "journey": "chassis",
+   "category": "アライメント",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔙",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-caster",
+    "ch-cornering"
+   ],
+   "description": "曲がっている タイヤを、まっすぐに もどそうと する ねじる ちからです。ハンドルが 自然に もどる 手ごたえの もとの 1つで、キャスターの はたらきと あわせて 生まれます。"
+  },
+  {
+   "id": "ch-scrub",
+   "name": "スクラブ半径",
+   "reading": "すくらぶはんけい",
+   "journey": "chassis",
+   "category": "アライメント",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⭕",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-kingpin",
+    "ch-inset"
+   ],
+   "description": "キングピンの 軸を のばした 線が 地面に とどく 点と、タイヤの 接地の 中心との きょりです。大きいと、路面から 受ける ちからで ハンドルが とられやすく なります。"
+  },
+  {
+   "id": "ch-thrust",
+   "name": "スラスト角",
+   "reading": "すらすとかく",
+   "journey": "chassis",
+   "category": "アライメント",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧮",
+   "mapNode": "car:sus",
+   "relatedTerms": [
+    "ch-alignment",
+    "ch-toein"
+   ],
+   "description": "後ろの タイヤが 進もうと する 向きと、車体の 中心線との ずれの 角度です。ずれが あると、まっすぐ 走るのに ハンドルを 少し きった ままに なります。"
+  },
+  {
+   "id": "ch-torquesteer",
+   "name": "トルクステア",
+   "reading": "とるくすてあ",
+   "journey": "chassis",
+   "category": "ステアリング",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "↗️",
+   "mapNode": "car:steer",
+   "relatedTerms": [
+    "ch-ff",
+    "ch-driveshaft"
+   ],
+   "description": "FF車で 強く 加速した とき、ハンドルが どちらかに とられる 現象です。左右の ドライブシャフトの 長さや 角度の ちがいなどが 原因に なります。"
+  },
+  {
+   "id": "ch-hts",
+   "name": "高張力鋼板",
+   "reading": "こうちょうりょくこうはん",
+   "journey": "chassis",
+   "category": "車体",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🛡️",
+   "mapNode": "car:body",
+   "relatedTerms": [
+    "ch-monocoque",
+    "ch-crushablezone"
+   ],
+   "description": "ふつうの 鋼板より 引っぱりに 強い 鉄の 板です。うすくても 強いので、ボディを 軽く しながら ぶつかった ときの 強さを たもてます。ハイテンとも いいます。"
+  },
+  {
+   "id": "ch-inwheel",
+   "name": "インホイールモーター",
+   "reading": "いんほいーるもーたー",
+   "journey": "chassis",
+   "category": "駆動",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🛞",
+   "mapNode": "car:drive",
+   "relatedTerms": [
+    "ch-eaxle",
+    "ch-unsprung"
+   ],
+   "description": "ホイールの 中に モーターを 入れて、タイヤを じかに 回す しくみです。ドライブシャフトが いらず、4輪を べつべつに 制御できますが、ばね下が 重く なります。"
+  },
+  {
+   "id": "ch-eaxle",
+   "name": "eアクスル",
+   "reading": "いーあくする",
+   "journey": "chassis",
+   "category": "駆動",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔋",
+   "mapNode": "car:drive",
+   "relatedTerms": [
+    "ch-inwheel",
+    "ch-differential"
+   ],
+   "description": "モーター・インバーター・減速ギヤを 1つに まとめた 駆動の 装置です。電動車の タイヤを 回す ちからを 生み、小さく 軽く つくれます。"
   },
   {
    "id": "br-brake",
@@ -3715,6 +5663,966 @@
     "br-booster"
    ],
    "description": "ペダルが すばやく ふまれた ことから 急ブレーキだと 判断し、ブレーキの 力を 自動で 強める 機能。ふむ 力が 足りない ときを たすけます。"
+  },
+  {
+   "id": "br-fuminokori",
+   "name": "踏み残りしろ",
+   "reading": "ふみのこりしろ",
+   "journey": "brake",
+   "category": "ブレーキの基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🦶",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-pedalplay",
+    "br-pedal"
+   ],
+   "description": "ペダルを いっぱいに ふんだとき、ペダルと 床との あいだに のこる すきま。これが 少ないと、液の もれや 空気の まじりなどで ブレーキが きちんと きいていない おそれが あります。"
+  },
+  {
+   "id": "br-shim",
+   "name": "パッドシム",
+   "reading": "ぱっどしむ",
+   "journey": "brake",
+   "category": "ディスクブレーキ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🪶",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-pad",
+    "br-squeal"
+   ],
+   "description": "ブレーキパッドの 裏に はる うすい 板。パッドの 細かい ふるえを おさえて、ブレーキ鳴きを 出にくく します。"
+  },
+  {
+   "id": "br-katakiki",
+   "name": "片効き",
+   "reading": "かたきき",
+   "journey": "brake",
+   "category": "ブレーキのトラブル",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "↩️",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-drag",
+    "br-caliper"
+   ],
+   "description": "左右の タイヤで ブレーキの ききかたが ちがう 状態。ブレーキを かけると クルマが 片がわへ 引っぱられ、まっすぐ 止まれなく なります。"
+  },
+  {
+   "id": "br-backing",
+   "name": "バッキングプレート",
+   "reading": "ばっきんぐぷれーと",
+   "journey": "brake",
+   "category": "ドラムブレーキ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🛡️",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-drum",
+    "br-shoe"
+   ],
+   "description": "ドラムブレーキの 部品を とりつける 土台の 板。シューや ホイールシリンダーを ささえ、中に どろや 水が 入りにくく します。"
+  },
+  {
+   "id": "br-bleeder",
+   "name": "ブリーダープラグ",
+   "reading": "ぶりーだーぷらぐ",
+   "journey": "brake",
+   "category": "油圧のしくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🚰",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-air",
+    "br-caliper"
+   ],
+   "description": "キャリパーや ホイールシリンダーに ついている 小さな ねじ。ブレーキの 液の 通り道に 入った 空気を 外へ 出す ための 出口です。"
+  },
+  {
+   "id": "br-boot",
+   "name": "ピストンブーツ",
+   "reading": "ぴすとんぶーつ",
+   "journey": "brake",
+   "category": "ディスクブレーキ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧦",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-cpiston",
+    "br-pistonseal"
+   ],
+   "description": "キャリパーピストンの 外がわを おおう ゴムの カバー。どろや 水が 入って ピストンが さびたり 動きにくく なったり するのを ふせぎます。"
+  },
+  {
+   "id": "br-warnlamp",
+   "name": "ブレーキ警告灯",
+   "reading": "ぶれーきけいこくとう",
+   "journey": "brake",
+   "category": "ブレーキの基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "❗",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-reservoir",
+    "br-parking"
+   ],
+   "description": "メーターの 中で ブレーキの 異常を 知らせる ランプ。パーキングブレーキが かかったままの ときや、ブレーキの 液が へった ときなどに 光ります。"
+  },
+  {
+   "id": "br-anchor",
+   "name": "アンカーピン",
+   "reading": "あんかーぴん",
+   "journey": "brake",
+   "category": "ドラムブレーキ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📍",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-shoe",
+    "br-leadtrail"
+   ],
+   "description": "ドラムブレーキで シューの はしを ささえる ピン。シューは ここを 支点に して 広がり、ブレーキを かけた ときの 力も ここで うけとめます。"
+  },
+  {
+   "id": "br-support",
+   "name": "キャリパーサポート",
+   "reading": "きゃりぱーさぽーと",
+   "journey": "brake",
+   "category": "ディスクブレーキ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧱",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-floating",
+    "br-slidepin"
+   ],
+   "description": "車体がわに 固定されて、パッドと キャリパーを ささえる 金具。ブレーキを かけた ときに パッドが うける 大きな 力を うけとめます。"
+  },
+  {
+   "id": "br-slidepin",
+   "name": "スライドピン",
+   "reading": "すらいどぴん",
+   "journey": "brake",
+   "category": "ディスクブレーキ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📌",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-floating",
+    "br-support"
+   ],
+   "description": "フローティングキャリパーが 横に すべって 動く ための ピン。動きが 悪いと パッドが かたよって へったり、ブレーキが 引きずったり します。"
+  },
+  {
+   "id": "br-stopsw",
+   "name": "ストップランプスイッチ",
+   "reading": "すとっぷらんぷすいっち",
+   "journey": "brake",
+   "category": "ブレーキの基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔛",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-lamp",
+    "br-pedal"
+   ],
+   "description": "ブレーキペダルの 近くに ついていて、ペダルが ふまれた ことを 知らせる スイッチ。ブレーキランプを つけるほか、ECUにも ブレーキの 情報を つたえます。"
+  },
+  {
+   "id": "br-cup",
+   "name": "ピストンカップ",
+   "reading": "ぴすとんかっぷ",
+   "journey": "brake",
+   "category": "油圧のしくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🥤",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-wheelcyl",
+    "br-master"
+   ],
+   "description": "マスターシリンダーや ホイールシリンダーの ピストンに ついた ゴムの 部品。液を もらさずに おしだす 役目を します。"
+  },
+  {
+   "id": "br-hikishiro",
+   "name": "引きしろ",
+   "reading": "ひきしろ",
+   "journey": "brake",
+   "category": "パーキングブレーキ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🎚️",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-parking",
+    "br-pcable"
+   ],
+   "description": "パーキングブレーキの レバーを いっぱいに 引いたときに 動く 量。多すぎると ききが 弱く、少なすぎると 引きずりの もとに なるので、点検で 見ます。"
+  },
+  {
+   "id": "br-bdrum",
+   "name": "ブレーキドラム",
+   "reading": "ぶれーきどらむ",
+   "journey": "brake",
+   "category": "ドラムブレーキ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🥣",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-drum",
+    "br-lining"
+   ],
+   "description": "ホイールと いっしょに 回る、おわんの 形の 金属の 部品。内がわに シューが おしつけられて まさつが 生まれます。"
+  },
+  {
+   "id": "br-frictionmat",
+   "name": "摩擦材",
+   "reading": "まさつざい",
+   "journey": "brake",
+   "category": "ブレーキの基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧽",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-pad",
+    "br-lining"
+   ],
+   "description": "パッドや ライニングの、相手に こすれる 部分に 使う 材料。熱に 強く、ききが 安定し、へりにくく、鳴きにくい ことが もとめられます。"
+  },
+  {
+   "id": "br-judder",
+   "name": "ブレーキジャダー",
+   "reading": "ぶれーきじゃだー",
+   "journey": "brake",
+   "category": "ブレーキのトラブル",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "〰️",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-runout",
+    "br-rotor"
+   ],
+   "description": "ブレーキを かけると ハンドルや ペダルが ぶるぶる ふるえる 現象。ローターの 厚さの むらや 横ぶれが おもな 原因と 考えられます。"
+  },
+  {
+   "id": "br-checkvalve",
+   "name": "チェックバルブ",
+   "reading": "ちぇっくばるぶ",
+   "journey": "brake",
+   "category": "油圧のしくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "➡️",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-vacbooster",
+    "br-vacpump"
+   ],
+   "description": "真空式倍力装置へ つながる ホースに ある、空気を 一方向にしか 通さない 弁。エンジンが 止まっても、倍力装置の 中の 負圧を しばらく 保ちます。"
+  },
+  {
+   "id": "br-duoservo",
+   "name": "デュオサーボ式",
+   "reading": "でゅおさーぼしき",
+   "journey": "brake",
+   "category": "ドラムブレーキ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-selfservo",
+    "br-drumindisc"
+   ],
+   "description": "2まいの シューが つながり、前進でも 後退でも 自己倍力作用が 強く はたらく ドラムブレーキ。小さな 力で 大きく きくので、パーキングブレーキに 使われます。"
+  },
+  {
+   "id": "br-twolead",
+   "name": "ツーリーディング式",
+   "reading": "つーりーでぃんぐしき",
+   "journey": "brake",
+   "category": "ドラムブレーキ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⏩",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-leadtrail",
+    "br-selfservo"
+   ],
+   "description": "前進の とき 2まいの シューが どちらも 引きこまれる 向きに はたらく ドラムブレーキ。前進では よく ききますが、後退では ききが 弱く なります。"
+  },
+  {
+   "id": "br-drumindisc",
+   "name": "ドラムインディスク",
+   "reading": "どらむいんでぃすく",
+   "journey": "brake",
+   "category": "パーキングブレーキ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "💿",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-duoservo",
+    "br-parking"
+   ],
+   "description": "ディスクローターの 内がわに 小さな ドラムを もたせ、パーキングブレーキ 専用の ドラムブレーキを 組みこんだ つくり。"
+  },
+  {
+   "id": "br-wetbp",
+   "name": "ウェット沸点",
+   "reading": "うぇっとふってん",
+   "journey": "brake",
+   "category": "油圧のしくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌡️",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-hygro",
+    "br-dot"
+   ],
+   "description": "ブレーキの 液が 水分を すった 状態を まねて はかった、わきたつ 温度。液は 使ううちに 水を すうので、新しい ときの 値より 実際に 近い 目やすに なります。"
+  },
+  {
+   "id": "br-tcs",
+   "name": "トラクションコントロール",
+   "reading": "とらくしょんこんとろーる",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛞",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-wheelspeed",
+    "br-brakelsd"
+   ],
+   "description": "発進や 加速で タイヤが 空回り しそうな とき、エンジンの 力を おさえたり その タイヤに ブレーキを かけたり して、路面を つかむ 力を 取りもどす しくみ。"
+  },
+  {
+   "id": "br-hsa",
+   "name": "ヒルスタートアシスト",
+   "reading": "ひるすたーとあしすと",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⛰️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-hold",
+    "br-esc"
+   ],
+   "description": "坂道発進で ブレーキペダルから アクセルへ ふみかえる あいだ、ブレーキの 力を 少しの 時間 保って クルマが 下がるのを ふせぐ 機能。"
+  },
+  {
+   "id": "br-hold",
+   "name": "ブレーキホールド",
+   "reading": "ぶれーきほーるど",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "✋",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-epb",
+    "br-hsa"
+   ],
+   "description": "信号待ちなどで 止まったとき、ペダルから 足を はなしても ブレーキを かけたままに しておく 機能。走りだすと 自動で 外れます。"
+  },
+  {
+   "id": "br-nosedive",
+   "name": "ノーズダイブ",
+   "reading": "のーずだいぶ",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🐬",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-loadtransfer",
+    "br-antidive"
+   ],
+   "description": "強く ブレーキを かけたとき、クルマの 前が 沈みこみ 後ろが 持ちあがる 動き。重さの かかりかたが 前へ 移るために おこります。"
+  },
+  {
+   "id": "br-sensorrotor",
+   "name": "センサーローター",
+   "reading": "せんさーろーたー",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⚙️",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "br-wheelspeed",
+    "br-activess"
+   ],
+   "description": "タイヤと いっしょに 回る、歯や 磁石が ならんだ 輪。車輪速センサーは これが 通りすぎる ようすを 読んで 回る 速さを 知ります。"
+  },
+  {
+   "id": "br-vacpump",
+   "name": "バキュームポンプ",
+   "reading": "ばきゅーむぽんぷ",
+   "journey": "brake",
+   "category": "油圧のしくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-vacbooster",
+    "br-checkvalve"
+   ],
+   "description": "倍力装置に 使う 負圧を つくる ポンプ。吸気で できる 負圧が 足りない ディーゼル車などで 使われます。"
+  },
+  {
+   "id": "br-airbrake",
+   "name": "エアブレーキ",
+   "reading": "えあぶれーき",
+   "journey": "brake",
+   "category": "ブレーキの基本",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🚛",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-exhaustbrake",
+    "br-springbrake"
+   ],
+   "description": "大型の トラックや バスで 使われる、ためた 圧縮空気の 力で ブレーキを かける しくみ。大きく 重い クルマでも 強い 力が 出せます。"
+  },
+  {
+   "id": "br-exhaustbrake",
+   "name": "排気ブレーキ",
+   "reading": "はいきぶれーき",
+   "journey": "brake",
+   "category": "ブレーキの基本",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "💨",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-enginebrake",
+    "br-retarder"
+   ],
+   "description": "排気の 通り道を 弁で しぼり、エンジンブレーキを 強める 補助の ブレーキ。大型車で、長い 下り坂での フットブレーキの 使いすぎを ふせぎます。"
+  },
+  {
+   "id": "br-waterfade",
+   "name": "ウォーターフェード",
+   "reading": "うぉーたーふぇーど",
+   "journey": "brake",
+   "category": "ブレーキのトラブル",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "💧",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-fade",
+    "br-drum"
+   ],
+   "description": "水たまりや 洗車で ブレーキが ぬれ、まさつが 小さく なって 一時的に ききが 悪くなる 現象。水が ぬけにくい ドラムブレーキで とくに おきやすいです。"
+  },
+  {
+   "id": "br-regencoop",
+   "name": "回生協調ブレーキ",
+   "reading": "かいせいきょうちょうぶれーき",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "♻️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-bbw",
+    "br-strokesim"
+   ],
+   "description": "モーターの 回生で 止める 力と、ふつうの ブレーキの 力を あわせて、ペダルの ふみかたどおりに 止める 制御。回生を 多く 使うほど 電気を 取りもどせます。"
+  },
+  {
+   "id": "br-bbw",
+   "name": "ブレーキバイワイヤ",
+   "reading": "ぶれーきばいわいや",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔌",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-strokesim",
+    "br-regencoop"
+   ],
+   "description": "ペダルの ふみかたを センサーで 電気の 信号に かえ、コンピューターが ブレーキの 力を 決める しくみ。自動ブレーキや 回生との 組みあわせを こまかく 制御できます。"
+  },
+  {
+   "id": "br-strokesim",
+   "name": "ストロークシミュレーター",
+   "reading": "すとろーくしみゅれーたー",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎮",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-bbw",
+    "br-pedal"
+   ],
+   "description": "ブレーキバイワイヤで、ペダルに ふつうの ブレーキと 同じような ふみごたえを つくる 装置。運転する 人が 力の かげんを しやすく なります。"
+  },
+  {
+   "id": "br-ebooster",
+   "name": "電動倍力装置",
+   "reading": "でんどうばいりょくそうち",
+   "journey": "brake",
+   "category": "油圧のしくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔋",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-booster",
+    "br-vacbooster"
+   ],
+   "description": "負圧の かわりに モーターの 力で ペダルの 力を 大きくする 倍力装置。エンジンの 負圧に たよらないので、電気自動車や 自動ブレーキとの 組みあわせに むいています。"
+  },
+  {
+   "id": "br-prefill",
+   "name": "プレフィル",
+   "reading": "ぷれふぃる",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⏱️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-autobrake",
+    "br-brakeassist"
+   ],
+   "description": "ぶつかる おそれを 見つけた とき、前もって ブレーキに 少し 液圧を かけ、パッドと ローターの すきまを つめておく 制御。ブレーキが きき始めるまでの 時間を 短く します。"
+  },
+  {
+   "id": "br-ttc",
+   "name": "衝突余裕時間",
+   "reading": "しょうとつよゆうじかん",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⌛",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-autobrake",
+    "br-prefill"
+   ],
+   "description": "今の まま 進むと あと 何秒で ぶつかるかを しめす 目やす。前の ものとの きょりを、近づく 速さで わって もとめます。自動ブレーキは これを 見て 警報や ブレーキの 時期を 決めます。"
+  },
+  {
+   "id": "br-loadtransfer",
+   "name": "荷重移動",
+   "reading": "かじゅういどう",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-nosedive",
+    "br-idealdist"
+   ],
+   "description": "ブレーキで 減速すると、クルマの 重さの かかりかたが 前輪へ うつる こと。前輪は 強く おさえられて 大きな 力を 出せ、後輪は 軽く なって ロックしやすく なります。"
+  },
+  {
+   "id": "br-roadmu",
+   "name": "路面μ",
+   "reading": "ろめんみゅー",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🛣️",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "br-frictioncircle",
+    "br-splitmu"
+   ],
+   "description": "タイヤと 路面の あいだの すべりにくさを あらわす 数。かわいた 舗装では 大きく、ぬれた 路面や 雪・氷では 小さく なり、その ぶん 止まる きょりが のびます。"
+  },
+  {
+   "id": "br-frictioncircle",
+   "name": "摩擦円",
+   "reading": "まさつえん",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⭕",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "br-roadmu",
+    "br-muslip"
+   ],
+   "description": "タイヤが 路面に 出せる 力の 限界を、前後と 横の 向きを あわせて 円で あらわした 考えかた。強く ブレーキを かけながら 曲がると、横に 使える 力が へります。"
+  },
+  {
+   "id": "br-muslip",
+   "name": "ミュースリップ特性",
+   "reading": "みゅーすりっぷとくせい",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "br-slip",
+    "br-frictioncircle"
+   ],
+   "description": "スリップ率と、タイヤが 出せる 止める 力の 関係。少し すべる ところで いちばん 大きく なり、ロックに 近づくと 止める 力も 横の 力も 小さく なります。ABSは その 山の 近くを ねらいます。"
+  },
+  {
+   "id": "br-idealdist",
+   "name": "理想制動力配分",
+   "reading": "りそうせいどうりょくはいぶん",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📊",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-ebd",
+    "br-loadtransfer"
+   ],
+   "description": "前輪と 後輪が 同時に ロックの 限界に なる、ブレーキの 力の 分けかた。荷重移動で 前輪の ぶんが 多く なり、乗る 人や 荷物の 重さでも かわります。"
+  },
+  {
+   "id": "br-antidive",
+   "name": "アンチダイブ",
+   "reading": "あんちだいぶ",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🪝",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-nosedive",
+    "br-loadtransfer"
+   ],
+   "description": "サスペンションの 取りつけの 角度を くふうして、ブレーキの ときに クルマの 前が 沈みこむ 動きを 小さく する つくり。"
+  },
+  {
+   "id": "br-yawmoment",
+   "name": "ヨーモーメント",
+   "reading": "よーもーめんと",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔃",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-esc",
+    "br-yawrate"
+   ],
+   "description": "クルマを 上から 見て、その場で 回そうとする 力の はたらき。横すべり防止装置は タイヤ1つずつに ブレーキを かけて この 力を つくり、向きを 立てなおします。"
+  },
+  {
+   "id": "br-yawrate",
+   "name": "ヨーレートセンサー",
+   "reading": "よーれーとせんさー",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧭",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-esc",
+    "br-yawmoment"
+   ],
+   "description": "クルマの 向きが 変わる 速さを はかる センサー。運転する 人の ねらった 動きと、じっさいの 動きの ちがいを 見つける ために 使います。"
+  },
+  {
+   "id": "br-steerangle",
+   "name": "舵角センサー",
+   "reading": "だかくせんさー",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎡",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-esc",
+    "br-yawrate"
+   ],
+   "description": "ハンドルを どの 向きに どれだけ 切ったかを はかる センサー。横すべり防止装置は これで 運転する 人が どこへ 行きたいかを 知ります。"
+  },
+  {
+   "id": "br-latg",
+   "name": "横Gセンサー",
+   "reading": "よこじーせんさー",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "↔️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-yawrate",
+    "br-esc"
+   ],
+   "description": "クルマに かかる 横向きの 加速度を はかる センサー。カーブで どれだけ 横に ふられて いるかを 知り、横すべりの ぐあいを 見きわめます。"
+  },
+  {
+   "id": "br-splitmu",
+   "name": "スプリットμ路",
+   "reading": "すぷりっとみゅーろ",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧊",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "br-selectlow",
+    "br-roadmu"
+   ],
+   "description": "左右の タイヤで すべりやすさが ちがう 路面。片がわだけ 雪や 氷の 道で 強く ブレーキを かけると、左右の 力の 差で クルマが 回ろうと します。"
+  },
+  {
+   "id": "br-selectlow",
+   "name": "セレクトロー制御",
+   "reading": "せれくとろーせいぎょ",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔽",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-splitmu",
+    "br-abs"
+   ],
+   "description": "左右の 後輪の うち、先に ロックしそうな ほうに あわせて 両方の ブレーキの 力を そろえる ABSの 制御。止まる 力は 少し へりますが、後ろの ふらつきを おさえます。"
+  },
+  {
+   "id": "br-absmode",
+   "name": "増圧・保持・減圧",
+   "reading": "ぞうあつほじげんあつ",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-absact",
+    "br-returnpump"
+   ],
+   "description": "ABSが タイヤごとの ブレーキの 液圧を 調整する 3つの 動き。上げる・そのまま 保つ・下げるを すばやく くりかえし、ロックしない ぎりぎりを 保ちます。"
+  },
+  {
+   "id": "br-returnpump",
+   "name": "リターンポンプ",
+   "reading": "りたーんぽんぷ",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⤴️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-absact",
+    "br-absmode"
+   ],
+   "description": "ABSアクチュエーターの 中の ポンプ。液圧を 下げる ときに 逃がした ブレーキの 液を、マスターシリンダーがわへ もどします。"
+  },
+  {
+   "id": "br-activess",
+   "name": "アクティブ型車輪速センサー",
+   "reading": "あくてぃぶがたしゃりんそくせんさー",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📶",
+   "mapNode": "car:tire",
+   "relatedTerms": [
+    "br-wheelspeed",
+    "br-sensorrotor"
+   ],
+   "description": "電源を もらって はたらき、回る 速さを 形の そろった パルスの 信号で 出す 車輪速センサー。止まる 直前の とても おそい 回りまで 読みとれます。"
+  },
+  {
+   "id": "br-mcpress",
+   "name": "マスターシリンダー圧センサー",
+   "reading": "ますたーしりんだーあつせんさー",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎛️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-master",
+    "br-brakeassist"
+   ],
+   "description": "マスターシリンダーで 生まれた ブレーキの 液圧を はかる センサー。運転する 人が どれだけ 強く ふんだかを 知り、ブレーキアシストや 横すべり防止装置に 使います。"
+  },
+  {
+   "id": "br-retarder",
+   "name": "リターダー",
+   "reading": "りたーだー",
+   "journey": "brake",
+   "category": "ブレーキの基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧲",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-exhaustbrake",
+    "br-airbrake"
+   ],
+   "description": "大型の トラックや バスに つく 補助の ブレーキ。電磁石や 液体の 抵抗を 使って、まさつを 使わずに スピードを おさえ、フットブレーキの 負担を へらします。"
+  },
+  {
+   "id": "br-springbrake",
+   "name": "スプリングブレーキ",
+   "reading": "すぷりんぐぶれーき",
+   "journey": "brake",
+   "category": "パーキングブレーキ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-airbrake",
+    "br-parking"
+   ],
+   "description": "エアブレーキの 大型車で 使われる、強い ばねの 力で かける ブレーキ。圧縮空気で ばねを おさえて 外すので、空気が 抜けると ブレーキが かかる がわに はたらきます。"
+  },
+  {
+   "id": "br-override",
+   "name": "ブレーキオーバーライド",
+   "reading": "ぶれーきおーばーらいど",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚫",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-stopsw",
+    "br-brakeassist"
+   ],
+   "description": "アクセルと ブレーキが 同時に ふまれた とき、ブレーキを 優先して エンジンなどの 力を おさえる 制御。ふみまちがいや ペダルの ひっかかりに そなえます。"
+  },
+  {
+   "id": "br-estspeed",
+   "name": "推定車体速度",
+   "reading": "すいていしゃたいそくど",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧮",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-slip",
+    "br-wheelspeed"
+   ],
+   "description": "4つの 車輪速センサーの 値から ECUが 見つもる クルマ全体の 速さ。ABSは これと タイヤ1つずつの 速さを くらべて、スリップ率を 知ります。"
+  },
+  {
+   "id": "br-initspeed",
+   "name": "制動初速度",
+   "reading": "せいどうしょそくど",
+   "journey": "brake",
+   "category": "止まる力学",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🏁",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-seidou",
+    "br-stopdist"
+   ],
+   "description": "ブレーキが きき始めた ときの クルマの 速さ。制動距離は この 速さの 2乗に ほぼ 比例するので、速さが 2倍に なると 止まる きょりは 約4倍に なります。"
+  },
+  {
+   "id": "br-reactiondisc",
+   "name": "リアクションディスク",
+   "reading": "りあくしょんでぃすく",
+   "journey": "brake",
+   "category": "油圧のしくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔘",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-vacbooster",
+    "br-booster"
+   ],
+   "description": "倍力装置の 中に ある ゴムの 円い 板。出す 力の 一部を ペダルへ はね返し、ふむ 強さに おうじた ふみごたえを 運転する 人に つたえます。"
+  },
+  {
+   "id": "br-brakelsd",
+   "name": "ブレーキLSD",
+   "reading": "ぶれーきえるえすでぃー",
+   "journey": "brake",
+   "category": "電子制御",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🦶",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "br-tcs",
+    "br-wheelspeed"
+   ],
+   "description": "空回り した タイヤだけに ブレーキを かけて、反対がわの タイヤへ 力を まわす 制御。ぬかるみなどで 片がわが すべっても 進めるように します。"
+  },
+  {
+   "id": "br-runout",
+   "name": "ランアウト",
+   "reading": "らんあうと",
+   "journey": "brake",
+   "category": "ディスクブレーキ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "car:brake",
+   "relatedTerms": [
+    "br-judder",
+    "br-rotor"
+   ],
+   "description": "ディスクローターが 回るときの 横ぶれ。ぶれが 大きいと パッドが ふれる 場所に むらが でき、厚さの むらを 生んで ブレーキジャダーの もとに なります。"
   },
   {
    "id": "el-battery",
@@ -4696,6 +7604,966 @@
    "description": "電気が 流れては いけない ところへ もれないように、電気を 通さない もので へだてること。高電圧の 部品は 車体から しっかり 絶縁されています。"
   },
   {
+   "id": "el-fusiblelink",
+   "name": "ヒュージブルリンク",
+   "reading": "ひゅーじぶるりんく",
+   "journey": "elec",
+   "category": "電気の基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔥",
+   "mapNode": "car:battery",
+   "relatedTerms": [
+    "el-fuse",
+    "el-short"
+   ],
+   "description": "バッテリーの 近くに ある、大きな 電流の 通り道を 守る 部品。ヒューズと 同じく、流れすぎると とけて 回路を 切り、配線が 焼けるのを ふせぎます。"
+  },
+  {
+   "id": "el-plate",
+   "name": "極板",
+   "reading": "きょくばん",
+   "journey": "elec",
+   "category": "バッテリー",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔲",
+   "mapNode": "car:battery",
+   "relatedTerms": [
+    "el-electrolyte",
+    "el-sulfation"
+   ],
+   "description": "バッテリーの 中に ならぶ プラスと マイナスの 板。電解液に ひたされ、この 板の 表面で おこる 化学の 変化で 電気を ためたり 出したり します。"
+  },
+  {
+   "id": "el-terminal",
+   "name": "バッテリーターミナル",
+   "reading": "ばってりーたーみなる",
+   "journey": "elec",
+   "category": "バッテリー",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔩",
+   "mapNode": "car:battery",
+   "relatedTerms": [
+    "el-battery",
+    "el-ground"
+   ],
+   "description": "バッテリーの プラスと マイナスの 電極と、配線を つなぐ 金具。ゆるみや 白い 粉の ような さびが あると、電気が うまく 流れません。"
+  },
+  {
+   "id": "el-mfbattery",
+   "name": "メンテナンスフリーバッテリー",
+   "reading": "めんてなんすふりーばってりー",
+   "journey": "elec",
+   "category": "バッテリー",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔋",
+   "mapNode": "car:battery",
+   "relatedTerms": [
+    "el-battery",
+    "el-indicator"
+   ],
+   "description": "液が へりにくく なるように つくられた バッテリー。液の 補給を ほとんど 必要と しません。"
+  },
+  {
+   "id": "el-indicator",
+   "name": "バッテリーインジケーター",
+   "reading": "ばってりーいんじけーたー",
+   "journey": "elec",
+   "category": "バッテリー",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "👁️",
+   "mapNode": "car:battery",
+   "relatedTerms": [
+    "el-gravity",
+    "el-mfbattery"
+   ],
+   "description": "バッテリーの 上に ある 小さな のぞき窓。見える 色で、充電の ぐあいや 液の 量の 目やすを 知らせます。"
+  },
+  {
+   "id": "el-brush",
+   "name": "カーボンブラシ",
+   "reading": "かーぼんぶらし",
+   "journey": "elec",
+   "category": "始動・発電",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🖌️",
+   "mapNode": "car:engine",
+   "relatedTerms": [
+    "el-rotorcoil",
+    "el-starter"
+   ],
+   "description": "オルタネーターや スターターで、回る 部分に こすれながら 電気を 通す 小さな 炭素の かたまり。使うと すりへります。"
+  },
+  {
+   "id": "el-rotorcoil",
+   "name": "ローターコイル",
+   "reading": "ろーたーこいる",
+   "journey": "elec",
+   "category": "始動・発電",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧲",
+   "mapNode": "car:engine",
+   "relatedTerms": [
+    "el-stator",
+    "el-regulator"
+   ],
+   "description": "オルタネーターの 中で 回る コイル。電気を 流すと 電磁石に なり、回りながら まわりの ステーターコイルに 電気を 生みだします。"
+  },
+  {
+   "id": "el-fog",
+   "name": "フォグランプ",
+   "reading": "ふぉぐらんぷ",
+   "journey": "elec",
+   "category": "灯火・装備",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🌫️",
+   "mapNode": "car:body",
+   "relatedTerms": [
+    "el-headlamp",
+    "el-highbeam"
+   ],
+   "description": "きりや 大雨で 前が 見えにくい ときに 使う ランプ。低い 位置から 光を 広く 照らし、まわりに 自分の クルマを 知らせます。"
+  },
+  {
+   "id": "el-highbeam",
+   "name": "ハイビーム",
+   "reading": "はいびーむ",
+   "journey": "elec",
+   "category": "灯火・装備",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔦",
+   "mapNode": "car:body",
+   "relatedTerms": [
+    "el-headlamp",
+    "el-autohigh"
+   ],
+   "description": "ヘッドランプの うち、遠くまで 照らす 光。前に クルマが いない 暗い 道で 使い、対向車が いる ときは まぶしくない 光に 切りかえます。"
+  },
+  {
+   "id": "el-shahaba",
+   "name": "車幅灯",
+   "reading": "しゃはばとう",
+   "journey": "elec",
+   "category": "灯火・装備",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔸",
+   "mapNode": "car:body",
+   "relatedTerms": [
+    "el-tail",
+    "el-headlamp"
+   ],
+   "description": "クルマの 前の 左右に ある 小さな ランプ。夕方などに つけて、クルマの 幅と いる ことを まわりに 知らせます。ポジションランプとも いいます。"
+  },
+  {
+   "id": "el-backup",
+   "name": "後退灯",
+   "reading": "こうたいとう",
+   "journey": "elec",
+   "category": "灯火・装備",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⚪",
+   "mapNode": "car:body",
+   "relatedTerms": [
+    "el-tail",
+    "el-ultrasonic"
+   ],
+   "description": "シフトを 後退に 入れると、クルマの 後ろで 白く 光る ランプ。後ろを 照らし、バックする ことを まわりに 知らせます。"
+  },
+  {
+   "id": "el-flasher",
+   "name": "フラッシャーユニット",
+   "reading": "ふらっしゃーゆにっと",
+   "journey": "elec",
+   "category": "灯火・装備",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⏯️",
+   "mapNode": "car:body",
+   "relatedTerms": [
+    "el-turn",
+    "el-hazard"
+   ],
+   "description": "ウインカーや ハザードランプを 決まった 速さで 点めつさせる 部品。電球が 切れると 点めつが 速く なって 知らせる ものも あります。"
+  },
+  {
+   "id": "el-defogger",
+   "name": "デフォッガー",
+   "reading": "でふぉっがー",
+   "journey": "elec",
+   "category": "灯火・装備",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "♨️",
+   "mapNode": "car:body",
+   "relatedTerms": [
+    "el-power",
+    "el-relay"
+   ],
+   "description": "後ろの ガラスに はられた 細い 熱線に 電気を 流し、くもりや しもを とかす 装置。電気を 多く 使う 電装品です。"
+  },
+  {
+   "id": "el-iat",
+   "name": "吸気温センサー",
+   "reading": "きゅうきおんせんさー",
+   "journey": "elec",
+   "category": "センサー",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🌡️",
+   "mapNode": "car:engine",
+   "relatedTerms": [
+    "el-afm",
+    "el-watertemp"
+   ],
+   "description": "エンジンが すいこむ 空気の 温度を はかる センサー。空気は 冷たいほど こいので、ECUは この 温度も 見て 燃料の 量を 整えます。"
+  },
+  {
+   "id": "el-vss",
+   "name": "車速センサー",
+   "reading": "しゃそくせんさー",
+   "journey": "elec",
+   "category": "センサー",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🚗",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-ecu",
+    "el-can"
+   ],
+   "description": "クルマの 走る 速さを はかる センサー。スピードメーターや、ATの 変速、エンジンの 制御などに 使われます。"
+  },
+  {
+   "id": "el-cca",
+   "name": "CCA",
+   "reading": "しーしーえー",
+   "journey": "elec",
+   "category": "バッテリー",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🥶",
+   "mapNode": "car:battery",
+   "relatedTerms": [
+    "el-battery",
+    "el-capacity5"
+   ],
+   "description": "寒い ときに バッテリーが、エンジンを かける ための 大きな 電流を どれだけ 出せるかを しめす 数。大きいほど 冬の 始動に 強い バッテリーです。"
+  },
+  {
+   "id": "el-capacity5",
+   "name": "5時間率容量",
+   "reading": "ごじかんりつようりょう",
+   "journey": "elec",
+   "category": "バッテリー",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🕔",
+   "mapNode": "car:battery",
+   "relatedTerms": [
+    "el-cca",
+    "el-battery"
+   ],
+   "description": "バッテリーが ためられる 電気の 量を あらわす 数の 1つ。一定の 電流で 5時間 かけて 出しきれる 電気の 量を、アンペアアワーで あらわします。"
+  },
+  {
+   "id": "el-camangle",
+   "name": "カム角センサー",
+   "reading": "かむかくせんさー",
+   "journey": "elec",
+   "category": "センサー",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "car:engine",
+   "relatedTerms": [
+    "el-crankangle",
+    "el-hall"
+   ],
+   "description": "カムシャフトの 回る 位置を はかる センサー。クランク角センサーと あわせて、いま どの シリンダーが どの 行程かを ECUが 見分けます。"
+  },
+  {
+   "id": "el-app",
+   "name": "アクセルポジションセンサー",
+   "reading": "あくせるぽじしょんせんさー",
+   "journey": "elec",
+   "category": "センサー",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🦶",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-tps",
+    "el-ecu"
+   ],
+   "description": "アクセルペダルが どれだけ ふまれたかを はかる センサー。ECUは この 信号を もとに、スロットルバルブを モーターで 開け閉め します。"
+  },
+  {
+   "id": "el-thermistor",
+   "name": "サーミスター",
+   "reading": "さーみすたー",
+   "journey": "elec",
+   "category": "センサー",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌡️",
+   "mapNode": "car:engine",
+   "relatedTerms": [
+    "el-watertemp",
+    "el-iat"
+   ],
+   "description": "温度で 電気の 通しやすさが 大きく かわる 部品。水温センサーや 吸気温センサーの 中で、温度を はかる 役目を します。"
+  },
+  {
+   "id": "el-hall",
+   "name": "ホール素子",
+   "reading": "ほーるそし",
+   "journey": "elec",
+   "category": "センサー",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧲",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-camangle",
+    "el-crankangle"
+   ],
+   "description": "磁石の 力を 感じとって 電気の 信号を 出す 部品。回る 部品の 位置や 速さを はかる センサーに 使われ、ゆっくり 回っても 信号が 出せます。"
+  },
+  {
+   "id": "el-failsafe",
+   "name": "フェイルセーフ",
+   "reading": "ふぇいるせーふ",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛟",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-limphome",
+    "el-dtc"
+   ],
+   "description": "センサーなどが こわれた ときに、ECUが 決まった かわりの 値を 使うなどして、クルマを 安全な がわに たもつ 考えかた。"
+  },
+  {
+   "id": "el-acc",
+   "name": "アダプティブクルーズコントロール",
+   "reading": "あだぷてぃぶくるーずこんとろーる",
+   "journey": "elec",
+   "category": "運転支援",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🚙",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-radar",
+    "el-camera"
+   ],
+   "description": "決めた 速さで 走りながら、前の クルマとの きょりを レーダーなどで はかり、アクセルと ブレーキを 自動で 調整して ついていく 機能。"
+  },
+  {
+   "id": "el-lka",
+   "name": "車線維持支援",
+   "reading": "しゃせんいじしえん",
+   "journey": "elec",
+   "category": "運転支援",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛣️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-camera",
+    "el-sensorfusion"
+   ],
+   "description": "カメラで 白線を 読みとり、車線から はみ出しそうな ときに 知らせたり、ハンドルの 操作を 助けたり する 機能。"
+  },
+  {
+   "id": "el-bsm",
+   "name": "ブラインドスポットモニター",
+   "reading": "ぶらいんどすぽっともにたー",
+   "journey": "elec",
+   "category": "運転支援",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🪞",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-radar",
+    "el-ultrasonic"
+   ],
+   "description": "ななめ後ろの ミラーで 見えにくい ところに いる クルマを レーダーで 見つけ、ミラーの 近くの ランプなどで 知らせる 機能。"
+  },
+  {
+   "id": "el-autohigh",
+   "name": "オートハイビーム",
+   "reading": "おーとはいびーむ",
+   "journey": "elec",
+   "category": "運転支援",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔆",
+   "mapNode": "car:body",
+   "relatedTerms": [
+    "el-highbeam",
+    "el-camera"
+   ],
+   "description": "カメラで 前の クルマや 対向車の 光を 見つけ、ハイビームと 手前を 照らす 光を 自動で 切りかえる 機能。"
+  },
+  {
+   "id": "el-immobi",
+   "name": "イモビライザー",
+   "reading": "いもびらいざー",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗝️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-ecu",
+    "el-starter"
+   ],
+   "description": "キーに うめこまれた 番号を クルマが 読みとり、登録された キーで なければ エンジンが かからないように する 盗難防止の しくみ。"
+  },
+  {
+   "id": "el-normalcharge",
+   "name": "普通充電",
+   "reading": "ふつうじゅうでん",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏠",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-quickcharge",
+    "el-v2h"
+   ],
+   "description": "家や 施設の 交流の 電源から、時間を かけて 駆動用バッテリーに 電気を ためる 方法。ひと晩 かけて ためる ことが 多いです。"
+  },
+  {
+   "id": "el-series",
+   "name": "シリーズ式ハイブリッド",
+   "reading": "しりーずしきはいぶりっど",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔗",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-parallel",
+    "el-hybrid"
+   ],
+   "description": "エンジンは 発電だけに 使い、その 電気で モーターを 回して 走る ハイブリッドの 方式。タイヤを 回すのは モーターだけです。"
+  },
+  {
+   "id": "el-parallel",
+   "name": "パラレル式ハイブリッド",
+   "reading": "ぱられるしきはいぶりっど",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔀",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-series",
+    "el-hybrid"
+   ],
+   "description": "エンジンと モーターの 両方が タイヤを 回せる ハイブリッドの 方式。場面に あわせて どちらか、または 両方の 力で 走ります。"
+  },
+  {
+   "id": "el-pwm",
+   "name": "PWM制御",
+   "reading": "ぴーだぶりゅーえむせいぎょ",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📶",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-duty",
+    "el-inverter"
+   ],
+   "description": "電気を とても 速く 入れたり 切ったり して、入れている 時間の 割合で 平均の 強さを 調整する 制御。モーターの 速さや ランプの 明るさなどを こまかく かえられます。"
+  },
+  {
+   "id": "el-duty",
+   "name": "デューティ比",
+   "reading": "でゅーてぃひ",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⏲️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-pwm",
+    "el-ecu"
+   ],
+   "description": "入れたり 切ったりを くりかえす 信号で、1回の くりかえしの うち 入っている 時間の 割合。パーセントで あらわし、大きいほど 平均の 電気が 強く なります。"
+  },
+  {
+   "id": "el-lin",
+   "name": "LIN通信",
+   "reading": "りんつうしん",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧵",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-can",
+    "el-gateway"
+   ],
+   "description": "ドアや ミラー、シートなど、速さが それほど いらない 装置どうしを 1本の 線で つなぐ 車の 中の 通信。CANより 簡単で 安く つくれます。"
+  },
+  {
+   "id": "el-gateway",
+   "name": "ゲートウェイ",
+   "reading": "げーとうぇい",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚪",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-can",
+    "el-lin"
+   ],
+   "description": "しくみの ちがう 車の 中の 通信の あいだに 立ち、必要な 情報を 受けわたす 役目の ECU。外から つないだ 診断の 機械との やりとりの 窓口にも なります。"
+  },
+  {
+   "id": "el-termres",
+   "name": "終端抵抗",
+   "reading": "しゅうたんていこう",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔚",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-can",
+    "el-twisted"
+   ],
+   "description": "CAN通信の 線の 両はしに つける 抵抗。信号が はしで はね返って みだれるのを ふせぎます。線の 切れや ショートを 考える 手がかりにも なります。"
+  },
+  {
+   "id": "el-twisted",
+   "name": "ツイストペア線",
+   "reading": "ついすとぺあせん",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧶",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-can",
+    "el-termres"
+   ],
+   "description": "2本の 電線を より合わせた 線。CAN通信では 2本の 電圧の 差で 信号を 送り、より合わせる ことで 外からの 電気の じゃまを うけにくく します。"
+  },
+  {
+   "id": "el-limphome",
+   "name": "リンプホーム",
+   "reading": "りんぷほーむ",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🐢",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-failsafe",
+    "el-warning"
+   ],
+   "description": "大事な 部品が こわれた とき、出力を おさえて 安全な 場所まで 走れるように する 退避の 走りかた。"
+  },
+  {
+   "id": "el-learning",
+   "name": "学習制御",
+   "reading": "がくしゅうせいぎょ",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📚",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-fueltrim",
+    "el-ecu"
+   ],
+   "description": "部品の ばらつきや 使ううちの 変化を ECUが 覚えて、つぎからの 制御に 生かす しくみ。部品を かえた あとは 覚えなおしが いる ことも あります。"
+  },
+  {
+   "id": "el-waveform",
+   "name": "波形観測",
+   "reading": "はけいかんそく",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "car:engine",
+   "relatedTerms": [
+    "el-o2",
+    "el-fueltrim"
+   ],
+   "description": "センサーなどの 電気の 信号を、オシロスコープで 波の 形として 見る こと。数字だけでは わからない 一瞬の みだれや 途切れを 見つけられます。"
+  },
+  {
+   "id": "el-fueltrim",
+   "name": "燃料トリム",
+   "reading": "ねんりょうとりむ",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "car:engine",
+   "relatedTerms": [
+    "el-waveform",
+    "el-learning"
+   ],
+   "description": "ECUが 燃料を 基本の 量から どれだけ ふやしたり へらしたり して いるかを あらわす 値。大きく かたよって いれば、空気の もれや センサーの 不具合を うたがう 手がかりに なります。"
+  },
+  {
+   "id": "el-datamonitor",
+   "name": "データモニター",
+   "reading": "でーたもにたー",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📊",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-activetest",
+    "el-freeze"
+   ],
+   "description": "故障診断の 機械で、センサーの 値や ECUの 指示を 動かしながら 見る 機能。正しい 値と くらべて、どこが おかしいかを しぼりこみます。"
+  },
+  {
+   "id": "el-activetest",
+   "name": "アクティブテスト",
+   "reading": "あくてぃぶてすと",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🕹️",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-datamonitor",
+    "el-dtc"
+   ],
+   "description": "故障診断の 機械から ECUに 指示を 出し、ファンや 弁などの 部品を 動かして みる 機能。部品が 悪いのか、配線や ECUが 悪いのかを 見分ける 手がかりに なります。"
+  },
+  {
+   "id": "el-readiness",
+   "name": "レディネス",
+   "reading": "れでぃねす",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "✅",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-obd",
+    "el-dtc"
+   ],
+   "description": "OBDが 排出ガスに かかわる 部品の 自己点検を 終えたかどうかを しめす 情報。故障コードを 消した あとなどは、まだ 点検が 終わって いない 状態に もどります。"
+  },
+  {
+   "id": "el-intermittent",
+   "name": "間欠故障",
+   "reading": "かんけつこしょう",
+   "journey": "elec",
+   "category": "ECU・診断",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "❓",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-freeze",
+    "el-connector"
+   ],
+   "description": "起きたり 起きなかったり する 故障。見ている ときに 出ないので 見つけにくく、フリーズフレームデータや コネクターの ゆるみなどが 手がかりに なります。"
+  },
+  {
+   "id": "el-stereo",
+   "name": "ステレオカメラ",
+   "reading": "すてれおかめら",
+   "journey": "elec",
+   "category": "運転支援",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "👀",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-camera",
+    "el-lidar"
+   ],
+   "description": "左右に ならべた 2つの カメラ。人の 両目と 同じように、2つの 画像の ずれから 前の ものまでの きょりを はかります。"
+  },
+  {
+   "id": "el-lidar",
+   "name": "LiDAR",
+   "reading": "らいだー",
+   "journey": "elec",
+   "category": "運転支援",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔦",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-radar",
+    "el-sensorfusion"
+   ],
+   "description": "目に 見えない レーザーの 光を 出して はね返りを 受け、まわりの ものの 形と きょりを こまかく はかる センサー。"
+  },
+  {
+   "id": "el-sensorfusion",
+   "name": "センサーフュージョン",
+   "reading": "せんさーふゅーじょん",
+   "journey": "elec",
+   "category": "運転支援",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧩",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-camera",
+    "el-radar"
+   ],
+   "description": "カメラや レーダーなど、とくいな ことの ちがう センサーの 情報を あわせて、まわりの ようすを より 正しく つかむ 考えかた。"
+  },
+  {
+   "id": "el-adlevel",
+   "name": "自動運転レベル",
+   "reading": "じどううんてんれべる",
+   "journey": "elec",
+   "category": "運転支援",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🪜",
+   "mapNode": "car:ecu",
+   "relatedTerms": [
+    "el-acc",
+    "el-lka"
+   ],
+   "description": "自動運転の 進みぐあいを 0から 5までの 6段階で あらわした もの。レベル2までは 運転する 人が 主役で、レベル3から 条件つきで システムが 運転を うけもちます。"
+  },
+  {
+   "id": "el-48v",
+   "name": "48V電源",
+   "reading": "よんじゅうはちぼるとでんげん",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔋",
+   "mapNode": "car:battery",
+   "relatedTerms": [
+    "el-dcdc",
+    "el-battery"
+   ],
+   "description": "ふつうの 12Vより 高い 48Vの 電気の しくみ。同じ 電力を 少ない 電流で 送れるので、小さな モーターで エンジンを 助ける ハイブリッドなどに 使われます。"
+  },
+  {
+   "id": "el-fcv",
+   "name": "燃料電池車",
+   "reading": "ねんりょうでんちしゃ",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💧",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-motor",
+    "el-hvbattery"
+   ],
+   "description": "水素と 空気中の 酸素から 電気を つくり、モーターで 走る クルマ。走っても 出るのは 水だけです。高電圧の 部分は さわると 危ないです。"
+  },
+  {
+   "id": "el-bms",
+   "name": "バッテリーマネジメントシステム",
+   "reading": "ばってりーまねじめんとしすてむ",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🛡️",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-cellbalance",
+    "el-soc"
+   ],
+   "description": "駆動用バッテリーの 電圧や 温度、のこりの 量を 見はり、充電しすぎや 使いすぎ、熱くなりすぎを ふせぐ しくみ。"
+  },
+  {
+   "id": "el-cellbalance",
+   "name": "セルバランス",
+   "reading": "せるばらんす",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-bms",
+    "el-soc"
+   ],
+   "description": "駆動用バッテリーの 中の たくさんの 小さな 電池の、電気の のこりぐあいを そろえる はたらき。1つだけ 早く 空に なったり 満タンに なったり するのを ふせぎます。"
+  },
+  {
+   "id": "el-thermalrunaway",
+   "name": "熱暴走",
+   "reading": "ねつぼうそう",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔥",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-bms",
+    "el-hvbattery"
+   ],
+   "description": "電池の 温度が 上がり、その 熱で さらに 温度が 上がって 止まらなくなる 危険な 状態。発火に つながる ことも あるので、BMSや 冷却で ふせいでいます。"
+  },
+  {
+   "id": "el-interlock",
+   "name": "インターロック",
+   "reading": "いんたーろっく",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔒",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-smr",
+    "el-hv"
+   ],
+   "description": "高電圧の 部品の カバーや コネクターが 外れた ことを 見つけると、自動で 高電圧を 止める 安全の しくみ。高電圧は さわると 命に かかわります。"
+  },
+  {
+   "id": "el-smr",
+   "name": "システムメインリレー",
+   "reading": "しすてむめいんりれー",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔌",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-precharge",
+    "el-hvbattery"
+   ],
+   "description": "駆動用バッテリーと 高電圧の 回路を つないだり 切りはなしたり する 大きな リレー。クルマを 止めると 切れて、回路へ 高電圧が 送られないように します。"
+  },
+  {
+   "id": "el-precharge",
+   "name": "プリチャージ",
+   "reading": "ぷりちゃーじ",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⏳",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-smr",
+    "el-inverter"
+   ],
+   "description": "高電圧の 回路を つなぐ とき、いきなり 大きな 電流が 流れないように、抵抗を 通して 少しずつ 電気を ためてから つなぐ しくみ。部品の いたみを ふせぎます。"
+  },
+  {
+   "id": "el-boost",
+   "name": "昇圧コンバーター",
+   "reading": "しょうあつこんばーたー",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⬆️",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-inverter",
+    "el-dcdc"
+   ],
+   "description": "駆動用バッテリーの 電圧を さらに 高く してから インバーターへ 送る 装置。高い 電圧で モーターを 力強く 回せます。さわると 危ない 高電圧の 部品です。"
+  },
+  {
+   "id": "el-resolver",
+   "name": "レゾルバー",
+   "reading": "れぞるばー",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-pmmotor",
+    "el-inverter"
+   ],
+   "description": "モーターの 回る 位置を こまかく はかる センサー。インバーターは この 情報で、ちょうどよい タイミングで 電気を 送ります。"
+  },
+  {
+   "id": "el-chargecontrol",
+   "name": "充電制御",
+   "reading": "じゅうでんせいぎょ",
+   "journey": "elec",
+   "category": "始動・発電",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔋",
+   "mapNode": "car:battery",
+   "relatedTerms": [
+    "el-alternator",
+    "el-regulator"
+   ],
+   "description": "バッテリーの 状態を 見て、加速中は 発電を ひかえ、減速中に 多く 発電するなど、オルタネーターの 発電を かしこく 調整する しくみ。燃費が よく なります。"
+  },
+  {
+   "id": "el-v2h",
+   "name": "V2H",
+   "reading": "ぶいつーえいち",
+   "journey": "elec",
+   "category": "ハイブリッド・EV",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🏡",
+   "mapNode": "car:hv",
+   "relatedTerms": [
+    "el-normalcharge",
+    "el-hvbattery"
+   ],
+   "description": "電気自動車などの バッテリーに ためた 電気を、専用の 機器を 通して 家で 使う しくみ。停電の ときの そなえにも なります。"
+  },
+  {
    "id": "bk-frontfork",
    "name": "フロントフォーク",
    "reading": "ふろんとふぉーく",
@@ -5654,6 +9522,966 @@
     "bk-pivot"
    ],
    "description": "前から 下へ おりる 2本の パイプで、エンジンを 下から ゆりかごの ように かかえる フレーム。むかしから ある じょうぶな 形です。"
+  },
+  {
+   "id": "bk-innertube",
+   "name": "インナーチューブ",
+   "reading": "いんなーちゅーぶ",
+   "journey": "bike",
+   "category": "フロントまわり",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "bike:fork",
+   "relatedTerms": [
+    "bk-frontfork",
+    "bk-forkseal"
+   ],
+   "description": "フロントフォークの 2重の 筒の うち、細い ほうの 筒。表面が なめらかで、太い 筒の 中を 出たり 入ったり します。傷が あると 油もれの もとに なります。"
+  },
+  {
+   "id": "bk-forkseal",
+   "name": "フォークシール",
+   "reading": "ふぉーくしーる",
+   "journey": "bike",
+   "category": "フロントまわり",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⭕",
+   "mapNode": "bike:fork",
+   "relatedTerms": [
+    "bk-innertube",
+    "bk-forkoil"
+   ],
+   "description": "フロントフォークの 筒と 筒の すきまに はめた ゴムの 輪。中の フォークオイルが 外へ もれるのを ふせぎます。"
+  },
+  {
+   "id": "bk-drivesprocket",
+   "name": "ドライブスプロケット",
+   "reading": "どらいぶすぷろけっと",
+   "journey": "bike",
+   "category": "駆動・変速",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⚙️",
+   "mapNode": "bike:chain",
+   "relatedTerms": [
+    "bk-drivensprocket",
+    "bk-sprocket"
+   ],
+   "description": "エンジン側に ついた 小さい ほうの スプロケット。ここから チェーンへ エンジンの ちからが 送りだされます。"
+  },
+  {
+   "id": "bk-drivensprocket",
+   "name": "ドリブンスプロケット",
+   "reading": "どりぶんすぷろけっと",
+   "journey": "bike",
+   "category": "駆動・変速",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⚙️",
+   "mapNode": "bike:chain",
+   "relatedTerms": [
+    "bk-drivesprocket",
+    "bk-hubdamper"
+   ],
+   "description": "うしろの タイヤに 取りつけた 大きい ほうの スプロケット。チェーンから ちからを 受けて タイヤを 回します。歯の 数で 加速と 最高速の 割合が 変わります。"
+  },
+  {
+   "id": "bk-headpipe",
+   "name": "ヘッドパイプ",
+   "reading": "へっどぱいぷ",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔩",
+   "mapNode": "bike:frame",
+   "relatedTerms": [
+    "bk-steeringstem",
+    "bk-topbridge"
+   ],
+   "description": "フレームの いちばん 前に ある 短い 筒。中を ステアリングステムが 通り、フロントフォークが 左右に 向きを 変える ときの 軸に なります。"
+  },
+  {
+   "id": "bk-inline4",
+   "name": "並列4気筒",
+   "reading": "へいれつよんきとう",
+   "journey": "bike",
+   "category": "エンジン",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔥",
+   "mapNode": "bike:engine",
+   "relatedTerms": [
+    "bk-parallel",
+    "bk-singlecyl"
+   ],
+   "description": "4つの シリンダーを 横に 1列に ならべた エンジン。回転が なめらかで 高い 回転まで よく 回り、大きめの スポーツバイクに 多い 形です。"
+  },
+  {
+   "id": "bk-tandemstep",
+   "name": "タンデムステップ",
+   "reading": "たんでむすてっぷ",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🦶",
+   "mapNode": "bike:frame",
+   "relatedTerms": [
+    "bk-step",
+    "bk-seatrail"
+   ],
+   "description": "うしろの 席に 乗る 人が 足を のせる ステップ。乗る 人が 体を ささえ、足が 車輪や マフラーに ふれない ように する 大事な 部品です。"
+  },
+  {
+   "id": "bk-coolingfin",
+   "name": "冷却フィン",
+   "reading": "れいきゃくふぃん",
+   "journey": "bike",
+   "category": "エンジン",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🌬️",
+   "mapNode": "bike:engine",
+   "relatedTerms": [
+    "bk-aircooled",
+    "bk-singlecyl"
+   ],
+   "description": "空冷エンジンの シリンダーの まわりに ならぶ うすい 板。空気に ふれる 面を 広くして、走る 風で エンジンの 熱を にがします。"
+  },
+  {
+   "id": "bk-premix",
+   "name": "混合給油",
+   "reading": "こんごうきゅうゆ",
+   "journey": "bike",
+   "category": "燃料・吸気",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧴",
+   "mapNode": "bike:fuel",
+   "relatedTerms": [
+    "bk-twostroke",
+    "bk-bunrikyuyu"
+   ],
+   "description": "2ストロークエンジンで、ガソリンに 前もって オイルを まぜて おく 給油の しかた。オイルを 入れわすれると エンジンが 焼きつく もとに なります。"
+  },
+  {
+   "id": "bk-clutchwire",
+   "name": "クラッチワイヤー",
+   "reading": "くらっちわいやー",
+   "journey": "bike",
+   "category": "操作",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🪢",
+   "mapNode": "bike:handle",
+   "relatedTerms": [
+    "bk-clutchlever",
+    "bk-wetclutch"
+   ],
+   "description": "クラッチレバーの 動きを エンジンの クラッチへ つたえる 金属の ひも。のびたり さびたり すると、レバーの 遊びや 重さが 変わります。"
+  },
+  {
+   "id": "bk-sepahan",
+   "name": "セパレートハンドル",
+   "reading": "せぱれーとはんどる",
+   "journey": "bike",
+   "category": "操作",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🏍️",
+   "mapNode": "bike:handle",
+   "relatedTerms": [
+    "bk-handlebar",
+    "bk-topbridge"
+   ],
+   "description": "左右に わかれた ハンドル。フロントフォークに 1本ずつ 取りつけます。低い 位置に あるので、前かがみの 姿勢で 乗る スポーツバイクに 多い 形です。"
+  },
+  {
+   "id": "bk-rotaryshift",
+   "name": "ロータリー式",
+   "reading": "ろーたりーしき",
+   "journey": "bike",
+   "category": "駆動・変速",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "bike:clutch",
+   "relatedTerms": [
+    "bk-returnshift",
+    "bk-shiftpedal"
+   ],
+   "description": "ギヤを 1速から じゅんに 上げて いき、いちばん 上から さらに 踏むと ニュートラルに もどる 変速の しかた。おもに 小型の 実用バイクで 使われます。"
+  },
+  {
+   "id": "bk-monoshock",
+   "name": "モノショック",
+   "reading": "ものしょっく",
+   "journey": "bike",
+   "category": "リヤまわり",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🗜️",
+   "mapNode": "bike:rsus",
+   "relatedTerms": [
+    "bk-rearsus",
+    "bk-linksus"
+   ],
+   "description": "うしろの サスペンションを 1本に まとめた 形。車体の まん中に おくので、左右の バランスが よく、リンクと 組みあわせて 使う ことが 多いです。"
+  },
+  {
+   "id": "bk-castwheel",
+   "name": "キャストホイール",
+   "reading": "きゃすとほいーる",
+   "journey": "bike",
+   "category": "リヤまわり",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🛞",
+   "mapNode": "bike:tire",
+   "relatedTerms": [
+    "bk-spokewheel",
+    "bk-hubdamper"
+   ],
+   "description": "とかした 金属を 型に 流して、ふちと まん中を 1つに 作った ホイール。スポークホイールと ちがい、チューブの ない タイヤを 使いやすい 形です。"
+  },
+  {
+   "id": "bk-seatrail",
+   "name": "シートレール",
+   "reading": "しーとれーる",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🪑",
+   "mapNode": "bike:frame",
+   "relatedTerms": [
+    "bk-headpipe",
+    "bk-pivot"
+   ],
+   "description": "フレームの うしろへ のびる 骨組み。シートや うしろの ランプ、荷物などの 重さを ささえます。"
+  },
+  {
+   "id": "bk-countersteer",
+   "name": "カウンターステア",
+   "reading": "かうんたーすてあ",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "↩️",
+   "mapNode": "bike:handle",
+   "relatedTerms": [
+    "bk-bankangle",
+    "bk-selfsteer"
+   ],
+   "description": "曲がりたい 方向と 反対に ハンドルを 一瞬 押すと、車体が 曲がりたい 側へ たおれて 向きが 変わる しくみ。二輪が 曲がりはじめる きっかけに なります。"
+  },
+  {
+   "id": "bk-bankangle",
+   "name": "バンク角",
+   "reading": "ばんくかく",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "bike:frame",
+   "relatedTerms": [
+    "bk-countersteer",
+    "bk-step"
+   ],
+   "description": "曲がる ときに 車体を かたむけた 角度。ステップや マフラーなどが 地面に ふれない ところまでが、かたむけられる 限界に なります。"
+  },
+  {
+   "id": "bk-backtorque",
+   "name": "バックトルクリミッター",
+   "reading": "ばっくとるくりみったー",
+   "journey": "bike",
+   "category": "駆動・変速",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛡️",
+   "mapNode": "bike:clutch",
+   "relatedTerms": [
+    "bk-wetclutch",
+    "bk-enginebrakecontrol"
+   ],
+   "description": "急に ギヤを 下げた ときなど、うしろの タイヤから エンジンへ 逆向きに かかる 強い ちからを、クラッチを すべらせて にがす しくみ。うしろの タイヤが はねるのを ふせぎます。"
+  },
+  {
+   "id": "bk-shiftdrum",
+   "name": "シフトドラム",
+   "reading": "しふとどらむ",
+   "journey": "bike",
+   "category": "駆動・変速",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🥁",
+   "mapNode": "bike:clutch",
+   "relatedTerms": [
+    "bk-shiftpedal",
+    "bk-dogclutch"
+   ],
+   "description": "表面に くねった みぞを ほった 筒。シフトペダルを 踏むたびに 少し 回り、みぞに そって 動く 部品が ギヤを 切りかえます。"
+  },
+  {
+   "id": "bk-dogclutch",
+   "name": "ドグクラッチ",
+   "reading": "どぐくらっち",
+   "journey": "bike",
+   "category": "駆動・変速",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🦷",
+   "mapNode": "bike:clutch",
+   "relatedTerms": [
+    "bk-shiftdrum",
+    "bk-returnshift"
+   ],
+   "description": "バイクの 変速機で、ギヤの 横に ある 出っぱりと くぼみを かみあわせて ちからを つなぐ しくみ。つねに かみあって 回る ギヤの うち、どれを 軸に つなぐかで 速さを 変えます。"
+  },
+  {
+   "id": "bk-cvcarb",
+   "name": "負圧式キャブレター",
+   "reading": "ふあつしききゃぶれたー",
+   "journey": "bike",
+   "category": "燃料・吸気",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "bike:fuel",
+   "relatedTerms": [
+    "bk-carburetor",
+    "bk-jetneedle"
+   ],
+   "description": "スロットルで 直接 通り道を 開けず、エンジンが 空気を 吸う ちからで 中の ピストンが 上がる キャブレター。急に スロットルを 開けても 混合気が うすく なりにくいのが よい ところ。"
+  },
+  {
+   "id": "bk-jetneedle",
+   "name": "ジェットニードル",
+   "reading": "じぇっとにーどる",
+   "journey": "bike",
+   "category": "燃料・吸気",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🪡",
+   "mapNode": "bike:fuel",
+   "relatedTerms": [
+    "bk-mainjet",
+    "bk-cvcarb"
+   ],
+   "description": "キャブレターの 中で 上下する 細い 針。スロットルの 開きぐあいに あわせて 動き、中くらいの 開きの ときの ガソリンの 量を 決めます。"
+  },
+  {
+   "id": "bk-crankcasecomp",
+   "name": "一次圧縮",
+   "reading": "いちじあっしゅく",
+   "journey": "bike",
+   "category": "エンジン",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🫧",
+   "mapNode": "bike:engine",
+   "relatedTerms": [
+    "bk-twostroke",
+    "bk-scavengingport"
+   ],
+   "description": "2ストロークエンジンで、ピストンの 下の クランク室で 混合気を おしちぢめる こと。おされた 混合気が 掃気ポートを 通って シリンダーへ 送られます。"
+  },
+  {
+   "id": "bk-unitswing",
+   "name": "ユニットスイング式",
+   "reading": "ゆにっとすいんぐしき",
+   "journey": "bike",
+   "category": "リヤまわり",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛵",
+   "mapNode": "bike:rsus",
+   "relatedTerms": [
+    "bk-scooter",
+    "bk-vbelt"
+   ],
+   "description": "エンジンと 変速機と うしろの タイヤを 1つの かたまりに して、まるごと 上下に ゆらす 形。スクーターに 多く、部品が 少なく できます。"
+  },
+  {
+   "id": "bk-weightroller",
+   "name": "ウェイトローラー",
+   "reading": "うぇいとろーらー",
+   "journey": "bike",
+   "category": "駆動・変速",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎳",
+   "mapNode": "bike:clutch",
+   "relatedTerms": [
+    "bk-vbelt",
+    "bk-scooter"
+   ],
+   "description": "スクーターの 変速の しくみに 入って いる 円い 重り。エンジンが 速く 回ると 外へ 動き、ベルトが かかる 位置を 変えて 自動で 変速します。"
+  },
+  {
+   "id": "bk-radialmount",
+   "name": "ラジアルマウントキャリパー",
+   "reading": "らじあるまうんときゃりぱー",
+   "journey": "bike",
+   "category": "フロントまわり",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "bike:fbrake",
+   "relatedTerms": [
+    "bk-floatingdisc",
+    "bk-radialpump"
+   ],
+   "description": "フロントフォークに とめる ボルトが、車輪の 中心に 向く 向きで 取りつけた キャリパー。ブレーキを かけた ときに ゆがみにくく、効きぐあいが 安定します。"
+  },
+  {
+   "id": "bk-floatingdisc",
+   "name": "フローティングディスク",
+   "reading": "ふろーてぃんぐでぃすく",
+   "journey": "bike",
+   "category": "フロントまわり",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "💿",
+   "mapNode": "bike:fbrake",
+   "relatedTerms": [
+    "bk-radialmount",
+    "bk-brakelever"
+   ],
+   "description": "パッドで はさまれる 外側の 板と、車輪に とめる 内側の 部分を 別に して、ピンで つないだ ブレーキディスク。熱で ふくらんでも ゆがみにくく なります。"
+  },
+  {
+   "id": "bk-regrec",
+   "name": "レギュレートレクチファイア",
+   "reading": "れぎゅれーとれくちふぁいあ",
+   "journey": "bike",
+   "category": "電装・安全",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔋",
+   "mapNode": "bike:elec",
+   "relatedTerms": [
+    "bk-cdi",
+    "bk-neutrallamp"
+   ],
+   "description": "バイクの 発電機で できた 向きが 入れかわる 電気を、一方向の 電気に なおし、電圧が 上がりすぎない ように ととのえる 部品。"
+  },
+  {
+   "id": "bk-twinspar",
+   "name": "ツインスパーフレーム",
+   "reading": "ついんすぱーふれーむ",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏗️",
+   "mapNode": "bike:frame",
+   "relatedTerms": [
+    "bk-doublecradle",
+    "bk-pivot"
+   ],
+   "description": "ヘッドパイプから ピボットまで、エンジンの 左右を 2本の 太い はりで むすんだ フレーム。軽くて ねじれに 強く、スポーツバイクに 多い 形です。"
+  },
+  {
+   "id": "bk-beadstopper",
+   "name": "ビードストッパー",
+   "reading": "びーどすとっぱー",
+   "journey": "bike",
+   "category": "リヤまわり",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧷",
+   "mapNode": "bike:tire",
+   "relatedTerms": [
+    "bk-spokewheel",
+    "bk-castwheel"
+   ],
+   "description": "オフロード車の ホイールに つける 金具。空気圧を ひくくして 走っても、タイヤが ホイールの 上で すべって 回らない ように おさえます。"
+  },
+  {
+   "id": "bk-selfsteer",
+   "name": "セルフステア",
+   "reading": "せるふすてあ",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧭",
+   "mapNode": "bike:fork",
+   "relatedTerms": [
+    "bk-trail",
+    "bk-countersteer"
+   ],
+   "description": "車体が かたむくと、前の タイヤが ひとりでに かたむいた 側へ 向きを 変える 性質。トレールなどの 形で 生まれ、二輪が 自然に 曲がり 立ちなおる もとに なります。"
+  },
+  {
+   "id": "bk-wobble",
+   "name": "ウォブル",
+   "reading": "うぉぶる",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "〰️",
+   "mapNode": "bike:fork",
+   "relatedTerms": [
+    "bk-weave",
+    "bk-steeringdamper"
+   ],
+   "description": "前の タイヤと ハンドルが 小きざみに 左右へ ぶれる 現象。タイヤの へりかた、ステアリングまわりの がた、ホイールの つりあいなどを うたがって 原因を 考えます。"
+  },
+  {
+   "id": "bk-weave",
+   "name": "ウィーブ",
+   "reading": "うぃーぶ",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🐍",
+   "mapNode": "bike:frame",
+   "relatedTerms": [
+    "bk-wobble",
+    "bk-pivot"
+   ],
+   "description": "速い 速さで、車体 全体が ゆっくり くねる ように ゆれる 現象。うしろの 荷物の 重さ、リヤサスの へたり、ピボットの がたなどを うたがいます。"
+  },
+  {
+   "id": "bk-antisquat",
+   "name": "アンチスクワット",
+   "reading": "あんちすくわっと",
+   "journey": "bike",
+   "category": "リヤまわり",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⤴️",
+   "mapNode": "bike:rsus",
+   "relatedTerms": [
+    "bk-taredkaku",
+    "bk-linksus"
+   ],
+   "description": "加速の とき、チェーンの 引く ちからを 使って 車体の うしろが 沈みこむのを おさえる 性質。スイングアームの 角度や スプロケットの 位置で 強さが 変わります。"
+  },
+  {
+   "id": "bk-taredkaku",
+   "name": "スイングアーム垂れ角",
+   "reading": "すいんぐあーむたれかく",
+   "journey": "bike",
+   "category": "リヤまわり",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📏",
+   "mapNode": "bike:rsus",
+   "relatedTerms": [
+    "bk-antisquat",
+    "bk-swingarm"
+   ],
+   "description": "スイングアームが ピボットから うしろの 車軸へ 向かって 下がって いる 角度。チェーンの 引く 向きとの 関係で、加速の ときの 車体の 動きかたが 変わります。"
+  },
+  {
+   "id": "bk-forkoffset",
+   "name": "フォークオフセット",
+   "reading": "ふぉーくおふせっと",
+   "journey": "bike",
+   "category": "フロントまわり",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "↔️",
+   "mapNode": "bike:fork",
+   "relatedTerms": [
+    "bk-trail",
+    "bk-topbridge"
+   ],
+   "description": "ハンドルの 回る 軸と、フロントフォークの 中心との 前後の ずれ。ずれが 大きいほど トレールは 小さく なり、ハンドルの 軽さや 落ちつきが 変わります。"
+  },
+  {
+   "id": "bk-camberthrust",
+   "name": "キャンバースラスト",
+   "reading": "きゃんばーすらすと",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "↪️",
+   "mapNode": "bike:tire",
+   "relatedTerms": [
+    "bk-bankangle",
+    "bk-selfsteer"
+   ],
+   "description": "タイヤを かたむけた ときに、かたむけた 側へ 向かって 生まれる 横向きの ちから。二輪は この ちからを 大きく 使って 曲がります。"
+  },
+  {
+   "id": "bk-highside",
+   "name": "ハイサイド",
+   "reading": "はいさいど",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🤸",
+   "mapNode": "bike:tire",
+   "relatedTerms": [
+    "bk-camberthrust",
+    "bk-bankangle"
+   ],
+   "description": "曲がって いる とき、すべった うしろの タイヤが 急に 地面を つかみなおし、車体が はね起きて 乗る 人が 外へ 投げだされる 転びかた。"
+  },
+  {
+   "id": "bk-progressive",
+   "name": "プログレッシブ特性",
+   "reading": "ぷろぐれっしぶとくせい",
+   "journey": "bike",
+   "category": "リヤまわり",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "bike:rsus",
+   "relatedTerms": [
+    "bk-linksus",
+    "bk-monoshock"
+   ],
+   "description": "サスペンションが 深く 沈むほど かたく なって いく 性質。小さな でこぼこは やわらかく 受け、大きく 沈んだ ときは しっかり ささえます。"
+  },
+  {
+   "id": "bk-stressmember",
+   "name": "ストレスメンバー",
+   "reading": "すとれすめんばー",
+   "journey": "bike",
+   "category": "車体",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧱",
+   "mapNode": "bike:frame",
+   "relatedTerms": [
+    "bk-twinspar",
+    "bk-doublecradle"
+   ],
+   "description": "エンジンを フレームの 一部として 使い、車体の かたさの 役目も させる 考えかた。そのぶん フレームを 小さく 軽く できます。"
+  },
+  {
+   "id": "bk-cartridgefork",
+   "name": "カートリッジ式フォーク",
+   "reading": "かーとりっじしきふぉーく",
+   "journey": "bike",
+   "category": "フロントまわり",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧯",
+   "mapNode": "bike:fork",
+   "relatedTerms": [
+    "bk-forkoil",
+    "bk-invertedfork"
+   ],
+   "description": "フロントフォークの 中に、ゆれを しずめる ちからを 作る 専用の 筒を 入れた しくみ。油の 流れを こまかく ととのえられ、調整の はばも 広く なります。"
+  },
+  {
+   "id": "bk-bottomlink",
+   "name": "ボトムリンク式",
+   "reading": "ぼとむりんくしき",
+   "journey": "bike",
+   "category": "フロントまわり",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🦿",
+   "mapNode": "bike:fork",
+   "relatedTerms": [
+    "bk-frontfork",
+    "bk-invertedfork"
+   ],
+   "description": "フロントフォークの 下の はしに 短い アームを つけ、その アームが ゆれて 前の タイヤが 上下する 形。小型の 実用バイクなどで 見られます。"
+  },
+  {
+   "id": "bk-radialpump",
+   "name": "ラジアルポンプマスターシリンダー",
+   "reading": "らじあるぽんぷますたーしりんだー",
+   "journey": "bike",
+   "category": "操作",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💪",
+   "mapNode": "bike:fbrake",
+   "relatedTerms": [
+    "bk-brakelever",
+    "bk-radialmount"
+   ],
+   "description": "ブレーキレバーを にぎる 向きと、中の ピストンが 動く 向きが そろった マスターシリンダー。レバーの 動きが むだなく つたわり、効きぐあいを 細かく 調節しやすく なります。"
+  },
+  {
+   "id": "bk-corneringabs",
+   "name": "コーナリングABS",
+   "reading": "こーなりんぐえーびーえす",
+   "journey": "bike",
+   "category": "電装・安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "bike:fbrake",
+   "relatedTerms": [
+    "bk-cbs",
+    "bk-rearlift"
+   ],
+   "description": "車体の かたむきも 計算に 入れて 働く ABS。曲がって いる 途中で ブレーキを かけても、タイヤの ロックや 車体が 急に 起きあがるのを おさえます。"
+  },
+  {
+   "id": "bk-rearlift",
+   "name": "リヤリフト抑制",
+   "reading": "りやりふとよくせい",
+   "journey": "bike",
+   "category": "電装・安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🪂",
+   "mapNode": "bike:fbrake",
+   "relatedTerms": [
+    "bk-corneringabs",
+    "bk-cbs"
+   ],
+   "description": "強い 前ブレーキで 車体の うしろが 浮きあがりそうに なるのを 前後の 車輪の 回りかたなどから 見つけ、ブレーキの ちからを 弱めて おさえる 制御。"
+  },
+  {
+   "id": "bk-enginebrakecontrol",
+   "name": "エンジンブレーキコントロール",
+   "reading": "えんじんぶれーきこんとろーる",
+   "journey": "bike",
+   "category": "電装・安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎛️",
+   "mapNode": "bike:engine",
+   "relatedTerms": [
+    "bk-backtorque",
+    "bk-ridebywire"
+   ],
+   "description": "スロットルを もどして 減速する とき、エンジンブレーキの 強さを 電子制御で ととのえる しくみ。うしろの タイヤが すべったり はねたり するのを ふせぎます。"
+  },
+  {
+   "id": "bk-wheeliecontrol",
+   "name": "ウィリーコントロール",
+   "reading": "うぃりーこんとろーる",
+   "journey": "bike",
+   "category": "電装・安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🐎",
+   "mapNode": "bike:elec",
+   "relatedTerms": [
+    "bk-ridingmode",
+    "bk-ridebywire"
+   ],
+   "description": "加速の とき 前の タイヤが 浮きあがるのを 見つけ、エンジンの ちからを 自動で しぼって 前を 落ちつかせる しくみ。"
+  },
+  {
+   "id": "bk-quickshifter",
+   "name": "クイックシフター",
+   "reading": "くいっくしふたー",
+   "journey": "bike",
+   "category": "駆動・変速",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⚡",
+   "mapNode": "bike:clutch",
+   "relatedTerms": [
+    "bk-shiftpedal",
+    "bk-autoblipper"
+   ],
+   "description": "クラッチを 切らず、スロットルも もどさずに ギヤを 上げられる しくみ。ペダルの 動きを センサーが 感じ、一瞬だけ エンジンの ちからを 止めて ギヤを 抜けやすく します。"
+  },
+  {
+   "id": "bk-autoblipper",
+   "name": "オートブリッパー",
+   "reading": "おーとぶりっぱー",
+   "journey": "bike",
+   "category": "駆動・変速",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎵",
+   "mapNode": "bike:clutch",
+   "relatedTerms": [
+    "bk-quickshifter",
+    "bk-ridebywire"
+   ],
+   "description": "ギヤを 下げる とき、自動で 一瞬 スロットルを 開けて エンジンの 回転を あわせる しくみ。クラッチを 使わずに なめらかに ギヤを 下げられます。"
+  },
+  {
+   "id": "bk-ridebywire",
+   "name": "ライドバイワイヤ",
+   "reading": "らいどばいわいや",
+   "journey": "bike",
+   "category": "操作",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📡",
+   "mapNode": "bike:handle",
+   "relatedTerms": [
+    "bk-throttlegrip",
+    "bk-ridingmode"
+   ],
+   "description": "スロットルグリップの 動きを ワイヤーで なく 電気の 信号で 送り、コンピューターが 吸う 空気の 量を 決める しくみ。いろいろな 電子制御の 土台に なります。"
+  },
+  {
+   "id": "bk-ridingmode",
+   "name": "ライディングモード",
+   "reading": "らいでぃんぐもーど",
+   "journey": "bike",
+   "category": "操作",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎚️",
+   "mapNode": "bike:handle",
+   "relatedTerms": [
+    "bk-ridebywire",
+    "bk-wheeliecontrol"
+   ],
+   "description": "エンジンの ちからの 出かたや、電子制御の 効きぐあいを まとめて 切りかえる しくみ。雨の 日や 長い 旅など、走る 場面に あわせて えらびます。"
+  },
+  {
+   "id": "bk-edamper",
+   "name": "電子制御ステアリングダンパー",
+   "reading": "でんしせいぎょすてありんぐだんぱー",
+   "journey": "bike",
+   "category": "フロントまわり",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧠",
+   "mapNode": "bike:fork",
+   "relatedTerms": [
+    "bk-steeringdamper",
+    "bk-wobble"
+   ],
+   "description": "速さや 加速の ようすに あわせて、ハンドルの ぶれを おさえる 強さを 自動で 変える ステアリングダンパー。ゆっくりの ときは 軽く、速い ときは しっかり 効かせます。"
+  },
+  {
+   "id": "bk-filamp",
+   "name": "FI警告灯",
+   "reading": "えふあいけいこくとう",
+   "journey": "bike",
+   "category": "電装・安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⚠️",
+   "mapNode": "bike:elec",
+   "relatedTerms": [
+    "bk-tentousensor",
+    "bk-regrec"
+   ],
+   "description": "燃料を ふきだす しくみの 電子制御に 異常が 見つかると つく ランプ。点滅の しかたや 診断機で、どこが おかしいかを 考える 手がかりに なります。"
+  },
+  {
+   "id": "bk-tentousensor",
+   "name": "転倒センサー",
+   "reading": "てんとうせんさー",
+   "journey": "bike",
+   "category": "電装・安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🙃",
+   "mapNode": "bike:elec",
+   "relatedTerms": [
+    "bk-filamp",
+    "bk-sidestandswitch"
+   ],
+   "description": "車体が 大きく たおれた ことを 感じとる センサー。たおれると 燃料ポンプや 点火を 止めて エンジンを 止め、燃料が もれつづけるのを ふせぎます。"
+  },
+  {
+   "id": "bk-secondaryair",
+   "name": "二次空気導入装置",
+   "reading": "にじくうきどうにゅうそうち",
+   "journey": "bike",
+   "category": "エンジン",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🍃",
+   "mapNode": "bike:exhaust",
+   "relatedTerms": [
+    "bk-reedvalve",
+    "bk-exhaustdevice"
+   ],
+   "description": "排気の 出口に 新しい 空気を 送りこみ、燃えのこりの ガスを 排気の 熱で もう一度 燃やす しくみ。一方通行の 弁を 使い、有害な ガスを へらします。"
+  },
+  {
+   "id": "bk-exhaustdevice",
+   "name": "排気デバイス",
+   "reading": "はいきでばいす",
+   "journey": "bike",
+   "category": "エンジン",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎺",
+   "mapNode": "bike:exhaust",
+   "relatedTerms": [
+    "bk-chamber",
+    "bk-secondaryair"
+   ],
+   "description": "マフラーの 中の 通り道を、エンジンの 回転に あわせて 開けたり しぼったり する 弁。低い 回転から 高い 回転まで、ちからと 音の バランスを ととのえます。"
+  },
+  {
+   "id": "bk-irregularfiring",
+   "name": "不等間隔爆発",
+   "reading": "ふとうかんかくばくはつ",
+   "journey": "bike",
+   "category": "エンジン",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💓",
+   "mapNode": "bike:engine",
+   "relatedTerms": [
+    "bk-crank270",
+    "bk-vtwin"
+   ],
+   "description": "シリンダーごとの 爆発の 間かくを わざと そろえない エンジン。うしろの タイヤに ちからが かかる 間と ゆるむ 間が でき、路面を つかむ 感じが わかりやすいと いわれます。"
+  },
+  {
+   "id": "bk-crank270",
+   "name": "270度クランク",
+   "reading": "にひゃくななじゅうどくらんく",
+   "journey": "bike",
+   "category": "エンジン",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "bike:engine",
+   "relatedTerms": [
+    "bk-parallel",
+    "bk-irregularfiring"
+   ],
+   "description": "並列2気筒で、2つの ピストンの 動きを クランクの 回転で 270度ぶん ずらした 形。爆発の 間かくが 不ぞろいに なり、V型2気筒に にた 鼓動が 出ます。"
+  },
+  {
+   "id": "bk-rotarydisc",
+   "name": "ロータリーディスクバルブ",
+   "reading": "ろーたりーでぃすくばるぶ",
+   "journey": "bike",
+   "category": "燃料・吸気",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💽",
+   "mapNode": "bike:fuel",
+   "relatedTerms": [
+    "bk-reedvalve",
+    "bk-twostroke"
+   ],
+   "description": "2ストロークエンジンで、クランクシャフトと いっしょに 回る 切りかけの ある 円い 板が、吸気の 入り口を 開け閉め する しくみ。吸う 時期を 決めやすいのが とくちょうです。"
+  },
+  {
+   "id": "bk-porttiming",
+   "name": "ポートタイミング",
+   "reading": "ぽーとたいみんぐ",
+   "journey": "bike",
+   "category": "エンジン",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⏱️",
+   "mapNode": "bike:engine",
+   "relatedTerms": [
+    "bk-scavengingport",
+    "bk-rotarydisc"
+   ],
+   "description": "2ストロークエンジンで、吸気・掃気・排気の 穴が 開く 時期と 閉じる 時期。ピストンが 穴の 前を 通る 位置、つまり 穴の 高さで 決まります。"
   },
   {
    "id": "tl-spanner",
@@ -6618,6 +11446,965 @@
     "tl-safetyshoes"
    ],
    "description": "電気を 通さない ゴムの 手袋。ハイブリッド車や 電気自動車の 高い 電圧の 部分は さわると 命に かかわるほど 危ないので、専用の 手袋で 身を 守ります。"
+  },
+  {
+   "id": "tl-combination",
+   "name": "コンビネーションレンチ",
+   "reading": "こんびねーしょんれんち",
+   "journey": "tool",
+   "category": "工具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔧",
+   "mapNode": "tool:tools",
+   "relatedTerms": [
+    "tl-spanner",
+    "tl-megane"
+   ],
+   "description": "片方が スパナ、もう片方が メガネレンチに なった レンチ。同じ 大きさの ボルトに 使え、場所に あわせて はしを 使いわけます。"
+  },
+  {
+   "id": "tl-monkey",
+   "name": "モンキーレンチ",
+   "reading": "もんきーれんち",
+   "journey": "tool",
+   "category": "工具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🐒",
+   "mapNode": "tool:tools",
+   "relatedTerms": [
+    "tl-spanner",
+    "tl-nimenhaba"
+   ],
+   "description": "ねじを 回して 口の 開きを 変えられる レンチ。1本で いろいろな 大きさに あわせられますが、がたが 出やすいので かたい ボルトには 向きません。"
+  },
+  {
+   "id": "tl-extension",
+   "name": "エクステンションバー",
+   "reading": "えくすてんしょんばー",
+   "journey": "tool",
+   "category": "工具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📏",
+   "mapNode": "tool:tools",
+   "relatedTerms": [
+    "tl-socket",
+    "tl-ratchet"
+   ],
+   "description": "ソケットと ハンドルの あいだに つなぐ のばし棒。奥の ほうに ある ボルトまで 手を とどかせます。"
+  },
+  {
+   "id": "tl-deepsocket",
+   "name": "ディープソケット",
+   "reading": "でぃーぷそけっと",
+   "journey": "tool",
+   "category": "工具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🥤",
+   "mapNode": "tool:tools",
+   "relatedTerms": [
+    "tl-socket",
+    "tl-extension"
+   ],
+   "description": "ふつうより 筒が 長い ソケット。ボルトの 先が 長く つき出て いる ナットでも、奥まで かぶせて 回せます。"
+  },
+  {
+   "id": "tl-radiopench",
+   "name": "ラジオペンチ",
+   "reading": "らじおぺんち",
+   "journey": "tool",
+   "category": "工具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "✂️",
+   "mapNode": "tool:tools",
+   "relatedTerms": [
+    "tl-plier",
+    "tl-waripin"
+   ],
+   "description": "先が 細長く とがった ペンチ。せまい ところの 小さな 部品を つまんだり、細い 線を 曲げたり するのに 使います。"
+  },
+  {
+   "id": "tl-plastichammer",
+   "name": "プラスチックハンマー",
+   "reading": "ぷらすちっくはんまー",
+   "journey": "tool",
+   "category": "工具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔨",
+   "mapNode": "tool:tools",
+   "relatedTerms": [
+    "tl-hammer",
+    "tl-puller"
+   ],
+   "description": "頭が かたい 樹脂で できた ハンマー。部品の 表面に 傷を つけにくいので、組みあわせた 部品を たたいて 動かす ときに 使います。"
+  },
+  {
+   "id": "tl-shimetsuke",
+   "name": "締めつけトルク",
+   "reading": "しめつけとるく",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔩",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-torquewrench",
+    "tl-newtonmeter"
+   ],
+   "description": "ボルトや ナットを しめる ときの 回す ちからの 強さ。部品ごとに 決められて いて、トルクレンチで その 値に あわせて しめます。"
+  },
+  {
+   "id": "tl-hidarineji",
+   "name": "左ねじ",
+   "reading": "ひだりねじ",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "↪️",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-migineji",
+    "tl-shimetsuke"
+   ],
+   "description": "ふつうとは 反対に、左に 回すと しまる ねじ。回る 部品の 向きで ゆるまない ように、一部の 場所だけで 使われます。"
+  },
+  {
+   "id": "tl-springwasher",
+   "name": "スプリングワッシャー",
+   "reading": "すぷりんぐわっしゃー",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-waripin",
+    "tl-screwlock"
+   ],
+   "description": "切れめの ある ねじれた 輪の 座金。ばねの ちからで ボルトを おし返し、ゆれで ナットが ゆるむのを ふせぎます。"
+  },
+  {
+   "id": "tl-waripin",
+   "name": "割りピン",
+   "reading": "わりぴん",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📌",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-springwasher",
+    "tl-radiopench"
+   ],
+   "description": "2本に わかれた ピン。ボルトの 穴に 通して 先を 広げ、ナットが 回って 外れるのを ふせぎます。"
+  },
+  {
+   "id": "tl-jackpoint",
+   "name": "ジャッキアップポイント",
+   "reading": "じゃっきあっぷぽいんと",
+   "journey": "tool",
+   "category": "持ち上げる道具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📍",
+   "mapNode": "tool:lift",
+   "relatedTerms": [
+    "tl-jack",
+    "tl-uma"
+   ],
+   "description": "車を 持ち上げる ときに ジャッキを 当てて よい 場所。車体の じょうぶな ところが えらばれて いて、ほかの 場所だと 車体が へこむ ことが あります。"
+  },
+  {
+   "id": "tl-depthgauge",
+   "name": "デプスゲージ",
+   "reading": "でぷすげーじ",
+   "journey": "tool",
+   "category": "はかる道具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🕳️",
+   "mapNode": "tool:measure",
+   "relatedTerms": [
+    "tl-nogisu",
+    "tl-tiregauge"
+   ],
+   "description": "穴や みぞの 深さを はかる 道具。タイヤの みぞが どれだけ 残って いるかを 見るのにも 使います。"
+  },
+  {
+   "id": "tl-ues",
+   "name": "ウエス",
+   "reading": "うえす",
+   "journey": "tool",
+   "category": "油脂・安全",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧻",
+   "mapNode": "tool:safety",
+   "relatedTerms": [
+    "tl-partscleaner",
+    "tl-haiyu"
+   ],
+   "description": "油や よごれを ふきとる 布。油の しみた ウエスは 燃えやすいので、決まった 入れものに まとめて すてます。"
+  },
+  {
+   "id": "tl-shadaibango",
+   "name": "車台番号",
+   "reading": "しゃだいばんごう",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔢",
+   "mapNode": "tool:doc",
+   "relatedTerms": [
+    "tl-shakensho"
+   ],
+   "description": "車体に 1台ずつ きざまれた、その 車だけの 番号。車検証にも 書かれて いて、書類と 車が 同じか どうかを 確かめるのに 使います。"
+  },
+  {
+   "id": "tl-shiunten",
+   "name": "試運転",
+   "reading": "しうんてん",
+   "journey": "tool",
+   "category": "点検",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🚗",
+   "mapNode": "tool:periodic",
+   "relatedTerms": [
+    "tl-teikitenken",
+    "tl-saigen"
+   ],
+   "description": "整備の あとに 実際に 走らせて、音・ゆれ・ブレーキの 効きなどに おかしな ところが ないか 確かめる こと。"
+  },
+  {
+   "id": "tl-nimenhaba",
+   "name": "二面幅",
+   "reading": "にめんはば",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⬡",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-spanner",
+    "tl-monkey"
+   ],
+   "description": "ボルトの 頭や ナットの、向かいあう 平らな 面と 面の あいだの 長さ。スパナや ソケットの 大きさは この 長さで あらわします。"
+  },
+  {
+   "id": "tl-vernier",
+   "name": "バーニヤ目盛",
+   "reading": "ばーにやめもり",
+   "journey": "tool",
+   "category": "はかる道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "tool:measure",
+   "relatedTerms": [
+    "tl-nogisu",
+    "tl-ratchetstop"
+   ],
+   "description": "ノギスの すべる 部分に ついた 補助の 目盛。本体の 目盛と ぴったり そろう 線を 見つけて、1目盛より 細かい 長さを 読みとります。"
+  },
+  {
+   "id": "tl-ratchetstop",
+   "name": "ラチェットストップ",
+   "reading": "らちぇっとすとっぷ",
+   "journey": "tool",
+   "category": "はかる道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛑",
+   "mapNode": "tool:measure",
+   "relatedTerms": [
+    "tl-micrometer",
+    "tl-kosei"
+   ],
+   "description": "マイクロメーターの はしに ある つまみ。決まった ちからに なると 空回りして、だれが はかっても 同じ 強さで はさめる ように します。"
+  },
+  {
+   "id": "tl-sunpokousa",
+   "name": "寸法公差",
+   "reading": "すんぽうこうさ",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-shiyogendo",
+    "tl-micrometer"
+   ],
+   "description": "部品を 作る ときに ゆるされる 大きさの ばらつきの はば。はかった 値が この はばの 中に 入って いれば 合格です。"
+  },
+  {
+   "id": "tl-torquedriver",
+   "name": "トルクドライバー",
+   "reading": "とるくどらいばー",
+   "journey": "tool",
+   "category": "工具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🪛",
+   "mapNode": "tool:tools",
+   "relatedTerms": [
+    "tl-torquewrench",
+    "tl-driver"
+   ],
+   "description": "決めた 強さに なると それ以上 しまらない しくみの ドライバー。小さな ねじを しめすぎて こわすのを ふせぎます。"
+  },
+  {
+   "id": "tl-puller",
+   "name": "プーラー",
+   "reading": "ぷーらー",
+   "journey": "tool",
+   "category": "工具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🪝",
+   "mapNode": "tool:tools",
+   "relatedTerms": [
+    "tl-plastichammer",
+    "tl-missionjack"
+   ],
+   "description": "かたく はめこまれた ギヤや ベアリングを、つめで ひっかけて まっすぐ 引きぬく 工具。たたかずに 外せるので 部品を いためにくいです。"
+  },
+  {
+   "id": "tl-snapring",
+   "name": "スナップリングプライヤー",
+   "reading": "すなっぷりんぐぷらいやー",
+   "journey": "tool",
+   "category": "工具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌙",
+   "mapNode": "tool:tools",
+   "relatedTerms": [
+    "tl-plier",
+    "tl-radiopench"
+   ],
+   "description": "軸や 穴の みぞに はめた 切れめの ある 輪を、先の つめで 広げたり すぼめたり する 専用の プライヤー。"
+  },
+  {
+   "id": "tl-missionjack",
+   "name": "ミッションジャッキ",
+   "reading": "みっしょんじゃっき",
+   "journey": "tool",
+   "category": "持ち上げる道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧰",
+   "mapNode": "tool:lift",
+   "relatedTerms": [
+    "tl-lift",
+    "tl-floorjack"
+   ],
+   "description": "リフトで 持ち上げた 車の 下から、重い 変速機を 下ろしたり 取りつけたり する ときに ささえる 専用の ジャッキ。"
+  },
+  {
+   "id": "tl-screwlock",
+   "name": "ねじロック剤",
+   "reading": "ねじろっくざい",
+   "journey": "tool",
+   "category": "油脂・安全",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧴",
+   "mapNode": "tool:fluid",
+   "relatedTerms": [
+    "tl-springwasher",
+    "tl-ekigasket"
+   ],
+   "description": "ねじ山に ぬって、かたまると ねじが ゆるまない ように する 接着剤。ゆれの 大きい 場所の ボルトに 使います。"
+  },
+  {
+   "id": "tl-ekigasket",
+   "name": "液体ガスケット",
+   "reading": "えきたいがすけっと",
+   "journey": "tool",
+   "category": "油脂・安全",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🫗",
+   "mapNode": "tool:fluid",
+   "relatedTerms": [
+    "tl-screwlock",
+    "tl-grease"
+   ],
+   "description": "部品の 合わせ面に ぬって、かたまると すきまを ふさぐ シール材。油や 水が もれるのを ふせぎます。"
+  },
+  {
+   "id": "tl-cohc",
+   "name": "CO・HCテスター",
+   "reading": "しーおーえいちしーてすたー",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "💨",
+   "mapNode": "tool:inspect",
+   "relatedTerms": [
+    "tl-opacimeter",
+    "tl-shaken"
+   ],
+   "description": "ガソリン車の 排気ガスに ふくまれる 一酸化炭素と 燃えのこりの 燃料の こさを はかる 機械。車検で 基準に あって いるかを 見ます。"
+  },
+  {
+   "id": "tl-shinkikensa",
+   "name": "新規検査",
+   "reading": "しんきけんさ",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🆕",
+   "mapNode": "tool:inspect",
+   "relatedTerms": [
+    "tl-keizoku",
+    "tl-kozohenko"
+   ],
+   "description": "まだ ナンバーの ついて いない 車を 使いはじめる ときに 受ける 検査。合格すると 車検証が 出されます。"
+  },
+  {
+   "id": "tl-seibishunin",
+   "name": "整備主任者",
+   "reading": "せいびしゅにんしゃ",
+   "journey": "tool",
+   "category": "法令・資格",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "👷",
+   "mapNode": "tool:shop",
+   "relatedTerms": [
+    "tl-ninsho",
+    "tl-mechanic"
+   ],
+   "description": "認証工場で、整備の 仕事を まとめて 責任を もつ 人。整備士の 資格を もった 人が なります。"
+  },
+  {
+   "id": "tl-bunkaiseibi",
+   "name": "分解整備",
+   "reading": "ぶんかいせいび",
+   "journey": "tool",
+   "category": "法令・資格",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧩",
+   "mapNode": "tool:law",
+   "relatedTerms": [
+    "tl-tokuteiseibi",
+    "tl-ninsho"
+   ],
+   "description": "エンジン・ブレーキ・ハンドルまわり・足まわりなど、走る ために 大事な 装置を 取りはずして 行う 整備。特定整備の 1つで、認証を 受けた 工場が 行います。"
+  },
+  {
+   "id": "tl-recall",
+   "name": "リコール",
+   "reading": "りこーる",
+   "journey": "tool",
+   "category": "法令・資格",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📣",
+   "mapNode": "tool:law",
+   "relatedTerms": [
+    "tl-kaizentaisaku",
+    "tl-hoankijun"
+   ],
+   "description": "作った 車に 保安基準に あわない おそれの ある 不具合が 見つかった とき、作った 会社が 国に 届けでて 直す しくみ。持ち主は 無料で 直して もらえます。"
+  },
+  {
+   "id": "tl-obdkensa",
+   "name": "OBD検査",
+   "reading": "おーびーでぃーけんさ",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔌",
+   "mapNode": "tool:inspect",
+   "relatedTerms": [
+    "tl-tokuteidtc",
+    "tl-scantool"
+   ],
+   "description": "車検で、車の 中の コンピューターが 記録した 故障の 情報を 読みとって 調べる 検査。目で 見えない 電子制御の 不具合を 見つけます。"
+  },
+  {
+   "id": "tl-tokuteidtc",
+   "name": "特定DTC",
+   "reading": "とくていでぃーてぃーしー",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚨",
+   "mapNode": "tool:inspect",
+   "relatedTerms": [
+    "tl-obdkensa",
+    "tl-shindanchart"
+   ],
+   "description": "OBD検査で 見る 故障コードの うち、安全や 排気ガスに かかわる ものとして 決められた もの。これが 残って いると 検査に 通りません。"
+  },
+  {
+   "id": "tl-denshiseigyoseibi",
+   "name": "電子制御装置整備",
+   "reading": "でんしせいぎょそうちせいび",
+   "journey": "tool",
+   "category": "法令・資格",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📷",
+   "mapNode": "tool:law",
+   "relatedTerms": [
+    "tl-tokuteiseibi",
+    "tl-aiming"
+   ],
+   "description": "自動ブレーキなどに 使う 前の カメラや レーダーを 取りはずしたり、向きを 調整したり する 整備。特定整備の 1つで、認証を 受けた 工場が 行います。"
+  },
+  {
+   "id": "tl-aiming",
+   "name": "エーミング",
+   "reading": "えーみんぐ",
+   "journey": "tool",
+   "category": "点検",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "tool:periodic",
+   "relatedTerms": [
+    "tl-denshiseigyoseibi",
+    "tl-hanyoscan"
+   ],
+   "description": "運転を 助ける カメラや レーダーが 正しい 向きを 見る ように 合わせる 調整。部品を 取りかえたり 車の 姿勢が 変わったり すると 必要に なります。"
+  },
+  {
+   "id": "tl-kozohenko",
+   "name": "構造等変更検査",
+   "reading": "こうぞうとうへんこうけんさ",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔧",
+   "mapNode": "tool:inspect",
+   "relatedTerms": [
+    "tl-shinkikensa",
+    "tl-fuseikaizo"
+   ],
+   "description": "車の 長さ・はば・高さや 乗れる 人数など、車検証に 書かれた 大事な 中身が 変わる 改造を した ときに 受ける 検査。"
+  },
+  {
+   "id": "tl-yobikensa",
+   "name": "予備検査",
+   "reading": "よびけんさ",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📝",
+   "mapNode": "tool:inspect",
+   "relatedTerms": [
+    "tl-shinkikensa",
+    "tl-keizoku"
+   ],
+   "description": "ナンバーを つける 前に、車が 保安基準に あって いるかを 先に 確かめて おく 検査。売り買いの 前などに 使われます。"
+  },
+  {
+   "id": "tl-sds",
+   "name": "SDS",
+   "reading": "えすでぃーえす",
+   "journey": "tool",
+   "category": "油脂・安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📄",
+   "mapNode": "tool:safety",
+   "relatedTerms": [
+    "tl-partscleaner",
+    "tl-kanki"
+   ],
+   "description": "油や 薬品などの 危なさ、あつかいの 注意、こぼれた ときの 対応などを まとめた 書類。薬品を 使う 前に 中身を 知る ための ものです。"
+  },
+  {
+   "id": "tl-kaizentaisaku",
+   "name": "改善対策",
+   "reading": "かいぜんたいさく",
+   "journey": "tool",
+   "category": "法令・資格",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🛠️",
+   "mapNode": "tool:law",
+   "relatedTerms": [
+    "tl-recall",
+    "tl-hoankijun"
+   ],
+   "description": "保安基準には 書かれて いないが、安全や 環境の うえで そのままに できない 不具合が 見つかった とき、作った 会社が 国に 届けでて 直す しくみ。"
+  },
+  {
+   "id": "tl-katashikishitei",
+   "name": "型式指定",
+   "reading": "かたしきしてい",
+   "journey": "tool",
+   "category": "法令・資格",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🏷️",
+   "mapNode": "tool:law",
+   "relatedTerms": [
+    "tl-hoankijun",
+    "tl-shinkikensa"
+   ],
+   "description": "同じ 形の 車を たくさん 作る とき、その 型が 保安基準に あうかを 国が まとめて 確かめ 指定する 制度。1台ずつ 細かく 調べる 手間を はぶけます。"
+  },
+  {
+   "id": "tl-denshishakensho",
+   "name": "電子車検証",
+   "reading": "でんししゃけんしょう",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💳",
+   "mapNode": "tool:doc",
+   "relatedTerms": [
+    "tl-shakensho",
+    "tl-kensahyosho"
+   ],
+   "description": "ICタグが ついた 車検証。券面に 書く 中身を へらし、くわしい 情報は ICタグや 専用の しくみで 読みとる ように した ものです。"
+  },
+  {
+   "id": "tl-tekigohyosho",
+   "name": "保安基準適合標章",
+   "reading": "ほあんきじゅんてきごうひょうしょう",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🏷️",
+   "mapNode": "tool:doc",
+   "relatedTerms": [
+    "tl-hotekisho",
+    "tl-shitei"
+   ],
+   "description": "指定工場で 車検の 検査に 合格した とき、新しい 検査標章が とどくまで 車に はって おく しるし。これが あれば その 間も 車を 使えます。"
+  },
+  {
+   "id": "tl-keikenkyo",
+   "name": "軽自動車検査協会",
+   "reading": "けいじどうしゃけんさきょうかい",
+   "journey": "tool",
+   "category": "法令・資格",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🏢",
+   "mapNode": "tool:shop",
+   "relatedTerms": [
+    "tl-shaken",
+    "tl-keizoku"
+   ],
+   "description": "軽自動車の 検査を 行う ために つくられた 法人。ふつうの 車の 検査は 国の 運輸支局などが 行います。"
+  },
+  {
+   "id": "tl-tokuteikaizo",
+   "name": "特定改造等",
+   "reading": "とくていかいぞうとう",
+   "journey": "tool",
+   "category": "法令・資格",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📶",
+   "mapNode": "tool:law",
+   "relatedTerms": [
+    "tl-reprogram",
+    "tl-dorounsou"
+   ],
+   "description": "車の プログラムを 書きかえて、安全に かかわる 性能を 変える こと。無線での 書きかえも ふくみ、これを 行うには 国の 許可が いります。"
+  },
+  {
+   "id": "tl-jidounkou",
+   "name": "自動運行装置",
+   "reading": "じどううんこうそうち",
+   "journey": "tool",
+   "category": "法令・資格",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🤖",
+   "mapNode": "tool:law",
+   "relatedTerms": [
+    "tl-denshiseigyoseibi",
+    "tl-hoankijun"
+   ],
+   "description": "決められた 条件の 中で、人の かわりに 車を 運転する 装置を あらわす 法律の ことば。保安基準で 満たすべき 性能が 決められて います。"
+  },
+  {
+   "id": "tl-zetsuenteikokei",
+   "name": "絶縁抵抗計",
+   "reading": "ぜつえんていこうけい",
+   "journey": "tool",
+   "category": "はかる道具",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧲",
+   "mapNode": "tool:measure",
+   "relatedTerms": [
+    "tl-zetsuen",
+    "tl-tester"
+   ],
+   "description": "高い 電圧を かけて、電気が もれて いないかを はかる 道具。ハイブリッド車や 電気自動車の 高電圧の 部分が きちんと 絶縁されて いるかを 見ます。"
+  },
+  {
+   "id": "tl-clampmeter",
+   "name": "クランプメーター",
+   "reading": "くらんぷめーたー",
+   "journey": "tool",
+   "category": "はかる道具",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🦀",
+   "mapNode": "tool:measure",
+   "relatedTerms": [
+    "tl-tester",
+    "tl-kosei"
+   ],
+   "description": "電線を 輪で はさむだけで、流れて いる 電気の 量を はかる 道具。線を 切らずに はかれるので、電気が むだに 流れて いないかを 調べるのに 使います。"
+  },
+  {
+   "id": "tl-hanyoscan",
+   "name": "汎用スキャンツール",
+   "reading": "はんようすきゃんつーる",
+   "journey": "tool",
+   "category": "はかる道具",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📟",
+   "mapNode": "tool:measure",
+   "relatedTerms": [
+    "tl-scantool",
+    "tl-obdkensa"
+   ],
+   "description": "1つの 会社の 車だけで なく、いろいろな 車に つないで 使える 故障診断機。故障コードや センサーの 値を 読みとれます。"
+  },
+  {
+   "id": "tl-reprogram",
+   "name": "リプログラミング",
+   "reading": "りぷろぐらみんぐ",
+   "journey": "tool",
+   "category": "点検",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💾",
+   "mapNode": "tool:shop",
+   "relatedTerms": [
+    "tl-hanyoscan",
+    "tl-tokuteikaizo"
+   ],
+   "description": "車の コンピューターの 制御プログラムを、新しい ものに 書きかえる こと。不具合の 対策などで 行います。"
+  },
+  {
+   "id": "tl-tokubetsukyoiku",
+   "name": "低圧電気取扱特別教育",
+   "reading": "ていあつでんきとりあつかいとくべつきょういく",
+   "journey": "tool",
+   "category": "油脂・安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎓",
+   "mapNode": "tool:safety",
+   "relatedTerms": [
+    "tl-zetsuen",
+    "tl-zetsuenteikokei"
+   ],
+   "description": "ハイブリッド車や 電気自動車の 高い 電圧の 部分を あつかう 人が、前もって 受ける ことに なって いる 安全の ための 教育。"
+  },
+  {
+   "id": "tl-monshin",
+   "name": "問診",
+   "reading": "もんしん",
+   "journey": "tool",
+   "category": "点検",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🗣️",
+   "mapNode": "tool:shop",
+   "relatedTerms": [
+    "tl-saigen",
+    "tl-shindanchart"
+   ],
+   "description": "故障を 調べる はじめに、お客さんから 症状を くわしく 聞く こと。いつ・どんな とき・どう なるかを 聞くと、原因を しぼりこむ 手がかりに なります。"
+  },
+  {
+   "id": "tl-saigen",
+   "name": "再現テスト",
+   "reading": "さいげんてすと",
+   "journey": "tool",
+   "category": "点検",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "tool:shop",
+   "relatedTerms": [
+    "tl-monshin",
+    "tl-shindanchart"
+   ],
+   "description": "聞いた 症状が 本当に 出るかを、同じ 条件を 作って たしかめる こと。症状が 出ないと、直ったかどうかも わかりません。"
+  },
+  {
+   "id": "tl-hameai",
+   "name": "はめあい",
+   "reading": "はめあい",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧩",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-sunpokousa",
+    "tl-micrometer"
+   ],
+   "description": "軸と 穴を 組みあわせる ときの はまりかた。すきまが ある ゆるい はまりかたや、すきまの ない きつい はまりかたを、部品の 役目に あわせて 決めます。"
+  },
+  {
+   "id": "tl-shindanchart",
+   "name": "故障診断チャート",
+   "reading": "こしょうしんだんちゃーと",
+   "journey": "tool",
+   "category": "点検",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🗺️",
+   "mapNode": "tool:doc",
+   "relatedTerms": [
+    "tl-tokuteidtc",
+    "tl-monshin"
+   ],
+   "description": "故障の 原因を、どの 順に 何を 調べるかで しぼりこめる ように まとめた 図や 表。当てずっぽうを へらし、むだなく 原因に たどりつけます。"
+  },
+  {
+   "id": "tl-opacimeter",
+   "name": "オパシメーター",
+   "reading": "おぱしめーたー",
+   "journey": "tool",
+   "category": "車検・検査",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌫️",
+   "mapNode": "tool:inspect",
+   "relatedTerms": [
+    "tl-cohc",
+    "tl-shaken"
+   ],
+   "description": "ジーゼル車の 排気ガスに 光を 当て、どれだけ 光が 通りにくいかで 黒い けむりの こさを はかる 機械。"
+  },
+  {
+   "id": "tl-jikuryoku",
+   "name": "軸力",
+   "reading": "じくりょく",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "↕️",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-shimetsuke",
+    "tl-soseiiki"
+   ],
+   "description": "ボルトを しめた とき、ボルトが わずかに のばされて 生まれる 引っぱる ちから。この ちからで 部品どうしを おしつけて とめて います。"
+  },
+  {
+   "id": "tl-soseiiki",
+   "name": "塑性域締め",
+   "reading": "そせいいきじめ",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🪢",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-jikuryoku",
+    "tl-kakudojime"
+   ],
+   "description": "ボルトが のびて もとに もどらなく なる ところまで しめる 方法。しっかり 同じ ちからで とめられますが、一度 使った ボルトは 使えない ことが 多いです。"
+  },
+  {
+   "id": "tl-kakudojime",
+   "name": "角度締め",
+   "reading": "かくどじめ",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-soseiiki",
+    "tl-torquewrench"
+   ],
+   "description": "決めた 強さまで しめた あと、さらに 決めた 角度だけ 回して しめる 方法。すべりやすさの ちがいに 左右されにくく、軸力が そろいやすく なります。"
+  },
+  {
+   "id": "tl-oryokushuchu",
+   "name": "応力集中",
+   "reading": "おうりょくしゅうちゅう",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-hiroo",
+    "tl-jikuryoku"
+   ],
+   "description": "部品の 角や みぞ、穴の まわりに ちからが 集まって 強く かかる こと。ひびが 入る はじまりに なりやすい 場所です。"
+  },
+  {
+   "id": "tl-hiroo",
+   "name": "疲労破壊",
+   "reading": "ひろうはかい",
+   "journey": "tool",
+   "category": "単位・基本",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💔",
+   "mapNode": "tool:basics",
+   "relatedTerms": [
+    "tl-oryokushuchu",
+    "tl-shiyogendo"
+   ],
+   "description": "一度では こわれない 小さな ちからが 何度も くりかえし かかり、小さな ひびが 少しずつ のびて 部品が 折れる こと。"
+  },
+  {
+   "id": "tl-kosei",
+   "name": "校正",
+   "reading": "こうせい",
+   "journey": "tool",
+   "category": "はかる道具",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "tool:measure",
+   "relatedTerms": [
+    "tl-torquewrench",
+    "tl-micrometer"
+   ],
+   "description": "はかる 道具を 正しい 基準と くらべて、どれだけ ずれて いるかを 確かめる こと。ずれた 道具で はかると、整備の 結果も まちがって しまいます。"
   }
  ]
 }

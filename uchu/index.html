@@ -242,6 +242,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .gmap{display:inline-block;margin-top:6px;padding:7px 14px;border-radius:999px;background:#fff;border:1.5px solid var(--line);
   color:#1d6bff;font-weight:700;font-size:13px;text-decoration:none}
 .intro .gmap{margin-top:10px}
+.intro .gmap{margin-right:6px}
+/* 会社の 時価総額(株式フリック旅行) */
+.intro .mcap{margin:10px 0 4px;padding:8px 12px;border-left:4px solid var(--sk-a,#0f6fa8);background:var(--soft);border-radius:0 10px 10px 0;font-size:14px}
+.intro .mcap b{font-size:16px}
+.intro .mcap small{display:block;margin-top:2px;font-size:11.5px;color:var(--muted,#777);line-height:1.5}
 .lv-title{font-size:22px;margin:0 0 12px;color:#004fe6}
 .pins-msg{text-align:center;font-weight:700;color:#004fe6;margin:0 0 10px}
 .lv-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0 4px}
@@ -409,7 +414,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <div class="map-card">
       <div class="map-head"><b id="map-title">世界一周マップ</b><span id="map-count">0 / 100か所</span></div>
       <div class="map-tabs hidden" id="map-tabs"></div>
-      <div class="map" id="map" data-map="world"><div class="map-in" id="map-in"><img id="map-img" src="world-map-color.jpg" alt="世界地図" width="1080" height="432">
+      <div class="map" id="map" data-map="world"><div class="map-in" id="map-in"><img id="map-img" src="../world-map-color.jpg" alt="世界地図" width="1080" height="432">
         <span class="sea w" style="left:14%;top:51%">太平洋</span>
         <span class="sea w" style="left:92%;top:44%">太平洋</span>
         <span class="sea w" style="left:39%;top:41%">大西洋</span>
@@ -527,7 +532,8 @@ const GAME = { id:"uchu", name:"宇宙フリック旅行", modes:["usolar", "usk
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"世界フリック旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"歴史フリック旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
-                 {id:"uchu", name:"宇宙フリック旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"からだフリック旅行", icon:"🫀", dir:"../flick-travel/karada/"} ];
+                 {id:"uchu", name:"宇宙フリック旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"からだフリック旅行", icon:"🫀", dir:"../flick-travel/karada/"},
+                 {id:"kabu", name:"株式フリック旅行", icon:"🏢", dir:"../flick-travel/kabu/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
   {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
@@ -699,7 +705,7 @@ const TONE = {
 const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: toneFrom("#8a5a2b"), jevents: toneFrom("#5b3fbf"),
-          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
+          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"), jcomp: toneFrom("#0f6fa8"), wcomp: toneFrom("#0e6b3a") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
@@ -1050,6 +1056,9 @@ function gmapUrl(q){
   return "https://www.google.com/maps/search/" + encodeURIComponent(name) + "/@" + ll[0] + "," + ll[1] + "," + zoom + "z";
 }
 function gmapLink(q){
+  /* 会社は 公式サイト(けいくん 2026-09-26「四季報が出来なければ その会社のリンクに」→ おすすめ = 公式サイト)+ Wikipedia */
+  if(q.k === "company") return '<a class="gmap" href="' + esc(q.u) + '" target="_blank" rel="noopener noreferrer">🏢 公式サイトを見る</a>'
+    + (q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "");
   if(q.k === "space" || q.k === "body") return q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "";
   return '<a class="gmap" href="' + gmapUrl(q) + '" target="_blank" rel="noopener">' + (q.k === "person" ? "🗺 生まれた所を Googleマップで見る" : "🗺 Googleマップで見る") + '</a>';
 }
@@ -1395,7 +1404,9 @@ const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filt
                 capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)),
                 /* 宇宙フリック旅行(key の あたま sol / sky / cos)・からだフリック旅行(bon mus / org sys / cel) */
                 usolar: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sol")), usky: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sky")), ucos: SPOTS.filter(q => q.k === "space" && q.art.startsWith("cos")),
-                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")) };
+                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")),
+                /* 株式フリック旅行(けいくん 2026-09-26): 日本の会社・世界の会社。本社に📍 */
+                jcomp: SPOTS.filter(q => q.k === "company" && isJapan(q)), wcomp: SPOTS.filter(q => q.k === "company" && !isJapan(q)) };
 /* 日本一周マップの 決めごと(tools/make_japan_map.py と 同じ数字)。本土は 東経128.5〜146.5 / 北緯29.8〜46。
    南西諸島(北緯28度より南)は 左上の わく(東経122.5〜 / 北緯27.5〜)に 同じ縮尺で */
 const JAPAN_MAP = { lon0:128.5, lat1:46, kx:20, k:25, w:360, h:405, ix:6, iy:6, ilon0:122.5, ilat1:27.5 };
@@ -1432,7 +1443,10 @@ MAPS.ucos = { svg:true, maps:["sky","solar"], w:1080, h:540, src:"", icon:"🌌"
 MAPS.kbone = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🦴", name:"ほねと きんにく", title:"からだの図", word:"からだの図", sub:"骨・関節・筋肉", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.korgan = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🫀", name:"臓器と しくみ", title:"からだの図", word:"からだの図", sub:"心臓・肺・胃・脳・血液・ホルモン…", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.kcell = { svg:true, maps:["cell"], w:720, h:720, src:"", icon:"🧬", name:"細胞と 遺伝", title:"細胞の図", word:"細胞の図", sub:"細胞・DNA・遺伝子…", thing:"場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
-const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell"];
+/* 株式フリック旅行(2026-09-26)。会社の名前を打つ。📍は 本社。日本の会社は 日本地図、世界の会社は 世界地図 */
+MAPS.jcomp = Object.assign({}, MAPS.japan, { icon:"🏢", name:"日本の会社", title:"日本の会社マップ", sub:"会社の名前を打つ。本社に📍", thing:"本社", unit:"社", doneWord:"知った会社", miss:"まだ知らない会社" });
+MAPS.wcomp = Object.assign({}, MAPS.world, { icon:"🏙️", name:"世界の会社", title:"世界の会社マップ", sub:"会社の名前を打つ。本社に📍", thing:"本社", unit:"社", doneWord:"知った会社", miss:"まだ知らない会社" });
+const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "jcomp", "wcomp"];
 const MODES = ALL_MODES.filter(m => GAME.modes.includes(m));  // この ゲームに 出す 旅だけ
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
 
@@ -1663,7 +1677,7 @@ function drawModes(){
 function setMode(m){
   mode = m; store("flick-mode", m);
   const M = MAPS[m], img = $("#map-img");
-  if(!M.time && !img.src.endsWith(M.src) && !((img.src.endsWith(M.hi || "@") || img.src.endsWith(M.hi2 || "@")) && MZ.s > 1.2)){ img.src = M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
+  if(!M.time && !img.src.endsWith(M.src) && !((img.src.endsWith(M.hi || "@") || img.src.endsWith(M.hi2 || "@")) && MZ.s > 1.2)){ img.src = GAME.assets + M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
   $("#map").style.aspectRatio = M.w + " / " + M.h;  // 中身が absolute なので 高さは ここで決める
   if($("#map").dataset.mode !== m){ mapReset(); curSub = null; }  // 旅を切りかえたら 拡大と 図のタブを もどす
   $("#map").dataset.mode = m;
@@ -1849,7 +1863,7 @@ function mapApply(){
      ⚠️ 小さくもどしても 絵は もどさない(読みなおしの むだ) */
   const M = MAPS[mode], img = $("#map-img");
   const want = MZ.s > 3.5 && M.hi2 ? M.hi2 : (MZ.s > 1.2 && M.hi ? M.hi : null);
-  if(want && !img.src.endsWith(want) && !(want === M.hi && M.hi2 && img.src.endsWith(M.hi2))) img.src = want;
+  if(want && !img.src.endsWith(want) && !(want === M.hi && M.hi2 && img.src.endsWith(M.hi2))) img.src = GAME.assets + want;  // 株式フリック旅行は 1つ下の フォルダ(kabu/)なので "../" が付く
   $("#zoom-reset").hidden = MZ.s === 1;
 }
 /* 画面の点(px,py。地図の左上から)を 動かさずに 倍率を s2 に */
@@ -2233,7 +2247,11 @@ async function drawBoard(m, lv, id){
 /* こたえの名前に ふりがな(けいくん 2026-09-25「こたえの名前にもふりがなを振って下さい」)。よみは 打つ字(q.r)そのもの */
 function nameRuby(q){ return '<ruby class="nm">' + esc(q.n) + '<rt>' + esc(q.r) + '</rt></ruby>'; }
 /* 偉人の 名言と その解説(結果カード) */
+/* 会社の 時価総額(株の値段 × 株の数 = 会社の大きさの めやす)。⚠️ サーバーが無いので 自動で新しくならない。
+   だから かならず 日付を付ける。数字は tools/companies-caps.json(tools/add_spots.py が この2つと 同じか 確かめる) */
+const CAP_ASOF = "2026年9月26日", CAP_RATE = "1ドル=157.5円";
 function quoteBlock(q){
+  if(q.k === "company") return '<p class="mcap">💴 時価総額 <b>' + esc(q.mc) + '</b><small>' + CAP_ASOF + '時点' + (isJapan(q) ? "" : "(" + CAP_RATE + "で計算)") + '<br>時価総額は 会社の大きさの めやす(株の値段 × 株の数)</small></p>';
   if(q.k !== "person") return "";
   return '<blockquote class="quote"><p class="qt">「'+(RUBY[q.art+"|s"] || q.s)+'」</p><p class="qd">'+(RUBY[q.art+"|sd"] || q.sd)+'</p></blockquote>';
 }

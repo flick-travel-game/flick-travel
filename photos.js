@@ -7242,11 +7242,11 @@ const PHOTOS = {
  },
  "skyalbireo": {
   "src": "photo-skyalbireo.jpg",
-  "author": "不明",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Albireo.jpg",
-  "file": "File:Albireo.jpg"
+  "author": "Thomas Bresson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Thomas_Bresson_-_Albireo_(by).jpg",
+  "file": "File:Thomas Bresson - Albireo (by).jpg"
  },
  "skymizar": {
   "src": "photo-skymizar.jpg",
@@ -7562,11 +7562,11 @@ const PHOTOS = {
  },
  "skybigdipper": {
   "src": "photo-skybigdipper.jpg",
-  "author": "Gh5046 at English Wikipedia",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Big_dipper_from_the_kalalau_lookout_at_the_kokee_state_park_in_hawaii.jpg",
-  "file": "File:Big dipper from the kalalau lookout at the kokee state park in hawaii.jpg"
+  "author": "BreakdownDiode",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Big_Dipper_20210116.jpg",
+  "file": "File:Big Dipper 20210116.jpg"
  },
  "skysummertriangle": {
   "src": "photo-skysummertriangle.jpg",
@@ -7618,7 +7618,7 @@ const PHOTOS = {
  },
  "skymagnitude": {
   "src": "photo-skymagnitude.jpg",
-  "author": "CactiStaccingCrane",
+  "author": "CactiStaccingCrane(一部を切りぬいて使用)",
   "license": "CC0（パブリックドメイン）",
   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "page": "https://commons.wikimedia.org/wiki/File:Magnitude_illustration.svg",
@@ -7778,11 +7778,11 @@ const PHOTOS = {
  },
  "cosstar": {
   "src": "photo-cosstar.jpg",
-  "author": "不明",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Alpheratz.gif",
-  "file": "File:Alpheratz.gif"
+  "author": "ESO/DSS 2",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_bright_star_Alpha_Centauri_and_its_surroundings.jpg",
+  "file": "File:The bright star Alpha Centauri and its surroundings.jpg"
  },
  "cosstellarlife": {
   "src": "photo-cosstellarlife.jpg",
@@ -8114,11 +8114,11 @@ const PHOTOS = {
  },
  "bonjoint": {
   "src": "photo-bonjoint.jpg",
-  "author": "OpenStax College",
-  "license": "CC BY 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:909_Types_of_Synovial_Joints.jpg",
-  "file": "File:909 Types of Synovial Joints.jpg"
+  "author": "Madhero88(文字を消して使用)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joint.svg",
+  "file": "File:Joint.svg"
  },
  "boncartilage": {
   "src": "photo-boncartilage.jpg",
@@ -8194,11 +8194,11 @@ const PHOTOS = {
  },
  "boncapsule": {
   "src": "photo-boncapsule.jpg",
-  "author": "Madhero88",
+  "author": "Rlawson at English Wikibooks",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Joint.svg",
-  "file": "File:Joint.svg"
+  "page": "https://commons.wikimedia.org/wiki/File:Joint_no_labels.JPG",
+  "file": "File:Joint no labels.JPG"
  },
  "bonthorax": {
   "src": "photo-bonthorax.jpg",
@@ -8306,7 +8306,7 @@ const PHOTOS = {
  },
  "musabs": {
   "src": "photo-musabs.jpg",
-  "author": "不明",
+  "author": "不明(文字を消して使用)",
   "license": "CC BY-SA 3.0",
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Rectus_abdominis.png",
@@ -8314,19 +8314,19 @@ const PHOTOS = {
  },
  "musoblique": {
   "src": "photo-musoblique.jpg",
-  "author": "Henry Vandyke Carter",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Gray392.png",
-  "file": "File:Gray392.png"
+  "author": "Par Henry Vandyke Carter(文字を消して使用)",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Grays_Anatomy_Muscle_oblique_externe.png",
+  "file": "File:Grays Anatomy Muscle oblique externe.png"
  },
  "musback": {
   "src": "photo-musback.jpg",
-  "author": "Henry Vandyke Carter",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Gray389_-_Erector_spinae.png",
-  "file": "File:Gray389 - Erector spinae.png"
+  "author": "InjuryMap(文字を消して使用)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Upper_back_muscles.svg",
+  "file": "File:Upper back muscles.svg"
  },
  "mustrapezius": {
   "src": "photo-mustrapezius.jpg",
@@ -8378,11 +8378,11 @@ const PHOTOS = {
  },
  "musachilles": {
   "src": "photo-musachilles.jpg",
-  "author": "Henry Gray",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Achilles-tendon.jpg",
-  "file": "File:Achilles-tendon.jpg"
+  "author": "InjuryMap(文字を消して使用)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lower_leg_muscles.svg",
+  "file": "File:Lower leg muscles.svg"
  },
  "musdiaphragm": {
   "src": "photo-musdiaphragm.jpg",
@@ -8562,11 +8562,11 @@ const PHOTOS = {
  },
  "orgnasal": {
   "src": "photo-orgnasal.jpg",
-  "author": "Henry Vandyke Carter",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Gray855.png",
-  "file": "File:Gray855.png"
+  "author": "Wugapodes",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Midsagittal_diagram_unlabeled.svg",
+  "file": "File:Midsagittal diagram unlabeled.svg"
  },
  "orgtrachea": {
   "src": "photo-orgtrachea.jpg",
@@ -8578,11 +8578,11 @@ const PHOTOS = {
  },
  "orgbronchus": {
   "src": "photo-orgbronchus.jpg",
-  "author": "https://www.scientificanimations.com",
-  "license": "CC BY-SA 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:3D_Medical_Animation_Bronchus_Description.jpg",
-  "file": "File:3D Medical Animation Bronchus Description.jpg"
+  "author": "DataBase Center for Life Science (DBCLS)",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:201701_Trachea_and_Bronchial_tree.svg",
+  "file": "File:201701 Trachea and Bronchial tree.svg"
  },
  "orglung": {
   "src": "photo-orglung.jpg",
@@ -8666,11 +8666,11 @@ const PHOTOS = {
  },
  "orglymphnode": {
   "src": "photo-orglymphnode.jpg",
-  "author": "NIH",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Lymphatic_system.png",
-  "file": "File:Lymphatic system.png"
+  "author": "SEER; Tossh for Japanese labels.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Illu_lymph_node_structure-ja.png",
+  "file": "File:Illu lymph node structure-ja.png"
  },
  "orgspleen": {
   "src": "photo-orgspleen.jpg",
@@ -8733,8 +8733,8 @@ const PHOTOS = {
   "author": "US-Gov",
   "license": "パブリックドメイン",
   "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Skin.png",
-  "file": "File:Skin.png"
+  "page": "https://commons.wikimedia.org/wiki/File:Skin.svg",
+  "file": "File:Skin.svg"
  },
  "orguterus": {
   "src": "photo-orguterus.jpg",
@@ -8810,11 +8810,11 @@ const PHOTOS = {
  },
  "orgpupil": {
   "src": "photo-orgpupil.jpg",
-  "author": "Michael Reeve",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Iris.eye.225px.jpg",
-  "file": "File:Iris.eye.225px.jpg"
+  "author": "Rapidreflex",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Human_eye_close_up,_anterior_view.jpg",
+  "file": "File:Human eye close up, anterior view.jpg"
  },
  "orgopticnerve": {
   "src": "photo-orgopticnerve.jpg",
@@ -8962,7 +8962,7 @@ const PHOTOS = {
  },
  "orgsensorynerve": {
   "src": "photo-orgsensorynerve.jpg",
-  "author": "Helixitta",
+  "author": "Helixitta(文字を消して使用)",
   "license": "CC BY-SA 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Afferent_and_efferent_neurons_en.svg",
@@ -8978,11 +8978,11 @@ const PHOTOS = {
  },
  "orgthyroid": {
   "src": "photo-orgthyroid.jpg",
-  "author": "CFCF",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Illu_thyroid_parathyroid.jpg",
-  "file": "File:Illu thyroid parathyroid.jpg"
+  "author": "Cancer Research UK(文字を消して使用)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Diagram_showing_the_position_of_the_thyroid_gland_CRUK_363.svg",
+  "file": "File:Diagram showing the position of the thyroid gland CRUK 363.svg"
  },
  "orgadrenal": {
   "src": "photo-orgadrenal.jpg",
@@ -9082,19 +9082,19 @@ const PHOTOS = {
  },
  "syslipase": {
   "src": "photo-syslipase.jpg",
-  "author": "US gov",
+  "author": "Fvasconcellos",
   "license": "パブリックドメイン",
   "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Lipase_PLRP2.png",
-  "file": "File:Lipase PLRP2.png"
+  "page": "https://commons.wikimedia.org/wiki/File:Pancreatic_lipase%E2%80%93colipase_complex_with_inhibitor_1LPB.png",
+  "file": "File:Pancreatic lipase–colipase complex with inhibitor 1LPB.png"
  },
  "sysperistalsis": {
   "src": "photo-sysperistalsis.jpg",
-  "author": "Auawise",
-  "license": "CC BY-SA 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Peristalsis.gif",
-  "file": "File:Peristalsis.gif"
+  "author": "Science Artist(一部を切りぬいて使用)",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Segmentation_and_Peristalsis.png",
+  "file": "File:Segmentation and Peristalsis.png"
  },
  "sysexcretion": {
   "src": "photo-sysexcretion.jpg",
@@ -9506,11 +9506,11 @@ const PHOTOS = {
  },
  "syscircadian": {
   "src": "photo-syscircadian.jpg",
-  "author": "NoNameGYassineMrabetTalk✉ fixed by Addicted04",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Biological_clock_human.svg",
-  "file": "File:Biological clock human.svg"
+  "author": "Srruhh(文字を消して使用)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Circadian_rhythm.svg",
+  "file": "File:Circadian rhythm.svg"
  },
  "syscarb": {
   "src": "photo-syscarb.jpg",
@@ -9602,7 +9602,7 @@ const PHOTOS = {
  },
  "sysmetabolism": {
   "src": "photo-sysmetabolism.jpg",
-  "author": "Д.Ильин: vectorization",
+  "author": "Д.Ильин: vectorization(文字を消して使用)",
   "license": "CC0（パブリックドメイン）",
   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "page": "https://commons.wikimedia.org/wiki/File:Metabolism-en.svg",
@@ -9978,11 +9978,11 @@ const PHOTOS = {
  },
  "celhelix": {
   "src": "photo-celhelix.jpg",
-  "author": "84user adapting file originally uploaded by Richard Wheeler …",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:DNA_orbit_animated_static_thumb.png",
-  "file": "File:DNA orbit animated static thumb.png"
+  "author": "Jerome Walker",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:DNA_double_helix_horizontal.png",
+  "file": "File:DNA double helix horizontal.png"
  },
  "celbasepair": {
   "src": "photo-celbasepair.jpg",
@@ -10002,7 +10002,7 @@ const PHOTOS = {
  },
  "celmeiosis": {
   "src": "photo-celmeiosis.jpg",
-  "author": "Rdbickel",
+  "author": "Rdbickel(文字を消して使用)",
   "license": "CC BY-SA 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Meiosis_Overview_new.svg",
@@ -10050,7 +10050,7 @@ const PHOTOS = {
  },
  "celsexual": {
   "src": "photo-celsexual.jpg",
-  "author": "Chiswick Chap",
+  "author": "Chiswick Chap(文字を消して使用)",
   "license": "CC BY-SA 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Sexual_cycle_N-2N.svg",
@@ -10186,11 +10186,11 @@ const PHOTOS = {
  },
  "celorgan": {
   "src": "photo-celorgan.jpg",
-  "author": "Mikael Häggström. When using this image in external works, i…",
+  "author": "Mikael Häggström(文字を消して使用)",
   "license": "パブリックドメイン",
   "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Internal_organs.png",
-  "file": "File:Internal organs.png"
+  "page": "https://commons.wikimedia.org/wiki/File:Internal_organs.svg",
+  "file": "File:Internal organs.svg"
  },
  "celneuron": {
   "src": "photo-celneuron.jpg",
@@ -10210,7 +10210,7 @@ const PHOTOS = {
  },
  "celosmosis": {
   "src": "photo-celosmosis.jpg",
-  "author": "Symoum Syfullah Priyo",
+  "author": "Symoum Syfullah Priyo(一部を切りぬいて使用)",
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Raisin_swells_due_to_osmosis.jpg",
@@ -10426,11 +10426,11 @@ const PHOTOS = {
  },
  "orgthymus": {
   "src": "photo-orgthymus.jpg",
-  "author": "不明",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Thymus.png",
-  "file": "File:Thymus.png"
+  "author": "Cancer Research UK(文字を消して使用)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Diagram_showing_the_position_of_the_thymus_gland_CRUK_362.svg",
+  "file": "File:Diagram showing the position of the thymus gland CRUK 362.svg"
  },
  "sysgutflora": {
   "src": "photo-sysgutflora.jpg",
@@ -10706,19 +10706,19 @@ const PHOTOS = {
  },
  "celdominant": {
   "src": "photo-celdominant.jpg",
-  "author": "Madprime",
+  "author": "Pbrks（改変：Wikimedia Commons 利用者）",
   "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Punnett_square_mendel_flowers.svg",
-  "file": "File:Punnett square mendel flowers.svg"
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Punnett_Square_(Green_Dominant).svg",
+  "file": "File:Punnett Square (Green Dominant).svg"
  },
  "celrecessive": {
   "src": "photo-celrecessive.jpg",
-  "author": "Sciencia58",
-  "license": "CC0（パブリックドメイン）",
-  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "page": "https://commons.wikimedia.org/wiki/File:Dominant-recessive_inheritance_-_pea_flowers_F1_-_F2.png",
-  "file": "File:Dominant-recessive inheritance - pea flowers F1 - F2.png"
+  "author": "original author: Kashmiri, based on earlier work by Domaina …",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Autosomal_recessive_-_ja.png",
+  "file": "File:Autosomal recessive - ja.png"
  },
  "orgcecum": {
   "src": "photo-orgcecum.jpg",

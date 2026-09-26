@@ -10,11 +10,11 @@ ROOT = Path(__file__).resolve().parent.parent
 
 GAMES = {
     "rekishi": dict(name="歴史フリック旅行", modes=["wpeople", "jpeople", "wevents", "jevents"], kinds={"person", "event"},
-                    color="#c9741a", hero=False, logo=False,
+                    color="#c9741a", hero=True, logo=True, art=dict(word=(1005, 245), hero=(1536, 803), alt="歴史フリック旅行。古代から未来へ 時代の名所が ならぶ 絵"),
                     lead="世界と日本の偉人・歴史の出来事を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、時間の旅に出よう。",
                     how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。偉人は 名前を打つと、結果で その人のプロフィールと 名言が読めるよ。出来事は 年と解説が出て、年表に📍が立つよ。",
                     rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、歴史の流れも自然と覚えられるよ。"),
-    "uchu": dict(name="宇宙フリック旅行", modes=["usolar", "usky", "ucos"], kinds={"space"}, color="#2b3a8f", hero=False, logo=False,
+    "uchu": dict(name="宇宙フリック旅行", modes=["usolar", "usky", "ucos"], kinds={"space"}, color="#2b3a8f", hero=True, logo=True, art=dict(word=(1053, 257), hero=(1536, 1024), alt="宇宙フリック旅行。太陽系の 惑星と 銀河が うかぶ 絵"),
                  lead="太陽系・星と星座・宇宙のことばを、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、宇宙の旅に出よう。",
                  how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、太陽系の図や 星図に📍が立つよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、星や惑星の名前も自然と覚えられるよ。"),
@@ -30,7 +30,14 @@ def build(gid, g):
     # head
     out = out.replace("<title>世界フリック旅行</title>", f"<title>{g['name']}</title>")
     out = out.replace('<meta name="apple-mobile-web-app-title" content="世界フリック旅行ゲーム">', f'<meta name="apple-mobile-web-app-title" content="{g["name"]}ゲーム">')
-    out = out.replace('href="apple-touch-icon.png?v=2"', 'href="../apple-touch-icon.png?v=2"').replace('href="favicon.png?v=2"', 'href="../favicon.png?v=2"')
+    art = g.get("art")  # その ゲームの 絵(hero / 題名 / アイコン)が フォルダに あるとき
+    if art:
+        # 絵・アイコンは その フォルダの ものを 使う(名前は 世界と 同じ なので 道は そのまま)
+        out = out.replace('width="1170" height="209"', 'width="%d" height="%d"' % art["word"])
+        out, n = re.subn(r'<img class="hero" src="hero.webp" alt="[^"]*" width="1536" height="1024">',
+                         '<img class="hero" src="hero.webp" alt="%s" width="%d" height="%d">' % (art["alt"], *art["hero"]), out); assert n == 1
+    else:
+        out = out.replace('href="apple-touch-icon.png?v=2"', 'href="../apple-touch-icon.png?v=2"').replace('href="favicon.png?v=2"', 'href="../favicon.png?v=2"')
     out = out.replace('<script src="photos.js"></script>', '<script src="../photos.js"></script>')
     out = out.replace('<h1 class="sr-only">世界フリック旅行</h1>', f'<h1 class="sr-only">{g["name"]}</h1>')
     out = out.replace('<a href="about.html">📖 世界フリック旅行について(おうちの方へ)</a>', f'<a href="../about.html">📖 フリック旅行シリーズについて(おうちの方へ)</a>')
@@ -65,7 +72,7 @@ def build(gid, g):
     (d / "manifest.webmanifest").write_text(json.dumps({
         "name": g["name"] + "ゲーム", "short_name": g["name"] + "ゲーム", "start_url": "./", "scope": "./", "display": "standalone",
         "background_color": g["color"], "theme_color": g["color"],
-        "icons": [{"src": "../icon-512.png?v=2", "sizes": "512x512", "type": "image/png"}, {"src": "../apple-touch-icon.png?v=2", "sizes": "180x180", "type": "image/png"}]}, ensure_ascii=False, indent=2), encoding="utf-8")
+        "icons": [{"src": ("" if art else "../") + "icon-512.png?v=2", "sizes": "512x512", "type": "image/png"}, {"src": ("" if art else "../") + "apple-touch-icon.png?v=2", "sizes": "180x180", "type": "image/png"}]}, ensure_ascii=False, indent=2), encoding="utf-8")
     (d / ".nojekyll").write_text("", encoding="utf-8")
     print(f"{gid}: {len(kept)}問, {len(out)//1024}KB")
 

@@ -83,7 +83,7 @@ def main(paths):
         elif m and zone not in ZONES[m]:
             err(f"区画が {zone}(使えるのは {sorted(ZONES[m])})")
         if name in names: err("ほかの ゲームに もう ある 名前")
-        if yomi in yomis: err("ほかの ゲームに もう ある よみ")
+        if yomi in yomis: print(f"{i}: (めも) よみだけ ほかの ゲームと 同じ(ことばは ちがう): {name} {yomi}")  # 例: 展性 と ツボの 天星(てんせい)。同じ ことばでは ないので 止めない
         if name in my_names: err("名前が かぶる")
         if yomi in my_yomis: err("よみが かぶる")
         my_names.add(name); my_yomis.add(yomi)

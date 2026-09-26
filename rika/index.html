@@ -534,6 +534,7 @@ const GAME = { id:"rika", name:"理科フリック旅行", modes:["rphys", "rche
 const SERIES = [ {id:"world", name:"世界フリック旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"歴史フリック旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
                  {id:"uchu", name:"宇宙フリック旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"からだフリック旅行", icon:"🫀", dir:"../flick-travel/karada/"},
                  {id:"kabu", name:"株式フリック旅行", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"AIフリック旅行", icon:"🤖", dir:"../flick-travel/ai/"},
+                 {id:"eikaiwa", name:"英会話フリック旅行", icon:"💬", dir:"../flick-travel/eikaiwa/"},
                  {id:"rika", name:"理科フリック旅行", icon:"🔬", dir:"../flick-travel/rika/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
@@ -706,7 +707,7 @@ const TONE = {
 const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: toneFrom("#8a5a2b"), jevents: toneFrom("#5b3fbf"),
-          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"),
+          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"), ktsubo: toneFrom("#a8552f"),
           rphys: toneFrom("#1f5fbf"), rchem: toneFrom("#b8457a"), rbio: toneFrom("#2e7d32"), rgeo: toneFrom("#8a5a2b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
@@ -715,8 +716,8 @@ const COLORS = {
           toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
 };
 /* 差しこみ口(PLUG)。つみあげの コースを 持つ ゲームだけが 1つ 持つ:
-   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI。ほかの ゲームでは null で 何もしない */
-const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : null;
+   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA。ほかの ゲームでは null で 何もしない */
+const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : null;
 /* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
 if(PLUG) for(const [m, h] of Object.entries(PLUG.colors)) COLORS.mode[m] = TONE[h] || toneFrom(h);  // "blue" などは ほかの ゲームと 同じ あかるい 色
 function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }
@@ -2012,7 +2013,7 @@ const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filt
                 capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)),
                 /* 宇宙フリック旅行(key の あたま sol / sky / cos)・からだフリック旅行(bon mus / org sys / cel) */
                 usolar: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sol")), usky: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sky")), ucos: SPOTS.filter(q => q.k === "space" && q.art.startsWith("cos")),
-                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")),
+                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")), ktsubo: SPOTS.filter(q => q.k === "body" && q.art.startsWith("tsb")) ,
                 /* 理科フリック旅行(key の あたま phy / chm と el / bio / geo)。学年(g: e 小学校 / j 中学校 / h 高校)の 順に レベルが 並ぶ */
                 rphys: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("phy")), rchem: SPOTS.filter(q => q.k === "rika" && /^(chm|el)/.test(q.art)),
                 rbio: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("bio")), rgeo: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("geo")) };
@@ -2053,11 +2054,14 @@ MAPS.ucos = { svg:true, maps:["sky","solar"], w:1080, h:540, src:"", icon:"🌌"
 MAPS.kbone = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🦴", name:"ほねと きんにく", title:"からだの図", word:"からだの図", sub:"骨・関節・筋肉", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.korgan = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🫀", name:"臓器と しくみ", title:"からだの図", word:"からだの図", sub:"心臓・肺・胃・脳・血液・ホルモン…", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.kcell = { svg:true, maps:["cell"], w:720, h:720, src:"", icon:"🧬", name:"細胞と 遺伝", title:"細胞の図", word:"細胞の図", sub:"細胞・DNA・遺伝子…", thing:"場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+/* ツボ(けいくん 2026-09-26「からだフリック旅行に体のツボをすべて足してください」)。WHO の 標準 361か所。
+   図は はだの 前・うしろ・頭の 3枚(けいくんの ChatGPT の 絵)。データと 📍の 場所は tools/tsubo.tsv */
+MAPS.ktsubo = { svg:true, maps:["tfront","tback","thead"], w:1024, h:1536, src:"", icon:"👆", name:"ツボ", title:"ツボの図", word:"ツボの図", sub:"合谷・足三里・百会…WHOの 361か所", thing:"ツボ", unit:"", doneWord:"知ったツボ", miss:"まだ知らないツボ" };
 MAPS.rphys = { svg:true, maps:["phys"], w:1080, h:760, src:"", icon:"⚡", name:"物理", title:"物理の地図", word:"物理の地図", sub:"力・電気・光・音・熱・エネルギー", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
 MAPS.rchem = { svg:true, maps:["ptable","chem"], w:1080, h:760, src:"", icon:"⚗️", name:"化学", title:"周期表と 化学の地図", word:"周期表と 化学の地図", sub:"元素・水溶液・化学変化・イオン・実験器具", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
 MAPS.rbio = { svg:true, maps:["bio"], w:1080, h:760, src:"", icon:"🌱", name:"生物", title:"生物の地図", word:"生物の地図", sub:"植物・動物・生態系・進化・微生物", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
 MAPS.rgeo = { svg:true, maps:["geo"], w:1080, h:760, src:"", icon:"🌋", name:"地学", title:"地球の断面図", word:"地球の断面図", sub:"天気・地層・火山・地震・プレート", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
-const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "rphys", "rchem", "rbio", "rgeo"];
+const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "ktsubo", "rphys", "rchem", "rbio", "rgeo"];
 if(PLUG) for(const m of PLUG.modes){ MAPS[m] = Object.assign({}, MAPS.world, PLUG.maps[m]); ALL_MODES.push(m); }
 const MODES = ALL_MODES.filter(m => GAME.modes.includes(m));  // この ゲームに 出す 旅だけ
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
@@ -2401,6 +2405,10 @@ const SVG_MAPS = {
   head: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-head.webp" width="' + W + '" height="' + H + '"/>'
     + '<text x="12" y="26" font-size="20" fill="#a08070">横から見た 頭の中(顔は 左むき)</text>' },
   cell: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-cell.webp" width="' + W + '" height="' + H + '"/>' },
+  // ツボの 図(はだの 絵。前・うしろは 同じ人・同じ 立ちかた)。⚠️ 絵を 差しかえたら tools/tsubo.tsv の x,y を 測りなおす
+  tfront: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-front.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">前から見た からだ(向かって左が 右手)</text>' },
+  tback: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-back.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">うしろから見た からだ(向かって右が 右手)</text>' },
+  thead: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-head.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">横から見た 頭(顔は 左むき)</text>' },
   /* ── 理科フリック旅行の 図(けいくん 2026-09-26「📍を立てる図を作る」)。ぜんぶ コードで 描く(AIの 絵は 使わない)。
      📍は 区画(RIKA_ZONES)の 中に レベルの 順で ならべる。元素は 周期表の その マス */
   ptable: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaPtable(W, H) },
@@ -2525,7 +2533,7 @@ function drawSvgMap(done, M){
   let box = $("#svgmap"); if(!box){ box = document.createElement("div"); box.id = "svgmap"; box.className = "svg-wrap"; $("#map-in").appendChild(box); }
   box.innerHTML = '<svg viewBox="0 0 ' + D.w + ' ' + D.h + '" xmlns="http://www.w3.org/2000/svg">' + D.bg(D.w, D.h) + '</svg>';
   const tabs = $("#map-tabs"); tabs.classList.toggle("hidden", M.maps.length < 2);
-  const NAME = { solar:"太陽系", sky:"星空", front:"からだ", head:"頭", cell:"細胞", ptable:"周期表", chem:"化学の地図", phys:"物理の地図", bio:"生物の地図", geo:"地球の断面" };
+  const NAME = { solar:"太陽系", sky:"星空", front:"からだ", head:"頭", cell:"細胞", tfront:"前", tback:"うしろ", thead:"頭", ptable:"周期表", chem:"化学の地図", phys:"物理の地図", bio:"生物の地図", geo:"地球の断面" };
   tabs.innerHTML = M.maps.map(k => '<button type="button" data-k="' + k + '"' + (k === curSub ? ' class="on"' : '') + '>' + NAME[k] + '</button>').join("");
   tabs.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { curSub = b.dataset.k; mapReset(); drawMap(); }));
   const items = [];
@@ -2703,6 +2711,7 @@ function judge(input){
 }
 
 function renderTarget(n, err){
+  if(PLUG && PLUG.tgtHtml && PLUG.owns(mode)){ $("#tgt").innerHTML = PLUG.tgtHtml(qs[idx], n, err); return; }  // 英会話: 英文を 空白・記号ごと 見せる(打つのは 英字だけ)
   let h = "";
   for(let i=0;i<target.length;i++){
     if(i === sepAt) h += '<span class="sep">／</span>';
@@ -2798,7 +2807,7 @@ ans.addEventListener("input", () => {
   if(baseRaw > ans.value.length) baseRaw = ans.value.length;
   if(locked){ resetBase(); return; }
   const raw = ans.value.slice(baseRaw);
-  const v = norm(raw);
+  const v = PLUG && PLUG.norm && PLUG.owns(mode) ? PLUG.norm(raw) : norm(raw);  // 英会話: 小文字に そろえ、空白・' ・記号は 打たなくてよい
   lastLen = v.length;
   $("#typed").textContent = raw;
   if(PLUG && PLUG.retarget){ const t = PLUG.retarget(qs[idx], v); if(t && t !== target) target = t; }  // AIフリック旅行: 読みかたが いくつか ある ことば
@@ -3046,7 +3055,7 @@ function renderResult(r){
   $("#r-list").className = mode !== "quote" ? "intros" : "list";
   $("#r-list").innerHTML = mode !== "quote"
     ? qs.map((q,i) => { const pc = pic(q); return '<li class="intro"><div class="pic">'+pc.html+'</div><div class="body">'+
-        '<div class="head"><b>'+nameRuby(q)+'</b><span>'+times[i].toFixed(2)+'秒</span></div>'+
+        '<div class="head"><b>'+(PLUG && PLUG.nameHtml && q.k === PLUG.kind ? PLUG.nameHtml(q) : nameRuby(q))+'</b><span>'+times[i].toFixed(2)+'秒</span></div>'+
         '<small>'+q.c+'</small>'+(RUBY[q.art] ? '<p class="rb">'+RUBY[q.art]+'</p>' : '<p>'+q.d+'</p>')+quoteBlock(q)+gmapLink(q)+(pc.credit ? '<em class="credit">'+pc.credit+'</em>' : '')+'</div></li>'; }).join("")
     : qs.map((q,i) => '<li><span>'+q.a+'「'+q.t+'」</span><span>'+times[i].toFixed(2)+'秒</span></li>').join("");
   $("#next-lv").classList.toggle("hidden", level >= LEVELS[mode].length - 1);

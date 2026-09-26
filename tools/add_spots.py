@@ -118,7 +118,7 @@ def main():
     rows = (read_tsv(ROOT / "tools/spots-japan.tsv") + read_tsv(ROOT / "tools/spots-world.tsv")
             + read_tsv(ROOT / "tools/names-japan.tsv", names=True) + read_tsv(ROOT / "tools/names-world.tsv", names=True)
             + read_tsv(ROOT / "tools/people-japan.tsv", people=True) + read_tsv(ROOT / "tools/people-world.tsv", people=True)
-            + [r for f, k in (("capitals", "capital"), ("events-world", "event"), ("events-japan", "event"), ("space", "space"), ("body", "body"), ("rika", "rika")) if (ROOT / f"tools/{f}.tsv").exists()
+            + [r for f, k in (("capitals", "capital"), ("events-world", "event"), ("events-japan", "event"), ("space", "space"), ("body", "body"), ("tsubo", "body"), ("rika", "rika")) if (ROOT / f"tools/{f}.tsv").exists()
                for r in read_tsv(ROOT / f"tools/{f}.tsv", kind=k)])
     keys = [r["key"] for r in rows]
     assert len(keys) == len(set(keys)), "キーがかぶっている"

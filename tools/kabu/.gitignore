@@ -1,0 +1,5 @@
+# 取ってきた 元データ(よその サイトの 文章が そのまま 入っている)は 公開の リポジトリに 置かない。
+# 作りなおすときは fetch_sources.py / fetch_pages.py / fetch_jawiki.py で 取りなおす。meta.json(取った日・ドル円)だけ 残す
+sources/*
+!sources/meta.json
+enrich/in/

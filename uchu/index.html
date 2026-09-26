@@ -411,6 +411,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <img class="hero" src="hero.webp" alt="宇宙フリック旅行。太陽系の 惑星と 銀河が うかぶ 絵" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
+    <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
     <div class="map-card">
       <div class="map-head"><b id="map-title">世界一周マップ</b><span id="map-count">0 / 100か所</span></div>
       <div class="map-tabs hidden" id="map-tabs"></div>
@@ -430,6 +431,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <p class="map-cap" id="map-cap">レベルをクリアすると、その名所に ピンが立つよ。ピンを押すと 名前が出るよ。</p>
     </div>
     <h2 class="lv-title display" id="lv-title">レベルをえらぶ</h2>
+    <div id="kabu-chips"></div><!-- 株式フリック旅行だけ: マスターの 地域・業種 -->
     <div class="levels" id="lv-list"></div>
     <!-- いままでの きろく(かずともの ランキング・のび と 同じ並び。あそんだ人にだけ 出る) -->
     <section class="rec hidden" id="rec">
@@ -705,13 +707,15 @@ const TONE = {
 const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: toneFrom("#8a5a2b"), jevents: toneFrom("#5b3fbf"),
-          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"), jcomp: toneFrom("#0f6fa8"), wcomp: toneFrom("#0e6b3a") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
+          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
   level: [TONE.pink, toneFrom("#e0202e"), TONE.orange, TONE.green, toneFrom("#006b57"),
           toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
 };
+/* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
+if(typeof KABU === "object") for(const [m, h] of Object.entries(KABU.colors)) COLORS.mode[m] = toneFrom(h);
 function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }
 /* 解説のふりがな(tools/make_ruby.py が作る) RUBY-START */
 const RUBY = {
@@ -1057,6 +1061,7 @@ function gmapUrl(q){
 }
 function gmapLink(q){
   /* 会社は 公式サイト(けいくん 2026-09-26「四季報が出来なければ その会社のリンクに」→ おすすめ = 公式サイト)+ Wikipedia */
+  if(q.k === "company" && typeof KABU === "object") return "";  // 会社の コース: リンクは KABU.info が 出す
   if(q.k === "company") return '<a class="gmap" href="' + esc(q.u) + '" target="_blank" rel="noopener noreferrer">🏢 公式サイトを見る</a>'
     + (q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "");
   if(q.k === "space" || q.k === "body") return q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "";
@@ -1404,9 +1409,8 @@ const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filt
                 capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)),
                 /* 宇宙フリック旅行(key の あたま sol / sky / cos)・からだフリック旅行(bon mus / org sys / cel) */
                 usolar: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sol")), usky: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sky")), ucos: SPOTS.filter(q => q.k === "space" && q.art.startsWith("cos")),
-                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")),
-                /* 株式フリック旅行(けいくん 2026-09-26): 日本の会社・世界の会社。本社に📍 */
-                jcomp: SPOTS.filter(q => q.k === "company" && isJapan(q)), wcomp: SPOTS.filter(q => q.k === "company" && !isJapan(q)) };
+                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")) };
+if(typeof KABU === "object") Object.assign(POOLS, KABU.pools);
 /* 日本一周マップの 決めごと(tools/make_japan_map.py と 同じ数字)。本土は 東経128.5〜146.5 / 北緯29.8〜46。
    南西諸島(北緯28度より南)は 左上の わく(東経122.5〜 / 北緯27.5〜)に 同じ縮尺で */
 const JAPAN_MAP = { lon0:128.5, lat1:46, kx:20, k:25, w:360, h:405, ix:6, iy:6, ilon0:122.5, ilat1:27.5 };
@@ -1443,10 +1447,8 @@ MAPS.ucos = { svg:true, maps:["sky","solar"], w:1080, h:540, src:"", icon:"🌌"
 MAPS.kbone = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🦴", name:"ほねと きんにく", title:"からだの図", word:"からだの図", sub:"骨・関節・筋肉", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.korgan = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🫀", name:"臓器と しくみ", title:"からだの図", word:"からだの図", sub:"心臓・肺・胃・脳・血液・ホルモン…", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.kcell = { svg:true, maps:["cell"], w:720, h:720, src:"", icon:"🧬", name:"細胞と 遺伝", title:"細胞の図", word:"細胞の図", sub:"細胞・DNA・遺伝子…", thing:"場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
-/* 株式フリック旅行(2026-09-26)。会社の名前を打つ。📍は 本社。日本の会社は 日本地図、世界の会社は 世界地図 */
-MAPS.jcomp = Object.assign({}, MAPS.japan, { icon:"🏢", name:"日本の会社", title:"日本の会社マップ", sub:"会社の名前を打つ。本社に📍", thing:"本社", unit:"社", doneWord:"知った会社", miss:"まだ知らない会社" });
-MAPS.wcomp = Object.assign({}, MAPS.world, { icon:"🏙️", name:"世界の会社", title:"世界の会社マップ", sub:"会社の名前を打つ。本社に📍", thing:"本社", unit:"社", doneWord:"知った会社", miss:"まだ知らない会社" });
-const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "jcomp", "wcomp"];
+const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell"];
+if(typeof KABU === "object") for(const m of KABU.modes){ MAPS[m] = Object.assign({}, MAPS.world, KABU.maps[m]); ALL_MODES.push(m); }
 const MODES = ALL_MODES.filter(m => GAME.modes.includes(m));  // この ゲームに 出す 旅だけ
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
 
@@ -1481,6 +1483,7 @@ const FAME = {};
    地名・偉人は f:1(国・都道府県)を先に そのあと かんたんな順 */
 const LEVELS = {};
 for(const m of MODES){
+  if(typeof KABU === "object" && KABU.levels[m]){ LEVELS[m] = KABU.levels[m]; continue; }  // 会社の コースは kabu.js が 組む(新しい会社 + ふくしゅう)
   const pool = poolOf(m);
   /* f:1(名所=はじめの100か所の定番 / 地名=国・都道府県)を 先に。その中で かんたんな順(けいくん 2026-09-25) */
   const byFame = (m === "world" || m === "japan");
@@ -1583,13 +1586,17 @@ function keepSessionRecords(){
   try{
     for(let i = 0; i < sessionStorage.length; i++){
       const k = sessionStorage.key(i) || "";
-      if(!/^flick-(best|hist|days)(-|$)/.test(k)) continue;
+      if(!/^flick-(best|hist|days|kabu)(-|$)/.test(k)) continue;
       const sv = sessionStorage.getItem(k), lv = localStorage.getItem(k);
       if(sv === null) continue;
       if(lv === null){ localStorage.setItem(k, sv); continue; }
       if(k.startsWith("flick-best-")){
         const a = parseFloat(sv), b = parseFloat(lv);
         if(!isNaN(a) && (isNaN(b) || a < b)) localStorage.setItem(k, sv);
+      }else if(k.startsWith("flick-kabu")){  // 会社の きろく(出会った会社ごと)。多く 見たほうを のこす
+        const a = JSON.parse(sv), b = JSON.parse(lv); if(!a || !b) continue;
+        for(const id in a) if(!b[id] || a[id][0] > b[id][0]) b[id] = a[id];
+        localStorage.setItem(k, JSON.stringify(b));
       }else if(k.startsWith("flick-hist")){
         const a = JSON.parse(sv), b = JSON.parse(lv); if(!Array.isArray(a) || !Array.isArray(b)) continue;
         const seen = new Set(b.map(h => h.at + "|" + h.m + "|" + h.lv)), out = b.slice();
@@ -1657,16 +1664,18 @@ function curProfile(){ const id = store("flick-profile"); return profiles().find
 function bestKey(m, lv){ const p = curProfile(); return "flick-best-" + (p ? "p" + p.id + "-" : "") + m + "-" + (lv+1); }
 function bestOf(m, lv){ return parseFloat(recGet(bestKey(m, lv))); }
 function clearedSpots(m){
+  if(typeof KABU === "object" && KABU.owns(m)) return KABU.discoveredIn(m);  // 会社は「出会った会社」
   const set = new Set();
   LEVELS[m].forEach((lv, i) => { if(!isNaN(bestOf(m, i))) lv.forEach(q => set.add(q.art)); });
   return set;
 }
 function levelTone(i){ return COLORS.level[i % COLORS.level.length]; }
 function drawModes(){
-  $("#modes").innerHTML = MODES.map((m, i) => {
+  const shown = typeof KABU === "object" ? KABU.cardModes(mode) : MODES;  // 会社: マスターの 地域・業種は 1枚に まとめる
+  $("#modes").innerHTML = shown.map((m, i) => {
     const M = MAPS[m], done = clearedSpots(m).size;
-    return '<button class="mode sk-card sk-card-'+(i+1)+(m === mode ? ' cur' : '')+'" data-mode="'+m+'" style="'+toneStyle(COLORS.mode[m])+'">'+
-      '<span class="ic">'+M.icon+'</span><span class="tx"><b>'+M.name+'</b><small>'+POOLS[m].length+unitOf(M)+'・'+LEVELS[m].length+'レベル</small><small>'+(M.doneWord || '行った所')+' '+done+'</small></span></button>';
+    return '<button class="mode sk-card sk-card-'+(i+1)+(m === mode || (M.group && M.group === (MAPS[mode] || {}).group) ? ' cur' : '')+'" data-mode="'+m+'" style="'+toneStyle(COLORS.mode[m])+'">'+
+      '<span class="ic">'+M.icon+'</span><span class="tx"><b>'+(M.cardName || M.name)+'</b>'+(M.card ? M.card(m, done) : '<small>'+POOLS[m].length+unitOf(M)+'・'+LEVELS[m].length+'レベル</small><small>'+(M.doneWord || '行った所')+' '+done+'</small>')+'</span></button>';
   }).join("");
   document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => {
     setMode(b.dataset.mode);
@@ -1686,8 +1695,9 @@ function setMode(m){
   $("#map").dataset.map = M.time ? "time" : M.svg ? "svg" : M.src.startsWith("japan") ? "japan" : "world";
   $("#map-title").textContent = M.title;
   $("#map-cap").innerHTML = "レベルをクリアすると、その" + (M.thing || "名所") + "に 📍が立つよ。📍を押すと 名前が出るよ。2本の指で " + (M.time ? "年表" : M.svg ? "図" : "地図") + "を大きくできるよ。";
-  $("#lv-title").textContent = M.name + "　レベルをえらぶ";
+  $("#lv-title").textContent = (M.lvTitle || M.name + "　レベルをえらぶ");
   drawModes(); drawMap(); openLevels(m); drawRec();
+  if(typeof KABU === "object") KABU.home(m);  // 集めた会社・称号・マスターの えらぶ 列
 }
 /* ── 年表(歴史フリック旅行) ──
    年 → 横の位置。むかしほど ぎゅっと、近代ほど ゆったり(出来事が 近代に かたまるため)。区切りは 折れ線で つなぐ */
@@ -1975,6 +1985,9 @@ function renderCard(){
   if(mode === "quote"){
     target = q.r + q.ar; sepAt = q.r.length;
     h += '<p class="qtext">「'+q.t+'」</p><p class="who">'+q.a+'</p>';
+  }else if(typeof KABU === "object" && KABU.owns(mode)){
+    target = q.r; sepAt = -1;
+    h += KABU.card(q, idx > 0 ? qs[idx-1] : null);  // 会社名 + ひとつ前の 会社の ひとこと(こたえたら 出る)
   }else{
     target = q.r; sepAt = -1;
     const pc = pic(q);
@@ -1983,7 +1996,7 @@ function renderCard(){
   }
   h += '<div class="target" id="tgt"></div>';
   $("#card").innerHTML = h;
-  $("#prog").textContent = "Lv." + (level+1) + "　" + (idx+1) + " / " + ROUNDS;
+  $("#prog").textContent = (typeof KABU === "object" && KABU.owns(mode) ? KABU.lvInfo(mode, level).short : "Lv." + (level+1)) + "　" + (idx+1) + " / " + ROUNDS;
   renderTarget(0, false);
   $("#card").scrollTop = $("#card").scrollHeight;
 }
@@ -1999,8 +2012,9 @@ function openLevels(m){
   mode = m;
   $("#lv-list").innerHTML = LEVELS[m].map((set, i) => {
     const lens = set.map(q => textOf(m,q).length), b = bestOf(m,i);
-    return '<button class="lv sk-card sk-card-'+(i%4+1)+(isNaN(b) ? '' : ' done')+'" style="'+toneStyle(levelTone(i))+'" data-lv="'+i+'"><b>レベル'+(i+1)+'</b>'+
-      '<small>1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字</small>'+
+    const kl = typeof KABU === "object" && KABU.owns(m) ? KABU.lvInfo(m, i) : null;
+    return '<button class="lv sk-card sk-card-'+(i%4+1)+(isNaN(b) ? '' : ' done')+'" style="'+toneStyle(levelTone(i))+'" data-lv="'+i+'"><b>'+(kl ? kl.name : 'レベル'+(i+1))+'</b>'+
+      '<small>'+(kl ? kl.sub : '1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字')+'</small>'+
       '<div class="bt">'+(isNaN(b) ? '自己ベスト：まだなし' : '自己ベスト：'+b.toFixed(2)+'秒')+'</div></button>';
   }).join("");
   document.querySelectorAll(".lv").forEach(b => b.addEventListener("click", () => start(mode, +b.dataset.lv)));
@@ -2008,8 +2022,8 @@ function openLevels(m){
 
 function start(m, lv){
   mode = m; level = lv;
-  qs = LEVELS[m][lv];
-  idx = 0; times = []; running = false; locked = true; penalties = 0;
+  qs = typeof KABU === "object" && KABU.owns(m) ? KABU.makeQs(m, lv) : LEVELS[m][lv];  // 会社: ふくしゅうの 3問は その人に 合わせて えらぶ
+  idx = 0; times = []; running = false; locked = true; penalties = 0; qMiss = 0; lastErr = false;
   show("game");
   renderCard();
   $("#clock").textContent = "0.00";
@@ -2033,8 +2047,12 @@ function start(m, lv){
 let baseRaw = 0;
 function resetBase(){ baseRaw = ans.value.length; lastLen = 0; $("#typed").textContent = ""; }
 
+/* 1問ごとの まちがい(赤くなった回数)。会社の ふくしゅうで「まちがえた会社」を 先に出すため */
+let qMiss = 0, lastErr = false;
 function next(){
   times.push((performance.now()-qStart)/1000);
+  if(typeof KABU === "object" && KABU.owns(mode)) KABU.answered(qs[idx], times[times.length-1], qMiss);
+  qMiss = 0; lastErr = false;
   idx++;
   resetBase();
   if(idx >= ROUNDS){ finish(); return; }
@@ -2052,6 +2070,8 @@ ans.addEventListener("input", () => {
   const r = judge(v);
   renderTarget(r.n, r.err);
   ans.classList.toggle("bad", r.err);
+  if(r.err && !lastErr) qMiss++;
+  lastErr = r.err;
   if(r.done) next();
 });
 
@@ -2063,7 +2083,8 @@ function finish(){
   const firstClear = isNaN(prev);
   if(isNew) recSet(key, total.toFixed(2));
   const best = isNew ? total : prev;
-  const r = { mode, level, times: times.slice(), isNew: isNew && !isNaN(prev), firstClear, best, at: Date.now() };
+  const r = { mode, level, times: times.slice(), isNew: isNew && !isNaN(prev), firstClear, best, at: Date.now(), arts: qs.map(q => q.art) };
+  if(typeof KABU === "object" && KABU.owns(mode)) r.kabu = KABU.finished(r, qs);  // あたらしく 出会った 会社・称号
   /* 最後の結果を 端末に覚える。Googleマップから もどったとき ページが 作りなおされても 同じ結果画面に もどれるように
      (けいくん 2026-09-25「戻るボタンで元のゲーム画面に戻らない」)。1時間で 忘れる */
   store("flick-last", JSON.stringify(r));
@@ -2205,6 +2226,7 @@ let boardPeriod = "today", boardSent = "";  // 送った結果(のった / 理�
 async function submitScore(r){
   const p = curProfile();
   if(!p || r.mode === "quote" || !r.times || r.times.length !== ROUNDS) return "";
+  if(typeof KABU === "object" && KABU.noRank(r.mode, r.level)) return "norank";  // ふくしゅう(毎回 ちがう10問)・61より 上の レベルは ランキングに 送らない
   const ms = Math.round(r.times.reduce((a,b)=>a+b,0) * 1000);
   try{
     const res = await fetch(RANK_API + "/score", { method:"POST", headers:Object.assign({"content-type":"application/json"}, authHeaders()),
@@ -2236,7 +2258,8 @@ async function drawBoard(m, lv, id){
     if(!res.ok || !js || !js.ok){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません' + (js && js.reason ? "(" + esc(js.reason) + ")" : "") + '</p>'; return; }
     const rows = js.rows || [];
     const note = id === "board" && boardSent && boardSent !== "ok"
-      ? (boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。おうちの方が アカウントを つなぐと のります</p>'
+      ? (boardSent === "norank" ? '<p class="board-note">この回は ランキングの 対象では ありません(ふくしゅう・レベル61より上)</p>'
+      : boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。おうちの方が アカウントを つなぐと のります</p>'
                                   : '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>') : "";
     if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも!</p>' + note; return; }
     body.innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
@@ -2251,17 +2274,21 @@ function nameRuby(q){ return '<ruby class="nm">' + esc(q.n) + '<rt>' + esc(q.r) 
    だから かならず 日付を付ける。数字は tools/companies-caps.json(tools/add_spots.py が この2つと 同じか 確かめる) */
 const CAP_ASOF = "2026年9月26日", CAP_RATE = "1ドル=157.5円";
 function quoteBlock(q){
+  if(q.k === "company" && typeof KABU === "object") return KABU.info(q);
   if(q.k === "company") return '<p class="mcap">💴 時価総額 <b>' + esc(q.mc) + '</b><small>' + CAP_ASOF + '時点' + (isJapan(q) ? "" : "(" + CAP_RATE + "で計算)") + '<br>時価総額は 会社の大きさの めやす(株の値段 × 株の数)</small></p>';
   if(q.k !== "person") return "";
   return '<blockquote class="quote"><p class="qt">「'+(RUBY[q.art+"|s"] || q.s)+'」</p><p class="qd">'+(RUBY[q.art+"|sd"] || q.sd)+'</p></blockquote>';
 }
 function renderResult(r){
-  mode = r.mode; level = r.level; qs = LEVELS[mode][level]; times = r.times;
+  mode = r.mode; level = r.level; times = r.times;
+  qs = LEVELS[mode][level];
+  if(Array.isArray(r.arts) && r.arts.length === ROUNDS){ const pool = POOLS[mode] || [], by = new Map(pool.map(q => [q.art, q])); const a = r.arts.map(x => by.get(x) || (typeof KABU === "object" ? KABU.byArt(x) : null)); if(a.every(Boolean)) qs = a; }
   const total = times.reduce((a,b)=>a+b,0);
   const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
   const pinsNow = mode === "quote" ? 0 : clearedSpots(mode).size;
   $("#r-pins").classList.toggle("hidden", !(mode !== "quote" && r.firstClear));
   $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ!(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + unitOf(MAPS[mode]) + ")";
+  if(typeof KABU === "object" && KABU.owns(mode)){ $("#r-pins").classList.remove("hidden"); $("#r-pins").innerHTML = KABU.resultMsg(r); }
   $("#r-time").textContent = total.toFixed(2);
   const ink = levelTone(level).ink;
   $(".stamp").style.color = ink; $(".stamp").style.borderColor = ink;

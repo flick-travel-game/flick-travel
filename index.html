@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>世界フリック旅行</title>
+<title>フリック世界旅行</title>
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <link rel="icon" type="image/png" href="favicon.png?v=2">
 <link rel="manifest" href="manifest.webmanifest?v=3">
-<meta name="apple-mobile-web-app-title" content="世界フリック旅行ゲーム">
+<meta name="apple-mobile-web-app-title" content="フリック世界旅行">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#4fb8ff">
@@ -407,8 +407,8 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <img class="logo-word" src="logo-word.webp" alt="" width="1170" height="209" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">世界フリック旅行</h1>
-    <img class="hero" src="hero.webp" alt="世界フリック旅行。世界の名所と ひらがなが 空にうかぶ 絵" width="1536" height="1024">
+    <h1 class="sr-only">フリック世界旅行</h1>
+    <img class="hero" src="hero.webp" alt="フリック世界旅行。世界の名所と ひらがなが 空にうかぶ 絵" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -459,7 +459,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <p id="how1">表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。</p>
       <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
       <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
-    <p class="about-link"><a href="about.html">📖 世界フリック旅行について(おうちの方へ)</a></p>
+    <p class="about-link"><a href="https://kazutomo.app/games">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
     </div>
   </section>
 
@@ -530,15 +530,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"world", name:"世界フリック旅行", modes:["world","japan","wnames","jnames","capitals"], assets:"", logo:true, hero:true, dir:"", lead:"", how:"", rule:"" };
+const GAME = { id:"world", name:"フリック世界旅行", modes:["world","japan","wnames","jnames","capitals"], assets:"", logo:true, hero:true, dir:"", lead:"", how:"", rule:"" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
-const SERIES = [ {id:"world", name:"世界フリック旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"歴史フリック旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
-                 {id:"uchu", name:"宇宙フリック旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"からだフリック旅行", icon:"🫀", dir:"../flick-travel/karada/"},
-                 {id:"kabu", name:"株式フリック旅行", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"AIフリック旅行", icon:"🤖", dir:"../flick-travel/ai/"},
-                 {id:"eikaiwa", name:"英会話フリック旅行", icon:"💬", dir:"../flick-travel/eikaiwa/"},
-                 {id:"rika", name:"理科フリック旅行", icon:"🔬", dir:"../flick-travel/rika/"},
-                 {id:"seibi", name:"整備フリック旅行", icon:"🔧", dir:"../flick-travel/seibi/"} ];
+const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"歴史フリック", icon:"📜", dir:"../flick-travel/rekishi/"},
+                 {id:"uchu", name:"宇宙フリック", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"からだフリック", icon:"🫀", dir:"../flick-travel/karada/"},
+                 {id:"kabu", name:"株式フリック", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"フリックAI", icon:"🤖", dir:"../flick-travel/ai/"},
+                 {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"../flick-travel/eikaiwa/"},
+                 {id:"rika", name:"理科フリック", icon:"🔬", dir:"../flick-travel/rika/"},
+                 {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"../flick-travel/seibi/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
   {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
@@ -9167,7 +9167,7 @@ if(GAME.rule) $("#rule1").textContent = GAME.rule;
 /* シリーズの ほかのゲームへ */
 { const others = SERIES.filter(g => g.id !== GAME.id);
   const p = document.createElement("p"); p.className = "series";
-  p.innerHTML = "🧭 フリック旅行シリーズ: " + others.map(g => '<a href="' + g.dir + '">' + g.icon + ' ' + esc(g.name) + '</a>').join("");
+  p.innerHTML = "🧭 かずとも の ゲーム: " + others.map(g => '<a href="' + g.dir + '">' + g.icon + ' ' + esc(g.name) + '</a>').join("");
   const al = $(".about-link"); if(al) al.before(p); }
 
 /* 名言モード(QUOTES)は しくみを 残して 画面には 出さない(2026-09 に 名所だけに した) */

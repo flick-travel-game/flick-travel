@@ -27,7 +27,7 @@ const EIKAIWA = (() => {
     const j = JBY[o.j], L = LVN[o.dv];
     const sub = o.k === "word" ? o.pos + " ・ " + o.c : SCBY[o.sc].icon + " " + o.c;
     return Object.assign({}, o, { art:o.id, k:"english", kind:o.k, n:o.t, ord:i, jr:j,
-      d:(o.k === "word" ? '<span class="en-pos">' + esc(o.pos) + '</span>' : "") + o.mrb,
+      d:"",  // 意味は 名前の 横(nameHtml)。品詞は 小見出し(c)に ある
       c:j.icon + " " + j.name + " ・ " + sub + " ・ " + L.icon + " " + L.name });
   });
   const BY = new Map(ALL.map(q => [q.art, q]));
@@ -271,7 +271,8 @@ const EIKAIWA = (() => {
     }
     return '<span lang="en" class="en-tgt">' + h + '</span>';
   }
-  function nameHtml(q){ return '<span lang="en" class="en-nm">' + esc(q.t) + '</span>'; }
+  /* 結果の 見出し: 英語の 横に 意味(けいくん 2026-09-26「最後の解説は英単語の横に意味を書いてください」) */
+  function nameHtml(q){ return '<span lang="en" class="en-nm">' + esc(q.t) + '</span><span class="en-nmj">' + q.mrb + '</span>'; }
   /* ── 結果・図鑑の くわしい 情報: 例文 / 返事の 例 / ひとこと ── */
   function info(q, inZukan){
     const tag = inZukan ? "" : last && last.fresh.includes(q.art) ? '<span class="en-tag new">🆕 はじめて 出会った</span>' : last && last.rev.includes(q.art) ? '<span class="en-tag rev">🔁 ふくしゅう</span>' : "";
@@ -369,7 +370,7 @@ const EIKAIWA = (() => {
     const q = BY.get(id); if(!q) return;
     const e = log()[id], box = sheet("en-zdt"), fav = favs().includes(id);
     box.innerHTML = '<div class="en-card"><button type="button" class="en-x" aria-label="とじる">×</button>' + (e
-      ? '<p class="en-cn"><span class="en-ic">' + q.e + '</span><span lang="en">' + esc(q.t) + '</span>' + sayBtn(q.t) +
+      ? '<p class="en-cn"><span class="en-ic">' + q.e + '</span><span lang="en">' + esc(q.t) + '</span><span class="en-nmj">' + q.mrb + '</span>' + sayBtn(q.t) +
         '<button type="button" class="en-fav' + (fav ? " on" : "") + '" data-en-fav="' + esc(id) + '" aria-label="お気に入り">' + (fav ? "⭐" : "☆") + '</button></p>' +
         '<p class="en-meta">' + esc(q.c) + '</p><p class="en-d">' + q.d + '</p>' + info(q, true) +
         '<p class="en-st">出会った回数 ' + e[0] + '回' + (e[1] ? '・まちがい ' + e[1] + '回' : "") + (weakList().includes(q) ? "・💪 苦手ことば" : "") + '</p>'
@@ -483,11 +484,11 @@ const EIKAIWA = (() => {
 .en-prev{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:13px;color:#475569;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:4px 8px;margin:0 0 10px;animation:enIn .35s ease-out}
 .en-prev b{color:#065f46;font-size:14px}.en-pl{font-size:11px;font-weight:800;color:#16a34a;background:#dcfce7;border-radius:99px;padding:1px 7px}.en-eq{color:#94a3b8}.en-pm{min-width:0}
 .en-prev .en-say{padding:2px 6px;font-size:12px}.en-prev.en-hint{color:#94a3b8}
-.en-qb{flex:1;min-width:0}.en-mean{margin:2px 0 0;font-size:15px;font-weight:700;line-height:1.9;color:#065f46}.en-mean.big{font-size:17px;line-height:1.95}.en-mean.big.w{font-size:clamp(22px,7vw,28px);line-height:1.7;margin:0 0 6px}
+.en-qb{flex:1;min-width:0}.en-mean{margin:2px 0 0;font-size:15px;font-weight:700;line-height:1.9;color:#1d6fe0}.en-mean.big{font-size:17px;line-height:1.95}.en-mean.big.w{font-size:clamp(22px,7vw,28px);line-height:1.7;margin:0 0 6px}
 .en-note2{margin-left:8px;font-size:11.5px;font-weight:800;color:#9d174d;background:#fce7f3;border-radius:99px;padding:1px 7px}
 .en-qp{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 2px}.en-qp .en-cat{margin:0}
 .en-rp1{margin:0 0 8px;font-size:12.5px;color:#0369a1;line-height:1.5}.en-rp1 span{font-weight:700}.en-word{margin:2px 0 0;font-size:clamp(26px,8vw,34px);font-weight:900;line-height:1.15;color:var(--ink);word-break:break-word}
-.en-type{margin:0 0 4px;font-size:13px;font-weight:900;color:#0e8f6e}
+.en-type{margin:0 0 4px;font-size:13px;font-weight:900;color:#1d6fe0}
 .en-tiles{display:flex;flex-wrap:wrap;gap:6px}
 .target .en-tile{display:inline-grid;place-items:center;min-width:1.5em;height:1.6em;padding:0 .15em;box-sizing:border-box;border-radius:8px;background:#fff;border:2px solid #cbd5e1;font-weight:800;line-height:1}
 .target .en-tile.d{border-color:#86efac;background:#f0fdf4}.target .en-tile.n{border-color:var(--blue);border-bottom-width:4px}
@@ -495,7 +496,7 @@ const EIKAIWA = (() => {
 .en-say{border:1.5px solid #a7f3d0;background:#fff;border-radius:99px;font:inherit;font-size:15px;line-height:1;padding:5px 8px;cursor:pointer;flex:none;color:#065f46;font-weight:800}
 .en-say.big{padding:9px 12px;font-size:14px;background:#ecfdf5}.en-say.slow{font-size:13px}
 .en-tag{display:inline-block;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px}.en-tag.new{background:#fef3c7;color:#92400e}.en-tag.rev{background:#fce7f3;color:#9d174d}.en-tag.weak{background:#ffedd5;color:#9a3412}
-.en-nm{font-size:1.05em;word-break:break-word}
+.en-nm{font-size:1.05em;word-break:break-word}.en-nmj{margin-left:10px;font-size:.9em;font-weight:700;color:#1d6fe0}.en-nmj rt{color:#64748b}
 .en-pos{display:inline-block;font-size:11px;font-weight:800;background:#e0f2fe;color:#075985;border-radius:99px;padding:0 7px;margin-right:6px;vertical-align:1px}
 .en-info{margin-top:6px}.en-info .en-tag{margin:0 0 6px}.en-sayline{display:flex;gap:6px;margin:4px 0}
 .en-ex{font-size:14px;line-height:1.7;margin:6px 0;background:#f0f9ff;border-radius:10px;padding:6px 10px;color:#0c4a6e}.en-ex b{display:inline-block;font-size:11px;background:#0ea5e9;color:#fff;border-radius:99px;padding:0 8px;margin-right:6px;line-height:1.8}

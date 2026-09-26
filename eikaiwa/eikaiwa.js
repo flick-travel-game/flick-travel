@@ -243,12 +243,24 @@ const EIKAIWA = (() => {
     }else h += '<div class="en-learn en-hint">こたえると、意味が 出るよ。' + (TTS ? "🔊 で 発音も 聞けるよ" : "") + '</div>';
     const tag = weakSet.has(q.art) ? '<span class="en-tag weak">💪 苦手ことば</span>' : revSet.has(q.art) ? '<span class="en-tag rev">🔁 ふくしゅう</span>' : (pre && !pre.has(q.art) ? '<span class="en-tag new">🆕 はじめまして</span>' : "");
     const sub = q.kind === "word" ? esc(q.pos) : SCBY[q.sc].icon + " " + esc(SCBY[q.sc].name);
-    h += '<div class="en-q"><span class="en-ic">' + q.e + '</span><div class="en-qb">' + tag + '<small class="en-cat">' + sub + '</small></div>' +
-         (TTS ? '<button type="button" class="en-say big" data-en-say="' + esc(q.t) + '" aria-label="発音を 聞く">🔊 きく</button>' : "") + '</div>';
+    /* 英単語は 問題の 英語(スペル)を 大きく 出す(けいくん 2026-09-26「英単語の問題にスペルを書いて打つようにして / 日本語で問題出されてもワンチャン分からない」)。
+       意味は 小さく そえるだけ。打つ 字は 下の 四角に 1字ずつ */
+    h += '<div class="en-q"><span class="en-ic">' + q.e + '</span><div class="en-qb">' + tag +
+         (q.kind === "word" ? '<p class="en-word" lang="en">' + esc(q.t) + '</p><small class="en-cat">' + sub + ' ・ ' + esc(q.m) + '</small>' : '<small class="en-cat">' + sub + '</small>') + '</div>' +
+         (TTS ? '<button type="button" class="en-say big" data-en-say="' + esc(q.t) + '" aria-label="発音を 聞く">🔊 きく</button>' : "") + '</div>' +
+         '<p class="en-type">⌨️ ' + (q.kind === "word" ? "この スペルを 1字ずつ 打とう" : "この 英語を 打とう") + '</p>';
     return h;
   }
   /* 打つ 英文: 空白・記号も そのまま 見せる。色が かわるのは 打つ 字(英字・数字)だけ */
   function tgtHtml(q, n, err){
+    if(q.kind === "word"){  // 英単語: 1字ずつ 四角に(「I」1字でも 字だと わかるように)
+      let t = "", p = 0;
+      for(const ch of q.t){
+        if(norm(ch)){ t += '<span class="en-tile ' + (p < n ? "d" : p === n ? (err ? "x" : "n") : "c") + '">' + esc(ch) + '</span>'; p++; }
+        else t += '<span class="en-tile sk ' + (p > 0 && p <= n ? "d" : "c") + '">' + esc(ch) + '</span>';
+      }
+      return '<span lang="en" class="en-tiles">' + t + '</span>';
+    }
     let h = "", p = 0;
     for(const ch of q.t){
       const typedCh = norm(ch).length > 0;
@@ -467,7 +479,12 @@ const EIKAIWA = (() => {
 @keyframes enIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 .en-q{display:flex;gap:10px;align-items:center;margin:0 0 8px}
 .en-ic{font-size:30px;width:50px;height:50px;display:grid;place-items:center;background:linear-gradient(135deg,#d1fae5,#dbeafe);border-radius:14px;flex:none}
-.en-qb{flex:1;min-width:0}.en-cat{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.en-qb{flex:1;min-width:0}.en-word{margin:2px 0 0;font-size:clamp(26px,8vw,34px);font-weight:900;line-height:1.15;color:var(--ink);word-break:break-word}
+.en-type{margin:0 0 4px;font-size:12px;font-weight:800;color:#0e8f6e}
+.en-tiles{display:flex;flex-wrap:wrap;gap:6px}
+.target .en-tile{display:inline-grid;place-items:center;min-width:1.5em;height:1.6em;padding:0 .15em;box-sizing:border-box;border-radius:8px;background:#fff;border:2px solid #cbd5e1;font-weight:800;line-height:1}
+.target .en-tile.d{border-color:#86efac;background:#f0fdf4}.target .en-tile.n{border-color:var(--blue);border-bottom-width:4px}
+.target .en-tile.x{border-color:var(--red);background:#fee2e2;color:var(--red)}.target .en-tile.sk{border-style:dashed;min-width:1em}.en-cat{display:block;font-size:12px;color:var(--muted);margin-top:3px}
 .en-say{border:1.5px solid #a7f3d0;background:#fff;border-radius:99px;font:inherit;font-size:15px;line-height:1;padding:5px 8px;cursor:pointer;flex:none;color:#065f46;font-weight:800}
 .en-say.big{padding:9px 12px;font-size:14px;background:#ecfdf5}.en-say.slow{font-size:13px}
 .en-tag{display:inline-block;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px}.en-tag.new{background:#fef3c7;color:#92400e}.en-tag.rev{background:#fce7f3;color:#9d174d}.en-tag.weak{background:#ffedd5;color:#9a3412}

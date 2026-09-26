@@ -219,3 +219,8 @@ GitHub Pages は リポジトリの「いちばん上」か「docs フォルダ�
   つないでいなければ「おうちの方の アカウントと つなぐと、きろくが のこり ランキングに 名前が のります」+「おうちの方へ」
 - ⚠️ 子どもが 見る 字には お金の ことばを 書かない。「おうちの方へ」の リンクは 同じ タブで ひらく(sessionStorage の この回の きろくを もったまま もどってこられるように)
 - 確かめかた: Playwright で kazutomo.app を `page.route` で まねて、しるしなし / ?link=(graph:false)/ しるしあり(listed:true)/ もう きろくが ある人 / つながらない の 5とおり
+
+## 宇宙・からだの 写真(2026-09-26)
+- `tools/fetch_series_photos.py`: space.tsv / body.tsv の 10列目(Wikipedia の題名)→ 記事の 代表画像 → Commons。ライセンスは ほかの写真と同じ(PD/CC0/CC BY/CC BY-SA だけ)。`photos.js` に 足すだけ(前の写真は 消さない)。キャッシュは `tools/series-*.json`
+- 613のうち 582に 写真(宇宙 304 / からだ 278)。のこり 31は 記事に 絵が無い・ライセンスが 合わない。手で えらぶなら `fetch_portraits.py` の `MANUAL_KEY` と 同じ形で
+- ⚠️ 図(骨・細胞・星図)は 英語の字が 入っているものが ある(Wikipedia の 絵が そうなっているため)

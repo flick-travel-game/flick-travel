@@ -6004,6 +6004,11 @@ for(const m of MODES){
     .sort((a,b) => a.f - b.f || (byFame ? b.v - a.v : 0) || a.c - b.c || a.i - b.i).map(x => x.q);
   LEVELS[m] = [];
   for(let i = 0; i + ROUNDS <= sorted.length; i += ROUNDS) LEVELS[m].push(sorted.slice(i, i + ROUNDS));
+  /* あまりが 出たら、その前の レベルの うしろから 足りないぶんを もう一度 出して 最後も 10問にする
+     (けいくん 2026-09-26「おすすめでよろしく」。首都は 国が 195しか無く 5つ あまる)。
+     ⚠️ 5問・15問の レベルは 作らない(10問の タイムで くらべる 決まり)。むずかしさが そろうよう すぐ前の 5問を 使う */
+  const rest = sorted.length % ROUNDS;
+  if(rest && sorted.length > ROUNDS){ const left = sorted.slice(-rest); LEVELS[m].push(sorted.slice(-rest - (ROUNDS - rest), -rest).concat(left)); }
 }
 /* ── だれが あそぶか(6人まで。けいくん 2026-09-25「かずとものように右上にアイコンを作って 6人まで登録出来るように」) ──
    端末の中だけ(flick-profiles / flick-profile)。自己ベストは 人ごと(flick-best-p<id>-<旅>-<レベル>)。

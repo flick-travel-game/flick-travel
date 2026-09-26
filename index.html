@@ -3798,7 +3798,11 @@ function drawModes(){
     return '<button class="mode sk-card sk-card-'+(i+1)+(m === mode ? ' cur' : '')+'" data-mode="'+m+'" style="'+toneStyle(COLORS.mode[m])+'">'+
       '<span class="ic">'+M.icon+'</span><span class="tx"><b>'+M.name+'</b><small>'+POOLS[m].length+(M.thing ? '人' : 'か所')+'・'+LEVELS[m].length+'レベル</small><small>'+(M.thing ? '知った人 ' : '行った所 ')+done+'</small></span></button>';
   }).join("");
-  document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => setMode(b.dataset.mode)));
+  document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => {
+    setMode(b.dataset.mode);
+    // 旅をえらんだら レベルの一覧まで 送る(けいくん 2026-09-26「選んだらその問題に飛ぶように」)。地図の下にあって 見えないため
+    const t = $("#lv-title"); if(t) t.scrollIntoView({ behavior:"smooth", block:"start" });
+  }));
 }
 function setMode(m){
   mode = m; store("flick-mode", m);

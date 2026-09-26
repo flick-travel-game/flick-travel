@@ -709,7 +709,7 @@ const TONE = {
 const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: toneFrom("#8a5a2b"), jevents: toneFrom("#5b3fbf"),
-          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
+          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"), ktsubo: toneFrom("#a8552f") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
@@ -775,7 +775,7 @@ const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filt
                 capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)),
                 /* 宇宙フリック旅行(key の あたま sol / sky / cos)・からだフリック旅行(bon mus / org sys / cel) */
                 usolar: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sol")), usky: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sky")), ucos: SPOTS.filter(q => q.k === "space" && q.art.startsWith("cos")),
-                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")) };
+                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")), ktsubo: SPOTS.filter(q => q.k === "body" && q.art.startsWith("tsb")) };
 if(PLUG) Object.assign(POOLS, PLUG.pools);
 /* 日本一周マップの 決めごと(tools/make_japan_map.py と 同じ数字)。本土は 東経128.5〜146.5 / 北緯29.8〜46。
    南西諸島(北緯28度より南)は 左上の わく(東経122.5〜 / 北緯27.5〜)に 同じ縮尺で */
@@ -813,7 +813,10 @@ MAPS.ucos = { svg:true, maps:["sky","solar"], w:1080, h:540, src:"", icon:"🌌"
 MAPS.kbone = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🦴", name:"ほねと きんにく", title:"からだの図", word:"からだの図", sub:"骨・関節・筋肉", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.korgan = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🫀", name:"臓器と しくみ", title:"からだの図", word:"からだの図", sub:"心臓・肺・胃・脳・血液・ホルモン…", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.kcell = { svg:true, maps:["cell"], w:720, h:720, src:"", icon:"🧬", name:"細胞と 遺伝", title:"細胞の図", word:"細胞の図", sub:"細胞・DNA・遺伝子…", thing:"場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
-const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell"];
+/* ツボ(けいくん 2026-09-26「からだフリック旅行に体のツボをすべて足してください」)。WHO の 標準 361か所。
+   図は はだの 前・うしろ・頭の 3枚(けいくんの ChatGPT の 絵)。データと 📍の 場所は tools/tsubo.tsv */
+MAPS.ktsubo = { svg:true, maps:["tfront","tback","thead"], w:1024, h:1536, src:"", icon:"👆", name:"ツボ", title:"ツボの図", word:"ツボの図", sub:"合谷・足三里・百会…WHOの 361か所", thing:"ツボ", unit:"", doneWord:"知ったツボ", miss:"まだ知らないツボ" };
+const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "ktsubo"];
 if(PLUG) for(const m of PLUG.modes){ MAPS[m] = Object.assign({}, MAPS.world, PLUG.maps[m]); ALL_MODES.push(m); }
 const MODES = ALL_MODES.filter(m => GAME.modes.includes(m));  // この ゲームに 出す 旅だけ
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
@@ -1149,6 +1152,10 @@ const SVG_MAPS = {
   head: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-head.webp" width="' + W + '" height="' + H + '"/>'
     + '<text x="12" y="26" font-size="20" fill="#a08070">横から見た 頭の中(顔は 左むき)</text>' },
   cell: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-cell.webp" width="' + W + '" height="' + H + '"/>' },
+  // ツボの 図(はだの 絵。前・うしろは 同じ人・同じ 立ちかた)。⚠️ 絵を 差しかえたら tools/tsubo.tsv の x,y を 測りなおす
+  tfront: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-front.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">前から見た からだ(向かって左が 右手)</text>' },
+  tback: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-back.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">うしろから見た からだ(向かって右が 右手)</text>' },
+  thead: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-head.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">横から見た 頭(顔は 左むき)</text>' },
 };
 let curSub = null;  // いま出している 図(maps の どれか)
 function drawSvgMap(done, M){
@@ -1158,7 +1165,7 @@ function drawSvgMap(done, M){
   let box = $("#svgmap"); if(!box){ box = document.createElement("div"); box.id = "svgmap"; box.className = "svg-wrap"; $("#map-in").appendChild(box); }
   box.innerHTML = '<svg viewBox="0 0 ' + D.w + ' ' + D.h + '" xmlns="http://www.w3.org/2000/svg">' + D.bg(D.w, D.h) + '</svg>';
   const tabs = $("#map-tabs"); tabs.classList.toggle("hidden", M.maps.length < 2);
-  const NAME = { solar:"太陽系", sky:"星空", front:"からだ", head:"頭", cell:"細胞" };
+  const NAME = { solar:"太陽系", sky:"星空", front:"からだ", head:"頭", cell:"細胞", tfront:"前", tback:"うしろ", thead:"頭" };
   tabs.innerHTML = M.maps.map(k => '<button type="button" data-k="' + k + '"' + (k === curSub ? ' class="on"' : '') + '>' + NAME[k] + '</button>').join("");
   tabs.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { curSub = b.dataset.k; mapReset(); drawMap(); }));
   const items = [];

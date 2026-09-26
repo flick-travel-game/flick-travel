@@ -290,7 +290,8 @@ GitHub Pages は リポジトリの「いちばん上」か「docs フォルダ�
 
 ### ゲームの しくみ
 - 土台の `index.html` の 差しこみ口を **`PLUG`** に 広げた(`KABU` か `AITABI`。ほかの ゲームは null)。足した 差しこみ: `retarget`(読みが いくつか ある ことば)/ `start(m, lv, only)`(もう一度だけ挑戦)/ `noBoard`
-- 中身は **`ai/ai.js`**。絵は まだ 無いので 題名は 文字(けいくんの 絵が 届いたら `ai/` に 置いて `build_games.py` の hero/logo/art を 足す)
+- 中身は **`ai/ai.js`**
+- **トップの絵**(`ai/hero.webp`)は けいくんの ChatGPT の 絵(2026-09-26)。題名 `logo-word.webp` は `tools/ai/logo_cut.py`(紺色の ふちを 拾って 内がわを うめる)で 切りぬいた(1037×223)。四角い アイコン(`logo-mark2.webp` `icon-512.png` `apple-touch-icon.png` `favicon.png`)は けいくんの 四角い 絵(1254px)を 縮めたもの。差しかえたら `build_games.py` の art に `iconv` を 足して 数字を 上げる
 
 ### ランキング(かずとも)
 - 2026-09-26 に かずともの `FLICK_MODES` へ aiw / aweb / aops / amas を 足した(speed-king #171)。`ai/ai.js` の `RANK_READY = true`

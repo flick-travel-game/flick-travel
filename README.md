@@ -374,7 +374,8 @@ GitHub Pages は リポジトリの「いちばん上」か「docs フォルダ�
 - 確かめは `python3 tools/seibi/terms_js.py --check`(id・読み・かぶり・図の 場所・つながる ことば・メーカー名・旅ごとの 数)
 - 語の 一覧を **整備の 仕事を している 人に 見てもらう**と なおよい(読みかた・言いかたの ゆれ)
 
-### ランキング(かずとも)は まだ
-- `seibi.js` の `RANK_READY = false`(ランキングを 出さない・送らない)。
-  speed-king の `src/lib/flick.ts` の `FLICK_MODES` に `sengine schassis sbrake selec sbike stool smas`、`FLICK_LINK_TARGETS` に `seibi` を 足したら true に
+### ランキング(かずとも)
+- speed-king の `FLICK_MODES` に `sengine schassis sbrake selec sbike stool smas`、`FLICK_LINK_TARGETS` に `seibi` を 足した(speed-king #175)。`seibi.js` の `RANK_READY = true`
+- ふくしゅう(sfuku)・苦手克服(sweak)・もう一度だけ挑戦・レベル61より 上は 送らない
+- 規約などの 文(`FLICK_SERIES_GAMES`)には まだ 整備は 入っていない(お金・規約の 変更なので けいくんの OK が 要る)
 - トップの 絵・アイコンは まだ 無い(文字の 題名)。絵が 届いたら `build_games.py` の seibi に `art` を 足して `hero/logo` を True に。**メーカーの ロゴは 入れない**

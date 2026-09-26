@@ -1529,7 +1529,7 @@ const PERIODS = [["today","きょう"],["week","今週"],["all","いままで"]]
    ⚠️ もう 端末に きろくが ある人(localStorage に flick-best- / flick-hist が ある人)は そのまま localStorage(消さない・うつさない)
    ⚠️ 子どもが 見る 字には お金の ことばを 書かない */
 const LINK_KEY = "flick-link", PLAN_TTL = 10 * 60 * 1000;
-const LINK_URL = "https://kazutomo.app/flick-link" + (["rekishi","uchu","karada"].includes(GAME.id) ? "?to=" + GAME.id : "");
+const LINK_URL = "https://kazutomo.app/flick-link" + (["rekishi","uchu","karada","kabu","ai"].includes(GAME.id) ? "?to=" + GAME.id : "");
 let PLAN = null, recMemo = null;
 function linkToken(){ return store(LINK_KEY) || ""; }
 function authHeaders(){ const t = linkToken(); return t ? { Authorization: "Bearer " + t } : {}; }

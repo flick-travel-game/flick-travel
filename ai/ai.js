@@ -10,7 +10,7 @@
 const AITABI = (() => {
   const D = AI_TERMS;
   const ROUNDS = 10, REV = 3;
-  const RANK_READY = false;  // かずともの FLICK_MODES に aiw / aweb / aops / amas が 入ったら true(それまで ランキングは 出さない・送らない)
+  const RANK_READY = true;  // かずともの FLICK_MODES に aiw / aweb / aops / amas を 足した(speed-king #171・2026-09-26)。false に すると ランキングを 出さない・送らない
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const fmt = n => n.toLocaleString("ja-JP");
   const JR = D.journeys, JBY = Object.fromEntries(JR.map(j => [j.id, j]));

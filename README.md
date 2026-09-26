@@ -201,3 +201,21 @@ GitHub Pages は リポジトリの「いちばん上」か「docs フォルダ�
   旅によっては 図が 2つあり(`MAPS.*.maps`)、地図の上の タブで 切りかえる(`curSub`)。📍の位置は TSV の x,y(`SVG_MAPS[].pos`)
 - カードは 絵文字(写真は まだ無い。Wikipedia の題名 `w` を持っているので、あとで `fetch_photos.py` の pageimages の道で 取れる)。「📖 Wikipedia で くわしく」の リンク
 - ⚠️ からだの図は ぼくが 描いた かんたんな 人のかたち。けいくんの絵に 差しかえるなら、**同じ 前向き・同じ位置**(頭 y0.09・肩 y0.22・へそ y0.47・ひざ y0.74)で 描いてもらい `SVG_MAPS.front.bg` を `<image>` に する
+
+## おうちの方の アカウントと つなぐ(かずとも ④-c と 同じ線。2026-09-26)
+- おうちの方が かずとも に ログインして **https://kazutomo.app/flick-link** を ひらくと、`https://flick-travel-game.github.io/flick-travel/?link=<しるし>`(歴史・宇宙・からだは `/flick-travel/<rekishi|uchu|karada>/?link=…`)に もどってくる。
+  ゲームは しるしを `localStorage` の **`flick-link`** に しまい(同じ 住所の下なので **4つの ゲームで 共通**)、`history.replaceState` で URL から `link` を 消し、1回だけ「おうちの方の アカウントと つながりました」と 出す(`takeLink`)
+- できることは **`GET https://kazutomo.app/api/flick/plan`**(しるしが あれば `Authorization: Bearer <しるし>`)で 聞く → `{graph, listed, signedIn}`。`fetchPlan` が メモリと sessionStorage(`flick-plan`。10分)に おぼえる。
+  ⚠️ **つながらないときは 責めない**: しるしが あれば ぜんぶ できる(`graph:true, listed:true, signedIn:true`)、無ければ `graph:true, listed:false, signedIn:false` と みなす
+- **ランキング**: `POST /api/flick/score` にも 同じ Bearer を 付ける。返事が `listed:false` なら 記録は しまわれたが 名前は のらないので、結果画面の ランキングの下に
+  「この回は ランキングに 名前が のりませんでした。おうちの方が アカウントを つなぐと のります」(もとの 失敗の 字「この回は ランキングに のりませんでした: …」「いまは ランキングを 読めません」は そのまま)
+- **のび**: `graph:false` のときは **消さずに ぼかす**(`planGrowth`。かずとも `Blurred` と 同じ `filter:blur(5px);opacity:.7;pointer-events:none` + `aria-hidden`)。下に「おうちの方の がめんから つづきが 見られます」。結果画面・トップの きろく の 両方
+- **つないでいない人の きろくは ゲームを とじると きえる**(かずとも ④-c②): 履歴 `flick-hist*`・あそんだ日 `flick-days*`・自己ベスト `flick-best-*` は、つないでいない あいだ **sessionStorage** に しまう(`recStore` / `recGet` / `recSet`)。
+  2回め から 結果画面に「この きろくは、ゲームを とじると きえます。おうちの方が アカウントを つなぐと のこります」+「おうちの方へ」(→ kazutomo.app/flick-link。歴史・宇宙・からだは `?to=<GAME.id>`)
+  - ⚠️ **もう 端末に きろくが ある人は そのまま**: いまの人の `flick-best-`/`flick-hist`/`flick-days` が localStorage に 1つでも あれば、その人は ずっと localStorage(`recPersistent`)。消さない・うつさない
+  - つないだら(しるしが 入ったとき・plan が つながっていると 言ったとき)、sessionStorage の きろくを localStorage に **足す**(`keepSessionRecords`。ベストは 速いほう・履歴は かさねて 400回まで・日は 合わせる)。localStorage の きろくは 消さない
+  - はじめて なまえを 入れたときの 自己ベストの 引きつぎも、sessionStorage の ぶんは sessionStorage の中で 引きつぐ
+- **だれが あそぶ？** の ⚠️ ランキングの 1行の下に: つながっていれば「✅ おうちの方の アカウントと つながっています」+「つなぐのを やめる」(たしかめてから しるしだけ 消す。きろくは 消さない)、
+  つないでいなければ「おうちの方の アカウントと つなぐと、きろくが のこり ランキングに 名前が のります」+「おうちの方へ」
+- ⚠️ 子どもが 見る 字には お金の ことばを 書かない。「おうちの方へ」の リンクは 同じ タブで ひらく(sessionStorage の この回の きろくを もったまま もどってこられるように)
+- 確かめかた: Playwright で kazutomo.app を `page.route` で まねて、しるしなし / ?link=(graph:false)/ しるしあり(listed:true)/ もう きろくが ある人 / つながらない の 5とおり

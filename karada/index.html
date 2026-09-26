@@ -378,6 +378,16 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .quit{background:var(--card)}
 .how .rule{border-radius:16px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* おうちの方の アカウントと つなぐ(かずとも ④-c と 同じ線。つないでいないと のびが ぼける・きろくが とじると きえる) */
+.blurred{position:relative}
+.blurred .bl-in{filter:blur(5px);opacity:.7;pointer-events:none;user-select:none;-webkit-user-select:none}
+.blurred .bl-note{margin:10px 0 0;text-align:center;font-size:13px;font-weight:900;color:#64748b}
+.keep-note{margin:0 0 14px;padding:12px 14px;border-radius:16px;background:#fff7ed;color:#9a3412;font-size:13px;font-weight:700;line-height:1.7;text-align:center}
+.keep-note a,.prof-link a,.prof-link .lnk{color:#2563eb;font-weight:900;text-decoration:underline}
+.prof-link{margin:8px 0 0;text-align:center;font-size:12px;font-weight:700;line-height:20px;color:#64748b}
+.prof-link .lnk{margin-left:6px;font-size:12px;color:#94a3b8;font-weight:700}
+.flick-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1000;max-width:calc(100% - 32px);padding:12px 18px;border-radius:999px;background:#1e293b;color:#fff;font-size:14px;font-weight:900;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:opacity .4s}
+.flick-toast.out{opacity:0}
 </style>
 </head>
 <body>
@@ -477,6 +487,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     </div>
     <div class="growbox" id="r-streak"></div>
     <div class="growbox hidden" id="r-grow"><p class="grow-ttl">のび</p><div id="r-grow-body"></div></div>
+    <p class="keep-note hidden" id="r-keep"></p>
     <section class="board" id="board" hidden>
       <div class="board-head"><b>🏆 みんなのランキング</b><span id="board-sub"></span></div>
       <div class="board-tabs" id="board-tabs"></div>
@@ -1451,11 +1462,149 @@ function byGrade(){ return store("flick-bygrade") === "1"; }
    ここには 鍵も 表も 無い。つながらなくても あそびは 止めない */
 const RANK_API = "https://kazutomo.app/api/flick";
 const PERIODS = [["today","きょう"],["week","今週"],["all","いままで"]];
+/* ── おうちの方の アカウントと つなぐ(かずとも ④-c の 線と まったく同じ) ──
+   おうちの方が かずとも に ログインして https://kazutomo.app/flick-link を ひらくと、ここへ ?link=<しるし> で もどってくる。
+   しるしは 端末に1つ(flick-link。同じ 住所の下の 4つの ゲームで 共通)。GET /api/flick/plan で できることを 聞く:
+   ・graph:false  → のび の グラフを ぼかす(消さない)。「おうちの方の がめんから つづきが 見られます」
+   ・listed:false → 記録は 送るが ランキングに 名前が のらない(POST /score が listed:false を 返す)
+   ・signedIn:false(しるしが 無い・きれた)→ この回の きろく(flick-hist / flick-days / flick-best-)は sessionStorage に しまう = ゲームを とじると きえる
+   ⚠️ つながらないときは 責めない: しるしが あれば ぜんぶ できる、と みなす
+   ⚠️ もう 端末に きろくが ある人(localStorage に flick-best- / flick-hist が ある人)は そのまま localStorage(消さない・うつさない)
+   ⚠️ 子どもが 見る 字には お金の ことばを 書かない */
+const LINK_KEY = "flick-link", PLAN_TTL = 10 * 60 * 1000;
+const LINK_URL = "https://kazutomo.app/flick-link" + (["rekishi","uchu","karada"].includes(GAME.id) ? "?to=" + GAME.id : "");
+let PLAN = null, recMemo = null;
+function linkToken(){ return store(LINK_KEY) || ""; }
+function authHeaders(){ const t = linkToken(); return t ? { Authorization: "Bearer " + t } : {}; }
+function planCached(){
+  try{ const c = JSON.parse(sessionStorage.getItem("flick-plan") || "null");
+       if(c && c.plan && c.tok === linkToken() && Date.now() - c.at < PLAN_TTL) return c.plan; }catch(e){}
+  return null;
+}
+function planOf(){ return PLAN || planCached(); }
+/* しるしが あって、サーバーが「つながっていない」と 言っていなければ つながっている(聞いている あいだも) */
+function signedIn(){ if(!linkToken()) return false; const p = planOf(); return !p || p.signedIn !== false; }
+function graphOk(){ const p = planOf(); return !p || p.graph !== false; }
+async function fetchPlan(force){
+  const tok = linkToken();
+  if(!force){ const c = planCached(); if(c){ PLAN = c; return c; } }
+  let plan, ok = false;
+  try{
+    const res = await fetch(RANK_API + "/plan", { headers: authHeaders(), cache: "no-store" });
+    const js = await res.json().catch(() => null);
+    if(res.ok && js && js.ok){ plan = { graph: js.graph !== false, listed: js.listed !== false, signedIn: !!js.signedIn }; ok = true; }
+  }catch(e){}
+  if(!plan) plan = tok ? { graph:true, listed:true, signedIn:true } : { graph:true, listed:false, signedIn:false };  // つながらない → 責めない
+  if(tok !== linkToken()) return PLAN;  // 聞いている あいだに しるしが 変わった
+  const before = JSON.stringify({ s: signedIn(), g: graphOk() });
+  PLAN = plan; recMemo = null;
+  if(ok){ try{ sessionStorage.setItem("flick-plan", JSON.stringify({ at: Date.now(), tok, plan })); }catch(e){} }
+  if(signedIn()) keepSessionRecords();
+  if(JSON.stringify({ s: signedIn(), g: graphOk() }) !== before){
+    if(JSON.parse(before).s !== signedIn() && !$("#home").classList.contains("hidden")) showBest();  // しまい場所が 変わった → 地図・きろくも
+    planViewsRefresh();
+  }
+  return plan;
+}
+/* きろくの しまい場所。つながっている人 / もう localStorage に きろくが ある人 → localStorage(ずっと)。それ以外 → sessionStorage(とじると きえる) */
+function recPersistent(){
+  const p = curProfile(), memo = (p ? p.id : "") + "|" + signedIn();
+  if(recMemo && recMemo.k === memo) return recMemo.v;
+  let v = signedIn();
+  if(!v){
+    try{
+      if(localStorage.getItem(histKey()) !== null || localStorage.getItem(daysKey()) !== null) v = true;
+      const pre = p ? "flick-best-p" + p.id + "-" : null;
+      for(let i = 0; !v && i < localStorage.length; i++){
+        const k = localStorage.key(i) || "";
+        if(pre ? k.startsWith(pre) : /^flick-best-[a-z]+-\d+$/.test(k)) v = true;
+      }
+    }catch(e){ v = true; }  // localStorage が 読めない 端末は いままでどおり
+  }
+  recMemo = { k: memo, v };
+  return v;
+}
+function recStore(){ try{ return recPersistent() ? localStorage : sessionStorage; }catch(e){ return null; } }
+function recGet(k){ try{ return recStore().getItem(k); }catch(e){ return null; } }
+function recSet(k, v){ try{ recStore().setItem(k, v); }catch(e){} }
+/* つながったら、この回(sessionStorage)の きろくを localStorage に 足す(足すだけ。localStorage の きろくは 消さない) */
+function keepSessionRecords(){
+  try{
+    for(let i = 0; i < sessionStorage.length; i++){
+      const k = sessionStorage.key(i) || "";
+      if(!/^flick-(best|hist|days)(-|$)/.test(k)) continue;
+      const sv = sessionStorage.getItem(k), lv = localStorage.getItem(k);
+      if(sv === null) continue;
+      if(lv === null){ localStorage.setItem(k, sv); continue; }
+      if(k.startsWith("flick-best-")){
+        const a = parseFloat(sv), b = parseFloat(lv);
+        if(!isNaN(a) && (isNaN(b) || a < b)) localStorage.setItem(k, sv);
+      }else if(k.startsWith("flick-hist")){
+        const a = JSON.parse(sv), b = JSON.parse(lv); if(!Array.isArray(a) || !Array.isArray(b)) continue;
+        const seen = new Set(b.map(h => h.at + "|" + h.m + "|" + h.lv)), out = b.slice();
+        for(const h of a) if(!seen.has(h.at + "|" + h.m + "|" + h.lv)) out.push(h);
+        out.sort((x, y) => x.at - y.at); while(out.length > 400) out.shift();
+        localStorage.setItem(k, JSON.stringify(out));
+      }else{
+        const a = JSON.parse(sv), b = JSON.parse(lv); if(!Array.isArray(a) || !Array.isArray(b)) continue;
+        localStorage.setItem(k, JSON.stringify([...new Set([...b, ...a])].sort((x, y) => x - y)));
+      }
+    }
+  }catch(e){}
+  recMemo = null;
+}
+function flickToast(msg){
+  const t = document.createElement("div"); t.className = "flick-toast"; t.setAttribute("role", "status"); t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.classList.add("out"), 3600); setTimeout(() => t.remove(), 4200);
+}
+/* ?link=<しるし> で もどってきたとき(1回だけ) */
+(function takeLink(){
+  try{
+    const u = new URL(location.href), t = u.searchParams.get("link");
+    if(t === null) return;
+    u.searchParams.delete("link");
+    history.replaceState(history.state, "", u.pathname + u.search + u.hash);
+    if(!/^[A-Za-z0-9._~+\/=-]{8,2048}$/.test(t)) return;
+    store(LINK_KEY, t);
+    try{ sessionStorage.removeItem("flick-plan"); }catch(e){}
+    PLAN = null; recMemo = null;
+    keepSessionRecords();
+    setTimeout(() => flickToast("おうちの方の アカウントと つながりました"), 300);
+  }catch(e){}
+})();
+/* のび の グラフ(つながっていて graph:false の ときは ぼかす。消さない。かずとも `Blurred` と 同じ) */
+function planGrowth(html){
+  if(graphOk()) return html;
+  return '<div class="blurred"><div class="bl-in" aria-hidden="true">' + html + '</div><p class="bl-note">おうちの方の がめんから つづきが 見られます</p></div>';
+}
+/* つながっていない 人への おしらせ(2回め から) */
+function drawKeepNote(){
+  const el = $("#r-keep"); if(!el) return;
+  const show = !recPersistent() && hist().length >= 2;
+  el.classList.toggle("hidden", !show);
+  el.innerHTML = show ? 'この きろくは、ゲームを とじると きえます。おうちの方が アカウントを つなぐと のこります<br><a href="' + LINK_URL + '">おうちの方へ</a>' : "";
+}
+/* plan が 変わったら、グラフ・おしらせ を かきなおす */
+function planViewsRefresh(){
+  try{
+    if(!$("#result").classList.contains("hidden")){
+      const g = growthOf(mode, level);
+      if(g && g.plays > 1) $("#r-grow-body").innerHTML = planGrowth(growthHtml(g, mode, level));
+      drawKeepNote();
+    }
+    if(recLv !== null && !$("#rec").classList.contains("hidden")){
+      const g = growthOf(mode, recLv);
+      if(g) $("#h-grow-body").innerHTML = planGrowth(growthHtml(g, mode, recLv));
+    }
+    if(!$("#prof").classList.contains("hidden")) drawProf();
+  }catch(e){}
+}
 function profiles(){ try{ const a = JSON.parse(store("flick-profiles") || "[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
 function saveProfiles(a){ store("flick-profiles", JSON.stringify(a)); }
 function curProfile(){ const id = store("flick-profile"); return profiles().find(p => p.id === id) || null; }
 function bestKey(m, lv){ const p = curProfile(); return "flick-best-" + (p ? "p" + p.id + "-" : "") + m + "-" + (lv+1); }
-function bestOf(m, lv){ return parseFloat(store(bestKey(m, lv))); }
+function bestOf(m, lv){ return parseFloat(recGet(bestKey(m, lv))); }
 function clearedSpots(m){
   const set = new Set();
   LEVELS[m].forEach((lv, i) => { if(!isNaN(bestOf(m, i))) lv.forEach(q => set.add(q.art)); });
@@ -1889,10 +2038,10 @@ ans.addEventListener("input", () => {
 function finish(){
   running = false; cancelAnimationFrame(raf);
   const total = times.reduce((a,b)=>a+b,0);
-  const key = bestKey(mode, level), prev = parseFloat(store(key));
+  const key = bestKey(mode, level), prev = parseFloat(recGet(key));
   const isNew = isNaN(prev) || total < prev;
   const firstClear = isNaN(prev);
-  if(isNew) store(key, total.toFixed(2));
+  if(isNew) recSet(key, total.toFixed(2));
   const best = isNew ? total : prev;
   const r = { mode, level, times: times.slice(), isNew: isNew && !isNaN(prev), firstClear, best, at: Date.now() };
   /* 最後の結果を 端末に覚える。Googleマップから もどったとき ページが 作りなおされても 同じ結果画面に もどれるように
@@ -1906,10 +2055,10 @@ function finish(){
 /* ── いままでの きろく(1回ごと。のび の グラフのため。けいくん 2026-09-26「いままでの記録をかずとものようにグラフ表示」) ──
    人ごとに 端末の中(flick-hist-p<id>。だれも登録していなければ flick-hist)。新しい順に 400回まで */
 function histKey(){ const p = curProfile(); return "flick-hist" + (p ? "-p" + p.id : ""); }
-function hist(){ try{ const a = JSON.parse(store(histKey()) || "[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
+function hist(){ try{ const a = JSON.parse(recGet(histKey()) || "[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
 function pushHist(m, lv, ms, at){
   const a = hist(); a.push({m, lv, ms, at}); while(a.length > 400) a.shift();
-  store(histKey(), JSON.stringify(a));
+  recSet(histKey(), JSON.stringify(a));
   addPlayDay(at);
 }
 /* ── れんぞく(つづけて あそんだ日。けいくん 2026-09-26「連続ゲーム記録を実装してください」) ──
@@ -1922,11 +2071,11 @@ function pushHist(m, lv, ms, at){
 function dayIndex(at){ const d = new Date(at); return Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000); }
 function daysKey(){ const p = curProfile(); return "flick-days" + (p ? "-p" + p.id : ""); }
 function playDays(){
-  let a; try{ a = JSON.parse(store(daysKey()) || "null"); }catch(e){ a = null; }
+  let a; try{ a = JSON.parse(recGet(daysKey()) || "null"); }catch(e){ a = null; }
   if(!Array.isArray(a)){ a = [...new Set(hist().map(h => dayIndex(h.at)))]; }  // はじめは 履歴から 作る
   return new Set(a);
 }
-function addPlayDay(at){ const s = playDays(); s.add(dayIndex(at)); store(daysKey(), JSON.stringify([...s].sort((x,y) => x - y))); }
+function addPlayDay(at){ const s = playDays(); s.add(dayIndex(at)); recSet(daysKey(), JSON.stringify([...s].sort((x,y) => x - y))); }
 function streakOf(set, now){
   now = now || Date.now();
   if(!set.size) return { days:0, playedToday:false, best:0 };
@@ -2027,7 +2176,7 @@ function drawRec(){
   $("#rec-lv").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { recLv = +b.dataset.lv; drawRec(); }));
   $("#grow-sub").textContent = (p ? p.name + " の " : "") + MAPS[mode].name + " レベル" + (recLv+1);
   const g = growthOf(mode, recLv);
-  $("#h-grow-body").innerHTML = g ? growthHtml(g, mode, recLv) : '<p class="g0">まだ あそんでいません</p>';
+  $("#h-grow-body").innerHTML = g ? planGrowth(growthHtml(g, mode, recLv)) : '<p class="g0">まだ あそんでいません</p>';
   drawBoard(mode, recLv, "board2");
 }
 
@@ -2038,10 +2187,10 @@ async function submitScore(r){
   if(!p || r.mode === "quote" || !r.times || r.times.length !== ROUNDS) return "";
   const ms = Math.round(r.times.reduce((a,b)=>a+b,0) * 1000);
   try{
-    const res = await fetch(RANK_API + "/score", { method:"POST", headers:{"content-type":"application/json"},
+    const res = await fetch(RANK_API + "/score", { method:"POST", headers:Object.assign({"content-type":"application/json"}, authHeaders()),
       body: JSON.stringify({ name:p.name, grade:gradeKey(p.grade), mode:r.mode, level:r.level+1, ms, times:r.times.map(t => Math.round(t*1000)) }) });
     const js = await res.json().catch(() => null);
-    if(res.ok && js && js.ok) return "ok";
+    if(res.ok && js && js.ok) return js.listed === false ? "unlisted" : "ok";  // unlisted = しまったが 名前は のせない
     return (js && js.reason) ? js.reason : "おくれませんでした(" + res.status + ")";
   }catch(e){ return "つながりませんでした"; }
 }
@@ -2066,7 +2215,9 @@ async function drawBoard(m, lv, id){
     if(id === "board2" && (mine !== mode || mylv !== recLv)) return;  // 読んでいるあいだに 別の レベルに 変わった
     if(!res.ok || !js || !js.ok){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません' + (js && js.reason ? "(" + esc(js.reason) + ")" : "") + '</p>'; return; }
     const rows = js.rows || [];
-    const note = id === "board" && boardSent && boardSent !== "ok" ? '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>' : "";
+    const note = id === "board" && boardSent && boardSent !== "ok"
+      ? (boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。おうちの方が アカウントを つなぐと のります</p>'
+                                  : '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>') : "";
     if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも!</p>' + note; return; }
     body.innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
       (i < 3 ? '<span class="rk md">' + MEDALS[i] + '</span>' : '<span class="rk">' + (i+1) + '位</span>') +
@@ -2096,7 +2247,8 @@ function renderResult(r){
   $("#r-streak").innerHTML = streakHtml(streakOf(playDays()), mode);  // れんぞく(あそび終わった そのときが いちばん うれしい)
   const g = growthOf(mode, level);   // のび(かずともと同じで 2回め から)
   $("#r-grow").classList.toggle("hidden", !(g && g.plays > 1));
-  if(g && g.plays > 1) $("#r-grow-body").innerHTML = growthHtml(g, mode, level);
+  if(g && g.plays > 1) $("#r-grow-body").innerHTML = planGrowth(growthHtml(g, mode, level));
+  drawKeepNote();  // つながっていない 人には「とじると きえます」
   $("#r-new").classList.toggle("hidden", !r.isNew);
   $("#r-list").className = mode !== "quote" ? "intros" : "list";
   $("#r-list").innerHTML = mode !== "quote"
@@ -2182,18 +2334,28 @@ function drawProf(){
   }
   // いま えらんでいる人・せってい
   const body = $("#prof-body");
-  if(!p || profEditing !== null){ body.innerHTML = ""; return; }
+  // おうちの方の アカウント(ランキングの ⚠️ の すぐ下に 1行)
+  const link = signedIn()
+    ? '<p class="prof-link" id="prof-link">✅ おうちの方の アカウントと つながっています<button type="button" class="lnk" id="prof-unlink">つなぐのを やめる</button></p>'
+    : '<p class="prof-link" id="prof-link">おうちの方の アカウントと つなぐと、きろくが のこり ランキングに 名前が のります<br><a href="' + LINK_URL + '">おうちの方へ</a></p>';
+  const bindUnlink = () => { const u = $("#prof-unlink"); if(u) u.addEventListener("click", () => {
+    if(!confirm("おうちの方の アカウントと つなぐのを やめます。\nこの スマホに のこっている きろくは 消えません。いいですか？")) return;
+    try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){}
+    PLAN = null; recMemo = null; drawProf(); afterProfileChange(); fetchPlan(true);
+  }); };
+  if(!p || profEditing !== null){ body.innerHTML = (!p && profEditing === null) ? link : ""; bindUnlink(); return; }
   const ph = photoOf(p.id), bg = byGrade();
   body.innerHTML =
     '<div class="prof-cur"><button type="button" class="pic" id="prof-pic" aria-label="アイコンの 写真を かえる">'+tileHtml(p, ci, "md")+'<span class="cam">📷</span></button>'+
       '<div class="tx"><b>'+esc(p.name)+'</b><small>アイコンを さわると 写真を かえられます</small>'+(ph ? '<button type="button" class="lnk" id="prof-unphoto">写真を もどす</button>' : '')+'</div></div>'+
     '<p class="prof-err" id="prof-photo-err"></p>'+
     '<div class="prof-links"><button type="button" class="lnk" id="prof-rename">なまえを なおす</button><button type="button" class="lnk" id="prof-del">この人を 消す</button></div>'+
-    '<p class="prof-note">⚠️ ランキングに 出るのは なまえ・学年・タイムだけ。写真は 出ません</p>'+
+    '<p class="prof-note">⚠️ ランキングに 出るのは なまえ・学年・タイムだけ。写真は 出ません</p>'+link+
     '<div class="prof-set"><p class="ttl">せってい</p><p class="lb">だれと くらべる？</p>'+
       '<div class="two"><button type="button" id="prof-all" class="'+(bg ? 'sk-key off' : 'on')+'">ぜんいん</button>'+
       '<div class="sel '+(bg ? 'on' : 'sk-key off')+'" id="prof-selbox"><select id="prof-grade">'+gradeOptions(p.grade)+'</select><span class="arw" aria-hidden="true">▼</span></div></div>'+
       '<p class="hint">学年は 右を さわると かえられます</p></div>';
+  bindUnlink();
   $("#prof-pic").addEventListener("click", () => $("#prof-file").click());
   const un = $("#prof-unphoto"); if(un) un.addEventListener("click", () => { try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){} drawProf(); drawProfBtn(); });
   $("#prof-rename").addEventListener("click", () => openProfForm(p.id));
@@ -2254,12 +2416,16 @@ $("#prof-form").addEventListener("submit", e => {
     list.push({id, name, grade: cur ? gradeKey(cur.grade) : "e1"});  // 新しい人は いまの学年の設定を 引きつぐ(かずともと同じ)
     // はじめての登録なら、それまでの記録(だれのものでもなかったぶん)を この人に引きつぐ
     if(list.length === 1){
-      try{
-        for(let i = 0; i < localStorage.length; i++){
-          const k = localStorage.key(i);
-          if(k && /^flick-best-(world|japan|wnames|jnames|wpeople|jpeople)-\d+$/.test(k)) localStorage.setItem(k.replace("flick-best-", "flick-best-p"+id+"-"), localStorage.getItem(k));
-        }
-      }catch(e){}
+      // ⚠️ つながっていない 人の この回の きろくは sessionStorage に あるので、そちらも 同じ 入れものの中で 引きつぐ
+      for(const st of [localStorage, sessionStorage]){
+        try{
+          for(let i = 0; i < st.length; i++){
+            const k = st.key(i);
+            if(k && /^flick-best-(world|japan|wnames|jnames|wpeople|jpeople)-\d+$/.test(k)) st.setItem(k.replace("flick-best-", "flick-best-p"+id+"-"), st.getItem(k));
+          }
+        }catch(e){}
+      }
+      recMemo = null;
     }
     store("flick-profile", id); store("flick-last", "");
   }
@@ -2314,6 +2480,7 @@ $("#next-lv").addEventListener("click", () => { store("flick-last", ""); start(m
 $("#home-btn").addEventListener("click", () => { store("flick-last", ""); show("home"); showBest(); });
 showBest();
 restoreLast();
+fetchPlan();  // できることを かずとも に 聞く(かえってきたら グラフ・おしらせを かきなおす)
 </script>
 </body>
 </html>

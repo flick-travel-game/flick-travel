@@ -2462,10 +2462,14 @@ function gmapUrl(q){
   const ll = LATLON[q.art];
   const jp = q.c.startsWith("日本");
   // 地名で 目印(m)があれば「伊勢神宮 三重県」のように 説明に出てくる有名な場所へ(けいくん 2026-09-25)
-  const name = q.k === "person" ? q.b : q.m ? q.m + " " + q.n : q.f && q.k === "name" ? q.n : q.n + " " + q.c.replace(/・/g, " ");
+  const plain = q.n.replace(/（.*?）/g, "").trim();  // 「エアーズロック（ウルル）」→「エアーズロック」
+  const name = q.k === "person" ? q.b : q.m ? q.m + " " + q.n : q.f && q.k === "name" ? plain : plain + " " + q.c.replace(/・/g, " ");
   if(!ll) return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(name);
   const zoom = q.k === "person" ? 10 : q.m ? 13 : q.k === "name" ? (q.f ? (jp ? 8 : 5) : 10) : 15;
-  return "https://www.google.com/maps/place/" + encodeURIComponent(name) + "/@" + ll[0] + "," + ll[1] + "," + zoom + "z";
+  /* ⚠️ /maps/place/<名前>/@座標 だと 座標に 赤いピンが立つだけで、その場所の カード(評価・写真・営業時間)が ひらかない
+     (けいくん 2026-09-26「直接この姫路城に飛べるように」)。/maps/search/<名前>/@座標 なら その場所を さがして カードが ひらく。
+     座標は さがす場所の 目安(同じ名前が よそにあっても ここを見る) */
+  return "https://www.google.com/maps/search/" + encodeURIComponent(name) + "/@" + ll[0] + "," + ll[1] + "," + zoom + "z";
 }
 function gmapLink(q){ return '<a class="gmap" href="' + gmapUrl(q) + '" target="_blank" rel="noopener">' + (q.k === "person" ? "🗺 生まれた所を Googleマップで見る" : "🗺 Googleマップで見る") + '</a>'; }
 /* 名所の 緯度・経度(世界一周マップの ピンの位置)。地図は 北緯84度〜南緯60度 を 横長に切ったもの */

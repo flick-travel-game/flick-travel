@@ -962,5 +962,973 @@
    "en-intercooler"
   ],
   "description": "エンジンの 回る ちからで ベルトなどを 通して 回し、空気を 押しこむ 装置です。アクセルを ふんだ 直後から よく 効きます。"
+ },
+ {
+  "id": "en-oilpan",
+  "name": "オイルパン",
+  "reading": "おいるぱん",
+  "journey": "engine",
+  "category": "潤滑・冷却",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛢️",
+  "mapNode": "engine:lube",
+  "relatedTerms": [
+   "en-engineoil",
+   "en-oilstrainer"
+  ],
+  "description": "エンジンの いちばん 下に ある、エンジンオイルを ためておく 皿の ような 入れものです。ここから オイルポンプが オイルを 吸いあげます。"
+ },
+ {
+  "id": "en-cylinderblock",
+  "name": "シリンダーブロック",
+  "reading": "しりんだーぶろっく",
+  "journey": "engine",
+  "category": "エンジンの基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "engine:basic",
+  "relatedTerms": [
+   "en-cylinder",
+   "en-cylinderhead"
+  ],
+  "description": "シリンダーが ならんで つくられた、エンジンの 土台に なる 大きな かたまりです。中には 冷却水や オイルの 通り道も あります。"
+ },
+ {
+  "id": "en-headgasket",
+  "name": "ヘッドガスケット",
+  "reading": "へっどがすけっと",
+  "journey": "engine",
+  "category": "エンジンの基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "engine:cyl",
+  "relatedTerms": [
+   "en-cylinderhead",
+   "en-cylinderblock"
+  ],
+  "description": "シリンダーヘッドと シリンダーブロックの あいだに はさむ 薄い 板です。燃焼の ガスや 冷却水、オイルが もれないように すきまを ふさぎます。"
+ },
+ {
+  "id": "en-rockerarm",
+  "name": "ロッカーアーム",
+  "reading": "ろっかーあーむ",
+  "journey": "engine",
+  "category": "バルブ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦾",
+  "mapNode": "engine:valve",
+  "relatedTerms": [
+   "en-camshaft",
+   "en-valve"
+  ],
+  "description": "カムの 動きを 受けて、支点を 中心に ゆれて バルブを 押す うでの 形の 部品です。カムと バルブの あいだで 動きを 伝えます。"
+ },
+ {
+  "id": "en-valvespring",
+  "name": "バルブスプリング",
+  "reading": "ばるぶすぷりんぐ",
+  "journey": "engine",
+  "category": "バルブ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "engine:valve",
+  "relatedTerms": [
+   "en-valve",
+   "en-camshaft"
+  ],
+  "description": "カムに 押されて 開いた バルブを、もとの 閉じた 位置に もどす ばねです。回転が 高くても バルブが きちんと 閉じるように ささえます。"
+ },
+ {
+  "id": "en-timingchain",
+  "name": "タイミングチェーン",
+  "reading": "たいみんぐちぇーん",
+  "journey": "engine",
+  "category": "バルブ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛓️",
+  "mapNode": "engine:valve",
+  "relatedTerms": [
+   "en-timingbelt",
+   "en-camshaft"
+  ],
+  "description": "クランクシャフトの 回転を カムシャフトへ 伝える 金属の くさりです。タイミングベルトと 同じ 役目で、エンジンの 中で オイルに ぬれて 動きます。"
+ },
+ {
+  "id": "en-intakevalve",
+  "name": "吸気バルブ",
+  "reading": "きゅうきばるぶ",
+  "journey": "engine",
+  "category": "バルブ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "engine:valve",
+  "relatedTerms": [
+   "en-exhaustvalve",
+   "en-intakestroke"
+  ],
+  "description": "燃焼室の 入り口に ある バルブです。吸気行程で 開き、空気や 混合気を シリンダーの 中へ 入れます。ふつう 排気バルブより 傘が 大きく つくられます。"
+ },
+ {
+  "id": "en-exhaustvalve",
+  "name": "排気バルブ",
+  "reading": "はいきばるぶ",
+  "journey": "engine",
+  "category": "バルブ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "engine:valve",
+  "relatedTerms": [
+   "en-intakevalve",
+   "en-exhauststroke"
+  ],
+  "description": "燃焼室の 出口に ある バルブです。排気行程で 開き、燃えおわった ガスを 外へ 出します。とても 熱い ガスに ふれるので、熱に 強い 材料で できています。"
+ },
+ {
+  "id": "en-fuelfilter",
+  "name": "燃料フィルター",
+  "reading": "ねんりょうふぃるたー",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧃",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-fuelpump",
+   "en-injector"
+  ],
+  "description": "燃料の 中の ごみを こしとる 部品です。インジェクターの 細い 穴が つまらないように、燃料を きれいに してから 送ります。"
+ },
+ {
+  "id": "en-tdc",
+  "name": "上死点",
+  "reading": "じょうしてん",
+  "journey": "engine",
+  "category": "ピストン・クランク",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔝",
+  "mapNode": "engine:crank",
+  "relatedTerms": [
+   "en-bdc",
+   "en-piston"
+  ],
+  "description": "ピストンが いちばん 上まで 上がって、一瞬 止まる 位置です。点火時期や バルブの 開く 時は、この 位置を もとに して あらわします。"
+ },
+ {
+  "id": "en-bdc",
+  "name": "下死点",
+  "reading": "かしてん",
+  "journey": "engine",
+  "category": "ピストン・クランク",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "engine:crank",
+  "relatedTerms": [
+   "en-tdc",
+   "en-piston"
+  ],
+  "description": "ピストンが いちばん 下まで 下がって、向きを 変える 位置です。上死点から 下死点までの きょりが、ピストンの 動く 長さに なります。"
+ },
+ {
+  "id": "en-waterjacket",
+  "name": "ウォータージャケット",
+  "reading": "うぉーたーじゃけっと",
+  "journey": "engine",
+  "category": "潤滑・冷却",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "engine:cool",
+  "relatedTerms": [
+   "en-coolant",
+   "en-cylinderblock"
+  ],
+  "description": "シリンダーの まわりを 包むように つくられた、冷却水の 通り道です。ここを 流れる クーラントが 燃焼の 熱を うばって エンジンを 冷やします。"
+ },
+ {
+  "id": "en-reservoirtank",
+  "name": "リザーバータンク",
+  "reading": "りざーばーたんく",
+  "journey": "engine",
+  "category": "潤滑・冷却",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "engine:cool",
+  "relatedTerms": [
+   "en-pressurecap",
+   "en-coolant"
+  ],
+  "description": "ラジエーターと つながった、冷却水の 予備を ためる 半透明の タンクです。熱で ふえた 冷却水を 受けとめ、冷えると ラジエーターへ もどします。"
+ },
+ {
+  "id": "en-fanbelt",
+  "name": "ファンベルト",
+  "reading": "ふぁんべると",
+  "journey": "engine",
+  "category": "潤滑・冷却",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➰",
+  "mapNode": "engine:cool",
+  "relatedTerms": [
+   "en-waterpump",
+   "en-crankshaft"
+  ],
+  "description": "クランクシャフトの 回転で、ウォーターポンプや 発電機などを 回す ゴムの ベルトです。むかしは 冷却ファンも 回して いたので、この 名前で よばれます。"
+ },
+ {
+  "id": "en-pistonpin",
+  "name": "ピストンピン",
+  "reading": "ぴすとんぴん",
+  "journey": "engine",
+  "category": "ピストン・クランク",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "engine:crank",
+  "relatedTerms": [
+   "en-piston",
+   "en-conrod"
+  ],
+  "description": "ピストンと コンロッドを つなぐ 短い 筒の ような ピンです。ここを 支点に コンロッドが ふれて、ピストンの 動きを クランクへ 伝えます。"
+ },
+ {
+  "id": "en-bore",
+  "name": "ボア",
+  "reading": "ぼあ",
+  "journey": "engine",
+  "category": "エンジンの基本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "engine:cyl",
+  "relatedTerms": [
+   "en-stroke",
+   "en-displacement"
+  ],
+  "description": "シリンダーの 内側の 直径の ことです。ストロークと あわせて、エンジンの 大きさや 性格を あらわす 大事な 寸法に なります。"
+ },
+ {
+  "id": "en-stroke",
+  "name": "ストローク",
+  "reading": "すとろーく",
+  "journey": "engine",
+  "category": "エンジンの基本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "engine:crank",
+  "relatedTerms": [
+   "en-bore",
+   "en-tdc"
+  ],
+  "description": "ピストンが 上死点から 下死点まで 動く きょりです。ボアより ストロークが 長い エンジンは、低い 回転で ちからが 出やすい 性格に なりやすいです。"
+ },
+ {
+  "id": "en-sohc",
+  "name": "SOHC",
+  "reading": "えすおーえいちしー",
+  "journey": "engine",
+  "category": "バルブ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "engine:valve",
+  "relatedTerms": [
+   "en-dohc",
+   "en-camshaft"
+  ],
+  "description": "シリンダーヘッドに カムシャフトを 1本 おく しくみです。1本の カムシャフトで 吸気と 排気の 両方の バルブを 動かします。部品が 少なく、軽く つくれます。"
+ },
+ {
+  "id": "en-lashadjuster",
+  "name": "ラッシュアジャスター",
+  "reading": "らっしゅあじゃすたー",
+  "journey": "engine",
+  "category": "バルブ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪛",
+  "mapNode": "engine:valve",
+  "relatedTerms": [
+   "en-valveclearance",
+   "en-rockerarm"
+  ],
+  "description": "オイルの 圧力を 使って、バルブの すきまを いつも ゼロに たもつ 部品です。すきまの 調整が いらなく なり、バルブの 音も 静かに なります。"
+ },
+ {
+  "id": "en-oilring",
+  "name": "オイルリング",
+  "reading": "おいるりんぐ",
+  "journey": "engine",
+  "category": "ピストン・クランク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💍",
+  "mapNode": "engine:crank",
+  "relatedTerms": [
+   "en-pistonring",
+   "en-oilagari"
+  ],
+  "description": "ピストンリングの うち いちばん 下に ある リングです。シリンダーの かべに ついた よぶんな オイルを かきおとし、燃焼室へ 入らないように します。"
+ },
+ {
+  "id": "en-pcv",
+  "name": "PCVバルブ",
+  "reading": "ぴーしーぶいばるぶ",
+  "journey": "engine",
+  "category": "排気・浄化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "engine:clean",
+  "relatedTerms": [
+   "en-blowby",
+   "en-intakemanifold"
+  ],
+  "description": "ブローバイガスを 吸気の ほうへ もどして、もう一度 燃やす ための バルブです。有害な ガスを 大気に 出さない ために つけられています。"
+ },
+ {
+  "id": "en-canister",
+  "name": "チャコールキャニスター",
+  "reading": "ちゃこーるきゃにすたー",
+  "journey": "engine",
+  "category": "排気・浄化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "engine:clean",
+  "relatedTerms": [
+   "en-fueltank",
+   "en-pcv"
+  ],
+  "description": "燃料タンクで 蒸発した ガソリンの ガスを、活性炭に 吸わせて ためておく 入れものです。ためた ガスは エンジンが 動いて いる ときに 吸いこんで 燃やします。"
+ },
+ {
+  "id": "en-oxicat",
+  "name": "酸化触媒",
+  "reading": "さんかしょくばい",
+  "journey": "engine",
+  "category": "排気・浄化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "engine:clean",
+  "relatedTerms": [
+   "en-dpf",
+   "en-threewaycatalyst"
+  ],
+  "description": "ディーゼルエンジンの 排気に 使う 触媒です。排気の 中の 酸素を 使って、一酸化炭素や 燃えのこりの 燃料を 水や 二酸化炭素に 変えます。"
+ },
+ {
+  "id": "en-directinjection",
+  "name": "直噴",
+  "reading": "ちょくふん",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💉",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-injector",
+   "en-stratified"
+  ],
+  "description": "燃料を シリンダーの 中へ 直接 ふきこむ しくみです。燃料が 蒸発する ときに 中を 冷やすので、ノッキングが 起きにくく なります。",
+  "acceptedReadings": [
+   "ちょくふん",
+   "ちょくせつふんしゃ"
+  ]
+ },
+ {
+  "id": "en-portinjection",
+  "name": "ポート噴射",
+  "reading": "ぽーとふんしゃ",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "engine:intake",
+  "relatedTerms": [
+   "en-directinjection",
+   "en-injector"
+  ],
+  "description": "吸気バルブの 手前の 吸気ポートへ 燃料を ふきこむ しくみです。空気と 燃料が よく まざってから シリンダーに 入ります。"
+ },
+ {
+  "id": "en-firingorder",
+  "name": "点火順序",
+  "reading": "てんかじゅんじょ",
+  "journey": "engine",
+  "category": "点火・燃焼",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "engine:ignition",
+  "relatedTerms": [
+   "en-ignitiontiming",
+   "en-crankshaft"
+  ],
+  "description": "何本も ある シリンダーが、どの 順番で 燃えるかの 決まりです。ゆれが 少なく、クランクシャフトに むりが かからない 順番に 決められています。"
+ },
+ {
+  "id": "en-oilcooler",
+  "name": "オイルクーラー",
+  "reading": "おいるくーらー",
+  "journey": "engine",
+  "category": "潤滑・冷却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "engine:lube",
+  "relatedTerms": [
+   "en-engineoil",
+   "en-radiator"
+  ],
+  "description": "熱く なった エンジンオイルを 冷やす 小さな 放熱器です。オイルは 熱すぎると ねばりが なくなり、部品を 守る ちからが 弱く なるからです。"
+ },
+ {
+  "id": "en-reliefvalve",
+  "name": "リリーフバルブ",
+  "reading": "りりーふばるぶ",
+  "journey": "engine",
+  "category": "潤滑・冷却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "engine:lube",
+  "relatedTerms": [
+   "en-oilpump",
+   "en-trochoid"
+  ],
+  "description": "オイルポンプに ついていて、油の 圧力が 高く なりすぎると 開いて にがす バルブです。回転が 高い ときに 圧が 上がりすぎるのを ふせぎます。"
+ },
+ {
+  "id": "en-trochoid",
+  "name": "トロコイドポンプ",
+  "reading": "とろこいどぽんぷ",
+  "journey": "engine",
+  "category": "潤滑・冷却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌼",
+  "mapNode": "engine:lube",
+  "relatedTerms": [
+   "en-oilpump",
+   "en-reliefvalve"
+  ],
+  "description": "内側と 外側の 花の ような 形の ローターが かみあって 回る オイルポンプです。すきまの 大きさが 変わる ことで、オイルを 吸って 送りだします。"
+ },
+ {
+  "id": "en-turbolag",
+  "name": "ターボラグ",
+  "reading": "たーぼらぐ",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "engine:turbo",
+  "relatedTerms": [
+   "en-turbo",
+   "en-vgturbo"
+  ],
+  "description": "アクセルを 踏んでから、ターボが しっかり 空気を 押しこむまでの おくれです。排気で 羽根を 回す ため、回りはじめに 少し 時間が かかります。"
+ },
+ {
+  "id": "en-affeedback",
+  "name": "空燃比フィードバック制御",
+  "reading": "くうねんひふぃーどばっくせいぎょ",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-stoichiometric",
+   "en-threewaycatalyst"
+  ],
+  "description": "排気の 酸素の 量を 見ながら、燃料の 量を 少しずつ ふやしたり へらしたり する 制御です。理論空燃比の 近くに たもち、三元触媒が よく はたらくように します。"
+ },
+ {
+  "id": "en-aflearn",
+  "name": "空燃比学習",
+  "reading": "くうねんひがくしゅう",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-affeedback",
+   "en-injector"
+  ],
+  "description": "部品の ばらつきや 古く なった ずれを、ECUが 補正の 値として おぼえておく しくみです。補正が 大きく かたよって いるときは、空気の もれや 燃料系の 不具合を うたがいます。"
+ },
+ {
+  "id": "en-fuelcut",
+  "name": "燃料カット",
+  "reading": "ねんりょうかっと",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-injector",
+   "en-throttle"
+  ],
+  "description": "アクセルを はなして 減速する ときなどに、燃料の 噴射を 止める 制御です。むだな 燃料を 使わずに すみます。回転が 上がりすぎた ときにも 使われます。"
+ },
+ {
+  "id": "en-leanburn",
+  "name": "リーンバーン",
+  "reading": "りーんばーん",
+  "journey": "engine",
+  "category": "点火・燃焼",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🍃",
+  "mapNode": "engine:cyl",
+  "relatedTerms": [
+   "en-stoichiometric",
+   "en-noxtrap"
+  ],
+  "description": "理論空燃比より 空気を 多く した うすい 混合気で 燃やす 方法です。燃費は よく なりますが、三元触媒で NOxを へらしにくく なる 弱点が あります。"
+ },
+ {
+  "id": "en-stratified",
+  "name": "成層燃焼",
+  "reading": "せいそうねんしょう",
+  "journey": "engine",
+  "category": "点火・燃焼",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🥞",
+  "mapNode": "engine:cyl",
+  "relatedTerms": [
+   "en-directinjection",
+   "en-leanburn"
+  ],
+  "description": "点火プラグの まわりだけ こい 混合気を つくり、全体は うすく して 燃やす 方法です。直噴エンジンで 使われ、少ない 燃料で 走れます。"
+ },
+ {
+  "id": "en-noxtrap",
+  "name": "NOx吸蔵還元触媒",
+  "reading": "のっくすきゅうぞうかんげんしょくばい",
+  "journey": "engine",
+  "category": "排気・浄化",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "engine:clean",
+  "relatedTerms": [
+   "en-leanburn",
+   "en-threewaycatalyst"
+  ],
+  "description": "うすい 燃焼の ときに 出る NOx(窒素酸化物)を いったん ためこみ、ときどき 混合気を こく して 無害な 窒素に 変える 触媒です。"
+ },
+ {
+  "id": "en-pm",
+  "name": "粒子状物質",
+  "reading": "りゅうしじょうぶっしつ",
+  "journey": "engine",
+  "category": "排気・浄化",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "engine:clean",
+  "relatedTerms": [
+   "en-dpf",
+   "en-dpfregen"
+  ],
+  "description": "ディーゼルの 排気に ふくまれる、すすなどの とても 小さな つぶです。PMとも いいます。吸いこむと 体に わるいので、DPFで こしとります。"
+ },
+ {
+  "id": "en-dpfregen",
+  "name": "DPF再生",
+  "reading": "でぃーぴーえふさいせい",
+  "journey": "engine",
+  "category": "排気・浄化",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "engine:clean",
+  "relatedTerms": [
+   "en-dpf",
+   "en-postinjection"
+  ],
+  "description": "DPFに たまった すすを、排気の 温度を 上げて 燃やし、フィルターを もとに もどす しくみです。うまく 再生できないと、すすが たまりすぎて 警告が 出ます。"
+ },
+ {
+  "id": "en-postinjection",
+  "name": "ポスト噴射",
+  "reading": "ぽすとふんしゃ",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-dpfregen",
+   "en-commonrail"
+  ],
+  "description": "主な 噴射の あとに、もう一度 少しだけ 燃料を ふく 噴射です。排気の 温度を 上げて、触媒を あたためたり DPFの すすを 燃やしたり するのに 使います。"
+ },
+ {
+  "id": "en-pilotinjection",
+  "name": "パイロット噴射",
+  "reading": "ぱいろっとふんしゃ",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔹",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-commonrail",
+   "en-postinjection"
+  ],
+  "description": "主な 噴射の 前に、ほんの 少し 燃料を ふいて おく 噴射です。燃えはじめが おだやかに なり、ディーゼル 特有の ガラガラ音や NOxを へらします。"
+ },
+ {
+  "id": "en-piezo",
+  "name": "ピエゾインジェクター",
+  "reading": "ぴえぞいんじぇくたー",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "💎",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-injector",
+   "en-commonrail"
+  ],
+  "description": "電気を かけると 形が 少し 変わる ピエゾ素子で 開け閉め する インジェクターです。とても すばやく 動くので、1回の 燃焼で 何回にも 分けて ふけます。"
+ },
+ {
+  "id": "en-cetane",
+  "name": "セタン価",
+  "reading": "せたんか",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🛢️",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-diesel",
+   "en-pilotinjection"
+  ],
+  "description": "軽油の 火の つきやすさを あらわす 数です。高いほど 圧縮されて すぐに 燃えはじめ、始動が しやすく、音も 静かに なります。"
+ },
+ {
+  "id": "en-octane",
+  "name": "オクタン価",
+  "reading": "おくたんか",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "⛽",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-gasoline",
+   "en-knocking"
+  ],
+  "description": "ガソリンの ノッキングの 起きにくさを あらわす 数です。高いほど 異常な 燃えかたを しにくく、圧縮比の 高い エンジンに 向いています。"
+ },
+ {
+  "id": "en-hcci",
+  "name": "予混合圧縮着火",
+  "reading": "よこんごうあっしゅくちゃっか",
+  "journey": "engine",
+  "category": "点火・燃焼",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "engine:cyl",
+  "relatedTerms": [
+   "en-compressionratio",
+   "en-leanburn"
+  ],
+  "description": "ガソリンと 空気を まぜた うすい 混合気を、火花に たよらず 圧縮の 熱で いっせいに 燃やす 方法です。燃費が よく NOxも 少ないですが、制御が むずかしい 技術です。"
+ },
+ {
+  "id": "en-atkinson",
+  "name": "アトキンソンサイクル",
+  "reading": "あときんそんさいくる",
+  "journey": "engine",
+  "category": "エンジンの基本",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "engine:basic",
+  "relatedTerms": [
+   "en-compressionratio",
+   "en-vvt"
+  ],
+  "description": "吸気バルブを おそく 閉じて、圧縮する 行程より 膨張する 行程を 長く つかう 考えかたです。燃費を よく する ため、ハイブリッド車の エンジンで よく 使われます。"
+ },
+ {
+  "id": "en-chargeeff",
+  "name": "充填効率",
+  "reading": "じゅうてんこうりつ",
+  "journey": "engine",
+  "category": "エンジンの基本",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "engine:intake",
+  "relatedTerms": [
+   "en-displacement",
+   "en-intakestroke"
+  ],
+  "description": "シリンダーに 実際に 入った 新しい 空気の 量を、シリンダーの 容積ぶんの 空気と くらべた 割合です。高いほど 多くの 燃料を 燃やせて、ちからが 出ます。"
+ },
+ {
+  "id": "en-varintake",
+  "name": "可変吸気システム",
+  "reading": "かへんきゅうきしすてむ",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🎺",
+  "mapNode": "engine:intake",
+  "relatedTerms": [
+   "en-intakemanifold",
+   "en-chargeeff"
+  ],
+  "description": "回転数に あわせて 吸気の 通り道の 長さや 太さを 切りかえる しくみです。空気の 流れの いきおいを 使い、ひろい 回転で 空気を 多く 入れます。"
+ },
+ {
+  "id": "en-vgturbo",
+  "name": "可変ノズルターボ",
+  "reading": "かへんのずるたーぼ",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "engine:turbo",
+  "relatedTerms": [
+   "en-turbo",
+   "en-turbolag"
+  ],
+  "description": "タービンの まわりの 羽根の 角度を 変えて、排気の 流れる いきおいを 調整する ターボです。低い 回転から よく きいて、ターボラグを へらせます。"
+ },
+ {
+  "id": "en-etc",
+  "name": "電子制御スロットル",
+  "reading": "でんしせいぎょすろっとる",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "engine:intake",
+  "relatedTerms": [
+   "en-throttle",
+   "en-fuelcut"
+  ],
+  "description": "アクセルペダルと スロットルバルブを ワイヤーで つながず、ECUが モーターで バルブを 開け閉め する しくみです。運転支援などの 制御とも 連携できます。"
+ },
+ {
+  "id": "en-misfire",
+  "name": "失火",
+  "reading": "しっか",
+  "journey": "engine",
+  "category": "点火・燃焼",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "engine:ignition",
+  "relatedTerms": [
+   "en-sparkplug",
+   "en-ignitioncoil"
+  ],
+  "description": "シリンダーの 中で 混合気が うまく 燃えない ことです。ECUは クランクの 回転の わずかな ゆれから 見つけます。点火・燃料・圧縮の どこに 原因が あるかを 考えます。"
+ },
+ {
+  "id": "en-advance",
+  "name": "進角",
+  "reading": "しんかく",
+  "journey": "engine",
+  "category": "点火・燃焼",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "engine:ignition",
+  "relatedTerms": [
+   "en-ignitiontiming",
+   "en-knocking"
+  ],
+  "description": "点火時期を 上死点より 早い ほうへ ずらす ことです。回転が 高いほど 早めに 火を つけると ちからが 出ますが、早すぎると ノッキングが 起きます。"
+ },
+ {
+  "id": "en-cyldeact",
+  "name": "気筒休止",
+  "reading": "きとうきゅうし",
+  "journey": "engine",
+  "category": "エンジンの基本",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "💤",
+  "mapNode": "engine:basic",
+  "relatedTerms": [
+   "en-valve",
+   "en-fuelcut"
+  ],
+  "description": "ちからが あまり いらない ときに、一部の シリンダーの バルブと 燃料を 止めて 休ませる しくみです。残りの シリンダーで 効率よく 走り、燃費を よく します。"
+ },
+ {
+  "id": "en-ewp",
+  "name": "電動ウォーターポンプ",
+  "reading": "でんどううぉーたーぽんぷ",
+  "journey": "engine",
+  "category": "潤滑・冷却",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "engine:cool",
+  "relatedTerms": [
+   "en-waterpump",
+   "en-thermostat"
+  ],
+  "description": "エンジンの 回転ではなく モーターで 回す ウォーターポンプです。必要な ぶんだけ 冷却水を 流せるので、暖まるのが 早く、むだも へります。"
+ },
+ {
+  "id": "en-balancer",
+  "name": "バランサーシャフト",
+  "reading": "ばらんさーしゃふと",
+  "journey": "engine",
+  "category": "ピストン・クランク",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "engine:crank",
+  "relatedTerms": [
+   "en-crankshaft",
+   "en-piston"
+  ],
+  "description": "クランクシャフトの 2倍の 速さで 回る、おもりの ついた 軸です。直列4気筒などで 出る 細かい ゆれを 打ち消します。"
+ },
+ {
+  "id": "en-oilagari",
+  "name": "オイル上がり",
+  "reading": "おいるあがり",
+  "journey": "engine",
+  "category": "ピストン・クランク",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "engine:crank",
+  "relatedTerms": [
+   "en-oilring",
+   "en-pistonring"
+  ],
+  "description": "ピストンリングの すりへりなどで、オイルが シリンダーの かべから 燃焼室へ 上がって 燃える ことです。青白い 排気の 煙や オイルの へりが 手がかりに なります。"
+ },
+ {
+  "id": "en-oilsagari",
+  "name": "オイル下がり",
+  "reading": "おいるさがり",
+  "journey": "engine",
+  "category": "バルブ",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🔽",
+  "mapNode": "engine:valve",
+  "relatedTerms": [
+   "en-oilagari",
+   "en-valve"
+  ],
+  "description": "バルブの 軸の まわりの シールが いたむなどして、オイルが 上から 燃焼室へ 下がって くる ことです。始動した 直後に 青白い 煙が 出やすいのが 手がかりです。"
+ },
+ {
+  "id": "en-preignition",
+  "name": "プレイグニッション",
+  "reading": "ぷれいぐにっしょん",
+  "journey": "engine",
+  "category": "点火・燃焼",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "☄️",
+  "mapNode": "engine:cyl",
+  "relatedTerms": [
+   "en-knocking",
+   "en-sparkplug"
+  ],
+  "description": "点火プラグの 火花より 前に、熱く なった 部分などが 火種に なって 燃えはじめる 異常燃焼です。過早着火とも いい、エンジンを いためる 原因に なります。",
+  "acceptedReadings": [
+   "ぷれいぐにっしょん",
+   "かそうちゃっか"
+  ]
+ },
+ {
+  "id": "en-h2engine",
+  "name": "水素エンジン",
+  "reading": "すいそえんじん",
+  "journey": "engine",
+  "category": "エンジンの基本",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "engine:basic",
+  "relatedTerms": [
+   "en-engine",
+   "en-efuel"
+  ],
+  "description": "ガソリンの かわりに 水素を シリンダーで 燃やす エンジンです。燃えても 二酸化炭素が 出ないのが 特長ですが、NOxへの 対策は 必要です。"
+ },
+ {
+  "id": "en-efuel",
+  "name": "合成燃料",
+  "reading": "ごうせいねんりょう",
+  "journey": "engine",
+  "category": "吸気・燃料・過給",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🧫",
+  "mapNode": "engine:fuel",
+  "relatedTerms": [
+   "en-h2engine",
+   "en-gasoline"
+  ],
+  "description": "二酸化炭素と 水素から 人の 手で つくる 燃料です。いまの エンジンで 使える 燃料を、石油に たよらずに つくれると 期待されています。"
+ },
+ {
+  "id": "en-squish",
+  "name": "スキッシュ",
+  "reading": "すきっしゅ",
+  "journey": "engine",
+  "category": "点火・燃焼",
+  "difficulty": 4,
+  "type": "concept",
+  "emoji": "🌪️",
+  "mapNode": "engine:cyl",
+  "relatedTerms": [
+   "en-tdc",
+   "en-combustionstroke"
+  ],
+  "description": "ピストンが 上死点に 近づく とき、ピストンと ヘッドの せまい すきまから 混合気が 押しだされて できる 流れです。かきまぜて 燃えかたを 速く します。"
  }
 ]

@@ -276,7 +276,7 @@ const SEIBI = (() => {
       (nx && t ? '<small>つぎ「' + esc(nx[2]) + '」まで あと ' + (nx[0] - n) + '語</small>' : "") + (td ? '<small>📅 きょう 覚えた ことば ' + td + '語</small>' : "") + '</p>' +
       '<div class="ai-btns"><button type="button" class="ai-btn" data-ai-open="zukan">📖 部品図鑑</button>' +
       '<button type="button" class="ai-btn" data-ai-open="weak">💪 苦手ことば' + (wk ? "(" + wk + ")" : "") + '</button>' +
-      '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 ミニクイズ</button>' +
+      '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 4択クイズ</button>' +
       '<button type="button" class="ai-btn" data-ai-open="fav">⭐ お気に入り' + (fv ? "(" + fv + ")" : "") + '</button></div>' +
       '<div class="ai-diag"><p class="ai-dh">🗺 しくみ図 <small>覚えた ことばが 📍に なるよ。場所を おすと 中身が 出るよ</small></p><div class="ai-dtabs">' +
       DIAGS.map(k => '<button type="button" data-ai-diag="' + k + '"' + (k === diagCur ? ' class="on"' : "") + '>' + D.diagrams[k].icon + " " + esc(D.diagrams[k].name) + '</button>').join("") +
@@ -367,46 +367,98 @@ const SEIBI = (() => {
     return JBY[q.j].name + "の Lv." + (i + 1);
   }
 
-  /* ── ミニクイズ(フリックとは べつの 超短い 理解クイズ。出会った ことばから 5問) ── */
-  let quiz = null;
-  function openQuiz(){
-    const d = ALL.filter(q => discovered().has(q.art)), sh = sheet("ai-qz");
-    if(d.length < 10){ sh.innerHTML = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>🧩 ミニクイズ</h2><p class="ai-empty">ことばに 10語 出会うと あそべるよ(いま ' + d.length + '語)</p></div>'; sh.querySelector(".ai-x").onclick = () => closeSheet("ai-qz"); return; }
-    const pick = d.slice().sort(() => Math.random() - .5).slice(0, 5);
-    quiz = { list:pick.map(q => { const same = d.filter(x => x !== q && x.j === q.j), other = d.filter(x => x !== q);
-      const wrong = (same.length >= 2 ? same : other).slice().sort(() => Math.random() - .5).slice(0, 2);
-      return { q, ch:[q].concat(wrong).sort(() => Math.random() - .5) }; }), i:0, ok:0, done:false };
+  /* ── 4択クイズ(けいくん 2026-09-26「すべてお願いします」)。試験の「えらぶ 問題」に なれる ための 練習 ──
+     ・問題は この ゲームの 説明文から 作る(過去問・問題集は 使わない)。2つの 形を まぜる:
+       ① 説明 → どの ことば?  ② ことば → 正しい 説明は どれ?
+     ・まちがいの 3つは 同じ 旅・同じ 分類から えらぶ(にた もの どうしで 考える 練習)。答えの 名前は 説明の 中で ◯◯ に かくす
+     ・はんい: 出会った ことば / 級ごと(入門・3級・2級・1級)/ ぜんぶ。旅でも しぼれる
+     ・出会った ことばを まちがえたら 苦手ことばに 入る(💪 苦手克服で もう一度 出る) */
+  let quiz = null, qset = { r:"seen", j:"" };
+  const QN = 10;
+  const shuffle = a => { a = a.slice(); for(let i = a.length - 1; i > 0; i--){ const k = Math.floor(Math.random() * (i + 1)); [a[i], a[k]] = [a[k], a[i]]; } return a; };
+  const hide = (text, q) => { let t = String(text); for(const w of [q.n].concat(q.n.includes("(") ? [q.n.replace(/\(.*$/, "")] : [])) if(w.length >= 2) t = t.split(w).join("◯◯"); return t; };
+  function quizPool(){
+    const d = discovered();
+    return ALL.filter(q => (!qset.j || q.j === qset.j) && (qset.r === "seen" ? d.has(q.art) : qset.r === "all" ? true : q.dv === +qset.r));
+  }
+  function wrongs(q, n){
+    const same = ALL.filter(x => x !== q && x.j === q.j && x.c === q.c), jr = ALL.filter(x => x !== q && x.j === q.j && x.c !== q.c), rest = ALL.filter(x => x !== q && x.j !== q.j);
+    const out = [];
+    for(const g of [shuffle(same), shuffle(jr), shuffle(rest)]) for(const x of g){ if(out.length >= n) break; if(x.n !== q.n && !out.some(y => y.n === x.n)) out.push(x); }
+    return out;
+  }
+  function openQuiz(){ quiz = null; sheet("ai-qz"); drawQuiz(); }
+  function startQuiz(){
+    const pool = quizPool();
+    if(pool.length < 4){ drawQuiz("もんだいに できる ことばが 足りないよ(" + pool.length + "語)。はんいを 広げてね"); return; }
+    quiz = { list:shuffle(pool).slice(0, QN).map((q, i) => ({ q, type:i % 2, ch:shuffle([q].concat(wrongs(q, 3))) })), i:0, ok:0, picked:null, miss:[] };
     drawQuiz();
   }
-  function drawQuiz(){
+  function drawQuiz(msg){
     const sh = document.getElementById("ai-qz"), Q = quiz;
-    let h = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>🧩 ミニクイズ</h2>';
-    if(Q.i >= Q.list.length) h += '<p class="ai-qres">' + Q.ok + ' / ' + Q.list.length + ' 問 正解！' + (Q.ok === Q.list.length ? " 🎉" : "") + '</p><button type="button" class="ai-btn ai-wide" data-ai-open="quiz">もう一度</button>';
-    else { const it = Q.list[Q.i];
-      h += '<p class="ai-qn">' + (Q.i + 1) + ' / ' + Q.list.length + '</p><p class="ai-qq">「' + esc(it.q.ds) + '」<br>これは どの ことば？</p><div class="ai-qch">' +
-        it.ch.map((x, k) => '<button type="button" class="ai-btn" data-ai-ans="' + k + '">' + "ABC"[k] + "　" + esc(x.n) + '</button>').join("") + '</div><p class="ai-qfb" id="ai-qfb"></p>'; }
+    let h = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>🧩 4択クイズ</h2>';
+    if(!Q){
+      const opt = (v, label, cur) => '<option value="' + esc(v) + '"' + (String(cur) === String(v) ? " selected" : "") + '>' + esc(label) + '</option>';
+      const n = quizPool().length;
+      h += '<p class="ai-qlead">試験の「えらぶ 問題」の 練習だよ。4つの 中から 1つ えらんでね。' + QN + '問。</p>' +
+        '<div class="ai-zf ai-qset"><select id="ai-qr">' + opt("seen", "出会った ことば", qset.r) + D.levels.map(L => opt(L.difficulty, L.icon + " " + L.name, qset.r)).join("") + opt("all", "ぜんぶ", qset.r) + '</select>' +
+        '<select id="ai-qj">' + opt("", "🧭 ぜんぶの 旅", qset.j) + JR.map(J => opt(J.id, J.icon + " " + J.name, qset.j)).join("") + '</select></div>' +
+        '<p class="ai-small ai-muted">この はんいの ことば: ' + n + '語</p>' + (msg ? '<p class="ai-empty">' + esc(msg) + '</p>' : "") +
+        '<button type="button" class="ai-btn ai-wide ai-go" data-ai-qstart="1">はじめる</button>' +
+        '<p class="ai-note">問題は この ゲームの 説明から 作っています。本物の 試験の 問題では ありません。</p>';
+    }else if(Q.i >= Q.list.length){
+      h += '<p class="ai-qres">' + Q.ok + ' / ' + Q.list.length + ' 問 正解！' + (Q.ok === Q.list.length ? " 🎉" : "") + '</p>' +
+        (Q.miss.length ? '<p class="ai-small">🔁 まちがえた ことば(おすと 説明が 読めるよ)</p><div class="ai-chips">' + Q.miss.map(q => chip(q)).join("") + '</div>' +
+          (Q.miss.some(q => discovered().has(q.art)) ? '<p class="ai-small ai-muted">出会った ことばは 💪 苦手ことばに 入れたよ</p>' : "") : "") +
+        '<button type="button" class="ai-btn ai-wide ai-go" data-ai-qstart="1">もう一度(同じ はんい)</button><button type="button" class="ai-btn ai-wide" data-ai-open="quiz">はんいを えらびなおす</button>';
+    }else{
+      const it = Q.list[Q.i], done = Q.picked !== null;
+      h += '<p class="ai-qn">' + (Q.i + 1) + ' / ' + Q.list.length + '　<span>' + it.q.jr.icon + " " + esc(it.q.jr.name) + " ・ " + LVN[it.q.dv].icon + " " + esc(LVN[it.q.dv].name) + '</span></p>';
+      h += it.type === 0
+        ? '<p class="ai-qq">「' + esc(hide(it.q.ds, it.q)) + '」<br>これは どの ことば？</p>'
+        : '<p class="ai-qq">「<b>' + esc(it.q.n) + '</b>」の 説明として 正しいのは どれ？</p>';
+      h += '<div class="ai-qch' + (it.type ? " long" : "") + '">' + it.ch.map((x, k) => {
+        const cls = done ? (x === it.q ? " ok" : k === Q.picked ? " ng" : "") : "";
+        return '<button type="button" class="ai-btn' + cls + '" data-ai-ans="' + k + '"' + (done ? " disabled" : "") + '><b>' + "ABCD"[k] + '</b>' + esc(it.type === 0 ? x.n : hide(x.ds, x)) + '</button>';
+      }).join("") + '</div>';
+      if(done){
+        const ok = it.ch[Q.picked] === it.q;
+        h += '<div class="ai-qfb2 ' + (ok ? "ok" : "ng") + '"><b>' + (ok ? "⭕ 正解！" : "❌ 正解は " + "ABCD"[it.ch.indexOf(it.q)] + "「" + esc(it.q.n) + "」") + '</b>' +
+             (it.type === 0 ? "" : '<p>' + esc(it.q.n) + ' … ' + esc(it.q.ds) + '</p>') +
+             (!ok && it.type === 1 ? '<p class="ai-muted">えらんだのは「' + esc(it.ch[Q.picked].n) + '」の 説明だよ</p>' : !ok ? '<p class="ai-muted">「' + esc(it.ch[Q.picked].n) + '」は ' + esc(it.ch[Q.picked].ds) + '</p>' : "") + '</div>' +
+             '<button type="button" class="ai-btn ai-wide ai-go" data-ai-qnext="1">' + (Q.i + 1 < Q.list.length ? "つぎへ" : "けっかを 見る") + '</button>';
+      }
+    }
     sh.innerHTML = h + '</div>';
     sh.querySelector(".ai-x").onclick = () => closeSheet("ai-qz");
+    const r = sh.querySelector("#ai-qr"), j = sh.querySelector("#ai-qj");
+    if(r) r.onchange = e => { qset.r = e.target.value; drawQuiz(); };
+    if(j) j.onchange = e => { qset.j = e.target.value; drawQuiz(); };
   }
   function answerQuiz(k){
-    const Q = quiz, it = Q.list[Q.i]; if(!it || Q.lock) return;
-    const ok = it.ch[k] === it.q; if(ok) Q.ok++;
-    Q.lock = true;
-    const sh = document.getElementById("ai-qz");
-    sh.querySelectorAll("[data-ai-ans]").forEach((b, j) => { b.disabled = true; if(it.ch[j] === it.q) b.classList.add("ok"); else if(j === k) b.classList.add("ng"); });
-    sh.querySelector("#ai-qfb").textContent = ok ? "⭕ 正解！" : "❌ 正解は「" + it.q.n + "」";
-    setTimeout(() => { Q.i++; Q.lock = false; drawQuiz(); }, ok ? 700 : 1400);
+    const Q = quiz, it = Q && Q.list[Q.i]; if(!it || Q.picked !== null) return;
+    Q.picked = k;
+    const ok = it.ch[k] === it.q;
+    if(ok) Q.ok++;
+    else {
+      Q.miss.push(it.q);
+      const L = log(), e = L[it.q.art];  // 出会った ことばだけ 苦手に する(まだの ことばは 図鑑に 出さない)
+      if(e){ L[it.q.art] = [e[0], e[1] + 1, 1, e[3], Date.now(), e[5]]; save(L); }
+    }
+    drawQuiz();
   }
 
   /* ── おす・えらぶ(まとめて 受ける。結果画面や シートの 中身は 何度も 書きかわるため) ── */
   document.addEventListener("click", e => {
-    const t = e.target.closest && e.target.closest("[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-retry],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-practice],[data-ai-ans],.ai-node");
+    const t = e.target.closest && e.target.closest("[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-retry],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-practice],[data-ai-ans],[data-ai-qstart],[data-ai-qnext],.ai-node");
     if(!t) return;
     if(t.dataset.aiTerm) return detail(t.dataset.aiTerm);
     if(t.dataset.aiBack){ trail.pop(); const id = trail[trail.length - 1]; if(id){ trail.pop(); detail(id); } return; }
     if(t.dataset.aiFav){ toggleFav(t.dataset.aiFav); trail.pop(); detail(t.dataset.aiFav); if(document.getElementById("ai-zk") && !document.getElementById("ai-zk").classList.contains("hidden")) drawZukan(); home(mode); return; }
     if(t.dataset.aiMore){ zf.shown += 180; return drawZukan(); }
     if(t.dataset.aiAns) return answerQuiz(+t.dataset.aiAns);
+    if(t.dataset.aiQstart) return startQuiz();
+    if(t.dataset.aiQnext){ quiz.i++; quiz.picked = null; const sh = document.getElementById("ai-qz"); drawQuiz(); if(sh) sh.scrollTop = 0; return; }
     if(t.dataset.aiOpen){
       const o = t.dataset.aiOpen;
       if(o === "zukan") return openZukan({});
@@ -504,13 +556,18 @@ const SEIBI = (() => {
 .ai-meta{margin:6px 0 0;color:#475569;font-size:12px}.ai-d{margin:8px 0 0;font-size:14.5px;line-height:2.05}.ai-st{font-size:12px;color:#475569;margin:10px 0 0}
 .ai-qn{margin:0;color:#64748b;font-size:12px;text-align:center}.ai-qq{font-size:15px;line-height:1.9;font-weight:700;margin:6px 0 12px}
 .ai-qch{display:grid;gap:8px}.ai-qch .ai-btn{text-align:left}.ai-qch .ok{background:#dcfce7;border-color:#22c55e}.ai-qch .ng{background:#fee2e2;border-color:#ef4444}
+.ai-qlead{font-size:13.5px;line-height:1.8;margin:4px 0 10px}.ai-qset{grid-template-columns:1fr 1fr}.ai-go{background:#d9480f;border-color:#d9480f;color:#fff}
+.ai-qn span{font-size:11px}.ai-qch .ai-btn b{display:inline-block;min-width:1.4em;color:#d9480f}.ai-qch.long .ai-btn{font-size:13px;font-weight:600;line-height:1.6}
+.ai-qch .ai-btn:disabled{opacity:1;color:#1e1b4b}.ai-qch .ai-btn.ok b,.ai-qch .ai-btn.ng b{color:inherit}
+.ai-qfb2{margin:10px 0 0;border-radius:12px;padding:8px 10px;font-size:13px;line-height:1.7}.ai-qfb2.ok{background:#dcfce7}.ai-qfb2.ng{background:#fee2e2}.ai-qfb2 p{margin:4px 0 0}
 .ai-qfb{min-height:1.6em;text-align:center;font-weight:900;margin:10px 0 0}.ai-qres{text-align:center;font-size:22px;font-weight:900;margin:14px 0}
 body.ai-lock{overflow:hidden}
 `;
   const st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
   const hb = document.getElementById("home-btn"); if(hb) hb.textContent = "旅マップに もどる";
 
+  // noRank: ふくしゅう・苦手克服(毎回 ちがう 10問)と レベル61より 上(かずともの 表は 1〜60)は 送らない
   return { kind:"seibiterm", modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
            card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), retarget,
-           noRank:m => !RANK_READY || m === "sfuku" || m === "sweak", noBoard:!RANK_READY, openZukan, diagramSvg };
+           noRank:(m, lv) => !RANK_READY || m === "sfuku" || m === "sweak" || lv >= 60, noBoard:!RANK_READY, openZukan, diagramSvg };
 })();

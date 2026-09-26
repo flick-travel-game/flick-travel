@@ -326,3 +326,21 @@ GitHub Pages は リポジトリの「いちばん上」か「docs フォルダ�
 - `FLICK_MODES` に ew1 ew2 ew3 ew4 etalk emas を 足した(speed-king)。`/flick-link?to=eikaiwa` で もどってこられる
 - ふくしゅう(efuku)・苦手克服(eweak)・もう一度だけ挑戦・レベル61より 上(マスター)は 送らない
 - トップの 絵・アイコンは まだ 無い(文字の 題名)。けいくんの 絵が 届いたら `eikaiwa/` に 置いて `build_games.py` の GAMES を hero/logo:true と art に。**英検・TOEIC の ロゴや 字は 入れない**
+## 理科フリック旅行 = 物理・化学・生物・地学(2026-09-26 けいくん)
+けいくんが 決めたこと:「理科フリック旅行」/ 教科書の 4分野 / **宇宙・からだに ある ことばは 入れない** / 📍を 立てる 図を 作る。
+
+- `rika/`。旅は 4つ: ⚡ 物理 150 / ⚗️ 化学 170(元素 40 を ふくむ)/ 🌱 生物 150 / 🌋 地学 150 = **620問**
+- **1つの 旅の 中で 小学校 → 中学校(高校受験)→ 高校(大学受験)の 順**。`LEVELS` を 作るところで 学年(`g`: e / j / h。`GRADE_RANK`)を いちばん 先に 見て、その中は 打ちやすい順。
+  レベルの カードに「小学校・」「中学校・」「高校・」(`levelSchool` = 10問で いちばん 多い 学年)
+- データは **`tools/rika.tsv`**(10列: key 名前 分類 よみ 絵文字 解説 図 区画 学年 Wikipedia題名)。
+  **足す・直すときは `tools/rika-phys.tsv` / `rika-chem.tsv` / `rika-bio.tsv` / `rika-geo.tsv`(分野ごと)を 直して**
+  `cat tools/rika-phys.tsv tools/rika-chem.tsv tools/rika-bio.tsv tools/rika-geo.tsv > tools/rika.tsv` →
+  `python3 tools/check_rika_tsv.py` → `add_spots.py` → `make_ruby.py` → `fetch_series_photos.py` → `build_games.py`
+  - 検査(`check_rika_tsv.py`)は **ほかの ゲームの 名前・よみと かぶったら 止める**(同じ ことばが 2つの ゲームに 出ないように)。
+    だから 酸素・カルシウム・光合成・呼吸・触媒・酵素・万有引力 などは 入っていない(宇宙・からだに ある)
+  - key の あたまで 旅が きまる: `phy` 物理 / `chm` と `el`(元素)化学 / `bio` 生物 / `geo` 地学
+  - どの 旅も 10の倍数
+- **📍の 図**(コードで 描く。AIの 絵は 使わない): 化学 = **周期表**(元素の マスに 📍。`ELEMENTS` / `ptCell`)と 化学の地図、物理・生物 = 区画の 地図(`rikaBoard`)、地学 = **地球の 断面図**(`rikaGeo`)。
+  区画は `RIKA_ZONES`(TSV の 区画と 同じ 名前。`check_rika_tsv.py` の `ZONES` と そろえる)。📍の 位置は 区画の 中に レベルの 順で ならべる(`rikaPlace`)
+- 絵(トップの絵・題名・アイコン)は まだ 無い → 題名は 文字。けいくんの 絵が 届いたら `build_games.py` の rika に `art` を 足して `hero/logo` を True に
+- かずとも: `FLICK_MODES` に rphys / rchem / rbio / rgeo、`FLICK_LINK_TARGETS` に rika、規約などの `FLICK_SERIES_GAMES` に 理科(speed-king PR #173。規約に 出るので けいくんの OK 待ち)

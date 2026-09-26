@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""宇宙・からだ の写真を まとめて取る(tools/space.tsv・tools/body.tsv → photos.js / photo-<key>.jpg)。
+"""宇宙・からだ・理科 の写真を まとめて取る(tools/space.tsv・tools/body.tsv・tools/rika.tsv → photos.js / photo-<key>.jpg)。
 
 やりかたは 偉人の肖像(fetch_portraits.py)と 同じ:
  ① Wikipedia(日本語版)の 記事(10列め の題名)の 代表画像の名前を 40件ずつ。
@@ -26,7 +26,9 @@ from PIL import Image  # noqa: E402
 
 ROOT = F.ROOT
 SERIES = {}  # key → (Wikipedia の題名, 名前, シリーズ名)
-for name in ("space", "body"):
+for name in ("space", "body", "rika"):  # rika = 理科フリック旅行(10列。10列めが Wikipedia の 題名なのは 同じ)
+    if not (ROOT / "tools" / f"{name}.tsv").exists():
+        continue
     for line in (ROOT / "tools" / f"{name}.tsv").read_text(encoding="utf-8").splitlines():
         if line.strip() and not line.startswith("#"):
             f = line.split("\t")

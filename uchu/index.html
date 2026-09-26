@@ -536,7 +536,8 @@ const GAME = { id:"uchu", name:"宇宙フリック旅行", modes:["usolar", "usk
 const SERIES = [ {id:"world", name:"世界フリック旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"歴史フリック旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
                  {id:"uchu", name:"宇宙フリック旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"からだフリック旅行", icon:"🫀", dir:"../flick-travel/karada/"},
                  {id:"kabu", name:"株式フリック旅行", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"AIフリック旅行", icon:"🤖", dir:"../flick-travel/ai/"},
-                 {id:"eikaiwa", name:"英会話フリック旅行", icon:"💬", dir:"../flick-travel/eikaiwa/"} ];
+                 {id:"eikaiwa", name:"英会話フリック旅行", icon:"💬", dir:"../flick-travel/eikaiwa/"},
+                 {id:"rika", name:"理科フリック旅行", icon:"🔬", dir:"../flick-travel/rika/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
   {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
@@ -708,7 +709,8 @@ const TONE = {
 const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: toneFrom("#8a5a2b"), jevents: toneFrom("#5b3fbf"),
-          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"), ktsubo: toneFrom("#a8552f") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
+          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"), ktsubo: toneFrom("#a8552f"),
+          rphys: toneFrom("#1f5fbf"), rchem: toneFrom("#b8457a"), rbio: toneFrom("#2e7d32"), rgeo: toneFrom("#8a5a2b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
@@ -1068,7 +1070,7 @@ function gmapLink(q){
   if(PLUG && q.k === PLUG.kind) return "";  // プラグインの コース(株式・AI): リンクは PLUG.info が 出す  // 会社の コース: リンクは PLUG.info が 出す
   if(q.k === "company") return '<a class="gmap" href="' + esc(q.u) + '" target="_blank" rel="noopener noreferrer">🏢 公式サイトを見る</a>'
     + (q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "");
-  if(q.k === "space" || q.k === "body") return q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "";
+  if(q.k === "space" || q.k === "body" || q.k === "rika") return q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "";
   return '<a class="gmap" href="' + gmapUrl(q) + '" target="_blank" rel="noopener">' + (q.k === "person" ? "🗺 生まれた所を Googleマップで見る" : "🗺 Googleマップで見る") + '</a>';
 }
 /* 名所の 緯度・経度(世界一周マップの ピンの位置)。地図は 北緯84度〜南緯60度 を 横長に切ったもの */
@@ -1413,7 +1415,10 @@ const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filt
                 capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)),
                 /* 宇宙フリック旅行(key の あたま sol / sky / cos)・からだフリック旅行(bon mus / org sys / cel) */
                 usolar: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sol")), usky: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sky")), ucos: SPOTS.filter(q => q.k === "space" && q.art.startsWith("cos")),
-                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")), ktsubo: SPOTS.filter(q => q.k === "body" && q.art.startsWith("tsb")) };
+                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")), ktsubo: SPOTS.filter(q => q.k === "body" && q.art.startsWith("tsb")) ,
+                /* 理科フリック旅行(key の あたま phy / chm と el / bio / geo)。学年(g: e 小学校 / j 中学校 / h 高校)の 順に レベルが 並ぶ */
+                rphys: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("phy")), rchem: SPOTS.filter(q => q.k === "rika" && /^(chm|el)/.test(q.art)),
+                rbio: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("bio")), rgeo: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("geo")) };
 if(PLUG) Object.assign(POOLS, PLUG.pools);
 /* 日本一周マップの 決めごと(tools/make_japan_map.py と 同じ数字)。本土は 東経128.5〜146.5 / 北緯29.8〜46。
    南西諸島(北緯28度より南)は 左上の わく(東経122.5〜 / 北緯27.5〜)に 同じ縮尺で */
@@ -1454,7 +1459,11 @@ MAPS.kcell = { svg:true, maps:["cell"], w:720, h:720, src:"", icon:"🧬", name:
 /* ツボ(けいくん 2026-09-26「からだフリック旅行に体のツボをすべて足してください」)。WHO の 標準 361か所。
    図は はだの 前・うしろ・頭の 3枚(けいくんの ChatGPT の 絵)。データと 📍の 場所は tools/tsubo.tsv */
 MAPS.ktsubo = { svg:true, maps:["tfront","tback","thead"], w:1024, h:1536, src:"", icon:"👆", name:"ツボ", title:"ツボの図", word:"ツボの図", sub:"合谷・足三里・百会…WHOの 361か所", thing:"ツボ", unit:"", doneWord:"知ったツボ", miss:"まだ知らないツボ" };
-const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "ktsubo"];
+MAPS.rphys = { svg:true, maps:["phys"], w:1080, h:760, src:"", icon:"⚡", name:"物理", title:"物理の地図", word:"物理の地図", sub:"力・電気・光・音・熱・エネルギー", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.rchem = { svg:true, maps:["ptable","chem"], w:1080, h:760, src:"", icon:"⚗️", name:"化学", title:"周期表と 化学の地図", word:"周期表と 化学の地図", sub:"元素・水溶液・化学変化・イオン・実験器具", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.rbio = { svg:true, maps:["bio"], w:1080, h:760, src:"", icon:"🌱", name:"生物", title:"生物の地図", word:"生物の地図", sub:"植物・動物・生態系・進化・微生物", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.rgeo = { svg:true, maps:["geo"], w:1080, h:760, src:"", icon:"🌋", name:"地学", title:"地球の断面図", word:"地球の断面図", sub:"天気・地層・火山・地震・プレート", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "ktsubo", "rphys", "rchem", "rbio", "rgeo"];
 if(PLUG) for(const m of PLUG.modes){ MAPS[m] = Object.assign({}, MAPS.world, PLUG.maps[m]); ALL_MODES.push(m); }
 const MODES = ALL_MODES.filter(m => GAME.modes.includes(m));  // この ゲームに 出す 旅だけ
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
@@ -1489,13 +1498,21 @@ const FAME = {};
    町や湖の記事が 名所より 多く読まれるので、定番100か所を 先に 置いてから 閲覧数で 並べる。
    地名・偉人は f:1(国・都道府県)を先に そのあと かんたんな順 */
 const LEVELS = {};
+const GRADE_RANK = { e:1, j:2, h:3 }, SCHOOL = { e:"小学校", j:"中学校", h:"高校" };
+/* その レベルの 学年(10問で いちばん 多い 学年。同じ数なら 上の 学年)。理科だけ */
+function levelSchool(set){
+  const n = {}; for(const q of set) if(q.g) n[q.g] = (n[q.g] || 0) + 1;
+  const g = Object.keys(n).sort((a,b) => n[b] - n[a] || GRADE_RANK[b] - GRADE_RANK[a])[0];
+  return g ? SCHOOL[g] : "";
+}
 for(const m of MODES){
   if(PLUG && PLUG.levels[m]){ LEVELS[m] = PLUG.levels[m]; continue; }  // 会社の コースは kabu.js が 組む(新しい会社 + ふくしゅう)
   const pool = poolOf(m);
   /* f:1(名所=はじめの100か所の定番 / 地名=国・都道府県)を 先に。その中で かんたんな順(けいくん 2026-09-25) */
   const byFame = (m === "world" || m === "japan");
-  const sorted = pool.map((q,i) => ({q, i, f:q.f ? 0 : 1, c:cost(textOf(m,q)), v:FAME[q.art] || 0}))
-    .sort((a,b) => a.f - b.f || (byFame ? b.v - a.v : 0) || a.c - b.c || a.i - b.i).map(x => x.q);
+  /* 理科は 学年(小学校 → 中学校 → 高校)が 先、その中で 打ちやすい順(けいくん 2026-09-26「小学生から大人まで」) */
+  const sorted = pool.map((q,i) => ({q, i, g:GRADE_RANK[q.g] || 0, f:q.f ? 0 : 1, c:cost(textOf(m,q)), v:FAME[q.art] || 0}))
+    .sort((a,b) => a.g - b.g || a.f - b.f || (byFame ? b.v - a.v : 0) || a.c - b.c || a.i - b.i).map(x => x.q);
   LEVELS[m] = [];
   for(let i = 0; i + ROUNDS <= sorted.length; i += ROUNDS) LEVELS[m].push(sorted.slice(i, i + ROUNDS));
   /* あまりが 出たら、その前の レベルの うしろから 足りないぶんを もう一度 出して 最後も 10問にする
@@ -1794,7 +1811,122 @@ const SVG_MAPS = {
   tfront: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-front.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">前から見た からだ(向かって左が 右手)</text>' },
   tback: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-back.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">うしろから見た からだ(向かって右が 右手)</text>' },
   thead: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-head.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">横から見た 頭(顔は 左むき)</text>' },
+  /* ── 理科フリック旅行の 図(けいくん 2026-09-26「📍を立てる図を作る」)。ぜんぶ コードで 描く(AIの 絵は 使わない)。
+     📍は 区画(RIKA_ZONES)の 中に レベルの 順で ならべる。元素は 周期表の その マス */
+  ptable: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaPtable(W, H) },
+  phys: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaBoard("phys", W, H) },
+  chem: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaBoard("chem", W, H) },
+  bio: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaBoard("bio", W, H) },
+  geo: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaGeo(W, H) },
 };
+/* ── 理科フリック旅行の 図の 中身 ──
+   RIKA_ZONES[図][区画] = [左, 上, 幅, 高さ, 見出し, 色](図の 大きさに 対する 割合)。TSV の 区画と 同じ 名前(tools/check_rika_tsv.py の ZONES) */
+const RIKA_ZONES = {
+  phys: { force:[.02,.09,.31,.44,"🏋️ 力と運動","#dbe8ff"], energy:[.345,.09,.31,.44,"🔥 エネルギーと熱","#ffe3d1"], elec:[.67,.09,.31,.44,"⚡ 電気と磁気","#fff3c4"],
+          wave:[.02,.55,.475,.43,"🌈 光と音・波","#e6dcff"], atom:[.505,.55,.475,.43,"☢️ 原子と放射線","#d8f3ea"] },
+  chem: { matter:[.02,.09,.31,.44,"🧊 物質のすがた","#dbeeff"], sol:[.345,.09,.31,.44,"🧪 水溶液と 酸・アルカリ","#ffe0ec"], react:[.67,.09,.31,.44,"💥 化学変化","#ffe9cc"],
+          bond:[.02,.55,.31,.43,"⚛️ 原子・イオン・結合","#e6dcff"], organic:[.345,.55,.31,.43,"🧬 有機物と 高分子","#dff5dc"], lab:[.67,.55,.31,.43,"🔬 実験器具と 操作","#eeeeee"] },
+  bio:  { plant:[.02,.09,.31,.44,"🌷 植物","#e2f5d6"], animal:[.345,.09,.31,.44,"🐟 動物","#ffe9cc"], micro:[.67,.09,.31,.44,"🦠 微生物・菌","#f1e3ff"],
+          eco:[.02,.55,.475,.43,"🌳 生態系と 環境","#d8f0ff"], evo:[.505,.55,.475,.43,"🦕 進化と なかま分け","#fff3c4"] },
+  geo:  { weather:[.02,.02,.56,.25,"🌦 天気と 気象",""], air:[.60,.02,.38,.25,"🌀 大気と 海の めぐり",""], river:[.02,.30,.46,.21,"🏞 流れる水と 地形",""],
+          volcano:[.52,.30,.46,.42,"🌋 火山と 岩石",""], strata:[.02,.53,.46,.21,"🪨 地層と 化石",""], quake:[.02,.755,.96,.115,"🫨 地震と プレート",""],
+          inside:[.02,.88,.96,.11,"🌏 地球の 内部",""] },
+};
+const RIKA_TITLE = { phys:"物理の地図", chem:"化学の地図", bio:"生物の地図" };
+function rikaBoard(k, W, H){
+  let o = '<rect width="' + W + '" height="' + H + '" fill="#fbfaf6"/>';
+  o += '<text x="' + (W/2) + '" y="' + (H*0.058) + '" text-anchor="middle" font-size="30" font-weight="800" fill="#3a3a3a">' + RIKA_TITLE[k] + '</text>';
+  for(const [x,y,w,h,label,c] of Object.values(RIKA_ZONES[k])){
+    o += '<rect x="' + (x*W).toFixed(1) + '" y="' + (y*H).toFixed(1) + '" width="' + (w*W).toFixed(1) + '" height="' + (h*H).toFixed(1) + '" rx="18" fill="' + c + '" stroke="#00000018" stroke-width="2"/>';
+    o += '<text x="' + (x*W + 16).toFixed(1) + '" y="' + (y*H + 36).toFixed(1) + '" font-size="28" font-weight="800" fill="#444">' + label + '</text>';
+  }
+  return o;
+}
+function rikaGeo(W, H){
+  const Y = v => (v*H).toFixed(1), X = v => (v*W).toFixed(1);
+  let o = '<defs><linearGradient id="rg-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fc8f5"/><stop offset="1" stop-color="#dff1ff"/></linearGradient>'
+        + '<linearGradient id="rg-in" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8803a"/><stop offset="1" stop-color="#c2410c"/></linearGradient></defs>';
+  o += '<rect width="' + W + '" height="' + Y(.285) + '" fill="url(#rg-sky)"/>';
+  // 雲と 太陽
+  o += '<circle cx="' + X(.955) + '" cy="' + Y(.24) + '" r="20" fill="#ffd34d"/>';
+  for(const [cx,cy] of [[.30,.22],[.72,.23]]) o += '<g fill="#ffffff" opacity=".9"><ellipse cx="' + X(cx) + '" cy="' + Y(cy) + '" rx="46" ry="16"/><ellipse cx="' + X(cx+.025) + '" cy="' + Y(cy-.02) + '" rx="30" ry="16"/></g>';
+  // 地面・川・海
+  o += '<rect y="' + Y(.285) + '" width="' + W + '" height="' + Y(.24) + '" fill="#cfe8b0"/>';
+  o += '<path d="M 0 ' + Y(.47) + ' C ' + X(.12) + ' ' + Y(.42) + ', ' + X(.28) + ' ' + Y(.52) + ', ' + X(.49) + ' ' + Y(.49) + '" fill="none" stroke="#5aa6e6" stroke-width="12" stroke-linecap="round"/>';
+  // 地層(しま)
+  const L = ["#e9d7a8","#c9a46a","#d8c08a","#a9855a","#e2cc98"];
+  L.forEach((c,i) => { o += '<rect y="' + Y(.525 + i*.044) + '" width="' + X(.5) + '" height="' + Y(.044) + '" fill="' + c + '"/>'; });
+  o += '<rect x="' + X(.5) + '" y="' + Y(.525) + '" width="' + X(.5) + '" height="' + Y(.22) + '" fill="#bfa27a"/>';
+  // 火山
+  o += '<path d="M ' + X(.56) + ' ' + Y(.745) + ' L ' + X(.72) + ' ' + Y(.34) + ' L ' + X(.80) + ' ' + Y(.34) + ' L ' + X(.96) + ' ' + Y(.745) + ' Z" fill="#8a6a55" opacity=".85"/>';
+  o += '<path d="M ' + X(.76) + ' ' + Y(.34) + ' L ' + X(.76) + ' ' + Y(.745) + '" stroke="#e8542a" stroke-width="10" opacity=".8"/>';
+  // 地殻(プレート)と 境目
+  o += '<rect y="' + Y(.745) + '" width="' + W + '" height="' + Y(.13) + '" fill="#7a5c45"/>';
+  o += '<path d="M ' + X(.2) + ' ' + Y(.745) + ' L ' + X(.24) + ' ' + Y(.875) + '" stroke="#f5e6d0" stroke-width="3" stroke-dasharray="8 6"/>';
+  // マントル・核
+  o += '<rect y="' + Y(.875) + '" width="' + W + '" height="' + Y(.125) + '" fill="url(#rg-in)"/>';
+  for(const [x,y,w,h,label] of Object.values(RIKA_ZONES.geo)){
+    const dark = y >= .75;
+    o += '<rect x="' + X(x) + '" y="' + Y(y) + '" width="' + X(w) + '" height="' + Y(h) + '" rx="14" fill="' + (dark ? "#00000022" : "#ffffff55") + '" stroke="' + (dark ? "#ffffff55" : "#00000022") + '" stroke-width="2"/>';
+    o += '<text x="' + (x*W + 12).toFixed(1) + '" y="' + (y*H + 32).toFixed(1) + '" font-size="27" font-weight="800" fill="' + (dark ? "#fff" : "#333") + '">' + label + '</text>';
+  }
+  return o;
+}
+/* 周期表(1〜118)。原子番号 → [行, 列](1から)。ランタノイド・アクチノイドは 下の 2行 */
+const ELEMENTS = "H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og".split(" ");
+function ptCell(z){
+  if(z === 1) return [1, 1]; if(z === 2) return [1, 18];
+  const starts = [[3,2],[11,3],[19,4],[37,5],[55,6],[87,7]];
+  if(z >= 57 && z <= 71) return [9, z - 57 + 3]; if(z >= 89 && z <= 103) return [10, z - 89 + 3];
+  for(let i = starts.length - 1; i >= 0; i--){
+    const [s, row] = starts[i]; if(z < s) continue; const n = z - s;
+    if(row <= 3) return [row, n < 2 ? n + 1 : n + 11];
+    if(row <= 5) return [row, n + 1];
+    return [row, n < 2 ? n + 1 : n - 13];  // 72〜86・104〜118 は 4列めから
+  }
+}
+const PT = { x0:.03, y0:.13, cw:.94/18, ch:.072 };
+function ptXY(z){ const [r, c] = ptCell(z); const ry = r >= 9 ? r - 0.5 : r; return [PT.x0 + (c - .5) * PT.cw, PT.y0 + (ry - .5) * PT.ch]; }
+function rikaPtable(W, H){
+  let o = '<rect width="' + W + '" height="' + H + '" fill="#fbfaf6"/>';
+  o += '<text x="' + (W/2) + '" y="' + (H*0.065) + '" text-anchor="middle" font-size="30" font-weight="800" fill="#3a3a3a">元素の 周期表</text>';
+  const col = z => { const [r, c] = ptCell(z); if(r >= 9) return "#f6dcf2"; if(c <= 2) return z === 1 ? "#dfe9ff" : "#ffd9c7"; if(c >= 13) return c === 18 ? "#dcd7ff" : "#d9f2d6"; return "#fff0bf"; };
+  const cw = PT.cw * W, ch = PT.ch * H;
+  for(let z = 1; z <= 118; z++){
+    const [cx, cy] = ptXY(z), x = cx * W - cw/2, y = cy * H - ch/2;
+    o += '<rect x="' + (x+1.5).toFixed(1) + '" y="' + (y+1.5).toFixed(1) + '" width="' + (cw-3).toFixed(1) + '" height="' + (ch-3).toFixed(1) + '" rx="5" fill="' + col(z) + '" stroke="#0000001f"/>';
+    o += '<text x="' + (x+5).toFixed(1) + '" y="' + (y+14).toFixed(1) + '" font-size="10" fill="#666">' + z + '</text>';
+    o += '<text x="' + (cx*W).toFixed(1) + '" y="' + (cy*H + 12).toFixed(1) + '" text-anchor="middle" font-size="19" font-weight="700" fill="#333">' + ELEMENTS[z-1] + '</text>';
+  }
+  for(const [r, t] of [[6, "57-71"], [7, "89-103"]]){ const x = PT.x0*W + 2*cw, y = (PT.y0 + (r-1)*PT.ch)*H; o += '<text x="' + (x + cw/2).toFixed(1) + '" y="' + (y + ch/2 + 5).toFixed(1) + '" text-anchor="middle" font-size="11" fill="#999">' + t + '</text>'; }
+  o += '<text x="' + (PT.x0*W).toFixed(1) + '" y="' + ((PT.y0 + 9.6*PT.ch)*H).toFixed(1) + '" font-size="13" fill="#888">下の 2行: ランタノイド(57〜71)・アクチノイド(89〜103)</text>';
+  return o;
+}
+/* 理科の ことばに 📍の 位置(x, y)を つける。区画の 中に レベルの 順で ならべる(はじめに 1回だけ) */
+(function rikaPlace(){
+  for(const m of ["rphys", "rchem", "rbio", "rgeo"]){
+    if(!LEVELS[m]) continue;
+    const seen = new Set(), by = {};
+    for(const q of LEVELS[m].flat()){ if(seen.has(q.art)) continue; seen.add(q.art);
+      if(q.mp === "ptable"){ [q.x, q.y] = ptXY(+q.z); q.y -= PT.ch * .18; continue; }
+      (by[q.mp + "/" + q.z] = by[q.mp + "/" + q.z] || []).push(q); }
+    for(const [k, list] of Object.entries(by)){
+      const [mp, z] = k.split("/"), Z = RIKA_ZONES[mp] && RIKA_ZONES[mp][z]; if(!Z) continue;
+      /* 📍は 先(下の はし)が その 位置。見出しの 下に 📍の 高さ(pin)ぶん あけて ならべる。
+         細い 帯(地震・地球の内部)は 見出しを 左に 置いて、📍は その 右に 1〜2行 */
+      const [x, y, w, h] = Z, W = 1080, H = 760, pin = 0.09, band = h < 0.2, n = list.length;
+      if(band){  // 細い 帯: 📍は 1列に ならべ、ひとつおきに 少し 上げて 重なりを へらす
+        const x0 = x + 0.25, aw = w - 0.26;
+        list.forEach((q, i) => { q.x = x0 + aw * (i + .5) / n; q.y = y + h - 0.015 - (i % 2 ? 0.045 : 0); });
+        continue;
+      }
+      const x0 = x + 0.01, aw = w - 0.02, y0 = y + 50 / H + pin, y1 = y + h - 0.015, ah = Math.max(0.001, y1 - y0);
+      const rows = Math.max(1, Math.round(Math.sqrt(n * (ah * H) / (aw * W)))), cols = Math.ceil(n / rows);
+      list.forEach((q, i) => { const c = i % cols, r = Math.floor(i / cols);
+        q.x = x0 + aw * (c + .5) / cols; q.y = rows === 1 ? y1 : y0 + ah * r / (rows - 1); });
+    }
+  }
+})();
 let curSub = null;  // いま出している 図(maps の どれか)
 function drawSvgMap(done, M){
   if(!M.maps.includes(curSub)) curSub = M.maps[0];
@@ -1803,7 +1935,7 @@ function drawSvgMap(done, M){
   let box = $("#svgmap"); if(!box){ box = document.createElement("div"); box.id = "svgmap"; box.className = "svg-wrap"; $("#map-in").appendChild(box); }
   box.innerHTML = '<svg viewBox="0 0 ' + D.w + ' ' + D.h + '" xmlns="http://www.w3.org/2000/svg">' + D.bg(D.w, D.h) + '</svg>';
   const tabs = $("#map-tabs"); tabs.classList.toggle("hidden", M.maps.length < 2);
-  const NAME = { solar:"太陽系", sky:"星空", front:"からだ", head:"頭", cell:"細胞", tfront:"前", tback:"うしろ", thead:"頭" };
+  const NAME = { solar:"太陽系", sky:"星空", front:"からだ", head:"頭", cell:"細胞", tfront:"前", tback:"うしろ", thead:"頭", ptable:"周期表", chem:"化学の地図", phys:"物理の地図", bio:"生物の地図", geo:"地球の断面" };
   tabs.innerHTML = M.maps.map(k => '<button type="button" data-k="' + k + '"' + (k === curSub ? ' class="on"' : '') + '>' + NAME[k] + '</button>').join("");
   tabs.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { curSub = b.dataset.k; mapReset(); drawMap(); }));
   const items = [];
@@ -2026,7 +2158,7 @@ function openLevels(m){
     const lens = set.map(q => textOf(m,q).length), b = bestOf(m,i);
     const kl = PLUG && PLUG.owns(m) ? PLUG.lvInfo(m, i) : null;
     return '<button class="lv sk-card sk-card-'+(i%4+1)+(isNaN(b) ? '' : ' done')+'" style="'+toneStyle(levelTone(i))+'" data-lv="'+i+'"><b>'+(kl ? kl.name : 'レベル'+(i+1))+'</b>'+
-      '<small>'+(kl ? kl.sub : '1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字')+'</small>'+
+      '<small>'+(kl ? kl.sub : (levelSchool(set) ? levelSchool(set)+'・' : '')+'1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字')+'</small>'+
       '<div class="bt">'+(isNaN(b) ? '自己ベスト：まだなし' : '自己ベスト：'+b.toFixed(2)+'秒')+'</div></button>';
   }).join("");
   document.querySelectorAll(".lv").forEach(b => b.addEventListener("click", () => start(mode, +b.dataset.lv)));

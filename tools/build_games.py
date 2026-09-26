@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/index.html(歴史)・(あとで uchu/ karada/)
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -22,6 +22,11 @@ GAMES = {
                    lead="骨・筋肉・臓器・からだのしくみ・細胞を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、からだの中を旅しよう。",
                    how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、からだの図に📍が立つよ。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、からだのしくみも自然と覚えられるよ。"),
+    # 株式フリック旅行(けいくん 2026-09-26)。絵が届くまでは 文字の題名(logo:false hero:false)。届いたら kabu/ に置いて art を足す
+    "kabu": dict(name="株式フリック旅行", modes=["jcomp", "wcomp"], kinds={"company"}, color="#0f6fa8", hero=False, logo=False,
+                 lead="日本と世界の会社の名前を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、会社をめぐる旅に出よう。",
+                 how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 会社の説明と 時価総額が出て、地図の 本社に📍が立つよ。",
+                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の会社の名前も自然と覚えられるよ。"),
 }
 
 def build(gid, g):
@@ -39,7 +44,12 @@ def build(gid, g):
                          '<img class="hero" src="hero.webp" alt="%s" width="%d" height="%d">' % (art["alt"], *art["hero"]), out); assert n == 1
     else:
         out = out.replace('href="apple-touch-icon.png?v=2"', 'href="../apple-touch-icon.png?v=2"').replace('href="favicon.png?v=2"', 'href="../favicon.png?v=2"')
+        # 絵が まだ無い ゲーム(株式フリック旅行): トップの絵と ロゴの 画像を 最初から 置かない(無い ファイルを 読みにいかない)。題名は 文字
+        out, n = re.subn(r'\s*<img class="hero" src="hero.webp"[^>]*>', "", out); assert n == 1
+        out, n = re.subn(r'<img class="logo-mark" src="logo-mark2.webp"[^>]*>\s*<img class="logo-word" src="logo-word.webp"[^>]*>',
+                         lambda _: '<span class="logo-text">%s</span>' % g["name"], out); assert n == 1
     out = out.replace('<script src="photos.js"></script>', '<script src="../photos.js"></script>')
+    out = out.replace('<img id="map-img" src="world-map-color.jpg"', '<img id="map-img" src="../world-map-color.jpg"')  # 地図の 絵は 世界の フォルダに ある
     out = out.replace('<h1 class="sr-only">世界フリック旅行</h1>', f'<h1 class="sr-only">{g["name"]}</h1>')
     out = out.replace('<a href="about.html">📖 世界フリック旅行について(おうちの方へ)</a>', f'<a href="../about.html">📖 フリック旅行シリーズについて(おうちの方へ)</a>')
     # GAME

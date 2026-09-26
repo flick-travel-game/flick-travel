@@ -225,3 +225,18 @@ GitHub Pages は リポジトリの「いちばん上」か「docs フォルダ�
 - `tools/fetch_series_photos.py`: space.tsv / body.tsv の 10列目(Wikipedia の題名)→ 記事の 代表画像 → Commons。ライセンスは ほかの写真と同じ(PD/CC0/CC BY/CC BY-SA だけ)。`photos.js` に 足すだけ(前の写真は 消さない)。キャッシュは `tools/series-*.json`
 - 613のうち 582に 写真(宇宙 304 / からだ 278)。のこり 31は 記事に 絵が無い・ライセンスが 合わない。手で えらぶなら `fetch_portraits.py` の `MANUAL_KEY` と 同じ形で
 - ⚠️ 図(骨・細胞・星図)は 英語の字が 入っているものが ある(Wikipedia の 絵が そうなっているため)
+
+## 株式フリック旅行(2026-09-26 けいくん「それで作成してください」)
+- `kabu/`(日本の会社 100・世界の会社 100 = 200問)。データは `tools/companies-japan.tsv` / `tools/companies-world.tsv`(12列。`tools/check_company_tsv.py` で確かめる)。
+  引継ぎの決めごとは `docs/引継ぎ-株式フリック旅行.md`
+- **旅は `jcomp`(日本の会社。日本地図)/ `wcomp`(世界の会社。世界地図)**。📍は **本社**。打つのは 会社の名前のよみ
+- **カード**: 絵文字 + 解説(自分の言葉。四季報・Wikipedia の文は 写さない)+ **💴 時価総額**(日付つき)+ **🏢 公式サイトを見る** + 📖 Wikipedia
+  - ⚠️ **写真は 使わない**(わざと)。会社の Wikipedia の代表画像は **ロゴ**のことが多く、ロゴは 商標なので 使わない決まり
+  - **会社へのリンクは 公式サイト**(けいくん 2026-09-26「四季報が出来なければ その会社のリンクに」→「おすすめ」)。四季報は 日本の上場会社にしか無く、中身は 有料会員むけ。URL は 1つずつ ひらいて 確かめてから 入れる
+- **時価総額は 作った日の数字**(サーバーが無いので 自動で 新しくならない)。`tools/companies-caps.json` = companiesmarketcap.com の その日の数字(ドル)と ドル円(open.er-api.com)。
+  `add_spots.py` が 円にして「約3兆6000億円」の字にする(兆は 1000億、億は 100億で まるめる)。
+  画面の 日付・レートは `index.html` の `CAP_ASOF` / `CAP_RATE`(`add_spots.py` が json と 同じか 確かめる)。世界の会社にだけ「1ドル=◯円で計算」を そえる
+  - ⚠️ **新しくするときは 日付・レート・数字を ぜんぶ 同じ日に そろえる**(`tools/make_companies_caps.py`)
+  - ⚠️ 「買いましょう」「もうかる」は 書かない。時価総額は「会社の大きさの めやす」として 出すだけ
+- 絵(トップの絵・題名・アイコン)は まだ無い(`logo:false` `hero:false`)。けいくんの絵が届いたら `kabu/` に置いて `build_games.py` の GAMES に `art` を足す。**会社のロゴが 絵に入っていたら 入れない**
+- かずとも(speed-king)の `FLICK_MODES` に `jcomp` `wcomp`、`FLICK_LINK_TARGETS` に `kabu` を足した(SQL は 要らない。014 で ゆるめてある)

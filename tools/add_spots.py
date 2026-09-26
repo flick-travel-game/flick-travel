@@ -24,6 +24,19 @@ def read_tsv(path, names=False, people=False, kind=None):
         if not line.strip() or line.startswith("#"):
             continue
         f = line.split("\t")
+        if kind == "company":
+            # 12列: key 会社名 本社 よみ 絵文字 解説 緯度 経度 公式サイト ティッカー Wikipedia題名 はじめのレベル(株式フリック旅行 2026-09-26)
+            assert len(f) == 12, (path.name, line[:40])
+            key, name, place, yomi, emoji, desc, lat, lon, url, ticker, wiki, first = f
+            assert re.fullmatch(r"[a-z0-9]+", key), key
+            for t in (name, place, desc, wiki, url):
+                assert '"' not in t and "\\" not in t, (key, t)
+            assert re.fullmatch(r"[ぁ-ゖー]+", yomi), (key, yomi)
+            assert url.startswith("https://"), (key, url)
+            usd = CAPS["caps"][ticker]["usd"]
+            yen = usd * CAPS["rate"]  # 日本の会社も 表は ドルなので 同じ レートで 円にもどす
+            rows.append(dict(key=key, n=name, c=place, r=yomi, q="", d=desc, lat=float(lat), lon=float(lon), e=emoji, kind=kind, first=first, u=url, w=wiki, mc=yen_text(yen)))
+            continue
         if kind in ("space", "body"):
             # 11列: key 名前 分類 よみ 絵文字 解説 図(solar/sky/front/head/cell) x y Wikipedia題名 はじめのレベル
             assert len(f) == 11, (path.name, line[:40])
@@ -48,6 +61,22 @@ def read_tsv(path, names=False, people=False, kind=None):
         assert re.fullmatch(r"[ぁ-ゖー]+", yomi), (key, yomi)
         rows.append(dict(key=key, n=name, c=place, r=yomi, q=query, d=desc, lat=float(lat), lon=float(lon), e=query if (names or kind) else "", **extra))
     return rows
+
+
+# 会社の 時価総額(株式フリック旅行)。tools/companies-caps.json = その日の companiesmarketcap.com の 数字(ドル)と ドル円。
+# ⚠️ 自動で新しくしない(日付を付けて出す決まり。けいくん 2026-09-26)。直すときは json の 日付・レート・数字を ぜんぶ 同じ日にそろえる
+import json as _json
+_cp = ROOT / "tools/companies-caps.json"
+CAPS = _json.loads(_cp.read_text(encoding="utf-8")) if _cp.exists() else {"caps": {}, "rate": 0}
+
+
+def yen_text(yen):
+    """約35兆5000億円 / 約8700億円(子どもが読む数字。兆は 1000億まで、億は 100億までに まるめる)"""
+    oku = yen / 1e8
+    if oku >= 10000:
+        cho, rest = divmod(round(oku / 1000) * 1000, 10000)
+        return f"約{int(cho)}兆" + (f"{int(rest)}億円" if rest else "円")
+    return f"約{int(round(oku / 100) * 100)}億円"
 
 
 FLAG = re.compile(r"^[\U0001F1E6-\U0001F1FF]{2}$")
@@ -76,7 +105,7 @@ def main():
     rows = (read_tsv(ROOT / "tools/spots-japan.tsv") + read_tsv(ROOT / "tools/spots-world.tsv")
             + read_tsv(ROOT / "tools/names-japan.tsv", names=True) + read_tsv(ROOT / "tools/names-world.tsv", names=True)
             + read_tsv(ROOT / "tools/people-japan.tsv", people=True) + read_tsv(ROOT / "tools/people-world.tsv", people=True)
-            + [r for f, k in (("capitals", "capital"), ("events-world", "event"), ("events-japan", "event"), ("space", "space"), ("body", "body")) if (ROOT / f"tools/{f}.tsv").exists()
+            + [r for f, k in (("capitals", "capital"), ("events-world", "event"), ("events-japan", "event"), ("space", "space"), ("body", "body"), ("companies-japan", "company"), ("companies-world", "company")) if (ROOT / f"tools/{f}.tsv").exists()
                for r in read_tsv(ROOT / f"tools/{f}.tsv", kind=k)])
     keys = [r["key"] for r in rows]
     assert len(keys) == len(set(keys)), "キーがかぶっている"
@@ -92,6 +121,8 @@ def main():
             y = YEARS.get(r["key"]) or [None, None]
             yy = f'y0:{y[0]}, y1:{"null" if y[1] is None else y[1]}, ' if y[0] is not None else ""
             return f'k:"person", s:"{r["s"]}", sd:"{r["sd"]}", b:"{r["b"]}", ' + yy
+        if r.get("kind") == "company":  # 会社: 絵文字のカード + 公式サイト + Wikipedia + 時価総額(文字)
+            return f'k:"company", e:"{r["e"]}", u:"{r["u"]}", w:"{r["w"]}", mc:"{r["mc"]}", '
         if r.get("kind") in ("space", "body"):  # 宇宙・からだ: 絵文字のカード + 図の中の位置 + Wikipedia の題名
             return f'k:"{r["kind"]}", e:"{r["e"]}", mp:"{r["mp"]}", x:{r["x"]}, y:{r["y"]}, w:"{r["w"]}", '
         if r.get("kind"):  # 首都・出来事: 絵文字のカード + 地図の目印
@@ -112,12 +143,15 @@ def main():
         # LATLON を作っている行の すぐあとに置く(LEVELS を作る前)
         page, n = re.subn(r"(LATLON\[k\] = \[\+la, \+lo\]; \}\);\n)", lambda m: m.group(1) + block + "\n", page)
         assert n == 1
+    if any(r.get("kind") == "company" for r in rows):  # 画面の 日付・レートが json と 同じか
+        assert f'CAP_ASOF = "{CAPS["asof"]}", CAP_RATE = "{CAPS["rate_text"]}"' in page, "index.html の CAP_ASOF / CAP_RATE を json と そろえる"
     (ROOT / "index.html").write_text(page, encoding="utf-8")
     print(f"{len(rows)}か所を書いた(名所: 日本 {sum(r['c'].startswith('日本') and not r['e'] for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and not r['e'] for r in rows)}、"
           f"地名: 日本 {sum(r['c'].startswith('日本') and bool(r['e']) and not r.get('kind') for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and bool(r['e']) and not r.get('kind') for r in rows)}、"
           f"偉人: 日本 {sum(r['c'].startswith('日本') and 's' in r for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and 's' in r for r in rows)}、"
           f"首都 {sum(r.get('kind') == 'capital' for r in rows)}、出来事: 日本 {sum(r['c'].startswith('日本') and r.get('kind') == 'event' for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and r.get('kind') == 'event' for r in rows)}、"
-          f"宇宙 {sum(r.get('kind') == 'space' for r in rows)}、からだ {sum(r.get('kind') == 'body' for r in rows)})")
+          f"宇宙 {sum(r.get('kind') == 'space' for r in rows)}、からだ {sum(r.get('kind') == 'body' for r in rows)}、"
+          f"会社: 日本 {sum(r['c'].startswith('日本') and r.get('kind') == 'company' for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and r.get('kind') == 'company' for r in rows)})")
 
 
 if __name__ == "__main__":

@@ -339,6 +339,6 @@ body.kb-lock{overflow:hidden}
   const st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
   const hb = document.getElementById("home-btn"); if(hb) hb.textContent = "コースに もどる";
 
-  return { modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
+  return { kind:"company", modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
            card, info, home, lvInfo, cardModes, byArt:id => BY.get(id), noRank:(m, lv) => m === "kfuku" || lv >= 60, openZukan };
 })();

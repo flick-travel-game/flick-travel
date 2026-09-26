@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -28,10 +28,17 @@ GAMES = {
                  lead="世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。",
                  how="表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。初級からは 新しい会社7問に、にがてな会社の ふくしゅう3問が まざるよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。"),
+    # AIフリック旅行(けいくん 2026-09-26)。ことばは data/aiTerms.json の 1か所 → ai/terms.js。コースの しくみは ai/ai.js(AITABI)。
+    #   絵は まだ 無いので 題名は 文字(けいくんの 絵が 届いたら ai/ に 置いて hero/logo を true に、art を 足す)
+    "ai": dict(name="AIフリック旅行", modes="AITABI", kinds=set(), color="#6d3fd6", hero=False, logo=False,
+               lead="遊んでいるうちに、AIとWebのことばがわかる。フリックで打つと、ことばの意味・つながる ことば・しくみの図の どこにあるかが 出るよ。知っている ことばから はじめて、点だった知識を 線につなげよう。",
+               how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。入門は 聞いたことのある ことば、初級からは 新しい ことば7問に ふくしゅう3問が まざるよ。英字の ことば(API など)は 日本での ふつうの 読みかたで 打つよ。",
+               rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、AI・Web・サービスづくりの しくみが つながって 見えてくるよ。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -62,8 +69,11 @@ def build(gid, g):
     if g["modes"] == "KABU":  # 会社の コース: 旅の 名前は kabu/kabu.js が 決める(KABU.modes)。会社データは companies.js
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="companies.js"></script>\n<script src="kabu.js"></script>')
         import subprocess, sys as _s; subprocess.run([_s.executable, str(ROOT / "tools/kabu/companies_js.py")], check=True)
+    if g["modes"] == "AITABI":  # AIの コース: ことばは terms.js(data/aiTerms.json から)、しくみは ai.js
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js"></script>\n<script src="ai.js"></script>')
+        import subprocess, sys as _s; subprocess.run([_s.executable, str(ROOT / "tools/ai/terms_js.py")], check=True)
     # GAME
-    out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{KABU_MODES if g["modes"] == "KABU" else json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
+    out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{PLUG_MODES[g["modes"]] if isinstance(g["modes"], str) else json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
     assert n == 1
     # 問題: もとの100か所を 空に、追加ぶんは この ゲームの kind だけ
     out, n = re.subn(r"const SPOTS = \[\n.*?\n\];", "const SPOTS = [\n];", out, count=1, flags=re.S); assert n == 1

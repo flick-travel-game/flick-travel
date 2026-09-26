@@ -1,0 +1,962 @@
+[
+ {
+  "id": "bk-frontfork",
+  "name": "フロントフォーク",
+  "reading": "ふろんとふぉーく",
+  "journey": "bike",
+  "category": "フロントまわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔱",
+  "mapNode": "bike:fork",
+  "relatedTerms": [
+   "bk-topbridge",
+   "bk-forkoil"
+  ],
+  "description": "前の タイヤを 左右から はさんで ささえる 2本の 筒。中の バネと 油で、道の でこぼこの ゆれを やわらげます。"
+ },
+ {
+  "id": "bk-chain",
+  "name": "ドライブチェーン",
+  "reading": "どらいぶちぇーん",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛓️",
+  "mapNode": "bike:chain",
+  "relatedTerms": [
+   "bk-sprocket",
+   "bk-chainslack"
+  ],
+  "description": "エンジンの ちからを うしろの タイヤへ つたえる 金属の くさり。小さな 部品が たくさん つながって できています。"
+ },
+ {
+  "id": "bk-sprocket",
+  "name": "スプロケット",
+  "reading": "すぷろけっと",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "bike:chain",
+  "relatedTerms": [
+   "bk-chain",
+   "bk-secondaryreduction"
+  ],
+  "description": "チェーンが かみあう 歯の ついた 円い 板。エンジン側と うしろの タイヤ側に 1枚ずつ あり、歯の 数で 速さと ちからの 割合が きまります。"
+ },
+ {
+  "id": "bk-swingarm",
+  "name": "スイングアーム",
+  "reading": "すいんぐあーむ",
+  "journey": "bike",
+  "category": "リヤまわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦾",
+  "mapNode": "bike:rsus",
+  "relatedTerms": [
+   "bk-rearsus",
+   "bk-pivot"
+  ],
+  "description": "うしろの タイヤを ささえる 長い うで。前の はしを 軸に 上下に ゆれ動き、でこぼこを 走っても タイヤが 地面から はなれにくく します。"
+ },
+ {
+  "id": "bk-clutchlever",
+  "name": "クラッチレバー",
+  "reading": "くらっちればー",
+  "journey": "bike",
+  "category": "操作",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✊",
+  "mapNode": "bike:clutch",
+  "relatedTerms": [
+   "bk-shiftpedal",
+   "bk-wetclutch"
+  ],
+  "description": "ハンドルの 左に ある レバー。にぎると エンジンの ちからが タイヤへ つたわらなく なり、発進や ギヤを 変える ときに 使います。"
+ },
+ {
+  "id": "bk-shiftpedal",
+  "name": "シフトペダル",
+  "reading": "しふとぺだる",
+  "journey": "bike",
+  "category": "操作",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "bike:clutch",
+  "relatedTerms": [
+   "bk-clutchlever",
+   "bk-returnshift"
+  ],
+  "description": "左足の 前に ある ペダル。つま先で 上げたり 下げたり して、ギヤを 変えます。チェンジペダル とも よばれます。"
+ },
+ {
+  "id": "bk-throttlegrip",
+  "name": "スロットルグリップ",
+  "reading": "すろっとるぐりっぷ",
+  "journey": "bike",
+  "category": "操作",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "bike:handle",
+  "relatedTerms": [
+   "bk-handlebar",
+   "bk-carburetor"
+  ],
+  "description": "ハンドルの 右の にぎる ところ。手前に ひねると エンジンに 入る 空気と 燃料が ふえて、スピードが 上がります。アクセルの 役目です。"
+ },
+ {
+  "id": "bk-kickstarter",
+  "name": "キックスターター",
+  "reading": "きっくすたーたー",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-decomp",
+   "bk-singlecyl"
+  ],
+  "description": "足で ペダルを いきおいよく ふみおろして、エンジンを かける しくみ。電気の スターターが ない バイクや、予備として ついています。"
+ },
+ {
+  "id": "bk-centerstand",
+  "name": "センタースタンド",
+  "reading": "せんたーすたんど",
+  "journey": "bike",
+  "category": "車体",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "bike:frame",
+  "relatedTerms": [
+   "bk-sidestand",
+   "bk-step"
+  ],
+  "description": "車体の まん中の 下に ある スタンド。立てると 車体が まっすぐ 立ち、うしろの タイヤが 地面から 少し うきます。"
+ },
+ {
+  "id": "bk-sidestand",
+  "name": "サイドスタンド",
+  "reading": "さいどすたんど",
+  "journey": "bike",
+  "category": "車体",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "bike:frame",
+  "relatedTerms": [
+   "bk-centerstand",
+   "bk-sidestandswitch"
+  ],
+  "description": "車体の 左側に ある 1本足の スタンド。バイクを 少し かたむけて 止めて おく ときに 使います。"
+ },
+ {
+  "id": "bk-cowl",
+  "name": "カウル",
+  "reading": "かうる",
+  "journey": "bike",
+  "category": "車体",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "bike:frame",
+  "relatedTerms": [
+   "bk-frontfork",
+   "bk-step"
+  ],
+  "description": "車体を おおう 外がわの カバー。走る ときの 風を 受け流し、乗る人を 風から 守る はたらきも あります。"
+ },
+ {
+  "id": "bk-step",
+  "name": "ステップ",
+  "reading": "すてっぷ",
+  "journey": "bike",
+  "category": "車体",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👣",
+  "mapNode": "bike:frame",
+  "relatedTerms": [
+   "bk-shiftpedal",
+   "bk-rearbrakepedal"
+  ],
+  "description": "乗る人が 足を のせる 台。運転する 人の ほかに、うしろに 乗る 人の ための ステップが ついた バイクも あります。"
+ },
+ {
+  "id": "bk-handlebar",
+  "name": "ハンドルバー",
+  "reading": "はんどるばー",
+  "journey": "bike",
+  "category": "操作",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "bike:handle",
+  "relatedTerms": [
+   "bk-throttlegrip",
+   "bk-topbridge"
+  ],
+  "description": "両手で にぎって 前の タイヤの 向きを 変える 棒。レバーや スイッチも ここに ならんで います。"
+ },
+ {
+  "id": "bk-brakelever",
+  "name": "ブレーキレバー",
+  "reading": "ぶれーきればー",
+  "journey": "bike",
+  "category": "操作",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "bike:handle",
+  "relatedTerms": [
+   "bk-rearbrakepedal",
+   "bk-cbs"
+  ],
+  "description": "ハンドルの 右に ある レバー。右手で にぎると おもに 前の タイヤに ブレーキが かかります。"
+ },
+ {
+  "id": "bk-rearbrakepedal",
+  "name": "リヤブレーキペダル",
+  "reading": "りやぶれーきぺだる",
+  "journey": "bike",
+  "category": "操作",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "bike:fbrake",
+  "relatedTerms": [
+   "bk-brakelever",
+   "bk-cbs"
+  ],
+  "description": "右足の 前に ある ペダル。ふむと うしろの タイヤに ブレーキが かかります。スクーターでは 左手の レバーが この 役目を します。"
+ },
+ {
+  "id": "bk-aircooled",
+  "name": "空冷",
+  "reading": "くうれい",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-singlecyl",
+   "bk-twostroke"
+  ],
+  "description": "走る ときに 当たる 風で エンジンを 冷やす やりかた。シリンダーの まわりに ひだの ような フィンが たくさん ついて います。"
+ },
+ {
+  "id": "bk-twostroke",
+  "name": "2ストローク",
+  "reading": "つーすとろーく",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-chamber",
+   "bk-twostrokeoil"
+  ],
+  "description": "ピストンが 1往復する あいだに 1回 燃える エンジン。部品が 少なく 軽くて 力強い いっぽう、オイルも いっしょに 燃やすため 白い けむりが 出やすいです。"
+ },
+ {
+  "id": "bk-scooter",
+  "name": "スクーター",
+  "reading": "すくーたー",
+  "journey": "bike",
+  "category": "車体",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "bike:frame",
+  "relatedTerms": [
+   "bk-vbelt",
+   "bk-centrifugal"
+  ],
+  "description": "足を そろえて 乗れる 床の ある バイク。ギヤを 変える 操作が いらず、スロットルを ひねるだけで 走れます。"
+ },
+ {
+  "id": "bk-rearsus",
+  "name": "リヤサスペンション",
+  "reading": "りやさすぺんしょん",
+  "journey": "bike",
+  "category": "リヤまわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "bike:rsus",
+  "relatedTerms": [
+   "bk-swingarm",
+   "bk-linksus"
+  ],
+  "description": "スイングアームと 車体の あいだに ある バネと ダンパー。うしろの タイヤが 受けた ゆれを やわらげます。"
+ },
+ {
+  "id": "bk-spokewheel",
+  "name": "スポークホイール",
+  "reading": "すぽーくほいーる",
+  "journey": "bike",
+  "category": "リヤまわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☸️",
+  "mapNode": "bike:tire",
+  "relatedTerms": [
+   "bk-hubdamper",
+   "bk-swingarm"
+  ],
+  "description": "まん中の ハブと 外がわの リムを 細い 針金の ような スポークで つないだ 車輪。しなやかで、でこぼこ道を 走る バイクに よく 使われます。"
+ },
+ {
+  "id": "bk-carburetor",
+  "name": "キャブレター",
+  "reading": "きゃぶれたー",
+  "journey": "bike",
+  "category": "燃料・吸気",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "bike:fuel",
+  "relatedTerms": [
+   "bk-mainjet",
+   "bk-float"
+  ],
+  "description": "吸いこむ 空気の 流れを 使って ガソリンを 霧に し、空気と まぜて エンジンへ 送る 部品。いまの バイクは 燃料噴射が 多く なりました。"
+ },
+ {
+  "id": "bk-singlecyl",
+  "name": "単気筒",
+  "reading": "たんきとう",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-parallel",
+   "bk-vtwin"
+  ],
+  "description": "シリンダーが 1つだけの エンジン。軽くて つくりが かんたんで、ドコドコと した 鼓動を 感じやすいのが 特ちょうです。"
+ },
+ {
+  "id": "bk-parallel",
+  "name": "並列2気筒",
+  "reading": "へいれつにきとう",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "2️⃣",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-singlecyl",
+   "bk-vtwin"
+  ],
+  "description": "2つの シリンダーを 横に ならべた エンジン。はばが せまく まとまり、いろいろな 大きさの バイクに 使われます。"
+ },
+ {
+  "id": "bk-vtwin",
+  "name": "V型2気筒",
+  "reading": "ぶいがたにきとう",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-parallel",
+   "bk-singlecyl"
+  ],
+  "description": "2つの シリンダーを アルファベットの V の 形に ならべた エンジン。はばを せまく でき、独特の 音と 鼓動が あります。"
+ },
+ {
+  "id": "bk-topbridge",
+  "name": "トップブリッジ",
+  "reading": "とっぷぶりっじ",
+  "journey": "bike",
+  "category": "フロントまわり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌉",
+  "mapNode": "bike:fork",
+  "relatedTerms": [
+   "bk-underbracket",
+   "bk-steeringstem"
+  ],
+  "description": "2本の フロントフォークの 上を つなぐ 板。ハンドルが ここに 取りつけられる ことが 多く、前まわりの しっかりさを 生みます。"
+ },
+ {
+  "id": "bk-underbracket",
+  "name": "アンダーブラケット",
+  "reading": "あんだーぶらけっと",
+  "journey": "bike",
+  "category": "フロントまわり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "bike:fork",
+  "relatedTerms": [
+   "bk-topbridge",
+   "bk-steeringstem"
+  ],
+  "description": "2本の フロントフォークを 下がわで つなぐ 部品。トップブリッジと 上下 2か所で フォークを はさんで ささえます。"
+ },
+ {
+  "id": "bk-invertedfork",
+  "name": "倒立フォーク",
+  "reading": "とうりつふぉーく",
+  "journey": "bike",
+  "category": "フロントまわり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙃",
+  "mapNode": "bike:fork",
+  "relatedTerms": [
+   "bk-frontfork",
+   "bk-forkoil"
+  ],
+  "description": "太い 筒が 上、細い 筒が 下に なる フロントフォーク。ねじれに 強く、スポーツ用や オフロード用の バイクに 多い 形です。"
+ },
+ {
+  "id": "bk-forkoil",
+  "name": "フォークオイル",
+  "reading": "ふぉーくおいる",
+  "journey": "bike",
+  "category": "フロントまわり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛢️",
+  "mapNode": "bike:fork",
+  "relatedTerms": [
+   "bk-frontfork",
+   "bk-invertedfork"
+  ],
+  "description": "フロントフォークの 中に 入って いる 油。バネが のびちぢみ する 速さを おさえ、ふわふわ ゆれ続けないように します。"
+ },
+ {
+  "id": "bk-chainslack",
+  "name": "チェーンのたるみ",
+  "reading": "ちぇーんのたるみ",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "bike:chain",
+  "relatedTerms": [
+   "bk-chain",
+   "bk-chainadjuster"
+  ],
+  "description": "チェーンに わざと 残して ある ゆとり。はりすぎても ゆるすぎても 部品が いたむので、点検では この たるみの 量を 見ます。"
+ },
+ {
+  "id": "bk-chainadjuster",
+  "name": "チェーンアジャスター",
+  "reading": "ちぇーんあじゃすたー",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "bike:chain",
+  "relatedTerms": [
+   "bk-chainslack",
+   "bk-swingarm"
+  ],
+  "description": "うしろの タイヤの 軸の 位置を 前後に ずらせる 部品。チェーンの たるみを ちょうど よく する ために あります。"
+ },
+ {
+  "id": "bk-chamber",
+  "name": "チャンバー",
+  "reading": "ちゃんばー",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎺",
+  "mapNode": "bike:exhaust",
+  "relatedTerms": [
+   "bk-twostroke",
+   "bk-reedvalve"
+  ],
+  "description": "2ストロークの バイクの ふくらんだ 形の 排気管。はね返る 排気の 圧力の 波を 利用して、エンジンの ちからを 引き出します。"
+ },
+ {
+  "id": "bk-twostrokeoil",
+  "name": "2ストオイル",
+  "reading": "つーすとおいる",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫗",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-twostroke",
+   "bk-bunrikyuyu"
+  ],
+  "description": "2ストロークの エンジンで ガソリンと いっしょに 燃やしながら 中を なめらかに する 専用の オイル。なくなると エンジンが こわれる ので 大事です。"
+ },
+ {
+  "id": "bk-choke",
+  "name": "チョーク",
+  "reading": "ちょーく",
+  "journey": "bike",
+  "category": "燃料・吸気",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "bike:fuel",
+  "relatedTerms": [
+   "bk-carburetor",
+   "bk-float"
+  ],
+  "description": "エンジンが 冷えて いる ときに、燃料を こいめに して かかりやすく する しくみ。キャブレターの バイクに ついて います。"
+ },
+ {
+  "id": "bk-fuelcock",
+  "name": "燃料コック",
+  "reading": "ねんりょうこっく",
+  "journey": "bike",
+  "category": "燃料・吸気",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚰",
+  "mapNode": "bike:fuel",
+  "relatedTerms": [
+   "bk-carburetor",
+   "bk-choke"
+  ],
+  "description": "タンクから 流れる ガソリンを 止めたり 流したり する 切りかえ口。予備の ガソリンを 使う リザーブの 位置が ある ものも あります。"
+ },
+ {
+  "id": "bk-neutrallamp",
+  "name": "ニュートラルランプ",
+  "reading": "にゅーとらるらんぷ",
+  "journey": "bike",
+  "category": "電装・安全",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "bike:elec",
+  "relatedTerms": [
+   "bk-returnshift",
+   "bk-killswitch"
+  ],
+  "description": "ギヤが どこにも 入って いない ニュートラルの ときに 光る ランプ。緑色の ことが 多いです。"
+ },
+ {
+  "id": "bk-killswitch",
+  "name": "キルスイッチ",
+  "reading": "きるすいっち",
+  "journey": "bike",
+  "category": "電装・安全",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "bike:handle",
+  "relatedTerms": [
+   "bk-neutrallamp",
+   "bk-sidestandswitch"
+  ],
+  "description": "ハンドルの 右に ある エンジンを 止める スイッチ。いざと いう とき 手を はなさずに すぐ エンジンを 止められます。"
+ },
+ {
+  "id": "bk-wetclutch",
+  "name": "湿式多板クラッチ",
+  "reading": "しっしきたばんくらっち",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "bike:clutch",
+  "relatedTerms": [
+   "bk-clutchlever",
+   "bk-primaryreduction"
+  ],
+  "description": "オイルに ひたった 何枚もの 板を かさねて ちからを つたえる クラッチ。多くの バイクが この 形で、つなぎかたが なめらかです。"
+ },
+ {
+  "id": "bk-returnshift",
+  "name": "リターン式",
+  "reading": "りたーんしき",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "bike:clutch",
+  "relatedTerms": [
+   "bk-shiftpedal",
+   "bk-neutrallamp"
+  ],
+  "description": "ペダルを 動かすと 1段ずつ ギヤが 変わり、足を はなすと ペダルが もとの 位置に もどる しくみ。多くの バイクは 1速の 上に ニュートラルが あります。"
+ },
+ {
+  "id": "bk-centrifugal",
+  "name": "遠心クラッチ",
+  "reading": "えんしんくらっち",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌪️",
+  "mapNode": "bike:clutch",
+  "relatedTerms": [
+   "bk-scooter",
+   "bk-vbelt"
+  ],
+  "description": "エンジンの 回転が 上がると 外へ 広がる おもりの ちからで 自動で つながる クラッチ。スクーターなどで クラッチ操作を いらなく します。"
+ },
+ {
+  "id": "bk-shaftdrive",
+  "name": "シャフトドライブ",
+  "reading": "しゃふとどらいぶ",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦯",
+  "mapNode": "bike:chain",
+  "relatedTerms": [
+   "bk-chain",
+   "bk-secondaryreduction"
+  ],
+  "description": "チェーンの かわりに 回る 棒で うしろの タイヤへ ちからを つたえる しくみ。よごれにくく、手入れの 手間が 少ないのが よい ところです。"
+ },
+ {
+  "id": "bk-steeringstem",
+  "name": "ステアリングステム",
+  "reading": "すてありんぐすてむ",
+  "journey": "bike",
+  "category": "フロントまわり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "bike:fork",
+  "relatedTerms": [
+   "bk-topbridge",
+   "bk-underbracket"
+  ],
+  "description": "トップブリッジと アンダーブラケットを つなぐ 軸。フレームの 前の 筒の 中で 軸受けに ささえられ、ハンドルを なめらかに 回せます。"
+ },
+ {
+  "id": "bk-trail",
+  "name": "トレール",
+  "reading": "とれーる",
+  "journey": "bike",
+  "category": "フロントまわり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "bike:fork",
+  "relatedTerms": [
+   "bk-steeringstem",
+   "bk-steeringdamper"
+  ],
+  "description": "ハンドルの 回る 軸を 地面まで のばした 点と、タイヤが 地面に つく 点との 前後の きょり。まっすぐ 走る 安定に かかわります。"
+ },
+ {
+  "id": "bk-steeringdamper",
+  "name": "ステアリングダンパー",
+  "reading": "すてありんぐだんぱー",
+  "journey": "bike",
+  "category": "フロントまわり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫷",
+  "mapNode": "bike:fork",
+  "relatedTerms": [
+   "bk-trail",
+   "bk-topbridge"
+  ],
+  "description": "ハンドルが 急に 左右に ぶれるのを おさえる 部品。速い スピードや でこぼこで ハンドルが ゆすられる のを しずめます。"
+ },
+ {
+  "id": "bk-linksus",
+  "name": "リンク式サスペンション",
+  "reading": "りんくしきさすぺんしょん",
+  "journey": "bike",
+  "category": "リヤまわり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "bike:rsus",
+  "relatedTerms": [
+   "bk-rearsus",
+   "bk-swingarm"
+  ],
+  "description": "スイングアームと リヤサスペンションの あいだに てこの ような 部品を はさむ しくみ。しずむ ほど かたく なる ように できます。"
+ },
+ {
+  "id": "bk-pivot",
+  "name": "ピボット",
+  "reading": "ぴぼっと",
+  "journey": "bike",
+  "category": "リヤまわり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "bike:rsus",
+  "relatedTerms": [
+   "bk-swingarm",
+   "bk-linksus"
+  ],
+  "description": "スイングアームが フレームに 取りつく 回転の 軸の ところ。ここが ガタつくと 走りが ふらつく ので 大事な 場所です。"
+ },
+ {
+  "id": "bk-hubdamper",
+  "name": "ハブダンパー",
+  "reading": "はぶだんぱー",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧽",
+  "mapNode": "bike:chain",
+  "relatedTerms": [
+   "bk-sprocket",
+   "bk-spokewheel"
+  ],
+  "description": "うしろの スプロケットと 車輪の あいだに 入った ゴム。チェーンから くる 急な ショックを 吸いとり、なめらかに ちからを つたえます。"
+ },
+ {
+  "id": "bk-sealchain",
+  "name": "シールチェーン",
+  "reading": "しーるちぇーん",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "bike:chain",
+  "relatedTerms": [
+   "bk-chain",
+   "bk-chainslack"
+  ],
+  "description": "チェーンの つなぎ目に ゴムの 輪を 入れて、中の グリスを 閉じこめた チェーン。よごれが 入りにくく、長もち します。"
+ },
+ {
+  "id": "bk-primaryreduction",
+  "name": "一次減速",
+  "reading": "いちじげんそく",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔽",
+  "mapNode": "bike:clutch",
+  "relatedTerms": [
+   "bk-wetclutch",
+   "bk-secondaryreduction"
+  ],
+  "description": "クランクの 回転を 歯車で ゆっくりに して クラッチへ つたえる ところ。エンジンの 速い 回転を 使いやすく 落とす 最初の 段です。"
+ },
+ {
+  "id": "bk-secondaryreduction",
+  "name": "二次減速",
+  "reading": "にじげんそく",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏬",
+  "mapNode": "bike:chain",
+  "relatedTerms": [
+   "bk-sprocket",
+   "bk-primaryreduction"
+  ],
+  "description": "変速機から うしろの タイヤまでの あいだで 回転を ゆっくりに する ところ。チェーンなら 前後の スプロケットの 歯の 数で きまります。"
+ },
+ {
+  "id": "bk-reedvalve",
+  "name": "リードバルブ",
+  "reading": "りーどばるぶ",
+  "journey": "bike",
+  "category": "燃料・吸気",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍃",
+  "mapNode": "bike:fuel",
+  "relatedTerms": [
+   "bk-twostroke",
+   "bk-scavengingport"
+  ],
+  "description": "2ストロークの エンジンの 吸いこみ口に ある うすい 板の 弁。空気と 燃料を 入れる 向きにだけ ひらき、ふき返しを ふせぎます。"
+ },
+ {
+  "id": "bk-scavengingport",
+  "name": "掃気ポート",
+  "reading": "そうきぽーと",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-twostroke",
+   "bk-reedvalve"
+  ],
+  "description": "2ストロークの シリンダーの かべに ある あな。クランクの 部屋から 新しい 燃料の まざった 空気を 送りこみ、燃えた ガスを おし出します。"
+ },
+ {
+  "id": "bk-bunrikyuyu",
+  "name": "分離給油",
+  "reading": "ぶんりきゅうゆ",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-twostrokeoil",
+   "bk-twostroke"
+  ],
+  "description": "2ストロークで、オイルを 別の タンクに 入れ、ポンプで 少しずつ エンジンへ 送る やりかた。前もって ガソリンに まぜて おく 手間が いりません。"
+ },
+ {
+  "id": "bk-mainjet",
+  "name": "メインジェット",
+  "reading": "めいんじぇっと",
+  "journey": "bike",
+  "category": "燃料・吸気",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "bike:fuel",
+  "relatedTerms": [
+   "bk-carburetor",
+   "bk-float"
+  ],
+  "description": "キャブレターの 中の 小さな あなの あいた 部品。おもに スロットルを 大きく ひらいた ときに 出る ガソリンの 量を きめます。"
+ },
+ {
+  "id": "bk-float",
+  "name": "フロート",
+  "reading": "ふろーと",
+  "journey": "bike",
+  "category": "燃料・吸気",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛟",
+  "mapNode": "bike:fuel",
+  "relatedTerms": [
+   "bk-carburetor",
+   "bk-mainjet"
+  ],
+  "description": "キャブレターの 下の 部屋で ガソリンに うかぶ 部品。うき ぐあいで 弁を 開け閉めし、ガソリンの 高さを いつも 同じに たもちます。"
+ },
+ {
+  "id": "bk-decomp",
+  "name": "デコンプ",
+  "reading": "でこんぷ",
+  "journey": "bike",
+  "category": "エンジン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔓",
+  "mapNode": "bike:engine",
+  "relatedTerms": [
+   "bk-kickstarter",
+   "bk-singlecyl"
+  ],
+  "description": "エンジンを かける とき、シリンダーの 中の 圧力を 少し ぬいて ピストンを 動かしやすく する しくみ。大きな 単気筒の キックを 軽く します。"
+ },
+ {
+  "id": "bk-cdi",
+  "name": "CDI",
+  "reading": "しーでぃーあい",
+  "journey": "bike",
+  "category": "電装・安全",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "bike:elec",
+  "relatedTerms": [
+   "bk-killswitch",
+   "bk-neutrallamp"
+  ],
+  "description": "コンデンサーに ためた 電気を 一気に 流して 火花を とばす 点火の しくみ。多くの バイクで 使われて きました。"
+ },
+ {
+  "id": "bk-sidestandswitch",
+  "name": "サイドスタンドスイッチ",
+  "reading": "さいどすたんどすいっち",
+  "journey": "bike",
+  "category": "電装・安全",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "bike:elec",
+  "relatedTerms": [
+   "bk-sidestand",
+   "bk-killswitch"
+  ],
+  "description": "サイドスタンドが 出て いるかを 見はる スイッチ。スタンドを 出した まま ギヤを 入れると エンジンが 止まり、そのまま 走り出す 事故を ふせぎます。"
+ },
+ {
+  "id": "bk-cbs",
+  "name": "前後連動ブレーキ",
+  "reading": "ぜんごれんどうぶれーき",
+  "journey": "bike",
+  "category": "電装・安全",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "bike:fbrake",
+  "relatedTerms": [
+   "bk-brakelever",
+   "bk-rearbrakepedal"
+  ],
+  "description": "1つの レバーや ペダルの 操作で、前と うしろの 両方に ブレーキが かかる しくみ。止まる ときの 車体の 安定を たすけます。"
+ },
+ {
+  "id": "bk-vbelt",
+  "name": "Vベルト",
+  "reading": "ぶいべると",
+  "journey": "bike",
+  "category": "駆動・変速",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎗️",
+  "mapNode": "bike:clutch",
+  "relatedTerms": [
+   "bk-scooter",
+   "bk-centrifugal"
+  ],
+  "description": "スクーターの 変速に 使う 太い ベルト。はばの 変わる 円い 車の 上で かかる 位置が 動き、速さに あわせて 自動で ギヤの 割合を 変えます。"
+ },
+ {
+  "id": "bk-doublecradle",
+  "name": "ダブルクレードルフレーム",
+  "reading": "だぶるくれーどるふれーむ",
+  "journey": "bike",
+  "category": "車体",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "bike:frame",
+  "relatedTerms": [
+   "bk-cowl",
+   "bk-pivot"
+  ],
+  "description": "前から 下へ おりる 2本の パイプで、エンジンを 下から ゆりかごの ように かかえる フレーム。むかしから ある じょうぶな 形です。"
+ }
+]

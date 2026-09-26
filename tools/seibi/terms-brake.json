@@ -1,0 +1,976 @@
+[
+ {
+  "id": "br-brake",
+  "name": "ブレーキ",
+  "reading": "ぶれーき",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pedal",
+   "br-disc",
+   "br-drum"
+  ],
+  "description": "クルマを 遅くしたり 止めたり する しくみ。回る タイヤに まさつを かけて、動く ちからを 熱に かえて 止めます。安全に いちばん かかわる 装置です。"
+ },
+ {
+  "id": "br-pedal",
+  "name": "ブレーキペダル",
+  "reading": "ぶれーきぺだる",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-master",
+   "br-booster"
+  ],
+  "description": "運転席の 足もとに ある、ブレーキを かける ための ペダル。ふむ 強さに あわせて ブレーキの ききかたが かわります。"
+ },
+ {
+  "id": "br-disc",
+  "name": "ディスクブレーキ",
+  "reading": "でぃすくぶれーき",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💿",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-rotor",
+   "br-pad",
+   "br-caliper"
+  ],
+  "description": "タイヤと いっしょに 回る 円い 板を、両がわから パッドで はさんで 止める ブレーキ。熱を 外へ 逃がしやすく、多くの クルマの 前輪に 使われています。"
+ },
+ {
+  "id": "br-pad",
+  "name": "ブレーキパッド",
+  "reading": "ぶれーきぱっど",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-rotor",
+   "br-caliper",
+   "br-wearind"
+  ],
+  "description": "ディスクローターに おしつけられて まさつを 生む 部品。使うたびに 少しずつ すりへるので、のこりの 厚さを 点検で 見ます。"
+ },
+ {
+  "id": "br-drum",
+  "name": "ドラムブレーキ",
+  "reading": "どらむぶれーき",
+  "journey": "brake",
+  "category": "ドラムブレーキ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥁",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-shoe",
+   "br-wheelcyl",
+   "br-lining"
+  ],
+  "description": "タイヤと いっしょに 回る おわんの ような ドラムの 内がわに、シューを 広げて おしつけて 止める ブレーキ。後輪に よく 使われます。"
+ },
+ {
+  "id": "br-parking",
+  "name": "パーキングブレーキ",
+  "reading": "ぱーきんぐぶれーき",
+  "journey": "brake",
+  "category": "パーキングブレーキ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pcable",
+   "br-epb"
+  ],
+  "description": "止めた クルマが 動きださないように タイヤを おさえておく ブレーキ。レバーや ペダル、スイッチで かけます。坂道で とくに 大事です。"
+ },
+ {
+  "id": "br-fluid",
+  "name": "ブレーキフルード",
+  "reading": "ぶれーきふるーど",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-master",
+   "br-reservoir",
+   "br-hygro"
+  ],
+  "description": "ペダルを ふむ ちからを 各タイヤの ブレーキまで つたえる 専用の 液体。油圧の しくみを ささえる、ブレーキの 血液の ような ものです。"
+ },
+ {
+  "id": "br-abs",
+  "name": "ABS",
+  "reading": "えーびーえす",
+  "journey": "brake",
+  "category": "電子制御",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🅰️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-wheelspeed",
+   "br-absact",
+   "br-slip"
+  ],
+  "description": "急ブレーキで タイヤが ロックして すべるのを ふせぐ 装置。ブレーキを 細かく ゆるめたり かけたり して、ハンドルで よけられる 力を 残します。"
+ },
+ {
+  "id": "br-rotor",
+  "name": "ディスクローター",
+  "reading": "でぃすくろーたー",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-disc",
+   "br-pad",
+   "br-venti"
+  ],
+  "description": "ホイールと いっしょに 回る 金属の 円い 板。パッドに はさまれて まさつを うけ、そこで 生まれた 熱を 空気へ にがします。"
+ },
+ {
+  "id": "br-caliper",
+  "name": "キャリパー",
+  "reading": "きゃりぱー",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦀",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pad",
+   "br-cpiston",
+   "br-floating"
+  ],
+  "description": "ディスクローターを またぐように ついていて、中の ピストンで パッドを ローターへ おしつける 部品。カニの はさみの ような 役わりです。"
+ },
+ {
+  "id": "br-shoe",
+  "name": "ブレーキシュー",
+  "reading": "ぶれーきしゅー",
+  "journey": "brake",
+  "category": "ドラムブレーキ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-drum",
+   "br-lining",
+   "br-retspring"
+  ],
+  "description": "ドラムブレーキの 中に ある 三日月の 形の 部品。外がわに 広がって ドラムの 内がわに おしつけられ、まさつで 止めます。"
+ },
+ {
+  "id": "br-lamp",
+  "name": "ブレーキランプ",
+  "reading": "ぶれーきらんぷ",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pedal",
+   "br-brake"
+  ],
+  "description": "ブレーキを かけると クルマの 後ろで 赤く 光る ランプ。後ろの クルマに 止まることを 知らせる、大事な 合図です。"
+ },
+ {
+  "id": "br-enginebrake",
+  "name": "エンジンブレーキ",
+  "reading": "えんじんぶれーき",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-fade",
+   "br-vapor"
+  ],
+  "description": "アクセルを はなしたとき、エンジンの 回る 抵抗で スピードが 落ちる はたらき。長い 下り坂で フットブレーキの 使いすぎを ふせぎます。"
+ },
+ {
+  "id": "br-hose",
+  "name": "ブレーキホース",
+  "reading": "ぶれーきほーす",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "➰",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pipe",
+   "br-caliper"
+  ],
+  "description": "ブレーキの 液を 車体から タイヤがわへ とどける、曲がる ゴムの 管。タイヤが 上下したり ハンドルを 切ったり しても ついていけます。"
+ },
+ {
+  "id": "br-friction",
+  "name": "摩擦",
+  "reading": "まさつ",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pad",
+   "br-lining"
+  ],
+  "description": "ものと ものが こすれあうときに 動きを じゃまする 力。ブレーキは この 力で 動く ちからを 熱に かえて クルマを 止めています。"
+ },
+ {
+  "id": "br-footbrake",
+  "name": "フットブレーキ",
+  "reading": "ふっとぶれーき",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👟",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pedal",
+   "br-parking"
+  ],
+  "description": "足で ペダルを ふんで かける ふだん 使う ブレーキ。走っている クルマを 遅くしたり 止めたり する 主役です。"
+ },
+ {
+  "id": "br-autobrake",
+  "name": "自動ブレーキ",
+  "reading": "じどうぶれーき",
+  "journey": "brake",
+  "category": "電子制御",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤖",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-brakeassist",
+   "br-esc"
+  ],
+  "description": "カメラや レーダーで 前の クルマや 人を 見つけ、ぶつかりそうな ときに 知らせたり 自動で ブレーキを かけたり する しくみ。"
+ },
+ {
+  "id": "br-squeal",
+  "name": "ブレーキ鳴き",
+  "reading": "ぶれーきなき",
+  "journey": "brake",
+  "category": "ブレーキのトラブル",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔊",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pad",
+   "br-wearind"
+  ],
+  "description": "ブレーキを かけたときに キーッと 高い 音が 出ること。パッドや ローターの 細かい ふるえが 音に なります。"
+ },
+ {
+  "id": "br-stopdist",
+  "name": "停止距離",
+  "reading": "ていしきょり",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-kuusou",
+   "br-seidou"
+  ],
+  "description": "危ないと 気づいてから クルマが 止まるまでに 進む きょり。空走距離と 制動距離を 足したもので、スピードが 上がるほど 長くなります。"
+ },
+ {
+  "id": "br-dust",
+  "name": "ブレーキダスト",
+  "reading": "ぶれーきだすと",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "br-pad",
+   "br-rotor"
+  ],
+  "description": "パッドや ローターが けずれて 出る 細かい 粉。ホイールが 黒く よごれるのは おもに これが 原因です。"
+ },
+ {
+  "id": "br-master",
+  "name": "マスターシリンダー",
+  "reading": "ますたーしりんだー",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pedal",
+   "br-fluid",
+   "br-tandem"
+  ],
+  "description": "ペダルを ふむ ちからを 液の 圧力に かえる 部品。エンジンルームの 運転席がわに あり、ここから 各タイヤへ ブレーキの 液を おくりだします。"
+ },
+ {
+  "id": "br-booster",
+  "name": "倍力装置",
+  "reading": "ばいりょくそうち",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-master",
+   "br-vacbooster"
+  ],
+  "description": "ペダルを ふむ 力を 何倍にも 大きくして マスターシリンダーへ つたえる 装置。軽い 力でも しっかり ブレーキが きくように します。"
+ },
+ {
+  "id": "br-wheelcyl",
+  "name": "ホイールシリンダー",
+  "reading": "ほいーるしりんだー",
+  "journey": "brake",
+  "category": "ドラムブレーキ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-drum",
+   "br-shoe"
+  ],
+  "description": "ドラムブレーキの 中に ある 小さな シリンダー。液の 圧力で ピストンが おしだされ、シューを ドラムへ 広げます。"
+ },
+ {
+  "id": "br-vapor",
+  "name": "ベーパーロック",
+  "reading": "べーぱーろっく",
+  "journey": "brake",
+  "category": "ブレーキのトラブル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-fade",
+   "br-hygro",
+   "br-enginebrake"
+  ],
+  "description": "ブレーキの 熱で 液が わきたち、中に 気泡が できる 現象。泡は おされると ちぢんで しまうので、ペダルを ふんでも 力が つたわらず きかなくなります。"
+ },
+ {
+  "id": "br-fade",
+  "name": "フェード現象",
+  "reading": "ふぇーどげんしょう",
+  "journey": "brake",
+  "category": "ブレーキのトラブル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥵",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-vapor",
+   "br-enginebrake",
+   "br-pad"
+  ],
+  "description": "ブレーキを 使いすぎて パッドや ライニングが 熱くなりすぎ、まさつの 力が 弱まって ききが 悪くなる 現象。長い 下り坂で おきやすいです。"
+ },
+ {
+  "id": "br-pascal",
+  "name": "パスカルの原理",
+  "reading": "ぱすかるのげんり",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-hydraulic",
+   "br-master"
+  ],
+  "description": "とじこめた 液体の 一か所に 圧力を かけると、その 圧力が 液の どこにも 同じ 強さで つたわる という きまり。油圧ブレーキの もとに なる 考えです。"
+ },
+ {
+  "id": "br-reservoir",
+  "name": "ブレーキリザーバー",
+  "reading": "ぶれーきりざーばー",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-fluid",
+   "br-master"
+  ],
+  "description": "マスターシリンダーの 上に ある、ブレーキの 液を ためておく タンク。液の 量を 目で 見られる 目もりが ついています。"
+ },
+ {
+  "id": "br-pipe",
+  "name": "ブレーキパイプ",
+  "reading": "ぶれーきぱいぷ",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-hose",
+   "br-master"
+  ],
+  "description": "車体に そって とりつけられた 金属の 細い 管。マスターシリンダーから 各タイヤの 近くまで ブレーキの 液を はこびます。"
+ },
+ {
+  "id": "br-cpiston",
+  "name": "キャリパーピストン",
+  "reading": "きゃりぱーぴすとん",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔘",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-caliper",
+   "br-pistonseal"
+  ],
+  "description": "キャリパーの 中に ある ピストン。液の 圧力で おしだされ、パッドを ローターへ おしつけます。"
+ },
+ {
+  "id": "br-wearind",
+  "name": "パッドウェアインジケーター",
+  "reading": "ぱっどうぇあいんじけーたー",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pad",
+   "br-squeal"
+  ],
+  "description": "パッドが うすく なったことを 知らせる しかけ。金属の つめが ローターに ふれて 音を 出す タイプなどが あります。"
+ },
+ {
+  "id": "br-hygro",
+  "name": "吸湿性",
+  "reading": "きゅうしつせい",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💦",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-fluid",
+   "br-vapor",
+   "br-dot"
+  ],
+  "description": "空気中の 水分を すいこむ 性質。ブレーキの 液の 多くは この 性質を もち、水が まざると わく 温度が 下がって ベーパーロックが おきやすくなります。"
+ },
+ {
+  "id": "br-seidou",
+  "name": "制動距離",
+  "reading": "せいどうきょり",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-stopdist",
+   "br-kuusou"
+  ],
+  "description": "ブレーキが きき始めてから クルマが 止まるまでに 進む きょり。スピードや 路面の すべりやすさ、タイヤの 状態で かわります。"
+ },
+ {
+  "id": "br-venti",
+  "name": "ベンチレーテッドディスク",
+  "reading": "べんちれーてっどでぃすく",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-rotor",
+   "br-fade"
+  ],
+  "description": "2まいの 板の あいだに 風の 通り道を もつ ディスクローター。空気が 通りぬけて 冷えやすく、熱に 強いので 前輪に よく 使われます。"
+ },
+ {
+  "id": "br-retspring",
+  "name": "リターンスプリング",
+  "reading": "りたーんすぷりんぐ",
+  "journey": "brake",
+  "category": "ドラムブレーキ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-shoe",
+   "br-drum"
+  ],
+  "description": "ドラムブレーキで、ブレーキを ゆるめたときに シューを もとの 位置へ 引きもどす ばね。"
+ },
+ {
+  "id": "br-pedalplay",
+  "name": "ペダルの遊び",
+  "reading": "ぺだるのあそび",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pedal",
+   "br-master"
+  ],
+  "description": "ペダルを ふみ始めてから ブレーキが きき始めるまでの、軽く 動く はば。日常点検で ペダルの 具合を 見るときの ポイントの 1つです。"
+ },
+ {
+  "id": "br-drag",
+  "name": "ブレーキの引きずり",
+  "reading": "ぶれーきのひきずり",
+  "journey": "brake",
+  "category": "ブレーキのトラブル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pad",
+   "br-cpiston"
+  ],
+  "description": "ペダルを はなしても ブレーキが 少し かかったままに なること。熱を もったり 燃費が 悪くなったり します。"
+ },
+ {
+  "id": "br-lining",
+  "name": "ブレーキライニング",
+  "reading": "ぶれーきらいにんぐ",
+  "journey": "brake",
+  "category": "ドラムブレーキ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-shoe",
+   "br-drum"
+  ],
+  "description": "ブレーキシューの 表面に はられた まさつ材。ドラムに こすれて 止める 力を 生み、使うと すりへります。"
+ },
+ {
+  "id": "br-hydraulic",
+  "name": "油圧式ブレーキ",
+  "reading": "ゆあつしきぶれーき",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-pascal",
+   "br-fluid",
+   "br-master"
+  ],
+  "description": "液体の 圧力を 使って ブレーキを かける しくみ。乗用車の ほとんどが この 方式で、4つの タイヤに 同時に 力を くばれます。"
+ },
+ {
+  "id": "br-air",
+  "name": "エアかみ",
+  "reading": "えあかみ",
+  "journey": "brake",
+  "category": "ブレーキのトラブル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-fluid",
+   "br-pedal"
+  ],
+  "description": "ブレーキの 液の 通り道に 空気が 入りこんだ 状態。空気は おしちぢめられるので、ペダルが ふわふわして ききが 悪くなります。"
+ },
+ {
+  "id": "br-pcable",
+  "name": "パーキングブレーキケーブル",
+  "reading": "ぱーきんぐぶれーきけーぶる",
+  "journey": "brake",
+  "category": "パーキングブレーキ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪢",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-parking",
+   "br-drum"
+  ],
+  "description": "パーキングブレーキの レバーや ペダルと、後ろの タイヤの ブレーキを つなぐ 金属の ワイヤー。引っぱる 力で ブレーキを かけます。"
+ },
+ {
+  "id": "br-kuusou",
+  "name": "空走距離",
+  "reading": "くうそうきょり",
+  "journey": "brake",
+  "category": "ブレーキの基本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💭",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-stopdist",
+   "br-seidou"
+  ],
+  "description": "危ないと 気づいて ブレーキを ふみ、きき始めるまでの あいだに 進む きょり。そのあいだ クルマは ほぼ 同じ スピードで 進みます。"
+ },
+ {
+  "id": "br-esc",
+  "name": "横すべり防止装置",
+  "reading": "よこすべりぼうしそうち",
+  "journey": "brake",
+  "category": "電子制御",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "br-abs",
+   "br-wheelspeed"
+  ],
+  "description": "カーブなどで クルマが 横に すべりそうな ときに、タイヤ1つずつの ブレーキや エンジンの 力を おさえて 向きを 立てなおす 装置。"
+ },
+ {
+  "id": "br-wheelspeed",
+  "name": "車輪速センサー",
+  "reading": "しゃりんそくせんさー",
+  "journey": "brake",
+  "category": "電子制御",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "car:tire",
+  "relatedTerms": [
+   "br-abs",
+   "br-esc"
+  ],
+  "description": "それぞれの タイヤの 回る 速さを はかる センサー。ABSや 横すべり防止装置は この 情報で タイヤの ロックを 見つけます。"
+ },
+ {
+  "id": "br-absact",
+  "name": "ABSアクチュエーター",
+  "reading": "えーびーえすあくちゅえーたー",
+  "journey": "brake",
+  "category": "電子制御",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "br-abs",
+   "br-slip"
+  ],
+  "description": "弁や ポンプを 内ぞうし、ABSの 指示で タイヤごとの ブレーキの 液の 圧力を 上げ下げ する 装置。"
+ },
+ {
+  "id": "br-tandem",
+  "name": "タンデムマスターシリンダー",
+  "reading": "たんでむますたーしりんだー",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚃",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-master",
+   "br-dual"
+  ],
+  "description": "ピストンを 2つ 前後に ならべた マスターシリンダー。ブレーキの 通り道を 2つに 分けて、片方が もれても もう片方で 止まれるように します。"
+ },
+ {
+  "id": "br-dual",
+  "name": "2系統ブレーキ",
+  "reading": "にけいとうぶれーき",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-tandem",
+   "br-xpipe"
+  ],
+  "description": "ブレーキの 液の 通り道を 2つに 分けた つくり。1つが こわれても もう1つで ブレーキが きくので、安全の ために 使われています。"
+ },
+ {
+  "id": "br-xpipe",
+  "name": "X配管",
+  "reading": "えっくすはいかん",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❌",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-dual",
+   "br-tandem"
+  ],
+  "description": "右前と 左後ろ、左前と 右後ろを それぞれ 組にした ブレーキの 配管の 分けかた。上から 見ると Xの 形に なります。"
+ },
+ {
+  "id": "br-vacbooster",
+  "name": "真空式倍力装置",
+  "reading": "しんくうしきばいりょくそうち",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌪️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-booster",
+   "br-tandem"
+  ],
+  "description": "エンジンの 吸気で できる 負圧と 大気圧の 差を 使って、ペダルの 力を 大きくする 倍力装置。丸い タンクの 形を しています。"
+ },
+ {
+  "id": "br-pvalve",
+  "name": "プロポーショニングバルブ",
+  "reading": "ぷろぽーしょにんぐばるぶ",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-ebd",
+   "br-dual"
+  ],
+  "description": "強く ブレーキを かけたとき、後輪へ いく 液の 圧力を おさえる 弁。前へ 重さが かかって 軽くなった 後輪が 先に ロックするのを ふせぎます。"
+ },
+ {
+  "id": "br-ebd",
+  "name": "EBD",
+  "reading": "いーびーでぃー",
+  "journey": "brake",
+  "category": "電子制御",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "br-pvalve",
+   "br-abs"
+  ],
+  "description": "ABSの しくみを 使い、前後の タイヤの ブレーキの 強さを 電子制御で ちょうどよく 分ける 機能。荷物や 人の のりかたが かわっても 安定して 止まれます。"
+ },
+ {
+  "id": "br-slip",
+  "name": "スリップ率",
+  "reading": "すりっぷりつ",
+  "journey": "brake",
+  "category": "電子制御",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "br-abs",
+   "br-wheelspeed"
+  ],
+  "description": "クルマの 速さに くらべて タイヤの 回りが どれだけ おくれているかを あらわす 数。0%は ふつうに ころがる 状態、100%は タイヤが 止まって すべる ロックです。"
+ },
+ {
+  "id": "br-selfservo",
+  "name": "自己倍力作用",
+  "reading": "じこばいりょくさよう",
+  "journey": "brake",
+  "category": "ドラムブレーキ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-leadtrail",
+   "br-shoe"
+  ],
+  "description": "ドラムブレーキで、回る ドラムに シューが 引きこまれて さらに 強く おしつけられる はたらき。小さな 力で 大きな ブレーキ力が 出ます。"
+ },
+ {
+  "id": "br-leadtrail",
+  "name": "リーディングトレーリング式",
+  "reading": "りーでぃんぐとれーりんぐしき",
+  "journey": "brake",
+  "category": "ドラムブレーキ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-selfservo",
+   "br-drum"
+  ],
+  "description": "ドラムの 回る 向きに 対して、引きこまれる シューと おしもどされる シューを 1まいずつ もつ ドラムブレーキ。前進でも 後退でも 同じくらい ききます。"
+ },
+ {
+  "id": "br-autoadj",
+  "name": "オートアジャスター",
+  "reading": "おーとあじゃすたー",
+  "journey": "brake",
+  "category": "ドラムブレーキ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-shoe",
+   "br-lining"
+  ],
+  "description": "ライニングが すりへって ドラムとの すきまが 広がると、それを 自動で ちょうどよく 保つ しかけ。ペダルが 深く なるのを ふせぎます。"
+ },
+ {
+  "id": "br-floating",
+  "name": "フローティングキャリパー",
+  "reading": "ふろーてぃんぐきゃりぱー",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-caliper",
+   "br-opposed"
+  ],
+  "description": "ピストンが 片がわだけに ある キャリパー。キャリパー自体が 横に すべって 動き、反対がわの パッドも ローターへ 引きよせて はさみます。"
+ },
+ {
+  "id": "br-opposed",
+  "name": "対向ピストンキャリパー",
+  "reading": "たいこうぴすとんきゃりぱー",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤜",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-floating",
+   "br-caliper"
+  ],
+  "description": "ローターを はさんで 両がわに ピストンが ある キャリパー。両がわから 同時に パッドを おしつけるので、強い ブレーキ力を 出しやすいです。"
+ },
+ {
+  "id": "br-pistonseal",
+  "name": "ピストンシール",
+  "reading": "ぴすとんしーる",
+  "journey": "brake",
+  "category": "ディスクブレーキ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-cpiston",
+   "br-caliper"
+  ],
+  "description": "キャリパーピストンの まわりの ゴムの 輪。液の もれを ふせぐうえ、ブレーキを ゆるめると その 弾力で ピストンを 少し 引きもどし、すきまを つくります。"
+ },
+ {
+  "id": "br-dot",
+  "name": "DOT規格",
+  "reading": "どっときかく",
+  "journey": "brake",
+  "category": "油圧のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-fluid",
+   "br-hygro"
+  ],
+  "description": "ブレーキの 液の 性能を あらわす 規格。わく 温度などに ちがいが あり、クルマごとに 決められた 種類を 使います。"
+ },
+ {
+  "id": "br-epb",
+  "name": "電動パーキングブレーキ",
+  "reading": "でんどうぱーきんぐぶれーき",
+  "journey": "brake",
+  "category": "パーキングブレーキ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "car:brake",
+  "relatedTerms": [
+   "br-parking",
+   "br-pcable"
+  ],
+  "description": "スイッチを 押すと モーターの 力で かかる パーキングブレーキ。レバーを 引く 力が いらず、自動で かかったり 外れたり する ものも あります。"
+ },
+ {
+  "id": "br-brakeassist",
+  "name": "ブレーキアシスト",
+  "reading": "ぶれーきあしすと",
+  "journey": "brake",
+  "category": "電子制御",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🆘",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "br-autobrake",
+   "br-booster"
+  ],
+  "description": "ペダルが すばやく ふまれた ことから 急ブレーキだと 判断し、ブレーキの 力を 自動で 強める 機能。ふむ 力が 足りない ときを たすけます。"
+ }
+]

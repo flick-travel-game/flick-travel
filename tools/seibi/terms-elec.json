@@ -1,0 +1,981 @@
+[
+ {
+  "id": "el-battery",
+  "name": "バッテリー",
+  "reading": "ばってりー",
+  "journey": "elec",
+  "category": "バッテリー",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-alternator",
+   "el-electrolyte",
+   "el-darkcurrent"
+  ],
+  "description": "電気を ためておく 箱。エンジンを かける ときの スターターや、止まっている あいだの ライトや 時計に 電気を 送ります。"
+ },
+ {
+  "id": "el-alternator",
+  "name": "オルタネーター",
+  "reading": "おるたねーたー",
+  "journey": "elec",
+  "category": "始動・発電",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-battery",
+   "el-regulator",
+   "el-stator"
+  ],
+  "description": "エンジンの 回る 力で 電気を つくる 発電機。つくった 電気で バッテリーを 充電し、走っている あいだの 電装品に 電気を 送ります。"
+ },
+ {
+  "id": "el-starter",
+  "name": "スターター",
+  "reading": "すたーたー",
+  "journey": "elec",
+  "category": "始動・発電",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔑",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-battery",
+   "el-magswitch",
+   "el-overrun"
+  ],
+  "description": "エンジンを かける ときに 回して 動きださせる 小さな モーター。バッテリーから 大きな 電気を 使います。"
+ },
+ {
+  "id": "el-fuse",
+  "name": "ヒューズ",
+  "reading": "ひゅーず",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧯",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-relay",
+   "el-harness"
+  ],
+  "description": "決まった 量より 大きな 電気が 流れると、中の 金属が とけて 回路を 切る 部品。配線や 電装品を 守る 身がわりです。"
+ },
+ {
+  "id": "el-headlamp",
+  "name": "ヘッドランプ",
+  "reading": "へっどらんぷ",
+  "journey": "elec",
+  "category": "灯火・装備",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-turn",
+   "el-tail"
+  ],
+  "description": "クルマの 前に ついている 大きな ライト。夜や トンネルで 前を 照らし、まわりに クルマが いることも 知らせます。"
+ },
+ {
+  "id": "el-turn",
+  "name": "ウインカー",
+  "reading": "ういんかー",
+  "journey": "elec",
+  "category": "灯火・装備",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-hazard",
+   "el-headlamp"
+  ],
+  "description": "曲がる 方向や 車線を かえる ことを まわりに 知らせる、点めつする ランプ。方向指示器とも いいます。"
+ },
+ {
+  "id": "el-hybrid",
+  "name": "ハイブリッド車",
+  "reading": "はいぶりっどしゃ",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌿",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-motor",
+   "el-hvbattery",
+   "el-plugin"
+  ],
+  "description": "エンジンと モーターの 2つの 力を 使って 走る クルマ。場面に あわせて 使い分け、燃料を 節約します。"
+ },
+ {
+  "id": "el-ev",
+  "name": "電気自動車",
+  "reading": "でんきじどうしゃ",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-motor",
+   "el-charge",
+   "el-hvbattery"
+  ],
+  "description": "エンジンを もたず、バッテリーに ためた 電気で モーターを 回して 走る クルマ。走っている ときに 排気ガスを 出しません。"
+ },
+ {
+  "id": "el-motor",
+  "name": "モーター",
+  "reading": "もーたー",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-inverter",
+   "el-pmmotor",
+   "el-regen"
+  ],
+  "description": "電気の 力で 回る 装置。ハイブリッド車や 電気自動車では タイヤを 回す 力を 生み、減速の ときは 発電機にも なります。"
+ },
+ {
+  "id": "el-charge",
+  "name": "充電",
+  "reading": "じゅうでん",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-quickcharge",
+   "el-soc",
+   "el-ev"
+  ],
+  "description": "バッテリーに 電気を ためること。走りながら 発電して ためる ほか、電気自動車などは 外の 電源から ケーブルで ためます。"
+ },
+ {
+  "id": "el-ecu",
+  "name": "ECU",
+  "reading": "いーしーゆー",
+  "journey": "elec",
+  "category": "ECU・診断",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "el-sensor",
+   "el-can",
+   "el-obd"
+  ],
+  "description": "センサーの 情報を もとに、燃料の 量や 点火の 時期などを 決める コンピューター。クルマの 頭脳に あたります。"
+ },
+ {
+  "id": "el-wiring",
+  "name": "配線",
+  "reading": "はいせん",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧵",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-harness",
+   "el-connector",
+   "el-fuse"
+  ],
+  "description": "バッテリーや スイッチ、ランプなどを つなぎ、電気の 通り道を つくる 電線。クルマの 中に 細かく はりめぐらされています。"
+ },
+ {
+  "id": "el-horn",
+  "name": "ホーン",
+  "reading": "ほーん",
+  "journey": "elec",
+  "category": "灯火・装備",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📯",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-relay",
+   "el-hazard"
+  ],
+  "description": "ハンドルの まんなかを 押すと 鳴る、音で まわりに 知らせる 装置。危ない ことを 知らせる ときに 使います。"
+ },
+ {
+  "id": "el-regen",
+  "name": "回生ブレーキ",
+  "reading": "かいせいぶれーき",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "♻️",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-motor",
+   "el-hvbattery",
+   "el-inverter"
+  ],
+  "description": "スピードを 落とす ときに モーターを 発電機として 回し、止める 力に しながら 電気を つくって バッテリーに ためる しくみ。"
+ },
+ {
+  "id": "el-sensor",
+  "name": "センサー",
+  "reading": "せんさー",
+  "journey": "elec",
+  "category": "センサー",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "el-ecu",
+   "el-o2",
+   "el-knock"
+  ],
+  "description": "温度や 回る 速さ、空気の 量などを はかって 電気の 信号に かえる 部品。ECUは その 信号を 見て クルマを 動かします。"
+ },
+ {
+  "id": "el-camera",
+  "name": "前方カメラ",
+  "reading": "ぜんぽうかめら",
+  "journey": "elec",
+  "category": "運転支援",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📷",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-radar",
+   "el-ultrasonic"
+  ],
+  "description": "フロントガラスの 上の ほうなどに ついて、前の クルマや 人、白線を 見分ける カメラ。運転支援の 目の 役わりです。"
+ },
+ {
+  "id": "el-hv",
+  "name": "高電圧",
+  "reading": "こうでんあつ",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-hvcable",
+   "el-hvbattery",
+   "el-insulation"
+  ],
+  "description": "ハイブリッド車や 電気自動車の 走る ための 電気は、ふつうの バッテリーより ずっと 高い 電圧です。さわると 命に かかわるので、ぜったいに さわりません。"
+ },
+ {
+  "id": "el-hazard",
+  "name": "ハザードランプ",
+  "reading": "はざーどらんぷ",
+  "journey": "elec",
+  "category": "灯火・装備",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚨",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-turn",
+   "el-horn"
+  ],
+  "description": "左右の ウインカーを 同時に 点めつさせて、止まっていることや 危ない ことを まわりに 知らせる ランプ。"
+ },
+ {
+  "id": "el-warning",
+  "name": "警告灯",
+  "reading": "けいこくとう",
+  "journey": "elec",
+  "category": "ECU・診断",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟠",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "el-obd",
+   "el-ecu"
+  ],
+  "description": "メーターの 中で 光って、どこかに 異常が あることを 知らせる ランプ。色や 形で 何の 知らせかが わかります。"
+ },
+ {
+  "id": "el-tail",
+  "name": "テールランプ",
+  "reading": "てーるらんぷ",
+  "journey": "elec",
+  "category": "灯火・装備",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏮",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-headlamp",
+   "el-hazard"
+  ],
+  "description": "クルマの 後ろで 赤く 光る ランプ。夜や 暗い ところで、後ろの クルマに 自分の 位置を 知らせます。"
+ },
+ {
+  "id": "el-relay",
+  "name": "リレー",
+  "reading": "りれー",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-fuse",
+   "el-horn"
+  ],
+  "description": "小さな 電気で 電磁石を はたらかせ、大きな 電気の スイッチを 入れたり 切ったり する 部品。スイッチや 配線への 負担を 小さくします。"
+ },
+ {
+  "id": "el-ground",
+  "name": "アース",
+  "reading": "あーす",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏚",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-wiring",
+   "el-battery"
+  ],
+  "description": "電気が バッテリーの マイナスへ もどる 通り道。クルマでは 金属の 車体を 通り道として 使っています。つながりが 悪いと 電装品が うまく 動きません。"
+ },
+ {
+  "id": "el-voltdrop",
+  "name": "電圧降下",
+  "reading": "でんあつこうか",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-connector",
+   "el-ground",
+   "el-resistance"
+  ],
+  "description": "電気が 配線や つなぎ目を 通る うちに、電圧が 少しずつ 下がる こと。つながりが 悪いと 大きく なり、ランプが 暗く なったり します。"
+ },
+ {
+  "id": "el-power",
+  "name": "消費電力",
+  "reading": "しょうひでんりょく",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-battery",
+   "el-alternator",
+   "el-darkcurrent"
+  ],
+  "description": "ランプや ヒーターなどの 電装品が 使う 電気の 大きさ。単位は ワット。電装品を つけすぎると バッテリーの 電気が 足りなく なります。"
+ },
+ {
+  "id": "el-resistance",
+  "name": "抵抗",
+  "reading": "ていこう",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-short",
+   "el-power"
+  ],
+  "description": "電気の 流れにくさ。単位は オーム。抵抗が 大きいほど、同じ 電圧でも 流れる 電流は 小さく なります。"
+ },
+ {
+  "id": "el-short",
+  "name": "ショート",
+  "reading": "しょーと",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-fuse",
+   "el-wiring",
+   "el-resistance"
+  ],
+  "description": "電気が 決められた 道を 通らず、近道を して 一気に 流れて しまう こと。配線が 車体に ふれた ときなどに 起き、ヒューズが 切れる 原因に なります。"
+ },
+ {
+  "id": "el-harness",
+  "name": "ワイヤーハーネス",
+  "reading": "わいやーはーねす",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪢",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-wiring",
+   "el-connector"
+  ],
+  "description": "たくさんの 電線を ひとまとめに たばねた もの。車体の すみずみまで 通り、各部品へ 電気と 信号を とどけます。"
+ },
+ {
+  "id": "el-connector",
+  "name": "コネクター",
+  "reading": "こねくたー",
+  "journey": "elec",
+  "category": "電気の基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-harness",
+   "el-wiring"
+  ],
+  "description": "配線と 部品、配線どうしを つないだり 外したり できるように する 部品。ゆるみや さびが あると 電気が うまく 流れません。"
+ },
+ {
+  "id": "el-o2",
+  "name": "O2センサー",
+  "reading": "おーつーせんさー",
+  "journey": "elec",
+  "category": "センサー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-afsensor",
+   "el-ecu"
+  ],
+  "description": "排気管に ついていて、排気ガスの 中の 酸素の 量から 燃料が 濃いか うすいかを 調べる センサー。ECUは これで 燃料の 量を 整えます。"
+ },
+ {
+  "id": "el-knock",
+  "name": "ノックセンサー",
+  "reading": "のっくせんさー",
+  "journey": "elec",
+  "category": "センサー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔨",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-ecu",
+   "el-crankangle"
+  ],
+  "description": "エンジンに ついていて、ノッキングの ふるえを 感じとる センサー。ECUは これを 受けて 点火の 時期を おくらせ、エンジンを 守ります。"
+ },
+ {
+  "id": "el-watertemp",
+  "name": "水温センサー",
+  "reading": "すいおんせんさー",
+  "journey": "elec",
+  "category": "センサー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-ecu",
+   "el-sensor"
+  ],
+  "description": "エンジンを 冷やす 液の 温度を はかる センサー。ECUは これで エンジンが 冷えているか あたたまったかを 知ります。"
+ },
+ {
+  "id": "el-tps",
+  "name": "スロットルポジションセンサー",
+  "reading": "すろっとるぽじしょんせんさー",
+  "journey": "elec",
+  "category": "センサー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-afm",
+   "el-ecu"
+  ],
+  "description": "エンジンに 空気を 入れる 弁が どれくらい 開いているかを はかる センサー。アクセルの ふみかたを ECUに 伝える 手がかりに なります。"
+ },
+ {
+  "id": "el-crankangle",
+  "name": "クランク角センサー",
+  "reading": "くらんくかくせんさー",
+  "journey": "elec",
+  "category": "センサー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎡",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-knock",
+   "el-ecu"
+  ],
+  "description": "クランクシャフトの 回る 角度と 速さを はかる センサー。ECUは これで 燃料を ふく 時期や 点火の 時期を 決めます。"
+ },
+ {
+  "id": "el-afm",
+  "name": "エアフローメーター",
+  "reading": "えあふろーめーたー",
+  "journey": "elec",
+  "category": "センサー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-tps",
+   "el-o2"
+  ],
+  "description": "エンジンが すいこむ 空気の 量を はかる センサー。ECUは その 量に あわせて ふく 燃料の 量を 決めます。"
+ },
+ {
+  "id": "el-regulator",
+  "name": "ICレギュレーター",
+  "reading": "あいしーれぎゅれーたー",
+  "journey": "elec",
+  "category": "始動・発電",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-alternator",
+   "el-stator"
+  ],
+  "description": "オルタネーターが つくる 電圧を、エンジンの 回る 速さが かわっても ほぼ 一定に 保つ 部品。バッテリーの 充電しすぎも ふせぎます。"
+ },
+ {
+  "id": "el-diode",
+  "name": "ダイオード",
+  "reading": "だいおーど",
+  "journey": "elec",
+  "category": "始動・発電",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "▶️",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-alternator",
+   "el-stator"
+  ],
+  "description": "電気を 一方向にしか 流さない 部品。オルタネーターでは つくった 交流を バッテリーに ためられる 直流に かえる 役目を します。"
+ },
+ {
+  "id": "el-electrolyte",
+  "name": "電解液",
+  "reading": "でんかいえき",
+  "journey": "elec",
+  "category": "バッテリー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-battery",
+   "el-gravity"
+  ],
+  "description": "バッテリーの 中に 入っている 液。多くは うすい 硫酸で、肌や 目に つくと 危ない ものです。"
+ },
+ {
+  "id": "el-gravity",
+  "name": "比重",
+  "reading": "ひじゅう",
+  "journey": "elec",
+  "category": "バッテリー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-electrolyte",
+   "el-sulfation"
+  ],
+  "description": "電解液の 重さを 水と くらべた 数。バッテリーの 電気が 少なく なると 小さく なるので、充電の ぐあいを 知る 手がかりに なります。"
+ },
+ {
+  "id": "el-obd",
+  "name": "OBD",
+  "reading": "おーびーでぃー",
+  "journey": "elec",
+  "category": "ECU・診断",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "el-dtc",
+   "el-freeze",
+   "el-warning"
+  ],
+  "description": "ECUが 自分で 異常を 見つけて 記録する 故障診断の しくみ。運転席の 足もと近くの コネクターに 機械を つなぐと 記録を 読めます。"
+ },
+ {
+  "id": "el-dtc",
+  "name": "故障コード",
+  "reading": "こしょうこーど",
+  "journey": "elec",
+  "category": "ECU・診断",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "el-obd",
+   "el-freeze"
+  ],
+  "description": "ECUが 異常を 見つけたときに 記録する、英字と 数字の 組みあわせの 番号。どこに 異常が あるかの 手がかりに なります。"
+ },
+ {
+  "id": "el-can",
+  "name": "CAN通信",
+  "reading": "きゃんつうしん",
+  "journey": "elec",
+  "category": "ECU・診断",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕸️",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "el-ecu",
+   "el-obd"
+  ],
+  "description": "クルマの 中の たくさんの ECUが、少ない 電線で 情報を やりとりする ための 通信の しくみ。配線を へらし、協力して 制御できます。"
+ },
+ {
+  "id": "el-inverter",
+  "name": "インバーター",
+  "reading": "いんばーたー",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-motor",
+   "el-hvbattery",
+   "el-dcdc"
+  ],
+  "description": "バッテリーの 直流を 交流に かえて モーターの 回りかたを 調整する 装置。回生の ときは 逆に 交流を 直流に もどします。高電圧なので さわると 危ないです。"
+ },
+ {
+  "id": "el-dcdc",
+  "name": "DC-DCコンバーター",
+  "reading": "でぃーしーでぃーしーこんばーたー",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-inverter",
+   "el-hvbattery",
+   "el-battery"
+  ],
+  "description": "走る ための 高い 電圧を、ライトや ワイパーなど ふつうの 電装品 むけの 低い 電圧に 下げる 装置。"
+ },
+ {
+  "id": "el-hvbattery",
+  "name": "駆動用バッテリー",
+  "reading": "くどうようばってりー",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-hv",
+   "el-soc",
+   "el-inverter"
+  ],
+  "description": "ハイブリッド車や 電気自動車で、モーターを 回す 電気を ためる 大きな バッテリー。高電圧なので さわると 命に かかわり、ぜったいに さわりません。"
+ },
+ {
+  "id": "el-hvcable",
+  "name": "高電圧ケーブル",
+  "reading": "こうでんあつけーぶる",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟧",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-hv",
+   "el-insulation"
+  ],
+  "description": "駆動用バッテリーと インバーターや モーターを つなぐ 太い 電線。多くの クルマで 目立つ オレンジ色です。さわると 危ないので ぜったいに さわりません。"
+ },
+ {
+  "id": "el-pmmotor",
+  "name": "永久磁石式同期モーター",
+  "reading": "えいきゅうじしゃくしきどうきもーたー",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-motor",
+   "el-inverter"
+  ],
+  "description": "回る がわに 強い 磁石を 使った モーター。小さくても 力が 強く 電気の むだが 少ないので、多くの ハイブリッド車や 電気自動車に 使われています。"
+ },
+ {
+  "id": "el-radar",
+  "name": "ミリ波レーダー",
+  "reading": "みりはれーだー",
+  "journey": "elec",
+  "category": "運転支援",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-camera",
+   "el-ultrasonic"
+  ],
+  "description": "電波を 出して はね返りを 受け、前の クルマまでの きょりや 速さの 差を はかる センサー。雨や 夜でも はたらきやすいです。"
+ },
+ {
+  "id": "el-ultrasonic",
+  "name": "超音波センサー",
+  "reading": "ちょうおんぱせんさー",
+  "journey": "elec",
+  "category": "運転支援",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦇",
+  "mapNode": "car:body",
+  "relatedTerms": [
+   "el-radar",
+   "el-camera"
+  ],
+  "description": "バンパーに ついていて、人に 聞こえない 高い 音を 出し、はね返りで 近くの かべや 物との きょりを はかる センサー。車庫入れなどで 使います。"
+ },
+ {
+  "id": "el-darkcurrent",
+  "name": "暗電流",
+  "reading": "あんでんりゅう",
+  "journey": "elec",
+  "category": "バッテリー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-battery",
+   "el-sulfation"
+  ],
+  "description": "キーを 切っていても 時計や ECUの 記憶の ために 流れつづける 小さな 電流。これが 大きすぎると バッテリーが あがります。"
+ },
+ {
+  "id": "el-sulfation",
+  "name": "サルフェーション",
+  "reading": "さるふぇーしょん",
+  "journey": "elec",
+  "category": "バッテリー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-gravity",
+   "el-darkcurrent"
+  ],
+  "description": "電気が 少ない ままの バッテリーで、極板に かたい 結晶が こびりつく 現象。電気を ためられる 量が へって しまいます。"
+ },
+ {
+  "id": "el-magswitch",
+  "name": "マグネットスイッチ",
+  "reading": "まぐねっとすいっち",
+  "journey": "elec",
+  "category": "始動・発電",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-starter",
+   "el-overrun"
+  ],
+  "description": "スターターに ついている 電磁石の スイッチ。モーターに 大きな 電気を 流すと 同時に、ギヤを おしだして エンジンと かみあわせます。"
+ },
+ {
+  "id": "el-overrun",
+  "name": "オーバーランニングクラッチ",
+  "reading": "おーばーらんにんぐくらっち",
+  "journey": "elec",
+  "category": "始動・発電",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-starter",
+   "el-magswitch"
+  ],
+  "description": "エンジンが かかった あと、エンジンの 速い 回りで スターターの モーターが 回されすぎないように する 一方向の クラッチ。"
+ },
+ {
+  "id": "el-idlestop",
+  "name": "アイドリングストップ",
+  "reading": "あいどりんぐすとっぷ",
+  "journey": "elec",
+  "category": "始動・発電",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-starter",
+   "el-battery"
+  ],
+  "description": "信号待ちなどで 止まると 自動で エンジンを 止め、走りだすときに また かける しくみ。エンジンを かける 回数が ふえるので、じょうぶな バッテリーが いります。"
+ },
+ {
+  "id": "el-plugin",
+  "name": "プラグインハイブリッド",
+  "reading": "ぷらぐいんはいぶりっど",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-hybrid",
+   "el-charge"
+  ],
+  "description": "外の 電源から 充電できる ハイブリッド車。電気だけで ある程度の きょりを 走り、足りなく なると エンジンも 使います。"
+ },
+ {
+  "id": "el-quickcharge",
+  "name": "急速充電",
+  "reading": "きゅうそくじゅうでん",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-charge",
+   "el-soc"
+  ],
+  "description": "専用の 充電器で 大きな 電力を 送り、短い 時間で 駆動用バッテリーに 電気を ためる 方法。"
+ },
+ {
+  "id": "el-soc",
+  "name": "SOC",
+  "reading": "えすおーしー",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-hvbattery",
+   "el-charge"
+  ],
+  "description": "バッテリーに 電気が どれだけ のこっているかを、満タンを 100%として あらわした 数。充電率とも いいます。"
+ },
+ {
+  "id": "el-stator",
+  "name": "ステーターコイル",
+  "reading": "すてーたーこいる",
+  "journey": "elec",
+  "category": "始動・発電",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "car:battery",
+  "relatedTerms": [
+   "el-alternator",
+   "el-diode"
+  ],
+  "description": "オルタネーターの 外がわに 固定された コイル。中で 回る 磁石の はたらきで ここに 電気が 生まれます。"
+ },
+ {
+  "id": "el-freeze",
+  "name": "フリーズフレームデータ",
+  "reading": "ふりーずふれーむでーた",
+  "journey": "elec",
+  "category": "ECU・診断",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "car:ecu",
+  "relatedTerms": [
+   "el-dtc",
+   "el-obd"
+  ],
+  "description": "異常が 見つかった しゅんかんの 速さや 温度などを、故障コードと いっしょに 記録した データ。原因を 考える 手がかりに なります。"
+ },
+ {
+  "id": "el-afsensor",
+  "name": "A/Fセンサー",
+  "reading": "えーえふせんさー",
+  "journey": "elec",
+  "category": "センサー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "car:engine",
+  "relatedTerms": [
+   "el-o2",
+   "el-afm"
+  ],
+  "description": "排気ガスから、空気と 燃料の まぜぐあい(空燃比)を はば広く こまかく はかる センサー。空燃比センサーとも いいます。"
+ },
+ {
+  "id": "el-insulation",
+  "name": "絶縁",
+  "reading": "ぜつえん",
+  "journey": "elec",
+  "category": "ハイブリッド・EV",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "car:hv",
+  "relatedTerms": [
+   "el-hvcable",
+   "el-hv"
+  ],
+  "description": "電気が 流れては いけない ところへ もれないように、電気を 通さない もので へだてること。高電圧の 部品は 車体から しっかり 絶縁されています。"
+ }
+]

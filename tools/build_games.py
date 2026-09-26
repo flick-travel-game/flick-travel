@@ -24,7 +24,7 @@ GAMES = {
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、からだのしくみも自然と覚えられるよ。"),
     # 株式フリック旅行(けいくん 2026-09-26)。絵は けいくんの ChatGPT の 絵(kabu/hero.webp)。題名は GrabCut で 切りぬいた(tools/kabu/logo_cut.py)
     "kabu": dict(name="株式フリック旅行", modes="KABU", kinds=set(), color="#0f6fa8", hero=True, logo=True,
-                 art=dict(word=(907, 194), hero=(1536, 1024), alt="株式フリック旅行。世界の 会社の 町を 男の子と 犬が 飛んで 旅する 絵"),
+                 art=dict(word=(907, 194), hero=(1536, 1024), alt="株式フリック旅行。世界の 会社の 町を 男の子と 犬が 飛んで 旅する 絵", iconv=3),
                  lead="世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。",
                  how="表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。初級からは 新しい会社7問に、にがてな会社の ふくしゅう3問が まざるよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。"),
@@ -43,7 +43,10 @@ def build(gid, g):
     if art:
         # 絵・アイコンは その フォルダの ものを 使う(名前は 世界と 同じ なので 道は そのまま)
         out = out.replace('width="1170" height="209"', 'width="%d" height="%d"' % art["word"])
-        out = out.replace('src="logo-word.webp"', 'src="logo-word.webp?v=2"')  # 題名を 切りなおしたら 数字を 上げる(古い 絵を おぼえているため)
+        out = out.replace('src="logo-word.webp"', 'src="logo-word.webp?v=2"')
+        if art.get("iconv"):  # アイコンを 差しかえたら 数字を 上げる(iPhone が 古い アイコンを おぼえているため)
+            v = "?v=%d" % art["iconv"]
+            out = out.replace('apple-touch-icon.png?v=2"', 'apple-touch-icon.png' + v + '"').replace('favicon.png?v=2"', 'favicon.png' + v + '"').replace('src="logo-mark2.webp"', 'src="logo-mark2.webp' + v + '"')  # 題名を 切りなおしたら 数字を 上げる(古い 絵を おぼえているため)
         out, n = re.subn(r'<img class="hero" src="hero.webp" alt="[^"]*" width="1536" height="1024">',
                          '<img class="hero" src="hero.webp" alt="%s" width="%d" height="%d">' % (art["alt"], *art["hero"]), out); assert n == 1
     else:
@@ -90,7 +93,7 @@ def build(gid, g):
     (d / "manifest.webmanifest").write_text(json.dumps({
         "name": g["name"] + "ゲーム", "short_name": g["name"] + "ゲーム", "start_url": "./", "scope": "./", "display": "standalone",
         "background_color": g["color"], "theme_color": g["color"],
-        "icons": [{"src": ("" if art else "../") + "icon-512.png?v=2", "sizes": "512x512", "type": "image/png"}, {"src": ("" if art else "../") + "apple-touch-icon.png?v=2", "sizes": "180x180", "type": "image/png"}]}, ensure_ascii=False, indent=2), encoding="utf-8")
+        "icons": [{"src": ("" if art else "../") + "icon-512.png?v=" + str((art or {}).get("iconv", 2)), "sizes": "512x512", "type": "image/png"}, {"src": ("" if art else "../") + "apple-touch-icon.png?v=" + str((art or {}).get("iconv", 2)), "sizes": "180x180", "type": "image/png"}]}, ensure_ascii=False, indent=2), encoding="utf-8")
     (d / ".nojekyll").write_text("", encoding="utf-8")
     print(f"{gid}: {len(kept)}問, {len(out)//1024}KB")
 

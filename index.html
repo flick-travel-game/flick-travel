@@ -4719,8 +4719,11 @@ function setMode(m){
   const M = MAPS[m], img = $("#map-img");
   if(!img.src.endsWith(M.src) && !((img.src.endsWith(M.hi || "@") || img.src.endsWith(M.hi2 || "@")) && MZ.s > 1.2)){ img.src = M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
   $("#map").style.aspectRatio = M.w + " / " + M.h;  // 中身が absolute なので 高さは ここで決める
-  if($("#map").dataset.map !== m) mapReset();  // 地図を切りかえたら 拡大を もどす
-  $("#map").dataset.map = m;
+  if($("#map").dataset.mode !== m) mapReset();  // 旅を切りかえたら 拡大を もどす
+  $("#map").dataset.mode = m;
+  /* ⚠️ data-map は 地図の しゅるい(world / japan)。旅の名前(wnames・capitals…)を 入れると、
+     海の名前の「世界だけ / 日本だけ」の 出しわけが 効かず、世界地図に 日本海・沖縄が 重なって 文字化けのように 見えた(けいくん 2026-09-26) */
+  $("#map").dataset.map = M.src.startsWith("japan") ? "japan" : "world";
   $("#map-title").textContent = M.title;
   $("#map-cap").innerHTML = "レベルをクリアすると、その" + (M.thing || "名所") + "に 📍が立つよ。📍を押すと 名前が出るよ。2本の指で 地図を大きくできるよ。";
   $("#lv-title").textContent = M.name + "　レベルをえらぶ";

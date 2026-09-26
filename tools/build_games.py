@@ -86,10 +86,12 @@ def build(gid, g):
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js"></script>\n<script src="ai.js"></script>')
         import subprocess, sys as _s; subprocess.run([_s.executable, str(ROOT / "tools/ai/terms_js.py")], check=True)
     if g["modes"] == "EIKAIWA":  # 英会話の コース: ことばは english.js(data/english.json から)、しくみは eikaiwa.js。打つのは 英字なので 入力欄を 英語に
-        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="english.js"></script>\n<script src="eikaiwa.js"></script>')
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/eikaiwa/english_js.py")], check=True)
+        # ⚠️ iPhone が 古い ファイルを おぼえていて 直した 画面が 出なかった(2026-09-26)→ 中身が かわると 住所の ?v= も かわる
+        ver = lambda f: hashlib.sha1((ROOT / "eikaiwa" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="english.js?v=%s"></script>\n<script src="eikaiwa.js?v=%s"></script>' % (ver("english.js"), ver("eikaiwa.js")))
         out, n = re.subn(r'<input class="answer" id="ans" type="text" lang="ja"', '<input class="answer" id="ans" type="text" lang="en"', out); assert n == 1
         out, n = re.subn(r'<p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>', '<p>大文字・小文字は どちらでも OK。空白や「\' , . ? !」は 打たなくて大丈夫。</p>', out); assert n == 1
-        import subprocess, sys as _s; subprocess.run([_s.executable, str(ROOT / "tools/eikaiwa/english_js.py")], check=True)
     # GAME
     out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{PLUG_MODES[g["modes"]] if isinstance(g["modes"], str) else json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
     assert n == 1

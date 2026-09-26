@@ -235,19 +235,24 @@ const EIKAIWA = (() => {
   }
 
   /* ── 問題の カード: ことば + ひとつ前の ことばの 意味(こたえたら 出る。テンポを 止めない) ── */
-  function card(q, prev){
-    /* 問題が どれか ひと目で わかるように(けいくん 2026-09-26「はじめましてが問題だとずっと思ってた / 1番上に出てる行くはなに? / なにが問題かめちゃくちゃわかりずらい」):
-       ・さっき 打った ことばは 上に 小さく 1行(「✅ さっき」の 見出しつき)
-       ・問題は 英語を いちばん 大きく。「はじめまして」の ふだは 出さない(ふくしゅう・苦手は 小さな 字で そえるだけ) */
-    let h = "";
-    if(prev) h += '<div class="en-prev" role="status"><span class="en-pl">✅ さっき</span><b lang="en">' + esc(prev.t) + '</b><span class="en-eq">＝</span><span class="en-pm">' + esc(prev.m) + '</span>' + sayBtn(prev.t) + '</div>';
-    else h += '<div class="en-prev en-hint">打ち終わると、ここに 意味が 出るよ</div>';
-    const note = weakSet.has(q.art) ? " ・ 💪 苦手" : revSet.has(q.art) ? " ・ 🔁 ふくしゅう" : "";
-    const sub = q.kind === "word" ? esc(q.pos) + " ・ " + esc(q.m) : SCBY[q.sc].icon + " " + esc(SCBY[q.sc].name);
-    h += '<p class="en-type">⌨️ ' + (q.kind === "word" ? "この 英単語を 打とう" : "この 英語を 打とう") + '</p>' +
-         '<div class="en-q"><span class="en-ic">' + q.e + '</span><div class="en-qb">' +
-         (q.kind === "word" ? '<p class="en-word" lang="en">' + esc(q.t) + '</p>' : "") + '<small class="en-cat">' + sub + note + '</small></div>' +
-         (TTS ? '<button type="button" class="en-say big" data-en-say="' + esc(q.t) + '" aria-label="発音を 聞く">🔊 きく</button>' : "") + '</div>';
+  function card(q){
+    /* 問題の ときに 意味を いっしょに 出す(けいくん 2026-09-26「1番上に出ている答えを問題の時に出してください / 英語のスペルだけだと意味が分からない」)。
+       ・「さっき 打った ことば」の 行は 出さない(意味は 問題の ときに もう 見ている)
+       ・英単語: 英語を いちばん 大きく、その すぐ下に 日本語の 意味
+       ・英会話: 日本語の 意味を 大きめに、下に「💬 返事の例」。打つ 英文は その下の 四角
+       ・「はじめまして」の ふだは 出さない(ふくしゅう・苦手は 小さな 字で そえるだけ) */
+    const note = weakSet.has(q.art) ? '<span class="en-note2">💪 苦手</span>' : revSet.has(q.art) ? '<span class="en-note2">🔁 ふくしゅう</span>' : "";
+    const say = TTS ? '<button type="button" class="en-say big" data-en-say="' + esc(q.t) + '" aria-label="発音を 聞く">🔊 きく</button>' : "";
+    let h = '<p class="en-type">⌨️ ' + (q.kind === "word" ? "この 英単語を 打とう" : "この 英語を 打とう") + note + '</p>';
+    if(q.kind === "word"){
+      h += '<div class="en-q"><span class="en-ic">' + q.e + '</span><div class="en-qb"><p class="en-word" lang="en">' + esc(q.t) + '</p>' +
+           '<p class="en-mean"><span class="en-pos">' + esc(q.pos) + '</span>' + q.mrb + '</p></div>' + say + '</div>';
+    }else{
+      // 英会話は 日本語の 文が 長いので 横はば いっぱいに(🔊 と 場面は 上の 1行に)
+      h += '<div class="en-qp"><small class="en-cat">' + SCBY[q.sc].icon + " " + esc(SCBY[q.sc].name) + '</small>' + say + '</div>' +
+           '<p class="en-mean big">' + q.mrb + '</p>' +
+           (q.rp ? '<p class="en-rp1">💬 返事の例 <span lang="en">' + esc(q.rp) + '</span></p>' : "");
+    }
     return h;
   }
   /* 打つ 英文: 空白・記号も そのまま 見せる。色が かわるのは 打つ 字(英字・数字)だけ */
@@ -481,7 +486,10 @@ const EIKAIWA = (() => {
 .en-prev{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:13px;color:#475569;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:4px 8px;margin:0 0 10px;animation:enIn .35s ease-out}
 .en-prev b{color:#065f46;font-size:14px}.en-pl{font-size:11px;font-weight:800;color:#16a34a;background:#dcfce7;border-radius:99px;padding:1px 7px}.en-eq{color:#94a3b8}.en-pm{min-width:0}
 .en-prev .en-say{padding:2px 6px;font-size:12px}.en-prev.en-hint{color:#94a3b8}
-.en-qb{flex:1;min-width:0}.en-word{margin:2px 0 0;font-size:clamp(26px,8vw,34px);font-weight:900;line-height:1.15;color:var(--ink);word-break:break-word}
+.en-qb{flex:1;min-width:0}.en-mean{margin:2px 0 0;font-size:15px;font-weight:700;line-height:1.9;color:#065f46}.en-mean.big{font-size:17px;line-height:1.95}
+.en-note2{margin-left:8px;font-size:11.5px;font-weight:800;color:#9d174d;background:#fce7f3;border-radius:99px;padding:1px 7px}
+.en-qp{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 2px}.en-qp .en-cat{margin:0}
+.en-rp1{margin:0 0 8px;font-size:12.5px;color:#0369a1;line-height:1.5}.en-rp1 span{font-weight:700}.en-word{margin:2px 0 0;font-size:clamp(26px,8vw,34px);font-weight:900;line-height:1.15;color:var(--ink);word-break:break-word}
 .en-type{margin:0 0 4px;font-size:13px;font-weight:900;color:#0e8f6e}
 .en-tiles{display:flex;flex-wrap:wrap;gap:6px}
 .target .en-tile{display:inline-grid;place-items:center;min-width:1.5em;height:1.6em;padding:0 .15em;box-sizing:border-box;border-radius:8px;background:#fff;border:2px solid #cbd5e1;font-weight:800;line-height:1}

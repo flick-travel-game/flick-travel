@@ -194,3 +194,10 @@ GitHub Pages は リポジトリの「いちばん上」か「docs フォルダ�
 - **偉人の 生没年は Wikidata から**(`tools/fetch_years.py` → `tools/people-years.json`。`add_spots.py` が `y0` `y1` として 書く)。出来事の年は 場所の欄「1789年・フランス」「前431〜」「14〜16世紀」から `yearOf` が読む
 - 歴史の ロゴ・絵は まだ無い(`logo:false` `hero:false` → 文字の題名)。けいくんの絵が届いたら `rekishi/` に 置いて `build_games.py` の GAMES を `logo:true` に
 - ⚠️ 新しい リポジトリは この入れものからは 作れない(GitHub の権限が このリポジトリだけ)ので、**同じ リポジトリの フォルダ**(`/flick-travel/rekishi/`)で 出す
+
+## 宇宙フリック旅行・からだフリック旅行(2026-09-26。同じ日に 4つ そろった)
+- `uchu/`(太陽系 102・星と星座 150・宇宙のことば 57 = 309問)/ `karada/`(ほねと きんにく 75・臓器と しくみ 174・細胞と 遺伝 55 = 304問)。データは `tools/space.tsv` / `tools/body.tsv`(11列。`tools/check_series_tsv.py` で確かめる)
+- **地図のかわりに SVG の図**(`SVG_MAPS`: solar 太陽系 / sky 星図(赤経・赤緯)/ front からだ / head 頭 / cell 細胞)。⚠️ 図は コードで描く(AI の絵は 使わない。位置が ずれるため)。
+  旅によっては 図が 2つあり(`MAPS.*.maps`)、地図の上の タブで 切りかえる(`curSub`)。📍の位置は TSV の x,y(`SVG_MAPS[].pos`)
+- カードは 絵文字(写真は まだ無い。Wikipedia の題名 `w` を持っているので、あとで `fetch_photos.py` の pageimages の道で 取れる)。「📖 Wikipedia で くわしく」の リンク
+- ⚠️ からだの図は ぼくが 描いた かんたんな 人のかたち。けいくんの絵に 差しかえるなら、**同じ 前向き・同じ位置**(頭 y0.09・肩 y0.22・へそ y0.47・ひざ y0.74)で 描いてもらい `SVG_MAPS.front.bg` を `<image>` に する

@@ -211,6 +211,13 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .map[data-map="time"] #map-img,.map[data-map="time"] .sea,.map[data-map="time"] .compass{display:none}
 .map[data-map="time"]{background:linear-gradient(180deg,#fff9ee,#fff3dc)}
 .tl-wrap{width:100%;aspect-ratio:1080/300}
+/* 宇宙・からだ: 絵の上に 📍(SVG の 図。tools/build_games.py が 作る ページで 使う) */
+.map[data-map="svg"] #map-img,.map[data-map="svg"] .sea,.map[data-map="svg"] .compass{display:none}
+.svg-wrap{width:100%}
+.svg-wrap svg{display:block;width:100%;height:auto}
+.map-tabs{display:flex;gap:6px;margin:0 0 8px}
+.map-tabs button{padding:6px 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700}
+.map-tabs button.on{background:#1e293b;border-color:#1e293b;color:#fff}
 .tl-wrap svg{display:block;width:100%;height:100%}
 .logo-text{font-family:"Dela Gothic One",sans-serif;font-size:22px;color:var(--ink);line-height:1.1;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .series{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:2}
@@ -391,6 +398,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <div class="modes" id="modes"></div>
     <div class="map-card">
       <div class="map-head"><b id="map-title">世界一周マップ</b><span id="map-count">0 / 100か所</span></div>
+      <div class="map-tabs hidden" id="map-tabs"></div>
       <div class="map" id="map" data-map="world"><div class="map-in" id="map-in"><img id="map-img" src="world-map-color.jpg" alt="世界地図" width="1080" height="432">
         <span class="sea w" style="left:14%;top:51%">太平洋</span>
         <span class="sea w" style="left:92%;top:44%">太平洋</span>
@@ -679,7 +687,8 @@ const TONE = {
 };
 const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
-          capitals: toneFrom("#0d6e8c"), wevents: toneFrom("#8a5a2b"), jevents: toneFrom("#5b3fbf") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
+          capitals: toneFrom("#0d6e8c"), wevents: toneFrom("#8a5a2b"), jevents: toneFrom("#5b3fbf"),
+          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
@@ -1528,7 +1537,7 @@ const RUBY = {
  "jvsarin": "1995<ruby>年<rt>ねん</rt></ruby>3<ruby>月<rt>がつ</rt></ruby>20日、オウム<ruby>真理<rt>しんり</rt></ruby><ruby>教<rt>きょう</rt></ruby>が<ruby>通勤時間<rt>つうきんじかん</rt></ruby>の<ruby>地下鉄<rt>ちかてつ</rt></ruby>に<ruby>猛毒<rt>もうどく</rt></ruby>のサリンをまき、13<ruby>人<rt>にん</rt></ruby>が<ruby>亡<rt>な</rt></ruby>くなり6000<ruby>人<rt>にん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>が<ruby>被害<rt>ひがい</rt></ruby>を<ruby>受<rt>う</rt></ruby>けた。<ruby>世界<rt>せかい</rt></ruby>を<ruby>震<rt>ふる</rt></ruby>わせた<ruby>無差別<rt>むさべつ</rt></ruby>テロ。",
  "jvnagano": "1998<ruby>年<rt>ねん</rt></ruby>2<ruby>月<rt>がつ</rt></ruby>、<ruby>長野<rt>ながの</rt></ruby>で<ruby>冬季<rt>とうき</rt></ruby>オリンピックが<ruby>開<rt>ひら</rt></ruby>かれた。ジャンプ<ruby>団体<rt>だんたい</rt></ruby>の<ruby>金<rt>きん</rt></ruby>メダルやスピードスケートの<ruby>清水<rt>しみず</rt></ruby><ruby>宏保<rt>ひろやす</rt></ruby>の<ruby>金<rt>きん</rt></ruby>メダルに<ruby>日本<rt>にほん</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>がわいた。",
  "jvhigashinihon": "2011<ruby>年<rt>ねん</rt></ruby>3<ruby>月<rt>がつ</rt></ruby>11日<ruby>午後<rt>ごご</rt></ruby>2<ruby>時<rt>じ</rt></ruby>46<ruby>分<rt>ふん</rt></ruby>、マグニチュード9.0の<ruby>巨大<rt>きょだい</rt></ruby><ruby>地震<rt>じしん</rt></ruby>と<ruby>大津波<rt>おおつなみ</rt></ruby>が<ruby>東北<rt>とうほく</rt></ruby>をおそい、<ruby>約<rt>やく</rt></ruby>2<ruby>万<rt>まん</rt></ruby><ruby>人<rt>にん</rt></ruby>が<ruby>亡<rt>な</rt></ruby>くなった。<ruby>福島<rt>ふくしま</rt></ruby><ruby>第<rt>だい</rt></ruby><ruby>一<rt>いち</rt></ruby><ruby>原発<rt>げんぱつ</rt></ruby>の<ruby>事故<rt>じこ</rt></ruby>も<ruby>起<rt>お</rt></ruby>きた。",
- "jvtokyo2020": "<ruby>新型コロナウイルス<rt>しんがたころなういるす</rt></ruby>の<ruby>流行<rt>りゅうこう</rt></ruby>で1<ruby>年<rt>ねん</rt></ruby><ruby>延期<rt>えんき</rt></ruby>され、2021<ruby>年<rt>ねん</rt></ruby><ruby>夏<rt>なつ</rt></ruby>にほとんど<ruby>無観客<rt>むかんきゃく</rt></ruby>で<ruby>開<rt>ひら</rt></ruby>かれた。<ruby>日本<rt>にほん</rt></ruby>は<ruby>史上<rt>しじょう</rt></ruby><ruby>最多<rt>さいた</rt></ruby>の27<ruby>個<rt>こ</rt></ruby>の<ruby>金<rt>きん</rt></ruby>メダルを<ruby>取<rt>と</rt></ruby>った。"
+ "jvtokyo2020": "<ruby>新型コロナウイルス<rt>しんがたころなういるす</rt></ruby>の<ruby>流行<rt>りゅうこう</rt></ruby>で1<ruby>年<rt>ねん</rt></ruby><ruby>延期<rt>えんき</rt></ruby>され、2021<ruby>年<rt>ねん</rt></ruby><ruby>夏<rt>なつ</rt></ruby>にほとんど<ruby>無観客<rt>むかんきゃく</rt></ruby>で<ruby>開<rt>ひら</rt></ruby>かれた。<ruby>日本<rt>にほん</rt></ruby>は<ruby>史上<rt>しじょう</rt></ruby><ruby>最多<rt>さいた</rt></ruby>の27<ruby>個<rt>こ</rt></ruby>の<ruby>金<rt>きん</rt></ruby>メダルを<ruby>取<rt>と</rt></ruby>った。",
 };
 /* RUBY-END */
 /* Googleマップで ひらく(登録も お金も いらない ふつうのリンク) */
@@ -1549,7 +1558,10 @@ function gmapUrl(q){
      座標は さがす場所の 目安(同じ名前が よそにあっても ここを見る) */
   return "https://www.google.com/maps/search/" + encodeURIComponent(name) + "/@" + ll[0] + "," + ll[1] + "," + zoom + "z";
 }
-function gmapLink(q){ return '<a class="gmap" href="' + gmapUrl(q) + '" target="_blank" rel="noopener">' + (q.k === "person" ? "🗺 生まれた所を Googleマップで見る" : "🗺 Googleマップで見る") + '</a>'; }
+function gmapLink(q){
+  if(q.k === "space" || q.k === "body") return q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "";
+  return '<a class="gmap" href="' + gmapUrl(q) + '" target="_blank" rel="noopener">' + (q.k === "person" ? "🗺 生まれた所を Googleマップで見る" : "🗺 Googleマップで見る") + '</a>';
+}
 /* 名所の 緯度・経度(世界一周マップの ピンの位置)。地図は 北緯84度〜南緯60度 を 横長に切ったもの */
 const LATLON = {};
 "eiffel 48.86 2.29|liberty 40.69 -74.04|pyramid 29.98 31.13|wall 40.43 116.57|taj 27.17 78.04|fuji 35.36 138.73|colosseum 41.89 12.49|machu -13.16 -72.55|opera -33.86 151.21|bigben 51.50 -0.12|sagrada 41.40 2.17|angkor 13.41 103.87|pisa 43.72 10.40|arc 48.87 2.30|moai -27.12 -109.35|golden 37.82 -122.48|castle 47.56 10.75|basil 55.75 37.62|stone 51.18 -1.83|kinkaku 35.04 135.73|uluru -25.34 131.04|petra 30.33 35.44|mtsaint 48.64 -1.51|versailles 48.80 2.12|notredame 48.85 2.35|peter 41.90 12.45|venice 45.44 12.33|florence 43.77 11.26|pompeii 40.75 14.49|parthenon 37.97 23.73|santorini 36.46 25.38|alhambra 37.18 -3.59|towerbridge 51.51 -0.08|edinburgh 55.95 -3.20|brandenburg 52.52 13.38|cologne 50.94 6.96|charles 50.09 14.41|matterhorn 45.98 7.66|hagia 41.01 28.98|cappadocia 38.64 34.83|schonbrunn 48.18 16.31|kinderdijk 51.88 4.64|britishmuseum 51.52 -0.13|trevi 41.90 12.48|kiyomizu 34.99 135.78|itsukushima 34.30 132.32|himeji 34.84 134.69|todaiji 34.69 135.84|nikko 36.76 139.60|skytree 35.71 139.81|tokyotower 35.66 139.75|fushimi 34.97 135.77|shirakawa 36.26 136.91|genbaku 34.40 132.45|yakushima 30.36 130.53|forbidden 39.92 116.40|terracotta 34.38 109.28|potala 29.66 91.12|guilin 25.27 110.29|borobudur -7.61 110.20|halong 20.91 107.18|watarun 13.74 100.49|bagan 21.17 94.86|everest 27.99 86.93|goldentemple 31.62 74.88|shwedagon 16.80 96.15|victoria -17.92 25.86|kilimanjaro -3.07 37.35|sahara 23.40 13.00|tablemtn -33.96 18.40|abusimbel 22.34 31.63|sphinx 29.98 31.14|baobab -20.25 44.42|grandcanyon 36.10 -112.10|niagara 43.08 -79.07|rushmore 43.88 -103.46|yellowstone 44.43 -110.59|whitehouse 38.90 -77.04|empire 40.75 -73.99|chichen 20.68 -88.57|christ -22.95 -43.21|iguazu -25.69 -54.44|uyuni -20.13 -67.49|teotihuacan 19.69 -98.84|perito -50.50 -73.05|monument 36.98 -110.11|angel 5.97 -62.54|reef -18.29 147.70|milford -44.67 167.93|harbour -33.85 151.21|milan 45.46 9.19|buckingham 51.50 -0.14|hallstatt 47.56 13.65|bluemosque 41.01 28.98|diamondhead 21.26 -157.81|londoneye 51.50 -0.12|westminster 51.50 -0.13|budapest 47.51 19.05|kamakura 35.32 139.54|antelope 36.86 -111.37".split("|").forEach(s => { const [k,la,lo] = s.split(" "); LATLON[k] = [+la, +lo]; });
@@ -2009,7 +2021,10 @@ const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filt
                 wnames: SPOTS.filter(q => q.k === "name" && !isJapan(q)), jnames: SPOTS.filter(q => q.k === "name" && isJapan(q)),
                 wpeople: SPOTS.filter(q => q.k === "person" && !isJapan(q)), jpeople: SPOTS.filter(q => q.k === "person" && isJapan(q)),
                 /* 受験むけ(けいくん 2026-09-26「大学受験、高校受験に役立つやつ」→「おすすめすべて」): 首都・世界史・日本史 */
-                capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)) };
+                capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)),
+                /* 宇宙フリック旅行(key の あたま sol / sky / cos)・からだフリック旅行(bon mus / org sys / cel) */
+                usolar: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sol")), usky: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sky")), ucos: SPOTS.filter(q => q.k === "space" && q.art.startsWith("cos")),
+                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")) };
 /* 日本一周マップの 決めごと(tools/make_japan_map.py と 同じ数字)。本土は 東経128.5〜146.5 / 北緯29.8〜46。
    南西諸島(北緯28度より南)は 左上の わく(東経122.5〜 / 北緯27.5〜)に 同じ縮尺で */
 const JAPAN_MAP = { lon0:128.5, lat1:46, kx:20, k:25, w:360, h:405, ix:6, iy:6, ilon0:122.5, ilat1:27.5 };
@@ -2039,7 +2054,14 @@ MAPS.wevents = { time:true, jp:false, w:TIME_W, h:TIME_H, src:"", icon:"📜", n
 MAPS.jevents = { time:true, jp:true, w:TIME_W, h:TIME_H, src:"", icon:"🏯", name:"日本史", title:"日本史年表", word:"年表", sub:"出来事の名前を打つ。年と解説つき", thing:"出来事(起きた年)", unit:"件", doneWord:"知った出来事", miss:"まだ知らない出来事" };
 MAPS.wpeople.unit = "人"; MAPS.jpeople.unit = "人"; MAPS.wpeople.doneWord = "知った人"; MAPS.jpeople.doneWord = "知った人"; MAPS.wpeople.miss = "まだ知らない偉人"; MAPS.jpeople.miss = "まだ知らない偉人";
 function unitOf(M){ return M.unit === undefined ? "か所" : M.unit; }
-const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents"];
+/* 宇宙・からだ: 絵(SVG)の上に 📍。maps = その旅で 切りかえられる 図(タブ)。図は SVG_MAPS に */
+MAPS.usolar = { svg:true, maps:["solar"], w:1080, h:420, src:"", icon:"🪐", name:"太陽系", title:"太陽系の図", word:"太陽系の図", sub:"太陽・惑星・衛星・探査機", thing:"天体", unit:"", doneWord:"知った天体", miss:"まだ知らない天体" };
+MAPS.usky = { svg:true, maps:["sky"], w:1080, h:540, src:"", icon:"⭐", name:"星と星座", title:"星図", word:"星図", sub:"1等星・星座・銀河・星雲", thing:"星", unit:"", doneWord:"知った星", miss:"まだ知らない星" };
+MAPS.ucos = { svg:true, maps:["sky","solar"], w:1080, h:540, src:"", icon:"🌌", name:"宇宙のことば", title:"宇宙の図", word:"宇宙の図", sub:"ブラックホール・光年・宇宙飛行士…", thing:"ことばの場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.kbone = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🦴", name:"ほねと きんにく", title:"からだの図", word:"からだの図", sub:"骨・関節・筋肉", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
+MAPS.korgan = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🫀", name:"臓器と しくみ", title:"からだの図", word:"からだの図", sub:"心臓・肺・胃・脳・血液・ホルモン…", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
+MAPS.kcell = { svg:true, maps:["cell"], w:720, h:720, src:"", icon:"🧬", name:"細胞と 遺伝", title:"細胞の図", word:"細胞の図", sub:"細胞・DNA・遺伝子…", thing:"場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell"];
 const MODES = ALL_MODES.filter(m => GAME.modes.includes(m));  // この ゲームに 出す 旅だけ
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
 
@@ -2129,13 +2151,13 @@ function setMode(m){
   const M = MAPS[m], img = $("#map-img");
   if(!M.time && !img.src.endsWith(M.src) && !((img.src.endsWith(M.hi || "@") || img.src.endsWith(M.hi2 || "@")) && MZ.s > 1.2)){ img.src = M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
   $("#map").style.aspectRatio = M.w + " / " + M.h;  // 中身が absolute なので 高さは ここで決める
-  if($("#map").dataset.mode !== m) mapReset();  // 旅を切りかえたら 拡大を もどす
+  if($("#map").dataset.mode !== m){ mapReset(); curSub = null; }  // 旅を切りかえたら 拡大と 図のタブを もどす
   $("#map").dataset.mode = m;
   /* ⚠️ data-map は 地図の しゅるい(world / japan / time=年表)。旅の名前(wnames・capitals…)を 入れると、
      海の名前の「世界だけ / 日本だけ」の 出しわけが 効かず、世界地図に 日本海・沖縄が 重なって 文字化けのように 見えた(けいくん 2026-09-26) */
-  $("#map").dataset.map = M.time ? "time" : M.src.startsWith("japan") ? "japan" : "world";
+  $("#map").dataset.map = M.time ? "time" : M.svg ? "svg" : M.src.startsWith("japan") ? "japan" : "world";
   $("#map-title").textContent = M.title;
-  $("#map-cap").innerHTML = "レベルをクリアすると、その" + (M.thing || "名所") + "に 📍が立つよ。📍を押すと 名前が出るよ。2本の指で " + (M.time ? "年表" : "地図") + "を大きくできるよ。";
+  $("#map-cap").innerHTML = "レベルをクリアすると、その" + (M.thing || "名所") + "に 📍が立つよ。📍を押すと 名前が出るよ。2本の指で " + (M.time ? "年表" : M.svg ? "図" : "地図") + "を大きくできるよ。";
   $("#lv-title").textContent = M.name + "　レベルをえらぶ";
   drawModes(); drawMap(); openLevels(m); drawRec();
 }
@@ -2184,8 +2206,111 @@ function drawTimeline(done, M){
   for(const it of items){ let l = lanes.findIndex(v => it.x - v >= gap); if(l < 0){ l = lanes.indexOf(Math.min(...lanes)); } lanes[l] = it.x; it.lane = l; }
   return items.map(it => ({ q:it.q, i:it.i, x:it.x, yy:(bot - 6 - it.lane * 42) / H, year:it.y }));
 }
+/* ── 宇宙・からだ の 図(SVG は ここで 描く。AI の絵は 使わない = 位置が ずれないため) ──
+   bg(W,H) = 背景の SVG の中身 / pos(x,y) = TSV の x,y → 図の中の 割合 */
+const SVG_MAPS = {
+  solar: { w:1080, h:420, pos:(x,y) => [x, 0.5 + y * 0.38], bg:(W,H) => {
+    const P = [["太陽",.03,44,"#ffcc33"],["水星",.10,5,"#b9b0a5"],["金星",.16,8,"#e9c47a"],["地球",.22,8.5,"#3f8be0"],["火星",.29,6,"#d4573b"],["木星",.45,26,"#d9a066"],["土星",.57,22,"#e6cf8e"],["天王星",.69,14,"#8fd8e8"],["海王星",.80,13,"#3b5fd9"],["冥王星",.88,4,"#c9b8a8"]];
+    let o = '<defs><radialGradient id="sg-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff3b0"/><stop offset="1" stop-color="#ff9f1c"/></radialGradient><linearGradient id="sg-sp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1740"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient></defs>';
+    o += '<rect width="' + W + '" height="' + H + '" fill="url(#sg-sp)"/>';
+    let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+    for(let i = 0; i < 160; i++) o += '<circle cx="' + (rnd()*W).toFixed(0) + '" cy="' + (rnd()*H).toFixed(0) + '" r="' + (rnd()*1.2+0.3).toFixed(1) + '" fill="#fff" opacity="' + (rnd()*0.6+0.3).toFixed(2) + '"/>';
+    o += '<line x1="0" y1="' + H/2 + '" x2="' + W + '" y2="' + H/2 + '" stroke="#ffffff" stroke-opacity="0.18" stroke-dasharray="4 6"/>';
+    for(let i = 0; i < 90; i++){ const x = (0.335 + rnd()*0.05) * W, y = H/2 + (rnd()-0.5)*60; o += '<circle cx="' + x.toFixed(0) + '" cy="' + y.toFixed(0) + '" r="1.2" fill="#c8c0b0" opacity="0.8"/>'; }
+    o += '<text x="' + (0.36*W).toFixed(0) + '" y="' + (H/2 + 48) + '" text-anchor="middle" font-size="11" fill="#c8c0b0">小惑星帯</text>';
+    for(const [n,x,r,c] of P){
+      const cx = x*W, cy = H/2;
+      if(n === "太陽") o += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="url(#sg-sun)"/>';
+      else o += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + c + '"/>';
+      if(n === "土星") o += '<ellipse cx="' + cx + '" cy="' + cy + '" rx="' + (r*1.9) + '" ry="' + (r*0.5) + '" fill="none" stroke="#e6cf8e" stroke-width="3" opacity="0.8"/>';
+      if(n === "地球") o += '<circle cx="' + (cx + 16) + '" cy="' + (cy - 12) + '" r="2.5" fill="#ddd"/>';
+      o += '<text x="' + cx + '" y="' + (cy + Math.max(r,8) + 16) + '" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">' + n + '</text>';
+    }
+    o += '<text x="' + (0.97*W).toFixed(0) + '" y="' + (H/2 - 14) + '" text-anchor="middle" font-size="11" fill="#c8d0ff">太陽系の果て</text>';
+    return o; } },
+  sky: { w:1080, h:540, pos:(ra,dec) => [1 - ra / 24, (90 - dec) / 180], bg:(W,H) => {
+    let o = '<defs><linearGradient id="sg-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050a2a"/><stop offset="1" stop-color="#101a4d"/></linearGradient></defs><rect width="' + W + '" height="' + H + '" fill="url(#sg-sky)"/>';
+    let seed = 11; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+    for(let i = 0; i < 420; i++) o += '<circle cx="' + (rnd()*W).toFixed(0) + '" cy="' + (rnd()*H).toFixed(0) + '" r="' + (rnd()*1.3+0.3).toFixed(1) + '" fill="#fff" opacity="' + (rnd()*0.7+0.2).toFixed(2) + '"/>';
+    // 天の川(ざっくり。銀河の中心 = いて座(RA 17.8h・-29°)を通る 帯)
+    o += '<path d="M ' + (W*0.03) + ' ' + (H*0.72) + ' C ' + (W*0.2) + ' ' + (H*0.3) + ', ' + (W*0.45) + ' ' + (H*0.15) + ', ' + (W*0.62) + ' ' + (H*0.45) + ' S ' + (W*0.9) + ' ' + (H*0.85) + ', ' + (W*1.02) + ' ' + (H*0.6) + '" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="70"/>';
+    for(let h = 0; h <= 24; h += 2){ const x = (1 - h/24) * W; o += '<line x1="' + x + '" y1="0" x2="' + x + '" y2="' + H + '" stroke="#fff" stroke-opacity="0.08"/><text x="' + (x + 3) + '" y="' + (H - 6) + '" font-size="10" fill="#9fb0ff">' + h + 'h</text>'; }
+    for(let d = -60; d <= 60; d += 30){ const y = (90 - d)/180 * H; o += '<line x1="0" y1="' + y + '" x2="' + W + '" y2="' + y + '" stroke="#fff" stroke-opacity="' + (d === 0 ? 0.25 : 0.08) + '"/><text x="4" y="' + (y - 3) + '" font-size="10" fill="#9fb0ff">' + (d > 0 ? "+" : "") + d + '°</text>'; }
+    o += '<text x="' + (W - 8) + '" y="16" text-anchor="end" font-size="11" fill="#9fb0ff">北の空 ↑</text><text x="' + (W - 8) + '" y="' + (H - 6) + '" text-anchor="end" font-size="11" fill="#9fb0ff">南の空 ↓</text>';
+    return o; } },
+  front: { w:720, h:900, pos:(x,y) => [x, y], bg:(W,H) => {
+    const sk = '#f6d7c3', ln = '#c99a80';
+    let o = '<rect width="' + W + '" height="' + H + '" fill="#fff7f2"/>';
+    const g = (d) => '<path d="' + d + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3" stroke-linejoin="round"/>';
+    o += '<ellipse cx="' + W*0.5 + '" cy="' + H*0.09 + '" rx="' + W*0.085 + '" ry="' + H*0.068 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/>';
+    o += g('M' + W*0.46 + ' ' + H*0.155 + ' L' + W*0.54 + ' ' + H*0.155 + ' L' + W*0.54 + ' ' + H*0.2 + ' L' + W*0.46 + ' ' + H*0.2 + ' Z');
+    o += g('M' + W*0.3 + ' ' + H*0.21 + ' Q' + W*0.5 + ' ' + H*0.19 + ' ' + W*0.7 + ' ' + H*0.21 + ' L' + W*0.66 + ' ' + H*0.5 + ' Q' + W*0.5 + ' ' + H*0.54 + ' ' + W*0.34 + ' ' + H*0.5 + ' Z');
+    o += g('M' + W*0.3 + ' ' + H*0.215 + ' L' + W*0.2 + ' ' + H*0.26 + ' L' + W*0.12 + ' ' + H*0.55 + ' L' + W*0.19 + ' ' + H*0.57 + ' L' + W*0.27 + ' ' + H*0.33 + ' L' + W*0.31 + ' ' + H*0.36 + ' Z');
+    o += g('M' + W*0.7 + ' ' + H*0.215 + ' L' + W*0.8 + ' ' + H*0.26 + ' L' + W*0.88 + ' ' + H*0.55 + ' L' + W*0.81 + ' ' + H*0.57 + ' L' + W*0.73 + ' ' + H*0.33 + ' L' + W*0.69 + ' ' + H*0.36 + ' Z');
+    o += g('M' + W*0.35 + ' ' + H*0.5 + ' L' + W*0.49 + ' ' + H*0.53 + ' L' + W*0.47 + ' ' + H*0.75 + ' L' + W*0.46 + ' ' + H*0.96 + ' L' + W*0.36 + ' ' + H*0.96 + ' L' + W*0.37 + ' ' + H*0.75 + ' Z');
+    o += g('M' + W*0.65 + ' ' + H*0.5 + ' L' + W*0.51 + ' ' + H*0.53 + ' L' + W*0.53 + ' ' + H*0.75 + ' L' + W*0.54 + ' ' + H*0.96 + ' L' + W*0.64 + ' ' + H*0.96 + ' L' + W*0.63 + ' ' + H*0.75 + ' Z');
+    // 心臓・肺・胃・腸の うすい しるし(場所の目安)
+    o += '<ellipse cx="' + W*0.40 + '" cy="' + H*0.30 + '" rx="' + W*0.06 + '" ry="' + H*0.06 + '" fill="#f3b7b7" opacity="0.5"/><ellipse cx="' + W*0.60 + '" cy="' + H*0.30 + '" rx="' + W*0.06 + '" ry="' + H*0.06 + '" fill="#f3b7b7" opacity="0.5"/>';
+    o += '<ellipse cx="' + W*0.46 + '" cy="' + H*0.31 + '" rx="' + W*0.03 + '" ry="' + H*0.03 + '" fill="#e0606a" opacity="0.6"/>';
+    o += '<ellipse cx="' + W*0.55 + '" cy="' + H*0.40 + '" rx="' + W*0.045 + '" ry="' + H*0.03 + '" fill="#f0c48a" opacity="0.6"/><ellipse cx="' + W*0.42 + '" cy="' + H*0.38 + '" rx="' + W*0.05 + '" ry="' + H*0.03 + '" fill="#c98a6a" opacity="0.5"/>';
+    o += '<ellipse cx="' + W*0.5 + '" cy="' + H*0.47 + '" rx="' + W*0.09 + '" ry="' + H*0.045 + '" fill="#f0a8a0" opacity="0.4"/>';
+    o += '<text x="' + W*0.5 + '" y="' + (H - 10) + '" text-anchor="middle" font-size="12" fill="#a08070">前から見た からだ(向かって左が 右手)</text>';
+    return o; } },
+  head: { w:720, h:720, pos:(x,y) => [x, y], bg:(W,H) => {
+    const sk = '#f6d7c3', ln = '#c99a80';
+    let o = '<rect width="' + W + '" height="' + H + '" fill="#fff7f2"/>';
+    o += '<ellipse cx="' + W*0.12 + '" cy="' + H*0.5 + '" rx="' + W*0.05 + '" ry="' + H*0.08 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/><ellipse cx="' + W*0.88 + '" cy="' + H*0.5 + '" rx="' + W*0.05 + '" ry="' + H*0.08 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/>';
+    o += '<ellipse cx="' + W*0.5 + '" cy="' + H*0.48 + '" rx="' + W*0.34 + '" ry="' + H*0.42 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/>';
+    o += '<path d="M' + W*0.42 + ' ' + H*0.9 + ' L' + W*0.42 + ' ' + H + ' L' + W*0.58 + ' ' + H + ' L' + W*0.58 + ' ' + H*0.9 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/>';
+    o += '<path d="M' + W*0.2 + ' ' + H*0.3 + ' Q' + W*0.5 + ' ' + H*0.02 + ' ' + W*0.8 + ' ' + H*0.3 + ' Q' + W*0.5 + ' ' + H*0.22 + ' ' + W*0.2 + ' ' + H*0.3 + ' Z" fill="#e7b6a0" opacity="0.7"/>';
+    o += '<ellipse cx="' + W*0.35 + '" cy="' + H*0.45 + '" rx="' + W*0.06 + '" ry="' + H*0.035 + '" fill="#fff" stroke="' + ln + '" stroke-width="2"/><circle cx="' + W*0.35 + '" cy="' + H*0.45 + '" r="' + W*0.025 + '" fill="#5a3a2a"/>';
+    o += '<ellipse cx="' + W*0.65 + '" cy="' + H*0.45 + '" rx="' + W*0.06 + '" ry="' + H*0.035 + '" fill="#fff" stroke="' + ln + '" stroke-width="2"/><circle cx="' + W*0.65 + '" cy="' + H*0.45 + '" r="' + W*0.025 + '" fill="#5a3a2a"/>';
+    o += '<path d="M' + W*0.5 + ' ' + H*0.48 + ' L' + W*0.46 + ' ' + H*0.6 + ' L' + W*0.54 + ' ' + H*0.6 + '" fill="none" stroke="' + ln + '" stroke-width="3" stroke-linejoin="round"/>';
+    o += '<path d="M' + W*0.4 + ' ' + H*0.72 + ' Q' + W*0.5 + ' ' + H*0.79 + ' ' + W*0.6 + ' ' + H*0.72 + '" fill="#e88a8a" stroke="' + ln + '" stroke-width="2"/>';
+    o += '<text x="' + W*0.5 + '" y="' + (H*0.15) + '" text-anchor="middle" font-size="13" fill="#a08070">頭の中(脳)</text>';
+    return o; } },
+  cell: { w:720, h:720, pos:(x,y) => [x, y], bg:(W,H) => {
+    let o = '<rect width="' + W + '" height="' + H + '" fill="#eefaf3"/>';
+    o += '<path d="M' + W*0.5 + ' ' + H*0.06 + ' C' + W*0.85 + ' ' + H*0.02 + ' ' + W*0.98 + ' ' + H*0.4 + ' ' + W*0.92 + ' ' + H*0.62 + ' C' + W*0.86 + ' ' + H*0.9 + ' ' + W*0.55 + ' ' + H*0.99 + ' ' + W*0.3 + ' ' + H*0.9 + ' C' + W*0.05 + ' ' + H*0.8 + ' ' + W*0.02 + ' ' + H*0.4 + ' ' + W*0.18 + ' ' + H*0.2 + ' C' + W*0.28 + ' ' + H*0.08 + ' ' + W*0.4 + ' ' + H*0.07 + ' ' + W*0.5 + ' ' + H*0.06 + ' Z" fill="#d9f2e3" stroke="#2f9e6a" stroke-width="5"/>';
+    o += '<circle cx="' + W*0.5 + '" cy="' + H*0.5 + '" r="' + W*0.14 + '" fill="#b9a7e6" stroke="#6b4fc3" stroke-width="4"/><circle cx="' + W*0.5 + '" cy="' + H*0.5 + '" r="' + W*0.05 + '" fill="#6b4fc3"/>';
+    for(const [x,y,r] of [[0.3,0.3,-20],[0.72,0.3,25],[0.75,0.7,-30],[0.28,0.72,15]]) o += '<ellipse cx="' + W*x + '" cy="' + H*y + '" rx="' + W*0.06 + '" ry="' + H*0.03 + '" transform="rotate(' + r + ' ' + W*x + ' ' + H*y + ')" fill="#f4a261" stroke="#c96a2a" stroke-width="2"/>';
+    o += '<text x="' + W*0.5 + '" y="' + (H - 12) + '" text-anchor="middle" font-size="13" fill="#4a7a60">細胞の中(まん中が 核)</text>';
+    return o; } },
+};
+let curSub = null;  // いま出している 図(maps の どれか)
+function drawSvgMap(done, M){
+  if(!M.maps.includes(curSub)) curSub = M.maps[0];
+  const D = SVG_MAPS[curSub];
+  $("#map").style.aspectRatio = D.w + " / " + D.h;
+  let box = $("#svgmap"); if(!box){ box = document.createElement("div"); box.id = "svgmap"; box.className = "svg-wrap"; $("#map-in").appendChild(box); }
+  box.innerHTML = '<svg viewBox="0 0 ' + D.w + ' ' + D.h + '" xmlns="http://www.w3.org/2000/svg">' + D.bg(D.w, D.h) + '</svg>';
+  const tabs = $("#map-tabs"); tabs.classList.toggle("hidden", M.maps.length < 2);
+  const NAME = { solar:"太陽系", sky:"星空", front:"からだ", head:"頭", cell:"細胞" };
+  tabs.innerHTML = M.maps.map(k => '<button type="button" data-k="' + k + '"' + (k === curSub ? ' class="on"' : '') + '>' + NAME[k] + '</button>').join("");
+  tabs.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { curSub = b.dataset.k; mapReset(); drawMap(); }));
+  const items = [];
+  LEVELS[mode].forEach((lv, i) => lv.forEach(q => { if(!done.has(q.art) || q.mp !== curSub) return; const [fx, fy] = D.pos(q.x, q.y); items.push({q, i, x:fx, yy:fy}); }));
+  return items;
+}
 function drawMap(){
   const done = clearedSpots(mode), map = $("#map"), M = MAPS[mode];
+  const oldSvg = $("#svgmap"); if(oldSvg && !M.svg) oldSvg.remove();
+  if(!M.svg) $("#map-tabs").classList.add("hidden");
+  if(M.svg){
+    map.querySelectorAll(".pin").forEach(p => p.remove());
+    for(const it of drawSvgMap(done, M)){
+      const b = document.createElement("button"), q = it.q, i = it.i;
+      b.className = "pin on"; b.style.left = (it.x * 100) + "%"; b.style.top = (it.yy * 100) + "%";
+      b.style.setProperty("--c", levelTone(i).a); b.setAttribute("aria-label", q.n); b.innerHTML = "<i>📍</i>";
+      b.addEventListener("click", () => {
+        map.querySelectorAll(".pin.sel").forEach(p => p.classList.remove("sel")); b.classList.add("sel");
+        $("#map-cap").innerHTML = "📍 <b>" + nameRuby(q) + "</b>(" + esc(q.c) + ")・レベル" + (i+1) + "<br>" + gmapLink(q);
+      });
+      $("#map-in").appendChild(b);
+    }
+    $("#map-count").textContent = done.size + " / " + POOLS[mode].length + unitOf(MAPS[mode]);
+    return;
+  }
   map.querySelectorAll(".pin").forEach(p => p.remove());
   const oldTl = $("#tl"); if(oldTl && !M.time) oldTl.remove();
   if(M.time){

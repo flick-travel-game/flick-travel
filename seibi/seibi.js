@@ -277,6 +277,7 @@ const SEIBI = (() => {
       '<div class="ai-btns"><button type="button" class="ai-btn" data-ai-open="zukan">📖 部品図鑑</button>' +
       '<button type="button" class="ai-btn" data-ai-open="weak">💪 苦手ことば' + (wk ? "(" + wk + ")" : "") + '</button>' +
       '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 4択クイズ</button>' +
+      '<button type="button" class="ai-btn" data-ai-open="calc">🧮 計算問題</button>' +
       '<button type="button" class="ai-btn" data-ai-open="fav">⭐ お気に入り' + (fv ? "(" + fv + ")" : "") + '</button></div>' +
       '<div class="ai-diag"><p class="ai-dh">🗺 しくみ図 <small>覚えた ことばが 📍に なるよ。場所を おすと 中身が 出るよ</small></p><div class="ai-dtabs">' +
       DIAGS.map(k => '<button type="button" data-ai-diag="' + k + '"' + (k === diagCur ? ' class="on"' : "") + '>' + D.diagrams[k].icon + " " + esc(D.diagrams[k].name) + '</button>').join("") +
@@ -448,9 +449,137 @@ const SEIBI = (() => {
     drawQuiz();
   }
 
+  /* ── 🧮 計算問題(けいくん 2026-09-26「計算問題は追加出来る？」→「1」= 4択)──
+     ・整備士の 試験で よく 出る 形の 計算を、数字を 毎回 かえて 出す(**問題も 答えも プログラムが 作る**。過去問は 写さない)
+     ・まちがいの 3つは「よく ある まちがい」から 作る(÷4 わすれ・2乗 わすれ・単位の なおし わすれ・逆に 割る など)
+     ・答えた あとに 式と 途中の 計算を 出す。円周率は 3.14
+     ・1つの 問題 = { g:なかま, lv:"3級"/"2級", q:問題文, a:答え, d:小数の けた, u:単位, w:[まちがい…], ex:[とき方…] } */
+  const PI = 3.14;
+  const ri = (a, b, st) => { st = st || 1; return a + st * Math.floor(Math.random() * (Math.floor((b - a) / st) + 1)); };
+  const pk = a => a[Math.floor(Math.random() * a.length)];
+  const nf = (x, d) => Number(x.toFixed(d)).toLocaleString("ja-JP", { maximumFractionDigits:d, minimumFractionDigits:0 });
+  const CALC_G = [["engine", "🔥 エンジン"], ["gear", "⚙️ 歯車・速さ"], ["force", "🔧 ちから・出力"], ["brake", "🛑 ブレーキ"], ["elec", "⚡ 電気"], ["measure", "📏 はかる"]];
+  const CALC = [
+    () => { const B = pk([72, 75, 78, 80, 82, 84, 86, 88, 90]), S = ri(70, 94, 2), n = pk([3, 4, 6]), v1 = PI / 4 * B * B * S / 1000, t = v1 * n;
+      return { g:"engine", lv:"3級", q:"ボア(シリンダーの 内径)" + B + "mm、ストローク " + S + "mm の " + n + "気筒 エンジン。総排気量は およそ いくつ？", a:t, d:0, u:"cm³",
+        w:[v1, PI * B * B * S / 1000 * n, PI / 4 * B * B * S * n / 100],
+        ex:["1気筒の 行程容積 = π/4 × ボア² × ストローク", "= 3.14 ÷ 4 × " + B + "² × " + S + " = " + nf(v1 * 1000, 0) + " mm³ = " + nf(v1, 1) + " cm³(mm³ を ÷1000 で cm³ に)", "総排気量 = " + nf(v1, 1) + " × " + n + "気筒 = " + nf(t, 0) + " cm³"] }; },
+    () => { const e = pk([8, 9, 10, 10.5, 11, 12]), Vc = pk([40, 44, 46, 50, 52, 56, 60]), Vs = (e - 1) * Vc;
+      return { g:"engine", lv:"3級", q:"1気筒の 行程容積 " + nf(Vs, 0) + " cm³、燃焼室容積 " + Vc + " cm³ の エンジン。圧縮比は いくつ？", a:e, d:1, u:"",
+        w:[Vs / Vc, e + 1, (Vs + Vc) / Vs],
+        ex:["圧縮比 = (行程容積 + 燃焼室容積)÷ 燃焼室容積", "= (" + nf(Vs, 0) + " + " + Vc + ")÷ " + Vc + " = " + nf(e, 1), "⚠️ 行程容積 ÷ 燃焼室容積 だけだと 1 小さく なる"] }; },
+    () => { const Vs = pk([400, 450, 500, 540]), e = pk([9, 10, 11]), Vc = Vs / (e - 1);
+      return { g:"engine", lv:"2級", q:"1気筒の 行程容積 " + Vs + " cm³、圧縮比 " + e + " の エンジン。燃焼室容積は およそ いくつ？", a:Vc, d:1, u:"cm³",
+        w:[Vs / e, Vs / (e + 1), Vs * (e - 1) / 10],
+        ex:["圧縮比 = (行程容積 + 燃焼室容積)÷ 燃焼室容積 なので", "燃焼室容積 = 行程容積 ÷(圧縮比 − 1)", "= " + Vs + " ÷(" + e + " − 1)= " + nf(Vc, 1) + " cm³"] }; },
+    () => { const a1 = ri(14, 20), b1 = ri(28, 44), a2 = ri(14, 20), b2 = ri(30, 48), r = b1 / a1 * b2 / a2;
+      return { g:"gear", lv:"3級", q:"歯車A(歯数 " + a1 + ")が 歯車B(歯数 " + b1 + ")を 回し、Bと 同じ 軸の 歯車C(歯数 " + a2 + ")が 歯車D(歯数 " + b2 + ")を 回す。AからDまでの 減速比は？", a:r, d:2, u:"",
+        w:[a1 / b1 * a2 / b2, b1 / a1 + b2 / a2, (b1 + b2) / (a1 + a2)],
+        ex:["減速比 = 回される 歯車の 歯数 ÷ 回す 歯車の 歯数(段ごとに かける)", "= (" + b1 + " ÷ " + a1 + ")×(" + b2 + " ÷ " + a2 + ")", "= " + nf(b1 / a1, 3) + " × " + nf(b2 / a2, 3) + " = " + nf(r, 2)] }; },
+    () => { const g = pk([3.5, 2.1, 1.4, 1.0, 0.8]), f = pk([3.9, 4.1, 4.3]), N = ri(1800, 3600, 200), o = N / (g * f);
+      return { g:"gear", lv:"2級", q:"エンジン回転 " + N + " rpm、変速比 " + g + "、最終減速比 " + f + "。ドライブシャフト(タイヤ)の 回転数は およそ いくつ？", a:o, d:0, u:"rpm",
+        w:[N / g, N / (g + f), N / f * g],
+        ex:["総減速比 = 変速比 × 最終減速比 = " + g + " × " + f + " = " + nf(g * f, 2), "タイヤの 回転数 = エンジン回転 ÷ 総減速比", "= " + N + " ÷ " + nf(g * f, 2) + " = " + nf(o, 0) + " rpm"] }; },
+    () => { const N = ri(2000, 4000, 500), g = pk([0.8, 1.0, 1.2]), f = pk([3.8, 4.0, 4.2]), C = pk([1.8, 1.9, 2.0]), v = N / (g * f) * C * 60 / 1000;
+      return { g:"gear", lv:"2級", q:"エンジン回転 " + N + " rpm、変速比 " + g + "、最終減速比 " + f + "、タイヤが 1回転で 進む きょり " + C + " m。車の 速さは およそ いくつ？", a:v, d:1, u:"km/h",
+        w:[v / 60, v * f, N / g * C / 1000],
+        ex:["タイヤの 回転数 = " + N + " ÷(" + g + " × " + f + ")= " + nf(N / (g * f), 1) + " 回/分", "1分で 進む きょり = " + nf(N / (g * f), 1) + " × " + C + " = " + nf(N / (g * f) * C, 0) + " m", "1時間(60分)で → × 60 ÷ 1000 = " + nf(v, 1) + " km/h"] }; },
+    () => { const F = ri(100, 500, 50), L = ri(20, 50, 5), T = F * L / 100;
+      return { g:"force", lv:"3級", q:"長さ " + L + " cm の レンチの 先に " + F + " N の ちからを かけた。ボルトに かかる トルクは いくつ？", a:T, d:1, u:"N・m",
+        w:[F * L, F / (L / 100), F * L / 1000],
+        ex:["トルク = ちから × 腕の 長さ(m)", L + " cm = " + nf(L / 100, 2) + " m", "= " + F + " × " + nf(L / 100, 2) + " = " + nf(T, 1) + " N・m"] }; },
+    () => { const T = ri(120, 300, 10), N = ri(2000, 6000, 500), P = 2 * PI * N * T / 60 / 1000;
+      return { g:"force", lv:"2級", q:"エンジン回転 " + N + " rpm で トルク " + T + " N・m。この ときの 出力は およそ いくつ？", a:P, d:1, u:"kW",
+        w:[N * T / 60 / 1000, 2 * PI * N * T / 1000, 2 * PI * N * T / 60 / 100],
+        ex:["出力(W) = 2π × 1秒の 回転数 × トルク", "1秒の 回転数 = " + N + " ÷ 60 = " + nf(N / 60, 2), "= 2 × 3.14 × " + nf(N / 60, 2) + " × " + T + " = " + nf(P * 1000, 0) + " W = " + nf(P, 1) + " kW"] }; },
+    () => { const Dm = 20, Dw = pk([30, 40, 50, 60]), F = ri(500, 1500, 100), k = (Dw / Dm) ** 2, W = F * k;
+      return { g:"brake", lv:"2級", q:"マスターシリンダーの ピストン 直径 " + Dm + " mm に " + F + " N の ちからが かかった。直径 " + Dw + " mm の ホイールシリンダーの ピストンが 押す ちからは？", a:W, d:0, u:"N",
+        w:[F * Dw / Dm, F / k, F],
+        ex:["パスカルの 原理: 液の 圧力は どこも 同じ → ちからは ピストンの 面積に 比例", "面積は 直径の 2乗に 比例 → (" + Dw + " ÷ " + Dm + ")² = " + nf(k, 2) + " 倍", "= " + F + " × " + nf(k, 2) + " = " + nf(W, 0) + " N"] }; },
+    () => { const F = ri(100, 300, 20), L1 = ri(25, 36), L2 = ri(5, 8), O = F * L1 / L2;
+      return { g:"brake", lv:"3級", q:"支点から ペダルを 踏む 所まで " + L1 + " cm、支点から プッシュロッドまで " + L2 + " cm。ペダルを " + F + " N で 踏むと、プッシュロッドを 押す ちからは？", a:O, d:0, u:"N",
+        w:[F * L2 / L1, F * (L1 + L2) / L2, F * L1 / L2 / 2],
+        ex:["てこの 原理: ちから × 支点からの きょり が つりあう", "押す ちから = " + F + " × " + L1 + " ÷ " + L2, "= " + nf(O, 0) + " N(" + nf(L1 / L2, 2) + " 倍)"] }; },
+    () => { const v1 = pk([40, 50, 60]), d1 = ri(12, 30), k = pk([1.5, 2, 3]), d2 = d1 * k * k;
+      return { g:"brake", lv:"2級", q:"時速 " + v1 + " km の とき 制動距離が " + d1 + " m の 車。同じ ブレーキの ききで 時速 " + nf(v1 * k, 0) + " km だと 制動距離は およそ？", a:d2, d:1, u:"m",
+        w:[d1 * k, d1 * k * k * k, d1 * (k + 1)],
+        ex:["制動距離は 速さの 2乗に 比例", "速さは " + k + " 倍 → 制動距離は " + k + "² = " + nf(k * k, 2) + " 倍", "= " + d1 + " × " + nf(k * k, 2) + " = " + nf(d2, 1) + " m"] }; },
+    () => { const V = pk([12, 24]), P = pk(V === 12 ? [21, 27, 36, 48, 55, 60, 72] : [48, 60, 72, 96, 120]), I = P / V;
+      return { g:"elec", lv:"3級", q:V + " V で " + P + " W の ランプを 点けると、流れる 電流は およそ いくつ？", a:I, d:2, u:"A",
+        w:[P * V, V / P, P - V],
+        ex:["電力(W)= 電圧(V)× 電流(A)なので", "電流 = 電力 ÷ 電圧 = " + P + " ÷ " + V + " = " + nf(I, 2) + " A"] }; },
+    () => { const [R1, R2] = pk([[2, 2], [3, 6], [4, 4], [6, 12], [10, 15], [4, 12], [6, 3], [12, 12]]), par = Math.random() < .7, R = par ? R1 * R2 / (R1 + R2) : R1 + R2;
+      return { g:"elec", lv:"3級", q:R1 + " Ω と " + R2 + " Ω の 抵抗を " + (par ? "並列" : "直列") + "に つないだ。合成抵抗は いくつ？", a:R, d:2, u:"Ω",
+        w:par ? [R1 + R2, (R1 + R2) / 2, R1 * R2] : [R1 * R2 / (R1 + R2), (R1 + R2) / 2, R1 * R2],
+        ex:par ? ["並列: 合成抵抗 = (R1 × R2)÷(R1 + R2)", "= (" + R1 + " × " + R2 + ")÷(" + R1 + " + " + R2 + ")= " + nf(R, 2) + " Ω", "並列に すると どちらの 抵抗よりも 小さく なる"] : ["直列: 合成抵抗 = R1 + R2", "= " + R1 + " + " + R2 + " = " + R + " Ω"] }; },
+    () => { const R = pk([2, 3, 4, 6, 8, 12, 24]), V = 12, I = V / R;
+      return { g:"elec", lv:"3級", q:"12 V の 電源に " + R + " Ω の 負荷を つないだ。流れる 電流は？", a:I, d:2, u:"A",
+        w:[V * R, R / V, V - R],
+        ex:["電流 = 電圧 ÷ 抵抗", "= 12 ÷ " + R + " = " + nf(I, 2) + " A"] }; },
+    () => { const Ah = pk([36, 40, 48, 52, 60]), I = pk([2, 3, 4, 5, 6]), h = Ah / I;
+      return { g:"elec", lv:"3級", q:"容量 " + Ah + " Ah の バッテリーで " + I + " A の 電流を 流しつづけると、およそ 何時間 もつ？(計算の 上で)", a:h, d:1, u:"時間",
+        w:[Ah * I, I / Ah, Ah - I],
+        ex:["容量(Ah)= 電流(A)× 時間(h)なので", "時間 = " + Ah + " ÷ " + I + " = " + nf(h, 1) + " 時間", "⚠️ 本当は 温度や 電池の 状態で 短く なる"] }; },
+    () => { const m = ri(10, 60), k = ri(1, 19), v = m + k * 0.05;
+      return { g:"measure", lv:"3級", q:"最小読み取り 0.05 mm の ノギス。バーニヤの 0 が 本尺の " + m + " mm を 少し こえた 所に あり、バーニヤの " + k + " 本目の 線が 本尺の 線と ぴったり 重なった。読みは？", a:v, d:2, u:"mm",
+        w:[m + k * 0.1, m + k * 0.01, m + k * 0.02],
+        ex:["読み = 本尺の 読み + 重なった 線の 番号 × 最小読み取り", "= " + m + " + " + k + " × 0.05", "= " + nf(v, 2) + " mm"] }; },
+    () => { const m = ri(5, 24), h = Math.random() < .5 ? 0.5 : 0, t = ri(1, 49), v = m + h + t * 0.01;
+      return { g:"measure", lv:"3級", q:"マイクロメーター。スリーブで " + m + " mm の 目盛が 見え、その 先の 0.5 mm の 線は " + (h ? "見えている" : "まだ 見えない") + "。シンブルの 目盛は " + t + "。読みは？", a:v, d:2, u:"mm",
+        w:[h ? m + t * 0.01 : m + 0.5 + t * 0.01, m + h + t * 0.1, m + h + t * 0.001],
+        ex:["読み = スリーブの 読み(0.5 mm の 線も 見る)+ シンブル × 0.01", "= " + m + (h ? " + 0.5" : "") + " + " + t + " × 0.01", "= " + nf(v, 2) + " mm"] }; },
+  ];
+  /* 4つの 答え(正しい 答え + まちがい 3つ)。同じ 表示に なった まちがいは べつの 数に かえる */
+  function calcMake(gen){
+    const P = gen(), show = x => nf(x, P.d) + (P.u ? " " + P.u : ""), A = show(P.a), seen = new Set([A]), ch = [{ t:A, ok:true }];
+    for(const x of P.w.concat([P.a * 1.5, P.a * 0.5, P.a * 2, P.a * 0.8, P.a * 1.25])){
+      if(ch.length >= 4) break;
+      if(!isFinite(x) || x <= 0) continue;
+      const s = show(x); if(seen.has(s)) continue;
+      seen.add(s); ch.push({ t:s, ok:false });
+    }
+    P.ch = shuffle(ch); P.A = A; return P;
+  }
+  let calc = null, cset = { g:"" };
+  function openCalc(){ calc = null; sheet("ai-cq"); drawCalc(); }
+  function startCalc(){
+    const gens = CALC.filter(f => !cset.g || f().g === cset.g);
+    const order = shuffle(gens.concat(gens, gens)).slice(0, QN);
+    calc = { list:order.map(calcMake), i:0, ok:0, picked:null };
+    drawCalc();
+  }
+  function drawCalc(){
+    const sh = document.getElementById("ai-cq"), C = calc, GN = Object.fromEntries(CALC_G);
+    let h = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>🧮 計算問題</h2>';
+    if(!C){
+      h += '<p class="ai-qlead">整備士の 試験に よく 出る 形の 計算だよ。数字は 毎回 かわるので、何回でも 新しい 問題に なるよ。答えた あとに とき方が 出るよ。' + QN + '問。</p>' +
+        '<div class="ai-zf ai-qset" style="grid-template-columns:1fr"><select id="ai-cg"><option value="">🧮 ぜんぶの なかま</option>' +
+        CALC_G.map(([v, l]) => '<option value="' + v + '"' + (cset.g === v ? " selected" : "") + '>' + esc(l) + '</option>').join("") + '</select></div>' +
+        '<button type="button" class="ai-btn ai-wide ai-go" data-ai-cstart="1">はじめる</button>' +
+        '<p class="ai-note">円周率は 3.14 で 計算します。問題は この ゲームが 作った もので、本物の 試験の 問題では ありません。電卓を 使っても OK。</p>';
+    }else if(C.i >= C.list.length){
+      h += '<p class="ai-qres">' + C.ok + ' / ' + C.list.length + ' 問 正解！' + (C.ok === C.list.length ? " 🎉" : "") + '</p>' +
+        '<button type="button" class="ai-btn ai-wide ai-go" data-ai-cstart="1">もう一度(新しい 数字で)</button><button type="button" class="ai-btn ai-wide" data-ai-open="calc">なかまを えらびなおす</button>';
+    }else{
+      const P = C.list[C.i], done = C.picked !== null;
+      h += '<p class="ai-qn">' + (C.i + 1) + ' / ' + C.list.length + '　<span>' + esc(GN[P.g]) + ' ・ ' + esc(P.lv) + 'めやす</span></p><p class="ai-qq">' + esc(P.q) + '</p>' +
+        '<div class="ai-qch">' + P.ch.map((c, k) => '<button type="button" class="ai-btn' + (done ? (c.ok ? " ok" : k === C.picked ? " ng" : "") : "") + '" data-ai-cans="' + k + '"' + (done ? " disabled" : "") + '><b>' + "ABCD"[k] + '</b>' + esc(c.t) + '</button>').join("") + '</div>';
+      if(done){
+        const ok = P.ch[C.picked].ok;
+        h += '<div class="ai-qfb2 ' + (ok ? "ok" : "ng") + '"><b>' + (ok ? "⭕ 正解！" : "❌ 正解は " + "ABCD"[P.ch.findIndex(c => c.ok)] + "「" + esc(P.A) + "」") + '</b><ol class="ai-cex">' +
+             P.ex.map(x => '<li>' + esc(x) + '</li>').join("") + '</ol></div>' +
+             '<button type="button" class="ai-btn ai-wide ai-go" data-ai-cnext="1">' + (C.i + 1 < C.list.length ? "つぎへ" : "けっかを 見る") + '</button>';
+      }
+    }
+    sh.innerHTML = h + '</div>';
+    sh.querySelector(".ai-x").onclick = () => closeSheet("ai-cq");
+    const g = sh.querySelector("#ai-cg"); if(g) g.onchange = e => { cset.g = e.target.value; };
+  }
+  function answerCalc(k){ const C = calc, P = C && C.list[C.i]; if(!P || C.picked !== null) return; C.picked = k; if(P.ch[k].ok) C.ok++; drawCalc(); }
+
   /* ── おす・えらぶ(まとめて 受ける。結果画面や シートの 中身は 何度も 書きかわるため) ── */
   document.addEventListener("click", e => {
-    const t = e.target.closest && e.target.closest("[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-retry],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-practice],[data-ai-ans],[data-ai-qstart],[data-ai-qnext],.ai-node");
+    const t = e.target.closest && e.target.closest("[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-retry],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-practice],[data-ai-ans],[data-ai-qstart],[data-ai-qnext],[data-ai-cstart],[data-ai-cnext],[data-ai-cans],.ai-node");
     if(!t) return;
     if(t.dataset.aiTerm) return detail(t.dataset.aiTerm);
     if(t.dataset.aiBack){ trail.pop(); const id = trail[trail.length - 1]; if(id){ trail.pop(); detail(id); } return; }
@@ -458,6 +587,9 @@ const SEIBI = (() => {
     if(t.dataset.aiMore){ zf.shown += 180; return drawZukan(); }
     if(t.dataset.aiAns) return answerQuiz(+t.dataset.aiAns);
     if(t.dataset.aiQstart) return startQuiz();
+    if(t.dataset.aiCans) return answerCalc(+t.dataset.aiCans);
+    if(t.dataset.aiCstart) return startCalc();
+    if(t.dataset.aiCnext){ calc.i++; calc.picked = null; drawCalc(); const sh = document.getElementById("ai-cq"); if(sh) sh.scrollTop = 0; return; }
     if(t.dataset.aiQnext){ quiz.i++; quiz.picked = null; const sh = document.getElementById("ai-qz"); drawQuiz(); if(sh) sh.scrollTop = 0; return; }
     if(t.dataset.aiOpen){
       const o = t.dataset.aiOpen;
@@ -465,6 +597,7 @@ const SEIBI = (() => {
       if(o === "weak") return openZukan({ weak:true });
       if(o === "fav") return openZukan({ fav:true });
       if(o === "quiz") return openQuiz();
+      if(o === "calc") return openCalc();
     }
     if(t.dataset.aiPractice){
       const list = t.dataset.aiPractice === "fav" ? favs().map(id => BY.get(id)) : null;
@@ -559,7 +692,7 @@ const SEIBI = (() => {
 .ai-qlead{font-size:13.5px;line-height:1.8;margin:4px 0 10px}.ai-qset{grid-template-columns:1fr 1fr}.ai-go{background:#d9480f;border-color:#d9480f;color:#fff}
 .ai-qn span{font-size:11px}.ai-qch .ai-btn b{display:inline-block;min-width:1.4em;color:#d9480f}.ai-qch.long .ai-btn{font-size:13px;font-weight:600;line-height:1.6}
 .ai-qch .ai-btn:disabled{opacity:1;color:#1e1b4b}.ai-qch .ai-btn.ok b,.ai-qch .ai-btn.ng b{color:inherit}
-.ai-qfb2{margin:10px 0 0;border-radius:12px;padding:8px 10px;font-size:13px;line-height:1.7}.ai-qfb2.ok{background:#dcfce7}.ai-qfb2.ng{background:#fee2e2}.ai-qfb2 p{margin:4px 0 0}
+.ai-qfb2{margin:10px 0 0;border-radius:12px;padding:8px 10px;font-size:13px;line-height:1.7}.ai-qfb2.ok{background:#dcfce7}.ai-qfb2.ng{background:#fee2e2}.ai-qfb2 p{margin:4px 0 0}.ai-cex{margin:6px 0 0;padding-left:1.4em}.ai-cex li{margin:2px 0}.ai-btns .ai-btn:last-child:nth-child(odd){grid-column:1/-1}
 .ai-qfb{min-height:1.6em;text-align:center;font-weight:900;margin:10px 0 0}.ai-qres{text-align:center;font-size:22px;font-weight:900;margin:14px 0}
 body.ai-lock{overflow:hidden}
 `;

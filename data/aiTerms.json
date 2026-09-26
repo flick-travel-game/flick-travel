@@ -1,0 +1,6877 @@
+{
+ "meta": {
+  "version": 1,
+  "asOf": "2026年9月",
+  "note": "サービス名や 機能は 変わることが あります。説明は 2026年9月時点の ものです。料金・利用上限・最新の モデル名のように すぐ 変わる 情報は 問題に 入れていません。",
+  "fields": {
+   "id": "英小文字と - だけ。変えない(きろく・図鑑が この id で おぼえている)",
+   "name": "画面に 出す 表記(API・プロンプト など)",
+   "reading": "打つ ひらがな(日本で ふつうの 読みかた)。ひらがなと ー だけ",
+   "acceptedReadings": "正解に する 読みかた(先頭は reading)。SQL = えすきゅーえる / しーくえる など",
+   "journey": "旅: ai / web / ops",
+   "category": "図鑑で しぼりこむ 分類",
+   "difficulty": "1 入門(聞いたことがある)/ 2 初級(よく見る)/ 3 中級(使っていると出会う)/ 4 上級(作る人・運営する人)",
+   "type": "concept(長く 使える 考えかた)/ service(会社・サービスの 名前。変わることが ある)",
+   "emoji": "カードの 絵文字(写真・ロゴは 使わない)",
+   "mapNode": "しくみ図の どこに あるか(<図>:<場所>。meta.diagrams)",
+   "relatedTerms": "つながる ことばの id(1〜3個)",
+   "description": "やさしい 説明(1〜3文。自分の ことばで 書く。専門用語を 専門用語で 説明しない)",
+   "example": "たとえば(なくてもよい)",
+   "asOf": "すぐ 変わる 情報を 書いたときだけ 基準日(例 2026年9月)"
+  },
+  "journeys": [
+   {
+    "id": "ai",
+    "name": "AIのことば",
+    "icon": "🤖",
+    "color": "#6d3fd6",
+    "diagram": "ai",
+    "goal": "AIマスター",
+    "lead": "生成AIや AIサービスを 使いこなす ための ことば",
+    "stops": [
+     {
+      "name": "AIの入口",
+      "icon": "🚪"
+     },
+     {
+      "name": "生成AIの街",
+      "icon": "🏙️"
+     },
+     {
+      "name": "プロンプトの森",
+      "icon": "🌲"
+     },
+     {
+      "name": "データの港",
+      "icon": "⚓"
+     },
+     {
+      "name": "AIエージェントの研究所",
+      "icon": "🔬"
+     }
+    ]
+   },
+   {
+    "id": "web",
+    "name": "Webサービスのしくみ",
+    "icon": "🌐",
+    "color": "#0b6fb8",
+    "diagram": "web",
+    "goal": "Webサービスマスター",
+    "lead": "Webサイトや アプリが どう 動いているかが わかる ことば",
+    "stops": [
+     {
+      "name": "Webサイトの入口",
+      "icon": "🚪"
+     },
+     {
+      "name": "フロントエンドの街",
+      "icon": "🏘️"
+     },
+     {
+      "name": "APIの橋",
+      "icon": "🌉"
+     },
+     {
+      "name": "データベースの地下都市",
+      "icon": "🚇"
+     },
+     {
+      "name": "クラウドの空港",
+      "icon": "🛫"
+     }
+    ]
+   },
+   {
+    "id": "ops",
+    "name": "サービス運営",
+    "icon": "🏪",
+    "color": "#0e8a5f",
+    "diagram": "ops",
+    "goal": "サービス運営マスター",
+    "lead": "サービスを 世の中に 出して、続けていく ための ことば",
+    "stops": [
+     {
+      "name": "サービス公開",
+      "icon": "🎉"
+     },
+     {
+      "name": "利用規約の町",
+      "icon": "📜"
+     },
+     {
+      "name": "決済の市場",
+      "icon": "💰"
+     },
+     {
+      "name": "セキュリティの砦",
+      "icon": "🏰"
+     },
+     {
+      "name": "ブランドの丘",
+      "icon": "⛰️"
+     }
+    ]
+   }
+  ],
+  "levels": [
+   {
+    "difficulty": 1,
+    "name": "入門",
+    "icon": "🌱",
+    "lead": "聞いたことが ある ことばから"
+   },
+   {
+    "difficulty": 2,
+    "name": "初級",
+    "icon": "📘",
+    "lead": "よく 見る AI・Webの ことば"
+   },
+   {
+    "difficulty": 3,
+    "name": "中級",
+    "icon": "🧭",
+    "lead": "AIや Webサービスを 使っていると 出会う ことば"
+   },
+   {
+    "difficulty": 4,
+    "name": "上級",
+    "icon": "🚀",
+    "lead": "作る人・運営する人が 使う ことば"
+   }
+  ],
+  "titles": [
+   [
+    10,
+    "🧳",
+    "AIの旅人"
+   ],
+   [
+    30,
+    "🔰",
+    "ことばの見習い"
+   ],
+   [
+    50,
+    "🌱",
+    "AIビギナー"
+   ],
+   [
+    100,
+    "🎓",
+    "AIことば博士"
+   ],
+   [
+    150,
+    "🔬",
+    "しくみ研究員"
+   ],
+   [
+    200,
+    "🧭",
+    "Web探検家"
+   ],
+   [
+    250,
+    "🤝",
+    "サービスづくりの仲間"
+   ],
+   [
+    300,
+    "🎨",
+    "AIクリエイター"
+   ],
+   [
+    500,
+    "🌐",
+    "AI・Webマスター"
+   ]
+  ],
+  "allTitle": [
+   "🏆",
+   "AIフリックマスター"
+  ],
+  "diagrams": {
+   "ai": {
+    "name": "AIのしくみ図",
+    "w": 360,
+    "h": 360,
+    "nodes": [
+     {
+      "id": "human",
+      "label": "あなた",
+      "icon": "👤",
+      "x": 60,
+      "y": 40
+     },
+     {
+      "id": "apps",
+      "label": "AIサービス",
+      "icon": "💬",
+      "x": 180,
+      "y": 40
+     },
+     {
+      "id": "care",
+      "label": "気をつけること",
+      "icon": "⚠️",
+      "x": 300,
+      "y": 40
+     },
+     {
+      "id": "prompt",
+      "label": "プロンプト",
+      "icon": "📝",
+      "x": 60,
+      "y": 130
+     },
+     {
+      "id": "model",
+      "label": "AIモデル",
+      "icon": "🧠",
+      "x": 180,
+      "y": 130
+     },
+     {
+      "id": "answer",
+      "label": "回答",
+      "icon": "💡",
+      "x": 300,
+      "y": 130
+     },
+     {
+      "id": "context",
+      "label": "コンテキスト",
+      "icon": "🧾",
+      "x": 60,
+      "y": 220
+     },
+     {
+      "id": "train",
+      "label": "学習・データ",
+      "icon": "📚",
+      "x": 180,
+      "y": 220
+     },
+     {
+      "id": "rag",
+      "label": "資料さがし",
+      "icon": "🔎",
+      "x": 300,
+      "y": 220
+     },
+     {
+      "id": "tools",
+      "label": "ツール・MCP",
+      "icon": "🧰",
+      "x": 60,
+      "y": 310
+     },
+     {
+      "id": "agent",
+      "label": "エージェント",
+      "icon": "🕵️",
+      "x": 180,
+      "y": 310
+     }
+    ],
+    "edges": [
+     [
+      "human",
+      "prompt",
+      "たのむ"
+     ],
+     [
+      "prompt",
+      "model",
+      ""
+     ],
+     [
+      "model",
+      "answer",
+      ""
+     ],
+     [
+      "apps",
+      "model",
+      "中身"
+     ],
+     [
+      "context",
+      "model",
+      "参考"
+     ],
+     [
+      "train",
+      "model",
+      "学習"
+     ],
+     [
+      "rag",
+      "model",
+      "資料"
+     ],
+     [
+      "answer",
+      "care",
+      "確かめる"
+     ],
+     [
+      "agent",
+      "model",
+      ""
+     ],
+     [
+      "agent",
+      "tools",
+      "使う"
+     ]
+    ]
+   },
+   "web": {
+    "name": "Webサービスの全体図",
+    "w": 360,
+    "h": 360,
+    "nodes": [
+     {
+      "id": "device",
+      "label": "スマホ・ブラウザ",
+      "icon": "📱",
+      "x": 60,
+      "y": 40
+     },
+     {
+      "id": "internet",
+      "label": "インターネット",
+      "icon": "🌏",
+      "x": 180,
+      "y": 40
+     },
+     {
+      "id": "domain",
+      "label": "ドメイン・DNS",
+      "icon": "🏷️",
+      "x": 300,
+      "y": 40
+     },
+     {
+      "id": "front",
+      "label": "画面(フロント)",
+      "icon": "🖼️",
+      "x": 60,
+      "y": 130
+     },
+     {
+      "id": "back",
+      "label": "しくみ(バック)・API",
+      "icon": "⚙️",
+      "x": 180,
+      "y": 130
+     },
+     {
+      "id": "hosting",
+      "label": "サーバー・Vercel",
+      "icon": "▲",
+      "x": 300,
+      "y": 130
+     },
+     {
+      "id": "auth",
+      "label": "ログイン・認証",
+      "icon": "🔐",
+      "x": 60,
+      "y": 220
+     },
+     {
+      "id": "db",
+      "label": "データベース・Supabase",
+      "icon": "🗄️",
+      "x": 180,
+      "y": 220
+     },
+     {
+      "id": "pay",
+      "label": "決済・Stripe",
+      "icon": "💳",
+      "x": 300,
+      "y": 220
+     },
+     {
+      "id": "code",
+      "label": "コード・GitHub",
+      "icon": "🐙",
+      "x": 300,
+      "y": 310
+     }
+    ],
+    "edges": [
+     [
+      "device",
+      "internet",
+      ""
+     ],
+     [
+      "internet",
+      "domain",
+      ""
+     ],
+     [
+      "domain",
+      "hosting",
+      "住所"
+     ],
+     [
+      "hosting",
+      "back",
+      ""
+     ],
+     [
+      "device",
+      "front",
+      "見る"
+     ],
+     [
+      "front",
+      "back",
+      "API"
+     ],
+     [
+      "back",
+      "db",
+      "しまう"
+     ],
+     [
+      "front",
+      "auth",
+      ""
+     ],
+     [
+      "back",
+      "pay",
+      "Webhook"
+     ],
+     [
+      "code",
+      "hosting",
+      "デプロイ"
+     ]
+    ]
+   },
+   "ops": {
+    "name": "サービス運営の地図",
+    "w": 360,
+    "h": 270,
+    "nodes": [
+     {
+      "id": "launch",
+      "label": "公開・リリース",
+      "icon": "🎉",
+      "x": 60,
+      "y": 40
+     },
+     {
+      "id": "grow",
+      "label": "集客・広げる",
+      "icon": "📣",
+      "x": 300,
+      "y": 40
+     },
+     {
+      "id": "rules",
+      "label": "ルール・法律",
+      "icon": "📜",
+      "x": 60,
+      "y": 130
+     },
+     {
+      "id": "service",
+      "label": "あなたのサービス",
+      "icon": "🏪",
+      "x": 180,
+      "y": 130
+     },
+     {
+      "id": "money",
+      "label": "お金・決済",
+      "icon": "💰",
+      "x": 300,
+      "y": 130
+     },
+     {
+      "id": "users",
+      "label": "利用者とのやりとり",
+      "icon": "🙋",
+      "x": 60,
+      "y": 220
+     },
+     {
+      "id": "brand",
+      "label": "ブランド・権利",
+      "icon": "™️",
+      "x": 180,
+      "y": 220
+     },
+     {
+      "id": "safe",
+      "label": "守り・もしも",
+      "icon": "🛡️",
+      "x": 300,
+      "y": 220
+     }
+    ],
+    "edges": [
+     [
+      "service",
+      "launch",
+      ""
+     ],
+     [
+      "service",
+      "grow",
+      ""
+     ],
+     [
+      "service",
+      "rules",
+      ""
+     ],
+     [
+      "service",
+      "money",
+      ""
+     ],
+     [
+      "service",
+      "users",
+      ""
+     ],
+     [
+      "service",
+      "brand",
+      ""
+     ],
+     [
+      "service",
+      "safe",
+      ""
+     ],
+     [
+      "launch",
+      "grow",
+      ""
+     ]
+    ]
+   }
+  },
+  "missions": [
+   {
+    "id": "publish-web",
+    "journey": "web",
+    "difficulty": 3,
+    "title": "Webサービスを 公開するまで",
+    "steps": [
+     "programming",
+     "commit",
+     "push",
+     "deploy",
+     "own-domain",
+     "publish"
+    ]
+   },
+   {
+    "id": "ask-ai",
+    "journey": "ai",
+    "difficulty": 2,
+    "title": "AIに 質問して 答えが 返るまで",
+    "steps": [
+     "prompt",
+     "token",
+     "inference",
+     "answer",
+     "fact-check"
+    ]
+   },
+   {
+    "id": "rag-flow",
+    "journey": "ai",
+    "difficulty": 4,
+    "title": "RAG で 資料を 見ながら 答えるまで",
+    "steps": [
+     "chunk",
+     "embedding",
+     "vector-db",
+     "similarity",
+     "rag",
+     "answer"
+    ]
+   },
+   {
+    "id": "start-paid",
+    "journey": "ops",
+    "difficulty": 3,
+    "title": "有料の サービスを はじめるまで",
+    "steps": [
+     "terms",
+     "privacy-policy",
+     "tokushoho",
+     "stripe",
+     "free-trial",
+     "publish"
+    ]
+   }
+  ],
+  "missionNote": "並べかえの 実践ミッション(将来 使う)。steps は 正しい 順の ことばの id"
+ },
+ "terms": [
+  {
+   "id": "ai",
+   "name": "AI",
+   "reading": "えーあい",
+   "acceptedReadings": [
+    "えーあい"
+   ],
+   "journey": "ai",
+   "category": "AIの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🤖",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "genai",
+    "model",
+    "learning"
+   ],
+   "description": "人のように 考えたり、話したり、絵をかいたりする 仕事を、コンピューターに させる 技術。「人工知能」とも いいます。",
+   "example": "スマホの 顔認証や、声で話しかける アシスタントにも 使われています。"
+  },
+  {
+   "id": "chatgpt",
+   "name": "ChatGPT",
+   "reading": "ちゃっとじーぴーてぃー",
+   "acceptedReadings": [
+    "ちゃっとじーぴーてぃー"
+   ],
+   "journey": "ai",
+   "category": "AIサービス",
+   "difficulty": 1,
+   "type": "service",
+   "emoji": "💬",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "openai",
+    "genai",
+    "chatbot"
+   ],
+   "description": "文字で 話しかけると、文章で 答えてくれる 対話型の AIサービス。OpenAI という 会社が 作りました。",
+   "example": "「自由研究の アイデアを 5つ 出して」と 聞くと、いくつも 案を 出してくれます。"
+  },
+  {
+   "id": "genai",
+   "name": "生成AI",
+   "reading": "せいせいえーあい",
+   "acceptedReadings": [
+    "せいせいえーあい"
+   ],
+   "journey": "ai",
+   "category": "生成AI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "✨",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "ai",
+    "image-gen",
+    "llm"
+   ],
+   "description": "文章・画像・音楽などを、新しく 作り出す AI。たくさんの 例から 学んだ パターンを もとに 作ります。",
+   "example": "「海で あそぶ 犬の 絵」と お願いすると、その場で 絵を かいてくれます。"
+  },
+  {
+   "id": "prompt",
+   "name": "プロンプト",
+   "reading": "ぷろんぷと",
+   "acceptedReadings": [
+    "ぷろんぷと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📝",
+   "mapNode": "ai:prompt",
+   "relatedTerms": [
+    "context",
+    "system-prompt",
+    "answer"
+   ],
+   "description": "AIに してほしいことを 伝える、指示や 質問の 文章。書きかたしだいで、答えの よさが 大きく 変わります。",
+   "example": "「小学生にも わかるように、雨が ふる しくみを 説明して」も プロンプトです。"
+  },
+  {
+   "id": "chatbot",
+   "name": "チャットボット",
+   "reading": "ちゃっとぼっと",
+   "acceptedReadings": [
+    "ちゃっとぼっと"
+   ],
+   "journey": "ai",
+   "category": "AIサービス",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🗨️",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "chatgpt",
+    "chat"
+   ],
+   "description": "文字の やりとり(チャット)で、自動で 答えてくれる プログラム。「ボット」は ロボットを 短くした ことばです。",
+   "example": "通販サイトの「ご質問は こちら」で、24時間 答えてくれる 窓口などです。"
+  },
+  {
+   "id": "image-gen",
+   "name": "画像生成",
+   "reading": "がぞうせいせい",
+   "acceptedReadings": [
+    "がぞうせいせい"
+   ],
+   "journey": "ai",
+   "category": "生成AI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🎨",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "genai",
+    "prompt",
+    "diffusion"
+   ],
+   "description": "ことばの 説明から、AIが 新しい 絵や 写真のような 画像を 作ること。",
+   "example": "「宇宙を 旅する ネコの イラスト」と 書くと、AIが 絵に してくれます。"
+  },
+  {
+   "id": "video-gen",
+   "name": "動画生成",
+   "reading": "どうがせいせい",
+   "acceptedReadings": [
+    "どうがせいせい"
+   ],
+   "journey": "ai",
+   "category": "生成AI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🎬",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "image-gen",
+    "genai"
+   ],
+   "description": "ことばや 画像から、AIが 動く 映像を 作ること。短い 動画を 作れる サービスが ふえています。",
+   "example": "「花が 開いていく ようす」を 数秒の 動画に できます。"
+  },
+  {
+   "id": "voice-input",
+   "name": "音声入力",
+   "reading": "おんせいにゅうりょく",
+   "acceptedReadings": [
+    "おんせいにゅうりょく"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🎙️",
+   "mapNode": "ai:human",
+   "relatedTerms": [
+    "speech-rec",
+    "input"
+   ],
+   "description": "話した 声を、コンピューターが 文字に して 入力すること。",
+   "example": "スマホの マイクの ボタンを おして 話すと、メッセージが 文字に なります。"
+  },
+  {
+   "id": "smart-speaker",
+   "name": "スマートスピーカー",
+   "reading": "すまーとすぴーかー",
+   "acceptedReadings": [
+    "すまーとすぴーかー"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔊",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "voice-input",
+    "speech-rec"
+   ],
+   "description": "話しかけると 音楽を かけたり 天気を 教えたり してくれる、AI入りの スピーカー。",
+   "example": "「明日の 天気は？」と 聞くと、声で 答えてくれます。"
+  },
+  {
+   "id": "claude",
+   "name": "Claude",
+   "reading": "くろーど",
+   "acceptedReadings": [
+    "くろーど"
+   ],
+   "journey": "ai",
+   "category": "AIサービス",
+   "difficulty": 1,
+   "type": "service",
+   "emoji": "✳️",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "anthropic",
+    "llm",
+    "claude-code"
+   ],
+   "description": "Anthropic という 会社が 作った 対話型の AI。文章を 書く・読む、プログラムを 書くなどを 手伝います。",
+   "example": "長い 資料を わたして「大事な ところを 3つに まとめて」と お願いできます。"
+  },
+  {
+   "id": "gemini",
+   "name": "Gemini",
+   "reading": "じぇみに",
+   "acceptedReadings": [
+    "じぇみに"
+   ],
+   "journey": "ai",
+   "category": "AIサービス",
+   "difficulty": 1,
+   "type": "service",
+   "emoji": "♊",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "multimodal",
+    "chatgpt"
+   ],
+   "description": "Google が 作った 対話型の AI。文章だけでなく、画像や 音声も あつかえます。",
+   "example": "写真を 見せて「これは 何の 花？」と 聞くことが できます。"
+  },
+  {
+   "id": "copilot",
+   "name": "Copilot",
+   "reading": "こぱいろっと",
+   "acceptedReadings": [
+    "こぱいろっと"
+   ],
+   "journey": "ai",
+   "category": "AIサービス",
+   "difficulty": 1,
+   "type": "service",
+   "emoji": "✈️",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "ai-assistant",
+    "code-gen"
+   ],
+   "description": "Microsoft などが 出している、仕事や 勉強を 手伝う AIアシスタントの 名前。「副操縦士」という 意味です。",
+   "example": "文書を 作る ソフトの 中で、文章の 下書きを 手伝ってくれます。"
+  },
+  {
+   "id": "answer",
+   "name": "回答",
+   "reading": "かいとう",
+   "acceptedReadings": [
+    "かいとう"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "💡",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "prompt",
+    "hallucination",
+    "fact-check"
+   ],
+   "description": "AIが プロンプトを 受けて 返してくる 答え。いつも 正しいとは かぎらないので、自分でも 確かめることが 大切です。",
+   "example": "同じ 質問でも、聞きかたを 変えると 回答が 変わります。"
+  },
+  {
+   "id": "translation",
+   "name": "翻訳",
+   "reading": "ほんやく",
+   "acceptedReadings": [
+    "ほんやく"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🌐",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "llm",
+    "genai"
+   ],
+   "description": "ある 国の ことばの 文章を、別の ことばに 置きかえること。AIを 使うと、すばやく 自然な 翻訳が できます。",
+   "example": "英語の メールを 日本語に してもらう ときに 使います。"
+  },
+  {
+   "id": "summary",
+   "name": "要約",
+   "reading": "ようやく",
+   "acceptedReadings": [
+    "ようやく"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📄",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "prompt",
+    "context"
+   ],
+   "description": "長い 文章の 大事な ところだけを、短く まとめること。",
+   "example": "10ページの レポートを「3行で 要約して」と AIに お願いできます。"
+  },
+  {
+   "id": "robot",
+   "name": "ロボット",
+   "reading": "ろぼっと",
+   "acceptedReadings": [
+    "ろぼっと"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🦾",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "ai",
+    "self-driving"
+   ],
+   "description": "自分で 動いて 仕事を する 機械。AIが 入ると、まわりを 見て 自分で 判断して 動けるように なります。",
+   "example": "へやを 自動で そうじする ロボット掃除機も その なかまです。"
+  },
+  {
+   "id": "smartphone",
+   "name": "スマホ",
+   "reading": "すまほ",
+   "acceptedReadings": [
+    "すまほ"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📱",
+   "mapNode": "ai:human",
+   "relatedTerms": [
+    "app",
+    "voice-input"
+   ],
+   "description": "持ち歩ける 小さな コンピューター(スマートフォン)。アプリを 入れると、AIや いろいろな サービスが 使えます。",
+   "example": "スマホの カメラで 文字を 写すと、翻訳してくれる アプリも あります。"
+  },
+  {
+   "id": "app",
+   "name": "アプリ",
+   "reading": "あぷり",
+   "acceptedReadings": [
+    "あぷり"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📲",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "smartphone",
+    "web-app"
+   ],
+   "description": "スマホや パソコンで 使う、目的ごとの ソフト(アプリケーション)。",
+   "example": "地図アプリ、ゲームアプリ、AIと 話せる アプリなどが あります。"
+  },
+  {
+   "id": "autocomplete",
+   "name": "予測変換",
+   "reading": "よそくへんかん",
+   "acceptedReadings": [
+    "よそくへんかん"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "⌨️",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "llm",
+    "token"
+   ],
+   "description": "とちゅうまで 打つと、次に 来そうな ことばを 予想して 出してくれる 機能。AIの 文章づくりも「次に 来る ことば」を 予想しています。",
+   "example": "「おは」まで 打つと「おはよう」が 出てくる あれです。"
+  },
+  {
+   "id": "face-recognition",
+   "name": "顔認証",
+   "reading": "かおにんしょう",
+   "acceptedReadings": [
+    "かおにんしょう"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🙂",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "image-recognition",
+    "auth"
+   ],
+   "description": "カメラで 顔を 見て、本人かどうかを 確かめる しくみ。AIが 顔の 特ちょうを 見分けています。",
+   "example": "スマホの ロックを 顔で 開けるときに 使われます。"
+  },
+  {
+   "id": "image-recognition",
+   "name": "画像認識",
+   "reading": "がぞうにんしき",
+   "acceptedReadings": [
+    "がぞうにんしき"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🖼️",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "face-recognition",
+    "multimodal"
+   ],
+   "description": "写真や 映像に 何が 写っているかを、AIが 見分けること。",
+   "example": "写真アプリが「犬」「海」「食べもの」で 写真を 分けてくれます。"
+  },
+  {
+   "id": "speech-rec",
+   "name": "音声認識",
+   "reading": "おんせいにんしき",
+   "acceptedReadings": [
+    "おんせいにんしき"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "👂",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "voice-input",
+    "transcription"
+   ],
+   "description": "人の 声を 聞きとって、何と 言ったかを 文字に する 技術。",
+   "example": "スマートスピーカーは まず 音声認識で ことばを 聞きとります。"
+  },
+  {
+   "id": "recommend",
+   "name": "おすすめ機能",
+   "reading": "おすすめきのう",
+   "acceptedReadings": [
+    "おすすめきのう"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "personalize",
+    "data"
+   ],
+   "description": "見た 動画や 買った 物から、好きそうな ものを AIが 予想して 見せてくれる 機能(レコメンド)。",
+   "example": "動画サイトの「次に 見る」に 出てくる 動画が そうです。"
+  },
+  {
+   "id": "self-driving",
+   "name": "自動運転",
+   "reading": "じどううんてん",
+   "acceptedReadings": [
+    "じどううんてん"
+   ],
+   "journey": "ai",
+   "category": "身近なAI",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🚗",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "image-recognition",
+    "robot"
+   ],
+   "description": "人が 運転しなくても、車が 自分で まわりを 見て 走る 技術。カメラや センサーの 情報を AIが 判断します。",
+   "example": "決まった 道を 自動で 走る バスの 実験が 行われています。"
+  },
+  {
+   "id": "learning",
+   "name": "学習",
+   "reading": "がくしゅう",
+   "acceptedReadings": [
+    "がくしゅう"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📚",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "training-data",
+    "model",
+    "machine-learning"
+   ],
+   "description": "AIが たくさんの データから、決まりや パターンを おぼえること。人が 問題集で 練習するのに 少し 似ています。",
+   "example": "ネコの 写真を たくさん 見て、ネコらしさを おぼえます。"
+  },
+  {
+   "id": "data",
+   "name": "データ",
+   "reading": "でーた",
+   "acceptedReadings": [
+    "でーた"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🗂️",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "learning",
+    "training-data",
+    "database"
+   ],
+   "description": "文字・数字・画像・音など、コンピューターが あつかう 情報の こと。AIは データから 学びます。",
+   "example": "テストの 点数の 一覧も、写真も、みんな データです。"
+  },
+  {
+   "id": "model",
+   "name": "AIモデル",
+   "reading": "えーあいもでる",
+   "acceptedReadings": [
+    "えーあいもでる"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🧠",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "llm",
+    "learning",
+    "inference"
+   ],
+   "description": "学習を 終えて、答えを 出せるように なった AIの 本体。同じ サービスでも、中の モデルが 変わると 答えかたも 変わります。",
+   "example": "チャットの 画面で「モデルを えらぶ」と 出てくるのが これです。"
+  },
+  {
+   "id": "ai-assistant",
+   "name": "AIアシスタント",
+   "reading": "えーあいあしすたんと",
+   "acceptedReadings": [
+    "えーあいあしすたんと"
+   ],
+   "journey": "ai",
+   "category": "AIサービス",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🧑‍💼",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "chatbot",
+    "agent"
+   ],
+   "description": "質問に 答えたり、予定を 立てたり、作業を 手伝ったり してくれる AIの こと。",
+   "example": "「明日 7時に 起こして」と たのむと、目覚ましを セットしてくれます。"
+  },
+  {
+   "id": "openai",
+   "name": "OpenAI",
+   "reading": "おーぷんえーあい",
+   "acceptedReadings": [
+    "おーぷんえーあい"
+   ],
+   "journey": "ai",
+   "category": "AIサービス",
+   "difficulty": 1,
+   "type": "service",
+   "emoji": "🏢",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "chatgpt",
+    "genai"
+   ],
+   "description": "ChatGPT を 作った アメリカの 会社。",
+   "example": "ニュースで AIの 話題が 出ると、よく 名前が 出てきます。"
+  },
+  {
+   "id": "chat",
+   "name": "チャット",
+   "reading": "ちゃっと",
+   "acceptedReadings": [
+    "ちゃっと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "💬",
+   "mapNode": "ai:human",
+   "relatedTerms": [
+    "chatbot",
+    "chat-history"
+   ],
+   "description": "文字で、その場で やりとりすること。AIとの 会話も、チャットの 形が 多いです。",
+   "example": "LINE の やりとりも チャットの 一つです。"
+  },
+  {
+   "id": "llm",
+   "name": "LLM",
+   "reading": "えるえるえむ",
+   "acceptedReadings": [
+    "えるえるえむ"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📖",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "token",
+    "model",
+    "transformer"
+   ],
+   "description": "「大規模言語モデル」の 略。ばく大な 文章で 学習して、ことばを 読んだり 書いたり できる AI。ChatGPT や Claude の 中身です。",
+   "example": "質問の 続きとして ふさわしい ことばを、次々と 予想して 文章を 作ります。"
+  },
+  {
+   "id": "token",
+   "name": "トークン",
+   "reading": "とーくん",
+   "acceptedReadings": [
+    "とーくん"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧩",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "llm",
+    "context-window"
+   ],
+   "description": "AIが 文章を 読むときの 小さな 区切り。ことばを 細かく 切った かけらで、AIは これを 数えながら 読み書きします。",
+   "example": "使える 量や 料金が「トークン」の 数で 決まることが あります。"
+  },
+  {
+   "id": "context",
+   "name": "コンテキスト",
+   "reading": "こんてきすと",
+   "acceptedReadings": [
+    "こんてきすと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧾",
+   "mapNode": "ai:context",
+   "relatedTerms": [
+    "prompt",
+    "context-window",
+    "chat-history"
+   ],
+   "description": "AIが 答えるときに 参考にする、それまでの 会話や わたした 資料などの「前後の 情報」。",
+   "example": "前の 話を おぼえているから「それを もっと 短くして」が 通じます。"
+  },
+  {
+   "id": "hallucination",
+   "name": "ハルシネーション",
+   "reading": "はるしねーしょん",
+   "acceptedReadings": [
+    "はるしねーしょん"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "fact-check",
+    "source",
+    "answer"
+   ],
+   "description": "AIが、本当では ないことを、それらしく 答えてしまうこと。「幻覚」という 意味です。",
+   "example": "ない 本の 名前を、あるかのように 紹介して しまうことが あります。大事なことは かならず 確かめよう。"
+  },
+  {
+   "id": "anthropic",
+   "name": "Anthropic",
+   "reading": "あんそろぴっく",
+   "acceptedReadings": [
+    "あんそろぴっく"
+   ],
+   "journey": "ai",
+   "category": "AIサービス",
+   "difficulty": 2,
+   "type": "service",
+   "emoji": "🏢",
+   "mapNode": "ai:apps",
+   "relatedTerms": [
+    "claude",
+    "claude-code"
+   ],
+   "description": "Claude を 作った アメリカの 会社。AIを 安全に 使えるように する 研究に 力を 入れています。"
+  },
+  {
+   "id": "deepfake",
+   "name": "ディープフェイク",
+   "reading": "でぃーぷふぇいく",
+   "acceptedReadings": [
+    "でぃーぷふぇいく"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🎭",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "fact-check",
+    "video-gen"
+   ],
+   "description": "AIで 作った、本物 そっくりの にせの 映像や 声。見分けにくいので、だまされない 注意が 必要です。",
+   "example": "有名人が 言っていない ことを、言っているように 見せる 動画などです。"
+  },
+  {
+   "id": "fact-check",
+   "name": "ファクトチェック",
+   "reading": "ふぁくとちぇっく",
+   "acceptedReadings": [
+    "ふぁくとちぇっく"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔍",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "hallucination",
+    "source"
+   ],
+   "description": "書かれていることが 本当かどうかを、別の 資料で 確かめること。AIの 答えにも 大切です。",
+   "example": "AIが 出した 年号を、教科書や 公式の ページで 確かめます。"
+  },
+  {
+   "id": "multimodal",
+   "name": "マルチモーダル",
+   "reading": "まるちもーだる",
+   "acceptedReadings": [
+    "まるちもーだる"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🎛️",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "image-recognition",
+    "gemini"
+   ],
+   "description": "文字・画像・音声など、いくつもの 種類の 情報を まとめて あつかえること。",
+   "example": "写真を 見せながら「この 料理の 作りかたは？」と 聞けます。"
+  },
+  {
+   "id": "training-data",
+   "name": "学習データ",
+   "reading": "がくしゅうでーた",
+   "acceptedReadings": [
+    "がくしゅうでーた"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📦",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "learning",
+    "dataset",
+    "bias"
+   ],
+   "description": "AIが 学ぶために 使う、たくさんの 文章や 画像などの データ。データの 質が、AIの かしこさを 左右します。"
+  },
+  {
+   "id": "inference",
+   "name": "推論",
+   "reading": "すいろん",
+   "acceptedReadings": [
+    "すいろん"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⚙️",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "model",
+    "learning"
+   ],
+   "description": "学習を 終えた AIが、新しい 質問に 答えを 出すこと。学習は「練習」、推論は「本番」に 近いです。",
+   "example": "チャットで 質問を 送ると、そのたびに 推論が 行われます。"
+  },
+  {
+   "id": "machine-learning",
+   "name": "機械学習",
+   "reading": "きかいがくしゅう",
+   "acceptedReadings": [
+    "きかいがくしゅう"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🏭",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "learning",
+    "deep-learning"
+   ],
+   "description": "人が 決まりを ぜんぶ 書く かわりに、コンピューターが データから 決まりを 見つける やりかた。",
+   "example": "迷惑メールを 見分ける しくみにも 使われています。"
+  },
+  {
+   "id": "deep-learning",
+   "name": "ディープラーニング",
+   "reading": "でぃーぷらーにんぐ",
+   "acceptedReadings": [
+    "でぃーぷらーにんぐ"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🕸️",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "neural-net",
+    "machine-learning"
+   ],
+   "description": "何層にも かさねた ニューラルネットワークで 学ぶ 機械学習。いまの 生成AIの 土台です。"
+  },
+  {
+   "id": "chat-history",
+   "name": "会話履歴",
+   "reading": "かいわりれき",
+   "acceptedReadings": [
+    "かいわりれき"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🕘",
+   "mapNode": "ai:context",
+   "relatedTerms": [
+    "context",
+    "memory"
+   ],
+   "description": "AIとの これまでの やりとりの 記録。前の 会話を 続けたり、見なおしたり できます。",
+   "example": "昨日の チャットを ひらいて、続きから 質問できます。"
+  },
+  {
+   "id": "upload",
+   "name": "アップロード",
+   "reading": "あっぷろーど",
+   "acceptedReadings": [
+    "あっぷろーど"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⬆️",
+   "mapNode": "ai:context",
+   "relatedTerms": [
+    "download",
+    "context"
+   ],
+   "description": "自分の スマホや パソコンに ある ファイルを、サービスに 送ること。",
+   "example": "PDF を アップロードして、AIに 読んでもらいます。"
+  },
+  {
+   "id": "input",
+   "name": "入力",
+   "reading": "にゅうりょく",
+   "acceptedReadings": [
+    "にゅうりょく"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⌨️",
+   "mapNode": "ai:prompt",
+   "relatedTerms": [
+    "prompt",
+    "output"
+   ],
+   "description": "コンピューターや AIに、文字や 声や 画像を 入れること。"
+  },
+  {
+   "id": "output",
+   "name": "出力",
+   "reading": "しゅつりょく",
+   "acceptedReadings": [
+    "しゅつりょく"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📤",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "input",
+    "answer",
+    "format"
+   ],
+   "description": "コンピューターや AIが 外に 出す 結果。文章・画像・音声などが あります。"
+  },
+  {
+   "id": "text-to-speech",
+   "name": "音声合成",
+   "reading": "おんせいごうせい",
+   "acceptedReadings": [
+    "おんせいごうせい"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🗣️",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "speech-rec",
+    "voice-input"
+   ],
+   "description": "文字を、人が 話しているような 声に して 読み上げる 技術。",
+   "example": "カーナビや 駅の アナウンスの 声にも 使われています。"
+  },
+  {
+   "id": "ocr",
+   "name": "文字認識",
+   "reading": "もじにんしき",
+   "acceptedReadings": [
+    "もじにんしき"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔠",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "image-recognition",
+    "screenshot"
+   ],
+   "description": "画像や 写真の 中の 文字を 読みとって、データの 文字に する 技術(OCR)。",
+   "example": "紙の プリントを 写真に とると、文字を コピーできるように なります。"
+  },
+  {
+   "id": "confidential",
+   "name": "機密情報",
+   "reading": "きみつじょうほう",
+   "acceptedReadings": [
+    "きみつじょうほう"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔒",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "personal-info",
+    "ai-literacy"
+   ],
+   "description": "外に もらしては いけない 大切な 情報。AIに 入れる 前に、入れてよい 情報か 考えよう。",
+   "example": "会社の ひみつの 計画や、友だちの 住所などは 入れません。"
+  },
+  {
+   "id": "ai-literacy",
+   "name": "AIリテラシー",
+   "reading": "えーあいりてらしー",
+   "acceptedReadings": [
+    "えーあいりてらしー"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🎓",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "fact-check",
+    "hallucination",
+    "confidential"
+   ],
+   "description": "AIの 得意・苦手を 知って、うまく 安全に 使いこなす 力。",
+   "example": "答えを うのみに しない・大切な 情報を 入れない などが 基本です。"
+  },
+  {
+   "id": "ai-search",
+   "name": "AI検索",
+   "reading": "えーあいけんさく",
+   "acceptedReadings": [
+    "えーあいけんさく"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔎",
+   "mapNode": "ai:rag",
+   "relatedTerms": [
+    "search",
+    "rag",
+    "source"
+   ],
+   "description": "検索した 結果を AIが まとめて、答えの 形で 見せてくれる 検索。",
+   "example": "答えの 下に 出る 元の ページ(出典)も 見てみよう。"
+  },
+  {
+   "id": "source",
+   "name": "出典",
+   "reading": "しゅってん",
+   "acceptedReadings": [
+    "しゅってん"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📚",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "fact-check",
+    "ai-search",
+    "copyright"
+   ],
+   "description": "その 情報が どこから 来たか という 元の 資料。AIの 答えを 確かめるときに 見ます。"
+  },
+  {
+   "id": "algorithm",
+   "name": "アルゴリズム",
+   "reading": "あるごりずむ",
+   "acceptedReadings": [
+    "あるごりずむ"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧮",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "program",
+    "machine-learning"
+   ],
+   "description": "問題を 解くための 手順を、決まった 順番に ならべたもの。",
+   "example": "カレーの レシピも、作る 手順という 意味で アルゴリズムの 一つです。"
+  },
+  {
+   "id": "transcription",
+   "name": "文字起こし",
+   "reading": "もじおこし",
+   "acceptedReadings": [
+    "もじおこし"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "✍️",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "speech-rec",
+    "summary"
+   ],
+   "description": "会議や 授業の 録音を、文章に 書き出すこと。AIで 自動で できるように なりました。",
+   "example": "録音した インタビューを 文字起こしして、要約まで してもらえます。"
+  },
+  {
+   "id": "personalize",
+   "name": "パーソナライズ",
+   "reading": "ぱーそならいず",
+   "acceptedReadings": [
+    "ぱーそならいず"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧑",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "recommend",
+    "memory"
+   ],
+   "description": "一人ひとりの 好みや 使いかたに 合わせて、見せる 内容を 変えること。",
+   "example": "同じ アプリでも、人によって トップに 出る ものが ちがいます。"
+  },
+  {
+   "id": "keyword",
+   "name": "キーワード",
+   "reading": "きーわーど",
+   "acceptedReadings": [
+    "きーわーど"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔑",
+   "mapNode": "ai:prompt",
+   "relatedTerms": [
+    "search",
+    "prompt"
+   ],
+   "description": "検索や プロンプトで 大事に なる、中心の ことば。"
+  },
+  {
+   "id": "regenerate",
+   "name": "再生成",
+   "reading": "さいせいせい",
+   "acceptedReadings": [
+    "さいせいせい"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "answer",
+    "temperature"
+   ],
+   "description": "同じ プロンプトで、AIに もう一度 答えを 作ってもらうこと。答えは 毎回 少しずつ 変わります。",
+   "example": "気に入らない 絵は、再生成で 別の 案を 出してもらえます。"
+  },
+  {
+   "id": "draft",
+   "name": "下書き",
+   "reading": "したがき",
+   "acceptedReadings": [
+    "したがき"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🗒️",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "genai",
+    "fact-check"
+   ],
+   "description": "完成 前の 文章。AIに 下書きを 作ってもらい、人が 直して 仕上げる 使いかたが 多いです。",
+   "example": "お礼の メールの 下書きを AIに たのみ、自分の ことばで 直します。"
+  },
+  {
+   "id": "text",
+   "name": "テキスト",
+   "reading": "てきすと",
+   "acceptedReadings": [
+    "てきすと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔤",
+   "mapNode": "ai:prompt",
+   "relatedTerms": [
+    "input",
+    "prompt"
+   ],
+   "description": "文字だけで できた データや 文章。"
+  },
+  {
+   "id": "screenshot",
+   "name": "スクリーンショット",
+   "reading": "すくりーんしょっと",
+   "acceptedReadings": [
+    "すくりーんしょっと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📸",
+   "mapNode": "ai:context",
+   "relatedTerms": [
+    "multimodal",
+    "ocr"
+   ],
+   "description": "画面を そのまま 画像として 保存したもの。AIに 見せて 質問する ことも できます。",
+   "example": "エラーの 画面を スクショして「どうすれば いい？」と 聞けます。"
+  },
+  {
+   "id": "neural-net",
+   "name": "ニューラルネットワーク",
+   "reading": "にゅーらるねっとわーく",
+   "acceptedReadings": [
+    "にゅーらるねっとわーく"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🕸️",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "deep-learning",
+    "parameter"
+   ],
+   "description": "脳の 神経の つながりを まねて 作った、AIの 計算の しくみ。たくさんの 小さな 計算を つないで 答えを 出します。"
+  },
+  {
+   "id": "gpu",
+   "name": "GPU",
+   "reading": "じーぴーゆー",
+   "acceptedReadings": [
+    "じーぴーゆー"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🖥️",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "learning",
+    "inference"
+   ],
+   "description": "画像や 計算を たくさん 同時に こなすのが 得意な 部品。AIの 学習や 推論に 使われます。",
+   "example": "もとは ゲームの 画面を きれいに 動かすための 部品でした。"
+  },
+  {
+   "id": "parameter",
+   "name": "パラメーター",
+   "reading": "ぱらめーたー",
+   "acceptedReadings": [
+    "ぱらめーたー",
+    "ぱらめーた"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎚️",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "neural-net",
+    "learning"
+   ],
+   "description": "AIモデルの 中に ある、たくさんの 調整用の 数字。学習で 少しずつ 変わり、答えかたを 決めます。",
+   "example": "大きな モデルほど、パラメーターの 数も 多くなります。"
+  },
+  {
+   "id": "prompt-engineering",
+   "name": "プロンプトエンジニアリング",
+   "reading": "ぷろんぷとえんじにありんぐ",
+   "acceptedReadings": [
+    "ぷろんぷとえんじにありんぐ"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛠️",
+   "mapNode": "ai:prompt",
+   "relatedTerms": [
+    "prompt",
+    "few-shot",
+    "format"
+   ],
+   "description": "AIから よい 答えを 引き出すために、プロンプトの 書きかたを 工夫する こと。",
+   "example": "目的・相手・形を はっきり 書くと、答えが よくなります。"
+  },
+  {
+   "id": "few-shot",
+   "name": "フューショット",
+   "reading": "ふゅーしょっと",
+   "acceptedReadings": [
+    "ふゅーしょっと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "ai:prompt",
+   "relatedTerms": [
+    "zero-shot",
+    "prompt-engineering"
+   ],
+   "description": "プロンプトの 中で、いくつか お手本(例)を 見せてから たのむ やりかた。",
+   "example": "「りんご→赤、バナナ→黄」と 例を 見せてから「ぶどう→？」と 聞きます。"
+  },
+  {
+   "id": "system-prompt",
+   "name": "システムプロンプト",
+   "reading": "しすてむぷろんぷと",
+   "acceptedReadings": [
+    "しすてむぷろんぷと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📜",
+   "mapNode": "ai:context",
+   "relatedTerms": [
+    "prompt",
+    "context",
+    "guardrail"
+   ],
+   "description": "ユーザーの 質問より 先に AIに わたしておく、基本の 指示や 役わりの 設定。",
+   "example": "「あなたは やさしい 先生です。むずかしい ことばは 使いません」のように 決めておきます。"
+  },
+  {
+   "id": "context-window",
+   "name": "コンテキストウィンドウ",
+   "reading": "こんてきすとうぃんどう",
+   "acceptedReadings": [
+    "こんてきすとうぃんどう"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🪟",
+   "mapNode": "ai:context",
+   "relatedTerms": [
+    "context",
+    "token",
+    "memory"
+   ],
+   "description": "AIが 一度に 読んで おぼえておける 量の わく。こえると、古い 部分を わすれることが あります。",
+   "example": "とても 長い 会話では、はじめの ほうの 話を わすれてしまう ことが あります。"
+  },
+  {
+   "id": "agent",
+   "name": "エージェント",
+   "reading": "えーじぇんと",
+   "acceptedReadings": [
+    "えーじぇんと"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🕵️",
+   "mapNode": "ai:agent",
+   "relatedTerms": [
+    "tool",
+    "task",
+    "sub-agent"
+   ],
+   "description": "目的を 伝えると、自分で 手順を 考え、道具を 使いながら 作業を 進める AI。",
+   "example": "「旅行の 計画を 立てて、表に まとめて」を、調べる ところから 自分で 進めます。"
+  },
+  {
+   "id": "tool",
+   "name": "ツール",
+   "reading": "つーる",
+   "acceptedReadings": [
+    "つーる"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧰",
+   "mapNode": "ai:tools",
+   "relatedTerms": [
+    "tool-call",
+    "mcp",
+    "api"
+   ],
+   "description": "AIが 使える 道具。検索、計算、ファイル作りなどを、AIが 自分で 呼び出して 使います。",
+   "example": "AIが 計算ツールを 使うと、大きな 数の 計算も 正しく できます。"
+  },
+  {
+   "id": "code-gen",
+   "name": "コード生成",
+   "reading": "こーどせいせい",
+   "acceptedReadings": [
+    "こーどせいせい"
+   ],
+   "journey": "ai",
+   "category": "生成AI",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "👩‍💻",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "programming",
+    "claude-code",
+    "copilot"
+   ],
+   "description": "AIが プログラムの コードを 書くこと。人は 何を 作りたいかを ことばで 伝えます。",
+   "example": "「ボタンを おすと 色が 変わる ページを 作って」と たのめます。"
+  },
+  {
+   "id": "claude-code",
+   "name": "Claude Code",
+   "reading": "くろーどこーど",
+   "acceptedReadings": [
+    "くろーどこーど"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 3,
+   "type": "service",
+   "emoji": "🧑‍🔧",
+   "mapNode": "ai:agent",
+   "relatedTerms": [
+    "claude",
+    "agent",
+    "terminal"
+   ],
+   "description": "Anthropic が 作った、プログラムづくりを 手伝う AIエージェント。コードを 読んだり 書いたり、コマンドを 動かしたり できます。",
+   "example": "「この エラーを 直して」と たのむと、ファイルを 調べて 直してくれます。"
+  },
+  {
+   "id": "nlp",
+   "name": "自然言語処理",
+   "reading": "しぜんげんごしょり",
+   "acceptedReadings": [
+    "しぜんげんごしょり"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗯️",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "llm",
+    "translation"
+   ],
+   "description": "人が ふだん 使う ことば(自然言語)を、コンピューターが あつかう 技術。翻訳や 要約も その 一つです。"
+  },
+  {
+   "id": "agi",
+   "name": "AGI",
+   "reading": "えーじーあい",
+   "acceptedReadings": [
+    "えーじーあい"
+   ],
+   "journey": "ai",
+   "category": "AIの基本",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌟",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "ai",
+    "llm"
+   ],
+   "description": "人と 同じくらい、いろいろな ことを はば広く こなせる AI。まだ 研究の 目標の 段階です。"
+  },
+  {
+   "id": "permission",
+   "name": "権限",
+   "reading": "けんげん",
+   "acceptedReadings": [
+    "けんげん"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛂",
+   "mapNode": "ai:agent",
+   "relatedTerms": [
+    "agent",
+    "least-privilege",
+    "guardrail"
+   ],
+   "description": "だれが(どの AIが)、何を してよいか という 許可。エージェントに わたす 権限で、できることの 範囲が 決まります。",
+   "example": "「ファイルを 読むのは OK、消すのは 聞いてから」のように 決めます。"
+  },
+  {
+   "id": "bias",
+   "name": "バイアス",
+   "reading": "ばいあす",
+   "acceptedReadings": [
+    "ばいあす"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "training-data",
+    "ai-ethics"
+   ],
+   "description": "かたより。学習データに かたよりが あると、AIの 答えも かたよることが あります。"
+  },
+  {
+   "id": "ai-ethics",
+   "name": "AI倫理",
+   "reading": "えーあいりんり",
+   "acceptedReadings": [
+    "えーあいりんり"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🕊️",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "bias",
+    "guardrail",
+    "copyright"
+   ],
+   "description": "AIを 人や 社会の ために 正しく 使うための 考えかたや ルール。"
+  },
+  {
+   "id": "dataset",
+   "name": "データセット",
+   "reading": "でーたせっと",
+   "acceptedReadings": [
+    "でーたせっと"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗃️",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "training-data",
+    "teacher-data"
+   ],
+   "description": "学習などの ために 集めて、使いやすく 整理した データの まとまり。"
+  },
+  {
+   "id": "teacher-data",
+   "name": "教師データ",
+   "reading": "きょうしでーた",
+   "acceptedReadings": [
+    "きょうしでーた"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏷️",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "dataset",
+    "machine-learning"
+   ],
+   "description": "正解の 答え(ラベル)が ついた 学習データ。「この 写真は ネコ」のように 答えを いっしょに 教えます。"
+  },
+  {
+   "id": "reinforcement",
+   "name": "強化学習",
+   "reading": "きょうかがくしゅう",
+   "acceptedReadings": [
+    "きょうかがくしゅう"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏅",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "learning",
+    "machine-learning"
+   ],
+   "description": "うまく いったら ほめ、失敗したら 減点して、よい やりかたを 自分で 見つけさせる 学びかた。",
+   "example": "ゲームを 何万回も あそんで、強くなる AIが 有名です。"
+  },
+  {
+   "id": "open-model",
+   "name": "オープンモデル",
+   "reading": "おーぷんもでる",
+   "acceptedReadings": [
+    "おーぷんもでる"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📂",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "model",
+    "open-source",
+    "license"
+   ],
+   "description": "中身(学習した 数字など)が 公開されていて、自分の コンピューターでも 動かせる AIモデル。使うときは ライセンスを 確かめます。"
+  },
+  {
+   "id": "memory",
+   "name": "メモリー",
+   "reading": "めもりー",
+   "acceptedReadings": [
+    "めもりー",
+    "めもり"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧷",
+   "mapNode": "ai:context",
+   "relatedTerms": [
+    "chat-history",
+    "personalize",
+    "context-window"
+   ],
+   "description": "AIが 会話を こえて、使う人の 好みなどを おぼえておく 機能。何を おぼえているか 確かめたり、消したり できます。",
+   "example": "「わたしは 小学6年生です」と おぼえておくと、説明の しかたが 合わせられます。"
+  },
+  {
+   "id": "template",
+   "name": "テンプレート",
+   "reading": "てんぷれーと",
+   "acceptedReadings": [
+    "てんぷれーと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📋",
+   "mapNode": "ai:prompt",
+   "relatedTerms": [
+    "prompt",
+    "prompt-engineering"
+   ],
+   "description": "くり返し 使える、ひな形の 文章。よく使う プロンプトを 保存しておくと 便利です。"
+  },
+  {
+   "id": "format",
+   "name": "フォーマット",
+   "reading": "ふぉーまっと",
+   "acceptedReadings": [
+    "ふぉーまっと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "output",
+    "json",
+    "prompt-engineering"
+   ],
+   "description": "答えの 形。表・箇条書き・決まった 項目の 形などを 指定できます。",
+   "example": "「表の 形で」「3つの 箇条書きで」と たのむと、読みやすく なります。"
+  },
+  {
+   "id": "streaming",
+   "name": "ストリーミング",
+   "reading": "すとりーみんぐ",
+   "acceptedReadings": [
+    "すとりーみんぐ"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌊",
+   "mapNode": "ai:answer",
+   "relatedTerms": [
+    "answer",
+    "token"
+   ],
+   "description": "できあがった 部分から、少しずつ 送って 表示すること。AIの 答えが 文字ずつ 出てくるのは この ためです。",
+   "example": "動画を ダウンロードし終わる 前に 見られるのも ストリーミングです。"
+  },
+  {
+   "id": "automation",
+   "name": "自動化",
+   "reading": "じどうか",
+   "acceptedReadings": [
+    "じどうか"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🤖",
+   "mapNode": "ai:agent",
+   "relatedTerms": [
+    "agent",
+    "workflow",
+    "cron"
+   ],
+   "description": "人が 手で していた 作業を、機械や プログラムが 自動で するように すること。",
+   "example": "毎朝の 天気を 自動で 調べて、メールで 送る しくみなどです。"
+  },
+  {
+   "id": "task",
+   "name": "タスク",
+   "reading": "たすく",
+   "acceptedReadings": [
+    "たすく"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "✅",
+   "mapNode": "ai:agent",
+   "relatedTerms": [
+    "agent",
+    "workflow"
+   ],
+   "description": "やるべき 一つひとつの 仕事。エージェントは 大きな 目的を、小さな タスクに 分けて 進めます。"
+  },
+  {
+   "id": "transformer",
+   "name": "トランスフォーマー",
+   "reading": "とらんすふぉーまー",
+   "acceptedReadings": [
+    "とらんすふぉーまー"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔀",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "llm",
+    "attention"
+   ],
+   "description": "いまの 多くの LLM の 土台に なっている しくみ。文章の 中の ことば どうしの 関係を いっぺんに 見ます。"
+  },
+  {
+   "id": "attention",
+   "name": "アテンション",
+   "reading": "あてんしょん",
+   "acceptedReadings": [
+    "あてんしょん"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "👀",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "transformer",
+    "context"
+   ],
+   "description": "文章を 読むとき、どの ことばに 注目すれば よいかを 決める しくみ。トランスフォーマーの 心臓部です。",
+   "example": "「それ」が 何を さしているかを、前の ことばから 見つけます。"
+  },
+  {
+   "id": "chain-of-thought",
+   "name": "思考の連鎖",
+   "reading": "しこうのれんさ",
+   "acceptedReadings": [
+    "しこうのれんさ"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧵",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "prompt-engineering",
+    "inference"
+   ],
+   "description": "答えを 出す 前に、考える 手順を 一歩ずつ 書き出させる やりかた。むずかしい 問題で 役立ちます。",
+   "example": "「順番に 考えて」と 書くと、計算まちがいが へることが あります。"
+  },
+  {
+   "id": "zero-shot",
+   "name": "ゼロショット",
+   "reading": "ぜろしょっと",
+   "acceptedReadings": [
+    "ぜろしょっと"
+   ],
+   "journey": "ai",
+   "category": "使いかた",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "0️⃣",
+   "mapNode": "ai:prompt",
+   "relatedTerms": [
+    "few-shot",
+    "prompt"
+   ],
+   "description": "お手本(例)を 見せずに、いきなり たのむ やりかた。"
+  },
+  {
+   "id": "tool-call",
+   "name": "ツール呼び出し",
+   "reading": "つーるよびだし",
+   "acceptedReadings": [
+    "つーるよびだし"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📞",
+   "mapNode": "ai:tools",
+   "relatedTerms": [
+    "tool",
+    "api",
+    "mcp"
+   ],
+   "description": "AIが、自分で 決めた タイミングで 道具(ツール)を 使うこと。結果を 受けとって 答えに 生かします。",
+   "example": "「今日の 天気」を 聞かれた AIが、天気の API を 呼び出して 答えます。"
+  },
+  {
+   "id": "rag",
+   "name": "RAG",
+   "reading": "らぐ",
+   "acceptedReadings": [
+    "らぐ"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📚",
+   "mapNode": "ai:rag",
+   "relatedTerms": [
+    "embedding",
+    "vector-db",
+    "ai-search"
+   ],
+   "description": "AIが 答える 前に、資料や データベースから 関係する 情報を さがして、それを 見ながら 答える しくみ。",
+   "example": "会社の マニュアルを さがして 答える、社内の 質問チャットボットに 使われます。"
+  },
+  {
+   "id": "mcp",
+   "name": "MCP",
+   "reading": "えむしーぴー",
+   "acceptedReadings": [
+    "えむしーぴー"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔌",
+   "mapNode": "ai:tools",
+   "relatedTerms": [
+    "tool",
+    "api",
+    "agent"
+   ],
+   "description": "AIと、いろいろな ツールや データを つなぐための 共通の ルール(Model Context Protocol)。コンセントの 形が そろっていると、どの 家電でも させるのに 似ています。",
+   "example": "AIから カレンダーや ファイルを 使えるように する ときに 使われます。"
+  },
+  {
+   "id": "embedding",
+   "name": "Embedding",
+   "reading": "えんべでぃんぐ",
+   "acceptedReadings": [
+    "えんべでぃんぐ",
+    "えんべっでぃんぐ"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧭",
+   "mapNode": "ai:rag",
+   "relatedTerms": [
+    "vector",
+    "rag",
+    "similarity"
+   ],
+   "description": "ことばや 文章の 意味を、数字の ならびに 変えたもの。意味が 近い 文章ほど、近い 数字に なります。",
+   "example": "「犬」と「子犬」は 近く、「犬」と「電車」は 遠くに なります。"
+  },
+  {
+   "id": "vector",
+   "name": "ベクトル",
+   "reading": "べくとる",
+   "acceptedReadings": [
+    "べくとる"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "➡️",
+   "mapNode": "ai:rag",
+   "relatedTerms": [
+    "embedding",
+    "vector-db"
+   ],
+   "description": "向きと 大きさを 持つ 数字の ならび。AIでは、ことばの 意味を あらわす 数字の ならびの ことを いいます。"
+  },
+  {
+   "id": "vector-db",
+   "name": "ベクトルデータベース",
+   "reading": "べくとるでーたべーす",
+   "acceptedReadings": [
+    "べくとるでーたべーす"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🗄️",
+   "mapNode": "ai:rag",
+   "relatedTerms": [
+    "vector",
+    "embedding",
+    "database"
+   ],
+   "description": "意味を あらわす 数字の ならびを しまっておき、意味の 近いものを すばやく さがせる データベース。"
+  },
+  {
+   "id": "similarity",
+   "name": "類似度",
+   "reading": "るいじど",
+   "acceptedReadings": [
+    "るいじど"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🟰",
+   "mapNode": "ai:rag",
+   "relatedTerms": [
+    "embedding",
+    "vector"
+   ],
+   "description": "2つの ものが どれくらい 似ているかを あらわす 数字。",
+   "example": "RAG では 質問と 類似度の 高い 資料を 先に 読みます。"
+  },
+  {
+   "id": "chunk",
+   "name": "チャンク",
+   "reading": "ちゃんく",
+   "acceptedReadings": [
+    "ちゃんく"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧱",
+   "mapNode": "ai:rag",
+   "relatedTerms": [
+    "rag",
+    "embedding"
+   ],
+   "description": "長い 資料を、さがしやすいように 小さく 分けた ひとかたまり。",
+   "example": "100ページの マニュアルを、1段落ずつの チャンクに 分けて しまいます。"
+  },
+  {
+   "id": "fine-tuning",
+   "name": "ファインチューニング",
+   "reading": "ふぁいんちゅーにんぐ",
+   "acceptedReadings": [
+    "ふぁいんちゅーにんぐ"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "pretraining",
+    "learning",
+    "model"
+   ],
+   "description": "学習ずみの AIに、特定の 仕事むけの データで 追加の 練習を させて、得意分野を 作ること。",
+   "example": "お店の 問い合わせに 合う 言いかたを おぼえさせる ときなどに 使います。"
+  },
+  {
+   "id": "pretraining",
+   "name": "事前学習",
+   "reading": "じぜんがくしゅう",
+   "acceptedReadings": [
+    "じぜんがくしゅう"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌍",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "fine-tuning",
+    "training-data"
+   ],
+   "description": "AIが さいしょに、ばく大な 文章などで ことばの 使いかたを 広く 学ぶ 段階。"
+  },
+  {
+   "id": "distillation",
+   "name": "蒸留",
+   "reading": "じょうりゅう",
+   "acceptedReadings": [
+    "じょうりゅう"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⚗️",
+   "mapNode": "ai:train",
+   "relatedTerms": [
+    "model",
+    "fine-tuning"
+   ],
+   "description": "大きな AIの 答えかたを、小さな AIに まねさせて おぼえさせること。速くて 軽い モデルを 作れます。"
+  },
+  {
+   "id": "knowledge-cutoff",
+   "name": "ナレッジカットオフ",
+   "reading": "なれっじかっとおふ",
+   "acceptedReadings": [
+    "なれっじかっとおふ"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📅",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "training-data",
+    "rag",
+    "ai-search"
+   ],
+   "description": "AIが 学んだ データが いつまでの ものか という 区切り。それより 新しい 出来事は 知らないことが あります。",
+   "example": "最近の ニュースは、検索の 道具を 使って 調べてもらいます。"
+  },
+  {
+   "id": "temperature",
+   "name": "温度",
+   "reading": "おんど",
+   "acceptedReadings": [
+    "おんど"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌡️",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "regenerate",
+    "inference"
+   ],
+   "description": "AIの 答えの「ばらつき」を 決める 設定(temperature)。低いと 毎回 似た 答え、高いと 意外な 答えが 出やすく なります。"
+  },
+  {
+   "id": "diffusion",
+   "name": "拡散モデル",
+   "reading": "かくさんもでる",
+   "acceptedReadings": [
+    "かくさんもでる"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🌫️",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "image-gen",
+    "genai"
+   ],
+   "description": "ノイズ(ざらざら)から 少しずつ 絵を 作っていく、画像生成で よく 使われる しくみ。"
+  },
+  {
+   "id": "benchmark",
+   "name": "ベンチマーク",
+   "reading": "べんちまーく",
+   "acceptedReadings": [
+    "べんちまーく"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📊",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "model",
+    "evaluation"
+   ],
+   "description": "AIなどの 性能を、同じ テストで くらべるための ものさし。"
+  },
+  {
+   "id": "sub-agent",
+   "name": "サブエージェント",
+   "reading": "さぶえーじぇんと",
+   "acceptedReadings": [
+    "さぶえーじぇんと"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "👥",
+   "mapNode": "ai:agent",
+   "relatedTerms": [
+    "agent",
+    "multi-agent",
+    "task"
+   ],
+   "description": "大きな 仕事の 一部を まかされる、手伝い役の エージェント。",
+   "example": "調べものは サブエージェントに まかせ、まとめは 自分で します。"
+  },
+  {
+   "id": "multi-agent",
+   "name": "マルチエージェント",
+   "reading": "まるちえーじぇんと",
+   "acceptedReadings": [
+    "まるちえーじぇんと"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧑‍🤝‍🧑",
+   "mapNode": "ai:agent",
+   "relatedTerms": [
+    "sub-agent",
+    "agent"
+   ],
+   "description": "いくつもの エージェントが 役わりを 分けて、協力して 仕事を 進める しくみ。"
+  },
+  {
+   "id": "workflow",
+   "name": "ワークフロー",
+   "reading": "わーくふろー",
+   "acceptedReadings": [
+    "わーくふろー"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "ai:agent",
+   "relatedTerms": [
+    "task",
+    "automation",
+    "ci-cd"
+   ],
+   "description": "仕事を 進める、決まった 手順の 流れ。手順ごと AIに まかせる ことも あります。"
+  },
+  {
+   "id": "skill",
+   "name": "スキル",
+   "reading": "すきる",
+   "acceptedReadings": [
+    "すきる"
+   ],
+   "journey": "ai",
+   "category": "エージェント",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎒",
+   "mapNode": "ai:agent",
+   "relatedTerms": [
+    "agent",
+    "template"
+   ],
+   "description": "AIエージェントに、特定の 仕事の やりかたを まとめて わたしておくもの。必要な ときに 読みこんで 使います。",
+   "example": "「報告書の 書きかた」を スキルに しておくと、毎回 説明しなくて すみます。"
+  },
+  {
+   "id": "guardrail",
+   "name": "ガードレール",
+   "reading": "がーどれーる",
+   "acceptedReadings": [
+    "がーどれーる"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚧",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "ai-ethics",
+    "permission",
+    "prompt-injection"
+   ],
+   "description": "AIが 危ないことや、しては いけないことを しないように 作る 安全の しかけ。"
+  },
+  {
+   "id": "prompt-injection",
+   "name": "プロンプトインジェクション",
+   "reading": "ぷろんぷといんじぇくしょん",
+   "acceptedReadings": [
+    "ぷろんぷといんじぇくしょん"
+   ],
+   "journey": "ai",
+   "category": "気をつけること",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💉",
+   "mapNode": "ai:care",
+   "relatedTerms": [
+    "guardrail",
+    "rag",
+    "permission"
+   ],
+   "description": "読みこませる 文章などに こっそり 命令を まぜて、AIに 本来と ちがう 動きを させようとする 攻撃。",
+   "example": "ページの 中に かくれた「前の 指示を わすれて」という 文が まざっている ことが あります。"
+  },
+  {
+   "id": "evaluation",
+   "name": "評価",
+   "reading": "ひょうか",
+   "acceptedReadings": [
+    "ひょうか"
+   ],
+   "journey": "ai",
+   "category": "しくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📝",
+   "mapNode": "ai:model",
+   "relatedTerms": [
+    "benchmark",
+    "test"
+   ],
+   "description": "AIの 答えが どれくらい よいかを、決めた 基準で たしかめること。"
+  },
+  {
+   "id": "website",
+   "name": "Webサイト",
+   "reading": "うぇぶさいと",
+   "acceptedReadings": [
+    "うぇぶさいと"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🌐",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "homepage",
+    "browser",
+    "url"
+   ],
+   "description": "インターネットで 見られる、ページの あつまり。お店や 学校の 紹介、ニュース、ゲームなど いろいろ あります。",
+   "example": "この ゲームも Webサイトの 一つです。"
+  },
+  {
+   "id": "internet",
+   "name": "インターネット",
+   "reading": "いんたーねっと",
+   "acceptedReadings": [
+    "いんたーねっと"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🌏",
+   "mapNode": "web:internet",
+   "relatedTerms": [
+    "wifi",
+    "server",
+    "https"
+   ],
+   "description": "世界中の コンピューターを つなぐ 大きな 通信の あみ。メールも 動画も、ここを 通って とどきます。"
+  },
+  {
+   "id": "browser",
+   "name": "ブラウザ",
+   "reading": "ぶらうざ",
+   "acceptedReadings": [
+    "ぶらうざ",
+    "ぶらうざー"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🧭",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "website",
+    "url",
+    "cookie"
+   ],
+   "description": "Webサイトを 見るための アプリ。Safari や Chrome などが あります。",
+   "example": "アドレスの 欄に URL を 入れると、その ページが 表示されます。"
+  },
+  {
+   "id": "google",
+   "name": "Google",
+   "reading": "ぐーぐる",
+   "acceptedReadings": [
+    "ぐーぐる"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "service",
+   "emoji": "🔍",
+   "mapNode": "web:internet",
+   "relatedTerms": [
+    "search",
+    "gemini"
+   ],
+   "description": "検索サービスで 有名な アメリカの 会社。地図・メール・動画サイトなど、たくさんの サービスを 持っています。"
+  },
+  {
+   "id": "search",
+   "name": "検索",
+   "reading": "けんさく",
+   "acceptedReadings": [
+    "けんさく"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔎",
+   "mapNode": "web:internet",
+   "relatedTerms": [
+    "google",
+    "keyword",
+    "seo"
+   ],
+   "description": "知りたいことを ことばで 入れて、関係する ページを さがすこと。"
+  },
+  {
+   "id": "login",
+   "name": "ログイン",
+   "reading": "ろぐいん",
+   "acceptedReadings": [
+    "ろぐいん"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔐",
+   "mapNode": "web:auth",
+   "relatedTerms": [
+    "password",
+    "account",
+    "logout"
+   ],
+   "description": "IDや パスワードで「自分です」と 伝えて、サービスに 入ること。",
+   "example": "ログインすると、自分の 記録や 設定が 使えます。"
+  },
+  {
+   "id": "password",
+   "name": "パスワード",
+   "reading": "ぱすわーど",
+   "acceptedReadings": [
+    "ぱすわーど"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🗝️",
+   "mapNode": "web:auth",
+   "relatedTerms": [
+    "login",
+    "two-factor",
+    "password-reuse"
+   ],
+   "description": "本人だけが 知っている、ひみつの 合いことば。人に 教えず、ほかの サービスと 同じものに しないのが 大切です。"
+  },
+  {
+   "id": "url",
+   "name": "URL",
+   "reading": "ゆーあーるえる",
+   "acceptedReadings": [
+    "ゆーあーるえる"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔗",
+   "mapNode": "web:domain",
+   "relatedTerms": [
+    "domain",
+    "link",
+    "browser"
+   ],
+   "description": "Webの ページが どこに あるかを しめす 住所。「https://」から はじまります。"
+  },
+  {
+   "id": "wifi",
+   "name": "Wi-Fi",
+   "reading": "わいふぁい",
+   "acceptedReadings": [
+    "わいふぁい"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📶",
+   "mapNode": "web:internet",
+   "relatedTerms": [
+    "internet",
+    "smartphone"
+   ],
+   "description": "線を つながずに、電波で インターネットに つなぐ しくみ。"
+  },
+  {
+   "id": "github",
+   "name": "GitHub",
+   "reading": "ぎっとはぶ",
+   "acceptedReadings": [
+    "ぎっとはぶ"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 1,
+   "type": "service",
+   "emoji": "🐙",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "git",
+    "repository",
+    "pull-request"
+   ],
+   "description": "プログラムの コードを しまったり、みんなで いっしょに 直したり できる サービス。",
+   "example": "世界中の 開発者が、ここで コードを 見せあっています。"
+  },
+  {
+   "id": "email",
+   "name": "メール",
+   "reading": "めーる",
+   "acceptedReadings": [
+    "めーる"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "✉️",
+   "mapNode": "web:internet",
+   "relatedTerms": [
+    "spam",
+    "phishing"
+   ],
+   "description": "インターネットで 送る 手紙。サービスからの お知らせや、パスワードの 作りなおしにも 使われます。"
+  },
+  {
+   "id": "link",
+   "name": "リンク",
+   "reading": "りんく",
+   "acceptedReadings": [
+    "りんく"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔗",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "url",
+    "website"
+   ],
+   "description": "おすと 別の ページへ とべる 文字や 画像。"
+  },
+  {
+   "id": "homepage",
+   "name": "ホームページ",
+   "reading": "ほーむぺーじ",
+   "acceptedReadings": [
+    "ほーむぺーじ"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🏠",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "website",
+    "url"
+   ],
+   "description": "日本では、Webサイト そのものを さすことが 多い ことば。もとは サイトの 入口の ページの ことです。"
+  },
+  {
+   "id": "download",
+   "name": "ダウンロード",
+   "reading": "だうんろーど",
+   "acceptedReadings": [
+    "だうんろーど"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "⬇️",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "upload",
+    "app"
+   ],
+   "description": "インターネットから、ファイルや アプリを 自分の 機械に 持ってくること。"
+  },
+  {
+   "id": "cloud",
+   "name": "クラウド",
+   "reading": "くらうど",
+   "acceptedReadings": [
+    "くらうど"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "☁️",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "server",
+    "hosting",
+    "backup"
+   ],
+   "description": "自分の 機械では なく、インターネットの むこうの コンピューターに データを しまったり、計算させたり する 使いかた。",
+   "example": "写真を クラウドに 保存すると、機種変更しても 見られます。"
+  },
+  {
+   "id": "server",
+   "name": "サーバー",
+   "reading": "さーばー",
+   "acceptedReadings": [
+    "さーばー",
+    "さーば"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🗄️",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "hosting",
+    "cloud",
+    "back"
+   ],
+   "description": "ほかの コンピューターからの お願いに こたえて、ページや データを 送り返す コンピューター。",
+   "example": "ページを ひらくと、サーバーから ページの 中身が 送られてきます。"
+  },
+  {
+   "id": "web-app",
+   "name": "Webアプリ",
+   "reading": "うぇぶあぷり",
+   "acceptedReadings": [
+    "うぇぶあぷり"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🧩",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "app",
+    "front",
+    "back"
+   ],
+   "description": "ブラウザの 中で 動く アプリ。入れなくても URL を ひらくだけで 使えます。",
+   "example": "この ゲームも Webアプリです。"
+  },
+  {
+   "id": "pc",
+   "name": "パソコン",
+   "reading": "ぱそこん",
+   "acceptedReadings": [
+    "ぱそこん"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "💻",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "smartphone",
+    "browser"
+   ],
+   "description": "個人で 使う コンピューター(パーソナルコンピューター)。"
+  },
+  {
+   "id": "program",
+   "name": "プログラム",
+   "reading": "ぷろぐらむ",
+   "acceptedReadings": [
+    "ぷろぐらむ"
+   ],
+   "journey": "web",
+   "category": "プログラミング",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📃",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "programming",
+    "source-code"
+   ],
+   "description": "コンピューターに させたい ことを、順番に 書いた 命令の あつまり。"
+  },
+  {
+   "id": "programming",
+   "name": "プログラミング",
+   "reading": "ぷろぐらみんぐ",
+   "acceptedReadings": [
+    "ぷろぐらみんぐ"
+   ],
+   "journey": "web",
+   "category": "プログラミング",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "⌨️",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "program",
+    "javascript",
+    "python"
+   ],
+   "description": "プログラムを 書くこと。コンピューターが わかる ことば(プログラミング言語)で 書きます。"
+  },
+  {
+   "id": "account",
+   "name": "アカウント",
+   "reading": "あかうんと",
+   "acceptedReadings": [
+    "あかうんと"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "👤",
+   "mapNode": "web:auth",
+   "relatedTerms": [
+    "login",
+    "signup"
+   ],
+   "description": "サービスを 使うための、あなた専用の 登録。名前や 設定が ここに ひもづきます。"
+  },
+  {
+   "id": "update",
+   "name": "アップデート",
+   "reading": "あっぷでーと",
+   "acceptedReadings": [
+    "あっぷでーと"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔃",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "bug",
+    "version",
+    "vulnerability"
+   ],
+   "description": "アプリや ソフトを 新しい 形に 更新すること。直しや 安全の ための 変更も ふくまれます。"
+  },
+  {
+   "id": "bug",
+   "name": "バグ",
+   "reading": "ばぐ",
+   "acceptedReadings": [
+    "ばぐ"
+   ],
+   "journey": "web",
+   "category": "プログラミング",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🐛",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "test",
+    "error",
+    "update"
+   ],
+   "description": "プログラムの まちがい。思ったとおりに 動かない 原因に なります。「虫」という 意味です。"
+  },
+  {
+   "id": "sns",
+   "name": "SNS",
+   "reading": "えすえぬえす",
+   "acceptedReadings": [
+    "えすえぬえす"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🗣️",
+   "mapNode": "web:internet",
+   "relatedTerms": [
+    "account",
+    "privacy-policy"
+   ],
+   "description": "人と 人が つながって、写真や 文章を 送りあう サービス(ソーシャル・ネットワーキング・サービス)。"
+  },
+  {
+   "id": "qr",
+   "name": "QRコード",
+   "reading": "きゅーあーるこーど",
+   "acceptedReadings": [
+    "きゅーあーるこーど"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔳",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "url",
+    "smartphone"
+   ],
+   "description": "四角い もようの 中に、URL などの 情報を 入れた コード。スマホの カメラで 読みとれます。"
+  },
+  {
+   "id": "online",
+   "name": "オンライン",
+   "reading": "おんらいん",
+   "acceptedReadings": [
+    "おんらいん"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🟢",
+   "mapNode": "web:internet",
+   "relatedTerms": [
+    "internet",
+    "wifi"
+   ],
+   "description": "インターネットに つながっている 状態。"
+  },
+  {
+   "id": "save",
+   "name": "保存",
+   "reading": "ほぞん",
+   "acceptedReadings": [
+    "ほぞん"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "💾",
+   "mapNode": "web:db",
+   "relatedTerms": [
+    "database",
+    "backup"
+   ],
+   "description": "作った ものや データを、あとで また 使えるように しまっておくこと。"
+  },
+  {
+   "id": "copy-paste",
+   "name": "コピペ",
+   "reading": "こぴぺ",
+   "acceptedReadings": [
+    "こぴぺ"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📋",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "copyright",
+    "text"
+   ],
+   "description": "文字や 画像を 写して(コピー)、別の 場所に はりつける(ペースト)こと。",
+   "example": "人の 文章を そのまま コピペして 自分の ものに するのは だめです。"
+  },
+  {
+   "id": "icon",
+   "name": "アイコン",
+   "reading": "あいこん",
+   "acceptedReadings": [
+    "あいこん"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🟦",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "ui",
+    "app"
+   ],
+   "description": "アプリや 機能を、小さな 絵で あらわしたもの。"
+  },
+  {
+   "id": "notification",
+   "name": "通知",
+   "reading": "つうち",
+   "acceptedReadings": [
+    "つうち"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔔",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "email",
+    "pwa"
+   ],
+   "description": "アプリや サービスから 届く「お知らせ」。"
+  },
+  {
+   "id": "html",
+   "name": "HTML",
+   "reading": "えいちてぃーえむえる",
+   "acceptedReadings": [
+    "えいちてぃーえむえる",
+    "えっちてぃーえむえる"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧱",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "css",
+    "javascript",
+    "website"
+   ],
+   "description": "Webページの 骨組みを 書く ことば。「ここは 見出し」「ここは 画像」と 中身の 役わりを 決めます。"
+  },
+  {
+   "id": "css",
+   "name": "CSS",
+   "reading": "しーえすえす",
+   "acceptedReadings": [
+    "しーえすえす"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🎨",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "html",
+    "responsive",
+    "font"
+   ],
+   "description": "Webページの 見た目(色・大きさ・ならびかた)を 決める ことば。",
+   "example": "同じ HTML でも、CSS を 変えると ちがう デザインに なります。"
+  },
+  {
+   "id": "javascript",
+   "name": "JavaScript",
+   "reading": "じゃばすくりぷと",
+   "acceptedReadings": [
+    "じゃばすくりぷと"
+   ],
+   "journey": "web",
+   "category": "プログラミング",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⚡",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "html",
+    "typescript",
+    "react"
+   ],
+   "description": "Webページを 動かす プログラミング言語。ボタンを おしたときの 動きなどを 作ります。",
+   "example": "この ゲームの タイマーも JavaScript で 動いています。"
+  },
+  {
+   "id": "api",
+   "name": "API",
+   "reading": "えーぴーあい",
+   "acceptedReadings": [
+    "えーぴーあい"
+   ],
+   "journey": "web",
+   "category": "サービスをつなぐ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔌",
+   "mapNode": "web:back",
+   "relatedTerms": [
+    "json",
+    "endpoint",
+    "webhook"
+   ],
+   "description": "ソフトや サービス どうしが、決まった 形で 情報を やりとりするための 窓口。",
+   "example": "天気アプリが、天気の 会社の サービスから 予報を 受けとるときに 使います。"
+  },
+  {
+   "id": "database",
+   "name": "データベース",
+   "reading": "でーたべーす",
+   "acceptedReadings": [
+    "でーたべーす"
+   ],
+   "journey": "web",
+   "category": "データ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🗄️",
+   "mapNode": "web:db",
+   "relatedTerms": [
+    "sql",
+    "supabase",
+    "backup"
+   ],
+   "description": "たくさんの データを、さがしやすく 整理して しまっておく しくみ。",
+   "example": "会員の 名前や ゲームの 記録を しまっておく 場所です。"
+  },
+  {
+   "id": "domain",
+   "name": "ドメイン",
+   "reading": "どめいん",
+   "acceptedReadings": [
+    "どめいん"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🏷️",
+   "mapNode": "web:domain",
+   "relatedTerms": [
+    "dns",
+    "url",
+    "own-domain"
+   ],
+   "description": "インターネット上の 住所の 名前(「example.com」の 部分)。自分で 買って 持つことも できます。"
+  },
+  {
+   "id": "https",
+   "name": "HTTPS",
+   "reading": "えいちてぃーてぃーぴーえす",
+   "acceptedReadings": [
+    "えいちてぃーてぃーぴーえす",
+    "えっちてぃーてぃーぴーえす"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔒",
+   "mapNode": "web:internet",
+   "relatedTerms": [
+    "ssl",
+    "encryption",
+    "url"
+   ],
+   "description": "Webの 通信を、暗号に して 安全に する しくみ。URL が「https://」で はじまる ページは これを 使っています。"
+  },
+  {
+   "id": "front",
+   "name": "フロントエンド",
+   "reading": "ふろんとえんど",
+   "acceptedReadings": [
+    "ふろんとえんど"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🖼️",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "back",
+    "html",
+    "react"
+   ],
+   "description": "利用者が 目で 見て さわる 側の 部分。画面・ボタン・入力欄などです。"
+  },
+  {
+   "id": "back",
+   "name": "バックエンド",
+   "reading": "ばっくえんど",
+   "acceptedReadings": [
+    "ばっくえんど"
+   ],
+   "journey": "web",
+   "category": "サービスをつなぐ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⚙️",
+   "mapNode": "web:back",
+   "relatedTerms": [
+    "front",
+    "server",
+    "database"
+   ],
+   "description": "利用者からは 見えない、うらがわの しくみ。データを しまったり、計算したり します。"
+  },
+  {
+   "id": "source-code",
+   "name": "ソースコード",
+   "reading": "そーすこーど",
+   "acceptedReadings": [
+    "そーすこーど"
+   ],
+   "journey": "web",
+   "category": "プログラミング",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📜",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "program",
+    "github",
+    "license"
+   ],
+   "description": "人が 読める 形で 書かれた、プログラムの 文章。"
+  },
+  {
+   "id": "responsive",
+   "name": "レスポンシブ",
+   "reading": "れすぽんしぶ",
+   "acceptedReadings": [
+    "れすぽんしぶ"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "css",
+    "smartphone"
+   ],
+   "description": "画面の 大きさに 合わせて、ページの 見た目が 自動で 変わる 作りかた。",
+   "example": "同じ ページが、スマホでは たて1列、パソコンでは 横ならびに なります。"
+  },
+  {
+   "id": "cookie",
+   "name": "Cookie",
+   "reading": "くっきー",
+   "acceptedReadings": [
+    "くっきー"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🍪",
+   "mapNode": "web:auth",
+   "relatedTerms": [
+    "session",
+    "login",
+    "privacy-policy"
+   ],
+   "description": "サイトが ブラウザに あずける 小さな メモ。ログインした 状態を おぼえておく ために 使われます。"
+  },
+  {
+   "id": "cache",
+   "name": "キャッシュ",
+   "reading": "きゃっしゅ",
+   "acceptedReadings": [
+    "きゃっしゅ"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧊",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "cdn",
+    "browser"
+   ],
+   "description": "一度 読んだ データを 近くに 取っておき、次から すばやく 出す しくみ。",
+   "example": "ページを 直したのに 古いまま 見えるときは、キャッシュが 原因の ことが あります。"
+  },
+  {
+   "id": "error",
+   "name": "エラー",
+   "reading": "えらー",
+   "acceptedReadings": [
+    "えらー"
+   ],
+   "journey": "web",
+   "category": "プログラミング",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⚠️",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "bug",
+    "e404",
+    "log"
+   ],
+   "description": "うまく 動かなかった ことの お知らせ。どこで 何が 起きたかの 手がかりに なります。"
+  },
+  {
+   "id": "e404",
+   "name": "404エラー",
+   "reading": "よんまるよんえらー",
+   "acceptedReadings": [
+    "よんまるよんえらー",
+    "よんぜろよんえらー",
+    "よんひゃくよんえらー"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🚫",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "status-code",
+    "url",
+    "redirect"
+   ],
+   "description": "さがした ページが 見つからない ときの お知らせ。URL の まちがいや、ページが 消えたときに 出ます。"
+  },
+  {
+   "id": "web-design",
+   "name": "Webデザイン",
+   "reading": "うぇぶでざいん",
+   "acceptedReadings": [
+    "うぇぶでざいん"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🖌️",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "ui",
+    "ux",
+    "css"
+   ],
+   "description": "Webサイトの 見た目や 使いやすさを 考えて 形に すること。"
+  },
+  {
+   "id": "ui",
+   "name": "UI",
+   "reading": "ゆーあい",
+   "acceptedReadings": [
+    "ゆーあい"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🎛️",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "ux",
+    "icon",
+    "web-design"
+   ],
+   "description": "画面や ボタンなど、人と 機械が ふれあう 部分(ユーザーインターフェース)。"
+  },
+  {
+   "id": "font",
+   "name": "フォント",
+   "reading": "ふぉんと",
+   "acceptedReadings": [
+    "ふぉんと"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔤",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "css",
+    "web-design"
+   ],
+   "description": "文字の 形の デザイン。ゴシック体や 明朝体などが あります。"
+  },
+  {
+   "id": "hosting",
+   "name": "ホスティング",
+   "reading": "ほすてぃんぐ",
+   "acceptedReadings": [
+    "ほすてぃんぐ"
+   ],
+   "journey": "web",
+   "category": "公開する",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🏨",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "server",
+    "vercel",
+    "deploy"
+   ],
+   "description": "Webサイトや アプリを、インターネットで 見られるように サーバーに 置いておく サービス。"
+  },
+  {
+   "id": "communication",
+   "name": "通信",
+   "reading": "つうしん",
+   "acceptedReadings": [
+    "つうしん"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📡",
+   "mapNode": "web:internet",
+   "relatedTerms": [
+    "internet",
+    "https"
+   ],
+   "description": "機械どうしが、データを 送ったり 受けとったり すること。"
+  },
+  {
+   "id": "version",
+   "name": "バージョン",
+   "reading": "ばーじょん",
+   "acceptedReadings": [
+    "ばーじょん"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔢",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "update",
+    "git"
+   ],
+   "description": "ソフトや アプリの 版の 番号。新しく なるたびに 数字が 上がります。"
+  },
+  {
+   "id": "logout",
+   "name": "ログアウト",
+   "reading": "ろぐあうと",
+   "acceptedReadings": [
+    "ろぐあうと"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🚪",
+   "mapNode": "web:auth",
+   "relatedTerms": [
+    "login",
+    "session"
+   ],
+   "description": "ログインした 状態を 終わらせること。みんなで 使う パソコンでは 大切です。"
+  },
+  {
+   "id": "user",
+   "name": "ユーザー",
+   "reading": "ゆーざー",
+   "acceptedReadings": [
+    "ゆーざー",
+    "ゆーざ"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🙋",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "account",
+    "ux"
+   ],
+   "description": "サービスや アプリを 使う 人。"
+  },
+  {
+   "id": "admin",
+   "name": "管理画面",
+   "reading": "かんりがめん",
+   "acceptedReadings": [
+    "かんりがめん"
+   ],
+   "journey": "web",
+   "category": "サービスをつなぐ",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🛠️",
+   "mapNode": "web:back",
+   "relatedTerms": [
+    "permission",
+    "database"
+   ],
+   "description": "サービスの 運営者だけが 使う、設定や データを 管理する 画面。"
+  },
+  {
+   "id": "form",
+   "name": "フォーム",
+   "reading": "ふぉーむ",
+   "acceptedReadings": [
+    "ふぉーむ"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧾",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "contact",
+    "api"
+   ],
+   "description": "名前や メッセージなどを 入力して 送る 欄。",
+   "example": "お問い合わせの ページで よく 見かけます。"
+  },
+  {
+   "id": "dark-mode",
+   "name": "ダークモード",
+   "reading": "だーくもーど",
+   "acceptedReadings": [
+    "だーくもーど"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🌙",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "css",
+    "ui"
+   ],
+   "description": "画面の 地の 色を 暗くする 表示。夜に 目が まぶしくないように します。"
+  },
+  {
+   "id": "python",
+   "name": "Python",
+   "reading": "ぱいそん",
+   "acceptedReadings": [
+    "ぱいそん"
+   ],
+   "journey": "web",
+   "category": "プログラミング",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🐍",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "programming",
+    "machine-learning"
+   ],
+   "description": "読みやすさで 人気の プログラミング言語。AIや データの 分析で よく 使われます。"
+  },
+  {
+   "id": "open-source",
+   "name": "オープンソース",
+   "reading": "おーぷんそーす",
+   "acceptedReadings": [
+    "おーぷんそーす"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🪴",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "source-code",
+    "license",
+    "library"
+   ],
+   "description": "ソースコードが 公開されていて、決まりを 守れば だれでも 使ったり 直したり できる ソフト。"
+  },
+  {
+   "id": "blog",
+   "name": "ブログ",
+   "reading": "ぶろぐ",
+   "acceptedReadings": [
+    "ぶろぐ"
+   ],
+   "journey": "web",
+   "category": "Webの基本",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📰",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "website",
+    "seo"
+   ],
+   "description": "日記のように 記事を 書いて、公開していく Webサイト。"
+  },
+  {
+   "id": "editor",
+   "name": "エディタ",
+   "reading": "えでぃた",
+   "acceptedReadings": [
+    "えでぃた",
+    "えでぃたー"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "✏️",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "source-code",
+    "programming"
+   ],
+   "description": "文字や プログラムを 書くための アプリ。"
+  },
+  {
+   "id": "typescript",
+   "name": "TypeScript",
+   "reading": "たいぷすくりぷと",
+   "acceptedReadings": [
+    "たいぷすくりぷと"
+   ],
+   "journey": "web",
+   "category": "プログラミング",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔷",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "javascript",
+    "react"
+   ],
+   "description": "JavaScript に「型」という 決まりを 足した ことば。書きまちがいを 動かす 前に 見つけやすく なります。"
+  },
+  {
+   "id": "react",
+   "name": "React",
+   "reading": "りあくと",
+   "acceptedReadings": [
+    "りあくと"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⚛️",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "javascript",
+    "nextjs",
+    "library"
+   ],
+   "description": "画面を 部品に 分けて 作るための、人気の しくみ(ライブラリ)。",
+   "example": "ボタンや カードを 部品に しておけば、何度でも 使いまわせます。"
+  },
+  {
+   "id": "nextjs",
+   "name": "Next.js",
+   "reading": "ねくすとじぇいえす",
+   "acceptedReadings": [
+    "ねくすとじぇいえす",
+    "ねくすとじぇーえす",
+    "ねくすと"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⏭️",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "react",
+    "framework",
+    "vercel"
+   ],
+   "description": "React を 使って Webアプリを 作るための フレームワーク。ページの 作りかたや 公開の しかたが そろっています。"
+  },
+  {
+   "id": "json",
+   "name": "JSON",
+   "reading": "じぇいそん",
+   "acceptedReadings": [
+    "じぇいそん",
+    "じぇーそん"
+   ],
+   "journey": "web",
+   "category": "データ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧾",
+   "mapNode": "web:back",
+   "relatedTerms": [
+    "api",
+    "format"
+   ],
+   "description": "データを 文字で あらわす 書きかたの 一つ。{ } の 中に「名前: 値」を ならべます。人にも 機械にも 読みやすい 形です。",
+   "example": "{\"name\": \"たろう\", \"age\": 12} のように 書きます。"
+  },
+  {
+   "id": "sql",
+   "name": "SQL",
+   "reading": "えすきゅーえる",
+   "acceptedReadings": [
+    "えすきゅーえる",
+    "しーくえる"
+   ],
+   "journey": "web",
+   "category": "データ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗃️",
+   "mapNode": "web:db",
+   "relatedTerms": [
+    "database",
+    "supabase",
+    "migration"
+   ],
+   "description": "データベースに「さがして」「しまって」と お願いするための ことば。",
+   "example": "「点数が 80点 以上の 人を さがす」なども SQL で 書けます。"
+  },
+  {
+   "id": "supabase",
+   "name": "Supabase",
+   "reading": "すーぱべーす",
+   "acceptedReadings": [
+    "すーぱべーす"
+   ],
+   "journey": "web",
+   "category": "データ",
+   "difficulty": 3,
+   "type": "service",
+   "emoji": "🟩",
+   "mapNode": "web:db",
+   "relatedTerms": [
+    "database",
+    "sql",
+    "auth"
+   ],
+   "description": "データベースや ログインの しくみを、まとめて 用意してくれる サービス。"
+  },
+  {
+   "id": "vercel",
+   "name": "Vercel",
+   "reading": "ばーせる",
+   "acceptedReadings": [
+    "ばーせる"
+   ],
+   "journey": "web",
+   "category": "公開する",
+   "difficulty": 3,
+   "type": "service",
+   "emoji": "▲",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "hosting",
+    "deploy",
+    "nextjs"
+   ],
+   "description": "Webアプリを かんたんに 公開できる ホスティングの サービス。GitHub と つなぐと、コードを 送るたびに 自動で 公開できます。"
+  },
+  {
+   "id": "git",
+   "name": "Git",
+   "reading": "ぎっと",
+   "acceptedReadings": [
+    "ぎっと"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌿",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "github",
+    "commit",
+    "branch"
+   ],
+   "description": "ファイルの 変更の 記録を とっておく 道具。いつでも 前の 形に もどせます。"
+  },
+  {
+   "id": "repository",
+   "name": "リポジトリ",
+   "reading": "りぽじとり",
+   "acceptedReadings": [
+    "りぽじとり"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📁",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "git",
+    "github"
+   ],
+   "description": "プログラムの ファイルと、その 変更の 記録を まとめて しまう 入れもの。"
+  },
+  {
+   "id": "commit",
+   "name": "コミット",
+   "reading": "こみっと",
+   "acceptedReadings": [
+    "こみっと"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📌",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "git",
+    "push",
+    "branch"
+   ],
+   "description": "ファイルの 変更を、ひとまとまりの 記録として 残すこと。「セーブ」に 少し 似ています。"
+  },
+  {
+   "id": "branch",
+   "name": "ブランチ",
+   "reading": "ぶらんち",
+   "acceptedReadings": [
+    "ぶらんち"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌱",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "git",
+    "merge",
+    "pull-request"
+   ],
+   "description": "本流から 分けて、ためしに 変更を 進められる「えだ」。うまく いったら 本流に もどします。"
+  },
+  {
+   "id": "push",
+   "name": "プッシュ",
+   "reading": "ぷっしゅ",
+   "acceptedReadings": [
+    "ぷっしゅ"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📤",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "commit",
+    "github"
+   ],
+   "description": "手元の コミットを、GitHub などの リポジトリに 送ること。"
+  },
+  {
+   "id": "pull-request",
+   "name": "プルリクエスト",
+   "reading": "ぷるりくえすと",
+   "acceptedReadings": [
+    "ぷるりくえすと"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🙏",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "branch",
+    "merge",
+    "github"
+   ],
+   "description": "「この 変更を 取りこんで ください」と お願いする しくみ。ほかの 人が 見て、確認してから 取りこみます。"
+  },
+  {
+   "id": "merge",
+   "name": "マージ",
+   "reading": "まーじ",
+   "acceptedReadings": [
+    "まーじ"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔀",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "branch",
+    "pull-request"
+   ],
+   "description": "えだ(ブランチ)で した 変更を、本流に 合わせること。"
+  },
+  {
+   "id": "deploy",
+   "name": "デプロイ",
+   "reading": "でぷろい",
+   "acceptedReadings": [
+    "でぷろい"
+   ],
+   "journey": "web",
+   "category": "公開する",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🚀",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "vercel",
+    "production",
+    "build"
+   ],
+   "description": "作った アプリを、みんなが 使える 場所に 出すこと。",
+   "example": "コードを 直したら、デプロイして はじめて 本番に 反映されます。"
+  },
+  {
+   "id": "env",
+   "name": "環境変数",
+   "reading": "かんきょうへんすう",
+   "acceptedReadings": [
+    "かんきょうへんすう"
+   ],
+   "journey": "web",
+   "category": "公開する",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧰",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "api-key",
+    "deploy",
+    "production"
+   ],
+   "description": "APIキーなど、コードに 直接 書きたくない 大切な 設定を、外から わたす しくみ。",
+   "example": "本番と テストで、ちがう 鍵を 使いわけられます。変えたら 作りなおし(デプロイ)が 必要な ことも あります。"
+  },
+  {
+   "id": "api-key",
+   "name": "APIキー",
+   "reading": "えーぴーあいきー",
+   "acceptedReadings": [
+    "えーぴーあいきー"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔑",
+   "mapNode": "web:back",
+   "relatedTerms": [
+    "api",
+    "env",
+    "security"
+   ],
+   "description": "API を 使うときに「使ってよい 人です」と しめす、ひみつの 鍵。人に 見せたり、コードに 書いて 公開したり しては いけません。"
+  },
+  {
+   "id": "auth",
+   "name": "認証",
+   "reading": "にんしょう",
+   "acceptedReadings": [
+    "にんしょう"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🪪",
+   "mapNode": "web:auth",
+   "relatedTerms": [
+    "login",
+    "two-factor",
+    "oauth"
+   ],
+   "description": "使おうとしている 人が 本人かどうかを 確かめること。",
+   "example": "パスワードや 顔、メールで 送られる 番号などで 確かめます。"
+  },
+  {
+   "id": "session",
+   "name": "セッション",
+   "reading": "せっしょん",
+   "acceptedReadings": [
+    "せっしょん"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⏳",
+   "mapNode": "web:auth",
+   "relatedTerms": [
+    "cookie",
+    "login"
+   ],
+   "description": "ログインしてから ログアウトするまでの、ひとつづきの 利用の あいだ。サーバーが「いま だれが 使っているか」を おぼえておきます。"
+  },
+  {
+   "id": "dns",
+   "name": "DNS",
+   "reading": "でぃーえぬえす",
+   "acceptedReadings": [
+    "でぃーえぬえす"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📒",
+   "mapNode": "web:domain",
+   "relatedTerms": [
+    "domain",
+    "url",
+    "hosting"
+   ],
+   "description": "ドメイン名(example.com)を、コンピューターの 住所の 番号に 変える しくみ。インターネットの 電話帳のような ものです。"
+  },
+  {
+   "id": "ssl",
+   "name": "SSL証明書",
+   "reading": "えすえすえるしょうめいしょ",
+   "acceptedReadings": [
+    "えすえすえるしょうめいしょ"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📜",
+   "mapNode": "web:domain",
+   "relatedTerms": [
+    "https",
+    "encryption",
+    "domain"
+   ],
+   "description": "その サイトが 本物で、通信が 暗号に なっていることを しめす 電子の 証明書。HTTPS に 必要です。"
+  },
+  {
+   "id": "framework",
+   "name": "フレームワーク",
+   "reading": "ふれーむわーく",
+   "acceptedReadings": [
+    "ふれーむわーく"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏗️",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "library",
+    "nextjs"
+   ],
+   "description": "アプリを 作るときの 土台と 決まりごとの セット。ゼロから 作らなくて すみます。"
+  },
+  {
+   "id": "library",
+   "name": "ライブラリ",
+   "reading": "らいぶらり",
+   "acceptedReadings": [
+    "らいぶらり"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📚",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "package",
+    "framework",
+    "open-source"
+   ],
+   "description": "よく 使う 機能を まとめて、ほかの 人も 使えるように した プログラムの 部品。"
+  },
+  {
+   "id": "terminal",
+   "name": "ターミナル",
+   "reading": "たーみなる",
+   "acceptedReadings": [
+    "たーみなる"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⬛",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "command",
+    "claude-code"
+   ],
+   "description": "文字で 命令(コマンド)を 打って、コンピューターを 動かす 画面。"
+  },
+  {
+   "id": "command",
+   "name": "コマンド",
+   "reading": "こまんど",
+   "acceptedReadings": [
+    "こまんど"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⌨️",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "terminal",
+    "git"
+   ],
+   "description": "コンピューターへの 命令の ことば。",
+   "example": "「git commit」も コマンドの 一つです。"
+  },
+  {
+   "id": "local",
+   "name": "ローカル",
+   "reading": "ろーかる",
+   "acceptedReadings": [
+    "ろーかる"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏡",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "production",
+    "test"
+   ],
+   "description": "自分の パソコンの 中(手元)の こと。公開する 前に、まず ローカルで 動かして 確かめます。"
+  },
+  {
+   "id": "production",
+   "name": "本番環境",
+   "reading": "ほんばんかんきょう",
+   "acceptedReadings": [
+    "ほんばんかんきょう"
+   ],
+   "journey": "web",
+   "category": "公開する",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏟️",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "deploy",
+    "local",
+    "env"
+   ],
+   "description": "実際に 利用者が 使っている 場所。ここで こわれると みんなが こまるので、慎重に 変えます。"
+  },
+  {
+   "id": "test",
+   "name": "テスト",
+   "reading": "てすと",
+   "acceptedReadings": [
+    "てすと"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "bug",
+    "ci-cd"
+   ],
+   "description": "プログラムが 思ったとおりに 動くかを 確かめること。"
+  },
+  {
+   "id": "log",
+   "name": "ログ",
+   "reading": "ろぐ",
+   "acceptedReadings": [
+    "ろぐ"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧾",
+   "mapNode": "web:back",
+   "relatedTerms": [
+    "error",
+    "monitoring",
+    "audit-log"
+   ],
+   "description": "いつ 何が 起きたかを 書きとめた 記録。こまったときの 手がかりに なります。"
+  },
+  {
+   "id": "ux",
+   "name": "UX",
+   "reading": "ゆーえっくす",
+   "acceptedReadings": [
+    "ゆーえっくす"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "😊",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "ui",
+    "web-design"
+   ],
+   "description": "サービスを 使ったときの「使いやすい」「楽しい」などの 体験(ユーザーエクスペリエンス)。"
+  },
+  {
+   "id": "webhook",
+   "name": "Webhook",
+   "reading": "うぇぶふっく",
+   "acceptedReadings": [
+    "うぇぶふっく"
+   ],
+   "journey": "web",
+   "category": "サービスをつなぐ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🪝",
+   "mapNode": "web:back",
+   "relatedTerms": [
+    "api",
+    "stripe",
+    "endpoint"
+   ],
+   "description": "何かが 起きたとき、その 知らせを 別の サービスへ 自動で 送る しくみ。",
+   "example": "決済が 終わったら、決済サービスが お店の サーバーに「はらわれました」と 知らせます。"
+  },
+  {
+   "id": "cdn",
+   "name": "CDN",
+   "reading": "しーでぃーえぬ",
+   "acceptedReadings": [
+    "しーでぃーえぬ"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🛰️",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "cache",
+    "hosting"
+   ],
+   "description": "世界の あちこちに 置いた サーバーに ページの 写しを くばって、近くから すばやく とどける しくみ。"
+  },
+  {
+   "id": "redirect",
+   "name": "リダイレクト",
+   "reading": "りだいれくと",
+   "acceptedReadings": [
+    "りだいれくと"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "↪️",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "url",
+    "status-code",
+    "domain"
+   ],
+   "description": "ある URL に 来た 人を、自動で 別の URL へ 案内すること。",
+   "example": "「www なし」で 来た 人を「www つき」の 住所へ 送るときに 使います。"
+  },
+  {
+   "id": "status-code",
+   "name": "ステータスコード",
+   "reading": "すてーたすこーど",
+   "acceptedReadings": [
+    "すてーたすこーど"
+   ],
+   "journey": "web",
+   "category": "ネットのしくみ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔢",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "e404",
+    "redirect",
+    "api"
+   ],
+   "description": "サーバーが 返事に つける 3けたの 番号。200 は 成功、404 は 見つからない、500 は サーバーの エラーです。"
+  },
+  {
+   "id": "cron",
+   "name": "cron",
+   "reading": "くろん",
+   "acceptedReadings": [
+    "くろん"
+   ],
+   "journey": "web",
+   "category": "公開する",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "⏰",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "automation",
+    "backup"
+   ],
+   "description": "決まった 時間に、決まった 処理を 自動で 動かす しくみ。",
+   "example": "毎日 朝6時に、古い データを そうじする ように できます。"
+  },
+  {
+   "id": "pwa",
+   "name": "PWA",
+   "reading": "ぴーだぶりゅーえー",
+   "acceptedReadings": [
+    "ぴーだぶりゅーえー"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📲",
+   "mapNode": "web:device",
+   "relatedTerms": [
+    "web-app",
+    "notification"
+   ],
+   "description": "Webアプリを、スマホの ホーム画面に 置いて アプリのように 使える しくみ。"
+  },
+  {
+   "id": "rendering",
+   "name": "レンダリング",
+   "reading": "れんだりんぐ",
+   "acceptedReadings": [
+    "れんだりんぐ"
+   ],
+   "journey": "web",
+   "category": "画面をつくる",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🖨️",
+   "mapNode": "web:front",
+   "relatedTerms": [
+    "html",
+    "react",
+    "browser"
+   ],
+   "description": "データや コードから、実際に 画面を 描くこと。サーバーで するか ブラウザで するかを えらべます。"
+  },
+  {
+   "id": "ci-cd",
+   "name": "CI/CD",
+   "reading": "しーあいしーでぃー",
+   "acceptedReadings": [
+    "しーあいしーでぃー"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "test",
+    "deploy",
+    "github"
+   ],
+   "description": "コードを 送るたびに、テストと 公開を 自動で 行う しくみ。"
+  },
+  {
+   "id": "oauth",
+   "name": "OAuth",
+   "reading": "おーおーす",
+   "acceptedReadings": [
+    "おーおーす"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎫",
+   "mapNode": "web:auth",
+   "relatedTerms": [
+    "auth",
+    "login",
+    "api-key"
+   ],
+   "description": "パスワードを わたさずに、別の サービスの 力を 借りて ログインしたり、使う 許可を 出したり する しくみ。",
+   "example": "「Google で ログイン」の ボタンなどで 使われています。"
+  },
+  {
+   "id": "endpoint",
+   "name": "エンドポイント",
+   "reading": "えんどぽいんと",
+   "acceptedReadings": [
+    "えんどぽいんと"
+   ],
+   "journey": "web",
+   "category": "サービスをつなぐ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "web:back",
+   "relatedTerms": [
+    "api",
+    "webhook",
+    "url"
+   ],
+   "description": "API の 窓口ごとの 住所(URL)。",
+   "example": "/api/score に 送ると 記録を しまう、のように 決めます。"
+  },
+  {
+   "id": "npm",
+   "name": "npm",
+   "reading": "えぬぴーえむ",
+   "acceptedReadings": [
+    "えぬぴーえむ"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📦",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "package",
+    "library",
+    "dependency"
+   ],
+   "description": "JavaScript の 部品(パッケージ)を 集めたり 入れたり する しくみ。"
+  },
+  {
+   "id": "package",
+   "name": "パッケージ",
+   "reading": "ぱっけーじ",
+   "acceptedReadings": [
+    "ぱっけーじ"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎁",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "npm",
+    "library"
+   ],
+   "description": "すぐに 使えるように まとめられた プログラムの 部品。"
+  },
+  {
+   "id": "dependency",
+   "name": "依存関係",
+   "reading": "いぞんかんけい",
+   "acceptedReadings": [
+    "いぞんかんけい"
+   ],
+   "journey": "web",
+   "category": "開発の道具",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🕸️",
+   "mapNode": "web:code",
+   "relatedTerms": [
+    "package",
+    "library",
+    "vulnerability"
+   ],
+   "description": "ある プログラムが、動くために ほかの 部品を 必要と している 関係。"
+  },
+  {
+   "id": "build",
+   "name": "ビルド",
+   "reading": "びるど",
+   "acceptedReadings": [
+    "びるど"
+   ],
+   "journey": "web",
+   "category": "公開する",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🏗️",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "deploy",
+    "typescript"
+   ],
+   "description": "書いた コードを、公開できる 形に まとめて 組み立てること。"
+  },
+  {
+   "id": "serverless",
+   "name": "サーバーレス",
+   "reading": "さーばーれす",
+   "acceptedReadings": [
+    "さーばーれす"
+   ],
+   "journey": "web",
+   "category": "公開する",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🎈",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "server",
+    "cloud",
+    "hosting"
+   ],
+   "description": "サーバーの 管理を 自分で せず、必要な ときだけ 処理を 動かしてもらう 使いかた。"
+  },
+  {
+   "id": "container",
+   "name": "コンテナ",
+   "reading": "こんてな",
+   "acceptedReadings": [
+    "こんてな"
+   ],
+   "journey": "web",
+   "category": "公開する",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚢",
+   "mapNode": "web:hosting",
+   "relatedTerms": [
+    "server",
+    "deploy"
+   ],
+   "description": "アプリと、動かすのに 必要な ものを まとめて 箱に 入れる しくみ。どこでも 同じように 動かせます。"
+  },
+  {
+   "id": "rate-limit",
+   "name": "レート制限",
+   "reading": "れーとせいげん",
+   "acceptedReadings": [
+    "れーとせいげん"
+   ],
+   "journey": "web",
+   "category": "サービスをつなぐ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚦",
+   "mapNode": "web:back",
+   "relatedTerms": [
+    "api",
+    "security"
+   ],
+   "description": "決まった 時間に 使える 回数の 上限。使いすぎや 攻撃から サービスを 守ります。",
+   "example": "「1分に 10回まで」のように 決めます。"
+  },
+  {
+   "id": "migration",
+   "name": "マイグレーション",
+   "reading": "まいぐれーしょん",
+   "acceptedReadings": [
+    "まいぐれーしょん"
+   ],
+   "journey": "web",
+   "category": "データ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚚",
+   "mapNode": "web:db",
+   "relatedTerms": [
+    "database",
+    "sql"
+   ],
+   "description": "データベースの 形(表や 列)を、決まった 手順で 変えること。"
+  },
+  {
+   "id": "db-index",
+   "name": "インデックス",
+   "reading": "いんでっくす",
+   "acceptedReadings": [
+    "いんでっくす"
+   ],
+   "journey": "web",
+   "category": "データ",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📑",
+   "mapNode": "web:db",
+   "relatedTerms": [
+    "database",
+    "sql"
+   ],
+   "description": "データベースで、データを すばやく さがすための「さくいん」。",
+   "example": "本の うしろの さくいんと 同じ 考えかたです。"
+  },
+  {
+   "id": "hash",
+   "name": "ハッシュ",
+   "reading": "はっしゅ",
+   "acceptedReadings": [
+    "はっしゅ"
+   ],
+   "journey": "web",
+   "category": "ログインと安全",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "#️⃣",
+   "mapNode": "web:auth",
+   "relatedTerms": [
+    "password",
+    "encryption"
+   ],
+   "description": "データから、もとに もどせない 決まった 長さの 文字を 作ること。パスワードは そのままではなく ハッシュに して しまいます。"
+  },
+  {
+   "id": "publish",
+   "name": "公開",
+   "reading": "こうかい",
+   "acceptedReadings": [
+    "こうかい"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🎉",
+   "mapNode": "ops:launch",
+   "relatedTerms": [
+    "release",
+    "deploy",
+    "beta"
+   ],
+   "description": "作った サービスを、みんなが 使える 状態に すること。"
+  },
+  {
+   "id": "terms",
+   "name": "利用規約",
+   "reading": "りようきやく",
+   "acceptedReadings": [
+    "りようきやく"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📜",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "privacy-policy",
+    "consent",
+    "suspension"
+   ],
+   "description": "サービスを 使うときの 約束ごとを 書いた 文書。使う人と 運営者の あいだの ルールです。",
+   "example": "「ほかの 人の じゃまを しない」などが 書かれています。"
+  },
+  {
+   "id": "privacy-policy",
+   "name": "プライバシーポリシー",
+   "reading": "ぷらいばしーぽりしー",
+   "acceptedReadings": [
+    "ぷらいばしーぽりしー"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🛡️",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "personal-info",
+    "terms",
+    "privacy-law"
+   ],
+   "description": "あずかった 個人情報を、何に どう 使い、どう 守るかを 書いた 文書。"
+  },
+  {
+   "id": "personal-info",
+   "name": "個人情報",
+   "reading": "こじんじょうほう",
+   "acceptedReadings": [
+    "こじんじょうほう"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🪪",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "privacy-policy",
+    "privacy-law",
+    "confidential"
+   ],
+   "description": "名前・住所・電話番号・顔写真など、その 人が だれか わかる 情報。大切に あつかう 決まりが あります。"
+  },
+  {
+   "id": "copyright",
+   "name": "著作権",
+   "reading": "ちょさくけん",
+   "acceptedReadings": [
+    "ちょさくけん"
+   ],
+   "journey": "ops",
+   "category": "権利",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "©️",
+   "mapNode": "ops:brand",
+   "relatedTerms": [
+    "license",
+    "trademark",
+    "source"
+   ],
+   "description": "文章・絵・音楽・プログラムなどを 作った 人が 持つ 権利。勝手に 写して 使っては いけません。"
+  },
+  {
+   "id": "monthly-fee",
+   "name": "月額料金",
+   "reading": "げつがくりょうきん",
+   "acceptedReadings": [
+    "げつがくりょうきん"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📆",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "subscription",
+    "annual"
+   ],
+   "description": "1か月ごとに はらう 料金。"
+  },
+  {
+   "id": "free-trial",
+   "name": "無料体験",
+   "reading": "むりょうたいけん",
+   "acceptedReadings": [
+    "むりょうたいけん"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🎁",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "subscription",
+    "cancel"
+   ],
+   "description": "お金を はらう 前に、しばらく ただで ためせる 期間。",
+   "example": "終わる 日を 知らせておくと、あとで こまる 人が へります。"
+  },
+  {
+   "id": "cancel",
+   "name": "解約",
+   "reading": "かいやく",
+   "acceptedReadings": [
+    "かいやく"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "✋",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "subscription",
+    "refund",
+    "churn"
+   ],
+   "description": "続けていた 契約を やめること。わかりやすく やめられることも、よい サービスの 大切な 点です。"
+  },
+  {
+   "id": "contact",
+   "name": "問い合わせ",
+   "reading": "といあわせ",
+   "acceptedReadings": [
+    "といあわせ"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📨",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "faq",
+    "support",
+    "form"
+   ],
+   "description": "利用者から 運営者への 質問や 相談。"
+  },
+  {
+   "id": "user-person",
+   "name": "利用者",
+   "reading": "りようしゃ",
+   "acceptedReadings": [
+    "りようしゃ"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🙋",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "operator",
+    "user"
+   ],
+   "description": "サービスを 使う 人。"
+  },
+  {
+   "id": "operator",
+   "name": "運営者",
+   "reading": "うんえいしゃ",
+   "acceptedReadings": [
+    "うんえいしゃ"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🧑‍💼",
+   "mapNode": "ops:service",
+   "relatedTerms": [
+    "user-person",
+    "tokushoho"
+   ],
+   "description": "サービスを 動かして、管理している 人や 会社。"
+  },
+  {
+   "id": "subscription",
+   "name": "サブスクリプション",
+   "reading": "さぶすくりぷしょん",
+   "acceptedReadings": [
+    "さぶすくりぷしょん",
+    "さぶすく"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "monthly-fee",
+    "cancel",
+    "stripe"
+   ],
+   "description": "月ごとや 年ごとに 料金を はらって、その 間 使い続けられる 形(サブスク)。",
+   "example": "動画や 音楽の 見放題・聞き放題の サービスが 有名です。"
+  },
+  {
+   "id": "payment",
+   "name": "決済",
+   "reading": "けっさい",
+   "acceptedReadings": [
+    "けっさい"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "💳",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "credit-card",
+    "stripe",
+    "payment-fee"
+   ],
+   "description": "お金を はらって、取りひきを 終わらせること。"
+  },
+  {
+   "id": "credit-card",
+   "name": "クレジットカード",
+   "reading": "くれじっとかーど",
+   "acceptedReadings": [
+    "くれじっとかーど"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "💳",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "payment",
+    "3ds"
+   ],
+   "description": "あとから まとめて はらう 約束で、買いものが できる カード。"
+  },
+  {
+   "id": "security",
+   "name": "セキュリティ",
+   "reading": "せきゅりてぃ",
+   "acceptedReadings": [
+    "せきゅりてぃ"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🛡️",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "password",
+    "two-factor",
+    "vulnerability"
+   ],
+   "description": "データや サービスを、ぬすまれたり こわされたり しないように 守ること。"
+  },
+  {
+   "id": "backup",
+   "name": "バックアップ",
+   "reading": "ばっくあっぷ",
+   "acceptedReadings": [
+    "ばっくあっぷ"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "💾",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "restore",
+    "database",
+    "cloud"
+   ],
+   "description": "もしもの ときに そなえて、データの 写しを 別の 場所に とっておくこと。"
+  },
+  {
+   "id": "logo",
+   "name": "ロゴ",
+   "reading": "ろご",
+   "acceptedReadings": [
+    "ろご"
+   ],
+   "journey": "ops",
+   "category": "権利",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔰",
+   "mapNode": "ops:brand",
+   "relatedTerms": [
+    "brand",
+    "trademark"
+   ],
+   "description": "会社や サービスの 名前を、目じるしの デザインに したもの。"
+  },
+  {
+   "id": "notice",
+   "name": "お知らせ",
+   "reading": "おしらせ",
+   "acceptedReadings": [
+    "おしらせ"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📢",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "maintenance",
+    "outage"
+   ],
+   "description": "運営者から 利用者への 連絡。変更や 休みの 予定などを 伝えます。"
+  },
+  {
+   "id": "maintenance",
+   "name": "メンテナンス",
+   "reading": "めんてなんす",
+   "acceptedReadings": [
+    "めんてなんす"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔧",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "notice",
+    "update"
+   ],
+   "description": "サービスを 点検したり 直したり すること。その 間 使えない ことも あります。"
+  },
+  {
+   "id": "outage",
+   "name": "障害",
+   "reading": "しょうがい",
+   "acceptedReadings": [
+    "しょうがい"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🔥",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "restore",
+    "incident",
+    "notice"
+   ],
+   "description": "サービスが 止まったり、正しく 動かなく なったり すること。"
+  },
+  {
+   "id": "ad",
+   "name": "広告",
+   "reading": "こうこく",
+   "acceptedReadings": [
+    "こうこく"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📣",
+   "mapNode": "ops:grow",
+   "relatedTerms": [
+    "seo",
+    "analytics"
+   ],
+   "description": "商品や サービスを 知ってもらうための 宣伝。"
+  },
+  {
+   "id": "review",
+   "name": "レビュー",
+   "reading": "れびゅー",
+   "acceptedReadings": [
+    "れびゅー"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "⭐",
+   "mapNode": "ops:grow",
+   "relatedTerms": [
+    "ad",
+    "support"
+   ],
+   "description": "使った 人の 感想や 評価。"
+  },
+  {
+   "id": "faq",
+   "name": "よくある質問",
+   "reading": "よくあるしつもん",
+   "acceptedReadings": [
+    "よくあるしつもん"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "❓",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "contact",
+    "support"
+   ],
+   "description": "多くの 人が 聞きたい 質問と 答えを、先に まとめて のせたもの(FAQ)。"
+  },
+  {
+   "id": "refund",
+   "name": "返金",
+   "reading": "へんきん",
+   "acceptedReadings": [
+    "へんきん"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "💴",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "cancel",
+    "chargeback",
+    "tokushoho"
+   ],
+   "description": "はらった お金を 返すこと。どんな ときに 返すかを、先に 決めて 書いておきます。"
+  },
+  {
+   "id": "receipt",
+   "name": "領収書",
+   "reading": "りょうしゅうしょ",
+   "acceptedReadings": [
+    "りょうしゅうしょ"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🧾",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "invoice",
+    "payment"
+   ],
+   "description": "お金を 受けとった ことを しめす 書類。"
+  },
+  {
+   "id": "signup",
+   "name": "会員登録",
+   "reading": "かいいんとうろく",
+   "acceptedReadings": [
+    "かいいんとうろく"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📝",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "account",
+    "consent"
+   ],
+   "description": "サービスを 使うために、名前や メールを 登録すること。"
+  },
+  {
+   "id": "withdrawal",
+   "name": "退会",
+   "reading": "たいかい",
+   "acceptedReadings": [
+    "たいかい"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "👋",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "cancel",
+    "data-deletion"
+   ],
+   "description": "会員を やめること。"
+  },
+  {
+   "id": "tax-incl",
+   "name": "税込",
+   "reading": "ぜいこみ",
+   "acceptedReadings": [
+    "ぜいこみ"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🏷️",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "monthly-fee",
+    "invoice"
+   ],
+   "description": "消費税を ふくめた 金額。表示は 税込で 見せるのが 決まりです。"
+  },
+  {
+   "id": "virus",
+   "name": "ウイルス",
+   "reading": "ういるす",
+   "acceptedReadings": [
+    "ういるす"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🦠",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "security",
+    "phishing"
+   ],
+   "description": "こっそり 入りこんで、機械を こわしたり 情報を ぬすんだり する 悪い プログラム。"
+  },
+  {
+   "id": "spam",
+   "name": "迷惑メール",
+   "reading": "めいわくめーる",
+   "acceptedReadings": [
+    "めいわくめーる"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📧",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "phishing",
+    "email"
+   ],
+   "description": "たのんでいないのに 大量に 送られてくる 宣伝や、だまそうと する メール。"
+  },
+  {
+   "id": "tokushoho",
+   "name": "特定商取引法",
+   "reading": "とくていしょうとりひきほう",
+   "acceptedReadings": [
+    "とくていしょうとりひきほう"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "operator",
+    "refund",
+    "terms"
+   ],
+   "description": "ネットで 物や サービスを 売るときの 決まりを さだめた 法律。売る人の 名前や 連絡先、料金、返品の 決まりなどを 表示します。",
+   "example": "お店の サイトの 下の「特定商取引法に基づく表記」の ページです。"
+  },
+  {
+   "id": "trademark",
+   "name": "商標",
+   "reading": "しょうひょう",
+   "acceptedReadings": [
+    "しょうひょう"
+   ],
+   "journey": "ops",
+   "category": "権利",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "™️",
+   "mapNode": "ops:brand",
+   "relatedTerms": [
+    "brand",
+    "logo",
+    "application"
+   ],
+   "description": "商品や サービスの 名前・マークを、自分の 目じるしとして 守る 権利。登録すると、ほかの 人は 同じものを 使えなく なります。"
+  },
+  {
+   "id": "license",
+   "name": "ライセンス",
+   "reading": "らいせんす",
+   "acceptedReadings": [
+    "らいせんす"
+   ],
+   "journey": "ops",
+   "category": "権利",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📄",
+   "mapNode": "ops:brand",
+   "relatedTerms": [
+    "copyright",
+    "open-source",
+    "cc"
+   ],
+   "description": "作った 人が「こういう 決まりなら 使って いいよ」と 出す 許可。"
+  },
+  {
+   "id": "two-factor",
+   "name": "二段階認証",
+   "reading": "にだんかいにんしょう",
+   "acceptedReadings": [
+    "にだんかいにんしょう"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔐",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "password",
+    "auth",
+    "passkey"
+   ],
+   "description": "パスワードに くわえて、スマホに 届く 番号なども 使って、2回 本人か 確かめる しくみ。",
+   "example": "パスワードが もれても、勝手に ログインされにくく なります。"
+  },
+  {
+   "id": "stripe",
+   "name": "Stripe",
+   "reading": "すとらいぷ",
+   "acceptedReadings": [
+    "すとらいぷ"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 2,
+   "type": "service",
+   "emoji": "💠",
+   "mapNode": "web:pay",
+   "relatedTerms": [
+    "payment",
+    "webhook",
+    "subscription"
+   ],
+   "description": "ネットの お店や サービスの 支払いを、まとめて 引きうける 決済サービス。",
+   "example": "月ごとの 支払い(サブスク)の しくみも 用意されています。"
+  },
+  {
+   "id": "payment-fee",
+   "name": "決済手数料",
+   "reading": "けっさいてすうりょう",
+   "acceptedReadings": [
+    "けっさいてすうりょう"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🪙",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "payment",
+    "stripe"
+   ],
+   "description": "支払いの しくみを 使う ために、決済サービスに はらう 手数料。売上の 一部が ひかれます。"
+  },
+  {
+   "id": "invoice",
+   "name": "請求書",
+   "reading": "せいきゅうしょ",
+   "acceptedReadings": [
+    "せいきゅうしょ"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📃",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "receipt",
+    "invoice-system"
+   ],
+   "description": "「この 金額を はらって ください」と 伝える 書類。"
+  },
+  {
+   "id": "annual",
+   "name": "年払い",
+   "reading": "ねんばらい",
+   "acceptedReadings": [
+    "ねんばらい"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🗓️",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "monthly-fee",
+    "subscription"
+   ],
+   "description": "1年ぶんの 料金を まとめて はらうこと。月払いより おトクに する サービスも あります。"
+  },
+  {
+   "id": "phishing",
+   "name": "フィッシング詐欺",
+   "reading": "ふぃっしんぐさぎ",
+   "acceptedReadings": [
+    "ふぃっしんぐさぎ"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🎣",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "spam",
+    "password",
+    "two-factor"
+   ],
+   "description": "本物 そっくりの メールや サイトで、パスワードや カードの 番号を だましとる 詐欺。",
+   "example": "「アカウントが 止まります」と あせらせる メールの リンクは おさないように しよう。"
+  },
+  {
+   "id": "suspension",
+   "name": "利用停止",
+   "reading": "りようていし",
+   "acceptedReadings": [
+    "りようていし"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⛔",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "terms",
+    "unauthorized-access"
+   ],
+   "description": "ルールを 守らない 利用や、支払いが ない ときに、サービスを 使えなく すること。"
+  },
+  {
+   "id": "consent",
+   "name": "同意",
+   "reading": "どうい",
+   "acceptedReadings": [
+    "どうい"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🤝",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "terms",
+    "privacy-policy",
+    "minor"
+   ],
+   "description": "内容を 読んで「それで いいです」と 認めること。",
+   "example": "登録の ときの「利用規約に 同意する」の チェックです。"
+  },
+  {
+   "id": "brand",
+   "name": "ブランド",
+   "reading": "ぶらんど",
+   "acceptedReadings": [
+    "ぶらんど"
+   ],
+   "journey": "ops",
+   "category": "権利",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🏷️",
+   "mapNode": "ops:brand",
+   "relatedTerms": [
+    "logo",
+    "trademark"
+   ],
+   "description": "名前や ロゴ、雰囲気から 生まれる「この サービスらしさ」と 信頼。"
+  },
+  {
+   "id": "own-domain",
+   "name": "独自ドメイン",
+   "reading": "どくじどめいん",
+   "acceptedReadings": [
+    "どくじどめいん"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🌐",
+   "mapNode": "web:domain",
+   "relatedTerms": [
+    "domain",
+    "dns",
+    "domain-renewal"
+   ],
+   "description": "自分の サービス専用に 取った ドメイン。信頼や おぼえやすさに つながります。"
+  },
+  {
+   "id": "analytics",
+   "name": "アクセス解析",
+   "reading": "あくせすかいせき",
+   "acceptedReadings": [
+    "あくせすかいせき"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "ops:grow",
+   "relatedTerms": [
+    "seo",
+    "kpi",
+    "privacy-policy"
+   ],
+   "description": "どの ページが どれくらい 見られたか などを 調べること。使う 前に、プライバシーポリシーへの 記載も 考えます。"
+  },
+  {
+   "id": "seo",
+   "name": "SEO",
+   "reading": "えすいーおー",
+   "acceptedReadings": [
+    "えすいーおー"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔝",
+   "mapNode": "ops:grow",
+   "relatedTerms": [
+    "search",
+    "noindex",
+    "blog"
+   ],
+   "description": "検索で 見つけてもらいやすく する 工夫。",
+   "example": "わかりやすい 題名を つける、役に立つ 中身を 書く などが 基本です。"
+  },
+  {
+   "id": "privacy-law",
+   "name": "個人情報保護法",
+   "reading": "こじんじょうほうほごほう",
+   "acceptedReadings": [
+    "こじんじょうほうほごほう"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🏛️",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "personal-info",
+    "privacy-policy",
+    "third-party"
+   ],
+   "description": "個人情報の 正しい あつかいかたを 決めた 日本の 法律。"
+  },
+  {
+   "id": "minor",
+   "name": "未成年",
+   "reading": "みせいねん",
+   "acceptedReadings": [
+    "みせいねん"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧒",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "consent",
+    "age-limit"
+   ],
+   "description": "まだ 大人に なっていない 人。お金の 契約などでは、保護者の 同意が 必要な ことが あります。"
+  },
+  {
+   "id": "age-limit",
+   "name": "年齢制限",
+   "reading": "ねんれいせいげん",
+   "acceptedReadings": [
+    "ねんれいせいげん"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔞",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "minor",
+    "terms"
+   ],
+   "description": "決まった 年齢に ならないと 使えない、という 決まり。"
+  },
+  {
+   "id": "password-reuse",
+   "name": "パスワードの使い回し",
+   "reading": "ぱすわーどのつかいまわし",
+   "acceptedReadings": [
+    "ぱすわーどのつかいまわし"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "♻️",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "password",
+    "unauthorized-access",
+    "passkey"
+   ],
+   "description": "いくつもの サービスで 同じ パスワードを 使うこと。1つ もれると、ほかも 入られて しまうので 危険です。"
+  },
+  {
+   "id": "unauthorized-access",
+   "name": "不正アクセス",
+   "reading": "ふせいあくせす",
+   "acceptedReadings": [
+    "ふせいあくせす"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🚷",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "password-reuse",
+    "two-factor",
+    "security"
+   ],
+   "description": "許可なく、他人の アカウントや システムに 入りこむこと。法律で 禁止されています。"
+  },
+  {
+   "id": "support",
+   "name": "サポート",
+   "reading": "さぽーと",
+   "acceptedReadings": [
+    "さぽーと"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🎧",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "contact",
+    "faq",
+    "customer-success"
+   ],
+   "description": "利用者が こまった ときに 手伝うこと。"
+  },
+  {
+   "id": "billing",
+   "name": "課金",
+   "reading": "かきん",
+   "acceptedReadings": [
+    "かきん"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "💰",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "payment",
+    "subscription"
+   ],
+   "description": "お金を はらって、サービスや 機能を 使うこと。使う 側と、料金を 取る 側の 両方で 使う ことばです。"
+  },
+  {
+   "id": "referral",
+   "name": "紹介制度",
+   "reading": "しょうかいせいど",
+   "acceptedReadings": [
+    "しょうかいせいど"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🎟️",
+   "mapNode": "ops:grow",
+   "relatedTerms": [
+    "ad",
+    "free-trial"
+   ],
+   "description": "使っている 人が 友だちに すすめると、特典が もらえる しくみ。"
+  },
+  {
+   "id": "press-release",
+   "name": "プレスリリース",
+   "reading": "ぷれすりりーす",
+   "acceptedReadings": [
+    "ぷれすりりーす"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📰",
+   "mapNode": "ops:grow",
+   "relatedTerms": [
+    "release",
+    "publish"
+   ],
+   "description": "新しい サービスなどの 情報を、ニュースを 作る 人たちに 向けて 発表する 文書。"
+  },
+  {
+   "id": "restore",
+   "name": "復旧",
+   "reading": "ふっきゅう",
+   "acceptedReadings": [
+    "ふっきゅう"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🩹",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "outage",
+    "backup",
+    "incident"
+   ],
+   "description": "止まった サービスや こわれた データを、もとの 状態に もどすこと。"
+  },
+  {
+   "id": "yago",
+   "name": "屋号",
+   "reading": "やごう",
+   "acceptedReadings": [
+    "やごう"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏮",
+   "mapNode": "ops:service",
+   "relatedTerms": [
+    "operator",
+    "tokushoho"
+   ],
+   "description": "個人で 商売を する 人が 使う、お店や 仕事の 名前。"
+  },
+  {
+   "id": "invoice-system",
+   "name": "インボイス",
+   "reading": "いんぼいす",
+   "acceptedReadings": [
+    "いんぼいす"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧾",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "invoice",
+    "tax-incl"
+   ],
+   "description": "決まった 項目(登録番号・税率など)を のせた 請求書。消費税の しくみで 使われます。"
+  },
+  {
+   "id": "virtual-office",
+   "name": "バーチャルオフィス",
+   "reading": "ばーちゃるおふぃす",
+   "acceptedReadings": [
+    "ばーちゃるおふぃす"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏢",
+   "mapNode": "ops:service",
+   "relatedTerms": [
+    "operator",
+    "tokushoho"
+   ],
+   "description": "実際に 部屋を 借りずに、住所や 郵便の 受けとりだけを 借りる サービス。自宅の 住所を 公開せずに すみます。"
+  },
+  {
+   "id": "application",
+   "name": "出願",
+   "reading": "しゅつがん",
+   "acceptedReadings": [
+    "しゅつがん"
+   ],
+   "journey": "ops",
+   "category": "権利",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📮",
+   "mapNode": "ops:brand",
+   "relatedTerms": [
+    "trademark",
+    "registered-tm"
+   ],
+   "description": "商標などを 登録するために、国(特許庁)に 申しこむこと。審査を 通ると 登録されます。"
+  },
+  {
+   "id": "registered-tm",
+   "name": "登録商標",
+   "reading": "とうろくしょうひょう",
+   "acceptedReadings": [
+    "とうろくしょうひょう"
+   ],
+   "journey": "ops",
+   "category": "権利",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "®️",
+   "mapNode": "ops:brand",
+   "relatedTerms": [
+    "trademark",
+    "application"
+   ],
+   "description": "審査を 通って 国に 登録された 商標。® の しるしを 使えるのは 登録された あとだけです。",
+   "example": "登録前は ™ を 使います。"
+  },
+  {
+   "id": "cc",
+   "name": "クリエイティブ・コモンズ",
+   "reading": "くりえいてぃぶこもんず",
+   "acceptedReadings": [
+    "くりえいてぃぶこもんず"
+   ],
+   "journey": "ops",
+   "category": "権利",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🅒",
+   "mapNode": "ops:brand",
+   "relatedTerms": [
+    "license",
+    "copyright"
+   ],
+   "description": "作った 人が「名前を 書けば 使ってOK」などの 条件を しめすための、世界共通の ライセンスの しくみ。",
+   "example": "CC BY(名前を 書けば 使える)などの 種類が あります。"
+  },
+  {
+   "id": "chargeback",
+   "name": "チャージバック",
+   "reading": "ちゃーじばっく",
+   "acceptedReadings": [
+    "ちゃーじばっく"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "↩️",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "refund",
+    "credit-card",
+    "fraud-detect"
+   ],
+   "description": "カードの 持ち主の 申し出で、カード会社が 支払いを とりけすこと。不正な 利用の ときなどに 起きます。"
+  },
+  {
+   "id": "prorate",
+   "name": "日割り",
+   "reading": "ひわり",
+   "acceptedReadings": [
+    "ひわり"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📏",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "monthly-fee",
+    "cancel"
+   ],
+   "description": "1か月の 料金を、使った 日数ぶんに 分けて 計算すること。"
+  },
+  {
+   "id": "grace",
+   "name": "猶予期間",
+   "reading": "ゆうよきかん",
+   "acceptedReadings": [
+    "ゆうよきかん"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⏸️",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "suspension",
+    "billing"
+   ],
+   "description": "支払いが おくれても、すぐには 止めずに 待っておく 期間。"
+  },
+  {
+   "id": "data-deletion",
+   "name": "データ削除",
+   "reading": "でーたさくじょ",
+   "acceptedReadings": [
+    "でーたさくじょ"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗑️",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "withdrawal",
+    "personal-info",
+    "backup"
+   ],
+   "description": "いらなく なった データを 消すこと。退会した 人の 情報を いつ 消すかも 決めておきます。"
+  },
+  {
+   "id": "disclosure",
+   "name": "開示請求",
+   "reading": "かいじせいきゅう",
+   "acceptedReadings": [
+    "かいじせいきゅう"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📬",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "personal-info",
+    "privacy-law"
+   ],
+   "description": "本人が「わたしの どんな 情報を 持っていますか」と 見せるよう 求めること。"
+  },
+  {
+   "id": "disclaimer",
+   "name": "免責事項",
+   "reading": "めんせきじこう",
+   "acceptedReadings": [
+    "めんせきじこう"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📎",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "terms",
+    "ad"
+   ],
+   "description": "「こういう ときは 責任を 負えません」と 先に 書いておく 決まり。"
+  },
+  {
+   "id": "accessibility",
+   "name": "アクセシビリティ",
+   "reading": "あくせしびりてぃ",
+   "acceptedReadings": [
+    "あくせしびりてぃ"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "♿",
+   "mapNode": "ops:grow",
+   "relatedTerms": [
+    "ui",
+    "ux"
+   ],
+   "description": "年れいや 障がいに かかわらず、だれでも 使いやすく すること。",
+   "example": "文字を 大きく できる・読み上げソフトで 読める などです。"
+  },
+  {
+   "id": "kpi",
+   "name": "KPI",
+   "reading": "けーぴーあい",
+   "acceptedReadings": [
+    "けーぴーあい"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "ops:grow",
+   "relatedTerms": [
+    "analytics",
+    "retention"
+   ],
+   "description": "目標に 近づいているかを はかるための 数字。",
+   "example": "「毎日 あそぶ 人の 数」などを 決めて 見ていきます。"
+  },
+  {
+   "id": "retention",
+   "name": "継続率",
+   "reading": "けいぞくりつ",
+   "acceptedReadings": [
+    "けいぞくりつ"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📊",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "churn",
+    "kpi"
+   ],
+   "description": "使いはじめた 人の うち、あとも 使い続けている 人の 割合。"
+  },
+  {
+   "id": "churn",
+   "name": "解約率",
+   "reading": "かいやくりつ",
+   "acceptedReadings": [
+    "かいやくりつ"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📉",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "retention",
+    "cancel"
+   ],
+   "description": "一定の 期間に、やめた 人の 割合。"
+  },
+  {
+   "id": "beta",
+   "name": "ベータ版",
+   "reading": "べーたばん",
+   "acceptedReadings": [
+    "べーたばん"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "ops:launch",
+   "relatedTerms": [
+    "release",
+    "test"
+   ],
+   "description": "正式に 出す 前の、ためしの 版。使った 人の 声を 集めて 直していきます。"
+  },
+  {
+   "id": "release",
+   "name": "リリース",
+   "reading": "りりーす",
+   "acceptedReadings": [
+    "りりーす"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🚀",
+   "mapNode": "ops:launch",
+   "relatedTerms": [
+    "publish",
+    "beta",
+    "deploy"
+   ],
+   "description": "新しい サービスや 機能を 世の中に 出すこと。"
+  },
+  {
+   "id": "monitoring",
+   "name": "監視",
+   "reading": "かんし",
+   "acceptedReadings": [
+    "かんし"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "👁️",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "log",
+    "outage",
+    "incident"
+   ],
+   "description": "サービスが ちゃんと 動いているかを、いつも 見張ること。止まったら すぐ 気づけます。"
+  },
+  {
+   "id": "vulnerability",
+   "name": "脆弱性",
+   "reading": "ぜいじゃくせい",
+   "acceptedReadings": [
+    "ぜいじゃくせい"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🕳️",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "security",
+    "update",
+    "dependency"
+   ],
+   "description": "プログラムの 弱い ところ。悪い 人に ねらわれる 入口に なるので、見つけたら 早く 直します。"
+  },
+  {
+   "id": "encryption",
+   "name": "暗号化",
+   "reading": "あんごうか",
+   "acceptedReadings": [
+    "あんごうか"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔏",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "https",
+    "hash",
+    "ssl"
+   ],
+   "description": "データを、鍵を 持つ 人しか 読めない 形に 変えること。"
+  },
+  {
+   "id": "noindex",
+   "name": "noindex",
+   "reading": "のーいんでっくす",
+   "acceptedReadings": [
+    "のーいんでっくす"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🙈",
+   "mapNode": "ops:grow",
+   "relatedTerms": [
+    "seo",
+    "invite-only"
+   ],
+   "description": "「この ページは 検索に のせないで」と 検索サービスに 伝える しるし。",
+   "example": "子どもの 情報が のる ページなどに 使います。"
+  },
+  {
+   "id": "invite-only",
+   "name": "招待制",
+   "reading": "しょうたいせい",
+   "acceptedReadings": [
+    "しょうたいせい"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "✉️",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "noindex",
+    "security"
+   ],
+   "description": "招待された 人だけが 使える しくみ。知らない 人が 入れないので 安心です。"
+  },
+  {
+   "id": "incident",
+   "name": "インシデント",
+   "reading": "いんしでんと",
+   "acceptedReadings": [
+    "いんしでんと"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚨",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "outage",
+    "restore",
+    "monitoring"
+   ],
+   "description": "サービスの 障害や 情報もれなど、すぐ 対応が 必要な 出来事。原因と 再発防止も 記録します。"
+  },
+  {
+   "id": "redundancy",
+   "name": "冗長化",
+   "reading": "じょうちょうか",
+   "acceptedReadings": [
+    "じょうちょうか"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "👯",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "backup",
+    "outage"
+   ],
+   "description": "同じ 役わりの ものを 2つ 以上 用意して、1つが こわれても 止まらないように すること。"
+  },
+  {
+   "id": "third-party",
+   "name": "第三者提供",
+   "reading": "だいさんしゃていきょう",
+   "acceptedReadings": [
+    "だいさんしゃていきょう"
+   ],
+   "journey": "ops",
+   "category": "ルール",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "ops:rules",
+   "relatedTerms": [
+    "personal-info",
+    "privacy-law",
+    "consent"
+   ],
+   "description": "あずかった 個人情報を、ほかの 会社などに わたすこと。原則として 本人の 同意が 必要です。"
+  },
+  {
+   "id": "3ds",
+   "name": "3Dセキュア",
+   "reading": "すりーでぃーせきゅあ",
+   "acceptedReadings": [
+    "すりーでぃーせきゅあ"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔐",
+   "mapNode": "web:pay",
+   "relatedTerms": [
+    "credit-card",
+    "fraud-detect",
+    "two-factor"
+   ],
+   "description": "カードで はらうときに、パスワードなどで 本人か 確かめる しくみ。カードの 不正な 利用を ふせぎます。"
+  },
+  {
+   "id": "fraud-detect",
+   "name": "不正検知",
+   "reading": "ふせいけんち",
+   "acceptedReadings": [
+    "ふせいけんち"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🚨",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "chargeback",
+    "3ds",
+    "security"
+   ],
+   "description": "ふつうとは ちがう あやしい 使われかたを 見つけて、止める しくみ。"
+  },
+  {
+   "id": "ltv",
+   "name": "LTV",
+   "reading": "えるてぃーぶい",
+   "acceptedReadings": [
+    "えるてぃーぶい"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "💎",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "retention",
+    "churn",
+    "kpi"
+   ],
+   "description": "1人の 利用者が、使い続ける あいだに はらってくれる 金額の 合計の めやす(顧客生涯価値)。"
+  },
+  {
+   "id": "mrr",
+   "name": "MRR",
+   "reading": "えむあーるあーる",
+   "acceptedReadings": [
+    "えむあーるあーる"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "subscription",
+    "kpi"
+   ],
+   "description": "サブスクで、毎月 決まって 入ってくる 売上の 合計。"
+  },
+  {
+   "id": "audit-log",
+   "name": "監査ログ",
+   "reading": "かんさろぐ",
+   "acceptedReadings": [
+    "かんさろぐ"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🗒️",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "log",
+    "permission",
+    "incident"
+   ],
+   "description": "だれが いつ 何を したかを、あとから 確かめられるように 残す 記録。"
+  },
+  {
+   "id": "least-privilege",
+   "name": "最小権限",
+   "reading": "さいしょうけんげん",
+   "acceptedReadings": [
+    "さいしょうけんげん"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🧷",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "permission",
+    "security"
+   ],
+   "description": "人や プログラムには、仕事に 必要な いちばん 小さい 権限だけを わたす 考えかた。"
+  },
+  {
+   "id": "passkey",
+   "name": "パスキー",
+   "reading": "ぱすきー",
+   "acceptedReadings": [
+    "ぱすきー"
+   ],
+   "journey": "ops",
+   "category": "守り",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🗝️",
+   "mapNode": "ops:safe",
+   "relatedTerms": [
+    "password",
+    "two-factor",
+    "face-recognition"
+   ],
+   "description": "パスワードの かわりに、スマホの 顔認証や 指紋などで ログインする しくみ。フィッシングに 強いです。"
+  },
+  {
+   "id": "onboarding",
+   "name": "オンボーディング",
+   "reading": "おんぼーでぃんぐ",
+   "acceptedReadings": [
+    "おんぼーでぃんぐ"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🛬",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "ux",
+    "retention"
+   ],
+   "description": "はじめて 使う 人が、すぐに 使いこなせるように 案内すること。",
+   "example": "はじめて ひらいた ときの「3つの ステップ」などです。"
+  },
+  {
+   "id": "customer-success",
+   "name": "カスタマーサクセス",
+   "reading": "かすたまーさくせす",
+   "acceptedReadings": [
+    "かすたまーさくせす"
+   ],
+   "journey": "ops",
+   "category": "利用者とのやりとり",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🏆",
+   "mapNode": "ops:users",
+   "relatedTerms": [
+    "support",
+    "retention",
+    "churn"
+   ],
+   "description": "利用者が 目的を 達成できるように、運営者から 先回りして 手伝う 考えかた。"
+  },
+  {
+   "id": "freemium",
+   "name": "フリーミアム",
+   "reading": "ふりーみあむ",
+   "acceptedReadings": [
+    "ふりーみあむ"
+   ],
+   "journey": "ops",
+   "category": "お金",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🆓",
+   "mapNode": "ops:money",
+   "relatedTerms": [
+    "free-trial",
+    "billing"
+   ],
+   "description": "基本は 無料で 使えて、もっと 便利な 機能は 有料に する 料金の 形。"
+  },
+  {
+   "id": "domain-renewal",
+   "name": "ドメイン更新",
+   "reading": "どめいんこうしん",
+   "acceptedReadings": [
+    "どめいんこうしん"
+   ],
+   "journey": "ops",
+   "category": "公開と集客",
+   "difficulty": 4,
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "web:domain",
+   "relatedTerms": [
+    "own-domain",
+    "domain"
+   ],
+   "description": "ドメインを 使い続けるために、毎年 手続きと 支払いを すること。わすれると サイトが 見られなく なります。"
+  }
+ ]
+}

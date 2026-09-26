@@ -292,5 +292,6 @@ GitHub Pages は リポジトリの「いちばん上」か「docs フォルダ�
 - 土台の `index.html` の 差しこみ口を **`PLUG`** に 広げた(`KABU` か `AITABI`。ほかの ゲームは null)。足した 差しこみ: `retarget`(読みが いくつか ある ことば)/ `start(m, lv, only)`(もう一度だけ挑戦)/ `noBoard`
 - 中身は **`ai/ai.js`**。絵は まだ 無いので 題名は 文字(けいくんの 絵が 届いたら `ai/` に 置いて `build_games.py` の hero/logo/art を 足す)
 
-### ⚠️ ランキングは まだ 出していない(けいくんの 確認待ち)
-- `ai/ai.js` の `RANK_READY = false`。かずとも側が 受けつけるまで 送らない・出さない。変えることは `docs/かずとも-AIフリック旅行.md`
+### ランキング(かずとも)
+- 2026-09-26 に かずともの `FLICK_MODES` へ aiw / aweb / aops / amas を 足した(speed-king #171)。`ai/ai.js` の `RANK_READY = true`
+- ふくしゅう(afuku)・苦手克服(aweak)・もう一度だけ挑戦は 送らない。`/flick-link?to=ai` で もどってこられる

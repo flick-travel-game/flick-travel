@@ -2393,13 +2393,7 @@ const SVG_MAPS = {
     + '<text x="12" y="26" font-size="20" fill="#a08070">前から見た からだ(向かって左が 右手)</text>' },
   head: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-head.webp" width="' + W + '" height="' + H + '"/>'
     + '<text x="12" y="26" font-size="20" fill="#a08070">横から見た 頭の中(顔は 左むき)</text>' },
-  cell: { w:720, h:720, pos:(x,y) => [x, y], bg:(W,H) => {
-    let o = '<rect width="' + W + '" height="' + H + '" fill="#eefaf3"/>';
-    o += '<path d="M' + W*0.5 + ' ' + H*0.06 + ' C' + W*0.85 + ' ' + H*0.02 + ' ' + W*0.98 + ' ' + H*0.4 + ' ' + W*0.92 + ' ' + H*0.62 + ' C' + W*0.86 + ' ' + H*0.9 + ' ' + W*0.55 + ' ' + H*0.99 + ' ' + W*0.3 + ' ' + H*0.9 + ' C' + W*0.05 + ' ' + H*0.8 + ' ' + W*0.02 + ' ' + H*0.4 + ' ' + W*0.18 + ' ' + H*0.2 + ' C' + W*0.28 + ' ' + H*0.08 + ' ' + W*0.4 + ' ' + H*0.07 + ' ' + W*0.5 + ' ' + H*0.06 + ' Z" fill="#d9f2e3" stroke="#2f9e6a" stroke-width="5"/>';
-    o += '<circle cx="' + W*0.5 + '" cy="' + H*0.5 + '" r="' + W*0.14 + '" fill="#b9a7e6" stroke="#6b4fc3" stroke-width="4"/><circle cx="' + W*0.5 + '" cy="' + H*0.5 + '" r="' + W*0.05 + '" fill="#6b4fc3"/>';
-    for(const [x,y,r] of [[0.3,0.3,-20],[0.72,0.3,25],[0.75,0.7,-30],[0.28,0.72,15]]) o += '<ellipse cx="' + W*x + '" cy="' + H*y + '" rx="' + W*0.06 + '" ry="' + H*0.03 + '" transform="rotate(' + r + ' ' + W*x + ' ' + H*y + ')" fill="#f4a261" stroke="#c96a2a" stroke-width="2"/>';
-    o += '<text x="' + W*0.5 + '" y="' + (H - 12) + '" text-anchor="middle" font-size="13" fill="#4a7a60">細胞の中(まん中が 核)</text>';
-    return o; } },
+  cell: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-cell.webp" width="' + W + '" height="' + H + '"/>' },
 };
 let curSub = null;  // いま出している 図(maps の どれか)
 function drawSvgMap(done, M){

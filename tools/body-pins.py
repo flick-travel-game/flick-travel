@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """からだの図(front / head)の 📍の 場所を、ChatGPT の 絵に 合わせて 書きかえる(けいくん 2026-09-26)。
-絵は karada/body-front.webp(正面。向かって左半分が 骨、右半分が 筋肉)と karada/body-head.webp(横から。顔は 左むき)。
+絵は karada/body-front.webp・karada/body-cell.webp(左=動物の細胞 / 右=植物の細胞 / 下=DNA)(正面。向かって左半分が 骨、右半分が 筋肉)と karada/body-head.webp(横から。顔は 左むき)。
 数字は 絵の はば・高さに対する わりあい(0〜1)。絵を 差しかえたら ここを 測りなおして 走らせる → add_spots.py → build_games.py
 """
 from pathlib import Path
@@ -52,6 +52,19 @@ P = {
 "sysamylase":(0.32,0.66),"syscold":(0.555,0.66),"sysflu":(0.20,0.50),"syshayfever":(0.17,0.452),"sysgrowthhormone":(0.475,0.335),
 "syscns":(0.45,0.15),"syssensation":(0.36,0.20),"syssynapse":(0.62,0.13),"syssleep":(0.40,0.10),"syscircadian":(0.54,0.25),
 "syscavity":(0.26,0.555),
+# ── 細胞(向かって左 = 動物の細胞 / 右 = 植物の細胞 / 下 = 染色体から DNA)。場所の無い 言葉は まわりの 白いところ ──
+"celcell":(0.26,0.12),"celnucleus":(0.263,0.335),"celmembrane":(0.025,0.40),"celcytoplasm":(0.07,0.53),"celmitochondria":(0.355,0.148),
+"celvacuole":(0.75,0.46),"celchloroplast":(0.595,0.30),"celcellwall":(0.525,0.40),"celribosome":(0.33,0.435),"celer":(0.145,0.30),
+"celgolgi":(0.31,0.54),"celcentrosome":(0.115,0.445),"celnuclearmembrane":(0.35,0.28),"celnucleolus":(0.295,0.31),"celchromosome":(0.10,0.78),
+"celdna":(0.80,0.80),"celgene":(0.92,0.80),"celbase":(0.745,0.82),"celhelix":(0.86,0.75),"celbasepair":(0.955,0.83),
+"celmitosis":(0.07,0.70),"celmeiosis":(0.16,0.70),"celgenome":(0.33,0.76),"celheredity":(0.50,0.80),"celdominant":(0.62,0.82),
+"celrecessive":(0.68,0.79),"celmutation":(0.88,0.86),"celatp":(0.075,0.30),"celrespiration":(0.455,0.43),"celenzyme":(0.30,0.20),
+"celaminoacid":(0.40,0.30),"celcatalyst":(0.43,0.36),"celdiffusion":(0.49,0.30),"celosmosis":(0.556,0.55),
+"celunicellular":(0.03,0.07),"celmulticellular":(0.10,0.07),"celtissue":(0.44,0.065),"celorgan":(0.50,0.065),
+"celsexual":(0.60,0.695),"celasexual":(0.70,0.695),"celclone":(0.80,0.695),"celneuron":(0.90,0.695),
+"celgamete":(0.26,0.67),"celbloodtype":(0.34,0.67),"celallele":(0.42,0.67),
+"celfertilization":(0.26,0.965),"celzygote":(0.34,0.965),"celovum":(0.42,0.965),"celsperm":(0.50,0.965),"celips":(0.58,0.965),
+"celes":(0.66,0.965),"celstemcell":(0.74,0.965),"celrna":(0.82,0.965),"celmendel":(0.90,0.965),"celsegregation":(0.97,0.965),
 }
 tsv = Path(__file__).resolve().parent / "body.tsv"
 out, n = [], 0

@@ -409,6 +409,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <h1 class="sr-only">株式フリック旅行</h1>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
+    <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
     <div class="map-card">
       <div class="map-head"><b id="map-title">世界一周マップ</b><span id="map-count">0 / 100か所</span></div>
       <div class="map-tabs hidden" id="map-tabs"></div>
@@ -428,6 +429,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <p class="map-cap" id="map-cap">レベルをクリアすると、その名所に ピンが立つよ。ピンを押すと 名前が出るよ。</p>
     </div>
     <h2 class="lv-title display" id="lv-title">レベルをえらぶ</h2>
+    <div id="kabu-chips"></div><!-- 株式フリック旅行だけ: マスターの 地域・業種 -->
     <div class="levels" id="lv-list"></div>
     <!-- いままでの きろく(かずともの ランキング・のび と 同じ並び。あそんだ人にだけ 出る) -->
     <section class="rec hidden" id="rec">
@@ -523,10 +525,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
+<script src="companies.js"></script>
+<script src="kabu.js"></script>
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kabu", name:"株式フリック旅行", modes:["jcomp", "wcomp"], assets:"../", logo:false, hero:false, dir:"kabu/", lead:"日本と世界の会社の名前を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、会社をめぐる旅に出よう。", how:"表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 会社の説明と 時価総額が出て、地図の 本社に📍が立つよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の会社の名前も自然と覚えられるよ。" };
+const GAME = { id:"kabu", name:"株式フリック旅行", modes:KABU.modes, assets:"../", logo:false, hero:false, dir:"kabu/", lead:"世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。", how:"表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。初級からは 新しい会社7問に、にがてな会社の ふくしゅう3問が まざるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"世界フリック旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"歴史フリック旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
@@ -703,216 +707,18 @@ const TONE = {
 const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: toneFrom("#8a5a2b"), jevents: toneFrom("#5b3fbf"),
-          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"), jcomp: toneFrom("#0f6fa8"), wcomp: toneFrom("#0e6b3a") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
+          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
   level: [TONE.pink, toneFrom("#e0202e"), TONE.orange, TONE.green, toneFrom("#006b57"),
           toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
 };
+/* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
+if(typeof KABU === "object") for(const [m, h] of Object.entries(KABU.colors)) COLORS.mode[m] = toneFrom(h);
 function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }
 /* 解説のふりがな(tools/make_ruby.py が作る) RUBY-START */
 const RUBY = {
- "cjtoyota": "<ruby>世界<rt>せかい</rt></ruby>でトップクラスの<ruby>台数<rt>だいすう</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>をつくる<ruby>自動車メーカ<rt>じどうしゃめーか</rt></ruby>ー。カローラやプリウスが<ruby>有名<rt>ゆうめい</rt></ruby>で、もとは<ruby>布<rt>ぬの</rt></ruby>を<ruby>織<rt>お</rt></ruby>る<ruby>機械<rt>きかい</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>まった。",
- "cjnintendo": "<ruby>京都<rt>きょうと</rt></ruby>で<ruby>花札<rt>はなふだ</rt></ruby>やトランプの<ruby>会社<rt>かいしゃ</rt></ruby>として<ruby>始<rt>はじ</rt></ruby>まった。いまはニンテンドースイッチやマリオ、ゼルダのゲームで<ruby>世界中<rt>せかいじゅう</rt></ruby>に<ruby>知<rt>し</rt></ruby>られている。",
- "cjsony": "プレイステーションやカメラ、テレビ、<ruby>音楽<rt>おんがく</rt></ruby>、<ruby>映画<rt>えいが</rt></ruby>までつくる<ruby>会社<rt>かいしゃ</rt></ruby>。むかしは<ruby>持ち歩<rt>もちある</rt></ruby>ける<ruby>音楽<rt>おんがく</rt></ruby>プレーヤーのウォークマンで<ruby>世界<rt>せかい</rt></ruby>をおどろかせた。",
- "cjhonda": "バイクと<ruby>車<rt>くるま</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。スーパーカブは<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>多<rt>おお</rt></ruby>くつくられたバイクで、<ruby>二本足<rt>にほんあし</rt></ruby>で<ruby>歩<rt>ある</rt></ruby>くロボットのアシモも<ruby>開発<rt>かいはつ</rt></ruby>した。",
- "cjbandainamco": "ガンプラやたまごっち、パックマン、<ruby>太鼓<rt>たいこ</rt></ruby>の<ruby>達人<rt>たつじん</rt></ruby>など、おもちゃとゲームをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。アニメづくりの<ruby>仕事<rt>しごと</rt></ruby>もしている。",
- "cjsanrio": "ハローキティやシナモロール、マイメロディなどのキャラクターを<ruby>生<rt>う</rt></ruby>んだ<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>多摩市<rt>たまし</rt></ruby>にはサンリオピューロランドがある。",
- "cjorientalland": "<ruby>千葉県浦安市<rt>ちばけんうらやすし</rt></ruby>にある<ruby>東京ディズニーランド<rt>とうきょうでぃずにーらんど</rt></ruby>と<ruby>東京<rt>とうきょう</rt></ruby>ディズニーシーを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。アメリカのディズニーの<ruby>会社<rt>かいしゃ</rt></ruby>と<ruby>約束<rt>やくそく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>んで<ruby>運営<rt>うんえい</rt></ruby>している。",
- "cjfastretailing": "ユニクロやジーユーを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。ヒートテックやフリースが<ruby>有名<rt>ゆうめい</rt></ruby>で、<ruby>山口県<rt>やまぐちけん</rt></ruby>の<ruby>小<rt>ちい</rt></ruby>さな<ruby>洋服<rt>ようふく</rt></ruby><ruby>店<rt>てん</rt></ruby>から<ruby>世界<rt>せかい</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>がった。",
- "cjpanasonic": "<ruby>松下<rt>まつした</rt></ruby><ruby>幸之助<rt>こうのすけ</rt></ruby>が<ruby>大阪<rt>おおさか</rt></ruby>でつくった<ruby>電気<rt>でんき</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>電球<rt>でんきゅう</rt></ruby>のソケットから<ruby>始<rt>はじ</rt></ruby>まり、いまは<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>や<ruby>洗濯機<rt>せんたくき</rt></ruby>、<ruby>電気<rt>でんき</rt></ruby><ruby>自動車<rt>じどうしゃ</rt></ruby>の<ruby>電池<rt>でんち</rt></ruby>をつくる。",
- "cjyakult": "<ruby>乳酸菌<rt>にゅうさんきん</rt></ruby>の<ruby>飲み物<rt>のみもの</rt></ruby>ヤクルトをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。ヤクルトレディが<ruby>家<rt>いえ</rt></ruby>や<ruby>会社<rt>かいしゃ</rt></ruby>まで<ruby>届<rt>とど</rt></ruby>けるしくみがあり、<ruby>世界<rt>せかい</rt></ruby>の<ruby>多<rt>おお</rt></ruby>くの<ruby>国<rt>くに</rt></ruby>でも<ruby>飲<rt>の</rt></ruby>まれている。",
- "cjsevenandi": "コンビニのセブン-イレブンを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。セブン-イレブンはアメリカ<ruby>生<rt>う</rt></ruby>まれだが、<ruby>日本<rt>にほん</rt></ruby>で<ruby>大<rt>おお</rt></ruby>きく<ruby>育<rt>そだ</rt></ruby>ち、いまは<ruby>世界中<rt>せかいじゅう</rt></ruby>に<ruby>店<rt>みせ</rt></ruby>がある。",
- "cjaeon": "<ruby>全国<rt>ぜんこく</rt></ruby>にイオンモールやスーパーをもつ<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>電子マネ<rt>でんしまね</rt></ruby>ーのWAONも<ruby>出<rt>だ</rt></ruby>していて、<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>千葉市<rt>ちばし</rt></ruby>の<ruby>幕張<rt>まくはり</rt></ruby>にある。",
- "cjmcdonalds": "<ruby>日本<rt>にほん</rt></ruby>のマクドナルドを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。1971<ruby>年<rt>ねん</rt></ruby>に<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>銀座<rt>ぎんざ</rt></ruby>に1<ruby>号<rt>ごう</rt></ruby><ruby>店<rt>てん</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>き、いまは<ruby>全国<rt>ぜんこく</rt></ruby>に<ruby>約<rt>やく</rt></ruby>3000の<ruby>店<rt>みせ</rt></ruby>がある。",
- "cjnissin": "<ruby>世界<rt>せかい</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めてのインスタントラーメン、チキンラーメンとカップヌードルを<ruby>生<rt>う</rt></ruby>んだ<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>発明<rt>はつめい</rt></ruby>したのは<ruby>安藤百福<rt>あんどうももふく</rt></ruby>さん。",
- "cjcapcom": "ストリートファイターやモンスターハンター、ロックマン、<ruby>逆転<rt>ぎゃくてん</rt></ruby><ruby>裁判<rt>さいばん</rt></ruby>などのゲームをつくる<ruby>大阪<rt>おおさか</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cjjreast": "<ruby>関東<rt>かんとう</rt></ruby>や<ruby>東北<rt>とうほく</rt></ruby>などで<ruby>電車<rt>でんしゃ</rt></ruby>や<ruby>新幹線<rt>しんかんせん</rt></ruby>を<ruby>走<rt>はし</rt></ruby>らせる<ruby>鉄道会社<rt>てつどうかいしゃ</rt></ruby>。<ruby>山手線<rt>やまのてせん</rt></ruby>やはやぶさ、<ruby>交通系ICカード<rt>こうつうけいあいしーかーど</rt></ruby>のSuicaもこの<ruby>会社<rt>かいしゃ</rt></ruby>のもの。",
- "cjjal": "<ruby>日本<rt>にほん</rt></ruby>を<ruby>代表<rt>だいひょう</rt></ruby>する<ruby>航空会社<rt>こうくうがいしゃ</rt></ruby>のひとつ。<ruby>赤<rt>あか</rt></ruby>い<ruby>鶴<rt>つる</rt></ruby>のマークをつけた<ruby>飛行機<rt>ひこうき</rt></ruby>で、<ruby>国内<rt>こくない</rt></ruby>や<ruby>世界<rt>せかい</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>へ<ruby>人<rt>ひと</rt></ruby>や<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>運<rt>はこ</rt></ruby>んでいる。",
- "cjana": "<ruby>青<rt>あお</rt></ruby>い<ruby>飛行機<rt>ひこうき</rt></ruby>の<ruby>全日空<rt>ぜんにっくう</rt></ruby>(ANA)をもつ<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>新<rt>あたら</rt></ruby>しい<ruby>旅客機<rt>りょかくき</rt></ruby>ボーイング787で、<ruby>世界<rt>せかい</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めてお<ruby>客<rt>きゃく</rt></ruby>さんを<ruby>乗<rt>の</rt></ruby>せて<ruby>飛<rt>と</rt></ruby>んだ。",
- "cjtoeianimation": "プリキュアやドラゴンボール、ワンピースのアニメをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>でとても<ruby>古<rt>ふる</rt></ruby>いアニメ<ruby>会社<rt>かいしゃ</rt></ruby>のひとつ。",
- "cjmeiji": "<ruby>明治<rt>めいじ</rt></ruby>ミルクチョコレートやきのこの<ruby>山<rt>やま</rt></ruby>、ヨーグルトなどをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>病院<rt>びょういん</rt></ruby>で<ruby>使<rt>つか</rt></ruby>う<ruby>薬<rt>くすり</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>も<ruby>仲間<rt>なかま</rt></ruby>にもっている。",
- "cjsquareenix": "ドラゴンクエストやファイナルファンタジー、キングダムハーツなどのゲームで<ruby>知<rt>し</rt></ruby>られる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>新宿<rt>しんじゅく</rt></ruby>にある。",
- "cjkonami": "<ruby>桃太郎<rt>ももたろう</rt></ruby><ruby>電鉄<rt>でんてつ</rt></ruby>やパワフルプロ<ruby>野球<rt>やきゅう</rt></ruby>、<ruby>遊戯<rt>ゆうぎ</rt></ruby><ruby>王<rt>おう</rt></ruby>のカードで<ruby>知<rt>し</rt></ruby>られる<ruby>会社<rt>かいしゃ</rt></ruby>。スポーツクラブの<ruby>運営<rt>うんえい</rt></ruby>もしている。",
- "cjsegasammy": "<ruby>青<rt>あお</rt></ruby>いハリネズミのソニックやぷよぷよで<ruby>知<rt>し</rt></ruby>られるセガをもつ<ruby>会社<rt>かいしゃ</rt></ruby>。セガはむかしゲーム<ruby>機<rt>き</rt></ruby>のメガドライブもつくっていた。",
- "cjkoeitecmo": "<ruby>信長<rt>のぶなが</rt></ruby>の<ruby>野望<rt>やぼう</rt></ruby>や<ruby>三國<rt>みくに</rt></ruby><ruby>志<rt>し</rt></ruby>、<ruby>真<rt>しん</rt></ruby>・<ruby>三國<rt>みくに</rt></ruby><ruby>無双<rt>むそう</rt></ruby>など、<ruby>歴史<rt>れきし</rt></ruby>を<ruby>題材<rt>だいざい</rt></ruby>にしたゲームで<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>神奈川県横浜市<rt>かながわけんよこはまし</rt></ruby>にある。",
- "cjkadokawa": "<ruby>本<rt>ほん</rt></ruby>や<ruby>雑誌<rt>ざっし</rt></ruby>、マンガ、ライトノベル、アニメ、ゲームまでつくる<ruby>出版社<rt>しゅっぱんしゃ</rt></ruby>。<ruby>動画<rt>どうが</rt></ruby>サイトの<ruby>ニコニコ動画<rt>にこにこどうが</rt></ruby>を<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>も<ruby>仲間<rt>なかま</rt></ruby>。",
- "cjtoho": "<ruby>怪獣<rt>かいじゅう</rt></ruby>ゴジラの<ruby>映画<rt>えいが</rt></ruby>をつくった<ruby>映画<rt>えいが</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>全国<rt>ぜんこく</rt></ruby>に<ruby>映画館<rt>えいがかん</rt></ruby>のTOHOシネマズをもち、アニメや<ruby>演劇<rt>えんげき</rt></ruby>もつくっている。",
- "cjntt": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>電話<rt>でんわ</rt></ruby>やインターネットの<ruby>土台<rt>どだい</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>のドコモもこのグループで、<ruby>光<rt>ひかり</rt></ruby>ファイバーの<ruby>回線<rt>かいせん</rt></ruby>を<ruby>全国<rt>ぜんこく</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>げた。",
- "cjkddi": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>のauやUQモバイルを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>通信<rt>つうしん</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>海<rt>うみ</rt></ruby>の<ruby>底<rt>そこ</rt></ruby>に<ruby>通信<rt>つうしん</rt></ruby>ケーブルをしく<ruby>仕事<rt>しごと</rt></ruby>もしている。",
- "cjsoftbank": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>のソフトバンクやワイモバイルを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>通信<rt>つうしん</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>白<rt>しろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>のお<ruby>父<rt>とう</rt></ruby>さんが<ruby>出<rt>で</rt></ruby>てくるCMで<ruby>知<rt>し</rt></ruby>られる。",
- "cjsoftbankgroup": "<ruby>孫<rt>そん</rt></ruby><ruby>正義<rt>まさよし</rt></ruby>さんがつくった<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>新<rt>あたら</rt></ruby>しいIT<ruby>企業<rt>きぎょう</rt></ruby>にお<ruby>金<rt>かね</rt></ruby>を<ruby>出<rt>だ</rt></ruby>していて、スマホの<ruby>頭脳<rt>ずのう</rt></ruby>を<ruby>設計<rt>せっけい</rt></ruby>するアームという<ruby>会社<rt>かいしゃ</rt></ruby>ももっている。",
- "cjrakuten": "インターネットの<ruby>買い物<rt>かいもの</rt></ruby>サイト<ruby>楽天<rt>らくてん</rt></ruby><ruby>市場<rt>しじょう</rt></ruby>をつくった<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>や<ruby>銀行<rt>ぎんこう</rt></ruby>、プロ<ruby>野球<rt>やきゅう</rt></ruby>の<ruby>東北楽天ゴールデンイーグルス<rt>とうほくらくてんごーるでんいーぐるす</rt></ruby>もある。",
- "cjlycorp": "<ruby>連絡<rt>れんらく</rt></ruby>アプリのLINEと、<ruby>検索<rt>けんさく</rt></ruby>サイトのYahoo! JAPANを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。ニュースや<ruby>地図<rt>ちず</rt></ruby>、<ruby>買い物<rt>かいもの</rt></ruby>のサービスもある。",
- "cjmercari": "<ruby>使<rt>つか</rt></ruby>わなくなった<ruby>物<rt>もの</rt></ruby>をスマホで<ruby>売<rt>う</rt></ruby>ったり<ruby>買<rt>か</rt></ruby>ったりできるフリマアプリ、メルカリをつくった<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cjhitachi": "1910<ruby>年<rt>ねん</rt></ruby>に<ruby>茨城県日立市<rt>いばらきけんひたちし</rt></ruby>の<ruby>鉱山<rt>こうざん</rt></ruby>で<ruby>生<rt>う</rt></ruby>まれた<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>鉄道<rt>てつどう</rt></ruby>の<ruby>車両<rt>しゃりょう</rt></ruby>や<ruby>発電所<rt>はつでんしょ</rt></ruby>、コンピューターのしくみをつくっている。",
- "cjcanon": "カメラやプリンター、<ruby>コピー機<rt>こぴーき</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>社名<rt>しゃめい</rt></ruby>は<ruby>観音<rt>かんのん</rt></ruby>さまにちなんでつけた、むかしのカメラの<ruby>名前<rt>なまえ</rt></ruby>カンノンから<ruby>生<rt>う</rt></ruby>まれた。",
- "cjfujifilm": "<ruby>写真<rt>しゃしん</rt></ruby>のフィルムの<ruby>会社<rt>かいしゃ</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>まり、いまはチェキやデジタルカメラのほか、<ruby>薬<rt>くすり</rt></ruby>や<ruby>化粧品<rt>けしょうひん</rt></ruby>、<ruby>病院<rt>びょういん</rt></ruby>の<ruby>機械<rt>きかい</rt></ruby>までつくっている。",
- "cjnikon": "カメラやレンズ、けんび<ruby>鏡<rt>きょう</rt></ruby>で<ruby>世界<rt>せかい</rt></ruby>に<ruby>知<rt>し</rt></ruby>られる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>宇宙<rt>うちゅう</rt></ruby><ruby>飛行士<rt>ひこうし</rt></ruby>が<ruby>宇宙<rt>うちゅう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>うカメラや、<ruby>半導体<rt>はんどうたい</rt></ruby>をつくる<ruby>機械<rt>きかい</rt></ruby>もつくっている。",
- "cjcasio": "<ruby>電卓<rt>でんたく</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>まった<ruby>会社<rt>かいしゃ</rt></ruby>。こわれにくい<ruby>腕時計<rt>うでどけい</rt></ruby>のG-SHOCKや<ruby>電子<rt>でんし</rt></ruby><ruby>辞書<rt>じしょ</rt></ruby>、<ruby>電子<rt>でんし</rt></ruby>キーボードで<ruby>知<rt>し</rt></ruby>られる。",
- "cjepson": "プリンターやプロジェクターをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>長野県<rt>ながのけん</rt></ruby>の<ruby>諏訪<rt>すわ</rt></ruby><ruby>湖<rt>こ</rt></ruby>のほとりに<ruby>本社<rt>ほんしゃ</rt></ruby>があり、<ruby>時計<rt>とけい</rt></ruby>づくりから<ruby>始<rt>はじ</rt></ruby>まった。",
- "cjseiko": "<ruby>腕時計<rt>うでどけい</rt></ruby>のセイコーで<ruby>知<rt>し</rt></ruby>られる<ruby>会社<rt>かいしゃ</rt></ruby>。1969<ruby>年<rt>ねん</rt></ruby>に<ruby>世界<rt>せかい</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めてクオーツ<ruby>式<rt>しき</rt></ruby>の<ruby>腕時計<rt>うでどけい</rt></ruby>を<ruby>売り出<rt>うりだ</rt></ruby>した。<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>銀座<rt>ぎんざ</rt></ruby>。",
- "cjyamaha": "ピアノやギター、ドラムなどをつくる、<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>楽器<rt>がっき</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>音楽<rt>おんがく</rt></ruby><ruby>教室<rt>きょうしつ</rt></ruby>も<ruby>開<rt>ひら</rt></ruby>いていて、<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>浜松市<rt>はままつし</rt></ruby>にある。",
- "cjyamahamotor": "バイクやボート、<ruby>水上<rt>すいじょう</rt></ruby>バイク、<ruby>電動アシスト自転車<rt>でんどうあしすとじてんしゃ</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>楽器<rt>がっき</rt></ruby>のヤマハから<ruby>分<rt>わ</rt></ruby>かれて<ruby>生<rt>う</rt></ruby>まれた。",
- "cjsuzuki": "<ruby>軽自動車<rt>けいじどうしゃ</rt></ruby>やバイクをつくる<ruby>浜松<rt>はままつ</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。インドでは<ruby>車<rt>くるま</rt></ruby>がとてもよく<ruby>売<rt>う</rt></ruby>れていて、ジムニーやスイフトが<ruby>人気<rt>にんき</rt></ruby>。",
- "cjsubaru": "<ruby>車<rt>くるま</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>社名<rt>しゃめい</rt></ruby>はおうし<ruby>座<rt>ざ</rt></ruby>の<ruby>星<rt>ほし</rt></ruby>の<ruby>集<rt>あつ</rt></ruby>まり、すばるから<ruby>来<rt>き</rt></ruby>ていて、マークにも<ruby>六<rt>むい</rt></ruby>つの<ruby>星<rt>ほし</rt></ruby>がえがかれている。",
- "cjmazda": "<ruby>広島<rt>ひろしま</rt></ruby>の<ruby>自動車メーカ<rt>じどうしゃめーか</rt></ruby>ー。オープンカーのロードスターや、ロータリーエンジンの<ruby>車<rt>くるま</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる。",
- "cjnissan": "<ruby>横浜<rt>よこはま</rt></ruby>に<ruby>本社<rt>ほんしゃ</rt></ruby>がある<ruby>自動車メーカ<rt>じどうしゃめーか</rt></ruby>ー。<ruby>電気<rt>でんき</rt></ruby><ruby>自動車<rt>じどうしゃ</rt></ruby>のリーフを<ruby>早<rt>はや</rt></ruby>くから<ruby>売り出<rt>うりだ</rt></ruby>し、セレナやノートも<ruby>人気<rt>にんき</rt></ruby>。",
- "cjdenso": "<ruby>車<rt>くるま</rt></ruby>の<ruby>部品<rt>ぶひん</rt></ruby>をつくる<ruby>世界<rt>せかい</rt></ruby>でも<ruby>大<rt>おお</rt></ruby>きな<ruby>会社<rt>かいしゃ</rt></ruby>。QRコードは、この<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>部署<rt>ぶしょ</rt></ruby>が<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>部品<rt>ぶひん</rt></ruby>を<ruby>管理<rt>かんり</rt></ruby>するために<ruby>発明<rt>はつめい</rt></ruby>した。",
- "cjbridgestone": "<ruby>車<rt>くるま</rt></ruby>や<ruby>飛行機<rt>ひこうき</rt></ruby>のタイヤで<ruby>世界<rt>せかい</rt></ruby>トップクラスの<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>社名<rt>しゃめい</rt></ruby>は<ruby>創業者<rt>そうぎょうしゃ</rt></ruby>の<ruby>石橋<rt>いしばし</rt></ruby>さんの<ruby>名字<rt>みょうじ</rt></ruby>を<ruby>英語<rt>えいご</rt></ruby>にして、ならべかえたもの。",
- "cjshimano": "<ruby>自転車<rt>じてんしゃ</rt></ruby>のギアやブレーキなどの<ruby>部品<rt>ぶひん</rt></ruby>で<ruby>世界中<rt>せかいじゅう</rt></ruby>に<ruby>知<rt>し</rt></ruby>られる<ruby>会社<rt>かいしゃ</rt></ruby>。つり<ruby>道具<rt>どうぐ</rt></ruby>もつくっていて、<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>大阪府堺市<rt>おおさかふさかいし</rt></ruby>にある。",
- "cjasics": "ランニングシューズや<ruby>スポーツ用品<rt>すぽーつようひん</rt></ruby>をつくる<ruby>神戸<rt>こうべ</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>社名<rt>しゃめい</rt></ruby>は<ruby>健全<rt>けんぜん</rt></ruby>な<ruby>体<rt>からだ</rt></ruby>に<ruby>健全<rt>けんぜん</rt></ruby>な<ruby>心<rt>こころ</rt></ruby>をという<ruby>意味<rt>いみ</rt></ruby>の<ruby>ラテン語<rt>らてんご</rt></ruby>の<ruby>頭文字<rt>かしらもじ</rt></ruby>から。",
- "cjdaikin": "エアコンで<ruby>世界<rt>せかい</rt></ruby>トップクラスの<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>大阪<rt>おおさか</rt></ruby>に<ruby>本社<rt>ほんしゃ</rt></ruby>があり、<ruby>水<rt>みず</rt></ruby>のしずくのキャラクター、ぴちょんくんが<ruby>有名<rt>ゆうめい</rt></ruby>。",
- "cjkomatsu": "ブルドーザーやショベルカーなど、<ruby>工事<rt>こうじ</rt></ruby>で<ruby>使<rt>つか</rt></ruby>う<ruby>大<rt>おお</rt></ruby>きな<ruby>機械<rt>きかい</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>名前<rt>なまえ</rt></ruby>は<ruby>石川県<rt>いしかわけん</rt></ruby>の<ruby>小松市<rt>こまつし</rt></ruby>で<ruby>生<rt>う</rt></ruby>まれたことから。",
- "cjkubota": "トラクターや<ruby>田植え機<rt>たうえき</rt></ruby>、コンバインなど<ruby>農業<rt>のうぎょう</rt></ruby>の<ruby>機械<rt>きかい</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>水<rt>みず</rt></ruby><ruby>道管<rt>どうかん</rt></ruby>やポンプもつくり、<ruby>世界<rt>せかい</rt></ruby>の<ruby>農業<rt>のうぎょう</rt></ruby>をささえている。",
- "cjmhi": "ロケットのH-IIAやH3、<ruby>発電所<rt>はつでんしょ</rt></ruby>の<ruby>機械<rt>きかい</rt></ruby>、<ruby>大<rt>おお</rt></ruby>きな<ruby>船<rt>ふね</rt></ruby>などをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>のものづくりを<ruby>長<rt>なが</rt></ruby>く<ruby>引<rt>ひ</rt></ruby>っぱってきた。",
- "cjkhi": "<ruby>新幹線<rt>しんかんせん</rt></ruby>の<ruby>車両<rt>しゃりょう</rt></ruby>やカワサキのバイク、<ruby>飛行機<rt>ひこうき</rt></ruby>の<ruby>部品<rt>ぶひん</rt></ruby>、<ruby>船<rt>ふね</rt></ruby>などをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>液体<rt>えきたい</rt></ruby>の<ruby>水素<rt>すいそ</rt></ruby>を<ruby>運<rt>はこ</rt></ruby>ぶ<ruby>船<rt>ふね</rt></ruby>を<ruby>世界<rt>せかい</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めてつくった。",
- "cjmakita": "<ruby>電動<rt>でんどう</rt></ruby>ドリルや<ruby>電動<rt>でんどう</rt></ruby>のこぎり、<ruby>充電式<rt>じゅうでんしき</rt></ruby>のそうじ<ruby>機<rt>き</rt></ruby>など、<ruby>電動<rt>でんどう</rt></ruby><ruby>工具<rt>こうぐ</rt></ruby>で<ruby>世界的<rt>せかいてき</rt></ruby>な<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>愛知県安城市<rt>あいちけんあんじょうし</rt></ruby>にある。",
- "cjtoto": "トイレや<ruby>洗面所<rt>せんめんじょ</rt></ruby>、おふろをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。おしりを<ruby>洗<rt>あら</rt></ruby>うトイレのウォシュレットで<ruby>有名<rt>ゆうめい</rt></ruby>で、<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>北九州市<rt>きたきゅうしゅうし</rt></ruby>にある。",
- "cjnitori": "<ruby>家具<rt>かぐ</rt></ruby>やカーテン、<ruby>食器<rt>しょっき</rt></ruby>などをお<ruby>手<rt>て</rt></ruby>ごろな<ruby>値段<rt>ねだん</rt></ruby>で<ruby>売<rt>う</rt></ruby>るお<ruby>店<rt>みせ</rt></ruby>ニトリを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>北海道<rt>ほっかいどう</rt></ruby>の<ruby>札幌<rt>さっぽろ</rt></ruby>で<ruby>生<rt>う</rt></ruby>まれた。",
- "cjryohin": "<ruby>無印<rt>むじるし</rt></ruby><ruby>良品<rt>りょうひん</rt></ruby>のお<ruby>店<rt>みせ</rt></ruby>を<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。シンプルな<ruby>服<rt>ふく</rt></ruby>や<ruby>文房具<rt>ぶんぼうぐ</rt></ruby>、<ruby>家具<rt>かぐ</rt></ruby>、<ruby>食べ物<rt>たべもの</rt></ruby>まで、くらしの<ruby>物<rt>もの</rt></ruby>をたくさん<ruby>売<rt>う</rt></ruby>っている。",
- "cjabcmart": "<ruby>靴<rt>くつ</rt></ruby>のお<ruby>店<rt>みせ</rt></ruby>ABCマートを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。スニーカーやスポーツシューズ、ブーツなどを<ruby>全国<rt>ぜんこく</rt></ruby>のお<ruby>店<rt>みせ</rt></ruby>で<ruby>売<rt>う</rt></ruby>っている。",
- "cjzensho": "<ruby>牛丼<rt>ぎゅうどん</rt></ruby>のすき<ruby>家<rt>や</rt></ruby>や<ruby>回転<rt>かいてん</rt></ruby>ずしのはま<ruby>寿司<rt>すし</rt></ruby>、ココスなどのお<ruby>店<rt>みせ</rt></ruby>を<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>外食<rt>がいしょく</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>として<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きい。",
- "cjskylark": "ファミリーレストランのガストやバーミヤン、ジョナサンなどを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>東京都武蔵野市<rt>とうきょうとむさしのし</rt></ruby>にある。",
- "cjyamazaki": "<ruby>食パン<rt>しょくぱん</rt></ruby>やランチパック、<ruby>菓子<rt>かし</rt></ruby>パンをつくる<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きなパンの<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>春<rt>はる</rt></ruby>のパンまつりが<ruby>有名<rt>ゆうめい</rt></ruby>。",
- "cjajinomoto": "うまみ<ruby>調味料<rt>ちょうみりょう</rt></ruby>の<ruby>味の素<rt>あじのもと</rt></ruby>をつくった<ruby>会社<rt>かいしゃ</rt></ruby>。うまみは<ruby>池田<rt>いけだ</rt></ruby><ruby>菊苗<rt>きくなえ</rt></ruby><ruby>博士<rt>はかせ</rt></ruby>が<ruby>昆布<rt>こんぶ</rt></ruby>だしから<ruby>見<rt>み</rt></ruby>つけ、この<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>始<rt>はじ</rt></ruby>まりにつながった。",
- "cjkikkoman": "しょうゆで<ruby>世界的<rt>せかいてき</rt></ruby>に<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>千葉県野田市<rt>ちばけんのだし</rt></ruby>に<ruby>本社<rt>ほんしゃ</rt></ruby>があり、<ruby>赤<rt>あか</rt></ruby>いキャップの<ruby>食卓<rt>しょくたく</rt></ruby><ruby>用<rt>よう</rt></ruby>しょうゆびんが<ruby>知<rt>し</rt></ruby>られている。",
- "cjkewpie": "<ruby>日本<rt>にほん</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めてマヨネーズをつくって<ruby>売<rt>う</rt></ruby>った<ruby>会社<rt>かいしゃ</rt></ruby>。キユーピー<ruby>人形<rt>にんぎょう</rt></ruby>のマークが<ruby>目印<rt>めじるし</rt></ruby>で、ドレッシングもつくっている。",
- "cjkirin": "ビールや<ruby>午後<rt>ごご</rt></ruby>の<ruby>紅茶<rt>こうちゃ</rt></ruby>などの<ruby>飲み物<rt>のみもの</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。キリンという<ruby>名前<rt>なまえ</rt></ruby>は、<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>伝説<rt>でんせつ</rt></ruby>の<ruby>動物<rt>どうぶつ</rt></ruby>、<ruby>麒麟<rt>きりん</rt></ruby>から<ruby>来<rt>き</rt></ruby>ている。",
- "cjasahi": "ビールのスーパードライや、カルピス、<ruby>三ツ矢<rt>みつや</rt></ruby>サイダーなどをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>浅草<rt>あさくさ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くにある。",
- "cjsuntory": "<ruby>天然水<rt>てんねんすい</rt></ruby>やBOSS、<ruby>伊右衛門<rt>いえもん</rt></ruby>、なっちゃんなどの<ruby>飲み物<rt>のみもの</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。サントリーのグループの<ruby>一員<rt>いちいん</rt></ruby>。",
- "cjnipponham": "ハムやソーセージのシャウエッセンなどをつくる<ruby>大阪<rt>おおさか</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。プロ<ruby>野球<rt>やきゅう</rt></ruby>の<ruby>北海道日本ハムファイターズ<rt>ほっかいどうにっぽんはむふぁいたーず</rt></ruby>の<ruby>親会社<rt>おやがいしゃ</rt></ruby>。",
- "cjtoyosuisan": "マルちゃんのブランドで、<ruby>赤<rt>あか</rt></ruby>いきつねと<ruby>緑<rt>みどり</rt></ruby>のたぬきや、マルちゃん<ruby>正<rt>せい</rt></ruby><ruby>麺<rt>めん</rt></ruby>などをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cjkao": "せっけんやシャンプー、<ruby>洗剤<rt>せんざい</rt></ruby>のアタック、<ruby>紙<rt>かみ</rt></ruby>おむつのメリーズなどをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>月<rt>つき</rt></ruby>の<ruby>顔<rt>かお</rt></ruby>のマークが<ruby>目印<rt>めじるし</rt></ruby>。",
- "cjshiseido": "1872<ruby>年<rt>ねん</rt></ruby>に<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>銀座<rt>ぎんざ</rt></ruby>で<ruby>薬局<rt>やっきょく</rt></ruby>として<ruby>始<rt>はじ</rt></ruby>まった<ruby>化粧品<rt>けしょうひん</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。いまは<ruby>世界<rt>せかい</rt></ruby>の<ruby>多<rt>おお</rt></ruby>くの<ruby>国<rt>くに</rt></ruby>で<ruby>化粧品<rt>けしょうひん</rt></ruby>を<ruby>売<rt>う</rt></ruby>っている。",
- "cjunicharm": "<ruby>紙<rt>かみ</rt></ruby>おむつのムーニーやマミーポコ、マスク、ペットのトイレ<ruby>用品<rt>ようひん</rt></ruby>などをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cjlion": "<ruby>歯<rt>は</rt></ruby>みがきのクリニカや、<ruby>洗剤<rt>せんざい</rt></ruby>のトップ、ハンドソープのキレイキレイをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>蔵前<rt>くらまえ</rt></ruby>にある。",
- "cjkobayashi": "あったらいいなをかたちにする<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>熱<rt>ねつ</rt></ruby>さまシートやブルーレット、<ruby>消臭<rt>しょうしゅう</rt></ruby><ruby>元<rt>もと</rt></ruby>など、<ruby>名前<rt>なまえ</rt></ruby>がおもしろい<ruby>商品<rt>しょうひん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
- "cjtakeda": "<ruby>江戸<rt>えど</rt></ruby><ruby>時代<rt>じだい</rt></ruby>に<ruby>大阪<rt>おおさか</rt></ruby>の<ruby>道修町<rt>どしょうまち</rt></ruby>で<ruby>薬<rt>くすり</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>として<ruby>始<rt>はじ</rt></ruby>まった、<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>薬<rt>くすり</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>世界中<rt>せかいじゅう</rt></ruby>で<ruby>薬<rt>くすり</rt></ruby>を<ruby>売<rt>う</rt></ruby>っている。",
- "cjotsuka": "ポカリスエットやカロリーメイト、オロナミンCをつくる<ruby>大塚製薬<rt>おおつかせいやく</rt></ruby>をもつ<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>病院<rt>びょういん</rt></ruby>の<ruby>薬<rt>くすり</rt></ruby>もつくっている。",
- "cjmufg": "<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>銀行<rt>ぎんこう</rt></ruby>のグループ。<ruby>三菱UFJ銀行<rt>みつびしゆーえふじぇーぎんこう</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>に、<ruby>世界<rt>せかい</rt></ruby>の<ruby>多<rt>おお</rt></ruby>くの<ruby>国<rt>くに</rt></ruby>で<ruby>銀行<rt>ぎんこう</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>をしている。",
- "cjsmfg": "<ruby>三井住友銀行<rt>みついすみともぎんこう</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>にした<ruby>銀行<rt>ぎんこう</rt></ruby>のグループ。クレジットカードの<ruby>三井住友カード<rt>みついすみともかーど</rt></ruby>もこのグループの<ruby>仲間<rt>なかま</rt></ruby>。",
- "cjmizuho": "みずほ<ruby>銀行<rt>ぎんこう</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>にした<ruby>銀行<rt>ぎんこう</rt></ruby>のグループ。みずほは、みずみずしい<ruby>稲<rt>いね</rt></ruby>の<ruby>穂<rt>ほ</rt></ruby>という<ruby>意味<rt>いみ</rt></ruby>の<ruby>古<rt>ふる</rt></ruby>い<ruby>言葉<rt>ことば</rt></ruby>。",
- "cjjapanpost": "<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>やゆうちょ<ruby>銀行<rt>ぎんこう</rt></ruby>、かんぽ<ruby>生命<rt>せいめい</rt></ruby>をまとめる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>全国<rt>ぜんこく</rt></ruby>に<ruby>約<rt>やく</rt></ruby>2<ruby>万4000<rt>まんよんれいれいれい</rt></ruby>の<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>があり、<ruby>手紙<rt>てがみ</rt></ruby>や<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>届<rt>とど</rt></ruby>けている。",
- "cjmitsubishicorp": "<ruby>世界中<rt>せかいじゅう</rt></ruby>でエネルギーや<ruby>食べ物<rt>たべもの</rt></ruby>、<ruby>金属<rt>きんぞく</rt></ruby>などの<ruby>取り引<rt>とりひ</rt></ruby>きをする<ruby>総合<rt>そうごう</rt></ruby><ruby>商社<rt>しょうしゃ</rt></ruby>。コンビニのローソンの<ruby>経営<rt>けいえい</rt></ruby>にもかかわっている。",
- "cjitochu": "<ruby>伊藤<rt>いとう</rt></ruby><ruby>忠兵衛<rt>ちゅうべえ</rt></ruby>が<ruby>麻<rt>あさ</rt></ruby>の<ruby>布<rt>ぬの</rt></ruby>を<ruby>売<rt>う</rt></ruby>る<ruby>商売<rt>しょうばい</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>めた<ruby>総合<rt>そうごう</rt></ruby><ruby>商社<rt>しょうしゃ</rt></ruby>。コンビニのファミリーマートの<ruby>親会社<rt>おやがいしゃ</rt></ruby>でもある。",
- "cjjrcentral": "<ruby>東京<rt>とうきょう</rt></ruby>から<ruby>新大阪<rt>しんおおさか</rt></ruby>まで<ruby>東海道新幹線<rt>とうかいどうしんかんせん</rt></ruby>を<ruby>走<rt>はし</rt></ruby>らせる<ruby>鉄道会社<rt>てつどうかいしゃ</rt></ruby>。リニア<ruby>中央<rt>ちゅうおう</rt></ruby><ruby>新幹線<rt>しんかんせん</rt></ruby>の<ruby>建設<rt>けんせつ</rt></ruby>もすすめている。",
- "cjjrwest": "<ruby>近畿<rt>きんき</rt></ruby>や<ruby>中国<rt>ちゅうごく</rt></ruby>、<ruby>北陸<rt>ほくりく</rt></ruby><ruby>地方<rt>ちほう</rt></ruby>で<ruby>電車<rt>でんしゃ</rt></ruby>を<ruby>走<rt>はし</rt></ruby>らせる<ruby>鉄道会社<rt>てつどうかいしゃ</rt></ruby>。<ruby>山陽新幹線<rt>さんようしんかんせん</rt></ruby>や、<ruby>交通系ICカード<rt>こうつうけいあいしーかーど</rt></ruby>のICOCAもこの<ruby>会社<rt>かいしゃ</rt></ruby>のもの。",
- "cjtokyometro": "<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>地下鉄<rt>ちかてつ</rt></ruby>を<ruby>走<rt>はし</rt></ruby>らせる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>銀座線<rt>ぎんざせん</rt></ruby>は、アジアで<ruby>初<rt>はじ</rt></ruby>めての<ruby>地下鉄<rt>ちかてつ</rt></ruby>として1927<ruby>年<rt>ねん</rt></ruby>に<ruby>開業<rt>かいぎょう</rt></ruby>した。",
- "cjhankyuhanshin": "<ruby>大阪<rt>おおさか</rt></ruby>と<ruby>神戸<rt>こうべ</rt></ruby>、<ruby>京都<rt>きょうと</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ<ruby>阪急電鉄<rt>はんきゅうでんてつ</rt></ruby>と<ruby>阪神電車<rt>はんしんでんしゃ</rt></ruby>をもつ<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>宝塚<rt>たからづか</rt></ruby><ruby>歌劇団<rt>かげきだん</rt></ruby>やプロ<ruby>野球<rt>やきゅう</rt></ruby>の<ruby>阪神<rt>はんしん</rt></ruby>タイガースも<ruby>仲間<rt>なかま</rt></ruby>。",
- "cjyamato": "クロネコヤマトの<ruby>宅急便<rt>たっきゅうびん</rt></ruby>で<ruby>知<rt>し</rt></ruby>られる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>家<rt>いえ</rt></ruby>から<ruby>家<rt>いえ</rt></ruby>へ<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>届<rt>とど</rt></ruby>ける<ruby>宅急便<rt>たっきゅうびん</rt></ruby>は、1976<ruby>年<rt>ねん</rt></ruby>にこの<ruby>会社<rt>かいしゃ</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>めた。",
- "cjnipponsteel": "<ruby>鉄<rt>てつ</rt></ruby>をつくる<ruby>日本<rt>にほん</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>車<rt>くるま</rt></ruby>や<ruby>橋<rt>はし</rt></ruby>、ビルに<ruby>使<rt>つか</rt></ruby>われる<ruby>鋼<rt>はがね</rt></ruby>を、<ruby>大<rt>おお</rt></ruby>きな<ruby>溶鉱炉<rt>ようこうろ</rt></ruby>でつくっている。",
- "cjeneos": "ガソリンスタンドのENEOSで<ruby>知<rt>し</rt></ruby>られる<ruby>石油<rt>せきゆ</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。ガソリンや<ruby>灯油<rt>とうゆ</rt></ruby>をつくり、<ruby>水素<rt>すいそ</rt></ruby>ステーションも<ruby>運営<rt>うんえい</rt></ruby>している。",
- "cjkeyence": "<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>うセンサーや<ruby>計測器<rt>けいそくき</rt></ruby>をつくる<ruby>大阪<rt>おおさか</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>自分<rt>じぶん</rt></ruby>では<ruby>工場<rt>こうじょう</rt></ruby>をもたず、アイデアと<ruby>開発<rt>かいはつ</rt></ruby>で<ruby>勝負<rt>しょうぶ</rt></ruby>している。",
- "cjmurata": "スマホやパソコンの<ruby>中<rt>なか</rt></ruby>で<ruby>使<rt>つか</rt></ruby>われる<ruby>小<rt>ちい</rt></ruby>さな<ruby>電子<rt>でんし</rt></ruby><ruby>部品<rt>ぶひん</rt></ruby>をつくる<ruby>京都<rt>きょうと</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>部品<rt>ぶひん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>には、ごまつぶよりずっと<ruby>小<rt>ちい</rt></ruby>さい<ruby>物<rt>もの</rt></ruby>もある。",
- "cjkyocera": "セラミックの<ruby>部品<rt>ぶひん</rt></ruby>やスマホ、<ruby>太陽<rt>たいよう</rt></ruby><ruby>電池<rt>でんち</rt></ruby>、セラミックの<ruby>包丁<rt>ほうちょう</rt></ruby>をつくる<ruby>京都<rt>きょうと</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>稲盛<rt>いなもり</rt></ruby><ruby>和夫<rt>かずお</rt></ruby>さんがつくった。",
- "cjomron": "<ruby>体温計<rt>たいおんけい</rt></ruby>や<ruby>血圧計<rt>けつあつけい</rt></ruby>をつくる<ruby>京都<rt>きょうと</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>駅<rt>えき</rt></ruby>の<ruby>自動改札機<rt>じどうかいさつき</rt></ruby>を<ruby>世界<rt>せかい</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めて<ruby>使<rt>つか</rt></ruby>えるようにした<ruby>会社<rt>かいしゃ</rt></ruby>のひとつ。",
- "cjtokyoelectron": "<ruby>半導体<rt>はんどうたい</rt></ruby>をつくるための<ruby>大<rt>おお</rt></ruby>きな<ruby>装置<rt>そうち</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。スマホやパソコンのチップづくりに<ruby>欠<rt>か</rt></ruby>かせない<ruby>機械<rt>きかい</rt></ruby>を<ruby>世界<rt>せかい</rt></ruby>に<ruby>届<rt>とど</rt></ruby>けている。",
- "cjcyberagent": "インターネットテレビのABEMAや、ゲームのウマ<ruby>娘<rt>むすめ</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>のグループ。<ruby>本社<rt>ほんしゃ</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>の<ruby>渋谷<rt>しぶや</rt></ruby>にある。",
- "cjobayashi": "<ruby>東京スカイツリ<rt>とうきょうすかいつり</rt></ruby>ーや<ruby>大<rt>おお</rt></ruby>きなビル、トンネルなどをつくる<ruby>建設<rt>けんせつ</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>宇宙<rt>うちゅう</rt></ruby>エレベーターの<ruby>計画<rt>けいかく</rt></ruby>も<ruby>発表<rt>はっぴょう</rt></ruby>している。",
- "cjsecom": "<ruby>日本<rt>にほん</rt></ruby>で<ruby>初<rt>はじ</rt></ruby>めての<ruby>警備<rt>けいび</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>家<rt>いえ</rt></ruby>や<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>機械<rt>きかい</rt></ruby>をつけて、<ruby>何<rt>なに</rt></ruby>かあると<ruby>警備員<rt>けいびいん</rt></ruby>がかけつける<ruby>安全<rt>あんぜん</rt></ruby>のしくみをつくった。",
- "cjmelco": "エアコンの<ruby>霧ヶ峰<rt>きりがみね</rt></ruby>やエレベーター、<ruby>人工衛星<rt>じんこうえいせい</rt></ruby>までつくる<ruby>電気<rt>でんき</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気象衛星<rt>きしょうえいせい</rt></ruby>ひまわりもつくった。",
- "cwapple": "iPhoneやMacをつくるアメリカの<ruby>会社<rt>かいしゃ</rt></ruby>。1976<ruby>年<rt>ねん</rt></ruby>にスティーブ・ジョブズたちがガレージで<ruby>始<rt>はじ</rt></ruby>めた。",
- "cwalphabet": "<ruby>検索<rt>けんさく</rt></ruby>のGoogleや<ruby>動画<rt>どうが</rt></ruby>のYouTube、スマホのAndroidを<ruby>持<rt>も</rt></ruby>つ<ruby>会社<rt>かいしゃ</rt></ruby>。Googleは1998<ruby>年<rt>ねん</rt></ruby>に<ruby>大学院生<rt>だいがくいんせい</rt></ruby>2<ruby>人<rt>ひと</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>めた。",
- "cwmicrosoft": "パソコンのWindowsやOffice、ゲーム<ruby>機<rt>き</rt></ruby>のXboxをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。1975<ruby>年<rt>ねん</rt></ruby>にビル・ゲイツたちが<ruby>始<rt>はじ</rt></ruby>めた。",
- "cwamazon": "インターネットで<ruby>何<rt>なに</rt></ruby>でも<ruby>売<rt>う</rt></ruby>る<ruby>通販<rt>つうはん</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。はじめは<ruby>本<rt>ほん</rt></ruby>だけを<ruby>売<rt>う</rt></ruby>っていた。データを<ruby>預<rt>あず</rt></ruby>かるクラウドの<ruby>仕事<rt>しごと</rt></ruby>も<ruby>大<rt>おお</rt></ruby>きい。",
- "cwnvidia": "ゲームの<ruby>絵<rt>え</rt></ruby>やAIの<ruby>計算<rt>けいさん</rt></ruby>に<ruby>使<rt>つか</rt></ruby>う<ruby>半導体<rt>はんどうたい</rt></ruby>GPUをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。AIブームで<ruby>世界<rt>せかい</rt></ruby><ruby>有数<rt>ゆうすう</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きな<ruby>会社<rt>かいしゃ</rt></ruby>になった。",
- "cwmeta": "FacebookやInstagram、WhatsAppを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。2021<ruby>年<rt>ねん</rt></ruby>にフェイスブックから<ruby>今<rt>いま</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>に<ruby>変<rt>か</rt></ruby>わった。",
- "cwtesla": "<ruby>電気<rt>でんき</rt></ruby>で<ruby>走<rt>はし</rt></ruby>る<ruby>自動車<rt>じどうしゃ</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>家<rt>いえ</rt></ruby>で<ruby>電気<rt>でんき</rt></ruby>をためる<ruby>蓄電池<rt>ちくでんち</rt></ruby>や、<ruby>太陽光<rt>たいようこう</rt></ruby>パネルもつくっている。",
- "cwspacex": "<ruby>宇宙<rt>うちゅう</rt></ruby>ロケットをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>打ち上<rt>うちあ</rt></ruby>げたロケットを<ruby>着陸<rt>ちゃくりく</rt></ruby>させて、もう<ruby>一度<rt>いちど</rt></ruby><ruby>使<rt>つか</rt></ruby>うことに<ruby>成功<rt>せいこう</rt></ruby>した。",
- "cwwalmart": "<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>売り上<rt>うりあ</rt></ruby>げが<ruby>大<rt>おお</rt></ruby>きいスーパーマーケットの<ruby>会社<rt>かいしゃ</rt></ruby>。アメリカじゅうに<ruby>大<rt>おお</rt></ruby>きなお<ruby>店<rt>みせ</rt></ruby>がある。",
- "cwcocacola": "<ruby>炭酸飲料<rt>たんさんいんりょう</rt></ruby>コカ・コーラの<ruby>会社<rt>かいしゃ</rt></ruby>。1886<ruby>年<rt>ねん</rt></ruby>にアトランタの<ruby>薬局<rt>やっきょく</rt></ruby>で<ruby>売<rt>う</rt></ruby>られた<ruby>飲み物<rt>のみもの</rt></ruby>がはじまり。",
- "cwmcdonalds": "ハンバーガーのお<ruby>店<rt>みせ</rt></ruby>を<ruby>世界<rt>せかい</rt></ruby>100か<ruby>国<rt>こく</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>げた<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>本社<rt>ほんしゃ</rt></ruby>はシカゴにある。",
- "cwdisney": "ミッキーマウスの<ruby>映画<rt>えいが</rt></ruby>やテーマパークの<ruby>会社<rt>かいしゃ</rt></ruby>。ピクサーやマーベル、スター・ウォーズの<ruby>映画<rt>えいが</rt></ruby>もつくる。",
- "cwnike": "スポーツのくつや<ruby>服<rt>ふく</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>社名<rt>しゃめい</rt></ruby>はギリシャ<ruby>神話<rt>しんわ</rt></ruby>の<ruby>勝利<rt>しょうり</rt></ruby>の<ruby>女神<rt>めがみ</rt></ruby>ニケから<ruby>取<rt>と</rt></ruby>った。",
- "cwnetflix": "インターネットで<ruby>映画<rt>えいが</rt></ruby>やドラマを<ruby>配信<rt>はいしん</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。むかしはDVDを<ruby>郵便<rt>ゆうびん</rt></ruby>で<ruby>貸し出<rt>かしだ</rt></ruby>していた。",
- "cwstarbucks": "コーヒーのお<ruby>店<rt>みせ</rt></ruby>を<ruby>世界中<rt>せかいじゅう</rt></ruby>に<ruby>持<rt>も</rt></ruby>つ<ruby>会社<rt>かいしゃ</rt></ruby>。1971<ruby>年<rt>ねん</rt></ruby>にシアトルで1<ruby>号<rt>ごう</rt></ruby><ruby>店<rt>てん</rt></ruby>が<ruby>開<rt>ひら</rt></ruby>いた。",
- "cwpepsico": "<ruby>炭酸飲料<rt>たんさんいんりょう</rt></ruby>のペプシや、ポテトチップスのレイズ、ドリトスをつくる<ruby>食<rt>た</rt></ruby>べものと<ruby>飲<rt>の</rt></ruby>みものの<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwboeing": "<ruby>旅客機<rt>りょかくき</rt></ruby>の747や787をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>宇宙船<rt>うちゅうせん</rt></ruby>や<ruby>人工衛星<rt>じんこうえいせい</rt></ruby>もつくっている。",
- "cwcostco": "<ruby>会員<rt>かいいん</rt></ruby>になると<ruby>買い物<rt>かいもの</rt></ruby>できる<ruby>倉庫<rt>そうこ</rt></ruby>のような<ruby>大<rt>おお</rt></ruby>きなお<ruby>店<rt>みせ</rt></ruby>。<ruby>大<rt>おお</rt></ruby>きな<ruby>箱<rt>ばこ</rt></ruby>のまとめ<ruby>売<rt>う</rt></ruby>りで<ruby>安<rt>やす</rt></ruby>く<ruby>売<rt>う</rt></ruby>る。",
- "cwintel": "パソコンの<ruby>頭脳<rt>ずのう</rt></ruby>CPUをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。1968<ruby>年<rt>ねん</rt></ruby>に<ruby>始<rt>はじ</rt></ruby>まり、<ruby>半導体<rt>はんどうたい</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>を<ruby>切り開<rt>きりひら</rt></ruby>いてきた。",
- "cwamd": "パソコンやゲーム<ruby>機<rt>き</rt></ruby>の<ruby>頭脳<rt>ずのう</rt></ruby>になる<ruby>半導体<rt>はんどうたい</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。PlayStationやXboxにも<ruby>使<rt>つか</rt></ruby>われている。",
- "cwjnj": "<ruby>薬<rt>くすり</rt></ruby>や<ruby>手術<rt>しゅじゅつ</rt></ruby>の<ruby>道具<rt>どうぐ</rt></ruby>をつくる<ruby>大<rt>おお</rt></ruby>きな<ruby>会社<rt>かいしゃ</rt></ruby>。1886<ruby>年<rt>ねん</rt></ruby>にジョンソン<ruby>家<rt>か</rt></ruby>の3<ruby>人<rt>にん</rt></ruby>の<ruby>兄弟<rt>きょうだい</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>めた。",
- "cwpg": "<ruby>洗剤<rt>せんざい</rt></ruby>や<ruby>紙<rt>かみ</rt></ruby>おむつのパンパース、シャンプーをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。ろうそくと<ruby>石<rt>せっ</rt></ruby>けんの<ruby>店<rt>みせ</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>まった。",
- "cwexxon": "<ruby>石油<rt>せきゆ</rt></ruby>や<ruby>天然<rt>てんねん</rt></ruby>ガスをほり<ruby>出<rt>だ</rt></ruby>して、ガソリンなどにする<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>本社<rt>ほんしゃ</rt></ruby>はヒューストンの<ruby>近<rt>ちか</rt></ruby>くにある。",
- "cwvisa": "カードで<ruby>支払<rt>しはら</rt></ruby>うしくみを<ruby>世界中<rt>せかいじゅう</rt></ruby>で<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。カードそのものは<ruby>銀行<rt>ぎんこう</rt></ruby>などが<ruby>発行<rt>はっこう</rt></ruby>している。",
- "cwuber": "スマホのアプリで<ruby>車<rt>くるま</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>べるしくみの<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>料理<rt>りょうり</rt></ruby>を<ruby>届<rt>とど</rt></ruby>けるウーバーイーツも<ruby>運営<rt>うんえい</rt></ruby>している。",
- "cwroblox": "みんなが<ruby>作<rt>つく</rt></ruby>ったゲームで<ruby>遊<rt>あそ</rt></ruby>べる<ruby>場<rt>ば</rt></ruby>を<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>自分<rt>じぶん</rt></ruby>でゲームを<ruby>作<rt>つく</rt></ruby>って<ruby>公開<rt>こうかい</rt></ruby>することもできる。",
- "cwford": "ヘンリー・フォードが1903<ruby>年<rt>ねん</rt></ruby>に<ruby>始<rt>はじ</rt></ruby>めた<ruby>自動車<rt>じどうしゃ</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>流れ作業<rt>ながれさぎょう</rt></ruby>で<ruby>車<rt>くるま</rt></ruby>を<ruby>安<rt>やす</rt></ruby>くつくり、<ruby>世界<rt>せかい</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>めた。",
- "cwlilly": "<ruby>病気<rt>びょうき</rt></ruby>を<ruby>治<rt>なお</rt></ruby>す<ruby>薬<rt>くすり</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>糖尿病<rt>とうにょうびょう</rt></ruby>の<ruby>薬<rt>くすり</rt></ruby>インスリンを、<ruby>世界<rt>せかい</rt></ruby>ではじめて<ruby>大量<rt>たいりょう</rt></ruby>につくった。",
- "cwtsmc": "<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>から<ruby>注文<rt>ちゅうもん</rt></ruby>を<ruby>受<rt>う</rt></ruby>けて<ruby>半導体<rt>はんどうたい</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>熊本県<rt>くまもとけん</rt></ruby>にも<ruby>工場<rt>こうじょう</rt></ruby>をつくった。",
- "cwfoxconn": "iPhoneなどの<ruby>電子<rt>でんし</rt></ruby><ruby>機器<rt>きき</rt></ruby>を<ruby>組み立<rt>くみた</rt></ruby>てる<ruby>世界<rt>せかい</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。フォックスコンとも<ruby>呼<rt>よ</rt></ruby>ばれ、シャープの<ruby>親会社<rt>おやがいしゃ</rt></ruby>。",
- "cwmediatek": "スマホやテレビの<ruby>頭脳<rt>ずのう</rt></ruby>になる<ruby>半導体<rt>はんどうたい</rt></ruby>を<ruby>設計<rt>せっけい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>自分<rt>じぶん</rt></ruby>の<ruby>工場<rt>こうじょう</rt></ruby>は<ruby>持<rt>も</rt></ruby>たず、<ruby>設計<rt>せっけい</rt></ruby>を<ruby>専門<rt>せんもん</rt></ruby>にしている。",
- "cwsamsung": "スマホのGalaxyやテレビ、<ruby>半導体<rt>はんどうたい</rt></ruby>メモリーをつくる<ruby>韓国<rt>かんこく</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwskhynix": "コンピューターの<ruby>記憶<rt>きおく</rt></ruby>に<ruby>使<rt>つか</rt></ruby>う<ruby>半導体<rt>はんどうたい</rt></ruby>メモリーをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。AI<ruby>向<rt>む</rt></ruby>けのメモリーで<ruby>強<rt>つよ</rt></ruby>い。",
- "cwhyundai": "<ruby>韓国<rt>かんこく</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>自動車<rt>じどうしゃ</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>現代<rt>げんだい</rt></ruby><ruby>自動車<rt>じどうしゃ</rt></ruby>とも<ruby>書<rt>か</rt></ruby>く。<ruby>日本<rt>にほん</rt></ruby>では<ruby>電気<rt>でんき</rt></ruby><ruby>自動車<rt>じどうしゃ</rt></ruby>を<ruby>売<rt>う</rt></ruby>っている。",
- "cwkia": "<ruby>韓国<rt>かんこく</rt></ruby>の<ruby>自動車<rt>じどうしゃ</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。ヒョンデと<ruby>同<rt>おな</rt></ruby>じグループで、<ruby>世界中<rt>せかいじゅう</rt></ruby>に<ruby>車<rt>くるま</rt></ruby>を<ruby>売<rt>う</rt></ruby>っている。<ruby>漢字<rt>かんじ</rt></ruby>では<ruby>起亜<rt>きあ</rt></ruby>と<ruby>書<rt>か</rt></ruby>く。",
- "cwlg": "テレビや<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>、<ruby>洗濯機<rt>せんたくき</rt></ruby>などをつくる<ruby>韓国<rt>かんこく</rt></ruby>の<ruby>電機<rt>でんき</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。うすくて<ruby>画面<rt>がめん</rt></ruby>のきれいな<ruby>有機<rt>ゆうき</rt></ruby>ELテレビで<ruby>知<rt>し</rt></ruby>られる。",
- "cwtencent": "<ruby>中国<rt>ちゅうごく</rt></ruby>で<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>が<ruby>使<rt>つか</rt></ruby>うチャットアプリWeChatや、たくさんのゲームを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwalibaba": "<ruby>中国<rt>ちゅうごく</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>通販<rt>つうはん</rt></ruby>サイトを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>名前<rt>なまえ</rt></ruby>はアラビアンナイトのお<ruby>話<rt>はなし</rt></ruby>から<ruby>取<rt>と</rt></ruby>った。",
- "cwbyd": "<ruby>電気<rt>でんき</rt></ruby><ruby>自動車<rt>じどうしゃ</rt></ruby>と<ruby>電池<rt>でんち</rt></ruby>をつくる<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。はじめは<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>の<ruby>電池<rt>でんち</rt></ruby>をつくっていた。",
- "cwxiaomi": "スマホや<ruby>家電<rt>かでん</rt></ruby>、<ruby>電気<rt>でんき</rt></ruby><ruby>自動車<rt>じどうしゃ</rt></ruby>までつくる<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>名前<rt>なまえ</rt></ruby>の<ruby>小米<rt>こごめ</rt></ruby>は、<ruby>中国語<rt>ちゅうごくご</rt></ruby>で<ruby>穀物<rt>こくもつ</rt></ruby>のアワのこと。",
- "cwcatl": "<ruby>電気<rt>でんき</rt></ruby><ruby>自動車<rt>じどうしゃ</rt></ruby>に<ruby>使<rt>つか</rt></ruby>う<ruby>電池<rt>でんち</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>車<rt>くるま</rt></ruby><ruby>用<rt>よう</rt></ruby>の<ruby>電池<rt>でんち</rt></ruby>では<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>多<rt>おお</rt></ruby>くつくっている。",
- "cwbaidu": "<ruby>中国<rt>ちゅうごく</rt></ruby>でいちばん<ruby>使<rt>つか</rt></ruby>われている<ruby>検索<rt>けんさく</rt></ruby>サイトの<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>漢字<rt>かんじ</rt></ruby>では<ruby>百<rt>ひゃく</rt></ruby><ruby>度<rt>ど</rt></ruby>と<ruby>書<rt>か</rt></ruby>く。<ruby>自動<rt>じどう</rt></ruby><ruby>運転<rt>うんてん</rt></ruby>やAIの<ruby>研究<rt>けんきゅう</rt></ruby>もしている。",
- "cwnetease": "<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きなゲーム<ruby>会社<rt>かいしゃ</rt></ruby>。スマホゲームや、メールのサービスを<ruby>運営<rt>うんえい</rt></ruby>している。<ruby>漢字<rt>かんじ</rt></ruby>では<ruby>網<rt>あみ</rt></ruby><ruby>易<rt>えき</rt></ruby>と<ruby>書<rt>か</rt></ruby>く。",
- "cwlenovo": "パソコンを<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>多<rt>おお</rt></ruby>く<ruby>売<rt>う</rt></ruby>る<ruby>会社<rt>かいしゃ</rt></ruby>。IBMのパソコン<ruby>部門<rt>ぶもん</rt></ruby>を<ruby>買<rt>か</rt></ruby>って<ruby>大<rt>おお</rt></ruby>きくなった。",
- "cwairbnb": "<ruby>旅行<rt>りょこう</rt></ruby>で<ruby>人<rt>ひと</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>や<ruby>部屋<rt>へや</rt></ruby>に<ruby>泊<rt>と</rt></ruby>まれるしくみを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。はじめは<ruby>自分<rt>じぶん</rt></ruby>たちの<ruby>部屋<rt>へや</rt></ruby>にエアマットをしいて<ruby>人<rt>ひと</rt></ruby>を<ruby>泊<rt>と</rt></ruby>めた。",
- "cwreliance": "<ruby>石油<rt>せきゆ</rt></ruby><ruby>化学<rt>かがく</rt></ruby>から<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>、スーパーまで<ruby>手<rt>て</rt></ruby>がけるインド<ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwtcs": "<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>のコンピューターのしくみをつくるインドの<ruby>会社<rt>かいしゃ</rt></ruby>。タタ・グループの<ruby>一員<rt>いちいん</rt></ruby>。",
- "cwinfosys": "インドの<ruby>大<rt>おお</rt></ruby>きなIT<ruby>会社<rt>かいしゃ</rt></ruby>。1981<ruby>年<rt>ねん</rt></ruby>に7<ruby>人<rt>にん</rt></ruby>の<ruby>技術者<rt>ぎじゅつしゃ</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>めた。ベンガルールに<ruby>広<rt>ひろ</rt></ruby>いキャンパスがある。",
- "cwarm": "スマホのほとんどに<ruby>使<rt>つか</rt></ruby>われる<ruby>半導体<rt>はんどうたい</rt></ruby>の<ruby>設計図<rt>せっけいず</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。ソフトバンクグループが<ruby>大株主<rt>おおかぶぬし</rt></ruby>。",
- "cwshell": "<ruby>石油<rt>せきゆ</rt></ruby>や<ruby>天然<rt>てんねん</rt></ruby>ガスの<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>貝<rt>かい</rt></ruby>のマークは、<ruby>創業者<rt>そうぎょうしゃ</rt></ruby>の<ruby>父<rt>ちち</rt></ruby>が<ruby>貝<rt>かい</rt></ruby>がらを<ruby>売<rt>う</rt></ruby>る<ruby>商売<rt>しょうばい</rt></ruby>をしていたことにちなむ。",
- "cwastrazeneca": "がんや<ruby>心臓<rt>しんぞう</rt></ruby>の<ruby>病気<rt>びょうき</rt></ruby>などの<ruby>薬<rt>くすり</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>新型コロナウイルス<rt>しんがたころなういるす</rt></ruby>のワクチンもつくった。",
- "cwunilever": "<ruby>石<rt>せっ</rt></ruby>けんのダヴやシャンプーのラックスなど、<ruby>毎日<rt>まいにち</rt></ruby><ruby>使<rt>つか</rt></ruby>う<ruby>日用品<rt>にちようひん</rt></ruby>をたくさんつくる<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwrollsroyce": "<ruby>飛行機<rt>ひこうき</rt></ruby>のジェットエンジンをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>高級車<rt>こうきゅうしゃ</rt></ruby>のロールス・ロイスは、いまは<ruby>別<rt>べつ</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>がつくっている。",
- "cwbp": "<ruby>石油<rt>せきゆ</rt></ruby>や<ruby>天然<rt>てんねん</rt></ruby>ガスの<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>緑<rt>みどり</rt></ruby>と<ruby>黄色<rt>きいろ</rt></ruby>の<ruby>花<rt>はな</rt></ruby>のようなマークのガソリンスタンドを<ruby>持<rt>も</rt></ruby>っている。",
- "cwhsbc": "<ruby>世界<rt>せかい</rt></ruby>の<ruby>多<rt>おお</rt></ruby>くの<ruby>国<rt>くに</rt></ruby>にお<ruby>店<rt>みせ</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ<ruby>銀行<rt>ぎんこう</rt></ruby>。もとは<ruby>香港<rt>ほんこん</rt></ruby>と<ruby>上海<rt>しゃんはい</rt></ruby>の<ruby>銀行<rt>ぎんこう</rt></ruby>として<ruby>始<rt>はじ</rt></ruby>まった。",
- "cwlvmh": "ルイ・ヴィトンやディオール、ティファニーなど、<ruby>高級<rt>こうきゅう</rt></ruby>ブランドをたくさん<ruby>持<rt>も</rt></ruby>つ<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwloreal": "<ruby>世界<rt>せかい</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>の<ruby>化粧品<rt>けしょうひん</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。ランコムやメイベリンなど、<ruby>多<rt>おお</rt></ruby>くのブランドを<ruby>持<rt>も</rt></ruby>つ。",
- "cwhermes": "<ruby>高級<rt>こうきゅう</rt></ruby>なバッグやスカーフをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。1837<ruby>年<rt>ねん</rt></ruby>に<ruby>馬<rt>うま</rt></ruby>の<ruby>道具<rt>どうぐ</rt></ruby>をつくる<ruby>工房<rt>こうぼう</rt></ruby>として<ruby>始<rt>はじ</rt></ruby>まった。",
- "cwtotal": "<ruby>石油<rt>せきゆ</rt></ruby>やガス、<ruby>太陽光<rt>たいようこう</rt></ruby>や<ruby>風力<rt>ふうりょく</rt></ruby>の<ruby>電気<rt>でんき</rt></ruby>をつくるフランスの<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwmichelin": "<ruby>自動車<rt>じどうしゃ</rt></ruby>のタイヤをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。レストランを<ruby>星<rt>ほし</rt></ruby>で<ruby>評価<rt>ひょうか</rt></ruby>するガイドブックでも<ruby>有名<rt>ゆうめい</rt></ruby>。",
- "cwdanone": "ヨーグルトや、ミネラルウォーターのエビアンをつくるフランスの<ruby>食品<rt>しょくひん</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwairbus": "<ruby>旅客機<rt>りょかくき</rt></ruby>をつくるヨーロッパの<ruby>会社<rt>かいしゃ</rt></ruby>。2<ruby>階<rt>かい</rt></ruby><ruby>建<rt>だ</rt></ruby>ての<ruby>大<rt>おお</rt></ruby>きな<ruby>旅客機<rt>りょかくき</rt></ruby>A380をつくった。",
- "cwsap": "<ruby>会社<rt>かいしゃ</rt></ruby>のお<ruby>金<rt>かね</rt></ruby>や<ruby>人<rt>ひと</rt></ruby>、ものの<ruby>管理<rt>かんり</rt></ruby>に<ruby>使<rt>つか</rt></ruby>うソフトをつくる、ヨーロッパ<ruby>最大<rt>さいだい</rt></ruby>のソフトウェア<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwsiemens": "<ruby>工場<rt>こうじょう</rt></ruby>の<ruby>機械<rt>きかい</rt></ruby>や<ruby>鉄道<rt>てつどう</rt></ruby>、<ruby>医療機器<rt>いりょうきき</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。1847<ruby>年<rt>ねん</rt></ruby>に<ruby>電信機<rt>でんしんき</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>として<ruby>始<rt>はじ</rt></ruby>まった。",
- "cwadidas": "<ruby>スポーツ用品<rt>すぽーつようひん</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。3<ruby>本<rt>ぽん</rt></ruby><ruby>線<rt>せん</rt></ruby>のマークが<ruby>目印<rt>めじるし</rt></ruby>。サッカーのワールドカップの<ruby>公式<rt>こうしき</rt></ruby>ボールをつくっている。",
- "cwbmw": "ドイツの<ruby>自動車<rt>じどうしゃ</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。はじめは<ruby>飛行機<rt>ひこうき</rt></ruby>のエンジンをつくっていた。MINIもこの<ruby>会社<rt>かいしゃ</rt></ruby>のブランド。",
- "cwmercedes": "<ruby>高級車<rt>こうきゅうしゃ</rt></ruby>をつくるドイツの<ruby>会社<rt>かいしゃ</rt></ruby>。1886<ruby>年<rt>ねん</rt></ruby>にカール・ベンツがガソリン<ruby>自動車<rt>じどうしゃ</rt></ruby>を<ruby>発明<rt>はつめい</rt></ruby>した。",
- "cwvolkswagen": "ドイツの<ruby>自動車<rt>じどうしゃ</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>名前<rt>なまえ</rt></ruby>は<ruby>ドイツ語<rt>どいつご</rt></ruby>で<ruby>国民<rt>こくみん</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>という<ruby>意味<rt>いみ</rt></ruby>。アウディもこのグループ。",
- "cwporsche": "スポーツカーをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。フェルディナント・ポルシェが<ruby>始<rt>はじ</rt></ruby>めた。911という<ruby>車<rt>くるま</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>。",
- "cwbasf": "<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>化学<rt>かがく</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。プラスチックや<ruby>肥料<rt>ひりょう</rt></ruby>、<ruby>塗料<rt>とりょう</rt></ruby>の<ruby>原料<rt>げんりょう</rt></ruby>などをつくる。",
- "cwnestle": "キットカットやネスカフェをつくる<ruby>世界<rt>せかい</rt></ruby><ruby>最大<rt>さいだい</rt></ruby>の<ruby>食品<rt>しょくひん</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>赤<rt>あか</rt></ruby>ちゃんのための<ruby>栄養食<rt>えいようしょく</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>まった。",
- "cwroche": "がんの<ruby>薬<rt>くすり</rt></ruby>や、<ruby>病気<rt>びょうき</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる<ruby>検査<rt>けんさ</rt></ruby><ruby>薬<rt>やく</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>の<ruby>中外製薬<rt>ちゅうがいせいやく</rt></ruby>もグループの<ruby>一員<rt>いちいん</rt></ruby>。",
- "cwnovartis": "<ruby>薬<rt>くすり</rt></ruby>をつくるスイスの<ruby>会社<rt>かいしゃ</rt></ruby>。1996<ruby>年<rt>ねん</rt></ruby>に2つの<ruby>会社<rt>かいしゃ</rt></ruby>が<ruby>合<rt>あ</rt></ruby>わさってできた。",
- "cwasml": "<ruby>半導体<rt>はんどうたい</rt></ruby>の<ruby>細<rt>こま</rt></ruby>かい<ruby>回路<rt>かいろ</rt></ruby>を<ruby>光<rt>ひかり</rt></ruby>で<ruby>焼<rt>や</rt></ruby>きつける<ruby>装置<rt>そうち</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>最先端<rt>さいせんたん</rt></ruby>の<ruby>装置<rt>そうち</rt></ruby>をつくれるのは<ruby>世界<rt>せかい</rt></ruby>でここだけ。",
- "cwphilips": "<ruby>電動<rt>でんどう</rt></ruby><ruby>歯ブラシ<rt>はぶらし</rt></ruby>や<ruby>医療機器<rt>いりょうきき</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。1891<ruby>年<rt>ねん</rt></ruby>に<ruby>電球<rt>でんきゅう</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>として<ruby>始<rt>はじ</rt></ruby>まった。",
- "cwnovonordisk": "<ruby>糖尿病<rt>とうにょうびょう</rt></ruby>の<ruby>治療<rt>ちりょう</rt></ruby>に<ruby>使<rt>つか</rt></ruby>うインスリンや、<ruby>肥満症<rt>ひまんしょう</rt></ruby>の<ruby>薬<rt>くすり</rt></ruby>をつくるデンマークの<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwmaersk": "たくさんのコンテナを<ruby>船<rt>ふね</rt></ruby>で<ruby>世界中<rt>せかいじゅう</rt></ruby>に<ruby>運<rt>はこ</rt></ruby>ぶ<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>水色<rt>みずいろ</rt></ruby>の<ruby>船<rt>ふね</rt></ruby>と<ruby>白<rt>しろ</rt></ruby>い<ruby>星<rt>ほし</rt></ruby>のマークが<ruby>目印<rt>めじるし</rt></ruby>。",
- "cwvestas": "<ruby>風<rt>かぜ</rt></ruby>で<ruby>電気<rt>でんき</rt></ruby>をつくる<ruby>大<rt>おお</rt></ruby>きな<ruby>風車<rt>ふうしゃ</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>世界中<rt>せかいじゅう</rt></ruby>に<ruby>風力<rt>ふうりょく</rt></ruby><ruby>発電<rt>はつでん</rt></ruby>の<ruby>風車<rt>ふうしゃ</rt></ruby>を<ruby>立<rt>た</rt></ruby>てている。",
- "cwspotify": "スマホで<ruby>音楽<rt>おんがく</rt></ruby>やポッドキャストを<ruby>聞<rt>き</rt></ruby>ける<ruby>配信<rt>はいしん</rt></ruby>サービスの<ruby>会社<rt>かいしゃ</rt></ruby>。2006<ruby>年<rt>ねん</rt></ruby>にスウェーデンで<ruby>生<rt>う</rt></ruby>まれた。",
- "cwvolvo": "トラックやバス、<ruby>工事<rt>こうじ</rt></ruby>の<ruby>機械<rt>きかい</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>乗用車<rt>じょうようしゃ</rt></ruby>のボルボは、いまは<ruby>別<rt>べつ</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>がつくっている。",
- "cwericsson": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>の<ruby>電波<rt>でんぱ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る<ruby>基地局<rt>きちきょく</rt></ruby>の<ruby>機械<rt>きかい</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。1876<ruby>年<rt>ねん</rt></ruby>に<ruby>電信機<rt>でんしんき</rt></ruby>の<ruby>修理<rt>しゅうり</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>まった。",
- "cwnokia": "<ruby>通信<rt>つうしん</rt></ruby>の<ruby>機械<rt>きかい</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。むかしは<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>で<ruby>世界一<rt>せかいいち</rt></ruby>だった。はじまりは<ruby>製紙<rt>せいし</rt></ruby><ruby>工場<rt>こうじょう</rt></ruby>。",
- "cwinditex": "<ruby>服<rt>ふく</rt></ruby>のお<ruby>店<rt>みせ</rt></ruby>ZARAを<ruby>世界中<rt>せかいじゅう</rt></ruby>に<ruby>持<rt>も</rt></ruby>つ<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>新<rt>あたら</rt></ruby>しい<ruby>服<rt>ふく</rt></ruby>をとても<ruby>早<rt>はや</rt></ruby>くお<ruby>店<rt>みせ</rt></ruby>に<ruby>並<rt>なら</rt></ruby>べることで<ruby>知<rt>し</rt></ruby>られる。",
- "cwsantander": "スペインの<ruby>大<rt>おお</rt></ruby>きな<ruby>銀行<rt>ぎんこう</rt></ruby>。ヨーロッパや<ruby>南<rt>みなみ</rt></ruby>アメリカの<ruby>多<rt>おお</rt></ruby>くの<ruby>国<rt>くに</rt></ruby>にお<ruby>店<rt>みせ</rt></ruby>がある。",
- "cwferrari": "<ruby>赤<rt>あか</rt></ruby>いスポーツカーをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。F1に1950<ruby>年<rt>ねん</rt></ruby>から<ruby>出<rt>で</rt></ruby>つづけている、いちばん<ruby>歴史<rt>れきし</rt></ruby>のあるチームを<ruby>持<rt>も</rt></ruby>つ。",
- "cwaramco": "サウジアラビアの<ruby>国<rt>くに</rt></ruby>の<ruby>石油<rt>せきゆ</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>多<rt>おお</rt></ruby>く<ruby>石油<rt>せきゆ</rt></ruby>をほり<ruby>出<rt>だ</rt></ruby>している<ruby>会社<rt>かいしゃ</rt></ruby>のひとつ。",
- "cwequinor": "<ruby>北海<rt>ほっかい</rt></ruby>で<ruby>石油<rt>せきゆ</rt></ruby>やガスをほり<ruby>出<rt>だ</rt></ruby>すノルウェーの<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>海<rt>うみ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>の<ruby>風力<rt>ふうりょく</rt></ruby><ruby>発電<rt>はつでん</rt></ruby>も<ruby>手<rt>て</rt></ruby>がけている。",
- "cwteva": "<ruby>ジェネリック医薬品<rt>じぇねりっくいやくひん</rt></ruby>(<ruby>後発薬<rt>こうはつやく</rt></ruby>)を<ruby>世界<rt>せかい</rt></ruby>でいちばん<ruby>多<rt>おお</rt></ruby>くつくる<ruby>会社<rt>かいしゃ</rt></ruby>のひとつ。",
- "cwshopify": "だれでもインターネットのお<ruby>店<rt>みせ</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けるしくみをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。はじめはスノーボードを<ruby>売<rt>う</rt></ruby>るお<ruby>店<rt>みせ</rt></ruby>だった。",
- "cwrbc": "カナダでいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>銀行<rt>ぎんこう</rt></ruby>。1864<ruby>年<rt>ねん</rt></ruby>にハリファックスで<ruby>生<rt>う</rt></ruby>まれた。",
- "cwhershey": "チョコレートのお<ruby>菓子<rt>かし</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>本社<rt>ほんしゃ</rt></ruby>のある<ruby>町<rt>まち</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>もハーシーで、チョコレート<ruby>工場<rt>こうじょう</rt></ruby>の<ruby>町<rt>まち</rt></ruby>として<ruby>知<rt>し</rt></ruby>られる。",
- "cwbhp": "<ruby>鉄鉱<rt>てっこう</rt></ruby><ruby>石<rt>せき</rt></ruby>や<ruby>銅<rt>どう</rt></ruby>をほり<ruby>出<rt>だ</rt></ruby>す<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>資源<rt>しげん</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>の<ruby>製鉄<rt>せいてつ</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>にも<ruby>鉄鉱<rt>てっこう</rt></ruby><ruby>石<rt>せき</rt></ruby>を<ruby>送<rt>おく</rt></ruby>っている。",
- "cwatlassian": "チームで<ruby>仕事<rt>しごと</rt></ruby>を<ruby>進<rt>すす</rt></ruby>めるためのソフトJiraやTrelloをつくる<ruby>会社<rt>かいしゃ</rt></ruby>。シドニーの<ruby>大学<rt>だいがく</rt></ruby>の<ruby>同級生<rt>どうきゅうせい</rt></ruby>2<ruby>人<rt>ひと</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>めた。",
- "cwpetrobras": "ブラジルの<ruby>石油<rt>せきゆ</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>海<rt>うみ</rt></ruby>の<ruby>深<rt>ふか</rt></ruby>いところから<ruby>石油<rt>せきゆ</rt></ruby>をほり<ruby>出<rt>だ</rt></ruby>す<ruby>技術<rt>ぎじゅつ</rt></ruby>にすぐれている。",
- "cwvale": "<ruby>鉄鉱<rt>てっこう</rt></ruby><ruby>石<rt>せき</rt></ruby>をほり<ruby>出<rt>だ</rt></ruby>す<ruby>世界<rt>せかい</rt></ruby><ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>日本<rt>にほん</rt></ruby>にも<ruby>船<rt>ふね</rt></ruby>で<ruby>鉄鉱<rt>てっこう</rt></ruby><ruby>石<rt>せき</rt></ruby>をたくさん<ruby>運<rt>はこ</rt></ruby>んでいる。",
- "cwmercadolibre": "<ruby>中南米<rt>ちゅうなんべい</rt></ruby>でいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>通販<rt>つうはん</rt></ruby>サイトを<ruby>運営<rt>うんえい</rt></ruby>する<ruby>会社<rt>かいしゃ</rt></ruby>。1999<ruby>年<rt>ねん</rt></ruby>にアルゼンチンで<ruby>生<rt>う</rt></ruby>まれた。",
- "cwmondelez": "クッキーのオレオやチョコレートのミルカ、トブラローネなどのお<ruby>菓子<rt>かし</rt></ruby>をつくる<ruby>会社<rt>かいしゃ</rt></ruby>。",
- "cwdbs": "シンガポールでいちばん<ruby>大<rt>おお</rt></ruby>きな<ruby>銀行<rt>ぎんこう</rt></ruby>。<ruby>東南<rt>とうなん</rt></ruby>アジアを<ruby>中心<rt>ちゅうしん</rt></ruby>に、たくさんのお<ruby>店<rt>みせ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っている。",
- "cwnaspers": "<ruby>南アフリカ<rt>みなみあふりか</rt></ruby>のメディアとインターネットの<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>早<rt>はや</rt></ruby>くからテンセントに<ruby>出資<rt>しゅっし</rt></ruby>したことで<ruby>知<rt>し</rt></ruby>られる。",
- "cwvingroup": "ベトナム<ruby>最大級<rt>さいだいきゅう</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>。<ruby>電気<rt>でんき</rt></ruby><ruby>自動車<rt>じどうしゃ</rt></ruby>のVinFastや、マンション、<ruby>遊園地<rt>ゆうえんち</rt></ruby>などを<ruby>手<rt>て</rt></ruby>がける。"
 };
 /* RUBY-END */
 /* Googleマップで ひらく(登録も お金も いらない ふつうのリンク) */
@@ -935,6 +741,7 @@ function gmapUrl(q){
 }
 function gmapLink(q){
   /* 会社は 公式サイト(けいくん 2026-09-26「四季報が出来なければ その会社のリンクに」→ おすすめ = 公式サイト)+ Wikipedia */
+  if(q.k === "company" && typeof KABU === "object") return "";  // 会社の コース: リンクは KABU.info が 出す
   if(q.k === "company") return '<a class="gmap" href="' + esc(q.u) + '" target="_blank" rel="noopener noreferrer">🏢 公式サイトを見る</a>'
     + (q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "");
   if(q.k === "space" || q.k === "body") return q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "";
@@ -948,208 +755,9 @@ const LATLON = {};
 SPOTS.forEach(q => { q.f = 1; });
 /* 名所の追加ぶん(tools/spots-*.tsv から tools/add_spots.py が作る。手で直さない) SPOTS-MORE-START */
 SPOTS.push(
-  {n:"トヨタ自動車", c:"日本・愛知県豊田市", r:"とよたじどうしゃ", art:"cjtoyota", k:"company", e:"🚗", u:"https://global.toyota/jp/", w:"トヨタ自動車", mc:"約35兆5000億円", f:1, d:"世界でトップクラスの台数の車をつくる自動車メーカー。カローラやプリウスが有名で、もとは布を織る機械の会社から始まった。"},
-  {n:"任天堂", c:"日本・京都府京都市", r:"にんてんどう", art:"cjnintendo", k:"company", e:"🎮", u:"https://www.nintendo.co.jp/", w:"任天堂", mc:"約9兆5000億円", f:1, d:"京都で花札やトランプの会社として始まった。いまはニンテンドースイッチやマリオ、ゼルダのゲームで世界中に知られている。"},
-  {n:"ソニーグループ", c:"日本・東京都港区", r:"そにーぐるーぷ", art:"cjsony", k:"company", e:"🎧", u:"https://www.sony.com/ja/", w:"ソニーグループ", mc:"約21兆7000億円", f:1, d:"プレイステーションやカメラ、テレビ、音楽、映画までつくる会社。むかしは持ち歩ける音楽プレーヤーのウォークマンで世界をおどろかせた。"},
-  {n:"本田技研工業", c:"日本・東京都港区", r:"ほんだぎけんこうぎょう", art:"cjhonda", k:"company", e:"🏍️", u:"https://global.honda/jp/", w:"本田技研工業", mc:"約6兆7000億円", f:1, d:"バイクと車をつくる会社。スーパーカブは世界でいちばん多くつくられたバイクで、二本足で歩くロボットのアシモも開発した。"},
-  {n:"バンダイナムコホールディングス", c:"日本・東京都港区", r:"ばんだいなむこほーるでぃんぐす", art:"cjbandainamco", k:"company", e:"🧸", u:"https://www.bandainamco.co.jp/", w:"バンダイナムコホールディングス", mc:"約3兆6000億円", f:1, d:"ガンプラやたまごっち、パックマン、太鼓の達人など、おもちゃとゲームをつくる会社。アニメづくりの仕事もしている。"},
-  {n:"サンリオ", c:"日本・東京都品川区", r:"さんりお", art:"cjsanrio", k:"company", e:"🎀", u:"https://www.sanrio.co.jp/", w:"サンリオ", mc:"約1兆5000億円", f:1, d:"ハローキティやシナモロール、マイメロディなどのキャラクターを生んだ会社。東京の多摩市にはサンリオピューロランドがある。"},
-  {n:"オリエンタルランド", c:"日本・千葉県浦安市", r:"おりえんたるらんど", art:"cjorientalland", k:"company", e:"🏰", u:"https://www.olc.co.jp/ja/", w:"オリエンタルランド", mc:"約4兆9000億円", f:1, d:"千葉県浦安市にある東京ディズニーランドと東京ディズニーシーを運営する会社。アメリカのディズニーの会社と約束を結んで運営している。"},
-  {n:"ファーストリテイリング", c:"日本・山口県山口市", r:"ふぁーすとりていりんぐ", art:"cjfastretailing", k:"company", e:"👕", u:"https://www.fastretailing.com/jp/", w:"ファーストリテイリング", mc:"約21兆1000億円", f:1, d:"ユニクロやジーユーを運営する会社。ヒートテックやフリースが有名で、山口県の小さな洋服店から世界に広がった。"},
-  {n:"パナソニックホールディングス", c:"日本・大阪府門真市", r:"ぱなそにっくほーるでぃんぐす", art:"cjpanasonic", k:"company", e:"🔋", u:"https://holdings.panasonic/jp/", w:"パナソニックホールディングス", mc:"約10兆7000億円", f:1, d:"松下幸之助が大阪でつくった電気の会社。電球のソケットから始まり、いまは冷蔵庫や洗濯機、電気自動車の電池をつくる。"},
-  {n:"ヤクルト本社", c:"日本・東京都港区", r:"やくるとほんしゃ", art:"cjyakult", k:"company", e:"🥛", u:"https://www.yakult.co.jp/", w:"ヤクルト本社", mc:"約8000億円", f:1, d:"乳酸菌の飲み物ヤクルトをつくる会社。ヤクルトレディが家や会社まで届けるしくみがあり、世界の多くの国でも飲まれている。"},
-  {n:"セブン&アイ・ホールディングス", c:"日本・東京都千代田区", r:"せぶんあんどあいほーるでぃんぐす", art:"cjsevenandi", k:"company", e:"🏪", u:"https://www.7andi.com/", w:"セブン&アイ・ホールディングス", mc:"約4兆6000億円", f:1, d:"コンビニのセブン-イレブンを運営する会社。セブン-イレブンはアメリカ生まれだが、日本で大きく育ち、いまは世界中に店がある。"},
-  {n:"イオン", c:"日本・千葉県千葉市", r:"いおん", art:"cjaeon", k:"company", e:"🛒", u:"https://www.aeon.info/", w:"イオン (企業)", mc:"約3兆6000億円", f:1, d:"全国にイオンモールやスーパーをもつ会社。電子マネーのWAONも出していて、本社は千葉市の幕張にある。"},
-  {n:"日本マクドナルドホールディングス", c:"日本・東京都新宿区", r:"にほんまくどなるどほーるでぃんぐす", art:"cjmcdonalds", k:"company", e:"🍔", u:"https://www.mcd-holdings.co.jp/", w:"日本マクドナルドホールディングス", mc:"約1兆円", f:1, d:"日本のマクドナルドを運営する会社。1971年に東京の銀座に1号店を開き、いまは全国に約3000の店がある。"},
-  {n:"日清食品ホールディングス", c:"日本・東京都新宿区", r:"にっしんしょくひんほーるでぃんぐす", art:"cjnissin", k:"company", e:"🍜", u:"https://www.nissin.com/jp/", w:"日清食品ホールディングス", mc:"約8500億円", f:1, d:"世界で初めてのインスタントラーメン、チキンラーメンとカップヌードルを生んだ会社。発明したのは安藤百福さん。"},
-  {n:"カプコン", c:"日本・大阪府大阪市", r:"かぷこん", art:"cjcapcom", k:"company", e:"👾", u:"https://www.capcom.co.jp/", w:"カプコン", mc:"約1兆9000億円", f:1, d:"ストリートファイターやモンスターハンター、ロックマン、逆転裁判などのゲームをつくる大阪の会社。"},
-  {n:"JR東日本", c:"日本・東京都渋谷区", r:"じぇいあーるひがしにほん", art:"cjjreast", k:"company", e:"🚃", u:"https://www.jreast.co.jp/", w:"東日本旅客鉄道", mc:"約3兆9000億円", f:1, d:"関東や東北などで電車や新幹線を走らせる鉄道会社。山手線やはやぶさ、交通系ICカードのSuicaもこの会社のもの。"},
-  {n:"日本航空", c:"日本・東京都品川区", r:"にほんこうくう", art:"cjjal", k:"company", e:"✈️", u:"https://www.jal.com/ja/", w:"日本航空", mc:"約1兆3000億円", f:1, d:"日本を代表する航空会社のひとつ。赤い鶴のマークをつけた飛行機で、国内や世界の都市へ人や荷物を運んでいる。"},
-  {n:"ANAホールディングス", c:"日本・東京都港区", r:"えーえぬえーほーるでぃんぐす", art:"cjana", k:"company", e:"🛫", u:"https://www.ana.co.jp/group/", w:"ANAホールディングス", mc:"約1兆3000億円", f:1, d:"青い飛行機の全日空(ANA)をもつ会社。新しい旅客機ボーイング787で、世界で初めてお客さんを乗せて飛んだ。"},
-  {n:"東映アニメーション", c:"日本・東京都中野区", r:"とうえいあにめーしょん", art:"cjtoeianimation", k:"company", e:"📺", u:"https://corp.toei-anim.co.jp/ja/", w:"東映アニメーション", mc:"約6100億円", f:1, d:"プリキュアやドラゴンボール、ワンピースのアニメをつくる会社。日本でとても古いアニメ会社のひとつ。"},
-  {n:"明治ホールディングス", c:"日本・東京都中央区", r:"めいじほーるでぃんぐす", art:"cjmeiji", k:"company", e:"🍫", u:"https://www.meiji.com/", w:"明治ホールディングス", mc:"約1兆2000億円", d:"明治ミルクチョコレートやきのこの山、ヨーグルトなどをつくる会社。病院で使う薬の会社も仲間にもっている。"},
-  {n:"スクウェア・エニックス・ホールディングス", c:"日本・東京都新宿区", r:"すくうぇあえにっくすほーるでぃんぐす", art:"cjsquareenix", k:"company", e:"⚔️", u:"https://www.hd.square-enix.com/jpn/", w:"スクウェア・エニックス・ホールディングス", mc:"約1兆1000億円", d:"ドラゴンクエストやファイナルファンタジー、キングダムハーツなどのゲームで知られる会社。本社は東京の新宿にある。"},
-  {n:"コナミグループ", c:"日本・東京都中央区", r:"こなみぐるーぷ", art:"cjkonami", k:"company", e:"🃏", u:"https://www.konami.com/ja/", w:"コナミグループ", mc:"約2兆9000億円", d:"桃太郎電鉄やパワフルプロ野球、遊戯王のカードで知られる会社。スポーツクラブの運営もしている。"},
-  {n:"セガサミーホールディングス", c:"日本・東京都品川区", r:"せがさみーほーるでぃんぐす", art:"cjsegasammy", k:"company", e:"🦔", u:"https://www.segasammy.co.jp/ja/", w:"セガサミーホールディングス", mc:"約6600億円", d:"青いハリネズミのソニックやぷよぷよで知られるセガをもつ会社。セガはむかしゲーム機のメガドライブもつくっていた。"},
-  {n:"コーエーテクモホールディングス", c:"日本・神奈川県横浜市", r:"こーえーてくもほーるでぃんぐす", art:"cjkoeitecmo", k:"company", e:"🏯", u:"https://www.koeitecmo.co.jp/", w:"コーエーテクモホールディングス", mc:"約5600億円", d:"信長の野望や三國志、真・三國無双など、歴史を題材にしたゲームで有名な会社。本社は神奈川県横浜市にある。"},
-  {n:"KADOKAWA", c:"日本・東京都千代田区", r:"かどかわ", art:"cjkadokawa", k:"company", e:"📚", u:"https://group.kadokawa.co.jp/", w:"KADOKAWA", mc:"約5400億円", d:"本や雑誌、マンガ、ライトノベル、アニメ、ゲームまでつくる出版社。動画サイトのニコニコ動画を運営する会社も仲間。"},
-  {n:"東宝", c:"日本・東京都千代田区", r:"とうほう", art:"cjtoho", k:"company", e:"🦖", u:"https://www.toho.co.jp/", w:"東宝", mc:"約1兆3000億円", d:"怪獣ゴジラの映画をつくった映画会社。全国に映画館のTOHOシネマズをもち、アニメや演劇もつくっている。"},
-  {n:"NTT", c:"日本・東京都千代田区", r:"えぬてぃーてぃー", art:"cjntt", k:"company", e:"☎️", u:"https://group.ntt/jp/", w:"NTT", mc:"約14兆3000億円", d:"日本の電話やインターネットの土台をつくる会社。携帯電話のドコモもこのグループで、光ファイバーの回線を全国に広げた。"},
-  {n:"KDDI", c:"日本・東京都千代田区", r:"けーでぃーでぃーあい", art:"cjkddi", k:"company", e:"📱", u:"https://www.kddi.com/", w:"KDDI", mc:"約11兆3000億円", d:"携帯電話のauやUQモバイルを運営する通信会社。海の底に通信ケーブルをしく仕事もしている。"},
-  {n:"ソフトバンク", c:"日本・東京都港区", r:"そふとばんく", art:"cjsoftbank", k:"company", e:"🐕", u:"https://www.softbank.jp/corp/", w:"ソフトバンク", mc:"約11兆8000億円", d:"携帯電話のソフトバンクやワイモバイルを運営する通信会社。白い犬のお父さんが出てくるCMで知られる。"},
-  {n:"ソフトバンクグループ", c:"日本・東京都港区", r:"そふとばんくぐるーぷ", art:"cjsoftbankgroup", k:"company", e:"💻", u:"https://group.softbank/", w:"ソフトバンクグループ", mc:"約35兆1000億円", d:"孫正義さんがつくった会社。世界中の新しいIT企業にお金を出していて、スマホの頭脳を設計するアームという会社ももっている。"},
-  {n:"楽天グループ", c:"日本・東京都世田谷区", r:"らくてんぐるーぷ", art:"cjrakuten", k:"company", e:"🛍️", u:"https://corp.rakuten.co.jp/", w:"楽天グループ", mc:"約1兆5000億円", d:"インターネットの買い物サイト楽天市場をつくった会社。携帯電話や銀行、プロ野球の東北楽天ゴールデンイーグルスもある。"},
-  {n:"LINEヤフー", c:"日本・東京都千代田区", r:"らいんやふー", art:"cjlycorp", k:"company", e:"💬", u:"https://www.lycorp.co.jp/ja/", w:"LINEヤフー", mc:"約3兆5000億円", d:"連絡アプリのLINEと、検索サイトのYahoo! JAPANを運営する会社。ニュースや地図、買い物のサービスもある。"},
-  {n:"メルカリ", c:"日本・東京都港区", r:"めるかり", art:"cjmercari", k:"company", e:"📦", u:"https://about.mercari.com/", w:"メルカリ", mc:"約5900億円", d:"使わなくなった物をスマホで売ったり買ったりできるフリマアプリ、メルカリをつくった会社。"},
-  {n:"日立製作所", c:"日本・東京都千代田区", r:"ひたちせいさくしょ", art:"cjhitachi", k:"company", e:"🚄", u:"https://www.hitachi.co.jp/", w:"日立製作所", mc:"約24兆8000億円", d:"1910年に茨城県日立市の鉱山で生まれた会社。鉄道の車両や発電所、コンピューターのしくみをつくっている。"},
-  {n:"キヤノン", c:"日本・東京都大田区", r:"きやのん", art:"cjcanon", k:"company", e:"📷", u:"https://global.canon/ja/", w:"キヤノン", mc:"約3兆9000億円", d:"カメラやプリンター、コピー機をつくる会社。社名は観音さまにちなんでつけた、むかしのカメラの名前カンノンから生まれた。"},
-  {n:"富士フイルムホールディングス", c:"日本・東京都港区", r:"ふじふいるむほーるでぃんぐす", art:"cjfujifilm", k:"company", e:"🎞️", u:"https://holdings.fujifilm.com/ja", w:"富士フイルムホールディングス", mc:"約4兆1000億円", d:"写真のフィルムの会社から始まり、いまはチェキやデジタルカメラのほか、薬や化粧品、病院の機械までつくっている。"},
-  {n:"ニコン", c:"日本・東京都品川区", r:"にこん", art:"cjnikon", k:"company", e:"🔭", u:"https://www.jp.nikon.com/", w:"ニコン", mc:"約6100億円", d:"カメラやレンズ、けんび鏡で世界に知られる会社。宇宙飛行士が宇宙で使うカメラや、半導体をつくる機械もつくっている。"},
-  {n:"カシオ計算機", c:"日本・東京都渋谷区", r:"かしおけいさんき", art:"cjcasio", k:"company", e:"⌚", u:"https://www.casio.co.jp/", w:"カシオ計算機", mc:"約4800億円", d:"電卓から始まった会社。こわれにくい腕時計のG-SHOCKや電子辞書、電子キーボードで知られる。"},
-  {n:"セイコーエプソン", c:"日本・長野県諏訪市", r:"せいこーえぷそん", art:"cjepson", k:"company", e:"🖨️", u:"https://www.epson.jp/", w:"セイコーエプソン", mc:"約1兆1000億円", d:"プリンターやプロジェクターをつくる会社。長野県の諏訪湖のほとりに本社があり、時計づくりから始まった。"},
-  {n:"セイコーグループ", c:"日本・東京都中央区", r:"せいこーぐるーぷ", art:"cjseiko", k:"company", e:"🕰️", u:"https://www.seiko.co.jp/", w:"セイコーグループ", mc:"約8500億円", d:"腕時計のセイコーで知られる会社。1969年に世界で初めてクオーツ式の腕時計を売り出した。本社は東京の銀座。"},
-  {n:"ヤマハ", c:"日本・静岡県浜松市", r:"やまは", art:"cjyamaha", k:"company", e:"🎹", u:"https://www.yamaha.com/ja/", w:"ヤマハ", mc:"約5600億円", d:"ピアノやギター、ドラムなどをつくる、世界でいちばん大きな楽器の会社。音楽教室も開いていて、本社は浜松市にある。"},
-  {n:"ヤマハ発動機", c:"日本・静岡県磐田市", r:"やまははつどうき", art:"cjyamahamotor", k:"company", e:"🚤", u:"https://global.yamaha-motor.com/jp/", w:"ヤマハ発動機", mc:"約1兆8000億円", d:"バイクやボート、水上バイク、電動アシスト自転車をつくる会社。楽器のヤマハから分かれて生まれた。"},
-  {n:"スズキ", c:"日本・静岡県浜松市", r:"すずき", art:"cjsuzuki", k:"company", e:"🚙", u:"https://www.suzuki.co.jp/", w:"スズキ", mc:"約3兆8000億円", d:"軽自動車やバイクをつくる浜松の会社。インドでは車がとてもよく売れていて、ジムニーやスイフトが人気。"},
-  {n:"SUBARU", c:"日本・東京都渋谷区", r:"すばる", art:"cjsubaru", k:"company", e:"✨", u:"https://www.subaru.co.jp/", w:"SUBARU", mc:"約1兆9000億円", d:"車をつくる会社。社名はおうし座の星の集まり、すばるから来ていて、マークにも六つの星がえがかれている。"},
-  {n:"マツダ", c:"日本・広島県安芸郡府中町", r:"まつだ", art:"cjmazda", k:"company", e:"🏎️", u:"https://www.mazda.co.jp/", w:"マツダ", mc:"約7300億円", d:"広島の自動車メーカー。オープンカーのロードスターや、ロータリーエンジンの車で知られる。"},
-  {n:"日産自動車", c:"日本・神奈川県横浜市", r:"にっさんじどうしゃ", art:"cjnissan", k:"company", e:"🚘", u:"https://www.nissan-global.com/JP/", w:"日産自動車", mc:"約1兆1000億円", d:"横浜に本社がある自動車メーカー。電気自動車のリーフを早くから売り出し、セレナやノートも人気。"},
-  {n:"デンソー", c:"日本・愛知県刈谷市", r:"でんそー", art:"cjdenso", k:"company", e:"⚙️", u:"https://www.denso.com/jp/ja/", w:"デンソー", mc:"約4兆8000億円", d:"車の部品をつくる世界でも大きな会社。QRコードは、この会社の部署が工場で部品を管理するために発明した。"},
-  {n:"ブリヂストン", c:"日本・東京都中央区", r:"ぶりぢすとん", art:"cjbridgestone", k:"company", e:"🛞", u:"https://www.bridgestone.co.jp/", w:"ブリヂストン", mc:"約4兆7000億円", d:"車や飛行機のタイヤで世界トップクラスの会社。社名は創業者の石橋さんの名字を英語にして、ならべかえたもの。"},
-  {n:"シマノ", c:"日本・大阪府堺市", r:"しまの", art:"cjshimano", k:"company", e:"🚲", u:"https://www.shimano.com/ja/", w:"シマノ", mc:"約1兆5000億円", d:"自転車のギアやブレーキなどの部品で世界中に知られる会社。つり道具もつくっていて、本社は大阪府堺市にある。"},
-  {n:"アシックス", c:"日本・兵庫県神戸市", r:"あしっくす", art:"cjasics", k:"company", e:"👟", u:"https://corp.asics.com/jp", w:"アシックス", mc:"約2兆9000億円", d:"ランニングシューズやスポーツ用品をつくる神戸の会社。社名は健全な体に健全な心をという意味のラテン語の頭文字から。"},
-  {n:"ダイキン工業", c:"日本・大阪府大阪市", r:"だいきんこうぎょう", art:"cjdaikin", k:"company", e:"❄️", u:"https://www.daikin.co.jp/", w:"ダイキン工業", mc:"約5兆8000億円", d:"エアコンで世界トップクラスの会社。大阪に本社があり、水のしずくのキャラクター、ぴちょんくんが有名。"},
-  {n:"コマツ", c:"日本・東京都港区", r:"こまつ", art:"cjkomatsu", k:"company", e:"🚜", u:"https://home.komatsu/jp/", w:"小松製作所", mc:"約6兆8000億円", d:"ブルドーザーやショベルカーなど、工事で使う大きな機械をつくる会社。名前は石川県の小松市で生まれたことから。"},
-  {n:"クボタ", c:"日本・大阪府大阪市", r:"くぼた", art:"cjkubota", k:"company", e:"🌾", u:"https://www.kubota.co.jp/", w:"クボタ", mc:"約3兆1000億円", d:"トラクターや田植え機、コンバインなど農業の機械をつくる会社。水道管やポンプもつくり、世界の農業をささえている。"},
-  {n:"三菱重工業", c:"日本・東京都千代田区", r:"みつびしじゅうこうぎょう", art:"cjmhi", k:"company", e:"🚀", u:"https://www.mhi.com/jp/", w:"三菱重工業", mc:"約13兆1000億円", d:"ロケットのH-IIAやH3、発電所の機械、大きな船などをつくる会社。日本のものづくりを長く引っぱってきた。"},
-  {n:"川崎重工業", c:"日本・兵庫県神戸市", r:"かわさきじゅうこうぎょう", art:"cjkhi", k:"company", e:"🚅", u:"https://www.khi.co.jp/", w:"川崎重工業", mc:"約2兆1000億円", d:"新幹線の車両やカワサキのバイク、飛行機の部品、船などをつくる会社。液体の水素を運ぶ船を世界で初めてつくった。"},
-  {n:"マキタ", c:"日本・愛知県安城市", r:"まきた", art:"cjmakita", k:"company", e:"🔧", u:"https://www.makita.co.jp/", w:"マキタ", mc:"約1兆4000億円", d:"電動ドリルや電動のこぎり、充電式のそうじ機など、電動工具で世界的な会社。本社は愛知県安城市にある。"},
-  {n:"TOTO", c:"日本・福岡県北九州市", r:"とーと", art:"cjtoto", k:"company", e:"🚽", u:"https://jp.toto.com/", w:"TOTO", mc:"約9700億円", d:"トイレや洗面所、おふろをつくる会社。おしりを洗うトイレのウォシュレットで有名で、本社は北九州市にある。"},
-  {n:"ニトリホールディングス", c:"日本・北海道札幌市", r:"にとりほーるでぃんぐす", art:"cjnitori", k:"company", e:"🛋️", u:"https://www.nitorihd.co.jp/", w:"ニトリホールディングス", mc:"約1兆7000億円", d:"家具やカーテン、食器などをお手ごろな値段で売るお店ニトリを運営する会社。北海道の札幌で生まれた。"},
-  {n:"良品計画", c:"日本・東京都文京区", r:"りょうひんけいかく", art:"cjryohin", k:"company", e:"📓", u:"https://www.ryohin-keikaku.jp/", w:"良品計画", mc:"約2兆2000億円", d:"無印良品のお店を運営する会社。シンプルな服や文房具、家具、食べ物まで、くらしの物をたくさん売っている。"},
-  {n:"ABCマート", c:"日本・東京都渋谷区", r:"えーびーしーまーと", art:"cjabcmart", k:"company", e:"👞", u:"https://www.abc-mart.co.jp/", w:"ABCマート", mc:"約6800億円", d:"靴のお店ABCマートを運営する会社。スニーカーやスポーツシューズ、ブーツなどを全国のお店で売っている。"},
-  {n:"ゼンショーホールディングス", c:"日本・東京都港区", r:"ぜんしょーほーるでぃんぐす", art:"cjzensho", k:"company", e:"🍚", u:"https://www.zensho.co.jp/", w:"ゼンショーホールディングス", mc:"約1兆6000億円", d:"牛丼のすき家や回転ずしのはま寿司、ココスなどのお店を運営する会社。外食の会社として日本でいちばん大きい。"},
-  {n:"すかいらーくホールディングス", c:"日本・東京都武蔵野市", r:"すかいらーくほーるでぃんぐす", art:"cjskylark", k:"company", e:"🍝", u:"https://www.skylark.co.jp/", w:"すかいらーくホールディングス", mc:"約7200億円", d:"ファミリーレストランのガストやバーミヤン、ジョナサンなどを運営する会社。本社は東京都武蔵野市にある。"},
-  {n:"山崎製パン", c:"日本・東京都千代田区", r:"やまざきせいぱん", art:"cjyamazaki", k:"company", e:"🍞", u:"https://www.yamazakipan.co.jp/", w:"山崎製パン", mc:"約7200億円", d:"食パンやランチパック、菓子パンをつくる日本でいちばん大きなパンの会社。春のパンまつりが有名。"},
-  {n:"味の素", c:"日本・東京都中央区", r:"あじのもと", art:"cjajinomoto", k:"company", e:"🧂", u:"https://www.ajinomoto.co.jp/", w:"味の素", mc:"約4兆8000億円", d:"うまみ調味料の味の素をつくった会社。うまみは池田菊苗博士が昆布だしから見つけ、この会社の始まりにつながった。"},
-  {n:"キッコーマン", c:"日本・千葉県野田市", r:"きっこーまん", art:"cjkikkoman", k:"company", e:"🍶", u:"https://www.kikkoman.com/jp/", w:"キッコーマン", mc:"約1兆5000億円", d:"しょうゆで世界的に有名な会社。千葉県野田市に本社があり、赤いキャップの食卓用しょうゆびんが知られている。"},
-  {n:"キユーピー", c:"日本・東京都渋谷区", r:"きゆーぴー", art:"cjkewpie", k:"company", e:"🥚", u:"https://www.kewpie.com/", w:"キユーピー", mc:"約6000億円", d:"日本で初めてマヨネーズをつくって売った会社。キユーピー人形のマークが目印で、ドレッシングもつくっている。"},
-  {n:"キリンホールディングス", c:"日本・東京都中野区", r:"きりんほーるでぃんぐす", art:"cjkirin", k:"company", e:"🦒", u:"https://www.kirinholdings.com/jp/", w:"キリンホールディングス", mc:"約2兆3000億円", d:"ビールや午後の紅茶などの飲み物をつくる会社。キリンという名前は、中国の伝説の動物、麒麟から来ている。"},
-  {n:"アサヒグループホールディングス", c:"日本・東京都墨田区", r:"あさひぐるーぷほーるでぃんぐす", art:"cjasahi", k:"company", e:"🥤", u:"https://www.asahigroup-holdings.com/", w:"アサヒグループホールディングス", mc:"約2兆4000億円", d:"ビールのスーパードライや、カルピス、三ツ矢サイダーなどをつくる会社。本社は東京の浅草の近くにある。"},
-  {n:"サントリービバレッジ&フード", c:"日本・東京都港区", r:"さんとりーびばれっじあんどふーど", art:"cjsuntory", k:"company", e:"💧", u:"https://www.suntory.co.jp/softdrink/", w:"サントリービバレッジ&フード", mc:"約1兆4000億円", d:"天然水やBOSS、伊右衛門、なっちゃんなどの飲み物をつくる会社。サントリーのグループの一員。"},
-  {n:"日本ハム", c:"日本・大阪府大阪市", r:"にっぽんはむ", art:"cjnipponham", k:"company", e:"🌭", u:"https://www.nipponham.co.jp/", w:"日本ハム", mc:"約5500億円", d:"ハムやソーセージのシャウエッセンなどをつくる大阪の会社。プロ野球の北海道日本ハムファイターズの親会社。"},
-  {n:"東洋水産", c:"日本・東京都港区", r:"とうようすいさん", art:"cjtoyosuisan", k:"company", e:"🦊", u:"https://www.maruchan.co.jp/", w:"東洋水産", mc:"約9300億円", d:"マルちゃんのブランドで、赤いきつねと緑のたぬきや、マルちゃん正麺などをつくる会社。"},
-  {n:"花王", c:"日本・東京都中央区", r:"かおう", art:"cjkao", k:"company", e:"🧴", u:"https://www.kao.com/jp/", w:"花王", mc:"約3兆2000億円", d:"せっけんやシャンプー、洗剤のアタック、紙おむつのメリーズなどをつくる会社。月の顔のマークが目印。"},
-  {n:"資生堂", c:"日本・東京都中央区", r:"しせいどう", art:"cjshiseido", k:"company", e:"💄", u:"https://corp.shiseido.com/jp/", w:"資生堂", mc:"約1兆4000億円", d:"1872年に東京の銀座で薬局として始まった化粧品の会社。いまは世界の多くの国で化粧品を売っている。"},
-  {n:"ユニ・チャーム", c:"日本・東京都港区", r:"ゆにちゃーむ", art:"cjunicharm", k:"company", e:"👶", u:"https://www.unicharm.co.jp/", w:"ユニ・チャーム", mc:"約1兆6000億円", d:"紙おむつのムーニーやマミーポコ、マスク、ペットのトイレ用品などをつくる会社。"},
-  {n:"ライオン", c:"日本・東京都台東区", r:"らいおん", art:"cjlion", k:"company", e:"🪥", u:"https://www.lion.co.jp/", w:"ライオン (企業)", mc:"約4800億円", d:"歯みがきのクリニカや、洗剤のトップ、ハンドソープのキレイキレイをつくる会社。本社は東京の蔵前にある。"},
-  {n:"小林製薬", c:"日本・大阪府大阪市", r:"こばやしせいやく", art:"cjkobayashi", k:"company", e:"🧊", u:"https://www.kobayashi.co.jp/", w:"小林製薬", mc:"約5100億円", d:"あったらいいなをかたちにする会社。熱さまシートやブルーレット、消臭元など、名前がおもしろい商品が多い。"},
-  {n:"武田薬品工業", c:"日本・東京都中央区", r:"たけだやくひんこうぎょう", art:"cjtakeda", k:"company", e:"💊", u:"https://www.takeda.com/ja-jp/", w:"武田薬品工業", mc:"約9兆5000億円", d:"江戸時代に大阪の道修町で薬の店として始まった、日本でいちばん大きな薬の会社。世界中で薬を売っている。"},
-  {n:"大塚ホールディングス", c:"日本・東京都千代田区", r:"おおつかほーるでぃんぐす", art:"cjotsuka", k:"company", e:"🧃", u:"https://www.otsuka.com/jp/", w:"大塚ホールディングス", mc:"約5兆9000億円", d:"ポカリスエットやカロリーメイト、オロナミンCをつくる大塚製薬をもつ会社。病院の薬もつくっている。"},
-  {n:"三菱UFJフィナンシャル・グループ", c:"日本・東京都千代田区", r:"みつびしゆーえふじぇいふぃなんしゃるぐるーぷ", art:"cjmufg", k:"company", e:"🏦", u:"https://www.mufg.jp/", w:"三菱UFJフィナンシャル・グループ", mc:"約41兆6000億円", d:"日本でいちばん大きな銀行のグループ。三菱UFJ銀行を中心に、世界の多くの国で銀行の仕事をしている。"},
-  {n:"三井住友フィナンシャルグループ", c:"日本・東京都千代田区", r:"みついすみともふぃなんしゃるぐるーぷ", art:"cjsmfg", k:"company", e:"💳", u:"https://www.smfg.co.jp/", w:"三井住友フィナンシャルグループ", mc:"約26兆5000億円", d:"三井住友銀行を中心にした銀行のグループ。クレジットカードの三井住友カードもこのグループの仲間。"},
-  {n:"みずほフィナンシャルグループ", c:"日本・東京都千代田区", r:"みずほふぃなんしゃるぐるーぷ", art:"cjmizuho", k:"company", e:"🌾", u:"https://www.mizuho-fg.co.jp/", w:"みずほフィナンシャルグループ", mc:"約21兆1000億円", d:"みずほ銀行を中心にした銀行のグループ。みずほは、みずみずしい稲の穂という意味の古い言葉。"},
-  {n:"日本郵政", c:"日本・東京都千代田区", r:"にっぽんゆうせい", art:"cjjapanpost", k:"company", e:"📮", u:"https://www.japanpost.jp/", w:"日本郵政", mc:"約7兆1000億円", d:"郵便局やゆうちょ銀行、かんぽ生命をまとめる会社。全国に約2万4000の郵便局があり、手紙や荷物を届けている。"},
-  {n:"三菱商事", c:"日本・東京都千代田区", r:"みつびししょうじ", art:"cjmitsubishicorp", k:"company", e:"🌏", u:"https://www.mitsubishicorp.com/jp/ja/", w:"三菱商事", mc:"約17兆8000億円", d:"世界中でエネルギーや食べ物、金属などの取り引きをする総合商社。コンビニのローソンの経営にもかかわっている。"},
-  {n:"伊藤忠商事", c:"日本・大阪府大阪市", r:"いとうちゅうしょうじ", art:"cjitochu", k:"company", e:"🧵", u:"https://www.itochu.co.jp/ja/", w:"伊藤忠商事", mc:"約15兆5000億円", d:"伊藤忠兵衛が麻の布を売る商売から始めた総合商社。コンビニのファミリーマートの親会社でもある。"},
-  {n:"JR東海", c:"日本・愛知県名古屋市", r:"じぇいあーるとうかい", art:"cjjrcentral", k:"company", e:"🚅", u:"https://jr-central.co.jp/", w:"東海旅客鉄道", mc:"約3兆6000億円", d:"東京から新大阪まで東海道新幹線を走らせる鉄道会社。リニア中央新幹線の建設もすすめている。"},
-  {n:"JR西日本", c:"日本・大阪府大阪市", r:"じぇいあーるにしにほん", art:"cjjrwest", k:"company", e:"🚆", u:"https://www.westjr.co.jp/", w:"西日本旅客鉄道", mc:"約1兆4000億円", d:"近畿や中国、北陸地方で電車を走らせる鉄道会社。山陽新幹線や、交通系ICカードのICOCAもこの会社のもの。"},
-  {n:"東京メトロ", c:"日本・東京都中央区", r:"とうきょうめとろ", art:"cjtokyometro", k:"company", e:"🚇", u:"https://www.tokyometro.jp/", w:"東京地下鉄", mc:"約8900億円", d:"東京の地下鉄を走らせる会社。銀座線は、アジアで初めての地下鉄として1927年に開業した。"},
-  {n:"阪急阪神ホールディングス", c:"日本・大阪府大阪市", r:"はんきゅうはんしんほーるでぃんぐす", art:"cjhankyuhanshin", k:"company", e:"🐯", u:"https://www.hankyu-hanshin.co.jp/", w:"阪急阪神ホールディングス", mc:"約1兆円", d:"大阪と神戸、京都を結ぶ阪急電鉄と阪神電車をもつ会社。宝塚歌劇団やプロ野球の阪神タイガースも仲間。"},
-  {n:"ヤマトホールディングス", c:"日本・東京都中央区", r:"やまとほーるでぃんぐす", art:"cjyamato", k:"company", e:"🐈‍⬛", u:"https://www.yamato-hd.co.jp/", w:"ヤマトホールディングス", mc:"約6400億円", d:"クロネコヤマトの宅急便で知られる会社。家から家へ荷物を届ける宅急便は、1976年にこの会社が始めた。"},
-  {n:"日本製鉄", c:"日本・東京都千代田区", r:"にっぽんせいてつ", art:"cjnipponsteel", k:"company", e:"🏗️", u:"https://www.nipponsteel.com/", w:"日本製鉄", mc:"約3兆6000億円", d:"鉄をつくる日本でいちばん大きな会社。車や橋、ビルに使われる鋼を、大きな溶鉱炉でつくっている。"},
-  {n:"ENEOSホールディングス", c:"日本・東京都千代田区", r:"えねおすほーるでぃんぐす", art:"cjeneos", k:"company", e:"⛽", u:"https://www.hd.eneos.co.jp/", w:"ENEOSホールディングス", mc:"約3兆8000億円", d:"ガソリンスタンドのENEOSで知られる石油の会社。ガソリンや灯油をつくり、水素ステーションも運営している。"},
-  {n:"キーエンス", c:"日本・大阪府大阪市", r:"きーえんす", art:"cjkeyence", k:"company", e:"📡", u:"https://www.keyence.co.jp/", w:"キーエンス", mc:"約19兆3000億円", d:"工場で使うセンサーや計測器をつくる大阪の会社。自分では工場をもたず、アイデアと開発で勝負している。"},
-  {n:"村田製作所", c:"日本・京都府長岡京市", r:"むらたせいさくしょ", art:"cjmurata", k:"company", e:"🔌", u:"https://www.murata.com/ja-jp", w:"村田製作所", mc:"約14兆6000億円", d:"スマホやパソコンの中で使われる小さな電子部品をつくる京都の会社。部品の中には、ごまつぶよりずっと小さい物もある。"},
-  {n:"京セラ", c:"日本・京都府京都市", r:"きょうせら", art:"cjkyocera", k:"company", e:"🔪", u:"https://www.kyocera.co.jp/", w:"京セラ", mc:"約4兆8000億円", d:"セラミックの部品やスマホ、太陽電池、セラミックの包丁をつくる京都の会社。稲盛和夫さんがつくった。"},
-  {n:"オムロン", c:"日本・京都府京都市", r:"おむろん", art:"cjomron", k:"company", e:"🌡️", u:"https://www.omron.com/jp/ja/", w:"オムロン", mc:"約1兆2000億円", d:"体温計や血圧計をつくる京都の会社。駅の自動改札機を世界で初めて使えるようにした会社のひとつ。"},
-  {n:"東京エレクトロン", c:"日本・東京都港区", r:"とうきょうえれくとろん", art:"cjtokyoelectron", k:"company", e:"🧪", u:"https://www.tel.co.jp/", w:"東京エレクトロン", mc:"約25兆7000億円", d:"半導体をつくるための大きな装置をつくる会社。スマホやパソコンのチップづくりに欠かせない機械を世界に届けている。"},
-  {n:"サイバーエージェント", c:"日本・東京都渋谷区", r:"さいばーえーじぇんと", art:"cjcyberagent", k:"company", e:"🐎", u:"https://www.cyberagent.co.jp/", w:"サイバーエージェント", mc:"約6300億円", d:"インターネットテレビのABEMAや、ゲームのウマ娘をつくる会社のグループ。本社は東京の渋谷にある。"},
-  {n:"大林組", c:"日本・東京都港区", r:"おおばやしぐみ", art:"cjobayashi", k:"company", e:"🗼", u:"https://www.obayashi.co.jp/", w:"大林組", mc:"約2兆1000億円", d:"東京スカイツリーや大きなビル、トンネルなどをつくる建設会社。宇宙エレベーターの計画も発表している。"},
-  {n:"セコム", c:"日本・東京都渋谷区", r:"せこむ", art:"cjsecom", k:"company", e:"🛡️", u:"https://www.secom.co.jp/", w:"セコム", mc:"約2兆6000億円", d:"日本で初めての警備会社。家や会社に機械をつけて、何かあると警備員がかけつける安全のしくみをつくった。"},
-  {n:"三菱電機", c:"日本・東京都千代田区", r:"みつびしでんき", art:"cjmelco", k:"company", e:"🛰️", u:"https://www.mitsubishielectric.co.jp/", w:"三菱電機", mc:"約10兆7000億円", d:"エアコンの霧ヶ峰やエレベーター、人工衛星までつくる電気の会社。日本の気象衛星ひまわりもつくった。"},
-  {n:"アップル", c:"アメリカ・カリフォルニア州クパチーノ", r:"あっぷる", art:"cwapple", k:"company", e:"📱", u:"https://www.apple.com/jp/", w:"Apple", mc:"約784兆2000億円", f:1, d:"iPhoneやMacをつくるアメリカの会社。1976年にスティーブ・ジョブズたちがガレージで始めた。"},
-  {n:"アルファベット", c:"アメリカ・カリフォルニア州マウンテンビュー", r:"あるふぁべっと", art:"cwalphabet", k:"company", e:"🔍", u:"https://abc.xyz/investor/", w:"Alphabet", mc:"約657兆2000億円", f:1, d:"検索のGoogleや動画のYouTube、スマホのAndroidを持つ会社。Googleは1998年に大学院生2人が始めた。"},
-  {n:"マイクロソフト", c:"アメリカ・ワシントン州レドモンド", r:"まいくろそふと", art:"cwmicrosoft", k:"company", e:"💻", u:"https://www.microsoft.com/ja-jp/", w:"マイクロソフト", mc:"約603兆8000億円", f:1, d:"パソコンのWindowsやOffice、ゲーム機のXboxをつくる会社。1975年にビル・ゲイツたちが始めた。"},
-  {n:"アマゾン・ドット・コム", c:"アメリカ・ワシントン州シアトル", r:"あまぞんどっとこむ", art:"cwamazon", k:"company", e:"📦", u:"https://www.aboutamazon.jp/", w:"Amazon.com", mc:"約424兆3000億円", f:1, d:"インターネットで何でも売る通販の会社。はじめは本だけを売っていた。データを預かるクラウドの仕事も大きい。"},
-  {n:"エヌビディア", c:"アメリカ・カリフォルニア州サンタクララ", r:"えぬびでぃあ", art:"cwnvidia", k:"company", e:"🎮", u:"https://www.nvidia.com/ja-jp/", w:"NVIDIA", mc:"約856兆2000億円", f:1, d:"ゲームの絵やAIの計算に使う半導体GPUをつくる会社。AIブームで世界有数の大きな会社になった。"},
-  {n:"メタ・プラットフォームズ", c:"アメリカ・カリフォルニア州メンローパーク", r:"めたぷらっとふぉーむず", art:"cwmeta", k:"company", e:"👍", u:"https://about.meta.com/", w:"Meta (企業)", mc:"約301兆7000億円", d:"FacebookやInstagram、WhatsAppを運営する会社。2021年にフェイスブックから今の名前に変わった。"},
-  {n:"テスラ", c:"アメリカ・テキサス州オースティン", r:"てすら", art:"cwtesla", k:"company", e:"🚗", u:"https://www.tesla.com/ja_jp", w:"テスラ (会社)", mc:"約231兆5000億円", f:1, d:"電気で走る自動車をつくる会社。家で電気をためる蓄電池や、太陽光パネルもつくっている。"},
-  {n:"スペースX", c:"アメリカ・テキサス州スターベース", r:"すぺーすえっくす", art:"cwspacex", k:"company", e:"🚀", u:"https://www.spacex.com/", w:"スペースX", mc:"約308兆6000億円", f:1, d:"宇宙ロケットをつくる会社。打ち上げたロケットを着陸させて、もう一度使うことに成功した。"},
-  {n:"ウォルマート", c:"アメリカ・アーカンソー州ベントンビル", r:"うぉるまーと", art:"cwwalmart", k:"company", e:"🛒", u:"https://corporate.walmart.com/", w:"ウォルマート", mc:"約135兆円", d:"世界でいちばん売り上げが大きいスーパーマーケットの会社。アメリカじゅうに大きなお店がある。"},
-  {n:"コカ・コーラ", c:"アメリカ・ジョージア州アトランタ", r:"こかこーら", art:"cwcocacola", k:"company", e:"🥤", u:"https://www.coca-cola.com/jp/ja", w:"ザ コカ・コーラ カンパニー", mc:"約59兆5000億円", f:1, d:"炭酸飲料コカ・コーラの会社。1886年にアトランタの薬局で売られた飲み物がはじまり。"},
-  {n:"マクドナルド", c:"アメリカ・イリノイ州シカゴ", r:"まくどなるど", art:"cwmcdonalds", k:"company", e:"🍔", u:"https://corporate.mcdonalds.com/", w:"マクドナルド", mc:"約26兆4000億円", f:1, d:"ハンバーガーのお店を世界100か国以上に広げた会社。本社はシカゴにある。"},
-  {n:"ウォルト・ディズニー", c:"アメリカ・カリフォルニア州バーバンク", r:"うぉるとでぃずにー", art:"cwdisney", k:"company", e:"🏰", u:"https://thewaltdisneycompany.com/", w:"ウォルト・ディズニー・カンパニー", mc:"約28兆9000億円", f:1, d:"ミッキーマウスの映画やテーマパークの会社。ピクサーやマーベル、スター・ウォーズの映画もつくる。"},
-  {n:"ナイキ", c:"アメリカ・オレゴン州ビーバートン", r:"ないき", art:"cwnike", k:"company", e:"👟", u:"https://www.nike.com/jp/", w:"ナイキ", mc:"約8兆4000億円", f:1, d:"スポーツのくつや服をつくる会社。社名はギリシャ神話の勝利の女神ニケから取った。"},
-  {n:"ネットフリックス", c:"アメリカ・カリフォルニア州ロスガトス", r:"ねっとふりっくす", art:"cwnetflix", k:"company", e:"🎬", u:"https://about.netflix.com/ja", w:"Netflix", mc:"約46兆7000億円", f:1, d:"インターネットで映画やドラマを配信する会社。むかしはDVDを郵便で貸し出していた。"},
-  {n:"スターバックス", c:"アメリカ・ワシントン州シアトル", r:"すたーばっくす", art:"cwstarbucks", k:"company", e:"☕", u:"https://www.starbucks.co.jp/", w:"スターバックス", mc:"約17兆円", f:1, d:"コーヒーのお店を世界中に持つ会社。1971年にシアトルで1号店が開いた。"},
-  {n:"ペプシコ", c:"アメリカ・ニューヨーク州パーチェス", r:"ぺぷしこ", art:"cwpepsico", k:"company", e:"🥤", u:"https://www.pepsico.com/", w:"ペプシコ", mc:"約27兆7000億円", f:1, d:"炭酸飲料のペプシや、ポテトチップスのレイズ、ドリトスをつくる食べものと飲みものの会社。"},
-  {n:"ボーイング", c:"アメリカ・バージニア州アーリントン", r:"ぼーいんぐ", art:"cwboeing", k:"company", e:"✈️", u:"https://www.boeing.com/", w:"ボーイング", mc:"約24兆6000億円", d:"旅客機の747や787をつくる会社。宇宙船や人工衛星もつくっている。"},
-  {n:"コストコ", c:"アメリカ・ワシントン州イサクア", r:"こすとこ", art:"cwcostco", k:"company", e:"🛒", u:"https://www.costco.co.jp/", w:"コストコ", mc:"約64兆5000億円", d:"会員になると買い物できる倉庫のような大きなお店。大きな箱のまとめ売りで安く売る。"},
-  {n:"インテル", c:"アメリカ・カリフォルニア州サンタクララ", r:"いんてる", art:"cwintel", k:"company", e:"🖥️", u:"https://www.intel.co.jp/", w:"インテル", mc:"約102兆4000億円", d:"パソコンの頭脳CPUをつくる会社。1968年に始まり、半導体の歴史を切り開いてきた。"},
-  {n:"AMD", c:"アメリカ・カリフォルニア州サンタクララ", r:"えーえむでぃー", art:"cwamd", k:"company", e:"🖥️", u:"https://www.amd.com/ja.html", w:"AMD", mc:"約162兆2000億円", d:"パソコンやゲーム機の頭脳になる半導体をつくる会社。PlayStationやXboxにも使われている。"},
-  {n:"ジョンソン・エンド・ジョンソン", c:"アメリカ・ニュージャージー州ニューブランズウィック", r:"じょんそんえんどじょんそん", art:"cwjnj", k:"company", e:"💊", u:"https://www.jnj.co.jp/", w:"ジョンソン・エンド・ジョンソン", mc:"約103兆円", d:"薬や手術の道具をつくる大きな会社。1886年にジョンソン家の3人の兄弟が始めた。"},
-  {n:"プロクター・アンド・ギャンブル", c:"アメリカ・オハイオ州シンシナティ", r:"ぷろくたーあんどぎゃんぶる", art:"cwpg", k:"company", e:"🧴", u:"https://jp.pg.com/", w:"プロクター・アンド・ギャンブル", mc:"約53兆5000億円", d:"洗剤や紙おむつのパンパース、シャンプーをつくる会社。ろうそくと石けんの店から始まった。"},
-  {n:"エクソンモービル", c:"アメリカ・テキサス州スプリング", r:"えくそんもーびる", art:"cwexxon", k:"company", e:"⛽", u:"https://corporate.exxonmobil.com/", w:"エクソンモービル", mc:"約104兆円", d:"石油や天然ガスをほり出して、ガソリンなどにする会社。本社はヒューストンの近くにある。"},
-  {n:"ビザ", c:"アメリカ・カリフォルニア州サンフランシスコ", r:"びざ", art:"cwvisa", k:"company", e:"💳", u:"https://www.visa.co.jp/", w:"Visa", mc:"約108兆7000億円", d:"カードで支払うしくみを世界中で運営する会社。カードそのものは銀行などが発行している。"},
-  {n:"ウーバー", c:"アメリカ・カリフォルニア州サンフランシスコ", r:"うーばー", art:"cwuber", k:"company", e:"🚕", u:"https://www.uber.com/jp/ja/", w:"Uber", mc:"約22兆4000億円", d:"スマホのアプリで車を呼べるしくみの会社。料理を届けるウーバーイーツも運営している。"},
-  {n:"ロブロックス", c:"アメリカ・カリフォルニア州サンマテオ", r:"ろぶろっくす", art:"cwroblox", k:"company", e:"🎮", u:"https://corp.roblox.com/", w:"Roblox", mc:"約5兆2000億円", f:1, d:"みんなが作ったゲームで遊べる場を運営する会社。自分でゲームを作って公開することもできる。"},
-  {n:"フォード・モーター", c:"アメリカ・ミシガン州ディアボーン", r:"ふぉーどもーたー", art:"cwford", k:"company", e:"🚙", u:"https://corporate.ford.com/", w:"フォード・モーター", mc:"約8兆円", d:"ヘンリー・フォードが1903年に始めた自動車会社。流れ作業で車を安くつくり、世界に広めた。"},
-  {n:"イーライリリー", c:"アメリカ・インディアナ州インディアナポリス", r:"いーらいりりー", art:"cwlilly", k:"company", e:"💊", u:"https://www.lilly.com/jp/", w:"イーライリリー・アンド・カンパニー", mc:"約166兆2000億円", d:"病気を治す薬をつくる会社。糖尿病の薬インスリンを、世界ではじめて大量につくった。"},
-  {n:"TSMC", c:"台湾・新竹", r:"てぃーえすえむしー", art:"cwtsmc", k:"company", e:"🔬", u:"https://www.tsmc.com/japanese", w:"台湾積体電路製造", mc:"約368兆2000億円", d:"世界中の会社から注文を受けて半導体をつくる会社。熊本県にも工場をつくった。"},
-  {n:"鴻海精密工業", c:"台湾・新北", r:"ほんはいせいみつこうぎょう", art:"cwfoxconn", k:"company", e:"🏭", u:"https://www.honhai.com/", w:"鴻海精密工業", mc:"約17兆4000億円", d:"iPhoneなどの電子機器を組み立てる世界最大の会社。フォックスコンとも呼ばれ、シャープの親会社。"},
-  {n:"メディアテック", c:"台湾・新竹", r:"めでぃあてっく", art:"cwmediatek", k:"company", e:"📶", u:"https://www.mediatek.com/", w:"メディアテック", mc:"約41兆9000億円", d:"スマホやテレビの頭脳になる半導体を設計する会社。自分の工場は持たず、設計を専門にしている。"},
-  {n:"サムスン電子", c:"韓国・水原", r:"さむすんでんし", art:"cwsamsung", k:"company", e:"📱", u:"https://www.samsung.com/jp/", w:"サムスン電子", mc:"約217兆8000億円", f:1, d:"スマホのGalaxyやテレビ、半導体メモリーをつくる韓国でいちばん大きな会社。"},
-  {n:"SKハイニックス", c:"韓国・利川", r:"えすけーはいにっくす", art:"cwskhynix", k:"company", e:"💾", u:"https://www.skhynix.com/", w:"SKハイニックス", mc:"約153兆6000億円", d:"コンピューターの記憶に使う半導体メモリーをつくる会社。AI向けのメモリーで強い。"},
-  {n:"ヒョンデ", c:"韓国・ソウル", r:"ひょんで", art:"cwhyundai", k:"company", e:"🚗", u:"https://www.hyundai.com/jp/", w:"現代自動車", mc:"約10兆8000億円", d:"韓国でいちばん大きな自動車会社。現代自動車とも書く。日本では電気自動車を売っている。"},
-  {n:"キア", c:"韓国・ソウル", r:"きあ", art:"cwkia", k:"company", e:"🚙", u:"https://worldwide.kia.com/", w:"起亜", mc:"約5兆2000億円", d:"韓国の自動車会社。ヒョンデと同じグループで、世界中に車を売っている。漢字では起亜と書く。"},
-  {n:"LG電子", c:"韓国・ソウル", r:"えるじーでんし", art:"cwlg", k:"company", e:"📺", u:"https://www.lg.com/jp/", w:"LGエレクトロニクス", mc:"約4兆4000億円", d:"テレビや冷蔵庫、洗濯機などをつくる韓国の電機会社。うすくて画面のきれいな有機ELテレビで知られる。"},
-  {n:"テンセント", c:"中国・深圳", r:"てんせんと", art:"cwtencent", k:"company", e:"💬", u:"https://www.tencent.com/", w:"テンセント", mc:"約79兆2000億円", d:"中国で多くの人が使うチャットアプリWeChatや、たくさんのゲームを運営する会社。"},
-  {n:"アリババ", c:"中国・杭州", r:"ありばば", art:"cwalibaba", k:"company", e:"🛍️", u:"https://www.alibabagroup.com/", w:"アリババグループ", mc:"約43兆円", d:"中国最大級の通販サイトを運営する会社。名前はアラビアンナイトのお話から取った。"},
-  {n:"BYD", c:"中国・深圳", r:"びーわいでぃー", art:"cwbyd", k:"company", e:"🔋", u:"https://www.byd.com/jp", w:"比亜迪", mc:"約18兆円", d:"電気自動車と電池をつくる中国の会社。はじめは携帯電話の電池をつくっていた。"},
-  {n:"シャオミ", c:"中国・北京", r:"しゃおみ", art:"cwxiaomi", k:"company", e:"📱", u:"https://www.mi.com/jp/", w:"Xiaomi", mc:"約13兆7000億円", d:"スマホや家電、電気自動車までつくる中国の会社。名前の小米は、中国語で穀物のアワのこと。"},
-  {n:"CATL", c:"中国・寧徳", r:"しーえーてぃーえる", art:"cwcatl", k:"company", e:"🔋", u:"https://www.catl.com/", w:"寧徳時代新能源科技", mc:"約31兆9000億円", d:"電気自動車に使う電池をつくる会社。車用の電池では世界でいちばん多くつくっている。"},
-  {n:"バイドゥ", c:"中国・北京", r:"ばいどぅ", art:"cwbaidu", k:"company", e:"🔍", u:"https://home.baidu.com/", w:"百度", mc:"約4兆7000億円", d:"中国でいちばん使われている検索サイトの会社。漢字では百度と書く。自動運転やAIの研究もしている。"},
-  {n:"ネットイース", c:"中国・杭州", r:"ねっといーす", art:"cwnetease", k:"company", e:"🎮", u:"https://www.neteasegames.com/", w:"網易", mc:"約11兆6000億円", d:"中国の大きなゲーム会社。スマホゲームや、メールのサービスを運営している。漢字では網易と書く。"},
-  {n:"レノボ", c:"中国・北京", r:"れのぼ", art:"cwlenovo", k:"company", e:"💻", u:"https://www.lenovo.com/jp/ja/", w:"レノボ", mc:"約9兆3000億円", d:"パソコンを世界でいちばん多く売る会社。IBMのパソコン部門を買って大きくなった。"},
-  {n:"エアビーアンドビー", c:"アメリカ・カリフォルニア州サンフランシスコ", r:"えあびーあんどびー", art:"cwairbnb", k:"company", e:"🏠", u:"https://www.airbnb.jp/", w:"Airbnb", mc:"約14兆9000億円", d:"旅行で人の家や部屋に泊まれるしくみを運営する会社。はじめは自分たちの部屋にエアマットをしいて人を泊めた。"},
-  {n:"リライアンス・インダストリーズ", c:"インド・ムンバイ", r:"りらいあんすいんだすとりーず", art:"cwreliance", k:"company", e:"⛽", u:"https://www.ril.com/", w:"リライアンス・インダストリーズ", mc:"約27兆3000億円", d:"石油化学から携帯電話、スーパーまで手がけるインド最大級の会社。"},
-  {n:"タタ・コンサルタンシー・サービシズ", c:"インド・ムンバイ", r:"たたこんさるたんしーさーびしず", art:"cwtcs", k:"company", e:"💻", u:"https://www.tcs.com/", w:"タタ・コンサルタンシー・サービシズ", mc:"約12兆4000億円", d:"世界中の会社のコンピューターのしくみをつくるインドの会社。タタ・グループの一員。"},
-  {n:"インフォシス", c:"インド・ベンガルール", r:"いんふぉしす", art:"cwinfosys", k:"company", e:"💻", u:"https://www.infosys.com/", w:"インフォシス", mc:"約6兆7000億円", d:"インドの大きなIT会社。1981年に7人の技術者が始めた。ベンガルールに広いキャンパスがある。"},
-  {n:"アーム", c:"イギリス・ケンブリッジ", r:"あーむ", art:"cwarm", k:"company", e:"📱", u:"https://www.arm.com/", w:"ARMホールディングス", mc:"約52兆2000億円", d:"スマホのほとんどに使われる半導体の設計図をつくる会社。ソフトバンクグループが大株主。"},
-  {n:"シェル", c:"イギリス・ロンドン", r:"しぇる", art:"cwshell", k:"company", e:"🐚", u:"https://www.shell.com/", w:"シェル (企業)", mc:"約43兆円", d:"石油や天然ガスの会社。貝のマークは、創業者の父が貝がらを売る商売をしていたことにちなむ。"},
-  {n:"アストラゼネカ", c:"イギリス・ケンブリッジ", r:"あすとらぜねか", art:"cwastrazeneca", k:"company", e:"💊", u:"https://www.astrazeneca.co.jp/", w:"アストラゼネカ", mc:"約40兆7000億円", d:"がんや心臓の病気などの薬をつくる会社。新型コロナウイルスのワクチンもつくった。"},
-  {n:"ユニリーバ", c:"イギリス・ロンドン", r:"ゆにりーば", art:"cwunilever", k:"company", e:"🧼", u:"https://www.unilever.co.jp/", w:"ユニリーバ", mc:"約21兆2000億円", d:"石けんのダヴやシャンプーのラックスなど、毎日使う日用品をたくさんつくる会社。"},
-  {n:"ロールス・ロイス", c:"イギリス・ロンドン", r:"ろーるすろいす", art:"cwrollsroyce", k:"company", e:"✈️", u:"https://www.rolls-royce.com/", w:"ロールス・ロイス・ホールディングス", mc:"約25兆4000億円", d:"飛行機のジェットエンジンをつくる会社。高級車のロールス・ロイスは、いまは別の会社がつくっている。"},
-  {n:"BP", c:"イギリス・ロンドン", r:"びーぴー", art:"cwbp", k:"company", e:"⛽", u:"https://www.bp.com/", w:"BP", mc:"約17兆9000億円", d:"石油や天然ガスの会社。緑と黄色の花のようなマークのガソリンスタンドを持っている。"},
-  {n:"HSBC", c:"イギリス・ロンドン", r:"えいちえすびーしー", art:"cwhsbc", k:"company", e:"🏦", u:"https://www.hsbc.com/", w:"HSBCホールディングス", mc:"約54兆4000億円", d:"世界の多くの国にお店を持つ銀行。もとは香港と上海の銀行として始まった。"},
-  {n:"LVMH", c:"フランス・パリ", r:"えるぶいえむえいち", art:"cwlvmh", k:"company", e:"👜", u:"https://www.lvmh.com/", w:"LVMH", mc:"約35兆1000億円", d:"ルイ・ヴィトンやディオール、ティファニーなど、高級ブランドをたくさん持つ会社。"},
-  {n:"ロレアル", c:"フランス・クリシー", r:"ろれある", art:"cwloreal", k:"company", e:"💄", u:"https://www.loreal.com/ja-jp/japan/", w:"ロレアル", mc:"約36兆5000億円", d:"世界最大の化粧品の会社。ランコムやメイベリンなど、多くのブランドを持つ。"},
-  {n:"エルメス", c:"フランス・パリ", r:"えるめす", art:"cwhermes", k:"company", e:"👜", u:"https://www.hermes.com/jp/ja/", w:"エルメス", mc:"約25兆3000億円", d:"高級なバッグやスカーフをつくる会社。1837年に馬の道具をつくる工房として始まった。"},
-  {n:"トタルエナジーズ", c:"フランス・クルブヴォア", r:"とたるえなじーず", art:"cwtotal", k:"company", e:"⛽", u:"https://totalenergies.com/", w:"トタルエナジーズ", mc:"約31兆6000億円", d:"石油やガス、太陽光や風力の電気をつくるフランスの会社。"},
-  {n:"ミシュラン", c:"フランス・クレルモンフェラン", r:"みしゅらん", art:"cwmichelin", k:"company", e:"🛞", u:"https://www.michelin.co.jp/", w:"ミシュラン", mc:"約4兆2000億円", d:"自動車のタイヤをつくる会社。レストランを星で評価するガイドブックでも有名。"},
-  {n:"ダノン", c:"フランス・パリ", r:"だのん", art:"cwdanone", k:"company", e:"🥛", u:"https://www.danone.co.jp/", w:"ダノン", mc:"約6兆9000億円", d:"ヨーグルトや、ミネラルウォーターのエビアンをつくるフランスの食品会社。"},
-  {n:"エアバス", c:"フランス・トゥールーズ", r:"えあばす", art:"cwairbus", k:"company", e:"✈️", u:"https://www.airbus.com/", w:"エアバス", mc:"約27兆3000億円", d:"旅客機をつくるヨーロッパの会社。2階建ての大きな旅客機A380をつくった。"},
-  {n:"SAP", c:"ドイツ・ヴァルドルフ", r:"えすえーぴー", art:"cwsap", k:"company", e:"💼", u:"https://www.sap.com/japan/", w:"SAP (企業)", mc:"約38兆3000億円", d:"会社のお金や人、ものの管理に使うソフトをつくる、ヨーロッパ最大のソフトウェア会社。"},
-  {n:"シーメンス", c:"ドイツ・ミュンヘン", r:"しーめんす", art:"cwsiemens", k:"company", e:"🏭", u:"https://www.siemens.com/jp/ja.html", w:"シーメンス", mc:"約39兆円", d:"工場の機械や鉄道、医療機器をつくる会社。1847年に電信機の会社として始まった。"},
-  {n:"アディダス", c:"ドイツ・ヘルツォーゲンアウラッハ", r:"あでぃだす", art:"cwadidas", k:"company", e:"⚽", u:"https://www.adidas-group.com/", w:"アディダス", mc:"約4兆6000億円", f:1, d:"スポーツ用品の会社。3本線のマークが目印。サッカーのワールドカップの公式ボールをつくっている。"},
-  {n:"BMW", c:"ドイツ・ミュンヘン", r:"びーえむだぶりゅー", art:"cwbmw", k:"company", e:"🚗", u:"https://www.bmw.co.jp/", w:"BMW", mc:"約6兆円", d:"ドイツの自動車会社。はじめは飛行機のエンジンをつくっていた。MINIもこの会社のブランド。"},
-  {n:"メルセデス・ベンツ", c:"ドイツ・シュトゥットガルト", r:"めるせですべんつ", art:"cwmercedes", k:"company", e:"🚘", u:"https://www.mercedes-benz.co.jp/", w:"メルセデス・ベンツ・グループ", mc:"約7兆1000億円", d:"高級車をつくるドイツの会社。1886年にカール・ベンツがガソリン自動車を発明した。"},
-  {n:"フォルクスワーゲン", c:"ドイツ・ヴォルフスブルク", r:"ふぉるくすわーげん", art:"cwvolkswagen", k:"company", e:"🚙", u:"https://www.volkswagen.co.jp/", w:"フォルクスワーゲン", mc:"約6兆5000億円", d:"ドイツの自動車会社。名前はドイツ語で国民の車という意味。アウディもこのグループ。"},
-  {n:"ポルシェ", c:"ドイツ・シュトゥットガルト", r:"ぽるしぇ", art:"cwporsche", k:"company", e:"🏎️", u:"https://www.porsche.com/japan/", w:"ポルシェ", mc:"約7兆5000億円", d:"スポーツカーをつくる会社。フェルディナント・ポルシェが始めた。911という車が有名。"},
-  {n:"BASF", c:"ドイツ・ルートヴィヒスハーフェン", r:"びーえーえすえふ", art:"cwbasf", k:"company", e:"🧪", u:"https://www.basf.com/jp/ja", w:"BASF", mc:"約8兆円", d:"世界最大級の化学の会社。プラスチックや肥料、塗料の原料などをつくる。"},
-  {n:"ネスレ", c:"スイス・ヴヴェイ", r:"ねすれ", art:"cwnestle", k:"company", e:"☕", u:"https://www.nestle.co.jp/", w:"ネスレ", mc:"約37兆7000億円", f:1, d:"キットカットやネスカフェをつくる世界最大の食品会社。赤ちゃんのための栄養食から始まった。"},
-  {n:"ロシュ", c:"スイス・バーゼル", r:"ろしゅ", art:"cwroche", k:"company", e:"💊", u:"https://www.roche.com/", w:"ロッシュ", mc:"約56兆8000億円", d:"がんの薬や、病気を調べる検査薬をつくる会社。日本の中外製薬もグループの一員。"},
-  {n:"ノバルティス", c:"スイス・バーゼル", r:"のばるてぃす", art:"cwnovartis", k:"company", e:"💊", u:"https://www.novartis.com/jp-ja/", w:"ノバルティス", mc:"約43兆6000億円", d:"薬をつくるスイスの会社。1996年に2つの会社が合わさってできた。"},
-  {n:"ASML", c:"オランダ・フェルトホーフェン", r:"えーえすえむえる", art:"cwasml", k:"company", e:"🔬", u:"https://www.asml.com/", w:"ASML", mc:"約105兆5000億円", d:"半導体の細かい回路を光で焼きつける装置をつくる会社。最先端の装置をつくれるのは世界でここだけ。"},
-  {n:"フィリップス", c:"オランダ・アムステルダム", r:"ふぃりっぷす", art:"cwphilips", k:"company", e:"🪥", u:"https://www.philips.co.jp/", w:"フィリップス", mc:"約3兆8000億円", d:"電動歯ブラシや医療機器をつくる会社。1891年に電球をつくる会社として始まった。"},
-  {n:"ノボノルディスク", c:"デンマーク・バウスヴェア", r:"のぼのるでぃすく", art:"cwnovonordisk", k:"company", e:"💉", u:"https://www.novonordisk.co.jp/", w:"ノボノルディスク", mc:"約27兆円", d:"糖尿病の治療に使うインスリンや、肥満症の薬をつくるデンマークの会社。"},
-  {n:"マースク", c:"デンマーク・コペンハーゲン", r:"まーすく", art:"cwmaersk", k:"company", e:"🚢", u:"https://www.maersk.com/", w:"A.P. モラー・マースク", mc:"約8兆円", d:"たくさんのコンテナを船で世界中に運ぶ会社。水色の船と白い星のマークが目印。"},
-  {n:"ヴェスタス", c:"デンマーク・オーフス", r:"ゔぇすたす", art:"cwvestas", k:"company", e:"🌬️", u:"https://www.vestas.com/", w:"ベスタス", mc:"約4兆7000億円", d:"風で電気をつくる大きな風車をつくる会社。世界中に風力発電の風車を立てている。"},
-  {n:"スポティファイ", c:"スウェーデン・ストックホルム", r:"すぽてぃふぁい", art:"cwspotify", k:"company", e:"🎧", u:"https://www.spotify.com/jp/", w:"Spotify", mc:"約16兆5000億円", d:"スマホで音楽やポッドキャストを聞ける配信サービスの会社。2006年にスウェーデンで生まれた。"},
-  {n:"ボルボ", c:"スウェーデン・ヨーテボリ", r:"ぼるぼ", art:"cwvolvo", k:"company", e:"🚚", u:"https://www.volvogroup.com/", w:"ボルボ", mc:"約10兆5000億円", d:"トラックやバス、工事の機械をつくる会社。乗用車のボルボは、いまは別の会社がつくっている。"},
-  {n:"エリクソン", c:"スウェーデン・ストックホルム", r:"えりくそん", art:"cwericsson", k:"company", e:"📡", u:"https://www.ericsson.com/", w:"エリクソン", mc:"約4兆9000億円", d:"携帯電話の電波を送る基地局の機械をつくる会社。1876年に電信機の修理の店から始まった。"},
-  {n:"ノキア", c:"フィンランド・エスポー", r:"のきあ", art:"cwnokia", k:"company", e:"📡", u:"https://www.nokia.com/ja-jp/", w:"ノキア", mc:"約9兆2000億円", d:"通信の機械をつくる会社。むかしは携帯電話で世界一だった。はじまりは製紙工場。"},
-  {n:"インディテックス", c:"スペイン・アルテイショ", r:"いんでぃてっくす", art:"cwinditex", k:"company", e:"👗", u:"https://www.inditex.com/", w:"インディテックス", mc:"約29兆8000億円", d:"服のお店ZARAを世界中に持つ会社。新しい服をとても早くお店に並べることで知られる。"},
-  {n:"サンタンデール", c:"スペイン・ボアディージャデルモンテ", r:"さんたんでーる", art:"cwsantander", k:"company", e:"🏦", u:"https://www.santander.com/", w:"サンタンデール銀行", mc:"約32兆9000億円", d:"スペインの大きな銀行。ヨーロッパや南アメリカの多くの国にお店がある。"},
-  {n:"フェラーリ", c:"イタリア・マラネッロ", r:"ふぇらーり", art:"cwferrari", k:"company", e:"🏎️", u:"https://www.ferrari.com/ja-JP", w:"フェラーリ", mc:"約11兆4000億円", d:"赤いスポーツカーをつくる会社。F1に1950年から出つづけている、いちばん歴史のあるチームを持つ。"},
-  {n:"サウジアラムコ", c:"サウジアラビア・ダーラン", r:"さうじあらむこ", art:"cwaramco", k:"company", e:"🛢️", u:"https://www.aramco.com/", w:"サウジアラムコ", mc:"約261兆7000億円", d:"サウジアラビアの国の石油会社。世界でいちばん多く石油をほり出している会社のひとつ。"},
-  {n:"エクイノール", c:"ノルウェー・スタヴァンゲル", r:"えくいのーる", art:"cwequinor", k:"company", e:"🛢️", u:"https://www.equinor.com/", w:"エクイノール", mc:"約15兆8000億円", d:"北海で石油やガスをほり出すノルウェーの会社。海の上の風力発電も手がけている。"},
-  {n:"テバ・ファーマシューティカル", c:"イスラエル・テルアビブ", r:"てばふぁーましゅーてぃかる", art:"cwteva", k:"company", e:"💊", u:"https://www.tevapharm.com/", w:"テバ・ファーマシューティカル・インダストリーズ", mc:"約7兆2000億円", d:"ジェネリック医薬品(後発薬)を世界でいちばん多くつくる会社のひとつ。"},
-  {n:"ショッピファイ", c:"カナダ・オタワ", r:"しょっぴふぁい", art:"cwshopify", k:"company", e:"🛍️", u:"https://www.shopify.com/jp", w:"Shopify", mc:"約28兆8000億円", d:"だれでもインターネットのお店を開けるしくみをつくる会社。はじめはスノーボードを売るお店だった。"},
-  {n:"ロイヤル・バンク・オブ・カナダ", c:"カナダ・トロント", r:"ろいやるばんくおぶかなだ", art:"cwrbc", k:"company", e:"🏦", u:"https://www.rbc.com/", w:"カナダロイヤル銀行", mc:"約44兆1000億円", d:"カナダでいちばん大きな銀行。1864年にハリファックスで生まれた。"},
-  {n:"ハーシー", c:"アメリカ・ペンシルベニア州ハーシー", r:"はーしー", art:"cwhershey", k:"company", e:"🍫", u:"https://www.thehersheycompany.com/", w:"ザ・ハーシー・カンパニー", mc:"約5兆3000億円", d:"チョコレートのお菓子をつくる会社。本社のある町の名前もハーシーで、チョコレート工場の町として知られる。"},
-  {n:"BHP", c:"オーストラリア・メルボルン", r:"びーえいちぴー", art:"cwbhp", k:"company", e:"⛏️", u:"https://www.bhp.com/", w:"BHPグループ", mc:"約34兆円", d:"鉄鉱石や銅をほり出す世界最大級の資源の会社。日本の製鉄会社にも鉄鉱石を送っている。"},
-  {n:"アトラシアン", c:"オーストラリア・シドニー", r:"あとらしあん", art:"cwatlassian", k:"company", e:"💼", u:"https://www.atlassian.com/ja", w:"アトラシアン", mc:"約7兆5000億円", d:"チームで仕事を進めるためのソフトJiraやTrelloをつくる会社。シドニーの大学の同級生2人が始めた。"},
-  {n:"ペトロブラス", c:"ブラジル・リオデジャネイロ", r:"ぺとろぶらす", art:"cwpetrobras", k:"company", e:"🛢️", u:"https://petrobras.com.br/", w:"ペトロブラス", mc:"約20兆7000億円", d:"ブラジルの石油会社。海の深いところから石油をほり出す技術にすぐれている。"},
-  {n:"ヴァーレ", c:"ブラジル・リオデジャネイロ", r:"ゔぁーれ", art:"cwvale", k:"company", e:"⛏️", u:"https://vale.com/", w:"ヴァーレ", mc:"約9兆1000億円", d:"鉄鉱石をほり出す世界最大級の会社。日本にも船で鉄鉱石をたくさん運んでいる。"},
-  {n:"メルカドリブレ", c:"ウルグアイ・モンテビデオ", r:"めるかどりぶれ", art:"cwmercadolibre", k:"company", e:"🛒", u:"https://www.mercadolibre.com/", w:"メルカド・リブレ", mc:"約14兆円", d:"中南米でいちばん大きな通販サイトを運営する会社。1999年にアルゼンチンで生まれた。"},
-  {n:"モンデリーズ", c:"アメリカ・イリノイ州シカゴ", r:"もんでりーず", art:"cwmondelez", k:"company", e:"🍪", u:"https://www.mondelezinternational.com/", w:"モンデリーズ・インターナショナル", mc:"約12兆2000億円", d:"クッキーのオレオやチョコレートのミルカ、トブラローネなどのお菓子をつくる会社。"},
-  {n:"DBS銀行", c:"シンガポール・マリーナベイ", r:"でぃーびーえすぎんこう", art:"cwdbs", k:"company", e:"🏦", u:"https://www.dbs.com/", w:"DBS銀行", mc:"約27兆4000億円", d:"シンガポールでいちばん大きな銀行。東南アジアを中心に、たくさんのお店を持っている。"},
-  {n:"ナスパーズ", c:"南アフリカ・ケープタウン", r:"なすぱーず", art:"cwnaspers", k:"company", e:"📰", u:"https://www.naspers.com/", w:"ナスパーズ", mc:"約5兆2000億円", d:"南アフリカのメディアとインターネットの会社。早くからテンセントに出資したことで知られる。"},
-  {n:"ビングループ", c:"ベトナム・ハノイ", r:"びんぐるーぷ", art:"cwvingroup", k:"company", e:"🏙️", u:"https://vingroup.net/", w:"ビングループ", mc:"約10兆6000億円", d:"ベトナム最大級の会社。電気自動車のVinFastや、マンション、遊園地などを手がける。"}
+
 );
-Object.assign(LATLON, {cjtoyota:[35.08,137.16], cjnintendo:[34.97,135.76], cjsony:[35.63,139.74], cjhonda:[35.67,139.73], cjbandainamco:[35.65,139.75], cjsanrio:[35.62,139.73], cjorientalland:[35.64,139.88], cjfastretailing:[34.18,131.47], cjpanasonic:[34.74,135.59], cjyakult:[35.65,139.76], cjsevenandi:[35.69,139.74], cjaeon:[35.65,140.04], cjmcdonalds:[35.69,139.69], cjnissin:[35.69,139.71], cjcapcom:[34.68,135.51], cjjreast:[35.69,139.7], cjjal:[35.62,139.75], cjana:[35.66,139.76], cjtoeianimation:[35.71,139.67], cjmeiji:[35.68,139.77], cjsquareenix:[35.69,139.71], cjkonami:[35.67,139.77], cjsegasammy:[35.62,139.73], cjkoeitecmo:[35.55,139.64], cjkadokawa:[35.7,139.75], cjtoho:[35.67,139.76], cjntt:[35.69,139.77], cjkddi:[35.7,139.75], cjsoftbank:[35.66,139.76], cjsoftbankgroup:[35.66,139.76], cjrakuten:[35.61,139.63], cjlycorp:[35.68,139.74], cjmercari:[35.66,139.73], cjhitachi:[35.68,139.77], cjcanon:[35.57,139.69], cjfujifilm:[35.67,139.73], cjnikon:[35.6,139.72], cjcasio:[35.68,139.68], cjepson:[36.04,138.11], cjseiko:[35.67,139.77], cjyamaha:[34.72,137.73], cjyamahamotor:[34.72,137.85], cjsuzuki:[34.68,137.7], cjsubaru:[35.65,139.71], cjmazda:[34.38,132.51], cjnissan:[35.46,139.63], cjdenso:[34.99,137.0], cjbridgestone:[35.68,139.77], cjshimano:[34.57,135.48], cjasics:[34.69,135.19], cjdaikin:[34.7,135.5], cjkomatsu:[35.66,139.76], cjkubota:[34.66,135.49], cjmhi:[35.68,139.76], cjkhi:[34.68,135.18], cjmakita:[34.95,137.08], cjtoto:[33.88,130.88], cjnitori:[43.1,141.35], cjryohin:[35.71,139.75], cjabcmart:[35.66,139.7], cjzensho:[35.63,139.74], cjskylark:[35.71,139.56], cjyamazaki:[35.69,139.78], cjajinomoto:[35.68,139.77], cjkikkoman:[35.95,139.87], cjkewpie:[35.66,139.7], cjkirin:[35.71,139.66], cjasahi:[35.71,139.8], cjsuntory:[35.64,139.75], cjnipponham:[34.7,135.5], cjtoyosuisan:[35.63,139.74], cjkao:[35.68,139.78], cjshiseido:[35.67,139.76], cjunicharm:[35.65,139.74], cjlion:[35.7,139.79], cjkobayashi:[34.69,135.5], cjtakeda:[35.69,139.78], cjotsuka:[35.69,139.77], cjmufg:[35.68,139.76], cjsmfg:[35.68,139.76], cjmizuho:[35.69,139.77], cjjapanpost:[35.69,139.77], cjmitsubishicorp:[35.68,139.76], cjitochu:[34.7,135.5], cjjrcentral:[35.17,136.88], cjjrwest:[34.7,135.5], cjtokyometro:[35.68,139.79], cjhankyuhanshin:[34.7,135.5], cjyamato:[35.67,139.77], cjnipponsteel:[35.68,139.76], cjeneos:[35.69,139.77], cjkeyence:[34.74,135.53], cjmurata:[34.93,135.7], cjkyocera:[34.95,135.75], cjomron:[34.99,135.76], cjtokyoelectron:[35.67,139.74], cjcyberagent:[35.66,139.7], cjobayashi:[35.63,139.74], cjsecom:[35.67,139.71], cjmelco:[35.68,139.76], cwapple:[37.33,-122.01], cwalphabet:[37.42,-122.08], cwmicrosoft:[47.64,-122.13], cwamazon:[47.62,-122.34], cwnvidia:[37.37,-121.96], cwmeta:[37.48,-122.15], cwtesla:[30.22,-97.62], cwspacex:[25.99,-97.19], cwwalmart:[36.37,-94.21], cwcocacola:[33.77,-84.4], cwmcdonalds:[41.88,-87.66], cwdisney:[34.16,-118.32], cwnike:[45.51,-122.83], cwnetflix:[37.26,-121.96], cwstarbucks:[47.58,-122.34], cwpepsico:[41.04,-73.7], cwboeing:[38.86,-77.05], cwcostco:[47.55,-122.05], cwintel:[37.39,-121.96], cwamd:[37.38,-121.97], cwjnj:[40.5,-74.45], cwpg:[39.1,-84.51], cwexxon:[30.09,-95.43], cwvisa:[37.78,-122.39], cwuber:[37.77,-122.39], cwroblox:[37.56,-122.28], cwford:[42.32,-83.21], cwlilly:[39.76,-86.16], cwtsmc:[24.77,121.01], cwfoxconn:[25.06,121.37], cwmediatek:[24.78,121.02], cwsamsung:[37.26,127.05], cwskhynix:[37.28,127.44], cwhyundai:[37.46,127.04], cwkia:[37.46,127.04], cwlg:[37.53,126.93], cwtencent:[22.54,113.93], cwalibaba:[30.28,120.03], cwbyd:[22.69,114.36], cwxiaomi:[40.03,116.3], cwcatl:[26.66,119.55], cwbaidu:[40.05,116.3], cwnetease:[30.19,120.19], cwlenovo:[40.05,116.29], cwairbnb:[37.77,-122.41], cwreliance:[18.93,72.82], cwtcs:[18.93,72.83], cwinfosys:[12.85,77.66], cwarm:[52.18,0.13], cwshell:[51.5,-0.12], cwastrazeneca:[52.18,0.14], cwunilever:[51.51,-0.11], cwrollsroyce:[51.53,-0.12], cwbp:[51.51,-0.14], cwhsbc:[51.5,-0.02], cwlvmh:[48.87,2.31], cwloreal:[48.9,2.3], cwhermes:[48.87,2.32], cwtotal:[48.89,2.24], cwmichelin:[45.78,3.08], cwdanone:[48.88,2.3], cwairbus:[43.63,1.37], cwsap:[49.29,8.64], cwsiemens:[48.14,11.57], cwadidas:[49.57,10.89], cwbmw:[48.18,11.56], cwmercedes:[48.78,9.24], cwvolkswagen:[52.43,10.79], cwporsche:[48.83,9.15], cwbasf:[49.49,8.43], cwnestle:[46.46,6.85], cwroche:[47.56,7.6], cwnovartis:[47.57,7.58], cwasml:[51.41,5.42], cwphilips:[52.34,4.87], cwnovonordisk:[55.76,12.45], cwmaersk:[55.69,12.6], cwvestas:[56.12,10.2], cwspotify:[59.34,18.06], cwvolvo:[57.71,11.97], cwericsson:[59.4,17.95], cwnokia:[60.17,24.83], cwinditex:[43.3,-8.51], cwsantander:[40.41,-3.87], cwferrari:[44.53,10.86], cwaramco:[26.32,50.13], cwequinor:[58.97,5.73], cwteva:[32.11,34.83], cwshopify:[45.42,-75.7], cwrbc:[43.65,-79.38], cwhershey:[40.29,-76.65], cwbhp:[-37.82,144.96], cwatlassian:[-33.87,151.21], cwpetrobras:[-22.91,-43.17], cwvale:[-22.94,-43.18], cwmercadolibre:[-34.9,-56.16], cwmondelez:[41.89,-87.63], cwdbs:[1.28,103.85], cwnaspers:[-33.92,18.42], cwvingroup:[21.04,105.89]});
+Object.assign(LATLON, {});
 /* SPOTS-MORE-END */
 const ROUNDS = 10;
 /* 2つの旅。日本の名所は 場所が「日本」ではじまるもの */
@@ -1162,9 +770,8 @@ const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filt
                 capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)),
                 /* 宇宙フリック旅行(key の あたま sol / sky / cos)・からだフリック旅行(bon mus / org sys / cel) */
                 usolar: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sol")), usky: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sky")), ucos: SPOTS.filter(q => q.k === "space" && q.art.startsWith("cos")),
-                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")),
-                /* 株式フリック旅行(けいくん 2026-09-26): 日本の会社・世界の会社。本社に📍 */
-                jcomp: SPOTS.filter(q => q.k === "company" && isJapan(q)), wcomp: SPOTS.filter(q => q.k === "company" && !isJapan(q)) };
+                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")) };
+if(typeof KABU === "object") Object.assign(POOLS, KABU.pools);
 /* 日本一周マップの 決めごと(tools/make_japan_map.py と 同じ数字)。本土は 東経128.5〜146.5 / 北緯29.8〜46。
    南西諸島(北緯28度より南)は 左上の わく(東経122.5〜 / 北緯27.5〜)に 同じ縮尺で */
 const JAPAN_MAP = { lon0:128.5, lat1:46, kx:20, k:25, w:360, h:405, ix:6, iy:6, ilon0:122.5, ilat1:27.5 };
@@ -1201,10 +808,8 @@ MAPS.ucos = { svg:true, maps:["sky","solar"], w:1080, h:540, src:"", icon:"🌌"
 MAPS.kbone = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🦴", name:"ほねと きんにく", title:"からだの図", word:"からだの図", sub:"骨・関節・筋肉", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.korgan = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🫀", name:"臓器と しくみ", title:"からだの図", word:"からだの図", sub:"心臓・肺・胃・脳・血液・ホルモン…", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.kcell = { svg:true, maps:["cell"], w:720, h:720, src:"", icon:"🧬", name:"細胞と 遺伝", title:"細胞の図", word:"細胞の図", sub:"細胞・DNA・遺伝子…", thing:"場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
-/* 株式フリック旅行(2026-09-26)。会社の名前を打つ。📍は 本社。日本の会社は 日本地図、世界の会社は 世界地図 */
-MAPS.jcomp = Object.assign({}, MAPS.japan, { icon:"🏢", name:"日本の会社", title:"日本の会社マップ", sub:"会社の名前を打つ。本社に📍", thing:"本社", unit:"社", doneWord:"知った会社", miss:"まだ知らない会社" });
-MAPS.wcomp = Object.assign({}, MAPS.world, { icon:"🏙️", name:"世界の会社", title:"世界の会社マップ", sub:"会社の名前を打つ。本社に📍", thing:"本社", unit:"社", doneWord:"知った会社", miss:"まだ知らない会社" });
-const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "jcomp", "wcomp"];
+const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell"];
+if(typeof KABU === "object") for(const m of KABU.modes){ MAPS[m] = Object.assign({}, MAPS.world, KABU.maps[m]); ALL_MODES.push(m); }
 const MODES = ALL_MODES.filter(m => GAME.modes.includes(m));  // この ゲームに 出す 旅だけ
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
 
@@ -1239,6 +844,7 @@ const FAME = {};
    地名・偉人は f:1(国・都道府県)を先に そのあと かんたんな順 */
 const LEVELS = {};
 for(const m of MODES){
+  if(typeof KABU === "object" && KABU.levels[m]){ LEVELS[m] = KABU.levels[m]; continue; }  // 会社の コースは kabu.js が 組む(新しい会社 + ふくしゅう)
   const pool = poolOf(m);
   /* f:1(名所=はじめの100か所の定番 / 地名=国・都道府県)を 先に。その中で かんたんな順(けいくん 2026-09-25) */
   const byFame = (m === "world" || m === "japan");
@@ -1341,13 +947,17 @@ function keepSessionRecords(){
   try{
     for(let i = 0; i < sessionStorage.length; i++){
       const k = sessionStorage.key(i) || "";
-      if(!/^flick-(best|hist|days)(-|$)/.test(k)) continue;
+      if(!/^flick-(best|hist|days|kabu)(-|$)/.test(k)) continue;
       const sv = sessionStorage.getItem(k), lv = localStorage.getItem(k);
       if(sv === null) continue;
       if(lv === null){ localStorage.setItem(k, sv); continue; }
       if(k.startsWith("flick-best-")){
         const a = parseFloat(sv), b = parseFloat(lv);
         if(!isNaN(a) && (isNaN(b) || a < b)) localStorage.setItem(k, sv);
+      }else if(k.startsWith("flick-kabu")){  // 会社の きろく(出会った会社ごと)。多く 見たほうを のこす
+        const a = JSON.parse(sv), b = JSON.parse(lv); if(!a || !b) continue;
+        for(const id in a) if(!b[id] || a[id][0] > b[id][0]) b[id] = a[id];
+        localStorage.setItem(k, JSON.stringify(b));
       }else if(k.startsWith("flick-hist")){
         const a = JSON.parse(sv), b = JSON.parse(lv); if(!Array.isArray(a) || !Array.isArray(b)) continue;
         const seen = new Set(b.map(h => h.at + "|" + h.m + "|" + h.lv)), out = b.slice();
@@ -1415,16 +1025,18 @@ function curProfile(){ const id = store("flick-profile"); return profiles().find
 function bestKey(m, lv){ const p = curProfile(); return "flick-best-" + (p ? "p" + p.id + "-" : "") + m + "-" + (lv+1); }
 function bestOf(m, lv){ return parseFloat(recGet(bestKey(m, lv))); }
 function clearedSpots(m){
+  if(typeof KABU === "object" && KABU.owns(m)) return KABU.discoveredIn(m);  // 会社は「出会った会社」
   const set = new Set();
   LEVELS[m].forEach((lv, i) => { if(!isNaN(bestOf(m, i))) lv.forEach(q => set.add(q.art)); });
   return set;
 }
 function levelTone(i){ return COLORS.level[i % COLORS.level.length]; }
 function drawModes(){
-  $("#modes").innerHTML = MODES.map((m, i) => {
+  const shown = typeof KABU === "object" ? KABU.cardModes(mode) : MODES;  // 会社: マスターの 地域・業種は 1枚に まとめる
+  $("#modes").innerHTML = shown.map((m, i) => {
     const M = MAPS[m], done = clearedSpots(m).size;
-    return '<button class="mode sk-card sk-card-'+(i+1)+(m === mode ? ' cur' : '')+'" data-mode="'+m+'" style="'+toneStyle(COLORS.mode[m])+'">'+
-      '<span class="ic">'+M.icon+'</span><span class="tx"><b>'+M.name+'</b><small>'+POOLS[m].length+unitOf(M)+'・'+LEVELS[m].length+'レベル</small><small>'+(M.doneWord || '行った所')+' '+done+'</small></span></button>';
+    return '<button class="mode sk-card sk-card-'+(i+1)+(m === mode || (M.group && M.group === (MAPS[mode] || {}).group) ? ' cur' : '')+'" data-mode="'+m+'" style="'+toneStyle(COLORS.mode[m])+'">'+
+      '<span class="ic">'+M.icon+'</span><span class="tx"><b>'+(M.cardName || M.name)+'</b>'+(M.card ? M.card(m, done) : '<small>'+POOLS[m].length+unitOf(M)+'・'+LEVELS[m].length+'レベル</small><small>'+(M.doneWord || '行った所')+' '+done+'</small>')+'</span></button>';
   }).join("");
   document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => {
     setMode(b.dataset.mode);
@@ -1444,8 +1056,9 @@ function setMode(m){
   $("#map").dataset.map = M.time ? "time" : M.svg ? "svg" : M.src.startsWith("japan") ? "japan" : "world";
   $("#map-title").textContent = M.title;
   $("#map-cap").innerHTML = "レベルをクリアすると、その" + (M.thing || "名所") + "に 📍が立つよ。📍を押すと 名前が出るよ。2本の指で " + (M.time ? "年表" : M.svg ? "図" : "地図") + "を大きくできるよ。";
-  $("#lv-title").textContent = M.name + "　レベルをえらぶ";
+  $("#lv-title").textContent = (M.lvTitle || M.name + "　レベルをえらぶ");
   drawModes(); drawMap(); openLevels(m); drawRec();
+  if(typeof KABU === "object") KABU.home(m);  // 集めた会社・称号・マスターの えらぶ 列
 }
 /* ── 年表(歴史フリック旅行) ──
    年 → 横の位置。むかしほど ぎゅっと、近代ほど ゆったり(出来事が 近代に かたまるため)。区切りは 折れ線で つなぐ */
@@ -1733,6 +1346,9 @@ function renderCard(){
   if(mode === "quote"){
     target = q.r + q.ar; sepAt = q.r.length;
     h += '<p class="qtext">「'+q.t+'」</p><p class="who">'+q.a+'</p>';
+  }else if(typeof KABU === "object" && KABU.owns(mode)){
+    target = q.r; sepAt = -1;
+    h += KABU.card(q, idx > 0 ? qs[idx-1] : null);  // 会社名 + ひとつ前の 会社の ひとこと(こたえたら 出る)
   }else{
     target = q.r; sepAt = -1;
     const pc = pic(q);
@@ -1741,7 +1357,7 @@ function renderCard(){
   }
   h += '<div class="target" id="tgt"></div>';
   $("#card").innerHTML = h;
-  $("#prog").textContent = "Lv." + (level+1) + "　" + (idx+1) + " / " + ROUNDS;
+  $("#prog").textContent = (typeof KABU === "object" && KABU.owns(mode) ? KABU.lvInfo(mode, level).short : "Lv." + (level+1)) + "　" + (idx+1) + " / " + ROUNDS;
   renderTarget(0, false);
   $("#card").scrollTop = $("#card").scrollHeight;
 }
@@ -1757,8 +1373,9 @@ function openLevels(m){
   mode = m;
   $("#lv-list").innerHTML = LEVELS[m].map((set, i) => {
     const lens = set.map(q => textOf(m,q).length), b = bestOf(m,i);
-    return '<button class="lv sk-card sk-card-'+(i%4+1)+(isNaN(b) ? '' : ' done')+'" style="'+toneStyle(levelTone(i))+'" data-lv="'+i+'"><b>レベル'+(i+1)+'</b>'+
-      '<small>1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字</small>'+
+    const kl = typeof KABU === "object" && KABU.owns(m) ? KABU.lvInfo(m, i) : null;
+    return '<button class="lv sk-card sk-card-'+(i%4+1)+(isNaN(b) ? '' : ' done')+'" style="'+toneStyle(levelTone(i))+'" data-lv="'+i+'"><b>'+(kl ? kl.name : 'レベル'+(i+1))+'</b>'+
+      '<small>'+(kl ? kl.sub : '1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字')+'</small>'+
       '<div class="bt">'+(isNaN(b) ? '自己ベスト：まだなし' : '自己ベスト：'+b.toFixed(2)+'秒')+'</div></button>';
   }).join("");
   document.querySelectorAll(".lv").forEach(b => b.addEventListener("click", () => start(mode, +b.dataset.lv)));
@@ -1766,8 +1383,8 @@ function openLevels(m){
 
 function start(m, lv){
   mode = m; level = lv;
-  qs = LEVELS[m][lv];
-  idx = 0; times = []; running = false; locked = true; penalties = 0;
+  qs = typeof KABU === "object" && KABU.owns(m) ? KABU.makeQs(m, lv) : LEVELS[m][lv];  // 会社: ふくしゅうの 3問は その人に 合わせて えらぶ
+  idx = 0; times = []; running = false; locked = true; penalties = 0; qMiss = 0; lastErr = false;
   show("game");
   renderCard();
   $("#clock").textContent = "0.00";
@@ -1791,8 +1408,12 @@ function start(m, lv){
 let baseRaw = 0;
 function resetBase(){ baseRaw = ans.value.length; lastLen = 0; $("#typed").textContent = ""; }
 
+/* 1問ごとの まちがい(赤くなった回数)。会社の ふくしゅうで「まちがえた会社」を 先に出すため */
+let qMiss = 0, lastErr = false;
 function next(){
   times.push((performance.now()-qStart)/1000);
+  if(typeof KABU === "object" && KABU.owns(mode)) KABU.answered(qs[idx], times[times.length-1], qMiss);
+  qMiss = 0; lastErr = false;
   idx++;
   resetBase();
   if(idx >= ROUNDS){ finish(); return; }
@@ -1810,6 +1431,8 @@ ans.addEventListener("input", () => {
   const r = judge(v);
   renderTarget(r.n, r.err);
   ans.classList.toggle("bad", r.err);
+  if(r.err && !lastErr) qMiss++;
+  lastErr = r.err;
   if(r.done) next();
 });
 
@@ -1821,7 +1444,8 @@ function finish(){
   const firstClear = isNaN(prev);
   if(isNew) recSet(key, total.toFixed(2));
   const best = isNew ? total : prev;
-  const r = { mode, level, times: times.slice(), isNew: isNew && !isNaN(prev), firstClear, best, at: Date.now() };
+  const r = { mode, level, times: times.slice(), isNew: isNew && !isNaN(prev), firstClear, best, at: Date.now(), arts: qs.map(q => q.art) };
+  if(typeof KABU === "object" && KABU.owns(mode)) r.kabu = KABU.finished(r, qs);  // あたらしく 出会った 会社・称号
   /* 最後の結果を 端末に覚える。Googleマップから もどったとき ページが 作りなおされても 同じ結果画面に もどれるように
      (けいくん 2026-09-25「戻るボタンで元のゲーム画面に戻らない」)。1時間で 忘れる */
   store("flick-last", JSON.stringify(r));
@@ -1963,6 +1587,7 @@ let boardPeriod = "today", boardSent = "";  // 送った結果(のった / 理�
 async function submitScore(r){
   const p = curProfile();
   if(!p || r.mode === "quote" || !r.times || r.times.length !== ROUNDS) return "";
+  if(typeof KABU === "object" && KABU.noRank(r.mode, r.level)) return "norank";  // ふくしゅう(毎回 ちがう10問)・61より 上の レベルは ランキングに 送らない
   const ms = Math.round(r.times.reduce((a,b)=>a+b,0) * 1000);
   try{
     const res = await fetch(RANK_API + "/score", { method:"POST", headers:Object.assign({"content-type":"application/json"}, authHeaders()),
@@ -1994,7 +1619,8 @@ async function drawBoard(m, lv, id){
     if(!res.ok || !js || !js.ok){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません' + (js && js.reason ? "(" + esc(js.reason) + ")" : "") + '</p>'; return; }
     const rows = js.rows || [];
     const note = id === "board" && boardSent && boardSent !== "ok"
-      ? (boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。おうちの方が アカウントを つなぐと のります</p>'
+      ? (boardSent === "norank" ? '<p class="board-note">この回は ランキングの 対象では ありません(ふくしゅう・レベル61より上)</p>'
+      : boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。おうちの方が アカウントを つなぐと のります</p>'
                                   : '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>') : "";
     if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも!</p>' + note; return; }
     body.innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
@@ -2009,17 +1635,21 @@ function nameRuby(q){ return '<ruby class="nm">' + esc(q.n) + '<rt>' + esc(q.r) 
    だから かならず 日付を付ける。数字は tools/companies-caps.json(tools/add_spots.py が この2つと 同じか 確かめる) */
 const CAP_ASOF = "2026年9月26日", CAP_RATE = "1ドル=157.5円";
 function quoteBlock(q){
+  if(q.k === "company" && typeof KABU === "object") return KABU.info(q);
   if(q.k === "company") return '<p class="mcap">💴 時価総額 <b>' + esc(q.mc) + '</b><small>' + CAP_ASOF + '時点' + (isJapan(q) ? "" : "(" + CAP_RATE + "で計算)") + '<br>時価総額は 会社の大きさの めやす(株の値段 × 株の数)</small></p>';
   if(q.k !== "person") return "";
   return '<blockquote class="quote"><p class="qt">「'+(RUBY[q.art+"|s"] || q.s)+'」</p><p class="qd">'+(RUBY[q.art+"|sd"] || q.sd)+'</p></blockquote>';
 }
 function renderResult(r){
-  mode = r.mode; level = r.level; qs = LEVELS[mode][level]; times = r.times;
+  mode = r.mode; level = r.level; times = r.times;
+  qs = LEVELS[mode][level];
+  if(Array.isArray(r.arts) && r.arts.length === ROUNDS){ const pool = POOLS[mode] || [], by = new Map(pool.map(q => [q.art, q])); const a = r.arts.map(x => by.get(x) || (typeof KABU === "object" ? KABU.byArt(x) : null)); if(a.every(Boolean)) qs = a; }
   const total = times.reduce((a,b)=>a+b,0);
   const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
   const pinsNow = mode === "quote" ? 0 : clearedSpots(mode).size;
   $("#r-pins").classList.toggle("hidden", !(mode !== "quote" && r.firstClear));
   $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ!(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + unitOf(MAPS[mode]) + ")";
+  if(typeof KABU === "object" && KABU.owns(mode)){ $("#r-pins").classList.remove("hidden"); $("#r-pins").innerHTML = KABU.resultMsg(r); }
   $("#r-time").textContent = total.toFixed(2);
   const ink = levelTone(level).ink;
   $(".stamp").style.color = ink; $(".stamp").style.borderColor = ink;

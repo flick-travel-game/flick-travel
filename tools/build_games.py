@@ -23,10 +23,10 @@ GAMES = {
                    how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、からだの図に📍が立つよ。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、からだのしくみも自然と覚えられるよ。"),
     # 株式フリック旅行(けいくん 2026-09-26)。絵が届くまでは 文字の題名(logo:false hero:false)。届いたら kabu/ に置いて art を足す
-    "kabu": dict(name="株式フリック旅行", modes=["jcomp", "wcomp"], kinds={"company"}, color="#0f6fa8", hero=False, logo=False,
-                 lead="日本と世界の会社の名前を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、会社をめぐる旅に出よう。",
-                 how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 会社の説明と 時価総額が出て、地図の 本社に📍が立つよ。",
-                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の会社の名前も自然と覚えられるよ。"),
+    "kabu": dict(name="株式フリック旅行", modes="KABU", kinds=set(), color="#0f6fa8", hero=False, logo=False,
+                 lead="世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。",
+                 how="表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。初級からは 新しい会社7問に、にがてな会社の ふくしゅう3問が まざるよ。",
+                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。"),
 }
 
 def build(gid, g):
@@ -52,8 +52,11 @@ def build(gid, g):
     out = out.replace('<img id="map-img" src="world-map-color.jpg"', '<img id="map-img" src="../world-map-color.jpg"')  # 地図の 絵は 世界の フォルダに ある
     out = out.replace('<h1 class="sr-only">世界フリック旅行</h1>', f'<h1 class="sr-only">{g["name"]}</h1>')
     out = out.replace('<a href="about.html">📖 世界フリック旅行について(おうちの方へ)</a>', f'<a href="../about.html">📖 フリック旅行シリーズについて(おうちの方へ)</a>')
+    if g["modes"] == "KABU":  # 会社の コース: 旅の 名前は kabu/kabu.js が 決める(KABU.modes)。会社データは companies.js
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="companies.js"></script>\n<script src="kabu.js"></script>')
+        import subprocess, sys as _s; subprocess.run([_s.executable, str(ROOT / "tools/kabu/companies_js.py")], check=True)
     # GAME
-    out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
+    out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{"KABU.modes" if g["modes"] == "KABU" else json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
     assert n == 1
     # 問題: もとの100か所を 空に、追加ぶんは この ゲームの kind だけ
     out, n = re.subn(r"const SPOTS = \[\n.*?\n\];", "const SPOTS = [\n];", out, count=1, flags=re.S); assert n == 1

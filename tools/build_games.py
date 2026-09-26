@@ -9,47 +9,47 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 GAMES = {
-    "rekishi": dict(name="歴史フリック旅行", modes=["wpeople", "jpeople", "wevents", "jevents"], kinds={"person", "event"},
-                    color="#c9741a", hero=True, logo=True, art=dict(word=(1005, 245), hero=(1536, 803), alt="歴史フリック旅行。古代から未来へ 時代の名所が ならぶ 絵"),
+    "rekishi": dict(name="歴史フリック", modes=["wpeople", "jpeople", "wevents", "jevents"], kinds={"person", "event"},
+                    color="#c9741a", hero=True, logo=True, art=dict(word=(1005, 245), hero=(1536, 803), alt="歴史フリック。古代から未来へ 時代の名所が ならぶ 絵"),
                     lead="世界と日本の偉人・歴史の出来事を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、時間の旅に出よう。",
                     how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。偉人は 名前を打つと、結果で その人のプロフィールと 名言が読めるよ。出来事は 年と解説が出て、年表に📍が立つよ。",
                     rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、歴史の流れも自然と覚えられるよ。"),
-    "uchu": dict(name="宇宙フリック旅行", modes=["usolar", "usky", "ucos"], kinds={"space"}, color="#2b3a8f", hero=True, logo=True, art=dict(word=(1053, 257), hero=(1536, 1024), alt="宇宙フリック旅行。太陽系の 惑星と 銀河が うかぶ 絵"),
+    "uchu": dict(name="宇宙フリック", modes=["usolar", "usky", "ucos"], kinds={"space"}, color="#2b3a8f", hero=True, logo=True, art=dict(word=(1053, 257), hero=(1536, 1024), alt="宇宙フリック。太陽系の 惑星と 銀河が うかぶ 絵"),
                  lead="太陽系・星と星座・宇宙のことばを、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、宇宙の旅に出よう。",
                  how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、太陽系の図や 星図に📍が立つよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、星や惑星の名前も自然と覚えられるよ。"),
-    "karada": dict(name="からだフリック旅行", modes=["kbone", "korgan", "kcell", "ktsubo"], kinds={"body"}, color="#c9364f", hero=True, logo=True, art=dict(word=(875, 244), hero=(1536, 813), alt="からだフリック旅行。骨・心臓・細胞の 中を 旅する 絵"),
+    "karada": dict(name="からだフリック", modes=["kbone", "korgan", "kcell", "ktsubo"], kinds={"body"}, color="#c9364f", hero=True, logo=True, art=dict(word=(875, 244), hero=(1536, 813), alt="からだフリック。骨・心臓・細胞の 中を 旅する 絵"),
                    lead="骨・筋肉・臓器・からだのしくみ・細胞・ツボを、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、からだの中を旅しよう。",
                    how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、からだの図に📍が立つよ。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、からだのしくみも自然と覚えられるよ。"),
     # 株式フリック旅行(けいくん 2026-09-26)。絵は けいくんの ChatGPT の 絵(kabu/hero.webp)。題名は GrabCut で 切りぬいた(tools/kabu/logo_cut.py)
-    "kabu": dict(name="株式フリック旅行", modes="KABU", kinds=set(), color="#0f6fa8", hero=True, logo=True,
-                 art=dict(word=(907, 194), hero=(1536, 1024), alt="株式フリック旅行。世界の 会社の 町を 男の子と 犬が 飛んで 旅する 絵", iconv=3),
+    "kabu": dict(name="株式フリック", modes="KABU", kinds=set(), color="#0f6fa8", hero=True, logo=True,
+                 art=dict(word=(907, 194), hero=(1536, 1024), alt="株式フリック。世界の 会社の 町を 男の子と 犬が 飛んで 旅する 絵", iconv=3),
                  lead="世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。",
                  how="表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。初級からは 新しい会社7問に、にがてな会社の ふくしゅう3問が まざるよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。"),
     # AIフリック旅行(けいくん 2026-09-26)。ことばは data/aiTerms.json の 1か所 → ai/terms.js。コースの しくみは ai/ai.js(AITABI)。
     #   絵は けいくんの ChatGPT の 絵(ai/hero.webp)。題名は tools/ai/logo_cut.py で 切りぬいた。アイコンは けいくんの 四角い 絵(1254px)を 縮めたもの
-    "ai": dict(name="AIフリック旅行", modes="AITABI", kinds=set(), color="#6d3fd6", hero=True, logo=True,
-               art=dict(word=(1037, 223), hero=(1536, 1024), alt="AIフリック旅行。男の子と 犬が AI・クラウド・データ・API の ことばが うかぶ 空の 島を 旅する 絵"),
+    "ai": dict(name="フリックAI", modes="AITABI", kinds=set(), color="#6d3fd6", hero=True, logo=True,
+               art=dict(word=(1037, 223), hero=(1536, 1024), alt="フリックAI。男の子と 犬が AI・クラウド・データ・API の ことばが うかぶ 空の 島を 旅する 絵"),
                lead="遊んでいるうちに、AIとWebのことばがわかる。フリックで打つと、ことばの意味・つながる ことば・しくみの図の どこにあるかが 出るよ。知っている ことばから はじめて、点だった知識を 線につなげよう。",
                how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。入門は 聞いたことのある ことば、初級からは 新しい ことば7問に ふくしゅう3問が まざるよ。英字の ことば(API など)は 日本での ふつうの 読みかたで 打つよ。",
                rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、AI・Web・サービスづくりの しくみが つながって 見えてくるよ。"),
     # 英会話フリック旅行(けいくん 2026-09-26)。ことばは data/english.json の 1か所 → eikaiwa/english.js。しくみは eikaiwa/eikaiwa.js(EIKAIWA)。
     #   ⚠️ 英検・TOEIC の めやすは 画面に 出さない(けいくん 2026-09-26「勉強してる感が強くなるので表記しない方がいい」)。絵は まだ無い(文字の 題名)
-    "eikaiwa": dict(name="英会話フリック旅行", modes="EIKAIWA", kinds=set(), color="#0e8f6e", hero=False, logo=False,
+    "eikaiwa": dict(name="フリック英会話", modes="EIKAIWA", kinds=set(), color="#0e8f6e", hero=False, logo=False,
                     lead="英単語と 日常英会話を、フリックで 打ち写して 旅しよう。打つと 意味と 例文が 出て、🔊で 発音も 聞けるよ。身のまわりの ことばから はじめて、外国の人と 話せる 英語まで。",
                     how="表示された 英語を、そのまま打ち写してね。大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ。1回は かならず 10問。入門は 新しい ことば 10問、初級からは 新しい ことば 7問に ふくしゅう 3問が まざるよ。",
                     rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。iPhone は 日本語キーボードの「ABC」なら フリックで 英語が 打てるよ。"),
     # 理科フリック旅行(けいくん 2026-09-26)。旅は 教科書の 4分野。1つの 旅の 中で 小学校 → 中学校(高校受験)→ 高校(大学受験)の 順に レベルが 並ぶ。
     #   ことばは tools/rika.tsv(10列。tools/check_rika_tsv.py で 確かめる)。宇宙・からだに ある ことばは 入れない。絵は まだ 無い(けいくんの 絵が 届いたら art を 足す)
-    "rika": dict(name="理科フリック旅行", modes=["rphys", "rchem", "rbio", "rgeo"], kinds={"rika"}, color="#3949ab", hero=False, logo=False,
+    "rika": dict(name="理科フリック", modes=["rphys", "rchem", "rbio", "rgeo"], kinds={"rika"}, color="#3949ab", hero=False, logo=False,
                  lead="物理・化学・生物・地学のことばを、ひらがなでどれだけ速く打てるか。小学校のことばから はじめて、中学校(高校受験)・高校(大学受験)まで。10問のトータルタイムで勝負しながら、理科の旅に出よう。",
                  how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん(小学校のことば)。先に進むほど 中学校・高校のことばになるよ。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、周期表や 理科の地図に📍が立つよ。星や宇宙は 宇宙フリック旅行、人の体や細胞は からだフリック旅行で あそべるよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、理科のことばも自然と覚えられるよ。"),
     # 整備フリック旅行(けいくん 2026-09-26)。ことばは tools/seibi/terms-<旅>.json → seibi/terms.js(tools/seibi/terms_js.py)。しくみは seibi/seibi.js(SEIBI。ai.js を 写した もの)。
     #   旅は エンジン・シャシ・ブレーキ・電装EV・バイク・工具点検法令。級は 入門 → 3級めやす → 2級めやす。絵は まだ無い(文字の 題名。届いたら art を 足す)
-    "seibi": dict(name="整備フリック旅行", modes="SEIBI", kinds=set(), color="#d9480f", hero=False, logo=False,
+    "seibi": dict(name="フリック整備士", modes="SEIBI", kinds=set(), color="#d9480f", hero=False, logo=False,
                   lead="クルマ・バイクの 部品と しくみの ことばを、ひらがなで フリック入力。打つと その部品が 何を するのか・しくみ図の どこに あるのかが 出るよ。身近な 部品から はじめて、3級・2級・1級 自動車整備士の 試験範囲の めやすまで。4択クイズと 計算問題で 試験の 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。入門は 新しい 部品 10問、3級めやすからは 新しい 部品 7問に ふくしゅう 3問が まざるよ。部品の 説明は 本物の 試験問題では ないので、試験の 勉強には 問題集や 学校の 教科書も 使ってね。部品の 名前と しくみを おぼえる ゲームだよ。実際の 整備は 資格を もつ 人・お店に まかせよう。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、クルマや バイクの 中身が 見えてくるよ。国土交通省・日本自動車整備振興会連合会とは 関係ありません。"),
@@ -63,8 +63,8 @@ def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
     out = src
     # head
-    out = out.replace("<title>世界フリック旅行</title>", f"<title>{g['name']}</title>")
-    out = out.replace('<meta name="apple-mobile-web-app-title" content="世界フリック旅行ゲーム">', f'<meta name="apple-mobile-web-app-title" content="{g["name"]}ゲーム">')
+    out = out.replace("<title>フリック世界旅行</title>", f"<title>{g['name']}</title>")
+    out = out.replace('<meta name="apple-mobile-web-app-title" content="フリック世界旅行">', f'<meta name="apple-mobile-web-app-title" content="{g["name"]}">')
     art = g.get("art")  # その ゲームの 絵(hero / 題名 / アイコン)が フォルダに あるとき
     if art:
         # 絵・アイコンは その フォルダの ものを 使う(名前は 世界と 同じ なので 道は そのまま)
@@ -83,8 +83,7 @@ def build(gid, g):
                          lambda _: '<span class="logo-text">%s</span>' % g["name"], out); assert n == 1
     out = out.replace('<script src="photos.js"></script>', '<script src="../photos.js"></script>')
     out = out.replace('<img id="map-img" src="world-map-color.jpg"', '<img id="map-img" src="../world-map-color.jpg"')  # 地図の 絵は 世界の フォルダに ある
-    out = out.replace('<h1 class="sr-only">世界フリック旅行</h1>', f'<h1 class="sr-only">{g["name"]}</h1>')
-    out = out.replace('<a href="about.html">📖 世界フリック旅行について(おうちの方へ)</a>', f'<a href="../about.html">📖 フリック旅行シリーズについて(おうちの方へ)</a>')
+    out = out.replace('<h1 class="sr-only">フリック世界旅行</h1>', f'<h1 class="sr-only">{g["name"]}</h1>')
     if g["modes"] == "KABU":  # 会社の コース: 旅の 名前は kabu/kabu.js が 決める(KABU.modes)。会社データは companies.js
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="companies.js"></script>\n<script src="kabu.js"></script>')
         import subprocess, sys as _s; subprocess.run([_s.executable, str(ROOT / "tools/kabu/companies_js.py")], check=True)
@@ -131,7 +130,7 @@ def build(gid, g):
     d = ROOT / gid; d.mkdir(exist_ok=True)
     (d / "index.html").write_text(out, encoding="utf-8")
     (d / "manifest.webmanifest").write_text(json.dumps({
-        "name": g["name"] + "ゲーム", "short_name": g["name"] + "ゲーム", "start_url": "./", "scope": "./", "display": "standalone",
+        "name": g["name"], "short_name": g["name"], "start_url": "./", "scope": "./", "display": "standalone",
         "background_color": g["color"], "theme_color": g["color"],
         "icons": [{"src": ("" if art else "../") + "icon-512.png?v=" + str((art or {}).get("iconv", 2)), "sizes": "512x512", "type": "image/png"}, {"src": ("" if art else "../") + "apple-touch-icon.png?v=" + str((art or {}).get("iconv", 2)), "sizes": "180x180", "type": "image/png"}]}, ensure_ascii=False, indent=2), encoding="utf-8")
     (d / ".nojekyll").write_text("", encoding="utf-8")

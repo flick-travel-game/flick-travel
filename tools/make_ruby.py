@@ -189,7 +189,7 @@ def main():
             prev = s
         return "".join(parts)
 
-    PAT = r'\{n:"([^"]*)", c:"[^"]*", r:"[^"]*", art:"(\w+)", (?:k:"name", e:"[^"]*", (?:m:"[^"]*", )?)?(?:k:"person", s:"([^"]*)", sd:"([^"]*)", b:"[^"]*", )?(?:f:1, )?d:"([^"]*)"\}'
+    PAT = r'\{n:"([^"]*)", c:"[^"]*", r:"[^"]*", art:"(\w+)", (?:k:"(?:name|capital|event)", e:"[^"]*", (?:m:"[^"]*", )?)?(?:k:"person", s:"([^"]*)", sd:"([^"]*)", b:"[^"]*", )?(?:f:1, )?d:"([^"]*)"\}'
     for m in re.finditer(PAT, page):
         name, key, quote, qdesc, desc = m.groups()
         plain = []

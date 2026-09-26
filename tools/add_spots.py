@@ -14,24 +14,29 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def read_tsv(path, names=False, people=False):
+def read_tsv(path, names=False, people=False, kind=None):
     """names=True は 地名の TSV(5列目が 絵文字。写真は無い)。
-    people=True は 偉人の TSV(12列: …, 名言, 名言の解説, はじめのレベル(1), 生まれた所)"""
+    people=True は 偉人の TSV(12列: …, 名言, 名言の解説, はじめのレベル(1), 生まれた所)。
+    kind="capital" / "event" は 首都・出来事の TSV(10列: …, 絵文字, 解説, 緯度, 経度, 地図の目印, はじめのレベル(1))。
+    2026-09-26 けいくん「大学受験、高校受験に役立つやつ」"""
     rows = []
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.strip() or line.startswith("#"):
             continue
         f = line.split("\t")
-        assert len(f) == (12 if people else (9 if names else 8)), (path.name, line[:40])
+        assert len(f) == (12 if people else (10 if kind else (9 if names else 8))), (path.name, line[:40])
         key, name, place, yomi, query, desc, lat, lon = f[:8]
         extra = dict(zip(("s", "sd", "first", "b"), f[8:])) if people else {}
+        if kind:
+            extra["kind"] = kind; extra["first"] = f[9]
+            if f[8]: extra["m"] = f[8]
         if names and f[8]:
             extra["m"] = f[8]  # 地図の目印(けいくん 2026-09-25「説明に書いてある有名な場所に Googleマップ飛んだ方がいい」)
         assert re.fullmatch(r"[a-z0-9]+", key), key
         for s in (name, place, desc, *extra.values()):
             assert '"' not in s and "\\" not in s, (key, s)
         assert re.fullmatch(r"[ぁ-ゖー]+", yomi), (key, yomi)
-        rows.append(dict(key=key, n=name, c=place, r=yomi, q=query, d=desc, lat=float(lat), lon=float(lon), e=query if names else "", **extra))
+        rows.append(dict(key=key, n=name, c=place, r=yomi, q=query, d=desc, lat=float(lat), lon=float(lon), e=query if (names or kind) else "", **extra))
     return rows
 
 
@@ -54,7 +59,9 @@ def first_of(r):
 def main():
     rows = (read_tsv(ROOT / "tools/spots-japan.tsv") + read_tsv(ROOT / "tools/spots-world.tsv")
             + read_tsv(ROOT / "tools/names-japan.tsv", names=True) + read_tsv(ROOT / "tools/names-world.tsv", names=True)
-            + read_tsv(ROOT / "tools/people-japan.tsv", people=True) + read_tsv(ROOT / "tools/people-world.tsv", people=True))
+            + read_tsv(ROOT / "tools/people-japan.tsv", people=True) + read_tsv(ROOT / "tools/people-world.tsv", people=True)
+            + [r for f, k in (("capitals", "capital"), ("events-world", "event"), ("events-japan", "event")) if (ROOT / f"tools/{f}.tsv").exists()
+               for r in read_tsv(ROOT / f"tools/{f}.tsv", kind=k)])
     keys = [r["key"] for r in rows]
     assert len(keys) == len(set(keys)), "キーがかぶっている"
     page = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -67,6 +74,8 @@ def main():
     def extra(r):
         if "s" in r:
             return f'k:"person", s:"{r["s"]}", sd:"{r["sd"]}", b:"{r["b"]}", '
+        if r.get("kind"):  # 首都・出来事: 絵文字のカード + 地図の目印
+            return f'k:"{r["kind"]}", e:"{r["e"]}", ' + (f'm:"{r["m"]}", ' if r.get("m") else "")
         if r["e"]:
             return f'k:"name", e:"{r["e"]}", ' + (f'm:"{r["m"]}", ' if r.get("m") else "")
         return ""
@@ -85,8 +94,9 @@ def main():
         assert n == 1
     (ROOT / "index.html").write_text(page, encoding="utf-8")
     print(f"{len(rows)}か所を書いた(名所: 日本 {sum(r['c'].startswith('日本') and not r['e'] for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and not r['e'] for r in rows)}、"
-          f"地名: 日本 {sum(r['c'].startswith('日本') and bool(r['e']) for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and bool(r['e']) for r in rows)}、"
-          f"偉人: 日本 {sum(r['c'].startswith('日本') and 's' in r for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and 's' in r for r in rows)})")
+          f"地名: 日本 {sum(r['c'].startswith('日本') and bool(r['e']) and not r.get('kind') for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and bool(r['e']) and not r.get('kind') for r in rows)}、"
+          f"偉人: 日本 {sum(r['c'].startswith('日本') and 's' in r for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and 's' in r for r in rows)}、"
+          f"首都 {sum(r.get('kind') == 'capital' for r in rows)}、出来事: 日本 {sum(r['c'].startswith('日本') and r.get('kind') == 'event' for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and r.get('kind') == 'event' for r in rows)})")
 
 
 if __name__ == "__main__":

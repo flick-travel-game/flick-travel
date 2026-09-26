@@ -10735,5 +10735,101 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
   "page": "https://commons.wikimedia.org/wiki/File:GFP_Mice_01.jpg",
   "file": "File:GFP Mice 01.jpg"
+ },
+ "wieliczka": {
+  "src": "photo-wieliczka.jpg",
+  "author": "Андрей Романенко",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Saint_Kinga_Chapel_in_Wieliczka_Salt_Mine.jpg",
+  "file": "File:Saint Kinga Chapel in Wieliczka Salt Mine.jpg"
+ },
+ "shirakamisanchi": {
+  "src": "photo-shirakamisanchi.jpg",
+  "author": "Ocavis Leechroot",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:400_years_old_beech_(400%E5%B9%B4%E3%83%96%E3%83%8A)_-_panoramio.jpg",
+  "file": "File:400 years old beech (400年ブナ) - panoramio.jpg"
+ },
+ "sefa": {
+  "src": "photo-sefa.jpg",
+  "author": "Hyppolyte de Saint-Rambert",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Okinawa_Nanjo_Sefa-utaki_Gusuku_site_Sangui_hdsr_VLux5_24.jpg",
+  "file": "File:Okinawa Nanjo Sefa-utaki Gusuku site Sangui hdsr VLux5 24.jpg"
+ },
+ "miike": {
+  "src": "photo-miike.jpg",
+  "author": "そらみみ (Soramimi)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Miyanohara_Pit_of_Miike_Coal_Mine_(southeast).jpg",
+  "file": "File:Miyanohara Pit of Miike Coal Mine (southeast).jpg"
+ },
+ "nintoku": {
+  "src": "photo-nintoku.jpg",
+  "author": "Sakai Yayoi",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Daisenryo_Kofun_from_balloon.jpg",
+  "file": "File:Daisenryo Kofun from balloon.jpg"
+ },
+ "amamioshima": {
+  "src": "photo-amamioshima.jpg",
+  "author": "Niiryoku2910",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Amami_island_Honohoshi_beach.jpg",
+  "file": "File:Amami island Honohoshi beach.jpg"
+ },
+ "masako": {
+  "src": "photo-masako.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hojo_Masako.jpg",
+  "file": "File:Hojo Masako.jpg"
+ },
+ "zeami": {
+  "src": "photo-zeami.jpg",
+  "author": "不明（宗節本『風姿花伝』）",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sousetsubon_fushikaden_7_part.PNG",
+  "file": "File:Sousetsubon fushikaden 7 part.PNG"
+ },
+ "chuya": {
+  "src": "photo-chuya.jpg",
+  "author": "Nakahara family",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chuya1936.jpg",
+  "file": "File:Chuya1936.jpg"
+ },
+ "mitsukuni": {
+  "src": "photo-mitsukuni.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tokugawa_Mitsukuni.jpg",
+  "file": "File:Tokugawa Mitsukuni.jpg"
+ },
+ "ryokan": {
+  "src": "photo-ryokan.jpg",
+  "author": "Ryōkan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:RYOKAN_PORTRAITE.JPG",
+  "file": "File:RYOKAN PORTRAITE.JPG"
+ },
+ "hisashige": {
+  "src": "photo-hisashige.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tanaka_Hisashige_%26_wife.jpg",
+  "file": "File:Tanaka Hisashige & wife.jpg"
  }
 };

@@ -160,6 +160,26 @@ body.playing{overflow:hidden}
 .growbox .g1{margin:0;text-align:center;font-size:14px;font-weight:700;line-height:28px;color:#64748b}
 .growbox .g0{margin:0;text-align:center;font-size:14px;font-weight:700;color:#94a3b8}
 .rec{margin:0 0 26px}
+/* れんぞく(かずとも Streak.tsx の StreakCard / StreakBoard と 同じ) */
+.stk{text-align:center;margin:0}
+.stk .big{font-size:30px;font-weight:900;color:var(--sk-ink)}
+.stk .w{font-size:16px;font-weight:900;color:#64748b}
+.stk0{text-align:center;margin:0;font-size:18px;font-weight:900;color:#64748b}
+.stk0 .ink{color:var(--sk-ink)}
+.stk-n{margin:4px 0 0;text-align:center;font-size:14px;font-weight:700;color:#94a3b8}
+.stk-n b{font-weight:900;color:#64748b}
+.stk-b{margin:4px 0 0;text-align:center;font-size:14px;font-weight:900;color:#64748b}
+.stk-l{margin:4px 0 0;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.stkb{margin:-2px 0 14px}
+.stkb-t{margin:0 0 8px;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.stkb ol{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.stkb li{display:flex;align-items:center;gap:8px;min-width:0;border-radius:16px;padding:8px 12px}
+.stkb li.sk-key{background:#fff}
+.stkb .rk{width:28px;flex:none;text-align:center;font-size:14px;font-weight:900;color:#94a3b8}
+.stkb li.sk-card .rk{color:inherit}
+.stkb .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;font-weight:900;color:#475569}
+.stkb .dy{flex:none;font-size:14px;font-weight:900;color:#64748b}
+.stkb li.sk-card .nm,.stkb li.sk-card .dy{color:inherit}
 .rec-ttl{margin:24px 0 0;text-align:center;font-size:20px;font-weight:900;color:#334155}
 .rec-sub{margin:4px 0 12px;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
 .rec-lv{display:flex;gap:6px;overflow-x:auto;padding:0 0 10px;-webkit-overflow-scrolling:touch}
@@ -385,14 +405,22 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <h2 class="rec-ttl">きろく</h2>
       <p class="rec-sub" id="rec-sub"></p>
       <div class="rec-lv" id="rec-lv"></div>
+      <div id="rec-mode">
       <section class="board" id="board2">
         <div class="board-head"><b>🏆 みんなのランキング</b><span id="board2-sub"></span></div>
         <div class="board-tabs" id="board2-tabs"></div>
         <div id="board2-body" class="board-body"></div>
       </section>
+      </div>
+      <h2 class="rec-ttl">れんぞく</h2>
+      <p class="rec-sub" id="streak-sub"></p>
+      <div class="growbox" id="h-streak"></div>
+      <div id="streak-board"></div>
+      <div id="rec-mode2">
       <h2 class="rec-ttl">のび</h2>
       <p class="rec-sub" id="grow-sub"></p>
       <div class="growbox" id="h-grow"><div id="h-grow-body"></div></div>
+      </div>
     </section>
     <div class="how">
       <p>表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。偉人の旅は 名前を打つと、結果で その人のプロフィールと 名言が読めるよ。</p>
@@ -431,6 +459,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <div><b id="r-chars">0</b><small>打った文字数</small></div>
       <div><b id="r-best">-</b><small>自己ベスト</small></div>
     </div>
+    <div class="growbox" id="r-streak"></div>
     <div class="growbox hidden" id="r-grow"><p class="grow-ttl">のび</p><div id="r-grow-body"></div></div>
     <section class="board" id="board" hidden>
       <div class="board-head"><b>🏆 みんなのランキング</b><span id="board-sub"></span></div>
@@ -4953,6 +4982,59 @@ function hist(){ try{ const a = JSON.parse(store(histKey()) || "[]"); return Arr
 function pushHist(m, lv, ms, at){
   const a = hist(); a.push({m, lv, ms, at}); while(a.length > 400) a.shift();
   store(histKey(), JSON.stringify(a));
+  addPlayDay(at);
+}
+/* ── れんぞく(つづけて あそんだ日。けいくん 2026-09-26「連続ゲーム記録を実装してください」) ──
+   かずとも `scores.ts` の streak / streakOfDays と 同じ 数えかた。
+   ・旅の しゅるいも レベルも かけない(あそんだ日は あそんだ日)
+   ・スマホの 時計で 0時に 日が かわる
+   ・きのうまで つづいていれば まだ 生きている(0時を すぎた とたん 0に しない)
+   ・⚠️ 切れても 責めない。0日のときは「きょう あそぶと 1日目」(「とぎれました」と 書かない)
+   あそんだ日は 人ごとに flick-days-p<id>(日の 通し番号の 配列。400回で 消える 履歴とは べつに ずっと のこす) */
+function dayIndex(at){ const d = new Date(at); return Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000); }
+function daysKey(){ const p = curProfile(); return "flick-days" + (p ? "-p" + p.id : ""); }
+function playDays(){
+  let a; try{ a = JSON.parse(store(daysKey()) || "null"); }catch(e){ a = null; }
+  if(!Array.isArray(a)){ a = [...new Set(hist().map(h => dayIndex(h.at)))]; }  // はじめは 履歴から 作る
+  return new Set(a);
+}
+function addPlayDay(at){ const s = playDays(); s.add(dayIndex(at)); store(daysKey(), JSON.stringify([...s].sort((x,y) => x - y))); }
+function streakOf(set, now){
+  now = now || Date.now();
+  if(!set.size) return { days:0, playedToday:false, best:0 };
+  const sorted = [...set].sort((a,b) => a - b);
+  let best = 1, run = 1;
+  for(let i = 1; i < sorted.length; i++){ run = sorted[i] === sorted[i-1] + 1 ? run + 1 : 1; if(run > best) best = run; }
+  const today = dayIndex(now), last = sorted[sorted.length-1];
+  if(last !== today && last !== today - 1) return { days:0, playedToday:false, best };
+  let cur = 1;
+  for(let i = sorted.length - 1; i > 0; i--){ if(sorted[i-1] !== sorted[i] - 1) break; cur++; }
+  return { days:cur, playedToday: last === today, best };
+}
+/* StreakCard と 同じ 中身 */
+function streakHtml(st, m){
+  const t = COLORS.mode[m], vars = 'style="--sk-ink:' + t.ink + '"';
+  const isBest = st.days > 1 && st.days >= st.best;
+  return '<div ' + vars + '>' +
+    (st.days === 0 ? '<p class="stk0">きょう あそぶと <span class="ink">1日目</span></p>'
+                   : '<p class="stk"><span class="w">🔥 つづけて </span><span class="big">' + st.days + '</span><span class="w">日</span></p>') +
+    (st.days > 0 && !st.playedToday ? '<p class="stk-n">きょう あそぶと <b>' + (st.days + 1) + '日目</b></p>' : '') +
+    (isBest ? '<p class="stk-b">⭐️ いまが さいこう記録！</p>' : (st.best > 1 ? '<p class="stk-l">いちばん ながく つづいたのは ' + st.best + '日</p>' : '')) +
+    '</div>';
+}
+/* みんなの れんぞく(かずともの サーバーが 数える。つながらないときは 何も出さない) */
+async function drawStreakBoard(){
+  const box = $("#streak-board"), p = curProfile();
+  try{
+    const res = await fetch(RANK_API + "/streak");
+    const js = await res.json().catch(() => null);
+    const rows = (res.ok && js && js.ok && js.rows) || [];
+    if(!rows.length){ box.innerHTML = ""; return; }
+    const t = COLORS.mode[mode];
+    box.innerHTML = '<div class="stkb"><p class="stkb-t">みんなの れんぞく</p><ol>' + rows.map((r, i) =>
+      '<li class="' + (p && r.name === p.name ? 'sk-card' : 'sk-key') + '"' + (p && r.name === p.name ? ' style="' + toneStyle(t) + '"' : '') + '>' +
+      '<span class="rk">' + (i < 3 ? MEDALS[i] : (i + 1)) + '</span><span class="nm">' + esc(r.name) + '</span><span class="dy">🔥 ' + r.days + '日</span></li>').join("") + '</ol></div>';
+  }catch(e){ box.innerHTML = ""; }
 }
 const GROWTH_POINTS = 12;
 function growthOf(m, lv){
@@ -4997,9 +5079,18 @@ function growthHtml(g, m, lv){
 let recLv = null, recMode = null;
 function drawRec(){
   if(recMode !== mode){ recMode = mode; recLv = null; }  // 旅を 切りかえたら いちばん新しく あそんだ レベルに
-  const sec = $("#rec"), all = hist().filter(h => h.m === mode);
-  if(!all.length){ sec.classList.add("hidden"); return; }
+  const sec = $("#rec"), all = hist().filter(h => h.m === mode), days = playDays();
+  if(!days.size){ sec.classList.add("hidden"); return; }  // 1回も あそんでいない人には 出さない(かずともと同じ)
   sec.classList.remove("hidden");
+  // れんぞく(どの旅でも 同じ)
+  const pp = curProfile();
+  $("#streak-sub").textContent = (pp ? pp.name + " が " : "") + "つづけて あそんだ日";
+  $("#h-streak").innerHTML = streakHtml(streakOf(days), mode);
+  drawStreakBoard();
+  // この旅を まだ あそんでいなければ ランキング・のびは 出さない
+  $("#rec-mode").classList.toggle("hidden", !all.length); $("#rec-mode2").classList.toggle("hidden", !all.length);
+  $("#rec-lv").classList.toggle("hidden", !all.length);
+  if(!all.length){ $("#rec-sub").textContent = MAPS[mode].name + " は まだ あそんでいません"; return; }
   const lvs = [...new Set(all.map(h => h.lv))].sort((a,b) => a - b);
   if(recLv === null || !lvs.includes(recLv)) recLv = all[all.length-1].lv;
   const p = curProfile();
@@ -5074,6 +5165,7 @@ function renderResult(r){
   $("#r-cps").textContent = (chars/total).toFixed(1);
   $("#r-chars").textContent = chars;
   $("#r-best").textContent = r.best.toFixed(2);
+  $("#r-streak").innerHTML = streakHtml(streakOf(playDays()), mode);  // れんぞく(あそび終わった そのときが いちばん うれしい)
   const g = growthOf(mode, level);   // のび(かずともと同じで 2回め から)
   $("#r-grow").classList.toggle("hidden", !(g && g.plays > 1));
   if(g && g.plays > 1) $("#r-grow-body").innerHTML = growthHtml(g, mode, level);

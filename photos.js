@@ -10831,5 +10831,3149 @@ const PHOTOS = {
   "licenseUrl": "",
   "page": "https://commons.wikimedia.org/wiki/File:Tanaka_Hisashige_%26_wife.jpg",
   "file": "File:Tanaka Hisashige & wife.jpg"
+ },
+ "phylever": {
+  "src": "photo-phylever.jpg",
+  "author": "CR at Spanish Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Palanca-ejemplo.jpg",
+  "file": "File:Palanca-ejemplo.jpg"
+ },
+ "phypendulum": {
+  "src": "photo-phypendulum.jpg",
+  "author": "Zátonyi Sándor (ifj.) Fizped",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ingamozgas.jpg",
+  "file": "File:Ingamozgas.jpg"
+ },
+ "phywheelaxle": {
+  "src": "photo-phywheelaxle.jpg",
+  "author": "George Payn Quackenbosuploaded to Wikipedia by Jimbowley",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wheelaxle_quackenbos.gif",
+  "file": "File:Wheelaxle quackenbos.gif"
+ },
+ "physcale": {
+  "src": "photo-physcale.jpg",
+  "author": "Photographie personnelle User:Poussin jean",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Balance_%C3%A0_tabac_1850.JPG",
+  "file": "File:Balance à tabac 1850.JPG"
+ },
+ "phywind": {
+  "src": "photo-phywind.jpg",
+  "author": "Lourdes Cardenal",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Campo_de_Criptana_Molinos_de_Viento_2.jpg",
+  "file": "File:Campo de Criptana Molinos de Viento 2.jpg"
+ },
+ "phywindmill": {
+  "src": "photo-phywindmill.jpg",
+  "author": "hisa fujimoto",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:De_Liefde_Windmill,_Sakura,_Chiba,_Japan_-_20060417.jpg",
+  "file": "File:De Liefde Windmill, Sakura, Chiba, Japan - 20060417.jpg"
+ },
+ "phyconvect": {
+  "src": "photo-phyconvect.jpg",
+  "author": "EyrianCon-struct",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:ConvectionCells.svg",
+  "file": "File:ConvectionCells.svg"
+ },
+ "phyexpand": {
+  "src": "photo-phyexpand.jpg",
+  "author": "CrazyD",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Dehnungsfuge.jpg",
+  "file": "File:Dehnungsfuge.jpg"
+ },
+ "physolarcell": {
+  "src": "photo-physolarcell.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Solar_cell.png",
+  "file": "File:Solar cell.png"
+ },
+ "phygenerate": {
+  "src": "photo-phygenerate.jpg",
+  "author": "Egmason",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alternator_1.svg",
+  "file": "File:Alternator 1.svg"
+ },
+ "phyirthermo": {
+  "src": "photo-phyirthermo.jpg",
+  "author": "tanohei",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CENTER350.jpg",
+  "file": "File:CENTER350.jpg"
+ },
+ "phyelectromag": {
+  "src": "photo-phyelectromag.jpg",
+  "author": "Simple_electromagnet.gif: The original uploader was Berserke…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Simple_electromagnet2.gif",
+  "file": "File:Simple electromagnet2.gif"
+ },
+ "phybulb": {
+  "src": "photo-phybulb.jpg",
+  "author": "KMJ",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gluehlampe_01_KMJ.jpg",
+  "file": "File:Gluehlampe 01 KMJ.jpg"
+ },
+ "physeries": {
+  "src": "photo-physeries.jpg",
+  "author": "Original: Xyzzy n Derivative work: Krinkle",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Series_and_parallel_circuits2.svg",
+  "file": "File:Series and parallel circuits2.svg"
+ },
+ "phycompass": {
+  "src": "photo-phycompass.jpg",
+  "author": "User:Bios~commonswiki",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kompas_Sofia.JPG",
+  "file": "File:Kompas Sofia.JPG"
+ },
+ "phydrycell": {
+  "src": "photo-phydrycell.jpg",
+  "author": "Aney",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Alkali_battery_5.jpg",
+  "file": "File:Alkali battery 5.jpg"
+ },
+ "phycircuit": {
+  "src": "photo-phycircuit.jpg",
+  "author": "GorillaWarfare",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ohm%27s_Law_with_Voltage_source_TeX.svg",
+  "file": "File:Ohm's Law with Voltage source TeX.svg"
+ },
+ "phyled": {
+  "src": "photo-phyled.jpg",
+  "author": "PiccoloNamek",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:RBG-LED.jpg",
+  "file": "File:RBG-LED.jpg"
+ },
+ "phycoil": {
+  "src": "photo-phycoil.jpg",
+  "author": "Miguel",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Electronic_component_inductors.jpg",
+  "file": "File:Electronic component inductors.jpg"
+ },
+ "phygalvano": {
+  "src": "photo-phygalvano.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gmeterdiagram.png",
+  "file": "File:Gmeterdiagram.png"
+ },
+ "phybarmagnet": {
+  "src": "photo-phybarmagnet.jpg",
+  "author": "Taiga.sato",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:IMG_%E7%A3%81%E7%9F%B3.jpg",
+  "file": "File:IMG 磁石.jpg"
+ },
+ "phywire": {
+  "src": "photo-phywire.jpg",
+  "author": "Marekich",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Leitungsende_Abisoliert_en.svg",
+  "file": "File:Leitungsende Abisoliert en.svg"
+ },
+ "phymagnifier": {
+  "src": "photo-phymagnifier.jpg",
+  "author": "Tamasflex",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BiconvexLens.jpg",
+  "file": "File:BiconvexLens.jpg"
+ },
+ "phypitch": {
+  "src": "photo-phypitch.jpg",
+  "author": "Sedley Taylor",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bach_-_Taylor_1873.png",
+  "file": "File:Bach - Taylor 1873.png"
+ },
+ "phymirror": {
+  "src": "photo-phymirror.jpg",
+  "author": "Cgs",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mirror.jpg",
+  "file": "File:Mirror.jpg"
+ },
+ "physhadow": {
+  "src": "photo-physhadow.jpg",
+  "author": "Akiyoshi's Room",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E9%9A%9C%E5%AD%90%E3%81%AB%E6%98%A0%E3%82%8B%E5%BD%B1Img568.jpg",
+  "file": "File:障子に映る影Img568.jpg"
+ },
+ "phystraight": {
+  "src": "photo-phystraight.jpg",
+  "author": "Lucas Löffler",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:USA_Antelope-Canyon.jpg",
+  "file": "File:USA Antelope-Canyon.jpg"
+ },
+ "physoundtravel": {
+  "src": "photo-physoundtravel.jpg",
+  "author": "Infrogmation of New Orleans",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Thoth08BigasDrumEvansChalmette.jpg",
+  "file": "File:Thoth08BigasDrumEvansChalmette.jpg"
+ },
+ "phyatmpress": {
+  "src": "photo-phyatmpress.jpg",
+  "author": "James Petts from London, England",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Barometer_(6824817752).jpg",
+  "file": "File:Barometer (6824817752).jpg"
+ },
+ "phynormal": {
+  "src": "photo-phynormal.jpg",
+  "author": "Traced by User:Stannered",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Incline.svg",
+  "file": "File:Incline.svg"
+ },
+ "phyhooke": {
+  "src": "photo-phyhooke.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ressort_de_compression.jpg",
+  "file": "File:Ressort de compression.jpg"
+ },
+ "phypower": {
+  "src": "photo-phypower.jpg",
+  "author": "プリントパック",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%99%82%E9%96%93%E3%83%BB%E8%B7%9D%E9%9B%A2%E3%83%BB%E9%80%9F%E5%BA%A6%E3%81%AB%E9%96%A2%E3%82%8F%E3%82%8B%E6%AC%A1%E5%85%83.png",
+  "file": "File:時間・距離・速度に関わる次元.png"
+ },
+ "phypotential": {
+  "src": "photo-phypotential.jpg",
+  "author": "Penny Mayes",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mediaeval_archery_reenactment.jpg",
+  "file": "File:Mediaeval archery reenactment.jpg"
+ },
+ "phykinetic": {
+  "src": "photo-phykinetic.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Wooden_roller_coaster_txgi.jpg",
+  "file": "File:Wooden roller coaster txgi.jpg"
+ },
+ "phymechcons": {
+  "src": "photo-phymechcons.jpg",
+  "author": "HereToHelp",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Orbital_motion.gif",
+  "file": "File:Orbital motion.gif"
+ },
+ "phymovpulley": {
+  "src": "photo-phymovpulley.jpg",
+  "author": "GK Bloemsma",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:PulleyShip.JPG",
+  "file": "File:PulleyShip.JPG"
+ },
+ "phyohm": {
+  "src": "photo-phyohm.jpg",
+  "author": "Original: unknown",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Georg_Simon_Ohm_(1789-1854).jpg",
+  "file": "File:Georg Simon Ohm (1789-1854).jpg"
+ },
+ "phyvoltage": {
+  "src": "photo-phyvoltage.jpg",
+  "author": "Lead holder",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AA_AAA_AAAA_A23_battery_comparison-1.jpg",
+  "file": "File:AA AAA AAAA A23 battery comparison-1.jpg"
+ },
+ "phystatic": {
+  "src": "photo-phystatic.jpg",
+  "author": "Chris Darling from Portland, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Static_on_the_playground_(48616367).jpg",
+  "file": "File:Static on the playground (48616367).jpg"
+ },
+ "phyelectron": {
+  "src": "photo-phyelectron.jpg",
+  "author": "Geek3",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Atomic-orbital-clouds_spd_m0.png",
+  "file": "File:Atomic-orbital-clouds spd m0.png"
+ },
+ "phymagfield": {
+  "src": "photo-phymagfield.jpg",
+  "author": "Geek3",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:VFPt_Solenoid_correct2.svg",
+  "file": "File:VFPt Solenoid correct2.svg"
+ },
+ "phyinduction": {
+  "src": "photo-phyinduction.jpg",
+  "author": "Ponor",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Electromagnetic_induction_-_solenoid_to_loop_-_animation.gif",
+  "file": "File:Electromagnetic induction - solenoid to loop - animation.gif"
+ },
+ "phyac": {
+  "src": "photo-phyac.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Waveforms.png",
+  "file": "File:Waveforms.png"
+ },
+ "phyrightscrew": {
+  "src": "photo-phyrightscrew.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Electromagnetism.png",
+  "file": "File:Electromagnetism.png"
+ },
+ "phyrefract": {
+  "src": "photo-phyrefract.jpg",
+  "author": "ajizai",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Refraction_photo.png",
+  "file": "File:Refraction photo.png"
+ },
+ "phytotalref": {
+  "src": "photo-phytotalref.jpg",
+  "author": "Friedrich Graf",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Total_internal_reflection.jpg",
+  "file": "File:Total internal reflection.jpg"
+ },
+ "phyrealimg": {
+  "src": "photo-phyrealimg.jpg",
+  "author": "Krishnavedala",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Real_image.svg",
+  "file": "File:Real image.svg"
+ },
+ "phyvirtimg": {
+  "src": "photo-phyvirtimg.jpg",
+  "author": "User PAR on en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:VirtualImage.png",
+  "file": "File:VirtualImage.png"
+ },
+ "phyfrequency": {
+  "src": "photo-phyfrequency.jpg",
+  "author": "Wikinana38",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B8%B8%E0%B9%89%E0%B8%A1%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4.gif",
+  "file": "File:ลูกตุ้มธรรมชาติ.gif"
+ },
+ "phyprism": {
+  "src": "photo-phyprism.jpg",
+  "author": "D-Kuru",
+  "license": "CC BY-SA 3.0 AT",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Prism-side-fs_PNr%C2%B00117.jpg",
+  "file": "File:Prism-side-fs PNr°0117.jpg"
+ },
+ "physoundspeed": {
+  "src": "photo-physoundspeed.jpg",
+  "author": "Ensign John Gay, U.S. Navy",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FA-18_Hornet_breaking_sound_barrier_(7_July_1999)_-_filtered.jpg",
+  "file": "File:FA-18 Hornet breaking sound barrier (7 July 1999) - filtered.jpg"
+ },
+ "phyfiber": {
+  "src": "photo-phyfiber.jpg",
+  "author": "BigRiz",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fibreoptic.jpg",
+  "file": "File:Fibreoptic.jpg"
+ },
+ "phyradiation": {
+  "src": "photo-phyradiation.jpg",
+  "author": "Original: Unknown authorUnknown author Vector: Uwe W.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Radiation_warning_symbol.svg",
+  "file": "File:Radiation warning symbol.svg"
+ },
+ "phycathode": {
+  "src": "photo-phycathode.jpg",
+  "author": "Sfu",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cyclotron_motion_smaller_view.jpg",
+  "file": "File:Cyclotron motion smaller view.jpg"
+ },
+ "phyradioactive": {
+  "src": "photo-phyradioactive.jpg",
+  "author": "Maksym Kozlenko",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2019-11-22_Radioactive_Plutonium_sample_at_Questacon_museum,_Canberra,_Australia.jpg",
+  "file": "File:2019-11-22 Radioactive Plutonium sample at Questacon museum, Canberra, Australia.jpg"
+ },
+ "phymomentum": {
+  "src": "photo-phymomentum.jpg",
+  "author": "No-w-ay in collaboration with H. Caps",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Billard.JPG",
+  "file": "File:Billard.JPG"
+ },
+ "phymomcons": {
+  "src": "photo-phymomcons.jpg",
+  "author": "DemonDeLuxe (Dominique Toussaint)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Newtons_cradle_animation_book.gif",
+  "file": "File:Newtons cradle animation book.gif"
+ },
+ "phyimpulse": {
+  "src": "photo-phyimpulse.jpg",
+  "author": "Master Sgt. Steve Miller",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Armedforces_jeffery_tee_shot.jpg",
+  "file": "File:Armedforces jeffery tee shot.jpg"
+ },
+ "phycentripetal": {
+  "src": "photo-phycentripetal.jpg",
+  "author": "J.delanoy",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roller_coaster_vertical_loop.ogv",
+  "file": "File:Roller coaster vertical loop.ogv"
+ },
+ "physhm": {
+  "src": "photo-physhm.jpg",
+  "author": "User:Evil_saltine",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Simple_harmonic_motion_animation.gif",
+  "file": "File:Simple harmonic motion animation.gif"
+ },
+ "phyrestitution": {
+  "src": "photo-phyrestitution.jpg",
+  "author": "高橋 宗史",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Colorful_Super_ball.jpg",
+  "file": "File:Colorful Super ball.jpg"
+ },
+ "phyboylecharles": {
+  "src": "photo-phyboylecharles.jpg",
+  "author": "Krishnavedala",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ideal_gas_isotherms.svg",
+  "file": "File:Ideal gas isotherms.svg"
+ },
+ "phycapacitor": {
+  "src": "photo-phycapacitor.jpg",
+  "author": "Eric Schrader from San Francisco, CA, United States",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Capacitors_(7189597135).jpg",
+  "file": "File:Capacitors (7189597135).jpg"
+ },
+ "phycoulomb": {
+  "src": "photo-phycoulomb.jpg",
+  "author": "File:CoulombsLaw.svg: User:Dna-Dennis / *derivative work RJB…",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CoulombsLaw_scal.svg",
+  "file": "File:CoulombsLaw scal.svg"
+ },
+ "phyefield": {
+  "src": "photo-phyefield.jpg",
+  "author": "Biswarup Ganguly",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_444.JPG",
+  "file": "File:Van de Graaff Generator - Science City - Calcutta 1997 444.JPG"
+ },
+ "phypotentialv": {
+  "src": "photo-phypotentialv.jpg",
+  "author": "Geek3",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:VFPt_metal_balls_largesmall_potential%2Bcontour.svg",
+  "file": "File:VFPt metal balls largesmall potential+contour.svg"
+ },
+ "phylorentz": {
+  "src": "photo-phylorentz.jpg",
+  "author": "Ponor",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lorentz_force_on_charged_particles_in_bubble_chamber_-_HD.6D.635_(12000265314).svg",
+  "file": "File:Lorentz force on charged particles in bubble chamber - HD.6D.635 (12000265314).svg"
+ },
+ "phytransformer": {
+  "src": "photo-phytransformer.jpg",
+  "author": "User: Mtodorov_69",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:WeldingTransformer-1.63.png",
+  "file": "File:WeldingTransformer-1.63.png"
+ },
+ "phydoppler": {
+  "src": "photo-phydoppler.jpg",
+  "author": "Pbroks13",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Doppler_effect.svg",
+  "file": "File:Doppler effect.svg"
+ },
+ "phyinterfere": {
+  "src": "photo-phyinterfere.jpg",
+  "author": "Brocken Inaglory",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Soap_bubble_sky.jpg",
+  "file": "File:Soap bubble sky.jpg"
+ },
+ "phydiffract": {
+  "src": "photo-phydiffract.jpg",
+  "author": "Inductiveload",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Diffraction_through_Slit.svg",
+  "file": "File:Diffraction through Slit.svg"
+ },
+ "phystanding": {
+  "src": "photo-phystanding.jpg",
+  "author": "Lucas Vieira",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Standing_wave.gif",
+  "file": "File:Standing wave.gif"
+ },
+ "phybeat": {
+  "src": "photo-phybeat.jpg",
+  "author": "Ansgar Hellwig",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Beating_Frequency.svg",
+  "file": "File:Beating Frequency.svg"
+ },
+ "phywavelength": {
+  "src": "photo-phywavelength.jpg",
+  "author": "UZic",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%B0%A1%E6%98%93%E3%81%AA%E6%B3%A2%E9%95%B7%E3%81%AE%E8%AA%AC%E6%98%8E.svg",
+  "file": "File:簡易な波長の説明.svg"
+ },
+ "phyresonance": {
+  "src": "photo-phyresonance.jpg",
+  "author": "Andrejdam",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:23._%D0%97%D0%B2%D1%83%D1%87%D0%BD%D0%B8_%D0%B2%D0%B8%D1%99%D1%83%D1%88%D0%BA%D0%B8.ogv",
+  "file": "File:23. Звучни виљушки.ogv"
+ },
+ "phyphotoelec": {
+  "src": "photo-phyphotoelec.jpg",
+  "author": "Ponor",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Photoelectric_effect_in_a_solid_-_diagram.svg",
+  "file": "File:Photoelectric effect in a solid - diagram.svg"
+ },
+ "phyphoton": {
+  "src": "photo-phyphoton.jpg",
+  "author": "彭嘉傑 at Chinese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Light_Amplification_by_Stimulated_Emission_of_Radiation.jpg",
+  "file": "File:Light Amplification by Stimulated Emission of Radiation.jpg"
+ },
+ "phyalpha": {
+  "src": "photo-phyalpha.jpg",
+  "author": "Inductiveload",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Alpha_Decay.svg",
+  "file": "File:Alpha Decay.svg"
+ },
+ "phybeta": {
+  "src": "photo-phybeta.jpg",
+  "author": "Inductiveload",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Beta-minus_Decay.svg",
+  "file": "File:Beta-minus Decay.svg"
+ },
+ "phygamma": {
+  "src": "photo-phygamma.jpg",
+  "author": "不明",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Gammadecay-1.jpg",
+  "file": "File:Gammadecay-1.jpg"
+ },
+ "phyxray": {
+  "src": "photo-phyxray.jpg",
+  "author": "Wilhelm Röntgen",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:First_medical_X-ray_by_Wilhelm_R%C3%B6ntgen_of_his_wife_Anna_Bertha_Ludwig%27s_hand_-_18951222.jpg",
+  "file": "File:First medical X-ray by Wilhelm Röntgen of his wife Anna Bertha Ludwig's hand - 18951222.jpg"
+ },
+ "phymassdefect": {
+  "src": "photo-phymassdefect.jpg",
+  "author": "Kjerish",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NuclearReaction.svg",
+  "file": "File:NuclearReaction.svg"
+ },
+ "phyelementary": {
+  "src": "photo-phyelementary.jpg",
+  "author": "MissMJ, Cush, Bcxfu75k",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles-ja.svg",
+  "file": "File:Standard Model of Elementary Particles-ja.svg"
+ },
+ "elhe": {
+  "src": "photo-elhe.jpg",
+  "author": "Jurii",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Helium-glow.jpg",
+  "file": "File:Helium-glow.jpg"
+ },
+ "elli": {
+  "src": "photo-elli.jpg",
+  "author": "Tomihahndorf at German Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lithium_paraffin.jpg",
+  "file": "File:Lithium paraffin.jpg"
+ },
+ "elb": {
+  "src": "photo-elb.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Bor_1.jpg",
+  "file": "File:Bor 1.jpg"
+ },
+ "elc": {
+  "src": "photo-elc.jpg",
+  "author": "Robert M. Lavinsky",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Diamond-and-graphite-with-scale.jpg",
+  "file": "File:Diamond-and-graphite-with-scale.jpg"
+ },
+ "eln": {
+  "src": "photo-eln.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Liquid_nitrogen_dsc04496.jpg",
+  "file": "File:Liquid nitrogen dsc04496.jpg"
+ },
+ "elf": {
+  "src": "photo-elf.jpg",
+  "author": ".mw-parser-output .plainlist ul{line-height:inherit;list-sty…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Liquid_fluorine_tighter_crop.jpg",
+  "file": "File:Liquid fluorine tighter crop.jpg"
+ },
+ "elne": {
+  "src": "photo-elne.jpg",
+  "author": "Jurii",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Neon-glow.jpg",
+  "file": "File:Neon-glow.jpg"
+ },
+ "elna": {
+  "src": "photo-elna.jpg",
+  "author": "The original uploader was Dnn87 at English Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Na_(Sodium).jpg",
+  "file": "File:Na (Sodium).jpg"
+ },
+ "elmg": {
+  "src": "photo-elmg.jpg",
+  "author": "Warut Roonguthai",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Magnesium_crystals.jpg",
+  "file": "File:Magnesium crystals.jpg"
+ },
+ "elal": {
+  "src": "photo-elal.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aluminium-4.jpg",
+  "file": "File:Aluminium-4.jpg"
+ },
+ "elsi": {
+  "src": "photo-elsi.jpg",
+  "author": "Enricoros at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:SiliconCroda.jpg",
+  "file": "File:SiliconCroda.jpg"
+ },
+ "elp": {
+  "src": "photo-elp.jpg",
+  "author": "Weißer_Phosphor.JPG: BXXXD at German Wikipedia Phosphor_rot.…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:PhosphComby.jpg",
+  "file": "File:PhosphComby.jpg"
+ },
+ "els": {
+  "src": "photo-els.jpg",
+  "author": "Robert M. Lavinsky",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sulfur-d05-37a.jpg",
+  "file": "File:Sulfur-d05-37a.jpg"
+ },
+ "elcl": {
+  "src": "photo-elcl.jpg",
+  "author": "W. Oelen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chlorine_ampoule.jpg",
+  "file": "File:Chlorine ampoule.jpg"
+ },
+ "elar": {
+  "src": "photo-elar.jpg",
+  "author": "Jurii",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Argon-glow.jpg",
+  "file": "File:Argon-glow.jpg"
+ },
+ "elk": {
+  "src": "photo-elk.jpg",
+  "author": "Dnn87",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Potassium.JPG",
+  "file": "File:Potassium.JPG"
+ },
+ "elti": {
+  "src": "photo-elti.jpg",
+  "author": "Alchemist-hp (pse-mendelejew.de)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Titan-crystal_bar.JPG",
+  "file": "File:Titan-crystal bar.JPG"
+ },
+ "elni": {
+  "src": "photo-elni.jpg",
+  "author": "Materialscientist (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nickel_chunk.jpg",
+  "file": "File:Nickel chunk.jpg"
+ },
+ "elcu": {
+  "src": "photo-elcu.jpg",
+  "author": "Native_Copper_Macro_Digon3.jpg: “Jonathan Zander (Digon3)\" d…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:NatCopper.jpg",
+  "file": "File:NatCopper.jpg"
+ },
+ "elbr": {
+  "src": "photo-elbr.jpg",
+  "author": "Greenhorn1",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bromine.jpg",
+  "file": "File:Bromine.jpg"
+ },
+ "elag": {
+  "src": "photo-elag.jpg",
+  "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Silver_crystal.jpg",
+  "file": "File:Silver crystal.jpg"
+ },
+ "elsn": {
+  "src": "photo-elsn.jpg",
+  "author": "Alchemist-hp (talk) (www.pse-mendelejew.de)",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Sn-Alpha-Beta.jpg",
+  "file": "File:Sn-Alpha-Beta.jpg"
+ },
+ "eli": {
+  "src": "photo-eli.jpg",
+  "author": "Greenhorn1",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Iodinecrystals.JPG",
+  "file": "File:Iodinecrystals.JPG"
+ },
+ "elcs": {
+  "src": "photo-elcs.jpg",
+  "author": "Dnn87 Contact email: Dnn87yahoo.dk",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cesium.jpg",
+  "file": "File:Cesium.jpg"
+ },
+ "elba": {
+  "src": "photo-elba.jpg",
+  "author": "Matthias Zepper",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Barium_unter_Argon_Schutzgas_Atmosph%C3%A4re.jpg",
+  "file": "File:Barium unter Argon Schutzgas Atmosphäre.jpg"
+ },
+ "elpt": {
+  "src": "photo-elpt.jpg",
+  "author": "Periodictableru",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Platinum_crystals.jpg",
+  "file": "File:Platinum crystals.jpg"
+ },
+ "elau": {
+  "src": "photo-elau.jpg",
+  "author": "Alchemist-hp (talk) www.pse-mendelejew.de",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Gold-crystals.jpg",
+  "file": "File:Gold-crystals.jpg"
+ },
+ "elhg": {
+  "src": "photo-elhg.jpg",
+  "author": "Bionerd",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pouring_liquid_mercury_bionerd.jpg",
+  "file": "File:Pouring liquid mercury bionerd.jpg"
+ },
+ "elu": {
+  "src": "photo-elu.jpg",
+  "author": "Unspecified",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:HEUraniumC.jpg",
+  "file": "File:HEUraniumC.jpg"
+ },
+ "chmsolid": {
+  "src": "photo-chmsolid.jpg",
+  "author": "NASA/Marshall",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Insulincrystals.jpg",
+  "file": "File:Insulincrystals.jpg"
+ },
+ "chmliquid": {
+  "src": "photo-chmliquid.jpg",
+  "author": "José Manuel Suárez from Spain",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Water_drop_001.jpg",
+  "file": "File:Water drop 001.jpg"
+ },
+ "chmgas": {
+  "src": "photo-chmgas.jpg",
+  "author": "Macluskie",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Purplesmoke.jpg",
+  "file": "File:Purplesmoke.jpg"
+ },
+ "chmboil": {
+  "src": "photo-chmboil.jpg",
+  "author": "user:Markus Schweiss",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kochendes_wasser02.jpg",
+  "file": "File:Kochendes wasser02.jpg"
+ },
+ "chmmetal": {
+  "src": "photo-chmmetal.jpg",
+  "author": "en:user:foobar",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gallium_crystals.jpg",
+  "file": "File:Gallium crystals.jpg"
+ },
+ "chmsolution": {
+  "src": "photo-chmsolution.jpg",
+  "author": "Original: Dr. Steven P. Berg Vector: Duncan Keall, Glrx, JoK…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Na%2BH2O.svg",
+  "file": "File:Na+H2O.svg"
+ },
+ "chmalkaline": {
+  "src": "photo-chmalkaline.jpg",
+  "author": "Malene Thyssen, simplified by HLHJ",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Handmade_soap_cropped_and_simplified.jpg",
+  "file": "File:Handmade soap cropped and simplified.jpg"
+ },
+ "chmlitmus": {
+  "src": "photo-chmlitmus.jpg",
+  "author": "Parvathisri",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1-Blue_and_red_litmus_paper.jpg",
+  "file": "File:1-Blue and red litmus paper.jpg"
+ },
+ "chmdissolve": {
+  "src": "photo-chmdissolve.jpg",
+  "author": "Picture taken by me -- Chris 73 14:12, 11 Dec 2004 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SaltInWaterSolutionLiquid.jpg",
+  "file": "File:SaltInWaterSolutionLiquid.jpg"
+ },
+ "chmlimewater": {
+  "src": "photo-chmlimewater.jpg",
+  "author": "Picture taken by w:User:Walkerma in June 2005.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Calcium_hydroxide.jpg",
+  "file": "File:Calcium hydroxide.jpg"
+ },
+ "chmsoda": {
+  "src": "photo-chmsoda.jpg",
+  "author": "Nevit Dilmen (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Drinking_glass_00118.gif",
+  "file": "File:Drinking glass 00118.gif"
+ },
+ "chmhcl": {
+  "src": "photo-chmhcl.jpg",
+  "author": "Innerstream",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hydrochloric_acid_dissociated.svg",
+  "file": "File:Hydrochloric acid dissociated.svg"
+ },
+ "chmnaoh": {
+  "src": "photo-chmnaoh.jpg",
+  "author": "Walkerma",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:SodiumHydroxide.jpg",
+  "file": "File:SodiumHydroxide.jpg"
+ },
+ "chmalum": {
+  "src": "photo-chmalum.jpg",
+  "author": "No machine-readable author provided. Walkerma assumed (based…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Alum.jpg",
+  "file": "File:Alum.jpg"
+ },
+ "chmboric": {
+  "src": "photo-chmboric.jpg",
+  "author": "Ben Mills",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Boric-acid-3D-balls.png",
+  "file": "File:Boric-acid-3D-balls.png"
+ },
+ "chmburn": {
+  "src": "photo-chmburn.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Flamme.jpg",
+  "file": "File:Flamme.jpg"
+ },
+ "chmcharcoal": {
+  "src": "photo-chmcharcoal.jpg",
+  "author": "STRONGlk7",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Binch%C5%8Dtan_(Japanese_high-grade_charcoal_produced_from_ubame_oak).jpg",
+  "file": "File:Japanese Binchōtan (Japanese high-grade charcoal produced from ubame oak).jpg"
+ },
+ "chmcylinder": {
+  "src": "photo-chmcylinder.jpg",
+  "author": "Praphai Donphaimueang",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Different_types_of_graduated_cylinder-_10ml,_25ml,_50ml_and_100_ml_graduated_cylinder.jpg",
+  "file": "File:Different types of graduated cylinder- 10ml, 25ml, 50ml and 100 ml graduated cylinder.jpg"
+ },
+ "chmlamp": {
+  "src": "photo-chmlamp.jpg",
+  "author": "Trisawan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aluminum_alcohol_burner.jpg",
+  "file": "File:Aluminum alcohol burner.jpg"
+ },
+ "chmfilter": {
+  "src": "photo-chmfilter.jpg",
+  "author": "Suman6395",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hot_FIltration.jpg",
+  "file": "File:Hot FIltration.jpg"
+ },
+ "chmevap": {
+  "src": "photo-chmevap.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Watervapor_cup.jpg",
+  "file": "File:Watervapor cup.jpg"
+ },
+ "chmbeaker": {
+  "src": "photo-chmbeaker.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Beakers.jpg",
+  "file": "File:Beakers.jpg"
+ },
+ "chmtube": {
+  "src": "photo-chmtube.jpg",
+  "author": "Jeffrey M. Vinocur",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Test_tubes.jpg",
+  "file": "File:Test tubes.jpg"
+ },
+ "chmbalance": {
+  "src": "photo-chmbalance.jpg",
+  "author": "US DEA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Analytical_balance_mettler_ae-260.jpg",
+  "file": "File:Analytical balance mettler ae-260.jpg"
+ },
+ "chmfunnel": {
+  "src": "photo-chmfunnel.jpg",
+  "author": "Donovan Govan.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kitchen_Funnel.jpg",
+  "file": "File:Kitchen Funnel.jpg"
+ },
+ "chmevapdish": {
+  "src": "photo-chmevapdish.jpg",
+  "author": "Simon A. Eugster",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Abdampfschalen_verschiedene_Groessen.jpg",
+  "file": "File:Abdampfschalen verschiedene Groessen.jpg"
+ },
+ "chmspatula": {
+  "src": "photo-chmspatula.jpg",
+  "author": "Ahellwig",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Spoon_Spatula.jpg",
+  "file": "File:Spoon Spatula.jpg"
+ },
+ "chmcandle": {
+  "src": "photo-chmcandle.jpg",
+  "author": "4028mdk09",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Einzelne_Kerze.JPG",
+  "file": "File:Einzelne Kerze.JPG"
+ },
+ "chmchange": {
+  "src": "photo-chmchange.jpg",
+  "author": "F l a n k e r, penubag",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Phase_change_-_ja.svg",
+  "file": "File:Phase change - ja.svg"
+ },
+ "chmmp": {
+  "src": "photo-chmmp.jpg",
+  "author": "Ulflund",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Melting_ice_thermometer.jpg",
+  "file": "File:Melting ice thermometer.jpg"
+ },
+ "chmbp": {
+  "src": "photo-chmbp.jpg",
+  "author": "Original work:Bild:Alkanschmelzundsiedepunkt.png / derivativ…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Alkanschmelzundsiedepunkt.svg",
+  "file": "File:Alkanschmelzundsiedepunkt.svg"
+ },
+ "chmmalleable": {
+  "src": "photo-chmmalleable.jpg",
+  "author": "Sigmund",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Al_tensile_test.jpg",
+  "file": "File:Al tensile test.jpg"
+ },
+ "chmrecryst": {
+  "src": "photo-chmrecryst.jpg",
+  "author": "Krauss",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Process-of-Crystallization-200px.png",
+  "file": "File:Process-of-Crystallization-200px.png"
+ },
+ "chmph": {
+  "src": "photo-chmph.jpg",
+  "author": "ChatGPT, Original image is https://commons.wikimedia.org/wik…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:216_pH_Scale-01_ja.png",
+  "file": "File:216 pH Scale-01 ja.png"
+ },
+ "chmbtb": {
+  "src": "photo-chmbtb.jpg",
+  "author": "No machine-readable author provided. Benjah-bmm27 assumed (b…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bromothymol-blue-2D-skeletal.png",
+  "file": "File:Bromothymol-blue-2D-skeletal.png"
+ },
+ "chmphenol": {
+  "src": "photo-chmphenol.jpg",
+  "author": "Andel Früh",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Phenolphthalein.svg",
+  "file": "File:Phenolphthalein.svg"
+ },
+ "chmchemchange": {
+  "src": "photo-chmchemchange.jpg",
+  "author": "User:Nikthestunned (Wikipedia)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ThermiteReaction.jpg",
+  "file": "File:ThermiteReaction.jpg"
+ },
+ "chmoxidation": {
+  "src": "photo-chmoxidation.jpg",
+  "author": "Petrovskyz",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:16._%D0%A0%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D1%98%D0%B0_%D0%BC%D0%B5%D1%93%D1%83_%D1%81%D0%B8%D0%BB%D0%BD%D0%BE_%D0%BE%D0%BA%D1%81%D0%B8%D0%B4%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BE_%D0%B8_%D1%80%D0%B5%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%BE_%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%BE.webm",
+  "file": "File:16. Реакција меѓу силно оксидационо и редукционо средство.webm"
+ },
+ "chmcuo": {
+  "src": "photo-chmcuo.jpg",
+  "author": "User Walkerma on en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:CopperIIoxide.jpg",
+  "file": "File:CopperIIoxide.jpg"
+ },
+ "chmatom": {
+  "src": "photo-chmatom.jpg",
+  "author": "User:Yzmo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Helium_atom_QM.svg",
+  "file": "File:Helium atom QM.svg"
+ },
+ "chmmolecule": {
+  "src": "photo-chmmolecule.jpg",
+  "author": "Kota Iwata et al.",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:PTCDA_AFM.jpg",
+  "file": "File:PTCDA AFM.jpg"
+ },
+ "chmelement": {
+  "src": "photo-chmelement.jpg",
+  "author": "User:Double sharp, based on File:Simple Periodic Table Chart…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Simple_Periodic_Table_Chart-blocks.svg",
+  "file": "File:Simple Periodic Table Chart-blocks.svg"
+ },
+ "chmcompound": {
+  "src": "photo-chmcompound.jpg",
+  "author": "Roger McLassus",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:2006-02-13_Drop-impact.jpg",
+  "file": "File:2006-02-13 Drop-impact.jpg"
+ },
+ "chmionize": {
+  "src": "photo-chmionize.jpg",
+  "author": "Pavel.shyshkouski",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aurora_in_Abisko_near_Tornetr%C3%A4sk.jpg",
+  "file": "File:Aurora in Abisko near Torneträsk.jpg"
+ },
+ "chmperiodic": {
+  "src": "photo-chmperiodic.jpg",
+  "author": "iseri",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Atom(ver.2018.06).jpg",
+  "file": "File:Atom(ver.2018.06).jpg"
+ },
+ "chmburner": {
+  "src": "photo-chmburner.jpg",
+  "author": "Amfeli",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mechero_Bunsen.jpg",
+  "file": "File:Mechero Bunsen.jpg"
+ },
+ "chmwaterdisp": {
+  "src": "photo-chmwaterdisp.jpg",
+  "author": "すじにくシチュー",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%B0%B4%E4%B8%8A%E7%BD%AE%E6%8F%9B%E6%B3%95svg.svg",
+  "file": "File:水上置換法svg.svg"
+ },
+ "chmdowndisp": {
+  "src": "photo-chmdowndisp.jpg",
+  "author": "すじにくシチュー",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E4%B8%8B%E6%96%B9%E7%BD%AE%E6%8F%9B%E6%B3%95-svg.svg",
+  "file": "File:下方置換法-svg.svg"
+ },
+ "chmboilchip": {
+  "src": "photo-chmboilchip.jpg",
+  "author": "Carsten Niehaus",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Siedesteinchen.jpg",
+  "file": "File:Siedesteinchen.jpg"
+ },
+ "chmorganic": {
+  "src": "photo-chmorganic.jpg",
+  "author": "SVG version by Patricia.fidi",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Methane-2D-stereo.svg",
+  "file": "File:Methane-2D-stereo.svg"
+ },
+ "chmplastic": {
+  "src": "photo-chmplastic.jpg",
+  "author": "ImGz",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Plastic_household_items.jpg",
+  "file": "File:Plastic household items.jpg"
+ },
+ "chmpe": {
+  "src": "photo-chmpe.jpg",
+  "author": "Lluis tgn",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Polyethylene_balls1.jpg",
+  "file": "File:Polyethylene balls1.jpg"
+ },
+ "chmps": {
+  "src": "photo-chmps.jpg",
+  "author": "Yikrazuul",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Polystyrene.svg",
+  "file": "File:Polystyrene.svg"
+ },
+ "chmallotrope": {
+  "src": "photo-chmallotrope.jpg",
+  "author": "User:Itub",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Diamond_and_graphite.jpg",
+  "file": "File:Diamond and graphite.jpg"
+ },
+ "chmvapor": {
+  "src": "photo-chmvapor.jpg",
+  "author": "HellTchi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vapor_pressure.svg",
+  "file": "File:Vapor pressure.svg"
+ },
+ "chmfpd": {
+  "src": "photo-chmfpd.jpg",
+  "author": "Michael Pereckas from Milwaukee, WI, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Salt_truck_Milwaukee.jpg",
+  "file": "File:Salt truck Milwaukee.jpg"
+ },
+ "chmcolloid": {
+  "src": "photo-chmcolloid.jpg",
+  "author": "Stefan Kühn",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Milk_glass.jpg",
+  "file": "File:Milk glass.jpg"
+ },
+ "chmrate": {
+  "src": "photo-chmrate.jpg",
+  "author": "No machine-readable author provided. Miskatonic assumed (bas…",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Rust03102006.JPG",
+  "file": "File:Rust03102006.JPG"
+ },
+ "chmdaniell": {
+  "src": "photo-chmdaniell.jpg",
+  "author": "Noraneko",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Galvanic_cell-ja.png",
+  "file": "File:Galvanic cell-ja.png"
+ },
+ "chmavogadro": {
+  "src": "photo-chmavogadro.jpg",
+  "author": "The original uploader was Anton at German Wikipedia.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Amadeo_Avogadro.png",
+  "file": "File:Amadeo Avogadro.png"
+ },
+ "chmcovalent": {
+  "src": "photo-chmcovalent.jpg",
+  "author": "Jacek FH",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Covalent_bond_hydrogen.svg",
+  "file": "File:Covalent bond hydrogen.svg"
+ },
+ "chmionic": {
+  "src": "photo-chmionic.jpg",
+  "author": "Wdcf",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NaF.gif",
+  "file": "File:NaF.gif"
+ },
+ "chmmetallic": {
+  "src": "photo-chmmetallic.jpg",
+  "author": "JackFromReedsburg",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Metallic_Bonding_Example.svg",
+  "file": "File:Metallic Bonding Example.svg"
+ },
+ "chmhbond": {
+  "src": "photo-chmhbond.jpg",
+  "author": "M stone at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hydrogen_Bond_Quadruple_AngewChemIntEd_1998_v37_p75.jpg",
+  "file": "File:Hydrogen Bond Quadruple AngewChemIntEd 1998 v37 p75.jpg"
+ },
+ "chmimf": {
+  "src": "photo-chmimf.jpg",
+  "author": "User Qwerter at Czech wikipedia: Qwerter. Transferred from c…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:3D_model_hydrogen_bonds_in_water.svg",
+  "file": "File:3D model hydrogen bonds in water.svg"
+ },
+ "chmvalence": {
+  "src": "photo-chmvalence.jpg",
+  "author": "DynaBlast",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Covalent.svg",
+  "file": "File:Covalent.svg"
+ },
+ "chmcoord": {
+  "src": "photo-chmcoord.jpg",
+  "author": "Vectorization: EliseEtc",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Coordinate_Covalent_Bonding.svg",
+  "file": "File:Coordinate Covalent Bonding.svg"
+ },
+ "chmfuncgroup": {
+  "src": "photo-chmfuncgroup.jpg",
+  "author": "Jonatan Svensson Glad",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Benzyl_acetate_-_functional_groups_and_moieties.svg",
+  "file": "File:Benzyl acetate - functional groups and moieties.svg"
+ },
+ "chmisomer": {
+  "src": "photo-chmisomer.jpg",
+  "author": "Morivert",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Butanol_isomers.PNG",
+  "file": "File:Butanol isomers.PNG"
+ },
+ "chmhydrocarbon": {
+  "src": "photo-chmhydrocarbon.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Methane-3D-balls.png",
+  "file": "File:Methane-3D-balls.png"
+ },
+ "chmalkane": {
+  "src": "photo-chmalkane.jpg",
+  "author": "Dbc334 (first version); Jynto (second version).",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Methane-3D-space-filling.svg",
+  "file": "File:Methane-3D-space-filling.svg"
+ },
+ "chmalkene": {
+  "src": "photo-chmalkene.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ethylene-3D-vdW.png",
+  "file": "File:Ethylene-3D-vdW.png"
+ },
+ "chmbenzene": {
+  "src": "photo-chmbenzene.jpg",
+  "author": "NadirSH",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Benzene_geometrie_(2).svg",
+  "file": "File:Benzene geometrie (2).svg"
+ },
+ "chmester": {
+  "src": "photo-chmester.jpg",
+  "author": "FFSepp",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ester.svg",
+  "file": "File:Ester.svg"
+ },
+ "chmaddpoly": {
+  "src": "photo-chmaddpoly.jpg",
+  "author": "Ben Mills and Jynto",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Polyacetylene-3D-balls.png",
+  "file": "File:Polyacetylene-3D-balls.png"
+ },
+ "chmcondpoly": {
+  "src": "photo-chmcondpoly.jpg",
+  "author": "ljfa-ag Diskussion",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:PET.svg",
+  "file": "File:PET.svg"
+ },
+ "chmnylon": {
+  "src": "photo-chmnylon.jpg",
+  "author": "D.328 2008/10/3 08:03 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nylon6_and_Nylon6,6_structure.svg",
+  "file": "File:Nylon6 and Nylon6,6 structure.svg"
+ },
+ "chmtitration": {
+  "src": "photo-chmtitration.jpg",
+  "author": "Maytouch L.",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Titration_NaOH_HCl_PP.ogv",
+  "file": "File:Titration NaOH HCl PP.ogv"
+ },
+ "chmburette": {
+  "src": "photo-chmburette.jpg",
+  "author": "Karl Friedrich Mohr, Joseph Meyer, et al.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mohrs_Quetschhahnb%C3%BCrette.jpg",
+  "file": "File:Mohrs Quetschhahnbürette.jpg"
+ },
+ "biogermination": {
+  "src": "photo-biogermination.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sunflower_seedlings.jpg",
+  "file": "File:Sunflower seedlings.jpg"
+ },
+ "biopollination": {
+  "src": "photo-biopollination.jpg",
+  "author": "Malene Thyssen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bombus_Bumblebee_(Bestoevning).jpg",
+  "file": "File:Bombus Bumblebee (Bestoevning).jpg"
+ },
+ "biostamen": {
+  "src": "photo-biostamen.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Amaryllis_stamens_aka.jpg",
+  "file": "File:Amaryllis stamens aka.jpg"
+ },
+ "biopistil": {
+  "src": "photo-biopistil.jpg",
+  "author": "original: Magnolia_Watsoni.JPG: WibblyWibby derivative work:…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Magnolia_wieseneri_-_labelled_gynoecium.jpg",
+  "file": "File:Magnolia wieseneri - labelled gynoecium.jpg"
+ },
+ "biocotyledon": {
+  "src": "photo-biocotyledon.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fagus_crenata_in_Mount_Haku_2010-06-11.jpg",
+  "file": "File:Fagus crenata in Mount Haku 2010-06-11.jpg"
+ },
+ "bioseed": {
+  "src": "photo-bioseed.jpg",
+  "author": "No machine-readable author provided. Mdf assumed (based on c…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Milkweed-in-seed2.jpg",
+  "file": "File:Milkweed-in-seed2.jpg"
+ },
+ "biosepal": {
+  "src": "photo-biosepal.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Swertia_bimaculata_(sepal_s2).jpg",
+  "file": "File:Swertia bimaculata (sepal s2).jpg"
+ },
+ "biogourd": {
+  "src": "photo-biogourd.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Luffa_aegyptica.jpg",
+  "file": "File:Luffa aegyptica.jpg"
+ },
+ "biomorningglory": {
+  "src": "photo-biomorningglory.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ipomoea_nil_Akatsukinoumi1.jpg",
+  "file": "File:Ipomoea nil Akatsukinoumi1.jpg"
+ },
+ "biobittergourd": {
+  "src": "photo-biobittergourd.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Momordica_charantia1.jpg",
+  "file": "File:Momordica charantia1.jpg"
+ },
+ "biobalsam": {
+  "src": "photo-biobalsam.jpg",
+  "author": "Kurt Stüber [1]",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Impatiens_balsamina0.jpg",
+  "file": "File:Impatiens balsamina0.jpg"
+ },
+ "biokidneybean": {
+  "src": "photo-biokidneybean.jpg",
+  "author": "Rasbak",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Snijboon_peulen_Phaseolus_vulgaris.jpg",
+  "file": "File:Snijboon peulen Phaseolus vulgaris.jpg"
+ },
+ "biobud": {
+  "src": "photo-biobud.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:LotusBud0048b.jpg",
+  "file": "File:LotusBud0048b.jpg"
+ },
+ "biowinterbud": {
+  "src": "photo-biowinterbud.jpg",
+  "author": "Rosser1954",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aesculus_hippocastanum_bud_and_its_sticky_cataphylls,_Spiers_Old_School_Grounds,_Beith.jpg",
+  "file": "File:Aesculus hippocastanum bud and its sticky cataphylls, Spiers Old School Grounds, Beith.jpg"
+ },
+ "biodandelion": {
+  "src": "photo-biodandelion.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:L%C3%B6wenzahn_uhf.JPG",
+  "file": "File:Löwenzahn uhf.JPG"
+ },
+ "biowaterweed": {
+  "src": "photo-biowaterweed.jpg",
+  "author": "おむこさん志望",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Aquatic_Plants_and_Japanese_Killifish.JPG",
+  "file": "File:Aquatic Plants and Japanese Killifish.JPG"
+ },
+ "bioinsect": {
+  "src": "photo-bioinsect.jpg",
+  "author": "Bugboy52.40",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Insect_collage.png",
+  "file": "File:Insect collage.png"
+ },
+ "biopupa": {
+  "src": "photo-biopupa.jpg",
+  "author": "De Sousa, V.; Couri, M.",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pupae_of_Japanagromyza_inferna_Spencer_in_gall_of_Centrosema_virginianum_L._-_ZooKeys-374-045-g005.jpg",
+  "file": "File:Pupae of Japanagromyza inferna Spencer in gall of Centrosema virginianum L. - ZooKeys-374-045-g005.jpg"
+ },
+ "bioincompletemeta": {
+  "src": "photo-bioincompletemeta.jpg",
+  "author": "Beatriz Moisset",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Milkweedbugs.nymphadult9.0.jpg",
+  "file": "File:Milkweedbugs.nymphadult9.0.jpg"
+ },
+ "biolarva": {
+  "src": "photo-biolarva.jpg",
+  "author": "Beatriz Moisset",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eurosta_solidaginis_larva.jpg",
+  "file": "File:Eurosta solidaginis larva.jpg"
+ },
+ "bioimago": {
+  "src": "photo-bioimago.jpg",
+  "author": "T. N. Mundhenk",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Cicada_molting_animated-2.gif",
+  "file": "File:Cicada molting animated-2.gif"
+ },
+ "biocabbagebf": {
+  "src": "photo-biocabbagebf.jpg",
+  "author": "Nesnad",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pieris_rapae_-_Kanagawa_-_2025_7_5.webm",
+  "file": "File:Pieris rapae - Kanagawa - 2025 7 5.webm"
+ },
+ "biomedaka": {
+  "src": "photo-biomedaka.jpg",
+  "author": "Seotaro",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryzias_latipes.jpg",
+  "file": "File:Oryzias latipes.jpg"
+ },
+ "biotadpole": {
+  "src": "photo-biotadpole.jpg",
+  "author": "Greg Schechter from San Francisco, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tadpoles_-_Flickr_-_GregTheBusker_(1).jpg",
+  "file": "File:Tadpoles - Flickr - GregTheBusker (1).jpg"
+ },
+ "bioantenna": {
+  "src": "photo-bioantenna.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Actias_aliena_(antennae).jpg",
+  "file": "File:Actias aliena (antennae).jpg"
+ },
+ "biocompoundeye": {
+  "src": "photo-biocompoundeye.jpg",
+  "author": "Insects Unlocked",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Eyes_and_ocelli_of_an_orchid_bee_(Apidae,_Euglossa_hansoni_(Moure))_(36522833083).jpg",
+  "file": "File:Eyes and ocelli of an orchid bee (Apidae, Euglossa hansoni (Moure)) (36522833083).jpg"
+ },
+ "biopillbug": {
+  "src": "photo-biopillbug.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:ArmadillidiumVulgare.jpg",
+  "file": "File:ArmadillidiumVulgare.jpg"
+ },
+ "biohibernation": {
+  "src": "photo-biohibernation.jpg",
+  "author": "Magne Flåten",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eptesicus_nilssonii_hibernating.JPG",
+  "file": "File:Eptesicus nilssonii hibernating.JPG"
+ },
+ "biomigratorybird": {
+  "src": "photo-biomigratorybird.jpg",
+  "author": "Thermos",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:BrantaLeucopsisMigration.jpg",
+  "file": "File:BrantaLeucopsisMigration.jpg"
+ },
+ "biobeetle": {
+  "src": "photo-biobeetle.jpg",
+  "author": "Kinokoekuwagata",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%AB%E3%83%96%E3%83%88%E3%83%A0%E3%82%B7_%E3%82%AA%E3%82%B9.JPG",
+  "file": "File:カブトムシ オス.JPG"
+ },
+ "biograsshopper": {
+  "src": "photo-biograsshopper.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_tonosamabatta5061.jpg",
+  "file": "File:W tonosamabatta5061.jpg"
+ },
+ "bioyago": {
+  "src": "photo-bioyago.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Aeshna_cyanea_-_larva_(aka).jpg",
+  "file": "File:Aeshna cyanea - larva (aka).jpg"
+ },
+ "biocicada": {
+  "src": "photo-biocicada.jpg",
+  "author": "ウミユスリカ",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ezoharuzemi.jpg",
+  "file": "File:Ezoharuzemi.jpg"
+ },
+ "biooviparous": {
+  "src": "photo-biooviparous.jpg",
+  "author": "Balakrishnan Valappil",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pioneer_egglaying_2008_11_21_chinnar_999_30_chinnar_(3297204907).jpg",
+  "file": "File:Pioneer egglaying 2008 11 21 chinnar 999 30 chinnar (3297204907).jpg"
+ },
+ "biodaphnia": {
+  "src": "photo-biodaphnia.jpg",
+  "author": "(Photo: Paul Hebert)",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Daphnia_pulex.png",
+  "file": "File:Daphnia pulex.png"
+ },
+ "bioparamecium": {
+  "src": "photo-bioparamecium.jpg",
+  "author": "Barfooz at the English Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Paramecium.jpg",
+  "file": "File:Paramecium.jpg"
+ },
+ "bioclosterium": {
+  "src": "photo-bioclosterium.jpg",
+  "author": "Andrei Savitsky",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%9E%D0%B4%D0%BD%D0%BE%D0%BA%D0%BB%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D0%B0%D1%8F_%D0%B2%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D1%81%D0%BB%D1%8C_Closterium.jpg",
+  "file": "File:Одноклеточная водоросль Closterium.jpg"
+ },
+ "biospirogyra": {
+  "src": "photo-biospirogyra.jpg",
+  "author": "Wiedehopf20",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_freshwater_alga_Spirogyra.jpg",
+  "file": "File:The freshwater alga Spirogyra.jpg"
+ },
+ "bioplankton": {
+  "src": "photo-bioplankton.jpg",
+  "author": "Zappys Technology Solutions",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Neuston,_Plankton,_Nekton,_Benthos.jpg",
+  "file": "File:Neuston, Plankton, Nekton, Benthos.jpg"
+ },
+ "biovorticella": {
+  "src": "photo-biovorticella.jpg",
+  "author": "Ｋｓ",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Turiganemusikorony.jpg",
+  "file": "File:Turiganemusikorony.jpg"
+ },
+ "biodiatom": {
+  "src": "photo-biodiatom.jpg",
+  "author": "Ernst Haeckel",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Haeckel_Diatomea_4.jpg",
+  "file": "File:Haeckel Diatomea 4.jpg"
+ },
+ "biofoodchain": {
+  "src": "photo-biofoodchain.jpg",
+  "author": "Tomomarusan",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Hierodula_patellifera_preys_on_maculaticollis.JPG",
+  "file": "File:Hierodula patellifera preys on maculaticollis.JPG"
+ },
+ "bioleafmold": {
+  "src": "photo-bioleafmold.jpg",
+  "author": "Original: Wilsonbiggs Vector: EssensStrassen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Soil_Horizons.svg",
+  "file": "File:Soil Horizons.svg"
+ },
+ "biobiotope": {
+  "src": "photo-biobiotope.jpg",
+  "author": "撮影： 長谷川佐権利者： 長谷川佐",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Biotop_En_20200721.jpg",
+  "file": "File:Biotop En 20200721.jpg"
+ },
+ "bioangiosperm": {
+  "src": "photo-bioangiosperm.jpg",
+  "author": "Kurt Stüber [1]",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Magnolia_kobus_borealis1.jpg",
+  "file": "File:Magnolia kobus borealis1.jpg"
+ },
+ "biogymnosperm": {
+  "src": "photo-biogymnosperm.jpg",
+  "author": "Karen Johnson",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fichtennadel.jpg",
+  "file": "File:Fichtennadel.jpg"
+ },
+ "biomonocot": {
+  "src": "photo-biomonocot.jpg",
+  "author": "Ramjchandran",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ginger_plants.jpg",
+  "file": "File:Ginger plants.jpg"
+ },
+ "biodicot": {
+  "src": "photo-biodicot.jpg",
+  "author": "No machine-readable author provided. Rickjpelleg assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Young_castor_bean_plant_showing_prominent_cotyledons.jpg",
+  "file": "File:Young castor bean plant showing prominent cotyledons.jpg"
+ },
+ "biofern": {
+  "src": "photo-biofern.jpg",
+  "author": "de Paula LFA, Azevedo LO, Mauad LP, Cardoso LJT, Braga JMA, …",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferns_and_lycophytes_(10.3897-BDJ.8.e53135)_Figure_8.jpeg",
+  "file": "File:Ferns and lycophytes (10.3897-BDJ.8.e53135) Figure 8.jpeg"
+ },
+ "biomoss": {
+  "src": "photo-biomoss.jpg",
+  "author": "Kristian Peters -- Fabelfroh 14:35, 21 October 2007 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Polytrichum_commune.jpeg",
+  "file": "File:Polytrichum commune.jpeg"
+ },
+ "biotranspiration": {
+  "src": "photo-biotranspiration.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:FA_Geisenheim22.jpg",
+  "file": "File:FA Geisenheim22.jpg"
+ },
+ "biostomata": {
+  "src": "photo-biostomata.jpg",
+  "author": "Photohound",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tomato_leaf_stomate_1-color.jpg",
+  "file": "File:Tomato leaf stomate 1-color.jpg"
+ },
+ "bioovule": {
+  "src": "photo-bioovule.jpg",
+  "author": "Takoradee",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E8%83%9A%E7%8F%A0%E3%81%A8%E7%8F%A0%E6%9F%84.jpg",
+  "file": "File:胚珠と珠柄.jpg"
+ },
+ "biotaproot": {
+  "src": "photo-biotaproot.jpg",
+  "author": "Claus Ableiter",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wurzeln_am_Bergh%C3%A4user_Altrhein,_Speyerer_Auwald.JPG",
+  "file": "File:Wurzeln am Berghäuser Altrhein, Speyerer Auwald.JPG"
+ },
+ "bioroothair": {
+  "src": "photo-bioroothair.jpg",
+  "author": "Oregon Caves from Cave Junction, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mycorhizae_fungus_(10333483254).jpg",
+  "file": "File:Mycorhizae fungus (10333483254).jpg"
+ },
+ "bioexoskeleton": {
+  "src": "photo-bioexoskeleton.jpg",
+  "author": "Gunnar Creutz",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cancer_pagurus_at_G%C3%B6teborgs_Naturhistoriska_Museum_8948.jpg",
+  "file": "File:Cancer pagurus at Göteborgs Naturhistoriska Museum 8948.jpg"
+ },
+ "biomantle": {
+  "src": "photo-biomantle.jpg",
+  "author": "Hans Hillewaert",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Loligo_vulgaris.jpg",
+  "file": "File:Loligo vulgaris.jpg"
+ },
+ "bioherbivore": {
+  "src": "photo-bioherbivore.jpg",
+  "author": "Raul654.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:White-tailed_deer_(Odocoileus_virginianus)_grazing_-_20050809.jpg",
+  "file": "File:White-tailed deer (Odocoileus virginianus) grazing - 20050809.jpg"
+ },
+ "biovertebrate": {
+  "src": "photo-biovertebrate.jpg",
+  "author": "User:Follix User:Jamez42 User:Albert kok User:Tiithunt",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vertebrata_002.png",
+  "file": "File:Vertebrata 002.png"
+ },
+ "bioinvertebrate": {
+  "src": "photo-bioinvertebrate.jpg",
+  "author": "Dan90266",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jelly_cc11.jpg",
+  "file": "File:Jelly cc11.jpg"
+ },
+ "bioarthropod": {
+  "src": "photo-bioarthropod.jpg",
+  "author": "Cédric Aria, Fangchen Zhao, Han Zeng, Jin Guo, Maoyan Zhu Di…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Arthropoda_collage.png",
+  "file": "File:Arthropoda collage.png"
+ },
+ "biomollusk": {
+  "src": "photo-biomollusk.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Caribbean_reef_squid.jpg",
+  "file": "File:Caribbean reef squid.jpg"
+ },
+ "biocrustacean": {
+  "src": "photo-biocrustacean.jpg",
+  "author": "Amada44 Keisotyo Matthew R. Lee Jonhlifar9 Quentin Groom Sil…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Crustacea_collage.png",
+  "file": "File:Crustacea collage.png"
+ },
+ "bioamphibian": {
+  "src": "photo-bioamphibian.jpg",
+  "author": "Various; see each photo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Amphibians.png",
+  "file": "File:Amphibians.png"
+ },
+ "bioreptile": {
+  "src": "photo-bioreptile.jpg",
+  "author": "Haplochromis Leigh Bedford Dmitry Bogdanov Kevmin Nobu Tamur…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sauropsida_exemple.jpg",
+  "file": "File:Sauropsida exemple.jpg"
+ },
+ "biobird": {
+  "src": "photo-biobird.jpg",
+  "author": "Southern_cassowary.jpg: Frank Wouters of Antwerp, Belgium He…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bird_Diversity_2011.png",
+  "file": "File:Bird Diversity 2011.png"
+ },
+ "biomammal": {
+  "src": "photo-biomammal.jpg",
+  "author": "Dermoptère-2011-02-02.JPG: *Dermoptère.JPG: Didasteph deriva…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mammal_Diversity_2011.png",
+  "file": "File:Mammal Diversity 2011.png"
+ },
+ "biofish": {
+  "src": "photo-biofish.jpg",
+  "author": "Pieni Tietosanakirja",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Salt_water_fish_with_Finnish_text.jpg",
+  "file": "File:Salt water fish with Finnish text.jpg"
+ },
+ "bioviviparous": {
+  "src": "photo-bioviviparous.jpg",
+  "author": "MedievalRich",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Aphid-giving-birth.jpg",
+  "file": "File:Aphid-giving-birth.jpg"
+ },
+ "biohomologous": {
+  "src": "photo-biohomologous.jpg",
+  "author": "Волков Владислав Петрович",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Homology_vertebrates-en.svg",
+  "file": "File:Homology vertebrates-en.svg"
+ },
+ "bioarchaeopteryx": {
+  "src": "photo-bioarchaeopteryx.jpg",
+  "author": "H. Raab (User: Vesta)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Archaeopteryx_lithographica_(Berlin_specimen).jpg",
+  "file": "File:Archaeopteryx lithographica (Berlin specimen).jpg"
+ },
+ "biosoilanimal": {
+  "src": "photo-biosoilanimal.jpg",
+  "author": "Malcolm Fowles",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Worms_in_soil_factory.jpg",
+  "file": "File:Worms in soil factory.jpg"
+ },
+ "bioindicator": {
+  "src": "photo-bioindicator.jpg",
+  "author": "Bruce Marlin",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Trichoptera_caddisfly_1.jpg",
+  "file": "File:Trichoptera caddisfly 1.jpg"
+ },
+ "biofungi": {
+  "src": "photo-biofungi.jpg",
+  "author": "Termininja MarkusHagenlocher (File:Flaschenstäubling.jpg) St…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fungi_Diversity.jpg",
+  "file": "File:Fungi Diversity.jpg"
+ },
+ "biohypha": {
+  "src": "photo-biohypha.jpg",
+  "author": "Y_tambe",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Penicillium.jpg",
+  "file": "File:Penicillium.jpg"
+ },
+ "biomold": {
+  "src": "photo-biomold.jpg",
+  "author": "Dr. David Midgley",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Aspergillus_fumigatus.jpg",
+  "file": "File:Aspergillus fumigatus.jpg"
+ },
+ "biomushroom": {
+  "src": "photo-biomushroom.jpg",
+  "author": "frankenstoen from Portland, Oregon",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shiitakegrowing.jpg",
+  "file": "File:Shiitakegrowing.jpg"
+ },
+ "bionitrogencycle": {
+  "src": "photo-bionitrogencycle.jpg",
+  "author": "Cicle_del_nitrogen_de.svg: *Cicle_del_nitrogen_ca.svg: Johan…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nitrogen_Cycle_ja.svg",
+  "file": "File:Nitrogen Cycle ja.svg"
+ },
+ "biobiome": {
+  "src": "photo-biobiome.jpg",
+  "author": "Ville Koistinen (user Vzb83)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Vegetation.png",
+  "file": "File:Vegetation.png"
+ },
+ "biosuccession": {
+  "src": "photo-biosuccession.jpg",
+  "author": "Hannu",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Boreal_pine_forest_after_fire.JPG",
+  "file": "File:Boreal pine forest after fire.JPG"
+ },
+ "bioclimax": {
+  "src": "photo-bioclimax.jpg",
+  "author": "Jdmack1547",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Beech_Tree_in_Warren_Woods,_MI,_USA.jpg",
+  "file": "File:Beech Tree in Warren Woods, MI, USA.jpg"
+ },
+ "biogap": {
+  "src": "photo-biogap.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Forest01s2048.jpg",
+  "file": "File:Forest01s2048.jpg"
+ },
+ "bioalien": {
+  "src": "photo-bioalien.jpg",
+  "author": "John Robert McPherson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dromedary_Camelus_dromedarius_Diamantina_Developmental_Road_Boulia_Shire_Queensland_P1060445.jpg",
+  "file": "File:Dromedary Camelus dromedarius Diamantina Developmental Road Boulia Shire Queensland P1060445.jpg"
+ },
+ "biokeystone": {
+  "src": "photo-biokeystone.jpg",
+  "author": "Bjørn Christian Tørrissen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Junior-Jaguar-Belize-Zoo.jpg",
+  "file": "File:Junior-Jaguar-Belize-Zoo.jpg"
+ },
+ "biobiomagnification": {
+  "src": "photo-biobiomagnification.jpg",
+  "author": "Martin-rnr",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bioakkumulation_von_schadstoffen.png",
+  "file": "File:Bioakkumulation von schadstoffen.png"
+ },
+ "bioeutrophication": {
+  "src": "photo-bioeutrophication.jpg",
+  "author": "Jeff Schmaltz, MODIS Rapid Response Team, NASA/GSFC",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Caspian_Sea_from_orbit.jpg",
+  "file": "File:Caspian Sea from orbit.jpg"
+ },
+ "bioredtide": {
+  "src": "photo-bioredtide.jpg",
+  "author": "melvil",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_tide%EF%BC%BF2017.jpg",
+  "file": "File:Red tide＿2017.jpg"
+ },
+ "biolaurel": {
+  "src": "photo-biolaurel.jpg",
+  "author": "Luismiguelrodrigues",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Laurissilva_da_Madeira_10.jpg",
+  "file": "File:Laurissilva da Madeira 10.jpg"
+ },
+ "biodeciduous": {
+  "src": "photo-biodeciduous.jpg",
+  "author": "Norbert Nagel, Mörfelden-Walldorf, Germany",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Autumnal_deciduous_forest_-_Laubwand_im_Herbst.jpg",
+  "file": "File:Autumnal deciduous forest - Laubwand im Herbst.jpg"
+ },
+ "bioconiferous": {
+  "src": "photo-bioconiferous.jpg",
+  "author": "Akiyoshi's Room",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%92%E3%83%8E%E3%82%AD%E4%BA%BA%E5%B7%A5%E6%9E%97%E3%81%AE%E3%81%82%E3%82%8B%E9%87%8C%E5%B1%B1P7306340.jpg",
+  "file": "File:ヒノキ人工林のある里山P7306340.jpg"
+ },
+ "biorainforest": {
+  "src": "photo-biorainforest.jpg",
+  "author": "Sascha Grabow www.saschagrabow.com",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:South_American_jungle_photograph.jpg",
+  "file": "File:South American jungle photograph.jpg"
+ },
+ "biocanopy": {
+  "src": "photo-biocanopy.jpg",
+  "author": "Sze Ning from Malaysia",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Canopy_Walk.jpg",
+  "file": "File:Canopy Walk.jpg"
+ },
+ "biotreeline": {
+  "src": "photo-biotreeline.jpg",
+  "author": "Σ64",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mt.Kinpu_from_West_01.jpg",
+  "file": "File:Mt.Kinpu from West 01.jpg"
+ },
+ "biosatoyama": {
+  "src": "photo-biosatoyama.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Inagi_satoyama_06b5841s.jpg",
+  "file": "File:Inagi satoyama 06b5841s.jpg"
+ },
+ "biomutualism": {
+  "src": "photo-biomutualism.jpg",
+  "author": "No machine-readable author provided. Yummifruitbat assumed (…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hummingbird_hawkmoth_a.jpg",
+  "file": "File:Hummingbird hawkmoth a.jpg"
+ },
+ "bioparasitism": {
+  "src": "photo-bioparasitism.jpg",
+  "author": "Marco Vinci",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cymothoa_exigua_parassita_Lithognathus_mormyrus.JPG",
+  "file": "File:Cymothoa exigua parassita Lithognathus mormyrus.JPG"
+ },
+ "biosegregation": {
+  "src": "photo-biosegregation.jpg",
+  "author": "Kay-africa",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Flightless_Dung_Beetle_Circellium_Bachuss,_Addo_Elephant_National_Park,_South_Africa.JPG",
+  "file": "File:Flightless Dung Beetle Circellium Bachuss, Addo Elephant National Park, South Africa.JPG"
+ },
+ "bioradiation": {
+  "src": "photo-bioradiation.jpg",
+  "author": "Alfred Brehm",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Macropus_brehm.png",
+  "file": "File:Macropus brehm.png"
+ },
+ "bioconvergent": {
+  "src": "photo-bioconvergent.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:European_mole_detail_of_muzzle_and_paws.jpg",
+  "file": "File:European mole detail of muzzle and paws.jpg"
+ },
+ "biocoevolution": {
+  "src": "photo-biocoevolution.jpg",
+  "author": "Pietro Niolu",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dasyscolia_ciliata.jpg",
+  "file": "File:Dasyscolia ciliata.jpg"
+ },
+ "biophylotree": {
+  "src": "photo-biophylotree.jpg",
+  "author": "投稿者作成",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Phylogenetic_Tree_of_Life-ja.png",
+  "file": "File:Phylogenetic Tree of Life-ja.png"
+ },
+ "biocyanobacteria": {
+  "src": "photo-biocyanobacteria.jpg",
+  "author": "ja:User:NEON / User:NEON_ja",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Oscillatoria_sp.jpg",
+  "file": "File:Oscillatoria sp.jpg"
+ },
+ "biorhizobium": {
+  "src": "photo-biorhizobium.jpg",
+  "author": "Louisa Howard - Dartmouth Electron Microscope Facility",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Root-nodule01.jpg",
+  "file": "File:Root-nodule01.jpg"
+ },
+ "bioarchaea": {
+  "src": "photo-bioarchaea.jpg",
+  "author": "NASA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Halobacteria.jpg",
+  "file": "File:Halobacteria.jpg"
+ },
+ "biolichen": {
+  "src": "photo-biolichen.jpg",
+  "author": "Σ64",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Beech_Lichen.JPEG",
+  "file": "File:Beech Lichen.JPEG"
+ },
+ "bioimprinting": {
+  "src": "photo-bioimprinting.jpg",
+  "author": "Eric Kilby",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_-Boston_Harbor,_Massachusetts,_USA-_parent_and_chicks-8.ogv",
+  "file": "File:Anas platyrhynchos -Boston Harbor, Massachusetts, USA- parent and chicks-8.ogv"
+ },
+ "geoflowwater": {
+  "src": "photo-geoflowwater.jpg",
+  "author": "Wilson44691",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NegevWadi2009.JPG",
+  "file": "File:NegevWadi2009.JPG"
+ },
+ "geomidstream": {
+  "src": "photo-geomidstream.jpg",
+  "author": "Raduasandei at English Wikipedia Later version(s) were uploa…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:View_from_Cairo_Tower_31march2007.jpg",
+  "file": "File:View from Cairo Tower 31march2007.jpg"
+ },
+ "geoflood": {
+  "src": "photo-geoflood.jpg",
+  "author": "Ibex73",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Underwater_car,_floods_in_Paris_(2).jpg",
+  "file": "File:Underwater car, floods in Paris (2).jpg"
+ },
+ "geosabo": {
+  "src": "photo-geosabo.jpg",
+  "author": "photo: Qurren (talk) Taken with Canon IXY 10S (Digital IXUS …",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Seki_River_No1_check_dam.jpg",
+  "file": "File:Seki River No1 check dam.jpg"
+ },
+ "geolevee": {
+  "src": "photo-geolevee.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Shikano_Tottori25n4592.jpg",
+  "file": "File:Shikano Tottori25n4592.jpg"
+ },
+ "geostratum": {
+  "src": "photo-geostratum.jpg",
+  "author": "travelwayoflife",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Quebrada_de_Cafayate,_Salta_(Argentina).jpg",
+  "file": "File:Quebrada de Cafayate, Salta (Argentina).jpg"
+ },
+ "geofossil": {
+  "src": "photo-geofossil.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ammonite_by_Azu.jpg",
+  "file": "File:Ammonite by Azu.jpg"
+ },
+ "geogravel": {
+  "src": "photo-geogravel.jpg",
+  "author": "Béotien lambda",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Verdon_pebble_Galet_du_Verdon.JPG",
+  "file": "File:Verdon pebble Galet du Verdon.JPG"
+ },
+ "geosand": {
+  "src": "photo-geosand.jpg",
+  "author": "あおもりくま（aomorikuma）",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%A0%82%E6%8B%A1%E5%A4%A7.jpg",
+  "file": "File:砂拡大.jpg"
+ },
+ "geomud": {
+  "src": "photo-geomud.jpg",
+  "author": "Ildar Sagdejev (Specious)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2003-11-27_Northerner_boots_in_mud.jpg",
+  "file": "File:2003-11-27 Northerner boots in mud.jpg"
+ },
+ "geoconglomerate": {
+  "src": "photo-geoconglomerate.jpg",
+  "author": "Halvard : from Norway.",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Conglomerate-bolle2.jpg",
+  "file": "File:Conglomerate-bolle2.jpg"
+ },
+ "geosandstone": {
+  "src": "photo-geosandstone.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sandstone(quartz)USGOV.jpg",
+  "file": "File:Sandstone(quartz)USGOV.jpg"
+ },
+ "geomudstone": {
+  "src": "photo-geomudstone.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:SiltstoneUSGOV.jpg",
+  "file": "File:SiltstoneUSGOV.jpg"
+ },
+ "geoboring": {
+  "src": "photo-geoboring.jpg",
+  "author": "Encyclopædia Britannica",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Boring_Machine_1911_Illustration.jpg",
+  "file": "File:Boring Machine 1911 Illustration.jpg"
+ },
+ "geovolcash": {
+  "src": "photo-geovolcash.jpg",
+  "author": "ISS Crew Earth Observations experiment and the Image Science…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:MtCleveland_ISS013-E-24184.jpg",
+  "file": "File:MtCleveland ISS013-E-24184.jpg"
+ },
+ "geolava": {
+  "src": "photo-geolava.jpg",
+  "author": "J.D. Griggs",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pahoeoe_fountain_edit2.jpg",
+  "file": "File:Pahoeoe fountain edit2.jpg"
+ },
+ "geoeruption": {
+  "src": "photo-geoeruption.jpg",
+  "author": "National Park Service",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Volcano_q.jpg",
+  "file": "File:Volcano q.jpg"
+ },
+ "geovolcano": {
+  "src": "photo-geovolcano.jpg",
+  "author": "Austin Post",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:MSH80_eruption_mount_st_helens_05-18-80.jpg",
+  "file": "File:MSH80 eruption mount st helens 05-18-80.jpg"
+ },
+ "geofault": {
+  "src": "photo-geofault.jpg",
+  "author": "Pollinator at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Appalachian_fault.jpg",
+  "file": "File:Appalachian fault.jpg"
+ },
+ "geoearthquake": {
+  "src": "photo-geoearthquake.jpg",
+  "author": "NASA, DTAM project team",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Quake_epicenters_1963-98.png",
+  "file": "File:Quake epicenters 1963-98.png"
+ },
+ "geotsunami": {
+  "src": "photo-geotsunami.jpg",
+  "author": "U.S. Navy photo",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:SH-60B_helicopter_flies_over_Sendai.jpg",
+  "file": "File:SH-60B helicopter flies over Sendai.jpg"
+ },
+ "geohyakuyobako": {
+  "src": "photo-geohyakuyobako.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Stevenson_screen_exterior.JPG",
+  "file": "File:Stevenson screen exterior.JPG"
+ },
+ "geocloud": {
+  "src": "photo-geocloud.jpg",
+  "author": "Glg",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Cumulus_cloud_above_Lechtaler_Alps_at_tannheim,_Austria.jpg",
+  "file": "File:Cumulus cloud above Lechtaler Alps at tannheim, Austria.jpg"
+ },
+ "geotyphoon": {
+  "src": "photo-geotyphoon.jpg",
+  "author": "NASA, LAADS Web, HDF File processed by Supportstorm",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Haiyan_2013-11-07_1345Z_(alternate).png",
+  "file": "File:Haiyan 2013-11-07 1345Z (alternate).png"
+ },
+ "geoairtemp": {
+  "src": "photo-geoairtemp.jpg",
+  "author": "ŠJů (cs:ŠJů)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Prosek,_displej_%C4%8Dasu_a_teploty_a_kamera,_teplota.jpg",
+  "file": "File:Prosek, displej času a teploty a kamera, teplota.jpg"
+ },
+ "geocumulonimbus": {
+  "src": "photo-geocumulonimbus.jpg",
+  "author": "Photo taken by Bidgee",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Wagga-Cumulonimbus.jpg",
+  "file": "File:Wagga-Cumulonimbus.jpg"
+ },
+ "geonimbostratus": {
+  "src": "photo-geonimbostratus.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ns1.jpg",
+  "file": "File:Ns1.jpg"
+ },
+ "geoamedas": {
+  "src": "photo-geoamedas.jpg",
+  "author": "Shift",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:AMeDAS_(%E7%9F%B3%E5%B7%9D%E7%9C%8C%E5%B0%8F%E6%9D%BE%E5%B8%82).jpg",
+  "file": "File:AMeDAS (石川県小松市).jpg"
+ },
+ "geoweathersat": {
+  "src": "photo-geoweathersat.jpg",
+  "author": "NOAA Photo Library",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:GOES_8_Spac0255.jpg",
+  "file": "File:GOES 8 Spac0255.jpg"
+ },
+ "geoforecast": {
+  "src": "photo-geoforecast.jpg",
+  "author": "気象庁",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Weather_forecast_by_JMA_20230511.png",
+  "file": "File:Weather forecast by JMA 20230511.png"
+ },
+ "geosunny": {
+  "src": "photo-geosunny.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:CirrusUncinusUndFloccus.jpg",
+  "file": "File:CirrusUncinusUndFloccus.jpg"
+ },
+ "geowatercycle": {
+  "src": "photo-geowatercycle.jpg",
+  "author": "John M. Evans/USGS-USA GovJapanese translation (翻訳) by Yasus…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Watercyclejapanese.jpg",
+  "file": "File:Watercyclejapanese.jpg"
+ },
+ "geocondensation": {
+  "src": "photo-geocondensation.jpg",
+  "author": "Mougenka・妄言家",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ketsuro_on_window.jpg",
+  "file": "File:Ketsuro on window.jpg"
+ },
+ "geofog": {
+  "src": "photo-geofog.jpg",
+  "author": "Lukas Beck",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Naturpark_Siebengebirge_Petersberg_lub_2024-06-02_img01_Petersberg_Shuttle.jpg",
+  "file": "File:Naturpark Siebengebirge Petersberg lub 2024-06-02 img01 Petersberg Shuttle.jpg"
+ },
+ "geosnow": {
+  "src": "photo-geosnow.jpg",
+  "author": "--Stöhrfall (talk) 11:31, 6 May 2010 (UTC)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_Hofgarten_2009.jpg",
+  "file": "File:Düsseldorf Hofgarten 2009.jpg"
+ },
+ "geothunder": {
+  "src": "photo-geothunder.jpg",
+  "author": "Mircea Madau",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lightning_over_Oradea_Romania_3.jpg",
+  "file": "File:Lightning over Oradea Romania 3.jpg"
+ },
+ "georain": {
+  "src": "photo-georain.jpg",
+  "author": "Tomasz Sienicki [user: tsca, mail: tomasz.sienicki at gmail.…",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:22_Regen_ubt.jpeg",
+  "file": "File:22 Regen ubt.jpeg"
+ },
+ "geohighpress": {
+  "src": "photo-geohighpress.jpg",
+  "author": "NASA, MODIS Rapid Response System",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:High_Pressure.jpg",
+  "file": "File:High Pressure.jpg"
+ },
+ "geolowpress": {
+  "src": "photo-geolowpress.jpg",
+  "author": "NASA/GSFC, MODIS Rapid Response Team, Jacques Descloitres",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Low_pressure_system_over_Iceland.jpg",
+  "file": "File:Low pressure system over Iceland.jpg"
+ },
+ "geoisobar": {
+  "src": "photo-geoisobar.jpg",
+  "author": "日本国 気象庁",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:JMA_Weather_Chart_(Japan)_2019-10-10-1800_JST.png",
+  "file": "File:JMA Weather Chart (Japan) 2019-10-10-1800 JST.png"
+ },
+ "geofront": {
+  "src": "photo-geofront.jpg",
+  "author": "No machine-readable author provided. Kzhr assumed (based on …",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Wfronts.png",
+  "file": "File:Wfronts.png"
+ },
+ "geocoldfront": {
+  "src": "photo-geocoldfront.jpg",
+  "author": "Shira2023",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%AF%92%E5%86%B7%E5%89%8D%E7%B7%9A%E3%81%AE%E9%9B%B2.png",
+  "file": "File:寒冷前線の雲.png"
+ },
+ "geohumidity": {
+  "src": "photo-geohumidity.jpg",
+  "author": "No machine-readable author provided. NepGrower~commonswiki a…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Cloud_forest_mount_kinabalu.jpg",
+  "file": "File:Cloud forest mount kinabalu.jpg"
+ },
+ "geodewpoint": {
+  "src": "photo-geodewpoint.jpg",
+  "author": "Krauss",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cloud_forest_mount_kinabalu-withHygrom.jpg",
+  "file": "File:Cloud forest mount kinabalu-withHygrom.jpg"
+ },
+ "geoogasawaraair": {
+  "src": "photo-geoogasawaraair.jpg",
+  "author": "NASA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nasa-hi-air-pr-avg.png",
+  "file": "File:Nasa-hi-air-pr-avg.png"
+ },
+ "geowesterlies": {
+  "src": "photo-geowesterlies.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 1.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Atmospheric_circulation_ja.png",
+  "file": "File:Atmospheric circulation ja.png"
+ },
+ "geobaiu": {
+  "src": "photo-geobaiu.jpg",
+  "author": "Darkest tree This photo was taken with Canon PowerShot SX110…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Plum_rain_in_Shinjuku,_Tokyo.jpg",
+  "file": "File:Plum rain in Shinjuku, Tokyo.jpg"
+ },
+ "geovvalley": {
+  "src": "photo-geovvalley.jpg",
+  "author": "Workman",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_canyons.jpg",
+  "file": "File:Aerial view of canyons.jpg"
+ },
+ "geoalluvialfan": {
+  "src": "photo-geoalluvialfan.jpg",
+  "author": "en:user:Mikenorton",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Alluvial_fan_01.JPG",
+  "file": "File:Alluvial fan 01.JPG"
+ },
+ "geodelta": {
+  "src": "photo-geodelta.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NileDelta-EO.JPG",
+  "file": "File:NileDelta-EO.JPG"
+ },
+ "geoterrace": {
+  "src": "photo-geoterrace.jpg",
+  "author": "Batholith",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:River_terraces,_Numata,_Gunma,_Japan.jpg",
+  "file": "File:River terraces, Numata, Gunma, Japan.jpg"
+ },
+ "geosedimentary": {
+  "src": "photo-geosedimentary.jpg",
+  "author": "Michael C. Rygel",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Channel-StellartonFm-CoalburnPit.JPG",
+  "file": "File:Channel-StellartonFm-CoalburnPit.JPG"
+ },
+ "geolimestone": {
+  "src": "photo-geolimestone.jpg",
+  "author": "Nyttend",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Limestone_block_at_the_Indiana_Memorial_Union.jpg",
+  "file": "File:Limestone block at the Indiana Memorial Union.jpg"
+ },
+ "geotuff": {
+  "src": "photo-geotuff.jpg",
+  "author": "Wilson44691",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:HoleInTheWallTuff.JPG",
+  "file": "File:HoleInTheWallTuff.JPG"
+ },
+ "geofold": {
+  "src": "photo-geofold.jpg",
+  "author": "Tim Bekaert (user Tbc)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Synclinal.jpg",
+  "file": "File:Synclinal.jpg"
+ },
+ "geotrilobite": {
+  "src": "photo-geotrilobite.jpg",
+  "author": "PaleoNeolitic (montage creator)",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Trilobita_Diversity.png",
+  "file": "File:Trilobita Diversity.png"
+ },
+ "geoammonite": {
+  "src": "photo-geoammonite.jpg",
+  "author": "Tomomarusan",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Ammonite_section.JPG",
+  "file": "File:Ammonite section.JPG"
+ },
+ "geomagma": {
+  "src": "photo-geomagma.jpg",
+  "author": "Hawaii Volcano Observatory (DAS)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pahoehoe_toe.jpg",
+  "file": "File:Pahoehoe toe.jpg"
+ },
+ "geoquartz": {
+  "src": "photo-geoquartz.jpg",
+  "author": "Didier Descouens",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Quartz_Br%C3%A9sil.jpg",
+  "file": "File:Quartz Brésil.jpg"
+ },
+ "geogranite": {
+  "src": "photo-geogranite.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.5 ES",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/es/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Granito.jpg",
+  "file": "File:Granito.jpg"
+ },
+ "geobasalt": {
+  "src": "photo-geobasalt.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:BasaltUSGOV.jpg",
+  "file": "File:BasaltUSGOV.jpg"
+ },
+ "geopyroclastic": {
+  "src": "photo-geopyroclastic.jpg",
+  "author": "C.G. Newhall",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pyroclastic_flows_at_Mayon_Volcano.jpg",
+  "file": "File:Pyroclastic flows at Mayon Volcano.jpg"
+ },
+ "geohypocenter": {
+  "src": "photo-geohypocenter.jpg",
+  "author": "own work",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Seismic_fault_model_1_nolang.png",
+  "file": "File:Seismic fault model 1 nolang.png"
+ },
+ "geopretremor": {
+  "src": "photo-geopretremor.jpg",
+  "author": "Pekachu (talk)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1906_San_Francisco_earthquake_seismograph.png",
+  "file": "File:1906 San Francisco earthquake seismograph.png"
+ },
+ "geoplate": {
+  "src": "photo-geoplate.jpg",
+  "author": "Original: USGS Vector: Anasofiapaixao",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Earth-cutaway-schematic-numbered.svg",
+  "file": "File:Earth-cutaway-schematic-numbered.svg"
+ },
+ "geoactivefault": {
+  "src": "photo-geoactivefault.jpg",
+  "author": "USGS",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:San_Andreas_Fault_Aerial_View.gif",
+  "file": "File:San Andreas Fault Aerial View.gif"
+ },
+ "geouplift": {
+  "src": "photo-geouplift.jpg",
+  "author": "BehBeh",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:UsuZan2007Ryuki.JPG",
+  "file": "File:UsuZan2007Ryuki.JPG"
+ },
+ "geoliquefaction": {
+  "src": "photo-geoliquefaction.jpg",
+  "author": "The original uploader was Ungtss at English Wikipedia.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Liquefaction_at_Niigata.JPG",
+  "file": "File:Liquefaction at Niigata.JPG"
+ },
+ "geomantle": {
+  "src": "photo-geomantle.jpg",
+  "author": "気象庁",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%9C%B0%E7%90%83%E3%81%AE%E5%86%85%E9%83%A8%E6%A7%8B%E9%80%A0.png",
+  "file": "File:地球の内部構造.png"
+ },
+ "geoisostasy": {
+  "src": "photo-geoisostasy.jpg",
+  "author": "MesserWoland",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Isostasy.svg",
+  "file": "File:Isostasy.svg"
+ },
+ "geogeomagnet": {
+  "src": "photo-geogeomagnet.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Geodynamo_Between_Reversals.gif",
+  "file": "File:Geodynamo Between Reversals.gif"
+ },
+ "geolithosphere": {
+  "src": "photo-geolithosphere.jpg",
+  "author": "USGS - Anasofiapaixao - Bibar",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Earth_cutaway_schematic_numbered_(green).svg",
+  "file": "File:Earth cutaway schematic numbered (green).svg"
+ },
+ "geoplatetectonics": {
+  "src": "photo-geoplatetectonics.jpg",
+  "author": "USGS, Washiucho",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Plates_tect2_ja.svg",
+  "file": "File:Plates tect2 ja.svg"
+ },
+ "georidge": {
+  "src": "photo-georidge.jpg",
+  "author": "J M Watson",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:World_Distribution_of_Mid-Oceanic_Ridges.gif",
+  "file": "File:World Distribution of Mid-Oceanic Ridges.gif"
+ },
+ "geotransform": {
+  "src": "photo-geotransform.jpg",
+  "author": "Los688",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Transform_fault-1.svg",
+  "file": "File:Transform fault-1.svg"
+ },
+ "geohotspot": {
+  "src": "photo-geohotspot.jpg",
+  "author": "Los688",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hotspot(geology)-1.svg",
+  "file": "File:Hotspot(geology)-1.svg"
+ },
+ "geotradewind": {
+  "src": "photo-geotradewind.jpg",
+  "author": "KVDP",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Map_prevailing_winds_on_earth.png",
+  "file": "File:Map prevailing winds on earth.png"
+ },
+ "geoelnino": {
+  "src": "photo-geoelnino.jpg",
+  "author": "気象庁",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%A8%E3%83%AB%E3%83%8B%E3%83%BC%E3%83%8B%E3%83%A7%E3%83%BB%E3%83%A9%E3%83%8B%E3%83%BC%E3%83%8B%E3%83%A3.png",
+  "file": "File:エルニーニョ・ラニーニャ.png"
+ },
+ "geotroposphere": {
+  "src": "photo-geotroposphere.jpg",
+  "author": "NASA/Jeff Williams",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ISS-47_Islands_In_The_Sky,_Indonesia.jpg",
+  "file": "File:ISS-47 Islands In The Sky, Indonesia.jpg"
+ },
+ "geostratosphere": {
+  "src": "photo-geostratosphere.jpg",
+  "author": "NASA/Scott Kelly",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ISS-46_Soyuz_TMA-17M_reentry.jpg",
+  "file": "File:ISS-46 Soyuz TMA-17M reentry.jpg"
+ },
+ "geoozonelayer": {
+  "src": "photo-geoozonelayer.jpg",
+  "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Spa…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ISS041-E-105277_-_View_of_the_Northern_Territory.jpg",
+  "file": "File:ISS041-E-105277 - View of the Northern Territory.jpg"
+ },
+ "geofoehn": {
+  "src": "photo-geofoehn.jpg",
+  "author": "Pierre cb",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Foehn-Fonh_corrected2.png",
+  "file": "File:Foehn-Fonh corrected2.png"
+ },
+ "geoextratropical": {
+  "src": "photo-geoextratropical.jpg",
+  "author": "AHI image captured by the Japan Meteorological Agency’s Hima…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Northwest_Pacific_cyclone_2018-01-23_0230Z.png",
+  "file": "File:Northwest Pacific cyclone 2018-01-23 0230Z.png"
+ },
+ "geocenozoic": {
+  "src": "photo-geocenozoic.jpg",
+  "author": "Emanuele Petrachi (Petrescu)",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Torre_Sant%27Andrea.jpg",
+  "file": "File:Torre Sant'Andrea.jpg"
+ },
+ "geogradedbed": {
+  "src": "photo-geogradedbed.jpg",
+  "author": "Osumi Akari",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Graded-bedding_with_hammer_in_Hamamoroiso_Miura.jpg",
+  "file": "File:Graded-bedding with hammer in Hamamoroiso Miura.jpg"
+ },
+ "geotracefossil": {
+  "src": "photo-geotracefossil.jpg",
+  "author": "Wilson44691",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Skolithos.jpg",
+  "file": "File:Skolithos.jpg"
+ },
+ "geometamorphic": {
+  "src": "photo-geometamorphic.jpg",
+  "author": "No machine-readable author provided. Siim assumed (based on …",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Quartzite.jpg",
+  "file": "File:Quartzite.jpg"
+ },
+ "geomarble": {
+  "src": "photo-geomarble.jpg",
+  "author": "Reiner Flassig",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cararra-Steinbruch_retouched.jpg",
+  "file": "File:Cararra-Steinbruch retouched.jpg"
+ },
+ "geoperidotite": {
+  "src": "photo-geoperidotite.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:PeridotiteUSGOV.jpg",
+  "file": "File:PeridotiteUSGOV.jpg"
+ },
+ "geostratovolcano": {
+  "src": "photo-geostratovolcano.jpg",
+  "author": "名古屋太郎",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kodaki_fuji_frm_shojinko.jpg",
+  "file": "File:Kodaki fuji frm shojinko.jpg"
+ },
+ "geolavadome": {
+  "src": "photo-geolavadome.jpg",
+  "author": "Mugu-shisai",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mount_Showa-shinzan_01.jpg",
+  "file": "File:Mount Showa-shinzan 01.jpg"
+ },
+ "geonaturallevee": {
+  "src": "photo-geonaturallevee.jpg",
+  "author": "京浜にけ",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hanyu_Aino_River_Natural_Levee_1.JPG",
+  "file": "File:Hanyu Aino River Natural Levee 1.JPG"
+ },
+ "geooxbow": {
+  "src": "photo-geooxbow.jpg",
+  "author": "BehBeh at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:AbukumaGawa20070323.jpg",
+  "file": "File:AbukumaGawa20070323.jpg"
+ },
+ "geocoastalterrace": {
+  "src": "photo-geocoastalterrace.jpg",
+  "author": "Asturio Cantabrio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fudeshi_Coastal_Terrace_2021-02_ac.jpg",
+  "file": "File:Fudeshi Coastal Terrace 2021-02 ac.jpg"
+ },
+ "geokarst": {
+  "src": "photo-geokarst.jpg",
+  "author": "そらみみ (Soramimi)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Akiyoshi_Plateau_20160522-8.jpg",
+  "file": "File:Akiyoshi Plateau 20160522-8.jpg"
+ },
+ "geomeander": {
+  "src": "photo-geomeander.jpg",
+  "author": "katorisi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oxbow_lake,Yamal_Peninsula,Russia.JPG",
+  "file": "File:Oxbow lake,Yamal Peninsula,Russia.JPG"
  }
 };

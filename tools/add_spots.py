@@ -47,6 +47,18 @@ def read_tsv(path, names=False, people=False, kind=None):
             assert re.fullmatch(r"[ぁ-ゖー]+", yomi), (key, yomi)
             rows.append(dict(key=key, n=name, c=place, r=yomi, q="", d=desc, lat=0.0, lon=0.0, e=emoji, kind=kind, first=first, mp=mp, x=float(x), y=float(y), w=wiki))
             continue
+        if kind == "rika":
+            # 10列: key 名前 分類 よみ 絵文字 解説 図 区画 学年(e/j/h) Wikipedia題名(理科フリック旅行 2026-09-26)。
+            # 📍の 位置は 図の 区画から ゲームが きめる(index.html の RIKA_ZONES)。学年の 順に レベルが 並ぶ
+            assert len(f) == 10, (path.name, line[:40])
+            key, name, place, yomi, emoji, desc, mp, zone, grade, wiki = f
+            assert re.fullmatch(r"[a-z0-9]+", key), key
+            for t in (name, place, desc, wiki, emoji):
+                assert '"' not in t and "\\" not in t, (key, t)
+            assert re.fullmatch(r"[ぁ-ゖー]+", yomi), (key, yomi)
+            assert grade in ("e", "j", "h") and re.fullmatch(r"\w+", zone), (key, grade, zone)
+            rows.append(dict(key=key, n=name, c=place, r=yomi, q="", d=desc, lat=0.0, lon=0.0, e=emoji, kind=kind, first="", mp=mp, z=zone, g=grade, w=wiki))
+            continue
         assert len(f) == (12 if people else (10 if kind else (9 if names else 8))), (path.name, line[:40])
         key, name, place, yomi, query, desc, lat, lon = f[:8]
         extra = dict(zip(("s", "sd", "first", "b"), f[8:])) if people else {}
@@ -106,7 +118,7 @@ def main():
     rows = (read_tsv(ROOT / "tools/spots-japan.tsv") + read_tsv(ROOT / "tools/spots-world.tsv")
             + read_tsv(ROOT / "tools/names-japan.tsv", names=True) + read_tsv(ROOT / "tools/names-world.tsv", names=True)
             + read_tsv(ROOT / "tools/people-japan.tsv", people=True) + read_tsv(ROOT / "tools/people-world.tsv", people=True)
-            + [r for f, k in (("capitals", "capital"), ("events-world", "event"), ("events-japan", "event"), ("space", "space"), ("body", "body")) if (ROOT / f"tools/{f}.tsv").exists()
+            + [r for f, k in (("capitals", "capital"), ("events-world", "event"), ("events-japan", "event"), ("space", "space"), ("body", "body"), ("rika", "rika")) if (ROOT / f"tools/{f}.tsv").exists()
                for r in read_tsv(ROOT / f"tools/{f}.tsv", kind=k)])
     keys = [r["key"] for r in rows]
     assert len(keys) == len(set(keys)), "キーがかぶっている"
@@ -124,6 +136,8 @@ def main():
             return f'k:"person", s:"{r["s"]}", sd:"{r["sd"]}", b:"{r["b"]}", ' + yy
         if r.get("kind") == "company":  # 会社: 絵文字のカード + 公式サイト + Wikipedia + 時価総額(文字)
             return f'k:"company", e:"{r["e"]}", u:"{r["u"]}", w:"{r["w"]}", mc:"{r["mc"]}", '
+        if r.get("kind") == "rika":  # 理科: 絵文字のカード + 図と 区画 + 学年 + Wikipedia の題名
+            return f'k:"rika", e:"{r["e"]}", mp:"{r["mp"]}", z:"{r["z"]}", g:"{r["g"]}", w:"{r["w"]}", '
         if r.get("kind") in ("space", "body"):  # 宇宙・からだ: 絵文字のカード + 図の中の位置 + Wikipedia の題名
             return f'k:"{r["kind"]}", e:"{r["e"]}", mp:"{r["mp"]}", x:{r["x"]}, y:{r["y"]}, w:"{r["w"]}", '
         if r.get("kind"):  # 首都・出来事: 絵文字のカード + 地図の目印
@@ -132,7 +146,7 @@ def main():
             return f'k:"name", e:"{r["e"]}", ' + (f'm:"{r["m"]}", ' if r.get("m") else "")
         return ""
     spots = ",\n".join(f'  {{n:"{r["n"]}", c:"{r["c"]}", r:"{r["r"]}", art:"{r["key"]}", ' + extra(r) + ("f:1, " if first_of(r) else "") + f'd:"{r["d"]}"}}' for r in rows)
-    ll = ", ".join(f'{r["key"]}:[{r["lat"]},{r["lon"]}]' for r in rows if r.get("kind") not in ("space", "body"))
+    ll = ", ".join(f'{r["key"]}:[{r["lat"]},{r["lon"]}]' for r in rows if r.get("kind") not in ("space", "body", "rika"))
     block = ("/* 名所の追加ぶん(tools/spots-*.tsv から tools/add_spots.py が作る。手で直さない) SPOTS-MORE-START */\n"
              f"SPOTS.push(\n{spots}\n);\n"
              f"Object.assign(LATLON, {{{ll}}});\n"
@@ -151,7 +165,7 @@ def main():
           f"地名: 日本 {sum(r['c'].startswith('日本') and bool(r['e']) and not r.get('kind') for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and bool(r['e']) and not r.get('kind') for r in rows)}、"
           f"偉人: 日本 {sum(r['c'].startswith('日本') and 's' in r for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and 's' in r for r in rows)}、"
           f"首都 {sum(r.get('kind') == 'capital' for r in rows)}、出来事: 日本 {sum(r['c'].startswith('日本') and r.get('kind') == 'event' for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and r.get('kind') == 'event' for r in rows)}、"
-          f"宇宙 {sum(r.get('kind') == 'space' for r in rows)}、からだ {sum(r.get('kind') == 'body' for r in rows)}、"
+          f"宇宙 {sum(r.get('kind') == 'space' for r in rows)}、からだ {sum(r.get('kind') == 'body' for r in rows)}、理科 {sum(r.get('kind') == 'rika' for r in rows)}、"
           f"会社: 日本 {sum(r['c'].startswith('日本') and r.get('kind') == 'company' for r in rows)} / 世界 {sum(not r['c'].startswith('日本') and r.get('kind') == 'company' for r in rows)})")
 
 

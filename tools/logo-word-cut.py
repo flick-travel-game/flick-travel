@@ -13,7 +13,7 @@ OUT = sys.argv[2]
 # 題名の まわり（ひろめに）。⚠️ **絵の はばに対する わりあい**で 書く。
 #   そうすると `public/hero.webp`（1400×933）からでも、
 #   もとの PNG（1536×1024）からでも 同じ ところが 切れる。
-FRAC = (0.10, 0.02, 0.92, 0.28)  # 世界フリック旅行(1536x1024 の絵)
+FRAC = (0.10, 0.02, 0.92, 0.28)  # フリック世界旅行(1536x1024 の絵。2026-09-26 に 題名を「フリック世界旅行」に した 絵)
 
 src = Image.open(SRC).convert("RGB")
 W0, H0 = src.size
@@ -40,14 +40,22 @@ for i, sl in enumerate(ndimage.find_objects(lab), start=1):
 parts.sort(reverse=True)
 
 # ② いちばん 大きい 4つ = か ず と も。その ならびが 「字の 帯」
-big = parts[:7]  # 世 界 フ リ ッ ク 旅 行 = 7文字
+big = parts[:8]  # フ リ ッ ク 世 界 旅 行 = 8かたまり(2026-09-26 の 絵は ッ も 1つの かたまり)
 bx0 = min(p[2] for p in big); bx1 = max(p[3] for p in big)
 by0 = min(p[4] for p in big); by1 = max(p[5] for p in big)
 # ⚠️ 星（⭐）は 帯の **右うえ**に はみ出すので、そこだけ ひろげる
 L, R, T, B = bx0 - 12, bx1 + 45, by0 - 45, by1 + 12
 
+# ⚠️ 空の 色(うすい 水色)の かたまりは 字では ない(2026-09-26 の フリック世界旅行の 絵で フとリの あいだの 空が 1つ まざった)
+def sky(i):
+    r = lab == i
+    return bool(mx[r].mean() > 0.8 and sat[r].mean() < 0.5)
+
 keep = np.zeros_like(m)
 for size, i, x0, x1, y0, y1 in parts:
+    if sky(i):
+        print(f"すてる size={size:6} x={x0}-{x1} y={y0}-{y1}(空の 色)")
+        continue
     if size >= 1200 and x0 >= L and x1 <= R and y0 >= T and y1 <= B:
         keep |= (lab == i)
         print(f"のこす size={size:6} x={x0}-{x1} y={y0}-{y1}")
@@ -66,7 +74,7 @@ for i, sl in enumerate(ndimage.find_objects(lab), start=1):
     y0, y1 = sl[0].start, sl[0].stop
     x0, x1 = sl[1].start, sl[1].stop
     size = int((lab[sl] == i).sum())
-    if not (50 <= size < 1200):
+    if not (50 <= size < 1200) or sky(i):
         continue
     # ⚠️ 世界フリック旅行の 絵では 字の 上に 小さな 青い しずくが 落ちていたので、帯の 上のはし(15%)は 顔と 見なさない
     if y0 < by0 + (by1 - by0) * 0.15:
@@ -87,4 +95,4 @@ out.save(OUT, "WEBP", quality=95, method=6)
 import os
 print(OUT, out.size, os.path.getsize(OUT), "bytes", "よこ/たて", round(out.width/out.height, 4))
 bg = Image.new("RGB", out.size, (255, 255, 255)); bg.paste(out, (0, 0), out)
-bg.save("/tmp/claude-0/-home-user-prepro-saas/3ef0319b-bc4e-5ada-8b8d-edf08e658395/scratchpad/word-on-white.png")
+bg.save(sys.argv[3] if len(sys.argv) > 3 else "/tmp/word-on-white.png")

@@ -62,6 +62,12 @@ PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITAB
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
     out = src
+    # ⚠️ 世界(土台)の 絵は ?v=3(2026-09-26 に「フリック世界旅行」の 絵へ 差しかえた)。
+    #   ほかの ゲームは 自分の 絵(か まだ 無い)なので、世界の 数字を 前の 形に もどしてから 作る(ほかの ゲームの 住所は 変えない)
+    for a_, b_ in (('href="apple-touch-icon.png?v=3"', 'href="apple-touch-icon.png?v=2"'), ('href="favicon.png?v=3"', 'href="favicon.png?v=2"'),
+                   ('src="logo-mark2.webp?v=3"', 'src="logo-mark2.webp"'), ('src="logo-word.webp?v=3" alt="" width="1166" height="208"', 'src="logo-word.webp" alt="" width="1170" height="209"'),
+                   ('<img class="hero" src="hero.webp?v=3"', '<img class="hero" src="hero.webp"')):
+        assert out.count(a_) == 1, a_; out = out.replace(a_, b_)
     # head
     out = out.replace("<title>フリック世界旅行</title>", f"<title>{g['name']}</title>")
     out = out.replace('<meta name="apple-mobile-web-app-title" content="フリック世界旅行">', f'<meta name="apple-mobile-web-app-title" content="{g["name"]}">')

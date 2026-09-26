@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -47,11 +47,17 @@ GAMES = {
                  lead="物理・化学・生物・地学のことばを、ひらがなでどれだけ速く打てるか。小学校のことばから はじめて、中学校(高校受験)・高校(大学受験)まで。10問のトータルタイムで勝負しながら、理科の旅に出よう。",
                  how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん(小学校のことば)。先に進むほど 中学校・高校のことばになるよ。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、周期表や 理科の地図に📍が立つよ。星や宇宙は 宇宙フリック旅行、人の体や細胞は からだフリック旅行で あそべるよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、理科のことばも自然と覚えられるよ。"),
+    # 整備フリック旅行(けいくん 2026-09-26)。ことばは tools/seibi/terms-<旅>.json → seibi/terms.js(tools/seibi/terms_js.py)。しくみは seibi/seibi.js(SEIBI。ai.js を 写した もの)。
+    #   旅は エンジン・シャシ・ブレーキ・電装EV・バイク・工具点検法令。級は 入門 → 3級めやす → 2級めやす。絵は まだ無い(文字の 題名。届いたら art を 足す)
+    "seibi": dict(name="整備フリック旅行", modes="SEIBI", kinds=set(), color="#d9480f", hero=False, logo=False,
+                  lead="クルマ・バイクの 部品と しくみの ことばを、ひらがなで フリック入力。打つと その部品が 何を するのか・しくみ図の どこに あるのかが 出るよ。身近な 部品から はじめて、3級・2級 自動車整備士の 試験範囲の めやすまで。",
+                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。入門は 新しい 部品 10問、3級めやすからは 新しい 部品 7問に ふくしゅう 3問が まざるよ。部品の 名前と しくみを おぼえる ゲームだよ。実際の 整備は 資格を もつ 人・お店に まかせよう。",
+                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、クルマや バイクの 中身が 見えてくるよ。国土交通省・日本自動車整備振興会連合会とは 関係ありません。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -92,6 +98,10 @@ def build(gid, g):
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="english.js?v=%s"></script>\n<script src="eikaiwa.js?v=%s"></script>' % (ver("english.js"), ver("eikaiwa.js")))
         out, n = re.subn(r'<input class="answer" id="ans" type="text" lang="ja"', '<input class="answer" id="ans" type="text" lang="en"', out); assert n == 1
         out, n = re.subn(r'<p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>', '<p>大文字・小文字は どちらでも OK。空白や「\' , . ? !」は 打たなくて大丈夫。</p>', out); assert n == 1
+    if g["modes"] == "SEIBI":  # 整備の コース: ことばは terms.js(tools/seibi/terms-*.json から)、しくみは seibi.js。中身が かわると ?v= も かわる
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/seibi/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "seibi" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="seibi.js?v=%s"></script>' % (ver("terms.js"), ver("seibi.js")))
     # GAME
     out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{PLUG_MODES[g["modes"]] if isinstance(g["modes"], str) else json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
     assert n == 1

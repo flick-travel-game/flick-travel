@@ -1,0 +1,966 @@
+[
+ {
+  "id": "tl-spanner",
+  "name": "スパナ",
+  "reading": "すぱな",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-megane",
+   "tl-socket"
+  ],
+  "description": "先が U の 字の ように ひらいた レンチ。ボルトや ナットを 横から はさんで 回します。せまい ところでも かけやすい 工具です。"
+ },
+ {
+  "id": "tl-megane",
+  "name": "メガネレンチ",
+  "reading": "めがねれんち",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👓",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-spanner",
+   "tl-socket"
+  ],
+  "description": "先が 輪に なって いて、ボルトの 頭を ぐるりと かこんで 回す レンチ。すべりにくく、角を つぶしにくいのが よい ところです。"
+ },
+ {
+  "id": "tl-socket",
+  "name": "ソケットレンチ",
+  "reading": "そけっとれんち",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-ratchet",
+   "tl-impact"
+  ],
+  "description": "ボルトの 頭に かぶせる 筒の ソケットと、それを 回す ハンドルを 組み合わせた 工具。大きさを かえて いろいろな ボルトに 使えます。"
+ },
+ {
+  "id": "tl-driver",
+  "name": "ドライバー",
+  "reading": "どらいばー",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪛",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-hexwrench",
+   "tl-plier"
+  ],
+  "description": "ねじの 頭の みぞに 先を はめて 回す 工具。十字の プラスと 一文字の マイナスが あり、みぞに あった ものを 使います。"
+ },
+ {
+  "id": "tl-plier",
+  "name": "プライヤー",
+  "reading": "ぷらいやー",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗜️",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-driver",
+   "tl-spanner"
+  ],
+  "description": "部品を はさんで つかんだり、曲げたり する 工具。口の ひらく 大きさを 2段に 変えられる ものが よく 使われます。"
+ },
+ {
+  "id": "tl-hammer",
+  "name": "ハンマー",
+  "reading": "はんまー",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔨",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-driver",
+   "tl-plier"
+  ],
+  "description": "部品を たたいて はめたり 外したり する 工具。鉄の ほか、部品に きずを つけにくい ゴムや プラスチックの 頭の ものも あります。"
+ },
+ {
+  "id": "tl-hexwrench",
+  "name": "六角レンチ",
+  "reading": "ろっかくれんち",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗝️",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-driver",
+   "tl-socket"
+  ],
+  "description": "六角形の 棒を L の 字に 曲げた 工具。頭に 六角の くぼみが ある ボルトに さしこんで 回します。"
+ },
+ {
+  "id": "tl-jack",
+  "name": "ジャッキ",
+  "reading": "じゃっき",
+  "journey": "tool",
+  "category": "持ち上げる道具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "tool:lift",
+  "relatedTerms": [
+   "tl-uma",
+   "tl-floorjack"
+  ],
+  "description": "車を 下から おし上げて 持ち上げる 道具。タイヤを 交換する ときなどに 使い、車に 積んで ある ことも 多いです。"
+ },
+ {
+  "id": "tl-lift",
+  "name": "リフト",
+  "reading": "りふと",
+  "journey": "tool",
+  "category": "持ち上げる道具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏗️",
+  "mapNode": "tool:lift",
+  "relatedTerms": [
+   "tl-jack",
+   "tl-uma"
+  ],
+  "description": "整備工場で 車を 高く 持ち上げる 大きな 装置。人が 車の 下に 立って 作業できる ように します。"
+ },
+ {
+  "id": "tl-uma",
+  "name": "ウマ",
+  "reading": "うま",
+  "journey": "tool",
+  "category": "持ち上げる道具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐴",
+  "mapNode": "tool:lift",
+  "relatedTerms": [
+   "tl-jack",
+   "tl-wheelstop"
+  ],
+  "description": "持ち上げた 車を 下から しっかり 支える 台。ジャッキだけで 支えた 車の 下に 入るのは 危ないので、ウマを 使います。リジッドラック とも いいます。"
+ },
+ {
+  "id": "tl-wheelstop",
+  "name": "輪止め",
+  "reading": "わどめ",
+  "journey": "tool",
+  "category": "持ち上げる道具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "tool:lift",
+  "relatedTerms": [
+   "tl-jack",
+   "tl-uma"
+  ],
+  "description": "タイヤの 前や うしろに はさんで、車が 動き出さない ように する くさび形の 道具。持ち上げる ときや 坂道で 使います。"
+ },
+ {
+  "id": "tl-tiregauge",
+  "name": "タイヤゲージ",
+  "reading": "たいやげーじ",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-kilopascal",
+   "tl-dailyinspect"
+  ],
+  "description": "タイヤの 中の 空気の 圧力を はかる 道具。空気が 少ないと 燃費が 悪く なり、タイヤも いたみやすく なります。"
+ },
+ {
+  "id": "tl-dailyinspect",
+  "name": "日常点検",
+  "reading": "にちじょうてんけん",
+  "journey": "tool",
+  "category": "点検",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "tool:daily",
+  "relatedTerms": [
+   "tl-teikitenken",
+   "tl-tiregauge"
+  ],
+  "description": "車を 使う 人が 自分で 行う 点検。ブレーキの ききぐあい、タイヤ、ランプ、液の 量などを、走る 前などに 見ます。"
+ },
+ {
+  "id": "tl-shaken",
+  "name": "車検",
+  "reading": "しゃけん",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "tool:inspect",
+  "relatedTerms": [
+   "tl-hoankijun",
+   "tl-shakensho"
+  ],
+  "description": "車が 国の 安全や 環境の 決まりに あって いるかを、決まった 期間ごとに 国が 確かめる 検査。合格しないと 公道を 走れません。"
+ },
+ {
+  "id": "tl-grease",
+  "name": "グリス",
+  "reading": "ぐりす",
+  "journey": "tool",
+  "category": "油脂・安全",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧈",
+  "mapNode": "tool:fluid",
+  "relatedTerms": [
+   "tl-partscleaner",
+   "tl-washerfluid"
+  ],
+  "description": "バターの ような ねばりの ある 油。流れ落ちにくいので、動く 部品の すきまに とどまって すべりを よくし、さびも ふせぎます。"
+ },
+ {
+  "id": "tl-washerfluid",
+  "name": "ウォッシャー液",
+  "reading": "うぉっしゃーえき",
+  "journey": "tool",
+  "category": "油脂・安全",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧼",
+  "mapNode": "tool:fluid",
+  "relatedTerms": [
+   "tl-dailyinspect",
+   "tl-grease"
+  ],
+  "description": "フロントガラスに ふきつけて よごれを 落とす 液。ワイパーと いっしょに 使い、日常点検で 量を 見ます。"
+ },
+ {
+  "id": "tl-safetyshoes",
+  "name": "安全靴",
+  "reading": "あんぜんぐつ",
+  "journey": "tool",
+  "category": "油脂・安全",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥾",
+  "mapNode": "tool:safety",
+  "relatedTerms": [
+   "tl-gloves",
+   "tl-partscleaner"
+  ],
+  "description": "つま先に かたい しんが 入った 作業用の くつ。重い 部品や 工具を 落としても 足を 守ります。すべりにくい 底の ものが 多いです。"
+ },
+ {
+  "id": "tl-gloves",
+  "name": "作業用手袋",
+  "reading": "さぎょうようてぶくろ",
+  "journey": "tool",
+  "category": "油脂・安全",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "tool:safety",
+  "relatedTerms": [
+   "tl-safetyshoes",
+   "tl-zetsuen"
+  ],
+  "description": "油や 熱、とがった 部品から 手を 守る 手袋。すべりにくい ものや、油を 通しにくい ものなど 使い分けます。"
+ },
+ {
+  "id": "tl-mechanic",
+  "name": "整備士",
+  "reading": "せいびし",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👷",
+  "mapNode": "tool:shop",
+  "relatedTerms": [
+   "tl-ninsho",
+   "tl-kensain"
+  ],
+  "description": "車を 点検したり 整備したり する 人。自動車整備士は 国家資格で、1級・2級・3級 などに 分かれて います。"
+ },
+ {
+  "id": "tl-migineji",
+  "name": "右ねじ",
+  "reading": "みぎねじ",
+  "journey": "tool",
+  "category": "単位・基本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "tool:basics",
+  "relatedTerms": [
+   "tl-pitch",
+   "tl-torquewrench"
+  ],
+  "description": "時計回りに 回すと しまり、反対に 回すと ゆるむ ねじ。車の ほとんどの ねじは この 形ですが、わざと 逆の 左ねじを 使う 場所も あります。"
+ },
+ {
+  "id": "tl-torquewrench",
+  "name": "トルクレンチ",
+  "reading": "とるくれんち",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-newtonmeter",
+   "tl-socket"
+  ],
+  "description": "ボルトを しめる 強さを はかりながら しめられる レンチ。強すぎても 弱すぎても 部品が こわれたり ゆるんだり するので 大事です。"
+ },
+ {
+  "id": "tl-ratchet",
+  "name": "ラチェットハンドル",
+  "reading": "らちぇっとはんどる",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-socket",
+   "tl-impact"
+  ],
+  "description": "ソケットを つけて 使う ハンドル。一方には 回り、反対には 空回りする ので、ボルトから はずさずに 何度も 回せます。"
+ },
+ {
+  "id": "tl-impact",
+  "name": "インパクトレンチ",
+  "reading": "いんぱくとれんち",
+  "journey": "tool",
+  "category": "工具",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "tool:tools",
+  "relatedTerms": [
+   "tl-socket",
+   "tl-torquewrench"
+  ],
+  "description": "空気や 電気の ちからで 小きざみに たたきながら 回す レンチ。かたく しまった ナットを すばやく ゆるめられます。"
+ },
+ {
+  "id": "tl-nogisu",
+  "name": "ノギス",
+  "reading": "のぎす",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-micrometer",
+   "tl-thickness"
+  ],
+  "description": "部品の 外がわや 内がわの 大きさ、深さを はかる 道具。本体と すべる 目もりを 組み合わせて、細かい 長さまで 読みとれます。"
+ },
+ {
+  "id": "tl-tester",
+  "name": "サーキットテスター",
+  "reading": "さーきっとてすたー",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-scantool",
+   "tl-nogisu"
+  ],
+  "description": "電気の 電圧・電流・抵抗を はかる 道具。電気が きちんと 流れて いるか、線が 切れて いないかを 調べるのに 使います。",
+  "acceptedReadings": [
+   "さーきっとてすたー",
+   "てすたー"
+  ]
+ },
+ {
+  "id": "tl-thickness",
+  "name": "シックネスゲージ",
+  "reading": "しっくねすげーじ",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-nogisu",
+   "tl-straightedge"
+  ],
+  "description": "厚さの ちがう うすい 金属の 板を たばねた 道具。すきまに さしこんで、どの 板が 入るかで すきまの 大きさを はかります。"
+ },
+ {
+  "id": "tl-floorjack",
+  "name": "フロアジャッキ",
+  "reading": "ふろあじゃっき",
+  "journey": "tool",
+  "category": "持ち上げる道具",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛠️",
+  "mapNode": "tool:lift",
+  "relatedTerms": [
+   "tl-jack",
+   "tl-uma"
+  ],
+  "description": "車輪が ついた 床置きの ジャッキ。油の 圧力を 使い、重い 車も 少ない ちからで 持ち上げられます。ガレージジャッキ とも いいます。"
+ },
+ {
+  "id": "tl-teikitenken",
+  "name": "定期点検",
+  "reading": "ていきてんけん",
+  "journey": "tool",
+  "category": "点検",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "tool:periodic",
+  "relatedTerms": [
+   "tl-dailyinspect",
+   "tl-kirokubo"
+  ],
+  "description": "決まった 期間ごとに、法律で 決められた 項目を 点検する こと。見のがしやすい 部品の いたみを 早めに 見つけられます。"
+ },
+ {
+  "id": "tl-hoankijun",
+  "name": "保安基準",
+  "reading": "ほあんきじゅん",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "tool:law",
+  "relatedTerms": [
+   "tl-dorounsou",
+   "tl-fuseikaizo"
+  ],
+  "description": "車の 大きさ・ブレーキ・ランプ・排気ガスなど、安全と 環境の ために 車が 守るべき 細かい 決まり。車検では これに あって いるかを 見ます。"
+ },
+ {
+  "id": "tl-dorounsou",
+  "name": "道路運送車両法",
+  "reading": "どうろうんそうしゃりょうほう",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "tool:law",
+  "relatedTerms": [
+   "tl-hoankijun",
+   "tl-shaken"
+  ],
+  "description": "車の 安全を 守る ための 法律。車の 登録、車検、点検整備、整備の 仕事の 決まりなどが ここに 書かれて います。"
+ },
+ {
+  "id": "tl-ninsho",
+  "name": "認証工場",
+  "reading": "にんしょうこうじょう",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "tool:shop",
+  "relatedTerms": [
+   "tl-shitei",
+   "tl-tokuteiseibi"
+  ],
+  "description": "設備や 人などの 条件を みたし、国の 認証を 受けた 整備工場。ブレーキなど 大事な 部品を 外す 整備を 仕事として 行えます。"
+ },
+ {
+  "id": "tl-kirokubo",
+  "name": "整備記録簿",
+  "reading": "せいびきろくぼ",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "tool:doc",
+  "relatedTerms": [
+   "tl-teikitenken",
+   "tl-shakensho"
+  ],
+  "description": "いつ どんな 点検や 整備を したかを 書きのこす 記録。車の 健康手帳の ような もので、点検整備記録簿 とも いいます。"
+ },
+ {
+  "id": "tl-shakensho",
+  "name": "車検証",
+  "reading": "しゃけんしょう",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "tool:doc",
+  "relatedTerms": [
+   "tl-shaken",
+   "tl-kensahyosho"
+  ],
+  "description": "車検に 合格した 車に 交付される 書類。正しくは 自動車検査証と いい、車に 備えつけて おく 決まりです。"
+ },
+ {
+  "id": "tl-jibaiseki",
+  "name": "自賠責保険",
+  "reading": "じばいせきほけん",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "tool:doc",
+  "relatedTerms": [
+   "tl-shaken",
+   "tl-shakensho"
+  ],
+  "description": "すべての 車や バイクが 入る ことを 法律で 決められた 保険。事故で けがを させた 相手への つぐないに 使われます。"
+ },
+ {
+  "id": "tl-newtonmeter",
+  "name": "ニュートンメートル",
+  "reading": "にゅーとんめーとる",
+  "journey": "tool",
+  "category": "単位・基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "tool:basics",
+  "relatedTerms": [
+   "tl-torquewrench",
+   "tl-kilopascal"
+  ],
+  "description": "ねじる 強さ(トルク)の 単位で、N・m と 書きます。1 ニュートンの ちからで 1 メートルの 棒の 先を おした ときの ねじる 強さが 1 です。"
+ },
+ {
+  "id": "tl-kilopascal",
+  "name": "キロパスカル",
+  "reading": "きろぱすかる",
+  "journey": "tool",
+  "category": "単位・基本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "tool:basics",
+  "relatedTerms": [
+   "tl-tiregauge",
+   "tl-newtonmeter"
+  ],
+  "description": "圧力の 単位で、kPa と 書きます。タイヤの 空気圧などに 使われ、1 キロパスカルは 1000 パスカルです。"
+ },
+ {
+  "id": "tl-haiyu",
+  "name": "廃油",
+  "reading": "はいゆ",
+  "journey": "tool",
+  "category": "油脂・安全",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "♻️",
+  "mapNode": "tool:safety",
+  "relatedTerms": [
+   "tl-partscleaner",
+   "tl-kanki"
+  ],
+  "description": "使い終わった オイルなど。川や 下水に 流すと 自然を よごすので、決まりに したがって 正しく 処分します。"
+ },
+ {
+  "id": "tl-fuseikaizo",
+  "name": "不正改造",
+  "reading": "ふせいかいぞう",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "tool:law",
+  "relatedTerms": [
+   "tl-hoankijun",
+   "tl-seibimeirei"
+  ],
+  "description": "保安基準に あわなく なる ように 車を 作りかえる こと。法律で 禁止されて います。"
+ },
+ {
+  "id": "tl-partscleaner",
+  "name": "パーツクリーナー",
+  "reading": "ぱーつくりーなー",
+  "journey": "tool",
+  "category": "油脂・安全",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "tool:fluid",
+  "relatedTerms": [
+   "tl-grease",
+   "tl-haiyu"
+  ],
+  "description": "部品に ついた 油や よごれを 吹きかけて 落とす 洗浄スプレー。燃えやすい ものが 多いので、火の 近くでは 使いません。"
+ },
+ {
+  "id": "tl-kanki",
+  "name": "換気",
+  "reading": "かんき",
+  "journey": "tool",
+  "category": "油脂・安全",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "tool:safety",
+  "relatedTerms": [
+   "tl-haiyu",
+   "tl-safetyshoes"
+  ],
+  "description": "作業場の 空気を 入れかえる こと。エンジンの 排気ガスには においの ない 毒の ガスが ふくまれるので、しめきった 場所で エンジンを かけるのは 危険です。"
+ },
+ {
+  "id": "tl-micrometer",
+  "name": "マイクロメーター",
+  "reading": "まいくろめーたー",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-nogisu",
+   "tl-cylindergauge"
+  ],
+  "description": "ねじの しくみを 使って、ノギスより さらに 細かく 部品の 厚さや 外の 大きさを はかる 道具。"
+ },
+ {
+  "id": "tl-dialgauge",
+  "name": "ダイヤルゲージ",
+  "reading": "だいやるげーじ",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-micrometer",
+   "tl-straightedge"
+  ],
+  "description": "先の 針が おされた ごく 小さな 動きを、時計の ような 目もりで 見せる 道具。軸の ふれや 部品の ゆがみを 調べます。"
+ },
+ {
+  "id": "tl-cylindergauge",
+  "name": "シリンダーゲージ",
+  "reading": "しりんだーげーじ",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥫",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-micrometer",
+   "tl-dialgauge"
+  ],
+  "description": "筒の 内がわの 大きさを はかる 道具。シリンダーの 内がわが どれだけ すりへったかを 調べるのに 使います。"
+ },
+ {
+  "id": "tl-straightedge",
+  "name": "ストレートエッジ",
+  "reading": "すとれーとえっじ",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-thickness",
+   "tl-dialgauge"
+  ],
+  "description": "とても まっすぐに 作られた 金属の 定規。面に あてて、できた すきまを シックネスゲージで はかり、面の ゆがみを 調べます。"
+ },
+ {
+  "id": "tl-compressiongauge",
+  "name": "コンプレッションゲージ",
+  "reading": "こんぷれっしょんげーじ",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-scantool",
+   "tl-tester"
+  ],
+  "description": "エンジンの シリンダーの 中で 空気が どれだけ おしちぢめられるかの 圧力を はかる 道具。エンジンの 元気さを 知る 手がかりに なります。"
+ },
+ {
+  "id": "tl-scantool",
+  "name": "スキャンツール",
+  "reading": "すきゃんつーる",
+  "journey": "tool",
+  "category": "はかる道具",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "tool:measure",
+  "relatedTerms": [
+   "tl-tester",
+   "tl-tokuteiseibi"
+  ],
+  "description": "車の 診断用の 差しこみ口に つないで、コンピューターが 記録した 故障の 情報などを 読みとる 機械。故障診断機 とも いいます。"
+ },
+ {
+  "id": "tl-sideslip",
+  "name": "サイドスリップテスター",
+  "reading": "さいどすりっぷてすたー",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "tool:inspect",
+  "relatedTerms": [
+   "tl-braketester",
+   "tl-shaken"
+  ],
+  "description": "車を まっすぐ 走らせた ときに、前の タイヤが 横に どれだけ ずれて 進むかを はかる 検査の 機械。"
+ },
+ {
+  "id": "tl-braketester",
+  "name": "ブレーキテスター",
+  "reading": "ぶれーきてすたー",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "tool:inspect",
+  "relatedTerms": [
+   "tl-sideslip",
+   "tl-speedtester"
+  ],
+  "description": "床の ローラーに タイヤを のせて、ブレーキの 止める ちからを はかる 検査の 機械。"
+ },
+ {
+  "id": "tl-headlighttester",
+  "name": "ヘッドライトテスター",
+  "reading": "へっどらいとてすたー",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "tool:inspect",
+  "relatedTerms": [
+   "tl-braketester",
+   "tl-hoankijun"
+  ],
+  "description": "ヘッドライトの 明るさと、光が 向く 方向を はかる 検査の 機械。光の 向きが ずれると 前が 見えにくく、相手も まぶしく なります。"
+ },
+ {
+  "id": "tl-speedtester",
+  "name": "スピードメーターテスター",
+  "reading": "すぴーどめーたーてすたー",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "tool:inspect",
+  "relatedTerms": [
+   "tl-braketester",
+   "tl-sideslip"
+  ],
+  "description": "ローラーの 上で タイヤを 回し、スピードメーターの 表示が 本当の 速さと 大きく ずれて いないかを 確かめる 検査の 機械。"
+ },
+ {
+  "id": "tl-shitei",
+  "name": "指定工場",
+  "reading": "していこうじょう",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "tool:shop",
+  "relatedTerms": [
+   "tl-ninsho",
+   "tl-kensain"
+  ],
+  "description": "認証工場の うち、さらに 条件を みたして 国の 指定を 受けた 工場。車検の 検査まで 工場の 中で 行えるため、民間車検場 とも よばれます。"
+ },
+ {
+  "id": "tl-kensain",
+  "name": "自動車検査員",
+  "reading": "じどうしゃけんさいん",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "tool:shop",
+  "relatedTerms": [
+   "tl-shitei",
+   "tl-hotekisho"
+  ],
+  "description": "指定工場で、車が 保安基準に あって いるかを 確かめる 役目の 人。整備を した 人とは 別の 目で 検査します。"
+ },
+ {
+  "id": "tl-hotekisho",
+  "name": "保安基準適合証",
+  "reading": "ほあんきじゅんてきごうしょう",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "tool:doc",
+  "relatedTerms": [
+   "tl-shitei",
+   "tl-kensain"
+  ],
+  "description": "指定工場で 検査に 合格した ことを しめす 書類。これが あると、車を 国の 検査場へ 持ちこまずに 車検の 手続きが できます。"
+ },
+ {
+  "id": "tl-keizoku",
+  "name": "継続検査",
+  "reading": "けいぞくけんさ",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔂",
+  "mapNode": "tool:inspect",
+  "relatedTerms": [
+   "tl-shaken",
+   "tl-kensahyosho"
+  ],
+  "description": "いま 使って いる 車を これからも 使う ために 受ける 検査。ふだん「車検」と いうと、多くは この 継続検査の ことです。"
+ },
+ {
+  "id": "tl-kensahyosho",
+  "name": "検査標章",
+  "reading": "けんさひょうしょう",
+  "journey": "tool",
+  "category": "車検・検査",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "tool:doc",
+  "relatedTerms": [
+   "tl-shakensho",
+   "tl-keizoku"
+  ],
+  "description": "車検の 有効期間が いつまでかを しめす ステッカー。車に はって おく 決まりで、外から 期限が わかります。"
+ },
+ {
+  "id": "tl-tokuteiseibi",
+  "name": "特定整備",
+  "reading": "とくていせいび",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "tool:shop",
+  "relatedTerms": [
+   "tl-ninsho",
+   "tl-scantool"
+  ],
+  "description": "ブレーキや ステアリングなど 大事な 部品を 外す 整備や、運転支援の カメラなどの 調整を まとめた よびかた。仕事として 行うには 国の 認証が いります。"
+ },
+ {
+  "id": "tl-seibimeirei",
+  "name": "整備命令",
+  "reading": "せいびめいれい",
+  "journey": "tool",
+  "category": "法令・資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "tool:law",
+  "relatedTerms": [
+   "tl-fuseikaizo",
+   "tl-hoankijun"
+  ],
+  "description": "保安基準に あわない 車の 使用者に 対して、国が 整備を するよう 命じる こと。不正改造の 車などに 出されます。"
+ },
+ {
+  "id": "tl-pitch",
+  "name": "ピッチ",
+  "reading": "ぴっち",
+  "journey": "tool",
+  "category": "単位・基本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "tool:basics",
+  "relatedTerms": [
+   "tl-migineji",
+   "tl-nogisu"
+  ],
+  "description": "ねじの 山と となりの 山との あいだの きょり。太さが 同じでも ピッチが ちがう ねじを むりに しめると、ねじ山が こわれます。"
+ },
+ {
+  "id": "tl-shiyogendo",
+  "name": "使用限度",
+  "reading": "しようげんど",
+  "journey": "tool",
+  "category": "単位・基本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "tool:basics",
+  "relatedTerms": [
+   "tl-micrometer",
+   "tl-teikitenken"
+  ],
+  "description": "部品が すりへったり ゆがんだり しても、まだ 使って よい 限界。はかった 値が これを こえたら 部品を 取りかえます。"
+ },
+ {
+  "id": "tl-zetsuen",
+  "name": "絶縁手袋",
+  "reading": "ぜつえんてぶくろ",
+  "journey": "tool",
+  "category": "油脂・安全",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "tool:safety",
+  "relatedTerms": [
+   "tl-gloves",
+   "tl-safetyshoes"
+  ],
+  "description": "電気を 通さない ゴムの 手袋。ハイブリッド車や 電気自動車の 高い 電圧の 部分は さわると 命に かかわるほど 危ないので、専用の 手袋で 身を 守ります。"
+ }
+]

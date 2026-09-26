@@ -535,7 +535,8 @@ const GAME = { id:"uchu", name:"宇宙フリック旅行", modes:["usolar", "usk
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"世界フリック旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"歴史フリック旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
                  {id:"uchu", name:"宇宙フリック旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"からだフリック旅行", icon:"🫀", dir:"../flick-travel/karada/"},
-                 {id:"kabu", name:"株式フリック旅行", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"AIフリック旅行", icon:"🤖", dir:"../flick-travel/ai/"} ];
+                 {id:"kabu", name:"株式フリック旅行", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"AIフリック旅行", icon:"🤖", dir:"../flick-travel/ai/"},
+                 {id:"eikaiwa", name:"英会話フリック旅行", icon:"💬", dir:"../flick-travel/eikaiwa/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
   {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
@@ -715,8 +716,8 @@ const COLORS = {
           toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
 };
 /* 差しこみ口(PLUG)。つみあげの コースを 持つ ゲームだけが 1つ 持つ:
-   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI。ほかの ゲームでは null で 何もしない */
-const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : null;
+   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA。ほかの ゲームでは null で 何もしない */
+const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : null;
 /* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
 if(PLUG) for(const [m, h] of Object.entries(PLUG.colors)) COLORS.mode[m] = TONE[h] || toneFrom(h);  // "blue" などは ほかの ゲームと 同じ あかるい 色
 function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }
@@ -1980,6 +1981,7 @@ function judge(input){
 }
 
 function renderTarget(n, err){
+  if(PLUG && PLUG.tgtHtml && PLUG.owns(mode)){ $("#tgt").innerHTML = PLUG.tgtHtml(qs[idx], n, err); return; }  // 英会話: 英文を 空白・記号ごと 見せる(打つのは 英字だけ)
   let h = "";
   for(let i=0;i<target.length;i++){
     if(i === sepAt) h += '<span class="sep">／</span>';
@@ -2075,7 +2077,7 @@ ans.addEventListener("input", () => {
   if(baseRaw > ans.value.length) baseRaw = ans.value.length;
   if(locked){ resetBase(); return; }
   const raw = ans.value.slice(baseRaw);
-  const v = norm(raw);
+  const v = PLUG && PLUG.norm && PLUG.owns(mode) ? PLUG.norm(raw) : norm(raw);  // 英会話: 小文字に そろえ、空白・' ・記号は 打たなくてよい
   lastLen = v.length;
   $("#typed").textContent = raw;
   if(PLUG && PLUG.retarget){ const t = PLUG.retarget(qs[idx], v); if(t && t !== target) target = t; }  // AIフリック旅行: 読みかたが いくつか ある ことば
@@ -2323,7 +2325,7 @@ function renderResult(r){
   $("#r-list").className = mode !== "quote" ? "intros" : "list";
   $("#r-list").innerHTML = mode !== "quote"
     ? qs.map((q,i) => { const pc = pic(q); return '<li class="intro"><div class="pic">'+pc.html+'</div><div class="body">'+
-        '<div class="head"><b>'+nameRuby(q)+'</b><span>'+times[i].toFixed(2)+'秒</span></div>'+
+        '<div class="head"><b>'+(PLUG && PLUG.nameHtml && q.k === PLUG.kind ? PLUG.nameHtml(q) : nameRuby(q))+'</b><span>'+times[i].toFixed(2)+'秒</span></div>'+
         '<small>'+q.c+'</small>'+(RUBY[q.art] ? '<p class="rb">'+RUBY[q.art]+'</p>' : '<p>'+q.d+'</p>')+quoteBlock(q)+gmapLink(q)+(pc.credit ? '<em class="credit">'+pc.credit+'</em>' : '')+'</div></li>'; }).join("")
     : qs.map((q,i) => '<li><span>'+q.a+'「'+q.t+'」</span><span>'+times[i].toFixed(2)+'秒</span></li>').join("");
   $("#next-lv").classList.toggle("hidden", level >= LEVELS[mode].length - 1);

@@ -15,6 +15,7 @@
    規約・特商法などの 文(`src/lib/flick-url.ts` の `FLICK_SERIES_GAMES`)を 変えるのは **お金・規約の 変更なので けいくんの OK を もらってから**
 4. 本番は GitHub Pages(`https://flick-travel-game.github.io/flick-travel/`)。main に 入ると 1〜2分で 出る。
    コミットの 名前は `flick-travel-game <flick-travel-game@users.noreply.github.com>`
+   ⚠️ PR を 取りこむときは **rebase**(`merge_method: "rebase"`)。**squash だと 取りこんだ コミットの 名前が けいくんの アカウントに 変わる**(2026-09-26 整備 #20 で 起きた)
 
 ## きまり(シリーズ 共通)
 

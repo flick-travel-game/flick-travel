@@ -715,7 +715,7 @@ const COLORS = {
           toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
 };
 /* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
-if(typeof KABU === "object") for(const [m, h] of Object.entries(KABU.colors)) COLORS.mode[m] = toneFrom(h);
+if(typeof KABU === "object") for(const [m, h] of Object.entries(KABU.colors)) COLORS.mode[m] = TONE[h] || toneFrom(h);  // "blue" などは ほかの ゲームと 同じ あかるい 色
 function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }
 /* 解説のふりがな(tools/make_ruby.py が作る) RUBY-START */
 const RUBY = {

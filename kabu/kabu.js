@@ -10,10 +10,10 @@
 const KABU = (() => {
   const D = COMPANIES;
   const COURSES = [
-    { m:"kbeg", name:"入門", icon:"🌱", total:100, color:"#0f6fa8", perStage:10, rev:0, lead:"だれでも 知っている 会社から" },
-    { m:"kele", name:"初級", icon:"📘", total:300, color:"#1b8a55", perStage:7, rev:3, lead:"聞いたことが ある 会社・投資で よく見る 会社" },
-    { m:"kmid", name:"中級", icon:"🧭", total:600, color:"#c2410c", perStage:7, rev:3, lead:"世界各国を 代表する 会社" },
-    { m:"kadv", name:"上級", icon:"🌐", total:1000, color:"#7c3aed", perStage:7, rev:3, lead:"世界経済で 大切な 会社" },
+    { m:"kbeg", name:"入門", icon:"🌱", total:100, color:"blue", perStage:10, rev:0, lead:"だれでも 知っている 会社から" },
+    { m:"kele", name:"初級", icon:"📘", total:300, color:"green", perStage:7, rev:3, lead:"聞いたことが ある 会社・投資で よく見る 会社" },
+    { m:"kmid", name:"中級", icon:"🧭", total:600, color:"orange", perStage:7, rev:3, lead:"世界各国を 代表する 会社" },
+    { m:"kadv", name:"上級", icon:"🌐", total:1000, color:"purple", perStage:7, rev:3, lead:"世界経済で 大切な 会社" },
   ];
   const COURSE_OF = ["kbeg", "kele", "kmid", "kadv", "master"];
   const REGIONS = [
@@ -96,18 +96,18 @@ const KABU = (() => {
   const masterCard = (m, done) => '<small>' + fmt(TOTAL) + '社・地域別 / 業種別</small><small>出会った ' + fmt(discovered().size) + '社</small>';
   for(const R of REGIONS){
     const list = ALL.filter(q => q.rg === R.name);
-    pools[R.m] = list; levels[R.m] = chunks(list); colors[R.m] = "#b45309";
+    pools[R.m] = list; levels[R.m] = chunks(list); colors[R.m] = "#e0202e";
     maps[R.m] = { icon:"🏆", name:"マスター・" + R.name, cardName:"マスター", group:"master", word:"企業図鑑", unit:"社", doneWord:"出会った会社", thing:"会社",
                   lvTitle:"🏆 マスター・" + R.icon + " " + R.name + "　" + fmt(list.length) + "社", card:masterCard };
   }
   for(const S of SECTORS){
     const list = ALL.filter(q => q.s === S.id);
-    pools[S.m] = list; levels[S.m] = chunks(list); colors[S.m] = "#b45309";
+    pools[S.m] = list; levels[S.m] = chunks(list); colors[S.m] = "#e0202e";
     maps[S.m] = { icon:"🏆", name:"マスター・" + S.name, cardName:"マスター", group:"master", word:"企業図鑑", unit:"社", doneWord:"出会った会社", thing:"会社",
                   lvTitle:"🏆 マスター・" + S.icon + " " + S.name + "　" + fmt(list.length) + "社", card:masterCard };
   }
   /* ふくしゅう(その人の きろくから 毎回 えらぶ 10問) */
-  pools.kfuku = ALL; levels.kfuku = [courseList(0).slice(0, ROUNDS)]; colors.kfuku = "#be185d";
+  pools.kfuku = ALL; levels.kfuku = [courseList(0).slice(0, ROUNDS)]; colors.kfuku = "pink";
   maps.kfuku = { icon:"🔁", name:"ふくしゅう", cardName:"ふくしゅう", word:"企業図鑑", unit:"社", doneWord:"出会った会社", thing:"会社",
                  lvTitle:"🔁 ふくしゅう　にがてな会社を もう一度",
                  card:() => { const w = weakCount(); return '<small>毎回 ちがう 10社</small><small>' + (discovered().size < ROUNDS ? 'まず コースで 10社 出会おう' : 'にがて ' + w + '社') + '</small>'; } };
@@ -308,7 +308,7 @@ const KABU = (() => {
 .kb-lead{color:var(--muted);font-size:13px;margin:-6px 0 12px;line-height:1.7}
 .kb-chips p{margin:0 0 6px;font-size:13px;font-weight:800;color:var(--muted)}.kb-chips div{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
 .kb-chips button{padding:7px 11px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700}
-.kb-chips button.on{background:#b45309;border-color:#b45309;color:#fff}.kb-chips .kb-goal{color:#b45309;margin-bottom:12px}
+.kb-chips button.on{background:#e0202e;border-color:#e0202e;color:#fff}.kb-chips .kb-goal{color:#e0202e;margin-bottom:12px}
 .kb-learn{background:#ecfdf5;border:1px solid #a7f3d0;color:#065f46;border-radius:10px;padding:6px 10px;margin:0 0 8px;font-size:13px;line-height:1.5;animation:kbIn .35s ease-out}
 .kb-learn b{margin-right:6px}.kb-learn p{margin:2px 0 0;color:#047857;font-size:12.5px}.kb-learn.kb-hint{background:var(--soft);border-color:var(--line);color:var(--muted)}
 @keyframes kbIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}

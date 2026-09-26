@@ -56,6 +56,12 @@ def first_of(r):
     return bool(FLAG.match(r["e"])) and r["c"] not in ("ベルギー",)
 
 
+# 偉人の 生まれた年・亡くなった年(tools/fetch_years.py が Wikidata から取る)。年表に 置くため(歴史フリック旅行)
+import json
+_yp = ROOT / "tools/people-years.json"
+YEARS = json.loads(_yp.read_text(encoding="utf-8")) if _yp.exists() else {}
+
+
 def main():
     rows = (read_tsv(ROOT / "tools/spots-japan.tsv") + read_tsv(ROOT / "tools/spots-world.tsv")
             + read_tsv(ROOT / "tools/names-japan.tsv", names=True) + read_tsv(ROOT / "tools/names-world.tsv", names=True)
@@ -73,7 +79,9 @@ def main():
     # 偉人は k:"person" + 名言 s / その解説 sd / 生まれた所 b(写真は 肖像)
     def extra(r):
         if "s" in r:
-            return f'k:"person", s:"{r["s"]}", sd:"{r["sd"]}", b:"{r["b"]}", '
+            y = YEARS.get(r["key"]) or [None, None]
+            yy = f'y0:{y[0]}, y1:{"null" if y[1] is None else y[1]}, ' if y[0] is not None else ""
+            return f'k:"person", s:"{r["s"]}", sd:"{r["sd"]}", b:"{r["b"]}", ' + yy
         if r.get("kind"):  # 首都・出来事: 絵文字のカード + 地図の目印
             return f'k:"{r["kind"]}", e:"{r["e"]}", ' + (f'm:"{r["m"]}", ' if r.get("m") else "")
         if r["e"]:

@@ -34,6 +34,7 @@ def build(gid, g):
     if art:
         # 絵・アイコンは その フォルダの ものを 使う(名前は 世界と 同じ なので 道は そのまま)
         out = out.replace('width="1170" height="209"', 'width="%d" height="%d"' % art["word"])
+        out = out.replace('src="logo-word.webp"', 'src="logo-word.webp?v=2"')  # 題名を 切りなおしたら 数字を 上げる(古い 絵を おぼえているため)
         out, n = re.subn(r'<img class="hero" src="hero.webp" alt="[^"]*" width="1536" height="1024">',
                          '<img class="hero" src="hero.webp" alt="%s" width="%d" height="%d">' % (art["alt"], *art["hero"]), out); assert n == 1
     else:

@@ -24,9 +24,17 @@ for i,sl in enumerate(ndimage.find_objects(lab),1):
     if s>1500 and hh>=MINH:
         keep|=lab==i; print(s, sl[1].start, sl[1].stop, sl[0].start, sl[0].stop)
 keep=ndimage.binary_dilation(keep,iterations=2)
-keep=ndimage.binary_fill_holes(keep) & ~(ndimage.binary_fill_holes(keep)&~keep) if False else keep
+# ⚠️ 字の 中の 白い つや(光っている ところ)は かべ あつかいで ぬけてしまう。
+#   白い 画面に のせると 字が 欠けて見える(けいくん 2026-09-26「旅行の文字が消えてる」)
+#   → 字に かこまれた 穴のうち、ほとんど 白っぽい ものは 字に もどす(本当の 穴=背景は のこす)
+holes=ndimage.binary_fill_holes(keep)&~keep
+hl,hn=ndimage.label(holes)
+for i,sl in enumerate(ndimage.find_objects(hl),1):
+    r=hl[sl]==i
+    wf=float(((mn[sl]>0.55)|((mx[sl]>0.75)&(sat[sl]<0.3)))[r].mean())
+    if wf>0.8 or r.sum()<60: keep[sl]|=r
 al=Image.fromarray((keep*255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(0.7))
 out=crop.convert("RGBA"); out.putalpha(al)
 ys,xs=np.nonzero(keep); out=out.crop((xs.min()-3,ys.min()-3,xs.max()+4,ys.max()+4))
 out.save(OUT,"WEBP",quality=95,method=6); print(out.size)
-bg=Image.new("RGB",out.size,(90,90,90)); bg.paste(out,(0,0),out); bg.save('/tmp/claude-0/-home-user-prepro-saas/3ef0319b-bc4e-5ada-8b8d-edf08e658395/scratchpad/word-on-gray.png')
+bg=Image.new("RGB",out.size,(255,255,255)); bg.paste(out,(0,0),out); bg.save('/tmp/claude-0/-home-user-prepro-saas/3ef0319b-bc4e-5ada-8b8d-edf08e658395/scratchpad/word-on-gray.png')

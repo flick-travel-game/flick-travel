@@ -1725,37 +1725,12 @@ const SVG_MAPS = {
     for(let d = -60; d <= 60; d += 30){ const y = (90 - d)/180 * H; o += '<line x1="0" y1="' + y + '" x2="' + W + '" y2="' + y + '" stroke="#fff" stroke-opacity="' + (d === 0 ? 0.25 : 0.08) + '"/><text x="4" y="' + (y - 3) + '" font-size="10" fill="#9fb0ff">' + (d > 0 ? "+" : "") + d + '°</text>'; }
     o += '<text x="' + (W - 8) + '" y="16" text-anchor="end" font-size="11" fill="#9fb0ff">北の空 ↑</text><text x="' + (W - 8) + '" y="' + (H - 6) + '" text-anchor="end" font-size="11" fill="#9fb0ff">南の空 ↓</text>';
     return o; } },
-  front: { w:720, h:900, pos:(x,y) => [x, y], bg:(W,H) => {
-    const sk = '#f6d7c3', ln = '#c99a80';
-    let o = '<rect width="' + W + '" height="' + H + '" fill="#fff7f2"/>';
-    const g = (d) => '<path d="' + d + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3" stroke-linejoin="round"/>';
-    o += '<ellipse cx="' + W*0.5 + '" cy="' + H*0.09 + '" rx="' + W*0.085 + '" ry="' + H*0.068 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/>';
-    o += g('M' + W*0.46 + ' ' + H*0.155 + ' L' + W*0.54 + ' ' + H*0.155 + ' L' + W*0.54 + ' ' + H*0.2 + ' L' + W*0.46 + ' ' + H*0.2 + ' Z');
-    o += g('M' + W*0.3 + ' ' + H*0.21 + ' Q' + W*0.5 + ' ' + H*0.19 + ' ' + W*0.7 + ' ' + H*0.21 + ' L' + W*0.66 + ' ' + H*0.5 + ' Q' + W*0.5 + ' ' + H*0.54 + ' ' + W*0.34 + ' ' + H*0.5 + ' Z');
-    o += g('M' + W*0.3 + ' ' + H*0.215 + ' L' + W*0.2 + ' ' + H*0.26 + ' L' + W*0.12 + ' ' + H*0.55 + ' L' + W*0.19 + ' ' + H*0.57 + ' L' + W*0.27 + ' ' + H*0.33 + ' L' + W*0.31 + ' ' + H*0.36 + ' Z');
-    o += g('M' + W*0.7 + ' ' + H*0.215 + ' L' + W*0.8 + ' ' + H*0.26 + ' L' + W*0.88 + ' ' + H*0.55 + ' L' + W*0.81 + ' ' + H*0.57 + ' L' + W*0.73 + ' ' + H*0.33 + ' L' + W*0.69 + ' ' + H*0.36 + ' Z');
-    o += g('M' + W*0.35 + ' ' + H*0.5 + ' L' + W*0.49 + ' ' + H*0.53 + ' L' + W*0.47 + ' ' + H*0.75 + ' L' + W*0.46 + ' ' + H*0.96 + ' L' + W*0.36 + ' ' + H*0.96 + ' L' + W*0.37 + ' ' + H*0.75 + ' Z');
-    o += g('M' + W*0.65 + ' ' + H*0.5 + ' L' + W*0.51 + ' ' + H*0.53 + ' L' + W*0.53 + ' ' + H*0.75 + ' L' + W*0.54 + ' ' + H*0.96 + ' L' + W*0.64 + ' ' + H*0.96 + ' L' + W*0.63 + ' ' + H*0.75 + ' Z');
-    // 心臓・肺・胃・腸の うすい しるし(場所の目安)
-    o += '<ellipse cx="' + W*0.40 + '" cy="' + H*0.30 + '" rx="' + W*0.06 + '" ry="' + H*0.06 + '" fill="#f3b7b7" opacity="0.5"/><ellipse cx="' + W*0.60 + '" cy="' + H*0.30 + '" rx="' + W*0.06 + '" ry="' + H*0.06 + '" fill="#f3b7b7" opacity="0.5"/>';
-    o += '<ellipse cx="' + W*0.46 + '" cy="' + H*0.31 + '" rx="' + W*0.03 + '" ry="' + H*0.03 + '" fill="#e0606a" opacity="0.6"/>';
-    o += '<ellipse cx="' + W*0.55 + '" cy="' + H*0.40 + '" rx="' + W*0.045 + '" ry="' + H*0.03 + '" fill="#f0c48a" opacity="0.6"/><ellipse cx="' + W*0.42 + '" cy="' + H*0.38 + '" rx="' + W*0.05 + '" ry="' + H*0.03 + '" fill="#c98a6a" opacity="0.5"/>';
-    o += '<ellipse cx="' + W*0.5 + '" cy="' + H*0.47 + '" rx="' + W*0.09 + '" ry="' + H*0.045 + '" fill="#f0a8a0" opacity="0.4"/>';
-    o += '<text x="' + W*0.5 + '" y="' + (H - 10) + '" text-anchor="middle" font-size="12" fill="#a08070">前から見た からだ(向かって左が 右手)</text>';
-    return o; } },
-  head: { w:720, h:720, pos:(x,y) => [x, y], bg:(W,H) => {
-    const sk = '#f6d7c3', ln = '#c99a80';
-    let o = '<rect width="' + W + '" height="' + H + '" fill="#fff7f2"/>';
-    o += '<ellipse cx="' + W*0.12 + '" cy="' + H*0.5 + '" rx="' + W*0.05 + '" ry="' + H*0.08 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/><ellipse cx="' + W*0.88 + '" cy="' + H*0.5 + '" rx="' + W*0.05 + '" ry="' + H*0.08 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/>';
-    o += '<ellipse cx="' + W*0.5 + '" cy="' + H*0.48 + '" rx="' + W*0.34 + '" ry="' + H*0.42 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/>';
-    o += '<path d="M' + W*0.42 + ' ' + H*0.9 + ' L' + W*0.42 + ' ' + H + ' L' + W*0.58 + ' ' + H + ' L' + W*0.58 + ' ' + H*0.9 + '" fill="' + sk + '" stroke="' + ln + '" stroke-width="3"/>';
-    o += '<path d="M' + W*0.2 + ' ' + H*0.3 + ' Q' + W*0.5 + ' ' + H*0.02 + ' ' + W*0.8 + ' ' + H*0.3 + ' Q' + W*0.5 + ' ' + H*0.22 + ' ' + W*0.2 + ' ' + H*0.3 + ' Z" fill="#e7b6a0" opacity="0.7"/>';
-    o += '<ellipse cx="' + W*0.35 + '" cy="' + H*0.45 + '" rx="' + W*0.06 + '" ry="' + H*0.035 + '" fill="#fff" stroke="' + ln + '" stroke-width="2"/><circle cx="' + W*0.35 + '" cy="' + H*0.45 + '" r="' + W*0.025 + '" fill="#5a3a2a"/>';
-    o += '<ellipse cx="' + W*0.65 + '" cy="' + H*0.45 + '" rx="' + W*0.06 + '" ry="' + H*0.035 + '" fill="#fff" stroke="' + ln + '" stroke-width="2"/><circle cx="' + W*0.65 + '" cy="' + H*0.45 + '" r="' + W*0.025 + '" fill="#5a3a2a"/>';
-    o += '<path d="M' + W*0.5 + ' ' + H*0.48 + ' L' + W*0.46 + ' ' + H*0.6 + ' L' + W*0.54 + ' ' + H*0.6 + '" fill="none" stroke="' + ln + '" stroke-width="3" stroke-linejoin="round"/>';
-    o += '<path d="M' + W*0.4 + ' ' + H*0.72 + ' Q' + W*0.5 + ' ' + H*0.79 + ' ' + W*0.6 + ' ' + H*0.72 + '" fill="#e88a8a" stroke="' + ln + '" stroke-width="2"/>';
-    o += '<text x="' + W*0.5 + '" y="' + (H*0.15) + '" text-anchor="middle" font-size="13" fill="#a08070">頭の中(脳)</text>';
-    return o; } },
+  // からだ・頭は ChatGPT の 図解の 絵(けいくん 2026-09-26)。📍の 場所は tools/body-pins.py で 絵に 合わせてある。
+  //   ⚠️ 絵を 差しかえたら body-pins.py の 数字を 測りなおすこと(絵だけ かえると 📍が ずれる)
+  front: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-front.webp" width="' + W + '" height="' + H + '"/>'
+    + '<text x="12" y="26" font-size="20" fill="#a08070">前から見た からだ(向かって左が 右手)</text>' },
+  head: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-head.webp" width="' + W + '" height="' + H + '"/>'
+    + '<text x="12" y="26" font-size="20" fill="#a08070">横から見た 頭の中(顔は 左むき)</text>' },
   cell: { w:720, h:720, pos:(x,y) => [x, y], bg:(W,H) => {
     let o = '<rect width="' + W + '" height="' + H + '" fill="#eefaf3"/>';
     o += '<path d="M' + W*0.5 + ' ' + H*0.06 + ' C' + W*0.85 + ' ' + H*0.02 + ' ' + W*0.98 + ' ' + H*0.4 + ' ' + W*0.92 + ' ' + H*0.62 + ' C' + W*0.86 + ' ' + H*0.9 + ' ' + W*0.55 + ' ' + H*0.99 + ' ' + W*0.3 + ' ' + H*0.9 + ' C' + W*0.05 + ' ' + H*0.8 + ' ' + W*0.02 + ' ' + H*0.4 + ' ' + W*0.18 + ' ' + H*0.2 + ' C' + W*0.28 + ' ' + H*0.08 + ' ' + W*0.4 + ' ' + H*0.07 + ' ' + W*0.5 + ' ' + H*0.06 + ' Z" fill="#d9f2e3" stroke="#2f9e6a" stroke-width="5"/>';

@@ -35,11 +35,17 @@ GAMES = {
                lead="遊んでいるうちに、AIとWebのことばがわかる。フリックで打つと、ことばの意味・つながる ことば・しくみの図の どこにあるかが 出るよ。知っている ことばから はじめて、点だった知識を 線につなげよう。",
                how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。入門は 聞いたことのある ことば、初級からは 新しい ことば7問に ふくしゅう3問が まざるよ。英字の ことば(API など)は 日本での ふつうの 読みかたで 打つよ。",
                rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、AI・Web・サービスづくりの しくみが つながって 見えてくるよ。"),
+    # 英会話フリック旅行(けいくん 2026-09-26)。ことばは data/english.json の 1か所 → eikaiwa/english.js。しくみは eikaiwa/eikaiwa.js(EIKAIWA)。
+    #   ⚠️ 英検・TOEIC の めやすは 画面に 出さない(けいくん 2026-09-26「勉強してる感が強くなるので表記しない方がいい」)。絵は まだ無い(文字の 題名)
+    "eikaiwa": dict(name="英会話フリック旅行", modes="EIKAIWA", kinds=set(), color="#0e8f6e", hero=False, logo=False,
+                    lead="英単語と 日常英会話を、フリックで 打ち写して 旅しよう。打つと 意味と 例文が 出て、🔊で 発音も 聞けるよ。身のまわりの ことばから はじめて、外国の人と 話せる 英語まで。",
+                    how="表示された 英語を、そのまま打ち写してね。大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ。1回は かならず 10問。入門は 新しい ことば 10問、初級からは 新しい ことば 7問に ふくしゅう 3問が まざるよ。",
+                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。iPhone は 日本語キーボードの「ABC」なら フリックで 英語が 打てるよ。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -73,6 +79,11 @@ def build(gid, g):
     if g["modes"] == "AITABI":  # AIの コース: ことばは terms.js(data/aiTerms.json から)、しくみは ai.js
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js"></script>\n<script src="ai.js"></script>')
         import subprocess, sys as _s; subprocess.run([_s.executable, str(ROOT / "tools/ai/terms_js.py")], check=True)
+    if g["modes"] == "EIKAIWA":  # 英会話の コース: ことばは english.js(data/english.json から)、しくみは eikaiwa.js。打つのは 英字なので 入力欄を 英語に
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="english.js"></script>\n<script src="eikaiwa.js"></script>')
+        out, n = re.subn(r'<input class="answer" id="ans" type="text" lang="ja"', '<input class="answer" id="ans" type="text" lang="en"', out); assert n == 1
+        out, n = re.subn(r'<p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>', '<p>大文字・小文字は どちらでも OK。空白や「\' , . ? !」は 打たなくて大丈夫。</p>', out); assert n == 1
+        import subprocess, sys as _s; subprocess.run([_s.executable, str(ROOT / "tools/eikaiwa/english_js.py")], check=True)
     # GAME
     out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{PLUG_MODES[g["modes"]] if isinstance(g["modes"], str) else json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
     assert n == 1

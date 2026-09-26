@@ -262,4 +262,4 @@ GitHub Pages は リポジトリの「いちばん上」か「docs フォルダ�
 - きろくは 人ごとに `flick-kabu[-p<id>]`(会社ごとに 見た回数・まちがい・1文字の 秒・さいごに 見た 時刻)。**つないでいない人は とじると 消える**決まりに そろえた(`recGet`/`recSet`。つないだら `keepSessionRecords` が 足す)
 - かずともの ランキング: `FLICK_MODES` に コースの 名前(kbeg kele kmid kadv kmjp … kmsre)。**ふくしゅうと レベル61より 上は 送らない**(表の check が 1〜60。広げるには SQL が 要る)
 - 地図は 出さない(会社の 本社の 場所を 2,400社 ぶん 確かめる 手段が 無いため)。かわりに 集めた数の パネル
-- **トップの絵**(`kabu/hero.webp`)は けいくんの ChatGPT の 絵(2026-09-26)。題名 `logo-word.webp` は `tools/kabu/logo_cut.py`(GrabCut)で 切りぬいた。四角い アイコン(`logo-mark2.webp` `icon-512.png` `apple-touch-icon.png` `favicon.png`)は 絵の 男の子と 犬の ところを 切ったもの(四角い 絵が 届いたら 差しかえる)
+- **トップの絵**(`kabu/hero.webp`)は けいくんの ChatGPT の 絵(2026-09-26)。題名 `logo-word.webp` は `tools/kabu/logo_cut.py`(GrabCut)で 切りぬいた。四角い アイコン(`logo-mark2.webp` `icon-512.png` `apple-touch-icon.png` `favicon.png`)は けいくんの 四角い 絵(1254px)を 縮めたもの。差しかえたら `build_games.py` の `iconv` を 上げる(いま 3)

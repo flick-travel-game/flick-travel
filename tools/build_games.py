@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -63,11 +63,18 @@ GAMES = {
                       lead="お菓子の 材料・生地・クリーム・世界の お菓子・和菓子・道具と 衛生の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、しくみ図の どこに あるのかが 出るよ。身近な お菓子から はじめて、製菓衛生師・菓子製造技能士 2級・1級の 試験範囲の めやすまで。4択クイズで 試験の 練習も できるよ。",
                       how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。説明は 本物の 試験問題では ないので、試験の 勉強には 問題集や 学校の 教科書も 使ってね。作りかた(分量・温度・時間)は のせていないよ。火や 刃物を 使うときは おとなと いっしょにね。",
                       rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、お菓子の ことばと しくみが つながって 見えてくるよ。厚生労働省・都道府県・中央職業能力開発協会とは 関係ありません。"),
+    # フリック国語旅行(けいくん 2026-09-27「フリック国語旅行 / 3段でOK / 古文・漢文を入れる / 上級は よみを かくす / 年表」)。ことばは tools/kokugo/terms-<旅>.json → kokugo/terms.js(tools/kokugo/terms_js.py)。
+    #   しくみは kokugo/kokugo.js(KOKUGO。patissier.js を 写した もの)。旅は 9つ + マスター。むずかしさは 入門(中学の基本)→ 中級(高校受験)→ 上級(大学受験)。
+    #   ⚠️ 絵が まだ 無いので hero・logo は False(題名は 文字)。絵が 届いたら art を 足す
+    "kokugo": dict(name="フリック国語旅行", modes="KOKUGO", kinds=set(), color="#3b5bdb", hero=False, logo=False,
+                   lead="漢字の読み・四字熟語・ことわざ・文法・古文・漢文・文学史・評論の ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出るよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。4択クイズで 意味の 練習も できるよ。",
+                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。漢字の読みの 上級は よみが かくれるよ。思い出して 打ってね。古文単語は むかしの かなづかいを いまの かなづかいで 打つよ。説明は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。",
+                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、国語の ことばが 自然と 身につくよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -122,6 +129,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/patissier/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "patissier" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="patissier.js?v=%s"></script>' % (ver("terms.js"), ver("patissier.js")))
+    if g["modes"] == "KOKUGO":  # 国語の コース: パティシエと 同じ 形。ことばは terms.js(tools/kokugo/terms-*.json から)、しくみは kokugo.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kokugo/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "kokugo" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="kokugo.js?v=%s"></script>' % (ver("terms.js"), ver("kokugo.js")))
     # GAME
     out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{PLUG_MODES[g["modes"]] if isinstance(g["modes"], str) else json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
     assert n == 1

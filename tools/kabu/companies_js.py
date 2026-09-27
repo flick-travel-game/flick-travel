@@ -14,9 +14,9 @@ def rubifier():
     tok = dictionary.Dictionary().create(); mode = tokenizer.Tokenizer.SplitMode.C
     def rub(text):
         parts, prev = [], ""
-        for w in (w for seg in M.SPLIT.split(text) for w in (tok.tokenize(seg, mode) if not M.SPLIT.fullmatch(seg) else [seg])):
+        for w, off in M.tokens(tok, mode, text):
             if isinstance(w, str): parts.append(html.escape(w)); prev = w; continue
-            s = w.surface(); r = M.FIX.get(s) or M.hira(w.reading_form())
+            s = w.surface(); r = M.ctx_reading(text, off + w.begin(), s) or M.FIX.get(s) or M.hira(w.reading_form())
             num = M.DIGITS.match(s)
             if num:
                 rest = s[num.end():]; rr = "".join(M.hira(x.reading_form()) for x in tok.tokenize(rest, mode)) if rest else ""
@@ -24,7 +24,7 @@ def rubifier():
             elif s == "日" and M.DIGITS.search(prev[-1:]): parts.append(s)
             else: parts.append(M.ruby_word(s, r))
             prev = s
-        return "".join(parts)
+        return M.fix_ruby("".join(parts))
     return rub
 
 def check(d):

@@ -132,9 +132,94 @@ SPOT_FIX = {
     ("zhugeliang", "後"): "のち",
     ("carroll", "行っ"): "いっ",
 }
+# 文の 中の 決まった ところだけ 読みを 変えるもの((文の 一部, 見出し語) → よみ)。
+# 文の 一部が 見つかり、その 中の 見出し語の 位置と 同じ ところの 語だけ 変える(けいくん 2026-09-27「ふりがなチェックして直して」)
+CTX_FIX = {}
+
+
+def ctx_reading(text, start, s):
+    """文(text)の start から はじまる 語 s が CTX_FIX に 当たれば その よみ"""
+    for (ctx, w), r in CTX_FIX.items():
+        if w != s:
+            continue
+        j = ctx.find(w)
+        i = text.find(ctx)
+        while i >= 0:
+            if i + j == start:
+                return r
+            i = text.find(ctx, i + 1)
+    return None
+
+
 # Sudachi は「階段(ガート)」を 1語にしてしまうので、かっこで 切ってから 読む
 SPLIT = re.compile(r"([()（）「」])")
 DIGITS = re.compile(r"^[0-9０-９.,]+")
+
+
+# できた ふりがなの 手直し(tools/ruby_fix.json)。読み まちがいを 1つずつ 人が 確かめて 書いた もの
+#   {"word": 漢字, "wrong": まちがった よみ, "right": 正しい よみ, "context": null か 文の 一部}
+#   context が null … その 漢字に その よみが 付いていたら どこでも 直す
+#   context が ある … 文に その 一部が あって、その 中の 漢字の 位置の ものだけ 直す
+RUBY_TAG = re.compile(r"<ruby>([^<]*)<rt>([^<]*)</rt></ruby>")
+try:
+    RUBY_FIX = json.loads((ROOT / "tools" / "ruby_fix.json").read_text(encoding="utf-8"))
+except FileNotFoundError:
+    RUBY_FIX = []
+
+
+def fix_ruby(s):
+    """<ruby> を ふくむ 文の 読み まちがいを 直す"""
+    if "<ruby>" not in s or not RUBY_FIX:
+        return s
+    tags, plain, pos = [], [], 0
+    for m in RUBY_TAG.finditer(s):
+        plain.append(html.unescape(s[pos:m.start()]))
+        start = sum(len(x) for x in plain)
+        tags.append((m, start))
+        plain.append(html.unescape(m.group(1)))
+        pos = m.end()
+    plain.append(html.unescape(s[pos:]))
+    text = "".join(plain)
+    new = {}
+    for f in RUBY_FIX:
+        w, bad, good, ctx = f["word"], f["wrong"], f["right"], f.get("context")
+        for m, start in tags:
+            if html.unescape(m.group(1)) != w or html.unescape(m.group(2)) != bad:
+                continue
+            if ctx:
+                j = ctx.find(w)
+                i = text.find(ctx)
+                hit = False
+                while i >= 0:
+                    if i + j == start:
+                        hit = True
+                        break
+                    i = text.find(ctx, i + 1)
+                if not hit:
+                    continue
+            new[m.start()] = (m, good)
+    if not new:
+        return s
+    out, pos = [], 0
+    for k in sorted(new):
+        m, good = new[k]
+        out.append(s[pos:m.start()])
+        out.append(f"<ruby>{m.group(1)}<rt>{html.escape(good)}</rt></ruby>")
+        pos = m.end()
+    out.append(s[pos:])
+    return "".join(out)
+
+
+def tokens(tok, mode, text):
+    """かっこで 切ってから 語に 分ける。(語, その かたまりの 文の 中の 位置) を 返す"""
+    off = 0
+    for seg in SPLIT.split(text):
+        if SPLIT.fullmatch(seg):
+            yield seg, off
+        elif seg:
+            for w in tok.tokenize(seg, mode):
+                yield w, off
+        off += len(seg)
 
 
 def hira(s):
@@ -168,12 +253,12 @@ def main():
     def rubify(key, desc, plain):
         parts = []
         prev = ""
-        for w in (w for seg in SPLIT.split(desc) for w in (tok.tokenize(seg, mode) if not SPLIT.fullmatch(seg) else [seg])):
+        for w, off in tokens(tok, mode, desc):
             if isinstance(w, str):
                 parts.append(html.escape(w)); prev = w
                 continue
             s = w.surface()
-            r = SPOT_FIX.get((key, s)) or FIX.get(s) or hira(w.reading_form())
+            r = ctx_reading(desc, off + w.begin(), s) or SPOT_FIX.get((key, s)) or FIX.get(s) or hira(w.reading_form())
             if s == "本" and prev.endswith("万"):
                 r = "ぼん"  # 700万本(ななひゃくまんぼん)
             if s == "色" and DIGITS.search(prev[-1:]):
@@ -199,10 +284,10 @@ def main():
     for m in re.finditer(PAT, page):
         name, key, quote, qdesc, desc = m.groups()
         plain = []
-        out[key] = rubify(key, desc, plain)
+        out[key] = fix_ruby(rubify(key, desc, plain))
         if quote is not None:
-            out[key + "|s"] = rubify(key, quote, plain)
-            out[key + "|sd"] = rubify(key, qdesc, plain)
+            out[key + "|s"] = fix_ruby(rubify(key, quote, plain))
+            out[key + "|sd"] = fix_ruby(rubify(key, qdesc, plain))
         if check:
             print(f"{name}: {' '.join(plain)}")
     if check:

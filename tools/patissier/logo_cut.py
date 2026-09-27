@@ -20,6 +20,17 @@ f=cv2.morphologyEx(f.astype(np.uint8),cv2.MORPH_OPEN,cv2.getStructuringElement(c
 lab,n=ndimage.label(f); sz=ndimage.sum(f,lab,range(1,n+1))
 order=np.argsort(sz)[::-1]; print([int(sz[i]) for i in order[:8]])
 keep=np.isin(lab,[i+1 for i in order if sz[i]>=3000])
+# 「シ」の 上の 点は いちごと くっついていて 外に 数えられるので、箱の 中の 黄色を 足す(絵を 差しかえたら 見なおす)
+bx0,by0,bx1,by1=335,45,420,110
+dot=np.zeros(keep.shape,bool); sub=(H[by0:by1,bx0:bx1]>=12)&(H[by0:by1,bx0:bx1]<=32)&(S[by0:by1,bx0:bx1]>.45)&(V[by0:by1,bx0:bx1]>.6)
+dot[by0:by1,bx0:bx1]=sub
+dot=ndimage.binary_fill_holes(cv2.morphologyEx(dot.astype(np.uint8),cv2.MORPH_CLOSE,np.ones((7,7),np.uint8)).astype(bool))
+l2,n2=ndimage.label(dot)
+if n2: dot=l2==(int(np.argmax(ndimage.sum(dot,l2,range(1,n2+1))))+1)
+ring=cv2.dilate(dot.astype(np.uint8),cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(13,13))).astype(bool)
+ring&=~((H>=35)&(H<=100)&(S>.35))  # いちごの 葉・青い 実は 入れない
+ring=cv2.morphologyEx(ring.astype(np.uint8),cv2.MORPH_OPEN,np.ones((3,3),np.uint8)).astype(bool)
+keep|=ring
 keep=cv2.dilate(keep.astype(np.uint8),np.ones((3,3),np.uint8)).astype(bool)
 out=Image.fromarray(cv2.cvtColor(crop,cv2.COLOR_BGR2RGB)).convert('RGBA')
 out.putalpha(Image.fromarray((keep*255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(0.8)))

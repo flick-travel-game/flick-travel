@@ -1,0 +1,41 @@
+# 歴史(フリック歴史旅行 2026-09-27 の 絵): tools/logo-sticker-cut.py と 同じ しくみ + 字の 右うえに かかる フィルムの 線路を 落とす
+# python3 tools/rekishi/logo_cut.py もと.png rekishi/logo-word.webp 0.20,0.64,0.80,0.90 190 60 見本.png
+import sys
+import numpy as np
+from PIL import Image, ImageFilter
+from scipy import ndimage
+SRC, OUT, FR, TH, MINH = sys.argv[1], sys.argv[2], sys.argv[3], int(sys.argv[4]), int(sys.argv[5])
+FRAC = tuple(float(v) for v in FR.split(","))
+src = Image.open(SRC).convert("RGB"); W0,H0=src.size
+BOX=(round(FRAC[0]*W0),round(FRAC[1]*H0),round(FRAC[2]*W0),round(FRAC[3]*H0))
+crop=src.crop(BOX); a=np.asarray(crop).astype(np.float32)/255
+mx=a.max(2); mn=a.min(2); sat=(mx-mn)/np.maximum(mx,1e-6)
+barrier=(mn>TH/255)|((mx>0.8)&(sat<0.22))
+barrier=ndimage.binary_dilation(barrier,iterations=1)
+free=~barrier
+lab,n=ndimage.label(free)
+H,W=free.shape
+edge=set(np.unique(np.concatenate([lab[0],lab[-1],lab[:,0],lab[:,-1]])))
+keep=np.zeros_like(free)
+for i,sl in enumerate(ndimage.find_objects(lab),1):
+    if i in edge: continue
+    s=int((lab[sl]==i).sum())
+    hh=sl[0].stop-sl[0].start
+    if sl[0].start < 20 and sl[1].start > 600: continue  # 右うえの フィルムの 線路(字では ない)
+    if s>1500 and hh>=MINH:
+        keep|=lab==i; print(s, sl[1].start, sl[1].stop, sl[0].start, sl[0].stop)
+keep=ndimage.binary_dilation(keep,iterations=2)
+# ⚠️ 字の 中の 白い つや(光っている ところ)は かべ あつかいで ぬけてしまう。
+#   白い 画面に のせると 字が 欠けて見える(けいくん 2026-09-26「旅行の文字が消えてる」)
+#   → 字に かこまれた 穴のうち、ほとんど 白っぽい ものは 字に もどす(本当の 穴=背景は のこす)
+holes=ndimage.binary_fill_holes(keep)&~keep
+hl,hn=ndimage.label(holes)
+for i,sl in enumerate(ndimage.find_objects(hl),1):
+    r=hl[sl]==i
+    wf=float(((mn[sl]>0.55)|((mx[sl]>0.75)&(sat[sl]<0.3)))[r].mean())
+    if wf>0.8 or r.sum()<60: keep[sl]|=r
+al=Image.fromarray((keep*255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(0.7))
+out=crop.convert("RGBA"); out.putalpha(al)
+ys,xs=np.nonzero(keep); out=out.crop((xs.min()-3,ys.min()-3,xs.max()+4,ys.max()+4))
+out.save(OUT,"WEBP",quality=95,method=6); print(out.size)
+bg=Image.new("RGB",out.size,(255,255,255)); bg.paste(out,(0,0),out); bg.save(sys.argv[6] if len(sys.argv) > 6 else '/tmp/word-on-white.png')

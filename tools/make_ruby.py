@@ -187,13 +187,11 @@ def fix_ruby(s):
             if html.unescape(m.group(1)) != w or html.unescape(m.group(2)) != bad:
                 continue
             if ctx:
-                j = ctx.find(w)
+                js = [k for k in range(len(ctx)) if ctx.startswith(w, k)]
                 i = text.find(ctx)
                 hit = False
-                while i >= 0:
-                    if i + j == start:
-                        hit = True
-                        break
+                while i >= 0 and not hit:
+                    hit = any(i + j == start for j in js)
                     i = text.find(ctx, i + 1)
                 if not hit:
                     continue

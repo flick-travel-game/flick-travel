@@ -1,0 +1,1327 @@
+[
+ {
+  "id": "de-heikin",
+  "name": "平均",
+  "reading": "へいきん",
+  "journey": "data",
+  "category": "代表値",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "⚖️",
+  "relatedTerms": [
+   "de-heikinchi",
+   "de-daihyochi"
+  ],
+  "description": "いくつかの 数量を 等しい 大きさに ならした 値です。合計 ÷ 個数 で 求めます。ちがう 大きさの 数量を まとめて くらべるときに 使います。"
+ },
+ {
+  "id": "de-bougraph",
+  "name": "棒グラフ",
+  "reading": "ぼうぐらふ",
+  "journey": "data",
+  "category": "表とグラフ",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "📊",
+  "relatedTerms": [
+   "de-hyo",
+   "de-hitomemori"
+  ],
+  "description": "数量の 大きさを 棒の 長さで 表した グラフです。どれが 多いか・少ないかが ひと目で くらべられます。多い 順に 並べると 読みやすく なります。"
+ },
+ {
+  "id": "de-oresen",
+  "name": "折れ線グラフ",
+  "reading": "おれせんぐらふ",
+  "journey": "data",
+  "category": "表とグラフ",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "📈",
+  "relatedTerms": [
+   "de-bougraph",
+   "de-nijigen"
+  ],
+  "description": "時間などに つれて 変わる 量を 点で とり、点と 点を 線で むすんだ グラフです。線の かたむきで ふえかた・へりかたの 大きさが 分かります。気温の 変化などに 使います。"
+ },
+ {
+  "id": "de-engraph",
+  "name": "円グラフ",
+  "reading": "えんぐらふ",
+  "journey": "data",
+  "category": "表とグラフ",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "🥧",
+  "relatedTerms": [
+   "de-obigraph"
+  ],
+  "description": "円全体を 100% として、各部分の 割合を おうぎ形の 大きさで 表した グラフです。ふつう 真上から 右まわりに、割合の 大きい 順に かきます。"
+ },
+ {
+  "id": "de-obigraph",
+  "name": "帯グラフ",
+  "reading": "おびぐらふ",
+  "journey": "data",
+  "category": "表とグラフ",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "🎗️",
+  "relatedTerms": [
+   "de-engraph"
+  ],
+  "description": "長方形の 帯 全体を 100% として、各部分の 割合を 帯の 長さで 表した グラフです。いくつかの 帯を 並べると 割合の うつりかわりを くらべやすく なります。"
+ },
+ {
+  "id": "de-hyo",
+  "name": "表",
+  "reading": "ひょう",
+  "journey": "data",
+  "category": "表とグラフ",
+  "difficulty": 1,
+  "grade": "小2",
+  "type": "concept",
+  "emoji": "📋",
+  "relatedTerms": [
+   "de-nijigen",
+   "de-bougraph"
+  ],
+  "description": "調べた ものを 種類ごとに 分けて、数を 行と 列に 整理した ものです。数えもれが ないように まとめると、多い 少ないが 読みとりやすく なります。"
+ },
+ {
+  "id": "de-daihyochi",
+  "name": "代表値",
+  "reading": "だいひょうち",
+  "journey": "data",
+  "category": "代表値",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🏅",
+  "relatedTerms": [
+   "de-heikinchi",
+   "de-chuouchi",
+   "de-saihinchi"
+  ],
+  "description": "データ全体の 特徴を 1つの 数で 表す 値です。平均値・中央値・最頻値の 3つが あります。データの 形に よって どれを 使うと よいかが 変わります。"
+ },
+ {
+  "id": "de-heikinchi",
+  "name": "平均値",
+  "reading": "へいきんち",
+  "journey": "data",
+  "category": "代表値",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "➗",
+  "relatedTerms": [
+   "de-daihyochi",
+   "de-heikin"
+  ],
+  "description": "データの 値の 合計を データの 個数で わった 値です。代表値の 1つです。とびぬけて 大きい 値や 小さい 値が あると、その えいきょうを 受けやすい 点に 注意します。"
+ },
+ {
+  "id": "de-chuouchi",
+  "name": "中央値",
+  "reading": "ちゅうおうち",
+  "journey": "data",
+  "category": "代表値",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🎯",
+  "figure": "box:med",
+  "relatedTerms": [
+   "de-daihyochi",
+   "de-shibuni"
+  ],
+  "description": "データを 大きさの 順に 並べたとき まんなかに くる 値です。個数が 偶数の ときは、まんなかの 2つの 値の 平均を とります。メジアンとも いいます。"
+ },
+ {
+  "id": "de-saihinchi",
+  "name": "最頻値",
+  "reading": "さいひんち",
+  "journey": "data",
+  "category": "代表値",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "👑",
+  "figure": "hist:mode",
+  "relatedTerms": [
+   "de-daihyochi",
+   "de-dosubunpuhyo"
+  ],
+  "description": "データの 中で いちばん 多く 出てくる 値です。モードとも いいます。度数分布表では 度数が 最も 多い 階級の 階級値を 使います。"
+ },
+ {
+  "id": "de-dotplot",
+  "name": "ドットプロット",
+  "reading": "どっとぷろっと",
+  "journey": "data",
+  "category": "表とグラフ",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "⚫",
+  "relatedTerms": [
+   "de-chirabari",
+   "de-saihinchi"
+  ],
+  "description": "数直線の 上の 目もりに、データの 値の ところへ 1つずつ 点を 積み上げて 表した 図です。データの 散らばりの 様子や 最頻値が 見やすく なります。"
+ },
+ {
+  "id": "de-dosubunpuhyo",
+  "name": "度数分布表",
+  "reading": "どすうぶんぷひょう",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🗂️",
+  "relatedTerms": [
+   "de-kaikyu",
+   "de-chujo"
+  ],
+  "description": "データを いくつかの 区間(階級)に 分けて、各区間に 入る データの 個数を まとめた 表です。データの 散らばりの 様子を つかむのに 使います。"
+ },
+ {
+  "id": "de-chujo",
+  "name": "柱状グラフ",
+  "reading": "ちゅうじょうぐらふ",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🏛️",
+  "figure": "hist:bar",
+  "relatedTerms": [
+   "de-dosubunpuhyo",
+   "de-histogram"
+  ],
+  "description": "度数分布表を、階級の 幅を 横、度数を 縦とする 長方形を すき間なく 並べて 表した グラフです。中学校では ヒストグラムと よびます。"
+ },
+ {
+  "id": "de-kaikyu",
+  "name": "階級",
+  "reading": "かいきゅう",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "📦",
+  "figure": "hist:class",
+  "relatedTerms": [
+   "de-dosubunpuhyo",
+   "de-kaikyuchi"
+  ],
+  "description": "度数分布表で データを 分けた 1つ1つの 区間です。「10cm以上 15cm未満」のように 表します。区間の 大きさを 階級の 幅と いいます。"
+ },
+ {
+  "id": "de-chirabari",
+  "name": "散らばり",
+  "reading": "ちらばり",
+  "journey": "data",
+  "category": "代表値",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🌾",
+  "relatedTerms": [
+   "de-dotplot",
+   "de-hanni"
+  ],
+  "description": "データの 値が どのように 広がって 分布しているかの 様子です。ドットプロットや 柱状グラフで 見ると、どこに 集まり どこまで 広がるかが 分かります。"
+ },
+ {
+  "id": "de-narabekata",
+  "name": "並べ方",
+  "reading": "ならべかた",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🔤",
+  "figure": "tree:branch",
+  "relatedTerms": [
+   "de-kumiawasekata",
+   "de-okoriuru"
+  ],
+  "description": "いくつかの ものを 1列に 並べるときの 順番の 決めかたです。A・B・C の 3人なら 6通り あります。図や 表を 使い、落ちや 重なりが ないように 数えます。"
+ },
+ {
+  "id": "de-kumiawasekata",
+  "name": "組み合わせ方",
+  "reading": "くみあわせかた",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🤝",
+  "relatedTerms": [
+   "de-narabekata",
+   "de-okoriuru"
+  ],
+  "description": "いくつかの ものから 何個かを 選ぶ 選びかたです。順番は 考えません。4チームの 試合の 数などを、表や 図で 落ちや 重なりなく 数えます。"
+ },
+ {
+  "id": "de-okoriuru",
+  "name": "起こり得る場合",
+  "reading": "おこりうるばあい",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🎲",
+  "acceptedReadings": [
+   "おこりうるばあい"
+  ],
+  "relatedTerms": [
+   "de-narabekata",
+   "de-kumiawasekata"
+  ],
+  "description": "ある ことがらで 考えられる 結果の すべてです。順序よく 整理して、もれなく 重なりなく 数えることが 大切です。中学校で 習う 確率の 土台に なります。"
+ },
+ {
+  "id": "de-nijigen",
+  "name": "二次元の表",
+  "reading": "にじげんのひょう",
+  "journey": "data",
+  "category": "表とグラフ",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🔲",
+  "relatedTerms": [
+   "de-hyo",
+   "de-oresen"
+  ],
+  "description": "2つの 観点(たとえば 場所と けがの 種類)で 分けて、縦と 横に 整理した 表です。2つの ことがらの 関係や 組み合わせごとの 数が 読みとれます。"
+ },
+ {
+  "id": "de-hitomemori",
+  "name": "1目盛り",
+  "reading": "ひとめもり",
+  "journey": "data",
+  "category": "表とグラフ",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "📏",
+  "relatedTerms": [
+   "de-bougraph",
+   "de-oresen"
+  ],
+  "description": "グラフの 軸の 目もり 1つ分が 表す 大きさです。1目もりが 1とは 限らず、2や 5や 10の ことも あります。グラフを 読む前に まず 確かめます。"
+ },
+ {
+  "id": "de-kakuritsu",
+  "name": "確率",
+  "reading": "かくりつ",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "🎲",
+  "figure": "tree:branch",
+  "relatedTerms": [
+   "de-douyou",
+   "de-pan"
+  ],
+  "description": "あることがらの 起こりやすさの 程度を 表す 数です。0以上 1以下で、必ず 起こることは 1、決して 起こらないことは 0 です。"
+ },
+ {
+  "id": "de-hakohige",
+  "name": "箱ひげ図",
+  "reading": "はこひげず",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "🧰",
+  "figure": "box:med",
+  "relatedTerms": [
+   "de-shibuni",
+   "de-shibunihanni"
+  ],
+  "description": "最小値・第1四分位数・中央値・第3四分位数・最大値の 5つの 値を、箱と ひげで 表した 図です。いくつかの データの 分布を 並べて くらべるのに 向いています。"
+ },
+ {
+  "id": "de-shibunihanni",
+  "name": "四分位範囲",
+  "reading": "しぶんいはんい",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "↔️",
+  "figure": "box:iqr",
+  "relatedTerms": [
+   "de-hakohige",
+   "de-dai3",
+   "de-dai1"
+  ],
+  "description": "第3四分位数 から 第1四分位数 を ひいた 値で、箱ひげ図の 箱の 長さに あたります。中央付近の 約半分の データの 散らばりを 表し、外れ値の えいきょうを 受けにくいです。"
+ },
+ {
+  "id": "de-histogram",
+  "name": "ヒストグラム",
+  "reading": "ひすとぐらむ",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "📊",
+  "figure": "hist:bar",
+  "relatedTerms": [
+   "de-dosu",
+   "de-kaikyuchi",
+   "de-dosuoresen"
+  ],
+  "description": "横軸に 階級、縦軸に 度数を とり、長方形を すき間なく 並べて 度数の 分布を 表した グラフです。分布の 山の 位置や 広がりが ひと目で 分かります。"
+ },
+ {
+  "id": "de-soutaidosu",
+  "name": "相対度数",
+  "reading": "そうたいどすう",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🍰",
+  "relatedTerms": [
+   "de-dosu",
+   "de-ruisekidosu"
+  ],
+  "description": "ある 階級の 度数を、度数の 合計で わった 値です。全体の 何割に あたるかを 表すので、データの 個数が ちがう 集団どうしを くらべられます。"
+ },
+ {
+  "id": "de-shibuni",
+  "name": "四分位数",
+  "reading": "しぶんいすう",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "✂️",
+  "figure": "box:q1",
+  "relatedTerms": [
+   "de-dai1",
+   "de-dai3",
+   "de-hakohige"
+  ],
+  "description": "データを 小さい 順に 並べ、4等分する 位置に ある 3つの 値です。小さい方から 第1・第2・第3四分位数と いい、第2四分位数は 中央値と 同じです。"
+ },
+ {
+  "id": "de-jukeizu",
+  "name": "樹形図",
+  "reading": "じゅけいず",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "🌳",
+  "figure": "tree:branch",
+  "relatedTerms": [
+   "de-kakuritsu",
+   "de-douyou"
+  ],
+  "description": "起こり得る 場合を、木の 枝分かれのように 順に 書き出した 図です。すべての 場合を もれなく 重なりなく 数えるのに 役立ちます。"
+ },
+ {
+  "id": "de-hyohonchosa",
+  "name": "標本調査",
+  "reading": "ひょうほんちょうさ",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🔍",
+  "relatedTerms": [
+   "de-boshudan",
+   "de-hyohon",
+   "de-zensu"
+  ],
+  "description": "集団の 一部を 取り出して 調べ、その 結果から 集団全体の 性質を 推しはかる 調査です。世論調査や 品質検査など、全部を 調べるのが むずかしい ときに 使います。"
+ },
+ {
+  "id": "de-boshudan",
+  "name": "母集団",
+  "reading": "ぼしゅうだん",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🏙️",
+  "relatedTerms": [
+   "de-hyohon",
+   "de-hyohonchosa"
+  ],
+  "description": "標本調査で、性質を 知りたい もとの 集団全体です。全国の 中学生や、工場で 作った 製品 全部などが あたります。"
+ },
+ {
+  "id": "de-hyohon",
+  "name": "標本",
+  "reading": "ひょうほん",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🧪",
+  "relatedTerms": [
+   "de-boshudan",
+   "de-hyohonchosa"
+  ],
+  "description": "母集団から 取り出して 実際に 調べる 一部分です。かたよりが 出ないよう、無作為に(くじや 乱数で)選ぶことが 大切です。取り出した 個数を その 大きさと いいます。"
+ },
+ {
+  "id": "de-douyou",
+  "name": "同様に確からしい",
+  "reading": "どうようにたしからしい",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "⚖️",
+  "relatedTerms": [
+   "de-kakuritsu",
+   "de-pan"
+  ],
+  "description": "どの 結果が 起こることも 同じ 程度に 期待できる という 意味です。さいころの 各目や 硬貨の 表裏が その例で、確率を 場合の 数で 求めるときの 前提です。"
+ },
+ {
+  "id": "de-pan",
+  "name": "p=a/n",
+  "reading": "ぴーいこーるえぬぶんのえー",
+  "journey": "data",
+  "category": "公式を打つ",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "🧮",
+  "relatedTerms": [
+   "de-kakuritsu",
+   "de-douyou"
+  ],
+  "description": "確率の 求めかたの 公式です。起こる 場合が 全部で n通り あり、どれも 同様に 確からしいとき、ことがら A の 起こる 場合が a通りなら、A の 確率 p は a/n です。"
+ },
+ {
+  "id": "de-hanni",
+  "name": "範囲",
+  "reading": "はんい",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "📐",
+  "relatedTerms": [
+   "de-chirabari",
+   "de-shibunihanni"
+  ],
+  "description": "データの 最大値から 最小値を ひいた 値です。レンジとも いいます。散らばりの 大きさを 表しますが、極端な 値が 1つ あるだけで 大きく 変わります。"
+ },
+ {
+  "id": "de-ruisekidosu",
+  "name": "累積度数",
+  "reading": "るいせきどすう",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🧱",
+  "relatedTerms": [
+   "de-soutaidosu",
+   "de-dosu"
+  ],
+  "description": "最初の 階級から ある 階級までの 度数を 合計した 値です。「ある 値 未満が 何人いるか」が 分かります。度数の 合計で わると 累積相対度数に なります。"
+ },
+ {
+  "id": "de-dai1",
+  "name": "第1四分位数",
+  "reading": "だいいちしぶんいすう",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "1️⃣",
+  "figure": "box:q1",
+  "relatedTerms": [
+   "de-shibuni",
+   "de-dai3"
+  ],
+  "description": "データを 中央値で 前半と 後半に 分けたとき、前半の データの 中央値です。個数が 奇数の ときは 中央値を 除いて 分けます。箱ひげ図の 箱の 左はしに あたります。"
+ },
+ {
+  "id": "de-dai3",
+  "name": "第3四分位数",
+  "reading": "だいさんしぶんいすう",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "3️⃣",
+  "figure": "box:q3",
+  "relatedTerms": [
+   "de-shibuni",
+   "de-dai1"
+  ],
+  "description": "データを 中央値で 前半と 後半に 分けたとき、後半の データの 中央値です。個数が 奇数の ときは 中央値を 除いて 分けます。箱ひげ図の 箱の 右はしに あたります。"
+ },
+ {
+  "id": "de-kaikyuchi",
+  "name": "階級値",
+  "reading": "かいきゅうち",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🎚️",
+  "figure": "hist:class",
+  "relatedTerms": [
+   "de-kaikyu",
+   "de-histogram"
+  ],
+  "description": "度数分布表で、それぞれの 階級の まんなかの 値です。10以上 20未満の 階級なら 15 です。度数分布表から 平均値を 求めるときに 各階級の 代わりに 使います。"
+ },
+ {
+  "id": "de-dosu",
+  "name": "度数",
+  "reading": "どすう",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🔢",
+  "figure": "hist:bar",
+  "relatedTerms": [
+   "de-kaikyu",
+   "de-soutaidosu"
+  ],
+  "description": "度数分布表で、それぞれの 階級に 入っている データの 個数です。ヒストグラムでは 長方形の 高さで 表します。"
+ },
+ {
+  "id": "de-dosuoresen",
+  "name": "度数折れ線",
+  "reading": "どすうおれせん",
+  "journey": "data",
+  "category": "度数分布",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "〰️",
+  "figure": "hist:bar",
+  "relatedTerms": [
+   "de-histogram",
+   "de-dosu"
+  ],
+  "description": "ヒストグラムの 各長方形の 上の辺の 中点を 順に 線で むすんだ グラフです。度数分布多角形とも いいます。2つの 分布を 重ねて くらべるのに 便利です。"
+ },
+ {
+  "id": "de-zensu",
+  "name": "全数調査",
+  "reading": "ぜんすうちょうさ",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "📝",
+  "relatedTerms": [
+   "de-hyohonchosa",
+   "de-boshudan"
+  ],
+  "description": "調べたい 集団の すべてを 1つ残らず 調べる 調査です。国勢調査や 学校の 健康診断が その例です。正確ですが、時間や 費用が 多く かかります。"
+ },
+ {
+  "id": "de-baainokazu",
+  "name": "場合の数",
+  "reading": "ばあいのかず",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🔢",
+  "relatedTerms": [
+   "de-seki",
+   "de-wa"
+  ],
+  "description": "ある ことがらが 起こる 起こりかたの 総数です。樹形図や 表で 数えたり、和の法則・積の法則・順列・組合せを 使って 計算で 求めたりします。"
+ },
+ {
+  "id": "de-junretsu",
+  "name": "順列",
+  "reading": "じゅんれつ",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🚃",
+  "relatedTerms": [
+   "de-kumiawase",
+   "de-kaijo",
+   "de-ncr"
+  ],
+  "description": "異なる n個の ものから r個を 取り出し、順番を つけて 1列に 並べた ものです。その 総数を nPr と 書き、n(n−1)(n−2)…(n−r+1) で 求めます。"
+ },
+ {
+  "id": "de-kumiawase",
+  "name": "組合せ",
+  "reading": "くみあわせ",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🧺",
+  "acceptedReadings": [
+   "くみあわせ"
+  ],
+  "relatedTerms": [
+   "de-junretsu",
+   "de-ncr"
+  ],
+  "description": "異なる n個の ものから、順番を 考えずに r個を 選び出した ものです。その 総数を nCr と 書きます。選ばれる ものが 同じなら 並び順が ちがっても 1通りと 数えます。"
+ },
+ {
+  "id": "de-kaijo",
+  "name": "階乗",
+  "reading": "かいじょう",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "❗",
+  "relatedTerms": [
+   "de-junretsu",
+   "de-enjun"
+  ],
+  "description": "1から n までの 自然数を すべて かけた 積で、n! と 書きます。5! = 5×4×3×2×1 = 120 です。0! は 1 と 決めます。n個 全部を 並べる 並べかたの 数に なります。"
+ },
+ {
+  "id": "de-wa",
+  "name": "和の法則",
+  "reading": "わのほうそく",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "➕",
+  "relatedTerms": [
+   "de-seki",
+   "de-baainokazu"
+  ],
+  "description": "同時には 起こらない 2つの ことがらが それぞれ m通り、n通りの とき、どちらかが 起こる 場合は m+n 通りと なる きまりです。"
+ },
+ {
+  "id": "de-seki",
+  "name": "積の法則",
+  "reading": "せきのほうそく",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "✖️",
+  "figure": "tree:branch",
+  "relatedTerms": [
+   "de-wa",
+   "de-baainokazu"
+  ],
+  "description": "ことがら A が m通り あり、その それぞれに B が n通り あるとき、A と B が 続けて 起こる 場合は mn 通りと なる きまりです。"
+ },
+ {
+  "id": "de-enjun",
+  "name": "円順列",
+  "reading": "えんじゅんれつ",
+  "journey": "data",
+  "category": "場合の数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "⭕",
+  "relatedTerms": [
+   "de-junretsu",
+   "de-kaijo"
+  ],
+  "description": "いくつかの ものを 円形に 並べる 並べかたです。回転して 同じに なる ものは 1通りと 数えるので、異なる n個なら (n−1)! 通りです。"
+ },
+ {
+  "id": "de-ncr",
+  "name": "nCr=nPr/r!",
+  "reading": "えぬしーあーるいこーるあーるのかいじょうぶんのえぬぴーあーる",
+  "journey": "data",
+  "category": "公式を打つ",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🧮",
+  "relatedTerms": [
+   "de-kumiawase",
+   "de-junretsu"
+  ],
+  "description": "組合せの 数を 順列の 数から 求める 公式です。r個を 並べた 順列 nPr の 中には、同じ 組を 並べかえた ものが r! 個ずつ あるので、r! で わります。"
+ },
+ {
+  "id": "de-yojisho",
+  "name": "余事象",
+  "reading": "よじしょう",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🔄",
+  "figure": "venn:comp",
+  "relatedTerms": [
+   "de-haihan",
+   "de-kakuritsu"
+  ],
+  "description": "事象 A に 対して「A が 起こらない」という 事象です。A の 確率を p と すると その確率は 1−p に なります。「少なくとも 1つ」の 確率で よく 使います。"
+ },
+ {
+  "id": "de-haihan",
+  "name": "排反事象",
+  "reading": "はいはんじしょう",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🚫",
+  "relatedTerms": [
+   "de-yojisho",
+   "de-dokuritsu"
+  ],
+  "description": "2つの 事象が 同時には 決して 起こらない 関係に あるとき、たがいに そう いいます。このとき どちらかが 起こる 確率は それぞれの 確率の 和に なります。"
+ },
+ {
+  "id": "de-dokuritsu",
+  "name": "独立な試行",
+  "reading": "どくりつなしこう",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🪙",
+  "figure": "tree:branch",
+  "relatedTerms": [
+   "de-hanpuku",
+   "de-jokentsuki"
+  ],
+  "description": "たがいの 結果が ほかの 結果の 起こりかたに えいきょうしない 2つ以上の 試行です。さいころと 硬貨を 投げるなど。それぞれの 確率の 積で 同時の 確率が 求まります。"
+ },
+ {
+  "id": "de-hanpuku",
+  "name": "反復試行",
+  "reading": "はんぷくしこう",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🔂",
+  "figure": "tree:branch",
+  "relatedTerms": [
+   "de-dokuritsu",
+   "de-nikou"
+  ],
+  "description": "同じ 条件の もとで 同じ 試行を 独立に くり返すことです。1回で A が 起こる 確率を p と すると、n回中 ちょうど r回 起こる 確率は nCr pʳ(1−p)ⁿ⁻ʳ です。"
+ },
+ {
+  "id": "de-jokentsuki",
+  "name": "条件付き確率",
+  "reading": "じょうけんつきかくりつ",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🔎",
+  "figure": "venn:and",
+  "relatedTerms": [
+   "de-dokuritsu",
+   "de-haihan"
+  ],
+  "description": "事象 A が 起こったと 分かったときに、事象 B が 起こる 確率です。PA(B) と 書き、P(A∩B) ÷ P(A) で 求めます。"
+ },
+ {
+  "id": "de-kitaichi",
+  "name": "期待値",
+  "reading": "きたいち",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "💰",
+  "relatedTerms": [
+   "de-kakuritsuhensu",
+   "de-vx"
+  ],
+  "description": "とる 値と その 確率の 積を すべて 足した 値です。くじを 何回も 引いたとき、1回あたり 平均して どれだけ 得られると 見こめるかを 表します。"
+ },
+ {
+  "id": "de-bunsan",
+  "name": "分散",
+  "reading": "ぶんさん",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🌫️",
+  "relatedTerms": [
+   "de-hyojunhensa",
+   "de-hensa"
+  ],
+  "description": "各データの 値と 平均値との 差(偏差)を 2乗し、その 平均を とった 値です。散らばりの 大きさを 表し、大きいほど 平均から 離れた データが 多いです。"
+ },
+ {
+  "id": "de-hyojunhensa",
+  "name": "標準偏差",
+  "reading": "ひょうじゅんへんさ",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "📏",
+  "relatedTerms": [
+   "de-bunsan",
+   "de-hensa"
+  ],
+  "description": "分散の 正の 平方根です。単位が もとの データと そろうので、平均から どのくらい 散らばっているかを 実感しやすい 値です。"
+ },
+ {
+  "id": "de-hensa",
+  "name": "偏差",
+  "reading": "へんさ",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "↕️",
+  "relatedTerms": [
+   "de-bunsan",
+   "de-hyojunhensa"
+  ],
+  "description": "各データの 値から 平均値を ひいた 差です。平均より 大きいと 正、小さいと 負に なり、合計すると かならず 0 です。分散を 求める 材料に なります。"
+ },
+ {
+  "id": "de-soukan",
+  "name": "相関係数",
+  "reading": "そうかんけいすう",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔗",
+  "figure": "scatter:neg",
+  "relatedTerms": [
+   "de-sanpuzu",
+   "de-kyobunsan"
+  ],
+  "description": "2つの 変量の 直線的な 関係の 強さを 表す 値で、−1以上 1以下です。1に 近いほど 強い 正の相関、−1に 近いほど 強い 負の相関が あります。"
+ },
+ {
+  "id": "de-sanpuzu",
+  "name": "散布図",
+  "reading": "さんぷず",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "✨",
+  "figure": "scatter:pos",
+  "relatedTerms": [
+   "de-soukan",
+   "de-kyobunsan"
+  ],
+  "description": "2つの 変量の データを 組にして、座標平面上に 点で 表した 図です。点の 並びかたから、相関が あるか ないか、正か 負かを 読みとります。"
+ },
+ {
+  "id": "de-kyobunsan",
+  "name": "共分散",
+  "reading": "きょうぶんさん",
+  "journey": "data",
+  "category": "データの分析",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🤝",
+  "relatedTerms": [
+   "de-soukan",
+   "de-hensa"
+  ],
+  "description": "2つの 変量の 偏差どうしを かけた 値の 平均です。正なら 正の相関、負なら 負の相関の 傾向が あります。2つの 標準偏差の 積で わると 相関係数に なります。"
+ },
+ {
+  "id": "de-kakuritsuhensu",
+  "name": "確率変数",
+  "reading": "かくりつへんすう",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🎰",
+  "relatedTerms": [
+   "de-kakuritsubunpu",
+   "de-kitaichi"
+  ],
+  "description": "試行の 結果に よって 値が 決まり、それぞれの 値を とる 確率が 定まっている 変数です。ふつう X のように 大文字で 表します。さいころの 出る目などです。"
+ },
+ {
+  "id": "de-kakuritsubunpu",
+  "name": "確率分布",
+  "reading": "かくりつぶんぷ",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "📊",
+  "figure": "hist:bar",
+  "relatedTerms": [
+   "de-kakuritsuhensu",
+   "de-nikou"
+  ],
+  "description": "確率変数が とる 値と、その 値を とる 確率との 対応です。表に まとめると、確率の 合計は かならず 1 に なります。"
+ },
+ {
+  "id": "de-nikou",
+  "name": "二項分布",
+  "reading": "にこうぶんぷ",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🪙",
+  "figure": "hist:bar",
+  "relatedTerms": [
+   "de-hanpuku",
+   "de-seiki"
+  ],
+  "description": "1回で 起こる 確率が p の 試行を 独立に n回 行ったとき、起こる 回数 X の 確率分布です。B(n,p) と 書き、平均は np、分散は np(1−p) です。"
+ },
+ {
+  "id": "de-seiki",
+  "name": "正規分布",
+  "reading": "せいきぶんぷ",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🔔",
+  "figure": "normal:mean",
+  "relatedTerms": [
+   "de-hyojunseiki",
+   "de-hyojunka"
+  ],
+  "description": "平均 m を 中心に 左右対称な つりがね形の 曲線で 表される 連続型の 確率分布です。N(m,σ²) と 書きます。身長など 自然の 多くの データが これに 近いです。"
+ },
+ {
+  "id": "de-hyojunseiki",
+  "name": "標準正規分布",
+  "reading": "ひょうじゅんせいきぶんぷ",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "📘",
+  "figure": "normal:sd",
+  "relatedTerms": [
+   "de-seiki",
+   "de-hyojunka"
+  ],
+  "description": "平均 0、標準偏差 1 の 正規分布 N(0,1) です。確率は 正規分布表で 読みとります。平均から 標準偏差 1つ分の 範囲に 約68% が 入ります。"
+ },
+ {
+  "id": "de-bohei",
+  "name": "母平均",
+  "reading": "ぼへいきん",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🏙️",
+  "figure": "normal:mean",
+  "relatedTerms": [
+   "de-hyohonheikin",
+   "de-suitei"
+  ],
+  "description": "母集団の 変量の 平均です。多くの 場合 直接には 分からないので、標本平均から 推しはかります。ふつう m で 表します。"
+ },
+ {
+  "id": "de-hyohonheikin",
+  "name": "標本平均",
+  "reading": "ひょうほんへいきん",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🧪",
+  "figure": "normal:mean",
+  "relatedTerms": [
+   "de-bohei",
+   "de-taisu"
+  ],
+  "description": "大きさ n の 標本の 値の 平均です。取り出しかたで 変わる 確率変数で、平均は 母平均 m、標準偏差は σ/√n です。n が 大きいと 正規分布に 近づきます。"
+ },
+ {
+  "id": "de-suitei",
+  "name": "推定",
+  "reading": "すいてい",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🔭",
+  "figure": "normal:mean",
+  "relatedTerms": [
+   "de-shinrai",
+   "de-bohei"
+  ],
+  "description": "標本から 得た 値を もとに、母平均や 母比率など 母集団の 値を 推しはかることです。幅を もたせて 区間で 示す 方法を 区間推定と いいます。"
+ },
+ {
+  "id": "de-shinrai",
+  "name": "信頼区間",
+  "reading": "しんらいくかん",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🎯",
+  "figure": "normal:sd",
+  "relatedTerms": [
+   "de-suitei",
+   "de-bohei"
+  ],
+  "description": "推定で 母集団の 値が 入ると 考える 区間です。信頼度 95% の 場合、標本平均を 中心に 前後 1.96σ/√n の 幅を とります。"
+ },
+ {
+  "id": "de-kasetsu",
+  "name": "仮説検定",
+  "reading": "かせつけんてい",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "⚖️",
+  "relatedTerms": [
+   "de-kimu",
+   "de-yuui",
+   "de-kikyaku"
+  ],
+  "description": "母集団に ついての 仮説が 正しいか どうかを、標本の 結果を もとに 確率を 使って 判断する 方法です。起こりにくい 結果が 出れば その 仮説を 捨てます。"
+ },
+ {
+  "id": "de-yuui",
+  "name": "有意水準",
+  "reading": "ゆういすいじゅん",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "📉",
+  "relatedTerms": [
+   "de-kasetsu",
+   "de-kikyaku"
+  ],
+  "description": "仮説検定で「めったに 起こらない」と みなす 確率の 基準です。5% や 1% が よく 使われます。危険率とも いいます。"
+ },
+ {
+  "id": "de-kimu",
+  "name": "帰無仮説",
+  "reading": "きむかせつ",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🕳️",
+  "relatedTerms": [
+   "de-taiuritsu",
+   "de-kasetsu"
+  ],
+  "description": "仮説検定で、正しいか どうかを 判断する ために 立てる 仮説です。「差は ない」「効果は ない」のように 置き、棄却されれば 対立仮説を 採ります。"
+ },
+ {
+  "id": "de-taiuritsu",
+  "name": "対立仮説",
+  "reading": "たいりつかせつ",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🥊",
+  "relatedTerms": [
+   "de-kimu",
+   "de-kasetsu"
+  ],
+  "description": "仮説検定で、本当に 主張したい 内容の 仮説です。帰無仮説が 棄却されたときに 正しいと 判断されます。"
+ },
+ {
+  "id": "de-kikyaku",
+  "name": "棄却域",
+  "reading": "ききゃくいき",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🚮",
+  "figure": "normal:sd",
+  "relatedTerms": [
+   "de-yuui",
+   "de-kimu"
+  ],
+  "description": "仮説検定で、帰無仮説の もとでは 有意水準 以下の 確率でしか 起こらない 値の 範囲です。標本の 値が ここに 入れば 帰無仮説を 捨てます。"
+ },
+ {
+  "id": "de-vx",
+  "name": "V(X)=E(X²)−{E(X)}²",
+  "reading": "ぶいえっくすいこーるいーえっくすのにじょうひくいーえっくすのにじょう",
+  "journey": "data",
+  "category": "公式を打つ",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🧮",
+  "relatedTerms": [
+   "de-kitaichi",
+   "de-kakuritsuhensu"
+  ],
+  "description": "確率変数 X の 分散の 公式です。E は 期待値(平均)を 表します。X² の 期待値から、X の 期待値の 2乗を ひくと 分散に なり、計算が 楽に なります。"
+ },
+ {
+  "id": "de-hyojunka",
+  "name": "標準化",
+  "reading": "ひょうじゅんか",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🔧",
+  "relatedTerms": [
+   "de-hyojunseiki",
+   "de-seiki"
+  ],
+  "description": "確率変数 X から 平均 m を ひき、標準偏差 σ で わって Z=(X−m)/σ に 直すことです。X が 正規分布なら Z は 標準正規分布に 従い、表で 確率が 求まります。"
+ },
+ {
+  "id": "de-mitsudo",
+  "name": "確率密度関数",
+  "reading": "かくりつみつどかんすう",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🌊",
+  "figure": "integral:area",
+  "relatedTerms": [
+   "de-renzoku",
+   "de-seiki"
+  ],
+  "description": "連続型の 確率変数の 分布を 表す 関数です。X が ある 範囲に 入る 確率は、その 範囲で グラフと 横軸で はさまれた 面積に なります。全体の 面積は 1 です。"
+ },
+ {
+  "id": "de-renzoku",
+  "name": "連続型確率変数",
+  "reading": "れんぞくがたかくりつへんすう",
+  "journey": "data",
+  "category": "確率",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "📏",
+  "relatedTerms": [
+   "de-mitsudo",
+   "de-kakuritsuhensu"
+  ],
+  "description": "長さや 時間のように、ある 範囲の 実数の 値を 切れ目なく とる 確率変数です。確率は 確率密度関数の グラフの 面積で 表します。"
+ },
+ {
+  "id": "de-taisu",
+  "name": "大数の法則",
+  "reading": "たいすうのほうそく",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🔁",
+  "figure": "limit:approach",
+  "relatedTerms": [
+   "de-hyohonheikin",
+   "de-bohei"
+  ],
+  "description": "標本の 大きさ n を 大きくするほど、標本平均が 母平均に 近い 値を とる 確率が 1 に 近づく という 法則です。多く 試すほど 相対度数が 確率に 近づくことも 表します。"
+ },
+ {
+  "id": "de-bohiritsu",
+  "name": "母比率",
+  "reading": "ぼひりつ",
+  "journey": "data",
+  "category": "統計的な推測",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🥧",
+  "relatedTerms": [
+   "de-suitei",
+   "de-bohei"
+  ],
+  "description": "母集団の 中で、ある 性質を もつ ものの 割合です。標本の 中の 割合(標本比率)から 区間推定などで 推しはかります。"
+ }
+]

@@ -1,0 +1,1314 @@
+[
+ {
+  "id": "ad-shugo",
+  "name": "集合",
+  "reading": "しゅうごう",
+  "journey": "koko",
+  "category": "集合",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🧺",
+  "figure": "venn:a",
+  "relatedTerms": [
+   "ad-yoso",
+   "ad-bubun"
+  ],
+  "description": "範囲が はっきり 決まった ものの 集まりです。「10以下の 素数」は 入るか どうかが 決まるので これに なりますが、「大きい 数」は なりません。A={1, 2, 3} のように 書きます。"
+ },
+ {
+  "id": "ad-yoso",
+  "name": "要素",
+  "reading": "ようそ",
+  "journey": "koko",
+  "category": "集合",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔹",
+  "relatedTerms": [
+   "ad-shugo",
+   "ad-bubun"
+  ],
+  "description": "集まりを つくって いる 1つ1つの ものです。a が 集合 A に 入って いる ことを a∈A と 書き、a は A に 属すると いいます。"
+ },
+ {
+  "id": "ad-bubun",
+  "name": "部分集合",
+  "reading": "ぶぶんしゅうごう",
+  "journey": "koko",
+  "category": "集合",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🪆",
+  "relatedTerms": [
+   "ad-shugo",
+   "ad-ku"
+  ],
+  "description": "集合 B の 要素が どれも 集合 A に 入って いる とき の B の ことで、B⊂A と 書きます。A 自身や 空集合も これに 当たります。"
+ },
+ {
+  "id": "ad-kyotsu",
+  "name": "共通部分",
+  "reading": "きょうつうぶぶん",
+  "journey": "koko",
+  "category": "集合",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔗",
+  "figure": "venn:and",
+  "relatedTerms": [
+   "ad-wa",
+   "ad-demorugan"
+  ],
+  "description": "集合 A と B の 両方に 入って いる 要素 全部の 集合で、A∩B と 書きます。ベン図では 2つの 円が 重なった ところです。「A かつ B」に 当たります。"
+ },
+ {
+  "id": "ad-wa",
+  "name": "和集合",
+  "reading": "わしゅうごう",
+  "journey": "koko",
+  "category": "集合",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🫧",
+  "figure": "venn:or",
+  "relatedTerms": [
+   "ad-kyotsu",
+   "ad-demorugan"
+  ],
+  "description": "A と B の 少なくとも どちらか 一方に 入って いる 要素 全部の 集合で、A∪B と 書きます。ベン図では 2つの 円を 合わせた ところ 全体です。「A または B」に 当たります。"
+ },
+ {
+  "id": "ad-ho",
+  "name": "補集合",
+  "reading": "ほしゅうごう",
+  "journey": "koko",
+  "category": "集合",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🕳️",
+  "figure": "venn:comp",
+  "relatedTerms": [
+   "ad-zentai",
+   "ad-demorugan"
+  ],
+  "description": "全体集合 U の 中で、集合 A に 入って いない 要素 全部の 集合です。A の 上に 横線を 引いて Ā と 書きます。「A でない」に 当たります。"
+ },
+ {
+  "id": "ad-zentai",
+  "name": "全体集合",
+  "reading": "ぜんたいしゅうごう",
+  "journey": "koko",
+  "category": "集合",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🌐",
+  "relatedTerms": [
+   "ad-ho",
+   "ad-shugo"
+  ],
+  "description": "考える ものを 全部 集めた 集合で、ふつう U で 表します。補集合は これを もとに 決まるので、何を 全体と するかで 答えが 変わります。"
+ },
+ {
+  "id": "ad-ku",
+  "name": "空集合",
+  "reading": "くうしゅうごう",
+  "journey": "koko",
+  "category": "集合",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "∅",
+  "relatedTerms": [
+   "ad-bubun",
+   "ad-shugo"
+  ],
+  "description": "要素を 1つも もたない 集合で、∅ と 書きます。たとえば「2乗して −1 に なる 実数」の 集まりが これです。どんな 集合の 部分集合でも あります。"
+ },
+ {
+  "id": "ad-demorugan",
+  "name": "ド・モルガンの法則",
+  "reading": "どもるがんのほうそく",
+  "journey": "koko",
+  "category": "集合",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔄",
+  "figure": "venn:comp",
+  "relatedTerms": [
+   "ad-ho",
+   "ad-kyotsu",
+   "ad-wa"
+  ],
+  "description": "補集合と 共通部分・和集合の 関係です。A∩B の 補集合は Ā∪B̄、A∪B の 補集合は Ā∩B̄ に なります。「かつ」と「または」の 否定にも 使えます。"
+ },
+ {
+  "id": "ad-meidai",
+  "name": "命題",
+  "reading": "めいだい",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "💬",
+  "relatedTerms": [
+   "ad-shingi",
+   "ad-joken"
+  ],
+  "description": "正しいか 正しくないかが はっきり 決まる 文や 式です。正しい ときは 真、正しくない ときは 偽と いいます。「p ならば q」の 形で よく 表します。"
+ },
+ {
+  "id": "ad-joken",
+  "name": "条件",
+  "reading": "じょうけん",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔣",
+  "relatedTerms": [
+   "ad-meidai",
+   "ad-hitsuyo"
+  ],
+  "description": "x>3 のように 文字を 含み、その 値に よって 真か 偽かが 決まる 文や 式です。p を みたす もの 全体の 集合を 考えると、「p ならば q」は 集合の 包含関係で 表せます。"
+ },
+ {
+  "id": "ad-shingi",
+  "name": "真偽",
+  "reading": "しんぎ",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "⚖️",
+  "relatedTerms": [
+   "ad-meidai",
+   "ad-hanrei"
+  ],
+  "description": "命題が 正しい(真)か まちがい(偽)かの ことです。「p ならば q」が 偽だと 示すには、p に 当てはまるのに q に ならない 例を 1つ 出せば よいです。"
+ },
+ {
+  "id": "ad-hitsuyo",
+  "name": "必要条件",
+  "reading": "ひつようじょうけん",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔑",
+  "relatedTerms": [
+   "ad-juubun",
+   "ad-hitsuju"
+  ],
+  "description": "「p ならば q」が 真の とき、q は p で ある ための この 条件です。たとえば x²=4 は x=2 で ある ための これに なります。矢印の 先に くる ほうです。"
+ },
+ {
+  "id": "ad-juubun",
+  "name": "十分条件",
+  "reading": "じゅうぶんじょうけん",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🎯",
+  "relatedTerms": [
+   "ad-hitsuyo",
+   "ad-hitsuju"
+  ],
+  "description": "「p ならば q」が 真の とき、p は q で ある ための この 条件です。たとえば x=2 は x²=4 で ある ための これに なります。矢印の 根もとに くる ほうです。"
+ },
+ {
+  "id": "ad-hitsuju",
+  "name": "必要十分条件",
+  "reading": "ひつようじゅうぶんじょうけん",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🤝",
+  "relatedTerms": [
+   "ad-dochi",
+   "ad-hitsuyo",
+   "ad-juubun"
+  ],
+  "description": "「p ならば q」と「q ならば p」が どちらも 真の とき、p は q で ある ための この 条件です。このとき p と q は 同値で、p⇔q と 書きます。"
+ },
+ {
+  "id": "ad-dochi",
+  "name": "同値",
+  "reading": "どうち",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔁",
+  "relatedTerms": [
+   "ad-hitsuju",
+   "ad-taigu"
+  ],
+  "description": "2つの 条件 p と q が、たがいに 他方を みちびける 関係です。p⇔q と 書き、言いかえても 真偽が 変わりません。方程式を 解く ときの 式変形も この 関係を 保って 進めます。"
+ },
+ {
+  "id": "ad-hanrei",
+  "name": "反例",
+  "reading": "はんれい",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "❌",
+  "relatedTerms": [
+   "ad-shingi",
+   "ad-meidai"
+  ],
+  "description": "「p ならば q」が 偽で ある ことを 示す 例です。p に 当てはまるのに q に 当てはまらない ものを 1つ 挙げます。「素数は すべて 奇数」には 2 が これに なります。"
+ },
+ {
+  "id": "ad-gyaku",
+  "name": "命題の逆",
+  "reading": "めいだいのぎゃく",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔃",
+  "relatedTerms": [
+   "ad-ura",
+   "ad-taigu"
+  ],
+  "description": "「p ならば q」に 対して、p と q を 入れかえた「q ならば p」の ことです。もとの 命題が 真でも、これが 真とは かぎりません。"
+ },
+ {
+  "id": "ad-ura",
+  "name": "命題の裏",
+  "reading": "めいだいのうら",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔀",
+  "relatedTerms": [
+   "ad-gyaku",
+   "ad-taigu"
+  ],
+  "description": "「p ならば q」に 対して、p と q を 両方 否定した「p でない ならば q でない」の ことです。もとの 命題と 真偽が 一致するとは かぎりません。"
+ },
+ {
+  "id": "ad-taigu",
+  "name": "対偶",
+  "reading": "たいぐう",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🪞",
+  "relatedTerms": [
+   "ad-gyaku",
+   "ad-ura",
+   "ad-hairi"
+  ],
+  "description": "「p ならば q」に 対して、入れかえて 否定した「q でない ならば p でない」の ことです。もとの 命題と 真偽が 一致するので、証明で 言いかえに 使えます。"
+ },
+ {
+  "id": "ad-hairi",
+  "name": "背理法",
+  "reading": "はいりほう",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🌀",
+  "relatedTerms": [
+   "ad-taigu",
+   "ad-hitei"
+  ],
+  "description": "示したい ことが 成り立たないと 仮定して 話を 進め、矛盾が 出る ことから もとの ことが 正しいと 結論する 証明の 方法です。√2 が 無理数で ある ことの 証明が 有名です。"
+ },
+ {
+  "id": "ad-hitei",
+  "name": "否定",
+  "reading": "ひてい",
+  "journey": "koko",
+  "category": "命題と論理",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🚫",
+  "relatedTerms": [
+   "ad-demorugan",
+   "ad-hairi"
+  ],
+  "description": "条件 p に 対して「p でない」を 表す ものです。p の 上に 横線を 引いて p̄ と 書きます。「かつ」を 打ち消すと「または」に、「すべて」を 打ち消すと「ある」に 変わります。"
+ },
+ {
+  "id": "ad-gojoho",
+  "name": "ユークリッドの互除法",
+  "reading": "ゆーくりっどのごじょほう",
+  "journey": "koko",
+  "category": "整数の性質",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🔁",
+  "relatedTerms": [
+   "ad-gojogenri",
+   "ad-tagaini",
+   "ad-futei"
+  ],
+  "description": "2つの 自然数の 最大公約数を 求める 方法です。大きい 数を 小さい 数で 割り、割った 数を 余りで 割る ことを 余りが 0 に なるまで くり返すと、最後に 割った 数が 答えです。"
+ },
+ {
+  "id": "ad-gojogenri",
+  "name": "互除法の原理",
+  "reading": "ごじょほうのげんり",
+  "journey": "koko",
+  "category": "整数の性質",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "⚙️",
+  "relatedTerms": [
+   "ad-gojoho",
+   "ad-johogenri"
+  ],
+  "description": "a を b で 割った 余りを r と すると、a と b の 最大公約数は b と r の 最大公約数に 等しい という 性質です。大きな 数の 組を 小さな 数の 組に 置きかえられます。"
+ },
+ {
+  "id": "ad-tagaini",
+  "name": "互いに素",
+  "reading": "たがいにそ",
+  "journey": "koko",
+  "category": "整数の性質",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🧩",
+  "relatedTerms": [
+   "ad-gojoho",
+   "ad-futei"
+  ],
+  "description": "2つの 整数の 最大公約数が 1 で ある ことです。8 と 15 は 共通の 約数が 1 だけなので この 関係です。分母と 分子が これなら、その 分数は もう 約分できません。"
+ },
+ {
+  "id": "ad-futei",
+  "name": "不定方程式",
+  "reading": "ふていほうていしき",
+  "journey": "koko",
+  "category": "整数の性質",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🔍",
+  "relatedTerms": [
+   "ad-gojoho",
+   "ad-tagaini"
+  ],
+  "description": "3x+5y=1 のように、解が 1組に 決まらない 方程式です。高校では おもに 整数の 解を 求めます。互除法などで 1組の 解を 見つけてから、すべての 整数解を 文字を 使って 表します。"
+ },
+ {
+  "id": "ad-nshinho",
+  "name": "n進法",
+  "reading": "えぬしんほう",
+  "journey": "koko",
+  "category": "整数の性質",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🔢",
+  "relatedTerms": [
+   "ad-johogenri",
+   "ad-amari"
+  ],
+  "description": "位が 1つ 上がるごとに n 倍に なる 数の 表しかたです。ふだんの 10進法の ほか、コンピューターで 使う 2進法 などが あります。2進法の 1011 は 8+2+1=11 を 表します。"
+ },
+ {
+  "id": "ad-johogenri",
+  "name": "除法の原理",
+  "reading": "じょほうのげんり",
+  "journey": "koko",
+  "category": "整数の性質",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "➗",
+  "relatedTerms": [
+   "ad-amari",
+   "ad-gojogenri"
+  ],
+  "description": "整数 a と 正の 整数 b に 対して、a=bq+r、0≦r<b と なる 整数 q と r が ただ 1組 ある という 性質です。q を 商、r を 余りと いいます。"
+ },
+ {
+  "id": "ad-amari",
+  "name": "余りによる整数の分類",
+  "reading": "あまりによるせいすうのぶんるい",
+  "journey": "koko",
+  "category": "整数の性質",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🗂️",
+  "relatedTerms": [
+   "ad-johogenri",
+   "ad-nshinho"
+  ],
+  "description": "整数を ある 数で 割った 余りで 組に 分けて 考える 方法です。3 で 割るなら 3k, 3k+1, 3k+2(k は 整数)の 3つを 調べれば、すべての 整数を 確かめた ことに なります。"
+ },
+ {
+  "id": "ad-abgl",
+  "name": "ab=gl",
+  "reading": "えーびーいこーるじーえる",
+  "journey": "koko",
+  "category": "公式を打つ",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "✖️",
+  "relatedTerms": [
+   "ad-gojoho",
+   "ad-tagaini"
+  ],
+  "description": "2つの 自然数 a、b の 最大公約数を g、最小公倍数を l と すると、a と b の 積は g と l の 積に 等しい という 関係です。12 と 18 なら 12×18=6×36 です。"
+ },
+ {
+  "id": "ad-tousa",
+  "name": "等差数列",
+  "reading": "とうさすうれつ",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🪜",
+  "figure": "seq:diff",
+  "relatedTerms": [
+   "ad-kousa",
+   "ad-shoko",
+   "ad-sigmak"
+  ],
+  "description": "となりどうしの 差が 一定の 数列です。2, 5, 8, 11, … は 3 ずつ 増えます。初項 a、公差 d なら 第n項は a+(n−1)d です。"
+ },
+ {
+  "id": "ad-touhi",
+  "name": "等比数列",
+  "reading": "とうひすうれつ",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "📶",
+  "relatedTerms": [
+   "ad-kouhi",
+   "ad-shoko",
+   "ad-mutouhi"
+  ],
+  "description": "となりどうしの 比が 一定の 数列で、前の 項に 同じ 数を 掛けて 次の 項が できます。3, 6, 12, 24, … は 2 倍ずつです。初項 a、公比 r なら 第n項は arⁿ⁻¹ です。"
+ },
+ {
+  "id": "ad-kousa",
+  "name": "公差",
+  "reading": "こうさ",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "➕",
+  "figure": "seq:diff",
+  "relatedTerms": [
+   "ad-tousa",
+   "ad-ippanko"
+  ],
+  "description": "等差数列で、となりどうしの 項の 差の ことです。後ろの 項から 前の 項を 引いて 求めます。負の 数に なる ことも あり、そのときは 数列が 減って いきます。"
+ },
+ {
+  "id": "ad-kouhi",
+  "name": "公比",
+  "reading": "こうひ",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "✖️",
+  "relatedTerms": [
+   "ad-touhi",
+   "ad-mutouhi"
+  ],
+  "description": "等比数列で、となりどうしの 項の 比、つまり 次の 項を 前の 項で 割った 値です。これが 負の 数なら、項の 符号が 交互に 変わります。"
+ },
+ {
+  "id": "ad-shoko",
+  "name": "初項",
+  "reading": "しょこう",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "1️⃣",
+  "relatedTerms": [
+   "ad-tousa",
+   "ad-touhi",
+   "ad-ippanko"
+  ],
+  "description": "数列の 最初の 項です。ふつう a や a₁ で 表します。等差数列も 等比数列も、これと 公差・公比が 分かれば すべての 項が 決まります。"
+ },
+ {
+  "id": "ad-ippanko",
+  "name": "一般項",
+  "reading": "いっぱんこう",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🔣",
+  "relatedTerms": [
+   "ad-shoko",
+   "ad-zenka"
+  ],
+  "description": "数列の 第n項を n の 式で 表した ものです。これが 分かると、n に 数を 入れる だけで 何番目の 項でも 求められます。数列の 問題の 出発点に なります。"
+ },
+ {
+  "id": "ad-sigma",
+  "name": "Σ",
+  "reading": "しぐま",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🧮",
+  "relatedTerms": [
+   "ad-sigmak",
+   "ad-kaisa"
+  ],
+  "description": "数列の 和を 短く 書く 記号です。a₁ から aₙ までの 和は、この 記号の 下に k=1、上に n を 書き、右に aₖ を 書いて 表します。ギリシャ文字の 大文字で、S に あたります。"
+ },
+ {
+  "id": "ad-kaisa",
+  "name": "階差数列",
+  "reading": "かいさすうれつ",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "📊",
+  "relatedTerms": [
+   "ad-sigma",
+   "ad-ippanko"
+  ],
+  "description": "もとの 数列の となりどうしの 差を 並べて できる 数列です。1, 2, 4, 7, 11, … の 差は 1, 2, 3, 4, … です。これの 和を 使うと、もとの 数列の 一般項が 求められます。"
+ },
+ {
+  "id": "ad-zenka",
+  "name": "漸化式",
+  "reading": "ぜんかしき",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🔗",
+  "relatedTerms": [
+   "ad-ippanko",
+   "ad-kino"
+  ],
+  "description": "前の 項から 次の 項を 決める 式です。aₙ₊₁=2aₙ+1 のように 書き、初項と 合わせると 数列が 1つに 決まります。一般項を 求める 問題が 受験で よく 見られます。"
+ },
+ {
+  "id": "ad-kino",
+  "name": "数学的帰納法",
+  "reading": "すうがくてききのうほう",
+  "journey": "koko",
+  "category": "数列",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🧱",
+  "relatedTerms": [
+   "ad-zenka",
+   "ad-ippanko"
+  ],
+  "description": "すべての 自然数 n で 成り立つ ことを 示す 証明の 方法です。① n=1 で 成り立つ ② n=k で 成り立てば n=k+1 でも 成り立つ、の 2つを 示します。ドミノ倒しに たとえられます。"
+ },
+ {
+  "id": "ad-sigmak",
+  "name": "Σk=n(n+1)/2",
+  "reading": "しぐまけーいこーるにぶんのえぬえぬたすいち",
+  "journey": "koko",
+  "category": "公式を打つ",
+  "difficulty": 4,
+  "grade": "数学B",
+  "type": "concept",
+  "emoji": "🔢",
+  "relatedTerms": [
+   "ad-sigma",
+   "ad-tousa"
+  ],
+  "description": "1 から n までの 自然数の 和の 公式で、Σ は k=1 から n までの 和を 表します。1+2+…+100 は 100×101/2=5050 に なります。"
+ },
+ {
+  "id": "ad-vector",
+  "name": "ベクトル",
+  "reading": "べくとる",
+  "journey": "koko",
+  "category": "ベクトル",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "➡️",
+  "figure": "vector:a",
+  "relatedTerms": [
+   "ad-vwa",
+   "ad-naiseki",
+   "ad-tani"
+  ],
+  "description": "向きと 大きさを もつ 量です。矢印で 表し、置く 場所が ちがっても 向きと 大きさが 同じなら 等しいと 考えます。速度や 力を 表すのに 使います。"
+ },
+ {
+  "id": "ad-vwa",
+  "name": "ベクトルの和",
+  "reading": "べくとるのわ",
+  "journey": "koko",
+  "category": "ベクトル",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "➕",
+  "figure": "vector:sum",
+  "relatedTerms": [
+   "ad-vector",
+   "ad-seibun"
+  ],
+  "description": "1つ目の 矢印の 終点に 2つ目の 始点を つないだ とき、はじめの 始点から 最後の 終点への 矢印です。平行四辺形の 対角線としても 求められます。成分なら 同じ 向きの 成分どうしを 足します。"
+ },
+ {
+  "id": "ad-naiseki",
+  "name": "内積",
+  "reading": "ないせき",
+  "journey": "koko",
+  "category": "ベクトル",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "🎯",
+  "figure": "vector:dot",
+  "relatedTerms": [
+   "ad-naisekif",
+   "ad-vector"
+  ],
+  "description": "2つの ベクトルから 1つの 数を 作る 計算で、大きさどうしの 積に なす角の cos を 掛けた 値です。どちらも 零ベクトルで ない とき、これが 0 なら 2つは 垂直です。"
+ },
+ {
+  "id": "ad-naisekif",
+  "name": "a·b=|a||b|cos θ",
+  "reading": "えーどっとびーいこーるえーのおおきさびーのおおきさこさいんしーた",
+  "journey": "koko",
+  "category": "公式を打つ",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "📐",
+  "figure": "vector:dot",
+  "relatedTerms": [
+   "ad-naiseki",
+   "ad-vector"
+  ],
+  "description": "ベクトル a と b の 内積の 定義です。|a| と |b| は それぞれの 大きさ、θ は 2つの なす角(0°≦θ≦180°)です。垂直なら cos 90°=0 なので 内積は 0 です。"
+ },
+ {
+  "id": "ad-tani",
+  "name": "単位ベクトル",
+  "reading": "たんいべくとる",
+  "journey": "koko",
+  "category": "ベクトル",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "📏",
+  "relatedTerms": [
+   "ad-vector",
+   "ad-seibun"
+  ],
+  "description": "大きさが 1 の ベクトルです。零ベクトルで ない ベクトルを 自分の 大きさで 割ると、同じ 向きの これが 作れます。向き だけを 表したい ときに 使います。"
+ },
+ {
+  "id": "ad-ichi",
+  "name": "位置ベクトル",
+  "reading": "いちべくとる",
+  "journey": "koko",
+  "category": "ベクトル",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "📍",
+  "relatedTerms": [
+   "ad-vhoutei",
+   "ad-vector"
+  ],
+  "description": "基準の 点 O を 始点に して、点 P の 位置を 表す ベクトル OP です。点を ベクトルで 扱えるので、内分点や 重心の 位置を 式で 表すのに 便利です。"
+ },
+ {
+  "id": "ad-seibun",
+  "name": "成分表示",
+  "reading": "せいぶんひょうじ",
+  "journey": "koko",
+  "category": "ベクトル",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "🧾",
+  "relatedTerms": [
+   "ad-vwa",
+   "ad-dokuritsu"
+  ],
+  "description": "ベクトルを (a₁, a₂) のような 数の 組で 表す 方法です。x 方向と y 方向に どれだけ 進むかを 表し、和や 内積の 計算が 数だけで できます。"
+ },
+ {
+  "id": "ad-dokuritsu",
+  "name": "一次独立",
+  "reading": "いちじどくりつ",
+  "journey": "koko",
+  "category": "ベクトル",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "🧭",
+  "relatedTerms": [
+   "ad-seibun",
+   "ad-vector"
+  ],
+  "description": "平面の 2つの ベクトルが、どちらも 零ベクトルで なく、平行でも ない ことです。このとき 平面上の どの ベクトルも この 2つを 使って ただ 1通りに 表せます。"
+ },
+ {
+  "id": "ad-vhoutei",
+  "name": "ベクトル方程式",
+  "reading": "べくとるほうていしき",
+  "journey": "koko",
+  "category": "ベクトル",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "📐",
+  "relatedTerms": [
+   "ad-ichi",
+   "ad-vector"
+  ],
+  "description": "直線や 円などの 図形を、その上の 点の 位置ベクトル p を 使って 表した 式です。点 A を 通り ベクトル d に 平行な 直線は p=a+td(t は 実数)と 表せます。"
+ },
+ {
+  "id": "ad-fukuso",
+  "name": "複素数平面",
+  "reading": "ふくそすうへいめん",
+  "journey": "koko",
+  "category": "複素数平面",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "🌌",
+  "figure": "cplane:z",
+  "relatedTerms": [
+   "ad-jitsujiku",
+   "ad-kyojiku",
+   "ad-kyokukei"
+  ],
+  "description": "横軸で 実部、縦軸で 虚部を 表し、複素数 a+bi を 点 (a, b) に 対応させた 平面です。足し算や 掛け算を 図形の 動きとして 見られます。ガウス平面とも いいます。"
+ },
+ {
+  "id": "ad-jitsujiku",
+  "name": "実軸",
+  "reading": "じつじく",
+  "journey": "koko",
+  "category": "複素数平面",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "↔️",
+  "figure": "cplane:re",
+  "relatedTerms": [
+   "ad-fukuso",
+   "ad-kyojiku"
+  ],
+  "description": "複素数平面の 横軸です。この上の 点は 虚部が 0 の 数、つまり 実数を 表します。"
+ },
+ {
+  "id": "ad-kyojiku",
+  "name": "虚軸",
+  "reading": "きょじく",
+  "journey": "koko",
+  "category": "複素数平面",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "↕️",
+  "figure": "cplane:im",
+  "relatedTerms": [
+   "ad-fukuso",
+   "ad-jitsujiku"
+  ],
+  "description": "複素数平面の 縦軸です。原点を 除く この上の 点は、実部が 0 の bi の 形の 数、つまり 純虚数を 表します。"
+ },
+ {
+  "id": "ad-cabs",
+  "name": "複素数の絶対値",
+  "reading": "ふくそすうのぜったいち",
+  "journey": "koko",
+  "category": "複素数平面",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "📏",
+  "figure": "cplane:abs",
+  "relatedTerms": [
+   "ad-fukuso",
+   "ad-kyokukei"
+  ],
+  "description": "複素数平面で、原点から その数を 表す 点までの 距離です。z=a+bi なら |z|=√(a²+b²) です。2点の あいだの 距離は 差の 絶対値で 求められます。"
+ },
+ {
+  "id": "ad-kyokukei",
+  "name": "極形式",
+  "reading": "きょくけいしき",
+  "journey": "koko",
+  "category": "複素数平面",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "🌀",
+  "relatedTerms": [
+   "ad-henkaku",
+   "ad-cabs",
+   "ad-demoivre"
+  ],
+  "description": "複素数を 絶対値 r と 偏角 θ を 使って z=r(cos θ+i sin θ) と 表す 形です。掛け算では 絶対値が 掛け合わされ、偏角が 足されます。"
+ },
+ {
+  "id": "ad-henkaku",
+  "name": "偏角",
+  "reading": "へんかく",
+  "journey": "koko",
+  "category": "複素数平面",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "🧭",
+  "relatedTerms": [
+   "ad-kyokukei",
+   "ad-fukuso"
+  ],
+  "description": "複素数平面で、実軸の 正の 向きから、原点と その数の 点を 結ぶ 線まで 回った 角です。arg z と 書き、2π(360°)の 整数倍の ちがいを 除いて 決まります。"
+ },
+ {
+  "id": "ad-demoivre",
+  "name": "ド・モアブルの定理",
+  "reading": "どもあぶるのていり",
+  "journey": "koko",
+  "category": "複素数平面",
+  "difficulty": 4,
+  "grade": "数学C",
+  "type": "concept",
+  "emoji": "🌟",
+  "relatedTerms": [
+   "ad-kyokukei",
+   "ad-henkaku"
+  ],
+  "description": "n が 整数の とき (cos θ+i sin θ)ⁿ=cos nθ+i sin nθ が 成り立つ という 定理です。累乗が 角を n 倍する 回転で 求められ、1 の n 乗根を 求めるのにも 使います。"
+ },
+ {
+  "id": "ad-kyokugen",
+  "name": "極限",
+  "reading": "きょくげん",
+  "journey": "koko",
+  "category": "極限",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "♾️",
+  "figure": "limit:approach",
+  "relatedTerms": [
+   "ad-shusoku",
+   "ad-hassan"
+  ],
+  "description": "n や x を ある 値や 無限大に 近づけた とき、式の 値が 限りなく 近づく 行き先の ことです。lim を 使って 表します。行き先が 決まらない ことも あります。"
+ },
+ {
+  "id": "ad-shusoku",
+  "name": "収束",
+  "reading": "しゅうそく",
+  "journey": "koko",
+  "category": "極限",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "🎯",
+  "figure": "limit:approach",
+  "relatedTerms": [
+   "ad-kyokugen",
+   "ad-hassan"
+  ],
+  "description": "数列や 関数の 値が、ある 一定の 値に 限りなく 近づく ことです。1/n は n を 大きく すると 0 に 近づきます。近づく 先の 値を 極限値と いいます。"
+ },
+ {
+  "id": "ad-hassan",
+  "name": "発散",
+  "reading": "はっさん",
+  "journey": "koko",
+  "category": "極限",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "💥",
+  "relatedTerms": [
+   "ad-shusoku",
+   "ad-kyokugen"
+  ],
+  "description": "数列や 関数が 一定の 値に 近づかない ことです。正の 無限大・負の 無限大に 向かう 場合と、−1, 1, −1, 1, … のように 振動する 場合が あります。"
+ },
+ {
+  "id": "ad-mugenkyusu",
+  "name": "無限級数",
+  "reading": "むげんきゅうすう",
+  "journey": "koko",
+  "category": "極限",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "➿",
+  "relatedTerms": [
+   "ad-mutouhi",
+   "ad-shusoku"
+  ],
+  "description": "無限に 続く 数列の 項を 順に 足して いく 式です。最初の n 項までの 和(部分和)が 一定の 値に 近づくとき、その 値を この 和と いいます。"
+ },
+ {
+  "id": "ad-mutouhi",
+  "name": "無限等比級数",
+  "reading": "むげんとうひきゅうすう",
+  "journey": "koko",
+  "category": "極限",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "🪞",
+  "relatedTerms": [
+   "ad-mugenkyusu",
+   "ad-kouhi"
+  ],
+  "description": "等比数列の 項を 限りなく 足して いく もので、初項 a が 0 で なければ、公比 r が −1<r<1 の とき だけ 収束し、和は a/(1−r) に なります。"
+ },
+ {
+  "id": "ad-hasami",
+  "name": "はさみうちの原理",
+  "reading": "はさみうちのげんり",
+  "journey": "koko",
+  "category": "極限",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "🥪",
+  "relatedTerms": [
+   "ad-kyokugen",
+   "ad-shusoku"
+  ],
+  "description": "式の 極限を、上下から 2つの 式で おさえて 求める 方法です。おさえる 両方の 式が 同じ 値に 近づけば、あいだの 式も その 値に 近づきます。"
+ },
+ {
+  "id": "ad-napier",
+  "name": "ネイピア数",
+  "reading": "ねいぴあすう",
+  "journey": "koko",
+  "category": "極限",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "🌿",
+  "relatedTerms": [
+   "ad-kyokugen",
+   "ad-dokansu"
+  ],
+  "description": "(1+1/n)ⁿ の n を 限りなく 大きく した ときの 極限で、e と 書く 約 2.718 の 無理数です。eˣ は 微分しても 形が 変わりません。自然対数の 底とも いいます。"
+ },
+ {
+  "id": "ad-heikin",
+  "name": "平均変化率",
+  "reading": "へいきんへんかりつ",
+  "journey": "koko",
+  "category": "微分",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "📐",
+  "relatedTerms": [
+   "ad-bibunkeisu",
+   "ad-sessen"
+  ],
+  "description": "x が a から b まで 変わる とき、y の 増加量を x の 増加量で 割った 値 {f(b)−f(a)}/(b−a) です。グラフ上の 2点を 結ぶ 直線の 傾きに あたります。"
+ },
+ {
+  "id": "ad-bibunkeisu",
+  "name": "微分係数",
+  "reading": "びぶんけいすう",
+  "journey": "koko",
+  "category": "微分",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "📍",
+  "figure": "tangent:point",
+  "relatedTerms": [
+   "ad-heikin",
+   "ad-dokansu",
+   "ad-sessen"
+  ],
+  "description": "関数 f(x) の x=a での 瞬間の 変化の 割合で、f′(a) と 書きます。平均変化率で b を a に 限りなく 近づけた 極限です。グラフでは その点での 接線の 傾きです。"
+ },
+ {
+  "id": "ad-dokansu",
+  "name": "導関数",
+  "reading": "どうかんすう",
+  "journey": "koko",
+  "category": "微分",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "📈",
+  "relatedTerms": [
+   "ad-bibunkeisu",
+   "ad-xnf",
+   "ad-zogen"
+  ],
+  "description": "それぞれの x に、その 点での 微分係数 f′(x) を 対応させた 関数です。これを 求める ことを 微分すると いいます。関数の 増減や 最大・最小を 調べる 道具に なります。"
+ },
+ {
+  "id": "ad-xnf",
+  "name": "(xⁿ)′=nxⁿ⁻¹",
+  "reading": "えっくすのえぬじょうのだっしゅいこーるえぬえっくすのえぬひくいちじょう",
+  "journey": "koko",
+  "category": "公式を打つ",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "✏️",
+  "relatedTerms": [
+   "ad-dokansu",
+   "ad-sinf"
+  ],
+  "description": "x の n 乗を 微分する 公式で、′ は 導関数を 表します。指数 n を 前に 出し、指数を 1 減らします。数学Ⅱ では n は 正の 整数で、数学Ⅲ で 実数にまで 広げます。"
+ },
+ {
+  "id": "ad-sessen",
+  "name": "グラフの接線",
+  "reading": "ぐらふのせっせん",
+  "journey": "koko",
+  "category": "微分",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🪄",
+  "figure": "tangent:line",
+  "relatedTerms": [
+   "ad-bibunkeisu",
+   "ad-heikin"
+  ],
+  "description": "曲線 y=f(x) 上の 点 (a, f(a)) で 曲線に 接する 直線です。傾きは 微分係数 f′(a) なので、式は y−f(a)=f′(a)(x−a) と 表せます。"
+ },
+ {
+  "id": "ad-kyokuchi",
+  "name": "極値",
+  "reading": "きょくち",
+  "journey": "koko",
+  "category": "微分",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "⛰️",
+  "relatedTerms": [
+   "ad-zogen",
+   "ad-henkyoku"
+  ],
+  "description": "関数が 増加から 減少に 変わる 点の 値が 極大値、減少から 増加に 変わる 点の 値が 極小値で、2つを 合わせた 呼び名です。全体の 最大・最小とは かぎりません。"
+ },
+ {
+  "id": "ad-zogen",
+  "name": "増減表",
+  "reading": "ぞうげんひょう",
+  "journey": "koko",
+  "category": "微分",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "📋",
+  "relatedTerms": [
+   "ad-kyokuchi",
+   "ad-dokansu"
+  ],
+  "description": "導関数 f′(x) の 符号を 調べて、関数が 増える ところ・減る ところを まとめた 表です。f′(x)>0 の 区間で 増加、f′(x)<0 の 区間で 減少します。極値や グラフの 形が 読み取れます。"
+ },
+ {
+  "id": "ad-gosei",
+  "name": "合成関数の微分法",
+  "reading": "ごうせいかんすうのびぶんほう",
+  "journey": "koko",
+  "category": "微分",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "🧩",
+  "relatedTerms": [
+   "ad-dokansu",
+   "ad-chikan"
+  ],
+  "description": "y=f(g(x)) を 微分すると f′(g(x))·g′(x) に なる という 方法です。外側を 微分して、内側の 微分を 掛けます。(2x+1)³ を 微分すると 3(2x+1)²·2 です。"
+ },
+ {
+  "id": "ad-sinf",
+  "name": "(sin x)′=cos x",
+  "reading": "さいんえっくすのだっしゅいこーるこさいんえっくす",
+  "journey": "koko",
+  "category": "公式を打つ",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "🌊",
+  "relatedTerms": [
+   "ad-xnf",
+   "ad-gosei"
+  ],
+  "description": "sin x を 微分すると cos x に なる という 公式です。x は 弧度法(ラジアン)で 測った 角です。同じように cos x を 微分すると −sin x に なります。"
+ },
+ {
+  "id": "ad-henkyoku",
+  "name": "変曲点",
+  "reading": "へんきょくてん",
+  "journey": "koko",
+  "category": "微分",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "〰️",
+  "relatedTerms": [
+   "ad-kyokuchi",
+   "ad-zogen"
+  ],
+  "description": "曲線の 曲がる 向き(上に 凸・下に 凸)が 入れかわる 点です。第2次導関数 f″(x) の 符号が その 点の 前後で 変わる ところを さがして 見つけます。"
+ },
+ {
+  "id": "ad-futeisekibun",
+  "name": "不定積分",
+  "reading": "ふていせきぶん",
+  "journey": "koko",
+  "category": "積分",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🔙",
+  "relatedTerms": [
+   "ad-sekibunteisu",
+   "ad-teisekibun"
+  ],
+  "description": "微分すると f(x) に なる 関数、つまり 原始関数を 求める ことで、∫f(x)dx と 書きます。微分の 逆の 計算です。答えには 積分定数 C を 付けます。"
+ },
+ {
+  "id": "ad-sekibunteisu",
+  "name": "積分定数",
+  "reading": "せきぶんていすう",
+  "journey": "koko",
+  "category": "積分",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🅲",
+  "relatedTerms": [
+   "ad-futeisekibun",
+   "ad-teisekibun"
+  ],
+  "description": "不定積分の 答えに 付ける 定数 C です。定数は 微分すると 0 に なるので、原始関数は 1つに 決まらず、C の ぶんだけ ずれた ものが すべて 答えに なります。"
+ },
+ {
+  "id": "ad-teisekibun",
+  "name": "定積分",
+  "reading": "ていせきぶん",
+  "journey": "koko",
+  "category": "積分",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🟩",
+  "figure": "integral:area",
+  "relatedTerms": [
+   "ad-futeisekibun",
+   "ad-kaitentai"
+  ],
+  "description": "f(x) の 原始関数 F(x) を 使い、F(b)−F(a) で 決まる 値です。∫ の 下に a、上に b を 書きます。a<b で f(x)≧0 なら、グラフと x軸・x=a・x=b で 囲まれた 面積です。"
+ },
+ {
+  "id": "ad-chikan",
+  "name": "置換積分法",
+  "reading": "ちかんせきぶんほう",
+  "journey": "koko",
+  "category": "積分",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "🔄",
+  "relatedTerms": [
+   "ad-bubunsekibun",
+   "ad-gosei"
+  ],
+  "description": "式の 一部を 別の 文字に 置きかえて 計算しやすく する 積分の 方法です。t=g(x) と おいたら dx も dt で 表し直します。定積分では 積分する 範囲も 置きかえます。"
+ },
+ {
+  "id": "ad-bubunsekibun",
+  "name": "部分積分法",
+  "reading": "ぶぶんせきぶんほう",
+  "journey": "koko",
+  "category": "積分",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "🧷",
+  "relatedTerms": [
+   "ad-chikan",
+   "ad-futeisekibun"
+  ],
+  "description": "∫f(x)g′(x)dx=f(x)g(x)−∫f′(x)g(x)dx を 使う 積分の 方法です。積の 微分の 公式から みちびけます。x sin x や xeˣ のような 積の 積分に 使います。"
+ },
+ {
+  "id": "ad-kaitentai",
+  "name": "回転体の体積",
+  "reading": "かいてんたいのたいせき",
+  "journey": "koko",
+  "category": "積分",
+  "difficulty": 4,
+  "grade": "数学Ⅲ",
+  "type": "concept",
+  "emoji": "🏺",
+  "relatedTerms": [
+   "ad-teisekibun",
+   "ad-chikan"
+  ],
+  "description": "曲線と x軸の あいだの 部分を x軸の まわりに 1回転して できる 立体の 体積です。断面の 円の 面積 π{f(x)}² を a から b まで 定積分して 求めます。"
+ }
+]

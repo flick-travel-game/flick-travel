@@ -1,0 +1,1294 @@
+[
+ {
+  "id": "si-shiki",
+  "name": "式",
+  "reading": "しき",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 1,
+  "grade": "小1",
+  "type": "concept",
+  "emoji": "🧾",
+  "relatedTerms": [
+   "si-tougou",
+   "si-mojiwotsukau"
+  ],
+  "description": "数や +・−・×・÷・= などの 記号を 使って、数量や その 関係を 表した ものです。場面を 短く まとめて 伝えられ、計算の 道すじも 見えるように なります。"
+ },
+ {
+  "id": "si-tougou",
+  "name": "等号",
+  "reading": "とうごう",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "🟰",
+  "relatedTerms": [
+   "si-futougou",
+   "si-toushiki"
+  ],
+  "description": "「=」の 記号です。左と 右が 等しい ことを 表します。「答えを 書く 前の しるし」ではなく「両がわが 同じ 大きさ」という 意味なのが 大事です。"
+ },
+ {
+  "id": "si-futougou",
+  "name": "不等号",
+  "reading": "ふとうごう",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "↔️",
+  "figure": "numline:point",
+  "relatedTerms": [
+   "si-tougou",
+   "si-futoushiki"
+  ],
+  "description": "「<」「>」の 記号で、2つの 数の 大小を 表します。口が 開いている ほうが 大きい 数です。5>3 は「5は 3より 大きい」と いう 意味です。"
+ },
+ {
+  "id": "si-wa",
+  "name": "和",
+  "reading": "わ",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "➕",
+  "relatedTerms": [
+   "si-sa",
+   "si-seki"
+  ],
+  "description": "たし算の 答えです。3と 5の この 答えは 8です。いくつかの 数を 合わせた 大きさを 表す ことばで、「〜の 和を 求める」のように 使います。"
+ },
+ {
+  "id": "si-sa",
+  "name": "差",
+  "reading": "さ",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "➖",
+  "relatedTerms": [
+   "si-wa",
+   "si-shou"
+  ],
+  "description": "ひき算の 答えです。9と 4の この 答えは 5です。2つの 数の ちがいの 大きさを 表す ことばで、大きい ほうから 小さい ほうを ひいて 求めます。"
+ },
+ {
+  "id": "si-seki",
+  "name": "積",
+  "reading": "せき",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "✖️",
+  "relatedTerms": [
+   "si-wa",
+   "si-shou"
+  ],
+  "description": "かけ算の 答えです。4と 6の この 答えは 24です。かける 順番を 入れかえても 答えは 変わりません。"
+ },
+ {
+  "id": "si-shou",
+  "name": "商",
+  "reading": "しょう",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "➗",
+  "relatedTerms": [
+   "si-seki",
+   "si-warizan"
+  ],
+  "description": "わり算の 答えです。12÷3の この 答えは 4です。わりきれない ときは、答えと あまりを 分けて 書きます。"
+ },
+ {
+  "id": "si-koukan",
+  "name": "交換法則",
+  "reading": "こうかんほうそく",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🔄",
+  "relatedTerms": [
+   "si-ketsugou",
+   "si-bunpai"
+  ],
+  "description": "たし算と かけ算で、2つの 数を 入れかえても 答えが 同じ という きまりです。a+b=b+a、a×b=b×a と 書けます。ひき算と わり算では 成り立ちません。"
+ },
+ {
+  "id": "si-ketsugou",
+  "name": "結合法則",
+  "reading": "けつごうほうそく",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🔗",
+  "relatedTerms": [
+   "si-koukan",
+   "si-bunpai"
+  ],
+  "description": "3つの 数を たす(かける)とき、どこから 先に 計算しても 答えが 同じ という きまりです。(a+b)+c=a+(b+c)。まとめやすい 組を 先に 計算すると 楽に なります。"
+ },
+ {
+  "id": "si-bunpai",
+  "name": "分配法則",
+  "reading": "ぶんぱいほうそく",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🍰",
+  "relatedTerms": [
+   "si-koukan",
+   "si-tenkai"
+  ],
+  "description": "(a+b)×c=a×c+b×c という きまりです。かっこの 中の 数 それぞれに かけても 答えは 同じです。中学からの 展開の もとに なります。"
+ },
+ {
+  "id": "si-shikaku",
+  "name": "□を使った式",
+  "reading": "しかくをつかったしき",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "🔲",
+  "relatedTerms": [
+   "si-gyakusan",
+   "si-mojiwotsukau"
+  ],
+  "description": "まだ 分からない 数を □に して、場面の とおりに 表した 式です。□+5=12 のように 書き、□に 当てはまる 数を 考えます。のちの 方程式に つながります。"
+ },
+ {
+  "id": "si-gyakusan",
+  "name": "逆算",
+  "reading": "ぎゃくさん",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "⏪",
+  "relatedTerms": [
+   "si-shikaku",
+   "si-tashihiki"
+  ],
+  "description": "答えから 反対に たどって、分からない 数を 求める 考えかたです。□+5=12 なら 12−5 で □=7。たし算と ひき算、かけ算と わり算が 逆の 関係に ある ことを 使います。"
+ },
+ {
+  "id": "si-junjo",
+  "name": "計算の順序",
+  "reading": "けいさんのじゅんじょ",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🔢",
+  "relatedTerms": [
+   "si-kakko",
+   "si-bunpai"
+  ],
+  "description": "式を 計算する 順番の きまりです。かっこの 中を 先に、つぎに × と ÷、最後に + と − を 計算します。同じ なかまどうしは 左から 順に します。"
+ },
+ {
+  "id": "si-kakko",
+  "name": "( )を使った式",
+  "reading": "かっこをつかったしき",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🫧",
+  "relatedTerms": [
+   "si-junjo",
+   "si-bunpai"
+  ],
+  "description": "ひとまとまりに したい ところを ( )で 囲んだ 式です。( )の 中は 先に 計算します。100−(30+20) のように、いくつかの 場面を 1つの 式に まとめられます。"
+ },
+ {
+  "id": "si-kakezan",
+  "name": "かけ算のきまり",
+  "reading": "かけざんのきまり",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "📏",
+  "relatedTerms": [
+   "si-koukan",
+   "si-warizan"
+  ],
+  "description": "かけ算で 成り立つ きまりです。かける 数が 1 ふえると 答えは かけられる 数だけ ふえます。かける 数と かけられる 数を 入れかえても 答えは 同じです。"
+ },
+ {
+  "id": "si-warizan",
+  "name": "わり算のきまり",
+  "reading": "わりざんのきまり",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🍕",
+  "relatedTerms": [
+   "si-shou",
+   "si-kakezan"
+  ],
+  "description": "わられる 数と わる 数に 同じ 数を かけても、同じ 数で わっても、商は 変わらない という きまりです。600÷200 を 6÷2 に して 計算できます。"
+ },
+ {
+  "id": "si-tashihiki",
+  "name": "たし算とひき算の関係",
+  "reading": "たしざんとひきざんのかんけい",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小2",
+  "type": "concept",
+  "emoji": "↩️",
+  "relatedTerms": [
+   "si-gyakusan",
+   "si-kakewari"
+  ],
+  "description": "ひき算は たし算の 逆に なっている という 関係です。8−3=5 なら 5+3=8。ひき算の 答えを たし算で 確かめられます。"
+ },
+ {
+  "id": "si-kakewari",
+  "name": "かけ算とわり算の関係",
+  "reading": "かけざんとわりざんのかんけい",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "🔁",
+  "relatedTerms": [
+   "si-tashihiki",
+   "si-gyakusan"
+  ],
+  "description": "わり算は かけ算の 逆に なっている という 関係です。12÷3 の 答えは □×3=12 の □に 当たる 数です。わり算の 答えを かけ算で 確かめられます。"
+ },
+ {
+  "id": "si-kakerareru",
+  "name": "かけられる数",
+  "reading": "かけられるかず",
+  "journey": "shiki",
+  "category": "式のきまり",
+  "difficulty": 1,
+  "grade": "小2",
+  "type": "concept",
+  "emoji": "🍎",
+  "relatedTerms": [
+   "si-kakezan",
+   "si-seki"
+  ],
+  "description": "かけ算の 式で、×の 前に 書く 数です。3こずつ 4皿なら 3×4 の 3で、「1つ分の 大きさ」を 表します。×の うしろの 4は「いくつ分」を 表す かける数です。"
+ },
+ {
+  "id": "si-mojiwotsukau",
+  "name": "文字を使った式",
+  "reading": "もじをつかったしき",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🔤",
+  "relatedTerms": [
+   "si-shikaku",
+   "si-mojishiki"
+  ],
+  "description": "□の かわりに x や a などの 文字を 使った 式です。x×4=y のように、数が 変わっても 使える 形で 関係を 表せます。中学の 文字式の 入口です。"
+ },
+ {
+  "id": "si-mojishiki",
+  "name": "文字式",
+  "reading": "もじしき",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "✏️",
+  "relatedTerms": [
+   "si-kou",
+   "si-keisuu"
+  ],
+  "description": "文字を ふくむ 式です。× は はぶき、数は 文字の 前に 書き、÷ は 分数の 形に します。a×3 は 3a と 書きます。"
+ },
+ {
+  "id": "si-hoteishiki",
+  "name": "方程式",
+  "reading": "ほうていしき",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "⚖️",
+  "relatedTerms": [
+   "si-kai",
+   "si-toushiki"
+  ],
+  "description": "文字が ある 特別な 値の ときだけ 成り立つ 等式です。3x+2=11 は x=3 の ときだけ 成り立ちます。その 値を 求める ことを「解く」と いいます。"
+ },
+ {
+  "id": "si-kai",
+  "name": "解",
+  "reading": "かい",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🎯",
+  "relatedTerms": [
+   "si-hoteishiki",
+   "si-daunyuu"
+  ],
+  "description": "方程式を 成り立たせる 文字の 値です。求めた 値を もとの 式に 代入して、両辺が 等しく なるかで 確かめられます。"
+ },
+ {
+  "id": "si-toushiki",
+  "name": "等式",
+  "reading": "とうしき",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🟰",
+  "relatedTerms": [
+   "si-tougou",
+   "si-toushikiseishitsu"
+  ],
+  "description": "等号で 2つの 式を 結んだ ものです。等号の 左を 左辺、右を 右辺、両方を まとめて 両辺と いいます。"
+ },
+ {
+  "id": "si-toushikiseishitsu",
+  "name": "等式の性質",
+  "reading": "とうしきのせいしつ",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🪖",
+  "relatedTerms": [
+   "si-toushiki",
+   "si-ikou"
+  ],
+  "description": "等式の 両辺に 同じ 数を たしても、ひいても、かけても、0でない 同じ 数で わっても、等式は 成り立つ という 性質です。方程式を 解く ときの もとに なります。"
+ },
+ {
+  "id": "si-ikou",
+  "name": "移項",
+  "reading": "いこう",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🚚",
+  "relatedTerms": [
+   "si-toushikiseishitsu",
+   "si-ichijihoteishiki"
+  ],
+  "description": "等式の 一方の 辺に ある 項を、符号を 変えて もう一方の 辺に 移す ことです。x+5=9 は x=9−5 に なります。等式の 性質から 導かれます。"
+ },
+ {
+  "id": "si-ichijihoteishiki",
+  "name": "一次方程式",
+  "reading": "いちじほうていしき",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "1️⃣",
+  "relatedTerms": [
+   "si-ikou",
+   "si-hoteishiki"
+  ],
+  "description": "移項して 整理すると ax=b(a は 0でない)の 形に なる 方程式です。文字の 次数が 1の 方程式で、解は 1つに 決まります。"
+ },
+ {
+  "id": "si-kou",
+  "name": "項",
+  "reading": "こう",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🧩",
+  "relatedTerms": [
+   "si-keisuu",
+   "si-dourui"
+  ],
+  "description": "式を たし算だけの 形に 表したときの、1つ1つの 部分です。3x−5 は 3x+(−5) と 見て、3x と −5 が それに 当たります。"
+ },
+ {
+  "id": "si-keisuu",
+  "name": "係数",
+  "reading": "けいすう",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🔢",
+  "relatedTerms": [
+   "si-kou",
+   "si-mojishiki"
+  ],
+  "description": "文字を ふくむ 項の、数の 部分です。−4x なら −4 です。x だけの ときは 1、−x の ときは −1 と 考えます。"
+ },
+ {
+  "id": "si-daunyuu",
+  "name": "代入",
+  "reading": "だいにゅう",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "📥",
+  "relatedTerms": [
+   "si-mojishiki",
+   "si-kai"
+  ],
+  "description": "式の 中の 文字を 数に 置きかえる ことです。そうして 計算した 結果を 式の値と いいます。x=2 の とき 3x+1 は 7です。"
+ },
+ {
+  "id": "si-futoushiki",
+  "name": "不等式",
+  "reading": "ふとうしき",
+  "journey": "shiki",
+  "category": "不等式",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "📐",
+  "figure": "numline:point",
+  "relatedTerms": [
+   "si-futougou",
+   "si-ichijifutoushiki"
+  ],
+  "description": "不等号を 使って、数量の 大小の 関係を 表した 式です。「x円の ものを 3こ 買うと 500円より 高い」は 3x>500 と 書けます。≦ は「以下」を 表します。"
+ },
+ {
+  "id": "si-takoushiki",
+  "name": "多項式",
+  "reading": "たこうしき",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "🧱",
+  "relatedTerms": [
+   "si-kou",
+   "si-dourui"
+  ],
+  "description": "いくつかの 単項式の 和の 形で 表された 式です。2x²−3x+1 などです。数や 文字の かけ算だけで できた 式は 単項式と いいます。"
+ },
+ {
+  "id": "si-dourui",
+  "name": "同類項",
+  "reading": "どうるいこう",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "👯",
+  "relatedTerms": [
+   "si-kou",
+   "si-takoushiki"
+  ],
+  "description": "文字の 部分が 同じ 項どうしの ことです。3x と −5x は 係数を たして −2x に まとめられます。x と x² は 文字の 部分が ちがうので まとめられません。"
+ },
+ {
+  "id": "si-renritsu",
+  "name": "連立方程式",
+  "reading": "れんりつほうていしき",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 2,
+  "grade": "中2",
+  "type": "concept",
+  "emoji": "🤝",
+  "relatedTerms": [
+   "si-hoteishiki",
+   "si-daunyuu"
+  ],
+  "description": "2つ以上の 方程式を 組に した ものです。どの 式も 同時に 成り立つ 値の 組を 求めます。文字を 消す 加減法と 代入法で 解きます。"
+ },
+ {
+  "id": "si-tenkai",
+  "name": "展開",
+  "reading": "てんかい",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "📤",
+  "figure": "area2:a2",
+  "relatedTerms": [
+   "si-inbun",
+   "si-bunpai"
+  ],
+  "description": "かっこの ある 積の 形の 式を、かっこを はずして 単項式の 和の 形に する ことです。(x+2)(x+3)=x²+5x+6。分配法則を くり返して 行います。"
+ },
+ {
+  "id": "si-inbun",
+  "name": "因数分解",
+  "reading": "いんすうぶんかい",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🧬",
+  "figure": "area2:b2",
+  "relatedTerms": [
+   "si-tenkai",
+   "si-nijihoteishiki"
+  ],
+  "description": "多項式を いくつかの 式の 積の 形に 表す ことです。展開の 逆の 作業です。x²+5x+6=(x+2)(x+3)。二次方程式を 解く ときに 使います。"
+ },
+ {
+  "id": "si-nijihoteishiki",
+  "name": "二次方程式",
+  "reading": "にじほうていしき",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "2️⃣",
+  "figure": "parabola:up",
+  "relatedTerms": [
+   "si-kainokoushiki",
+   "si-inbun"
+  ],
+  "description": "移項して 整理すると ax²+bx+c=0(a は 0でない)の 形に なる 方程式です。因数分解や 平方根の 考え、公式を 使って 解きます。"
+ },
+ {
+  "id": "si-kainokoushiki",
+  "name": "解の公式",
+  "reading": "かいのこうしき",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🗝️",
+  "relatedTerms": [
+   "si-nijihoteishiki",
+   "si-f-hanbetsu"
+  ],
+  "description": "ax²+bx+c=0 の 解を x=(−b±√(b²−4ac))/2a で 求める 公式です。因数分解が できない ときでも、係数を 当てはめれば 解が 出ます。"
+ },
+ {
+  "id": "si-f-wanonijou",
+  "name": "(a+b)²=a²+2ab+b²",
+  "reading": "えーたすびーのにじょういこーるえーのにじょうたすにえーびーたすびーのにじょう",
+  "journey": "shiki",
+  "category": "公式を打つ",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "📝",
+  "figure": "area2:ab",
+  "relatedTerms": [
+   "si-tenkai",
+   "si-f-wasa"
+  ],
+  "description": "2つの 項の 和を 2乗した 式を 展開する 乗法公式です。まんなかの 2ab を 忘れやすいので 注意します。正方形を 4つに 分けた 面積図で 確かめられます。"
+ },
+ {
+  "id": "si-f-wasa",
+  "name": "(a+b)(a−b)=a²−b²",
+  "reading": "えーたすびーえーひくびーいこーるえーのにじょうひくびーのにじょう",
+  "journey": "shiki",
+  "category": "公式を打つ",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "📝",
+  "relatedTerms": [
+   "si-f-wanonijou",
+   "si-inbun"
+  ],
+  "description": "和と 差の 積を 展開する 乗法公式です。右から 左に 読めば、2乗の 差の 因数分解に なります。99×101=100²−1 のような 計算の 工夫にも 使えます。"
+ },
+ {
+  "id": "si-seishiki",
+  "name": "整式",
+  "reading": "せいしき",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "📦",
+  "relatedTerms": [
+   "si-takoushiki",
+   "si-koubeki"
+  ],
+  "description": "単項式と 多項式を まとめた 呼び名です。ふくまれる 項の 次数の うち いちばん 大きい ものを、その 式の 次数と いいます。"
+ },
+ {
+  "id": "si-koubeki",
+  "name": "降べきの順",
+  "reading": "こうべきのじゅん",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "⬇️",
+  "relatedTerms": [
+   "si-shoubeki",
+   "si-teisuukou"
+  ],
+  "description": "整式の 項を、ある 文字に ついて 次数の 高い ものから 低い ものへ 並べる ことです。x²+3x−4 の 並べかたです。計算や 因数分解の 見通しが よく なります。"
+ },
+ {
+  "id": "si-shoubeki",
+  "name": "昇べきの順",
+  "reading": "しょうべきのじゅん",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "⬆️",
+  "relatedTerms": [
+   "si-koubeki",
+   "si-seishiki"
+  ],
+  "description": "整式の 項を、ある 文字に ついて 次数の 低い ものから 高い ものへ 並べる ことです。−4+3x+x² の 並べかたです。"
+ },
+ {
+  "id": "si-teisuukou",
+  "name": "定数項",
+  "reading": "ていすうこう",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "📍",
+  "relatedTerms": [
+   "si-koubeki",
+   "si-kou"
+  ],
+  "description": "着目する 文字を ふくまない 項です。x²+3x−4 では −4 です。x に 着目した とき、ax は 当たりませんが、a² は 当たります。"
+ },
+ {
+  "id": "si-tasuki",
+  "name": "たすき掛け",
+  "reading": "たすきがけ",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "✖️",
+  "relatedTerms": [
+   "si-inbun",
+   "si-okikae"
+  ],
+  "description": "ax²+bx+c を (px+q)(rx+s) に 因数分解する ための 方法です。pr=a、qs=c と なる 組の 中から、ps+qr=b に なる ものを 交差させて 探します。"
+ },
+ {
+  "id": "si-okikae",
+  "name": "置き換え",
+  "reading": "おきかえ",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔀",
+  "relatedTerms": [
+   "si-fukuniji",
+   "si-tasuki"
+  ],
+  "description": "式の 中に 何度も 出る かたまりを、1つの 文字(t など)で 表して 計算を 簡単に する 方法です。(x+y)²−3(x+y) なら x+y=t と します。最後に もとに 戻します。"
+ },
+ {
+  "id": "si-ichijifutoushiki",
+  "name": "一次不等式",
+  "reading": "いちじふとうしき",
+  "journey": "shiki",
+  "category": "不等式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "📏",
+  "figure": "numline:pos",
+  "relatedTerms": [
+   "si-futoushikiseishitsu",
+   "si-futoushiki"
+  ],
+  "description": "整理すると ax>b や ax≦b などの 形に なる 不等式です。解は x>3 のような 範囲に なり、数直線に 表して 確かめます。"
+ },
+ {
+  "id": "si-futoushikiseishitsu",
+  "name": "不等式の性質",
+  "reading": "ふとうしきのせいしつ",
+  "journey": "shiki",
+  "category": "不等式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔃",
+  "figure": "numline:neg",
+  "relatedTerms": [
+   "si-ichijifutoushiki",
+   "si-toushikiseishitsu"
+  ],
+  "description": "両辺に 同じ 数を たしても ひいても、正の 数を かけても わっても、不等号の 向きは そのままです。負の 数を かけたり わったり すると、向きが 逆に なります。"
+ },
+ {
+  "id": "si-renritsufutoushiki",
+  "name": "連立不等式",
+  "reading": "れんりつふとうしき",
+  "journey": "shiki",
+  "category": "不等式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🧷",
+  "relatedTerms": [
+   "si-kyoutsuuhani",
+   "si-ichijifutoushiki"
+  ],
+  "description": "いくつかの 不等式を 組に した ものです。どれも 同時に 成り立つ x の 範囲を 求めます。それぞれの 解を 数直線に かいて 重なる ところを 見ます。"
+ },
+ {
+  "id": "si-kyoutsuuhani",
+  "name": "共通範囲",
+  "reading": "きょうつうはんい",
+  "journey": "shiki",
+  "category": "不等式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🟰",
+  "relatedTerms": [
+   "si-renritsufutoushiki",
+   "si-futoushikinokai"
+  ],
+  "description": "いくつかの 条件の どれにも 入る 範囲です。x>1 と x≦4 なら 1<x≦4。重なりが ない ときは、解は ありません。"
+ },
+ {
+  "id": "si-futoushikinokai",
+  "name": "不等式の解",
+  "reading": "ふとうしきのかい",
+  "journey": "shiki",
+  "category": "不等式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🎯",
+  "relatedTerms": [
+   "si-ichijifutoushiki",
+   "si-kyoutsuuhani"
+  ],
+  "description": "不等式を 成り立たせる 値 全体です。多くの 場合 1つの 値では なく、x<−2 のような 範囲に なります。端の 値を ふくむかどうかに 注意します。"
+ },
+ {
+  "id": "si-nijifutoushiki",
+  "name": "二次不等式",
+  "reading": "にじふとうしき",
+  "journey": "shiki",
+  "category": "不等式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "⛰️",
+  "figure": "parabola:up",
+  "relatedTerms": [
+   "si-f-hanbetsu",
+   "si-futoushikinokai"
+  ],
+  "description": "ax²+bx+c>0 のような、x の 2次式を 使った 不等式です。放物線と x軸の 位置の 関係を 見て、グラフが x軸より 上か 下かで 解の 範囲を 決めます。"
+ },
+ {
+  "id": "si-f-hanbetsu",
+  "name": "D=b²−4ac",
+  "reading": "でぃーいこーるびーのにじょうひくよんえーしー",
+  "journey": "shiki",
+  "category": "公式を打つ",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "📝",
+  "relatedTerms": [
+   "si-juukai",
+   "si-jissuukai"
+  ],
+  "description": "二次方程式 ax²+bx+c=0 の 判別式です。D>0 なら 異なる 2つの 実数解、D=0 なら 重解、D<0 なら 実数解は ありません。解の 公式の √ の 中身です。"
+ },
+ {
+  "id": "si-juukai",
+  "name": "重解",
+  "reading": "じゅうかい",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🎎",
+  "figure": "parabola:vertex",
+  "relatedTerms": [
+   "si-f-hanbetsu",
+   "si-jissuukai"
+  ],
+  "description": "二次方程式の 2つの 解が 重なって 1つに なった ものです。判別式が 0の ときに 起こり、放物線は x軸に 接します。(x−3)²=0 の x=3 が その 例です。"
+ },
+ {
+  "id": "si-jissuukai",
+  "name": "実数解",
+  "reading": "じっすうかい",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "📌",
+  "figure": "coord:x",
+  "relatedTerms": [
+   "si-f-hanbetsu",
+   "si-juukai"
+  ],
+  "description": "実数である 解です。二次方程式の この 解は、放物線が x軸と 交わる(接する)点の x座標と 一致します。判別式で その 個数が 分かります。"
+ },
+ {
+  "id": "si-fukuniji",
+  "name": "複二次式",
+  "reading": "ふくにじしき",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🪜",
+  "relatedTerms": [
+   "si-okikae",
+   "si-inbun"
+  ],
+  "description": "x⁴+ax²+b のように、x⁴ と x² と 定数だけで できた 式です。x²=t と 表して 因数分解します。うまく いかない ときは 2乗の 差の 形を 作ります。"
+ },
+ {
+  "id": "si-zettaifutoushiki",
+  "name": "絶対値を含む不等式",
+  "reading": "ぜったいちをふくむふとうしき",
+  "journey": "shiki",
+  "category": "不等式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "📏",
+  "figure": "numline:abs",
+  "relatedTerms": [
+   "si-ichijifutoushiki",
+   "si-futoushikinokai"
+  ],
+  "description": "|x−1|<3 のように 絶対値の 記号が 入った 不等式です。a>0 の とき |x|<a は −a<x<a です。中身が 正か 負かで 分けて 考えるのが 基本です。"
+ },
+ {
+  "id": "si-mojiteisuu",
+  "name": "文字定数",
+  "reading": "もじていすう",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🅰️",
+  "relatedTerms": [
+   "si-kainohaichi",
+   "si-futoushikinokai"
+  ],
+  "description": "式の 中で、値が まだ 決まっていない 定数を 文字で 表した ものです。ax=2 の a などです。a が 0か どうかで 解が 変わるので、分けて 考えます。"
+ },
+ {
+  "id": "si-kainohaichi",
+  "name": "解の配置",
+  "reading": "かいのはいち",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🗺️",
+  "relatedTerms": [
+   "si-f-hanbetsu",
+   "si-mojiteisuu"
+  ],
+  "description": "二次方程式の 解が 決められた 範囲に 入る 条件を 調べる 考えかたです。放物線の 判別式・軸の 位置・端の 値の 3つを 見て 条件を 立てます。受験で よく 見ます。"
+ },
+ {
+  "id": "si-saiteiji",
+  "name": "最低次の文字で整理",
+  "reading": "さいていじのもじでせいり",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🧹",
+  "relatedTerms": [
+   "si-koubeki",
+   "si-inbun"
+  ],
+  "description": "文字が いくつも ある 式を 因数分解する ときの 工夫です。次数が いちばん 低い 文字に ついて 降べきの 順に まとめると、共通な 因数が 見つかりやすく なります。"
+ },
+ {
+  "id": "si-nikouteiri",
+  "name": "二項定理",
+  "reading": "にこうていり",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🎲",
+  "relatedTerms": [
+   "si-nikoukeisuu",
+   "si-pascal"
+  ],
+  "description": "(a+b)ⁿ を 展開した 式の 各項の 係数が、組合せの 数 nCr で 表される という 定理です。aⁿ⁻ʳbʳ の 係数が nCr に なります。"
+ },
+ {
+  "id": "si-nikoukeisuu",
+  "name": "二項係数",
+  "reading": "にこうけいすう",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🔣",
+  "relatedTerms": [
+   "si-nikouteiri",
+   "si-pascal"
+  ],
+  "description": "(a+b)ⁿ を 展開した ときに 出てくる 係数 nCr の ことです。n=3 なら 1・3・3・1 と 並び、左右 対称に なります。"
+ },
+ {
+  "id": "si-pascal",
+  "name": "パスカルの三角形",
+  "reading": "ぱすかるのさんかくけい",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🔺",
+  "relatedTerms": [
+   "si-nikoukeisuu",
+   "si-nikouteiri"
+  ],
+  "description": "両はしを 1に して、上の 段の となり合う 2つの 数の 和を 下の 段に 書いて いく 数の 三角形です。各段に (a+b)ⁿ の 展開の 係数が 並びます。"
+ },
+ {
+  "id": "si-sanjijouhou",
+  "name": "三次の乗法公式",
+  "reading": "さんじのじょうほうこうしき",
+  "journey": "shiki",
+  "category": "展開と因数分解",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🧊",
+  "relatedTerms": [
+   "si-tenkai",
+   "si-nikouteiri"
+  ],
+  "description": "(a+b)³=a³+3a²b+3ab²+b³ や、a³+b³=(a+b)(a²−ab+b²) など、3乗が 出てくる 展開と 因数分解の 公式です。符号の 並びに 気を つけます。"
+ },
+ {
+  "id": "si-seishikijohou",
+  "name": "整式の除法",
+  "reading": "せいしきのじょほう",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "➗",
+  "relatedTerms": [
+   "si-joyou",
+   "si-kumitate"
+  ],
+  "description": "整式を 整式で わる 計算です。A を B で わった 商を Q、余りを R と すると A=BQ+R で、R の 次数は B より 低く なります。降べきの 順に 並べて 筆算します。"
+ },
+ {
+  "id": "si-bunsuushiki",
+  "name": "分数式",
+  "reading": "ぶんすうしき",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🍰",
+  "relatedTerms": [
+   "si-seishikijohou",
+   "si-koutoushiki"
+  ],
+  "description": "分母に 文字を ふくむ 式です。1/(x+1) などです。分数と 同じように 約分や 通分が できますが、分母が 0に なる 値は 考えません。"
+ },
+ {
+  "id": "si-koutoushiki",
+  "name": "恒等式",
+  "reading": "こうとうしき",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "♾️",
+  "relatedTerms": [
+   "si-keisuuhikaku",
+   "si-suuchidainyuu"
+  ],
+  "description": "文字に どんな 値を 入れても 成り立つ 等式です。(x+1)²=x²+2x+1 など。特定の 値の ときだけ 成り立つ 方程式とは ちがいます。"
+ },
+ {
+  "id": "si-keisuuhikaku",
+  "name": "係数比較法",
+  "reading": "けいすうひかくほう",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🔍",
+  "relatedTerms": [
+   "si-koutoushiki",
+   "si-suuchidainyuu"
+  ],
+  "description": "恒等式で、両辺の 同じ 次数の 項の 係数が それぞれ 等しい ことを 使って、分からない 係数を 求める 方法です。"
+ },
+ {
+  "id": "si-suuchidainyuu",
+  "name": "数値代入法",
+  "reading": "すうちだいにゅうほう",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🎰",
+  "relatedTerms": [
+   "si-koutoushiki",
+   "si-keisuuhikaku"
+  ],
+  "description": "恒等式の 文字に 計算しやすい 数を 代入して、分からない 係数を 求める 方法です。出てくるのは 必要条件なので、求めた 値で 本当に 恒等式に なるか 確かめます。"
+ },
+ {
+  "id": "si-toushikishoumei",
+  "name": "等式の証明",
+  "reading": "とうしきのしょうめい",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "📜",
+  "relatedTerms": [
+   "si-koutoushiki",
+   "si-futoushikishoumei"
+  ],
+  "description": "等式が 成り立つ ことを 示す ことです。一方の 辺を 変形して もう一方に する、両辺を それぞれ 同じ 式に する、左辺−右辺=0 を 示す などの やりかたが あります。"
+ },
+ {
+  "id": "si-futoushikishoumei",
+  "name": "不等式の証明",
+  "reading": "ふとうしきのしょうめい",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🏯",
+  "relatedTerms": [
+   "si-zettaifutou",
+   "si-f-soukasoujou"
+  ],
+  "description": "A>B を 示すには、A−B>0 を 示すのが 基本です。実数の 2乗は 0以上 という ことを 使い、式を 平方の 形に まとめます。等号が 成り立つ ときも 調べます。"
+ },
+ {
+  "id": "si-zettaifutou",
+  "name": "絶対不等式",
+  "reading": "ぜったいふとうしき",
+  "journey": "shiki",
+  "category": "不等式",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🛡️",
+  "relatedTerms": [
+   "si-futoushikishoumei",
+   "si-f-soukasoujou"
+  ],
+  "description": "文字に どんな 実数を 入れても 成り立つ 不等式です。x²+1>0 や a²+b²≧2ab など。恒等式の 不等式版と いえます。"
+ },
+ {
+  "id": "si-joyou",
+  "name": "剰余の定理",
+  "reading": "じょうよのていり",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🧮",
+  "relatedTerms": [
+   "si-insuuteiri",
+   "si-seishikijohou"
+  ],
+  "description": "整式 P(x) を x−a で わった 余りは P(a) に 等しい という 定理です。実際に わらなくても、a を 代入するだけで 余りが 分かります。"
+ },
+ {
+  "id": "si-insuuteiri",
+  "name": "因数定理",
+  "reading": "いんすうていり",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🔑",
+  "relatedTerms": [
+   "si-joyou",
+   "si-kouji"
+  ],
+  "description": "P(a)=0 ならば 整式 P(x) は x−a で わりきれる(x−a を 因数に もつ)という 定理です。逆も 成り立ちます。3次以上の 式の 因数分解に 使います。"
+ },
+ {
+  "id": "si-kumitate",
+  "name": "組立除法",
+  "reading": "くみたてじょほう",
+  "journey": "shiki",
+  "category": "式と証明",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🏗️",
+  "relatedTerms": [
+   "si-seishikijohou",
+   "si-insuuteiri"
+  ],
+  "description": "整式を x−a で わる とき、係数だけを 並べて 商と 余りを 手早く 求める 計算の しかたです。因数定理で 見つけた 因数で わる ときに 便利です。"
+ },
+ {
+  "id": "si-kouji",
+  "name": "高次方程式",
+  "reading": "こうじほうていしき",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🏔️",
+  "relatedTerms": [
+   "si-insuuteiri",
+   "si-kumitate"
+  ],
+  "description": "3次以上の 方程式です。因数定理で 解を 1つ 見つけ、因数分解して 次数を 下げながら 解きます。x³=1 なども その なかまです。"
+ },
+ {
+  "id": "si-kaitokeisuu",
+  "name": "解と係数の関係",
+  "reading": "かいとけいすうのかんけい",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🪢",
+  "relatedTerms": [
+   "si-taishoushiki",
+   "si-kyosuukai"
+  ],
+  "description": "二次方程式 ax²+bx+c=0 の 2つの 解を α、β と すると、α+β=−b/a、αβ=c/a が 成り立ちます。解を 求めずに 解の 和や 積が 分かります。"
+ },
+ {
+  "id": "si-kyosuukai",
+  "name": "虚数解",
+  "reading": "きょすうかい",
+  "journey": "shiki",
+  "category": "方程式",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🌌",
+  "relatedTerms": [
+   "si-f-hanbetsu",
+   "si-kaitokeisuu"
+  ],
+  "description": "虚数である 解です。係数が 実数の 二次方程式で 判別式が 負の とき、たがいに 共役な 2つの この 解を もちます。x²=−1 の 解は ±i です。"
+ },
+ {
+  "id": "si-taishoushiki",
+  "name": "対称式",
+  "reading": "たいしょうしき",
+  "journey": "shiki",
+  "category": "文字式",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🦋",
+  "relatedTerms": [
+   "si-kaitokeisuu",
+   "si-mojishiki"
+  ],
+  "description": "文字を 入れかえても 変わらない 式です。x²+y² など。どれも 和 x+y と 積 xy で 表せます。x²+y²=(x+y)²−2xy の 形で よく 使います。"
+ },
+ {
+  "id": "si-f-soukasoujou",
+  "name": "a+b≧2√ab",
+  "reading": "えーたすびーだいなりいこーるにるーとえーびー",
+  "journey": "shiki",
+  "category": "公式を打つ",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "📝",
+  "relatedTerms": [
+   "si-futoushikishoumei",
+   "si-zettaifutou"
+  ],
+  "description": "a>0、b>0 の とき 成り立つ、相加平均と 相乗平均の 関係です。等号は a=b の ときに 成り立ちます。積が 一定の とき、和の 最小値を 求めるのに 使います。"
+ }
+]

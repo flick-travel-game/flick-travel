@@ -1,0 +1,1303 @@
+[
+ {
+  "id": "ka-seisu",
+  "name": "整数",
+  "reading": "せいすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🔢",
+  "relatedTerms": [
+   "ka-gusu",
+   "ka-bunsu"
+  ],
+  "description": "0, 1, 2, 3 … のように、小数や 分数の 部分が ない 数です。中学からは −1, −2 … のような 負の 数も 仲間に 入ります。"
+ },
+ {
+  "id": "ka-gusu",
+  "name": "偶数",
+  "reading": "ぐうすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "⚖️",
+  "relatedTerms": [
+   "ka-kisu",
+   "ka-baisu"
+  ],
+  "description": "2で 割り切れる 整数です。0, 2, 4, 6 … が 当たります。一の位が 0, 2, 4, 6, 8 なら この 仲間だと すぐ 分かります。"
+ },
+ {
+  "id": "ka-kisu",
+  "name": "奇数",
+  "reading": "きすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "🎯",
+  "relatedTerms": [
+   "ka-gusu",
+   "ka-seisu"
+  ],
+  "description": "2で 割ると 1 余る 整数です。1, 3, 5, 7 … が 当たります。整数は 偶数か これの どちらかに かならず 分かれます。"
+ },
+ {
+  "id": "ka-yakusu",
+  "name": "約数",
+  "reading": "やくすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "🧩",
+  "relatedTerms": [
+   "ka-koyakusu",
+   "ka-baisu"
+  ],
+  "description": "ある 整数を 割り切る ことが できる 整数です。12 なら 1, 2, 3, 4, 6, 12 の 6つで、1 と その数 じしんも 入ります。"
+ },
+ {
+  "id": "ka-baisu",
+  "name": "倍数",
+  "reading": "ばいすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "✖️",
+  "relatedTerms": [
+   "ka-kobaisu",
+   "ka-yakusu"
+  ],
+  "description": "ある 整数に 1, 2, 3 … を かけて できる 数です。3 なら 3, 6, 9, 12 … と 限りなく 続きます。小学校では 0 は 入れません。"
+ },
+ {
+  "id": "ka-koyakusu",
+  "name": "公約数",
+  "reading": "こうやくすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "🤝",
+  "figure": "venn:and",
+  "relatedTerms": [
+   "ka-saidaikoyakusu",
+   "ka-yakusu"
+  ],
+  "description": "2つ 以上の 整数に 共通する 約数です。12 と 18 なら 1, 2, 3, 6 が 当たります。どれも 最大公約数の 約数に なって います。"
+ },
+ {
+  "id": "ka-saidaikoyakusu",
+  "name": "最大公約数",
+  "reading": "さいだいこうやくすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "👑",
+  "figure": "venn:and",
+  "relatedTerms": [
+   "ka-koyakusu",
+   "ka-yakubun"
+  ],
+  "description": "公約数の 中で いちばん 大きい 数です。12 と 18 では 6 です。分数を 約分する とき、これで 割ると 一度で いちばん 簡単な 形に なります。"
+ },
+ {
+  "id": "ka-kobaisu",
+  "name": "公倍数",
+  "reading": "こうばいすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "🔗",
+  "figure": "venn:and",
+  "relatedTerms": [
+   "ka-saishokobaisu",
+   "ka-baisu"
+  ],
+  "description": "2つ 以上の 整数に 共通する 倍数です。4 と 6 なら 12, 24, 36 … と 続き、どれも 最小公倍数の 倍数に なって います。"
+ },
+ {
+  "id": "ka-saishokobaisu",
+  "name": "最小公倍数",
+  "reading": "さいしょうこうばいすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "🥇",
+  "figure": "venn:and",
+  "relatedTerms": [
+   "ka-kobaisu",
+   "ka-tsubun"
+  ],
+  "description": "公倍数の 中で いちばん 小さい 数です。4 と 6 では 12 です。分母の ちがう 分数を 通分する ときに よく 使います。"
+ },
+ {
+  "id": "ka-bunsu",
+  "name": "分数",
+  "reading": "ぶんすう",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小2",
+  "type": "concept",
+  "emoji": "🍕",
+  "figure": "frac:part",
+  "relatedTerms": [
+   "ka-bunbo",
+   "ka-bunshi"
+  ],
+  "description": "1 を 同じ 大きさに 分けた いくつ分かを、3/4 のように 横線の 上下に 数を 書いて 表す 数です。割り算 a÷b の 答えも a/b と 表せます。"
+ },
+ {
+  "id": "ka-bunbo",
+  "name": "分母",
+  "reading": "ぶんぼ",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "⬇️",
+  "figure": "frac:part",
+  "relatedTerms": [
+   "ka-bunshi",
+   "ka-tsubun"
+  ],
+  "description": "分数の 横線の 下に 書く 数です。1 を いくつに 等しく 分けたかを 表します。3/4 なら 4 で、0 に する ことは できません。"
+ },
+ {
+  "id": "ka-bunshi",
+  "name": "分子",
+  "reading": "ぶんし",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "⬆️",
+  "figure": "frac:part",
+  "relatedTerms": [
+   "ka-bunbo",
+   "ka-bunsu"
+  ],
+  "description": "分数の 横線の 上に 書く 数です。分けた ものが いくつ分 あるかを 表します。3/4 なら 3 です。"
+ },
+ {
+  "id": "ka-shosu",
+  "name": "小数",
+  "reading": "しょうすう",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小3",
+  "type": "concept",
+  "emoji": "🔟",
+  "relatedTerms": [
+   "ka-bunsu",
+   "ka-shishagonyu"
+  ],
+  "description": "0.5 や 2.37 のように、小数点を 使って 1 より 小さい 位まで 表した 数です。0.1 は 1 を 10等分した 1つ分です。"
+ },
+ {
+  "id": "ka-shinbunsu",
+  "name": "真分数",
+  "reading": "しんぶんすう",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🥧",
+  "figure": "frac:part",
+  "relatedTerms": [
+   "ka-kabunsu",
+   "ka-taibunsu"
+  ],
+  "description": "分子が 分母より 小さい 分数です。2/3 や 5/8 など、1 より 小さい 大きさを 表します。"
+ },
+ {
+  "id": "ka-kabunsu",
+  "name": "仮分数",
+  "reading": "かぶんすう",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🍰",
+  "relatedTerms": [
+   "ka-taibunsu",
+   "ka-shinbunsu"
+  ],
+  "description": "分子が 分母と 等しいか、分母より 大きい 分数です。4/4 や 7/3 など、1 以上の 大きさを 表します。帯分数に 直す ことも できます。"
+ },
+ {
+  "id": "ka-taibunsu",
+  "name": "帯分数",
+  "reading": "たいぶんすう",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🎀",
+  "relatedTerms": [
+   "ka-kabunsu",
+   "ka-shinbunsu"
+  ],
+  "description": "整数と 真分数の 和を まとめて 書いた 分数です。2 と 1/3 を 並べて 書き、7/3 と 同じ 大きさです。大きさの 見当が つけやすいのが よい ところです。"
+ },
+ {
+  "id": "ka-yakubun",
+  "name": "約分",
+  "reading": "やくぶん",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "✂️",
+  "relatedTerms": [
+   "ka-saidaikoyakusu",
+   "ka-tsubun"
+  ],
+  "description": "分母と 分子を 同じ 数で 割って、大きさを 変えずに 簡単な 分数に する ことです。6/8 は 3/4 に なります。最大公約数で 割ると 一度で すみます。"
+ },
+ {
+  "id": "ka-tsubun",
+  "name": "通分",
+  "reading": "つうぶん",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小5",
+  "type": "concept",
+  "emoji": "🧮",
+  "relatedTerms": [
+   "ka-saishokobaisu",
+   "ka-yakubun"
+  ],
+  "description": "分母の ちがう 分数を、大きさを 変えずに 同じ 分母に そろえる ことです。1/2 と 1/3 は 3/6 と 2/6 に なり、たし算や 大小くらべが できます。"
+ },
+ {
+  "id": "ka-gyakusu",
+  "name": "逆数",
+  "reading": "ぎゃくすう",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小6",
+  "type": "concept",
+  "emoji": "🔄",
+  "relatedTerms": [
+   "ka-bunsu",
+   "ka-kabunsu"
+  ],
+  "description": "かけて 1 に なる 2つの 数の 一方です。2/3 なら 3/2 です。分数で 割る ときは、割る 数の これを かけます。0 には ありません。"
+ },
+ {
+  "id": "ka-shishagonyu",
+  "name": "四捨五入",
+  "reading": "ししゃごにゅう",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 1,
+  "grade": "小4",
+  "type": "concept",
+  "emoji": "🎚️",
+  "relatedTerms": [
+   "ka-kinjichi",
+   "ka-shosu"
+  ],
+  "description": "がい数に する 方法の 1つで、求める 位の 1つ下の 位が 0〜4 なら 切り捨て、5〜9 なら 切り上げます。1349 を 百の位までに すると 1300 です。"
+ },
+ {
+  "id": "ka-seinokazu",
+  "name": "正の数",
+  "reading": "せいのかず",
+  "journey": "kazu",
+  "category": "正負の数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "➕",
+  "figure": "numline:pos",
+  "relatedTerms": [
+   "ka-funokazu",
+   "ka-fugo"
+  ],
+  "description": "0 より 大きい 数です。+3 や +0.5 のように + の 符号を 付けて 表しますが、ふつうは + を 省きます。数直線では 0 より 右に あります。"
+ },
+ {
+  "id": "ka-funokazu",
+  "name": "負の数",
+  "reading": "ふのかず",
+  "journey": "kazu",
+  "category": "正負の数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "➖",
+  "figure": "numline:neg",
+  "relatedTerms": [
+   "ka-seinokazu",
+   "ka-zettaichi"
+  ],
+  "description": "0 より 小さい 数で、−3 のように − の 符号を 付けて 表します。気温の 零下や 海面より 低い 高さなど、反対の 向きの 量を 表すのに 使います。"
+ },
+ {
+  "id": "ka-shizensu",
+  "name": "自然数",
+  "reading": "しぜんすう",
+  "journey": "kazu",
+  "category": "正負の数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🌱",
+  "figure": "numline:pos",
+  "relatedTerms": [
+   "ka-seisu",
+   "ka-sosu"
+  ],
+  "description": "正の 整数 1, 2, 3 … の ことです。ものを 数える ときに 使う 数で、高校までの 数学では 0 を ふくめません。"
+ },
+ {
+  "id": "ka-zettaichi",
+  "name": "絶対値",
+  "reading": "ぜったいち",
+  "journey": "kazu",
+  "category": "正負の数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "📏",
+  "figure": "numline:abs",
+  "relatedTerms": [
+   "ka-funokazu",
+   "ka-kyori"
+  ],
+  "description": "数直線で、ある 数と 原点 0 との 距離です。+5 も −5 も 5 に なり、|−5|=5 と 書きます。符号を 取った 大きさと 考えられます。"
+ },
+ {
+  "id": "ka-sosu",
+  "name": "素数",
+  "reading": "そすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "💎",
+  "relatedTerms": [
+   "ka-soinsubunkai",
+   "ka-goseisu"
+  ],
+  "description": "1 と その数 じしんの ほかに 約数を もたない、2 以上の 自然数です。2, 3, 5, 7, 11 … と 続きます。1 は 入りません。偶数の 中では 2 だけです。"
+ },
+ {
+  "id": "ka-soinsubunkai",
+  "name": "素因数分解",
+  "reading": "そいんすうぶんかい",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🧱",
+  "relatedTerms": [
+   "ka-sosu",
+   "ka-soinsu"
+  ],
+  "description": "自然数を 素数だけの 積で 表す ことです。60=2²×3×5 の ように なり、表しかたは 積の 順を のぞけば 1通りです。最大公約数や 最小公倍数を 求めるのに 役立ちます。"
+ },
+ {
+  "id": "ka-heihokon",
+  "name": "平方根",
+  "reading": "へいほうこん",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🌿",
+  "relatedTerms": [
+   "ka-kongo",
+   "ka-murisu"
+  ],
+  "description": "2乗すると a に なる 数です。正の 数 a には 正と 負の 2つが あり、9 なら 3 と −3 です。正の ほうを √a、負の ほうを −√a と 書きます。"
+ },
+ {
+  "id": "ka-kongo",
+  "name": "根号",
+  "reading": "こんごう",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "✔️",
+  "relatedTerms": [
+   "ka-heihokon",
+   "ka-yurika"
+  ],
+  "description": "平方根を 表す 記号 √ の ことです。√a は 2乗して a に なる 正の 数を 表し、√9=3 です。ルートとも 呼ばれます。"
+ },
+ {
+  "id": "ka-yurisu",
+  "name": "有理数",
+  "reading": "ゆうりすう",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🍩",
+  "relatedTerms": [
+   "ka-murisu",
+   "ka-jissu"
+  ],
+  "description": "整数 m と 0 でない 整数 n を 使って、分数 m/n の 形に 表せる 数です。整数や 有限小数、循環小数は みな この 仲間です。"
+ },
+ {
+  "id": "ka-murisu",
+  "name": "無理数",
+  "reading": "むりすう",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🌀",
+  "relatedTerms": [
+   "ka-yurisu",
+   "ka-root2"
+  ],
+  "description": "整数どうしの 分数の 形に 表せない 実数です。√2 や π の ように、小数に すると くり返しの ない まま 限りなく 続きます。"
+ },
+ {
+  "id": "ka-ruijo",
+  "name": "累乗",
+  "reading": "るいじょう",
+  "journey": "kazu",
+  "category": "正負の数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🗼",
+  "relatedTerms": [
+   "ka-soinsubunkai",
+   "ka-heihokon"
+  ],
+  "description": "同じ 数を いくつか かけ合わせた ものです。2×2×2 を 2³ と 書き、右上の 小さい 数を 指数と いいます。(−3)²=9 と −3²=−9 の ちがいに 注意します。"
+ },
+ {
+  "id": "ka-yurika",
+  "name": "分母の有理化",
+  "reading": "ぶんぼのゆうりか",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🧹",
+  "relatedTerms": [
+   "ka-kongo",
+   "ka-jissuka"
+  ],
+  "description": "分母に √ が ある とき、分母と 分子に 同じ 数を かけて 分母を 有理数に する ことです。1/√2 は √2/2 に なります。"
+ },
+ {
+  "id": "ka-f-root",
+  "name": "√a×√b=√ab",
+  "reading": "るーとえーかけるるーとびーいこーるるーとえーびー",
+  "journey": "kazu",
+  "category": "公式を打つ",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "📝",
+  "relatedTerms": [
+   "ka-heihokon",
+   "ka-heihokonseki"
+  ],
+  "description": "平方根の かけ算の 公式です。a と b が 正の 数の とき、根号の 中どうしを かけて 1つの 根号に まとめられます。√2×√3=√6 です。"
+ },
+ {
+  "id": "ka-fugo",
+  "name": "符号",
+  "reading": "ふごう",
+  "journey": "kazu",
+  "category": "正負の数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "±",
+  "figure": "numline:zero",
+  "relatedTerms": [
+   "ka-seinokazu",
+   "ka-funokazu"
+  ],
+  "description": "数の 前に 付ける + や − の しるしです。+ は 正、− は 負を 表します。0 は 正でも 負でも ないので、どちらも 付けません。"
+ },
+ {
+  "id": "ka-soinsu",
+  "name": "素因数",
+  "reading": "そいんすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🔹",
+  "relatedTerms": [
+   "ka-soinsubunkai",
+   "ka-sosu"
+  ],
+  "description": "自然数を 素数の 積に 分けた ときの、1つ1つの 素数です。12=2²×3 なら 2 と 3 が 当たります。"
+ },
+ {
+  "id": "ka-shisoku",
+  "name": "四則",
+  "reading": "しそく",
+  "journey": "kazu",
+  "category": "正負の数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "➗",
+  "relatedTerms": [
+   "ka-seinokazu",
+   "ka-ruijo"
+  ],
+  "description": "たし算・ひき算・かけ算・割り算の 4つの 計算を まとめた 呼び名です。加法・減法・乗法・除法 とも いいます。混ざった 式では 累乗、かっこの 中、乗除、加減の 順に 計算します。"
+ },
+ {
+  "id": "ka-kinjichi",
+  "name": "近似値",
+  "reading": "きんじち",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🎯",
+  "relatedTerms": [
+   "ka-gosa",
+   "ka-yukosuji"
+  ],
+  "description": "測った 値や 四捨五入した 値の ように、真の 値に 近い 値です。円周率を 3.14 と する のも その 例です。"
+ },
+ {
+  "id": "ka-yukosuji",
+  "name": "有効数字",
+  "reading": "ゆうこうすうじ",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "🔬",
+  "relatedTerms": [
+   "ka-kinjichi",
+   "ka-gosa"
+  ],
+  "description": "近似値を 表す 数字の うち、信頼できる 数字です。1500m を 3けたまで 確かなら 1.50×10³m と 書き、どこまで 確かかが 分かる ように します。"
+ },
+ {
+  "id": "ka-gosa",
+  "name": "誤差",
+  "reading": "ごさ",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 2,
+  "grade": "中1",
+  "type": "concept",
+  "emoji": "〰️",
+  "relatedTerms": [
+   "ka-kinjichi",
+   "ka-yukosuji"
+  ],
+  "description": "近似値から 真の 値を ひいた 差です。測る 道具や 四捨五入の せいで 生まれます。近似値が どれくらい 正確かを 考える ときに 使います。"
+ },
+ {
+  "id": "ka-root2",
+  "name": "√2=1.41421356…",
+  "reading": "ひとよひとよにひとみごろ",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 2,
+  "grade": "中3",
+  "type": "concept",
+  "emoji": "🔔",
+  "figure": "right:hyp",
+  "relatedTerms": [
+   "ka-murisu",
+   "ka-heihokon"
+  ],
+  "description": "√2 の 値を おぼえる ための 語呂合わせです。1辺が 1 の 正方形の 対角線の 長さで、1.41421356… と くり返しなく 続く 無理数です。"
+ },
+ {
+  "id": "ka-jissu",
+  "name": "実数",
+  "reading": "じっすう",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "📍",
+  "figure": "numline:point",
+  "relatedTerms": [
+   "ka-yurisu",
+   "ka-murisu"
+  ],
+  "description": "有理数と 無理数を 合わせた 数です。数直線上の 点と 1つずつ 対応し、0 で 割る こと 以外の 四則計算が いつでも できます。"
+ },
+ {
+  "id": "ka-junkanshosu",
+  "name": "循環小数",
+  "reading": "じゅんかんしょうすう",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔁",
+  "relatedTerms": [
+   "ka-junkansetsu",
+   "ka-yurisu"
+  ],
+  "description": "小数点以下の ある 位から 同じ 数字の 並びが 限りなく くり返す 小数です。1/3=0.333… や 1/7=0.142857142857… が 当たり、どれも 分数で 表せます。"
+ },
+ {
+  "id": "ka-junkansetsu",
+  "name": "循環節",
+  "reading": "じゅんかんせつ",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🎞️",
+  "relatedTerms": [
+   "ka-junkanshosu",
+   "ka-mugenshosu"
+  ],
+  "description": "循環小数で くり返される 数字の 並びです。0.142857142857… なら 142857 で、その はじめと 終わりの 数字の 上に 点を 付けて 表します。"
+ },
+ {
+  "id": "ka-yugenshosu",
+  "name": "有限小数",
+  "reading": "ゆうげんしょうすう",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔚",
+  "relatedTerms": [
+   "ka-mugenshosu",
+   "ka-kiyakubunsu"
+  ],
+  "description": "0.25 や 3.8 のように、小数点以下が 有限の けたで 終わる 小数です。既約分数の 分母の 素因数が 2 と 5 だけの とき、この 形に なります。"
+ },
+ {
+  "id": "ka-mugenshosu",
+  "name": "無限小数",
+  "reading": "むげんしょうすう",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "♾️",
+  "relatedTerms": [
+   "ka-junkanshosu",
+   "ka-murisu"
+  ],
+  "description": "小数点以下が 限りなく 続く 小数です。くり返しの ある 循環小数と、くり返しの ない 小数に 分かれ、後のほうが 無理数です。"
+ },
+ {
+  "id": "ka-nijukongo",
+  "name": "二重根号",
+  "reading": "にじゅうこんごう",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🪆",
+  "relatedTerms": [
+   "ka-kongo",
+   "ka-yurika"
+  ],
+  "description": "√(5+2√6) の ように、根号の 中に さらに 根号が ある 形です。(√a+√b)² を 考えて、√3+√2 の ように はずせる ことが あります。"
+ },
+ {
+  "id": "ka-seisububun",
+  "name": "整数部分",
+  "reading": "せいすうぶぶん",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🧱",
+  "relatedTerms": [
+   "ka-shosububun",
+   "ka-heihokon"
+  ],
+  "description": "実数を こえない 最大の 整数です。√5=2.23… なら 2 です。平方根の 値を 見積もる 問題で よく 使います。"
+ },
+ {
+  "id": "ka-shosububun",
+  "name": "小数部分",
+  "reading": "しょうすうぶぶん",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🔸",
+  "relatedTerms": [
+   "ka-seisububun",
+   "ka-heihokon"
+  ],
+  "description": "ある 数から 整数部分を ひいた 残りです。√5 の 場合は √5−2 です。0 以上 1 未満の 値に なります。"
+ },
+ {
+  "id": "ka-kiyakubunsu",
+  "name": "既約分数",
+  "reading": "きやくぶんすう",
+  "journey": "kazu",
+  "category": "分数と小数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "🎁",
+  "relatedTerms": [
+   "ka-yakubun",
+   "ka-yurisu"
+  ],
+  "description": "分母と 分子に 1 以外の 公約数が なく、それ以上 約分できない 分数です。6/8 を 約分した 3/4 が その 例です。有理数を 表す 形として よく 使います。"
+ },
+ {
+  "id": "ka-kyori",
+  "name": "数直線上の距離",
+  "reading": "すうちょくせんじょうのきょり",
+  "journey": "kazu",
+  "category": "正負の数",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "↔️",
+  "figure": "numline:abs",
+  "relatedTerms": [
+   "ka-zettaichi",
+   "ka-f-abs"
+  ],
+  "description": "数直線上の 2点 A(a)、B(b) の 間の 長さは |a−b| で 表せます。|b−a| と 書いても 同じです。絶対値を 距離として 見る 見方です。"
+ },
+ {
+  "id": "ka-f-abs",
+  "name": "√a²=|a|",
+  "reading": "るーとえーのにじょういこーるえーのぜったいち",
+  "journey": "kazu",
+  "category": "公式を打つ",
+  "difficulty": 3,
+  "grade": "数学Ⅰ",
+  "type": "concept",
+  "emoji": "📝",
+  "relatedTerms": [
+   "ka-zettaichi",
+   "ka-heihokon"
+  ],
+  "description": "a が 正でも 負でも 成り立つ 公式です。a が 負の とき √a²=a と すると まちがいで、たとえば √(−3)²=3 です。根号を はずす ときに 注意します。"
+ },
+ {
+  "id": "ka-yakusunokosu",
+  "name": "約数の個数",
+  "reading": "やくすうのこすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🔢",
+  "relatedTerms": [
+   "ka-soinsubunkai",
+   "ka-yakusunosowa"
+  ],
+  "description": "自然数を 素因数分解して pᵃqᵇ(p、q は ちがう 素数)と なる とき、正の 約数は (a+1)(b+1) 個 あります。12=2²×3 なら 3×2=6個です。"
+ },
+ {
+  "id": "ka-yakusunosowa",
+  "name": "約数の総和",
+  "reading": "やくすうのそうわ",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "➕",
+  "relatedTerms": [
+   "ka-yakusunokosu",
+   "ka-yakusu"
+  ],
+  "description": "正の 約数 すべての 和です。12=2²×3 の 場合、(1+2+4)(1+3)=28 と、素因数ごとの 和を かけて 求められます。"
+ },
+ {
+  "id": "ka-hantei",
+  "name": "倍数の判定法",
+  "reading": "ばいすうのはんていほう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🔍",
+  "relatedTerms": [
+   "ka-baisu",
+   "ka-amari"
+  ],
+  "description": "割り算を しないで 倍数か どうかを 見分ける 方法です。3 の 倍数は 各位の 数の 和が 3 の 倍数、4 の 倍数は 下2けたが 4 の 倍数か どうかで 分かります。"
+ },
+ {
+  "id": "ka-amari",
+  "name": "余りによる分類",
+  "reading": "あまりによるぶんるい",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🗂️",
+  "relatedTerms": [
+   "ka-godoshiki",
+   "ka-heihosu"
+  ],
+  "description": "整数を ある 数で 割った 余りで 分ける 考えかたです。3 で 割れば 3k, 3k+1, 3k+2 の 3種類に なり、すべての 整数に ついて 成り立つ ことの 証明に 使います。"
+ },
+ {
+  "id": "ka-goseisu",
+  "name": "合成数",
+  "reading": "ごうせいすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🧬",
+  "relatedTerms": [
+   "ka-sosu",
+   "ka-soinsubunkai"
+  ],
+  "description": "2 以上の 自然数の うち、素数で ない 数です。4, 6, 8, 9 … の ように、1 と その数 じしん 以外にも 約数を もちます。1 は 素数でも これでも ありません。"
+ },
+ {
+  "id": "ka-sosumugen",
+  "name": "素数の無限性",
+  "reading": "そすうのむげんせい",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🌌",
+  "relatedTerms": [
+   "ka-sosu",
+   "ka-goseisu"
+  ],
+  "description": "素数は 限りなく ある という 事実です。素数が 有限個だと 仮定し、ぜんぶの 積に 1 を たした 数を 考えて 矛盾を 導く 証明が 古代ギリシャから 知られて います。"
+ },
+ {
+  "id": "ka-renzoku",
+  "name": "連続する整数の積",
+  "reading": "れんぞくするせいすうのせき",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "🚃",
+  "relatedTerms": [
+   "ka-amari",
+   "ka-baisu"
+  ],
+  "description": "連続する 2つの 整数の 積は 2 の 倍数、連続する 3つの 整数の 積は 6 の 倍数に なります。n(n+1)(n+2) の ような 式の 証明で よく 使う 性質です。"
+ },
+ {
+  "id": "ka-heihosu",
+  "name": "平方数",
+  "reading": "へいほうすう",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "⏹️",
+  "relatedTerms": [
+   "ka-amari",
+   "ka-heihokon"
+  ],
+  "description": "整数の 2乗で 表せる 数です。0, 1, 4, 9, 16 … が 当たります。4 で 割った 余りが 0 か 1 に しか ならない ことが、整数の 問題で よく 使われます。"
+ },
+ {
+  "id": "ka-godoshiki",
+  "name": "合同式",
+  "reading": "ごうどうしき",
+  "journey": "kazu",
+  "category": "整数と倍数",
+  "difficulty": 3,
+  "grade": "数学A",
+  "type": "concept",
+  "emoji": "≡",
+  "relatedTerms": [
+   "ka-amari",
+   "ka-hantei"
+  ],
+  "description": "a と b を m で 割った 余りが 等しい ことを a≡b (mod m) と 表す 式です。余りの 計算を 短く 書けて、大きな 数の 累乗の 余りを 求めるのに 便利です。"
+ },
+ {
+  "id": "ka-kyosutani",
+  "name": "虚数単位",
+  "reading": "きょすうたんい",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🪄",
+  "figure": "cplane:im",
+  "relatedTerms": [
+   "ka-fukusosu",
+   "ka-f-i2"
+  ],
+  "description": "2乗すると −1 に なる 数で、i と 書きます。実数の 中には ない 新しい 数で、これを 使って 数の 範囲を 複素数まで 広げます。"
+ },
+ {
+  "id": "ka-fukusosu",
+  "name": "複素数",
+  "reading": "ふくそすう",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🌌",
+  "figure": "cplane:z",
+  "relatedTerms": [
+   "ka-kyosutani",
+   "ka-jitsubu"
+  ],
+  "description": "実数 a、b と i を 使って a+bi の 形で 表される 数です。b=0 なら 実数、b≠0 なら 虚数です。2次方程式が いつも 解を もつ ように なります。"
+ },
+ {
+  "id": "ka-f-i2",
+  "name": "i²=−1",
+  "reading": "あいのにじょういこーるまいなすいち",
+  "journey": "kazu",
+  "category": "公式を打つ",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "📝",
+  "relatedTerms": [
+   "ka-kyosutani",
+   "ka-iruijo"
+  ],
+  "description": "虚数単位 i の 決まりを 表す 式です。複素数の 計算では i² が 出たら −1 に 置きかえて 整理します。"
+ },
+ {
+  "id": "ka-jitsubu",
+  "name": "実部",
+  "reading": "じつぶ",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "➡️",
+  "figure": "cplane:re",
+  "relatedTerms": [
+   "ka-kyobu",
+   "ka-fukusosu"
+  ],
+  "description": "複素数 a+bi(a、b は 実数)の a の ことです。3+2i なら 3 です。複素数平面では 横軸の 位置に 当たります。"
+ },
+ {
+  "id": "ka-kyobu",
+  "name": "虚部",
+  "reading": "きょぶ",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "⬆️",
+  "figure": "cplane:im",
+  "relatedTerms": [
+   "ka-jitsubu",
+   "ka-kyosu"
+  ],
+  "description": "複素数 a+bi(a、b は 実数)の b の ことです。3+2i なら 2i ではなく 2 です。これが 0 なら その 複素数は 実数です。"
+ },
+ {
+  "id": "ka-kyosu",
+  "name": "虚数",
+  "reading": "きょすう",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "👻",
+  "relatedTerms": [
+   "ka-junkyosu",
+   "ka-fukusosu"
+  ],
+  "description": "複素数 a+bi の うち、b が 0 でない もの、つまり 実数で ない 数です。2+3i や 5i などが 当たります。"
+ },
+ {
+  "id": "ka-junkyosu",
+  "name": "純虚数",
+  "reading": "じゅんきょすう",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "💠",
+  "relatedTerms": [
+   "ka-kyosu",
+   "ka-kyobu"
+  ],
+  "description": "a+bi(a、b は 実数)で a=0、b≠0 と なる 複素数です。3i や −i の ように、i の 実数倍だけで できて います。"
+ },
+ {
+  "id": "ka-kyoyaku",
+  "name": "共役複素数",
+  "reading": "きょうやくふくそすう",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🪞",
+  "figure": "cplane:conj",
+  "relatedTerms": [
+   "ka-kyoyakuwaseki",
+   "ka-jissuka"
+  ],
+  "description": "複素数 a+bi に 対して、虚部の 符号だけを 変えた a−bi の ことです。z の 上に 横線を 引いて z̄ と 書き、複素数平面では 実軸に ついて 対称な 点です。"
+ },
+ {
+  "id": "ka-sotou",
+  "name": "複素数の相等",
+  "reading": "ふくそすうのそうとう",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🟰",
+  "relatedTerms": [
+   "ka-jitsubu",
+   "ka-kyobu"
+  ],
+  "description": "a、b、c、d が 実数の とき、a+bi=c+di と なるのは a=c かつ b=d の ときです。実部どうし、虚部どうしを 比べて 式を 2つ 作れます。"
+ },
+ {
+  "id": "ka-funoheihokon",
+  "name": "負の数の平方根",
+  "reading": "ふのかずのへいほうこん",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🌗",
+  "relatedTerms": [
+   "ka-heihokonseki",
+   "ka-heihokon"
+  ],
+  "description": "a を 正の 数と すると、−a の 平方根は √a i と −√a i の 2つです。√(−a)=√a i と 決め、−4 の 平方根は ±2i と なります。"
+ },
+ {
+  "id": "ka-shisokufuku",
+  "name": "複素数の四則",
+  "reading": "ふくそすうのしそく",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "➗",
+  "relatedTerms": [
+   "ka-jissuka",
+   "ka-f-i2"
+  ],
+  "description": "たし算・ひき算・かけ算は、i を 文字の ように 計算して i² を −1 に 置きかえます。割り算は 分母の 共役複素数を かけて 計算し、答えも また 複素数です。"
+ },
+ {
+  "id": "ka-jissuka",
+  "name": "分母の実数化",
+  "reading": "ぶんぼのじっすうか",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🧽",
+  "relatedTerms": [
+   "ka-kyoyaku",
+   "ka-yurika"
+  ],
+  "description": "分母が 複素数の とき、分母と 分子に 分母の 共役複素数を かけて 分母を 実数に する ことです。1/(1+i)=(1−i)/2 と なります。"
+ },
+ {
+  "id": "ka-kyoyakuwaseki",
+  "name": "共役な複素数の和と積",
+  "reading": "きょうやくなふくそすうのわとせき",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🤲",
+  "relatedTerms": [
+   "ka-kyoyaku",
+   "ka-fukusosu"
+  ],
+  "description": "a+bi と a−bi を たすと 2a、かけると a²+b² と なり、どちらも 実数です。実数を 係数と する 2次方程式の 虚数の 解は、この 2つの 組に なります。"
+ },
+ {
+  "id": "ka-heihokonseki",
+  "name": "負の数の平方根の積",
+  "reading": "ふのかずのへいほうこんのせき",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "⚠️",
+  "relatedTerms": [
+   "ka-funoheihokon",
+   "ka-f-root"
+  ],
+  "description": "√a√b=√ab は a、b が 正の ときの 公式で、どちらも 負だと 使えません。√(−2)×√(−3) は √2i×√3i=−√6 で、√6 では ありません。"
+ },
+ {
+  "id": "ka-daisho",
+  "name": "虚数の大小",
+  "reading": "きょすうのだいしょう",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🚫",
+  "relatedTerms": [
+   "ka-kyosu",
+   "ka-jissu"
+  ],
+  "description": "虚数には 大小関係を 考えません。3i>2i や i>0 と いった 不等式は 意味を もたず、大小を 比べられるのは 実数どうしだけです。"
+ },
+ {
+  "id": "ka-taikei",
+  "name": "数の体系",
+  "reading": "すうのたいけい",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🪜",
+  "relatedTerms": [
+   "ka-fukusosu",
+   "ka-jissu"
+  ],
+  "description": "自然数 ⊂ 整数 ⊂ 有理数 ⊂ 実数 ⊂ 複素数 と、数の 範囲は 広がります。広げる たびに ひき算・割り算、2乗して 負に なる 数などが 扱える ように なりました。"
+ },
+ {
+  "id": "ka-iruijo",
+  "name": "i の累乗",
+  "reading": "あいのるいじょう",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🔃",
+  "relatedTerms": [
+   "ka-f-i2",
+   "ka-kyosutani"
+  ],
+  "description": "i¹=i、i²=−1、i³=−i、i⁴=1 と なり、4つごとに 同じ 値が くり返します。i¹⁰⁰ は 100 を 4 で 割った 余りが 0 なので 1 です。"
+ },
+ {
+  "id": "ka-sanjokon",
+  "name": "1の3乗根",
+  "reading": "いちのさんじょうこん",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🔺",
+  "relatedTerms": [
+   "ka-omega",
+   "ka-fukusosu"
+  ],
+  "description": "3乗して 1 に なる 数で、1 と (−1±√3 i)/2 の 3つが あります。x³=1 を (x−1)(x²+x+1)=0 と 分けて 求めます。"
+ },
+ {
+  "id": "ka-omega",
+  "name": "ω",
+  "reading": "おめが",
+  "journey": "kazu",
+  "category": "複素数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🌀",
+  "relatedTerms": [
+   "ka-sanjokon",
+   "ka-iruijo"
+  ],
+  "description": "1 の 3乗根の うち 虚数の 一方を 表す 文字です。ω³=1、ω²+ω+1=0 が 成り立ち、もう一方の 虚数の 3乗根は ω² です。"
+ },
+ {
+  "id": "ka-ruijokon",
+  "name": "累乗根",
+  "reading": "るいじょうこん",
+  "journey": "kazu",
+  "category": "平方根と実数",
+  "difficulty": 4,
+  "grade": "数学Ⅱ",
+  "type": "concept",
+  "emoji": "🌱",
+  "relatedTerms": [
+   "ka-murisu",
+   "ka-jissu"
+  ],
+  "description": "n乗すると a に なる 数を a の n乗根と いい、2乗根・3乗根 などを まとめて こう よびます。³√8 = 2 のように 書き、指数では a の 1/n 乗と 同じです。"
+ }
+]

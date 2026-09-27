@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -72,11 +72,18 @@ GAMES = {
                    lead="漢字の読み・四字熟語・ことわざ・文法・古文・漢文・文学史・評論の ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出るよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。4択クイズで 意味の 練習も できるよ。",
                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。漢字の読みの 上級は よみが かくれるよ。思い出して 打ってね。古文単語は むかしの かなづかいを いまの かなづかいで 打つよ。説明は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、国語の ことばが 自然と 身につくよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。"),
+    # フリック数学旅行(けいくん 2026-09-27「おすすめで」+「受験に必要な計算は入れた方がいい」)。ことばは tools/sugaku/terms-<旅>.json → sugaku/terms.js(tools/sugaku/terms_js.py)。
+    #   しくみは sugaku/sugaku.js(SUGAKU。kokugo.js を もとに tools/sugaku/make_sugaku_js.py が 作る。図 = tools/sugaku/fig.js / 計算問題 = tools/sugaku/calc.js)。
+    #   旅は 7つ + マスター。むずかしさは 入門(算数)→ 初級(中学 = 高校受験)→ 中級(数学Ⅰ・A)→ 上級(数学Ⅱ・B・Ⅲ・C = 大学受験)。絵は まだ(届いたら art を 足して hero / logo を True に)
+    "sugaku": dict(name="フリック数学旅行", modes="SUGAKU", kinds=set(), color="#1971c2", hero=False, logo=False,
+                   lead="算数・数学の 用語・公式・定理を、ひらがなで フリック入力。打つと その ことばの 意味と 図が 出るよ。小学校の 算数から はじめて、高校受験・大学受験の 範囲の めやすまで。公式は 読みあげの 形で 打つよ。4択クイズと 計算問題で 受験の 練習も できるよ。",
+                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。「公式を打つ」ことばは a²+b²=c² を「えーのにじょう たす …」のように 読みあげで 打つよ。説明と 計算問題は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。",
+                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、数学の ことばと 図が つながって 見えてくるよ。大学入試センター・文部科学省・各都道府県の 教育委員会とは 関係ありません。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -137,6 +144,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kokugo/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "kokugo" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="kokugo.js?v=%s"></script>' % (ver("terms.js"), ver("kokugo.js")))
+    if g["modes"] == "SUGAKU":  # 数学の コース: 国語と 同じ 形。ことばは terms.js(tools/sugaku/terms-*.json から)、しくみは sugaku.js(make_sugaku_js.py が 作る)
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/sugaku/terms_js.py")], check=True); subprocess.run([_s.executable, str(ROOT / "tools/sugaku/make_sugaku_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "sugaku" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="sugaku.js?v=%s"></script>' % (ver("terms.js"), ver("sugaku.js")))
     # GAME
     out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{PLUG_MODES[g["modes"]] if isinstance(g["modes"], str) else json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
     assert n == 1

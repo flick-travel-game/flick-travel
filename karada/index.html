@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>からだフリック</title>
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
-<link rel="icon" type="image/png" href="favicon.png?v=2">
+<title>フリックからだ旅行</title>
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
+<link rel="icon" type="image/png" href="favicon.png?v=3">
 <link rel="manifest" href="manifest.webmanifest?v=3">
-<meta name="apple-mobile-web-app-title" content="からだフリック">
+<meta name="apple-mobile-web-app-title" content="フリックからだ旅行">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#4fb8ff">
@@ -403,12 +403,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=2" alt="" width="875" height="244" aria-hidden="true">
+      <img class="logo-mark" src="logo-mark2.webp?v=3" alt="" width="144" height="144" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="945" height="230" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">からだフリック</h1>
-    <img class="hero" src="hero.webp" alt="からだフリック。骨・心臓・細胞の 中を 旅する 絵" width="1536" height="813">
+    <h1 class="sr-only">フリックからだ旅行</h1>
+    <img class="hero" src="hero.webp?v=3" alt="フリックからだ旅行。骨・心臓・脳・細胞の 中を 男の子と 犬が 飛んで 旅する 絵" width="1536" height="768">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -530,11 +530,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"karada", name:"からだフリック", modes:["kbone", "korgan", "kcell", "ktsubo"], assets:"../", logo:true, hero:true, dir:"karada/", lead:"骨・筋肉・臓器・からだのしくみ・細胞・ツボを、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、からだの中を旅しよう。", how:"表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、からだの図に📍が立つよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、からだのしくみも自然と覚えられるよ。" };
+const GAME = { id:"karada", name:"フリックからだ旅行", modes:["kbone", "korgan", "kcell", "ktsubo"], assets:"../", logo:true, hero:true, dir:"karada/", lead:"骨・筋肉・臓器・からだのしくみ・細胞・ツボを、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、からだの中を旅しよう。", how:"表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、からだの図に📍が立つよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、からだのしくみも自然と覚えられるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
-                 {id:"uchu", name:"フリック宇宙旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"からだフリック", icon:"🫀", dir:"../flick-travel/karada/"},
+                 {id:"uchu", name:"フリック宇宙旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"フリックからだ旅行", icon:"🫀", dir:"../flick-travel/karada/"},
                  {id:"kabu", name:"株式フリック", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"フリックAI", icon:"🤖", dir:"../flick-travel/ai/"},
                  {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"../flick-travel/eikaiwa/"},
                  {id:"rika", name:"理科フリック", icon:"🔬", dir:"../flick-travel/rika/"},

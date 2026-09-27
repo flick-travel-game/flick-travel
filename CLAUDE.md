@@ -39,6 +39,6 @@
   絵が 届いたら 題名を 切り出して 読み、`build_games.py` の `GAMES`・`index.html` の `SERIES`・speed-king の `src/lib/games.ts` と `flick-url.ts` の `FLICK_SERIES_GAMES` を そろえる。**住所(フォルダ名)は 変えない**
 - 名前は `tools/build_games.py` の `GAMES` と `index.html`(世界)の `<title>`・`GAME`・`SERIES`。ホーム画面の 名前(manifest)は 名前 そのまま(「ゲーム」を 付けない)
 - 料金・申し込みの 案内は **https://kazutomo.app/games に 1つだけ**(`.about-link`)。`about.html` は そこへ 移すだけの ページ(けいくん決定「1」)。ここに 案内を 書きもどさない
-- 絵: 世界(2026-09-26)・歴史(2026-09-27。題名は `tools/rekishi/logo_cut.py`)は 入れた。宇宙は 正方形の 絵(アイコン)だけ 入れた(横長が 届いたら トップの 絵と 題名)。
+- 絵: 世界(2026-09-26)・歴史(2026-09-27。題名は `tools/rekishi/logo_cut.py`)は 入れた。宇宙(2026-09-27。題名は `tools/uchu/logo_cut.py` = GrabCut)も 入れた。
   差しかえたら `art` の `iconv`(アイコン)と `wordv`(題名・トップの 絵)を 上げる(古い 絵を おぼえている 端末のため)
 - ⚠️ 「100マス計算」「百ます計算」の 字を 使わない

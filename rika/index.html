@@ -708,7 +708,7 @@ const TONE = {
 const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: toneFrom("#8a5a2b"), jevents: toneFrom("#5b3fbf"),
-          usolar: toneFrom("#d9650f"), usky: toneFrom("#2b3a8f"), ucos: toneFrom("#5b2b8f"), kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"), ktsubo: toneFrom("#a8552f"),
+          usolar: TONE.orange, usky: TONE.blue, ucos: TONE.purple,  /* 宇宙: けいくん 2026-09-27「このボタンもっと明るい色に」→ 世界と 同じ あかるい 色に */ kbone: toneFrom("#8a6d3b"), korgan: toneFrom("#c9364f"), kcell: toneFrom("#1f8a5b"), ktsubo: toneFrom("#a8552f"),
           rphys: toneFrom("#1f5fbf"), rchem: toneFrom("#b8457a"), rbio: toneFrom("#2e7d32"), rgeo: toneFrom("#8a5a2b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。

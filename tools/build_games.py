@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -56,11 +56,17 @@ GAMES = {
                   lead="クルマ・バイクの 部品と しくみの ことばを、ひらがなで フリック入力。打つと その部品が 何を するのか・しくみ図の どこに あるのかが 出るよ。身近な 部品から はじめて、3級・2級・1級 自動車整備士の 試験範囲の めやすまで。4択クイズと 計算問題で 試験の 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。部品の 説明は 本物の 試験問題では ないので、試験の 勉強には 問題集や 学校の 教科書も 使ってね。部品の 名前と しくみを おぼえる ゲームだよ。実際の 整備は 資格を もつ 人・お店に まかせよう。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、クルマや バイクの 中身が 見えてくるよ。国土交通省・日本自動車整備振興会連合会とは 関係ありません。"),
+    # パティシエフリック(けいくん 2026-09-27)。ことばは tools/patissier/terms-<旅>.json → patissier/terms.js(tools/patissier/terms_js.py)。しくみは patissier/patissier.js(PATISSIER。seibi.js を 写した もの)。
+    #   旅は 材料・生地と焼き菓子・クリーム チョコ あめ・世界のお菓子・和菓子・道具 衛生 栄養。むずかしさは 入門 → 製菓衛生師めやす → 菓子製造技能士 2級めやす → 1級めやす。絵は まだ無い(文字の 題名。届いたら art を 足す)
+    "patissier": dict(name="パティシエフリック", modes="PATISSIER", kinds=set(), color="#d6336c", hero=True, logo=True,
+                      lead="お菓子の 材料・生地・クリーム・世界の お菓子・和菓子・道具と 衛生の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、しくみ図の どこに あるのかが 出るよ。身近な お菓子から はじめて、製菓衛生師・菓子製造技能士 2級・1級の 試験範囲の めやすまで。4択クイズで 試験の 練習も できるよ。",
+                      how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。説明は 本物の 試験問題では ないので、試験の 勉強には 問題集や 学校の 教科書も 使ってね。作りかた(分量・温度・時間)は のせていないよ。火や 刃物を 使うときは おとなと いっしょにね。",
+                      rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、お菓子の ことばと しくみが つながって 見えてくるよ。厚生労働省・都道府県・中央職業能力開発協会とは 関係ありません。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -111,6 +117,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/seibi/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "seibi" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="seibi.js?v=%s"></script>' % (ver("terms.js"), ver("seibi.js")))
+    if g["modes"] == "PATISSIER":  # パティシエの コース: 整備と 同じ 形。ことばは terms.js(tools/patissier/terms-*.json から)、しくみは patissier.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/patissier/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "patissier" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="patissier.js?v=%s"></script>' % (ver("terms.js"), ver("patissier.js")))
     # GAME
     out, n = re.subn(r"const GAME = \{.*?\};", lambda _: f'const GAME = {{ id:"{gid}", name:"{g["name"]}", modes:{PLUG_MODES[g["modes"]] if isinstance(g["modes"], str) else json.dumps(g["modes"])}, assets:"../", logo:{str(g["logo"]).lower()}, hero:{str(g["hero"]).lower()}, dir:"{gid}/", lead:{json.dumps(g.get("lead",""), ensure_ascii=False)}, how:{json.dumps(g.get("how",""), ensure_ascii=False)}, rule:{json.dumps(g.get("rule",""), ensure_ascii=False)} }};', out, count=1, flags=re.S)
     assert n == 1

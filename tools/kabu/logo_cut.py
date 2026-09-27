@@ -1,45 +1,38 @@
 #!/usr/bin/env python3
-"""株式フリック旅行: トップの 絵(けいくんの ChatGPT の 絵)から 題名「株式フリック旅行」を 切りぬく → kabu/logo-word.webp
-    pip install opencv-python-headless scipy pillow
-    python3 tools/kabu/logo_cut.py もとの絵.png kabu/logo-word.webp
-- ほかの ゲームの tools/logo-word-cut.py(色の こい ところを 拾う)は、この 絵では 空や 地図も 色が こいので 使えなかった
-- GrabCut(写真の 切りぬきの 方法)。字の 帯を「たぶん 字」、黒い スマホの ふち・左はしを「背景」に して はじめる
-- 「リ」の 左の 線(地図と 同じ 水色)と「フ」の 内がわの すきまは 絵の 座標で 手で 決めた(絵を 差しかえたら 見なおす)
-⚠️ GrabCut は 毎回 すこし 結果が ちがう(王冠が 入ったり 入らなかったり)。できた 絵は かならず 目で 見る
-⚠️ 大きさを 変えたら tools/build_games.py の kabu の art.word も なおす"""
-import numpy as np, cv2
+"""フリック株式旅行: トップの 絵(けいくんの ChatGPT の 絵 2026-09-27)から 題名を 切りぬく → kabu/logo-word.webp
+    python3 tools/kabu/logo_cut.py もとの絵.png kabu/logo-word.webp 見本.png 0.19,0.745,0.82,0.925 "560,25,700,160;785,25,925,165"
+- GrabCut(tools/karada/logo_cut.py と 同じ)。4つめ = 題名の まわり(わりあい)。5つめ = 字と 決める はこ(; で いくつでも)。黄色の「式」と だいだいの「行」が 背景に まちがわれて 抜けるので はこで 決める
+- 前の 絵(株式フリック旅行)の ときの 切りかたは git の 履歴に ある
+⚠️ 毎回 すこし 結果が ちがう。できた 絵は かならず 目で 見る。大きさを 変えたら build_games.py の kabu の art.word も なおす"""
+import numpy as np, cv2, sys
 from PIL import Image, ImageFilter
 from scipy import ndimage
-import sys
-img = cv2.imread(sys.argv[1]); H0, W0 = img.shape[:2]
-x0,y0,x1,y1 = int(.17*W0), int(.68*H0), int(.82*W0), int(.965*H0)
-crop = img[y0:y1, x0:x1].copy(); h, w = crop.shape[:2]
-hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
-s = hsv[...,1]/255.; v = hsv[...,2]/255.
-white = (v > .88) & (s < .18)
-mask = np.full((h, w), cv2.GC_PR_BGD, np.uint8)
-# 字の 帯(だいたい): 真ん中あたりの 高さ
-band = np.zeros((h,w),bool); band[int(h*.12):int(h*.86), int(w*.04):int(w*.99)] = True
-mask[band] = cv2.GC_PR_FGD
-# 黒っぽい ところ(スマホの ふち)と 左はし(カート・方位磁針)は 背景
-mask[(v < .30) & (s < .45)] = cv2.GC_BGD
-mask[:, :int(w*.035)] = cv2.GC_BGD
-mask[:int(h*.30), :int(w*.13)] = cv2.GC_BGD
-# 「リ」の 左の 線(地図と 同じ 水色なので 背景と まちがえる)は 字 / 「フ」の 内がわの すきまは 背景(絵の 座標で 見て 決めた)
-mask[790-y0:895-y0, 702-x0:717-x0] = cv2.GC_FGD
-mask[828-y0:858-y0, 592-x0:632-x0] = cv2.GC_BGD
-# はしの 帯は 背景
-mask[:4,:] = mask[-4:,:] = cv2.GC_BGD; mask[:, :4] = mask[:, -4:] = cv2.GC_BGD
-bgd = np.zeros((1,65),np.float64); fgd = np.zeros((1,65),np.float64)
-cv2.grabCut(crop, mask, None, bgd, fgd, 8, cv2.GC_INIT_WITH_MASK)
-fg = (mask == cv2.GC_FGD) | (mask == cv2.GC_PR_FGD)
-lab, n = ndimage.label(fg); sizes = ndimage.sum(fg, lab, range(1, n+1))
-keep = np.isin(lab, [i+1 for i, sz in enumerate(sizes) if sz > 1500])
-holes = ndimage.binary_fill_holes(keep) & ~keep  # 小さな 穴(つやの 光)だけ うめる
-hl, hn = ndimage.label(holes); hs = ndimage.sum(holes, hl, range(1, hn+1))
-keep |= np.isin(hl, [i+1 for i, z in enumerate(hs) if z < 400])
-out = Image.fromarray(cv2.cvtColor(crop, cv2.COLOR_BGR2RGB)).convert("RGBA")
+img=cv2.imread(sys.argv[1]); H0,W0=img.shape[:2]
+F=[float(v) for v in sys.argv[4].split(",")]; x0,y0,x1,y1=int(F[0]*W0),int(F[1]*H0),int(F[2]*W0),int(F[3]*H0)
+crop=img[y0:y1,x0:x1].copy(); h,w=crop.shape[:2]
+hsv=cv2.cvtColor(crop,cv2.COLOR_BGR2HSV); s=hsv[...,1]/255.; v=hsv[...,2]/255.
+mask=np.full((h,w),cv2.GC_PR_BGD,np.uint8)
+mask[(s>.55)&(v>.55)]=cv2.GC_PR_FGD
+mask[(v<.35)]=cv2.GC_BGD
+if len(sys.argv)>5:  # 背景と 同じ 色の 字(からだの「ク」)は はこの 中の こい 色を 字と 決める
+  for bx in sys.argv[5].split(';'):  # はこは ; で いくつでも
+    bx0,by0,bx1,by1=[int(t) for t in bx.split(',')]
+    sub=(s[by0:by1,bx0:bx1]>.6)&(v[by0:by1,bx0:bx1]>.55)
+    mask[by0:by1,bx0:bx1][sub]=cv2.GC_FGD
+mask[:3,:]=mask[-3:,:]=cv2.GC_BGD; mask[:,:3]=mask[:,-3:]=cv2.GC_BGD
+bgd=np.zeros((1,65));fgd=np.zeros((1,65))
+cv2.grabCut(crop,mask,None,bgd,fgd,8,cv2.GC_INIT_WITH_MASK)
+fg=(mask==cv2.GC_FGD)|(mask==cv2.GC_PR_FGD)
+fg=ndimage.binary_opening(fg,np.ones((3,3)))
+lab,n=ndimage.label(fg); sz=ndimage.sum(fg,lab,range(1,n+1))
+for i,z in enumerate(sz):
+  if z>800:
+    sl=ndimage.find_objects((lab==i+1).astype(int))[0]; print(int(z),sl[1].start,sl[1].stop,sl[0].start,sl[0].stop)
+keep=np.isin(lab,[i+1 for i,z in enumerate(sz) if z>1500])
+holes=ndimage.binary_fill_holes(keep)&~keep; hl,hn=ndimage.label(holes); hs=ndimage.sum(holes,hl,range(1,hn+1))
+keep|=np.isin(hl,[i+1 for i,z in enumerate(hs) if z<400])
+out=Image.fromarray(cv2.cvtColor(crop,cv2.COLOR_BGR2RGB)).convert("RGBA")
 out.putalpha(Image.fromarray((keep*255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(0.8)))
-ys, xs = np.nonzero(keep); out = out.crop((xs.min()-3, ys.min()-3, xs.max()+4, ys.max()+4))
+ys,xs=np.nonzero(keep); out=out.crop((xs.min()-3,ys.min()-3,xs.max()+4,ys.max()+4))
 out.save(sys.argv[2],"WEBP",quality=95,method=6); print(out.size)
-
+bg=Image.new("RGB",out.size,(255,255,255)); bg.paste(out,(0,0),out); bg.save(sys.argv[3])

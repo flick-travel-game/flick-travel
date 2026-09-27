@@ -65,8 +65,10 @@ GAMES = {
                       rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、お菓子の ことばと しくみが つながって 見えてくるよ。厚生労働省・都道府県・中央職業能力開発協会とは 関係ありません。"),
     # フリック国語旅行(けいくん 2026-09-27「フリック国語旅行 / 3段でOK / 古文・漢文を入れる / 上級は よみを かくす / 年表」)。ことばは tools/kokugo/terms-<旅>.json → kokugo/terms.js(tools/kokugo/terms_js.py)。
     #   しくみは kokugo/kokugo.js(KOKUGO。patissier.js を 写した もの)。旅は 9つ + マスター。むずかしさは 入門(中学の基本)→ 中級(高校受験)→ 上級(大学受験)。
-    #   ⚠️ 絵が まだ 無いので hero・logo は False(題名は 文字)。絵が 届いたら art を 足す
-    "kokugo": dict(name="フリック国語旅行", modes="KOKUGO", kinds=set(), color="#3b5bdb", hero=False, logo=False,
+    #   絵(2026-09-27): アイコン = 四角い 絵を 縮めた もの / 題名 = トップの 絵から tools/kokugo/logo_cut.py で 切りぬいた。
+    #   ⚠️ トップの 絵は まだ 入れていない(hero=False。絵の 中の 漢文の 読み「がくして」と 文法の「目的語」が まちがい → けいくんに 直してもらう)
+    "kokugo": dict(name="フリック国語旅行", modes="KOKUGO", kinds=set(), color="#3b5bdb", hero=False, logo=True,
+                   art=dict(word=(881, 186), hero=(1536, 1024), alt="フリック国語旅行", iconv=3, wordv=3),
                    lead="漢字の読み・四字熟語・ことわざ・文法・古文・漢文・文学史・評論の ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出るよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。4択クイズで 意味の 練習も できるよ。",
                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。漢字の読みの 上級は よみが かくれるよ。思い出して 打ってね。古文単語は むかしの かなづかいを いまの かなづかいで 打つよ。説明は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、国語の ことばが 自然と 身につくよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。"),
@@ -105,6 +107,8 @@ def build(gid, g):
         out, n = re.subn(r'\s*<img class="hero" src="hero.webp"[^>]*>', "", out); assert n == 1
         out, n = re.subn(r'<img class="logo-mark" src="logo-mark2.webp"[^>]*>\s*<img class="logo-word" src="logo-word.webp"[^>]*>',
                          lambda _: '<span class="logo-text">%s</span>' % g["name"], out); assert n == 1
+    if art and not g["hero"]:  # 題名・アイコンは あるが トップの 絵は まだ 無い(国語): 無い 絵を 読みにいかない
+        out, n = re.subn(r'\s*<img class="hero" [^>]*>', "", out); assert n == 1
     out = out.replace('<script src="photos.js"></script>', '<script src="../photos.js"></script>')
     out = out.replace('<img id="map-img" src="world-map-color.jpg"', '<img id="map-img" src="../world-map-color.jpg"')  # 地図の 絵は 世界の フォルダに ある
     out = out.replace('<h1 class="sr-only">フリック世界旅行</h1>', f'<h1 class="sr-only">{g["name"]}</h1>')

@@ -1,0 +1,902 @@
+[
+  {
+    "id": "kn-hakubun",
+    "name": "白文",
+    "reading": "はくぶん",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📜",
+    "relatedTerms": [
+      "kn-kakikudashi",
+      "kn-kundoku"
+    ],
+    "description": "返り点も 送り仮名も 付いていない、漢字だけの もとの 文です。これに 印を 付けて 日本語として 読んでいきます。"
+  },
+  {
+    "id": "kn-kundoku",
+    "name": "訓読",
+    "reading": "くんどく",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📖",
+    "relatedTerms": [
+      "kn-hakubun",
+      "kn-kaeriten"
+    ],
+    "description": "中国の 文を、返り点や 送り仮名を たよりに 日本語の 語順で 読む ことです。昔の 日本人が 生みだした 読みかたです。"
+  },
+  {
+    "id": "kn-kakikudashi",
+    "name": "書き下し文",
+    "reading": "かきくだしぶん",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "✍️",
+    "relatedTerms": [
+      "kn-hakubun",
+      "kn-okurigana"
+    ],
+    "description": "訓読した とおりに、漢字と かなで 書き直した 文です。送り仮名や 助詞は ふつう 歴史的仮名遣いの ひらがなで 書きます。"
+  },
+  {
+    "id": "kn-kaeriten",
+    "name": "返り点",
+    "reading": "かえりてん",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "↩️",
+    "relatedTerms": [
+      "kn-reten",
+      "kn-ichiniten"
+    ],
+    "description": "下の 字から 上の 字へ 戻って 読む 順番を 示す 印です。レ点・一二点・上下点 などが あります。"
+  },
+  {
+    "id": "kn-reten",
+    "name": "レ点",
+    "reading": "れてん",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "✔️",
+    "relatedTerms": [
+      "kn-kaeriten",
+      "kn-ichireten"
+    ],
+    "description": "すぐ 下の 1字を 先に 読み、そのあと 1字 上へ 戻る ための 印です。返り点の 中で いちばん よく 見ます。"
+  },
+  {
+    "id": "kn-ichiniten",
+    "name": "一二点",
+    "reading": "いちにてん",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔢",
+    "relatedTerms": [
+      "kn-jogeten",
+      "kn-kaeriten"
+    ],
+    "description": "2字 以上 はなれた 上の 字へ 戻る ときの 印です。「一」の 付いた 字を 読んでから「二」の 字へ 戻ります。"
+  },
+  {
+    "id": "kn-jogeten",
+    "name": "上下点",
+    "reading": "じょうげてん",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⬆️",
+    "relatedTerms": [
+      "kn-ichiniten",
+      "kn-kootsuten"
+    ],
+    "description": "一二点を あいだに はさんで、さらに 上へ 戻る ときに 使う 印です。上・中・下の 順に 読みます。"
+  },
+  {
+    "id": "kn-okurigana",
+    "name": "送り仮名",
+    "reading": "おくりがな",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔤",
+    "relatedTerms": [
+      "kn-kakikudashi",
+      "kn-kundoku"
+    ],
+    "description": "漢字の 右下に 小さく 付ける カタカナです。活用語尾や 助詞を 補って、日本語として 読めるように します。"
+  },
+  {
+    "id": "kn-okiji",
+    "name": "置き字",
+    "reading": "おきじ",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🫥",
+    "relatedTerms": [
+      "kn-hakubun",
+      "kn-iyasen"
+    ],
+    "description": "文の 中に あっても 訓読では 読まない 字です。「而・於・于・矣」などが あり、書き下し文にも 書きません。"
+  },
+  {
+    "id": "kn-saidokumoji",
+    "name": "再読文字",
+    "reading": "さいどくもじ",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔁",
+    "relatedTerms": [
+      "kn-imada",
+      "kn-masaniyuku"
+    ],
+    "description": "1つの 字を 二度 読む 特別な 字です。「未・将・当・宜・須・猶・盍」などが あり、二度めは 返り点に 従って 読みます。"
+  },
+  {
+    "id": "kn-kuho",
+    "name": "句法",
+    "reading": "くほう",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧩",
+    "relatedTerms": [
+      "kn-saidokumoji",
+      "kn-ajishiran"
+    ],
+    "description": "否定・反語・使役・受身 など、決まった 字の 組み合わせで 意味を 表す 文の 型です。形ごと おぼえると 読みが 速く なります。"
+  },
+  {
+    "id": "kn-kanshi",
+    "name": "漢詩",
+    "reading": "かんし",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🏯",
+    "relatedTerms": [
+      "kn-hakubun",
+      "kn-kootsuten"
+    ],
+    "description": "中国の 古い 形式の 詩です。4句の 絶句と 8句の 律詩が 代表で、1句が 5字なら 五言、7字なら 七言と 言います。"
+  },
+  {
+    "id": "kn-imada",
+    "name": "未だ帰らず",
+    "reading": "いまだかえらず",
+    "journey": "kanbun",
+    "category": "再読文字",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⏳",
+    "relatedTerms": [
+      "kn-saidokumoji",
+      "kn-masaniyuku"
+    ],
+    "description": "白文は「未帰」。再読文字「未」を 使った 否定で、「まだ 帰っていない」という 意味です。"
+  },
+  {
+    "id": "kn-masaniyuku",
+    "name": "将に行かんとす",
+    "reading": "まさにゆかんとす",
+    "journey": "kanbun",
+    "category": "再読文字",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚶",
+    "relatedTerms": [
+      "kn-imada",
+      "kn-masanimanabu"
+    ],
+    "description": "白文は「将行」。再読文字「将」で、「今にも 行こうと している」という 意味です。「且」も 同じように 読みます。"
+  },
+  {
+    "id": "kn-masanimanabu",
+    "name": "当に学ぶべし",
+    "reading": "まさにまなぶべし",
+    "journey": "kanbun",
+    "category": "再読文字",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📚",
+    "relatedTerms": [
+      "kn-yoroshiku",
+      "kn-subekaraku"
+    ],
+    "description": "白文は「当学」。再読文字「当」で、「当然 学ぶ べきだ」という 意味です。「きっと 〜だろう」と 推量に なる ことも あります。"
+  },
+  {
+    "id": "kn-manabazu",
+    "name": "学ばず",
+    "reading": "まなばず",
+    "journey": "kanbun",
+    "category": "否定の句法",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚫",
+    "relatedTerms": [
+      "kn-shirazarunashi",
+      "kn-shiruatawazu"
+    ],
+    "description": "白文は「不学」。「不」を 使った 否定で、「学ばない」という 意味です。「不」は 書き下し文では ひらがなで 書きます。"
+  },
+  {
+    "id": "kn-iwaku",
+    "name": "曰く",
+    "reading": "いわく",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🗣️",
+    "relatedTerms": [
+      "kn-yueni",
+      "kn-omoeraku"
+    ],
+    "description": "「言うことには」という 意味で、人の 言葉を 引く ときに 使います。論語では「子曰く」の 形で 孔子の 言葉が 始まります。"
+  },
+  {
+    "id": "kn-yueni",
+    "name": "故に",
+    "reading": "ゆえに",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "➡️",
+    "relatedTerms": [
+      "kn-yuen",
+      "kn-iwaku"
+    ],
+    "description": "「だから・それで」という 意味で、前の ことを 理由として あとの ことを 述べます。名詞として「理由」の 意味にも なります。"
+  },
+  {
+    "id": "kn-nanzo",
+    "name": "何ぞ",
+    "reading": "なんぞ",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "❓",
+    "relatedTerms": [
+      "kn-ajishiran",
+      "kn-nanzokaerazaru"
+    ],
+    "description": "「どうして」という 意味で、疑問にも 反語にも なります。文末が「〜ん(や)」なら 反語の ことが 多いです。"
+  },
+  {
+    "id": "kn-iedomo",
+    "name": "雖も",
+    "reading": "いえども",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🤝",
+    "relatedTerms": [
+      "kn-moshikaeraba",
+      "kn-iyashikumo"
+    ],
+    "description": "「〜だとしても」「〜だけれども」という 意味です。仮定にも 逆接の 確定にも なるので、前後から 見分けます。"
+  },
+  {
+    "id": "kn-yoroshiku",
+    "name": "宜しく学ぶべし",
+    "reading": "よろしくまなぶべし",
+    "journey": "kanbun",
+    "category": "再読文字",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👍",
+    "relatedTerms": [
+      "kn-masanimanabu",
+      "kn-subekaraku"
+    ],
+    "description": "白文は「宜学」。再読文字「宜」で、「学ぶのが よい」という 意味です。すすめる 気持ちを 表します。"
+  },
+  {
+    "id": "kn-subekaraku",
+    "name": "須らく学ぶべし",
+    "reading": "すべからくまなぶべし",
+    "journey": "kanbun",
+    "category": "再読文字",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "❗",
+    "relatedTerms": [
+      "kn-yoroshiku",
+      "kn-masanimanabu"
+    ],
+    "description": "白文は「須学」。再読文字「須」で、「ぜひ 学ぶ 必要が ある」という 意味です。「すべて」の 意味では ありません。"
+  },
+  {
+    "id": "kn-naomizu",
+    "name": "猶ほ水のごとし",
+    "reading": "なおみずのごとし",
+    "journey": "kanbun",
+    "category": "再読文字",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💧",
+    "relatedTerms": [
+      "kn-mata",
+      "kn-iwanya"
+    ],
+    "description": "白文は「猶水」。再読文字「猶」で、「ちょうど 水の ようだ」という たとえを 表します。「由」も 同じ 働きを します。"
+  },
+  {
+    "id": "kn-hitoshite",
+    "name": "人をして行かしむ",
+    "reading": "ひとをしてゆかしむ",
+    "journey": "kanbun",
+    "category": "使役・受身",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👉",
+    "relatedTerms": [
+      "kn-warawaru",
+      "kn-warautokoro"
+    ],
+    "description": "白文は「使人行」。使役の 句法で、「人に 行かせる」という 意味です。「使」の ほか「令・教・遣」も 使います。"
+  },
+  {
+    "id": "kn-warawaru",
+    "name": "笑はる",
+    "reading": "わらわる",
+    "journey": "kanbun",
+    "category": "使役・受身",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "😅",
+    "relatedTerms": [
+      "kn-warautokoro",
+      "kn-hitoshite"
+    ],
+    "description": "白文は「見笑」。「見」を 使った 受身で、「笑われる」という 意味です。「被・為・所」なども 受身を 表します。"
+  },
+  {
+    "id": "kn-ajishiran",
+    "name": "豈に知らんや",
+    "reading": "あにしらんや",
+    "journey": "kanbun",
+    "category": "疑問・反語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🙅",
+    "relatedTerms": [
+      "kn-nanzo",
+      "kn-izukunzoshiran"
+    ],
+    "description": "白文は「豈知」。反語の 句法で、「どうして 知っていようか、いや 知らない」という 意味です。"
+  },
+  {
+    "id": "kn-izukuniaru",
+    "name": "安くにか在る",
+    "reading": "いずくにかある",
+    "journey": "kanbun",
+    "category": "疑問・反語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗺️",
+    "relatedTerms": [
+      "kn-izukunzoshiran",
+      "kn-nanzo"
+    ],
+    "description": "白文は「安在」。疑問の 句法で、「どこに あるのか」と 場所を たずねます。「安」は 読みかたで 意味が 変わります。"
+  },
+  {
+    "id": "kn-shirazarunashi",
+    "name": "知らざる無し",
+    "reading": "しらざるなし",
+    "journey": "kanbun",
+    "category": "否定の句法",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💯",
+    "relatedTerms": [
+      "kn-manabazu",
+      "kn-yukazarubekarazu"
+    ],
+    "description": "白文は「無不知」。二重否定の 句法で、「知らない ものは ない」、つまり「何でも 知っている」という 強い 肯定です。"
+  },
+  {
+    "id": "kn-tadahitori",
+    "name": "唯だ一人のみ",
+    "reading": "ただひとりのみ",
+    "journey": "kanbun",
+    "category": "そのほかの句法",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "☝️",
+    "relatedTerms": [
+      "kn-nomi",
+      "kn-hitoriware"
+    ],
+    "description": "白文は「唯一人」。限定の 句法で、「たった 一人だけだ」という 意味です。「唯・只・惟」などを 使います。"
+  },
+  {
+    "id": "kn-moshikaeraba",
+    "name": "若し帰らば",
+    "reading": "もしかえらば",
+    "journey": "kanbun",
+    "category": "仮定・比較",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔀",
+    "relatedTerms": [
+      "kn-iyashikumo",
+      "kn-iedomo"
+    ],
+    "description": "白文は「若帰」。仮定の 句法で、「もし 帰るなら」という 意味です。「如・若」は 読みかたで 意味が 変わる 字です。"
+  },
+  {
+    "id": "kn-torayorimo",
+    "name": "虎よりも猛し",
+    "reading": "とらよりもたけし",
+    "journey": "kanbun",
+    "category": "仮定・比較",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🐯",
+    "relatedTerms": [
+      "kn-manabunishikazu",
+      "kn-naomizu"
+    ],
+    "description": "白文は「猛於虎」。置き字「於」を 使った 比較で、「虎よりも おそろしい」という 意味です。"
+  },
+  {
+    "id": "kn-tanoshikarazuya",
+    "name": "亦た楽しからずや",
+    "reading": "またたのしからずや",
+    "journey": "kanbun",
+    "category": "そのほかの句法",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "😊",
+    "relatedTerms": [
+      "kn-negawakuwa",
+      "kn-iwanya"
+    ],
+    "description": "白文は「不亦楽乎」。詠嘆の 句法で、「なんと 楽しい ことではないか」という 意味です。論語の 最初の 章に 出てきます。"
+  },
+  {
+    "id": "kn-yuen",
+    "name": "所以",
+    "reading": "ゆえん",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔑",
+    "relatedTerms": [
+      "kn-yueni",
+      "kn-iwayuru"
+    ],
+    "description": "「理由・わけ」や「方法・手段」を 表す 語です。いまの 日本語でも「人の 人たる 〜」のように 使われます。"
+  },
+  {
+    "id": "kn-kedashi",
+    "name": "蓋し",
+    "reading": "けだし",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🤔",
+    "relatedTerms": [
+      "kn-omoeraku",
+      "kn-sunawachi"
+    ],
+    "description": "「思うに・おそらく」という 意味で、自分の 考えを 述べる ときに 文の 頭に 置きます。"
+  },
+  {
+    "id": "kn-sunawachi",
+    "name": "乃ち",
+    "reading": "すなわち",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⚡",
+    "relatedTerms": [
+      "kn-tsuini",
+      "kn-kedashi"
+    ],
+    "description": "「そこで・なんと」という 意味です。同じ 読みの 字に「則・即・便」も あり、字ごとに 意味が 少しずつ ちがいます。"
+  },
+  {
+    "id": "kn-tsuini",
+    "name": "遂に",
+    "reading": "ついに",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏁",
+    "relatedTerms": [
+      "kn-sunawachi",
+      "kn-katsute"
+    ],
+    "description": "「そのまま・とうとう」という 意味で、ことの なりゆきの 結果を 表します。"
+  },
+  {
+    "id": "kn-katsute",
+    "name": "嘗て",
+    "reading": "かつて",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🕰️",
+    "relatedTerms": [
+      "kn-tsuini",
+      "kn-katsu"
+    ],
+    "description": "「以前に・これまでに」という 意味です。否定と いっしょに 使うと「一度も 〜ない」と なります。"
+  },
+  {
+    "id": "kn-katsu",
+    "name": "且つ",
+    "reading": "かつ",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "➕",
+    "relatedTerms": [
+      "kn-katsute",
+      "kn-masaniyuku"
+    ],
+    "description": "「そのうえ・さらに」と 付け加える 語です。再読文字として「今にも 〜しようと する」の 意味にも なります。"
+  },
+  {
+    "id": "kn-mata",
+    "name": "亦",
+    "reading": "また",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "➕",
+    "relatedTerms": [
+      "kn-naomizu",
+      "kn-tanoshikarazuya"
+    ],
+    "description": "「〜も 同じく」と いう 意味の 語です。『論語』の「亦た説ばしからずや」の ように、前と 同じ ように〜だと 言う ときに 使います。"
+  },
+  {
+    "id": "kn-ichireten",
+    "name": "一レ点",
+    "reading": "いちれてん",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔣",
+    "relatedTerms": [
+      "kn-reten",
+      "kn-ichiniten"
+    ],
+    "description": "レ点と 一点が 1字に 重なった 印です。まず レ点に 従って 1字 戻り、そのあと 二点の 字へ 戻ります。"
+  },
+  {
+    "id": "kn-nanzokaerazaru",
+    "name": "盍ぞ帰らざる",
+    "reading": "なんぞかえらざる",
+    "journey": "kanbun",
+    "category": "再読文字",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏠",
+    "relatedTerms": [
+      "kn-saidokumoji",
+      "kn-nanzo"
+    ],
+    "description": "白文は「盍帰」。再読文字「盍」で、「どうして 帰らないのか、帰れば よい」と すすめる 意味です。「何不」を 縮めた 字です。"
+  },
+  {
+    "id": "kn-tsuniniwa",
+    "name": "常には得ず",
+    "reading": "つねにはえず",
+    "journey": "kanbun",
+    "category": "否定の句法",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔸",
+    "relatedTerms": [
+      "kn-tsunieazu",
+      "kn-manabazu"
+    ],
+    "description": "白文は「不常得」。部分否定で、「いつも 手に入る わけでは ない」という 意味です。「不」が 副詞より 上に あります。"
+  },
+  {
+    "id": "kn-tsunieazu",
+    "name": "常に得ず",
+    "reading": "つねにえず",
+    "journey": "kanbun",
+    "category": "否定の句法",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔹",
+    "relatedTerms": [
+      "kn-tsuniniwa",
+      "kn-manabazu"
+    ],
+    "description": "白文は「常不得」。全部否定で、「いつも 手に入らない」という 意味です。副詞が「不」より 上に あります。"
+  },
+  {
+    "id": "kn-warautokoro",
+    "name": "人の笑ふ所と為る",
+    "reading": "ひとのわらうところとなる",
+    "journey": "kanbun",
+    "category": "使役・受身",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎭",
+    "relatedTerms": [
+      "kn-warawaru",
+      "kn-hitoshite"
+    ],
+    "description": "白文は「為人所笑」。「為A所B」の 形の 受身で、「人に 笑われる」という 意味です。"
+  },
+  {
+    "id": "kn-iyashikumo",
+    "name": "苟くも過ち有らば",
+    "reading": "いやしくもあやまちあらば",
+    "journey": "kanbun",
+    "category": "仮定・比較",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⚠️",
+    "relatedTerms": [
+      "kn-moshikaeraba",
+      "kn-iedomo"
+    ],
+    "description": "白文は「苟有過」。仮定の 句法で、「もしも 過ちが あるなら」という 意味です。"
+  },
+  {
+    "id": "kn-hitoriware",
+    "name": "独り我のみならず",
+    "reading": "ひとりわれのみならず",
+    "journey": "kanbun",
+    "category": "そのほかの句法",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👥",
+    "relatedTerms": [
+      "kn-tadahitori",
+      "kn-nomi"
+    ],
+    "description": "白文は「不独我」。累加の 句法で、「ただ 自分だけでは なく(ほかの 人も)」という 意味です。"
+  },
+  {
+    "id": "kn-iwanya",
+    "name": "況んや人をや",
+    "reading": "いわんやひとをや",
+    "journey": "kanbun",
+    "category": "そのほかの句法",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📈",
+    "relatedTerms": [
+      "kn-naomizu",
+      "kn-ajishiran"
+    ],
+    "description": "白文は「況人乎」。抑揚の 句法で、「まして 人なら なおさらだ」という 意味です。前に「A猶B」が 来る 形が 多いです。"
+  },
+  {
+    "id": "kn-manabunishikazu",
+    "name": "学ぶに如かず",
+    "reading": "まなぶにしかず",
+    "journey": "kanbun",
+    "category": "仮定・比較",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🥇",
+    "relatedTerms": [
+      "kn-torayorimo",
+      "kn-mata"
+    ],
+    "description": "白文は「不如学」。比較の 句法で、「学ぶ ことに およぶ ものは ない」、つまり「学ぶのが いちばんだ」という 意味です。"
+  },
+  {
+    "id": "kn-izukunzoshiran",
+    "name": "安くんぞ知らんや",
+    "reading": "いずくんぞしらんや",
+    "journey": "kanbun",
+    "category": "疑問・反語",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌀",
+    "relatedTerms": [
+      "kn-izukuniaru",
+      "kn-ajishiran"
+    ],
+    "description": "白文は「安知」。反語の 句法で、「どうして 知ろうか、いや 知らない」という 意味です。「焉・悪」も 同じ 働きを します。"
+  },
+  {
+    "id": "kn-shiruatawazu",
+    "name": "知る能はず",
+    "reading": "しるあたわず",
+    "journey": "kanbun",
+    "category": "否定の句法",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🙇",
+    "relatedTerms": [
+      "kn-manabazu",
+      "kn-yukazarubekarazu"
+    ],
+    "description": "白文は「不能知」。不可能を 表す 否定で、「知る ことが できない」という 意味です。"
+  },
+  {
+    "id": "kn-yukazarubekarazu",
+    "name": "行かざるべからず",
+    "reading": "ゆかざるべからず",
+    "journey": "kanbun",
+    "category": "否定の句法",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔒",
+    "relatedTerms": [
+      "kn-shirazarunashi",
+      "kn-shiruatawazu"
+    ],
+    "description": "白文は「不可不行」。二重否定の 句法で、「行かない わけには いかない」、つまり「行かなければ ならない」という 意味です。"
+  },
+  {
+    "id": "kn-negawakuwa",
+    "name": "願はくは之を聞かん",
+    "reading": "ねがわくはこれをきかん",
+    "journey": "kanbun",
+    "category": "そのほかの句法",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🙏",
+    "relatedTerms": [
+      "kn-tanoshikarazuya",
+      "kn-hitoshite"
+    ],
+    "description": "白文は「願聞之」。願望の 句法で、「どうか それを 聞かせて ほしい」という 意味です。「請」も 似た 働きを します。"
+  },
+  {
+    "id": "kn-nomi",
+    "name": "耳",
+    "reading": "のみ",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👂",
+    "relatedTerms": [
+      "kn-tadahitori",
+      "kn-hitoriware"
+    ],
+    "description": "文末に 置いて「〜だけだ」と 限定する 字です。「已・爾・而已」も 同じように 使います。"
+  },
+  {
+    "id": "kn-shuyu",
+    "name": "須臾",
+    "reading": "しゅゆ",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏱️",
+    "relatedTerms": [
+      "kn-subekaraku",
+      "kn-katsute"
+    ],
+    "description": "「少しの あいだ・しばらく」という 意味です。「須」は 再読文字でも あるので、この 熟語の ときと 見分けます。"
+  },
+  {
+    "id": "kn-gotoni",
+    "name": "毎",
+    "reading": "ごとに",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔄",
+    "relatedTerms": [
+      "kn-tsuniniwa",
+      "kn-katsute"
+    ],
+    "description": "動詞の 上に 置いて「〜する たびに」という 意味を 表します。いまの「毎日」と 同じ 字です。"
+  },
+  {
+    "id": "kn-iyasen",
+    "name": "焉",
+    "reading": "いずくんぞ",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌫️",
+    "relatedTerms": [
+      "kn-izukunzoshiran",
+      "kn-okiji"
+    ],
+    "description": "文の 頭では「どうして」と 反語・疑問を 表します。文末に あると 読まない 置き字に なるので、置き場所で 見分けます。"
+  },
+  {
+    "id": "kn-nakanzuku",
+    "name": "就中",
+    "reading": "なかんずく",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎯",
+    "relatedTerms": [
+      "kn-tadahitori",
+      "kn-iwayuru"
+    ],
+    "description": "「その 中でも とりわけ」という 意味です。いまの 日本語でも 改まった 文で 使われます。"
+  },
+  {
+    "id": "kn-omoeraku",
+    "name": "以為",
+    "reading": "おもえらく",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💭",
+    "relatedTerms": [
+      "kn-kedashi",
+      "kn-iwaku"
+    ],
+    "description": "「思うことには・〜と 思う」という 意味で、心の 中の 考えを 引きます。「以て為す」と 二字に 分けて 読む 場合も あります。"
+  },
+  {
+    "id": "kn-iwayuru",
+    "name": "所謂",
+    "reading": "いわゆる",
+    "journey": "kanbun",
+    "category": "重要語",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💬",
+    "relatedTerms": [
+      "kn-yuen",
+      "kn-nakanzuku"
+    ],
+    "description": "「世間で 言う・よく 言われる」という 意味です。いまも「〜の 〜」の 形で よく 使う 言葉です。"
+  },
+  {
+    "id": "kn-kootsuten",
+    "name": "甲乙点",
+    "reading": "こうおつてん",
+    "journey": "kanbun",
+    "category": "漢文の用語",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🈴",
+    "relatedTerms": [
+      "kn-jogeten",
+      "kn-ichiniten"
+    ],
+    "description": "上下点を あいだに はさんで、さらに 上へ 戻る ときの 印です。甲・乙・丙の 順に 読みます。"
+  }
+]

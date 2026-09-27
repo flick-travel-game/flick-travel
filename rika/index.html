@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>理科フリック</title>
-<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2">
-<link rel="icon" type="image/png" href="../favicon.png?v=2">
+<title>フリック理科旅行</title>
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
+<link rel="icon" type="image/png" href="favicon.png?v=3">
 <link rel="manifest" href="manifest.webmanifest?v=3">
-<meta name="apple-mobile-web-app-title" content="理科フリック">
+<meta name="apple-mobile-web-app-title" content="フリック理科旅行">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#4fb8ff">
@@ -403,10 +403,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <span class="logo-text">理科フリック</span>
+      <img class="logo-mark" src="logo-mark2.webp?v=3" alt="" width="144" height="144" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="738" height="142" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">理科フリック</h1>
+    <h1 class="sr-only">フリック理科旅行</h1>
+    <img class="hero" src="hero.webp?v=3" alt="フリック理科旅行。物理・化学・生物・地学の 看板が ならぶ 世界を 女の子と 犬が 飛んで 旅する 絵" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -528,14 +530,14 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"rika", name:"理科フリック", modes:["rphys", "rchem", "rbio", "rgeo"], assets:"../", logo:false, hero:false, dir:"rika/", lead:"物理・化学・生物・地学のことばを、ひらがなでどれだけ速く打てるか。小学校のことばから はじめて、中学校(高校受験)・高校(大学受験)まで。10問のトータルタイムで勝負しながら、理科の旅に出よう。", how:"表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん(小学校のことば)。先に進むほど 中学校・高校のことばになるよ。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、周期表や 理科の地図に📍が立つよ。星や宇宙は 宇宙フリック旅行、人の体や細胞は からだフリック旅行で あそべるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、理科のことばも自然と覚えられるよ。" };
+const GAME = { id:"rika", name:"フリック理科旅行", modes:["rphys", "rchem", "rbio", "rgeo"], assets:"../", logo:true, hero:true, dir:"rika/", lead:"物理・化学・生物・地学のことばを、ひらがなでどれだけ速く打てるか。小学校のことばから はじめて、中学校(高校受験)・高校(大学受験)まで。10問のトータルタイムで勝負しながら、理科の旅に出よう。", how:"表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん(小学校のことば)。先に進むほど 中学校・高校のことばになるよ。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、周期表や 理科の地図に📍が立つよ。星や宇宙は 宇宙フリック旅行、人の体や細胞は からだフリック旅行で あそべるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、理科のことばも自然と覚えられるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
                  {id:"uchu", name:"フリック宇宙旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"フリックからだ旅行", icon:"🫀", dir:"../flick-travel/karada/"},
                  {id:"kabu", name:"フリック株式旅行", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"フリックAI旅行", icon:"🤖", dir:"../flick-travel/ai/"},
                  {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"../flick-travel/eikaiwa/"},
-                 {id:"rika", name:"理科フリック", icon:"🔬", dir:"../flick-travel/rika/"},
+                 {id:"rika", name:"フリック理科旅行", icon:"🔬", dir:"../flick-travel/rika/"},
                  {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"../flick-travel/seibi/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
@@ -709,7 +711,7 @@ const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: TONE.orange, jevents: TONE.blue,  /* 歴史: けいくん 2026-09-27「1」= あかるい 色に */
           usolar: TONE.orange, usky: TONE.blue, ucos: TONE.purple,  /* 宇宙: けいくん 2026-09-27「このボタンもっと明るい色に」→ 世界と 同じ あかるい 色に */ kbone: TONE.orange, korgan: TONE.pink, kcell: TONE.green, ktsubo: TONE.purple,  /* からだ: 同じく あかるい 色に */
-          rphys: toneFrom("#1f5fbf"), rchem: toneFrom("#b8457a"), rbio: toneFrom("#2e7d32"), rgeo: toneFrom("#8a5a2b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
+          rphys: TONE.blue, rchem: TONE.pink, rbio: TONE.green, rgeo: TONE.orange },  /* 理科: あかるい 色(2026-09-27) */  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */

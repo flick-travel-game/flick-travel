@@ -537,7 +537,7 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
                  {id:"uchu", name:"フリック宇宙旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"フリックからだ旅行", icon:"🫀", dir:"../flick-travel/karada/"},
                  {id:"kabu", name:"フリック株式旅行", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"フリックAI旅行", icon:"🤖", dir:"../flick-travel/ai/"},
                  {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"../flick-travel/eikaiwa/"},
-                 {id:"rika", name:"理科フリック", icon:"🔬", dir:"../flick-travel/rika/"},
+                 {id:"rika", name:"フリック理科旅行", icon:"🔬", dir:"../flick-travel/rika/"},
                  {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"../flick-travel/seibi/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
@@ -811,7 +811,7 @@ const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: TONE.orange, jevents: TONE.blue,  /* 歴史: けいくん 2026-09-27「1」= あかるい 色に */
           usolar: TONE.orange, usky: TONE.blue, ucos: TONE.purple,  /* 宇宙: けいくん 2026-09-27「このボタンもっと明るい色に」→ 世界と 同じ あかるい 色に */ kbone: TONE.orange, korgan: TONE.pink, kcell: TONE.green, ktsubo: TONE.purple,  /* からだ: 同じく あかるい 色に */
-          rphys: toneFrom("#1f5fbf"), rchem: toneFrom("#b8457a"), rbio: toneFrom("#2e7d32"), rgeo: toneFrom("#8a5a2b") },  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
+          rphys: TONE.blue, rchem: TONE.pink, rbio: TONE.green, rgeo: TONE.orange },  /* 理科: あかるい 色(2026-09-27) */  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
      黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */

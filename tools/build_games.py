@@ -9,12 +9,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 GAMES = {
-    "rekishi": dict(name="歴史フリック", modes=["wpeople", "jpeople", "wevents", "jevents"], kinds={"person", "event"},
-                    color="#c9741a", hero=True, logo=True, art=dict(word=(1005, 245), hero=(1536, 803), alt="歴史フリック。古代から未来へ 時代の名所が ならぶ 絵"),
+    "rekishi": dict(name="フリック歴史旅行", modes=["wpeople", "jpeople", "wevents", "jevents"], kinds={"person", "event"},
+                    color="#c9741a", hero=True, logo=True, art=dict(word=(892, 208), hero=(1536, 1024), alt="フリック歴史旅行。古代から 未来へ 時代の 名所が フィルムで つながる 空を 男の子と 犬が 望遠鏡で 見る 絵", iconv=3, wordv=3),
                     lead="世界と日本の偉人・歴史の出来事を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、時間の旅に出よう。",
                     how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。偉人は 名前を打つと、結果で その人のプロフィールと 名言が読めるよ。出来事は 年と解説が出て、年表に📍が立つよ。",
                     rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、歴史の流れも自然と覚えられるよ。"),
-    "uchu": dict(name="宇宙フリック", modes=["usolar", "usky", "ucos"], kinds={"space"}, color="#2b3a8f", hero=True, logo=True, art=dict(word=(1053, 257), hero=(1536, 1024), alt="宇宙フリック。太陽系の 惑星と 銀河が うかぶ 絵"),
+    "uchu": dict(name="フリック宇宙旅行", modes=["usolar", "usky", "ucos"], kinds={"space"}, color="#2b3a8f", hero=True, logo=True, art=dict(word=(1053, 257), hero=(1536, 1024), alt="フリック宇宙旅行。太陽系の 惑星と 銀河が うかぶ 絵", iconv=3),
                  lead="太陽系・星と星座・宇宙のことばを、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、宇宙の旅に出よう。",
                  how="表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、太陽系の図や 星図に📍が立つよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、星や惑星の名前も自然と覚えられるよ。"),
@@ -75,12 +75,13 @@ def build(gid, g):
     if art:
         # 絵・アイコンは その フォルダの ものを 使う(名前は 世界と 同じ なので 道は そのまま)
         out = out.replace('width="1170" height="209"', 'width="%d" height="%d"' % art["word"])
-        out = out.replace('src="logo-word.webp"', 'src="logo-word.webp?v=2"')
+        # 題名・トップの 絵を 差しかえたら wordv を 上げる(古い 絵を おぼえている 端末のため)
+        out = out.replace('src="logo-word.webp"', 'src="logo-word.webp?v=%d"' % art.get("wordv", 2))
         if art.get("iconv"):  # アイコンを 差しかえたら 数字を 上げる(iPhone が 古い アイコンを おぼえているため)
             v = "?v=%d" % art["iconv"]
             out = out.replace('apple-touch-icon.png?v=2"', 'apple-touch-icon.png' + v + '"').replace('favicon.png?v=2"', 'favicon.png' + v + '"').replace('src="logo-mark2.webp"', 'src="logo-mark2.webp' + v + '"')  # 題名を 切りなおしたら 数字を 上げる(古い 絵を おぼえているため)
         out, n = re.subn(r'<img class="hero" src="hero.webp" alt="[^"]*" width="1536" height="1024">',
-                         '<img class="hero" src="hero.webp" alt="%s" width="%d" height="%d">' % (art["alt"], *art["hero"]), out); assert n == 1
+                         '<img class="hero" src="hero.webp%s" alt="%s" width="%d" height="%d">' % ("?v=%d" % art["wordv"] if art.get("wordv") else "", art["alt"], *art["hero"]), out); assert n == 1
     else:
         out = out.replace('href="apple-touch-icon.png?v=2"', 'href="../apple-touch-icon.png?v=2"').replace('href="favicon.png?v=2"', 'href="../favicon.png?v=2"')
         # 絵が まだ無い ゲーム(株式フリック旅行): トップの絵と ロゴの 画像を 最初から 置かない(無い ファイルを 読みにいかない)。題名は 文字

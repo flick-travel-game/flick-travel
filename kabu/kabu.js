@@ -2,18 +2,18 @@
    ─ 土台の index.html(世界フリック旅行)に「会社の コース」を 足す ファイル。kabu/ の ページだけが 読む ─
    データは data/companies.json → tools/build_games.py が kabu/companies.js(COMPANIES)に する。**会社を 足す・直すのは data/companies.json だけ**
    ・コース(つみあげ): 入門 100 → 初級 300 → 中級 600 → 上級 1,000 → マスター 約2,400
-   ・1回は かならず 10問。入門は 新しい会社 10問、初級〜上級は 新しい会社 7問 + ふくしゅう 3問
-   ・ふくしゅうは「まちがえた」「時間がかかった」「ひさしぶり」の 会社を 先に(その人の きろくで えらぶ)
+   ・1回は かならず 10問。どの ステージも いつも 同じ 10社(だれが あそんでも 同じ = タイムを くらべられる。スピード記録勝負)
+     (けいくん 2026-09-27「苦手克服と復習は無しにして スピード記録勝負に揃えてください」。まえは 新しい会社 7問 + ふくしゅう 3問だった)
    ・マスターは 地域別(5)・業種別(14)に 分けて あそぶ
    ・出会った 会社は 企業図鑑に のこる(まだの会社は ？？？)
    ⚠️ 投資を すすめる ことばは 書かない。会社・国・業種を 知るための もの */
 const KABU = (() => {
   const D = COMPANIES;
   const COURSES = [
-    { m:"kbeg", name:"入門", icon:"🌱", total:100, color:"blue", perStage:10, rev:0, lead:"だれでも 知っている 会社から" },
-    { m:"kele", name:"初級", icon:"📘", total:300, color:"green", perStage:7, rev:3, lead:"聞いたことが ある 会社・投資で よく見る 会社" },
-    { m:"kmid", name:"中級", icon:"🧭", total:600, color:"orange", perStage:7, rev:3, lead:"世界各国を 代表する 会社" },
-    { m:"kadv", name:"上級", icon:"🌐", total:1000, color:"purple", perStage:7, rev:3, lead:"世界経済で 大切な 会社" },
+    { m:"kbeg", name:"入門", icon:"🌱", total:100, color:"blue", lead:"だれでも 知っている 会社から" },
+    { m:"kele", name:"初級", icon:"📘", total:300, color:"green", lead:"聞いたことが ある 会社・投資で よく見る 会社" },
+    { m:"kmid", name:"中級", icon:"🧭", total:600, color:"orange", lead:"世界各国を 代表する 会社" },
+    { m:"kadv", name:"上級", icon:"🌐", total:1000, color:"purple", lead:"世界経済で 大切な 会社" },
   ];
   const COURSE_OF = ["kbeg", "kele", "kmid", "kadv", "master"];
   const REGIONS = [
@@ -43,53 +43,38 @@ const KABU = (() => {
   const byFame = (a, b) => a.f - b.f;
   const courseList = i => ALL.filter(q => q.cs === i).sort(byFame);
 
-  /* ── ステージを 組む ── */
+  /* ── ステージを 組む ──
+     コースの 会社を 知名度の 順に 10社ずつ(ステージの 中は 打ちやすい順)。いつも 同じ 10社。
+     あまりが 出たら 前の ステージの うしろから 足りないぶんを もう一度 出して 10社に する(土台の LEVELS と 同じ きまり) */
   function cost(s){ let c = 0; for(const ch of s){ c += 1; if(/[がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽゔ]/.test(ch)) c += .5; if(/[ぁぃぅぇぉっゃゅょゎ]/.test(ch)) c += .5; if(ch === "ー") c += .3; } return c; }
+  const easy = (x, y) => cost(x.r) - cost(y.r);
+  function tens(list){  // list = もう ならんだ 会社。[{ fresh:その ステージで はじめて 出る 会社, set:10社 }]
+    const out = [];
+    for(let i = 0; i + ROUNDS <= list.length; i += ROUNDS) out.push({ fresh:list.slice(i, i + ROUNDS), set:list.slice(i, i + ROUNDS) });
+    const rest = list.length % ROUNDS;
+    if(rest && list.length > ROUNDS) out.push({ fresh:list.slice(-rest), set:list.slice(-rest - (ROUNDS - rest)) });
+    else if(rest) out.push({ fresh:list.slice(), set:list.concat(ALL.filter(q => !list.includes(q)).sort(byFame).slice(0, ROUNDS - list.length)) });
+    return out.map(x => ({ fresh:x.fresh, set:x.set.slice().sort(easy) }));
+  }
   const levels = {}, pools = {}, stageInfo = {}, maps = {}, colors = {};
   let introduced = [], lvOffset = 0;
   COURSES.forEach((C, ci) => {
-    const news = courseList(ci);
-    const S = C.rev ? Math.ceil(news.length / C.perStage) : Math.ceil(news.length / ROUNDS);
-    const lv = [], info = [];
-    let p = 0;
-    for(let k = 0; k < S; k++){
-      const nNew = Math.floor(news.length / S) + (k < news.length % S ? 1 : 0);
-      const fresh = news.slice(p, p + nNew); p += nNew;
-      const nRev = ROUNDS - fresh.length;
-      // ふくしゅうの きまった 候補(まだ その人の きろくが 無いとき): 少し前・だいぶ前・ずっと前 に 出た 会社
-      const L = introduced.length, def = [];
-      for(const back of [5, 18, 45, 90, 150, 260, 400, 600, 800]){
-        if(def.length >= nRev) break;
-        const q = introduced[Math.max(0, L - back)];
-        if(q && !def.includes(q)) def.push(q);
-      }
-      for(let j = 0; def.length < nRev && j < L; j++) if(!def.includes(introduced[j])) def.push(introduced[j]);
-      info.push({ fresh, def, before:L });
-      lv.push(arrange(fresh, def));
-      introduced = introduced.concat(fresh);
-    }
-    levels[C.m] = lv; stageInfo[C.m] = { stages:info, offset:lvOffset };
-    lvOffset += S;
+    const st = tens(courseList(ci));
+    levels[C.m] = st.map(x => x.set); stageInfo[C.m] = { stages:st, offset:lvOffset };
+    lvOffset += st.length;
+    introduced = introduced.concat(courseList(ci));
     pools[C.m] = introduced.slice();
     colors[C.m] = C.color;
     maps[C.m] = { icon:C.icon, name:C.name + "コース", cardName:C.name, title:"", word:"企業図鑑", thing:"会社", unit:"社", doneWord:"出会った会社", miss:"まだ出会っていない会社",
                   lvTitle:C.icon + " " + C.name + "　ステージを えらぶ",
                   card:(m, done) => '<small>' + fmt(pools[m].length) + '社・' + levels[m].length + 'ステージ</small><small>出会った ' + fmt(done) + '社</small>' };
   });
-  /* 新しい会社を かんたんな順に ならべ、ふくしゅうを 3・6・9問めに はさむ */
-  function arrange(fresh, rev){
-    const a = fresh.slice().sort((x, y) => cost(x.r) - cost(y.r));
-    const slots = [2, 5, 8, 1, 4, 7, 9, 3, 6, 0];
-    const out = a.slice();
-    rev.forEach((q, i) => out.splice(Math.min(slots[i], out.length), 0, q));
-    return out.slice(0, ROUNDS);
-  }
   /* マスター: 地域別・業種別(ぜんぶの 会社。知名度の 高い順に 10社ずつ) */
   function chunks(list){
     const s = list.slice().sort(byFame), out = [];
-    for(let i = 0; i + ROUNDS <= s.length; i += ROUNDS) out.push(s.slice(i, i + ROUNDS).sort((x, y) => cost(x.r) - cost(y.r)));
+    for(let i = 0; i + ROUNDS <= s.length; i += ROUNDS) out.push(s.slice(i, i + ROUNDS).sort(easy));
     const rest = s.length % ROUNDS;
-    if(rest && s.length > ROUNDS) out.push(s.slice(-rest - (ROUNDS - rest)).sort((x, y) => cost(x.r) - cost(y.r)));
+    if(rest && s.length > ROUNDS) out.push(s.slice(-rest - (ROUNDS - rest)).sort(easy));
     if(s.length && s.length < ROUNDS) out.push(s.concat(ALL.filter(q => !s.includes(q)).sort(byFame).slice(0, ROUNDS - s.length)));
     return out;
   }
@@ -106,16 +91,12 @@ const KABU = (() => {
     maps[S.m] = { icon:"🏆", name:"マスター・" + S.name, cardName:"マスター", group:"master", word:"企業図鑑", unit:"社", doneWord:"出会った会社", thing:"会社",
                   lvTitle:"🏆 マスター・" + S.icon + " " + S.name + "　" + fmt(list.length) + "社", card:masterCard };
   }
-  /* ふくしゅう(その人の きろくから 毎回 えらぶ 10問) */
-  pools.kfuku = ALL; levels.kfuku = [courseList(0).slice(0, ROUNDS)]; colors.kfuku = "pink";
-  maps.kfuku = { icon:"🔁", name:"ふくしゅう", cardName:"ふくしゅう", word:"企業図鑑", unit:"社", doneWord:"出会った会社", thing:"会社",
-                 lvTitle:"🔁 ふくしゅう　にがてな会社を もう一度",
-                 card:() => { const w = weakCount(); return '<small>毎回 ちがう 10社</small><small>' + (discovered().size < ROUNDS ? 'まず コースで 10社 出会おう' : 'にがて ' + w + '社') + '</small>'; } };
-  const MODES_ALL = COURSES.map(C => C.m).concat(["kfuku"], REGIONS.map(R => R.m), SECTORS.map(S => S.m));
+  const MODES_ALL = COURSES.map(C => C.m).concat(REGIONS.map(R => R.m), SECTORS.map(S => S.m));
   const MASTER = new Set(REGIONS.map(R => R.m).concat(SECTORS.map(S => S.m)));
 
   /* ── きろく(人ごと。土台の recGet / recSet = つないでいない人は とじると 消える 決まりに そろえる) ──
-     flick-kabu[-p<id>] = { 会社id: [見た回数, まちがいの合計, さいごに まちがえたか(0/1), 1文字あたりの 秒, さいごに 見た 時刻(ms)] } */
+     flick-kabu[-p<id>] = { 会社id: [見た回数, まちがいの合計, さいごに まちがえたか(0/1), 1文字あたりの 秒, さいごに 見た 時刻(ms)] }
+     (ふくしゅうは やめたが、きろくの 形は そのまま。図鑑の「出会った回数」に 使う) */
   function logKey(){ const p = curProfile(); return "flick-kabu" + (p ? "-p" + p.id : ""); }
   let memo = null;
   function log(){
@@ -127,7 +108,6 @@ const KABU = (() => {
   function save(v){ recSet(logKey(), JSON.stringify(v)); memo = { k:logKey(), v }; }
   function discovered(){ const L = log(); return new Set(Object.keys(L).filter(id => BY.has(id))); }
   function discoveredIn(m){ const d = discovered(), s = new Set(); for(const q of (pools[m] || [])) if(d.has(q.art)) s.add(q.art); return s; }
-  function weakCount(){ const L = log(); return Object.keys(L).filter(id => BY.has(id) && L[id][2]).length; }
   function answered(q, secs, miss){
     if(!q || !BY.has(q.art)) return;
     const L = log(), e = L[q.art] || [0, 0, 0, 0, 0];
@@ -135,37 +115,9 @@ const KABU = (() => {
     L[q.art] = [e[0] + 1, e[1] + miss, miss > 0 ? 1 : 0, e[0] ? +(e[3] * .6 + per * .4).toFixed(3) : +per.toFixed(3), Date.now()];
     save(L);
   }
-  /* ふくしゅうの 点数: まちがえた > 時間がかかった > ひさしぶり > まだ 少ししか 見ていない */
-  function reviewPick(cands, n, avoid){
-    const L = log(), per = cands.map(q => (L[q.art] || [])[3]).filter(Boolean).sort((a, b) => a - b);
-    const med = per.length ? per[Math.floor(per.length / 2)] : .5, now = Date.now();
-    return cands.filter(q => !avoid.has(q.art)).map(q => {
-      const e = L[q.art];
-      const s = 3 * e[2] + 1.5 * Math.min(1, e[1] / Math.max(1, e[0])) + 2 * Math.max(0, e[3] / med - 1)
-              + Math.min(2, (now - e[4]) / 864e5 / 5) + 1 / e[0] + Math.random() * .6;
-      return { q, s };
-    }).sort((a, b) => b.s - a.s).slice(0, n).map(x => x.q);
-  }
-  let pre = null, revSet = new Set();  // この回の 前に 出会っていた 会社 / この回の ふくしゅうの 会社
-  function makeQs(m, lv){
-    pre = discovered(); revSet = new Set();
-    if(m === "kfuku"){
-      const cands = ALL.filter(q => pre.has(q.art));
-      let qs = reviewPick(cands, ROUNDS, new Set());
-      qs.forEach(q => revSet.add(q.art));
-      if(qs.length < ROUNDS) qs = qs.concat(courseList(0).filter(q => !qs.includes(q)).slice(0, ROUNDS - qs.length));
-      return qs.sort((x, y) => cost(x.r) - cost(y.r));
-    }
-    const si = stageInfo[m] && stageInfo[m].stages[lv];
-    if(!si || !si.def.length) return levels[m][lv].slice();
-    const avoid = new Set(si.fresh.map(q => q.art));
-    const cands = [];
-    for(const C of COURSES){ for(const info of stageInfo[C.m].stages){ if(C.m === m && info === si) break; info.fresh.forEach(q => { if(pre.has(q.art)) cands.push(q); }); } if(C.m === m) break; }
-    let rev = reviewPick(cands, si.def.length, avoid);
-    for(const q of si.def){ if(rev.length >= si.def.length) break; if(!rev.includes(q) && !avoid.has(q.art)) rev.push(q); }
-    rev.forEach(q => revSet.add(q.art));
-    return arrange(si.fresh, rev);
-  }
+  let pre = null;  // この回の 前に 出会っていた 会社
+  /* 問題: いつも 同じ 10社(土台の LEVELS と 同じ。人ごとに かえない) */
+  function makeQs(m, lv){ pre = discovered(); return levels[m][lv].slice(); }
   function titleOf(n){ let t = null; for(const T of TITLES) if(n >= T[0]) t = T; if(n >= TOTAL) t = [TOTAL, "🏆", "世界企業マスター"]; return t; }
   function nextTitle(n){ for(const T of TITLES) if(n < T[0]) return T; return n < TOTAL ? [TOTAL, "🏆", "世界企業マスター"] : null; }
   let last = null;
@@ -173,7 +125,7 @@ const KABU = (() => {
     const now = discovered(), before = pre || new Set();
     const fresh = qs.filter(q => !before.has(q.art) && now.has(q.art)).map(q => q.art);
     const earned = TITLES.concat([[TOTAL, "🏆", "世界企業マスター"]]).filter(T => before.size < T[0] && now.size >= T[0]);
-    return { fresh, rev:[...revSet], total:now.size, earned };
+    return { fresh, total:now.size, earned };
   }
   function resultMsg(r){
     last = r.kabu || null;
@@ -188,13 +140,13 @@ const KABU = (() => {
     let h = "";
     if(prev) h += '<div class="kb-learn" role="status"><b>✅ ' + esc(prev.n) + '</b><span>' + prev.flag + " " + esc(prev.co) + " ・ " + esc(prev.sec.name) + '</span><p>' + esc(prev.d0 || "") + '</p></div>';
     else h += '<div class="kb-learn kb-hint">こたえると、その会社の 国・業種・ひとことが 出るよ</div>';
-    const tag = revSet.has(q.art) ? '<span class="kb-tag rev">🔁 ふくしゅう</span>' : (pre && !pre.has(q.art) ? '<span class="kb-tag new">🆕 はじめまして</span>' : "");
+    const tag = pre && !pre.has(q.art) ? '<span class="kb-tag new">🆕 はじめまして</span>' : "";
     h += '<div class="kb-q"><span class="kb-ic">' + q.e + '</span><div><p class="spot">' + esc(q.n) + '</p>' + tag + '</div></div>';
     return h;
   }
   /* ── 結果・図鑑の くわしい 情報 ── */
   function info(q){
-    const tag = last && last.fresh.includes(q.art) ? '<span class="kb-tag new">🆕 はじめて 出会った</span>' : last && last.rev.includes(q.art) ? '<span class="kb-tag rev">🔁 ふくしゅう</span>' : "";
+    const tag = last && last.fresh.includes(q.art) ? '<span class="kb-tag new">🆕 はじめて 出会った</span>' : "";
     let h = '<div class="kb-info">' + tag;
     if(q.dl) h += '<p class="kb-more">' + esc(q.dl) + '</p>';
     h += '<dl class="kb-dl"><dt>国</dt><dd>' + q.flag + " " + esc(q.co) + (q.co === q.rg ? "" : '(' + esc(q.rg) + ')') + '</dd><dt>業種</dt><dd>' + q.sec.icon + " " + esc(q.sec.name) + (q.in && q.in !== q.sec.name ? "・" + esc(q.in) : "") + '</dd>';
@@ -212,7 +164,7 @@ const KABU = (() => {
   function masterNow(){ if(!masterCur){ try{ masterCur = localStorage.getItem("flick-kabu-master"); }catch(e){} } return MASTER.has(masterCur) ? masterCur : "kmjp"; }
   function cardModes(cur){
     if(MASTER.has(cur)){ masterCur = cur; try{ localStorage.setItem("flick-kabu-master", cur); }catch(e){} }
-    return COURSES.map(C => C.m).concat([masterNow(), "kfuku"]);
+    return COURSES.map(C => C.m).concat([masterNow()]);
   }
   function home(m){
     const d = discovered(), n = d.size, t = titleOf(n), nx = nextTitle(n);
@@ -223,10 +175,9 @@ const KABU = (() => {
       '<ul class="kb-reg">' + reg + '</ul>' +
       '<p class="kb-title">' + (t ? t[1] + " いまの称号「<b>" + esc(t[2]) + "</b>」" : "🎒 さいしょの 称号まで あと " + (10 - n) + "社") +
       (nx && t ? '<small>つぎ「' + esc(nx[2]) + '」まで あと ' + fmt(nx[0] - n) + '社</small>' : "") + '</p>' +
-      '<div class="kb-btns"><button type="button" class="kb-btn" id="kb-zukan">📖 企業図鑑</button><button type="button" class="kb-btn" id="kb-fuku">🔁 ふくしゅう' + (weakCount() ? "(にがて " + weakCount() + "社)" : "") + '</button></div>' +
+      '<div class="kb-btns"><button type="button" class="kb-btn" id="kb-zukan">📖 企業図鑑</button></div>' +
       '<p class="kb-note">' + esc(D.note) + '</p></section>';
     $("#kb-zukan").onclick = () => openZukan();
-    $("#kb-fuku").onclick = () => { setMode("kfuku"); const x = $("#lv-title"); if(x) x.scrollIntoView({ behavior:"smooth", block:"start" }); };
     // マスターの 地域・業種
     const chips = $("#kabu-chips");
     if(MASTER.has(m)){
@@ -235,13 +186,12 @@ const KABU = (() => {
         '<p>業種で えらぶ</p><div>' + SECTORS.map(S => b(S.m, S.icon + " " + S.name)).join("") + '</div>' +
         '<p class="kb-goal">🏆 目標: ' + fmt(TOTAL) + '社 ぜんぶと 出会って「世界企業マスター」</p></div>';
       chips.querySelectorAll("button").forEach(x => x.addEventListener("click", () => setMode(x.dataset.m)));
-    }else chips.innerHTML = COURSES.some(C => C.m === m) ? '<p class="kb-lead">' + esc(COURSES.find(C => C.m === m).lead) + '。1回 10問。' + (m === "kbeg" ? "" : "新しい会社 7問 + ふくしゅう 3問。") + '</p>' : "";
+    }else chips.innerHTML = COURSES.some(C => C.m === m) ? '<p class="kb-lead">' + esc(COURSES.find(C => C.m === m).lead) + '。1回 10問。どの ステージも いつも 同じ 10社。タイムで 勝負しよう。</p>' : "";
   }
   function lvInfo(m, i){
-    if(m === "kfuku") return { name:"🔁 ふくしゅう", sub:"にがて・ひさしぶりの 10社", short:"ふくしゅう" };
     const si = stageInfo[m];
     if(si){ const s = si.stages[i], g = si.offset + i + 1;
-      return { name:"Lv." + g, sub:s.def.length ? "🆕" + s.fresh.length + "社 + 🔁" + s.def.length + "社" : "🆕 " + s.fresh.length + "社", short:"Lv." + g }; }
+      return { name:"Lv." + g, sub:"10社", short:"Lv." + g }; }
     return { name:"ステージ" + (i + 1), sub:"10社", short:"マスター" + (i + 1) };
   }
 
@@ -314,7 +264,7 @@ const KABU = (() => {
 @keyframes kbIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 .kb-q{display:flex;gap:12px;align-items:center;margin:0 0 10px}.kb-q .spot{font-size:clamp(22px,7vw,30px);line-height:1.2;word-break:break-word}
 .kb-ic{font-size:38px;width:58px;height:58px;display:grid;place-items:center;background:linear-gradient(135deg,#c9efff,#4fb8ff);border-radius:14px;flex:none}
-.kb-tag{display:inline-block;margin-top:4px;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px}.kb-tag.new{background:#fef3c7;color:#92400e}.kb-tag.rev{background:#fce7f3;color:#9d174d}
+.kb-tag{display:inline-block;margin-top:4px;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px}.kb-tag.new{background:#fef3c7;color:#92400e}
 .kb-info{margin-top:8px}.kb-info .kb-tag{margin:0 0 6px}.kb-more{font-size:13px;color:var(--muted);line-height:1.7;margin:4px 0}
 .kb-dl{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;margin:8px 0 2px;font-size:13px}.kb-dl dt{color:var(--muted);font-weight:700}.kb-dl dd{margin:0}.kb-dl small{color:var(--muted);margin-left:4px}
 .intro p{line-height:2}.pins-msg small{display:block;font-weight:700;color:var(--muted);font-size:13px}
@@ -340,5 +290,5 @@ body.kb-lock{overflow:hidden}
   const hb = document.getElementById("home-btn"); if(hb) hb.textContent = "コースに もどる";
 
   return { kind:"company", modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
-           card, info, home, lvInfo, cardModes, byArt:id => BY.get(id), noRank:(m, lv) => m === "kfuku" || lv >= 60, openZukan };
+           card, info, home, lvInfo, cardModes, byArt:id => BY.get(id), noRank:(m, lv) => lv >= 60, openZukan };
 })();

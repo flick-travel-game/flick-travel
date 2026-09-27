@@ -532,7 +532,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kabu", name:"フリック株式旅行", modes:(typeof KABU === "object" ? KABU.modes : []), assets:"../", logo:true, hero:true, dir:"kabu/", lead:"世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。", how:"表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。初級からは 新しい会社7問に、にがてな会社の ふくしゅう3問が まざるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。" };
+const GAME = { id:"kabu", name:"フリック株式旅行", modes:(typeof KABU === "object" ? KABU.modes : []), assets:"../", logo:true, hero:true, dir:"kabu/", lead:"世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。", how:"表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。どのステージも いつも同じ10問なので、タイムをくらべられるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
@@ -870,7 +870,7 @@ function levelSchool(set){
   return g ? SCHOOL[g] : "";
 }
 for(const m of MODES){
-  if(PLUG && PLUG.levels[m]){ LEVELS[m] = PLUG.levels[m]; continue; }  // 会社の コースは kabu.js が 組む(新しい会社 + ふくしゅう)
+  if(PLUG && PLUG.levels[m]){ LEVELS[m] = PLUG.levels[m]; continue; }  // つみあげの コースは プラグインが 組む(どの レベルも いつも 同じ 10問)
   const pool = poolOf(m);
   /* f:1(名所=はじめの100か所の定番 / 地名=国・都道府県)を 先に。その中で かんたんな順(けいくん 2026-09-25) */
   const byFame = (m === "world" || m === "japan");
@@ -1528,10 +1528,11 @@ function openLevels(m){
   document.querySelectorAll(".lv").forEach(b => b.addEventListener("click", () => start(mode, +b.dataset.lv)));
 }
 
-let retryRun = false;  // AIフリック旅行の「もう一度だけ挑戦」(まちがえた 問題だけ。記録・ランキングには 入れない)
-function start(m, lv, only){
-  mode = m; level = lv; retryRun = !!only;
-  qs = only ? only.slice() : PLUG && PLUG.owns(m) ? PLUG.makeQs(m, lv) : LEVELS[m][lv];  // 会社: ふくしゅうの 3問は その人に 合わせて えらぶ
+/* ⚠️ 株式・AI・英会話・整備も どの レベルも いつも 同じ 10問(けいくん 2026-09-27「スピード記録勝負に揃えて」)。
+   「もう一度だけ挑戦(まちがえた 問題だけ)」・ふくしゅう・苦手克服は やめた */
+function start(m, lv){
+  mode = m; level = lv;
+  qs = PLUG && PLUG.owns(m) ? PLUG.makeQs(m, lv) : LEVELS[m][lv];  // プラグインの コース: いつも 同じ 10問(はじめて 出会う ことばの しるしを 付けるため プラグインを 通す)
   idx = 0; times = []; running = false; locked = true; penalties = 0; qMiss = 0; lastErr = false;
   show("game");
   renderCard();
@@ -1556,7 +1557,7 @@ function start(m, lv, only){
 let baseRaw = 0;
 function resetBase(){ baseRaw = ans.value.length; lastLen = 0; $("#typed").textContent = ""; }
 
-/* 1問ごとの まちがい(赤くなった回数)。会社の ふくしゅうで「まちがえた会社」を 先に出すため */
+/* 1問ごとの まちがい(赤くなった回数)。プラグインの 図鑑の「まちがい」の 回数に 使う */
 let qMiss = 0, lastErr = false;
 function next(){
   times.push((performance.now()-qStart)/1000);
@@ -1588,12 +1589,6 @@ ans.addEventListener("input", () => {
 function finish(){
   running = false; cancelAnimationFrame(raf);
   const total = times.reduce((a,b)=>a+b,0);
-  if(retryRun){  // もう一度だけ挑戦: 自己ベスト・きろく・ランキングには 入れない
-    const prev = parseFloat(recGet(bestKey(mode, level)));
-    const r = { mode, level, times: times.slice(), isNew:false, firstClear:false, best: isNaN(prev) ? total : prev, at: Date.now(), arts: qs.map(q => q.art), retry:true };
-    if(PLUG && PLUG.owns(mode)) r.kabu = PLUG.finished(r, qs);
-    renderResult(r); return;
-  }
   const key = bestKey(mode, level), prev = parseFloat(recGet(key));
   const isNew = isNaN(prev) || total < prev;
   const firstClear = isNaN(prev);
@@ -1742,7 +1737,7 @@ let boardPeriod = "today", boardSent = "";  // 送った結果(のった / 理�
 async function submitScore(r){
   const p = curProfile();
   if(!p || r.mode === "quote" || !r.times || r.times.length !== ROUNDS) return "";
-  if(PLUG && PLUG.noRank(r.mode, r.level)) return "norank";  // ふくしゅう(毎回 ちがう10問)・61より 上の レベルは ランキングに 送らない
+  if(PLUG && PLUG.noRank(r.mode, r.level)) return "norank";  // 61より 上の レベルは ランキングに 送らない(かずともの 表は 1〜60)
   const ms = Math.round(r.times.reduce((a,b)=>a+b,0) * 1000);
   try{
     const res = await fetch(RANK_API + "/score", { method:"POST", headers:Object.assign({"content-type":"application/json"}, authHeaders()),
@@ -1775,7 +1770,7 @@ async function drawBoard(m, lv, id){
     if(!res.ok || !js || !js.ok){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません' + (js && js.reason ? "(" + esc(js.reason) + ")" : "") + '</p>'; return; }
     const rows = js.rows || [];
     const note = id === "board" && boardSent && boardSent !== "ok"
-      ? (boardSent === "norank" ? '<p class="board-note">この回は ランキングの 対象では ありません(ふくしゅう・レベル61より上)</p>'
+      ? (boardSent === "norank" ? '<p class="board-note">この回は ランキングの 対象では ありません(レベル61より上)</p>'
       : boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。おうちの方が アカウントを つなぐと のります</p>'
                                   : '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>') : "";
     if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも!</p>' + note; return; }
@@ -1799,7 +1794,7 @@ function quoteBlock(q){
 function renderResult(r){
   mode = r.mode; level = r.level; times = r.times;
   qs = LEVELS[mode][level];
-  if(Array.isArray(r.arts) && (r.arts.length === ROUNDS || r.retry)){ const pool = POOLS[mode] || [], by = new Map(pool.map(q => [q.art, q])); const a = r.arts.map(x => by.get(x) || (PLUG ? PLUG.byArt(x) : null)); if(a.every(Boolean)) qs = a; }
+  if(Array.isArray(r.arts) && r.arts.length === ROUNDS){ const pool = POOLS[mode] || [], by = new Map(pool.map(q => [q.art, q])); const a = r.arts.map(x => by.get(x) || (PLUG ? PLUG.byArt(x) : null)); if(a.every(Boolean)) qs = a; }
   const total = times.reduce((a,b)=>a+b,0);
   const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
   const pinsNow = mode === "quote" ? 0 : clearedSpots(mode).size;

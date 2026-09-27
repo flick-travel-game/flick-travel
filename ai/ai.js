@@ -1,15 +1,14 @@
 /* AIフリック旅行: 遊んでいるうちに、AIとWebのことばがわかる。(けいくん 2026-09-26)
    ─ 土台の index.html(世界フリック旅行)の 差しこみ口(PLUG)に「AIの ことばの 旅」を 足す ファイル。ai/ の ページだけが 読む ─
    ことばは data/aiTerms.json → tools/build_games.py が ai/terms.js(AI_TERMS)に する。**ことばを 足す・直すのは data/aiTerms.json だけ**
-   ・旅は 3つ: 🤖 AIのことば / 🌐 Webサービスのしくみ / 🏪 サービス運営。+ 🏆 マスター(ぜんぶ)・🔁 ふくしゅう・💪 苦手克服
-   ・1回は かならず 10問。入門(Lv.1〜)は 新しい ことば 10問、初級〜上級は 新しい ことば 7問 + ふくしゅう 3問
-   ・ふくしゅうは「まちがえた」「時間がかかった」「ひさしぶり」「何度も まちがえた」ことばを 先に(その人の きろくで えらぶ)
+   ・旅は 3つ: 🤖 AIのことば / 🌐 Webサービスのしくみ / 🏪 サービス運営。+ 🏆 マスター(ぜんぶ)
+   ・1回は かならず 10問。どの ステージも いつも 同じ 10語(やさしい順に 10語ずつ)= スピード記録勝負(けいくん 2026-09-27)
    ・こたえると 意味・つながる ことば・しくみ図の どこに あるか(📍)が 出る。「単語を 知る」より「つながりが わかる」を 大切に
    ・出会った ことばは AIことば図鑑に のこる(まだの ことばは ？？？)
    ⚠️ 株式フリック旅行(kabu/kabu.js)と 同じ 差しこみ口を 使う。ほかの ゲームには AITABI が 無いので 何も 変わらない */
 const AITABI = (() => {
   const D = AI_TERMS;
-  const ROUNDS = 10, REV = 3;
+  const ROUNDS = 10;
   const RANK_READY = true;  // かずともの FLICK_MODES に aiw / aweb / aops / amas を 足した(speed-king #171・2026-09-26)。false に すると ランキングを 出さない・送らない
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const fmt = n => n.toLocaleString("ja-JP");
@@ -29,44 +28,28 @@ const AITABI = (() => {
   function cost(s){ let c = 0; for(const ch of s){ c += 1; if(/[がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽゔ]/.test(ch)) c += .5; if(/[ぁぃぅぇぉっゃゅょゎ]/.test(ch)) c += .5; if(ch === "ー") c += .3; } return c; }
   const easy = (a, b) => cost(a.r) - cost(b.r);
 
-  /* ── 旅の ステージを 組む(旅ごとに: 入門は 10語ずつ、初級からは 7語 + ふくしゅう 3語) ── */
+  /* ── 旅の ステージを 組む ──
+     旅の ことばを やさしい順(むずかしさ → data の ならび順 = 有名な順)に 10語ずつ。どの ステージも いつも 同じ 10語(スピード記録勝負)。
+     あまりが 出たら 前の ステージの うしろから 足りないぶんを もう一度 出して 10語に する(土台の LEVELS と 同じ きまり)。
+     (けいくん 2026-09-27「苦手克服と復習は無しにして スピード記録勝負に揃えてください」。まえは 新しい 7語 + ふくしゅう 3語だった) */
   const levels = {}, pools = {}, stageInfo = {}, maps = {}, colors = {};
+  function tens(list){  // [{ fresh:その ステージで はじめて 出る ことば, set:10語(やさしい順), dv:いちばん 多い むずかしさ }]
+    const out = [];
+    for(let i = 0; i + ROUNDS <= list.length; i += ROUNDS) out.push({ fresh:list.slice(i, i + ROUNDS), set:list.slice(i, i + ROUNDS) });
+    const rest = list.length % ROUNDS;
+    if(rest && list.length > ROUNDS) out.push({ fresh:list.slice(-rest), set:list.slice(-rest - (ROUNDS - rest)) });
+    else if(rest) out.push({ fresh:list.slice(), set:list.slice() });
+    return out.map(x => { const n = {}; x.fresh.forEach(q => n[q.dv] = (n[q.dv] || 0) + 1);
+      return { fresh:x.fresh, set:x.set.slice().sort(easy), dv:+Object.keys(n).sort((a, b) => n[b] - n[a] || a - b)[0] }; });
+  }
   for(const J of JR){
     const m = MODE_OF[J.id], terms = ALL.filter(q => q.j === J.id);
-    const lv = [], info = [];
-    let introduced = [];
-    for(const L of D.levels){
-      const news = terms.filter(q => q.dv === L.difficulty);  // data の ならび順 = 有名な順(先に 書いた ことばが 先に 出る)
-      if(!news.length) continue;
-      const per = L.difficulty === 1 ? ROUNDS : ROUNDS - REV;
-      const S = Math.ceil(news.length / per);
-      let p = 0;
-      for(let k = 0; k < S; k++){
-        const nNew = Math.floor(news.length / S) + (k < news.length % S ? 1 : 0);
-        const fresh = news.slice(p, p + nNew); p += nNew;
-        const nRev = ROUNDS - fresh.length, L0 = introduced.length, def = [];
-        for(const back of [4, 12, 25, 45, 70, 100]){  // きろくが まだ 無い人の ふくしゅう: 少し前・だいぶ前・ずっと前
-          if(def.length >= nRev) break;
-          const q = introduced[Math.max(0, L0 - back)];
-          if(q && !def.includes(q)) def.push(q);
-        }
-        for(let x = 0; def.length < nRev && x < L0; x++) if(!def.includes(introduced[x])) def.push(introduced[x]);
-        info.push({ fresh, def, dv:L.difficulty });
-        lv.push(arrange(fresh, def));
-        introduced = introduced.concat(fresh);
-      }
-    }
+    const info = tens(terms.slice().sort((a, b) => a.dv - b.dv || a.ord - b.ord)), lv = info.map(s => s.set);
     info.forEach((s, k) => { s.stop = Math.min(J.stops.length - 1, Math.floor(k * J.stops.length / info.length)); });
     levels[m] = lv; stageInfo[m] = info; pools[m] = terms; colors[m] = J.color;
     maps[m] = { icon:J.icon, name:J.name, cardName:J.name, title:"", word:"AIことば図鑑", thing:"ことば", unit:"語", doneWord:"出会った ことば", miss:"まだ 出会っていない ことば",
                 lvTitle:J.icon + " " + J.name + "　旅を すすめる",
                 card:(mm, done) => '<small>' + terms.length + '語・' + lv.length + 'ステージ</small><small>出会った ' + done + '語</small>' };
-  }
-  function arrange(fresh, rev){
-    const out = fresh.slice().sort(easy);
-    const slots = [2, 5, 8, 1, 4, 7, 9, 3, 6, 0];
-    rev.forEach((q, i) => out.splice(Math.min(slots[i], out.length), 0, q));
-    return out.slice(0, ROUNDS);
   }
   /* マスター: 3つの 旅を まぜて ぜんぶ(きまった ならび。どの ステージも いつも 同じ 10語 = タイムを くらべられる) */
   {
@@ -81,15 +64,7 @@ const AITABI = (() => {
                   lvTitle:"🏆 マスター　3つの 旅を まぜて ぜんぶ",
                   card:() => '<small>' + TOTAL + '語・' + lv.length + 'ステージ</small><small>専門用語まで はば広く</small>' };
   }
-  /* ふくしゅう / 苦手克服(その人の きろくから 毎回 えらぶ 10問) */
-  const starter = () => ALL.filter(q => q.dv === 1).slice(0, ROUNDS);
-  for(const [m, icon, name, color, sub] of [["afuku", "🔁", "ふくしゅう", "pink", "毎回 ちがう 10語"], ["aweak", "💪", "苦手克服", "orange", "苦手ことばを 10語"]]){
-    levels[m] = [starter()]; pools[m] = ALL; colors[m] = color;
-    maps[m] = { icon, name, cardName:name, word:"AIことば図鑑", thing:"ことば", unit:"語", doneWord:"出会った ことば",
-                lvTitle:icon + " " + name + "　" + (m === "afuku" ? "ひさしぶり・時間がかかった ことばを もう一度" : "まちがえた ことばだけ 10問"),
-                card:() => '<small>' + sub + '</small><small>' + (m === "aweak" ? "苦手 " + weakList().length + "語" : discovered().size < ROUNDS ? "まず 旅で 10語 出会おう" : "出会った " + discovered().size + "語") + '</small>' };
-  }
-  const MODES_ALL = ["aiw", "aweb", "aops", "amas", "afuku", "aweak"];
+  const MODES_ALL = ["aiw", "aweb", "aops", "amas"];
 
   /* ── きろく(人ごと。土台の recGet / recSet = つないでいない人は とじると 消える 決まりに そろえる) ──
      flick-ai[-p<id>] = { ことばid: [見た回数, まちがいの合計, さいごに まちがえたか(0/1), 1文字あたりの 秒, さいごに 見た 時刻(ms), はじめて 出会った 時刻(ms)] }
@@ -107,52 +82,18 @@ const AITABI = (() => {
   function toggleFav(id){ const a = favs(), i = a.indexOf(id); if(i < 0) a.push(id); else a.splice(i, 1); recSet(pkey("flick-ai-fav"), JSON.stringify(a)); return i < 0; }
   function discovered(){ const L = log(); return new Set(Object.keys(L).filter(id => BY.has(id))); }
   function discoveredIn(m){ const d = discovered(), s = new Set(); for(const q of (pools[m] || [])) if(d.has(q.art)) s.add(q.art); return s; }
-  /* 苦手ことば: さいごに まちがえた / 何度も まちがえている(見た回数の 4割 以上) */
-  function weakScore(e){ return e ? 3 * e[2] + (e[1] >= 2 && e[1] / e[0] >= .4 ? 2 : 0) + Math.min(1.5, e[1] / Math.max(1, e[0]) * 2) : 0; }
-  function weakList(){ const L = log(); return ALL.filter(q => L[q.art] && (L[q.art][2] || (L[q.art][1] >= 2 && L[q.art][1] / L[q.art][0] >= .4))).sort((a, b) => weakScore(L[b.art]) - weakScore(L[a.art])); }
   const dayOf = t => { const d = new Date(t); return d.getFullYear() * 400 + d.getMonth() * 32 + d.getDate(); };
   function todayWords(){ const L = log(), td = dayOf(Date.now()); return ALL.filter(q => L[q.art] && L[q.art][5] && dayOf(L[q.art][5]) === td).sort((a, b) => log()[a.art][5] - log()[b.art][5]); }
-  let runMiss = {};  // この回に まちがえた ことば
   function answered(q, secs, miss){
     if(!q || !BY.has(q.art)) return;
     const L = log(), e = L[q.art] || [0, 0, 0, 0, 0, Date.now()];
     const per = secs / Math.max(1, q.r.length);
     L[q.art] = [e[0] + 1, e[1] + miss, miss > 0 ? 1 : 0, e[0] ? +(e[3] * .6 + per * .4).toFixed(3) : +per.toFixed(3), Date.now(), e[5] || Date.now()];
-    if(miss > 0) runMiss[q.art] = 1;
     save(L);
   }
-  /* ふくしゅうの 点数: まちがえた > 何度も まちがえた > 時間がかかった > ひさしぶり > まだ 少ししか 見ていない */
-  function reviewPick(cands, n, avoid){
-    const L = log(), per = cands.map(q => (L[q.art] || [])[3]).filter(Boolean).sort((a, b) => a - b);
-    const med = per.length ? per[Math.floor(per.length / 2)] : .5, now = Date.now();
-    return cands.filter(q => !avoid.has(q.art) && L[q.art]).map(q => {
-      const e = L[q.art];
-      const s = 3 * e[2] + 1.5 * Math.min(1, e[1] / Math.max(1, e[0])) + 2 * Math.max(0, e[3] / med - 1)
-              + Math.min(2, (now - e[4]) / 864e5 / 3) + 1 / e[0] + Math.random() * .6;
-      return { q, s };
-    }).sort((a, b) => b.s - a.s).slice(0, n).map(x => x.q);
-  }
-  let pre = null, revSet = new Set(), weakSet = new Set();
-  function makeQs(m, lv){
-    pre = discovered(); revSet = new Set(); runMiss = {};
-    weakSet = new Set(weakList().map(q => q.art));
-    const pad = (qs, from) => { for(const q of from){ if(qs.length >= ROUNDS) break; if(!qs.includes(q)) qs.push(q); } return qs; };
-    if(m === "afuku" || m === "aweak"){
-      const seen = ALL.filter(q => pre.has(q.art));
-      let qs = m === "aweak" ? weakList().slice(0, ROUNDS) : [];
-      qs = qs.concat(reviewPick(seen, ROUNDS - qs.length, new Set(qs.map(q => q.art))));
-      qs.forEach(q => revSet.add(q.art));
-      return pad(qs, starter().concat(ALL)).sort(easy);
-    }
-    const info = stageInfo[m] && stageInfo[m][lv];
-    if(!info || !info.def.length) return levels[m][lv].slice();
-    const avoid = new Set(info.fresh.map(q => q.art)), cands = [];
-    for(const s of stageInfo[m]){ if(s === info) break; s.fresh.forEach(q => { if(pre.has(q.art)) cands.push(q); }); }
-    const rev = reviewPick(cands, info.def.length, avoid);
-    for(const q of info.def){ if(rev.length >= info.def.length) break; if(!rev.includes(q) && !avoid.has(q.art)) rev.push(q); }
-    rev.forEach(q => revSet.add(q.art));
-    return arrange(info.fresh, rev);
-  }
+  let pre = null;  // この回の 前に 出会っていた ことば
+  /* 問題: いつも 同じ 10語(土台の LEVELS と 同じ。人ごとに かえない) */
+  function makeQs(m, lv){ pre = discovered(); return levels[m][lv].slice(); }
   /* 読みかたが いくつか ある ことば(SQL = えすきゅーえる / しーくえる)。打った字に 合う 読みへ 目あてを 合わせる */
   function retarget(q, v){
     const all = [q.r].concat(q.al || []);
@@ -167,29 +108,22 @@ const AITABI = (() => {
   function titles(){ return D.titles.filter(T => T[0] < TOTAL); }
   function titleOf(n){ let t = null; for(const T of titles()) if(n >= T[0]) t = T; if(n >= TOTAL) t = [TOTAL].concat(D.allTitle); return t; }
   function nextTitle(n){ for(const T of titles()) if(n < T[0]) return T; return n < TOTAL ? [TOTAL].concat(D.allTitle) : null; }
-  let last = null, lastMissed = [];
+  let last = null;
   function finished(r, qs){
     const now = discovered(), before = pre || new Set();
     const fresh = qs.filter(q => !before.has(q.art) && now.has(q.art)).map(q => q.art);
     const earned = titles().concat([[TOTAL].concat(D.allTitle)]).filter(T => before.size < T[0] && now.size >= T[0]);
-    const missed = qs.filter(q => runMiss[q.art]).map(q => q.art);
-    return { fresh, rev:[...revSet], total:now.size, earned, missed };
+    return { fresh, total:now.size, earned };
   }
   function chip(q, cls){ return '<button type="button" class="ai-chip' + (cls ? " " + cls : "") + '" data-ai-term="' + esc(q.art) + '">' + q.e + " " + esc(q.n) + '</button>'; }
   function resultMsg(r){
     last = r.kabu || null;
-    const k = r.kabu || { fresh:[], total:discovered().size, earned:[], missed:[] };
-    lastMissed = (k.missed || []).map(id => BY.get(id)).filter(Boolean);
-    let h = "";
-    if(r.retry){
-      const n = r.arts.length, ok = n - (k.missed || []).length;
-      h += '<span class="ai-r1">🔁 もう一度 おしまい！ まちがえずに 打てた ことば ' + ok + ' / ' + n + '</span>';
-    }else h += '<span class="ai-r1">🆕 あたらしく 出会った ことば +' + k.fresh.length + '語</span>';
-    h += '<small>ぜんぶで ' + fmt(k.total) + ' / ' + fmt(TOTAL) + '語 発見</small>';
+    const k = r.kabu || { fresh:[], total:discovered().size, earned:[] };
+    let h = '<span class="ai-r1">🆕 あたらしく 出会った ことば +' + k.fresh.length + '語</span>' +
+      '<small>ぜんぶで ' + fmt(k.total) + ' / ' + fmt(TOTAL) + '語 発見</small>';
     for(const T of k.earned) h += '<span class="ai-earn">' + T[1] + " 称号ゲット！「" + esc(T[2]) + "」</span>";
     const td = todayWords();
     if(td.length) h += '<span class="ai-today"><b>📅 今日 覚えた ことば ' + td.length + '語</b><span class="ai-chips">' + td.map(q => chip(q, k.fresh.includes(q.art) ? "new" : "")).join("") + '</span></span>';
-    if(lastMissed.length && !r.retry) h += '<button type="button" class="ai-retry" data-ai-retry="1">🔁 まちがえた ' + lastMissed.length + '語だけ もう一度 挑戦</button><small>やらなくても 大丈夫。苦手ことばに のこって、あとで ふくしゅうに 出るよ</small>';
     return h;
   }
 
@@ -234,14 +168,14 @@ const AITABI = (() => {
       h += '<div class="ai-learn" role="status"><b>✅ ' + esc(prev.n) + '</b><span>' + prev.jr.icon + " " + esc(prev.jr.name) + '</span><p>' + esc(prev.ds) + '</p>' +
            (rel.length ? '<p class="ai-rel">🔗 つながる ことば: ' + rel.map(x => esc(x.n)).join("・") + '</p>' : "") + '</div>';
     }else h += '<div class="ai-learn ai-hint">こたえると、その ことばの 意味と、つながる ことばが 出るよ</div>';
-    const tag = weakSet.has(q.art) ? '<span class="ai-tag weak">💪 苦手ことば</span>' : revSet.has(q.art) ? '<span class="ai-tag rev">🔁 ふくしゅう</span>' : (pre && !pre.has(q.art) ? '<span class="ai-tag new">🆕 はじめまして</span>' : "");
+    const tag = pre && !pre.has(q.art) ? '<span class="ai-tag new">🆕 はじめまして</span>' : "";
     h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot">' + esc(q.n) + '</p>' + tag + '<small class="ai-cat">' + esc(q.c) + '</small>' +
          (q.al ? '<small class="ai-alt">読みかたは どれでも OK: ' + [q.r].concat(q.al).map(esc).join(" / ") + '</small>' : "") + '</div></div>';
     return h;
   }
   /* ── 結果・図鑑の くわしい 情報: たとえば / つながる ことば / しくみ図の 📍 ── */
   function info(q, inZukan){
-    const tag = inZukan ? "" : last && last.fresh.includes(q.art) ? '<span class="ai-tag new">🆕 はじめて 出会った</span>' : last && last.rev.includes(q.art) ? '<span class="ai-tag rev">🔁 ふくしゅう</span>' : "";
+    const tag = inZukan ? "" : last && last.fresh.includes(q.art) ? '<span class="ai-tag new">🆕 はじめて 出会った</span>' : "";
     const d = discovered(), p = nodeOf(q);
     let h = '<div class="ai-info">' + tag;
     if(q.ex) h += '<p class="ai-ex"><b>たとえば</b>' + q.exrb + '</p>';
@@ -257,7 +191,7 @@ const AITABI = (() => {
   /* ── ホーム: 見つけた ことば・称号・しくみ図・旅マップ ── */
   let diagCur = null;
   function home(m){
-    const d = discovered(), n = d.size, t = titleOf(n), nx = nextTitle(n), wk = weakList().length, td = todayWords().length, fv = favs().length;
+    const d = discovered(), n = d.size, t = titleOf(n), nx = nextTitle(n), td = todayWords().length, fv = favs().length;
     const jr = JR.map(J => { const all = pools[MODE_OF[J.id]], got = all.filter(q => d.has(q.art)).length;
       return '<li><span class="rn">' + J.icon + " " + J.name + (got >= all.length ? " 🏅" : "") + '</span><span class="rc"><b>' + got + '</b> / ' + all.length + '</span><i style="--w:' + (got / all.length * 100).toFixed(1) + '%;--c:' + J.color + '"></i></li>'; }).join("");
     if(JOURNEY_OF[m]) diagCur = JBY[JOURNEY_OF[m]].diagram;
@@ -268,7 +202,6 @@ const AITABI = (() => {
       '<p class="ai-title">' + (t ? t[1] + " いまの称号「<b>" + esc(t[2]) + "</b>」" : "🎒 さいしょの 称号まで あと " + (10 - n) + "語") +
       (nx && t ? '<small>つぎ「' + esc(nx[2]) + '」まで あと ' + (nx[0] - n) + '語</small>' : "") + (td ? '<small>📅 きょう 覚えた ことば ' + td + '語</small>' : "") + '</p>' +
       '<div class="ai-btns"><button type="button" class="ai-btn" data-ai-open="zukan">📖 AIことば図鑑</button>' +
-      '<button type="button" class="ai-btn" data-ai-open="weak">💪 苦手ことば' + (wk ? "(" + wk + ")" : "") + '</button>' +
       '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 ミニクイズ</button>' +
       '<button type="button" class="ai-btn" data-ai-open="fav">⭐ お気に入り' + (fv ? "(" + fv + ")" : "") + '</button></div>' +
       '<div class="ai-diag"><p class="ai-dh">🗺 しくみ図 <small>覚えた ことばが 📍に なるよ。場所を おすと 中身が 出るよ</small></p><div class="ai-dtabs">' +
@@ -284,20 +217,17 @@ const AITABI = (() => {
       chips.innerHTML = '<div class="ai-route" style="--c:' + J.color + '"><span class="st">🚩 START</span>' +
         J.stops.map((S, i) => '<span class="ar">→</span><span class="st' + (stopDone[i] ? " done" : i === cur ? " now" : "") + '">' + S.icon + " " + esc(S.name) + (stopDone[i] ? " ✅" : i === cur ? '<em>いまここ</em>' : "") + '</span>').join("") +
         '<span class="ar">→</span><span class="st goal' + (cur < 0 ? " done" : "") + '">🏆 ' + esc(J.goal) + '</span></div>' +
-        '<p class="ai-lead">' + esc(J.lead) + '。1回 10問。入門は 新しい ことば 10問、初級からは 新しい ことば 7問 + ふくしゅう 3問。</p>';
-    }else chips.innerHTML = '<p class="ai-lead">' + (m === "amas" ? "3つの 旅の ことばを ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10語。" :
-      m === "aweak" ? "まちがえた ことばが 自動で 苦手ことばに なるよ。まちがえずに 打てたら 苦手から はずれるよ。" : "まちがえた・時間が かかった・ひさしぶりの ことばを 先に 出すよ。") + '</p>';
+        '<p class="ai-lead">' + esc(J.lead) + '。1回 10問。どの ステージも いつも 同じ 10語。タイムで 勝負しよう。</p>';
+    }else chips.innerHTML = '<p class="ai-lead">3つの 旅の ことばを ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10語。</p>';
   }
   function lvInfo(m, i){
-    if(m === "afuku") return { name:"🔁 ふくしゅう", sub:"ひさしぶり・にがての 10語", short:"ふくしゅう" };
-    if(m === "aweak") return { name:"💪 苦手克服", sub:"まちがえた ことば 10語", short:"苦手克服" };
     if(m === "amas") return { name:"マスター" + (i + 1), sub:"3つの 旅から 10語", short:"マスター" + (i + 1) };
     const s = stageInfo[m][i], J = JBY[JOURNEY_OF[m]], S = J.stops[s.stop], L = LVN[s.dv];
-    return { name:"Lv." + (i + 1) + " " + L.icon + L.name, sub:S.icon + " " + S.name + "・🆕" + s.fresh.length + (s.def.length ? " + 🔁" + s.def.length : ""), short:"Lv." + (i + 1) };
+    return { name:"Lv." + (i + 1) + " " + L.icon + L.name, sub:S.icon + " " + S.name + "・10語", short:"Lv." + (i + 1) };
   }
 
-  /* ── AIことば図鑑(検索・旅・分類・むずかしさ・お気に入り・苦手で しぼれる) ── */
-  let zf = { q:"", j:"", c:"", dv:"", fav:false, weak:false, shown:90 };
+  /* ── AIことば図鑑(検索・旅・分類・むずかしさ・お気に入りで しぼれる) ── */
+  let zf = { q:"", j:"", c:"", dv:"", fav:false, shown:90 };
   const normQ = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60)).replace(/\s/g, "");
   function sheet(id){
     let sh = document.getElementById(id);
@@ -306,10 +236,10 @@ const AITABI = (() => {
     sh.classList.remove("hidden"); document.body.classList.add("ai-lock"); return sh;
   }
   function closeSheet(id){ const sh = document.getElementById(id); if(sh) sh.classList.add("hidden"); if(!document.querySelector(".ai-sheet:not(.hidden)")) document.body.classList.remove("ai-lock"); }
-  function openZukan(pre2){ if(pre2) Object.assign(zf, { q:"", j:"", c:"", dv:"", fav:false, weak:false }, pre2); zf.shown = 90; sheet("ai-zk"); drawZukan(); }
+  function openZukan(pre2){ if(pre2) Object.assign(zf, { q:"", j:"", c:"", dv:"", fav:false }, pre2); zf.shown = 90; sheet("ai-zk"); drawZukan(); }
   function drawZukan(){
-    const sh = document.getElementById("ai-zk"), d = discovered(), fv = new Set(favs()), wk = new Set(weakList().map(q => q.art)), qq = normQ(zf.q);
-    const list = ALL.filter(q => (!zf.j || q.j === zf.j) && (!zf.c || q.c === zf.c) && (!zf.dv || q.dv === +zf.dv) && (!zf.fav || fv.has(q.art)) && (!zf.weak || wk.has(q.art)) &&
+    const sh = document.getElementById("ai-zk"), d = discovered(), fv = new Set(favs()), qq = normQ(zf.q);
+    const list = ALL.filter(q => (!zf.j || q.j === zf.j) && (!zf.c || q.c === zf.c) && (!zf.dv || q.dv === +zf.dv) && (!zf.fav || fv.has(q.art)) &&
       (!qq || [q.n, q.r].concat(q.al || [], [q.ds]).some(x => normQ(x).includes(qq))));
     const got = list.filter(q => d.has(q.art)).length;
     const opt = (v, label, cur) => '<option value="' + esc(v) + '"' + (String(cur) === String(v) ? " selected" : "") + '>' + esc(label) + '</option>';
@@ -321,10 +251,8 @@ const AITABI = (() => {
       '<div class="ai-zf"><select id="ai-zj">' + opt("", "🧭 旅", zf.j) + JR.map(J => opt(J.id, J.icon + " " + J.name.replace("Webサービスのしくみ", "Web").replace("サービス運営", "運営"), zf.j)).join("") + '</select>' +
       '<select id="ai-zc">' + opt("", "🏷 分類", zf.c) + cats.map(c => opt(c, c, zf.c)).join("") + '</select>' +
       '<select id="ai-zd">' + opt("", "📶 むずかしさ", zf.dv) + D.levels.map(L => opt(L.difficulty, L.icon + " " + L.name, zf.dv)).join("") + '</select></div>' +
-      '<div class="ai-ztog"><button type="button" data-t="fav"' + (zf.fav ? ' class="on"' : "") + '>⭐ お気に入り</button><button type="button" data-t="weak"' + (zf.weak ? ' class="on"' : "") + '>💪 苦手ことば</button></div>' +
-      (zf.fav && list.length ? '<button type="button" class="ai-btn ai-wide" data-ai-practice="fav">⭐ お気に入りを 練習する(' + Math.min(ROUNDS, list.length) + '問)</button>' : "") +
-      (zf.weak && list.length ? '<button type="button" class="ai-btn ai-wide" data-ai-practice="weak">💪 苦手克服を はじめる</button>' : "") +
-      (list.length ? "" : '<p class="ai-empty">' + (zf.fav ? "⭐ まだ お気に入りが ないよ。ことばの ページの ☆ を おすと 入るよ" : zf.weak ? "💪 いまは 苦手ことばが ないよ。すごい！" : "見つからなかったよ") + '</p>') +
+      '<div class="ai-ztog"><button type="button" data-t="fav"' + (zf.fav ? ' class="on"' : "") + '>⭐ お気に入り</button></div>' +
+      (list.length ? "" : '<p class="ai-empty">' + (zf.fav ? "⭐ まだ お気に入りが ないよ。ことばの ページの ☆ を おすと 入るよ" : "見つからなかったよ") + '</p>') +
       '<div class="ai-grid">' + list.slice(0, zf.shown).map(q => d.has(q.art)
         ? '<button type="button" class="ai-tile on" data-ai-term="' + esc(q.art) + '"><span>' + q.e + '</span><b>' + esc(q.n) + '</b><small>' + q.jr.icon + " " + esc(q.c) + (fv.has(q.art) ? " ⭐" : "") + '</small></button>'
         : '<button type="button" class="ai-tile" data-ai-term="' + esc(q.art) + '"><span>❔</span><b>？？？</b><small>' + q.jr.icon + " " + LVN[q.dv].name + '</small></button>').join("") + '</div>' +
@@ -349,7 +277,7 @@ const AITABI = (() => {
     box.innerHTML = '<div class="ai-card">' + '<button type="button" class="ai-x" aria-label="とじる">×</button>' + (e
       ? '<p class="ai-cn"><span class="ai-ic">' + q.e + '</span><ruby>' + esc(q.n) + '<rt>' + esc(q.r) + '</rt></ruby><button type="button" class="ai-fav' + (fav ? " on" : "") + '" data-ai-fav="' + esc(id) + '" aria-label="お気に入り">' + (fav ? "⭐" : "☆") + '</button></p>' +
         '<p class="ai-meta">' + esc(q.c) + '</p><p class="ai-d">' + q.rb + '</p>' + info(q, true) +
-        '<p class="ai-st">出会った回数 ' + e[0] + '回' + (e[1] ? '・まちがい ' + e[1] + '回' : "") + (weakList().includes(q) ? "・💪 苦手ことば" : "") + '</p>'
+        '<p class="ai-st">出会った回数 ' + e[0] + '回' + (e[1] ? '・まちがい ' + e[1] + '回' : "") + '</p>'
       : '<p class="ai-cn"><span class="ai-ic">❔</span>？？？</p><p class="ai-d">まだ 出会っていない ことばです。<b>' + esc(where) + '</b>で 出会えるよ。</p><p class="ai-small">' + q.jr.icon + " " + esc(q.jr.name) + " ・ " + esc(q.c) + '</p>') +
       (trail.length > 1 ? '<button type="button" class="ai-btn ai-wide" data-ai-back="1">← 1つ前の ことばへ</button>' : "") + '</div>';
     box.querySelector(".ai-x").onclick = () => { trail = []; closeSheet("ai-zdt"); };
@@ -393,7 +321,7 @@ const AITABI = (() => {
 
   /* ── おす・えらぶ(まとめて 受ける。結果画面や シートの 中身は 何度も 書きかわるため) ── */
   document.addEventListener("click", e => {
-    const t = e.target.closest && e.target.closest("[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-retry],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-practice],[data-ai-ans],.ai-node");
+    const t = e.target.closest && e.target.closest("[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-ans],.ai-node");
     if(!t) return;
     if(t.dataset.aiTerm) return detail(t.dataset.aiTerm);
     if(t.dataset.aiBack){ trail.pop(); const id = trail[trail.length - 1]; if(id){ trail.pop(); detail(id); } return; }
@@ -403,21 +331,8 @@ const AITABI = (() => {
     if(t.dataset.aiOpen){
       const o = t.dataset.aiOpen;
       if(o === "zukan") return openZukan({});
-      if(o === "weak") return openZukan({ weak:true });
       if(o === "fav") return openZukan({ fav:true });
       if(o === "quiz") return openQuiz();
-    }
-    if(t.dataset.aiPractice){
-      const list = t.dataset.aiPractice === "fav" ? favs().map(id => BY.get(id)) : null;
-      ["ai-zk", "ai-zdt"].forEach(closeSheet);
-      if(list){ pre = discovered(); revSet = new Set(list.map(q => q.art)); weakSet = new Set(); runMiss = {}; start(mode, level, list.slice(0, ROUNDS).sort(easy)); }
-      else { setMode("aweak"); start("aweak", 0); }
-      return;
-    }
-    if(t.dataset.aiRetry){
-      if(!lastMissed.length) return;
-      pre = discovered(); revSet = new Set(); weakSet = new Set(lastMissed.map(q => q.art)); runMiss = {};
-      return start(mode, level, lastMissed.slice());
     }
     if(t.dataset.aiDiag){ diagCur = t.dataset.aiDiag; const box = document.querySelector(".ai-dbox"); if(box) box.innerHTML = diagramSvg(diagCur, { counts:countsFor(diagCur) });
       document.querySelectorAll("[data-ai-diag]").forEach(b => b.classList.toggle("on", b.dataset.aiDiag === diagCur)); const l = document.getElementById("ai-dlist"); if(l) l.innerHTML = ""; return; }
@@ -470,7 +385,7 @@ const AITABI = (() => {
 .ai-q{display:flex;gap:12px;align-items:center;margin:0 0 10px}.ai-q .spot{font-size:clamp(22px,7vw,30px);line-height:1.2;word-break:break-word;margin:0}
 .ai-ic{font-size:36px;width:58px;height:58px;display:grid;place-items:center;background:linear-gradient(135deg,#e0e7ff,#a5f3fc);border-radius:16px;flex:none}
 .ai-cat,.ai-alt{display:block;font-size:11.5px;color:var(--muted);margin-top:3px}.ai-alt{color:#0369a1;font-weight:700}
-.ai-tag{display:inline-block;margin-top:4px;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px}.ai-tag.new{background:#fef3c7;color:#92400e}.ai-tag.rev{background:#fce7f3;color:#9d174d}.ai-tag.weak{background:#ffedd5;color:#9a3412}
+.ai-tag{display:inline-block;margin-top:4px;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px}.ai-tag.new{background:#fef3c7;color:#92400e}
 .ai-info{margin-top:8px}.ai-info .ai-tag{margin:0 0 6px}
 .ai-ex{font-size:13.5px;line-height:2;margin:6px 0;background:#f0f9ff;border-radius:10px;padding:6px 10px;color:#0c4a6e}.ai-ex b{display:inline-block;font-size:11.5px;background:#0ea5e9;color:#fff;border-radius:99px;padding:0 8px;margin-right:6px;line-height:1.8}
 .ai-small{font-size:12.5px;font-weight:800;margin:8px 0 2px;color:#334155}.ai-muted{color:#64748b;font-weight:600}
@@ -478,7 +393,6 @@ const AITABI = (() => {
 .pins-msg .ai-r1{display:block}.pins-msg small{display:block;font-weight:700;color:var(--muted);font-size:13px}
 .ai-earn{display:block;margin-top:8px;font-size:16px;color:#b45309;animation:aiIn .5s ease-out}
 .ai-today{display:block;margin-top:10px;background:#fff;border:1px solid #e0e7ff;border-radius:14px;padding:8px 10px;text-align:left}.ai-today b{display:block;font-size:14px;color:#312e81}.ai-today .ai-chips{display:flex}
-.ai-retry{display:block;width:100%;margin:10px 0 2px;padding:12px;border-radius:14px;border:0;background:linear-gradient(90deg,#6d3fd6,#0ea5e9);color:#fff;font:inherit;font-weight:900;font-size:15px;cursor:pointer}
 .ai-sheet .ai-zbox{max-width:560px;position:relative}.ai-x{position:absolute;right:10px;top:8px;border:0;background:none;font-size:26px;color:#64748b;line-height:1;cursor:pointer}
 .ai-zsum{text-align:center;margin:4px 0 8px}.ai-zsum b{font-size:22px;color:#6d3fd6}
 .ai-search{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border-radius:12px;border:1.5px solid #c7d2fe;margin:0 0 8px;background:#fff;color:#1e1b4b}
@@ -505,5 +419,5 @@ body.ai-lock{overflow:hidden}
 
   return { kind:"aiterm", modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
            card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), retarget,
-           noRank:m => !RANK_READY || m === "afuku" || m === "aweak", noBoard:!RANK_READY, openZukan, diagramSvg };
+           noRank:(m, lv) => !RANK_READY || lv >= 60, noBoard:!RANK_READY, openZukan, diagramSvg };
 })();

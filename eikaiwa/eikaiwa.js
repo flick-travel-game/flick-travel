@@ -1,15 +1,15 @@
 /* 英会話フリック旅行: 英単語と 日常英会話を フリックで 打ち写して 旅する。(けいくん 2026-09-26)
    ─ 土台の index.html(世界フリック旅行)の 差しこみ口(PLUG)に「英語の 旅」を 足す ファイル。eikaiwa/ の ページだけが 読む ─
    ことばは data/english.json → tools/build_games.py が eikaiwa/english.js(EN_WORDS)に する。**ことばを 足す・直すのは data/english.json だけ**
-   ・旅: 🌱 入門 / 📘 初級 / 🧭 中級 / 🌐 上級 の 英単語 + 💬 日常英会話(場面ごと)。+ 🏆 マスター(ぜんぶ)・🔁 ふくしゅう・💪 苦手克服
-   ・1回は かならず 10問。入門の 英単語は 新しい ことば 10問、ほかは 新しい ことば + ふくしゅう で 10問
+   ・旅: 🌱 入門 / 📘 初級 / 🧭 中級 / 🌐 上級 の 英単語 + 💬 日常英会話(場面ごと)。+ 🏆 マスター(ぜんぶ)
+   ・1回は かならず 10問。どの ステージも いつも 同じ 10問(やさしい順に 10こずつ)= スピード記録勝負(けいくん 2026-09-27)
    ・打つのは 英字だけ。大文字・小文字は 区別しない。空白・' , . ? ! - は 打たなくても すすむ(norm)
    ・こたえると 次の 問題の 上に 意味(と 返事の 例)が 出る。🔊 で 発音(ブラウザの 読み上げ。サーバーも お金も 要らない)
    ⚠️ 英検・TOEIC の めやすは 出さない(けいくん 2026-09-26「勉強してる感が強くなるので表記しない方がいい」)
    ⚠️ 株式(kabu/kabu.js)・AI(ai/ai.js)と 同じ 差しこみ口を 使う。ほかの ゲームには EIKAIWA が 無いので 何も 変わらない */
 const EIKAIWA = (() => {
   const D = EN_WORDS;
-  const ROUNDS = 10, REV = 3;
+  const ROUNDS = 10;
   const RANK_READY = true;  // かずともの FLICK_MODES に ew1 ew2 ew3 ew4 etalk emas を 足したら true。false だと ランキングを 出さない・送らない
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const fmt = n => n.toLocaleString("ja-JP");
@@ -35,58 +35,36 @@ const EIKAIWA = (() => {
   const easy = (a, b) => a.r.length - b.r.length;
 
   /* ── 旅の ステージを 組む ──
-     英単語: 入門の 旅は 10語ずつ。ほかは 新しい 7語 + ふくしゅう 3語(前の 旅の ことばも ふくしゅうに 出る)
-     日常英会話: 場面ごとに 立ち寄る。さいしょの 場面は 10文ずつ、そのあとは 新しい 文 + ふくしゅう */
+     英単語: 旅の ことばを data の ならび順に 10語ずつ。
+     日常英会話: 場面の 順に、場面の 中は やさしい順(むずかしさ → data の ならび順)に 10文ずつ(どの 場面も 30文 = 3ステージ)。
+     どの ステージも いつも 同じ 10問(スピード記録勝負)。あまりが 出たら 前の ステージの うしろから 足りないぶんを もう一度 出す(土台の LEVELS と 同じ きまり)。
+     (けいくん 2026-09-27「苦手克服と復習は無しにして スピード記録勝負に揃えてください」。まえは 新しい ことば + ふくしゅう だった) */
   const levels = {}, pools = {}, stageInfo = {}, maps = {}, colors = {};
-  let introduced = [];  // これまでの 旅で 出た ことば(きろくが まだ 無い人の ふくしゅうの 候補)。英単語と 英会話で 分ける
-  const introBy = {};
-  function defaults(n, avoid){
-    const def = [], L0 = introduced.length;
-    for(const back of [4, 12, 25, 45, 70, 100]){  // 少し前・だいぶ前・ずっと前
-      if(def.length >= n) break;
-      const q = introduced[Math.max(0, L0 - back)];
-      if(q && !def.includes(q) && !avoid.has(q)) def.push(q);
-    }
-    for(let x = L0 - 1; def.length < n && x >= 0; x--) if(!def.includes(introduced[x]) && !avoid.has(introduced[x])) def.push(introduced[x]);
-    return def;
-  }
-  function chunk(news, per, info, lv, stopOf){
-    const S = Math.ceil(news.length / per);
-    let p = 0;
-    for(let k = 0; k < S; k++){
-      const nNew = Math.floor(news.length / S) + (k < news.length % S ? 1 : 0);
-      const fresh = news.slice(p, p + nNew); p += nNew;
-      const def = defaults(ROUNDS - fresh.length, new Set(fresh));
-      info.push({ fresh, def, dv:fresh[0].dv, stop:stopOf ? stopOf(k, S) : 0 });
-      lv.push(arrange(fresh, def));
-      introduced = introduced.concat(fresh);
-    }
+  function tens(list){  // [{ fresh:その ステージで はじめて 出る ことば, set:10問(やさしい順), dv:いちばん 多い むずかしさ }]
+    const out = [];
+    for(let i = 0; i + ROUNDS <= list.length; i += ROUNDS) out.push({ fresh:list.slice(i, i + ROUNDS), set:list.slice(i, i + ROUNDS) });
+    const rest = list.length % ROUNDS;
+    if(rest && list.length > ROUNDS) out.push({ fresh:list.slice(-rest), set:list.slice(-rest - (ROUNDS - rest)) });
+    else if(rest) out.push({ fresh:list.slice(), set:list.slice() });
+    return out.map(x => { const n = {}; x.fresh.forEach(q => n[q.dv] = (n[q.dv] || 0) + 1);
+      return { fresh:x.fresh, set:x.set.slice().sort(easy), dv:+Object.keys(n).sort((a, b) => n[b] - n[a] || a - b)[0] }; });
   }
   for(const J of JR){
     const m = MODE_OF[J.id], terms = ALL.filter(q => q.j === J.id);
-    const lv = [], info = [];
-    introduced = introBy[J.kind] || [];
+    let info;
     if(J.kind === "phrase"){
-      SC.forEach((S, si) => {
-        const news = terms.filter(q => q.sc === S.id).sort((a, b) => a.dv - b.dv || a.ord - b.ord);
-        if(news.length) chunk(news, si === 0 && !introduced.length ? ROUNDS : ROUNDS - REV - 1, info, lv, () => si);
-      });
+      const scIdx = Object.fromEntries(SC.map((S, i) => [S.id, i]));
+      info = tens(terms.slice().sort((a, b) => scIdx[a.sc] - scIdx[b.sc] || a.dv - b.dv || a.ord - b.ord));
+      info.forEach(s => { s.stop = scIdx[s.fresh[0].sc]; });
     }else{
-      const per = J.first ? ROUNDS : ROUNDS - REV;
-      chunk(terms, per, info, lv, null);
+      info = tens(terms);
       info.forEach((s, k) => { s.stop = Math.min(J.stops.length - 1, Math.floor(k * J.stops.length / info.length)); });
     }
-    introBy[J.kind] = introduced;
+    const lv = info.map(s => s.set);
     levels[m] = lv; stageInfo[m] = info; pools[m] = terms; colors[m] = J.color;
     maps[m] = { icon:J.icon, name:J.name, cardName:J.name, title:"", word:"英単語帳", thing:"ことば", unit:J.kind === "phrase" ? "文" : "語", doneWord:"出会った ことば", miss:"まだ 出会っていない ことば",
                 lvTitle:J.icon + " " + J.name + "　旅を すすめる",
                 card:(mm, done) => '<small>' + terms.length + (J.kind === "phrase" ? "文" : "語") + '・' + lv.length + 'ステージ</small><small>出会った ' + done + '</small>' };
-  }
-  function arrange(fresh, rev){
-    const out = fresh.slice().sort(easy);
-    const slots = [2, 5, 8, 1, 4, 7, 9, 3, 6, 0];
-    rev.forEach((q, i) => out.splice(Math.min(slots[i], out.length), 0, q));
-    return out.slice(0, ROUNDS);
   }
   /* マスター: ぜんぶ まぜて(きまった ならび。どの ステージも いつも 同じ 10問 = タイムを くらべられる) */
   {
@@ -101,15 +79,7 @@ const EIKAIWA = (() => {
                   lvTitle:"🏆 マスター　英単語と 英会話を まぜて ぜんぶ",
                   card:() => '<small>' + fmt(TOTAL) + 'こ・' + lv.length + 'ステージ</small><small>単語も 会話も はば広く</small>' };
   }
-  /* ふくしゅう / 苦手克服(その人の きろくから 毎回 えらぶ 10問) */
-  const starter = () => ALL.filter(q => q.j === JR[0].id).slice(0, ROUNDS);
-  for(const [m, icon, name, color, sub] of [["efuku", "🔁", "ふくしゅう", "pink", "毎回 ちがう 10問"], ["eweak", "💪", "苦手克服", "orange", "苦手ことばを 10問"]]){
-    levels[m] = [starter()]; pools[m] = ALL; colors[m] = color;
-    maps[m] = { icon, name, cardName:name, word:"英単語帳", thing:"ことば", unit:"こ", doneWord:"出会った ことば",
-                lvTitle:icon + " " + name + "　" + (m === "efuku" ? "ひさしぶり・時間がかかった ことばを もう一度" : "まちがえた ことばだけ 10問"),
-                card:() => '<small>' + sub + '</small><small>' + (m === "eweak" ? "苦手 " + weakList().length + "こ" : discovered().size < ROUNDS ? "まず 旅で 10こ 出会おう" : "出会った " + discovered().size + "こ") + '</small>' };
-  }
-  const MODES_ALL = ["ew1", "etalk", "ew2", "ew3", "ew4", "emas", "efuku", "eweak"];
+  const MODES_ALL = ["ew1", "etalk", "ew2", "ew3", "ew4", "emas"];
 
   /* ── 🔊 発音(ブラウザに 入っている 読み上げ。音が 出ない 端末でも あそべる) ──
      ⚠️ iPhone は タップの 中で 1回 鳴らすまで 音が 出ない → 旅を はじめる ボタンの ところで 音なしで 1回 鳴らしておく(unlock) */
@@ -153,84 +123,42 @@ const EIKAIWA = (() => {
   function toggleFav(id){ const a = favs(), i = a.indexOf(id); if(i < 0) a.push(id); else a.splice(i, 1); recSet(pkey("flick-en-fav"), JSON.stringify(a)); return i < 0; }
   function discovered(){ const L = log(); return new Set(Object.keys(L).filter(id => BY.has(id))); }
   function discoveredIn(m){ const d = discovered(), s = new Set(); for(const q of (pools[m] || [])) if(d.has(q.art)) s.add(q.art); return s; }
-  function weakScore(e){ return e ? 3 * e[2] + (e[1] >= 2 && e[1] / e[0] >= .4 ? 2 : 0) + Math.min(1.5, e[1] / Math.max(1, e[0]) * 2) : 0; }
-  function weakList(){ const L = log(); return ALL.filter(q => L[q.art] && (L[q.art][2] || (L[q.art][1] >= 2 && L[q.art][1] / L[q.art][0] >= .4))).sort((a, b) => weakScore(L[b.art]) - weakScore(L[a.art])); }
   const dayOf = t => { const d = new Date(t); return d.getFullYear() * 400 + d.getMonth() * 32 + d.getDate(); };
   function todayWords(){ const L = log(), td = dayOf(Date.now()); return ALL.filter(q => L[q.art] && L[q.art][5] && dayOf(L[q.art][5]) === td).sort((a, b) => log()[a.art][5] - log()[b.art][5]); }
-  let runMiss = {};
   function answered(q, secs, miss){
     if(!q || !BY.has(q.art)) return;
     if(autoSay()) say(q.t);  // 打ち終わったら その 英語を 読みあげる(🔊 の 切りかえは トップの パネル)
     const L = log(), e = L[q.art] || [0, 0, 0, 0, 0, Date.now()];
     const per = secs / Math.max(1, q.r.length);
     L[q.art] = [e[0] + 1, e[1] + miss, miss > 0 ? 1 : 0, e[0] ? +(e[3] * .6 + per * .4).toFixed(3) : +per.toFixed(3), Date.now(), e[5] || Date.now()];
-    if(miss > 0) runMiss[q.art] = 1;
     save(L);
   }
-  /* ふくしゅうの 点数: まちがえた > 何度も まちがえた > 時間がかかった > ひさしぶり > まだ 少ししか 見ていない */
-  function reviewPick(cands, n, avoid){
-    const L = log(), per = cands.map(q => (L[q.art] || [])[3]).filter(Boolean).sort((a, b) => a - b);
-    const med = per.length ? per[Math.floor(per.length / 2)] : .5, now = Date.now();
-    return cands.filter(q => !avoid.has(q.art) && L[q.art]).map(q => {
-      const e = L[q.art];
-      const s = 3 * e[2] + 1.5 * Math.min(1, e[1] / Math.max(1, e[0])) + 2 * Math.max(0, e[3] / med - 1)
-              + Math.min(2, (now - e[4]) / 864e5 / 3) + 1 / e[0] + Math.random() * .6;
-      return { q, s };
-    }).sort((a, b) => b.s - a.s).slice(0, n).map(x => x.q);
-  }
-  let pre = null, revSet = new Set(), weakSet = new Set();
+  let pre = null;  // この回の 前に 出会っていた ことば
+  /* 問題: いつも 同じ 10問(土台の LEVELS と 同じ。人ごとに かえない) */
   function makeQs(m, lv){
     unlock();  // 旅を はじめる タップの 中 = iPhone で 音を 出せるように しておく
-    pre = discovered(); revSet = new Set(); runMiss = {};
-    weakSet = new Set(weakList().map(q => q.art));
-    const pad = (qs, from) => { for(const q of from){ if(qs.length >= ROUNDS) break; if(!qs.includes(q)) qs.push(q); } return qs; };
-    if(m === "efuku" || m === "eweak"){
-      const seen = ALL.filter(q => pre.has(q.art));
-      let qs = m === "eweak" ? weakList().slice(0, ROUNDS) : [];
-      qs = qs.concat(reviewPick(seen, ROUNDS - qs.length, new Set(qs.map(q => q.art))));
-      qs.forEach(q => revSet.add(q.art));
-      return pad(qs, starter().concat(ALL)).sort(easy);
-    }
-    const info = stageInfo[m] && stageInfo[m][lv];
-    if(!info || !info.def.length) return levels[m][lv].slice();
-    /* ふくしゅうの 候補: この 旅の 前の ステージ + 前の 旅(やさしい ほう)で 出会った ことば */
-    const avoid = new Set(info.fresh.map(q => q.art)), cands = [], J = JBY[JOURNEY_OF[m]];
-    for(const jj of JR){
-      if(jj === J) break;
-      if(jj.kind === J.kind) for(const s of stageInfo[MODE_OF[jj.id]]) s.fresh.forEach(q => { if(pre.has(q.art)) cands.push(q); });
-    }
-    for(const s of stageInfo[m]){ if(s === info) break; s.fresh.forEach(q => { if(pre.has(q.art)) cands.push(q); }); }
-    const rev = reviewPick(cands, info.def.length, avoid);
-    for(const q of info.def){ if(rev.length >= info.def.length) break; if(!rev.includes(q) && !avoid.has(q.art)) rev.push(q); }
-    rev.forEach(q => revSet.add(q.art));
-    return arrange(info.fresh, rev);
+    pre = discovered();
+    return levels[m][lv].slice();
   }
   function titles(){ return D.titles.filter(T => T[0] < TOTAL); }
   function titleOf(n){ let t = null; for(const T of titles()) if(n >= T[0]) t = T; if(n >= TOTAL) t = [TOTAL].concat(D.allTitle); return t; }
   function nextTitle(n){ for(const T of titles()) if(n < T[0]) return T; return n < TOTAL ? [TOTAL].concat(D.allTitle) : null; }
-  let last = null, lastMissed = [];
+  let last = null;
   function finished(r, qs){
     const now = discovered(), before = pre || new Set();
     const fresh = qs.filter(q => !before.has(q.art) && now.has(q.art)).map(q => q.art);
     const earned = titles().concat([[TOTAL].concat(D.allTitle)]).filter(T => before.size < T[0] && now.size >= T[0]);
-    const missed = qs.filter(q => runMiss[q.art]).map(q => q.art);
-    return { fresh, rev:[...revSet], total:now.size, earned, missed };
+    return { fresh, total:now.size, earned };
   }
   function chip(q, cls){ return '<button type="button" class="en-chip' + (cls ? " " + cls : "") + '" data-en-term="' + esc(q.art) + '">' + esc(q.n) + '</button>'; }
   function resultMsg(r){
     last = r.kabu || null;
-    const k = r.kabu || { fresh:[], total:discovered().size, earned:[], missed:[] };
-    lastMissed = (k.missed || []).map(id => BY.get(id)).filter(Boolean);
-    let h = "";
-    if(r.retry){
-      const n = r.arts.length, ok = n - (k.missed || []).length;
-      h += '<span class="en-r1">🔁 もう一度 おしまい！ まちがえずに 打てた ことば ' + ok + ' / ' + n + '</span>';
-    }else h += '<span class="en-r1">🆕 あたらしく 出会った ことば +' + k.fresh.length + '</span>';
+    const k = r.kabu || { fresh:[], total:discovered().size, earned:[] };
+    let h = '<span class="en-r1">🆕 あたらしく 出会った ことば +' + k.fresh.length + '</span>';
     h += '<small>ぜんぶで ' + fmt(k.total) + ' / ' + fmt(TOTAL) + ' 発見</small>';
     for(const T of k.earned) h += '<span class="en-earn">' + T[1] + " 称号ゲット！「" + esc(T[2]) + "」</span>";
     const td = todayWords();
     if(td.length) h += '<span class="en-today"><b>📅 今日 覚えた ことば ' + td.length + '</b><span class="en-chips">' + td.map(q => chip(q, k.fresh.includes(q.art) ? "new" : "")).join("") + '</span></span>';
-    if(lastMissed.length && !r.retry) h += '<button type="button" class="en-retry" data-en-retry="1">🔁 まちがえた ' + lastMissed.length + 'こだけ もう一度 挑戦</button><small>やらなくても 大丈夫。苦手ことばに のこって、あとで ふくしゅうに 出るよ</small>';
     return h;
   }
 
@@ -240,10 +168,9 @@ const EIKAIWA = (() => {
        ・「さっき 打った ことば」の 行は 出さない(意味は 問題の ときに もう 見ている)
        ・英単語: 英語を いちばん 大きく、その すぐ下に 日本語の 意味
        ・英会話: 日本語の 意味を 大きめに、下に「💬 返事の例」。打つ 英文は その下の 四角
-       ・「はじめまして」の ふだは 出さない(ふくしゅう・苦手は 小さな 字で そえるだけ) */
-    const note = weakSet.has(q.art) ? '<span class="en-note2">💪 苦手</span>' : revSet.has(q.art) ? '<span class="en-note2">🔁 ふくしゅう</span>' : "";
+       ・「はじめまして」の ふだは 出さない */
     const say = TTS ? '<button type="button" class="en-say big" data-en-say="' + esc(q.t) + '" aria-label="発音を 聞く">🔊 きく</button>' : "";
-    let h = '<p class="en-type">⌨️ ' + (q.kind === "word" ? "この 英単語を 打とう" : "この 英語を 打とう") + note + '</p>';
+    let h = '<p class="en-type">⌨️ ' + (q.kind === "word" ? "この 英単語を 打とう" : "この 英語を 打とう") + '</p>';
     /* 英単語も 英会話と 同じ 形(けいくん 2026-09-26「英単語も同じように日本語で大きく問題を表示 / 答えの欄に英単語のスペルを表示」):
        日本語の 意味が 大きな 問題、英語の スペルは 下の 答えの 欄(1字ずつ 四角)にだけ 出す */
     const kindLabel = q.kind === "word" ? q.e + " " + esc(q.pos) : SCBY[q.sc].icon + " " + esc(SCBY[q.sc].name);
@@ -275,7 +202,7 @@ const EIKAIWA = (() => {
   function nameHtml(q){ return '<span lang="en" class="en-nm">' + esc(q.t) + '</span><span class="en-nmj">' + q.mrb + '</span>'; }
   /* ── 結果・図鑑の くわしい 情報: 例文 / 返事の 例 / ひとこと ── */
   function info(q, inZukan){
-    const tag = inZukan ? "" : last && last.fresh.includes(q.art) ? '<span class="en-tag new">🆕 はじめて 出会った</span>' : last && last.rev.includes(q.art) ? '<span class="en-tag rev">🔁 ふくしゅう</span>' : "";
+    const tag = inZukan ? "" : last && last.fresh.includes(q.art) ? '<span class="en-tag new">🆕 はじめて 出会った</span>' : "";
     let h = '<div class="en-info">' + tag + (inZukan ? "" : '<p class="en-sayline">' + sayBtn(q.t) + (TTS ? '<button type="button" class="en-say slow" data-en-say="' + esc(q.t) + '" data-en-slow="1" aria-label="ゆっくり 聞く">🐢 ゆっくり</button>' : "") + '</p>');
     if(q.ex) h += '<p class="en-ex"><b>例文</b><span lang="en">' + esc(q.ex) + '</span>' + sayBtn(q.ex, "例文を 聞く") + (q.exrb ? '<br><small>' + q.exrb + '</small>' : "") + '</p>';
     if(q.rp) h += '<p class="en-ex rp"><b>返事の 例</b><span lang="en">' + esc(q.rp) + '</span>' + sayBtn(q.rp, "返事を 聞く") + (q.rprb ? '<br><small>' + q.rprb + '</small>' : "") + '</p>';
@@ -285,7 +212,7 @@ const EIKAIWA = (() => {
 
   /* ── ホーム: 見つけた ことば・称号・旅ごとの 数・🔊 の 切りかえ ── */
   function home(m){
-    const d = discovered(), n = d.size, t = titleOf(n), nx = nextTitle(n), wk = weakList().length, td = todayWords().length, fv = favs().length;
+    const d = discovered(), n = d.size, t = titleOf(n), nx = nextTitle(n), td = todayWords().length, fv = favs().length;
     const jr = JR.map(J => { const all = pools[MODE_OF[J.id]], got = all.filter(q => d.has(q.art)).length;
       return '<li><span class="rn">' + J.icon + " " + J.name + (got >= all.length ? " 🏅" : "") + '</span><span class="rc"><b>' + got + '</b> / ' + all.length + '</span><i style="--w:' + (got / all.length * 100).toFixed(1) + '%;--c:' + J.color + '"></i></li>'; }).join("");
     $("#kabu-panel").innerHTML = '<section class="en-panel">' +
@@ -294,7 +221,6 @@ const EIKAIWA = (() => {
       '<p class="en-title">' + (t ? t[1] + " いまの称号「<b>" + esc(t[2]) + "</b>」" : "🎒 さいしょの 称号まで あと " + (10 - n) + "こ") +
       (nx && t ? '<small>つぎ「' + esc(nx[2]) + '」まで あと ' + (nx[0] - n) + 'こ</small>' : "") + (td ? '<small>📅 きょう 覚えた ことば ' + td + 'こ</small>' : "") + '</p>' +
       '<div class="en-btns"><button type="button" class="en-btn" data-en-open="zukan">📖 英単語帳</button>' +
-      '<button type="button" class="en-btn" data-en-open="weak">💪 苦手ことば' + (wk ? "(" + wk + ")" : "") + '</button>' +
       '<button type="button" class="en-btn" data-en-open="quiz">🧩 ミニクイズ</button>' +
       '<button type="button" class="en-btn" data-en-open="fav">⭐ お気に入り' + (fv ? "(" + fv + ")" : "") + '</button></div>' +
       (TTS ? '<button type="button" class="en-auto' + (autoSay() ? " on" : "") + '" data-en-auto="1" aria-pressed="' + autoSay() + '">🔊 打ったら 英語を 読みあげる：<b>' + (autoSay() ? "ON" : "OFF") + '</b></button>' : "") +
@@ -309,20 +235,17 @@ const EIKAIWA = (() => {
       chips.innerHTML = '<div class="en-route" style="--c:' + J.color + '"><span class="st">🚩 START</span>' +
         stops.map((S, i) => '<span class="ar">→</span><span class="st' + (stopDone[i] ? " done" : i === cur ? " now" : "") + '">' + S.icon + " " + esc(S.name) + (stopDone[i] ? " ✅" : i === cur ? '<em>いまここ</em>' : "") + '</span>').join("") +
         '<span class="ar">→</span><span class="st goal' + (cur < 0 ? " done" : "") + '">🏆 ' + esc(J.goal) + '</span></div>' +
-        '<p class="en-lead">' + esc(J.lead) + '。1回 10問。' + (J.first ? "新しい ことば 10問。" : "新しい ことばに ふくしゅうが まざるよ。") + '</p>';
-    }else chips.innerHTML = '<p class="en-lead">' + (m === "emas" ? "英単語と 日常英会話を ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10問。" :
-      m === "eweak" ? "まちがえた ことばが 自動で 苦手ことばに なるよ。まちがえずに 打てたら 苦手から はずれるよ。" : "まちがえた・時間が かかった・ひさしぶりの ことばを 先に 出すよ。") + '</p>';
+        '<p class="en-lead">' + esc(J.lead) + '。1回 10問。どの ステージも いつも 同じ 10問。タイムで 勝負しよう。</p>';
+    }else chips.innerHTML = '<p class="en-lead">英単語と 日常英会話を ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10問。</p>';
   }
   function lvInfo(m, i){
-    if(m === "efuku") return { name:"🔁 ふくしゅう", sub:"ひさしぶり・にがての 10問", short:"ふくしゅう" };
-    if(m === "eweak") return { name:"💪 苦手克服", sub:"まちがえた ことば 10問", short:"苦手克服" };
     if(m === "emas") return { name:"マスター" + (i + 1), sub:"ぜんぶの 旅から 10問", short:"マスター" + (i + 1) };
     const s = stageInfo[m][i], J = JBY[JOURNEY_OF[m]], S = (J.kind === "phrase" ? SC : J.stops)[s.stop], L = LVN[s.dv];
-    return { name:"Lv." + (i + 1) + " " + (J.kind === "phrase" ? S.icon + S.name : L.icon + L.name), sub:(J.kind === "phrase" ? L.icon + L.name : S.icon + " " + S.name) + "・🆕" + s.fresh.length + (s.def.length ? " + 🔁" + s.def.length : ""), short:"Lv." + (i + 1) };
+    return { name:"Lv." + (i + 1) + " " + (J.kind === "phrase" ? S.icon + S.name : L.icon + L.name), sub:(J.kind === "phrase" ? L.icon + L.name : S.icon + " " + S.name) + "・10問", short:"Lv." + (i + 1) };
   }
 
-  /* ── 英単語帳(検索・旅・分類・むずかしさ・お気に入り・苦手で しぼれる) ── */
-  let zf = { q:"", j:"", c:"", dv:"", fav:false, weak:false, shown:90 };
+  /* ── 英単語帳(検索・旅・分類・むずかしさ・お気に入りで しぼれる) ── */
+  let zf = { q:"", j:"", c:"", dv:"", fav:false, shown:90 };
   const normQ = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60)).replace(/[\s'’.,?!-]/g, "");
   function sheet(id){
     let sh = document.getElementById(id);
@@ -331,11 +254,11 @@ const EIKAIWA = (() => {
     sh.classList.remove("hidden"); document.body.classList.add("en-lock"); return sh;
   }
   function closeSheet(id){ const sh = document.getElementById(id); if(sh) sh.classList.add("hidden"); if(!document.querySelector(".en-sheet:not(.hidden)")) document.body.classList.remove("en-lock"); }
-  function openZukan(pre2){ if(pre2) Object.assign(zf, { q:"", j:"", c:"", dv:"", fav:false, weak:false }, pre2); zf.shown = 90; sheet("en-zk"); drawZukan(); }
+  function openZukan(pre2){ if(pre2) Object.assign(zf, { q:"", j:"", c:"", dv:"", fav:false }, pre2); zf.shown = 90; sheet("en-zk"); drawZukan(); }
   const catOf = q => q.kind === "word" ? q.c : SCBY[q.sc].name;
   function drawZukan(){
-    const sh = document.getElementById("en-zk"), d = discovered(), fv = new Set(favs()), wk = new Set(weakList().map(q => q.art)), qq = normQ(zf.q);
-    const list = ALL.filter(q => (!zf.j || q.j === zf.j) && (!zf.c || catOf(q) === zf.c) && (!zf.dv || q.dv === +zf.dv) && (!zf.fav || fv.has(q.art)) && (!zf.weak || wk.has(q.art)) &&
+    const sh = document.getElementById("en-zk"), d = discovered(), fv = new Set(favs()), qq = normQ(zf.q);
+    const list = ALL.filter(q => (!zf.j || q.j === zf.j) && (!zf.c || catOf(q) === zf.c) && (!zf.dv || q.dv === +zf.dv) && (!zf.fav || fv.has(q.art)) &&
       (!qq || [q.t, q.m].some(x => normQ(x).includes(qq))));
     const got = list.filter(q => d.has(q.art)).length;
     const opt = (v, label, cur) => '<option value="' + esc(v) + '"' + (String(cur) === String(v) ? " selected" : "") + '>' + esc(label) + '</option>';
@@ -347,10 +270,8 @@ const EIKAIWA = (() => {
       '<div class="en-zf"><select id="en-zj">' + opt("", "🧭 旅", zf.j) + JR.map(J => opt(J.id, J.icon + " " + J.name, zf.j)).join("") + '</select>' +
       '<select id="en-zc">' + opt("", "🏷 分類・場面", zf.c) + cats.map(c => opt(c, c, zf.c)).join("") + '</select>' +
       '<select id="en-zd">' + opt("", "📶 むずかしさ", zf.dv) + D.levels.map(L => opt(L.difficulty, L.icon + " " + L.name, zf.dv)).join("") + '</select></div>' +
-      '<div class="en-ztog"><button type="button" data-t="fav"' + (zf.fav ? ' class="on"' : "") + '>⭐ お気に入り</button><button type="button" data-t="weak"' + (zf.weak ? ' class="on"' : "") + '>💪 苦手ことば</button></div>' +
-      (zf.fav && list.length ? '<button type="button" class="en-btn en-wide" data-en-practice="fav">⭐ お気に入りを 練習する(' + Math.min(ROUNDS, list.length) + '問)</button>' : "") +
-      (zf.weak && list.length ? '<button type="button" class="en-btn en-wide" data-en-practice="weak">💪 苦手克服を はじめる</button>' : "") +
-      (list.length ? "" : '<p class="en-empty">' + (zf.fav ? "⭐ まだ お気に入りが ないよ。ことばの ページの ☆ を おすと 入るよ" : zf.weak ? "💪 いまは 苦手ことばが ないよ。すごい！" : "見つからなかったよ") + '</p>') +
+      '<div class="en-ztog"><button type="button" data-t="fav"' + (zf.fav ? ' class="on"' : "") + '>⭐ お気に入り</button></div>' +
+      (list.length ? "" : '<p class="en-empty">' + (zf.fav ? "⭐ まだ お気に入りが ないよ。ことばの ページの ☆ を おすと 入るよ" : "見つからなかったよ") + '</p>') +
       '<div class="en-grid">' + list.slice(0, zf.shown).map(q => d.has(q.art)
         ? '<button type="button" class="en-tile on" data-en-term="' + esc(q.art) + '"><span>' + q.e + '</span><b lang="en">' + esc(q.t) + '</b><small>' + esc(q.m) + (fv.has(q.art) ? " ⭐" : "") + '</small></button>'
         : '<button type="button" class="en-tile" data-en-term="' + esc(q.art) + '"><span>❔</span><b>？？？</b><small>' + q.jr.icon + " " + LVN[q.dv].name + '</small></button>').join("") + '</div>' +
@@ -373,7 +294,7 @@ const EIKAIWA = (() => {
       ? '<p class="en-cn"><span class="en-ic">' + q.e + '</span><span lang="en">' + esc(q.t) + '</span><span class="en-nmj">' + q.mrb + '</span>' + sayBtn(q.t) +
         '<button type="button" class="en-fav' + (fav ? " on" : "") + '" data-en-fav="' + esc(id) + '" aria-label="お気に入り">' + (fav ? "⭐" : "☆") + '</button></p>' +
         '<p class="en-meta">' + esc(q.c) + '</p><p class="en-d">' + q.d + '</p>' + info(q, true) +
-        '<p class="en-st">出会った回数 ' + e[0] + '回' + (e[1] ? '・まちがい ' + e[1] + '回' : "") + (weakList().includes(q) ? "・💪 苦手ことば" : "") + '</p>'
+        '<p class="en-st">出会った回数 ' + e[0] + '回' + (e[1] ? '・まちがい ' + e[1] + '回' : "") + '</p>'
       : '<p class="en-cn"><span class="en-ic">❔</span>？？？</p><p class="en-d">まだ 出会っていない ことばです。<b>' + esc(whereOf(q)) + '</b>で 出会えるよ。</p><p class="en-small">' + q.jr.icon + " " + esc(q.jr.name) + " ・ " + esc(catOf(q)) + '</p>') + '</div>';
     box.querySelector(".en-x").onclick = () => closeSheet("en-zdt");
     const c = box.querySelector(".en-card"); if(c) c.scrollTop = 0;
@@ -419,7 +340,7 @@ const EIKAIWA = (() => {
   // 🔊 を おしても 入力欄から 手が はなれない(キーボードが 閉じない)ように
   document.addEventListener("mousedown", e => { if(e.target.closest && e.target.closest("[data-en-say]") && document.body.classList.contains("playing")) e.preventDefault(); });
   document.addEventListener("click", e => {
-    const t = e.target.closest && e.target.closest("[data-en-say],[data-en-term],[data-en-open],[data-en-auto],[data-en-retry],[data-en-fav],[data-en-more],[data-en-practice],[data-en-ans]");
+    const t = e.target.closest && e.target.closest("[data-en-say],[data-en-term],[data-en-open],[data-en-auto],[data-en-fav],[data-en-more],[data-en-ans]");
     if(!t) return;
     if(t.dataset.enSay){ e.stopPropagation(); say(t.dataset.enSay, !!t.dataset.enSlow); if(document.body.classList.contains("playing")) ans.focus(); return; }
     if(t.dataset.enTerm) return detail(t.dataset.enTerm);
@@ -430,21 +351,8 @@ const EIKAIWA = (() => {
     if(t.dataset.enOpen){
       const o = t.dataset.enOpen;
       if(o === "zukan") return openZukan({});
-      if(o === "weak") return openZukan({ weak:true });
       if(o === "fav") return openZukan({ fav:true });
       if(o === "quiz") return openQuiz();
-    }
-    if(t.dataset.enPractice){
-      const list = t.dataset.enPractice === "fav" ? favs().map(id => BY.get(id)) : null;
-      ["en-zk", "en-zdt"].forEach(closeSheet);
-      if(list){ unlock(); pre = discovered(); revSet = new Set(list.map(q => q.art)); weakSet = new Set(); runMiss = {}; start(mode, level, list.slice(0, ROUNDS).sort(easy)); }
-      else { setMode("eweak"); start("eweak", 0); }
-      return;
-    }
-    if(t.dataset.enRetry){
-      if(!lastMissed.length) return;
-      unlock(); pre = discovered(); revSet = new Set(); weakSet = new Set(lastMissed.map(q => q.art)); runMiss = {};
-      return start(mode, level, lastMissed.slice());
     }
   });
 
@@ -485,7 +393,6 @@ const EIKAIWA = (() => {
 .en-prev b{color:#065f46;font-size:14px}.en-pl{font-size:11px;font-weight:800;color:#16a34a;background:#dcfce7;border-radius:99px;padding:1px 7px}.en-eq{color:#94a3b8}.en-pm{min-width:0}
 .en-prev .en-say{padding:2px 6px;font-size:12px}.en-prev.en-hint{color:#94a3b8}
 .en-qb{flex:1;min-width:0}.en-mean{margin:2px 0 0;font-size:15px;font-weight:700;line-height:1.9;color:#1d6fe0}.en-mean.big{font-size:17px;line-height:1.95}.en-mean.big.w{font-size:clamp(22px,7vw,28px);line-height:1.7;margin:0 0 6px}
-.en-note2{margin-left:8px;font-size:11.5px;font-weight:800;color:#9d174d;background:#fce7f3;border-radius:99px;padding:1px 7px}
 .en-qp{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 2px}.en-qp .en-cat{margin:0}
 .en-rp1{margin:0 0 8px;font-size:12.5px;color:#0369a1;line-height:1.5}.en-rp1 span{font-weight:700}.en-word{margin:2px 0 0;font-size:clamp(26px,8vw,34px);font-weight:900;line-height:1.15;color:var(--ink);word-break:break-word}
 .en-type{margin:0 0 4px;font-size:13px;font-weight:900;color:#1d6fe0}
@@ -495,7 +402,7 @@ const EIKAIWA = (() => {
 .target .en-tile.x{border-color:var(--red);background:#fee2e2;color:var(--red)}.target .en-tile.sk{border-style:dashed;min-width:1em}.en-cat{display:block;font-size:12px;color:var(--muted);margin-top:3px}
 .en-say{border:1.5px solid #a7f3d0;background:#fff;border-radius:99px;font:inherit;font-size:15px;line-height:1;padding:5px 8px;cursor:pointer;flex:none;color:#065f46;font-weight:800}
 .en-say.big{padding:9px 12px;font-size:14px;background:#ecfdf5}.en-say.slow{font-size:13px}
-.en-tag{display:inline-block;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px}.en-tag.new{background:#fef3c7;color:#92400e}.en-tag.rev{background:#fce7f3;color:#9d174d}.en-tag.weak{background:#ffedd5;color:#9a3412}
+.en-tag{display:inline-block;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px}.en-tag.new{background:#fef3c7;color:#92400e}
 .en-nm{font-size:1.05em;word-break:break-word}.en-nmj{margin-left:10px;font-size:.9em;font-weight:700;color:#1d6fe0}.en-nmj rt{color:#64748b}
 .en-pos{display:inline-block;font-size:11px;font-weight:800;background:#e0f2fe;color:#075985;border-radius:99px;padding:0 7px;margin-right:6px;vertical-align:1px}
 .en-info{margin-top:6px}.en-info .en-tag{margin:0 0 6px}.en-sayline{display:flex;gap:6px;margin:4px 0}
@@ -509,7 +416,6 @@ const EIKAIWA = (() => {
 .en-chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}
 .en-chip{padding:5px 10px;border-radius:99px;border:1.5px solid #a7f3d0;background:#ecfdf5;color:#065f46;font:inherit;font-size:12.5px;font-weight:800;cursor:pointer}
 .en-chip.new{background:#fef3c7;border-color:#fcd34d;color:#92400e}
-.en-retry{display:block;width:100%;margin:10px 0 2px;padding:12px;border-radius:14px;border:0;background:linear-gradient(90deg,#0e8f6e,#0b6fb8);color:#fff;font:inherit;font-weight:900;font-size:15px;cursor:pointer}
 .en-sheet .en-zbox{max-width:560px;position:relative}.en-x{position:absolute;right:10px;top:8px;border:0;background:none;font-size:26px;color:#64748b;line-height:1;cursor:pointer}
 .en-zsum{text-align:center;margin:4px 0 8px}.en-zsum b{font-size:22px;color:#0e8f6e}
 .en-search{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border-radius:12px;border:1.5px solid #a7f3d0;margin:0 0 8px;background:#fff;color:#052e2b}
@@ -536,5 +442,5 @@ body.en-lock{overflow:hidden}
 
   return { kind:"english", modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
            card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), norm, tgtHtml, nameHtml, say,
-           noRank:(m, lv) => !RANK_READY || m === "efuku" || m === "eweak" || lv >= 60, noBoard:!RANK_READY, openZukan };
+           noRank:(m, lv) => !RANK_READY || lv >= 60, noBoard:!RANK_READY, openZukan };
 })();

@@ -9,7 +9,7 @@ import numpy as np, cv2, sys
 from PIL import Image, ImageFilter
 from scipy import ndimage
 img=cv2.imread(sys.argv[1])
-x0,y0,x1,y1=290,595,1052,770
+x0,y0,x1,y1=290,595,1052,782
 crop=img[y0:y1,x0:x1].copy(); h,w=crop.shape[:2]
 hsv=cv2.cvtColor(crop,cv2.COLOR_BGR2HSV); s=hsv[...,1]/255.; v=hsv[...,2]/255.
 # 字: こい 色の かたまりの うち、とても こい 色(s>.85)を ふくむ ものだけ(字の 外の 青い かがやきは 白い ふちで 切れているので 入らない)
@@ -18,7 +18,7 @@ H=hsv[...,0]
 blue=(H>=95)&(H<=120)&(s>.35); blue[88:160,290:370]=False
 pale=(H>=88)&(H<=125)&(s<.8)&(v>.82)   # 明るい 青の かがやき
 blue[:,425:525]=pale[:,425:525]; blue[:,630:]=pale[:,630:]  # 「学」(水色)と「行」(青)は 字そのものが 青いので、明るい かがやきだけ 落とす
-cand=(s>.5)&(v>.35)&~blue; cand[153:,:]=False
+cand=(s>.5)&(v>.35)&~blue; cand[157:,170:610]=False  # 下の 金の 帯(絵の y 752〜 / x 460〜900)だけ 落とす。字の 下の はしは 切らない(けいくん「文字の下が切れてる」)
 lc,_=ndimage.label(cand); L=np.isin(lc,np.unique(lc[(s>.85)&(v>.55)&cand])[1:])
 # 細い 青の すじ(かがやきの のこり)を けす
 bl=(H>=95)&(H<=125)
@@ -27,7 +27,11 @@ lb,nb=ndimage.label(L)
 for i,sl in enumerate(ndimage.find_objects(lb)):
   if sl[1].start>=715 and not (10<=np.median(H[lb==i+1])<=35): L[lb==i+1]=False
 yy=np.arange(h)[:,None]; xx=np.arange(w)[None,:]
-L&=~(bl&(yy>=132)&(xx>=250)&(xx<=520))                 # 「学」と コンパスの 下の 青い なみ
+# 青の うち 細い もの(字の 下の なみ・「行」の 外の ふち)は 落とす。青い 字(学・行)の 線は 太いので 残る
+cbox=np.zeros_like(L); cbox[95:158,300:362]=True
+B=L&bl&~cbox; Bo=cv2.morphologyEx(B.astype(np.uint8),cv2.MORPH_OPEN,cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(11,11))).astype(bool)
+Bo=cv2.dilate(Bo.astype(np.uint8),np.ones((3,3),np.uint8)).astype(bool)&B
+L=(L&~B)|Bo
 L=cv2.morphologyEx(L.astype(np.uint8),cv2.MORPH_OPEN,cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(5,5))).astype(bool)
 # まん中の コンパス: 箱の 中の 白・空いがいを そのまま 入れる
 cb=(slice(95,158),slice(300,362)); comp=~((s[cb]<.3)&(v[cb]>.75)); comp=ndimage.binary_opening(comp,np.ones((3,3)))
@@ -35,7 +39,7 @@ lcb,_=ndimage.label(comp); szc=ndimage.sum(comp,lcb,range(1,lcb.max()+1)); L[cb]
 # 字の 中の 白い つや・すきまも うめる
 L=ndimage.binary_fill_holes(cv2.morphologyEx(L.astype(np.uint8),cv2.MORPH_CLOSE,cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(5,5))).astype(bool))
 # 角帽(こい 紺)も 字の すぐ そばなら 入れる
-dark=(v<.5)&(s>.3); dark[153:,:]=False; dark[:, :600]=False;  # 角帽は 右はし だけ(左上の タブレットの 角を 入れない)
+dark=(v<.5)&(s>.3); dark[157:,170:610]=False; dark[:, :600]=False;  # 角帽は 右はし だけ(左上の タブレットの 角を 入れない)
 ld,_=ndimage.label(dark); near=cv2.dilate(L.astype(np.uint8),np.ones((15,15),np.uint8)).astype(bool)
 sz=ndimage.sum(dark,ld,range(1,ld.max()+1)); L|=np.isin(ld,[i+1 for i,z in enumerate(sz) if z>300 and (near&(ld==i+1)).any()])
 L[:32,190:330]=False  # 「ッ」の 上に くっついた タブレットの 角を 落とす(切りぬく 箱からの 位置。絵を 差しかえたら 見なおす)

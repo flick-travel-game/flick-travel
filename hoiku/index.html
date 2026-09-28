@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリック整備士</title>
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
-<link rel="icon" type="image/png" href="favicon.png?v=3">
+<title>フリック保育士</title>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="../favicon.png?v=2">
 <link rel="manifest" href="manifest.webmanifest?v=3">
-<meta name="apple-mobile-web-app-title" content="フリック整備士">
+<meta name="apple-mobile-web-app-title" content="フリック保育士">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#4fb8ff">
@@ -403,12 +403,10 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=3" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=4" alt="" width="731" height="218" aria-hidden="true">
+      <span class="logo-text">フリック保育士</span>
       <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリック整備士</h1>
-    <img class="hero" src="hero.webp?v=4" alt="フリック整備士。エンジン・ブレーキ・タイヤなどの 部品の 中を 男の子と 犬が 飛んで 旅する 絵" width="1536" height="1024">
+    <h1 class="sr-only">フリック保育士</h1>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -527,12 +525,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=5ffc8ab7"></script>
-<script src="seibi.js?v=2240ab42"></script>
+<script src="terms.js?v=d0069968"></script>
+<script src="hoiku.js?v=539bb9cc"></script>
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"seibi", name:"フリック整備士", modes:(typeof SEIBI === "object" ? SEIBI.modes : []), assets:"../", logo:true, hero:true, dir:"seibi/", lead:"クルマ・バイクの 部品と しくみの ことばを、ひらがなで フリック入力。打つと その部品が 何を するのか・しくみ図の どこに あるのかが 出るよ。身近な 部品から はじめて、3級・2級・1級 自動車整備士の 試験範囲の めやすまで。4択クイズと 計算問題で 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。部品の 説明は 本物の 試験問題では ないので、試験の 勉強には 問題集や 学校の 教科書も 使ってね。部品の 名前と しくみを おぼえる ゲームだよ。実際の 整備は 資格を もつ 人・お店に まかせよう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、クルマや バイクの 中身が 見えてくるよ。国土交通省・日本自動車整備振興会連合会とは 関係ありません。" };
+const GAME = { id:"hoiku", name:"フリック保育士", modes:(typeof HOIKU === "object" ? HOIKU.modes : []), assets:"../", logo:true, hero:true, dir:"hoiku/", lead:"子どもの 育ち・保育の 考えかた・子どもを 支える しくみ・健康・食と栄養・実技と 現場の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どの 科目か・しくみ図の どこに あるのかが 出るよ。園で 聞く ことばから はじめて、保育士試験の 筆記の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。説明は 本物の 試験問題では ないので、試験の 勉強には 問題集や 学校の 教科書も 使ってね。けがや 病気の ときの 手あての やりかたは のせていないよ。本当の ときは 園の きまりと 大人の 指示に したがってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、保育の ことばと しくみが つながって 見えてくるよ。こども家庭庁・厚生労働省・全国保育士養成協議会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},

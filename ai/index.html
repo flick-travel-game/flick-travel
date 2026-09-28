@@ -1461,8 +1461,15 @@ if(window.visualViewport){ visualViewport.addEventListener("resize", fit); visua
 window.addEventListener("resize", fit);
 function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
+/* キーボードに よって「゛゜」の 出しかたが ちがう(けいくん 2026-09-28「ゲームの途中で入力できなくなった」)。
+   ・字と くっついた 1字(ぴ) ・字 + うしろに つく 印(ひ + ゚ = NFD) ・字 + 単独の 記号(ひ + ゜)
+   ・半角カナ(ﾋﾟ) … どれも 同じ「ぴ」に そろえてから くらべる */
+function kanaFix(s){
+  return s.replace(/[\uFF61-\uFF9F]+/g, m => m.normalize("NFKC"))
+          .replace(/\u309B/g, "\u3099").replace(/\u309C/g, "\u309A").normalize("NFC");
+}
 function norm(s){
-  return s.replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0)-0x60))
+  return kanaFix(s).replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0)-0x60))
           .replace(/[\s、。・，．,.!！?？「」『』〜]/g, "");
 }
 function base(c){ c = c.normalize("NFD").replace(/[゙゚]/g, ""); return SMALL[c] || c; }
@@ -1557,8 +1564,19 @@ function start(m, lv){
 
 /* 入力欄は途中で消さない（消すとキーボードの変換状態とズレて誤判定になる）。
    代わりに「この問題はここから」という位置を覚えて、その後ろだけを判定する。 */
-let baseRaw = 0;
-function resetBase(){ baseRaw = ans.value.length; lastLen = 0; $("#typed").textContent = ""; }
+let baseRaw = 0, composing = false;
+function resetBase(){
+  // 変換中で なければ 前の 問題の 字を 入力欄から 消す(長く なりすぎると 入力を 止めてしまう キーボードが あるため。
+  // 変換中に 消すと キーボードと ずれるので、そのときは 消さずに 位置だけ 覚える)
+  if(!composing && ans.value){ ans.value = ""; }
+  baseRaw = ans.value.length; lastLen = 0; $("#typed").textContent = "";
+}
+ans.addEventListener("compositionstart", () => { composing = true; });
+ans.addEventListener("compositionend", () => {
+  composing = false;
+  // 確定した あとなら 前の 問題の 字を 消しても ずれない
+  setTimeout(() => { if(!composing && baseRaw > 0 && baseRaw <= ans.value.length){ ans.value = ans.value.slice(baseRaw); baseRaw = 0; } }, 0);
+});
 
 /* 1問ごとの まちがい(赤くなった回数)。プラグインの 図鑑の「まちがい」の 回数に 使う */
 let qMiss = 0, lastErr = false;

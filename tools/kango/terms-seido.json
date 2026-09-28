@@ -1,0 +1,1206 @@
+[
+ {
+  "id": "se-kangoshi",
+  "name": "看護師",
+  "reading": "かんごし",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "👩‍⚕️",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-kangoshimenkyo",
+   "se-byoin",
+   "se-kokushi"
+  ],
+  "description": "病気や けがの 人の そばで、くらしを 支えたり 医師の 治療を 手つだったり する 仕事です。国家試験に うかって 国の 免許を 受けます。"
+ },
+ {
+  "id": "se-byoin",
+  "name": "病院",
+  "reading": "びょういん",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "健康支援と社会保障制度",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-shinryojo",
+   "se-byoto",
+   "se-iryoho"
+  ],
+  "description": "病気や けがを みて もらい、入院も できる ところです。医師・看護師・薬剤師など たくさんの 人が いっしょに はたらいて います。"
+ },
+ {
+  "id": "se-ishi",
+  "name": "医師",
+  "reading": "いし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-kangoshi",
+   "se-teamiryo",
+   "se-shohosen"
+  ],
+  "description": "病気を 見つけて、治療の 方針を 決める 仕事です。看護師は 医師と 話し合いながら、患者さんの ようすを つたえます。"
+ },
+ {
+  "id": "se-yakuzaishi",
+  "name": "薬剤師",
+  "reading": "やくざいし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-shohosen",
+   "se-teamiryo"
+  ],
+  "description": "くすりの 専門家です。医師が 出した くすりが 正しいか 確かめて 用意し、のみかたを 説明します。"
+ },
+ {
+  "id": "se-shinryojo",
+  "name": "診療所",
+  "reading": "しんりょうじょ",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "健康支援と社会保障制度",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-byoin",
+   "se-gairai"
+  ],
+  "description": "町の 中に ある 小さな 医院や クリニックの ことです。入院の ベッドが ない か 少なく、ふだんの 病気を みて もらう 身近な ところです。"
+ },
+ {
+  "id": "se-gairai",
+  "name": "外来",
+  "reading": "がいらい",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-nyuin",
+   "se-shinryojo"
+  ],
+  "description": "入院せずに、家から かよって 診察や 検査を 受ける ところです。受付を して、順番に よばれます。"
+ },
+ {
+  "id": "se-nyuin",
+  "name": "入院",
+  "reading": "にゅういん",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🛏",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-taiin",
+   "se-byoto",
+   "se-gairai"
+  ],
+  "description": "病院に とまって 治療や 検査を 受ける ことです。看護師が 昼も 夜も ようすを 見て、くらしを 手つだいます。"
+ },
+ {
+  "id": "se-taiin",
+  "name": "退院",
+  "reading": "たいいん",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🎉",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-nyuin",
+   "se-msw"
+  ],
+  "description": "入院を おえて 家などに もどる ことです。家での くらしが 安心して 始められる ように、看護師が 前もって 準備を 手つだいます。"
+ },
+ {
+  "id": "se-byoto",
+  "name": "病棟",
+  "reading": "びょうとう",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-nyuin",
+   "se-nurse"
+  ],
+  "description": "入院している 人の へやが 集まった ところです。病気の 種類ごとに 分かれて いる ことが 多く、看護師が 交代で 見まもります。"
+ },
+ {
+  "id": "se-karte",
+  "name": "カルテ",
+  "reading": "かるて",
+  "journey": "seido",
+  "category": "記録とひみつ",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "station:karte",
+  "relatedTerms": [
+   "se-denshikarte",
+   "se-kangokiroku"
+  ],
+  "description": "患者さんの 病気の ようすや 治療の ことを 書いておく 記録です。医師や 看護師が 見て、同じ 情報を 分かち合います。"
+ },
+ {
+  "id": "se-kyukyusha",
+  "name": "救急車",
+  "reading": "きゅうきゅうしゃ",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-kyukyugairai"
+  ],
+  "description": "急な 病気や けがの 人を 病院へ 運ぶ 車です。119番に 電話すると 来て くれます。"
+ },
+ {
+  "id": "se-nurse",
+  "name": "ナースステーション",
+  "reading": "なーすすてーしょん",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🏨",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-byoto",
+   "se-moushiokuri"
+  ],
+  "description": "病棟の 中に ある 看護師の 仕事の 場所です。記録を 書いたり、ナースコールに こたえたり、話し合いを したり します。"
+ },
+ {
+  "id": "se-yakin",
+  "name": "夜勤",
+  "reading": "やきん",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "station:shigoto",
+  "relatedTerms": [
+   "se-nikkin",
+   "se-kotai"
+  ],
+  "description": "夜の あいだに はたらく ことです。入院している 人は 夜も いるので、看護師が 交代で ねむっている あいだも 見まもります。"
+ },
+ {
+  "id": "se-nikkin",
+  "name": "日勤",
+  "reading": "にっきん",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "station:shigoto",
+  "relatedTerms": [
+   "se-yakin",
+   "se-kotai"
+  ],
+  "description": "昼の 時間に はたらく ことです。検査や 治療が 多い 時間なので、たくさんの 看護師で 手分けして 仕事を します。"
+ },
+ {
+  "id": "se-kyukyugairai",
+  "name": "救急外来",
+  "reading": "きゅうきゅうがいらい",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🚨",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-kyukyusha",
+   "se-triage"
+  ],
+  "description": "急な 病気や けがの 人を、夜や 休みの 日も うけいれる 外来です。すぐに みる 必要が ある 人から 順に みて いきます。"
+ },
+ {
+  "id": "se-shikaishi",
+  "name": "歯科医師",
+  "reading": "しかいし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🦷",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-ishi",
+   "se-teamiryo"
+  ],
+  "description": "歯や 口の 中の 病気を みる 医師です。口の 中を きれいに たもつ ことは、からだ 全体の 健康にも 大切です。"
+ },
+ {
+  "id": "se-menkai",
+  "name": "面会",
+  "reading": "めんかい",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "💐",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-nyuin"
+  ],
+  "description": "入院している 人に 家族や 友だちが 会いに くる ことです。病院ごとに 時間などの 決まりが あります。"
+ },
+ {
+  "id": "se-shohosen",
+  "name": "処方せん",
+  "reading": "しょほうせん",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 1,
+  "field": "疾病の成り立ちと回復の促進",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-ishi",
+   "se-yakuzaishi"
+  ],
+  "description": "医師が どの くすりを 使うかを 書いた 紙です。薬剤師は これを 見て くすりを 用意します。"
+ },
+ {
+  "id": "se-kangonohi",
+  "name": "看護の日",
+  "reading": "かんごのひ",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🕯",
+  "mapNode": "station:shigoto",
+  "relatedTerms": [
+   "se-kangoshi"
+  ],
+  "description": "5月12日です。看護の 大切さを 伝えた ナイチンゲールの 生まれた 日に ちなんで 決められました。"
+ },
+ {
+  "id": "se-kangogakko",
+  "name": "看護学校",
+  "reading": "かんごがっこう",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 1,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-kokushi",
+   "se-kangoshi"
+  ],
+  "description": "看護師を めざして 学ぶ 学校です。大学・短大・専門学校などで 3年 以上 学び、国家試験を 受けます。"
+ },
+ {
+  "id": "se-junkangoshi",
+  "name": "准看護師",
+  "reading": "じゅんかんごし",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🔰",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-kangoshi",
+   "se-kangoshimenkyo"
+  ],
+  "description": "都道府県知事の 免許を 受けて はたらく 看護の 仕事です。医師や 看護師の 指示を 受けて 看護を 行います。看護師とは べつの 資格です。"
+ },
+ {
+  "id": "se-hokenshi",
+  "name": "保健師",
+  "reading": "ほけんし",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 2,
+  "field": "地域・在宅看護論",
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-josanshi",
+   "se-hokatsucenter"
+  ],
+  "description": "町の 人たちの 健康を 守る 看護の 仕事です。赤ちゃんの 健診や 健康の 相談などを します。看護師の 資格も 必要です。"
+ },
+ {
+  "id": "se-josanshi",
+  "name": "助産師",
+  "reading": "じょさんし",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 2,
+  "field": "母性看護学",
+  "type": "concept",
+  "emoji": "👶",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-hokenshi",
+   "se-kangoshi"
+  ],
+  "description": "お産を 手だすけし、お母さんと 赤ちゃんを 支える 仕事です。妊娠中から 産後まで 相談に のります。看護師の 資格も 必要です。"
+ },
+ {
+  "id": "se-kangoshimenkyo",
+  "name": "看護師免許",
+  "reading": "かんごしめんきょ",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-kokushi",
+   "se-hojokanho"
+  ],
+  "description": "看護師として はたらく ための 国の 免許です。国家試験に うかった 人が、厚生労働大臣から 受けます。"
+ },
+ {
+  "id": "se-kokushi",
+  "name": "看護師国家試験",
+  "reading": "かんごしこっかしけん",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-kangoshimenkyo",
+   "se-kangogakko"
+  ],
+  "description": "看護師に なる ための 国の 試験で、年に 1回 あります。とくに 大切な 必修問題は 8割 以上 とる ことが 必要です。"
+ },
+ {
+  "id": "se-teamiryo",
+  "name": "チーム医療",
+  "reading": "ちーむいりょう",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-ishi",
+   "se-yakuzaishi",
+   "se-msw"
+  ],
+  "description": "いろいろな 仕事の 人が 知恵を 出し合って、ひとりの 患者さんを 支える ことです。看護師は そばに いる 時間が 長く、つなぎ役に なります。"
+ },
+ {
+  "id": "se-pt",
+  "name": "理学療法士",
+  "reading": "りがくりょうほうし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-ot",
+   "se-teamiryo"
+  ],
+  "description": "立つ・歩くなど からだの 動きを とりもどす リハビリを 手つだう 仕事です。"
+ },
+ {
+  "id": "se-ot",
+  "name": "作業療法士",
+  "reading": "さぎょうりょうほうし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-pt",
+   "se-st"
+  ],
+  "description": "食事・着がえ・家事など、くらしの 動作や 手先を 使う 力を とりもどす リハビリを 手つだう 仕事です。"
+ },
+ {
+  "id": "se-eiyoshi",
+  "name": "管理栄養士",
+  "reading": "かんりえいようし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🍱",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-teamiryo"
+  ],
+  "description": "病気や からだに 合った 食事を 考える 仕事です。病院の 食事の こんだてを 考え、食べかたの 相談にも のります。"
+ },
+ {
+  "id": "se-kangokiroku",
+  "name": "看護記録",
+  "reading": "かんごきろく",
+  "journey": "seido",
+  "category": "記録とひみつ",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🖊",
+  "mapNode": "station:karte",
+  "relatedTerms": [
+   "se-karte",
+   "se-moushiokuri"
+  ],
+  "description": "看護師が 見た ことや 行った 看護を 書いておく 記録です。つぎの 人に 正しく つたえる ために、事実を わかりやすく 書きます。"
+ },
+ {
+  "id": "se-moushiokuri",
+  "name": "申し送り",
+  "reading": "もうしおくり",
+  "journey": "seido",
+  "category": "記録とひみつ",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🗣",
+  "mapNode": "station:moushiokuri",
+  "relatedTerms": [
+   "se-kangokiroku",
+   "se-kotai"
+  ],
+  "description": "勤務を 交代する ときに、患者さんの ようすや 気を つける ことを つぎの 看護師に つたえる ことです。"
+ },
+ {
+  "id": "se-shuhi",
+  "name": "守秘義務",
+  "reading": "しゅひぎむ",
+  "journey": "seido",
+  "category": "記録とひみつ",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🤫",
+  "mapNode": "station:himitsu",
+  "relatedTerms": [
+   "se-kojinjoho",
+   "se-hojokanho"
+  ],
+  "description": "仕事で 知った 患者さんの ひみつを ほかの 人に 話しては いけない という 決まりです。仕事を やめた あとも 守ります。"
+ },
+ {
+  "id": "se-kojinjoho",
+  "name": "個人情報",
+  "reading": "こじんじょうほう",
+  "journey": "seido",
+  "category": "記録とひみつ",
+  "difficulty": 2,
+  "field": "健康支援と社会保障制度",
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "station:himitsu",
+  "relatedTerms": [
+   "se-shuhi",
+   "se-karte"
+  ],
+  "description": "名前や 住所、病気の ことなど、その 人が だれか わかる 情報です。個人情報保護法 という 法律に そって 大切に あつかいます。"
+ },
+ {
+  "id": "se-iryoanzen",
+  "name": "医療安全",
+  "reading": "いりょうあんぜん",
+  "journey": "seido",
+  "category": "医療安全",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "station:anzen",
+  "relatedTerms": [
+   "se-incident",
+   "se-hiyari",
+   "se-double"
+  ],
+  "description": "医療の 中で まちがいや 事故が 起きない ように する 取り組みです。人は まちがえる ものと 考えて、しくみで ふせぎます。"
+ },
+ {
+  "id": "se-incident",
+  "name": "インシデント",
+  "reading": "いんしでんと",
+  "journey": "seido",
+  "category": "医療安全",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "station:anzen",
+  "relatedTerms": [
+   "se-hiyari",
+   "se-iryoanzen"
+  ],
+  "description": "まちがいや 思いがけない ことが 起きたが、大きな 害には ならなかった できごとです。報告して、同じ ことが 起きない ように 生かします。"
+ },
+ {
+  "id": "se-hiyari",
+  "name": "ヒヤリハット",
+  "reading": "ひやりはっと",
+  "journey": "seido",
+  "category": "医療安全",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "😮",
+  "mapNode": "station:anzen",
+  "relatedTerms": [
+   "se-incident",
+   "se-yubisashi"
+  ],
+  "description": "ヒヤリと したり ハッと したり した、事故に なりかけた できごとです。小さな うちに みんなで 共有して、事故を ふせぎます。"
+ },
+ {
+  "id": "se-double",
+  "name": "ダブルチェック",
+  "reading": "だぶるちぇっく",
+  "journey": "seido",
+  "category": "医療安全",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "station:anzen",
+  "relatedTerms": [
+   "se-yubisashi",
+   "se-iryoanzen"
+  ],
+  "description": "くすりなどを ふたりで 確かめる ことです。ひとりでは 見おとす まちがいに 気づきやすく なります。"
+ },
+ {
+  "id": "se-yubisashi",
+  "name": "指差し確認",
+  "reading": "ゆびさしかくにん",
+  "journey": "seido",
+  "category": "医療安全",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "👉",
+  "mapNode": "station:anzen",
+  "relatedTerms": [
+   "se-double",
+   "se-hiyari"
+  ],
+  "description": "確かめる ものを 指で さして、声に 出して 確認する ことです。目と 口と 手を 使うので、うっかりを へらせます。"
+ },
+ {
+  "id": "se-iryohoken",
+  "name": "医療保険",
+  "reading": "いりょうほけん",
+  "journey": "seido",
+  "category": "地域と保険",
+  "difficulty": 2,
+  "field": "健康支援と社会保障制度",
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "station:hoken",
+  "relatedTerms": [
+   "se-kaigohoken",
+   "se-byoin"
+  ],
+  "description": "病気や けがで 病院に かかる ときの お金を、みんなで 出し合って 支える しくみです。日本では みんなが どれかに 入ります。"
+ },
+ {
+  "id": "se-kaigohoken",
+  "name": "介護保険",
+  "reading": "かいごほけん",
+  "journey": "seido",
+  "category": "地域と保険",
+  "difficulty": 2,
+  "field": "健康支援と社会保障制度",
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "station:hoken",
+  "relatedTerms": [
+   "se-yokaigo",
+   "se-caremanager",
+   "se-iryohoken"
+  ],
+  "description": "介護が 必要に なった 人が、家での 手つだいや 施設などの サービスを 使える ように する しくみです。市区町村が 運営します。"
+ },
+ {
+  "id": "se-homon",
+  "name": "訪問看護",
+  "reading": "ほうもんかんご",
+  "journey": "seido",
+  "category": "地域と保険",
+  "difficulty": 2,
+  "field": "地域・在宅看護論",
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "station:chiiki",
+  "relatedTerms": [
+   "se-homonst",
+   "se-hokatsu"
+  ],
+  "description": "看護師が 家に 行って、病気や 障害の ある 人の 看護を する ことです。住みなれた 家で すごせる ように 支えます。"
+ },
+ {
+  "id": "se-triage",
+  "name": "トリアージ",
+  "reading": "とりあーじ",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "station:saigai",
+  "relatedTerms": [
+   "se-saigaikango",
+   "se-kyukyugairai"
+  ],
+  "description": "けが人が 多い ときに、急いで 治療が 必要な 人から 順番を 決める ことです。ひとりでも 多くの 人を 助ける ための 考えかたです。"
+ },
+ {
+  "id": "se-saigaikango",
+  "name": "災害看護",
+  "reading": "さいがいかんご",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "⛑",
+  "mapNode": "station:saigai",
+  "relatedTerms": [
+   "se-triage",
+   "se-dmat",
+   "se-kyotenbyoin"
+  ],
+  "description": "地震や 水害などの ときに 行う 看護です。けがの 手当てだけで なく、ひなん所での 健康や 心の 支えも ふくみます。"
+ },
+ {
+  "id": "se-kotai",
+  "name": "交代勤務",
+  "reading": "こうたいきんむ",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 2,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "station:shigoto",
+  "relatedTerms": [
+   "se-yakin",
+   "se-nikkin",
+   "se-moushiokuri"
+  ],
+  "description": "日勤・夜勤などに 分かれて、交代で はたらく ことです。24時間 とぎれずに 看護が できる ように する しくみです。"
+ },
+ {
+  "id": "se-msw",
+  "name": "医療ソーシャルワーカー",
+  "reading": "いりょうそーしゃるわーかー",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 2,
+  "field": "健康支援と社会保障制度",
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-teamiryo",
+   "se-taiin"
+  ],
+  "description": "病院で、お金や くらし、退院後の 生活などの 心配ごとの 相談に のる 仕事です。使える 制度を いっしょに さがします。"
+ },
+ {
+  "id": "se-denshikarte",
+  "name": "電子カルテ",
+  "reading": "でんしかるて",
+  "journey": "seido",
+  "category": "記録とひみつ",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "station:karte",
+  "relatedTerms": [
+   "se-karte",
+   "se-kangokiroku"
+  ],
+  "description": "カルテを コンピューターで 書いて しまう しくみです。はなれた 場所でも 同じ 記録を 見られ、字の 読みまちがいも へります。"
+ },
+ {
+  "id": "se-shicho",
+  "name": "看護師長",
+  "reading": "かんごしちょう",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "👑",
+  "mapNode": "station:shigoto",
+  "relatedTerms": [
+   "se-byoto",
+   "se-teamnursing"
+  ],
+  "description": "病棟などの 看護を まとめる 役目の 看護師です。看護師の 仕事の わりふりや、よい 看護の ための 工夫を 考えます。"
+ },
+ {
+  "id": "se-caremanager",
+  "name": "ケアマネジャー",
+  "reading": "けあまねじゃー",
+  "journey": "seido",
+  "category": "地域と保険",
+  "difficulty": 3,
+  "field": "老年看護学",
+  "type": "concept",
+  "emoji": "🗂",
+  "mapNode": "station:chiiki",
+  "relatedTerms": [
+   "se-kaigohoken",
+   "se-yokaigo"
+  ],
+  "description": "介護支援専門員とも いいます。介護が 必要な 人の 話を 聞いて、どんな サービスを 使うか 計画を 立てます。",
+  "acceptedReadings": [
+   "けあまねじゃー",
+   "けあまねーじゃー"
+  ]
+ },
+ {
+  "id": "se-hojokanho",
+  "name": "保健師助産師看護師法",
+  "reading": "ほけんしじょさんしかんごしほう",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "station:horitsu",
+  "relatedTerms": [
+   "se-kangoshimenkyo",
+   "se-ryoyo",
+   "se-shinryohojo"
+  ],
+  "description": "保健師・助産師・看護師・准看護師の 仕事や 免許について 決めた 法律です。守秘義務なども この 法律で 決められて います。"
+ },
+ {
+  "id": "se-ninteikangoshi",
+  "name": "認定看護師",
+  "reading": "にんていかんごし",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🎖",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-senmonkangoshi",
+   "se-kangoshi"
+  ],
+  "description": "決まった 分野で 深く 学び、看護の 団体の 認定を 受けた 看護師です。すぐれた 看護を 行い、ほかの 看護師にも 教えます。"
+ },
+ {
+  "id": "se-senmonkangoshi",
+  "name": "専門看護師",
+  "reading": "せんもんかんごし",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-ninteikangoshi",
+   "se-kangoshi"
+  ],
+  "description": "大学院で 学び、看護の 団体の 認定を 受けた 看護師です。むずかしい 問題を かかえた 人の 看護や、チームの 相談役を つとめます。"
+ },
+ {
+  "id": "se-kaigofukushishi",
+  "name": "介護福祉士",
+  "reading": "かいごふくしし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 3,
+  "field": "老年看護学",
+  "type": "concept",
+  "emoji": "🫶",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-caremanager",
+   "se-kaigohoken"
+  ],
+  "description": "食事や 入浴、トイレなど くらしの 手つだいを する 介護の 国家資格です。施設や 家で 看護師と 協力して はたらきます。"
+ },
+ {
+  "id": "se-homonst",
+  "name": "訪問看護ステーション",
+  "reading": "ほうもんかんごすてーしょん",
+  "journey": "seido",
+  "category": "地域と保険",
+  "difficulty": 3,
+  "field": "地域・在宅看護論",
+  "type": "concept",
+  "emoji": "🏡",
+  "mapNode": "station:chiiki",
+  "relatedTerms": [
+   "se-homon",
+   "se-hokatsu"
+  ],
+  "description": "訪問看護を する 看護師たちの 拠点です。ここから 利用する 人の 家へ 出かけて いきます。"
+ },
+ {
+  "id": "se-hokatsu",
+  "name": "地域包括ケアシステム",
+  "reading": "ちいきほうかつけあしすてむ",
+  "journey": "seido",
+  "category": "地域と保険",
+  "difficulty": 3,
+  "field": "地域・在宅看護論",
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "station:chiiki",
+  "relatedTerms": [
+   "se-hokatsucenter",
+   "se-homon",
+   "se-kaigohoken"
+  ],
+  "description": "住みなれた 町で さいごまで 自分らしく くらせる ように、医療・介護・住まい・生活の 支えを まとめて とどける しくみです。"
+ },
+ {
+  "id": "se-hokatsucenter",
+  "name": "地域包括支援センター",
+  "reading": "ちいきほうかつしえんせんたー",
+  "journey": "seido",
+  "category": "地域と保険",
+  "difficulty": 3,
+  "field": "地域・在宅看護論",
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "station:chiiki",
+  "relatedTerms": [
+   "se-hokatsu",
+   "se-caremanager",
+   "se-hokenshi"
+  ],
+  "description": "お年よりの くらしや 介護の 相談を まとめて 受ける 町の まどぐちです。市区町村が つくり、保健師なども はたらいて います。"
+ },
+ {
+  "id": "se-yokaigo",
+  "name": "要介護認定",
+  "reading": "ようかいごにんてい",
+  "journey": "seido",
+  "category": "地域と保険",
+  "difficulty": 3,
+  "field": "健康支援と社会保障制度",
+  "type": "concept",
+  "emoji": "📑",
+  "mapNode": "station:hoken",
+  "relatedTerms": [
+   "se-kaigohoken",
+   "se-caremanager"
+  ],
+  "description": "介護保険の サービスを 使う ために、どれくらい 介護が 必要かを 市区町村が 決める ことです。"
+ },
+ {
+  "id": "se-kensagishi",
+  "name": "臨床検査技師",
+  "reading": "りんしょうけんさぎし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-houshasen",
+   "se-teamiryo"
+  ],
+  "description": "血液や 尿を しらべたり、心電図などの 検査を したり する 仕事です。検査の 結果は 治療を 決める 手がかりに なります。"
+ },
+ {
+  "id": "se-houshasen",
+  "name": "診療放射線技師",
+  "reading": "しんりょうほうしゃせんぎし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🩻",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-kensagishi",
+   "se-teamiryo"
+  ],
+  "description": "レントゲンや CTなどで、からだの 中を うつす 検査を 行う 仕事です。"
+ },
+ {
+  "id": "se-st",
+  "name": "言語聴覚士",
+  "reading": "げんごちょうかくし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-ot",
+   "se-pt"
+  ],
+  "description": "話す・聞く・食べものを のみこむ ことが むずかしい 人の リハビリを 手つだう 仕事です。"
+ },
+ {
+  "id": "se-rinsho",
+  "name": "臨床工学技士",
+  "reading": "りんしょうこうがくぎし",
+  "journey": "seido",
+  "category": "医療のなかま",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "station:team",
+  "relatedTerms": [
+   "se-teamiryo",
+   "se-iryoanzen"
+  ],
+  "description": "人工呼吸器など、からだの はたらきを 助ける 医療の 機械を あつかい、点検する 仕事です。"
+ },
+ {
+  "id": "se-iryoho",
+  "name": "医療法",
+  "reading": "いりょうほう",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 3,
+  "field": "健康支援と社会保障制度",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "station:horitsu",
+  "relatedTerms": [
+   "se-byoin",
+   "se-shinryojo",
+   "se-hojokanho"
+  ],
+  "description": "病院や 診療所の しくみや、医療の 安全について 決めた 法律です。入院の ベッドが 20床 以上 ある ところを 病院と よびます。"
+ },
+ {
+  "id": "se-iryojiko",
+  "name": "医療事故",
+  "reading": "いりょうじこ",
+  "journey": "seido",
+  "category": "医療安全",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "station:anzen",
+  "relatedTerms": [
+   "se-iryoanzen",
+   "se-incident"
+  ],
+  "description": "医療の 中で 思いがけず 患者さんに 害が 出て しまった ことです。病院は 原因を しらべ、二度と 起きない ように 取り組みます。"
+ },
+ {
+  "id": "se-ryoyo",
+  "name": "療養上の世話",
+  "reading": "りょうようじょうのせわ",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🛁",
+  "mapNode": "station:horitsu",
+  "relatedTerms": [
+   "se-shinryohojo",
+   "se-hojokanho"
+  ],
+  "description": "看護師の 大きな 仕事の 1つで、食事・清潔・ねむりなど 患者さんの くらしを 支える ことです。看護師が 自分で 考えて 行います。"
+ },
+ {
+  "id": "se-shinryohojo",
+  "name": "診療の補助",
+  "reading": "しんりょうのほじょ",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "station:horitsu",
+  "relatedTerms": [
+   "se-ryoyo",
+   "se-tokutei",
+   "se-ishi"
+  ],
+  "description": "看護師の 大きな 仕事の 1つで、医師の 指示を 受けて 治療や 検査を 手つだう ことです。"
+ },
+ {
+  "id": "se-meisho",
+  "name": "名称独占",
+  "reading": "めいしょうどくせん",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "station:horitsu",
+  "relatedTerms": [
+   "se-kangoshimenkyo",
+   "se-hojokanho"
+  ],
+  "description": "資格の ある 人だけが その 名前を 名のれる ことです。看護師の 免許が ない 人は、看護師と 名のる ことが できません。"
+ },
+ {
+  "id": "se-teamnursing",
+  "name": "チームナーシング",
+  "reading": "ちーむなーしんぐ",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "station:shigoto",
+  "relatedTerms": [
+   "se-shicho",
+   "se-teamiryo"
+  ],
+  "description": "看護師が 小さな チームを つくり、力を 合わせて 何人かの 患者さんを 受けもつ 看護の しかたです。"
+ },
+ {
+  "id": "se-tokutei",
+  "name": "特定行為研修",
+  "reading": "とくていこういけんしゅう",
+  "journey": "seido",
+  "category": "法律と免許",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "station:menkyo",
+  "relatedTerms": [
+   "se-shinryohojo",
+   "se-ninteikangoshi"
+  ],
+  "description": "決まった 診療の 補助を、医師が 前もって 作った 手順書に そって 行える ように 学ぶ 研修です。"
+ },
+ {
+  "id": "se-dmat",
+  "name": "DMAT",
+  "reading": "でぃーまっと",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🚁",
+  "mapNode": "station:saigai",
+  "relatedTerms": [
+   "se-saigaikango",
+   "se-kyotenbyoin"
+  ],
+  "description": "災害派遣医療チームの ことです。大きな 災害の とき、訓練を 受けた 医師や 看護師などが 早く かけつけて 医療を 行います。"
+ },
+ {
+  "id": "se-kyotenbyoin",
+  "name": "災害拠点病院",
+  "reading": "さいがいきょてんびょういん",
+  "journey": "seido",
+  "category": "災害と働きかた",
+  "difficulty": 3,
+  "field": "看護の統合と実践",
+  "type": "concept",
+  "emoji": "🏗",
+  "mapNode": "station:saigai",
+  "relatedTerms": [
+   "se-saigaikango",
+   "se-dmat"
+  ],
+  "description": "災害の ときに けが人を 受けいれ、医療の 中心と なる 病院です。都道府県が 指定します。"
+ },
+ {
+  "id": "se-tokuteikino",
+  "name": "特定機能病院",
+  "reading": "とくていきのうびょういん",
+  "journey": "seido",
+  "category": "病院のしくみ",
+  "difficulty": 3,
+  "field": "健康支援と社会保障制度",
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "station:byoin",
+  "relatedTerms": [
+   "se-byoin",
+   "se-iryoho"
+  ],
+  "description": "高度な 医療を 行い、新しい 医療の 開発や 研修も 行う 病院です。厚生労働大臣が 承認します。"
+ }
+]

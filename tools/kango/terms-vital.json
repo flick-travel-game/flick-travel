@@ -1,0 +1,1191 @@
+[
+ {
+  "id": "ba-kenon",
+  "name": "検温",
+  "reading": "けんおん",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "byoshitsu:taion",
+  "relatedTerms": [
+   "ba-taionkei",
+   "ba-vital"
+  ],
+  "description": "体温を はかる こと。病院では 決まった 時間に はかって、いつもと ちがう ところが ないか 見ます。"
+ },
+ {
+  "id": "ba-taionkei",
+  "name": "体温計",
+  "reading": "たいおんけい",
+  "journey": "vital",
+  "category": "道具",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "byoshitsu:taion",
+  "relatedTerms": [
+   "ba-kenon",
+   "ba-denshitaionkei"
+  ],
+  "description": "体温を はかる 道具。わきの 下に はさむ もの、耳や おでこで はかる ものなど、いろいろな 形が あります。"
+ },
+ {
+  "id": "ba-ketsuatsukei",
+  "name": "血圧計",
+  "reading": "けつあつけい",
+  "journey": "vital",
+  "category": "道具",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "byoshitsu:kiatsu",
+  "relatedTerms": [
+   "ba-ketsuatsusokutei",
+   "ba-manchette"
+  ],
+  "description": "血圧を はかる 道具。うでに 帯を まいて 空気で しめつけ、血液が おす 力を 調べます。いまは 電子の ものが 多いです。"
+ },
+ {
+  "id": "ba-choshinki",
+  "name": "聴診器",
+  "reading": "ちょうしんき",
+  "journey": "vital",
+  "category": "道具",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "byoshitsu:kiku",
+  "relatedTerms": [
+   "ba-choshin",
+   "ba-kokyuon"
+  ],
+  "description": "からだの 中の 音を 聞く 道具。むねや おなかに あてて、心臓の 音や 息の 音、おなかの 動く 音を 聞きます。"
+ },
+ {
+  "id": "ba-kaoiro",
+  "name": "顔色",
+  "reading": "かおいろ",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "😊",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-hyojo"
+  ],
+  "description": "顔の 色の ようす。看護師さんは 病室に 入ると まず 顔色を 見て、いつもと ちがう ところが ないか 気を くばります。"
+ },
+ {
+  "id": "ba-nursecall",
+  "name": "ナースコール",
+  "reading": "なーすこーる",
+  "journey": "vital",
+  "category": "道具",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "byoshitsu:nursecall",
+  "relatedTerms": [
+   "ba-junshi",
+   "ba-bedside"
+  ],
+  "description": "ベッドの そばに ある ボタン。おすと 看護師さんに 知らせが とどき、話を したり 病室に 来てくれたり します。こまった ときの 大切な 通り道です。"
+ },
+ {
+  "id": "ba-ketsuatsusokutei",
+  "name": "血圧測定",
+  "reading": "けつあつそくてい",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "byoshitsu:kiatsu",
+  "relatedTerms": [
+   "ba-ketsuatsukei",
+   "ba-shushukuki"
+  ],
+  "description": "血圧を はかる こと。からだの ようすを 知る 大事な 手がかりなので、決まった 時間や ぐあいが かわった ときに はかります。"
+ },
+ {
+  "id": "ba-kansatsu",
+  "name": "観察",
+  "reading": "かんさつ",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-kaoiro",
+   "ba-keijiteki"
+  ],
+  "description": "患者さんの ようすを よく 見て 気づく こと。顔色や 表情、話しかたなど、小さな 変化に 気づく ことが 看護の はじまりです。"
+ },
+ {
+  "id": "ba-monshin",
+  "name": "問診",
+  "reading": "もんしん",
+  "journey": "vital",
+  "category": "聞く・話す",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🗣",
+  "mapNode": "byoshitsu:kiku",
+  "relatedTerms": [
+   "ba-shuso",
+   "ba-kiorekki"
+  ],
+  "description": "患者さんに 話を 聞いて、ぐあいや これまでの ことを たずねる こと。いつから どんな ようすかを ていねいに 聞きます。"
+ },
+ {
+  "id": "ba-taijusokutei",
+  "name": "体重測定",
+  "reading": "たいじゅうそくてい",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "byoshitsu:hakaru",
+  "relatedTerms": [
+   "ba-shinchosokutei",
+   "ba-nyoryo"
+  ],
+  "description": "体重を はかる こと。栄養や からだの 水分の ようすを 知る 手がかりに なります。前と くらべて 変化を 見ます。"
+ },
+ {
+  "id": "ba-shinchosokutei",
+  "name": "身長測定",
+  "reading": "しんちょうそくてい",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "byoshitsu:hakaru",
+  "relatedTerms": [
+   "ba-taijusokutei"
+  ],
+  "description": "身長を はかる こと。体重と あわせて、からだの 大きさや 育ちの ようすを 知る 手がかりに します。"
+ },
+ {
+  "id": "ba-hyojo",
+  "name": "表情",
+  "reading": "ひょうじょう",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🙂",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-kaoiro",
+   "ba-itami"
+  ],
+  "description": "顔に あらわれる 気持ちや ぐあいの ようす。ことばで 言えない つらさや 安心も、表情から 気づける ことが あります。"
+ },
+ {
+  "id": "ba-shokuyoku",
+  "name": "食欲",
+  "reading": "しょくよく",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "byoshitsu:bed",
+  "relatedTerms": [
+   "ba-taicho",
+   "ba-nyoryo"
+  ],
+  "description": "食べたいと 思う 気持ち。どれくらい 食べられたかは、からだの 元気の ようすを 知る 大事な 手がかりに なります。"
+ },
+ {
+  "id": "ba-monitor",
+  "name": "モニター",
+  "reading": "もにたー",
+  "journey": "vital",
+  "category": "道具",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "byoshitsu:monitor",
+  "relatedTerms": [
+   "ba-shindenzumonitor"
+  ],
+  "description": "からだの ようすを 画面に 出しつづける 機械。心臓の 動きや 息の ようすなどを ずっと 見守ります。"
+ },
+ {
+  "id": "ba-myakuhakusokutei",
+  "name": "脈拍測定",
+  "reading": "みゃくはくそくてい",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "💓",
+  "mapNode": "byoshitsu:hakaru",
+  "relatedTerms": [
+   "ba-shinpakusu",
+   "ba-hinmyaku"
+  ],
+  "description": "手首などで 脈に ふれて、回数や リズムを はかる こと。速さだけで なく、強さや 乱れが ないかも 見ます。"
+ },
+ {
+  "id": "ba-kokyusu",
+  "name": "呼吸数",
+  "reading": "こきゅうすう",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "byoshitsu:sanso",
+  "relatedTerms": [
+   "ba-ikizukai",
+   "ba-kokyuon"
+  ],
+  "description": "1分間に 息を する 回数。息の ようすを 知る 手がかりです。体温・脈・血圧と ならぶ 大事な 観察の 1つです。"
+ },
+ {
+  "id": "ba-bedside",
+  "name": "ベッドサイド",
+  "reading": "べっどさいど",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🛏",
+  "mapNode": "byoshitsu:bed",
+  "relatedTerms": [
+   "ba-kansatsu",
+   "ba-nursecall"
+  ],
+  "description": "ベッドの すぐ そばの こと。看護師は ベッドサイドで 患者さんの ようすを 見たり、話を 聞いたり します。"
+ },
+ {
+  "id": "ba-taicho",
+  "name": "体調",
+  "reading": "たいちょう",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🌤",
+  "mapNode": "byoshitsu:bed",
+  "relatedTerms": [
+   "ba-shokuyoku",
+   "ba-uttae"
+  ],
+  "description": "からだの ぐあいの ようす。「よく ねむれたか」「どこか つらくないか」を 毎日 たずねて、いつもと くらべます。"
+ },
+ {
+  "id": "ba-itami",
+  "name": "痛み",
+  "reading": "いたみ",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🤕",
+  "mapNode": "byoshitsu:kiku",
+  "relatedTerms": [
+   "ba-facescale",
+   "ba-nrs"
+  ],
+  "description": "からだの どこかが いたい と 感じる こと。場所や 強さ、いつからかを 聞いて、少しでも 楽に すごせるように 支えます。"
+ },
+ {
+  "id": "ba-ikizukai",
+  "name": "息づかい",
+  "reading": "いきづかい",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 1,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "😮‍💨",
+  "mapNode": "byoshitsu:sanso",
+  "relatedTerms": [
+   "ba-kokyusu",
+   "ba-doryokukokyu"
+  ],
+  "description": "息の しかたの ようす。速さや 深さ、音が しないかなどを 見て、楽に 息が できて いるかを たしかめます。"
+ },
+ {
+  "id": "ba-vital",
+  "name": "バイタルサイン",
+  "reading": "ばいたるさいん",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "byoshitsu:monitor",
+  "relatedTerms": [
+   "ba-kenon",
+   "ba-ketsuatsusokutei",
+   "ba-ishikilevel"
+  ],
+  "description": "体温・脈拍・呼吸・血圧など、生きている しるしを 数で あらわした もの。意識の ようすを ふくめる ことも あります。毎日の 観察の 土台です。"
+ },
+ {
+  "id": "ba-choshin",
+  "name": "聴診",
+  "reading": "ちょうしん",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "byoshitsu:kiku",
+  "relatedTerms": [
+   "ba-choshinki",
+   "ba-kokyuon",
+   "ba-choon"
+  ],
+  "description": "聴診器で からだの 中の 音を 聞いて 調べる こと。心臓・息・おなかの 音から、からだの 中の ようすを 知ります。"
+ },
+ {
+  "id": "ba-shokushin",
+  "name": "触診",
+  "reading": "しょくしん",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-shishin",
+   "ba-fushu"
+  ],
+  "description": "手で からだに ふれて 調べる こと。あたたかさや かたさ、むくみが ないかなどを たしかめます。"
+ },
+ {
+  "id": "ba-shishin",
+  "name": "視診",
+  "reading": "ししん",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "👁",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-shokushin",
+   "ba-kaoiro"
+  ],
+  "description": "目で 見て 調べる こと。顔色・皮膚・からだの 動きなどを 見て、からだの ようすを 知る 手がかりに します。"
+ },
+ {
+  "id": "ba-dashin",
+  "name": "打診",
+  "reading": "だしん",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "👆",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-shokushin",
+   "ba-choshin"
+  ],
+  "description": "からだを 指で 軽く たたいて、ひびく 音で 中の ようすを 知る 調べかた。空気が 多い ところと 少ない ところで 音が かわります。"
+ },
+ {
+  "id": "ba-spo2",
+  "name": "SpO2",
+  "reading": "えすぴーおーつー",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 2,
+  "field": "人体の構造と機能",
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "byoshitsu:sanso",
+  "relatedTerms": [
+   "ba-pulseoxi",
+   "ba-chianose"
+  ],
+  "description": "血液の 中で 酸素を 運ぶ ヘモグロビンの うち、酸素と むすびついて いる ものの わりあい。指先に つける 機械で 痛みなく はかれます。"
+ },
+ {
+  "id": "ba-pulseoxi",
+  "name": "パルスオキシメーター",
+  "reading": "ぱるすおきしめーたー",
+  "journey": "vital",
+  "category": "道具",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "☝️",
+  "mapNode": "byoshitsu:sanso",
+  "relatedTerms": [
+   "ba-spo2",
+   "ba-shinpakusu"
+  ],
+  "description": "指先に はさんで、SpO2と 脈の 回数を はかる 機械。光を 使うので 痛く ありません。"
+ },
+ {
+  "id": "ba-ishikilevel",
+  "name": "意識レベル",
+  "reading": "いしきれべる",
+  "journey": "vital",
+  "category": "意識",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "byoshitsu:ishiki",
+  "relatedTerms": [
+   "ba-jcs",
+   "ba-gcs",
+   "ba-seimei"
+  ],
+  "description": "どれくらい はっきり 目覚めて いるかの ていど。呼びかけへの 返事などで たしかめ、決まった ものさしで あらわします。"
+ },
+ {
+  "id": "ba-shinpakusu",
+  "name": "心拍数",
+  "reading": "しんぱくすう",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 2,
+  "field": "人体の構造と機能",
+  "type": "concept",
+  "emoji": "💓",
+  "mapNode": "byoshitsu:monitor",
+  "relatedTerms": [
+   "ba-myakuhakusokutei",
+   "ba-shindenzumonitor"
+  ],
+  "description": "心臓が 1分間に 動く 回数。モニターの 画面に 数字で 出る ことが 多く、脈の 回数と あわせて 見ます。"
+ },
+ {
+  "id": "ba-chianose",
+  "name": "チアノーゼ",
+  "reading": "ちあのーぜ",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 2,
+  "field": "疾病の成り立ちと回復の促進",
+  "type": "concept",
+  "emoji": "💜",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-spo2",
+   "ba-kaoiro"
+  ],
+  "description": "くちびるや 爪が 青むらさき色に 見える こと。酸素が じゅうぶん 行きわたって いない サインの 1つなので、見のがさないよう 観察します。"
+ },
+ {
+  "id": "ba-hakkan",
+  "name": "発汗",
+  "reading": "はっかん",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-kenon"
+  ],
+  "description": "汗を かく こと。汗の 量や かきかた、ねまきの しめりぐあいも 観察の 手がかりに なります。"
+ },
+ {
+  "id": "ba-fushu",
+  "name": "浮腫",
+  "reading": "ふしゅ",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 2,
+  "field": "疾病の成り立ちと回復の促進",
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-shokushin",
+   "ba-suibunsuito"
+  ],
+  "description": "むくみの こと。からだの 水分が 皮膚の 下に たまって、はれぼったく なる ようすです。足や まぶたなどに 見られます。"
+ },
+ {
+  "id": "ba-denshitaionkei",
+  "name": "電子体温計",
+  "reading": "でんしたいおんけい",
+  "journey": "vital",
+  "category": "道具",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "byoshitsu:taion",
+  "relatedTerms": [
+   "ba-taionkei",
+   "ba-ekika"
+  ],
+  "description": "電子の しくみで 体温を はかる 体温計。はかり終わると 音で 知らせて くれます。"
+ },
+ {
+  "id": "ba-manchette",
+  "name": "マンシェット",
+  "reading": "まんしぇっと",
+  "journey": "vital",
+  "category": "道具",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "byoshitsu:kiatsu",
+  "relatedTerms": [
+   "ba-ketsuatsukei",
+   "ba-korotkoff"
+  ],
+  "description": "血圧を はかる ときに うでに まく 帯。中の ふくろに 空気が 入って ふくらみます。カフとも いいます。"
+ },
+ {
+  "id": "ba-shindenzumonitor",
+  "name": "心電図モニター",
+  "reading": "しんでんずもにたー",
+  "journey": "vital",
+  "category": "道具",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "byoshitsu:monitor",
+  "relatedTerms": [
+   "ba-monitor",
+   "ba-shinpakusu"
+  ],
+  "description": "むねに はった シールから 心臓の 電気の 動きを 受けとり、画面に 波の 形で 出しつづける 機械。はなれた 場所からも 見守れます。"
+ },
+ {
+  "id": "ba-kokyuon",
+  "name": "呼吸音",
+  "reading": "こきゅうおん",
+  "journey": "vital",
+  "category": "聞く・話す",
+  "difficulty": 2,
+  "field": "人体の構造と機能",
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "byoshitsu:sanso",
+  "relatedTerms": [
+   "ba-choshin",
+   "ba-fukuzatsuon"
+  ],
+  "description": "息を する ときに 空気が 通る 音。聴診器で むねや 背中の 音を 聞き、左右の ちがいなども たしかめます。"
+ },
+ {
+  "id": "ba-uttae",
+  "name": "訴え",
+  "reading": "うったえ",
+  "journey": "vital",
+  "category": "聞く・話す",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🗨",
+  "mapNode": "byoshitsu:kiku",
+  "relatedTerms": [
+   "ba-shuso",
+   "ba-shukanteki"
+  ],
+  "description": "患者さんが 伝える 痛みや ぐあい、気持ちの こと。ささいに 思える ことばも 大事に 受けとめて 記録します。"
+ },
+ {
+  "id": "ba-facescale",
+  "name": "フェイススケール",
+  "reading": "ふぇいすすけーる",
+  "journey": "vital",
+  "category": "聞く・話す",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "😣",
+  "mapNode": "byoshitsu:kiku",
+  "relatedTerms": [
+   "ba-itami",
+   "ba-nrs"
+  ],
+  "description": "にこにこ顔から なき顔までの 顔の 絵から、いまの 痛みに 近い ものを えらんで もらう ものさし。小さな 子どもにも 使えます。"
+ },
+ {
+  "id": "ba-shuso",
+  "name": "主訴",
+  "reading": "しゅそ",
+  "journey": "vital",
+  "category": "聞く・話す",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🗣",
+  "mapNode": "byoshitsu:kiku",
+  "relatedTerms": [
+   "ba-monshin",
+   "ba-uttae"
+  ],
+  "description": "患者さんが いちばん つらいと 感じて 伝える こと。病院に 来た きっかけにも なる、いちばん 大事な 話です。"
+ },
+ {
+  "id": "ba-kiorekki",
+  "name": "既往歴",
+  "reading": "きおうれき",
+  "journey": "vital",
+  "category": "記録",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "byoshitsu:kiroku",
+  "relatedTerms": [
+   "ba-monshin",
+   "ba-genbyoreki"
+  ],
+  "description": "これまでに かかった 病気や けが、手術などの ようす。問診で たずね、いまの ケアに いかします。"
+ },
+ {
+  "id": "ba-shukanteki",
+  "name": "主観的データ",
+  "reading": "しゅかんてきでーた",
+  "journey": "vital",
+  "category": "記録",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "💭",
+  "mapNode": "byoshitsu:kiroku",
+  "relatedTerms": [
+   "ba-kyakkanteki",
+   "ba-uttae"
+  ],
+  "description": "患者さん 本人が 話した ことから わかる ようす。「ねむれない」「だるい」など、本人に しか わからない 感じかたです。"
+ },
+ {
+  "id": "ba-kyakkanteki",
+  "name": "客観的データ",
+  "reading": "きゃっかんてきでーた",
+  "journey": "vital",
+  "category": "記録",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "byoshitsu:kiroku",
+  "relatedTerms": [
+   "ba-shukanteki",
+   "ba-vital"
+  ],
+  "description": "見たり はかったり して、だれが 見ても わかる ようす。体温の 数字や 顔色などです。主観的データと あわせて 考えます。"
+ },
+ {
+  "id": "ba-nyoryo",
+  "name": "尿量",
+  "reading": "にょうりょう",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🚽",
+  "mapNode": "byoshitsu:hakaru",
+  "relatedTerms": [
+   "ba-suibunsuito",
+   "ba-taijusokutei"
+  ],
+  "description": "出た おしっこの 量。からだの 水分の 出入りを 知る 手がかりに なるので、必要な ときに はかって 記録します。"
+ },
+ {
+  "id": "ba-junshi",
+  "name": "巡視",
+  "reading": "じゅんし",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "byoshitsu:mado",
+  "relatedTerms": [
+   "ba-nursecall",
+   "ba-keijiteki"
+  ],
+  "description": "看護師さんが 病室を 回って、患者さんの ようすを 見る こと。夜の あいだも ねむりを じゃまないよう 静かに 回ります。ラウンドとも いいます。"
+ },
+ {
+  "id": "ba-ondoban",
+  "name": "温度板",
+  "reading": "おんどばん",
+  "journey": "vital",
+  "category": "記録",
+  "difficulty": 2,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "byoshitsu:kiroku",
+  "relatedTerms": [
+   "ba-vital",
+   "ba-kenon"
+  ],
+  "description": "体温や 脈拍、血圧などを 日ごとに グラフに して 書きこむ 記録。変化が ひと目で わかります。いまは 電子カルテの 中に ある ことも 多いです。"
+ },
+ {
+  "id": "ba-shushukuki",
+  "name": "収縮期血圧",
+  "reading": "しゅうしゅくきけつあつ",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 3,
+  "field": "人体の構造と機能",
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "byoshitsu:kiatsu",
+  "relatedTerms": [
+   "ba-kakuchoki",
+   "ba-ketsuatsusokutei"
+  ],
+  "description": "心臓が ちぢんで 血液を 送り出す ときの 血圧。血圧の うち 高い ほうの 数で、「上の 血圧」とも よばれます。"
+ },
+ {
+  "id": "ba-kakuchoki",
+  "name": "拡張期血圧",
+  "reading": "かくちょうきけつあつ",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 3,
+  "field": "人体の構造と機能",
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "byoshitsu:kiatsu",
+  "relatedTerms": [
+   "ba-shushukuki",
+   "ba-korotkoff"
+  ],
+  "description": "心臓が ひろがって 血液を ためる ときの 血圧。血圧の うち 低い ほうの 数で、「下の 血圧」とも よばれます。"
+ },
+ {
+  "id": "ba-jcs",
+  "name": "JCS",
+  "reading": "じぇーしーえす",
+  "journey": "vital",
+  "category": "意識",
+  "difficulty": 3,
+  "field": "成人看護学",
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "byoshitsu:ishiki",
+  "relatedTerms": [
+   "ba-gcs",
+   "ba-ishikilevel"
+  ],
+  "description": "日本で 考えられた、意識の ようすを あらわす ものさし。目を あけて いるか などで 大きく 3つに 分け、それぞれを さらに 3つに 分けます。3-3-9度方式とも いいます。"
+ },
+ {
+  "id": "ba-gcs",
+  "name": "GCS",
+  "reading": "じーしーえす",
+  "journey": "vital",
+  "category": "意識",
+  "difficulty": 3,
+  "field": "成人看護学",
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "byoshitsu:ishiki",
+  "relatedTerms": [
+   "ba-jcs",
+   "ba-ishikilevel"
+  ],
+  "description": "目の あけかた・ことばの 返事・からだの 動きの 3つを 点数に して、意識の ようすを あらわす ものさし。世界で 広く 使われて います。"
+ },
+ {
+  "id": "ba-nrs",
+  "name": "NRS",
+  "reading": "えぬあーるえす",
+  "journey": "vital",
+  "category": "聞く・話す",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "byoshitsu:kiku",
+  "relatedTerms": [
+   "ba-facescale",
+   "ba-itami"
+  ],
+  "description": "痛みの 強さを 0から 10までの 数で 本人に 答えて もらう ものさし。0は 痛みが ない こと、10は 考えられる いちばん 強い 痛みを さします。"
+ },
+ {
+  "id": "ba-keijiteki",
+  "name": "経時的観察",
+  "reading": "けいじてきかんさつ",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-kansatsu",
+   "ba-junshi"
+  ],
+  "description": "時間を おって 何度も 観察し、変化を とらえる こと。1回だけで なく 前と くらべる ことで、小さな 変化に 気づけます。"
+ },
+ {
+  "id": "ba-hinmyaku",
+  "name": "頻脈",
+  "reading": "ひんみゃく",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 3,
+  "field": "疾病の成り立ちと回復の促進",
+  "type": "concept",
+  "emoji": "💓",
+  "mapNode": "byoshitsu:monitor",
+  "relatedTerms": [
+   "ba-jomyaku",
+   "ba-myakuhakusokutei"
+  ],
+  "description": "脈が いつもより 速い ようす。運動の あとや 熱が ある ときなど、いろいろな わけで 起こります。めやすは 年れいで ちがいます。"
+ },
+ {
+  "id": "ba-jomyaku",
+  "name": "徐脈",
+  "reading": "じょみゃく",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 3,
+  "field": "疾病の成り立ちと回復の促進",
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "byoshitsu:monitor",
+  "relatedTerms": [
+   "ba-hinmyaku",
+   "ba-shinpakusu"
+  ],
+  "description": "脈が いつもより ゆっくりな ようす。運動を よく する 人では ふだんから ゆっくりな ことも あります。めやすは 年れいで ちがいます。"
+ },
+ {
+  "id": "ba-kentoshiki",
+  "name": "見当識",
+  "reading": "けんとうしき",
+  "journey": "vital",
+  "category": "意識",
+  "difficulty": 3,
+  "field": "老年看護学",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "byoshitsu:ishiki",
+  "relatedTerms": [
+   "ba-seimei",
+   "ba-komei"
+  ],
+  "description": "いまが いつか、ここが どこか、まわりの 人が だれかが わかって いる こと。会話の 中で さりげなく たしかめます。"
+ },
+ {
+  "id": "ba-taiko",
+  "name": "対光反射",
+  "reading": "たいこうはんしゃ",
+  "journey": "vital",
+  "category": "意識",
+  "difficulty": 3,
+  "field": "人体の構造と機能",
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "byoshitsu:ishiki",
+  "relatedTerms": [
+   "ba-ishikilevel",
+   "ba-jcs"
+  ],
+  "description": "目に 光を あてると、ひとみが 小さく なる はたらき。自分の 意思とは 関係なく 起こる 反応で、観察の 手がかりに します。"
+ },
+ {
+  "id": "ba-korotkoff",
+  "name": "コロトコフ音",
+  "reading": "ころとこふおん",
+  "journey": "vital",
+  "category": "聞く・話す",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🎧",
+  "mapNode": "byoshitsu:kiatsu",
+  "relatedTerms": [
+   "ba-manchette",
+   "ba-shushukuki"
+  ],
+  "description": "聴診器を 使って 血圧を はかる ときに 聞こえる 音。見つけた ロシアの お医者さんの 名前から つけられました。"
+ },
+ {
+  "id": "ba-choon",
+  "name": "腸蠕動音",
+  "reading": "ちょうぜんどうおん",
+  "journey": "vital",
+  "category": "聞く・話す",
+  "difficulty": 3,
+  "field": "人体の構造と機能",
+  "type": "concept",
+  "emoji": "🎧",
+  "mapNode": "byoshitsu:kiku",
+  "relatedTerms": [
+   "ba-choshin",
+   "ba-choshinki"
+  ],
+  "description": "腸が 動いて 中の ものを 送る ときの 音。聴診器を おなかに あてて 聞き、おなかの 動きの ようすを 知ります。"
+ },
+ {
+  "id": "ba-fukuzatsuon",
+  "name": "副雑音",
+  "reading": "ふくざつおん",
+  "journey": "vital",
+  "category": "聞く・話す",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🎵",
+  "mapNode": "byoshitsu:sanso",
+  "relatedTerms": [
+   "ba-kokyuon",
+   "ba-choshin"
+  ],
+  "description": "呼吸音に まじって 聞こえる、ふだんは しない 音。聞こえた 場所や 音の 感じを 記録して 伝えます。"
+ },
+ {
+  "id": "ba-doryokukokyu",
+  "name": "努力呼吸",
+  "reading": "どりょくこきゅう",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 3,
+  "field": "疾病の成り立ちと回復の促進",
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "byoshitsu:sanso",
+  "relatedTerms": [
+   "ba-ikizukai",
+   "ba-kizakokyu"
+  ],
+  "description": "ふだんは 使わない 首や 肩の 筋肉まで 使って、がんばって 息を して いる ようす。息の ようすを よく 見て、楽に すごせるよう 支えます。"
+ },
+ {
+  "id": "ba-kizakokyu",
+  "name": "起座呼吸",
+  "reading": "きざこきゅう",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 3,
+  "field": "疾病の成り立ちと回復の促進",
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "byoshitsu:bed",
+  "relatedTerms": [
+   "ba-doryokukokyu",
+   "ba-kuchisubome"
+  ],
+  "description": "横に なるより 体を 起こした ほうが 息が 楽なので、すわった 姿勢で 息を する ようす。"
+ },
+ {
+  "id": "ba-kuchisubome",
+  "name": "口すぼめ呼吸",
+  "reading": "くちすぼめこきゅう",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 3,
+  "field": "成人看護学",
+  "type": "concept",
+  "emoji": "😗",
+  "mapNode": "byoshitsu:sanso",
+  "relatedTerms": [
+   "ba-kizakokyu",
+   "ba-ikizukai"
+  ],
+  "description": "口を すぼめて、ゆっくり 息を はく 呼吸の しかた。息を はきやすく する くふうとして 知られて います。"
+ },
+ {
+  "id": "ba-turgor",
+  "name": "ツルゴール",
+  "reading": "つるごーる",
+  "journey": "vital",
+  "category": "見る・ふれる",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🤏",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-suibunsuito",
+   "ba-shokushin"
+  ],
+  "description": "皮膚の はりぐあいの こと。軽く つまんだ 皮膚の もどりかたを 見て、からだの 水分の ようすを 知る 手がかりの 1つに します。"
+ },
+ {
+  "id": "ba-suibunsuito",
+  "name": "水分出納",
+  "reading": "すいぶんすいとう",
+  "journey": "vital",
+  "category": "記録",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "byoshitsu:kiroku",
+  "relatedTerms": [
+   "ba-nyoryo",
+   "ba-fushu"
+  ],
+  "description": "からだに 入った 水分と、出て いった 水分を くらべて 記録する こと。インアウトとも いいます。"
+ },
+ {
+  "id": "ba-genbyoreki",
+  "name": "現病歴",
+  "reading": "げんびょうれき",
+  "journey": "vital",
+  "category": "記録",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "byoshitsu:kiroku",
+  "relatedTerms": [
+   "ba-kiorekki",
+   "ba-shuso"
+  ],
+  "description": "いまの ぐあいが いつから、どのように 始まって 続いて いるかの 流れ。問診で 順を おって 聞きとります。"
+ },
+ {
+  "id": "ba-seimei",
+  "name": "意識清明",
+  "reading": "いしきせいめい",
+  "journey": "vital",
+  "category": "意識",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🌞",
+  "mapNode": "byoshitsu:ishiki",
+  "relatedTerms": [
+   "ba-keimin",
+   "ba-ishikilevel"
+  ],
+  "description": "はっきり 目覚めて いて、話しかけに ふつうに 答えられる ようす。意識の ようすを 記録する ときの ことばです。"
+ },
+ {
+  "id": "ba-keimin",
+  "name": "傾眠",
+  "reading": "けいみん",
+  "journey": "vital",
+  "category": "意識",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "😪",
+  "mapNode": "byoshitsu:ishiki",
+  "relatedTerms": [
+   "ba-seimei",
+   "ba-komei"
+  ],
+  "description": "うとうと ねむりがちで、声を かけると 目を さます ようす。ふだんの ねむりと 見分ける ため、呼びかけへの 返事を たしかめます。"
+ },
+ {
+  "id": "ba-ganmenkocho",
+  "name": "顔面紅潮",
+  "reading": "がんめんこうちょう",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "😳",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-kaoiro",
+   "ba-hakkan"
+  ],
+  "description": "顔が 赤く なる こと。熱が ある とき、あつい とき、はずかしい ときなど いろいろな わけで 起こるので、ほかの ようすと あわせて 見ます。"
+ },
+ {
+  "id": "ba-masshoreikan",
+  "name": "末梢冷感",
+  "reading": "まっしょうれいかん",
+  "journey": "vital",
+  "category": "からだのサイン",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "byoshitsu:kansatsu",
+  "relatedTerms": [
+   "ba-shokushin",
+   "ba-chianose"
+  ],
+  "description": "手足の 先が ひんやり 冷たい こと。さわって たしかめ、あたたかさの ちがいも 記録します。"
+ },
+ {
+  "id": "ba-komei",
+  "name": "呼名反応",
+  "reading": "こめいはんのう",
+  "journey": "vital",
+  "category": "意識",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "byoshitsu:ishiki",
+  "relatedTerms": [
+   "ba-bedside",
+   "ba-keimin"
+  ],
+  "description": "名前を 呼んだ ときの 返事や 反応。目を あけるか、答えられるかを 見て、意識の ようすを 知る 手がかりに します。"
+ },
+ {
+  "id": "ba-ekika",
+  "name": "腋窩検温",
+  "reading": "えきかけんおん",
+  "journey": "vital",
+  "category": "はかる",
+  "difficulty": 3,
+  "field": "基礎看護学",
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "byoshitsu:taion",
+  "relatedTerms": [
+   "ba-kenon",
+   "ba-denshitaionkei"
+  ],
+  "description": "わきの 下で 体温を はかる こと。腋窩は わきの 下の ことで、日本の 病院で よく 使われる はかりかたです。"
+ }
+]

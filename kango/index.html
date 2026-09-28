@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリック株式旅行</title>
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=4">
-<link rel="icon" type="image/png" href="favicon.png?v=4">
+<title>フリック看護師</title>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="../favicon.png?v=2">
 <link rel="manifest" href="manifest.webmanifest?v=3">
-<meta name="apple-mobile-web-app-title" content="フリック株式旅行">
+<meta name="apple-mobile-web-app-title" content="フリック看護師">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#4fb8ff">
@@ -403,12 +403,10 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=4" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="908" height="177" aria-hidden="true">
+      <span class="logo-text">フリック看護師</span>
       <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリック株式旅行</h1>
-    <img class="hero" src="hero.webp?v=3" alt="フリック株式旅行。世界の 会社の 町と 地球を 男の子と 犬が 飛んで 旅する 絵" width="1536" height="1024">
+    <h1 class="sr-only">フリック看護師</h1>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -527,12 +525,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="companies.js"></script>
-<script src="kabu.js"></script>
+<script src="terms.js?v=e2c3d5e7"></script>
+<script src="kango.js?v=73194ee2"></script>
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kabu", name:"フリック株式旅行", modes:(typeof KABU === "object" ? KABU.modes : []), assets:"../", logo:true, hero:true, dir:"kabu/", lead:"世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。", how:"表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。どのステージも いつも同じ10問なので、タイムをくらべられるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。" };
+const GAME = { id:"kango", name:"フリック看護師", modes:(typeof KANGO === "object" ? KANGO.modes : []), assets:"../", logo:false, hero:false, dir:"kango/", lead:"見て 気づく ことば・看護の わざ・感染を ふせぐ・看護の 考えかた・からだと 病気の ことば・一生の 看護・病院と しくみの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どの 科目か・しくみ図の どこに あるのかが 出るよ。病院で 見かける ことばから はじめて、看護師国家試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。薬の 量や 手当ての やりかたは のせていないよ。本当に 具合が わるい ときは、大人に 言って お医者さんへ。説明は 本物の 試験問題では ないので、試験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、看護の ことばと しくみが つながって 見えてくるよ。厚生労働省とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},

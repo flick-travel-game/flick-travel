@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -94,11 +94,20 @@ GAMES = {
                   lead="子どもの 育ち・保育の 考えかた・子どもを 支える しくみ・健康・食と栄養・実技と 現場の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どの 科目か・しくみ図の どこに あるのかが 出るよ。園で 聞く ことばから はじめて、保育士試験の 筆記の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。説明は 本物の 試験問題では ないので、試験の 勉強には 問題集や 学校の 教科書も 使ってね。けがや 病気の ときの 手あての やりかたは のせていないよ。本当の ときは 園の きまりと 大人の 指示に したがってね。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、保育の ことばと しくみが つながって 見えてくるよ。こども家庭庁・厚生労働省・全国保育士養成協議会とは 関係ありません。"),
+    # フリック看護師(けいくん 2026-09-28「看護師になるために必要な 知識をフリック形式の問題にしてください」→「全部おすすめで」)。
+    #   ことばは tools/kango/terms-<旅>.json → kango/terms.js(tools/kango/terms_js.py)。しくみは kango/kango.js(KANGO。hoiku.js を 写した)。
+    #   旅は 7つ + マスター。むずかしさは 入門 → 中級(看護師国家試験の 必修・一般の めやす)→ 上級(こまかい 制度・専門の めやす)。
+    #   ⚠️⚠️ 医療の やりかた(薬の 量・処置の 手順)は のせない。小学生も あそぶので こわい 書きかたを しない(決まりは tools/kango/PROMPT.md)。
+    #   絵は まだ 無い(届いたら art を 足して hero / logo を True に。題名は けいくんの 絵の 題名に そろえる)
+    "kango": dict(name="フリック看護師", modes="KANGO", kinds=set(), color="#e0202e", hero=False, logo=False,
+                  lead="見て 気づく ことば・看護の わざ・感染を ふせぐ・看護の 考えかた・からだと 病気の ことば・一生の 看護・病院と しくみの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どの 科目か・しくみ図の どこに あるのかが 出るよ。病院で 見かける ことばから はじめて、看護師国家試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。",
+                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。薬の 量や 手当ての やりかたは のせていないよ。本当に 具合が わるい ときは、大人に 言って お医者さんへ。説明は 本物の 試験問題では ないので、試験の 勉強には 学校の 教科書や 問題集も 使ってね。",
+                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、看護の ことばと しくみが つながって 見えてくるよ。厚生労働省とは 関係ありません。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -163,6 +172,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/hoiku/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "hoiku" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="hoiku.js?v=%s"></script>' % (ver("terms.js"), ver("hoiku.js")))
+    if g["modes"] == "KANGO":  # 看護の コース: 保育と 同じ 形。ことばは terms.js(tools/kango/terms-*.json から)、しくみは kango.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kango/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "kango" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="kango.js?v=%s"></script>' % (ver("terms.js"), ver("kango.js")))
     if g["modes"] == "SUGAKU":  # 数学の コース: 国語と 同じ 形。ことばは terms.js(tools/sugaku/terms-*.json から)、しくみは sugaku.js(make_sugaku_js.py が 作る)
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/sugaku/terms_js.py")], check=True); subprocess.run([_s.executable, str(ROOT / "tools/sugaku/make_sugaku_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "sugaku" / f).read_bytes()).hexdigest()[:8]

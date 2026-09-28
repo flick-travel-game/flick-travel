@@ -16,6 +16,10 @@ const HOIKU = (() => {
   const fmt = n => n.toLocaleString("ja-JP");
   const JR = D.journeys, JBY = Object.fromEntries(JR.map(j => [j.id, j]));
   const LVN = Object.fromEntries(D.levels.map(l => [l.difficulty, l]));
+  /* 旅の ボタンの 色。土台が TONE[名前] を 見るので、ほかの フリックと 同じ あかるい 色に なる
+     (けいくん 2026-09-28「ボタンが暗いので他のフリックのように明るくしてください」)。
+     TONE に 無い 赤だけ 色で 渡す(#e0202e = 歴史・レベル2 と 同じ あかるい 赤) */
+  const TONE_OF = { hattatsu:"pink", hoiku:"green", fukushi:"blue", hoken:"#e0202e", shoku:"orange", jitsugi:"purple" };
   const MODE_OF = { hattatsu:"hhattatsu", hoiku:"hhoiku", fukushi:"hfukushi", hoken:"hhoken", shoku:"hshoku", jitsugi:"hjitsugi" };
   const JOURNEY_OF = Object.fromEntries(Object.entries(MODE_OF).map(([j, m]) => [m, j]));
 
@@ -48,7 +52,7 @@ const HOIKU = (() => {
     const m = MODE_OF[J.id], terms = ALL.filter(q => q.j === J.id);
     const info = tens(terms.slice().sort((a, b) => a.dv - b.dv || a.ord - b.ord)), lv = info.map(s => s.set);
     info.forEach((s, k) => { s.stop = Math.min(J.stops.length - 1, Math.floor(k * J.stops.length / info.length)); });
-    levels[m] = lv; stageInfo[m] = info; pools[m] = terms; colors[m] = J.color;
+    levels[m] = lv; stageInfo[m] = info; pools[m] = terms; colors[m] = TONE_OF[J.id] || J.color;
     maps[m] = { icon:J.icon, name:J.name, cardName:J.name, title:"", word:"保育ことば図鑑", thing:"ことば", unit:"語", doneWord:"出会った ことば", miss:"まだ 出会っていない ことば",
                 lvTitle:J.icon + " " + J.name + "　旅を すすめる",
                 card:(mm, done) => '<small>' + terms.length + '語・' + lv.length + 'ステージ</small><small>出会った ' + done + '語</small>' };
@@ -61,7 +65,7 @@ const HOIKU = (() => {
     for(let i = 0; i + ROUNDS <= mix.length; i += ROUNDS) lv.push(mix.slice(i, i + ROUNDS).sort(easy));
     const rest = mix.length % ROUNDS;
     if(rest) lv.push(mix.slice(-rest - (ROUNDS - rest)).sort(easy));
-    levels.hmas = lv; pools.hmas = ALL; colors.hmas = "#2f9e44";
+    levels.hmas = lv; pools.hmas = ALL; colors.hmas = "green";
     maps.hmas = { icon:"🏆", name:"マスター", cardName:"マスター", word:"保育ことば図鑑", thing:"ことば", unit:"語", doneWord:"出会った ことば",
                   lvTitle:"🏆 マスター　6つの 旅を まぜて ぜんぶ",
                   card:() => '<small>' + TOTAL + '語・' + lv.length + 'ステージ</small><small>6つの 旅を まぜて ぜんぶ</small>' };

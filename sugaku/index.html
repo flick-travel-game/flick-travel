@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>フリック数学旅行</title>
-<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2">
-<link rel="icon" type="image/png" href="../favicon.png?v=2">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" href="favicon.png?v=1">
 <link rel="manifest" href="manifest.webmanifest?v=3">
 <meta name="apple-mobile-web-app-title" content="フリック数学旅行">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -403,10 +403,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <span class="logo-text">フリック数学旅行</span>
+      <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=1" alt="" width="759" height="166" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック数学旅行</h1>
+    <img class="hero" src="hero.webp?v=1" alt="フリック数学旅行。数式と 図形の 浮かぶ 空の 島を 男の子と 犬が 飛んで 旅する 絵" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -530,7 +532,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"sugaku", name:"フリック数学旅行", modes:(typeof SUGAKU === "object" ? SUGAKU.modes : []), assets:"../", logo:false, hero:false, dir:"sugaku/", lead:"算数・数学の 用語・公式・定理を、ひらがなで フリック入力。打つと その ことばの 意味と 図が 出るよ。小学校の 算数から はじめて、高校受験・大学受験の 範囲の めやすまで。公式は 読みあげの 形で 打つよ。4択クイズと 計算問題で 受験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。「公式を打つ」ことばは a²+b²=c² を「えーのにじょう たす …」のように 読みあげで 打つよ。説明と 計算問題は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、数学の ことばと 図が つながって 見えてくるよ。大学入試センター・文部科学省・各都道府県の 教育委員会とは 関係ありません。" };
+const GAME = { id:"sugaku", name:"フリック数学旅行", modes:(typeof SUGAKU === "object" ? SUGAKU.modes : []), assets:"../", logo:true, hero:true, dir:"sugaku/", lead:"算数・数学の 用語・公式・定理を、ひらがなで フリック入力。打つと その ことばの 意味と 図が 出るよ。小学校の 算数から はじめて、高校受験・大学受験の 範囲の めやすまで。公式は 読みあげの 形で 打つよ。4択クイズと 計算問題で 受験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。「公式を打つ」ことばは a²+b²=c² を「えーのにじょう たす …」のように 読みあげで 打つよ。説明と 計算問題は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、数学の ことばと 図が つながって 見えてくるよ。大学入試センター・文部科学省・各都道府県の 教育委員会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},

@@ -254,11 +254,11 @@ const HOIKU = (() => {
     const scroll = sh.scrollTop, focused = document.activeElement && document.activeElement.id === "ai-zq";
     sh.innerHTML = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>📖 保育ことば図鑑</h2>' +
       '<p class="ai-zsum"><b>' + got + '</b> / ' + list.length + '語 発見</p>' +
-      '<input type="search" id="ai-zq" class="ai-search" placeholder="🔍 さがす(例: メレンゲ)" value="' + esc(zf.q) + '" autocomplete="off" enterkeyhint="search">' +
+      '<input type="search" id="ai-zq" class="ai-search" placeholder="🔍 さがす(例: 愛着)" value="' + esc(zf.q) + '" autocomplete="off" enterkeyhint="search">' +
       '<div class="ai-zf"><select id="ai-zj">' + opt("", "🧭 旅", zf.j) + JR.map(J => opt(J.id, J.icon + " " + J.name, zf.j)).join("") + '</select>' +
       '<select id="ai-zc">' + opt("", "🏷 分類", zf.c) + cats.map(c => opt(c, c, zf.c)).join("") + '</select>' +
       '<select id="ai-zd">' + opt("", "📶 むずかしさ", zf.dv) + D.levels.map(L => opt(L.difficulty, L.icon + " " + L.name, zf.dv)).join("") + '</select>' +
-      '<select id="ai-zs">' + opt("", "📘 試験の 科目", zf.sb) + subs.map(s => opt(s, s, zf.sb)).join("") + '</select></div>' +
+      '<select id="ai-zs">' + opt("", "📘 科目", zf.sb) + subs.map(s => opt(s, s, zf.sb)).join("") + '</select></div>' +
       '<div class="ai-ztog"><button type="button" data-t="fav"' + (zf.fav ? ' class="on"' : "") + '>⭐ お気に入り</button></div>' +
       (list.length ? "" : '<p class="ai-empty">' + (zf.fav ? "⭐ まだ お気に入りが ないよ。ことばの ページの ☆ を おすと 入るよ" : "見つからなかったよ") + '</p>') +
       '<div class="ai-grid">' + list.slice(0, zf.shown).map(q => d.has(q.art)

@@ -1,0 +1,913 @@
+[
+ {
+  "id": "zu-toukousen",
+  "name": "等高線",
+  "reading": "とうこうせん",
+  "journey": "chizu",
+  "category": "等高線",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "〰️",
+  "relatedTerms": [
+   "zu-shukyokusen",
+   "zu-keikyokusen",
+   "zu-one"
+  ],
+  "description": "海面からの 高さが 同じ 地点を つないだ 線です。線の 間が せまい ところは 急な 坂、広い ところは ゆるやかな 坂だと 読みとれます。"
+ },
+ {
+  "id": "zu-shukushaku",
+  "name": "縮尺",
+  "reading": "しゅくしゃく",
+  "journey": "chizu",
+  "category": "地形図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📏",
+  "relatedTerms": [
+   "zu-chikeizu",
+   "zu-shukyokusen"
+  ],
+  "description": "実際の 長さを 地図の 上で どれだけ 小さく したかの 割合です。実際の 距離は 地図上の 長さ × 縮尺の 分母 で 求めます。2万5千分の1なら 4cmが 1kmです。"
+ },
+ {
+  "id": "zu-chikeizu",
+  "name": "地形図",
+  "reading": "ちけいず",
+  "journey": "chizu",
+  "category": "地形図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺️",
+  "relatedTerms": [
+   "zu-kokudochiriin",
+   "zu-shukushaku",
+   "zu-chizukigou"
+  ],
+  "description": "土地の 高低や 土地利用、建物、道路などを 決まった 記号で くわしく 表した 地図です。国土地理院が 作る 2万5千分の1や 5万分の1が よく 使われます。"
+ },
+ {
+  "id": "zu-chizukigou",
+  "name": "地図記号",
+  "reading": "ちずきごう",
+  "journey": "chizu",
+  "category": "地形図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔣",
+  "relatedTerms": [
+   "zu-chikeizu",
+   "zu-kokudochiriin"
+  ],
+  "description": "建物や 土地の 使われかたを 地図に 表すための 決まった しるしです。国土地理院が 定めていて、時代に 合わせて 新しく 作られたり、使われなくなったり します。"
+ },
+ {
+  "id": "zu-happoui",
+  "name": "八方位",
+  "reading": "はっぽうい",
+  "journey": "chizu",
+  "category": "方位",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧭",
+  "relatedTerms": [
+   "zu-juurokuhoui",
+   "zu-jihoku"
+  ],
+  "description": "北・北東・東・南東・南・南西・西・北西の 8つの 向きです。地形図は ふつう 上が 北で、方位記号が ない ときも 上を 北と して 読みます。"
+ },
+ {
+  "id": "zu-suiden",
+  "name": "水田",
+  "reading": "すいでん",
+  "journey": "chizu",
+  "category": "土地の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌾",
+  "relatedTerms": [
+   "zu-hatake",
+   "zu-kajuen"
+  ],
+  "description": "地図記号の 名前は「田」で、稲を かりとった あとの 切りかぶを 表す、たての 2本線を ならべた しるしです。川ぞいの 低い 土地に 多く 見られます。"
+ },
+ {
+  "id": "zu-hatake",
+  "name": "畑",
+  "reading": "はたけ",
+  "journey": "chizu",
+  "category": "土地の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥬",
+  "relatedTerms": [
+   "zu-suiden",
+   "zu-chabatake"
+  ],
+  "description": "野菜などを 育てる 土地です。地図記号は 植物の 芽が 出た ときの 双葉の 形を もとに しています。水の 得にくい 台地などで よく 見られます。"
+ },
+ {
+  "id": "zu-kajuen",
+  "name": "果樹園",
+  "reading": "かじゅえん",
+  "journey": "chizu",
+  "category": "土地の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍎",
+  "relatedTerms": [
+   "zu-hatake",
+   "zu-kuwabatake"
+  ],
+  "description": "りんごや みかんなどの 木を 育てる 土地です。地図記号は 果実を 横から 見た 形で、丸に 短い 軸が 付いた しるしです。水はけの よい 斜面に 多く あります。"
+ },
+ {
+  "id": "zu-chabatake",
+  "name": "茶畑",
+  "reading": "ちゃばたけ",
+  "journey": "chizu",
+  "category": "土地の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍵",
+  "relatedTerms": [
+   "zu-kajuen",
+   "zu-hatake"
+  ],
+  "description": "茶の 木を 育てる 土地です。地図記号は 茶の 実を 切った 断面の 形を もとに した しるしです。静岡県の 牧ノ原 などの 台地で よく 見られます。"
+ },
+ {
+  "id": "zu-kouyoujurin",
+  "name": "広葉樹林",
+  "reading": "こうようじゅりん",
+  "journey": "chizu",
+  "category": "土地の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌳",
+  "relatedTerms": [
+   "zu-shinyoujurin",
+   "zu-arechi"
+  ],
+  "description": "葉が 平たく 広い 木が 多い 林です。地図記号は 丸みの ある 木を 横から 見た 形です。とがった 形の 記号の 林と 見分けます。"
+ },
+ {
+  "id": "zu-shinyoujurin",
+  "name": "針葉樹林",
+  "reading": "しんようじゅりん",
+  "journey": "chizu",
+  "category": "土地の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌲",
+  "relatedTerms": [
+   "zu-kouyoujurin",
+   "zu-arechi"
+  ],
+  "description": "杉や 松など、細い 葉の 木が 多い 林です。地図記号は 先の とがった 木を 横から 見た 形で、丸い 木の 記号と 区別します。"
+ },
+ {
+  "id": "zu-shiyakusho",
+  "name": "市役所",
+  "reading": "しやくしょ",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏛️",
+  "relatedTerms": [
+   "zu-yuubinkyoku",
+   "zu-keisatsusho"
+  ],
+  "description": "市の 仕事を する 役所です。地図記号は 二重の 丸(◎)で、東京都の 区役所も 同じ しるしです。町や 村の 役場は 一重の 丸(○)の しるしです。"
+ },
+ {
+  "id": "zu-shouchuugakkou",
+  "name": "小中学校",
+  "reading": "しょうちゅうがっこう",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏫",
+  "relatedTerms": [
+   "zu-toshokan",
+   "zu-shiyakusho"
+  ],
+  "description": "小学校と 中学校を 表す 地図記号は「文」の 字の 形です。文を 学ぶ 場所と いう 意味が こめられています。高校は この 字を 丸で かこみます。"
+ },
+ {
+  "id": "zu-yuubinkyoku",
+  "name": "郵便局",
+  "reading": "ゆうびんきょく",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📮",
+  "relatedTerms": [
+   "zu-shiyakusho",
+   "zu-keisatsusho"
+  ],
+  "description": "手紙や 荷物を あつかう ところです。地図記号は 丸の 中に 〒の しるしを 入れた 形です。〒は 昔の 役所の 名前の 頭文字から 来たと 言われます。"
+ },
+ {
+  "id": "zu-keisatsusho",
+  "name": "警察署",
+  "reading": "けいさつしょ",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚓",
+  "relatedTerms": [
+   "zu-kouban",
+   "zu-shouboushou"
+  ],
+  "description": "地域の 安全を 守る 警察の 本部に あたる 建物です。地図記号は 警棒を 2本 交差させ、丸で かこんだ 形です。丸の ない × の 形は 交番です。"
+ },
+ {
+  "id": "zu-shouboushou",
+  "name": "消防署",
+  "reading": "しょうぼうしょ",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚒",
+  "relatedTerms": [
+   "zu-keisatsusho",
+   "zu-byouin"
+  ],
+  "description": "火事や 救急に そなえる 建物です。地図記号は 昔 火を 消すときに 使った「さすまた」と いう 道具の 形を もとに しています。"
+ },
+ {
+  "id": "zu-byouin",
+  "name": "病院",
+  "reading": "びょういん",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏥",
+  "relatedTerms": [
+   "zu-shouboushou",
+   "zu-roujinhoomu"
+  ],
+  "description": "病気や けがを 治療する 施設です。地図記号は 昔の 陸軍の 衛生隊が 使った 十字の しるしを もとに した 形です。"
+ },
+ {
+  "id": "zu-jinja",
+  "name": "神社",
+  "reading": "じんじゃ",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛩️",
+  "relatedTerms": [
+   "zu-jiin",
+   "zu-shiroato"
+  ],
+  "description": "神を まつる 建物です。地図記号は 入口に 立つ 鳥居の 形です。お寺の 記号と 取りちがえないように 気を つけます。"
+ },
+ {
+  "id": "zu-jiin",
+  "name": "寺院",
+  "reading": "じいん",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛕",
+  "relatedTerms": [
+   "zu-jinja",
+   "zu-shiroato"
+  ],
+  "description": "仏教の お寺です。地図記号は 卍(まんじ)の 形です。神社の 鳥居の 記号と ならんで、地形図の 読みとりで よく 見る しるしです。"
+ },
+ {
+  "id": "zu-chikyuugi",
+  "name": "地球儀",
+  "reading": "ちきゅうぎ",
+  "journey": "chizu",
+  "category": "図法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌐",
+  "relatedTerms": [
+   "zu-mercator",
+   "zu-seikyohoui"
+  ],
+  "description": "地球を 小さく した 球の 模型です。距離・面積・形・方位を いっぺんに 正しく 表せます。平らな 地図では すべてを 同時に 正しく する ことは できません。"
+ },
+ {
+  "id": "zu-shukyokusen",
+  "name": "主曲線",
+  "reading": "しゅきょくせん",
+  "journey": "chizu",
+  "category": "等高線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "〰️",
+  "relatedTerms": [
+   "zu-keikyokusen",
+   "zu-hojokyokusen",
+   "zu-toukousen"
+  ],
+  "description": "等高線の うち、基本と なる 細い 実線です。2万5千分の1の 地形図では 10mごと、5万分の1では 20mごとに 引かれます。"
+ },
+ {
+  "id": "zu-keikyokusen",
+  "name": "計曲線",
+  "reading": "けいきょくせん",
+  "journey": "chizu",
+  "category": "等高線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➰",
+  "relatedTerms": [
+   "zu-shukyokusen",
+   "zu-toukousen"
+  ],
+  "description": "等高線の うち、数えやすく するための 太い 実線です。2万5千分の1では 50mごと、5万分の1では 100mごとに 引かれます。縮尺を 見分ける 手がかりに なります。"
+ },
+ {
+  "id": "zu-one",
+  "name": "尾根",
+  "reading": "おね",
+  "journey": "chizu",
+  "category": "等高線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛰️",
+  "relatedTerms": [
+   "zu-tani",
+   "zu-toukousen"
+  ],
+  "description": "山の 高い ところが 続いて いる 部分です。等高線が 高い ところから 低い ほうへ 張り出して いる 形で 読みとれます。雨水が 両側に 分かれる 線にも なります。"
+ },
+ {
+  "id": "zu-tani",
+  "name": "谷",
+  "reading": "たに",
+  "journey": "chizu",
+  "category": "等高線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏞️",
+  "relatedTerms": [
+   "zu-one",
+   "zu-toukousen"
+  ],
+  "description": "山と 山の あいだの 低い ところです。等高線が 低い ところから 高い ほうへ 食いこむ 形で 表れます。水が 集まる ので、川が 流れて いる ことが 多いです。"
+ },
+ {
+  "id": "zu-sankakuten",
+  "name": "三角点",
+  "reading": "さんかくてん",
+  "journey": "chizu",
+  "category": "地形図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔺",
+  "relatedTerms": [
+   "zu-suijunten",
+   "zu-denshikijunten"
+  ],
+  "description": "地図を 作る ときに 位置(緯度・経度)を 測る 基準と なる 点です。地図記号は 三角の 中に 点を 打った 形で、山の 頂上などに 置かれます。"
+ },
+ {
+  "id": "zu-suijunten",
+  "name": "水準点",
+  "reading": "すいじゅんてん",
+  "journey": "chizu",
+  "category": "地形図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📍",
+  "relatedTerms": [
+   "zu-sankakuten",
+   "zu-denshikijunten"
+  ],
+  "description": "土地の 高さ(標高)を 正しく 測る 基準と なる 点です。主な 道路ぞいに 置かれて います。位置の 基準と なる 三角の 記号の 点と 役わりが ちがいます。"
+ },
+ {
+  "id": "zu-kokudochiriin",
+  "name": "国土地理院",
+  "reading": "こくどちりいん",
+  "journey": "chizu",
+  "category": "地理情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "relatedTerms": [
+   "zu-chikeizu",
+   "zu-chizukigou",
+   "zu-denshikijunten"
+  ],
+  "description": "国土交通省の 機関で、日本の 土地を 測量し、地形図などの 基本と なる 地図を 作って います。地図記号を 定めて いるのも ここです。"
+ },
+ {
+  "id": "zu-mercator",
+  "name": "メルカトル図法",
+  "reading": "めるかとるずほう",
+  "journey": "chizu",
+  "category": "図法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧭",
+  "relatedTerms": [
+   "zu-toukakukouro",
+   "zu-seikyohoui",
+   "zu-mollweide"
+  ],
+  "description": "角度が 正しく 表される 図法です。2点を 結ぶ 直線が 一定の 方位の 航路に なるので 海図に 使われます。緯度が 高い ほど 面積が 大きく ゆがみます。"
+ },
+ {
+  "id": "zu-seikyohoui",
+  "name": "正距方位図法",
+  "reading": "せいきょほういずほう",
+  "journey": "chizu",
+  "category": "図法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✈️",
+  "relatedTerms": [
+   "zu-taikenkouro",
+   "zu-mercator"
+  ],
+  "description": "図の 中心からの 距離と 方位が 正しい 図法です。中心と ほかの 地点を 結ぶ 直線が 最短の 道すじに なるので、航空図に 使われます。外側ほど 形が ゆがみます。"
+ },
+ {
+  "id": "zu-hazaadomappu",
+  "name": "ハザードマップ",
+  "reading": "はざーどまっぷ",
+  "journey": "chizu",
+  "category": "地理情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚠️",
+  "relatedTerms": [
+   "zu-shizensaigaidenshouhi",
+   "zu-chiritsuhousystem"
+  ],
+  "description": "洪水・土砂災害・津波などで 被害が 出そうな 範囲や、避難場所・避難経路を 示した 地図です。主に 市町村が 作り、ふだんから 確かめて おく ことが 大切です。"
+ },
+ {
+  "id": "zu-juurokuhoui",
+  "name": "十六方位",
+  "reading": "じゅうろくほうい",
+  "journey": "chizu",
+  "category": "方位",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧭",
+  "relatedTerms": [
+   "zu-happoui",
+   "zu-jihoku"
+  ],
+  "description": "八方位の あいだを さらに 分けた 16の 向きです。北北東・東北東の ように、近い 基本の 方位を 先に 言う 決まりが あります。"
+ },
+ {
+  "id": "zu-toshokan",
+  "name": "図書館",
+  "reading": "としょかん",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📚",
+  "relatedTerms": [
+   "zu-hakubutsukan",
+   "zu-shouchuugakkou"
+  ],
+  "description": "本を 読んだり 借りたり できる 施設です。地図記号は 本を 開いた 形で、2002年に 新しく 作られました。博物館の 記号も 同じ ころに 加わりました。"
+ },
+ {
+  "id": "zu-roujinhoomu",
+  "name": "老人ホーム",
+  "reading": "ろうじんほーむ",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏠",
+  "relatedTerms": [
+   "zu-byouin",
+   "zu-toshokan"
+  ],
+  "description": "お年寄りが 暮らしたり 介護を 受けたり する 施設です。地図記号は 建物の 中に つえを 描いた 形で、2006年に 小中学生の 案から 生まれました。"
+ },
+ {
+  "id": "zu-hakubutsukan",
+  "name": "博物館",
+  "reading": "はくぶつかん",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏛️",
+  "relatedTerms": [
+   "zu-toshokan",
+   "zu-shiroato"
+  ],
+  "description": "歴史や 自然の 資料を 集めて 見せる 施設で、美術館も 同じ 記号です。地図記号は 建物を 正面から 見た 形を もとに しています。"
+ },
+ {
+  "id": "zu-kouban",
+  "name": "交番",
+  "reading": "こうばん",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👮",
+  "relatedTerms": [
+   "zu-keisatsusho",
+   "zu-shouboushou"
+  ],
+  "description": "警察官が 地域で 仕事を する 小さな 建物です。地図記号は 警棒を 2本 交差させた × の 形です。丸で かこむと 警察署の 記号に なります。"
+ },
+ {
+  "id": "zu-shiroato",
+  "name": "城跡",
+  "reading": "しろあと",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏯",
+  "relatedTerms": [
+   "zu-jinja",
+   "zu-hakubutsukan"
+  ],
+  "description": "城が あった 場所です。地図記号は 城を 築く ときの 縄張り(区画の 形)を もとに しています。歴史の ある 町の 中心近くに よく 見られます。"
+ },
+ {
+  "id": "zu-shizensaigaidenshouhi",
+  "name": "自然災害伝承碑",
+  "reading": "しぜんさいがいでんしょうひ",
+  "journey": "chizu",
+  "category": "地理情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪨",
+  "relatedTerms": [
+   "zu-hazaadomappu",
+   "zu-kinenhi"
+  ],
+  "description": "昔の 地震・津波・洪水などの 被害を 後の 人に 伝える 石碑です。2019年に 地図記号が 作られ、記念碑の 記号に たての 線を 加えた 形です。"
+ },
+ {
+  "id": "zu-kinenhi",
+  "name": "記念碑",
+  "reading": "きねんひ",
+  "journey": "chizu",
+  "category": "建物の記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗿",
+  "relatedTerms": [
+   "zu-shizensaigaidenshouhi",
+   "zu-shiroato"
+  ],
+  "description": "できごとや 人を 記念して 建てられた 碑です。地図記号は 石碑を 横から 見た 形です。災害を 伝える 碑には 別の 記号が あります。"
+ },
+ {
+  "id": "zu-arechi",
+  "name": "荒地",
+  "reading": "あれち",
+  "journey": "chizu",
+  "category": "土地の記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌿",
+  "relatedTerms": [
+   "zu-kouyoujurin",
+   "zu-suiden"
+  ],
+  "description": "耕されず 雑草などが 生えている 土地です。地図記号は 草が 生えている 様子を 表した しるしです。"
+ },
+ {
+  "id": "zu-koujou",
+  "name": "工場",
+  "reading": "こうじょう",
+  "journey": "chizu",
+  "category": "土地の記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚙️",
+  "relatedTerms": [
+   "zu-kuwabatake",
+   "zu-chizukigou"
+  ],
+  "description": "かつての 地図記号は 機械の 歯車の 形でした。2万5千分の1の 地形図では 2013年からの 図式で 使われなく なりました。古い 地形図を 読む ときに 見かけます。"
+ },
+ {
+  "id": "zu-chiritsuhousystem",
+  "name": "地理情報システム",
+  "reading": "ちりじょうほうしすてむ",
+  "journey": "chizu",
+  "category": "地理情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "relatedTerms": [
+   "zu-hazaadomappu",
+   "zu-denshikijunten",
+   "zu-eiseisokui"
+  ],
+  "description": "位置の 情報と 人口・施設・災害などの データを コンピュータで 地図に 重ねて 分析する しくみです。英語の 略称は GISです。防災や まちづくりに 使われます。"
+ },
+ {
+  "id": "zu-shudaizu",
+  "name": "主題図",
+  "reading": "しゅだいず",
+  "journey": "chizu",
+  "category": "統計地図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗂️",
+  "relatedTerms": [
+   "zu-kaikyuukubunzu",
+   "zu-dottomappu"
+  ],
+  "description": "人口・気候・土地利用など、特定の テーマに しぼって 表した 地図です。地形図の ように いろいろな 情報を のせた 地図は 一般図と 呼ばれます。"
+ },
+ {
+  "id": "zu-kaikyuukubunzu",
+  "name": "階級区分図",
+  "reading": "かいきゅうくぶんず",
+  "journey": "chizu",
+  "category": "統計地図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟧",
+  "relatedTerms": [
+   "zu-dottomappu",
+   "zu-zukeihyougenzu",
+   "zu-shudaizu"
+  ],
+  "description": "統計の 値を いくつかの 段階に 分け、地域ごとに 色や 模様の こさで ぬり分けた 地図です。人口密度や 割合など、面積に 左右されない 値を 表すのに 向いています。"
+ },
+ {
+  "id": "zu-dottomappu",
+  "name": "ドットマップ",
+  "reading": "どっとまっぷ",
+  "journey": "chizu",
+  "category": "統計地図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚫",
+  "relatedTerms": [
+   "zu-kaikyuukubunzu",
+   "zu-zukeihyougenzu"
+  ],
+  "description": "1つの 点が 決まった 数を 表し、点の 数と 散らばりで 分布を 示す 地図です。家畜の 頭数や 人口など、数そのものの 広がりを 表すのに 向いています。"
+ },
+ {
+  "id": "zu-zukeihyougenzu",
+  "name": "図形表現図",
+  "reading": "ずけいひょうげんず",
+  "journey": "chizu",
+  "category": "統計地図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔵",
+  "relatedTerms": [
+   "zu-dottomappu",
+   "zu-kaikyuukubunzu"
+  ],
+  "description": "円や 棒などの 図形の 大きさで、地域ごとの 量を 表した 地図です。生産量や 人口など、数そのもの(絶対値)を くらべるのに 向いています。"
+ },
+ {
+  "id": "zu-touchisenzu",
+  "name": "等値線図",
+  "reading": "とうちせんず",
+  "journey": "chizu",
+  "category": "統計地図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡️",
+  "relatedTerms": [
+   "zu-toukousen",
+   "zu-kaikyuukubunzu"
+  ],
+  "description": "同じ 値の 地点を 線で 結んで 表した 地図です。気温や 降水量の 分布を 表すのに 使われます。等高線も この 考えかたで 描かれて います。"
+ },
+ {
+  "id": "zu-ryuusenzu",
+  "name": "流線図",
+  "reading": "りゅうせんず",
+  "journey": "chizu",
+  "category": "統計地図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "relatedTerms": [
+   "zu-zukeihyougenzu",
+   "zu-cartogram"
+  ],
+  "description": "人や ものの 移動を、向きを 示す 矢印と その 太さで 表した 地図です。貿易の 流れや 人口の 移動を 見るのに 使われます。"
+ },
+ {
+  "id": "zu-cartogram",
+  "name": "カルトグラム",
+  "reading": "かるとぐらむ",
+  "journey": "chizu",
+  "category": "統計地図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "relatedTerms": [
+   "zu-ryuusenzu",
+   "zu-kaikyuukubunzu"
+  ],
+  "description": "人口などの 統計の 値に 合わせて、国や 地域の 面積や 形を わざと 変えて 描いた 地図です。変形地図とも 呼ばれ、値の 大小が ひと目で 分かります。"
+ },
+ {
+  "id": "zu-mollweide",
+  "name": "モルワイデ図法",
+  "reading": "もるわいでずほう",
+  "journey": "chizu",
+  "category": "図法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥚",
+  "relatedTerms": [
+   "zu-sanson",
+   "zu-goode",
+   "zu-seisekizuhou"
+  ],
+  "description": "面積が 正しく 表される 図法で、全体が だ円の 形です。緯度の 高い 地域の 形の ゆがみが 比較的 小さく、世界の 分布図に 使われます。"
+ },
+ {
+  "id": "zu-sanson",
+  "name": "サンソン図法",
+  "reading": "さんそんずほう",
+  "journey": "chizu",
+  "category": "図法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌍",
+  "relatedTerms": [
+   "zu-mollweide",
+   "zu-goode"
+  ],
+  "description": "面積が 正しく 表される 図法で、経線が 曲線に なります。赤道の 近くは 形の ゆがみが 小さい 一方、緯度が 高い ほど ゆがみが 大きく なります。"
+ },
+ {
+  "id": "zu-goode",
+  "name": "グード図法",
+  "reading": "ぐーどずほう",
+  "journey": "chizu",
+  "category": "図法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺️",
+  "relatedTerms": [
+   "zu-sanson",
+   "zu-mollweide",
+   "zu-seisekizuhou"
+  ],
+  "description": "低い 緯度を サンソン図法、高い 緯度を モルワイデ図法で 描き、緯度 40度 あたりで つないだ 面積の 正しい 図法です。海の 部分で 切れ目を 入れて ゆがみを 小さく します。"
+ },
+ {
+  "id": "zu-seisekizuhou",
+  "name": "正積図法",
+  "reading": "せいせきずほう",
+  "journey": "chizu",
+  "category": "図法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "relatedTerms": [
+   "zu-mollweide",
+   "zu-sanson"
+  ],
+  "description": "地図の 上の 面積の 比が、実際の 面積の 比と 同じに なる 図法の なかまです。人口や 生産などの 分布図に 向いて いますが、形は ゆがみます。"
+ },
+ {
+  "id": "zu-taikenkouro",
+  "name": "大圏航路",
+  "reading": "たいけんこうろ",
+  "journey": "chizu",
+  "category": "図法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛫",
+  "relatedTerms": [
+   "zu-seikyohoui",
+   "zu-toukakukouro"
+  ],
+  "description": "地球の 上で 2つの 地点を 結ぶ 最も 短い 道すじです。地球の 中心を 通る 面で 切った 円に そって 進みます。メルカトル図法では 曲線に 見えます。"
+ },
+ {
+  "id": "zu-toukakukouro",
+  "name": "等角航路",
+  "reading": "とうかくこうろ",
+  "journey": "chizu",
+  "category": "図法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛵",
+  "relatedTerms": [
+   "zu-mercator",
+   "zu-taikenkouro"
+  ],
+  "description": "経線と いつも 同じ 角度で 交わる 道すじです。方位を 変えずに 進めるので 船の 航海に 使われました。メルカトル図法では 直線で 表されます。"
+ },
+ {
+  "id": "zu-jihoku",
+  "name": "磁北",
+  "reading": "じほく",
+  "journey": "chizu",
+  "category": "方位",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧲",
+  "relatedTerms": [
+   "zu-happoui",
+   "zu-juurokuhoui"
+  ],
+  "description": "方位磁針の N極が 指す 北です。北極点の 方向(真北)とは 少し ずれて いて、日本では 西へ 数度 かたむきます。このずれを 偏角と いいます。"
+ },
+ {
+  "id": "zu-eiseisokui",
+  "name": "衛星測位システム",
+  "reading": "えいせいそくいしすてむ",
+  "journey": "chizu",
+  "category": "地理情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛰️",
+  "relatedTerms": [
+   "zu-denshikijunten",
+   "zu-chiritsuhousystem",
+   "zu-remotesensing"
+  ],
+  "description": "人工衛星からの 電波を 受けて、地上の 位置を 求める しくみです。英語の 略称は GNSSで、アメリカの GPSも その 1つです。カーナビや スマートフォンで 使われます。"
+ },
+ {
+  "id": "zu-remotesensing",
+  "name": "リモートセンシング",
+  "reading": "りもーとせんしんぐ",
+  "journey": "chizu",
+  "category": "地理情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "relatedTerms": [
+   "zu-eiseisokui",
+   "zu-chiritsuhousystem"
+  ],
+  "description": "人工衛星や 航空機から、離れた ところの 地表の 様子を 観測する 技術です。森林の 減少や 災害の 被害、作物の 育ち具合を 広い 範囲で つかめます。"
+ },
+ {
+  "id": "zu-denshikijunten",
+  "name": "電子基準点",
+  "reading": "でんしきじゅんてん",
+  "journey": "chizu",
+  "category": "地形図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "relatedTerms": [
+   "zu-sankakuten",
+   "zu-eiseisokui",
+   "zu-kokudochiriin"
+  ],
+  "description": "人工衛星の 電波を 受けて 位置を 測り続ける 施設で、全国に 置かれて います。地殻変動の 観測にも 使われ、地震の ときの 大地の 動きを とらえます。"
+ },
+ {
+  "id": "zu-hojokyokusen",
+  "name": "補助曲線",
+  "reading": "ほじょきょくせん",
+  "journey": "chizu",
+  "category": "等高線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "┅",
+  "relatedTerms": [
+   "zu-shukyokusen",
+   "zu-keikyokusen"
+  ],
+  "description": "主曲線だけでは 地形が 表しきれない ゆるやかな 土地に 加える 破線の 等高線です。2万5千分の1では 5mごと、5万分の1では 10mごとに 引かれます。"
+ },
+ {
+  "id": "zu-kuwabatake",
+  "name": "桑畑",
+  "reading": "くわばたけ",
+  "journey": "chizu",
+  "category": "土地の記号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐛",
+  "relatedTerms": [
+   "zu-koujou",
+   "zu-kajuen"
+  ],
+  "description": "かいこの えさに なる 桑の 木を 育てた 畑です。養蚕が へった ため、2万5千分の1の 地形図では 2013年からの 図式で 記号が 使われなく なりました。"
+ }
+]

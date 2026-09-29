@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -155,11 +155,18 @@ GAMES = {
                  lead="入れものと 型・ながれを 決める・まとめて 作る・まちがいと 直しかた・速さと 大きさ・コンピュータの きほん・みんなで 作る・エンジニアの 旅の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 分野の ことばか・しくみ図の どこに あるのかが 出るよ。学校の プログラミングで 出る ことばから、仕事で 使う エンジニアの ことばまで。4択クイズも できるよ。",
                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。コードは 打たないよ(打つのは ことばの 読みだけ)。「たとえば」に 短い コードの 見本が 出る ことばも あるよ。まちがえるのは ふつうの こと。小さく 作って ためしてみよう。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、プログラミングの ことばと しくみが つながって 見えてくるよ。"),
+    # フリック社会(けいくん 2026-09-29「すべておすすめで」)。受験5科目の 社会のうち 公民と 地理(歴史は rekishi/ に ある)。引継ぎは docs/引継ぎ-社会フリック旅行.md
+    #   ことばは tools/shakai/terms-<旅>.json → shakai/terms.js(tools/shakai/terms_js.py)。しくみは shakai/shakai.js(SHAKAI。kokugo.js から tools/shakai/make_shakai_js.py が 作る)。
+    #   旅は 7つ + マスター。むずかしさは 入門(中学の基本)→ 中級(高校受験)→ 上級(大学受験)。図は 日本の 地方(📍は 日本の地理だけ)。絵は まだ 無い(題名は 文字)
+    "shakai": dict(name="フリック社会", modes="SHAKAI", kinds=set(), color="#0c8599", hero=False, logo=False,
+                   lead="憲法と人権・政治のしくみ・経済のしくみ・国際社会・日本の地理・世界の地理・地図の読みかたの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、いまの しくみの どこに つながるのかが 出るよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。4択クイズで 意味の 練習も できるよ。",
+                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。しくみや 数字は 2026年9月の 時点で 書いているよ。説明は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。歴史は フリック歴史旅行で あそべるよ。",
+                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、社会の しくみと 地理が つながって 見えてくるよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -246,6 +253,11 @@ def build(gid, g):
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="eigo.js?v=%s"></script>' % (ver("terms.js"), ver("eigo.js")))
         out, n = re.subn(r'<input class="answer" id="ans" type="text" lang="ja"', '<input class="answer" id="ans" type="text" lang="en"', out); assert n == 1
         out, n = re.subn(r'<p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>', '<p>大文字・小文字は どちらでも OK。空白や「\' , . ? !」は 打たなくて大丈夫。</p>', out); assert n == 1
+    if g["modes"] == "SHAKAI":  # 社会の コース: 国語と 同じ 形。ことばは terms.js(tools/shakai/terms-*.json から)、しくみは shakai.js(make_shakai_js.py が 作る)
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/shakai/terms_js.py")], check=True)
+        subprocess.run([_s.executable, str(ROOT / "tools/shakai/make_shakai_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "shakai" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="shakai.js?v=%s"></script>' % (ver("terms.js"), ver("shakai.js")))
     if g["modes"] == "KANGO":  # 看護の コース: 保育と 同じ 形。ことばは terms.js(tools/kango/terms-*.json から)、しくみは kango.js
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kango/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "kango" / f).read_bytes()).hexdigest()[:8]

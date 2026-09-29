@@ -9,7 +9,7 @@ def rep(a, b, n=1):
     assert (c == n) if n else c > 0, (a, c)
     s = s.replace(a, b)
 a = s.index("const KOKUGO = (() => {")
-s = """/* フリック社会: 高校受験・大学受験の 社会(公民・地理)の 知識(憲法と人権・政治のしくみ・経済のしくみ・国際社会・日本の地理・世界の地理・地図の読みかた)を、フリックで 打って おぼえる。(けいくん 2026-09-29「すべておすすめで」)
+s = """/* フリック社会旅行: 高校受験・大学受験の 社会(公民・地理)の 知識(憲法と人権・政治のしくみ・経済のしくみ・国際社会・日本の地理・世界の地理・地図の読みかた)を、フリックで 打って おぼえる。(けいくん 2026-09-29「すべておすすめで」)
    ─ 土台の index.html(世界フリック旅行)の 差しこみ口(PLUG)に「社会の 旅」を 足す ファイル。shakai/ の ページだけが 読む ─
    ことばは tools/shakai/meta.json + tools/shakai/terms-*.json → tools/shakai/terms_js.py が data/shakai.json と shakai/terms.js(SHAKAI_TERMS)に する。
    **ことばを 足す・直すのは tools/shakai/terms-<旅>.json だけ**。この ファイルは tools/shakai/make_shakai_js.py が kokugo.js から 作る(手で 直さない)

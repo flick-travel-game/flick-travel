@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリック社会</title>
-<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2">
-<link rel="icon" type="image/png" href="../favicon.png?v=2">
+<title>フリック社会旅行</title>
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
+<link rel="icon" type="image/png" href="favicon.png?v=3">
 <link rel="manifest" href="manifest.webmanifest?v=3">
-<meta name="apple-mobile-web-app-title" content="フリック社会">
+<meta name="apple-mobile-web-app-title" content="フリック社会旅行">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#4fb8ff">
@@ -412,10 +412,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <span class="logo-text">フリック社会</span>
+      <img class="logo-mark" src="logo-mark2.webp?v=3" alt="" width="144" height="144" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="671" height="117" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリック社会</h1>
+    <h1 class="sr-only">フリック社会旅行</h1>
+    <img class="hero" src="hero.webp?v=3" alt="フリック社会旅行。世界の 名所を 背に 地図と カメラを もった 男の子と 白い 犬が 指さして 笑っている 絵。まわりに 憲法と人権・政治・経済・国際社会・日本の地理・世界の地理・地図の読みかたの 札" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -535,12 +537,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=38f67f75"></script>
-<script src="shakai.js?v=219b656a"></script>
+<script src="terms.js?v=9d21bd6b"></script>
+<script src="shakai.js?v=b1b2c87f"></script>
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"shakai", name:"フリック社会", modes:(typeof SHAKAI === "object" ? SHAKAI.modes : []), assets:"../", logo:false, hero:false, dir:"shakai/", lead:"憲法と人権・政治のしくみ・経済のしくみ・国際社会・日本の地理・世界の地理・地図の読みかたの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、いまの しくみの どこに つながるのかが 出るよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。4択クイズで 意味の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。しくみや 数字は 2026年9月の 時点で 書いているよ。説明は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。歴史は フリック歴史旅行で あそべるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、社会の しくみと 地理が つながって 見えてくるよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。" };
+const GAME = { id:"shakai", name:"フリック社会旅行", modes:(typeof SHAKAI === "object" ? SHAKAI.modes : []), assets:"../", logo:true, hero:true, dir:"shakai/", lead:"憲法と人権・政治のしくみ・経済のしくみ・国際社会・日本の地理・世界の地理・地図の読みかたの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、いまの しくみの どこに つながるのかが 出るよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。4択クイズで 意味の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。しくみや 数字は 2026年9月の 時点で 書いているよ。説明は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。歴史は フリック歴史旅行で あそべるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、社会の しくみと 地理が つながって 見えてくるよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
@@ -559,7 +561,7 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
                  {id:"biyo", name:"フリック美容師", icon:"💇", dir:"../flick-travel/biyo/"},
                  {id:"kyoryu", name:"フリック恐竜図鑑", icon:"🦖", dir:"../flick-travel/kyoryu/"},
                  {id:"code", name:"フリックプログラマー", icon:"💻", dir:"../flick-travel/code/"},
-                 {id:"shakai", name:"フリック社会", icon:"🗾", dir:"../flick-travel/shakai/"} ];
+                 {id:"shakai", name:"フリック社会旅行", icon:"🗾", dir:"../flick-travel/shakai/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
   {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
@@ -740,7 +742,7 @@ const COLORS = {
           toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
 };
 /* 差しこみ口(PLUG)。つみあげの コースを 持つ ゲームだけが 1つ 持つ:
-   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語旅行 = kokugo/kokugo.js の KOKUGO / フリック数学旅行 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO / フリック恐竜図鑑 = kyoryu/kyoryu.js の KYORYU / フリックプログラマー = code/code.js の CODEPG / フリック英語 = eigo/eigo.js の EIGO / フリック社会 = shakai/shakai.js の SHAKAI。ほかの ゲームでは null で 何もしない */
+   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語旅行 = kokugo/kokugo.js の KOKUGO / フリック数学旅行 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO / フリック恐竜図鑑 = kyoryu/kyoryu.js の KYORYU / フリックプログラマー = code/code.js の CODEPG / フリック英語 = eigo/eigo.js の EIGO / フリック社会旅行 = shakai/shakai.js の SHAKAI。ほかの ゲームでは null で 何もしない */
 const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : typeof SEIBI === "object" ? SEIBI : typeof PATISSIER === "object" ? PATISSIER : typeof KOKUGO === "object" ? KOKUGO : typeof SUGAKU === "object" ? SUGAKU : typeof HOIKU === "object" ? HOIKU : typeof KANGO === "object" ? KANGO : typeof GAMEDEV === "object" ? GAMEDEV : typeof BIYO === "object" ? BIYO : typeof KYORYU === "object" ? KYORYU : typeof CODEPG === "object" ? CODEPG : typeof EIGO === "object" ? EIGO : typeof SHAKAI === "object" ? SHAKAI : null;
 /* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
 if(PLUG) for(const [m, h] of Object.entries(PLUG.colors)) COLORS.mode[m] = TONE[h] || toneFrom(h);  // "blue" などは ほかの ゲームと 同じ あかるい 色

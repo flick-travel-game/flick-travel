@@ -308,7 +308,8 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - 作った 助手とは **別の 助手が 1語ずつ 確かめた**(約20か所 直した: 国際刑事裁判所 2002年・パリ協定「2℃より 十分 低く」・TPP の 発効・町村役場の 記号は 一重の 丸・OPEC は アフリカの 国も 多い・択捉島の 場所の 書きかた など)。
   ふりがなの 読みまちがい 約60か所を `tools/ruby_fix.json` に context 付きで 足した(`tools/shakai/ruby_dump.py <旅>` で 旅ごとに 見られる)
 - 絵は まだ 無い(題名は 文字)。届いたら `tools/build_games.py` の `shakai` に `art` を 足す
-- ⚠️ かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` にも 足す(speed-king)。販売ページ・規約の 文は けいくんの OK の あと
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king #233)。規約の 文(`FLICK_SERIES_GAMES`)にも 足した(けいくん 2026-09-29「OK」。speed-king #234)。
+  ⚠️ **販売ページ(`HOME_GAMES`)は まだ**。トップの 絵と 題名の ロゴが 要るので、絵が 届いてから
 
 ## ことばが かぶるのは よい(**復習に なる**)。説明の 目線を 変える(けいくん決定 2026-09-29)
 

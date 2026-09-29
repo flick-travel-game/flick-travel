@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>フリック恐竜図鑑</title>
-<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2">
-<link rel="icon" type="image/png" href="../favicon.png?v=2">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" href="favicon.png?v=1">
 <link rel="manifest" href="manifest.webmanifest?v=3">
 <meta name="apple-mobile-web-app-title" content="フリック恐竜図鑑">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -403,10 +403,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <span class="logo-text">フリック恐竜図鑑</span>
+      <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=1" alt="" width="651" height="156" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック恐竜図鑑</h1>
+    <img class="hero" src="hero.webp?v=1" alt="フリック恐竜図鑑。ティラノサウルスや トリケラトプスの いる ジャングルで 図鑑を もった 男の子が 指さして 笑っている 絵。まわりに 7つの 旅の 札が ならんでいる" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -530,7 +532,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kyoryu", name:"フリック恐竜図鑑", modes:(typeof KYORYU === "object" ? KYORYU.modes : []), assets:"../", logo:false, hero:false, dir:"kyoryu/", lead:"肉を 食べる 恐竜・草を 食べる 恐竜・日本の 恐竜・3つの 時代・体と 化石・恐竜では ない 生きもの・調べる 人と 道具を、ひらがなで フリック入力。打つと その 恐竜の いた 時代と、見つかった 場所(世界地図の 📍)が 出るよ。だれでも 知っている 恐竜から はじめて、めざせ 恐竜博士。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。「ヴ」の 入った 名前は ば行でも OK(べろきらぷとる)。恐竜の 研究は 毎年 新しく なるので、あとから 考えが 変わる ことも あるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、恐竜の 名前と 時代と 場所が つながって 見えてくるよ。" };
+const GAME = { id:"kyoryu", name:"フリック恐竜図鑑", modes:(typeof KYORYU === "object" ? KYORYU.modes : []), assets:"../", logo:true, hero:true, dir:"kyoryu/", lead:"肉を 食べる 恐竜・草を 食べる 恐竜・日本の 恐竜・3つの 時代・体と 化石・恐竜では ない 生きもの・調べる 人と 道具を、ひらがなで フリック入力。打つと その 恐竜の いた 時代と、見つかった 場所(世界地図の 📍)が 出るよ。だれでも 知っている 恐竜から はじめて、めざせ 恐竜博士。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。「ヴ」の 入った 名前は ば行でも OK(べろきらぷとる)。恐竜の 研究は 毎年 新しく なるので、あとから 考えが 変わる ことも あるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、恐竜の 名前と 時代と 場所が つながって 見えてくるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},

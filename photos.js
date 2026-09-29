@@ -14017,12 +14017,13 @@ const PHOTOS = {
   "file": "File:フクイベナートル全身骨格.jpg"
  },
  "jp-hypno": {
-  "src": "photo-kyoryu-jp-hypno-v2.jpg",
-  "author": "TotalDino",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hypnovenator_TD.png",
-  "file": "File:Hypnovenator TD.png"
+  "src": "photo-kyoryu-jp-hypno-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "jp-kamui": {
   "src": "photo-kyoryu-jp-kamui.jpg",
@@ -14862,12 +14863,13 @@ const PHOTOS = {
   "file": "File:Nigersaurus mount.jpg"
  },
  "so-nodo": {
-  "src": "photo-kyoryu-so-nodo-v2.jpg",
-  "author": "Vi Ko",
-  "license": "CC BY-SA 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B5%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D1%96%D1%8F_%D0%BD%D0%BE%D0%B4%D0%BE%D0%B7%D0%B0%D0%B2%D1%80%D0%B0.jpg",
-  "file": "File:Реконструкція нодозавра.jpg"
+  "src": "photo-kyoryu-so-nodo-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "so-ourano": {
   "src": "photo-kyoryu-so-ourano.jpg",
@@ -14926,12 +14928,13 @@ const PHOTOS = {
   "file": "File:Psittacosaurus mongoliensis fossil from China.jpg"
  },
  "so-salta": {
-  "src": "photo-kyoryu-so-salta-v2.jpg",
-  "author": "ABelov2014",
-  "license": "CC BY 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Saltasaurus_environment.jpg",
-  "file": "File:Saltasaurus environment.jpg"
+  "src": "photo-kyoryu-so-salta-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "so-saurolo": {
   "src": "photo-kyoryu-so-saurolo.jpg",

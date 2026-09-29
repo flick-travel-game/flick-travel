@@ -527,12 +527,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=025f9d94"></script>
-<script src="gamedev.js?v=6a26fd6b"></script>
+<script src="terms.js?v=0b18ef8c"></script>
+<script src="gamedev.js?v=44c5f4ed"></script>
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"gamedev", name:"フリックゲームクリエイター", modes:(typeof GAMEDEV === "object" ? GAMEDEV.modes : []), assets:"../", logo:true, hero:true, dir:"gamedev/", lead:"ゲームの きほん・考えて 決める・うごかす しくみ・絵と 音・作る 道具・直して 仕上げる・みんなに とどける ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 仕事の 人の ことばか・しくみ図の どこに あるのかが 出るよ。あそぶ 人でも 知っている ことばから、ゲーム会社の 現場で 使う プロの ことばまで 4段。4択クイズも できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。コードの 書きかたは のせていないよ。ゲームは 紙と えんぴつでも 作れるよ。まずは 小さく 作って ためしてみよう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、ゲームを 作る ことばと しくみが つながって 見えてくるよ。" };
+const GAME = { id:"gamedev", name:"フリックゲームクリエイター", modes:(typeof GAMEDEV === "object" ? GAMEDEV.modes : []), assets:"../", logo:true, hero:true, dir:"gamedev/", lead:"ゲームの きほん・考えて 決める・うごかす しくみ・絵と 音・作る 道具・直して 仕上げる・みんなに とどける・コードと 作りかたの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 仕事の 人の ことばか・しくみ図の どこに あるのかが 出るよ。あそぶ 人でも 知っている ことばから、ゲーム会社の 現場で 使う プロの ことばまで 4段。4択クイズも できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。⌨️ コードと作りかた の 旅では、「たとえば」に 短い コードの 見本も 出るよ。ゲームは 紙と えんぴつでも 作れるよ。まずは 小さく 作って ためしてみよう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、ゲームを 作る ことばと しくみが つながって 見えてくるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},

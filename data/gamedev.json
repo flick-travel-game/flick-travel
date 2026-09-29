@@ -2,7 +2,7 @@
  "meta": {
   "version": 1,
   "asOf": "2026年9月",
-  "note": "ゲームを 作る ことばと 意味を おぼえる ゲームです。コードの 書きかたや 作りかたの 手順は のせていません。道具や サービスの ことは 2026年9月に 確かめた ものです。道具や サービスは 変わることが あります。本物の ゲームの 題名・会社の 名前は 出していません。",
+  "note": "ゲームを 作る ことばと 意味を おぼえる ゲームです。⌨️ コードと作りかた の 旅では「たとえば」に 短い コードの 見本が 出ます(見本の 書きかたは 言語に よって ちがいます)。道具や サービスの ことは 2026年9月に 確かめた ものです。道具や サービスは 変わることが あります。本物の ゲームの 題名・会社の 名前は 出していません。",
   "exam": "ゲームクリエイターに 国家資格は いらない。だれでも なれる。専門学校・大学で 学ぶ 人も、独学の 人も いる。1人で 作る 人(インディー)も、何百人で 作る 会社も ある。仕事は プランナー・ディレクター・プログラマー・グラフィッカー・サウンド・シナリオ・デバッガー(QA)・プロデューサーなど。むずかしさは この ゲームの めやすで、試験は ない。",
   "journeys": [
    {
@@ -221,6 +221,37 @@
       "icon": "🎪"
      }
     ]
+   },
+   {
+    "id": "code",
+    "name": "コードと作りかた",
+    "icon": "⌨️",
+    "color": "#1098ad",
+    "diagram": "code",
+    "goal": "コードマスター",
+    "lead": "if文・for文・関数・クラスなど コードを 書く ことばと、ゲームを 作る 順番の ことば。「たとえば」に 短い コードの 見本が 出るよ",
+    "stops": [
+     {
+      "name": "はじめの 1行",
+      "icon": "✏️"
+     },
+     {
+      "name": "分かれ道の 森",
+      "icon": "🔀"
+     },
+     {
+      "name": "くりかえしの 川",
+      "icon": "🔁"
+     },
+     {
+      "name": "部品の 工房",
+      "icon": "🧰"
+     },
+     {
+      "name": "完成の 丘",
+      "icon": "🏁"
+     }
+    ]
    }
   ],
   "levels": [
@@ -261,42 +292,42 @@
     "見習いクリエイター"
    ],
    [
-    80,
+    90,
     "🕹",
     "コントローラーの友だち"
    ],
    [
-    130,
+    150,
     "🟥",
     "ドット絵名人"
    ],
    [
-    200,
+    230,
     "🐞",
     "バグハンター"
    ],
    [
-    280,
+    320,
     "🗺",
     "ステージ職人"
    ],
    [
-    370,
+    420,
     "🔁",
     "ゲームループの案内人"
    ],
    [
-    460,
-    "🛠",
-    "ゲームエンジンの物知り"
+    530,
+    "⌨️",
+    "コードの魔法つかい"
    ],
    [
-    560,
+    650,
     "🎬",
     "ディレクターめざし隊"
    ],
    [
-    660,
+    760,
     "🌟",
     "みんなをわくわくさせる人"
    ]
@@ -1250,6 +1281,140 @@
      [
       "hanbai",
       "nenrei",
+      ""
+     ]
+    ]
+   },
+   "code": {
+    "name": "コードの 地図",
+    "w": 360,
+    "h": 360,
+    "icon": "⌨️",
+    "nodes": [
+     {
+      "id": "kaku",
+      "label": "書きかたの 決まり",
+      "icon": "✏️",
+      "x": 60,
+      "y": 40
+     },
+     {
+      "id": "atai",
+      "label": "数と 文字",
+      "icon": "🔢",
+      "x": 180,
+      "y": 40
+     },
+     {
+      "id": "keisan",
+      "label": "計算・くらべる",
+      "icon": "➗",
+      "x": 300,
+      "y": 40
+     },
+     {
+      "id": "bunki",
+      "label": "if文",
+      "icon": "🔀",
+      "x": 60,
+      "y": 130
+     },
+     {
+      "id": "loop",
+      "label": "for文・while文",
+      "icon": "🔁",
+      "x": 180,
+      "y": 130
+     },
+     {
+      "id": "kansu",
+      "label": "関数",
+      "icon": "🧰",
+      "x": 300,
+      "y": 130
+     },
+     {
+      "id": "class",
+      "label": "クラス・オブジェクト",
+      "icon": "📦",
+      "x": 60,
+      "y": 220
+     },
+     {
+      "id": "hairetsu",
+      "label": "リスト・配列",
+      "icon": "🗃",
+      "x": 180,
+      "y": 220
+     },
+     {
+      "id": "error",
+      "label": "まちがいと 直しかた",
+      "icon": "🩹",
+      "x": 300,
+      "y": 220
+     },
+     {
+      "id": "gengo",
+      "label": "プログラミング言語",
+      "icon": "🌐",
+      "x": 60,
+      "y": 310
+     },
+     {
+      "id": "junban",
+      "label": "作る 順番",
+      "icon": "🪜",
+      "x": 180,
+      "y": 310
+     },
+     {
+      "id": "kanryo",
+      "label": "できあがり",
+      "icon": "🏁",
+      "x": 300,
+      "y": 310
+     }
+    ],
+    "edges": [
+     [
+      "kaku",
+      "atai",
+      ""
+     ],
+     [
+      "atai",
+      "keisan",
+      ""
+     ],
+     [
+      "bunki",
+      "loop",
+      ""
+     ],
+     [
+      "loop",
+      "kansu",
+      ""
+     ],
+     [
+      "kansu",
+      "class",
+      ""
+     ],
+     [
+      "class",
+      "hairetsu",
+      ""
+     ],
+     [
+      "error",
+      "kaku",
+      ""
+     ],
+     [
+      "junban",
+      "kanryo",
       ""
      ]
     ]
@@ -13214,6 +13379,1829 @@
     "to-pm"
    ],
    "description": "会社の 立場から、いくつもの 作品や 大きな 計画 ぜんたいを 見守る 役。作品を つくるか どうかを 決める 場に 立ちます。"
+  },
+  {
+   "id": "ko-code",
+   "name": "コード",
+   "reading": "こーど",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "📝",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-jikko",
+    "ko-comment"
+   ],
+   "description": "コンピューターへの 指示を、決まった 書きかたで 文字に したもの。ゲームの 動きは コードで 書かれています。1行ずつ 書いて ためせば、だれでも 書けるように なります。",
+   "example": "score = 0;\njump();"
+  },
+  {
+   "id": "ko-jikko",
+   "name": "実行",
+   "reading": "じっこう",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "▶️",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-code",
+    "ko-tejun"
+   ],
+   "description": "書いた コードを コンピューターに 動かして もらう こと。コードは ふつう 上から 下へ 1行ずつ 実行されます。書いたら すぐ 実行して ためすのが 上達の 近道です。",
+   "example": "x = 0;      // 1ばんめ\nx = x + 5;  // 2ばんめ"
+  },
+  {
+   "id": "ko-ifbun",
+   "name": "if文",
+   "reading": "いふぶん",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "🔀",
+   "mapNode": "code:bunki",
+   "relatedTerms": [
+    "ko-else",
+    "ko-futogo"
+   ],
+   "description": "「もし 〜なら こうする」を 書く 文。体力が なくなったら ゲームオーバー、の ように、ゲームの 分かれ道は ほとんど この 形で 書きます。",
+   "example": "if (life <= 0) { gameOver(); }"
+  },
+  {
+   "id": "ko-else",
+   "name": "else",
+   "reading": "えるす",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "↔️",
+   "mapNode": "code:bunki",
+   "relatedTerms": [
+    "ko-ifbun",
+    "ko-switchbun"
+   ],
+   "description": "「もし 〜なら」に 当てはまらなかった ときに する ことを 書く ところ。当たったら 体力を へらし、そうでなければ 点を 足す、の ように 2つの 道を 作れます。",
+   "example": "if (hit) { life--; }\nelse { score++; }"
+  },
+  {
+   "id": "ko-suchi",
+   "name": "数値",
+   "reading": "すうち",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "🔢",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-seisu",
+    "ko-shosu"
+   ],
+   "description": "コードで あつかう 数の こと。点数・体力・速さ・位置など、ゲームの 中の 多くの ものは 数値で 表されて います。",
+   "example": "life = 3;\nspeed = 5;"
+  },
+  {
+   "id": "ko-equal",
+   "name": "イコール",
+   "reading": "いこーる",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "🟰",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-dainyu",
+    "ko-hikakuenzanshi"
+   ],
+   "description": "コードの イコールは 算数と ちがい、「右の 答えを 左に 入れる」と いう 意味です。同じか どうかを くらべる ときは、イコールを 2つ ならべて 書きます。",
+   "example": "score = 10;\nif (score == 10) { clear(); }"
+  },
+  {
+   "id": "ko-tashizan",
+   "name": "足し算",
+   "reading": "たしざん",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "➕",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-hikizan",
+    "ko-dainyu"
+   ],
+   "description": "数を 足す 計算。キャラの 位置に 速さを 足すと、キャラが 少しずつ 動きます。点を ふやすのも 足し算です。",
+   "example": "x = x + speed;\nscore = score + 10;"
+  },
+  {
+   "id": "ko-hikizan",
+   "name": "引き算",
+   "reading": "ひきざん",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "➖",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-tashizan",
+    "ko-increment"
+   ],
+   "description": "数を 引く 計算。てきに 当たったら 体力を 1 引く、残り時間を 少しずつ 引いて 数える、などに 使います。",
+   "example": "life = life - 1;\ntime = time - 1;"
+  },
+  {
+   "id": "ko-kakezan",
+   "name": "かけ算",
+   "reading": "かけざん",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "✖️",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-tashizan",
+    "ko-enzanshi"
+   ],
+   "description": "数を かける 計算。コードでは かける 記号の かわりに 星の しるしを 使います。ダッシュで 速さを 2倍に する ときなどに 使います。",
+   "example": "speed = speed * 2;\ndamage = power * 3;"
+  },
+  {
+   "id": "ko-futogo",
+   "name": "不等号",
+   "reading": "ふとうごう",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-ifbun",
+    "ko-hikakuenzanshi"
+   ],
+   "description": "どちらが 大きいか 小さいかを くらべる 記号。「点数が 100より 大きければ クリア」の ように、分かれ道の 条件で よく 使います。",
+   "example": "if (score > 100) { clear(); }\nif (life < 1) { gameOver(); }"
+  },
+  {
+   "id": "ko-kakko",
+   "name": "かっこ",
+   "reading": "かっこ",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "🔘",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-namikakko",
+    "ko-yobidashi"
+   ],
+   "description": "丸い かっこは、命令を 呼ぶ ときや 計算の 順番を 決める ときに 使います。開いた かっこは かならず 閉じるのが 決まりです。",
+   "example": "jump();\ntotal = (a + b) * 2;"
+  },
+  {
+   "id": "ko-kaigyo",
+   "name": "改行",
+   "reading": "かいぎょう",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "↩️",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-indent",
+    "ko-semicolon"
+   ],
+   "description": "行を かえて 次の 行に うつる こと。1行に 1つの ことを 書くと、読みやすく なり まちがいも 見つけやすく なります。",
+   "example": "x = 0;\ny = 0;"
+  },
+  {
+   "id": "ko-comment",
+   "name": "コメント",
+   "reading": "こめんと",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "💬",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-code",
+    "ko-gijicode"
+   ],
+   "description": "コードの 中に 書く メモ。実行されないので、何を している ところかを 日本語で 書いておけます。あとで 読む 自分や 仲間への 手紙です。",
+   "example": "// てきを 3びき 出す\nspawnEnemy(3);"
+  },
+  {
+   "id": "ko-typo",
+   "name": "タイプミス",
+   "reading": "たいぷみす",
+   "journey": "code",
+   "category": "まちがいと直す",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "⌨️",
+   "mapNode": "code:error",
+   "relatedTerms": [
+    "ko-kobunerror",
+    "ko-hankaku"
+   ],
+   "description": "打ちまちがいの こと。名前が 1文字 ちがうだけでも、コンピューターは 別の ものだと 思います。動かない ときは まず 字を 見直します。",
+   "example": "scroe = 0;  // まちがい\nscore = 0;  // 直した"
+  },
+  {
+   "id": "ko-hankaku",
+   "name": "半角",
+   "reading": "はんかく",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "🔤",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-typo",
+    "ko-kobunerror"
+   ],
+   "description": "コードは ふつう 半角の 英字・数字・記号で 書きます。全角の 空白や 記号が まざると 動かない ことが あるので、気を つけます。",
+   "example": "life ＝ 3;  // 全角で まちがい\nlife = 3;   // 半角で 直した"
+  },
+  {
+   "id": "ko-tejun",
+   "name": "手順",
+   "reading": "てじゅん",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "🪜",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-jikko",
+    "ko-programmingshiko"
+   ],
+   "description": "やる ことを 順番に ならべた もの。ゲームの 1コマも「キーを 読む、動かす、絵を かく」の 手順で できています。先に 日本語で 手順を 書くと コードに しやすく なります。",
+   "example": "1. キーを 読む → 2. キャラを 動かす → 3. 絵を かく"
+  },
+  {
+   "id": "ko-kikaku",
+   "name": "企画",
+   "reading": "きかく",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 1,
+   "role": "プランナー",
+   "type": "concept",
+   "emoji": "💡",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-shisaku",
+    "ko-kansei"
+   ],
+   "description": "どんな ゲームを 作るかを 考えて 決める、作る 順番の 最初の 一歩。紙と えんぴつだけでも できます。小さく 作れる ものから 考えるのが こつです。",
+   "example": "1. あそびを 考える → 2. 紙に かく → 3. 友だちに 話す"
+  },
+  {
+   "id": "ko-shisaku",
+   "name": "試作",
+   "reading": "しさく",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 1,
+   "role": "プランナー",
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-kikaku",
+    "ko-ryosan"
+   ],
+   "description": "考えた あそびが 本当に おもしろいかを、四角などの 仮の 絵で ためしに 作る こと。企画の 次の 段階です。つまらなければ ここで 考え直します。",
+   "example": "1. 四角を 動かす → 2. あそんでみる → 3. 直す"
+  },
+  {
+   "id": "ko-kansei",
+   "name": "完成品",
+   "reading": "かんせいひん",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "🏁",
+   "mapNode": "code:kanryo",
+   "relatedTerms": [
+    "ko-shiage",
+    "ko-haifu"
+   ],
+   "description": "最初から 最後まで あそべる 形に なった ゲーム。大きな ゲームより、小さくても 完成させた 1本の ほうが 学べる ことが 多いと 言われています。",
+   "example": "1. 企画 → 2. 試作 → 3. 本作り → 4. 仕上げ → 5. 完成品"
+  },
+  {
+   "id": "ko-programmingshiko",
+   "name": "プログラミング的思考",
+   "reading": "ぷろぐらみんぐてきしこう",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 1,
+   "role": "あそぶ人",
+   "type": "concept",
+   "emoji": "💭",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-tejun",
+    "ko-taskbunkai"
+   ],
+   "description": "やりたい ことを 小さな 手順に 分けて、順番や 組み合わせを 考える 力。学校でも 学ぶ 考えかたで、ゲーム作りの 土台に なります。",
+   "example": "ジャンプ = 1. キーを 見る → 2. 上へ 動く → 3. 落ちる"
+  },
+  {
+   "id": "ko-forbun",
+   "name": "for文",
+   "reading": "ふぉーぶん",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "code:loop",
+   "relatedTerms": [
+    "ko-whilebun",
+    "ko-increment",
+    "ko-foreachbun"
+   ],
+   "description": "決まった 回数だけ くりかえす ときに 使う 文。回数を 数える 入れものを 1ずつ ふやしながら 回ります。てきを 5ひき 出す ときなどに 使います。",
+   "example": "for (int i = 0; i < 5; i++) {\n  spawnEnemy(); }"
+  },
+  {
+   "id": "ko-whilebun",
+   "name": "while文",
+   "reading": "ほわいるぶん",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "code:loop",
+   "relatedTerms": [
+    "ko-forbun",
+    "ko-breakbun"
+   ],
+   "description": "「〜の あいだ ずっと」くりかえす 文。何回 回るかが 決まっていない ときに 使います。終わる 条件を 書き忘れると 止まらなく なるので 注意します。",
+   "example": "while (life > 0) {\n  playTurn(); }"
+  },
+  {
+   "id": "ko-mojiretsu",
+   "name": "文字列",
+   "reading": "もじれつ",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔡",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-datagata",
+    "ko-suchi"
+   ],
+   "description": "文字が 1列に ならんだ 値。キャラの 名前や せりふを あつかう ときに 使います。数と 区別するため、ふつう 引用符で かこんで 書きます。",
+   "example": "name = \"hero\";\nmessage = \"CLEAR!\";"
+  },
+  {
+   "id": "ko-seisu",
+   "name": "整数",
+   "reading": "せいすう",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔢",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-shosu",
+    "ko-datagata"
+   ],
+   "description": "小数点の ない 数。残りの 数・点数・ステージの 番号など、1つ 2つと 数える ものに 使います。",
+   "example": "int lives = 3;\nint stage = 1;"
+  },
+  {
+   "id": "ko-shosu",
+   "name": "小数",
+   "reading": "しょうすう",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🎯",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-seisu",
+    "ko-katahenkan"
+   ],
+   "description": "小数点の ある 数。なめらかな 動きの 速さや 位置には 小数を 使います。多くの 言語では 浮動小数点数と いう 形で あつかいます。",
+   "example": "float speed = 2.5f;\nfloat x = 0.0f;"
+  },
+  {
+   "id": "ko-shingichi",
+   "name": "真偽値",
+   "reading": "しんぎち",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "✅",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-ifbun",
+    "ko-datagata"
+   ],
+   "description": "「正しい」か「まちがい」の 2つだけを 持つ 値。ジャンプ中か どうか、かぎを 持っているか どうかを おぼえておく ときに 使います。",
+   "example": "bool isJumping = false;\nbool hasKey = true;"
+  },
+  {
+   "id": "ko-datagata",
+   "name": "データ型",
+   "reading": "でーたがた",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🗂",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-seisu",
+    "ko-mojiretsu",
+    "ko-shingichi"
+   ],
+   "description": "入れものに 入れる 値の 種類。整数・小数・文字列・真偽値などが あります。種類を 決めておくと、まちがった 値を 入れた ときに すぐ 気づけます。",
+   "example": "int hp = 10;\nstring name = \"hero\";"
+  },
+  {
+   "id": "ko-sengen",
+   "name": "宣言",
+   "reading": "せんげん",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "📣",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-shokika",
+    "ko-datagata"
+   ],
+   "description": "「これから この 名前の 入れものを 使います」と コンピューターに 知らせる こと。種類と 名前を 書いて 宣言します。",
+   "example": "int score;\nstring playerName;"
+  },
+  {
+   "id": "ko-dainyu",
+   "name": "代入",
+   "reading": "だいにゅう",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "📥",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-equal",
+    "ko-shokika"
+   ],
+   "description": "入れものに 値を 入れる こと。イコールの 右で 計算した 答えが 左に 入ります。前に 入っていた 値は 上書きされます。",
+   "example": "score = 100;\nscore = score + 50;"
+  },
+  {
+   "id": "ko-enzanshi",
+   "name": "演算子",
+   "reading": "えんざんし",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧮",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-kakezan",
+    "ko-hikakuenzanshi",
+    "ko-jouyo"
+   ],
+   "description": "足す・引く・かける・わる などの 計算を する 記号。わる ときは 斜めの 線を 使い、わり算の 余りを 出す 記号も あります。",
+   "example": "a + b   a - b   a * b\na / b   a % b"
+  },
+  {
+   "id": "ko-hikakuenzanshi",
+   "name": "比較演算子",
+   "reading": "ひかくえんざんし",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔍",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-futogo",
+    "ko-equal"
+   ],
+   "description": "2つの 値を くらべる 記号。同じ・ちがう・大きい・小さい などを 調べ、答えは 正しいか まちがいかの どちらかに なります。",
+   "example": "if (hp == 0) { die(); }\nif (hp != maxHp) { heal(); }"
+  },
+  {
+   "id": "ko-returnbun",
+   "name": "return文",
+   "reading": "りたーんぶん",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔙",
+   "mapNode": "code:kansu",
+   "relatedTerms": [
+    "ko-yobidashi",
+    "ko-saiki"
+   ],
+   "description": "関数の 中で 答えを 返して、その 関数を 終わらせる 文。計算した 結果を、呼んだ ところに わたせます。",
+   "example": "int twice(int n) {\n  return n * 2; }"
+  },
+  {
+   "id": "ko-yobidashi",
+   "name": "関数の呼び出し",
+   "reading": "かんすうのよびだし",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "📞",
+   "mapNode": "code:kansu",
+   "relatedTerms": [
+    "ko-returnbun",
+    "ko-kakko"
+   ],
+   "description": "まとめて 名前を つけた 処理を、名前を 書いて 動かす こと。ジャンプの 処理を 1回 書いておけば、何度でも 呼び出せます。",
+   "example": "jump();\naddScore(10);"
+  },
+  {
+   "id": "ko-class",
+   "name": "クラス",
+   "reading": "くらす",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🏭",
+   "mapNode": "code:class",
+   "relatedTerms": [
+    "ko-method",
+    "ko-keisho",
+    "ko-constructor"
+   ],
+   "description": "てきや アイテムなど「もの」の 設計図。体力などの 値と、動きの 処理を 1つに まとめます。設計図から 同じ 形の てきを いくつも 作れます。",
+   "example": "class Enemy {\n  int hp = 10; }"
+  },
+  {
+   "id": "ko-method",
+   "name": "メソッド",
+   "reading": "めそっど",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🛠",
+   "mapNode": "code:class",
+   "relatedTerms": [
+    "ko-class",
+    "ko-yobidashi"
+   ],
+   "description": "クラスの 中に 書いた 処理。「プレイヤーの ジャンプ」の ように、その もの だけが 持つ 動きを 書きます。ものの 名前の あとに 点を つけて 呼びます。",
+   "example": "player.Jump();\nenemy.TakeDamage(5);"
+  },
+  {
+   "id": "ko-list",
+   "name": "リスト",
+   "reading": "りすと",
+   "journey": "code",
+   "category": "データの入れもの",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "📋",
+   "mapNode": "code:hairetsu",
+   "relatedTerms": [
+    "ko-soeji",
+    "ko-jisho"
+   ],
+   "description": "値を 順番に ならべて しまう 入れもの。数を あとから ふやしたり へらしたり できるので、出てきた てきや 集めた アイテムを しまうのに 便利です。",
+   "example": "enemies.Add(slime);\nenemies.Remove(slime);"
+  },
+  {
+   "id": "ko-soeji",
+   "name": "添字",
+   "reading": "そえじ",
+   "journey": "code",
+   "category": "データの入れもの",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🏷",
+   "mapNode": "code:hairetsu",
+   "relatedTerms": [
+    "ko-list",
+    "ko-hairetsugai"
+   ],
+   "description": "ならんだ 入れものの 何番目かを 表す 番号。多くの 言語では 1番目では なく 0番目から 数えるので、はじめは まちがえやすい ところです。",
+   "example": "first = items[0];\nsecond = items[1];"
+  },
+  {
+   "id": "ko-kobunerror",
+   "name": "構文エラー",
+   "reading": "こうぶんえらー",
+   "journey": "code",
+   "category": "まちがいと直す",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🚧",
+   "mapNode": "code:error",
+   "relatedTerms": [
+    "ko-typo",
+    "ko-kakko"
+   ],
+   "description": "書きかたの 決まりを 守れていない ときに 出る まちがい。かっこの 閉じ忘れや 記号の 打ち忘れが 多いです。何行目かを 教えて くれるので、その あたりを 見直します。",
+   "example": "if (a > 1 { go(); }   // まちがい\nif (a > 1) { go(); }  // 直した"
+  },
+  {
+   "id": "ko-indent",
+   "name": "インデント",
+   "reading": "いんでんと",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧱",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-namikakko",
+    "ko-kaigyo",
+    "ko-gdscript"
+   ],
+   "description": "行の 始めを 空白で 下げて、どこから どこまでが ひとかたまりかを 見やすく する こと。言語に よっては 下げかたで 意味が 変わる ものも あります。",
+   "example": "for (int i = 0; i < 3; i++)\n    spawnEnemy();"
+  },
+  {
+   "id": "ko-namikakko",
+   "name": "波かっこ",
+   "reading": "なみかっこ",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧺",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-indent",
+    "ko-kakko"
+   ],
+   "description": "処理の ひとまとまりを かこむ かっこ。もし 〜なら の 中身や、くりかえしの 中身を はっきり 区切ります。開いたら かならず 閉じます。",
+   "example": "if (hit) { life--; score = 0; }"
+  },
+  {
+   "id": "ko-semicolon",
+   "name": "セミコロン",
+   "reading": "せみころん",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "✒️",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-kobunerror",
+    "ko-kaigyo"
+   ],
+   "description": "多くの 言語で、1つの 命令の 終わりに つける しるし。日本語の 句点の ような 役わりです。打ち忘れると 構文エラーに なります。",
+   "example": "score = 0;\njump();"
+  },
+  {
+   "id": "ko-shokika",
+   "name": "初期化",
+   "reading": "しょきか",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-sengen",
+    "ko-dainyu"
+   ],
+   "description": "入れものに 最初の 値を 入れて、使える 状態に する こと。ゲームを やり直す ときも、点数や 体力を 初期化して スタートに もどします。",
+   "example": "int score = 0;\nint life = 3;"
+  },
+  {
+   "id": "ko-koshinshori",
+   "name": "更新処理",
+   "reading": "こうしんしょり",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🎞",
+   "mapNode": "code:loop",
+   "relatedTerms": [
+    "ko-coroutine",
+    "ko-tashizan"
+   ],
+   "description": "ゲームの 1コマごとに 毎回 呼ばれる 処理。キーを 読んで キャラを 少し 動かす ことを 1秒に 何十回も くりかえして、動いて 見えます。",
+   "example": "void Update() {\n  x += speed; }"
+  },
+  {
+   "id": "ko-null",
+   "name": "null",
+   "reading": "ぬる",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🕳",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-nullsansho",
+    "ko-shokika"
+   ],
+   "description": "「何も 入っていない」ことを 表す 特別な 値。ねらう てきが まだ いない とき などに 使います。空っぽの まま 使おうと すると エラーに なります。",
+   "example": "if (target == null) { return; }"
+  },
+  {
+   "id": "ko-increment",
+   "name": "インクリメント",
+   "reading": "いんくりめんと",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "⏫",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-forbun",
+    "ko-tashizan"
+   ],
+   "description": "入れものの 数を 1 ふやす こと。数を 数える ときに よく 使うので、短い 書きかたが 用意されて います。1 へらす ことは デクリメントと いいます。",
+   "example": "score++;\nlife--;"
+  },
+  {
+   "id": "ko-taskbunkai",
+   "name": "タスク分解",
+   "reading": "たすくぶんかい",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 2,
+   "role": "ディレクター",
+   "type": "concept",
+   "emoji": "✂️",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-tejun",
+    "ko-jisso",
+    "ko-timebox"
+   ],
+   "description": "大きな 作業を、1日で 終わる くらいの 小さな 作業に 分ける こと。「ゲームを 作る」では 大きすぎるので「四角を 動かす」の ように 小さく します。迷わず 進めるように なります。",
+   "example": "1. 四角を 出す → 2. 動かす → 3. ジャンプさせる"
+  },
+  {
+   "id": "ko-jisso",
+   "name": "実装",
+   "reading": "じっそう",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 2,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔧",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-sekkei",
+    "ko-taskbunkai"
+   ],
+   "description": "考えた しくみを 実際に コードに して、ゲームの 中で 動く ように する こと。「ジャンプを 実装する」の ように 言います。",
+   "example": "1. 仕様を 読む → 2. コードを 書く → 3. 動かす"
+  },
+  {
+   "id": "ko-ryosan",
+   "name": "量産",
+   "reading": "りょうさん",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 2,
+   "role": "ディレクター",
+   "type": "concept",
+   "emoji": "🏗",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-shisaku",
+    "ko-shiage"
+   ],
+   "description": "試作で おもしろさが 確かめられた あと、ステージや キャラを たくさん 作っていく 段階。本作りとも 言います。作る 時間の 多くは ここに 使われます。",
+   "example": "1. 試作で 決まる → 2. ステージを ふやす → 3. てきを ふやす"
+  },
+  {
+   "id": "ko-shiage",
+   "name": "仕上げ",
+   "reading": "しあげ",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 2,
+   "role": "ディレクター",
+   "type": "concept",
+   "emoji": "✨",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-ryosan",
+    "ko-kansei"
+   ],
+   "description": "中身が そろった あと、不具合を 直し、手ざわりや 見た目を みがいて 完成に 近づける 段階。新しい 機能は 足さずに、今 ある ものを よく します。",
+   "example": "1. 不具合を 直す → 2. 音と 光を 足す → 3. 調整する"
+  },
+  {
+   "id": "ko-haifu",
+   "name": "配布",
+   "reading": "はいふ",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 2,
+   "role": "ディレクター",
+   "type": "concept",
+   "emoji": "📦",
+   "mapNode": "code:kanryo",
+   "relatedTerms": [
+    "ko-kansei",
+    "ko-shiage"
+   ],
+   "description": "できあがった ゲームを、あそぶ 人が 手に 入れられる ように とどける こと。作る 順番の 最後の 段階で、とどけた あとの 感想が 次の 作品に つながります。",
+   "example": "1. 完成 → 2. ファイルに まとめる → 3. とどける"
+  },
+  {
+   "id": "ko-ronrienzanshi",
+   "name": "論理演算子",
+   "reading": "ろんりえんざんし",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔗",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-hikakuenzanshi",
+    "ko-shingichi",
+    "ko-bitenzan"
+   ],
+   "description": "条件を つなぐ 記号。「かぎを 持っていて、しかも とびらの 前に いる」の ように 両方を 満たすか、どちらか 1つで よいかを 書けます。",
+   "example": "if (hasKey && atDoor) { open(); }\nif (hp < 1 || fell) { retry(); }"
+  },
+  {
+   "id": "ko-keisho",
+   "name": "継承",
+   "reading": "けいしょう",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧬",
+   "mapNode": "code:class",
+   "relatedTerms": [
+    "ko-class",
+    "ko-override",
+    "ko-gosei"
+   ],
+   "description": "もとの クラスの 中身を 受けついで、新しい クラスを 作る こと。「てき」を 受けついで「ボス」を 作れば、ちがう ところだけ 書けば すみます。",
+   "example": "class Boss : Enemy { int phase = 1; }"
+  },
+  {
+   "id": "ko-constructor",
+   "name": "コンストラクタ",
+   "reading": "こんすとらくた",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🐣",
+   "mapNode": "code:class",
+   "relatedTerms": [
+    "ko-class",
+    "ko-shokika"
+   ],
+   "description": "クラスから 新しい ものを 作る ときに、最初に 1回だけ 呼ばれる 特別な 処理。体力や 位置の 初期化を ここで します。",
+   "example": "Enemy(int hp) { this.hp = hp; }\nnew Enemy(10);",
+   "acceptedReadings": [
+    "こんすとらくた",
+    "こんすとらくたー"
+   ]
+  },
+  {
+   "id": "ko-jisho",
+   "name": "辞書",
+   "reading": "じしょ",
+   "journey": "code",
+   "category": "データの入れもの",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "📖",
+   "mapNode": "code:hairetsu",
+   "relatedTerms": [
+    "ko-list",
+    "ko-hashtable"
+   ],
+   "description": "「名前」と「値」を 組に して しまう 入れもの。番号では なく 名前で 取り出せるので、アイテムの 名前から 持っている 数を 調べる ときなどに 便利です。",
+   "example": "count[\"potion\"] = 3;\nn = count[\"potion\"];"
+  },
+  {
+   "id": "ko-saiki",
+   "name": "再帰",
+   "reading": "さいき",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🪆",
+   "mapNode": "code:kansu",
+   "relatedTerms": [
+    "ko-stackoverflow",
+    "ko-returnbun"
+   ],
+   "description": "関数が 自分自身を 呼び出す 書きかた。迷路を 分かれ道ごとに 調べる ときなどに 使います。終わる 条件が ないと 止まらなく なります。",
+   "example": "int f(int n) { if (n <= 1) return 1;\n  return n * f(n - 1); }"
+  },
+  {
+   "id": "ko-eventhandler",
+   "name": "イベントハンドラ",
+   "reading": "いべんとはんどら",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🛎",
+   "mapNode": "code:kansu",
+   "relatedTerms": [
+    "ko-shototsuevent",
+    "ko-lambda"
+   ],
+   "description": "ボタンが 押された、時間に なった などの できごとが 起きた ときに 呼ばれる 処理。自分で 呼ぶのでは なく、できごとが 呼んで くれます。",
+   "example": "void OnClick() { StartGame(); }"
+  },
+  {
+   "id": "ko-shototsuevent",
+   "name": "衝突イベント",
+   "reading": "しょうとついべんと",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "💥",
+   "mapNode": "code:kansu",
+   "relatedTerms": [
+    "ko-eventhandler",
+    "ko-koshinshori"
+   ],
+   "description": "もの どうしが ぶつかった ときに 呼ばれる 処理。星を 取った とき、てきに 当たった ときに する ことを ここに 書きます。",
+   "example": "void OnHit(Enemy e) { life--; }"
+  },
+  {
+   "id": "ko-ransunohani",
+   "name": "乱数の範囲",
+   "reading": "らんすうのはんい",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🎲",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-jouyo",
+    "ko-enzanshi"
+   ],
+   "description": "でたらめな 数を、使いたい はばに そろえる こと。さいころなら 1から 6です。ゲームの 道具では、いちばん 小さい 数と 大きい 数を わたして 決める ことが 多いです。",
+   "example": "dice = rand() % 6 + 1;  // 1〜6"
+  },
+  {
+   "id": "ko-jouyo",
+   "name": "剰余演算子",
+   "reading": "じょうよえんざんし",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "➗",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-enzanshi",
+    "ko-ransunohani"
+   ],
+   "description": "わり算の 余りを 出す 記号。「60コマごとに 1回」や「偶数か 奇数か」を 調べる ときに 使います。数を ぐるっと 回す ときにも 便利です。",
+   "example": "if (frame % 60 == 0) { tick(); }"
+  },
+  {
+   "id": "ko-switchbun",
+   "name": "switch文",
+   "reading": "すいっちぶん",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🚦",
+   "mapNode": "code:bunki",
+   "relatedTerms": [
+    "ko-ifbun",
+    "ko-breakbun"
+   ],
+   "description": "1つの 値に よって、いくつもの 道に 分ける 文。「歩く・走る・ジャンプ」の ように、キャラの 状態で 動きを 変える ときに 使います。",
+   "example": "switch (state) {\n  case WALK: walk(); break; }"
+  },
+  {
+   "id": "ko-breakbun",
+   "name": "break文",
+   "reading": "ぶれいくぶん",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🛑",
+   "mapNode": "code:loop",
+   "relatedTerms": [
+    "ko-whilebun",
+    "ko-continuebun"
+   ],
+   "description": "くりかえしの 途中で ぬけ出す 文。さがしていた てきが 見つかったら、残りを 調べずに 終わらせる ときなどに 使います。",
+   "example": "for (int i = 0; i < n; i++) {\n  if (list[i] == key) break; }"
+  },
+  {
+   "id": "ko-continuebun",
+   "name": "continue文",
+   "reading": "こんてぃにゅーぶん",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "⏭",
+   "mapNode": "code:loop",
+   "relatedTerms": [
+    "ko-breakbun",
+    "ko-foreachbun"
+   ],
+   "description": "くりかえしの 中で、今回の 残りを とばして 次の 回に 進む 文。たおされた てきだけ 動かさずに とばす、などに 使います。",
+   "example": "foreach (var e in enemies) {\n  if (e.dead) continue; e.Move(); }"
+  },
+  {
+   "id": "ko-foreachbun",
+   "name": "foreach文",
+   "reading": "ふぉーいーちぶん",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔂",
+   "mapNode": "code:loop",
+   "relatedTerms": [
+    "ko-forbun",
+    "ko-list"
+   ],
+   "description": "入れものの 中身を 1つずつ 順番に 取り出して くりかえす 文。番号を 数えなくて よいので、ぜんぶの てきを 動かす ときなどに 読みやすく 書けます。",
+   "example": "foreach (var e in enemies) {\n  e.Move(); }"
+  },
+  {
+   "id": "ko-localhensu",
+   "name": "ローカル変数",
+   "reading": "ろーかるへんすう",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🏠",
+   "mapNode": "code:kansu",
+   "relatedTerms": [
+    "ko-sengen",
+    "ko-capsule"
+   ],
+   "description": "関数などの 中だけで 使える 入れもの。その 処理が 終わると 消えます。使う 場所を せまく すると、ほかの ところで 書きかえられる 心配が なく なります。",
+   "example": "void Hit() {\n  int dmg = 5; hp -= dmg; }"
+  },
+  {
+   "id": "ko-katahenkan",
+   "name": "型変換",
+   "reading": "かたへんかん",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "♻️",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-datagata",
+    "ko-shosu",
+    "ko-seitekikata"
+   ],
+   "description": "値の 種類を 別の 種類に 変える こと。小数を 整数に すると、小数点より 下が 切りすてられる ことが 多いので 注意します。",
+   "example": "int n = (int)2.7f;  // 2 に なる\nstring s = n.ToString();"
+  },
+  {
+   "id": "ko-camelcase",
+   "name": "キャメルケース",
+   "reading": "きゃめるけーす",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🐫",
+   "mapNode": "code:kaku",
+   "relatedTerms": [
+    "ko-typo",
+    "ko-codereview"
+   ],
+   "description": "英単語を つなげた 名前で、2つめからの 頭を 大文字に する 書きかた。らくだの こぶの ように 見えるので こう 呼ばれます。チームで そろえると 読みやすく なります。",
+   "example": "playerSpeed = 3;\nmaxJumpCount = 2;"
+  },
+  {
+   "id": "ko-nijigenhairetsu",
+   "name": "二次元配列",
+   "reading": "にじげんはいれつ",
+   "journey": "code",
+   "category": "データの入れもの",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🗺",
+   "mapNode": "code:hairetsu",
+   "relatedTerms": [
+    "ko-soeji",
+    "ko-list"
+   ],
+   "description": "たてと 横の 2つの 番号で 取り出す 入れもの。マス目の ステージを 作る ときに、どこが かべで どこが 道かを しまっておくのに 使います。",
+   "example": "map[y][x] = WALL;\nif (map[y][x] == 0) { move(); }"
+  },
+  {
+   "id": "ko-capsule",
+   "name": "カプセル化",
+   "reading": "かぷせるか",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "💊",
+   "mapNode": "code:class",
+   "relatedTerms": [
+    "ko-class",
+    "ko-method"
+   ],
+   "description": "クラスの 中身を 外から 直接 さわれない ように かくし、決めた 入り口からだけ 変えさせる こと。体力が おかしな 値に なる ような まちがいを 防げます。",
+   "example": "private int hp;\npublic void Heal(int n) { hp += n; }"
+  },
+  {
+   "id": "ko-override",
+   "name": "オーバーライド",
+   "reading": "おーばーらいど",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🎭",
+   "mapNode": "code:class",
+   "relatedTerms": [
+    "ko-keisho",
+    "ko-method"
+   ],
+   "description": "受けついだ クラスの 処理を、新しい クラスで 書きかえる こと。同じ「動く」でも、スライムは はねて、コウモリは とぶ、の ように 変えられます。",
+   "example": "public override void Move() { Fly(); }"
+  },
+  {
+   "id": "ko-nullsansho",
+   "name": "null参照",
+   "reading": "ぬるさんしょう",
+   "journey": "code",
+   "category": "まちがいと直す",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🫥",
+   "mapNode": "code:error",
+   "relatedTerms": [
+    "ko-null",
+    "ko-reigaishori"
+   ],
+   "description": "何も 入っていない 入れものの 中身を 使おうと して 起きる まちがい。ゲーム作りで とても よく 出会います。使う 前に 空っぽで ないか 確かめると 防げます。",
+   "example": "target.Attack();  // 空なら エラー\nif (target != null) target.Attack();"
+  },
+  {
+   "id": "ko-reigaishori",
+   "name": "例外処理",
+   "reading": "れいがいしょり",
+   "journey": "code",
+   "category": "まちがいと直す",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🛟",
+   "mapNode": "code:error",
+   "relatedTerms": [
+    "ko-nullsansho",
+    "ko-zerojozan"
+   ],
+   "description": "ファイルが 読めない など、思いがけない ことが 起きた ときに、止まらずに 立て直す ための しくみ。あやしい ところを かこんで、起きたら 別の 処理に 回します。",
+   "example": "try { LoadSave(); }\ncatch (Exception e) { UseDefault(); }"
+  },
+  {
+   "id": "ko-hairetsugai",
+   "name": "配列の範囲外",
+   "reading": "はいれつのはんいがい",
+   "journey": "code",
+   "category": "まちがいと直す",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🚫",
+   "mapNode": "code:error",
+   "relatedTerms": [
+    "ko-soeji",
+    "ko-list"
+   ],
+   "description": "ならんだ 入れものの、ない 番号を 取り出そうと して 起きる まちがい。3つ 入った 入れものの 番号は 0から 2までです。",
+   "example": "items[3]  // 3こ なら エラー\nitems[2]  // 最後は 2番"
+  },
+  {
+   "id": "ko-zerojozan",
+   "name": "ゼロ除算",
+   "reading": "ぜろじょざん",
+   "journey": "code",
+   "category": "まちがいと直す",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "0️⃣",
+   "mapNode": "code:error",
+   "relatedTerms": [
+    "ko-enzanshi",
+    "ko-reigaishori"
+   ],
+   "description": "0で わり算を しようと して 起きる まちがい。整数では プログラムが 止まる ことが あります。わる 数が 0で ないか 先に 確かめます。",
+   "example": "if (n != 0) { avg = sum / n; }"
+  },
+  {
+   "id": "ko-csharp",
+   "name": "C#",
+   "reading": "しーしゃーぷ",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🎼",
+   "mapNode": "code:gengo",
+   "relatedTerms": [
+    "ko-cpp",
+    "ko-lua",
+    "ko-class"
+   ],
+   "description": "ゲームエンジンの 中で 動きを 書く ときに よく 使われる 言語。クラスを 使って 整理して 書くのが とくいです。",
+   "example": "public class Player {\n  public int hp = 10; }"
+  },
+  {
+   "id": "ko-lua",
+   "name": "Lua",
+   "reading": "るあ",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🌙",
+   "mapNode": "code:gengo",
+   "relatedTerms": [
+    "ko-csharp",
+    "ko-gdscript"
+   ],
+   "description": "小さくて 軽い 言語。ゲームの 中に 組みこんで、てきの 動きや イベントの 流れを 書く ために よく 使われます。名前は ポルトガル語で 月と いう 意味です。",
+   "example": "if hp <= 0 then gameOver() end"
+  },
+  {
+   "id": "ko-gdscript",
+   "name": "GDScript",
+   "reading": "じーでぃーすくりぷと",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "📜",
+   "mapNode": "code:gengo",
+   "relatedTerms": [
+    "ko-lua",
+    "ko-indent"
+   ],
+   "description": "ある ゲームエンジン 専用に 作られた 言語。行の 下げかたで 処理の まとまりを 表します。エンジンの 画面と 組み合わせて 使いやすい ように できています。",
+   "example": "if hp <= 0:\n    game_over()"
+  },
+  {
+   "id": "ko-gijicode",
+   "name": "擬似コード",
+   "reading": "ぎじこーど",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🗒",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-tejun",
+    "ko-sekkei",
+    "ko-comment"
+   ],
+   "description": "言語の 決まりに とらわれず、日本語 まじりで 手順を 書いた もの。書く 前に 流れを 整理できるので、いきなり コードを 書くより まちがいが へります。",
+   "example": "もし 体力が 0 なら\n  ゲームオーバーを 出す"
+  },
+  {
+   "id": "ko-sekkei",
+   "name": "設計",
+   "reading": "せっけい",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-jisso",
+    "ko-class"
+   ],
+   "description": "コードを 書く 前に、どんな クラスや 関数に 分けて、どう つなぐかを 決める こと。家の 設計図と 同じで、先に 考えておくと あとで 直しやすく なります。",
+   "example": "1. ものを 書き出す → 2. 役わりを 決める → 3. つなぐ"
+  },
+  {
+   "id": "ko-codereview",
+   "name": "コードレビュー",
+   "reading": "こーどれびゅー",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 3,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "👀",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-refactoring",
+    "ko-camelcase"
+   ],
+   "description": "書いた コードを 仲間に 読んで もらい、まちがいや 分かりにくい ところを 見つけて もらう こと。自分では 気づかない ことに 気づけ、チームの 書きかたも そろいます。",
+   "example": "1. 書く → 2. 仲間が 読む → 3. 直す → 4. 取りこむ"
+  },
+  {
+   "id": "ko-timebox",
+   "name": "タイムボックス",
+   "reading": "たいむぼっくす",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 3,
+   "role": "ディレクター",
+   "type": "concept",
+   "emoji": "⏱",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-taskbunkai",
+    "ko-shiage"
+   ],
+   "description": "作業に かける 時間を 先に 決め、その 時間で できた ところで 区切る 進めかた。短い 期間で 1本 作る 集まりでも、試作・本作り・仕上げに 時間を 分けて 使います。",
+   "example": "1. 1日目 試作 → 2. 2日目 本作り → 3. 最後の 3時間 仕上げ"
+  },
+  {
+   "id": "ko-hidoki",
+   "name": "非同期処理",
+   "reading": "ひどうきしょり",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "⏳",
+   "mapNode": "code:kansu",
+   "relatedTerms": [
+    "ko-coroutine",
+    "ko-lambda"
+   ],
+   "description": "時間の かかる 読みこみなどを 待つ あいだも、ゲームを 止めずに ほかの 処理を 進める 書きかた。終わったら 続きを する ように 書くので、画面が 固まりません。",
+   "example": "await LoadStageAsync();\nShowStage();"
+  },
+  {
+   "id": "ko-coroutine",
+   "name": "コルーチン",
+   "reading": "こるーちん",
+   "journey": "code",
+   "category": "分かれ道とくりかえし",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧵",
+   "mapNode": "code:loop",
+   "relatedTerms": [
+    "ko-hidoki",
+    "ko-koshinshori"
+   ],
+   "description": "途中で 一度 止まって、次の コマや 何秒か あとに 続きから 動ける 処理。「3秒 待ってから てきを 出す」の ような 時間の 流れを すっきり 書けます。",
+   "example": "yield return new WaitForSeconds(3);\nSpawnEnemy();"
+  },
+  {
+   "id": "ko-generics",
+   "name": "ジェネリクス",
+   "reading": "じぇねりくす",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧰",
+   "mapNode": "code:class",
+   "relatedTerms": [
+    "ko-list",
+    "ko-interface"
+   ],
+   "description": "中に 入れる 種類を あとから 決められる 書きかた。てき用、アイテム用と 同じ 入れものを 何度も 作らずに、1つの 書きかたで 使い回せます。",
+   "example": "List<Enemy> enemies = new List<Enemy>();"
+  },
+  {
+   "id": "ko-interface",
+   "name": "インターフェース",
+   "reading": "いんたーふぇーす",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔌",
+   "mapNode": "code:class",
+   "relatedTerms": [
+    "ko-class",
+    "ko-gosei",
+    "ko-generics"
+   ],
+   "description": "「この 名前の 処理を かならず 持つ」と いう 約束だけを 決めた もの。中身は それぞれの クラスが 書きます。こわせる 箱も てきも「ダメージを 受ける」で まとめて あつかえます。",
+   "example": "interface IDamageable {\n  void TakeDamage(int n); }"
+  },
+  {
+   "id": "ko-gosei",
+   "name": "継承より合成",
+   "reading": "けいしょうよりごうせい",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧩",
+   "mapNode": "code:class",
+   "relatedTerms": [
+    "ko-keisho",
+    "ko-interface"
+   ],
+   "description": "親子の 受けつぎを 深く 重ねるより、「動く」「光る」などの 小さな 部品を 組み合わせる ほうが 変えやすい、と いう 考えかた。ゲーム作りで よく 大事に されます。",
+   "example": "enemy.Add(new Mover());\nenemy.Add(new Blinker());"
+  },
+  {
+   "id": "ko-atai-sansho",
+   "name": "値型と参照型",
+   "reading": "あたいがたとさんしょうがた",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🪞",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-pointer",
+    "ko-memorykakuho"
+   ],
+   "description": "値型は 中身 そのものを コピーし、参照型は 中身の ある 場所を 教え合う だけの 種類です。参照型を 別の 名前に 入れて 変えると、もとの ほうも 変わるので 注意します。",
+   "example": "Enemy b = a;  // 同じ てきを 指す\nb.hp = 0;     // a.hp も 0 に なる"
+  },
+  {
+   "id": "ko-pointer",
+   "name": "ポインタ",
+   "reading": "ぽいんた",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "👉",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-memorykakuho",
+    "ko-atai-sansho",
+    "ko-cpp"
+   ],
+   "description": "値が しまわれて いる メモリの 場所を 入れて おく 入れもの。速さが 大事な 言語で 出てきます。まちがうと ゲームが 落ちるので、ていねいに あつかいます。",
+   "example": "int* p = &hp;\n*p = 10;  // hp が 10 に なる",
+   "acceptedReadings": [
+    "ぽいんた",
+    "ぽいんたー"
+   ]
+  },
+  {
+   "id": "ko-memorykakuho",
+   "name": "メモリ確保",
+   "reading": "めもりかくほ",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧠",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-pointer",
+    "ko-cpp"
+   ],
+   "description": "新しい ものを 作る ときに、しまう 場所を メモリの 中に 用意する こと。ゲーム中に 確保と 片づけを 何度も くりかえすと 重く なるので、先に まとめて 用意する 工夫を します。",
+   "example": "Enemy* e = new Enemy();\ndelete e;  // 使い終わったら 返す"
+  },
+  {
+   "id": "ko-bitenzan",
+   "name": "ビット演算",
+   "reading": "びっとえんざん",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔣",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-ronrienzanshi",
+    "ko-jouyo"
+   ],
+   "description": "数を 0と 1の ならびと して あつかい、1けたずつ 計算する こと。「ジャンプできる」「泳げる」など たくさんの 有り無しを 1つの 数に つめこめて、速く 調べられます。",
+   "example": "flags |= CAN_JUMP;\nif (flags & CAN_SWIM) { swim(); }"
+  },
+  {
+   "id": "ko-hashtable",
+   "name": "ハッシュテーブル",
+   "reading": "はっしゅてーぶる",
+   "journey": "code",
+   "category": "データの入れもの",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🗃",
+   "mapNode": "code:hairetsu",
+   "relatedTerms": [
+    "ko-jisho",
+    "ko-keisanryo"
+   ],
+   "description": "名前などの 鍵から、計算で しまう 場所を 決める 入れもの。たくさん 入っていても すぐに 取り出せます。辞書の 入れものは、多くの 言語で この しくみで 作られています。",
+   "example": "table[\"slime\"] = 10;\nhp = table[\"slime\"];"
+  },
+  {
+   "id": "ko-keisanryo",
+   "name": "計算量",
+   "reading": "けいさんりょう",
+   "journey": "code",
+   "category": "計算とくらべる",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "code:keisan",
+   "relatedTerms": [
+    "ko-hashtable",
+    "ko-nijigenhairetsu",
+    "ko-datashiko"
+   ],
+   "description": "数が ふえた とき、処理の 手間が どれくらい ふえるかの 目安。てき 100体 なら 平気でも、ぜんぶの 組を 調べると 約1万回に なる、と いった ことに 前もって 気づけます。",
+   "example": "for (int i = 0; i < n; i++)\n  for (int j = 0; j < n; j++) check(i, j);"
+  },
+  {
+   "id": "ko-tdd",
+   "name": "テスト駆動開発",
+   "reading": "てすとくどうかいはつ",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🚥",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-refactoring",
+    "ko-codereview"
+   ],
+   "description": "先に「こう 動けば 正しい」と いう 確かめの コードを 書いてから、それが 通る ように 本体を 書く 進めかた。直しても こわれて いないかを いつでも 確かめられます。",
+   "example": "1. 確かめを 書く → 2. 失敗を 見る → 3. 通す → 4. 整える"
+  },
+  {
+   "id": "ko-refactoring",
+   "name": "リファクタリング",
+   "reading": "りふぁくたりんぐ",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧹",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-tdd",
+    "ko-codereview"
+   ],
+   "description": "動きは 変えずに、コードの 中身を 読みやすく 整理し直す こと。同じ ことを 何度も 書いている ところを まとめるなど します。直しやすい コードは 長く 作り続ける 力に なります。",
+   "example": "x = x + 5; y = y + 5;\n→ MoveBy(5, 5);"
+  },
+  {
+   "id": "ko-cpp",
+   "name": "C++",
+   "reading": "しーぷらすぷらす",
+   "journey": "code",
+   "category": "書きかた",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "⚙️",
+   "mapNode": "code:gengo",
+   "relatedTerms": [
+    "ko-pointer",
+    "ko-memorykakuho",
+    "ko-csharp"
+   ],
+   "description": "とても 速く 動く ことが とくいな 言語。大きな ゲームエンジンの 中身や、重い 処理を 書く ときに 使われています。メモリを 自分で 管理する ぶん、ていねいさが 必要です。",
+   "example": "std::vector<Enemy> enemies;\nenemies.push_back(Enemy());"
+  },
+  {
+   "id": "ko-lambda",
+   "name": "ラムダ式",
+   "reading": "らむだしき",
+   "journey": "code",
+   "category": "関数とクラス",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "⚡",
+   "mapNode": "code:kansu",
+   "relatedTerms": [
+    "ko-yobidashi",
+    "ko-eventhandler"
+   ],
+   "description": "名前を つけずに、その場で 書ける 小さな 関数。ならべかえの 決まりや、ボタンを 押した ときの 処理を、使う 場所に 短く 書けます。",
+   "example": "enemies.Sort((a, b) => a.hp - b.hp);"
+  },
+  {
+   "id": "ko-queue",
+   "name": "キュー",
+   "reading": "きゅー",
+   "journey": "code",
+   "category": "データの入れもの",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🚶",
+   "mapNode": "code:hairetsu",
+   "relatedTerms": [
+    "ko-list",
+    "ko-stackoverflow"
+   ],
+   "description": "先に 入れた ものから 順に 取り出す 入れもの。お店の 行列と 同じ しくみです。ボタンの 入力を ためて 順に 処理したり、出てくる てきの 順番を 決めたり します。",
+   "example": "queue.Enqueue(attack);\nnext = queue.Dequeue();"
+  },
+  {
+   "id": "ko-stackoverflow",
+   "name": "スタックオーバーフロー",
+   "reading": "すたっくおーばーふろー",
+   "journey": "code",
+   "category": "まちがいと直す",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🌊",
+   "mapNode": "code:error",
+   "relatedTerms": [
+    "ko-saiki",
+    "ko-queue"
+   ],
+   "description": "関数の 呼び出しが 深く なりすぎて、おぼえて おく 場所が あふれて 止まる まちがい。再帰で 終わる 条件を 忘れた ときに よく 起きます。",
+   "example": "int f(int n) { return f(n + 1); }\n// 終わりが なく あふれる"
+  },
+  {
+   "id": "ko-seitekikata",
+   "name": "静的型付け",
+   "reading": "せいてきかたづけ",
+   "journey": "code",
+   "category": "数と文字",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔒",
+   "mapNode": "code:atai",
+   "relatedTerms": [
+    "ko-datagata",
+    "ko-katahenkan"
+   ],
+   "description": "入れものの 種類を、動かす 前に 決めて おく 言語の しくみ。まちがった 種類の 値を 入れると、動かす 前に 教えて くれます。大きな ゲームほど 助かります。",
+   "example": "int hp = 10;\nhp = \"ten\";  // 動かす 前に エラー"
+  },
+  {
+   "id": "ko-datashiko",
+   "name": "データ指向",
+   "reading": "でーたしこう",
+   "journey": "code",
+   "category": "データの入れもの",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🧊",
+   "mapNode": "code:hairetsu",
+   "relatedTerms": [
+    "ko-keisanryo",
+    "ko-memorykakuho"
+   ],
+   "description": "同じ 種類の 値を メモリの 中に ぎっしり ならべて、まとめて 速く 処理する 設計の 考えかた。何千体もの てきを いっしょに 動かす ゲームで 使われます。",
+   "example": "for (int i = 0; i < n; i++)\n  posX[i] += velX[i];"
+  },
+  {
+   "id": "ko-gijutsukensho",
+   "name": "技術検証",
+   "reading": "ぎじゅつけんしょう",
+   "journey": "code",
+   "category": "作る順番",
+   "difficulty": 4,
+   "role": "プログラマー",
+   "type": "concept",
+   "emoji": "🔬",
+   "mapNode": "code:junban",
+   "relatedTerms": [
+    "ko-shisaku",
+    "ko-sekkei"
+   ],
+   "description": "本作りの 前に、むずかしそうな しくみが 本当に 作れるか、速さは 足りるかを 小さく 作って 確かめる こと。あとで「作れなかった」と ならない ための 下調べです。",
+   "example": "1. 心配な ところを 選ぶ → 2. 小さく 作る → 3. 決める"
   }
  ]
 }

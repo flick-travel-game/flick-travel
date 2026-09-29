@@ -1,7 +1,7 @@
 import { createRequire } from 'module';
 const { chromium } = createRequire('/opt/node22/lib/node_modules/')('playwright');
 const games = process.argv.slice(2).length ? process.argv.slice(2)
-  : ['', 'rekishi/', 'uchu/', 'karada/', 'kabu/', 'ai/', 'eikaiwa/', 'rika/', 'seibi/', 'patissier/', 'kokugo/', 'sugaku/', 'hoiku/', 'kango/', 'gamedev/', 'biyo/'];
+  : ['', 'rekishi/', 'uchu/', 'karada/', 'kabu/', 'ai/', 'eikaiwa/', 'rika/', 'seibi/', 'patissier/', 'kokugo/', 'sugaku/', 'hoiku/', 'kango/', 'gamedev/', 'biyo/', 'kyoryu/'];
 const W = +(process.env.W || 390), H = +(process.env.H || 844);
 const b = await chromium.launch();
 

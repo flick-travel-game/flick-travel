@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -126,11 +126,21 @@ GAMES = {
                  lead="カットと スタイル・パーマと カラー・髪と 肌の しくみ・美容の 化学・清潔と 衛生・メイク ネイル 着付け・お店と しくみの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どの 課目か・しくみ図の どこに あるのかが 出るよ。美容室で 聞く ことばから はじめて、美容師国家試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。",
                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。薬を 使う ことは、美容師さんに おまかせ。パーマ液や カラー剤の 使いかた・はさみや かみそりの あつかいかたは のせていないよ。説明は 本物の 試験問題では ないので、試験の 勉強には 学校の 教科書や 問題集も 使ってね。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、美容の ことばと しくみが つながって 見えてくるよ。厚生労働省・理容師美容師試験研修センターとは 関係ありません。"),
+    # フリック恐竜図鑑(けいくん 2026-09-29「恐竜博士になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「すべておすすめで」)。
+    #   ことばは tools/kyoryu/terms-<旅>.json → kyoryu/terms.js(tools/kyoryu/terms_js.py)。しくみは kyoryu/kyoryu.js(KYORYU。biyo.js を 写した)。
+    #   旅は 7つ + マスター。むずかしさは 入門(だれでも 知っている)→ 中級(図鑑に のっている)→ 上級(恐竜博士)。
+    #   見つかった 場所は 世界地図(world-map-color.jpg)に 📍、いた 時代は コードで 描く 年表に 📍。写真は あとから 足す(いまは 絵文字の カード)。
+    #   ⚠️⚠️ 古い 知識を 書かない・恐竜では ない 生きものを 恐竜と 書かない(決まりは tools/kyoryu/PROMPT.md)。
+    #   名前は 仮。けいくんの 絵が 届いたら 絵の 題名に そろえる(フォルダ名 kyoryu は 変えない)。絵が まだ 無いので 題名は 文字
+    "kyoryu": dict(name="フリック恐竜図鑑", modes="KYORYU", kinds=set(), color="#2f9e44", hero=False, logo=False,
+                   lead="肉を 食べる 恐竜・草を 食べる 恐竜・日本の 恐竜・3つの 時代・体と 化石・恐竜では ない 生きもの・調べる 人と 道具を、ひらがなで フリック入力。打つと その 恐竜の いた 時代と、見つかった 場所(世界地図の 📍)が 出るよ。だれでも 知っている 恐竜から はじめて、めざせ 恐竜博士。",
+                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。「ヴ」の 入った 名前は ば行でも OK(べろきらぷとる)。恐竜の 研究は 毎年 新しく なるので、あとから 考えが 変わる ことも あるよ。",
+                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、恐竜の 名前と 時代と 場所が つながって 見えてくるよ。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -203,6 +213,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/biyo/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "biyo" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="biyo.js?v=%s"></script>' % (ver("terms.js"), ver("biyo.js")))
+    if g["modes"] == "KYORYU":  # 恐竜の コース: 美容と 同じ 形。ことばは terms.js(tools/kyoryu/terms-*.json から)、しくみは kyoryu.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kyoryu/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "kyoryu" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="kyoryu.js?v=%s"></script>' % (ver("terms.js"), ver("kyoryu.js")))
     if g["modes"] == "KANGO":  # 看護の コース: 保育と 同じ 形。ことばは terms.js(tools/kango/terms-*.json から)、しくみは kango.js
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kango/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "kango" / f).read_bytes()).hexdigest()[:8]

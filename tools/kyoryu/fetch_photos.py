@@ -175,6 +175,8 @@ def save():
     for key, p in picks.items():
         if not p:
             photos.pop(key, None); continue
+        if p.get("ai"):  # けいくんの AIの 絵(photos.js に もう 入っている)。Commons から 取らない
+            continue
         it = next((x for x in cand[key]["list"] if x["file"] == p["file"]), None)
         if it is None:  # 見くらべる 絵に 無い 写真を 助手が 見つけてきた とき(ライセンスは ここで もう一度 見る)
             got = infos([p["file"]])

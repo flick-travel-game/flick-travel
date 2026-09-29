@@ -14145,12 +14145,13 @@ const PHOTOS = {
   "file": "File:Bryonyx.jpg"
  },
  "ni-beipiao": {
-  "src": "photo-kyoryu-ni-beipiao-v2.jpg",
-  "author": "Pavel Riha = user Pavel.Riha.CB (e-mail)",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Beipiaosaurus.jpg",
-  "file": "File:Beipiaosaurus.jpg"
+  "src": "photo-kyoryu-ni-beipiao-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "ni-carcharo": {
   "src": "photo-kyoryu-ni-carcharo.jpg",
@@ -14369,12 +14370,13 @@ const PHOTOS = {
   "file": "File:Neovenator salerii 1.jpg"
  },
  "ni-noa": {
-  "src": "photo-kyoryu-ni-noa-v2.jpg",
-  "author": "Olmagon",
-  "license": "CC BY-SA 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Noasaurus.png",
-  "file": "File:Noasaurus.png"
+  "src": "photo-kyoryu-ni-noa-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "ni-ornitho": {
   "src": "photo-kyoryu-ni-ornitho.jpg",
@@ -14385,12 +14387,13 @@ const PHOTOS = {
   "file": "File:OrnithomimusROM.JPG"
  },
  "ni-ovi": {
-  "src": "photo-kyoryu-ni-ovi-v2.jpg",
-  "author": "TotalDino",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Oviraptor_TD.png",
-  "file": "File:Oviraptor TD.png"
+  "src": "photo-kyoryu-ni-ovi-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "ni-sinosauro": {
   "src": "photo-kyoryu-ni-sinosauro.jpg",
@@ -14721,12 +14724,13 @@ const PHOTOS = {
   "file": "File:Diplodocus Carnegii skeleton in Museum für Naturkunde Berlin 0828.jpg"
  },
  "so-dread": {
-  "src": "photo-kyoryu-so-dread.jpg",
-  "author": "Nobu Tamura email:nobu.tamura@yahoo.com http://spinops.blogspot.com/",
-  "license": "CC BY-SA 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Dreadnoughtus_NT_small.jpg",
-  "file": "File:Dreadnoughtus NT small.jpg"
+  "src": "photo-kyoryu-so-dread-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "so-edmonto": {
   "src": "photo-kyoryu-so-edmonto.jpg",
@@ -14745,12 +14749,13 @@ const PHOTOS = {
   "file": "File:Einiosaurus skull.jpg"
  },
  "so-euoplo": {
-  "src": "photo-kyoryu-so-euoplo-v2.jpg",
-  "author": "Firsfron at English Wikipedia",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Euoplocephalus_eating_Animatronics_model_NHM2.jpg",
-  "file": "File:Euoplocephalus eating Animatronics model NHM2.jpg"
+  "src": "photo-kyoryu-so-euoplo-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "so-giraffa": {
   "src": "photo-kyoryu-so-giraffa.jpg",

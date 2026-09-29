@@ -1,0 +1,1708 @@
+[
+ {
+  "id": "te-testplay",
+  "name": "テストプレイ",
+  "reading": "てすとぷれい",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🎮",
+  "mapNode": "test:play",
+  "relatedTerms": [
+   "te-playtest",
+   "te-feedback"
+  ],
+  "description": "作った ゲームを 自分で あそんで、ちゃんと 動くか 楽しいかを 確かめる ことです。小さく 作って すぐ あそんで みるのが 上達の 近道です。"
+ },
+ {
+  "id": "te-freeze",
+  "name": "フリーズ",
+  "reading": "ふりーず",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-kyoseishuryo",
+   "te-crash"
+  ],
+  "description": "ゲームの 画面が 止まって、なにを 押しても 動かなく なる ことです。あそぶ 人が いちばん こまる まちがいの 1つです。"
+ },
+ {
+  "id": "te-taikenban",
+  "name": "体験版",
+  "reading": "たいけんばん",
+  "journey": "test",
+  "category": "仕上げ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🎟️",
+  "mapNode": "test:han",
+  "relatedTerms": [
+   "te-alphaban",
+   "te-kanso"
+  ],
+  "description": "ゲームの はじめの 部分だけを あそべる ように した 版です。できあがる 前に、あそんだ 人の 声を 聞く ためにも 使われます。"
+ },
+ {
+  "id": "te-shusei",
+  "name": "修正",
+  "reading": "しゅうせい",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 1,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-fuguai",
+   "te-shuseikakunin"
+  ],
+  "description": "見つかった まちがいを 直す ことです。直した あとは、本当に 直ったか もう一度 あそんで 確かめます。"
+ },
+ {
+  "id": "te-fuguai",
+  "name": "不具合",
+  "reading": "ふぐあい",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 1,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🐞",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-shusei",
+   "te-bughokoku"
+  ],
+  "description": "ゲームが 作った 人の 考えた とおりに 動かない ところです。キャラが かべに めりこむ、音が 出ない など いろいろ あります。"
+ },
+ {
+  "id": "te-goji",
+  "name": "誤字",
+  "reading": "ごじ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 1,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-mojibake",
+   "te-shiyomore"
+  ],
+  "description": "せりふや 説明の 文の 中の 字の まちがいです。小さな まちがいでも、見つけて 直すと ゲームの 仕上がりが よく なります。"
+ },
+ {
+  "id": "te-kanseiban",
+  "name": "完成版",
+  "reading": "かんせいばん",
+  "journey": "test",
+  "category": "仕上げ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🎉",
+  "mapNode": "test:shiage",
+  "relatedTerms": [
+   "te-masterup",
+   "te-polish"
+  ],
+  "description": "ゲームが できあがった 版です。さいごまで 作りきる 力は とても 大事で、小さな ゲームでも 完成させると 自信に なります。"
+ },
+ {
+  "id": "te-kanso",
+  "name": "感想",
+  "reading": "かんそう",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "test:hanno",
+  "relatedTerms": [
+   "te-feedback",
+   "te-anketo"
+  ],
+  "description": "あそんだ 人が 思った ことや 感じた ことです。「ここが 楽しい」「ここで まよった」と いう 声が、直す ヒントに なります。"
+ },
+ {
+  "id": "te-jimaku",
+  "name": "字幕",
+  "reading": "じまく",
+  "journey": "test",
+  "category": "あそびやすさ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "test:asobiyasusa",
+  "relatedTerms": [
+   "te-mojinookisa",
+   "te-shikikaku"
+  ],
+  "description": "せりふや 音を 文字で 画面に 出す しくみです。音を 出せない 場所や、耳が 聞こえにくい 人も あそべる ように なります。"
+ },
+ {
+  "id": "te-mojibake",
+  "name": "文字化け",
+  "reading": "もじばけ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 1,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "👾",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-goji",
+   "te-kakuninlist"
+  ],
+  "description": "文字が 正しく 出ずに、読めない 記号に 変わって しまう まちがいです。ちがう 国の ことばに したとき などに 起きやすいです。"
+ },
+ {
+  "id": "te-kyoseishuryo",
+  "name": "強制終了",
+  "reading": "きょうせいしゅうりょう",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-freeze",
+   "te-crash"
+  ],
+  "description": "ゲームが とつぜん 終わって、もとの 画面に もどって しまう ことです。つづきが 消える ことも あるので、かならず 直します。"
+ },
+ {
+  "id": "te-shoriochi",
+  "name": "処理落ち",
+  "reading": "しょりおち",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-frameochi",
+   "te-shorifuka"
+  ],
+  "description": "計算する ことが 多すぎて、ゲームの 動きが ゆっくりに なる ことです。てきや エフェクトが 一度に たくさん 出たとき などに 起きます。"
+ },
+ {
+  "id": "te-loadjikan",
+  "name": "ロード時間",
+  "reading": "ろーどじかん",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "test:matsu",
+  "relatedTerms": [
+   "te-loadgamen",
+   "te-matchijikan"
+  ],
+  "description": "ステージや データを 読みこむ あいだ、待つ 時間です。長いと あそぶ 人が あきて しまうので、短く する くふうを します。"
+ },
+ {
+  "id": "te-dosaomoi",
+  "name": "動作が重い",
+  "reading": "どうさがおもい",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🐌",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-shoriochi",
+   "te-saitekika"
+  ],
+  "description": "ゲームの 動きが もたついて、スムーズに 動かない ようすです。ボタンを 押しても すぐ 反応しない ときにも 使います。"
+ },
+ {
+  "id": "te-anketo",
+  "name": "アンケート",
+  "reading": "あんけーと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "test:hanno",
+  "relatedTerms": [
+   "te-kanso",
+   "te-feedback"
+  ],
+  "description": "あそんだ 人に 質問を して、答えを 集める ことです。「むずかしさは どうだった?」など 聞く ことを 決めて おくと 役立ちます。"
+ },
+ {
+  "id": "te-surinuke",
+  "name": "すりぬけ",
+  "reading": "すりぬけ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "👻",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-hanteizure",
+   "te-hamari"
+  ],
+  "description": "キャラや ものが かべや 床を 通りぬけて しまう まちがいです。ぶつかる しくみが うまく 動いて いない ときに 起きます。"
+ },
+ {
+  "id": "te-sosasettei",
+  "name": "操作設定",
+  "reading": "そうさせってい",
+  "journey": "test",
+  "category": "あそびやすさ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🕹️",
+  "mapNode": "test:asobiyasusa",
+  "relatedTerms": [
+   "te-sosasei",
+   "te-mojinookisa"
+  ],
+  "description": "どの ボタンで どう 動かすかを、あそぶ 人が 自分で 変えられる しくみです。手の 大きさや くせに 合わせて あそべます。"
+ },
+ {
+  "id": "te-mojinookisa",
+  "name": "文字サイズ",
+  "reading": "もじさいず",
+  "journey": "test",
+  "category": "あそびやすさ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "test:asobiyasusa",
+  "relatedTerms": [
+   "te-jimaku",
+   "te-sosasettei"
+  ],
+  "description": "画面に 出る 文字の 大きさです。小さすぎると 読みにくいので、あそぶ 人が 大きく できる 設定を 用意する ゲームも あります。"
+ },
+ {
+  "id": "te-rifujin",
+  "name": "理不尽",
+  "reading": "りふじん",
+  "journey": "test",
+  "category": "ちょうどよさ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "😣",
+  "mapNode": "test:balance",
+  "relatedTerms": [
+   "te-nanidochosei",
+   "te-stress"
+  ],
+  "description": "よけようの ない こうげきなど、あそぶ 人が 「ずるい」と 感じる むずかしさです。むずかしくても 納得できる ように 調整します。"
+ },
+ {
+  "id": "te-sandyoi",
+  "name": "3D酔い",
+  "reading": "すりーでぃーよい",
+  "journey": "test",
+  "category": "あそびやすさ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "😵",
+  "mapNode": "test:asobiyasusa",
+  "relatedTerms": [
+   "te-sosasettei",
+   "te-frameochi"
+  ],
+  "description": "立体の ゲームで カメラが 大きく 動くと、気分が わるく なる ことです。カメラの 速さを 変えられる 設定などで やわらげます。"
+ },
+ {
+  "id": "te-debug",
+  "name": "デバッグ",
+  "reading": "でばっぐ",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-fuguai",
+   "te-saigentejun",
+   "te-shusei"
+  ],
+  "description": "ゲームの まちがいを 見つけて、原因を 調べて 直す ことです。作る 人なら だれでも する、とても 大事な 仕事です。"
+ },
+ {
+  "id": "te-bughokoku",
+  "name": "バグ報告",
+  "reading": "ばぐほうこく",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "test:hokoku",
+  "relatedTerms": [
+   "te-saigentejun",
+   "te-yusendo"
+  ],
+  "description": "見つけた まちがいを、直す 人に つたえる ことです。どこで なにを したら どう なったかを わかりやすく 書きます。"
+ },
+ {
+  "id": "te-saigentejun",
+  "name": "再現手順",
+  "reading": "さいげんてじゅん",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "👣",
+  "mapNode": "test:hokoku",
+  "relatedTerms": [
+   "te-bughokoku",
+   "te-saigensei"
+  ],
+  "description": "同じ まちがいを もう一度 起こす ための やりかたの 順番です。これが あると、直す 人が すぐに 原因を さがせます。"
+ },
+ {
+  "id": "te-crash",
+  "name": "クラッシュ",
+  "reading": "くらっしゅ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-kyoseishuryo",
+   "te-crashreport"
+  ],
+  "description": "ゲームが とつぜん こわれた ように 止まって、終わって しまう ことです。作る 人の あいだでは 強制終了と ほぼ 同じ 意味で 使われます。"
+ },
+ {
+  "id": "te-frameochi",
+  "name": "フレーム落ち",
+  "reading": "ふれーむおち",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🎞️",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-shoriochi",
+   "te-saitekika"
+  ],
+  "description": "1秒間に かく 絵の 数が へって、動きが かくかくに なる ことです。なめらかさが 大事な アクションでは とくに 気を つけます。"
+ },
+ {
+  "id": "te-hamari",
+  "name": "ハマり",
+  "reading": "はまり",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🕳️",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-shinkofuno",
+   "te-surinuke"
+  ],
+  "description": "キャラが すきまに 入りこんで、ぬけ出せなく なる ことです。見つけたら、どこで ハマったかを くわしく つたえます。"
+ },
+ {
+  "id": "te-shinkofuno",
+  "name": "進行不能",
+  "reading": "しんこうふのう",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-hamari",
+   "te-blocker"
+  ],
+  "description": "さきに 進む 方法が なくなり、ゲームを つづけられなく なる まちがいです。さいごまで あそべない ので、急いで 直します。"
+ },
+ {
+  "id": "te-balancechosei",
+  "name": "バランス調整",
+  "reading": "ばらんすちょうせい",
+  "journey": "test",
+  "category": "ちょうどよさ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "test:balance",
+  "relatedTerms": [
+   "te-nanidochosei",
+   "te-tuning"
+  ],
+  "description": "強さや 数字を 少しずつ 変えて、ちょうど よい 遊びごたえに する ことです。何度も あそんで 確かめながら 決めます。"
+ },
+ {
+  "id": "te-nanidochosei",
+  "name": "難易度調整",
+  "reading": "なんいどちょうせい",
+  "journey": "test",
+  "category": "ちょうどよさ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "test:balance",
+  "relatedTerms": [
+   "te-balancechosei",
+   "te-rifujin"
+  ],
+  "description": "ゲームの むずかしさを、あそぶ 人に 合わせて ちょうど よく する ことです。やさしすぎても むずかしすぎても 楽しく なりません。"
+ },
+ {
+  "id": "te-feedback",
+  "name": "フィードバック",
+  "reading": "ふぃーどばっく",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "test:hanno",
+  "relatedTerms": [
+   "te-kanso",
+   "te-anketo"
+  ],
+  "description": "あそんだ 人から もらう 意見や 気づきです。作った 人が 気づかない ことを 教えて くれる、大切な 手がかりです。"
+ },
+ {
+  "id": "te-patch",
+  "name": "パッチ",
+  "reading": "ぱっち",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 2,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-hotfix",
+   "te-shuseiban"
+  ],
+  "description": "とどけた あとの ゲームに 足す、直しの データです。まちがいを 直したり、むずかしさを 変えたり する ときに 使います。"
+ },
+ {
+  "id": "te-alphaban",
+  "name": "α版",
+  "reading": "あるふぁばん",
+  "journey": "test",
+  "category": "仕上げ",
+  "difficulty": 2,
+  "role": "ディレクター",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "test:han",
+  "relatedTerms": [
+   "te-taikenban",
+   "te-closedtest"
+  ],
+  "description": "主な あそびの しくみが ひととおり 入った、まだ 作りかけの 版です。ここで 楽しさを 確かめて から、中身を ふやして 仕上げへ 進みます。"
+ },
+ {
+  "id": "te-dosakakunin",
+  "name": "動作確認",
+  "reading": "どうさかくにん",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-kakuninlist",
+   "te-testplay"
+  ],
+  "description": "ボタンや 画面が 考えた とおりに 動くかを 確かめる ことです。直した あとや 新しく 足した あとに かならず 行います。"
+ },
+ {
+  "id": "te-shuseikakunin",
+  "name": "修正確認",
+  "reading": "しゅうせいかくにん",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-shusei",
+   "te-degure"
+  ],
+  "description": "直した まちがいが 本当に 直ったかを 確かめる ことです。再現手順を もう一度 ためして、起きなければ 直った しるしです。"
+ },
+ {
+  "id": "te-kakuninlist",
+  "name": "チェックリスト",
+  "reading": "ちぇっくりすと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-dosakakunin",
+   "te-miotoshi"
+  ],
+  "description": "確かめる ことを ならべた 一覧です。1つずつ しるしを つけて いくと、確かめ わすれを へらせます。"
+ },
+ {
+  "id": "te-yusendo",
+  "name": "優先度",
+  "reading": "ゆうせんど",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-triage",
+   "te-blocker"
+  ],
+  "description": "どの まちがいから 先に 直すかの 順番です。ゲームが 止まる ものは 高く、見た目の 小さな ずれは 低く する ことが 多いです。"
+ },
+ {
+  "id": "te-miotoshi",
+  "name": "見落とし",
+  "reading": "みおとし",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-kakuninlist",
+   "te-kichinofuguai"
+  ],
+  "description": "確かめた つもりで、気づかずに のこって しまった まちがいです。ちがう 人が あそぶと、見落としに 気づける ことが あります。"
+ },
+ {
+  "id": "te-hanteizure",
+  "name": "判定ずれ",
+  "reading": "はんていずれ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-surinuke",
+   "te-nyuryokuchien"
+  ],
+  "description": "見た目と、ぶつかったと 決める 場所が ずれて いる ことです。当たって いないのに やられる と、あそぶ 人は 不満に 思います。"
+ },
+ {
+  "id": "te-asobiyasusa",
+  "name": "遊びやすさ",
+  "reading": "あそびやすさ",
+  "journey": "test",
+  "category": "あそびやすさ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "😊",
+  "mapNode": "test:asobiyasusa",
+  "relatedTerms": [
+   "te-sosasei",
+   "te-shikikaku"
+  ],
+  "description": "だれでも まよわず 気持ちよく あそべるかと いう ことです。説明の わかりやすさや 操作の しやすさで 変わります。"
+ },
+ {
+  "id": "te-sosasei",
+  "name": "操作性",
+  "reading": "そうさせい",
+  "journey": "test",
+  "category": "あそびやすさ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "test:asobiyasusa",
+  "relatedTerms": [
+   "te-sosasettei",
+   "te-nyuryokuchien"
+  ],
+  "description": "思った とおりに キャラを 動かせるかと いう、動かしやすさです。操作性が よいと、むずかしい 場面も 楽しく 感じられます。"
+ },
+ {
+  "id": "te-stress",
+  "name": "ストレス",
+  "reading": "すとれす",
+  "journey": "test",
+  "category": "ちょうどよさ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "😤",
+  "mapNode": "test:balance",
+  "relatedTerms": [
+   "te-rifujin",
+   "te-balancechosei"
+  ],
+  "description": "あそぶ 人が 感じる いらいらや 疲れです。むずかしさや 待ち時間が 原因の ことが 多く、へらす ように 調整します。"
+ },
+ {
+  "id": "te-matchijikan",
+  "name": "待ち時間",
+  "reading": "まちじかん",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "test:matsu",
+  "relatedTerms": [
+   "te-loadjikan",
+   "te-loadgamen"
+  ],
+  "description": "あそぶ 人が 何も できずに 待つ 時間です。読みこみや 演出が 長すぎないかを 確かめて、へらす くふうを します。"
+ },
+ {
+  "id": "te-loadgamen",
+  "name": "ロード画面",
+  "reading": "ろーどがめん",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "test:matsu",
+  "relatedTerms": [
+   "te-loadjikan",
+   "te-matchijikan"
+  ],
+  "description": "読みこみの あいだに 出る 画面です。ヒントや 絵を 出して、待つ 時間を たいくつに させない くふうが されます。"
+ },
+ {
+  "id": "te-shikikaku",
+  "name": "色覚サポート",
+  "reading": "しきかくさぽーと",
+  "journey": "test",
+  "category": "あそびやすさ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "🌈",
+  "mapNode": "test:asobiyasusa",
+  "relatedTerms": [
+   "te-asobiyasusa",
+   "te-jimaku"
+  ],
+  "description": "色の 見えかたが ちがう 人でも 区別できる ように する 設定です。色だけで なく 形や 模様でも 見分けられる ように します。"
+ },
+ {
+  "id": "te-playrokuga",
+  "name": "プレイ録画",
+  "reading": "ぷれいろくが",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "📹",
+  "mapNode": "test:play",
+  "relatedTerms": [
+   "te-saigentejun",
+   "te-heatmap"
+  ],
+  "description": "あそんで いる ようすを 動画に 記録する ことです。まちがいが 起きた 場面や、あそぶ 人が まよった 場所を あとで 見返せます。"
+ },
+ {
+  "id": "te-nanidosentaku",
+  "name": "難易度選択",
+  "reading": "なんいどせんたく",
+  "journey": "test",
+  "category": "あそびやすさ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "test:asobiyasusa",
+  "relatedTerms": [
+   "te-nanidochosei",
+   "te-hint"
+  ],
+  "description": "あそぶ 人が 「やさしい」「ふつう」などの むずかしさを えらべる しくみです。はじめての 人も なれた 人も 楽しめます。"
+ },
+ {
+  "id": "te-hint",
+  "name": "ヒント表示",
+  "reading": "ひんとひょうじ",
+  "journey": "test",
+  "category": "あそびやすさ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "test:asobiyasusa",
+  "relatedTerms": [
+   "te-tsumazuki",
+   "te-nanidosentaku"
+  ],
+  "description": "まよって いる 人に、進みかたの 手がかりを 見せる しくみです。出す タイミングが 早すぎると、考える 楽しさが へります。"
+ },
+ {
+  "id": "te-tsumazuki",
+  "name": "つまずき",
+  "reading": "つまずき",
+  "journey": "test",
+  "category": "ちょうどよさ",
+  "difficulty": 2,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "test:hanno",
+  "relatedTerms": [
+   "te-hint",
+   "te-ridatsu"
+  ],
+  "description": "あそぶ 人が まよったり、何度も やられたり して 先へ 進めない ところです。テストプレイで 見つけて、直し方を 考えます。"
+ },
+ {
+  "id": "te-hyojikuzure",
+  "name": "表示崩れ",
+  "reading": "ひょうじくずれ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-mojibake",
+   "te-goji"
+  ],
+  "description": "文字が わくから はみ出したり、絵が ずれて 重なったり する まちがいです。画面の 大きさが ちがう 機械で 起きやすいです。"
+ },
+ {
+  "id": "te-otozure",
+  "name": "音ずれ",
+  "reading": "おとずれ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 2,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔈",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-nyuryokuchien",
+   "te-hanteizure"
+  ],
+  "description": "画面の 動きと、音の 鳴る タイミングが ずれる ことです。リズムに 合わせる ゲームでは とくに 気を つけます。"
+ },
+ {
+  "id": "te-saitekika",
+  "name": "最適化",
+  "reading": "さいてきか",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-shorifuka",
+   "te-profiling",
+   "te-frameochi"
+  ],
+  "description": "同じ 動きの まま、計算を へらして ゲームを 軽く する ことです。いろいろな 機械で なめらかに 動く ように します。"
+ },
+ {
+  "id": "te-tuning",
+  "name": "チューニング",
+  "reading": "ちゅーにんぐ",
+  "journey": "test",
+  "category": "ちょうどよさ",
+  "difficulty": 3,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "test:balance",
+  "relatedTerms": [
+   "te-balancechosei",
+   "te-polish"
+  ],
+  "description": "動きの 速さや 強さなどの 数字を こまかく 合わせる ことです。少しの ちがいで、さわり心地が 大きく 変わります。"
+ },
+ {
+  "id": "te-masterup",
+  "name": "マスターアップ",
+  "reading": "ますたーあっぷ",
+  "journey": "test",
+  "category": "仕上げ",
+  "difficulty": 3,
+  "role": "ディレクター",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "test:shiage",
+  "relatedTerms": [
+   "te-kanseiban",
+   "te-polish"
+  ],
+  "description": "とどける ための できあがりの データが 完成する ことです。チーム みんなで 目指す、大きな 区切りです。"
+ },
+ {
+  "id": "te-polish",
+  "name": "ポリッシュ",
+  "reading": "ぽりっしゅ",
+  "journey": "test",
+  "category": "仕上げ",
+  "difficulty": 3,
+  "role": "ディレクター",
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "test:shiage",
+  "relatedTerms": [
+   "te-tuning",
+   "te-masterup"
+  ],
+  "description": "できあがった ゲームを みがいて、手ざわりや 見た目を よく する 仕上げの 作業です。小さな くふうの つみかさねで 印象が 変わります。"
+ },
+ {
+  "id": "te-degure",
+  "name": "デグレ",
+  "reading": "でぐれ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-shuseikakunin",
+   "te-kakuninlist"
+  ],
+  "description": "どこかを 直した せいで、前は 動いて いた ところが こわれる ことです。直した あとは まわりも 確かめる 必要が あります。"
+ },
+ {
+  "id": "te-saigensei",
+  "name": "再現性",
+  "reading": "さいげんせい",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔂",
+  "mapNode": "test:hokoku",
+  "relatedTerms": [
+   "te-saigentejun",
+   "te-bughokoku"
+  ],
+  "description": "同じ まちがいが どれくらい くりかえし 起きるかです。毎回 起きる ものは 直しやすく、たまに しか 起きない ものは 原因さがしが むずかしく なります。"
+ },
+ {
+  "id": "te-memoryleak",
+  "name": "メモリリーク",
+  "reading": "めもりりーく",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🚰",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-crash",
+   "te-shorifuka"
+  ],
+  "description": "使いおわった 記憶の 場所が 返されず、少しずつ たまって いく まちがいです。長く あそぶと 重く なったり 止まったり します。"
+ },
+ {
+  "id": "te-nyuryokuchien",
+  "name": "入力遅延",
+  "reading": "にゅうりょくちえん",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🐾",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-sosasei",
+   "te-hanteizure"
+  ],
+  "description": "ボタンを 押してから、画面の キャラが 動く までの おくれです。タイミングが 大事な ゲームでは、少しの おくれでも 気に なります。"
+ },
+ {
+  "id": "te-shorifuka",
+  "name": "処理負荷",
+  "reading": "しょりふか",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🏋️",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-saitekika",
+   "te-profiling"
+  ],
+  "description": "機械が どれくらい 計算を がんばって いるかと いう 重さです。負荷が 高すぎる 場面を 見つけて、軽く する くふうを します。"
+ },
+ {
+  "id": "te-testcase",
+  "name": "テストケース",
+  "reading": "てすとけーす",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🗃️",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-testkeikaku",
+   "te-kakuninlist"
+  ],
+  "description": "「この 場面で こう したら こう なるはず」と いう 確かめる 1つ分の 決まりです。たくさん 用意して、1つずつ ためします。"
+ },
+ {
+  "id": "te-debugmode",
+  "name": "デバッグモード",
+  "reading": "でばっぐもーど",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🛠️",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-debug",
+   "te-komaokuri"
+  ],
+  "description": "作る 人だけが 使える、確かめる ための 特別な 設定です。すきな ステージに とんだり、むてきに したり して 早く 調べられます。"
+ },
+ {
+  "id": "te-komaokuri",
+  "name": "コマ送り",
+  "reading": "こまおくり",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "⏯️",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-debugmode",
+   "te-hanteizure"
+  ],
+  "description": "ゲームを 止めて、1コマずつ すすめて 見る ことです。一しゅんで 起きる まちがいも、じっくり 見て 原因を さがせます。"
+ },
+ {
+  "id": "te-bugkanri",
+  "name": "バグ管理",
+  "reading": "ばぐかんり",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "test:hokoku",
+  "relatedTerms": [
+   "te-bughokoku",
+   "te-triage"
+  ],
+  "description": "見つかった まちがいを 一覧に して、だれが いつ 直すかを まとめる ことです。直し わすれや 二重の 作業を ふせぎます。"
+ },
+ {
+  "id": "te-triage",
+  "name": "トリアージ",
+  "reading": "とりあーじ",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-yusendo",
+   "te-bugkanri"
+  ],
+  "description": "集まった まちがいを 見て、どれから 直すかを 仕分ける ことです。大事な ものから 手を つける ための 話しあいです。"
+ },
+ {
+  "id": "te-kichinofuguai",
+  "name": "既知の不具合",
+  "reading": "きちのふぐあい",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "test:hokoku",
+  "relatedTerms": [
+   "te-fuguai",
+   "te-hotfix"
+  ],
+  "description": "もう 見つかって いて、まだ 直して いない まちがいです。あそぶ 人に 先に 知らせて おく ことも あります。"
+ },
+ {
+  "id": "te-hotfix",
+  "name": "ホットフィックス",
+  "reading": "ほっとふぃっくす",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-patch",
+   "te-shuseiban"
+  ],
+  "description": "大きな まちがいを 急いで 直す ための、小さな 直しです。ゲームが 止まる など、待てない ときに すばやく とどけます。"
+ },
+ {
+  "id": "te-shuseiban",
+  "name": "修正版",
+  "reading": "しゅうせいばん",
+  "journey": "test",
+  "category": "仕上げ",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🆕",
+  "mapNode": "test:han",
+  "relatedTerms": [
+   "te-patch",
+   "te-hotfix"
+  ],
+  "description": "まちがいを 直した あとの 新しい 版です。どの 版で 直ったかを 記録して おくと、確かめる ときに まよいません。"
+ },
+ {
+  "id": "te-closedtest",
+  "name": "クローズドテスト",
+  "reading": "くろーずどてすと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "test:play",
+  "relatedTerms": [
+   "te-playtest",
+   "te-alphaban"
+  ],
+  "description": "えらばれた 人だけに 作りかけの ゲームを あそんで もらう ことです。広く とどける 前に、まちがいや 感想を 集めます。"
+ },
+ {
+  "id": "te-playtest",
+  "name": "プレイテスト",
+  "reading": "ぷれいてすと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🧑‍🤝‍🧑",
+  "mapNode": "test:play",
+  "relatedTerms": [
+   "te-testplay",
+   "te-heatmap"
+  ],
+  "description": "作った 人とは ちがう 人に あそんで もらい、ようすを 見る ことです。まよう 場所や つまる 場所が はっきり わかります。"
+ },
+ {
+  "id": "te-crashreport",
+  "name": "クラッシュレポート",
+  "reading": "くらっしゅれぽーと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "test:hokoku",
+  "relatedTerms": [
+   "te-crash",
+   "te-saigensei"
+  ],
+  "description": "ゲームが 止まった ときに、その ときの ようすを 自動で まとめた 記録です。原因を さがす 大きな 手がかりに なります。"
+ },
+ {
+  "id": "te-heatmap",
+  "name": "ヒートマップ",
+  "reading": "ひーとまっぷ",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 3,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "test:hanno",
+  "relatedTerms": [
+   "te-ridatsu",
+   "te-playrokuga"
+  ],
+  "description": "あそぶ 人が よく 通った 場所や、よく やられた 場所を 色で しめした 地図です。むずかしすぎる 場所を 見つける のに 役立ちます。"
+ },
+ {
+  "id": "te-ridatsu",
+  "name": "離脱ポイント",
+  "reading": "りだつぽいんと",
+  "journey": "test",
+  "category": "ちょうどよさ",
+  "difficulty": 3,
+  "role": "ディレクター",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "test:hanno",
+  "relatedTerms": [
+   "te-heatmap",
+   "te-nanidochosei"
+  ],
+  "description": "あそぶ 人が ゲームを やめて しまう ことが 多い 場面です。そこを 直すと、さいごまで あそんで もらいやすく なります。"
+ },
+ {
+  "id": "te-yoryo",
+  "name": "容量",
+  "reading": "ようりょう",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-saitekika",
+   "te-loadjikan"
+  ],
+  "description": "ゲームの データが どれだけ 場所を 使うかと いう 大きさです。大きすぎると 読みこみが 長く なるので、むだを へらします。"
+ },
+ {
+  "id": "te-shiyomore",
+  "name": "仕様漏れ",
+  "reading": "しようもれ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 3,
+  "role": "プランナー",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-miotoshi",
+   "te-goji"
+  ],
+  "description": "決まりを 書いた 紙に、書かれて いない 場面が ある ことです。作る 人が まよって、ちがう 動きに なる 原因に なります。"
+ },
+ {
+  "id": "te-blocker",
+  "name": "ブロッカー",
+  "reading": "ぶろっかー",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-shinkofuno",
+   "te-yusendo"
+  ],
+  "description": "それが ある かぎり、先の 作業や 確かめが できない 大きな まちがいです。見つけたら いちばん 先に 直します。"
+ },
+ {
+  "id": "te-merikomi",
+  "name": "めりこみ",
+  "reading": "めりこみ",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🫥",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-surinuke",
+   "te-hanteizure"
+  ],
+  "description": "キャラや カメラが かべや 地面の 中に 入りこんで 見える まちがいです。見た目が こわれるので、細かく 確かめます。"
+ },
+ {
+  "id": "te-tester",
+  "name": "テスター",
+  "reading": "てすたー",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🧑‍🔬",
+  "mapNode": "test:play",
+  "relatedTerms": [
+   "te-playtest",
+   "te-bughokoku"
+  ],
+  "description": "ゲームを あそんで、まちがいや 気づいた ことを 見つける 役わりの 人です。作った 人とは ちがう 目で 見るのが 大事です。"
+ },
+ {
+  "id": "te-testkeikaku",
+  "name": "テスト計画",
+  "reading": "てすとけいかく",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-testcase",
+   "te-kakuninlist"
+  ],
+  "description": "なにを、いつ、だれが、どう 確かめるかを 前もって 決めた ものです。広い ゲームでも 確かめ わすれを へらせます。"
+ },
+ {
+  "id": "te-shiyokakunin",
+  "name": "仕様確認",
+  "reading": "しようかくにん",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-shiyomore",
+   "te-testcase"
+  ],
+  "description": "その 動きが 決まりの とおりかを、決まりを 書いた 紙と 見くらべて 確かめる ことです。まちがいか わざとかを 見分けます。"
+ },
+ {
+  "id": "te-shuseimore",
+  "name": "修正漏れ",
+  "reading": "しゅうせいもれ",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 3,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🪣",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-shuseikakunin",
+   "te-degure"
+  ],
+  "description": "直した つもりで、直って いない ところが のこる ことです。同じ まちがいが 別の 場所にも ないか 確かめます。"
+ },
+ {
+  "id": "te-kaikitest",
+  "name": "回帰テスト",
+  "reading": "かいきてすと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-degure",
+   "te-edgecase"
+  ],
+  "description": "何かを 直したり 足したり した あとで、前から ある ところが こわれて いないかを もう一度 確かめる ことです。"
+ },
+ {
+  "id": "te-smoketest",
+  "name": "スモークテスト",
+  "reading": "すもーくてすと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-kaikitest",
+   "te-codefreeze"
+  ],
+  "description": "新しい データが できたら まず 起動して、大きな 動きだけ ざっと 確かめる ことです。こわれて いれば くわしい 確かめを 始めません。"
+ },
+ {
+  "id": "te-fukatest",
+  "name": "負荷テスト",
+  "reading": "ふかてすと",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🏋️",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-shorifuka",
+   "te-soaktest"
+  ],
+  "description": "てきや エフェクトを わざと たくさん 出すなど、重い ようすを 作って ゲームが たえられるかを 確かめる ことです。"
+ },
+ {
+  "id": "te-gokansei",
+  "name": "互換性テスト",
+  "reading": "ごかんせいてすと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-hyojikuzure",
+   "te-shinsa"
+  ],
+  "description": "いろいろな 機械や 画面の 大きさで、同じように 動くかを 確かめる ことです。機械ごとの ちがいで 起きる まちがいを 見つけます。"
+ },
+ {
+  "id": "te-soaktest",
+  "name": "ソークテスト",
+  "reading": "そーくてすと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🛁",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-memoryleak",
+   "te-fukatest"
+  ],
+  "description": "ゲームを 何時間も 動かし つづけて、だんだん 重く ならないか、止まらないかを 確かめる ことです。"
+ },
+ {
+  "id": "te-judaido",
+  "name": "重大度",
+  "reading": "じゅうだいど",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🚨",
+  "mapNode": "test:hokoku",
+  "relatedTerms": [
+   "te-yusendo",
+   "te-triage"
+  ],
+  "description": "まちがいが どれくらい 大きな 困りごとかの 度合いです。ゲームが 止まる ものは 高く、見た目の 小さな ずれは 低く つけます。"
+ },
+ {
+  "id": "te-saigenritsu",
+  "name": "再現率",
+  "reading": "さいげんりつ",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "test:hokoku",
+  "relatedTerms": [
+   "te-saigensei",
+   "te-saigentejun"
+  ],
+  "description": "同じ ことを 何回 ためすと、何回 まちがいが 起きるかの 割合です。「10回中 3回」の ように 書いて つたえます。"
+ },
+ {
+  "id": "te-frametime",
+  "name": "フレームタイム",
+  "reading": "ふれーむたいむ",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-frameochi",
+   "te-bottleneck"
+  ],
+  "description": "1枚の 画面を かくのに かかった 時間です。1秒に 60回 かくなら、1枚 およそ 16ミリ秒が めやすと よく 言われます。"
+ },
+ {
+  "id": "te-bottleneck",
+  "name": "ボトルネック",
+  "reading": "ぼとるねっく",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🍾",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-profiling",
+   "te-saitekika"
+  ],
+  "description": "ゲーム ぜんたいを おそく して いる、いちばん 時間の かかる ところです。ここを 見つけて 直すと 大きく 軽く なります。"
+ },
+ {
+  "id": "te-profiling",
+  "name": "プロファイリング",
+  "reading": "ぷろふぁいりんぐ",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-bottleneck",
+   "te-frametime"
+  ],
+  "description": "どの 計算に どれだけ 時間が かかって いるかを 調べる ことです。思いこみで 直さず、数字を 見て 重い ところを 見つけます。"
+ },
+ {
+  "id": "te-drawcall",
+  "name": "ドローコール",
+  "reading": "どろーこーる",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🖌️",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-byogafuka",
+   "te-saitekika"
+  ],
+  "description": "画面に 絵を かく ように 命令する 1回分の 呼び出しです。回数が 多すぎると 重く なるので、まとめて へらす くふうを します。"
+ },
+ {
+  "id": "te-byogafuka",
+  "name": "描画負荷",
+  "reading": "びょうがふか",
+  "journey": "test",
+  "category": "速さ・軽さ",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "test:hayasa",
+  "relatedTerms": [
+   "te-drawcall",
+   "te-shorifuka"
+  ],
+  "description": "画面に 絵を かく ために かかる 重さです。光や かげ、エフェクトが 多いと 上がりやすく、処理落ちの 原因に なります。"
+ },
+ {
+  "id": "te-shinsa",
+  "name": "プラットフォーム審査",
+  "reading": "ぷらっとふぉーむしんさ",
+  "journey": "test",
+  "category": "仕上げ",
+  "difficulty": 4,
+  "role": "ディレクター",
+  "type": "concept",
+  "emoji": "🛂",
+  "mapNode": "test:shiage",
+  "relatedTerms": [
+   "te-masterup",
+   "te-gokansei"
+  ],
+  "description": "ゲーム機などで とどける 前に、決められた 決まりを 守れて いるかを 調べて もらう ことです。通らないと 直して 出しなおします。"
+ },
+ {
+  "id": "te-launch",
+  "name": "ローンチ",
+  "reading": "ろーんち",
+  "journey": "test",
+  "category": "仕上げ",
+  "difficulty": 4,
+  "role": "ディレクター",
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "test:han",
+  "relatedTerms": [
+   "te-dayonepatch",
+   "te-masterup"
+  ],
+  "description": "ゲームを はじめて みんなに とどけて、あそべる ように する ことです。その 前後は まちがいの 知らせに すぐ こたえられる ように します。"
+ },
+ {
+  "id": "te-dayonepatch",
+  "name": "デイワンパッチ",
+  "reading": "でいわんぱっち",
+  "journey": "test",
+  "category": "直す",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "test:naosu",
+  "relatedTerms": [
+   "te-launch",
+   "te-patch"
+  ],
+  "description": "ゲームを とどけた その 日に 出す 直しです。できあがりの データを 作った あとに 見つかった まちがいを 直します。"
+ },
+ {
+  "id": "te-softlock",
+  "name": "ソフトロック",
+  "reading": "そふとろっく",
+  "journey": "test",
+  "category": "まちがい",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "test:bug",
+  "relatedTerms": [
+   "te-shinkofuno",
+   "te-hamari"
+  ],
+  "description": "画面は 動いて いるのに、先へ 進む 方法が なくなって しまう 状態です。止まって いないので 気づきにくい まちがいです。"
+ },
+ {
+  "id": "te-kyokaichi",
+  "name": "境界値テスト",
+  "reading": "きょうかいちてすと",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-testcase",
+   "te-kaikitest"
+  ],
+  "description": "数字が 決まりの 上限や 下限 ぎりぎりの ときに、正しく 動くかを 確かめる ことです。まちがいは さかいめで 起きやすいです。"
+ },
+ {
+  "id": "te-edgecase",
+  "name": "エッジケース",
+  "reading": "えっじけーす",
+  "journey": "test",
+  "category": "あそんでためす",
+  "difficulty": 4,
+  "role": "デバッガー",
+  "type": "concept",
+  "emoji": "🧗",
+  "mapNode": "test:kakunin",
+  "relatedTerms": [
+   "te-kyokaichi",
+   "te-testcase"
+  ],
+  "description": "ふつうは あまり 起きない、めずらしい あそびかたや 場面の ことです。まちがいは こうした はしっこの 場面に かくれて いる ことが 多いです。"
+ },
+ {
+  "id": "te-codefreeze",
+  "name": "コードフリーズ",
+  "reading": "こーどふりーず",
+  "journey": "test",
+  "category": "仕上げ",
+  "difficulty": 4,
+  "role": "ディレクター",
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "test:shiage",
+  "relatedTerms": [
+   "te-masterup",
+   "te-smoketest"
+  ],
+  "description": "できあがりが 近づいたら、新しい 機能を 足すのを 止めて、直す ことだけに しぼる 決まりです。ゲームを 安定させる ために 行います。"
+ },
+ {
+  "id": "te-telemetry",
+  "name": "テレメトリ",
+  "reading": "てれめとり",
+  "journey": "test",
+  "category": "ちょうどよさ",
+  "difficulty": 4,
+  "role": "ディレクター",
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "test:hanno",
+  "relatedTerms": [
+   "te-heatmap",
+   "te-ridatsu"
+  ],
+  "description": "あそんで いる ようすを 数字で 集める しくみです。どこで やめたか、何回 やられたかを 見て、調整に 役立てます。",
+  "acceptedReadings": [
+   "てれめとり",
+   "てれめとりー"
+  ]
+ }
+]

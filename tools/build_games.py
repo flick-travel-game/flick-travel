@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -106,11 +106,20 @@ GAMES = {
                   lead="見て 気づく ことば・看護の わざ・感染を ふせぐ・看護の 考えかた・からだと 病気の ことば・一生の 看護・病院と しくみの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どの 科目か・しくみ図の どこに あるのかが 出るよ。病院で 見かける ことばから はじめて、看護師国家試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。薬の 量や 手当ての やりかたは のせていないよ。本当に 具合が わるい ときは、大人に 言って お医者さんへ。説明は 本物の 試験問題では ないので、試験の 勉強には 学校の 教科書や 問題集も 使ってね。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、看護の ことばと しくみが つながって 見えてくるよ。厚生労働省とは 関係ありません。"),
+    # フリックゲームクリエイター(けいくん 2026-09-29「ゲームクリエイターになるために必要な 知識をフリック形式の問題にしてください」→ 課金・ガチャは「A」= 入れない)。
+    #   ことばは tools/gamedev/terms-<旅>.json → gamedev/terms.js(tools/gamedev/terms_js.py)。しくみは gamedev/gamedev.js(GAMEDEV。kango.js を 写した)。
+    #   旅は 7つ + マスター。むずかしさは 入門(あそぶ 人でも 知っている)→ 中級(作りはじめる)→ 上級(専門学校・大学で 学ぶ めやす)→ プロ(ゲーム会社の 現場の めやす)。けいくん「本当にゲームクリエイターになれるレベルに」。
+    #   ⚠️⚠️ AI旅行と 同じ ことばは 入れない・本当の ゲームの 題名や 会社の 名前・お金の ことばは 出さない(決まりは tools/gamedev/PROMPT.md)。
+    #   名前は 仮。けいくんの 絵が 届いたら 絵の 題名に そろえる(フォルダ名 gamedev は 変えない)。絵が まだ 無いので 題名は 文字
+    "gamedev": dict(name="フリックゲームクリエイター", modes="GAMEDEV", kinds=set(), color="#7048e8", hero=False, logo=False,
+                    lead="ゲームの きほん・考えて 決める・うごかす しくみ・絵と 音・作る 道具・直して 仕上げる・みんなに とどける ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 仕事の 人の ことばか・しくみ図の どこに あるのかが 出るよ。あそぶ 人でも 知っている ことばから、ゲーム会社の 現場で 使う プロの ことばまで 4段。4択クイズも できるよ。",
+                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。コードの 書きかたは のせていないよ。ゲームは 紙と えんぴつでも 作れるよ。まずは 小さく 作って ためしてみよう。",
+                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、ゲームを 作る ことばと しくみが つながって 見えてくるよ。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -175,6 +184,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/hoiku/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "hoiku" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="hoiku.js?v=%s"></script>' % (ver("terms.js"), ver("hoiku.js")))
+    if g["modes"] == "GAMEDEV":  # ゲーム作りの コース: 看護と 同じ 形。ことばは terms.js(tools/gamedev/terms-*.json から)、しくみは gamedev.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/gamedev/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "gamedev" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="gamedev.js?v=%s"></script>' % (ver("terms.js"), ver("gamedev.js")))
     if g["modes"] == "KANGO":  # 看護の コース: 保育と 同じ 形。ことばは terms.js(tools/kango/terms-*.json から)、しくみは kango.js
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kango/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "kango" / f).read_bytes()).hexdigest()[:8]

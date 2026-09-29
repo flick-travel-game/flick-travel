@@ -48,7 +48,7 @@
   いま: フリック世界旅行・フリック歴史旅行・フリック宇宙旅行・フリックからだ旅行・フリック株式旅行・フリックAI旅行・フリック理科旅行・フリック英会話・フリック整備士(2026-09-27 に 9つ ぜんぶ 届いた)は **絵が 届いたら その 題名に**。それまでは 2026-09-26 の 名前のまま。
   絵が 届いたら 題名を 切り出して 読み、`build_games.py` の `GAMES`・`index.html` の `SERIES`・speed-king の `src/lib/games.ts` と `flick-url.ts` の `FLICK_SERIES_GAMES` を そろえる。**住所(フォルダ名)は 変えない**
 - 名前は `tools/build_games.py` の `GAMES` と `index.html`(世界)の `<title>`・`GAME`・`SERIES`。ホーム画面の 名前(manifest)は 名前 そのまま(「ゲーム」を 付けない)
-- 料金・申し込みの 案内は **https://kazutomo.app/games に 1つだけ**(`.about-link`)。`about.html` は そこへ 移すだけの ページ(けいくん決定「1」)。ここに 案内を 書きもどさない
+- 料金・申し込みの 案内は **https://kazutomo.app/ に 1つだけ**(2026-09-29 に `/games` から トップへ。`/games` は 転送される)(`.about-link`)。`about.html` は そこへ 移すだけの ページ(けいくん決定「1」)。ここに 案内を 書きもどさない
 - 絵: 世界(2026-09-26)・歴史(2026-09-27。題名は `tools/rekishi/logo_cut.py`)は 入れた。宇宙(2026-09-27。題名は `tools/uchu/logo_cut.py` = GrabCut)・からだ(2026-09-27。`tools/karada/logo_cut.py`。横長は 1774×887 で 届いたので 1536×768 に 縮めた)・株式(2026-09-27。`tools/kabu/logo_cut.py`)・AI(2026-09-27。`tools/ai/logo_cut.py`)・理科(2026-09-27。`tools/rika/logo_cut.py`)・英会話(2026-09-27。`tools/eikaiwa/logo_cut.py`)・整備(2026-09-27。`tools/seibi/logo_cut.py`)も 入れた。
 - 旅の ボタンの 色: 宇宙・歴史・からだ・理科は 世界と 同じ あかるい `TONE` に した(けいくん 2026-09-27「もっと明るい色に」→「1」)。新しい 旅も あかるい 色で
   差しかえたら `art` の `iconv`(アイコン)と `wordv`(題名・トップの 絵)を 上げる(古い 絵を おぼえている 端末のため)
@@ -376,3 +376,18 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - かずとも: `FLICK_MODES` に egfudoshi / egjisei / eguke / egtofutei / egbunshi / egkankei / eghikaku / egkatei / egjukugo / egmas、`FLICK_LINK_TARGETS` に eigo(speed-king PR #232)
 - **のこり**: トップの 絵・四角い アイコン・題名の 絵(ChatGPT)/ かずとも の 販売ページ `HOME_GAMES`(英会話の となり)。規約の 文 `FLICK_SERIES_GAMES` には 2026-09-29 に 足した(けいくん「規約の文にフリック英語を足して」。speed-king PR #235)
 - 確かめかた: `node tools/play-all.mjs eigo/`(全63ステージ)。大文字・空白・' . を そのまま 打っても 進む ことも 確かめた
+
+## 20ゲームの ことばを 校正した(けいくん 2026-09-29「すべてのフリックゲームの誤字、脱字、誤りをすべて調べて修正してください」)
+
+- 助手 14人で ゲームごとに 分けて、ことばの **出どころ**(tools/*.tsv・tools/<game>/terms-*.json・data/*.json)を ぜんぶ 読ませた。直しは 約 330件。
+  ほとんどは 表記の そろえ(ツボの 全角かっこ 142・パティシエの「もの です」の 空白 71・整備の「〜です」の 付けたし 40 など)。
+  事実の まちがいは 8件(静岡の お茶「日本一」→ 鹿児島が 1位に / モハーの 断崖 8km→14km / アレクサンドロス 33歳→32歳 / 隋 30年→40年 /
+  かに星雲と 藤原定家の 年 / ヤマトサウルスの 発見地 南あわじ市→洲本市 / Ooredoo は カタール / pH の「ことと習う」)
+- ⚠️ **校正の やりかた**: 生成された `*/index.html`・`*/terms.js` は 直さない。出どころを 直して `add_spots.py → make_ruby.py → build_games.py`。
+  そのあと `node tools/click-all.mjs` と `node tools/play-all.mjs`(`python3 -m http.server 8765` を 立てて)で 20ゲーム ぜんぶ 通す
+- ⚠️ 助手を 14人 いっぺんに 出すと 回数の 上限に あたって 13人 止まった。**4人ずつ**なら 通る
+- 🐞 ついでに 直した バグ: `index.html` の `LINK_URL`(おうちの方と つなぐ)が 5つの ゲームしか `?to=` を 付けておらず、ほかの 15ゲームから つなぐと 世界旅行に もどっていた。
+  いまは 世界旅行いがい ぜんぶ 付ける
+- 販売ページの 住所が `kazutomo.app/games` → `kazutomo.app/`(トップ)に なった(2026-09-29)。`.about-link`・`about.html` も そちらへ
+- 要確認で 残した もの(けいくんの 判断待ち): ヘプバーンの 名言「不可能なことなんてない…」は 本人の ことばでは ない 説が 強い /
+  佐藤一斎の 生まれた所(江戸 vs 岩村)/ 株式の EQT が 2社 同名 / 第一ライフグループの 社名 / TISI の 社名 / 美容の「特徴・特ちょう・とくちょう」の ばらつき

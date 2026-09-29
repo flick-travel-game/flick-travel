@@ -209,7 +209,9 @@ const KYORYU = (() => {
     const rel = (q.rel || []).map(id => BY.get(id)).filter(Boolean);
     if(rel.length) h += '<p class="ai-small">🔗 つながる ことば</p><div class="ai-chips">' + rel.map(x => d.has(x.art) ? chip(x) : '<button type="button" class="ai-chip lock" data-ai-term="' + esc(x.art) + '">❔ ？？？</button>').join("") + '</div>';
     // しくみ図・地図(📍)は 10問の あとの 説明・図鑑に のせない(けいくん 2026-09-29「地図スクロールが大変になるからいらない / 10問終わったあとの説明にはのせないで」→「すべてのフリックゲームを同じ仕様に」)。ホームの 図は たたんで のこす
-    else if(q.pl) h += '<p class="ai-small">📍 場所: <b>' + esc(q.pl) + '</b></p>';
+    // 地図・年表の 図は 出さないが、場所と 時代の 字は 出す(図の 行を 消した ときに else だけ 残って、つながる ことばの ある 語では 場所が 出なくなっていた)
+    if(q.pl) h += '<p class="ai-small">📍 ' + (hasPlace(q) ? "見つかった 場所" : "場所") + ': <b>' + esc(q.pl) + '</b></p>';
+    if(q.pe) h += '<p class="ai-small">🕰 ' + (q.kd === "word" ? "時代" : "いた 時代") + ': <b>' + esc(q.pe) + '</b></p>';
     return h + '</div>';
   }
 
@@ -511,7 +513,7 @@ body.ai-lock{overflow:hidden}
 .dn-era{cursor:pointer}.ai-mini .dn-era{cursor:default}
 .dn-facts{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}.dn-facts span{font-size:12.5px;font-weight:800;padding:3px 10px;border-radius:99px;background:#fff9db;border:1px solid #ffe066;color:#5c3d00}
 .dn-ph{margin:0 0 8px}.dn-ph img{display:block;width:100%;max-height:260px;object-fit:contain;background:#f1f3f5;border-radius:12px}.dn-ph figcaption{font-size:10px;color:#64748b;margin-top:3px;line-height:1.4}
-.dn-icph{background-size:cover;background-position:center}
+.dn-icph{background:#fff center/contain no-repeat;border:1px solid #e9ecef}
 `;
   const st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
   const hb = document.getElementById("home-btn"); if(hb) hb.textContent = "旅マップに もどる";

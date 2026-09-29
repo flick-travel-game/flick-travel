@@ -1,0 +1,1464 @@
+[
+ {
+  "id": "ka-hensu",
+  "name": "変数",
+  "reading": "へんすう",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-dainyu",
+   "ka-hensumei",
+   "ka-teisu"
+  ],
+  "description": "プログラムの 中で 値を しまっておく、名前つきの 入れもの。書く 人は 何を 入れるかと 名前を 自分で 決めます。まずは 小さな 変数を 1つ 作って ためすのが 第一歩です。",
+  "example": "score = 0"
+ },
+ {
+  "id": "ka-data",
+  "name": "データ",
+  "reading": "でーた",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "💾",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-atai",
+   "ka-datagata"
+  ],
+  "description": "プログラムが 受け取って、しまって、作りかえる 情報の こと。どんな データが 来るかを 考えてから 入れものを 決めるのが、書く 人の 大事な 仕事です。"
+ },
+ {
+  "id": "ka-moji",
+  "name": "文字",
+  "reading": "もじ",
+  "journey": "kata",
+  "category": "文字",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "kata:moji",
+  "relatedTerms": [
+   "ka-mojiretsu",
+   "ka-suji"
+  ],
+  "description": "ひらがなや 英字、記号 など 1つ 1つの 字。プログラムでは 1字だけの 値として あつかう 言語も あれば、1字の 文字列として あつかう 言語も あります。",
+  "example": "c = 'a'"
+ },
+ {
+  "id": "ka-suchi",
+  "name": "数値",
+  "reading": "すうち",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kata:kazu",
+  "relatedTerms": [
+   "ka-seisu",
+   "ka-shosu",
+   "ka-suji"
+  ],
+  "description": "計算に 使える 数の 値。見た目が 数でも、文字として 入っていると 足し算が できないので、書く 人は 数値か どうかを いつも 気に します。",
+  "example": "total = 120"
+ },
+ {
+  "id": "ka-seisu",
+  "name": "整数",
+  "reading": "せいすう",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kata:kazu",
+  "relatedTerms": [
+   "ka-shosu",
+   "ka-seisujozan",
+   "ka-overflow"
+  ],
+  "description": "小数点の ない 数を あつかう 値の 種類。数える 回数や 何番目かの 番号に 使います。計算が 正確で 速いので、はしたが 出ない ものは 整数で 持つのが 基本です。",
+  "example": "count = 3"
+ },
+ {
+  "id": "ka-shosu",
+  "name": "小数",
+  "reading": "しょうすう",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kata:kazu",
+  "relatedTerms": [
+   "ka-fudo",
+   "ka-marume",
+   "ka-seisu"
+  ],
+  "description": "小数点の ある 数の 値。長さや 重さの ように 細かく 分かれる ものに 使います。コンピューターでは ほんの 少し ずれる ことが あるので、使いどころを 考えます。",
+  "example": "rate = 0.5"
+ },
+ {
+  "id": "ka-mojiretsu",
+  "name": "文字列",
+  "reading": "もじれつ",
+  "journey": "kata",
+  "category": "文字",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "kata:moji",
+  "relatedTerms": [
+   "ka-moji",
+   "ka-renketsu",
+   "ka-nagasa"
+  ],
+  "description": "字を 1列に つないだ 値。名前や 文章、画面に 出す ことばを あつかいます。入力された 文字列は 空だったり 長すぎたり するので、書く 人が たしかめてから 使います。",
+  "example": "name = \"Taro\""
+ },
+ {
+  "id": "ka-hairetsu",
+  "name": "配列",
+  "reading": "はいれつ",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🗃",
+  "mapNode": "kata:hairetsu",
+  "relatedTerms": [
+   "ka-yoso",
+   "ka-soeji",
+   "ka-list"
+  ],
+  "description": "同じ 種類の 値を 番号の 順に まとめて しまう 入れもの。何十個の 値も 1つの 名前で あつかえるので、くりかえしと 組み合わせて よく 使います。",
+  "example": "scores = [80, 95, 70]"
+ },
+ {
+  "id": "ka-list",
+  "name": "リスト",
+  "reading": "りすと",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "kata:hairetsu",
+  "relatedTerms": [
+   "ka-hairetsu",
+   "ka-yososu"
+  ],
+  "description": "順番つきで 値を しまい、あとから 足したり 消したり できる 入れもの。言語に よっては 配列と ほぼ 同じ 意味で 使います。いくつ 入るか 前もって わからない データに 向いています。",
+  "example": "items.append(5)"
+ },
+ {
+  "id": "ka-dainyu",
+  "name": "代入",
+  "reading": "だいにゅう",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-hensu",
+   "ka-dainyuenzan"
+  ],
+  "description": "変数に 値を 入れる こと。前の 値は 消えて 新しい 値に 入れかわります。数学の 等しいとは 意味が ちがい、右の 答えを 左へ しまうと 読みます。",
+  "example": "x = x + 1"
+ },
+ {
+  "id": "ka-atai",
+  "name": "値",
+  "reading": "あたい",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-hensu",
+   "ka-literal"
+  ],
+  "description": "変数の 中に 入っている 中身の こと。数・文字列・真偽値 など いろいろな 種類が あります。プログラムは 値を 受け取り、作りかえ、次へ わたして 動きます。",
+  "example": "42"
+ },
+ {
+  "id": "ka-hikaku",
+  "name": "比較",
+  "reading": "ひかく",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kata:kurabe",
+  "relatedTerms": [
+   "ka-hikakuenzan",
+   "ka-hitoshii",
+   "ka-futogo"
+  ],
+  "description": "2つの 値を くらべる こと。くらべた 答えは 正しいか まちがいかの 2つに なり、その 答えで プログラムの 分かれ道が 決まります。",
+  "example": "a > b"
+ },
+ {
+  "id": "ka-shisoku",
+  "name": "四則演算",
+  "reading": "しそくえんざん",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-enzanshi",
+   "ka-yusen",
+   "ka-amari"
+  ],
+  "description": "足し算・引き算・かけ算・わり算の 4つの 計算。プログラムでは かけ算と わり算に 算数とは ちがう 記号を 使う ことが 多いので、はじめに 覚えておきます。",
+  "example": "y = (a + b) * 2 / 4"
+ },
+ {
+  "id": "ka-hitoshii",
+  "name": "等しい",
+  "reading": "ひとしい",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🟰",
+  "mapNode": "kata:kurabe",
+  "relatedTerms": [
+   "ka-hikaku",
+   "ka-dainyu"
+  ],
+  "description": "2つの 値が 同じか どうかを たしかめる こと。多くの 言語では 代入と まちがえない ように、記号を 2つ ならべて 書きます。うっかり まちがえやすい ところです。",
+  "example": "if a == b:\n    print(\"same\")"
+ },
+ {
+  "id": "ka-futogo",
+  "name": "不等号",
+  "reading": "ふとうごう",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kata:kurabe",
+  "relatedTerms": [
+   "ka-hikaku",
+   "ka-hikakuenzan"
+  ],
+  "description": "大きいか 小さいかを くらべる 記号。以上か より大きいかで 答えが 1つ ずれるので、ぴったりの 数の ときに どうなるかを 書く 人が よく 考えます。",
+  "example": "if age >= 12:\n    print(\"ok\")"
+ },
+ {
+  "id": "ka-amari",
+  "name": "あまり",
+  "reading": "あまり",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🍰",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-seisujozan",
+   "ka-shisoku"
+  ],
+  "description": "わり算で わりきれずに のこった 数。2で わった あまりで 偶数か 奇数かを 見分けたり、ぐるっと 一周して もどる 番号を 作ったり するのに 使います。",
+  "example": "r = 10 % 3"
+ },
+ {
+  "id": "ka-teisu",
+  "name": "定数",
+  "reading": "ていすう",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-hensu",
+   "ka-magic"
+  ],
+  "description": "一度 決めたら 変えない 値に 名前を つけた もの。あとから うっかり 書きかえる まちがいを ふせげます。大文字で 名前を 書いて 目じるしに する ことが 多いです。",
+  "example": "MAX_SIZE = 100"
+ },
+ {
+  "id": "ka-yoso",
+  "name": "要素",
+  "reading": "ようそ",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kata:hairetsu",
+  "relatedTerms": [
+   "ka-hairetsu",
+   "ka-soeji",
+   "ka-yososu"
+  ],
+  "description": "配列や リストの 中に 入っている 1つ 1つの 値。何番目の 要素かを 指さして 取り出したり、入れかえたり します。",
+  "example": "first = items[0]"
+ },
+ {
+  "id": "ka-enzanshi",
+  "name": "演算子",
+  "reading": "えんざんし",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-shisoku",
+   "ka-hikakuenzan",
+   "ka-yusen"
+  ],
+  "description": "計算や くらべる ことを 指示する 記号。同じ 記号でも、数に 使うか 文字列に 使うかで 動きが 変わる ことが あるので、値の 種類と セットで 覚えます。",
+  "example": "a + b"
+ },
+ {
+  "id": "ka-shokichi",
+  "name": "初期値",
+  "reading": "しょきち",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-shokika",
+   "ka-hensu"
+  ],
+  "description": "変数に はじめに 入れておく 値。合計なら 0、名前なら 空の 文字列の ように、何も 起きて いない ときに 正しい 値を えらぶのが こつです。",
+  "example": "total = 0"
+ },
+ {
+  "id": "ka-kata",
+  "name": "型",
+  "reading": "かた",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-datagata",
+   "ka-henkan",
+   "ka-seiteki"
+  ],
+  "description": "値が どんな 種類かを 表す しるし。型が わかると、その 値で 何が できるかが 決まります。型を 意識して 書くと、まちがいに 早く 気づけます。",
+  "example": "int, str, bool"
+ },
+ {
+  "id": "ka-datagata",
+  "name": "データ型",
+  "reading": "でーたがた",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-kata",
+   "ka-primitive"
+  ],
+  "description": "言語が はじめから 用意している 値の 種類の 呼び名。数か 文字列か 真偽値か などを どの データ型で しまうかを えらぶ ことは、設計の 小さな 一歩です。",
+  "example": "age: int = 10"
+ },
+ {
+  "id": "ka-shingichi",
+  "name": "真偽値",
+  "reading": "しんぎち",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "kata:shingi",
+  "relatedTerms": [
+   "ka-hikaku",
+   "ka-hikakuenzan"
+  ],
+  "description": "正しいか まちがいかの 2つの どちらかだけを 持つ 型。くらべた 答えや、何かが 済んだか どうかの しるしを しまいます。ブール値とも 呼びます。",
+  "example": "is_done = True"
+ },
+ {
+  "id": "ka-fudo",
+  "name": "浮動小数点数",
+  "reading": "ふどうしょうすうてんすう",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "kata:kazu",
+  "relatedTerms": [
+   "ka-shosu",
+   "ka-marume"
+  ],
+  "description": "コンピューターが 小数を あらわす ための 形。とても 大きな 数も 小さな 数も あつかえる かわりに、ほんの 少し 誤差が 出ます。",
+  "example": "x = 0.1 + 0.2"
+ },
+ {
+  "id": "ka-henkan",
+  "name": "型変換",
+  "reading": "かたへんかん",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kata:henkan",
+  "relatedTerms": [
+   "ka-cast",
+   "ka-anmoku",
+   "ka-kata"
+  ],
+  "description": "値を 別の 型に 作りかえる こと。入力で 受け取った 文字列を 数値に 変えてから 計算する ときなどに 使います。変えられない 値が 来た ときの ことも 考えておきます。",
+  "example": "n = int(\"42\")"
+ },
+ {
+  "id": "ka-jisho",
+  "name": "辞書",
+  "reading": "じしょ",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "kata:jisho",
+  "relatedTerms": [
+   "ka-key",
+   "ka-rensou"
+  ],
+  "description": "キーと 値を 組に して しまう 入れもの。番号では なく 名前で すぐに 取り出せます。設定や 1件ぶんの 情報を まとめるのに、仕事でも 毎日の ように 使います。",
+  "example": "user = {\"name\": \"Ai\"}"
+ },
+ {
+  "id": "ka-rensou",
+  "name": "連想配列",
+  "reading": "れんそうはいれつ",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "kata:jisho",
+  "relatedTerms": [
+   "ka-jisho",
+   "ka-key"
+  ],
+  "description": "番号の かわりに 名前や ことばで 値を 取り出す 配列。辞書と 同じ しくみを 指す ことばで、言語に よって 呼び名が ちがいます。",
+  "example": "ages[\"ken\"] = 12"
+ },
+ {
+  "id": "ka-key",
+  "name": "キー",
+  "reading": "きー",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔑",
+  "mapNode": "kata:jisho",
+  "relatedTerms": [
+   "ka-jisho",
+   "ka-rensou"
+  ],
+  "description": "辞書の 中で 値を さがす ための 名前。同じ キーは 1つしか 持てないので、同じ キーで 入れると 前の 値が 上書きされます。",
+  "example": "user[\"name\"]"
+ },
+ {
+  "id": "ka-soeji",
+  "name": "添字",
+  "reading": "そえじ",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kata:hairetsu",
+  "relatedTerms": [
+   "ka-hairetsu",
+   "ka-yoso"
+  ],
+  "description": "配列の 中の 位置を 指す 番号。多くの 言語は 0から 数えるので、さいごの 要素は 要素数より 1 小さい 番号に なります。1つ ずれる まちがいは プロでも よく 起こします。",
+  "example": "items[2]"
+ },
+ {
+  "id": "ka-yososu",
+  "name": "要素数",
+  "reading": "ようそすう",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "kata:hairetsu",
+  "relatedTerms": [
+   "ka-yoso",
+   "ka-list",
+   "ka-soeji"
+  ],
+  "description": "配列や リストに 入っている 要素の 数。くりかえしの 回数や、空か どうかを 調べる ときに 使います。",
+  "example": "n = len(items)"
+ },
+ {
+  "id": "ka-nijigen",
+  "name": "二次元配列",
+  "reading": "にじげんはいれつ",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 2,
+  "role": "データ",
+  "type": "concept",
+  "emoji": "🔲",
+  "mapNode": "kata:hairetsu",
+  "relatedTerms": [
+   "ka-hairetsu",
+   "ka-soeji"
+  ],
+  "description": "配列の 中に 配列を 入れた 形。表の ように 行と 列の 2つの 番号で 取り出します。成績表や 表計算の ような データを そのまま しまえます。",
+  "example": "grid[1][2]"
+ },
+ {
+  "id": "ka-karamoji",
+  "name": "空文字",
+  "reading": "からもじ",
+  "journey": "kata",
+  "category": "文字",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "kata:moji",
+  "relatedTerms": [
+   "ka-mojiretsu",
+   "ka-null"
+  ],
+  "description": "字が 1つも 入っていない 文字列。何も ないとは ちがい、長さが 0の 文字列が ちゃんと あります。入力欄が 空の ときに よく 出てくるので、分けて 考えます。",
+  "example": "name = \"\""
+ },
+ {
+  "id": "ka-null",
+  "name": "ヌル",
+  "reading": "ぬる",
+  "journey": "kata",
+  "category": "何もない",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🕳",
+  "mapNode": "kata:nai",
+  "relatedTerms": [
+   "ka-miteigi",
+   "ka-nullanzen",
+   "ka-karamoji"
+  ],
+  "description": "「ここには わざと 何も 入れていない」と はっきり させる 特別な 値。まだ 見つからない ときの 答えなどに 使えますが、中身が ある つもりで 使うと 止まる もとなので、先に たしかめる くせを つけます。",
+  "example": "user = None"
+ },
+ {
+  "id": "ka-miteigi",
+  "name": "未定義",
+  "reading": "みていぎ",
+  "journey": "kata",
+  "category": "何もない",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "kata:nai",
+  "relatedTerms": [
+   "ka-null",
+   "ka-sengen"
+  ],
+  "description": "まだ 作られて いない、または 値を 一度も 入れて いない 状態。ヌルは わざと 空に した もの、未定義は まだ 何も 決めて いない もの、と 分けて 考えます。",
+  "example": "let x;"
+ },
+ {
+  "id": "ka-sengen",
+  "name": "宣言",
+  "reading": "せんげん",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-hensu",
+   "ka-shokika",
+   "ka-chushaku"
+  ],
+  "description": "変数などを これから 使うと プログラムに 伝える こと。言語に よっては 宣言の ときに 型も 書きます。使う 前に 宣言する 決まりの 言語も 多いです。",
+  "example": "let count = 0;"
+ },
+ {
+  "id": "ka-shokika",
+  "name": "初期化",
+  "reading": "しょきか",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-shokichi",
+   "ka-sengen"
+  ],
+  "description": "変数に 最初の 値を 入れて 使える 状態に する こと。初期化を わすれると 思わぬ 値が 入った ままに なる ことが あり、見つけにくい まちがいの もとに なります。",
+  "example": "total = 0"
+ },
+ {
+  "id": "ka-hensumei",
+  "name": "変数名",
+  "reading": "へんすうめい",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "チーム",
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-hensu",
+   "ka-shikibetsushi"
+  ],
+  "description": "変数に つける 名前。あとから 読む 人が 中身を すぐ わかる 名前に するのが 大事です。短すぎる 名前より、少し 長くても 意味の わかる 名前が よろこばれます。",
+  "example": "user_count = 0"
+ },
+ {
+  "id": "ka-dainyuenzan",
+  "name": "代入演算子",
+  "reading": "だいにゅうえんざんし",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-dainyu",
+   "ka-enzanshi"
+  ],
+  "description": "変数に 値を 入れる ための 記号。足してから 入れる、など 計算と 代入を まとめて 書ける 短い 形も あり、くりかえしの 中で よく 使います。",
+  "example": "score += 10"
+ },
+ {
+  "id": "ka-hikakuenzan",
+  "name": "比較演算子",
+  "reading": "ひかくえんざんし",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kata:kurabe",
+  "relatedTerms": [
+   "ka-hikaku",
+   "ka-shingichi",
+   "ka-futogo"
+  ],
+  "description": "等しい・等しくない・大きい・以上 などを 表す 記号の なかま。1つの 式を 真偽値の 答えに 変えるので、条件分岐や くりかえしの 止めどころを 書く ときに 欠かせません。",
+  "example": "a != b"
+ },
+ {
+  "id": "ka-increment",
+  "name": "インクリメント",
+  "reading": "いんくりめんと",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-decrement",
+   "ka-dainyuenzan"
+  ],
+  "description": "変数に 入った 数を ちょうど 1 大きく する 操作。くりかえしの 回数を 進めたり、何件 あったかを 数えたり する ときの 決まった 形です。",
+  "example": "i += 1"
+ },
+ {
+  "id": "ka-decrement",
+  "name": "デクリメント",
+  "reading": "でくりめんと",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-increment"
+  ],
+  "description": "変数の 数を 1 へらす こと。のこりの 回数を 数える ときや、後ろから 順に 見ていく ときに 使います。",
+  "example": "lives -= 1"
+ },
+ {
+  "id": "ka-renketsu",
+  "name": "連結",
+  "reading": "れんけつ",
+  "journey": "kata",
+  "category": "文字",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "kata:moji",
+  "relatedTerms": [
+   "ka-mojiretsu",
+   "ka-hokan"
+  ],
+  "description": "文字列どうしを つないで 1つに する こと。数と つなぐ ときは 先に 文字列へ 型変換が いる 言語も あります。",
+  "example": "full = first + last"
+ },
+ {
+  "id": "ka-seisujozan",
+  "name": "整数除算",
+  "reading": "せいすうじょざん",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-amari",
+   "ka-seisu",
+   "ka-kirisute"
+  ],
+  "description": "わり算の 答えを 整数だけで 出す 計算。小数点より 下は すてられます。あまりと セットで 使うと、何個ずつ 何回 分けられるかが わかります。",
+  "example": "q = 10 // 3"
+ },
+ {
+  "id": "ka-kirisute",
+  "name": "切り捨て",
+  "reading": "きりすて",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-shishagonyu",
+   "ka-seisujozan"
+  ],
+  "description": "小数点より 下を すてて 整数に する こと。マイナスの 数では 0に 近づく 方か 小さい 方かで 答えが 変わる ので、言語の 決まりを たしかめます。",
+  "example": "n = math.floor(3.7)"
+ },
+ {
+  "id": "ka-shishagonyu",
+  "name": "四捨五入",
+  "reading": "ししゃごにゅう",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-kirisute",
+   "ka-marume"
+  ],
+  "description": "5 以上なら 上げ、4 以下なら すてて まるめる こと。プログラムの まるめる 命令は 学校の 四捨五入と ちょっと ちがう 決まりの ことも あるので、ためして たしかめます。",
+  "example": "round(2.5)"
+ },
+ {
+  "id": "ka-kaigyo",
+  "name": "改行",
+  "reading": "かいぎょう",
+  "journey": "kata",
+  "category": "文字",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "kata:moji",
+  "relatedTerms": [
+   "ka-mojiretsu",
+   "ka-nagasa"
+  ],
+  "description": "文字列の 中で 行を かえる ための 目に 見えない 字。パソコンの しゅるいに よって 使う 字が ちがう ことが あり、ファイルを 読みこむ ときの ずれの もとに なります。",
+  "example": "print(\"a\\nb\")"
+ },
+ {
+  "id": "ka-nagasa",
+  "name": "文字列の長さ",
+  "reading": "もじれつのながさ",
+  "journey": "kata",
+  "category": "文字",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kata:moji",
+  "relatedTerms": [
+   "ka-mojiretsu",
+   "ka-karamoji"
+  ],
+  "description": "文字列に 入っている 字の 数。入力が 長すぎないか たしかめる ときに 使います。絵文字などは 見た目の 1字と 数えかたが ちがう ことが あります。",
+  "example": "len(name)"
+ },
+ {
+  "id": "ka-fu",
+  "name": "負の数",
+  "reading": "ふのかず",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "kata:kazu",
+  "relatedTerms": [
+   "ka-seisu",
+   "ka-kirisute"
+  ],
+  "description": "0より 小さい 数。気温や、へった 点数などを 表すのに 使います。わり算の あまりや 切り捨ては、負の数で 言語ごとに 答えが ちがう ことが あるので 気を つけます。",
+  "example": "t = -5",
+  "acceptedReadings": [
+   "ふのかず",
+   "ふのすう"
+  ]
+ },
+ {
+  "id": "ka-suji",
+  "name": "数字",
+  "reading": "すうじ",
+  "journey": "kata",
+  "category": "文字",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔣",
+  "mapNode": "kata:moji",
+  "relatedTerms": [
+   "ka-suchi",
+   "ka-henkan",
+   "ka-moji"
+  ],
+  "description": "数を 表す 字。文字として 入っている 数字は そのままでは 計算に 使えず、数値に 変えて から 足します。入力欄から 来るのは たいてい 数字の 文字列です。",
+  "example": "\"12\" + \"3\""
+ },
+ {
+  "id": "ka-yusen",
+  "name": "優先順位",
+  "reading": "ゆうせんじゅんい",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "kata:keisan",
+  "relatedTerms": [
+   "ka-enzanshi",
+   "ka-shisoku"
+  ],
+  "description": "式の 中で どの 演算子を 先に 計算するかの 決まり。かけ算は 足し算より 先、など 算数と にています。まよう ときは かっこで かこむと 読む 人にも やさしいです。",
+  "example": "x = (a + b) * c"
+ },
+ {
+  "id": "ka-seiteki",
+  "name": "静的型付け",
+  "reading": "せいてきかたづけ",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-doteki",
+   "ka-chushaku",
+   "ka-kataanzen"
+  ],
+  "description": "動かす 前に 変数の 型が 決まっている 言語の しくみ。型の まちがいを 動かす 前に 見つけられるので、大人数で 大きな プログラムを 作る ときに 心強いです。",
+  "example": "int count = 0;"
+ },
+ {
+  "id": "ka-doteki",
+  "name": "動的型付け",
+  "reading": "どうてきかたづけ",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-seiteki",
+   "ka-suiron"
+  ],
+  "description": "動かしながら 値の 型が 決まる 言語の しくみ。短く 書けて ためしやすい かわりに、型の まちがいは 動かして はじめて 見つかる ことが あります。",
+  "example": "x = 1\nx = \"one\""
+ },
+ {
+  "id": "ka-suiron",
+  "name": "型推論",
+  "reading": "かたすいろん",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-seiteki",
+   "ka-chushaku"
+  ],
+  "description": "書かれた 値から 型を 自動で 見ぬく しくみ。型を 1つ 1つ 書かなくても 静的型付けの 守りが 受けられます。",
+  "example": "let n = 10;"
+ },
+ {
+  "id": "ka-sansho",
+  "name": "参照",
+  "reading": "さんしょう",
+  "journey": "kata",
+  "category": "メモリ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "👉",
+  "mapNode": "kata:memory",
+  "relatedTerms": [
+   "ka-asai",
+   "ka-mutable",
+   "ka-primitive"
+  ],
+  "description": "値 そのものでは なく、値が ある 場所を 指す もの。2つの 変数が 同じ ものを 指して いると、片方で 直すと もう片方も 変わって 見えます。",
+  "example": "b = a\nb.append(1)"
+ },
+ {
+  "id": "ka-immutable",
+  "name": "イミュータブル",
+  "reading": "いみゅーたぶる",
+  "journey": "kata",
+  "category": "メモリ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "kata:memory",
+  "relatedTerms": [
+   "ka-mutable",
+   "ka-teisu"
+  ],
+  "description": "作った あとで 中身を 変えられない こと。変えたい ときは 新しい 値を 作ります。どこかで こっそり 書きかわる 心配が ないので、まちがいが 減ります。",
+  "example": "t = (1, 2)"
+ },
+ {
+  "id": "ka-mutable",
+  "name": "ミュータブル",
+  "reading": "みゅーたぶる",
+  "journey": "kata",
+  "category": "メモリ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🫠",
+  "mapNode": "kata:memory",
+  "relatedTerms": [
+   "ka-immutable",
+   "ka-sansho"
+  ],
+  "description": "作った あとでも 中身を 書きかえられる こと。便利ですが、同じ ものを 何か所かで 使って いると、思わぬ ところで 中身が 変わる ことが あります。",
+  "example": "items[0] = 9"
+ },
+ {
+  "id": "ka-cast",
+  "name": "キャスト",
+  "reading": "きゃすと",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎭",
+  "mapNode": "kata:henkan",
+  "relatedTerms": [
+   "ka-henkan",
+   "ka-anmoku"
+  ],
+  "description": "書く 人が はっきり 指示して 型を 変える こと。静的型付けの 言語で よく 使います。はみ出す 値を 小さな 型へ 変えると 中身が こわれる ことも あります。",
+  "example": "int n = (int) 3.9;"
+ },
+ {
+  "id": "ka-anmoku",
+  "name": "暗黙の型変換",
+  "reading": "あんもくのかたへんかん",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🫥",
+  "mapNode": "kata:henkan",
+  "relatedTerms": [
+   "ka-henkan",
+   "ka-cast"
+  ],
+  "description": "書く 人が 指示しなくても 言語が 自動で 型を 変える こと。便利な 反面、数と 文字列を まぜた ときに 思いがけない 答えが 出る もとに なります。",
+  "example": "1 + 2.5"
+ },
+ {
+  "id": "ka-primitive",
+  "name": "プリミティブ型",
+  "reading": "ぷりみてぃぶがた",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-datagata",
+   "ka-sansho"
+  ],
+  "description": "言語に はじめから ある いちばん 基本の 型。整数・小数・真偽値・文字 などです。多くの 言語で 値 そのものが 入り、参照とは あつかいが ちがいます。",
+  "example": "bool ok = true;"
+ },
+ {
+  "id": "ka-tuple",
+  "name": "タプル",
+  "reading": "たぷる",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "kata:hairetsu",
+  "relatedTerms": [
+   "ka-hairetsu",
+   "ka-immutable"
+  ],
+  "description": "決まった 数の 値を ひとまとめに した もの。作ったら 変えられない 言語が 多く、たての 位置と 横の 位置の ような 組を あつかうのに 向いて います。",
+  "example": "point = (3, 4)"
+ },
+ {
+  "id": "ka-shugo",
+  "name": "集合",
+  "reading": "しゅうごう",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 3,
+  "role": "データ",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "kata:hairetsu",
+  "relatedTerms": [
+   "ka-hairetsu",
+   "ka-list"
+  ],
+  "description": "同じ 値を 1つしか 持たない 入れもの。かさなりを 自動で のぞけて、ある 値が 入っているかを すばやく 調べられます。順番は 決まって いない ことが 多いです。",
+  "example": "tags = {\"a\", \"b\"}"
+ },
+ {
+  "id": "ka-overflow",
+  "name": "オーバーフロー",
+  "reading": "おーばーふろー",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kata:kazu",
+  "relatedTerms": [
+   "ka-seisu",
+   "ka-cast"
+  ],
+  "description": "計算の 答えが 型に 入る 大きさを こえて しまう こと。数が ぐるっと 回って 小さな 数に 化けたり、止まったり します。大きな 数を あつかう ときは 型の 大きさを 見ます。",
+  "example": "int x = Integer.MAX_VALUE + 1;"
+ },
+ {
+  "id": "ka-marume",
+  "name": "丸め誤差",
+  "reading": "まるめごさ",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 3,
+  "role": "データ",
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "kata:kazu",
+  "relatedTerms": [
+   "ka-fudo",
+   "ka-shishagonyu"
+  ],
+  "description": "小数を コンピューターの 形に 直す ときに 出る ごく 小さな ずれ。等しいか どうかを そのまま くらべると まちがえるので、差が じゅうぶん 小さいかで たしかめます。",
+  "example": "0.1 + 0.2 != 0.3"
+ },
+ {
+  "id": "ka-literal",
+  "name": "リテラル",
+  "reading": "りてらる",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "✍️",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-atai",
+   "ka-magic"
+  ],
+  "description": "コードの 中に じかに 書いた 値。数 そのものや、かこんで 書いた 文字列の ことです。変数とは ちがい、書いた 値が そのまま 使われます。",
+  "example": "\"hello\", 42, 3.14"
+ },
+ {
+  "id": "ka-shikibetsushi",
+  "name": "識別子",
+  "reading": "しきべつし",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 3,
+  "role": "チーム",
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-hensumei",
+   "ka-yoyakugo"
+  ],
+  "description": "変数や 関数に つける 名前を まとめた 呼びかた。使える 字や 先頭に 数字を 置けない などの 決まりが 言語ごとに あります。",
+  "example": "user_name2"
+ },
+ {
+  "id": "ka-yoyakugo",
+  "name": "予約語",
+  "reading": "よやくご",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-shikibetsushi",
+   "ka-hensumei"
+  ],
+  "description": "言語が 特別な 意味で 使うと 決めている ことば。変数の 名前には 使えません。はじめて 見る 言語では、まず 予約語の 一覧を ながめると 形が つかめます。",
+  "example": "if, for, class, return"
+ },
+ {
+  "id": "ka-rekkyo",
+  "name": "列挙型",
+  "reading": "れっきょがた",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-teisu",
+   "ka-magic"
+  ],
+  "description": "決まった いくつかの 名前だけを とれる 型。信号の 赤・黄・青の ように えらべる ものが 決まって いる ときに 使い、まちがった 値が 入るのを ふせぎます。",
+  "example": "class Color(Enum): RED = 1"
+ },
+ {
+  "id": "ka-kozotai",
+  "name": "構造体",
+  "reading": "こうぞうたい",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "kata:jisho",
+  "relatedTerms": [
+   "ka-jisho",
+   "ka-tuple"
+  ],
+  "description": "名前の ついた いくつかの 値を 1つに まとめた 型。人の 名前と 年れいの ように 組で あつかう データを、自分で 型として 作れます。",
+  "example": "struct P { int x; int y; };"
+ },
+ {
+  "id": "ka-generics",
+  "name": "ジェネリクス",
+  "reading": "じぇねりくす",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧬",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-seiteki",
+   "ka-kataanzen"
+  ],
+  "description": "型を あとで 決められる ように した 書きかた。数の リストにも 文字列の リストにも 使える 部品を、型の 守りを たもった まま 1回で 作れます。",
+  "example": "List<String> names;"
+ },
+ {
+  "id": "ka-chushaku",
+  "name": "型注釈",
+  "reading": "かたちゅうしゃく",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-suiron",
+   "ka-seiteki",
+   "ka-sengen"
+  ],
+  "description": "変数などの 型を コードに 書き そえる こと。動的型付けの 言語でも 書けて、道具が 型の まちがいを 前もって 見つけて くれます。読む 人への 説明にも なります。",
+  "example": "def add(a: int, b: int) -> int:\n    return a + b"
+ },
+ {
+  "id": "ka-kataanzen",
+  "name": "型安全",
+  "reading": "かたあんぜん",
+  "journey": "kata",
+  "category": "型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "kata:kata",
+  "relatedTerms": [
+   "ka-seiteki",
+   "ka-generics",
+   "ka-nullanzen"
+  ],
+  "description": "型の まちがった 使いかたを 言語や 道具が ゆるさない こと。文字列を 数と して 計算する ような まちがいを、動かす 前に 止められます。"
+ },
+ {
+  "id": "ka-tabaicho",
+  "name": "多倍長整数",
+  "reading": "たばいちょうせいすう",
+  "journey": "kata",
+  "category": "数と計算",
+  "difficulty": 3,
+  "role": "データ",
+  "type": "concept",
+  "emoji": "🐘",
+  "mapNode": "kata:kazu",
+  "relatedTerms": [
+   "ka-overflow",
+   "ka-seisu"
+  ],
+  "description": "型の 大きさに しばられず、どれだけ 大きな 整数でも あつかえる しくみ。オーバーフローの 心配が ない かわりに、ふつうの 整数より 計算に 時間が かかります。",
+  "example": "x = 2 ** 100"
+ },
+ {
+  "id": "ka-asai",
+  "name": "浅いコピー",
+  "reading": "あさいこぴー",
+  "journey": "kata",
+  "category": "メモリ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "kata:memory",
+  "relatedTerms": [
+   "ka-fukai",
+   "ka-sansho"
+  ],
+  "description": "入れものの 外がわだけを 写して、中の ものは 同じ ものを 指した ままの コピー。中を 書きかえると 元の ほうも 変わるので 気を つけます。",
+  "example": "b = a.copy()"
+ },
+ {
+  "id": "ka-fukai",
+  "name": "深いコピー",
+  "reading": "ふかいこぴー",
+  "journey": "kata",
+  "category": "メモリ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "kata:memory",
+  "relatedTerms": [
+   "ka-asai",
+   "ka-sansho"
+  ],
+  "description": "中の 中まで ぜんぶ 新しく 作って 写す コピー。元と まったく 別の ものに なるので、片方を 変えても もう片方は 変わりません。そのぶん 時間が かかります。",
+  "example": "b = copy.deepcopy(a)"
+ },
+ {
+  "id": "ka-hokan",
+  "name": "文字列補間",
+  "reading": "もじれつほかん",
+  "journey": "kata",
+  "category": "文字",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "kata:moji",
+  "relatedTerms": [
+   "ka-renketsu",
+   "ka-mojiretsu"
+  ],
+  "description": "文字列の 中に 変数の 値を うめこむ 書きかた。足し算で つなぐより 読みやすく、型変換も 自動で して くれる 言語が 多いです。",
+  "example": "f\"Hi {name}\""
+ },
+ {
+  "id": "ka-seiki",
+  "name": "正規表現",
+  "reading": "せいきひょうげん",
+  "journey": "kata",
+  "category": "文字",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧵",
+  "mapNode": "kata:moji",
+  "relatedTerms": [
+   "ka-mojiretsu",
+   "ka-slice"
+  ],
+  "description": "文字列の 形を 決まった 書きかたで 表して、合う ところを さがしたり 取り出したり する しくみ。電話番号の 形を たしかめる ときなどに 使います。短く 書ける ぶん 読みにくいので 説明を そえます。",
+  "example": "re.findall(r\"\\d+\", s)"
+ },
+ {
+  "id": "ka-slice",
+  "name": "スライス",
+  "reading": "すらいす",
+  "journey": "kata",
+  "category": "集まり",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔪",
+  "mapNode": "kata:hairetsu",
+  "relatedTerms": [
+   "ka-hairetsu",
+   "ka-soeji"
+  ],
+  "description": "配列や 文字列の 一部を はんいを 指定して 切り出す こと。はじまりは ふくみ、おわりは ふくまない 決まりの 言語が 多いです。",
+  "example": "part = items[1:3]"
+ },
+ {
+  "id": "ka-magic",
+  "name": "マジックナンバー",
+  "reading": "まじっくなんばー",
+  "journey": "kata",
+  "category": "入れもの",
+  "difficulty": 3,
+  "role": "チーム",
+  "type": "concept",
+  "emoji": "🎩",
+  "mapNode": "kata:hensu",
+  "relatedTerms": [
+   "ka-teisu",
+   "ka-literal"
+  ],
+  "description": "意味の 説明が ないまま コードに 書かれた 数。あとで 読む 人が 何の 数か わからず、直す ときに もれが 出ます。名前の ついた 定数に 置きかえるのが ならわしです。",
+  "example": "MAX_HP = 100\nhp = MAX_HP"
+ },
+ {
+  "id": "ka-gc",
+  "name": "ガベージコレクション",
+  "reading": "がべーじこれくしょん",
+  "journey": "kata",
+  "category": "メモリ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "kata:memory",
+  "relatedTerms": [
+   "ka-sansho",
+   "ka-mutable"
+  ],
+  "description": "もう どこからも 指されて いない メモリを 自動で 返す 言語の しくみ。自分で 返す 手間が なく、返しわすれの まちがいも 減ります。どこかで 指した ままだと 返されません。"
+ },
+ {
+  "id": "ka-nullanzen",
+  "name": "ヌル安全",
+  "reading": "ぬるあんぜん",
+  "journey": "kata",
+  "category": "何もない",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "kata:nai",
+  "relatedTerms": [
+   "ka-null",
+   "ka-kataanzen"
+  ],
+  "description": "ヌルが 入るかも しれない 変数と、入らない 変数を 型で 分ける しくみ。中身が ない まま 使う まちがいを 動かす 前に 止められます。",
+  "example": "var name: String? = null"
+ }
+]

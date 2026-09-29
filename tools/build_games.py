@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -140,11 +140,19 @@ GAMES = {
                    lead="肉を 食べる 恐竜・草を 食べる 恐竜・日本の 恐竜・3つの 時代・体と 化石・恐竜では ない 生きもの・調べる 人と 道具を、ひらがなで フリック入力。打つと その 恐竜の いた 時代と、見つかった 場所(世界地図の 📍)が 出るよ。だれでも 知っている 恐竜から はじめて、めざせ 恐竜博士。",
                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。「ヴ」の 入った 名前は ば行でも OK(べろきらぷとる)。恐竜の 研究は 毎年 新しく なるので、あとから 考えが 変わる ことも あるよ。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、恐竜の 名前と 時代と 場所が つながって 見えてくるよ。"),
+    # フリックプログラマー(けいくん 2026-09-29「プログラマーになれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 4つの 問いに「おすすめ」)。
+    #   名前 = フリックプログラマー(中に 👷 エンジニアの 旅。フォルダ名 `code` は 変えない)。3段・言語は 少しだけ・2進数/16進数を 入れる・図を 作る。
+    #   ことばは tools/code/terms-<旅>.json → code/terms.js(tools/code/terms_js.py)。しくみは code/code.js(CODEPG。gamedev.js を 写した)。
+    #   ⚠️ AI旅行・ゲームクリエイターと 同じ ことばは 入れて よい(復習)。説明は 作る 側の 目線(決まりは tools/code/PROMPT.md)。絵は まだ 無い(題名は 文字)
+    "code": dict(name="フリックプログラマー", modes="CODEPG", kinds=set(), color="#1971c2", hero=False, logo=False,
+                 lead="入れものと 型・ながれを 決める・まとめて 作る・まちがいと 直しかた・速さと 大きさ・コンピュータの きほん・みんなで 作る・エンジニアの 旅の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 分野の ことばか・しくみ図の どこに あるのかが 出るよ。学校の プログラミングで 出る ことばから、仕事で 使う エンジニアの ことばまで。4択クイズも できるよ。",
+                 how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。コードは 打たないよ(打つのは ことばの 読みだけ)。「たとえば」に 短い コードの 見本が 出る ことばも あるよ。まちがえるのは ふつうの こと。小さく 作って ためしてみよう。",
+                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、プログラミングの ことばと しくみが つながって 見えてくるよ。"),
 }
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -221,6 +229,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kyoryu/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "kyoryu" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="kyoryu.js?v=%s"></script>' % (ver("terms.js"), ver("kyoryu.js")))
+    if g["modes"] == "CODEPG":  # プログラミングの コース: ゲームクリエイターと 同じ 形。ことばは terms.js(tools/code/terms-*.json から)、しくみは code.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/code/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "code" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="code.js?v=%s"></script>' % (ver("terms.js"), ver("code.js")))
     if g["modes"] == "KANGO":  # 看護の コース: 保育と 同じ 形。ことばは terms.js(tools/kango/terms-*.json から)、しくみは kango.js
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kango/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "kango" / f).read_bytes()).hexdigest()[:8]

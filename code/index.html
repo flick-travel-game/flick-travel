@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>パティシエフリック</title>
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
-<link rel="icon" type="image/png" href="favicon.png?v=3">
+<title>フリックプログラマー</title>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="../favicon.png?v=2">
 <link rel="manifest" href="manifest.webmanifest?v=3">
-<meta name="apple-mobile-web-app-title" content="パティシエフリック">
+<meta name="apple-mobile-web-app-title" content="フリックプログラマー">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#4fb8ff">
@@ -403,12 +403,10 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=3" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=4" alt="" width="959" height="204" aria-hidden="true">
+      <span class="logo-text">フリックプログラマー</span>
       <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">パティシエフリック</h1>
-    <img class="hero" src="hero.webp?v=4" alt="パティシエフリック。パリの 洋菓子店で コック帽の 女の子と 犬が いちごの ケーキに クリームを しぼる 絵" width="1536" height="1024">
+    <h1 class="sr-only">フリックプログラマー</h1>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -527,12 +525,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=028d6ec0"></script>
-<script src="patissier.js?v=1c712f52"></script>
+<script src="terms.js?v=a299c6d4"></script>
+<script src="code.js?v=93616264"></script>
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"patissier", name:"パティシエフリック", modes:(typeof PATISSIER === "object" ? PATISSIER.modes : []), assets:"../", logo:true, hero:true, dir:"patissier/", lead:"お菓子の 材料・生地・クリーム・世界の お菓子・和菓子・道具と 衛生の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、しくみ図の どこに あるのかが 出るよ。身近な お菓子から はじめて、製菓衛生師・菓子製造技能士 2級・1級の 試験範囲の めやすまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。説明は 本物の 試験問題では ないので、試験の 勉強には 問題集や 学校の 教科書も 使ってね。作りかた(分量・温度・時間)は のせていないよ。火や 刃物を 使うときは おとなと いっしょにね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、お菓子の ことばと しくみが つながって 見えてくるよ。厚生労働省・都道府県・中央職業能力開発協会とは 関係ありません。" };
+const GAME = { id:"code", name:"フリックプログラマー", modes:(typeof CODEPG === "object" ? CODEPG.modes : []), assets:"../", logo:false, hero:false, dir:"code/", lead:"入れものと 型・ながれを 決める・まとめて 作る・まちがいと 直しかた・速さと 大きさ・コンピュータの きほん・みんなで 作る・エンジニアの 旅の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 分野の ことばか・しくみ図の どこに あるのかが 出るよ。学校の プログラミングで 出る ことばから、仕事で 使う エンジニアの ことばまで。4択クイズも できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。コードは 打たないよ(打つのは ことばの 読みだけ)。「たとえば」に 短い コードの 見本が 出る ことばも あるよ。まちがえるのは ふつうの こと。小さく 作って ためしてみよう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、プログラミングの ことばと しくみが つながって 見えてくるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},

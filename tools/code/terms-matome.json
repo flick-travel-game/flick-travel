@@ -1,0 +1,1404 @@
+[
+ {
+  "id": "ma-kopipe",
+  "name": "コピペ",
+  "reading": "こぴぺ",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-tsukaimawasu",
+   "ma-dry"
+  ],
+  "description": "コードを 写して はりつける こと。手早いですが、同じ コードが あちこちに ふえると、直す ときに 全部 さがす ことに なります。そこで 部品に まとめます。"
+ },
+ {
+  "id": "ma-buhin",
+  "name": "部品",
+  "reading": "ぶひん",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-kumitateru",
+   "ma-module"
+  ],
+  "description": "プログラムの 中の、決まった 仕事を 受けもつ ひとかたまり。部品に 分けておくと、こわれた ところだけ 取りかえたり、ほかで 使ったり できます。"
+ },
+ {
+  "id": "ma-kumitateru",
+  "name": "組み立てる",
+  "reading": "くみたてる",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏗",
+  "mapNode": "matome:object",
+  "relatedTerms": [
+   "ma-buhin",
+   "ma-bunkatsu"
+  ],
+  "description": "小さな 部品を つないで、大きな プログラムを 作る こと。ブロックの おもちゃと 同じで、部品が しっかり していれば 大きな ものも 作れます。"
+ },
+ {
+  "id": "ma-torikaeru",
+  "name": "取りかえる",
+  "reading": "とりかえる",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-buhin",
+   "ma-interface"
+  ],
+  "description": "部品の 1つを、同じ 使いかたの 別の 部品に かえる こと。部品の 出入り口を そろえて 作っておくと、全体を 作りなおさずに 取りかえられます。"
+ },
+ {
+  "id": "ma-object",
+  "name": "オブジェクト",
+  "reading": "おぶじぇくと",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧸",
+  "mapNode": "matome:object",
+  "relatedTerms": [
+   "ma-class",
+   "ma-joutai",
+   "ma-kinou"
+  ],
+  "description": "データと、それを 使う 動きを ひとまとめに した プログラムの 中の「もの」。会員・注文・画面の ボタンなど、あつかう ものごとを そのまま 形に します。",
+  "example": "user.name = \"Aoi\"\nuser.greet()"
+ },
+ {
+  "id": "ma-library",
+  "name": "ライブラリ",
+  "reading": "らいぶらり",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "matome:package",
+  "relatedTerms": [
+   "ma-package",
+   "ma-kakuchou",
+   "ma-standard"
+  ],
+  "description": "だれかが 作って 公開した、使い回せる 部品の あつまり。自分で 一から 書かずに 呼び出して 使えるので、作りたい ところに 時間を 使えます。",
+  "example": "import math\nprint(math.sqrt(16))"
+ },
+ {
+  "id": "ma-kinou",
+  "name": "機能",
+  "reading": "きのう",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⚙",
+  "mapNode": "matome:method",
+  "relatedTerms": [
+   "ma-object",
+   "ma-method"
+  ],
+  "description": "プログラムが できる こと。「保存する」「さがす」など、機能ごとに 部品を 分けると、どこを 直せば よいかが すぐ 分かります。"
+ },
+ {
+  "id": "ma-kakuchou",
+  "name": "拡張機能",
+  "reading": "かくちょうきのう",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "matome:package",
+  "relatedTerms": [
+   "ma-library",
+   "ma-plugin"
+  ],
+  "description": "あとから 足して、できる ことを ふやす 部品。もとの プログラムを 書きかえずに 機能を ふやせるように、部品を 足す 口を 用意して 作ります。"
+ },
+ {
+  "id": "ma-template",
+  "name": "テンプレート",
+  "reading": "てんぷれーと",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-sekkeizu",
+   "ma-pattern"
+  ],
+  "description": "同じ 形の ものを 何度も 作る ための ひな形。空いている ところだけ 書きかえれば よいので、毎回 はじめから 考えずに すみます。"
+ },
+ {
+  "id": "ma-tsukaimawasu",
+  "name": "使い回す",
+  "reading": "つかいまわす",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "♻",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-kopipe",
+   "ma-library"
+  ],
+  "description": "一度 作った 部品を、ほかの 場所でも 使う こと。直す ときも 1か所で すむので、まちがいが へります。使い回しやすい 部品を 作るのも 腕の 見せどころです。"
+ },
+ {
+  "id": "ma-kyoutsuuka",
+  "name": "共通化",
+  "reading": "きょうつうか",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-tsukaimawasu",
+   "ma-dry"
+  ],
+  "description": "あちこちに ある 同じ 仕事を、1つの 部品に まとめる こと。直す ときも 1か所で すみます。まとめすぎて わかりにくく ならないよう 気を つけます。"
+ },
+ {
+  "id": "ma-seiri",
+  "name": "整理",
+  "reading": "せいり",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🗂",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-bunkatsu",
+   "ma-nakamawake"
+  ],
+  "description": "ばらばらの コードを、役目ごとに ならべなおす こと。散らかった 部屋と 同じで、整理された コードは さがしやすく、ほかの 人も 読みやすく なります。"
+ },
+ {
+  "id": "ma-bunkatsu",
+  "name": "分割",
+  "reading": "ぶんかつ",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "✂",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-buhin",
+   "ma-module"
+  ],
+  "description": "大きな 仕事を 小さな かたまりに 分ける こと。1つずつ 作って ためせるので、大きな プログラムも こわがらずに 作れます。"
+ },
+ {
+  "id": "ma-hinagata",
+  "name": "ひな形",
+  "reading": "ひながた",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-bunkatsu",
+   "ma-srp"
+  ],
+  "description": "中身を 入れる 前の、形だけ 決まった もと。ファイルや 部品の ひな形を 用意して おくと、チームの だれが 作っても 同じ ならびに そろいます。"
+ },
+ {
+  "id": "ma-nakamawake",
+  "name": "仲間分け",
+  "reading": "なかまわけ",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "matome:class",
+  "relatedTerms": [
+   "ma-class",
+   "ma-seiri"
+  ],
+  "description": "にた ものを 1つの グループに まとめる こと。「犬も 猫も 動物」の ように 考えると、共通の ところを 1回 書くだけで すむ 部品が 作れます。"
+ },
+ {
+  "id": "ma-sekkeizu",
+  "name": "設計図",
+  "reading": "せっけいず",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "matome:class",
+  "relatedTerms": [
+   "ma-class",
+   "ma-instance"
+  ],
+  "description": "どんな データを 持ち、何が できるかを 先に 決めた もの。プログラムでは クラスが 設計図に あたり、そこから 同じ 形の ものを いくつも 作れます。"
+ },
+ {
+  "id": "ma-class",
+  "name": "クラス",
+  "reading": "くらす",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "matome:class",
+  "relatedTerms": [
+   "ma-sekkeizu",
+   "ma-instance",
+   "ma-object"
+  ],
+  "description": "オブジェクトの 設計図。持つ データと できる 動きを 書いておき、それを もとに 実物を 作ります。仕事の コードでは、あつかう ものごとごとに クラスを 作ります。",
+  "example": "class Dog:\n    def bark(self): print(\"woof\")"
+ },
+ {
+  "id": "ma-oyako",
+  "name": "親子関係",
+  "reading": "おやこかんけい",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "👪",
+  "mapNode": "matome:keisho",
+  "relatedTerms": [
+   "ma-keisho",
+   "ma-oyaclass"
+  ],
+  "description": "もとに なる 部品と、それを 受けついで 作った 部品の 関係。親の できる ことは 子も できるので、ちがう ところだけ 書けば すみます。"
+ },
+ {
+  "id": "ma-joutai",
+  "name": "状態",
+  "reading": "じょうたい",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "matome:object",
+  "relatedTerms": [
+   "ma-object",
+   "ma-property"
+  ],
+  "description": "ある ときの オブジェクトの 中身の ようす。「ドアが あいている」「のこり 3こ」など。状態が いつ 変わるかを 考えるのが、まちがいを ふせぐ 近道です。"
+ },
+ {
+  "id": "ma-blackbox",
+  "name": "ブラックボックス",
+  "reading": "ぶらっくぼっくす",
+  "journey": "matome",
+  "category": "かくす・約束",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "matome:kakusu",
+  "relatedTerms": [
+   "ma-capsule",
+   "ma-interface"
+  ],
+  "description": "中の しくみを 知らなくても、入れると 決まった 結果が 出てくる もの。部品を ブラックボックスに しておくと、使う 人は 使いかただけ 覚えれば すみます。"
+ },
+ {
+  "id": "ma-method",
+  "name": "メソッド",
+  "reading": "めそっど",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🛠",
+  "mapNode": "matome:method",
+  "relatedTerms": [
+   "ma-object",
+   "ma-class",
+   "ma-static"
+  ],
+  "description": "クラスの 中に 書く、その オブジェクトが できる 動き。データの すぐ そばに 動きを 置くので、どの データを どこで 変えるかが はっきりします。",
+  "example": "cart.add(item)"
+ },
+ {
+  "id": "ma-property",
+  "name": "プロパティ",
+  "reading": "ぷろぱてぃ",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "matome:object",
+  "relatedTerms": [
+   "ma-object",
+   "ma-member",
+   "ma-getter"
+  ],
+  "description": "オブジェクトが 持つ 値。名前・大きさ・数など、その ものの ようすを 表します。外から 読める ものと 読めない ものを 分けて 作るのが ふつうです。",
+  "example": "print(user.name)"
+ },
+ {
+  "id": "ma-instance",
+  "name": "インスタンス",
+  "reading": "いんすたんす",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "matome:instance",
+  "relatedTerms": [
+   "ma-class",
+   "ma-constructor"
+  ],
+  "description": "クラスから 作った 実物の オブジェクト。同じ クラスから 作っても、それぞれ 別の データを 持つので、会員が 何人 いても 1つの クラスで すみます。",
+  "example": "a = Dog()\nb = Dog()"
+ },
+ {
+  "id": "ma-keisho",
+  "name": "継承",
+  "reading": "けいしょう",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧬",
+  "mapNode": "matome:keisho",
+  "relatedTerms": [
+   "ma-oyaclass",
+   "ma-koclass",
+   "ma-override"
+  ],
+  "description": "すでに ある クラスを 親に して、その データと 動きを 引きついだ 子の クラスを 作る しくみ。同じ コードを 書かずに すみますが、つなぎすぎると 直しにくく なるので、使いどころを 考えます。",
+  "example": "class Cat(Animal):\n    pass"
+ },
+ {
+  "id": "ma-module",
+  "name": "モジュール",
+  "reading": "もじゅーる",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-package",
+   "ma-import",
+   "ma-export"
+  ],
+  "description": "関係の ある コードを 1つの ファイルなどに まとめた 部品。ほかの モジュールからは 必要な ものだけ 読みこんで 使います。まとめかたで 読みやすさが 大きく 変わります。"
+ },
+ {
+  "id": "ma-package",
+  "name": "パッケージ",
+  "reading": "ぱっけーじ",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "matome:package",
+  "relatedTerms": [
+   "ma-module",
+   "ma-pkgmanager",
+   "ma-library"
+  ],
+  "description": "いくつかの モジュールを まとめて、名前と 版を つけ、配れる 形に した もの。自分の 作った 部品を パッケージに すると、ほかの プロジェクトでも 入れて 使えます。"
+ },
+ {
+  "id": "ma-framework",
+  "name": "フレームワーク",
+  "reading": "ふれーむわーく",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "matome:package",
+  "relatedTerms": [
+   "ma-library",
+   "ma-ioc"
+  ],
+  "description": "よく ある 作りの 土台と 決まりを 用意した 大きな 部品。ライブラリは 自分の コードが 呼び出しますが、フレームワークは 決めた 場所に 書いた 自分の コードを 呼び出して くれます。"
+ },
+ {
+  "id": "ma-oop",
+  "name": "オブジェクト指向",
+  "reading": "おぶじぇくとしこう",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-object",
+   "ma-capsule",
+   "ma-polymorphism"
+  ],
+  "description": "プログラムを、データと 動きを 持った オブジェクトどうしの やりとりとして 組み立てる 考えかた。大きな 仕事の コードを 分けて 考えやすく する ために 広く 使われます。"
+ },
+ {
+  "id": "ma-constructor",
+  "name": "コンストラクタ",
+  "reading": "こんすとらくた",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "matome:instance",
+  "relatedTerms": [
+   "ma-instance",
+   "ma-class"
+  ],
+  "description": "インスタンスを 作る ときに 自動で 呼ばれる 特別な メソッド。はじめに 持たせる 値を ここで 決めるので、中身が 空の まま 使われる まちがいを ふせげます。",
+  "example": "def __init__(self, name):\n    self.name = name"
+ },
+ {
+  "id": "ma-import",
+  "name": "インポート",
+  "reading": "いんぽーと",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-module",
+   "ma-export"
+  ],
+  "description": "ほかの モジュールや ライブラリを、自分の コードで 使えるように 読みこむ こと。ファイルの 上の ほうに 書くので、何に たよっているかが 一目で 分かります。",
+  "example": "from math import sqrt"
+ },
+ {
+  "id": "ma-oyaclass",
+  "name": "親クラス",
+  "reading": "おやくらす",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "👨",
+  "mapNode": "matome:keisho",
+  "relatedTerms": [
+   "ma-keisho",
+   "ma-koclass",
+   "ma-abstract"
+  ],
+  "description": "継承の もとに なる クラス。いくつかの 子クラスに 共通する データと 動きを ここに まとめます。親を 直すと 子 全部に 効くので、変える ときは 注意が いります。"
+ },
+ {
+  "id": "ma-koclass",
+  "name": "子クラス",
+  "reading": "こくらす",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧒",
+  "mapNode": "matome:keisho",
+  "relatedTerms": [
+   "ma-oyaclass",
+   "ma-override"
+  ],
+  "description": "親クラスを 受けついで 作った クラス。親の 動きを そのまま 使い、ちがう ところだけ 足したり 書きかえたり します。",
+  "example": "class Admin(User):\n    pass"
+ },
+ {
+  "id": "ma-capsule",
+  "name": "カプセル化",
+  "reading": "かぷせるか",
+  "journey": "matome",
+  "category": "かくす・約束",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "matome:kakusu",
+  "relatedTerms": [
+   "ma-private",
+   "ma-getter",
+   "ma-blackbox"
+  ],
+  "description": "データと それを 変える 処理を 1つに まとめ、外には 用意した メソッドだけを 見せる こと。中の 作りを あとで 変えても、使う がわの コードを 直さずに すみます。"
+ },
+ {
+  "id": "ma-interface",
+  "name": "インターフェース",
+  "reading": "いんたーふぇーす",
+  "journey": "matome",
+  "category": "かくす・約束",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "matome:yakusoku",
+  "relatedTerms": [
+   "ma-abstract",
+   "ma-polymorphism",
+   "ma-ducktyping"
+  ],
+  "description": "クラスが 持つべき メソッドの 名前と 形だけを 決めた 約束ごと。中身は 書かず、約束を 守る クラスなら どれでも 入れかえられるので、部品を 取りかえやすい 作りに なります。"
+ },
+ {
+  "id": "ma-izon",
+  "name": "依存関係",
+  "reading": "いぞんかんけい",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "matome:izon",
+  "relatedTerms": [
+   "ma-pkgmanager",
+   "ma-junkan",
+   "ma-sokets"
+  ],
+  "description": "ある 部品が 動く ために、ほかの 部品を 必要と している こと。つながりが 多いほど 1つの 変更が 広く 伝わるので、どこに たよっているかを 自分で 整理します。"
+ },
+ {
+  "id": "ma-override",
+  "name": "オーバーライド",
+  "reading": "おーばーらいど",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "✏",
+  "mapNode": "matome:keisho",
+  "relatedTerms": [
+   "ma-koclass",
+   "ma-polymorphism"
+  ],
+  "description": "親クラスに ある メソッドを、子クラスで 同じ 名前の まま 書きかえる こと。呼ぶ がわは 同じ 名前で 呼ぶだけで、クラスごとに ちがう 動きを させられます。"
+ },
+ {
+  "id": "ma-pkgmanager",
+  "name": "パッケージマネージャー",
+  "reading": "ぱっけーじまねーじゃー",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "インフラ",
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "matome:package",
+  "relatedTerms": [
+   "ma-package",
+   "ma-izon"
+  ],
+  "description": "パッケージを 入れたり 版を そろえたり する 道具。使う パッケージと 版を ファイルに 書いておくと、ほかの 人の パソコンでも 同じ 部品を そろえられます。"
+ },
+ {
+  "id": "ma-pattern",
+  "name": "デザインパターン",
+  "reading": "でざいんぱたーん",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-singleton",
+   "ma-factory",
+   "ma-observer"
+  ],
+  "description": "何度も 出てくる 設計の なやみに たいして、先輩たちが 見つけた 解きかたを 型として まとめ、名前を つけた もの。名前を 知っていると、仲間と「ここは あの 型で」と 短く 相談できます。"
+ },
+ {
+  "id": "ma-dry",
+  "name": "DRY原則",
+  "reading": "どらいげんそく",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌵",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-kopipe",
+   "ma-tsukaimawasu"
+  ],
+  "description": "同じ 意味の ことを 何か所にも 書かない と いう 決まり。同じ コードは 関数や 部品に まとめます。ただし 見た目が にているだけの ものを むりに まとめると、かえって 直しにくく なります。"
+ },
+ {
+  "id": "ma-private",
+  "name": "プライベート",
+  "reading": "ぷらいべーと",
+  "journey": "matome",
+  "category": "かくす・約束",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "matome:kakusu",
+  "relatedTerms": [
+   "ma-public",
+   "ma-capsule"
+  ],
+  "description": "その クラスの 中からしか 使えない ように した データや メソッド。外に 見せなくて よい ものを プライベートに すると、うっかり 書きかえられる ことを ふせげます。"
+ },
+ {
+  "id": "ma-public",
+  "name": "パブリック",
+  "reading": "ぱぶりっく",
+  "journey": "matome",
+  "category": "かくす・約束",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔓",
+  "mapNode": "matome:kakusu",
+  "relatedTerms": [
+   "ma-private",
+   "ma-interface"
+  ],
+  "description": "クラスの 外からも 使える ように した データや メソッド。外に 見せた ものは ほかの コードが たよるので、あとから 名前や 形を 変えにくく なります。"
+ },
+ {
+  "id": "ma-namespace",
+  "name": "名前空間",
+  "reading": "なまえくうかん",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-module",
+   "ma-import"
+  ],
+  "description": "名前が ぶつからない ように、部品ごとに 名前の はんいを 分ける しくみ。ちがう ライブラリに 同じ 名前の 関数が あっても、どちらの ものかを 区別できます。",
+  "example": "import math\nmath.floor(2.5)"
+ },
+ {
+  "id": "ma-plugin",
+  "name": "プラグイン",
+  "reading": "ぷらぐいん",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "matome:package",
+  "relatedTerms": [
+   "ma-kakuchou",
+   "ma-interface"
+  ],
+  "description": "決まった 差しこみ口に 合わせて 作る、あとから 足せる 部品。作る がわは 差しこみ口の 約束を 先に 決めておき、中身は ほかの 人も 作れるように します。"
+ },
+ {
+  "id": "ma-component",
+  "name": "コンポーネント",
+  "reading": "こんぽーねんと",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 2,
+  "role": "フロントエンド",
+  "type": "concept",
+  "emoji": "🔲",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-buhin",
+   "ma-composition"
+  ],
+  "description": "画面の ボタンや 一覧など、見た目と 動きを ひとまとめに した 部品。小さな コンポーネントを 組み合わせて、大きな 画面を 作ります。"
+ },
+ {
+  "id": "ma-abstraction",
+  "name": "抽象化",
+  "reading": "ちゅうしょうか",
+  "journey": "matome",
+  "category": "部品の考えかた",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-interface",
+   "ma-abstract"
+  ],
+  "description": "細かい ちがいを いったん わきに 置き、大事な ところだけ 取りだして 考える こと。「車」「自転車」を「乗りもの」と まとめる ように、部品の 共通の 形を 見つけます。"
+ },
+ {
+  "id": "ma-export",
+  "name": "エクスポート",
+  "reading": "えくすぽーと",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📤",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-import",
+   "ma-public"
+  ],
+  "description": "モジュールの 中の ものを、ほかの ファイルから 使えるように 外へ 出す こと。出す ものを しぼると、中の 作りを 変えても こまる 人が へります。",
+  "example": "export function add(a, b) { return a + b }"
+ },
+ {
+  "id": "ma-standard",
+  "name": "標準ライブラリ",
+  "reading": "ひょうじゅんらいぶらり",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "matome:package",
+  "relatedTerms": [
+   "ma-library",
+   "ma-external"
+  ],
+  "description": "言語に はじめから ついてくる ライブラリ。文字や 日付の あつかい、ファイルの 読み書きなど よく 使う 部品が そろっています。まず ここを さがすのが 近道です。"
+ },
+ {
+  "id": "ma-external",
+  "name": "外部ライブラリ",
+  "reading": "がいぶらいぶらり",
+  "journey": "matome",
+  "category": "モジュールとライブラリ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "matome:izon",
+  "relatedTerms": [
+   "ma-standard",
+   "ma-pkgmanager",
+   "ma-izon"
+  ],
+  "description": "ほかの 人が 作って 公開している、言語に ついてこない ライブラリ。便利ですが、入れた ぶんだけ 自分の プログラムが たよる 先も ふえます。"
+ },
+ {
+  "id": "ma-member",
+  "name": "メンバ変数",
+  "reading": "めんばへんすう",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "matome:object",
+  "relatedTerms": [
+   "ma-property",
+   "ma-instance"
+  ],
+  "description": "クラスの 中に 持たせる 変数。インスタンスごとに 別の 値を しまえます。インスタンス変数や フィールドとも よばれます。",
+  "example": "self.count = 0",
+  "acceptedReadings": [
+   "めんばへんすう",
+   "めんばーへんすう"
+  ]
+ },
+ {
+  "id": "ma-classzu",
+  "name": "クラス図",
+  "reading": "くらすず",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🗒",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-class",
+   "ma-keisho"
+  ],
+  "description": "クラスの 名前・持つ データ・メソッドと、クラスどうしの つながりを 箱と 線で 表した 図。書く 前に 図で 話し合うと、作りの まちがいに 早く 気づけます。"
+ },
+ {
+  "id": "ma-polymorphism",
+  "name": "ポリモーフィズム",
+  "reading": "ぽりもーふぃずむ",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎭",
+  "mapNode": "matome:yakusoku",
+  "relatedTerms": [
+   "ma-interface",
+   "ma-override",
+   "ma-ducktyping"
+  ],
+  "description": "同じ 呼びかたで、相手の クラスごとに ちがう 動きを させる しくみ。呼ぶ がわは 相手の 種類を 気に せず 書けるので、新しい 種類が ふえても 直さずに すみます。",
+  "example": "for s in shapes:\n    s.draw()"
+ },
+ {
+  "id": "ma-abstract",
+  "name": "抽象クラス",
+  "reading": "ちゅうしょうくらす",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "matome:yakusoku",
+  "relatedTerms": [
+   "ma-interface",
+   "ma-oyaclass"
+  ],
+  "description": "そのままでは 実物を 作れない、子クラスの ための 親クラス。共通の 中身を 持ちつつ、中身の ない メソッドを 子に かならず 書かせる ことが できます。"
+ },
+ {
+  "id": "ma-mvc",
+  "name": "MVC",
+  "reading": "えむぶいしー",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🗃",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-layer",
+   "ma-separation"
+  ],
+  "description": "プログラムを、データと 決まりを あつかう モデル、画面の ビュー、その あいだを つなぐ コントローラーの 3つに 分ける 型。画面を 変えても データの 処理に ひびきにくく なります。"
+ },
+ {
+  "id": "ma-singleton",
+  "name": "シングルトン",
+  "reading": "しんぐるとん",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "☝",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-pattern",
+   "ma-di"
+  ],
+  "description": "ある クラスの インスタンスを プログラムの 中で 1つだけに する 設計の 型。設定などに 使いますが、どこからでも さわれる 入れものに なりやすく、ためしにくさの 原因にも なります。"
+ },
+ {
+  "id": "ma-static",
+  "name": "静的メソッド",
+  "reading": "せいてきめそっど",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "matome:method",
+  "relatedTerms": [
+   "ma-method",
+   "ma-instance"
+  ],
+  "description": "インスタンスを 作らずに、クラスから じかに 呼べる メソッド。一つ一つの オブジェクトの データを 使わない、計算だけの 道具などに 向いています。",
+  "example": "Math.max(3, 7)"
+ },
+ {
+  "id": "ma-overload",
+  "name": "オーバーロード",
+  "reading": "おーばーろーど",
+  "journey": "matome",
+  "category": "クラスとオブジェクト",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "matome:method",
+  "relatedTerms": [
+   "ma-override",
+   "ma-method"
+  ],
+  "description": "同じ 名前で、受け取る 値の 数や 型が ちがう メソッドを いくつも 用意する こと。言語に よっては できない ものも あります。名前の にた オーバーライドとは 別の ことです。"
+ },
+ {
+  "id": "ma-fp",
+  "name": "関数型プログラミング",
+  "reading": "かんすうがたぷろぐらみんぐ",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-oop",
+   "ma-separation"
+  ],
+  "description": "データを 書きかえるより、値を 受け取って 新しい 値を 返す 関数を 組み合わせて 作る 考えかた。同じ 入力なら 同じ 結果に なるので、ためしやすく まちがいに 強く なります。"
+ },
+ {
+  "id": "ma-sokets",
+  "name": "疎結合",
+  "reading": "そけつごう",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🪢",
+  "mapNode": "matome:izon",
+  "relatedTerms": [
+   "ma-mitsu",
+   "ma-di",
+   "ma-interface"
+  ],
+  "description": "部品どうしの つながりが ゆるく、お互いの 中身を 知らなくても 動く 状態。1つを 取りかえても ほかを 直さずに すむので、大きな プログラムを 育てやすく なります。"
+ },
+ {
+  "id": "ma-mitsu",
+  "name": "密結合",
+  "reading": "みつけつごう",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⛓",
+  "mapNode": "matome:izon",
+  "relatedTerms": [
+   "ma-sokets",
+   "ma-junkan"
+  ],
+  "description": "部品どうしが お互いの 中身に 強く たよっている 状態。1か所 直すと 別の ところまで こわれやすく なります。見つけたら 約束を はさんで つながりを ゆるめます。"
+ },
+ {
+  "id": "ma-di",
+  "name": "依存性の注入",
+  "reading": "いぞんせいのちゅうにゅう",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "💉",
+  "mapNode": "matome:izon",
+  "relatedTerms": [
+   "ma-sokets",
+   "ma-ioc"
+  ],
+  "description": "部品が 使う 相手を 自分の 中で 作らず、外から わたしてもらう 作りかた。ためす ときに にせものの 相手を わたせるので、テストが しやすく なります。",
+  "example": "svc = Mailer(sender=FakeSender())"
+ },
+ {
+  "id": "ma-solid",
+  "name": "SOLID原則",
+  "reading": "そりっどげんそく",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-srp",
+   "ma-ocp"
+  ],
+  "description": "オブジェクト指向で 直しやすい 部品を 作る ための 5つの 決まりの 頭文字を ならべた 名前。単一責任や 開放閉鎖の 原則などが 入っています。"
+ },
+ {
+  "id": "ma-getter",
+  "name": "ゲッター",
+  "reading": "げったー",
+  "journey": "matome",
+  "category": "かくす・約束",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "matome:kakusu",
+  "relatedTerms": [
+   "ma-property",
+   "ma-capsule",
+   "ma-private"
+  ],
+  "description": "かくした データを 外から 読む ための メソッド。書きかえ用は セッターと よびます。直接 さわらせず 通り道を 決めておくと、おかしな 値を はじいたり できます。",
+  "example": "def get_age(self):\n    return self._age"
+ },
+ {
+  "id": "ma-srp",
+  "name": "単一責任の原則",
+  "reading": "たんいつせきにんのげんそく",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "☝",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-solid",
+   "ma-gyoshu"
+  ],
+  "description": "1つの 部品が 変わる 理由は 1つだけに する と いう 決まり。保存と 画面の 表示を 1つの クラスに まぜると、どちらを 直しても もう 一方が こわれやすく なります。"
+ },
+ {
+  "id": "ma-tajuu",
+  "name": "多重継承",
+  "reading": "たじゅうけいしょう",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "matome:keisho",
+  "relatedTerms": [
+   "ma-keisho",
+   "ma-mixin"
+  ],
+  "description": "1つの クラスが、2つ 以上の 親クラスを 同時に 受けつぐ こと。言語に よっては できません。同じ 名前の メソッドが ぶつかる ことが あるので、使う ときは 注意が いります。"
+ },
+ {
+  "id": "ma-mixin",
+  "name": "ミックスイン",
+  "reading": "みっくすいん",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧂",
+  "mapNode": "matome:keisho",
+  "relatedTerms": [
+   "ma-tajuu",
+   "ma-composition"
+  ],
+  "description": "決まった 機能だけを 持つ 小さな クラスを、ほかの クラスに まぜて 足す 方法。親子の 関係を 作らずに、ほしい 機能を 付けたせます。"
+ },
+ {
+  "id": "ma-composition",
+  "name": "コンポジション",
+  "reading": "こんぽじしょん",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "matome:object",
+  "relatedTerms": [
+   "ma-keisho",
+   "ma-component"
+  ],
+  "description": "継承の かわりに、ほかの オブジェクトを 部品として 中に 持たせて 組み立てる こと。「継承より コンポジション」と 言われる ほど、組みかえやすい 作りかたです。",
+  "example": "self.engine = Engine()"
+ },
+ {
+  "id": "ma-gyoshu",
+  "name": "凝集度",
+  "reading": "ぎょうしゅうど",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "matome:module",
+  "relatedTerms": [
+   "ma-srp",
+   "ma-sokets"
+  ],
+  "description": "1つの 部品の 中身が、同じ 目的に どれだけ まとまっているかの めやす。高いほど よい 部品です。「疎結合で 凝集度が 高い」が よい 設計の 合いことば です。"
+ },
+ {
+  "id": "ma-factory",
+  "name": "ファクトリー",
+  "reading": "ふぁくとりー",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-pattern",
+   "ma-constructor"
+  ],
+  "description": "どの クラスの インスタンスを 作るかを 決める 係を 用意する 設計の 型。使う がわは 作りかたを 知らなくて よく、種類が ふえても 直す ところが 1か所で すみます。"
+ },
+ {
+  "id": "ma-observer",
+  "name": "オブザーバー",
+  "reading": "おぶざーばー",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-pattern",
+   "ma-sokets"
+  ],
+  "description": "ある オブジェクトが 変わった とき、それを 見ている 相手に まとめて 知らせる 設計の 型。知らせる がわは 相手の 中身を 知らずに すむので、つながりが ゆるく なります。"
+ },
+ {
+  "id": "ma-adapter",
+  "name": "アダプター",
+  "reading": "あだぷたー",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-wrapper",
+   "ma-interface"
+  ],
+  "description": "形の 合わない 部品どうしの あいだに 入り、呼びかたを 変えて つなぐ 設計の 型。古い 部品を 書きかえずに、新しい 約束に 合わせて 使えます。"
+ },
+ {
+  "id": "ma-facade",
+  "name": "ファサード",
+  "reading": "ふぁさーど",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-wrapper",
+   "ma-pattern"
+  ],
+  "description": "たくさんの 部品の 前に、かんたんな 入口を 1つ 用意する 設計の 型。使う がわは 入口だけを 知って いれば よく、中の 部品の つながりを 気に せずに すみます。"
+ },
+ {
+  "id": "ma-wrapper",
+  "name": "ラッパー",
+  "reading": "らっぱー",
+  "journey": "matome",
+  "category": "かくす・約束",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "matome:kakusu",
+  "relatedTerms": [
+   "ma-blackbox",
+   "ma-adapter"
+  ],
+  "description": "ほかの 部品を 外から つつみ、使いやすい 形に して 見せる 部品。外部ライブラリを 直接 あちこちで 使わず ラッパーを はさむと、あとで 取りかえるのが 楽に なります。"
+ },
+ {
+  "id": "ma-decorator",
+  "name": "デコレーター",
+  "reading": "でこれーたー",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎀",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-wrapper",
+   "ma-pattern"
+  ],
+  "description": "もとの 部品を 書きかえずに、外から かぶせて 機能を 足す 設計の 型。記録を とる、時間を はかる などを、あとから 重ねて 付けられます。",
+  "example": "@cache\ndef load(): pass"
+ },
+ {
+  "id": "ma-strategy",
+  "name": "ストラテジー",
+  "reading": "すとらてじー",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "♟",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-pattern",
+   "ma-interface"
+  ],
+  "description": "やりかたの ちがう 処理を 入れかえられる 部品に 分けておく 設計の 型。たとえば 送りかたを 変えたい とき、呼ぶ がわを 直さずに 部品だけ 取りかえます。"
+ },
+ {
+  "id": "ma-separation",
+  "name": "関心の分離",
+  "reading": "かんしんのぶんり",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "matome:shiko",
+  "relatedTerms": [
+   "ma-mvc",
+   "ma-layer",
+   "ma-srp"
+  ],
+  "description": "画面・決まり・保存など、気に する ことが ちがう コードを 別の 部品に 分ける 考えかた。1つの 変更が ほかの 場所に 広がりにくく なります。"
+ },
+ {
+  "id": "ma-layer",
+  "name": "レイヤー",
+  "reading": "れいやー",
+  "journey": "matome",
+  "category": "設計の型",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "🥞",
+  "mapNode": "matome:pattern",
+  "relatedTerms": [
+   "ma-separation",
+   "ma-mvc"
+  ],
+  "description": "プログラムを 画面・決まり・データの 保存 などの 段に 分けて 重ねる 作り。上の 段は すぐ 下の 段だけを 呼ぶ ように すると、段ごとに 取りかえやすく なります。"
+ },
+ {
+  "id": "ma-junkan",
+  "name": "循環依存",
+  "reading": "じゅんかんいぞん",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "matome:izon",
+  "relatedTerms": [
+   "ma-izon",
+   "ma-mitsu"
+  ],
+  "description": "部品 ア が 部品 イ に たより、イ も ア に たよる ように、つながりが 輪に なる こと。どちらも 切りはなせず、読みこみの 順番で 動かなくなる ことも あります。"
+ },
+ {
+  "id": "ma-ducktyping",
+  "name": "ダックタイピング",
+  "reading": "だっくたいぴんぐ",
+  "journey": "matome",
+  "category": "受けつぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🦆",
+  "mapNode": "matome:yakusoku",
+  "relatedTerms": [
+   "ma-polymorphism",
+   "ma-interface"
+  ],
+  "description": "何の クラスかでは なく、必要な メソッドを 持っているかだけで あつかいを 決める 考えかた。「アヒルの ように 鳴けば アヒル」と いう たとえから きた 名前です。"
+ },
+ {
+  "id": "ma-ioc",
+  "name": "制御の反転",
+  "reading": "せいぎょのはんてん",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "matome:izon",
+  "relatedTerms": [
+   "ma-framework",
+   "ma-di"
+  ],
+  "description": "自分の コードが 全体を 動かすのではなく、土台の がわが 自分の コードを 呼び出す 作り。フレームワークの 考えかたの もとに なっています。"
+ },
+ {
+  "id": "ma-ocp",
+  "name": "開放閉鎖の原則",
+  "reading": "かいほうへいさのげんそく",
+  "journey": "matome",
+  "category": "設計の原則",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "matome:yakusoku",
+  "relatedTerms": [
+   "ma-solid",
+   "ma-polymorphism"
+  ],
+  "description": "部品は 足して 広げる ことには 開いていて、中を 書きかえる ことには 閉じている べき と いう 決まり。新しい 種類を 足す とき、前から ある コードを こわさずに すみます。"
+ }
+]

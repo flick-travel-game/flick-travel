@@ -1,0 +1,1400 @@
+[
+ {
+  "id": "ba-bug",
+  "name": "バグ",
+  "reading": "ばぐ",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🐞",
+  "mapNode": "bug:ronri",
+  "relatedTerms": [
+   "ba-debug",
+   "ba-shusei"
+  ],
+  "description": "プログラムの 中に ある まちがい。どんな プログラマーでも かならず 作って しまう ものなので、見つけて 直す 力が 大事です。まちがえるのは ふつうの ことです。"
+ },
+ {
+  "id": "ba-error",
+  "name": "エラー",
+  "reading": "えらー",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "bug:error",
+  "relatedTerms": [
+   "ba-errmsg",
+   "ba-bug"
+  ],
+  "description": "プログラムが「ここで こまった」と 知らせて 止まる こと。こわい ものでは なく、どこが おかしいかを 教えて くれる 大切な 合図です。"
+ },
+ {
+  "id": "ba-debug",
+  "name": "デバッグ",
+  "reading": "でばっぐ",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "bug:debug",
+  "relatedTerms": [
+   "ba-bug",
+   "ba-cause"
+  ],
+  "description": "バグの 原因を 見つけて 直す 作業。コードを 書く 時間と 同じくらい、デバッグに 時間を 使う ことも よく あります。落ちついて ひとつずつ たしかめるのが こつです。"
+ },
+ {
+  "id": "ba-test",
+  "name": "テスト",
+  "reading": "てすと",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 1,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-kakunin",
+   "ba-unittest"
+  ],
+  "description": "書いた コードが 決めた とおりに 動くかを、答えと くらべて たしかめる こと。直した あとも くりかえし ためせる ように、テストも コードで 書いて おくのが ふつうです。"
+ },
+ {
+  "id": "ba-shusei",
+  "name": "修正",
+  "reading": "しゅうせい",
+  "journey": "bug",
+  "category": "直す・ふせぐ",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "bug:fix",
+  "relatedTerms": [
+   "ba-bug",
+   "ba-test"
+  ],
+  "description": "バグの 原因に なった コードを 書きかえる こと。直したら 本当に 直ったか、ほかの ところを こわして いないかを テストで たしかめるまでが 修正です。"
+ },
+ {
+  "id": "ba-errmsg",
+  "name": "エラーメッセージ",
+  "reading": "えらーめっせーじ",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "bug:error",
+  "relatedTerms": [
+   "ba-error",
+   "ba-gyo"
+  ],
+  "description": "エラーが 出た ときに 表示される 文。何が まちがいで、何行目で 起きたかが 書いて あります。英語でも あわてず、さいごまで 読むのが 直す 近道です。",
+  "example": "NameError: name 'scor' is not defined"
+ },
+ {
+  "id": "ba-cause",
+  "name": "原因",
+  "reading": "げんいん",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "bug:debug",
+  "relatedTerms": [
+   "ba-debug",
+   "ba-konpon"
+  ],
+  "description": "バグが 起きる もとに なって いる ところ。エラーが 出た 場所と 原因の 場所は ちがう ことも 多いので、ひとつずつ さかのぼって さがします。"
+ },
+ {
+  "id": "ba-fuguai",
+  "name": "不具合",
+  "reading": "ふぐあい",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "bug:ronri",
+  "relatedTerms": [
+   "ba-bug",
+   "ba-report"
+  ],
+  "description": "プログラムが 決めた とおりに 動かない こと。仕事では バグと ほぼ 同じ 意味で 使い、見つけたら 記録を 残して、直す 順番を みんなで 決めます。"
+ },
+ {
+  "id": "ba-typo",
+  "name": "タイプミス",
+  "reading": "たいぷみす",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⌨️",
+  "mapNode": "bug:kobun",
+  "relatedTerms": [
+   "ba-kobun",
+   "ba-case"
+  ],
+  "description": "キーボードで 字を 打ちまちがえる こと。人の 目には 気づきにくい 1字の ちがいでも、コードでは 見つからない 名前として エラーに なります。まず うたがう 原因の 1つです。",
+  "example": "print(scor)\nprint(score)"
+ },
+ {
+  "id": "ba-kakunin",
+  "name": "動作確認",
+  "reading": "どうさかくにん",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 1,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-test",
+   "ba-saigen"
+  ],
+  "description": "作った ものを 実際に 動かして、思った とおりに なるかを 目で たしかめる こと。自分で さわって ためすのは、テストの はじめの 一歩です。"
+ },
+ {
+  "id": "ba-keikoku",
+  "name": "警告",
+  "reading": "けいこく",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "bug:error",
+  "relatedTerms": [
+   "ba-error",
+   "ba-linter"
+  ],
+  "description": "止まりは しないけれど「ここは あやしいかも」と 知らせて くれる 合図。いまは 動いても あとで バグに なる ことが あるので、見のがさずに 直すのが よい 習慣です。"
+ },
+ {
+  "id": "ba-freeze",
+  "name": "フリーズ",
+  "reading": "ふりーず",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-crash",
+   "ba-deadlock"
+  ],
+  "description": "プログラムが 動いて いるのに 先へ 進まず、入力を 受けつけなく なる こと。終わらない くりかえしや、いつまでも 待ちつづける 処理が 原因の ことが 多いです。"
+ },
+ {
+  "id": "ba-crash",
+  "name": "クラッシュ",
+  "reading": "くらっしゅ",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-freeze",
+   "ba-runtime"
+  ],
+  "description": "思いがけない まちがいで、プログラムが 自分では 立てなおせずに 終わる こと。落ちる 直前の 記録を 見ると、原因の 手がかりが 見つかります。"
+ },
+ {
+  "id": "ba-saigen",
+  "name": "再現",
+  "reading": "さいげん",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "bug:saigen",
+  "relatedTerms": [
+   "ba-tejun",
+   "ba-saigensei"
+  ],
+  "description": "バグを わざと もう一度 起こす こと。同じ 手順で かならず 起こせれば、原因を さがしやすく、直ったかどうかも たしかめられます。"
+ },
+ {
+  "id": "ba-log",
+  "name": "ログ",
+  "reading": "ろぐ",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "bug:log",
+  "relatedTerms": [
+   "ba-printdebug",
+   "ba-loglevel"
+  ],
+  "description": "プログラムが 動いた 足あとを、時こくと いっしょに 書き出して おく もの。どこまで 動いたか・何が 入って いたかが 分かり、あとから 原因を たどれます。",
+  "example": "log.info(\"start\")"
+ },
+ {
+  "id": "ba-gyo",
+  "name": "行番号",
+  "reading": "ぎょうばんごう",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "bug:error",
+  "relatedTerms": [
+   "ba-errmsg",
+   "ba-stacktrace"
+  ],
+  "description": "コードの 行に ついた 番号。エラーメッセージには 何行目で 止まったかが 出るので、まず その 行と、その すぐ 上の 行を 見るのが 基本です。"
+ },
+ {
+  "id": "ba-shikou",
+  "name": "試行錯誤",
+  "reading": "しこうさくご",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "bug:fix",
+  "relatedTerms": [
+   "ba-debug",
+   "ba-kakunin"
+  ],
+  "description": "ためして、うまく いかなければ 考えなおして、また ためす こと。プログラミングは この くりかえしで 上達します。小さく 作って こまめに 動かすのが こつです。"
+ },
+ {
+  "id": "ba-zenkaku",
+  "name": "全角と半角",
+  "reading": "ぜんかくとはんかく",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "bug:kobun",
+  "relatedTerms": [
+   "ba-typo",
+   "ba-kobun"
+  ],
+  "description": "同じ 字に 見えても、はばの 広い 全角と、せまい 半角は 別の 字です。コードの 記号や 空白を 全角で 打つと、書きかたの まちがいに なります。",
+  "example": "コードの 中の かっこや 空白が 全角に なって いると、見た目は 正しくても 動きません。"
+ },
+ {
+  "id": "ba-case",
+  "name": "大文字と小文字",
+  "reading": "おおもじとこもじ",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔠",
+  "mapNode": "bug:kobun",
+  "relatedTerms": [
+   "ba-typo",
+   "ba-errmsg"
+  ],
+  "description": "多くの 言語では 英字の 大文字と 小文字を 別の 字として あつかいます。名前を 大文字で 作ったら、呼ぶ ときも 同じに そろえないと 見つからない エラーに なります。",
+  "example": "Score = 1\nprint(Score)"
+ },
+ {
+  "id": "ba-report",
+  "name": "バグ報告",
+  "reading": "ばぐほうこく",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 1,
+  "role": "チーム",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "bug:saigen",
+  "relatedTerms": [
+   "ba-tejun",
+   "ba-fuguai"
+  ],
+  "description": "見つけた バグを 直す 人に 知らせる こと。何を したら・どう なるはずが・どう なったかの 3つと、再現の 手順を 書くと、直す 人が すぐ 動けます。"
+ },
+ {
+  "id": "ba-kobun",
+  "name": "構文エラー",
+  "reading": "こうぶんえらー",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "bug:kobun",
+  "relatedTerms": [
+   "ba-runtime",
+   "ba-ronrierr"
+  ],
+  "description": "言語の 書きかたの 決まりを 守れて いない ときの エラー。動かす 前に 見つかるので、3つの エラーの 中では 直しやすい ほうです。かっこや 引用符の 閉じわすれが 多いです。",
+  "example": "print(\"hi\"\nprint(\"hi\")"
+ },
+ {
+  "id": "ba-runtime",
+  "name": "実行時エラー",
+  "reading": "じっこうじえらー",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-kobun",
+   "ba-zerodiv"
+  ],
+  "description": "書きかたは 正しいのに、動かして いる とちゅうで 起きる エラー。ない ファイルを 開く、0で わる など、そのときの データしだいで 出たり 出なかったり します。"
+ },
+ {
+  "id": "ba-ronrierr",
+  "name": "論理エラー",
+  "reading": "ろんりえらー",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🤔",
+  "mapNode": "bug:ronri",
+  "relatedTerms": [
+   "ba-runtime",
+   "ba-kitaichi"
+  ],
+  "description": "エラーは 出ずに 最後まで 動くのに、答えが まちがって いる バグ。コンピュータは 教えて くれないので、テストで 答えを くらべて 見つけます。3つの 中で 見つけにくい バグです。",
+  "example": "avg = a + b / 2\navg = (a + b) / 2"
+ },
+ {
+  "id": "ba-reigai",
+  "name": "例外",
+  "reading": "れいがい",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🚨",
+  "mapNode": "bug:reigai",
+  "relatedTerms": [
+   "ba-reigaishori",
+   "ba-throw"
+  ],
+  "description": "ふつうの ながれでは 進めない ことが 起きた、と 知らせる しくみ。例外が 起きると 処理が そこで 止まり、受けとめる 場所まで さかのぼって 伝わります。"
+ },
+ {
+  "id": "ba-reigaishori",
+  "name": "例外処理",
+  "reading": "れいがいしょり",
+  "journey": "bug",
+  "category": "直す・ふせぐ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🥅",
+  "mapNode": "bug:reigai",
+  "relatedTerms": [
+   "ba-reigai",
+   "ba-nigiri"
+  ],
+  "description": "例外が 起きた ときに プログラムを 落とさず、どう 立てなおすかを 書いて おく こと。何が 起きたかを 記録して、使う 人に 分かる 知らせを 出すのが 大事です。",
+  "example": "try: n = int(text)\nexcept ValueError: n = 0"
+ },
+ {
+  "id": "ba-stacktrace",
+  "name": "スタックトレース",
+  "reading": "すたっくとれーす",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧵",
+  "mapNode": "bug:error",
+  "relatedTerms": [
+   "ba-gyo",
+   "ba-errmsg"
+  ],
+  "description": "エラーが 起きた とき、どの 関数から どの 関数を 呼んで ここに 来たかを 順に ならべた 記録。自分の 書いた ファイルの 行を さがすと、原因に 近づけます。"
+ },
+ {
+  "id": "ba-debugger",
+  "name": "デバッガー",
+  "reading": "でばっがー",
+  "journey": "bug",
+  "category": "道具",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "bug:dogu",
+  "relatedTerms": [
+   "ba-breakpoint",
+   "ba-step"
+  ],
+  "description": "動いて いる プログラムを 止めたり、1行ずつ 進めたり、変数の 中身を のぞいたり できる 道具。エディターに 入って いる ことが 多いです。"
+ },
+ {
+  "id": "ba-breakpoint",
+  "name": "ブレークポイント",
+  "reading": "ぶれーくぽいんと",
+  "journey": "bug",
+  "category": "道具",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "bug:dogu",
+  "relatedTerms": [
+   "ba-debugger",
+   "ba-condbp"
+  ],
+  "description": "デバッガーに「ここに 来たら 一度 止まって」と たのむ しるし。止まった しゅんかんの 変数の 中身が 見られるので、どこから おかしく なったかが 分かります。"
+ },
+ {
+  "id": "ba-step",
+  "name": "ステップ実行",
+  "reading": "すてっぷじっこう",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "👣",
+  "mapNode": "bug:debug",
+  "relatedTerms": [
+   "ba-breakpoint",
+   "ba-debugger"
+  ],
+  "description": "プログラムを 1行ずつ 進めて、そのたびに 変数の 変わりかたを 見る やりかた。思って いた ながれと、本当の ながれが ずれた 場所が 見つかります。"
+ },
+ {
+  "id": "ba-printdebug",
+  "name": "プリントデバッグ",
+  "reading": "ぷりんとでばっぐ",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🖨",
+  "mapNode": "bug:log",
+  "relatedTerms": [
+   "ba-log",
+   "ba-debugger"
+  ],
+  "description": "あやしい 場所に 変数の 中身を 表示する 行を 足して、動きを たしかめる やりかた。どの 言語でも すぐ できる、手がるで 役に 立つ 方法です。終わったら 消します。",
+  "example": "print(\"total:\", total)"
+ },
+ {
+  "id": "ba-tejun",
+  "name": "再現手順",
+  "reading": "さいげんてじゅん",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 2,
+  "role": "チーム",
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "bug:saigen",
+  "relatedTerms": [
+   "ba-saigen",
+   "ba-report"
+  ],
+  "description": "バグを もう一度 起こす ための 手順を、番号を つけて 書いた もの。だれが やっても 同じ 結果に なるまで くわしく 書くと、直す 人も 直ったかを たしかめられます。"
+ },
+ {
+  "id": "ba-unittest",
+  "name": "単体テスト",
+  "reading": "たんたいてすと",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 2,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-ketsugo",
+   "ba-assert"
+  ],
+  "description": "関数など 小さな 部品 1つだけを 取り出して、正しく 動くかを たしかめる テスト。すぐ 終わるので、コードを 直す たびに 何回でも 走らせられます。",
+  "acceptedReadings": [
+   "たんたいてすと",
+   "ゆにっとてすと"
+  ],
+  "example": "assert add(2, 3) == 5"
+ },
+ {
+  "id": "ba-ketsugo",
+  "name": "結合テスト",
+  "reading": "けつごうてすと",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 2,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-unittest",
+   "ba-e2e"
+  ],
+  "description": "部品を つなげた ときに、正しく いっしょに 動くかを たしかめる テスト。1つずつは 正しくても、つなぐと 受けわたしで ずれる ことが あるからです。"
+ },
+ {
+  "id": "ba-testcase",
+  "name": "テストケース",
+  "reading": "てすとけーす",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 2,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-kitaichi",
+   "ba-kyokai"
+  ],
+  "description": "何を 入れたら 何が 返るはずか、を 1つ 決めた ためしの 組み合わせ。ふつうの 場合・はしっこの 場合・まちがった 入力の 場合を そろえると、もれが へります。"
+ },
+ {
+  "id": "ba-kitaichi",
+  "name": "期待値",
+  "reading": "きたいち",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 2,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-testcase",
+   "ba-assert"
+  ],
+  "description": "テストで「正しければ こう なるはず」と 先に 決めて おく 答え。実際の 結果と 期待値を くらべ、ちがえば テストが 失敗と 知らせます。",
+  "example": "assert total([1, 2]) == 3"
+ },
+ {
+  "id": "ba-kyokai",
+  "name": "境界値",
+  "reading": "きょうかいち",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 2,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-testcase",
+   "ba-offbyone"
+  ],
+  "description": "結果が 切りかわる さかいめの 数。たとえば 10まで よい なら、9・10・11を ためします。バグは さかいめに かくれやすいので、テストで かならず たしかめます。"
+ },
+ {
+  "id": "ba-edge",
+  "name": "エッジケース",
+  "reading": "えっじけーす",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 2,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-kyokai",
+   "ba-testcase"
+  ],
+  "description": "ふだんは まず 起きない、はしっこの 場合。空っぽの 入力・0・とても 大きな 数などです。ここを わすれると、本番で はじめて バグが 見つかります。",
+  "example": "total([])"
+ },
+ {
+  "id": "ba-typeerr",
+  "name": "型エラー",
+  "reading": "かたえらー",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔣",
+  "mapNode": "bug:error",
+  "relatedTerms": [
+   "ba-runtime",
+   "ba-kobun"
+  ],
+  "description": "数と 文字を 足すなど、中身の しゅるいが 合わない 使いかたを した ときの エラー。言語に よって、動かす 前に 見つかる ことも、動かして から 出る ことも あります。",
+  "example": "\"age: \" + 10\n\"age: \" + str(10)"
+ },
+ {
+  "id": "ba-nullref",
+  "name": "ヌル参照",
+  "reading": "ぬるさんしょう",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🕳",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-runtime",
+   "ba-fallback"
+  ],
+  "description": "中身が 何も ない 入れものを、あるものと 思って 使おうと して 起きる エラー。とても よく ある バグで、使う 前に 空でないかを たしかめて ふせぎます。"
+ },
+ {
+  "id": "ba-hanigai",
+  "name": "範囲外エラー",
+  "reading": "はんいがいえらー",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-offbyone",
+   "ba-runtime"
+  ],
+  "description": "ならべた データの ない 番号を 取ろうと して 起きる エラー。3つ しか ないのに 4つめを 取る など、数えまちがいが 原因の ことが 多いです。",
+  "example": "items = [1, 2, 3]\nitems[3]"
+ },
+ {
+  "id": "ba-zerodiv",
+  "name": "ゼロ除算",
+  "reading": "ぜろじょざん",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-runtime",
+   "ba-edge"
+  ],
+  "description": "わる 数が 0の わり算。算数でも 答えが 決まらないので、整数なら エラーに なる 言語が 多いです。人数が 0人の ときの 平均など、わる 前に たしかめます。",
+  "example": "if count > 0: avg = total / count"
+ },
+ {
+  "id": "ba-kaiki",
+  "name": "回帰テスト",
+  "reading": "かいきてすと",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 2,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "bug:mamoru",
+  "relatedTerms": [
+   "ba-degure",
+   "ba-unittest"
+  ],
+  "description": "前に 通った テストを、コードを 変える たびに 全部 流しなおす こと。新しい 変更が 古い 機能を こわして いないかを、機械に 見はらせます。",
+  "acceptedReadings": [
+   "かいきてすと",
+   "りぐれっしょんてすと"
+  ]
+ },
+ {
+  "id": "ba-degure",
+  "name": "デグレ",
+  "reading": "でぐれ",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 2,
+  "role": "チーム",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "bug:mamoru",
+  "relatedTerms": [
+   "ba-kaiki",
+   "ba-shusei"
+  ],
+  "description": "「デグレード」の 略で、前より 悪く なる こと。ある 修正が、つながって いる 別の 機能を いつの まにか こわして しまう 事故です。回帰テストで ふせぎます。"
+ },
+ {
+  "id": "ba-loglevel",
+  "name": "ログレベル",
+  "reading": "ろぐれべる",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 2,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "🎚",
+  "mapNode": "bug:log",
+  "relatedTerms": [
+   "ba-log",
+   "ba-structlog"
+  ],
+  "description": "ログに つける だいじさの 段。くわしい 手がかり・ふつうの 知らせ・注意・エラー などに 分け、ふだんは だいじな ものだけ 出して、しらべる ときに くわしく します。",
+  "example": "log.warning(\"disk almost full\")"
+ },
+ {
+  "id": "ba-linter",
+  "name": "リンター",
+  "reading": "りんたー",
+  "journey": "bug",
+  "category": "道具",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "bug:dogu",
+  "relatedTerms": [
+   "ba-static",
+   "ba-keikoku"
+  ],
+  "description": "コードを 動かさずに 読んで、まちがいや あやしい 書きかたを 教えて くれる 道具。使って いない 変数や、名前の 打ちまちがいを 書いた その場で 見つけられます。"
+ },
+ {
+  "id": "ba-commentout",
+  "name": "コメントアウト",
+  "reading": "こめんとあうと",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "💤",
+  "mapNode": "bug:debug",
+  "relatedTerms": [
+   "ba-kiriwake",
+   "ba-printdebug"
+  ],
+  "description": "コードの 行を 消さずに、説明文の あつかいに して 一時的に 動かなく する こと。あやしい 行を 止めて ようすを 見る ときに 使います。",
+  "example": "# total = total * 2"
+ },
+ {
+  "id": "ba-rubberduck",
+  "name": "ラバーダックデバッグ",
+  "reading": "らばーだっくでばっぐ",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🦆",
+  "mapNode": "bug:debug",
+  "relatedTerms": [
+   "ba-kiriwake",
+   "ba-shikou"
+  ],
+  "description": "コードの 動きを 1行ずつ、声に 出して だれかに 説明する やりかた。相手は おもちゃの アヒルでも かまいません。説明して いる とちゅうで、自分で まちがいに 気づけます。"
+ },
+ {
+  "id": "ba-kiriwake",
+  "name": "切り分け",
+  "reading": "きりわけ",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "bug:debug",
+  "relatedTerms": [
+   "ba-cause",
+   "ba-saishosaigen"
+  ],
+  "description": "原因が どこに あるかを、はんいを せばめて しぼりこむ こと。半分ずつ 止めて ためすと、あやしい 場所が どんどん 小さく なります。"
+ },
+ {
+  "id": "ba-hotfix",
+  "name": "ホットフィックス",
+  "reading": "ほっとふぃっくす",
+  "journey": "bug",
+  "category": "直す・ふせぐ",
+  "difficulty": 2,
+  "role": "チーム",
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "bug:fix",
+  "relatedTerms": [
+   "ba-shusei",
+   "ba-konpon"
+  ],
+  "description": "本番で 起きた 急ぎの バグだけを、ふだんの 順番を 待たずに 直して 出す 修正。すぐ とどける ことを 先に し、根本の 直しは あとで ていねいに 行います。"
+ },
+ {
+  "id": "ba-errcode",
+  "name": "エラーコード",
+  "reading": "えらーこーど",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "bug:error",
+  "relatedTerms": [
+   "ba-errmsg",
+   "ba-reigai"
+  ],
+  "description": "エラーの しゅるいごとに つけた 番号や 名前。同じ 番号なら 同じ しゅるいの こまりごとなので、しらべたり、プログラムで 見分けて 対応を 変えたり できます。",
+  "example": "404"
+ },
+ {
+  "id": "ba-tdd",
+  "name": "テスト駆動開発",
+  "reading": "てすとくどうかいはつ",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 3,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "bug:mamoru",
+  "relatedTerms": [
+   "ba-unittest",
+   "ba-kaiki"
+  ],
+  "description": "先に 失敗する テストを 書き、それが 通る いちばん 小さな コードを 書き、最後に 読みやすく ととのえる、を くりかえす 作りかた。何を 作るかが はっきりし、直すのも こわく なくなります。"
+ },
+ {
+  "id": "ba-static",
+  "name": "静的解析",
+  "reading": "せいてきかいせき",
+  "journey": "bug",
+  "category": "道具",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "bug:dogu",
+  "relatedTerms": [
+   "ba-linter",
+   "ba-typeerr"
+  ],
+  "description": "プログラムを 動かさずに、コードを 読むだけで バグの 種を さがす 方法。型の 食いちがいや、空の 入れものを 使う おそれなどを、動かす 前に 見つけられます。"
+ },
+ {
+  "id": "ba-memleak",
+  "name": "メモリリーク",
+  "reading": "めもりりーく",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-crash",
+   "ba-freeze"
+  ],
+  "description": "もう いらない データの ために、メモリを ずっと 取ったまま 手ばなさない バグ。少しずつ ふえるので すぐには 気づかず、何日も 動かす サーバーなどで 問題に なります。"
+ },
+ {
+  "id": "ba-mock",
+  "name": "モック",
+  "reading": "もっく",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 3,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🎭",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-stub",
+   "ba-unittest"
+  ],
+  "description": "テストの ときだけ 本物の かわりに 使う にせものの 部品。よそへの 通信などを まねし、正しく 呼ばれたかも たしかめられます。テストが 速く、毎回 同じ 結果に なります。"
+ },
+ {
+  "id": "ba-coverage",
+  "name": "カバレッジ",
+  "reading": "かばれっじ",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 3,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-unittest",
+   "ba-testpyramid"
+  ],
+  "description": "テストが コードの どれだけの 行や 分かれ道を 通ったかの わりあい。通って いない ところを 見つけるのに 役立ちます。ただし 高くても、答えを 正しく くらべて いなければ 意味が ありません。"
+ },
+ {
+  "id": "ba-assert",
+  "name": "アサーション",
+  "reading": "あさーしょん",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 3,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-kitaichi",
+   "ba-failfast"
+  ],
+  "description": "「ここでは かならず こう なって いるはず」と コードの 中で たしかめる 一文。ちがって いたら その場で 止まるので、まちがいが 遠くまで 広がる 前に 気づけます。",
+  "example": "assert count >= 0"
+ },
+ {
+  "id": "ba-konpon",
+  "name": "根本原因",
+  "reading": "こんぽんげんいん",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "bug:debug",
+  "relatedTerms": [
+   "ba-cause",
+   "ba-retry"
+  ],
+  "description": "表に 出た エラーの 奥に ある、本当の もと。見えて いる ところだけ 直すと、形を 変えて また 出ます。「なぜ」を 何回も たずねて、根っこまで さかのぼります。"
+ },
+ {
+  "id": "ba-throw",
+  "name": "例外を投げる",
+  "reading": "れいがいをなげる",
+  "journey": "bug",
+  "category": "直す・ふせぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🥎",
+  "mapNode": "bug:reigai",
+  "relatedTerms": [
+   "ba-reigai",
+   "ba-reigaishori"
+  ],
+  "description": "続けられない ことに 気づいた ときに、自分で 例外を 起こして 呼んだ 側に 知らせる こと。まちがった 値を だまって 使いつづけるより、早く 気づけます。",
+  "example": "raise ValueError(\"age must be >= 0\")"
+ },
+ {
+  "id": "ba-nigiri",
+  "name": "例外の握りつぶし",
+  "reading": "れいがいのにぎりつぶし",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🤐",
+  "mapNode": "bug:reigai",
+  "relatedTerms": [
+   "ba-reigaishori",
+   "ba-failfast"
+  ],
+  "description": "例外を 受けとめたのに 何も せず、記録も 残さずに 先へ 進める こと。エラーが 消えた ように 見えて、あとで 原因の 分からない バグに なります。さけたい 書きかたです。",
+  "example": "try: save()\nexcept Exception: pass"
+ },
+ {
+  "id": "ba-e2e",
+  "name": "E2Eテスト",
+  "reading": "いーつーいーてすと",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 3,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-ketsugo",
+   "ba-testpyramid"
+  ],
+  "description": "使う 人と 同じ ように 画面を 操作して、はじめから 終わりまで 通して たしかめる テスト。いちばん 本物に 近い かわりに、時間が かかり、こわれやすい ところが あります。",
+  "acceptedReadings": [
+   "いーつーいーてすと",
+   "えんどつーえんどてすと"
+  ]
+ },
+ {
+  "id": "ba-stackoverflow",
+  "name": "スタックオーバーフロー",
+  "reading": "すたっくおーばーふろー",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-crash",
+   "ba-runtime"
+  ],
+  "description": "関数の 呼び出しを 記録する 場所に、終わらない 呼び出しが 積み重なって 入りきらなく なる エラー。自分を 呼ぶ 関数で、止まる 条件が まちがって いる ときに よく 起きます。"
+ },
+ {
+  "id": "ba-race",
+  "name": "レースコンディション",
+  "reading": "れーすこんでぃしょん",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-deadlock",
+   "ba-heisenbug"
+  ],
+  "description": "いくつかの 処理が 同時に 同じ データを さわり、どちらが 先に 動くかで 結果が 変わって しまう バグ。起きたり 起きなかったり するので、見つけにくい バグの 代表です。"
+ },
+ {
+  "id": "ba-deadlock",
+  "name": "デッドロック",
+  "reading": "でっどろっく",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-race",
+   "ba-freeze"
+  ],
+  "description": "ふたつの 処理が おたがいに 相手の 持って いる ものを 待ちつづけて、どちらも 進めなく なる こと。エラーも 出ずに 止まった ままに なります。"
+ },
+ {
+  "id": "ba-saigensei",
+  "name": "再現性",
+  "reading": "さいげんせい",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "bug:saigen",
+  "relatedTerms": [
+   "ba-saigen",
+   "ba-heisenbug"
+  ],
+  "description": "同じ 手順で、同じ バグが 毎回 起きるかどうか。起きる 条件が 決まれば 直した あとも たしかめられます。ときどき しか 起きない ときは、時こくや 順番などの 条件を 記録して しぼります。"
+ },
+ {
+  "id": "ba-saishosaigen",
+  "name": "最小再現例",
+  "reading": "さいしょうさいげんれい",
+  "journey": "bug",
+  "category": "しらべかた",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "bug:saigen",
+  "relatedTerms": [
+   "ba-kiriwake",
+   "ba-tejun"
+  ],
+  "description": "バグが 起きる まま、関係ない ところを けずりに けずった 小さな コード。作る とちゅうで 原因が 分かる ことも 多く、人に 相談する ときにも 伝わりやすく なります。"
+ },
+ {
+  "id": "ba-stub",
+  "name": "スタブ",
+  "reading": "すたぶ",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 3,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🪵",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-mock",
+   "ba-unittest"
+  ],
+  "description": "テストの ために、決まった 答えだけを 返す かんたんな 代わりの 部品。まだ できて いない 部品や、時こくで 答えが 変わる 部品を 置きかえて、テストを 安定させます。",
+  "example": "def now(): return \"2026-01-01\""
+ },
+ {
+  "id": "ba-fallback",
+  "name": "フォールバック",
+  "reading": "ふぉーるばっく",
+  "journey": "bug",
+  "category": "直す・ふせぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🪂",
+  "mapNode": "bug:mamoru",
+  "relatedTerms": [
+   "ba-defensive",
+   "ba-nullref"
+  ],
+  "description": "いつもの やりかたが 失敗した ときに、かわりに 使う 予備の やりかた。たとえば 絵が 読みこめない ときは 代わりの 絵を 出して、画面が こわれないように します。"
+ },
+ {
+  "id": "ba-defensive",
+  "name": "防御的プログラミング",
+  "reading": "ぼうぎょてきぷろぐらみんぐ",
+  "journey": "bug",
+  "category": "直す・ふせぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "bug:mamoru",
+  "relatedTerms": [
+   "ba-fallback",
+   "ba-assert"
+  ],
+  "description": "おかしな 値が 来るかも しれない、と 考えて 先に 守りを 入れて おく 書きかた。入口で たしかめ、ありえない ことが 起きたら すぐ 知らせる ように します。"
+ },
+ {
+  "id": "ba-structlog",
+  "name": "構造化ログ",
+  "reading": "こうぞうかろぐ",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "🗂",
+  "mapNode": "bug:log",
+  "relatedTerms": [
+   "ba-loglevel",
+   "ba-log"
+  ],
+  "description": "ログを ただの 文では なく、名前と 値の 組で 書き出す やりかた。あとで 道具で しぼりこみや 数えあげが できるので、たくさんの ログから 手がかりを 見つけやすく なります。",
+  "example": "{\"level\": \"error\", \"user\": 42}"
+ },
+ {
+  "id": "ba-condbp",
+  "name": "条件付きブレークポイント",
+  "reading": "じょうけんつきぶれーくぽいんと",
+  "journey": "bug",
+  "category": "道具",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "bug:dogu",
+  "relatedTerms": [
+   "ba-breakpoint",
+   "ba-watch"
+  ],
+  "description": "決めた 条件の ときだけ 止まる ブレークポイント。何千回 まわる くりかえしの 中で、おかしな 値に なった 1回だけを つかまえられます。",
+  "example": "i == 999"
+ },
+ {
+  "id": "ba-watch",
+  "name": "ウォッチ式",
+  "reading": "うぉっちしき",
+  "journey": "bug",
+  "category": "道具",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "👁",
+  "mapNode": "bug:dogu",
+  "relatedTerms": [
+   "ba-debugger",
+   "ba-condbp"
+  ],
+  "description": "デバッガーで 見はって おく 変数や 式。1行 進める たびに 中身が 表示されるので、値が どこで 変わったかを 追いかけられます。",
+  "example": "total / count"
+ },
+ {
+  "id": "ba-flaky",
+  "name": "フレーキーテスト",
+  "reading": "ふれーきーてすと",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 3,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-race",
+   "ba-saigensei"
+  ],
+  "description": "コードを 変えて いないのに、通ったり 失敗したり する テスト。時こく・順番・通信などに たよって いる ことが 多く、放って おくと テストが 信じられなく なります。"
+ },
+ {
+  "id": "ba-offbyone",
+  "name": "オフバイワンエラー",
+  "reading": "おふばいわんえらー",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "bug:ronri",
+  "relatedTerms": [
+   "ba-kyokai",
+   "ba-hanigai"
+  ],
+  "description": "数えまちがいで、くりかえしが 1回 多い・少ない バグ。0から 数えるか 1から 数えるか、さいごを 入れるか 入れないかで 起きます。境界値の テストで 見つけます。",
+  "example": "for i in range(1, n): print(i)\nfor i in range(1, n + 1): print(i)"
+ },
+ {
+  "id": "ba-mitegi",
+  "name": "未定義動作",
+  "reading": "みていぎどうさ",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "bug:jikko",
+  "relatedTerms": [
+   "ba-hanigai",
+   "ba-heisenbug"
+  ],
+  "description": "言語の 決まりで「どう なるか 決めて いない」と された 使いかた。たまたま 動く ことも あれば、別の 機械で こわれる ことも あり、しらべにくい バグの もとに なります。"
+ },
+ {
+  "id": "ba-crashreport",
+  "name": "クラッシュレポート",
+  "reading": "くらっしゅれぽーと",
+  "journey": "bug",
+  "category": "手がかり",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "bug:log",
+  "relatedTerms": [
+   "ba-crash",
+   "ba-stacktrace"
+  ],
+  "description": "プログラムが 落ちた ときに、自動で 集められる 記録。その ときの 呼び出しの 順番や 動いて いた 環境が 入って いて、手もとで 起きない バグの 手がかりに なります。"
+ },
+ {
+  "id": "ba-failfast",
+  "name": "フェイルファスト",
+  "reading": "ふぇいるふぁすと",
+  "journey": "bug",
+  "category": "直す・ふせぐ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "bug:mamoru",
+  "relatedTerms": [
+   "ba-assert",
+   "ba-nigiri"
+  ],
+  "description": "おかしな ことに 気づいたら、ごまかさずに すぐ 止めて 知らせる 考えかた。まちがいが 生まれた 場所の 近くで 止まるので、原因が 見つけやすく なります。"
+ },
+ {
+  "id": "ba-testpyramid",
+  "name": "テストピラミッド",
+  "reading": "てすとぴらみっど",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 3,
+  "role": "テスト",
+  "type": "concept",
+  "emoji": "🔺",
+  "mapNode": "bug:test",
+  "relatedTerms": [
+   "ba-unittest",
+   "ba-e2e"
+  ],
+  "description": "テストの 数の つりあいを 三角形で あらわした 考えかた。速い 単体テストを 土台に たくさん、結合テストを その 上に、時間の かかる 画面の テストは 少しだけ 置きます。"
+ },
+ {
+  "id": "ba-fuzzing",
+  "name": "ファジング",
+  "reading": "ふぁじんぐ",
+  "journey": "bug",
+  "category": "テスト",
+  "difficulty": 3,
+  "role": "セキュリティ",
+  "type": "concept",
+  "emoji": "🌪",
+  "mapNode": "bug:mamoru",
+  "relatedTerms": [
+   "ba-fallback",
+   "ba-edge"
+  ],
+  "description": "でたらめな 入力を 大量に 自動で 作って 流しこみ、落ちたり おかしく なったり しないかを たしかめる テスト。人が 思いつかない はしっこの バグや、守りの あなを 見つけます。"
+ },
+ {
+  "id": "ba-retry",
+  "name": "リトライ",
+  "reading": "りとらい",
+  "journey": "bug",
+  "category": "直す・ふせぐ",
+  "difficulty": 3,
+  "role": "チーム",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "bug:mamoru",
+  "relatedTerms": [
+   "ba-fallback",
+   "ba-flaky"
+  ],
+  "description": "通信の みだれなど すぐ 直る かもしれない 失敗の とき、少し 待ってから もう一度 ためす こと。何度まで ためすかを 決めておかないと、終わらなく なります。"
+ },
+ {
+  "id": "ba-heisenbug",
+  "name": "ハイゼンバグ",
+  "reading": "はいぜんばぐ",
+  "journey": "bug",
+  "category": "エラーの種類",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "👻",
+  "mapNode": "bug:saigen",
+  "relatedTerms": [
+   "ba-race",
+   "ba-saigensei"
+  ],
+  "description": "しらべようと すると 消えて しまう バグ。記録の 行を 足したり デバッガーで 止めたり すると、処理の 速さや 順番が 変わって 起きなく なります。同時に 動く 処理で よく 見られます。"
+ }
+]

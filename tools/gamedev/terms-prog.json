@@ -1,0 +1,1710 @@
+[
+ {
+  "id": "pu-ugoki",
+  "name": "動き",
+  "reading": "うごき",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-ichi",
+   "pu-speed"
+  ],
+  "description": "キャラや てきが 画面の 中で 場所を 変えること。ゲームは 小さな 動きを たくさん つみ重ねて できています。"
+ },
+ {
+  "id": "pu-ichi",
+  "name": "位置",
+  "reading": "いち",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-zahyo",
+   "pu-ugoki"
+  ],
+  "description": "ものが 画面の どこに いるかの こと。位置が 分かると、動かしたり ぶつかったかを 調べたり できます。"
+ },
+ {
+  "id": "pu-kurikaeshi",
+  "name": "くりかえし",
+  "reading": "くりかえし",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "program:kurikaeshi",
+  "relatedTerms": [
+   "pu-loop",
+   "pu-junban"
+  ],
+  "description": "同じ ことを 何回も 行う しくみ。歩く 動きや てきが 出てくる ことも、くりかえしで 作れます。"
+ },
+ {
+  "id": "pu-joken",
+  "name": "条件",
+  "reading": "じょうけん",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "program:joken",
+  "relatedTerms": [
+   "pu-jokenbunki",
+   "pu-flag"
+  ],
+  "description": "「もし 〜なら」の 〜の ところ。「かべに さわったら」「体力が なくなったら」の ように、ゲームは 条件で 動きを 変えます。"
+ },
+ {
+  "id": "pu-jump",
+  "name": "ジャンプ",
+  "reading": "じゃんぷ",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🦘",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-juryoku",
+   "pu-rakka"
+  ],
+  "description": "キャラが 上に とび上がる 動き。上に 向かう 速さと 重力を 組み合わせると、ふんわり 落ちてくる 自然な ジャンプに なります。"
+ },
+ {
+  "id": "pu-juryoku",
+  "name": "重力",
+  "reading": "じゅうりょく",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-rakka",
+   "pu-jump"
+  ],
+  "description": "ものを 下に 引っぱる 力。ゲームでは 毎回 少しずつ 下向きの 速さを 足して、落ちる 感じを 作ります。"
+ },
+ {
+  "id": "pu-speed",
+  "name": "スピード",
+  "reading": "すぴーど",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-sokudo",
+   "pu-ugoki"
+  ],
+  "description": "どれくらい 速く 動くかの こと。キャラや てきの スピードを 変えるだけで、ゲームの 感じが 大きく 変わります。"
+ },
+ {
+  "id": "pu-muki",
+  "name": "向き",
+  "reading": "むき",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-kakudo",
+   "pu-kaiten"
+  ],
+  "description": "キャラが どちらを 見ているか、どちらへ 進むかの こと。向きに 合わせて 絵を 反対に すると、自然に 見えます。"
+ },
+ {
+  "id": "pu-shototsu",
+  "name": "衝突",
+  "reading": "しょうとつ",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "program:atari",
+  "relatedTerms": [
+   "pu-atarihantei",
+   "pu-bound"
+  ],
+  "description": "もの どうしが ぶつかる こと。てきに ぶつかったら 体力が へる、アイテムに ぶつかったら 取れる、など 多くの 決まりの きっかけに なります。"
+ },
+ {
+  "id": "pu-timer",
+  "name": "タイマー",
+  "reading": "たいまー",
+  "journey": "prog",
+  "category": "時間",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "program:jikan",
+  "relatedTerms": [
+   "pu-countdown",
+   "pu-frame"
+  ],
+  "description": "時間を はかる しくみ。「30秒 たったら 終わり」「少し 待ってから てきを 出す」などに 使います。"
+ },
+ {
+  "id": "pu-countdown",
+  "name": "カウントダウン",
+  "reading": "かうんとだうん",
+  "journey": "prog",
+  "category": "時間",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "program:jikan",
+  "relatedTerms": [
+   "pu-timer",
+   "pu-counter"
+  ],
+  "description": "数を 1つずつ へらして 0に 向かう こと。スタートの 合図や、のこり時間の 表示で よく 使われます。"
+ },
+ {
+  "id": "pu-random",
+  "name": "ランダム",
+  "reading": "らんだむ",
+  "journey": "prog",
+  "category": "運",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "program:ransu",
+  "relatedTerms": [
+   "pu-ransu",
+   "pu-seed"
+  ],
+  "description": "どれに なるか 前もって 決まっていない こと。てきの 出る 場所を ランダムに すると、毎回 ちがう あそびに なります。"
+ },
+ {
+  "id": "pu-junban",
+  "name": "順番",
+  "reading": "じゅんばん",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "program:kurikaeshi",
+  "relatedTerms": [
+   "pu-meirei",
+   "pu-kurikaeshi"
+  ],
+  "description": "命令を 上から 1つずつ 行う こと。同じ 命令でも 順番が ちがうと、ちがう 動きに なります。"
+ },
+ {
+  "id": "pu-meirei",
+  "name": "命令",
+  "reading": "めいれい",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-junban",
+   "pu-kansu"
+  ],
+  "description": "コンピューターに「これを して」と たのむ 1つ 1つの 指示。命令を ならべて、ゲームの 動きを 作ります。"
+ },
+ {
+  "id": "pu-nagaoshi",
+  "name": "長押し",
+  "reading": "ながおし",
+  "journey": "prog",
+  "category": "入力",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "👆",
+  "mapNode": "program:nyuryoku",
+  "relatedTerms": [
+   "pu-nyuryokuhantei",
+   "pu-jump"
+  ],
+  "description": "ボタンを 押したままに する こと。長押しの 長さで ジャンプの 高さを 変える ゲームも あります。"
+ },
+ {
+  "id": "pu-kaiten",
+  "name": "回転",
+  "reading": "かいてん",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-kakudo",
+   "pu-muki"
+  ],
+  "description": "ものを くるくる 回す 動き。回る 足場や 回る 弾など、見た目にも 楽しい 動きが 作れます。"
+ },
+ {
+  "id": "pu-rakka",
+  "name": "落下",
+  "reading": "らっか",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-juryoku",
+   "pu-jump"
+  ],
+  "description": "上から 下へ 落ちる こと。足場が ない ところで 重力が はたらくと、キャラは 落下します。"
+ },
+ {
+  "id": "pu-bound",
+  "name": "バウンド",
+  "reading": "ばうんど",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🏀",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-shototsu",
+   "pu-juryoku"
+  ],
+  "description": "ぶつかって はね返る 動き。ボールが かべで はね返る ゲームは、ぶつかった 向きを 反対に して 作ります。"
+ },
+ {
+  "id": "pu-oikake",
+  "name": "追尾",
+  "reading": "ついび",
+  "journey": "prog",
+  "category": "てきの考え",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "👾",
+  "mapNode": "program:tekiai",
+  "relatedTerms": [
+   "pu-tekinoshiko",
+   "pu-kyori"
+  ],
+  "description": "てきや 弾が 自分の キャラの ほうへ 近づいて くる 動き。キャラの 位置を 見て、そちらへ 少しずつ 向きを 変えて 進ませます。"
+ },
+ {
+  "id": "pu-gamennohashi",
+  "name": "画面端",
+  "reading": "がめんはし",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 1,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🖼",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-zahyo",
+   "pu-scroll"
+  ],
+  "description": "画面の 上下 左右の いちばん 外がわ。画面端に 来たら 止める、反対から 出てくる、など 決まりを 作ります。",
+  "acceptedReadings": [
+   "がめんはし",
+   "がめんのはし"
+  ]
+ },
+ {
+  "id": "pu-hensu",
+  "name": "変数",
+  "reading": "へんすう",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "program:hensu",
+  "relatedTerms": [
+   "pu-hairetsu",
+   "pu-counter"
+  ],
+  "description": "数や ことばを 入れておく、名前つきの 入れもの。スコアや 体力は 変数に 入れて、ふえたり へったり させます。"
+ },
+ {
+  "id": "pu-jokenbunki",
+  "name": "条件分岐",
+  "reading": "じょうけんぶんき",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "program:joken",
+  "relatedTerms": [
+   "pu-joken",
+   "pu-flag"
+  ],
+  "description": "条件に 合うか どうかで、行う ことを 分ける しくみ。道が 2つに 分かれる 分かれ道の ような ものです。"
+ },
+ {
+  "id": "pu-loop",
+  "name": "ループ",
+  "reading": "るーぷ",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "program:kurikaeshi",
+  "relatedTerms": [
+   "pu-kurikaeshi",
+   "pu-mugenloop"
+  ],
+  "description": "同じ 命令の かたまりを くりかえす こと。回数を 決めて くりかえす ものと、条件が 合う あいだ 続ける ものが あります。"
+ },
+ {
+  "id": "pu-kansu",
+  "name": "関数",
+  "reading": "かんすう",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-meirei",
+   "pu-component"
+  ],
+  "description": "よく 使う 命令を 1つに まとめて、名前を つけた もの。何度も 同じ ことを 書かずに すみ、直すのも 楽に なります。"
+ },
+ {
+  "id": "pu-hairetsu",
+  "name": "配列",
+  "reading": "はいれつ",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🗃",
+  "mapNode": "program:hensu",
+  "relatedTerms": [
+   "pu-hensu",
+   "pu-object"
+  ],
+  "description": "たくさんの 値を 順番に ならべて しまう 入れもの。てきの 一覧や ステージの 地図を まとめて あつかえます。"
+ },
+ {
+  "id": "pu-zahyo",
+  "name": "座標",
+  "reading": "ざひょう",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-xzahyo",
+   "pu-yzahyo"
+  ],
+  "description": "位置を 横と たての 数で あらわす しくみ。キャラの 座標を 変えると、画面の 上で 動いて 見えます。"
+ },
+ {
+  "id": "pu-xzahyo",
+  "name": "x座標",
+  "reading": "えっくすざひょう",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-zahyo",
+   "pu-yzahyo"
+  ],
+  "description": "横の 位置を あらわす 数。この 数を ふやすと 右へ、へらすと 左へ 動くことが 多いです。"
+ },
+ {
+  "id": "pu-yzahyo",
+  "name": "y座標",
+  "reading": "わいざひょう",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-zahyo",
+   "pu-xzahyo"
+  ],
+  "description": "たての 位置を あらわす 数。道具によって、数が ふえると 上へ 行くものと 下へ 行くものが あります。"
+ },
+ {
+  "id": "pu-atarihantei",
+  "name": "当たり判定",
+  "reading": "あたりはんてい",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "program:atari",
+  "relatedTerms": [
+   "pu-shototsu",
+   "pu-hitbox"
+  ],
+  "description": "もの どうしが ぶつかったかを 調べる しくみ。これが ないと、キャラが かべを すりぬけて しまいます。"
+ },
+ {
+  "id": "pu-frame",
+  "name": "フレーム",
+  "reading": "ふれーむ",
+  "journey": "prog",
+  "category": "時間",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🎞",
+  "mapNode": "program:jikan",
+  "relatedTerms": [
+   "pu-framerate",
+   "pu-mainloop"
+  ],
+  "description": "ゲームの 画面 1まい 1まいの こと。少しずつ ちがう 画面を 次々に 出して、動いて 見せています。"
+ },
+ {
+  "id": "pu-framerate",
+  "name": "フレームレート",
+  "reading": "ふれーむれーと",
+  "journey": "prog",
+  "category": "時間",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "program:jikan",
+  "relatedTerms": [
+   "pu-frame",
+   "pu-deltatime"
+  ],
+  "description": "1秒に 何まい 画面を かきかえるかの 数。1秒に 60回が よく 使われ、多いほど なめらかに 見えます。"
+ },
+ {
+  "id": "pu-ransu",
+  "name": "乱数",
+  "reading": "らんすう",
+  "journey": "prog",
+  "category": "運",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "program:ransu",
+  "relatedTerms": [
+   "pu-random",
+   "pu-seed"
+  ],
+  "description": "でたらめに 出てくる 数。てきの 動きや 宝箱の 中身に 使うと、先が 読めない 楽しさが 生まれます。"
+ },
+ {
+  "id": "pu-sokudo",
+  "name": "速度",
+  "reading": "そくど",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-kasokudo",
+   "pu-speed"
+  ],
+  "description": "向きと 速さを いっしょに あらわした もの。毎回 位置に 速度を 足すと、ものが 動いて いきます。"
+ },
+ {
+  "id": "pu-kasokudo",
+  "name": "加速度",
+  "reading": "かそくど",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-sokudo",
+   "pu-juryoku"
+  ],
+  "description": "速度が どれだけ 変わるかの こと。だんだん 速く 走り出す 動きや、重力で 落ちる 動きは 加速度で 作ります。"
+ },
+ {
+  "id": "pu-nyuryokuhantei",
+  "name": "入力判定",
+  "reading": "にゅうりょくはんてい",
+  "journey": "prog",
+  "category": "入力",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🕹",
+  "mapNode": "program:nyuryoku",
+  "relatedTerms": [
+   "pu-nagaoshi",
+   "pu-eventkudo"
+  ],
+  "description": "ボタンや 画面が いつ 押されたかを 調べる しくみ。押した しゅんかんと 押している あいだを 分けて 調べます。"
+ },
+ {
+  "id": "pu-jotai",
+  "name": "状態",
+  "reading": "じょうたい",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "program:joken",
+  "relatedTerms": [
+   "pu-statemachine",
+   "pu-flag"
+  ],
+  "description": "キャラが いま 何を しているかの こと。立つ・走る・とぶ などの 状態ごとに、できる ことや 絵を 変えます。"
+ },
+ {
+  "id": "pu-counter",
+  "name": "カウンター",
+  "reading": "かうんたー",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "program:hensu",
+  "relatedTerms": [
+   "pu-hensu",
+   "pu-countdown"
+  ],
+  "description": "回数を 数えておく 入れもの。集めた 星の 数や、てきを たおした 数を 数えるのに 使います。"
+ },
+ {
+  "id": "pu-scroll",
+  "name": "スクロール",
+  "reading": "すくろーる",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 2,
+  "role": "あそぶ人",
+  "type": "concept",
+  "emoji": "🏞",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-camera",
+   "pu-gamennohashi"
+  ],
+  "description": "キャラの 動きに 合わせて、見える 景色が ずれて いく こと。画面より 広い ステージを あそべるように なります。"
+ },
+ {
+  "id": "pu-camera",
+  "name": "カメラ",
+  "reading": "かめら",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🎥",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-scroll",
+   "pu-worldzahyo"
+  ],
+  "description": "ゲームの 世界の どこを 画面に 映すかを 決める もの。カメラが キャラを 追いかけると、いつも 真ん中に 見えます。"
+ },
+ {
+  "id": "pu-object",
+  "name": "オブジェクト",
+  "reading": "おぶじぇくと",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-instance",
+   "pu-clone"
+  ],
+  "description": "キャラ・てき・アイテムなど、ゲームの 中の 1つ 1つの もの。それぞれが 位置や 動きの 決まりを 持っています。"
+ },
+ {
+  "id": "pu-clone",
+  "name": "クローン",
+  "reading": "くろーん",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "👯",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-object",
+   "pu-instance"
+  ],
+  "description": "同じ ものを もう1つ 作る こと。弾や てきを たくさん 出す ときに、1つずつ 作らずに すみます。"
+ },
+ {
+  "id": "pu-mugenloop",
+  "name": "無限ループ",
+  "reading": "むげんるーぷ",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "♾",
+  "mapNode": "program:kurikaeshi",
+  "relatedTerms": [
+   "pu-loop",
+   "pu-mainloop"
+  ],
+  "description": "終わらずに ずっと 続く くりかえし。わざと 使うことも ありますが、まちがえて 作ると ゲームが 止まって しまいます。"
+ },
+ {
+  "id": "pu-flag",
+  "name": "フラグ",
+  "reading": "ふらぐ",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "program:hensu",
+  "relatedTerms": [
+   "pu-jokenbunki",
+   "pu-jotai"
+  ],
+  "description": "「もう 〜した か どうか」を おぼえておく しるし。宝箱を 開けたか、ボスを たおしたか などを 記録します。"
+ },
+ {
+  "id": "pu-kyori",
+  "name": "距離",
+  "reading": "きょり",
+  "journey": "prog",
+  "category": "てきの考え",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "program:tekiai",
+  "relatedTerms": [
+   "pu-oikake",
+   "pu-sakuteki"
+  ],
+  "description": "2つの ものが どれくらい はなれているかの こと。近づいたら てきが 気づく、などの 決まりに 使います。"
+ },
+ {
+  "id": "pu-kakudo",
+  "name": "角度",
+  "reading": "かくど",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-kaiten",
+   "pu-muki"
+  ],
+  "description": "どれだけ かたむいているか、回っているかの 大きさ。弾を ななめに とばす ときにも 使います。"
+ },
+ {
+  "id": "pu-teisu",
+  "name": "定数",
+  "reading": "ていすう",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "program:hensu",
+  "relatedTerms": [
+   "pu-hensu",
+   "pu-flag"
+  ],
+  "description": "ゲームの あいだ 変わらない 値に 名前を つけた もの。重力の 強さや 画面の 広さなど、あとで まとめて 直しやすく なります。"
+ },
+ {
+  "id": "pu-spawn",
+  "name": "スポーン",
+  "reading": "すぽーん",
+  "journey": "prog",
+  "category": "てきの考え",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🥚",
+  "mapNode": "program:tekiai",
+  "relatedTerms": [
+   "pu-clone",
+   "pu-random"
+  ],
+  "description": "てきや アイテムを ゲームの 世界に 出現させる こと。出す 場所や 間かくを 決めて、あそびの リズムを 作ります。"
+ },
+ {
+  "id": "pu-hikaku",
+  "name": "比較",
+  "reading": "ひかく",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "program:joken",
+  "relatedTerms": [
+   "pu-joken",
+   "pu-jokenbunki"
+  ],
+  "description": "2つの 値の 大きい 小さい 同じを くらべる こと。「体力が 0より 小さいか」の ように、条件を 作る もとに なります。"
+ },
+ {
+  "id": "pu-message",
+  "name": "メッセージ",
+  "reading": "めっせーじ",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-meirei",
+   "pu-eventkudo"
+  ],
+  "description": "ものから ものへ 送る 合図。「ゴールした」と 知らせると、ほかの ものが それを 受け取って 動きだします。"
+ },
+ {
+  "id": "pu-oyako",
+  "name": "親子関係",
+  "reading": "おやこかんけい",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 2,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "👨‍👧",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-zahyo",
+   "pu-worldzahyo"
+  ],
+  "description": "ものを 親と 子に つなぐ しくみ。親が 動くと 子も いっしょに 動くので、キャラが 持つ 道具などに 使います。"
+ },
+ {
+  "id": "pu-mainloop",
+  "name": "メインループ",
+  "reading": "めいんるーぷ",
+  "journey": "prog",
+  "category": "時間",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "program:jikan",
+  "relatedTerms": [
+   "pu-frame",
+   "pu-deltatime"
+  ],
+  "description": "ゲームが 動いている あいだ ずっと まわる くりかえし。入力を 調べて、動かして、画面を かく、を 1秒に 何十回も 続けます。"
+ },
+ {
+  "id": "pu-jotaiseni",
+  "name": "状態遷移",
+  "reading": "じょうたいせんい",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "program:joken",
+  "relatedTerms": [
+   "pu-jotai",
+   "pu-statemachine"
+  ],
+  "description": "ある 状態から 別の 状態へ 切りかわる こと。「走る」から「とぶ」へ 変わる きっかけを 決めておきます。"
+ },
+ {
+  "id": "pu-statemachine",
+  "name": "ステートマシン",
+  "reading": "すてーとましん",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "program:joken",
+  "relatedTerms": [
+   "pu-jotai",
+   "pu-jotaiseni"
+  ],
+  "description": "状態と その 切りかわりかたを まとめた しくみ。キャラや てきの 動きを 整理して、まちがいを へらせます。"
+ },
+ {
+  "id": "pu-butsuriengine",
+  "name": "物理エンジン",
+  "reading": "ぶつりえんじん",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-gotai",
+   "pu-masatsu"
+  ],
+  "description": "重さ・落ちる・はね返る などを 自動で 計算して くれる しくみ。つみ木が くずれる ような 動きを 作れます。"
+ },
+ {
+  "id": "pu-keirotansaku",
+  "name": "経路探索",
+  "reading": "けいろたんさく",
+  "journey": "prog",
+  "category": "てきの考え",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "program:tekiai",
+  "relatedTerms": [
+   "pu-tekinoshiko",
+   "pu-oikake"
+  ],
+  "description": "かべを よけながら 目的地までの 道を 見つける しくみ。てきが 迷路の 中で 自分を 追って くるときに 使います。"
+ },
+ {
+  "id": "pu-tekinoshiko",
+  "name": "敵の思考",
+  "reading": "てきのしこう",
+  "journey": "prog",
+  "category": "てきの考え",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🤖",
+  "mapNode": "program:tekiai",
+  "relatedTerms": [
+   "pu-behaviortree",
+   "pu-sakuteki"
+  ],
+  "description": "てきが 何を するか 決める しくみ。近づく・にげる・待つ などを 場合に 合わせて えらばせます。"
+ },
+ {
+  "id": "pu-sakuteki",
+  "name": "索敵",
+  "reading": "さくてき",
+  "journey": "prog",
+  "category": "てきの考え",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "program:tekiai",
+  "relatedTerms": [
+   "pu-kyori",
+   "pu-raycast"
+  ],
+  "description": "てきが 自分の キャラを 見つける しくみ。見える 範囲や 距離を 決めて、気づいたら 動きを 変えます。"
+ },
+ {
+  "id": "pu-behaviortree",
+  "name": "ビヘイビアツリー",
+  "reading": "びへいびあつりー",
+  "journey": "prog",
+  "category": "てきの考え",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "program:tekiai",
+  "relatedTerms": [
+   "pu-tekinoshiko",
+   "pu-statemachine"
+  ],
+  "description": "てきの 動きの 決めかたを、木の 枝の ように 分けて ならべた しくみ。根もとから 順に 調べて、行う ことを えらびます。"
+ },
+ {
+  "id": "pu-instance",
+  "name": "インスタンス",
+  "reading": "いんすたんす",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-object",
+   "pu-objectpool"
+  ],
+  "description": "設計図から 作られた 1つ 1つの 実物。同じ てきの 設計図から、位置や 体力の ちがう てきを たくさん 作れます。"
+ },
+ {
+  "id": "pu-script",
+  "name": "スクリプト",
+  "reading": "すくりぷと",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-component",
+   "pu-eventkudo"
+  ],
+  "description": "キャラや ものに つける、動きの 決まりを 書いた もの。ドアが 開く しくみなどを 1つずつ 作ります。"
+ },
+ {
+  "id": "pu-objectshiko",
+  "name": "オブジェクト指向",
+  "reading": "おぶじぇくとしこう",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🏗",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-object",
+   "pu-instance"
+  ],
+  "description": "ゲームを「もの」の 集まりと 考えて 作る 考えかた。1つ 1つの ものに、自分の 値と 動きを 持たせます。"
+ },
+ {
+  "id": "pu-component",
+  "name": "コンポーネント",
+  "reading": "こんぽーねんと",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-script",
+   "pu-object"
+  ],
+  "description": "ものに 取りつける 部品の ような 機能。見た目・当たり判定・動きなどを 組み合わせて、1つの キャラを 作ります。"
+ },
+ {
+  "id": "pu-masatsu",
+  "name": "摩擦",
+  "reading": "まさつ",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-kansei",
+   "pu-butsuriengine"
+  ],
+  "description": "すべるのを おさえる 力。氷の ステージは 摩擦を 小さく して、つるつる すべる 感じを 作ります。"
+ },
+ {
+  "id": "pu-kansei",
+  "name": "慣性",
+  "reading": "かんせい",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🛷",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-masatsu",
+   "pu-sokudo"
+  ],
+  "description": "動いている ものが 動き続けようと する 性質。ボタンを はなしても 少し すべる 動きは、慣性で 作ります。"
+ },
+ {
+  "id": "pu-gotai",
+  "name": "剛体",
+  "reading": "ごうたい",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-butsuriengine",
+   "pu-hitbox"
+  ],
+  "description": "物理エンジンで、形の 変わらない かたい もの として あつかう 決まり。落ちたり ころがったり する 箱などに 使います。"
+ },
+ {
+  "id": "pu-hitbox",
+  "name": "ヒットボックス",
+  "reading": "ひっとぼっくす",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔲",
+  "mapNode": "program:atari",
+  "relatedTerms": [
+   "pu-atarihantei",
+   "pu-gotai"
+  ],
+  "description": "当たり判定に 使う、目に 見えない 形。絵より 少し 小さく すると、あそぶ 人が ずるいと 感じにくく なります。"
+ },
+ {
+  "id": "pu-raycast",
+  "name": "レイキャスト",
+  "reading": "れいきゃすと",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "program:atari",
+  "relatedTerms": [
+   "pu-sakuteki",
+   "pu-hitbox"
+  ],
+  "description": "見えない 線を まっすぐ とばして、何に 当たるかを 調べる しくみ。てきの 目線や 足もとの 地面を 調べるのに 使います。"
+ },
+ {
+  "id": "pu-deltatime",
+  "name": "デルタタイム",
+  "reading": "でるたたいむ",
+  "journey": "prog",
+  "category": "時間",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⏲",
+  "mapNode": "program:jikan",
+  "relatedTerms": [
+   "pu-framerate",
+   "pu-mainloop"
+  ],
+  "description": "前の 画面から 次の 画面までに かかった 時間。これを 使うと、機械の 速さが ちがっても 同じ 速さで 動かせます。"
+ },
+ {
+  "id": "pu-hokan",
+  "name": "補間",
+  "reading": "ほかん",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-easing",
+   "pu-sokudo"
+  ],
+  "description": "2つの 値の あいだを なめらかに うめる こと。スタートと ゴールの 位置の あいだを 少しずつ 動かして 見せます。"
+ },
+ {
+  "id": "pu-easing",
+  "name": "イージング",
+  "reading": "いーじんぐ",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🎢",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-hokan",
+   "pu-kasokudo"
+  ],
+  "description": "動きの 速さを ゆっくり 始めたり ゆっくり 止めたり する 工夫。画面の 動きが 気持ちよく 見えます。"
+ },
+ {
+  "id": "pu-worldzahyo",
+  "name": "ワールド座標",
+  "reading": "わーるどざひょう",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-zahyo",
+   "pu-camera"
+  ],
+  "description": "ゲームの 世界 全体で 決めた 位置の 数。画面に 映る 位置とは 別に、ステージの どこに いるかを あらわします。"
+ },
+ {
+  "id": "pu-seed",
+  "name": "シード値",
+  "reading": "しーどち",
+  "journey": "prog",
+  "category": "運",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "program:ransu",
+  "relatedTerms": [
+   "pu-ransu",
+   "pu-random"
+  ],
+  "description": "乱数の 出かたの もとに なる 数。同じ シード値なら 同じ 順で 数が 出るので、同じ 地図を もう一度 作れます。"
+ },
+ {
+  "id": "pu-objectpool",
+  "name": "オブジェクトプール",
+  "reading": "おぶじぇくとぷーる",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🏊",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-instance",
+   "pu-clone"
+  ],
+  "description": "使い終わった ものを 捨てずに とっておき、また 使う 工夫。弾を たくさん とばしても 動きが 重く なりにくく なります。"
+ },
+ {
+  "id": "pu-eventkudo",
+  "name": "イベント駆動",
+  "reading": "いべんとくどう",
+  "journey": "prog",
+  "category": "入力",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "program:nyuryoku",
+  "relatedTerms": [
+   "pu-nyuryokuhantei",
+   "pu-script"
+  ],
+  "description": "「押された」「ぶつかった」などの 出来事が 起きた ときに 動く 作りかた。むだな 調べものを へらせます。"
+ },
+ {
+  "id": "pu-sankakukansu",
+  "name": "三角関数",
+  "reading": "さんかくかんすう",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-kakudo",
+   "pu-sokudo"
+  ],
+  "description": "角度から 横と たての 動く 量を 出す 計算。弾を 好きな 向きへ とばす ときや、ぐるりと 回る 動きに 使われます。"
+ },
+ {
+  "id": "pu-ronrienzan",
+  "name": "論理演算",
+  "reading": "ろんりえんざん",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "program:joken",
+  "relatedTerms": [
+   "pu-jokenbunki",
+   "pu-hikaku"
+  ],
+  "description": "「かつ」「または」「〜でない」で 条件を 組み合わせる 考えかた。「かぎを 持っている かつ ドアの 前」の ように 使います。"
+ },
+ {
+  "id": "pu-hikisu",
+  "name": "引数",
+  "reading": "ひきすう",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-kansu",
+   "pu-modorichi"
+  ],
+  "description": "関数に わたす 値。同じ 関数でも わたす 値を 変えると、ちがう 大きさや 向きで 動かせます。"
+ },
+ {
+  "id": "pu-modorichi",
+  "name": "戻り値",
+  "reading": "もどりち",
+  "journey": "prog",
+  "category": "流れ",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📤",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-kansu",
+   "pu-hikisu"
+  ],
+  "description": "関数が 仕事を 終えて 返して くる 答えの 値。「2つの ものの 距離」を 計算して 返す、などに 使います。"
+ },
+ {
+  "id": "pu-collider",
+  "name": "コライダー",
+  "reading": "こらいだー",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "program:atari",
+  "relatedTerms": [
+   "pu-hitbox",
+   "pu-gotai"
+  ],
+  "description": "ゲームエンジンで 当たり判定の 形を 決める 部品。箱・玉・カプセルなど、かんたんな 形で ぶつかりを 調べます。"
+ },
+ {
+  "id": "pu-hobutsusen",
+  "name": "放物線",
+  "reading": "ほうぶつせん",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 3,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🌈",
+  "mapNode": "program:butsuri",
+  "relatedTerms": [
+   "pu-jump",
+   "pu-juryoku"
+  ],
+  "description": "なげた ボールが えがく、山の ような 曲線。横の 速さと 重力を 合わせると、ジャンプや 投げた ものが この 形で 動きます。"
+ },
+ {
+  "id": "pu-gyoretsu",
+  "name": "行列",
+  "reading": "ぎょうれつ",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "program:zahyo",
+  "relatedTerms": [
+   "pu-worldzahyo",
+   "pu-quaternion"
+  ],
+  "description": "数を たてと 横に ならべた 表。3Dの ゲームでは、動かす・回す・大きくする を 1つの 行列に まとめて 計算します。"
+ },
+ {
+  "id": "pu-naiseki",
+  "name": "内積",
+  "reading": "ないせき",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-gaiseki",
+   "pu-sakuteki"
+  ],
+  "description": "2つの 向きが どれくらい 同じ 方を 向いているかを 出す 計算。てきの 前に いるか 後ろに いるかを 調べるのに 使います。"
+ },
+ {
+  "id": "pu-gaiseki",
+  "name": "外積",
+  "reading": "がいせき",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-naiseki",
+   "pu-hosen"
+  ],
+  "description": "2つの 向きの 両方に 直角な 向きを 出す 計算。面が どちらを 向いているかや、右と 左の 見分けに 使います。"
+ },
+ {
+  "id": "pu-hosen",
+  "name": "法線",
+  "reading": "ほうせん",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "program:atari",
+  "relatedTerms": [
+   "pu-gaiseki",
+   "pu-bound"
+  ],
+  "description": "面に 対して まっすぐ 立つ 向き。ぶつかった ときの はね返る 向きや、光の 当たりかたの 計算に 使われます。"
+ },
+ {
+  "id": "pu-quaternion",
+  "name": "クォータニオン",
+  "reading": "くぉーたにおん",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-gimbal",
+   "pu-gyoretsu"
+  ],
+  "description": "3Dの 回転を 4つの 数で あらわす 方法。なめらかに 回したり、回転の 計算が おかしく なるのを ふせいだり できます。"
+ },
+ {
+  "id": "pu-gimbal",
+  "name": "ジンバルロック",
+  "reading": "じんばるろっく",
+  "journey": "prog",
+  "category": "位置と動き",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "program:ugoki",
+  "relatedTerms": [
+   "pu-quaternion",
+   "pu-kakudo"
+  ],
+  "description": "3つの 角度で 回転を あらわした ときに、回る 向きが 1つ へって しまう 困った 現象。カメラが 急に おかしく 回る 原因に なります。"
+ },
+ {
+  "id": "pu-koteitimestep",
+  "name": "固定タイムステップ",
+  "reading": "こていたいむすてっぷ",
+  "journey": "prog",
+  "category": "時間",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "program:jikan",
+  "relatedTerms": [
+   "pu-deltatime",
+   "pu-butsuriengine"
+  ],
+  "description": "物理の 計算などを、決まった 時間ごとに 行う 方法。画面の かきかえが ゆれても、動きの 結果が 変わりにくく なります。"
+ },
+ {
+  "id": "pu-memorykanri",
+  "name": "メモリ管理",
+  "reading": "めもりかんり",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🗄",
+  "mapNode": "program:hensu",
+  "relatedTerms": [
+   "pu-gc",
+   "pu-objectpool"
+  ],
+  "description": "ゲームが 使う 記おくの 場所を、むだなく 借りて 返す 工夫。ゲーム機ごとに 使える 量が 決まっているので、とても 大事です。"
+ },
+ {
+  "id": "pu-gc",
+  "name": "ガベージコレクション",
+  "reading": "がべーじこれくしょん",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "program:hensu",
+  "relatedTerms": [
+   "pu-memorykanri",
+   "pu-objectpool"
+  ],
+  "description": "使わなく なった 記おくを 自動で かたづける しくみ。便利ですが、かたづけの しゅんかんに 動きが 止まって 見える ことが あります。"
+ },
+ {
+  "id": "pu-multithread",
+  "name": "マルチスレッド",
+  "reading": "まるちすれっど",
+  "journey": "prog",
+  "category": "時間",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🧵",
+  "mapNode": "program:jikan",
+  "relatedTerms": [
+   "pu-mainloop",
+   "pu-memorykanri"
+  ],
+  "description": "いくつかの 仕事を 同時に 進める しくみ。読みこみと あそびを 同時に 進めると、待たずに すみます。"
+ },
+ {
+  "id": "pu-designpattern",
+  "name": "デザインパターン",
+  "reading": "でざいんぱたーん",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-singleton",
+   "pu-statemachine"
+  ],
+  "description": "よく 出てくる 作りの なやみに 名前を つけた、決まった 解きかたの 型。チームで 同じ 言葉で 話せる ように なります。"
+ },
+ {
+  "id": "pu-singleton",
+  "name": "シングルトン",
+  "reading": "しんぐるとん",
+  "journey": "prog",
+  "category": "入れもの",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "☝️",
+  "mapNode": "program:matome",
+  "relatedTerms": [
+   "pu-designpattern",
+   "pu-instance"
+  ],
+  "description": "ゲームの 中に 1つだけ ある ことを 決めた ものの 作りかた。音を 流す 係などに 使われますが、使いすぎに 注意が いります。"
+ },
+ {
+  "id": "pu-networkdoki",
+  "name": "ネットワーク同期",
+  "reading": "ねっとわーくどうき",
+  "journey": "prog",
+  "category": "入力",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "program:nyuryoku",
+  "relatedTerms": [
+   "pu-latency",
+   "pu-rollback"
+  ],
+  "description": "はなれた 場所で あそぶ 人どうしの 画面を、同じ ようすに そろえる こと。みんなで あそぶ ゲームの 土台です。"
+ },
+ {
+  "id": "pu-latency",
+  "name": "レイテンシ",
+  "reading": "れいてんし",
+  "journey": "prog",
+  "category": "入力",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "program:nyuryoku",
+  "relatedTerms": [
+   "pu-networkdoki",
+   "pu-lagcomp"
+  ],
+  "description": "合図を 送ってから とどくまでの おくれの 時間。これが 大きいと、ボタンを 押してから 動くまでが おそく 感じます。",
+  "acceptedReadings": [
+   "れいてんし",
+   "れいてんしー"
+  ]
+ },
+ {
+  "id": "pu-lagcomp",
+  "name": "ラグ補償",
+  "reading": "らぐほしょう",
+  "journey": "prog",
+  "category": "入力",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "program:nyuryoku",
+  "relatedTerms": [
+   "pu-latency",
+   "pu-rollback"
+  ],
+  "description": "おくれて とどいた 合図を、押した ときの ようすに もどして 判定する 工夫。おくれが あっても、ねらって 当てた 攻撃が 当たりに なります。"
+ },
+ {
+  "id": "pu-rollback",
+  "name": "ロールバック",
+  "reading": "ろーるばっく",
+  "journey": "prog",
+  "category": "入力",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⏪",
+  "mapNode": "program:nyuryoku",
+  "relatedTerms": [
+   "pu-networkdoki",
+   "pu-ketteironteki"
+  ],
+  "description": "相手の 操作を 先に 予想して 進め、ちがったら その 時点まで もどして やり直す しくみ。対戦の おくれを 感じにくく します。"
+ },
+ {
+  "id": "pu-ketteironteki",
+  "name": "決定論的",
+  "reading": "けっていろんてき",
+  "journey": "prog",
+  "category": "運",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "program:ransu",
+  "relatedTerms": [
+   "pu-seed",
+   "pu-rollback"
+  ],
+  "description": "同じ 始まりと 同じ 操作なら、いつでも かならず 同じ 結果に なる こと。対戦を そろえたり、あそびを 再生したり するのに 大事です。"
+ },
+ {
+  "id": "pu-broadphase",
+  "name": "ブロードフェーズ",
+  "reading": "ぶろーどふぇーず",
+  "journey": "prog",
+  "category": "ぶつかる",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🗂",
+  "mapNode": "program:atari",
+  "relatedTerms": [
+   "pu-hitbox",
+   "pu-collider"
+  ],
+  "description": "当たり判定の 前に、ぶつかりそうな 組だけを 大まかに しぼる 段階。全部を くわしく 調べずに すむので 速く なります。"
+ },
+ {
+  "id": "pu-astar",
+  "name": "A*",
+  "reading": "えーすたー",
+  "journey": "prog",
+  "category": "てきの考え",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "⭐",
+  "mapNode": "program:tekiai",
+  "relatedTerms": [
+   "pu-keirotansaku",
+   "pu-navmesh"
+  ],
+  "description": "よく 使われる 経路探索の 方法の 1つ。ゴールまでの 近さの めやすを 使って、むだなく 近道を 見つけます。"
+ },
+ {
+  "id": "pu-navmesh",
+  "name": "ナビメッシュ",
+  "reading": "なびめっしゅ",
+  "journey": "prog",
+  "category": "てきの考え",
+  "difficulty": 4,
+  "role": "プログラマー",
+  "type": "concept",
+  "emoji": "🕸",
+  "mapNode": "program:tekiai",
+  "relatedTerms": [
+   "pu-astar",
+   "pu-keirotansaku"
+  ],
+  "description": "てきが 歩ける 場所を、つなぎ合わせた 面で あらわした 地図。3Dの ステージで てきが 道を 見つけるのに 使います。"
+ }
+]

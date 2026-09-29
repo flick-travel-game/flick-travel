@@ -49,19 +49,19 @@ rep("""          q.j === "kobun" && q.n !== q.r ? '<small class="ai-alt">📜 �
 rep("""h += '<div class="ai-learn" role="status"><b>✅ ' + esc(prev.n) + '</b><span>' + prev.jr.icon + " " + esc(prev.jr.name) + '</span><p>' + esc(prev.ds) + '</p>' +""",
     """h += '<div class="ai-learn" role="status">' + (prev.fg ? '<div class="sg-lfig">' + figSvg(prev.fg, { small:true }) + '</div>' : "") + '<b>✅ ' + esc(prev.n) + '</b><span>' + prev.jr.icon + " " + esc(prev.jr.name) + '</span><p>' + esc(prev.ds) + '</p>' +""")
 # 結果・図鑑: 図と 学年
-rep("""    if(p) h += '<p class="ai-small">📍 ' + esc(nodeLabel(q)) + ' の ことばだよ</p><div class="ai-mini">' + diagramSvg(p.key, { pin:p.node, small:true }) + '</div>';""",
-    """    if(p) h += '<p class="ai-small">📍 ' + esc(nodeLabel(q)) + ' の ことばだよ</p><div class="ai-mini">' + diagramSvg(p.key, { pin:p.node, small:true }) + '</div>';
+rep("""    // しくみ図・地図(📍)は 10問の あとの 説明・図鑑に のせない(けいくん 2026-09-29「地図スクロールが大変になるからいらない / 10問終わったあとの説明にはのせないで」→「すべてのフリックゲームを同じ仕様に」)。ホームの 図は たたんで のこす""",
+    """    // しくみ図・地図(📍)は 10問の あとの 説明・図鑑に のせない(けいくん 2026-09-29「地図スクロールが大変になるからいらない / 10問終わったあとの説明にはのせないで」→「すべてのフリックゲームを同じ仕様に」)。ホームの 図は たたんで のこす。📐 数学の 図(その ことばの 形)は 説明の 一部なので のこす
     if(q.fg) h += '<p class="ai-small">📐 ' + esc(FIG_NAME[q.fg.split(":")[0]] || "図") + ' の 図</p><div class="ai-mini">' + figSvg(q.fg) + '</div>';
     h += '<p class="ai-small ai-muted">📚 習う ところ: ' + esc(q.gr) + '(' + LVN[q.dv].icon + " " + esc(LVN[q.dv].name) + ')</p>';""")
 # ホーム: ボタン 4つ(図鑑・クイズ・計算・お気に入り)+ 図の ずかん
 rep("""      '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 4択クイズ</button>' +""",
     """      '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 4択クイズ</button>' +
       '<button type="button" class="ai-btn ai-calc" data-ai-open="calc">🧮 計算問題</button>' +""")
-rep("""      '<div class="ai-diag"><p class="ai-dh">🗓 文学史の 年表 <small>文学史で 覚えた 作品・作家が 📍に なるよ。時代を おすと 中身が 出るよ</small></p><div class="ai-dtabs">' +
+rep("""      '<details class="ai-diag"><summary class="ai-dh">🗓 文学史の 年表を ひらく <small>文学史で 覚えた 作品・作家が 📍に なるよ。時代を おすと 中身が 出るよ</small></summary><div class="ai-dtabs">' +
       DIAGS.map(k => '<button type="button" data-ai-diag="' + k + '"' + (k === diagCur ? ' class="on"' : "") + '>' + D.diagrams[k].icon + " " + esc(D.diagrams[k].name) + '</button>').join("") +
-      '</div><div class="ai-dbox">' + diagramSvg(diagCur, { counts:countsFor(diagCur) }) + '</div><div class="ai-dlist" id="ai-dlist"></div></div>' +""",
-    """      '<div class="ai-diag"><p class="ai-dh">📐 図の ずかん <small>覚えた ことばの 図が ここに ならぶよ。図を おすと その 図の ことばが 出るよ</small></p>' +
-      figGallery(d) + '<div class="ai-dlist" id="ai-dlist"></div></div>' +""")
+      '</div><div class="ai-dbox">' + diagramSvg(diagCur, { counts:countsFor(diagCur) }) + '</div><div class="ai-dlist" id="ai-dlist"></div></details>' +""",
+    """      '<details class="ai-diag"><summary class="ai-dh">📐 図の ずかんを ひらく <small>覚えた ことばの 図が ここに ならぶよ。図を おすと その 図の ことばが 出るよ</small></summary>' +
+      figGallery(d) + '<div class="ai-dlist" id="ai-dlist"></div></details>' +""")
 rep("    if(JOURNEY_OF[m] && JBY[JOURNEY_OF[m]].diagram) diagCur = JBY[JOURNEY_OF[m]].diagram;\n    if(!diagCur) diagCur = DIAGS[0];\n", "")
 rep("}else chips.innerHTML = '<p class=\"ai-lead\">7つの 旅の ことばを ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10語。</p>';",
     "}else chips.innerHTML = '<p class=\"ai-lead\">7つの 旅の ことばを ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10語。</p>';")

@@ -374,5 +374,5 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
   `terms_js.py` の `GRAM` で 文法の ことばの 読みを 先に 決めてある。**新しい 文法の ことばを 説明に 書いたら 出てきた ふりがなを 見る**
 - 英文は 作った 助手とは **別の 助手に 1文ずつ 確かめさせた**(9旅 ぜんぶ。決まり文句の 例文・子どもに いじわるな 文・不自然な 文を 直した)
 - かずとも: `FLICK_MODES` に egfudoshi / egjisei / eguke / egtofutei / egbunshi / egkankei / eghikaku / egkatei / egjukugo / egmas、`FLICK_LINK_TARGETS` に eigo(speed-king PR #232)
-- **のこり**: トップの 絵・四角い アイコン・題名の 絵(ChatGPT)/ かずとも の 販売ページ `HOME_GAMES`(英会話の となり)/ 規約の 文 `FLICK_SERIES_GAMES`(けいくんの OK)
+- **のこり**: トップの 絵・四角い アイコン・題名の 絵(ChatGPT)/ かずとも の 販売ページ `HOME_GAMES`(英会話の となり)。規約の 文 `FLICK_SERIES_GAMES` には 2026-09-29 に 足した(けいくん「規約の文にフリック英語を足して」。speed-king PR #235)
 - 確かめかた: `node tools/play-all.mjs eigo/`(全63ステージ)。大文字・空白・' . を そのまま 打っても 進む ことも 確かめた

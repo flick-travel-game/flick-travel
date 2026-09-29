@@ -527,7 +527,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=9735bb06"></script>
+<script src="terms.js?v=ac6c85b7"></script>
 <script src="sugaku.js?v=256a8635"></script>
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
@@ -547,7 +547,8 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
                  {id:"hoiku", name:"フリック保育士", icon:"🧸", dir:"../flick-travel/hoiku/"},
                  {id:"kango", name:"フリック看護師", icon:"🩺", dir:"../flick-travel/kango/"},
                  {id:"gamedev", name:"フリックゲームクリエイター", icon:"🎮", dir:"../flick-travel/gamedev/"},
-                 {id:"biyo", name:"フリック美容師", icon:"💇", dir:"../flick-travel/biyo/"} ];
+                 {id:"biyo", name:"フリック美容師", icon:"💇", dir:"../flick-travel/biyo/"},
+                 {id:"kyoryu", name:"フリック恐竜図鑑", icon:"🦖", dir:"../flick-travel/kyoryu/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
   {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
@@ -728,8 +729,8 @@ const COLORS = {
           toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
 };
 /* 差しこみ口(PLUG)。つみあげの コースを 持つ ゲームだけが 1つ 持つ:
-   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語旅行 = kokugo/kokugo.js の KOKUGO / フリック数学旅行 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO。ほかの ゲームでは null で 何もしない */
-const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : typeof SEIBI === "object" ? SEIBI : typeof PATISSIER === "object" ? PATISSIER : typeof KOKUGO === "object" ? KOKUGO : typeof SUGAKU === "object" ? SUGAKU : typeof HOIKU === "object" ? HOIKU : typeof KANGO === "object" ? KANGO : typeof GAMEDEV === "object" ? GAMEDEV : typeof BIYO === "object" ? BIYO : null;
+   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語旅行 = kokugo/kokugo.js の KOKUGO / フリック数学旅行 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO / フリック恐竜図鑑 = kyoryu/kyoryu.js の KYORYU。ほかの ゲームでは null で 何もしない */
+const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : typeof SEIBI === "object" ? SEIBI : typeof PATISSIER === "object" ? PATISSIER : typeof KOKUGO === "object" ? KOKUGO : typeof SUGAKU === "object" ? SUGAKU : typeof HOIKU === "object" ? HOIKU : typeof KANGO === "object" ? KANGO : typeof GAMEDEV === "object" ? GAMEDEV : typeof BIYO === "object" ? BIYO : typeof KYORYU === "object" ? KYORYU : null;
 /* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
 if(PLUG) for(const [m, h] of Object.entries(PLUG.colors)) COLORS.mode[m] = TONE[h] || toneFrom(h);  // "blue" などは ほかの ゲームと 同じ あかるい 色
 function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }

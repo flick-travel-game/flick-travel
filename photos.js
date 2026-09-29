@@ -14017,12 +14017,12 @@ const PHOTOS = {
   "file": "File:フクイベナートル全身骨格.jpg"
  },
  "jp-hypno": {
-  "src": "photo-kyoryu-jp-hypno.jpg",
-  "author": "Ddinodan",
+  "src": "photo-kyoryu-jp-hypno-v2.jpg",
+  "author": "TotalDino",
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Hypnovenator_matsubaraetoheorum.png",
-  "file": "File:Hypnovenator matsubaraetoheorum.png"
+  "page": "https://commons.wikimedia.org/wiki/File:Hypnovenator_TD.png",
+  "file": "File:Hypnovenator TD.png"
  },
  "jp-kamui": {
   "src": "photo-kyoryu-jp-kamui.jpg",
@@ -14145,12 +14145,12 @@ const PHOTOS = {
   "file": "File:Bryonyx.jpg"
  },
  "ni-beipiao": {
-  "src": "photo-kyoryu-ni-beipiao.jpg",
-  "author": "Matt Martyniuk (Dinoguy2)",
+  "src": "photo-kyoryu-ni-beipiao-v2.jpg",
+  "author": "Pavel Riha = user Pavel.Riha.CB (e-mail)",
   "license": "CC BY-SA 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Beipiao1mmartyniuk.png",
-  "file": "File:Beipiao1mmartyniuk.png"
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Beipiaosaurus.jpg",
+  "file": "File:Beipiaosaurus.jpg"
  },
  "ni-carcharo": {
   "src": "photo-kyoryu-ni-carcharo.jpg",
@@ -14369,12 +14369,12 @@ const PHOTOS = {
   "file": "File:Neovenator salerii 1.jpg"
  },
  "ni-noa": {
-  "src": "photo-kyoryu-ni-noa.jpg",
-  "author": "Debivort at English Wikipedia",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Noasaurus-sketch3.jpg",
-  "file": "File:Noasaurus-sketch3.jpg"
+  "src": "photo-kyoryu-ni-noa-v2.jpg",
+  "author": "Olmagon",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Noasaurus.png",
+  "file": "File:Noasaurus.png"
  },
  "ni-ornitho": {
   "src": "photo-kyoryu-ni-ornitho.jpg",
@@ -14385,12 +14385,12 @@ const PHOTOS = {
   "file": "File:OrnithomimusROM.JPG"
  },
  "ni-ovi": {
-  "src": "photo-kyoryu-ni-ovi.jpg",
-  "author": "Jaime A. Headden (User:Qilong)",
-  "license": "CC BY 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Oviraptor_philoceratops_skeleton.jpg",
-  "file": "File:Oviraptor philoceratops skeleton.jpg"
+  "src": "photo-kyoryu-ni-ovi-v2.jpg",
+  "author": "TotalDino",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oviraptor_TD.png",
+  "file": "File:Oviraptor TD.png"
  },
  "ni-sinosauro": {
   "src": "photo-kyoryu-ni-sinosauro.jpg",
@@ -14745,12 +14745,12 @@ const PHOTOS = {
   "file": "File:Einiosaurus skull.jpg"
  },
  "so-euoplo": {
-  "src": "photo-kyoryu-so-euoplo.jpg",
-  "author": "TotalDino",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Euoplocephalus_TD.png",
-  "file": "File:Euoplocephalus TD.png"
+  "src": "photo-kyoryu-so-euoplo-v2.jpg",
+  "author": "Firsfron at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Euoplocephalus_eating_Animatronics_model_NHM2.jpg",
+  "file": "File:Euoplocephalus eating Animatronics model NHM2.jpg"
  },
  "so-giraffa": {
   "src": "photo-kyoryu-so-giraffa.jpg",
@@ -14857,12 +14857,12 @@ const PHOTOS = {
   "file": "File:Nigersaurus mount.jpg"
  },
  "so-nodo": {
-  "src": "photo-kyoryu-so-nodo.jpg",
-  "author": "Conty",
-  "license": "CC BY 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Nodosaurus_500_TWA.JPG",
-  "file": "File:Nodosaurus 500 TWA.JPG"
+  "src": "photo-kyoryu-so-nodo-v2.jpg",
+  "author": "Vi Ko",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B5%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D1%96%D1%8F_%D0%BD%D0%BE%D0%B4%D0%BE%D0%B7%D0%B0%D0%B2%D1%80%D0%B0.jpg",
+  "file": "File:Реконструкція нодозавра.jpg"
  },
  "so-ourano": {
   "src": "photo-kyoryu-so-ourano.jpg",
@@ -14921,12 +14921,12 @@ const PHOTOS = {
   "file": "File:Psittacosaurus mongoliensis fossil from China.jpg"
  },
  "so-salta": {
-  "src": "photo-kyoryu-so-salta.jpg",
-  "author": "TotalDino",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Saltasaurus_TD.png",
-  "file": "File:Saltasaurus TD.png"
+  "src": "photo-kyoryu-so-salta-v2.jpg",
+  "author": "ABelov2014",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Saltasaurus_environment.jpg",
+  "file": "File:Saltasaurus environment.jpg"
  },
  "so-saurolo": {
   "src": "photo-kyoryu-so-saurolo.jpg",

@@ -180,7 +180,7 @@ def save():
             got = infos([p["file"]])
             assert p["file"] in got, (key, p["file"], "ライセンスか 形が 使えない")
             it = dict(file=p["file"], **got[p["file"]])
-        src = f"photo-kyoryu-{key}.jpg"
+        src = f"photo-kyoryu-{key}" + (f"-v{p['v']}" if p.get("v") else "") + ".jpg"  # 差しかえた ときは v を 上げる(同じ 名前だと 古い 絵を おぼえている 端末が ある)
         if not (ROOT / src).exists():
             # ⚠️ 縮小版は Wikimedia の 決まった 幅(https://w.wiki/GHai)で 頼む(それ以外は 429 で 断られる)。960 で 取って ここで 800 に 縮める
             # 候補の 縮小版の 住所(…/thumb/a/ab/名前/330px-名前)から 作る。commons.wikimedia.org の Special:FilePath は すぐ 429 に なるため

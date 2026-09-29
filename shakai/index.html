@@ -393,6 +393,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .prof-link .lnk{margin-left:6px;font-size:12px;color:#94a3b8;font-weight:700}
 .flick-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1000;max-width:calc(100% - 32px);padding:12px 18px;border-radius:999px;background:#1e293b;color:#fff;font-size:14px;font-weight:900;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:opacity .4s}
 .flick-toast.out{opacity:0}
+/* 登録なしの 体験(2026-09-29): のこり日数の 1行 と おわった ときの 窓。お金の 字は 出さない */
+.trial-note{margin:10px 0 0;padding:10px 14px;border-radius:14px;background:#fef3c7;color:#92400e;font-size:13px;font-weight:900;line-height:1.7;text-align:center}
+.trial-note a{color:inherit}
+.trial-end{position:fixed;inset:0;z-index:1200;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(15,23,42,.6)}
+.trial-end .te-box{width:100%;max-width:340px;padding:24px;border-radius:24px;background:#fff;text-align:center}
+.trial-end .te-ttl{margin:0;font-size:18px;font-weight:900;color:#334155}
+.trial-end .te-sub{margin:12px 0 0;font-size:14px;font-weight:700;line-height:1.8;color:#64748b}
+.trial-end .te-go{display:block;margin:20px 0 0;padding:12px;border-radius:16px;background:#1e293b;color:#fff;font-size:14px;font-weight:900;text-decoration:none}
+.trial-end .te-close{margin:12px 0 0;border:0;background:none;color:#94a3b8;font-size:14px;font-weight:900;text-decoration:underline}
 </style>
 </head>
 <body>
@@ -457,7 +466,8 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <p id="how1">表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。</p>
       <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
       <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
-    <p class="about-link"><a href="https://kazutomo.app/">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
+    <p class="trial-note hidden" id="trial-note"></p>
+    <p class="about-link"><a href="https://kazutomo.app/" id="about-link">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
     </div>
   </section>
 
@@ -1015,6 +1025,80 @@ function flickToast(msg){
   document.body.appendChild(t);
   setTimeout(() => t.classList.add("out"), 3600); setTimeout(() => t.remove(), 4200);
 }
+/* ── 登録なしの 体験(けいくん決定 2026-09-29「登録なしで1か月 → 止まる → おうちの方が登録して月980円」) ──
+   ・はじめて 遊ぶ 端末は かずとも(/api/trial)に POST して しるしを もらい localStorage に しまう(flick-trial)
+   ・ひらくたびに GET /api/trial?t= で「遊べるか・のこり何日か」を 聞く。こたえも しまう(flick-trial-state。checkedAt つき)
+   ・つながらない → さいごに OK だった 日から 3日は そのまま。すぎたら つながるまで 止まる(ネットを 切って 遊びつづける 抜け道を ふさぐ)
+   ・かずとも本体と 同じ 1つの 30日に するため、販売ページから 来るときは #t=<しるし> が 付いている(受けとって しまう)。
+     もどる リンク(about-link)にも 付けて かえす
+   ・つないでいる(flick-link)・はらっている おうちは 止まらない(サーバーが 見る)。しるしが 無い 環境(手元の 開発)は 止めない
+   ⚠️ 記録は 1つも 消さない。⚠️ 子どもの 画面に お金の 字は 出さない(日数だけ) */
+const TRIAL_API = "https://kazutomo.app/api/trial", TRIAL_KEY = "flick-trial", TRIAL_STATE = "flick-trial-state", TRIAL_FIRST = "flick-trial-first";
+const TRIAL_GRACE_MS = 3 * 86400000, TRIAL_WARN_DAYS = 7;
+let TRIAL = null;
+function trialToken(){ return store(TRIAL_KEY) || ""; }
+(function takeTrialHash(){
+  try{
+    const m = /[#&]t=([A-Za-z0-9._~+\/=-]{8,600})(?:&|$)/.exec(location.hash); if(!m) return;
+    if(!trialToken()) store(TRIAL_KEY, m[1]);
+    history.replaceState(history.state, "", location.pathname + location.search);
+  }catch(e){}
+})();
+function trialCached(){ try{ const c = JSON.parse(store(TRIAL_STATE) || "null"); return c && typeof c.play === "boolean" ? c : null; }catch(e){ return null; } }
+/* 遊んでよいか。まだ 何も 分からなければ 止めない */
+function canPlay(){ const t = TRIAL || trialCached(); if(!t) return true; if(t.stale) return false; return t.play !== false; }
+async function fetchTrial(){
+  let tok = trialToken(), js = null;
+  try{
+    const ask = async (post) => { const r = await fetch(post ? TRIAL_API : TRIAL_API + "?t=" + encodeURIComponent(tok), { method: post ? "POST" : "GET", headers: authHeaders(), cache: "no-store" }); return r.ok ? await r.json() : null; };
+    js = await ask(!tok);
+    if(js && js.ok && js.needToken && tok){ js = await ask(true); }  // しるしが 古い・こわれている → もらいなおす
+  }catch(e){ js = null; }
+  if(js && js.ok){
+    if(typeof js.token === "string" && js.token) store(TRIAL_KEY, js.token);
+    TRIAL = { play: js.play !== false, paid: js.paid === true, daysLeft: typeof js.daysLeft === "number" ? js.daysLeft : null, checkedAt: Date.now(), stale: false };
+    store(TRIAL_STATE, JSON.stringify(TRIAL));
+  }else{
+    const c = trialCached(); let first = +store(TRIAL_FIRST) || 0;
+    if(!first){ first = Date.now(); store(TRIAL_FIRST, String(first)); }
+    const fresh = Date.now() - (c ? c.checkedAt : first) < TRIAL_GRACE_MS;
+    TRIAL = c ? Object.assign({}, c, { stale: !fresh }) : { play: fresh, paid: false, daysLeft: null, checkedAt: 0, stale: !fresh };
+  }
+  trialViewsRefresh();
+  return TRIAL;
+}
+/* のこり日数の 1行 / もどる リンクに しるしを 付ける */
+function trialViewsRefresh(){
+  try{
+    const el = $("#trial-note"), t = TRIAL || trialCached();
+    const back = $("#about-link"); if(back){ const tk = trialToken(); back.href = "https://kazutomo.app/" + (tk ? "#t=" + encodeURIComponent(tk) : ""); }
+    if(!el || !t){ if(el) el.classList.add("hidden"); return; }
+    let msg = "";
+    if(!canPlay()) msg = (t.stale ? "つながりを かくにん できませんでした。ネットに つないで もう一度 ひらいてね" : "おためしは おわりました。") + '<br><a href="' + LINK_URL + '">おうちの方の 画面から つづけられます</a>';
+    else if(!t.paid && typeof t.daysLeft === "number" && t.daysLeft <= TRIAL_WARN_DAYS) msg = "おためしは あと" + t.daysLeft + "日。<a href=\"" + LINK_URL + "\">おうちの方の 画面から つづけられます</a>";
+    el.innerHTML = msg; el.classList.toggle("hidden", !msg);
+  }catch(e){}
+}
+/* 体験が おわった あとに スタートを 押したとき */
+function showTrialEnd(){
+  const t = TRIAL || trialCached(), stale = !!(t && t.stale);
+  const d = document.createElement("div"); d.className = "trial-end"; d.setAttribute("role", "dialog");
+  d.innerHTML = '<div class="te-box"><p class="te-ttl">' + (stale ? "つながりを かくにん できません" : "おためしは おわりました") + '</p><p class="te-sub">' +
+    (stale ? "ネットに つないで もう一度 ひらいてね。" : "きろくは そのまま のこっています。<br>つづきは おうちの方の 画面から。") +
+    '</p><a class="te-go" href="' + LINK_URL + '">おうちの方の 画面へ</a><button type="button" class="te-close">とじる</button></div>';
+  d.querySelector(".te-close").addEventListener("click", () => d.remove());
+  document.body.appendChild(d);
+}
+/* つなぐ リンクの 短い しるし(24時間)を、この 端末の 長い しるし(365日)に 取りかえる(speed-king /api/flick/link)。しくじっても 止めない */
+async function exchangeLink(){
+  const tok = linkToken(); if(!tok) return;
+  try{ const body = JSON.parse(atob(tok.split(".")[0].replace(/-/g, "+").replace(/_/g, "/"))); if(body.k !== "link") return; }catch(e){ return; }
+  try{
+    const r = await fetch(RANK_API + "/link", { method: "POST", headers: authHeaders() });
+    const js = r.ok ? await r.json() : null;
+    if(js && js.ok && typeof js.token === "string" && js.token && linkToken() === tok){ store(LINK_KEY, js.token); try{ sessionStorage.removeItem("flick-plan"); }catch(e){} }
+  }catch(e){}
+}
 /* ?link=<しるし> で もどってきたとき(1回だけ) */
 (function takeLink(){
   try{
@@ -1028,6 +1112,7 @@ function flickToast(msg){
     PLAN = null; recMemo = null;
     keepSessionRecords();
     setTimeout(() => flickToast("おうちの方の アカウントと つながりました"), 300);
+    exchangeLink().then(() => { fetchPlan(true); fetchTrial(); });
   }catch(e){}
 })();
 /* のび の グラフ(つながっていて graph:false の ときは ぼかす。消さない。かずとも `Blurred` と 同じ) */
@@ -1549,6 +1634,7 @@ function openLevels(m){
 /* ⚠️ 株式・AI・英会話・整備も どの レベルも いつも 同じ 10問(けいくん 2026-09-27「スピード記録勝負に揃えて」)。
    「もう一度だけ挑戦(まちがえた 問題だけ)」・ふくしゅう・苦手克服は やめた */
 function start(m, lv){
+  if(!canPlay()){ showTrialEnd(); return; }  // 登録なしの 体験が おわった(記録・ランキングは 見られる)
   mode = m; level = lv;
   qs = PLUG && PLUG.owns(m) ? PLUG.makeQs(m, lv) : LEVELS[m][lv];  // プラグインの コース: いつも 同じ 10問(はじめて 出会う ことばの しるしを 付けるため プラグインを 通す)
   idx = 0; times = []; running = false; locked = true; penalties = 0; qMiss = 0; lastErr = false;
@@ -2073,6 +2159,7 @@ $("#home-btn").addEventListener("click", () => { store("flick-last", ""); show("
 showBest();
 restoreLast();
 fetchPlan();  // できることを かずとも に 聞く(かえってきたら グラフ・おしらせを かきなおす)
+exchangeLink().then(fetchTrial);  // 登録なしの 体験: 遊べるか・のこり何日か(つながらなければ 3日まで そのまま)
 </script>
 </body>
 </html>

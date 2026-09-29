@@ -1,0 +1,1395 @@
+[
+  {
+    "id": "en-frontend",
+    "name": "フロントエンド",
+    "reading": "ふろんとえんど",
+    "journey": "eng",
+    "category": "画面とサーバー",
+    "difficulty": 2,
+    "role": "フロントエンド",
+    "type": "concept",
+    "emoji": "🖥",
+    "mapNode": "eng:front",
+    "relatedTerms": [
+      "en-backend",
+      "en-html",
+      "en-css"
+    ],
+    "description": "使う 人が 目で 見て さわる 画面がわを 作る 仕事。ボタンの 動きや 見やすさを 考えて、サーバーから 届いた データを 画面に 出します。"
+  },
+  {
+    "id": "en-backend",
+    "name": "バックエンド",
+    "reading": "ばっくえんど",
+    "journey": "eng",
+    "category": "画面とサーバー",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "⚙️",
+    "mapNode": "eng:back",
+    "relatedTerms": [
+      "en-frontend",
+      "en-database",
+      "en-api"
+    ],
+    "description": "画面の うらで 動く しくみを 作る 仕事。データを しまったり 計算したり して、画面がわに 答えを 返す 部分を 自分で 書きます。"
+  },
+  {
+    "id": "en-html",
+    "name": "HTML",
+    "reading": "えいちてぃーえむえる",
+    "journey": "eng",
+    "category": "画面とサーバー",
+    "difficulty": 2,
+    "role": "フロントエンド",
+    "type": "concept",
+    "emoji": "📄",
+    "mapNode": "eng:front",
+    "relatedTerms": [
+      "en-css",
+      "en-frontend"
+    ],
+    "description": "ページの 中身と 組み立てを 書く ための ことば。ここは 見出し、ここは 段落、と 意味を つけて 書くと、画面を 読み上げる 道具にも 伝わります。",
+    "example": "<h1>Hello</h1>\n<p>Welcome</p>"
+  },
+  {
+    "id": "en-css",
+    "name": "CSS",
+    "reading": "しーえすえす",
+    "journey": "eng",
+    "category": "画面とサーバー",
+    "difficulty": 2,
+    "role": "フロントエンド",
+    "type": "concept",
+    "emoji": "🎨",
+    "mapNode": "eng:front",
+    "relatedTerms": [
+      "en-html",
+      "en-frontend"
+    ],
+    "description": "ページの 色・文字の 大きさ・ならびかたを 決める ことば。中身を 書く 部分と 見た目を 書く 部分を 分けておくと、あとで 見た目だけ 直しやすく なります。",
+    "example": "h1 { color: blue; }"
+  },
+  {
+    "id": "en-api",
+    "name": "API",
+    "reading": "えーぴーあい",
+    "journey": "eng",
+    "category": "つなぐ決まり",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "🔌",
+    "mapNode": "eng:api",
+    "relatedTerms": [
+      "en-rest",
+      "en-request",
+      "en-json"
+    ],
+    "description": "自分の プログラムを ほかの プログラムから 呼べるように する 窓口の 決まり。何を 送れば 何が 返るかを 先に 決めて 作ると、画面がわと サーバーがわが 別々に 進められます。"
+  },
+  {
+    "id": "en-database",
+    "name": "データベース",
+    "reading": "でーたべーす",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 2,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🗄",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-table",
+      "en-sql",
+      "en-schema"
+    ],
+    "description": "たくさんの データを 整理して しまい、すぐに 取り出せる しくみ。作る 人は どんな 表に 分けて どう つなぐかを 考えて 設計します。"
+  },
+  {
+    "id": "en-sql",
+    "name": "SQL",
+    "reading": "えすきゅーえる",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 2,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🔎",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-database",
+      "en-table"
+    ],
+    "description": "データベースに「この 条件の データを 出して」と たのむ ための ことば。さがす・足す・直す・消す の 4つを 短い 文で 書けます。",
+    "example": "SELECT name FROM users WHERE age > 10;",
+    "acceptedReadings": [
+      "えすきゅーえる",
+      "しーくえる"
+    ]
+  },
+  {
+    "id": "en-security",
+    "name": "セキュリティ",
+    "reading": "せきゅりてぃ",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 2,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🛡",
+    "mapNode": "eng:security",
+    "relatedTerms": [
+      "en-zeijakusei",
+      "en-angoka"
+    ],
+    "description": "悪い 人に データを ぬすまれたり こわされたり しない ように 守る こと。作る ときから 守りを 考えて おくと、あとで 直すより ずっと 安全に なります。"
+  },
+  {
+    "id": "en-cloud",
+    "name": "クラウド",
+    "reading": "くらうど",
+    "journey": "eng",
+    "category": "インフラ",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "☁️",
+    "mapNode": "eng:infra",
+    "relatedTerms": [
+      "en-infra",
+      "en-scaleout"
+    ],
+    "description": "自分で 機械を 買わずに、ネットの 向こうの コンピュータを 借りて サービスを 動かす やりかた。使う 人が ふえたら 台数を すぐ 足せるので、作る 人は 動かす しくみ づくりに 集中できます。"
+  },
+  {
+    "id": "en-http",
+    "name": "HTTP",
+    "reading": "えいちてぃーてぃーぴー",
+    "journey": "eng",
+    "category": "つなぐ決まり",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "📨",
+    "mapNode": "eng:api",
+    "relatedTerms": [
+      "en-request",
+      "en-response",
+      "en-statuscode"
+    ],
+    "description": "ブラウザと サーバーが やりとり する ときの 話しかたの 決まり。お願いを 送って 返事を 受け取る 形で、ページも データも これで 運ばれます。",
+    "example": "GET /index.html HTTP/1.1"
+  },
+  {
+    "id": "en-https",
+    "name": "HTTPS",
+    "reading": "えいちてぃーてぃーぴーえす",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 2,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🔒",
+    "mapNode": "eng:security",
+    "relatedTerms": [
+      "en-http",
+      "en-angoka"
+    ],
+    "description": "やりとりの 中身を 暗号に して 送り、相手が 本物の サーバーかも たしかめる 決まり。とちゅうで のぞかれても 読めないので、ログインや 個人の 情報を あつかう ページでは かならず 使います。"
+  },
+  {
+    "id": "en-json",
+    "name": "JSON",
+    "reading": "じぇいそん",
+    "journey": "eng",
+    "category": "つなぐ決まり",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "eng:api",
+    "relatedTerms": [
+      "en-api",
+      "en-request"
+    ],
+    "description": "データを 名前と 値の 組で 書く 形。人にも 読みやすく、どの 言語でも あつかえるので、プログラムどうしで データを やりとり する ときに よく 使います。",
+    "example": "{\"name\": \"ken\", \"age\": 10}"
+  },
+  {
+    "id": "en-request",
+    "name": "リクエスト",
+    "reading": "りくえすと",
+    "journey": "eng",
+    "category": "つなぐ決まり",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "📮",
+    "mapNode": "eng:api",
+    "relatedTerms": [
+      "en-response",
+      "en-http"
+    ],
+    "description": "画面がわから サーバーへ 送る「これを ください」「これを しまって」という お願い。どこに・何を・どんな 中身で 送るかが 入っています。"
+  },
+  {
+    "id": "en-response",
+    "name": "レスポンス",
+    "reading": "れすぽんす",
+    "journey": "eng",
+    "category": "つなぐ決まり",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "📬",
+    "mapNode": "eng:api",
+    "relatedTerms": [
+      "en-request",
+      "en-statuscode"
+    ],
+    "description": "お願いを 受けた サーバーが 返す 返事。うまく いったか どうかの 番号と、たのまれた データが 入っていて、画面がわは それを 見て 表示を 変えます。"
+  },
+  {
+    "id": "en-backup",
+    "name": "バックアップ",
+    "reading": "ばっくあっぷ",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "💾",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-fukkyu",
+      "en-database"
+    ],
+    "description": "データの 写しを 別の 場所に 取っておく こと。作る がわは 何を・どれくらいの 間かくで 取るかを 決め、じっさいに もどせるかも ためして おきます。"
+  },
+  {
+    "id": "en-yoken",
+    "name": "要件",
+    "reading": "ようけん",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 2,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "📝",
+    "mapNode": "eng:yoken",
+    "relatedTerms": [
+      "en-yokenteigi",
+      "en-shiyo"
+    ],
+    "description": "作る ものに「これが できないと こまる」という 大事な こと。たのむ 人の 話を よく 聞いて 見つけます。作りはじめる 前に 決めて おくのが 大切です。",
+    "example": "予約の 画面で、同じ 時間に ふたりが 予約できないこと"
+  },
+  {
+    "id": "en-sekkei",
+    "name": "設計",
+    "reading": "せっけい",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📐",
+    "mapNode": "eng:sekkei",
+    "relatedTerms": [
+      "en-yoken",
+      "en-architecture"
+    ],
+    "description": "要件を かなえる ために、画面・サーバー・データベースを どう 分けて どう つなぐかを 図や 文に まとめる こと。チームの みんなが 同じ 絵を 見て 作れる ように なります。"
+  },
+  {
+    "id": "en-shiyo",
+    "name": "仕様",
+    "reading": "しよう",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 2,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "📋",
+    "mapNode": "eng:sekkei",
+    "relatedTerms": [
+      "en-yoken",
+      "en-shiyohenko"
+    ],
+    "description": "作る ものが「どう 動くか」を くわしく 決めた もの。ボタンを おしたら 何が 起きるか などを 書いて、作る 人と たのむ 人の 考えを そろえます。"
+  },
+  {
+    "id": "en-mitsumori",
+    "name": "見積もり",
+    "reading": "みつもり",
+    "journey": "eng",
+    "category": "すすめかた",
+    "difficulty": 2,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "🧮",
+    "mapNode": "eng:plan",
+    "relatedTerms": [
+      "en-schedule",
+      "en-yoken"
+    ],
+    "description": "作るのに どれくらいの 時間と 人が いるかを 先に 考える こと。作業を 小さく 分けて 1つずつ 考えると、大きく はずれにくく なります。"
+  },
+  {
+    "id": "en-schedule",
+    "name": "スケジュール",
+    "reading": "すけじゅーる",
+    "journey": "eng",
+    "category": "すすめかた",
+    "difficulty": 2,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "📅",
+    "mapNode": "eng:plan",
+    "relatedTerms": [
+      "en-mitsumori",
+      "en-agile"
+    ],
+    "description": "いつまでに どこまで 作るかの 予定。見積もりを もとに 作り、遅れそうな ときは 早めに 知らせて 作る ものや 順番を 相談します。"
+  },
+  {
+    "id": "en-table",
+    "name": "テーブル",
+    "reading": "てーぶる",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 2,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🧾",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-database",
+      "en-shukey"
+    ],
+    "description": "データベースの 中の 表。1行が データ 1つぶん、1列が 名前や 年れい などの 項目です。何を 1つの 表に するかを 考えるのが 設計の 第一歩です。"
+  },
+  {
+    "id": "en-ninsho",
+    "name": "認証",
+    "reading": "にんしょう",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 2,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🪪",
+    "mapNode": "eng:auth",
+    "relatedTerms": [
+      "en-ninka",
+      "en-tayouso"
+    ],
+    "description": "使おうと している 人が 本当に その 本人かを たしかめる しくみ。パスワードの ほか、メールに 届く 番号 なども 使います。"
+  },
+  {
+    "id": "en-ninka",
+    "name": "認可",
+    "reading": "にんか",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 2,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🎫",
+    "mapNode": "eng:auth",
+    "relatedTerms": [
+      "en-ninsho",
+      "en-saishokengen"
+    ],
+    "description": "本人だと 分かった 人に、何を して よいかを 決める しくみ。見るだけの 人、直せる 人 などを 分けて、ほかの 人の データに さわれない ように します。"
+  },
+  {
+    "id": "en-angoka",
+    "name": "暗号化",
+    "reading": "あんごうか",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 2,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🔐",
+    "mapNode": "eng:security",
+    "relatedTerms": [
+      "en-https",
+      "en-hashka"
+    ],
+    "description": "データを 決まった 手順で 読めない 形に 変える こと。かぎを 持つ 人だけが もとに もどせるので、送る とちゅうや しまう 場所で 中身を 守れます。"
+  },
+  {
+    "id": "en-honban",
+    "name": "本番環境",
+    "reading": "ほんばんかんきょう",
+    "journey": "eng",
+    "category": "インフラ",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🎬",
+    "mapNode": "eng:infra",
+    "relatedTerms": [
+      "en-rollback",
+      "en-unyo"
+    ],
+    "description": "本物の 使う 人が 使っている 場所。作る ときは 別の ためし用の 場所で 動きを たしかめてから、本番に 出します。"
+  },
+  {
+    "id": "en-shogai",
+    "name": "障害",
+    "reading": "しょうがい",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🚨",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-fukkyu",
+      "en-postmortem",
+      "en-alert"
+    ],
+    "description": "サービスが 止まる、まちがった 答えを 返す など、使う 人が こまる ような 動きの 不具合。起きたら まず えいきょうを 小さく おさえ、落ちついてから 原因を しらべて 直します。"
+  },
+  {
+    "id": "en-unyo",
+    "name": "運用",
+    "reading": "うんよう",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🔧",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-kanshi",
+      "en-hoshu"
+    ],
+    "description": "できあがった サービスを 毎日 止めずに 動かしつづける 仕事。作る 人も、あとで 動かしやすい ように 記録や 見はりの しくみを 用意して おきます。"
+  },
+  {
+    "id": "en-hoshu",
+    "name": "保守",
+    "reading": "ほしゅ",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 2,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "🧰",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-unyo",
+      "en-gijutsufusai"
+    ],
+    "description": "できあがった プログラムの 不具合を 直したり、古く なった 部品を 新しく したり して 使える 状態を 保つ こと。作る 時間より 長く つづく 仕事です。"
+  },
+  {
+    "id": "en-kanshi",
+    "name": "監視",
+    "reading": "かんし",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "📡",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-alert",
+      "en-unyo"
+    ],
+    "description": "サービスの 調子を 数字で 見つづける しくみを 作る こと。答えの 速さや エラーの 数を 記録して グラフに し、ふだんと ちがう 動きに 早く 気づける ように します。"
+  },
+  {
+    "id": "en-fuka",
+    "name": "負荷",
+    "reading": "ふか",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🏋️",
+    "mapNode": "eng:fuka",
+    "relatedTerms": [
+      "en-bottleneck",
+      "en-fukatest"
+    ],
+    "description": "コンピュータに かかる 仕事の 重さ。使う 人が 一度に ふえると 負荷が 上がり、答えが おそく なったり 止まったり します。"
+  },
+  {
+    "id": "en-infra",
+    "name": "インフラ",
+    "reading": "いんふら",
+    "journey": "eng",
+    "category": "インフラ",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🏗",
+    "mapNode": "eng:infra",
+    "relatedTerms": [
+      "en-cloud",
+      "en-serverless"
+    ],
+    "description": "サービスを 動かす 土台。コンピュータ・ネットワーク・データを しまう 場所 などを まとめた ものです。土台が 弱いと、どんなに よい プログラムも 動きません。"
+  },
+  {
+    "id": "en-serverside",
+    "name": "サーバーサイド",
+    "reading": "さーばーさいど",
+    "journey": "eng",
+    "category": "画面とサーバー",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "🛠",
+    "mapNode": "eng:back",
+    "relatedTerms": [
+      "en-backend",
+      "en-frontend"
+    ],
+    "description": "サーバーの 上で 動く プログラムの こと。使う 人の 機械では なく こちらの 機械で 動くので、大事な 計算や データの あつかいは ここに 書きます。"
+  },
+  {
+    "id": "en-agile",
+    "name": "アジャイル",
+    "reading": "あじゃいる",
+    "journey": "eng",
+    "category": "すすめかた",
+    "difficulty": 2,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "eng:plan",
+    "relatedTerms": [
+      "en-scrum",
+      "en-waterfall"
+    ],
+    "description": "小さく 作って 見せて 直す、を 短い くりかえしで 進める 作りかた。たのむ 人の 考えが 変わっても、とちゅうで 向きを 変えやすいのが よい ところです。"
+  },
+  {
+    "id": "en-waterfall",
+    "name": "ウォーターフォール",
+    "reading": "うぉーたーふぉーる",
+    "journey": "eng",
+    "category": "すすめかた",
+    "difficulty": 2,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "🌊",
+    "mapNode": "eng:plan",
+    "relatedTerms": [
+      "en-agile",
+      "en-yokenteigi"
+    ],
+    "description": "要件・設計・作る・ためす を 順番に 1つずつ 終わらせて 進む 作りかた。先に しっかり 決めて おけるので、決まりが はっきりした 大きな しくみに 向いています。"
+  },
+  {
+    "id": "en-yokenteigi",
+    "name": "要件定義",
+    "reading": "ようけんていぎ",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 2,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "🗒",
+    "mapNode": "eng:yoken",
+    "relatedTerms": [
+      "en-yoken",
+      "en-hikinoyoken"
+    ],
+    "description": "作る ものに いる ことを 話し合って 決め、書き残す 作業。ここで 決めた ことが 設計や 見積もりの もとに なるので、仕事の いちばん はじめに やります。"
+  },
+  {
+    "id": "en-shiyohenko",
+    "name": "仕様変更",
+    "reading": "しようへんこう",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 2,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "✏️",
+    "mapNode": "eng:sekkei",
+    "relatedTerms": [
+      "en-shiyo",
+      "en-mitsumori"
+    ],
+    "description": "とちゅうで 作る ものの 決まりが 変わる こと。仕事では よく ある ことなので、どこに えいきょうが 出るか、時間は どれだけ 足りるかを すぐ 考えて 相談します。"
+  },
+  {
+    "id": "en-zeijakusei",
+    "name": "脆弱性",
+    "reading": "ぜいじゃくせい",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 2,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🕳",
+    "mapNode": "eng:security",
+    "relatedTerms": [
+      "en-sqlinjection",
+      "en-xss",
+      "en-security"
+    ],
+    "description": "プログラムの 中に ある、悪い 人に 使われて しまう すきま。見つかったら 早く 直し、使っている 部品も 新しく 保つのが 大切です。"
+  },
+  {
+    "id": "en-shukey",
+    "name": "主キー",
+    "reading": "しゅきー",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 2,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🗝",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-table",
+      "en-gaibukey"
+    ],
+    "description": "表の 中で 1行を ひとつに 決める ための 項目。名前は 同じ 人が いるので、番号を ふって 主キーに する ことが 多いです。",
+    "example": "id INTEGER PRIMARY KEY"
+  },
+  {
+    "id": "en-statuscode",
+    "name": "ステータスコード",
+    "reading": "すてーたすこーど",
+    "journey": "eng",
+    "category": "つなぐ決まり",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "🔢",
+    "mapNode": "eng:api",
+    "relatedTerms": [
+      "en-response",
+      "en-http"
+    ],
+    "description": "返事の 結果を 知らせる 番号で、作る 人が 正しく えらんで 返します。お願いの 中身が まちがいなら 400番台、サーバーの 失敗なら 500番台 と 分けると、画面がわが どう 対応すれば よいか 分かります。"
+  },
+  {
+    "id": "en-prototype",
+    "name": "プロトタイプ",
+    "reading": "ぷろとたいぷ",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧪",
+    "mapNode": "eng:sekkei",
+    "relatedTerms": [
+      "en-sekkei",
+      "en-agile"
+    ],
+    "description": "本番の 前に さっと 作る、ためし用の 小さな 見本。じっさいに さわって もらうと、紙の 説明だけでは 分からない 考えの ずれに 早く 気づけます。"
+  },
+  {
+    "id": "en-scrum",
+    "name": "スクラム",
+    "reading": "すくらむ",
+    "journey": "eng",
+    "category": "すすめかた",
+    "difficulty": 3,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "🏉",
+    "mapNode": "eng:plan",
+    "relatedTerms": [
+      "en-agile",
+      "en-schedule"
+    ],
+    "description": "アジャイルの 進めかたの 1つ。2週間 ほどの 短い 区切りで 作る ものを 決め、毎日 短く 話し合い、区切りの おわりに 見せて ふりかえります。"
+  },
+  {
+    "id": "en-gijutsufusai",
+    "name": "技術的負債",
+    "reading": "ぎじゅつてきふさい",
+    "journey": "eng",
+    "category": "すすめかた",
+    "difficulty": 3,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "🧱",
+    "mapNode": "eng:plan",
+    "relatedTerms": [
+      "en-hoshu",
+      "en-architecture"
+    ],
+    "description": "急いで その場しのぎに 作った せいで、あとから 直すのに 手間が かかる 部分。ほうっておくと たまって 新しい ことが 作りにくく なるので、少しずつ 返して いきます。"
+  },
+  {
+    "id": "en-rest",
+    "name": "REST",
+    "reading": "れすと",
+    "journey": "eng",
+    "category": "つなぐ決まり",
+    "difficulty": 3,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "eng:api",
+    "relatedTerms": [
+      "en-api",
+      "en-http",
+      "en-stateless"
+    ],
+    "description": "つなぐ 決まりを 作る ときの 考えかたの 1つ。あつかう ものごとを 住所で 表し、取る・作る・直す・消す を 決まった 送りかたで 分けます。",
+    "example": "GET /users/42\nDELETE /users/42"
+  },
+  {
+    "id": "en-index",
+    "name": "インデックス",
+    "reading": "いんでっくす",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 3,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "📑",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-table",
+      "en-bottleneck"
+    ],
+    "description": "データベースで さがすのを 速く する ための 目次。よく さがす 項目に つけると 速く なりますが、しまう たびに 目次も 直すので つけすぎは よく ありません。",
+    "example": "CREATE INDEX idx_name ON users(name);"
+  },
+  {
+    "id": "en-transaction",
+    "name": "トランザクション",
+    "reading": "とらんざくしょん",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 3,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🔗",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-database",
+      "en-rollback"
+    ],
+    "description": "いくつかの 書きかえを 1まとめに して、ぜんぶ 成功するか、ぜんぶ なかった ことに するか の どちらかに する しくみ。とちゅうで 止まっても データが 食いちがいません。"
+  },
+  {
+    "id": "en-seikika",
+    "name": "正規化",
+    "reading": "せいきか",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 3,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🧩",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-table",
+      "en-gaibukey"
+    ],
+    "description": "同じ データが あちこちに 重ならない ように 表を 分けて 整理する こと。1か所 直せば ぜんぶ 正しく なるので、直しもれが 起きにくく なります。"
+  },
+  {
+    "id": "en-sqlinjection",
+    "name": "SQLインジェクション",
+    "reading": "えすきゅーえるいんじぇくしょん",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 3,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "💉",
+    "mapNode": "eng:security",
+    "relatedTerms": [
+      "en-zeijakusei",
+      "en-escape",
+      "en-validation"
+    ],
+    "description": "入力らんに データベースへの 命令を まぜて 送り、勝手に データを 見たり 消したり する 攻撃。入力を 命令と 分けて あつかう 書きかたで ふせぎます。"
+  },
+  {
+    "id": "en-xss",
+    "name": "クロスサイトスクリプティング",
+    "reading": "くろすさいとすくりぷてぃんぐ",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 3,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🧨",
+    "mapNode": "eng:security",
+    "relatedTerms": [
+      "en-escape",
+      "en-zeijakusei"
+    ],
+    "description": "書きこみらんに 動く プログラムを まぜ、ほかの 人の 画面で 動かして しまう 攻撃。表示する 前に 記号を 安全な 形に 変えて ふせぎます。"
+  },
+  {
+    "id": "en-hashka",
+    "name": "ハッシュ化",
+    "reading": "はっしゅか",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 3,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🧂",
+    "mapNode": "eng:security",
+    "relatedTerms": [
+      "en-angoka",
+      "en-ninsho"
+    ],
+    "description": "データを 決まった 計算で、もとに もどせない 形に 変える こと。パスワードは そのまま しまわず、パスワード用の わざと 時間の かかる 計算で ハッシュ化して しまうのが 決まりです。"
+  },
+  {
+    "id": "en-session",
+    "name": "セッション",
+    "reading": "せっしょん",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 3,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "🎟",
+    "mapNode": "eng:auth",
+    "relatedTerms": [
+      "en-ninsho",
+      "en-stateless"
+    ],
+    "description": "ログインして から 出るまでの 間、同じ 人だと 覚えておく しくみ。ページを 移るたびに パスワードを 聞かずに すみます。長く 使わないと 切れる ように します。"
+  },
+  {
+    "id": "en-tayouso",
+    "name": "多要素認証",
+    "reading": "たようそにんしょう",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 3,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "📲",
+    "mapNode": "eng:auth",
+    "relatedTerms": [
+      "en-ninsho",
+      "en-saishokengen"
+    ],
+    "description": "パスワードの ほかに、手元の 機械に 届く 番号 など、ちがう しゅるいの たしかめを 組み合わせる 本人確認。パスワードが もれても 入られにくく なります。"
+  },
+  {
+    "id": "en-container",
+    "name": "コンテナ",
+    "reading": "こんてな",
+    "journey": "eng",
+    "category": "インフラ",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🚢",
+    "mapNode": "eng:infra",
+    "relatedTerms": [
+      "en-serverless",
+      "en-iac"
+    ],
+    "description": "プログラムと 動かすのに いる 部品を 1つの 箱に まとめる しくみ。どの 機械に 持っていっても 同じように 動くので「ぼくの 機械では 動いたのに」が へります。"
+  },
+  {
+    "id": "en-serverless",
+    "name": "サーバーレス",
+    "reading": "さーばーれす",
+    "journey": "eng",
+    "category": "インフラ",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "☁️",
+    "mapNode": "eng:infra",
+    "relatedTerms": [
+      "en-container",
+      "en-cloud"
+    ],
+    "description": "サーバーの 用意や 世話を クラウドに まかせて、動かしたい 処理だけを 書く 作りかた。お願いが 来た ときだけ 動き、人が 急に ふえても 自動で 数が ふえるので 合わせやすく なります。"
+  },
+  {
+    "id": "en-bottleneck",
+    "name": "ボトルネック",
+    "reading": "ぼとるねっく",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🍾",
+    "mapNode": "eng:fuka",
+    "relatedTerms": [
+      "en-fuka",
+      "en-index"
+    ],
+    "description": "全体の 速さを おそく している、いちばん つまっている ところ。びんの 首が 細いと 中身が ゆっくりしか 出ないのと 同じで、ここを 見つけて 直すのが 速く する 近道です。"
+  },
+  {
+    "id": "en-scaleout",
+    "name": "スケールアウト",
+    "reading": "すけーるあうと",
+    "journey": "eng",
+    "category": "インフラ",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "📈",
+    "mapNode": "eng:fuka",
+    "relatedTerms": [
+      "en-loadbalancer",
+      "en-fuka",
+      "en-stateless"
+    ],
+    "description": "使う 人が ふえた ときに、機械の 台数を ふやして 受け止める こと。1台を 強く するより 上限に ぶつかりにくく、1台 止まっても 残りで 動きつづけられます。"
+  },
+  {
+    "id": "en-loadbalancer",
+    "name": "ロードバランサー",
+    "reading": "ろーどばらんさー",
+    "journey": "eng",
+    "category": "インフラ",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "eng:fuka",
+    "relatedTerms": [
+      "en-scaleout",
+      "en-kayousei"
+    ],
+    "description": "たくさん 来る お願いを、何台かの サーバーに ふり分ける 係。1台に 集まらない ように し、止まった 機械には 送らない ように します。"
+  },
+  {
+    "id": "en-kayousei",
+    "name": "可用性",
+    "reading": "かようせい",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🟢",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-jochoka",
+      "en-kanshi"
+    ],
+    "description": "サービスが 止まらずに 使える 時間の 割合。高く する ために、機械を 2つ 用意したり、止まっても すぐ もどる しくみを 作ったり します。"
+  },
+  {
+    "id": "en-gokansei",
+    "name": "互換性",
+    "reading": "ごかんせい",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔁",
+    "mapNode": "eng:sekkei",
+    "relatedTerms": [
+      "en-migration",
+      "en-api"
+    ],
+    "description": "新しく した あとも、前の ものと 同じように 使える こと。つなぐ 決まりを 変える ときに 前の 形を 急に なくすと、使っている ほかの プログラムが 動かなく なります。"
+  },
+  {
+    "id": "en-accessibility",
+    "name": "アクセシビリティ",
+    "reading": "あくせしびりてぃ",
+    "journey": "eng",
+    "category": "画面とサーバー",
+    "difficulty": 3,
+    "role": "フロントエンド",
+    "type": "concept",
+    "emoji": "♿",
+    "mapNode": "eng:front",
+    "relatedTerms": [
+      "en-html",
+      "en-frontend"
+    ],
+    "description": "目や 耳、手の 動かしかたに かかわらず、だれでも 使える ように する こと。文字の 大きさや 色の こさ、読み上げへの 対応を 作る ときから 考えます。"
+  },
+  {
+    "id": "en-architecture",
+    "name": "アーキテクチャ",
+    "reading": "あーきてくちゃ",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🏛",
+    "mapNode": "eng:sekkei",
+    "relatedTerms": [
+      "en-sekkei",
+      "en-microservice"
+    ],
+    "description": "しくみ 全体の 大きな 組み立て。どんな 部品に 分けて、どう つなぎ、どこで 動かすかを 決めた ものです。あとから 変えにくいので、よく 考えて 決めます。"
+  },
+  {
+    "id": "en-microservice",
+    "name": "マイクロサービス",
+    "reading": "まいくろさーびす",
+    "journey": "eng",
+    "category": "画面とサーバー",
+    "difficulty": 3,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "🧱",
+    "mapNode": "eng:back",
+    "relatedTerms": [
+      "en-architecture",
+      "en-api"
+    ],
+    "description": "大きな サービスを 役わりごとの 小さな サービスに 分け、つなぐ 決まりで やりとり させる 作りかた。チームごとに 別々に 直せますが、つなぎめの 管理が むずかしく なります。"
+  },
+  {
+    "id": "en-rollback",
+    "name": "ロールバック",
+    "reading": "ろーるばっく",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "⏪",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-honban",
+      "en-transaction"
+    ],
+    "description": "新しく した ものに 問題が あった とき、前の 動いていた 状態に もどす こと。すぐ もどせる 用意が あると、安心して 新しい ものを 出せます。"
+  },
+  {
+    "id": "en-alert",
+    "name": "アラート",
+    "reading": "あらーと",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🔔",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-kanshi",
+      "en-shogai"
+    ],
+    "description": "監視で おかしな ことを 見つけた とき、人に 知らせる しくみ。鳴りすぎると 大事な 知らせを 見のがすので、本当に 動くべき ときだけ 鳴らす ように します。"
+  },
+  {
+    "id": "en-gaibukey",
+    "name": "外部キー",
+    "reading": "がいぶきー",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 3,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🪝",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-shukey",
+      "en-join"
+    ],
+    "description": "ほかの 表の 主キーを 指す 項目。注文の 表に 買った 人の 番号を 入れて つなぐ ように 使い、ない 人を 指す データが できない ように 守れます。",
+    "example": "user_id INTEGER REFERENCES users(id)"
+  },
+  {
+    "id": "en-join",
+    "name": "テーブル結合",
+    "reading": "てーぶるけつごう",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 3,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🤝",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-gaibukey",
+      "en-sql"
+    ],
+    "description": "2つ 以上の 表を、つながる 項目で 合わせて 1つの 表の ように 取り出す こと。正規化で 分けた 表を 見る ときに 使います。",
+    "example": "SELECT * FROM orders\nJOIN users ON orders.user_id = users.id;"
+  },
+  {
+    "id": "en-schema",
+    "name": "スキーマ",
+    "reading": "すきーま",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 3,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🗺",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-table",
+      "en-migration"
+    ],
+    "description": "データベースの 形の 決まり。どんな 表が あり、それぞれに どんな 項目と 型が あるかを まとめた ものです。"
+  },
+  {
+    "id": "en-migration",
+    "name": "マイグレーション",
+    "reading": "まいぐれーしょん",
+    "journey": "eng",
+    "category": "データベース",
+    "difficulty": 3,
+    "role": "データ",
+    "type": "concept",
+    "emoji": "🚚",
+    "mapNode": "eng:db",
+    "relatedTerms": [
+      "en-schema",
+      "en-gokansei"
+    ],
+    "description": "データベースの 形を 変える 手順を、順番つきの 記録に して 残す こと。だれの 機械でも 本番でも、同じ 順に あてて 同じ 形に そろえられます。",
+    "example": "ALTER TABLE users ADD COLUMN nickname TEXT;"
+  },
+  {
+    "id": "en-validation",
+    "name": "バリデーション",
+    "reading": "ばりでーしょん",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 3,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "✅",
+    "mapNode": "eng:security",
+    "relatedTerms": [
+      "en-sqlinjection",
+      "en-escape"
+    ],
+    "description": "送られて きた データが 決まりに 合っているかを たしかめる こと。画面がわだけで なく、サーバーがわでも かならず たしかめます。画面の たしかめは すりぬけられるからです。"
+  },
+  {
+    "id": "en-escape",
+    "name": "エスケープ",
+    "reading": "えすけーぷ",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 3,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🧤",
+    "mapNode": "eng:security",
+    "relatedTerms": [
+      "en-xss",
+      "en-sqlinjection"
+    ],
+    "description": "特別な 意味を 持つ 記号を、ただの 文字として あつかう 形に 変える こと。書きこまれた 文を 画面に 出す 前に 行い、勝手に 動く 命令に ならない ように します。"
+  },
+  {
+    "id": "en-jochoka",
+    "name": "冗長化",
+    "reading": "じょうちょうか",
+    "journey": "eng",
+    "category": "インフラ",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "👯",
+    "mapNode": "eng:infra",
+    "relatedTerms": [
+      "en-kayousei",
+      "en-loadbalancer"
+    ],
+    "description": "サーバーや データの 置き場所を わざと 2つ 以上 持たせる 作りかた。1台が こわれても もう1台が すぐ 代わりを つとめるので、ひとつの こしょうで 全体が 止まる ことを ふせげます。"
+  },
+  {
+    "id": "en-fukkyu",
+    "name": "復旧",
+    "reading": "ふっきゅう",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🩹",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-backup",
+      "en-shogai"
+    ],
+    "description": "障害で 止まった サービスを、また 使える 状態に もどす こと。どれくらいの 時間で もどすか、どこまでの データを もどすかを 前もって 決めて 練習します。"
+  },
+  {
+    "id": "en-hikinoyoken",
+    "name": "非機能要件",
+    "reading": "ひきのうようけん",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 3,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "eng:yoken",
+    "relatedTerms": [
+      "en-yokenteigi",
+      "en-kayousei"
+    ],
+    "description": "何が できるか では なく、どれくらい 速いか・止まらないか・安全か などの 決まり。わすれやすいので、要件定義の ときに 数字で 決めて おきます。",
+    "example": "ページが 3秒 以内に ひらくこと"
+  },
+  {
+    "id": "en-usecase",
+    "name": "ユースケース",
+    "reading": "ゆーすけーす",
+    "journey": "eng",
+    "category": "要件と設計",
+    "difficulty": 3,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "🚶",
+    "mapNode": "eng:yoken",
+    "relatedTerms": [
+      "en-yoken",
+      "en-shiyo"
+    ],
+    "description": "使う 人が 何を したくて、どんな 順に 操作するかを 書いた もの。使う 人の 目線で 書くので、いる 機能と いらない 機能を 見分けやすく なります。",
+    "example": "会員が ログインして、本を 1さつ 予約する"
+  },
+  {
+    "id": "en-latency",
+    "name": "レイテンシ",
+    "reading": "れいてんし",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "⏱",
+    "mapNode": "eng:fuka",
+    "relatedTerms": [
+      "en-throughput",
+      "en-bottleneck"
+    ],
+    "description": "お願いを 送ってから 返事が 来はじめるまでの 待ち時間。遠い 場所との やりとりや、とちゅうの 待ちが 多いと 長く なります。",
+    "acceptedReadings": [
+      "れいてんし",
+      "れいてんしー"
+    ]
+  },
+  {
+    "id": "en-throughput",
+    "name": "スループット",
+    "reading": "するーぷっと",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🚰",
+    "mapNode": "eng:fuka",
+    "relatedTerms": [
+      "en-latency",
+      "en-scaleout"
+    ],
+    "description": "決まった 時間に どれだけの 数の 仕事を こなせるか の 量。待ち時間とは 別の ものさしで、両方を 見て 速さを はかります。"
+  },
+  {
+    "id": "en-fukatest",
+    "name": "負荷テスト",
+    "reading": "ふかてすと",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 3,
+    "role": "テスト",
+    "type": "concept",
+    "emoji": "🏋️",
+    "mapNode": "eng:fuka",
+    "relatedTerms": [
+      "en-fuka",
+      "en-bottleneck"
+    ],
+    "description": "本番の 前に、たくさんの 人が 同時に 使った ときと 同じ 重さを わざと かけて ためす こと。どこまで たえられるか、どこが 先に つまるかが 分かります。"
+  },
+  {
+    "id": "en-stateless",
+    "name": "ステートレス",
+    "reading": "すてーとれす",
+    "journey": "eng",
+    "category": "画面とサーバー",
+    "difficulty": 3,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "🎈",
+    "mapNode": "eng:back",
+    "relatedTerms": [
+      "en-scaleout",
+      "en-rest",
+      "en-session"
+    ],
+    "description": "サーバーが 前の やりとりを 覚えずに、毎回の お願いだけで 答えを 出す 作りかた。どの サーバーが 答えても 同じに なるので、台数を ふやしやすく なります。"
+  },
+  {
+    "id": "en-saishokengen",
+    "name": "最小権限の原則",
+    "reading": "さいしょうけんげんのげんそく",
+    "journey": "eng",
+    "category": "セキュリティ",
+    "difficulty": 3,
+    "role": "セキュリティ",
+    "type": "concept",
+    "emoji": "🔏",
+    "mapNode": "eng:auth",
+    "relatedTerms": [
+      "en-ninka",
+      "en-tayouso"
+    ],
+    "description": "人にも プログラムにも、仕事に いる けんりだけを わたす 考えかた。もし 乗っ取られても できる ことが 少ないので、ひがいを 小さく できます。"
+  },
+  {
+    "id": "en-iac",
+    "name": "インフラのコード化",
+    "reading": "いんふらのこーどか",
+    "journey": "eng",
+    "category": "インフラ",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "📜",
+    "mapNode": "eng:infra",
+    "relatedTerms": [
+      "en-infra",
+      "en-container"
+    ],
+    "description": "サーバーや ネットワークの 設定を、手で いじる かわりに ファイルに 書いて 残す こと。同じ 土台を 何回でも 作りなおせて、だれが 何を 変えたかも 記録に 残ります。"
+  },
+  {
+    "id": "en-postmortem",
+    "name": "ポストモーテム",
+    "reading": "ぽすともーてむ",
+    "journey": "eng",
+    "category": "運用",
+    "difficulty": 3,
+    "role": "チーム",
+    "type": "concept",
+    "emoji": "📝",
+    "mapNode": "eng:unyo",
+    "relatedTerms": [
+      "en-shogai",
+      "en-fukkyu"
+    ],
+    "description": "障害が おさまった あとに、何が 起きて なぜ そうなったか、つぎに どう ふせぐかを まとめる ふりかえり。人を せめず、しくみを よく する ための ものです。"
+  }
+]

@@ -1,0 +1,1436 @@
+[
+  {
+    "id": "pc-computer",
+    "name": "コンピュータ",
+    "reading": "こんぴゅーた",
+    "acceptedReadings": [
+      "こんぴゅーた",
+      "こんぴゅーたー"
+    ],
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "💻",
+    "mapNode": "pc:hard",
+    "relatedTerms": [
+      "pc-cpu",
+      "pc-program"
+    ],
+    "description": "命令された とおりに、とても 速く 正確に 計算する 機械。プログラマーは この 機械に させたい ことを ことばで 書いて わたします。",
+    "example": "パソコンも スマホも ゲーム機も、中身は みんな コンピュータです。"
+  },
+  {
+    "id": "pc-keyboard",
+    "name": "キーボード",
+    "reading": "きーぼーど",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⌨️",
+    "mapNode": "pc:nyuryoku",
+    "relatedTerms": [
+      "pc-nyuryoku",
+      "pc-mouse"
+    ],
+    "description": "字や 数を 打ちこむ ための 入力の 道具。プログラマーが 毎日 長い 時間 さわる 道具で、コードは ここから 生まれます。"
+  },
+  {
+    "id": "pc-mouse",
+    "name": "マウス",
+    "reading": "まうす",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🖱",
+    "mapNode": "pc:nyuryoku",
+    "relatedTerms": [
+      "pc-keyboard",
+      "pc-display"
+    ],
+    "description": "手で 動かして 画面の 矢印を 動かし、ボタンを 押して えらぶ 入力の 道具。押された 場所を 受けとる プログラムを 書く ことも あります。"
+  },
+  {
+    "id": "pc-display",
+    "name": "ディスプレイ",
+    "reading": "でぃすぷれい",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🖥",
+    "mapNode": "pc:shutsuryoku",
+    "relatedTerms": [
+      "pc-shutsuryoku",
+      "pc-mouse"
+    ],
+    "description": "文字や 絵を 映して 見せる 出力の 道具。小さな 光の 点(画素)が たくさん ならんでいて、プログラムが 点ごとの 色を 決めて 映します。"
+  },
+  {
+    "id": "pc-internet",
+    "name": "インターネット",
+    "reading": "いんたーねっと",
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 1,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🌍",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-network",
+      "pc-browser"
+    ],
+    "description": "世界中の ネットワークを つないだ 大きな あみ。同じ 決まりで 話すので、どの 国の 機械とも やりとり できます。作る 側は その 決まりに 合わせて 書きます。"
+  },
+  {
+    "id": "pc-app",
+    "name": "アプリ",
+    "reading": "あぷり",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📱",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-os",
+      "pc-program"
+    ],
+    "description": "計算機・カメラ・ゲームのように、目的ごとに 作られた プログラム。アプリケーションの 略です。プログラマーは この アプリを 作る 仕事を します。"
+  },
+  {
+    "id": "pc-file",
+    "name": "ファイル",
+    "reading": "ふぁいる",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📄",
+    "mapNode": "pc:storage",
+    "relatedTerms": [
+      "pc-folder",
+      "pc-extension"
+    ],
+    "description": "データを ひとまとまりに して、名前を つけて しまった もの。書いた コードも ファイルに 保存するので、電源を 切っても 消えません。",
+    "example": "main.py"
+  },
+  {
+    "id": "pc-folder",
+    "name": "フォルダ",
+    "reading": "ふぉるだ",
+    "acceptedReadings": [
+      "ふぉるだ",
+      "ふぉるだー"
+    ],
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📁",
+    "mapNode": "pc:storage",
+    "relatedTerms": [
+      "pc-file",
+      "pc-filesystem"
+    ],
+    "description": "ファイルを 入れて 分けて おく 入れもの。フォルダの 中に フォルダも 作れます。大きな 作品は 役わりごとに フォルダを 分けると 迷いません。"
+  },
+  {
+    "id": "pc-program",
+    "name": "プログラム",
+    "reading": "ぷろぐらむ",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📜",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-proglang",
+      "pc-sourcecode"
+    ],
+    "description": "コンピュータが 何を どの 順で するかを、1つ残らず 書いた 指示書。書く ことを プログラミング、書く 人を プログラマーと いいます。",
+    "example": "print(\"hello\")"
+  },
+  {
+    "id": "pc-nyuryoku",
+    "name": "入力",
+    "reading": "にゅうりょく",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📥",
+    "mapNode": "pc:nyuryoku",
+    "relatedTerms": [
+      "pc-shutsuryoku",
+      "pc-keyboard"
+    ],
+    "description": "外から コンピュータへ データを 入れる こと。プログラムを 書く ときは、打ちまちがいや 変な 値が 入る ことも 考えて おくのが 大事です。",
+    "example": "name = input()"
+  },
+  {
+    "id": "pc-shutsuryoku",
+    "name": "出力",
+    "reading": "しゅつりょく",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📤",
+    "mapNode": "pc:shutsuryoku",
+    "relatedTerms": [
+      "pc-nyuryoku",
+      "pc-display"
+    ],
+    "description": "計算の 結果を 画面・音・ファイルなど 外へ 出す こと。自分の プログラムが 何を 出すかを 決めるのも、プログラマーの 仕事です。",
+    "example": "print(total)"
+  },
+  {
+    "id": "pc-browser",
+    "name": "ブラウザ",
+    "reading": "ぶらうざ",
+    "acceptedReadings": [
+      "ぶらうざ",
+      "ぶらうざー"
+    ],
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 1,
+    "role": "フロントエンド",
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-internet",
+      "pc-javascript"
+    ],
+    "description": "ウェブページを 見る ための アプリ。受けとった 文章と 見た目の 決まりを 読んで 画面を 組み立てます。ページを 作る 人は ここで 動きを たしかめます。"
+  },
+  {
+    "id": "pc-proglang",
+    "name": "プログラミング言語",
+    "reading": "ぷろぐらみんぐげんご",
+    "journey": "pc",
+    "category": "言語",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🌐",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-program",
+      "pc-kikaigo"
+    ],
+    "description": "人が 読み書き できて、機械の ことばにも 直せる、プログラムを 書く ための ことば。たくさん 種類が あり、作りたい ものに 合わせて えらびます。"
+  },
+  {
+    "id": "pc-cpu",
+    "name": "CPU",
+    "reading": "しーぴーゆー",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧠",
+    "mapNode": "pc:cpu",
+    "relatedTerms": [
+      "pc-memory",
+      "pc-kikaigo"
+    ],
+    "description": "命令を 1つずつ 読んで 計算する、コンピュータの 頭の 部品。どんな プログラムも、さいごは この 部品が わかる 命令に 直されて 動きます。"
+  },
+  {
+    "id": "pc-memory",
+    "name": "メモリ",
+    "reading": "めもり",
+    "acceptedReadings": [
+      "めもり",
+      "めもりー"
+    ],
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🗂",
+    "mapNode": "pc:memory",
+    "relatedTerms": [
+      "pc-cpu",
+      "pc-storage"
+    ],
+    "description": "動いて いる プログラムが、使う データを 一時的に 置いておく 作業台。速く 読み書き できますが、電源を 切ると 中身は 消えます。"
+  },
+  {
+    "id": "pc-nishinsu",
+    "name": "2進数",
+    "reading": "にしんすう",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔢",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-jusshinsu",
+      "pc-bit"
+    ],
+    "description": "0と 1の 2つの 数字だけで 数を あらわす 書きかた。コンピュータの 中では 電気が 流れるか 流れないかで、すべてを この 形で しまっています。",
+    "example": "x = 0b1010  # 10"
+  },
+  {
+    "id": "pc-jusshinsu",
+    "name": "10進数",
+    "reading": "じゅっしんすう",
+    "acceptedReadings": [
+      "じゅっしんすう",
+      "じっしんすう"
+    ],
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔟",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-nishinsu",
+      "pc-jurokushinsu"
+    ],
+    "description": "0から 9までの 10この 数字で あらわす、ふだん 使って いる 数の 書きかた。コードに ふつうに 書いた 数は 10進数と して 読まれます。",
+    "example": "x = 10"
+  },
+  {
+    "id": "pc-bit",
+    "name": "ビット",
+    "reading": "びっと",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⚪",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-byte",
+      "pc-nishinsu"
+    ],
+    "description": "0か 1かの どちらか 1つを しまえる、データの いちばん 小さな 単位。ビットが 1つ ふえるごとに、あらわせる 組みあわせは 2倍に なります。",
+    "example": "8ビットで 0から 255までの 256とおりを あらわせます。"
+  },
+  {
+    "id": "pc-byte",
+    "name": "バイト",
+    "reading": "ばいと",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧱",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-bit",
+      "pc-kilobyte"
+    ],
+    "description": "ビットを 8こ まとめた 単位。ファイルの 大きさや メモリの 広さは、ふつう バイトを 元に 数えます。英字 1字は 1バイトで しまえます。",
+    "example": "1バイト は 8ビット です。"
+  },
+  {
+    "id": "pc-scratch",
+    "name": "Scratch",
+    "reading": "すくらっち",
+    "journey": "pc",
+    "category": "言語",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🐱",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-proglang",
+      "pc-python"
+    ],
+    "description": "命令の ブロックを ならべて プログラムを 作る 言語。打ちまちがいが おきにくいので、くりかえしや もし〜なら の 考えかたを 楽しく 身に つけられます。",
+    "example": "ブロックを つないで キャラを 動かし、作った ものを すぐ ためせます。"
+  },
+  {
+    "id": "pc-os",
+    "name": "OS",
+    "reading": "おーえす",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⚙️",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-kernel",
+      "pc-app"
+    ],
+    "description": "機械の 部品を まとめて 管理し、アプリが 動く 土台に なる 基本の ソフト。アプリを 作る 人は、機械を じかに さわらず OSに お願いして 動かします。"
+  },
+  {
+    "id": "pc-software",
+    "name": "ソフトウェア",
+    "reading": "そふとうぇあ",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧩",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-hardware",
+      "pc-app"
+    ],
+    "description": "機械に 何を させるかを 決める、プログラムと データの こと。形は ないので、あとから 直したり 足したり できるのが 強みです。"
+  },
+  {
+    "id": "pc-hardware",
+    "name": "ハードウェア",
+    "reading": "はーどうぇあ",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔩",
+    "mapNode": "pc:hard",
+    "relatedTerms": [
+      "pc-software",
+      "pc-cpu"
+    ],
+    "description": "CPUや メモリ、画面など、手で さわれる 機械の 部品。ソフトウェアは ハードウェアの 力の はんいで 動くので、しくみを 知ると 速い コードが 書けます。"
+  },
+  {
+    "id": "pc-storage",
+    "name": "ストレージ",
+    "reading": "すとれーじ",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "💾",
+    "mapNode": "pc:storage",
+    "relatedTerms": [
+      "pc-memory",
+      "pc-file"
+    ],
+    "description": "電源を 切っても データが 消えない、長く しまっておく ための 部品。メモリより 読み書きが おそいので、何を どこに 置くかを 考えて 作ります。"
+  },
+  {
+    "id": "pc-kilobyte",
+    "name": "キロバイト",
+    "reading": "きろばいと",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-byte",
+      "pc-megabyte"
+    ],
+    "description": "およそ 1000バイトを あらわす 単位。1024バイトを 1キロと して 数える ことも あるので、どちらの 意味かを たしかめる くせを つけましょう。",
+    "example": "文字だけの 短い 文章なら、数キロバイトで おさまります。"
+  },
+  {
+    "id": "pc-megabyte",
+    "name": "メガバイト",
+    "reading": "めがばいと",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-kilobyte",
+      "pc-gigabyte"
+    ],
+    "description": "キロバイトの およそ 1000倍の 単位。写真 1枚や 小さな アプリの 大きさの めやすです。データを 送る 時間を 考える ときにも 使います。"
+  },
+  {
+    "id": "pc-gigabyte",
+    "name": "ギガバイト",
+    "reading": "ぎがばいと",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🚚",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-megabyte",
+      "pc-storage"
+    ],
+    "description": "メガバイトの およそ 1000倍の 単位。メモリや ストレージの 広さ、長い 動画の 大きさを あらわす ときに よく 出てきます。"
+  },
+  {
+    "id": "pc-jurokushinsu",
+    "name": "16進数",
+    "reading": "じゅうろくしんすう",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔣",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-nishinsu",
+      "pc-byte"
+    ],
+    "description": "0から 9と、10から 15を あらわす 6この 英字で 数を 書く 書きかた。1けたで 4ビット分に なるので、長い 0と 1を 短く 読みやすく 書けます。",
+    "example": "color = 0xFF  # 255"
+  },
+  {
+    "id": "pc-network",
+    "name": "ネットワーク",
+    "reading": "ねっとわーく",
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🕸",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-internet",
+      "pc-protocol"
+    ],
+    "description": "いくつもの コンピュータを 線や 電波で つなぎ、データを やりとり できるように した しくみ。とちゅうで 切れる ことも ある、と 考えて 作ります。"
+  },
+  {
+    "id": "pc-server",
+    "name": "サーバー",
+    "reading": "さーばー",
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "🗄",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-network",
+      "pc-ipaddress"
+    ],
+    "description": "ほかの 機械から たのまれた 仕事を 受けて、答えを 返す 側の コンピュータ。たくさんの たのみを 同時に 受けても こわれないように 作るのが 腕の 見せどころです。"
+  },
+  {
+    "id": "pc-ipaddress",
+    "name": "IPアドレス",
+    "reading": "あいぴーあどれす",
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "📮",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-server",
+      "pc-dns"
+    ],
+    "description": "ネットワークの 中で、1台ずつの 機械を 見分ける ための 番号の 住所。データは この 番号を たよりに 相手まで とどけられます。",
+    "example": "192.168.0.1"
+  },
+  {
+    "id": "pc-sourcecode",
+    "name": "ソースコード",
+    "reading": "そーすこーど",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📝",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-compile",
+      "pc-program"
+    ],
+    "description": "プログラマーが プログラミング言語で 書いた、プログラムの 元の 文章。機械より 人が 読む 回数の ほうが 多いので、読みやすく 書く ことが 大事です。"
+  },
+  {
+    "id": "pc-jikko",
+    "name": "実行",
+    "reading": "じっこう",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "▶️",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-process",
+      "pc-exefile"
+    ],
+    "description": "書いた プログラムを じっさいに 動かす こと。書いたら すぐ 動かして、思った とおりに なるかを 小さく たしかめながら 進めると うまく いきます。",
+    "example": "python main.py"
+  },
+  {
+    "id": "pc-extension",
+    "name": "拡張子",
+    "reading": "かくちょうし",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🏷",
+    "mapNode": "pc:storage",
+    "relatedTerms": [
+      "pc-file",
+      "pc-exefile"
+    ],
+    "description": "ファイル名の さいごの 点の あとに つく 短い 文字。OSや 道具は これを 見て、どの 言語の コードか・どの アプリで ひらくかを 決めます。",
+    "example": "app.js  main.py  index.html"
+  },
+  {
+    "id": "pc-mojicode",
+    "name": "文字コード",
+    "reading": "もじこーど",
+    "journey": "pc",
+    "category": "文字",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔤",
+    "mapNode": "pc:moji",
+    "relatedTerms": [
+      "pc-ascii",
+      "pc-unicode"
+    ],
+    "description": "文字 1つ1つに 番号を わりふる 決まり。コンピュータは 文字も 数と して しまうので、書く 側と 読む 側が 同じ 決まりを 使う 必要が あります。",
+    "example": "print(ord(\"A\"))  # 65"
+  },
+  {
+    "id": "pc-mojibake",
+    "name": "文字化け",
+    "reading": "もじばけ",
+    "journey": "pc",
+    "category": "文字",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "👾",
+    "mapNode": "pc:moji",
+    "relatedTerms": [
+      "pc-mojicode",
+      "pc-utf8"
+    ],
+    "description": "保存した ときと ちがう 文字コードで 読んで、字が 意味の ない 記号に なって しまう こと。読み書きで 使う 文字コードを そろえると ふせげます。"
+  },
+  {
+    "id": "pc-ascii",
+    "name": "ASCII",
+    "reading": "あすきー",
+    "journey": "pc",
+    "category": "文字",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔡",
+    "mapNode": "pc:moji",
+    "relatedTerms": [
+      "pc-mojicode",
+      "pc-unicode"
+    ],
+    "description": "英字・数字・記号など 128この 文字に 番号を つけた、古くから ある 文字コード。日本語は 入って いませんが、今の 多くの 文字コードの 土台です。",
+    "example": "print(ord(\"a\"))  # 97"
+  },
+  {
+    "id": "pc-unicode",
+    "name": "Unicode",
+    "reading": "ゆにこーど",
+    "journey": "pc",
+    "category": "文字",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🌏",
+    "mapNode": "pc:moji",
+    "relatedTerms": [
+      "pc-utf8",
+      "pc-ascii"
+    ],
+    "description": "世界中の 文字や 絵文字に、1つずつ 番号を つけた 決まり。これの おかげで、日本語と ほかの 国の ことばを 1つの 文章に まぜて あつかえます。",
+    "example": "print(chr(12354))  # hiragana a"
+  },
+  {
+    "id": "pc-kikaigo",
+    "name": "機械語",
+    "reading": "きかいご",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🤖",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-cpu",
+      "pc-assembly"
+    ],
+    "description": "CPUが そのまま 読める、0と 1で できた 命令の ことば。人には とても 読みにくいので、ふつうは プログラミング言語で 書いて 機械語に 直します。"
+  },
+  {
+    "id": "pc-compile",
+    "name": "コンパイル",
+    "reading": "こんぱいる",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-compiler",
+      "pc-kikaigo"
+    ],
+    "description": "書いた ソースコードを、動かす 前に まとめて 機械が 読める 形に 直す こと。このとき 書きかたの まちがいが 見つかる ことも 多いです。"
+  },
+  {
+    "id": "pc-compiler",
+    "name": "コンパイラ",
+    "reading": "こんぱいら",
+    "acceptedReadings": [
+      "こんぱいら",
+      "こんぱいらー"
+    ],
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🏭",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-compile",
+      "pc-interpreter"
+    ],
+    "description": "コンパイルを する ための プログラム。まちがいを 見つけると、何行目が どう おかしいかを 知らせて くれるので、その 知らせを よく 読む ことが 大事です。"
+  },
+  {
+    "id": "pc-interpreter",
+    "name": "インタプリタ",
+    "reading": "いんたぷりた",
+    "acceptedReadings": [
+      "いんたぷりた",
+      "いんたーぷりたー"
+    ],
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🗣",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-compiler",
+      "pc-python"
+    ],
+    "description": "ソースコードを 少しずつ 読みながら、その場で 動かして いく プログラム。書いて すぐ ためせるので、少しずつ 作って たしかめる のに 向いて います。"
+  },
+  {
+    "id": "pc-process",
+    "name": "プロセス",
+    "reading": "ぷろせす",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🏃",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-thread",
+      "pc-os"
+    ],
+    "description": "動いて いる とちゅうの プログラム 1つ分の こと。OSは プロセスごとに メモリを 分けて わたすので、1つが 止まっても ほかは 動きつづけます。",
+    "example": "同じ アプリを 2つ ひらくと、プロセスも 2つ できます。"
+  },
+  {
+    "id": "pc-python",
+    "name": "Python",
+    "reading": "ぱいそん",
+    "journey": "pc",
+    "category": "言語",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🐍",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-interpreter",
+      "pc-proglang"
+    ],
+    "description": "短く すっきり 書ける プログラミング言語。データの 集計や 分析、仕事の 自動化、サーバーの 処理、学校の 授業など、はば広い 場面で 使われます。",
+    "example": "print(\"hello\")"
+  },
+  {
+    "id": "pc-javascript",
+    "name": "JavaScript",
+    "reading": "じゃばすくりぷと",
+    "journey": "pc",
+    "category": "言語",
+    "difficulty": 2,
+    "role": "フロントエンド",
+    "type": "concept",
+    "emoji": "🟨",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-browser",
+      "pc-python"
+    ],
+    "description": "ブラウザの 中で 動く プログラミング言語。ページを 読みこんだ あとに 中身を 書きかえる など、ウェブページの 画面がわで 使われます。サーバーがわでも 使われます。",
+    "example": "console.log(\"hello\");"
+  },
+  {
+    "id": "pc-java",
+    "name": "Java",
+    "reading": "じゃば",
+    "journey": "pc",
+    "category": "言語",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "☕",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-vm",
+      "pc-bytecode"
+    ],
+    "description": "型を はっきり 書く プログラミング言語。仮想マシンの 上で 動くので、いろいろな 機械で 同じ コードが 動きます。会社の 大きな しくみや スマホの アプリで 使われます。",
+    "example": "System.out.println(\"hello\");"
+  },
+  {
+    "id": "pc-c",
+    "name": "C言語",
+    "reading": "しーげんご",
+    "journey": "pc",
+    "category": "言語",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔧",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-compiler",
+      "pc-cpp"
+    ],
+    "description": "機械に 近い ところまで 細かく 書ける プログラミング言語。OSや 家電の 中の 小さな コンピュータなど、速さと 少ない メモリが 大事な 場所で 使われます。",
+    "example": "printf(\"hello\\n\");"
+  },
+  {
+    "id": "pc-cpp",
+    "name": "C++",
+    "reading": "しーぷらすぷらす",
+    "journey": "pc",
+    "category": "言語",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⚙️",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-c",
+      "pc-csharp"
+    ],
+    "description": "C言語に クラスなどの 部品の しくみを 足した プログラミング言語。速さが 大事な ゲームの 土台や、大きな アプリ、機械の 制御などで 使われます。",
+    "example": "std::cout << \"hello\";"
+  },
+  {
+    "id": "pc-csharp",
+    "name": "C#",
+    "reading": "しーしゃーぷ",
+    "journey": "pc",
+    "category": "言語",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🎼",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-cpp",
+      "pc-java"
+    ],
+    "description": "クラスを 使って 整理して 書く プログラミング言語。パソコンの アプリ、ゲーム作り、サーバーの 処理など、いろいろな ものが 書けます。",
+    "example": "Console.WriteLine(\"hello\");"
+  },
+  {
+    "id": "pc-swift",
+    "name": "Swift",
+    "reading": "すいふと",
+    "journey": "pc",
+    "category": "言語",
+    "difficulty": 2,
+    "role": "フロントエンド",
+    "type": "concept",
+    "emoji": "🕊",
+    "mapNode": "pc:gengo",
+    "relatedTerms": [
+      "pc-app",
+      "pc-csharp"
+    ],
+    "description": "スマホや タブレット、パソコンの アプリを 作るのに よく 使われる プログラミング言語。まちがいを 書く 前に 見つけやすい 作りに なって います。",
+    "example": "print(\"hello\")"
+  },
+  {
+    "id": "pc-thread",
+    "name": "スレッド",
+    "reading": "すれっど",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧵",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-process",
+      "pc-multicore"
+    ],
+    "description": "1つの プロセスの 中で 動く、仕事の 流れ 1本分。いくつも 同時に 動かせますが、同じ データを いっしょに 書きかえると まちがいが おきるので 注意が 必要です。"
+  },
+  {
+    "id": "pc-multicore",
+    "name": "マルチコア",
+    "reading": "まるちこあ",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧠",
+    "mapNode": "pc:cpu",
+    "relatedTerms": [
+      "pc-thread",
+      "pc-clock"
+    ],
+    "description": "1つの CPUの 中に、計算する 心臓部(コア)が いくつも ある こと。仕事を うまく 分けて 書けば、同時に 進めて 速く 終わらせられます。",
+    "example": "4コアなら、4つの 計算を 同時に 進められます。"
+  },
+  {
+    "id": "pc-cachememory",
+    "name": "キャッシュメモリ",
+    "reading": "きゃっしゅめもり",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⚡",
+    "mapNode": "pc:memory",
+    "relatedTerms": [
+      "pc-memory",
+      "pc-register"
+    ],
+    "description": "CPUの すぐ そばに ある、小さくて とても 速い メモリ。よく 使う データを 近くに 置くので、データを 順番に ならべて 使う コードは 速く なりやすいです。"
+  },
+  {
+    "id": "pc-kernel",
+    "name": "カーネル",
+    "reading": "かーねる",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🌰",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-os",
+      "pc-syscall"
+    ],
+    "description": "OSの 中心に ある プログラム。メモリの わりふり、プロセスの 順番、部品との やりとりなど、いちばん 大切な 管理を 受けもちます。"
+  },
+  {
+    "id": "pc-vmemory",
+    "name": "仮想メモリ",
+    "reading": "かそうめもり",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🪄",
+    "mapNode": "pc:memory",
+    "relatedTerms": [
+      "pc-memory",
+      "pc-storage"
+    ],
+    "description": "OSが プロセスごとに、じっさいより 広く 見える メモリの 住所を わたす しくみ。足りない ときは ストレージも 使うので、使いすぎると 急に おそく なります。"
+  },
+  {
+    "id": "pc-filesystem",
+    "name": "ファイルシステム",
+    "reading": "ふぁいるしすてむ",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🗃",
+    "mapNode": "pc:storage",
+    "relatedTerms": [
+      "pc-folder",
+      "pc-storage"
+    ],
+    "description": "ストレージの 中で、ファイルと フォルダを どこに どう しまうかを 管理する しくみ。名前・大きさ・読み書きの けんりなども ここで 覚えます。"
+  },
+  {
+    "id": "pc-exefile",
+    "name": "実行ファイル",
+    "reading": "じっこうふぁいる",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🎬",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-linker",
+      "pc-compile"
+    ],
+    "description": "コンパイルなどを して、すぐ 動かせる 形に なった ファイル。ソースコードが なくても 動きますが、OSや 機械の 種類が ちがうと 動かない ことが あります。"
+  },
+  {
+    "id": "pc-envvar",
+    "name": "環境変数",
+    "reading": "かんきょうへんすう",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🌱",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-shell",
+      "pc-process"
+    ],
+    "description": "OSが プロセスに わたす、名前と 値の 組の 設定。動かす 場所ごとに ちがう 設定を、コードを 書きかえずに 切りかえられます。",
+    "example": "echo $HOME"
+  },
+  {
+    "id": "pc-shell",
+    "name": "シェル",
+    "reading": "しぇる",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🐚",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-envvar",
+      "pc-stdin"
+    ],
+    "description": "打ちこんだ 命令を 読んで、OSに 伝えて 動かす プログラム。命令を ならべて 書いて おけば、毎回 する 作業を 自動で まとめて 動かせます。",
+    "example": "ls -l"
+  },
+  {
+    "id": "pc-stdin",
+    "name": "標準入力",
+    "reading": "ひょうじゅんにゅうりょく",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🚰",
+    "mapNode": "pc:nyuryoku",
+    "relatedTerms": [
+      "pc-nyuryoku",
+      "pc-shell"
+    ],
+    "description": "プログラムが はじめから 持って いる、データを 受けとる 入口。ふだんは キーボードに つながって いますが、ほかの プログラムの 出力を つなぐ ことも できます。",
+    "example": "line = input()"
+  },
+  {
+    "id": "pc-dns",
+    "name": "DNS",
+    "reading": "でぃーえぬえす",
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "📖",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-ipaddress",
+      "pc-protocol"
+    ],
+    "description": "サイトの 名前から、その サーバーの IPアドレスを 調べて 教える しくみ。つながらない ときは、この 名前の 引きかたが まちがって いる ことも あります。",
+    "example": "名前を たずねると、番号の 住所が 返って きます。"
+  },
+  {
+    "id": "pc-protocol",
+    "name": "プロトコル",
+    "reading": "ぷろとこる",
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🤝",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-tcpip",
+      "pc-packet"
+    ],
+    "description": "機械どうしが やりとり する ときの 約束ごと。どの 順で 何を 送るかを そろえて おくので、ちがう 人が 作った 機械とも 話が 通じます。"
+  },
+  {
+    "id": "pc-packet",
+    "name": "パケット",
+    "reading": "ぱけっと",
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "✉️",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-protocol",
+      "pc-tcpip"
+    ],
+    "description": "ネットワークで 送る データを 小さく 分けた ひと包み。1つずつに あて先が ついて いて、とどいた 先で 元の 順に 組み立て直されます。"
+  },
+  {
+    "id": "pc-tcpip",
+    "name": "TCP/IP",
+    "reading": "てぃーしーぴーあいぴー",
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🔗",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-protocol",
+      "pc-port"
+    ],
+    "description": "インターネットの 土台に なって いる 約束ごとの 組。あて先まで とどける 決まりと、ぬけや 順番の みだれを 直して 確実に わたす 決まりが あります。"
+  },
+  {
+    "id": "pc-port",
+    "name": "ポート番号",
+    "reading": "ぽーとばんごう",
+    "journey": "pc",
+    "category": "ネットワーク",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🚪",
+    "mapNode": "pc:net",
+    "relatedTerms": [
+      "pc-ipaddress",
+      "pc-server"
+    ],
+    "description": "1台の 機械の 中で、どの プログラムに データを わたすかを 決める 番号。IPアドレスが 建物の 住所なら、ポート番号は 部屋の 番号です。",
+    "example": "localhost:8080"
+  },
+  {
+    "id": "pc-utf8",
+    "name": "UTF-8",
+    "reading": "ゆーてぃーえふえいと",
+    "journey": "pc",
+    "category": "文字",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🈂",
+    "mapNode": "pc:moji",
+    "relatedTerms": [
+      "pc-unicode",
+      "pc-mojibake"
+    ],
+    "description": "Unicodeの 番号を、1から 4バイトの ならびに して しまう 決まり。英字は 1バイト、日本語の 字は ふつう 3バイトに なります。今 いちばん 広く 使われて います。",
+    "example": "\"hello\".encode(\"utf-8\")"
+  },
+  {
+    "id": "pc-bitop",
+    "name": "ビット演算",
+    "reading": "びっとえんざん",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🎛",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-bit",
+      "pc-hosu"
+    ],
+    "description": "2進数で 書いた ときの 同じ けたどうしを、かつ・または などの 決まりで 計算する こと。オンと オフの 印を 1つの 数に まとめて しまったり、取り出したり する ときに 使います。",
+    "example": "x = 6 & 3  # 2"
+  },
+  {
+    "id": "pc-hosu",
+    "name": "2の補数",
+    "reading": "にのほすう",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "➖",
+    "mapNode": "pc:shinsu",
+    "relatedTerms": [
+      "pc-nishinsu",
+      "pc-bitop"
+    ],
+    "description": "マイナスの 数を 0と 1で あらわす 決まり。すべての けたの 0と 1を 入れかえて 1を 足すと、元の 数の マイナスに なります。足し算の 回路で 引き算も できます。",
+    "example": "bin(-5 & 0xFF)  # '0b11111011'"
+  },
+  {
+    "id": "pc-register",
+    "name": "レジスタ",
+    "reading": "れじすた",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "pc:cpu",
+    "relatedTerms": [
+      "pc-cpu",
+      "pc-cachememory"
+    ],
+    "description": "CPUの 中に ある、いちばん 速くて とても 小さな 置き場所。計算する データは いったん ここに 運ばれて から 計算されます。"
+  },
+  {
+    "id": "pc-clock",
+    "name": "クロック周波数",
+    "reading": "くろっくしゅうはすう",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⏱",
+    "mapNode": "pc:cpu",
+    "relatedTerms": [
+      "pc-cpu",
+      "pc-multicore"
+    ],
+    "description": "CPUが 1秒に 何回 動く 合図を 出すかを あらわす 数。高いほど 1秒で 進む 仕事が ふえますが、速さは ほかの 部品や コードの 書きかたにも よります。",
+    "example": "3ギガヘルツは、1秒に 約30億回の 合図です。"
+  },
+  {
+    "id": "pc-logiccircuit",
+    "name": "論理回路",
+    "reading": "ろんりかいろ",
+    "journey": "pc",
+    "category": "機械と部品",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔌",
+    "mapNode": "pc:hard",
+    "relatedTerms": [
+      "pc-bitop",
+      "pc-cpu"
+    ],
+    "description": "0と 1を 入れると、かつ・または・ではない などの 決まりで 0か 1を 出す 電気の 回路。これを たくさん 組みあわせて CPUの 計算が できて います。"
+  },
+  {
+    "id": "pc-driver",
+    "name": "デバイスドライバ",
+    "reading": "でばいすどらいば",
+    "acceptedReadings": [
+      "でばいすどらいば",
+      "でばいすどらいばー"
+    ],
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🔌",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-os",
+      "pc-hardware"
+    ],
+    "description": "プリンターなどの 部品を、OSが 使える ように する ための プログラム。部品ごとの ちがいを かくして くれるので、アプリは 同じ やりかたで 使えます。"
+  },
+  {
+    "id": "pc-interrupt",
+    "name": "割り込み",
+    "reading": "わりこみ",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔔",
+    "mapNode": "pc:cpu",
+    "relatedTerms": [
+      "pc-cpu",
+      "pc-kernel"
+    ],
+    "description": "キーが 押されたなど 急ぎの 知らせが 来たとき、CPUが 今の 仕事を いったん 止めて、先に その 知らせを 片づける しくみ。"
+  },
+  {
+    "id": "pc-syscall",
+    "name": "システムコール",
+    "reading": "しすてむこーる",
+    "journey": "pc",
+    "category": "OSとソフト",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "📞",
+    "mapNode": "pc:os",
+    "relatedTerms": [
+      "pc-kernel",
+      "pc-file"
+    ],
+    "description": "アプリが OSの 中心に、ファイルを ひらく などの 仕事を お願いする 入口。アプリは 機械を じかに さわれないので、かならず この 入口を 通ります。"
+  },
+  {
+    "id": "pc-assembly",
+    "name": "アセンブリ言語",
+    "reading": "あせんぶりげんご",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧮",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-kikaigo",
+      "pc-register"
+    ],
+    "description": "機械語の 命令 1つずつに、人が 読める 短い 名前を つけた ことば。CPUの 動きを 1歩ずつ 書くので、しくみを 学ぶ ときや 細かい 調整に 使われます。",
+    "example": "mov eax, 1"
+  },
+  {
+    "id": "pc-bytecode",
+    "name": "バイトコード",
+    "reading": "ばいとこーど",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📼",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-vm",
+      "pc-jit"
+    ],
+    "description": "ソースコードを、特定の CPUではなく 仮想マシン 向けに 直した 中間の 形。同じ バイトコードを いろいろな 機械で 動かせます。"
+  },
+  {
+    "id": "pc-vm",
+    "name": "仮想マシン",
+    "reading": "かそうましん",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 3,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🪞",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-bytecode",
+      "pc-java"
+    ],
+    "description": "ソフトウェアで 作った、機械の まねを する 入れもの。ほんものの 機械の 上に、べつの 機械が ある かのように 動かせるので、同じ 場所を 何度も 作り直せます。"
+  },
+  {
+    "id": "pc-jit",
+    "name": "JITコンパイル",
+    "reading": "じっとこんぱいる",
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🚀",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-bytecode",
+      "pc-interpreter"
+    ],
+    "description": "動かして いる とちゅうで、よく 使われる ところを 機械語に 直して 速く する しくみ。インタプリタの 手軽さと、コンパイルの 速さの いいとこ取りを ねらいます。"
+  },
+  {
+    "id": "pc-linker",
+    "name": "リンカ",
+    "reading": "りんか",
+    "acceptedReadings": [
+      "りんか",
+      "りんかー"
+    ],
+    "journey": "pc",
+    "category": "機械のことばへ",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔗",
+    "mapNode": "pc:honyaku",
+    "relatedTerms": [
+      "pc-exefile",
+      "pc-compile"
+    ],
+    "description": "べつべつに コンパイルした 部品と 道具の 部品を つなぎ合わせ、1つの 実行ファイルに まとめる プログラム。部品が 見つからない ときは ここで エラーに なります。"
+  },
+  {
+    "id": "pc-endian",
+    "name": "エンディアン",
+    "reading": "えんでぃあん",
+    "journey": "pc",
+    "category": "0と1",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "↔️",
+    "mapNode": "pc:memory",
+    "relatedTerms": [
+      "pc-byte",
+      "pc-jurokushinsu"
+    ],
+    "description": "何バイトかで できた 数を メモリに ならべる 順番の 決まり。大きい けたから 置くか、小さい けたから 置くかが 機械で ちがうので、データを 送る ときに 気を つけます。",
+    "example": "0x1234 を 12 34 と 置くか、34 12 と 置くかの ちがいです。"
+  }
+]

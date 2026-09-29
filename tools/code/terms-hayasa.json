@@ -1,0 +1,1421 @@
+[
+  {
+    "id": "ha-junban",
+    "name": "順番",
+    "reading": "じゅんばん",
+    "journey": "hayasa",
+    "category": "手順",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔢",
+    "mapNode": "hayasa:algo",
+    "relatedTerms": [
+      "ha-tejun",
+      "ha-flowchart"
+    ],
+    "description": "命令を どの 順に 行うかの こと。同じ 命令の 組みあわせでも、順番を 入れかえるだけで 答えが 変わるので、書く 前に 順番を 考えるのが プログラマーの 最初の 仕事です。",
+    "example": "たまごを 割ってから 焼く。順番を 逆に すると 料理に ならない"
+  },
+  {
+    "id": "ha-tejun",
+    "name": "手順",
+    "reading": "てじゅん",
+    "journey": "hayasa",
+    "category": "手順",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🪜",
+    "mapNode": "hayasa:algo",
+    "relatedTerms": [
+      "ha-junban",
+      "ha-algo"
+    ],
+    "description": "問題を 小さな 作業に 分けて、1つずつ 順に 書き出した もの。分けかたが こまかいほど コードに 直しやすく、動かない ときも どの 作業が おかしいかを 調べやすく なります。",
+    "example": "1 ふたを あける、2 中を 見る、3 ふたを しめる"
+  },
+  {
+    "id": "ha-narabekae",
+    "name": "並べかえ",
+    "reading": "ならべかえ",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📊",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-ranking",
+      "ha-shojun"
+    ],
+    "description": "データを 決めた 順に ならべなおす こと。ソートとも いいます。ならんでいると さがすのが ずっと 速く なるので、多くの プログラムが 下ごしらえとして 使います。",
+    "acceptedReadings": [
+      "ならべかえ",
+      "そーと"
+    ],
+    "example": "items.sort()"
+  },
+  {
+    "id": "ha-chikamichi",
+    "name": "近道",
+    "reading": "ちかみち",
+    "journey": "hayasa",
+    "category": "速くする工夫",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🏃",
+    "mapNode": "hayasa:kufuu",
+    "relatedTerms": [
+      "ha-muda",
+      "ha-keisoku"
+    ],
+    "description": "同じ 答えに、少ない 手間で たどりつく 方法。プログラムでは はぶける 計算を 見つける ことが 近道に なります。ただし 答えが 変わらないかを たしかめるのが 大事です。",
+    "example": "1から100までの 合計を、1つずつ 足さずに (1+100)×100÷2 で 一回で 出す"
+  },
+  {
+    "id": "ha-hyo",
+    "name": "表",
+    "reading": "ひょう",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📋",
+    "mapNode": "hayasa:memory",
+    "relatedTerms": [
+      "ha-datakozo",
+      "ha-mokuji"
+    ],
+    "description": "データを たてと 横に 整理して ならべた もの。1行に 1人ぶん、1列に 1つの 項目と 決めると、プログラムからも さがしたり 数えたり しやすく なります。",
+    "example": "名前・学年・得点を 列に して、1行に 1人ずつ 書く"
+  },
+  {
+    "id": "ha-gyoretsu",
+    "name": "待ち行列",
+    "reading": "まちぎょうれつ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🚶",
+    "mapNode": "hayasa:queue",
+    "relatedTerms": [
+      "ha-queue",
+      "ha-sakiire"
+    ],
+    "description": "順番を 待って ならぶ 列の こと。プログラムでは キューの 別名です。行列だけだと 数を たてと 横に ならべた 表の 意味に なるので、待ち行列と 言い分けます。",
+    "example": "給食を もらう 列。先に ならんだ 人から 受けとる"
+  },
+  {
+    "id": "ha-flowchart",
+    "name": "フローチャート",
+    "reading": "ふろーちゃーと",
+    "journey": "hayasa",
+    "category": "手順",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "hayasa:algo",
+    "relatedTerms": [
+      "ha-tejun",
+      "ha-algo"
+    ],
+    "description": "手順を 箱と 矢印で かいた 図。もし〜なら で 分かれる ところは ひし形で かくので、コードに する 前に 分かれ道の もれが ないかを 目で たしかめられます。"
+  },
+  {
+    "id": "ha-algo",
+    "name": "アルゴリズム",
+    "reading": "あるごりずむ",
+    "journey": "hayasa",
+    "category": "手順",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧠",
+    "mapNode": "hayasa:algo",
+    "relatedTerms": [
+      "ha-tejun",
+      "ha-keisanryo"
+    ],
+    "description": "問題を かならず 解ける ように、終わりの ある 手順として 書き表した もの。同じ 問題でも えらぶ アルゴリズムで、かかる 時間が 何百倍も ちがう ことが あります。"
+  },
+  {
+    "id": "ha-mokuji",
+    "name": "目次",
+    "reading": "もくじ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📖",
+    "mapNode": "hayasa:hash",
+    "relatedTerms": [
+      "ha-hashtable",
+      "ha-hyo"
+    ],
+    "description": "どこに 何が あるかを 先に まとめた 一覧。はじめから 1ページずつ めくらずに、目当ての 場所へ すぐ 飛べます。プログラムで データを すばやく 見つける しくみも 同じ 考えかたです。"
+  },
+  {
+    "id": "ha-ranking",
+    "name": "ランキング",
+    "reading": "らんきんぐ",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🏆",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-narabekae",
+      "ha-kojun"
+    ],
+    "description": "点数や 数の 大きい 順に ならべた 一覧。作る ときは 並べかえを 使い、同じ 点の 人を どう ならべるかも 決めて おく 必要が あります。",
+    "example": "scores.sort(reverse=True)"
+  },
+  {
+    "id": "ha-aiueojun",
+    "name": "あいうえお順",
+    "reading": "あいうえおじゅん",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔤",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-narabekae",
+      "ha-shojun"
+    ],
+    "description": "名前を 五十音の 順に ならべる こと。コンピュータは 文字に ついた 番号で くらべるので、ひらがなと カタカナが まざると 思った 順に ならばない ことが あります。"
+  },
+  {
+    "id": "ha-saidaichi",
+    "name": "最大値",
+    "reading": "さいだいち",
+    "journey": "hayasa",
+    "category": "さがす",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⛰",
+    "mapNode": "hayasa:tansaku",
+    "relatedTerms": [
+      "ha-tansaku",
+      "ha-senkei"
+    ],
+    "description": "たくさんの 数の 中で いちばん 大きい 値。先頭から 1つずつ 見て、今までで 大きい ものを 覚えて いけば、最後まで 見た ときに 見つかります。",
+    "example": "best = max(scores)"
+  },
+  {
+    "id": "ha-rosenzu",
+    "name": "路線図",
+    "reading": "ろせんず",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🚃",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-graph",
+      "ha-saitan"
+    ],
+    "description": "駅と 駅の つながりを 線で かいた 図。プログラムでは こうした 点と 線の 組を グラフと よび、乗りかえ案内や 道順さがしに 使います。"
+  },
+  {
+    "id": "ha-edawakare",
+    "name": "枝分かれ",
+    "reading": "えだわかれ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🌿",
+    "mapNode": "hayasa:tree",
+    "relatedTerms": [
+      "ha-kikozo",
+      "ha-rootnode"
+    ],
+    "description": "1つの 根もとから 道が いくつにも 分かれて いく 形。フォルダの 中に フォルダが ある ような しくみは、この 形の データとして あつかいます。"
+  },
+  {
+    "id": "ha-tsumikasane",
+    "name": "積み重ね",
+    "reading": "つみかさね",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🍽",
+    "mapNode": "hayasa:stack",
+    "relatedTerms": [
+      "ha-stack",
+      "ha-atoire"
+    ],
+    "description": "お皿を 上に 重ねて いく ように、あとから 置いた ものが 上に 来る ならびかた。取るときは 上から なので、最後に 置いた ものが 最初に 出ます。スタックの もとの 考えかたです。"
+  },
+  {
+    "id": "ha-tewake",
+    "name": "手分け",
+    "reading": "てわけ",
+    "journey": "hayasa",
+    "category": "同時に動かす",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "👯",
+    "mapNode": "hayasa:heiretsu",
+    "relatedTerms": [
+      "ha-heiretsu",
+      "ha-bunsan"
+    ],
+    "description": "1つの 大きな 仕事を 分けて、何人かで 同時に 進める こと。コンピュータも 仕事を 分けて いっせいに 計算すると 早く 終わりますが、分けかたを 考える 手間が ふえます。"
+  },
+  {
+    "id": "ha-muda",
+    "name": "むだ",
+    "reading": "むだ",
+    "journey": "hayasa",
+    "category": "速くする工夫",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🗑",
+    "mapNode": "hayasa:kufuu",
+    "relatedTerms": [
+      "ha-chikamichi",
+      "ha-keisoku"
+    ],
+    "description": "答えに 役立たない のに 時間を 使っている 計算。同じ 計算を 何回も して いないか、見なくて よい データまで 見て いないかを 探すと、プログラムは 速く なります。"
+  },
+  {
+    "id": "ha-jishobiki",
+    "name": "辞書引き",
+    "reading": "じしょびき",
+    "journey": "hayasa",
+    "category": "さがす",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📕",
+    "mapNode": "hayasa:tansaku",
+    "relatedTerms": [
+      "ha-nibun",
+      "ha-tansaku"
+    ],
+    "description": "辞書で ことばを さがす とき、まん中あたりを 開いて 前か 後ろかを 決め、はんいを せばめて いく やりかた。二分探索と 同じ 考えかたで、ならんでいる から できる 近道です。"
+  },
+  {
+    "id": "ha-soatari",
+    "name": "総当たり",
+    "reading": "そうあたり",
+    "journey": "hayasa",
+    "category": "さがす",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🎲",
+    "mapNode": "hayasa:tansaku",
+    "relatedTerms": [
+      "ha-tansaku",
+      "ha-shisu"
+    ],
+    "description": "ありえる 答えを かたっぱしから ぜんぶ ためす やりかた。書くのは かんたんで まちがいも 少ないですが、数が ふえると 時間が 足りなく なります。全探索とも いいます。"
+  },
+  {
+    "id": "ha-tansaku",
+    "name": "探索",
+    "reading": "たんさく",
+    "journey": "hayasa",
+    "category": "さがす",
+    "difficulty": 1,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔎",
+    "mapNode": "hayasa:tansaku",
+    "relatedTerms": [
+      "ha-senkei",
+      "ha-nibun"
+    ],
+    "description": "データの 中から 目当ての ものを さがす こと。ならんで いるか、どんな 入れものに しまったかで、使える さがしかたと 速さが 大きく 変わります。"
+  },
+  {
+    "id": "ha-datakozo",
+    "name": "データ構造",
+    "reading": "でーたこうぞう",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧱",
+    "mapNode": "hayasa:memory",
+    "relatedTerms": [
+      "ha-stack",
+      "ha-queue",
+      "ha-kikozo"
+    ],
+    "description": "データを どんな 形で しまうかの 決まり。ならべて しまう、つないで しまう、枝分かれで しまう など。やりたい 操作に 合った 形を えらぶと、同じ 処理が 何倍も 速く なります。"
+  },
+  {
+    "id": "ha-stack",
+    "name": "スタック",
+    "reading": "すたっく",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🥞",
+    "mapNode": "hayasa:stack",
+    "relatedTerms": [
+      "ha-atoire",
+      "ha-queue"
+    ],
+    "description": "最後に 入れた ものを 最初に 取り出す 入れもの。関数の 呼び出しや、ひとつ前に もどる 機能の 記録に 使われます。入れる 操作を プッシュ、取り出す 操作を ポップと いいます。",
+    "example": "s.append(1)\nx = s.pop()"
+  },
+  {
+    "id": "ha-queue",
+    "name": "キュー",
+    "reading": "きゅー",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🎫",
+    "mapNode": "hayasa:queue",
+    "relatedTerms": [
+      "ha-sakiire",
+      "ha-stack"
+    ],
+    "description": "入れた 順に 取り出す 入れもの。サーバーが 一度に さばけない 仕事を ためて おき、来た 順に 1つずつ 片づける ときに 使います。後ろに 足し、前から 取ります。",
+    "example": "q.append(job)\njob = q.popleft()"
+  },
+  {
+    "id": "ha-shojun",
+    "name": "昇順",
+    "reading": "しょうじゅん",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⬆",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-kojun",
+      "ha-narabekae"
+    ],
+    "description": "小さい ものから 大きい ものへ ならべる 順。数なら 1、2、3、文字なら あいうえおの 順です。何も 指定しない ときの 並べかえは、昇順に なる ことが 多いです。",
+    "example": "sorted([3, 1, 2])"
+  },
+  {
+    "id": "ha-kojun",
+    "name": "降順",
+    "reading": "こうじゅん",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⬇",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-shojun",
+      "ha-ranking"
+    ],
+    "description": "大きい ものから 小さい ものへ ならべる 順。点数の 高い 順や、新しい 日付の 順を 出す ときに 使います。昇順の 反対です。",
+    "example": "sorted(scores, reverse=True)"
+  },
+  {
+    "id": "ha-graph",
+    "name": "グラフ",
+    "reading": "ぐらふ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🕸",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-node",
+      "ha-edge",
+      "ha-rosenzu"
+    ],
+    "description": "点と、点どうしを むすぶ 線で できた データ構造。点を ノード、線を エッジと いいます。人の つながりや 道路の 地図を あらわせます。棒グラフの グラフとは 別の 意味です。"
+  },
+  {
+    "id": "ha-cache",
+    "name": "キャッシュ",
+    "reading": "きゃっしゅ",
+    "journey": "hayasa",
+    "category": "速くする工夫",
+    "difficulty": 2,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "hayasa:kufuu",
+    "relatedTerms": [
+      "ha-memoka",
+      "ha-memoryuse"
+    ],
+    "description": "計算や 読みこみの 結果を 取っておき、同じ 問い合わせには 取っておいた ものを かえす 工夫。中身が 古く なった ときに いつ 捨てるかを 決めるのが、作る 側の むずかしい ところです。"
+  },
+  {
+    "id": "ha-heiretsu",
+    "name": "並列処理",
+    "reading": "へいれつしょり",
+    "journey": "hayasa",
+    "category": "同時に動かす",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⚙",
+    "mapNode": "hayasa:heiretsu",
+    "relatedTerms": [
+      "ha-tewake",
+      "ha-bunsan"
+    ],
+    "description": "いくつもの 計算を、別々の 計算の 部品で 本当に 同時に 動かす こと。分けても 答えが こわれない 仕事で ないと 使えず、分けたり まとめたり する 手間も かかります。"
+  },
+  {
+    "id": "ha-shorijikan",
+    "name": "処理時間",
+    "reading": "しょりじかん",
+    "journey": "hayasa",
+    "category": "計算量",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⏱",
+    "mapNode": "hayasa:keisanryo",
+    "relatedTerms": [
+      "ha-keisoku",
+      "ha-datary"
+    ],
+    "description": "プログラムが 仕事を 終えるまでに かかる 時間。同じ コードでも 機械や データの 量で 変わるので、速さを くらべる ときは 条件を そろえて はかります。"
+  },
+  {
+    "id": "ha-senkei",
+    "name": "線形探索",
+    "reading": "せんけいたんさく",
+    "journey": "hayasa",
+    "category": "さがす",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "➡",
+    "mapNode": "hayasa:tansaku",
+    "relatedTerms": [
+      "ha-nibun",
+      "ha-tansaku"
+    ],
+    "description": "先頭から 1つずつ 順に 見て いく さがしかた。ならんで いない データでも 使えますが、データが 2倍に なると 時間も だいたい 2倍 かかります。",
+    "example": "for i in range(len(a)):\n  if a[i] == key: return i"
+  },
+  {
+    "id": "ha-bubble",
+    "name": "バブルソート",
+    "reading": "ばぶるそーと",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🫧",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-selection",
+      "ha-insertion"
+    ],
+    "description": "となりどうしを くらべて、順番が 逆なら 入れかえる ことを くりかえす 並べかえ。しくみが わかりやすいので 最初に 習いますが、数が 多いと とても 時間が かかります。",
+    "example": "if a[i] > a[i+1]:\n  a[i], a[i+1] = a[i+1], a[i]"
+  },
+  {
+    "id": "ha-kikozo",
+    "name": "木構造",
+    "reading": "きこうぞう",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🌳",
+    "mapNode": "hayasa:tree",
+    "relatedTerms": [
+      "ha-rootnode",
+      "ha-nibungi",
+      "ha-edawakare"
+    ],
+    "description": "1つの 根から 枝分かれして いく 形の データ構造。上の 点を 親、下の 点を 子と よびます。フォルダの 階層や、画面の 部品の 入れ子を あらわすのに 使います。"
+  },
+  {
+    "id": "ha-datary",
+    "name": "データ量",
+    "reading": "でーたりょう",
+    "journey": "hayasa",
+    "category": "計算量",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📚",
+    "mapNode": "hayasa:keisanryo",
+    "relatedTerms": [
+      "ha-shorijikan",
+      "ha-keisanryo"
+    ],
+    "description": "あつかう データの 多さ。10件で 一瞬の プログラムが 100万件で 止まって 見える ことが あるので、本番で どれくらいの データ量に なるかを 先に 考えて おきます。"
+  },
+  {
+    "id": "ha-keisoku",
+    "name": "計測",
+    "reading": "けいそく",
+    "journey": "hayasa",
+    "category": "速くする工夫",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "hayasa:kufuu",
+    "relatedTerms": [
+      "ha-shorijikan",
+      "ha-muda"
+    ],
+    "description": "どこに 時間が かかって いるかを 実際に はかる こと。予想で 直すと 的外れに なりやすいので、速くする 前に まず 計測して、もっとも おそい ところから 手を つけます。",
+    "example": "start = time.time()"
+  },
+  {
+    "id": "ha-hashtable",
+    "name": "ハッシュテーブル",
+    "reading": "はっしゅてーぶる",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🗝",
+    "mapNode": "hayasa:hash",
+    "relatedTerms": [
+      "ha-hashfunc",
+      "ha-shototsu"
+    ],
+    "description": "キーから 計算した 番号を 使って、しまう 場所を すぐ 決める データ構造。データが 多くても、キーさえ わかれば ほとんど 待たずに 取り出せます。辞書型の 中身に よく 使われます。",
+    "example": "ages = {'ken': 10}\nprint(ages['ken'])"
+  },
+  {
+    "id": "ha-sakiire",
+    "name": "先入れ先出し",
+    "reading": "さきいれさきだし",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🚏",
+    "mapNode": "hayasa:queue",
+    "relatedTerms": [
+      "ha-queue",
+      "ha-atoire"
+    ],
+    "description": "先に 入った ものから 先に 出る 決まり。キューの 動きかたを あらわす ことばです。英語の 頭文字から ファイフォとも いいます。"
+  },
+  {
+    "id": "ha-atoire",
+    "name": "後入れ先出し",
+    "reading": "あといれさきだし",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📚",
+    "mapNode": "hayasa:stack",
+    "relatedTerms": [
+      "ha-stack",
+      "ha-sakiire"
+    ],
+    "description": "あとから 入った ものが 先に 出る 決まり。スタックの 動きかたを あらわす ことばです。英語の 頭文字から ライフォとも いいます。"
+  },
+  {
+    "id": "ha-nibungi",
+    "name": "二分木",
+    "reading": "にぶんぎ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🌲",
+    "mapNode": "hayasa:tree",
+    "relatedTerms": [
+      "ha-kikozo",
+      "ha-nibuntree"
+    ],
+    "description": "どの 点も 子を 2つまでしか 持たない 木構造。左と 右に 分かれるので、半分ずつ しぼりこむ さがしかたや、式の 計算の 組みたてに 使われます。",
+    "acceptedReadings": [
+      "にぶんぎ",
+      "にぶんき"
+    ]
+  },
+  {
+    "id": "ha-node",
+    "name": "ノード",
+    "reading": "のーど",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⚪",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-edge",
+      "ha-graph"
+    ],
+    "description": "木構造や グラフの 中の 1つ 1つの 点。データを 持ち、ほかの ノードへの つながりを 持ちます。道路の 地図なら 交差点が ノードに あたります。"
+  },
+  {
+    "id": "ha-rootnode",
+    "name": "ルートノード",
+    "reading": "るーとのーど",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🌱",
+    "mapNode": "hayasa:tree",
+    "relatedTerms": [
+      "ha-kikozo",
+      "ha-leaf"
+    ],
+    "description": "木構造の いちばん 上に ある、親を 持たない ただ 1つの ノード。さがしものや、全体を たどる 処理は、ふつう ここから はじめます。"
+  },
+  {
+    "id": "ha-leaf",
+    "name": "葉ノード",
+    "reading": "はのーど",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🍃",
+    "mapNode": "hayasa:tree",
+    "relatedTerms": [
+      "ha-rootnode",
+      "ha-kikozo"
+    ],
+    "description": "木構造の いちばん 先に ある、子を 持たない ノード。フォルダの 階層なら、ファイルや 空の フォルダが 葉に あたります。リーフとも いいます。",
+    "acceptedReadings": [
+      "はのーど",
+      "りーふ"
+    ]
+  },
+  {
+    "id": "ha-edge",
+    "name": "エッジ",
+    "reading": "えっじ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔗",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-node",
+      "ha-saitan"
+    ],
+    "description": "グラフの ノードと ノードを むすぶ 線。向きが ある ものと ない ものが あり、道の 長さなどの 重みを つける ことも できます。辺とも いいます。"
+  },
+  {
+    "id": "ha-saitan",
+    "name": "最短経路",
+    "reading": "さいたんけいろ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-dijkstra",
+      "ha-bfs"
+    ],
+    "description": "グラフの ある ノードから 別の ノードまで、通る エッジの 重みの 合計が もっとも 小さく なる 道すじ。乗りかえ案内や 地図の 道案内の 中で 計算されて います。"
+  },
+  {
+    "id": "ha-selection",
+    "name": "選択ソート",
+    "reading": "せんたくそーと",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "☝",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-bubble",
+      "ha-insertion"
+    ],
+    "description": "残りの 中から いちばん 小さい ものを 選んで 前に 置く ことを くりかえす 並べかえ。入れかえの 回数は 少ないですが、くらべる 回数が 多いので 大きな データには 向きません。"
+  },
+  {
+    "id": "ha-insertion",
+    "name": "挿入ソート",
+    "reading": "そうにゅうそーと",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🃏",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-bubble",
+      "ha-selection"
+    ],
+    "description": "トランプを 手に 持って、1枚ずつ 正しい 場所に 差しこむ ような 並べかえ。ほとんど ならんで いる データには とても 速く、ほかの 並べかえの 部品としても 使われます。"
+  },
+  {
+    "id": "ha-hashfunc",
+    "name": "ハッシュ関数",
+    "reading": "はっしゅかんすう",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🎰",
+    "mapNode": "hayasa:hash",
+    "relatedTerms": [
+      "ha-hashtable",
+      "ha-shototsu"
+    ],
+    "description": "データから、決まった 範囲の 番号を 計算する 関数。同じ データからは いつも 同じ 番号が 出ます。ハッシュテーブルでは、番号が なるべく ばらける 関数を 使うと 速く なります。",
+    "example": "h = hash('apple') % 100"
+  },
+  {
+    "id": "ha-linkedlist",
+    "name": "連結リスト",
+    "reading": "れんけつりすと",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⛓",
+    "mapNode": "hayasa:memory",
+    "relatedTerms": [
+      "ha-datakozo",
+      "ha-memoryuse"
+    ],
+    "description": "データ どうしが 次の データの 場所を 持ち、くさりの ように つながった データ構造。場所が わかって いれば とちゅうへの 追加や 削除は 速いですが、何番目かを 取り出すには 先頭から たどります。"
+  },
+  {
+    "id": "ha-bunsan",
+    "name": "分散処理",
+    "reading": "ぶんさんしょり",
+    "journey": "hayasa",
+    "category": "同時に動かす",
+    "difficulty": 2,
+    "role": "インフラ",
+    "type": "concept",
+    "emoji": "🌐",
+    "mapNode": "hayasa:heiretsu",
+    "relatedTerms": [
+      "ha-heiretsu",
+      "ha-tewake"
+    ],
+    "description": "大きな 計算を 何台もの コンピュータに 分けて 受けもたせ、結果を まとめる こと。1台では 終わらない 量を あつかえますが、とちゅうで 1台が 止まっても こわれない 作りが 必要です。"
+  },
+  {
+    "id": "ha-memoryuse",
+    "name": "メモリ使用量",
+    "reading": "めもりしようりょう",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧠",
+    "mapNode": "hayasa:memory",
+    "relatedTerms": [
+      "ha-kukan",
+      "ha-tradeoff"
+    ],
+    "description": "プログラムが 動く あいだに 使う 記憶の 広さ。速くする ために 結果を たくさん 取っておくと、メモリが 足りなく なる ことも あるので、時間と あわせて 見ます。"
+  },
+  {
+    "id": "ha-tradeoff",
+    "name": "トレードオフ",
+    "reading": "とれーどおふ",
+    "journey": "hayasa",
+    "category": "速くする工夫",
+    "difficulty": 2,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⚖",
+    "mapNode": "hayasa:kufuu",
+    "relatedTerms": [
+      "ha-memoryuse",
+      "ha-cache"
+    ],
+    "description": "何かを よくすると、別の 何かが 悪く なる 関係。メモリを 多く 使えば 速く できる、読みやすさを 選ぶと 少し おそく なる など。どちらを 取るか 決めるのも 設計の 仕事です。"
+  },
+  {
+    "id": "ha-keisanryo",
+    "name": "計算量",
+    "reading": "けいさんりょう",
+    "journey": "hayasa",
+    "category": "計算量",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📈",
+    "mapNode": "hayasa:keisanryo",
+    "relatedTerms": [
+      "ha-okiho",
+      "ha-jikan",
+      "ha-kukan"
+    ],
+    "description": "データの 数が ふえた とき、手間が どんな 割合で ふえるかを あらわす もの。機械の 速さに よらないので、ちがう やりかた どうしを 公平に くらべられます。時間と メモリの 2つを 見ます。"
+  },
+  {
+    "id": "ha-okiho",
+    "name": "O記法",
+    "reading": "おーきほう",
+    "journey": "hayasa",
+    "category": "計算量",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📐",
+    "mapNode": "hayasa:keisanryo",
+    "relatedTerms": [
+      "ha-keisanryo",
+      "ha-senkeijikan"
+    ],
+    "description": "計算量を、もっとも 大きく ふえる 部分だけで あらわす 書きかた。データの 数を エヌと して、比例なら オーエヌ、二乗なら オーエヌ二乗と 書き、細かい 係数は 気に しません。",
+    "acceptedReadings": [
+      "おーきほう",
+      "びっぐおーきほう"
+    ],
+    "example": "O(1) < O(log n) < O(n) < O(n^2)"
+  },
+  {
+    "id": "ha-jikan",
+    "name": "時間計算量",
+    "reading": "じかんけいさんりょう",
+    "journey": "hayasa",
+    "category": "計算量",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⏳",
+    "mapNode": "hayasa:keisanryo",
+    "relatedTerms": [
+      "ha-keisanryo",
+      "ha-kukan"
+    ],
+    "description": "データの 数に 対して、計算の 回数が どれだけ ふえるかを あらわした 計算量。ふつう 計算量と だけ 言うときは これを 指します。二重の くりかえしは 二乗に なりやすいです。",
+    "example": "for i in a:\n  for j in a: count += 1"
+  },
+  {
+    "id": "ha-kukan",
+    "name": "空間計算量",
+    "reading": "くうかんけいさんりょう",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "hayasa:memory",
+    "relatedTerms": [
+      "ha-jikan",
+      "ha-memoryuse"
+    ],
+    "description": "データの 数に 対して、使う メモリが どれだけ ふえるかを あらわした 計算量。作業用に 使う 分を 見ます。時間を 短くする 工夫で ふえる ことが 多いです。"
+  },
+  {
+    "id": "ha-saiaku",
+    "name": "最悪計算量",
+    "reading": "さいあくけいさんりょう",
+    "journey": "hayasa",
+    "category": "計算量",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🌩",
+    "mapNode": "hayasa:keisanryo",
+    "relatedTerms": [
+      "ha-keisanryo",
+      "ha-quick"
+    ],
+    "description": "もっとも 運の 悪い 入力が 来た ときの 計算量。平均では 速くても、特定の ならびで 急に おそく なる アルゴリズムが あるので、止まって こまる 場面では これで 考えます。"
+  },
+  {
+    "id": "ha-senkeijikan",
+    "name": "線形時間",
+    "reading": "せんけいじかん",
+    "journey": "hayasa",
+    "category": "計算量",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "➖",
+    "mapNode": "hayasa:keisanryo",
+    "relatedTerms": [
+      "ha-okiho",
+      "ha-senkei"
+    ],
+    "description": "データの 数に 比例して 時間が ふえる こと。オーエヌと 書きます。全部を 1回ずつ 見る 処理が これに あたり、全部を 見る 必要の ある 問題では これより 速くは できません。"
+  },
+  {
+    "id": "ha-taisu",
+    "name": "対数時間",
+    "reading": "たいすうじかん",
+    "journey": "hayasa",
+    "category": "計算量",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📉",
+    "mapNode": "hayasa:keisanryo",
+    "relatedTerms": [
+      "ha-nibun",
+      "ha-okiho"
+    ],
+    "description": "データが 2倍に なっても、手間が 1回ぶん しか ふえない くらい ゆっくり ふえる 時間。オーログエヌと 書きます。毎回 半分に しぼれる 二分探索が これに あたります。"
+  },
+  {
+    "id": "ha-shisu",
+    "name": "指数時間",
+    "reading": "しすうじかん",
+    "journey": "hayasa",
+    "category": "計算量",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "💥",
+    "mapNode": "hayasa:keisanryo",
+    "relatedTerms": [
+      "ha-soatari",
+      "ha-dp"
+    ],
+    "description": "データが 1つ ふえる たびに、時間が 2倍 などの 決まった 倍率で ふえて いく こと。組みあわせを ぜんぶ ためす 総当たりが これに なりやすく、数十個の データでも 終わらなく なる ことが あります。"
+  },
+  {
+    "id": "ha-nibun",
+    "name": "二分探索",
+    "reading": "にぶんたんさく",
+    "journey": "hayasa",
+    "category": "さがす",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "hayasa:tansaku",
+    "relatedTerms": [
+      "ha-jishobiki",
+      "ha-taisu",
+      "ha-nibuntree"
+    ],
+    "description": "ならんだ データの まん中を 見て、目当てが 前半か 後半かを 決め、半分ずつ しぼる さがしかた。100万件でも 20回ほどで 見つかります。ならんで いる ことが 条件です。",
+    "example": "i = bisect.bisect_left(a, key)"
+  },
+  {
+    "id": "ha-banpei",
+    "name": "番兵",
+    "reading": "ばんぺい",
+    "journey": "hayasa",
+    "category": "さがす",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "💂",
+    "mapNode": "hayasa:tansaku",
+    "relatedTerms": [
+      "ha-senkei",
+      "ha-tansaku"
+    ],
+    "description": "データの 終わりに、わざと 目当ての 値を 置いて おく 工夫。さがす たびに 終わりかどうかを たしかめなくて よく なり、くりかえしの 中の 仕事が へります。"
+  },
+  {
+    "id": "ha-quick",
+    "name": "クイックソート",
+    "reading": "くいっくそーと",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⚡",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-merge",
+      "ha-bunkatsu",
+      "ha-saiaku"
+    ],
+    "description": "基準の 値を 1つ 決めて、それより 小さい 組と 大きい 組に 分け、それぞれを また 同じ ように 並べる 方法。平均では とても 速いですが、基準の 選びかたが 悪いと おそく なります。"
+  },
+  {
+    "id": "ha-merge",
+    "name": "マージソート",
+    "reading": "まーじそーと",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔀",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-quick",
+      "ha-bunkatsu",
+      "ha-antei"
+    ],
+    "description": "データを 半分ずつに 分けきってから、ならんだ 組どうしを 合わせて いく 並べかえ。どんな 入力でも 速さが 安定して いますが、合わせる ための 作業用の メモリが 要ります。"
+  },
+  {
+    "id": "ha-antei",
+    "name": "安定ソート",
+    "reading": "あんていそーと",
+    "journey": "hayasa",
+    "category": "ならべる",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧷",
+    "mapNode": "hayasa:sort",
+    "relatedTerms": [
+      "ha-merge",
+      "ha-insertion"
+    ],
+    "description": "同じ 値の データどうしの 前後が、並べかえた あとも 変わらない 並べかえ。同点の 人を 名前順の まま 残したい ときの ように、2回に 分けて 並べる 場面で 大事です。"
+  },
+  {
+    "id": "ha-bunkatsu",
+    "name": "分割統治法",
+    "reading": "ぶんかつとうちほう",
+    "journey": "hayasa",
+    "category": "速くする工夫",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "✂",
+    "mapNode": "hayasa:kufuu",
+    "relatedTerms": [
+      "ha-merge",
+      "ha-quick"
+    ],
+    "description": "大きな 問題を 同じ 形の 小さな 問題に 分けて 解き、答えを 合わせる 考えかた。マージソートや クイックソートは、この 考えかたで できて います。"
+  },
+  {
+    "id": "ha-heap",
+    "name": "ヒープ",
+    "reading": "ひーぷ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⛰",
+    "mapNode": "hayasa:tree",
+    "relatedTerms": [
+      "ha-yusendo",
+      "ha-kikozo"
+    ],
+    "description": "親が いつも 子より 小さい(または 大きい)ように 保つ 木構造。もっとも 小さい ものを すぐ 取り出せるので、優先度付きキューの 中身に 使われます。メモリの ヒープとは 別の 意味です。",
+    "example": "heapq.heappush(h, 5)\nx = heapq.heappop(h)"
+  },
+  {
+    "id": "ha-yusendo",
+    "name": "優先度付きキュー",
+    "reading": "ゆうせんどつききゅー",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🚑",
+    "mapNode": "hayasa:queue",
+    "relatedTerms": [
+      "ha-heap",
+      "ha-dijkstra"
+    ],
+    "description": "入れた 順では なく、大事さの 高い ものから 取り出す キュー。急ぎの 仕事を 先に 片づける 予定の 管理や、最短経路の 計算で 使われます。"
+  },
+  {
+    "id": "ha-ryotan",
+    "name": "両端キュー",
+    "reading": "りょうたんきゅー",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔁",
+    "mapNode": "hayasa:queue",
+    "relatedTerms": [
+      "ha-queue",
+      "ha-stack"
+    ],
+    "description": "前と 後ろの 両方から、足したり 取り出したり できる 入れもの。スタックと キューの 両方の 使いかたが できます。デックとも いいます。",
+    "example": "d = deque()\nd.appendleft(1)"
+  },
+  {
+    "id": "ha-nibuntree",
+    "name": "二分探索木",
+    "reading": "にぶんたんさくぎ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🌲",
+    "mapNode": "hayasa:tree",
+    "relatedTerms": [
+      "ha-nibungi",
+      "ha-heiko"
+    ],
+    "description": "どの ノードでも、左の がわには 小さい 値、右の がわには 大きい 値が 入る ように した 二分木。さがす・足す・消すを、半分ずつ しぼって 進められます。",
+    "acceptedReadings": [
+      "にぶんたんさくぎ",
+      "にぶんたんさくき"
+    ]
+  },
+  {
+    "id": "ha-heiko",
+    "name": "平衡木",
+    "reading": "へいこうぎ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "⚖",
+    "mapNode": "hayasa:tree",
+    "relatedTerms": [
+      "ha-nibuntree",
+      "ha-saiaku"
+    ],
+    "description": "左右の 高さが かたよらない ように、足したり 消したり する たびに 形を 整える 木。かたよって 細長く なり、線形探索と 同じ 速さまで 落ちるのを ふせぎます。",
+    "acceptedReadings": [
+      "へいこうぎ",
+      "へいこうき"
+    ]
+  },
+  {
+    "id": "ha-shototsu",
+    "name": "ハッシュ衝突",
+    "reading": "はっしゅしょうとつ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🚧",
+    "mapNode": "hayasa:hash",
+    "relatedTerms": [
+      "ha-hashfunc",
+      "ha-hashtable"
+    ],
+    "description": "ちがう キーから 同じ 番号が 計算されて、しまう 場所が かぶる こと。起きる ものと 考えて、同じ 場所に つなげて しまう、空いた 場所を さがす などの 対策を 組みこみます。"
+  },
+  {
+    "id": "ha-dp",
+    "name": "動的計画法",
+    "reading": "どうてきけいかくほう",
+    "journey": "hayasa",
+    "category": "速くする工夫",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧮",
+    "mapNode": "hayasa:kufuu",
+    "relatedTerms": [
+      "ha-memoka",
+      "ha-shisu"
+    ],
+    "description": "大きな 問題を 小さな 問題に 分け、小さい ほうの 答えを 表に 書きためて 使い回す 解きかた。同じ 計算を くりかえさないので、総当たりでは 終わらない 問題が 解ける ことが あります。"
+  },
+  {
+    "id": "ha-memoka",
+    "name": "メモ化",
+    "reading": "めもか",
+    "journey": "hayasa",
+    "category": "速くする工夫",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📝",
+    "mapNode": "hayasa:kufuu",
+    "relatedTerms": [
+      "ha-dp",
+      "ha-cache"
+    ],
+    "description": "関数の 呼び出し結果を 引数と セットで 覚えて おき、同じ 引数で 呼ばれたら 計算せずに 覚えた 答えを かえす 工夫。再帰で 同じ 計算が 何度も 出る ときに 効きます。",
+    "example": "@functools.cache\ndef fib(n): ..."
+  },
+  {
+    "id": "ha-donyoku",
+    "name": "貪欲法",
+    "reading": "どんよくほう",
+    "journey": "hayasa",
+    "category": "速くする工夫",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🍇",
+    "mapNode": "hayasa:kufuu",
+    "relatedTerms": [
+      "ha-dp",
+      "ha-bunkatsu"
+    ],
+    "description": "その場 その場で もっとも よさそうな ものを 選んで 進む 解きかた。速くて かんたんですが、いつも 最良の 答えに なるとは 限らないので、正しいと 言える 問題かを 確かめて 使います。",
+    "example": "リュックに、軽くて 役に立つ ものから 順に つめて いく"
+  },
+  {
+    "id": "ha-bfs",
+    "name": "幅優先探索",
+    "reading": "はばゆうせんたんさく",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🌊",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-dfs",
+      "ha-queue",
+      "ha-saitan"
+    ],
+    "description": "スタートに 近い ノードから 順に、1歩で 行ける ところ、2歩で 行ける ところ と 広げて さがす 方法。キューを 使います。重みの ない グラフなら 最短経路が 求まります。"
+  },
+  {
+    "id": "ha-dfs",
+    "name": "深さ優先探索",
+    "reading": "ふかさゆうせんたんさく",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🕳",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-bfs",
+      "ha-stack"
+    ],
+    "description": "行ける ところまで 1本の 道を 進み、行き止まりに なったら もどって 別の 道を ためす さがしかた。スタックか 再帰で 書きます。迷路の 出口や、つながりの 有無を 調べる ときに 使います。"
+  },
+  {
+    "id": "ha-dijkstra",
+    "name": "ダイクストラ法",
+    "reading": "だいくすとらほう",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🗺",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-saitan",
+      "ha-yusendo"
+    ],
+    "description": "重みの ある グラフで、スタートから 各ノードへの 最短経路を 求める 方法。今 わかって いる もっとも 近い ノードから 確定させて いきます。重みが 負の エッジが あると 使えません。"
+  },
+  {
+    "id": "ha-rinsetsu",
+    "name": "隣接リスト",
+    "reading": "りんせつりすと",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "📒",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-graph",
+      "ha-rinsetsugyo"
+    ],
+    "description": "グラフを、ノードごとに つながって いる 相手の 一覧で しまう 形。つながりが 少ない グラフでは メモリの むだが 少なく、となりを 順に たどる 処理も 速く 書けます。",
+    "example": "g = {'a': ['b', 'c'], 'b': ['c']}"
+  },
+  {
+    "id": "ha-haita",
+    "name": "排他制御",
+    "reading": "はいたせいぎょ",
+    "journey": "hayasa",
+    "category": "同時に動かす",
+    "difficulty": 3,
+    "role": "バックエンド",
+    "type": "concept",
+    "emoji": "🔒",
+    "mapNode": "hayasa:heiretsu",
+    "relatedTerms": [
+      "ha-heiretsu",
+      "ha-amdahl"
+    ],
+    "description": "同時に 動く 仕事が、同じ データを いっしょに 書きかえない ように、ひとつずつ 順番に さわらせる しくみ。鍵を 取った 仕事だけが 中に 入れる 形で 作る ことが 多いです。",
+    "example": "with lock:\n    count += 1"
+  },
+  {
+    "id": "ha-amdahl",
+    "name": "アムダールの法則",
+    "reading": "あむだーるのほうそく",
+    "journey": "hayasa",
+    "category": "同時に動かす",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🧱",
+    "mapNode": "hayasa:heiretsu",
+    "relatedTerms": [
+      "ha-heiretsu",
+      "ha-haita"
+    ],
+    "description": "並列に できない 部分が 少しでも 残ると、計算の 部品を いくら ふやしても 速さに 上限が ある、という 法則。同時に する 前に、順番に しか できない 部分を へらす ことが 大事だと わかります。"
+  },
+  {
+    "id": "ha-rinsetsugyo",
+    "name": "隣接行列",
+    "reading": "りんせつぎょうれつ",
+    "journey": "hayasa",
+    "category": "データ構造",
+    "difficulty": 3,
+    "role": "みんな",
+    "type": "concept",
+    "emoji": "🔲",
+    "mapNode": "hayasa:graph",
+    "relatedTerms": [
+      "ha-rinsetsu",
+      "ha-graph"
+    ],
+    "description": "グラフを、ノードの 数ぶんの たてと 横の 表で しまう 形。2つの ノードが つながって いるかを すぐ 調べられますが、ノードが 多いと メモリを たくさん 使います。",
+    "example": "g[0][1] = 1  # 0 to 1"
+  }
+]

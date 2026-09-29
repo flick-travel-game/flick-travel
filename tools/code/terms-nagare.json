@@ -1,0 +1,1468 @@
+[
+ {
+  "id": "na-joukenbunki",
+  "name": "条件分岐",
+  "reading": "じょうけんぶんき",
+  "journey": "nagare",
+  "category": "分かれ道",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-if",
+   "na-else",
+   "na-jouken"
+  ],
+  "description": "条件の 答えを 見て、どの 処理へ 進むかを プログラムに 選ばせる しくみ。考えられる 場合を もれなく 書き出してから 道を 作ると、見落としの バグを ふせげます。"
+ },
+ {
+  "id": "na-kurikaeshi",
+  "name": "くりかえし",
+  "reading": "くりかえし",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-loop",
+   "na-for",
+   "na-while"
+  ],
+  "description": "同じ 処理を 何回も 動かす こと。百回 同じ 行を 書かずに すむので、コードが 短く なり、まちがいも へります。"
+ },
+ {
+  "id": "na-kansu",
+  "name": "関数",
+  "reading": "かんすう",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "nagare:kansu",
+  "relatedTerms": [
+   "na-hikisu",
+   "na-modori",
+   "na-yobidashi"
+  ],
+  "description": "決まった 仕事を する 処理に 名前を つけて まとめた もの。1回 書けば 何度でも 使え、直す ときも 1か所で すみます。",
+  "example": "def add(a, b):\n    return a + b"
+ },
+ {
+  "id": "na-if",
+  "name": "if文",
+  "reading": "いふぶん",
+  "journey": "nagare",
+  "category": "分かれ道",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-joukenbunki",
+   "na-else",
+   "na-elseif"
+  ],
+  "description": "条件が 正しい ときだけ 中の 処理を 動かす 書きかた。条件分岐を コードで 書く ときの いちばん 基本の 形です。",
+  "example": "if score > 80:\n    print(\"great\")"
+ },
+ {
+  "id": "na-junji",
+  "name": "順次",
+  "reading": "じゅんじ",
+  "journey": "nagare",
+  "category": "順番と形",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "nagare:junji",
+  "relatedTerms": [
+   "na-joukenbunki",
+   "na-kurikaeshi",
+   "na-shori"
+  ],
+  "description": "書いた 順に 上から 1行ずつ 動く こと。分岐・くりかえしと ならぶ 3つの 基本の ながれの 1つで、順番を まちがえると 結果が 変わります。"
+ },
+ {
+  "id": "na-else",
+  "name": "else",
+  "reading": "えるす",
+  "journey": "nagare",
+  "category": "分かれ道",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-if",
+   "na-elseif"
+  ],
+  "description": "条件分岐で、条件に 合わなかった ときの 道を 書く ところ。書いておくと どちらの 場合も 必ず 何かが 動くので、見落としが へります。",
+  "example": "if ok: save()\nelse: retry()"
+ },
+ {
+  "id": "na-loop",
+  "name": "ループ",
+  "reading": "るーぷ",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "➰",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-kurikaeshi",
+   "na-mugenloop",
+   "na-owarijouken"
+  ],
+  "description": "くりかえしを 仕事の 場では ループと よびます。何回 回すか、いつ 止めるかを 自分で 決めて 書くのが 大事です。"
+ },
+ {
+  "id": "na-for",
+  "name": "for文",
+  "reading": "ふぉーぶん",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-while",
+   "na-foreach",
+   "na-counter"
+  ],
+  "description": "くりかえす 回数や 取り出す はんいを 最初に 決めてから 回す 書きかた。はじまり・止める 条件・進めかたの 3つを 1行に まとめて 書ける 言語が 多いです。",
+  "example": "for i in range(5):\n    print(i)"
+ },
+ {
+  "id": "na-while",
+  "name": "while文",
+  "reading": "ほわいるぶん",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-for",
+   "na-mugenloop",
+   "na-owarijouken"
+  ],
+  "description": "条件が 正しい あいだ くりかえす 書きかた。何回 回るか 前もって 分からない とき、たとえば 正しい 入力が 来るまで 待つ ときに 使います。",
+  "example": "while hp > 0:\n    hp -= 1",
+  "acceptedReadings": [
+   "ほわいるぶん",
+   "わいるぶん"
+  ]
+ },
+ {
+  "id": "na-jouken",
+  "name": "条件",
+  "reading": "じょうけん",
+  "journey": "nagare",
+  "category": "分かれ道",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-joukenbunki",
+   "na-joukenshiki"
+  ],
+  "description": "正しいか まちがいかの どちらかに なる 問いかけ。分岐や くりかえしは、この 答えを 見て 次の 動きを 決めます。"
+ },
+ {
+  "id": "na-katsu",
+  "name": "かつ(AND)",
+  "reading": "かつ",
+  "journey": "nagare",
+  "category": "条件の組み合わせ",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "nagare:ronri",
+  "relatedTerms": [
+   "na-matawa",
+   "na-hitei",
+   "na-ronrienzan"
+  ],
+  "description": "2つの 条件が どちらも 正しい ときだけ 正しく なる つなぎかた。ログインしていて しかも 管理者なら、の ように 条件を しぼれます。",
+  "example": "ok = logged_in and is_admin"
+ },
+ {
+  "id": "na-matawa",
+  "name": "または(OR)",
+  "reading": "または",
+  "journey": "nagare",
+  "category": "条件の組み合わせ",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "nagare:ronri",
+  "relatedTerms": [
+   "na-katsu",
+   "na-hitei",
+   "na-ronrienzan"
+  ],
+  "description": "2つの 条件の どちらか 1つでも 正しければ 正しく なる つなぎかた。土曜日 または 日曜日なら 休み、の ように 条件を 広げます。",
+  "example": "off = day == 6 or day == 7"
+ },
+ {
+  "id": "na-hitei",
+  "name": "否定(NOT)",
+  "reading": "ひてい",
+  "journey": "nagare",
+  "category": "条件の組み合わせ",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "nagare:ronri",
+  "relatedTerms": [
+   "na-katsu",
+   "na-matawa",
+   "na-demorgan"
+  ],
+  "description": "条件の 答えを 反対に する こと。正しいは まちがいに、まちがいは 正しいに なります。まだ 終わっていないなら、の ような 書きかたが できます。",
+  "example": "if not done: wait()"
+ },
+ {
+  "id": "na-mugenloop",
+  "name": "無限ループ",
+  "reading": "むげんるーぷ",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "♾️",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-loop",
+   "na-owarijouken",
+   "na-break"
+  ],
+  "description": "止まる 条件が 来ないので 終わらない くりかえし。まちがいで 起きたら 止まる 条件を 見なおします。サーバーの ように わざと 回しつづける ことも あります。"
+ },
+ {
+  "id": "na-yobidashi",
+  "name": "呼び出し",
+  "reading": "よびだし",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📞",
+  "mapNode": "nagare:kansu",
+  "relatedTerms": [
+   "na-kansu",
+   "na-teigi",
+   "na-hikisu"
+  ],
+  "description": "作った 関数を 名前で 動かす こと。呼ばれた 関数が 仕事を 終えると、呼んだ 場所の 次の 行に もどって 続きが 動きます。",
+  "example": "total = add(3, 4)"
+ },
+ {
+  "id": "na-teigi",
+  "name": "定義",
+  "reading": "ていぎ",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "nagare:kansu",
+  "relatedTerms": [
+   "na-kansu",
+   "na-yobidashi"
+  ],
+  "description": "関数の 名前と 中身を 決めて 書いて おく こと。定義しただけでは 動かず、呼び出した ときに はじめて 中の 処理が 動きます。",
+  "example": "def hello():\n    print(\"hi\")"
+ },
+ {
+  "id": "na-event",
+  "name": "イベント",
+  "reading": "いべんと",
+  "journey": "nagare",
+  "category": "できごと",
+  "difficulty": 1,
+  "role": "フロントエンド",
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "nagare:event",
+  "relatedTerms": [
+   "na-eventhandler",
+   "na-callback",
+   "na-timer"
+  ],
+  "description": "クリック・キーを 押す・読みこみが 終わる などの できごと。起きた ときに 動く 処理を 決めて おくと、使う 人の 動きに こたえられます。"
+ },
+ {
+  "id": "na-shori",
+  "name": "処理",
+  "reading": "しょり",
+  "journey": "nagare",
+  "category": "順番と形",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "nagare:junji",
+  "relatedTerms": [
+   "na-junji",
+   "na-kansu"
+  ],
+  "description": "プログラムが 行う ひとまとまりの 仕事。計算する、ならべかえる、画面に 出す など、何を する かたまりかを 言う ときに 使います。"
+ },
+ {
+  "id": "na-block",
+  "name": "ブロック",
+  "reading": "ぶろっく",
+  "journey": "nagare",
+  "category": "順番と形",
+  "difficulty": 1,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "nagare:junji",
+  "relatedTerms": [
+   "na-indent",
+   "na-if",
+   "na-blockscope"
+  ],
+  "description": "いっしょに 動く 何行かの ひとかたまり。条件分岐や くりかえしの 中身は ブロックで 書き、どこから どこまでかを はっきり させます。"
+ },
+ {
+  "id": "na-timer",
+  "name": "タイマー",
+  "reading": "たいまー",
+  "journey": "nagare",
+  "category": "できごと",
+  "difficulty": 1,
+  "role": "フロントエンド",
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "nagare:event",
+  "relatedTerms": [
+   "na-event",
+   "na-callback"
+  ],
+  "description": "決めた 時間が たったら 処理を 動かす しくみ。3秒後に 知らせを 消す、1秒ごとに 時計を 進める などに 使います。",
+  "example": "setTimeout(hide, 3000)"
+ },
+ {
+  "id": "na-hikisu",
+  "name": "引数",
+  "reading": "ひきすう",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "nagare:hikisu",
+  "relatedTerms": [
+   "na-kansu",
+   "na-modori",
+   "na-default"
+  ],
+  "description": "関数を 呼ぶ ときに、かっこの 中に 入れて わたす 値。関数の 中では 名前の ついた 変数として 受け取るので、ちがう 値で 同じ 関数を 使いまわせます。",
+  "example": "greet(\"Ken\")"
+ },
+ {
+  "id": "na-modori",
+  "name": "戻り値",
+  "reading": "もどりち",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📤",
+  "mapNode": "nagare:modori",
+  "relatedTerms": [
+   "na-kansu",
+   "na-return",
+   "na-hikisu"
+  ],
+  "description": "関数が 仕事を 終えて 呼んだ 側に 返す 結果。返った 値を 変数に しまえば、次の 計算に そのまま 使えます。",
+  "example": "def area(w, h):\n    return w * h"
+ },
+ {
+  "id": "na-return",
+  "name": "return文",
+  "reading": "りたーんぶん",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "nagare:modori",
+  "relatedTerms": [
+   "na-modori",
+   "na-souki"
+  ],
+  "description": "関数を そこで 終わらせ、呼び出し元へ 結果を 手わたす 文。これより 下の 行は 動かないので、置く 場所に 気を つけます。",
+  "example": "return total"
+ },
+ {
+  "id": "na-elseif",
+  "name": "else if",
+  "reading": "えるすいふ",
+  "journey": "nagare",
+  "category": "分かれ道",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-if",
+   "na-else",
+   "na-switch"
+  ],
+  "description": "はじめの 条件に 合わなかった ときに、次の 条件を 調べる 書きかた。上から 順に 調べ、合った ところで 止まるので 条件の 順番が 大事です。",
+  "example": "if score > 80: grade = \"A\"\nelif score > 60: grade = \"B\""
+ },
+ {
+  "id": "na-switch",
+  "name": "switch文",
+  "reading": "すいっちぶん",
+  "journey": "nagare",
+  "category": "分かれ道",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎛",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-elseif",
+   "na-if"
+  ],
+  "description": "1つの 値が 何かで、いくつもの 道に 分ける 書きかた。同じ 値を くらべる 分岐が 多い ときは、ならべて 書くより 読みやすく なります。",
+  "example": "switch (n) { case 1: go(); break; }"
+ },
+ {
+  "id": "na-break",
+  "name": "break文",
+  "reading": "ぶれいくぶん",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "nagare:owari",
+  "relatedTerms": [
+   "na-continue",
+   "na-loop",
+   "na-owarijouken"
+  ],
+  "description": "くりかえしを 途中で やめて、ループの 外の 次の 行へ 進む 文。入れ子の ループでは いちばん 内がわの 1つしか ぬけないので、どこへ 出るかを たしかめます。",
+  "example": "if x == target:\n    break"
+ },
+ {
+  "id": "na-continue",
+  "name": "continue文",
+  "reading": "こんてぃにゅーぶん",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⏭",
+  "mapNode": "nagare:owari",
+  "relatedTerms": [
+   "na-break",
+   "na-loop"
+  ],
+  "description": "ループの 中で、この 回の 残りの 行を 飛ばして すぐ 次の 回へ うつる 文。条件に 合わない データを 先に はじくと、中身の 入れ子が 浅く なります。",
+  "example": "if x < 0:\n    continue"
+ },
+ {
+  "id": "na-nest",
+  "name": "ネスト(入れ子)",
+  "reading": "ねすと",
+  "journey": "nagare",
+  "category": "順番と形",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🪆",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-indent",
+   "na-block",
+   "na-souki"
+  ],
+  "description": "分岐や くりかえしの 中に、さらに 分岐や くりかえしを 入れる こと。深く なりすぎると 読みにくいので、関数に 分けるなどして 浅く 保ちます。",
+  "acceptedReadings": [
+   "ねすと",
+   "いれこ"
+  ]
+ },
+ {
+  "id": "na-ronrienzan",
+  "name": "論理演算",
+  "reading": "ろんりえんざん",
+  "journey": "nagare",
+  "category": "条件の組み合わせ",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "nagare:ronri",
+  "relatedTerms": [
+   "na-katsu",
+   "na-matawa",
+   "na-hitei"
+  ],
+  "description": "かつ・または・否定で、正しいか まちがいかの 答えを 組み合わせる 計算。いくつもの 条件を 1つに まとめて 分岐に 使います。"
+ },
+ {
+  "id": "na-local",
+  "name": "ローカル変数",
+  "reading": "ろーかるへんすう",
+  "journey": "nagare",
+  "category": "見える はんい",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "nagare:scope",
+  "relatedTerms": [
+   "na-global",
+   "na-scope"
+  ],
+  "description": "関数や ブロックの 中で 作られ、その 中だけで 使える 変数。処理が 終わると 片づけられるので、ほかの 関数と 同じ 名前を つけても ぶつかりません。"
+ },
+ {
+  "id": "na-global",
+  "name": "グローバル変数",
+  "reading": "ぐろーばるへんすう",
+  "journey": "nagare",
+  "category": "見える はんい",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "nagare:scope",
+  "relatedTerms": [
+   "na-local",
+   "na-scope"
+  ],
+  "description": "プログラムの どこからでも 読み書き できる 変数。便利ですが、どこで 変えられたか 追いにくく なるので、仕事では 数を しぼります。"
+ },
+ {
+  "id": "na-scope",
+  "name": "スコープ",
+  "reading": "すこーぷ",
+  "journey": "nagare",
+  "category": "見える はんい",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "nagare:scope",
+  "relatedTerms": [
+   "na-local",
+   "na-global",
+   "na-blockscope"
+  ],
+  "description": "変数や 関数の 名前が 使える はんい。はんいを せまく すると、ほかの ところから まちがって 書きかえられる 心配が へります。"
+ },
+ {
+  "id": "na-callback",
+  "name": "コールバック",
+  "reading": "こーるばっく",
+  "journey": "nagare",
+  "category": "できごと",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📲",
+  "mapNode": "nagare:event",
+  "relatedTerms": [
+   "na-event",
+   "na-hidouki",
+   "na-callbackhell"
+  ],
+  "description": "ほかの 関数に わたしておき、あとで 呼び出して もらう 関数。読みこみが 終わったら これを 動かして、の ように たのむ ときに 使います。",
+  "example": "button.onclick = save"
+ },
+ {
+  "id": "na-hidouki",
+  "name": "非同期処理",
+  "reading": "ひどうきしょり",
+  "journey": "nagare",
+  "category": "待つ・同時に",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "nagare:matsu",
+  "relatedTerms": [
+   "na-douki",
+   "na-await",
+   "na-promise"
+  ],
+  "description": "終わるのを 待たずに 次の 処理へ 進み、終わった ときに 続きを する 書きかた。通信の 待ち時間に 画面が 止まらないように できます。"
+ },
+ {
+  "id": "na-douki",
+  "name": "同期処理",
+  "reading": "どうきしょり",
+  "journey": "nagare",
+  "category": "待つ・同時に",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⏸",
+  "mapNode": "nagare:matsu",
+  "relatedTerms": [
+   "na-hidouki",
+   "na-junji"
+  ],
+  "description": "1つの 処理が 終わるまで 待ってから 次へ 進む 書きかた。順番が 分かりやすい かわりに、時間の かかる 処理が あると 全体が 止まります。"
+ },
+ {
+  "id": "na-eventhandler",
+  "name": "イベントハンドラ",
+  "reading": "いべんとはんどら",
+  "journey": "nagare",
+  "category": "できごと",
+  "difficulty": 2,
+  "role": "フロントエンド",
+  "type": "concept",
+  "emoji": "🖱",
+  "mapNode": "nagare:event",
+  "relatedTerms": [
+   "na-event",
+   "na-listener",
+   "na-callback"
+  ],
+  "description": "できごとが 起きた ときに 動く ように 登録した 関数。ボタンが 押されたら 送る、の ように 画面の 動きを ここに 書きます。",
+  "example": "function onClick() { send(); }"
+ },
+ {
+  "id": "na-joukenshiki",
+  "name": "条件式",
+  "reading": "じょうけんしき",
+  "journey": "nagare",
+  "category": "分かれ道",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-jouken",
+   "na-ronrienzan",
+   "na-sankou"
+  ],
+  "description": "計算すると 正しいか まちがいかに なる 式。くらべる 記号や かつ・または を 組み合わせて 書き、分岐や くりかえしの 判断に 使います。",
+  "example": "age >= 13 and has_permit"
+ },
+ {
+  "id": "na-foreach",
+  "name": "foreach文",
+  "reading": "ふぉーいーちぶん",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-for",
+   "na-iterator"
+  ],
+  "description": "リストなどに 入っている 要素を、先頭から 順に 1つずつ 受け取って 処理を 回す 書きかた。何番目かを 自分で 数えないので、1つ ずれる まちがいが 起きにくく なります。",
+  "example": "for item in items:\n    print(item)"
+ },
+ {
+  "id": "na-owarijouken",
+  "name": "終了条件",
+  "reading": "しゅうりょうじょうけん",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "nagare:owari",
+  "relatedTerms": [
+   "na-while",
+   "na-mugenloop",
+   "na-basecase"
+  ],
+  "description": "くりかえしを 止める ための 条件。書く ときは まず どう なったら 終わるかを 決めると、止まらない ループを ふせげます。"
+ },
+ {
+  "id": "na-indent",
+  "name": "インデント",
+  "reading": "いんでんと",
+  "journey": "nagare",
+  "category": "順番と形",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "↦",
+  "mapNode": "nagare:junji",
+  "relatedTerms": [
+   "na-block",
+   "na-nest"
+  ],
+  "description": "行の 先頭に 空白を 入れて、ブロックの 深さを 見せる こと。空白の 数で ブロックの はんいが 決まる 言語も あるので、チームで 幅を そろえて 書きます。"
+ },
+ {
+  "id": "na-kumikomi",
+  "name": "組み込み関数",
+  "reading": "くみこみかんすう",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "nagare:kansu",
+  "relatedTerms": [
+   "na-kansu",
+   "na-yobidashi"
+  ],
+  "description": "言語に はじめから 用意されている 関数。長さを 数える、数を 丸める など、よく 使う 仕事は 自分で 作る 前に まず さがします。",
+  "example": "n = len(items)"
+ },
+ {
+  "id": "na-default",
+  "name": "デフォルト引数",
+  "reading": "でふぉるとひきすう",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "nagare:hikisu",
+  "relatedTerms": [
+   "na-hikisu",
+   "na-kahencho"
+  ],
+  "description": "呼ぶ ときに わたさなかったら 使われる、前もって 決めた 引数の 値。よく 使う 値を 決めておけば 呼ぶ 側の 手間が へります。",
+  "example": "def greet(name=\"guest\"): print(name)"
+ },
+ {
+  "id": "na-sankou",
+  "name": "三項演算子",
+  "reading": "さんこうえんざんし",
+  "journey": "nagare",
+  "category": "分かれ道",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "❔",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-if",
+   "na-joukenshiki"
+  ],
+  "description": "条件に よって 2つの 値の どちらかを えらぶ、1行で 書ける 分岐。短い えらび分けに 便利ですが、入れ子に すると 読みにくく なります。",
+  "example": "label = \"adult\" if age >= 18 else \"kid\""
+ },
+ {
+  "id": "na-souki",
+  "name": "早期リターン",
+  "reading": "そうきりたーん",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "nagare:modori",
+  "relatedTerms": [
+   "na-return",
+   "na-nest",
+   "na-guard"
+  ],
+  "description": "関数の はじめで 特別な 場合を 先に 返して 終える 書きかた。本題の 処理を 入れ子に しないので、読みやすく なります。",
+  "example": "if not user:\n    return None"
+ },
+ {
+  "id": "na-counter",
+  "name": "ループカウンター",
+  "reading": "るーぷかうんたー",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-for",
+   "na-owarijouken"
+  ],
+  "description": "くりかえしが 何回目かを 数える 変数。数え始めを 0に するか 1に するかで 1回 ずれる バグが 起きやすいので 気を つけます。",
+  "example": "for i in range(10): print(i)"
+ },
+ {
+  "id": "na-dowhile",
+  "name": "do-while文",
+  "reading": "どぅーほわいるぶん",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔂",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-while",
+   "na-owarijouken"
+  ],
+  "description": "先に 1回 処理を 動かしてから、条件を 見て くりかえすか 決める 書きかた。少なくとも 1回は 必ず 動かしたい ときに 使います。",
+  "acceptedReadings": [
+   "どぅーほわいるぶん",
+   "どぅーわいるぶん"
+  ],
+  "example": "do { n++; } while (n < 3);"
+ },
+ {
+  "id": "na-listener",
+  "name": "イベントリスナー",
+  "reading": "いべんとりすなー",
+  "journey": "nagare",
+  "category": "できごと",
+  "difficulty": 2,
+  "role": "フロントエンド",
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "nagare:event",
+  "relatedTerms": [
+   "na-eventhandler",
+   "na-event"
+  ],
+  "description": "画面の 部品に つけて、決めた できごとが 起きるのを 待ちつづける しくみ。起きたら 登録しておいた 処理を 呼び出します。",
+  "example": "btn.addEventListener(\"click\", go)"
+ },
+ {
+  "id": "na-main",
+  "name": "メイン関数",
+  "reading": "めいんかんすう",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "nagare:kansu",
+  "relatedTerms": [
+   "na-kansu",
+   "na-entry"
+  ],
+  "description": "プログラムを 動かした ときに 最初に 呼ばれる 関数。ここから ほかの 関数を 順に 呼んで、全体の ながれを 組み立てます。",
+  "example": "int main(void) { return 0; }"
+ },
+ {
+  "id": "na-seigyo",
+  "name": "制御構文",
+  "reading": "せいぎょこうぶん",
+  "journey": "nagare",
+  "category": "順番と形",
+  "difficulty": 2,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🕹",
+  "mapNode": "nagare:junji",
+  "relatedTerms": [
+   "na-joukenbunki",
+   "na-kurikaeshi",
+   "na-junji"
+  ],
+  "description": "分岐や くりかえしなど、動く 順番を 変える ための 書きかたを まとめた 呼び名。ながれを 決める 道具箱の ような ものです。"
+ },
+ {
+  "id": "na-eventkudou",
+  "name": "イベント駆動",
+  "reading": "いべんとくどう",
+  "journey": "nagare",
+  "category": "できごと",
+  "difficulty": 2,
+  "role": "フロントエンド",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "nagare:event",
+  "relatedTerms": [
+   "na-event",
+   "na-eventhandler",
+   "na-eventloop"
+  ],
+  "description": "できごとが 起きる たびに 決めた 処理を 動かす 作りかた。画面の アプリや サーバーは、来た 知らせに こたえて 動く 形で 作られる ことが 多いです。"
+ },
+ {
+  "id": "na-saiki",
+  "name": "再帰",
+  "reading": "さいき",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🪞",
+  "mapNode": "nagare:saiki",
+  "relatedTerms": [
+   "na-basecase",
+   "na-callstack",
+   "na-matsubi"
+  ],
+  "description": "関数が 自分自身を 呼ぶ こと。大きな 問題を 同じ 形の 小さな 問題に 分けて とく ときに 使い、木の 形の データを たどるのに 向いています。",
+  "example": "def fact(n):\n    return 1 if n == 0 else n * fact(n - 1)"
+ },
+ {
+  "id": "na-basecase",
+  "name": "ベースケース",
+  "reading": "べーすけーす",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "nagare:saiki",
+  "relatedTerms": [
+   "na-saiki",
+   "na-owarijouken"
+  ],
+  "description": "再帰で それ以上 自分を 呼ばずに 答えを 返す 場合。これが ないと 呼び出しが 止まらず、プログラムが 落ちて しまいます。",
+  "example": "if n == 0:\n    return 1"
+ },
+ {
+  "id": "na-koukai",
+  "name": "高階関数",
+  "reading": "こうかいかんすう",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎩",
+  "mapNode": "nagare:kansu",
+  "relatedTerms": [
+   "na-lambda",
+   "na-callback",
+   "na-closure"
+  ],
+  "description": "関数を 引数に 受け取ったり、関数を 返したり する 関数。くりかえしの 中身だけを わたして 使いまわせるので、コードが 短く なります。",
+  "example": "doubled = map(lambda x: x * 2, nums)"
+ },
+ {
+  "id": "na-lambda",
+  "name": "ラムダ式",
+  "reading": "らむだしき",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "λ",
+  "mapNode": "nagare:kansu",
+  "relatedTerms": [
+   "na-koukai",
+   "na-callback"
+  ],
+  "description": "関数を 式として 1行で 書く 方法で、名前を つけなくても 使えます。高階関数に わたす 小さな 決まりを、使う 場所の すぐ そばに 書けます。",
+  "example": "nums.sort(key=lambda x: -x)"
+ },
+ {
+  "id": "na-closure",
+  "name": "クロージャ",
+  "reading": "くろーじゃ",
+  "journey": "nagare",
+  "category": "見える はんい",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "nagare:scope",
+  "relatedTerms": [
+   "na-lexical",
+   "na-koukai",
+   "na-scope"
+  ],
+  "description": "作られた ときの まわりの 変数を 覚えたまま 持ち歩く 関数。外の 関数が 終わっても その 変数を 使いつづけられるので、状態を 閉じこめられます。",
+  "example": "def adder(n):\n    return lambda x: x + n"
+ },
+ {
+  "id": "na-await",
+  "name": "await",
+  "reading": "あうぇいと",
+  "journey": "nagare",
+  "category": "待つ・同時に",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "nagare:matsu",
+  "relatedTerms": [
+   "na-async",
+   "na-promise",
+   "na-hidouki"
+  ],
+  "description": "非同期の 処理が 終わるまで その 行で 待つ ための ことば。待つ あいだも ほかの 処理は 進むので、順番どおりに 読める まま 画面を 止めません。",
+  "example": "data = await fetch_user()"
+ },
+ {
+  "id": "na-async",
+  "name": "async",
+  "reading": "えいしんく",
+  "journey": "nagare",
+  "category": "待つ・同時に",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "nagare:matsu",
+  "relatedTerms": [
+   "na-await",
+   "na-promise"
+  ],
+  "description": "その 関数が 非同期で 動く ことを しめす ことば。中で 待つ 書きかたが 使えるように なり、呼ぶ 側には 結果の 約束が 返ります。",
+  "acceptedReadings": [
+   "えいしんく",
+   "あしんく"
+  ],
+  "example": "async def load():\n    return await get()"
+ },
+ {
+  "id": "na-promise",
+  "name": "プロミス",
+  "reading": "ぷろみす",
+  "journey": "nagare",
+  "category": "待つ・同時に",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "nagare:matsu",
+  "relatedTerms": [
+   "na-await",
+   "na-async",
+   "na-callback"
+  ],
+  "description": "まだ 終わっていない 処理の 結果を あとで わたすと いう 約束の 入れもの。成功と 失敗の どちらに なったかで、続きの 処理を 分けて 書けます。"
+ },
+ {
+  "id": "na-heikou",
+  "name": "並行処理",
+  "reading": "へいこうしょり",
+  "journey": "nagare",
+  "category": "待つ・同時に",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "nagare:matsu",
+  "relatedTerms": [
+   "na-timeout",
+   "na-kyougou",
+   "na-hidouki"
+  ],
+  "description": "いくつかの 仕事を 少しずつ 切りかえながら、同時に 進んでいる ように 動かす こと。待ち時間の 多い 仕事を まとめて さばけます。"
+ },
+ {
+  "id": "na-timeout",
+  "name": "タイムアウト",
+  "reading": "たいむあうと",
+  "journey": "nagare",
+  "category": "待つ・同時に",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "nagare:matsu",
+  "relatedTerms": [
+   "na-heikou",
+   "na-polling"
+  ],
+  "description": "待つ 時間に 上限を 決めて、それを すぎたら あきらめて 次へ 進む しくみ。返事の こない 相手を ずっと 待って 画面が 止まるのを ふせぎます。",
+  "example": "requests.get(url, timeout=5)"
+ },
+ {
+  "id": "na-kyougou",
+  "name": "競合状態",
+  "reading": "きょうごうじょうたい",
+  "journey": "nagare",
+  "category": "待つ・同時に",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "nagare:matsu",
+  "relatedTerms": [
+   "na-timeout",
+   "na-polling",
+   "na-heikou"
+  ],
+  "description": "いくつかの ながれが 同じ データを 同時に 書きかえて、どちらが 先かで 結果が 変わって しまう こと。たまにしか 起きず 見つけにくい バグの もとです。"
+ },
+ {
+  "id": "na-polling",
+  "name": "ポーリング",
+  "reading": "ぽーりんぐ",
+  "journey": "nagare",
+  "category": "待つ・同時に",
+  "difficulty": 3,
+  "role": "バックエンド",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "nagare:matsu",
+  "relatedTerms": [
+   "na-timeout",
+   "na-kyougou"
+  ],
+  "description": "「もう 終わった?」と 決まった 間かくで 何度も たずねて、ようすを 調べる やりかた。かんたんに 作れますが、たずねすぎると むだな 仕事が ふえます。"
+ },
+ {
+  "id": "na-tanraku",
+  "name": "短絡評価",
+  "reading": "たんらくひょうか",
+  "journey": "nagare",
+  "category": "条件の組み合わせ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "nagare:ronri",
+  "relatedTerms": [
+   "na-katsu",
+   "na-matawa",
+   "na-ronrienzan"
+  ],
+  "description": "かつ・または で、左の 条件だけで 答えが 決まったら 右を 調べない しくみ。空かどうかを 先に 見れば、右で 起きる エラーを さけられます。",
+  "example": "ok = user and user.is_admin"
+ },
+ {
+  "id": "na-demorgan",
+  "name": "ド・モルガンの法則",
+  "reading": "どもるがんのほうそく",
+  "journey": "nagare",
+  "category": "条件の組み合わせ",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "nagare:ronri",
+  "relatedTerms": [
+   "na-hitei",
+   "na-katsu",
+   "na-matawa"
+  ],
+  "description": "かつ で つないだ 条件の 否定は、それぞれの 否定を または で つないだ ものと 同じ、と いう 決まり。ややこしい 条件を 読みやすく 書きかえられます。",
+  "example": "(not (a and b)) == (not a or not b)"
+ },
+ {
+  "id": "na-fukusayou",
+  "name": "副作用",
+  "reading": "ふくさよう",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "nagare:kansu",
+  "relatedTerms": [
+   "na-junsui",
+   "na-global"
+  ],
+  "description": "関数が 値を 返す ほかに、外の 変数や ファイル・画面などを 変えて しまう こと。副作用が 多いと 動きを 予想しにくいので、置く 場所を まとめます。"
+ },
+ {
+  "id": "na-junsui",
+  "name": "純粋関数",
+  "reading": "じゅんすいかんすう",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "💎",
+  "mapNode": "nagare:kansu",
+  "relatedTerms": [
+   "na-fukusayou",
+   "na-koukai"
+  ],
+  "description": "同じ 引数なら いつも 同じ 結果を 返し、外の ものを 何も 変えない 関数。テストしやすく、安心して 使いまわせます。",
+  "example": "def add(a, b):\n    return a + b"
+ },
+ {
+  "id": "na-matsubi",
+  "name": "末尾再帰",
+  "reading": "まつびさいき",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔚",
+  "mapNode": "nagare:saiki",
+  "relatedTerms": [
+   "na-saiki",
+   "na-callstack"
+  ],
+  "description": "自分を 呼ぶ ことが 関数の いちばん 最後の 仕事に なっている 再帰。言語に よっては くりかえしに 置きかえて、呼び出しが 積み上がらない ように できます。"
+ },
+ {
+  "id": "na-callstack",
+  "name": "コールスタック",
+  "reading": "こーるすたっく",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🥞",
+  "mapNode": "nagare:saiki",
+  "relatedTerms": [
+   "na-saiki",
+   "na-basecase",
+   "na-yobidashi"
+  ],
+  "description": "呼び出し中の 関数を 積み重ねて 覚えて おく 場所。関数が 終わると いちばん 上から 取りのぞかれ、再帰が 深すぎると あふれて 止まります。"
+ },
+ {
+  "id": "na-shadowing",
+  "name": "シャドーイング",
+  "reading": "しゃどーいんぐ",
+  "journey": "nagare",
+  "category": "見える はんい",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "nagare:scope",
+  "relatedTerms": [
+   "na-scope",
+   "na-local"
+  ],
+  "description": "内がわの スコープで 外と 同じ 名前の 変数を 作り、外の ほうが かくれて 見えなく なる こと。思わぬ バグに なるので 名前を 分けます。"
+ },
+ {
+  "id": "na-lexical",
+  "name": "レキシカルスコープ",
+  "reading": "れきしかるすこーぷ",
+  "journey": "nagare",
+  "category": "見える はんい",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "nagare:scope",
+  "relatedTerms": [
+   "na-closure",
+   "na-scope"
+  ],
+  "description": "変数が 見える はんいが、どこで 呼ばれたかでは なく コードの どこに 書いたかで 決まる 決まり。多くの 言語が この 決まりで 動きます。"
+ },
+ {
+  "id": "na-blockscope",
+  "name": "ブロックスコープ",
+  "reading": "ぶろっくすこーぷ",
+  "journey": "nagare",
+  "category": "見える はんい",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "nagare:scope",
+  "relatedTerms": [
+   "na-scope",
+   "na-block",
+   "na-shadowing"
+  ],
+  "description": "分岐や くりかえしの ブロックの 中で 作った 変数が、その 中だけで 使える 決まり。ブロックを ぬけると 消えるので、名前の ぶつかりが へります。",
+  "example": "for (let i = 0; i < 3; i++) {}"
+ },
+ {
+  "id": "na-kahencho",
+  "name": "可変長引数",
+  "reading": "かへんちょうひきすう",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "nagare:hikisu",
+  "relatedTerms": [
+   "na-hikisu",
+   "na-default"
+  ],
+  "description": "いくつ わたしても 受け取れる 引数。受け取った 値は 1つの ならびに まとめられるので、合計を 出す 関数などに 使います。",
+  "example": "def total(*nums):\n    return sum(nums)"
+ },
+ {
+  "id": "na-ataiwatashi",
+  "name": "値渡し",
+  "reading": "あたいわたし",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "nagare:hikisu",
+  "relatedTerms": [
+   "na-sanshouwatashi",
+   "na-hikisu"
+  ],
+  "description": "引数に 値の 写しを わたす やりかた。関数の 中で 書きかえても 呼んだ 側の 変数は 変わらないので、安心して わたせます。"
+ },
+ {
+  "id": "na-sanshouwatashi",
+  "name": "参照渡し",
+  "reading": "さんしょうわたし",
+  "journey": "nagare",
+  "category": "関数",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "nagare:hikisu",
+  "relatedTerms": [
+   "na-ataiwatashi",
+   "na-fukusayou"
+  ],
+  "description": "引数に 値の ある 場所を わたす やりかた。関数の 中で 変えると 呼んだ 側の 中身も 変わるので、大きな データを 写さずに すみますが 注意が いります。"
+ },
+ {
+  "id": "na-eventloop",
+  "name": "イベントループ",
+  "reading": "いべんとるーぷ",
+  "journey": "nagare",
+  "category": "できごと",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎡",
+  "mapNode": "nagare:event",
+  "relatedTerms": [
+   "na-eventkudou",
+   "na-hidouki",
+   "na-callback"
+  ],
+  "description": "たまった できごとや 終わった 仕事を 順番に 取り出して、対応する 処理を 動かしつづける しくみ。非同期の 処理は この 輪の 上で 進みます。"
+ },
+ {
+  "id": "na-callbackhell",
+  "name": "コールバック地獄",
+  "reading": "こーるばっくじごく",
+  "journey": "nagare",
+  "category": "できごと",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "nagare:event",
+  "relatedTerms": [
+   "na-callback",
+   "na-promise",
+   "na-await"
+  ],
+  "description": "コールバックの 中に コールバックを 何重にも 入れて、右へ 右へと 深く なり 読めなく なった コード。約束の 入れものや 待つ 書きかたで ほどきます。"
+ },
+ {
+  "id": "na-guard",
+  "name": "ガード節",
+  "reading": "がーどせつ",
+  "journey": "nagare",
+  "category": "分かれ道",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "nagare:bunki",
+  "relatedTerms": [
+   "na-souki",
+   "na-nest",
+   "na-if"
+  ],
+  "description": "関数の はじめで 条件に 合わない 場合を はじいて すぐ 返す 分岐。本題の 前に 門番を 置く ように して、入れ子の 深さを おさえます。",
+  "example": "if n < 0:\n    raise ValueError"
+ },
+ {
+  "id": "na-iterator",
+  "name": "イテレーター",
+  "reading": "いてれーたー",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🎟",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-foreach",
+   "na-generator"
+  ],
+  "description": "中身を 1つずつ 順番に 取り出す ための しくみ。取り出し方を まとめておくので、配列でも ファイルの 行でも 同じ くりかえしで あつかえます。",
+  "example": "it = iter(items)\nfirst = next(it)"
+ },
+ {
+  "id": "na-generator",
+  "name": "ジェネレーター",
+  "reading": "じぇねれーたー",
+  "journey": "nagare",
+  "category": "くりかえし",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "nagare:loop",
+  "relatedTerms": [
+   "na-iterator",
+   "na-foreach"
+  ],
+  "description": "値を 1つ 返すごとに 一時 止まり、次に 呼ばれたら 続きから 動く 関数。全部を 先に 作らないので、大きな データでも 少しずつ 使えます。",
+  "example": "def evens():\n    yield 0"
+ },
+ {
+  "id": "na-entry",
+  "name": "エントリーポイント",
+  "reading": "えんとりーぽいんと",
+  "journey": "nagare",
+  "category": "順番と形",
+  "difficulty": 3,
+  "role": "みんな",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "nagare:junji",
+  "relatedTerms": [
+   "na-main",
+   "na-junji"
+  ],
+  "description": "プログラムが 動き始める 最初の 場所。ここを 見つければ、どの 順で 何が 呼ばれるかを たどれるので、知らない コードを 読む ときの 入口に なります。"
+ }
+]

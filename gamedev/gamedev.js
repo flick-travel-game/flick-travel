@@ -2,7 +2,7 @@
    ─ 土台の index.html(世界フリック旅行)の 差しこみ口(PLUG)に「ゲーム作りの 旅」を 足す ファイル。gamedev/ の ページだけが 読む ─
    ことばは tools/gamedev/meta.json + tools/gamedev/terms-*.json → tools/gamedev/terms_js.py が data/gamedev.json と gamedev/terms.js(GAMEDEV_TERMS)に する。
    **ことばを 足す・直すのは tools/gamedev/terms-<旅>.json だけ**。もとは kango/kango.js(看護師を 写した)
-   ・旅は 7つ: 🎮 ゲームのきほん / 🧩 考えて決める / 💻 うごかすしくみ / 🎨 絵と音 / 🛠 作る道具 / 🧪 直して仕上げる / 🏢 みんなにとどける。+ 🏆 マスター
+   ・旅は 8つ: 🎮 ゲームのきほん / 🧩 考えて決める / 💻 うごかすしくみ / 🎨 絵と音 / 🛠 作る道具 / 🧪 直して仕上げる / 🏢 みんなにとどける / ⌨️ コードと作りかた(2026-09-29 に 足した)。+ 🏆 マスター
    ・レベルは 入門(あそぶ 人でも 知っている)→ 中級(作りはじめる)→ 上級(専門学校・大学で 学ぶ めやす)→ プロ(ゲーム会社の 現場の めやす)。1回は かならず 10問。どの ステージも いつも 同じ 10語 = スピード記録勝負
    ・こたえると ことばの 説明・どの 仕事の 人の ことばか・つながる ことば・しくみ図の どこに あるか(📍)が 出る。しくみ図は コードで 描く
    ⚠️⚠️ AIフリック旅行と 同じ ことばは 入れない。本当の ゲームの 題名・会社の 名前・お金の ことばは 出さない。コードの 書きかたは のせない(決まりは tools/gamedev/PROMPT.md) */
@@ -17,8 +17,8 @@ const GAMEDEV = (() => {
   /* 旅の ボタンの 色。土台が TONE[名前] を 見るので、ほかの フリックと 同じ あかるい 色に なる
      (けいくん 2026-09-28「ボタンが暗いので他のフリックのように明るくしてください」)。
      TONE に 無い 赤だけ 色で 渡す(#e0202e = 歴史・レベル2 と 同じ あかるい 赤) */
-  const TONE_OF = { game:"#e0202e", kikaku:"blue", prog:"#0a9396", art:"orange", tool:"purple", test:"green", todoke:"pink" };
-  const MODE_OF = { game:"ggame", kikaku:"gkikaku", prog:"gprog", art:"gart", tool:"gtool", test:"gtest", todoke:"gtodoke" };
+  const TONE_OF = { game:"#e0202e", kikaku:"blue", prog:"#0a9396", art:"orange", tool:"purple", test:"green", todoke:"pink", code:"#1098ad" };
+  const MODE_OF = { game:"ggame", kikaku:"gkikaku", prog:"gprog", art:"gart", tool:"gtool", test:"gtest", todoke:"gtodoke", code:"gcode" };
   const JOURNEY_OF = Object.fromEntries(Object.entries(MODE_OF).map(([j, m]) => [m, j]));
 
   /* ── ことば → 問題(土台の SPOTS と 同じ形: n 名前 / r よみ / art キー / c 小見出し / d 説明 / e 絵文字) ── */
@@ -65,10 +65,10 @@ const GAMEDEV = (() => {
     if(rest) lv.push(mix.slice(-rest - (ROUNDS - rest)).sort(easy));
     levels.gmas = lv; pools.gmas = ALL; colors.gmas = "green";
     maps.gmas = { icon:"🏆", name:"マスター", cardName:"マスター", word:"ゲームことば図鑑", thing:"ことば", unit:"語", doneWord:"出会った ことば",
-                  lvTitle:"🏆 マスター　7つの 旅を まぜて ぜんぶ",
-                  card:() => '<small>' + TOTAL + '語・' + lv.length + 'ステージ</small><small>7つの 旅を まぜて ぜんぶ</small>' };
+                  lvTitle:"🏆 マスター　" + JR.length + "つの 旅を まぜて ぜんぶ",
+                  card:() => '<small>' + TOTAL + '語・' + lv.length + 'ステージ</small><small>' + JR.length + 'つの 旅を まぜて ぜんぶ</small>' };
   }
-  const MODES_ALL = ["ggame", "gkikaku", "gprog", "gart", "gtool", "gtest", "gtodoke", "gmas"];
+  const MODES_ALL = ["ggame", "gkikaku", "gprog", "gart", "gtool", "gtest", "gtodoke", "gcode", "gmas"];
 
   /* ── きろく(人ごと。土台の recGet / recSet = つないでいない人は とじると 消える 決まりに そろえる) ──
      flick-gamedev[-p<id>] = { ことばid: [見た回数, まちがいの合計, さいごに まちがえたか(0/1), 1文字あたりの 秒, さいごに 見た 時刻(ms), はじめて 出会った 時刻(ms)] }
@@ -185,12 +185,14 @@ const GAMEDEV = (() => {
     const tag = inZukan ? "" : last && last.fresh.includes(q.art) ? '<span class="ai-tag new">🆕 はじめて 出会った</span>' : "";
     const d = discovered(), p = nodeOf(q);
     let h = '<div class="ai-info">' + tag;
-    if(q.ex) h += '<p class="ai-ex"><b>たとえば</b>' + q.exrb + '</p>';
+    // ⌨️ コードと作りかた の 旅は「たとえば」に コードの 見本(等幅の 字で、ふりがなを つけない)。「1. … → 2. …」の 手順の 見本は ふつうの 字
+    if(q.ex && q.j === "code" && !/^1\./.test(q.ex)) h += '<div class="ai-ex ai-codebox"><b>たとえば</b><pre class="ai-code">' + esc(q.ex) + '</pre></div>';
+    else if(q.ex) h += '<p class="ai-ex"><b>たとえば</b>' + q.exrb + '</p>';
     if(q.sb) h += '<p class="ai-small">🧑‍💻 どの 仕事の ことば: <b>' + esc(q.sb) + '</b></p>';
     if(q.al) h += '<p class="ai-small">読みかた: ' + [q.r].concat(q.al).map(esc).join(" / ") + '</p>';
     const rel = (q.rel || []).map(id => BY.get(id)).filter(Boolean);
     if(rel.length) h += '<p class="ai-small">🔗 つながる ことば</p><div class="ai-chips">' + rel.map(x => d.has(x.art) ? chip(x) : '<button type="button" class="ai-chip lock" data-ai-term="' + esc(x.art) + '">❔ ？？？</button>').join("") + '</div>';
-    h += '<p class="ai-small">📍 ' + esc(nodeLabel(q)) + ' に あるよ</p><div class="ai-mini">' + diagramSvg(p.key, { pin:p.node, small:true }) + '</div>';
+    // しくみ図(📍)は のせない(けいくん 2026-09-29「地図スクロールが大変になるからいらない / 10問終わったあとの説明にはのせないで」)。ホームの しくみ図は たたんで のこす
     if(q.ty === "service") h += '<p class="ai-small ai-muted">🏢 サービス・会社の 名前です。中身や 名前が 変わることが あります' + (q.asOf ? "(" + esc(q.asOf) + "時点)" : "(" + esc(D.asOf) + "時点の 説明)") + '</p>';
     else if(q.asOf) h += '<p class="ai-small ai-muted">' + esc(q.asOf) + '時点の 説明です</p>';
     return h + '</div>';
@@ -212,9 +214,9 @@ const GAMEDEV = (() => {
       '<div class="ai-btns"><button type="button" class="ai-btn" data-ai-open="zukan">📖 ゲームことば図鑑</button>' +
       '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 4択クイズ</button>' +
       '<button type="button" class="ai-btn" data-ai-open="fav">⭐ お気に入り' + (fv ? "(" + fv + ")" : "") + '</button></div>' +
-      '<div class="ai-diag"><p class="ai-dh">🗺 しくみ図 <small>覚えた ことばが 📍に なるよ。場所を おすと 中身が 出るよ</small></p><div class="ai-dtabs">' +
+      '<details class="ai-diag"><summary class="ai-dh">🗺 しくみ図を ひらく <small>覚えた ことばが 📍に なるよ。場所を おすと 中身が 出るよ</small></summary><div class="ai-dtabs">' +
       DIAGS.map(k => '<button type="button" data-ai-diag="' + k + '"' + (k === diagCur ? ' class="on"' : "") + '>' + D.diagrams[k].icon + " " + esc(D.diagrams[k].name) + '</button>').join("") +
-      '</div><div class="ai-dbox">' + diagramSvg(diagCur, { counts:countsFor(diagCur) }) + '</div><div class="ai-dlist" id="ai-dlist"></div></div>' +
+      '</div><div class="ai-dbox">' + diagramSvg(diagCur, { counts:countsFor(diagCur) }) + '</div><div class="ai-dlist" id="ai-dlist"></div></details>' +
       '<p class="ai-note">' + esc(D.note) + '</p></section>';
     // 旅マップ(ステージの 上)
     const chips = $("#kabu-chips");
@@ -226,10 +228,10 @@ const GAMEDEV = (() => {
         J.stops.map((S, i) => '<span class="ar">→</span><span class="st' + (stopDone[i] ? " done" : i === cur ? " now" : "") + '">' + S.icon + " " + esc(S.name) + (stopDone[i] ? " ✅" : i === cur ? '<em>いまここ</em>' : "") + '</span>').join("") +
         '<span class="ar">→</span><span class="st goal' + (cur < 0 ? " done" : "") + '">🏆 ' + esc(J.goal) + '</span></div>' +
         '<p class="ai-lead">' + esc(J.lead) + '。1回 10問。どの ステージも いつも 同じ 10語。タイムで 勝負しよう。</p>';
-    }else chips.innerHTML = '<p class="ai-lead">7つの 旅の ことばを ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10語。</p>';
+    }else chips.innerHTML = '<p class="ai-lead">' + JR.length + 'つの 旅の ことばを ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10語。</p>';
   }
   function lvInfo(m, i){
-    if(m === "gmas") return { name:"マスター" + (i + 1), sub:"7つの 旅から 10語", short:"マスター" + (i + 1) };
+    if(m === "gmas") return { name:"マスター" + (i + 1), sub:JR.length + "つの 旅から 10語", short:"マスター" + (i + 1) };
     const s = stageInfo[m][i], J = JBY[JOURNEY_OF[m]], S = J.stops[s.stop], L = LVN[s.dv];
     return { name:"Lv." + (i + 1) + " " + L.icon + L.name, sub:S.icon + " " + S.name + "・10語", short:"Lv." + (i + 1) };
   }
@@ -423,7 +425,7 @@ const GAMEDEV = (() => {
 .ai-btn{padding:11px 8px;border-radius:14px;border:1.5px solid #c7d2fe;background:#fff;color:#1e1b4b;font:inherit;font-weight:800;font-size:14px;cursor:pointer}
 .ai-btn:active{transform:translateY(1px)}.ai-wide{width:100%;margin-top:10px}
 .ai-diag{margin-top:14px;background:#fff;border:1px solid #e0e7ff;border-radius:16px;padding:10px}
-.ai-dh{margin:0 0 6px;font-weight:900;font-size:14px}.ai-dh small{display:block;font-weight:600;color:#64748b;font-size:11.5px}
+.ai-diag>summary{cursor:pointer;list-style:none}.ai-diag>summary::-webkit-details-marker{display:none}.ai-diag:not([open])>summary{margin:0}.ai-dh{margin:0 0 6px;font-weight:900;font-size:14px}.ai-dh small{display:block;font-weight:600;color:#64748b;font-size:11.5px}
 .ai-dtabs{display:flex;gap:6px;overflow-x:auto;margin:0 0 8px;padding-bottom:2px}
 .ai-dtabs button{flex:none;padding:6px 10px;border-radius:99px;border:1.5px solid #e2e8f0;background:#f8fafc;color:#334155;font:inherit;font-size:12px;font-weight:800}
 .ai-dtabs button.on{background:#2f9e44;border-color:#2f9e44;color:#fff}
@@ -450,6 +452,7 @@ const GAMEDEV = (() => {
 .ai-tag{display:inline-block;margin-top:4px;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px}.ai-tag.new{background:#fef3c7;color:#92400e}
 .ai-info{margin-top:8px}.ai-info .ai-tag{margin:0 0 6px}
 .ai-ex{font-size:13.5px;line-height:2;margin:6px 0;background:#f0f9ff;border-radius:10px;padding:6px 10px;color:#0c4a6e}.ai-ex b{display:inline-block;font-size:11.5px;background:#0ea5e9;color:#fff;border-radius:99px;padding:0 8px;margin-right:6px;line-height:1.8}
+.ai-codebox{line-height:1.6}.ai-code{margin:6px 0 0;padding:8px 10px;background:#0f172a;color:#e2e8f0;border-radius:8px;font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere}
 .ai-small{font-size:12.5px;font-weight:800;margin:8px 0 2px;color:#334155}.ai-muted{color:#64748b;font-weight:600}
 .ai-mini{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:4px;max-width:360px}
 .pins-msg .ai-r1{display:block}.pins-msg small{display:block;font-weight:700;color:var(--muted);font-size:13px}

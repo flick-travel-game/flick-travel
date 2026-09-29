@@ -103,7 +103,10 @@ def main():
         print("ゲーム作りの ことば OK", len(d["terms"]), "語"); return
     (ROOT / "data/gamedev.json").write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     from companies_js import rubifier
-    rub = rubifier()
+    rub0 = rubifier()
+    # 「〜の 数」「数を」など ひとつだけの「数」は かず(ふりがなの 道具は すう に しがち)。ほかの ゲームに ひびかない ように ここだけで 直す
+    KAZU = re.compile(r"(?<![一-龥>])<ruby>数<rt>すう</rt></ruby>(?![一-龥]|<ruby>)")
+    rub = lambda t: KAZU.sub("<ruby>数<rt>かず</rt></ruby>", rub0(t))
     out = []
     for t in d["terms"]:
         o = dict(id=t["id"], n=t["name"], r=t["reading"], j=t["journey"], c=t["category"], dv=t["difficulty"], ty=t["type"],

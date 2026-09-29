@@ -13977,12 +13977,13 @@ const PHOTOS = {
   "file": "File:Oxbow lake,Yamal Peninsula,Russia.JPG"
  },
  "jp-albalopho": {
-  "src": "photo-kyoryu-jp-albalopho.jpg",
-  "author": "TotalDino",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Albalophosaurus_TD.png",
-  "file": "File:Albalophosaurus TD.png"
+  "src": "photo-kyoryu-jp-albalopho-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "jp-fukuiraptor": {
   "src": "photo-kyoryu-jp-fukuiraptor.jpg",
@@ -14058,12 +14059,13 @@ const PHOTOS = {
   "file": "File:Nipponosaurus Skelton.jpg"
  },
  "jp-paraliterizino": {
-  "src": "photo-kyoryu-jp-paraliterizino.jpg",
-  "author": "Masato Hattori (masahatto2.p2.bindsite.jp)",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Paralitherizinosaurus_reconstruction.png",
-  "file": "File:Paralitherizinosaurus reconstruction.png"
+  "src": "photo-kyoryu-jp-paraliterizino-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "jp-sasayamagnomus": {
   "src": "photo-kyoryu-jp-sasayamagnomus.jpg",

@@ -14583,12 +14583,13 @@ const PHOTOS = {
   "file": "File:Mosasaurus hoffmannii - skeleton.jpg"
  },
  "de-nipponopterus": {
-  "src": "photo-kyoryu-de-nipponopterus.jpg",
-  "author": "Connor Ashbridge",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Nipponopterus_mifunensis.png",
-  "file": "File:Nipponopterus mifunensis.png"
+  "src": "photo-kyoryu-de-nipponopterus-ai1.jpg",
+  "author": "イラスト(AIで作成。けいくんが ChatGPT で 作った 絵)",
+  "license": "",
+  "licenseUrl": "",
+  "page": "",
+  "file": "",
+  "ai": true
  },
  "de-ptera": {
   "src": "photo-kyoryu-de-ptera.jpg",

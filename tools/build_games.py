@@ -140,6 +140,13 @@ GAMES = {
                    lead="肉を 食べる 恐竜・草を 食べる 恐竜・日本の 恐竜・3つの 時代・体と 化石・恐竜では ない 生きもの・調べる 人と 道具を、ひらがなで フリック入力。打つと その 恐竜の いた 時代と、見つかった 場所(世界地図の 📍)が 出るよ。だれでも 知っている 恐竜から はじめて、めざせ 恐竜博士。",
                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。「ヴ」の 入った 名前は ば行でも OK(べろきらぷとる)。恐竜の 研究は 毎年 新しく なるので、あとから 考えが 変わる ことも あるよ。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、恐竜の 名前と 時代と 場所が つながって 見えてくるよ。"),
+    # フリック英語(けいくん 2026-09-29「0はOK / A / すべておすすめで」= 名前 フリック英語・9旅・3段・打つ字 35字まで・訳は 打ち終わってから)。
+    #   英会話(eikaiwa/)が「話す・通じる」、こちらは「入試で 点を 取る」文法の 例文。例文は tools/eigo/terms-<旅>.json → eigo/terms.js(tools/eigo/terms_js.py)。
+    #   しくみは eigo/eigo.js(EIGO。tools/eigo/make_eigo_js.py が kokugo.js から 作る。英字を 打つ しくみと 🔊 は 英会話から)。絵は まだ 無い(題名は 文字)
+    "eigo": dict(name="フリック英語", modes="EIGO", kinds=set(), color="#0b7285", hero=False, logo=False,
+                 lead="不規則動詞・時制・受動態・不定詞と動名詞・分詞・関係詞・比較・仮定法・熟語を、例文を フリックで 打ち写して おぼえよう。打ち終わると 日本語訳と 文法の ポイントが 出て、🔊で 発音も 聞けるよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。",
+                 how="表示された 英語を、そのまま打ち写してね。大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。例文は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。",
+                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。iPhone は 日本語キーボードの「ABC」なら フリックで 英語が 打てるよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。"),
     # フリックプログラマー(けいくん 2026-09-29「プログラマーになれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 4つの 問いに「おすすめ」)。
     #   名前 = フリックプログラマー(中に 👷 エンジニアの 旅。フォルダ名 `code` は 変えない)。3段・言語は 少しだけ・2進数/16進数を 入れる・図を 作る。
     #   ことばは tools/code/terms-<旅>.json → code/terms.js(tools/code/terms_js.py)。しくみは code/code.js(CODEPG。gamedev.js を 写した)。
@@ -152,7 +159,7 @@ GAMES = {
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -233,6 +240,12 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/code/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "code" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="code.js?v=%s"></script>' % (ver("terms.js"), ver("code.js")))
+    if g["modes"] == "EIGO":  # 英語の コース: 国語と 同じ 形 + 英会話と 同じ 英字の 入力欄。例文は terms.js(tools/eigo/terms-*.json から)、しくみは eigo.js(make_eigo_js.py が 作る)
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/eigo/terms_js.py")], check=True); subprocess.run([_s.executable, str(ROOT / "tools/eigo/make_eigo_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "eigo" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="eigo.js?v=%s"></script>' % (ver("terms.js"), ver("eigo.js")))
+        out, n = re.subn(r'<input class="answer" id="ans" type="text" lang="ja"', '<input class="answer" id="ans" type="text" lang="en"', out); assert n == 1
+        out, n = re.subn(r'<p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>', '<p>大文字・小文字は どちらでも OK。空白や「\' , . ? !」は 打たなくて大丈夫。</p>', out); assert n == 1
     if g["modes"] == "KANGO":  # 看護の コース: 保育と 同じ 形。ことばは terms.js(tools/kango/terms-*.json から)、しくみは kango.js
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kango/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "kango" / f).read_bytes()).hexdigest()[:8]

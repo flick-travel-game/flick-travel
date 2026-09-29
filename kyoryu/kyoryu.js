@@ -182,7 +182,7 @@ const KYORYU = (() => {
   const photoOf = q => (typeof PHOTO_LIST === "object" && PHOTO_LIST[q.art]) || null;
   function photoHtml(q, cls){ const ph = photoOf(q); if(!ph) return "";
     return '<figure class="dn-ph ' + (cls || "") + '"><img src="' + esc(GAME.assets + ph.src) + '" alt="' + esc(q.n) + '" loading="lazy">' +
-      (typeof creditOf === "function" ? '<figcaption>' + creditOf(ph) + '</figcaption>' : "") + '</figure>'; }
+      (ph.ai ? '<figcaption>イラスト(AIで 作成)</figcaption>' : typeof creditOf === "function" ? '<figcaption>' + creditOf(ph) + '</figcaption>' : "") + '</figure>'; }  // AIの 絵は 「写真」と 書かない
 
   /* ── 問題の カード: ことば + ひとつ前の ことばの 意味・つながる ことば(こたえたら 出る。テンポを 止めない) ── */
   function card(q, prev){

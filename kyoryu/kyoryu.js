@@ -208,9 +208,8 @@ const KYORYU = (() => {
     if(q.al) h += '<p class="ai-small">読みかた: ' + [q.r].concat(q.al).map(esc).join(" / ") + '</p>';
     const rel = (q.rel || []).map(id => BY.get(id)).filter(Boolean);
     if(rel.length) h += '<p class="ai-small">🔗 つながる ことば</p><div class="ai-chips">' + rel.map(x => d.has(x.art) ? chip(x) : '<button type="button" class="ai-chip lock" data-ai-term="' + esc(x.art) + '">❔ ？？？</button>').join("") + '</div>';
-    if(hasPlace(q)) h += '<p class="ai-small">📍 見つかった 場所: <b>' + esc(q.pl) + '</b></p><div class="ai-mini">' + worldMap({ pin:q, small:true }) + '</div>';
+    // しくみ図・地図(📍)は 10問の あとの 説明・図鑑に のせない(けいくん 2026-09-29「地図スクロールが大変になるからいらない / 10問終わったあとの説明にはのせないで」→「すべてのフリックゲームを同じ仕様に」)。ホームの 図は たたんで のこす
     else if(q.pl) h += '<p class="ai-small">📍 場所: <b>' + esc(q.pl) + '</b></p>';
-    if(q.pe) h += '<p class="ai-small">🕰 ' + (q.kd === "word" ? "時代" : "いた 時代") + ': <b>' + esc(q.pe) + '</b></p><div class="ai-mini">' + timeline({ pin:q.pe, small:true }) + '</div>';
     return h + '</div>';
   }
 
@@ -236,9 +235,9 @@ const KYORYU = (() => {
       '<div class="ai-btns"><button type="button" class="ai-btn" data-ai-open="zukan">📖 恐竜図鑑</button>' +
       '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 4択クイズ</button>' +
       '<button type="button" class="ai-btn" data-ai-open="fav">⭐ お気に入り' + (fv ? "(" + fv + ")" : "") + '</button></div>' +
-      '<div class="ai-diag"><p class="ai-dh">🗺 恐竜の 地図と 年表 <small>出会った 恐竜が 地図の 点に なるよ。点や 時代を おすと 中身が 出るよ</small></p><div class="ai-dtabs">' +
+      '<details class="ai-diag"><summary class="ai-dh">🗺 恐竜の 地図と 年表を ひらく <small>出会った 恐竜が 地図の 点に なるよ。点や 時代を おすと 中身が 出るよ</small></summary><div class="ai-dtabs">' +
       DIAGS.map(k => '<button type="button" data-ai-diag="' + k + '"' + (k === diagCur ? ' class="on"' : "") + '>' + DIAG_NAME[k] + '</button>').join("") +
-      '</div><div class="ai-dbox">' + diagBox(diagCur) + '</div><div class="ai-dlist" id="ai-dlist"></div></div>' +
+      '</div><div class="ai-dbox">' + diagBox(diagCur) + '</div><div class="ai-dlist" id="ai-dlist"></div></details>' +
       '<p class="ai-note">' + esc(D.note) + '</p></section>';
     // 旅マップ(ステージの 上)
     const chips = $("#kabu-chips");
@@ -448,7 +447,7 @@ const KYORYU = (() => {
 .ai-btn{padding:11px 8px;border-radius:14px;border:1.5px solid #c7d2fe;background:#fff;color:#1e1b4b;font:inherit;font-weight:800;font-size:14px;cursor:pointer}
 .ai-btn:active{transform:translateY(1px)}.ai-wide{width:100%;margin-top:10px}
 .ai-diag{margin-top:14px;background:#fff;border:1px solid #e0e7ff;border-radius:16px;padding:10px}
-.ai-dh{margin:0 0 6px;font-weight:900;font-size:14px}.ai-dh small{display:block;font-weight:600;color:#64748b;font-size:11.5px}
+.ai-diag>summary{cursor:pointer;list-style:none}.ai-diag>summary::-webkit-details-marker{display:none}.ai-diag:not([open])>summary{margin:0}.ai-dh{margin:0 0 6px;font-weight:900;font-size:14px}.ai-dh small{display:block;font-weight:600;color:#64748b;font-size:11.5px}
 .ai-dtabs{display:flex;gap:6px;overflow-x:auto;margin:0 0 8px;padding-bottom:2px}
 .ai-dtabs button{flex:none;padding:6px 10px;border-radius:99px;border:1.5px solid #e2e8f0;background:#f8fafc;color:#334155;font:inherit;font-size:12px;font-weight:800}
 .ai-dtabs button.on{background:#2f9e44;border-color:#2f9e44;color:#fff}

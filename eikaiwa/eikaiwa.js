@@ -158,7 +158,7 @@ const EIKAIWA = (() => {
     h += '<small>ぜんぶで ' + fmt(k.total) + ' / ' + fmt(TOTAL) + ' 発見</small>';
     for(const T of k.earned) h += '<span class="en-earn">' + T[1] + " 称号ゲット！「" + esc(T[2]) + "」</span>";
     const td = todayWords();
-    if(td.length) h += '<span class="en-today"><b>📅 今日 覚えた ことば ' + td.length + '</b><span class="en-chips">' + td.map(q => chip(q, k.fresh.includes(q.art) ? "new" : "")).join("") + '</span></span>';
+    if(td.length) h += '<span class="en-today"><b>📅 きょう 覚えた ことば ' + td.length + '</b><span class="en-chips">' + td.map(q => chip(q, k.fresh.includes(q.art) ? "new" : "")).join("") + '</span></span>';
     return h;
   }
 

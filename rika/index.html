@@ -105,7 +105,7 @@ body.playing{overflow:hidden}
 .field .answer::selection{background:transparent}
 .typed{position:absolute;left:14px;right:14px;top:50%;transform:translateY(-50%);font-size:18px;
   white-space:nowrap;overflow:hidden;pointer-events:none;color:var(--ink)}
-.typed:empty::before{content:"ここに打つ（青い線が次の文字）";color:var(--muted)}
+.typed:empty::before{content:"ここに打つ(青い線が次の文字)";color:var(--muted)}
 .count{position:absolute;inset:0;border-radius:12px;background:var(--card);display:grid;place-items:center;font-size:72px;color:var(--red);z-index:2}
 
 /* 結果 */
@@ -459,7 +459,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <p id="how1">表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。</p>
       <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
       <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
-    <p class="about-link"><a href="https://kazutomo.app/games">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
+    <p class="about-link"><a href="https://kazutomo.app/">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
     </div>
   </section>
 
@@ -530,7 +530,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"rika", name:"フリック理科旅行", modes:["rphys", "rchem", "rbio", "rgeo"], assets:"../", logo:true, hero:true, dir:"rika/", lead:"物理・化学・生物・地学のことばを、ひらがなでどれだけ速く打てるか。小学校のことばから はじめて、中学校(高校受験)・高校(大学受験)まで。10問のトータルタイムで勝負しながら、理科の旅に出よう。", how:"表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん(小学校のことば)。先に進むほど 中学校・高校のことばになるよ。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、周期表や 理科の地図に📍が立つよ。星や宇宙は 宇宙フリック旅行、人の体や細胞は からだフリック旅行で あそべるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、理科のことばも自然と覚えられるよ。" };
+const GAME = { id:"rika", name:"フリック理科旅行", modes:["rphys", "rchem", "rbio", "rgeo"], assets:"../", logo:true, hero:true, dir:"rika/", lead:"物理・化学・生物・地学のことばを、ひらがなでどれだけ速く打てるか。小学校のことばから はじめて、中学校(高校受験)・高校(大学受験)まで。10問のトータルタイムで勝負しながら、理科の旅に出よう。", how:"表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん(小学校のことば)。先に進むほど 中学校・高校のことばになるよ。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。打ち終わると 解説が出て、周期表や 理科の地図に📍が立つよ。星や宇宙は フリック宇宙旅行、人の体や細胞は フリックからだ旅行で あそべるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、理科のことばも自然と覚えられるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
@@ -805,7 +805,7 @@ const RUBY = {
  "phyheatqty": "<ruby>物<rt>もの</rt></ruby>が<ruby>得<rt>え</rt></ruby>たり<ruby>失<rt>うしな</rt></ruby>ったりした<ruby>熱<rt>ねつ</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>。<ruby>単位<rt>たんい</rt></ruby>はジュール。<ruby>電熱<rt>でんねつ</rt></ruby><ruby>線<rt>せん</rt></ruby>で<ruby>水<rt>みず</rt></ruby>を<ruby>温<rt>あたた</rt></ruby>めるとき、<ruby>発熱量<rt>はつねつりょう</rt></ruby>は<ruby>電力<rt>でんりょく</rt></ruby>×<ruby>時間<rt>じかん</rt></ruby>で<ruby>求<rt>もと</rt></ruby>められる。",
  "phyconduct": "ふれ<ruby>合<rt>あ</rt></ruby>った<ruby>物<rt>もの</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>を、<ruby>温度<rt>おんど</rt></ruby>の<ruby>高<rt>たか</rt></ruby>い<ruby>方<rt>ほう</rt></ruby>から<ruby>低<rt>ひく</rt></ruby>い<ruby>方<rt>ほう</rt></ruby>へ<ruby>熱<rt>ねつ</rt></ruby>が<ruby>移<rt>うつ</rt></ruby>ること。<ruby>金属<rt>きんぞく</rt></ruby>は<ruby>熱<rt>ねつ</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えやすく、<ruby>空気<rt>くうき</rt></ruby>は<ruby>伝<rt>つた</rt></ruby>えにくい。",
  "phymovpulley": "<ruby>物<rt>もの</rt></ruby>といっしょに<ruby>動<rt>うご</rt></ruby>く<ruby>滑車<rt>かっしゃ</rt></ruby>。1<ruby>個<rt>こ</rt></ruby><ruby>使<rt>つか</rt></ruby>うと<ruby>引<rt>ひ</rt></ruby>く<ruby>力<rt>ちから</rt></ruby>は<ruby>半分<rt>はんぶん</rt></ruby>になるが、ひもを<ruby>引<rt>ひ</rt></ruby>くきょりは2<ruby>倍<rt>ばい</rt></ruby>になり、<ruby>仕事<rt>しごと</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>は<ruby>変<rt>か</rt></ruby>わらない。",
- "phyefficiency": "<ruby>使<rt>つか</rt></ruby>ったエネルギーのうち、<ruby>目的<rt>もくてき</rt></ruby>のエネルギーに<ruby>変<rt>か</rt></ruby>わった<ruby>割合<rt>わりあい</rt></ruby>。<ruby>残<rt>のこ</rt></ruby>りの<ruby>多<rt>おお</rt></ruby>くは<ruby>熱<rt>ねつ</rt></ruby>として<ruby>逃<rt>に</rt></ruby>げるので、<ruby>必<rt>かなら</rt></ruby>ず100％より<ruby>小<rt>ちい</rt></ruby>さい。",
+ "phyefficiency": "<ruby>使<rt>つか</rt></ruby>ったエネルギーのうち、<ruby>目的<rt>もくてき</rt></ruby>のエネルギーに<ruby>変<rt>か</rt></ruby>わった<ruby>割合<rt>わりあい</rt></ruby>。<ruby>残<rt>のこ</rt></ruby>りの<ruby>多<rt>おお</rt></ruby>くは<ruby>熱<rt>ねつ</rt></ruby>として<ruby>逃<rt>に</rt></ruby>げるので、<ruby>必<rt>かなら</rt></ruby>ず100%より<ruby>小<rt>ちい</rt></ruby>さい。",
  "phyohm": "<ruby>電熱<rt>でんねつ</rt></ruby><ruby>線<rt>せん</rt></ruby>に<ruby>流<rt>なが</rt></ruby>れる<ruby>電流<rt>でんりゅう</rt></ruby>は、かかる<ruby>電圧<rt>でんあつ</rt></ruby>に<ruby>比例<rt>ひれい</rt></ruby>するというきまり。<ruby>電圧<rt>でんあつ</rt></ruby>＝<ruby>抵抗<rt>ていこう</rt></ruby>×<ruby>電流<rt>でんりゅう</rt></ruby>の<ruby>式<rt>しき</rt></ruby>で、3つのうち2つが<ruby>分<rt>わ</rt></ruby>かれば<ruby>残<rt>のこ</rt></ruby>りが<ruby>求<rt>もと</rt></ruby>まる。",
  "phycurrent": "<ruby>電気<rt>でんき</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れ。<ruby>単位<rt>たんい</rt></ruby>はアンペア。<ruby>直列<rt>ちょくれつ</rt></ruby><ruby>回路<rt>かいろ</rt></ruby>ではどこでも<ruby>同<rt>おな</rt></ruby>じ<ruby>大<rt>おお</rt></ruby>きさで、<ruby>並列<rt>へいれつ</rt></ruby><ruby>回路<rt>かいろ</rt></ruby>では<ruby>枝分<rt>えだわ</rt></ruby>かれした<ruby>電流<rt>でんりゅう</rt></ruby>の<ruby>和<rt>わ</rt></ruby>が<ruby>全体<rt>ぜんたい</rt></ruby>と<ruby>等<rt>ひと</rt></ruby>しい。",
  "phyvoltage": "<ruby>電流<rt>でんりゅう</rt></ruby>を<ruby>流<rt>なが</rt></ruby>そうとするはたらきの<ruby>大<rt>おお</rt></ruby>きさ。<ruby>単位<rt>たんい</rt></ruby>はボルト。<ruby>並列<rt>へいれつ</rt></ruby><ruby>回路<rt>かいろ</rt></ruby>では<ruby>各<rt>かく</rt></ruby><ruby>部分<rt>ぶぶん</rt></ruby>の<ruby>電圧<rt>でんあつ</rt></ruby>が<ruby>等<rt>ひと</rt></ruby>しく、<ruby>電圧計<rt>でんあつけい</rt></ruby>は<ruby>並列<rt>へいれつ</rt></ruby>につなぐ。",
@@ -935,7 +935,7 @@ const RUBY = {
  "chmboil": "<ruby>液体<rt>えきたい</rt></ruby>の<ruby>内部<rt>ないぶ</rt></ruby>からも<ruby>気体<rt>きたい</rt></ruby>になって、あわがさかんに<ruby>出<rt>で</rt></ruby>ること。<ruby>水<rt>みず</rt></ruby>はふつう100℃で<ruby>沸騰<rt>ふっとう</rt></ruby>し、<ruby>沸騰<rt>ふっとう</rt></ruby>している<ruby>間<rt>あいだ</rt></ruby>は<ruby>温度<rt>おんど</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がらない。",
  "chmmetal": "<ruby>鉄<rt>てつ</rt></ruby>・<ruby>銅<rt>どう</rt></ruby>・アルミニウムなど。みがくと<ruby>光<rt>ひか</rt></ruby>り、<ruby>電気<rt>でんき</rt></ruby>や<ruby>熱<rt>ねつ</rt></ruby>をよく<ruby>通<rt>とお</rt></ruby>し、たたくと<ruby>広<rt>ひろ</rt></ruby>がる。<ruby>磁石<rt>じしゃく</rt></ruby>につくのは<ruby>鉄<rt>てつ</rt></ruby>などで、<ruby>全部<rt>ぜんぶ</rt></ruby>の<ruby>金属<rt>きんぞく</rt></ruby>ではない。",
  "chmsolution": "ものが<ruby>水<rt>みず</rt></ruby>に<ruby>溶<rt>と</rt></ruby>けた<ruby>液<rt>えき</rt></ruby>。<ruby>透明<rt>とうめい</rt></ruby>で、<ruby>溶<rt>と</rt></ruby>けたものは<ruby>液<rt>えき</rt></ruby><ruby>全体<rt>ぜんたい</rt></ruby>に<ruby>均一<rt>きんいつ</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>がり、<ruby>時間<rt>じかん</rt></ruby>がたっても<ruby>沈<rt>しず</rt></ruby>まない。<ruby>色<rt>いろ</rt></ruby>がついていても<ruby>透明<rt>とうめい</rt></ruby>なら<ruby>水溶液<rt>すいようえき</rt></ruby>。",
- "chmacidic": "<ruby>青色<rt>あおいろ</rt></ruby>リトマス<ruby>紙<rt>し</rt></ruby>を<ruby>赤<rt>あか</rt></ruby>く<ruby>変<rt>か</rt></ruby>える<ruby>性質<rt>せいしつ</rt></ruby>。<ruby>塩酸<rt>えんさん</rt></ruby>や<ruby>炭酸水<rt>たんさんすい</rt></ruby>、レモン<ruby>汁<rt>しる</rt></ruby>などが<ruby>酸性<rt>さんせい</rt></ruby>。<ruby>中学<rt>ちゅうがく</rt></ruby>ではpHが7より<ruby>小<rt>ちい</rt></ruby>さいことと<ruby>習<rt>なら</rt></ruby>う。",
+ "chmacidic": "<ruby>青色<rt>あおいろ</rt></ruby>リトマス<ruby>紙<rt>し</rt></ruby>を<ruby>赤<rt>あか</rt></ruby>く<ruby>変<rt>か</rt></ruby>える<ruby>性質<rt>せいしつ</rt></ruby>。<ruby>塩酸<rt>えんさん</rt></ruby>や<ruby>炭酸水<rt>たんさんすい</rt></ruby>、レモン<ruby>汁<rt>しる</rt></ruby>などが<ruby>酸性<rt>さんせい</rt></ruby>。<ruby>中学<rt>ちゅうがく</rt></ruby>ではpHが7より<ruby>小<rt>ちい</rt></ruby>さいと<ruby>習<rt>なら</rt></ruby>う。",
  "chmalkaline": "<ruby>赤色<rt>せきしょく</rt></ruby>リトマス<ruby>紙<rt>し</rt></ruby>を<ruby>青<rt>あお</rt></ruby>く<ruby>変<rt>か</rt></ruby>える<ruby>性質<rt>せいしつ</rt></ruby>。<ruby>石灰水<rt>せっかいすい</rt></ruby>や<ruby>水酸化<rt>すいさんか</rt></ruby>ナトリウム<ruby>水溶液<rt>すいようえき</rt></ruby>、<ruby>アンモニア水<rt>あんもにあすい</rt></ruby>などが<ruby>アルカリ性<rt>あるかりせい</rt></ruby>。pHは7より<ruby>大<rt>おお</rt></ruby>きい。",
  "chmneutral": "<ruby>酸性<rt>さんせい</rt></ruby>でも<ruby>アルカリ性<rt>あるかりせい</rt></ruby>でもない<ruby>性質<rt>せいしつ</rt></ruby>。<ruby>食塩水<rt>しょくえんすい</rt></ruby>や<ruby>砂糖水<rt>さとうみず</rt></ruby>が<ruby>中性<rt>ちゅうせい</rt></ruby>で、どちらの<ruby>色<rt>いろ</rt></ruby>のリトマス<ruby>紙<rt>し</rt></ruby>も<ruby>色<rt>いろ</rt></ruby>が<ruby>変<rt>か</rt></ruby>わらない。pHは7。",
  "chmlitmus": "<ruby>水溶液<rt>すいようえき</rt></ruby>の<ruby>性質<rt>せいしつ</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる<ruby>紙<rt>かみ</rt></ruby>。<ruby>酸性<rt>さんせい</rt></ruby>は<ruby>青<rt>あお</rt></ruby>→<ruby>赤<rt>あか</rt></ruby>、<ruby>アルカリ性<rt>あるかりせい</rt></ruby>は<ruby>赤<rt>あか</rt></ruby>→<ruby>青<rt>あお</rt></ruby>に<ruby>変<rt>か</rt></ruby>わる。<ruby>液<rt>えき</rt></ruby>はガラス<ruby>棒<rt>ぼう</rt></ruby>でつけ、<ruby>指<rt>ゆび</rt></ruby>で<ruby>直接<rt>ちょくせつ</rt></ruby>さわらない。",
@@ -1461,7 +1461,7 @@ SPOTS.push(
   {n:"熱量", c:"エネルギー", r:"ねつりょう", art:"phyheatqty", k:"rika", e:"🔥", mp:"phys", z:"energy", g:"j", w:"熱量", d:"物が得たり失ったりした熱の量。単位はジュール。電熱線で水を温めるとき、発熱量は電力×時間で求められる。"},
   {n:"熱伝導", c:"エネルギー", r:"ねつでんどう", art:"phyconduct", k:"rika", e:"🍳", mp:"phys", z:"energy", g:"j", w:"熱伝導", d:"ふれ合った物の間を、温度の高い方から低い方へ熱が移ること。金属は熱を伝えやすく、空気は伝えにくい。"},
   {n:"動滑車", c:"エネルギー", r:"どうかっしゃ", art:"phymovpulley", k:"rika", e:"🪝", mp:"phys", z:"energy", g:"j", w:"滑車", d:"物といっしょに動く滑車。1個使うと引く力は半分になるが、ひもを引くきょりは2倍になり、仕事の量は変わらない。"},
-  {n:"エネルギー変換効率", c:"エネルギー", r:"えねるぎーへんかんこうりつ", art:"phyefficiency", k:"rika", e:"♻️", mp:"phys", z:"energy", g:"j", w:"エネルギー変換効率", d:"使ったエネルギーのうち、目的のエネルギーに変わった割合。残りの多くは熱として逃げるので、必ず100％より小さい。"},
+  {n:"エネルギー変換効率", c:"エネルギー", r:"えねるぎーへんかんこうりつ", art:"phyefficiency", k:"rika", e:"♻️", mp:"phys", z:"energy", g:"j", w:"エネルギー変換効率", d:"使ったエネルギーのうち、目的のエネルギーに変わった割合。残りの多くは熱として逃げるので、必ず100%より小さい。"},
   {n:"オームの法則", c:"電気", r:"おーむのほうそく", art:"phyohm", k:"rika", e:"Ω", mp:"phys", z:"elec", g:"j", w:"オームの法則", d:"電熱線に流れる電流は、かかる電圧に比例するというきまり。電圧＝抵抗×電流の式で、3つのうち2つが分かれば残りが求まる。"},
   {n:"電流", c:"電気", r:"でんりゅう", art:"phycurrent", k:"rika", e:"➰", mp:"phys", z:"elec", g:"j", w:"電流", d:"電気の流れ。単位はアンペア。直列回路ではどこでも同じ大きさで、並列回路では枝分かれした電流の和が全体と等しい。"},
   {n:"電圧", c:"電気", r:"でんあつ", art:"phyvoltage", k:"rika", e:"🔋", mp:"phys", z:"elec", g:"j", w:"電圧", d:"電流を流そうとするはたらきの大きさ。単位はボルト。並列回路では各部分の電圧が等しく、電圧計は並列につなぐ。"},
@@ -1591,7 +1591,7 @@ SPOTS.push(
   {n:"沸騰", c:"状態変化", r:"ふっとう", art:"chmboil", k:"rika", e:"🫖", mp:"chem", z:"matter", g:"e", w:"沸騰", d:"液体の内部からも気体になって、あわがさかんに出ること。水はふつう100℃で沸騰し、沸騰している間は温度が上がらない。"},
   {n:"金属", c:"物質の性質", r:"きんぞく", art:"chmmetal", k:"rika", e:"🔩", mp:"chem", z:"matter", g:"e", w:"金属", d:"鉄・銅・アルミニウムなど。みがくと光り、電気や熱をよく通し、たたくと広がる。磁石につくのは鉄などで、全部の金属ではない。"},
   {n:"水溶液", c:"水溶液", r:"すいようえき", art:"chmsolution", k:"rika", e:"🧪", mp:"chem", z:"sol", g:"e", w:"水溶液", d:"ものが水に溶けた液。透明で、溶けたものは液全体に均一に広がり、時間がたっても沈まない。色がついていても透明なら水溶液。"},
-  {n:"酸性", c:"酸・アルカリ", r:"さんせい", art:"chmacidic", k:"rika", e:"🍋", mp:"chem", z:"sol", g:"e", w:"酸性", d:"青色リトマス紙を赤く変える性質。塩酸や炭酸水、レモン汁などが酸性。中学ではpHが7より小さいことと習う。"},
+  {n:"酸性", c:"酸・アルカリ", r:"さんせい", art:"chmacidic", k:"rika", e:"🍋", mp:"chem", z:"sol", g:"e", w:"酸性", d:"青色リトマス紙を赤く変える性質。塩酸や炭酸水、レモン汁などが酸性。中学ではpHが7より小さいと習う。"},
   {n:"アルカリ性", c:"酸・アルカリ", r:"あるかりせい", art:"chmalkaline", k:"rika", e:"🧼", mp:"chem", z:"sol", g:"e", w:"アルカリ性", d:"赤色リトマス紙を青く変える性質。石灰水や水酸化ナトリウム水溶液、アンモニア水などがアルカリ性。pHは7より大きい。"},
   {n:"中性", c:"酸・アルカリ", r:"ちゅうせい", art:"chmneutral", k:"rika", e:"⚖️", mp:"chem", z:"sol", g:"e", w:"中性 (化学)", d:"酸性でもアルカリ性でもない性質。食塩水や砂糖水が中性で、どちらの色のリトマス紙も色が変わらない。pHは7。"},
   {n:"リトマス紙", c:"酸・アルカリ", r:"りとますし", art:"chmlitmus", k:"rika", e:"📄", mp:"chem", z:"sol", g:"e", w:"リトマス試験紙", d:"水溶液の性質を調べる紙。酸性は青→赤、アルカリ性は赤→青に変わる。液はガラス棒でつけ、指で直接さわらない。"},
@@ -2162,7 +2162,9 @@ const PERIODS = [["today","きょう"],["week","今週"],["all","いままで"]]
    ⚠️ もう 端末に きろくが ある人(localStorage に flick-best- / flick-hist が ある人)は そのまま localStorage(消さない・うつさない)
    ⚠️ 子どもが 見る 字には お金の ことばを 書かない */
 const LINK_KEY = "flick-link", PLAN_TTL = 10 * 60 * 1000;
-const LINK_URL = "https://kazutomo.app/flick-link" + (["rekishi","uchu","karada","kabu","ai"].includes(GAME.id) ? "?to=" + GAME.id : "");
+/* ⚠️ 2026-09-29 まで 5つの ゲームしか ?to= を 付けておらず、ほかの ゲームから つなぐと 世界旅行に もどってきていた(バグ)。
+   いまは 世界旅行いがい ぜんぶ 付ける。受ける 側(speed-king の FLICK_LINK_TARGETS)に 無い id は 向こうが 世界旅行に 落とすだけなので こわれない */
+const LINK_URL = "https://kazutomo.app/flick-link" + (GAME.id && GAME.id !== "world" ? "?to=" + GAME.id : "");
 let PLAN = null, recMemo = null;
 function linkToken(){ return store(LINK_KEY) || ""; }
 function authHeaders(){ const t = linkToken(); return t ? { Authorization: "Bearer " + t } : {}; }
@@ -2968,7 +2970,7 @@ function growthHtml(g, m, lv){
     '<dl class="gl"><div><dt>はじめ</dt><dd>' + fmtT(g.firstMs) + '</dd></div><div><dt>いま</dt><dd class="ink">' + fmtT(g.lastMs) + '</dd></div></dl>' +
     '<p class="gg">' + (gain > 0 ? '<span class="ink">🎉 ' + fmtT(gain) + ' 速くなった！</span>' : '<span class="no">つづけると 速くなるよ</span>') + '</p>' +
     '<p class="gn">' + g.plays + '回 あそんだ ・ ベスト ' + fmtT(g.bestMs) + '</p>' +
-    (g.plays > n ? '<p class="gn">（グラフは さいきんの ' + n + '回）</p>' : '') + '</div>';
+    (g.plays > n ? '<p class="gn">(グラフは さいきんの ' + n + '回)</p>' : '') + '</div>';
 }
 /* トップの「きろく」(ランキング と のび)。いまの旅で あそんだ レベルの ふだを ならべ、えらんだ レベルの ぶんを 出す */
 let recLv = null, recMode = null;

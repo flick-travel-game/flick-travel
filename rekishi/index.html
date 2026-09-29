@@ -105,7 +105,7 @@ body.playing{overflow:hidden}
 .field .answer::selection{background:transparent}
 .typed{position:absolute;left:14px;right:14px;top:50%;transform:translateY(-50%);font-size:18px;
   white-space:nowrap;overflow:hidden;pointer-events:none;color:var(--ink)}
-.typed:empty::before{content:"ここに打つ（青い線が次の文字）";color:var(--muted)}
+.typed:empty::before{content:"ここに打つ(青い線が次の文字)";color:var(--muted)}
 .count{position:absolute;inset:0;border-radius:12px;background:var(--card);display:grid;place-items:center;font-size:72px;color:var(--red);z-index:2}
 
 /* 結果 */
@@ -459,7 +459,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <p id="how1">表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。</p>
       <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
       <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
-    <p class="about-link"><a href="https://kazutomo.app/games">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
+    <p class="about-link"><a href="https://kazutomo.app/">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
     </div>
   </section>
 
@@ -1126,7 +1126,7 @@ const RUBY = {
  "buddha|sd": "<ruby>人<rt>ひと</rt></ruby>にたよるのではなく、<ruby>自分自身<rt>じぶんじしん</rt></ruby>をよりどころにして<ruby>生<rt>い</rt></ruby>きなさい、という<ruby>最後<rt>さいご</rt></ruby>の<ruby>教<rt>おし</rt></ruby>え。「<ruby>自<rt>じ</rt></ruby><ruby>灯明<rt>とうみょう</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ばれる。",
  "alexander": "20<ruby>歳<rt>さい</rt></ruby>で<ruby>王<rt>おう</rt></ruby>になり、ギリシャからインドまでの<ruby>大<rt>だい</rt></ruby><ruby>帝国<rt>ていこく</rt></ruby>を<ruby>築<rt>きず</rt></ruby>いた。<ruby>東<rt>ひがし</rt></ruby>と<ruby>西<rt>にし</rt></ruby>の<ruby>文化<rt>ぶんか</rt></ruby>が<ruby>混<rt>ま</rt></ruby>ざるきっかけを<ruby>作<rt>つく</rt></ruby>った。",
  "alexander|s": "<ruby>挑戦<rt>ちょうせん</rt></ruby>する<ruby>者<rt>もの</rt></ruby>にとって、<ruby>不可能<rt>ふかのう</rt></ruby>なことは<ruby>何<rt>なに</rt></ruby>もない。",
- "alexander|sd": "やってみようと<ruby>決<rt>き</rt></ruby>めた<ruby>人<rt>ひと</rt></ruby>には、できないことはない、という<ruby>意味<rt>いみ</rt></ruby>。33<ruby>歳<rt>さい</rt></ruby>で<ruby>亡<rt>な</rt></ruby>くなるまで<ruby>世界<rt>せかい</rt></ruby>の<ruby>果<rt>は</rt></ruby>てをめざした<ruby>王<rt>おう</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>。",
+ "alexander|sd": "やってみようと<ruby>決<rt>き</rt></ruby>めた<ruby>人<rt>ひと</rt></ruby>には、できないことはない、という<ruby>意味<rt>いみ</rt></ruby>。32<ruby>歳<rt>さい</rt></ruby>で<ruby>亡<rt>な</rt></ruby>くなるまで<ruby>世界<rt>せかい</rt></ruby>の<ruby>果<rt>は</rt></ruby>てをめざした<ruby>王<rt>おう</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>。",
  "caesar": "<ruby>古代<rt>こだい</rt></ruby>ローマの<ruby>将軍<rt>しょうぐん</rt></ruby>・<ruby>政治家<rt>せいじか</rt></ruby>。ガリア(<ruby>今<rt>いま</rt></ruby>のフランス)を<ruby>征服<rt>せいふく</rt></ruby>し、ローマの<ruby>実権<rt>じっけん</rt></ruby>をにぎった。「シーザー」とも<ruby>呼<rt>よ</rt></ruby>ばれる。",
  "caesar|s": "<ruby>賽<rt>さい</rt></ruby>は<ruby>投<rt>な</rt></ruby>げられた。",
  "caesar|sd": "もう<ruby>後<rt>あと</rt></ruby>もどりはできない、という<ruby>意味<rt>いみ</rt></ruby>。ルビコン<ruby>川<rt>がわ</rt></ruby>をわたってローマに<ruby>攻<rt>せ</rt></ruby>めこむと<ruby>決<rt>き</rt></ruby>めたときの<ruby>言葉<rt>ことば</rt></ruby>。サイコロを<ruby>投<rt>な</rt></ruby>げたら<ruby>結果<rt>けっか</rt></ruby>を<ruby>待<rt>ま</rt></ruby>つしかない。",
@@ -1172,7 +1172,7 @@ const RUBY = {
  "tesla": "<ruby>交流<rt>こうりゅう</rt></ruby>の<ruby>電気<rt>でんき</rt></ruby>や<ruby>無線<rt>むせん</rt></ruby>の<ruby>技術<rt>ぎじゅつ</rt></ruby>を<ruby>作<rt>つく</rt></ruby>った<ruby>発明家<rt>はつめいか</rt></ruby>。<ruby>今<rt>いま</rt></ruby>の<ruby>電気<rt>でんき</rt></ruby>の<ruby>送<rt>おく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>は、テスラの<ruby>仕組<rt>しく</rt></ruby>みがもとになっている。",
  "tesla|s": "<ruby>現在<rt>げんざい</rt></ruby>は<ruby>彼<rt>かれ</rt></ruby>らのものだが、<ruby>未来<rt>みらい</rt></ruby>は<ruby>私<rt>わたくし</rt></ruby>のものだ。",
  "tesla|sd": "<ruby>今<rt>いま</rt></ruby>は<ruby>認<rt>みと</rt></ruby>められなくても、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>研究<rt>けんきゅう</rt></ruby>はいつか<ruby>世界<rt>せかい</rt></ruby>を<ruby>変<rt>か</rt></ruby>える、という<ruby>強<rt>つよ</rt></ruby>い<ruby>自信<rt>じしん</rt></ruby>。<ruby>実際<rt>じっさい</rt></ruby>に<ruby>電気<rt>でんき</rt></ruby>の<ruby>未来<rt>みらい</rt></ruby>はテスラの<ruby>方式<rt>ほうしき</rt></ruby>になった。",
- "ruth": "メジャーリーグで714<ruby>本<rt>ぽん</rt></ruby>のホームランを<ruby>打<rt>う</rt></ruby>った<ruby>野球<rt>やきゅう</rt></ruby>の<ruby>伝説<rt>でんせつ</rt></ruby>。「<ruby>野球<rt>やきゅう</rt></ruby>の<ruby>神<rt>かみ</rt></ruby><ruby>様<rt>さま</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ばれる。",
+ "ruth": "メジャーリーグで714<ruby>本<rt>ほん</rt></ruby>のホームランを<ruby>打<rt>う</rt></ruby>った<ruby>野球<rt>やきゅう</rt></ruby>の<ruby>伝説<rt>でんせつ</rt></ruby>。「<ruby>野球<rt>やきゅう</rt></ruby>の<ruby>神<rt>かみ</rt></ruby><ruby>様<rt>さま</rt></ruby>」と<ruby>呼<rt>よ</rt></ruby>ばれる。",
  "ruth|s": "<ruby>三振<rt>さんしん</rt></ruby>をこわがって、バットをふらないでいてはいけない。",
  "ruth|sd": "<ruby>失敗<rt>しっぱい</rt></ruby>をおそれて<ruby>何<rt>なに</rt></ruby>もしないのがいちばんもったいない、という<ruby>意味<rt>いみ</rt></ruby>。ホームラン<ruby>王<rt>おう</rt></ruby>は<ruby>三振<rt>さんしん</rt></ruby>の<ruby>数<rt>かず</rt></ruby>も<ruby>多<rt>おお</rt></ruby>かった。",
  "pele": "17<ruby>歳<rt>さい</rt></ruby>でワールドカップに<ruby>優勝<rt>ゆうしょう</rt></ruby>し、<ruby>生涯<rt>しょうがい</rt></ruby>に1000<ruby>点<rt>てん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>をとったサッカーの<ruby>王様<rt>おうさま</rt></ruby>。ワールドカップ<ruby>優勝<rt>ゆうしょう</rt></ruby>3<ruby>回<rt>かい</rt></ruby>はペレだけ。",
@@ -1358,7 +1358,7 @@ const RUBY = {
  "evmilan": "<ruby>皇帝<rt>こうてい</rt></ruby>コンスタンティヌスが <ruby>キリスト教<rt>きりすときょう</rt></ruby>を<ruby>公認<rt>こうにん</rt></ruby>した<ruby>命令<rt>めいれい</rt></ruby>。<ruby>長<rt>なが</rt></ruby>い<ruby>迫害<rt>はくがい</rt></ruby>が<ruby>終<rt>お</rt></ruby>わり、<ruby>キリスト教<rt>きりすときょう</rt></ruby>は ローマ<ruby>帝国<rt>ていこく</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で <ruby>一気<rt>いっき</rt></ruby>に<ruby>広<rt>ひろ</rt></ruby>まっていった。",
  "evgermanic": "アジアのフン<ruby>人<rt>じん</rt></ruby>におされたゲルマン<ruby>人<rt>じん</rt></ruby>が ローマ<ruby>帝国<rt>ていこく</rt></ruby>の<ruby>中<rt>なか</rt></ruby>へ<ruby>大<rt>だい</rt></ruby><ruby>移動<rt>いどう</rt></ruby>をはじめた。これがきっかけで <ruby>西<rt>にし</rt></ruby>ローマ<ruby>帝国<rt>ていこく</rt></ruby>はおとろえ、476<ruby>年<rt>ねん</rt></ruby>に<ruby>滅<rt>ほろ</rt></ruby>びた。",
  "evwestrome": "ゲルマン<ruby>人<rt>じん</rt></ruby>の<ruby>傭兵<rt>ようへい</rt></ruby><ruby>隊長<rt>たいちょう</rt></ruby>オドアケルが <ruby>皇帝<rt>こうてい</rt></ruby>を<ruby>退位<rt>たいい</rt></ruby>させ、<ruby>西<rt>にし</rt></ruby>ローマ<ruby>帝国<rt>ていこく</rt></ruby>が<ruby>滅<rt>ほろ</rt></ruby>んだ。ここから ヨーロッパの<ruby>中世<rt>ちゅうせい</rt></ruby>が はじまるとされる。",
- "evsui": "<ruby>中国<rt>ちゅうごく</rt></ruby>を<ruby>再<rt>ふたた</rt></ruby>び<ruby>統一<rt>とういつ</rt></ruby>した<ruby>隋<rt>ずい</rt></ruby>が、<ruby>南北<rt>なんぼく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ<ruby>大<rt>だい</rt></ruby><ruby>運河<rt>うんが</rt></ruby>をつくった。<ruby>米<rt>こめ</rt></ruby>の<ruby>運搬<rt>うんぱん</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>ったが、<ruby>工事<rt>こうじ</rt></ruby>の<ruby>負担<rt>ふたん</rt></ruby>が<ruby>重<rt>おも</rt></ruby>く <ruby>隋<rt>ずい</rt></ruby>は30<ruby>年<rt>ねん</rt></ruby>ほどで<ruby>滅<rt>ほろ</rt></ruby>んだ。",
+ "evsui": "<ruby>中国<rt>ちゅうごく</rt></ruby>を<ruby>再<rt>ふたた</rt></ruby>び<ruby>統一<rt>とういつ</rt></ruby>した<ruby>隋<rt>ずい</rt></ruby>が、<ruby>南北<rt>なんぼく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ<ruby>大<rt>だい</rt></ruby><ruby>運河<rt>うんが</rt></ruby>をつくった。<ruby>米<rt>こめ</rt></ruby>の<ruby>運搬<rt>うんぱん</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>ったが、<ruby>工事<rt>こうじ</rt></ruby>の<ruby>負担<rt>ふたん</rt></ruby>が<ruby>重<rt>おも</rt></ruby>く <ruby>隋<rt>ずい</rt></ruby>は40<ruby>年<rt>ねん</rt></ruby>ほどで<ruby>滅<rt>ほろ</rt></ruby>んだ。",
  "evtang": "<ruby>李淵<rt>りえん</rt></ruby>が<ruby>建<rt>た</rt></ruby>てた<ruby>王朝<rt>おうちょう</rt></ruby>。<ruby>都<rt>みやこ</rt></ruby>の<ruby>長安<rt>ちょうあん</rt></ruby>は <ruby>人口<rt>じんこう</rt></ruby>100<ruby>万<rt>まん</rt></ruby>の<ruby>国際都市<rt>こくさいとし</rt></ruby>となり、<ruby>日本<rt>にほん</rt></ruby>も<ruby>遣唐使<rt>けんとうし</rt></ruby>を<ruby>送<rt>おく</rt></ruby>って <ruby>制度<rt>せいど</rt></ruby>や<ruby>文化<rt>ぶんか</rt></ruby>を<ruby>学<rt>まな</rt></ruby>んだ。",
  "evislam": "ムハンマドが メッカで<ruby>神<rt>かみ</rt></ruby>(アッラー)の<ruby>教<rt>おし</rt></ruby>えを<ruby>説<rt>と</rt></ruby>き、<ruby>イスラム教<rt>いすらむきょう</rt></ruby>がはじまった。<ruby>聖典<rt>せいてん</rt></ruby>は「コーラン」。メッカの<ruby>カーバ神殿<rt>かーばしんでん</rt></ruby>に<ruby>向<rt>む</rt></ruby>かって<ruby>祈<rt>いの</rt></ruby>る。",
  "evtours": "フランク<ruby>王国<rt>おうこく</rt></ruby>が、イベリア<ruby>半島<rt>はんとう</rt></ruby>から<ruby>北上<rt>ほくじょう</rt></ruby>してきたイスラム<ruby>軍<rt>ぐん</rt></ruby>を<ruby>食い止<rt>くいと</rt></ruby>めた<ruby>戦<rt>たたか</rt></ruby>い。<ruby>西ヨーロッパ<rt>にしよーろっぱ</rt></ruby>が<ruby>キリスト教<rt>きりすときょう</rt></ruby><ruby>世界<rt>せかい</rt></ruby>として<ruby>守<rt>まも</rt></ruby>られた。",
@@ -1741,8 +1741,8 @@ SPOTS.push(
   {n:"アリストテレス", c:"ギリシャ・前384〜前322", r:"ありすとてれす", art:"aristotle", k:"person", s:"人間は、社会的な動物である。", sd:"人はひとりでは生きられず、仲間と社会を作って生きる生き物だ、という意味。", b:"スタゲイラ(ギリシャ)", y0:-384, y1:-322, d:"プラトンの弟子で、アレクサンドロス大王の先生。生き物・政治・論理など、あらゆる学問のもとを作り「万学の祖」と呼ばれる。"},
   {n:"孔子", c:"中国・前551〜前479", r:"こうし", art:"confucius", k:"person", s:"己の欲せざるところ、人に施すことなかれ。", sd:"自分がされていやなことは、人にもしてはいけない、という教え。「論語」の中でもいちばん有名な言葉の一つ。", b:"曲阜(中国)", y0:-552, y1:-479, f:1, d:"中国の思想家で、儒教のもとを作った。弟子たちが言葉を集めた「論語」は、日本でも長く読まれてきた。"},
   {n:"老子", c:"中国・前6世紀ごろ", r:"ろうし", art:"laozi", k:"person", s:"千里の道も一歩から。", sd:"どんなに遠い道のりも、最初の一歩から始まる。大きな目標も、まず目の前の小さなことから始めよう、という意味。", b:"鹿邑(中国)", y0:-604, y1:-500, f:1, d:"中国の思想家で、道教のもとになった「老子」を書いたとされる。無理をせず自然のままに生きることを説いた。"},
-  {n:"ブッダ（釈迦）", c:"ネパール・前5世紀ごろ", r:"ぶっだ", art:"buddha", k:"person", s:"自らを灯火とせよ。", sd:"人にたよるのではなく、自分自身をよりどころにして生きなさい、という最後の教え。「自灯明」と呼ばれる。", b:"ルンビニ(ネパール)", y0:-563, y1:-483, f:1, d:"仏教を開いた人。王子として生まれたが、苦しみの原因を知るために出家し、さとりを開いた。"},
-  {n:"アレクサンドロス大王", c:"マケドニア・前356〜前323", r:"あれくさんどろすたいおう", art:"alexander", k:"person", s:"挑戦する者にとって、不可能なことは何もない。", sd:"やってみようと決めた人には、できないことはない、という意味。33歳で亡くなるまで世界の果てをめざした王の言葉。", b:"ペラ(ギリシャ)", y0:-356, y1:-323, d:"20歳で王になり、ギリシャからインドまでの大帝国を築いた。東と西の文化が混ざるきっかけを作った。"},
+  {n:"ブッダ(釈迦)", c:"ネパール・前5世紀ごろ", r:"ぶっだ", art:"buddha", k:"person", s:"自らを灯火とせよ。", sd:"人にたよるのではなく、自分自身をよりどころにして生きなさい、という最後の教え。「自灯明」と呼ばれる。", b:"ルンビニ(ネパール)", y0:-563, y1:-483, f:1, d:"仏教を開いた人。王子として生まれたが、苦しみの原因を知るために出家し、さとりを開いた。"},
+  {n:"アレクサンドロス大王", c:"マケドニア・前356〜前323", r:"あれくさんどろすたいおう", art:"alexander", k:"person", s:"挑戦する者にとって、不可能なことは何もない。", sd:"やってみようと決めた人には、できないことはない、という意味。32歳で亡くなるまで世界の果てをめざした王の言葉。", b:"ペラ(ギリシャ)", y0:-356, y1:-323, d:"20歳で王になり、ギリシャからインドまでの大帝国を築いた。東と西の文化が混ざるきっかけを作った。"},
   {n:"カエサル", c:"ローマ・前100〜前44", r:"かえさる", art:"caesar", k:"person", s:"賽は投げられた。", sd:"もう後もどりはできない、という意味。ルビコン川をわたってローマに攻めこむと決めたときの言葉。サイコロを投げたら結果を待つしかない。", b:"ローマ(イタリア)", y0:-100, y1:-44, f:1, d:"古代ローマの将軍・政治家。ガリア(今のフランス)を征服し、ローマの実権をにぎった。「シーザー」とも呼ばれる。"},
   {n:"マルコ・ポーロ", c:"イタリア・1254〜1324", r:"まるこぽーろ", art:"marcopolo", k:"person", s:"私は、見たことの半分も語っていない。", sd:"亡くなる前に言ったと伝えられる言葉。本に書いた以上に、旅で見たものはすばらしかった、という意味。", b:"ベネチア(イタリア)", y0:1254, y1:1324, d:"中国(元)まで旅をして「東方見聞録」を書いた商人。日本を「黄金の国ジパング」としてヨーロッパに伝えた。"},
   {n:"ミケランジェロ", c:"イタリア・1475〜1564", r:"みけらんじぇろ", art:"michelangelo", k:"person", s:"私は大理石の中に天使を見た。そして、天使が自由になるまで彫った。", sd:"作品はゼロから作るのではなく、石の中にもうある形を取り出すだけだ、という考え。ものの中に隠れた良さを見つける目を表す。", b:"カプレーゼ(イタリア)", y0:1475, y1:1564, d:"「ダビデ像」やシスティーナ礼拝堂の天井画を作った彫刻家・画家。ルネサンスを代表する芸術家。"},
@@ -1834,7 +1834,7 @@ SPOTS.push(
   {n:"ミラノ勅令", c:"313年・ローマ帝国", r:"みらのちょくれい", art:"evmilan", k:"event", e:"⛪", m:"ミラノ大聖堂", d:"皇帝コンスタンティヌスが キリスト教を公認した命令。長い迫害が終わり、キリスト教は ローマ帝国の中で 一気に広まっていった。"},
   {n:"ゲルマン民族の大移動", c:"375年〜・ヨーロッパ", r:"げるまんみんぞくのだいいどう", art:"evgermanic", k:"event", e:"🌍", m:"ラヴェンナ イタリア", d:"アジアのフン人におされたゲルマン人が ローマ帝国の中へ大移動をはじめた。これがきっかけで 西ローマ帝国はおとろえ、476年に滅びた。"},
   {n:"西ローマ帝国の滅亡", c:"476年・イタリア", r:"にしろーまていこくのめつぼう", art:"evwestrome", k:"event", e:"🏛️", m:"ラヴェンナ サン・ヴィターレ聖堂", d:"ゲルマン人の傭兵隊長オドアケルが 皇帝を退位させ、西ローマ帝国が滅んだ。ここから ヨーロッパの中世が はじまるとされる。"},
-  {n:"隋の大運河", c:"605年〜・中国", r:"ずいのだいうんが", art:"evsui", k:"event", e:"🚢", m:"杭州 京杭大運河", d:"中国を再び統一した隋が、南北を結ぶ大運河をつくった。米の運搬に役立ったが、工事の負担が重く 隋は30年ほどで滅んだ。"},
+  {n:"隋の大運河", c:"605年〜・中国", r:"ずいのだいうんが", art:"evsui", k:"event", e:"🚢", m:"杭州 京杭大運河", d:"中国を再び統一した隋が、南北を結ぶ大運河をつくった。米の運搬に役立ったが、工事の負担が重く 隋は40年ほどで滅んだ。"},
   {n:"唐の成立", c:"618年・中国", r:"とうのせいりつ", art:"evtang", k:"event", e:"👑", m:"大雁塔 西安", f:1, d:"李淵が建てた王朝。都の長安は 人口100万の国際都市となり、日本も遣唐使を送って 制度や文化を学んだ。"},
   {n:"イスラム教の成立", c:"610年ごろ・アラビア半島", r:"いすらむきょうのせいりつ", art:"evislam", k:"event", e:"🌙", m:"メッカ カーバ神殿", f:1, d:"ムハンマドが メッカで神(アッラー)の教えを説き、イスラム教がはじまった。聖典は「コーラン」。メッカのカーバ神殿に向かって祈る。"},
   {n:"トゥール・ポワティエ間の戦い", c:"732年・フランス", r:"とぅーるぽわてぃえかんのたたかい", art:"evtours", k:"event", e:"⚔️", m:"ポワティエ フランス", d:"フランク王国が、イベリア半島から北上してきたイスラム軍を食い止めた戦い。西ヨーロッパがキリスト教世界として守られた。"},
@@ -2202,7 +2202,9 @@ const PERIODS = [["today","きょう"],["week","今週"],["all","いままで"]]
    ⚠️ もう 端末に きろくが ある人(localStorage に flick-best- / flick-hist が ある人)は そのまま localStorage(消さない・うつさない)
    ⚠️ 子どもが 見る 字には お金の ことばを 書かない */
 const LINK_KEY = "flick-link", PLAN_TTL = 10 * 60 * 1000;
-const LINK_URL = "https://kazutomo.app/flick-link" + (["rekishi","uchu","karada","kabu","ai"].includes(GAME.id) ? "?to=" + GAME.id : "");
+/* ⚠️ 2026-09-29 まで 5つの ゲームしか ?to= を 付けておらず、ほかの ゲームから つなぐと 世界旅行に もどってきていた(バグ)。
+   いまは 世界旅行いがい ぜんぶ 付ける。受ける 側(speed-king の FLICK_LINK_TARGETS)に 無い id は 向こうが 世界旅行に 落とすだけなので こわれない */
+const LINK_URL = "https://kazutomo.app/flick-link" + (GAME.id && GAME.id !== "world" ? "?to=" + GAME.id : "");
 let PLAN = null, recMemo = null;
 function linkToken(){ return store(LINK_KEY) || ""; }
 function authHeaders(){ const t = linkToken(); return t ? { Authorization: "Bearer " + t } : {}; }
@@ -3008,7 +3010,7 @@ function growthHtml(g, m, lv){
     '<dl class="gl"><div><dt>はじめ</dt><dd>' + fmtT(g.firstMs) + '</dd></div><div><dt>いま</dt><dd class="ink">' + fmtT(g.lastMs) + '</dd></div></dl>' +
     '<p class="gg">' + (gain > 0 ? '<span class="ink">🎉 ' + fmtT(gain) + ' 速くなった！</span>' : '<span class="no">つづけると 速くなるよ</span>') + '</p>' +
     '<p class="gn">' + g.plays + '回 あそんだ ・ ベスト ' + fmtT(g.bestMs) + '</p>' +
-    (g.plays > n ? '<p class="gn">（グラフは さいきんの ' + n + '回）</p>' : '') + '</div>';
+    (g.plays > n ? '<p class="gn">(グラフは さいきんの ' + n + '回)</p>' : '') + '</div>';
 }
 /* トップの「きろく」(ランキング と のび)。いまの旅で あそんだ レベルの ふだを ならべ、えらんだ レベルの ぶんを 出す */
 let recLv = null, recMode = null;

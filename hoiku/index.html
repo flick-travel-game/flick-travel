@@ -105,7 +105,7 @@ body.playing{overflow:hidden}
 .field .answer::selection{background:transparent}
 .typed{position:absolute;left:14px;right:14px;top:50%;transform:translateY(-50%);font-size:18px;
   white-space:nowrap;overflow:hidden;pointer-events:none;color:var(--ink)}
-.typed:empty::before{content:"ここに打つ（青い線が次の文字）";color:var(--muted)}
+.typed:empty::before{content:"ここに打つ(青い線が次の文字)";color:var(--muted)}
 .count{position:absolute;inset:0;border-radius:12px;background:var(--card);display:grid;place-items:center;font-size:72px;color:var(--red);z-index:2}
 
 /* 結果 */
@@ -459,7 +459,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <p id="how1">表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。</p>
       <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
       <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
-    <p class="about-link"><a href="https://kazutomo.app/games">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
+    <p class="about-link"><a href="https://kazutomo.app/">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
     </div>
   </section>
 
@@ -528,7 +528,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
 <script src="terms.js?v=21a23b56"></script>
-<script src="hoiku.js?v=8084b364"></script>
+<script src="hoiku.js?v=6fb3b372"></script>
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
@@ -925,7 +925,9 @@ const PERIODS = [["today","きょう"],["week","今週"],["all","いままで"]]
    ⚠️ もう 端末に きろくが ある人(localStorage に flick-best- / flick-hist が ある人)は そのまま localStorage(消さない・うつさない)
    ⚠️ 子どもが 見る 字には お金の ことばを 書かない */
 const LINK_KEY = "flick-link", PLAN_TTL = 10 * 60 * 1000;
-const LINK_URL = "https://kazutomo.app/flick-link" + (["rekishi","uchu","karada","kabu","ai"].includes(GAME.id) ? "?to=" + GAME.id : "");
+/* ⚠️ 2026-09-29 まで 5つの ゲームしか ?to= を 付けておらず、ほかの ゲームから つなぐと 世界旅行に もどってきていた(バグ)。
+   いまは 世界旅行いがい ぜんぶ 付ける。受ける 側(speed-king の FLICK_LINK_TARGETS)に 無い id は 向こうが 世界旅行に 落とすだけなので こわれない */
+const LINK_URL = "https://kazutomo.app/flick-link" + (GAME.id && GAME.id !== "world" ? "?to=" + GAME.id : "");
 let PLAN = null, recMemo = null;
 function linkToken(){ return store(LINK_KEY) || ""; }
 function authHeaders(){ const t = linkToken(); return t ? { Authorization: "Bearer " + t } : {}; }
@@ -1731,7 +1733,7 @@ function growthHtml(g, m, lv){
     '<dl class="gl"><div><dt>はじめ</dt><dd>' + fmtT(g.firstMs) + '</dd></div><div><dt>いま</dt><dd class="ink">' + fmtT(g.lastMs) + '</dd></div></dl>' +
     '<p class="gg">' + (gain > 0 ? '<span class="ink">🎉 ' + fmtT(gain) + ' 速くなった！</span>' : '<span class="no">つづけると 速くなるよ</span>') + '</p>' +
     '<p class="gn">' + g.plays + '回 あそんだ ・ ベスト ' + fmtT(g.bestMs) + '</p>' +
-    (g.plays > n ? '<p class="gn">（グラフは さいきんの ' + n + '回）</p>' : '') + '</div>';
+    (g.plays > n ? '<p class="gn">(グラフは さいきんの ' + n + '回)</p>' : '') + '</div>';
 }
 /* トップの「きろく」(ランキング と のび)。いまの旅で あそんだ レベルの ふだを ならべ、えらんだ レベルの ぶんを 出す */
 let recLv = null, recMode = null;

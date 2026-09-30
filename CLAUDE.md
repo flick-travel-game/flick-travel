@@ -458,3 +458,4 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
   `index.html` の head: manifest = `/manifest.webmanifest`(かずとも本体。ホームから はじまる)/ apple-touch-icon = `/apple-icon.png` / apple-mobile-web-app-title = かずとも。
   `build_games.py` は これらを ゲームごとに 変えない(favicon だけ ゲームの もの)。ゲームごとの `manifest.webmanifest` は 作るが もう 使っていない。
   ⚠️ もどさない: ゲームごとの アプリに すると iPhone では ログインが ばらばらに なる
+- 「おうちの方の 画面」→「マイページ」、「おうちの方へ」→「かずとも の ホーム」、「🔑 おうちの方の ログイン」→「🔑 ログイン」(けいくん決定 2026-09-30「大人にも遊んでほしい」。speed-king と 対)

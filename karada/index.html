@@ -225,6 +225,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .logo-text{font-family:"Dela Gothic One",sans-serif;font-size:22px;color:var(--ink);line-height:1.1;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .series{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:2}
 .series a{color:var(--muted);margin-right:10px;white-space:nowrap}
+.series .series-ic{width:22px;height:22px;border-radius:6px;object-fit:cover;vertical-align:-6px;margin-right:4px;box-shadow:0 1px 2px rgba(0,0,0,.12)}
 .map-zoom{position:absolute;right:8px;bottom:8px;display:flex;flex-direction:column;gap:6px;z-index:5}
 .map-zoom button{width:34px;height:34px;border-radius:10px;border:none;background:rgba(255,255,255,.92);color:#1f1f1f;font:inherit;font-size:20px;font-weight:900;line-height:1;box-shadow:0 2px 6px rgba(0,0,0,.25);padding:0}
 .map-zoom button:active{background:#fff;transform:translateY(1px)}
@@ -3566,7 +3567,8 @@ if(GAME.rule) $("#rule1").textContent = GAME.rule;
   const p = document.createElement("p"); p.className = "series";
   // ⚠️ 道は シリーズの 根もと から(この ページが 根もと = 世界 なら "./"、子の フォルダなら "../")。⚠️ "../flick-travel/" と 書くと kazutomo.app/flick/ の 下で こわれる
   const root = GAME.id === "world" ? "./" : "../";
-  p.innerHTML = "🧭 かずとも の ゲーム: " + others.map(g => '<a href="' + root + g.dir + '">' + g.icon + ' ' + esc(g.name) + '</a>').join("");
+  // ⚠️ 名前の 前は **絵文字ではなく 各ゲームの アイコンの絵**(マイページの「🧭 ゲームを えらぶ」と 同じ `apple-touch-icon.png`。けいくん 2026-09-30「メニューにあるのと同じアイコンに」)
+  p.innerHTML = "🧭 かずとも の ゲーム: " + others.map(g => '<a href="' + root + g.dir + '"><img class="series-ic" src="' + root + g.dir + 'apple-touch-icon.png" alt="" width="22" height="22" loading="lazy" decoding="async">' + esc(g.name) + '</a>').join("");
   const al = $(".about-link"); if(al) al.before(p); }
 
 /* 名言モード(QUOTES)は しくみを 残して 画面には 出さない(2026-09 に 名所だけに した) */

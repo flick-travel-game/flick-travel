@@ -177,13 +177,13 @@ def build(gid, g):
     out = src
     # ⚠️ 世界(土台)の 絵は ?v=3(2026-09-26 に「フリック世界旅行」の 絵へ 差しかえた)。
     #   ほかの ゲームは 自分の 絵(か まだ 無い)なので、世界の 数字を 前の 形に もどしてから 作る(ほかの ゲームの 住所は 変えない)
-    for a_, b_ in (('href="apple-touch-icon.png?v=3"', 'href="apple-touch-icon.png?v=2"'), ('href="favicon.png?v=3"', 'href="favicon.png?v=2"'),
+    # ⚠️ apple-touch-icon・manifest・apple-mobile-web-app-title は 2026-09-30 から かずとも本体の もの(ゲームごとに 変えない)
+    for a_, b_ in (('href="favicon.png?v=3"', 'href="favicon.png?v=2"'),
                    ('src="logo-mark2.webp?v=3"', 'src="logo-mark2.webp"'), ('src="logo-word.webp?v=3" alt="" width="1166" height="208"', 'src="logo-word.webp" alt="" width="1170" height="209"'),
                    ('<img class="hero" src="hero.webp?v=3"', '<img class="hero" src="hero.webp"')):
         assert out.count(a_) == 1, a_; out = out.replace(a_, b_)
     # head
     out = out.replace("<title>フリック世界旅行</title>", f"<title>{g['name']}</title>")
-    out = out.replace('<meta name="apple-mobile-web-app-title" content="フリック世界旅行">', f'<meta name="apple-mobile-web-app-title" content="{g["name"]}">')
     art = g.get("art")  # その ゲームの 絵(hero / 題名 / アイコン)が フォルダに あるとき
     if art:
         # 絵・アイコンは その フォルダの ものを 使う(名前は 世界と 同じ なので 道は そのまま)
@@ -192,11 +192,11 @@ def build(gid, g):
         out = out.replace('src="logo-word.webp"', 'src="logo-word.webp?v=%d"' % art.get("wordv", 2))
         if art.get("iconv"):  # アイコンを 差しかえたら 数字を 上げる(iPhone が 古い アイコンを おぼえているため)
             v = "?v=%d" % art["iconv"]
-            out = out.replace('apple-touch-icon.png?v=2"', 'apple-touch-icon.png' + v + '"').replace('favicon.png?v=2"', 'favicon.png' + v + '"').replace('src="logo-mark2.webp"', 'src="logo-mark2.webp' + v + '"')  # 題名を 切りなおしたら 数字を 上げる(古い 絵を おぼえているため)
+            out = out.replace('favicon.png?v=2"', 'favicon.png' + v + '"').replace('src="logo-mark2.webp"', 'src="logo-mark2.webp' + v + '"')  # 題名を 切りなおしたら 数字を 上げる(古い 絵を おぼえているため)
         out, n = re.subn(r'<img class="hero" src="hero.webp" alt="[^"]*" width="1536" height="1024">',
                          '<img class="hero" src="hero.webp%s" alt="%s" width="%d" height="%d">' % ("?v=%d" % art["wordv"] if art.get("wordv") else "", art["alt"], *art["hero"]), out); assert n == 1
     else:
-        out = out.replace('href="apple-touch-icon.png?v=2"', 'href="../apple-touch-icon.png?v=2"').replace('href="favicon.png?v=2"', 'href="../favicon.png?v=2"')
+        out = out.replace('href="favicon.png?v=2"', 'href="../favicon.png?v=2"')
         # 絵が まだ無い ゲーム(株式フリック旅行): トップの絵と ロゴの 画像を 最初から 置かない(無い ファイルを 読みにいかない)。題名は 文字
         out, n = re.subn(r'\s*<img class="hero" src="hero.webp"[^>]*>', "", out); assert n == 1
         out, n = re.subn(r'<img class="logo-mark" src="logo-mark2.webp"[^>]*>\s*<img class="logo-word" src="logo-word.webp"[^>]*>',

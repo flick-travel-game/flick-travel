@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -129,6 +129,15 @@ GAMES = {
                    lead="教育の 考えかた・子どもの 心と 育ち・授業の つくりかた・学級と 学校の しくみ・支える 指導・教育の 法律と 制度・教育の 歴史と 世界の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、教職教養の どの 科目か・しくみ図の どこに あるのかが 出るよ。学校で 聞く ことばから はじめて、教員採用試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。",
                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。本物の 試験問題では ないので、試験の 勉強には 大学の 教科書や 問題集も 使ってね。こまった ことが あったら、まわりの 大人や 学校の 先生に 相談してね。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、教育の ことばと しくみが つながって 見えてくるよ。文部科学省・教育委員会とは 関係ありません。"),
+    # フリック料理人(けいくん 2026-09-30「料理人(調理師)になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」+「ワイン・日本酒の 銘柄や 飲みかた・カクテルも入れてください」)。
+    #   ことばは tools/chef/terms-<旅>.json → chef/terms.js(tools/chef/terms_js.py)。しくみは chef/chef.js(CHEF。kyoshi.js を 写した)。
+    #   旅は 8つ + マスター(8つめ 🍷 お酒と飲みもの)。むずかしさは 入門(台所で 聞く)→ 中級(調理師試験の 6科目の めやす)→ 上級(プロの 厨房・技能検定の めやす)。
+    #   ⚠️⚠️ 小学生も あそぶので 包丁・火・油・食中毒は「安全に 使う・守る」書きかただけ。レシピの 数字・会社や 蔵元の 名前は のせない(決まりは tools/chef/PROMPT.md)。
+    #   絵は けいくんの ChatGPT の 絵が 届くまで 仮(題名は 字・アイコンは 仮の 四角)
+    "chef": dict(name="フリック料理人", modes="CHEF", kinds=set(), color="#f25c00", hero=False, logo=False,
+                 lead="食材・切りかたと 下ごしらえ・調理の わざ・日本料理・世界の 料理・衛生と 安全・栄養と 食文化・お酒と 飲みものの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、調理師試験の どの 科目か・しくみ図の どこに あるのかが 出るよ。台所で 聞く ことばから はじめて、調理師試験の 範囲の めやす・プロの 厨房の ことばまで。4択クイズで 試験の 練習も できるよ。",
+                 how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。レシピ(分量・温度・時間)や 包丁・火・油の 使いかたは のせていないよ。火や 包丁を 使う ときは かならず 大人と いっしょに。お酒は 20歳に なってから。説明は 本物の 試験問題では ないので、試験の 勉強には 学校の 教科書や 問題集も 使ってね。",
+                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、料理の ことばと しくみが つながって 見えてくるよ。都道府県・厚生労働省とは 関係ありません。"),
     # フリックゲームクリエイター(けいくん 2026-09-29「ゲームクリエイターになるために必要な 知識をフリック形式の問題にしてください」→ 課金・ガチャは「A」= 入れない)。
     #   ことばは tools/gamedev/terms-<旅>.json → gamedev/terms.js(tools/gamedev/terms_js.py)。しくみは gamedev/gamedev.js(GAMEDEV。kango.js を 写した)。
     #   旅は 8つ + マスター(8つめ ⌨️ コードと作りかた は 2026-09-29「コードの書きかたや作りかたは必要? 必要なら追加して」で 足した)。むずかしさは 入門(あそぶ 人でも 知っている)→ 中級(作りはじめる)→ 上級(専門学校・大学で 学ぶ めやす)→ プロ(ゲーム会社の 現場の めやす)。けいくん「本当にゲームクリエイターになれるレベルに」。
@@ -196,7 +205,7 @@ GAMES = {
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "CHEF": '(typeof CHEF === "object" ? CHEF.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -300,6 +309,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kyoshi/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "kyoshi" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="kyoshi.js?v=%s"></script>' % (ver("terms.js"), ver("kyoshi.js")))
+    if g["modes"] == "CHEF":  # 料理人の コース: 教師と 同じ 形。ことばは terms.js(tools/chef/terms-*.json から)、しくみは chef.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/chef/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "chef" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="chef.js?v=%s"></script>' % (ver("terms.js"), ver("chef.js")))
     if g["modes"] == "SUGAKU":  # 数学の コース: 国語と 同じ 形。ことばは terms.js(tools/sugaku/terms-*.json から)、しくみは sugaku.js(make_sugaku_js.py が 作る)
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/sugaku/terms_js.py")], check=True); subprocess.run([_s.executable, str(ROOT / "tools/sugaku/make_sugaku_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "sugaku" / f).read_bytes()).hexdigest()[:8]

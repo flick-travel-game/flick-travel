@@ -330,6 +330,7 @@ const AITABI = (() => {
     if(t.dataset.aiAns) return answerQuiz(+t.dataset.aiAns);
     if(t.dataset.aiOpen){
       const o = t.dataset.aiOpen;
+      if((o === "quiz" || o === "calc") && typeof canPlay === "function" && !canPlay()){ showTrialEnd(); return; }  // 図鑑・お気に入りは 読むだけなので そのまま
       if(o === "zukan") return openZukan({});
       if(o === "fav") return openZukan({ fav:true });
       if(o === "quiz") return openQuiz();

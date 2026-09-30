@@ -132,10 +132,10 @@ CALC_UI = """
 rep("  /* ── おす・えらぶ(まとめて 受ける。", FIG + GAL + CALC + CALC_UI + "\n  /* ── おす・えらぶ(まとめて 受ける。")
 rep('''const t = e.target.closest && e.target.closest("[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-ans],[data-ai-qstart],[data-ai-qnext],.ai-node");''',
     '''const t = e.target.closest && e.target.closest("[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-ans],[data-ai-qstart],[data-ai-qnext],[data-ai-cstart],[data-ai-cnext],[data-ai-cans],[data-sg-fig],.ai-node");''')
-rep("    if(t.dataset.aiQstart) return startQuiz();\n",
-    """    if(t.dataset.aiQstart) return startQuiz();
+rep("    if(t.dataset.aiQstart){ if(typeof canPlay === \"function\" && !canPlay()){ showTrialEnd(); return; } return startQuiz(); }  // 登録なしの 体験が おわったら クイズも 止める(2026-09-30)\n",
+    """    if(t.dataset.aiQstart){ if(typeof canPlay === "function" && !canPlay()){ showTrialEnd(); return; } return startQuiz(); }  // 登録なしの 体験が おわったら クイズも 止める(2026-09-30)
     if(t.dataset.aiCans) return answerCalc(+t.dataset.aiCans);
-    if(t.dataset.aiCstart) return startCalc();
+    if(t.dataset.aiCstart){ if(typeof canPlay === "function" && !canPlay()){ showTrialEnd(); return; } return startCalc(); }
     if(t.dataset.aiCnext){ calc.i++; calc.picked = null; drawCalc(); const sh = document.getElementById("ai-cq"); if(sh) sh.scrollTop = 0; return; }
     if(t.dataset.sgFig){ document.querySelectorAll(".sg-ft").forEach(b => b.classList.toggle("sel", b === t)); return showFig(t.dataset.sgFig); }
 """)

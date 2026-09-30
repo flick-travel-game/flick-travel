@@ -469,7 +469,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
       <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
     <p class="trial-note hidden" id="trial-note"></p>
-    <p class="about-link"><a href="https://kazutomo.app/" id="about-link">📖 かずとも の ゲーム・料金(おうちの方へ)</a></p>
+    <p class="about-link"><a href="https://kazutomo.app/" id="about-link">📖 かずとも の ゲーム(おうちの方へ)</a></p>
     </div>
   </section>
 
@@ -538,7 +538,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
 <script src="terms.js?v=9d21bd6b"></script>
-<script src="shakai.js?v=b1b2c87f"></script>
+<script src="shakai.js?v=6d554b6e"></script>
 <script>
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
@@ -955,7 +955,7 @@ async function fetchPlan(force){
   if(!force){ const c = planCached(); if(c){ PLAN = c; return c; } }
   let plan, ok = false;
   try{
-    const res = await fetch(RANK_API + "/plan", { headers: authHeaders(), cache: "no-store" });
+    const res = await fetch(RANK_API + "/plan" + (trialToken() ? "?t=" + encodeURIComponent(trialToken()) : ""), { headers: authHeaders(), cache: "no-store" });  // 30日の しるしも そえる(登録しただけの おうちが 30日の あいだ ぼけない ように)
     const js = await res.json().catch(() => null);
     if(res.ok && js && js.ok){ plan = { graph: js.graph !== false, listed: js.listed !== false, signedIn: !!js.signedIn }; ok = true; }
   }catch(e){}
@@ -1036,13 +1036,16 @@ function flickToast(msg){
    ・つないでいる(flick-link)・はらっている おうちは 止まらない(サーバーが 見る)。しるしが 無い 環境(手元の 開発)は 止めない
    ⚠️ 記録は 1つも 消さない。⚠️ 子どもの 画面に お金の 字は 出さない(日数だけ) */
 const TRIAL_API = "https://kazutomo.app/api/trial", TRIAL_KEY = "flick-trial", TRIAL_STATE = "flick-trial-state", TRIAL_FIRST = "flick-trial-first";
-const TRIAL_GRACE_MS = 3 * 86400000, TRIAL_WARN_DAYS = 7;
-let TRIAL = null;
+const TRIAL_GRACE_MS = 3 * 86400000, TRIAL_PAID_GRACE_MS = 30 * 86400000, TRIAL_WARN_DAYS = 7;  // はらっている おうちは 旅先・飛行機でも 30日は 止めない(2026-09-30)
+let TRIAL = null, TRIAL_AFTER_LINK = false;
 function trialToken(){ return store(TRIAL_KEY) || ""; }
 (function takeTrialHash(){
   try{
     const m = /[#&]t=([A-Za-z0-9._~+\/=-]{8,600})(?:&|$)/.exec(location.hash); if(!m) return;
-    if(!trialToken()) store(TRIAL_KEY, m[1]);
+    // ⚠️ もう 持っていたら **はじまりの 早いほう**を 残す(かずとも と フリックで べつべつに 30日が 走らないように。2026-09-30)
+    const startOf = (tk) => { try{ return +JSON.parse(atob(tk.split(".")[0].replace(/-/g, "+").replace(/_/g, "/"))).s || 0; }catch(e){ return 0; } };
+    const cur = trialToken();
+    if(!cur || (startOf(m[1]) && (!startOf(cur) || startOf(m[1]) < startOf(cur)))) store(TRIAL_KEY, m[1]);
     history.replaceState(history.state, "", location.pathname + location.search);
   }catch(e){}
 })();
@@ -1052,7 +1055,7 @@ function canPlay(){ const t = TRIAL || trialCached(); if(!t) return true; if(t.s
 async function fetchTrial(){
   let tok = trialToken(), js = null;
   try{
-    const ask = async (post) => { const r = await fetch(post ? TRIAL_API : TRIAL_API + "?t=" + encodeURIComponent(tok), { method: post ? "POST" : "GET", headers: authHeaders(), cache: "no-store" }); return r.ok ? await r.json() : null; };
+    const ask = async (post) => { const ac = new AbortController(); const tm = setTimeout(() => ac.abort(), 8000); try{ const r = await fetch(post ? TRIAL_API : TRIAL_API + "?t=" + encodeURIComponent(tok), { method: post ? "POST" : "GET", headers: authHeaders(), cache: "no-store", signal: ac.signal }); return r.ok ? await r.json() : null; } finally{ clearTimeout(tm); } };  // 8秒で あきらめる(返ってこない ままに しない)
     js = await ask(!tok);
     if(js && js.ok && js.needToken && tok){ js = await ask(true); }  // しるしが 古い・こわれている → もらいなおす
   }catch(e){ js = null; }
@@ -1063,7 +1066,9 @@ async function fetchTrial(){
   }else{
     const c = trialCached(); let first = +store(TRIAL_FIRST) || 0;
     if(!first){ first = Date.now(); store(TRIAL_FIRST, String(first)); }
-    const fresh = Date.now() - (c ? c.checkedAt : first) < TRIAL_GRACE_MS;
+    const since = c ? c.checkedAt : first, grace = c && c.paid ? TRIAL_PAID_GRACE_MS : TRIAL_GRACE_MS;
+    // ⚠️ 時計が さいごの 確認より 前に もどっていたら 数えない(時計を もどして 猶予を のばす 抜け道)
+    const fresh = Date.now() >= since && Date.now() - since < grace;
     TRIAL = c ? Object.assign({}, c, { stale: !fresh }) : { play: fresh, paid: false, daysLeft: null, checkedAt: 0, stale: !fresh };
   }
   trialViewsRefresh();
@@ -1076,7 +1081,7 @@ function trialViewsRefresh(){
     const back = $("#about-link"); if(back){ const tk = trialToken(); back.href = "https://kazutomo.app/" + (tk ? "#t=" + encodeURIComponent(tk) : ""); }
     if(!el || !t){ if(el) el.classList.add("hidden"); return; }
     let msg = "";
-    if(!canPlay()) msg = (t.stale ? "つながりを かくにん できませんでした。ネットに つないで もう一度 ひらいてね" : "おためしは おわりました。") + '<br><a href="' + LINK_URL + '">おうちの方の 画面から つづけられます</a>';
+    if(!canPlay()) msg = t.stale ? "つながりを かくにん できませんでした。ネットに つないで もう一度 ひらいてね。" : 'おためしは おわりました。<br><a href="' + LINK_URL + '">おうちの方の 画面から つづけられます</a>';
     else if(!t.paid && typeof t.daysLeft === "number" && t.daysLeft <= TRIAL_WARN_DAYS) msg = "おためしは あと" + t.daysLeft + "日。<a href=\"" + LINK_URL + "\">おうちの方の 画面から つづけられます</a>";
     el.innerHTML = msg; el.classList.toggle("hidden", !msg);
   }catch(e){}
@@ -1084,12 +1089,20 @@ function trialViewsRefresh(){
 /* 体験が おわった あとに スタートを 押したとき */
 function showTrialEnd(){
   const t = TRIAL || trialCached(), stale = !!(t && t.stale);
-  const d = document.createElement("div"); d.className = "trial-end"; d.setAttribute("role", "dialog");
+  const d = document.createElement("div"); d.className = "trial-end"; d.setAttribute("role", "dialog"); d.setAttribute("aria-modal", "true");
   d.innerHTML = '<div class="te-box"><p class="te-ttl">' + (stale ? "つながりを かくにん できません" : "おためしは おわりました") + '</p><p class="te-sub">' +
-    (stale ? "ネットに つないで もう一度 ひらいてね。" : "きろくは そのまま のこっています。<br>つづきは おうちの方の 画面から。") +
-    '</p><a class="te-go" href="' + LINK_URL + '">おうちの方の 画面へ</a><button type="button" class="te-close">とじる</button></div>';
-  d.querySelector(".te-close").addEventListener("click", () => d.remove());
+    (stale ? "ネットに つないで もう一度 ためしてね。" : "きろくは そのまま のこっています。<br>つづきは おうちの方の 画面から。") +
+    (stale ? '</p><button type="button" class="te-go te-retry">もう一度 たしかめる</button>' : '</p><a class="te-go" href="' + LINK_URL + '">おうちの方の 画面へ</a>') +
+    '<button type="button" class="te-close">とじる</button></div>';
+  const close = () => { d.remove(); document.removeEventListener("keydown", onKey); };
+  const onKey = (e) => { if(e.key === "Escape") close(); };
+  d.querySelector(".te-close").addEventListener("click", close);
+  d.addEventListener("click", (e) => { if(e.target === d) close(); });
+  const retry = d.querySelector(".te-retry");
+  if(retry) retry.addEventListener("click", () => { retry.disabled = true; fetchTrial().then(() => { if(canPlay()) close(); else { retry.disabled = false; flickToast("まだ つながりません"); } }); });
+  document.addEventListener("keydown", onKey);
   document.body.appendChild(d);
+  try{ d.querySelector(".te-go").focus(); }catch(e){}
 }
 /* つなぐ リンクの 短い しるし(24時間)を、この 端末の 長い しるし(365日)に 取りかえる(speed-king /api/flick/link)。しくじっても 止めない */
 async function exchangeLink(){
@@ -1099,6 +1112,8 @@ async function exchangeLink(){
     const r = await fetch(RANK_API + "/link", { method: "POST", headers: authHeaders() });
     const js = r.ok ? await r.json() : null;
     if(js && js.ok && typeof js.token === "string" && js.token && linkToken() === tok){ store(LINK_KEY, js.token); try{ sessionStorage.removeItem("flick-plan"); }catch(e){} }
+    // ⚠️ 24時間の 短い しるしが 切れていた(つないだ ときに ネットが 無かった)→ 消して、つなぎなおしを たのむ(2026-09-30)
+    else if(r.status === 401 && linkToken() === tok){ try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){} PLAN = null; recMemo = null; flickToast("おうちの方の 画面から もう一度 つないでね"); }
   }catch(e){}
 }
 /* ?link=<しるし> で もどってきたとき(1回だけ) */
@@ -1114,7 +1129,8 @@ async function exchangeLink(){
     PLAN = null; recMemo = null;
     keepSessionRecords();
     setTimeout(() => flickToast("おうちの方の アカウントと つながりました"), 300);
-    exchangeLink().then(() => { fetchPlan(true); fetchTrial(); });
+    // ⚠️ 取りかえ(exchangeLink)は 読みこみの さいごの 1回(下)に まかせる。ここでも 呼ぶと 2回 送っていた(2026-09-30)
+    TRIAL_AFTER_LINK = true;
   }catch(e){}
 })();
 /* のび の グラフ(つながっていて graph:false の ときは ぼかす。消さない。かずとも `Blurred` と 同じ) */
@@ -1636,7 +1652,11 @@ function openLevels(m){
 /* ⚠️ 株式・AI・英会話・整備も どの レベルも いつも 同じ 10問(けいくん 2026-09-27「スピード記録勝負に揃えて」)。
    「もう一度だけ挑戦(まちがえた 問題だけ)」・ふくしゅう・苦手克服は やめた */
 function start(m, lv){
-  if(!canPlay()){ showTrialEnd(); return; }  // 登録なしの 体験が おわった(記録・ランキングは 見られる)
+  if(!canPlay()){  // 登録なしの 体験が おわった(記録・ランキングは 見られる)
+    // ⚠️ 止める 前に もう一度 聞く(おうちの方が べつの スマホで 払った・ネットに つながった、を ひらきなおさずに 拾う。2026-09-30)
+    if(!start._asked || Date.now() - start._asked > 15000){ start._asked = Date.now(); fetchTrial().then(() => { if(canPlay()) start(m, lv); else showTrialEnd(); }); return; }
+    showTrialEnd(); return;
+  }
   mode = m; level = lv;
   qs = PLUG && PLUG.owns(m) ? PLUG.makeQs(m, lv) : LEVELS[m][lv];  // プラグインの コース: いつも 同じ 10問(はじめて 出会う ことばの しるしを 付けるため プラグインを 通す)
   idx = 0; times = []; running = false; locked = true; penalties = 0; qMiss = 0; lastErr = false;
@@ -1857,7 +1877,7 @@ async function submitScore(r){
   if(PLUG && PLUG.noRank(r.mode, r.level)) return "norank";  // 61より 上の レベルは ランキングに 送らない(かずともの 表は 1〜60)
   const ms = Math.round(r.times.reduce((a,b)=>a+b,0) * 1000);
   try{
-    const res = await fetch(RANK_API + "/score", { method:"POST", headers:Object.assign({"content-type":"application/json"}, authHeaders()),
+    const res = await fetch(RANK_API + "/score" + (trialToken() ? "?t=" + encodeURIComponent(trialToken()) : ""), { method:"POST", headers:Object.assign({"content-type":"application/json"}, authHeaders()),
       body: JSON.stringify({ name:p.name, grade:gradeKey(p.grade), mode:r.mode, level:r.level+1, ms, times:r.times.map(t => Math.round(t*1000)) }) });
     const js = await res.json().catch(() => null);
     if(res.ok && js && js.ok) return js.listed === false ? "unlisted" : "ok";  // unlisted = しまったが 名前は のせない
@@ -2161,7 +2181,10 @@ $("#home-btn").addEventListener("click", () => { store("flick-last", ""); show("
 showBest();
 restoreLast();
 fetchPlan();  // できることを かずとも に 聞く(かえってきたら グラフ・おしらせを かきなおす)
-exchangeLink().then(fetchTrial);  // 登録なしの 体験: 遊べるか・のこり何日か(つながらなければ 3日まで そのまま)
+exchangeLink().then(() => { if(TRIAL_AFTER_LINK) fetchPlan(true); fetchTrial(); });  // 登録なしの 体験: 遊べるか・のこり何日か(つながらなければ 3日まで そのまま)
+// ⚠️ ネットに つながった・画面に もどった ときにも 聞きなおす(1分に 1回まで)
+(function(){ let last = 0; const again = () => { if(Date.now() - last < 60000) return; last = Date.now(); fetchTrial(); };
+  addEventListener("online", again); document.addEventListener("visibilitychange", () => { if(!document.hidden) again(); }); })();
 </script>
 </body>
 </html>

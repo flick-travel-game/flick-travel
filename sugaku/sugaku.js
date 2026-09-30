@@ -1087,14 +1087,15 @@ const SUGAKU = (() => {
     if(t.dataset.aiFav){ toggleFav(t.dataset.aiFav); trail.pop(); detail(t.dataset.aiFav); if(document.getElementById("ai-zk") && !document.getElementById("ai-zk").classList.contains("hidden")) drawZukan(); home(mode); return; }
     if(t.dataset.aiMore){ zf.shown += 180; return drawZukan(); }
     if(t.dataset.aiAns) return answerQuiz(+t.dataset.aiAns);
-    if(t.dataset.aiQstart) return startQuiz();
+    if(t.dataset.aiQstart){ if(typeof canPlay === "function" && !canPlay()){ showTrialEnd(); return; } return startQuiz(); }  // 登録なしの 体験が おわったら クイズも 止める(2026-09-30)
     if(t.dataset.aiCans) return answerCalc(+t.dataset.aiCans);
-    if(t.dataset.aiCstart) return startCalc();
+    if(t.dataset.aiCstart){ if(typeof canPlay === "function" && !canPlay()){ showTrialEnd(); return; } return startCalc(); }
     if(t.dataset.aiCnext){ calc.i++; calc.picked = null; drawCalc(); const sh = document.getElementById("ai-cq"); if(sh) sh.scrollTop = 0; return; }
     if(t.dataset.sgFig){ document.querySelectorAll(".sg-ft").forEach(b => b.classList.toggle("sel", b === t)); return showFig(t.dataset.sgFig); }
     if(t.dataset.aiQnext){ quiz.i++; quiz.picked = null; const sh = document.getElementById("ai-qz"); drawQuiz(); if(sh) sh.scrollTop = 0; return; }
     if(t.dataset.aiOpen){
       const o = t.dataset.aiOpen;
+      if((o === "quiz" || o === "calc") && typeof canPlay === "function" && !canPlay()){ showTrialEnd(); return; }  // 図鑑・お気に入りは 読むだけなので そのまま
       if(o === "zukan") return openZukan({});
       if(o === "fav") return openZukan({ fav:true });
       if(o === "quiz") return openQuiz();

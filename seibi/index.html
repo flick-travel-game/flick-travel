@@ -394,6 +394,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .keep-note a,.prof-link a,.prof-link .lnk{color:#2563eb;font-weight:900;text-decoration:underline}
 .prof-link{margin:8px 0 0;text-align:center;font-size:12px;font-weight:700;line-height:20px;color:#64748b}
 .prof-link .lnk{margin-left:6px;font-size:12px;color:#94a3b8;font-weight:700}
+.prof-sub{margin:2px 0 0;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
 .pg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px 6px;margin-top:10px}
 .pg-grid a{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#334155;font-size:10px;font-weight:900;line-height:13px;text-align:center;min-width:0}
 .pg-grid a[aria-current]{opacity:.5}
@@ -422,7 +423,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=3" alt="" width="144" height="144" aria-hidden="true">
       <img class="logo-word" src="logo-word.webp?v=4" alt="" width="731" height="218" aria-hidden="true">
-      <button class="prof-btn" id="prof-btn" aria-label="あそぶ人を かえる"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
+      <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック整備士</h1>
     <img class="hero" src="hero.webp?v=4" alt="フリック整備士。エンジン・ブレーキ・タイヤなどの 部品の 中を 男の子と 犬が 飛んで 旅する 絵" width="1536" height="1024">
@@ -528,7 +529,9 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
   <!-- だれが あそぶか(どの画面からも ひらけるよう section の外) -->
     <div class="prof-sheet hidden" id="prof">
       <div class="prof-box">
-        <h2>だれが あそぶ？</h2>
+        <!-- ⚠️ 見出しは マイページ(けいくん 2026-09-30「すべてのゲームの右上に このマイページメニューを」)。あそぶ人・写真・ログイン・ゲームの 一覧・せってい を この 1枚に。かずとも `Game.tsx` の picker と 同じ -->
+        <h2>マイページ</h2>
+        <p class="prof-sub">だれが あそぶ？</p>
         <div id="prof-grid" class="prof-grid"></div>
         <form id="prof-form" class="prof-form hidden" novalidate>
           <p class="lb" id="prof-form-lb"></p>
@@ -939,7 +942,7 @@ const PERIODS = [["today","きょう"],["week","今週"],["all","いままで"]]
 /* ── おうちの方の アカウントと つなぐ(かずとも ④-c の 線と まったく同じ) ──
    おうちの方が かずとも に ログインして https://kazutomo.app/flick-link を ひらくと、ここへ ?link=<しるし> で もどってくる。
    しるしは 端末に1つ(flick-link。同じ 住所の下の 4つの ゲームで 共通)。GET /api/flick/plan で できることを 聞く:
-   ・graph:false  → のび の グラフを ぼかす(消さない)。「マイページから つづきが 見られます」
+   ・graph:false  → のび の グラフを ぼかす(消さない)。「アカウントから つづきが 見られます」
    ・listed:false → 記録は 送るが ランキングに 名前が のらない(POST /score が listed:false を 返す)
    ・signedIn:false(しるしが 無い・きれた)→ この回の きろく(flick-hist / flick-days / flick-best-)は sessionStorage に しまう = ゲームを とじると きえる
    ⚠️ つながらないときは 責めない: しるしが あれば ぜんぶ できる、と みなす
@@ -1097,8 +1100,8 @@ function trialViewsRefresh(){
     const back = $("#about-link"); if(back){ const tk = trialToken(); back.href = "https://kazutomo.app/" + (tk ? "#t=" + encodeURIComponent(tk) : ""); }
     if(!el || !t){ if(el) el.classList.add("hidden"); return; }
     let msg = "";
-    if(!canPlay()) msg = t.stale ? "つながりを かくにん できませんでした。ネットに つないで もう一度 ひらいてね。" : 'おためしは おわりました。<br><a href="' + LINK_URL + '">マイページから つづけられます</a>';
-    else if(!t.paid && typeof t.daysLeft === "number" && t.daysLeft <= TRIAL_WARN_DAYS) msg = "おためしは あと" + t.daysLeft + "日。<a href=\"" + LINK_URL + "\">マイページから つづけられます</a>";
+    if(!canPlay()) msg = t.stale ? "つながりを かくにん できませんでした。ネットに つないで もう一度 ひらいてね。" : 'おためしは おわりました。<br><a href="' + LINK_URL + '">アカウントから つづけられます</a>';
+    else if(!t.paid && typeof t.daysLeft === "number" && t.daysLeft <= TRIAL_WARN_DAYS) msg = "おためしは あと" + t.daysLeft + "日。<a href=\"" + LINK_URL + "\">アカウントから つづけられます</a>";
     el.innerHTML = msg; el.classList.toggle("hidden", !msg);
   }catch(e){}
 }
@@ -1107,8 +1110,8 @@ function showTrialEnd(){
   const t = TRIAL || trialCached(), stale = !!(t && t.stale);
   const d = document.createElement("div"); d.className = "trial-end"; d.setAttribute("role", "dialog"); d.setAttribute("aria-modal", "true");
   d.innerHTML = '<div class="te-box"><p class="te-ttl">' + (stale ? "つながりを かくにん できません" : "おためしは おわりました") + '</p><p class="te-sub">' +
-    (stale ? "ネットに つないで もう一度 ためしてね。" : "きろくは そのまま のこっています。<br>つづきは マイページから。") +
-    (stale ? '</p><button type="button" class="te-go te-retry">もう一度 たしかめる</button>' : '</p><a class="te-go" href="' + LINK_URL + '">マイページへ</a>') +
+    (stale ? "ネットに つないで もう一度 ためしてね。" : "きろくは そのまま のこっています。<br>つづきは アカウントから。") +
+    (stale ? '</p><button type="button" class="te-go te-retry">もう一度 たしかめる</button>' : '</p><a class="te-go" href="' + LINK_URL + '">アカウントへ</a>') +
     '<button type="button" class="te-close">とじる</button></div>';
   const close = () => { d.remove(); document.removeEventListener("keydown", onKey); };
   const onKey = (e) => { if(e.key === "Escape") close(); };
@@ -1129,7 +1132,7 @@ async function exchangeLink(){
     const js = r.ok ? await r.json() : null;
     if(js && js.ok && typeof js.token === "string" && js.token && linkToken() === tok){ store(LINK_KEY, js.token); try{ sessionStorage.removeItem("flick-plan"); }catch(e){} }
     // ⚠️ 24時間の 短い しるしが 切れていた(つないだ ときに ネットが 無かった)→ 消して、つなぎなおしを たのむ(2026-09-30)
-    else if(r.status === 401 && linkToken() === tok){ try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){} PLAN = null; recMemo = null; flickToast("マイページから もう一度 つないでね"); }
+    else if(r.status === 401 && linkToken() === tok){ try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){} PLAN = null; recMemo = null; flickToast("アカウントから もう一度 つないでね"); }
   }catch(e){}
 }
 /* ?link=<しるし> で もどってきたとき(1回だけ) */
@@ -1152,7 +1155,7 @@ async function exchangeLink(){
 /* のび の グラフ(つながっていて graph:false の ときは ぼかす。消さない。かずとも `Blurred` と 同じ) */
 function planGrowth(html){
   if(graphOk()) return html;
-  return '<div class="blurred"><div class="bl-in" aria-hidden="true">' + html + '</div><p class="bl-note">マイページから つづきが 見られます</p></div>';
+  return '<div class="blurred"><div class="bl-in" aria-hidden="true">' + html + '</div><p class="bl-note">アカウントから つづきが 見られます</p></div>';
 }
 /* つながっていない 人への おしらせ(2回め から) */
 function drawKeepNote(){
@@ -2053,9 +2056,9 @@ function drawProf(){
   // おうちの方の アカウント(ランキングの ⚠️ の すぐ下に 1行)
   // ⚠️ 2026-09-30: ここから ログインできる(けいくん「この右側の画面で ログイン出来るようにしてください」)。はじめての 人(なまえの 欄が 出ている とき)にも 出す
   const link = signedIn()
-    ? '<p class="prof-link" id="prof-link">✅ アカウントと つながっています<br>' + (linkToken() ? '<button type="button" class="lnk" id="prof-unlink">つなぐのを やめる</button>' : '<a class="pill" href="https://kazutomo.app/account">マイページへ</a>') + '</p>'
+    ? '<p class="prof-link" id="prof-link">✅ アカウントと つながっています<br>' + (linkToken() ? '<button type="button" class="lnk" id="prof-unlink">つなぐのを やめる</button>' : '<a class="pill" href="https://kazutomo.app/account">アカウントへ</a>') + '</p>'
     : '<p class="prof-link" id="prof-link">ログインすると、きろくが のこり ランキングに 名前が のります<br><a class="pill" href="' + LOGIN_URL + '">🔑 ログイン</a></p>';
-  // 🧭 ゲームを えらぶ(かずともの あそぶ画面の 一覧へ。けいくん 2026-09-30「メンバー選択メニューの中にも ゲーム選択画面を追加」)
+  // 🧭 ゲームを えらぶ(⚠️ 一覧は マイページの 中だけ。かずともの あそぶ画面の 下には もう 無い。けいくん 2026-09-30)
   // ⚠️ 一覧を **この 画面の 中に**(けいくん 2026-09-30「この画面の中です。1番下に飛ばなくても 遊ぶ人も ゲームも 選べる」)。かずとも(計算)+ SERIES の 全部
   const root = GAME.id === "world" ? "./" : "../";
   const tiles = [{ name: "かずとも", icon: "🔢", href: "https://kazutomo.app/play", cur: false }]

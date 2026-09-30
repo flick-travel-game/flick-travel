@@ -454,3 +454,7 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
   iPhone の ホーム画面の アプリは **アイコンごとに 別の 保存場所**(Safari とも 別)。scope が `./` だと アプリの 中から ほかの ゲームや
   ログイン画面へ 行った とき Safari に 飛ばされて、もどると ログインが 無かった。`/` なら kazutomo.app の 中は ぜんぶ 同じ アプリの 中 = 1回の ログインで 全部。
   ⚠️ それでも **べつべつに 足した アイコン どうしは 別の 保存場所**(iOS の 決まり)。ホームは 1つ 足して、その 中から ゲームへ 行くのが 正しい 使いかた
+- **ホーム画面に 足すと どの ゲームからでも「かずとも」の アプリ**(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
+  `index.html` の head: manifest = `/manifest.webmanifest`(かずとも本体。ホームから はじまる)/ apple-touch-icon = `/apple-icon.png` / apple-mobile-web-app-title = かずとも。
+  `build_games.py` は これらを ゲームごとに 変えない(favicon だけ ゲームの もの)。ゲームごとの `manifest.webmanifest` は 作るが もう 使っていない。
+  ⚠️ もどさない: ゲームごとの アプリに すると iPhone では ログインが ばらばらに なる

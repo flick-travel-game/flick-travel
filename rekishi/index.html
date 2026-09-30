@@ -3328,19 +3328,21 @@ function drawProf(){
   const link = signedIn()
     ? '<p class="prof-link" id="prof-link">✅ アカウントと つながっています<br>' + (linkToken() ? '<button type="button" class="lnk" id="prof-unlink">つなぐのを やめる</button>' : '<a class="pill" href="https://kazutomo.app/account">マイページへ</a>') + '</p>'
     : '<p class="prof-link" id="prof-link">ログインすると、きろくが のこり ランキングに 名前が のります<br><a class="pill" href="' + LOGIN_URL + '">🔑 ログイン</a></p>';
+  // 🧭 ゲームを えらぶ(かずともの あそぶ画面の 一覧へ。けいくん 2026-09-30「メンバー選択メニューの中にも ゲーム選択画面を追加」)
+  const link2 = link + '<p class="prof-link"><a class="pill" href="https://kazutomo.app/play#games">🧭 ゲームを えらぶ</a></p>';
   const bindUnlink = () => { const u = $("#prof-unlink"); if(u) u.addEventListener("click", () => {
     if(!confirm("アカウントと つなぐのを やめます。\nこの スマホに のこっている きろくは 消えません。いいですか？")) return;
     try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){}
     PLAN = null; recMemo = null; drawProf(); afterProfileChange(); fetchPlan(true);
   }); };
-  if(!p || profEditing !== null){ body.innerHTML = link; bindUnlink(); return; }
+  if(!p || profEditing !== null){ body.innerHTML = link2; bindUnlink(); return; }
   const ph = photoOf(p.id), bg = byGrade();
   body.innerHTML =
     '<div class="prof-cur"><button type="button" class="pic" id="prof-pic" aria-label="アイコンの 写真を かえる">'+tileHtml(p, ci, "md")+'<span class="cam">📷</span></button>'+
       '<div class="tx"><b>'+esc(p.name)+'</b><small>アイコンを さわると 写真を かえられます</small>'+(ph ? '<button type="button" class="lnk" id="prof-unphoto">写真を もどす</button>' : '')+'</div></div>'+
     '<p class="prof-err" id="prof-photo-err"></p>'+
     '<div class="prof-links"><button type="button" class="lnk" id="prof-rename">なまえを なおす</button><button type="button" class="lnk" id="prof-del">この人を 消す</button></div>'+
-    '<p class="prof-note">⚠️ ランキングに 出るのは なまえ・学年・タイムだけ。写真は 出ません</p>'+link+
+    '<p class="prof-note">⚠️ ランキングに 出るのは なまえ・学年・タイムだけ。写真は 出ません</p>'+link2+
     '<div class="prof-set"><p class="ttl">せってい</p><p class="lb">だれと くらべる？</p>'+
       '<div class="two"><button type="button" id="prof-all" class="'+(bg ? 'sk-key off' : 'on')+'">ぜんいん</button>'+
       '<div class="sel '+(bg ? 'on' : 'sk-key off')+'" id="prof-selbox"><select id="prof-grade">'+gradeOptions(p.grade)+'</select><span class="arw" aria-hidden="true">▼</span></div></div>'+

@@ -223,9 +223,8 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .map-tabs button.on{background:#1e293b;border-color:#1e293b;color:#fff}
 .tl-wrap svg{display:block;width:100%;height:100%}
 .logo-text{font-family:"Dela Gothic One",sans-serif;font-size:22px;color:var(--ink);line-height:1.1;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.series{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:2}
-.series a{color:var(--muted);margin-right:10px;white-space:nowrap}
-.series .series-ic{width:22px;height:22px;border-radius:6px;object-fit:cover;vertical-align:-6px;margin-right:4px;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.series{margin:14px 0 0}
+.series .series-ttl{margin:0;font-size:13px;font-weight:900;color:var(--muted)}
 .map-zoom{position:absolute;right:8px;bottom:8px;display:flex;flex-direction:column;gap:6px;z-index:5}
 .map-zoom button{width:34px;height:34px;border-radius:10px;border:none;background:rgba(255,255,255,.92);color:#1f1f1f;font:inherit;font-size:20px;font-weight:900;line-height:1;box-shadow:0 2px 6px rgba(0,0,0,.25);padding:0}
 .map-zoom button:active{background:#fff;transform:translateY(1px)}
@@ -577,6 +576,18 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
                  {id:"code", name:"フリックプログラマー", icon:"💻", dir:"code/"},
                  {id:"shakai", name:"フリック社会旅行", icon:"🗾", dir:"shakai/"},
                  {id:"ishi", name:"フリック医師", icon:"🥼", dir:"ishi/"} ];
+/* 🧭 ゲームを えらぶ の タイル(マイページの 中 と ページの いちばん下 の 2か所で 使う。けいくん 2026-09-30「これと同じ表記にしてください」)。
+   ⚠️ ならびは **かずともの マイページ(speed-king の `HOME_GAMES`)と 同じ 順**。ゲームを 足したら ここにも 足す(無い ものは うしろに つく)。
+   ⚠️ 絵は 各ゲームの `apple-touch-icon.png`、かずともは `logo-mark.webp`。名前は「フリック」を 取る(かずともの `GameGrid` と 同じ) */
+const SERIES_ORDER = ["sugaku", "kokugo", "rika", "shakai", "eigo", "rekishi", "world", "eikaiwa", "uchu", "karada", "kyoryu",
+                      "patissier", "hoiku", "kango", "ishi", "biyo", "seibi", "gamedev", "code", "ai", "kabu"];
+function gameTilesHtml(){
+  const root = GAME.id === "world" ? "./" : "../";
+  const rank = id => { const k = SERIES_ORDER.indexOf(id); return k < 0 ? 999 : k; };
+  const tiles = [{ name: "かずとも", img: "https://kazutomo.app/logo-mark.webp", href: "https://kazutomo.app/play", cur: false }]
+    .concat(SERIES.slice().sort((a, b) => rank(a.id) - rank(b.id)).map(g => ({ name: g.name.replace(/^フリック/, ""), img: root + g.dir + "apple-touch-icon.png", href: root + g.dir, cur: g.id === GAME.id })));
+  return '<div class="pg-grid">' + tiles.map(x => '<a href="' + x.href + '"' + (x.cur ? ' aria-current="page"' : '') + '><span class="tile"><img src="' + x.img + '" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span>' + esc(x.name) + '</span></a>').join("") + '</div>';
+}
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
   {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
@@ -3424,13 +3435,8 @@ function drawProf(){
     : '<p class="prof-link" id="prof-link">ログインすると、きろくが のこり ランキングに 名前が のります<br><a class="pill" href="' + LOGIN_URL + '">🔑 ログイン</a></p>';
   // 🧭 ゲームを えらぶ(⚠️ 一覧は マイページの 中だけ。かずともの あそぶ画面の 下には もう 無い。けいくん 2026-09-30)
   // ⚠️ 一覧を **この 画面の 中に**(けいくん 2026-09-30「この画面の中です。1番下に飛ばなくても 遊ぶ人も ゲームも 選べる」)。かずとも(計算)+ SERIES の 全部
-  const root = GAME.id === "world" ? "./" : "../";
-  // ⚠️ タイルは **絵文字ではなく 各ゲームの アイコンの絵**(けいくん 2026-09-30「このアイコン画像も フリックゲームのアイコン画像に」)。
-  //   各ゲームの `apple-touch-icon.png`(ホーム画面の アイコンと 同じ絵)。かずともは `logo-mark.webp`。かずとも側の `GameGrid` と 同じ絵に なる
-  const tiles = [{ name: "かずとも", img: "https://kazutomo.app/logo-mark.webp", href: "https://kazutomo.app/play", cur: false }]
-    .concat(SERIES.map(g => ({ name: g.name.replace(/^フリック/, ""), img: root + g.dir + "apple-touch-icon.png", href: root + g.dir, cur: g.id === GAME.id })));
-  const link2 = link + '<div class="prof-set"><p class="ttl">🧭 ゲームを えらぶ</p><div class="pg-grid">' +
-    tiles.map(x => '<a href="' + x.href + '"' + (x.cur ? ' aria-current="page"' : '') + '><span class="tile"><img src="' + x.img + '" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span>' + esc(x.name) + '</span></a>').join("") + '</div></div>';
+  // ⚠️ タイルは **絵文字ではなく 各ゲームの アイコンの絵**(けいくん 2026-09-30「このアイコン画像も フリックゲームのアイコン画像に」)。作るのは gameTilesHtml()(ページの いちばん下と 同じ)
+  const link2 = link + '<div class="prof-set"><p class="ttl">🧭 ゲームを えらぶ</p>' + gameTilesHtml() + '</div>';
   const bindUnlink = () => { const u = $("#prof-unlink"); if(u) u.addEventListener("click", () => {
     if(!confirm("アカウントと つなぐのを やめます。\nこの スマホに のこっている きろくは 消えません。いいですか？")) return;
     try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){}
@@ -3562,13 +3568,9 @@ if(!GAME.hero){ const h = $(".hero"); if(h) h.remove(); }
 if(GAME.lead) $("#lead").textContent = GAME.lead;
 if(GAME.how) $("#how1").textContent = GAME.how;
 if(GAME.rule) $("#rule1").textContent = GAME.rule;
-/* シリーズの ほかのゲームへ */
-{ const others = SERIES.filter(g => g.id !== GAME.id);
-  const p = document.createElement("p"); p.className = "series";
-  // ⚠️ 道は シリーズの 根もと から(この ページが 根もと = 世界 なら "./"、子の フォルダなら "../")。⚠️ "../flick-travel/" と 書くと kazutomo.app/flick/ の 下で こわれる
-  const root = GAME.id === "world" ? "./" : "../";
-  // ⚠️ 名前の 前は **絵文字ではなく 各ゲームの アイコンの絵**(マイページの「🧭 ゲームを えらぶ」と 同じ `apple-touch-icon.png`。けいくん 2026-09-30「メニューにあるのと同じアイコンに」)
-  p.innerHTML = "🧭 かずとも の ゲーム: " + others.map(g => '<a href="' + root + g.dir + '"><img class="series-ic" src="' + root + g.dir + 'apple-touch-icon.png" alt="" width="22" height="22" loading="lazy" decoding="async">' + esc(g.name) + '</a>').join("");
+/* シリーズの ほかのゲームへ: いちばん下にも マイページと 同じ「🧭 ゲームを えらぶ」の タイル(けいくん 2026-09-30「これと同じ表記にしてください」。まえは 絵文字 + 名前の 文字の ならび) */
+{ const p = document.createElement("div"); p.className = "series";
+  p.innerHTML = '<p class="series-ttl">🧭 ゲームを えらぶ</p>' + gameTilesHtml();
   const al = $(".about-link"); if(al) al.before(p); }
 
 /* 名言モード(QUOTES)は しくみを 残して 画面には 出さない(2026-09 に 名所だけに した) */

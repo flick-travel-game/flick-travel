@@ -3331,9 +3331,10 @@ function drawProf(){
   // いま えらんでいる人・せってい
   const body = $("#prof-body");
   // おうちの方の アカウント(ランキングの ⚠️ の すぐ下に 1行)
+  // ⚠️ `/account` へは **小さな リンクだけ**(大きな ボタンに しない。けいくん 2026-09-30「マイページで /account に 飛ばされる。動線が悪すぎる」)
   // ⚠️ 2026-09-30: ここから ログインできる(けいくん「この右側の画面で ログイン出来るようにしてください」)。はじめての 人(なまえの 欄が 出ている とき)にも 出す
   const link = signedIn()
-    ? '<p class="prof-link" id="prof-link">✅ アカウントと つながっています<br>' + (linkToken() ? '<button type="button" class="lnk" id="prof-unlink">つなぐのを やめる</button>' : '<a class="pill" href="https://kazutomo.app/account">アカウントへ</a>') + '</p>'
+    ? '<p class="prof-link" id="prof-link">✅ アカウントと つながっています<br>' + (linkToken() ? '<button type="button" class="lnk" id="prof-unlink">つなぐのを やめる</button>' : '<a class="lnk" href="https://kazutomo.app/account">アカウントの せってい ›</a>') + '</p>'
     : '<p class="prof-link" id="prof-link">ログインすると、きろくが のこり ランキングに 名前が のります<br><a class="pill" href="' + LOGIN_URL + '">🔑 ログイン</a></p>';
   // 🧭 ゲームを えらぶ(⚠️ 一覧は マイページの 中だけ。かずともの あそぶ画面の 下には もう 無い。けいくん 2026-09-30)
   // ⚠️ 一覧を **この 画面の 中に**(けいくん 2026-09-30「この画面の中です。1番下に飛ばなくても 遊ぶ人も ゲームも 選べる」)。かずとも(計算)+ SERIES の 全部

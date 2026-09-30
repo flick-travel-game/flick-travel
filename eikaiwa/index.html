@@ -951,7 +951,10 @@ function planCached(){
 }
 function planOf(){ return PLAN || planCached(); }
 /* しるしが あって、サーバーが「つながっていない」と 言っていなければ つながっている(聞いている あいだも) */
-function signedIn(){ if(!linkToken()) return false; const p = planOf(); return !p || p.signedIn !== false; }
+/* ⚠️ 2026-09-30 から kazutomo.app の 下なので、おうちの方の **ログインの クッキー**でも つながる(しるしが 無くても サーバーが signedIn:true と 言う) */
+function signedIn(){ const p = planOf(); if(p && p.signedIn === true) return true; if(!linkToken()) return false; return !p || p.signedIn !== false; }
+/* おうちの方の ログイン(かずとも本体)。ログインが 終わると この ゲームへ もどる(?next=)。github.io で ひらいて いても kazutomo.app へ */
+const LOGIN_URL = "https://kazutomo.app/account?next=" + encodeURIComponent("/flick/" + (GAME.dir || ""));
 function graphOk(){ const p = planOf(); return !p || p.graph !== false; }
 async function fetchPlan(force){
   const tok = linkToken();
@@ -2040,15 +2043,16 @@ function drawProf(){
   // いま えらんでいる人・せってい
   const body = $("#prof-body");
   // おうちの方の アカウント(ランキングの ⚠️ の すぐ下に 1行)
+  // ⚠️ 2026-09-30: ここから ログインできる(けいくん「この右側の画面で ログイン出来るようにしてください」)。はじめての 人(なまえの 欄が 出ている とき)にも 出す
   const link = signedIn()
-    ? '<p class="prof-link" id="prof-link">✅ おうちの方の アカウントと つながっています<button type="button" class="lnk" id="prof-unlink">つなぐのを やめる</button></p>'
-    : '<p class="prof-link" id="prof-link">おうちの方の アカウントと つなぐと、きろくが のこり ランキングに 名前が のります<br><a href="' + LINK_URL + '">おうちの方へ</a></p>';
+    ? '<p class="prof-link" id="prof-link">✅ おうちの方の アカウントと つながっています' + (linkToken() ? '<button type="button" class="lnk" id="prof-unlink">つなぐのを やめる</button>' : '<a class="lnk" href="https://kazutomo.app/account">おうちの方の 画面</a>') + '</p>'
+    : '<p class="prof-link" id="prof-link">おうちの方が ログインすると、きろくが のこり ランキングに 名前が のります<br><a href="' + LOGIN_URL + '">🔑 おうちの方の ログイン</a></p>';
   const bindUnlink = () => { const u = $("#prof-unlink"); if(u) u.addEventListener("click", () => {
     if(!confirm("おうちの方の アカウントと つなぐのを やめます。\nこの スマホに のこっている きろくは 消えません。いいですか？")) return;
     try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){}
     PLAN = null; recMemo = null; drawProf(); afterProfileChange(); fetchPlan(true);
   }); };
-  if(!p || profEditing !== null){ body.innerHTML = (!p && profEditing === null) ? link : ""; bindUnlink(); return; }
+  if(!p || profEditing !== null){ body.innerHTML = link; bindUnlink(); return; }
   const ph = photoOf(p.id), bg = byGrade();
   body.innerHTML =
     '<div class="prof-cur"><button type="button" class="pic" id="prof-pic" aria-label="アイコンの 写真を かえる">'+tileHtml(p, ci, "md")+'<span class="cam">📷</span></button>'+
@@ -2187,7 +2191,7 @@ $("#next-lv").addEventListener("click", () => { store("flick-last", ""); start(m
 $("#home-btn").addEventListener("click", () => { store("flick-last", ""); show("home"); showBest(); });
 showBest();
 restoreLast();
-fetchPlan();  // できることを かずとも に 聞く(かえってきたら グラフ・おしらせを かきなおす)
+fetchPlan(true);  // できることを かずとも に 聞く(かえってきたら グラフ・おしらせを かきなおす)。⚠️ ログインは しるし なしで 変わるので 毎回 聞く
 exchangeLink().then(() => { if(TRIAL_AFTER_LINK) fetchPlan(true); fetchTrial(); });  // 登録なしの 体験: 遊べるか・のこり何日か(つながらなければ 3日まで そのまま)
 // ⚠️ ネットに つながった・画面に もどった ときにも 聞きなおす(1分に 1回まで)
 (function(){ let last = 0; const again = () => { if(Date.now() - last < 60000) return; last = Date.now(); fetchTrial(); };

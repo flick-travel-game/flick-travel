@@ -446,3 +446,7 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - 体験の しるしは かずとも本体と **同じ localStorage**(`kz-trial`。`trialToken()` は kz-trial → flick-trial の 順に 読み、`storeTrial` で 両方に しまう)
 - 「つなぐ」の しくみ(`?link=` / `flick-link` / `authHeaders`)は **残してある**(古い 端末の ため)。`LINK_URL` の 先(kazutomo.app/flick-link?to=)は ログインしていれば すぐ ゲームへ もどす
 - 確かめかた: scratchpad の `fpath.mjs`(`/flick/` の 下で 絵・台本の 道と シリーズの リンクが 通る)
+- **「だれが あそぶ?」の 画面から ログインできる**(けいくん 2026-09-30「この右側の画面でログイン出来るようにしてください」)。
+  `drawProf` の いちばん下に「🔑 おうちの方の ログイン」(`LOGIN_URL` = kazutomo.app/account?next=/flick/<dir>/)。はじめての 人(なまえの 欄)にも 出す。
+  ログインずみなら「✅ つながっています」+「おうちの方の 画面」。`signedIn()` は サーバーが `signedIn:true` と 言えば しるしが 無くても true(クッキー)。
+  読みこみ時の `fetchPlan(true)`(ログインは しるし なしで 変わるので 毎回 聞く)

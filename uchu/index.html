@@ -399,6 +399,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .pg-grid a{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#334155;font-size:10px;font-weight:900;line-height:13px;text-align:center;min-width:0}
 .pg-grid a[aria-current]{opacity:.5}
 .pg-grid .tile{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;background:#f1f5f9;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.pg-grid .tile img{width:100%;height:100%;object-fit:cover;border-radius:14px;display:block}
 .prof-link .pill{display:inline-block;margin-top:8px;padding:10px 18px;border-radius:999px;background:#1e293b;color:#fff;font-size:13px;font-weight:900;text-decoration:none;line-height:20px}  /* 指で 押せる 大きさ(2026-09-30 けいくん「ボタン押せないよ」) */
 .flick-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1000;max-width:calc(100% - 32px);padding:12px 18px;border-radius:999px;background:#1e293b;color:#fff;font-size:14px;font-weight:900;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:opacity .4s}
 .flick-toast.out{opacity:0}
@@ -2700,10 +2701,12 @@ function drawProf(){
   // 🧭 ゲームを えらぶ(⚠️ 一覧は マイページの 中だけ。かずともの あそぶ画面の 下には もう 無い。けいくん 2026-09-30)
   // ⚠️ 一覧を **この 画面の 中に**(けいくん 2026-09-30「この画面の中です。1番下に飛ばなくても 遊ぶ人も ゲームも 選べる」)。かずとも(計算)+ SERIES の 全部
   const root = GAME.id === "world" ? "./" : "../";
-  const tiles = [{ name: "かずとも", icon: "🔢", href: "https://kazutomo.app/play", cur: false }]
-    .concat(SERIES.map(g => ({ name: g.name.replace(/^フリック/, ""), icon: g.icon, href: root + g.dir, cur: g.id === GAME.id })));
+  // ⚠️ タイルは **絵文字ではなく 各ゲームの アイコンの絵**(けいくん 2026-09-30「このアイコン画像も フリックゲームのアイコン画像に」)。
+  //   各ゲームの `apple-touch-icon.png`(ホーム画面の アイコンと 同じ絵)。かずともは `logo-mark.webp`。かずとも側の `GameGrid` と 同じ絵に なる
+  const tiles = [{ name: "かずとも", img: "https://kazutomo.app/logo-mark.webp", href: "https://kazutomo.app/play", cur: false }]
+    .concat(SERIES.map(g => ({ name: g.name.replace(/^フリック/, ""), img: root + g.dir + "apple-touch-icon.png", href: root + g.dir, cur: g.id === GAME.id })));
   const link2 = link + '<div class="prof-set"><p class="ttl">🧭 ゲームを えらぶ</p><div class="pg-grid">' +
-    tiles.map(x => '<a href="' + x.href + '"' + (x.cur ? ' aria-current="page"' : '') + '><span class="tile">' + x.icon + '</span><span>' + esc(x.name) + '</span></a>').join("") + '</div></div>';
+    tiles.map(x => '<a href="' + x.href + '"' + (x.cur ? ' aria-current="page"' : '') + '><span class="tile"><img src="' + x.img + '" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span>' + esc(x.name) + '</span></a>').join("") + '</div></div>';
   const bindUnlink = () => { const u = $("#prof-unlink"); if(u) u.addEventListener("click", () => {
     if(!confirm("アカウントと つなぐのを やめます。\nこの スマホに のこっている きろくは 消えません。いいですか？")) return;
     try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){}

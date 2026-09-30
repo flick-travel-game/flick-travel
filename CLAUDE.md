@@ -475,3 +475,4 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - ⚠️ 1枚の 中の kazutomo.app/account への 道は **小さな 下線の リンク「アカウントの せってい ›」だけ**(けいくん 2026-09-30「マイページで /account に 飛ばされる。動線が悪すぎる」)。大きな ボタン(`.pill`)に 戻さない
 - ⚠️ **kazutomo.app/account の ページは 無くなった**(2026-09-30)。ログインは `LOGIN_URL` = `https://kazutomo.app/play?my=1&next=/flick/<dir>/`(かずともの マイページの 中で ログイン → この ゲームへ もどる)。
   つながっている ときの 小さな リンクは「かずともの マイページで せってい ›」= `/play?my=1#account`
+- ⚠️ マイページの「🧭 ゲームを えらぶ」の タイルは **各ゲームの `apple-touch-icon.png`**(絵文字では ない。けいくん 2026-09-30「このアイコン画像も フリックゲームのアイコン画像に」)。かずともは `https://kazutomo.app/logo-mark.webp`。SERIES の `icon`(絵文字)は ほかの ところで まだ 使う

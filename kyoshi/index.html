@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリック英語</title>
+<title>フリック教師</title>
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="favicon.png?v=3">
+<link rel="icon" type="image/png" href="../favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -422,12 +422,10 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=3" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="590" height="157" aria-hidden="true">
+      <span class="logo-text">フリック教師</span>
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリック英語</h1>
-    <img class="hero" src="hero.webp?v=3" alt="フリック英語。ロンドンと ニューヨークの 町で 男の子と 白い 犬が 旅をしながら、不規則動詞・時制・受動態・不定詞と動名詞・分詞・関係詞・比較・仮定法・熟語の 例文の カードに かこまれている 絵" width="1536" height="1024">
+    <h1 class="sr-only">フリック教師</h1>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -476,7 +474,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     </section>
     <div class="how">
       <p id="how1">表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。</p>
-      <p>大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくて大丈夫。</p>
+      <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
       <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
     <p class="trial-note hidden" id="trial-note"></p>
     <p class="about-link"><a href="https://kazutomo.app/" id="about-link">📖 かずとも の ホーム</a></p>
@@ -495,7 +493,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <span class="clock display" id="clock">0.00</span>
     </div>
     <div class="field">
-    <input class="answer" id="ans" type="text" lang="en" inputmode="text"
+    <input class="answer" id="ans" type="text" lang="ja" inputmode="text"
       autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done"
       aria-label="ここに入力">
     <span class="typed" id="typed"></span>
@@ -549,15 +547,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=6fa79c09"></script>
-<script src="eigo.js?v=a50b1e75"></script>
+<script src="terms.js?v=d94b0c35"></script>
+<script src="kyoshi.js?v=54662490"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
    前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"eigo", name:"フリック英語", modes:(typeof EIGO === "object" ? EIGO.modes : []), assets:"../", logo:true, hero:true, dir:"eigo/", lead:"不規則動詞・時制・受動態・不定詞と動名詞・分詞・関係詞・比較・仮定法・熟語を、例文を フリックで 打ち写して おぼえよう。打ち終わると 日本語訳と 文法の ポイントが 出て、🔊で 発音も 聞けるよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。", how:"表示された 英語を、そのまま打ち写してね。大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。例文は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。iPhone は 日本語キーボードの「ABC」なら フリックで 英語が 打てるよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。" };
+const GAME = { id:"kyoshi", name:"フリック教師", modes:(typeof KYOSHI === "object" ? KYOSHI.modes : []), assets:"../", logo:false, hero:false, dir:"kyoshi/", lead:"教育の 考えかた・子どもの 心と 育ち・授業の つくりかた・学級と 学校の しくみ・支える 指導・教育の 法律と 制度・教育の 歴史と 世界の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、教職教養の どの 科目か・しくみ図の どこに あるのかが 出るよ。学校で 聞く ことばから はじめて、教員採用試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。本物の 試験問題では ないので、試験の 勉強には 大学の 教科書や 問題集も 使ってね。こまった ことが あったら、まわりの 大人や 学校の 先生に 相談してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、教育の ことばと しくみが つながって 見えてくるよ。文部科学省・教育委員会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

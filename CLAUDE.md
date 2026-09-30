@@ -12,7 +12,8 @@
 3. **新しい旅を 足したら** `sanctuary-chiba/speed-king` の `src/lib/flick.ts` の **`FLICK_MODES`** に 足す
    (わすれると 記録が「旅の しゅるいが おかしいです」で ことわられる。2026-09-26 に 宇宙・からだで 1回 あった)。
    `/flick-link?to=` で 行ける ゲームは `FLICK_LINK_TARGETS`。
-   規約・特商法などの 文(`src/lib/flick-url.ts` の `FLICK_SERIES_GAMES`)を 変えるのは **お金・規約の 変更なので けいくんの OK を もらってから**
+   ✅ **新しい ゲームを 販売ページ(`src/lib/games.ts` の `HOME_GAMES`)と 規約の 一覧(`src/lib/flick-url.ts` の `FLICK_SERIES_GAMES`)に 足すのは 聞かなくて よい**
+   (けいくん決定 2026-09-30「これからは確認しなくてOK」)。⚠️ 料金・規約の 文そのものを 変えるのは これまでどおり けいくんの OK を もらってから
 4. 本番は GitHub Pages(`https://flick-travel-game.github.io/flick-travel/`)。main に 入ると 1〜2分で 出る。
    コミットの 名前は `flick-travel-game <flick-travel-game@users.noreply.github.com>`
    ⚠️ PR を 取りこむときは **rebase**(`merge_method: "rebase"`)。**squash だと 取りこんだ コミットの 名前が けいくんの アカウントに 変わる**(2026-09-26 整備 #20 で 起きた)
@@ -206,7 +207,7 @@
     からだの 部品の 絵(心臓・肺・腎臓・脳)/「3 実践問題(4択クイズ)」(レベル3は 上級)。けいくんに 直す 文を わたして 作りなおして もらった
   - 2回目の 横長は 札の ことば 28こ ぜんぶ ゲームに ある ことを 読みで 確かめた(4択の まちがいの 選択肢「けつあつけい」だけ ゲームに 無いが、まちがいの 選択肢なので よい)
   - 四角い 絵の 小さい まちがい(「ばいタル」・「こうせいざい」など)は アイコンの 大きさでは 読めないので そのまま
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ(`HOME_GAMES`)と 規約の 文(`FLICK_SERIES_GAMES`)は **絵と けいくんの OK を もらってから**
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #265)・販売ページ `HOME_GAMES`(夢のしごと の 章、看護師の となり)・規約の 一覧 `FLICK_SERIES_GAMES`(speed-king #266)に 足した
 - 確かめかた: `node tools/play-all.mjs ishi/`(4とおりの 打ちかたで 全49ステージ)/ `node tools/click-all.mjs ishi/`(W=320 も)
 
 ## 入力が 止まる バグと 見つけかた(けいくん 2026-09-28「ゲームの途中で入力できなくなった」)

@@ -299,7 +299,7 @@ def build(gid, g):
     d = ROOT / gid; d.mkdir(exist_ok=True)
     (d / "index.html").write_text(out, encoding="utf-8")
     (d / "manifest.webmanifest").write_text(json.dumps({
-        "name": g["name"], "short_name": g["name"], "start_url": "./", "scope": "./", "display": "standalone",
+        "name": g["name"], "short_name": g["name"], "start_url": "./", "scope": "/", "display": "standalone",  # scope は kazutomo.app ぜんぶ(2026-09-30。ホーム画面の アプリの 中で ほかの ゲーム・ログインへ 行っても 同じ アプリ = 同じ ログインの まま)
         "background_color": g["color"], "theme_color": g["color"],
         "icons": [{"src": ("" if art else "../") + "icon-512.png?v=" + str((art or {}).get("iconv", 2)), "sizes": "512x512", "type": "image/png"}, {"src": ("" if art else "../") + "apple-touch-icon.png?v=" + str((art or {}).get("iconv", 2)), "sizes": "180x180", "type": "image/png"}]}, ensure_ascii=False, indent=2), encoding="utf-8")
     (d / ".nojekyll").write_text("", encoding="utf-8")

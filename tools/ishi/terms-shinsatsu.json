@@ -1,0 +1,1199 @@
+[
+ {
+  "id": "sn-shinsatsu",
+  "name": "診察",
+  "reading": "しんさつ",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 1,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "shinsatsu:uketsuke",
+  "relatedTerms": [
+   "sn-monshin",
+   "sn-choshinki"
+  ],
+  "description": "お医者さんが 患者さんの 話を 聞き、からだを 見たり さわったり して ようすを 調べる こと。病気を 見つけて 助ける ための 出発点です。"
+ },
+ {
+  "id": "sn-monshin",
+  "name": "問診",
+  "reading": "もんしん",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 1,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-shuso",
+   "sn-shinsatsu"
+  ],
+  "description": "いつから どこが どう つらいかを 患者さんに 聞く こと。病気の 手がかりを 集めて、診断を 考える 第一歩です。"
+ },
+ {
+  "id": "sn-choshinki",
+  "name": "聴診器",
+  "reading": "ちょうしんき",
+  "journey": "shinsatsu",
+  "category": "道具",
+  "difficulty": 1,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "shinsatsu:choshin",
+  "relatedTerms": [
+   "sn-choshin",
+   "sn-shinon"
+  ],
+  "description": "からだの 中の 音を 聞く 道具。お医者さんは むねや せなかに あてて、心臓や 肺の 音から からだの ようすを 考えます。"
+ },
+ {
+  "id": "sn-taion",
+  "name": "体温",
+  "reading": "たいおん",
+  "journey": "shinsatsu",
+  "category": "はかる",
+  "difficulty": 1,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "shinsatsu:hakaru",
+  "relatedTerms": [
+   "sn-hatsunetsu",
+   "sn-vital"
+  ],
+  "description": "からだの あたたかさ。診察では まず はかって、熱が あるかどうかを 知り、病気を 考える 手がかりに します。"
+ },
+ {
+  "id": "sn-ketsuatsu",
+  "name": "血圧",
+  "reading": "けつあつ",
+  "journey": "shinsatsu",
+  "category": "はかる",
+  "difficulty": 1,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "💓",
+  "mapNode": "shinsatsu:hakaru",
+  "relatedTerms": [
+   "sn-myakuhaku",
+   "sn-vital"
+  ],
+  "description": "心臓から 送りだされた 血液が 血管を おす 力。うでで はかり、心臓や 血管の ようすを 知る 大切な 手がかりに なります。"
+ },
+ {
+  "id": "sn-myakuhaku",
+  "name": "脈拍",
+  "reading": "みゃくはく",
+  "journey": "shinsatsu",
+  "category": "はかる",
+  "difficulty": 1,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "💓",
+  "mapNode": "shinsatsu:hakaru",
+  "relatedTerms": [
+   "sn-ketsuatsu",
+   "sn-doki"
+  ],
+  "description": "心臓が 動く たびに 血管に 伝わる 動き。手首などに 指を あてて、速さや リズムが そろっているかを 確かめます。"
+ },
+ {
+  "id": "sn-hatsunetsu",
+  "name": "発熱",
+  "reading": "はつねつ",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🤒",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-taion",
+   "sn-kentaikan"
+  ],
+  "description": "体温が いつもより 高く なる こと。からだが ばいきんなどと たたかって いる 合図の ことも あり、お医者さんは いつから 出たかも 聞きます。"
+ },
+ {
+  "id": "sn-seki",
+  "name": "せき",
+  "reading": "せき",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "😷",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-kokyuon",
+   "sn-gaiso"
+  ],
+  "description": "のどや 気管に 入った ものを 外へ 出そうと する からだの はたらき。いつから どんな せきかを 聞いて、原因を 考えます。"
+ },
+ {
+  "id": "sn-hanamizu",
+  "name": "鼻水",
+  "reading": "はなみず",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🤧",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-seki",
+   "sn-hatsunetsu"
+  ],
+  "description": "鼻の 中から 出る 水のような もの。色や ねばりけ、ほかの しょうじょうと いっしょに 聞いて、原因を 考える 手がかりに します。"
+ },
+ {
+  "id": "sn-zutsu",
+  "name": "頭痛",
+  "reading": "ずつう",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🤕",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-memai",
+   "sn-toutsu"
+  ],
+  "description": "頭が 痛む こと。お医者さんは 痛む 場所や 始まりかた、どんな 痛みかを ていねいに 聞いて、原因を 考えます。"
+ },
+ {
+  "id": "sn-fukutsu",
+  "name": "腹痛",
+  "reading": "ふくつう",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "😣",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-hakike",
+   "sn-choseidoon"
+  ],
+  "description": "おなかが 痛む こと。どこが いつから 痛むかを 聞き、おなかに そっと ふれて、原因を さがす 手がかりに します。"
+ },
+ {
+  "id": "sn-hakike",
+  "name": "吐き気",
+  "reading": "はきけ",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🤢",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-oshin",
+   "sn-fukutsu"
+  ],
+  "description": "むかむか して はきたく なる 感じ。いつ 始まったか、食べた ものなどを 聞いて、原因を 考える 手がかりに します。"
+ },
+ {
+  "id": "sn-memai",
+  "name": "めまい",
+  "reading": "めまい",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "💫",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-zutsu",
+   "sn-shibire"
+  ],
+  "description": "まわりが ぐるぐる 回る、ふわふわ するなどの 感じ。どんな めまいかを くわしく 聞くと、原因を しぼる 手がかりに なります。"
+ },
+ {
+  "id": "sn-kaoiro",
+  "name": "顔色",
+  "reading": "かおいろ",
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 1,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "😊",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-shishin",
+   "sn-cyanosis"
+  ],
+  "description": "顔の 色の ようす。お医者さんは 診察室に 入って きた ときから 顔色を 見て、からだの ようすを 考える 手がかりに します。"
+ },
+ {
+  "id": "sn-ikigire",
+  "name": "息切れ",
+  "reading": "いきぎれ",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "😮‍💨",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-doki",
+   "sn-kokyuon"
+  ],
+  "description": "少し 動いた だけで 息が はずんで 苦しく 感じる こと。どれくらい 動くと 起きるかを 聞いて、心臓や 肺の ようすを 考えます。"
+ },
+ {
+  "id": "sn-mukumi",
+  "name": "むくみ",
+  "reading": "むくみ",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "shinsatsu:shokushin",
+  "relatedTerms": [
+   "sn-fushu",
+   "sn-shokushin"
+  ],
+  "description": "からだに 水分が たまって、足や 顔が はれぼったく なる こと。指で おして あとが 残るかを 見て 確かめます。"
+ },
+ {
+  "id": "sn-shibire",
+  "name": "しびれ",
+  "reading": "しびれ",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-hansha",
+   "sn-memai"
+  ],
+  "description": "手や 足が じんじん して、感じかたが にぶく なる こと。どこが しびれるかを 聞き、神経の はたらきを 考える 手がかりに します。"
+ },
+ {
+  "id": "sn-doki",
+  "name": "動悸",
+  "reading": "どうき",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 1,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "💗",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-myakuhaku",
+   "sn-ikigire"
+  ],
+  "description": "心臓の ドキドキを 強く 感じる こと。どんな ときに 起きるか、脈の リズムは どうかを 確かめて、原因を 考えます。"
+ },
+ {
+  "id": "sn-karte",
+  "name": "カルテ",
+  "reading": "かるて",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 1,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "shinsatsu:karte",
+  "relatedTerms": [
+   "sn-shinryoroku",
+   "sn-soap"
+  ],
+  "description": "診察の 内容を 書きのこす 記録。聞いた 話や 調べた 結果、考えた ことを 書いて、ほかの スタッフとも 共有します。"
+ },
+ {
+  "id": "sn-shokaijo",
+  "name": "紹介状",
+  "reading": "しょうかいじょう",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 1,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "✉️",
+  "mapNode": "shinsatsu:renkei",
+  "relatedTerms": [
+   "sn-karte",
+   "sn-shindan"
+  ],
+  "description": "ほかの 病院の お医者さんに 患者さんを つなぐ ための 手紙。これまでの ようすや 調べた ことを 書いて、診療が とぎれないように します。"
+ },
+ {
+  "id": "sn-shindan",
+  "name": "診断",
+  "reading": "しんだん",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "shinsatsu:shindan",
+  "relatedTerms": [
+   "sn-kanbetsu",
+   "sn-rinshosuiron"
+  ],
+  "description": "話や 診察、検査の 結果を もとに、どんな 病気かを 見きわめる こと。正しい 治療を えらぶ ための 大切な 一歩です。"
+ },
+ {
+  "id": "sn-choshin",
+  "name": "聴診",
+  "reading": "ちょうしん",
+  "journey": "shinsatsu",
+  "category": "音を聞く",
+  "difficulty": 2,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "shinsatsu:choshin",
+  "relatedTerms": [
+   "sn-choshinki",
+   "sn-shinon",
+   "sn-kokyuon"
+  ],
+  "description": "聴診器で からだの 中の 音を 聞く 診察。心臓や 肺、おなかの 音を 聞いて、ふだんと ちがう 音が ないかを 確かめます。"
+ },
+ {
+  "id": "sn-shokushin",
+  "name": "触診",
+  "reading": "しょくしん",
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 2,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🖐",
+  "mapNode": "shinsatsu:shokushin",
+  "relatedTerms": [
+   "sn-dashin",
+   "sn-lymph"
+  ],
+  "description": "手で からだに ふれて 調べる 診察。かたさや はれ、痛む ところが ないかを 指先で ていねいに 確かめます。"
+ },
+ {
+  "id": "sn-hansha",
+  "name": "反射",
+  "reading": "はんしゃ",
+  "journey": "shinsatsu",
+  "category": "はかる",
+  "difficulty": 2,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🔨",
+  "mapNode": "shinsatsu:hakaru",
+  "relatedTerms": [
+   "sn-dakenki",
+   "sn-shinbukenhansha"
+  ],
+  "description": "刺激に 対して、思わず からだが 動く はたらき。ひざを 軽く たたく などして、神経が うまく つながって いるかを 調べます。"
+ },
+ {
+  "id": "sn-ishiki",
+  "name": "意識",
+  "reading": "いしき",
+  "journey": "shinsatsu",
+  "category": "はかる",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "shinsatsu:hakaru",
+  "relatedTerms": [
+   "sn-vital",
+   "sn-taikohansha"
+  ],
+  "description": "目が さめていて、まわりの ことが 分かり 受け答えが できる 状態。お医者さんは 呼びかけへの 反応を 見て ようすを 確かめます。"
+ },
+ {
+  "id": "sn-hosshin",
+  "name": "発疹",
+  "reading": "ほっしん",
+  "acceptedReadings": [
+   "ほっしん",
+   "はっしん"
+  ],
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 2,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-shishin",
+   "sn-hatsunetsu"
+  ],
+  "description": "皮膚に 出る 赤い ぽつぽつや もりあがり。形や 色、広がりかたを よく 見る ことが、原因を 考える 手がかりに なります。"
+ },
+ {
+  "id": "sn-shinon",
+  "name": "心音",
+  "reading": "しんおん",
+  "journey": "shinsatsu",
+  "category": "音を聞く",
+  "difficulty": 2,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "💓",
+  "mapNode": "shinsatsu:choshin",
+  "relatedTerms": [
+   "sn-choshin",
+   "sn-shinzatsuon"
+  ],
+  "description": "心臓が 動く ときに 出る 音。聴診器で 聞いて、リズムや 音の ようすから 心臓の はたらきを 考えます。"
+ },
+ {
+  "id": "sn-kokyuon",
+  "name": "呼吸音",
+  "reading": "こきゅうおん",
+  "journey": "shinsatsu",
+  "category": "音を聞く",
+  "difficulty": 2,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "shinsatsu:choshin",
+  "relatedTerms": [
+   "sn-choshin",
+   "sn-zenmei"
+  ],
+  "description": "息を すったり はいたり する ときに 肺で 聞こえる 音。左右を くらべながら 聞いて、肺の ようすを 確かめます。"
+ },
+ {
+  "id": "sn-odan",
+  "name": "黄疸",
+  "reading": "おうだん",
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 2,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-shishin",
+   "sn-ganken"
+  ],
+  "description": "皮膚や 白目が 黄色っぽく 見える 状態。お医者さんは 目で 見て 気づき、からだの 中の ようすを 調べる きっかけに します。"
+ },
+ {
+  "id": "sn-lymph",
+  "name": "リンパ節",
+  "reading": "りんぱせつ",
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 2,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🫘",
+  "mapNode": "shinsatsu:shokushin",
+  "relatedTerms": [
+   "sn-shokushin",
+   "sn-hatsunetsu"
+  ],
+  "description": "首や わきの 下などに ある、からだを 守る 小さな 関所。触診で はれて いないかを 確かめます。"
+ },
+ {
+  "id": "sn-shishin",
+  "name": "視診",
+  "reading": "ししん",
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 2,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-kaoiro",
+   "sn-shokushin"
+  ],
+  "description": "目で 見て 調べる 診察。顔色や 皮膚、姿勢や 動きかたなどを よく 見て、からだの ようすを つかみます。"
+ },
+ {
+  "id": "sn-dashin",
+  "name": "打診",
+  "reading": "だしん",
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 2,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "👆",
+  "mapNode": "shinsatsu:dashin",
+  "relatedTerms": [
+   "sn-shokushin",
+   "sn-choshin"
+  ],
+  "description": "からだに あてた 指を もう 片方の 指で 軽く たたき、ひびく 音を 聞く 診察。中に 空気や 水が あるかの 手がかりに します。"
+ },
+ {
+  "id": "sn-shokuyokufushin",
+  "name": "食欲不振",
+  "reading": "しょくよくふしん",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 2,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-kentaikan",
+   "sn-hakike"
+  ],
+  "description": "食べたい 気持ちが わかなく なる こと。いつから どれくらいかを 聞き、ほかの しょうじょうと 合わせて 考えます。"
+ },
+ {
+  "id": "sn-kentaikan",
+  "name": "倦怠感",
+  "reading": "けんたいかん",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 2,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "😩",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-hatsunetsu",
+   "sn-shokuyokufushin"
+  ],
+  "description": "からだが だるく、つかれが とれない 感じ。多くの 病気で 出るので、いつから どんな だるさかを ていねいに 聞きます。"
+ },
+ {
+  "id": "sn-vital",
+  "name": "バイタルサイン",
+  "reading": "ばいたるさいん",
+  "journey": "shinsatsu",
+  "category": "はかる",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "shinsatsu:hakaru",
+  "relatedTerms": [
+   "sn-taion",
+   "sn-ketsuatsu",
+   "sn-myakuhaku"
+  ],
+  "description": "体温・脈拍・血圧・呼吸・意識など、からだが 元気に はたらいて いるかを 示す 大切な しるし。診察の たびに 確かめます。"
+ },
+ {
+  "id": "sn-allergyreki",
+  "name": "アレルギー歴",
+  "reading": "あれるぎーれき",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🌼",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-fukuyakureki",
+   "sn-kioreki"
+  ],
+  "description": "これまでに 食べ物や くすりなどで アレルギーが 出た ことが あるか。安全に 診療する ために、かならず 聞いて おく ことです。"
+ },
+ {
+  "id": "sn-kyokan",
+  "name": "共感",
+  "reading": "きょうかん",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "shinsatsu:setsumei",
+  "relatedTerms": [
+   "sn-keicho",
+   "sn-iryomensetsu"
+  ],
+  "description": "患者さんの つらさや 気持ちを 分かろうと する こと。言葉で 受けとめる ことで 安心して もらい、話しやすく なります。"
+ },
+ {
+  "id": "sn-shuso",
+  "name": "主訴",
+  "reading": "しゅそ",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🗣",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-genbyoreki",
+   "sn-monshin"
+  ],
+  "description": "患者さんが いちばん 困って いて、病院に 来た 理由。診察は この 話を しっかり 聞く ことから 始まります。"
+ },
+ {
+  "id": "sn-kioreki",
+  "name": "既往歴",
+  "reading": "きおうれき",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-kazokureki",
+   "sn-fukuyakureki"
+  ],
+  "description": "これまでに かかった 病気や けが、手術などの 記録。いまの しょうじょうを 考える うえで 大切な 手がかりに なります。"
+ },
+ {
+  "id": "sn-kazokureki",
+  "name": "家族歴",
+  "reading": "かぞくれき",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "👪",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-kioreki",
+   "sn-seikatsureki"
+  ],
+  "description": "家族に どんな 病気の 人が いるかの 情報。家族で 起こりやすい 病気を 考える ときの 手がかりに なります。"
+ },
+ {
+  "id": "sn-fukuyakureki",
+  "name": "服薬歴",
+  "reading": "ふくやくれき",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-allergyreki",
+   "sn-kioreki"
+  ],
+  "description": "いま 飲んで いる くすりや、これまで 飲んだ くすりの 記録。くすりの 組みあわせに 気を つける ためにも 聞きます。"
+ },
+ {
+  "id": "sn-genbyoreki",
+  "name": "現病歴",
+  "reading": "げんびょうれき",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🕰",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-shuso",
+   "sn-kioreki"
+  ],
+  "description": "いまの しょうじょうが いつ どのように 始まり、どう 変わって きたかの 流れ。診断を 考える いちばんの 手がかりです。"
+ },
+ {
+  "id": "sn-shintaishinsatsu",
+  "name": "身体診察",
+  "reading": "しんたいしんさつ",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-shishin",
+   "sn-choshin",
+   "sn-shokushin"
+  ],
+  "description": "見る・さわる・たたく・聞くを 組みあわせて、からだを 頭から 足まで 調べる こと。問診と 合わせて 診断の 土台に なります。"
+ },
+ {
+  "id": "sn-iryomensetsu",
+  "name": "医療面接",
+  "reading": "いりょうめんせつ",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-monshin",
+   "sn-kyokan"
+  ],
+  "description": "患者さんと 向きあって 話を 聞き、信頼関係を つくる やりとり。情報を 集める だけで なく、説明や 気持ちの 支えも ふくみます。"
+ },
+ {
+  "id": "sn-kanbetsu",
+  "name": "鑑別診断",
+  "reading": "かんべつしんだん",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 2,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "shinsatsu:shindan",
+  "relatedTerms": [
+   "sn-shindan",
+   "sn-rinshosuiron"
+  ],
+  "description": "しょうじょうから 考えられる 病気を いくつか ならべ、ひとつずつ くらべて しぼって いく こと。見落としを 防ぐ 考えかたです。"
+ },
+ {
+  "id": "sn-penlight",
+  "name": "ペンライト",
+  "reading": "ぺんらいと",
+  "journey": "shinsatsu",
+  "category": "道具",
+  "difficulty": 3,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-taikohansha",
+   "sn-zetsuatsushi"
+  ],
+  "description": "ペンの 形を した 小さな ライト。のどの おくを 照らしたり、目に 光を 当てて ひとみの 動きを 見たり する ときに 使います。"
+ },
+ {
+  "id": "sn-cyanosis",
+  "name": "チアノーゼ",
+  "reading": "ちあのーぜ",
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 3,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "💜",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-kaoiro",
+   "sn-kokyuon"
+  ],
+  "description": "くちびるや 指先が 青むらさき色に 見える 状態。からだの 酸素の ようすを 知る 手がかりで、お医者さんは すぐ 気づけるよう 見て います。"
+ },
+ {
+  "id": "sn-toutsu",
+  "name": "疼痛",
+  "reading": "とうつう",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 3,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-zutsu",
+   "sn-fukutsu"
+  ],
+  "description": "痛みの こと。医師の 記録で よく 使う 言葉です。場所・始まりかた・強さ・続きかたなどを 聞いて、原因を 考えます。"
+ },
+ {
+  "id": "sn-fushu",
+  "name": "浮腫",
+  "reading": "ふしゅ",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 3,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "shinsatsu:shokushin",
+  "relatedTerms": [
+   "sn-mukumi",
+   "sn-shokushin"
+  ],
+  "description": "むくみを あらわす 医学の 言葉。すねなどを 指で おして へこみが 残るか 確かめ、からだの 水分の ようすを 考えます。"
+ },
+ {
+  "id": "sn-oshin",
+  "name": "悪心",
+  "reading": "おしん",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 3,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-hakike",
+   "sn-shokuyokufushin"
+  ],
+  "description": "吐き気を あらわす 医学の 言葉。「あくしん」では なく「おしん」と 読みます。カルテで よく 目に する 言葉です。"
+ },
+ {
+  "id": "sn-gaiso",
+  "name": "咳嗽",
+  "reading": "がいそう",
+  "journey": "shinsatsu",
+  "category": "しょうじょう",
+  "difficulty": 3,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "shinsatsu:shojo",
+  "relatedTerms": [
+   "sn-seki",
+   "sn-zenmei"
+  ],
+  "description": "せきを あらわす 医学の 言葉。いつから 続くか、たんが からむかなどを 聞いて、原因を 考える 手がかりに します。"
+ },
+ {
+  "id": "sn-zenmei",
+  "name": "喘鳴",
+  "reading": "ぜんめい",
+  "journey": "shinsatsu",
+  "category": "音を聞く",
+  "difficulty": 3,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "🎐",
+  "mapNode": "shinsatsu:choshin",
+  "relatedTerms": [
+   "sn-kokyuon",
+   "sn-gaiso"
+  ],
+  "description": "息を する ときに ゼーゼー、ヒューヒューと 聞こえる 音。空気の 通り道が せまく なって いる 手がかりに なります。"
+ },
+ {
+  "id": "sn-shinsen",
+  "name": "振戦",
+  "reading": "しんせん",
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 3,
+  "field": "症候",
+  "type": "concept",
+  "emoji": "〰",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-shishin",
+   "sn-hansha"
+  ],
+  "description": "自分の 意思と 関係なく、手などが 細かく ふるえる こと。いつ ふるえるかを よく 見て、神経の ようすを 考えます。"
+ },
+ {
+  "id": "sn-shinzatsuon",
+  "name": "心雑音",
+  "reading": "しんざつおん",
+  "journey": "shinsatsu",
+  "category": "音を聞く",
+  "difficulty": 3,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🎵",
+  "mapNode": "shinsatsu:choshin",
+  "relatedTerms": [
+   "sn-shinon",
+   "sn-choshin"
+  ],
+  "description": "心音の あいだに 聞こえる、ザーッという ような 音。心臓の 中の 血の 流れを 考える 手がかりに なります。"
+ },
+ {
+  "id": "sn-dakenki",
+  "name": "打腱器",
+  "reading": "だけんき",
+  "journey": "shinsatsu",
+  "category": "道具",
+  "difficulty": 3,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🔨",
+  "mapNode": "shinsatsu:hakaru",
+  "relatedTerms": [
+   "sn-hansha",
+   "sn-shinbukenhansha"
+  ],
+  "description": "ひざや ひじの 腱を 軽く たたく、小さな ハンマーの ような 道具。反射を 調べて 神経の はたらきを 確かめます。"
+ },
+ {
+  "id": "sn-zetsuatsushi",
+  "name": "舌圧子",
+  "reading": "ぜつあつし",
+  "journey": "shinsatsu",
+  "category": "道具",
+  "difficulty": 3,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🥄",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-penlight",
+   "sn-shishin"
+  ],
+  "description": "舌を そっと おさえて、のどの おくを 見やすく する へらの ような 道具。のどの 赤みや はれを 確かめる ときに 使います。"
+ },
+ {
+  "id": "sn-taikohansha",
+  "name": "対光反射",
+  "reading": "たいこうはんしゃ",
+  "journey": "shinsatsu",
+  "category": "はかる",
+  "difficulty": 3,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "👁",
+  "mapNode": "shinsatsu:hakaru",
+  "relatedTerms": [
+   "sn-penlight",
+   "sn-ishiki"
+  ],
+  "description": "目に 光を 当てると ひとみが 小さく なる 反応。ペンライトで 確かめ、目や 脳の はたらきを 知る 手がかりに します。"
+ },
+ {
+  "id": "sn-shinbukenhansha",
+  "name": "深部腱反射",
+  "reading": "しんぶけんはんしゃ",
+  "journey": "shinsatsu",
+  "category": "はかる",
+  "difficulty": 3,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "shinsatsu:hakaru",
+  "relatedTerms": [
+   "sn-dakenki",
+   "sn-hansha"
+  ],
+  "description": "腱を たたくと 筋肉が きゅっと 縮む 反射。左右を くらべて、神経の 通り道の ようすを 調べます。"
+ },
+ {
+  "id": "sn-choseidoon",
+  "name": "腸蠕動音",
+  "reading": "ちょうぜんどうおん",
+  "journey": "shinsatsu",
+  "category": "音を聞く",
+  "difficulty": 3,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "🔈",
+  "mapNode": "shinsatsu:choshin",
+  "relatedTerms": [
+   "sn-choshin",
+   "sn-fukutsu"
+  ],
+  "description": "食べ物を 運ぶ ために 腸が 動く ときの 音。おなかに 聴診器を あてて、腸が 元気に 動いて いるかを 聞きます。"
+ },
+ {
+  "id": "sn-ganken",
+  "name": "眼瞼結膜",
+  "reading": "がんけんけつまく",
+  "journey": "shinsatsu",
+  "category": "見る・さわる",
+  "difficulty": 3,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "👁",
+  "mapNode": "shinsatsu:shishin",
+  "relatedTerms": [
+   "sn-shishin",
+   "sn-kaoiro"
+  ],
+  "description": "まぶたの うらがわの うすい 膜。下まぶたを そっと めくって 色を 見て、血液の ようすを 考える 手がかりに します。"
+ },
+ {
+  "id": "sn-seikatsureki",
+  "name": "生活歴",
+  "reading": "せいかつれき",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 3,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-kazokureki",
+   "sn-kioreki"
+  ],
+  "description": "仕事や 食事、たばこ・お酒、住まいなど、ふだんの くらしの ようす。病気の 原因や 治療の 進めかたを 考える 手がかりです。"
+ },
+ {
+  "id": "sn-shintaishoken",
+  "name": "身体所見",
+  "reading": "しんたいしょけん",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 3,
+  "field": "診察",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "shinsatsu:karte",
+  "relatedTerms": [
+   "sn-shintaishinsatsu",
+   "sn-soap"
+  ],
+  "description": "身体診察で 見つけた ことがら。聞こえた 音や さわった 感じなどを まとめ、診断を 考える 材料に します。"
+ },
+ {
+  "id": "sn-keicho",
+  "name": "傾聴",
+  "reading": "けいちょう",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 3,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-kyokan",
+   "sn-openq"
+  ],
+  "description": "患者さんの 話を さえぎらず、耳を かたむけて 聞く こと。うなずきや あいづちで、話しやすい ふんいきを つくります。"
+ },
+ {
+  "id": "sn-openq",
+  "name": "オープンクエスチョン",
+  "reading": "おーぷんくえすちょん",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 3,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🗨",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-closedq",
+   "sn-keicho"
+  ],
+  "description": "「どう されましたか」のように、患者さんが 自由に 答えられる 聞きかた。思いがけない 手がかりが 見つかる ことも あります。"
+ },
+ {
+  "id": "sn-closedq",
+  "name": "クローズドクエスチョン",
+  "reading": "くろーずどくえすちょん",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 3,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "☑️",
+  "mapNode": "shinsatsu:monshin",
+  "relatedTerms": [
+   "sn-openq",
+   "sn-genbyoreki"
+  ],
+  "description": "「はい」か「いいえ」で 答えられる 聞きかた。オープンクエスチョンの あとに、大事な 点を 確かめる ときに 使います。"
+ },
+ {
+  "id": "sn-kaishakumodel",
+  "name": "解釈モデル",
+  "reading": "かいしゃくもでる",
+  "journey": "shinsatsu",
+  "category": "話を聞く",
+  "difficulty": 3,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "💭",
+  "mapNode": "shinsatsu:setsumei",
+  "relatedTerms": [
+   "sn-kyokan",
+   "sn-keicho"
+  ],
+  "description": "患者さん 自身が しょうじょうの 原因を どう 考え、何を 心配して いるか。これを 聞くと、分かりやすい 説明に つながります。"
+ },
+ {
+  "id": "sn-shinryoroku",
+  "name": "診療録",
+  "reading": "しんりょうろく",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 3,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "shinsatsu:karte",
+  "relatedTerms": [
+   "sn-karte",
+   "sn-soap"
+  ],
+  "description": "カルテの 正式な 言いかた。お医者さんは 診療を したら 記録を 書いて のこす ことが 決められて います。"
+ },
+ {
+  "id": "sn-mondairisuto",
+  "name": "問題リスト",
+  "reading": "もんだいりすと",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 3,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🗒",
+  "mapNode": "shinsatsu:karte",
+  "relatedTerms": [
+   "sn-soap",
+   "sn-shinryoroku"
+  ],
+  "description": "患者さんが かかえる 健康の 問題を 一覧に した もの。ひとつずつ 整理して、見落とさずに 診療する ために 使います。"
+ },
+ {
+  "id": "sn-soap",
+  "name": "SOAP",
+  "reading": "そーぷ",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 3,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "shinsatsu:karte",
+  "relatedTerms": [
+   "sn-mondairisuto",
+   "sn-shinryoroku"
+  ],
+  "description": "カルテを 書く ときの 型。患者さんの 話、診察で 分かった こと、考えた こと、これからの 方針の 順に 整理して 書きます。"
+ },
+ {
+  "id": "sn-rinshosuiron",
+  "name": "臨床推論",
+  "reading": "りんしょうすいろん",
+  "journey": "shinsatsu",
+  "category": "考える・記録",
+  "difficulty": 3,
+  "field": "必修の基本的事項",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "shinsatsu:shindan",
+  "relatedTerms": [
+   "sn-kanbetsu",
+   "sn-shindan"
+  ],
+  "description": "話や 診察で 集めた 手がかりを つなぎあわせ、何が 起きて いるかを 筋道を 立てて 考える こと。医師の 頭の はたらかせかたです。"
+ }
+]

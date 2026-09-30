@@ -435,3 +435,14 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - 確かめかた: scratchpad の `ftrial.mjs`(偽の API で 終了・オフラインの 4とおり)+ `tools/click-all.mjs`
 - ⚠️ **iPhone の ホーム画面に 足した ゲームは localStorage が Safari と べつ**。つなぐ(flick-link)が Safari 側に 落ちる かもしれない。**本物の iPhone で 1回 ためす**(まだ)
 - ⚠️ 24時間の つなぐ しるしは 期限内なら 何度でも 使える(グループに 貼られると 全員 つながる)。1回きりに するには 表が いる(まだ)
+
+## 本当の 住所は https://kazutomo.app/flick/…(けいくん決定 2026-09-30「置き直してください」)
+- けいくん「Netflix みたいに その子の スマホで ログインする 形に した方が いいんじゃないの?」→ ゲームを かずともと **同じ 住所**に 置いた。
+  おうちの方が 子どもの スマホで かずともに ログインすれば、フリックも そのまま「このおうちの子」(クッキーで 分かる)。「つなぐ」ボタン・24時間の リンクは 要らない
+- **中身は いままでどおり この GitHub Pages**。speed-king の `src/proxy.ts` が `/flick/…` を ここへ 取りついで 出す(引っ越し なし。`build_games.py` も 同じ)。
+  おしりの `/` は そちらが 付ける(`/flick/uchu` → `/flick/uchu/`)
+- 前の 住所(github.io)で ひらいた人は `index.html` の 先頭の 1行で kazutomo.app/flick/ へ 移す(`#t=` も いっしょ)
+- ⚠️ **`../flick-travel/` と 書かない**(kazutomo.app/flick/ の 下で こわれる)。シリーズの 一覧(`SERIES`)は 根もとからの 相対(`root + g.dir`)
+- 体験の しるしは かずとも本体と **同じ localStorage**(`kz-trial`。`trialToken()` は kz-trial → flick-trial の 順に 読み、`storeTrial` で 両方に しまう)
+- 「つなぐ」の しくみ(`?link=` / `flick-link` / `authHeaders`)は **残してある**(古い 端末の ため)。`LINK_URL` の 先(kazutomo.app/flick-link?to=)は ログインしていれば すぐ ゲームへ もどす
+- 確かめかた: scratchpad の `fpath.mjs`(`/flick/` の 下で 絵・台本の 道と シリーズの リンクが 通る)

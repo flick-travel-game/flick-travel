@@ -540,28 +540,31 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 <script src="terms.js?v=357d456c"></script>
 <script src="kango.js?v=c64d2cb2"></script>
 <script>
+/* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
+   前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
+if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
 const GAME = { id:"kango", name:"フリック看護師", modes:(typeof KANGO === "object" ? KANGO.modes : []), assets:"../", logo:true, hero:true, dir:"kango/", lead:"見て 気づく ことば・看護の わざ・感染を ふせぐ・看護の 考えかた・からだと 病気の ことば・一生の 看護・病院と しくみの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どの 科目か・しくみ図の どこに あるのかが 出るよ。病院で 見かける ことばから はじめて、看護師国家試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。薬の 量や 手当ての やりかたは のせていないよ。本当に 具合が わるい ときは、大人に 言って お医者さんへ。説明は 本物の 試験問題では ないので、試験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、看護の ことばと しくみが つながって 見えてくるよ。厚生労働省とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
-const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:"../flick-travel/"}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"../flick-travel/rekishi/"},
-                 {id:"uchu", name:"フリック宇宙旅行", icon:"🪐", dir:"../flick-travel/uchu/"}, {id:"karada", name:"フリックからだ旅行", icon:"🫀", dir:"../flick-travel/karada/"},
-                 {id:"kabu", name:"フリック株式旅行", icon:"🏢", dir:"../flick-travel/kabu/"}, {id:"ai", name:"フリックAI旅行", icon:"🤖", dir:"../flick-travel/ai/"},
-                 {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"../flick-travel/eikaiwa/"},
-                 {id:"eigo", name:"フリック英語", icon:"🔤", dir:"../flick-travel/eigo/"},
-                 {id:"rika", name:"フリック理科旅行", icon:"🔬", dir:"../flick-travel/rika/"},
-                 {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"../flick-travel/seibi/"},
-                 {id:"patissier", name:"パティシエフリック", icon:"🍰", dir:"../flick-travel/patissier/"},
-                 {id:"kokugo", name:"フリック国語旅行", icon:"📖", dir:"../flick-travel/kokugo/"},
-                 {id:"sugaku", name:"フリック数学旅行", icon:"📐", dir:"../flick-travel/sugaku/"},
-                 {id:"hoiku", name:"フリック保育士", icon:"🧸", dir:"../flick-travel/hoiku/"},
-                 {id:"kango", name:"フリック看護師", icon:"🩺", dir:"../flick-travel/kango/"},
-                 {id:"gamedev", name:"フリックゲームクリエイター", icon:"🎮", dir:"../flick-travel/gamedev/"},
-                 {id:"biyo", name:"フリック美容師", icon:"💇", dir:"../flick-travel/biyo/"},
-                 {id:"kyoryu", name:"フリック恐竜図鑑", icon:"🦖", dir:"../flick-travel/kyoryu/"},
-                 {id:"code", name:"フリックプログラマー", icon:"💻", dir:"../flick-travel/code/"},
-                 {id:"shakai", name:"フリック社会旅行", icon:"🗾", dir:"../flick-travel/shakai/"} ];
+const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},
+                 {id:"uchu", name:"フリック宇宙旅行", icon:"🪐", dir:"uchu/"}, {id:"karada", name:"フリックからだ旅行", icon:"🫀", dir:"karada/"},
+                 {id:"kabu", name:"フリック株式旅行", icon:"🏢", dir:"kabu/"}, {id:"ai", name:"フリックAI旅行", icon:"🤖", dir:"ai/"},
+                 {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"eikaiwa/"},
+                 {id:"eigo", name:"フリック英語", icon:"🔤", dir:"eigo/"},
+                 {id:"rika", name:"フリック理科旅行", icon:"🔬", dir:"rika/"},
+                 {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"seibi/"},
+                 {id:"patissier", name:"パティシエフリック", icon:"🍰", dir:"patissier/"},
+                 {id:"kokugo", name:"フリック国語旅行", icon:"📖", dir:"kokugo/"},
+                 {id:"sugaku", name:"フリック数学旅行", icon:"📐", dir:"sugaku/"},
+                 {id:"hoiku", name:"フリック保育士", icon:"🧸", dir:"hoiku/"},
+                 {id:"kango", name:"フリック看護師", icon:"🩺", dir:"kango/"},
+                 {id:"gamedev", name:"フリックゲームクリエイター", icon:"🎮", dir:"gamedev/"},
+                 {id:"biyo", name:"フリック美容師", icon:"💇", dir:"biyo/"},
+                 {id:"kyoryu", name:"フリック恐竜図鑑", icon:"🦖", dir:"kyoryu/"},
+                 {id:"code", name:"フリックプログラマー", icon:"💻", dir:"code/"},
+                 {id:"shakai", name:"フリック社会旅行", icon:"🗾", dir:"shakai/"} ];
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
   {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
@@ -1038,14 +1041,16 @@ function flickToast(msg){
 const TRIAL_API = "https://kazutomo.app/api/trial", TRIAL_KEY = "flick-trial", TRIAL_STATE = "flick-trial-state", TRIAL_FIRST = "flick-trial-first";
 const TRIAL_GRACE_MS = 3 * 86400000, TRIAL_PAID_GRACE_MS = 30 * 86400000, TRIAL_WARN_DAYS = 7;  // はらっている おうちは 旅先・飛行機でも 30日は 止めない(2026-09-30)
 let TRIAL = null, TRIAL_AFTER_LINK = false;
-function trialToken(){ return store(TRIAL_KEY) || ""; }
+/* ⚠️ kazutomo.app の 下に なったので、かずとも本体の しるし(kz-trial)と 同じ localStorage。あれば そちらを 使い、しまう ときは 両方に */
+function trialToken(){ return store("kz-trial") || store(TRIAL_KEY) || ""; }
+function storeTrial(v){ store(TRIAL_KEY, v); store("kz-trial", v); }
 (function takeTrialHash(){
   try{
     const m = /[#&]t=([A-Za-z0-9._~+\/=-]{8,600})(?:&|$)/.exec(location.hash); if(!m) return;
     // ⚠️ もう 持っていたら **はじまりの 早いほう**を 残す(かずとも と フリックで べつべつに 30日が 走らないように。2026-09-30)
     const startOf = (tk) => { try{ return +JSON.parse(atob(tk.split(".")[0].replace(/-/g, "+").replace(/_/g, "/"))).s || 0; }catch(e){ return 0; } };
     const cur = trialToken();
-    if(!cur || (startOf(m[1]) && (!startOf(cur) || startOf(m[1]) < startOf(cur)))) store(TRIAL_KEY, m[1]);
+    if(!cur || (startOf(m[1]) && (!startOf(cur) || startOf(m[1]) < startOf(cur)))) storeTrial(m[1]);
     history.replaceState(history.state, "", location.pathname + location.search);
   }catch(e){}
 })();
@@ -1060,7 +1065,7 @@ async function fetchTrial(){
     if(js && js.ok && js.needToken && tok){ js = await ask(true); }  // しるしが 古い・こわれている → もらいなおす
   }catch(e){ js = null; }
   if(js && js.ok){
-    if(typeof js.token === "string" && js.token) store(TRIAL_KEY, js.token);
+    if(typeof js.token === "string" && js.token) storeTrial(js.token);
     TRIAL = { play: js.play !== false, paid: js.paid === true, daysLeft: typeof js.daysLeft === "number" ? js.daysLeft : null, checkedAt: Date.now(), stale: false };
     store(TRIAL_STATE, JSON.stringify(TRIAL));
   }else{
@@ -2170,7 +2175,9 @@ if(GAME.rule) $("#rule1").textContent = GAME.rule;
 /* シリーズの ほかのゲームへ */
 { const others = SERIES.filter(g => g.id !== GAME.id);
   const p = document.createElement("p"); p.className = "series";
-  p.innerHTML = "🧭 かずとも の ゲーム: " + others.map(g => '<a href="' + g.dir + '">' + g.icon + ' ' + esc(g.name) + '</a>').join("");
+  // ⚠️ 道は シリーズの 根もと から(この ページが 根もと = 世界 なら "./"、子の フォルダなら "../")。⚠️ "../flick-travel/" と 書くと kazutomo.app/flick/ の 下で こわれる
+  const root = GAME.id === "world" ? "./" : "../";
+  p.innerHTML = "🧭 かずとも の ゲーム: " + others.map(g => '<a href="' + root + g.dir + '">' + g.icon + ' ' + esc(g.name) + '</a>').join("");
   const al = $(".about-link"); if(al) al.before(p); }
 
 /* 名言モード(QUOTES)は しくみを 残して 画面には 出さない(2026-09 に 名所だけに した) */

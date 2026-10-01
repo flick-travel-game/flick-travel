@@ -1,0 +1,1222 @@
+[
+ {
+  "id": "kq-119",
+  "name": "119番",
+  "reading": "ひゃくじゅうきゅうばん",
+  "journey": "kyukyu",
+  "category": "119番と通報",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "☎️",
+  "mapNode": "kyukyu:tsuho",
+  "relatedTerms": [
+   "kq-callq",
+   "kq-shirei",
+   "kq-tsuho"
+  ],
+  "description": "火事や 急な けが・病気の とき、消防に すぐ 知らせる 電話番号です。消防本部の 指令センターに つながり、消防隊や 救急隊が かけつけます。"
+ },
+ {
+  "id": "kq-kyukyutai",
+  "name": "救急隊",
+  "reading": "きゅうきゅうたい",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "kyukyu:kyukyutai",
+  "relatedTerms": [
+   "kq-taiin",
+   "kq-kyumeishi",
+   "kq-taicho"
+  ],
+  "description": "救急車に 乗って、急な けがや 病気の 人の もとへ かけつける 消防の 隊です。ふつう 3人で 1つの 隊を つくり、病院まで 送り届けます。"
+ },
+ {
+  "id": "kq-yobu",
+  "name": "救急車を呼ぶ",
+  "reading": "きゅうきゅうしゃをよぶ",
+  "journey": "kyukyu",
+  "category": "119番と通報",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "📞",
+  "mapNode": "kyukyu:tsuho",
+  "relatedTerms": [
+   "kq-119",
+   "kq-callq",
+   "kq-tekisei"
+  ],
+  "description": "119番に 電話して「救急です」と 伝え、場所を 知らせる ことです。あわてずに 聞かれた ことに 答えれば、救急隊が 向かいます。"
+ },
+ {
+  "id": "kq-aed",
+  "name": "AED",
+  "reading": "えーいーでぃー",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kyukyu:aed",
+  "relatedTerms": [
+   "kq-shinpai",
+   "kq-bls",
+   "kq-koshu"
+  ],
+  "description": "心臓の リズムを 整える ための 機械です。救急隊が 着く 前に まわりの 人も 使える ように、駅や 学校に 置いて あります。使いかたは 救命講習で 学べます。"
+ },
+ {
+  "id": "kq-kyumeishi",
+  "name": "救急救命士",
+  "reading": "きゅうきゅうきゅうめいし",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "kyukyu:kyumeishi",
+  "relatedTerms": [
+   "kq-kyukyutai",
+   "kq-shoti",
+   "kq-kyumeishiho"
+  ],
+  "description": "厚生労働大臣の 免許を もつ 国家資格です。救急隊で はたらき、医師の 指示を 受けながら 病院に 着くまでの 命を つなぐ 手当てを します。"
+ },
+ {
+  "id": "kq-oukyu",
+  "name": "応急手当",
+  "reading": "おうきゅうてあて",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-shinpai",
+   "kq-koshu",
+   "kq-bystander"
+  ],
+  "description": "救急隊が 着くまでの あいだに、まわりの 人が 行う 手当ての ことです。くわしい やりかたは 消防署の 救命講習で 学べます。"
+ },
+ {
+  "id": "kq-kyujotai",
+  "name": "救助隊",
+  "reading": "きゅうじょたい",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 1,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-rescue",
+   "kq-jotaiin",
+   "kq-tokubetsu"
+  ],
+  "description": "にげられなく なった 人を 助け出す ことを 専門に する 消防の 隊です。特別な 道具と 訓練で、いろいろな 場所へ 人を 助けに 向かいます。"
+ },
+ {
+  "id": "kq-shinpai",
+  "name": "心肺蘇生",
+  "reading": "しんぱいそせい",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "❤️",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-aed",
+   "kq-kyoukotsu",
+   "kq-jinko"
+  ],
+  "description": "心臓や 呼吸が 止まった 人の 命を つなぐ ための 手当てです。くわしい やりかたは 消防署の 救命講習で 学べます。"
+ },
+ {
+  "id": "kq-rescue",
+  "name": "レスキュー",
+  "reading": "れすきゅー",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 1,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-kyujotai",
+   "kq-jinmei"
+  ],
+  "description": "英語で「救助」と いう 意味の ことばです。人を 助け出す 消防の 救助隊を「レスキュー隊」と 呼ぶ ことも あります。"
+ },
+ {
+  "id": "kq-tsuho",
+  "name": "通報",
+  "reading": "つうほう",
+  "journey": "kyukyu",
+  "category": "119番と通報",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "kyukyu:tsuho",
+  "relatedTerms": [
+   "kq-119",
+   "kq-ichi",
+   "kq-koto"
+  ],
+  "description": "火事や けがなどを 消防に 知らせる ことです。「何が あったか」「どこか」を 落ち着いて 伝える ことが、早く 助ける ための 第一歩です。"
+ },
+ {
+  "id": "kq-byoin",
+  "name": "病院",
+  "reading": "びょういん",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "kyukyu:hanso",
+  "relatedTerms": [
+   "kq-hanso",
+   "kq-hansosaki",
+   "kq-iryo"
+  ],
+  "description": "けがや 病気を 医師や 看護師が みる ところです。救急隊は 運ぶ 人に 合った 病院を 探して、連絡を とってから 向かいます。"
+ },
+ {
+  "id": "kq-koshu",
+  "name": "救命講習",
+  "reading": "きゅうめいこうしゅう",
+  "journey": "kyukyu",
+  "category": "救命講習",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "kyukyu:koshu",
+  "relatedTerms": [
+   "kq-futsu",
+   "kq-aed",
+   "kq-fukyuin"
+  ],
+  "description": "消防署などが 開く、命を 助ける 手当てを 学ぶ 講習です。AEDの 使いかたや 応急手当を、消防職員などの 指導で 練習します。"
+ },
+ {
+  "id": "kq-jinmei",
+  "name": "人命救助",
+  "reading": "じんめいきゅうじょ",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 1,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-kyujotai",
+   "kq-yokyujo"
+  ],
+  "description": "命の 危険が ある 人を 助ける ことです。消防の いちばん 大切な 仕事の ひとつで、火を 消す ときも まず 人を 助ける ことを 考えます。"
+ },
+ {
+  "id": "kq-kyumei",
+  "name": "救命",
+  "reading": "きゅうめい",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "💗",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-rensa",
+   "kq-koshu"
+  ],
+  "description": "命を 救う ことです。救急隊だけで なく、その 場に いる 人の 早い 通報や 手当ても、救命の 大きな 力に なります。"
+ },
+ {
+  "id": "kq-dheli",
+  "name": "ドクターヘリ",
+  "reading": "どくたーへり",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🚁",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-dcar",
+   "kq-iryo"
+  ],
+  "description": "医師と 看護師が 乗って 飛ぶ ヘリコプターです。消防からの 求めで 飛び立ち、遠い 場所でも 早く 治療を はじめられる ように します。"
+ },
+ {
+  "id": "kq-taiin",
+  "name": "救急隊員",
+  "reading": "きゅうきゅうたいいん",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "👨‍⚕️",
+  "mapNode": "kyukyu:kyukyutai",
+  "relatedTerms": [
+   "kq-kyukyutai",
+   "kq-taicho",
+   "kq-kansen"
+  ],
+  "description": "救急隊で はたらく 消防職員です。決められた 講習を 受けて、急病人や けがを した 人を 病院へ 運ぶ 仕事を しています。"
+ },
+ {
+  "id": "kq-callq",
+  "name": "火事ですか救急ですか",
+  "reading": "かじですかきゅうきゅうですか",
+  "journey": "kyukyu",
+  "category": "119番と通報",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "kyukyu:tsuho",
+  "relatedTerms": [
+   "kq-119",
+   "kq-yobu"
+  ],
+  "description": "119番に 電話を すると、はじめに 聞かれる ことばです。「救急です」と 答え、つづけて 場所や ようすを 伝えます。"
+ },
+ {
+  "id": "kq-tanka",
+  "name": "担架",
+  "reading": "たんか",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🛏️",
+  "mapNode": "kyukyu:hanso",
+  "relatedTerms": [
+   "kq-hanso",
+   "kq-kyukyutai"
+  ],
+  "description": "けがや 病気の 人を 寝かせた まま 運ぶ ための 道具です。救急隊は 車輪の ついた ものなども 使い分けて、ゆれない ように 運びます。"
+ },
+ {
+  "id": "kq-bako",
+  "name": "救急箱",
+  "reading": "きゅうきゅうばこ",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-oukyu",
+   "kq-shinpai"
+  ],
+  "description": "ばんそうこうや ガーゼなど、手当てに 使う ものを まとめた 入れものです。家に そなえて おき、中身を ときどき 大人と いっしょに 確かめましょう。"
+ },
+ {
+  "id": "kq-necchu",
+  "name": "熱中症予防",
+  "reading": "ねっちゅうしょうよぼう",
+  "journey": "kyukyu",
+  "category": "救急車の正しい使いかた",
+  "difficulty": 1,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🥤",
+  "mapNode": "kyukyu:tadashiku",
+  "relatedTerms": [
+   "kq-tekisei",
+   "kq-kyuqday"
+  ],
+  "description": "暑い 日に 体調を くずさない ための 心がけです。こまめに 水分を とり、すずしい 場所で 休む ように 消防も よびかけて います。"
+ },
+ {
+  "id": "kq-shirei",
+  "name": "指令センター",
+  "reading": "しれいせんたー",
+  "journey": "kyukyu",
+  "category": "119番と通報",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🖥",
+  "mapNode": "kyukyu:shirei",
+  "relatedTerms": [
+   "kq-119",
+   "kq-ichi",
+   "kq-koto"
+  ],
+  "description": "119番の 電話を 受ける 消防本部の 部屋です。話を 聞いて、近くに いる 消防隊や 救急隊に 出動を 知らせます。"
+ },
+ {
+  "id": "kq-hanso",
+  "name": "救急搬送",
+  "reading": "きゅうきゅうはんそう",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "kyukyu:hanso",
+  "relatedTerms": [
+   "kq-kyukyutai",
+   "kq-hansosaki",
+   "kq-byoin"
+  ],
+  "description": "救急隊が 急な けがや 病気の 人を 病院へ 運ぶ ことです。運ぶ あいだも 救急隊員が ようすを 見守ります。"
+ },
+ {
+  "id": "kq-triage",
+  "name": "トリアージ",
+  "reading": "とりあーじ",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "kyukyu:triage",
+  "relatedTerms": [
+   "kq-tag",
+   "kq-dmat"
+  ],
+  "description": "一度に 多くの 人を 助けなければ ならない とき、急ぐ 順番を 決める ことです。限られた 人手で ひとりでも 多くの 命を 救う ための 考えかたです。"
+ },
+ {
+  "id": "kq-anshin",
+  "name": "救急安心センター",
+  "reading": "きゅうきゅうあんしんせんたー",
+  "journey": "kyukyu",
+  "category": "救急車の正しい使いかた",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "☎️",
+  "mapNode": "kyukyu:tadashiku",
+  "relatedTerms": [
+   "kq-tekisei",
+   "kq-guide",
+   "kq-kakaritsuke"
+  ],
+  "description": "救急車を 呼ぶか まよった ときに 電話で 相談できる 窓口で、多くの 地域で #7119 に つながります。医師や 看護師などが 答えます。"
+ },
+ {
+  "id": "kq-bystander",
+  "name": "バイスタンダー",
+  "reading": "ばいすたんだー",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-oukyu",
+   "kq-rensa",
+   "kq-koto"
+  ],
+  "description": "たおれた 人の そばに 居あわせた 人の ことです。119番や AEDを 運ぶ ことなど、救急隊が 着くまでの 力に なります。"
+ },
+ {
+  "id": "kq-tokubetsu",
+  "name": "特別救助隊",
+  "reading": "とくべつきゅうじょたい",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 2,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-kyujotai",
+   "kq-kodo",
+   "kq-jotaiin"
+  ],
+  "description": "きびしい 訓練を 重ねた 救助隊員で つくる 救助隊です。決められた 規模の 消防本部に 置かれ、むずかしい 救助に あたります。"
+ },
+ {
+  "id": "kq-dcar",
+  "name": "ドクターカー",
+  "reading": "どくたーかー",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🚐",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-dheli",
+   "kq-iryo"
+  ],
+  "description": "医師が 乗って 現場へ 向かう 車です。救急隊と 力を 合わせて、病院に 着く 前から 治療を はじめられる ように します。"
+ },
+ {
+  "id": "kq-iryo",
+  "name": "救急医療",
+  "reading": "きゅうきゅういりょう",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-byoin",
+   "kq-shoki",
+   "kq-niji"
+  ],
+  "description": "急な けがや 病気の 人を すぐに みる 医療です。消防の 救急隊と 病院が つながって、地域の 命を 守って います。"
+ },
+ {
+  "id": "kq-futsu",
+  "name": "普通救命講習",
+  "reading": "ふつうきゅうめいこうしゅう",
+  "journey": "kyukyu",
+  "category": "救命講習",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "kyukyu:koshu",
+  "relatedTerms": [
+   "kq-koshu",
+   "kq-jokyu",
+   "kq-fukyuin"
+  ],
+  "description": "消防署などで だれでも 受けられる 救命講習です。心肺蘇生や AEDなどを 学び、終わると 修了証が もらえます。"
+ },
+ {
+  "id": "kq-rensa",
+  "name": "救命の連鎖",
+  "reading": "きゅうめいのれんさ",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-bystander",
+   "kq-bls",
+   "kq-kyumei"
+  ],
+  "description": "命を つなぐ 流れを 4つの 輪で あらわした 考えかたです。予防・早い 通報・まわりの 人の 手当て・病院の 治療が つながる ことが 大切です。"
+ },
+ {
+  "id": "kq-koto",
+  "name": "口頭指導",
+  "reading": "こうとうしどう",
+  "journey": "kyukyu",
+  "category": "119番と通報",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "kyukyu:shirei",
+  "relatedTerms": [
+   "kq-shirei",
+   "kq-bystander"
+  ],
+  "description": "119番の 電話で、指令センターの 職員が 通報した 人に 手当ての しかたを 伝える ことです。救急隊が 着くまで 命を つなぎます。"
+ },
+ {
+  "id": "kq-kyoukotsu",
+  "name": "胸骨圧迫",
+  "reading": "きょうこつあっぱく",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🫀",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-shinpai",
+   "kq-jinko",
+   "kq-aed"
+  ],
+  "description": "心肺蘇生の 中心と なる 手当ての 名前です。くわしい やりかたは 消防署の 救命講習で 学べます。"
+ },
+ {
+  "id": "kq-jinko",
+  "name": "人工呼吸",
+  "reading": "じんこうこきゅう",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-shinpai",
+   "kq-kyoukotsu",
+   "kq-kido"
+  ],
+  "description": "自分で 呼吸が できない 人に 息を 送る 手当ての 名前です。くわしい やりかたは 消防署の 救命講習で 学べます。"
+ },
+ {
+  "id": "kq-kyuqday",
+  "name": "救急の日",
+  "reading": "きゅうきゅうのひ",
+  "journey": "kyukyu",
+  "category": "救急車の正しい使いかた",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "kyukyu:tadashiku",
+  "relatedTerms": [
+   "kq-tekisei",
+   "kq-koshu"
+  ],
+  "description": "9月9日で、「きゅうきゅう」の ごろあわせで 決まりました。この 日を ふくむ 1週間に、救急の 大切さを 伝える 行事が 開かれます。"
+ },
+ {
+  "id": "kq-kakaritsuke",
+  "name": "かかりつけ医",
+  "reading": "かかりつけい",
+  "journey": "kyukyu",
+  "category": "救急車の正しい使いかた",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "👩‍⚕️",
+  "mapNode": "kyukyu:tadashiku",
+  "relatedTerms": [
+   "kq-anshin",
+   "kq-shoki"
+  ],
+  "description": "ふだんから 体の ことを 相談できる 近くの 医師です。急ぎで ない ときは まず かかりつけ医に 相談する ことも、救急車を 守る ことに なります。"
+ },
+ {
+  "id": "kq-shobyosha",
+  "name": "傷病者",
+  "reading": "しょうびょうしゃ",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🧑",
+  "mapNode": "kyukyu:kyukyutai",
+  "relatedTerms": [
+   "kq-kyukyutai",
+   "kq-hanso"
+  ],
+  "description": "けがを した 人や 病気の 人を まとめて 呼ぶ 消防の ことばです。救急隊は 傷病者を 安全に 病院まで 送り届けます。"
+ },
+ {
+  "id": "kq-yokyujo",
+  "name": "要救助者",
+  "reading": "ようきゅうじょしゃ",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 2,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🆘",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-jinmei",
+   "kq-kyujotai"
+  ],
+  "description": "助けを 必要と している 人を さす 消防の ことばです。救助隊は 要救助者を 見つけ、安全に 助け出す ことを 第一に 動きます。"
+ },
+ {
+  "id": "kq-hansosaki",
+  "name": "搬送先",
+  "reading": "はんそうさき",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-hanso",
+   "kq-byoin"
+  ],
+  "description": "救急隊が 運んで いく 病院の ことです。ようすに 合った 病院を 選び、受け入れて もらえるか 電話で 確かめてから 向かいます。"
+ },
+ {
+  "id": "kq-taicho",
+  "name": "救急隊長",
+  "reading": "きゅうきゅうたいちょう",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🎖️",
+  "mapNode": "kyukyu:kyukyutai",
+  "relatedTerms": [
+   "kq-kyukyutai",
+   "kq-taiin"
+  ],
+  "description": "救急隊を まとめる 隊員です。隊員に 役わりを 指示し、病院との 連絡や 判断を 受け持ちます。"
+ },
+ {
+  "id": "kq-jotaiin",
+  "name": "救助隊員",
+  "reading": "きゅうじょたいいん",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 2,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "⛑️",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-kyujotai",
+   "kq-kunren",
+   "kq-shikizai"
+  ],
+  "description": "救助隊で はたらく 消防職員です。決められた 講習を 受け、体力と 技を みがいて、人を 助け出す 仕事を しています。"
+ },
+ {
+  "id": "kq-suinan",
+  "name": "水難救助",
+  "reading": "すいなんきゅうじょ",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 2,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-kyujotai",
+   "kq-sangaku"
+  ],
+  "description": "川や 海などで 助けを 求める 人を 助け出す ことです。消防には 水の 中での 活動を 専門に 訓練した 隊員も います。"
+ },
+ {
+  "id": "kq-sangaku",
+  "name": "山岳救助",
+  "reading": "さんがくきゅうじょ",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 2,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-kyujotai",
+   "kq-suinan",
+   "kq-dheli"
+  ],
+  "description": "山で 動けなく なった 人を 助ける ことです。消防や 警察、ヘリコプターが 力を 合わせて 向かいます。"
+ },
+ {
+  "id": "kq-kunren",
+  "name": "救助訓練",
+  "reading": "きゅうじょくんれん",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 2,
+  "field": "訓練と体育",
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-jotaiin",
+   "kq-taikai"
+  ],
+  "description": "人を 助け出す ための 技を 身に つける 訓練です。消防学校でも 学び、消防署でも 毎日のように 練習を くりかえします。"
+ },
+ {
+  "id": "kq-ichi",
+  "name": "位置情報",
+  "reading": "いちじょうほう",
+  "journey": "kyukyu",
+  "category": "119番と通報",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "kyukyu:shirei",
+  "relatedTerms": [
+   "kq-shirei",
+   "kq-119",
+   "kq-net119"
+  ],
+  "description": "携帯電話から 119番に かけると、指令センターに 届く 場所の 手がかりです。それでも 住所や 目じるしを 伝える ことが 大切です。"
+ },
+ {
+  "id": "kq-kansen",
+  "name": "感染防止",
+  "reading": "かんせんぼうし",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 2,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "😷",
+  "mapNode": "kyukyu:kyukyutai",
+  "relatedTerms": [
+   "kq-taiin",
+   "kq-hyojun"
+  ],
+  "description": "病気が うつらない ように する ことです。救急隊員は 手袋や マスクなどを 身に つけ、運ぶ 人と 自分の 両方を 守ります。"
+ },
+ {
+  "id": "kq-mc",
+  "name": "メディカルコントロール",
+  "reading": "めでぃかるこんとろーる",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-kyumeishi",
+   "kq-tokutei",
+   "kq-shidou"
+  ],
+  "description": "救急隊の 活動を 医師が 見守り、質を 高める しくみです。指示や 助言、活動の ふりかえり、教育などを 行います。"
+ },
+ {
+  "id": "kq-shoti",
+  "name": "救急救命処置",
+  "reading": "きゅうきゅうきゅうめいしょち",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "kyukyu:kyumeishi",
+  "relatedTerms": [
+   "kq-kyumeishi",
+   "kq-tokutei",
+   "kq-mc"
+  ],
+  "description": "救急救命士が 医師の 指示の もとで 行う 手当ての ことです。病院へ 運ぶ あいだに 命を つなぐ ために 行います。"
+ },
+ {
+  "id": "kq-tokutei",
+  "name": "特定行為",
+  "reading": "とくていこうい",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "📞",
+  "mapNode": "kyukyu:kyumeishi",
+  "relatedTerms": [
+   "kq-shoti",
+   "kq-mc"
+  ],
+  "description": "救急救命処置の うち、医師の 具体的な 指示を 受けて はじめて 行える ものです。救急救命士が 病院と 連絡を とりながら 行います。"
+ },
+ {
+  "id": "kq-kyumeishiho",
+  "name": "救急救命士法",
+  "reading": "きゅうきゅうきゅうめいしほう",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 3,
+  "field": "法学基礎・消防法",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kyukyu:kyumeishi",
+  "relatedTerms": [
+   "kq-kyumeishi",
+   "kq-shoti"
+  ],
+  "description": "救急救命士の 資格と 仕事の 決まりを 定めた 法律です。医療が 広く 行きわたり、よく なっていく ことに 役立てる ための 法律です。"
+ },
+ {
+  "id": "kq-tekisei",
+  "name": "救急車の適正利用",
+  "reading": "きゅうきゅうしゃのてきせいりよう",
+  "journey": "kyukyu",
+  "category": "救急車の正しい使いかた",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "kyukyu:tadashiku",
+  "relatedTerms": [
+   "kq-anshin",
+   "kq-guide",
+   "kq-yobu"
+  ],
+  "description": "救急車を 本当に 必要な 人が 使える ように する 考えかたです。急ぐ ときは ためらわず 119番、まよう ときは 相談窓口を 使います。"
+ },
+ {
+  "id": "kq-bls",
+  "name": "一次救命処置",
+  "reading": "いちじきゅうめいしょち",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "❤️",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-shinpai",
+   "kq-aed",
+   "kq-rensa"
+  ],
+  "description": "その 場に いる 人が 行える 心肺蘇生や AEDなどの 手当てを まとめた 呼び名です。くわしい やりかたは 救命講習で 学べます。"
+ },
+ {
+  "id": "kq-center",
+  "name": "救命救急センター",
+  "reading": "きゅうめいきゅうきゅうせんたー",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-sanji",
+   "kq-niji"
+  ],
+  "description": "命に かかわる 重い けがや 病気の 人を 夜も 休日も 受け入れる 病院の 部門です。三次救急を 受け持ち、救急隊と 強く つながって います。"
+ },
+ {
+  "id": "kq-shoki",
+  "name": "初期救急",
+  "reading": "しょききゅうきゅう",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-niji",
+   "kq-sanji",
+   "kq-kakaritsuke"
+  ],
+  "description": "入院が いらない 人を みる 救急医療です。休日や 夜に 開いて いる 診療所などが 受け持ちます。"
+ },
+ {
+  "id": "kq-niji",
+  "name": "二次救急",
+  "reading": "にじきゅうきゅう",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🏨",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-shoki",
+   "kq-sanji"
+  ],
+  "description": "入院が 必要な 人を 受け入れる 救急医療です。地域の 病院が 当番などで 受け持ち、救急隊が 多く 運びます。"
+ },
+ {
+  "id": "kq-sanji",
+  "name": "三次救急",
+  "reading": "さんじきゅうきゅう",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🚨",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-center",
+   "kq-niji"
+  ],
+  "description": "命に かかわる 重い 人を 受け入れる 救急医療です。救命救急センターなどが 受け持ちます。"
+ },
+ {
+  "id": "kq-jokyu",
+  "name": "上級救命講習",
+  "reading": "じょうきゅうきゅうめいこうしゅう",
+  "journey": "kyukyu",
+  "category": "救命講習",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "kyukyu:koshu",
+  "relatedTerms": [
+   "kq-futsu",
+   "kq-fukyuin"
+  ],
+  "description": "普通救命講習より 多くの ことを 学ぶ 救命講習です。子どもや 赤ちゃんへの 手当てなども ふくまれ、消防署などで 受けられます。"
+ },
+ {
+  "id": "kq-fukyuin",
+  "name": "応急手当普及員",
+  "reading": "おうきゅうてあてふきゅういん",
+  "journey": "kyukyu",
+  "category": "救命講習",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "kyukyu:koshu",
+  "relatedTerms": [
+   "kq-futsu",
+   "kq-koshu"
+  ],
+  "description": "消防の 講習を 受けて 認められ、職場や 地域で 救命講習を 教えられる 人です。応急手当が できる 人を 広げる 役わりです。"
+ },
+ {
+  "id": "kq-shidou",
+  "name": "指導救命士",
+  "reading": "しどうきゅうめいし",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "kyukyu:kyumeishi",
+  "relatedTerms": [
+   "kq-kyumeishi",
+   "kq-mc"
+  ],
+  "description": "経験の 長い 救急救命士の 中から 選ばれ、ほかの 救急隊員を 教え 育てる 役わりの 人です。救急の 質を 高めます。"
+ },
+ {
+  "id": "kq-kido",
+  "name": "気道確保",
+  "reading": "きどうかくほ",
+  "journey": "kyukyu",
+  "category": "命をつなぐ手当て",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "kyukyu:oukyu",
+  "relatedTerms": [
+   "kq-jinko",
+   "kq-bls"
+  ],
+  "description": "空気の 通り道を 開けて 保つ 手当ての 名前です。くわしい やりかたは 消防署の 救命講習で 学べます。"
+ },
+ {
+  "id": "kq-hyojun",
+  "name": "標準予防策",
+  "reading": "ひょうじゅんよぼうさく",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "kyukyu:kyukyutai",
+  "relatedTerms": [
+   "kq-kansen",
+   "kq-taiin"
+  ],
+  "description": "だれに 対しても 同じように 病気の うつりを ふせぐ ための 決まりです。救急隊員は 手袋や マスクを いつも 使います。"
+ },
+ {
+  "id": "kq-tenin",
+  "name": "転院搬送",
+  "reading": "てんいんはんそう",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "kyukyu:hanso",
+  "relatedTerms": [
+   "kq-hanso",
+   "kq-byoin"
+  ],
+  "description": "入院して いる 人を、ほかの 病院へ 移す ために 運ぶ ことです。医師の 判断で、救急車が 使われる ことも あります。"
+ },
+ {
+  "id": "kq-tag",
+  "name": "トリアージタッグ",
+  "reading": "とりあーじたっぐ",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "kyukyu:triage",
+  "relatedTerms": [
+   "kq-triage",
+   "kq-dmat"
+  ],
+  "description": "トリアージで 決めた 急ぐ 順番を 色で しめす ふだです。多くの 人を 助ける 現場で、だれから 運ぶかを 一目で 分かる ように します。"
+ },
+ {
+  "id": "kq-dmat",
+  "name": "DMAT",
+  "reading": "でぃーまっと",
+  "journey": "kyukyu",
+  "category": "病院と救急医療",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "kyukyu:triage",
+  "relatedTerms": [
+   "kq-triage",
+   "kq-dheli"
+  ],
+  "description": "災害派遣医療チームの 略です。特別な 訓練を 受けた 医師や 看護師などで つくられ、大きな 災害の 現場で 消防と 力を 合わせます。"
+ },
+ {
+  "id": "kq-pa",
+  "name": "PA連携",
+  "reading": "ぴーえーれんけい",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🚒",
+  "mapNode": "kyukyu:kyukyutai",
+  "relatedTerms": [
+   "kq-kyukyutai",
+   "kq-shirei"
+  ],
+  "description": "救急隊と いっしょに 消防隊も 出動して、力を 合わせる しくみです。人手が 必要な 場面で、早く 助ける ために 行います。"
+ },
+ {
+  "id": "kq-kodo",
+  "name": "高度救助隊",
+  "reading": "こうどきゅうじょたい",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 3,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🛠️",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-tokubetsu",
+   "kq-shikizai"
+  ],
+  "description": "高度な 救助の 道具を もち、大きな 災害にも 対応できる 救助隊です。決められた 規模の 消防本部に 置かれます。"
+ },
+ {
+  "id": "kq-shikizai",
+  "name": "救助資機材",
+  "reading": "きゅうじょしきざい",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 3,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-jotaiin",
+   "kq-kodo"
+  ],
+  "description": "救助に 使う 道具や 機械を まとめた 呼び名です。救助隊は ふだんから 点検し、すぐ 使える ように して います。"
+ },
+ {
+  "id": "kq-taikai",
+  "name": "救助技術大会",
+  "reading": "きゅうじょぎじゅつたいかい",
+  "journey": "kyukyu",
+  "category": "救助隊と救助",
+  "difficulty": 3,
+  "field": "訓練と体育",
+  "type": "concept",
+  "emoji": "🏅",
+  "mapNode": "kyukyu:kyujotai",
+  "relatedTerms": [
+   "kq-kunren",
+   "kq-jotaiin"
+  ],
+  "description": "全国の 消防の 救助隊員が、訓練で みがいた 技を 発表しあう 大会です。技を 高めあい、救助の 力を つけます。"
+ },
+ {
+  "id": "kq-net119",
+  "name": "Net119",
+  "reading": "ねっとひゃくじゅうきゅう",
+  "journey": "kyukyu",
+  "category": "119番と通報",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "📱",
+  "mapNode": "kyukyu:tsuho",
+  "relatedTerms": [
+   "kq-119",
+   "kq-ichi"
+  ],
+  "description": "話す ことや 聞く ことが むずかしい 人が、スマートフォンの 画面から 119番通報できる しくみです。前もって 登録して 使います。"
+ },
+ {
+  "id": "kq-guide",
+  "name": "救急受診ガイド",
+  "reading": "きゅうきゅうじゅしんがいど",
+  "journey": "kyukyu",
+  "category": "救急車の正しい使いかた",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "kyukyu:tadashiku",
+  "relatedTerms": [
+   "kq-anshin",
+   "kq-tekisei"
+  ],
+  "description": "急ぐ 必要が あるかを 自分で 確かめる ための 消防庁の 手引きです。アプリや ホームページでも 使え、まよった ときの 助けに なります。"
+ },
+ {
+  "id": "kq-byoinzen",
+  "name": "病院前救護",
+  "reading": "びょういんぜんきゅうご",
+  "journey": "kyukyu",
+  "category": "救急隊と救急救命士",
+  "difficulty": 3,
+  "field": "救急",
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "kyukyu:renkei",
+  "relatedTerms": [
+   "kq-mc",
+   "kq-kyumeishi"
+  ],
+  "description": "病院に 着く 前の 現場や 救急車の 中で 行う 手当てや 見守りの ことです。救急隊と 医師が 協力して、命を つなぎます。"
+ }
+]

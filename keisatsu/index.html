@@ -8,7 +8,7 @@
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png?v=2">
+<link rel="icon" type="image/png" href="favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -422,10 +422,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <span class="logo-text">フリック警察官</span>
+      <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=1" alt="" width="633" height="174" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック警察官</h1>
+    <img class="hero" src="hero.webp?v=1" alt="フリック警察官。まちの 交番の 前で 制服の 男の子の 警察官と 白い 犬が 笑っている 絵。まわりに 7つの 旅の ことばの 札と 4択クイズの 見本が ならんでいる" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -555,7 +557,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"keisatsu", name:"フリック警察官", modes:(typeof KEISATSU === "object" ? KEISATSU.modes : []), assets:"../", logo:false, hero:false, dir:"keisatsu/", lead:"交番と まちの ことば・交通・事件と 捜査・まもる しくみ・法律・警察の しくみ・警察官の 心と からだの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。まちで 見かける ことばから はじめて、警察官採用試験の 教養試験の 範囲の めやす・法律や 組織の こまかい ことばまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。本物の 試験問題では ありません。犯罪の やりかたや 取りしまりの 手順は のせていないよ。こまった ときは 110番 か 近くの 交番へ。試験の 勉強には 各都道府県警察の 採用案内や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、警察の ことばと しくみが つながって 見えてくるよ。警察庁・都道府県警察とは 関係ありません。" };
+const GAME = { id:"keisatsu", name:"フリック警察官", modes:(typeof KEISATSU === "object" ? KEISATSU.modes : []), assets:"../", logo:true, hero:true, dir:"keisatsu/", lead:"交番と まちの ことば・交通・事件と 捜査・まもる しくみ・法律・警察の しくみ・警察官の 心と からだの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。まちで 見かける ことばから はじめて、警察官採用試験の 教養試験の 範囲の めやす・法律や 組織の こまかい ことばまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。本物の 試験問題では ありません。犯罪の やりかたや 取りしまりの 手順は のせていないよ。こまった ときは 110番 か 近くの 交番へ。試験の 勉強には 各都道府県警察の 採用案内や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、警察の ことばと しくみが つながって 見えてくるよ。警察庁・都道府県警察とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

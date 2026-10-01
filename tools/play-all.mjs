@@ -1,6 +1,6 @@
 import { createRequire } from 'module'; const { chromium } = createRequire('/opt/node22/lib/node_modules/')('playwright');
 const VAR = process.env.VAR || 'ime';
-const games = process.argv.slice(2).length ? process.argv.slice(2) : ['', 'rekishi/', 'uchu/', 'karada/', 'kabu/', 'ai/', 'eikaiwa/', 'rika/', 'seibi/', 'patissier/', 'kokugo/', 'sugaku/', 'hoiku/', 'kango/', 'gamedev/', 'biyo/', 'kyoryu/', 'code/', 'eigo/', 'shakai/', 'ishi/', 'kyoshi/', 'chef/'];
+const games = process.argv.slice(2).length ? process.argv.slice(2) : ['', 'rekishi/', 'uchu/', 'karada/', 'kabu/', 'ai/', 'eikaiwa/', 'rika/', 'seibi/', 'patissier/', 'kokugo/', 'sugaku/', 'hoiku/', 'kango/', 'gamedev/', 'biyo/', 'kyoryu/', 'code/', 'eigo/', 'shakai/', 'ishi/', 'kyoshi/', 'chef/', 'keisatsu/'];
 const b = await chromium.launch();
 const report = [];
 for (const g of games) {

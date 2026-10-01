@@ -1,0 +1,1200 @@
+[
+ {
+  "id": "sg-saigai",
+  "name": "災害",
+  "reading": "さいがい",
+  "journey": "saigai",
+  "category": "いろいろな災害",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-shizensaigai",
+   "sg-bosai"
+  ],
+  "description": "地震や 大雨など、くらしに 大きな 影響が 出る できごとです。消防は ふだんから そなえ、災害の ときは まちを 守る ために 活動します。"
+ },
+ {
+  "id": "sg-jishin",
+  "name": "地震",
+  "reading": "じしん",
+  "journey": "saigai",
+  "category": "地震と津波",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "saigai:jishin",
+  "relatedTerms": [
+   "sg-shindo",
+   "sg-kagukotei",
+   "sg-kinkyujishin"
+  ],
+  "description": "地面が ゆれる 自然の できごとです。ゆれを 感じたら 頭を 守り、落ちて こない 場所で ゆれが おさまるのを 待ちます。"
+ },
+ {
+  "id": "sg-tsunami",
+  "name": "津波",
+  "reading": "つなみ",
+  "journey": "saigai",
+  "category": "地震と津波",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "saigai:tsunami",
+  "relatedTerms": [
+   "sg-tsunamikeiho",
+   "sg-jishin"
+  ],
+  "description": "海の 底で 起きた 地震などで、大きな 波が 陸に おしよせる ことです。海の 近くで 強い ゆれを 感じたら、すぐに 高い 場所へ にげます。"
+ },
+ {
+  "id": "sg-taifu",
+  "name": "台風",
+  "reading": "たいふう",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "saigai:suigai",
+  "relatedTerms": [
+   "sg-ooame",
+   "sg-takashio"
+  ],
+  "description": "夏から 秋に 多い、強い 風と 雨を つれて くる 熱帯の 低気圧です。天気予報を 見て、早めに 家の まわりの そなえを します。"
+ },
+ {
+  "id": "sg-ooame",
+  "name": "大雨",
+  "reading": "おおあめ",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "saigai:suigai",
+  "relatedTerms": [
+   "sg-kozui",
+   "sg-ooamekeiho",
+   "sg-dosha"
+  ],
+  "description": "短い 時間に たくさんの 雨が ふる ことです。川が あふれたり 山が くずれたり する ことが あるので、大雨の 情報に 気を つけます。"
+ },
+ {
+  "id": "sg-kozui",
+  "name": "洪水",
+  "reading": "こうずい",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "saigai:suigai",
+  "relatedTerms": [
+   "sg-ooame",
+   "sg-naisui",
+   "sg-suibodan"
+  ],
+  "description": "大雨で 川の 水が ふえ、まわりに あふれ出す ことです。ハザードマップで 家の まわりの 危ない 場所を 前もって 確かめて おきます。"
+ },
+ {
+  "id": "sg-bosai",
+  "name": "防災",
+  "reading": "ぼうさい",
+  "journey": "saigai",
+  "category": "防災の学び",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-gensai",
+   "sg-bosaikunren",
+   "sg-hazard"
+  ],
+  "description": "災害が 起きる 前に そなえて、命や くらしを 守る ための とりくみです。消防は 防災の 知識を 広め、まちの 人と いっしょに 訓練を します。"
+ },
+ {
+  "id": "sg-hinan",
+  "name": "避難",
+  "reading": "ひなん",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-hinanjo",
+   "sg-hinanshiji"
+  ],
+  "description": "危ない 場所から 安全な 場所へ にげる ことです。市町村から 出る 避難の 情報を 聞いたら、まよわず 早めに 動く ことが 大切です。"
+ },
+ {
+  "id": "sg-hinanjo",
+  "name": "避難所",
+  "reading": "ひなんじょ",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-hinan",
+   "sg-fukushihinanjo",
+   "sg-shiteibasho"
+  ],
+  "description": "家に いられなく なった 人が しばらく すごす ための 場所です。学校の 体育館などが 市町村に よって 決められて います。"
+ },
+ {
+  "id": "sg-shobodan",
+  "name": "消防団",
+  "reading": "しょうぼうだん",
+  "journey": "saigai",
+  "category": "消防団と地域",
+  "difficulty": 1,
+  "field": "消防組織制度",
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "saigai:shobodan",
+  "relatedTerms": [
+   "sg-shobodanin",
+   "sg-kinobetsu"
+  ],
+  "description": "ふだんは ほかの 仕事を しながら、地域を 守る ために 活動する 人たちの 組織です。火事や 災害の ときに かけつけ、消防署と 力を あわせます。"
+ },
+ {
+  "id": "sg-bosaikunren",
+  "name": "防災訓練",
+  "reading": "ぼうさいくんれん",
+  "journey": "saigai",
+  "category": "防災の学び",
+  "difficulty": 1,
+  "field": "訓練と体育",
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-bosai",
+   "sg-jishubosai"
+  ],
+  "description": "災害に そなえて、にげかたや 助けあいを 練習する 訓練です。まちや 学校で 行われ、消防署や 消防団の 人が 教えて くれます。"
+ },
+ {
+  "id": "sg-hazard",
+  "name": "ハザードマップ",
+  "reading": "はざーどまっぷ",
+  "journey": "saigai",
+  "category": "防災の学び",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-kozui",
+   "sg-dosha",
+   "sg-hinan"
+  ],
+  "description": "大雨や 津波などで 危なく なる 場所や ひなんじょを 地図に まとめた ものです。市町村が 作って いて、家族で 見て にげる 道を 確かめます。"
+ },
+ {
+  "id": "sg-mochidashi",
+  "name": "非常持ち出し袋",
+  "reading": "ひじょうもちだしぶくろ",
+  "journey": "saigai",
+  "category": "家のそなえ",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "saigai:sonae",
+  "relatedTerms": [
+   "sg-hijoshoku",
+   "sg-bichiku"
+  ],
+  "description": "にげる ときに すぐ 持ち出せる ように、水や 食べ物、ライト などを 入れて おく 袋です。家族で 中身を 決め、ときどき 点検します。"
+ },
+ {
+  "id": "sg-hijoshoku",
+  "name": "非常食",
+  "reading": "ひじょうしょく",
+  "journey": "saigai",
+  "category": "家のそなえ",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🥫",
+  "mapNode": "saigai:sonae",
+  "relatedTerms": [
+   "sg-bichiku",
+   "sg-rolling"
+  ],
+  "description": "災害で 食べ物が 手に 入りにくい ときの ために、長く とって おける 食べ物です。缶づめや 乾パン などを 家に そなえて おきます。"
+ },
+ {
+  "id": "sg-bosainohi",
+  "name": "防災の日",
+  "reading": "ぼうさいのひ",
+  "journey": "saigai",
+  "category": "防災の学び",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-bosai",
+   "sg-bosaikunren"
+  ],
+  "description": "毎年 9月1日で、災害への そなえを 見なおす 日です。この ころ 各地で 防災訓練が 行われます。"
+ },
+ {
+  "id": "sg-dosha",
+  "name": "土砂災害",
+  "reading": "どしゃさいがい",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "saigai:dosha",
+  "relatedTerms": [
+   "sg-dosekiryu",
+   "sg-gakekuzure",
+   "sg-ooame"
+  ],
+  "description": "大雨や 地震で 山や がけの 土が くずれ、家や 道に 流れこむ 災害です。危ない 場所に 住む 人は 早めの 避難が 大切です。"
+ },
+ {
+  "id": "sg-kazan",
+  "name": "火山",
+  "reading": "かざん",
+  "journey": "saigai",
+  "category": "いろいろな災害",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌋",
+  "mapNode": "saigai:kazan",
+  "relatedTerms": [
+   "sg-funkakeiho"
+  ],
+  "description": "地下の マグマが 地上に 出て くる 山です。日本には 火山が 多く、気象庁が ようすを 見守って 情報を 出して います。"
+ },
+ {
+  "id": "sg-ooyuki",
+  "name": "大雪",
+  "reading": "おおゆき",
+  "journey": "saigai",
+  "category": "いろいろな災害",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "❄",
+  "mapNode": "saigai:kazan",
+  "relatedTerms": [
+   "sg-nadare"
+  ],
+  "description": "短い あいだに たくさんの 雪が ふる ことです。屋根の 雪おろしは ひとりで せず、まわりの 人と 声を かけあって 行います。"
+ },
+ {
+  "id": "sg-zukin",
+  "name": "防災ずきん",
+  "reading": "ぼうさいずきん",
+  "journey": "saigai",
+  "category": "家のそなえ",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "⛑",
+  "mapNode": "saigai:sonae",
+  "relatedTerms": [
+   "sg-jishin",
+   "sg-bosaikunren"
+  ],
+  "description": "地震の とき 落ちて くる 物から 頭を 守る ための ずきんです。ふだんは いすの 座ぶとんとして 使う 学校も あります。"
+ },
+ {
+  "id": "sg-kagukotei",
+  "name": "家具の固定",
+  "reading": "かぐのこてい",
+  "journey": "saigai",
+  "category": "家のそなえ",
+  "difficulty": 1,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🛋",
+  "mapNode": "saigai:sonae",
+  "relatedTerms": [
+   "sg-jishin",
+   "sg-kanshin"
+  ],
+  "description": "地震の ゆれで 家具が たおれない ように、金具などで かべに とめて おく ことです。寝る 場所の まわりから 始めると 安心です。"
+ },
+ {
+  "id": "sg-shizensaigai",
+  "name": "自然災害",
+  "reading": "しぜんさいがい",
+  "journey": "saigai",
+  "category": "いろいろな災害",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-saigai",
+   "sg-jishin",
+   "sg-taifu"
+  ],
+  "description": "地震・台風・大雨・火山の 噴火など、自然の 力で 起きる 災害です。日本は 自然災害が 多い 国なので、ふだんからの そなえが 大切です。"
+ },
+ {
+  "id": "sg-gensai",
+  "name": "減災",
+  "reading": "げんさい",
+  "journey": "saigai",
+  "category": "防災の学び",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-bosai",
+   "sg-bichiku"
+  ],
+  "description": "災害を ゼロに できなくても、そなえで 被害を 少しでも 小さく する 考えかたです。家具の 固定や 早めの 避難が 減災に つながります。"
+ },
+ {
+  "id": "sg-bichiku",
+  "name": "備蓄",
+  "reading": "びちく",
+  "journey": "saigai",
+  "category": "家のそなえ",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "saigai:sonae",
+  "relatedTerms": [
+   "sg-hijoshoku",
+   "sg-rolling"
+  ],
+  "description": "災害に そなえて、水や 食べ物、日用品を 家に たくわえて おく ことです。市町村も ひなんじょの ために 備蓄を して います。"
+ },
+ {
+  "id": "sg-hyper",
+  "name": "ハイパーレスキュー",
+  "reading": "はいぱーれすきゅー",
+  "journey": "saigai",
+  "category": "応援と救助隊",
+  "difficulty": 2,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🦸",
+  "mapNode": "saigai:hyper",
+  "relatedTerms": [
+   "sg-kidobutai",
+   "sg-kinen"
+  ],
+  "description": "東京消防庁の 消防救助機動部隊の 呼び名です。特別な 車や 道具を 持ち、大きな 災害の 現場で 救助に あたります。"
+ },
+ {
+  "id": "sg-shobodanin",
+  "name": "消防団員",
+  "reading": "しょうぼうだんいん",
+  "journey": "saigai",
+  "category": "消防団と地域",
+  "difficulty": 2,
+  "field": "消防組織制度",
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "saigai:shobodan",
+  "relatedTerms": [
+   "sg-shobodan",
+   "sg-kinobetsu"
+  ],
+  "description": "消防団に 入って 活動する 人です。ふだん ほかの 仕事を しながら 活動する、非常勤の 特別職の 地方公務員です。"
+ },
+ {
+  "id": "sg-jishubosai",
+  "name": "自主防災組織",
+  "reading": "じしゅぼうさいそしき",
+  "journey": "saigai",
+  "category": "消防団と地域",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "saigai:koiki",
+  "relatedTerms": [
+   "sg-bosaikunren",
+   "sg-shobodan"
+  ],
+  "description": "町内会など 地域の 人たちが 自分たちで 作る 防災の 組織です。ふだんは 訓練を し、災害の ときは 助けあって 消防団や 消防署に 協力します。"
+ },
+ {
+  "id": "sg-hinanshiji",
+  "name": "避難指示",
+  "reading": "ひなんしじ",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-keikailevel",
+   "sg-koreishahinan",
+   "sg-kinkyuanzen"
+  ],
+  "description": "危ない 場所に いる 人に 市町村が 出す、全員が にげる ための 情報です。警戒レベル4に あたり、出たら すぐに 避難します。"
+ },
+ {
+  "id": "sg-koreishahinan",
+  "name": "高齢者等避難",
+  "reading": "こうれいしゃとうひなん",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-hinanshiji",
+   "sg-yoshiensha"
+  ],
+  "description": "警戒レベル3で 市町村が 出す 情報です。お年よりや にげるのに 時間が かかる 人は、この 段階で 避難を 始めます。"
+ },
+ {
+  "id": "sg-kinkyuanzen",
+  "name": "緊急安全確保",
+  "reading": "きんきゅうあんぜんかくほ",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🆘",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-hinanshiji",
+   "sg-keikailevel"
+  ],
+  "description": "警戒レベル5で 市町村が 出す 情報です。すでに 災害が 起きて いるか 迫って いる ので、いる 場所で 命を 守る 行動を とります。"
+ },
+ {
+  "id": "sg-keikailevel",
+  "name": "警戒レベル",
+  "reading": "けいかいれべる",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-hinanshiji",
+   "sg-koreishahinan"
+  ],
+  "description": "大雨などの とき、とるべき 行動を 1から 5の 5段階で 示す ものです。レベル4までに 全員が 避難する ことが 大切です。"
+ },
+ {
+  "id": "sg-kinkyujishin",
+  "name": "緊急地震速報",
+  "reading": "きんきゅうじしんそくほう",
+  "journey": "saigai",
+  "category": "地震と津波",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📳",
+  "mapNode": "saigai:jishin",
+  "relatedTerms": [
+   "sg-jishin",
+   "sg-shindo"
+  ],
+  "description": "強い ゆれが 来る ことを、テレビや スマートフォンで いち早く 知らせる 気象庁の 情報です。聞いたら すぐに 頭を 守る 姿勢を とります。"
+ },
+ {
+  "id": "sg-shindo",
+  "name": "震度",
+  "reading": "しんど",
+  "journey": "saigai",
+  "category": "地震と津波",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "saigai:jishin",
+  "relatedTerms": [
+   "sg-jishin",
+   "sg-yoshin"
+  ],
+  "description": "ある 場所が どれくらい ゆれたかを 表す ものです。日本では 0から 7までを 10の 段階に 分けて います。"
+ },
+ {
+  "id": "sg-tsunamikeiho",
+  "name": "津波警報",
+  "reading": "つなみけいほう",
+  "journey": "saigai",
+  "category": "地震と津波",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🚨",
+  "mapNode": "saigai:tsunami",
+  "relatedTerms": [
+   "sg-tsunami",
+   "sg-tokubetsukeiho"
+  ],
+  "description": "津波が 来る おそれが ある とき 気象庁が 出す 警報です。出たら 海や 川の 近くから はなれ、高い 場所へ にげます。"
+ },
+ {
+  "id": "sg-ooamekeiho",
+  "name": "大雨警報",
+  "reading": "おおあめけいほう",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "saigai:suigai",
+  "relatedTerms": [
+   "sg-ooame",
+   "sg-tokubetsukeiho"
+  ],
+  "description": "大雨で 大きな 災害が 起きる おそれが ある とき、気象庁が 出す 警報です。市町村の 避難の 情報と あわせて 確かめます。"
+ },
+ {
+  "id": "sg-tokubetsukeiho",
+  "name": "特別警報",
+  "reading": "とくべつけいほう",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "⚠",
+  "mapNode": "saigai:suigai",
+  "relatedTerms": [
+   "sg-ooamekeiho",
+   "sg-tsunamikeiho"
+  ],
+  "description": "ふだんの 警報を 大きく こえる 災害の おそれが ある とき、気象庁が 出す 警報です。命を 守る 行動を すぐに とります。"
+ },
+ {
+  "id": "sg-dosekiryu",
+  "name": "土石流",
+  "reading": "どせきりゅう",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "saigai:dosha",
+  "relatedTerms": [
+   "sg-dosha",
+   "sg-gakekuzure"
+  ],
+  "description": "大雨などで 山の 土や 石が 水と いっしょに 一気に 流れ下る ことです。山の 近くでは 早めの 避難が 大切です。"
+ },
+ {
+  "id": "sg-gakekuzure",
+  "name": "がけ崩れ",
+  "reading": "がけくずれ",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "saigai:dosha",
+  "relatedTerms": [
+   "sg-dosha",
+   "sg-dosekiryu"
+  ],
+  "description": "大雨や 地震で 急な 斜面が くずれ落ちる ことです。がけから 小石が 落ちるなどの 前ぶれに 気づいたら すぐ はなれます。"
+ },
+ {
+  "id": "sg-ekijoka",
+  "name": "液状化",
+  "reading": "えきじょうか",
+  "journey": "saigai",
+  "category": "地震と津波",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "saigai:jishin",
+  "relatedTerms": [
+   "sg-jishin"
+  ],
+  "description": "地震の ゆれで 水を ふくんだ 地面が どろどろに なる ことです。うめたてた 土地などで 起きやすく、ハザードマップで 確かめられます。"
+ },
+ {
+  "id": "sg-yoshin",
+  "name": "余震",
+  "reading": "よしん",
+  "journey": "saigai",
+  "category": "地震と津波",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "saigai:jishin",
+  "relatedTerms": [
+   "sg-jishin",
+   "sg-shindo"
+  ],
+  "description": "大きな 地震の あとに 続いて 起きる 地震です。ゆれが おさまっても しばらくは 油断せず、こわれた 建物に 近づかない ように します。"
+ },
+ {
+  "id": "sg-fukushihinanjo",
+  "name": "福祉避難所",
+  "reading": "ふくしひなんじょ",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "♿",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-hinanjo",
+   "sg-yoshiensha"
+  ],
+  "description": "お年よりや 障害の ある 人など、手助けが 必要な 人の ための ひなんじょです。市町村が 前もって 決めて います。"
+ },
+ {
+  "id": "sg-zaitaku",
+  "name": "在宅避難",
+  "reading": "ざいたくひなん",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "saigai:sonae",
+  "relatedTerms": [
+   "sg-bichiku",
+   "sg-hinanjo"
+  ],
+  "description": "家が 安全なら ひなんじょに 行かず、自分の 家で すごす 避難の しかたです。そのために 家の 備蓄が 役に 立ちます。"
+ },
+ {
+  "id": "sg-shiteibasho",
+  "name": "指定緊急避難場所",
+  "reading": "していきんきゅうひなんばしょ",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🏞",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-hinanjo",
+   "sg-hinan"
+  ],
+  "description": "命を 守る ため まず にげる 場所として、市町村が 災害の 種類ごとに 決めた 場所です。しばらく くらす ひなんじょとは 役わりが ちがいます。"
+ },
+ {
+  "id": "sg-higashinihon",
+  "name": "東日本大震災",
+  "reading": "ひがしにほんだいしんさい",
+  "journey": "saigai",
+  "category": "防災の学び",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-tsunami",
+   "sg-hanshin"
+  ],
+  "description": "2011年に 起きた 大きな 震災です。防災を 学ぶ きっかけとして 名前を おぼえ、津波からの 避難を 考える ときに 学びます。",
+  "acceptedReadings": [
+   "ひがしにほんだいしんさい",
+   "ひがしにっぽんだいしんさい"
+  ]
+ },
+ {
+  "id": "sg-hanshin",
+  "name": "阪神・淡路大震災",
+  "reading": "はんしんあわじだいしんさい",
+  "journey": "saigai",
+  "category": "防災の学び",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-kinen",
+   "sg-higashinihon"
+  ],
+  "description": "1995年に 起きた 大きな 震災です。この 震災を きっかけに、緊急消防援助隊が 作られるなど 防災の しくみが 見なおされました。"
+ },
+ {
+  "id": "sg-donou",
+  "name": "土のう",
+  "reading": "どのう",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 2,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "saigai:suigai",
+  "relatedTerms": [
+   "sg-suibodan",
+   "sg-naisui"
+  ],
+  "description": "袋に 土などを つめた もので、積み上げて 水が 入るのを ふせぎます。大雨の ときに 消防団や 水防団が 使います。"
+ },
+ {
+  "id": "sg-taisakukihonho",
+  "name": "災害対策基本法",
+  "reading": "さいがいたいさくきほんほう",
+  "journey": "saigai",
+  "category": "防災の法律と計画",
+  "difficulty": 3,
+  "field": "法学基礎・消防法",
+  "type": "concept",
+  "emoji": "⚖",
+  "mapNode": "saigai:bosai",
+  "relatedTerms": [
+   "sg-chiikibosai",
+   "sg-taisakuhonbu"
+  ],
+  "description": "国・都道府県・市町村などが 災害に そなえ、どう 動くかの 基本を 決めた 法律です。防災の 計画や 避難の 情報の しくみも この 法律に もとづきます。"
+ },
+ {
+  "id": "sg-kyujoho",
+  "name": "災害救助法",
+  "reading": "さいがいきゅうじょほう",
+  "journey": "saigai",
+  "category": "防災の法律と計画",
+  "difficulty": 3,
+  "field": "法学基礎・消防法",
+  "type": "concept",
+  "emoji": "⚖",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-hinanjo",
+   "sg-taisakukihonho"
+  ],
+  "description": "大きな 災害の とき、ひなんじょや 食べ物などで 被災した 人を 助ける ための 法律です。国と 都道府県が 協力して 行います。"
+ },
+ {
+  "id": "sg-kinen",
+  "name": "緊急消防援助隊",
+  "reading": "きんきゅうしょうぼうえんじょたい",
+  "journey": "saigai",
+  "category": "応援と救助隊",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🚒",
+  "mapNode": "saigai:kinen",
+  "relatedTerms": [
+   "sg-todofukendaitai",
+   "sg-shikishien",
+   "sg-koikiouen"
+  ],
+  "description": "大きな 災害の とき、全国の 消防本部から 被災地へ かけつける 消防の 部隊です。1995年の 阪神・淡路大震災を きっかけに 作られました。"
+ },
+ {
+  "id": "sg-koikiouen",
+  "name": "広域応援",
+  "reading": "こういきおうえん",
+  "journey": "saigai",
+  "category": "応援と救助隊",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "saigai:koiki",
+  "relatedTerms": [
+   "sg-sogoouen",
+   "sg-kinen"
+  ],
+  "description": "ひとつの まちの 消防だけでは 足りない とき、ほかの まちの 消防が 応援に かけつける ことです。日ごろから 協力の 約束を して います。"
+ },
+ {
+  "id": "sg-sogoouen",
+  "name": "相互応援協定",
+  "reading": "そうごおうえんきょうてい",
+  "journey": "saigai",
+  "category": "応援と救助隊",
+  "difficulty": 3,
+  "field": "消防組織制度",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "saigai:koiki",
+  "relatedTerms": [
+   "sg-koikiouen",
+   "sg-juen"
+  ],
+  "description": "となりあう まちなどの 消防が、いざと いう とき 助けあう ことを 前もって 約束した ものです。火事や 災害の とき すばやく 応援できます。"
+ },
+ {
+  "id": "sg-kidobutai",
+  "name": "消防救助機動部隊",
+  "reading": "しょうぼうきゅうじょきどうぶたい",
+  "journey": "saigai",
+  "category": "応援と救助隊",
+  "difficulty": 3,
+  "field": "救助",
+  "type": "concept",
+  "emoji": "🦸",
+  "mapNode": "saigai:hyper",
+  "relatedTerms": [
+   "sg-hyper",
+   "sg-kinen"
+  ],
+  "description": "東京消防庁の、大きな 災害に そなえた 特別な 救助の 部隊です。ハイパーレスキューと 呼ばれ、重機や 特別な 車を 持って います。"
+ },
+ {
+  "id": "sg-shikishien",
+  "name": "指揮支援部隊",
+  "reading": "しきしえんぶたい",
+  "journey": "saigai",
+  "category": "応援と救助隊",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "saigai:kinen",
+  "relatedTerms": [
+   "sg-kinen",
+   "sg-todofukendaitai"
+  ],
+  "description": "緊急消防援助隊の 部隊の ひとつです。被災地の 消防本部に 入り、全国から 来た 部隊の 活動を まとめる 手助けを します。"
+ },
+ {
+  "id": "sg-todofukendaitai",
+  "name": "都道府県大隊",
+  "reading": "とどうふけんだいたい",
+  "journey": "saigai",
+  "category": "応援と救助隊",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🚒",
+  "mapNode": "saigai:kinen",
+  "relatedTerms": [
+   "sg-kinen",
+   "sg-shikishien"
+  ],
+  "description": "緊急消防援助隊が 出動する とき、都道府県ごとに まとまって 作る 大きな 隊です。消火や 救助、救急などの 隊が いっしょに 動きます。"
+ },
+ {
+  "id": "sg-kinobetsu",
+  "name": "機能別団員",
+  "reading": "きのうべつだんいん",
+  "journey": "saigai",
+  "category": "消防団と地域",
+  "difficulty": 3,
+  "field": "消防組織制度",
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "saigai:shobodan",
+  "relatedTerms": [
+   "sg-shobodanin",
+   "sg-shobodan"
+  ],
+  "description": "決まった 活動や 役わりだけに 参加する 消防団員です。大きな 災害の ときだけ 出る 人や、広報を する 学生などが います。"
+ },
+ {
+  "id": "sg-chiikibosai",
+  "name": "地域防災計画",
+  "reading": "ちいきぼうさいけいかく",
+  "journey": "saigai",
+  "category": "防災の法律と計画",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "saigai:koiki",
+  "relatedTerms": [
+   "sg-taisakukihonho",
+   "sg-taisakuhonbu"
+  ],
+  "description": "都道府県や 市町村が、その 地域の 災害への そなえと 動きかたを まとめた 計画です。ひなんじょや 役わり分担などが 書かれて います。"
+ },
+ {
+  "id": "sg-taisakuhonbu",
+  "name": "災害対策本部",
+  "reading": "さいがいたいさくほんぶ",
+  "journey": "saigai",
+  "category": "防災の法律と計画",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "saigai:koiki",
+  "relatedTerms": [
+   "sg-chiikibosai",
+   "sg-taisakukihonho"
+  ],
+  "description": "大きな 災害の とき、都道府県や 市町村が 作る 本部です。消防や 警察などと 情報を まとめ、対応を 決めます。"
+ },
+ {
+  "id": "sg-yoshiensha",
+  "name": "避難行動要支援者",
+  "reading": "ひなんこうどうようしえんしゃ",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-kobetsukeikaku",
+   "sg-fukushihinanjo"
+  ],
+  "description": "お年よりや 障害の ある 人など、自分だけで にげるのが むずかしい 人の ことです。市町村は その 名簿を 作り、地域で 支える しくみを 整えます。"
+ },
+ {
+  "id": "sg-kobetsukeikaku",
+  "name": "個別避難計画",
+  "reading": "こべつひなんけいかく",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-yoshiensha",
+   "sg-jishubosai"
+  ],
+  "description": "避難行動要支援者 ひとり ひとりに ついて、だれが どこへ どう 手助けして にげるかを まとめた 計画です。"
+ },
+ {
+  "id": "sg-kitakukonnan",
+  "name": "帰宅困難者",
+  "reading": "きたくこんなんしゃ",
+  "journey": "saigai",
+  "category": "避難",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🚉",
+  "mapNode": "saigai:hinanjo",
+  "relatedTerms": [
+   "sg-shutochokka"
+  ],
+  "description": "大きな 地震などで 電車が 止まり、家に 帰れなく なった 人です。むやみに 動かず、会社や 一時的な 滞在の 場所で 待つ ことが すすめられて います。"
+ },
+ {
+  "id": "sg-senjokosui",
+  "name": "線状降水帯",
+  "reading": "せんじょうこうすいたい",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "saigai:suigai",
+  "relatedTerms": [
+   "sg-ooame",
+   "sg-tokubetsukeiho"
+  ],
+  "description": "雨雲が 次々に できて 帯の ように 並び、同じ 場所に 大雨を ふらせる ものです。気象庁の 情報が 出たら 早めの 避難を 考えます。"
+ },
+ {
+  "id": "sg-naisui",
+  "name": "内水氾濫",
+  "reading": "ないすいはんらん",
+  "journey": "saigai",
+  "category": "大雨と土砂",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "saigai:suigai",
+  "relatedTerms": [
+   "sg-kozui",
+   "sg-donou"
+  ],
+  "description": "大雨で 下水道や 水路が 雨水を 流しきれず、まちの 中に 水が あふれる ことです。川から 遠い 場所でも 起きる ことが あります。"
+ },
+ {
+  "id": "sg-takashio",
+  "name": "高潮",
+  "reading": "たかしお",
+  "journey": "saigai",
+  "category": "いろいろな災害",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "saigai:tsunami",
+  "relatedTerms": [
+   "sg-taifu",
+   "sg-tsunami"
+  ],
+  "description": "台風などで 海面が ふだんより 高く なり、海水が 陸へ 入りこむ ことです。海岸の 近くでは 早めの 避難が 大切です。"
+ },
+ {
+  "id": "sg-funkakeiho",
+  "name": "噴火警報",
+  "reading": "ふんかけいほう",
+  "journey": "saigai",
+  "category": "いろいろな災害",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌋",
+  "mapNode": "saigai:kazan",
+  "relatedTerms": [
+   "sg-kazan"
+  ],
+  "description": "火山の 噴火で 危ない 範囲が 広がる おそれが ある とき、気象庁が 出す 警報です。入っては いけない 場所を 守って 行動します。"
+ },
+ {
+  "id": "sg-nadare",
+  "name": "雪崩",
+  "reading": "なだれ",
+  "journey": "saigai",
+  "category": "いろいろな災害",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "saigai:kazan",
+  "relatedTerms": [
+   "sg-ooyuki"
+  ],
+  "description": "山の 斜面に つもった 雪が 一気に すべり落ちる ことです。雪の 多い 地域では 注意の 情報に 気を つけます。"
+ },
+ {
+  "id": "sg-nankai",
+  "name": "南海トラフ地震",
+  "reading": "なんかいとらふじしん",
+  "journey": "saigai",
+  "category": "地震と津波",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "saigai:jishin",
+  "relatedTerms": [
+   "sg-tsunami",
+   "sg-jishin"
+  ],
+  "description": "静岡県の 沖から 九州の 沖に かけての 海の 底で、起きると 考えられて いる 大きな 地震です。国や 地域で そなえが 進められて います。"
+ },
+ {
+  "id": "sg-shutochokka",
+  "name": "首都直下地震",
+  "reading": "しゅとちょっかじしん",
+  "journey": "saigai",
+  "category": "地震と津波",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "saigai:jishin",
+  "relatedTerms": [
+   "sg-kitakukonnan",
+   "sg-jishin"
+  ],
+  "description": "東京など 首都の 真下で 起きると 考えられて いる 大きな 地震です。国や 東京都が 計画を 作り、そなえを 進めて います。"
+ },
+ {
+  "id": "sg-juen",
+  "name": "受援計画",
+  "reading": "じゅえんけいかく",
+  "journey": "saigai",
+  "category": "防災の法律と計画",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "saigai:koiki",
+  "relatedTerms": [
+   "sg-sogoouen",
+   "sg-kinen"
+  ],
+  "description": "ほかの 地域から 来た 応援を、うまく 受け入れる ための 計画です。どこに 集まり、どう 動いて もらうかを 前もって 決めて おきます。"
+ },
+ {
+  "id": "sg-suibodan",
+  "name": "水防団",
+  "reading": "すいぼうだん",
+  "journey": "saigai",
+  "category": "消防団と地域",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "saigai:suigai",
+  "relatedTerms": [
+   "sg-donou",
+   "sg-shobodan"
+  ],
+  "description": "大雨で 川が あふれそうな とき、土のうを 積むなどして 水から まちを 守る 組織です。消防団が 水防の 役わりを かねる 地域も 多いです。"
+ },
+ {
+  "id": "sg-kanshin",
+  "name": "感震ブレーカー",
+  "reading": "かんしんぶれーかー",
+  "journey": "saigai",
+  "category": "家のそなえ",
+  "difficulty": 3,
+  "field": "予防",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "saigai:sonae",
+  "relatedTerms": [
+   "sg-kagukotei",
+   "sg-jishin"
+  ],
+  "description": "大きな ゆれを 感じると 自動で 電気を 止める 器具です。地震の あと 電気が もどった ときの 火事を ふせぐ ために 役立ちます。"
+ },
+ {
+  "id": "sg-rolling",
+  "name": "ローリングストック",
+  "reading": "ろーりんぐすとっく",
+  "journey": "saigai",
+  "category": "家のそなえ",
+  "difficulty": 3,
+  "field": "防災",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "saigai:sonae",
+  "relatedTerms": [
+   "sg-bichiku",
+   "sg-hijoshoku"
+  ],
+  "description": "ふだん 食べる ものを 少し 多めに 買い、使った ぶんを 買い足して いく そなえかたです。いつも 新しい 食べ物を 家に そなえて おけます。"
+ }
+]

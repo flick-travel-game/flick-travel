@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリック国語旅行</title>
+<title>フリック消防士</title>
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="favicon.png?v=4">
+<link rel="icon" type="image/png" href="../favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -422,12 +422,10 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=4" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=4" alt="" width="881" height="186" aria-hidden="true">
+      <span class="logo-text">フリック消防士</span>
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリック国語旅行</h1>
-    <img class="hero" src="hero.webp?v=4" alt="フリック国語旅行。本と 桜の 町で 筆を もった 女の子と 犬が 漢字・古文・漢文・文学史の 札の 中を 旅する 絵" width="1536" height="1024">
+    <h1 class="sr-only">フリック消防士</h1>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -549,15 +547,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=634617d5"></script>
-<script src="kokugo.js?v=7710fd5e"></script>
+<script src="terms.js?v=d0ca96b1"></script>
+<script src="shobo.js?v=5211f991"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
    前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kokugo", name:"フリック国語旅行", modes:(typeof KOKUGO === "object" ? KOKUGO.modes : []), assets:"../", logo:true, hero:true, dir:"kokugo/", lead:"漢字の読み・四字熟語・ことわざ・文法・古文・漢文・文学史・評論の ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出るよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。4択クイズで 意味の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。漢字の読みの 上級は よみが かくれるよ。思い出して 打ってね。古文単語は むかしの かなづかいを いまの かなづかいで 打つよ。説明は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、国語の ことばが 自然と 身につくよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。" };
+const GAME = { id:"shobo", name:"フリック消防士", modes:(typeof SHOBO === "object" ? SHOBO.modes : []), assets:"../", logo:false, hero:false, dir:"shobo/", lead:"消防車と 道具・火と 消火・救急と 救助・火事を ふせぐ・災害と 消防・消防の 法律と しくみ・消防士の 心と からだの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。まちで 見かける ことばから はじめて、消防官採用試験の 教養試験と 消防学校で 学ぶ ことばの めやす・消防設備士や 危険物取扱者の ことばまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。本物の 試験問題では ありません。火の つけかたや 救命処置の 手順は のせていないよ。火を 使う ときは かならず 大人と いっしょに。火事や けがの ときは 119番。試験の 勉強には 各消防本部の 採用案内や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、消防の ことばと しくみが つながって 見えてくるよ。総務省消防庁・市町村の 消防とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

@@ -549,7 +549,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=eaf550ff"></script>
+<script src="terms.js?v=32b346cc"></script>
 <script src="ishi.js?v=0a82b349"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
@@ -557,7 +557,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"ishi", name:"フリック医師", modes:(typeof ISHI === "object" ? ISHI.modes : []), assets:"../", logo:true, hero:true, dir:"ishi/", lead:"診察の ことば・検査の ことば・治療と くすりの ことば・診療科と 専門・からだと 病気の しくみ・公衆衛生と 予防・医師の 制度と 倫理を、ひらがなで フリック入力。打つと その ことばの 意味と、医師国家試験の どの 区分か・しくみ図の どこに あるのかが 出るよ。病院で 聞く ことばから はじめて、医師国家試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームです。薬の 量や 手当て・手術の やりかたは のせていないよ。本当に 具合が わるい ときは、大人に 言って お医者さんへ。説明は 本物の 試験問題では ないので、試験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、医学の ことばと しくみが つながって 見えてくるよ。厚生労働省とは 関係ありません。" };
+const GAME = { id:"ishi", name:"フリック医師", modes:(typeof ISHI === "object" ? ISHI.modes : []), assets:"../", logo:true, hero:true, dir:"ishi/", lead:"診察の ことば・検査の ことば・治療と くすりの ことば・診療科と 専門・からだと 病気の しくみ・公衆衛生と 予防・医師の 制度と 倫理を、ひらがなで フリック入力。打つと その ことばの 意味と、医師国家試験の どの 区分か・しくみ図の どこに あるのかが 出るよ。病院で 聞く ことばから はじめて、医師国家試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。薬の 量や 手あて・手術の やりかたは のせていないよ。本当に 具合が わるい ときは、大人に 言って お医者さんへ。説明は 本物の 試験問題では ないので、試験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、医学の ことばと しくみが つながって 見えてくるよ。厚生労働省とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},
@@ -1950,7 +1950,7 @@ async function drawBoard(m, lv, id){
       ? (boardSent === "norank" ? '<p class="board-note">この回は ランキングの 対象では ありません(レベル61より上)</p>'
       : boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。ログインすると のります</p>'
                                   : '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>') : "";
-    if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも!</p>' + note; return; }
+    if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも！</p>' + note; return; }
     body.innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
       (i < 3 ? '<span class="rk md">' + MEDALS[i] + '</span>' : '<span class="rk">' + (i+1) + '位</span>') +
       '<span class="nm">' + esc(r.name) + '</span><span class="tm">' + (r.ms/1000).toFixed(2) + '秒</span></div>').join("") + note;
@@ -1976,7 +1976,7 @@ function renderResult(r){
   const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
   const pinsNow = mode === "quote" ? 0 : clearedSpots(mode).size;
   $("#r-pins").classList.toggle("hidden", !(mode !== "quote" && r.firstClear));
-  $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ!(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + unitOf(MAPS[mode]) + ")";
+  $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ！(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + unitOf(MAPS[mode]) + ")";
   if(PLUG && PLUG.owns(mode)){ $("#r-pins").classList.remove("hidden"); $("#r-pins").innerHTML = PLUG.resultMsg(r); }
   $("#r-time").textContent = total.toFixed(2);
   const ink = levelTone(level).ink;

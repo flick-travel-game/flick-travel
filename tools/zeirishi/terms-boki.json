@@ -1,0 +1,1192 @@
+[
+ {
+  "id": "bk-boki",
+  "name": "簿記",
+  "reading": "ぼき",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "boki:chobo",
+  "relatedTerms": [
+   "bk-fukushiki",
+   "bk-torihiki"
+  ],
+  "description": "お店や 会社の お金や ものの 出入りを、決まった やりかたで 帳簿に 書きのこす 方法です。税理士の 仕事は、この 正しい 記録が 土台に なります。"
+ },
+ {
+  "id": "bk-chobo",
+  "name": "帳簿",
+  "reading": "ちょうぼ",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "boki:chobo",
+  "relatedTerms": [
+   "bk-boki",
+   "bk-motocho"
+  ],
+  "description": "お金や ものの 出入りを 日づけの 順に 書きためて おく ノートや データの ことです。税の 申告も、帳簿の 記録を もとに 作ります。"
+ },
+ {
+  "id": "bk-torihiki",
+  "name": "取引",
+  "reading": "とりひき",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "boki:torihiki",
+  "relatedTerms": [
+   "bk-shiwake",
+   "bk-boki"
+  ],
+  "description": "簿記で 帳簿に 書く できごとの ことで、資産や 負債などが 増えたり 減ったり する ことを いいます。ものを 売る・買う・お金を 借りる などが あたります。"
+ },
+ {
+  "id": "bk-shiwake",
+  "name": "仕訳",
+  "reading": "しわけ",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "✍️",
+  "mapNode": "boki:shiwake",
+  "relatedTerms": [
+   "bk-karikata",
+   "bk-kashikata"
+  ],
+  "description": "ひとつの 取引を、左の 借方と 右の 貸方に 分けて、勘定科目と 金額で 書きあらわす ことです。簿記の いちばん 基本の 作業です。"
+ },
+ {
+  "id": "bk-karikata",
+  "name": "借方",
+  "reading": "かりかた",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "boki:karikata",
+  "relatedTerms": [
+   "bk-kashikata",
+   "bk-shiwake"
+  ],
+  "description": "仕訳や 勘定の 左がわの ことです。資産の 増加・負債の 減少・費用の 発生 などは 借方に 書きます。「借りる」の 意味とは 関係なく、左と おぼえます。"
+ },
+ {
+  "id": "bk-kashikata",
+  "name": "貸方",
+  "reading": "かしかた",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "boki:kashikata",
+  "relatedTerms": [
+   "bk-karikata",
+   "bk-shiwake"
+  ],
+  "description": "仕訳や 勘定の 右がわの ことです。負債の 増加・純資産の 増加・収益の 発生・資産の 減少 などは 貸方に 書きます。借方と 貸方の 合計は かならず 同じに なります。"
+ },
+ {
+  "id": "bk-kanjokamoku",
+  "name": "勘定科目",
+  "reading": "かんじょうかもく",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "boki:kanjo",
+  "relatedTerms": [
+   "bk-kanjo",
+   "bk-shiwake"
+  ],
+  "description": "現金・売掛金・給料 のように、取引の 中身を 分けて 記録する ための 名前です。同じ 名前で 記録すると、あとで 集計しやすく なります。"
+ },
+ {
+  "id": "bk-genkin",
+  "name": "現金",
+  "reading": "げんきん",
+  "journey": "boki",
+  "category": "資産の科目",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-futsuyokin",
+   "bk-shisan"
+  ],
+  "description": "お札や 硬貨 のように、すぐに 支払いに 使える お金を あらわす 勘定科目です。資産の なかまで、増えたら 借方に 書きます。"
+ },
+ {
+  "id": "bk-futsuyokin",
+  "name": "普通預金",
+  "reading": "ふつうよきん",
+  "journey": "boki",
+  "category": "資産の科目",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-genkin",
+   "bk-toza"
+  ],
+  "description": "銀行の 普通預金口座に 入れて いる お金を あらわす 勘定科目です。いつでも 出し入れ できる 資産として 記録します。"
+ },
+ {
+  "id": "bk-shisan",
+  "name": "資産",
+  "reading": "しさん",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-fusai",
+   "bk-junshisan"
+  ],
+  "description": "現金・預金・商品・建物 など、会社が 持って いて 役に 立つ 財産や 権利の ことです。貸借対照表の 左がわに ならびます。"
+ },
+ {
+  "id": "bk-fusai",
+  "name": "負債",
+  "reading": "ふさい",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "boki:fusai",
+  "relatedTerms": [
+   "bk-shisan",
+   "bk-kaikake"
+  ],
+  "description": "借入金や 買掛金 のように、これから 返したり 支払ったり しなければ ならない 義務の ことです。貸借対照表の 右がわに ならびます。"
+ },
+ {
+  "id": "bk-shueki",
+  "name": "収益",
+  "reading": "しゅうえき",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "boki:pl",
+  "relatedTerms": [
+   "bk-hiyo",
+   "bk-pl"
+  ],
+  "description": "商品を 売ったり サービスを したり して、会社の 純資産を 増やす もとに なる ものです。損益計算書に のり、仕訳では 貸方に 書きます。"
+ },
+ {
+  "id": "bk-hiyo",
+  "name": "費用",
+  "reading": "ひよう",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "boki:pl",
+  "relatedTerms": [
+   "bk-shueki",
+   "bk-pl"
+  ],
+  "description": "給料・家賃・仕入れ など、収益を えるために 使った ものの ことです。損益計算書に のり、仕訳では 借方に 書きます。"
+ },
+ {
+  "id": "bk-urikake",
+  "name": "売掛金",
+  "reading": "うりかけきん",
+  "journey": "boki",
+  "category": "資産の科目",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-kaikake",
+   "bk-kashidaore"
+  ],
+  "description": "商品を 先に わたし、代金は あとで 受けとる 約束を した ときの、まだ もらって いない 代金です。あとで お金を 受けとれる 権利なので 資産です。"
+ },
+ {
+  "id": "bk-kaikake",
+  "name": "買掛金",
+  "reading": "かいかけきん",
+  "journey": "boki",
+  "category": "負債と純資産の科目",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "boki:fusai",
+  "relatedTerms": [
+   "bk-urikake",
+   "bk-fusai"
+  ],
+  "description": "商品を 先に 受けとり、代金は あとで 払う 約束を した ときの、まだ 払って いない 代金です。あとで 払う 義務なので 負債です。"
+ },
+ {
+  "id": "bk-shihonkin",
+  "name": "資本金",
+  "reading": "しほんきん",
+  "journey": "boki",
+  "category": "負債と純資産の科目",
+  "difficulty": 1,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "boki:junshisan",
+  "relatedTerms": [
+   "bk-junshisan",
+   "bk-shisan"
+  ],
+  "description": "会社を はじめる ときなどに、株主が 出した お金の うち 資本金と した ぶんです。純資産の なかまで、貸借対照表の 右がわに のります。"
+ },
+ {
+  "id": "bk-bs",
+  "name": "貸借対照表",
+  "reading": "たいしゃくたいしょうひょう",
+  "journey": "boki",
+  "category": "財務諸表",
+  "difficulty": 1,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "boki:bs",
+  "relatedTerms": [
+   "bk-pl",
+   "bk-shisan"
+  ],
+  "description": "決算日の 時点で、会社に どんな 資産・負債・純資産が あるかを あらわす 表です。左の 資産の 合計と、右の 負債と 純資産の 合計は 同じに なります。"
+ },
+ {
+  "id": "bk-pl",
+  "name": "損益計算書",
+  "reading": "そんえきけいさんしょ",
+  "journey": "boki",
+  "category": "財務諸表",
+  "difficulty": 1,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "boki:pl",
+  "relatedTerms": [
+   "bk-bs",
+   "bk-shueki"
+  ],
+  "description": "一定の 期間に、どれだけ 収益が あり、どれだけ 費用が かかり、その 結果 もうけが 出たか どうかを あらわす 表です。"
+ },
+ {
+  "id": "bk-zaimushohyo",
+  "name": "財務諸表",
+  "reading": "ざいむしょひょう",
+  "journey": "boki",
+  "category": "財務諸表",
+  "difficulty": 1,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "boki:bs",
+  "relatedTerms": [
+   "bk-bs",
+   "bk-pl"
+  ],
+  "description": "貸借対照表や 損益計算書 など、会社の 状態や 成績を 外の 人に 知らせる ための 表を まとめた 呼び名です。税理士試験では 財務諸表論で 学びます。"
+ },
+ {
+  "id": "bk-kentei",
+  "name": "簿記検定",
+  "reading": "ぼきけんてい",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 1,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "boki:chobo",
+  "relatedTerms": [
+   "bk-boki",
+   "bk-fukushiki"
+  ],
+  "description": "簿記の 力を ためす 検定試験です。級ごとに むずかしさが 分かれ、税理士を めざす 人が 最初に 学ぶ ことも 多いです。"
+ },
+ {
+  "id": "bk-fukushiki",
+  "name": "複式簿記",
+  "reading": "ふくしきぼき",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "boki:shiwake",
+  "relatedTerms": [
+   "bk-tanshiki",
+   "bk-shiwake"
+  ],
+  "description": "ひとつの 取引を、原因と 結果の 両方から 借方と 貸方に 書く 簿記です。会社の 帳簿は ふつう この やりかたで、まちがいも 見つけやすく なります。"
+ },
+ {
+  "id": "bk-tanshiki",
+  "name": "単式簿記",
+  "reading": "たんしきぼき",
+  "journey": "boki",
+  "category": "簿記のきほん",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📓",
+  "mapNode": "boki:chobo",
+  "relatedTerms": [
+   "bk-fukushiki",
+   "bk-boki"
+  ],
+  "description": "おこづかい帳や 家計簿 のように、お金の 出入りだけを 一つの 流れで 書く 簿記です。複式簿記と くらべて かんたんですが、財産の ようすは 分かりにくいです。"
+ },
+ {
+  "id": "bk-kanjo",
+  "name": "勘定",
+  "reading": "かんじょう",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "boki:kanjo",
+  "relatedTerms": [
+   "bk-kanjokamoku",
+   "bk-motocho"
+  ],
+  "description": "勘定科目ごとに、増えた ぶんと 減った ぶんを 左右に 分けて 記録する 場所の ことです。勘定を 見れば、その 科目の 残りが 分かります。"
+ },
+ {
+  "id": "bk-toza",
+  "name": "当座預金",
+  "reading": "とうざよきん",
+  "journey": "boki",
+  "category": "資産の科目",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-shiharaitegata",
+   "bk-futsuyokin"
+  ],
+  "description": "会社が 小切手や 手形の 支払いに 使う ための 銀行の 預金です。利息は つきませんが、商売の 支払いに 便利な 資産です。"
+ },
+ {
+  "id": "bk-uketoritegata",
+  "name": "受取手形",
+  "reading": "うけとりてがた",
+  "journey": "boki",
+  "category": "資産の科目",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-shiharaitegata",
+   "bk-urikake"
+  ],
+  "description": "代金を 決まった 日に 受けとれる ことを しめす 手形を、相手から もらった ときに 使う 勘定科目です。お金を もらえる 権利なので 資産です。"
+ },
+ {
+  "id": "bk-shiharaitegata",
+  "name": "支払手形",
+  "reading": "しはらいてがた",
+  "journey": "boki",
+  "category": "負債と純資産の科目",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📃",
+  "mapNode": "boki:fusai",
+  "relatedTerms": [
+   "bk-uketoritegata",
+   "bk-kaikake"
+  ],
+  "description": "代金を 決まった 日に 払うと 約束する 手形を、相手に わたした ときに 使う 勘定科目です。あとで 払う 義務なので 負債です。"
+ },
+ {
+  "id": "bk-mishunyukin",
+  "name": "未収入金",
+  "reading": "みしゅうにゅうきん",
+  "journey": "boki",
+  "category": "資産の科目",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-miharaikin",
+   "bk-urikake"
+  ],
+  "description": "ふだん 売って いる 商品 以外の ものを 売って、まだ 代金を もらって いない ときの 勘定科目です。売掛金とは 使い分けます。"
+ },
+ {
+  "id": "bk-miharaikin",
+  "name": "未払金",
+  "reading": "みばらいきん",
+  "journey": "boki",
+  "category": "負債と純資産の科目",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "boki:fusai",
+  "relatedTerms": [
+   "bk-mishunyukin",
+   "bk-kaikake"
+  ],
+  "description": "商品の 仕入れ 以外の もの、たとえば 備品などを 買って、まだ 代金を 払って いない ときの 勘定科目です。買掛金とは 使い分けます。"
+ },
+ {
+  "id": "bk-maeukekin",
+  "name": "前受金",
+  "reading": "まえうけきん",
+  "journey": "boki",
+  "category": "負債と純資産の科目",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "boki:fusai",
+  "relatedTerms": [
+   "bk-miharaikin",
+   "bk-maebarai"
+  ],
+  "description": "商品を わたす 前に、代金の 一部を 先に 受けとった ときの 勘定科目です。あとで 商品を わたす 義務が あるので 負債です。"
+ },
+ {
+  "id": "bk-junshisan",
+  "name": "純資産",
+  "reading": "じゅんしさん",
+  "journey": "boki",
+  "category": "負債と純資産の科目",
+  "difficulty": 2,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "💎",
+  "mapNode": "boki:junshisan",
+  "relatedTerms": [
+   "bk-shihonkin",
+   "bk-bs"
+  ],
+  "description": "資産から 負債を 引いた 残りの ことです。資本金や これまでの もうけの 積み重ね などが 入り、貸借対照表の 右がわの 下に ならびます。"
+ },
+ {
+  "id": "bk-motocho",
+  "name": "総勘定元帳",
+  "reading": "そうかんじょうもとちょう",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "boki:chobo",
+  "relatedTerms": [
+   "bk-shiwakecho",
+   "bk-kanjo"
+  ],
+  "description": "すべての 勘定科目の 勘定を まとめた 帳簿です。仕訳を 科目ごとに 書きうつし、それぞれの 残りが 分かるように します。"
+ },
+ {
+  "id": "bk-shiwakecho",
+  "name": "仕訳帳",
+  "reading": "しわけちょう",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📗",
+  "mapNode": "boki:chobo",
+  "relatedTerms": [
+   "bk-motocho",
+   "bk-shiwake"
+  ],
+  "description": "取引の 仕訳を、起きた 日の 順に 書いて いく 帳簿です。総勘定元帳と ならぶ、いちばん 大事な 帳簿の ひとつです。"
+ },
+ {
+  "id": "bk-shisanhyo",
+  "name": "試算表",
+  "reading": "しさんひょう",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "boki:chobo",
+  "relatedTerms": [
+   "bk-motocho",
+   "bk-seisanhyo"
+  ],
+  "description": "総勘定元帳の 各勘定の 合計や 残りを 一つの 表に まとめた ものです。借方と 貸方の 合計が 合うかで、書きうつしの まちがいを たしかめます。"
+ },
+ {
+  "id": "bk-seisanhyo",
+  "name": "精算表",
+  "reading": "せいさんひょう",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🗒️",
+  "mapNode": "boki:chobo",
+  "relatedTerms": [
+   "bk-shisanhyo",
+   "bk-kessanseiri"
+  ],
+  "description": "試算表から 決算整理を へて、貸借対照表と 損益計算書を 作るまでの 流れを、一枚に ならべた 表です。"
+ },
+ {
+  "id": "bk-kessanseiri",
+  "name": "決算整理",
+  "reading": "けっさんせいり",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "boki:chobo",
+  "relatedTerms": [
+   "bk-seisanhyo",
+   "bk-genkashokyaku"
+  ],
+  "description": "決算の ときに、帳簿の 記録を 正しい 期間の すがたに 直す 作業です。減価償却や 売上原価の 計算 などを します。"
+ },
+ {
+  "id": "bk-tanaoroshi",
+  "name": "棚卸",
+  "reading": "たなおろし",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-tanaoroshishisan",
+   "bk-uriagegenka"
+  ],
+  "description": "決算の ときなどに、残って いる 商品の 数を かぞえて、その 価値を たしかめる 作業です。売上原価を 正しく 出す ために 行います。"
+ },
+ {
+  "id": "bk-tanaoroshishisan",
+  "name": "棚卸資産",
+  "reading": "たなおろししさん",
+  "journey": "boki",
+  "category": "資産の科目",
+  "difficulty": 2,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🗃️",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-tanaoroshi",
+   "bk-uriagegenka"
+  ],
+  "description": "売る ために 持って いる 商品や、作り途中の 製品・材料 などの 資産です。決算で 残りを かぞえて 金額を 決めます。"
+ },
+ {
+  "id": "bk-uriagegenka",
+  "name": "売上原価",
+  "reading": "うりあげげんか",
+  "journey": "boki",
+  "category": "利益の段階",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "boki:pl",
+  "relatedTerms": [
+   "bk-sorieki",
+   "bk-tanaoroshi"
+  ],
+  "description": "売れた 商品を 仕入れたり 作ったり するのに かかった ぶんの 費用です。はじめの 在庫と 仕入れから 残りの 在庫を 引いて 求めます。"
+ },
+ {
+  "id": "bk-genkashokyaku",
+  "name": "減価償却",
+  "reading": "げんかしょうきゃく",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-teigakuho",
+   "bk-taiyonensu"
+  ],
+  "description": "建物や 機械など 長く 使う 資産の 買った 金額を、使う 年数に 分けて 少しずつ 費用に して いく 手つづきです。"
+ },
+ {
+  "id": "bk-taiyonensu",
+  "name": "耐用年数",
+  "reading": "たいようねんすう",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-genkashokyaku",
+   "bk-teiritsuho"
+  ],
+  "description": "建物や 機械などが 使える と 考える 年数の ことです。減価償却で 費用を なん年に 分けるかの もとに なり、税の 決まりでも 種類ごとに 定められて います。"
+ },
+ {
+  "id": "bk-kashidaore",
+  "name": "貸倒れ",
+  "reading": "かしだおれ",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 2,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "🌧️",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-kashidaorehikiate",
+   "bk-urikake"
+  ],
+  "description": "売掛金などが、相手の 事情で 回収できなく なる ことです。回収できない ぶんは 費用や 損失として 記録します。"
+ },
+ {
+  "id": "bk-sorieki",
+  "name": "売上総利益",
+  "reading": "うりあげそうりえき",
+  "journey": "boki",
+  "category": "利益の段階",
+  "difficulty": 2,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🥇",
+  "mapNode": "boki:pl",
+  "relatedTerms": [
+   "bk-uriagegenka",
+   "bk-eigyorieki"
+  ],
+  "description": "売上高から 売上原価を 引いた もうけです。商品 そのものの もうけの 大きさを あらわし、粗利とも 呼ばれます。"
+ },
+ {
+  "id": "bk-eigyorieki",
+  "name": "営業利益",
+  "reading": "えいぎょうりえき",
+  "journey": "boki",
+  "category": "利益の段階",
+  "difficulty": 2,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🥈",
+  "mapNode": "boki:pl",
+  "relatedTerms": [
+   "bk-sorieki",
+   "bk-keijorieki"
+  ],
+  "description": "売上総利益から、給料や 広告の 費用など、売ったり 会社を 動かしたり する ための 費用を 引いた もうけです。本業で どれだけ もうけたかが 分かります。"
+ },
+ {
+  "id": "bk-keijorieki",
+  "name": "経常利益",
+  "reading": "けいじょうりえき",
+  "journey": "boki",
+  "category": "利益の段階",
+  "difficulty": 2,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🥉",
+  "mapNode": "boki:pl",
+  "relatedTerms": [
+   "bk-eigyorieki",
+   "bk-tokijunrieki"
+  ],
+  "description": "営業利益に、受けとった 利息などを 足し、払った 利息などを 引いた もうけです。ふだんの 活動 全体の 成績を あらわします。"
+ },
+ {
+  "id": "bk-tokijunrieki",
+  "name": "当期純利益",
+  "reading": "とうきじゅんりえき",
+  "journey": "boki",
+  "category": "利益の段階",
+  "difficulty": 2,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "boki:pl",
+  "relatedTerms": [
+   "bk-keijorieki",
+   "bk-zeikoka"
+  ],
+  "description": "その 期間の 最後に 残る もうけです。たまたま 起きた 利益や 損失、法人税 などを 足し引きした あとの 金額です。"
+ },
+ {
+  "id": "bk-maebarai",
+  "name": "前払費用",
+  "reading": "まえばらいひよう",
+  "journey": "boki",
+  "category": "資産の科目",
+  "difficulty": 3,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-maeukekin",
+   "bk-kessanseiri"
+  ],
+  "description": "来期の ぶんの 家賃や 保険料などを 先に 払った とき、まだ 使って いない ぶんを 資産として 次の 期に くり越す ものです。"
+ },
+ {
+  "id": "bk-hikiatekin",
+  "name": "引当金",
+  "reading": "ひきあてきん",
+  "journey": "boki",
+  "category": "負債と純資産の科目",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🪣",
+  "mapNode": "boki:fusai",
+  "relatedTerms": [
+   "bk-kashidaorehikiate",
+   "bk-kessanseiri"
+  ],
+  "description": "これから 起きそうな 費用や 損失の うち、原因が 今の 期に あり、金額も 見こめる ものを、前もって 計上して おく ものです。"
+ },
+ {
+  "id": "bk-kashidaorehikiate",
+  "name": "貸倒引当金",
+  "reading": "かしだおれひきあてきん",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 3,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "☂️",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-kashidaore",
+   "bk-hikiatekin"
+  ],
+  "description": "売掛金などの うち、回収できなく なりそうな ぶんを 見こんで 前もって 用意して おく 勘定です。資産から 引く かたちで しめします。"
+ },
+ {
+  "id": "bk-teigakuho",
+  "name": "定額法",
+  "reading": "ていがくほう",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 3,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-teiritsuho",
+   "bk-genkashokyaku"
+  ],
+  "description": "減価償却で、毎年 同じ 金額ずつ 費用に して いく 方法です。計算が かんたんで、建物 などに 使われます。"
+ },
+ {
+  "id": "bk-teiritsuho",
+  "name": "定率法",
+  "reading": "ていりつほう",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 3,
+  "field": "簿記論",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-teigakuho",
+   "bk-genkashokyaku"
+  ],
+  "description": "減価償却で、まだ 費用に して いない 残りに 毎年 同じ 割合を かけて 費用を 出す 方法です。はじめの ころほど 費用が 大きく なります。"
+ },
+ {
+  "id": "bk-cf",
+  "name": "キャッシュ・フロー計算書",
+  "reading": "きゃっしゅふろーけいさんしょ",
+  "journey": "boki",
+  "category": "財務諸表",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "boki:bs",
+  "relatedTerms": [
+   "bk-bs",
+   "bk-pl"
+  ],
+  "description": "一定の 期間に、お金が どこから 入り、どこへ 出て いったかを、営業・投資・財務の 三つに 分けて あらわす 表です。"
+ },
+ {
+  "id": "bk-kabunushishihon",
+  "name": "株主資本等変動計算書",
+  "reading": "かぶぬししほんとうへんどうけいさんしょ",
+  "journey": "boki",
+  "category": "財務諸表",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "boki:junshisan",
+  "relatedTerms": [
+   "bk-junshisan",
+   "bk-bs"
+  ],
+  "description": "一定の 期間に、純資産の 中身が どんな 理由で どれだけ 変わったかを あらわす 表です。配当や もうけの 積み立て などが のります。"
+ },
+ {
+  "id": "bk-kigyokaikeigensoku",
+  "name": "企業会計原則",
+  "reading": "きぎょうかいけいげんそく",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-shinjitsusei",
+   "bk-kaikeikijun"
+  ],
+  "description": "会社が 会計を する ときの 考えかたの もとを まとめた 決まりです。真実性の 原則 など、財務諸表論で 学ぶ 大事な 原則が ならびます。"
+ },
+ {
+  "id": "bk-hasseishugi",
+  "name": "発生主義",
+  "reading": "はっせいしゅぎ",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-genkinshugi",
+   "bk-jitsugenshugi"
+  ],
+  "description": "お金の やりとりが まだでも、費用や 収益が 発生した 期間に 記録する という 考えかたです。費用は この 考えで 計上します。"
+ },
+ {
+  "id": "bk-genkinshugi",
+  "name": "現金主義",
+  "reading": "げんきんしゅぎ",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "💵",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-hasseishugi",
+   "bk-jitsugenshugi"
+  ],
+  "description": "お金を 受けとった ときや 払った ときに、収益や 費用を 記録する という 考えかたです。わかりやすい 反面、期間の 成績は 正しく 出にくいです。"
+ },
+ {
+  "id": "bk-jitsugenshugi",
+  "name": "実現主義",
+  "reading": "じつげんしゅぎ",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-hasseishugi",
+   "bk-hiyoshuekitaio"
+  ],
+  "description": "収益は、商品を わたしたり サービスを したり して、たしかに 実現した ときに 記録する という 考えかたです。"
+ },
+ {
+  "id": "bk-hiyoshuekitaio",
+  "name": "費用収益対応の原則",
+  "reading": "ひようしゅうえきたいおうのげんそく",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-jitsugenshugi",
+   "bk-hasseishugi"
+  ],
+  "description": "ある 期間の 収益と、その 収益を えるために かかった 費用を、同じ 期間に 組みあわせて もうけを 計算する という 原則です。"
+ },
+ {
+  "id": "bk-keizokusei",
+  "name": "継続性の原則",
+  "reading": "けいぞくせいのげんそく",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🔂",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-kigyokaikeigensoku",
+   "bk-meiryosei"
+  ],
+  "description": "一度 えらんだ 会計の やりかたは、正当な 理由が ない かぎり、毎期 つづけて 使う という 原則です。期ごとに くらべやすく なります。"
+ },
+ {
+  "id": "bk-hoshushugi",
+  "name": "保守主義の原則",
+  "reading": "ほしゅしゅぎのげんそく",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-kigyokaikeigensoku",
+   "bk-hikiatekin"
+  ],
+  "description": "会社の 財産が 危なく なる おそれが あれば、慎重に 考えて 会計を する という 原則です。ただし、わざと 事実を ゆがめては いけません。"
+ },
+ {
+  "id": "bk-shinjitsusei",
+  "name": "真実性の原則",
+  "reading": "しんじつせいのげんそく",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🌟",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-kigyokaikeigensoku",
+   "bk-seikinoboki"
+  ],
+  "description": "会社の 財政や 成績について、真実の 報告を しなければ ならない という 原則です。企業会計原則の いちばん はじめに あげられて います。"
+ },
+ {
+  "id": "bk-seikinoboki",
+  "name": "正規の簿記の原則",
+  "reading": "せいきのぼきのげんそく",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-shinjitsusei",
+   "bk-fukushiki"
+  ],
+  "description": "すべての 取引を、正しく 整った 帳簿に、もれなく 記録しなければ ならない という 原則です。"
+ },
+ {
+  "id": "bk-meiryosei",
+  "name": "明瞭性の原則",
+  "reading": "めいりょうせいのげんそく",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-keizokusei",
+   "bk-zaimushohyo"
+  ],
+  "description": "財務諸表は、読む 人が 会社の ようすを 正しく 分かるように、はっきり しめさなければ ならない という 原則です。"
+ },
+ {
+  "id": "bk-juyosei",
+  "name": "重要性の原則",
+  "reading": "じゅうようせいのげんそく",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-meiryosei",
+   "bk-seikinoboki"
+  ],
+  "description": "大事さが 小さい ものは、決まりの 中で かんたんな やりかたで 処理して よい という 考えかたです。企業会計原則の 注解に 書かれて います。"
+ },
+ {
+  "id": "bk-shutokugenka",
+  "name": "取得原価",
+  "reading": "しゅとくげんか",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-jika",
+   "bk-genson"
+  ],
+  "description": "資産を 手に 入れた ときに 払った 金額の ことです。資産は ふつう この 金額を もとに 帳簿に のせます。"
+ },
+ {
+  "id": "bk-jika",
+  "name": "時価",
+  "reading": "じか",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🕰️",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-shutokugenka",
+   "bk-genson"
+  ],
+  "description": "その ときの 市場などで 取引される 値段の ことです。株など 一部の 資産は 時価で 評価する 決まりが あります。"
+ },
+ {
+  "id": "bk-genson",
+  "name": "減損",
+  "reading": "げんそん",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🪫",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-shutokugenka",
+   "bk-noren"
+  ],
+  "description": "建物や 機械などから 見こめる 収入が 大きく 下がった とき、その 資産の 帳簿の 金額を 引き下げる 処理です。"
+ },
+ {
+  "id": "bk-noren",
+  "name": "のれん",
+  "reading": "のれん",
+  "journey": "boki",
+  "category": "帳簿と決算",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🏮",
+  "mapNode": "boki:shisan",
+  "relatedTerms": [
+   "bk-genson",
+   "bk-renketsu"
+  ],
+  "description": "ほかの 会社を 買った ときに、その 会社の 時価で 見た 純資産より 多く 払った ぶんです。ブランドや 信用など 目に 見えない 価値と 考えます。"
+ },
+ {
+  "id": "bk-zeikoka",
+  "name": "税効果会計",
+  "reading": "ぜいこうかかいけい",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-tokijunrieki",
+   "bk-kaikeikijun"
+  ],
+  "description": "会計の 利益と、税の 決まりで 計算する 所得の ずれを 調整して、法人税 などの 費用を 会計の 利益に 合わせて しめす しくみです。"
+ },
+ {
+  "id": "bk-renketsu",
+  "name": "連結財務諸表",
+  "reading": "れんけつざいむしょひょう",
+  "journey": "boki",
+  "category": "財務諸表",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "boki:bs",
+  "relatedTerms": [
+   "bk-zaimushohyo",
+   "bk-noren"
+  ],
+  "description": "親会社と 子会社を ひとつの グループと 見て、まとめて 作る 財務諸表です。グループ 全体の すがたが 分かります。"
+ },
+ {
+  "id": "bk-kaikeikijun",
+  "name": "会計基準",
+  "reading": "かいけいきじゅん",
+  "journey": "boki",
+  "category": "会計の原則",
+  "difficulty": 3,
+  "field": "財務諸表論",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "boki:kijun",
+  "relatedTerms": [
+   "bk-kigyokaikeigensoku",
+   "bk-zeikoka"
+  ],
+  "description": "会社が 財務諸表を 作る ときに したがう、くわしい 決まりの ことです。新しい 取引に 合わせて、ときどき 見直されます。"
+ }
+]

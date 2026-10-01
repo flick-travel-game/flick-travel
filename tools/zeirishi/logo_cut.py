@@ -18,6 +18,7 @@ HERO = sys.argv[1]
 SQUARE = sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] != '-' else None
 PREVIEW = sys.argv[3] if len(sys.argv) > 3 else None
 SQ_BOX = (480, 80, 980, 580)  # 四角い 絵が 無い ときの アイコン: ふたりと 犬
+SQ_IN_BOX = (408, 235, 872, 699)  # 四角い 絵(2026-10-01)の まん中: 左右の 札の 列の あいだの ふたりと 犬
 img = cv2.imread(HERO); assert img is not None and img.shape[:2] == (1024, 1536), 'トップの 絵は 1536×1024 で'
 X0, Y0, X1, Y1 = 440, 588, 1100, 760
 crop = img[Y0:Y1, X0:X1].copy(); hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
@@ -71,6 +72,7 @@ w.save('zeirishi/logo-word.webp', 'WEBP', quality=95, method=6); print('zeirishi
 Image.open(HERO).convert('RGB').save('zeirishi/hero.webp', 'WEBP', quality=88, method=6); print('zeirishi/hero.webp')
 if SQUARE:
     sq = Image.open(SQUARE).convert('RGB')
+    if sq.size == (1254, 1254): sq = sq.crop(SQ_IN_BOX)   # 四角い 絵も 札で いっぱい なので、まん中の ふたりと 犬だけ
 else:  # 右上に かかる 吹き出し(「ことばで ひろがる 税の せかい!」の 字が 切れる)を まわりの 色で うめてから 切る
     hb = cv2.imread(HERO); bub = np.zeros(hb.shape[:2], np.uint8)
     rg = hb[40:155, 870:1070]; g = cv2.cvtColor(rg, cv2.COLOR_BGR2GRAY)

@@ -549,7 +549,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=bc46f425"></script>
+<script src="terms.js?v=9b29d496"></script>
 <script src="code.js?v=8172713d"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
@@ -1950,7 +1950,7 @@ async function drawBoard(m, lv, id){
       ? (boardSent === "norank" ? '<p class="board-note">この回は ランキングの 対象では ありません(レベル61より上)</p>'
       : boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。ログインすると のります</p>'
                                   : '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>') : "";
-    if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも!</p>' + note; return; }
+    if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも！</p>' + note; return; }
     body.innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
       (i < 3 ? '<span class="rk md">' + MEDALS[i] + '</span>' : '<span class="rk">' + (i+1) + '位</span>') +
       '<span class="nm">' + esc(r.name) + '</span><span class="tm">' + (r.ms/1000).toFixed(2) + '秒</span></div>').join("") + note;
@@ -1976,7 +1976,7 @@ function renderResult(r){
   const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
   const pinsNow = mode === "quote" ? 0 : clearedSpots(mode).size;
   $("#r-pins").classList.toggle("hidden", !(mode !== "quote" && r.firstClear));
-  $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ!(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + unitOf(MAPS[mode]) + ")";
+  $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ！(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + unitOf(MAPS[mode]) + ")";
   if(PLUG && PLUG.owns(mode)){ $("#r-pins").classList.remove("hidden"); $("#r-pins").innerHTML = PLUG.resultMsg(r); }
   $("#r-time").textContent = total.toFixed(2);
   const ink = levelTone(level).ink;

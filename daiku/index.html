@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリック警察官</title>
+<title>フリック大工</title>
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="favicon.png?v=2">
+<link rel="icon" type="image/png" href="../favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -423,12 +423,10 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=4" alt="" width="900" height="213" aria-hidden="true">
+      <span class="logo-text">フリック大工</span>
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリック警察官</h1>
-    <img class="hero" src="hero.webp?v=4" alt="フリック警察官。まちの 交番の 前で 制服の 男の子の 警察官と 白い 犬が 笑っている 絵。まわりに 7つの 旅の ことばの 札と 4択クイズの 見本が ならんでいる" width="1536" height="1024">
+    <h1 class="sr-only">フリック大工</h1>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -552,15 +550,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=d4474222"></script>
-<script src="keisatsu.js?v=9e58357c"></script>
+<script src="terms.js?v=ff89521b"></script>
+<script src="daiku.js?v=58fc35bd"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
    前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"keisatsu", name:"フリック警察官", modes:(typeof KEISATSU === "object" ? KEISATSU.modes : []), assets:"../", logo:true, hero:true, dir:"keisatsu/", lead:"交番と まちの ことば・交通・事件と 捜査・まもる しくみ・法律・警察の しくみ・警察官の 心と からだの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。まちで 見かける ことばから はじめて、警察官採用試験の 教養試験の 範囲の めやす・法律や 組織の こまかい ことばまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本物の 試験問題では ありません。犯罪の やりかたや 取りしまりの 手順は のせていないよ。こまった ときは 110番 か 近くの 交番へ。試験の 勉強には 各都道府県警察の 採用案内や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、警察の ことばと しくみが つながって 見えてくるよ。警察庁・都道府県警察とは 関係ありません。" };
+const GAME = { id:"daiku", name:"フリック大工", modes:(typeof DAIKU === "object" ? DAIKU.modes : []), assets:"../", logo:false, hero:false, dir:"daiku/", lead:"家づくりの きほん・木と 材料・道具・家の しくみ・継手と 仕口・墨付け・内装と 仕上げ・大工の 種類・大工の 歴史と 伝統の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。家や 道具で 聞く ことばから はじめて、建築大工技能士(国家検定)の 2級・3級、1級の 範囲の めやすの ことばまで。宮大工・数寄屋大工など 大工の 種類や、法隆寺から つづく 木の 文化も 出てくるよ。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。道具の 使いかたや 作業の 手順は 書いていないよ。のこぎりや 電動工具などの 刃物は おとなの 大工さんが 使う 道具なので、まねを しないでね。寸法や 強さの 数字は 家ごとに ちがうので のせていないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、木と 道具と 家の しくみが つながって 見えてくるよ。工務店・ハウスメーカー・道具の 会社・職業能力開発協会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

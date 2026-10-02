@@ -423,7 +423,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリック投資家</span>
+      <img class="logo-word" src="logo-word.webp?v=1" alt="" width="900" height="211" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック投資家</h1>
@@ -557,7 +557,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"toshika", name:"フリック投資家", modes:(typeof TOSHIKA === "object" ? TOSHIKA.modes : []), assets:"../", logo:false, hero:true, dir:"toshika/", lead:"投資の きほん・会社を 知る・長期投資と 応援・決算書を 読む・市場と しくみ・投資家の こころ・投資の 歴史と 人びとの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。くらしや ニュースで 聞く お金と 会社の ことばから はじめて、証券外務員・FP・証券アナリストの 範囲の めやすの ことばまで。めざすのは、好きな 会社を 見つけて 株主として 長く 応援する 投資家。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。投資を すすめる ものでは ありません。どの 会社を 買えば よいかや、売り時・買い時は 書いていないよ。株価や 金額は 毎日・毎年 変わるので のせていないよ。お金の ことは おうちの 人や 専門の 人と 相談してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、会社と 社会の しくみ、長く 応援する 投資家の 考えかたが つながって 見えてくるよ。証券会社・取引所・日本証券業協会・日本証券アナリスト協会とは 関係ありません。" };
+const GAME = { id:"toshika", name:"フリック投資家", modes:(typeof TOSHIKA === "object" ? TOSHIKA.modes : []), assets:"../", logo:true, hero:true, dir:"toshika/", lead:"投資の きほん・会社を 知る・長期投資と 応援・決算書を 読む・市場と しくみ・投資家の こころ・投資の 歴史と 人びとの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。くらしや ニュースで 聞く お金と 会社の ことばから はじめて、証券外務員・FP・証券アナリストの 範囲の めやすの ことばまで。めざすのは、好きな 会社を 見つけて 株主として 長く 応援する 投資家。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。投資を すすめる ものでは ありません。どの 会社を 買えば よいかや、売り時・買い時は 書いていないよ。株価や 金額は 毎日・毎年 変わるので のせていないよ。お金の ことは おうちの 人や 専門の 人と 相談してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、会社と 社会の しくみ、長く 応援する 投資家の 考えかたが つながって 見えてくるよ。証券会社・取引所・日本証券業協会・日本証券アナリスト協会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

@@ -511,8 +511,9 @@
   - 3回目は 札を 切り出して 読みで 確かめた。のこった 2か所は **絵の 中で 直した**(`tools/toshika/fix_text.py`。Noto Sans CJK JP Bold):
     トップの「しょろひん」→「しょうひん」/ 四角の 図鑑の「ぎけつけん」の け の 上の 小さな しるし(げ に 見えた)を 消した
   - ⚠️ トップの 絵の 札は **6つの 旅(24こ)だけ**で「投資の 歴史と 人びと」が 無い(四角い 絵には 7つ ある)。ホワイトボードの 小さな 棒グラフと 矢印は のこっている(小さいので そのまま)
-  - **題名の 透明 PNG は まだ** → 題名は 文字(`logo=False`。`build_games.py` に「絵は あるが 題名の 絵は 無い」ときの 道を 足した)。
-    届いたら `tools/toshika/art/title-src.png` → `python3 tools/title_from_art.py toshika` → `build_games.py` の `logo=True`・`art.word` の 大きさ・`wordv` を そろえ、speed-king の `games.ts` に `word` を 足す
+  - 題名は けいくんが ChatGPT で 切りぬいた 透明 PNG(`tools/toshika/art/title-src.png`。2172×724)→ `python3 tools/title_from_art.py toshika` → `toshika/logo-word.webp`(900×211)。7字「フリック投資家」を 1字ずつ 読んで 確かめた
+    (`build_games.py` に 足した「絵は あるが 題名の 絵は 無い」ときの 道(`art and not logo`)は のこしてある)
+  - けいくん「歴史の 札を 足したい」→ ChatGPT に 横長の 絵を 作りなおして もらう ところ(2026-10-02)。届いたら 札を 読んで `toshika/hero.webp` を 差しかえ、`wordv` を +1
   - 仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない(記録に のこす)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #301)・販売ページ `HOME_GAMES`(夢のしごと の 章、アドラーの となり)・規約の 一覧 `FLICK_SERIES_GAMES` に 足した
 - 確かめかた: `node tools/play-all.mjs toshika/`(4とおりの 打ちかたで 全98ステージ)/ `node tools/click-all.mjs toshika/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`

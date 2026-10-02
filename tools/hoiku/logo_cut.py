@@ -40,6 +40,8 @@ hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
 s, v = hsv[..., 1] / 255.0, hsv[..., 2] / 255.0
 
 vivid = (s > 0.45) & (v > 0.45)
+vivid[:, 718 - X0:766 - X0] = False
+vivid[:26, :] = False   # 字より 上の 花・クレヨン   # 「ク」と「保」の あいだの ピンクの クレヨン(字では ない)
 lab, _ = ndimage.label(vivid)
 objs = ndimage.find_objects(lab)
 keep = [i for i, sl in enumerate(objs, start=1)

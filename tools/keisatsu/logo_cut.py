@@ -22,14 +22,15 @@ H, s, v = hsv[..., 0], hsv[..., 1] / 255, hsv[..., 2] / 255
 ell = lambda k: cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
 cut = np.zeros(H.shape, bool)
 yy, xx = np.mgrid[Y0:Y1, X0:X1]
-cut |= (xx >= 932) & (yy < 600)              # 「官」の 上の 帽子
+cut |= (xx >= 932) & (yy < 606) & ~((s > 0.45) & (v > 0.6))   # 「官」の 上の 帽子(紺)。「察」の 水色の 字は のこす
 cut |= (xx >= 545) & (xx < 985) & (yy >= 703) | (xx >= 600) & (xx < 985) & (yy >= 696)   # 下の 帯(「フ」の 左下は 545 より 左)
 cut |= yy >= 735                             # 帯の 下
 cut |= (xx >= 985) & (yy >= 712)             # 右下の 建物
 cut |= (xx >= 1072) & (yy >= 712)            # 右の えんぴつ
 cut |= xx >= 1108
 cut |= (yy < 592) & (xx < 640)   # 左上の 花・帽子の はし(箱を 広げた ぶん)
-cut |= (yy < 600) & (xx >= 1098)
+cut |= (yy < 622) & (xx >= 1098)
+cut |= (xx >= 1096) & (yy >= 640)   # 「官」の 右の えんぴつ
 cut |= (yy >= 715) & (xx >= 1060)
 navy = ((H >= 100) & (H <= 160) & (v < 0.45) & (s > 0.25)).astype(np.uint8); navy[cut] = 0
 core = ((s > 0.40) & (v > 0.55)).astype(np.uint8); core[cut] = 0          # 字の 中身(あざやか)

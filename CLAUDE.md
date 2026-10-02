@@ -887,3 +887,9 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
   けいくんの 判断で **切らずに まるごと 縮める**に そろえた(ほかの 24ゲームと 同じ 見え方)
 - やりかた: `tools/<game>/art/square-src.png`(1254px)を 置いて `python3 tools/icon_from_square.py <game>` → `build_games.py` の `iconv` を +1 → speed-king の `games.ts` の `icon` の `?v=` も そろえる
 - ⚠️ `tools/zeirishi/logo_cut.py` の `SQ_IN_BOX` と `tools/adler/art_in.py` の 切る 道は **もう 使わない**(記録に のこす)。これから 作る ゲームも 切らない
+
+## どの ゲームの いちばん下にも 法務の リンク 3つ(けいくん 2026-10-03「お願いします」)
+- 「📖 かずとも の ホーム」の すぐ下に **プライバシーの せつめい | 利用規約 | 特定商取引法に基づく表記**(行き先は かずとも の `/privacy` `/legal/terms` `/legal/tokushoho`)。
+  土台の `index.html` の `.legal-links` 1か所 → `build_games.py` で 全ゲームに 出る
+- なぜ: おうちの 人が どの ゲームを ひらいても すぐ 確かめられる / 家族むけの アプリの 審査で ページごとの 規約の リンクを 見られる ことが ある
+- ⚠️ かずとも 側の ページの 住所を 変えたら ここも 直す

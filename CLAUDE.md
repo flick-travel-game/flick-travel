@@ -786,6 +786,6 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - 自分で 切ると どうしても 欠けるので、**けいくんが ChatGPT に トップの 絵を 貼って 題名だけの 透明 PNG を 作ってもらう** 形に した。
   届いた PNG を `tools/<game>/art/title-src.png` に 置いて `python3 tools/title_from_art.py <game>` → `<game>/logo-word.webp`(はば 900)。
   そのあと `build_games.py` の `art.word`・`wordv`(+1)と speed-king の `games.ts` の `word` を そろえる
-- 2026-10-02 に 5枚(税理士・弁護士・消防士・警察官・料理人)。ほかの 22枚は いままでの 切りぬきのまま(気になったら 同じ 手で 差しかえる)
+- 2026-10-02 に 9枚(税理士・弁護士・消防士・警察官・料理人・教師・医師・プログラマー・英語)。ほかの 18枚は いままでの 切りぬきのまま(気になったら 同じ 手で 差しかえる)
 - ChatGPT に 貼る 文は このセッションの 会話に ある(「題名の文字だけを切り抜いて、背景が透明なPNGに」「描き直さない」「1文字も欠けさせない」「文字以外は入れない」「余白20px」「幅2000px以上」)
 - `tools/zeirishi/letters_cut.py` は 消した(title_from_art.py に 置きかえ)

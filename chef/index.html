@@ -583,12 +583,13 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
                  {id:"keisatsu", name:"フリック警察官", icon:"🚓", dir:"keisatsu/"},
                  {id:"shobo", name:"フリック消防士", icon:"🚒", dir:"shobo/"},
                  {id:"bengoshi", name:"フリック弁護士", icon:"⚖️", dir:"bengoshi/"},
-                 {id:"zeirishi", name:"フリック税理士", icon:"🧾", dir:"zeirishi/"} ];
+                 {id:"zeirishi", name:"フリック税理士", icon:"🧾", dir:"zeirishi/"},
+                 {id:"adler", name:"フリックアドラー心理学", icon:"🧠", dir:"adler/"} ];
 /* 🧭 ゲームを えらぶ の タイル(マイページの 中 と ページの いちばん下 の 2か所で 使う。けいくん 2026-09-30「これと同じ表記にしてください」)。
    ⚠️ ならびは **かずともの マイページ(speed-king の `HOME_GAMES`)と 同じ 順**。ゲームを 足したら ここにも 足す(無い ものは うしろに つく)。
    ⚠️ 絵は 各ゲームの `apple-touch-icon.png`、かずともは `logo-mark.webp`。名前は「フリック」を 取る(かずともの `GameGrid` と 同じ) */
 const SERIES_ORDER = ["sugaku", "kokugo", "rika", "shakai", "eigo", "rekishi", "world", "eikaiwa", "uchu", "karada", "kyoryu",
-                      "patissier", "chef", "hoiku", "kango", "ishi", "kyoshi", "keisatsu", "shobo", "bengoshi", "zeirishi", "biyo", "seibi", "gamedev", "code", "ai", "kabu"];
+                      "patissier", "chef", "hoiku", "kango", "ishi", "kyoshi", "keisatsu", "shobo", "bengoshi", "zeirishi", "adler", "biyo", "seibi", "gamedev", "code", "ai", "kabu"];
 function gameTilesHtml(){
   const root = GAME.id === "world" ? "./" : "../";
   const rank = id => { const k = SERIES_ORDER.indexOf(id); return k < 0 ? 999 : k; };
@@ -777,7 +778,7 @@ const COLORS = {
 };
 /* 差しこみ口(PLUG)。つみあげの コースを 持つ ゲームだけが 1つ 持つ:
    株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語旅行 = kokugo/kokugo.js の KOKUGO / フリック数学旅行 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO / フリック恐竜図鑑 = kyoryu/kyoryu.js の KYORYU / フリックプログラマー = code/code.js の CODEPG / フリック英語 = eigo/eigo.js の EIGO / フリック社会旅行 = shakai/shakai.js の SHAKAI / フリック医師 = ishi/ishi.js の ISHI / フリック教師 = kyoshi/kyoshi.js の KYOSHI / フリック料理人 = chef/chef.js の CHEF。ほかの ゲームでは null で 何もしない */
-const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : typeof SEIBI === "object" ? SEIBI : typeof PATISSIER === "object" ? PATISSIER : typeof KOKUGO === "object" ? KOKUGO : typeof SUGAKU === "object" ? SUGAKU : typeof HOIKU === "object" ? HOIKU : typeof KANGO === "object" ? KANGO : typeof GAMEDEV === "object" ? GAMEDEV : typeof BIYO === "object" ? BIYO : typeof KYORYU === "object" ? KYORYU : typeof CODEPG === "object" ? CODEPG : typeof EIGO === "object" ? EIGO : typeof SHAKAI === "object" ? SHAKAI : typeof ISHI === "object" ? ISHI : typeof KYOSHI === "object" ? KYOSHI : typeof CHEF === "object" ? CHEF : typeof KEISATSU === "object" ? KEISATSU : typeof SHOBO === "object" ? SHOBO : typeof BENGOSHI === "object" ? BENGOSHI : typeof ZEIRISHI === "object" ? ZEIRISHI : null;
+const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : typeof SEIBI === "object" ? SEIBI : typeof PATISSIER === "object" ? PATISSIER : typeof KOKUGO === "object" ? KOKUGO : typeof SUGAKU === "object" ? SUGAKU : typeof HOIKU === "object" ? HOIKU : typeof KANGO === "object" ? KANGO : typeof GAMEDEV === "object" ? GAMEDEV : typeof BIYO === "object" ? BIYO : typeof KYORYU === "object" ? KYORYU : typeof CODEPG === "object" ? CODEPG : typeof EIGO === "object" ? EIGO : typeof SHAKAI === "object" ? SHAKAI : typeof ISHI === "object" ? ISHI : typeof KYOSHI === "object" ? KYOSHI : typeof CHEF === "object" ? CHEF : typeof KEISATSU === "object" ? KEISATSU : typeof SHOBO === "object" ? SHOBO : typeof BENGOSHI === "object" ? BENGOSHI : typeof ZEIRISHI === "object" ? ZEIRISHI : typeof ADLER === "object" ? ADLER : null;
 /* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
 if(PLUG) for(const [m, h] of Object.entries(PLUG.colors)) COLORS.mode[m] = TONE[h] || toneFrom(h);  // "blue" などは ほかの ゲームと 同じ あかるい 色
 function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }

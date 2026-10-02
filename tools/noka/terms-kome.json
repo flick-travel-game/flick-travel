@@ -1,0 +1,1226 @@
+[
+ {
+  "id": "km-okome",
+  "name": "お米",
+  "reading": "おこめ",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kome:seimai",
+  "relatedTerms": [
+   "km-ine",
+   "km-genmai"
+  ],
+  "description": "稲の みから もみがらを 取った もので、日本の 主食です。田んぼで 春から 秋まで 育てて、秋に 収穫します。"
+ },
+ {
+  "id": "km-ine",
+  "name": "稲",
+  "reading": "いね",
+  "journey": "kome",
+  "category": "稲の 育ち",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:ine",
+  "relatedTerms": [
+   "km-inaho",
+   "km-okome"
+  ],
+  "description": "お米が 実る 草の なかまです。水を はった 田んぼで 育ち、夏に 穂を 出して、秋に 実った もみが 黄金色に なります。"
+ },
+ {
+  "id": "km-taue",
+  "name": "田植え",
+  "reading": "たうえ",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "kome:taue",
+  "relatedTerms": [
+   "km-nawashiro",
+   "km-shirokaki"
+  ],
+  "description": "苗代や 育苗箱で 育てた 稲の 苗を、水を はった 田んぼに 植える 作業です。いまは 田植え機で いくつもの 列を いっぺんに 植えます。"
+ },
+ {
+  "id": "km-inekari",
+  "name": "稲刈り",
+  "reading": "いねかり",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "kome:inekari",
+  "relatedTerms": [
+   "km-dakkoku",
+   "km-ine"
+  ],
+  "description": "秋に 実って 黄色く なった 稲を 刈り取る 作業です。いまは コンバインで 刈りながら もみを 外す ことが 多いです。"
+ },
+ {
+  "id": "km-suiden",
+  "name": "水田",
+  "reading": "すいでん",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-ine",
+   "km-aze"
+  ],
+  "description": "水を ためて 稲を 育てる 田んぼの ことです。水が 雑草を おさえたり、温度の 変化を やわらげたり して、稲を 守ります。"
+ },
+ {
+  "id": "km-genmai",
+  "name": "玄米",
+  "reading": "げんまい",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🟤",
+  "mapNode": "kome:seimai",
+  "relatedTerms": [
+   "km-seimai",
+   "km-momisuri"
+  ],
+  "description": "もみから もみがらだけを 取った お米です。ぬかと 胚芽が 残って いるので、うすい 茶色を しています。"
+ },
+ {
+  "id": "km-seimai",
+  "name": "精米",
+  "reading": "せいまい",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kome:seimai",
+  "relatedTerms": [
+   "km-genmai",
+   "km-hakumai",
+   "km-nuka"
+  ],
+  "description": "玄米の 外側の ぬかと 胚芽を けずって、白い お米に する ことです。どれだけ けずるかで 味や 色が 変わります。"
+ },
+ {
+  "id": "km-hakumai",
+  "name": "白米",
+  "reading": "はくまい",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍙",
+  "mapNode": "kome:seimai",
+  "relatedTerms": [
+   "km-seimai",
+   "km-genmai"
+  ],
+  "description": "玄米を 精米して、ぬかと 胚芽を 取った 白い お米です。ふだん ご飯として 炊いて 食べる お米の 多くが 白米です。"
+ },
+ {
+  "id": "km-shinmai",
+  "name": "新米",
+  "reading": "しんまい",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "kome:seimai",
+  "relatedTerms": [
+   "km-komai",
+   "km-inekari"
+  ],
+  "description": "秋に とれた ばかりの お米です。水分が 多めで、つやと 香りが よいのが とくちょうです。"
+ },
+ {
+  "id": "km-mochigome",
+  "name": "もち米",
+  "reading": "もちごめ",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍡",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-uruchimai",
+   "km-okome"
+  ],
+  "description": "もちや 赤飯・おこわに 使う、ねばりが とても 強い お米です。精米すると 白く にごった 色を しています。"
+ },
+ {
+  "id": "km-wara",
+  "name": "わら",
+  "reading": "わら",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:inekari",
+  "relatedTerms": [
+   "km-momigara",
+   "km-hazakake"
+  ],
+  "description": "稲や 麦の みを 取った あとの 茎を 乾かした ものです。むかしから なわ・たわら・家畜の 寝床・畑の しきわらに 使われてきました。"
+ },
+ {
+  "id": "km-inaho",
+  "name": "稲穂",
+  "reading": "いなほ",
+  "journey": "kome",
+  "category": "稲の 育ち",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:ho",
+  "relatedTerms": [
+   "km-ine",
+   "km-momi"
+  ],
+  "description": "稲の 茎の 先に 出る 穂です。小さな 花が さいた あと、もみが 実って 重く なり、たれ下がって いきます。"
+ },
+ {
+  "id": "km-momi",
+  "name": "もみ",
+  "reading": "もみ",
+  "journey": "kome",
+  "category": "稲の 育ち",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:ho",
+  "relatedTerms": [
+   "km-momigara",
+   "km-genmai"
+  ],
+  "description": "かたい 皮に つつまれた 稲の みです。この 皮が もみがらで、取ると 玄米に なります。種まきにも もみを 使います。"
+ },
+ {
+  "id": "km-koshihikari",
+  "name": "コシヒカリ",
+  "reading": "こしひかり",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-hitomebore",
+   "km-akitakomachi"
+  ],
+  "description": "福井県で 生まれた お米の 品種です。ねばりと あまみが 強く、日本で とても 多く 作られて います。"
+ },
+ {
+  "id": "km-tanada",
+  "name": "棚田",
+  "reading": "たなだ",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 1,
+  "field": "環境",
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-senmaida",
+   "km-suiden"
+  ],
+  "description": "山の 斜面に 階段の ように つくられた 田んぼです。お米を 育てる だけで なく、雨水を ためたり、美しい 景色を 守ったり します。"
+ },
+ {
+  "id": "km-mugi",
+  "name": "麦",
+  "reading": "むぎ",
+  "journey": "kome",
+  "category": "麦と 豆",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-komugi",
+   "km-omugi"
+  ],
+  "description": "小麦や 大麦などを まとめた よび名です。多くは 秋に たねを まき、冬を こして、初夏に 収穫します。"
+ },
+ {
+  "id": "km-komugi",
+  "name": "小麦",
+  "reading": "こむぎ",
+  "journey": "kome",
+  "category": "麦と 豆",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍞",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-mugi",
+   "km-komeko"
+  ],
+  "description": "粉に して パン・うどん・パスタ・お菓子に 使う 麦です。秋に まいて 初夏に とる ことが 多いです。"
+ },
+ {
+  "id": "km-daizu",
+  "name": "大豆",
+  "reading": "だいず",
+  "journey": "kome",
+  "category": "麦と 豆",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🫘",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-tensaku",
+   "km-nimousaku"
+  ],
+  "description": "とうふ・みそ・しょうゆ・納豆の もとに なる 豆です。根に つく 根粒菌が 空気中の 窒素を 取りこむので、やせた 土でも 育ちます。"
+ },
+ {
+  "id": "km-komeko",
+  "name": "米粉",
+  "reading": "こめこ",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 1,
+  "field": "食品",
+  "type": "concept",
+  "emoji": "🥖",
+  "mapNode": "kome:seimai",
+  "relatedTerms": [
+   "km-okome",
+   "km-komugi"
+  ],
+  "description": "お米を 細かく ひいた 粉です。パン・めん・お菓子に 使われ、田んぼで とれた お米の 新しい 使いみちに なって います。"
+ },
+ {
+  "id": "km-nuka",
+  "name": "ぬか",
+  "reading": "ぬか",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 1,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "kome:seimai",
+  "relatedTerms": [
+   "km-seimai",
+   "km-genmai"
+  ],
+  "description": "玄米を 精米した ときに 出る 外側の 部分です。ぬか漬けに 使ったり、畑の 肥料に したり します。",
+  "acceptedReadings": [
+   "ぬか",
+   "こめぬか"
+  ]
+ },
+ {
+  "id": "km-inasaku",
+  "name": "稲作",
+  "reading": "いなさく",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-ine",
+   "km-suiden"
+  ],
+  "description": "稲を 育てて お米を とる 農業です。日本では 大むかしから 続き、種もみ・田植え・水の 管理・稲刈りと 1年かけて 進めます。"
+ },
+ {
+  "id": "km-nawashiro",
+  "name": "苗代",
+  "reading": "なわしろ",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "kome:nawashiro",
+  "relatedTerms": [
+   "km-ikubyobako",
+   "km-taue"
+  ],
+  "description": "田植えの 前に 稲の 苗を 育てる 場所です。いまは 育苗箱に 種もみを まいて、ハウスなどで そろった 苗を 育てる ことが 多いです。",
+  "acceptedReadings": [
+   "なわしろ",
+   "なえしろ"
+  ]
+ },
+ {
+  "id": "km-ikubyobako",
+  "name": "育苗箱",
+  "reading": "いくびょうばこ",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🟩",
+  "mapNode": "kome:nawashiro",
+  "relatedTerms": [
+   "km-nawashiro",
+   "km-tanemomi"
+  ],
+  "description": "稲の 苗を 育てる 平たい 入れものです。根が からんで マットの ように なった 苗を、そのまま 田植え機に のせて 植えます。"
+ },
+ {
+  "id": "km-tanemomi",
+  "name": "種もみ",
+  "reading": "たねもみ",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌰",
+  "mapNode": "kome:nawashiro",
+  "relatedTerms": [
+   "km-ensuisen",
+   "km-shinshu"
+  ],
+  "description": "苗を 育てる ために まく もみです。よい 苗に そだつ よう、重くて よく 実った ものを えらんで 使います。"
+ },
+ {
+  "id": "km-shirokaki",
+  "name": "代かき",
+  "reading": "しろかき",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🚜",
+  "mapNode": "kome:shirokaki",
+  "relatedTerms": [
+   "km-taokoshi",
+   "km-taue"
+  ],
+  "description": "田んぼに 水を 入れて、土を 細かく くだき、平らに ならす 作業です。苗が 植えやすく なり、水も もれにくく なります。"
+ },
+ {
+  "id": "km-aze",
+  "name": "あぜ",
+  "reading": "あぜ",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "kome:mizu",
+  "relatedTerms": [
+   "km-azenuri",
+   "km-suiden"
+  ],
+  "description": "田んぼと 田んぼの さかいに 土を 盛った ところです。水を ためる かべに なり、人が 歩く 通り道にも なります。"
+ },
+ {
+  "id": "km-yousuiro",
+  "name": "用水路",
+  "reading": "ようすいろ",
+  "journey": "kome",
+  "category": "水の 管理",
+  "difficulty": 2,
+  "field": "環境",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kome:mizu",
+  "relatedTerms": [
+   "km-minakuchi",
+   "km-mizukanri"
+  ],
+  "description": "川や ため池から 田んぼへ 水を 運ぶ 水路です。地域の みんなで 守り、春に そうじを する ところも 多いです。"
+ },
+ {
+  "id": "km-nakaboshi",
+  "name": "中干し",
+  "reading": "なかぼし",
+  "journey": "kome",
+  "category": "水の 管理",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "kome:mizu",
+  "relatedTerms": [
+   "km-bunketsu",
+   "km-mizukanri"
+  ],
+  "description": "夏の はじめに 田んぼの 水を ぬいて、土を 乾かす 作業です。むだな 茎が ふえるのを おさえ、根を 強く 深く のばします。"
+ },
+ {
+  "id": "km-shussui",
+  "name": "出穂",
+  "reading": "しゅっすい",
+  "journey": "kome",
+  "category": "稲の 育ち",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:ho",
+  "relatedTerms": [
+   "km-inaho",
+   "km-tome-ba"
+  ],
+  "description": "稲の 茎の 中で 育った 穂が、外に 出て くる ことです。出穂の あと すぐに 花が さき、実りが はじまります。"
+ },
+ {
+  "id": "km-momigara",
+  "name": "もみがら",
+  "reading": "もみがら",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:kanso",
+  "relatedTerms": [
+   "km-momi",
+   "km-momisuri"
+  ],
+  "description": "もみを つつむ かたい 皮です。もみすりで 外した あと、土に まぜて 水はけを よく したり、焼いて くん炭に したり します。"
+ },
+ {
+  "id": "km-hazakake",
+  "name": "はざかけ",
+  "reading": "はざかけ",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:kanso",
+  "relatedTerms": [
+   "km-tenpiboshi",
+   "km-wara"
+  ],
+  "description": "刈った 稲を たばねて、木や 竹で 組んだ「はざ」に かけて 干す ことです。太陽と 風で ゆっくり 乾かします。",
+  "acceptedReadings": [
+   "はざかけ",
+   "はさかけ",
+   "はさがけ"
+  ]
+ },
+ {
+  "id": "km-tenpiboshi",
+  "name": "天日干し",
+  "reading": "てんぴぼし",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "kome:kanso",
+  "relatedTerms": [
+   "km-hazakake",
+   "km-dakkoku"
+  ],
+  "description": "刈った 稲を 太陽の 光と 風で 乾かす ことです。いまは 乾燥機を 使う ことが 多く、天日干しは 手間の かかる 乾かしかたです。"
+ },
+ {
+  "id": "km-dakkoku",
+  "name": "脱穀",
+  "reading": "だっこく",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:inekari",
+  "relatedTerms": [
+   "km-inekari",
+   "km-momisuri"
+  ],
+  "description": "刈った 稲穂から もみを 外す 作業です。むかしは 千歯こきなどの 道具で、いまは コンバインが 刈りながら 行います。"
+ },
+ {
+  "id": "km-momisuri",
+  "name": "もみすり",
+  "reading": "もみすり",
+  "journey": "kome",
+  "category": "収穫と 調製",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "kome:kanso",
+  "relatedTerms": [
+   "km-momigara",
+   "km-genmai"
+  ],
+  "description": "乾かした もみから もみがらを 外して、玄米に する 作業です。もみすり機で いっぺんに 行います。"
+ },
+ {
+  "id": "km-haigamai",
+  "name": "胚芽米",
+  "reading": "はいがまい",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kome:seimai",
+  "relatedTerms": [
+   "km-seimai",
+   "km-hakumai"
+  ],
+  "description": "精米する ときに、芽に なる 胚芽を 残した お米です。白米より、胚芽に ふくまれる 栄養が 残ります。"
+ },
+ {
+  "id": "km-komai",
+  "name": "古米",
+  "reading": "こまい",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kome:seimai",
+  "relatedTerms": [
+   "km-shinmai",
+   "km-okome"
+  ],
+  "description": "新米が 出たあとも 残っている、去年 とれた お米です。新米より 水分が へるので、水を 少し 多めに して 炊きます。"
+ },
+ {
+  "id": "km-uruchimai",
+  "name": "うるち米",
+  "reading": "うるちまい",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-mochigome",
+   "km-hakumai"
+  ],
+  "description": "ふだん ご飯に して 食べる、ふつうの お米です。もち米に くらべて ねばりが ひかえめです。"
+ },
+ {
+  "id": "km-sakamai",
+  "name": "酒米",
+  "reading": "さかまい",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍶",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-shinpaku",
+   "km-uruchimai"
+  ],
+  "description": "日本酒を つくる ために 育てる お米です。粒が 大きく、まん中に しんぱくと いう 白い 部分が ある 品種が 使われます。",
+  "acceptedReadings": [
+   "さかまい",
+   "さけまい"
+  ]
+ },
+ {
+  "id": "km-hitomebore",
+  "name": "ひとめぼれ",
+  "reading": "ひとめぼれ",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-koshihikari",
+   "km-sasanishiki"
+  ],
+  "description": "宮城県で 生まれた お米の 品種で、コシヒカリの 子どもに あたります。寒さに 強く、つやと ねばりの ある 味です。"
+ },
+ {
+  "id": "km-akitakomachi",
+  "name": "あきたこまち",
+  "reading": "あきたこまち",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-koshihikari",
+   "km-hitomebore"
+  ],
+  "description": "秋田県で 生まれた お米の 品種で、コシヒカリの 子どもに あたります。寒い 地方でも 育てやすく、もちもちした 味です。"
+ },
+ {
+  "id": "km-sasanishiki",
+  "name": "ササニシキ",
+  "reading": "ささにしき",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍣",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-hitomebore",
+   "km-koshihikari"
+  ],
+  "description": "宮城県で 生まれた お米の 品種です。あっさりした 味で ねばりが ひかえめなので、おすしに よく 合うと いわれます。"
+ },
+ {
+  "id": "km-omugi",
+  "name": "大麦",
+  "reading": "おおむぎ",
+  "journey": "kome",
+  "category": "麦と 豆",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-mugi",
+   "km-komugi"
+  ],
+  "description": "麦茶・みそ・押し麦などに 使う 麦です。小麦より 早く 実り、田んぼの 裏作にも 育てられます。"
+ },
+ {
+  "id": "km-soba",
+  "name": "そば",
+  "reading": "そば",
+  "journey": "kome",
+  "category": "麦と 豆",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-daizu",
+   "km-tensaku"
+  ],
+  "description": "白い 花が さき、みを 粉に して めんに する 作物です。たねを まいてから 早く 実り、すずしい 土地や やせた 土地でも 育ちます。"
+ },
+ {
+  "id": "km-nimousaku",
+  "name": "二毛作",
+  "reading": "にもうさく",
+  "journey": "kome",
+  "category": "麦と 豆",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-omugi",
+   "km-tensaku"
+  ],
+  "description": "同じ 田畑で、1年に 2種類の 作物を 順に 育てる ことです。秋に 稲を 刈った あと、麦を まいて 初夏に とる 形が あります。"
+ },
+ {
+  "id": "km-taokoshi",
+  "name": "田おこし",
+  "reading": "たおこし",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 2,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🚜",
+  "mapNode": "kome:taokoshi",
+  "relatedTerms": [
+   "km-shirokaki",
+   "km-wara"
+  ],
+  "description": "春に 田んぼの 土を 掘り返して 耕す 作業です。土に 空気を 入れ、前の 年の 稲わらを まぜこんで、稲が 育つ 土を つくります。",
+  "acceptedReadings": [
+   "たおこし",
+   "たがえし"
+  ]
+ },
+ {
+  "id": "km-ensuisen",
+  "name": "塩水選",
+  "reading": "えんすいせん",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🧂",
+  "mapNode": "kome:nawashiro",
+  "relatedTerms": [
+   "km-tanemomi",
+   "km-shinshu"
+  ],
+  "description": "塩水に 種もみを 入れて、浮いた 軽い もみを のぞく やりかたです。沈んだ よく 実った もみだけを たねに 使います。"
+ },
+ {
+  "id": "km-shinshu",
+  "name": "浸種",
+  "reading": "しんしゅ",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kome:nawashiro",
+  "relatedTerms": [
+   "km-saiga",
+   "km-ensuisen"
+  ],
+  "description": "種もみを 水に つけて、芽が 出る ために 必要な 水を 吸わせる ことです。水の 温度に 合わせて 何日か つけます。"
+ },
+ {
+  "id": "km-saiga",
+  "name": "催芽",
+  "reading": "さいが",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "kome:nawashiro",
+  "relatedTerms": [
+   "km-shinshu",
+   "km-ikubyobako"
+  ],
+  "description": "水を 吸った 種もみを あたためて、芽を 少しだけ 出させる ことです。芽が そろうと、苗も そろって 育ちます。"
+ },
+ {
+  "id": "km-azenuri",
+  "name": "あぜぬり",
+  "reading": "あぜぬり",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "kome:taokoshi",
+  "relatedTerms": [
+   "km-aze",
+   "km-shirokaki"
+  ],
+  "description": "あぜの 内側に どろを ぬりつけて かためる 作業です。もぐらの 穴などから 水が もれるのを ふせぎます。"
+ },
+ {
+  "id": "km-minakuchi",
+  "name": "水口",
+  "reading": "みなくち",
+  "journey": "kome",
+  "category": "水の 管理",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🚰",
+  "mapNode": "kome:mizu",
+  "relatedTerms": [
+   "km-yousuiro",
+   "km-mizukanri"
+  ],
+  "description": "用水路から 田んぼに 水を 入れる 入り口です。この 入り口の 近くは 水が 冷たく、稲の 育ちが おくれる ことも あります。",
+  "acceptedReadings": [
+   "みなくち",
+   "みずぐち"
+  ]
+ },
+ {
+  "id": "km-mizukanri",
+  "name": "水管理",
+  "reading": "みずかんり",
+  "journey": "kome",
+  "category": "水の 管理",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kome:mizu",
+  "relatedTerms": [
+   "km-nakaboshi",
+   "km-kandan"
+  ],
+  "description": "稲の 育ちに 合わせて、田んぼの 水の 深さを 変えて いく 仕事です。寒い 日は 深く して 稲を 守る など、毎日の 見回りが 大切です。"
+ },
+ {
+  "id": "km-kandan",
+  "name": "間断かんがい",
+  "reading": "かんだんかんがい",
+  "journey": "kome",
+  "category": "水の 管理",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kome:mizu",
+  "relatedTerms": [
+   "km-mizukanri",
+   "km-nakaboshi"
+  ],
+  "description": "田んぼに 水を 入れたり ぬいたりを くり返す 水の 管理です。土に 空気が 入って 根が 元気に なり、実りを よく します。"
+ },
+ {
+  "id": "km-bunketsu",
+  "name": "分げつ",
+  "reading": "ぶんげつ",
+  "journey": "kome",
+  "category": "稲の 育ち",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌿",
+  "mapNode": "kome:ine",
+  "relatedTerms": [
+   "km-nakaboshi",
+   "km-ine"
+  ],
+  "description": "稲の 茎の 根元から、新しい 茎が わかれて ふえる ことです。分げつで 1株が 太く なり、穂の 数が ふえます。"
+ },
+ {
+  "id": "km-toujuku",
+  "name": "登熟",
+  "reading": "とうじゅく",
+  "journey": "kome",
+  "category": "稲の 育ち",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:ho",
+  "relatedTerms": [
+   "km-shussui",
+   "km-inaho"
+  ],
+  "description": "花が さいた あと、もみの 中に でんぷんが たまって お米が 充実して いく ことです。この ころの 天気が 味と 量を 左右します。"
+ },
+ {
+  "id": "km-tome-ba",
+  "name": "止め葉",
+  "reading": "とめば",
+  "journey": "kome",
+  "category": "稲の 育ち",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍃",
+  "mapNode": "kome:ine",
+  "relatedTerms": [
+   "km-shussui",
+   "km-youshi"
+  ],
+  "description": "稲の 茎で 最後に 出る、いちばん 上の 葉です。穂に 送る 養分を 作る 大切な 葉なので、元気に 保ちます。"
+ },
+ {
+  "id": "km-youshi",
+  "name": "幼穂",
+  "reading": "ようすい",
+  "journey": "kome",
+  "category": "稲の 育ち",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "kome:ho",
+  "relatedTerms": [
+   "km-tome-ba",
+   "km-horamiki"
+  ],
+  "description": "茎の 中に できる、まだ 小さな 穂の もとです。この 穂の もとが できはじめる ころを 目安に、追加の 肥料を あたえます。"
+ },
+ {
+  "id": "km-horamiki",
+  "name": "穂ばらみ期",
+  "reading": "ほばらみき",
+  "journey": "kome",
+  "category": "稲の 育ち",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:ho",
+  "relatedTerms": [
+   "km-youshi",
+   "km-shussui"
+  ],
+  "description": "茎の 中で 穂が 大きく なり、茎が ふくらんで 見える ころです。寒さに とても 弱い 時期なので、田んぼの 水を 深く して 守ります。"
+ },
+ {
+  "id": "km-hinshukairyo",
+  "name": "品種改良",
+  "reading": "ひんしゅかいりょう",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🧬",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-koshihikari",
+   "km-wase"
+  ],
+  "description": "ちがう 品種を かけあわせて、味・寒さへの 強さ・病気への 強さ などの よい ところを あわせ持つ 新しい 品種を つくる ことです。"
+ },
+ {
+  "id": "km-wase",
+  "name": "早生",
+  "reading": "わせ",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-hinshukairyo",
+   "km-inekari"
+  ],
+  "description": "ほかより 早く 実る 品種の ことです。おそく 実る ものを おくてと いいます。わせと おくてを 組みあわせると、稲刈りの 時期を ずらせます。"
+ },
+ {
+  "id": "km-japonica",
+  "name": "ジャポニカ米",
+  "reading": "じゃぽにかまい",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-indica",
+   "km-koshihikari"
+  ],
+  "description": "粒が 短くて 丸く、炊くと ねばりが 出る お米の なかまです。日本で 育てて いる お米の ほとんどが これです。"
+ },
+ {
+  "id": "km-indica",
+  "name": "インディカ米",
+  "reading": "いんでぃかまい",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍛",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-japonica",
+   "km-okome"
+  ],
+  "description": "粒が 細長く、炊くと ぱらっと する お米の なかまです。インドや 東南アジアで 多く 育てられて います。"
+ },
+ {
+  "id": "km-rikuto",
+  "name": "陸稲",
+  "reading": "りくとう",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-suiden",
+   "km-ine"
+  ],
+  "description": "水を はらない 畑で 育てる 稲です。水を ためなくても 育つので、水田を つくれない 土地でも 育てられます。",
+  "acceptedReadings": [
+   "りくとう",
+   "おかぼ"
+  ]
+ },
+ {
+  "id": "km-senmaida",
+  "name": "千枚田",
+  "reading": "せんまいだ",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 3,
+  "field": "環境",
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-tanada",
+   "km-suiden"
+  ],
+  "description": "山の 斜面に、小さな 田んぼが 何枚も 重なる ように ならぶ 棚田の よび名です。機械が 入りにくく、手作業が 多く なります。"
+ },
+ {
+  "id": "km-touhuku",
+  "name": "倒伏",
+  "reading": "とうふく",
+  "journey": "kome",
+  "category": "病気と 虫",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "kome:inekari",
+  "relatedTerms": [
+   "km-inekari",
+   "km-bunketsu"
+  ],
+  "description": "実って 重く なった 稲が、風や 雨で たおれる ことです。刈り取りが むずかしく なり、お米の 質も 下がるので、肥料の あたえかたで ふせぎます。"
+ },
+ {
+  "id": "km-imochi",
+  "name": "いもち病",
+  "reading": "いもちびょう",
+  "journey": "kome",
+  "category": "病気と 虫",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "kome:ine",
+  "relatedTerms": [
+   "km-monguare",
+   "km-kamemushi"
+  ],
+  "description": "カビの なかまが もとで おこる、稲の 代表的な 病気です。すずしくて 雨の 多い 夏に ふえやすく、葉や 穂に 茶色い はん点が 出ます。"
+ },
+ {
+  "id": "km-kamemushi",
+  "name": "カメムシ",
+  "reading": "かめむし",
+  "journey": "kome",
+  "category": "病気と 虫",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🪲",
+  "mapNode": "kome:ho",
+  "relatedTerms": [
+   "km-imochi",
+   "km-toujuku"
+  ],
+  "description": "実りはじめた もみの しるを 吸う 虫です。吸われた お米には 黒い はん点が 残り、斑点米と よばれます。あぜの 草を 刈って ふせぎます。"
+ },
+ {
+  "id": "km-monguare",
+  "name": "紋枯病",
+  "reading": "もんがれびょう",
+  "journey": "kome",
+  "category": "病気と 虫",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "kome:ine",
+  "relatedTerms": [
+   "km-imochi",
+   "km-touhuku"
+  ],
+  "description": "カビの なかまが もとで、稲の 根元の さやに 雲の ような もようが 出る 病気です。暑くて しめった 夏に 広がりやすいです。"
+ },
+ {
+  "id": "km-shinpaku",
+  "name": "心白",
+  "reading": "しんぱく",
+  "journey": "kome",
+  "category": "お米の 種類",
+  "difficulty": 3,
+  "field": "食品",
+  "type": "concept",
+  "emoji": "⚪",
+  "mapNode": "kome:hinshu",
+  "relatedTerms": [
+   "km-sakamai",
+   "km-hinshukairyo"
+  ],
+  "description": "酒米の 粒の まん中に ある、白く にごった 部分です。すき間が 多く、お酒づくりで こうじ菌が 入りこみやすく なります。"
+ },
+ {
+  "id": "km-chokuhan",
+  "name": "直播",
+  "reading": "ちょくはん",
+  "journey": "kome",
+  "category": "田んぼの 仕事",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🌰",
+  "mapNode": "kome:taue",
+  "relatedTerms": [
+   "km-taue",
+   "km-tanemomi"
+  ],
+  "description": "苗を 育てずに、田んぼに 種もみを 直接 まいて 育てる やりかたです。苗づくりと 田植えの 手間が はぶけます。",
+  "acceptedReadings": [
+   "ちょくはん",
+   "じかまき"
+  ]
+ },
+ {
+  "id": "km-tensaku",
+  "name": "転作",
+  "reading": "てんさく",
+  "journey": "kome",
+  "category": "麦と 豆",
+  "difficulty": 3,
+  "field": "作物",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kome:tanada",
+  "relatedTerms": [
+   "km-daizu",
+   "km-omugi"
+  ],
+  "description": "田んぼで 稲の かわりに、麦や 大豆・そば などを 育てる ことです。水を ぬいて 畑と して 使います。"
+ }
+]

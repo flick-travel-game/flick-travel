@@ -466,9 +466,9 @@
     「かだいのぶんり」が きほんの 札に(ゲームでは 共同体感覚の 旅)/ 歴史の 札に アドラー本人の 顔の 絵。旅ごとに ゲームに ある 読みを 4つずつ 指定して 作りなおして もらった
   - 2回目は 札 28こ ぜんぶ ゲームに ある 読みで 確かめた。まん中下の 図の まん中が「ちょうかん」(ゲームに 無い)だったので **絵の 中で「ゆうきづけ」に 直した**(`tools/adler/fix_text.py`)
   - 四角い 絵の 右下に「レベルで 試験の 練習も できる!」(アドラーには 試験が 無い)が あるが、アイコンに 切る ところの 外なので 画面には 出ない
-  - ⚠️ **題名は まだ 文字**(`logo=False`)。ChatGPT の 切りぬきの 透明 PNG が 届いたら `tools/adler/art/title-src.png` に 置いて `python3 tools/title_from_art.py adler` → `logo=True`・`art.word` を 大きさに・`wordv` +1
+  - 題名は けいくんが ChatGPT で 切りぬいた 透明 PNG(`tools/adler/art/title-src.png`。2172×724)→ `python3 tools/title_from_art.py adler` → `adler/logo-word.webp`(900×157)。11字「フリックアドラー心理学」を 1字ずつ 読んで 確かめた(字は 正しい。左はしに 外がわの 白い 光が 少し あるが 白い 地では 見えない)
   - もとの 絵(hero-src / square-src / hero-fixed.png)は 大きいので 入れものに 入れていない(ほかの ゲームと 同じ)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #297)・販売ページ `HOME_GAMES`(夢のしごと の 章、税理士の となり)・規約の 一覧 `FLICK_SERIES_GAMES`(#298)に 足した。⚠️ 題名の 絵が 届いたら `HOME_GAMES` に `word` を 足す
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #297)・販売ページ `HOME_GAMES`(夢のしごと の 章、税理士の となり)・規約の 一覧 `FLICK_SERIES_GAMES`(#298)に 足した。題名の 絵(`word`)も 足した
 - 確かめかた: `node tools/play-all.mjs adler/`(全49ステージ)/ `node tools/click-all.mjs adler/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## 入力が 止まる バグと 見つけかた(けいくん 2026-09-28「ゲームの途中で入力できなくなった」)

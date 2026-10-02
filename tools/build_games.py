@@ -257,7 +257,7 @@ def build(gid, g):
     #   ほかの ゲームは 自分の 絵(か まだ 無い)なので、世界の 数字を 前の 形に もどしてから 作る(ほかの ゲームの 住所は 変えない)
     # ⚠️ apple-touch-icon・manifest・apple-mobile-web-app-title は 2026-09-30 から かずとも本体の もの(ゲームごとに 変えない)
     for a_, b_ in (('href="favicon.png?v=3"', 'href="favicon.png?v=2"'),
-                   ('src="logo-mark2.webp?v=3"', 'src="logo-mark2.webp"'), ('src="logo-word.webp?v=3" alt="" width="1166" height="208"', 'src="logo-word.webp" alt="" width="1170" height="209"'),
+                   ('src="logo-mark2.webp?v=3"', 'src="logo-mark2.webp"'), ('src="logo-word.webp?v=4" alt="" width="900" height="167"', 'src="logo-word.webp" alt="" width="1170" height="209"'),
                    ('<img class="hero" src="hero.webp?v=3"', '<img class="hero" src="hero.webp"')):
         assert out.count(a_) == 1, a_; out = out.replace(a_, b_)
     # head

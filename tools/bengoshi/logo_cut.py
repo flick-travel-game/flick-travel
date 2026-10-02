@@ -16,7 +16,7 @@ HERO = sys.argv[1]
 SQUARE = sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] != '-' else None
 PREVIEW = sys.argv[3] if len(sys.argv) > 3 else None
 img = cv2.imread(HERO); assert img is not None and img.shape[:2] == (1024, 1536), 'トップの 絵は 1536×1024 で'
-X0, Y0, X1, Y1 = 410, 600, 1100, 760
+X0, Y0, X1, Y1 = 410, 600, 1140, 760
 crop = img[Y0:Y1, X0:X1].copy(); hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
 H, s, v = hsv[..., 0], hsv[..., 1] / 255, hsv[..., 2] / 255
 ell = lambda k: cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))

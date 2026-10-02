@@ -23,7 +23,7 @@ from PIL import Image
 HERO = sys.argv[1]
 SQUARE = sys.argv[2]
 PREVIEW = sys.argv[3] if len(sys.argv) > 3 else None
-X0,Y0,X1,Y1=360,590,1195,735
+X0,Y0,X1,Y1=360,590,1218,735
 img=cv2.imread(HERO)
 assert img is not None and img.shape[:2]==(1024,1536), 'トップの 絵は 1536×1024 で'; crop=img[Y0:Y1,X0:X1].copy()
 rgb=cv2.cvtColor(crop,cv2.COLOR_BGR2RGB); hsv=cv2.cvtColor(crop,cv2.COLOR_BGR2HSV)

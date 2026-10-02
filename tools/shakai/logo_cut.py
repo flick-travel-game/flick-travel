@@ -19,7 +19,7 @@ from PIL import Image
 HERO = sys.argv[1]
 SQUARE = sys.argv[2]
 PREVIEW = sys.argv[3] if len(sys.argv) > 3 else None
-X0,Y0,X1,Y1=420,574,1112,712  # 題名の 大きい 字だけ(ふりがなは 上、帯は 下で 落とす)
+X0,Y0,X1,Y1=420,574,1168,712  # 題名の 大きい 字だけ(ふりがなは 上、帯は 下で 落とす)
 img=cv2.imread(HERO)
 assert img is not None and img.shape[:2]==(1024,1536), 'トップの 絵は 1536×1024 で'; crop=img[Y0:Y1,X0:X1].copy()
 rgb=cv2.cvtColor(crop,cv2.COLOR_BGR2RGB); hsv=cv2.cvtColor(crop,cv2.COLOR_BGR2HSV)
@@ -43,6 +43,9 @@ k[116:,:]=False          # 下の 帯「うって まなぶ 社会の ことば!
 k[0:18,165:205]=False    # 「ッ」と「ク」の 上の 葉
 k[0:14,295:318]=False    # 「社」の 左上の 葉
 k[100:,200:300]=False    # 「ッ」「ク」の 下の 葉
+k[:30,690:]=False
+k[20:,696:]=False        # 右上の ピンクの 星(箱を 広げたぶん)
+k[:, 745:]=False
 hz=hsv[...,0]; zone=np.zeros(k.shape,bool); zone[:,190:304]=True
 k[zone&(hz>=30)&(hz<=95)]=False  # 「ッ」「ク」(黄・オレンジ)の まわりの 緑の 葉。この はばには 緑の 字が 無い
 # 字の しんから ふちの 太さ ぶんだけ 残す(まっすぐ 切ると 下の はしが 不自然なので、字の 形に そって 落とす)

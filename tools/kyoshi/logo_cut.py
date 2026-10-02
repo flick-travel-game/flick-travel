@@ -19,8 +19,8 @@ HERO = sys.argv[1] if len(sys.argv) > 1 else 'yoko.png'
 SQUARE = sys.argv[2] if len(sys.argv) > 2 else 'sq.png'
 PREVIEW = sys.argv[3] if len(sys.argv) > 3 else None
 img = cv2.imread(HERO); assert img is not None and img.shape[:2] == (1024, 1536), 'トップの 絵は 1536×1024 で'
-X0, Y0, X1, Y1 = 450, 585, 1045, 760
-XR = 1030  # これより 右は えんぴつ
+X0, Y0, X1, Y1 = 450, 585, 1060, 760
+XR = 1040  # これより 右は えんぴつ
 crop = img[Y0:Y1, X0:X1].copy(); hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
 H, s, v = hsv[..., 0], hsv[..., 1] / 255, hsv[..., 2] / 255
 ell = lambda k: cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))

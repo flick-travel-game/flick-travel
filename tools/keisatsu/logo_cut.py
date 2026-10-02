@@ -16,7 +16,7 @@ HERO = sys.argv[1]
 SQUARE = sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] != '-' else None
 PREVIEW = sys.argv[3] if len(sys.argv) > 3 else None
 img = cv2.imread(HERO); assert img is not None and img.shape[:2] == (1024, 1536), 'トップの 絵は 1536×1024 で'
-X0, Y0, X1, Y1 = 440, 560, 1100, 760
+X0, Y0, X1, Y1 = 440, 560, 1116, 760
 crop = img[Y0:Y1, X0:X1].copy(); hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
 H, s, v = hsv[..., 0], hsv[..., 1] / 255, hsv[..., 2] / 255
 ell = lambda k: cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
@@ -26,8 +26,11 @@ cut |= (xx >= 932) & (yy < 600)              # 「官」の 上の 帽子
 cut |= (xx >= 545) & (xx < 985) & (yy >= 703) | (xx >= 600) & (xx < 985) & (yy >= 696)   # 下の 帯(「フ」の 左下は 545 より 左)
 cut |= yy >= 735                             # 帯の 下
 cut |= (xx >= 985) & (yy >= 712)             # 右下の 建物
-cut |= (xx >= 1070) & (yy >= 683)            # 右の えんぴつ
-cut |= xx >= 1092
+cut |= (xx >= 1072) & (yy >= 712)            # 右の えんぴつ
+cut |= xx >= 1108
+cut |= (yy < 592) & (xx < 640)   # 左上の 花・帽子の はし(箱を 広げた ぶん)
+cut |= (yy < 600) & (xx >= 1098)
+cut |= (yy >= 715) & (xx >= 1060)
 navy = ((H >= 100) & (H <= 160) & (v < 0.45) & (s > 0.25)).astype(np.uint8); navy[cut] = 0
 core = ((s > 0.40) & (v > 0.55)).astype(np.uint8); core[cut] = 0          # 字の 中身(あざやか)
 nz = cv2.dilate(navy, ell(9))
@@ -48,7 +51,7 @@ m[cut] = cv2.GC_BGD
 bgm = np.zeros((1, 65)); fgm = np.zeros((1, 65))
 cv2.grabCut(crop, m, None, bgm, fgm, 6, cv2.GC_INIT_WITH_MASK)
 res = ((m == 1) | (m == 3)).astype(np.uint8)
-res = ndimage.binary_fill_holes(res).astype(np.uint8) & cv2.dilate(enc, ell(7))   # 紺の ふちより 外の 光・葉っぱは 落とす
+res = ndimage.binary_fill_holes(res | (enc & (v > 0.5))).astype(np.uint8) & cv2.dilate(enc, ell(7))   # 紺の ふちより 外の 光・葉っぱは 落とす
 lab, n = ndimage.label(res); sz = ndimage.sum(res, lab, range(1, n + 1))
 res = np.isin(lab, [i + 1 for i, z in enumerate(sz) if z > 800]).astype(np.uint8)
 M = cv2.GaussianBlur(res.astype(np.float32), (0, 0), 0.8)

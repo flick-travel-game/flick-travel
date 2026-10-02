@@ -17,15 +17,15 @@ HERO = sys.argv[1] if len(sys.argv) > 1 else 'yoko.png'
 SQUARE = sys.argv[2] if len(sys.argv) > 2 else 'sq.png'
 PREVIEW = sys.argv[3] if len(sys.argv) > 3 else None
 img = cv2.imread(HERO); assert img is not None and img.shape[:2] == (1024, 1536), 'トップの 絵は 1536×1024 で'
-X0, Y0, X1, Y1 = 462, 572, 1025, 748
+X0, Y0, X1, Y1 = 448, 572, 1045, 748
 crop = img[Y0:Y1, X0:X1].copy(); hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
 H, s, v = hsv[..., 0], hsv[..., 1] / 255, hsv[..., 2] / 255
 ell = lambda k: cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
 cut = np.zeros(H.shape, bool)
 cut[712 - Y0:, 572 - X0:] = True        # 下の 帯
-cut[664 - Y0:, 1000 - X0:] = True       # 右の 病院の 絵
+cut[690 - Y0:, 1034 - X0:] = True       # 右の 病院の 絵
 cut[716 - Y0:, :] = True                # 字の 下の 光
-cut[662 - Y0:, :524 - X0] = True        # 左の 聴診器の 先(まるい ところと 管)
+cut[662 - Y0:, :470 - X0] = True; cut[696 - Y0:, :505 - X0] = True        # 左の 聴診器の 先(まるい ところと 管)
 cut[:604 - Y0, 985 - X0:] = True        # 右上の きらきら
 core = ((s > 0.40) & (v > 0.55)).astype(np.uint8); core[cut] = 0
 navy = ((H >= 95) & (H <= 140) & (v < 0.6) & (s > 0.3)).astype(np.uint8); navy[cut] = 0

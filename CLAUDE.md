@@ -468,7 +468,7 @@
   - 四角い 絵の 右下に「レベルで 試験の 練習も できる!」(アドラーには 試験が 無い)が あるが、アイコンに 切る ところの 外なので 画面には 出ない
   - ⚠️ **題名は まだ 文字**(`logo=False`)。ChatGPT の 切りぬきの 透明 PNG が 届いたら `tools/adler/art/title-src.png` に 置いて `python3 tools/title_from_art.py adler` → `logo=True`・`art.word` を 大きさに・`wordv` +1
   - もとの 絵(hero-src / square-src / hero-fixed.png)は 大きいので 入れものに 入れていない(ほかの ゲームと 同じ)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #297)・販売ページ `HOME_GAMES`(夢のしごと の 章、税理士の となり)・規約の 一覧 `FLICK_SERIES_GAMES`(#298)に 足した。⚠️ 題名の 絵が 届いたら `HOME_GAMES` に `word` を 足す
 - 確かめかた: `node tools/play-all.mjs adler/`(全49ステージ)/ `node tools/click-all.mjs adler/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## 入力が 止まる バグと 見つけかた(けいくん 2026-09-28「ゲームの途中で入力できなくなった」)

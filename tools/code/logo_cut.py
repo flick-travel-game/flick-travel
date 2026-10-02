@@ -24,15 +24,15 @@ from PIL import Image
 HERO = sys.argv[1]
 SQUARE = sys.argv[2]
 PREVIEW = sys.argv[3] if len(sys.argv) > 3 else None
-X0,Y0,X1,Y1=392,556,1126,698
+X0,Y0,X1,Y1=392,556,1118,698
 img=cv2.imread(HERO)
 assert img is not None and img.shape[:2]==(1024,1536), 'トップの 絵は 1536×1024 で'; crop=img[Y0:Y1,X0:X1].copy()
 rgb=cv2.cvtColor(crop,cv2.COLOR_BGR2RGB); hsv=cv2.cvtColor(crop,cv2.COLOR_BGR2HSV)
 ell=lambda k:cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(k,k))
-u=((hsv[...,1]>140)&(hsv[...,2]>175)).astype(np.uint8)  # 明るい 字の 中身だけ(うしろの こい 緑の 葉は 入れない)
+u=((hsv[...,1]>140)&(hsv[...,2]>175)).astype(np.uint8); xx=np.arange(u.shape[1])[None,:]+X0; u|=((hsv[...,1]>60)&(hsv[...,2]>170)&(xx<520)).astype(np.uint8)  # 明るい 字の 中身だけ(うしろの こい 緑の 葉は 入れない)
 u=ndimage.binary_fill_holes(cv2.morphologyEx(u,cv2.MORPH_CLOSE,ell(3))).astype(np.uint8)
 e=cv2.erode(u,ell(5)); lab,n=ndimage.label(e); core=np.zeros(e.shape,np.uint8)
-core_ok=np.ones(e.shape,bool); core_ok[668-Y0:,1040-X0:]=False  # 右下の 歯車は 入れない
+core_ok=np.ones(e.shape,bool); core_ok[668-Y0:,1050-X0:]=False  # 右下の 歯車は 入れない
 for i,sl in enumerate(ndimage.find_objects(lab)):
     h=sl[0].stop-sl[0].start; area=(lab[sl]==i+1).sum()
     if area>120 and h>8 and core_ok[sl].any() and core_ok[(lab==i+1)].all(): core|=(lab==i+1)
@@ -56,7 +56,10 @@ holes=ndimage.binary_fill_holes(k)&~k; hl,hn=ndimage.label(holes); hs=ndimage.su
 k=k|np.isin(hl,[i+1 for i,z in enumerate(hs) if z<150])
 lab,n=ndimage.label(k); sz=ndimage.sum(k,lab,range(1,n+1))
 k=np.isin(lab,[i+1 for i,z in enumerate(sz) if z>800])
-k=cv2.morphologyEx(k.astype(np.uint8),cv2.MORPH_OPEN,ell(5))
+k=cv2.morphologyEx(k.astype(np.uint8),cv2.MORPH_OPEN,ell(5)); k[:, :12]=0; k[:46, :30]=0; _pk=((hsv[...,0]>=140)|(hsv[...,0]<=10))&(hsv[...,1]>60); _col=np.where(_pk[:, :60].any(axis=0))[0]; _x0=int(_col.min()) if _col.size else 0; k[:, :max(0,_x0-2)]=0
+_l,_n=ndimage.label(k)
+for _i,_sl in enumerate(ndimage.find_objects(_l)):
+    if _sl[1].stop<60 and (_l[_sl]==_i+1).sum()<2500: k[_l==_i+1]=0; _g=((hsv[...,0]>=30)&(hsv[...,0]<=90)&(hsv[...,1]>80)); k[:, :45]&=~_g[:, :45].astype(k.dtype)
 M=cv2.GaussianBlur(k.astype(np.float32),(0,0),1.0)
 a=(np.clip((M-.2)/.6,0,1)*255).astype(np.uint8)
 w=Image.fromarray(rgb); w.putalpha(Image.fromarray(a)); w=w.crop(w.getbbox())

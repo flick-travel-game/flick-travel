@@ -16,7 +16,7 @@ HERO = sys.argv[1]
 SQUARE = sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] != '-' else None
 PREVIEW = sys.argv[3] if len(sys.argv) > 3 else None
 img = cv2.imread(HERO); assert img is not None and img.shape[:2] == (1024, 1536), 'トップの 絵は 1536×1024 で'
-X0, Y0, X1, Y1 = 440, 575, 1100, 760
+X0, Y0, X1, Y1 = 440, 575, 1122, 760
 crop = img[Y0:Y1, X0:X1].copy(); hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
 H, s, v = hsv[..., 0], hsv[..., 1] / 255, hsv[..., 2] / 255
 ell = lambda k: cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
@@ -25,8 +25,8 @@ cut[712 - Y0:, 520 - X0:982 - X0] = True    # 下の 帯(「人」の 左足は 
 cut[708 - Y0:, :520 - X0] = True            # 左の フライ返し
 cut[742 - Y0:, :] = True                    # 帯の 下
 yy, xx = np.mgrid[Y0:Y1, X0:X1]
-cut |= (xx - 1040) + (yy - 722) > 0          # 右下の 筆(「人」の 右足の 先で ななめに 切る)
-cut[:, 1088 - X0:] = True                   # 右の 星
+cut |= ((xx >= 1030) & (yy >= 746)) | ((xx >= 1108) & (yy >= 700))          # 右下の 筆(「人」の 右足の 先で ななめに 切る)
+cut[:, 1114 - X0:] = True                   # 右の 星
 navy = ((H >= 100) & (H <= 160) & (v < 0.45) & (s > 0.25)).astype(np.uint8); navy[cut] = 0
 core = ((s > 0.40) & (v > 0.55)).astype(np.uint8); core[cut] = 0          # 字の 中身(あざやか)
 nz = cv2.dilate(navy, ell(9))

@@ -461,7 +461,13 @@
   子育て … 英語の 長い カタカナ 8語(ディスプレイオブインアデクアシー など)を 日本語の 語に(教師の勇気づけ・親教育・子どもの尊重・学級の雰囲気 …)/
   歴史 … 精神分析協会 → ウィーン精神分析協会(1908年 名前・1910年 会長・1911年 離れる)・ロジャーズ(若いころ ニューヨークで アドラーの 講演を 聞いた)・家族コンサルタント(中身は 書かない)
 - ふりがなは 全語 見た。「表と うら」が ひょう に なったので「おもてと うら」に 書きかえた
-- 絵は **まだ 無い**(`build_games.py` は hero=False, logo=False。題名は 文字)。アイコンは 仮(`tools/adler/placeholder_icon.py`。むらさきの 地に 横に ならんで 同じ 床に 立つ ふたり = 横の 関係)
+- 絵(2026-10-02): けいくんの ChatGPT の 絵。トップ `adler/hero.webp`(1536×1024)・アイコンは 四角い 絵(1254px)の まん中(ふたりと 犬。`tools/adler/art_in.py` の `SQ_IN_BOX`)
+  - ⚠️ **1回目の 絵は 入れなかった**: 札 28こ中 13こが ゲームに 無い(たいとうせい・しんらい・つながり・みとめる・はげます・ほめない・しからない・あどらー …)/
+    「かだいのぶんり」が きほんの 札に(ゲームでは 共同体感覚の 旅)/ 歴史の 札に アドラー本人の 顔の 絵。旅ごとに ゲームに ある 読みを 4つずつ 指定して 作りなおして もらった
+  - 2回目は 札 28こ ぜんぶ ゲームに ある 読みで 確かめた。まん中下の 図の まん中が「ちょうかん」(ゲームに 無い)だったので **絵の 中で「ゆうきづけ」に 直した**(`tools/adler/fix_text.py`)
+  - 四角い 絵の 右下に「レベルで 試験の 練習も できる!」(アドラーには 試験が 無い)が あるが、アイコンに 切る ところの 外なので 画面には 出ない
+  - ⚠️ **題名は まだ 文字**(`logo=False`)。ChatGPT の 切りぬきの 透明 PNG が 届いたら `tools/adler/art/title-src.png` に 置いて `python3 tools/title_from_art.py adler` → `logo=True`・`art.word` を 大きさに・`wordv` +1
+  - もとの 絵(hero-src / square-src / hero-fixed.png)は 大きいので 入れものに 入れていない(ほかの ゲームと 同じ)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs adler/`(全49ステージ)/ `node tools/click-all.mjs adler/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 

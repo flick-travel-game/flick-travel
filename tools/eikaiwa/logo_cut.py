@@ -7,7 +7,7 @@ import numpy as np, cv2, sys
 from PIL import Image, ImageFilter
 from scipy import ndimage
 img = cv2.imread(sys.argv[1]); H0, W0 = img.shape[:2]
-x0, y0, x1, y1 = 280, 700, 1160, 990
+x0, y0, x1, y1 = 262, 700, 1160, 990
 crop = img[y0:y1, x0:x1].copy(); h, w = crop.shape[:2]
 hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
 H, S, V = hsv[..., 0], hsv[..., 1] / 255., hsv[..., 2] / 255.
@@ -18,7 +18,7 @@ hx0, hy0, hx1, hy1 = 0, 0, 0, 0
 hand = np.zeros((h, w), bool); hand[hy0:hy1, hx0:hx1] = (S[hy0:hy1, hx0:hx1] < .22)
 hand = ndimage.binary_fill_holes(cv2.morphologyEx(hand.astype(np.uint8), cv2.MORPH_CLOSE, np.ones((7, 7), np.uint8)).astype(bool))
 filled = ndimage.binary_fill_holes(navy | hand)
-filled[:5, :] = False; filled[:92, 490:] = False; filled[:104, 790:] = False  # 飛行機・右うえの かけら・三角の 星は 字では ない
+filled[:5, :] = False; filled[:40, :300] = False; filled[:92, 490:] = False; filled[:104, 790:] = False  # 飛行機・右うえの かけら・三角の 星は 字では ない
 lab, n = ndimage.label(filled); sizes = ndimage.sum(filled, lab, range(1, n + 1))
 keep = lab == (int(np.argmax(sizes)) + 1)  # いちばん 大きい かたまり = 題名(空の 星などの 小さな かけらは すてる)
 keep = cv2.dilate(keep.astype(np.uint8), np.ones((5, 5), np.uint8)).astype(bool)

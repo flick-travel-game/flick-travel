@@ -1,0 +1,1262 @@
+[
+ {
+  "id": "km-aed",
+  "name": "AED",
+  "reading": "えーいーでぃー",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-josaido",
+   "km-pad",
+   "km-onsei"
+  ],
+  "description": "心臓の リズムを 調べて、必要な ときに 電気ショックを 送る 機械です。救急隊が 着く 前に まわりの 人が 使えば、命が つながる 見こみが 高まります。救急隊は 着くと 自分たちの 機械に つなぎかえます。"
+ },
+ {
+  "id": "km-shinpaisosei",
+  "name": "心肺蘇生",
+  "reading": "しんぱいそせい",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "❤️",
+  "mapNode": "rensa:cpr",
+  "relatedTerms": [
+   "km-kyokotsu",
+   "km-jinko",
+   "km-cpr"
+  ],
+  "description": "心臓と 呼吸が 止まった 人に、胸骨圧迫や 人工呼吸を して 命を つなぐ 手当ての ことです。救急隊が 着くまで まわりの 人が つづける ことが 大切です。やりかたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-kyokotsu",
+  "name": "胸骨圧迫",
+  "reading": "きょうこつあっぱく",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🫀",
+  "mapNode": "rensa:cpr",
+  "relatedTerms": [
+   "km-shinpaisosei",
+   "km-massage",
+   "km-shitsu"
+  ],
+  "description": "心臓が 止まった 人の 胸の まん中を 押して、からだに 血を めぐらせる ための 手当てです。救急隊も 現場で まず これを 続けます。やりかたは 消防署の 救命講習で 習います。"
+ },
+ {
+  "id": "km-jinko",
+  "name": "人工呼吸",
+  "reading": "じんこうこきゅう",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "rensa:kokyu",
+  "relatedTerms": [
+   "km-shinpaisosei",
+   "km-bogogu",
+   "km-mouth"
+  ],
+  "description": "自分で 息を して いない 人の 肺に、外から 空気を 送りこむ 手当てです。救急隊は 専用の 道具を 使って 行います。やりかたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-shinpaiteishi",
+  "name": "心肺停止",
+  "reading": "しんぱいていし",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 1,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "rensa:kizuku",
+  "relatedTerms": [
+   "km-shinpaisosei",
+   "km-aed",
+   "km-shinteishi"
+  ],
+  "description": "心臓と 呼吸が 止まった 状態です。すぐに 胸骨圧迫と AED で 命を つなぎ、救急隊が 病院へ 運びます。"
+ },
+ {
+  "id": "km-rensa",
+  "name": "救命の連鎖",
+  "reading": "きゅうめいのれんさ",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "rensa:tsunagu",
+  "relatedTerms": [
+   "km-shinteishiyobo",
+   "km-sokitsuho",
+   "km-als"
+  ],
+  "description": "急に 倒れた 人の 命を 救う ための 流れを、くさりの 輪に たとえた ことばです。ふせぐ・気づいて 知らせる・心肺蘇生と AED・救急隊と 病院の 手当て が 1本に つながります。"
+ },
+ {
+  "id": "km-oukyu",
+  "name": "応急手当",
+  "reading": "おうきゅうてあて",
+  "journey": "kyumei",
+  "category": "応急手当",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "rensa:oukyu",
+  "relatedTerms": [
+   "km-firstaid",
+   "km-shiketsu",
+   "km-kyukyubako"
+  ],
+  "description": "けがや 急な 病気の 人に、救急隊や 医師に 引きつぐ までの あいだ、その 場で 行う 手当ての ことです。命を 守る 手当ても、けがの 手当ても ふくまれます。"
+ },
+ {
+  "id": "km-kyumeikoshu",
+  "name": "救命講習",
+  "reading": "きゅうめいこうしゅう",
+  "journey": "kyumei",
+  "category": "救命講習と人",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "rensa:oukyu",
+  "relatedTerms": [
+   "km-futsukoshu",
+   "km-joukyukoshu",
+   "km-fukyuin"
+  ],
+  "description": "心肺蘇生や AED の 使いかた、止血などを 練習する 講習です。多くの 消防署で 開かれて いて、小学生から 参加できる ものも あります。"
+ },
+ {
+  "id": "km-shiketsu",
+  "name": "止血",
+  "reading": "しけつ",
+  "journey": "kyumei",
+  "category": "応急手当",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "rensa:shiketsu",
+  "relatedTerms": [
+   "km-appakushiketsu",
+   "km-kansenbogo",
+   "km-oukyu"
+  ],
+  "description": "けがで 出て いる 血を 止める ための 手当てです。救急隊は 出血の ようすを 見て 手当てを し、病院へ つなぎます。やりかたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-kaifuku",
+  "name": "回復体位",
+  "reading": "かいふくたいい",
+  "journey": "kyumei",
+  "category": "応急手当",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🛌",
+  "mapNode": "rensa:kaifuku",
+  "relatedTerms": [
+   "km-kido",
+   "km-zekkon",
+   "km-oukyu"
+  ],
+  "description": "意識は ないが 呼吸は ある 人を、横向きに して 空気の 通り道を 保つ ための 姿勢です。くわしい させかたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-kido",
+  "name": "気道確保",
+  "reading": "きどうかくほ",
+  "journey": "kyumei",
+  "category": "気道と窒息",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "rensa:kido",
+  "relatedTerms": [
+   "km-kagaku",
+   "km-zekkon",
+   "km-jinko"
+  ],
+  "description": "鼻や 口から 肺までの 空気の 通り道を ひらいて、息が 通るように する 手当てです。救急隊は 道具も 使って 行います。やりかたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-chissoku",
+  "name": "窒息",
+  "reading": "ちっそく",
+  "journey": "kyumei",
+  "category": "気道と窒息",
+  "difficulty": 1,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "😶",
+  "mapNode": "rensa:kido",
+  "relatedTerms": [
+   "km-ibutsu",
+   "km-chokesign",
+   "km-jokidoheisoku"
+  ],
+  "description": "食べものなどが のどに つまって、空気の 通り道が ふさがれた 状態です。まわりの 人の 手当てと 救急隊の 道具で、つまった ものを 取りのぞきます。"
+ },
+ {
+  "id": "km-bystander",
+  "name": "バイスタンダー",
+  "reading": "ばいすたんだー",
+  "journey": "kyumei",
+  "category": "救命講習と人",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "rensa:bystander",
+  "relatedTerms": [
+   "km-bystandercpr",
+   "km-kyoryokusha",
+   "km-shimin"
+  ],
+  "description": "倒れた 人の そばに 居あわせた 人の ことです。救急隊が 着く までの あいだに 119番や 心肺蘇生、AED を して くれる 大切な 救命の にない手です。"
+ },
+ {
+  "id": "km-massage",
+  "name": "心臓マッサージ",
+  "reading": "しんぞうまっさーじ",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🫶",
+  "mapNode": "rensa:cpr",
+  "relatedTerms": [
+   "km-kyokotsu",
+   "km-shinpaisosei",
+   "km-kyumeikoshu"
+  ],
+  "description": "胸骨圧迫の 前からの 呼び名です。いまは 救急の 現場や 講習で「胸骨圧迫」と 呼ぶ ことが ふえて います。"
+ },
+ {
+  "id": "km-hanno",
+  "name": "反応の確認",
+  "reading": "はんのうのかくにん",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👋",
+  "mapNode": "rensa:kizuku",
+  "relatedTerms": [
+   "km-kokyukakunin",
+   "km-anzen",
+   "km-shinpaiteishi"
+  ],
+  "description": "倒れて いる 人に 声を かけ、目を あけるか・返事を するかを 確かめる ことです。救命の 手当てを はじめる 前の 大事な ひと区切りです。くわしくは 救命講習で 習います。"
+ },
+ {
+  "id": "km-kokyukakunin",
+  "name": "呼吸の確認",
+  "reading": "こきゅうのかくにん",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "rensa:kizuku",
+  "relatedTerms": [
+   "km-hanno",
+   "km-fudandori",
+   "km-shinpaisosei"
+  ],
+  "description": "倒れて いる 人が ふだんどおりの 息を して いるかを 見る ことです。心肺蘇生を はじめるかを 決める めやすに なります。見かたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-anzen",
+  "name": "周囲の安全確認",
+  "reading": "しゅういのあんぜんかくにん",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "rensa:kizuku",
+  "relatedTerms": [
+   "km-hanno",
+   "km-bystander",
+   "km-kansenbogo"
+  ],
+  "description": "手当てを はじめる 前に、車や 火など まわりに 危ない ものが ないか 確かめる ことです。助ける 人が 安全で いる ことも、救命の 大切な 決まりです。"
+ },
+ {
+  "id": "km-tasuke",
+  "name": "助けを呼ぶ",
+  "reading": "たすけをよぶ",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "rensa:bystander",
+  "relatedTerms": [
+   "km-kyoryokusha",
+   "km-sokitsuho",
+   "km-aedbasho"
+  ],
+  "description": "倒れた 人を 見つけた とき、大きな 声で まわりの 人を 集める ことです。119番の 通報や AED を とって くる ことを 手分けして 頼めます。"
+ },
+ {
+  "id": "km-aedbasho",
+  "name": "AEDの設置場所",
+  "reading": "えーいーでぃーのせっちばしょ",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-aed",
+   "km-shimin",
+   "km-tasuke"
+  ],
+  "description": "AED が 置いて ある 場所の ことです。駅・学校・お店などに あり、目じるしの マークが ついて います。ふだんから 知って いると、いざと いう ときに 早く とって こられます。"
+ },
+ {
+  "id": "km-kyukyubako",
+  "name": "救急箱",
+  "reading": "きゅうきゅうばこ",
+  "journey": "kyumei",
+  "category": "応急手当",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "rensa:oukyu",
+  "relatedTerms": [
+   "km-oukyu",
+   "km-firstaid",
+   "km-shiketsu"
+  ],
+  "description": "ばんそうこうや ガーゼ、包帯など、応急手当に 使う ものを まとめて 入れて おく 箱です。家庭や 学校、職場に 置かれて います。"
+ },
+ {
+  "id": "km-bls",
+  "name": "一次救命処置",
+  "reading": "いちじきゅうめいしょち",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🆘",
+  "mapNode": "rensa:cpr",
+  "relatedTerms": [
+   "km-shinpaisosei",
+   "km-aed",
+   "km-als"
+  ],
+  "description": "特別な 薬や 器具を 使わずに 行う 救命の 手当てです。心肺蘇生と AED、のどに つまった ものを 取りのぞく 手当て などが ふくまれます。英語で BLS と 呼びます。"
+ },
+ {
+  "id": "km-kyumeishochi",
+  "name": "救命処置",
+  "reading": "きゅうめいしょち",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "rensa:tsunagu",
+  "relatedTerms": [
+   "km-bls",
+   "km-als",
+   "km-oukyu"
+  ],
+  "description": "命に かかわる 状態の 人を 救う ための 手当ての ことです。まわりの 人が 行う ものから、救急隊・医師が 行う ものまで あります。"
+ },
+ {
+  "id": "km-josaido",
+  "name": "除細動",
+  "reading": "じょさいどう",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-aed",
+   "km-shinshitsusaido",
+   "km-denkishock"
+  ],
+  "description": "心臓の 中の 乱れた 電気の 動きを、電気ショックで いったん 止めて 整える ことです。AED や 救急隊の 除細動器が これを 行います。"
+ },
+ {
+  "id": "km-shinshitsusaido",
+  "name": "心室細動",
+  "reading": "しんしつさいどう",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 2,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-josaido",
+   "km-shocktekio",
+   "km-pvt"
+  ],
+  "description": "心臓の 部屋が こまかく ふるえて、血を 送り出せない 状態です。電気ショックが 必要な 心臓の リズムの ひとつで、AED が 見つけて 知らせます。"
+ },
+ {
+  "id": "km-kotoshido",
+  "name": "口頭指導",
+  "reading": "こうとうしどう",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📞",
+  "mapNode": "rensa:tsuho",
+  "relatedTerms": [
+   "km-sokitsuho",
+   "km-bystander",
+   "km-shinpaisosei"
+  ],
+  "description": "119番を 受けた 指令員が、電話で 通報した 人に 手当ての しかたを 伝える ことです。救急隊が 着く までの 手当てを 支えます。"
+ },
+ {
+  "id": "km-cpr",
+  "name": "CPR",
+  "reading": "しーぴーあーる",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "❤️",
+  "mapNode": "rensa:cpr",
+  "relatedTerms": [
+   "km-shinpaisosei",
+   "km-handsonly",
+   "km-bystandercpr"
+  ],
+  "description": "心肺蘇生を 英語で 言った ときの 頭文字です。救急の 現場や 講習、記録で よく 使われます。"
+ },
+ {
+  "id": "km-firstaid",
+  "name": "ファーストエイド",
+  "reading": "ふぁーすとえいど",
+  "journey": "kyumei",
+  "category": "応急手当",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "rensa:oukyu",
+  "relatedTerms": [
+   "km-oukyu",
+   "km-kyukyubako",
+   "km-hoon"
+  ],
+  "description": "けがや 急な 病気の とき、救命の 手当て 以外に その 場で 行う 手当ての ことです。けがの 手当てや、からだを 冷やさない ことなどが ふくまれます。"
+ },
+ {
+  "id": "km-appakushiketsu",
+  "name": "圧迫止血",
+  "reading": "あっぱくしけつ",
+  "journey": "kyumei",
+  "category": "応急手当",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "rensa:shiketsu",
+  "relatedTerms": [
+   "km-shiketsu",
+   "km-kansenbogo",
+   "km-firstaid"
+  ],
+  "description": "血が 出て いる ところを ガーゼなどで おさえて 血を 止める 手当ての 名前です。いちばん 基本の 止血の 方法で、やりかたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-ibutsu",
+  "name": "異物除去",
+  "reading": "いぶつじょきょ",
+  "journey": "kyumei",
+  "category": "気道と窒息",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🍡",
+  "mapNode": "rensa:kido",
+  "relatedTerms": [
+   "km-chissoku",
+   "km-haibu",
+   "km-fukubu"
+  ],
+  "description": "のどに つまった 食べものなどを 取りのぞく 手当ての ことです。救急隊は 吸引器などの 道具も 使います。くわしくは 救命講習で 習います。"
+ },
+ {
+  "id": "km-chokesign",
+  "name": "チョークサイン",
+  "reading": "ちょーくさいん",
+  "journey": "kyumei",
+  "category": "気道と窒息",
+  "difficulty": 2,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "🤚",
+  "mapNode": "rensa:kido",
+  "relatedTerms": [
+   "km-chissoku",
+   "km-ibutsu",
+   "km-kido"
+  ],
+  "description": "のどに ものが つまった 人が、両手で 自分の のどを つかむ しぐさの ことです。声を 出せない 人が 窒息を 知らせる しるしとして 知られて います。"
+ },
+ {
+  "id": "km-handsonly",
+  "name": "ハンズオンリーCPR",
+  "reading": "はんずおんりーしーぴーあーる",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "rensa:cpr",
+  "relatedTerms": [
+   "km-kyokotsu",
+   "km-cpr",
+   "km-bystander"
+  ],
+  "description": "人工呼吸を せずに、胸骨圧迫だけを 続ける 心肺蘇生の ことです。人工呼吸に ためらう 人でも 救命に 参加できる 考えかたです。"
+ },
+ {
+  "id": "km-futsukoshu",
+  "name": "普通救命講習",
+  "reading": "ふつうきゅうめいこうしゅう",
+  "journey": "kyumei",
+  "category": "救命講習と人",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "rensa:oukyu",
+  "relatedTerms": [
+   "km-kyumeikoshu",
+   "km-joukyukoshu",
+   "km-fukyuin"
+  ],
+  "description": "消防署などで 開かれる、心肺蘇生と AED、止血などを 学ぶ 基本の 救命講習です。終えると 修了証が 受けとれます。"
+ },
+ {
+  "id": "km-kansenbogo",
+  "name": "感染防護",
+  "reading": "かんせんぼうご",
+  "journey": "kyumei",
+  "category": "応急手当",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "rensa:bystander",
+  "relatedTerms": [
+   "km-shiketsu",
+   "km-bogogu",
+   "km-anzen"
+  ],
+  "description": "手当ての ときに、手袋や マスクなどで 病気が うつるのを ふせぐ ことです。助ける 人も 助けられる 人も 守る ための 備えです。"
+ },
+ {
+  "id": "km-kyumeiritsu",
+  "name": "救命率",
+  "reading": "きゅうめいりつ",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "rensa:tsunagu",
+  "relatedTerms": [
+   "km-rensa",
+   "km-bystandercpr",
+   "km-mokugeki"
+  ],
+  "description": "急に 倒れた 人の うち、命を とりとめた 人の 割合の ことです。まわりの 人の 心肺蘇生や AED が 早いほど 高まると 考えられて います。"
+ },
+ {
+  "id": "km-shinteishi",
+  "name": "心停止",
+  "reading": "しんていし",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 2,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "💔",
+  "mapNode": "rensa:kizuku",
+  "relatedTerms": [
+   "km-shinpaiteishi",
+   "km-shingensei",
+   "km-hishingensei"
+  ],
+  "description": "心臓が 血を 送り出せなく なった 状態です。すぐに 胸骨圧迫と AED で 命を つなぎ、救急隊と 病院が 手当てを 続けます。"
+ },
+ {
+  "id": "km-shinteishiyobo",
+  "name": "心停止の予防",
+  "reading": "しんていしのよぼう",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "rensa:yobo",
+  "relatedTerms": [
+   "km-rensa",
+   "km-shinteishi",
+   "km-sokitsuho"
+  ],
+  "description": "救命の連鎖の 最初の 輪です。心臓が 止まる 前に、からだの 異変に 気づいて 早く 手当てに つなげる 考えかたを いいます。"
+ },
+ {
+  "id": "km-sokitsuho",
+  "name": "早期通報",
+  "reading": "そうきつうほう",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "☎️",
+  "mapNode": "rensa:tsuho",
+  "relatedTerms": [
+   "km-rensa",
+   "km-kotoshido",
+   "km-tasuke"
+  ],
+  "description": "倒れた 人に 気づいたら、すぐに 119番に 知らせる ことです。救命の連鎖の ひとつで、救急隊が 早く 動き出せます。"
+ },
+ {
+  "id": "km-fudandori",
+  "name": "ふだんどおりの呼吸",
+  "reading": "ふだんどおりのこきゅう",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "😮‍💨",
+  "mapNode": "rensa:kizuku",
+  "relatedTerms": [
+   "km-kokyukakunin",
+   "km-hanno",
+   "km-shinpaisosei"
+  ],
+  "description": "呼吸の 確認で 見る めやすの ことばです。ふだんどおりの 呼吸が あるか どうかが、心肺蘇生を はじめるかの 大事な めやすに なります。見かたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-kyoryokusha",
+  "name": "協力者",
+  "reading": "きょうりょくしゃ",
+  "journey": "kyumei",
+  "category": "救命講習と人",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "rensa:bystander",
+  "relatedTerms": [
+   "km-tasuke",
+   "km-bystander",
+   "km-aedbasho"
+  ],
+  "description": "救命の 手当てを いっしょに して くれる 人です。119番を かける 人、AED を とって くる 人、胸骨圧迫を 交代する 人など、役わりを 分けて 助けます。"
+ },
+ {
+  "id": "km-hoon",
+  "name": "保温",
+  "reading": "ほおん",
+  "journey": "kyumei",
+  "category": "応急手当",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🧣",
+  "mapNode": "rensa:oukyu",
+  "relatedTerms": [
+   "km-firstaid",
+   "km-kaifuku",
+   "km-oukyu"
+  ],
+  "description": "けがや 病気の 人の からだが 冷えないように、毛布などで つつむ 手当ての ことです。救急隊も 運ぶ あいだ からだを 冷やさない ように 気を くばります。"
+ },
+ {
+  "id": "km-pad",
+  "name": "電極パッド",
+  "reading": "でんきょくぱっど",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🟧",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-aed",
+   "km-kaiseki",
+   "km-shoniyopad"
+  ],
+  "description": "AED に ついて いる、からだに 貼る シールの ような 部品です。心臓の 電気の 動きを 調べたり、電気ショックを 送ったり します。貼りかたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-denkishock",
+  "name": "電気ショック",
+  "reading": "でんきしょっく",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-josaido",
+   "km-shocktekio",
+   "km-aed"
+  ],
+  "description": "心臓に 電気を 流して、乱れた リズムを 整える ことです。AED は 必要な ときだけ 電気ショックを 行うように つくられて います。"
+ },
+ {
+  "id": "km-onsei",
+  "name": "音声ガイド",
+  "reading": "おんせいがいど",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔊",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-aed",
+   "km-pad",
+   "km-kaiseki"
+  ],
+  "description": "AED が 声で 使いかたを 順番に 教えて くれる しくみです。はじめて さわる 人でも、声に したがって 使えるように なって います。"
+ },
+ {
+  "id": "km-tochaku",
+  "name": "救急隊の到着",
+  "reading": "きゅうきゅうたいのとうちゃく",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "rensa:tsunagu",
+  "relatedTerms": [
+   "km-rensa",
+   "km-als",
+   "km-bystander"
+  ],
+  "description": "救急隊が 現場に 着く ことです。それまで 手当てを して いた 人から ようすを 聞き、救急隊の 手当てに 引きつぎます。"
+ },
+ {
+  "id": "km-nyuji",
+  "name": "乳児の心肺蘇生",
+  "reading": "にゅうじのしんぱいそせい",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 2,
+  "field": "特殊病態別臨床医学",
+  "type": "concept",
+  "emoji": "👶",
+  "mapNode": "rensa:cpr",
+  "relatedTerms": [
+   "km-shinpaisosei",
+   "km-shoniyopad",
+   "km-kyumeikoshu"
+  ],
+  "description": "赤ちゃんに 行う 心肺蘇生の ことです。からだが 小さいので、大人とは 手当ての しかたが ちがいます。やりかたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-als",
+  "name": "二次救命処置",
+  "reading": "にじきゅうめいしょち",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "rensa:tsunagu",
+  "relatedTerms": [
+   "km-bls",
+   "km-saikai",
+   "km-rensa"
+  ],
+  "description": "救急救命士や 医師が、器具や 薬を 使って 行う 救命の 手当てです。英語で ALS と 呼び、一次救命処置に 続いて 行われます。"
+ },
+ {
+  "id": "km-joukyukoshu",
+  "name": "上級救命講習",
+  "reading": "じょうきゅうきゅうめいこうしゅう",
+  "journey": "kyumei",
+  "category": "救命講習と人",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📗",
+  "mapNode": "rensa:oukyu",
+  "relatedTerms": [
+   "km-futsukoshu",
+   "km-kyumeikoshu",
+   "km-fukyuin"
+  ],
+  "description": "普通救命講習の 内容に、子どもや 赤ちゃんの 心肺蘇生、けがの 手当て などを 加えた 長めの 救命講習です。消防署などで 開かれて います。"
+ },
+ {
+  "id": "km-pea",
+  "name": "無脈性電気活動",
+  "reading": "むみゃくせいでんきかつどう",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-shinseishi",
+   "km-shocktekio",
+   "km-als"
+  ],
+  "description": "心電図には 電気の 動きが 見えるのに、脈が ふれない 状態です。電気ショックの 対象では ない 心停止の ひとつで、英語で PEA と 呼びます。"
+ },
+ {
+  "id": "km-shinseishi",
+  "name": "心静止",
+  "reading": "しんせいし",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-pea",
+   "km-shocktekio",
+   "km-shinteishi"
+  ],
+  "description": "心臓の 電気の 動きが ほとんど 見られない 状態です。電気ショックの 対象では ない 心停止の ひとつです。"
+ },
+ {
+  "id": "km-pvt",
+  "name": "無脈性心室頻拍",
+  "reading": "むみゃくせいしんしつひんぱく",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-shinshitsusaido",
+   "km-shocktekio",
+   "km-josaido"
+  ],
+  "description": "心臓の 部屋が とても 速く 動いて、脈が ふれない 状態です。心室細動と ならんで、電気ショックの 対象に なる 心臓の リズムです。"
+ },
+ {
+  "id": "km-shocktekio",
+  "name": "ショック適応",
+  "reading": "しょっくてきおう",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-kaiseki",
+   "km-shinshitsusaido",
+   "km-pea"
+  ],
+  "description": "心臓の リズムが、電気ショックを 行う 対象で ある ことを いいます。AED は 心電図を 調べて 判断し、声で 知らせます。"
+ },
+ {
+  "id": "km-saikai",
+  "name": "心拍再開",
+  "reading": "しんぱくさいかい",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "💓",
+  "mapNode": "rensa:tsunagu",
+  "relatedTerms": [
+   "km-als",
+   "km-shinpaiteishi",
+   "km-rensa"
+  ],
+  "description": "止まって いた 心臓が、ふたたび 自分で 動き出す ことです。英語の 頭文字で ROSC と 呼び、病院での 手当てに つなげます。"
+ },
+ {
+  "id": "km-guideline",
+  "name": "蘇生ガイドライン",
+  "reading": "そせいがいどらいん",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "rensa:cpr",
+  "relatedTerms": [
+   "km-shinpaisosei",
+   "km-shitsu",
+   "km-utstein"
+  ],
+  "description": "心肺蘇生の やりかたの もとに なる 決まりごとです。世界の 研究を もとに 見なおされ、救命講習の 内容も これに あわせて 変わります。"
+ },
+ {
+  "id": "km-kagaku",
+  "name": "下顎挙上法",
+  "reading": "かがくきょじょうほう",
+  "journey": "kyumei",
+  "category": "気道と窒息",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🙆",
+  "mapNode": "rensa:kido",
+  "relatedTerms": [
+   "km-kido",
+   "km-zekkon",
+   "km-jokidoheisoku"
+  ],
+  "description": "首を なるべく 動かさずに、空気の 通り道を ひらく 気道確保の 方法の 名前です。首を けがして いる かも しれない 人に 使われます。くわしくは 講習で 習います。"
+ },
+ {
+  "id": "km-haibu",
+  "name": "背部叩打法",
+  "reading": "はいぶこうだほう",
+  "journey": "kyumei",
+  "category": "気道と窒息",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "rensa:kido",
+  "relatedTerms": [
+   "km-fukubu",
+   "km-ibutsu",
+   "km-chissoku"
+  ],
+  "description": "のどに つまった ものを 出す ために、背中を たたく 手当ての 名前です。やりかたは 救命講習で 習います。"
+ },
+ {
+  "id": "km-fukubu",
+  "name": "腹部突き上げ法",
+  "reading": "ふくぶつきあげほう",
+  "journey": "kyumei",
+  "category": "気道と窒息",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "rensa:kido",
+  "relatedTerms": [
+   "km-haibu",
+   "km-ibutsu",
+   "km-chissoku"
+  ],
+  "description": "のどに つまった ものを 出す ための、おなかを 使う 手当ての 名前です。相手に よって 使えない ことも あり、くわしくは 救命講習で 習います。"
+ },
+ {
+  "id": "km-shimin",
+  "name": "市民による除細動",
+  "reading": "しみんによるじょさいどう",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "rensa:bystander",
+  "relatedTerms": [
+   "km-aed",
+   "km-aedbasho",
+   "km-bystander"
+  ],
+  "description": "医療の 資格が ない 人が AED を 使う ことです。日本では 国が これを 認めた ことで、駅や 学校に AED が 広まりました。"
+ },
+ {
+  "id": "km-fukyuin",
+  "name": "応急手当普及員",
+  "reading": "おうきゅうてあてふきゅういん",
+  "journey": "kyumei",
+  "category": "救命講習と人",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👩‍🏫",
+  "mapNode": "rensa:oukyu",
+  "relatedTerms": [
+   "km-futsukoshu",
+   "km-joukyukoshu",
+   "km-kyumeikoshu"
+  ],
+  "description": "消防の 講習を 受けて、職場や 地域で 普通救命講習を 教えられる ように なった 人です。救命の 手当てを 広める 役わりを にないます。"
+ },
+ {
+  "id": "km-shitsu",
+  "name": "質の高い胸骨圧迫",
+  "reading": "しつのたかいきょうこつあっぱく",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rensa:cpr",
+  "relatedTerms": [
+   "km-kyokotsu",
+   "km-guideline",
+   "km-handsonly"
+  ],
+  "description": "強さ・速さ・中断の 少なさ などが、決まりに そって 行われた 胸骨圧迫の ことです。救急隊も これを 保てるよう 訓練を 重ねます。"
+ },
+ {
+  "id": "km-bogogu",
+  "name": "感染防護具",
+  "reading": "かんせんぼうごぐ",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "😷",
+  "mapNode": "rensa:kokyu",
+  "relatedTerms": [
+   "km-jinko",
+   "km-kansenbogo",
+   "km-mouth"
+  ],
+  "description": "人工呼吸の ときに 相手の 口に かぶせて 使う、うすい シートや マスクの 形の 道具です。フェイスシールドとも よばれ、病気が うつるのを ふせぎます。"
+ },
+ {
+  "id": "km-shingensei",
+  "name": "心原性心停止",
+  "reading": "しんげんせいしんていし",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "🫀",
+  "mapNode": "rensa:kizuku",
+  "relatedTerms": [
+   "km-shinteishi",
+   "km-hishingensei",
+   "km-shinshitsusaido"
+  ],
+  "description": "心臓の 病気が もとで 起きる 心停止の ことです。救命の 記録や 研究で、原因を 分ける ときに 使われます。"
+ },
+ {
+  "id": "km-hishingensei",
+  "name": "非心原性心停止",
+  "reading": "ひしんげんせいしんていし",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "rensa:kizuku",
+  "relatedTerms": [
+   "km-shingensei",
+   "km-chissoku",
+   "km-shinteishi"
+  ],
+  "description": "窒息など、心臓 以外の ことが もとで 起きる 心停止の ことです。救急隊は 原因も 考えながら 手当てを して 病院へ つなぎます。"
+ },
+ {
+  "id": "km-bystandercpr",
+  "name": "バイスタンダーCPR",
+  "reading": "ばいすたんだーしーぴーあーる",
+  "journey": "kyumei",
+  "category": "救命講習と人",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "rensa:bystander",
+  "relatedTerms": [
+   "km-bystander",
+   "km-cpr",
+   "km-kyumeiritsu"
+  ],
+  "description": "居あわせた 人が 救急隊の 到着 前に 行う 心肺蘇生の ことです。どれだけ 行われたかは、地域の 救命の 力を 見る ものさしの ひとつに なります。"
+ },
+ {
+  "id": "km-mokugeki",
+  "name": "目撃のある心停止",
+  "reading": "もくげきのあるしんていし",
+  "journey": "kyumei",
+  "category": "心臓が止まる状態",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "rensa:kizuku",
+  "relatedTerms": [
+   "km-kyumeiritsu",
+   "km-bystandercpr",
+   "km-utstein"
+  ],
+  "description": "心臓が 止まった ところを、まわりの 人が 見て いた 場合の ことです。救命の 記録では、目撃が あったか どうかを 分けて まとめます。"
+ },
+ {
+  "id": "km-utstein",
+  "name": "ウツタイン様式",
+  "reading": "うつたいんようしき",
+  "journey": "kyumei",
+  "category": "救命の連鎖",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "rensa:tsunagu",
+  "relatedTerms": [
+   "km-mokugeki",
+   "km-kyumeiritsu",
+   "km-guideline"
+  ],
+  "description": "心停止の 人の 記録を、世界で 同じ 形で まとめる ための 決まりです。日本の 救急隊も この 形で 記録し、救命の 研究に 役立てて います。"
+ },
+ {
+  "id": "km-shoniyopad",
+  "name": "小児用パッド",
+  "reading": "しょうにようぱっど",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 3,
+  "field": "特殊病態別臨床医学",
+  "type": "concept",
+  "emoji": "🧒",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-pad",
+   "km-nyuji",
+   "km-aed"
+  ],
+  "description": "子どもに AED を 使う ときの パッドです。電気ショックの 強さを 子ども向けに おさえる しくみで、機械に よっては 切りかえ スイッチの 形で、いまは「未就学児用」と 書かれる ことも あります。"
+ },
+ {
+  "id": "km-kaiseki",
+  "name": "心電図の解析",
+  "reading": "しんでんずのかいせき",
+  "journey": "kyumei",
+  "category": "AEDと除細動",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "rensa:aed",
+  "relatedTerms": [
+   "km-shocktekio",
+   "km-pad",
+   "km-onsei"
+  ],
+  "description": "AED が パッドから 心臓の 電気の 動きを 調べる ことです。電気ショックが 必要か どうかを 機械が 判断します。"
+ },
+ {
+  "id": "km-mouth",
+  "name": "口対口人工呼吸",
+  "reading": "くちたいくちじんこうこきゅう",
+  "journey": "kyumei",
+  "category": "心肺蘇生",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👄",
+  "mapNode": "rensa:kokyu",
+  "relatedTerms": [
+   "km-jinko",
+   "km-bogogu",
+   "km-handsonly"
+  ],
+  "description": "助ける 人の 口から、相手の 口へ 直接 息を 吹きこむ 人工呼吸の 名前です。いまは 感染防護の 道具を 使う ことが すすめられて います。"
+ },
+ {
+  "id": "km-jokidoheisoku",
+  "name": "上気道閉塞",
+  "reading": "じょうきどうへいそく",
+  "journey": "kyumei",
+  "category": "気道と窒息",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "rensa:kido",
+  "relatedTerms": [
+   "km-chissoku",
+   "km-zekkon",
+   "km-kagaku"
+  ],
+  "description": "鼻や 口、のどなど、空気の 通り道の 上の 部分が ふさがった 状態です。救急隊は 気道確保や 異物除去で 空気の 通り道を ひらきます。"
+ },
+ {
+  "id": "km-zekkon",
+  "name": "舌根沈下",
+  "reading": "ぜっこんちんか",
+  "journey": "kyumei",
+  "category": "気道と窒息",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "👅",
+  "mapNode": "rensa:kido",
+  "relatedTerms": [
+   "km-kido",
+   "km-kagaku",
+   "km-kaifuku"
+  ],
+  "description": "意識が ない ときに、舌の 付け根が のどの 奥に 落ちこんで 空気の 通り道を ふさぐ 状態です。気道確保で 通り道を ひらきます。"
+ }
+]

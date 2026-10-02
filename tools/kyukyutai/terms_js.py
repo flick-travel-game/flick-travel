@@ -1,0 +1,135 @@
+#!/usr/bin/env python3
+"""tools/kyukyutai/meta.json + tools/kyukyutai/terms-<旅>.json → data/kyukyutai.json(1か所に まとめた もの)と kyukyutai/terms.js(ゲームが 読む 形。説明に ふりがな)
+tools/build_games.py が kyukyutai/ を 作るときに 呼ぶ。data/kyukyutai.json と kyukyutai/terms.js は 手で 直さない(ことばは terms-<旅>.json を 直す)
+    python3 tools/kyukyutai/terms_js.py          # 形を 確かめてから 作る(まちがいが あれば 止まる)
+    python3 tools/kyukyutai/terms_js.py --check  # 確かめるだけ
+決まりは tools/kyukyutai/PROMPT.md。もとは tools/shobo/terms_js.py(消防士を 写した)"""
+import json, re, sys
+from pathlib import Path
+HERE = Path(__file__).resolve().parent; ROOT = HERE.parent.parent
+sys.path.insert(0, str(ROOT / "tools/kabu"))
+REQ = ("id", "name", "reading", "journey", "category", "difficulty", "field", "type", "emoji", "mapNode", "description")
+KANA = re.compile(r"[ぁ-ゖー]+")
+# 試験の 科目(救急救命士国家試験の 5科目。厚生労働省「第50回救急救命士国家試験の施行」で 2026年10月2日に 確かめた。tools/kyukyutai/PROMPT.md)
+SUBJECTS = ("基礎医学", "臨床救急医学総論", "臓器器官別臨床医学", "病態別臨床医学", "特殊病態別臨床医学")
+# ✅ 消防士・医師・看護師 など ほかの ゲームと 同じ ことばは 入れて よい(けいくん決定 2026-09-30「復習になるから 同じ語入れていいよ」)。
+#    読みが かぶらないのは 救急隊員の 7つの 旅の 中だけ
+# ⚠️ 名前・説明に 出さない ことば。見つけたら 止める(tools/kyukyutai/PROMPT.md の 1・2)
+#   ① ⚠️⚠️ 小学生も あそぶので こわがらせる ことば ② 手当ての 手順(回数・深さ)・薬の 量 ③ 言いきり・シリーズで 使わない 字
+BAN = ["死亡", "死ぬ", "死者", "死に至", "亡くなっ", "命を落と", "遺体", "死体", "焼死", "むごい", "血まみれ", "大量に 出血", "地獄", "悲惨", "犠牲",
+       "殺", "自殺", "放火", "爆弾", "テロ", "虐待", "脳死",
+       "回 押す", "回押す", "回 押し", "回押し", "深さは", "1分間に", "分間に", "秒以内", "秒 以内",
+       "mg", "mL", "ミリグラム", "ミリリットル", "ml",
+       "絶対に", "かならず 治", "100マス", "百ます"]
+BAN_RE = [re.compile(r"\d+ ?(センチ|cm|㎝)"), re.compile(r"\d+ ?(回|回/分)(以上|くらい|ほど|の 速さ|の はやさ)"), re.compile(r"\d+ ?(mmHg|%|％)")]
+MAXR = 20  # 読みの 長さ(これより 長いと 子どもが 飽きる。PROMPT.md)
+
+
+def load():
+    d = {"meta": json.loads((HERE / "meta.json").read_text(encoding="utf-8")), "terms": []}
+    for J in d["meta"]["journeys"]:
+        f = HERE / f"terms-{J['id']}.json"
+        if f.exists(): d["terms"] += json.loads(f.read_text(encoding="utf-8"))
+    return d
+
+
+def check(d):
+    m = d["meta"]; errs = []; warn = []
+    js = {j["id"]: j for j in m["journeys"]}
+    nodes = {f"{k}:{n['id']}" for k, g in m["diagrams"].items() for n in g["nodes"]}
+    dvs = {L["difficulty"] for L in m["levels"]}
+    ids = {}; readings = {}; per = {}
+    for t in d["terms"]:
+        tid = t.get("id")
+        for k in REQ:
+            if t.get(k) in (None, ""): errs.append(f"{tid}: {k} が 空")
+        if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", str(tid)): errs.append(f"{tid}: id は 英小文字・数字・- だけ")
+        if tid in ids: errs.append(f"{tid}: id が かぶる")
+        ids[tid] = t
+        for r in [t.get("reading", "")] + list(t.get("acceptedReadings") or []):
+            if not KANA.fullmatch(r or ""): errs.append(f"{tid}: 読み「{r}」は ひらがなと ー だけ")
+        if (t.get("acceptedReadings") or [t.get("reading")])[0] != t.get("reading"): errs.append(f"{tid}: acceptedReadings の 先頭は reading")
+        if len(t.get("reading") or "") > MAXR: warn.append(f"{tid}: 読みが 長い({len(t['reading'])}字)")
+        if t.get("journey") not in js: errs.append(f"{tid}: journey「{t.get('journey')}」が ない")
+        if t.get("difficulty") not in dvs: errs.append(f"{tid}: difficulty は {sorted(dvs)}")
+        if t.get("field") not in SUBJECTS: errs.append(f"{tid}: field「{t.get('field')}」は 5つの 試験の 科目の どれか")
+        if t.get("type") != "concept": errs.append(f"{tid}: type は concept")
+        if t.get("mapNode") not in nodes: errs.append(f"{tid}: mapNode「{t.get('mapNode')}」が しくみ図に ない")
+        # その 旅の 図の 場所だけ(ほかの 旅の 図を 指していないか)
+        want = js.get(t.get("journey"), {}).get("diagram")
+        if want and str(t.get("mapNode")).split(":")[0] != want: errs.append(f"{tid}: mapNode は「{want}:」の 場所から えらぶ")
+        if len(t.get("description", "")) > 130: warn.append(f"{tid}: 説明が 長い({len(t['description'])}字)")
+        txt = t.get("name", "") + t.get("description", "") + t.get("example", "")
+        for w in BAN:
+            if w in txt: errs.append(f"{tid}: 「{w}」は 使わない")
+        for rx in BAN_RE:
+            if rx.search(txt): errs.append(f"{tid}: 「{rx.search(txt).group(0)}」は 使わない")
+        for r in [t.get("reading")] + list(t.get("acceptedReadings") or []):
+            readings.setdefault(r, []).append(tid)
+        per.setdefault((t.get("journey"), t.get("difficulty")), 0); per[(t.get("journey"), t.get("difficulty"))] += 1
+    for t in d["terms"]:
+        rel = t.get("relatedTerms") or []
+        if not 1 <= len(rel) <= 3: errs.append(f"{t['id']}: relatedTerms は 1〜3個")
+        for r in rel:
+            if r not in ids: errs.append(f"{t['id']}: つながる ことば「{r}」が ない")
+            if r == t["id"]: errs.append(f"{t['id']}: 自分を つないでいる")
+    for r, v in readings.items():
+        if len(set(v)) > 1: errs.append(f"読み「{r}」が かぶる: {v}")
+    for J in js:
+        n = sum(v for (j, _), v in per.items() if j == J)
+        if n and n % 10: errs.append(f"{J}: {n}語。旅ごとに 10の 倍数に そろえる")
+    if len(d["terms"]) % 10: errs.append(f"ぜんぶで {len(d['terms'])}語。10の 倍数に そろえる")
+    for w in warn: print("⚠️", w)
+    if errs:
+        for e in errs: print("❌", e)
+        sys.exit("救急隊員の ことばに まちがいが " + str(len(errs)) + " こ あります")
+    return per
+
+
+def main():
+    d = load()
+    if "--only" in sys.argv:
+        j = sys.argv[sys.argv.index("--only") + 1]; d["terms"] = [t for t in d["terms"] if t.get("journey") == j]
+    per = check(d)
+    print(" ".join(f"{j}{dv}:{n}" for (j, dv), n in sorted(per.items())))
+    if "--check" in sys.argv or "--only" in sys.argv:
+        print("救急隊員の ことば OK", len(d["terms"]), "語"); return
+    (ROOT / "data/kyukyutai.json").write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    from companies_js import rubifier
+    rub0 = rubifier()
+    # ふりがなの 読みまちがいを 救急隊員の ゲームの 中だけで 直す(ruby_fix.json に 入れると ほかの ゲームまで 変わるため)
+    #   ひとつだけの「数」→ かず(警察官・医師・教師・料理人と 同じ)
+    R = lambda a, b: (re.compile(a), b)
+    FIX = [R(r"(?<![一-龥>])<ruby>数<rt>すう</rt></ruby>(?![一-龥]|<ruby>)", "<ruby>数<rt>かず</rt></ruby>"),
+           R(r"1日<ruby>中<rt>ちゅう</rt></ruby>", "<ruby>1日中<rt>いちにちじゅう</rt></ruby>"),
+           R(r"(<ruby>月<rt>がつ</rt></ruby>)1<ruby>日<rt>ひ</rt></ruby>", r"\1<ruby>1日<rt>ついたち</rt></ruby>"),
+           R(r"<ruby>局<rt>つぼね</rt></ruby>", "<ruby>局<rt>きょく</rt></ruby>"),
+           R(r"<ruby>避難<rt>ひなん</rt></ruby><ruby>所<rt>しょ</rt></ruby>", "<ruby>避難所<rt>ひなんじょ</rt></ruby>"),  # 避難所 は ひなんじょ
+           R(r"<ruby>避難所<rt>ひなんしょ</rt></ruby>", "<ruby>避難所<rt>ひなんじょ</rt></ruby>"),
+           # 救急隊員だけの 読みまちがい(2026-10-03 に ふりがな 799とおりを 見て 直した)
+           R(r"<ruby>副子<rt>そえこ</rt></ruby>", "<ruby>副子<rt>ふくし</rt></ruby>"),  # 骨折を 支える 当て木
+           R(r"<ruby>養成所<rt>ようせいしょ</rt></ruby>", "<ruby>養成所<rt>ようせいじょ</rt></ruby>"),  # 読み(reading)と そろえる
+           R(r"<ruby>医療センタ<rt>いりょうせんた</rt></ruby>ー", "<ruby>医療<rt>いりょう</rt></ruby>センター")]
+    def rub(t):
+        h = rub0(t)
+        for a, b in FIX: h = a.sub(b, h)
+        return h
+    out = []
+    for t in d["terms"]:
+        o = dict(id=t["id"], n=t["name"], r=t["reading"], j=t["journey"], c=t["category"], dv=t["difficulty"], ty=t["type"],
+                 sb=t["field"], e=t["emoji"], mp=t["mapNode"], rel=t["relatedTerms"], ds=t["description"], rb=rub(t["description"]))
+        alts = [a for a in (t.get("acceptedReadings") or []) if a != t["reading"]]
+        if alts: o["al"] = alts
+        if t.get("example"): o["ex"] = t["example"]; o["exrb"] = rub(t["example"])
+        out.append(o)
+    m = d["meta"]
+    js = dict(asOf=m["asOf"], note=m["note"], journeys=m["journeys"], levels=m["levels"], titles=m["titles"], allTitle=m["allTitle"],
+              diagrams=m["diagrams"], missions=[], list=out)
+    (ROOT / "kyukyutai").mkdir(exist_ok=True)
+    (ROOT / "kyukyutai/terms.js").write_text("/* tools/kyukyutai/terms-*.json から tools/kyukyutai/terms_js.py が 作る。手で 直さない */\nconst KYUKYUTAI_TERMS = " +
+                                         json.dumps(js, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
+    print("kyukyutai/terms.js", len(out), "語", (ROOT / "kyukyutai/terms.js").stat().st_size // 1024, "KB")
+
+
+if __name__ == "__main__":
+    main()

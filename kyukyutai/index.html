@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリック恐竜図鑑</title>
+<title>フリック救急隊員</title>
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
@@ -424,11 +424,10 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=2" alt="" width="900" height="223" aria-hidden="true">
+      <span class="logo-text">フリック救急隊員</span>
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリック恐竜図鑑</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリック恐竜図鑑。ティラノサウルスや トリケラトプスの いる ジャングルで 図鑑を もった 男の子が 指さして 笑っている 絵。まわりに 7つの 旅の 札が ならんでいる" width="1536" height="1024">
+    <h1 class="sr-only">フリック救急隊員</h1>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -552,15 +551,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=6015da83"></script>
-<script src="kyoryu.js?v=f544be71"></script>
+<script src="terms.js?v=f802fc51"></script>
+<script src="kyukyutai.js?v=8e9caec8"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
    前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kyoryu", name:"フリック恐竜図鑑", modes:(typeof KYORYU === "object" ? KYORYU.modes : []), assets:"../", logo:true, hero:true, dir:"kyoryu/", lead:"肉を 食べる 恐竜・草を 食べる 恐竜・日本の 恐竜・3つの 時代・体と 化石・恐竜では ない 生きもの・調べる 人と 道具を、ひらがなで フリック入力。打つと その 恐竜の いた 時代と、見つかった 場所(世界地図の 📍)が 出るよ。だれでも 知っている 恐竜から はじめて、めざせ 恐竜博士。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。「ヴ」の 入った 名前は ば行でも OK(べろきらぷとる)。恐竜の 研究は 毎年 新しく なるので、あとから 考えが 変わる ことも あるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、恐竜の 名前と 時代と 場所が つながって 見えてくるよ。" };
+const GAME = { id:"kyukyutai", name:"フリック救急隊員", modes:(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : []), assets:"../", logo:false, hero:false, dir:"kyukyutai/", lead:"救急の きほん・救命の 手当て・からだを 見る・けがと 病気・現場から 病院へ・救急車と 資器材・救急の しくみと 法律の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の 科目・しくみ図の どこに あるのかが 出るよ。くらしや 救命講習で 聞く ことばから はじめて、消防学校の 救急課程・救急救命士 国家試験の 範囲の めやすの ことばまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本物の 試験問題では ありません。手当ての やりかたや 薬の 量は のせていないよ。手当ての やりかたは 消防署の 救命講習で 習おう。からだの ぐあいが わるい ときは おうちの 人に 知らせて、こまったら 119番や #7119 に 相談してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、命を つなぐ 救急の ことばと しくみが つながって 見えてくるよ。総務省消防庁・厚生労働省・市町村の 消防とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

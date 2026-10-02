@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ bengoshi/ zeirishi/ adler/ toshika/ daiku/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ kyukyutai/ bengoshi/ zeirishi/ adler/ toshika/ daiku/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -161,6 +161,15 @@ GAMES = {
                  lead="消防車と 道具・火と 消火・救急と 救助・火事を ふせぐ・災害と 消防・消防の 法律と しくみ・消防士の 心と からだの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。まちで 見かける ことばから はじめて、消防官採用試験の 教養試験と 消防学校で 学ぶ ことばの めやす・消防設備士や 危険物取扱者の ことばまで。4択クイズで 試験の 練習も できるよ。",
                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本物の 試験問題では ありません。火の つけかたや 救命処置の 手順は のせていないよ。火を 使う ときは かならず 大人と いっしょに。火事や けがの ときは 119番。試験の 勉強には 各消防本部の 採用案内や 問題集も 使ってね。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、消防の ことばと しくみが つながって 見えてくるよ。総務省消防庁・市町村の 消防とは 関係ありません。"),
+    # フリック救急隊員(けいくん 2026-10-03「救急隊員の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」・重い ことばは「事実だけ おだやかに」。まとめは docs/フリック救急隊員-はじめかた.md)。
+    #   ことばは tools/kyukyutai/terms-<旅>.json → kyukyutai/terms.js(tools/kyukyutai/terms_js.py)。しくみは kyukyutai/kyukyutai.js(KYUKYUTAI。shobo.js を 写した)。
+    #   ⚠️⚠️ 手当ての やりかた・薬の 量・診断の しかた・こわい ようすは のせない(決まりは tools/kyukyutai/PROMPT.md)
+    #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/kyukyutai/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)
+    "kyukyutai": dict(name="フリック救急隊員", modes="KYUKYUTAI", kinds=set(), color="#e0202e", hero=False, logo=False,
+                  art=dict(word=(900, 200), hero=(1536, 1024), alt="フリック救急隊員", iconv=1),
+                  lead="救急の きほん・救命の 手当て・からだを 見る・けがと 病気・現場から 病院へ・救急車と 資器材・救急の しくみと 法律の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の 科目・しくみ図の どこに あるのかが 出るよ。くらしや 救命講習で 聞く ことばから はじめて、消防学校の 救急課程・救急救命士 国家試験の 範囲の めやすの ことばまで。4択クイズで 試験の 練習も できるよ。",
+                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本物の 試験問題では ありません。手当ての やりかたや 薬の 量は のせていないよ。手当ての やりかたは 消防署の 救命講習で 習おう。からだの ぐあいが わるい ときは おうちの 人に 知らせて、こまったら 119番や #7119 に 相談してね。",
+                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、命を つなぐ 救急の ことばと しくみが つながって 見えてくるよ。総務省消防庁・厚生労働省・市町村の 消防とは 関係ありません。"),
     # フリック弁護士(けいくん 2026-10-01「弁護士になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」。まとめは docs/フリック弁護士-はじめかた.md)。
     #   ことばは tools/bengoshi/terms-<旅>.json → bengoshi/terms.js(tools/bengoshi/terms_js.py)。しくみは bengoshi/bengoshi.js(BENGOSHI。keisatsu.js を 写した)。
     #   ⚠️⚠️ 小学生も あそぶので 犯罪の やりかた・法律の 抜け道・相談の 答えに なる 書きかたは のせない。「法律が どう 守るか・弁護士が どう 助けるか」だけ(決まりは tools/bengoshi/PROMPT.md)
@@ -282,7 +291,7 @@ GAMES = {
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "CHEF": '(typeof CHEF === "object" ? CHEF.modes : [])', "KEISATSU": '(typeof KEISATSU === "object" ? KEISATSU.modes : [])', "SHOBO": '(typeof SHOBO === "object" ? SHOBO.modes : [])', "BENGOSHI": '(typeof BENGOSHI === "object" ? BENGOSHI.modes : [])', "ZEIRISHI": '(typeof ZEIRISHI === "object" ? ZEIRISHI.modes : [])', "ADLER": '(typeof ADLER === "object" ? ADLER.modes : [])', "TOSHIKA": '(typeof TOSHIKA === "object" ? TOSHIKA.modes : [])', "DAIKU": '(typeof DAIKU === "object" ? DAIKU.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "CHEF": '(typeof CHEF === "object" ? CHEF.modes : [])', "KEISATSU": '(typeof KEISATSU === "object" ? KEISATSU.modes : [])', "SHOBO": '(typeof SHOBO === "object" ? SHOBO.modes : [])', "KYUKYUTAI": '(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : [])', "BENGOSHI": '(typeof BENGOSHI === "object" ? BENGOSHI.modes : [])', "ZEIRISHI": '(typeof ZEIRISHI === "object" ? ZEIRISHI.modes : [])', "ADLER": '(typeof ADLER === "object" ? ADLER.modes : [])', "TOSHIKA": '(typeof TOSHIKA === "object" ? TOSHIKA.modes : [])', "DAIKU": '(typeof DAIKU === "object" ? DAIKU.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -400,6 +409,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/shobo/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "shobo" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="shobo.js?v=%s"></script>' % (ver("terms.js"), ver("shobo.js")))
+    if g["modes"] == "KYUKYUTAI":  # 救急隊員の コース: 消防士と 同じ 形。ことばは terms.js(tools/kyukyutai/terms-*.json から)、しくみは kyukyutai.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kyukyutai/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "kyukyutai" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="kyukyutai.js?v=%s"></script>' % (ver("terms.js"), ver("kyukyutai.js")))
     if g["modes"] == "BENGOSHI":  # 弁護士の コース: 警察官と 同じ 形。ことばは terms.js(tools/bengoshi/terms-*.json から)、しくみは bengoshi.js
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/bengoshi/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "bengoshi" / f).read_bytes()).hexdigest()[:8]

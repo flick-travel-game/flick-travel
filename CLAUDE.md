@@ -504,9 +504,17 @@
   こころ … プロスペクト理論の 分野 / 歴史 … グレアム・テンプルトン(買う 時期の 指図に 読めない)・ランダムウォーク(酔った 人 → ふらふら 歩く 人)・世界初の投資信託(オランダや イギリス)
 - 日本取引所グループ・日本銀行の 読みは **にっぽん**(公式。にほん も 認める)
 - ふりがなは 全語 見た。**投資家の 中だけで** 直した(`terms_js.py` の `FIX`): 実を 結ぶ → み・種を まく → たね・公に → おおやけ・丈夫 → じょうぶ・智徳 → ち・割引率・立会場・お金 → かね・むかい風 → かぜ
-- **絵は まだ**。題名は 文字(`hero=False, logo=False`)・アイコンは 仮(みどりの 地に 白い 双葉。`tools/toshika/placeholder_icon.py`)。
-  けいくんの ChatGPT の 絵が 届いたら: トップ `toshika/hero.webp`(1536×1024)・四角い 絵 → `tools/toshika/art/square-src.png` → `python3 tools/icon_from_square.py toshika`・題名 → `tools/toshika/art/title-src.png` → `python3 tools/title_from_art.py toshika` → `build_games.py` に `art=dict(...)` と `hero=True, logo=True`
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**(絵の 道が 要るため)
+- 絵(2026-10-02): けいくんの ChatGPT の 絵。トップ `toshika/hero.webp`(1536×1024)・アイコンは 四角い 絵(1254px)を **切らずに そのまま**(`tools/toshika/art/square-src.png` → `python3 tools/icon_from_square.py toshika`)
+  - ⚠️ **1回目の 絵は 入れなかった**: 札 27こ中 14こが ゲームに 無い ことば(えいぎょう・おうえん・しじょう・えど …)/ つみたて・かぶぬし・はいとう が 長期の 札に(ゲームでは きほん)/
+    **金貨の 山・お札の 束・¥の 袋・急に 上がる 矢印の グラフ** / 「しけんに でる ことば」(試験は 無い)。旅ごとに ゲームに ある 読みを 4つずつ 指定して 作りなおして もらった
+  - 2回目の 四角い 絵は「がいしゃ」「ばいどう」「くろじ の ¥の 袋」を 直して もらった(3回目)
+  - 3回目は 札を 切り出して 読みで 確かめた。のこった 2か所は **絵の 中で 直した**(`tools/toshika/fix_text.py`。Noto Sans CJK JP Bold):
+    トップの「しょろひん」→「しょうひん」/ 四角の 図鑑の「ぎけつけん」の け の 上の 小さな しるし(げ に 見えた)を 消した
+  - ⚠️ トップの 絵の 札は **6つの 旅(24こ)だけ**で「投資の 歴史と 人びと」が 無い(四角い 絵には 7つ ある)。ホワイトボードの 小さな 棒グラフと 矢印は のこっている(小さいので そのまま)
+  - **題名の 透明 PNG は まだ** → 題名は 文字(`logo=False`。`build_games.py` に「絵は あるが 題名の 絵は 無い」ときの 道を 足した)。
+    届いたら `tools/toshika/art/title-src.png` → `python3 tools/title_from_art.py toshika` → `build_games.py` の `logo=True`・`art.word` の 大きさ・`wordv` を そろえ、speed-king の `games.ts` に `word` を 足す
+  - 仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない(記録に のこす)
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #301)・販売ページ `HOME_GAMES`(夢のしごと の 章、アドラーの となり)・規約の 一覧 `FLICK_SERIES_GAMES` に 足した
 - 確かめかた: `node tools/play-all.mjs toshika/`(4とおりの 打ちかたで 全98ステージ)/ `node tools/click-all.mjs toshika/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## 入力が 止まる バグと 見つけかた(けいくん 2026-09-28「ゲームの途中で入力できなくなった」)

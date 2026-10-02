@@ -197,8 +197,11 @@ GAMES = {
     #   日本一の投資家、竹田和平さんのように 好きな企業を応援する長期投資スタイルがメインの投資家に育ってほしいです」)。まとめは docs/フリック投資家-はじめかた.md。
     #   ことばは tools/toshika/terms-<旅>.json → toshika/terms.js(tools/toshika/terms_js.py)。しくみは toshika/toshika.js(TOSHIKA。アドラー心理学を 写した)。
     #   ⚠️⚠️ 投資・銘柄の すすめ・売り買いの 時期・投資相談の 答え・株価や 金額の 数字・実在の 会社・こわい ことば・ギャンブルの かおりは 出さない(決まりは tools/toshika/PROMPT.md)。
-    #   絵は まだ(けいくんの ChatGPT の 絵が 届いたら art= を 足して hero=True, logo=True に)。それまでは 題名は 文字・アイコンは 仮(tools/toshika/placeholder_icon.py)
-    "toshika": dict(name="フリック投資家", modes="TOSHIKA", kinds=set(), color="#2f9e44", hero=False, logo=False,
+    #   絵(2026-10-02): けいくんの ChatGPT の 絵(3回目)。1回目は 札の 半分が ゲームに 無い ことば・金貨・お札・¥の 袋・上がる 矢印で 入れなかった。
+    #   3回目の「しょろひん」→「しょうひん」(トップ)と「ぎげつけん」の しるし(四角)を 絵の 中で 直した(tools/toshika/fix_text.py)。
+    #   アイコンは 四角い 絵を 切らずに そのまま(tools/icon_from_square.py toshika)。題名の 透明 PNG は まだ → それまで 題名は 文字(logo=False)
+    "toshika": dict(name="フリック投資家", modes="TOSHIKA", kinds=set(), color="#2f9e44", hero=True, logo=False,
+                    art=dict(word=(900, 200), hero=(1536, 1024), alt="フリック投資家。本と 植物の ならぶ 明るい 部屋で 男の子と 女の子と 白い 犬が 笑っている 絵。まわりに 6つの 旅の ことばの 札と 4択クイズ・図鑑・レベルの 見本が ならんでいる", iconv=1, wordv=1),
                     lead="投資の きほん・会社を 知る・長期投資と 応援・決算書を 読む・市場と しくみ・投資家の こころ・投資の 歴史と 人びとの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。くらしや ニュースで 聞く お金と 会社の ことばから はじめて、証券外務員・FP・証券アナリストの 範囲の めやすの ことばまで。めざすのは、好きな 会社を 見つけて 株主として 長く 応援する 投資家。4択クイズで 意味を たしかめる 練習も できるよ。",
                     how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。投資を すすめる ものでは ありません。どの 会社を 買えば よいかや、売り時・買い時は 書いていないよ。株価や 金額は 毎日・毎年 変わるので のせていないよ。お金の ことは おうちの 人や 専門の 人と 相談してね。",
                     rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、会社と 社会の しくみ、長く 応援する 投資家の 考えかたが つながって 見えてくるよ。証券会社・取引所・日本証券業協会・日本証券アナリスト協会とは 関係ありません。"),
@@ -300,6 +303,8 @@ def build(gid, g):
         out, n = re.subn(r'\s*<img class="hero" src="hero.webp"[^>]*>', "", out); assert n == 1
         out, n = re.subn(r'<img class="logo-mark" src="logo-mark2.webp"[^>]*>\s*<img class="logo-word" src="logo-word.webp"[^>]*>',
                          lambda _: '<span class="logo-text">%s</span>' % g["name"], out); assert n == 1
+    if art and not g["logo"]:  # 絵と アイコンは あるが 題名の 絵は まだ 無い(投資家): 題名は 文字に して 無い 絵を 読みにいかない
+        out, n = re.subn(r'<img class="logo-word" src="logo-word.webp[^"]*"[^>]*>', lambda _: '<span class="logo-text">%s</span>' % g["name"], out); assert n == 1
     if art and not g["hero"]:  # 題名・アイコンは あるが トップの 絵は まだ 無い(国語): 無い 絵を 読みにいかない
         out, n = re.subn(r'\s*<img class="hero" [^>]*>', "", out); assert n == 1
     out = out.replace('<script src="photos.js"></script>', '<script src="../photos.js"></script>')

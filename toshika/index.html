@@ -8,7 +8,7 @@
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png?v=2">
+<link rel="icon" type="image/png" href="favicon.png?v=1">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -422,10 +422,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
+      <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
       <span class="logo-text">フリック投資家</span>
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック投資家</h1>
+    <img class="hero" src="hero.webp?v=1" alt="フリック投資家。本と 植物の ならぶ 明るい 部屋で 男の子と 女の子と 白い 犬が 笑っている 絵。まわりに 6つの 旅の ことばの 札と 4択クイズ・図鑑・レベルの 見本が ならんでいる" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -555,7 +557,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"toshika", name:"フリック投資家", modes:(typeof TOSHIKA === "object" ? TOSHIKA.modes : []), assets:"../", logo:false, hero:false, dir:"toshika/", lead:"投資の きほん・会社を 知る・長期投資と 応援・決算書を 読む・市場と しくみ・投資家の こころ・投資の 歴史と 人びとの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。くらしや ニュースで 聞く お金と 会社の ことばから はじめて、証券外務員・FP・証券アナリストの 範囲の めやすの ことばまで。めざすのは、好きな 会社を 見つけて 株主として 長く 応援する 投資家。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。投資を すすめる ものでは ありません。どの 会社を 買えば よいかや、売り時・買い時は 書いていないよ。株価や 金額は 毎日・毎年 変わるので のせていないよ。お金の ことは おうちの 人や 専門の 人と 相談してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、会社と 社会の しくみ、長く 応援する 投資家の 考えかたが つながって 見えてくるよ。証券会社・取引所・日本証券業協会・日本証券アナリスト協会とは 関係ありません。" };
+const GAME = { id:"toshika", name:"フリック投資家", modes:(typeof TOSHIKA === "object" ? TOSHIKA.modes : []), assets:"../", logo:false, hero:true, dir:"toshika/", lead:"投資の きほん・会社を 知る・長期投資と 応援・決算書を 読む・市場と しくみ・投資家の こころ・投資の 歴史と 人びとの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。くらしや ニュースで 聞く お金と 会社の ことばから はじめて、証券外務員・FP・証券アナリストの 範囲の めやすの ことばまで。めざすのは、好きな 会社を 見つけて 株主として 長く 応援する 投資家。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。投資を すすめる ものでは ありません。どの 会社を 買えば よいかや、売り時・買い時は 書いていないよ。株価や 金額は 毎日・毎年 変わるので のせていないよ。お金の ことは おうちの 人や 専門の 人と 相談してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、会社と 社会の しくみ、長く 応援する 投資家の 考えかたが つながって 見えてくるよ。証券会社・取引所・日本証券業協会・日本証券アナリスト協会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

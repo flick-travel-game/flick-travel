@@ -1,0 +1,1199 @@
+[
+ {
+  "id": "ks-taion",
+  "name": "体温",
+  "reading": "たいおん",
+  "journey": "kansatsu",
+  "category": "バイタルサイン",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "karada:taion",
+  "relatedTerms": [
+   "ks-kenon",
+   "ks-vital"
+  ],
+  "description": "からだの あたたかさの こと。救急隊は 熱が 高すぎたり 低すぎたり しないかを たしかめて、病院に 伝えます。"
+ },
+ {
+  "id": "ks-kokyu",
+  "name": "呼吸",
+  "reading": "こきゅう",
+  "journey": "kansatsu",
+  "category": "バイタルサイン",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "karada:kokyu",
+  "relatedTerms": [
+   "ks-kokyusu",
+   "ks-ikigurushi"
+  ],
+  "description": "息を 吸ったり はいたり する こと。救急隊は 胸や おなかの 動きを 見て、息が ふだんどおり できているかを たしかめます。"
+ },
+ {
+  "id": "ks-myakuhaku",
+  "name": "脈拍",
+  "reading": "みゃくはく",
+  "journey": "kansatsu",
+  "category": "バイタルサイン",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "💓",
+  "mapNode": "karada:myaku",
+  "relatedTerms": [
+   "ks-toukotsu",
+   "ks-fuseimyaku"
+  ],
+  "description": "心臓が 血を 送り出す たびに 血管に 伝わる 動きの こと。救急隊は 脈の 速さや 強さ、リズムを たしかめます。"
+ },
+ {
+  "id": "ks-ketsuatsu",
+  "name": "血圧",
+  "reading": "けつあつ",
+  "journey": "kansatsu",
+  "category": "バイタルサイン",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "karada:ketsuatsu",
+  "relatedTerms": [
+   "ks-vital",
+   "ks-myakuhaku"
+  ],
+  "description": "心臓が 送り出した 血が 血管を 押す 力の こと。救急隊は 血圧を はかって、からだの 血の めぐりの ようすを 病院に 伝えます。"
+ },
+ {
+  "id": "ks-ishiki",
+  "name": "意識",
+  "reading": "いしき",
+  "journey": "kansatsu",
+  "category": "意識を見る",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-yobikake",
+   "ks-ishikilevel"
+  ],
+  "description": "まわりの ことが わかって、呼びかけに こたえられる 状態の こと。救急隊は まず 意識が あるかを たしかめます。"
+ },
+ {
+  "id": "ks-kaoiro",
+  "name": "顔色",
+  "reading": "かおいろ",
+  "journey": "kansatsu",
+  "category": "皮膚と顔色",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🙂",
+  "mapNode": "karada:hifu",
+  "relatedTerms": [
+   "ks-hiyaase",
+   "ks-hifunoiro"
+  ],
+  "description": "顔の 色や つやの こと。青白い・赤い など、顔色は からだの ようすを 知る 大事な 手がかりに なります。"
+ },
+ {
+  "id": "ks-kansatsu",
+  "name": "観察",
+  "reading": "かんさつ",
+  "journey": "kansatsu",
+  "category": "観察の流れ",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-shoki",
+   "ks-zenshin"
+  ],
+  "description": "傷病者の からだや ようすを 目・耳・手で ていねいに たしかめる こと。救急隊は 観察した ことを もとに 手当てと 運ぶ 病院を 考えます。"
+ },
+ {
+  "id": "ks-yobikake",
+  "name": "呼びかけ",
+  "reading": "よびかけ",
+  "journey": "kansatsu",
+  "category": "意識を見る",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-ishiki",
+   "ks-hanno"
+  ],
+  "description": "「だいじょうぶですか」などと 声を かけて、こたえが あるかを たしかめる こと。意識の ようすを 知る はじめの 一歩です。"
+ },
+ {
+  "id": "ks-hanno",
+  "name": "反応",
+  "reading": "はんのう",
+  "journey": "kansatsu",
+  "category": "意識を見る",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👋",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-yobikake",
+   "ks-ishiki"
+  ],
+  "description": "呼びかけや からだに ふれた ことに、目を あけたり 声を 出したり して こたえる こと。救急隊は 反応の ようすを 記録します。"
+ },
+ {
+  "id": "ks-hiyaase",
+  "name": "冷や汗",
+  "reading": "ひやあせ",
+  "journey": "kansatsu",
+  "category": "皮膚と顔色",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "karada:hifu",
+  "relatedTerms": [
+   "ks-kaoiro",
+   "ks-shock"
+  ],
+  "description": "暑くないのに 出る、ひんやり した 汗の こと。からだの 中で 何かが 起きている しるしの ことが あり、救急隊は 見のがさない ように します。"
+ },
+ {
+  "id": "ks-ikigurushi",
+  "name": "息苦しさ",
+  "reading": "いきぐるしさ",
+  "journey": "kansatsu",
+  "category": "呼吸を見る",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "😮‍💨",
+  "mapNode": "karada:kokyu",
+  "relatedTerms": [
+   "ks-kokyu",
+   "ks-doryoku"
+  ],
+  "description": "息が しにくい、空気が 足りない と 感じる こと。救急隊は 本人の 話と 呼吸の ようすを あわせて たしかめます。"
+ },
+ {
+  "id": "ks-itami",
+  "name": "痛み",
+  "reading": "いたみ",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🤕",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-shuso",
+   "ks-chosh"
+  ],
+  "description": "からだの どこかが いたいと 感じる こと。救急隊は どこが・いつから・どんなふうに いたいかを ていねいに 聞きます。"
+ },
+ {
+  "id": "ks-kenon",
+  "name": "検温",
+  "reading": "けんおん",
+  "journey": "kansatsu",
+  "category": "バイタルサイン",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "karada:taion",
+  "relatedTerms": [
+   "ks-taion",
+   "ks-vital"
+  ],
+  "description": "体温を はかる こと。救急隊は 体温計で はかった 数字を 記録して、病院に 伝えます。"
+ },
+ {
+  "id": "ks-hakike",
+  "name": "吐き気",
+  "reading": "はきけ",
+  "journey": "kansatsu",
+  "category": "からだのようす",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🤢",
+  "mapNode": "karada:mune",
+  "relatedTerms": [
+   "ks-itami",
+   "ks-fukubu"
+  ],
+  "description": "むかむか して 吐きそうに なる 感じの こと。いつから あるか などを 聞いて、ほかの ようすと あわせて 病院に 伝えます。"
+ },
+ {
+  "id": "ks-shibire",
+  "name": "しびれ",
+  "reading": "しびれ",
+  "journey": "kansatsu",
+  "category": "からだのようす",
+  "difficulty": 1,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "karada:teashi",
+  "relatedTerms": [
+   "ks-mahi",
+   "ks-katamahi"
+  ],
+  "description": "手や 足が じんじん して、感じかたが いつもと ちがう こと。救急隊は どこが しびれているかを たしかめて 伝えます。"
+ },
+ {
+  "id": "ks-seki",
+  "name": "せき",
+  "reading": "せき",
+  "journey": "kansatsu",
+  "category": "呼吸を見る",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "😷",
+  "mapNode": "karada:kokyu",
+  "relatedTerms": [
+   "ks-kokyu",
+   "ks-kokyuon"
+  ],
+  "description": "のどや 肺から 空気を いきおい よく 出す からだの はたらき。いつから・どんな せきかを 聞いて、呼吸の ようすと あわせて 見ます。"
+ },
+ {
+  "id": "ks-kuchibiru",
+  "name": "唇の色",
+  "reading": "くちびるのいろ",
+  "journey": "kansatsu",
+  "category": "皮膚と顔色",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👄",
+  "mapNode": "karada:hifu",
+  "relatedTerms": [
+   "ks-chianoze",
+   "ks-kaoiro"
+  ],
+  "description": "くちびるが どんな 色を しているか。血の 中の 酸素の ようすが あらわれやすい ところなので、救急隊は よく 見ます。"
+ },
+ {
+  "id": "ks-okusuri",
+  "name": "お薬手帳",
+  "reading": "おくすりてちょう",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-kioureki",
+   "ks-kakaritsuke"
+  ],
+  "description": "ふだん 飲んでいる 薬が 書かれた 手帳。救急隊は 見せて もらい、病院に 伝えて 手当てに 役立てます。"
+ },
+ {
+  "id": "ks-kakaritsuke",
+  "name": "かかりつけ医",
+  "reading": "かかりつけい",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-okusuri",
+   "ks-jibyo"
+  ],
+  "description": "ふだんから 体の ことを 相談している お医者さん。救急隊は どこに かかっているかを 聞いて、病院えらびや 連絡に 役立てます。"
+ },
+ {
+  "id": "ks-jibyo",
+  "name": "持病",
+  "reading": "じびょう",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 1,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-kioureki",
+   "ks-okusuri"
+  ],
+  "description": "前から ずっと つきあっている 病気の こと。救急隊は 持病を 聞いて、いまの ようすと つながりが ないかを 考えます。"
+ },
+ {
+  "id": "ks-ishikilevel",
+  "name": "意識レベル",
+  "reading": "いしきれべる",
+  "journey": "kansatsu",
+  "category": "意識を見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-jcs",
+   "ks-gcs",
+   "ks-ishiki"
+  ],
+  "description": "意識が どのくらい はっきり しているかの 度合い。救急隊は 決まった ものさしで あらわして、病院に 正しく 伝えます。"
+ },
+ {
+  "id": "ks-vital",
+  "name": "バイタルサイン",
+  "reading": "ばいたるさいん",
+  "journey": "kansatsu",
+  "category": "バイタルサイン",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "karada:myaku",
+  "relatedTerms": [
+   "ks-myakuhaku",
+   "ks-ketsuatsu",
+   "ks-taion"
+  ],
+  "description": "意識・呼吸・脈拍・血圧・体温 など、命の ようすを あらわす しるしの まとめた 呼び名。救急隊が まず たしかめる ものです。"
+ },
+ {
+  "id": "ks-kokyusu",
+  "name": "呼吸数",
+  "reading": "こきゅうすう",
+  "journey": "kansatsu",
+  "category": "呼吸を見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "karada:kokyu",
+  "relatedTerms": [
+   "ks-kokyu",
+   "ks-kokyuyoshiki"
+  ],
+  "description": "決まった 時間に 何回 息を するかの 数。救急隊は 胸の 動きを 見て 数え、記録に のこします。"
+ },
+ {
+  "id": "ks-spo2",
+  "name": "SpO2",
+  "reading": "えすぴーおーつー",
+  "journey": "kansatsu",
+  "category": "酸素を見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "karada:sanso",
+  "relatedTerms": [
+   "ks-chianoze",
+   "ks-kokyu"
+  ],
+  "description": "血の 中の 赤血球が どのくらい 酸素を 運んでいるかを あらわす 数。指先に つける 機械で はかり、呼吸の ようすを 知る 手がかりに します。"
+ },
+ {
+  "id": "ks-doko",
+  "name": "瞳孔",
+  "reading": "どうこう",
+  "journey": "kansatsu",
+  "category": "目を見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "karada:me",
+  "relatedTerms": [
+   "ks-taiko",
+   "ks-doukofudo"
+  ],
+  "description": "目の まん中の 黒い ところ。明るさで 大きさが かわります。救急隊は ライトで 大きさや 形を たしかめます。"
+ },
+ {
+  "id": "ks-taiko",
+  "name": "対光反射",
+  "reading": "たいこうはんしゃ",
+  "journey": "kansatsu",
+  "category": "目を見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "karada:me",
+  "relatedTerms": [
+   "ks-doko",
+   "ks-doukofudo"
+  ],
+  "description": "目に 光を 当てると 瞳孔が 小さく なる はたらき。救急隊は この はたらきが あるかを 見て、脳の ようすの 手がかりに します。"
+ },
+ {
+  "id": "ks-shindenzu",
+  "name": "心電図",
+  "reading": "しんでんず",
+  "journey": "kansatsu",
+  "category": "心臓を見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "karada:mune",
+  "relatedTerms": [
+   "ks-fuseimyaku",
+   "ks-juni"
+  ],
+  "description": "心臓が 動く ときの 電気の ようすを 波の 形で あらわした もの。救急隊は 救急車の 中で 心臓の リズムを 見守ります。"
+ },
+ {
+  "id": "ks-fuseimyaku",
+  "name": "不整脈",
+  "reading": "ふせいみゃく",
+  "journey": "kansatsu",
+  "category": "心臓を見る",
+  "difficulty": 2,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "💗",
+  "mapNode": "karada:myaku",
+  "relatedTerms": [
+   "ks-shindenzu",
+   "ks-myakuhaku"
+  ],
+  "description": "心臓の リズムが みだれる こと。速すぎる・おそすぎる・とぶ など いろいろ あり、救急隊は 脈と 心電図で 見つけて 病院に 伝えます。"
+ },
+ {
+  "id": "ks-chianoze",
+  "name": "チアノーゼ",
+  "reading": "ちあのーぜ",
+  "journey": "kansatsu",
+  "category": "皮膚と顔色",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "💙",
+  "mapNode": "karada:hifu",
+  "relatedTerms": [
+   "ks-kuchibiru",
+   "ks-spo2"
+  ],
+  "description": "くちびるや 指先が むらさき色っぽく なる こと。血の 中の 酸素が 足りない しるしの ことが あり、救急隊は すぐ 気づける ように 見ます。"
+ },
+ {
+  "id": "ks-shuso",
+  "name": "主訴",
+  "reading": "しゅそ",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-itami",
+   "ks-chosh"
+  ],
+  "description": "傷病者が いちばん つらいと うったえて いる こと。「おなかが いたい」など。救急隊は まず 主訴を 聞いて 記録します。"
+ },
+ {
+  "id": "ks-kioureki",
+  "name": "既往歴",
+  "reading": "きおうれき",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-jibyo",
+   "ks-genbyo"
+  ],
+  "description": "これまでに かかった 病気や けが、手術の こと。救急隊は 聞いた 既往歴を 病院に 伝えます。"
+ },
+ {
+  "id": "ks-chosh",
+  "name": "聴取",
+  "reading": "ちょうしゅ",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-shuso",
+   "ks-kioureki"
+  ],
+  "description": "傷病者や 家族、まわりの 人から 話を 聞く こと。何が あったか・いつからか などを 聞いて、観察と あわせて 考えます。"
+ },
+ {
+  "id": "ks-mahi",
+  "name": "麻痺",
+  "reading": "まひ",
+  "journey": "kansatsu",
+  "category": "からだのようす",
+  "difficulty": 2,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "karada:teashi",
+  "relatedTerms": [
+   "ks-shibire",
+   "ks-katamahi"
+  ],
+  "description": "手や 足などが 思う ように 動かせない 状態。救急隊は どこが 動かしにくいかを たしかめて、病院えらびに 役立てます。"
+ },
+ {
+  "id": "ks-gengo",
+  "name": "言語障害",
+  "reading": "げんごしょうがい",
+  "journey": "kansatsu",
+  "category": "からだのようす",
+  "difficulty": 2,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "karada:atama",
+  "relatedTerms": [
+   "ks-koon",
+   "ks-mahi"
+  ],
+  "description": "ことばが 出にくい、話が わかりにくい など、ことばの はたらきが うまく いかない 状態。救急隊は 話しかたの ようすも 見ます。"
+ },
+ {
+  "id": "ks-kettou",
+  "name": "血糖",
+  "reading": "けっとう",
+  "journey": "kansatsu",
+  "category": "からだのようす",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🍬",
+  "mapNode": "karada:teashi",
+  "relatedTerms": [
+   "ks-ishikishogai",
+   "ks-okusuri"
+  ],
+  "description": "血の 中に ある 糖(からだの エネルギーの もと)の こと。意識の ようすが いつもと ちがう ときに、救急隊が 手がかりに する ことが あります。"
+ },
+ {
+  "id": "ks-shoki",
+  "name": "初期評価",
+  "reading": "しょきひょうか",
+  "journey": "kansatsu",
+  "category": "観察の流れ",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-kansatsu",
+   "ks-zenshin"
+  ],
+  "description": "現場で 傷病者に 会って すぐに、命に かかわる ようすが ないかを 短い 時間で たしかめる こと。そのあと くわしい 観察に すすみます。"
+ },
+ {
+  "id": "ks-zenshin",
+  "name": "全身観察",
+  "reading": "ぜんしんかんさつ",
+  "journey": "kansatsu",
+  "category": "観察の流れ",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "karada:atama",
+  "relatedTerms": [
+   "ks-shoki",
+   "ks-shosai"
+  ],
+  "description": "頭から 足の 先まで、からだ ぜんたいを 順に 見て ふれて たしかめる こと。けがの 見おとしを なくす ために 行います。"
+ },
+ {
+  "id": "ks-saishu",
+  "name": "最終飲食",
+  "reading": "さいしゅういんしょく",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🍙",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-chosh",
+   "ks-allergy"
+  ],
+  "description": "さいごに 食べたり 飲んだり した 時間と 中身の こと。救急隊は 聞いて 記録し、病院での 手当てに 役立てます。"
+ },
+ {
+  "id": "ks-allergy",
+  "name": "アレルギーの有無",
+  "reading": "あれるぎーのうむ",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🥜",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-okusuri",
+   "ks-saishu"
+  ],
+  "description": "食べものや 薬などに アレルギーが あるか ないか。救急隊は かならず 聞いて、病院に 伝えます。"
+ },
+ {
+  "id": "ks-choshin",
+  "name": "聴診",
+  "reading": "ちょうしん",
+  "journey": "kansatsu",
+  "category": "手と耳で見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "karada:mune",
+  "relatedTerms": [
+   "ks-kokyuon",
+   "ks-shokushin"
+  ],
+  "description": "聴診器で からだの 中の 音を 聞く こと。救急隊は 胸の 音を 聞いて、呼吸の ようすを たしかめます。"
+ },
+ {
+  "id": "ks-shokushin",
+  "name": "触診",
+  "reading": "しょくしん",
+  "journey": "kansatsu",
+  "category": "手と耳で見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "karada:mune",
+  "relatedTerms": [
+   "ks-choshin",
+   "ks-shishin"
+  ],
+  "description": "手で からだに ふれて、いたい ところや かたさ、あたたかさを たしかめる こと。観察の 大事な やりかたの ひとつです。"
+ },
+ {
+  "id": "ks-shishin",
+  "name": "視診",
+  "reading": "ししん",
+  "journey": "kansatsu",
+  "category": "手と耳で見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "karada:hifu",
+  "relatedTerms": [
+   "ks-shokushin",
+   "ks-kaoiro"
+  ],
+  "description": "目で 見て たしかめる こと。顔色・皮膚の 色・からだの 動き・けがの ようすなどを 見ます。"
+ },
+ {
+  "id": "ks-kokyuon",
+  "name": "呼吸音",
+  "reading": "こきゅうおん",
+  "journey": "kansatsu",
+  "category": "呼吸を見る",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🎧",
+  "mapNode": "karada:mune",
+  "relatedTerms": [
+   "ks-choshin",
+   "ks-sayusa"
+  ],
+  "description": "息を する ときに 胸から 聞こえる 音。救急隊は 聴診器で 聞いて、空気が きちんと 入っているかの 手がかりに します。"
+ },
+ {
+  "id": "ks-hifunoiro",
+  "name": "皮膚の色",
+  "reading": "ひふのいろ",
+  "journey": "kansatsu",
+  "category": "皮膚と顔色",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "karada:hifu",
+  "relatedTerms": [
+   "ks-kaoiro",
+   "ks-chianoze"
+  ],
+  "description": "はだの 色の こと。青白い・赤い・むらさき色っぽい など、皮膚の 色は 血の めぐりや 酸素の ようすを 知る 手がかりです。"
+ },
+ {
+  "id": "ks-sohaku",
+  "name": "顔面蒼白",
+  "reading": "がんめんそうはく",
+  "journey": "kansatsu",
+  "category": "皮膚と顔色",
+  "difficulty": 2,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "😶",
+  "mapNode": "karada:hifu",
+  "relatedTerms": [
+   "ks-kaoiro",
+   "ks-shock"
+  ],
+  "description": "顔が 青白く なっている こと。血の めぐりが よくない ときなどに 見られ、救急隊は 見のがさない ように します。"
+ },
+ {
+  "id": "ks-jcs",
+  "name": "JCS",
+  "reading": "じぇーしーえす",
+  "journey": "kansatsu",
+  "category": "意識のものさし",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-gcs",
+   "ks-ishikilevel"
+  ],
+  "description": "意識の ようすを あらわす ものさしの 名前。日本で 広く 使われ、救急隊は これで 病院に 意識の ようすを 伝えます。"
+ },
+ {
+  "id": "ks-gcs",
+  "name": "GCS",
+  "reading": "じーしーえす",
+  "journey": "kansatsu",
+  "category": "意識のものさし",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-jcs",
+   "ks-ishikilevel"
+  ],
+  "description": "目・ことば・からだの 動きの 3つの 見かたで 意識の ようすを あらわす ものさしの 名前。世界で 使われています。"
+ },
+ {
+  "id": "ks-abcde",
+  "name": "ABCDEアプローチ",
+  "reading": "えーびーしーでぃーいーあぷろーち",
+  "journey": "kansatsu",
+  "category": "観察の流れ",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-shoki",
+   "ks-kansatsu"
+  ],
+  "description": "気道・呼吸・循環・意識・体温 などの 順に、大事な ところから 見ていく 考えかた。見おとしを へらす ために 使われます。"
+ },
+ {
+  "id": "ks-ishikishogai",
+  "name": "意識障害",
+  "reading": "いしきしょうがい",
+  "journey": "kansatsu",
+  "category": "意識のものさし",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "💤",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-jcs",
+   "ks-kettou"
+  ],
+  "description": "意識が はっきり しない 状態の こと。原因は いろいろ あるので、救急隊は 観察と 話を 聞いて 手がかりを あつめ、病院へ つなぎます。"
+ },
+ {
+  "id": "ks-genbyo",
+  "name": "現病歴",
+  "reading": "げんびょうれき",
+  "journey": "kansatsu",
+  "category": "話を聞く",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🗒️",
+  "mapNode": "karada:kiku",
+  "relatedTerms": [
+   "ks-shuso",
+   "ks-kioureki"
+  ],
+  "description": "いまの ぐあいが いつ・どのように はじまり、どう かわって きたかの 流れ。救急隊は 聞いた ことを まとめて 病院に 伝えます。"
+ },
+ {
+  "id": "ks-shosai",
+  "name": "詳細観察",
+  "reading": "しょうさいかんさつ",
+  "journey": "kansatsu",
+  "category": "観察の流れ",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "karada:atama",
+  "relatedTerms": [
+   "ks-zenshin",
+   "ks-keizoku"
+  ],
+  "description": "初期評価の あとに、気に なる ところを 時間を かけて くわしく 見る 観察。救急車の 中で 行う ことも あります。"
+ },
+ {
+  "id": "ks-keizoku",
+  "name": "継続観察",
+  "reading": "けいぞくかんさつ",
+  "journey": "kansatsu",
+  "category": "観察の流れ",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "karada:ishiki",
+  "relatedTerms": [
+   "ks-shosai",
+   "ks-vital"
+  ],
+  "description": "病院に 着くまで、ようすが かわらないかを くり返し たしかめる こと。かわった ことは すぐ 病院に 伝えます。"
+ },
+ {
+  "id": "ks-shock",
+  "name": "ショックの徴候",
+  "reading": "しょっくのちょうこう",
+  "journey": "kansatsu",
+  "category": "皮膚と顔色",
+  "difficulty": 3,
+  "field": "病態別臨床医学",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "karada:hifu",
+  "relatedTerms": [
+   "ks-sohaku",
+   "ks-massho",
+   "ks-hiyaase"
+  ],
+  "description": "からだの 血の めぐりが 足りなく なっている ことを 知らせる しるし。顔色・冷や汗・脈の ようすなどから 救急隊が 見つけます。"
+ },
+ {
+  "id": "ks-kokyuyoshiki",
+  "name": "呼吸様式",
+  "reading": "こきゅうようしき",
+  "journey": "kansatsu",
+  "category": "呼吸を見る",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "karada:kokyu",
+  "relatedTerms": [
+   "ks-kokyusu",
+   "ks-doryoku"
+  ],
+  "description": "息の しかたの ようすの こと。速さ・深さ・リズム・胸と おなかの 動きかたを 見て、呼吸の ようすを たしかめます。"
+ },
+ {
+  "id": "ks-doryoku",
+  "name": "努力呼吸",
+  "reading": "どりょくこきゅう",
+  "journey": "kansatsu",
+  "category": "呼吸を見る",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "😤",
+  "mapNode": "karada:kokyu",
+  "relatedTerms": [
+   "ks-kokyuyoshiki",
+   "ks-kanbotsu"
+  ],
+  "description": "ふだんは 使わない 首や 肩の 筋肉まで 使って、がんばって 息を している ようす。呼吸が つらい しるしの ひとつです。"
+ },
+ {
+  "id": "ks-kiza",
+  "name": "起座呼吸",
+  "reading": "きざこきゅう",
+  "journey": "kansatsu",
+  "category": "呼吸を見る",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "karada:kokyu",
+  "relatedTerms": [
+   "ks-doryoku",
+   "ks-ikigurushi"
+  ],
+  "description": "横に なると 息が しにくく、からだを 起こして すわった ほうが 楽に なる ようす。救急隊は 楽な 姿勢を たもって 運びます。"
+ },
+ {
+  "id": "ks-kanbotsu",
+  "name": "陥没呼吸",
+  "reading": "かんぼつこきゅう",
+  "journey": "kansatsu",
+  "category": "呼吸を見る",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "👶",
+  "mapNode": "karada:kokyu",
+  "relatedTerms": [
+   "ks-doryoku",
+   "ks-kokyuyoshiki"
+  ],
+  "description": "息を 吸う ときに、胸の 骨の あいだや みぞおちが へこむ ようす。小さな 子どもで 見られる ことが あり、呼吸が つらい しるしです。"
+ },
+ {
+  "id": "ks-massho",
+  "name": "末梢冷感",
+  "reading": "まっしょうれいかん",
+  "journey": "kansatsu",
+  "category": "手足を見る",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "karada:teashi",
+  "relatedTerms": [
+   "ks-shock",
+   "ks-crt"
+  ],
+  "description": "手や 足の 先が つめたく 感じる こと。血の めぐりの ようすを 知る 手がかりに なります。"
+ },
+ {
+  "id": "ks-crt",
+  "name": "CRT",
+  "reading": "しーあーるてぃー",
+  "journey": "kansatsu",
+  "category": "手足を見る",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "💅",
+  "mapNode": "karada:teashi",
+  "relatedTerms": [
+   "ks-massho",
+   "ks-shock"
+  ],
+  "description": "指先の つめを 押して 色が もどるまでの 時間を 見る 観察(毛細血管再充満時間)。血の めぐりの ようすを 知る 手がかりです。"
+ },
+ {
+  "id": "ks-toukotsu",
+  "name": "橈骨動脈",
+  "reading": "とうこつどうみゃく",
+  "journey": "kansatsu",
+  "category": "手足を見る",
+  "difficulty": 3,
+  "field": "基礎医学",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "karada:teashi",
+  "relatedTerms": [
+   "ks-myakuhaku",
+   "ks-keidomyaku"
+  ],
+  "description": "手首の 親指がわを 通る 動脈。救急隊は ここで 脈を たしかめる ことが 多いです。"
+ },
+ {
+  "id": "ks-keidomyaku",
+  "name": "頸動脈",
+  "reading": "けいどうみゃく",
+  "journey": "kansatsu",
+  "category": "頭と首を見る",
+  "difficulty": 3,
+  "field": "基礎医学",
+  "type": "concept",
+  "emoji": "🫀",
+  "mapNode": "karada:atama",
+  "relatedTerms": [
+   "ks-toukotsu",
+   "ks-keijomyaku"
+  ],
+  "description": "首の 両わきを 通って、頭へ 血を 送る 太い 動脈。脈を たしかめる 場所の ひとつです。"
+ },
+ {
+  "id": "ks-keijomyaku",
+  "name": "頸静脈怒張",
+  "reading": "けいじょうみゃくどちょう",
+  "journey": "kansatsu",
+  "category": "頭と首を見る",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "karada:atama",
+  "relatedTerms": [
+   "ks-keidomyaku",
+   "ks-kiza"
+  ],
+  "description": "首の 静脈が ふくらんで 見える こと。心臓や 胸の ようすを 考える 手がかりの ひとつとして、救急隊が 見ます。"
+ },
+ {
+  "id": "ks-doukofudo",
+  "name": "瞳孔不同",
+  "reading": "どうこうふどう",
+  "journey": "kansatsu",
+  "category": "目を見る",
+  "difficulty": 3,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "karada:me",
+  "relatedTerms": [
+   "ks-doko",
+   "ks-taiko"
+  ],
+  "description": "左右の 目で 瞳孔の 大きさが ちがう こと。脳の ようすを 考える 大事な 手がかりなので、救急隊は 病院に すぐ 伝えます。"
+ },
+ {
+  "id": "ks-kyodo",
+  "name": "共同偏視",
+  "reading": "きょうどうへんし",
+  "journey": "kansatsu",
+  "category": "目を見る",
+  "difficulty": 3,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "karada:me",
+  "relatedTerms": [
+   "ks-doukofudo",
+   "ks-katamahi"
+  ],
+  "description": "両目が そろって 同じ ほうを 向いたままに なる こと。脳の ようすを 考える 手がかりの ひとつです。"
+ },
+ {
+  "id": "ks-kobu",
+  "name": "項部硬直",
+  "reading": "こうぶこうちょく",
+  "journey": "kansatsu",
+  "category": "頭と首を見る",
+  "difficulty": 3,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "🧣",
+  "mapNode": "karada:atama",
+  "relatedTerms": [
+   "ks-keidomyaku",
+   "ks-ishikishogai"
+  ],
+  "description": "首の うしろが かたく なって、首を 前に 曲げにくい ようす。脳や その まわりの ようすを 考える 手がかりに なります。"
+ },
+ {
+  "id": "ks-katamahi",
+  "name": "片麻痺",
+  "reading": "へんまひ",
+  "journey": "kansatsu",
+  "category": "からだのようす",
+  "difficulty": 3,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "karada:teashi",
+  "relatedTerms": [
+   "ks-mahi",
+   "ks-koon"
+  ],
+  "description": "からだの 右か 左の かたほうの 手足が 動かしにくい 状態。救急隊は 左右を くらべて 見て、病院えらびに 役立てます。",
+  "acceptedReadings": [
+   "へんまひ",
+   "かたまひ"
+  ]
+ },
+ {
+  "id": "ks-koon",
+  "name": "構音障害",
+  "reading": "こうおんしょうがい",
+  "journey": "kansatsu",
+  "category": "からだのようす",
+  "difficulty": 3,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "👅",
+  "mapNode": "karada:atama",
+  "relatedTerms": [
+   "ks-gengo",
+   "ks-katamahi"
+  ],
+  "description": "口や 舌が うまく 動かず、ことばが はっきり 言えない 状態。ことばの 意味は わかっていても、発音が しにくく なります。"
+ },
+ {
+  "id": "ks-juni",
+  "name": "12誘導心電図",
+  "reading": "じゅうにゆうどうしんでんず",
+  "journey": "kansatsu",
+  "category": "心臓を見る",
+  "difficulty": 3,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "karada:mune",
+  "relatedTerms": [
+   "ks-shindenzu",
+   "ks-fuseimyaku"
+  ],
+  "description": "心臓の 電気の ようすを いくつもの 方向から 記録する 心電図。心臓の 病気を 見つける 手がかりとして、病院に 送る ことも あります。"
+ },
+ {
+  "id": "ks-fukubu",
+  "name": "腹部膨満",
+  "reading": "ふくぶぼうまん",
+  "journey": "kansatsu",
+  "category": "からだのようす",
+  "difficulty": 3,
+  "field": "臓器器官別臨床医学",
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "karada:mune",
+  "relatedTerms": [
+   "ks-hakike",
+   "ks-shokushin"
+  ],
+  "description": "おなかが はって ふくらんで いる ようす。救急隊は 見たり ふれたり して たしかめ、病院に 伝えます。"
+ },
+ {
+  "id": "ks-sayusa",
+  "name": "呼吸音の左右差",
+  "reading": "こきゅうおんのさゆうさ",
+  "journey": "kansatsu",
+  "category": "呼吸を見る",
+  "difficulty": 3,
+  "field": "臨床救急医学総論",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "karada:mune",
+  "relatedTerms": [
+   "ks-kokyuon",
+   "ks-choshin"
+  ],
+  "description": "右の 胸と 左の 胸で、聞こえる 呼吸の 音に ちがいが ある こと。肺の ようすを 考える 大事な 手がかりです。"
+ }
+]

@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリック医師</title>
+<title>フリック花屋</title>
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="favicon.png?v=2">
+<link rel="icon" type="image/png" href="../favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -423,12 +423,10 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=4" alt="" width="900" height="233" aria-hidden="true">
+      <span class="logo-text">フリック花屋</span>
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリック医師</h1>
-    <img class="hero" src="hero.webp?v=4" alt="フリック医師。病院の 前で 白衣の 男の人と 女の人と 犬が こちらを 指さして 笑っている 絵。まわりに 7つの 旅の ことばの 札と 4択クイズの 見本が ならんでいる" width="1536" height="1024">
+    <h1 class="sr-only">フリック花屋</h1>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -552,15 +550,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=32b346cc"></script>
-<script src="ishi.js?v=0a82b349"></script>
+<script src="terms.js?v=0239e96f"></script>
+<script src="hanaya.js?v=5a81b380"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
    前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"ishi", name:"フリック医師", modes:(typeof ISHI === "object" ? ISHI.modes : []), assets:"../", logo:true, hero:true, dir:"ishi/", lead:"診察の ことば・検査の ことば・治療と くすりの ことば・診療科と 専門・からだと 病気の しくみ・公衆衛生と 予防・医師の 制度と 倫理を、ひらがなで フリック入力。打つと その ことばの 意味と、医師国家試験の どの 区分か・しくみ図の どこに あるのかが 出るよ。病院で 聞く ことばから はじめて、医師国家試験の 範囲の めやすまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。薬の 量や 手あて・手術の やりかたは のせていないよ。本当に 具合が わるい ときは、大人に 言って お医者さんへ。説明は 本物の 試験問題では ないので、試験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、医学の ことばと しくみが つながって 見えてくるよ。厚生労働省とは 関係ありません。" };
+const GAME = { id:"hanaya", name:"フリック花屋", modes:(typeof HANAYA === "object" ? HANAYA.modes : []), assets:"../", logo:false, hero:false, dir:"hanaya/", lead:"春・夏・秋・冬の 花の 名前と 花言葉・花言葉と 色・花を 育てて 長もちさせる ことば・アレンジと 花束・花屋の 仕事と 行事・仕入れと 鮮度・接客と 注文・開業と 経営の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、花の 名前なら 💐 花言葉が 出るよ。店に ならぶ 花の 名前から はじめて、花屋で 働ける ことば → 店を まかせられる ことば(フラワー装飾技能士 3級・2級の 範囲の めやす)→ 花屋を 開いて 経営する ことば(1級の 範囲の めやす と 原価・粗利・資金繰り)まで。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。花言葉は 本や 国・お店に よって ちがう ことが あるよ。花束の 作りかたの 手順は 書いていないよ。花ばさみや ナイフは おとなと いっしょに 使ってね。値段や 日持ちの 日数・開業資金などの 数字は お店や 年で 変わるので のせていないよ。花束を 組む 手わざや 目利きは、実際に 手を 動かして 身に つけてね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、花の 名前と 気持ちと お店の しごとが つながって 見えてくるよ。花屋・花の 宅配の 会社・職業能力開発協会・日本フラワーデザイナー協会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

@@ -638,8 +638,7 @@
     ゲームに ある 読みを 指定して 作りなおして もらった(ふたば・おこめ・いちば・ろーたりー・さぎょう)。2回目は 札 32こ + 流れの 4こ ぜんぶ ゲームに ある 読みで 確かめた
   - 四角い 絵の 札には ゲームに 無い ことば(ひかり・ひりょう・むし・びょうき・ごはん・はうす・たがやす・うえる・そだてる など)と、レベルの「3級(にゅうもん)・1級(じょうきゅう)」が あるが、
     **アイコンの 大きさでは 読めないので そのまま**(医師・教師・料理人と 同じ 判断)
-  - ⚠️ **題名の 絵は まだ 無い**(`hero=True, logo=False` → 題名は 文字)。届いたら `tools/noka/art/title-src.png` → `python3 tools/title_from_art.py noka`、
-    `build_games.py` の `logo=True`・`art.word` を 実寸に・`wordv` +1、speed-king の `games.ts` に `word` を 足す。**届いた 字は かならず 切り出して 読む**
+  - 題名は けいくんの ChatGPT の 切りぬき(2026-10-03。`tools/noka/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py noka` → `noka/logo-word.webp` 900×246。`logo=True`・`wordv` = 2)。「フリック農家」6字を 読んで 確かめた
   - 仮の アイコンの 台本 `tools/noka/placeholder_icon.py` は もう 使わない(記録に のこす)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #308)・販売ページ `HOME_GAMES`(夢のしごと の 章、料理人の となり)・規約の 一覧 `FLICK_SERIES_GAMES` に 足した
 - 確かめかた: `node tools/play-all.mjs noka/`(全112ステージ。旅 7×8 + マスター 56)/ `node tools/click-all.mjs noka/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`

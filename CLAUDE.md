@@ -719,7 +719,7 @@
 - **題名も 入れた**(2026-10-03。けいくんの ChatGPT の 切りぬき `tools/sumaho/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py sumaho` → `sumaho/logo-word.webp` 900×219。`logo=True`・`wordv` = 3)。「フリックスマホ」7字と 右の スマホの 絵(りんごの マーク なし・どこの 機種でも ない 形)を 見て 確かめた
   届いたら 四角い 絵 → `tools/sumaho/art/square-src.png` → `python3 tools/icon_from_square.py sumaho`(`iconv` +1)/ 題名の 透明 PNG → `tools/sumaho/art/title-src.png` → `python3 tools/title_from_art.py sumaho`(`logo=True`・`art.word` を 実寸)。
   ⚠️⚠️ 絵を 頼む ときは **りんごの マーク・実在の スマホの 形(カメラの 並びで 機種が わかる もの)・実在の アプリの アイコン・「iPhone」の 字** を 描かせない。届いたら まず 字と マークを 見る(「スマホ旅行」と 字を 足されやすい)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**(題名の ロゴの 字に そろえる)。⚠️ **販売ページ・規約に「iPhone」を 書かない**
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #320)・販売ページ `HOME_GAMES`(夢のしごと の 章、薬剤師の となり)・規約の 一覧 `FLICK_SERIES_GAMES`(speed-king #326)に 足した。題名の 絵が 届いたら `games.ts` に `word` を 足す。⚠️ **販売ページ・規約に「iPhone」を 書かない**
 - 確かめかた: `node tools/play-all.mjs sumaho/`(全140ステージ。旅 10×7 + マスター 70)/ `node tools/click-all.mjs sumaho/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック薬剤師(`yakuzai/`。けいくん 2026-10-03「薬剤師の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」。まとめは `docs/フリック薬剤師-はじめかた.md`)
@@ -798,7 +798,7 @@
   四角い 絵の 札には 字の くずれ(「どぇえきたんちけん」)・ゲームに 無い 遊び(「うちの ペットの からだを かんさつ してみよう!」)・やりかたの 4択(ねつが たかい ときに つかう もの)が あるが、**アイコンの 大きさでは 読めないので そのまま**(医師・教師・料理人と 同じ 判断)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない(記録に のこす)
 - 題名は **まだ 無い**(`logo=False`)。届いたら 題名の 透明 PNG → `tools/jui/art/title-src.png` → `python3 tools/title_from_art.py jui`(`logo=True`・`art.word` を 実寸)。
   ⚠️ 絵を 頼む ときは **注射・手術・血・動物を 押さえつける 絵・実在の 病院や フードの ロゴ**を 描かせない。届いたら まず 字を 切り出して 読む(「獣医士」「獣医者」に なりやすい)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**(題名の ロゴの 字に そろえる)
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #320)・販売ページ `HOME_GAMES`(夢のしごと の 章、薬剤師の となり)・規約の 一覧 `FLICK_SERIES_GAMES`(speed-king #326)に 足した。題名の 絵が 届いたら `games.ts` に `word` を 足す
 - 確かめかた: `node tools/play-all.mjs jui/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs jui/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック家事(`kaji/`。けいくん 2026-10-03「主婦の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。お母さんが家族の為に休み無しでどれほど大変で頑張っているかが伝わる内容がいいね。子ども達や家族がお母さんありがとうと言いたくなる内容がいいね」→ 同じ日「フリック家事にした方が良くない!」→「家事にして」。まとめは `docs/フリック家事-はじめかた.md`)

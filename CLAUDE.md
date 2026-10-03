@@ -794,8 +794,9 @@
     4択の 問い「**ぴ**ょうきの」→「びょうきの」/ 説明の 箱の ふだ「**話題**の 科目」→「試験の 科目」/ しゅじゅつ の 札が **手術を している 人の 絵** → 1回目の 絵の 手術灯だけの 絵を 写した
   - 気になるが そのままに したもの: けんえきたんちけん の 札の 絵が 犬では なく 検査キット / レベル1が「ペットを 正しく **知る** ことば」(ゲームは「飼える 人」。意味は 通る)
   - もとの 絵は 入れものに 入れていない(ほかの ゲームと 同じ)
-- アイコン・題名は **まだ 無い**(仮の アイコン `tools/jui/placeholder_icon.py` = 青の 地に 白い 肉球。`logo=False`)。
-  届いたら 四角い 絵 → `tools/jui/art/square-src.png` → `python3 tools/icon_from_square.py jui`(`iconv` +1)/ 題名の 透明 PNG → `tools/jui/art/title-src.png` → `python3 tools/title_from_art.py jui`(`logo=True`・`art.word` を 実寸)。
+- **アイコンは けいくんの 四角い 絵(1254px)を 切らずに そのまま**(2026-10-03。`tools/jui/art/square-src.png` → `python3 tools/icon_from_square.py jui`。`iconv` = 2)。
+  四角い 絵の 札には 字の くずれ(「どぇえきたんちけん」)・ゲームに 無い 遊び(「うちの ペットの からだを かんさつ してみよう!」)・やりかたの 4択(ねつが たかい ときに つかう もの)が あるが、**アイコンの 大きさでは 読めないので そのまま**(医師・教師・料理人と 同じ 判断)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない(記録に のこす)
+- 題名は **まだ 無い**(`logo=False`)。届いたら 題名の 透明 PNG → `tools/jui/art/title-src.png` → `python3 tools/title_from_art.py jui`(`logo=True`・`art.word` を 実寸)。
   ⚠️ 絵を 頼む ときは **注射・手術・血・動物を 押さえつける 絵・実在の 病院や フードの ロゴ**を 描かせない。届いたら まず 字を 切り出して 読む(「獣医士」「獣医者」に なりやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**(題名の ロゴの 字に そろえる)
 - 確かめかた: `node tools/play-all.mjs jui/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs jui/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`

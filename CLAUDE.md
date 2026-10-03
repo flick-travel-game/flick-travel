@@ -865,7 +865,8 @@
   ⚠️ **1回目は 入れなかった**: 本物の 哲学者の 顔・年表に 生まれた年と 亡くなった年・旅が 10こ(ローマが べつ)・ゲームに 無い 札(ことば・ぽりす・すとあ・じつぞん・わつじ …)。
   2回目の のこり 3か所は **絵の 中で 直した**(`tools/tetsugaku/fix_text.py`): 高校地理 → 高校倫理 / 年表「3人は おなじ ころに 生きた」の 紀元前4・3世紀 → 5世紀 / つながる ことば「ことば」→「いけん」。
   **アイコン**は けいくんの 四角い 絵(`tools/tetsugaku/art/square-src.png`)を 切らずに そのまま(`iconv` = 2)。札の「きもん」・答えが 1つで ない 4択・「おてつだいで ポイント」などは **アイコンの 大きさでは 読めないので そのまま**。
-  **題名は まだ**(`logo=False`)。届いたら 四角い 絵 `tools/tetsugaku/art/square-src.png` → `python3 tools/icon_from_square.py tetsugaku`(`iconv` +1)/ 題名 `tools/tetsugaku/art/title-src.png` → `python3 tools/title_from_art.py tetsugaku`(`logo=True`・`art.word` を 実寸)。
+  **題名も 入れた**(けいくんの ChatGPT の 切りぬき `tools/tetsugaku/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py tetsugaku` → `tetsugaku/logo-word.webp` 900×223。`logo=True`・`wordv` = 3)。「フリック哲学」6字を 読んで 確かめた。
+  (差しかえる ときは)四角い 絵 `tools/tetsugaku/art/square-src.png` → `python3 tools/icon_from_square.py tetsugaku`(`iconv` +1)/ 題名 `tools/tetsugaku/art/title-src.png` → `python3 tools/title_from_art.py tetsugaku`(`logo=True`・`art.word` を 実寸)。
   ⚠️ 絵を 頼む ときは **実在の 哲学者の 顔・宗教の 大きな しるし**を 描かせない。人物は 画面の 下 3分の1に 小さく。届いたら まず 字を 切り出して 読む(「哲字」「哲学旅行」に なりやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`(⚠️ 哲学は「夢のしごと」では なく 学びの 章が 合う。章は けいくんに 聞く)と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs tetsugaku/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs tetsugaku/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`、仮の アイコンは `pip install Pillow`

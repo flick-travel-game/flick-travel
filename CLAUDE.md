@@ -587,10 +587,12 @@
     箱ごとに ゲームに ある 読みを 指定して 作りなおして もらった
   - 2回目は 札 36こを 切り出して 読み、**ぜんぶ ゲームに あって 旅の 箱も 合っている**ことを 確かめた。題名「フリック大工」(工に かなづちが 重なるが 字は 読める)・手・首も よし。
     箱は 9つ(「継手と仕口」と「墨付け」が べつの 箱。どちらも 継手の 旅の 語)
-  - **アイコンは まだ 仮**(コードで 描いた 家の 骨組み。`tools/daiku/placeholder_icon.py` が logo-mark2.webp も 作る)・**題名は 文字**(`logo=False`)。
-    四角い 絵(1254px)→ `tools/daiku/art/square-src.png` → `python3 tools/icon_from_square.py daiku`(iconv +1)/ 題名の 透明 PNG → `tools/daiku/art/title-src.png` → `python3 tools/title_from_art.py daiku`(`logo=True`・`art.word`・wordv +1)。
+  - **アイコンは けいくんの 四角い 絵(1254px)を 切らずに そのまま**(2026-10-03。`tools/daiku/art/square-src.png` → `python3 tools/icon_from_square.py daiku`。`iconv` = 2)。
+    四角い 絵の 札には ゲームに 無い ことば(しゃちぐみ・ありぐみ・きそ など)や 答えの 合わない 4択が あるが、**アイコンの 大きさでは 読めないので そのまま**(医師・教師・料理人と 同じ 判断)。
+    ⚠️ 男の子が **かんなを 手に 持って 削っている**(刃物を 子どもが 持つ 絵)。けいくんに 伝えた。作りなおすなら 頼みかたは トップの 絵と 同じ
+  - **題名は 文字**(`logo=False`)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない(記録に のこす)。題名の 透明 PNG → `tools/daiku/art/title-src.png` → `python3 tools/title_from_art.py daiku`(`logo=True`・`art.word`・wordv +1)。
     もとの 絵は 入れものに 入れていない(ほかの ゲームと 同じ)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`・規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**(`HOME_GAMES` は 絵の 住所を 持つため)
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`(夢のしごと の 章、整備士の となり。題名の 絵は まだ なので 名前は 字)・規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-03 に 足した
 - 確かめかた: `node tools/play-all.mjs daiku/`(4とおりの 打ちかたで 全112ステージ。旅 7×8 + マスター 56)/ `node tools/click-all.mjs daiku/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック農家(`noka/`。けいくん 2026-10-03「農家の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」。まとめは `docs/フリック農家-はじめかた.md`)
@@ -632,7 +634,7 @@
 - 絵は **まだ 無い**(`build_games.py` で `hero=False, logo=False`・art なし → 題名は 文字)。仮の アイコンは コードで 描いた 緑の 地に 白い 芽と 畝(`tools/noka/placeholder_icon.py`)。
   絵が 届いたら: トップ `noka/hero.webp`(1536×1024)・四角い 絵を `tools/noka/art/square-src.png` → `python3 tools/icon_from_square.py noka`・題名の 透明 PNG を `tools/noka/art/title-src.png` → `python3 tools/title_from_art.py noka`、
   `build_games.py` に `art=dict(...)` を 足して `hero=True, logo=True`。**届いた 絵の 字は かならず 切り出して 読む**
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`・規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**(`HOME_GAMES` は 絵の 住所を 持つため)
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`(夢のしごと の 章、整備士の となり。題名の 絵は まだ なので 名前は 字)・規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-03 に 足した
 - 確かめかた: `node tools/play-all.mjs noka/`(全112ステージ。旅 7×8 + マスター 56)/ `node tools/click-all.mjs noka/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## 入力が 止まる バグと 見つけかた(けいくん 2026-09-28「ゲームの途中で入力できなくなった」)

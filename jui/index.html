@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>フリック獣医師</title>
+<!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
+     iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
+     どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
+<link rel="apple-touch-icon" href="/apple-icon.png">
+<link rel="icon" type="image/png" href="favicon.png?v=1">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="かずとも">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#4fb8ff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Yomogi&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff; --card:#ffffff; --ink:#4a3b63; --muted:#6b7890;
+  --red:#d7263d; --blue:#1b4f9c; --ok:#1f8a5b; --line:#e6e2ee; --soft:#f4f1f8;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f1726; --card:#18233a; --ink:#e8eef8; --muted:#8b98b0;
+    --red:#ff5a6e; --blue:#6f9df0; --ok:#4fd19a; --line:#2a3854; --soft:#223049;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f1726; --card:#18233a; --ink:#e8eef8; --muted:#8b98b0;
+  --red:#ff5a6e; --blue:#6f9df0; --ok:#4fd19a; --line:#2a3854; --soft:#223049;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+body{margin:0;min-height:100%;background:var(--paper);color:var(--ink);
+  font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
+  -webkit-tap-highlight-color:transparent}
+.wrap{max-width:520px;margin:0 auto;padding:16px 16px 40px}
+.display{font-family:"Dela Gothic One","Hiragino Sans","Yu Gothic",sans-serif;font-weight:400}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.hidden{display:none!important}
+
+.airmail{position:relative;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.airmail>.inner{border-radius:12px;padding:12px}
+
+/* ホーム */
+.lead{color:var(--muted);margin:0 0 20px;font-size:15px;line-height:1.7}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 18px}
+.mode.cur{box-shadow:0 0 0 3px #fff,0 0 0 6px var(--sk-a),0 14px 26px -12px color-mix(in srgb,var(--sk-a) 60%,transparent)}
+/* ⚠️ えらんでいない旅を うすくしない(けいくん 2026-09-26「かずともよりかなり色が薄い」)。えらんだ旅は わく(.mode.cur)で分かる */
+.mode{display:flex;gap:14px;align-items:center;text-align:left;width:100%;
+  background:var(--card);border:2px solid var(--line);border-radius:12px;padding:16px}
+.mode:active{transform:scale(.98)}
+.mode .ic{font-size:34px;width:52px;height:52px;display:grid;place-items:center;background:var(--soft);border-radius:10px;flex:none}
+.mode b{display:block;font-size:18px}
+.mode small{color:var(--muted);font-size:13px}
+.how{margin-top:22px;font-size:14px;line-height:1.8;color:var(--muted)}
+.how p{margin:0 0 6px}
+.about-link{margin:14px 0 0;font-size:13px}.about-link a{color:var(--muted)}
+.legal-links{margin:8px 0 0;font-size:11px;line-height:1.9;display:flex;flex-wrap:wrap;gap:0 8px}.legal-links a{color:var(--muted)}.legal-links span{color:var(--muted);opacity:.5}
+.how .rule{color:var(--ink);font-weight:700;background:var(--soft);border-radius:10px;padding:10px 12px;margin-top:10px}
+
+/* ゲーム：キーボードが出ても画面内に収まるよう、見えている範囲に合わせて固定 */
+body.playing{overflow:hidden}
+#game{position:fixed;left:0;right:0;top:0;height:var(--vvh,100%);transform:translateY(var(--vvt,0px));
+  display:flex;flex-direction:column;justify-content:flex-end;gap:8px;max-width:520px;margin:0 auto;
+  padding:calc(env(safe-area-inset-top,0px) + 8px) 12px 8px;background:var(--paper);z-index:5}
+.prog.warn{color:var(--red);font-weight:700}
+.bar{display:flex;align-items:center;justify-content:space-between;flex:none}
+.quit{background:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--muted)}
+.prog{font-size:13px;color:var(--muted)}
+.clock{font-size:20px;font-variant-numeric:tabular-nums}
+#game .airmail{flex:none}
+#game .airmail>.inner{display:flex;flex-direction:column}
+.qtext{font-size:17px;line-height:1.5;font-weight:700;margin:0 0 4px;flex:none}
+.who{font-size:14px;color:var(--blue);font-weight:700;margin:0 0 8px;flex:none}
+.photo{flex:none;height:clamp(70px,calc(var(--vvh,100vh) - 360px),240px);border-radius:8px;overflow:hidden;margin-bottom:8px;position:relative}
+.photo svg,.intro svg,.photo img,.intro img{display:block;width:100%;height:100%}
+.ph{position:relative;width:100%;height:100%;overflow:hidden}
+.ph .blur{position:absolute;inset:0;object-fit:cover;filter:blur(16px) brightness(.9);transform:scale(1.25)}
+.ph .main{position:relative;object-fit:contain}
+.ph.emoji{display:grid;place-items:center;background:linear-gradient(135deg,#c9efff,#4fb8ff)}
+.ph.emoji span{font-size:clamp(48px,18vw,120px);line-height:1;filter:drop-shadow(0 4px 8px rgba(0,60,120,.35))}
+.intro .ph.emoji span{font-size:44px}
+.photo .ph.emoji span{position:static;background:none;padding:0;right:auto;bottom:auto}
+.intro .pic:has(.emoji){height:96px}
+.intro .credit{display:block;margin-top:8px;font-size:11px;font-style:normal;color:var(--muted)}
+.intro .credit a{color:inherit}
+.photo span{position:absolute;right:8px;bottom:6px;font-size:11px;color:#fff;background:rgba(0,0,0,.35);padding:2px 8px;border-radius:999px}
+.spot{font-size:22px;font-weight:700;margin:0;flex:none}
+.country{font-size:13px;color:var(--muted);margin:0 0 8px;flex:none}
+.target{font-size:18px;line-height:1.75;letter-spacing:.03em;background:var(--soft);border-radius:8px;padding:8px 10px;word-break:break-all;flex:none}
+.target .c{color:var(--muted)}
+.target .d{color:var(--ok)}
+.target .n{color:var(--ink);border-bottom:3px solid var(--blue)}
+.target .x{color:#fff;background:var(--red);border-radius:3px}
+.target .sep{display:inline-block;width:.8em;color:var(--muted)}
+.answer{flex:none;width:100%;font:inherit;font-size:18px;padding:10px 12px;border-radius:10px;
+  border:2px solid var(--line);background:var(--card);color:var(--ink)}
+.answer.bad{border-color:var(--red)}
+.field{position:relative;flex:none}
+.field .answer{color:transparent;caret-color:transparent}
+.field .answer::selection{background:transparent}
+.typed{position:absolute;left:14px;right:14px;top:50%;transform:translateY(-50%);font-size:18px;
+  white-space:nowrap;overflow:hidden;pointer-events:none;color:var(--ink)}
+.typed:empty::before{content:"ここに打つ(青い線が次の文字)";color:var(--muted)}
+.count{position:absolute;inset:0;border-radius:12px;background:var(--card);display:grid;place-items:center;font-size:72px;color:var(--red);z-index:2}
+
+/* 結果 */
+.stamp{width:170px;height:170px;border-radius:50%;margin:10px auto 14px;border:4px double var(--red);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--red);transform:rotate(-8deg)}
+.stamp .t{font-size:40px;line-height:1}
+.stamp small{font-size:13px;margin-top:6px}
+.new{text-align:center;color:var(--red);font-weight:700;margin:0 0 6px}
+.stats{display:flex;justify-content:center;gap:26px;margin:4px 0 18px;text-align:center}
+.stats b{display:block;font-size:22px}
+.stats small{color:var(--muted);font-size:12px}
+.list{list-style:none;padding:0;margin:0 0 20px;border-top:1px solid var(--line)}
+.list li{display:flex;justify-content:space-between;gap:12px;padding:10px 2px;border-bottom:1px solid var(--line);font-size:14px}
+.list li span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.list li span:last-child{font-variant-numeric:tabular-nums;flex:none}
+.intros{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:14px}
+.intro{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.intro .pic{height:200px}
+.intro .body{padding:12px 14px 14px}
+.intro .head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.intro .head b{font-size:18px}
+.board{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 14px}
+.board-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.board-head b{font-size:16px;white-space:nowrap}
+.board-head span{font-size:12px;color:var(--muted);text-align:right}
+.board-tabs{display:flex;gap:6px;margin:8px 0}
+.board-tabs button{flex:1;padding:6px 0;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700}
+.board-tabs button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.board-body{min-height:2.4em}
+.board-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-top:1px solid var(--line);font-size:14px}
+.board-row:first-child{border-top:none}
+.board-row .rk{width:2.2em;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.board-row .rk.top{color:#c24f00}
+.board-row .nm{flex:1;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board-row .tm{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:700}
+.board-row.me{background:var(--soft);border-radius:8px;padding-left:6px;padding-right:6px}
+.board-note{font-size:12px;color:var(--muted);line-height:1.7;margin:4px 0 0}
+.board-row .rk.md{font-size:18px;color:inherit;text-align:center}
+/* のび(かずとも Growth.tsx と 同じ絵。上に いくほど 速い) */
+.growbox{background:#f8fafc;border-radius:24px;padding:16px;margin:0 0 14px;color:#334155}
+.grow-ttl{margin:0 0 4px;text-align:center;font-size:12px;font-weight:900;color:#64748b}
+.growbox svg{display:block;width:100%;height:auto}
+.growbox .gl{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 0;text-align:center}
+.growbox .gl dt{font-size:12px;font-weight:700;color:#94a3b8}
+.growbox .gl dd{margin:0;font-size:16px;font-weight:900;font-variant-numeric:tabular-nums;color:#64748b}
+.growbox .gl dd.ink{color:var(--sk-ink)}
+.growbox .gg{margin:8px 0 0;text-align:center;font-size:16px;font-weight:900}
+.growbox .gg .ink{color:var(--sk-ink)}
+.growbox .gg .no{color:#94a3b8}
+.growbox .gn{margin:8px 0 0;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.growbox .gn+.gn{margin-top:0}
+.growbox .g1{margin:0;text-align:center;font-size:14px;font-weight:700;line-height:28px;color:#64748b}
+.growbox .g0{margin:0;text-align:center;font-size:14px;font-weight:700;color:#94a3b8}
+.rec{margin:0 0 26px}
+/* れんぞく(かずとも Streak.tsx の StreakCard / StreakBoard と 同じ) */
+.stk{text-align:center;margin:0}
+.stk .big{font-size:30px;font-weight:900;color:var(--sk-ink)}
+.stk .w{font-size:16px;font-weight:900;color:#64748b}
+.stk0{text-align:center;margin:0;font-size:18px;font-weight:900;color:#64748b}
+.stk0 .ink{color:var(--sk-ink)}
+.stk-n{margin:4px 0 0;text-align:center;font-size:14px;font-weight:700;color:#94a3b8}
+.stk-n b{font-weight:900;color:#64748b}
+.stk-b{margin:4px 0 0;text-align:center;font-size:14px;font-weight:900;color:#64748b}
+.stk-l{margin:4px 0 0;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.stkb{margin:-2px 0 14px}
+.stkb-t{margin:0 0 8px;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.stkb ol{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.stkb li{display:flex;align-items:center;gap:8px;min-width:0;border-radius:16px;padding:8px 12px}
+.stkb li.sk-key{background:#fff}
+.stkb .rk{width:28px;flex:none;text-align:center;font-size:14px;font-weight:900;color:#94a3b8}
+.stkb li.sk-card .rk{color:inherit}
+.stkb .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;font-weight:900;color:#475569}
+.stkb .dy{flex:none;font-size:14px;font-weight:900;color:#64748b}
+.stkb li.sk-card .nm,.stkb li.sk-card .dy{color:inherit}
+.rec-ttl{margin:24px 0 0;text-align:center;font-size:20px;font-weight:900;color:#334155}
+.rec-sub{margin:4px 0 12px;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.rec-lv{display:flex;gap:6px;overflow-x:auto;padding:0 0 10px;-webkit-overflow-scrolling:touch}
+.rec-lv button{flex:none;padding:6px 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700}
+.rec-lv button.on{background:#1e293b;border-color:#1e293b;color:#fff}
+.board-note button{font:inherit;font-weight:700;color:var(--blue);background:none;border:none;text-decoration:underline;padding:0}
+ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02em}
+.map-cap ruby.nm rt{font-size:9px}
+.intro .head span{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:700;flex:none}
+.intro small{color:var(--muted);font-size:13px}
+.intro p{margin:6px 0 0;font-size:14px;line-height:1.75}
+.intro .quote{margin:10px 0 4px;padding:10px 12px;border-left:4px solid var(--sk-a,#8a2be0);background:var(--soft);border-radius:0 10px 10px 0}
+.intro .quote .qt{margin:0;font-size:15px;font-weight:700;line-height:1.8}
+.intro .quote .qd{margin:6px 0 0;font-size:13px;color:var(--muted);line-height:1.75}
+.btns{display:grid;gap:10px}
+/* レベルえらび */
+.map-card{margin:4px 0 22px}
+.map-head{display:flex;justify-content:space-between;align-items:baseline;margin:0 2px 8px}
+.map-head b{font-size:20px;font-family:"Yomogi","Zen Maru Gothic",sans-serif;color:#1f1f1f;letter-spacing:.06em}
+.map-head span{font-weight:700;color:#1f1f1f;font-family:"Yomogi","Zen Maru Gothic",sans-serif;font-size:18px;font-variant-numeric:tabular-nums}
+/* 地図は 2本の指(ピンチ)・＋－・ダブルタップで 8倍まで 大きくできる(けいくん 2026-09-26「もっと地図を拡大出来るようにならないと 目的のピンにたどり着かない」)。
+   .map-in を transform で 大きくし、ピンは --k(=1/倍率)で 小さくもどすので **ピンの大きさは 変わらず 場所だけ 離れる** */
+.map{position:relative;border-radius:.75rem;overflow:hidden;box-shadow:0 10px 22px -14px rgba(0,0,0,.55);touch-action:pan-y;user-select:none;-webkit-user-select:none}
+/* ⚠️ 大きくするのは transform の scale ではなく **幅(width)**。Safari は scale した層を 1倍で描いた絵のまま 引きのばすので
+   4k の絵に差しかえても ぼやけたままだった(けいくん 2026-09-26「まだボヤけてる」)。幅を変えれば 絵を 描きなおす。
+   動かすのは translate(ぼやけない) */
+.map-in{position:absolute;left:0;top:0;width:100%}
+/* 年表(歴史フリック旅行) */
+.map[data-map="time"] #map-img,.map[data-map="time"] .sea,.map[data-map="time"] .compass{display:none}
+.map[data-map="time"]{background:linear-gradient(180deg,#fff9ee,#fff3dc)}
+.tl-wrap{width:100%;aspect-ratio:1080/300}
+/* 宇宙・からだ: 絵の上に 📍(SVG の 図。tools/build_games.py が 作る ページで 使う) */
+.map[data-map="svg"] #map-img,.map[data-map="svg"] .sea,.map[data-map="svg"] .compass{display:none}
+.svg-wrap{width:100%}
+.svg-wrap svg{display:block;width:100%;height:auto}
+.map-tabs{display:flex;gap:6px;margin:0 0 8px}
+.map-tabs button{padding:6px 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700}
+.map-tabs button.on{background:#1e293b;border-color:#1e293b;color:#fff}
+.tl-wrap svg{display:block;width:100%;height:100%}
+.logo-text{font-family:"Dela Gothic One",sans-serif;font-size:22px;color:var(--ink);line-height:1.1;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.series{margin:14px 0 0}
+.series .series-ttl{margin:0;font-size:13px;font-weight:900;color:var(--muted)}
+.map-zoom{position:absolute;right:8px;bottom:8px;display:flex;flex-direction:column;gap:6px;z-index:5}
+.map-zoom button{width:34px;height:34px;border-radius:10px;border:none;background:rgba(255,255,255,.92);color:#1f1f1f;font:inherit;font-size:20px;font-weight:900;line-height:1;box-shadow:0 2px 6px rgba(0,0,0,.25);padding:0}
+.map-zoom button:active{background:#fff;transform:translateY(1px)}
+.map .sea,.map .compass{position:absolute;transform:translate(-50%,-50%);font-family:"Yomogi","Zen Maru Gothic",sans-serif;
+  color:#fff;text-shadow:0 1px 3px rgba(0,60,120,.6);font-size:clamp(10px,3vw,16px);letter-spacing:.3em;pointer-events:none;white-space:nowrap}
+.map .compass{letter-spacing:0;text-align:center;line-height:1;font-size:clamp(10px,2.8vw,15px)}
+.map .sea.small{font-size:clamp(9px,2.4vw,13px);letter-spacing:.1em}
+.map[data-map="world"] .j,.map[data-map="japan"] .w{display:none}
+.map img{display:block;width:100%;height:auto}
+/* やった所だけ 📍(けいくん 2026-09-26「📍にする?」)。まだの所は 出さない。
+   針の先が その場所。大きくしても ピンの大きさは 変わらない(--k で 打ち消す)。えらんだ ピンは 少し大きく */
+.pin{position:absolute;width:0;height:0;padding:0;border:none;background:none;overflow:visible}
+.pin i{position:absolute;left:0;bottom:0;transform:translate(-50%,0);transform-origin:50% 100%;font-style:normal;font-size:22px;line-height:1;filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.45));cursor:pointer;padding:2px 4px 0}
+.pin.sel i{transform:translate(-50%,0) scale(1.4);z-index:2}
+.pin.sel{z-index:2}
+.map-cap{font-size:13px;color:var(--muted);margin:8px 2px 0;min-height:1.6em}
+.map-cap b{color:var(--ink)}
+.gmap{display:inline-block;margin-top:6px;padding:7px 14px;border-radius:999px;background:#fff;border:1.5px solid var(--line);
+  color:#1d6bff;font-weight:700;font-size:13px;text-decoration:none}
+.intro .gmap{margin-top:10px}
+.intro .gmap{margin-right:6px}
+/* 会社の 時価総額(株式フリック旅行) */
+.intro .mcap{margin:10px 0 4px;padding:8px 12px;border-left:4px solid var(--sk-a,#0f6fa8);background:var(--soft);border-radius:0 10px 10px 0;font-size:14px}
+.intro .mcap b{font-size:16px}
+.intro .mcap small{display:block;margin-top:2px;font-size:11.5px;color:var(--muted,#777);line-height:1.5}
+.lv-title{font-size:22px;margin:0 0 12px;color:#004fe6}
+.pins-msg{text-align:center;font-weight:700;color:#004fe6;margin:0 0 10px}
+.lv-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0 4px}
+.lv-head h2{font-size:24px;margin:0}
+.lv-lead{color:var(--muted);margin:0 0 14px;font-size:14px;line-height:1.7}
+.levels{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lv{text-align:left;width:100%;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 14px}
+.lv:active{transform:scale(.98)}
+.lv b{display:block;font-size:17px}
+.lv small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.lv .bt{color:var(--blue);font-weight:700;font-size:13px;margin-top:4px}
+.lv.done{border-color:var(--ok)}
+.intro ruby rt{font-size:.55em;color:var(--muted)}
+.intro p.rb{line-height:2.2}
+.primary{background:var(--blue);color:#fff;border:none;border-radius:12px;padding:16px;font-size:17px;font-weight:700}
+.ghost{background:none;border:2px solid var(--line);border-radius:12px;padding:14px;font-size:15px}
+
+/* ── ボタンの色 ──
+   sanctuary-chiba/speed-king の docs/ボタンの色.md(かずとも の ボタン)の とおり。
+   ⚠️ 色は この CSS に 書かない。JS の COLORS(1か所)から style で わたす */
+/* ── ロゴ(docs/ロゴの文字.md の とおり。ぜんぶ 44px) ── */
+.logo{display:flex;align-items:center;gap:6px;margin:0 0 10px}
+.logo-mark{height:44px;width:44px;border-radius:10px;object-fit:cover}
+.logo-word{height:44px;width:auto;flex:0 1 auto;min-width:0;object-fit:contain;object-position:left center}
+/* ── だれが あそぶ？(かずともと 同じ形。けいくん 2026-09-25「かずともとまったく同じにしてください」) ──
+   右上: うすい灰色の なまえ(11px) + 44px の 四角い タイル(写真 か なまえの 1文字)。
+   えらぶ画面: 白い カード・4列の 60px タイル・なまえ・学年。写真は 📷 で えらぶ */
+.prof-btn{margin-left:auto;display:flex;align-items:center;gap:6px;min-width:0;border:none;background:none;padding:0;font:inherit;flex:none;max-width:44%}
+.prof-btn .nm{min-width:0;max-width:80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;font-weight:900;color:#94a3b8}
+.prof-btn .nm:empty{display:none}
+.tile{display:flex;align-items:center;justify-content:center;overflow:hidden;flex:none;font-weight:900;color:var(--sk-on,#fff)}
+.tile img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;display:block}
+.tile.sm{width:44px;height:44px;border-radius:10px;font-size:16px}
+.tile.md{width:60px;height:60px;border-radius:13px;font-size:20px}
+.prof-sheet{position:fixed;inset:0;background:rgba(15,23,42,.6);z-index:50;overflow-y:auto;padding:40px 20px}
+.prof-box{background:#fff;color:#334155;width:100%;max-width:448px;margin:0 auto;border-radius:24px;padding:20px;box-shadow:0 25px 50px -12px rgba(0,0,0,.25)}
+.prof-box h2{margin:0;text-align:center;font-size:18px;font-weight:900;color:#334155}
+.prof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.prof-grid button{display:flex;flex-direction:column;align-items:center;gap:4px;border:none;background:none;padding:0;font:inherit;min-width:0}
+.prof-grid .tile{transition:opacity .15s}
+.prof-grid .tile.off{opacity:.6}
+.prof-grid .tile.cur{box-shadow:0 0 0 4px #1e293b}
+.prof-grid .pn{width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:14px;font-weight:900;color:#94a3b8}
+.prof-grid .pn.cur{color:#334155}
+.prof-grid .pg{font-size:10px;font-weight:700;color:#94a3b8}
+.sk-key{background:#fff;box-shadow:0 4px 10px -4px rgba(15,23,42,.18),inset 0 0 0 1.5px rgba(100,116,139,.18)}
+.prof-grid .tile.sk-key{color:#94a3b8;font-size:24px}
+.prof-form{margin-top:16px;background:#f8fafc;border-radius:16px;padding:16px}
+.prof-form .lb{margin:0;font-size:12px;font-weight:700;color:#94a3b8}
+.prof-form input{display:block;width:100%;margin-top:8px;border-radius:16px;border:2px solid #e2e8f0;background:#fff;padding:12px 16px;text-align:center;font:inherit;font-size:24px;font-weight:900;color:#334155;outline:none;box-sizing:border-box}
+.prof-form input::placeholder{color:#cbd5e1;font-weight:700}
+.prof-form input:focus{border-color:#94a3b8}
+.prof-form input.bad{border-color:#fb7185}
+.prof-form .err{margin:8px 0 0;text-align:center;font-size:14px;font-weight:900;color:#f43f5e}
+.prof-form .err:empty{display:none}
+.prof-form .row{display:flex;gap:8px;margin-top:12px}
+.prof-form .go{flex:1;border:none;border-radius:16px;background:#1e293b;color:#fff;padding:12px;font:inherit;font-size:14px;font-weight:900}
+.prof-form .no{border:none;background:none;border-radius:16px;padding:12px 20px;font:inherit;font-size:14px;font-weight:700;color:#94a3b8}
+.prof-cur{display:flex;align-items:center;gap:16px;margin-top:16px;background:#f8fafc;border-radius:16px;padding:12px 16px}
+.prof-cur .pic{position:relative;flex:none;border:none;background:none;padding:0;font:inherit}
+.prof-cur .cam{position:absolute;right:-4px;bottom:-4px;z-index:2;background:#fff;border-radius:999px;padding:2px 6px;font-size:12px;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.prof-cur .tx{min-width:0;flex:1}
+.prof-cur .tx b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:18px;font-weight:900;color:#334155}
+.prof-cur .tx small{display:block;margin-top:2px;font-size:12px;font-weight:700;color:#94a3b8}
+.prof-cur .tx .lnk{margin-top:4px}
+.lnk{border:none;background:none;padding:0;font:inherit;font-size:12px;font-weight:700;color:#94a3b8;text-decoration:underline}
+.prof-err{margin:8px 0 0;text-align:center;font-size:12px;font-weight:900;color:#f43f5e}
+.prof-err:empty{display:none}
+.prof-links{display:flex;justify-content:center;gap:16px;margin-top:8px}
+.prof-links .lnk{padding:8px 16px;border-radius:999px}
+.prof-note{margin:12px 0 0;text-align:center;font-size:12px;font-weight:700;line-height:20px;color:#94a3b8}
+.prof-set{margin-top:20px;border-top:1px solid #f1f5f9;padding-top:16px}
+.prof-set .ttl{margin:0;font-size:14px;font-weight:900;color:#64748b}
+.prof-set .lb{margin:12px 0 0;font-size:12px;font-weight:700;color:#94a3b8}
+.prof-set .two{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px}
+.prof-set .two>*{border-radius:16px;padding:12px 0;font:inherit;font-size:16px;font-weight:900;border:none;text-align:center}
+.prof-set .on{background:#1e293b;color:#fff;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.prof-set .off{color:#64748b}
+.prof-set .sel{position:relative}
+.prof-set select{width:100%;appearance:none;-webkit-appearance:none;border:none;border-radius:16px;margin:0;padding:12px 28px 12px 12px;outline:none;font:inherit;font-size:16px;font-weight:900;text-align:center;text-align-last:center;color:inherit;background-color:transparent;box-shadow:none}
+.prof-set .sel.on select{background-color:#1e293b}
+.prof-set .sel.off select{background-color:#fff}
+.prof-set .arw{pointer-events:none;position:absolute;top:50%;right:12px;transform:translateY(-50%);font-size:12px;color:#94a3b8}
+.prof-set .sel.on .arw{color:#fff}
+.prof-set .hint{margin:8px 0 0;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.who{font-size:13px;color:var(--muted);margin:-6px 0 10px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.hero{display:block;width:100%;height:auto;border-radius:.75rem;margin:0 0 14px;box-shadow:0 10px 22px -14px rgba(0,0,0,.55)}
+.sk-card{
+  --sk-a:#f20077; --sk-b:#ff4da3; --sk-on:#ffffff;
+  position:relative; overflow:hidden; border:none; border-radius:0.75rem;
+  color:var(--sk-on); text-shadow:0 1px 2px rgba(0,0,0,0.18);
+  background-image:
+    url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%3E%3Cfilter%20id='f'%20filterUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='180'%20height='180'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.9'%20numOctaves='1'%20seed='3'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%201%200%200%200%200%201%2010%200%200%200%20-7.3'/%3E%3C/filter%3E%3Crect%20width='180'%20height='180'%20filter='url%28%23f%29'/%3E%3C/svg%3E"),
+    linear-gradient(180deg,rgba(255,255,255,0.28),rgba(255,255,255,0) 58%),
+    linear-gradient(135deg,var(--sk-a),var(--sk-b));
+  background-size:180px 180px,100% 100%,100% 100%;
+  box-shadow:0 14px 26px -12px color-mix(in srgb,var(--sk-a) 60%,transparent),inset 0 2px 0 rgba(255,255,255,0.4);
+}
+.sk-card::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%3E%3Cfilter%20id='f'%20filterUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='180'%20height='180'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.9'%20numOctaves='1'%20seed='11'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%201%200%200%200%200%201%2012%200%200%200%20-9.1'/%3E%3C/filter%3E%3Crect%20width='180'%20height='180'%20filter='url%28%23f%29'/%3E%3C/svg%3E");background-size:180px 180px;animation:sk-glitter 1.6s ease-in-out infinite}
+.sk-card::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%3E%3Cfilter%20id='f'%20filterUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='180'%20height='180'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.9'%20numOctaves='1'%20seed='23'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%200%200%200%200%201%200%200%200%200%201%2012%200%200%200%20-9.5'/%3E%3C/filter%3E%3Crect%20width='180'%20height='180'%20filter='url%28%23f%29'/%3E%3C/svg%3E");background-size:180px 180px;animation:sk-glitter 2.3s ease-in-out infinite;animation-delay:0.8s}
+@keyframes sk-glitter{0%,100%{opacity:0.15}50%{opacity:1}}
+/* ⚠️ ならぶ ボタンは 光る 時こくを ずらす */
+.sk-card-1::before{animation-delay:0s} .sk-card-2::before{animation-delay:0.45s}
+.sk-card-3::before{animation-delay:0.9s} .sk-card-4::before{animation-delay:1.35s}
+.sk-card-1::after{animation-delay:0.8s} .sk-card-2::after{animation-delay:1.4s}
+.sk-card-3::after{animation-delay:0.2s} .sk-card-4::after{animation-delay:1.9s}
+.sk-card-5::before{animation-delay:1.8s} .sk-card-6::before{animation-delay:2.25s}
+.sk-card-5::after{animation-delay:1.1s} .sk-card-6::after{animation-delay:0.5s}
+.sk-card-7::before{animation-delay:0.3s} .sk-card-8::before{animation-delay:1.2s} .sk-card-9::before{animation-delay:2.0s}
+.sk-card-7::after{animation-delay:1.7s} .sk-card-8::after{animation-delay:0.1s} .sk-card-9::after{animation-delay:0.9s}
+@media (prefers-reduced-motion: reduce){.sk-card::before,.sk-card::after{animation:none;opacity:0.7}}
+.sk-card>*{position:relative;z-index:1}
+
+.mode.sk-card{padding:14px 12px;min-height:96px;flex-direction:column;align-items:flex-start;gap:8px}
+.mode .tx{display:block;min-width:0}
+.mode .tx small{display:block}
+.mode .ic{background:rgba(255,255,255,.25);border-radius:.75rem;font-size:28px;width:44px;height:44px}
+.mode b{font-size:20px;letter-spacing:.02em}
+.mode small{color:inherit;opacity:.92;font-size:12px}
+.mode .go{margin-left:auto;font-size:30px;line-height:1}
+.lv.sk-card{padding:14px 16px;min-height:92px}
+.lv b{font-size:21px}
+.lv small,.lv .bt{color:inherit}
+.lv small{opacity:.9}
+.lv.done b::after{content:" ✓";font-size:16px}
+.lv-head h2{font-size:28px}
+.primary{background:#1e2940;border-radius:999px;padding:18px}
+:root[data-theme="dark"] .primary{background:#3b5bdb}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .primary{background:#3b5bdb}}
+.ghost{border-radius:999px;background:var(--card)}
+.quit{background:var(--card)}
+.how .rule{border-radius:16px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* おうちの方の アカウントと つなぐ(かずとも ④-c と 同じ線。つないでいないと のびが ぼける・きろくが とじると きえる) */
+.blurred{position:relative}
+.blurred .bl-in{filter:blur(5px);opacity:.7;pointer-events:none;user-select:none;-webkit-user-select:none}
+.blurred .bl-note{margin:10px 0 0;text-align:center;font-size:13px;font-weight:900;color:#64748b}
+.keep-note{margin:0 0 14px;padding:12px 14px;border-radius:16px;background:#fff7ed;color:#9a3412;font-size:13px;font-weight:700;line-height:1.7;text-align:center}
+.keep-note a,.prof-link a,.prof-link .lnk{color:#2563eb;font-weight:900;text-decoration:underline}
+.prof-link{margin:8px 0 0;text-align:center;font-size:12px;font-weight:700;line-height:20px;color:#64748b}
+.prof-link .lnk{margin-left:6px;font-size:12px;color:#94a3b8;font-weight:700}
+.prof-sub{margin:2px 0 0;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
+.pg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px 6px;margin-top:10px}
+.pg-grid a{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#334155;font-size:10px;font-weight:900;line-height:13px;text-align:center;min-width:0}
+.pg-grid a[aria-current]{opacity:.5}
+.pg-grid .tile{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;background:#f1f5f9;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.pg-grid .tile img{width:100%;height:100%;object-fit:cover;border-radius:14px;display:block}
+.prof-link .pill{display:inline-block;margin-top:8px;padding:10px 18px;border-radius:999px;background:#1e293b;color:#fff;font-size:13px;font-weight:900;text-decoration:none;line-height:20px}  /* 指で 押せる 大きさ(2026-09-30 けいくん「ボタン押せないよ」) */
+.flick-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1000;max-width:calc(100% - 32px);padding:12px 18px;border-radius:999px;background:#1e293b;color:#fff;font-size:14px;font-weight:900;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:opacity .4s}
+.flick-toast.out{opacity:0}
+/* 登録なしの 体験(2026-09-29): のこり日数の 1行 と おわった ときの 窓。お金の 字は 出さない */
+.trial-note{margin:10px 0 0;padding:10px 14px;border-radius:14px;background:#fef3c7;color:#92400e;font-size:13px;font-weight:900;line-height:1.7;text-align:center}
+.trial-note a{color:inherit}
+.trial-end{position:fixed;inset:0;z-index:1200;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(15,23,42,.6)}
+.trial-end .te-box{width:100%;max-width:340px;padding:24px;border-radius:24px;background:#fff;text-align:center}
+.trial-end .te-ttl{margin:0;font-size:18px;font-weight:900;color:#334155}
+.trial-end .te-sub{margin:12px 0 0;font-size:14px;font-weight:700;line-height:1.8;color:#64748b}
+.trial-end .te-go{display:block;margin:20px 0 0;padding:12px;border-radius:16px;background:#1e293b;color:#fff;font-size:14px;font-weight:900;text-decoration:none}
+.trial-end .te-close{margin:12px 0 0;border:0;background:none;color:#94a3b8;font-size:14px;font-weight:900;text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ホーム -->
+  <section id="home">
+    <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
+         読みあげソフトには かくして、下の <h1> が 名前を言う -->
+    <div class="logo">
+      <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
+      <span class="logo-text">フリック獣医師</span>
+      <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
+    </div>
+    <h1 class="sr-only">フリック獣医師</h1>
+    <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
+    <div class="modes" id="modes"></div>
+    <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
+    <div class="map-card">
+      <div class="map-head"><b id="map-title">世界一周マップ</b><span id="map-count">0 / 100か所</span></div>
+      <div class="map-tabs hidden" id="map-tabs"></div>
+      <div class="map" id="map" data-map="world"><div class="map-in" id="map-in"><img id="map-img" src="../world-map-color.jpg" alt="世界地図" width="1080" height="432">
+        <span class="sea w" style="left:14%;top:51%">太平洋</span>
+        <span class="sea w" style="left:92%;top:44%">太平洋</span>
+        <span class="sea w" style="left:39%;top:41%">大西洋</span>
+        <span class="sea w" style="left:72%;top:76%">インド洋</span>
+        <span class="compass w" style="left:5%;top:84%">N<br>↑</span>
+        <span class="sea j" style="left:44%;top:40%">日本海</span>
+        <span class="sea j" style="left:72%;top:80%">太平洋</span>
+        <span class="sea j small" style="left:21%;top:26%">沖縄・八重山</span>
+        <span class="compass j" style="left:93%;top:93%">N<br>↑</span>
+      </div>
+        <div class="map-zoom"><button type="button" id="zoom-in" aria-label="地図を大きく">＋</button><button type="button" id="zoom-out" aria-label="地図を小さく">－</button><button type="button" id="zoom-reset" aria-label="地図をもとにもどす" hidden>↺</button></div>
+      </div>
+      <p class="map-cap" id="map-cap">レベルをクリアすると、その名所に ピンが立つよ。ピンを押すと 名前が出るよ。</p>
+    </div>
+    <h2 class="lv-title display" id="lv-title">レベルをえらぶ</h2>
+    <div id="kabu-chips"></div><!-- 株式フリック旅行だけ: マスターの 地域・業種 -->
+    <div class="levels" id="lv-list"></div>
+    <!-- いままでの きろく(かずともの ランキング・のび と 同じ並び。あそんだ人にだけ 出る) -->
+    <section class="rec hidden" id="rec">
+      <h2 class="rec-ttl">きろく</h2>
+      <p class="rec-sub" id="rec-sub"></p>
+      <div class="rec-lv" id="rec-lv"></div>
+      <div id="rec-mode">
+      <section class="board" id="board2">
+        <div class="board-head"><b>🏆 みんなのランキング</b><span id="board2-sub"></span></div>
+        <div class="board-tabs" id="board2-tabs"></div>
+        <div id="board2-body" class="board-body"></div>
+      </section>
+      </div>
+      <h2 class="rec-ttl">れんぞく</h2>
+      <p class="rec-sub" id="streak-sub"></p>
+      <div class="growbox" id="h-streak"></div>
+      <div id="streak-board"></div>
+      <div id="rec-mode2">
+      <h2 class="rec-ttl">のび</h2>
+      <p class="rec-sub" id="grow-sub"></p>
+      <div class="growbox" id="h-grow"><div id="h-grow-body"></div></div>
+      </div>
+    </section>
+    <div class="how">
+      <p id="how1">表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。</p>
+      <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
+      <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
+    <p class="trial-note hidden" id="trial-note"></p>
+    <p class="about-link"><a href="https://kazutomo.app/" id="about-link">📖 かずとも の ホーム</a></p>
+    <!-- 法務の リンク(けいくん 2026-10-03「お願いします」。かずともの いちばん下の リンクと 同じ 3つ。中身は かずとも 側の ページ) -->
+    <p class="legal-links"><a href="https://kazutomo.app/privacy">プライバシーの せつめい</a><span aria-hidden="true">|</span><a href="https://kazutomo.app/legal/terms">利用規約</a><span aria-hidden="true">|</span><a href="https://kazutomo.app/legal/tokushoho">特定商取引法に基づく表記</a></p>
+    </div>
+  </section>
+
+  <!-- ゲーム -->
+  <section id="game" class="hidden">
+    <div class="airmail">
+      <div class="count display hidden" id="count">3</div>
+      <div class="inner" id="card"></div>
+    </div>
+    <div class="bar">
+      <button class="quit" id="quit">やめる</button>
+      <span class="prog" id="prog">1 / 10</span>
+      <span class="clock display" id="clock">0.00</span>
+    </div>
+    <div class="field">
+    <input class="answer" id="ans" type="text" lang="ja" inputmode="text"
+      autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done"
+      aria-label="ここに入力">
+    <span class="typed" id="typed"></span>
+    </div>
+  </section>
+
+  <!-- 結果 -->
+  <section id="result" class="hidden">
+    <div class="stamp display"><span class="t" id="r-time">0.00</span><small>秒</small></div>
+    <p class="new hidden" id="r-new">自己ベスト更新！</p>
+    <p class="pins-msg hidden" id="r-pins"></p>
+    <div class="stats">
+      <div><b id="r-cps">0.0</b><small>文字 / 秒</small></div>
+      <div><b id="r-chars">0</b><small>打った文字数</small></div>
+      <div><b id="r-best">-</b><small>自己ベスト</small></div>
+    </div>
+    <div class="growbox" id="r-streak"></div>
+    <div class="growbox hidden" id="r-grow"><p class="grow-ttl">のび</p><div id="r-grow-body"></div></div>
+    <p class="keep-note hidden" id="r-keep"></p>
+    <section class="board" id="board" hidden>
+      <div class="board-head"><b>🏆 みんなのランキング</b><span id="board-sub"></span></div>
+      <div class="board-tabs" id="board-tabs"></div>
+      <div id="board-body" class="board-body"></div>
+    </section>
+    <ul class="list" id="r-list"></ul>
+    <div class="btns">
+      <button class="primary hidden" id="next-lv">次のレベルへ</button>
+      <button class="primary" id="again">もう一度あそぶ</button>
+      <button class="ghost" id="home-btn">地図にもどる</button>
+    </div>
+  </section>
+  <!-- だれが あそぶか(どの画面からも ひらけるよう section の外) -->
+    <div class="prof-sheet hidden" id="prof">
+      <div class="prof-box">
+        <!-- ⚠️ 見出しは マイページ(けいくん 2026-09-30「すべてのゲームの右上に このマイページメニューを」)。あそぶ人・写真・ログイン・ゲームの 一覧・せってい を この 1枚に。かずとも `Game.tsx` の picker と 同じ -->
+        <h2>マイページ</h2>
+        <p class="prof-sub">だれが あそぶ？</p>
+        <div id="prof-grid" class="prof-grid"></div>
+        <form id="prof-form" class="prof-form hidden" novalidate>
+          <p class="lb" id="prof-form-lb"></p>
+          <input type="text" id="prof-name" maxlength="8" autocomplete="off" placeholder="けいくん" enterkeyhint="done">
+          <p class="err" id="prof-name-err"></p>
+          <div class="row"><button type="submit" class="go" id="prof-save">つくる</button><button type="button" class="no" id="prof-cancel">やめる</button></div>
+        </form>
+        <div id="prof-body"></div>
+        <input type="file" id="prof-file" accept="image/*" hidden>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
+<script src="../photos.js"></script>
+<script src="terms.js?v=2761e16d"></script>
+<script src="jui.js?v=4a6db181"></script>
+<script>
+/* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
+   前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
+if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
+/* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
+   tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
+const GAME = { id:"jui", name:"フリック獣医師", modes:(typeof JUI === "object" ? JUI.modes : []), assets:"../", logo:false, hero:false, dir:"jui/", lead:"獣医さんの きほん・動物の からだ・ペットと くらす・動物の 病気と 治療・予防と ワクチン・牧場の 動物・野生動物と 動物園・動物と 人の 健康・法律と 歴史と 動物福祉の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 動物の 話か・試験の 科目・しくみ図の どこに あるのかが 出るよ。ペットを 正しく 飼う ための ことばから はじめて、動物病院で 働く 人(愛玩動物看護師)の めやす、獣医師国家試験の 範囲の めやすの ことばまで。犬と 猫と 牛と 鳥で からだの しくみが ちがう 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。薬の 量や 治療の やりかた・家で できる 手当ては 書いていないよ。動物の ようすが いつもと ちがう ときは、大人に 言って 動物病院へ。人の 薬を 動物に あげないでね。本物の 試験問題では ありません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、動物の からだと くらしと 人の 健康が つながって 見えてくるよ。農林水産省・環境省・動物病院・ペットフードの 会社とは 関係ありません。" };
+/* GAME-END */
+/* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
+const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},
+                 {id:"uchu", name:"フリック宇宙旅行", icon:"🪐", dir:"uchu/"}, {id:"karada", name:"フリックからだ旅行", icon:"🫀", dir:"karada/"},
+                 {id:"kabu", name:"フリック株式旅行", icon:"🏢", dir:"kabu/"}, {id:"ai", name:"フリックAI旅行", icon:"🤖", dir:"ai/"},
+                 {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"eikaiwa/"},
+                 {id:"eigo", name:"フリック英語", icon:"🔤", dir:"eigo/"},
+                 {id:"rika", name:"フリック理科旅行", icon:"🔬", dir:"rika/"},
+                 {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"seibi/"},
+                 {id:"patissier", name:"パティシエフリック", icon:"🍰", dir:"patissier/"},
+                 {id:"kokugo", name:"フリック国語旅行", icon:"📖", dir:"kokugo/"},
+                 {id:"sugaku", name:"フリック数学旅行", icon:"📐", dir:"sugaku/"},
+                 {id:"hoiku", name:"フリック保育士", icon:"🧸", dir:"hoiku/"},
+                 {id:"kango", name:"フリック看護師", icon:"🩺", dir:"kango/"},
+                 {id:"gamedev", name:"フリックゲームクリエイター", icon:"🎮", dir:"gamedev/"},
+                 {id:"biyo", name:"フリック美容師", icon:"💇", dir:"biyo/"},
+                 {id:"kyoryu", name:"フリック恐竜図鑑", icon:"🦖", dir:"kyoryu/"},
+                 {id:"code", name:"フリックプログラマー", icon:"💻", dir:"code/"},
+                 {id:"shakai", name:"フリック社会旅行", icon:"🗾", dir:"shakai/"},
+                 {id:"ishi", name:"フリック医師", icon:"🥼", dir:"ishi/"},
+                 {id:"kyoshi", name:"フリック教師", icon:"🏫", dir:"kyoshi/"},
+                 {id:"chef", name:"フリック料理人", icon:"🍳", dir:"chef/"},
+                 {id:"keisatsu", name:"フリック警察官", icon:"🚓", dir:"keisatsu/"},
+                 {id:"shobo", name:"フリック消防士", icon:"🚒", dir:"shobo/"},
+                 {id:"kyukyutai", name:"フリック救急隊員", icon:"🚑", dir:"kyukyutai/"},
+                 {id:"bengoshi", name:"フリック弁護士", icon:"⚖️", dir:"bengoshi/"},
+                 {id:"zeirishi", name:"フリック税理士", icon:"🧾", dir:"zeirishi/"},
+                 {id:"adler", name:"フリックアドラー心理学", icon:"🧠", dir:"adler/"},
+                 {id:"toshika", name:"フリック投資家", icon:"🌱", dir:"toshika/"},
+                 {id:"daiku", name:"フリック大工", icon:"🪚", dir:"daiku/"},
+                 {id:"noka", name:"フリック農家", icon:"🌾", dir:"noka/"},
+                 {id:"yakuzai", name:"フリック薬剤師", icon:"💊", dir:"yakuzai/"}, {id:"jui", name:"フリック獣医師", icon:"🐾", dir:"jui/"}, {id:"kaji", name:"フリック家事", icon:"🏠", dir:"kaji/"},
+                 {id:"hanaya", name:"フリック花屋", icon:"💐", dir:"hanaya/"} ];
+/* 🧭 ゲームを えらぶ の タイル(マイページの 中 と ページの いちばん下 の 2か所で 使う。けいくん 2026-09-30「これと同じ表記にしてください」)。
+   ⚠️ ならびは **かずともの マイページ(speed-king の `HOME_GAMES`)と 同じ 順**。ゲームを 足したら ここにも 足す(無い ものは うしろに つく)。
+   ⚠️ 絵は 各ゲームの `apple-touch-icon.png`、かずともは `logo-mark.webp`。名前は「フリック」を 取る(かずともの `GameGrid` と 同じ) */
+const SERIES_ORDER = ["sugaku", "kokugo", "rika", "shakai", "eigo", "rekishi", "world", "eikaiwa", "uchu", "karada", "kyoryu",
+                      "patissier", "hanaya", "chef", "noka", "hoiku", "kaji", "kango", "ishi", "yakuzai", "jui", "kyoshi", "keisatsu", "shobo", "kyukyutai", "bengoshi", "zeirishi", "adler", "biyo", "seibi", "daiku", "gamedev", "code", "ai", "kabu", "toshika"];
+function gameTilesHtml(){
+  const root = GAME.id === "world" ? "./" : "../";
+  const rank = id => { const k = SERIES_ORDER.indexOf(id); return k < 0 ? 999 : k; };
+  const tiles = [{ name: "かずとも", img: "https://kazutomo.app/logo-mark.webp", href: "https://kazutomo.app/play", cur: false }]
+    .concat(SERIES.slice().sort((a, b) => rank(a.id) - rank(b.id)).map(g => ({ name: g.name.replace(/^フリック/, ""), img: root + g.dir + "apple-touch-icon.png", href: root + g.dir, cur: g.id === GAME.id })));
+  return '<div class="pg-grid">' + tiles.map(x => '<a href="' + x.href + '"' + (x.cur ? ' aria-current="page"' : '') + '><span class="tile"><img src="' + x.img + '" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span>' + esc(x.name) + '</span></a>').join("") + '</div>';
+}
+const QUOTES = [
+  {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},
+  {t:"意志あるところに道は開ける", a:"リンカーン", r:"いしあるところにみちはひらける", ar:"りんかーん"},
+  {t:"過ちて改めざる、是を過ちという", a:"孔子", r:"あやまちてあらためざるこれをあやまちという", ar:"こうし"},
+  {t:"明日死ぬかのように生きよ。永遠に生きるかのように学べ", a:"ガンジー", r:"あすしぬかのようにいきよえいえんにいきるかのようにまなべ", ar:"がんじー"},
+  {t:"想像力は知識よりも大切だ", a:"アインシュタイン", r:"そうぞうりょくはちしきよりもたいせつだ", ar:"あいんしゅたいん"},
+  {t:"余の辞書に不可能という文字はない", a:"ナポレオン", r:"よのじしょにふかのうというもじはない", ar:"なぽれおん"},
+  {t:"世の人は我を何とも言わば言え 我が成すことは我のみぞ知る", a:"坂本龍馬", r:"よのひとはわれをなんともいわばいえわがなすことはわれのみぞしる", ar:"さかもとりょうま"},
+  {t:"ただ生きるのではなく、よく生きることが大切だ", a:"ソクラテス", r:"ただいきるのではなくよくいきることがたいせつだ", ar:"そくらてす"},
+  {t:"終わりよければすべてよし", a:"シェイクスピア", r:"おわりよければすべてよし", ar:"しぇいくすぴあ"},
+  {t:"人間は努力する限り迷うものだ", a:"ゲーテ", r:"にんげんはどりょくするかぎりまようものだ", ar:"げーて"},
+  {t:"努力だ。勉強だ。それが天才だ", a:"野口英世", r:"どりょくだべんきょうだそれがてんさいだ", ar:"のぐちひでよ"},
+  {t:"人の一生は重荷を負うて遠き道を行くが如し", a:"徳川家康", r:"ひとのいっしょうはおもにをおうてとおきみちをゆくがごとし", ar:"とくがわいえやす"},
+  {t:"為せば成る 為さねば成らぬ 何事も 成らぬは人の 為さぬなりけり", a:"上杉鷹山", r:"なせばなるなさねばならぬなにごともならぬはひとのなさぬなりけり", ar:"うえすぎようざん"},
+  {t:"我思う、ゆえに我あり", a:"デカルト", r:"われおもうゆえにわれあり", ar:"でかると"},
+  {t:"知識は力なり", a:"ベーコン", r:"ちしきはちからなり", ar:"べーこん"},
+  {t:"人間は考える葦である", a:"パスカル", r:"にんげんはかんがえるあしである", ar:"ぱすかる"},
+  {t:"賽は投げられた", a:"カエサル", r:"さいはなげられた", ar:"かえさる"},
+  {t:"少年よ、大志を抱け", a:"クラーク", r:"しょうねんよたいしをいだけ", ar:"くらーく"},
+  {t:"天は人の上に人を造らず、人の下に人を造らず", a:"福沢諭吉", r:"てんはひとのうえにひとをつくらずひとのしたにひとをつくらず", ar:"ふくざわゆきち"},
+  {t:"和を以て貴しと為す", a:"聖徳太子", r:"わをもってとうとしとなす", ar:"しょうとくたいし"},
+  {t:"それでも地球は動く", a:"ガリレオ", r:"それでもちきゅうはうごく", ar:"がりれお"},
+  {t:"千里の道も一歩から", a:"老子", r:"せんりのみちもいっぽから", ar:"ろうし"},
+  {t:"時は金なり", a:"フランクリン", r:"ときはかねなり", ar:"ふらんくりん"},
+  {t:"初心忘るべからず", a:"世阿弥", r:"しょしんわするべからず", ar:"ぜあみ"},
+  {t:"彼を知り己を知れば百戦殆うからず", a:"孫子", r:"かれをしりおのれをしればひゃくせんあやうからず", ar:"そんし"},
+  {t:"人間は自由の刑に処せられている", a:"サルトル", r:"にんげんはじゆうのけいにしょせられている", ar:"さるとる"},
+  {t:"知らざるを知らずと為す、是知るなり", a:"孔子", r:"しらざるをしらずとなすこれしるなり", ar:"こうし"},
+  {t:"心頭を滅却すれば火もまた涼し", a:"快川紹喜", r:"しんとうをめっきゃくすればひもまたすずし", ar:"かいせんじょうき"},
+  {t:"人生は近くで見ると悲劇だが、遠くから見れば喜劇だ", a:"チャップリン", r:"じんせいはちかくでみるとひげきだがとおくからみればきげきだ", ar:"ちゃっぷりん"},
+  {t:"私は失敗したことがない。うまくいかない方法を1万通り見つけただけだ", a:"エジソン", r:"わたしはしっぱいしたことがないうまくいかないほうほうをいちまんとおりみつけただけだ", ar:"えじそん"}
+];
+/* 名所のイラスト（SVG）。写真が読めないときの予備の絵 */
+const R=(x,y,w,h,f)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${f}"/>`;
+const P=(pts,f)=>`<polygon points="${pts}" fill="${f}"/>`;
+const C=(x,y,r,f)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${f}"/>`;
+const PA=(d,f,extra="")=>`<path d="${d}" fill="${f}" ${extra}/>`;
+const svg=inner=>`<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`;
+const ART={
+  eiffel:()=>svg(R(0,0,320,180,"#bcd4f2")+C(60,45,14,"#fff4c2")+R(0,150,320,30,"#7fae6a")+
+    P("157,18 163,18 170,70 192,150 172,150 160,114 148,150 128,150 150,70","#6b4f3a")+
+    PA("M149 150 Q160 116 171 150Z","#bcd4f2")+R(145,68,30,5,"#5a412f")+R(137,104,46,5,"#5a412f")+
+    `<line x1="160" y1="6" x2="160" y2="18" stroke="#5a412f" stroke-width="2"/>`),
+  liberty:()=>svg(R(0,0,320,180,"#cfe6e0")+R(0,140,320,40,"#5a9fb0")+R(130,130,60,12,"#8e979c")+R(140,108,40,24,"#9aa3a8")+
+    P("150,110 170,110 166,62 154,62","#4fa38e")+C(160,54,7,"#4fa38e")+
+    P("153,50 150,42 156,47 160,38 164,47 170,42 167,50","#4fa38e")+
+    P("164,60 170,60 179,24 174,23","#4fa38e")+P("171,25 181,25 179,17 173,17","#3f8c78")+C(176,12,5,"#f2b544")+R(147,68,6,14,"#3f8c78")),
+  pyramid:()=>svg(R(0,0,320,180,"#f3dcb0")+C(255,42,18,"#f7c65c")+R(0,140,320,40,"#e0b877")+
+    P("15,140 48,106 81,140","#caa060")+P("60,140 130,58 200,140","#d19a4e")+P("130,58 200,140 150,140","#b98040")+
+    P("175,140 228,82 281,140","#c9914a")+P("228,82 281,140 242,140","#ad7a3d")),
+  wall:()=>svg(R(0,0,320,180,"#cfe0f0")+PA("M0 120 Q60 70 120 110 T240 100 T320 88 V180 H0Z","#7c9a4d")+
+    PA("M0 140 Q80 115 160 140 T320 130 V180 H0Z","#5f7d38")+
+    PA("M0 125 Q60 78 120 116 T240 106 T320 94","none",'stroke="#b59a6d" stroke-width="9"')+
+    R(52,74,16,18,"#a3875a")+R(172,96,16,18,"#a3875a")+R(284,82,16,18,"#a3875a")),
+  taj:()=>svg(R(0,0,320,180,"#f3d7ea")+R(0,140,320,40,"#cfe3c0")+R(135,140,50,40,"#9cc7e0")+R(70,120,180,20,"#efe9f2")+
+    R(76,62,9,58,"#fbf8fc")+C(80.5,60,6,"#fbf8fc")+R(235,62,9,58,"#fbf8fc")+C(239.5,60,6,"#fbf8fc")+
+    R(110,80,100,42,"#fbf8fc")+PA("M150 122 V98 Q160 86 170 98 V122Z","#d9cfe0")+
+    C(120,80,9,"#fbf8fc")+C(200,80,9,"#fbf8fc")+PA("M126 82 Q124 42 160 32 Q196 42 194 82Z","#ffffff")+
+    `<line x1="160" y1="20" x2="160" y2="33" stroke="#d9cfe0" stroke-width="2"/>`),
+  fuji:()=>svg(R(0,0,320,180,"#d3e2fa")+C(255,48,16,"#f28b82")+P("10,160 160,38 310,160","#4f7fcf")+
+    P("160,38 126,66 140,64 150,74 162,64 175,72 194,66","#ffffff")+R(0,150,320,30,"#8fb8e8")),
+  colosseum:()=>{let a="";for(const y of [78,103,128])for(let x=52;x<262;x+=22)a+=PA(`M${x} ${y+18} V${y+6} Q${x+7} ${y-2} ${x+14} ${y+6} V${y+18}Z`,"#9b6a45");
+    return svg(R(0,0,320,180,"#f3dcc8")+R(0,150,320,30,"#d9c4a0")+PA("M40 150 V72 Q120 58 210 60 L230 66 L240 58 L280 70 V150Z","#d8a476")+a)},
+  machu:()=>svg(R(0,0,320,180,"#cdebd5")+`<ellipse cx="90" cy="40" rx="40" ry="10" fill="#ffffff" opacity=".8"/>`+
+    P("170,160 228,36 292,160","#3f7f4f")+P("0,160 0,118 130,104 210,160","#5a9a62")+R(0,158,320,22,"#4f8a58")+
+    [112,122,132,142].map(y=>`<line x1="10" y1="${y}" x2="${120+(y-104)}" y2="${y}" stroke="#86c28b" stroke-width="3"/>`).join("")+
+    R(60,98,12,8,"#b8b0a0")+R(80,95,14,10,"#b8b0a0")+R(100,99,10,7,"#b8b0a0")),
+  opera:()=>svg(R(0,0,320,180,"#cbe6f7")+R(0,130,320,50,"#3b8cc4")+R(60,118,200,14,"#d9c9a8")+
+    PA("M80 118 Q95 62 132 50 Q118 90 125 118Z","#ffffff")+PA("M122 118 Q142 55 182 42 Q166 90 173 118Z","#ffffff")+
+    PA("M168 118 Q187 70 216 62 Q206 95 211 118Z","#f2f6f9")+PA("M208 118 Q220 88 242 84 Q236 104 240 118Z","#e6edf2")),
+  bigben:()=>svg(R(0,0,320,180,"#e6dcc6")+R(40,120,105,40,"#c9ad72")+R(175,120,105,40,"#c9ad72")+
+    R(145,50,30,110,"#b89a5e")+P("143,50 160,10 177,50","#7a6a45")+C(160,72,10,"#fff8e0")+
+    `<path d="M160 72 V65 M160 72 H166" stroke="#5a4a2a" stroke-width="2"/>`+R(0,160,320,20,"#8a7a5a")),
+  sagrada:()=>{let a="";[[92,70],[112,40],[132,26],[152,16],[172,22],[192,38],[212,60],[232,80]].forEach(([x,t])=>{a+=P(`${x},120 ${x+7},${t} ${x+14},120`,"#c9a37a")+C(x+7,t+2,3,"#e8c890")});
+    return svg(R(0,0,320,180,"#f5d3c5")+a+R(80,118,170,42,"#b8905f")+PA("M150 160 V138 Q165 124 180 138 V160Z","#8a6a45")+R(0,160,320,20,"#9a7a55"))},
+  angkor:()=>{const t=(x,w,top)=>PA(`M${x} 128 V${top+30} Q${x+w/2} ${top-8} ${x+w} ${top+30} V128Z`,"#4a3b2a");
+    const sil=t(70,26,76)+t(110,30,62)+t(145,30,34)+t(180,30,62)+t(224,26,76)+R(60,112,200,16,"#4a3b2a");
+    return svg(R(0,0,320,180,"#efe0bb")+C(160,70,26,"#f5b86b")+R(0,128,320,52,"#8fb4c9")+sil+`<g transform="translate(0,256) scale(1,-1)" opacity=".28">${sil}</g>`)},
+  pisa:()=>svg(R(0,0,320,180,"#d9e6f5")+R(0,150,320,30,"#8fbf7a")+`<g transform="rotate(6 160 150)">`+R(140,40,40,110,"#f4efe4")+
+    [58,76,94,112,130].map(y=>R(140,y,40,3,"#d8cfbd")).join("")+R(146,28,28,13,"#efe8da")+`</g>`),
+  arc:()=>svg(R(0,0,320,180,"#cfdcf0")+R(0,150,320,30,"#b9b1a3")+R(95,48,130,102,"#e6d8bb")+R(90,40,140,12,"#d8c8a6")+
+    PA("M135 150 V102 Q160 72 185 102 V150Z","#cfdcf0")+R(104,64,22,40,"#dccba8")+R(194,64,22,40,"#dccba8")),
+  moai:()=>{const hd=(x,h)=>P(`${x},140 ${x},${140-h+15} ${x+8},${140-h} ${x+30},${140-h} ${x+34},${140-h+15} ${x+34},140`,"#6d6259")+R(x+4,140-h+22,28,5,"#51483f")+R(x+14,140-h+27,8,22,"#5c5249");
+    return svg(R(0,0,320,180,"#f6d9b8")+C(250,60,20,"#f4a261")+R(0,140,320,40,"#7fa35a")+hd(70,80)+hd(140,92)+hd(210,76))},
+  golden:()=>svg(R(0,0,320,180,"#f1d6c8")+R(0,128,320,52,"#5f8fb0")+R(80,36,10,100,"#c0392b")+R(230,36,10,100,"#c0392b")+
+    R(0,108,320,7,"#b03224")+PA("M0 64 Q45 58 85 38 Q160 112 235 38 Q280 58 320 64","none",'stroke="#c0392b" stroke-width="3"')),
+  castle:()=>{const tw=(x,y,w,h)=>R(x,y,w,h,"#f3f1ee")+P(`${x-3},${y} ${x+w/2},${y-26} ${x+w+3},${y}`,"#3d5a80");
+    return svg(R(0,0,320,180,"#d6e4f2")+P("0,130 70,70 140,120 210,60 320,125 320,180 0,180","#9fb8a8")+
+      R(128,78,70,62,"#f3f1ee")+P("124,78 163,56 202,78","#3d5a80")+tw(108,58,20,82)+tw(200,46,18,94)+tw(150,40,14,40)+
+      [140,160,180].map(x=>R(x,96,8,12,"#9fb0c4")).join("")+PA("M0 150 Q80 130 160 148 T320 142 V180 H0Z","#4f7d52"))},
+  basil:()=>{const on=(x,y,r,c)=>PA(`M${x-r} ${y} Q${x-r} ${y-r*1.3} ${x} ${y-r*2.2} Q${x+r} ${y-r*1.3} ${x+r} ${y} Q${x} ${y+r*.7} ${x-r} ${y}Z`,c);
+    return svg(R(0,0,320,180,"#dce8f5")+R(0,150,320,30,"#b9a8a0")+R(88,104,144,46,"#b9523c")+
+      R(104,72,20,34,"#c9674f")+on(114,72,13,"#2a9d8f")+R(196,72,20,34,"#c9674f")+on(206,72,13,"#e9c46a")+
+      R(150,48,20,58,"#c9674f")+P("148,50 160,8 172,50","#2a9d8f")+R(126,86,16,20,"#c9674f")+on(134,86,10,"#e76f51")+
+      R(178,86,16,20,"#c9674f")+on(186,86,10,"#457b9d"))},
+  stone:()=>{const st=(x,h)=>R(x,130-h,16,h,"#8a8f94");
+    return svg(R(0,0,320,180,"#dfe7ef")+R(0,130,320,50,"#8fb36a")+st(60,52)+st(92,58)+R(56,70,56,10,"#7b8085")+
+      st(140,62)+st(172,62)+R(136,62,56,10,"#7b8085")+st(222,50)+st(250,38)+R(218,76,34,9,"#7b8085"))},
+  kinkaku:()=>{const pav=`${R(125,98,70,22,"#d8b24a")}${P("112,98 208,98 192,88 128,88","#5a4a3a")}${R(132,70,56,18,"#e0bd57")}${P("120,70 200,70 185,60 135,60","#5a4a3a")}${R(141,47,38,13,"#e6c460")}${P("132,47 188,47 168,34 152,34","#5a4a3a")}`;
+    return svg(R(0,0,320,180,"#cfe3ef")+`<ellipse cx="50" cy="100" rx="70" ry="40" fill="#5f8f5a"/><ellipse cx="280" cy="96" rx="70" ry="44" fill="#557f50"/>`+
+      R(0,118,320,62,"#6f9fb5")+pav+`<g transform="translate(0,238) scale(1,-1)" opacity=".3">${pav}</g>`)},
+  uluru:()=>svg(R(0,0,320,180,"#f2c79a")+R(0,140,320,40,"#d9884a")+PA("M36 140 Q48 96 100 90 Q170 80 250 88 Q292 96 292 140Z","#c1552b")+
+    PA("M120 140 Q126 110 140 100","none",'stroke="#a8461f" stroke-width="3"')+PA("M200 140 Q206 112 222 98","none",'stroke="#a8461f" stroke-width="3"')),
+  petra:()=>svg(R(0,0,320,180,"#d98f73")+R(0,0,70,180,"#c47a5f")+R(250,0,70,180,"#c47a5f")+R(106,56,108,110,"#e8a98c")+
+    P("102,58 160,30 218,58","#e3a086")+[114,138,176,200].map(x=>R(x,62,8,104,"#d49379")).join("")+R(148,112,24,54,"#6b3a2c")+R(0,166,320,14,"#b86d52"))
+};
+/* 写真もイラストも無い名所に出す 地球の絵 */
+const ART_WORLD=()=>svg(R(0,0,320,180,"#cfe0f0")+C(160,90,62,"#5b9bd5")+
+  PA("M118 62 Q140 48 158 60 Q150 78 132 80 Q120 76 118 62Z","#7fbf6a")+
+  PA("M168 96 Q192 84 210 100 Q204 126 182 132 Q166 118 168 96Z","#7fbf6a")+
+  PA("M126 108 Q140 104 146 116 Q138 128 128 124Z","#7fbf6a"));
+/* 本物の写真は photos.js の PHOTOS から読む（写真・撮影者・ライセンス）。無ければイラストを出す */
+const PHOTO_LIST = (typeof PHOTOS === "object" && PHOTOS) ? PHOTOS : {};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function creditOf(ph){
+  const lic = ph.licenseUrl ? '<a href="'+esc(ph.licenseUrl)+'" target="_blank" rel="noopener">'+esc(ph.license)+'</a>' : esc(ph.license);
+  const who = ph.page ? '<a href="'+esc(ph.page)+'" target="_blank" rel="noopener">'+esc(ph.author)+'</a>' : esc(ph.author);
+  return "写真："+who+"（"+lic+"）／Wikimedia Commons";
+}
+function pic(q){
+  if(q.e) return {html:'<div class="ph emoji"><span>'+q.e+'</span></div>', label:"", credit:""};  // 地名は 絵文字のカード
+  const ph = PHOTO_LIST[q.art];
+  if(!ph && q.k === "person") return {html:'<div class="ph emoji"><span>👤</span></div>', label:"", credit:""};  // 肖像が まだ無い偉人(けいくん 2026-09-25「1」= 先に出して あとで足す)
+  if(!ph) return {html:(ART[q.art]||ART_WORLD)(), label:"イラスト", credit:""};
+  const src = GAME.assets + ph.src;  // 歴史・宇宙・からだ の ページは 1つ下の フォルダなので "../" が付く
+  return {html:'<div class="ph"><img class="blur" src="'+esc(src)+'" alt=""><img class="main" src="'+esc(src)+'" alt="'+esc(q.n)+'"></div>', label:"写真", credit:creditOf(ph)};
+}
+const SPOTS = [
+];
+/* ── ボタンの色(1か所だけ) ──
+   docs/ボタンの色.md(sanctuary-chiba/speed-king)の 5色 + toneFrom で作った 5色。
+   a=こい方 / b=うすい方 / ink=白い地の上の字 / on=ボタンの上の字 */
+function hexToRgb(hex){ const n = parseInt(hex.slice(1), 16); return [(n>>16)&255, (n>>8)&255, n&255]; }
+function hexToHsl(hex){
+  const [r255,g255,b255] = hexToRgb(hex); const r=r255/255, g=g255/255, b=b255/255;
+  const max=Math.max(r,g,b), min=Math.min(r,g,b), l=(max+min)/2;
+  if(max===min) return [0,0,l*100];
+  const d=max-min, s = l>0.5 ? d/(2-max-min) : d/(max+min);
+  let h; if(max===r) h=((g-b)/d+(g<b?6:0))/6; else if(max===g) h=((b-r)/d+2)/6; else h=((r-g)/d+4)/6;
+  return [h*360, s*100, l*100];
+}
+function hslToHex(h,s,l){
+  const sat=s/100, lig=l/100, c=(1-Math.abs(2*lig-1))*sat, x=c*(1-Math.abs(((h/60)%2)-1)), m=lig-c/2;
+  const t=Math.floor((((h%360)+360)%360)/60);
+  const [r,g,b]=[[c,x,0],[x,c,0],[0,c,x],[0,x,c],[x,0,c],[c,0,x]][t];
+  const hx=v=>Math.round((v+m)*255).toString(16).padStart(2,"0");
+  return "#"+hx(r)+hx(g)+hx(b);
+}
+function contrastWithWhite(hex){
+  const ch=v=>{ const c=v/255; return c<=0.03928 ? c/12.92 : ((c+0.055)/1.055)**2.4; };
+  const [r,g,b]=hexToRgb(hex); const lum=0.2126*ch(r)+0.7152*ch(g)+0.0722*ch(b);
+  return 1.05/(lum+0.05);
+}
+function inkFor(h,s,l){ let light=Math.min(l,45), hex=hslToHex(h,s,light);
+  while(contrastWithWhite(hex)<4 && light>12){ light-=2; hex=hslToHex(h,s,light); } return hex; }
+/* こい色 1つから、ボタンに いる 4つの色を 作る(数字は docs のとおり。思いつきで 変えない) */
+function toneFrom(hex){
+  const [h,s,l]=hexToHsl(hex);
+  return { a:hex.toLowerCase(), b:hslToHex(h,s,Math.min(l+14,80)), ink:inkFor(h,s,l),
+    on: contrastWithWhite(hslToHex(h,s,Math.min(l+14,80))) >= 2.6 ? "#ffffff" : "#2d2a4a" };
+}
+const TONE = {
+  pink:   {a:"#f20077", b:"#ff4da3", ink:"#e6006e", on:"#ffffff"},
+  blue:   {a:"#1d6bff", b:"#649aff", ink:"#004fe6", on:"#ffffff"},
+  green:  {a:"#00b33c", b:"#00d948", ink:"#008a2e", on:"#ffffff"},
+  purple: {a:"#8a2be0", b:"#bb55ff", ink:"#7b1fe0", on:"#ffffff"},
+  orange: {a:"#f25c00", b:"#ff8a33", ink:"#c24f00", on:"#ffffff"},
+};
+const COLORS = {
+  mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
+          capitals: toneFrom("#0d6e8c"), wevents: TONE.orange, jevents: TONE.blue,  /* 歴史: けいくん 2026-09-27「1」= あかるい 色に */
+          usolar: TONE.orange, usky: TONE.blue, ucos: TONE.purple,  /* 宇宙: けいくん 2026-09-27「このボタンもっと明るい色に」→ 世界と 同じ あかるい 色に */ kbone: TONE.orange, korgan: TONE.pink, kcell: TONE.green, ktsubo: TONE.purple,  /* からだ: 同じく あかるい 色に */
+          rphys: TONE.blue, rchem: TONE.pink, rbio: TONE.green, rgeo: TONE.orange },  /* 理科: あかるい 色(2026-09-27) */  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
+  /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
+     ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
+     黄色は 白い字が 読めるまで 暗くすると 茶色になるので 使わず、赤に した */
+  level: [TONE.pink, toneFrom("#e0202e"), TONE.orange, TONE.green, toneFrom("#006b57"),
+          toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
+};
+/* 差しこみ口(PLUG)。つみあげの コースを 持つ ゲームだけが 1つ 持つ:
+   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語旅行 = kokugo/kokugo.js の KOKUGO / フリック数学旅行 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO / フリック恐竜図鑑 = kyoryu/kyoryu.js の KYORYU / フリックプログラマー = code/code.js の CODEPG / フリック英語 = eigo/eigo.js の EIGO / フリック社会旅行 = shakai/shakai.js の SHAKAI / フリック医師 = ishi/ishi.js の ISHI / フリック教師 = kyoshi/kyoshi.js の KYOSHI / フリック料理人 = chef/chef.js の CHEF。ほかの ゲームでは null で 何もしない */
+const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : typeof SEIBI === "object" ? SEIBI : typeof PATISSIER === "object" ? PATISSIER : typeof KOKUGO === "object" ? KOKUGO : typeof SUGAKU === "object" ? SUGAKU : typeof HOIKU === "object" ? HOIKU : typeof KANGO === "object" ? KANGO : typeof GAMEDEV === "object" ? GAMEDEV : typeof BIYO === "object" ? BIYO : typeof KYORYU === "object" ? KYORYU : typeof CODEPG === "object" ? CODEPG : typeof EIGO === "object" ? EIGO : typeof SHAKAI === "object" ? SHAKAI : typeof ISHI === "object" ? ISHI : typeof KYOSHI === "object" ? KYOSHI : typeof CHEF === "object" ? CHEF : typeof KEISATSU === "object" ? KEISATSU : typeof SHOBO === "object" ? SHOBO : typeof KYUKYUTAI === "object" ? KYUKYUTAI : typeof BENGOSHI === "object" ? BENGOSHI : typeof ZEIRISHI === "object" ? ZEIRISHI : typeof ADLER === "object" ? ADLER : typeof TOSHIKA === "object" ? TOSHIKA : typeof DAIKU === "object" ? DAIKU : typeof NOKA === "object" ? NOKA : typeof HANAYA === "object" ? HANAYA : typeof KAJI === "object" ? KAJI : typeof YAKUZAI === "object" ? YAKUZAI : typeof JUI === "object" ? JUI : null;
+/* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
+if(PLUG) for(const [m, h] of Object.entries(PLUG.colors)) COLORS.mode[m] = TONE[h] || toneFrom(h);  // "blue" などは ほかの ゲームと 同じ あかるい 色
+function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }
+/* 解説のふりがな(tools/make_ruby.py が作る) RUBY-START */
+const RUBY = {
+};
+/* RUBY-END */
+/* Googleマップで ひらく(登録も お金も いらない ふつうのリンク) */
+/* Googleマップは「名前 + 緯度・経度」の 場所リンクで ひらく(けいくん 2026-09-25)。
+   ・名前の文字だけだと iPhone のアプリが 検索語を落として 現在地で ひらくことがあった
+   ・数字だけだと ピンの名前が「15°54'00"N…」になって どこか分からない
+   → /maps/place/<名前>/@緯度,経度,ズーム で 両方 渡す。ズームは 国 5 / 都道府県 8 / 町・山・川 10 / 名所 15 */
+function gmapUrl(q){
+  const ll = LATLON[q.art];
+  const jp = q.c.startsWith("日本");
+  // 地名で 目印(m)があれば「伊勢神宮 三重県」のように 説明に出てくる有名な場所へ(けいくん 2026-09-25)
+  const plain = q.n.replace(/（.*?）/g, "").trim();  // 「エアーズロック（ウルル）」→「エアーズロック」
+  const name = q.k === "person" ? q.b : q.k === "event" ? (q.m || plain) : q.m ? q.m + " " + q.n : q.f && q.k === "name" ? plain : plain + " " + q.c.replace(/・/g, " ");
+  if(!ll) return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(name);
+  const zoom = q.k === "person" ? 10 : q.k === "event" ? 14 : q.k === "capital" ? 12 : q.m ? 13 : q.k === "name" ? (q.f ? (jp ? 8 : 5) : 10) : 15;
+  /* ⚠️ /maps/place/<名前>/@座標 だと 座標に 赤いピンが立つだけで、その場所の カード(評価・写真・営業時間)が ひらかない
+     (けいくん 2026-09-26「直接この姫路城に飛べるように」)。/maps/search/<名前>/@座標 なら その場所を さがして カードが ひらく。
+     座標は さがす場所の 目安(同じ名前が よそにあっても ここを見る) */
+  return "https://www.google.com/maps/search/" + encodeURIComponent(name) + "/@" + ll[0] + "," + ll[1] + "," + zoom + "z";
+}
+function gmapLink(q){
+  /* 会社は 公式サイト(けいくん 2026-09-26「四季報が出来なければ その会社のリンクに」→ おすすめ = 公式サイト)+ Wikipedia */
+  if(PLUG && q.k === PLUG.kind) return "";  // プラグインの コース(株式・AI): リンクは PLUG.info が 出す  // 会社の コース: リンクは PLUG.info が 出す
+  if(q.k === "company") return '<a class="gmap" href="' + esc(q.u) + '" target="_blank" rel="noopener noreferrer">🏢 公式サイトを見る</a>'
+    + (q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "");
+  if(q.k === "space" || q.k === "body" || q.k === "rika") return q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "";
+  return '<a class="gmap" href="' + gmapUrl(q) + '" target="_blank" rel="noopener">' + (q.k === "person" ? "🗺 生まれた所を Googleマップで見る" : "🗺 Googleマップで見る") + '</a>';
+}
+/* 名所の 緯度・経度(世界一周マップの ピンの位置)。地図は 北緯84度〜南緯60度 を 横長に切ったもの */
+const LATLON = {};
+"eiffel 48.86 2.29|liberty 40.69 -74.04|pyramid 29.98 31.13|wall 40.43 116.57|taj 27.17 78.04|fuji 35.36 138.73|colosseum 41.89 12.49|machu -13.16 -72.55|opera -33.86 151.21|bigben 51.50 -0.12|sagrada 41.40 2.17|angkor 13.41 103.87|pisa 43.72 10.40|arc 48.87 2.30|moai -27.12 -109.35|golden 37.82 -122.48|castle 47.56 10.75|basil 55.75 37.62|stone 51.18 -1.83|kinkaku 35.04 135.73|uluru -25.34 131.04|petra 30.33 35.44|mtsaint 48.64 -1.51|versailles 48.80 2.12|notredame 48.85 2.35|peter 41.90 12.45|venice 45.44 12.33|florence 43.77 11.26|pompeii 40.75 14.49|parthenon 37.97 23.73|santorini 36.46 25.38|alhambra 37.18 -3.59|towerbridge 51.51 -0.08|edinburgh 55.95 -3.20|brandenburg 52.52 13.38|cologne 50.94 6.96|charles 50.09 14.41|matterhorn 45.98 7.66|hagia 41.01 28.98|cappadocia 38.64 34.83|schonbrunn 48.18 16.31|kinderdijk 51.88 4.64|britishmuseum 51.52 -0.13|trevi 41.90 12.48|kiyomizu 34.99 135.78|itsukushima 34.30 132.32|himeji 34.84 134.69|todaiji 34.69 135.84|nikko 36.76 139.60|skytree 35.71 139.81|tokyotower 35.66 139.75|fushimi 34.97 135.77|shirakawa 36.26 136.91|genbaku 34.40 132.45|yakushima 30.36 130.53|forbidden 39.92 116.40|terracotta 34.38 109.28|potala 29.66 91.12|guilin 25.27 110.29|borobudur -7.61 110.20|halong 20.91 107.18|watarun 13.74 100.49|bagan 21.17 94.86|everest 27.99 86.93|goldentemple 31.62 74.88|shwedagon 16.80 96.15|victoria -17.92 25.86|kilimanjaro -3.07 37.35|sahara 23.40 13.00|tablemtn -33.96 18.40|abusimbel 22.34 31.63|sphinx 29.98 31.14|baobab -20.25 44.42|grandcanyon 36.10 -112.10|niagara 43.08 -79.07|rushmore 43.88 -103.46|yellowstone 44.43 -110.59|whitehouse 38.90 -77.04|empire 40.75 -73.99|chichen 20.68 -88.57|christ -22.95 -43.21|iguazu -25.69 -54.44|uyuni -20.13 -67.49|teotihuacan 19.69 -98.84|perito -50.50 -73.05|monument 36.98 -110.11|angel 5.97 -62.54|reef -18.29 147.70|milford -44.67 167.93|harbour -33.85 151.21|milan 45.46 9.19|buckingham 51.50 -0.14|hallstatt 47.56 13.65|bluemosque 41.01 28.98|diamondhead 21.26 -157.81|londoneye 51.50 -0.12|westminster 51.50 -0.13|budapest 47.51 19.05|kamakura 35.32 139.54|antelope 36.86 -111.37".split("|").forEach(s => { const [k,la,lo] = s.split(" "); LATLON[k] = [+la, +lo]; });
+/* はじめの100か所(エッフェル塔・富士山などの 定番)は f:1 = 先のレベルに出す。
+   そのあとに TSV で足した 世界遺産検定レベルの名所(けいくん 2026-09-25「1でお願いします」= 有名な名所から はじめる) */
+SPOTS.forEach(q => { q.f = 1; });
+/* 名所の追加ぶん(tools/spots-*.tsv から tools/add_spots.py が作る。手で直さない) SPOTS-MORE-START */
+SPOTS.push(
+
+);
+Object.assign(LATLON, {});
+/* SPOTS-MORE-END */
+const ROUNDS = 10;
+/* 2つの旅。日本の名所は 場所が「日本」ではじまるもの */
+const isJapan = q => q.c.startsWith("日本");
+/* 4つの旅: 名所(写真あり)と 地名(k:"name"。絵文字のカード) × 世界・日本 */
+const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filter(q => !q.k && isJapan(q)),
+                wnames: SPOTS.filter(q => q.k === "name" && !isJapan(q)), jnames: SPOTS.filter(q => q.k === "name" && isJapan(q)),
+                wpeople: SPOTS.filter(q => q.k === "person" && !isJapan(q)), jpeople: SPOTS.filter(q => q.k === "person" && isJapan(q)),
+                /* 受験むけ(けいくん 2026-09-26「大学受験、高校受験に役立つやつ」→「おすすめすべて」): 首都・世界史・日本史 */
+                capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)),
+                /* 宇宙フリック旅行(key の あたま sol / sky / cos)・からだフリック旅行(bon mus / org sys / cel) */
+                usolar: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sol")), usky: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sky")), ucos: SPOTS.filter(q => q.k === "space" && q.art.startsWith("cos")),
+                kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")), ktsubo: SPOTS.filter(q => q.k === "body" && q.art.startsWith("tsb")) ,
+                /* 理科フリック旅行(key の あたま phy / chm と el / bio / geo)。学年(g: e 小学校 / j 中学校 / h 高校)の 順に レベルが 並ぶ */
+                rphys: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("phy")), rchem: SPOTS.filter(q => q.k === "rika" && /^(chm|el)/.test(q.art)),
+                rbio: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("bio")), rgeo: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("geo")) };
+if(PLUG) Object.assign(POOLS, PLUG.pools);
+/* 日本一周マップの 決めごと(tools/make_japan_map.py と 同じ数字)。本土は 東経128.5〜146.5 / 北緯29.8〜46。
+   南西諸島(北緯28度より南)は 左上の わく(東経122.5〜 / 北緯27.5〜)に 同じ縮尺で */
+const JAPAN_MAP = { lon0:128.5, lat1:46, kx:20, k:25, w:360, h:405, ix:6, iy:6, ilon0:122.5, ilat1:27.5 };
+function japanPos(la, lo){
+  const J = JAPAN_MAP;
+  const x = la < 28 ? J.ix + (lo - J.ilon0) * J.kx : (lo - J.lon0) * J.kx;
+  const y = la < 28 ? J.iy + (J.ilat1 - la) * J.k : (J.lat1 - la) * J.k;
+  return [x / J.w, y / J.h];
+}
+const MAPS = {
+  world: { src:"world-map-color.jpg", hi:"world-map-color-4k.jpg", hi2:"world-map-color-8k.jpg", w:1080, h:432, title:"世界一周マップ", word:"世界地図", icon:"🌍", name:"世界の旅",
+           pos:(la, lo) => [(lo + 180) / 360, (84 - la) / 144] },
+  japan: { src:"japan-map-color.jpg", hi:"japan-map-color-4k.jpg", hi2:"japan-map-color-8k.jpg", w:1080, h:1215, title:"日本一周マップ", word:"日本地図", icon:"🗾", name:"日本の旅", pos:japanPos },
+};
+MAPS.wnames = Object.assign({}, MAPS.world, { icon:"🗺", name:"世界の地名", sub:"まず国、つぎに町・山脈・川・海" });
+MAPS.jnames = Object.assign({}, MAPS.japan, { icon:"📍", name:"日本の地名", sub:"まず都道府県、つぎに町・平野・川・海" });
+/* 偉人(けいくん 2026-09-25「世界の偉人、日本の偉人。結果がでたら 偉人の簡単なプロフィールと 名言の解説つきで紹介」)。
+   名前を打つ。ピンは 生まれた所 */
+/* 偉人と 出来事は 地図ではなく **年表**(歴史フリック旅行。けいくん 2026-09-26「偉人とか歴史とかは 地図とは別に分けれる」)。
+   time:true だと drawMap が 年表を描く。w/h は 年表の 大きさ(1080×300)。jp で 時代の帯(縄文〜令和 / 古代〜現代)が かわる */
+const TIME_W = 1080, TIME_H = 300;
+MAPS.wpeople = { time:true, jp:false, w:TIME_W, h:TIME_H, src:"", icon:"👑", name:"世界の偉人", title:"世界史年表", word:"年表", sub:"名前を打つ。名言と解説つき", thing:"偉人(生まれた年)" };
+MAPS.jpeople = { time:true, jp:true, w:TIME_W, h:TIME_H, src:"", icon:"🎌", name:"日本の偉人", title:"日本史年表", word:"年表", sub:"名前を打つ。名言と解説つき", thing:"偉人(生まれた年)" };
+/* 受験むけの 3つ(2026-09-26)。unit=数えかた / doneWord=クリアしたものの 呼び名 / thing=ピンの説明。首都は 世界地図、出来事は 起きた場所 */
+MAPS.capitals = Object.assign({}, MAPS.world, { icon:"🏛️", name:"世界の首都", title:"世界の首都マップ", sub:"国名を見て 首都を打つ", thing:"首都", unit:"か国", doneWord:"おぼえた国" });
+MAPS.wevents = { time:true, jp:false, w:TIME_W, h:TIME_H, src:"", icon:"📜", name:"世界史", title:"世界史年表", word:"年表", sub:"出来事の名前を打つ。年と解説つき", thing:"出来事(起きた年)", unit:"件", doneWord:"知った出来事", miss:"まだ知らない出来事" };
+MAPS.jevents = { time:true, jp:true, w:TIME_W, h:TIME_H, src:"", icon:"🏯", name:"日本史", title:"日本史年表", word:"年表", sub:"出来事の名前を打つ。年と解説つき", thing:"出来事(起きた年)", unit:"件", doneWord:"知った出来事", miss:"まだ知らない出来事" };
+MAPS.wpeople.unit = "人"; MAPS.jpeople.unit = "人"; MAPS.wpeople.doneWord = "知った人"; MAPS.jpeople.doneWord = "知った人"; MAPS.wpeople.miss = "まだ知らない偉人"; MAPS.jpeople.miss = "まだ知らない偉人";
+function unitOf(M){ return M.unit === undefined ? "か所" : M.unit; }
+/* 宇宙・からだ: 絵(SVG)の上に 📍。maps = その旅で 切りかえられる 図(タブ)。図は SVG_MAPS に */
+MAPS.usolar = { svg:true, maps:["solar"], w:1080, h:420, src:"", icon:"🪐", name:"太陽系", title:"太陽系の図", word:"太陽系の図", sub:"太陽・惑星・衛星・探査機", thing:"天体", unit:"", doneWord:"知った天体", miss:"まだ知らない天体" };
+MAPS.usky = { svg:true, maps:["sky"], w:1080, h:540, src:"", icon:"⭐", name:"星と星座", title:"星図", word:"星図", sub:"1等星・星座・銀河・星雲", thing:"星", unit:"", doneWord:"知った星", miss:"まだ知らない星" };
+MAPS.ucos = { svg:true, maps:["sky","solar"], w:1080, h:540, src:"", icon:"🌌", name:"宇宙のことば", title:"宇宙の図", word:"宇宙の図", sub:"ブラックホール・光年・宇宙飛行士…", thing:"ことばの場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.kbone = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🦴", name:"ほねと きんにく", title:"からだの図", word:"からだの図", sub:"骨・関節・筋肉", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
+MAPS.korgan = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🫀", name:"臓器と しくみ", title:"からだの図", word:"からだの図", sub:"心臓・肺・胃・脳・血液・ホルモン…", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
+MAPS.kcell = { svg:true, maps:["cell"], w:720, h:720, src:"", icon:"🧬", name:"細胞と 遺伝", title:"細胞の図", word:"細胞の図", sub:"細胞・DNA・遺伝子…", thing:"場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+/* ツボ(けいくん 2026-09-26「からだフリック旅行に体のツボをすべて足してください」)。WHO の 標準 361か所。
+   図は はだの 前・うしろ・頭の 3枚(けいくんの ChatGPT の 絵)。データと 📍の 場所は tools/tsubo.tsv */
+MAPS.ktsubo = { svg:true, maps:["tfront","tback","thead"], w:1024, h:1536, src:"", icon:"👆", name:"ツボ", title:"ツボの図", word:"ツボの図", sub:"合谷・足三里・百会…WHOの 361か所", thing:"ツボ", unit:"", doneWord:"知ったツボ", miss:"まだ知らないツボ" };
+MAPS.rphys = { svg:true, maps:["phys"], w:1080, h:760, src:"", icon:"⚡", name:"物理", title:"物理の地図", word:"物理の地図", sub:"力・電気・光・音・熱・エネルギー", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.rchem = { svg:true, maps:["ptable","chem"], w:1080, h:760, src:"", icon:"⚗️", name:"化学", title:"周期表と 化学の地図", word:"周期表と 化学の地図", sub:"元素・水溶液・化学変化・イオン・実験器具", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.rbio = { svg:true, maps:["bio"], w:1080, h:760, src:"", icon:"🌱", name:"生物", title:"生物の地図", word:"生物の地図", sub:"植物・動物・生態系・進化・微生物", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.rgeo = { svg:true, maps:["geo"], w:1080, h:760, src:"", icon:"🌋", name:"地学", title:"地球の断面図", word:"地球の断面図", sub:"天気・地層・火山・地震・プレート", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "ktsubo", "rphys", "rchem", "rbio", "rgeo"];
+if(PLUG) for(const m of PLUG.modes){ MAPS[m] = Object.assign({}, MAPS.world, PLUG.maps[m]); ALL_MODES.push(m); }
+const MODES = ALL_MODES.filter(m => GAME.modes.includes(m));  // この ゲームに 出す 旅だけ
+const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};
+
+const $ = s => document.querySelector(s);
+if(("ontouchstart" in window) || navigator.maxTouchPoints > 0) document.documentElement.classList.add("touch");
+const ans = $("#ans");
+let lastLen = 0, warnT = 0, penalties = 0;
+let level = 0;
+let mode = MODES.includes(store("flick-mode")) ? store("flick-mode") : MODES[0], qs = [], idx = 0, times = [], qStart = 0, running = false, locked = true, raf = 0, sepAt = -1, target = "";
+
+function store(k, v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k, v); }catch(e){ return null; } }
+/* 打つ文字の多さで むずかしさを決める。濁点・小さい字・のばす棒は フリックで1回よけいに押すので 少し重く数える */
+function textOf(m, q){ return m === "quote" ? q.r + q.ar : q.r; }
+function poolOf(m){ return m === "quote" ? QUOTES : POOLS[m]; }
+function cost(s){
+  let c = 0;
+  for(const ch of s){
+    c += 1;
+    if(/[がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽゔ]/.test(ch)) c += .5;
+    if(/[ぁぃぅぇぉっゃゅょゎ]/.test(ch)) c += .5;
+    if(ch === "ー") c += .3;
+  }
+  return c;
+}
+/* 名所の 有名さ(日本語版 Wikipedia の 2025年の閲覧数。tools/fetch_fame.py が書く。手で直さない) FAME-START */
+const FAME = {};
+/* FAME-END */
+/* 10問ずつに分ける。どのレベルも いつも同じ10問・同じ順番。
+   名所(世界の旅・日本の旅)は はじめの100か所(f:1 = 定番)を先に、その中も そのあとも 有名な順(FAME の大きい順。
+   けいくん 2026-09-26「観光名所を世界ランキング順に」)。⚠️ 閲覧数だけで 並べない — 「カルタゴ」「バイカル湖」のように
+   町や湖の記事が 名所より 多く読まれるので、定番100か所を 先に 置いてから 閲覧数で 並べる。
+   地名・偉人は f:1(国・都道府県)を先に そのあと かんたんな順 */
+const LEVELS = {};
+const GRADE_RANK = { e:1, j:2, h:3 }, SCHOOL = { e:"小学校", j:"中学校", h:"高校" };
+/* その レベルの 学年(10問で いちばん 多い 学年。同じ数なら 上の 学年)。理科だけ */
+function levelSchool(set){
+  const n = {}; for(const q of set) if(q.g) n[q.g] = (n[q.g] || 0) + 1;
+  const g = Object.keys(n).sort((a,b) => n[b] - n[a] || GRADE_RANK[b] - GRADE_RANK[a])[0];
+  return g ? SCHOOL[g] : "";
+}
+for(const m of MODES){
+  if(PLUG && PLUG.levels[m]){ LEVELS[m] = PLUG.levels[m]; continue; }  // つみあげの コースは プラグインが 組む(どの レベルも いつも 同じ 10問)
+  const pool = poolOf(m);
+  /* f:1(名所=はじめの100か所の定番 / 地名=国・都道府県)を 先に。その中で かんたんな順(けいくん 2026-09-25) */
+  const byFame = (m === "world" || m === "japan");
+  /* 理科は 学年(小学校 → 中学校 → 高校)が 先、その中で 打ちやすい順(けいくん 2026-09-26「小学生から大人まで」) */
+  const sorted = pool.map((q,i) => ({q, i, g:GRADE_RANK[q.g] || 0, f:q.f ? 0 : 1, c:cost(textOf(m,q)), v:FAME[q.art] || 0}))
+    .sort((a,b) => a.g - b.g || a.f - b.f || (byFame ? b.v - a.v : 0) || a.c - b.c || a.i - b.i).map(x => x.q);
+  LEVELS[m] = [];
+  for(let i = 0; i + ROUNDS <= sorted.length; i += ROUNDS) LEVELS[m].push(sorted.slice(i, i + ROUNDS));
+  /* あまりが 出たら、その前の レベルの うしろから 足りないぶんを もう一度 出して 最後も 10問にする
+     (けいくん 2026-09-26「おすすめでよろしく」。首都は 国が 195しか無く 5つ あまる)。
+     ⚠️ 5問・15問の レベルは 作らない(10問の タイムで くらべる 決まり)。むずかしさが そろうよう すぐ前の 5問を 使う */
+  const rest = sorted.length % ROUNDS;
+  if(rest && sorted.length > ROUNDS){ const left = sorted.slice(-rest); LEVELS[m].push(sorted.slice(-rest - (ROUNDS - rest), -rest).concat(left)); }
+}
+/* ── だれが あそぶか(6人まで。けいくん 2026-09-25「かずとものように右上にアイコンを作って 6人まで登録出来るように」) ──
+   端末の中だけ(flick-profiles / flick-profile)。自己ベストは 人ごと(flick-best-p<id>-<旅>-<レベル>)。
+   だれも登録していないときは いままでどおり(flick-best-<旅>-<レベル>)。はじめて登録したとき その記録を その人に引きつぐ */
+const MAX_PROFILES = 6;
+/* 学年の しるし(かずともの API と同じ 字。記録に のこるので 変えない)。[しるし, えらぶ欄の名前, みじかい名前, まとまり] */
+const GRADES = [["k","年長より下・年長","ようじ","ようじ"],["e1","小学1年生","小1","小学生"],["e2","小学2年生","小2","小学生"],["e3","小学3年生","小3","小学生"],["e4","小学4年生","小4","小学生"],["e5","小学5年生","小5","小学生"],["e6","小学6年生","小6","小学生"],["j1","中学1年生","中1","中学生"],["j2","中学2年生","中2","中学生"],["j3","中学3年生","中3","中学生"],["h","高校生","高校生","高校生"],["adult","おとな","おとな","おとな"]];
+const GRADE_NAME = Object.fromEntries(GRADES.map(g => [g[0], g[1]]));
+const GRADE_SHORT = Object.fromEntries(GRADES.map(g => [g[0], g[2]]));
+const GRADE_OLD = {"年長より下":"k","年長":"k","小1":"e1","小2":"e2","小3":"e3","小4":"e4","小5":"e5","小6":"e6","中1":"j1","中2":"j2","中3":"j3","高校生":"h","おとな":"adult"};
+function gradeKey(g){ return GRADE_NAME[g] ? g : (GRADE_OLD[g] || "e1"); }
+function gradeName(g){ return GRADE_NAME[gradeKey(g)] || g; }
+function gradeShort(g){ return GRADE_SHORT[gradeKey(g)] || g; }
+/* だれと くらべるか(かずともと同じ 2つだけ): ぜんいん / 自分の学年。端末に1つ(flick-bygrade)。はじめは ぜんいん */
+function byGrade(){ return store("flick-bygrade") === "1"; }
+/* みんなのランキング(けいくん 2026-09-25「スピードランキングもかずとものように 学年順で競走出来るように」)。
+   記録の受けつけと 読み出しは かずとも(kazutomo.app)の サーバーが 代わりにやる(speed-king の /api/flick/*)。
+   ここには 鍵も 表も 無い。つながらなくても あそびは 止めない */
+const RANK_API = "https://kazutomo.app/api/flick";
+const PERIODS = [["today","きょう"],["week","今週"],["all","いままで"]];
+/* ── おうちの方の アカウントと つなぐ(かずとも ④-c の 線と まったく同じ) ──
+   おうちの方が かずとも に ログインして https://kazutomo.app/flick-link を ひらくと、ここへ ?link=<しるし> で もどってくる。
+   しるしは 端末に1つ(flick-link。同じ 住所の下の 4つの ゲームで 共通)。GET /api/flick/plan で できることを 聞く:
+   ・graph:false  → のび の グラフを ぼかす(消さない)。「アカウントから つづきが 見られます」
+   ・listed:false → 記録は 送るが ランキングに 名前が のらない(POST /score が listed:false を 返す)
+   ・signedIn:false(しるしが 無い・きれた)→ この回の きろく(flick-hist / flick-days / flick-best-)は sessionStorage に しまう = ゲームを とじると きえる
+   ⚠️ つながらないときは 責めない: しるしが あれば ぜんぶ できる、と みなす
+   ⚠️ もう 端末に きろくが ある人(localStorage に flick-best- / flick-hist が ある人)は そのまま localStorage(消さない・うつさない)
+   ⚠️ 子どもが 見る 字には お金の ことばを 書かない */
+const LINK_KEY = "flick-link", PLAN_TTL = 10 * 60 * 1000;
+/* ⚠️ 2026-09-29 まで 5つの ゲームしか ?to= を 付けておらず、ほかの ゲームから つなぐと 世界旅行に もどってきていた(バグ)。
+   いまは 世界旅行いがい ぜんぶ 付ける。受ける 側(speed-king の FLICK_LINK_TARGETS)に 無い id は 向こうが 世界旅行に 落とすだけなので こわれない */
+const LINK_URL = "https://kazutomo.app/flick-link" + (GAME.id && GAME.id !== "world" ? "?to=" + GAME.id : "");
+let PLAN = null, recMemo = null;
+function linkToken(){ return store(LINK_KEY) || ""; }
+function authHeaders(){ const t = linkToken(); return t ? { Authorization: "Bearer " + t } : {}; }
+function planCached(){
+  try{ const c = JSON.parse(sessionStorage.getItem("flick-plan") || "null");
+       if(c && c.plan && c.tok === linkToken() && Date.now() - c.at < PLAN_TTL) return c.plan; }catch(e){}
+  return null;
+}
+function planOf(){ return PLAN || planCached(); }
+/* しるしが あって、サーバーが「つながっていない」と 言っていなければ つながっている(聞いている あいだも) */
+/* ⚠️ 2026-09-30 から kazutomo.app の 下なので、おうちの方の **ログインの クッキー**でも つながる(しるしが 無くても サーバーが signedIn:true と 言う) */
+function signedIn(){ const p = planOf(); if(p && p.signedIn === true) return true; if(!linkToken()) return false; return !p || p.signedIn !== false; }
+/* おうちの方の ログイン(かずとも本体)。ログインが 終わると この ゲームへ もどる(?next=)。github.io で ひらいて いても kazutomo.app へ */
+// ⚠️ ログインは かずともの マイページ(`/play?my=1`)の 中(2026-09-30。`/account` の ページは 無くなった。ログインの あと この ゲームへ もどる)
+const LOGIN_URL = "https://kazutomo.app/play?my=1&next=" + encodeURIComponent("/flick/" + (GAME.dir || ""));
+function graphOk(){ const p = planOf(); return !p || p.graph !== false; }
+async function fetchPlan(force){
+  const tok = linkToken();
+  if(!force){ const c = planCached(); if(c){ PLAN = c; return c; } }
+  let plan, ok = false;
+  try{
+    const res = await fetch(RANK_API + "/plan" + (trialToken() ? "?t=" + encodeURIComponent(trialToken()) : ""), { headers: authHeaders(), cache: "no-store" });  // 30日の しるしも そえる(登録しただけの おうちが 30日の あいだ ぼけない ように)
+    const js = await res.json().catch(() => null);
+    if(res.ok && js && js.ok){ plan = { graph: js.graph !== false, listed: js.listed !== false, signedIn: !!js.signedIn }; ok = true; }
+  }catch(e){}
+  if(!plan) plan = tok ? { graph:true, listed:true, signedIn:true } : { graph:true, listed:false, signedIn:false };  // つながらない → 責めない
+  if(tok !== linkToken()) return PLAN;  // 聞いている あいだに しるしが 変わった
+  const before = JSON.stringify({ s: signedIn(), g: graphOk() });
+  PLAN = plan; recMemo = null;
+  if(ok){ try{ sessionStorage.setItem("flick-plan", JSON.stringify({ at: Date.now(), tok, plan })); }catch(e){} }
+  if(signedIn()) keepSessionRecords();
+  if(JSON.stringify({ s: signedIn(), g: graphOk() }) !== before){
+    if(JSON.parse(before).s !== signedIn() && !$("#home").classList.contains("hidden")) showBest();  // しまい場所が 変わった → 地図・きろくも
+    planViewsRefresh();
+  }
+  return plan;
+}
+/* きろくの しまい場所。つながっている人 / もう localStorage に きろくが ある人 → localStorage(ずっと)。それ以外 → sessionStorage(とじると きえる) */
+function recPersistent(){
+  const p = curProfile(), memo = (p ? p.id : "") + "|" + signedIn();
+  if(recMemo && recMemo.k === memo) return recMemo.v;
+  let v = signedIn();
+  if(!v){
+    try{
+      if(localStorage.getItem(histKey()) !== null || localStorage.getItem(daysKey()) !== null) v = true;
+      const pre = p ? "flick-best-p" + p.id + "-" : null;
+      for(let i = 0; !v && i < localStorage.length; i++){
+        const k = localStorage.key(i) || "";
+        if(pre ? k.startsWith(pre) : /^flick-best-[a-z]+-\d+$/.test(k)) v = true;
+      }
+    }catch(e){ v = true; }  // localStorage が 読めない 端末は いままでどおり
+  }
+  recMemo = { k: memo, v };
+  return v;
+}
+function recStore(){ try{ return recPersistent() ? localStorage : sessionStorage; }catch(e){ return null; } }
+function recGet(k){ try{ return recStore().getItem(k); }catch(e){ return null; } }
+function recSet(k, v){ try{ recStore().setItem(k, v); }catch(e){} }
+/* つながったら、この回(sessionStorage)の きろくを localStorage に 足す(足すだけ。localStorage の きろくは 消さない) */
+function keepSessionRecords(){
+  try{
+    for(let i = 0; i < sessionStorage.length; i++){
+      const k = sessionStorage.key(i) || "";
+      if(!/^flick-(best|hist|days|kabu)(-|$)/.test(k)) continue;
+      const sv = sessionStorage.getItem(k), lv = localStorage.getItem(k);
+      if(sv === null) continue;
+      if(lv === null){ localStorage.setItem(k, sv); continue; }
+      if(k.startsWith("flick-best-")){
+        const a = parseFloat(sv), b = parseFloat(lv);
+        if(!isNaN(a) && (isNaN(b) || a < b)) localStorage.setItem(k, sv);
+      }else if(k.startsWith("flick-kabu")){  // 会社の きろく(出会った会社ごと)。多く 見たほうを のこす
+        const a = JSON.parse(sv), b = JSON.parse(lv); if(!a || !b) continue;
+        for(const id in a) if(!b[id] || a[id][0] > b[id][0]) b[id] = a[id];
+        localStorage.setItem(k, JSON.stringify(b));
+      }else if(k.startsWith("flick-hist")){
+        const a = JSON.parse(sv), b = JSON.parse(lv); if(!Array.isArray(a) || !Array.isArray(b)) continue;
+        const seen = new Set(b.map(h => h.at + "|" + h.m + "|" + h.lv)), out = b.slice();
+        for(const h of a) if(!seen.has(h.at + "|" + h.m + "|" + h.lv)) out.push(h);
+        out.sort((x, y) => x.at - y.at); while(out.length > 400) out.shift();
+        localStorage.setItem(k, JSON.stringify(out));
+      }else{
+        const a = JSON.parse(sv), b = JSON.parse(lv); if(!Array.isArray(a) || !Array.isArray(b)) continue;
+        localStorage.setItem(k, JSON.stringify([...new Set([...b, ...a])].sort((x, y) => x - y)));
+      }
+    }
+  }catch(e){}
+  recMemo = null;
+}
+function flickToast(msg){
+  const t = document.createElement("div"); t.className = "flick-toast"; t.setAttribute("role", "status"); t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.classList.add("out"), 3600); setTimeout(() => t.remove(), 4200);
+}
+/* ── 登録なしの 体験(けいくん決定 2026-09-29「登録なしで1か月 → 止まる → おうちの方が登録して月980円」) ──
+   ・はじめて 遊ぶ 端末は かずとも(/api/trial)に POST して しるしを もらい localStorage に しまう(flick-trial)
+   ・ひらくたびに GET /api/trial?t= で「遊べるか・のこり何日か」を 聞く。こたえも しまう(flick-trial-state。checkedAt つき)
+   ・つながらない → さいごに OK だった 日から 3日は そのまま。すぎたら つながるまで 止まる(ネットを 切って 遊びつづける 抜け道を ふさぐ)
+   ・かずとも本体と 同じ 1つの 30日に するため、販売ページから 来るときは #t=<しるし> が 付いている(受けとって しまう)。
+     もどる リンク(about-link)にも 付けて かえす
+   ・つないでいる(flick-link)・はらっている おうちは 止まらない(サーバーが 見る)。しるしが 無い 環境(手元の 開発)は 止めない
+   ⚠️ 記録は 1つも 消さない。⚠️ 子どもの 画面に お金の 字は 出さない(日数だけ) */
+const TRIAL_API = "https://kazutomo.app/api/trial", TRIAL_KEY = "flick-trial", TRIAL_STATE = "flick-trial-state", TRIAL_FIRST = "flick-trial-first";
+const TRIAL_GRACE_MS = 3 * 86400000, TRIAL_PAID_GRACE_MS = 30 * 86400000, TRIAL_WARN_DAYS = 7;  // はらっている おうちは 旅先・飛行機でも 30日は 止めない(2026-09-30)
+let TRIAL = null, TRIAL_AFTER_LINK = false;
+/* ⚠️ kazutomo.app の 下に なったので、かずとも本体の しるし(kz-trial)と 同じ localStorage。あれば そちらを 使い、しまう ときは 両方に */
+function trialToken(){ return store("kz-trial") || store(TRIAL_KEY) || ""; }
+function storeTrial(v){ store(TRIAL_KEY, v); store("kz-trial", v); }
+(function takeTrialHash(){
+  try{
+    const m = /[#&]t=([A-Za-z0-9._~+\/=-]{8,600})(?:&|$)/.exec(location.hash); if(!m) return;
+    // ⚠️ もう 持っていたら **はじまりの 早いほう**を 残す(かずとも と フリックで べつべつに 30日が 走らないように。2026-09-30)
+    const startOf = (tk) => { try{ return +JSON.parse(atob(tk.split(".")[0].replace(/-/g, "+").replace(/_/g, "/"))).s || 0; }catch(e){ return 0; } };
+    const cur = trialToken();
+    if(!cur || (startOf(m[1]) && (!startOf(cur) || startOf(m[1]) < startOf(cur)))) storeTrial(m[1]);
+    history.replaceState(history.state, "", location.pathname + location.search);
+  }catch(e){}
+})();
+function trialCached(){ try{ const c = JSON.parse(store(TRIAL_STATE) || "null"); return c && typeof c.play === "boolean" ? c : null; }catch(e){ return null; } }
+/* 遊んでよいか。まだ 何も 分からなければ 止めない */
+function canPlay(){ const t = TRIAL || trialCached(); if(!t) return true; if(t.stale) return false; return t.play !== false; }
+async function fetchTrial(){
+  let tok = trialToken(), js = null;
+  try{
+    const ask = async (post) => { const ac = new AbortController(); const tm = setTimeout(() => ac.abort(), 8000); try{ const r = await fetch(post ? TRIAL_API : TRIAL_API + "?t=" + encodeURIComponent(tok), { method: post ? "POST" : "GET", headers: authHeaders(), cache: "no-store", signal: ac.signal }); return r.ok ? await r.json() : null; } finally{ clearTimeout(tm); } };  // 8秒で あきらめる(返ってこない ままに しない)
+    js = await ask(!tok);
+    if(js && js.ok && js.needToken && tok){ js = await ask(true); }  // しるしが 古い・こわれている → もらいなおす
+  }catch(e){ js = null; }
+  if(js && js.ok){
+    if(typeof js.token === "string" && js.token) storeTrial(js.token);
+    TRIAL = { play: js.play !== false, paid: js.paid === true, daysLeft: typeof js.daysLeft === "number" ? js.daysLeft : null, checkedAt: Date.now(), stale: false };
+    store(TRIAL_STATE, JSON.stringify(TRIAL));
+  }else{
+    const c = trialCached(); let first = +store(TRIAL_FIRST) || 0;
+    if(!first){ first = Date.now(); store(TRIAL_FIRST, String(first)); }
+    const since = c ? c.checkedAt : first, grace = c && c.paid ? TRIAL_PAID_GRACE_MS : TRIAL_GRACE_MS;
+    // ⚠️ 時計が さいごの 確認より 前に もどっていたら 数えない(時計を もどして 猶予を のばす 抜け道)
+    const fresh = Date.now() >= since && Date.now() - since < grace;
+    TRIAL = c ? Object.assign({}, c, { stale: !fresh }) : { play: fresh, paid: false, daysLeft: null, checkedAt: 0, stale: !fresh };
+  }
+  trialViewsRefresh();
+  return TRIAL;
+}
+/* のこり日数の 1行 / もどる リンクに しるしを 付ける */
+function trialViewsRefresh(){
+  try{
+    const el = $("#trial-note"), t = TRIAL || trialCached();
+    const back = $("#about-link"); if(back){ const tk = trialToken(); back.href = "https://kazutomo.app/" + (tk ? "#t=" + encodeURIComponent(tk) : ""); }
+    if(!el || !t){ if(el) el.classList.add("hidden"); return; }
+    let msg = "";
+    if(!canPlay()) msg = t.stale ? "つながりを かくにん できませんでした。ネットに つないで もう一度 ひらいてね。" : 'おためしは おわりました。<br><a href="' + LINK_URL + '">アカウントから つづけられます</a>';
+    else if(!t.paid && typeof t.daysLeft === "number" && t.daysLeft <= TRIAL_WARN_DAYS) msg = "おためしは あと" + t.daysLeft + "日。<a href=\"" + LINK_URL + "\">アカウントから つづけられます</a>";
+    el.innerHTML = msg; el.classList.toggle("hidden", !msg);
+  }catch(e){}
+}
+/* 体験が おわった あとに スタートを 押したとき */
+function showTrialEnd(){
+  const t = TRIAL || trialCached(), stale = !!(t && t.stale);
+  const d = document.createElement("div"); d.className = "trial-end"; d.setAttribute("role", "dialog"); d.setAttribute("aria-modal", "true");
+  d.innerHTML = '<div class="te-box"><p class="te-ttl">' + (stale ? "つながりを かくにん できません" : "おためしは おわりました") + '</p><p class="te-sub">' +
+    (stale ? "ネットに つないで もう一度 ためしてね。" : "きろくは そのまま のこっています。<br>つづきは アカウントから。") +
+    (stale ? '</p><button type="button" class="te-go te-retry">もう一度 たしかめる</button>' : '</p><a class="te-go" href="' + LINK_URL + '">アカウントへ</a>') +
+    '<button type="button" class="te-close">とじる</button></div>';
+  const close = () => { d.remove(); document.removeEventListener("keydown", onKey); };
+  const onKey = (e) => { if(e.key === "Escape") close(); };
+  d.querySelector(".te-close").addEventListener("click", close);
+  d.addEventListener("click", (e) => { if(e.target === d) close(); });
+  const retry = d.querySelector(".te-retry");
+  if(retry) retry.addEventListener("click", () => { retry.disabled = true; fetchTrial().then(() => { if(canPlay()) close(); else { retry.disabled = false; flickToast("まだ つながりません"); } }); });
+  document.addEventListener("keydown", onKey);
+  document.body.appendChild(d);
+  try{ d.querySelector(".te-go").focus(); }catch(e){}
+}
+/* つなぐ リンクの 短い しるし(24時間)を、この 端末の 長い しるし(365日)に 取りかえる(speed-king /api/flick/link)。しくじっても 止めない */
+async function exchangeLink(){
+  const tok = linkToken(); if(!tok) return;
+  try{ const body = JSON.parse(atob(tok.split(".")[0].replace(/-/g, "+").replace(/_/g, "/"))); if(body.k !== "link") return; }catch(e){ return; }
+  try{
+    const r = await fetch(RANK_API + "/link", { method: "POST", headers: authHeaders() });
+    const js = r.ok ? await r.json() : null;
+    if(js && js.ok && typeof js.token === "string" && js.token && linkToken() === tok){ store(LINK_KEY, js.token); try{ sessionStorage.removeItem("flick-plan"); }catch(e){} }
+    // ⚠️ 24時間の 短い しるしが 切れていた(つないだ ときに ネットが 無かった)→ 消して、つなぎなおしを たのむ(2026-09-30)
+    else if(r.status === 401 && linkToken() === tok){ try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){} PLAN = null; recMemo = null; flickToast("アカウントから もう一度 つないでね"); }
+  }catch(e){}
+}
+/* ?link=<しるし> で もどってきたとき(1回だけ) */
+(function takeLink(){
+  try{
+    const u = new URL(location.href), t = u.searchParams.get("link");
+    if(t === null) return;
+    u.searchParams.delete("link");
+    history.replaceState(history.state, "", u.pathname + u.search + u.hash);
+    if(!/^[A-Za-z0-9._~+\/=-]{8,2048}$/.test(t)) return;
+    store(LINK_KEY, t);
+    try{ sessionStorage.removeItem("flick-plan"); }catch(e){}
+    PLAN = null; recMemo = null;
+    keepSessionRecords();
+    setTimeout(() => flickToast("アカウントと つながりました"), 300);
+    // ⚠️ 取りかえ(exchangeLink)は 読みこみの さいごの 1回(下)に まかせる。ここでも 呼ぶと 2回 送っていた(2026-09-30)
+    TRIAL_AFTER_LINK = true;
+  }catch(e){}
+})();
+/* のび の グラフ(つながっていて graph:false の ときは ぼかす。消さない。かずとも `Blurred` と 同じ) */
+function planGrowth(html){
+  if(graphOk()) return html;
+  return '<div class="blurred"><div class="bl-in" aria-hidden="true">' + html + '</div><p class="bl-note">アカウントから つづきが 見られます</p></div>';
+}
+/* つながっていない 人への おしらせ(2回め から) */
+function drawKeepNote(){
+  const el = $("#r-keep"); if(!el) return;
+  const show = !recPersistent() && hist().length >= 2;
+  el.classList.toggle("hidden", !show);
+  el.innerHTML = show ? 'この きろくは、ゲームを とじると きえます。ログインすると のこります<br><a href="' + LOGIN_URL + '">🔑 ログイン</a>' : "";
+}
+/* plan が 変わったら、グラフ・おしらせ を かきなおす */
+function planViewsRefresh(){
+  try{
+    if(!$("#result").classList.contains("hidden")){
+      const g = growthOf(mode, level);
+      if(g && g.plays > 1) $("#r-grow-body").innerHTML = planGrowth(growthHtml(g, mode, level));
+      drawKeepNote();
+    }
+    if(recLv !== null && !$("#rec").classList.contains("hidden")){
+      const g = growthOf(mode, recLv);
+      if(g) $("#h-grow-body").innerHTML = planGrowth(growthHtml(g, mode, recLv));
+    }
+    if(!$("#prof").classList.contains("hidden")) drawProf();
+  }catch(e){}
+}
+function profiles(){ try{ const a = JSON.parse(store("flick-profiles") || "[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
+function saveProfiles(a){ store("flick-profiles", JSON.stringify(a)); }
+function curProfile(){ const id = store("flick-profile"); return profiles().find(p => p.id === id) || null; }
+function bestKey(m, lv){ const p = curProfile(); return "flick-best-" + (p ? "p" + p.id + "-" : "") + m + "-" + (lv+1); }
+function bestOf(m, lv){ return parseFloat(recGet(bestKey(m, lv))); }
+function clearedSpots(m){
+  if(PLUG && PLUG.owns(m)) return PLUG.discoveredIn(m);  // 会社は「出会った会社」
+  const set = new Set();
+  LEVELS[m].forEach((lv, i) => { if(!isNaN(bestOf(m, i))) lv.forEach(q => set.add(q.art)); });
+  return set;
+}
+function levelTone(i){ return COLORS.level[i % COLORS.level.length]; }
+function drawModes(){
+  const shown = PLUG ? PLUG.cardModes(mode) : MODES;  // 会社: マスターの 地域・業種は 1枚に まとめる
+  $("#modes").innerHTML = shown.map((m, i) => {
+    const M = MAPS[m], done = clearedSpots(m).size;
+    return '<button class="mode sk-card sk-card-'+(i+1)+(m === mode || (M.group && M.group === (MAPS[mode] || {}).group) ? ' cur' : '')+'" data-mode="'+m+'" style="'+toneStyle(COLORS.mode[m])+'">'+
+      '<span class="ic">'+M.icon+'</span><span class="tx"><b>'+(M.cardName || M.name)+'</b>'+(M.card ? M.card(m, done) : '<small>'+POOLS[m].length+unitOf(M)+'・'+LEVELS[m].length+'レベル</small><small>'+(M.doneWord || '行った所')+' '+done+'</small>')+'</span></button>';
+  }).join("");
+  document.querySelectorAll(".mode").forEach(b => b.addEventListener("click", () => {
+    setMode(b.dataset.mode);
+    // 旅をえらんだら レベルの一覧まで 送る(けいくん 2026-09-26「選んだらその問題に飛ぶように」)。地図の下にあって 見えないため
+    const t = $("#lv-title"); if(t) t.scrollIntoView({ behavior:"smooth", block:"start" });
+  }));
+}
+function setMode(m){
+  mode = m; store("flick-mode", m);
+  const M = MAPS[m], img = $("#map-img");
+  if(!M.time && !img.src.endsWith(M.src) && !((img.src.endsWith(M.hi || "@") || img.src.endsWith(M.hi2 || "@")) && MZ.s > 1.2)){ img.src = GAME.assets + M.src; img.width = M.w; img.height = M.h; img.alt = M.word; }
+  $("#map").style.aspectRatio = M.w + " / " + M.h;  // 中身が absolute なので 高さは ここで決める
+  if($("#map").dataset.mode !== m){ mapReset(); curSub = null; }  // 旅を切りかえたら 拡大と 図のタブを もどす
+  $("#map").dataset.mode = m;
+  /* ⚠️ data-map は 地図の しゅるい(world / japan / time=年表)。旅の名前(wnames・capitals…)を 入れると、
+     海の名前の「世界だけ / 日本だけ」の 出しわけが 効かず、世界地図に 日本海・沖縄が 重なって 文字化けのように 見えた(けいくん 2026-09-26) */
+  $("#map").dataset.map = M.time ? "time" : M.svg ? "svg" : M.src.startsWith("japan") ? "japan" : "world";
+  $("#map-title").textContent = M.title;
+  $("#map-cap").innerHTML = "レベルをクリアすると、その" + (M.thing || "名所") + "に 📍が立つよ。📍を押すと 名前が出るよ。2本の指で " + (M.time ? "年表" : M.svg ? "図" : "地図") + "を大きくできるよ。";
+  $("#lv-title").textContent = (M.lvTitle || M.name + "　レベルをえらぶ");
+  drawModes(); drawMap(); openLevels(m); drawRec();
+  if(PLUG) PLUG.home(m);  // 集めた会社・称号・マスターの えらぶ 列
+}
+/* ── 年表(歴史フリック旅行) ──
+   年 → 横の位置。むかしほど ぎゅっと、近代ほど ゆったり(出来事が 近代に かたまるため)。区切りは 折れ線で つなぐ */
+const TIME_SEG = { world:[[-3000,0],[-500,.06],[500,.18],[1500,.42],[1800,.62],[2030,1]], jp:[[-1000,0],[500,.10],[1200,.35],[1600,.55],[1870,.80],[2030,1]] };
+const ERAS = { world:[[-3000,"古代"],[476,"中世"],[1453,"近世"],[1789,"近代"],[1914,"現代"],[2030,""]],
+               jp:[[-1000,"縄文"],[-300,"弥生"],[250,"古墳"],[538,"飛鳥"],[710,"奈良"],[794,"平安"],[1185,"鎌倉"],[1336,"室町"],[1573,"安土桃山"],[1603,"江戸"],[1868,"明治"],[1912,"大正"],[1926,"昭和"],[1989,"平成"],[2019,"令和"],[2030,""]] };
+const TICKS = { world:[-3000,-2000,-1000,-500,0,500,1000,1500,1600,1700,1800,1900,2000], jp:[-1000,-500,0,500,800,1000,1200,1400,1600,1700,1800,1900,2000] };
+function timeX(y, jp){
+  const seg = TIME_SEG[jp ? "jp" : "world"]; if(y <= seg[0][0]) return 0; if(y >= seg[seg.length-1][0]) return 1;
+  for(let i = 1; i < seg.length; i++) if(y <= seg[i][0]){ const [y0,x0] = seg[i-1], [y1,x1] = seg[i]; return x0 + (y - y0) / (y1 - y0) * (x1 - x0); }
+  return 1;
+}
+/* その問題の 年。偉人は 生まれた年(tools/people-years.json → y0)、出来事は 場所の欄「1789年・フランス」「前431〜前404年」「14〜16世紀」から */
+function yearOf(q){
+  if(q.k === "person") return q.y0 == null ? null : q.y0;
+  const c = q.c || "";
+  let m = c.match(/(前)?(\d+)\s*世紀/); if(m) return (m[1] ? -1 : 1) * ((+m[2] - 1) * 100 + 50);
+  m = c.match(/(前)?(\d+)\s*年/); if(m) return (m[1] ? -1 : 1) * +m[2];
+  return null;
+}
+function yearText(y){ return y == null ? "" : y < 0 ? "前" + (-y) + "年" : y + "年"; }
+function drawTimeline(done, M){
+  const jp = M.jp, W = TIME_W, H = TIME_H, top = 34, bot = H - 26;
+  let svg = '<svg class="tl" viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">';
+  const eras = ERAS[jp ? "jp" : "world"], pal = ["#ffd166","#f4a261","#e76f51","#2a9d8f","#4cc9f0","#9b5de5","#f15bb5","#00bbf9","#00f5d4","#fee440","#8ac926","#ff924c","#6a4c93","#1982c4","#ffca3a"];
+  for(let i = 0; i < eras.length - 1; i++){
+    const x0 = timeX(eras[i][0], jp) * W, x1 = timeX(eras[i+1][0], jp) * W;
+    svg += '<rect x="' + x0.toFixed(1) + '" y="' + top + '" width="' + (x1 - x0).toFixed(1) + '" height="' + (bot - top) + '" fill="' + pal[i % pal.length] + '" opacity="0.28"/>';
+    if(x1 - x0 > 26) svg += '<text x="' + ((x0 + x1) / 2).toFixed(1) + '" y="' + (top + 16) + '" text-anchor="middle" font-size="' + (x1 - x0 > 60 ? 13 : 9) + '" font-weight="700" fill="#4a3b63">' + eras[i][1] + '</text>';
+  }
+  svg += '<line x1="0" y1="' + bot + '" x2="' + W + '" y2="' + bot + '" stroke="#4a3b63" stroke-width="1.5"/>';
+  for(const y of TICKS[jp ? "jp" : "world"]){
+    const x = timeX(y, jp) * W;
+    svg += '<line x1="' + x.toFixed(1) + '" y1="' + (bot - 4) + '" x2="' + x.toFixed(1) + '" y2="' + (bot + 4) + '" stroke="#4a3b63"/><text x="' + x.toFixed(1) + '" y="' + (bot + 17) + '" text-anchor="middle" font-size="10" font-weight="700" fill="#4a3b63">' + yearText(y).replace("年", "") + '</text>';
+  }
+  svg += '</svg>';
+  let tl = $("#tl"); if(!tl){ tl = document.createElement("div"); tl.id = "tl"; tl.className = "tl-wrap"; $("#map-in").appendChild(tl); }
+  tl.innerHTML = svg;
+  // 📍は 年の位置。同じ年に かたまるときは 段を かえる(近い順に 4段まで)
+  const items = [];
+  LEVELS[mode].forEach((lv, i) => lv.forEach(q => { const y = yearOf(q); if(y == null || !done.has(q.art)) return; items.push({q, i, y, x: timeX(y, jp)}); }));
+  items.sort((a,b) => a.x - b.x);
+  const lanes = [-1e9, -1e9, -1e9, -1e9, -1e9], gap = 0.022;
+  for(const it of items){ let l = lanes.findIndex(v => it.x - v >= gap); if(l < 0){ l = lanes.indexOf(Math.min(...lanes)); } lanes[l] = it.x; it.lane = l; }
+  return items.map(it => ({ q:it.q, i:it.i, x:it.x, yy:(bot - 6 - it.lane * 42) / H, year:it.y }));
+}
+/* ── 宇宙・からだ の 図(SVG は ここで 描く。AI の絵は 使わない = 位置が ずれないため) ──
+   bg(W,H) = 背景の SVG の中身 / pos(x,y) = TSV の x,y → 図の中の 割合 */
+const SVG_MAPS = {
+  solar: { w:1080, h:420, pos:(x,y) => [x, 0.5 + y * 0.38], bg:(W,H) => {
+    const P = [["太陽",.03,44,"#ffcc33"],["水星",.10,5,"#b9b0a5"],["金星",.16,8,"#e9c47a"],["地球",.22,8.5,"#3f8be0"],["火星",.29,6,"#d4573b"],["木星",.45,26,"#d9a066"],["土星",.57,22,"#e6cf8e"],["天王星",.69,14,"#8fd8e8"],["海王星",.80,13,"#3b5fd9"],["冥王星",.88,4,"#c9b8a8"]];
+    let o = '<defs><radialGradient id="sg-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff3b0"/><stop offset="1" stop-color="#ff9f1c"/></radialGradient><linearGradient id="sg-sp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1740"/><stop offset="1" stop-color="#1b2a6b"/></linearGradient></defs>';
+    o += '<rect width="' + W + '" height="' + H + '" fill="url(#sg-sp)"/>';
+    let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+    for(let i = 0; i < 160; i++) o += '<circle cx="' + (rnd()*W).toFixed(0) + '" cy="' + (rnd()*H).toFixed(0) + '" r="' + (rnd()*1.2+0.3).toFixed(1) + '" fill="#fff" opacity="' + (rnd()*0.6+0.3).toFixed(2) + '"/>';
+    o += '<line x1="0" y1="' + H/2 + '" x2="' + W + '" y2="' + H/2 + '" stroke="#ffffff" stroke-opacity="0.18" stroke-dasharray="4 6"/>';
+    for(let i = 0; i < 90; i++){ const x = (0.335 + rnd()*0.05) * W, y = H/2 + (rnd()-0.5)*60; o += '<circle cx="' + x.toFixed(0) + '" cy="' + y.toFixed(0) + '" r="1.2" fill="#c8c0b0" opacity="0.8"/>'; }
+    o += '<text x="' + (0.36*W).toFixed(0) + '" y="' + (H/2 + 48) + '" text-anchor="middle" font-size="11" fill="#c8c0b0">小惑星帯</text>';
+    for(const [n,x,r,c] of P){
+      const cx = x*W, cy = H/2;
+      if(n === "太陽") o += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="url(#sg-sun)"/>';
+      else o += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + c + '"/>';
+      if(n === "土星") o += '<ellipse cx="' + cx + '" cy="' + cy + '" rx="' + (r*1.9) + '" ry="' + (r*0.5) + '" fill="none" stroke="#e6cf8e" stroke-width="3" opacity="0.8"/>';
+      if(n === "地球") o += '<circle cx="' + (cx + 16) + '" cy="' + (cy - 12) + '" r="2.5" fill="#ddd"/>';
+      o += '<text x="' + cx + '" y="' + (cy + Math.max(r,8) + 16) + '" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">' + n + '</text>';
+    }
+    o += '<text x="' + (0.97*W).toFixed(0) + '" y="' + (H/2 - 14) + '" text-anchor="middle" font-size="11" fill="#c8d0ff">太陽系の果て</text>';
+    return o; } },
+  sky: { w:1080, h:540, pos:(ra,dec) => [1 - ra / 24, (90 - dec) / 180], bg:(W,H) => {
+    let o = '<defs><linearGradient id="sg-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050a2a"/><stop offset="1" stop-color="#101a4d"/></linearGradient></defs><rect width="' + W + '" height="' + H + '" fill="url(#sg-sky)"/>';
+    let seed = 11; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+    for(let i = 0; i < 420; i++) o += '<circle cx="' + (rnd()*W).toFixed(0) + '" cy="' + (rnd()*H).toFixed(0) + '" r="' + (rnd()*1.3+0.3).toFixed(1) + '" fill="#fff" opacity="' + (rnd()*0.7+0.2).toFixed(2) + '"/>';
+    // 天の川(ざっくり。銀河の中心 = いて座(RA 17.8h・-29°)を通る 帯)
+    o += '<path d="M ' + (W*0.03) + ' ' + (H*0.72) + ' C ' + (W*0.2) + ' ' + (H*0.3) + ', ' + (W*0.45) + ' ' + (H*0.15) + ', ' + (W*0.62) + ' ' + (H*0.45) + ' S ' + (W*0.9) + ' ' + (H*0.85) + ', ' + (W*1.02) + ' ' + (H*0.6) + '" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="70"/>';
+    for(let h = 0; h <= 24; h += 2){ const x = (1 - h/24) * W; o += '<line x1="' + x + '" y1="0" x2="' + x + '" y2="' + H + '" stroke="#fff" stroke-opacity="0.08"/><text x="' + (x + 3) + '" y="' + (H - 6) + '" font-size="10" fill="#9fb0ff">' + h + 'h</text>'; }
+    for(let d = -60; d <= 60; d += 30){ const y = (90 - d)/180 * H; o += '<line x1="0" y1="' + y + '" x2="' + W + '" y2="' + y + '" stroke="#fff" stroke-opacity="' + (d === 0 ? 0.25 : 0.08) + '"/><text x="4" y="' + (y - 3) + '" font-size="10" fill="#9fb0ff">' + (d > 0 ? "+" : "") + d + '°</text>'; }
+    o += '<text x="' + (W - 8) + '" y="16" text-anchor="end" font-size="11" fill="#9fb0ff">北の空 ↑</text><text x="' + (W - 8) + '" y="' + (H - 6) + '" text-anchor="end" font-size="11" fill="#9fb0ff">南の空 ↓</text>';
+    return o; } },
+  // からだ・頭は ChatGPT の 図解の 絵(けいくん 2026-09-26)。📍の 場所は tools/body-pins.py で 絵に 合わせてある。
+  //   ⚠️ 絵を 差しかえたら body-pins.py の 数字を 測りなおすこと(絵だけ かえると 📍が ずれる)
+  front: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-front.webp" width="' + W + '" height="' + H + '"/>'
+    + '<text x="12" y="26" font-size="20" fill="#a08070">前から見た からだ(向かって左が 右手)</text>' },
+  head: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-head.webp" width="' + W + '" height="' + H + '"/>'
+    + '<text x="12" y="26" font-size="20" fill="#a08070">横から見た 頭の中(顔は 左むき)</text>' },
+  cell: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="body-cell.webp" width="' + W + '" height="' + H + '"/>' },
+  // ツボの 図(はだの 絵。前・うしろは 同じ人・同じ 立ちかた)。⚠️ 絵を 差しかえたら tools/tsubo.tsv の x,y を 測りなおす
+  tfront: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-front.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">前から見た からだ(向かって左が 右手)</text>' },
+  tback: { w:1024, h:1536, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-back.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">うしろから見た からだ(向かって右が 右手)</text>' },
+  thead: { w:1024, h:1024, pos:(x,y) => [x, y], bg:(W,H) => '<rect width="' + W + '" height="' + H + '" fill="#fff"/><image href="tsubo-head.webp" width="' + W + '" height="' + H + '"/><text x="12" y="26" font-size="20" fill="#a08070">横から見た 頭(顔は 左むき)</text>' },
+  /* ── 理科フリック旅行の 図(けいくん 2026-09-26「📍を立てる図を作る」)。ぜんぶ コードで 描く(AIの 絵は 使わない)。
+     📍は 区画(RIKA_ZONES)の 中に レベルの 順で ならべる。元素は 周期表の その マス */
+  ptable: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaPtable(W, H) },
+  phys: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaBoard("phys", W, H) },
+  chem: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaBoard("chem", W, H) },
+  bio: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaBoard("bio", W, H) },
+  geo: { w:1080, h:760, pos:(x,y) => [x, y], bg:(W,H) => rikaGeo(W, H) },
+};
+/* ── 理科フリック旅行の 図の 中身 ──
+   RIKA_ZONES[図][区画] = [左, 上, 幅, 高さ, 見出し, 色](図の 大きさに 対する 割合)。TSV の 区画と 同じ 名前(tools/check_rika_tsv.py の ZONES) */
+const RIKA_ZONES = {
+  phys: { force:[.02,.09,.31,.44,"🏋️ 力と運動","#dbe8ff"], energy:[.345,.09,.31,.44,"🔥 エネルギーと熱","#ffe3d1"], elec:[.67,.09,.31,.44,"⚡ 電気と磁気","#fff3c4"],
+          wave:[.02,.55,.475,.43,"🌈 光と音・波","#e6dcff"], atom:[.505,.55,.475,.43,"☢️ 原子と放射線","#d8f3ea"] },
+  chem: { matter:[.02,.09,.31,.44,"🧊 物質のすがた","#dbeeff"], sol:[.345,.09,.31,.44,"🧪 水溶液と 酸・アルカリ","#ffe0ec"], react:[.67,.09,.31,.44,"💥 化学変化","#ffe9cc"],
+          bond:[.02,.55,.31,.43,"⚛️ 原子・イオン・結合","#e6dcff"], organic:[.345,.55,.31,.43,"🧬 有機物と 高分子","#dff5dc"], lab:[.67,.55,.31,.43,"🔬 実験器具と 操作","#eeeeee"] },
+  bio:  { plant:[.02,.09,.31,.44,"🌷 植物","#e2f5d6"], animal:[.345,.09,.31,.44,"🐟 動物","#ffe9cc"], micro:[.67,.09,.31,.44,"🦠 微生物・菌","#f1e3ff"],
+          eco:[.02,.55,.475,.43,"🌳 生態系と 環境","#d8f0ff"], evo:[.505,.55,.475,.43,"🦕 進化と なかま分け","#fff3c4"] },
+  geo:  { weather:[.02,.02,.56,.25,"🌦 天気と 気象",""], air:[.60,.02,.38,.25,"🌀 大気と 海の めぐり",""], river:[.02,.30,.46,.21,"🏞 流れる水と 地形",""],
+          volcano:[.52,.30,.46,.42,"🌋 火山と 岩石",""], strata:[.02,.53,.46,.21,"🪨 地層と 化石",""], quake:[.02,.755,.96,.115,"🫨 地震と プレート",""],
+          inside:[.02,.88,.96,.11,"🌏 地球の 内部",""] },
+};
+const RIKA_TITLE = { phys:"物理の地図", chem:"化学の地図", bio:"生物の地図" };
+function rikaBoard(k, W, H){
+  let o = '<rect width="' + W + '" height="' + H + '" fill="#fbfaf6"/>';
+  o += '<text x="' + (W/2) + '" y="' + (H*0.058) + '" text-anchor="middle" font-size="30" font-weight="800" fill="#3a3a3a">' + RIKA_TITLE[k] + '</text>';
+  for(const [x,y,w,h,label,c] of Object.values(RIKA_ZONES[k])){
+    o += '<rect x="' + (x*W).toFixed(1) + '" y="' + (y*H).toFixed(1) + '" width="' + (w*W).toFixed(1) + '" height="' + (h*H).toFixed(1) + '" rx="18" fill="' + c + '" stroke="#00000018" stroke-width="2"/>';
+    o += '<text x="' + (x*W + 16).toFixed(1) + '" y="' + (y*H + 36).toFixed(1) + '" font-size="28" font-weight="800" fill="#444">' + label + '</text>';
+  }
+  return o;
+}
+function rikaGeo(W, H){
+  const Y = v => (v*H).toFixed(1), X = v => (v*W).toFixed(1);
+  let o = '<defs><linearGradient id="rg-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fc8f5"/><stop offset="1" stop-color="#dff1ff"/></linearGradient>'
+        + '<linearGradient id="rg-in" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8803a"/><stop offset="1" stop-color="#c2410c"/></linearGradient></defs>';
+  o += '<rect width="' + W + '" height="' + Y(.285) + '" fill="url(#rg-sky)"/>';
+  // 雲と 太陽
+  o += '<circle cx="' + X(.955) + '" cy="' + Y(.24) + '" r="20" fill="#ffd34d"/>';
+  for(const [cx,cy] of [[.30,.22],[.72,.23]]) o += '<g fill="#ffffff" opacity=".9"><ellipse cx="' + X(cx) + '" cy="' + Y(cy) + '" rx="46" ry="16"/><ellipse cx="' + X(cx+.025) + '" cy="' + Y(cy-.02) + '" rx="30" ry="16"/></g>';
+  // 地面・川・海
+  o += '<rect y="' + Y(.285) + '" width="' + W + '" height="' + Y(.24) + '" fill="#cfe8b0"/>';
+  o += '<path d="M 0 ' + Y(.47) + ' C ' + X(.12) + ' ' + Y(.42) + ', ' + X(.28) + ' ' + Y(.52) + ', ' + X(.49) + ' ' + Y(.49) + '" fill="none" stroke="#5aa6e6" stroke-width="12" stroke-linecap="round"/>';
+  // 地層(しま)
+  const L = ["#e9d7a8","#c9a46a","#d8c08a","#a9855a","#e2cc98"];
+  L.forEach((c,i) => { o += '<rect y="' + Y(.525 + i*.044) + '" width="' + X(.5) + '" height="' + Y(.044) + '" fill="' + c + '"/>'; });
+  o += '<rect x="' + X(.5) + '" y="' + Y(.525) + '" width="' + X(.5) + '" height="' + Y(.22) + '" fill="#bfa27a"/>';
+  // 火山
+  o += '<path d="M ' + X(.56) + ' ' + Y(.745) + ' L ' + X(.72) + ' ' + Y(.34) + ' L ' + X(.80) + ' ' + Y(.34) + ' L ' + X(.96) + ' ' + Y(.745) + ' Z" fill="#8a6a55" opacity=".85"/>';
+  o += '<path d="M ' + X(.76) + ' ' + Y(.34) + ' L ' + X(.76) + ' ' + Y(.745) + '" stroke="#e8542a" stroke-width="10" opacity=".8"/>';
+  // 地殻(プレート)と 境目
+  o += '<rect y="' + Y(.745) + '" width="' + W + '" height="' + Y(.13) + '" fill="#7a5c45"/>';
+  o += '<path d="M ' + X(.2) + ' ' + Y(.745) + ' L ' + X(.24) + ' ' + Y(.875) + '" stroke="#f5e6d0" stroke-width="3" stroke-dasharray="8 6"/>';
+  // マントル・核
+  o += '<rect y="' + Y(.875) + '" width="' + W + '" height="' + Y(.125) + '" fill="url(#rg-in)"/>';
+  for(const [x,y,w,h,label] of Object.values(RIKA_ZONES.geo)){
+    const dark = y >= .75;
+    o += '<rect x="' + X(x) + '" y="' + Y(y) + '" width="' + X(w) + '" height="' + Y(h) + '" rx="14" fill="' + (dark ? "#00000022" : "#ffffff55") + '" stroke="' + (dark ? "#ffffff55" : "#00000022") + '" stroke-width="2"/>';
+    o += '<text x="' + (x*W + 12).toFixed(1) + '" y="' + (y*H + 32).toFixed(1) + '" font-size="27" font-weight="800" fill="' + (dark ? "#fff" : "#333") + '">' + label + '</text>';
+  }
+  return o;
+}
+/* 周期表(1〜118)。原子番号 → [行, 列](1から)。ランタノイド・アクチノイドは 下の 2行 */
+const ELEMENTS = "H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og".split(" ");
+function ptCell(z){
+  if(z === 1) return [1, 1]; if(z === 2) return [1, 18];
+  const starts = [[3,2],[11,3],[19,4],[37,5],[55,6],[87,7]];
+  if(z >= 57 && z <= 71) return [9, z - 57 + 3]; if(z >= 89 && z <= 103) return [10, z - 89 + 3];
+  for(let i = starts.length - 1; i >= 0; i--){
+    const [s, row] = starts[i]; if(z < s) continue; const n = z - s;
+    if(row <= 3) return [row, n < 2 ? n + 1 : n + 11];
+    if(row <= 5) return [row, n + 1];
+    return [row, n < 2 ? n + 1 : n - 13];  // 72〜86・104〜118 は 4列めから
+  }
+}
+const PT = { x0:.03, y0:.13, cw:.94/18, ch:.072 };
+function ptXY(z){ const [r, c] = ptCell(z); const ry = r >= 9 ? r - 0.5 : r; return [PT.x0 + (c - .5) * PT.cw, PT.y0 + (ry - .5) * PT.ch]; }
+function rikaPtable(W, H){
+  let o = '<rect width="' + W + '" height="' + H + '" fill="#fbfaf6"/>';
+  o += '<text x="' + (W/2) + '" y="' + (H*0.065) + '" text-anchor="middle" font-size="30" font-weight="800" fill="#3a3a3a">元素の 周期表</text>';
+  const col = z => { const [r, c] = ptCell(z); if(r >= 9) return "#f6dcf2"; if(c <= 2) return z === 1 ? "#dfe9ff" : "#ffd9c7"; if(c >= 13) return c === 18 ? "#dcd7ff" : "#d9f2d6"; return "#fff0bf"; };
+  const cw = PT.cw * W, ch = PT.ch * H;
+  for(let z = 1; z <= 118; z++){
+    const [cx, cy] = ptXY(z), x = cx * W - cw/2, y = cy * H - ch/2;
+    o += '<rect x="' + (x+1.5).toFixed(1) + '" y="' + (y+1.5).toFixed(1) + '" width="' + (cw-3).toFixed(1) + '" height="' + (ch-3).toFixed(1) + '" rx="5" fill="' + col(z) + '" stroke="#0000001f"/>';
+    o += '<text x="' + (x+5).toFixed(1) + '" y="' + (y+14).toFixed(1) + '" font-size="10" fill="#666">' + z + '</text>';
+    o += '<text x="' + (cx*W).toFixed(1) + '" y="' + (cy*H + 12).toFixed(1) + '" text-anchor="middle" font-size="19" font-weight="700" fill="#333">' + ELEMENTS[z-1] + '</text>';
+  }
+  for(const [r, t] of [[6, "57-71"], [7, "89-103"]]){ const x = PT.x0*W + 2*cw, y = (PT.y0 + (r-1)*PT.ch)*H; o += '<text x="' + (x + cw/2).toFixed(1) + '" y="' + (y + ch/2 + 5).toFixed(1) + '" text-anchor="middle" font-size="11" fill="#999">' + t + '</text>'; }
+  o += '<text x="' + (PT.x0*W).toFixed(1) + '" y="' + ((PT.y0 + 9.6*PT.ch)*H).toFixed(1) + '" font-size="13" fill="#888">下の 2行: ランタノイド(57〜71)・アクチノイド(89〜103)</text>';
+  return o;
+}
+/* 理科の ことばに 📍の 位置(x, y)を つける。区画の 中に レベルの 順で ならべる(はじめに 1回だけ) */
+(function rikaPlace(){
+  for(const m of ["rphys", "rchem", "rbio", "rgeo"]){
+    if(!LEVELS[m]) continue;
+    const seen = new Set(), by = {};
+    for(const q of LEVELS[m].flat()){ if(seen.has(q.art)) continue; seen.add(q.art);
+      if(q.mp === "ptable"){ [q.x, q.y] = ptXY(+q.z); q.y -= PT.ch * .18; continue; }
+      (by[q.mp + "/" + q.z] = by[q.mp + "/" + q.z] || []).push(q); }
+    for(const [k, list] of Object.entries(by)){
+      const [mp, z] = k.split("/"), Z = RIKA_ZONES[mp] && RIKA_ZONES[mp][z]; if(!Z) continue;
+      /* 📍は 先(下の はし)が その 位置。見出しの 下に 📍の 高さ(pin)ぶん あけて ならべる。
+         細い 帯(地震・地球の内部)は 見出しを 左に 置いて、📍は その 右に 1〜2行 */
+      const [x, y, w, h] = Z, W = 1080, H = 760, pin = 0.09, band = h < 0.2, n = list.length;
+      if(band){  // 細い 帯: 📍は 1列に ならべ、ひとつおきに 少し 上げて 重なりを へらす
+        const x0 = x + 0.25, aw = w - 0.26;
+        list.forEach((q, i) => { q.x = x0 + aw * (i + .5) / n; q.y = y + h - 0.015 - (i % 2 ? 0.045 : 0); });
+        continue;
+      }
+      const x0 = x + 0.01, aw = w - 0.02, y0 = y + 50 / H + pin, y1 = y + h - 0.015, ah = Math.max(0.001, y1 - y0);
+      const rows = Math.max(1, Math.round(Math.sqrt(n * (ah * H) / (aw * W)))), cols = Math.ceil(n / rows);
+      list.forEach((q, i) => { const c = i % cols, r = Math.floor(i / cols);
+        q.x = x0 + aw * (c + .5) / cols; q.y = rows === 1 ? y1 : y0 + ah * r / (rows - 1); });
+    }
+  }
+})();
+let curSub = null;  // いま出している 図(maps の どれか)
+function drawSvgMap(done, M){
+  if(!M.maps.includes(curSub)) curSub = M.maps[0];
+  const D = SVG_MAPS[curSub];
+  $("#map").style.aspectRatio = D.w + " / " + D.h;
+  let box = $("#svgmap"); if(!box){ box = document.createElement("div"); box.id = "svgmap"; box.className = "svg-wrap"; $("#map-in").appendChild(box); }
+  box.innerHTML = '<svg viewBox="0 0 ' + D.w + ' ' + D.h + '" xmlns="http://www.w3.org/2000/svg">' + D.bg(D.w, D.h) + '</svg>';
+  const tabs = $("#map-tabs"); tabs.classList.toggle("hidden", M.maps.length < 2);
+  const NAME = { solar:"太陽系", sky:"星空", front:"からだ", head:"頭", cell:"細胞", tfront:"前", tback:"うしろ", thead:"頭", ptable:"周期表", chem:"化学の地図", phys:"物理の地図", bio:"生物の地図", geo:"地球の断面" };
+  tabs.innerHTML = M.maps.map(k => '<button type="button" data-k="' + k + '"' + (k === curSub ? ' class="on"' : '') + '>' + NAME[k] + '</button>').join("");
+  tabs.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { curSub = b.dataset.k; mapReset(); drawMap(); }));
+  const items = [];
+  LEVELS[mode].forEach((lv, i) => lv.forEach(q => { if(!done.has(q.art) || q.mp !== curSub) return; const [fx, fy] = D.pos(q.x, q.y); items.push({q, i, x:fx, yy:fy}); }));
+  return items;
+}
+function drawMap(){
+  const done = clearedSpots(mode), map = $("#map"), M = MAPS[mode];
+  const oldSvg = $("#svgmap"); if(oldSvg && !M.svg) oldSvg.remove();
+  if(!M.svg) $("#map-tabs").classList.add("hidden");
+  if(M.svg){
+    map.querySelectorAll(".pin").forEach(p => p.remove());
+    for(const it of drawSvgMap(done, M)){
+      const b = document.createElement("button"), q = it.q, i = it.i;
+      b.className = "pin on"; b.style.left = (it.x * 100) + "%"; b.style.top = (it.yy * 100) + "%";
+      b.style.setProperty("--c", levelTone(i).a); b.setAttribute("aria-label", q.n); b.innerHTML = "<i>📍</i>";
+      b.addEventListener("click", () => {
+        map.querySelectorAll(".pin.sel").forEach(p => p.classList.remove("sel")); b.classList.add("sel");
+        $("#map-cap").innerHTML = "📍 <b>" + nameRuby(q) + "</b>(" + esc(q.c) + ")・レベル" + (i+1) + "<br>" + gmapLink(q);
+      });
+      $("#map-in").appendChild(b);
+    }
+    $("#map-count").textContent = done.size + " / " + POOLS[mode].length + unitOf(MAPS[mode]);
+    return;
+  }
+  map.querySelectorAll(".pin").forEach(p => p.remove());
+  const oldTl = $("#tl"); if(oldTl && !M.time) oldTl.remove();
+  if(M.time){
+    // 年表の 📍
+    for(const it of drawTimeline(done, M)){
+      const b = document.createElement("button"), q = it.q, i = it.i;
+      b.className = "pin on"; b.style.left = (it.x * 100) + "%"; b.style.top = (it.yy * 100) + "%";
+      b.style.setProperty("--c", levelTone(i).a); b.setAttribute("aria-label", q.n); b.innerHTML = "<i>📍</i>";
+      b.addEventListener("click", () => {
+        map.querySelectorAll(".pin.sel").forEach(p => p.classList.remove("sel")); b.classList.add("sel");
+        const when = q.k === "person" ? (yearText(q.y0) + (q.y1 != null ? "〜" + yearText(q.y1) : "") + "・" + q.c) : q.c;
+        $("#map-cap").innerHTML = "📍 <b>" + nameRuby(q) + "</b>(" + esc(when) + ")・レベル" + (i+1) + "<br>" + gmapLink(q);
+      });
+      $("#map-in").appendChild(b);
+    }
+    $("#map-count").textContent = done.size + " / " + POOLS[mode].length + unitOf(MAPS[mode]);
+    return;
+  }
+  LEVELS[mode].forEach((lv, i) => lv.forEach(q => {
+    const ll = LATLON[q.art]; if(!ll) return;
+    if(!done.has(q.art)) return;  // やった所だけ(けいくん 2026-09-26「やってない問題の白ピンはすべて削除して」)
+    const b = document.createElement("button");
+    b.className = "pin on";
+    const xy = M.pos(ll[0], ll[1]);
+    b.style.left = (xy[0] * 100) + "%";
+    b.style.top = (xy[1] * 100) + "%";
+    b.style.setProperty("--c", levelTone(i).a);
+    b.setAttribute("aria-label", done.has(q.art) ? q.n : (M.miss || "まだ行っていない名所"));
+    b.innerHTML = "<i>📍</i>";
+    b.addEventListener("click", () => {
+      map.querySelectorAll(".pin.sel").forEach(p => p.classList.remove("sel"));
+      b.classList.add("sel");
+      $("#map-cap").innerHTML = done.has(q.art)
+        ? "📍 <b>" + nameRuby(q) + "</b>(" + (q.b ? "生まれた所: " + q.b : q.c) + ")・レベル" + (i+1) + "<br>" + gmapLink(q)
+        : "❔ " + (M.miss || "まだ行っていない名所") + "。レベル" + (i+1) + "をクリアすると わかるよ";
+    });
+    $("#map-in").appendChild(b);
+  }));
+  $("#map-count").textContent = done.size + " / " + POOLS[mode].length + unitOf(MAPS[mode]);
+}
+/* ── 地図の 拡大(ピンチ・＋－・ダブルタップ・Ctrl+ホイール)。1〜8倍。はみ出さないように おさえる ── */
+const MZ = { s:1, tx:0, ty:0, max:12 };
+function mapApply(){
+  const inn = $("#map-in"), map = $("#map"), W = map.clientWidth, H = map.clientHeight;
+  MZ.s = Math.min(MZ.max, Math.max(1, MZ.s));
+  MZ.tx = Math.min(0, Math.max(W - W * MZ.s, MZ.tx)); MZ.ty = Math.min(0, Math.max(H - H * MZ.s, MZ.ty));
+  if(MZ.s === 1){ MZ.tx = 0; MZ.ty = 0; }
+  inn.style.width = (MZ.s * 100) + "%";
+  inn.style.transform = "translate(" + MZ.tx + "px," + MZ.ty + "px)";
+  map.style.touchAction = MZ.s > 1 ? "none" : "pan-y";   // 大きくしているあいだは 1本の指で 地図を動かす(ページは 動かさない)
+  /* 大きくしたら 大きい絵に 差しかえる(けいくん 2026-09-26「拡大すると地図がボヤけて見えない」→「もっと拡大しても対応出来るように」)。
+     はじめは 1080px(90KB)。1.2倍をこえたら 4320px(500〜600KB)、3.5倍をこえたら 8640px(1.3〜1.6MB)。大きくした人にだけ 読みこむ。
+     ⚠️ 小さくもどしても 絵は もどさない(読みなおしの むだ) */
+  const M = MAPS[mode], img = $("#map-img");
+  const want = MZ.s > 3.5 && M.hi2 ? M.hi2 : (MZ.s > 1.2 && M.hi ? M.hi : null);
+  if(want && !img.src.endsWith(want) && !(want === M.hi && M.hi2 && img.src.endsWith(M.hi2))) img.src = GAME.assets + want;  // 株式フリック旅行は 1つ下の フォルダ(kabu/)なので "../" が付く
+  $("#zoom-reset").hidden = MZ.s === 1;
+}
+/* 画面の点(px,py。地図の左上から)を 動かさずに 倍率を s2 に */
+function mapZoomAt(s2, px, py){
+  s2 = Math.min(MZ.max, Math.max(1, s2));
+  const r = s2 / MZ.s;
+  MZ.tx = px - (px - MZ.tx) * r; MZ.ty = py - (py - MZ.ty) * r; MZ.s = s2; mapApply();
+}
+function mapReset(){ MZ.s = 1; mapApply(); }
+(function(){
+  const map = $("#map"); let pinch = null, drag = null, lastTap = 0;
+  const pt = (t) => { const r = map.getBoundingClientRect(); return [t.clientX - r.left, t.clientY - r.top]; };
+  map.addEventListener("touchstart", e => {
+    if(e.touches.length === 2){
+      const a = pt(e.touches[0]), b = pt(e.touches[1]);
+      pinch = { d:Math.hypot(a[0]-b[0], a[1]-b[1]), s:MZ.s, m:[(a[0]+b[0])/2, (a[1]+b[1])/2], tx:MZ.tx, ty:MZ.ty }; drag = null;
+    }else if(e.touches.length === 1 && MZ.s > 1){
+      const a = pt(e.touches[0]); drag = { x:a[0], y:a[1], tx:MZ.tx, ty:MZ.ty };
+    }
+  }, {passive:true});
+  map.addEventListener("touchmove", e => {
+    if(pinch && e.touches.length === 2){
+      e.preventDefault();
+      const a = pt(e.touches[0]), b = pt(e.touches[1]), d = Math.hypot(a[0]-b[0], a[1]-b[1]), m = [(a[0]+b[0])/2, (a[1]+b[1])/2];
+      const s2 = Math.min(MZ.max, Math.max(1, pinch.s * d / pinch.d)), r = s2 / pinch.s;
+      MZ.tx = m[0] - (pinch.m[0] - pinch.tx) * r; MZ.ty = m[1] - (pinch.m[1] - pinch.ty) * r; MZ.s = s2; mapApply();
+    }else if(drag && e.touches.length === 1){
+      e.preventDefault();
+      const a = pt(e.touches[0]); MZ.tx = drag.tx + a[0] - drag.x; MZ.ty = drag.ty + a[1] - drag.y; mapApply();
+    }
+  }, {passive:false});
+  map.addEventListener("touchend", e => {
+    if(e.touches.length < 2) pinch = null;
+    if(e.touches.length === 0){
+      // ダブルタップで 2倍(ピンの上なら ピンの click に まかせる)
+      const now = Date.now();
+      if(drag === null || (Math.abs(MZ.tx - drag.tx) < 4 && Math.abs(MZ.ty - drag.ty) < 4)){
+        if(now - lastTap < 320 && !(e.target.closest && e.target.closest(".pin"))){
+          const c = e.changedTouches[0]; if(c){ const a = pt(c); mapZoomAt(MZ.s >= MZ.max ? 1 : MZ.s * 2, a[0], a[1]); }
+          lastTap = 0;
+        }else lastTap = now;
+      }
+      drag = null;
+    }
+  });
+  map.addEventListener("touchcancel", () => { pinch = null; drag = null; });
+  // パソコン: Ctrl+ホイール(トラックパッドの ピンチ)と ドラッグ
+  map.addEventListener("wheel", e => {
+    if(!e.ctrlKey && MZ.s === 1) return;
+    e.preventDefault();
+    const a = pt(e);
+    if(e.ctrlKey) mapZoomAt(MZ.s * (e.deltaY < 0 ? 1.15 : 1/1.15), a[0], a[1]);
+    else { MZ.tx -= e.deltaX; MZ.ty -= e.deltaY; mapApply(); }
+  }, {passive:false});
+  let md = null;
+  map.addEventListener("mousedown", e => { if(MZ.s > 1 && e.button === 0){ const a = pt(e); md = { x:a[0], y:a[1], tx:MZ.tx, ty:MZ.ty, moved:false }; } });
+  window.addEventListener("mousemove", e => { if(!md) return; const a = pt(e); MZ.tx = md.tx + a[0] - md.x; MZ.ty = md.ty + a[1] - md.y; md.moved = true; mapApply(); });
+  window.addEventListener("mouseup", () => { md = null; });
+  map.addEventListener("dblclick", e => { if(e.target.closest && e.target.closest(".pin, .map-zoom")) return; const a = pt(e); mapZoomAt(MZ.s >= MZ.max ? 1 : MZ.s * 2, a[0], a[1]); });
+  $("#zoom-in").addEventListener("click", () => mapZoomAt(MZ.s * 1.6, map.clientWidth/2, map.clientHeight/2));
+  $("#zoom-out").addEventListener("click", () => mapZoomAt(MZ.s / 1.6, map.clientWidth/2, map.clientHeight/2));
+  $("#zoom-reset").addEventListener("click", mapReset);
+  window.addEventListener("resize", mapApply);
+})();
+function showBest(){ setMode(mode); }
+function show(id){ for(const s of ["home","game","result"]) $("#"+s).classList.toggle("hidden", s!==id); document.body.classList.toggle("playing", id==="game"); window.scrollTo(0,0); fit(); }
+function fit(){
+  const vv = window.visualViewport, r = document.documentElement.style;
+  if(!vv){ r.setProperty("--vvh", window.innerHeight+"px"); return; }
+  r.setProperty("--vvh", vv.height+"px");
+  r.setProperty("--vvt", vv.offsetTop+"px");
+  const inner = document.querySelector("#card"); if(inner) inner.scrollTop = inner.scrollHeight;
+}
+if(window.visualViewport){ visualViewport.addEventListener("resize", fit); visualViewport.addEventListener("scroll", fit); }
+window.addEventListener("resize", fit);
+function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+
+/* キーボードに よって「゛゜」の 出しかたが ちがう(けいくん 2026-09-28「ゲームの途中で入力できなくなった」)。
+   ・字と くっついた 1字(ぴ) ・字 + うしろに つく 印(ひ + ゚ = NFD) ・字 + 単独の 記号(ひ + ゜)
+   ・半角カナ(ﾋﾟ) … どれも 同じ「ぴ」に そろえてから くらべる */
+function kanaFix(s){
+  return s.replace(/[\uFF61-\uFF9F]+/g, m => m.normalize("NFKC"))
+          .replace(/\u309B/g, "\u3099").replace(/\u309C/g, "\u309A").normalize("NFC");
+}
+function norm(s){
+  return kanaFix(s).replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0)-0x60))
+          .replace(/[\s、。・，．,.!！?？「」『』〜]/g, "");
+}
+function base(c){ c = c.normalize("NFD").replace(/[゙゚]/g, ""); return SMALL[c] || c; }
+
+function judge(input){
+  let n = 0, err = false;
+  for(let i=0;i<input.length;i++){
+    if(i >= target.length){ err = true; break; }
+    if(input[i] === target[i]){ n++; continue; }
+    // 最後の1文字は濁点・小文字の切り替え途中を許す
+    if(i === input.length-1 && base(input[i]) === base(target[i])) break;
+    err = true; break;
+  }
+  return {n, err, done: input === target};
+}
+
+function renderTarget(n, err){
+  if(PLUG && PLUG.tgtHtml && PLUG.owns(mode)){ $("#tgt").innerHTML = PLUG.tgtHtml(qs[idx], n, err); return; }  // 英会話: 英文を 空白・記号ごと 見せる(打つのは 英字だけ)
+  let h = "";
+  for(let i=0;i<target.length;i++){
+    if(i === sepAt) h += '<span class="sep">／</span>';
+    const cls = i < n ? "d" : (i === n ? (err ? "x" : "n") : "c");
+    h += '<span class="'+cls+'">'+target[i]+'</span>';
+  }
+  $("#tgt").innerHTML = h;
+}
+
+function renderCard(){
+  const q = qs[idx];
+  let h = "";
+  if(mode === "quote"){
+    target = q.r + q.ar; sepAt = q.r.length;
+    h += '<p class="qtext">「'+q.t+'」</p><p class="who">'+q.a+'</p>';
+  }else if(PLUG && PLUG.owns(mode)){
+    target = q.r; sepAt = -1;
+    h += PLUG.card(q, idx > 0 ? qs[idx-1] : null);  // 会社名 + ひとつ前の 会社の ひとこと(こたえたら 出る)
+  }else{
+    target = q.r; sepAt = -1;
+    const pc = pic(q);
+    h += '<div class="photo">'+pc.html+(pc.label ? '<span>'+pc.label+'</span>' : '')+'</div>';
+    h += '<p class="spot">'+q.n+'</p><p class="country">'+q.c+'</p>';
+  }
+  h += '<div class="target" id="tgt"></div>';
+  $("#card").innerHTML = h;
+  $("#prog").textContent = (PLUG && PLUG.owns(mode) ? PLUG.lvInfo(mode, level).short : "Lv." + (level+1)) + "　" + (idx+1) + " / " + qs.length;
+  renderTarget(0, false);
+  $("#card").scrollTop = $("#card").scrollHeight;
+}
+
+function tick(){
+  if(!running) return;
+  const total = times.reduce((a,b)=>a+b,0) + (performance.now()-qStart)/1000;
+  $("#clock").textContent = total.toFixed(2);
+  raf = requestAnimationFrame(tick);
+}
+
+function openLevels(m){
+  mode = m;
+  $("#lv-list").innerHTML = LEVELS[m].map((set, i) => {
+    const lens = set.map(q => textOf(m,q).length), b = bestOf(m,i);
+    const kl = PLUG && PLUG.owns(m) ? PLUG.lvInfo(m, i) : null;
+    return '<button class="lv sk-card sk-card-'+(i%4+1)+(isNaN(b) ? '' : ' done')+'" style="'+toneStyle(levelTone(i))+'" data-lv="'+i+'"><b>'+(kl ? kl.name : 'レベル'+(i+1))+'</b>'+
+      '<small>'+(kl ? kl.sub : (levelSchool(set) ? levelSchool(set)+'・' : '')+'1問 '+Math.min(...lens)+'〜'+Math.max(...lens)+'文字')+'</small>'+
+      '<div class="bt">'+(isNaN(b) ? '自己ベスト：まだなし' : '自己ベスト：'+b.toFixed(2)+'秒')+'</div></button>';
+  }).join("");
+  document.querySelectorAll(".lv").forEach(b => b.addEventListener("click", () => start(mode, +b.dataset.lv)));
+}
+
+/* ⚠️ 株式・AI・英会話・整備も どの レベルも いつも 同じ 10問(けいくん 2026-09-27「スピード記録勝負に揃えて」)。
+   「もう一度だけ挑戦(まちがえた 問題だけ)」・ふくしゅう・苦手克服は やめた */
+function start(m, lv){
+  if(!canPlay()){  // 登録なしの 体験が おわった(記録・ランキングは 見られる)
+    // ⚠️ 止める 前に もう一度 聞く(おうちの方が べつの スマホで 払った・ネットに つながった、を ひらきなおさずに 拾う。2026-09-30)
+    if(!start._asked || Date.now() - start._asked > 15000){ start._asked = Date.now(); fetchTrial().then(() => { if(canPlay()) start(m, lv); else showTrialEnd(); }); return; }
+    showTrialEnd(); return;
+  }
+  mode = m; level = lv;
+  qs = PLUG && PLUG.owns(m) ? PLUG.makeQs(m, lv) : LEVELS[m][lv];  // プラグインの コース: いつも 同じ 10問(はじめて 出会う ことばの しるしを 付けるため プラグインを 通す)
+  idx = 0; times = []; running = false; locked = true; penalties = 0; qMiss = 0; lastErr = false;
+  show("game");
+  renderCard();
+  $("#clock").textContent = "0.00";
+  ans.value = ""; baseRaw = 0; lastLen = 0; $("#typed").textContent = "";
+  ans.classList.remove("bad");
+  ans.focus(); // タップ直後に呼んでキーボードを出す
+  const cd = $("#count"); cd.classList.remove("hidden");
+  let k = 3; cd.textContent = k;
+  const iv = setInterval(() => {
+    k--;
+    if(k > 0){ cd.textContent = k; return; }
+    clearInterval(iv); cd.classList.add("hidden");
+    resetBase(); locked = false; running = true;
+    qStart = performance.now(); tick();
+    ans.focus();
+  }, 650);
+}
+
+/* 入力欄は途中で消さない（消すとキーボードの変換状態とズレて誤判定になる）。
+   代わりに「この問題はここから」という位置を覚えて、その後ろだけを判定する。 */
+let baseRaw = 0, composing = false;
+function resetBase(){
+  // 変換中で なければ 前の 問題の 字を 入力欄から 消す(長く なりすぎると 入力を 止めてしまう キーボードが あるため。
+  // 変換中に 消すと キーボードと ずれるので、そのときは 消さずに 位置だけ 覚える)
+  if(!composing && ans.value){ ans.value = ""; }
+  baseRaw = ans.value.length; lastLen = 0; $("#typed").textContent = "";
+}
+ans.addEventListener("compositionstart", () => { composing = true; });
+ans.addEventListener("compositionend", () => {
+  composing = false;
+  // 確定した あとなら 前の 問題の 字を 消しても ずれない
+  setTimeout(() => { if(!composing && baseRaw > 0 && baseRaw <= ans.value.length){ ans.value = ans.value.slice(baseRaw); baseRaw = 0; } }, 0);
+});
+
+/* 1問ごとの まちがい(赤くなった回数)。プラグインの 図鑑の「まちがい」の 回数に 使う */
+let qMiss = 0, lastErr = false;
+function next(){
+  times.push((performance.now()-qStart)/1000);
+  if(PLUG && PLUG.owns(mode)) PLUG.answered(qs[idx], times[times.length-1], qMiss);
+  qMiss = 0; lastErr = false;
+  idx++;
+  resetBase();
+  if(idx >= qs.length){ finish(); return; }
+  renderCard(); ans.classList.remove("bad");
+  qStart = performance.now();
+}
+
+ans.addEventListener("input", () => {
+  if(baseRaw > ans.value.length) baseRaw = ans.value.length;
+  if(locked){ resetBase(); return; }
+  const raw = ans.value.slice(baseRaw);
+  const v = PLUG && PLUG.norm && PLUG.owns(mode) ? PLUG.norm(raw) : norm(raw);  // 英会話: 小文字に そろえ、空白・' ・記号は 打たなくてよい
+  lastLen = v.length;
+  $("#typed").textContent = raw;
+  if(PLUG && PLUG.retarget){ const t = PLUG.retarget(qs[idx], v); if(t && t !== target) target = t; }  // AIフリック旅行: 読みかたが いくつか ある ことば
+  const r = judge(v);
+  renderTarget(r.n, r.err);
+  ans.classList.toggle("bad", r.err);
+  if(r.err && !lastErr) qMiss++;
+  lastErr = r.err;
+  if(r.done) next();
+});
+
+function finish(){
+  running = false; cancelAnimationFrame(raf);
+  const total = times.reduce((a,b)=>a+b,0);
+  const key = bestKey(mode, level), prev = parseFloat(recGet(key));
+  const isNew = isNaN(prev) || total < prev;
+  const firstClear = isNaN(prev);
+  if(isNew) recSet(key, total.toFixed(2));
+  const best = isNew ? total : prev;
+  const r = { mode, level, times: times.slice(), isNew: isNew && !isNaN(prev), firstClear, best, at: Date.now(), arts: qs.map(q => q.art) };
+  if(PLUG && PLUG.owns(mode)) r.kabu = PLUG.finished(r, qs);  // あたらしく 出会った 会社・称号
+  /* 最後の結果を 端末に覚える。Googleマップから もどったとき ページが 作りなおされても 同じ結果画面に もどれるように
+     (けいくん 2026-09-25「戻るボタンで元のゲーム画面に戻らない」)。1時間で 忘れる */
+  store("flick-last", JSON.stringify(r));
+  pushHist(mode, level, Math.round(total * 1000), r.at);
+  renderResult(r);
+  boardSent = "";
+  submitScore(r).then(v => { boardSent = v; drawBoard(r.mode, r.level); });
+}
+/* ── いままでの きろく(1回ごと。のび の グラフのため。けいくん 2026-09-26「いままでの記録をかずとものようにグラフ表示」) ──
+   人ごとに 端末の中(flick-hist-p<id>。だれも登録していなければ flick-hist)。新しい順に 400回まで */
+function histKey(){ const p = curProfile(); return "flick-hist" + (p ? "-p" + p.id : ""); }
+function hist(){ try{ const a = JSON.parse(recGet(histKey()) || "[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
+function pushHist(m, lv, ms, at){
+  const a = hist(); a.push({m, lv, ms, at}); while(a.length > 400) a.shift();
+  recSet(histKey(), JSON.stringify(a));
+  addPlayDay(at);
+}
+/* ── れんぞく(つづけて あそんだ日。けいくん 2026-09-26「連続ゲーム記録を実装してください」) ──
+   かずとも `scores.ts` の streak / streakOfDays と 同じ 数えかた。
+   ・旅の しゅるいも レベルも かけない(あそんだ日は あそんだ日)
+   ・スマホの 時計で 0時に 日が かわる
+   ・きのうまで つづいていれば まだ 生きている(0時を すぎた とたん 0に しない)
+   ・⚠️ 切れても 責めない。0日のときは「きょう あそぶと 1日目」(「とぎれました」と 書かない)
+   あそんだ日は 人ごとに flick-days-p<id>(日の 通し番号の 配列。400回で 消える 履歴とは べつに ずっと のこす) */
+function dayIndex(at){ const d = new Date(at); return Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000); }
+function daysKey(){ const p = curProfile(); return "flick-days" + (p ? "-p" + p.id : ""); }
+function playDays(){
+  let a; try{ a = JSON.parse(recGet(daysKey()) || "null"); }catch(e){ a = null; }
+  if(!Array.isArray(a)){ a = [...new Set(hist().map(h => dayIndex(h.at)))]; }  // はじめは 履歴から 作る
+  return new Set(a);
+}
+function addPlayDay(at){ const s = playDays(); s.add(dayIndex(at)); recSet(daysKey(), JSON.stringify([...s].sort((x,y) => x - y))); }
+function streakOf(set, now){
+  now = now || Date.now();
+  if(!set.size) return { days:0, playedToday:false, best:0 };
+  const sorted = [...set].sort((a,b) => a - b);
+  let best = 1, run = 1;
+  for(let i = 1; i < sorted.length; i++){ run = sorted[i] === sorted[i-1] + 1 ? run + 1 : 1; if(run > best) best = run; }
+  const today = dayIndex(now), last = sorted[sorted.length-1];
+  if(last !== today && last !== today - 1) return { days:0, playedToday:false, best };
+  let cur = 1;
+  for(let i = sorted.length - 1; i > 0; i--){ if(sorted[i-1] !== sorted[i] - 1) break; cur++; }
+  return { days:cur, playedToday: last === today, best };
+}
+/* StreakCard と 同じ 中身 */
+function streakHtml(st, m){
+  const t = COLORS.mode[m], vars = 'style="--sk-ink:' + t.ink + '"';
+  const isBest = st.days > 1 && st.days >= st.best;
+  return '<div ' + vars + '>' +
+    (st.days === 0 ? '<p class="stk0">きょう あそぶと <span class="ink">1日目</span></p>'
+                   : '<p class="stk"><span class="w">🔥 つづけて </span><span class="big">' + st.days + '</span><span class="w">日</span></p>') +
+    (st.days > 0 && !st.playedToday ? '<p class="stk-n">きょう あそぶと <b>' + (st.days + 1) + '日目</b></p>' : '') +
+    (isBest ? '<p class="stk-b">⭐️ いまが さいこう記録！</p>' : (st.best > 1 ? '<p class="stk-l">いちばん ながく つづいたのは ' + st.best + '日</p>' : '')) +
+    '</div>';
+}
+/* みんなの れんぞく(かずともの サーバーが 数える。つながらないときは 何も出さない) */
+async function drawStreakBoard(){
+  const box = $("#streak-board"), p = curProfile();
+  try{
+    const res = await fetch(RANK_API + "/streak");
+    const js = await res.json().catch(() => null);
+    const rows = (res.ok && js && js.ok && js.rows) || [];
+    if(!rows.length){ box.innerHTML = ""; return; }
+    const t = COLORS.mode[mode];
+    box.innerHTML = '<div class="stkb"><p class="stkb-t">みんなの れんぞく</p><ol>' + rows.map((r, i) =>
+      '<li class="' + (p && r.name === p.name ? 'sk-card' : 'sk-key') + '"' + (p && r.name === p.name ? ' style="' + toneStyle(t) + '"' : '') + '>' +
+      '<span class="rk">' + (i < 3 ? MEDALS[i] : (i + 1)) + '</span><span class="nm">' + esc(r.name) + '</span><span class="dy">🔥 ' + r.days + '日</span></li>').join("") + '</ol></div>';
+  }catch(e){ box.innerHTML = ""; }
+}
+const GROWTH_POINTS = 12;
+function growthOf(m, lv){
+  const mine = hist().filter(h => h.m === m && h.lv === lv).sort((a,b) => a.at - b.at);
+  if(!mine.length) return null;
+  let bestMs = mine[0].ms; for(const h of mine) if(h.ms < bestMs) bestMs = h.ms;
+  const shown = mine.slice(-GROWTH_POINTS); let crowned = false;
+  return { points: shown.map(h => { const best = !crowned && h.ms === bestMs; if(best) crowned = true; return {at:h.at, ms:h.ms, best}; }),
+           plays: mine.length, firstMs: mine[0].ms, lastMs: mine[mine.length-1].ms, bestMs };
+}
+function fmtT(ms){ const s = ms / 1000; if(s < 60) return s.toFixed(1) + "びょう"; const mi = Math.floor(s / 60); return mi + "分" + (s - mi*60).toFixed(1) + "びょう"; }
+/* かずとも `Growth.tsx` の GrowthChart と 同じ絵(SVG 320×128。ベストの点線・うすい面・👑・はじめ/いま・速くなった ぶん) */
+function growthHtml(g, m, lv){
+  const t = COLORS.mode[m], vars = 'style="' + toneStyle(t) + ';--sk-ink:' + t.ink + '"';
+  if(g.points.length === 1) return '<div ' + vars + '><p class="g1">まだ 1回だけ(' + fmtT(g.points[0].ms) + ')。<br>もう1回 あそぶと ここに のびが 出ます</p></div>';
+  const W = 320, H = 128, L = 30, R = W - 14, T = 26, B = H - 22;
+  const maxMs = Math.max(g.bestMs, ...g.points.map(p => p.ms)), span = maxMs - g.bestMs;
+  const pad = span === 0 ? Math.max(maxMs * 0.1, 500) : span * 0.18, lo = g.bestMs - pad, hi = maxMs + pad;
+  const y = ms => T + ((ms - lo) / (hi - lo)) * (B - T), n = g.points.length;
+  const x = i => n === 1 ? (L + R) / 2 : L + (i / (n - 1)) * (R - L);
+  const pts = g.points.map((p, i) => x(i).toFixed(1) + "," + y(p.ms).toFixed(1));
+  const area = "M " + x(0).toFixed(1) + "," + B + " L " + pts.join(" L ") + " L " + x(n-1).toFixed(1) + "," + B + " Z";
+  const by = y(g.bestMs).toFixed(1), gid = "sk-growth-" + m + "-" + lv, gain = g.firstMs - g.lastMs;
+  const label = MAPS[m].name + " レベル" + (lv+1);
+  return '<div ' + vars + '><svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(label) + ' の きろく。' + g.plays + '回 あそんで、いちばん速いのは ' + fmtT(g.bestMs) + '">' +
+    '<defs><linearGradient id="' + gid + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="' + t.a + '" stop-opacity="0.28"/><stop offset="100%" stop-color="' + t.b + '" stop-opacity="0.02"/></linearGradient></defs>' +
+    '<line x1="' + L + '" y1="' + by + '" x2="' + R + '" y2="' + by + '" stroke="' + t.ink + '" stroke-width="1" stroke-dasharray="3 3" opacity="0.45"/>' +
+    '<text x="' + (L-4) + '" y="' + (+by + 3.5).toFixed(1) + '" text-anchor="end" fill="#94a3b8" font-size="9" font-weight="700">ベスト</text>' +
+    '<path d="' + area + '" fill="url(#' + gid + ')"/>' +
+    '<polyline points="' + pts.join(" ") + '" fill="none" stroke="' + t.a + '" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>' +
+    g.points.map((p, i) => '<circle cx="' + x(i).toFixed(1) + '" cy="' + y(p.ms).toFixed(1) + '" r="' + (p.best ? 5.5 : 3.5) + '" fill="' + t.a + '" stroke="#ffffff" stroke-width="' + (p.best ? 2 : 1.5) + '"/>' +
+      (p.best ? '<text x="' + x(i).toFixed(1) + '" y="' + (y(p.ms) - 9).toFixed(1) + '" text-anchor="middle" font-size="12">👑</text>' : '')).join("") +
+    '<text x="' + (L-4) + '" y="' + (T-12) + '" text-anchor="end" font-size="9" font-weight="700" fill="#94a3b8">↑速い</text>' +
+    '<text x="' + L + '" y="' + (H-5) + '" font-size="9" font-weight="700" fill="#94a3b8">まえ</text>' +
+    '<text x="' + R + '" y="' + (H-5) + '" text-anchor="end" font-size="9" font-weight="700" fill="#94a3b8">いま</text></svg>' +
+    '<dl class="gl"><div><dt>はじめ</dt><dd>' + fmtT(g.firstMs) + '</dd></div><div><dt>いま</dt><dd class="ink">' + fmtT(g.lastMs) + '</dd></div></dl>' +
+    '<p class="gg">' + (gain > 0 ? '<span class="ink">🎉 ' + fmtT(gain) + ' 速くなった！</span>' : '<span class="no">つづけると 速くなるよ</span>') + '</p>' +
+    '<p class="gn">' + g.plays + '回 あそんだ ・ ベスト ' + fmtT(g.bestMs) + '</p>' +
+    (g.plays > n ? '<p class="gn">(グラフは さいきんの ' + n + '回)</p>' : '') + '</div>';
+}
+/* トップの「きろく」(ランキング と のび)。いまの旅で あそんだ レベルの ふだを ならべ、えらんだ レベルの ぶんを 出す */
+let recLv = null, recMode = null;
+function drawRec(){
+  if(recMode !== mode){ recMode = mode; recLv = null; }  // 旅を 切りかえたら いちばん新しく あそんだ レベルに
+  const sec = $("#rec"), all = hist().filter(h => h.m === mode), days = playDays();
+  if(!days.size){ sec.classList.add("hidden"); return; }  // 1回も あそんでいない人には 出さない(かずともと同じ)
+  sec.classList.remove("hidden");
+  // れんぞく(どの旅でも 同じ)
+  const pp = curProfile();
+  $("#streak-sub").textContent = (pp ? pp.name + " が " : "") + "つづけて あそんだ日";
+  $("#h-streak").innerHTML = streakHtml(streakOf(days), mode);
+  drawStreakBoard();
+  // この旅を まだ あそんでいなければ ランキング・のびは 出さない
+  $("#rec-mode").classList.toggle("hidden", !all.length); $("#rec-mode2").classList.toggle("hidden", !all.length);
+  $("#rec-lv").classList.toggle("hidden", !all.length);
+  if(!all.length){ $("#rec-sub").textContent = MAPS[mode].name + " は まだ あそんでいません"; return; }
+  const lvs = [...new Set(all.map(h => h.lv))].sort((a,b) => a - b);
+  if(recLv === null || !lvs.includes(recLv)) recLv = all[all.length-1].lv;
+  const p = curProfile();
+  $("#rec-sub").textContent = (p ? p.name + " の " : "") + MAPS[mode].name;
+  $("#rec-lv").innerHTML = lvs.map(l => '<button type="button" data-lv="' + l + '"' + (l === recLv ? ' class="on"' : '') + '>レベル' + (l+1) + '</button>').join("");
+  $("#rec-lv").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { recLv = +b.dataset.lv; drawRec(); }));
+  $("#grow-sub").textContent = (p ? p.name + " の " : "") + MAPS[mode].name + " レベル" + (recLv+1);
+  const g = growthOf(mode, recLv);
+  $("#h-grow-body").innerHTML = g ? planGrowth(growthHtml(g, mode, recLv)) : '<p class="g0">まだ あそんでいません</p>';
+  drawBoard(mode, recLv, "board2");
+}
+
+/* ── みんなのランキング ── */
+let boardPeriod = "today", boardSent = "";  // 送った結果(のった / 理由)
+async function submitScore(r){
+  const p = curProfile();
+  if(!p || r.mode === "quote" || !r.times || r.times.length !== ROUNDS) return "";
+  if(PLUG && PLUG.noRank(r.mode, r.level)) return "norank";  // 61より 上の レベルは ランキングに 送らない(かずともの 表は 1〜60)
+  const ms = Math.round(r.times.reduce((a,b)=>a+b,0) * 1000);
+  try{
+    const res = await fetch(RANK_API + "/score" + (trialToken() ? "?t=" + encodeURIComponent(trialToken()) : ""), { method:"POST", headers:Object.assign({"content-type":"application/json"}, authHeaders()),
+      body: JSON.stringify({ name:p.name, grade:gradeKey(p.grade), mode:r.mode, level:r.level+1, ms, times:r.times.map(t => Math.round(t*1000)) }) });
+    const js = await res.json().catch(() => null);
+    if(res.ok && js && js.ok) return js.listed === false ? "unlisted" : "ok";  // unlisted = しまったが 名前は のせない
+    return (js && js.reason) ? js.reason : "おくれませんでした(" + res.status + ")";
+  }catch(e){ return "つながりませんでした"; }
+}
+const MEDALS = ["🥇","🥈","🥉"];  // 1〜3位(かずともと同じ。けいくん 2026-09-26)
+async function drawBoard(m, lv, id){
+  id = id || "board";  // "board"=結果画面 / "board2"=トップの きろく
+  const box = $("#" + id), p = curProfile(), body = $("#" + id + "-body");
+  if(PLUG && PLUG.owns(m) && PLUG.noBoard){ box.hidden = true; return; }  // AIフリック旅行: かずともが 受けつけるまで 出さない
+  box.hidden = false;
+  $("#" + id + "-sub").textContent = MAPS[m].name + " レベル" + (lv+1) + "・" + (p && byGrade() ? gradeName(p.grade) : "ぜんいん");
+  $("#" + id + "-tabs").innerHTML = PERIODS.map(([k,n]) => '<button type="button" data-p="'+k+'"'+(k === boardPeriod ? ' class="on"' : '')+'>'+n+'</button>').join("");
+  $("#" + id + "-tabs").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { boardPeriod = b.dataset.p; drawBoard(m, lv, id); }));
+  if(!p){
+    body.innerHTML = '<p class="board-note">右上の アイコンで なまえを 入れると、みんなと タイムをくらべられるよ。<button type="button" class="board-reg">なまえを 入れる</button></p>';
+    body.querySelector(".board-reg").addEventListener("click", openProf);
+    return;
+  }
+  body.innerHTML = '<p class="board-note">よみこみ中…</p>';
+  const mine = m, mylv = lv;
+  try{
+    const res = await fetch(RANK_API + "/board?" + new URLSearchParams({ mode:m, level:String(lv+1), grade:(byGrade() ? gradeKey(p.grade) : "all"), period:boardPeriod }));
+    const js = await res.json().catch(() => null);
+    if(id === "board2" && (mine !== mode || mylv !== recLv)) return;  // 読んでいるあいだに 別の レベルに 変わった
+    if(!res.ok || !js || !js.ok){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません' + (js && js.reason ? "(" + esc(js.reason) + ")" : "") + '</p>'; return; }
+    const rows = js.rows || [];
+    const note = id === "board" && boardSent && boardSent !== "ok"
+      ? (boardSent === "norank" ? '<p class="board-note">この回は ランキングの 対象では ありません(レベル61より上)</p>'
+      : boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。ログインすると のります</p>'
+                                  : '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>') : "";
+    if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも！</p>' + note; return; }
+    body.innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
+      (i < 3 ? '<span class="rk md">' + MEDALS[i] + '</span>' : '<span class="rk">' + (i+1) + '位</span>') +
+      '<span class="nm">' + esc(r.name) + '</span><span class="tm">' + (r.ms/1000).toFixed(2) + '秒</span></div>').join("") + note;
+  }catch(e){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません(つながりませんでした)</p>'; }
+}
+/* こたえの名前に ふりがな(けいくん 2026-09-25「こたえの名前にもふりがなを振って下さい」)。よみは 打つ字(q.r)そのもの */
+function nameRuby(q){ return '<ruby class="nm">' + esc(q.n) + '<rt>' + esc(q.r) + '</rt></ruby>'; }
+/* 偉人の 名言と その解説(結果カード) */
+/* 会社の 時価総額(株の値段 × 株の数 = 会社の大きさの めやす)。⚠️ サーバーが無いので 自動で新しくならない。
+   だから かならず 日付を付ける。数字は tools/companies-caps.json(tools/add_spots.py が この2つと 同じか 確かめる) */
+const CAP_ASOF = "2026年9月26日", CAP_RATE = "1ドル=157.5円";
+function quoteBlock(q){
+  if(PLUG && q.k === PLUG.kind) return PLUG.info(q);
+  if(q.k === "company") return '<p class="mcap">💴 時価総額 <b>' + esc(q.mc) + '</b><small>' + CAP_ASOF + '時点' + (isJapan(q) ? "" : "(" + CAP_RATE + "で計算)") + '<br>時価総額は 会社の大きさの めやす(株の値段 × 株の数)</small></p>';
+  if(q.k !== "person") return "";
+  return '<blockquote class="quote"><p class="qt">「'+(RUBY[q.art+"|s"] || q.s)+'」</p><p class="qd">'+(RUBY[q.art+"|sd"] || q.sd)+'</p></blockquote>';
+}
+function renderResult(r){
+  mode = r.mode; level = r.level; times = r.times;
+  qs = LEVELS[mode][level];
+  if(Array.isArray(r.arts) && r.arts.length === ROUNDS){ const pool = POOLS[mode] || [], by = new Map(pool.map(q => [q.art, q])); const a = r.arts.map(x => by.get(x) || (PLUG ? PLUG.byArt(x) : null)); if(a.every(Boolean)) qs = a; }
+  const total = times.reduce((a,b)=>a+b,0);
+  const chars = qs.reduce((s,q)=> s + (mode==="quote" ? (q.r+q.ar).length : q.r.length), 0);
+  const pinsNow = mode === "quote" ? 0 : clearedSpots(mode).size;
+  $("#r-pins").classList.toggle("hidden", !(mode !== "quote" && r.firstClear));
+  $("#r-pins").textContent = MAPS[mode].icon + " " + MAPS[mode].word + "に ピンが " + ROUNDS + "本 立ったよ！(ぜんぶで " + pinsNow + " / " + POOLS[mode].length + unitOf(MAPS[mode]) + ")";
+  if(PLUG && PLUG.owns(mode)){ $("#r-pins").classList.remove("hidden"); $("#r-pins").innerHTML = PLUG.resultMsg(r); }
+  $("#r-time").textContent = total.toFixed(2);
+  const ink = levelTone(level).ink;
+  $(".stamp").style.color = ink; $(".stamp").style.borderColor = ink;
+  $("#r-cps").textContent = (chars/total).toFixed(1);
+  $("#r-chars").textContent = chars;
+  $("#r-best").textContent = r.best.toFixed(2);
+  $("#r-streak").innerHTML = streakHtml(streakOf(playDays()), mode);  // れんぞく(あそび終わった そのときが いちばん うれしい)
+  const g = growthOf(mode, level);   // のび(かずともと同じで 2回め から)
+  $("#r-grow").classList.toggle("hidden", !(g && g.plays > 1));
+  if(g && g.plays > 1) $("#r-grow-body").innerHTML = planGrowth(growthHtml(g, mode, level));
+  drawKeepNote();  // つながっていない 人には「とじると きえます」
+  $("#r-new").classList.toggle("hidden", !r.isNew);
+  $("#r-list").className = mode !== "quote" ? "intros" : "list";
+  $("#r-list").innerHTML = mode !== "quote"
+    ? qs.map((q,i) => { const pc = pic(q); return '<li class="intro"><div class="pic">'+pc.html+'</div><div class="body">'+
+        '<div class="head"><b>'+(PLUG && PLUG.nameHtml && q.k === PLUG.kind ? PLUG.nameHtml(q) : nameRuby(q))+'</b><span>'+times[i].toFixed(2)+'秒</span></div>'+
+        '<small>'+q.c+'</small>'+(RUBY[q.art] ? '<p class="rb">'+RUBY[q.art]+'</p>' : '<p>'+q.d+'</p>')+quoteBlock(q)+gmapLink(q)+(pc.credit ? '<em class="credit">'+pc.credit+'</em>' : '')+'</div></li>'; }).join("")
+    : qs.map((q,i) => '<li><span>'+q.a+'「'+q.t+'」</span><span>'+times[i].toFixed(2)+'秒</span></li>').join("");
+  $("#next-lv").classList.toggle("hidden", level >= LEVELS[mode].length - 1);
+  $("#again").className = level >= LEVELS[mode].length - 1 ? "primary" : "ghost";
+  ans.blur();
+  show("result");
+  showBest();
+  drawBoard(mode, level);
+}
+
+/* ひらいたとき、1時間いないの 結果が 残っていれば その画面から(Googleマップから もどってきたとき用) */
+function restoreLast(){
+  try{
+    /* ⚠️ もどすのは「もどる」で 帰ってきたとき(Googleマップから)だけ。リンク・ホーム画面から ひらいたときは トップ
+       (けいくん 2026-09-26「リンクからトップ画面ではなく終わった後のページに飛ぶ」) */
+    const nav = (performance.getEntriesByType("navigation")[0] || {}).type;
+    if(nav !== "back_forward" && nav !== "reload") return;
+    const r = JSON.parse(store("flick-last") || "null");
+    if(!r || Date.now() - r.at > 60*60*1000 || !LEVELS[r.mode] || !LEVELS[r.mode][r.level] || !Array.isArray(r.times) || r.times.length !== ROUNDS) return;
+    if(r.mode !== mode){ setMode(r.mode); }
+    renderResult(r);
+  }catch(e){}
+}
+
+/* ── だれが あそぶ？ の 画面(かずとも `Game.tsx` の picker と 同じ作り。けいくん 2026-09-25) ──
+   写真は 160px の 四角に 切って JPEG にしてから しまう(flick-photo-<id>。かずとも `photo.ts` と同じ)。
+   ⚠️ そのまま しまうと 1枚で localStorage が いっぱいになり なまえも 記録も しまえなくなる。
+   写真は この端末の中だけ。ランキングに 出るのは なまえ・学年・タイムだけ */
+const TONE_LIST = [TONE.pink, TONE.blue, TONE.green, TONE.orange, TONE.purple, toneFrom("#e0202e")];
+let profEditing = null;  // null=なにも打っていない / ""=あたらしい人 / id=なまえを なおす
+function photoOf(id){ return store("flick-photo-" + id) || ""; }
+function firstChar(s){ return [...(s || "")][0] || "?"; }
+function tileHtml(p, i, cls){
+  const ph = p ? photoOf(p.id) : "";
+  return '<span class="tile sk-card '+cls+'" style="'+toneStyle(TONE_LIST[Math.max(0, i) % TONE_LIST.length])+'">'+(ph ? '<img src="'+ph+'" alt="">' : '<span>'+esc(firstChar(p ? p.name : "?"))+'</span>')+'</span>';
+}
+function drawProfBtn(){
+  const list = profiles(), cur = store("flick-profile"), i = list.findIndex(p => p.id === cur), p = list[i] || null;
+  $("#prof-btn .nm").textContent = p ? p.name : "";
+  $("#prof-tile").outerHTML = tileHtml(p, i, "sm").replace('class="tile', 'id="prof-tile" class="tile');
+}
+/* かずとも `nickname.ts` と 同じ 決まり(わるい言葉・学校名・数字4つ以上・れんらくさき) */
+const BANNED_WORDS = ["しね","ころす","ころせ","きえろ","しぬ","きちがい","きもい","うざい","ぶす","でぶ","はげ","ばか","あほ","くそ","ごみくず","かす",
+  "うんこ","うんち","ちんこ","ちんちん","まんこ","おっぱい","せっくす","えっち","ちくび","しっこ",
+  "baka","aho","kimoi","uzai","busu","debu","hage","kuso","unko","unchi","chinko","manko","oppai","ecchi","sukebe","korosu","kichigai",
+  "fuck","shit","bitch","sex","dick","penis","pussy","asshole","kill","die","nigger","fag","しょうがい","めくら","つんぼ"];
+const SCHOOL_WORDS = ["しょうがっこう","ちゅうがっこう","こうこう","がっこう","しょうがっ","ちゅうがっ","がくえん","だいがく","しょうがく","ちゅうがく","小学校","中学校","高校","学校","学園","大学"];
+function normName(v){ return v.normalize("NFKC").toLowerCase().replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60)).replace(/[\s　ー・.,\-_]/g, ""); }
+function checkNickname(raw){
+  const name = raw.trim();
+  if(name === "") return "さきに なまえを 入れてね";
+  const flat = normName(name);
+  if(BANNED_WORDS.some(w => flat.includes(w))) return "その ことばは つかえません。べつの なまえに してね";
+  if(SCHOOL_WORDS.some(w => flat.includes(normName(w)))) return "学校の 名まえは 書かないでね";
+  if(/.[小中]$/.test(name)) return "学校の 名まえは 書かないでね";
+  if(/\d{4,}/.test(flat)) return "数字が 多すぎます。電話番号は 書かないでね";
+  if(/[@＠]|https?:|line|ライン|ついったー|twitter|insta/i.test(flat)) return "れんらくさきは 書かないでね";
+  return "";
+}
+function drawProf(){
+  const list = profiles(), cur = store("flick-profile"), ci = list.findIndex(p => p.id === cur), p = list[ci] || null;
+  // 4列の タイル
+  $("#prof-grid").innerHTML = list.map((x, i) => {
+    const on = x.id === cur;
+    return '<button type="button" data-id="'+x.id+'">'+tileHtml(x, i, "md " + (on ? "cur" : "off"))+'<span class="pn'+(on ? ' cur' : '')+'">'+esc(x.name)+'</span><span class="pg">'+esc(gradeShort(x.grade))+'</span></button>';
+  }).join("") + (list.length < MAX_PROFILES ? '<button type="button" id="prof-add"><span class="tile md sk-key">＋</span><span class="pn">ふやす</span></button>' : '');
+  $("#prof-grid").querySelectorAll("button[data-id]").forEach(b => b.addEventListener("click", () => {
+    store("flick-profile", b.dataset.id); store("flick-last", ""); profEditing = null; closeProf(); afterProfileChange();
+  }));
+  const add = $("#prof-add"); if(add) add.addEventListener("click", () => openProfForm(""));
+  // なまえの 欄
+  const form = $("#prof-form");
+  form.classList.toggle("hidden", profEditing === null);
+  if(profEditing !== null){
+    $("#prof-form-lb").textContent = profEditing !== "" ? "なまえを なおす" : (list.length === 0 ? "はじめまして。なまえを 入れてね" : "あたらしい人の なまえ");
+    $("#prof-save").textContent = profEditing !== "" ? "なおす" : "つくる";
+    $("#prof-cancel").classList.toggle("hidden", list.length === 0);
+  }
+  // いま えらんでいる人・せってい
+  const body = $("#prof-body");
+  // おうちの方の アカウント(ランキングの ⚠️ の すぐ下に 1行)
+  // ⚠️ `/account` へは **小さな リンクだけ**(大きな ボタンに しない。けいくん 2026-09-30「マイページで /account に 飛ばされる。動線が悪すぎる」)
+  // ⚠️ 2026-09-30: ここから ログインできる(けいくん「この右側の画面で ログイン出来るようにしてください」)。はじめての 人(なまえの 欄が 出ている とき)にも 出す
+  const link = signedIn()
+    ? '<p class="prof-link" id="prof-link">✅ アカウントと つながっています<br>' + (linkToken() ? '<button type="button" class="lnk" id="prof-unlink">つなぐのを やめる</button>' : '<a class="lnk" href="https://kazutomo.app/play?my=1">マイページへ ›</a>') + '</p>'
+    : '<p class="prof-link" id="prof-link">ログインすると、きろくが のこり ランキングに 名前が のります<br><a class="pill" href="' + LOGIN_URL + '">🔑 ログイン</a></p>';
+  // 🧭 ゲームを えらぶ(⚠️ 一覧は マイページの 中だけ。かずともの あそぶ画面の 下には もう 無い。けいくん 2026-09-30)
+  // ⚠️ 一覧を **この 画面の 中に**(けいくん 2026-09-30「この画面の中です。1番下に飛ばなくても 遊ぶ人も ゲームも 選べる」)。かずとも(計算)+ SERIES の 全部
+  // ⚠️ タイルは **絵文字ではなく 各ゲームの アイコンの絵**(けいくん 2026-09-30「このアイコン画像も フリックゲームのアイコン画像に」)。作るのは gameTilesHtml()(ページの いちばん下と 同じ)
+  const link2 = link + '<div class="prof-set"><p class="ttl">🧭 ゲームを えらぶ</p>' + gameTilesHtml() + '</div>';
+  const bindUnlink = () => { const u = $("#prof-unlink"); if(u) u.addEventListener("click", () => {
+    if(!confirm("アカウントと つなぐのを やめます。\nこの スマホに のこっている きろくは 消えません。いいですか？")) return;
+    try{ localStorage.removeItem(LINK_KEY); sessionStorage.removeItem("flick-plan"); }catch(e){}
+    PLAN = null; recMemo = null; drawProf(); afterProfileChange(); fetchPlan(true);
+  }); };
+  if(!p || profEditing !== null){ body.innerHTML = link2; bindUnlink(); return; }
+  const ph = photoOf(p.id), bg = byGrade();
+  body.innerHTML =
+    '<div class="prof-cur"><button type="button" class="pic" id="prof-pic" aria-label="アイコンの 写真を かえる">'+tileHtml(p, ci, "md")+'<span class="cam">📷</span></button>'+
+      '<div class="tx"><b>'+esc(p.name)+'</b><small>アイコンを さわると 写真を かえられます</small>'+(ph ? '<button type="button" class="lnk" id="prof-unphoto">写真を もどす</button>' : '')+'</div></div>'+
+    '<p class="prof-err" id="prof-photo-err"></p>'+
+    '<div class="prof-links"><button type="button" class="lnk" id="prof-rename">なまえを なおす</button><button type="button" class="lnk" id="prof-del">この人を 消す</button></div>'+
+    '<p class="prof-note">⚠️ ランキングに 出るのは なまえ・学年・タイムだけ。写真は 出ません</p>'+link2+
+    '<div class="prof-set"><p class="ttl">せってい</p><p class="lb">だれと くらべる？</p>'+
+      '<div class="two"><button type="button" id="prof-all" class="'+(bg ? 'sk-key off' : 'on')+'">ぜんいん</button>'+
+      '<div class="sel '+(bg ? 'on' : 'sk-key off')+'" id="prof-selbox"><select id="prof-grade">'+gradeOptions(p.grade)+'</select><span class="arw" aria-hidden="true">▼</span></div></div>'+
+      '<p class="hint">学年は 右を さわると かえられます</p></div>';
+  bindUnlink();
+  $("#prof-pic").addEventListener("click", () => $("#prof-file").click());
+  const un = $("#prof-unphoto"); if(un) un.addEventListener("click", () => { try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){} drawProf(); drawProfBtn(); });
+  $("#prof-rename").addEventListener("click", () => openProfForm(p.id));
+  $("#prof-del").addEventListener("click", () => {
+    // ⚠️ 記録は 消さない(かずともと同じ)。消えるのは なまえと 写真だけ
+    if(!confirm("「" + p.name + "」を この スマホから 消します。\nきろくは のこります。いいですか？")) return;
+    try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){}
+    const rest = profiles().filter(x => x.id !== p.id); saveProfiles(rest);
+    store("flick-profile", rest[0] ? rest[0].id : ""); store("flick-last", "");
+    drawProf(); afterProfileChange();
+  });
+  $("#prof-all").addEventListener("click", () => { store("flick-bygrade", "0"); drawProf(); afterProfileChange(); });
+  // ⚠️ 同じ学年を えらびなおしても change は 鳴らないので、さわった時点(click)でも 学年で くらべるに する
+  $("#prof-selbox").addEventListener("click", () => { if(!byGrade()){ store("flick-bygrade", "1"); drawProf(); afterProfileChange(); } });
+  $("#prof-grade").addEventListener("change", e => {
+    const g = e.target.value; if(!GRADE_NAME[g]) return;
+    saveProfiles(profiles().map(x => x.id === p.id ? Object.assign({}, x, {grade:g}) : x));
+    store("flick-bygrade", "1"); drawProf(); afterProfileChange();
+  });
+}
+function gradeOptions(cur){
+  const g = gradeKey(cur); let out = "", grp = "";
+  for(const [k, n, s, gr] of GRADES){
+    if(gr !== grp){ if(grp) out += "</optgroup>"; out += '<optgroup label="'+gr+'">'; grp = gr; }
+    out += '<option value="'+k+'"'+(k === g ? ' selected' : '')+'>'+n+'</option>';
+  }
+  return out + "</optgroup>";
+}
+function openProfForm(id){
+  profEditing = id;
+  const p = id ? profiles().find(x => x.id === id) : null;
+  $("#prof-name").value = p ? p.name : ""; $("#prof-name").classList.remove("bad"); $("#prof-name-err").textContent = "";
+  drawProf();
+  setTimeout(() => $("#prof-name").focus(), 50);
+}
+function openProf(){ profEditing = profiles().length ? null : ""; drawProf(); $("#prof").classList.remove("hidden"); }
+function closeProf(){ $("#prof").classList.add("hidden"); }
+function afterProfileChange(){ drawProfBtn(); showBest(); const b = $("#board"); if(b && !b.hidden && !$("#result").classList.contains("hidden")) drawBoard(mode, level); }
+$("#prof-btn").addEventListener("click", openProf);
+$("#prof").addEventListener("click", e => { if(e.target === $("#prof")) closeProf(); });
+$("#prof-cancel").addEventListener("click", () => { profEditing = null; drawProf(); });
+$("#prof-name").addEventListener("input", e => {
+  const v = e.target.value, r = v.trim() === "" ? "" : checkNickname(v);
+  $("#prof-name-err").textContent = r; e.target.classList.toggle("bad", !!r);
+});
+$("#prof-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const raw = $("#prof-name").value, r = checkNickname(raw);
+  if(r){ $("#prof-name-err").textContent = r; $("#prof-name").classList.add("bad"); return; }
+  const name = raw.trim().slice(0, 8);
+  let list = profiles();
+  if(profEditing){
+    list = list.map(p => p.id === profEditing ? Object.assign({}, p, {name}) : p);
+  }else{
+    if(list.length >= MAX_PROFILES) return;
+    const id = String(Date.now().toString(36)) + Math.floor(Math.random()*1000);
+    const cur = curProfile();
+    list.push({id, name, grade: cur ? gradeKey(cur.grade) : "e1"});  // 新しい人は いまの学年の設定を 引きつぐ(かずともと同じ)
+    // はじめての登録なら、それまでの記録(だれのものでもなかったぶん)を この人に引きつぐ
+    if(list.length === 1){
+      // ⚠️ つながっていない 人の この回の きろくは sessionStorage に あるので、そちらも 同じ 入れものの中で 引きつぐ
+      for(const st of [localStorage, sessionStorage]){
+        try{
+          for(let i = 0; i < st.length; i++){
+            const k = st.key(i);
+            if(k && /^flick-best-(world|japan|wnames|jnames|wpeople|jpeople)-\d+$/.test(k)) st.setItem(k.replace("flick-best-", "flick-best-p"+id+"-"), st.getItem(k));
+          }
+        }catch(e){}
+      }
+      recMemo = null;
+    }
+    store("flick-profile", id); store("flick-last", "");
+  }
+  const first = !profEditing && list.length === 1;  // はじめての なまえ
+  saveProfiles(list); profEditing = null; drawProf(); afterProfileChange();
+  if(first) closeProf();  // ⚠️ はじめての 人は そのまま 遊べるように 閉じる(2026-09-30。まえは ひらいたままで「押せない」に 見えた)
+});
+/* 写真 → 160px の 四角(まん中)・JPEG 0.8 → localStorage。iPhone の HEIC も <img> なら Safari が 読める */
+function toIconDataUrl(file){
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file), im = new Image();
+    im.onload = () => {
+      URL.revokeObjectURL(url);
+      try{
+        const c = document.createElement("canvas"); c.width = 160; c.height = 160;
+        const ctx = c.getContext("2d"); if(!ctx){ reject(new Error("えがけませんでした")); return; }
+        const side = Math.min(im.width, im.height);
+        ctx.drawImage(im, (im.width - side)/2, (im.height - side)/2, side, side, 0, 0, 160, 160);
+        resolve(c.toDataURL("image/jpeg", 0.8));
+      }catch(e){ reject(new Error("小さく できませんでした")); }
+    };
+    im.onerror = () => { URL.revokeObjectURL(url); reject(new Error("写真を よみこめませんでした")); };
+    im.src = url;
+  });
+}
+$("#prof-file").addEventListener("change", async e => {
+  const f = e.target.files && e.target.files[0]; e.target.value = "";
+  const p = curProfile(); if(!f || !p) return;
+  const err = $("#prof-photo-err");
+  try{
+    const data = await toIconDataUrl(f);
+    try{ localStorage.setItem("flick-photo-" + p.id, data); }
+    catch(x){ if(err) err.textContent = "スマホの中が いっぱいで しまえませんでした"; return; }
+    drawProf(); drawProfBtn();
+  }catch(x){ if(err) err.textContent = "この 写真は つかえませんでした。べつの 写真で ためしてね"; }
+});
+drawProfBtn();
+/* このゲームの 名前・絵(歴史・宇宙・からだ は 絵が できるまで 文字の題名) */
+if(!GAME.logo){ const mk = $(".logo-mark"); if(mk) mk.remove(); const w = $(".logo-word"); if(w) w.outerHTML = '<span class="logo-text">' + esc(GAME.name) + '</span>'; }
+if(!GAME.hero){ const h = $(".hero"); if(h) h.remove(); }
+if(GAME.lead) $("#lead").textContent = GAME.lead;
+if(GAME.how) $("#how1").textContent = GAME.how;
+if(GAME.rule) $("#rule1").textContent = GAME.rule;
+/* シリーズの ほかのゲームへ: いちばん下にも マイページと 同じ「🧭 ゲームを えらぶ」の タイル(けいくん 2026-09-30「これと同じ表記にしてください」。まえは 絵文字 + 名前の 文字の ならび) */
+{ const p = document.createElement("div"); p.className = "series";
+  p.innerHTML = '<p class="series-ttl">🧭 ゲームを えらぶ</p>' + gameTilesHtml();
+  const al = $(".about-link"); if(al) al.before(p); }
+
+/* 名言モード(QUOTES)は しくみを 残して 画面には 出さない(2026-09 に 名所だけに した) */
+$("#quit").addEventListener("click", () => { running = false; locked = true; cancelAnimationFrame(raf); ans.blur(); show("home"); showBest(); });
+$("#again").addEventListener("click", () => { store("flick-last", ""); start(mode, level); });
+$("#next-lv").addEventListener("click", () => { store("flick-last", ""); start(mode, level + 1); });
+$("#home-btn").addEventListener("click", () => { store("flick-last", ""); show("home"); showBest(); });
+showBest();
+restoreLast();
+fetchPlan(true);  // できることを かずとも に 聞く(かえってきたら グラフ・おしらせを かきなおす)。⚠️ ログインは しるし なしで 変わるので 毎回 聞く
+exchangeLink().then(() => { if(TRIAL_AFTER_LINK) fetchPlan(true); fetchTrial(); });  // 登録なしの 体験: 遊べるか・のこり何日か(つながらなければ 3日まで そのまま)
+// ⚠️ ネットに つながった・画面に もどった ときにも 聞きなおす(1分に 1回まで)
+(function(){ let last = 0; const again = () => { if(Date.now() - last < 60000) return; last = Date.now(); fetchTrial(); };
+  addEventListener("online", again); document.addEventListener("visibilitychange", () => { if(!document.hidden) again(); }); })();
+</script>
+</body>
+</html>

@@ -633,10 +633,15 @@
   べと病は 本当の カビでは ない / 特別栽培農産物の 決まり(農薬の 回数と 化学肥料の 窒素が 半分 以下)/ 荘園は 戦国時代ごろまで / JAS法は 規格の 法律(表示は 食品表示法へ 移った)/ 天日干しは 育てかたでは なく 乾かしかた
 - ふりがなは 全語 見た(`python3 tools/noka/ruby_dump.py <旅>`)。**農家の 中だけで** 直した(`terms_js.py` の `FIX`): 実(み)・実肥(みごえ)・1字の 種(たね)・何年 / 何列(なん)・鉢(はち)・房(ふさ)・1年中(じゅう)・
   二十四節気(にじゅうしせっき)・八十八夜(はちじゅうはちや)・二百十日(にひゃくとおか)・育苗箱(いくびょうばこ)・花芽(はなめ)・れんげ畑(ばたけ)。ほかは 文を 言いかえて さけた(えん麦 → えんばく など)
-- 絵は **まだ 無い**(`build_games.py` で `hero=False, logo=False`・art なし → 題名は 文字)。仮の アイコンは コードで 描いた 緑の 地に 白い 芽と 畝(`tools/noka/placeholder_icon.py`)。
-  絵が 届いたら: トップ `noka/hero.webp`(1536×1024)・四角い 絵を `tools/noka/art/square-src.png` → `python3 tools/icon_from_square.py noka`・題名の 透明 PNG を `tools/noka/art/title-src.png` → `python3 tools/title_from_art.py noka`、
-  `build_games.py` に `art=dict(...)` を 足して `hero=True, logo=True`。**届いた 絵の 字は かならず 切り出して 読む**
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`(夢のしごと の 章、整備士の となり。題名の 絵は まだ なので 名前は 字)・規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-03 に 足した
+- 絵(2026-10-03): トップ `noka/hero.webp` は けいくんの ChatGPT の 絵(**2回目**)。アイコンは 四角い 絵(1254px)を 切らずに そのまま(`tools/noka/art/square-src.png` → `python3 tools/icon_from_square.py noka`)
+  - ⚠️ **1回目の 絵は 入れなかった**: 札 32こ中 4こが ゲームに 無い 読み(みずやり・こめ・はんばい・のうきぐ)/ 説明の 文「**きぎょう**を たすける」(さぎょう の 誤字)。
+    ゲームに ある 読みを 指定して 作りなおして もらった(ふたば・おこめ・いちば・ろーたりー・さぎょう)。2回目は 札 32こ + 流れの 4こ ぜんぶ ゲームに ある 読みで 確かめた
+  - 四角い 絵の 札には ゲームに 無い ことば(ひかり・ひりょう・むし・びょうき・ごはん・はうす・たがやす・うえる・そだてる など)と、レベルの「3級(にゅうもん)・1級(じょうきゅう)」が あるが、
+    **アイコンの 大きさでは 読めないので そのまま**(医師・教師・料理人と 同じ 判断)
+  - ⚠️ **題名の 絵は まだ 無い**(`hero=True, logo=False` → 題名は 文字)。届いたら `tools/noka/art/title-src.png` → `python3 tools/title_from_art.py noka`、
+    `build_games.py` の `logo=True`・`art.word` を 実寸に・`wordv` +1、speed-king の `games.ts` に `word` を 足す。**届いた 字は かならず 切り出して 読む**
+  - 仮の アイコンの 台本 `tools/noka/placeholder_icon.py` は もう 使わない(記録に のこす)
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #308)・販売ページ `HOME_GAMES`(夢のしごと の 章、料理人の となり)・規約の 一覧 `FLICK_SERIES_GAMES` に 足した
 - 確かめかた: `node tools/play-all.mjs noka/`(全112ステージ。旅 7×8 + マスター 56)/ `node tools/click-all.mjs noka/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## 入力が 止まる バグと 見つけかた(けいくん 2026-09-28「ゲームの途中で入力できなくなった」)

@@ -787,8 +787,15 @@
   同伴避難(同じ 部屋とは かぎらない)・条虫(サナダムシは 一部の 呼び名)・狂犬病(「国内で うつった 例が 長い あいだ 無い」)・固有種(イリオモテヤマネコ・ライチョウは 亜種 → アマミノクロウサギ・ヤンバルクイナ)・ジャージー島・ブロイラー(品種では ない)・愛玩動物看護師の 診療の 補助(手伝いでは なく 自分で 行う)・
   入門の 読み 16字(狂犬病予防注射 → 狂犬病ワクチン)・🫕🐽🧲🦩 の 絵文字
 - ふりがなは 確かめ役が `python3 tools/jui/ruby_dump.py <旅>` で 全語 見て、**文を 言いかえて さけた**(牛 → うし・乳房 → お乳を 作る ところ・札 → ふだ・便 → ふん・年を とった → としを とった・一頭 → それぞれ・豚熱 → とんねつ・胴輪 → ハーネス・鋤鼻器 → じょびき など)。`FIX` には まだ 何も 足していない
-- 絵: **まだ 無い**(仮の アイコン `tools/jui/placeholder_icon.py` = 青の 地に 白い 肉球。`hero=False`・`logo=False`)。
-  届いたら 四角い 絵 → `tools/jui/art/square-src.png` → `python3 tools/icon_from_square.py jui`(`iconv` +1)/ 題名の 透明 PNG → `tools/jui/art/title-src.png` → `python3 tools/title_from_art.py jui`(`logo=True`・`art.word` を 実寸)/ トップ → `jui/hero.webp`(`hero=True`)。
+- **トップの 絵は 入れた**(2026-10-03。`jui/hero.webp` 1536×1024。`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**:
+  - ⚠️ **1回目は 入れなかった**: 札 36こ中 20こが ゲームに 無い 読み(ちりょう・びょういん・きんにく・ないぞう・えさ・けが・くすり・らいおん・きりん・ほうりつ・れきし …)/
+    3こが ちがう 旅の 箱(かんせんしょう・ワンヘルス・じんぞうびょう)/ **注射器の 絵 4か所** /「うちの ペットの からだを かんさつ してみよう!」(ゲームに 無い 遊び)。旅ごとに ゲームに ある 読みを 4つずつ 指定して 直して もらった
+  - 2回目は 札 36こ ぜんぶ ゲームに ある 読みで 確かめた。のこった 3か所は **絵の 中で 直した**(`tools/jui/fix_text.py`。Noto Sans CJK JP Bold):
+    4択の 問い「**ぴ**ょうきの」→「びょうきの」/ 説明の 箱の ふだ「**話題**の 科目」→「試験の 科目」/ しゅじゅつ の 札が **手術を している 人の 絵** → 1回目の 絵の 手術灯だけの 絵を 写した
+  - 気になるが そのままに したもの: けんえきたんちけん の 札の 絵が 犬では なく 検査キット / レベル1が「ペットを 正しく **知る** ことば」(ゲームは「飼える 人」。意味は 通る)
+  - もとの 絵は 入れものに 入れていない(ほかの ゲームと 同じ)
+- アイコン・題名は **まだ 無い**(仮の アイコン `tools/jui/placeholder_icon.py` = 青の 地に 白い 肉球。`logo=False`)。
+  届いたら 四角い 絵 → `tools/jui/art/square-src.png` → `python3 tools/icon_from_square.py jui`(`iconv` +1)/ 題名の 透明 PNG → `tools/jui/art/title-src.png` → `python3 tools/title_from_art.py jui`(`logo=True`・`art.word` を 実寸)。
   ⚠️ 絵を 頼む ときは **注射・手術・血・動物を 押さえつける 絵・実在の 病院や フードの ロゴ**を 描かせない。届いたら まず 字を 切り出して 読む(「獣医士」「獣医者」に なりやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**(題名の ロゴの 字に そろえる)
 - 確かめかた: `node tools/play-all.mjs jui/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs jui/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`

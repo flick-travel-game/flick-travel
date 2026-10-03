@@ -714,7 +714,7 @@
   2回目は 札 36こ・4択・流れ・レベルの 字を 切り出して 読み、ぜんぶ ゲームに ある 読みで 旅の 箱も 合っていた(9の 見出しは「法律と 歴史と 倫理」。旅の 名前「法律と歴史・倫理」と 少し ちがうが 意味は 同じなので そのまま)。
   アイコンは けいくんの 四角い 絵(1254px)を 切らずに そのまま(2026-10-03。`tools/yakuzai/art/square-src.png` → `python3 tools/icon_from_square.py yakuzai`。`iconv` = 2)。
   ⚠️ 四角い 絵には「ふくよう」の 札に 薬を 口に 入れる 子・「よぼうせっしゅ」に 注射器・右上と 薬局に 緑の 十字(薬局の しるし)が あるが、**アイコンの 大きさでは 見えないので そのまま**(けいくんに 伝えた)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない。
-  題名は **まだ**(`logo=False`)。
+  題名は けいくんの ChatGPT の 切りぬき(2026-10-03。`tools/yakuzai/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py yakuzai` → `yakuzai/logo-word.webp` 900×258。`logo=True`・`wordv` = 3)。「フリック薬剤師」7字を 読んで 確かめた(「薬剤士」では ない)
   届いたら 四角い 絵 → `tools/yakuzai/art/square-src.png` → `python3 tools/icon_from_square.py yakuzai`(`iconv` +1)/ 題名の 透明 PNG → `tools/yakuzai/art/title-src.png` → `python3 tools/title_from_art.py yakuzai`(`logo=True`・`art.word` を 実寸)/ トップ → `yakuzai/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **薬を 口に 入れる 絵・注射を 打つ 絵・薬の 箱の 字や ロゴ・赤十字**を 描かせない。届いたら まず 字を 切り出して 読む(「薬剤士」に なりやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**

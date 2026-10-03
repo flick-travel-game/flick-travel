@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ kyukyutai/ bengoshi/ zeirishi/ adler/ toshika/ daiku/ noka/ hanaya/ yakuzai/ jui/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ kyukyutai/ bengoshi/ zeirishi/ adler/ toshika/ daiku/ noka/ hanaya/ yakuzai/ jui/ tetsugaku/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -202,6 +202,16 @@ GAMES = {
                   lead="アドラー心理学の きほん・共同体感覚と 対人関係・勇気づけ・ライフスタイルと 性格・子育てと 学校・カウンセリングと 援助・アドラーの 歴史と 人びとの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、分野・しくみ図の どこに あるのかが 出るよ。本や 講座で まず 出る ことばから はじめて、日本アドラー心理学会の 基礎講座・専門書の ことばまで。4択クイズで 意味を たしかめる 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。カウンセリングの やりかたでも、悩みの 相談の 答えでも、こころの 診断でも ありません。こころの ことで こまったら 家族や 先生・専門の 人に 相談してね。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、アドラー心理学の ことばと 考えかたが つながって 見えてくるよ。日本アドラー心理学会とは 関係ありません。"),
+    # フリック哲学(けいくん 2026-10-03「哲学の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」)。
+    #   まとめは docs/フリック哲学-はじめかた.md。ことばは tools/tetsugaku/terms-<旅>.json → tetsugaku/terms.js(tools/tetsugaku/terms_js.py)。しくみは tetsugaku/tetsugaku.js(TETSUGAKU。アドラー心理学を 写した。💭 考えて みよう・📜 哲学者の 年表)。
+    #   ⚠️⚠️「どれが 正しい」を 決めない・死や いのちを くらべる 話・宗教や 政治の よしあし・差別に つながる 昔の 考えは 出さない(決まりは tools/tetsugaku/PROMPT.md)。
+    #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/tetsugaku/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
+    #   届いたら tools/tetsugaku/art/square-src.png → tools/icon_from_square.py tetsugaku(iconv を +1)/ title-src.png → tools/title_from_art.py tetsugaku(logo を True・art.word を 実寸に)/ tetsugaku/hero.webp(hero を True)
+    "tetsugaku": dict(name="フリック哲学", modes="TETSUGAKU", kinds=set(), color="#5f3dc4", hero=False, logo=False,
+                      art=dict(word=(900, 240), hero=(1536, 1024), alt="フリック哲学", iconv=1, wordv=1),
+                      lead="哲学の きほん・古代ギリシャ・ローマ・東洋の 思想・中世から 近代・近代から 現代・よく 生きる(倫理学)・知る ことと 心・社会と 国・日本の 思想の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、分野・しくみ図の どこに あるのかが 出るよ。ときどき 💭 考えて みよう の 問いも 出るよ。考える ことが すきな 子の ことばから はじめて、高校「倫理」の 範囲の めやす、大学の 哲学科の 入門書の ことばまで。哲学者の 年表で、同じ ころに 孔子・ブッダ・ソクラテスが いた ことも わかるよ。4択クイズで 意味を たしかめる 練習も できるよ。",
+                      how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。哲学には 答えが 1つで ない 問いが たくさん あります。自分で 考えて みよう。説明は ひろく 知られた 読みかたの 1つで、どの 考えが 正しいかを 決める ものでは ないよ。",
+                      rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、昔の 人の 問いと いまの 自分の 問いが つながって 見えてくるよ。大学入試センター・大学・学会とは 関係ありません。"),
     # フリック投資家(けいくん 2026-10-02「投資家の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。
     #   日本一の投資家、竹田和平さんのように 好きな企業を応援する長期投資スタイルがメインの投資家に育ってほしいです」)。まとめは docs/フリック投資家-はじめかた.md。
     #   ことばは tools/toshika/terms-<旅>.json → toshika/terms.js(tools/toshika/terms_js.py)。しくみは toshika/toshika.js(TOSHIKA。アドラー心理学を 写した)。
@@ -346,7 +356,7 @@ GAMES = {
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KAJI": '(typeof KAJI === "object" ? KAJI.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "CHEF": '(typeof CHEF === "object" ? CHEF.modes : [])', "KEISATSU": '(typeof KEISATSU === "object" ? KEISATSU.modes : [])', "SHOBO": '(typeof SHOBO === "object" ? SHOBO.modes : [])', "KYUKYUTAI": '(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : [])', "BENGOSHI": '(typeof BENGOSHI === "object" ? BENGOSHI.modes : [])', "ZEIRISHI": '(typeof ZEIRISHI === "object" ? ZEIRISHI.modes : [])', "ADLER": '(typeof ADLER === "object" ? ADLER.modes : [])', "TOSHIKA": '(typeof TOSHIKA === "object" ? TOSHIKA.modes : [])', "DAIKU": '(typeof DAIKU === "object" ? DAIKU.modes : [])', "NOKA": '(typeof NOKA === "object" ? NOKA.modes : [])', "HANAYA": '(typeof HANAYA === "object" ? HANAYA.modes : [])', "YAKUZAI": '(typeof YAKUZAI === "object" ? YAKUZAI.modes : [])', "JUI": '(typeof JUI === "object" ? JUI.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KAJI": '(typeof KAJI === "object" ? KAJI.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "CHEF": '(typeof CHEF === "object" ? CHEF.modes : [])', "KEISATSU": '(typeof KEISATSU === "object" ? KEISATSU.modes : [])', "SHOBO": '(typeof SHOBO === "object" ? SHOBO.modes : [])', "KYUKYUTAI": '(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : [])', "BENGOSHI": '(typeof BENGOSHI === "object" ? BENGOSHI.modes : [])', "ZEIRISHI": '(typeof ZEIRISHI === "object" ? ZEIRISHI.modes : [])', "ADLER": '(typeof ADLER === "object" ? ADLER.modes : [])', "TETSUGAKU": '(typeof TETSUGAKU === "object" ? TETSUGAKU.modes : [])', "TOSHIKA": '(typeof TOSHIKA === "object" ? TOSHIKA.modes : [])', "DAIKU": '(typeof DAIKU === "object" ? DAIKU.modes : [])', "NOKA": '(typeof NOKA === "object" ? NOKA.modes : [])', "HANAYA": '(typeof HANAYA === "object" ? HANAYA.modes : [])', "YAKUZAI": '(typeof YAKUZAI === "object" ? YAKUZAI.modes : [])', "JUI": '(typeof JUI === "object" ? JUI.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -480,6 +490,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/adler/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "adler" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="adler.js?v=%s"></script>' % (ver("terms.js"), ver("adler.js")))
+    if g["modes"] == "TETSUGAKU":  # 哲学の コース: アドラーと 同じ 形。ことばは terms.js(tools/tetsugaku/terms-*.json から)、しくみは tetsugaku.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/tetsugaku/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "tetsugaku" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="tetsugaku.js?v=%s"></script>' % (ver("terms.js"), ver("tetsugaku.js")))
     if g["modes"] == "TOSHIKA":  # 投資家の コース: アドラーと 同じ 形。ことばは terms.js(tools/toshika/terms-*.json から)、しくみは toshika.js
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/toshika/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "toshika" / f).read_bytes()).hexdigest()[:8]

@@ -874,8 +874,12 @@
 - 書いた 助手(5人。2つの 旅ずつ)とは **別の 助手が 1語ずつ 確かめた**。おもな 直し: 小笠原流(室町 → 鎌倉時代から と 言われる)・分離礼(語先後礼と ほぼ 同じ)・懐石料理(会席と まざって いた)・渡し箸(器に わたして 置く こと。お別れの 式の 習わしの 話は 拾い箸だけ)・
   故人 / しのぶ(こわく ない 言いかたに)・しのび手(音を 立てない ように そっと 打つ)・結び切りの なぜ(再婚を 決めつけない)・急啓(根拠の うすい 説明を 外した)・国旗の掲揚・点字ブロック(多くは 黄色い)・補助犬(受け入れる ことが 法律で)。
   ふりがな(〆 → しめ・横木 → よこぎ・殿 → どの・真 → しん・芳 → ほう・館 → かん・二十四 → にじゅうし・三品 → さんぴん)は `terms_js.py` の `FIX`
-- 絵: **まだ 無い**(仮の アイコン `tools/manner/placeholder_icon.py`。オレンジの 地に ハートへ おじぎ する 人。`hero=False`・`logo=False`)。
-  けいくんに ChatGPT で 頼む 絵は 3つ(トップ 1536×1024・四角い 絵 1254px・題名だけの 透明 PNG)。頼む 文は まとめの 5-8。届いたら 字を 切り出して 読む
+- 絵(2026-10-03): **トップは けいくんの ChatGPT の 絵(2回目)** `manner/hero.webp`(1536×1024。`hero=True`・`wordv` = 2)。
+  ⚠️ **1回目は 入れなかった**(札の ことばが ゲームと ちがった)。2回目は 札 40こ・4択・つながる ことば ぜんぶ ゲームに ある 読みで 確かめた。
+  右下の「ステップアップで マナーの たつじんに!」の 箱の 字だけ **絵の 中で 直した**(`tools/manner/fix_text.py`。Noto Sans CJK JP Bold):
+  あいさつや あらかは → あいさつや しぐさの / しゃかいで 字る → しゃかいに でる / せかいの中の → せんもんかの / ひしその → ひしょの / アロトコール → プロトコール。もとの 絵は 入れものに 入れていない
+  **アイコンは けいくんの 四角い 絵(1254px)を 切らずに そのまま**(`tools/manner/art/square-src.png` → `python3 tools/icon_from_square.py manner`。`iconv` = 2)。4択の「ごどばは」の 誤字は アイコンの 大きさでは 読めないので そのまま。
+  **題名は まだ**(`logo=False`)。届いたら `tools/manner/art/title-src.png` → `python3 tools/title_from_art.py manner`(`logo=True`・`art.word` を 実寸・`wordv` +1)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **題名の 絵と けいくんの OK の あと**(章も 聞く。マナーは「夢のしごと」では なく 暮らし・学びの 章が 合うかも)
 - 確かめかた: `node tools/play-all.mjs manner/`(全140ステージ)/ `node tools/click-all.mjs manner/`(W=320 も)。ふりがなには `pip install sudachipy sudachidict_core`、仮の アイコンは `pip install Pillow`
 

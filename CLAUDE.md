@@ -820,8 +820,11 @@
   入れなかった 語: 断捨離(商標)・ワンオペ育児・孤食・共働き家庭(責め・比べに 読める)・鼻血(血)・エピペン(商品名)
 - 作った 助手(2人。5つずつ)とは **別の 助手が 1語ずつ 確かめた**。おもな 直し: さしすせその 由来(「頭の 音」では ない)・コンロまわり(「温かい うちに ふく」→ 早めに)・カビ(目に 見えない → とても 小さな 生き物)・学童保育(子どもを 説明する 文に 読めない ように)・
   ふりがな(明日 → あした・大掃除 → おおそうじ・排水口 → はいすいこう・床 → ゆか は `terms_js.py` の `FIX`。ほかは 言いかえ)
-- 絵: **まだ 無い**(仮の アイコン `tools/kaji/placeholder_icon.py` = オレンジの 地に 白い 家と ピンクの ハート。`hero=False`・`logo=False`)。
-  届いたら トップ `kaji/hero.webp` / 四角い 絵 `tools/kaji/art/square-src.png` → `python3 tools/icon_from_square.py kaji` / 題名 `tools/kaji/art/title-src.png` → `python3 tools/title_from_art.py kaji`。`build_games.py` の `hero` `logo` を True・`art` の 大きさと `iconv` `wordv` を 上げる
+- 絵(2026-10-03): **トップは けいくんの ChatGPT の 絵(2回目)** `kaji/hero.webp`(1536×1024。`hero=True`・`wordv` = 2)。
+  ⚠️ **1回目は 入れなかった**: 札 40こ中 約25こが ゲームに 無いか ちがう 旅の 箱(おきる・ほす・たたむ・たいおん・おつかれさま・てつだうよ / いただきます・かたづけ が べつの 箱)・「ひえぴた」(商標)・包丁の 絵。箱ごとに ゲームに ある 読みを 4つずつ 指定して 作りなおして もらった。
+  2回目は 札 40こ・4択(せんたくばさみ)・図鑑の 見本(おてつだい)を 切り出して 読み、ぜんぶ ゲームに ある 読みで 旅の 箱も 合っていた。体温計に 数字は 無い。貯金箱の コインの「$」・健康の 見出しの 白い「+」は 小さいので そのまま。
+  **アイコンと 題名は まだ**(仮の アイコン `tools/kaji/placeholder_icon.py` = オレンジの 地に 白い 家と ピンクの ハート。`logo=False`)。
+  届いたら / 四角い 絵 `tools/kaji/art/square-src.png` → `python3 tools/icon_from_square.py kaji` / 題名 `tools/kaji/art/title-src.png` → `python3 tools/title_from_art.py kaji`。`build_games.py` の `hero` `logo` を True・`art` の 大きさと `iconv` `wordv` を 上げる
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs kaji/`(全140ステージ。旅 10×7 + マスター 70)/ `node tools/click-all.mjs kaji/`。ふりがなを 作るには `pip install sudachipy sudachidict_core`、仮の アイコンは `pip install Pillow`
 

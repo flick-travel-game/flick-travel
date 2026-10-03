@@ -424,11 +424,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリック獣医師</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="269" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック獣医師</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリック獣医師。動物病院で 白衣の 男の子と 女の子が 犬・猫・うさぎ・小鳥と 笑っている 絵。まわりに 9つの 旅の ことばの 札が ならんでいる" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリック獣医師。動物病院で 白衣の 男の子と 女の子が 犬・猫・うさぎ・小鳥と 笑っている 絵。まわりに 9つの 旅の ことばの 札が ならんでいる" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -560,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"jui", name:"フリック獣医師", modes:(typeof JUI === "object" ? JUI.modes : []), assets:"../", logo:false, hero:true, dir:"jui/", lead:"獣医さんの きほん・動物の からだ・ペットと くらす・動物の 病気と 治療・予防と ワクチン・牧場の 動物・野生動物と 動物園・動物と 人の 健康・法律と 歴史と 動物福祉の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 動物の 話か・試験の 科目・しくみ図の どこに あるのかが 出るよ。ペットを 正しく 飼う ための ことばから はじめて、動物病院で 働く 人(愛玩動物看護師)の めやす、獣医師国家試験の 範囲の めやすの ことばまで。犬と 猫と 牛と 鳥で からだの しくみが ちがう 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。薬の 量や 治療の やりかた・家で できる 手当ては 書いていないよ。動物の ようすが いつもと ちがう ときは、大人に 言って 動物病院へ。人の 薬を 動物に あげないでね。本物の 試験問題では ありません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、動物の からだと くらしと 人の 健康が つながって 見えてくるよ。農林水産省・環境省・動物病院・ペットフードの 会社とは 関係ありません。" };
+const GAME = { id:"jui", name:"フリック獣医師", modes:(typeof JUI === "object" ? JUI.modes : []), assets:"../", logo:true, hero:true, dir:"jui/", lead:"獣医さんの きほん・動物の からだ・ペットと くらす・動物の 病気と 治療・予防と ワクチン・牧場の 動物・野生動物と 動物園・動物と 人の 健康・法律と 歴史と 動物福祉の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 動物の 話か・試験の 科目・しくみ図の どこに あるのかが 出るよ。ペットを 正しく 飼う ための ことばから はじめて、動物病院で 働く 人(愛玩動物看護師)の めやす、獣医師国家試験の 範囲の めやすの ことばまで。犬と 猫と 牛と 鳥で からだの しくみが ちがう 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。薬の 量や 治療の やりかた・家で できる 手当ては 書いていないよ。動物の ようすが いつもと ちがう ときは、大人に 言って 動物病院へ。人の 薬を 動物に あげないでね。本物の 試験問題では ありません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、動物の からだと くらしと 人の 健康が つながって 見えてくるよ。農林水産省・環境省・動物病院・ペットフードの 会社とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

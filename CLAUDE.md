@@ -716,7 +716,7 @@
   のこった **゛と ゜の まちがい 5つ**(ごじんじょうほう・よそくべんかん・びんちあうと・ばすこーど・すわいぶ)は **絵の 中で 直した**(`tools/sumaho/fix_text.py`。Noto Sans CJK JP Bold)。
   ⚠️ **゜(ぴ・ぱ・ぷ)の 字は 太く しない**(太くすると 小さな まるが つぶれて また ゛に 見えた)。もとの 絵は 入れものに 入れていない(ほかの ゲームと 同じ)
 - **アイコンは 入れた**(2026-10-03。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py sumaho`。`iconv` = 2)。四角い 絵の 札の 小さい 字(ゲームに 無い ことば など)は **アイコンの 大きさでは 読めないので そのまま**(医師・教師・料理人と 同じ 判断)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない。
-- 題名は **まだ**(`logo=False`)。届いたら `tools/sumaho/art/title-src.png` → `python3 tools/title_from_art.py sumaho`(`logo=True`・`art.word` を 実寸・`wordv` +1)。
+- **題名も 入れた**(2026-10-03。けいくんの ChatGPT の 切りぬき `tools/sumaho/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py sumaho` → `sumaho/logo-word.webp` 900×219。`logo=True`・`wordv` = 3)。「フリックスマホ」7字と 右の スマホの 絵(りんごの マーク なし・どこの 機種でも ない 形)を 見て 確かめた
   届いたら 四角い 絵 → `tools/sumaho/art/square-src.png` → `python3 tools/icon_from_square.py sumaho`(`iconv` +1)/ 題名の 透明 PNG → `tools/sumaho/art/title-src.png` → `python3 tools/title_from_art.py sumaho`(`logo=True`・`art.word` を 実寸)。
   ⚠️⚠️ 絵を 頼む ときは **りんごの マーク・実在の スマホの 形(カメラの 並びで 機種が わかる もの)・実在の アプリの アイコン・「iPhone」の 字** を 描かせない。届いたら まず 字と マークを 見る(「スマホ旅行」と 字を 足されやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**(題名の ロゴの 字に そろえる)。⚠️ **販売ページ・規約に「iPhone」を 書かない**

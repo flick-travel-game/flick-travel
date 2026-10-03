@@ -424,11 +424,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリックスマホ</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="219" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックスマホ</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリックスマホ。男の子と 女の子が スマホを 持って 笑い、白い 犬が となりに いる 絵。まわりに 10の 旅の ことばの 札と 4択クイズ・ことばの 意味と つながり・レベルの 見本が ならんでいる" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリックスマホ。男の子と 女の子が スマホを 持って 笑い、白い 犬が となりに いる 絵。まわりに 10の 旅の ことばの 札と 4択クイズ・ことばの 意味と つながり・レベルの 見本が ならんでいる" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -560,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"sumaho", name:"フリックスマホ", modes:(typeof SUMAHO === "object" ? SUMAHO.modes : []), assets:"../", logo:false, hero:true, dir:"sumaho/", lead:"スマホの きほん・さわって 使う・設定と 便利な 機能・アプリ・写真と カメラ・つながる しくみ・安全と プライバシー・子どもと スマホ・困った ときと 長もち・スマホの 歴史の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。ときどき 📱 やって みよう で、手元の スマホで ためせる ことも 出るよ。スマホを 安全に 使いはじめる ことばから、家族の スマホを 手伝える ことば、スマホの 専門家の ことば(ITパスポートの スマホ・ネット・セキュリティの 範囲の めやす)まで。このゲームの 名前の もとの「フリック入力」も 出てくるよ。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。ボタンの 押しかたや 設定の 場所は 機種や 年で ちがうので 書いていないよ。お金を 使う ことや 設定を 大きく 変える ことは、おうちの 人と いっしょに。困った ときは すぐ 大人に 相談しよう。本物の 試験問題では ありません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、スマホの しくみと くらしが つながって 見えてくるよ。iPhone は Apple Inc. の 商標です。Android は Google LLC の 商標です。アップル・グーグル・通信会社とは 関係ありません。" };
+const GAME = { id:"sumaho", name:"フリックスマホ", modes:(typeof SUMAHO === "object" ? SUMAHO.modes : []), assets:"../", logo:true, hero:true, dir:"sumaho/", lead:"スマホの きほん・さわって 使う・設定と 便利な 機能・アプリ・写真と カメラ・つながる しくみ・安全と プライバシー・子どもと スマホ・困った ときと 長もち・スマホの 歴史の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。ときどき 📱 やって みよう で、手元の スマホで ためせる ことも 出るよ。スマホを 安全に 使いはじめる ことばから、家族の スマホを 手伝える ことば、スマホの 専門家の ことば(ITパスポートの スマホ・ネット・セキュリティの 範囲の めやす)まで。このゲームの 名前の もとの「フリック入力」も 出てくるよ。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。ボタンの 押しかたや 設定の 場所は 機種や 年で ちがうので 書いていないよ。お金を 使う ことや 設定を 大きく 変える ことは、おうちの 人と いっしょに。困った ときは すぐ 大人に 相談しよう。本物の 試験問題では ありません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、スマホの しくみと くらしが つながって 見えてくるよ。iPhone は Apple Inc. の 商標です。Android は Google LLC の 商標です。アップル・グーグル・通信会社とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

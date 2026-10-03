@@ -8,7 +8,7 @@
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png?v=2">
+<link rel="icon" type="image/png" href="favicon.png?v=1">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -423,10 +423,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
+      <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
       <span class="logo-text">フリック農家</span>
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック農家</h1>
+    <img class="hero" src="hero.webp?v=1" alt="フリック農家。畑と 田んぼが 広がる 里山で、麦わら帽子の 男の子と 女の子が にんじんと 野菜の かごを 持って 笑い、白い 犬が 柵から 顔を 出している 絵。まわりに 8つの 旅の ことばの 札と 4択クイズ・ことばの つながり・レベルの 見本が ならんでいる" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -558,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"noka", name:"フリック農家", modes:(typeof NOKA === "object" ? NOKA.modes : []), assets:"../", logo:false, hero:false, dir:"noka/", lead:"農業の きほん・野菜・お米・果物と 花・土と 肥料と 虫・農機具と スマート農業・畜産と 酪農・農家の 仕事と しくみの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。スーパーや 学校の 畑で 聞く ことばから はじめて、日本農業技術検定の 3級・2級、1級の 範囲の めやすの ことばまで。トラクター・コンバイン・ドローンなど、機械と 工夫で 効率よく すすめる 農業も 出てくるよ。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。農薬の 名前や 量・使いかたは 書いていないよ。農業の 機械は 講習を 受けた おとなが 使う ものだよ。収穫量や 値段などの 数字は 年ごとに 変わるので のせていないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、土と 作物と 機械と 食卓が つながって 見えてくるよ。JA・農機具や 肥料の 会社・日本農業技術検定協会とは 関係ありません。" };
+const GAME = { id:"noka", name:"フリック農家", modes:(typeof NOKA === "object" ? NOKA.modes : []), assets:"../", logo:false, hero:true, dir:"noka/", lead:"農業の きほん・野菜・お米・果物と 花・土と 肥料と 虫・農機具と スマート農業・畜産と 酪農・農家の 仕事と しくみの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。スーパーや 学校の 畑で 聞く ことばから はじめて、日本農業技術検定の 3級・2級、1級の 範囲の めやすの ことばまで。トラクター・コンバイン・ドローンなど、機械と 工夫で 効率よく すすめる 農業も 出てくるよ。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。農薬の 名前や 量・使いかたは 書いていないよ。農業の 機械は 講習を 受けた おとなが 使う ものだよ。収穫量や 値段などの 数字は 年ごとに 変わるので のせていないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、土と 作物と 機械と 食卓が つながって 見えてくるよ。JA・農機具や 肥料の 会社・日本農業技術検定協会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

@@ -796,9 +796,9 @@
   - もとの 絵は 入れものに 入れていない(ほかの ゲームと 同じ)
 - **アイコンは けいくんの 四角い 絵(1254px)を 切らずに そのまま**(2026-10-03。`tools/jui/art/square-src.png` → `python3 tools/icon_from_square.py jui`。`iconv` = 2)。
   四角い 絵の 札には 字の くずれ(「どぇえきたんちけん」)・ゲームに 無い 遊び(「うちの ペットの からだを かんさつ してみよう!」)・やりかたの 4択(ねつが たかい ときに つかう もの)が あるが、**アイコンの 大きさでは 読めないので そのまま**(医師・教師・料理人と 同じ 判断)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない(記録に のこす)
-- 題名は **まだ 無い**(`logo=False`)。届いたら 題名の 透明 PNG → `tools/jui/art/title-src.png` → `python3 tools/title_from_art.py jui`(`logo=True`・`art.word` を 実寸)。
+- **題名も 入れた**(2026-10-03。けいくんの ChatGPT の 切りぬき `tools/jui/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py jui` → `jui/logo-word.webp` 900×269。`logo=True`・`wordv` = 3)。「フリック獣医師」7字を 読んで 確かめた(獣医士・獣医者 では ない)。
   ⚠️ 絵を 頼む ときは **注射・手術・血・動物を 押さえつける 絵・実在の 病院や フードの ロゴ**を 描かせない。届いたら まず 字を 切り出して 読む(「獣医士」「獣医者」に なりやすい)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #320)・販売ページ `HOME_GAMES`(夢のしごと の 章、薬剤師の となり)・規約の 一覧 `FLICK_SERIES_GAMES`(speed-king #326)に 足した。題名の 絵が 届いたら `games.ts` に `word` を 足す
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #320)・販売ページ `HOME_GAMES`(夢のしごと の 章、薬剤師の となり)・規約の 一覧 `FLICK_SERIES_GAMES`(speed-king #326)に 足した。題名の 絵 `word` も 2026-10-03 に 足した
 - 確かめかた: `node tools/play-all.mjs jui/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs jui/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック家事(`kaji/`。けいくん 2026-10-03「主婦の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。お母さんが家族の為に休み無しでどれほど大変で頑張っているかが伝わる内容がいいね。子ども達や家族がお母さんありがとうと言いたくなる内容がいいね」→ 同じ日「フリック家事にした方が良くない!」→「家事にして」。まとめは `docs/フリック家事-はじめかた.md`)

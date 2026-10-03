@@ -263,8 +263,8 @@ GAMES = {
     #   ⚠️⚠️ 薬の 量・飲む 回数・商品名・「この しょうじょうなら この 薬」・中毒や 乱用薬物の くわしい 話・年ごとに 変わる 数字は 出さない(決まりは tools/yakuzai/PROMPT.md)。
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/yakuzai/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
     #   届いたら tools/yakuzai/art/square-src.png → tools/icon_from_square.py yakuzai(iconv を +1)/ title-src.png → tools/title_from_art.py yakuzai(logo を True・art.word を 実寸に)/ yakuzai/hero.webp(hero を True)
-    "yakuzai": dict(name="フリック薬剤師", modes="YAKUZAI", kinds=set(), color="#0ca678", hero=False, logo=False,
-                    art=dict(word=(900, 240), hero=(1536, 1024), alt="フリック薬剤師", iconv=1, wordv=1),
+    "yakuzai": dict(name="フリック薬剤師", modes="YAKUZAI", kinds=set(), color="#0ca678", hero=True, logo=False,
+                    art=dict(word=(900, 240), hero=(1536, 1024), alt="フリック薬剤師。薬剤師と 助手の ふたりと 白い 犬が 薬局で 笑っている 絵と、9つの 旅の ことばの 札", iconv=1, wordv=2),
                     lead="薬の きほん・薬が きく しくみ・薬の 種類・薬が からだを 旅する・病気と 薬の 治療・調剤と 服薬指導・薬局の 薬(OTC)・衛生と 公衆衛生・法律と 歴史と 倫理の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の 科目・しくみ図の どこに あるのかが 出るよ。くすりを 正しく 使う ための ことばから はじめて、登録販売者試験の 範囲の めやす、薬剤師国家試験の 範囲の めやすの ことばまで。処方箋が 薬に なるまでの 流れや、薬が からだの 中を 旅する しくみも 出てくるよ。4択クイズで 意味を たしかめる 練習も できるよ。",
                     how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。薬の 量や 飲む 回数・使いかたは 書いていないよ。薬は かならず お医者さん・薬剤師さんの 言う とおりに 使ってね。人の 薬は 飲まないでね。具合が わるい ときは 大人に 言おう。本物の 試験問題では ありません。",
                     rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、薬の しくみと からだと くらしが つながって 見えてくるよ。厚生労働省・製薬会社・薬局とは 関係ありません。"),

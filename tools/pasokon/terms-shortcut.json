@@ -1,0 +1,1298 @@
+[
+ {
+  "id": "sc-copy",
+  "name": "コピー",
+  "reading": "こぴー",
+  "journey": "shortcut",
+  "category": "編集",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "shortcut:henshu",
+  "relatedTerms": [
+   "sc-paste",
+   "sc-cut",
+   "sc-clipboard"
+  ],
+  "keys": "⌘ + C",
+  "description": "えらんだ 文字や ファイルを 写して、あとで 貼りつけられる ように する 操作です。Windows では Ctrl + C です。",
+  "setsumei": "コピー機と 同じです。もとは そのまま、写しだけ 手に 入りますよ。",
+  "yatte": "メモの アプリで 文字を えらび、⌘ + C と ⌘ + V で 写して みよう。"
+ },
+ {
+  "id": "sc-paste",
+  "name": "ペースト",
+  "reading": "ぺーすと",
+  "journey": "shortcut",
+  "category": "編集",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "shortcut:henshu",
+  "relatedTerms": [
+   "sc-copy",
+   "sc-cut",
+   "sc-clipboard"
+  ],
+  "acceptedReadings": [
+   "ぺーすと",
+   "はりつけ"
+  ],
+  "keys": "⌘ + V",
+  "description": "コピーや 切り取りで 取って おいた ものを、いまの 場所に 貼りつける 操作です。貼り付けとも 言います。Windows では Ctrl + V です。",
+  "setsumei": "取って おいた 写しを、のりで ペタッと 貼る イメージです。"
+ },
+ {
+  "id": "sc-cut",
+  "name": "切り取り",
+  "reading": "きりとり",
+  "journey": "shortcut",
+  "category": "編集",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "shortcut:henshu",
+  "relatedTerms": [
+   "sc-copy",
+   "sc-paste"
+  ],
+  "keys": "⌘ + X",
+  "description": "えらんだ 文字などを 取りのぞき、べつの 場所に 貼りつけられる ように する 操作です。文章の 順番を 入れかえる ときに 便利です。",
+  "setsumei": "はさみで 切りぬいて、手に 持って おく 感じです。貼れば 引っ越し 完了ですよ。"
+ },
+ {
+  "id": "sc-undo",
+  "name": "取り消す",
+  "reading": "とりけす",
+  "journey": "shortcut",
+  "category": "編集",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "shortcut:henshu",
+  "relatedTerms": [
+   "sc-redo",
+   "sc-cut"
+  ],
+  "keys": "⌘ + Z",
+  "description": "直前に した 操作を なかった ことに して、ひとつ 前に もどす 操作です。まちがえて 消した ときも、あわてずに これを 押します。",
+  "setsumei": "時間を ちょっと 巻きもどす ボタンです。まちがえても 大丈夫ですよ。",
+  "yatte": "文字を 打ってから ⌘ + Z を 押して、消えるか 見て みよう。"
+ },
+ {
+  "id": "sc-selectall",
+  "name": "すべてを選択",
+  "reading": "すべてをせんたく",
+  "journey": "shortcut",
+  "category": "編集",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔲",
+  "mapNode": "shortcut:henshu",
+  "relatedTerms": [
+   "sc-copy",
+   "sc-cut"
+  ],
+  "keys": "⌘ + A",
+  "description": "文章の 文字や フォルダの 中の ファイルを、まとめて ぜんぶ えらぶ 操作です。"
+ },
+ {
+  "id": "sc-save",
+  "name": "保存",
+  "reading": "ほぞん",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "💾",
+  "mapNode": "shortcut:hozon",
+  "relatedTerms": [
+   "sc-saveas",
+   "sc-open"
+  ],
+  "keys": "⌘ + S",
+  "description": "作って いる 書類を、ファイルとして しまって おく 操作です。こまめに 保存すると、急に 止まっても 安心です。Windows では Ctrl + S です。",
+  "setsumei": "ノートを 本だなに しまう ことです。こまめに しまえば、なくしませんよ。"
+ },
+ {
+  "id": "sc-command",
+  "name": "コマンドキー",
+  "reading": "こまんどきー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⌘",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-option",
+   "sc-control",
+   "sc-shift"
+  ],
+  "keys": "⌘",
+  "description": "⌘ の 印が ついた、ショートカットの 中心に なる キーです。ほかの キーと いっしょに 押して 使います。Windows の Ctrl キーに 近い 役目です。",
+  "setsumei": "ショートカットの 主役の キーです。困ったら まず ⌘ を 押さえて みてください。"
+ },
+ {
+  "id": "sc-shift",
+  "name": "シフトキー",
+  "reading": "しふときー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⇧",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-command",
+   "sc-return"
+  ],
+  "keys": "⇧",
+  "description": "押しながら 文字を 打つと 大文字や 記号に なる キーです。ショートカットでも よく 組み合わせて 使います。"
+ },
+ {
+  "id": "sc-return",
+  "name": "リターンキー",
+  "reading": "りたーんきー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⏎",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-kakutei",
+   "sc-delete"
+  ],
+  "keys": "Return",
+  "description": "文字の 入力で 行を 変えたり、決定したり する キーです。日本語の 変換を 確定する ときにも 押します。Windows では Enter キーと 言います。"
+ },
+ {
+  "id": "sc-delete",
+  "name": "デリートキー",
+  "reading": "でりーときー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⌫",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-leftword",
+   "sc-return"
+  ],
+  "keys": "Delete",
+  "description": "カーソルの 左の 文字を 1文字ずつ 消す キーです。押し続けると、続けて 消えて いきます。"
+ },
+ {
+  "id": "sc-space",
+  "name": "スペースバー",
+  "reading": "すぺーすばー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-kanji",
+   "sc-quicklook"
+  ],
+  "keys": "Space",
+  "description": "キーボードの 手前に ある 横長の キーです。空白を 入れるほか、日本語の 変換にも 使います。"
+ },
+ {
+  "id": "sc-find",
+  "name": "検索",
+  "reading": "けんさく",
+  "journey": "shortcut",
+  "category": "編集",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "shortcut:kensaku",
+  "relatedTerms": [
+   "sc-findnext",
+   "sc-spotlight"
+  ],
+  "keys": "⌘ + F",
+  "description": "いま ひらいて いる 書類や ページの 中から、ことばを さがす 操作です。長い ページで 目的の 場所を すぐ 見つけられます。",
+  "yatte": "ブラウザで ⌘ + F を 押して、ページの 中の ことばを さがして みよう。"
+ },
+ {
+  "id": "sc-open",
+  "name": "開く",
+  "reading": "ひらく",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "📂",
+  "mapNode": "shortcut:hozon",
+  "relatedTerms": [
+   "sc-save",
+   "sc-print"
+  ],
+  "keys": "⌘ + O",
+  "description": "保存して ある ファイルを えらんで、ひらく 操作です。アプリの 中から、続きを したい 書類を さがせます。"
+ },
+ {
+  "id": "sc-print",
+  "name": "プリント",
+  "reading": "ぷりんと",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🖨️",
+  "mapNode": "shortcut:hozon",
+  "relatedTerms": [
+   "sc-open",
+   "sc-save"
+  ],
+  "keys": "⌘ + P",
+  "description": "ひらいて いる 書類や ページを、プリンタで 紙に 印刷する ための 操作です。印刷の 前に、どう 出るか 確かめられます。"
+ },
+ {
+  "id": "sc-closewin",
+  "name": "ウインドウを閉じる",
+  "reading": "ういんどうをとじる",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "❎",
+  "mapNode": "shortcut:window",
+  "relatedTerms": [
+   "sc-quit",
+   "sc-minimize"
+  ],
+  "keys": "⌘ + W",
+  "description": "いま 前に ある ウインドウや タブを 閉じる 操作です。アプリ そのものは 終わらずに 残る ことが あります。"
+ },
+ {
+  "id": "sc-quit",
+  "name": "アプリを終了",
+  "reading": "あぷりをしゅうりょう",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "shortcut:window",
+  "relatedTerms": [
+   "sc-closewin",
+   "sc-forcequit"
+  ],
+  "keys": "⌘ + Q",
+  "description": "使って いる アプリを 終わらせる 操作です。保存して いない 書類が あると、保存するか 聞かれます。",
+  "setsumei": "道具を 片づけて しまう ことです。ウインドウを 閉じるだけとは ちがいますよ。"
+ },
+ {
+  "id": "sc-newtab",
+  "name": "新しいタブ",
+  "reading": "あたらしいたぶ",
+  "journey": "shortcut",
+  "category": "ブラウザ",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "shortcut:tab",
+  "relatedTerms": [
+   "sc-reopen",
+   "sc-address"
+  ],
+  "keys": "⌘ + T",
+  "description": "ブラウザなどで、新しい タブを 開く 操作です。いま 見て いる ページを 残した まま、べつの ページを 見られます。"
+ },
+ {
+  "id": "sc-eisu",
+  "name": "英数キー",
+  "reading": "えいすうきー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔡",
+  "mapNode": "shortcut:nihongo",
+  "relatedTerms": [
+   "sc-kana",
+   "sc-inputsource"
+  ],
+  "keys": "英数",
+  "description": "スペースバーの 左に ある キーで、押すと 英字の 入力に 切りかわります。日本語の 配列の キーボードに あります。",
+  "setsumei": "英語を 打つ 部屋への 入り口です。右の かなキーと ペアで おぼえてください。"
+ },
+ {
+  "id": "sc-kana",
+  "name": "かなキー",
+  "reading": "かなきー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🈁",
+  "mapNode": "shortcut:nihongo",
+  "relatedTerms": [
+   "sc-eisu",
+   "sc-kanji"
+  ],
+  "keys": "かな",
+  "description": "スペースバーの 右に ある キーで、押すと 日本語(ひらがな)の 入力に 切りかわります。"
+ },
+ {
+  "id": "sc-kanji",
+  "name": "漢字に変換",
+  "reading": "かんじにへんかん",
+  "journey": "shortcut",
+  "category": "日本語入力",
+  "difficulty": 1,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🈶",
+  "mapNode": "shortcut:nihongo",
+  "relatedTerms": [
+   "sc-kakutei",
+   "sc-hiragana"
+  ],
+  "keys": "Space",
+  "description": "ひらがなを 打った あと スペースバーを 押すと、漢字の 候補に 変わります。もう 一度 押すと、べつの 候補が 出ます。",
+  "yatte": "「かんじ」と 打って、スペースバーで 漢字に 変えて みよう。"
+ },
+ {
+  "id": "sc-redo",
+  "name": "やり直す",
+  "reading": "やりなおす",
+  "journey": "shortcut",
+  "category": "編集",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "shortcut:henshu",
+  "relatedTerms": [
+   "sc-undo"
+  ],
+  "keys": "⌘ + ⇧ + Z",
+  "description": "取り消した 操作を、もう 一度 もとに もどす 操作です。取り消しすぎた ときに 使います。"
+ },
+ {
+  "id": "sc-appswitch",
+  "name": "アプリの切りかえ",
+  "reading": "あぷりのきりかえ",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "shortcut:window",
+  "relatedTerms": [
+   "sc-winswitch",
+   "sc-hideapp"
+  ],
+  "keys": "⌘ + Tab",
+  "description": "⌘ を 押したまま Tab を 押すと、ひらいて いる アプリが ならび、次々に 切りかえられます。Windows では Alt + Tab が 近い 操作です。",
+  "setsumei": "⌘ を 押さえたまま、Tab で 次の 道具へ 持ちかえる 感じです。",
+  "yatte": "アプリを ふたつ ひらいて、⌘ + Tab で 行き来して みよう。"
+ },
+ {
+  "id": "sc-forcequit",
+  "name": "強制終了",
+  "reading": "きょうせいしゅうりょう",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "shortcut:kyosei",
+  "relatedTerms": [
+   "sc-quit",
+   "sc-appswitch"
+  ],
+  "keys": "⌘ + ⌥ + esc",
+  "description": "動かなく なった アプリを、えらんで むりやり 終わらせる 画面を 出す 操作です。保存して いない 中身は 消える ことが あります。",
+  "setsumei": "固まった アプリだけを 止める 非常ボタンです。パソコン ごと 止めなくて 大丈夫ですよ。"
+ },
+ {
+  "id": "sc-spotlight",
+  "name": "検索の機能を呼び出す",
+  "reading": "けんさくのきのうをよびだす",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shortcut:kensaku",
+  "relatedTerms": [
+   "sc-find",
+   "sc-appswitch"
+  ],
+  "keys": "⌘ + Space",
+  "description": "ことばを 打つだけで、アプリや ファイルを さがせる 検索の 欄を 出す 操作です。Mac では『Spotlight』と いう 名前です。",
+  "setsumei": "アプリの 名前を 打てば すぐ ひらける、いちばんの 近道ですよ。"
+ },
+ {
+  "id": "sc-ss3",
+  "name": "画面全体を撮る",
+  "reading": "がめんぜんたいをとる",
+  "journey": "shortcut",
+  "category": "スクリーンショット",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🖼️",
+  "mapNode": "shortcut:screenshot",
+  "relatedTerms": [
+   "sc-ss4",
+   "sc-ssapp"
+  ],
+  "keys": "⌘ + ⇧ + 3",
+  "description": "画面 全体を そのまま 画像に する 操作です。撮った 画像は、はじめの 設定では デスクトップに 保存されます。",
+  "setsumei": "画面を まるごと パシャッと 撮る カメラです。"
+ },
+ {
+  "id": "sc-ss4",
+  "name": "画面の一部を撮る",
+  "reading": "がめんのいちぶをとる",
+  "journey": "shortcut",
+  "category": "スクリーンショット",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "shortcut:screenshot",
+  "relatedTerms": [
+   "sc-ss3",
+   "sc-sswin"
+  ],
+  "keys": "⌘ + ⇧ + 4",
+  "description": "ポインタが 十字に 変わるので、撮りたい ところを ドラッグで かこむと、その 部分だけ 画像に なります。"
+ },
+ {
+  "id": "sc-ssapp",
+  "name": "スクリーンショットのアプリ",
+  "reading": "すくりーんしょっとのあぷり",
+  "journey": "shortcut",
+  "category": "スクリーンショット",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🎥",
+  "mapNode": "shortcut:screenshot",
+  "relatedTerms": [
+   "sc-ss3",
+   "sc-ssclip"
+  ],
+  "keys": "⌘ + ⇧ + 5",
+  "description": "撮る 範囲を えらんだり、画面を 動画で 記録したり できる 道具を 出す 操作です。保存する 場所も ここで 変えられます。",
+  "setsumei": "撮りかたを えらべる カメラの 操作パネルです。迷ったら これを 出せば 大丈夫ですよ。"
+ },
+ {
+  "id": "sc-lock",
+  "name": "画面をロック",
+  "reading": "がめんをろっく",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "shortcut:system",
+  "relatedTerms": [
+   "sc-logout",
+   "sc-quit"
+  ],
+  "keys": "⌃ + ⌘ + Q",
+  "description": "すぐに 画面に 鍵を かけ、パスワードなどを 入れないと 使えない ように する 操作です。席を はなれる ときに 使います。",
+  "setsumei": "部屋を 出る ときの 鍵です。ちょっと 席を 立つ ときも かけると 安心ですよ。"
+ },
+ {
+  "id": "sc-minimize",
+  "name": "ウインドウをしまう",
+  "reading": "ういんどうをしまう",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "shortcut:window",
+  "relatedTerms": [
+   "sc-closewin",
+   "sc-hideapp"
+  ],
+  "keys": "⌘ + M",
+  "description": "前に ある ウインドウを、ドックに 小さく しまう 操作です。最小化とも 言い、ドックを クリックすれば もどります。"
+ },
+ {
+  "id": "sc-newfolder",
+  "name": "新規フォルダ",
+  "reading": "しんきふぉるだ",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🆕",
+  "mapNode": "shortcut:finder",
+  "relatedTerms": [
+   "sc-dup",
+   "sc-trash"
+  ],
+  "keys": "⌘ + ⇧ + N",
+  "description": "ファイルを 整理する アプリで、新しい 空の フォルダを 作る 操作です。"
+ },
+ {
+  "id": "sc-trash",
+  "name": "ゴミ箱に入れる",
+  "reading": "ごみばこにいれる",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🗑️",
+  "mapNode": "shortcut:finder",
+  "relatedTerms": [
+   "sc-emptytrash",
+   "sc-newfolder"
+  ],
+  "keys": "⌘ + Delete",
+  "description": "えらんだ ファイルを ゴミ箱へ 動かす 操作です。まだ 消えては いないので、ゴミ箱から もどせます。"
+ },
+ {
+  "id": "sc-dup",
+  "name": "複製",
+  "reading": "ふくせい",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "👯",
+  "mapNode": "shortcut:finder",
+  "relatedTerms": [
+   "sc-newfolder",
+   "sc-info"
+  ],
+  "keys": "⌘ + D",
+  "description": "えらんだ ファイルの 写しを、同じ 場所に 作る 操作です。もとの ファイルを 残して、ためしに 直したい ときに 便利です。"
+ },
+ {
+  "id": "sc-bold",
+  "name": "太字",
+  "reading": "ふとじ",
+  "journey": "shortcut",
+  "category": "文字の 移動",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🅱️",
+  "mapNode": "shortcut:moji",
+  "relatedTerms": [
+   "sc-italic",
+   "sc-underline"
+  ],
+  "keys": "⌘ + B",
+  "description": "えらんだ 文字を 太く する 操作です。英語の Bold(太い)の B と おぼえられます。"
+ },
+ {
+  "id": "sc-underline",
+  "name": "下線",
+  "reading": "かせん",
+  "journey": "shortcut",
+  "category": "文字の 移動",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⎁",
+  "mapNode": "shortcut:moji",
+  "relatedTerms": [
+   "sc-bold",
+   "sc-italic"
+  ],
+  "keys": "⌘ + U",
+  "description": "えらんだ 文字の 下に 線を 引く 操作です。英語の Underline の U です。"
+ },
+ {
+  "id": "sc-italic",
+  "name": "斜体",
+  "reading": "しゃたい",
+  "journey": "shortcut",
+  "category": "文字の 移動",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "↗️",
+  "mapNode": "shortcut:moji",
+  "relatedTerms": [
+   "sc-bold",
+   "sc-underline"
+  ],
+  "keys": "⌘ + I",
+  "description": "えらんだ 文字を ななめに かたむける 操作です。ファイルを 整理する アプリでは、同じ キーが 情報を 見る 操作に なります。"
+ },
+ {
+  "id": "sc-saveas",
+  "name": "別名で保存",
+  "reading": "べつめいでほぞん",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "shortcut:hozon",
+  "relatedTerms": [
+   "sc-save",
+   "sc-open"
+  ],
+  "keys": "⌘ + ⇧ + S",
+  "description": "いまの 書類を、べつの 名前や 場所で 新しく 保存する 操作です。もとの ファイルを 残したい ときに 使います。"
+ },
+ {
+  "id": "sc-reload",
+  "name": "再読み込み",
+  "reading": "さいよみこみ",
+  "journey": "shortcut",
+  "category": "ブラウザ",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "shortcut:tab",
+  "relatedTerms": [
+   "sc-back",
+   "sc-address"
+  ],
+  "keys": "⌘ + R",
+  "description": "ブラウザで、いま 見て いる ページを もう 一度 読みこみなおす 操作です。表示が おかしい ときや、新しい 情報を 見たい ときに 使います。",
+  "setsumei": "新聞を 新しい 版に 取りかえる 感じです。"
+ },
+ {
+  "id": "sc-back",
+  "name": "戻る",
+  "reading": "もどる",
+  "journey": "shortcut",
+  "category": "ブラウザ",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "shortcut:tab",
+  "relatedTerms": [
+   "sc-reload",
+   "sc-address"
+  ],
+  "keys": "⌘ + [",
+  "description": "ブラウザで、ひとつ 前に 見て いた ページへ もどる 操作です。"
+ },
+ {
+  "id": "sc-hiragana",
+  "name": "ひらがなに変換",
+  "reading": "ひらがなにへんかん",
+  "journey": "shortcut",
+  "category": "日本語入力",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🅰️",
+  "mapNode": "shortcut:nihongo",
+  "relatedTerms": [
+   "sc-katakana",
+   "sc-kanji"
+  ],
+  "keys": "F6",
+  "description": "打って いる 途中の 文字を ひらがなに 変える キーです。設定に よっては fn キーと いっしょに 押します。"
+ },
+ {
+  "id": "sc-katakana",
+  "name": "カタカナに変換",
+  "reading": "かたかなにへんかん",
+  "journey": "shortcut",
+  "category": "日本語入力",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🆎",
+  "mapNode": "shortcut:nihongo",
+  "relatedTerms": [
+   "sc-hiragana",
+   "sc-romaji"
+  ],
+  "keys": "F7",
+  "description": "打って いる 途中の 文字を カタカナに 変える キーです。外国の ことばを 打つ ときに 便利です。"
+ },
+ {
+  "id": "sc-kakutei",
+  "name": "変換を確定",
+  "reading": "へんかんをかくてい",
+  "journey": "shortcut",
+  "category": "日本語入力",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "✔️",
+  "mapNode": "shortcut:nihongo",
+  "relatedTerms": [
+   "sc-kanji",
+   "sc-return"
+  ],
+  "keys": "Return",
+  "description": "変換した 文字で よければ、リターンキーで 決める 操作です。下線が 消えたら 確定の 合図です。"
+ },
+ {
+  "id": "sc-esc",
+  "name": "エスケープキー",
+  "reading": "えすけーぷきー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⎋",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-forcequit",
+   "sc-command"
+  ],
+  "keys": "esc",
+  "description": "いまの 操作を やめたり、出て きた 画面を 閉じたり する ときに 押す キーです。全画面の 動画から ぬける ときにも 使えます。",
+  "setsumei": "「やっぱり やめた」の キーです。迷ったら 左上の esc ですよ。"
+ },
+ {
+  "id": "sc-tabkey",
+  "name": "タブキー",
+  "reading": "たぶきー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⇥",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-appswitch",
+   "sc-return"
+  ],
+  "keys": "Tab",
+  "description": "入力の 欄から 次の 欄へ 移ったり、字下げを したり する キーです。ショートカットの 組み合わせにも 使います。"
+ },
+ {
+  "id": "sc-option",
+  "name": "オプションキー",
+  "reading": "おぷしょんきー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⌥",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-command",
+   "sc-control"
+  ],
+  "keys": "⌥",
+  "description": "⌥ の 印の キーで、ほかの キーと 組み合わせて べつの 動きを させます。Windows の Alt キーに 近い 役目の キーです。"
+ },
+ {
+  "id": "sc-control",
+  "name": "コントロールキー",
+  "reading": "こんとろーるきー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 2,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⌃",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-command",
+   "sc-option"
+  ],
+  "keys": "⌃",
+  "description": "⌃ の 印の キーで、ショートカットの 組み合わせに 使います。Windows の Ctrl と 名前は 近いですが、Mac では おもに ⌘ が その 役目です。"
+ },
+ {
+  "id": "sc-findnext",
+  "name": "次を検索",
+  "reading": "つぎをけんさく",
+  "journey": "shortcut",
+  "category": "編集",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⏭️",
+  "mapNode": "shortcut:kensaku",
+  "relatedTerms": [
+   "sc-find"
+  ],
+  "keys": "⌘ + G",
+  "description": "検索した ことばが ある 次の 場所へ 移る 操作です。同じ ことばが たくさん ある ときに 使います。"
+ },
+ {
+  "id": "sc-hideapp",
+  "name": "アプリを隠す",
+  "reading": "あぷりをかくす",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🙈",
+  "mapNode": "shortcut:window",
+  "relatedTerms": [
+   "sc-hideothers",
+   "sc-minimize"
+  ],
+  "keys": "⌘ + H",
+  "description": "いま 使って いる アプリの ウインドウを、まとめて 見えなく する 操作です。アプリは 終わらずに 動いた まま です。"
+ },
+ {
+  "id": "sc-hideothers",
+  "name": "ほかのアプリを隠す",
+  "reading": "ほかのあぷりをかくす",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🫣",
+  "mapNode": "shortcut:window",
+  "relatedTerms": [
+   "sc-hideapp",
+   "sc-fullscreen"
+  ],
+  "keys": "⌘ + ⌥ + H",
+  "description": "いま 使って いる アプリ だけを 残して、ほかの アプリの ウインドウを すべて 隠す 操作です。画面が すっきり します。",
+  "setsumei": "机の 上を、いま 使う 1冊 だけに する 片づけの 技です。"
+ },
+ {
+  "id": "sc-fullscreen",
+  "name": "フルスクリーン",
+  "reading": "ふるすくりーん",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "shortcut:window",
+  "relatedTerms": [
+   "sc-hideothers",
+   "sc-winswitch"
+  ],
+  "keys": "⌃ + ⌘ + F",
+  "description": "いまの アプリを 画面 いっぱいに 広げたり、もとに もどしたり する 操作です。"
+ },
+ {
+  "id": "sc-quicklook",
+  "name": "中身をのぞく",
+  "reading": "なかみをのぞく",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "shortcut:finder",
+  "relatedTerms": [
+   "sc-info",
+   "sc-space"
+  ],
+  "keys": "Space",
+  "description": "ファイルを えらんで スペースバーを 押すと、アプリを ひらかずに 中身を ちらっと 見られます。Mac では『Quick Look』と いう 名前です。",
+  "setsumei": "封筒を 開けずに すかして 見る 感じです。さがしものが 早く なりますよ。",
+  "yatte": "写真の ファイルを えらんで、スペースバーで 中身を のぞいて みよう。"
+ },
+ {
+  "id": "sc-winswitch",
+  "name": "ウインドウの切りかえ",
+  "reading": "ういんどうのきりかえ",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "shortcut:window",
+  "relatedTerms": [
+   "sc-appswitch",
+   "sc-fullscreen"
+  ],
+  "keys": "⌘ + `",
+  "description": "同じ アプリで ひらいて いる、いくつかの ウインドウを 切りかえる 操作です。"
+ },
+ {
+  "id": "sc-settings",
+  "name": "設定を開く",
+  "reading": "せっていをひらく",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "shortcut:window",
+  "relatedTerms": [
+   "sc-appswitch",
+   "sc-quit"
+  ],
+  "keys": "⌘ + ,",
+  "description": "いま 使って いる アプリの 設定の 画面を ひらく 操作です。多くの アプリで 同じ キーです。"
+ },
+ {
+  "id": "sc-emoji",
+  "name": "絵文字と記号の入力",
+  "reading": "えもじときごうのにゅうりょく",
+  "journey": "shortcut",
+  "category": "文字の 移動",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "😀",
+  "mapNode": "shortcut:moji",
+  "relatedTerms": [
+   "sc-inputsource",
+   "sc-kanji"
+  ],
+  "keys": "⌃ + ⌘ + Space",
+  "description": "絵文字や 記号の 一覧を 出して、えらんで 入れられる 操作です。"
+ },
+ {
+  "id": "sc-sswin",
+  "name": "ウインドウを撮る",
+  "reading": "ういんどうをとる",
+  "journey": "shortcut",
+  "category": "スクリーンショット",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "shortcut:screenshot",
+  "relatedTerms": [
+   "sc-ss4",
+   "sc-ssclip"
+  ],
+  "description": "⌘ + ⇧ + 4 の あと スペースバーを 押すと カメラの 印に なり、撮りたい ウインドウを クリックすると その ウインドウだけ 撮れます。",
+  "setsumei": "ほかの ものを 写さずに、その 窓だけを 切り取れる 撮りかたですよ。"
+ },
+ {
+  "id": "sc-ssclip",
+  "name": "クリップボードに撮る",
+  "reading": "くりっぷぼーどにとる",
+  "journey": "shortcut",
+  "category": "スクリーンショット",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "📎",
+  "mapNode": "shortcut:screenshot",
+  "relatedTerms": [
+   "sc-clipboard",
+   "sc-ss3"
+  ],
+  "keys": "⌃ + ⌘ + ⇧ + 3",
+  "description": "撮った 画面を ファイルに せず、クリップボードに 入れる 操作です。そのまま 書類などに 貼りつけられます。"
+ },
+ {
+  "id": "sc-logout",
+  "name": "ログアウト",
+  "reading": "ろぐあうと",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "shortcut:system",
+  "relatedTerms": [
+   "sc-lock",
+   "sc-quit"
+  ],
+  "keys": "⌘ + ⇧ + Q",
+  "description": "いまの ユーザーの 使用を 終わらせる 操作です。確かめの 画面が 出て、アプリも 閉じられます。"
+ },
+ {
+  "id": "sc-info",
+  "name": "情報を見る",
+  "reading": "じょうほうをみる",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "ℹ️",
+  "mapNode": "shortcut:finder",
+  "relatedTerms": [
+   "sc-quicklook",
+   "sc-dup"
+  ],
+  "keys": "⌘ + I",
+  "description": "えらんだ ファイルの 大きさ・作った 日・保存場所などを 見る 操作です。"
+ },
+ {
+  "id": "sc-emptytrash",
+  "name": "ゴミ箱を空にする",
+  "reading": "ごみばこをからにする",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "shortcut:finder",
+  "relatedTerms": [
+   "sc-trash"
+  ],
+  "keys": "⌘ + ⇧ + Delete",
+  "description": "ゴミ箱の 中の ファイルを 消す 操作です。空に した ファイルは もどせないので、確かめてから 行います。",
+  "setsumei": "ゴミの 日に 袋を 出す ことです。出す 前に 中身を 確かめてくださいね。"
+ },
+ {
+  "id": "sc-dlopen",
+  "name": "ダウンロードフォルダを開く",
+  "reading": "だうんろーどふぉるだをひらく",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "shortcut:finder",
+  "relatedTerms": [
+   "sc-upfolder",
+   "sc-newfolder"
+  ],
+  "keys": "⌘ + ⌥ + L",
+  "description": "ファイルを 整理する アプリで、ダウンロードの フォルダを すぐ ひらく 操作です。"
+ },
+ {
+  "id": "sc-upfolder",
+  "name": "上のフォルダへ",
+  "reading": "うえのふぉるだへ",
+  "journey": "shortcut",
+  "category": "ファイルの 操作",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⤴️",
+  "mapNode": "shortcut:finder",
+  "relatedTerms": [
+   "sc-dlopen",
+   "sc-newfolder"
+  ],
+  "keys": "⌘ + ↑",
+  "description": "いま 見て いる フォルダを 入れて いる、ひとつ 上の フォルダへ 移る 操作です。"
+ },
+ {
+  "id": "sc-ccenter",
+  "name": "コントロールセンターを開く",
+  "reading": "こんとろーるせんたーをひらく",
+  "journey": "shortcut",
+  "category": "ウインドウと システム",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "shortcut:system",
+  "relatedTerms": [
+   "sc-dictation",
+   "sc-lock"
+  ],
+  "keys": "fn + C",
+  "description": "Wi-Fi や 音量などを まとめて 切りかえられる パネルを、キーで ひらく 操作です。"
+ },
+ {
+  "id": "sc-dictation",
+  "name": "音声入力",
+  "reading": "おんせいにゅうりょく",
+  "journey": "shortcut",
+  "category": "文字の 移動",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🎙️",
+  "mapNode": "shortcut:nihongo",
+  "relatedTerms": [
+   "sc-inputsource",
+   "sc-ccenter"
+  ],
+  "keys": "fn + D",
+  "description": "話した ことばを、文字に して 入れる 機能を はじめたり 止めたり する 操作です。",
+  "setsumei": "口で 話すと、パソコンが 書きとって くれる 機能ですよ。"
+ },
+ {
+  "id": "sc-inputsource",
+  "name": "入力ソースの切りかえ",
+  "reading": "にゅうりょくそーすのきりかえ",
+  "journey": "shortcut",
+  "category": "日本語入力",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "shortcut:nihongo",
+  "relatedTerms": [
+   "sc-eisu",
+   "sc-kana"
+  ],
+  "keys": "⌃ + Space",
+  "description": "日本語と 英語など、文字を 打つ 方法を 切りかえる 操作です。英数キーの ない キーボードで 便利です。"
+ },
+ {
+  "id": "sc-leftword",
+  "name": "左の単語を消す",
+  "reading": "ひだりのたんごをけす",
+  "journey": "shortcut",
+  "category": "文字の 移動",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⌫",
+  "mapNode": "shortcut:moji",
+  "relatedTerms": [
+   "sc-delete",
+   "sc-linehead"
+  ],
+  "keys": "⌥ + Delete",
+  "description": "カーソルの 左に ある ことばを、ひとかたまりで 消す 操作です。"
+ },
+ {
+  "id": "sc-linehead",
+  "name": "行のはじめへ",
+  "reading": "ぎょうのはじめへ",
+  "journey": "shortcut",
+  "category": "文字の 移動",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "⏮️",
+  "mapNode": "shortcut:moji",
+  "relatedTerms": [
+   "sc-leftword",
+   "sc-delete"
+  ],
+  "keys": "⌘ + ←",
+  "description": "カーソルを、いまの 行の いちばん はじめへ 飛ばす 操作です。⌘ + → なら 行の おわりへ 飛びます。"
+ },
+ {
+  "id": "sc-reopen",
+  "name": "最後に閉じたタブを開く",
+  "reading": "さいごにとじたたぶをひらく",
+  "journey": "shortcut",
+  "category": "ブラウザ",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "♻️",
+  "mapNode": "shortcut:tab",
+  "relatedTerms": [
+   "sc-newtab",
+   "sc-address"
+  ],
+  "keys": "⌘ + ⇧ + T",
+  "description": "ブラウザで、まちがえて 閉じた タブを もう 一度 ひらく 操作です。Mac の 標準の ブラウザなどで 使えます。",
+  "setsumei": "まちがえて 閉じても あわてずに。これで すぐ もどって きますよ。"
+ },
+ {
+  "id": "sc-address",
+  "name": "アドレスの欄をえらぶ",
+  "reading": "あどれすのらんをえらぶ",
+  "journey": "shortcut",
+  "category": "ブラウザ",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "shortcut:tab",
+  "relatedTerms": [
+   "sc-reload",
+   "sc-back"
+  ],
+  "keys": "⌘ + L",
+  "description": "ブラウザの 上の、ページの 住所が 出る 欄を えらぶ 操作です。そのまま ことばを 打って 検索も できます。"
+ },
+ {
+  "id": "sc-romaji",
+  "name": "ローマ字に変換",
+  "reading": "ろーまじにへんかん",
+  "journey": "shortcut",
+  "category": "日本語入力",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🔠",
+  "mapNode": "shortcut:nihongo",
+  "relatedTerms": [
+   "sc-katakana",
+   "sc-hiragana"
+  ],
+  "keys": "F8",
+  "description": "打って いる 途中の 文字を、ローマ字に 変える キーです。はじめの 設定では この 動きに なって います。"
+ },
+ {
+  "id": "sc-fn",
+  "name": "ファンクションキー",
+  "reading": "ふぁんくしょんきー",
+  "journey": "shortcut",
+  "category": "キーの 名前",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "shortcut:key",
+  "relatedTerms": [
+   "sc-ccenter",
+   "sc-dictation"
+  ],
+  "acceptedReadings": [
+   "ふぁんくしょんきー",
+   "ちきゅうぎきー"
+  ],
+  "keys": "fn",
+  "description": "キーボードの 左下に ある fn の キーです。地球儀の 印が ついた ものも あり、ほかの キーと 組み合わせて 使います。"
+ },
+ {
+  "id": "sc-clipboard",
+  "name": "クリップボード",
+  "reading": "くりっぷぼーど",
+  "journey": "shortcut",
+  "category": "編集",
+  "difficulty": 3,
+  "field": "ショートカット",
+  "type": "concept",
+  "emoji": "📎",
+  "mapNode": "shortcut:henshu",
+  "relatedTerms": [
+   "sc-copy",
+   "sc-paste",
+   "sc-ssclip"
+  ],
+  "description": "コピーや 切り取りを した ものが、一時的に 入って いる 見えない 場所です。新しく コピーすると、前の 中身と 入れかわります。",
+  "setsumei": "手に 持って いる 写しです。新しく 持つと、前の 写しは 手ばなしますよ。"
+ }
+]

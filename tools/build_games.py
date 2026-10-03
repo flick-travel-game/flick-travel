@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ kyukyutai/ bengoshi/ zeirishi/ adler/ toshika/ daiku/ noka/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ kyukyutai/ bengoshi/ zeirishi/ adler/ toshika/ daiku/ noka/ hanaya/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -238,6 +238,15 @@ GAMES = {
                  lead="農業の きほん・野菜・お米・果物と 花・土と 肥料と 虫・農機具と スマート農業・畜産と 酪農・農家の 仕事と しくみの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。スーパーや 学校の 畑で 聞く ことばから はじめて、日本農業技術検定の 3級・2級、1級の 範囲の めやすの ことばまで。トラクター・コンバイン・ドローンなど、機械と 工夫で 効率よく すすめる 農業も 出てくるよ。4択クイズで 意味を たしかめる 練習も できるよ。",
                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。農薬の 名前や 量・使いかたは 書いていないよ。農業の 機械は 講習を 受けた おとなが 使う ものだよ。収穫量や 値段などの 数字は 年ごとに 変わるので のせていないよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、土と 作物と 機械と 食卓が つながって 見えてくるよ。JA・農機具や 肥料の 会社・日本農業技術検定協会とは 関係ありません。"),
+    # フリック花屋(けいくん 2026-10-03「花屋の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。花の名前や花言葉も詳しく入れてください」
+    #   → 同じ日「花屋さんで働けるレベルの知識をつけたい / 花屋で起業して 経営者として 上手く経営出来るレベルまで 仕上げたい」)。
+    #   まとめは docs/フリック花屋-はじめかた.md。ことばは tools/hanaya/terms-<旅>.json → hanaya/terms.js(tools/hanaya/terms_js.py)。しくみは hanaya/hanaya.js(HANAYA。農家を 写した。💐 花言葉を 出す)。
+    #   ⚠️⚠️ こわい・悲しい 花言葉・毒の 中身・刃物の 手順・実在の 花屋や 商標・値段や 日数の 数字は 出さない(決まりは tools/hanaya/PROMPT.md)。
+    #   絵は まだ 無い(仮の アイコン tools/hanaya/placeholder_icon.py)。届いたら hero / logo を True・art を 足す
+    "hanaya": dict(name="フリック花屋", modes="HANAYA", kinds=set(), color="#d6336c", hero=False, logo=False,
+                   lead="春・夏・秋・冬の 花の 名前と 花言葉・花言葉と 色・花を 育てて 長もちさせる ことば・アレンジと 花束・花屋の 仕事と 行事・仕入れと 鮮度・接客と 注文・開業と 経営の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、花の 名前なら 💐 花言葉が 出るよ。店に ならぶ 花の 名前から はじめて、花屋で 働ける ことば → 店を まかせられる ことば(フラワー装飾技能士 3級・2級の 範囲の めやす)→ 花屋を 開いて 経営する ことば(1級の 範囲の めやす と 原価・粗利・資金繰り)まで。4択クイズで 意味を たしかめる 練習も できるよ。",
+                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。花言葉は 本や 国・お店に よって ちがう ことが あるよ。花束の 作りかたの 手順は 書いていないよ。花ばさみや ナイフは おとなと いっしょに 使ってね。値段や 日持ちの 日数・開業資金などの 数字は お店や 年で 変わるので のせていないよ。花束を 組む 手わざや 目利きは、実際に 手を 動かして 身に つけてね。",
+                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、花の 名前と 気持ちと お店の しごとが つながって 見えてくるよ。花屋・花の 宅配の 会社・職業能力開発協会・日本フラワーデザイナー協会とは 関係ありません。"),
     # フリックゲームクリエイター(けいくん 2026-09-29「ゲームクリエイターになるために必要な 知識をフリック形式の問題にしてください」→ 課金・ガチャは「A」= 入れない)。
     #   ことばは tools/gamedev/terms-<旅>.json → gamedev/terms.js(tools/gamedev/terms_js.py)。しくみは gamedev/gamedev.js(GAMEDEV。kango.js を 写した)。
     #   旅は 8つ + マスター(8つめ ⌨️ コードと作りかた は 2026-09-29「コードの書きかたや作りかたは必要? 必要なら追加して」で 足した)。むずかしさは 入門(あそぶ 人でも 知っている)→ 中級(作りはじめる)→ 上級(専門学校・大学で 学ぶ めやす)→ プロ(ゲーム会社の 現場の めやす)。けいくん「本当にゲームクリエイターになれるレベルに」。
@@ -305,7 +314,7 @@ GAMES = {
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "CHEF": '(typeof CHEF === "object" ? CHEF.modes : [])', "KEISATSU": '(typeof KEISATSU === "object" ? KEISATSU.modes : [])', "SHOBO": '(typeof SHOBO === "object" ? SHOBO.modes : [])', "KYUKYUTAI": '(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : [])', "BENGOSHI": '(typeof BENGOSHI === "object" ? BENGOSHI.modes : [])', "ZEIRISHI": '(typeof ZEIRISHI === "object" ? ZEIRISHI.modes : [])', "ADLER": '(typeof ADLER === "object" ? ADLER.modes : [])', "TOSHIKA": '(typeof TOSHIKA === "object" ? TOSHIKA.modes : [])', "DAIKU": '(typeof DAIKU === "object" ? DAIKU.modes : [])', "NOKA": '(typeof NOKA === "object" ? NOKA.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "CHEF": '(typeof CHEF === "object" ? CHEF.modes : [])', "KEISATSU": '(typeof KEISATSU === "object" ? KEISATSU.modes : [])', "SHOBO": '(typeof SHOBO === "object" ? SHOBO.modes : [])', "KYUKYUTAI": '(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : [])', "BENGOSHI": '(typeof BENGOSHI === "object" ? BENGOSHI.modes : [])', "ZEIRISHI": '(typeof ZEIRISHI === "object" ? ZEIRISHI.modes : [])', "ADLER": '(typeof ADLER === "object" ? ADLER.modes : [])', "TOSHIKA": '(typeof TOSHIKA === "object" ? TOSHIKA.modes : [])', "DAIKU": '(typeof DAIKU === "object" ? DAIKU.modes : [])', "NOKA": '(typeof NOKA === "object" ? NOKA.modes : [])', "HANAYA": '(typeof HANAYA === "object" ? HANAYA.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -451,6 +460,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/noka/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "noka" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="noka.js?v=%s"></script>' % (ver("terms.js"), ver("noka.js")))
+    if g["modes"] == "HANAYA":  # 花屋の コース: 農家と 同じ 形。ことばは terms.js(tools/hanaya/terms-*.json から)、しくみは hanaya.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/hanaya/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "hanaya" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="hanaya.js?v=%s"></script>' % (ver("terms.js"), ver("hanaya.js")))
     if g["modes"] == "SUGAKU":  # 数学の コース: 国語と 同じ 形。ことばは terms.js(tools/sugaku/terms-*.json から)、しくみは sugaku.js(make_sugaku_js.py が 作る)
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/sugaku/terms_js.py")], check=True); subprocess.run([_s.executable, str(ROOT / "tools/sugaku/make_sugaku_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "sugaku" / f).read_bytes()).hexdigest()[:8]

@@ -1,0 +1,1192 @@
+[
+ {
+  "id": "si-shiire",
+  "name": "仕入れ",
+  "reading": "しいれ",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-ichiba",
+   "si-shiiresaki"
+  ],
+  "description": "お店で 売る 花を 買って そろえる ことです。花屋は 毎週 市場や 産地から 花を 仕入れて、新しい 花を 店先に ならべます。"
+ },
+ {
+  "id": "si-ichiba",
+  "name": "花市場",
+  "reading": "はないちば",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-oroshiuri",
+   "si-seri"
+  ],
+  "description": "全国の 産地や 外国から 届いた 花が 集まり、花屋に 売られる 場所です。早朝から 動きはじめ、花屋は ここで その日の 花を 選びます。"
+ },
+ {
+  "id": "si-seisansha",
+  "name": "生産者",
+  "reading": "せいさんしゃ",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "👩‍🌾",
+  "mapNode": "shiire:seisansha",
+  "relatedTerms": [
+   "si-sanchi",
+   "si-shukka"
+  ],
+  "description": "花を 畑や ハウスで 育てて 出荷する 人です。花屋は 生産者の 名前や 育てかたを 知ると、お客さんに 花の 話を 伝えやすく なります。"
+ },
+ {
+  "id": "si-sanchi",
+  "name": "産地",
+  "reading": "さんち",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "shiire:sanchi",
+  "relatedTerms": [
+   "si-seisansha",
+   "si-kokusan"
+  ],
+  "description": "花が 育てられて いる 土地の ことです。同じ 花でも 産地に よって 色や 大きさ、とれる 季節が ちがう ことが あります。"
+ },
+ {
+  "id": "si-sendo",
+  "name": "鮮度",
+  "reading": "せんど",
+  "journey": "shiire",
+  "category": "鮮度と 温度",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "shiire:sendo",
+  "relatedTerms": [
+   "si-sendokanri",
+   "si-mizukae"
+  ],
+  "description": "花が どれだけ 新しく、元気かを あらわす ことばです。葉の つや・茎の かたさ・花びらの はりを 見て たしかめます。"
+ },
+ {
+  "id": "si-zaiko",
+  "name": "在庫",
+  "reading": "ざいこ",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🗃️",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-zaikokanri",
+   "si-hacchu"
+  ],
+  "description": "お店に 置いて ある、まだ 売れて いない 花や 資材の ことです。花は 時間が たつと 弱るので、多すぎない ように 気を つけます。"
+ },
+ {
+  "id": "si-mizukae",
+  "name": "水かえ",
+  "reading": "みずかえ",
+  "journey": "shiire",
+  "category": "鮮度と 温度",
+  "difficulty": 1,
+  "field": "材料",
+  "type": "concept",
+  "emoji": "🪣",
+  "mapNode": "shiire:sendo",
+  "relatedTerms": [
+   "si-sendo",
+   "si-keeper"
+  ],
+  "description": "花を 入れた バケツや 花瓶の 水を 新しく する ことです。水が にごると 花が 水を 吸いにくく なるので、店では こまめに かえます。"
+ },
+ {
+  "id": "si-kokusan",
+  "name": "国産の 花",
+  "reading": "こくさんのはな",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🇯🇵",
+  "mapNode": "shiire:sanchi",
+  "relatedTerms": [
+   "si-sanchi",
+   "si-yunyu"
+  ],
+  "description": "日本の 中で 育てられた 花です。運ぶ 道のりが 短い ことが 多く、季節を 感じる 花が そろいます。"
+ },
+ {
+  "id": "si-yunyu",
+  "name": "輸入の 花",
+  "reading": "ゆにゅうのはな",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "shiire:yunyu",
+  "relatedTerms": [
+   "si-kuyu",
+   "si-kokusan"
+  ],
+  "description": "外国で 育てられ、日本に 運ばれて きた 花です。カーネーションや バラ などは 外国から 届く ものも 多く、1年を 通して 店に ならびます。"
+ },
+ {
+  "id": "si-seri",
+  "name": "せり",
+  "reading": "せり",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "shiire:seri",
+  "relatedTerms": [
+   "si-aitai",
+   "si-serinin"
+  ],
+  "description": "買いたい 人どうしが 値段を 競りあって、売る 値段を 決める 売りかたです。花市場の 朝の 名物で、よい 花ほど 値段が 上がりやすく なります。"
+ },
+ {
+  "id": "si-nyuka",
+  "name": "入荷",
+  "reading": "にゅうか",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "shiire:niuke",
+  "relatedTerms": [
+   "si-niuke",
+   "si-kenpin"
+  ],
+  "description": "仕入れた 花が お店に 届く ことです。入荷した 花は すぐに 水を 吸わせて、店に 出す 準備を します。"
+ },
+ {
+  "id": "si-hacchu",
+  "name": "発注",
+  "reading": "はっちゅう",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-zaiko",
+   "si-yoyakushiire"
+  ],
+  "description": "仕入れ先に「この 花が これだけ ほしい」と 注文する ことです。売れる 量を 考えて、多すぎず 少なすぎない ように 決めます。"
+ },
+ {
+  "id": "si-loss",
+  "name": "ロス",
+  "reading": "ろす",
+  "journey": "shiire",
+  "category": "ロスを へらす",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🗑️",
+  "mapNode": "shiire:loss",
+  "relatedTerms": [
+   "si-losssakugen",
+   "si-haiki"
+  ],
+  "description": "仕入れた 花が 売れずに 弱って しまい、捨てる ことに なる ぶんです。ロスが 少ない ほど、お店に お金が 残ります。"
+ },
+ {
+  "id": "si-keeper",
+  "name": "フラワーキーパー",
+  "reading": "ふらわーきーぱー",
+  "journey": "shiire",
+  "category": "鮮度と 温度",
+  "difficulty": 1,
+  "field": "材料",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "shiire:keeper",
+  "relatedTerms": [
+   "si-teion",
+   "si-coldchain"
+  ],
+  "description": "花を 冷やして しまって おく、花屋の 冷蔵庫です。ガラスの 扉の ものが 多く、花を 長もち させながら お客さんにも 見せられます。"
+ },
+ {
+  "id": "si-shiiresaki",
+  "name": "仕入れ先",
+  "reading": "しいれさき",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-shiire",
+   "si-nakaoroshi"
+  ],
+  "description": "花を 買う 相手の ことです。花市場・仲卸・生産者 など、いくつかの 仕入れ先を 使い分ける 花屋も あります。"
+ },
+ {
+  "id": "si-teiban",
+  "name": "定番の 花",
+  "reading": "ていばんのはな",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "💐",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-hacchu",
+   "si-shinazoroe"
+  ],
+  "description": "季節に 関係なく、いつも お店に 置いて おく 花です。バラ・カーネーション・かすみ草 などは 花束に よく 使うので 切らさない ように します。"
+ },
+ {
+  "id": "si-case",
+  "name": "ケース",
+  "reading": "けーす",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "shiire:niuke",
+  "relatedTerms": [
+   "si-irisu",
+   "si-nyuka"
+  ],
+  "description": "花が 運ばれて くる はこの ことです。ひとつの ケースに 入る 本数が 決まって いて、仕入れは ケースや 束で 数えます。"
+ },
+ {
+  "id": "si-niuke",
+  "name": "荷受け",
+  "reading": "にうけ",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "shiire:niuke",
+  "relatedTerms": [
+   "si-nyuka",
+   "si-kenpin"
+  ],
+  "description": "届いた 花の 荷物を 受け取る ことです。数が 注文どおりか、はこが つぶれて いないかを その場で 見ます。"
+ },
+ {
+  "id": "si-kenpin",
+  "name": "検品",
+  "reading": "けんぴん",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "shiire:niuke",
+  "relatedTerms": [
+   "si-niuke",
+   "si-kikaku"
+  ],
+  "description": "届いた 花の 数や 品質を たしかめる ことです。茎の 折れや 花びらの 傷み を 見つけたら、仕入れ先に 早めに 伝えます。"
+ },
+ {
+  "id": "si-mikiri",
+  "name": "見切り品",
+  "reading": "みきりひん",
+  "journey": "shiire",
+  "category": "ロスを へらす",
+  "difficulty": 1,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "shiire:loss",
+  "relatedTerms": [
+   "si-loss",
+   "si-tsukurikae"
+  ],
+  "description": "少し 開きすぎた 花などを、値段を 下げて 売る 品です。捨てる 前に 楽しんで もらえる ので、ロスを へらす 工夫に なります。"
+ },
+ {
+  "id": "si-oroshiuri",
+  "name": "卸売市場",
+  "reading": "おろしうりしじょう",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🏛️",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-ichiba",
+   "si-nakaoroshi"
+  ],
+  "description": "生産者から 集まった 品物を、まとめて 売り買いする 市場です。花を あつかう 卸売市場は 花き市場とも よばれます。"
+ },
+ {
+  "id": "si-aitai",
+  "name": "相対取引",
+  "reading": "あいたいとりひき",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "shiire:seri",
+  "relatedTerms": [
+   "si-seri",
+   "si-yoyakuaitai"
+  ],
+  "description": "売る 人と 買う 人が 話しあって 値段を 決める 売りかたです。せりを 待たずに 必要な 花を 確保 しやすい ので、多くの 花屋が 使います。"
+ },
+ {
+  "id": "si-nakaoroshi",
+  "name": "仲卸",
+  "reading": "なかおろし",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "shiire:nakaoroshi",
+  "relatedTerms": [
+   "si-oroshiuri",
+   "si-sashine"
+  ],
+  "description": "市場で 品質を 見きわめて 花を 買い、小分けに して 花屋に 売る 業者です。少しずつ ほしい 花屋には 心強い 相手です。"
+ },
+ {
+  "id": "si-kikaku",
+  "name": "規格",
+  "reading": "きかく",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "shiire:kikaku",
+  "relatedTerms": [
+   "si-tokyu",
+   "si-nagasa"
+  ],
+  "description": "花を 出荷する ときの 決まりごとです。長さ・花の 数・入り数 などを そろえる ので、花屋は 見なくても 中身の めやすが わかります。"
+ },
+ {
+  "id": "si-tokyu",
+  "name": "等級",
+  "reading": "とうきゅう",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🏅",
+  "mapNode": "shiire:kikaku",
+  "relatedTerms": [
+   "si-shu",
+   "si-kikaku"
+  ],
+  "description": "花の 品質の 良さで つけた ランクです。茎の まっすぐさ・花の 形・傷の 少なさ などで 分けられます。"
+ },
+ {
+  "id": "si-shu",
+  "name": "秀",
+  "reading": "しゅう",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🥇",
+  "mapNode": "shiire:kikaku",
+  "relatedTerms": [
+   "si-yu",
+   "si-tokyu"
+  ],
+  "description": "花の 等級で よく 使われる 秀・優・良の うち、いちばん 上の ランクです。形が そろい 傷も 少なく、大切な 贈りものに 向きます。決まりは 産地に よって ちがいます。"
+ },
+ {
+  "id": "si-yu",
+  "name": "優",
+  "reading": "ゆう",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🥈",
+  "mapNode": "shiire:kikaku",
+  "relatedTerms": [
+   "si-shu",
+   "si-ryo"
+  ],
+  "description": "花の 等級で 秀の 次の ランクです。少し だけ 形が そろって いない ことが ありますが、店の 花束には じゅうぶん 使えます。"
+ },
+ {
+  "id": "si-ryo",
+  "name": "良",
+  "reading": "りょう",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🥉",
+  "mapNode": "shiire:kikaku",
+  "relatedTerms": [
+   "si-yu",
+   "si-tokyu"
+  ],
+  "description": "花の 等級で 優の 次の ランクです。茎が 少し 曲がって いる などの 花ですが、短く 切る アレンジなら よさが いきます。"
+ },
+ {
+  "id": "si-irisu",
+  "name": "入り数",
+  "reading": "いりすう",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "shiire:kikaku",
+  "relatedTerms": [
+   "si-case",
+   "si-kikaku"
+  ],
+  "description": "ケースや 束に 入って いる 花の 本数です。発注や 値段の 計算に かかわる ので、仕入れの ときに かならず たしかめます。"
+ },
+ {
+  "id": "si-nagasa",
+  "name": "長さの 規格",
+  "reading": "ながさのきかく",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "shiire:kikaku",
+  "relatedTerms": [
+   "si-kikaku",
+   "si-tokyu"
+  ],
+  "description": "切り花を 決まった 長さで そろえて 出荷する 決まりです。大きな 花束には 長い もの、小さな アレンジには 短い もの と 使い分けます。"
+ },
+ {
+  "id": "si-sendokanri",
+  "name": "鮮度管理",
+  "reading": "せんどかんり",
+  "journey": "shiire",
+  "category": "鮮度と 温度",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "shiire:sendo",
+  "relatedTerms": [
+   "si-sendo",
+   "si-teion"
+  ],
+  "description": "花を 新しい まま 保つ ための 工夫を まとめた ことばです。温度・水・入荷の 順番 などに 気を くばり、元気な 花を 売ります。"
+ },
+ {
+  "id": "si-kirimae",
+  "name": "切り前",
+  "reading": "きりまえ",
+  "journey": "shiire",
+  "category": "鮮度と 温度",
+  "difficulty": 2,
+  "field": "材料",
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "shiire:sendo",
+  "relatedTerms": [
+   "si-kaika",
+   "si-sendo"
+  ],
+  "description": "産地で 花を 切る ときの、花の 開きぐあいの ことです。つぼみで 切るか 開いて から 切るかで、店で 楽しめる 時間が 変わります。"
+ },
+ {
+  "id": "si-teion",
+  "name": "低温管理",
+  "reading": "ていおんかんり",
+  "journey": "shiire",
+  "category": "鮮度と 温度",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "shiire:keeper",
+  "relatedTerms": [
+   "si-keeper",
+   "si-coldchain"
+  ],
+  "description": "花を 低い 温度で 保って、開くのを ゆっくりに する ことです。ただし 寒さに 弱い 花も ある ので、花に 合わせます。"
+ },
+ {
+  "id": "si-zaikokanri",
+  "name": "在庫管理",
+  "reading": "ざいこかんり",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-zaiko",
+   "si-sakiire"
+  ],
+  "description": "どの 花が どれだけ 残って いるかを つかんで おく ことです。次の 仕入れの 量を 決める もとに なります。"
+ },
+ {
+  "id": "si-sakiire",
+  "name": "先入れ先出し",
+  "reading": "さきいれさきだし",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-zaikokanri",
+   "si-loss"
+  ],
+  "description": "先に 入荷した 花から 先に 売る、という 考えかたです。古い 花が 奥に 残らない ように、並べる 場所も 工夫します。"
+ },
+ {
+  "id": "si-losssakugen",
+  "name": "ロス削減",
+  "reading": "ろすさくげん",
+  "journey": "shiire",
+  "category": "ロスを へらす",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "shiire:loss",
+  "relatedTerms": [
+   "si-loss",
+   "si-mikiri"
+  ],
+  "description": "売れずに 捨てる 花を へらす 取り組みです。仕入れの 量を 見直したり、弱りかけた 花を 小さな 花束に したり します。"
+ },
+ {
+  "id": "si-tsukurikae",
+  "name": "小さな 花束に 作りかえる",
+  "reading": "ちいさなはなたばにつくりかえる",
+  "journey": "shiire",
+  "category": "ロスを へらす",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "💐",
+  "mapNode": "shiire:loss",
+  "relatedTerms": [
+   "si-mikiri",
+   "si-losssakugen"
+  ],
+  "description": "茎が 傷んだ 花を 短く 切って、手ごろな 小さい 花束に する ことです。花を むだに せず、気軽に 買って もらえます。"
+ },
+ {
+  "id": "si-soba",
+  "name": "相場",
+  "reading": "そうば",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "💹",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-sobaugoki",
+   "si-seri"
+  ],
+  "description": "その ときの 花の 売り買いの 値段の ことです。天気や 行事、とれる 量で 毎日 変わる ので、花屋は 相場を 見ながら 仕入れます。"
+ },
+ {
+  "id": "si-yoyakushiire",
+  "name": "予約仕入れ",
+  "reading": "よやくしいれ",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-hacchu",
+   "si-yoyakuaitai"
+  ],
+  "description": "必要な 花を 前もって 注文して おく 仕入れかたです。母の日や ウェディングなど、決まった 花が 決まった 日に 要る ときに 使います。"
+ },
+ {
+  "id": "si-kisetsu",
+  "name": "季節の 花の 仕入れ",
+  "reading": "きせつのはなのしいれ",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "shiire:sanchi",
+  "relatedTerms": [
+   "si-teiban",
+   "si-sanchirelay"
+  ],
+  "description": "その 時期だけ 出回る 花を 選んで 仕入れる ことです。店先に 季節を 感じる 花が あると、お客さんの 足が とまります。"
+ },
+ {
+  "id": "si-net",
+  "name": "ネットでの 仕入れ",
+  "reading": "ねっとでのしいれ",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-shiiresaki",
+   "si-yoyakushiire"
+  ],
+  "description": "インターネットで 花を 注文して 仕入れる ことです。市場に 行けない 日でも 注文 できますが、実物を 見られない ぶん 品質の たしかめが 大切です。"
+ },
+ {
+  "id": "si-kuyu",
+  "name": "空輸",
+  "reading": "くうゆ",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "shiire:yunyu",
+  "relatedTerms": [
+   "si-yunyu",
+   "si-coldchain"
+  ],
+  "description": "飛行機で 花を 運ぶ ことです。遠い 外国の 花も 新しい うちに 届けられる ので、輸入の 花の 多くは 空輸で 運ばれます。"
+ },
+ {
+  "id": "si-hinshitsu",
+  "name": "品質保持",
+  "reading": "ひんしつほじ",
+  "journey": "shiire",
+  "category": "鮮度と 温度",
+  "difficulty": 2,
+  "field": "材料",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "shiire:sendo",
+  "relatedTerms": [
+   "si-sendokanri",
+   "si-maeshori"
+  ],
+  "description": "花の よい 状態を できるだけ 長く 保つ ことです。産地・市場・お店が それぞれ 工夫を つないで、お客さんの 手元まで 届けます。"
+ },
+ {
+  "id": "si-keppin",
+  "name": "欠品",
+  "reading": "けっぴん",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-daitai",
+   "si-zaikokanri"
+  ],
+  "description": "売りたい 花が 店に 無い 状態です。定番の 花が 欠品すると お客さんを 待たせる ので、在庫を こまめに 見ます。"
+ },
+ {
+  "id": "si-shinazoroe",
+  "name": "品ぞろえ",
+  "reading": "しなぞろえ",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 2,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🌈",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-teiban",
+   "si-kisetsu"
+  ],
+  "description": "お店に どんな 花を どれだけ そろえるか、という ことです。色や 種類の バランスが よいと、花束を 作りやすく なります。"
+ },
+ {
+  "id": "si-baisannin",
+  "name": "買参人",
+  "reading": "ばいさんにん",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-baisanken",
+   "si-seri"
+  ],
+  "description": "花市場の せりや 取引に 参加 できる 買い手の ことです。市場から 認められた 花屋などが、自分で 花を 買い付けます。"
+ },
+ {
+  "id": "si-baisanken",
+  "name": "買参権",
+  "reading": "ばいさんけん",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-baisannin",
+   "si-nakaoroshi"
+  ],
+  "description": "花市場で 売り買いに 参加する ための 権利です。持って いない 花屋は、仲卸などを 通して 花を 仕入れます。"
+ },
+ {
+  "id": "si-serinin",
+  "name": "せり人",
+  "reading": "せりにん",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🎤",
+  "mapNode": "shiire:seri",
+  "relatedTerms": [
+   "si-seri",
+   "si-kikaizeri"
+  ],
+  "description": "市場で せりを 進める 役目の 人です。花の 産地や 等級を 伝えながら、売り買いの 値段を 決めて いきます。"
+ },
+ {
+  "id": "si-shitami",
+  "name": "下見",
+  "reading": "したみ",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "shiire:seri",
+  "relatedTerms": [
+   "si-seri",
+   "si-kenpin"
+  ],
+  "description": "せりの 前に 並んだ 花を 見て、品質を たしかめる ことです。どの 花を どこまで の 値段で 買うかを ここで 決めて おきます。"
+ },
+ {
+  "id": "si-kikaizeri",
+  "name": "機械ぜり",
+  "reading": "きかいぜり",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "shiire:seri",
+  "relatedTerms": [
+   "si-serinin",
+   "si-seri"
+  ],
+  "description": "大きな 画面に 出る 値段を 見て、手元の ボタンで 買う せりの しくみです。たくさんの 花を 短い 時間で 売り買い できます。"
+ },
+ {
+  "id": "si-yoyakuaitai",
+  "name": "予約相対",
+  "reading": "よやくあいたい",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "shiire:seri",
+  "relatedTerms": [
+   "si-aitai",
+   "si-yoyakushiire"
+  ],
+  "description": "花が 市場に 届く 前に、ほしい 花と 値段を 話しあって 決めて おく 取引です。大きな 行事の 前に 花を 確保 するのに 役立ちます。"
+ },
+ {
+  "id": "si-sashine",
+  "name": "指値",
+  "reading": "さしね",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "☝️",
+  "mapNode": "shiire:nakaoroshi",
+  "relatedTerms": [
+   "si-nakaoroshi",
+   "si-soba"
+  ],
+  "description": "「この 値段までなら 買う」と 上限を 決めて 仕入れを 頼む ことです。相場が 高い ときに 仕入れの 予算を 守れます。"
+ },
+ {
+  "id": "si-maeshori",
+  "name": "前処理",
+  "reading": "まえしょり",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 3,
+  "field": "材料",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "shiire:seisansha",
+  "relatedTerms": [
+   "si-hinshitsu",
+   "si-shukka"
+  ],
+  "description": "産地で 出荷の 前に、花に 長もち させる ための 液を 吸わせて おく ことです。店に 届いて からの 花の もちが よく なります。"
+ },
+ {
+  "id": "si-kaika",
+  "name": "開花ステージ",
+  "reading": "かいかすてーじ",
+  "journey": "shiire",
+  "category": "鮮度と 温度",
+  "difficulty": 3,
+  "field": "材料",
+  "type": "concept",
+  "emoji": "🌷",
+  "mapNode": "shiire:sendo",
+  "relatedTerms": [
+   "si-kirimae",
+   "si-sendo"
+  ],
+  "description": "つぼみから 満開まで、花の 開きぐあいを 段階で あらわした ものです。お届けの 日に いちばん きれいな 段階を 考えて 仕入れます。"
+ },
+ {
+  "id": "si-coldchain",
+  "name": "コールドチェーン",
+  "reading": "こーるどちぇーん",
+  "journey": "shiire",
+  "category": "鮮度と 温度",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "shiire:keeper",
+  "relatedTerms": [
+   "si-teion",
+   "si-kuyu"
+  ],
+  "description": "産地から お店まで、花を 冷やした まま とぎれずに 運ぶ しくみです。途中で 温度が 上がると 花が 早く 開いて しまいます。"
+ },
+ {
+  "id": "si-shisshiki",
+  "name": "湿式輸送",
+  "reading": "しっしきゆそう",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "shiire:sanchi",
+  "relatedTerms": [
+   "si-kanshiki",
+   "si-coldchain"
+  ],
+  "description": "水を 入れた 容器に 花を 立てた まま 運ぶ 方法です。運ぶ あいだも 水を 吸える ので、店に 着いた ときの 花が 元気です。"
+ },
+ {
+  "id": "si-kanshiki",
+  "name": "乾式輸送",
+  "reading": "かんしきゆそう",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "shiire:sanchi",
+  "relatedTerms": [
+   "si-shisshiki",
+   "si-case"
+  ],
+  "description": "水を 使わずに、花を はこに 寝かせて 運ぶ 方法です。たくさん 積めますが、届いたら すぐに 水を 吸わせる 手間が 大切です。"
+ },
+ {
+  "id": "si-sanchirelay",
+  "name": "産地リレー",
+  "reading": "さんちりれー",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "shiire:sanchi",
+  "relatedTerms": [
+   "si-sanchi",
+   "si-kisetsu"
+  ],
+  "description": "季節に 合わせて 出荷する 産地が 移って いく ことです。暖かい 土地から 涼しい 土地へ つなぐ ことで、同じ 花が 長い あいだ 店に 並びます。"
+ },
+ {
+  "id": "si-kenneki",
+  "name": "植物検疫",
+  "reading": "しょくぶつけんえき",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🛃",
+  "mapNode": "shiire:yunyu",
+  "relatedTerms": [
+   "si-yunyu",
+   "si-gensankoku"
+  ],
+  "description": "外国から 来た 植物に 害虫などが ついて いないかを、国が しらべる しくみです。輸入の 花も これを 通って から 市場に 届きます。"
+ },
+ {
+  "id": "si-shukka",
+  "name": "出荷",
+  "reading": "しゅっか",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🚛",
+  "mapNode": "shiire:seisansha",
+  "relatedTerms": [
+   "si-seisansha",
+   "si-kikaku"
+  ],
+  "description": "生産者が 育てた 花を 市場などへ 送り出す ことです。規格に そろえて はこに つめ、産地の 名前を つけて 出します。"
+ },
+ {
+  "id": "si-nokyo",
+  "name": "農協",
+  "reading": "のうきょう",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "shiire:seisansha",
+  "relatedTerms": [
+   "si-shukka",
+   "si-sanchi"
+  ],
+  "description": "農業協同組合の 略で、生産者が 集まって 作る 組合です。花を まとめて 出荷する ので、同じ 産地の 花の 品質が そろいやすく なります。"
+ },
+ {
+  "id": "si-sanchoku",
+  "name": "産直",
+  "reading": "さんちょく",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "shiire:seisansha",
+  "relatedTerms": [
+   "si-seisansha",
+   "si-shiiresaki"
+  ],
+  "description": "産地から 直接 花を 仕入れる ことです。生産者と 話せる ので、めずらしい 品種や 育てかたの 話を お客さんに 伝えられます。"
+ },
+ {
+  "id": "si-budomari",
+  "name": "歩留まり",
+  "reading": "ぶどまり",
+  "journey": "shiire",
+  "category": "ロスを へらす",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "shiire:loss",
+  "relatedTerms": [
+   "si-loss",
+   "si-losssakugen"
+  ],
+  "description": "仕入れた 花の うち、実際に 商品に できた ぶんの 割合の ことです。折れや 傷みが 少ない ほど 歩留まりは よく なります。"
+ },
+ {
+  "id": "si-haiki",
+  "name": "廃棄",
+  "reading": "はいき",
+  "journey": "shiire",
+  "category": "ロスを へらす",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "♻️",
+  "mapNode": "shiire:loss",
+  "relatedTerms": [
+   "si-loss",
+   "si-budomari"
+  ],
+  "description": "売れずに 弱った 花を 捨てる ことです。何を どれだけ 捨てたかを 記録すると、次の 仕入れの 量を 見直せます。"
+ },
+ {
+  "id": "si-kaiten",
+  "name": "在庫回転",
+  "reading": "ざいこかいてん",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-zaikokanri",
+   "si-sakiire"
+  ],
+  "description": "仕入れた 花が どれだけ 早く 売れて 入れかわるかの ことです。花は 弱りやすい ので、回転が 速い ほど 新しい 花を 出せます。"
+ },
+ {
+  "id": "si-sobaugoki",
+  "name": "季節の 相場の 動き",
+  "reading": "きせつのそうばのうごき",
+  "journey": "shiire",
+  "category": "市場と 取引",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "shiire:shijo",
+  "relatedTerms": [
+   "si-soba",
+   "si-yoyakushiire"
+  ],
+  "description": "行事の 前や 天気で、花の 値段が 上がったり 下がったり する 流れです。母の日の 前の カーネーションの ように、毎年の 動きを 覚えて 仕入れに いかします。"
+ },
+ {
+  "id": "si-yosan",
+  "name": "仕入れ予算",
+  "reading": "しいれよさん",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 3,
+  "field": "お金の計算",
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-sashine",
+   "si-hacchu"
+  ],
+  "description": "花を 仕入れる ために 使って よい お金の めやすです。売上の 見こみから 決めて、使いすぎない ように します。"
+ },
+ {
+  "id": "si-lot",
+  "name": "ロット",
+  "reading": "ろっと",
+  "journey": "shiire",
+  "category": "規格と 検品",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "shiire:niuke",
+  "relatedTerms": [
+   "si-irisu",
+   "si-case"
+  ],
+  "description": "まとめて 売り買い される 花の ひとかたまりの ことです。ロットが 大きいと 使い切れずに ロスに なる ことも あります。"
+ },
+ {
+  "id": "si-daitai",
+  "name": "代わりの 花",
+  "reading": "かわりのはな",
+  "journey": "shiire",
+  "category": "在庫と 発注",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "shiire:zaiko",
+  "relatedTerms": [
+   "si-keppin",
+   "si-shinazoroe"
+  ],
+  "description": "注文の 花が 手に 入らない ときに、色や 形の 近い 別の 花を 使う ことです。お客さんに 先に 相談して おくと 安心です。"
+ },
+ {
+  "id": "si-gensankoku",
+  "name": "原産国",
+  "reading": "げんさんこく",
+  "journey": "shiire",
+  "category": "産地と 生産者",
+  "difficulty": 3,
+  "field": "仕入れと在庫",
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "shiire:yunyu",
+  "relatedTerms": [
+   "si-yunyu",
+   "si-kenneki"
+  ],
+  "description": "花が 育てられた 国の ことです。輸入の 花は 原産国に よって 色や 茎の 長さに 特ちょうが あり、仕入れの 手がかりに なります。"
+ }
+]

@@ -840,9 +840,8 @@
   2回目は 札 40こ・4択(せんたくばさみ)・図鑑の 見本(おてつだい)を 切り出して 読み、ぜんぶ ゲームに ある 読みで 旅の 箱も 合っていた。体温計に 数字は 無い。貯金箱の コインの「$」・健康の 見出しの 白い「+」は 小さいので そのまま。
   **アイコンも 入れた**(2026-10-03。けいくんの 四角い 絵 `tools/kaji/art/square-src.png` を 切らずに そのまま。`iconv` = 2)。
   ⚠️ 四角い 絵には ゲームに 無い ことば(なつまつり)・学ぶ分野「家事」(ゲームの 分野は 家庭科の 6つ)・「ポイントが もらえる」と コイン・「3級・2級・1級の めやすまで」が あるが、**アイコンの 大きさでは 読めないので そのまま**(医師・教師・料理人と 同じ 判断)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない。
-  **題名は まだ**(`logo=False`)。
-  届いたら / 四角い 絵 `tools/kaji/art/square-src.png` → `python3 tools/icon_from_square.py kaji` / 題名 `tools/kaji/art/title-src.png` → `python3 tools/title_from_art.py kaji`。`build_games.py` の `hero` `logo` を True・`art` の 大きさと `iconv` `wordv` を 上げる
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
+  **題名も 入れた**(2026-10-03。けいくんの ChatGPT の 切りぬき `tools/kaji/art/title-src.png` 2070×760 → `python3 tools/title_from_art.py kaji` → `kaji/logo-word.webp` 900×294。`logo=True`・`wordv` = 3)。「フリック家事」6字を 読んで 確かめた
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`(夢のしごと の 章、保育士の となり)と 規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-03 に 足した
 - 確かめかた: `node tools/play-all.mjs kaji/`(全140ステージ。旅 10×7 + マスター 70)/ `node tools/click-all.mjs kaji/`。ふりがなを 作るには `pip install sudachipy sudachidict_core`、仮の アイコンは `pip install Pillow`
 
 ## フリック哲学(`tetsugaku/`。けいくん 2026-10-03「哲学の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」。まとめは `docs/フリック哲学-はじめかた.md`)

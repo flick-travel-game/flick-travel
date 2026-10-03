@@ -208,9 +208,10 @@ GAMES = {
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/tetsugaku/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
     #   トップ(2026-10-03): けいくんの ChatGPT の 絵(2回目)。1回目は 本物の 哲学者の 顔・生まれた年と 亡くなった年・旅が 10こ・ゲームに 無い 札で 入れなかった。
     #   2回目の のこり 3か所(高校地理 → 高校倫理 / 年表の 紀元前4・3世紀 → 5世紀 / つながる ことば「ことば」→「いけん」)は 絵の 中で 直した(tools/tetsugaku/fix_text.py)。
-    #   アイコン・題名は まだ。届いたら tools/tetsugaku/art/square-src.png → tools/icon_from_square.py tetsugaku(iconv を +1)/ title-src.png → tools/title_from_art.py tetsugaku(logo を True・art.word を 実寸に)/ tetsugaku/hero.webp(hero を True)
+    #   アイコン(2026-10-03): けいくんの 四角い 絵を 切らずに そのまま(tools/icon_from_square.py tetsugaku)。札の「きもん」・4択・年表の 小さな まちがいは アイコンの 大きさでは 読めないので そのまま。
+    #   題名は まだ。届いたら tools/tetsugaku/art/square-src.png → tools/icon_from_square.py tetsugaku(iconv を +1)/ title-src.png → tools/title_from_art.py tetsugaku(logo を True・art.word を 実寸に)/ tetsugaku/hero.webp(hero を True)
     "tetsugaku": dict(name="フリック哲学", modes="TETSUGAKU", kinds=set(), color="#5f3dc4", hero=True, logo=False,
-                      art=dict(word=(900, 240), hero=(1536, 1024), alt="フリック哲学。本と 地球儀の ならぶ 図書館で 男の子と 女の子と 犬が 哲学の ことばの 札を かこむ 絵", iconv=1, wordv=2),
+                      art=dict(word=(900, 240), hero=(1536, 1024), alt="フリック哲学。本と 地球儀の ならぶ 図書館で 男の子と 女の子と 犬が 哲学の ことばの 札を かこむ 絵", iconv=2, wordv=2),
                       lead="哲学の きほん・古代ギリシャ・ローマ・東洋の 思想・中世から 近代・近代から 現代・よく 生きる(倫理学)・知る ことと 心・社会と 国・日本の 思想の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、分野・しくみ図の どこに あるのかが 出るよ。ときどき 💭 考えて みよう の 問いも 出るよ。考える ことが すきな 子の ことばから はじめて、高校「倫理」の 範囲の めやす、大学の 哲学科の 入門書の ことばまで。哲学者の 年表で、同じ ころに 孔子・ブッダ・ソクラテスが いた ことも わかるよ。4択クイズで 意味を たしかめる 練習も できるよ。",
                       how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。哲学には 答えが 1つで ない 問いが たくさん あります。自分で 考えて みよう。説明は ひろく 知られた 読みかたの 1つで、どの 考えが 正しいかを 決める ものでは ないよ。",
                       rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、昔の 人の 問いと いまの 自分の 問いが つながって 見えてくるよ。大学入試センター・大学・学会とは 関係ありません。"),

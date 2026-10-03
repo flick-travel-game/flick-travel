@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """フリック大工の 仮の アイコン(けいくんの ChatGPT の 絵が 届くまで)。木の 色の 地に 白い 家の 骨組み(柱・梁・屋根)。コードで 描く(AI の 絵に しない)
-    python3 tools/daiku/placeholder_icon.py  → daiku/apple-touch-icon.png(180)・icon-512.png・favicon.png(64)
+    python3 tools/daiku/placeholder_icon.py  → daiku/apple-touch-icon.png(180)・icon-512.png・favicon.png(64)・logo-mark2.webp(144)
     もとは tools/toshika/placeholder_icon.py。四角い 絵が 届いたら tools/icon_from_square.py daiku に 置きかえる"""
 from pathlib import Path
 from PIL import Image, ImageDraw
@@ -19,4 +19,5 @@ def draw(n):
     return im.resize((n, n), Image.LANCZOS)
 (ROOT / "daiku").mkdir(exist_ok=True)
 draw(180).save(ROOT / "daiku/apple-touch-icon.png"); draw(512).save(ROOT / "daiku/icon-512.png"); draw(64).save(ROOT / "daiku/favicon.png")
+draw(144).save(ROOT / "daiku/logo-mark2.webp", "WEBP", quality=92, method=6)  # 題名の 左の 小さい しるし(トップの 絵を 入れた あとに 要る)
 print("仮の アイコン OK")

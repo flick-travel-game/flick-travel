@@ -879,8 +879,8 @@
   右下の「ステップアップで マナーの たつじんに!」の 箱の 字だけ **絵の 中で 直した**(`tools/manner/fix_text.py`。Noto Sans CJK JP Bold):
   あいさつや あらかは → あいさつや しぐさの / しゃかいで 字る → しゃかいに でる / せかいの中の → せんもんかの / ひしその → ひしょの / アロトコール → プロトコール。もとの 絵は 入れものに 入れていない
   **アイコンは けいくんの 四角い 絵(1254px)を 切らずに そのまま**(`tools/manner/art/square-src.png` → `python3 tools/icon_from_square.py manner`。`iconv` = 2)。4択の「ごどばは」の 誤字は アイコンの 大きさでは 読めないので そのまま。
-  **題名は まだ**(`logo=False`)。届いたら `tools/manner/art/title-src.png` → `python3 tools/title_from_art.py manner`(`logo=True`・`art.word` を 実寸・`wordv` +1)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **題名の 絵と けいくんの OK の あと**(章も 聞く。マナーは「夢のしごと」では なく 暮らし・学びの 章が 合うかも)
+  **題名も 入れた**(けいくんの ChatGPT の 切りぬき `tools/manner/art/title-src.png` 1999×734 → `python3 tools/title_from_art.py manner` → `manner/logo-word.webp` 900×277。`logo=True`・`wordv` = 3)。「フリックマナー」7字を 読んで 確かめた
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`(夢のしごと の 章、家事の となり)と 規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-03 に 足した
 - 確かめかた: `node tools/play-all.mjs manner/`(全140ステージ)/ `node tools/click-all.mjs manner/`(W=320 も)。ふりがなには `pip install sudachipy sudachidict_core`、仮の アイコンは `pip install Pillow`
 
 ## フリック哲学(`tetsugaku/`。けいくん 2026-10-03「哲学の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」。まとめは `docs/フリック哲学-はじめかた.md`)

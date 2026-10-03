@@ -424,11 +424,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリックマナー</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="277" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックマナー</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリックマナー" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリックマナー" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -560,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"manner", name:"フリックマナー", modes:(typeof MANNER === "object" ? MANNER.modes : []), assets:"../", logo:false, hero:true, dir:"manner/", lead:"マナーの きほん・ことばづかいと 敬語・食事・訪問と おもてなし・みんなの 場所・仕事・お祝い・お悔やみ・季節の あいさつと 贈りもの・世界の マナーの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、ときどき 💡 なぜ そうするの? が 出るよ。毎日の あいさつから はじめて、社会に 出る 人(秘書検定 3級・2級の 範囲の めやす)→ マナーの 専門家(秘書検定 準1級・1級、マナー・プロトコール検定の 範囲の めやす)まで。マナーは 相手を 思う 気持ちを 形に した もの。その「なぜ」が わかる ゲームだよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。マナーは 地域や 家・国に よって ちがう ことが あります。いちばん 大切なのは 相手を 思う 気持ちです。知らなかった ことは、知れば だいじょうぶ。お金の 金額や おじぎの 角度などの 数字は のせていないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、マナーの 形と その「なぜ」が つながって 見えてくるよ。実務技能検定協会・日本マナー・プロトコール協会とは 関係ありません。" };
+const GAME = { id:"manner", name:"フリックマナー", modes:(typeof MANNER === "object" ? MANNER.modes : []), assets:"../", logo:true, hero:true, dir:"manner/", lead:"マナーの きほん・ことばづかいと 敬語・食事・訪問と おもてなし・みんなの 場所・仕事・お祝い・お悔やみ・季節の あいさつと 贈りもの・世界の マナーの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、ときどき 💡 なぜ そうするの? が 出るよ。毎日の あいさつから はじめて、社会に 出る 人(秘書検定 3級・2級の 範囲の めやす)→ マナーの 専門家(秘書検定 準1級・1級、マナー・プロトコール検定の 範囲の めやす)まで。マナーは 相手を 思う 気持ちを 形に した もの。その「なぜ」が わかる ゲームだよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。マナーは 地域や 家・国に よって ちがう ことが あります。いちばん 大切なのは 相手を 思う 気持ちです。知らなかった ことは、知れば だいじょうぶ。お金の 金額や おじぎの 角度などの 数字は のせていないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、マナーの 形と その「なぜ」が つながって 見えてくるよ。実務技能検定協会・日本マナー・プロトコール協会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

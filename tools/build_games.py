@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ kyukyutai/ bengoshi/ zeirishi/ adler/ toshika/ daiku/ noka/ hanaya/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ rika/ seibi/ patissier/ kokugo/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ kyukyutai/ bengoshi/ zeirishi/ adler/ toshika/ daiku/ noka/ hanaya/ yakuzai/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -248,6 +248,16 @@ GAMES = {
                    lead="春・夏・秋・冬の 花の 名前と 花言葉・花言葉と 色・花を 育てて 長もちさせる ことば・アレンジと 花束・花屋の 仕事と 行事・仕入れと 鮮度・接客と 注文・開業と 経営の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、花の 名前なら 💐 花言葉が 出るよ。店に ならぶ 花の 名前から はじめて、花屋で 働ける ことば → 店を まかせられる ことば(フラワー装飾技能士 3級・2級の 範囲の めやす)→ 花屋を 開いて 経営する ことば(1級の 範囲の めやす と 原価・粗利・資金繰り)まで。4択クイズで 意味を たしかめる 練習も できるよ。",
                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。花言葉は 本や 国・お店に よって ちがう ことが あるよ。花束の 作りかたの 手順は 書いていないよ。花ばさみや ナイフは おとなと いっしょに 使ってね。値段や 日持ちの 日数・開業資金などの 数字は お店や 年で 変わるので のせていないよ。花束を 組む 手わざや 目利きは、実際に 手を 動かして 身に つけてね。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、花の 名前と 気持ちと お店の しごとが つながって 見えてくるよ。花屋・花の 宅配の 会社・職業能力開発協会・日本フラワーデザイナー協会とは 関係ありません。"),
+    # フリック薬剤師(けいくん 2026-10-03「薬剤師の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」)。
+    #   まとめは docs/フリック薬剤師-はじめかた.md。ことばは tools/yakuzai/terms-<旅>.json → yakuzai/terms.js(tools/yakuzai/terms_js.py)。しくみは yakuzai/yakuzai.js(YAKUZAI。農家を 写した)。
+    #   ⚠️⚠️ 薬の 量・飲む 回数・商品名・「この しょうじょうなら この 薬」・中毒や 乱用薬物の くわしい 話・年ごとに 変わる 数字は 出さない(決まりは tools/yakuzai/PROMPT.md)。
+    #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/yakuzai/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
+    #   届いたら tools/yakuzai/art/square-src.png → tools/icon_from_square.py yakuzai(iconv を +1)/ title-src.png → tools/title_from_art.py yakuzai(logo を True・art.word を 実寸に)/ yakuzai/hero.webp(hero を True)
+    "yakuzai": dict(name="フリック薬剤師", modes="YAKUZAI", kinds=set(), color="#0ca678", hero=False, logo=False,
+                    art=dict(word=(900, 240), hero=(1536, 1024), alt="フリック薬剤師", iconv=1, wordv=1),
+                    lead="薬の きほん・薬が きく しくみ・薬の 種類・薬が からだを 旅する・病気と 薬の 治療・調剤と 服薬指導・薬局の 薬(OTC)・衛生と 公衆衛生・法律と 歴史と 倫理の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の 科目・しくみ図の どこに あるのかが 出るよ。くすりを 正しく 使う ための ことばから はじめて、登録販売者試験の 範囲の めやす、薬剤師国家試験の 範囲の めやすの ことばまで。処方箋が 薬に なるまでの 流れや、薬が からだの 中を 旅する しくみも 出てくるよ。4択クイズで 意味を たしかめる 練習も できるよ。",
+                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。薬の 量や 飲む 回数・使いかたは 書いていないよ。薬は かならず お医者さん・薬剤師さんの 言う とおりに 使ってね。人の 薬は 飲まないでね。具合が わるい ときは 大人に 言おう。本物の 試験問題では ありません。",
+                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、薬の しくみと からだと くらしが つながって 見えてくるよ。厚生労働省・製薬会社・薬局とは 関係ありません。"),
     # フリックゲームクリエイター(けいくん 2026-09-29「ゲームクリエイターになるために必要な 知識をフリック形式の問題にしてください」→ 課金・ガチャは「A」= 入れない)。
     #   ことばは tools/gamedev/terms-<旅>.json → gamedev/terms.js(tools/gamedev/terms_js.py)。しくみは gamedev/gamedev.js(GAMEDEV。kango.js を 写した)。
     #   旅は 8つ + マスター(8つめ ⌨️ コードと作りかた は 2026-09-29「コードの書きかたや作りかたは必要? 必要なら追加して」で 足した)。むずかしさは 入門(あそぶ 人でも 知っている)→ 中級(作りはじめる)→ 上級(専門学校・大学で 学ぶ めやす)→ プロ(ゲーム会社の 現場の めやす)。けいくん「本当にゲームクリエイターになれるレベルに」。
@@ -315,7 +325,7 @@ GAMES = {
 
 # 会社の コース: kabu.js が 読めなかったときも ページが 止まらないように
 KABU_MODES = '(typeof KABU === "object" ? KABU.modes : [])'
-PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "CHEF": '(typeof CHEF === "object" ? CHEF.modes : [])', "KEISATSU": '(typeof KEISATSU === "object" ? KEISATSU.modes : [])', "SHOBO": '(typeof SHOBO === "object" ? SHOBO.modes : [])', "KYUKYUTAI": '(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : [])', "BENGOSHI": '(typeof BENGOSHI === "object" ? BENGOSHI.modes : [])', "ZEIRISHI": '(typeof ZEIRISHI === "object" ? ZEIRISHI.modes : [])', "ADLER": '(typeof ADLER === "object" ? ADLER.modes : [])', "TOSHIKA": '(typeof TOSHIKA === "object" ? TOSHIKA.modes : [])', "DAIKU": '(typeof DAIKU === "object" ? DAIKU.modes : [])', "NOKA": '(typeof NOKA === "object" ? NOKA.modes : [])', "HANAYA": '(typeof HANAYA === "object" ? HANAYA.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
+PLUG_MODES = {"KABU": KABU_MODES, "AITABI": '(typeof AITABI === "object" ? AITABI.modes : [])', "EIKAIWA": '(typeof EIKAIWA === "object" ? EIKAIWA.modes : [])', "SEIBI": '(typeof SEIBI === "object" ? SEIBI.modes : [])', "PATISSIER": '(typeof PATISSIER === "object" ? PATISSIER.modes : [])', "KOKUGO": '(typeof KOKUGO === "object" ? KOKUGO.modes : [])', "SUGAKU": '(typeof SUGAKU === "object" ? SUGAKU.modes : [])', "HOIKU": '(typeof HOIKU === "object" ? HOIKU.modes : [])', "KANGO": '(typeof KANGO === "object" ? KANGO.modes : [])', "ISHI": '(typeof ISHI === "object" ? ISHI.modes : [])', "KYOSHI": '(typeof KYOSHI === "object" ? KYOSHI.modes : [])', "CHEF": '(typeof CHEF === "object" ? CHEF.modes : [])', "KEISATSU": '(typeof KEISATSU === "object" ? KEISATSU.modes : [])', "SHOBO": '(typeof SHOBO === "object" ? SHOBO.modes : [])', "KYUKYUTAI": '(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : [])', "BENGOSHI": '(typeof BENGOSHI === "object" ? BENGOSHI.modes : [])', "ZEIRISHI": '(typeof ZEIRISHI === "object" ? ZEIRISHI.modes : [])', "ADLER": '(typeof ADLER === "object" ? ADLER.modes : [])', "TOSHIKA": '(typeof TOSHIKA === "object" ? TOSHIKA.modes : [])', "DAIKU": '(typeof DAIKU === "object" ? DAIKU.modes : [])', "NOKA": '(typeof NOKA === "object" ? NOKA.modes : [])', "HANAYA": '(typeof HANAYA === "object" ? HANAYA.modes : [])', "YAKUZAI": '(typeof YAKUZAI === "object" ? YAKUZAI.modes : [])', "GAMEDEV": '(typeof GAMEDEV === "object" ? GAMEDEV.modes : [])', "BIYO": '(typeof BIYO === "object" ? BIYO.modes : [])', "KYORYU": '(typeof KYORYU === "object" ? KYORYU.modes : [])', "CODEPG": '(typeof CODEPG === "object" ? CODEPG.modes : [])', "EIGO": '(typeof EIGO === "object" ? EIGO.modes : [])', "SHAKAI": '(typeof SHAKAI === "object" ? SHAKAI.modes : [])'}
 
 def build(gid, g):
     src = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -465,6 +475,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/hanaya/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "hanaya" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="hanaya.js?v=%s"></script>' % (ver("terms.js"), ver("hanaya.js")))
+    if g["modes"] == "YAKUZAI":  # 薬剤師の コース: 農家と 同じ 形。ことばは terms.js(tools/yakuzai/terms-*.json から)、しくみは yakuzai.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/yakuzai/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "yakuzai" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="yakuzai.js?v=%s"></script>' % (ver("terms.js"), ver("yakuzai.js")))
     if g["modes"] == "SUGAKU":  # 数学の コース: 国語と 同じ 形。ことばは terms.js(tools/sugaku/terms-*.json から)、しくみは sugaku.js(make_sugaku_js.py が 作る)
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/sugaku/terms_js.py")], check=True); subprocess.run([_s.executable, str(ROOT / "tools/sugaku/make_sugaku_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "sugaku" / f).read_bytes()).hexdigest()[:8]

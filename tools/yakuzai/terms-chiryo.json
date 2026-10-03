@@ -1,0 +1,1198 @@
+[
+ {
+  "id": "cr-byoki",
+  "name": "病気",
+  "reading": "びょうき",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🤒",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-chiryo",
+   "cr-kansensho"
+  ],
+  "description": "からだや 心の どこかが うまく はたらかなくなった 状態です。薬は お医者さんの 診察や 薬剤師さんの 説明と いっしょに 使う ことで、回復を 助けます。"
+ },
+ {
+  "id": "cr-chiryo",
+  "name": "治療",
+  "reading": "ちりょう",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-byoki",
+   "cr-yakubutsuchiryo"
+  ],
+  "description": "病気や けがを よくする ために 行う ことです。薬を 使う ほかに、休む・食事を 見直す なども 治療の 大切な 一部です。"
+ },
+ {
+  "id": "cr-kaze",
+  "name": "かぜ",
+  "reading": "かぜ",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🤧",
+  "mapNode": "chiryo:kaze",
+  "relatedTerms": [
+   "cr-hanamizu",
+   "cr-seki",
+   "cr-uirusu"
+  ],
+  "description": "鼻や のどに ウイルスが ついて、鼻水・せき・のどの 痛みなどが 出る 状態です。かぜ薬は 症状を やわらげる もので、からだが ウイルスと たたかう 力を 助けます。"
+ },
+ {
+  "id": "cr-influenza",
+  "name": "インフルエンザ",
+  "reading": "いんふるえんざ",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "chiryo:kaze",
+  "relatedTerms": [
+   "cr-kaze",
+   "cr-hatsunetsu"
+  ],
+  "description": "インフルエンザウイルスで 起きる 感染症です。急に 高い 熱が 出やすく、かぜより からだが つらく なりがちです。予防接種や 手洗いで 防ぐ ことも 大切です。"
+ },
+ {
+  "id": "cr-hatsunetsu",
+  "name": "発熱",
+  "reading": "はつねつ",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "chiryo:kaze",
+  "relatedTerms": [
+   "cr-kaze",
+   "cr-influenza"
+  ],
+  "description": "体温が ふだんより 高く なる ことです。からだが ばい菌と たたかう ための 反応でも あります。解熱剤は 熱を 少し 下げて、からだを 楽に する ための 薬です。"
+ },
+ {
+  "id": "cr-seki",
+  "name": "せき",
+  "reading": "せき",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "😷",
+  "mapNode": "chiryo:kaze",
+  "relatedTerms": [
+   "cr-kaze",
+   "cr-zensoku"
+  ],
+  "description": "のどや 気管に 入った ほこりや ばい菌を 外へ 出そうと する からだの しくみです。長く つづく ときは ほかの 病気の ことも あるので、お医者さんに 相談します。"
+ },
+ {
+  "id": "cr-hanamizu",
+  "name": "鼻水",
+  "reading": "はなみず",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🤧",
+  "mapNode": "chiryo:kaze",
+  "relatedTerms": [
+   "cr-kaze",
+   "cr-kafunsho"
+  ],
+  "description": "鼻の 中に 入った ウイルスや 花粉を 流し出そうと して 出る 液です。かぜでも 花粉症でも 出るので、薬剤師さんは ほかの 症状も 聞いて 見分けます。"
+ },
+ {
+  "id": "cr-kafunsho",
+  "name": "花粉症",
+  "reading": "かふんしょう",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "chiryo:kafun",
+  "relatedTerms": [
+   "cr-arerugi",
+   "cr-arerugiseibien"
+  ],
+  "description": "スギなどの 花粉に からだが 反応して、くしゃみ・鼻水・目の かゆみが 出る アレルギーです。花粉を 避ける 工夫と 薬を 組み合わせて つらさを やわらげます。"
+ },
+ {
+  "id": "cr-zutsu",
+  "name": "頭痛",
+  "reading": "ずつう",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🤕",
+  "mapNode": "chiryo:itami",
+  "relatedTerms": [
+   "cr-henzutsu",
+   "cr-nodonoitami"
+  ],
+  "description": "頭が 痛む ことです。寝不足や 疲れ、かぜなど 原因は いろいろ あります。痛み止めに たよりすぎず、いつも と ちがう 痛みは お医者さんに 相談します。"
+ },
+ {
+  "id": "cr-benpi",
+  "name": "便秘",
+  "reading": "べんぴ",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🚽",
+  "mapNode": "chiryo:ichou",
+  "relatedTerms": [
+   "cr-geri",
+   "cr-ien"
+  ],
+  "description": "うんちが 出にくく なったり、かたく なったり する 状態です。水分・食物繊維・運動を 見直す ことが 治療の はじまりで、薬は それを 助ける 役目です。"
+ },
+ {
+  "id": "cr-geri",
+  "name": "下痢",
+  "reading": "げり",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🚽",
+  "mapNode": "chiryo:ichou",
+  "relatedTerms": [
+   "cr-benpi",
+   "cr-kansensho"
+  ],
+  "description": "うんちが 水っぽく なって 何度も 出る 状態です。からだの 水分が 失われやすいので、こまめな 水分補給が 大切です。ばい菌を 外に 出す はたらきの ことも あります。"
+ },
+ {
+  "id": "cr-zensoku",
+  "name": "ぜんそく",
+  "reading": "ぜんそく",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "chiryo:zensoku",
+  "relatedTerms": [
+   "cr-seki",
+   "cr-chokikanriyaku",
+   "cr-hossachiryoyaku"
+  ],
+  "description": "空気の 通り道が せまく なり、ゼーゼー・ヒューヒューと 息が 苦しく なる 病気です。ふだんから 吸入薬で 気道の 炎症を おさえて、発作を 起こさない ように します。"
+ },
+ {
+  "id": "cr-arerugi",
+  "name": "アレルギー",
+  "reading": "あれるぎー",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🤧",
+  "mapNode": "chiryo:kafun",
+  "relatedTerms": [
+   "cr-kafunsho",
+   "cr-shokumotsuarerugi"
+  ],
+  "description": "本来 害の ない 花粉や 食べものに、からだの 守る しくみが 強く 反応しすぎる ことです。何に 反応するかは 人それぞれなので、薬剤師さんは アレルギーの 有無を 確かめます。"
+ },
+ {
+  "id": "cr-saikin",
+  "name": "細菌",
+  "reading": "さいきん",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🦠",
+  "mapNode": "chiryo:kansen",
+  "relatedTerms": [
+   "cr-uirusu",
+   "cr-kansensho"
+  ],
+  "description": "目に 見えない 小さな 生きもので、自分で ふえる ことが できます。病気の もとに なる 細菌には 抗菌薬が ききますが、ウイルスには ききません。"
+ },
+ {
+  "id": "cr-uirusu",
+  "name": "ウイルス",
+  "reading": "ういるす",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🦠",
+  "mapNode": "chiryo:kansen",
+  "relatedTerms": [
+   "cr-saikin",
+   "cr-kaze"
+  ],
+  "description": "細菌より ずっと 小さく、ほかの 生きものの 細胞に 入りこんで ふえます。かぜの 多くは ウイルスが 原因なので、抗菌薬は ききません。"
+ },
+ {
+  "id": "cr-kansensho",
+  "name": "感染症",
+  "reading": "かんせんしょう",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🦠",
+  "mapNode": "chiryo:kansen",
+  "relatedTerms": [
+   "cr-saikin",
+   "cr-uirusu"
+  ],
+  "description": "細菌や ウイルスが からだに 入って ふえ、病気を 起こす ことです。手洗いや 予防接種で 防ぎ、かかったら 原因に 合った 治療を 選びます。"
+ },
+ {
+  "id": "cr-jinmashin",
+  "name": "じんましん",
+  "reading": "じんましん",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "chiryo:hifu",
+  "relatedTerms": [
+   "cr-arerugi",
+   "cr-atopi"
+  ],
+  "description": "皮ふの 一部が 急に 赤く ふくらんで かゆく なる 状態です。食べものや 疲れなど 原因は さまざまです。息が 苦しい ときは すぐに 大人に 伝えて 病院へ 行きます。"
+ },
+ {
+  "id": "cr-nodonoitami",
+  "name": "のどの痛み",
+  "reading": "のどのいたみ",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "😣",
+  "mapNode": "chiryo:kaze",
+  "relatedTerms": [
+   "cr-kaze",
+   "cr-seki"
+  ],
+  "description": "かぜなどで のどに 炎症が 起きて、つばを 飲みこむ ときに 痛む ことです。うがいや 水分補給で のどを うるおす ことも 助けに なります。"
+ },
+ {
+  "id": "cr-shokumotsuarerugi",
+  "name": "食物アレルギー",
+  "reading": "しょくもつあれるぎー",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🥚",
+  "mapNode": "chiryo:kafun",
+  "relatedTerms": [
+   "cr-arerugi",
+   "cr-anafirakishi"
+  ],
+  "description": "卵や 牛乳など 特定の 食べものに からだが 反応する アレルギーです。原因の 食べものを 知って 避ける ことが いちばんの 対策です。給食でも 気を つけて もらいます。"
+ },
+ {
+  "id": "cr-nomikiru",
+  "name": "飲みきる",
+  "reading": "のみきる",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "chiryo:kansen",
+  "relatedTerms": [
+   "cr-kansensho",
+   "cr-taiseikin"
+  ],
+  "description": "抗菌薬などで「最後まで 飲みきって ください」と 言われた ときは、元気に なっても 自分で やめない ことです。菌が 残ると また ぶり返したり、薬が ききにくく なったり します。"
+ },
+ {
+  "id": "cr-byotai",
+  "name": "病態",
+  "reading": "びょうたい",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-byoki",
+   "cr-yakubutsuchiryo"
+  ],
+  "description": "病気の ときに からだの 中で 何が 起きて いるかを さす ことばです。しくみが わかると、なぜ その 薬を 使うのかも 理解できます。"
+ },
+ {
+  "id": "cr-yakubutsuchiryo",
+  "name": "薬物治療",
+  "reading": "やくぶつちりょう",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-chiryo",
+   "cr-taishoryoho",
+   "cr-geninryoho"
+  ],
+  "description": "薬を 使って 病気を 治したり、悪く ならない ように したり する 治療です。薬剤師は 薬が 安全に よく きいて いるかを 確かめます。"
+ },
+ {
+  "id": "cr-taishoryoho",
+  "name": "対症療法",
+  "reading": "たいしょうりょうほう",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-geninryoho",
+   "cr-yakubutsuchiryo"
+  ],
+  "description": "病気の 原因では なく、熱・痛み・せきなどの つらい 症状を やわらげる 治療です。かぜ薬の 多くは この 考えかたで 使われます。"
+ },
+ {
+  "id": "cr-geninryoho",
+  "name": "原因療法",
+  "reading": "げんいんりょうほう",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "chiryo:kansen",
+  "relatedTerms": [
+   "cr-taishoryoho",
+   "cr-kansensho"
+  ],
+  "description": "病気の もとに なって いる ものを とりのぞく 治療です。細菌の 感染症に 抗菌薬を 使うのが その 例です。"
+ },
+ {
+  "id": "cr-koketsuatsu",
+  "name": "高血圧",
+  "reading": "こうけつあつ",
+  "journey": "chiryo",
+  "category": "生活習慣病",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "❤️",
+  "mapNode": "chiryo:ketsuatsu",
+  "relatedTerms": [
+   "cr-seikatsushukanbyo",
+   "cr-kateiketsuatsu"
+  ],
+  "description": "血管に かかる 力が 高い 状態が つづく ことです。自分では 気づきにくいので、塩分を ひかえる などの 生活の 見直しと 薬で 心臓や 血管を 守ります。"
+ },
+ {
+  "id": "cr-tonyobyo",
+  "name": "糖尿病",
+  "reading": "とうにょうびょう",
+  "journey": "chiryo",
+  "category": "生活習慣病",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "chiryo:tonyo",
+  "relatedTerms": [
+   "cr-seikatsushukanbyo",
+   "cr-teikketto"
+  ],
+  "description": "血液の 中の 糖が 多い 状態が つづく 病気です。インスリンという ホルモンの はたらきが 足りない ことで 起きます。食事・運動・薬で 糖の 量を 整えます。"
+ },
+ {
+  "id": "cr-seikatsushukanbyo",
+  "name": "生活習慣病",
+  "reading": "せいかつしゅうかんびょう",
+  "journey": "chiryo",
+  "category": "生活習慣病",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🥗",
+  "mapNode": "chiryo:ketsuatsu",
+  "relatedTerms": [
+   "cr-koketsuatsu",
+   "cr-tonyobyo",
+   "cr-shishitsuijosho"
+  ],
+  "description": "食事・運動・睡眠・たばこ などの 毎日の くらしかたが 関係して 起きる 病気の まとまりです。薬だけで なく 生活を 見直す ことが 治療の 土台です。"
+ },
+ {
+  "id": "cr-shishitsuijosho",
+  "name": "脂質異常症",
+  "reading": "ししついじょうしょう",
+  "journey": "chiryo",
+  "category": "生活習慣病",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🧈",
+  "mapNode": "chiryo:ketsuatsu",
+  "relatedTerms": [
+   "cr-seikatsushukanbyo",
+   "cr-koketsuatsu"
+  ],
+  "description": "血液の 中の コレステロールなどの あぶらの バランスが くずれた 状態です。血管が かたく なる もとに なるので、食事と 運動、必要なら 薬で 整えます。"
+ },
+ {
+  "id": "cr-ien",
+  "name": "胃炎",
+  "reading": "いえん",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🫄",
+  "mapNode": "chiryo:ichou",
+  "relatedTerms": [
+   "cr-ikaiyo",
+   "cr-gyakuryu"
+  ],
+  "description": "胃の 内がわの 粘膜に 炎症が 起きた 状態です。食べすぎ・ストレス・一部の 痛み止めなどが 原因に なります。薬剤師は 胃を あらす 薬が ないかも 確かめます。"
+ },
+ {
+  "id": "cr-ikaiyo",
+  "name": "胃潰瘍",
+  "reading": "いかいよう",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🫄",
+  "mapNode": "chiryo:ichou",
+  "relatedTerms": [
+   "cr-ien",
+   "cr-pirorikin"
+  ],
+  "description": "胃の 粘膜が 胃酸で 深く 傷ついた 状態です。胃酸を おさえる 薬で 粘膜が 治るのを 助けます。ピロリ菌が 原因の ことも あります。"
+ },
+ {
+  "id": "cr-gyakuryu",
+  "name": "逆流性食道炎",
+  "reading": "ぎゃくりゅうせいしょくどうえん",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "chiryo:ichou",
+  "relatedTerms": [
+   "cr-ien",
+   "cr-ikaiyo"
+  ],
+  "description": "胃酸が 食道へ もどって きて、胸やけを 起こす 病気です。食べて すぐ 横に ならない などの 工夫と、胃酸を おさえる 薬を 組み合わせます。"
+ },
+ {
+  "id": "cr-henzutsu",
+  "name": "片頭痛",
+  "reading": "へんずつう",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🤕",
+  "mapNode": "chiryo:itami",
+  "relatedTerms": [
+   "cr-zutsu",
+   "cr-kansetsutsu"
+  ],
+  "description": "頭の 片がわや 両がわが ズキンズキンと 痛む 頭痛です。光や 音が つらく なる ことも あります。痛み止めの 使いすぎで 頭痛が ふえる ことも あるので 相談が 大切です。"
+ },
+ {
+  "id": "cr-kansetsutsu",
+  "name": "関節痛",
+  "reading": "かんせつつう",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "chiryo:itami",
+  "relatedTerms": [
+   "cr-henzutsu",
+   "cr-koreisha"
+  ],
+  "description": "ひざや 肩などの 関節が 痛む ことです。年を 重ねると ふえやすく、飲み薬・塗り薬・貼り薬などを 使い分けます。胃への 負担も 薬剤師が 気に かけます。"
+ },
+ {
+  "id": "cr-arerugiseibien",
+  "name": "アレルギー性鼻炎",
+  "reading": "あれるぎーせいびえん",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "chiryo:kafun",
+  "relatedTerms": [
+   "cr-kafunsho",
+   "cr-zekkameneki"
+  ],
+  "description": "花粉や ほこりなどに 反応して、鼻の 粘膜に 炎症が 起きる 病気です。季節だけに 出る ものと、一年中 出る ものが あります。"
+ },
+ {
+  "id": "cr-atopi",
+  "name": "アトピー性皮膚炎",
+  "reading": "あとぴーせいひふえん",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "chiryo:hifu",
+  "relatedTerms": [
+   "cr-sukinkea",
+   "cr-jinmashin"
+  ],
+  "description": "かゆみの ある 湿しんが よく なったり 悪く なったり を くり返す 病気です。保湿で 皮ふを 守る ことと、炎症を おさえる 塗り薬を 正しく 使う ことが 大切です。"
+ },
+ {
+  "id": "cr-sukinkea",
+  "name": "スキンケア",
+  "reading": "すきんけあ",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🧼",
+  "mapNode": "chiryo:hifu",
+  "relatedTerms": [
+   "cr-atopi",
+   "cr-jinmashin"
+  ],
+  "description": "皮ふを 清潔に して、保湿剤で うるおいを 守る ことです。皮ふの バリアが 整うと、かゆみや 炎症が 起きにくく なります。塗る 量や 場所の 説明も 薬剤師の 仕事です。"
+ },
+ {
+  "id": "cr-chujien",
+  "name": "中耳炎",
+  "reading": "ちゅうじえん",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "chiryo:hito",
+  "relatedTerms": [
+   "cr-kaze",
+   "cr-shoni"
+  ],
+  "description": "鼓膜の おくの 中耳に 炎症が 起きる 病気です。かぜの あとに 子どもが なりやすく、耳の 痛みや 熱が 出ます。"
+ },
+ {
+  "id": "cr-ketsumakuen",
+  "name": "結膜炎",
+  "reading": "けつまくえん",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "chiryo:hifu",
+  "relatedTerms": [
+   "cr-kafunsho",
+   "cr-kansensho"
+  ],
+  "description": "まぶたの 裏や 白目を おおう 結膜に 炎症が 起きる ことです。アレルギーで 起きる ものと、ウイルスや 細菌で 起きる ものが あり、目薬も 原因で 変わります。"
+ },
+ {
+  "id": "cr-anafirakishi",
+  "name": "アナフィラキシー",
+  "reading": "あなふぃらきしー",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "chiryo:kafun",
+  "relatedTerms": [
+   "cr-shokumotsuarerugi",
+   "cr-arerugi"
+  ],
+  "description": "アレルギーの 反応が 短い 時間に からだの あちこちで 強く 出る 状態です。息苦しさや ぐったり した ようすが あれば、すぐに 大人に 伝えて 病院へ 向かいます。"
+ },
+ {
+  "id": "cr-taiseikin",
+  "name": "耐性菌",
+  "reading": "たいせいきん",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "chiryo:kansen",
+  "relatedTerms": [
+   "cr-nomikiru",
+   "cr-yakuzaitaisei"
+  ],
+  "description": "抗菌薬が ききにくく なった 細菌です。必要の ない ときに 使ったり、途中で やめたり すると 生まれやすく なります。"
+ },
+ {
+  "id": "cr-tekiseishiyo",
+  "name": "抗菌薬の適正使用",
+  "reading": "こうきんやくのてきせいしよう",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "chiryo:kansen",
+  "relatedTerms": [
+   "cr-taiseikin",
+   "cr-geninryoho"
+  ],
+  "description": "抗菌薬を 本当に 必要な ときに、合った ものを 正しく 使う ことです。ウイルスの かぜには ききません。耐性菌を ふやさない ための 大切な 考えかたです。"
+ },
+ {
+  "id": "cr-shoni",
+  "name": "小児",
+  "reading": "しょうに",
+  "journey": "chiryo",
+  "category": "子どもとお年寄り",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🧒",
+  "mapNode": "chiryo:hito",
+  "relatedTerms": [
+   "cr-koreisha",
+   "cr-chujien"
+  ],
+  "description": "子どもの ことを 医療では こう 呼びます。からだが 育つ とちゅうなので、薬の 形や 量を 年れいや 体重に 合わせて 考えます。粉薬や シロップが よく 使われます。"
+ },
+ {
+  "id": "cr-koreisha",
+  "name": "高齢者",
+  "reading": "こうれいしゃ",
+  "journey": "chiryo",
+  "category": "子どもとお年寄り",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "👵",
+  "mapNode": "chiryo:hito",
+  "relatedTerms": [
+   "cr-shoni",
+   "cr-porifamashi",
+   "cr-jinkino"
+  ],
+  "description": "お年寄りは 薬を 外へ 出す はたらきが ゆっくりに なり、薬が 効きすぎる ことが あります。たくさんの 薬を 飲んで いる ことも 多く、薬剤師が ていねいに 確かめます。"
+ },
+ {
+  "id": "cr-chimuiryo",
+  "name": "チーム医療",
+  "reading": "ちーむいりょう",
+  "journey": "chiryo",
+  "category": "チームで支える",
+  "difficulty": 2,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-iyakubungyo",
+   "cr-yakuyakurenkei"
+  ],
+  "description": "医師・看護師・薬剤師・栄養士などが それぞれの 得意を 生かし、力を 合わせて 患者さんを 支える 医療です。薬剤師は 薬の 専門家として 加わります。"
+ },
+ {
+  "id": "cr-iyakubungyo",
+  "name": "医薬分業",
+  "reading": "いやくぶんぎょう",
+  "journey": "chiryo",
+  "category": "チームで支える",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "chiryo:bungyo",
+  "relatedTerms": [
+   "cr-chimuiryo",
+   "cr-yakuyakurenkei"
+  ],
+  "description": "医師が 処方を 決め、薬局の 薬剤師が それを 確かめて 薬を 出す しくみです。ふたりの 専門家の 目で 見る ことで、薬の 安全が 高まります。"
+ },
+ {
+  "id": "cr-informed",
+  "name": "インフォームドコンセント",
+  "reading": "いんふぉーむどこんせんと",
+  "journey": "chiryo",
+  "category": "チームで支える",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-secondopinion",
+   "cr-adhiaransu"
+  ],
+  "description": "治療の 中身や 良い 点・気を つける 点の 説明を 受け、患者さんが よく 理解した うえで 同意する ことです。薬剤師も 薬の 説明で この 考えを 大切に します。"
+ },
+ {
+  "id": "cr-secondopinion",
+  "name": "セカンドオピニオン",
+  "reading": "せかんどおぴにおん",
+  "journey": "chiryo",
+  "category": "チームで支える",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-informed",
+   "cr-chimuiryo"
+  ],
+  "description": "いまの 主治医とは 別の 医師に 意見を 聞く ことです。患者さんが 納得して 治療を 選ぶ ための しくみで、主治医に 伝えて 受ける ことが できます。"
+ },
+ {
+  "id": "cr-pirorikin",
+  "name": "ピロリ菌",
+  "reading": "ぴろりきん",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🦠",
+  "mapNode": "chiryo:ichou",
+  "relatedTerms": [
+   "cr-ikaiyo",
+   "cr-jokinryoho"
+  ],
+  "description": "胃の 中に すみつく ことの ある 細菌です。強い 胃酸の 中でも 生きられる しくみを 持っています。胃炎や 胃潰瘍の 原因に なる ことが あります。"
+ },
+ {
+  "id": "cr-teikketto",
+  "name": "低血糖",
+  "reading": "ていけっとう",
+  "journey": "chiryo",
+  "category": "生活習慣病",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🍬",
+  "mapNode": "chiryo:tonyo",
+  "relatedTerms": [
+   "cr-tonyobyo",
+   "cr-kettocontrol"
+  ],
+  "description": "血液の 中の 糖が 下がりすぎた 状態です。糖尿病の 薬が 効きすぎた ときに 起きる ことが あり、ふるえや 冷や汗に 気づく 大切さを 薬剤師が 説明します。"
+ },
+ {
+  "id": "cr-gappeisho",
+  "name": "合併症",
+  "reading": "がっぺいしょう",
+  "journey": "chiryo",
+  "category": "生活習慣病",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "chiryo:tonyo",
+  "relatedTerms": [
+   "cr-tonyobyo",
+   "cr-kettocontrol"
+  ],
+  "description": "ある 病気が もとに なって 起きる 別の 病気や 状態です。生活習慣病の 治療は、この 合併症を 防ぐ ことが 大きな 目的です。"
+ },
+ {
+  "id": "cr-jinkino",
+  "name": "腎機能",
+  "reading": "じんきのう",
+  "journey": "chiryo",
+  "category": "子どもとお年寄り",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🫘",
+  "mapNode": "chiryo:hito",
+  "relatedTerms": [
+   "cr-kankino",
+   "cr-koreisha"
+  ],
+  "description": "腎臓が 血液を こして 不要な ものを 尿に 出す 力です。腎臓から 出る 薬は、この 力が 弱いと からだに たまりやすいので、薬剤師は 検査の 結果も 見て 確かめます。"
+ },
+ {
+  "id": "cr-kankino",
+  "name": "肝機能",
+  "reading": "かんきのう",
+  "journey": "chiryo",
+  "category": "子どもとお年寄り",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "chiryo:hito",
+  "relatedTerms": [
+   "cr-jinkino",
+   "cr-koreisha"
+  ],
+  "description": "肝臓が 薬などを 分解したり、からだに 必要な ものを 作ったり する 力です。肝臓で 分解される 薬は、この 力に よって 効きかたが 変わる ことが あります。"
+ },
+ {
+  "id": "cr-ninshinchu",
+  "name": "妊娠中の薬",
+  "reading": "にんしんちゅうのくすり",
+  "journey": "chiryo",
+  "category": "子どもとお年寄り",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🤰",
+  "mapNode": "chiryo:hito",
+  "relatedTerms": [
+   "cr-junyuchu",
+   "cr-shoni"
+  ],
+  "description": "おなかの 赤ちゃんにも 届く ことの ある 薬を、安全を よく 考えて 選ぶ ことです。自分の 判断で 飲んだり やめたり せず、医師や 薬剤師に 相談する ことが 大切です。"
+ },
+ {
+  "id": "cr-junyuchu",
+  "name": "授乳中の薬",
+  "reading": "じゅにゅうちゅうのくすり",
+  "journey": "chiryo",
+  "category": "子どもとお年寄り",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🍼",
+  "mapNode": "chiryo:hito",
+  "relatedTerms": [
+   "cr-ninshinchu",
+   "cr-shoni"
+  ],
+  "description": "お母さんが 飲んだ 薬が 母乳に 出る ことを ふまえて 考える ことです。多くの 薬は 授乳を つづけられますが、薬剤師が 情報を 調べて いっしょに 考えます。"
+ },
+ {
+  "id": "cr-yakushin",
+  "name": "薬疹",
+  "reading": "やくしん",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "chiryo:hifu",
+  "relatedTerms": [
+   "cr-arerugi",
+   "cr-yugaijisho"
+  ],
+  "description": "薬が もとで 皮ふに 出る 発しんです。飲みはじめて しばらく して 出る ことも あります。薬剤師は 記録に 残して、同じ 薬を くり返さない ように します。"
+ },
+ {
+  "id": "cr-innaikansen",
+  "name": "院内感染",
+  "reading": "いんないかんせん",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "chiryo:kansen",
+  "relatedTerms": [
+   "cr-yakuzaitaisei",
+   "cr-taiseikin"
+  ],
+  "description": "病院の 中で 新しく 感染症に かかる ことです。手指の 消毒や 抗菌薬の 正しい 使いかたで 防ぎます。薬剤師も 感染対策の チームに 加わります。"
+ },
+ {
+  "id": "cr-yakuzaitaisei",
+  "name": "薬剤耐性",
+  "reading": "やくざいたいせい",
+  "journey": "chiryo",
+  "category": "かぜと感染症",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "chiryo:kansen",
+  "relatedTerms": [
+   "cr-taiseikin",
+   "cr-tekiseishiyo"
+  ],
+  "description": "細菌などが 薬に 負けない 性質を 身に つける ことで、AMRとも 呼ばれます。世界中で 取り組む 課題で、抗菌薬を 正しく 使う ことが 対策の 中心です。"
+ },
+ {
+  "id": "cr-porifamashi",
+  "name": "ポリファーマシー",
+  "reading": "ぽりふぁーましー",
+  "journey": "chiryo",
+  "category": "子どもとお年寄り",
+  "difficulty": 3,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "chiryo:hito",
+  "relatedTerms": [
+   "cr-koreisha",
+   "cr-yakuyakurenkei"
+  ],
+  "description": "薬の 数が 多く なり、飲みまちがいや 副作用などの 困りごとが 起きて いる 状態です。薬剤師は 薬を 見直し、医師に 提案する ことで 減らす 手伝いを します。"
+ },
+ {
+  "id": "cr-kateiketsuatsu",
+  "name": "家庭血圧",
+  "reading": "かていけつあつ",
+  "journey": "chiryo",
+  "category": "生活習慣病",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "chiryo:ketsuatsu",
+  "relatedTerms": [
+   "cr-koketsuatsu",
+   "cr-adhiaransu"
+  ],
+  "description": "家で 自分で はかる 血圧です。病院では 緊張して 高く 出る ことも あるので、ふだんの 血圧を 知る 手がかりに なり、薬の 効きめを 見るのにも 役立ちます。"
+ },
+ {
+  "id": "cr-kettocontrol",
+  "name": "血糖コントロール",
+  "reading": "けっとうこんとろーる",
+  "journey": "chiryo",
+  "category": "生活習慣病",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "chiryo:tonyo",
+  "relatedTerms": [
+   "cr-tonyobyo",
+   "cr-teikketto",
+   "cr-gappeisho"
+  ],
+  "description": "血液の 中の 糖を ちょうど よい はんいに 保つ ことです。食事・運動・薬の バランスで 整え、合併症を 防ぐ ことを めざします。"
+ },
+ {
+  "id": "cr-chokikanriyaku",
+  "name": "長期管理薬",
+  "reading": "ちょうきかんりやく",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "chiryo:zensoku",
+  "relatedTerms": [
+   "cr-zensoku",
+   "cr-hossachiryoyaku"
+  ],
+  "description": "ぜんそくなどで、症状が ない ときも 毎日 使い つづけて 炎症を おさえる 薬です。調子が よくても 自分で やめない ことが 大切です。"
+ },
+ {
+  "id": "cr-hossachiryoyaku",
+  "name": "発作治療薬",
+  "reading": "ほっさちりょうやく",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "chiryo:zensoku",
+  "relatedTerms": [
+   "cr-chokikanriyaku",
+   "cr-zensoku"
+  ],
+  "description": "ぜんそくの 発作が 起きた ときに、せまく なった 空気の 通り道を すばやく 広げる 薬です。使う 回数が ふえて きたら、医師に 相談する 合図です。"
+ },
+ {
+  "id": "cr-jokinryoho",
+  "name": "除菌療法",
+  "reading": "じょきんりょうほう",
+  "journey": "chiryo",
+  "category": "胃腸と痛み",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🧫",
+  "mapNode": "chiryo:ichou",
+  "relatedTerms": [
+   "cr-pirorikin",
+   "cr-adhiaransu"
+  ],
+  "description": "胃の ピロリ菌を 薬で とりのぞく 治療です。いくつかの 薬を 決められた 期間 きちんと 飲む ことが 成功の かぎで、薬剤師が 飲みかたを 説明します。"
+ },
+ {
+  "id": "cr-zekkameneki",
+  "name": "舌下免疫療法",
+  "reading": "ぜっかめんえきりょうほう",
+  "journey": "chiryo",
+  "category": "アレルギー",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "👅",
+  "mapNode": "chiryo:kafun",
+  "relatedTerms": [
+   "cr-arerugiseibien",
+   "cr-kafunsho"
+  ],
+  "description": "アレルギーの もとを ごく 少しずつ 舌の 下から とりこみ、からだを 慣らして いく 治療です。長い 期間 つづける ことで、症状を やわらげる ことを めざします。"
+ },
+ {
+  "id": "cr-hiyakubutsu",
+  "name": "非薬物療法",
+  "reading": "ひやくぶつりょうほう",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-yakubutsuchiryo",
+   "cr-seikatsushukanbyo"
+  ],
+  "description": "薬を 使わない 治療の ことです。食事・運動・睡眠の 見直しや リハビリなどが あります。薬と 組み合わせると、治療の 効果が 高まる ことが あります。"
+ },
+ {
+  "id": "cr-yugaijisho",
+  "name": "有害事象",
+  "reading": "ゆうがいじしょう",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-yakushin",
+   "cr-adhiaransu"
+  ],
+  "description": "薬を 使った あとに 起きた 好ましく ない できごと ぜんぶを さす ことばです。薬が 原因か どうかは まだ 決めて いない 段階でも 記録し、安全を 守る 手がかりに します。"
+ },
+ {
+  "id": "cr-adhiaransu",
+  "name": "アドヒアランス",
+  "reading": "あどひあらんす",
+  "journey": "chiryo",
+  "category": "チームで支える",
+  "difficulty": 3,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-informed",
+   "cr-porifamashi"
+  ],
+  "description": "患者さんが 治療の 意味に 納得して、自分から すすんで 薬を 続ける ことです。薬剤師は 飲みにくさや 不安を 聞いて、続けやすい 工夫を いっしょに 考えます。"
+ },
+ {
+  "id": "cr-ebm",
+  "name": "EBM",
+  "reading": "いーびーえむ",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-guideline",
+   "cr-informed"
+  ],
+  "description": "根拠に もとづく 医療の ことです。研究の 結果と、医療者の 経験、患者さんの 希望を 合わせて、いちばん よい 治療を 選ぶ 考えかたです。"
+ },
+ {
+  "id": "cr-guideline",
+  "name": "診療ガイドライン",
+  "reading": "しんりょうがいどらいん",
+  "journey": "chiryo",
+  "category": "病気と治療の考えかた",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "chiryo:team",
+  "relatedTerms": [
+   "cr-ebm",
+   "cr-yakubutsuchiryo"
+  ],
+  "description": "病気ごとに、研究の 結果を もとに すすめられる 治療を まとめた 手引きです。医師や 薬剤師が 治療を 考える ときの よりどころに なります。"
+ },
+ {
+  "id": "cr-yakuyakurenkei",
+  "name": "薬薬連携",
+  "reading": "やくやくれんけい",
+  "journey": "chiryo",
+  "category": "チームで支える",
+  "difficulty": 3,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "chiryo:bungyo",
+  "relatedTerms": [
+   "cr-iyakubungyo",
+   "cr-chimuiryo"
+  ],
+  "description": "病院の 薬剤師と 町の 薬局の 薬剤師が、患者さんの 薬の 情報を 伝え合う ことです。入院や 退院の ときにも 薬の 治療が とぎれずに 続く ように します。"
+ }
+]

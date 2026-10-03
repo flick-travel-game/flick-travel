@@ -1,0 +1,1201 @@
+[
+ {
+  "id": "es-tearai",
+  "name": "手洗い",
+  "reading": "てあらい",
+  "journey": "eisei",
+  "category": "手洗いと消毒",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧼",
+  "mapNode": "eisei:tearai",
+  "relatedTerms": [
+   "es-ugai",
+   "es-shodoku"
+  ],
+  "description": "せっけんと 流れる 水で 手の よごれと ばい菌を 落とす こと。指の 間・つめ・手首まで 洗うのが こつです。かぜや 食中毒を ふせぐ いちばん 身近な 方法です。"
+ },
+ {
+  "id": "es-ugai",
+  "name": "うがい",
+  "reading": "うがい",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "eisei:kansen",
+  "relatedTerms": [
+   "es-tearai",
+   "es-mask"
+  ],
+  "description": "水を 口に ふくみ、のどの おくで ガラガラと 動かして はき出す こと。のどに ついた ほこりや ばい菌を 洗い流す ために 行います。"
+ },
+ {
+  "id": "es-mask",
+  "name": "マスク",
+  "reading": "ますく",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "😷",
+  "mapNode": "eisei:kansen",
+  "relatedTerms": [
+   "es-sekiechiketto",
+   "es-himatsu"
+  ],
+  "description": "鼻と 口を おおう もの。せきや くしゃみの しぶきを 広げにくく します。鼻から あごまで すき間なく つけると 役に 立ちます。"
+ },
+ {
+  "id": "es-shodoku",
+  "name": "消毒",
+  "reading": "しょうどく",
+  "journey": "eisei",
+  "category": "手洗いと消毒",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "eisei:tearai",
+  "relatedTerms": [
+   "es-alcohol",
+   "es-mekkin"
+  ],
+  "description": "ものや 手に ついた 病気の もとに なる 小さな 生きものを 減らし、うつらない ように する こと。薬剤師は 場所や 目的に 合った 消毒薬の えらびかたを 伝えます。"
+ },
+ {
+  "id": "es-yobosesshu",
+  "name": "予防接種",
+  "reading": "よぼうせっしゅ",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "eisei:yobo",
+  "relatedTerms": [
+   "es-teikisesshu",
+   "es-shudanmeneki"
+  ],
+  "description": "ワクチンを 受けて、病気に かかりにくい からだを 前もって 作る こと。自分を 守るだけで なく、まわりの 人に うつるのも ふせぎます。"
+ },
+ {
+  "id": "es-shokuchudoku",
+  "name": "食中毒",
+  "reading": "しょくちゅうどく",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🍱",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-norovirus",
+   "es-kanetsu"
+  ],
+  "description": "細菌や ウイルスなどが ついた 食べものを 食べて、おなかが 痛く なったり 下痢を したり する こと。つけない・ふやさない・やっつける が 予防の 合言葉です。"
+ },
+ {
+  "id": "es-shomikigen",
+  "name": "賞味期限",
+  "reading": "しょうみきげん",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "eisei:eiyo",
+  "relatedTerms": [
+   "es-shohikigen",
+   "es-shokuhineisei"
+  ],
+  "description": "開けずに 決められた 方法で 保存したとき、おいしく 食べられる 期限です。すぎても すぐに 食べられなく なる わけでは ありません。"
+ },
+ {
+  "id": "es-shohikigen",
+  "name": "消費期限",
+  "reading": "しょうひきげん",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "eisei:eiyo",
+  "relatedTerms": [
+   "es-shomikigen",
+   "es-shokuchudoku"
+  ],
+  "description": "開けずに 決められた 方法で 保存したとき、安全に 食べられる 期限です。お弁当や パンなど いたみやすい 食べものに つけられます。"
+ },
+ {
+  "id": "es-vitamin",
+  "name": "ビタミン",
+  "reading": "びたみん",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🍊",
+  "mapNode": "eisei:eiyo",
+  "relatedTerms": [
+   "es-eiyoso",
+   "es-mineral"
+  ],
+  "description": "からだの 調子を ととのえる 栄養素です。少しの 量で はたらきますが、からだで 作れない ものが 多いので 食べものから とります。"
+ },
+ {
+  "id": "es-tanpakushitsu",
+  "name": "たんぱく質",
+  "reading": "たんぱくしつ",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🍳",
+  "mapNode": "eisei:eiyo",
+  "relatedTerms": [
+   "es-eiyoso",
+   "es-vitamin"
+  ],
+  "description": "筋肉・血液・皮ふなど からだを 作る もとに なる 栄養素です。肉・魚・たまご・大豆などに 多く ふくまれます。"
+ },
+ {
+  "id": "es-eiyoso",
+  "name": "栄養素",
+  "reading": "えいようそ",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🥗",
+  "mapNode": "eisei:eiyo",
+  "relatedTerms": [
+   "es-tanpakushitsu",
+   "es-vitamin",
+   "es-shokujisesshukijun"
+  ],
+  "description": "食べものに ふくまれ、からだを 動かし・作り・ととのえる もの。炭水化物・脂質・たんぱく質・ビタミン・ミネラルを 五大栄養素と よびます。"
+ },
+ {
+  "id": "es-suidosui",
+  "name": "水道水",
+  "reading": "すいどうすい",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🚰",
+  "mapNode": "eisei:mizu",
+  "relatedTerms": [
+   "es-josuijo",
+   "es-zanryuenso"
+  ],
+  "description": "じゃ口から 出る 水。浄水場で きれいに され、法律で 決められた 検査に 合格した 水が とどきます。薬を 飲むときにも 使われます。"
+ },
+ {
+  "id": "es-kanki",
+  "name": "換気",
+  "reading": "かんき",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "eisei:kankyo",
+  "relatedTerms": [
+   "es-nisankatanso",
+   "es-sickhouse"
+  ],
+  "description": "まどを 開けるなどして 部屋の 空気を 入れかえる こと。よごれた 空気や ウイルスを 外に 出し、教室の 空気を きれいに たもちます。"
+ },
+ {
+  "id": "es-tabako",
+  "name": "たばこ",
+  "reading": "たばこ",
+  "journey": "eisei",
+  "category": "たばこ・お酒・薬物",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🚭",
+  "mapNode": "eisei:tabako",
+  "relatedTerms": [
+   "es-judokitsuen",
+   "es-nicotine"
+  ],
+  "description": "たばこの けむりには からだに よくない 物質が たくさん ふくまれます。二十歳未満は 法律で 禁止されています。すわない 人も けむりを すわない ように する ことが 大切です。"
+ },
+ {
+  "id": "es-sekiechiketto",
+  "name": "咳エチケット",
+  "reading": "せきえちけっと",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🤧",
+  "mapNode": "eisei:kansen",
+  "relatedTerms": [
+   "es-mask",
+   "es-himatsu"
+  ],
+  "description": "せきや くしゃみを するとき、マスクを したり、ティッシュや そでで 口と 鼻を おおったり する 心がけ。まわりの 人に うつさない ための 思いやりです。"
+ },
+ {
+  "id": "es-alcohol",
+  "name": "アルコール消毒",
+  "reading": "あるこーるしょうどく",
+  "journey": "eisei",
+  "category": "手洗いと消毒",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🫗",
+  "mapNode": "eisei:tearai",
+  "relatedTerms": [
+   "es-shodoku",
+   "es-ethanol"
+  ],
+  "description": "アルコールを ふくむ 消毒液で 手や ものを 消毒する こと。手が かわくまで よく すりこみます。ただし ノロウイルスには ききにくい ことが 知られています。"
+ },
+ {
+  "id": "es-eisei",
+  "name": "衛生",
+  "reading": "えいせい",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "eisei:kokyo",
+  "relatedTerms": [
+   "es-koshueisei",
+   "es-tearai"
+  ],
+  "description": "病気を ふせぎ、健康を 守り 高める ための 工夫や 取り組みの こと。手洗いから 水道・食べもの・空気まで、くらしの 安全を 広く ふくみます。"
+ },
+ {
+  "id": "es-gakkoyakuzaishi",
+  "name": "学校薬剤師",
+  "reading": "がっこうやくざいし",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "eisei:gakko",
+  "relatedTerms": [
+   "es-gakkohoken",
+   "es-shodo"
+  ],
+  "description": "学校に 置かれる 薬剤師。教室の 空気・明るさ・プールの 水などを 検査し、学校の 薬の 管理や 薬の 正しい 使い方の 授業も 手伝います。"
+ },
+ {
+  "id": "es-damezettai",
+  "name": "ダメ。ゼッタイ。",
+  "reading": "だめぜったい",
+  "journey": "eisei",
+  "category": "たばこ・お酒・薬物",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "eisei:ranyo",
+  "relatedTerms": [
+   "es-yakubutsuranyo",
+   "es-sasoi"
+  ],
+  "description": "薬物乱用を ふせぐ ための よびかけの ことば。いちども 手を 出さない ことが 大切だと 伝えています。"
+ },
+ {
+  "id": "es-sasoi",
+  "name": "誘いを断る",
+  "reading": "さそいをことわる",
+  "journey": "eisei",
+  "category": "たばこ・お酒・薬物",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "eisei:ranyo",
+  "relatedTerms": [
+   "es-damezettai",
+   "es-ranyoboshi"
+  ],
+  "description": "あやしい 薬を すすめられたら「いらない」と はっきり 断り、その場を はなれて 大人に 話す こと。友だちを 守る ことにも つながります。"
+ },
+ {
+  "id": "es-hokenjo",
+  "name": "保健所",
+  "reading": "ほけんじょ",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "eisei:kokyo",
+  "relatedTerms": [
+   "es-koshueisei",
+   "es-shokuhineisei"
+  ],
+  "description": "地域の みんなの 健康を 守る 役所の 拠点です。食中毒や 感染症の 調査、飲食店の 衛生の 指導などを 行い、薬剤師も 働いています。"
+ },
+ {
+  "id": "es-norovirus",
+  "name": "ノロウイルス",
+  "reading": "のろういるす",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🦪",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-jiaenso",
+   "es-viruseishokuchudoku"
+  ],
+  "description": "冬に 多い 食中毒や おなかの かぜの 原因に なる ウイルス。人の 手を 通して 広がりやすく、消毒には 次亜塩素酸ナトリウムが 使われます。"
+ },
+ {
+  "id": "es-judokitsuen",
+  "name": "受動喫煙",
+  "reading": "じゅどうきつえん",
+  "journey": "eisei",
+  "category": "たばこ・お酒・薬物",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "eisei:tabako",
+  "relatedTerms": [
+   "es-tabako",
+   "es-nicotine"
+  ],
+  "description": "自分は すわないのに、まわりの 人の たばこの けむりを すいこんで しまう こと。健康を 守る ため、法律で 対策が 進められています。"
+ },
+ {
+  "id": "es-inshu",
+  "name": "二十歳未満の飲酒",
+  "reading": "はたちみまんのいんしゅ",
+  "journey": "eisei",
+  "category": "たばこ・お酒・薬物",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "eisei:tabako",
+  "relatedTerms": [
+   "es-tabako",
+   "es-yakubutsuranyo"
+  ],
+  "description": "二十歳に ならない 人が お酒を 飲む こと。成長中の 脳や からだに よくない ため、法律で 禁止されています。すすめられても 断りましょう。"
+ },
+ {
+  "id": "es-yakubutsuranyo",
+  "name": "薬物乱用",
+  "reading": "やくぶつらんよう",
+  "journey": "eisei",
+  "category": "たばこ・お酒・薬物",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "eisei:ranyo",
+  "relatedTerms": [
+   "es-damezettai",
+   "es-ranyoboshi"
+  ],
+  "description": "薬を 決められた 目的や 使い方から はずれて 使う こと。法律で 禁止された 薬物は、いちど 使うだけでも 乱用です。心と からだを 大きく こわします。"
+ },
+ {
+  "id": "es-nisankatanso",
+  "name": "二酸化炭素",
+  "reading": "にさんかたんそ",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "eisei:kankyo",
+  "relatedTerms": [
+   "es-kanki",
+   "es-gakkokankyo"
+  ],
+  "description": "人が はく 息に ふくまれる 気体です。教室では 空気の よごれの めやすとして はかられ、ふえて いれば 換気を します。"
+ },
+ {
+  "id": "es-shokumotsuseni",
+  "name": "食物繊維",
+  "reading": "しょくもつせんい",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🥦",
+  "mapNode": "eisei:eiyo",
+  "relatedTerms": [
+   "es-eiyoso",
+   "es-mineral"
+  ],
+  "description": "野菜・海そう・きのこなどに 多い、消化されにくい 成分です。おなかの 調子を ととのえる はたらきが あります。"
+ },
+ {
+  "id": "es-mineral",
+  "name": "ミネラル",
+  "reading": "みねらる",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🦴",
+  "mapNode": "eisei:eiyo",
+  "relatedTerms": [
+   "es-vitamin",
+   "es-eiyoso"
+  ],
+  "description": "カルシウムや 鉄など、からだに 必要な 元素を まとめた よび名です。ほねや 血液を 作ったり、からだの はたらきを ささえたり します。"
+ },
+ {
+  "id": "es-jokin",
+  "name": "除菌",
+  "reading": "じょきん",
+  "journey": "eisei",
+  "category": "手洗いと消毒",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧽",
+  "mapNode": "eisei:tearai",
+  "relatedTerms": [
+   "es-shodoku",
+   "es-mekkin"
+  ],
+  "description": "ものから 菌を 取りのぞいたり 減らしたり する こと。洗剤などで よく 使われる ことばで、消毒や 滅菌とは 意味の はんいが ちがいます。"
+ },
+ {
+  "id": "es-kanetsu",
+  "name": "加熱調理",
+  "reading": "かねつちょうり",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-shokuchudoku",
+   "es-saikinseishokuchudoku"
+  ],
+  "description": "食べものの 中心まで しっかり 火を 通す こと。食中毒の 原因に なる 菌や ウイルスの 多くは 熱に 弱いので、予防の 大切な 方法です。"
+ },
+ {
+  "id": "es-koshueisei",
+  "name": "公衆衛生",
+  "reading": "こうしゅうえいせい",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "eisei:kokyo",
+  "relatedTerms": [
+   "es-eisei",
+   "es-hokenjo",
+   "es-ekigaku"
+  ],
+  "description": "地域や 国の みんなの 健康を、社会の しくみで 守る 取り組み。予防接種・上下水道・食品の 安全などが ふくまれます。薬剤師の 大切な 役目の ひとつです。"
+ },
+ {
+  "id": "es-himatsu",
+  "name": "飛沫感染",
+  "reading": "ひまつかんせん",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "💦",
+  "mapNode": "eisei:kansen",
+  "relatedTerms": [
+   "es-sesshoku",
+   "es-kuki",
+   "es-mask"
+  ],
+  "description": "せきや くしゃみ、話す ときに とびちる しぶきに ふくまれた 病原体を すいこんで うつる こと。マスクや 距離を とる ことで ふせぎます。"
+ },
+ {
+  "id": "es-sesshoku",
+  "name": "接触感染",
+  "reading": "せっしょくかんせん",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "eisei:kansen",
+  "relatedTerms": [
+   "es-himatsu",
+   "es-tearai"
+  ],
+  "description": "病原体が ついた 手や ものに さわり、その手で 目・鼻・口を さわって うつる こと。手洗いと 消毒で ふせぎます。"
+ },
+ {
+  "id": "es-kuki",
+  "name": "空気感染",
+  "reading": "くうきかんせん",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "eisei:kansen",
+  "relatedTerms": [
+   "es-himatsu",
+   "es-kanki"
+  ],
+  "description": "とても 小さな 粒に なった 病原体が 空気中を ただよい、それを すいこんで うつる こと。はしかや 結核などが この うつりかたを します。"
+ },
+ {
+  "id": "es-tenkabutsu",
+  "name": "食品添加物",
+  "reading": "しょくひんてんかぶつ",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧂",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-shokuhineisei",
+   "es-allergyhyoji"
+  ],
+  "description": "保存料・甘味料・着色料など、食品を 作る ときに 加える もの。国が 安全性を 確かめ、使って よい ものと 使い方を 決めています。"
+ },
+ {
+  "id": "es-allergyhyoji",
+  "name": "アレルギー表示",
+  "reading": "あれるぎーひょうじ",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "eisei:eiyo",
+  "relatedTerms": [
+   "es-tenkabutsu",
+   "es-shokuhineisei"
+  ],
+  "description": "食品の 原材料に アレルギーの 原因に なりやすい ものが ふくまれるか しめす 表示。食物アレルギーの ある 人が 安心して えらべる ように する しくみです。"
+ },
+ {
+  "id": "es-taikiosen",
+  "name": "大気汚染",
+  "reading": "たいきおせん",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "eisei:kankyo",
+  "relatedTerms": [
+   "es-pm",
+   "es-kagakubusshitsu"
+  ],
+  "description": "工場や 車の 排気ガスなどで 空気が よごれる こと。ぜんそくなど 呼吸の 病気に かかわる ため、国や 地域が 空気を 調べて 見守っています。"
+ },
+ {
+  "id": "es-josuijo",
+  "name": "浄水場",
+  "reading": "じょうすいじょう",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🏞️",
+  "mapNode": "eisei:mizu",
+  "relatedTerms": [
+   "es-suidosui",
+   "es-ensoshodoku"
+  ],
+  "description": "川や 湖の 水を 飲める 水に する ところ。にごりを しずめ、砂の 層で こし、塩素で 消毒してから 水道水として 送ります。"
+ },
+ {
+  "id": "es-teikisesshu",
+  "name": "定期接種",
+  "reading": "ていきせっしゅ",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "eisei:yobo",
+  "relatedTerms": [
+   "es-yobosesshu",
+   "es-shudanmeneki"
+  ],
+  "description": "法律で 決められ、市町村が 行う 予防接種。決められた 時期に 公費で 受けられます。子どもの 健康を 守る 大切な しくみです。"
+ },
+ {
+  "id": "es-salmonella",
+  "name": "サルモネラ",
+  "reading": "さるもねら",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🥚",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-campylobacter",
+   "es-saikinseishokuchudoku"
+  ],
+  "description": "たまごや 肉などから 食中毒を 起こす ことが ある 細菌です。中心まで 加熱し、生の 肉や たまごを さわった 手は よく 洗います。"
+ },
+ {
+  "id": "es-campylobacter",
+  "name": "カンピロバクター",
+  "reading": "かんぴろばくたー",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🍗",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-salmonella",
+   "es-kanetsu"
+  ],
+  "description": "とり肉などに いる ことが ある 細菌で、日本で 多い 食中毒の 原因の ひとつ。生や 生焼けの とり肉を さけ、しっかり 加熱する ことが 予防です。"
+ },
+ {
+  "id": "es-shokuhineisei",
+  "name": "食品衛生",
+  "reading": "しょくひんえいせい",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🍽️",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-shokuhineiseiho",
+   "es-haccp"
+  ],
+  "description": "食べものが 作られてから 口に 入るまで、安全を 守る ための 取り組み。食中毒や 異物の 混入を ふせぐ ことが 中心です。"
+ },
+ {
+  "id": "es-sickhouse",
+  "name": "シックハウス症候群",
+  "reading": "しっくはうすしょうこうぐん",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "eisei:kankyo",
+  "relatedTerms": [
+   "es-kanki",
+   "es-kagakubusshitsu"
+  ],
+  "description": "新しい 家や 家具から 出る 化学物質などで、頭痛や 目・のどの 刺激が 起きる 状態。こまめな 換気が 予防に なります。"
+ },
+ {
+  "id": "es-tokuteikenshin",
+  "name": "特定健診",
+  "reading": "とくていけんしん",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "eisei:kokyo",
+  "relatedTerms": [
+   "es-kenkojumyo",
+   "es-kenkonippon"
+  ],
+  "description": "大人を 対象に、生活習慣病の もとと なる メタボリックシンドロームに 早く 気づく ための 健診。メタボ健診とも よばれます。"
+ },
+ {
+  "id": "es-boshihoken",
+  "name": "母子保健",
+  "reading": "ぼしほけん",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🤱",
+  "mapNode": "eisei:kokyo",
+  "relatedTerms": [
+   "es-teikisesshu",
+   "es-koshueisei"
+  ],
+  "description": "妊娠中の お母さんと 赤ちゃん・子どもの 健康を 守る 取り組み。母子健康手帳・健診・予防接種の 案内などが ふくまれます。"
+ },
+ {
+  "id": "es-kagakubusshitsu",
+  "name": "化学物質",
+  "reading": "かがくぶっしつ",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "eisei:kagaku",
+  "relatedTerms": [
+   "es-kankyohormone",
+   "es-jiaenso"
+  ],
+  "description": "身の まわりの ものは みな 化学物質で できています。正しく 使えば くらしに 役立ちますが、塩素系と 酸性の 洗剤を まぜる ように、使い方を まちがえると 危険な ことも あります。"
+ },
+ {
+  "id": "es-nicotine",
+  "name": "ニコチン",
+  "reading": "にこちん",
+  "journey": "eisei",
+  "category": "たばこ・お酒・薬物",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🚬",
+  "mapNode": "eisei:tabako",
+  "relatedTerms": [
+   "es-tabako",
+   "es-judokitsuen"
+  ],
+  "description": "たばこに ふくまれる 物質で、すうのを やめにくく させる 性質(依存)を 生みます。はじめから すわない ことが いちばんの 予防です。"
+ },
+ {
+  "id": "es-kenkojumyo",
+  "name": "健康寿命",
+  "reading": "けんこうじゅみょう",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "eisei:kokyo",
+  "relatedTerms": [
+   "es-kenkonippon",
+   "es-tokuteikenshin"
+  ],
+  "description": "健康上の 問題で 日常の くらしが 制限されずに すごせる 期間の こと。長生きだけで なく、元気に くらせる 時間を のばす ことが 目標に なっています。"
+ },
+ {
+  "id": "es-senpuku",
+  "name": "潜伏期間",
+  "reading": "せんぷくきかん",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "eisei:kansen",
+  "relatedTerms": [
+   "es-kuki",
+   "es-ekigaku"
+  ],
+  "description": "病原体が からだに 入ってから 症状が 出るまでの 期間です。症状が なくても うつす ことが ある ため、感染症の 対策で 大切に 考えられます。"
+ },
+ {
+  "id": "es-shudanmeneki",
+  "name": "集団免疫",
+  "reading": "しゅうだんめんえき",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "eisei:yobo",
+  "relatedTerms": [
+   "es-yobosesshu",
+   "es-teikisesshu"
+  ],
+  "description": "多くの 人が 免疫を 持つ ことで 病気が 広がりにくく なり、予防接種を 受けられない 人まで 守られる 状態。みんなで 受ける 意味が ここに あります。"
+ },
+ {
+  "id": "es-ethanol",
+  "name": "消毒用エタノール",
+  "reading": "しょうどくようえたのーる",
+  "journey": "eisei",
+  "category": "手洗いと消毒",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "eisei:tearai",
+  "relatedTerms": [
+   "es-alcohol",
+   "es-jiaenso"
+  ],
+  "description": "手や ものの 消毒に 使われる アルコール。ほどよく 水を ふくむ ほうが よく ききます。燃えやすいので 火の 近くでは 使いません。"
+ },
+ {
+  "id": "es-jiaenso",
+  "name": "次亜塩素酸ナトリウム",
+  "reading": "じあえんそさんなとりうむ",
+  "journey": "eisei",
+  "category": "手洗いと消毒",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "eisei:tearai",
+  "relatedTerms": [
+   "es-norovirus",
+   "es-ethanol"
+  ],
+  "description": "家庭用の 塩素系漂白剤にも ふくまれる 消毒薬。アルコールが ききにくい ノロウイルスの 消毒に 使います。酸性の ものと まぜては いけません。"
+ },
+ {
+  "id": "es-mekkin",
+  "name": "滅菌",
+  "reading": "めっきん",
+  "journey": "eisei",
+  "category": "手洗いと消毒",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "eisei:tearai",
+  "relatedTerms": [
+   "es-shodoku",
+   "es-jokin"
+  ],
+  "description": "すべての 微生物を 取りのぞいたり、はたらけなく したり する こと。注射薬や 手術の 道具など、とくに 清潔さが 必要な ものに 行われます。"
+ },
+ {
+  "id": "es-ranyoboshi",
+  "name": "薬物乱用防止教室",
+  "reading": "やくぶつらんようぼうしきょうしつ",
+  "journey": "eisei",
+  "category": "たばこ・お酒・薬物",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "eisei:ranyo",
+  "relatedTerms": [
+   "es-gakkoyakuzaishi",
+   "es-yakubutsuranyo",
+   "es-sasoi"
+  ],
+  "description": "学校で 薬物乱用の こわさと 断りかたを 学ぶ 授業です。学校薬剤師や 警察の 人などが 講師に なり、自分を 守る 力を 育てます。"
+ },
+ {
+  "id": "es-saikinseishokuchudoku",
+  "name": "細菌性食中毒",
+  "reading": "さいきんせいしょくちゅうどく",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🦠",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-salmonella",
+   "es-campylobacter"
+  ],
+  "description": "細菌が 原因の 食中毒。あたたかく しめった 季節に ふえやすいので、食べものを 冷やして 菌を ふやさない ことが 大切です。"
+ },
+ {
+  "id": "es-viruseishokuchudoku",
+  "name": "ウイルス性食中毒",
+  "reading": "ういるすせいしょくちゅうどく",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-norovirus",
+   "es-saikinseishokuchudoku"
+  ],
+  "description": "ウイルスが 原因の 食中毒。食べものの 中では ふえませんが、少しの 量で うつり、人の 手から 手へ 広がりやすい ことが 特ちょうです。"
+ },
+ {
+  "id": "es-zanryuenso",
+  "name": "残留塩素",
+  "reading": "ざんりゅうえんそ",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "eisei:mizu",
+  "relatedTerms": [
+   "es-ensoshodoku",
+   "es-suidosui"
+  ],
+  "description": "消毒の ために 入れた 塩素が、水の 中に 残っている もの。じゃ口の 水や プールの 水が きちんと 消毒されているかの めやすとして 調べます。"
+ },
+ {
+  "id": "es-ensoshodoku",
+  "name": "塩素消毒",
+  "reading": "えんそしょうどく",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🏊",
+  "mapNode": "eisei:mizu",
+  "relatedTerms": [
+   "es-zanryuenso",
+   "es-josuijo"
+  ],
+  "description": "塩素の 力で 水の 中の 病原体を 減らす こと。水道水や プールの 水の 安全は この しくみで 守られています。"
+ },
+ {
+  "id": "es-suishitsukensa",
+  "name": "水質検査",
+  "reading": "すいしつけんさ",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "eisei:mizu",
+  "relatedTerms": [
+   "es-zanryuenso",
+   "es-gakkoyakuzaishi"
+  ],
+  "description": "水が 安全かどうかを 決められた 項目で 調べる こと。水道水のほか、学校の プールや 飲み水の 検査も 学校薬剤師が かかわります。"
+ },
+ {
+  "id": "es-kankyohormone",
+  "name": "環境ホルモン",
+  "reading": "かんきょうほるもん",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🐟",
+  "mapNode": "eisei:kagaku",
+  "relatedTerms": [
+   "es-kagakubusshitsu",
+   "es-taikiosen"
+  ],
+  "description": "からだの ホルモンの はたらきを みだすと 心配される 化学物質の よび名です。正式には 内分泌かく乱化学物質と いい、国が 調べて 見守っています。"
+ },
+ {
+  "id": "es-pm",
+  "name": "微小粒子状物質",
+  "reading": "びしょうりゅうしじょうぶっしつ",
+  "journey": "eisei",
+  "category": "水と環境",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "eisei:kankyo",
+  "relatedTerms": [
+   "es-taikiosen",
+   "es-kanki"
+  ],
+  "description": "空気中を ただよう とても 小さな 粒。肺の おくまで 入りやすい ため、多い 日には 外での 運動を ひかえるなどの 注意が 出されます。"
+ },
+ {
+  "id": "es-shodo",
+  "name": "照度",
+  "reading": "しょうど",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "eisei:gakko",
+  "relatedTerms": [
+   "es-gakkokankyo",
+   "es-gakkoyakuzaishi"
+  ],
+  "description": "明るさの 度合いの こと。学校薬剤師は 教室の 机や 黒板が 勉強に ちょうど よい 明るさか、照度計で はかります。"
+ },
+ {
+  "id": "es-gakkohoken",
+  "name": "学校保健安全法",
+  "reading": "がっこうほけんあんぜんほう",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "eisei:gakko",
+  "relatedTerms": [
+   "es-gakkoyakuzaishi",
+   "es-gakkokankyo"
+  ],
+  "description": "子どもと 先生の 健康と 安全を 守る ための 法律。大学 以外の 学校に 学校薬剤師を 置く ことも、この 法律で 決められています。"
+ },
+ {
+  "id": "es-gakkokankyo",
+  "name": "学校環境衛生基準",
+  "reading": "がっこうかんきょうえいせいきじゅん",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "eisei:gakko",
+  "relatedTerms": [
+   "es-gakkohoken",
+   "es-shodo",
+   "es-nisankatanso"
+  ],
+  "description": "教室の 空気・明るさ・音・飲み水・プールの 水などが、勉強に よい 状態かを 判断する 国の 基準。学校薬剤師が これに そって 検査します。"
+ },
+ {
+  "id": "es-shokuhineiseiho",
+  "name": "食品衛生法",
+  "reading": "しょくひんえいせいほう",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-shokuhineisei",
+   "es-tenkabutsu"
+  ],
+  "description": "食べものに よる 病気を ふせぎ、食の 安全を 守る ための 法律。食品や 添加物の 決まり、飲食店の 営業許可などを 定めています。"
+ },
+ {
+  "id": "es-hyojunyobosaku",
+  "name": "標準予防策",
+  "reading": "ひょうじゅんよぼうさく",
+  "journey": "eisei",
+  "category": "感染を ふせぐ",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "eisei:kansen",
+  "relatedTerms": [
+   "es-sesshoku",
+   "es-tearai"
+  ],
+  "description": "病院などで、どの 患者さんの 血液や 体液(汗は のぞく)も うつる おそれが ある ものとして あつかう 考え方。手洗い・手ぶくろ・マスクなどを いつも 同じ ように 使います。"
+ },
+ {
+  "id": "es-haccp",
+  "name": "HACCP",
+  "reading": "はさっぷ",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "eisei:shokuchu",
+  "relatedTerms": [
+   "es-shokuhineisei",
+   "es-shokuhineiseiho"
+  ],
+  "description": "食品を 作る 流れの 中で、危ない 点を 前もって 見つけ、とくに 大事な ところを 重点的に 管理する 方法。日本でも 食品を あつかう 事業者に 求められています。"
+ },
+ {
+  "id": "es-shokujisesshukijun",
+  "name": "食事摂取基準",
+  "reading": "しょくじせっしゅきじゅん",
+  "journey": "eisei",
+  "category": "食べものと栄養",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "eisei:eiyo",
+  "relatedTerms": [
+   "es-eiyoso",
+   "es-kenkojumyo"
+  ],
+  "description": "健康を たもつ ために、エネルギーや 栄養素を どれくらい とると よいかを しめした 国の めやす。年れいや 性別ごとに まとめられています。"
+ },
+ {
+  "id": "es-ekigaku",
+  "name": "疫学",
+  "reading": "えきがく",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "eisei:kokyo",
+  "relatedTerms": [
+   "es-koshueisei",
+   "es-senpuku"
+  ],
+  "description": "たくさんの 人を 調べて、病気が どこで だれに どのように 起きるかを 明らかに し、原因や 予防の 方法を 見つける 学問です。"
+ },
+ {
+  "id": "es-kenkonippon",
+  "name": "健康日本21",
+  "reading": "けんこうにっぽんにじゅういち",
+  "journey": "eisei",
+  "category": "学校と地域の健康",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "eisei:kokyo",
+  "relatedTerms": [
+   "es-kenkojumyo",
+   "es-tokuteikenshin"
+  ],
+  "description": "国が すすめる 健康づくりの 運動の 名前。健康寿命を のばす ことなどを 目標に、食事・運動・たばこなどの 取り組みを まとめています。",
+  "acceptedReadings": [
+   "けんこうにっぽんにじゅういち",
+   "けんこうにほんにじゅういち"
+  ]
+ }
+]

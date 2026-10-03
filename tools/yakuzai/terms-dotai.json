@@ -1,0 +1,1204 @@
+[
+ {
+  "id": "dt-kuchikara",
+  "name": "口から飲む",
+  "reading": "くちからのむ",
+  "journey": "dotai",
+  "category": "からだの 通り道",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "👄",
+  "mapNode": "dotai:nomu",
+  "relatedTerms": [
+   "dt-i",
+   "dt-shocho"
+  ],
+  "description": "飲み薬の 旅の はじまりです。口から 入った 薬は、食道・胃・小腸と 進み、とちゅうで からだに 取りこまれて いきます。"
+ },
+ {
+  "id": "dt-i",
+  "name": "胃",
+  "reading": "い",
+  "journey": "dotai",
+  "category": "からだの 通り道",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🫃",
+  "mapNode": "dotai:i",
+  "relatedTerms": [
+   "dt-kuchikara",
+   "dt-yokai"
+  ],
+  "description": "食べものや 薬が はじめに たまる ふくろです。中は 強い 酸性の 胃酸で みたされていて、多くの 薬は ここで とけはじめます。"
+ },
+ {
+  "id": "dt-shocho",
+  "name": "小腸",
+  "reading": "しょうちょう",
+  "journey": "dotai",
+  "category": "からだの 通り道",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "dotai:kyushu",
+  "relatedTerms": [
+   "dt-kyushu",
+   "dt-jumo"
+  ],
+  "description": "胃の つぎに ある、長い 管です。内がわの 広い 面で、飲み薬の 多くが ここから 血液に 吸収されます。"
+ },
+ {
+  "id": "dt-daicho",
+  "name": "大腸",
+  "reading": "だいちょう",
+  "journey": "dotai",
+  "category": "からだの 通り道",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🔚",
+  "mapNode": "dotai:deguchi",
+  "relatedTerms": [
+   "dt-shocho",
+   "dt-ben"
+  ],
+  "description": "小腸の つぎに ある 管で、水分を 吸いとって 便を 作ります。吸収されなかった 薬は、ここを 通って 外へ 出て いきます。"
+ },
+ {
+  "id": "dt-kanzo",
+  "name": "肝臓",
+  "reading": "かんぞう",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "dotai:kanzo",
+  "relatedTerms": [
+   "dt-taisha",
+   "dt-monmyaku"
+  ],
+  "description": "からだの 中の 大きな 工場のような 臓器です。薬を 作りかえて、からだの 外へ 出しやすい 形に する 代謝の 中心です。"
+ },
+ {
+  "id": "dt-jinzo",
+  "name": "腎臓",
+  "reading": "じんぞう",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🫘",
+  "mapNode": "dotai:jinzo",
+  "relatedTerms": [
+   "dt-nyo",
+   "dt-haisetsu"
+  ],
+  "description": "血液を ろ過して 尿を 作る 臓器です。多くの 薬は、ここから 尿に まじって からだの 外へ 出ます。"
+ },
+ {
+  "id": "dt-ketsueki",
+  "name": "血液",
+  "reading": "けつえき",
+  "journey": "dotai",
+  "category": "分布",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "dotai:bunpu",
+  "relatedTerms": [
+   "dt-kekkan",
+   "dt-bunpu"
+  ],
+  "description": "からだじゅうを めぐる 液体です。吸収された 薬は 血液に のって、全身の きく 場所まで 運ばれます。"
+ },
+ {
+  "id": "dt-kekkan",
+  "name": "血管",
+  "reading": "けっかん",
+  "journey": "dotai",
+  "category": "分布",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "dotai:bunpu",
+  "relatedTerms": [
+   "dt-ketsueki",
+   "dt-shinzo"
+  ],
+  "description": "血液が 通る 管です。薬を のせた 血液は、血管の 道を 通って からだの すみずみまで とどきます。"
+ },
+ {
+  "id": "dt-shinzo",
+  "name": "心臓",
+  "reading": "しんぞう",
+  "journey": "dotai",
+  "category": "分布",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "❤️",
+  "mapNode": "dotai:bunpu",
+  "relatedTerms": [
+   "dt-kekkan",
+   "dt-ketsueki"
+  ],
+  "description": "血液を 全身に 送りだす ポンプです。心臓の はたらきで、薬を のせた 血液が からだを めぐります。"
+ },
+ {
+  "id": "dt-nyo",
+  "name": "尿",
+  "reading": "にょう",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🚽",
+  "mapNode": "dotai:deguchi",
+  "relatedTerms": [
+   "dt-jinzo",
+   "dt-haisetsu"
+  ],
+  "description": "腎臓で 作られる おしっこの こと。薬や 薬が 変わった ものの 多くは、尿に まじって 外へ 出て いきます。"
+ },
+ {
+  "id": "dt-ben",
+  "name": "便",
+  "reading": "べん",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "dotai:deguchi",
+  "relatedTerms": [
+   "dt-daicho",
+   "dt-tanju"
+  ],
+  "description": "うんちの こと。吸収されなかった 薬や、胆汁に 出た 薬の 一部は、便と いっしょに からだの 外へ 出ます。"
+ },
+ {
+  "id": "dt-kyushu",
+  "name": "吸収",
+  "reading": "きゅうしゅう",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧽",
+  "mapNode": "dotai:kyushu",
+  "relatedTerms": [
+   "dt-shocho",
+   "dt-bunpu"
+  ],
+  "description": "薬が からだの 中の 血液に 取りこまれる こと。飲み薬は おもに 小腸から 吸収されます。"
+ },
+ {
+  "id": "dt-bunpu",
+  "name": "分布",
+  "reading": "ぶんぷ",
+  "journey": "dotai",
+  "category": "分布",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "dotai:bunpu",
+  "relatedTerms": [
+   "dt-ketsueki",
+   "dt-kyushu"
+  ],
+  "description": "血液に 入った 薬が、からだの あちこちに 広がって いく こと。薬は 分布して、はじめて きく 場所に とどきます。"
+ },
+ {
+  "id": "dt-taisha",
+  "name": "代謝",
+  "reading": "たいしゃ",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "dotai:kanzo",
+  "relatedTerms": [
+   "dt-kanzo",
+   "dt-haisetsu"
+  ],
+  "description": "からだが 薬を 作りかえる こと。多くは 肝臓で 行われ、水に とけやすい 形に 変えて 外へ 出しやすく します。"
+ },
+ {
+  "id": "dt-haisetsu",
+  "name": "排泄",
+  "reading": "はいせつ",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "👋",
+  "mapNode": "dotai:deguchi",
+  "relatedTerms": [
+   "dt-jinzo",
+   "dt-nyo"
+  ],
+  "description": "薬や 薬が 変わった ものを、からだの 外へ 出す こと。おもに 尿や 便に まじって 出て いきます。"
+ },
+ {
+  "id": "dt-yokai",
+  "name": "溶解",
+  "reading": "ようかい",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "dotai:i",
+  "relatedTerms": [
+   "dt-i",
+   "dt-hokai"
+  ],
+  "description": "薬が 水などに とける こと。飲み薬は、まず 胃や 腸の 中で とけないと 吸収されません。"
+ },
+ {
+  "id": "dt-nenmaku",
+  "name": "粘膜",
+  "reading": "ねんまく",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 1,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "dotai:kyushu",
+  "relatedTerms": [
+   "dt-shocho",
+   "dt-zekka"
+  ],
+  "description": "口・胃・腸などの 内がわを おおう、しめった うすい 膜です。薬は 粘膜を 通りぬけて からだに 吸収されます。"
+ },
+ {
+  "id": "dt-kamanai",
+  "name": "かんではいけない薬",
+  "reading": "かんではいけないくすり",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "dotai:seizai",
+  "relatedTerms": [
+   "dt-choyo",
+   "dt-johosei"
+  ],
+  "description": "とける 場所や 速さが 工夫された 薬は、かんだり くだいたり すると その しくみが こわれます。そのまま 飲む よう 言われた 薬は 守りましょう。"
+ },
+ {
+  "id": "dt-tenkabutsu",
+  "name": "添加物",
+  "reading": "てんかぶつ",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧂",
+  "mapNode": "dotai:seizai",
+  "relatedTerms": [
+   "dt-fukeizai",
+   "dt-seizai"
+  ],
+  "description": "薬の 成分 いがいに、形を 作ったり 品質を たもったり する ために 入れる もの。薬を 飲みやすく 安定させる 大切な 役わりが あります。"
+ },
+ {
+  "id": "dt-seizai",
+  "name": "製剤",
+  "reading": "せいざい",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🏗️",
+  "mapNode": "dotai:seizai",
+  "relatedTerms": [
+   "dt-tenkabutsu",
+   "dt-seizaigaku"
+  ],
+  "description": "薬の 成分を、錠剤や カプセルなど 使える 形に 仕上げる こと、また 仕上げた もの。どう とけて どこで 吸収されるかも、製剤で 決まります。"
+ },
+ {
+  "id": "dt-tainai",
+  "name": "体内動態",
+  "reading": "たいないどうたい",
+  "journey": "dotai",
+  "category": "からだの 通り道",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "dotai:nomu",
+  "relatedTerms": [
+   "dt-adme",
+   "dt-doutaigaku"
+  ],
+  "description": "薬が からだに 入ってから 出て いくまでの うごきの こと。吸収・分布・代謝・排泄の 流れで 考えます。"
+ },
+ {
+  "id": "dt-adme",
+  "name": "ADME",
+  "reading": "あどめ",
+  "journey": "dotai",
+  "category": "からだの 通り道",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "dotai:nomu",
+  "relatedTerms": [
+   "dt-tainai",
+   "dt-kyushu"
+  ],
+  "description": "吸収・分布・代謝・排泄を 表す 英語の 頭文字です。薬の からだの 中の 旅を 4つの 場面に 分けて 考える 合言葉です。"
+ },
+ {
+  "id": "dt-keiko",
+  "name": "経口投与",
+  "reading": "けいこうとうよ",
+  "journey": "dotai",
+  "category": "からだの 通り道",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "👄",
+  "mapNode": "dotai:nomu",
+  "relatedTerms": [
+   "dt-kuchikara",
+   "dt-toyokeiro"
+  ],
+  "description": "口から 薬を 飲む 方法の 正式な 呼び名です。いちばん 手軽な 方法ですが、吸収や 肝臓での 代謝の えいきょうを 受けます。"
+ },
+ {
+  "id": "dt-toyokeiro",
+  "name": "投与経路",
+  "reading": "とうよけいろ",
+  "journey": "dotai",
+  "category": "からだの 通り道",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "dotai:nomu",
+  "relatedTerms": [
+   "dt-keiko",
+   "dt-keihi"
+  ],
+  "description": "薬を からだに 入れる 道の こと。口から・注射・はだ・鼻・おしりなど、道に よって 吸収の 速さや 量が 変わります。"
+ },
+ {
+  "id": "dt-hokai",
+  "name": "崩壊",
+  "reading": "ほうかい",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "dotai:i",
+  "relatedTerms": [
+   "dt-yokai",
+   "dt-kounai"
+  ],
+  "description": "錠剤や カプセルが、胃や 腸の 中で くずれて ばらばらに なる こと。崩壊して とけてから 吸収されます。"
+ },
+ {
+  "id": "dt-zekka",
+  "name": "舌下錠",
+  "reading": "ぜっかじょう",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "👅",
+  "mapNode": "dotai:nomu",
+  "relatedTerms": [
+   "dt-nenmaku",
+   "dt-shokai"
+  ],
+  "description": "舌の 下に 入れて とかす 錠剤です。口の 粘膜から すばやく 吸収され、肝臓を はじめに 通らずに 全身に とどきます。"
+ },
+ {
+  "id": "dt-jumo",
+  "name": "絨毛",
+  "reading": "じゅうもう",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 2,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "dotai:kyushu",
+  "relatedTerms": [
+   "dt-shocho",
+   "dt-kyushu"
+  ],
+  "description": "小腸の 内がわに びっしり ならぶ、小さな ひだの 出っぱりです。表面を とても 広く して、吸収の 力を 高めています。"
+ },
+ {
+  "id": "dt-chokucho",
+  "name": "直腸",
+  "reading": "ちょくちょう",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 2,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🍑",
+  "mapNode": "dotai:kyushu",
+  "relatedTerms": [
+   "dt-daicho",
+   "dt-toyokeiro"
+  ],
+  "description": "大腸の いちばん 出口に 近い ところです。坐剤の 薬は ここの 粘膜から 吸収され、一部は 肝臓を 先に 通らずに 全身へ とどきます。"
+ },
+ {
+  "id": "dt-monmyaku",
+  "name": "門脈",
+  "reading": "もんみゃく",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 2,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🚏",
+  "mapNode": "dotai:monmyaku",
+  "relatedTerms": [
+   "dt-shokai",
+   "dt-kanzo"
+  ],
+  "description": "腸から 肝臓へ 血液を 運ぶ 太い 血管です。小腸で 吸収された 薬は、まず 門脈を 通って 肝臓に 入ります。"
+ },
+ {
+  "id": "dt-shokai",
+  "name": "初回通過効果",
+  "reading": "しょかいつうかこうか",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "dotai:monmyaku",
+  "relatedTerms": [
+   "dt-monmyaku",
+   "dt-bio"
+  ],
+  "description": "飲み薬が 全身に 回る 前に、腸や 肝臓で 一部 代謝されて へる こと。注射や 舌下錠と くらべて、飲み薬の 量の 考えかたが ちがう 理由です。"
+ },
+ {
+  "id": "dt-taishakoso",
+  "name": "薬物代謝酵素",
+  "reading": "やくぶつたいしゃこうそ",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 2,
+  "field": "薬理",
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "dotai:kanzo",
+  "relatedTerms": [
+   "dt-cyp",
+   "dt-taishabutsu"
+  ],
+  "description": "薬を 作りかえる はたらきを する たんぱく質です。おもに 肝臓に あり、量や はたらきには 人に よって ちがいが あります。"
+ },
+ {
+  "id": "dt-taishabutsu",
+  "name": "代謝物",
+  "reading": "たいしゃぶつ",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "♻️",
+  "mapNode": "dotai:kanzo",
+  "relatedTerms": [
+   "dt-taisha",
+   "dt-prodrug"
+  ],
+  "description": "薬が 代謝されて できた もの。多くは はたらきが 弱く なりますが、中には もとの 薬と 同じように はたらく ものも あります。"
+ },
+ {
+  "id": "dt-kessho",
+  "name": "血漿",
+  "reading": "けっしょう",
+  "journey": "dotai",
+  "category": "分布",
+  "difficulty": 2,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "dotai:bunpu",
+  "relatedTerms": [
+   "dt-ketsueki",
+   "dt-tanpaku"
+  ],
+  "description": "血液から 赤血球などを のぞいた、うすい 黄色の 液体です。血中濃度を はかる ときは、ふつう 血漿の 中の 薬を はかります。"
+ },
+ {
+  "id": "dt-noukan",
+  "name": "血液脳関門",
+  "reading": "けつえきのうかんもん",
+  "journey": "dotai",
+  "category": "分布",
+  "difficulty": 2,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "dotai:mokuteki",
+  "relatedTerms": [
+   "dt-bunpu",
+   "dt-taiban"
+  ],
+  "description": "脳の 血管に ある、よけいな ものを 脳に 入れない ための しくみです。薬にも、脳に 入りやすい ものと 入りにくい ものが あります。"
+ },
+ {
+  "id": "dt-taiban",
+  "name": "胎盤",
+  "reading": "たいばん",
+  "journey": "dotai",
+  "category": "分布",
+  "difficulty": 2,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🤰",
+  "mapNode": "dotai:mokuteki",
+  "relatedTerms": [
+   "dt-noukan",
+   "dt-bunpu"
+  ],
+  "description": "おなかの 赤ちゃんと お母さんを つなぐ ところです。薬に よっては 赤ちゃんに とどく ものも あるので、妊娠中は お医者さんと 薬剤師に 相談します。"
+ },
+ {
+  "id": "dt-tanju",
+  "name": "胆汁",
+  "reading": "たんじゅう",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 2,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "dotai:deguchi",
+  "relatedTerms": [
+   "dt-chokan",
+   "dt-ben"
+  ],
+  "description": "肝臓で 作られ、腸に 出される 消化液です。薬の 一部は 胆汁に まじって 腸へ 出され、便と いっしょに 外へ 出ます。"
+ },
+ {
+  "id": "dt-shikyutai",
+  "name": "糸球体",
+  "reading": "しきゅうたい",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 2,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🧶",
+  "mapNode": "dotai:jinzo",
+  "relatedTerms": [
+   "dt-jinzo",
+   "dt-saikyushu"
+  ],
+  "description": "腎臓の 中に ある、細い 血管が 毛糸玉のように まとまった ところです。ここで 血液が ろ過されて、尿の もとが できます。"
+ },
+ {
+  "id": "dt-ketchu",
+  "name": "血中濃度",
+  "reading": "けっちゅうのうど",
+  "journey": "dotai",
+  "category": "血中濃度",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "dotai:noudo",
+  "relatedTerms": [
+   "dt-hangenki",
+   "dt-saiko"
+  ],
+  "description": "血液の 中に 薬が どれくらい あるかを 表す 言葉です。濃すぎず うすすぎない ところで、薬は よく はたらきます。"
+ },
+ {
+  "id": "dt-hangenki",
+  "name": "半減期",
+  "reading": "はんげんき",
+  "journey": "dotai",
+  "category": "血中濃度",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "dotai:noudo",
+  "relatedTerms": [
+   "dt-ketchu",
+   "dt-teijo"
+  ],
+  "description": "血中濃度が はんぶんに なるまでの 時間です。薬を 飲む 間かくを 考える ときの 大切な 手がかりに なります。"
+ },
+ {
+  "id": "dt-choyo",
+  "name": "腸溶錠",
+  "reading": "ちょうようじょう",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "dotai:seizai",
+  "relatedTerms": [
+   "dt-kamanai",
+   "dt-johosei"
+  ],
+  "description": "胃では とけずに、腸に 着いてから とける ように 工夫した 錠剤です。胃を あらさない ためや、胃酸で こわれやすい 薬を 守る ために 使います。"
+ },
+ {
+  "id": "dt-johosei",
+  "name": "徐放性製剤",
+  "reading": "じょほうせいせいざい",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "dotai:seizai",
+  "relatedTerms": [
+   "dt-choyo",
+   "dt-hoshutsu"
+  ],
+  "description": "薬が ゆっくり 少しずつ 出る ように 工夫した 製剤です。効きめが 長く つづくので、飲む 回数を へらせます。"
+ },
+ {
+  "id": "dt-kounai",
+  "name": "口腔内崩壊錠",
+  "reading": "こうくうないほうかいじょう",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "dotai:seizai",
+  "relatedTerms": [
+   "dt-hokai",
+   "dt-choyo"
+  ],
+  "description": "口の 中で だえきだけで すぐ とける 錠剤で、OD錠とも 呼ばれます。飲みこむ 力が 弱い 人や、水が ない ときにも 飲みやすい 形です。",
+  "acceptedReadings": [
+   "こうくうないほうかいじょう",
+   "おーでぃーじょう"
+  ]
+ },
+ {
+  "id": "dt-keihi",
+  "name": "経皮吸収",
+  "reading": "けいひきゅうしゅう",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "dotai:kyushu",
+  "relatedTerms": [
+   "dt-toyokeiro",
+   "dt-nenmaku"
+  ],
+  "description": "はだから 薬が しみこんで 吸収される こと。貼り薬を 使うと、一定の はやさで 長い 時間 薬を とどける ことが できます。"
+ },
+ {
+  "id": "dt-fukeizai",
+  "name": "賦形剤",
+  "reading": "ふけいざい",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "dotai:seizai",
+  "relatedTerms": [
+   "dt-tenkabutsu",
+   "dt-seizai"
+  ],
+  "description": "薬の 成分は とても 少ない ことが 多いので、かさを ふやして 形を 作る ために 加える もの。添加物の なかまです。"
+ },
+ {
+  "id": "dt-dds",
+  "name": "DDS",
+  "reading": "でぃーでぃーえす",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "dotai:dds",
+  "relatedTerms": [
+   "dt-targeting",
+   "dt-liposome"
+  ],
+  "description": "ドラッグデリバリーシステムの 略です。必要な 薬を、必要な 場所に、必要な 時間だけ とどける ための 工夫を まとめた 考えかたです。"
+ },
+ {
+  "id": "dt-cyp",
+  "name": "シトクロムP450",
+  "reading": "しとくろむぴーよんごーまる",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 3,
+  "field": "薬理",
+  "type": "concept",
+  "emoji": "🧬",
+  "mapNode": "dotai:kanzo",
+  "relatedTerms": [
+   "dt-taishakoso",
+   "dt-yudo"
+  ],
+  "description": "肝臓などに ある、薬物代謝酵素の 大きな なかまです。多くの 薬の 代謝に かかわり、薬どうしの えいきょうを 考える ときにも 重要です。"
+ },
+ {
+  "id": "dt-hogo",
+  "name": "抱合",
+  "reading": "ほうごう",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 3,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "dotai:kanzo",
+  "relatedTerms": [
+   "dt-taisha",
+   "dt-chokan"
+  ],
+  "description": "薬に グルクロン酸などを くっつけて、水に とけやすく する 代謝の しくみです。とけやすく なると、尿や 胆汁に 出しやすく なります。"
+ },
+ {
+  "id": "dt-prodrug",
+  "name": "プロドラッグ",
+  "reading": "ぷろどらっぐ",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "dotai:kanzo",
+  "relatedTerms": [
+   "dt-taishabutsu",
+   "dt-cyp"
+  ],
+  "description": "そのままでは はたらかず、からだの 中で 代謝されて はじめて 効く 形に なる ように 作った 薬です。吸収を よく する ためなどに 使われます。"
+ },
+ {
+  "id": "dt-tanpaku",
+  "name": "たんぱく結合",
+  "reading": "たんぱくけつごう",
+  "journey": "dotai",
+  "category": "分布",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "dotai:bunpu",
+  "relatedTerms": [
+   "dt-kessho",
+   "dt-bunpuyoseki"
+  ],
+  "description": "血液の 中で、薬が アルブミンなどの たんぱく質に くっつく こと。くっついていない 薬だけが、血管の 外に 出て はたらけます。"
+ },
+ {
+  "id": "dt-chokan",
+  "name": "腸肝循環",
+  "reading": "ちょうかんじゅんかん",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "dotai:deguchi",
+  "relatedTerms": [
+   "dt-tanju",
+   "dt-hogo"
+  ],
+  "description": "胆汁に 出た 薬が 腸で ふたたび 吸収され、また 肝臓に もどる ぐるぐるの 流れです。薬が からだに 長く とどまる 理由の ひとつです。"
+ },
+ {
+  "id": "dt-bio",
+  "name": "バイオアベイラビリティ",
+  "reading": "ばいおあべいらびりてぃ",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "dotai:monmyaku",
+  "relatedTerms": [
+   "dt-shokai",
+   "dt-auc"
+  ],
+  "description": "飲んだ 薬の うち、全身の 血液まで とどいた 量の 割合です。生物学的利用率とも 言い、吸収や 初回通過効果で 変わります。",
+  "acceptedReadings": [
+   "ばいおあべいらびりてぃ",
+   "せいぶつがくてきりようりつ"
+  ]
+ },
+ {
+  "id": "dt-saiko",
+  "name": "最高血中濃度",
+  "reading": "さいこうけっちゅうのうど",
+  "journey": "dotai",
+  "category": "血中濃度",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "dotai:noudo",
+  "relatedTerms": [
+   "dt-ketchu",
+   "dt-auc"
+  ],
+  "description": "薬を 使った あと、血中濃度が いちばん 高く なった ときの 値です。その 時間と あわせて、吸収の 速さを 知る 手がかりに なります。"
+ },
+ {
+  "id": "dt-auc",
+  "name": "AUC",
+  "reading": "えーゆーしー",
+  "journey": "dotai",
+  "category": "血中濃度",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "dotai:noudo",
+  "relatedTerms": [
+   "dt-saiko",
+   "dt-bio"
+  ],
+  "description": "血中濃度と 時間の グラフで、線の 下の 面積の こと。からだが どれだけの 薬に ふれたかを 表す めやすです。"
+ },
+ {
+  "id": "dt-teijo",
+  "name": "定常状態",
+  "reading": "ていじょうじょうたい",
+  "journey": "dotai",
+  "category": "血中濃度",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "dotai:noudo",
+  "relatedTerms": [
+   "dt-hangenki",
+   "dt-tdm"
+  ],
+  "description": "薬を くり返し 使う うちに、入る 量と 出る 量が つりあって、血中濃度が ほぼ 同じ はばで 落ちつく 状態です。"
+ },
+ {
+  "id": "dt-clearance",
+  "name": "クリアランス",
+  "reading": "くりあらんす",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "dotai:jinzo",
+  "relatedTerms": [
+   "dt-bunpuyoseki",
+   "dt-hangenki"
+  ],
+  "description": "からだが 薬を 取りのぞく 力を 表す 言葉です。腎臓や 肝臓の はたらきが 弱いと 小さく なり、薬が からだに 残りやすく なります。"
+ },
+ {
+  "id": "dt-bunpuyoseki",
+  "name": "分布容積",
+  "reading": "ぶんぷようせき",
+  "journey": "dotai",
+  "category": "分布",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🫗",
+  "mapNode": "dotai:bunpu",
+  "relatedTerms": [
+   "dt-tanpaku",
+   "dt-clearance"
+  ],
+  "description": "薬が からだの 中に どれだけ 広く 散らばるかを 表す、見かけの 量です。大きいほど、血液の 外の 組織に 多く 入っている ことを 示します。"
+ },
+ {
+  "id": "dt-saikyushu",
+  "name": "再吸収",
+  "reading": "さいきゅうしゅう",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 3,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "dotai:jinzo",
+  "relatedTerms": [
+   "dt-shikyutai",
+   "dt-bunpitsu"
+  ],
+  "description": "腎臓で いったん 尿の もとに 出た ものが、尿細管で もう いちど 血液に もどされる こと。尿の 性質で、薬の もどりやすさが 変わります。"
+ },
+ {
+  "id": "dt-bunpitsu",
+  "name": "尿細管分泌",
+  "reading": "にょうさいかんぶんぴつ",
+  "journey": "dotai",
+  "category": "排泄",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🚰",
+  "mapNode": "dotai:jinzo",
+  "relatedTerms": [
+   "dt-saikyushu",
+   "dt-shikyutai"
+  ],
+  "description": "腎臓の 尿細管で、血液の 中の 薬を 運び屋の たんぱく質が 尿へ 送りだす しくみです。ろ過と ならんで、薬を 尿に 出す 道の ひとつです。"
+ },
+ {
+  "id": "dt-doutaigaku",
+  "name": "薬物動態学",
+  "reading": "やくぶつどうたいがく",
+  "journey": "dotai",
+  "category": "血中濃度",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "dotai:noudo",
+  "relatedTerms": [
+   "dt-tainai",
+   "dt-tdm"
+  ],
+  "description": "薬の 血中濃度が 時間と ともに どう 変わるかを、数式などで 調べる 学問です。薬の 量や 間かくを 考える 土台に なります。"
+ },
+ {
+  "id": "dt-tdm",
+  "name": "TDM",
+  "reading": "てぃーでぃーえむ",
+  "journey": "dotai",
+  "category": "血中濃度",
+  "difficulty": 3,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "dotai:noudo",
+  "relatedTerms": [
+   "dt-ketchu",
+   "dt-doutaigaku"
+  ],
+  "description": "薬物血中濃度モニタリングの 略です。一部の 薬で 血中濃度を はかり、その 人に 合った 使いかたを 医師と 薬剤師が いっしょに 考えます。"
+ },
+ {
+  "id": "dt-yudo",
+  "name": "酵素誘導",
+  "reading": "こうそゆうどう",
+  "journey": "dotai",
+  "category": "代謝",
+  "difficulty": 3,
+  "field": "薬理",
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "dotai:kanzo",
+  "relatedTerms": [
+   "dt-cyp",
+   "dt-taishakoso"
+  ],
+  "description": "たばこや 一部の 薬などが きっかけで、薬物代謝酵素が ふえる こと。ほかの 薬が 早く 代謝されて、効きめが 弱く なる ことが あります。"
+ },
+ {
+  "id": "dt-nodo",
+  "name": "能動輸送",
+  "reading": "のうどうゆそう",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 3,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🏋️",
+  "mapNode": "dotai:kyushu",
+  "relatedTerms": [
+   "dt-judo",
+   "dt-bunpitsu"
+  ],
+  "description": "エネルギーを 使って、うすい ほうから 濃い ほうへ 物を 運ぶ しくみです。運び屋の たんぱく質が はたらきます。"
+ },
+ {
+  "id": "dt-judo",
+  "name": "受動拡散",
+  "reading": "じゅどうかくさん",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 3,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "dotai:kyushu",
+  "relatedTerms": [
+   "dt-nodo",
+   "dt-phbunpai"
+  ],
+  "description": "濃い ほうから うすい ほうへ、自然に 物が 広がって 膜を 通る こと。多くの 薬は この しくみで 吸収されます。"
+ },
+ {
+  "id": "dt-phbunpai",
+  "name": "pH分配仮説",
+  "reading": "ぴーえいちぶんぱいかせつ",
+  "journey": "dotai",
+  "category": "吸収",
+  "difficulty": 3,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "dotai:i",
+  "relatedTerms": [
+   "dt-judo",
+   "dt-yokai"
+  ],
+  "description": "薬は 電気を おびていない 形の ほうが 膜を 通りやすい、と いう 考えかたです。理科で 習う 酸と アルカリの 性質が、薬の 吸収にも かかわっています。",
+  "acceptedReadings": [
+   "ぴーえいちぶんぱいかせつ",
+   "ぺーはーぶんぱいかせつ"
+  ]
+ },
+ {
+  "id": "dt-seizaigaku",
+  "name": "製剤学",
+  "reading": "せいざいがく",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "dotai:seizai",
+  "relatedTerms": [
+   "dt-seizai",
+   "dt-hoshutsu"
+  ],
+  "description": "薬を 安全で 使いやすい 形に する 方法を 研究する 学問です。とける 速さや 安定性などを 調べます。"
+ },
+ {
+  "id": "dt-hoshutsu",
+  "name": "放出制御",
+  "reading": "ほうしゅつせいぎょ",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "dotai:seizai",
+  "relatedTerms": [
+   "dt-johosei",
+   "dt-seizaigaku"
+  ],
+  "description": "製剤から 薬が 出る 速さや 場所を、わざと 調整する 技術です。徐放性製剤や 腸溶錠は、この 考えかたで 作られています。"
+ },
+ {
+  "id": "dt-targeting",
+  "name": "ターゲティング",
+  "reading": "たーげてぃんぐ",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🏹",
+  "mapNode": "dotai:dds",
+  "relatedTerms": [
+   "dt-dds",
+   "dt-nano"
+  ],
+  "description": "薬を ねらった 場所に 集めて とどける 工夫です。きいて ほしい 場所に 多く とどけ、ほかの 場所への えいきょうを へらします。"
+ },
+ {
+  "id": "dt-liposome",
+  "name": "リポソーム",
+  "reading": "りぽそーむ",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 3,
+  "field": "物理・化学・生物",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "dotai:dds",
+  "relatedTerms": [
+   "dt-dds",
+   "dt-nano"
+  ],
+  "description": "細胞の 膜と 同じ なかまの 成分で できた、とても 小さな まるい 入れものです。中に 薬を とじこめて 運ぶ DDSに 使われます。"
+ },
+ {
+  "id": "dt-nano",
+  "name": "ナノ粒子",
+  "reading": "なのりゅうし",
+  "journey": "dotai",
+  "category": "製剤の 工夫",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🔹",
+  "mapNode": "dotai:dds",
+  "relatedTerms": [
+   "dt-liposome",
+   "dt-targeting"
+  ],
+  "description": "目に 見えないほど 小さな つぶの こと。薬を のせたり 包んだり して、とける 力や とどく 場所を 工夫する ために 研究されています。"
+ },
+ {
+  "id": "dt-doutosei",
+  "name": "生物学的同等性",
+  "reading": "せいぶつがくてきどうとうせい",
+  "journey": "dotai",
+  "category": "血中濃度",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🟰",
+  "mapNode": "dotai:noudo",
+  "relatedTerms": [
+   "dt-auc",
+   "dt-saiko"
+  ],
+  "description": "ふたつの 薬が、からだの 中で 同じように 吸収されるかを くらべた ときの 性質です。ジェネリック医薬品を 作る ときに 確かめられます。"
+ }
+]

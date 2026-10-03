@@ -1,0 +1,1194 @@
+[
+ {
+  "id": "ot-yakkyoku",
+  "name": "薬局",
+  "reading": "やっきょく",
+  "journey": "otc",
+  "category": "お店と 売りかた",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🏪",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-drugstore",
+   "ot-shihanyaku"
+  ],
+  "description": "薬剤師が いて、処方箋の 調剤や 市販薬の 販売を する お店です。薬の ことで こまったら 気軽に 相談できる 場所です。"
+ },
+ {
+  "id": "ot-drugstore",
+  "name": "ドラッグストア",
+  "reading": "どらっぐすとあ",
+  "journey": "otc",
+  "category": "お店と 売りかた",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-yakkyoku",
+   "ot-shihanyaku"
+  ],
+  "description": "市販薬の ほか、日用品や 食べものも 売っている お店です。薬を 売る ための 許可を 受けていて、薬剤師や 登録販売者が います。"
+ },
+ {
+  "id": "ot-kazegusuri",
+  "name": "かぜ薬",
+  "reading": "かぜぐすり",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🤧",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-sogokanbo",
+   "ot-jushin"
+  ],
+  "description": "かぜの つらい しょうじょうを やわらげる 薬です。かぜの もとの ウイルスを なくす 薬では ないので、無理を せず 休む ことも 大切です。"
+ },
+ {
+  "id": "ot-shihanyaku",
+  "name": "市販薬",
+  "reading": "しはんやく",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-otciyakuhin",
+   "ot-drugstore"
+  ],
+  "description": "処方箋が なくても お店で 買える 薬です。買う ときは 薬剤師や 登録販売者に 相談し、箱や 説明書を よく 読んで 使います。"
+ },
+ {
+  "id": "ot-supplement",
+  "name": "サプリメント",
+  "reading": "さぷりめんと",
+  "journey": "otc",
+  "category": "健康食品",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "otc:supple",
+  "relatedTerms": [
+   "ot-kenkoshokuhin",
+   "ot-shokuyaku"
+  ],
+  "description": "ビタミンなど、ふだんの 食事で 足りない ものを おぎなう ための 食品です。薬では ないので、病気を 治す ための ものでは ありません。"
+ },
+ {
+  "id": "ot-kenkoshokuhin",
+  "name": "健康食品",
+  "reading": "けんこうしょくひん",
+  "journey": "otc",
+  "category": "健康食品",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🥤",
+  "mapNode": "otc:supple",
+  "relatedTerms": [
+   "ot-supplement",
+   "ot-iwayuru"
+  ],
+  "description": "健康に よいと うたって 売られている 食品の ことです。薬と いっしょに 使う ときは、薬剤師に 相談すると 安心です。"
+ },
+ {
+  "id": "ot-taionkei",
+  "name": "体温計",
+  "reading": "たいおんけい",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-katei",
+   "ot-jushin"
+  ],
+  "description": "体の 熱を はかる 道具で、医療機器の なかまです。熱を はかって 記録しておくと、受診の ときに お医者さんへ 伝えやすく なります。"
+ },
+ {
+  "id": "ot-eiyodrink",
+  "name": "栄養ドリンク",
+  "reading": "えいようどりんく",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🍾",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-shiteibugai",
+   "ot-supplement"
+  ],
+  "description": "びんに 入った 飲みもので、医薬品・医薬部外品・食品の どれかに 分けられます。同じように 見えても、ラベルの 表示で 区分が わかります。"
+ },
+ {
+  "id": "ot-nodoame",
+  "name": "のど飴",
+  "reading": "のどあめ",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🍬",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-shiteibugai",
+   "ot-bugaihin"
+  ],
+  "description": "のどを うるおす ための あめです。お菓子と 同じ 食品の ものと、医薬部外品の ものが あります。"
+ },
+ {
+  "id": "ot-mushiyoke",
+  "name": "虫よけ",
+  "reading": "むしよけ",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🦟",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-bugaihin"
+  ],
+  "description": "蚊などの 虫を 近づけにくく する ための 品です。医薬品や 医薬部外品として 売られていて、使える 年れいや 使いかたが 表示されています。"
+ },
+ {
+  "id": "ot-yakuyosekken",
+  "name": "薬用せっけん",
+  "reading": "やくようせっけん",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧼",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-bugaihin",
+   "ot-keshohin"
+  ],
+  "description": "「薬用」と 書かれた せっけんの 多くは 医薬部外品です。からだを 清潔に たもつ はたらきが 認められた 成分が 入っています。"
+ },
+ {
+  "id": "ot-tokuho",
+  "name": "トクホ",
+  "reading": "とくほ",
+  "journey": "otc",
+  "category": "健康食品",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "otc:tokuho",
+  "relatedTerms": [
+   "ot-kinosei",
+   "ot-hokenkino"
+  ],
+  "description": "特定保健用食品の ことです。おなかの 調子を ととのえる など、からだへの はたらきを 国が 審査して 許可した 食品で、マークが ついています。"
+ },
+ {
+  "id": "ot-okigusuri",
+  "name": "置き薬",
+  "reading": "おきぐすり",
+  "journey": "otc",
+  "category": "お店と 売りかた",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-haichi",
+   "ot-yakkyoku"
+  ],
+  "description": "家に 薬箱を あずけておき、使った ぶんだけ あとで 代金を はらう しくみです。昔から 日本に ある 薬の 売りかたです。"
+ },
+ {
+  "id": "ot-kodomoyo",
+  "name": "子ども用の薬",
+  "reading": "こどもようのくすり",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🧸",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-shihanyaku",
+   "ot-tenpubunsho"
+  ],
+  "description": "子どもの からだに 合わせて 作られた 市販薬です。大人の 薬を 子どもが 使わない ように し、使える 年れいを 箱で 確かめます。"
+ },
+ {
+  "id": "ot-hako",
+  "name": "薬の箱",
+  "reading": "くすりのはこ",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-tenpubunsho",
+   "ot-riskkubun"
+  ],
+  "description": "市販薬の 箱には、薬の 区分・効きめ・使用期限などが 書かれています。使いおわるまで 箱と 説明書を 取っておくと 安心です。"
+ },
+ {
+  "id": "ot-nafuda",
+  "name": "名札",
+  "reading": "なふだ",
+  "journey": "otc",
+  "category": "売る 人と 説明",
+  "difficulty": 1,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "📛",
+  "mapNode": "otc:tohan",
+  "relatedTerms": [
+   "ot-toroku",
+   "ot-yakkyoku"
+  ],
+  "description": "薬を 売る お店の 人は、薬剤師か 登録販売者かが わかる 名札を つけています。だれに 相談すれば よいかの 目じるしに なります。"
+ },
+ {
+  "id": "ot-selfcare",
+  "name": "セルフケア",
+  "reading": "せるふけあ",
+  "journey": "otc",
+  "category": "セルフメディケーション",
+  "difficulty": 1,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧘",
+  "mapNode": "otc:self",
+  "relatedTerms": [
+   "ot-selfmedication",
+   "ot-jushin"
+  ],
+  "description": "よく 寝る・よく 食べる・手を 洗う など、自分で 自分の 健康を 守る ことです。薬だけに たよらない 毎日の 習慣が 土台に なります。"
+ },
+ {
+  "id": "ot-jushin",
+  "name": "受診",
+  "reading": "じゅしん",
+  "journey": "otc",
+  "category": "セルフメディケーション",
+  "difficulty": 1,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "otc:jushin",
+  "relatedTerms": [
+   "ot-jushinkansho",
+   "ot-selfcare"
+  ],
+  "description": "お医者さんに 診て もらう ことです。市販薬を 使っても よくならない ときや、いつもと ちがう ときは、早めに 受診します。"
+ },
+ {
+  "id": "ot-tenpubunsho",
+  "name": "添付文書",
+  "reading": "てんぷぶんしょ",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-shiyojo",
+   "ot-shitehaikenai"
+  ],
+  "description": "薬に ついている 説明書の ことです。効きめや 使いかた、注意する ことが 書かれていて、使う 前に かならず 読みます。"
+ },
+ {
+  "id": "ot-bansoko",
+  "name": "ばんそうこう",
+  "reading": "ばんそうこう",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-katei",
+   "ot-taionkei"
+  ],
+  "description": "小さな きずを おおって 守る ための ものです。医療機器や 医薬部外品などとして 売られています。"
+ },
+ {
+  "id": "ot-otciyakuhin",
+  "name": "OTC医薬品",
+  "reading": "おーてぃーしーいやくひん",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🛍️",
+  "mapNode": "otc:self",
+  "relatedTerms": [
+   "ot-ippanyo",
+   "ot-iryoyo"
+  ],
+  "description": "お店の カウンター越しに 買える 薬と いう 意味の ことばで、市販薬の ことです。要指導医薬品と 一般用医薬品が ふくまれます。"
+ },
+ {
+  "id": "ot-ippanyo",
+  "name": "一般用医薬品",
+  "reading": "いっぱんよういやくひん",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-dai1",
+   "ot-dai2",
+   "ot-dai3"
+  ],
+  "description": "自分の 判断で 使える ように 作られた 市販薬です。副作用などの 注意の 度合いに よって、第1類・第2類・第3類に 分けられます。"
+ },
+ {
+  "id": "ot-iryoyo",
+  "name": "医療用医薬品",
+  "reading": "いりょうよういやくひん",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "otc:iryoyo",
+  "relatedTerms": [
+   "ot-ippanyo",
+   "ot-switch"
+  ],
+  "description": "お医者さんが 診察して 処方する ことを 前提に 作られた 薬です。薬局で 薬剤師が 調剤して 渡します。"
+ },
+ {
+  "id": "ot-yoshido",
+  "name": "要指導医薬品",
+  "reading": "ようしどういやくひん",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🧑‍⚕️",
+  "mapNode": "otc:yoshido",
+  "relatedTerms": [
+   "ot-switch",
+   "ot-dai1"
+  ],
+  "description": "薬剤師が 説明して 売る ことに なっている 市販薬です。市販薬に なって まだ 間もない 薬などが 入り、ようすを 見て 一般用医薬品に 移ります。"
+ },
+ {
+  "id": "ot-dai1",
+  "name": "第1類医薬品",
+  "reading": "だいいちるいいやくひん",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "otc:dai1",
+  "relatedTerms": [
+   "ot-shomen",
+   "ot-hanbaikiroku"
+  ],
+  "description": "一般用医薬品の 中で、特に 注意が 必要な 薬です。薬剤師だけが 売る ことが でき、書面を 使って 説明します。"
+ },
+ {
+  "id": "ot-dai2",
+  "name": "第2類医薬品",
+  "reading": "だいにるいいやくひん",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "2️⃣",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-shiteidai2",
+   "ot-doryoku"
+  ],
+  "description": "一般用医薬品の 中で、注意が 必要な 薬です。かぜ薬や 解熱鎮痛薬など、身近な 薬の 多くが ここに 入ります。薬剤師か 登録販売者が 売ります。"
+ },
+ {
+  "id": "ot-shiteidai2",
+  "name": "指定第2類医薬品",
+  "reading": "していだいにるいいやくひん",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-dai2",
+   "ot-chinretsu"
+  ],
+  "description": "第2類医薬品の 中で、特に 気を つけたい 薬です。箱には 2の 字を 丸や 四角で かこんだ しるしが あり、説明が 受けやすい 場所に 置かれます。"
+ },
+ {
+  "id": "ot-dai3",
+  "name": "第3類医薬品",
+  "reading": "だいさんるいいやくひん",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "3️⃣",
+  "mapNode": "otc:dai3",
+  "relatedTerms": [
+   "ot-dai2",
+   "ot-ippanyo"
+  ],
+  "description": "第1類・第2類に あたらない 一般用医薬品です。注意の 度合いは 比べて 低い ものの、薬で ある ことに 変わりは ありません。"
+ },
+ {
+  "id": "ot-toroku",
+  "name": "登録販売者",
+  "reading": "とうろくはんばいしゃ",
+  "journey": "otc",
+  "category": "売る 人と 説明",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "otc:tohan",
+  "relatedTerms": [
+   "ot-tohanshiken",
+   "ot-dai2"
+  ],
+  "description": "都道府県の 試験に 合格して 登録を 受けた 人です。第2類と 第3類の 一般用医薬品を 売る ことが でき、お客さんの 相談にも のります。"
+ },
+ {
+  "id": "ot-selfmedication",
+  "name": "セルフメディケーション",
+  "reading": "せるふめでぃけーしょん",
+  "journey": "otc",
+  "category": "セルフメディケーション",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "otc:self",
+  "relatedTerms": [
+   "ot-selfcare",
+   "ot-zeisei"
+  ],
+  "description": "軽い 体調の 不調を、市販薬なども 上手に 使って 自分で 手当てする ことです。こまったら 薬剤師に 相談し、必要なら 受診する ことが セットです。"
+ },
+ {
+  "id": "ot-bugaihin",
+  "name": "医薬部外品",
+  "reading": "いやくぶがいひん",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-shiteibugai",
+   "ot-keshohin"
+  ],
+  "description": "薬ほど 強くは ないが、からだへの おだやかな はたらきが 認められた 品です。薬用歯みがきや 薬用せっけんなどが あります。"
+ },
+ {
+  "id": "ot-keshohin",
+  "name": "化粧品",
+  "reading": "けしょうひん",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "💄",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-bugaihin",
+   "ot-yakuyosekken"
+  ],
+  "description": "からだを 清潔に したり、ひふや かみを すこやかに 保ったり する 品です。化粧品も 薬と 同じ 法律で 決まりが 作られています。"
+ },
+ {
+  "id": "ot-shiyojo",
+  "name": "使用上の注意",
+  "reading": "しようじょうのちゅうい",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 2,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-shitehaikenai",
+   "ot-sodansuru"
+  ],
+  "description": "添付文書の 中で、使う 前に 知っておく べき 注意を まとめた ところです。持病の ある 人や 子ども・お年寄りへの 注意も 書かれています。"
+ },
+ {
+  "id": "ot-jushinkansho",
+  "name": "受診勧奨",
+  "reading": "じゅしんかんしょう",
+  "journey": "otc",
+  "category": "セルフメディケーション",
+  "difficulty": 2,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "👉",
+  "mapNode": "otc:jushin",
+  "relatedTerms": [
+   "ot-jushin",
+   "ot-sodanouju"
+  ],
+  "description": "市販薬で ようすを 見るより、お医者さんに 診て もらう ほうが よいと 考えた とき、受診を すすめる ことです。売らない 判断も 大切な 仕事です。"
+ },
+ {
+  "id": "ot-switch",
+  "name": "スイッチOTC",
+  "reading": "すいっちおーてぃーしー",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "otc:switch",
+  "relatedTerms": [
+   "ot-iryoyo",
+   "ot-yoshido",
+   "ot-direct"
+  ],
+  "description": "もとは 医療用医薬品だった 成分を、市販薬として 使える ように した 薬です。医療用で 使われてきた 経験を もとに 切りかえられます。"
+ },
+ {
+  "id": "ot-kinosei",
+  "name": "機能性表示食品",
+  "reading": "きのうせいひょうじしょくひん",
+  "journey": "otc",
+  "category": "健康食品",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "otc:tokuho",
+  "relatedTerms": [
+   "ot-tokuho",
+   "ot-hokenkino"
+  ],
+  "description": "会社が 科学的な 根拠を 国に 届け出て、からだへの はたらきを 表示した 食品です。国が ひとつずつ 審査した ものでは ない 点が トクホと ちがいます。"
+ },
+ {
+  "id": "ot-eiyokino",
+  "name": "栄養機能食品",
+  "reading": "えいようきのうしょくひん",
+  "journey": "otc",
+  "category": "健康食品",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🥕",
+  "mapNode": "otc:tokuho",
+  "relatedTerms": [
+   "ot-hokenkino",
+   "ot-supplement"
+  ],
+  "description": "ビタミンや ミネラルなどを 国の 基準に 合う 量 ふくむ 食品です。その 栄養の はたらきを 表示できます。"
+ },
+ {
+  "id": "ot-joho",
+  "name": "情報提供",
+  "reading": "じょうほうていきょう",
+  "journey": "otc",
+  "category": "売る 人と 説明",
+  "difficulty": 2,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "otc:dai1",
+  "relatedTerms": [
+   "ot-shomen",
+   "ot-sodanouju"
+  ],
+  "description": "薬を 売る ときに、効きめや 注意を 買う 人に 伝える ことです。区分に よって、どこまで 説明するかの 決まりが ちがいます。"
+ },
+ {
+  "id": "ot-riskkubun",
+  "name": "リスク区分",
+  "reading": "りすくくぶん",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-dai1",
+   "ot-dai2",
+   "ot-dai3"
+  ],
+  "description": "一般用医薬品を 注意の 度合いで 分けた 区分です。箱に 表示されていて、だれが 売るか・どう 説明するかが 区分ごとに 決まっています。"
+ },
+ {
+  "id": "ot-tengan",
+  "name": "一般用点眼薬",
+  "reading": "いっぱんようてんがんやく",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-ippanyo",
+   "ot-tenpubunsho"
+  ],
+  "description": "目の つかれや かゆみなどに 使う 市販の 目薬です。開けたら 早めに 使いきり、ほかの 人と 貸し借りを しない ことが 大切です。"
+ },
+ {
+  "id": "ot-sogokanbo",
+  "name": "総合感冒薬",
+  "reading": "そうごうかんぼうやく",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 2,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🤒",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-kazegusuri",
+   "ot-jushinkansho"
+  ],
+  "description": "かぜ薬の 正式な よびかたです。熱・のどの 痛み・鼻水・せきなど いくつもの しょうじょうに 合わせて、複数の 成分を 組み合わせています。"
+ },
+ {
+  "id": "ot-haichi",
+  "name": "配置販売業",
+  "reading": "はいちはんばいぎょう",
+  "journey": "otc",
+  "category": "お店と 売りかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-okigusuri",
+   "ot-tenpo"
+  ],
+  "description": "家や 会社に 薬箱を あずけて おく 置き薬の 商売です。使った ぶんを あとで 集金する「先用後利」と いう 考えかたで 広まりました。"
+ },
+ {
+  "id": "ot-tenpo",
+  "name": "店舗販売業",
+  "reading": "てんぽはんばいぎょう",
+  "journey": "otc",
+  "category": "お店と 売りかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-drugstore",
+   "ot-tenpokanri"
+  ],
+  "description": "一般用医薬品などを お店で 売る ための 許可の 種類です。ドラッグストアの 多くは この 許可で 薬を 売っています。"
+ },
+ {
+  "id": "ot-internet",
+  "name": "インターネット販売",
+  "reading": "いんたーねっとはんばい",
+  "journey": "otc",
+  "category": "お店と 売りかた",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-tokuteihanbai",
+   "ot-tenpo"
+  ],
+  "description": "インターネットで 一般用医薬品を 売る ことです。実際の お店を 持ち、許可を 受けた ところだけが 決まりを 守って 売る ことが できます。"
+ },
+ {
+  "id": "ot-shiteibugai",
+  "name": "指定医薬部外品",
+  "reading": "していいやくぶがいひん",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 2,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-bugaihin",
+   "ot-eiyodrink"
+  ],
+  "description": "もとは 医薬品だった ものの 中から、医薬部外品に 移された 品です。コンビニなどでも 売られている ものが あります。"
+ },
+ {
+  "id": "ot-zeisei",
+  "name": "セルフメディケーション税制",
+  "reading": "せるふめでぃけーしょんぜいせい",
+  "journey": "otc",
+  "category": "セルフメディケーション",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "otc:self",
+  "relatedTerms": [
+   "ot-selfmedication",
+   "ot-switch"
+  ],
+  "description": "対象の 市販薬を 買った とき、その 代金を 税金の 計算で 差し引ける しくみです。自分で 健康を 守る 取り組みを 後おし する ための 制度です。"
+ },
+ {
+  "id": "ot-hokenkino",
+  "name": "保健機能食品",
+  "reading": "ほけんきのうしょくひん",
+  "journey": "otc",
+  "category": "健康食品",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🍱",
+  "mapNode": "otc:tokuho",
+  "relatedTerms": [
+   "ot-tokuho",
+   "ot-kinosei",
+   "ot-eiyokino"
+  ],
+  "description": "トクホ・栄養機能食品・機能性表示食品の 3つを まとめた よびかたです。決まった ルールの もとで、からだへの はたらきを 表示できます。"
+ },
+ {
+  "id": "ot-iwayuru",
+  "name": "いわゆる健康食品",
+  "reading": "いわゆるけんこうしょくひん",
+  "journey": "otc",
+  "category": "健康食品",
+  "difficulty": 3,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "❔",
+  "mapNode": "otc:supple",
+  "relatedTerms": [
+   "ot-kenkoshokuhin",
+   "ot-shokuyaku"
+  ],
+  "description": "保健機能食品に 入らない、健康に よいと して 売られている 食品の ことです。はたらきを 表示する 決まりが ないので、うたい文句を うのみに しない ことが 大切です。"
+ },
+ {
+  "id": "ot-tokubetsuyoto",
+  "name": "特別用途食品",
+  "reading": "とくべつようとしょくひん",
+  "journey": "otc",
+  "category": "健康食品",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🍼",
+  "mapNode": "otc:tokuho",
+  "relatedTerms": [
+   "ot-hokenkino"
+  ],
+  "description": "赤ちゃんや 飲みこむ 力が 弱い 人など、特別な 人に 向けた 食品です。国の 許可を 受けて、その 用途を 表示しています。"
+ },
+ {
+  "id": "ot-direct",
+  "name": "ダイレクトOTC",
+  "reading": "だいれくとおーてぃーしー",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "otc:switch",
+  "relatedTerms": [
+   "ot-switch",
+   "ot-yoshido"
+  ],
+  "description": "医療用医薬品として 使われた ことが なく、はじめから 市販薬として 出た 新しい 成分の 薬です。はじめは 要指導医薬品として 売られます。"
+ },
+ {
+  "id": "ot-shitehaikenai",
+  "name": "してはいけないこと",
+  "reading": "してはいけないこと",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 3,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-sodansuru",
+   "ot-shiyojo"
+  ],
+  "description": "添付文書の 使用上の注意の 中で、守らないと 事故に つながる ことが 書かれた 項目です。使う 前に いちばん 先に 確かめます。"
+ },
+ {
+  "id": "ot-sodansuru",
+  "name": "相談すること",
+  "reading": "そうだんすること",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 3,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "☎️",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-shitehaikenai",
+   "ot-jushinkansho"
+  ],
+  "description": "添付文書の 使用上の注意の 中で、使う 前や 使った あとに 医師・薬剤師・登録販売者に 相談したい 場合を 書いた 項目です。"
+ },
+ {
+  "id": "ot-sodanouju",
+  "name": "相談応需",
+  "reading": "そうだんおうじゅ",
+  "journey": "otc",
+  "category": "売る 人と 説明",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "otc:dai1",
+  "relatedTerms": [
+   "ot-joho",
+   "ot-jushinkansho"
+  ],
+  "description": "お客さんから 相談を 受けたら、きちんと 答える ことです。どの 区分の 薬でも、薬を 売る お店に 求められている 役目です。"
+ },
+ {
+  "id": "ot-chinretsu",
+  "name": "陳列",
+  "reading": "ちんれつ",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🗄️",
+  "mapNode": "otc:dai1",
+  "relatedTerms": [
+   "ot-dai1",
+   "ot-shiteidai2"
+  ],
+  "description": "薬を お店に ならべる ことです。区分ごとに 分けて 置き、第1類医薬品は 基本的に お客さんが 直接 手に 取れない 場所に 置きます。"
+ },
+ {
+  "id": "ot-shomen",
+  "name": "書面での情報提供",
+  "reading": "しょめんでのじょうほうていきょう",
+  "journey": "otc",
+  "category": "売る 人と 説明",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "📃",
+  "mapNode": "otc:dai1",
+  "relatedTerms": [
+   "ot-dai1",
+   "ot-joho"
+  ],
+  "description": "第1類医薬品を 売る ときに、薬剤師が 書面を 使って 説明する ことです。大事な 注意を 目で 見て 確かめられる ように します。"
+ },
+ {
+  "id": "ot-hanbaikiroku",
+  "name": "販売記録",
+  "reading": "はんばいきろく",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🗃️",
+  "mapNode": "otc:dai1",
+  "relatedTerms": [
+   "ot-dai1",
+   "ot-yoshido"
+  ],
+  "description": "要指導医薬品や 第1類医薬品を 売った とき、品名や 日時などを 残す 記録です。あとで 問題が 見つかった ときに 役立ちます。"
+ },
+ {
+  "id": "ot-doryoku",
+  "name": "努力義務",
+  "reading": "どりょくぎむ",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🤏",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-dai2",
+   "ot-joho"
+  ],
+  "description": "できる かぎり 行う ように 求められている ことです。第2類医薬品の 説明は、この 努力義務と されています。"
+ },
+ {
+  "id": "ot-tohanshiken",
+  "name": "登録販売者試験",
+  "reading": "とうろくはんばいしゃしけん",
+  "journey": "otc",
+  "category": "売る 人と 説明",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "otc:tohan",
+  "relatedTerms": [
+   "ot-toroku",
+   "ot-jujitoroku"
+  ],
+  "description": "登録販売者に なる ための 試験で、都道府県が 行います。薬の 基本・人の からだ・主な 薬・法律・正しい 使いかたの 5つの 分野から 出されます。"
+ },
+ {
+  "id": "ot-jujitoroku",
+  "name": "販売従事登録",
+  "reading": "はんばいじゅうじとうろく",
+  "journey": "otc",
+  "category": "売る 人と 説明",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🖊️",
+  "mapNode": "otc:tohan",
+  "relatedTerms": [
+   "ot-tohanshiken",
+   "ot-toroku"
+  ],
+  "description": "登録販売者試験に 合格した 人が、働く 場所の 都道府県に 登録を 受ける ことです。登録して はじめて 登録販売者として 働けます。"
+ },
+ {
+  "id": "ot-gaibukenshu",
+  "name": "外部研修",
+  "reading": "がいぶけんしゅう",
+  "journey": "otc",
+  "category": "売る 人と 説明",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "otc:tohan",
+  "relatedTerms": [
+   "ot-toroku",
+   "ot-tenpokanri"
+  ],
+  "description": "登録販売者が 毎年 受ける 研修です。新しい 薬や 決まりを 学び続けて、知識を 新しく たもちます。"
+ },
+ {
+  "id": "ot-tenpokanri",
+  "name": "店舗管理者",
+  "reading": "てんぽかんりしゃ",
+  "journey": "otc",
+  "category": "売る 人と 説明",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🔑",
+  "mapNode": "otc:tohan",
+  "relatedTerms": [
+   "ot-tenpo",
+   "ot-gaibukenshu"
+  ],
+  "description": "お店で 薬の 管理に 責任を もつ 人です。薬剤師か、決められた 経験を もつ 登録販売者が つとめます。"
+ },
+ {
+  "id": "ot-tokuteihanbai",
+  "name": "特定販売",
+  "reading": "とくていはんばい",
+  "journey": "otc",
+  "category": "お店と 売りかた",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-internet",
+   "ot-yakkyokuseizai"
+  ],
+  "description": "お店に いない 人に、インターネットや 電話などで 薬を 売る ことの 法律上の よびかたです。許可を 受けた お店が、決まりを 守って 行います。"
+ },
+ {
+  "id": "ot-yakkyokuseizai",
+  "name": "薬局製剤",
+  "reading": "やっきょくせいざい",
+  "journey": "otc",
+  "category": "お店と 売りかた",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-yakkyoku",
+   "ot-tokuteihanbai"
+  ],
+  "description": "薬局が 自分の ところで 作って 売る ことを 認められた 薬です。決められた 作りかたに そって、薬剤師が 作ります。"
+ },
+ {
+  "id": "ot-katei",
+  "name": "家庭用医療機器",
+  "reading": "かていよういりょうきき",
+  "journey": "otc",
+  "category": "医薬部外品と ほかの 品",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-taionkei",
+   "ot-bansoko"
+  ],
+  "description": "体温計や 血圧計など、家で 使う 医療機器です。正しく はかる ことで、体調の 変化に 早く 気づけます。"
+ },
+ {
+  "id": "ot-kensayaku",
+  "name": "一般用検査薬",
+  "reading": "いっぱんようけんさやく",
+  "journey": "otc",
+  "category": "薬の 分けかた",
+  "difficulty": 3,
+  "field": "病態・薬物治療",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "otc:dai2",
+  "relatedTerms": [
+   "ot-jushinkansho",
+   "ot-ippanyo"
+  ],
+  "description": "尿などを 使って、からだの ようすを 自分で 調べる 市販の 検査薬です。結果だけで 決めつけず、気に なる ときは 受診します。"
+ },
+ {
+  "id": "ot-konokoka",
+  "name": "効能効果",
+  "reading": "こうのうこうか",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "otc:iryoyo",
+  "relatedTerms": [
+   "ot-shokuyaku",
+   "ot-kodaikokoku"
+  ],
+  "description": "その 薬が 何に 効くかを しめした ものです。食品は 病気に 効くと 書く ことが できず、ここが 薬と 食品の 大きな ちがいです。"
+ },
+ {
+  "id": "ot-kodaikokoku",
+  "name": "誇大広告",
+  "reading": "こだいこうこく",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "otc:supple",
+  "relatedTerms": [
+   "ot-tekiseikokoku",
+   "ot-konokoka"
+  ],
+  "description": "実際より 大げさに 効きめを うたう 広告です。薬などの 誇大広告は 法律で 禁止されて います。"
+ },
+ {
+  "id": "ot-tekiseikokoku",
+  "name": "適正広告基準",
+  "reading": "てきせいこうこくきじゅん",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "otc:supple",
+  "relatedTerms": [
+   "ot-kodaikokoku",
+   "ot-konokoka"
+  ],
+  "description": "薬などの 広告が 正しく、ゆきすぎない ように する ための 国の 基準です。薬の 広告を 作る ときの よりどころに なります。"
+ },
+ {
+  "id": "ot-keiji",
+  "name": "掲示",
+  "reading": "けいじ",
+  "journey": "otc",
+  "category": "決まりと 表示",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "otc:mise",
+  "relatedTerms": [
+   "ot-nafuda",
+   "ot-riskkubun"
+  ],
+  "description": "薬局や お店の 見やすい 場所に、働く 人の 資格や 薬の 区分の 説明などを はり出す ことです。買う 人が 安心して えらべる ように します。"
+ },
+ {
+  "id": "ot-shokuyaku",
+  "name": "食薬区分",
+  "reading": "しょくやくくぶん",
+  "journey": "otc",
+  "category": "健康食品",
+  "difficulty": 3,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "otc:supple",
+  "relatedTerms": [
+   "ot-iwayuru",
+   "ot-konokoka"
+  ],
+  "description": "ある 原材料が 薬として あつかわれるか、食品に 使えるかを 分ける 国の 考えかたです。薬に あたる 成分は 食品に 使えません。"
+ }
+]

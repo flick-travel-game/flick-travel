@@ -1,0 +1,1204 @@
+[
+ {
+  "id": "kh-kusuri",
+  "name": "薬",
+  "reading": "くすり",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-iyakuhin",
+   "kh-fukusayo"
+  ],
+  "description": "病気や けがを 治したり、つらい 症状を やわらげたり する ための もの。決められた 時間と 量を 守って 使う ことで、はじめて 正しく はたらきます。"
+ },
+ {
+  "id": "kh-iyakuhin",
+  "name": "医薬品",
+  "reading": "いやくひん",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 1,
+  "field": "法規・制度・倫理",
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-kusuri",
+   "kh-shusayo"
+  ],
+  "description": "法律で 決められた 薬の 正式な 呼び名です。安全と 効きめが 国に 確かめられた ものだけが 医薬品として 使われます。"
+ },
+ {
+  "id": "kh-fukusayo",
+  "name": "副作用",
+  "reading": "ふくさよう",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 1,
+  "field": "薬理",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-shusayo",
+   "kh-kusuri"
+  ],
+  "description": "薬の ねらった はたらき いがいに 出る はたらきの こと。ねむく なる、おなかが ゆるく なる などが あります。おかしいと 思ったら 大人と 薬剤師さんに 伝えましょう。"
+ },
+ {
+  "id": "kh-jozai",
+  "name": "錠剤",
+  "reading": "じょうざい",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "kihon:jozai",
+  "relatedTerms": [
+   "kh-capsule",
+   "kh-toui"
+  ],
+  "description": "薬の 粉を ぎゅっと かためて 小さな つぶに した もの。持ち運びやすく、量が いつも 同じに なる ように 作られています。"
+ },
+ {
+  "id": "kh-capsule",
+  "name": "カプセル",
+  "reading": "かぷせる",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "kihon:capsule",
+  "relatedTerms": [
+   "kh-jozai",
+   "kh-kocapsule"
+  ],
+  "description": "ゼラチンなどで できた 小さな 入れものに 薬を つめた もの。苦い 薬を 包んで 飲みやすく します。開けずに そのまま 飲みましょう。"
+ },
+ {
+  "id": "kh-konagusuri",
+  "name": "粉薬",
+  "reading": "こなぐすり",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🥄",
+  "mapNode": "kihon:sanzai",
+  "relatedTerms": [
+   "kh-sanzai",
+   "kh-karyu"
+  ],
+  "description": "さらさらの 粉に なった 飲み薬です。量を 細かく 調整しやすいので、からだの 小さな 子どもの 薬にも よく 使われます。"
+ },
+ {
+  "id": "kh-syrup",
+  "name": "シロップ剤",
+  "reading": "しろっぷざい",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🍯",
+  "mapNode": "kihon:ekizai",
+  "relatedTerms": [
+   "kh-drysyrup",
+   "kh-ekizai"
+  ],
+  "description": "あまい 味を つけた 液体の 飲み薬です。小さな 子どもでも 飲みやすい ように 工夫されています。"
+ },
+ {
+  "id": "kh-megusuri",
+  "name": "目薬",
+  "reading": "めぐすり",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "kihon:tengan",
+  "relatedTerms": [
+   "kh-ganmanko",
+   "kh-tenbi"
+  ],
+  "description": "目に さす 薬です。容器の 先が まつげや 目に ふれない ように さすと、中身が よごれにくく なります。"
+ },
+ {
+  "id": "kh-shippu",
+  "name": "湿布",
+  "reading": "しっぷ",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "kihon:nanko",
+  "relatedTerms": [
+   "kh-papu",
+   "kh-chofu"
+  ],
+  "description": "はだに 貼って 使う 薬の ひとつです。貼った ところから 薬が しみこみ、痛みや はれを やわらげます。"
+ },
+ {
+  "id": "kh-nanko",
+  "name": "軟膏",
+  "reading": "なんこう",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "kihon:nanko",
+  "relatedTerms": [
+   "kh-cream",
+   "kh-ganmanko"
+  ],
+  "description": "はだに ぬる、やわらかい あぶらのような 薬です。はだを おおって 守りながら、薬を とどけます。"
+ },
+ {
+  "id": "kh-shokuzen",
+  "name": "食前",
+  "reading": "しょくぜん",
+  "journey": "kihon",
+  "category": "飲む 時間",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "kihon:jikan",
+  "relatedTerms": [
+   "kh-shokugo",
+   "kh-shokkan"
+  ],
+  "description": "食事の 少し 前の こと。食べものが 入る 前に 飲むと よく はたらく 薬で 使われる 言いかたです。"
+ },
+ {
+  "id": "kh-shokugo",
+  "name": "食後",
+  "reading": "しょくご",
+  "journey": "kihon",
+  "category": "飲む 時間",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "kihon:jikan",
+  "relatedTerms": [
+   "kh-shokuzen",
+   "kh-shokkan"
+  ],
+  "description": "食事が 終わった あとの こと。胃を あらしにくい ことや、飲み忘れにくい ことから、多くの 薬で 使われる 言いかたです。"
+ },
+ {
+  "id": "kh-shokkan",
+  "name": "食間",
+  "reading": "しょっかん",
+  "journey": "kihon",
+  "category": "飲む 時間",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "kihon:jikan",
+  "relatedTerms": [
+   "kh-shokuzen",
+   "kh-shokugo"
+  ],
+  "description": "食事と 食事の あいだの こと。食事の とちゅうに 飲む と いう 意味では ありません。おなかが すいている ときに 飲む ほうが よい 薬で 使われます。"
+ },
+ {
+  "id": "kh-nerumae",
+  "name": "寝る前",
+  "reading": "ねるまえ",
+  "journey": "kihon",
+  "category": "飲む 時間",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "kihon:jikan",
+  "relatedTerms": [
+   "kh-shushinzen",
+   "kh-shokugo"
+  ],
+  "description": "夜、ねむる 少し 前の こと。夜の あいだに はたらいて ほしい 薬などで 使われる 飲む 時間です。"
+ },
+ {
+  "id": "kh-nomiwasure",
+  "name": "飲み忘れ",
+  "reading": "のみわすれ",
+  "journey": "kihon",
+  "category": "飲む 時間",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "kihon:jikan",
+  "relatedTerms": [
+   "kh-shokugo",
+   "kh-tadashii"
+  ],
+  "description": "決められた 時間に 薬を 飲み忘れて しまう こと。気づいた ときに どう すれば よいかは 薬に よって ちがうので、まとめて 飲まずに 薬剤師さんに 聞きましょう。"
+ },
+ {
+  "id": "kh-mizude",
+  "name": "水で飲む",
+  "reading": "みずでのむ",
+  "journey": "kihon",
+  "category": "飲む 時間",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🚰",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-nomiawase",
+   "kh-jozai"
+  ],
+  "description": "飲み薬は、たっぷりの 水か ぬるま湯で 飲むのが きほんです。お茶や ジュースでは 薬の はたらきが 変わる ものも あります。"
+ },
+ {
+  "id": "kh-hokan",
+  "name": "保管",
+  "reading": "ほかん",
+  "journey": "kihon",
+  "category": "保管と 期限",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "kihon:hokan",
+  "relatedTerms": [
+   "kh-yukokigen",
+   "kh-todokanai"
+  ],
+  "description": "薬を しまって おく こと。日の 当たらない、すずしくて しめりけの 少ない ところに しまうのが きほんです。"
+ },
+ {
+  "id": "kh-yukokigen",
+  "name": "有効期限",
+  "reading": "ゆうこうきげん",
+  "journey": "kihon",
+  "category": "保管と 期限",
+  "difficulty": 1,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "kihon:hokan",
+  "relatedTerms": [
+   "kh-shiyokigen",
+   "kh-hokan"
+  ],
+  "description": "薬が 品質を たもって 使える 期限です。期限を すぎた 薬は 使わず、まよったら 薬剤師さんに 聞きましょう。"
+ },
+ {
+  "id": "kh-todokanai",
+  "name": "子どもの手の届かないところ",
+  "reading": "こどものてのとどかないところ",
+  "journey": "kihon",
+  "category": "保管と 期限",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "kihon:hokan",
+  "relatedTerms": [
+   "kh-hokan",
+   "kh-kusuri"
+  ],
+  "description": "薬を しまう ときの 大切な 決まりです。小さな 子どもが まちがえて 口に 入れない ように、高い ところや 開けにくい 場所に しまいます。"
+ },
+ {
+  "id": "kh-tadashii",
+  "name": "薬の正しい使い方",
+  "reading": "くすりのただしいつかいかた",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 1,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-kusuri",
+   "kh-nomiwasure"
+  ],
+  "description": "時間・量・飲みかたを 守る、人の 薬を 飲まない、おかしいと 思ったら 相談する。薬を 安全に 使う ための 決まりです。"
+ },
+ {
+  "id": "kh-shusayo",
+  "name": "主作用",
+  "reading": "しゅさよう",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 2,
+  "field": "薬理",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-fukusayo",
+   "kh-yakko"
+  ],
+  "description": "薬が ほんらい ねらっている はたらきの こと。熱を 下げる 薬なら、熱を 下げる はたらきが 主作用です。"
+ },
+ {
+  "id": "kh-yakko",
+  "name": "薬効",
+  "reading": "やっこう",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 2,
+  "field": "薬理",
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-shusayo",
+   "kh-kusuri"
+  ],
+  "description": "薬の 効きめの こと。薬剤師は、薬効が きちんと 出ているか、患者さんの 話を 聞いて 確かめます。"
+ },
+ {
+  "id": "kh-zaikei",
+  "name": "剤形",
+  "reading": "ざいけい",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-jozai",
+   "kh-sanzai"
+  ],
+  "description": "錠剤・粉・液体・ぬり薬など、薬の 形の こと。同じ 成分でも、使う 人や 目的に 合わせて 形を えらびます。"
+ },
+ {
+  "id": "kh-sanzai",
+  "name": "散剤",
+  "reading": "さんざい",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🥄",
+  "mapNode": "kihon:sanzai",
+  "relatedTerms": [
+   "kh-konagusuri",
+   "kh-karyu"
+  ],
+  "description": "粉の 形の 薬の 正式な 呼び名です。薬局では 細かく はかって、飲む 回ぶんずつ 分けて お渡しする ことが あります。"
+ },
+ {
+  "id": "kh-karyu",
+  "name": "顆粒剤",
+  "reading": "かりゅうざい",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧂",
+  "mapNode": "kihon:sanzai",
+  "relatedTerms": [
+   "kh-sanzai",
+   "kh-konagusuri"
+  ],
+  "description": "粉を 小さな つぶに まとめた 薬です。粉より 飛びちりにくく、口の 中で べたつきにくいのが 特ちょうです。"
+ },
+ {
+  "id": "kh-ekizai",
+  "name": "液剤",
+  "reading": "えきざい",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "kihon:ekizai",
+  "relatedTerms": [
+   "kh-syrup",
+   "kh-kendaku"
+  ],
+  "description": "液体の 形の 薬を まとめた 呼び名です。飲みこむ 力が 弱い 人でも 飲みやすい 形です。"
+ },
+ {
+  "id": "kh-drysyrup",
+  "name": "ドライシロップ",
+  "reading": "どらいしろっぷ",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🍬",
+  "mapNode": "kihon:ekizai",
+  "relatedTerms": [
+   "kh-syrup",
+   "kh-konagusuri"
+  ],
+  "description": "水に とかして シロップに できる 粉や つぶの 薬です。液体の ままだと 変わりやすい 薬を、粉の 形で 長く たもつ 工夫です。"
+ },
+ {
+  "id": "kh-cream",
+  "name": "クリーム剤",
+  "reading": "くりーむざい",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "kihon:nanko",
+  "relatedTerms": [
+   "kh-nanko",
+   "kh-lotion"
+  ],
+  "description": "水と あぶらを まぜた ぬり薬です。軟膏より べたつきが 少なく、はだに のびやすいのが 特ちょうです。"
+ },
+ {
+  "id": "kh-lotion",
+  "name": "ローション剤",
+  "reading": "ろーしょんざい",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kihon:nanko",
+  "relatedTerms": [
+   "kh-cream",
+   "kh-nanko"
+  ],
+  "description": "さらっと した 液体の ぬり薬です。かみの 毛の ある ところなど、広い はんいに ぬりやすい 形です。"
+ },
+ {
+  "id": "kh-chofu",
+  "name": "貼付剤",
+  "reading": "ちょうふざい",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "kihon:nanko",
+  "relatedTerms": [
+   "kh-shippu",
+   "kh-tape"
+  ],
+  "description": "はだに 貼って 使う 薬の 正式な 呼び名です。はだから 薬を しみこませて、からだの 中や 貼った 場所に とどけます。",
+  "acceptedReadings": [
+   "ちょうふざい",
+   "てんぷざい"
+  ]
+ },
+ {
+  "id": "kh-tenbi",
+  "name": "点鼻薬",
+  "reading": "てんびやく",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 2,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "kihon:tengan",
+  "relatedTerms": [
+   "kh-megusuri",
+   "kh-tenji"
+  ],
+  "description": "鼻の あなに 入れる 薬です。鼻水や 鼻づまりなどの とき、鼻の 中に 直接 とどけます。"
+ },
+ {
+  "id": "kh-tenji",
+  "name": "点耳薬",
+  "reading": "てんじやく",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 2,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "kihon:tengan",
+  "relatedTerms": [
+   "kh-tenbi",
+   "kh-megusuri"
+  ],
+  "description": "耳の あなに 入れる 薬です。冷たい まま 入れると めまいが する ことが あるので、手で あたためてから 使います。"
+ },
+ {
+  "id": "kh-ugai",
+  "name": "うがい薬",
+  "reading": "うがいぐすり",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 2,
+  "field": "衛生",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "kihon:tengan",
+  "relatedTerms": [
+   "kh-troche",
+   "kh-kusuri"
+  ],
+  "description": "水で うすめて のどや 口の 中を すすぐ 薬です。飲みこまずに 使う 外用薬の なかまです。"
+ },
+ {
+  "id": "kh-troche",
+  "name": "トローチ",
+  "reading": "とろーち",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🍬",
+  "mapNode": "kihon:jozai",
+  "relatedTerms": [
+   "kh-ugai",
+   "kh-jozai"
+  ],
+  "description": "口の 中で ゆっくり とかして、のどや 口に はたらかせる 錠剤です。かんだり 飲みこんだり しないで 使います。"
+ },
+ {
+  "id": "kh-kyunyu",
+  "name": "吸入薬",
+  "reading": "きゅうにゅうやく",
+  "journey": "kihon",
+  "category": "注射と 吸入",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "kihon:kyunyu",
+  "relatedTerms": [
+   "kh-aerosol",
+   "kh-funmatsu"
+  ],
+  "description": "息と いっしょに 吸いこんで、気管支や 肺に 直接 とどける 薬です。正しく 吸えるように、薬剤師が 吸いかたを 練習します。"
+ },
+ {
+  "id": "kh-zazai",
+  "name": "坐剤",
+  "reading": "ざざい",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "kihon:zazai",
+  "relatedTerms": [
+   "kh-kyunyu",
+   "kh-chusha"
+  ],
+  "description": "おしりから 入れる 薬です。体温で とけて、腸の 粘膜から 吸収されます。口から 飲むのが むずかしい ときにも 使えます。"
+ },
+ {
+  "id": "kh-chusha",
+  "name": "注射薬",
+  "reading": "ちゅうしゃやく",
+  "journey": "kihon",
+  "category": "注射と 吸入",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💉",
+  "mapNode": "kihon:chusha",
+  "relatedTerms": [
+   "kh-tenteki",
+   "kh-johmyaku"
+  ],
+  "description": "針を 使って からだの 中に 入れる 薬です。病院で お医者さんや 看護師さんが 使い、薬剤師は 準備や 確認を 受けもちます。"
+ },
+ {
+  "id": "kh-tenteki",
+  "name": "点滴",
+  "reading": "てんてき",
+  "journey": "kihon",
+  "category": "注射と 吸入",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧑‍⚕️",
+  "mapNode": "kihon:chusha",
+  "relatedTerms": [
+   "kh-chusha",
+   "kh-johmyaku"
+  ],
+  "description": "薬の 入った 液を、少しずつ 時間を かけて 血管に 入れる 方法です。ゆっくり 入れる ことで、からだへの 負担を 少なく します。"
+ },
+ {
+  "id": "kh-tonpuku",
+  "name": "頓服",
+  "reading": "とんぷく",
+  "journey": "kihon",
+  "category": "飲む 時間",
+  "difficulty": 2,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🆘",
+  "mapNode": "kihon:jikan",
+  "relatedTerms": [
+   "kh-shokugo",
+   "kh-fukuyo"
+  ],
+  "description": "毎日 決まった 時間では なく、熱や 痛みなど 症状が 出た ときに 飲む 薬の 使いかたです。つぎに 飲むまで あける 時間も 守ります。"
+ },
+ {
+  "id": "kh-fukuyo",
+  "name": "服用",
+  "reading": "ふくよう",
+  "journey": "kihon",
+  "category": "飲む 時間",
+  "difficulty": 2,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🥛",
+  "mapNode": "kihon:jikan",
+  "relatedTerms": [
+   "kh-naifuku",
+   "kh-yoho"
+  ],
+  "description": "薬を 飲む ことの 正式な 言いかたです。薬の 説明では「食後に 服用」のように 使われます。"
+ },
+ {
+  "id": "kh-naifuku",
+  "name": "内服薬",
+  "reading": "ないふくやく",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-gaiyo",
+   "kh-fukuyo"
+  ],
+  "description": "口から 飲んで 使う 薬の こと。錠剤・カプセル・粉薬・シロップなどが あります。"
+ },
+ {
+  "id": "kh-gaiyo",
+  "name": "外用薬",
+  "reading": "がいようやく",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "kihon:nanko",
+  "relatedTerms": [
+   "kh-naifuku",
+   "kh-nanko"
+  ],
+  "description": "からだの 外がわに 使う 薬の こと。ぬり薬・貼り薬・目薬・坐剤などが あり、飲んでは いけません。"
+ },
+ {
+  "id": "kh-nomiawase",
+  "name": "飲み合わせ",
+  "reading": "のみあわせ",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 2,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-mizude",
+   "kh-kusuri"
+  ],
+  "description": "薬と 薬、薬と 食べものを いっしょに とった ときの えいきょうの こと。気に なる ときは、お薬手帳を 見せて 薬剤師さんに 聞くのが 安心です。"
+ },
+ {
+  "id": "kh-reisho",
+  "name": "冷所保存",
+  "reading": "れいしょほぞん",
+  "journey": "kihon",
+  "category": "保管と 期限",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "kihon:hokan",
+  "relatedTerms": [
+   "kh-shitsuon",
+   "kh-hokan"
+  ],
+  "description": "冷たい ところで しまう よう 決められた 薬の 保管の しかたです。冷蔵庫に 入れても、こおらせては いけない 薬が 多いので 注意します。"
+ },
+ {
+  "id": "kh-shako",
+  "name": "遮光",
+  "reading": "しゃこう",
+  "journey": "kihon",
+  "category": "保管と 期限",
+  "difficulty": 2,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🕶️",
+  "mapNode": "kihon:hokan",
+  "relatedTerms": [
+   "kh-reisho",
+   "kh-kimitsu"
+  ],
+  "description": "光を さえぎる こと。光に 当たると 変わって しまう 薬は、色の ついた 容器や 袋に 入れて 守ります。"
+ },
+ {
+  "id": "kh-shushinzen",
+  "name": "就寝前",
+  "reading": "しゅうしんぜん",
+  "journey": "kihon",
+  "category": "飲む 時間",
+  "difficulty": 3,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🛏️",
+  "mapNode": "kihon:jikan",
+  "relatedTerms": [
+   "kh-nerumae",
+   "kh-yoho"
+  ],
+  "description": "寝る前の 正式な 言いかたです。薬袋や 処方箋では、この 書きかたで 飲む 時間が 示されます。"
+ },
+ {
+  "id": "kh-shitsuon",
+  "name": "室温保存",
+  "reading": "しつおんほぞん",
+  "journey": "kihon",
+  "category": "保管と 期限",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "kihon:hokan",
+  "relatedTerms": [
+   "kh-reisho",
+   "kh-kimitsu"
+  ],
+  "description": "ふつうの 部屋の 温度で しまう 保管の しかたです。日本薬局方では、冷所や 常温と 区別して 温度の はんいが 決められています。"
+ },
+ {
+  "id": "kh-shiyokigen",
+  "name": "使用期限",
+  "reading": "しようきげん",
+  "journey": "kihon",
+  "category": "保管と 期限",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "kihon:hokan",
+  "relatedTerms": [
+   "kh-yukokigen",
+   "kh-kaifugo"
+  ],
+  "description": "開けていない 状態で、正しく しまった ときに 品質が たもてる 期限です。開けた あとは、これより 早く 使えなく なる ことが あります。"
+ },
+ {
+  "id": "kh-kaifugo",
+  "name": "開封後",
+  "reading": "かいふうご",
+  "journey": "kihon",
+  "category": "保管と 期限",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "📭",
+  "mapNode": "kihon:hokan",
+  "relatedTerms": [
+   "kh-shiyokigen",
+   "kh-megusuri"
+  ],
+  "description": "容器を 開けた あとの こと。目薬や シロップなどは 開けると 空気や ばいきんに ふれるので、使える 期間が 短く なります。"
+ },
+ {
+  "id": "kh-kimitsu",
+  "name": "気密容器",
+  "reading": "きみつようき",
+  "journey": "kihon",
+  "category": "保管と 期限",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "kihon:hokan",
+  "relatedTerms": [
+   "kh-shitsuon",
+   "kh-shako"
+  ],
+  "description": "外から 水分などが 入りにくく、中の 薬が しめったり かわいたり しない ように 作った 入れものです。日本薬局方で 決められた 容器の 種類の ひとつです。"
+ },
+ {
+  "id": "kh-yakutai",
+  "name": "薬袋",
+  "reading": "やくたい",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 3,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "🛍️",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-yoho",
+   "kh-shushinzen"
+  ],
+  "description": "薬局で 薬を 入れて 渡す 袋の こと。名前・飲みかた・飲む 時間などが 書かれていて、患者さんが まちがえずに 使える ように します。",
+  "acceptedReadings": [
+   "やくたい",
+   "くすりぶくろ"
+  ]
+ },
+ {
+  "id": "kh-yoho",
+  "name": "用法",
+  "reading": "ようほう",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 3,
+  "field": "実務",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-fukuyo",
+   "kh-yakutai"
+  ],
+  "description": "薬を いつ どう やって 使うかの こと。食後・寝る前・ぬる・貼るなど、使いかたを 正しく 伝えるのも 薬剤師の 仕事です。"
+ },
+ {
+  "id": "kh-toui",
+  "name": "糖衣錠",
+  "reading": "とういじょう",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🍭",
+  "mapNode": "kihon:jozai",
+  "relatedTerms": [
+   "kh-film",
+   "kh-sojo"
+  ],
+  "description": "錠剤の まわりを 砂糖の 衣で つつんだ もの。苦みや においを かくして、飲みやすく する 工夫です。"
+ },
+ {
+  "id": "kh-film",
+  "name": "フィルムコーティング錠",
+  "reading": "ふぃるむこーてぃんぐじょう",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "kihon:jozai",
+  "relatedTerms": [
+   "kh-toui",
+   "kh-sojo"
+  ],
+  "description": "錠剤の まわりを うすい 膜で おおった もの。糖衣錠より うすく 小さく でき、苦みを かくしたり 光や 湿気から 守ったり します。"
+ },
+ {
+  "id": "kh-sojo",
+  "name": "素錠",
+  "reading": "そじょう",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "⚪",
+  "mapNode": "kihon:jozai",
+  "relatedTerms": [
+   "kh-toui",
+   "kh-film"
+  ],
+  "description": "まわりを 何も おおっていない、粉を かためた ままの 錠剤です。いちばん 基本の 錠剤の 形です。"
+ },
+ {
+  "id": "kh-chewable",
+  "name": "チュアブル錠",
+  "reading": "ちゅあぶるじょう",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "😋",
+  "mapNode": "kihon:jozai",
+  "relatedTerms": [
+   "kh-sojo",
+   "kh-troche"
+  ],
+  "description": "かんで 飲む ように 作られた 錠剤です。水が 少なくても 飲めるので、子どもの 薬などに 使われます。"
+ },
+ {
+  "id": "kh-kocapsule",
+  "name": "硬カプセル",
+  "reading": "こうかぷせる",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "kihon:capsule",
+  "relatedTerms": [
+   "kh-capsule",
+   "kh-nancapsule"
+  ],
+  "description": "ふたと 本体の ふたつの つつを はめあわせた カプセルです。中に 粉や つぶの 薬を つめます。"
+ },
+ {
+  "id": "kh-nancapsule",
+  "name": "軟カプセル",
+  "reading": "なんかぷせる",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "kihon:capsule",
+  "relatedTerms": [
+   "kh-kocapsule",
+   "kh-nyuzai"
+  ],
+  "description": "やわらかい 膜で 液体や あぶらの 薬を とじこめた カプセルです。つなぎ目が なく、まるい 形の ものも あります。"
+ },
+ {
+  "id": "kh-kendaku",
+  "name": "懸濁剤",
+  "reading": "けんだくざい",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🥛",
+  "mapNode": "kihon:ekizai",
+  "relatedTerms": [
+   "kh-nyuzai",
+   "kh-ekizai"
+  ],
+  "description": "水に とけない 薬の 細かい つぶを、液体の 中に 散らした 薬です。時間が たつと しずむので、使う 前に よく ふります。"
+ },
+ {
+  "id": "kh-nyuzai",
+  "name": "乳剤",
+  "reading": "にゅうざい",
+  "journey": "kihon",
+  "category": "飲み薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🥛",
+  "mapNode": "kihon:ekizai",
+  "relatedTerms": [
+   "kh-kendaku",
+   "kh-nancapsule"
+  ],
+  "description": "あぶらと 水を、つぶに して まぜあわせた 白っぽい 液体の 薬です。牛乳と 同じ しくみで まざっています。"
+ },
+ {
+  "id": "kh-gel",
+  "name": "ゲル剤",
+  "reading": "げるざい",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "kihon:nanko",
+  "relatedTerms": [
+   "kh-cream",
+   "kh-lotion"
+  ],
+  "description": "ぷるぷるした ゼリーのような ぬり薬です。べたつきが 少なく、ぬった あと さらっと します。"
+ },
+ {
+  "id": "kh-tape",
+  "name": "テープ剤",
+  "reading": "てーぷざい",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "kihon:nanko",
+  "relatedTerms": [
+   "kh-papu",
+   "kh-chofu"
+  ],
+  "description": "うすくて はだに ぴったり つく 貼り薬です。はがれにくく、目立ちにくいのが 特ちょうです。"
+ },
+ {
+  "id": "kh-papu",
+  "name": "パップ剤",
+  "reading": "ぱっぷざい",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "kihon:nanko",
+  "relatedTerms": [
+   "kh-tape",
+   "kh-shippu"
+  ],
+  "description": "水分を ふくんだ、あつみの ある 貼り薬です。湿布と 呼ばれる ものの 多くが これに あたります。"
+ },
+ {
+  "id": "kh-ganmanko",
+  "name": "眼軟膏",
+  "reading": "がんなんこう",
+  "journey": "kihon",
+  "category": "外用薬の 形",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "kihon:tengan",
+  "relatedTerms": [
+   "kh-megusuri",
+   "kh-nanko"
+  ],
+  "description": "目に 使う ための 軟膏です。目に 入っても よい ように、とくに きれいに 作られています。"
+ },
+ {
+  "id": "kh-aerosol",
+  "name": "エアゾール剤",
+  "reading": "えあぞーるざい",
+  "journey": "kihon",
+  "category": "注射と 吸入",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "kihon:kyunyu",
+  "relatedTerms": [
+   "kh-kyunyu",
+   "kh-funmatsu"
+  ],
+  "description": "缶の 中の ガスの 力で、薬を きりのように して 出す 形です。吸入薬や、はだに 吹きつける 薬で 使われます。"
+ },
+ {
+  "id": "kh-funmatsu",
+  "name": "吸入粉末剤",
+  "reading": "きゅうにゅうふんまつざい",
+  "journey": "kihon",
+  "category": "注射と 吸入",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "kihon:kyunyu",
+  "relatedTerms": [
+   "kh-kyunyu",
+   "kh-aerosol"
+  ],
+  "description": "粉の 薬を、自分の 吸う 息の 力で 吸いこむ 吸入薬です。しっかり 強く 吸う ことが 大切なので、薬剤師が 吸いかたを 確かめます。"
+ },
+ {
+  "id": "kh-hika",
+  "name": "皮下注射",
+  "reading": "ひかちゅうしゃ",
+  "journey": "kihon",
+  "category": "注射と 吸入",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "💉",
+  "mapNode": "kihon:chusha",
+  "relatedTerms": [
+   "kh-kinniku",
+   "kh-johmyaku"
+  ],
+  "description": "皮ふの すぐ 下に 薬を 入れる 注射です。ゆっくり 吸収されるので、長く はたらかせたい 薬などで 使われます。"
+ },
+ {
+  "id": "kh-kinniku",
+  "name": "筋肉注射",
+  "reading": "きんにくちゅうしゃ",
+  "journey": "kihon",
+  "category": "注射と 吸入",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "kihon:chusha",
+  "relatedTerms": [
+   "kh-hika",
+   "kh-johmyaku"
+  ],
+  "description": "肩などの 筋肉に 薬を 入れる 注射です。予防接種の 一部などで 使われます。"
+ },
+ {
+  "id": "kh-johmyaku",
+  "name": "静脈注射",
+  "reading": "じょうみゃくちゅうしゃ",
+  "journey": "kihon",
+  "category": "注射と 吸入",
+  "difficulty": 3,
+  "field": "薬剤",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "kihon:chusha",
+  "relatedTerms": [
+   "kh-tenteki",
+   "kh-hika"
+  ],
+  "description": "静脈に 直接 薬を 入れる 注射です。すぐに 血液に のって 全身に とどくので、急いで 効かせたい ときに 使われます。"
+ },
+ {
+  "id": "kh-placebo",
+  "name": "プラセボ",
+  "reading": "ぷらせぼ",
+  "journey": "kihon",
+  "category": "きほん",
+  "difficulty": 3,
+  "field": "薬理",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "kihon:kiso",
+  "relatedTerms": [
+   "kh-yakko",
+   "kh-shusayo"
+  ],
+  "description": "見た目は 薬と 同じでも、薬の 成分が 入っていない もの(偽薬)。新しい 薬の 本当の 効きめを 確かめる 研究で くらべる ために 使われます。",
+  "acceptedReadings": [
+   "ぷらせぼ",
+   "ぎやく"
+  ]
+ }
+]

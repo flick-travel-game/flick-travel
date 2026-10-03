@@ -321,7 +321,7 @@
   "mapNode": "chozai:zaitaku",
   "relatedTerms": [
    "cz-nominokoshi",
-   "cz-shien"
+   "cz-ippoka"
   ],
   "description": "曜日と 時間ごとの ポケットに 薬を 入れておく 道具です。飲んだか どうかが ひと目で わかるので、飲み忘れを ふせぐ 工夫に なります。"
  },
@@ -446,21 +446,22 @@
   "description": "スマートフォンで 使う お薬手帳です。持ち歩きを わすれにくく、家族の 分を まとめて 見られる ものも あります。"
  },
  {
-  "id": "cz-shien",
-  "name": "服薬支援",
-  "reading": "ふくやくしえん",
+  "id": "cz-ippoka",
+  "name": "一包化",
+  "reading": "いっぽうか",
   "journey": "chozai",
-  "category": "服薬指導",
+  "category": "調剤",
   "difficulty": 2,
   "field": "実務",
   "type": "concept",
-  "emoji": "🧺",
-  "mapNode": "chozai:shido",
+  "emoji": "🛍️",
+  "mapNode": "chozai:chozai",
   "relatedTerms": [
+   "cz-bunpo",
    "cz-calendar",
-   "cz-bunpo"
+   "cz-funsai"
   ],
-  "description": "薬を きちんと 使い続けられる ように 手伝う ことです。飲む 時間ごとに 薬を ひとつの 袋に まとめたり、お薬カレンダーを すすめたり して、その 人に 合う 方法を 考えます。"
+  "description": "飲む 時間ごとに、何種類かの 薬を ひとつの 袋に まとめる ことです。飲み忘れや 飲みまちがいを ふせぐ ために、薬が 多い 人などに 行います。しめりやすい 薬など まとめられない ものも あるので、薬剤師が 確かめます。"
  },
  {
   "id": "cz-double",
@@ -697,10 +698,10 @@
   "emoji": "✉️",
   "mapNode": "chozai:chozai",
   "relatedTerms": [
-   "cz-shien",
+   "cz-ippoka",
    "cz-hyoryo"
   ],
-  "description": "粉薬などを 飲む ときの ひとつぶんずつ 小さな 袋に 分ける ことです。機械を 使い、仕上がりも 目で 確かめます。"
+  "description": "粉薬などを 飲む たびの ぶんずつ 小さな 袋に 分ける ことです。機械を 使い、仕上がりも 目で 確かめます。"
  },
  {
   "id": "cz-chofuku",
@@ -717,7 +718,11 @@
    "cz-techo",
    "cz-shohokansa"
   ],
-  "description": "同じ 薬や よく 似た はたらきの 薬が、ちがう 病院から 重ねて 出される ことです。お薬手帳で 見つけて、お医者さんに 確かめます。"
+  "description": "同じ 薬や よく 似た はたらきの 薬が、ちがう 病院から 重ねて 出される ことです。お薬手帳で 見つけて、お医者さんに 確かめます。",
+  "acceptedReadings": [
+   "ちょうふくとうよ",
+   "じゅうふくとうよ"
+  ]
  },
  {
   "id": "cz-fukusayoreki",
@@ -885,7 +890,7 @@
   "emoji": "🪨",
   "mapNode": "chozai:chozai",
   "relatedTerms": [
-   "cz-shien",
+   "cz-ippoka",
    "cz-chozai"
   ],
   "description": "飲みこみにくい 人の ために、錠剤を くだいて 粉に する ことです。工夫が ある 薬は くだくと 性質が 変わるので、薬剤師が できるか どうかを 判断します。"
@@ -1061,7 +1066,7 @@
    "cz-zanyaku",
    "cz-gigi"
   ],
-  "description": "残っている 薬を 数えて、お医者さんと 相談し、次に 出す 薬の 量を 合わせる ことです。むだを へらし、飲みにくさの 理由も いっしょに 考えます。"
+  "description": "残っている 薬を 数えて、お医者さんと 相談し、次に 出す 薬の 日数を 合わせる ことです。むだを へらし、飲みにくさの 理由も いっしょに 考えます。"
  },
  {
   "id": "cz-tashokushu",
@@ -1112,7 +1117,7 @@
    "cz-shohokansa",
    "cz-chozai"
   ],
-  "description": "処方箋で 認められている ときに、ジェネリック医薬品など 同じ 成分の 別の 薬に かえて 調剤する ことです。患者さんの 希望も 聞いて 決めます。"
+  "description": "処方箋で 変更が 禁止されて いない ときに、ジェネリック医薬品など 同じ 成分の 別の 薬に かえて 調剤する ことです。患者さんの 希望も 聞いて 決めます。"
  },
  {
   "id": "cz-soap",

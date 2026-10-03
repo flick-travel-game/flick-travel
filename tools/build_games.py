@@ -165,7 +165,7 @@ GAMES = {
     #   ことばは tools/kyukyutai/terms-<旅>.json → kyukyutai/terms.js(tools/kyukyutai/terms_js.py)。しくみは kyukyutai/kyukyutai.js(KYUKYUTAI。shobo.js を 写した)。
     #   ⚠️⚠️ 手当ての やりかた・薬の 量・診断の しかた・こわい ようすは のせない(決まりは tools/kyukyutai/PROMPT.md)
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/kyukyutai/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)
-    "kyukyutai": dict(name="フリック救急隊員", modes="KYUKYUTAI", kinds=set(), color="#e0202e", hero=False, logo=False,
+    "kyukyutai": dict(name="フリック救急隊員", modes="KYUKYUTAI", kinds=set(), color="#e0202e", hero=True, logo=False,
                   art=dict(word=(900, 200), hero=(1536, 1024), alt="フリック救急隊員", iconv=1),
                   lead="救急の きほん・救命の 手当て・からだを 見る・けがと 病気・現場から 病院へ・救急車と 資器材・救急の しくみと 法律の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の 科目・しくみ図の どこに あるのかが 出るよ。くらしや 救命講習で 聞く ことばから はじめて、消防学校の 救急課程・救急救命士 国家試験の 範囲の めやすの ことばまで。4択クイズで 試験の 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本物の 試験問題では ありません。手当ての やりかたや 薬の 量は のせていないよ。手当ての やりかたは 消防署の 救命講習で 習おう。からだの ぐあいが わるい ときは おうちの 人に 知らせて、こまったら 119番や #7119 に 相談してね。",

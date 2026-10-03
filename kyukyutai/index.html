@@ -428,6 +428,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック救急隊員</h1>
+    <img class="hero" src="hero.webp" alt="フリック救急隊員" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -559,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kyukyutai", name:"フリック救急隊員", modes:(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : []), assets:"../", logo:false, hero:false, dir:"kyukyutai/", lead:"救急の きほん・救命の 手当て・からだを 見る・けがと 病気・現場から 病院へ・救急車と 資器材・救急の しくみと 法律の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の 科目・しくみ図の どこに あるのかが 出るよ。くらしや 救命講習で 聞く ことばから はじめて、消防学校の 救急課程・救急救命士 国家試験の 範囲の めやすの ことばまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本物の 試験問題では ありません。手当ての やりかたや 薬の 量は のせていないよ。手当ての やりかたは 消防署の 救命講習で 習おう。からだの ぐあいが わるい ときは おうちの 人に 知らせて、こまったら 119番や #7119 に 相談してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、命を つなぐ 救急の ことばと しくみが つながって 見えてくるよ。総務省消防庁・厚生労働省・市町村の 消防とは 関係ありません。" };
+const GAME = { id:"kyukyutai", name:"フリック救急隊員", modes:(typeof KYUKYUTAI === "object" ? KYUKYUTAI.modes : []), assets:"../", logo:false, hero:true, dir:"kyukyutai/", lead:"救急の きほん・救命の 手当て・からだを 見る・けがと 病気・現場から 病院へ・救急車と 資器材・救急の しくみと 法律の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の 科目・しくみ図の どこに あるのかが 出るよ。くらしや 救命講習で 聞く ことばから はじめて、消防学校の 救急課程・救急救命士 国家試験の 範囲の めやすの ことばまで。4択クイズで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本物の 試験問題では ありません。手当ての やりかたや 薬の 量は のせていないよ。手当ての やりかたは 消防署の 救命講習で 習おう。からだの ぐあいが わるい ときは おうちの 人に 知らせて、こまったら 119番や #7119 に 相談してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、命を つなぐ 救急の ことばと しくみが つながって 見えてくるよ。総務省消防庁・厚生労働省・市町村の 消防とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

@@ -1,0 +1,1292 @@
+[
+  {
+    "id": "sp-saikido",
+    "name": "再起動",
+    "reading": "さいきどう",
+    "journey": "support",
+    "category": "まず ためす こと",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔁",
+    "mapNode": "support:saikido",
+    "relatedTerms": [
+      "sp-freeze",
+      "sp-outou",
+      "sp-kyoseisaikido"
+    ],
+    "description": "パソコンを いったん 終わらせて、もう一度 立ち上げる ことです。調子が おかしい ときは、まず 再起動で 直る ことが 多いです。",
+    "setsumei": "ひと晩 ねると 頭が すっきり するのと 同じです。まず 試して みましょう。",
+    "yatte": "作業を 保存してから、メニューの 再起動を えらんで みよう。"
+  },
+  {
+    "id": "sp-freeze",
+    "name": "フリーズ",
+    "reading": "ふりーず",
+    "acceptedReadings": [
+      "ふりーず",
+      "かたまる"
+    ],
+    "journey": "support",
+    "category": "症状",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🧊",
+    "mapNode": "support:app",
+    "relatedTerms": [
+      "sp-outou",
+      "sp-machi",
+      "sp-saikido"
+    ],
+    "description": "パソコンや アプリが 固まって、何を しても 動かなく なる ことです。少し 待つと 動きだす ことも あります。"
+  },
+  {
+    "id": "sp-outou",
+    "name": "応答なし",
+    "reading": "おうとうなし",
+    "journey": "support",
+    "category": "症状",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "⏸️",
+    "mapNode": "support:app",
+    "relatedTerms": [
+      "sp-freeze",
+      "sp-machi",
+      "sp-ireno"
+    ],
+    "description": "アプリが 返事を しなく なった 状態です。その アプリだけ 終わらせれば、ほかの 作業は 続けられる ことが 多いです。"
+  },
+  {
+    "id": "sp-osoi",
+    "name": "動きが遅い",
+    "reading": "うごきがおそい",
+    "journey": "support",
+    "category": "症状",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🐢",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-fusoku",
+      "sp-dosa",
+      "sp-memfusoku"
+    ],
+    "description": "アプリの 立ち上がりや 画面の 動きが いつもより 遅い ことです。空き容量・開いて いる アプリの 数・アップデートを 順に 確かめます。",
+    "setsumei": "机の 上が 散らかって いると 作業が 進まないのと 似て いますよ。"
+  },
+  {
+    "id": "sp-backup",
+    "name": "バックアップ",
+    "reading": "ばっくあっぷ",
+    "journey": "support",
+    "category": "バックアップ",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "💾",
+    "mapNode": "support:backup",
+    "relatedTerms": [
+      "sp-autobackup",
+      "sp-fukugen",
+      "sp-sotobackup"
+    ],
+    "description": "大事な データの 写しを、べつの 場所に 取って おく ことです。こわれたり なくしたり しても、写しから もとに もどせます。",
+    "setsumei": "大事な 写真の 焼き増しを、べつの 引き出しに しまって おく ような ものです。"
+  },
+  {
+    "id": "sp-fusoku",
+    "name": "容量不足",
+    "reading": "ようりょうぶそく",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-akiyoryo",
+      "sp-storagekanri",
+      "sp-osoi"
+    ],
+    "description": "ストレージの 空きが 少なく なった 状態です。保存や アップデートが できなく なったり、動きが 遅く なったり します。"
+  },
+  {
+    "id": "sp-akiyoryo",
+    "name": "空き容量",
+    "reading": "あきようりょう",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🫙",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-fusoku",
+      "sp-storagekanri",
+      "sp-cache"
+    ],
+    "description": "ストレージの 中で、まだ 使える 残りの 大きさです。いつも 少し 空けて おくと、パソコンが 気持ちよく 動きます。",
+    "yatte": "設定の アプリで、ストレージの 空き容量を 確かめて みよう。"
+  },
+  {
+    "id": "sp-error",
+    "name": "エラーメッセージ",
+    "reading": "えらーめっせーじ",
+    "journey": "support",
+    "category": "症状",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "⚠️",
+    "mapNode": "support:kiku",
+    "relatedTerms": [
+      "sp-memo",
+      "sp-kiku",
+      "sp-screenshot"
+    ],
+    "description": "うまく いかない ときに 画面に 出る 知らせです。書いて ある 言葉は、原因を さがす 大事な 手がかりに なります。",
+    "setsumei": "パソコンからの お手紙です。そのまま メモして 見せて いただけると 助かります。"
+  },
+  {
+    "id": "sp-atsui",
+    "name": "本体が熱い",
+    "reading": "ほんたいがあつい",
+    "journey": "support",
+    "category": "症状",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔥",
+    "mapNode": "support:dengen",
+    "relatedTerms": [
+      "sp-fan",
+      "sp-osoi",
+      "sp-ketsuro"
+    ],
+    "description": "パソコンが いつもより 熱く なる ことです。ふとんの 上を さけ、重い アプリを 閉じて 様子を 見ます。熱すぎる ときは 使うのを やめます。"
+  },
+  {
+    "id": "sp-fan",
+    "name": "ファンの音",
+    "reading": "ふぁんのおと",
+    "journey": "support",
+    "category": "症状",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🌀",
+    "mapNode": "support:dengen",
+    "relatedTerms": [
+      "sp-atsui",
+      "sp-dosa",
+      "sp-osoi"
+    ],
+    "description": "パソコンの 中の ファンが 回る 音です。重い 作業の ときは ふつうですが、何も して いないのに 続く ときは 原因を さがします。"
+  },
+  {
+    "id": "sp-mizunure",
+    "name": "水ぬれ",
+    "reading": "みずぬれ",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "💧",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-shuriyoyaku",
+      "sp-hoshokikan",
+      "sp-rakka"
+    ],
+    "description": "飲み物などが かかって パソコンが ぬれる ことです。すぐ 電源を 切って 充電器を 外し、電源を 入れなおさずに 修理の 相談を します。",
+    "setsumei": "電源を 入れて 確かめたく なりますが、入れずに すぐ ご相談ください。"
+  },
+  {
+    "id": "sp-rakka",
+    "name": "落下",
+    "reading": "らっか",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🫳",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-wareme",
+      "sp-mizunure",
+      "sp-shuriyoyaku"
+    ],
+    "description": "パソコンを 落とす ことです。見た目が 大丈夫でも 中が いたむ ことが あるので、変な 音や 動きが ないか 確かめます。"
+  },
+  {
+    "id": "sp-wareme",
+    "name": "画面の割れ",
+    "reading": "がめんのわれ",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "💔",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-rakka",
+      "sp-shuriyoyaku",
+      "sp-hoshokikan"
+    ],
+    "description": "落としたり ぶつけたり して 画面に ひびが 入る ことです。ガラスで けがを しない ように、さわらずに 修理を 相談します。"
+  },
+  {
+    "id": "sp-shuriyoyaku",
+    "name": "修理の予約",
+    "reading": "しゅりのよやく",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "📅",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-seiki",
+      "sp-maejunbi",
+      "sp-madoguchi"
+    ],
+    "description": "サポートの 窓口や お店に、修理の 日時を 前もって 決めて おく ことです。症状と 買った 時期を 伝えると 話が 早く なります。"
+  },
+  {
+    "id": "sp-madoguchi",
+    "name": "サポート窓口",
+    "reading": "さぽーとまどぐち",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "☎️",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-shuriyoyaku",
+      "sp-enkaku",
+      "sp-escalation"
+    ],
+    "description": "使いかたや 故障の 相談を 受けつける ところです。電話・チャット・お店など いろいろな 方法で 相談できます。"
+  },
+  {
+    "id": "sp-setsumeisho",
+    "name": "説明書",
+    "reading": "せつめいしょ",
+    "journey": "support",
+    "category": "まず ためす こと",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "📘",
+    "mapNode": "support:settei",
+    "relatedTerms": [
+      "sp-madoguchi",
+      "sp-error",
+      "sp-saikido"
+    ],
+    "description": "使いかたや 困った ときの 対処が 書かれた 案内です。メーカーの ウェブページの 説明も 役に 立ちます。"
+  },
+  {
+    "id": "sp-kiku",
+    "name": "症状を聞く",
+    "reading": "しょうじょうをきく",
+    "journey": "support",
+    "category": "話を 聞く",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "👂",
+    "mapNode": "support:kiku",
+    "relatedTerms": [
+      "sp-memo",
+      "sp-saigen",
+      "sp-kiriwake"
+    ],
+    "description": "「いつから」「何を した あと」「どんな 画面か」を お客さんから ていねいに 聞く ことです。原因を さがす 第一歩に なります。",
+    "setsumei": "お医者さんが「いつから 痛いですか」と 聞くのと 同じです。"
+  },
+  {
+    "id": "sp-machi",
+    "name": "待ちのカーソル",
+    "reading": "まちのかーそる",
+    "journey": "support",
+    "category": "症状",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "⏳",
+    "mapNode": "support:app",
+    "relatedTerms": [
+      "sp-freeze",
+      "sp-outou",
+      "sp-osoi"
+    ],
+    "description": "パソコンが 処理中で 待って ほしい ときに 出る、くるくる 回る しるしです。しばらく 待つと 消える ことが 多いです。"
+  },
+  {
+    "id": "sp-fukugen",
+    "name": "復元",
+    "reading": "ふくげん",
+    "journey": "support",
+    "category": "バックアップ",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "⏪",
+    "mapNode": "support:backup",
+    "relatedTerms": [
+      "sp-backup",
+      "sp-autobackup",
+      "sp-datafukkyu"
+    ],
+    "description": "バックアップから データを 元の 状態に もどす ことです。消して しまった ファイルを 取りもどせる ことが あります。"
+  },
+  {
+    "id": "sp-hoshokikan",
+    "name": "保証期間",
+    "reading": "ほしょうきかん",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 1,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🗓️",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-maker",
+      "sp-seiki",
+      "sp-shuriyoyaku"
+    ],
+    "description": "ふつうに 使って いて こわれた ときに、無料で 修理を 受けられる 期間の ことです。買った 日が わかる レシートなどを とって おくと 安心です。"
+  },
+  {
+    "id": "sp-kiriwake",
+    "name": "切りわけ",
+    "reading": "きりわけ",
+    "journey": "support",
+    "category": "切りわけ",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "support:kiku",
+    "relatedTerms": [
+      "sp-saigen",
+      "sp-kasetsu",
+      "sp-hitotsu"
+    ],
+    "description": "パソコン・アプリ・ネット・周辺機器の どこに 原因が あるかを、ひとつずつ 確かめて しぼりこむ ことです。",
+    "setsumei": "家の 電気が つかない とき、電球か 配線か ブレーカーかを 順に 見る ような ものです。"
+  },
+  {
+    "id": "sp-saigen",
+    "name": "再現",
+    "reading": "さいげん",
+    "journey": "support",
+    "category": "切りわけ",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔂",
+    "mapNode": "support:kiku",
+    "relatedTerms": [
+      "sp-kiriwake",
+      "sp-kiku",
+      "sp-memo"
+    ],
+    "description": "同じ 手順で、同じ 困りごとが もう一度 起きるかを 確かめる ことです。再現できると 原因を 見つけやすく なります。"
+  },
+  {
+    "id": "sp-kyoseisaikido",
+    "name": "強制再起動",
+    "reading": "きょうせいさいきどう",
+    "journey": "support",
+    "category": "まず ためす こと",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "⚡",
+    "mapNode": "support:saikido",
+    "relatedTerms": [
+      "sp-saikido",
+      "sp-freeze",
+      "sp-kidoshinai"
+    ],
+    "description": "まったく 動かない ときに、電源を むりやり 切って 立ち上げなおす ことです。保存して いない 作業は 消えるので、最後の 手段に します。"
+  },
+  {
+    "id": "sp-ireno",
+    "name": "アプリを入れなおす",
+    "reading": "あぷりをいれなおす",
+    "journey": "support",
+    "category": "アプリと 設定",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "support:app",
+    "relatedTerms": [
+      "sp-outou",
+      "sp-saishin",
+      "sp-newuser"
+    ],
+    "description": "調子の 悪い アプリを いったん 消して、もう一度 入れる ことです。アプリの 中の データが 消えないか、先に 確かめます。"
+  },
+  {
+    "id": "sp-shindankino",
+    "name": "診断の機能",
+    "reading": "しんだんのきのう",
+    "journey": "support",
+    "category": "診断",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🩺",
+    "mapNode": "support:shindan",
+    "relatedTerms": [
+      "sp-dosa",
+      "sp-log",
+      "sp-seiki"
+    ],
+    "description": "パソコンの 部品に 問題が ないかを、自分で 調べる ための 機能です。結果を 伝えると、修理の 相談が スムーズに なります。",
+    "setsumei": "パソコンの 健康診断です。どこが 悪いか ヒントを くれますよ。"
+  },
+  {
+    "id": "sp-storagekanri",
+    "name": "ストレージの管理",
+    "reading": "すとれーじのかんり",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🗂️",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-akiyoryo",
+      "sp-fusoku",
+      "sp-cache"
+    ],
+    "description": "何が どれだけ ストレージを 使って いるかを 見て、いらない ものを 整理する ことです。大きな ファイルから 見直すと 効果が あります。",
+    "yatte": "設定の アプリで、何が ストレージを いちばん 使って いるか 見て みよう。"
+  },
+  {
+    "id": "sp-cache",
+    "name": "キャッシュ",
+    "reading": "きゃっしゅ",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🗃️",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-akiyoryo",
+      "sp-storagekanri",
+      "sp-osoi"
+    ],
+    "description": "次に 速く 開ける ように、一度 読んだ データを 一時的に 取って おく ものです。たまりすぎると 場所を とる ことが あります。",
+    "setsumei": "よく 行く お店の 道順を 覚えて おく メモのような ものです。"
+  },
+  {
+    "id": "sp-denchijotai",
+    "name": "電池の状態",
+    "reading": "でんちのじょうたい",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔋",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-rekka",
+      "sp-kaisu",
+      "sp-denchikokan"
+    ],
+    "description": "電池が どれだけ 元気かを 示す 情報です。設定の アプリで 確かめられ、交換の めやすに なります。",
+    "yatte": "設定の アプリで、電池の 状態を 確かめて みよう。"
+  },
+  {
+    "id": "sp-rekka",
+    "name": "電池の劣化",
+    "reading": "でんちのれっか",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🪫",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-denchijotai",
+      "sp-kaisu",
+      "sp-denchikokan"
+    ],
+    "description": "使ううちに 電池が ためられる 電気の 量が 減って いく ことです。だれの パソコンでも 少しずつ 起きる ことで、故障では ありません。",
+    "setsumei": "運動靴の 底が 少しずつ すり減るのと 同じで、使えば 起きる ことです。"
+  },
+  {
+    "id": "sp-kaisu",
+    "name": "充電の回数",
+    "reading": "じゅうでんのかいすう",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔢",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-rekka",
+      "sp-denchijotai",
+      "sp-denchikokan"
+    ],
+    "description": "使った 電気の 量を 足して、電池 まるごと ぶんに なるたびに ひとつ 数える ものです。数が 増えるほど 電池は 少しずつ 疲れて いきます。"
+  },
+  {
+    "id": "sp-autobackup",
+    "name": "自動バックアップの機能",
+    "reading": "じどうばっくあっぷのきのう",
+    "journey": "support",
+    "category": "バックアップ",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🕰️",
+    "mapNode": "support:backup",
+    "relatedTerms": [
+      "sp-backup",
+      "sp-sotobackup",
+      "sp-fukugen"
+    ],
+    "description": "外付けの ドライブなどに、決まった 間隔で 自動で 写しを 取る 機能です。Mac では「Time Machine」と いう 名前です。",
+    "setsumei": "毎日 勝手に 日記の 写しを 取って くれる、まめな 秘書の ような 機能です。"
+  },
+  {
+    "id": "sp-shokika",
+    "name": "初期化",
+    "reading": "しょきか",
+    "journey": "support",
+    "category": "初期化と リサイクル",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🧽",
+    "mapNode": "support:recycle",
+    "relatedTerms": [
+      "sp-shokyo",
+      "sp-backup",
+      "sp-osreinstall"
+    ],
+    "description": "パソコンの 中の データや 設定を 消して、買った ときの 状態に もどす ことです。かならず バックアップを 取ってから、おとなと いっしょに 行います。",
+    "setsumei": "部屋を まっさらに する 大そうじです。大事な 物を 運び出してから に しましょう。"
+  },
+  {
+    "id": "sp-router",
+    "name": "ルーターの再起動",
+    "reading": "るーたーのさいきどう",
+    "journey": "support",
+    "category": "ネットの 困りごと",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "📡",
+    "mapNode": "support:net",
+    "relatedTerms": [
+      "sp-wifitsunagaranai",
+      "sp-netkiriwake",
+      "sp-saikido"
+    ],
+    "description": "ネットに つながらない とき、家の ルーターの 電源を 入れなおす ことです。少し 待って ランプが 落ちついてから 確かめます。"
+  },
+  {
+    "id": "sp-seiki",
+    "name": "正規の修理",
+    "reading": "せいきのしゅうり",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔧",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-shuriyoyaku",
+      "sp-maker",
+      "sp-hoshokikan"
+    ],
+    "description": "メーカーや メーカーが 認めた ところで、決まった 部品を 使って 受ける 修理です。保証が 使えるか どうかも 確かめられます。",
+    "setsumei": "かかりつけの 専門の お医者さんに 診て もらう ような 安心感が あります。"
+  },
+  {
+    "id": "sp-maker",
+    "name": "メーカー保証",
+    "reading": "めーかーほしょう",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🛡️",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-hoshokikan",
+      "sp-seiki",
+      "sp-shuriyoyaku"
+    ],
+    "description": "作った 会社が 決めた 期間、ふつうに 使って いて こわれた ものを 無料で 直して くれる 約束です。落下や 水ぬれは 対象外の ことが 多いです。"
+  },
+  {
+    "id": "sp-shokyo",
+    "name": "データの消去",
+    "reading": "でーたのしょうきょ",
+    "journey": "support",
+    "category": "初期化と リサイクル",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🗑️",
+    "mapNode": "support:recycle",
+    "relatedTerms": [
+      "sp-shokika",
+      "sp-recycle",
+      "sp-backup"
+    ],
+    "description": "パソコンを 手放す 前に、中の 個人の データを 読めない ように 消す ことです。消す 前に、残したい データを 移して おきます。"
+  },
+  {
+    "id": "sp-recycle",
+    "name": "リサイクル",
+    "reading": "りさいくる",
+    "journey": "support",
+    "category": "初期化と リサイクル",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "♻️",
+    "mapNode": "support:recycle",
+    "relatedTerms": [
+      "sp-kogata",
+      "sp-shokyo",
+      "sp-shokika"
+    ],
+    "description": "使わなく なった パソコンを 回収して、中の 材料を また 使う ことです。データを 消してから 出す ことが 大切です。"
+  },
+  {
+    "id": "sp-enkaku",
+    "name": "遠隔サポート",
+    "reading": "えんかくさぽーと",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🛰️",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-madoguchi",
+      "sp-escalation",
+      "sp-screenshot"
+    ],
+    "description": "サポートの 人が、お客さんの 許可を 得て 画面を 見ながら 手伝う しくみです。相手が 正しい 窓口か、かならず 確かめてから 使います。",
+    "setsumei": "電話の 向こうから、いっしょに 画面を のぞいて 道案内する イメージです。"
+  },
+  {
+    "id": "sp-judensarenai",
+    "name": "充電されない",
+    "reading": "じゅうでんされない",
+    "journey": "support",
+    "category": "電源の 困りごと",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔌",
+    "mapNode": "support:dengen",
+    "relatedTerms": [
+      "sp-cable",
+      "sp-atsui",
+      "sp-denchijotai"
+    ],
+    "description": "ケーブルを つないでも 電池が 増えない ことです。べつの コンセントや ケーブルを 試すと、どこが 原因か わかりやすく なります。"
+  },
+  {
+    "id": "sp-makkura",
+    "name": "画面が真っ暗",
+    "reading": "がめんがまっくら",
+    "journey": "support",
+    "category": "画面の 困りごと",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🌑",
+    "mapNode": "support:gamen",
+    "relatedTerms": [
+      "sp-kidoshinai",
+      "sp-judensarenai",
+      "sp-kyoseisaikido"
+    ],
+    "description": "電源を 入れても 何も 映らない ことです。充電・明るさ・外の 画面の つなぎかたを 順に 確かめます。"
+  },
+  {
+    "id": "sp-otonashi",
+    "name": "音が出ない",
+    "reading": "おとがでない",
+    "journey": "support",
+    "category": "アプリと 設定",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔇",
+    "mapNode": "support:settei",
+    "relatedTerms": [
+      "sp-kiriwake",
+      "sp-saigen",
+      "sp-shuhen"
+    ],
+    "description": "スピーカーから 音が 聞こえない ことです。音量・消音・つないだ イヤホンに 音が 行って いないかを 確かめます。",
+    "yatte": "コントロールセンターを ひらいて、音の 出る 先を 確かめて みよう。"
+  },
+  {
+    "id": "sp-wifitsunagaranai",
+    "name": "Wi-Fiにつながらない",
+    "reading": "わいふぁいにつながらない",
+    "journey": "support",
+    "category": "ネットの 困りごと",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "📶",
+    "mapNode": "support:net",
+    "relatedTerms": [
+      "sp-router",
+      "sp-netkiriwake",
+      "sp-saikido"
+    ],
+    "description": "インターネットが 使えない ことです。パソコンの Wi-Fi を いったん 切って 入れなおし、ほかの 機械も つながるかを 比べます。"
+  },
+  {
+    "id": "sp-saishin",
+    "name": "最新の状態にする",
+    "reading": "さいしんのじょうたいにする",
+    "journey": "support",
+    "category": "アプリと 設定",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🆕",
+    "mapNode": "support:settei",
+    "relatedTerms": [
+      "sp-ireno",
+      "sp-saikido",
+      "sp-kiriwake"
+    ],
+    "description": "OSや アプリを いちばん 新しい 版に そろえる ことです。直しが 届いて、困りごとが 消える ことが あります。"
+  },
+  {
+    "id": "sp-insatsu",
+    "name": "印刷できない",
+    "reading": "いんさつできない",
+    "journey": "support",
+    "category": "アプリと 設定",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🖨️",
+    "mapNode": "support:settei",
+    "relatedTerms": [
+      "sp-kiriwake",
+      "sp-wifitsunagaranai",
+      "sp-shuhen"
+    ],
+    "description": "プリンタから 紙が 出て こない ことです。電源・紙と インク・パソコンと 同じ ネットに つながって いるかを 順に 見ます。"
+  },
+  {
+    "id": "sp-cable",
+    "name": "ケーブルを確かめる",
+    "reading": "けーぶるをたしかめる",
+    "journey": "support",
+    "category": "電源の 困りごと",
+    "difficulty": 2,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔍",
+    "mapNode": "support:dengen",
+    "relatedTerms": [
+      "sp-judensarenai",
+      "sp-shuhen",
+      "sp-makkura"
+    ],
+    "description": "ケーブルが しっかり ささって いるか、折れや 傷が ないかを 見る ことです。ほかの ケーブルに かえて 試すと 原因が わかります。"
+  },
+  {
+    "id": "sp-safemode",
+    "name": "セーフモード",
+    "reading": "せーふもーど",
+    "journey": "support",
+    "category": "診断",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🛡️",
+    "mapNode": "support:shindan",
+    "relatedTerms": [
+      "sp-kiriwake",
+      "sp-newuser",
+      "sp-dosa"
+    ],
+    "description": "必要な ものだけで パソコンを 立ち上げる 特別な 起動の しかたです。いつもの 立ち上げと 比べて、原因の 切りわけに 使います。",
+    "setsumei": "荷物を 最小限に して 歩いて みて、重さの 原因を 見つける ような ものです。"
+  },
+  {
+    "id": "sp-log",
+    "name": "ログ",
+    "reading": "ろぐ",
+    "journey": "support",
+    "category": "診断",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "📜",
+    "mapNode": "support:shindan",
+    "relatedTerms": [
+      "sp-shindankino",
+      "sp-dosa",
+      "sp-error"
+    ],
+    "description": "パソコンが 起きた ことを 時間の 順に 書きのこした 記録です。くわしい 人が 原因を 調べる ときの 手がかりに なります。"
+  },
+  {
+    "id": "sp-dosa",
+    "name": "動作状況を見るアプリ",
+    "reading": "どうさじょうきょうをみるあぷり",
+    "journey": "support",
+    "category": "診断",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "📈",
+    "mapNode": "support:shindan",
+    "relatedTerms": [
+      "sp-osoi",
+      "sp-memfusoku",
+      "sp-log"
+    ],
+    "description": "どの アプリが CPU や メモリを どれだけ 使って いるかを 見られる アプリです。動きが 遅い 原因さがしに 役立ちます。",
+    "setsumei": "家の 電気メーターの ように、だれが 力を 使って いるか わかりますよ。"
+  },
+  {
+    "id": "sp-osreinstall",
+    "name": "OSの入れなおし",
+    "reading": "おーえすのいれなおし",
+    "journey": "support",
+    "category": "初期化と リサイクル",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "💿",
+    "mapNode": "support:recycle",
+    "relatedTerms": [
+      "sp-fukkyugamen",
+      "sp-shokika",
+      "sp-backup"
+    ],
+    "description": "OSを もう一度 入れなおして、調子を 立てなおす ことです。かならず バックアップを 取って、おとなや サポートの 人と いっしょに 行います。"
+  },
+  {
+    "id": "sp-fukkyugamen",
+    "name": "復旧の画面",
+    "reading": "ふっきゅうのがめん",
+    "journey": "support",
+    "category": "初期化と リサイクル",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🧰",
+    "mapNode": "support:recycle",
+    "relatedTerms": [
+      "sp-osreinstall",
+      "sp-diskrepair",
+      "sp-fukugen"
+    ],
+    "description": "ふだんの 起動とは べつに 開ける、修復や 入れなおしの ための 特別な 画面です。サポートの 案内に したがって 使います。"
+  },
+  {
+    "id": "sp-sotobackup",
+    "name": "外付けのドライブにバックアップ",
+    "reading": "そとづけのどらいぶにばっくあっぷ",
+    "journey": "support",
+    "category": "バックアップ",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🧳",
+    "mapNode": "support:backup",
+    "relatedTerms": [
+      "sp-autobackup",
+      "sp-backup",
+      "sp-fukugen"
+    ],
+    "description": "外に つなぐ ドライブに、パソコンの 写しを 取って おく ことです。本体が こわれても、べつの 場所に データが 残ります。"
+  },
+  {
+    "id": "sp-kogata",
+    "name": "小型家電リサイクル法",
+    "reading": "こがたかでんりさいくるほう",
+    "journey": "support",
+    "category": "初期化と リサイクル",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "support:recycle",
+    "relatedTerms": [
+      "sp-recycle",
+      "sp-shokyo",
+      "sp-shokika"
+    ],
+    "description": "使わなく なった 小さな 家電を 集めて、中の 金属などを また 使う ための 法律です。パソコンも 対象で、市町村や 国が 認めた 事業者が 回収して います。"
+  },
+  {
+    "id": "sp-kasetsu",
+    "name": "原因の仮説",
+    "reading": "げんいんのかせつ",
+    "journey": "support",
+    "category": "切りわけ",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "💭",
+    "mapNode": "support:kiku",
+    "relatedTerms": [
+      "sp-kiriwake",
+      "sp-hitotsu",
+      "sp-saigen"
+    ],
+    "description": "聞いた 症状から「たぶん ここが 原因」と 予想を 立てる ことです。予想を 立てて 確かめると、早く 原因に たどりつけます。"
+  },
+  {
+    "id": "sp-hitotsu",
+    "name": "ひとつずつ変える",
+    "reading": "ひとつずつかえる",
+    "journey": "support",
+    "category": "切りわけ",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "☝️",
+    "mapNode": "support:kiku",
+    "relatedTerms": [
+      "sp-kiriwake",
+      "sp-kasetsu",
+      "sp-saigen"
+    ],
+    "description": "試す ときは 一度に ひとつだけ 変えて、結果を 見る ことです。いくつも 同時に 変えると、何で 直ったか わからなく なります。",
+    "setsumei": "料理の 味つけと 同じで、調味料は ひとつずつ 足すと 原因が わかりますよ。"
+  },
+  {
+    "id": "sp-memo",
+    "name": "症状のメモ",
+    "reading": "しょうじょうのめも",
+    "journey": "support",
+    "category": "話を 聞く",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🗒️",
+    "mapNode": "support:kiku",
+    "relatedTerms": [
+      "sp-kiku",
+      "sp-error",
+      "sp-screenshot"
+    ],
+    "description": "いつ・何を して・どう なったかを 書きとめて おく ことです。サポートに 相談する ときに、正しく 伝えられます。"
+  },
+  {
+    "id": "sp-screenshot",
+    "name": "スクリーンショットで伝える",
+    "reading": "すくりーんしょっとでつたえる",
+    "journey": "support",
+    "category": "話を 聞く",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "📸",
+    "mapNode": "support:kiku",
+    "relatedTerms": [
+      "sp-memo",
+      "sp-error",
+      "sp-enkaku"
+    ],
+    "description": "困った 画面を 画像に 残して、サポートの 人に 見て もらう ことです。言葉で 説明するより 早く 正確に 伝わります。"
+  },
+  {
+    "id": "sp-kidoshinai",
+    "name": "起動しない",
+    "reading": "きどうしない",
+    "journey": "support",
+    "category": "電源の 困りごと",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🚫",
+    "mapNode": "support:dengen",
+    "relatedTerms": [
+      "sp-judensarenai",
+      "sp-makkura",
+      "sp-fukkyugamen"
+    ],
+    "description": "電源ボタンを 押しても 立ち上がらない ことです。まず 充電して しばらく 待ち、周辺機器を 外してから もう一度 試します。"
+  },
+  {
+    "id": "sp-maejunbi",
+    "name": "修理の前の準備",
+    "reading": "しゅうりのまえのじゅんび",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🎒",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-backup",
+      "sp-shuriyoyaku",
+      "sp-seiki"
+    ],
+    "description": "修理に 出す 前に、バックアップを 取り、保証の わかる 書類を そろえ、症状を まとめて おく ことです。"
+  },
+  {
+    "id": "sp-mitsumori",
+    "name": "修理の見積もり",
+    "reading": "しゅうりのみつもり",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🧾",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-maejunbi",
+      "sp-maker",
+      "sp-seiki"
+    ],
+    "description": "修理に いくら かかりそうかを 前もって 知らせて もらう ことです。直すか 買いかえるかを 決める 材料に なります。"
+  },
+  {
+    "id": "sp-denchikokan",
+    "name": "電池の交換",
+    "reading": "でんちのこうかん",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔋",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-rekka",
+      "sp-denchijotai",
+      "sp-seiki"
+    ],
+    "description": "疲れた 電池を 新しい ものに かえる 修理です。中を 開ける 作業なので、自分では せずに 正規の 修理に 頼みます。",
+    "setsumei": "靴底を 張りかえれば、お気に入りの 靴を また 長く はけるのと 同じです。"
+  },
+  {
+    "id": "sp-kyokan",
+    "name": "共感",
+    "reading": "きょうかん",
+    "journey": "support",
+    "category": "話を 聞く",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🤝",
+    "mapNode": "support:kiku",
+    "relatedTerms": [
+      "sp-kiku",
+      "sp-memo",
+      "sp-escalation"
+    ],
+    "description": "困って いる お客さんの 気持ちを 受けとめる ことです。「それは お困りですね」の ひとことで、落ちついて 話して もらえます。",
+    "setsumei": "まずは 気持ちに 寄りそう ことが、いちばんの 近道ですよ。"
+  },
+  {
+    "id": "sp-escalation",
+    "name": "エスカレーション",
+    "reading": "えすかれーしょん",
+    "journey": "support",
+    "category": "修理と 保証",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🪜",
+    "mapNode": "support:shuri",
+    "relatedTerms": [
+      "sp-madoguchi",
+      "sp-enkaku",
+      "sp-kyokan"
+    ],
+    "description": "自分で 解決できない ときに、よりくわしい 担当の 人へ つなぐ ことです。それまでに 確かめた ことを 引きつぐと 話が 早く なります。"
+  },
+  {
+    "id": "sp-ketsuro",
+    "name": "結露",
+    "reading": "けつろ",
+    "journey": "support",
+    "category": "症状",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🌫️",
+    "mapNode": "support:dengen",
+    "relatedTerms": [
+      "sp-mizunure",
+      "sp-atsui",
+      "sp-kidoshinai"
+    ],
+    "description": "寒い 場所から 暖かい 部屋に 持ちこんだ とき、中に 水てきが つく ことです。しばらく 置いて 部屋の 温度に なじませてから 電源を 入れます。"
+  },
+  {
+    "id": "sp-shuhen",
+    "name": "周辺機器を外して試す",
+    "reading": "しゅうへんききをはずしてためす",
+    "journey": "support",
+    "category": "切りわけ",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🔌",
+    "mapNode": "support:settei",
+    "relatedTerms": [
+      "sp-kiriwake",
+      "sp-newuser",
+      "sp-kidoshinai"
+    ],
+    "description": "つないで いる 機器を すべて 外して、困りごとが 続くか 確かめる ことです。外して 直れば、原因は つないだ 機器の ほうです。"
+  },
+  {
+    "id": "sp-newuser",
+    "name": "新しいユーザーで試す",
+    "reading": "あたらしいゆーざーでためす",
+    "journey": "support",
+    "category": "切りわけ",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🧑",
+    "mapNode": "support:settei",
+    "relatedTerms": [
+      "sp-shuhen",
+      "sp-safemode",
+      "sp-kiriwake"
+    ],
+    "description": "試しの ユーザーを 作って、同じ 困りごとが 起きるか 見る ことです。起きなければ、もとの ユーザーの 設定に 原因が あります。"
+  },
+  {
+    "id": "sp-netkiriwake",
+    "name": "ネットの切りわけ",
+    "reading": "ねっとのきりわけ",
+    "journey": "support",
+    "category": "ネットの 困りごと",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🌐",
+    "mapNode": "support:net",
+    "relatedTerms": [
+      "sp-router",
+      "sp-wifitsunagaranai",
+      "sp-kiriwake"
+    ],
+    "description": "つながらない 原因が パソコンか、家の ルーターか、ネットの 会社側かを 順に 確かめる ことです。ほかの 機械と 比べると わかりやすく なります。"
+  },
+  {
+    "id": "sp-diskrepair",
+    "name": "ディスクの修復",
+    "reading": "でぃすくのしゅうふく",
+    "journey": "support",
+    "category": "診断",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🧰",
+    "mapNode": "support:shindan",
+    "relatedTerms": [
+      "sp-fukkyugamen",
+      "sp-log",
+      "sp-shindankino"
+    ],
+    "description": "ストレージの 中の 記録の 乱れを 調べて 整える 機能です。ファイルが 開けない ときなどに、サポートの 案内で 使います。"
+  },
+  {
+    "id": "sp-memfusoku",
+    "name": "メモリ不足",
+    "reading": "めもりぶそく",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🧠",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-osoi",
+      "sp-dosa",
+      "sp-fusoku"
+    ],
+    "description": "開いて いる アプリが 多すぎて、メモリが 足りなく なる ことです。使わない アプリや タブを 閉じると 楽に なります。",
+    "setsumei": "机の 上が 書類で いっぱいの 状態です。使わない 物から 片づけましょう。",
+    "yatte": "ブラウザで 使って いない タブを 閉じて みよう。"
+  },
+  {
+    "id": "sp-bocho",
+    "name": "電池の膨張",
+    "reading": "でんちのぼうちょう",
+    "journey": "support",
+    "category": "容量と 電池",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🎈",
+    "mapNode": "support:yoryo",
+    "relatedTerms": [
+      "sp-denchikokan",
+      "sp-atsui",
+      "sp-seiki"
+    ],
+    "description": "古く なった 電池が ふくらむ ことです。本体が 浮いたり ふたが 閉まりにくく なったら、使うのを やめて 押さずに 修理を 相談します。"
+  },
+  {
+    "id": "sp-datafukkyu",
+    "name": "データ復旧",
+    "reading": "でーたふっきゅう",
+    "journey": "support",
+    "category": "バックアップ",
+    "difficulty": 3,
+    "field": "トラブル・サポート",
+    "type": "concept",
+    "emoji": "🛟",
+    "mapNode": "support:backup",
+    "relatedTerms": [
+      "sp-backup",
+      "sp-fukugen",
+      "sp-sotobackup"
+    ],
+    "description": "こわれた ストレージから データを 取り出そうと する 専門の 作業です。かならず 取りもどせるとは かぎらないので、日ごろの バックアップが 大切です。"
+  }
+]

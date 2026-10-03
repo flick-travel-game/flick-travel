@@ -717,7 +717,7 @@
   題名は けいくんの ChatGPT の 切りぬき(2026-10-03。`tools/yakuzai/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py yakuzai` → `yakuzai/logo-word.webp` 900×258。`logo=True`・`wordv` = 3)。「フリック薬剤師」7字を 読んで 確かめた(「薬剤士」では ない)
   届いたら 四角い 絵 → `tools/yakuzai/art/square-src.png` → `python3 tools/icon_from_square.py yakuzai`(`iconv` +1)/ 題名の 透明 PNG → `tools/yakuzai/art/title-src.png` → `python3 tools/title_from_art.py yakuzai`(`logo=True`・`art.word` を 実寸)/ トップ → `yakuzai/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **薬を 口に 入れる 絵・注射を 打つ 絵・薬の 箱の 字や ロゴ・赤十字**を 描かせない。届いたら まず 字を 切り出して 読む(「薬剤士」に なりやすい)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`(夢のしごと の 章、医師の となり)と 規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-03 に 足した(speed-king #322)
 - 確かめかた: `node tools/play-all.mjs yakuzai/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs yakuzai/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック獣医師(`jui/`。けいくん 2026-10-03「獣医師の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」。まとめは `docs/フリック獣医師-はじめかた.md`)

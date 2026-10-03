@@ -371,9 +371,11 @@
 - 作った 助手とは **別の 助手が 1語ずつ 確かめた**(7つの 旅 ぜんぶ)。おもな 直し: 除細動器(血を 送れなく なった とき)・ターニケット(しめつける 手順を 消した)・パニック発作(パニック障害などで 見られる)・
   虫垂炎 / 気道熱傷(診断の 決めうちを 消した)・救急救命処置(病院に 着いて 入院する までも ふくむ)・包括的指示・静脈路確保(管を 入れる 書きかたを 目的に)・片麻痺(へんまひ。かたまひ も 通る)・構音障害
 - ふりがなは 799とおり 見た。**救急隊員の 中だけで** 直した(`terms_js.py` の `FIX`): 副子 → ふくし(そえこ に なっていた)・養成所 → ようせいじょ・「医療センター」の 切れかた
-- 絵: **まだ 無い**。仮の アイコンは `tools/kyukyutai/placeholder_icon.py`(赤い 地に 白い ハートと 心電図。⚠️ 十字は 描かない)。トップの 絵・題名の 絵は 無い(`hero=False`・`logo=False`。題名は 文字)。
-  届いたら: 四角い 絵 → `tools/kyukyutai/art/square-src.png` → `python3 tools/icon_from_square.py kyukyutai`(iconv +1)/ 題名の 透明 PNG → `tools/kyukyutai/art/title-src.png` → `python3 tools/title_from_art.py kyukyutai` / トップ → `kyukyutai/hero.webp`(`hero=True`・`logo=True`・`art.word` を 実寸に)。
-  ⚠️ 絵に **赤十字の しるし・実在の 消防本部の 名前や マーク・けが人・血・事故の 現場**を 描かせない。届いたら まず 字を 切り出して 読む
+- 絵(2026-10-03): トップは けいくんの ChatGPT の 絵(2回目)`kyukyutai/hero.webp`(1536×1024。`hero=True`)。**アイコン(四角い 絵)と 題名の 絵は まだ**(`logo=False`。題名は 文字。アイコンは 仮の `placeholder_icon.py`。赤い 地に 白い ハートと 心電図。⚠️ 十字は 描かない)
+  - ⚠️ **1回目の 絵は 入れなかった**: 赤い 十字(HOSPITAL の 看板・建物)/ 人の 胸を 押す 絵 / 体温計・血圧の 数字 / ゲームに 無い・まちがった ことば(あんぜん・かくにん・みゃく・しきゅうあつぱく・たんさんそ)/ 4択が やりかたの 問題 / 図鑑の 科目が「救急」/ レベルの 名前。直す 文を わたして 作りなおして もらった
+  - 2回目の のこり 3か所は **絵の 中で 直した**(`tools/kyukyutai/fix_text.py`。Noto Sans CJK JP Bold): しんぱいそせい / えーいーでぃー の 札が 逆(AEDの 箱に しんぱいそせい)→ 入れかえ / 聴診器の 絵に「たいおん」→ ゲームの ことば「ちょうしん」/ 病院の 建物の 青い 十字を 消した
+  - のこりの 絵が 届いたら: 四角い 絵 → `tools/kyukyutai/art/square-src.png` → `python3 tools/icon_from_square.py kyukyutai`(iconv +1)/ 題名の 透明 PNG → `tools/kyukyutai/art/title-src.png` → `python3 tools/title_from_art.py kyukyutai`(`logo=True`・`art.word` を 実寸に)→ speed-king の `HOME_GAMES`・`FLICK_SERIES_GAMES`。
+    ⚠️ 絵に **赤十字・十字の しるし・実在の 消防本部の 名前や マーク・けが人・血・事故の 現場・正常値の 数字**を 描かせない。届いたら まず 字を 切り出して 読む
 - 確かめかた: `node tools/play-all.mjs kyukyutai/`(4とおりの 打ちかたで 全98ステージ)/ `node tools/click-all.mjs kyukyutai/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック弁護士(`bengoshi/`。けいくん 2026-10-01「弁護士になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いと 死刑の 問いに「全部おすすめで」。まとめは `docs/フリック弁護士-はじめかた.md`)

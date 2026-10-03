@@ -709,8 +709,14 @@
 - 作った 助手(5人・2つずつ)とは **別の 助手(5人)が 1語ずつ 確かめた**(約50か所)。おもな 直し: クラウドの 名前の もと(雲が 見えない → 図で 雲の 形に かいた)・SIMロック(新しく 売る スマホは 原則 できない)・ストリーミング(ほとんど 使わない)・
   IPA(国が 作った 組織)・グルーミングと 自画撮り被害を おだやかに(「送って しまっても あなたは 悪く ありません」)・🔞 → 🎂・バイトの 数字・SIMトレイと 検索の 手順を 外した・水ぬれは「大人に 知らせて 電源を 切って もらう」・車の 電話の 歴史の まちがい。
   ふりがなの 読みまちがいは **文を 言いかえて さけた**(通って → とおって・空 → からっぽ・一しゅん → いっしゅん・たんじょう日 → たんじょうび・何か所 → いくつかの 場所 など)。`FIX` には まだ 何も 足していない(`python3 tools/sumaho/ruby_dump.py <旅>` で 見る)
-- 絵: **まだ 無い**(仮の アイコン `tools/sumaho/placeholder_icon.py` = 青い 地に どこの 会社でも ない まるい 四角の スマホと フリックの キー・電波。`hero=False`・`logo=False`)。
-  届いたら 四角い 絵 → `tools/sumaho/art/square-src.png` → `python3 tools/icon_from_square.py sumaho`(`iconv` +1)/ 題名の 透明 PNG → `tools/sumaho/art/title-src.png` → `python3 tools/title_from_art.py sumaho`(`logo=True`・`art.word` を 実寸)/ トップ → `sumaho/hero.webp`(`hero=True`)。
+- 絵(2026-10-03): **トップは けいくんの ChatGPT の 絵(2回目)** `sumaho/hero.webp`(1536×1024。`hero=True`・`wordv` = 2)。
+  ⚠️ **1回目は 入れなかった**: 男の子・女の子の スマホの 背中に **カメラが 2つ ならんだ でっぱり**(本物の 機種に 見える)/ 「ぶるーとぅーす」の 札に **本物の Bluetooth の マーク** /
+  ゲームに 無い ことば 12こ(すまほ・でんわ・ぴんち・げーむ・ろっく・るーる・じかん・おやことやくそく・おてつだい・かな など)。直す 文を わたして 作りなおして もらった
+  2回目は スマホが つるっとした 角の まるい 四角・Bluetooth は スマホと イヤホンの 絵に なり、札 40こ ぜんぶ ゲームに ある 読み。
+  のこった **゛と ゜の まちがい 5つ**(ごじんじょうほう・よそくべんかん・びんちあうと・ばすこーど・すわいぶ)は **絵の 中で 直した**(`tools/sumaho/fix_text.py`。Noto Sans CJK JP Bold)。
+  ⚠️ **゜(ぴ・ぱ・ぷ)の 字は 太く しない**(太くすると 小さな まるが つぶれて また ゛に 見えた)。もとの 絵は 入れものに 入れていない(ほかの ゲームと 同じ)
+- アイコンと 題名は **まだ**(仮の アイコン `tools/sumaho/placeholder_icon.py` = 青い 地に どこの 会社でも ない まるい 四角の スマホと フリックの キー・電波。`logo=False`)。
+  届いたら 四角い 絵 → `tools/sumaho/art/square-src.png` → `python3 tools/icon_from_square.py sumaho`(`iconv` +1)/ 題名の 透明 PNG → `tools/sumaho/art/title-src.png` → `python3 tools/title_from_art.py sumaho`(`logo=True`・`art.word` を 実寸)。
   ⚠️⚠️ 絵を 頼む ときは **りんごの マーク・実在の スマホの 形(カメラの 並びで 機種が わかる もの)・実在の アプリの アイコン・「iPhone」の 字** を 描かせない。届いたら まず 字と マークを 見る(「スマホ旅行」と 字を 足されやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**(題名の ロゴの 字に そろえる)。⚠️ **販売ページ・規約に「iPhone」を 書かない**
 - 確かめかた: `node tools/play-all.mjs sumaho/`(全140ステージ。旅 10×7 + マスター 70)/ `node tools/click-all.mjs sumaho/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`

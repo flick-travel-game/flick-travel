@@ -677,7 +677,8 @@
 - **トップの 絵は 入れた**(2026-10-03。`hanaya/hero.webp`。`hero=True`)。けいくんの ChatGPT の 絵の **4回目**:
   1回目は 札 32こ中 17こが ゲームに 無い / 2回目は レベルの 字「おみせられる」「聞いて」/ 3回目は 「しきんぐり」が 金貨の 山 → 4回目で 帳簿と ペンに。
   のこった「学ぶ 分野」の 札「春の 花」(ゲームでは 植物一般)だけ **絵の 中で 直した**(`tools/hanaya/fix_text.py`)。もとの 絵は 入れものに 入れていない
-- アイコン・題名は まだ(仮の アイコンは `tools/hanaya/placeholder_icon.py` = ピンクの 地に 白い 花。`logo-mark2.webp` も そこから 作った)。届いたら
+- **アイコンも 入れた**(2026-10-03。四角い 絵 `tools/hanaya/art/square-src.png` を 切らずに そのまま。`iconv` = 2。札の 小さい 字は アイコンの 大きさでは 読めない。さくらの 学ぶ分野「春の 花」も そのまま)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+- 題名は まだ。届いたら
   アイコンは 四角い 絵(1254px)を `tools/hanaya/art/square-src.png` に 置いて `python3 tools/icon_from_square.py hanaya` / 題名は 透明 PNG を `tools/hanaya/art/title-src.png` に 置いて `python3 tools/title_from_art.py hanaya`(`logo=True`・`art.word` を 実寸に)。**届いたら まず 字を 切り出して 読む**
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵が 届いてから**
 - 確かめかた: `node tools/play-all.mjs hanaya/`(4とおりの 打ちかたで 全154ステージ。旅 11×7 + マスター 77)/ `node tools/click-all.mjs hanaya/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`

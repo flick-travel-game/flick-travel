@@ -428,6 +428,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック哲学</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリック哲学。本と 地球儀の ならぶ 図書館で 男の子と 女の子と 犬が 哲学の ことばの 札を かこむ 絵" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -559,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"tetsugaku", name:"フリック哲学", modes:(typeof TETSUGAKU === "object" ? TETSUGAKU.modes : []), assets:"../", logo:false, hero:false, dir:"tetsugaku/", lead:"哲学の きほん・古代ギリシャ・ローマ・東洋の 思想・中世から 近代・近代から 現代・よく 生きる(倫理学)・知る ことと 心・社会と 国・日本の 思想の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、分野・しくみ図の どこに あるのかが 出るよ。ときどき 💭 考えて みよう の 問いも 出るよ。考える ことが すきな 子の ことばから はじめて、高校「倫理」の 範囲の めやす、大学の 哲学科の 入門書の ことばまで。哲学者の 年表で、同じ ころに 孔子・ブッダ・ソクラテスが いた ことも わかるよ。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。哲学には 答えが 1つで ない 問いが たくさん あります。自分で 考えて みよう。説明は ひろく 知られた 読みかたの 1つで、どの 考えが 正しいかを 決める ものでは ないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、昔の 人の 問いと いまの 自分の 問いが つながって 見えてくるよ。大学入試センター・大学・学会とは 関係ありません。" };
+const GAME = { id:"tetsugaku", name:"フリック哲学", modes:(typeof TETSUGAKU === "object" ? TETSUGAKU.modes : []), assets:"../", logo:false, hero:true, dir:"tetsugaku/", lead:"哲学の きほん・古代ギリシャ・ローマ・東洋の 思想・中世から 近代・近代から 現代・よく 生きる(倫理学)・知る ことと 心・社会と 国・日本の 思想の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、分野・しくみ図の どこに あるのかが 出るよ。ときどき 💭 考えて みよう の 問いも 出るよ。考える ことが すきな 子の ことばから はじめて、高校「倫理」の 範囲の めやす、大学の 哲学科の 入門書の ことばまで。哲学者の 年表で、同じ ころに 孔子・ブッダ・ソクラテスが いた ことも わかるよ。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。哲学には 答えが 1つで ない 問いが たくさん あります。自分で 考えて みよう。説明は ひろく 知られた 読みかたの 1つで、どの 考えが 正しいかを 決める ものでは ないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、昔の 人の 問いと いまの 自分の 問いが つながって 見えてくるよ。大学入試センター・大学・学会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

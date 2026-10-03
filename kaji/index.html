@@ -428,6 +428,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック家事</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリック家事" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -559,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kaji", name:"フリック家事", modes:(typeof KAJI === "object" ? KAJI.modes : []), assets:"../", logo:false, hero:false, dir:"kaji/", lead:"おうちの 人の 1日・料理と 献立・洗濯と 衣類・掃除と 住まい・子育て・家計と お金・健康と 看病・季節の 行事・名前の ない 家事・家族の 心を 支える ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、ときどき 💐 ありがとう ポイントや 🙋 できる お手伝いが 出るよ。お手伝いを はじめる 子どもの ことばから、家事を まかせられる 人(家庭科の 範囲の めやす)→ 家の 仕事の 専門家(整理収納・食生活・FP3級の ことばの めやす)まで。家の 仕事って こんなに ある。だれかが 毎日 やって くれて いる ことに 気づく ゲームだよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。包丁・火・漂白剤・アイロンは おとなが 使う ものだよ。ゴミの 分けかたは 住んで いる まちで ちがうよ。具合が 悪い ときは おとなや お医者さんに 相談してね。家の 仕事を する 人は お母さんだけ では ないよ。旅を 1つ 終えたら、おうちの 人に「ありがとう」を 言って みよう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、家の 仕事と 家族の つながりが 見えてくるよ。ハウスキーピング協会・FLAネットワーク協会・日本FP協会・金融財政事情研究会とは 関係ありません。" };
+const GAME = { id:"kaji", name:"フリック家事", modes:(typeof KAJI === "object" ? KAJI.modes : []), assets:"../", logo:false, hero:true, dir:"kaji/", lead:"おうちの 人の 1日・料理と 献立・洗濯と 衣類・掃除と 住まい・子育て・家計と お金・健康と 看病・季節の 行事・名前の ない 家事・家族の 心を 支える ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、ときどき 💐 ありがとう ポイントや 🙋 できる お手伝いが 出るよ。お手伝いを はじめる 子どもの ことばから、家事を まかせられる 人(家庭科の 範囲の めやす)→ 家の 仕事の 専門家(整理収納・食生活・FP3級の ことばの めやす)まで。家の 仕事って こんなに ある。だれかが 毎日 やって くれて いる ことに 気づく ゲームだよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。包丁・火・漂白剤・アイロンは おとなが 使う ものだよ。ゴミの 分けかたは 住んで いる まちで ちがうよ。具合が 悪い ときは おとなや お医者さんに 相談してね。家の 仕事を する 人は お母さんだけ では ないよ。旅を 1つ 終えたら、おうちの 人に「ありがとう」を 言って みよう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、家の 仕事と 家族の つながりが 見えてくるよ。ハウスキーピング協会・FLAネットワーク協会・日本FP協会・金融財政事情研究会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

@@ -859,7 +859,10 @@
 - 書いた 助手(3人)とは **別の 助手(3人)が 1語ずつ 確かめた**。おもな 直し: Kidd の 名前の 由来(患者さんの 家族)・顕性(「あらわれやすい」→「あらわれる。強い・すぐれて いる 意味では ない」)・ボンベイ型と H遺伝子・自己血輸血(3つの やりかた)・骨ずい移植で 型が 変わる・占い(「言いあてる」→「占う」)・統計(「確かめられて きた」→「調べられて きた」)。
   表現型 / 同じ型の輸血 は「けい / がた」どちらの 読みでも 通る
 - ふりがなは 確かめ役が `python3 tools/ketsueki/ruby_dump.py <旅>` で 全語 見た。`FIX` に 足した もの: 「A2型」の 型(けい → がた)・赤芽球(せきがきゅう)・ひとつだけの 管(かん → くだ)・骨ずい(ほね → こつ)・常染色体(じょう)。行う・種・通る・何種類 は 文を 言いかえた
-- 絵は まだ 無い: **仮の アイコン**(赤い 地に 白い しずく。`tools/ketsueki/placeholder_icon.py`)・`hero=False`・`logo=False`。
+- **トップの 絵は 入れた**(2026-10-04。`ketsueki/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**:
+  1回目は 札の ことばが 15こ ゲームに 無い・赤い 十字が あって 入れなかった。2回目は 札・4択・題名・レベル ぜんぶ よし。のこった 3か所は **絵の 中で 直した**(`tools/ketsueki/fix_text.py`):
+  「えむえぬかた」→「えむえぬしき」/ くみあわせひょうの 表の 2つの ます(DO・A)→「AO」/ 図鑑の ふだ(くずれ)→「しくみ図の ばしょ」。もとの 絵は 入れものに 入れていない
+- アイコン・題名は まだ: **仮の アイコン**(赤い 地に 白い しずく。`tools/ketsueki/placeholder_icon.py`)・`logo=False`。
   届いたら 四角い 絵 `tools/ketsueki/art/square-src.png` → `python3 tools/icon_from_square.py ketsueki`(`iconv` +1)/ 題名 `tools/ketsueki/art/title-src.png` → `python3 tools/title_from_art.py ketsueki`(`logo=True`・`art.word` を 実寸)/ `ketsueki/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **注射・血が 流れる 絵・けが・赤十字の しるし・血液型ごとに ちがう 表情**を 描かせない。届いたら まず 字を 切り出して 読む(「血液形」「血夜型」に なりやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 題名の 絵が 届いてから(⚠️ 説明に「性格が わかる」と 書かない。「血液型の しくみが わかる」)

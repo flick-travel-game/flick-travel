@@ -580,7 +580,8 @@
   ⚠️ **1回目は 入れなかった**: Instagram・YouTube・TikTok の **本物の ロゴ** / 「かしりる」の 誤字 / **金貨の 山・¥の 袋** / 札 10こが ゲームに 無い ことば。直す 文を わたして 作りなおして もらった。
   2回目は 札を ぜんぶ 切り出して 読み、ゲームに ある 読みで ロゴ・お金の 山も 無い ことを 確かめた(せんでん・くちこみ は 吹き出しと ハート / じぶんのおかね は がま口 / おうえん は 手と ハート)。1の 見出しの うしろの 小さな くずれは 読めない 大きさなので そのまま
 - **アイコンは 入れた**(2026-10-04。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py kigyo`。`iconv` = 2)。題名「フリック起業家」(企業家では ない)・札・4択(答え きぎょう)は ゲームと 合っている。小さい 字は アイコンの 大きさでは 読めない。仮の アイコンの 台本は もう 使わない
-- 題名は **まだ 無い**。(記録)仮の アイコン(`tools/kigyo/placeholder_icon.py`。オレンジの 地に 白い ロケットと 黄色い レモン)。題名は 文字(`hero=False`・`logo=False`)。
+- **題名も 入れた**(2026-10-04。けいくんの ChatGPT の 切りぬき `tools/kigyo/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py kigyo` → `kigyo/logo-word.webp` 900×297。`logo=True`・`wordv` = 3)。「フリック起業家」7字を 読んで 確かめた(企業家では ない。電球と 赤い 矢印つき)
+- (記録)仮の アイコン(`tools/kigyo/placeholder_icon.py`。オレンジの 地に 白い ロケットと 黄色い レモン)。題名は 文字(`hero=False`・`logo=False`)。
   届いたら: 四角い 絵 → `tools/kigyo/art/square-src.png` → `python3 tools/icon_from_square.py kigyo`(`iconv` を +1)/ 題名の 透明 PNG → `tools/kigyo/art/title-src.png` → `python3 tools/title_from_art.py kigyo`(`logo` を True・`art.word` を 実寸に)/ トップ → `kigyo/hero.webp`(`hero` を True)。⚠️ **届いた 絵の 字を かならず 切り出して 読む**(「起業」と「企業」)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **題名の 絵が 届いてから**(名前を ロゴの 字に そろえる ため)
 - 確かめかた: `node tools/play-all.mjs kigyo/`(4とおりの 打ちかたで 全140ステージ。旅 10×7 + マスター 70)/ `node tools/click-all.mjs kigyo/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`・アイコンは `pip install Pillow`

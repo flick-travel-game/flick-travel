@@ -576,7 +576,10 @@
 - 作った 助手(10人。2人ずつ)とは **別の 助手(5人)が 1語ずつ 確かめた**(直しは 約40)。おもな 直し: エフェクチュエーション(「うまく いった」→「経験を 積んだ」起業家)・第二創業(引きついだ 人だけの 話に しない)・赤字(お金が 足りない → 利益が マイナス)・ROE / 自己資本比率(定義を 正確に)・
   補助金(審査・後払い)と 助成金の ちがい・消費税の たとえ(小学生の 屋台は あずからない)・商標(同じ 種類の 商品で 似た 名前)・取締役会(多くの 会社は えらべる)・**下請法は 2026年1月から 中小受託取引適正化法(取適法)**・欲求段階説(5段)
 - ふりがなは 全語(978とおり)見た。**起業家の 中だけで** 直した(`terms_js.py` の `FIX`): 「種」の 段階(たね)・値の つけかた(ね)・売れた 日ほど(ひ)・春夏秋冬の 秋(あき)・公の 場 / 公に(おおやけ)。見かたは `python3 tools/kigyo/ruby_dump.py <旅>`
-- 絵: **まだ 無い**。けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(`tools/kigyo/placeholder_icon.py`。オレンジの 地に 白い ロケットと 黄色い レモン)。題名は 文字(`hero=False`・`logo=False`)。
+- **トップの 絵は 入れた**(2026-10-04。`kigyo/hero.webp` 1536×1024。`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**:
+  ⚠️ **1回目は 入れなかった**: Instagram・YouTube・TikTok の **本物の ロゴ** / 「かしりる」の 誤字 / **金貨の 山・¥の 袋** / 札 10こが ゲームに 無い ことば。直す 文を わたして 作りなおして もらった。
+  2回目は 札を ぜんぶ 切り出して 読み、ゲームに ある 読みで ロゴ・お金の 山も 無い ことを 確かめた(せんでん・くちこみ は 吹き出しと ハート / じぶんのおかね は がま口 / おうえん は 手と ハート)。1の 見出しの うしろの 小さな くずれは 読めない 大きさなので そのまま
+- アイコン・題名は **まだ 無い**。けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(`tools/kigyo/placeholder_icon.py`。オレンジの 地に 白い ロケットと 黄色い レモン)。題名は 文字(`hero=False`・`logo=False`)。
   届いたら: 四角い 絵 → `tools/kigyo/art/square-src.png` → `python3 tools/icon_from_square.py kigyo`(`iconv` を +1)/ 題名の 透明 PNG → `tools/kigyo/art/title-src.png` → `python3 tools/title_from_art.py kigyo`(`logo` を True・`art.word` を 実寸に)/ トップ → `kigyo/hero.webp`(`hero` を True)。⚠️ **届いた 絵の 字を かならず 切り出して 読む**(「起業」と「企業」)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **題名の 絵が 届いてから**(名前を ロゴの 字に そろえる ため)
 - 確かめかた: `node tools/play-all.mjs kigyo/`(4とおりの 打ちかたで 全140ステージ。旅 10×7 + マスター 70)/ `node tools/click-all.mjs kigyo/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`・アイコンは `pip install Pillow`

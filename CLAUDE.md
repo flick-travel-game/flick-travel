@@ -862,7 +862,9 @@
 - **トップの 絵は 入れた**(2026-10-04。`ketsueki/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**:
   1回目は 札の ことばが 15こ ゲームに 無い・赤い 十字が あって 入れなかった。2回目は 札・4択・題名・レベル ぜんぶ よし。のこった 3か所は **絵の 中で 直した**(`tools/ketsueki/fix_text.py`):
   「えむえぬかた」→「えむえぬしき」/ くみあわせひょうの 表の 2つの ます(DO・A)→「AO」/ 図鑑の ふだ(くずれ)→「しくみ図の ばしょ」。もとの 絵は 入れものに 入れていない
-- アイコン・題名は まだ: **仮の アイコン**(赤い 地に 白い しずく。`tools/ketsueki/placeholder_icon.py`)・`logo=False`。
+- **アイコンも 入れた**(2026-10-04。けいくんの 四角い 絵 1254px を 切らずに そのまま。`iconv` = 2)。⚠️ 5の 札「けつえきせんたー」の 建物に **赤い 十字**(赤十字の しるし)が あったので `tools/ketsueki/fix_square.py` で 白く ぬってから `tools/ketsueki/art/square-src.png` に した。
+  札の 小さい 字(Rhようせい が 2つ・ゲームに 無い ことば など)は アイコンの 大きさでは 読めないので そのまま。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+- 題名は まだ(`logo=False`)
   届いたら 四角い 絵 `tools/ketsueki/art/square-src.png` → `python3 tools/icon_from_square.py ketsueki`(`iconv` +1)/ 題名 `tools/ketsueki/art/title-src.png` → `python3 tools/title_from_art.py ketsueki`(`logo=True`・`art.word` を 実寸)/ `ketsueki/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **注射・血が 流れる 絵・けが・赤十字の しるし・血液型ごとに ちがう 表情**を 描かせない。届いたら まず 字を 切り出して 読む(「血液形」「血夜型」に なりやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 題名の 絵が 届いてから(⚠️ 説明に「性格が わかる」と 書かない。「血液型の しくみが わかる」)

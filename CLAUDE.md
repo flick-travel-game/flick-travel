@@ -751,9 +751,9 @@
   のこった 2か所は **絵の 中で 直した**(`tools/pasokon/fix_text.py`。白い 字を 行ごとに 左右の 地の 色を つないで 消し、Noto Sans CJK JP Bold の 白で 書きなおす):
   左下の 図鑑の 札「用語集の ひとこと」→「店員さんの ひとこと」/ レベル3「みらせの」→「おみせの」。もとの 絵は 入れものに 入れていない
   **アイコン**は けいくんの 四角い 絵(1254px。`tools/pasokon/art/square-src.png`)を 切らずに そのまま(`iconv` = 2)。4択の「ぷりれた」の 誤字は アイコンの 大きさでは 読めないので そのまま。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない。
-  **題名は まだ**(`logo=False`)。届いたら 透明 PNG → `tools/pasokon/art/title-src.png` → `python3 tools/title_from_art.py pasokon`(`logo=True`・`art.word` を 実寸・`wordv` +1)。
+  **題名も 入れた**(2026-10-04。けいくんの ChatGPT の 切りぬき `tools/pasokon/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py pasokon` → `pasokon/logo-word.webp` 900×273。`logo=True`・`wordv` = 3)。「フリックパソコン」8字を 読んで 確かめた
   ⚠️⚠️ 絵を 頼む ときは **りんごの マーク・実在の パソコンや スマホの 形・実在の アプリの アイコン・お店の 内装や ロゴ・「Mac」「MacBook」「Apple」の 字** を 描かせない(パソコンの 背中は 犬の 足あとの マークに なっている)。届いたら まず 字と マークを 見る
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **トップの 絵と 題名が 届いてから**(`HOME_GAMES` は 絵が 要る)。⚠️ **販売ページ・規約に「MacBook」「Mac」「Apple」を 書かない**
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`・販売ページ `HOME_GAMES`(夢のしごと の 章、スマホの となり)・規約の 一覧 `FLICK_SERIES_GAMES` に 足した(2026-10-04)。⚠️ **販売ページ・規約に「MacBook」「Mac」「Apple」を 書かない**
 - 確かめかた: `node tools/play-all.mjs pasokon/`(全168ステージ。旅 12×7 + マスター 84)/ `node tools/click-all.mjs pasokon/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック薬剤師(`yakuzai/`。けいくん 2026-10-03「薬剤師の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」。まとめは `docs/フリック薬剤師-はじめかた.md`)

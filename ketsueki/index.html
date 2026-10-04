@@ -424,11 +424,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリック血液型</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="262" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック血液型</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリック血液型" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリック血液型" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -560,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"ketsueki", name:"フリック血液型", modes:(typeof KETSUEKI === "object" ? KETSUEKI.modes : []), assets:"../", logo:false, hero:true, dir:"ketsueki/", lead:"血液の きほん・ABO式の しくみ・Rh式と そのほかの 血液型・血液型の 遺伝・輸血と 献血・めずらしい 血液型・世界の 血液型・動物の 血液型・血液型と 性格の うわさ(日本の 文化)の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 血液型の 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。自分の 血液型を 知る ところから はじめて、高校の 生物の めやす、血液型の 専門家(認定輸血検査技師)の めやすの ことばまで。親子の 組み合わせ表や 輸血の 矢印で しくみも 見られるよ。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。血液型で 性格は 決まりません。人は 一人ひとり ちがいます。性格の 話は 日本で 言われて いる イメージとして だけ 書いて いるよ。これは ことばを おぼえる ゲームです。からだの ことで こまったら 大人に 言って お医者さんへ。本物の 試験問題では ありません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、血液の しくみと 遺伝と 献血が つながって 見えてくるよ。日本赤十字社・病院・学会とは 関係ありません。" };
+const GAME = { id:"ketsueki", name:"フリック血液型", modes:(typeof KETSUEKI === "object" ? KETSUEKI.modes : []), assets:"../", logo:true, hero:true, dir:"ketsueki/", lead:"血液の きほん・ABO式の しくみ・Rh式と そのほかの 血液型・血液型の 遺伝・輸血と 献血・めずらしい 血液型・世界の 血液型・動物の 血液型・血液型と 性格の うわさ(日本の 文化)の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 血液型の 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。自分の 血液型を 知る ところから はじめて、高校の 生物の めやす、血液型の 専門家(認定輸血検査技師)の めやすの ことばまで。親子の 組み合わせ表や 輸血の 矢印で しくみも 見られるよ。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。血液型で 性格は 決まりません。人は 一人ひとり ちがいます。性格の 話は 日本で 言われて いる イメージとして だけ 書いて いるよ。これは ことばを おぼえる ゲームです。からだの ことで こまったら 大人に 言って お医者さんへ。本物の 試験問題では ありません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、血液の しくみと 遺伝と 献血が つながって 見えてくるよ。日本赤十字社・病院・学会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},

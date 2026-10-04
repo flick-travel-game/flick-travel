@@ -311,8 +311,8 @@ GAMES = {
     #   ⚠️⚠️ 性格を 事実として 書かない(🔮 の 旅だけ・言われる イメージ・いい ところ だけ)・悪口・相性の 決めつけ・病気との 結びつけ・家族を うたがわせる 書きかた・医療の やりかた・数字は 出さない(決まりは tools/ketsueki/PROMPT.md)。
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/ketsueki/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
     #   届いたら tools/ketsueki/art/square-src.png → tools/icon_from_square.py ketsueki(iconv を +1)/ title-src.png → tools/title_from_art.py ketsueki(logo を True・art.word を 実寸)/ ketsueki/hero.webp(hero を True)
-    "ketsueki": dict(name="フリック血液型", modes="KETSUEKI", kinds=set(), color="#c2255c", hero=True, logo=False,
-                art=dict(word=(900, 240), hero=(1536, 1024), alt="フリック血液型", iconv=2, wordv=2),
+    "ketsueki": dict(name="フリック血液型", modes="KETSUEKI", kinds=set(), color="#c2255c", hero=True, logo=True,
+                art=dict(word=(900, 262), hero=(1536, 1024), alt="フリック血液型", iconv=2, wordv=3),
                 lead="血液の きほん・ABO式の しくみ・Rh式と そのほかの 血液型・血液型の 遺伝・輸血と 献血・めずらしい 血液型・世界の 血液型・動物の 血液型・血液型と 性格の うわさ(日本の 文化)の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 血液型の 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。自分の 血液型を 知る ところから はじめて、高校の 生物の めやす、血液型の 専門家(認定輸血検査技師)の めやすの ことばまで。親子の 組み合わせ表や 輸血の 矢印で しくみも 見られるよ。4択クイズで 意味を たしかめる 練習も できるよ。",
                 how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。血液型で 性格は 決まりません。人は 一人ひとり ちがいます。性格の 話は 日本で 言われて いる イメージとして だけ 書いて いるよ。これは ことばを おぼえる ゲームです。からだの ことで こまったら 大人に 言って お医者さんへ。本物の 試験問題では ありません。",
                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、血液の しくみと 遺伝と 献血が つながって 見えてくるよ。日本赤十字社・病院・学会とは 関係ありません。"),

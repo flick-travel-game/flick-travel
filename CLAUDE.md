@@ -864,10 +864,10 @@
   「えむえぬかた」→「えむえぬしき」/ くみあわせひょうの 表の 2つの ます(DO・A)→「AO」/ 図鑑の ふだ(くずれ)→「しくみ図の ばしょ」。もとの 絵は 入れものに 入れていない
 - **アイコンも 入れた**(2026-10-04。けいくんの 四角い 絵 1254px を 切らずに そのまま。`iconv` = 2)。⚠️ 5の 札「けつえきせんたー」の 建物に **赤い 十字**(赤十字の しるし)が あったので `tools/ketsueki/fix_square.py` で 白く ぬってから `tools/ketsueki/art/square-src.png` に した。
   札の 小さい 字(Rhようせい が 2つ・ゲームに 無い ことば など)は アイコンの 大きさでは 読めないので そのまま。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
-- 題名は まだ(`logo=False`)
-  届いたら 四角い 絵 `tools/ketsueki/art/square-src.png` → `python3 tools/icon_from_square.py ketsueki`(`iconv` +1)/ 題名 `tools/ketsueki/art/title-src.png` → `python3 tools/title_from_art.py ketsueki`(`logo=True`・`art.word` を 実寸)/ `ketsueki/hero.webp`(`hero=True`)。
+- **題名も 入れた**(2026-10-04。けいくんの ChatGPT の 切りぬき `tools/ketsueki/art/title-src.png` 1672×941 → `python3 tools/title_from_art.py ketsueki` → `ketsueki/logo-word.webp` 900×262。`logo=True`・`wordv` = 3)。「フリック血液型」7字を 読んで 確かめた(血液形・血夜型 では ない)
+  (差しかえる ときは)  届いたら 四角い 絵 `tools/ketsueki/art/square-src.png` → `python3 tools/icon_from_square.py ketsueki`(`iconv` +1)/ 題名 `tools/ketsueki/art/title-src.png` → `python3 tools/title_from_art.py ketsueki`(`logo=True`・`art.word` を 実寸)/ `ketsueki/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **注射・血が 流れる 絵・けが・赤十字の しるし・血液型ごとに ちがう 表情**を 描かせない。届いたら まず 字を 切り出して 読む(「血液形」「血夜型」に なりやすい)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 題名の 絵が 届いてから(⚠️ 説明に「性格が わかる」と 書かない。「血液型の しくみが わかる」)
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`・販売ページ `HOME_GAMES`・規約の 一覧 `FLICK_SERIES_GAMES` に 足した(2026-10-04。⚠️ 説明に「性格が わかる」と 書かない。「血液型の しくみが わかる」)
 - 確かめかた: `node tools/play-all.mjs ketsueki/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs ketsueki/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`、仮の アイコンは `pip install Pillow`
 
 ## フリック家事(`kaji/`。けいくん 2026-10-03「主婦の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。お母さんが家族の為に休み無しでどれほど大変で頑張っているかが伝わる内容がいいね。子ども達や家族がお母さんありがとうと言いたくなる内容がいいね」→ 同じ日「フリック家事にした方が良くない!」→「家事にして」。まとめは `docs/フリック家事-はじめかた.md`)

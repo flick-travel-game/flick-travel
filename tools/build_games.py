@@ -280,8 +280,8 @@ GAMES = {
     #   ⚠️⚠️ 商標を 1語の 答えに しない・機種名・チップの 名前・OSの バージョン・値段・お店の 名前・ありもしない ショートカット・守る しくみの ぬけ道は 出さない(決まりは tools/pasokon/PROMPT.md)。
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/pasokon/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
     #   届いたら tools/pasokon/art/square-src.png → tools/icon_from_square.py pasokon(iconv を +1)/ title-src.png → tools/title_from_art.py pasokon(logo を True・art.word を 実寸)/ pasokon/hero.webp(hero を True)
-    "pasokon": dict(name="フリックパソコン", modes="PASOKON", kinds=set(), color="#495057", hero=False, logo=False,
-                    art=dict(word=(900, 220), hero=(1536, 1024), alt="フリックパソコン", iconv=1, wordv=1),
+    "pasokon": dict(name="フリックパソコン", modes="PASOKON", kinds=set(), color="#495057", hero=True, logo=False,
+                    art=dict(word=(900, 220), hero=(1536, 1024), alt="フリックパソコン", iconv=2, wordv=2),
                     lead="パソコンの しくみと 歴史・えらびかたと 提案・はじめての 設定と 引っ越し・さわって 使う・ファイルと アプリ・ショートカット・スマホ / タブレットとの 連携・作る / 学ぶ・設定と アクセシビリティ・つなぐ 機器と 周辺機器・安全と プライバシー・困った ときと サポートの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、学ぶ 分野・しくみ図の どこに あるのかが 出るよ。ときどき 💬 店員さんの ひとこと で、お客さんに わかりやすく 伝える たとえが 出るよ。ショートカットの 旅では ⌨️ キーの ふだも 出るよ。パソコンを 使いはじめる ことばから、家族や 友だちの パソコンを 手伝える ことば、お店の パソコン担当の 店員さんの ことば(メーカーの サポートの 認定や 家電製品アドバイザーの パソコンの 範囲の めやす)まで。4択クイズで 意味を たしかめる 練習も できるよ。",
                     how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。機種の 名前や 値段・設定の 場所は 年で 変わるので 書いていないよ。ショートカットは アップルの 公式の ページで 確かめた ものだよ。初期化や お金を 使う ことは、おうちの 人と いっしょに。困った ときは すぐ 大人に 相談しよう。本物の 試験問題では ありません。",
                     rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、パソコンの しくみと お客さんへの 説明が つながって 見えてくるよ。Mac・MacBook・macOS は Apple Inc. の 商標です。Windows は Microsoft Corporation の 商標です。アップル・マイクロソフト・お店とは 関係ありません。"),

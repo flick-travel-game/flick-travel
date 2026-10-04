@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリックAI旅行</title>
+<title>フリックAIクリエイター</title>
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
@@ -424,11 +424,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=4" alt="" width="144" height="144" aria-hidden="true">
-      <img class="logo-word" src="logo-word.webp?v=5" alt="" width="900" height="248" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=6" alt="" width="900" height="166" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリックAI旅行</h1>
-    <img class="hero" src="hero.webp?v=5" alt="フリックAI旅行。男の子と 犬が AI・クラウド・データ・API の ことばが うかぶ 空の 島を 旅する 絵" width="1536" height="1024">
+    <h1 class="sr-only">フリックAIクリエイター</h1>
+    <img class="hero" src="hero.webp?v=6" alt="フリックAIクリエイター。男の子と 犬が AI・クラウド・データ・API の ことばが うかぶ 空の 島を 旅する 絵" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -560,12 +560,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"ai", name:"フリックAI旅行", modes:(typeof AITABI === "object" ? AITABI.modes : []), assets:"../", logo:true, hero:true, dir:"ai/", lead:"遊んでいるうちに、AIとWebのことばがわかる。フリックで打つと、ことばの意味・つながる ことば・しくみの図の どこにあるかが 出るよ。知っている ことばから はじめて、点だった知識を 線につなげよう。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。入門は 聞いたことのある ことばから。どのステージも いつも同じ10問なので、タイムをくらべられるよ。英字の ことば(API など)は 日本での ふつうの 読みかたで 打つよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、AI・Web・サービスづくりの しくみが つながって 見えてくるよ。" };
+const GAME = { id:"ai", name:"フリックAIクリエイター", modes:(typeof AITABI === "object" ? AITABI.modes : []), assets:"../", logo:true, hero:true, dir:"ai/", lead:"遊んでいるうちに、AIとWebのことばがわかる。フリックで打つと、ことばの意味・つながる ことば・しくみの図の どこにあるかが 出るよ。知っている ことばから はじめて、点だった知識を 線につなげよう。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。入門は 聞いたことのある ことばから。どのステージも いつも同じ10問なので、タイムをくらべられるよ。英字の ことば(API など)は 日本での ふつうの 読みかたで 打つよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、AI・Web・サービスづくりの しくみが つながって 見えてくるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},
                  {id:"uchu", name:"フリック宇宙図鑑", icon:"🪐", dir:"uchu/"}, {id:"karada", name:"フリックからだ図鑑", icon:"🫀", dir:"karada/"},
-                 {id:"kabu", name:"フリック株式旅行", icon:"🏢", dir:"kabu/"}, {id:"ai", name:"フリックAI旅行", icon:"🤖", dir:"ai/"},
+                 {id:"kabu", name:"フリック株式旅行", icon:"🏢", dir:"kabu/"}, {id:"ai", name:"フリックAIクリエイター", icon:"🤖", dir:"ai/"},
                  {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"eikaiwa/"},
                  {id:"eigo", name:"フリック英語", icon:"🔤", dir:"eigo/"},
                  {id:"rika", name:"フリック理科旅行", icon:"🔬", dir:"rika/"},

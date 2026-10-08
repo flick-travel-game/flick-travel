@@ -1593,10 +1593,10 @@ for(const m of MODES){
    だれも登録していないときは いままでどおり(flick-best-<旅>-<レベル>)。はじめて登録したとき その記録を その人に引きつぐ */
 const MAX_PROFILES = 6;
 /* 学年の しるし(かずともの API と同じ 字。記録に のこるので 変えない)。[しるし, えらぶ欄の名前, みじかい名前, まとまり] */
-const GRADES = [["k","年長より下・年長","ようじ","ようじ"],["e1","小学1年生","小1","小学生"],["e2","小学2年生","小2","小学生"],["e3","小学3年生","小3","小学生"],["e4","小学4年生","小4","小学生"],["e5","小学5年生","小5","小学生"],["e6","小学6年生","小6","小学生"],["j1","中学1年生","中1","中学生"],["j2","中学2年生","中2","中学生"],["j3","中学3年生","中3","中学生"],["h","高校生","高校生","高校生"],["adult","おとな","おとな","おとな"]];
+const GRADES = [["k","えんじ","えんじ","えんじ"],["e1","小学1年生","小1","小学生"],["e2","小学2年生","小2","小学生"],["e3","小学3年生","小3","小学生"],["e4","小学4年生","小4","小学生"],["e5","小学5年生","小5","小学生"],["e6","小学6年生","小6","小学生"],["j1","中学1年生","中1","中学生"],["j2","中学2年生","中2","中学生"],["j3","中学3年生","中3","中学生"],["h","高校生","高校生","高校生"],["adult","おとな","おとな","おとな"]];
 const GRADE_NAME = Object.fromEntries(GRADES.map(g => [g[0], g[1]]));
 const GRADE_SHORT = Object.fromEntries(GRADES.map(g => [g[0], g[2]]));
-const GRADE_OLD = {"年長より下":"k","年長":"k","小1":"e1","小2":"e2","小3":"e3","小4":"e4","小5":"e5","小6":"e6","中1":"j1","中2":"j2","中3":"j3","高校生":"h","おとな":"adult"};
+const GRADE_OLD = {"年長より下":"k","年長":"k","ようじ":"k","小1":"e1","小2":"e2","小3":"e3","小4":"e4","小5":"e5","小6":"e6","中1":"j1","中2":"j2","中3":"j3","高校生":"h","おとな":"adult"};
 function gradeKey(g){ return GRADE_NAME[g] ? g : (GRADE_OLD[g] || "e1"); }
 function gradeName(g){ return GRADE_NAME[gradeKey(g)] || g; }
 function gradeShort(g){ return GRADE_SHORT[gradeKey(g)] || g; }
@@ -2866,7 +2866,7 @@ $("#prof-file").addEventListener("change", async e => {
      消すのは「この人を 消す」を おしたときだけ
    ・kazutomo.app/flick/ の 下は ログインの クッキー、github.io で ひらいた 端末は つなぐ しるし(authHeaders)
    ・⚠️ つながらなくても あそびは 止めない(だまって あきらめる)
-   学年: かずともは 高校が 学年ごと(h1〜h3)、大学(u1〜u4)が ある。ようじ(k)は 両方に ある(2026-10-08)。
+   学年: かずともは 高校が 学年ごと(h1〜h3)、大学(u1〜u4)が ある。えんじ(k)は 両方に ある(2026-10-08)。
      送るときは h→h1。下ろすときは h1〜h3→h / u1〜u4→おとな。⚠️ かずともで 同じ 学年なら ここの 字(h)を 書きかえない */
 const FAM_API = "https://kazutomo.app/api/family/sync", FAM_MARK = "flick-famsync";
 function famHash(photo){
@@ -2875,7 +2875,7 @@ function famHash(photo){
   for(let i = 0; i < photo.length; i++){ h ^= photo.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
   return photo.length + "-" + h.toString(36);
 }
-function toKzGrade(g){ g = gradeKey(g); return g === "h" ? "h1" : g; }  // ⚠️ ようじ(k)は 2026-10-08 から かずともにも ある(docs/db/016-grade-kinder.sql)
+function toKzGrade(g){ g = gradeKey(g); return g === "h" ? "h1" : g; }  // ⚠️ えんじ(k)は 2026-10-08 から かずともにも ある(docs/db/016-grade-kinder.sql)
 function fromKzGrade(g){ if(/^h[123]$/.test(g)) return "h"; if(/^u[1-4]$/.test(g)) return "adult"; return GRADE_NAME[g] ? g : "e1"; }
 function famMarkOf(name, grade, hash){ return name + "|" + toKzGrade(grade) + "|" + (hash || "-"); }
 function famMarks(){ try{ const v = JSON.parse(store(FAM_MARK) || "{}"); return v && typeof v === "object" ? v : {}; }catch(e){ return {}; } }

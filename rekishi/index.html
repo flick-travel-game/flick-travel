@@ -2271,7 +2271,18 @@ function planCached(){
 function planOf(){ return PLAN || planCached(); }
 /* しるしが あって、サーバーが「つながっていない」と 言っていなければ つながっている(聞いている あいだも) */
 /* ⚠️ 2026-09-30 から kazutomo.app の 下なので、おうちの方の **ログインの クッキー**でも つながる(しるしが 無くても サーバーが signedIn:true と 言う) */
-function signedIn(){ const p = planOf(); if(p && p.signedIn === true) return true; if(!linkToken()) return false; return !p || p.signedIn !== false; }
+/* ⚠️ かずともで ログインすると `kz_in=1` の 小さな しるしが 置かれる(speed-king `src/lib/signed-mark.ts`。けいくん 2026-10-08
+   「かずとものメイン画面でログインすれば すべてのフリックゲームもログインしている状態に」)。
+   ゲームを ひらいた しゅんかん(/plan の 答えの 前)・電波が わるくて 答えが 来ない ときも これで「つながっている」に する。
+   ⚠️ ヒントだけ。だれの 家か・のるか は かならず サーバーが 決める(答えが 来たら そちらが 勝つ) */
+function kzMark(){ try{ return /(?:^|;\s*)kz_in=1(?:;|$)/.test(document.cookie); }catch(e){ return false; } }
+function signedIn(){
+  const p = PLAN || (kzMark() ? null : planCached());  // ⚠️ 前の タブの 古い 答え(ログイン前)より しるしを 先に 見る
+  if(p && p.signedIn === true) return true;
+  if(!p) return kzMark() || !!linkToken();
+  if(!linkToken()) return false;
+  return p.signedIn !== false;
+}
 /* おうちの方の ログイン(かずとも本体)。ログインが 終わると この ゲームへ もどる(?next=)。github.io で ひらいて いても kazutomo.app へ */
 // ⚠️ ログインは かずともの マイページ(`/play?my=1`)の 中(2026-09-30。`/account` の ページは 無くなった。ログインの あと この ゲームへ もどる)
 const LOGIN_URL = "https://kazutomo.app/play?my=1&next=" + encodeURIComponent("/flick/" + (GAME.dir || ""));
@@ -2285,7 +2296,7 @@ async function fetchPlan(force){
     const js = await res.json().catch(() => null);
     if(res.ok && js && js.ok){ plan = { graph: js.graph !== false, listed: js.listed !== false, signedIn: !!js.signedIn }; ok = true; }
   }catch(e){}
-  if(!plan) plan = tok ? { graph:true, listed:true, signedIn:true } : { graph:true, listed:false, signedIn:false };  // つながらない → 責めない
+  if(!plan) plan = (tok || kzMark()) ? { graph:true, listed:true, signedIn:true } : { graph:true, listed:false, signedIn:false };  // つながらない → 責めない(⚠️ かずともで ログインしていれば つながっている あつかい)
   if(tok !== linkToken()) return PLAN;  // 聞いている あいだに しるしが 変わった
   const before = JSON.stringify({ s: signedIn(), g: graphOk() });
   PLAN = plan; recMemo = null;
@@ -2294,6 +2305,7 @@ async function fetchPlan(force){
   if(JSON.stringify({ s: signedIn(), g: graphOk() }) !== before){
     if(JSON.parse(before).s !== signedIn() && !$("#home").classList.contains("hidden")) showBest();  // しまい場所が 変わった → 地図・きろくも
     planViewsRefresh();
+    const pr = $("#prof"); if(pr && !pr.classList.contains("hidden")) drawProf();  // ⚠️ マイページを ひらいたままでも「🔑 ログイン」⇄「✅ つながっています」を かきなおす
   }
   return plan;
 }

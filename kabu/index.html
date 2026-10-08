@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>フリック株式旅行</title>
+<title>フリック株式会社</title>
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
@@ -427,8 +427,8 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <img class="logo-word" src="logo-word.webp?v=5" alt="" width="900" height="187" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
-    <h1 class="sr-only">フリック株式旅行</h1>
-    <img class="hero" src="hero.webp?v=5" alt="フリック株式旅行。世界の 会社の 町と 地球を 男の子と 犬が 飛んで 旅する 絵" width="1536" height="1024">
+    <h1 class="sr-only">フリック株式会社</h1>
+    <img class="hero" src="hero.webp?v=5" alt="フリック株式会社。世界の 会社の 町と 地球を 男の子と 犬が 飛んで 旅する 絵" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -560,26 +560,26 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kabu", name:"フリック株式旅行", modes:(typeof KABU === "object" ? KABU.modes : []), assets:"../", logo:true, hero:true, dir:"kabu/", lead:"世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。", how:"表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。どのステージも いつも同じ10問なので、タイムをくらべられるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。" };
+const GAME = { id:"kabu", name:"フリック株式会社", modes:(typeof KABU === "object" ? KABU.modes : []), assets:"../", logo:true, hero:true, dir:"kabu/", lead:"世界の会社・日本の会社の名前を、ひらがなでフリック入力。10問ずつ あそぶうちに、どこの国の・どんな仕事の 会社なのかが 自然と 身につくよ。入門100社から はじめて、めざせ 世界の会社 約2,400社。", how:"表示された ひらがなを、そのまま打ち写してね。こたえると、その会社の 国・業種・ひとことが 出るよ。入門は だれでも知っている会社。どのステージも いつも同じ10問なので、タイムをくらべられるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の会社と なかよくなれるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
-const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史旅行", icon:"📜", dir:"rekishi/"},
+const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},
                  {id:"uchu", name:"フリック宇宙図鑑", icon:"🪐", dir:"uchu/"}, {id:"karada", name:"フリックからだ図鑑", icon:"🫀", dir:"karada/"},
-                 {id:"kabu", name:"フリック株式旅行", icon:"🏢", dir:"kabu/"}, {id:"ai", name:"フリックAIクリエイター", icon:"🤖", dir:"ai/"},
+                 {id:"kabu", name:"フリック株式会社", icon:"🏢", dir:"kabu/"}, {id:"ai", name:"フリックAIクリエイター", icon:"🤖", dir:"ai/"},
                  {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"eikaiwa/"},
                  {id:"eigo", name:"フリック英語", icon:"🔤", dir:"eigo/"},
-                 {id:"rika", name:"フリック理科旅行", icon:"🔬", dir:"rika/"},
+                 {id:"rika", name:"フリック理科", icon:"🔬", dir:"rika/"},
                  {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"seibi/"},
                  {id:"patissier", name:"パティシエフリック", icon:"🍰", dir:"patissier/"},
-                 {id:"kokugo", name:"フリック国語旅行", icon:"📖", dir:"kokugo/"},
-                 {id:"sugaku", name:"フリック数学旅行", icon:"📐", dir:"sugaku/"},
+                 {id:"kokugo", name:"フリック国語", icon:"📖", dir:"kokugo/"},
+                 {id:"sugaku", name:"フリック数学", icon:"📐", dir:"sugaku/"},
                  {id:"hoiku", name:"フリック保育士", icon:"🧸", dir:"hoiku/"},
                  {id:"kango", name:"フリック看護師", icon:"🩺", dir:"kango/"},
                  {id:"gamedev", name:"フリックゲームクリエイター", icon:"🎮", dir:"gamedev/"},
                  {id:"biyo", name:"フリック美容師", icon:"💇", dir:"biyo/"},
                  {id:"kyoryu", name:"フリック恐竜図鑑", icon:"🦖", dir:"kyoryu/"},
                  {id:"code", name:"フリックプログラマー", icon:"💻", dir:"code/"},
-                 {id:"shakai", name:"フリック社会旅行", icon:"🗾", dir:"shakai/"},
+                 {id:"shakai", name:"フリック社会", icon:"🗾", dir:"shakai/"},
                  {id:"ishi", name:"フリック医師", icon:"🥼", dir:"ishi/"},
                  {id:"kyoshi", name:"フリック教師", icon:"🏫", dir:"kyoshi/"},
                  {id:"chef", name:"フリック料理人", icon:"🍳", dir:"chef/"},
@@ -787,7 +787,7 @@ const COLORS = {
           toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
 };
 /* 差しこみ口(PLUG)。つみあげの コースを 持つ ゲームだけが 1つ 持つ:
-   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語旅行 = kokugo/kokugo.js の KOKUGO / フリック数学旅行 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO / フリック恐竜図鑑 = kyoryu/kyoryu.js の KYORYU / フリックプログラマー = code/code.js の CODEPG / フリック英語 = eigo/eigo.js の EIGO / フリック社会旅行 = shakai/shakai.js の SHAKAI / フリック医師 = ishi/ishi.js の ISHI / フリック教師 = kyoshi/kyoshi.js の KYOSHI / フリック料理人 = chef/chef.js の CHEF。ほかの ゲームでは null で 何もしない */
+   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語 = kokugo/kokugo.js の KOKUGO / フリック数学 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO / フリック恐竜図鑑 = kyoryu/kyoryu.js の KYORYU / フリックプログラマー = code/code.js の CODEPG / フリック英語 = eigo/eigo.js の EIGO / フリック社会 = shakai/shakai.js の SHAKAI / フリック医師 = ishi/ishi.js の ISHI / フリック教師 = kyoshi/kyoshi.js の KYOSHI / フリック料理人 = chef/chef.js の CHEF。ほかの ゲームでは null で 何もしない */
 const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : typeof SEIBI === "object" ? SEIBI : typeof PATISSIER === "object" ? PATISSIER : typeof KOKUGO === "object" ? KOKUGO : typeof SUGAKU === "object" ? SUGAKU : typeof HOIKU === "object" ? HOIKU : typeof KANGO === "object" ? KANGO : typeof GAMEDEV === "object" ? GAMEDEV : typeof BIYO === "object" ? BIYO : typeof KYORYU === "object" ? KYORYU : typeof CODEPG === "object" ? CODEPG : typeof EIGO === "object" ? EIGO : typeof SHAKAI === "object" ? SHAKAI : typeof ISHI === "object" ? ISHI : typeof KYOSHI === "object" ? KYOSHI : typeof CHEF === "object" ? CHEF : typeof KEISATSU === "object" ? KEISATSU : typeof SHOBO === "object" ? SHOBO : typeof KYUKYUTAI === "object" ? KYUKYUTAI : typeof BENGOSHI === "object" ? BENGOSHI : typeof ZEIRISHI === "object" ? ZEIRISHI : typeof ADLER === "object" ? ADLER : typeof TETSUGAKU === "object" ? TETSUGAKU : typeof TOSHIKA === "object" ? TOSHIKA : typeof DAIKU === "object" ? DAIKU : typeof NOKA === "object" ? NOKA : typeof HANAYA === "object" ? HANAYA : typeof KAJI === "object" ? KAJI : typeof MANNER === "object" ? MANNER : typeof YAKUZAI === "object" ? YAKUZAI : typeof JUI === "object" ? JUI : typeof KETSUEKI === "object" ? KETSUEKI : typeof SUMAHO === "object" ? SUMAHO : typeof PASOKON === "object" ? PASOKON : typeof KIGYO === "object" ? KIGYO : null;
 /* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
 if(PLUG) for(const [m, h] of Object.entries(PLUG.colors)) COLORS.mode[m] = TONE[h] || toneFrom(h);  // "blue" などは ほかの ゲームと 同じ あかるい 色
@@ -2114,11 +2114,12 @@ function drawProf(){
       '<p class="hint">学年は 右を さわると かえられます</p></div>';
   bindUnlink();
   $("#prof-pic").addEventListener("click", () => $("#prof-file").click());
-  const un = $("#prof-unphoto"); if(un) un.addEventListener("click", () => { try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){} drawProf(); drawProfBtn(); });
+  const un = $("#prof-unphoto"); if(un) un.addEventListener("click", () => { try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){} drawProf(); drawProfBtn(); famSyncSoon(); });
   $("#prof-rename").addEventListener("click", () => openProfForm(p.id));
   $("#prof-del").addEventListener("click", () => {
     // ⚠️ 記録は 消さない(かずともと同じ)。消えるのは なまえと 写真だけ
-    if(!confirm("「" + p.name + "」を この スマホから 消します。\nきろくは のこります。いいですか？")) return;
+    if(!confirm(signedIn() ? "「" + p.name + "」を 消します。\nアカウントからも 消えます(かずともでも 消えます)。\nきろくは のこります。いいですか？" : "「" + p.name + "」を この スマホから 消します。\nきろくは のこります。いいですか？")) return;
+    famRemove(p.id);
     try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){}
     const rest = profiles().filter(x => x.id !== p.id); saveProfiles(rest);
     store("flick-profile", rest[0] ? rest[0].id : ""); store("flick-last", "");
@@ -2130,7 +2131,7 @@ function drawProf(){
   $("#prof-grade").addEventListener("change", e => {
     const g = e.target.value; if(!GRADE_NAME[g]) return;
     saveProfiles(profiles().map(x => x.id === p.id ? Object.assign({}, x, {grade:g}) : x));
-    store("flick-bygrade", "1"); drawProf(); afterProfileChange();
+    store("flick-bygrade", "1"); drawProf(); afterProfileChange(); famSyncSoon();
   });
 }
 function gradeOptions(cur){
@@ -2187,7 +2188,7 @@ $("#prof-form").addEventListener("submit", e => {
     store("flick-profile", id); store("flick-last", "");
   }
   const first = !profEditing && list.length === 1;  // はじめての なまえ
-  saveProfiles(list); profEditing = null; drawProf(); afterProfileChange();
+  saveProfiles(list); profEditing = null; drawProf(); afterProfileChange(); famSyncSoon();
   if(first) closeProf();  // ⚠️ はじめての 人は そのまま 遊べるように 閉じる(2026-09-30。まえは ひらいたままで「押せない」に 見えた)
 });
 /* 写真 → 160px の 四角(まん中)・JPEG 0.8 → localStorage。iPhone の HEIC も <img> なら Safari が 読める */
@@ -2216,9 +2217,103 @@ $("#prof-file").addEventListener("change", async e => {
     const data = await toIconDataUrl(f);
     try{ localStorage.setItem("flick-photo-" + p.id, data); }
     catch(x){ if(err) err.textContent = "スマホの中が いっぱいで しまえませんでした"; return; }
-    drawProf(); drawProfBtn();
+    drawProf(); drawProfBtn(); famSyncSoon();
   }catch(x){ if(err) err.textContent = "この 写真は つかえませんでした。べつの 写真で ためしてね"; }
 });
+/* ── かずともの アカウントの 家族と そろえる(けいくん 2026-10-08「フリックゲームもかずともも すべてログインで繋げてください」) ──
+   まえは「だれが あそぶ」が この端末の中だけで、アカウントと つながっていても かずともで 作った 子どもが 出なかった。
+   いまは つながっていれば かずともの `/api/family/sync` と **同じ やりかた**で そろえる(speed-king `src/lib/famsync.client.ts`):
+   ・アカウントに いて ここに いない人 → 足す(写真つき)
+   ・ここで なまえ・学年・写真を 直した(dirty) → アカウントへ / 直していない → アカウントの ほうを 下ろす
+   ・⚠️⚠️ **「ここに いない = 消す」は ぜったいに しない**(新しい スマホは からっぽ。やると 家族が ぜんぶ 消える)。
+     消すのは「この人を 消す」を おしたときだけ
+   ・kazutomo.app/flick/ の 下は ログインの クッキー、github.io で ひらいた 端末は つなぐ しるし(authHeaders)
+   ・⚠️ つながらなくても あそびは 止めない(だまって あきらめる)
+   学年: かずともには「ようじ(k)」が 無く、高校は 学年ごと(h1〜h3)、大学(u1〜u4)が ある。
+     送るときは k→e1 / h→h1。下ろすときは h1〜h3→h / u1〜u4→おとな。⚠️ かずともで 同じ 学年なら ここの 字(k・h)を 書きかえない */
+const FAM_API = "https://kazutomo.app/api/family/sync", FAM_MARK = "flick-famsync";
+function famHash(photo){
+  if(!photo) return null;  // ⚠️ かずとも(famsync.ts の photoHash)と 同じ 計算。ちがうと 写真を 送りつづける
+  let h = 0x811c9dc5;
+  for(let i = 0; i < photo.length; i++){ h ^= photo.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+  return photo.length + "-" + h.toString(36);
+}
+function toKzGrade(g){ g = gradeKey(g); return g === "k" ? "e1" : g === "h" ? "h1" : g; }
+function fromKzGrade(g){ if(/^h[123]$/.test(g)) return "h"; if(/^u[1-4]$/.test(g)) return "adult"; return GRADE_NAME[g] ? g : "e1"; }
+function famMarkOf(name, grade, hash){ return name + "|" + toKzGrade(grade) + "|" + (hash || "-"); }
+function famMarks(){ try{ const v = JSON.parse(store(FAM_MARK) || "{}"); return v && typeof v === "object" ? v : {}; }catch(e){ return {}; } }
+function famSaveMarks(m){ try{ store(FAM_MARK, JSON.stringify(m)); }catch(e){} }
+async function famPost(body){
+  try{
+    // ⚠️ credentials は ふつう(同じ 住所の 下だけ クッキー)。github.io からは しるしで 送る
+    const res = await fetch(FAM_API, { method:"POST", headers: Object.assign({"content-type":"application/json"}, authHeaders()), body: JSON.stringify(body), cache:"no-store" });
+    if(!res.ok) return null;
+    return await res.json().catch(() => null);
+  }catch(e){ return null; }
+}
+function famSafeId(id){ id = String(id || ""); return /^[\w-]{1,64}$/.test(id) ? id : Date.now().toString(36) + Math.floor(Math.random()*1000); }
+let famBusy = false, famAgain = false, famTimer = 0;
+function famSyncSoon(){ clearTimeout(famTimer); famTimer = setTimeout(famSync, 1200); }
+async function famSync(){
+  if(!signedIn()) return;
+  if(famBusy){ famAgain = true; return; }
+  famBusy = true;
+  try{ await famRun(); }catch(e){}
+  famBusy = false;
+  if(famAgain){ famAgain = false; famSyncSoon(); }
+}
+async function famRun(){
+  const marks = famMarks(), sent = profiles();
+  const body = () => sent.map(p => {
+    const h = famHash(photoOf(p.id)), s = marks[p.id];
+    // ⚠️ おぼえていない人は「さわっていない」あつかい(アカウントが 正。かずともと 同じ 安全がわ)
+    return { id: p.id, memberId: s && s.k ? s.k : null, name: p.name, grade: toKzGrade(p.grade), photoHash: h, dirty: !!s && s.m !== famMarkOf(p.name, p.grade, h) };
+  });
+  const first = await famPost({ players: body() });
+  if(!first || !first.ok) return;
+  let list = profiles(), changed = false;
+  // ① べつの スマホ・かずともで 直された ぶんを 下ろす
+  for(const u of (first.update || [])){
+    const i = list.findIndex(p => p.id === u.id); if(i < 0) continue;
+    const cur = list[i], grade = toKzGrade(cur.grade) === u.grade ? cur.grade : fromKzGrade(u.grade);
+    list[i] = Object.assign({}, cur, { name: String(u.name || cur.name), grade });
+    if(typeof u.photo === "string" && u.photo.startsWith("data:image/")){ try{ localStorage.setItem("flick-photo-" + u.id, u.photo); }catch(e){} }
+    changed = true;
+  }
+  // ② アカウントに いて ここに いない人を 足す(⚠️ 6人まで)
+  for(const m of (first.pull || [])){
+    if(list.length >= MAX_PROFILES) break;
+    const name = String(m.name || "").trim(); if(!name) continue;
+    if(list.some(p => p.id === m.id || p.name === name)) continue;
+    const id = famSafeId(m.id);
+    list.push({ id, name, grade: fromKzGrade(m.grade) });
+    if(typeof m.photo === "string" && m.photo.startsWith("data:image/")){ try{ localStorage.setItem("flick-photo-" + id, m.photo); }catch(e){} }
+    changed = true;
+  }
+  // ③ 写真の 中身を ほしがられた ぶんだけ 送る(1回めは ふだだけ。通信を へらす)
+  const need = (first.needPhoto || []).filter(id => photoOf(id));
+  if(need.length){ const photos = {}; for(const id of need) photos[id] = photoOf(id); await famPost({ players: body(), photos }); }
+  if(changed){
+    saveProfiles(list);
+    if(!list.some(p => p.id === store("flick-profile")) && list[0]){ store("flick-profile", list[0].id); store("flick-last", ""); }
+    if(!$("#prof").classList.contains("hidden")){ if(profEditing === "" && list.length){ profEditing = null; } drawProf(); }
+    afterProfileChange();
+  }
+  // ④ そろえた ときの 中身を おぼえる(つぎに ちがえば「ここで さわった」)。アカウントの しるし(uuid)は 手ばなさない
+  const links = new Map((first.link || []).map(x => [x.id, x.memberId])), next = {};
+  for(const p of profiles()){
+    const k = links.get(p.id) || (marks[p.id] && marks[p.id].k) || null;
+    next[p.id] = { m: famMarkOf(p.name, p.grade, famHash(photoOf(p.id))), k };
+  }
+  famSaveMarks(next);
+}
+/* 「この人を 消す」→ アカウントからも 消す(かずともと 同じ。のこすと つぎに また 足されて もどってくる) */
+function famRemove(id){
+  if(!signedIn()) return;
+  const marks = famMarks(), k = marks[id] && marks[id].k;
+  famPost({ players: [], remove: [id], removeMembers: k ? [k] : [] });
+  delete marks[id]; famSaveMarks(marks);
+}
 drawProfBtn();
 /* このゲームの 名前・絵(歴史・宇宙・からだ は 絵が できるまで 文字の題名) */
 if(!GAME.logo){ const mk = $(".logo-mark"); if(mk) mk.remove(); const w = $(".logo-word"); if(w) w.outerHTML = '<span class="logo-text">' + esc(GAME.name) + '</span>'; }
@@ -2238,10 +2333,10 @@ $("#next-lv").addEventListener("click", () => { store("flick-last", ""); start(m
 $("#home-btn").addEventListener("click", () => { store("flick-last", ""); show("home"); showBest(); });
 showBest();
 restoreLast();
-fetchPlan(true);  // できることを かずとも に 聞く(かえってきたら グラフ・おしらせを かきなおす)。⚠️ ログインは しるし なしで 変わるので 毎回 聞く
-exchangeLink().then(() => { if(TRIAL_AFTER_LINK) fetchPlan(true); fetchTrial(); });  // 登録なしの 体験: 遊べるか・のこり何日か(つながらなければ 3日まで そのまま)
+fetchPlan(true).then(() => famSync());  // できることを かずとも に 聞く(かえってきたら グラフ・おしらせを かきなおす)。⚠️ ログインは しるし なしで 変わるので 毎回 聞く
+exchangeLink().then(() => { if(TRIAL_AFTER_LINK) fetchPlan(true).then(() => famSync()); fetchTrial(); });  // 登録なしの 体験: 遊べるか・のこり何日か(つながらなければ 3日まで そのまま)
 // ⚠️ ネットに つながった・画面に もどった ときにも 聞きなおす(1分に 1回まで)
-(function(){ let last = 0; const again = () => { if(Date.now() - last < 60000) return; last = Date.now(); fetchTrial(); };
+(function(){ let last = 0; const again = () => { if(Date.now() - last < 60000) return; last = Date.now(); fetchTrial(); famSync(); };
   addEventListener("online", again); document.addEventListener("visibilitychange", () => { if(!document.hidden) again(); }); })();
 </script>
 </body>

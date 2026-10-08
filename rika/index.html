@@ -3466,8 +3466,8 @@ $("#prof-file").addEventListener("change", async e => {
      消すのは「この人を 消す」を おしたときだけ
    ・kazutomo.app/flick/ の 下は ログインの クッキー、github.io で ひらいた 端末は つなぐ しるし(authHeaders)
    ・⚠️ つながらなくても あそびは 止めない(だまって あきらめる)
-   学年: かずともには「ようじ(k)」が 無く、高校は 学年ごと(h1〜h3)、大学(u1〜u4)が ある。
-     送るときは k→e1 / h→h1。下ろすときは h1〜h3→h / u1〜u4→おとな。⚠️ かずともで 同じ 学年なら ここの 字(k・h)を 書きかえない */
+   学年: かずともは 高校が 学年ごと(h1〜h3)、大学(u1〜u4)が ある。ようじ(k)は 両方に ある(2026-10-08)。
+     送るときは h→h1。下ろすときは h1〜h3→h / u1〜u4→おとな。⚠️ かずともで 同じ 学年なら ここの 字(h)を 書きかえない */
 const FAM_API = "https://kazutomo.app/api/family/sync", FAM_MARK = "flick-famsync";
 function famHash(photo){
   if(!photo) return null;  // ⚠️ かずとも(famsync.ts の photoHash)と 同じ 計算。ちがうと 写真を 送りつづける
@@ -3475,7 +3475,7 @@ function famHash(photo){
   for(let i = 0; i < photo.length; i++){ h ^= photo.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
   return photo.length + "-" + h.toString(36);
 }
-function toKzGrade(g){ g = gradeKey(g); return g === "k" ? "e1" : g === "h" ? "h1" : g; }
+function toKzGrade(g){ g = gradeKey(g); return g === "h" ? "h1" : g; }  // ⚠️ ようじ(k)は 2026-10-08 から かずともにも ある(docs/db/016-grade-kinder.sql)
 function fromKzGrade(g){ if(/^h[123]$/.test(g)) return "h"; if(/^u[1-4]$/.test(g)) return "adult"; return GRADE_NAME[g] ? g : "e1"; }
 function famMarkOf(name, grade, hash){ return name + "|" + toKzGrade(grade) + "|" + (hash || "-"); }
 function famMarks(){ try{ const v = JSON.parse(store(FAM_MARK) || "{}"); return v && typeof v === "object" ? v : {}; }catch(e){ return {}; } }

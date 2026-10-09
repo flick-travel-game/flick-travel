@@ -900,7 +900,11 @@
   オッセオインテグレーションの 逸話(exam.txt に 無い ので 消した)・誤嚥性肺炎(防げる → 防ぐ ことに つながる)・診療報酬・レセプト・業務独占・スチューデントデンティスト(よび名として 弱めた)
 - ふりがなは 確かめ役が `python3 tools/shika/ruby_dump.py <旅>` で 全語 見て、**文を 言いかえて さけた**(間 → あいだ・年を とる → としを とる・黄色 → きいろ・歯冠 → 歯の 頭・舌(ぜつ)・科(とが)・床(ゆか)・数本(ぽん)・仏姫(ふつひめ) など)。
   `FIX`(歯科医師の 中だけ)に 足したのは フッ化物(ばけもの → かぶつ)・口腔(こうこう → こうくう)・黄色(おうしょく → きいろ)
-- 絵: **まだ 届いていない**(仮の アイコン `tools/shika/placeholder_icon.py` = 水色の 地に 白い 笑顔の 歯。`hero=False`・`logo=False`)。
+- **トップの 絵は 入れた**(2026-10-09。`shika/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**:
+  ⚠️ **1回目は 入れなかった**(札の 誤字「えきおろしつ」「てんどう」・ゲームに 無い ことば・くちびるが ちがう 箱・責める 書きかたの 4択)。
+  2回目は 札 36こ・4択(しせき)・「は の こと」・題名 ぜんぶ ゲームに ある 読み。のこった 2か所は **絵の 中で 直した**(`tools/shika/fix_text.py`):
+  ① **🔊 の マーク 11こを 消した**(読みあげの しくみは 無い。行ごとに 左の あざやかな 地の 色で ぬる)② 8番の 見出し「みんなの 歯**と** 健康」→「歯**の**」(同じ 見出しの「の」を うつした)。もとの 絵は 入れものに 入れていない
+- アイコン・題名は **まだ**(仮の アイコン `tools/shika/placeholder_icon.py` = 水色の 地に 白い 笑顔の 歯。`logo=False`)。
   届いたら `tools/shika/art/square-src.png` → `python3 tools/icon_from_square.py shika`(iconv を +1)/ `title-src.png` → `python3 tools/title_from_art.py shika`(logo を True・art.word を 実寸に)/ `shika/hero.webp`(hero を True)。
   ⚠️ 絵を 頼む ときは **ドリル・注射・口を 大きく 開けた 治療の 場面・血・こわがる 子・実在の 歯科医院や 歯みがき粉の ロゴ**を 描かせない。届いたら まず 字を 切り出して 読む(「歯科医士」「歯医者」に なりやすい)
 - 確かめかた: `node tools/play-all.mjs shika/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs shika/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`

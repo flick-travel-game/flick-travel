@@ -428,6 +428,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック歯科医師</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリック歯科医師。歯医者さんの 先生と 歯科衛生士さんと 犬が、9つの 旅の ことばの 札に かこまれて 笑っている 絵" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -559,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"shika", name:"フリック歯科医師", modes:(typeof SHIKA === "object" ? SHIKA.modes : []), assets:"../", logo:false, hero:false, dir:"shika/", lead:"歯医者さんの きほん・歯と 口の からだ・むし歯と 歯周病・予防と 歯みがき・治療と 材料・子どもの 歯と 歯ならび・口の 病気と からだの 健康・みんなの 歯の 健康・法律と 歴史と チーム医療の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 歯・お口の どこの 話か・試験の 区分・しくみ図の どこに あるのかが 出るよ。自分の 歯を 自分で 守る ための ことばから はじめて、歯科医院で 働く 人(歯科衛生士)の めやす、歯科医師国家試験の 範囲の めやすの ことばまで。エナメル質は からだで いちばん かたい、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。治療の やりかたや 薬の 量・家で できる 手当ては 書いていないよ。歯や お口が いたい・気に なる ときは、大人に 言って 歯医者さんへ。歯医者さんは 歯を 守る 味方だよ。本物の 試験問題では ありません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、歯と お口と からだの 健康が つながって 見えてくるよ。厚生労働省・歯科医院・歯みがき粉の 会社とは 関係ありません。" };
+const GAME = { id:"shika", name:"フリック歯科医師", modes:(typeof SHIKA === "object" ? SHIKA.modes : []), assets:"../", logo:false, hero:true, dir:"shika/", lead:"歯医者さんの きほん・歯と 口の からだ・むし歯と 歯周病・予防と 歯みがき・治療と 材料・子どもの 歯と 歯ならび・口の 病気と からだの 健康・みんなの 歯の 健康・法律と 歴史と チーム医療の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 歯・お口の どこの 話か・試験の 区分・しくみ図の どこに あるのかが 出るよ。自分の 歯を 自分で 守る ための ことばから はじめて、歯科医院で 働く 人(歯科衛生士)の めやす、歯科医師国家試験の 範囲の めやすの ことばまで。エナメル質は からだで いちばん かたい、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。治療の やりかたや 薬の 量・家で できる 手当ては 書いていないよ。歯や お口が いたい・気に なる ときは、大人に 言って 歯医者さんへ。歯医者さんは 歯を 守る 味方だよ。本物の 試験問題では ありません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、歯と お口と からだの 健康が つながって 見えてくるよ。厚生労働省・歯科医院・歯みがき粉の 会社とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

@@ -120,6 +120,9 @@ def main():
            R(r"(<ruby>月<rt>がつ</rt></ruby>)1<ruby>日<rt>ひ</rt></ruby>", r"\1<ruby>1日<rt>ついたち</rt></ruby>"),
            R(r"<ruby>局<rt>つぼね</rt></ruby>", "<ruby>局<rt>きょく</rt></ruby>"),
            # 歯科医師の 説明で 見つけた 読みまちがい(ここに 足す)
+           R(r"<ruby>化物<rt>ばけもの</rt></ruby>", "<ruby>化物<rt>かぶつ</rt></ruby>"),  # フッ化物(ふっかぶつ)
+           R(r"<ruby>口腔<rt>こうこう</rt></ruby>", "<ruby>口腔<rt>こうくう</rt></ruby>"),  # 歯科・医療の 読み(ことばの 読みと そろえる)
+           R(r"<ruby>黄色<rt>おうしょく</rt></ruby>", "<ruby>黄色<rt>きいろ</rt></ruby>"),
            ]
     def rub(t):
         h = rub0(t)

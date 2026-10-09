@@ -907,6 +907,7 @@
 - **アイコンも 入れた**(2026-10-09。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py shika`。`iconv` = 2)。8番の 見出しは もう「歯の」。🔊 の マークは アイコンの 大きさでは 見えないので そのまま。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
 - **題名も 入れた**(2026-10-09。けいくんの ChatGPT の 切りぬき `tools/shika/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py shika` → `shika/logo-word.webp` 900×225。`logo=True`・`wordv` = 3)。「フリック歯科医師」8字を 読んで 確かめた
   ⚠️ 絵を 頼む ときは **ドリル・注射・口を 大きく 開けた 治療の 場面・血・こわがる 子・実在の 歯科医院や 歯みがき粉の ロゴ**を 描かせない。届いたら まず 字を 切り出して 読む(「歯科医士」「歯医者」に なりやすい)
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #366)・販売ページ `HOME_GAMES`(夢のしごと の 章、獣医師の となり)・規約の 一覧 `FLICK_SERIES_GAMES`(speed-king #367)に 足した(2026-10-09)
 - 確かめかた: `node tools/play-all.mjs shika/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs shika/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック血液型(`ketsueki/`。けいくん 2026-10-04「血液型の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。血液型の特徴をめちゃくちゃ詳しくお願いします」→ 同じ日「科学的根拠が無いということ? やめた方がいいかなぁ?」→ 3つの 案から **「このまま」**。まとめは `docs/フリック血液型-はじめかた.md`)

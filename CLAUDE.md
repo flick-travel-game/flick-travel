@@ -904,8 +904,8 @@
   ⚠️ **1回目は 入れなかった**(札の 誤字「えきおろしつ」「てんどう」・ゲームに 無い ことば・くちびるが ちがう 箱・責める 書きかたの 4択)。
   2回目は 札 36こ・4択(しせき)・「は の こと」・題名 ぜんぶ ゲームに ある 読み。のこった 2か所は **絵の 中で 直した**(`tools/shika/fix_text.py`):
   ① **🔊 の マーク 11こを 消した**(読みあげの しくみは 無い。行ごとに 左の あざやかな 地の 色で ぬる)② 8番の 見出し「みんなの 歯**と** 健康」→「歯**の**」(同じ 見出しの「の」を うつした)。もとの 絵は 入れものに 入れていない
-- アイコン・題名は **まだ**(仮の アイコン `tools/shika/placeholder_icon.py` = 水色の 地に 白い 笑顔の 歯。`logo=False`)。
-  届いたら `tools/shika/art/square-src.png` → `python3 tools/icon_from_square.py shika`(iconv を +1)/ `title-src.png` → `python3 tools/title_from_art.py shika`(logo を True・art.word を 実寸に)/ `shika/hero.webp`(hero を True)。
+- **アイコンも 入れた**(2026-10-09。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py shika`。`iconv` = 2)。8番の 見出しは もう「歯の」。🔊 の マークは アイコンの 大きさでは 見えないので そのまま。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+- **題名も 入れた**(2026-10-09。けいくんの ChatGPT の 切りぬき `tools/shika/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py shika` → `shika/logo-word.webp` 900×225。`logo=True`・`wordv` = 3)。「フリック歯科医師」8字を 読んで 確かめた
   ⚠️ 絵を 頼む ときは **ドリル・注射・口を 大きく 開けた 治療の 場面・血・こわがる 子・実在の 歯科医院や 歯みがき粉の ロゴ**を 描かせない。届いたら まず 字を 切り出して 読む(「歯科医士」「歯医者」に なりやすい)
 - 確かめかた: `node tools/play-all.mjs shika/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs shika/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 

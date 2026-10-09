@@ -150,7 +150,7 @@ OSCE → おすきー / DMF → でぃーえむえふ / CPI → しーぴーあ�
 - `koshu`(みんなの 歯の 健康): hachi 8020運動 / gakko 学校の 歯科健診 / nyuyoji 乳幼児の 健診 / senko フッ化物洗口 / frail オーラルフレイル / care 口腔ケア /
   homon 訪問歯科 / enge 食べる・飲みこむ / kaigo 介護との 連携 / saigai 災害の とき / chosa 調査と データ / chiiki 地域の 歯科保健
 - `hoki`(歯科の 決まりと 歴史): shikaishiho 歯科医師法 / eiseishi 歯科衛生士法 / gikoshi 歯科技工士法 / iryoho 医療と 健康の 法律 / ic 説明と 同意 / hoken 保険の しくみ /
-  rinri 倫理と 守秘義務 / team チーム医療 / karte カルテと 記録 / rekishi 日本の 歯科の 歴史 / sekai 世界の 歯科の 歴史 / michi 歯科医師に なる 道
+  rinri 倫理と 守秘義務 / team チーム医療 / karte カルテと 記録 / rekishi 日本の 歯科の 歴史 / sekai 試験と 出題基準 / michi 歯科医師に なる 道
 
 ## 旅ごとに 入れる 語(⚠️ **読みが かぶると 台本が 止まる**。ほかの 旅の 欄に 書いてある 語は 入れない。ここに 無い 語を 足すのは よい)
 

@@ -63,12 +63,12 @@ const SHIKA = (() => {
     for(let i = 0; i + ROUNDS <= mix.length; i += ROUNDS) lv.push(mix.slice(i, i + ROUNDS).sort(easy));
     const rest = mix.length % ROUNDS;
     if(rest) lv.push(mix.slice(-rest - (ROUNDS - rest)).sort(easy));
-    levels.jumas = lv; pools.jumas = ALL; colors.jumas = "green";
+    levels.skmas = lv; pools.skmas = ALL; colors.skmas = "green";
     maps.skmas = { icon:"🏆", name:"マスター", cardName:"マスター", word:"歯科のことば図鑑", thing:"ことば", unit:"語", doneWord:"出会った ことば",
                   lvTitle:"🏆 マスター　9つの 旅を まぜて ぜんぶ",
                   card:() => '<small>' + TOTAL + '語・' + lv.length + 'ステージ</small><small>9つの 旅を まぜて ぜんぶ</small>' };
   }
-  const MODES_ALL = ["jukihon", "jukarada", "jupet", "jubyoki", "juyobo", "jusangyo", "juyasei", "jukoshu", "juhoki", "skmas"];
+  const MODES_ALL = ["skkihon", "skha", "skmushi", "skyobo", "skchiryo", "skkodomo", "skkuchi", "skkoshu", "skhoki", "skmas"];
 
   /* ── きろく(人ごと。土台の recGet / recSet = つないでいない人は とじると 消える 決まりに そろえる) ──
      flick-shika[-p<id>] = { ことばid: [見た回数, まちがいの合計, さいごに まちがえたか(0/1), 1文字あたりの 秒, さいごに 見た 時刻(ms), はじめて 出会った 時刻(ms)] }
@@ -262,12 +262,12 @@ const SHIKA = (() => {
     const scroll = sh.scrollTop, focused = document.activeElement && document.activeElement.id === "ai-zq";
     sh.innerHTML = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>📖 歯科のことば図鑑</h2>' +
       '<p class="ai-zsum"><b>' + got + '</b> / ' + list.length + '語 発見</p>' +
-      '<input type="search" id="ai-zq" class="ai-search" placeholder="🔍 さがす(例: 肉球)" value="' + esc(zf.q) + '" autocomplete="off" enterkeyhint="search">' +
+      '<input type="search" id="ai-zq" class="ai-search" placeholder="🔍 さがす(例: エナメル質)" value="' + esc(zf.q) + '" autocomplete="off" enterkeyhint="search">' +
       '<div class="ai-zf"><select id="ai-zj">' + opt("", "🧭 旅", zf.j) + JR.map(J => opt(J.id, J.icon + " " + J.name, zf.j)).join("") + '</select>' +
       '<select id="ai-zc">' + opt("", "🏷 分類", zf.c) + cats.map(c => opt(c, c, zf.c)).join("") + '</select>' +
       '<select id="ai-zd">' + opt("", "📶 むずかしさ", zf.dv) + D.levels.map(L => opt(L.difficulty, L.icon + " " + L.name, zf.dv)).join("") + '</select>' +
       '<select id="ai-zs">' + opt("", "📘 試験の 区分", zf.sb) + subs.map(s => opt(s, s, zf.sb)).join("") + '</select>' +
-      '<select id="ai-za">' + opt("", "🦷 歯と お口", zf.to) + ans.map(a => opt(a, (TO_ICON[a] || "🦷") + " " + a, zf.to)).join("") + '</select></div>' +
+      '<select id="ai-za">' + opt("", "🦷 場所", zf.to) + ans.map(a => opt(a, (TO_ICON[a] || "🦷") + " " + a, zf.to)).join("") + '</select></div>' +
       '<div class="ai-ztog"><button type="button" data-t="fav"' + (zf.fav ? ' class="on"' : "") + '>⭐ お気に入り</button></div>' +
       (list.length ? "" : '<p class="ai-empty">' + (zf.fav ? "⭐ まだ お気に入りが ないよ。ことばの ページの ☆ を おすと 入るよ" : "見つからなかったよ") + '</p>') +
       '<div class="ai-grid">' + list.slice(0, zf.shown).map(q => d.has(q.art)

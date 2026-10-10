@@ -5,12 +5,12 @@ tools/build_games.py が eigo/ を 作るときに 呼ぶ。data/eigo.json と e
     python3 tools/eigo/terms_js.py --check      # 確かめるだけ
     python3 tools/eigo/terms_js.py --only jisei # 1つの 旅だけ 確かめる(助手が 使う)
 決まりは tools/eigo/PROMPT.md。もとは tools/kokugo/terms_js.py(国語を 写した)。
-⚠️ 打つ 字(reading)は 手で 書かない。name から 英会話の norm と 同じ やりかた(NFKC → 小文字 → 英数字だけ)で 作る"""
+⚠️ ABC で 打つ 字(typed)は 手で 書かない。name から 英会話の norm と 同じ やりかた(NFKC → 小文字 → 英数字だけ)で 作る"""
 import json, re, sys, unicodedata
 from pathlib import Path
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parent.parent
 sys.path.insert(0, str(ROOT / "tools/kabu"))
-REQ = ("id", "name", "ja", "jaReading", "journey", "category", "difficulty", "type", "emoji", "description")
+REQ = ("id", "name", "ja", "reading", "journey", "category", "difficulty", "type", "emoji", "description")
 MAXLEN = 35  # 打つ 字の 上限(けいくん 2026-09-29「おすすめ」= 35字)
 NAME_OK = re.compile(r"[A-Za-z][A-Za-z ',.?!-]*")
 PREFIX = {"fudoshi": "fu", "jisei": "ji", "uke": "uk", "tofutei": "to", "bunshi": "bs", "kankei": "ka", "hikaku": "hi", "katei": "kt", "jukugo": "ju"}
@@ -35,7 +35,6 @@ def check(d):
         tid = t.get("id")
         for k in REQ:
             if t.get(k) in (None, ""): errs.append(f"{tid}: {k} が 空")
-        if "reading" in t: errs.append(f"{tid}: reading は 書かない(台本が 作る)")
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", str(tid)): errs.append(f"{tid}: id は 英小文字・数字・- だけ")
         if t.get("journey") in PREFIX and not str(tid).startswith(PREFIX[t["journey"]] + "-"): errs.append(f"{tid}: id の 頭は {PREFIX[t['journey']]}-")
         if tid in ids: errs.append(f"{tid}: id が かぶる")
@@ -43,8 +42,10 @@ def check(d):
         n = t.get("name", "")
         if not NAME_OK.fullmatch(n): errs.append(f"{tid}: name「{n}」に 使えない 字(英字・空白・' , . ? ! - だけ。数字も ダメ)")
         if "  " in n or n != n.strip(): errs.append(f"{tid}: name の 空白が おかしい")
-        if not re.fullmatch(r"[ぁ-ゖー]+", t.get("jaReading", "")): errs.append(f"{tid}: jaReading「{t.get('jaReading')}」は ひらがなと ー だけ(ひらがなで 打つ ときの 字。訳の 読み)")
-        elif len(t["jaReading"]) > 40: warn.append(f"{tid}: jaReading が 長い({len(t['jaReading'])}字)")
+        for kr in [t.get("reading", "")] + list(t.get("acceptedReadings") or []):
+            if not re.fullmatch(r"[ぁ-ゖー]+", kr or ""): errs.append(f"{tid}: 読み「{kr}」は ひらがなと ー だけ(英語の 読みを ひらがなで。けいくん 2026-10-10)")
+        if t.get("acceptedReadings") and t["acceptedReadings"][0] != t.get("reading"): errs.append(f"{tid}: acceptedReadings の 先頭は reading")
+        if len(t.get("reading", "")) > 60: warn.append(f"{tid}: 読みが 長い({len(t['reading'])}字)")
         r = norm(n)
         if len(r) > MAXLEN: errs.append(f"{tid}: 打つ 字が {len(r)}字(上限 {MAXLEN})")
         if t.get("journey") in ("fudoshi", "jukugo") and n.rstrip()[-1:] in ".?!": errs.append(f"{tid}: 不規則動詞・熟語は 文では ない(ピリオドを 付けない)")
@@ -82,7 +83,7 @@ def main():
     print(" ".join(f"{j}{dv}:{n}" for (j, dv), n in sorted(per.items())))
     if "--check" in sys.argv or "--only" in sys.argv:
         print("英語の 例文 OK", len(d["terms"]), "問"); return
-    for t in d["terms"]: t["reading"] = norm(t["name"])
+    for t in d["terms"]: t["typed"] = norm(t["name"])  # ABC で 打つ 字(手で 書かない)
     (ROOT / "data/eigo.json").write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     from companies_js import rubifier
     rub0 = rubifier()
@@ -114,8 +115,8 @@ def main():
                        for p in re.split(r"([A-Za-z][A-Za-z0-9 ',.?!+/-]*[A-Za-z.?!])", text) if p)
     out = []
     for t in d["terms"]:
-        out.append(dict(id=t["id"], n=t["name"], r=t["reading"], j=t["journey"], c=t["category"], dv=t["difficulty"], ty=t["type"],
-                        e=t["emoji"], rel=t["relatedTerms"], ja=t["ja"], kr=t["jaReading"], jarb=rub(t["ja"]), ds=t["description"], rb=rub(t["description"])))
+        out.append(dict(id=t["id"], n=t["name"], r=t["typed"], j=t["journey"], c=t["category"], dv=t["difficulty"], ty=t["type"],
+                        e=t["emoji"], rel=t["relatedTerms"], ja=t["ja"], kr=t["reading"], kal=[a for a in (t.get("acceptedReadings") or []) if a != t["reading"]], jarb=rub(t["ja"]), ds=t["description"], rb=rub(t["description"])))
     m = d["meta"]
     js = dict(asOf=m["asOf"], note=m["note"], journeys=m["journeys"], levels=m["levels"], titles=m["titles"], allTitle=m["allTitle"],
               diagrams={}, missions=[], list=out)

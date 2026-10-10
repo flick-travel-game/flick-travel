@@ -8,7 +8,7 @@
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="favicon.png?v=1">
+<link rel="icon" type="image/png" href="favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -423,12 +423,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリックワールドベースボール</span>
+      <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="315" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックワールドベースボール</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリックワールドベースボール" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリックワールドベースボール" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -560,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"baseball", name:"フリックワールドベースボール", modes:(typeof BASEBALL === "object" ? BASEBALL.modes : []), assets:"../", logo:false, hero:true, dir:"baseball/", lead:"野球の きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・どの ルール(日本の プロ野球・MLB・高校野球)の 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。野球が すきな 小学生の ことばから はじめて、少年野球の コーチ、解説者が 使う 作戦と 数字の ことばまで。甲子園は 甲子(きのえね)の 年に できた、プエルトリコは WBC では アメリカと 別の 代表、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは 公認野球規則 2026年版・MLB 2026年度・高野連 2026年度で 確かめたよ(毎年 変わる ことが あるよ)。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の 野球が つながって 見えてくるよ。MLB・NPB・各リーグ・各球団・各選手とは 関係ありません。" };
+const GAME = { id:"baseball", name:"フリックワールドベースボール", modes:(typeof BASEBALL === "object" ? BASEBALL.modes : []), assets:"../", logo:true, hero:true, dir:"baseball/", lead:"野球の きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・どの ルール(日本の プロ野球・MLB・高校野球)の 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。野球が すきな 小学生の ことばから はじめて、少年野球の コーチ、解説者が 使う 作戦と 数字の ことばまで。甲子園は 甲子(きのえね)の 年に できた、プエルトリコは WBC では アメリカと 別の 代表、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは 公認野球規則 2026年版・MLB 2026年度・高野連 2026年度で 確かめたよ(毎年 変わる ことが あるよ)。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の 野球が つながって 見えてくるよ。MLB・NPB・各リーグ・各球団・各選手とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

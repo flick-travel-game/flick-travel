@@ -212,7 +212,7 @@ const EIGO = (() => {
   function card(q, prev){
     let h = "";
     if(prev){
-      h += '<div class="ai-learn eg-learn" role="status"><p class="eg-lh"><b lang="en">✅ ' + esc(prev.n) + '</b>' + sayBtn(prev.t) + '</p>' +
+      h += '<div class="ai-learn eg-learn" role="status"><p class="eg-lh"><b lang="en">✅ ' + esc(prev.n) + '</b>' + sayBtn(prev.t) + '</p>' + (prev.krs ? '<p class="eg-pk">' + esc(prev.krs) + '</p>' : "") +
            '<p class="eg-ja">' + prev.jarb + '</p><p class="eg-pt">💡 ' + prev.rb + '</p></div>';
     }else h += '<div class="ai-learn ai-hint">こたえると、日本語訳と 文法の ポイントが 出るよ</div>';
     const tag = pre && !pre.has(q.art) ? '<span class="ai-tag new">🆕 はじめまして</span>' : "";
@@ -232,12 +232,13 @@ const EIGO = (() => {
       const t = typeof target === "string" && target ? target : q.r;
       // 語ごとに すき間を あけて 見せる(けいくん 2026-10-11「問題表示は単語ごとに半角スペースが欲しい」)。打つ 字(target)に スペースは 入れない
       const sp = [q.krs].concat(q.kals || []).find(x => x && x.replace(/ /g, "") === t) || t;
-      let k = "", i = 0;
+      // 語の 途中で 折り返さない(語ごとに nowrap の かたまり)
+      let k = '<span class="eg-w">', i = 0;
       for(const ch of sp){
-        if(ch === " "){ k += '<span class="eg-gap ' + (i > 0 && i <= n ? "d" : "c") + '"> </span>'; continue; }
+        if(ch === " "){ k += '</span><span class="eg-gap ' + (i > 0 && i <= n ? "d" : "c") + '"> </span><span class="eg-w">'; continue; }
         k += '<span class="' + (i < n ? "d" : (i === n ? (err ? "x" : "n") : "c")) + '">' + esc(ch) + '</span>'; i++;
       }
-      return k;
+      return k + '</span>';
     }
     let h = "", p = 0;
     for(const ch of q.t){
@@ -247,7 +248,9 @@ const EIGO = (() => {
     return '<span lang="en" class="eg-tgt">' + h + '</span>';
   }
   /* 結果の 見出し: 英文の 下に 日本語訳 */
-  function nameHtml(q){ return '<span lang="en" class="eg-nm">' + esc(q.t) + '</span><span class="eg-nmj">' + q.jarb + '</span>'; }
+  function nameHtml(q){ return '<span lang="en" class="eg-nm">' + esc(q.t) + '</span>' + kanaLine(q) + '<span class="eg-nmj">' + q.jarb + '</span>'; }
+  /* 英文の すぐ 下に 出す ひらがなの 読み(語ごとに すき間。けいくん 2026-10-11「答えのアルファベットの下にも 先程答えた ひらがなの読みがあると良い」) */
+  function kanaLine(q){ return q.krs ? '<span class="eg-nmk">' + esc(q.krs) + '</span>' : ""; }
   /* ── 結果・図鑑の くわしい 情報: たとえば / つながる ことば / しくみ図の 📍 ── */
   function info(q, inZukan){
     const tag = inZukan ? "" : last && last.fresh.includes(q.art) ? '<span class="ai-tag new">🆕 はじめて 出会った</span>' : "";
@@ -351,7 +354,7 @@ const EIGO = (() => {
     const e = log()[id], box = sheet("ai-zdt"), where = whereOf(q), fav = favs().includes(id);
     box.innerHTML = '<div class="ai-card">' + '<button type="button" class="ai-x" aria-label="とじる">×</button>' + (e
       ? '<p class="ai-cn"><span class="ai-ic">' + q.e + '</span><span lang="en">' + esc(q.n) + '</span><button type="button" class="ai-fav' + (fav ? " on" : "") + '" data-ai-fav="' + esc(id) + '" aria-label="お気に入り">' + (fav ? "⭐" : "☆") + '</button></p>' +
-        '<p class="ai-meta">' + esc(q.c) + '</p><p class="eg-ja big">' + q.jarb + '</p><p class="ai-d">💡 ' + q.rb + '</p>' + info(q, true) +
+        '<p class="ai-meta">' + esc(q.c) + '</p>' + (q.krs ? '<p class="eg-pk big">' + esc(q.krs) + '</p>' : "") + '<p class="eg-ja big">' + q.jarb + '</p><p class="ai-d">💡 ' + q.rb + '</p>' + info(q, true) +
         '<p class="ai-st">出会った回数 ' + e[0] + '回' + (e[1] ? '・まちがい ' + e[1] + '回' : "") + '</p>'
       : '<p class="ai-cn"><span class="ai-ic">❔</span>？？？</p><p class="ai-d">まだ 出会っていない ことばです。<b>' + esc(where) + '</b>で 出会えるよ。</p><p class="ai-small">' + q.jr.icon + " " + esc(q.jr.name) + " ・ " + esc(q.c) + '</p>') +
       (trail.length > 1 ? '<button type="button" class="ai-btn ai-wide" data-ai-back="1">← 1つ前の ことばへ</button>' : "") + '</div>';
@@ -486,6 +489,7 @@ const EIGO = (() => {
 .target{word-break:normal;overflow-wrap:anywhere;font-size:clamp(20px,6vw,26px);letter-spacing:.01em;line-height:1.55}
 .target .eg-sk{border:0}
 .target .eg-gap{border:0;padding:0 .12em}
+.target .eg-w{white-space:nowrap;display:inline-block}
 .eg-gram{font-size:clamp(18px,5.4vw,22px)}.eg-en{font-size:clamp(17px,4.8vw,21px);line-height:1.45;word-break:normal;overflow-wrap:anywhere}
 .eg-input{display:grid;grid-template-columns:auto 1fr 1fr;gap:6px;align-items:center;margin:0 0 12px}.eg-input>span{font-size:12.5px;font-weight:800;color:#334155}
 .eg-input button{padding:8px 6px;border-radius:12px;border:1.5px solid #cbd5e1;background:#fff;color:#334155;font:inherit;font-size:14px;font-weight:900;cursor:pointer;line-height:1.3}
@@ -496,7 +500,8 @@ const EIGO = (() => {
 .eg-say.slow{font-size:13px}.eg-sayline{display:flex;gap:6px;margin:4px 0}.eg-learn .eg-say{padding:2px 6px;font-size:12px}
 .eg-auto{display:block;width:100%;margin:10px 0 0;padding:10px;border-radius:14px;border:1.5px dashed #94a3b8;background:#fff;color:#334155;font:inherit;font-size:13.5px;font-weight:800;cursor:pointer}
 .eg-auto.on{border-style:solid;border-color:#0b7285;color:#0b7285;background:#e3fafc}
-.eg-nm{display:block;font-size:1.02em;word-break:break-word}.eg-nmj{display:block;font-size:.88em;font-weight:700;color:#0b7285}.eg-nmj rt{color:#64748b}
+.eg-nm{display:block;font-size:1.02em;word-break:break-word}.eg-nmk{display:block;font-size:.8em;font-weight:700;color:#64748b!important;letter-spacing:.02em;margin:1px 0 2px}
+.eg-pk{font-size:12.5px;font-weight:700;color:#64748b!important;margin:1px 0 0!important}.eg-pk.big{font-size:14px;margin:6px 0 0!important}.eg-nmj{display:block;font-size:.88em;font-weight:700;color:#0b7285}.eg-nmj rt{color:#64748b}
 .ai-tile b[lang=en]{font-size:11.5px;font-weight:800}
 .map-card{display:none}
 .ai-panel{background:linear-gradient(160deg,#e3fafc 0%,#fff9db 55%,#edf2ff 100%);border:1px solid #99e9f2;border-radius:20px;padding:14px 14px 12px;margin:0 0 18px;color:#1e1b4b}

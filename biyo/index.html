@@ -1988,7 +1988,9 @@ async function drawBoard(m, lv, id){
       : boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。ログインすると のります</p>'
                                   : '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>') : "";
     if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも！</p>' + note; return; }
-    const champ = boardPeriod === "month" ? '<p class="board-champ">👑 今月の チャンピオン: ' + esc(rows[0].name) + '</p>' : "";  // 月1回の 大会の かわり(ニックネームだけ)
+    // 👑 1位(けいくん 2026-10-10「すべて出して」= 4つの 区切り ぜんぶ。かずともの period.ts の champ と 同じ字。ニックネームだけ)
+    const CHAMP = {today:"きょうの チャンピオン", week:"今週の チャンピオン", month:"今月の チャンピオン", all:"歴代 チャンピオン"};
+    const champ = '<p class="board-champ">👑 ' + (CHAMP[boardPeriod] || CHAMP.all) + ': ' + esc(rows[0].name) + '</p>';
     body.innerHTML = champ + rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
       (i < 3 ? '<span class="rk md">' + MEDALS[i] + '</span>' : '<span class="rk">' + (i+1) + '位</span>') +
       '<span class="nm">' + esc(r.name) + '</span><span class="tm">' + (r.ms/1000).toFixed(2) + '秒</span></div>').join("") + note;

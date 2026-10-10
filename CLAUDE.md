@@ -937,7 +937,11 @@
   エラシコ(リベリーノが 有名に・セルジオ越後から 教わったと 語る)/ DOGSO は 名前も「DOGSO」(読み どぐそ)/ ハンドの 反則(腕で からだを 大きく 見せる 場合も)/ トゥーキックは kihon の トーキックと 重なったので フリックに 入れかえ /
   ゴール期待値(PK は 0.7〜0.8 くらい)/ 4-4-2(サッキが 広めた → サッキの ミランの 形としても 有名)
 - ふりがなは 確かめ役が `python3 tools/soccer/ruby_dump.py <旅>` で 全語 見て **文を 言いかえて さけた**(一発勝負 → 負けたら 終わりの 試合・北中米 → 北アメリカ・中央アメリカ・えんじ色 → えんじいろ・秋春制 → 秋に はじまる 形・角 → かど など)。`FIX` には まだ 何も 足していない
-- 絵: **まだ 届いていない**。仮の アイコン(`tools/soccer/placeholder_icon.py`。芝の 緑の 地に 白と 黒の ボール)・題名は 文字(`hero=False`・`logo=False`)。
+- **トップの 絵は 入れた**(2026-10-10。`soccer/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**:
+  ⚠️ **1回目は 入れなかった**: プレミアリーグの ライオン・チャンピオンズリーグの 星の ボール・FIFA の トロフィー・マンチェスター・ユナイテッドに そっくりの 盾(**本物の マーク**)/ ゲームに 無い ことば 15こ / 「ぼるとがるご」。
+  2回目は 札 36こ ぜんぶ ゲームに ある 読み・本物の マーク なし(スター・伝説の 選手は 国旗と ボールだけ)。のこった 2か所は **絵の 中で 直した**(`tools/soccer/fix_text.py`):
+  「ぶれみありーぐ」→「ぷれみありーぐ」/ 図鑑の 見本「ぽうしの という いみ」→「ぼうし という いみ」。もとの 絵は 入れものに 入れていない
+- アイコン・題名は まだ(仮の アイコン `tools/soccer/placeholder_icon.py`・題名は 文字。`logo=False`)。
   届いたら 四角い 絵 → `tools/soccer/art/square-src.png` → `python3 tools/icon_from_square.py soccer`(`iconv` +1)/ 題名の 透明 PNG → `tools/soccer/art/title-src.png` → `python3 tools/title_from_art.py soccer`(`logo=True`・`art.word` を 実寸)/ `soccer/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **実在の 選手の 顔・クラブの エンブレム・大会の ロゴ・スポンサー名・本物の 背番号の 組みあわせ**を 描かせない。届いたら まず 字を 切り出して 読む(「ワールドサッカ」「フリックサッカー」に なりやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #368)に 足した。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから

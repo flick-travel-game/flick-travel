@@ -1615,3 +1615,9 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - ⚠️ ヒントだけ。だれの 家か・ランキングに のるか は かならず サーバーが 決める(`/plan` の 答えが 来たら そちらが 勝つ)
 - マイページを ひらいたまま 答えが 来ても かきなおす(`fetchPlan` の 中で `drawProf()`)
 - ⚠️ iPhone の ホーム画面に **ゲームごとに** 足した アイコンは 保存場所が べつ(iOS の 決まり)。ホーム画面は「かずとも」1つ にして その 中から ゲームへ(前からの 決めごと)
+
+## 検索に 出す ための 説明と 本当の 住所(けいくん 2026-10-10「いますぐ検索に出す」)
+- 土台の `index.html` の head に `meta description`・`link rel=canonical`・`og:*`(LINE・X に はったときの 絵と 文)を 足した
+- ゲームごとの 中身は `tools/build_games.py` の `build()` が 入れかえる: 説明 = その ゲームの `lead` +「かずともの フリックゲーム。」/ 住所 = **`https://kazutomo.app/flick/<gid>/`**(github.io は 写し。本当の 住所は kazutomo.app)/ 絵 = その ゲームの `hero.webp`(無ければ 世界の 絵)
+- ⚠️ `lead` を 直すと 検索の 説明も 変わる。**`lead` は 検索で いちばん 人目に つく 文**と 思って 書く
+- かずとも側(speed-king)は `layout.tsx` の noindex を 外し、`sitemap.ts` に ゲームの ページを 足した(同じ日)

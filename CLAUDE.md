@@ -1412,8 +1412,12 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 
 - 決めたこと: 名前「**フリック韓国語**」(フォルダ `kankoku`・modes `KANKOKU`・旅の id は `kr…`)/ **英会話と 同じ 型**(スピード記録勝負・1回 10問・苦手克服と ふくしゅうは 作らない)/
   **打つのは 読みの ひらがな**(A)。ハングルを 大きく 見せて 🔊(ko-KR)で 聞きながら 打つ。⚠️ **「ハングルで 打つ」切りかえ(B)は まだ 作っていない**(あとから 足す 約束)
-- 旅(9): 🔤 ハングルのきほん `krhan` 60 / 🌱 入門の単語 `krw1` 100 / 📘 初級 `krw2` 100 / 🧭 中級 `krw3` 100(漢字語の「日本語と 音が にている」を note に)/ 🏙 上級 `krw4` 100(四字熟語・ことわざ)/
-  📐 文法と敬語 `krgram` 100 / 💬 日常会話 `krtalk` 150(15場面 × 10)/ 🌟 ネイティブの表現 `krnative` 100 / 🏆 マスター `krmas` = **810問**(2026-10-10。**半分**。遊んでもらって 直してから のこり 約800問を 足す)
+- 旅(9): 🔤 ハングルのきほん `krhan` 60 / 🌱 入門の単語 `krw1` 200 / 📘 初級 `krw2` 200 / 🧭 中級 `krw3` 200(漢字語の「日本語と 音が にている」を note に)/ 🏙 上級 `krw4` 200(四字熟語・ことわざ)/
+  📐 文法と敬語 `krgram` 200 / 💬 日常会話 `krtalk` 300(15場面 × 20)/ 🌟 ネイティブの表現 `krnative` 200 / 🏆 マスター `krmas` = **1560問**
+  (2026-10-10 に まず 810問 → 同じ日に けいくん「残りの約800問を作る」で 750問 足した。足す 一覧は `tools/kankoku/plan2.json`)
+- ⭐ **問題を 足しても 今の ステージは 変わらない**: 単語・文法・ネイティブは データの 順に 10問ずつ(うしろに 足すだけ)。
+  日常会話は 場面ごとに データの 順で 10問ずつ「まわり」に 分け、まわり → 場面 の 順に ならべる(`kankoku.js` の krtalk の ところ)。
+  ⚠️ マスター `krmas` だけは 足すと 中身が 入れかわる(けいくん承知)。足したら 前の ステージの id の ならびと くらべる(scratchpad の stages.mjs の やりかた)
 - 4段: 1 入門 = ハングルが 読めて あいさつ / 2 初級 = 旅行で 困らない / 3 中級 = 友だちと ふつうに 話す(敬語と ため口)/ 4 上級 = ネイティブ。画面に TOPIK・検定の ことばは 出さない
 - ことばは `tools/kankoku/src/<旅>.json`(決まりは `tools/kankoku/PROMPT.md`)+ `tools/kankoku/meta.json` → `tools/kankoku/korean_js.py` が `data/korean.json` と `kankoku/korean.js`。
   ⚠️ **id は korean_js.py が はじめて 通したときに src に 書きこむ**(`krw1-12` の 形)。きろくが id で おぼえているので **変えない・並べかえても id は そのまま**
@@ -1430,7 +1434,7 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - 絵: **まだ 無い**(仮の アイコン `tools/kankoku/placeholder_icon.py`・題名は 文字・トップの 絵なし)。届いたら `tools/kankoku/art/square-src.png` → `python3 tools/icon_from_square.py kankoku`(iconv を +1)/
   `title-src.png` → `python3 tools/title_from_art.py kankoku`(logo を True・art.word を 実寸に)/ `kankoku/hero.webp`(hero を True)。speed-king の `HOME_GAMES` にも art と word を 足す
 - かずとも: `FLICK_MODES` に krhan / krw1〜krw4 / krgram / krtalk / krnative / krmas、`FLICK_LINK_TARGETS` に kankoku、`HOME_GAMES`(英会話の となり。絵なし)・`FLICK_SERIES_GAMES` に フリック韓国語
-- 確かめかた: `node tools/play-all.mjs kankoku/`(全 ステージ)。**画面に 出る ひらがなを フリックの とちゅうの 字(し→じ・つ→っ)ごと 打っても 赤く ならない**ことも 確かめた(810問)
+- 確かめかた: `node tools/play-all.mjs kankoku/`(全 ステージ)。**画面に 出る ひらがなを フリックの とちゅうの 字(し→じ・つ→っ)ごと 打っても 赤く ならない**ことも 確かめた(810問。1560問に した ときも 同じ 表なので 新しい 字の 形は 出ない)
 
 ## 題名の 絵(logo-word)の 切れ・欠けを 直した(けいくん 2026-10-02「タイトルが切れている、文字がかけているのが たくさんあるので すべて修復してください」)
 

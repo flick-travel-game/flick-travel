@@ -45,10 +45,10 @@ GAMES = {
     # フリック韓国語(けいくん 2026-10-10「韓国語のネイティブになれるレベル / フリック英会話を参考に」→「まずA、あとでB」・旅と 4段は おすすめ・語数は「半分から」)。
     #   まとめは docs/フリック韓国語-はじめかた.md。ことばは tools/kankoku/src/<旅>.json → kankoku/korean.js(tools/kankoku/korean_js.py)。しくみは kankoku/kankoku.js(KANKOKU。eikaiwa.js を 写した)。
     #   ⚠️ 打つのは 読みの ひらがな。読みは pron(発音どおりの ハングル)から tools/kankoku/kana_table.py の 表で 作る(手で 書かない)
-    #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/kankoku/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
+    #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/kankoku/placeholder_icon.py)。トップの 絵は 2026-10-11 に 入れた(けいくんの ChatGPT の 絵。小さい 字の まちがい 2つを tools/kankoku/fix_text.py で 直した)。題名の 絵は まだ 無い(logo=False)。
     #   届いたら tools/kankoku/art/square-src.png → tools/icon_from_square.py kankoku(iconv を +1)/ title-src.png → tools/title_from_art.py kankoku(logo を True・art.word を 実寸に)/ kankoku/hero.webp(hero を True)
-    "kankoku": dict(name="フリック韓国語", modes="KANKOKU", kinds=set(), color="#0ea5e9", hero=False, logo=False,
-                    art=dict(word=(900, 213), hero=(1536, 1024), alt="フリック韓国語", iconv=1, wordv=1),
+    "kankoku": dict(name="フリック韓国語", modes="KANKOKU", kinds=set(), color="#0ea5e9", hero=True, logo=False,
+                    art=dict(word=(900, 213), hero=(1536, 1024), alt="フリック韓国語。ソウルの 町で スマホを 持った 男の子と 女の子と 白い 犬が 笑っている 絵。まわりに 5つの 旅の ことばの 札", iconv=1, wordv=2),
                     lead="ハングル・韓国語の 単語・文法と 敬語・日常会話・ネイティブの 表現を、フリックで 打って 旅しよう。ハングルを 見て、🔊で 発音を 聞きながら、読みの ひらがなを 打つよ。打つと 意味と 例文が 出るよ。ハングルの 読みかたから はじめて、ネイティブが ふだん 使う ことばまで。",
                     how="表示された 読みの ひらがなを、そのまま打ち写してね。空白・「っ」は 打たなくても すすむよ。「か」と「が」の ような にごりは どちらでも OK。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。読みの ひらがなは 発音に 近い 字なので、🔊で ほんとうの 音を 聞いてね。🔊 は 端末の 読み上げ機能を 使うので、端末に よって 声が ちがいます。",
                     rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、ハングルと 韓国語の しくみが つながって 見えてくるよ。"),

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """tools/eigo/kana_dict.tsv(語ごとの 読み)から terms-<旅>.json の reading と acceptedReadings を 作りなおす
     python3 tools/eigo/make_readings.py
-- 読みは 語ごとの 読みを つなげた もの(フリック英会話 data/english.json と 同じ 書きかた)。決まりは tools/eigo/PROMPT.md
+- 読みは 語ごとの 読みを 半角スペースで つなげた もの(どぅー でぃっど だん)。画面では 語ごとに すき間を あけて 見せ、打つ 字は スペースを 外した もの(フリック英会話 data/english.json と 同じ 読みかた)。決まりは tools/eigo/PROMPT.md
 - 辞書に ない 語が あれば 止まる(kana_dict.tsv に 1行 足してから もう一度)
 - 同じ つづりで 読みが 変わる 語(read の 過去形 など)は 下の OVERRIDE に 例文の id ごとに 書く
 - acceptedReadings は ゆれる 読みが ある ときだけ。先頭は reading、つぎに ゆれ1 / ゆれ2 を ぜんぶの 語で 入れかえた もの
@@ -46,10 +46,10 @@ def readings_of(item, D, missing):
         r = ov.get(f"{w}#{seen[w]}") or ov.get(w) or D.get(w)
         if r is None: missing.setdefault(w, []).append(item["id"]); r = ["?"]
         parts.append(r)
-    main = "".join(p[0] for p in parts)
+    main = " ".join(p[0] for p in parts)  # 語と 語の あいだは 半角スペース(画面で 区切って 見せる。打つ ときは いらない。けいくん 2026-10-11)
     alts = [main]
     for k in (1, 2):  # ゆれ k を ぜんぶの 語で 入れかえる(ゆれが 少ない 語は いちばん 後ろの ゆれ)
-        a = "".join(p[min(k, len(p) - 1)] for p in parts)
+        a = " ".join(p[min(k, len(p) - 1)] for p in parts)
         if a not in alts: alts.append(a)
     return main, alts
 

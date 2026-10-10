@@ -437,11 +437,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリック韓国語</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="205" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック韓国語</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリック韓国語。ソウルの 町で スマホを 持った 男の子と 女の子と 白い 犬が 笑っている 絵。まわりに 5つの 旅の ことばの 札" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリック韓国語。ソウルの 町で スマホを 持った 男の子と 女の子と 白い 犬が 笑っている 絵。まわりに 5つの 旅の ことばの 札" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -573,7 +573,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kankoku", name:"フリック韓国語", modes:(typeof KANKOKU === "object" ? KANKOKU.modes : []), assets:"../", logo:false, hero:true, dir:"kankoku/", lead:"ハングル・韓国語の 単語・文法と 敬語・日常会話・ネイティブの 表現を、フリックで 打って 旅しよう。ハングルを 見て、🔊で 発音を 聞きながら、読みの ひらがなを 打つよ。打つと 意味と 例文が 出るよ。ハングルの 読みかたから はじめて、ネイティブが ふだん 使う ことばまで。", how:"表示された 読みの ひらがなを、そのまま打ち写してね。空白・「っ」は 打たなくても すすむよ。「か」と「が」の ような にごりは どちらでも OK。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。読みの ひらがなは 発音に 近い 字なので、🔊で ほんとうの 音を 聞いてね。🔊 は 端末の 読み上げ機能を 使うので、端末に よって 声が ちがいます。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、ハングルと 韓国語の しくみが つながって 見えてくるよ。" };
+const GAME = { id:"kankoku", name:"フリック韓国語", modes:(typeof KANKOKU === "object" ? KANKOKU.modes : []), assets:"../", logo:true, hero:true, dir:"kankoku/", lead:"ハングル・韓国語の 単語・文法と 敬語・日常会話・ネイティブの 表現を、フリックで 打って 旅しよう。ハングルを 見て、🔊で 発音を 聞きながら、読みの ひらがなを 打つよ。打つと 意味と 例文が 出るよ。ハングルの 読みかたから はじめて、ネイティブが ふだん 使う ことばまで。", how:"表示された 読みの ひらがなを、そのまま打ち写してね。空白・「っ」は 打たなくても すすむよ。「か」と「が」の ような にごりは どちらでも OK。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。読みの ひらがなは 発音に 近い 字なので、🔊で ほんとうの 音を 聞いてね。🔊 は 端末の 読み上げ機能を 使うので、端末に よって 声が ちがいます。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、ハングルと 韓国語の しくみが つながって 見えてくるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

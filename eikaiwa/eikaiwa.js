@@ -19,20 +19,32 @@ const EIKAIWA = (() => {
   const MODE_OF = { w1:"ew1", w2:"ew2", w3:"ew3", w4:"ew4", talk:"etalk" };
   const JOURNEY_OF = Object.fromEntries(Object.entries(MODE_OF).map(([j, m]) => [m, j]));
 
-  /* ── 打つ 字: 小文字の 英字と 数字だけ(tools/eikaiwa/english_js.py の typed と 同じ) ── */
-  const norm = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");
+  /* ── 打ちかた: ひらがな(はじめ)/ アルファベット(けいくん 2026-10-10「解答方法、デフォルトはひらがなで打つように / アルファベットに切り替えも出来るように」)
+     ひらがな = 英語の 読み(I → あい / Good morning! → ぐっどもーにんぐ)。AIフリック旅行の API = えーぴーあい と 同じ 考え方。
+     えらんだ ものは 端末に おぼえる(flick-en-input)。自己ベストは 打ちかたごとに 分ける(bestTag) */
+  const INPUT_KEY = "flick-en-input";
+  let inputMode = (() => { try{ return localStorage.getItem(INPUT_KEY) === "abc" ? "abc" : "kana"; }catch(e){ return "kana"; } })();
+  const kana = () => inputMode === "kana";
+  function setInput(m){ inputMode = m === "abc" ? "abc" : "kana"; try{ localStorage.setItem(INPUT_KEY, inputMode); }catch(e){} }
+  /* ── 打つ 字: アルファベットは 小文字の 英字と 数字だけ(tools/eikaiwa/english_js.py の typed と 同じ)。
+     ひらがなは 土台と 同じ(カタカナ → ひらがな、空白・記号は 打たなくてよい) ── */
+  const normAbc = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");
+  const normKana = s => String(s || "").replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60)).replace(/[\s、。・，．,.!！?？「」『』〜'’"]/g, "");
+  const norm = s => kana() ? normKana(s) : normAbc(s);
 
   /* ── ことば → 問題(土台の SPOTS と 同じ形: n 名前 / r 打つ字 / art キー / c 小見出し / d 説明 / e 絵文字) ── */
   const ALL = D.list.map((o, i) => {
     const j = JBY[o.j], L = LVN[o.dv];
     const sub = o.k === "word" ? o.pos + " ・ " + o.c : SCBY[o.sc].icon + " " + o.c;
-    return Object.assign({}, o, { art:o.id, k:"english", kind:o.k, n:o.t, ord:i, jr:j,
+    const q = Object.assign({}, o, { art:o.id, k:"english", kind:o.k, n:o.t, ord:i, jr:j, er:o.r, kr:o.kr, kal:o.kal || [],
       d:"",  // 意味は 名前の 横(nameHtml)。品詞は 小見出し(c)に ある
       c:j.icon + " " + j.name + " ・ " + sub + " ・ " + L.icon + " " + L.name });
+    Object.defineProperty(q, "r", { get(){ return kana() ? q.kr : q.er; }, enumerable:true, configurable:true });  // 打つ 字(土台が 読む)は 打ちかたで かわる
+    return q;
   });
   const BY = new Map(ALL.map(q => [q.art, q]));
   const TOTAL = ALL.length;
-  const easy = (a, b) => a.r.length - b.r.length;
+  const easy = (a, b) => a.er.length - b.er.length;  // ステージの 中身は 打ちかたで かえない(どちらでも 同じ 10問)
 
   /* ── 旅の ステージを 組む ──
      英単語: 旅の ことばを data の ならび順に 10語ずつ。
@@ -137,6 +149,7 @@ const EIKAIWA = (() => {
   /* 問題: いつも 同じ 10問(土台の LEVELS と 同じ。人ごとに かえない) */
   function makeQs(m, lv){
     unlock();  // 旅を はじめる タップの 中 = iPhone で 音を 出せるように しておく
+    try{ ans.lang = kana() ? "ja" : "en"; }catch(e){}  // 打ちかたに 合わせて 入力欄の ことば
     pre = discovered();
     return levels[m][lv].slice();
   }
@@ -170,17 +183,24 @@ const EIKAIWA = (() => {
        ・英会話: 日本語の 意味を 大きめに、下に「💬 返事の例」。打つ 英文は その下の 四角
        ・「はじめまして」の ふだは 出さない */
     const say = TTS ? '<button type="button" class="en-say big" data-en-say="' + esc(q.t) + '" aria-label="発音を 聞く">🔊 きく</button>' : "";
-    let h = '<p class="en-type">⌨️ ' + (q.kind === "word" ? "この 英単語を 打とう" : "この 英語を 打とう") + '</p>';
+    let h = '<p class="en-type">⌨️ ' + (kana() ? "この 英語の 読みを ひらがなで 打とう" : q.kind === "word" ? "この 英単語を 打とう" : "この 英語を 打とう") + '</p>';
     /* 英単語も 英会話と 同じ 形(けいくん 2026-09-26「英単語も同じように日本語で大きく問題を表示 / 答えの欄に英単語のスペルを表示」):
        日本語の 意味が 大きな 問題、英語の スペルは 下の 答えの 欄(1字ずつ 四角)にだけ 出す */
     const kindLabel = q.kind === "word" ? q.e + " " + esc(q.pos) : SCBY[q.sc].icon + " " + esc(SCBY[q.sc].name);
     h += '<div class="en-qp"><small class="en-cat">' + kindLabel + '</small>' + say + '</div>' +
          '<p class="en-mean big' + (q.kind === "word" ? " w" : "") + '">' + q.mrb + '</p>' +
+         (kana() ? '<p class="en-spell" lang="en">' + esc(q.t) + '</p>' : "") +  // ひらがなで 打つ ときも つづりは 見せる
          (q.rp ? '<p class="en-rp1">💬 返事の例 <span lang="en">' + esc(q.rp) + '</span></p>' : "");
     return h;
   }
   /* 打つ 英文: 空白・記号も そのまま 見せる。色が かわるのは 打つ 字(英字・数字)だけ */
   function tgtHtml(q, n, err){
+    if(kana()){  // ひらがな: 土台と 同じ 見せかた(英単語は 1字ずつ 四角)
+      const t = typeof target === "string" && target ? target : q.kr;
+      const cls = i => i < n ? "d" : i === n ? (err ? "x" : "n") : "c";
+      return q.kind === "word" ? '<span class="en-tiles">' + [...t].map((ch, i) => '<span class="en-tile ' + cls(i) + '">' + esc(ch) + '</span>').join("") + '</span>'
+                               : [...t].map((ch, i) => '<span class="' + cls(i) + '">' + esc(ch) + '</span>').join("");
+    }
     if(q.kind === "word"){  // 英単語: 1字ずつ 四角に(「I」1字でも 字だと わかるように)
       let t = "", p = 0;
       for(const ch of q.t){
@@ -197,6 +217,17 @@ const EIKAIWA = (() => {
       }else h += '<span class="' + (p > 0 && p <= n ? "d" : "c") + ' en-sk">' + (ch === " " ? " " : esc(ch)) + '</span>';
     }
     return '<span lang="en" class="en-tgt">' + h + '</span>';
+  }
+  /* 読みかたが いくつか ある ことば(ゆー / ゆう など)。打った 字に 合う 読みへ 目あてを 合わせる(AIフリック旅行と 同じ) */
+  function retarget(q, v){
+    if(!kana() || !q || !q.kal || !q.kal.length || !v) return q ? q.r : "";
+    const all = [q.kr].concat(q.kal);
+    if(all.includes(v)) return v;
+    const pre2 = all.filter(x => x.startsWith(v));
+    if(pre2.length) return pre2.includes(q.kr) ? q.kr : pre2[0];
+    let best = q.kr, bl = -1;
+    for(const x of all){ let i = 0; while(i < x.length && i < v.length && x[i] === v[i]) i++; if(i > bl){ bl = i; best = x; } }
+    return best;
   }
   /* 結果の 見出し: 英語の 横に 意味(けいくん 2026-09-26「最後の解説は英単語の横に意味を書いてください」) */
   function nameHtml(q){ return '<span lang="en" class="en-nm">' + esc(q.t) + '</span><span class="en-nmj">' + q.mrb + '</span>'; }
@@ -216,6 +247,11 @@ const EIKAIWA = (() => {
     const jr = JR.map(J => { const all = pools[MODE_OF[J.id]], got = all.filter(q => d.has(q.art)).length;
       return '<li><span class="rn">' + J.icon + " " + J.name + (got >= all.length ? " 🏅" : "") + '</span><span class="rc"><b>' + got + '</b> / ' + all.length + '</span><i style="--w:' + (got / all.length * 100).toFixed(1) + '%;--c:' + J.color + '"></i></li>'; }).join("");
     $("#kabu-panel").innerHTML = '<section class="en-panel">' +
+      '<div class="en-inp" role="group" aria-label="打ちかた"><span>⌨️ 打ちかた</span>' +
+      '<button type="button" data-en-input="kana"' + (kana() ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>あ ひらがな</button>' +
+      '<button type="button" data-en-input="abc"' + (!kana() ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>A ABC</button></div>' +
+      '<p class="en-kb">' + (kana() ? "⌨️ 英語の 読みを ひらがなで 打つよ(I → あい、Good morning! → ぐっどもーにんぐ)。つづりも いっしょに 出るよ。" :
+        "⌨️ iPhone は 日本語キーボードの「<b>ABC</b>」で フリックすると 英語が 打てるよ。大文字・小文字は どちらでも OK。空白や「\' , . ? !」は 打たなくても すすむよ。") + '</p>' +
       '<p class="en-total">🧭 合計 <b>' + fmt(n) + '</b> / ' + fmt(TOTAL) + ' 発見</p><div class="en-bar" style="--w:' + (n / TOTAL * 100).toFixed(1) + '%"></div>' +
       '<ul class="en-jr">' + jr + '</ul>' +
       '<p class="en-title">' + (t ? t[1] + " いまの称号「<b>" + esc(t[2]) + "</b>」" : "🎒 さいしょの 称号まで あと " + (10 - n) + "こ") +
@@ -224,7 +260,6 @@ const EIKAIWA = (() => {
       '<button type="button" class="en-btn" data-en-open="quiz">🧩 ミニクイズ</button>' +
       '<button type="button" class="en-btn" data-en-open="fav">⭐ お気に入り' + (fv ? "(" + fv + ")" : "") + '</button></div>' +
       (TTS ? '<button type="button" class="en-auto' + (autoSay() ? " on" : "") + '" data-en-auto="1" aria-pressed="' + autoSay() + '">🔊 打ったら 英語を 読みあげる：<b>' + (autoSay() ? "ON" : "OFF") + '</b></button>' : "") +
-      '<p class="en-kb">⌨️ iPhone は 日本語キーボードの「<b>ABC</b>」で フリックすると 英語が 打てるよ。大文字・小文字は どちらでも OK。空白や「\' , . ? !」は 打たなくても すすむよ。</p>' +
       '<p class="en-note">' + esc(D.note) + '</p></section>';
     const chips = $("#kabu-chips");
     if(JOURNEY_OF[m]){
@@ -340,10 +375,11 @@ const EIKAIWA = (() => {
   // 🔊 を おしても 入力欄から 手が はなれない(キーボードが 閉じない)ように
   document.addEventListener("mousedown", e => { if(e.target.closest && e.target.closest("[data-en-say]") && document.body.classList.contains("playing")) e.preventDefault(); });
   document.addEventListener("click", e => {
-    const t = e.target.closest && e.target.closest("[data-en-say],[data-en-term],[data-en-open],[data-en-auto],[data-en-fav],[data-en-more],[data-en-ans]");
+    const t = e.target.closest && e.target.closest("[data-en-input],[data-en-say],[data-en-term],[data-en-open],[data-en-auto],[data-en-fav],[data-en-more],[data-en-ans]");
     if(!t) return;
     if(t.dataset.enSay){ e.stopPropagation(); say(t.dataset.enSay, !!t.dataset.enSlow); if(document.body.classList.contains("playing")) ans.focus(); return; }
     if(t.dataset.enTerm) return detail(t.dataset.enTerm);
+    if(t.dataset.enInput){ setInput(t.dataset.enInput); if(typeof showBest === "function") showBest(); else home(mode); return; }
     if(t.dataset.enAuto){ setAutoSay(!autoSay()); if(autoSay()){ unlock(); say("Hello!"); } home(mode); return; }
     if(t.dataset.enFav){ toggleFav(t.dataset.enFav); detail(t.dataset.enFav); if(document.getElementById("en-zk") && !document.getElementById("en-zk").classList.contains("hidden")) drawZukan(); home(mode); return; }
     if(t.dataset.enMore){ zf.shown += 180; return drawZukan(); }
@@ -375,7 +411,11 @@ const EIKAIWA = (() => {
 .en-btn:active{transform:translateY(1px)}.en-wide{width:100%;margin-top:10px}
 .en-auto{display:block;width:100%;margin:10px 0 0;padding:10px;border-radius:14px;border:1.5px dashed #94a3b8;background:#fff;color:#334155;font:inherit;font-size:13.5px;font-weight:800;cursor:pointer}
 .en-auto.on{border-style:solid;border-color:#0e8f6e;color:#065f46;background:#f0fdf4}
-.en-kb{font-size:12px;color:#475569;line-height:1.7;margin:10px 0 0;background:#fff;border-radius:12px;padding:8px 10px}
+.en-inp{display:flex;align-items:center;gap:6px;margin:0 0 6px;font-size:13px;font-weight:800;color:#334155}.en-inp span{flex:none}
+.en-inp button{flex:1;padding:9px 6px;border-radius:12px;border:1.5px solid #cbd5e1;background:#fff;color:#334155;font:inherit;font-size:13.5px;font-weight:800;cursor:pointer}
+.en-inp button.on{background:#1d6fe0;border-color:#1d6fe0;color:#fff}
+.en-spell{margin:0 0 6px;font-size:clamp(18px,5.5vw,22px);font-weight:800;color:#334155;word-break:break-word}
+.en-kb{font-size:12px;color:#475569;line-height:1.7;margin:0 0 12px;background:#fff;border-radius:12px;padding:8px 10px}
 .en-note{font-size:11px;color:#64748b;line-height:1.6;margin:10px 0 0}
 .en-lead{color:var(--muted);font-size:13px;margin:0 0 12px;line-height:1.7}
 .en-route{display:flex;flex-wrap:wrap;align-items:center;gap:4px 2px;margin:-4px 0 8px;font-size:12.5px;font-weight:800}
@@ -441,6 +481,6 @@ body.en-lock{overflow:hidden}
   const hb = document.getElementById("home-btn"); if(hb) hb.textContent = "旅マップに もどる";
 
   return { kind:"english", modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
-           card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), norm, tgtHtml, nameHtml, say,
+           card, info, home, lvInfo, retarget, bestTag:() => kana() ? "-kana" : "", cardModes:() => MODES_ALL, byArt:id => BY.get(id), norm, tgtHtml, nameHtml, say,
            noRank:(m, lv) => !RANK_READY || lv >= 60, noBoard:!RANK_READY, openZukan };
 })();

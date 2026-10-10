@@ -477,7 +477,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     </section>
     <div class="how">
       <p id="how1">表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。</p>
-      <p>大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくて大丈夫。</p>
+      <p>ひらがなで 打つときは 英語の 読みを 打つよ。ABC で 打つときは 大文字・小文字は どちらでも OK、空白や記号は 打たなくても すすむよ。</p>
       <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
     <p class="trial-note hidden" id="trial-note"></p>
     <p class="about-link"><a href="https://kazutomo.app/" id="about-link">📖 かずとも の ホーム</a></p>
@@ -498,7 +498,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <span class="clock display" id="clock">0.00</span>
     </div>
     <div class="field">
-    <input class="answer" id="ans" type="text" lang="en" inputmode="text"
+    <input class="answer" id="ans" type="text" lang="ja" inputmode="text"
       autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done"
       aria-label="ここに入力">
     <span class="typed" id="typed"></span>
@@ -552,15 +552,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="english.js?v=2d67573d"></script>
-<script src="eikaiwa.js?v=348415a2"></script>
+<script src="english.js?v=a837e517"></script>
+<script src="eikaiwa.js?v=425b0cdf"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
    前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"eikaiwa", name:"フリック英会話", modes:(typeof EIKAIWA === "object" ? EIKAIWA.modes : []), assets:"../", logo:true, hero:true, dir:"eikaiwa/", lead:"英単語と 日常英会話を、フリックで 打ち写して 旅しよう。打つと 意味と 例文が 出て、🔊で 発音も 聞けるよ。身のまわりの ことばから はじめて、外国の人と 話せる 英語まで。", how:"表示された 英語を、そのまま打ち写してね。大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。iPhone は 日本語キーボードの「ABC」なら フリックで 英語が 打てるよ。" };
+const GAME = { id:"eikaiwa", name:"フリック英会話", modes:(typeof EIKAIWA === "object" ? EIKAIWA.modes : []), assets:"../", logo:true, hero:true, dir:"eikaiwa/", lead:"英単語と 日常英会話を、フリックで 打ち写して 旅しよう。打つと 意味と 例文が 出て、🔊で 発音も 聞けるよ。身のまわりの ことばから はじめて、外国の人と 話せる 英語まで。", how:"ふつうは 英語の 読みを ひらがなで 打つよ(I → あい、Good morning! → ぐっどもーにんぐ)。上の「⌨️ 打ちかた」で「ABC」に すると 英語の つづりで 打てるよ(大文字・小文字は どちらでも OK、空白や記号は 打たなくても すすむ)。1回は かならず 10問。どのステージも いつも 同じ 10問なので、タイムを くらべられるよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。ABC で 打つときは、iPhone の 日本語キーボードの「ABC」なら フリックで 英語が 打てるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},
@@ -1226,7 +1226,7 @@ function planViewsRefresh(){
 function profiles(){ try{ const a = JSON.parse(store("flick-profiles") || "[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
 function saveProfiles(a){ store("flick-profiles", JSON.stringify(a)); }
 function curProfile(){ const id = store("flick-profile"); return profiles().find(p => p.id === id) || null; }
-function bestKey(m, lv){ const p = curProfile(); return "flick-best-" + (p ? "p" + p.id + "-" : "") + m + "-" + (lv+1); }
+function bestKey(m, lv){ const p = curProfile(); return "flick-best-" + (p ? "p" + p.id + "-" : "") + m + "-" + (lv+1) + (PLUG && PLUG.bestTag && PLUG.owns(m) ? PLUG.bestTag() : ""); }  // 英会話: 自己ベストは 打ちかた(ひらがな / アルファベット)ごと
 function bestOf(m, lv){ return parseFloat(recGet(bestKey(m, lv))); }
 function clearedSpots(m){
   if(PLUG && PLUG.owns(m)) return PLUG.discoveredIn(m);  // 会社は「出会った会社」

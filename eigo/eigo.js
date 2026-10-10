@@ -21,7 +21,7 @@ const EIGO = (() => {
   /* ── ことば → 問題(土台の SPOTS と 同じ形: n 名前 / r よみ / art キー / c 小見出し / d 説明 / e 絵文字) ── */
   const ALL = D.list.map((o, i) => {
     const j = JBY[o.j];
-    return Object.assign({}, o, { art:o.id, k:"eigoterm", t:o.n, n:o.n, r:o.r, e:o.e, d:o.rb, ord:i, jr:j,
+    return Object.assign({}, o, { art:o.id, k:"eigoterm", t:o.n, rEn:o.r, n:o.n, r:o.r, e:o.e, d:o.rb, ord:i, jr:j,
       c:j.icon + " " + j.name + " ・ " + o.c + " ・ " + LVN[o.dv].icon + " " + LVN[o.dv].name, c0:o.c });
   });
   const BY = new Map(ALL.map(q => [q.art, q]));
@@ -94,7 +94,21 @@ const EIGO = (() => {
     save(L);
   }
   /* ── 英字の そろえかた(英会話の norm と 同じ。tools/eigo/terms_js.py の norm とも 同じ) ── */
-  const norm = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");
+  const normEn = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");
+  /* ── 答えかた: ひらがな(日本語訳を 打つ。はじめ)/ ABC(英文を 打つ)。端末に おぼえる ── */
+  const IN_KEY = "flick-eigo-input";
+  let inKana = (() => { try{ return localStorage.getItem(IN_KEY) !== "abc"; }catch(e){ return true; } })();
+  function applyInput(){
+    for(const q of ALL) q.r = inKana ? q.kr : q.rEn;
+    if(typeof document === "undefined") return;
+    const a = document.getElementById("ans"); if(a) a.setAttribute("lang", inKana ? "ja" : "en");
+    const hp = document.querySelector(".how p:nth-of-type(2)");
+    if(hp) hp.textContent = inKana ? "漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。" : "大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくて大丈夫。";
+  }
+  function setInput(kana){ inKana = kana; try{ localStorage.setItem(IN_KEY, kana ? "kana" : "abc"); }catch(e){} applyInput(); }
+  /* 打った 字の そろえかた: ひらがなの ときは 土台(index.html)の norm、ABC の ときは 英字だけ */
+  const normIn = s => inKana ? (typeof window !== "undefined" && typeof window.norm === "function" ? window.norm(s) : s) : normEn(s);
+  applyInput(); if(typeof document !== "undefined") document.addEventListener("DOMContentLoaded", applyInput);
   /* ── 🔊 発音(ブラウザに 入っている 読み上げ。音が 出ない 端末でも あそべる。英会話と 同じ しかけ) ──
      ⚠️ iPhone は タップの 中で 1回 鳴らすまで 音が 出ない → 旅を はじめる タップ(makeQs)で 音なしで 1回 鳴らしておく */
   const TTS = typeof window !== "undefined" && "speechSynthesis" in window && typeof SpeechSynthesisUtterance === "function";
@@ -201,15 +215,27 @@ const EIGO = (() => {
            '<p class="eg-ja">' + prev.jarb + '</p><p class="eg-pt">💡 ' + prev.rb + '</p></div>';
     }else h += '<div class="ai-learn ai-hint">こたえると、日本語訳と 文法の ポイントが 出るよ</div>';
     const tag = pre && !pre.has(q.art) ? '<span class="ai-tag new">🆕 はじめまして</span>' : "";
+    if(inKana){
+      h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot eg-en" lang="en">' + esc(q.n) + '</p>' + tag +
+           '<small class="ai-cat">' + esc(q.c0) + " ・ " + LVN[q.dv].icon + " " + esc(LVN[q.dv].name) + '</small>' +
+           '<small class="ai-alt">🇯🇵 この 英語の 日本語訳を ひらがなで 打とう</small></div></div>';
+      return h;
+    }
     h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot eg-gram">' + esc(q.c0) + '</p>' + tag + '<small class="ai-cat">' + q.jr.icon + " " + esc(q.jr.name) + " ・ " + LVN[q.dv].icon + " " + esc(LVN[q.dv].name) + '</small>' +
          (q.j === "fudoshi" ? '<small class="ai-alt">🔁 原形・過去形・過去分詞を つづけて 打とう</small>' : "") + '</div></div>';
     return h;
   }
   /* 打つ 字の 見せかた。ふだんは 土台と 同じ。よみを かくす 語は 打った ところまで だけ 見せて、のこりは ？。まちがえた ところだけ 正しい 字を 見せる(ヒント) */
   function tgtHtml(q, n, err){
+    if(inKana){
+      const t = typeof target === "string" && target ? target : q.r;
+      let k = "";
+      for(let i = 0; i < t.length; i++) k += '<span class="' + (i < n ? "d" : (i === n ? (err ? "x" : "n") : "c")) + '">' + esc(t[i]) + '</span>';
+      return k;
+    }
     let h = "", p = 0;
     for(const ch of q.t){
-      if(norm(ch)){ h += '<span class="' + (p < n ? "d" : p === n ? (err ? "x" : "n") : "c") + '">' + esc(ch) + '</span>'; p++; }
+      if(normEn(ch)){ h += '<span class="' + (p < n ? "d" : p === n ? (err ? "x" : "n") : "c") + '">' + esc(ch) + '</span>'; p++; }
       else h += '<span class="' + (p > 0 && p <= n ? "d" : "c") + ' eg-sk">' + (ch === " " ? " " : esc(ch)) + '</span>';
     }
     return '<span lang="en" class="eg-tgt">' + h + '</span>';
@@ -238,6 +264,10 @@ const EIGO = (() => {
     const jr = JR.map(J => { const all = pools[MODE_OF[J.id]], got = all.filter(q => d.has(q.art)).length;
       return '<li><span class="rn">' + J.icon + " " + J.name + (got >= all.length ? " 🏅" : "") + '</span><span class="rc"><b>' + got + '</b> / ' + all.length + '</span><i style="--w:' + (got / all.length * 100).toFixed(1) + '%;--c:' + J.color + '"></i></li>'; }).join("");
     $("#kabu-panel").innerHTML = '<section class="ai-panel">' +
+      '<div class="eg-input" role="group" aria-label="打ちかた"><span>⌨️ 打ちかた</span>' +
+        '<button type="button" data-eg-input="kana"' + (inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>あ ひらがな<small>日本語訳を 打つ</small></button>' +
+        '<button type="button" data-eg-input="abc"' + (!inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>A ABC<small>英文を 打つ</small></button></div>' +
+      (inKana ? "" : '<p class="ai-small ai-muted">ABC で 打った タイムは ランキングに のりません(ひらがなと 打つ 字が ちがうため)</p>') +
       '<p class="ai-total">🧭 合計 <b>' + fmt(n) + '</b> / ' + fmt(TOTAL) + 'こ 発見</p><div class="ai-bar" style="--w:' + (n / TOTAL * 100).toFixed(1) + '%"></div>' +
       '<ul class="ai-jr">' + jr + '</ul>' +
       '<p class="ai-title">' + (t ? t[1] + " いまの称号「<b>" + esc(t[2]) + "</b>」" : "🎒 さいしょの 称号まで あと " + (10 - n) + "こ") +
@@ -411,9 +441,10 @@ const EIGO = (() => {
   // 🔊 を おしても 入力欄から 手が はなれない(キーボードが 閉じない)ように
   document.addEventListener("mousedown", e => { if(e.target.closest && e.target.closest("[data-eg-say]") && document.body.classList.contains("playing")) e.preventDefault(); });
   document.addEventListener("click", e => {
-    const g = e.target.closest && e.target.closest("[data-eg-say],[data-eg-auto]");
+    const g = e.target.closest && e.target.closest("[data-eg-say],[data-eg-auto],[data-eg-input]");
     if(g){
       e.stopPropagation();
+      if(g.dataset.egInput){ setInput(g.dataset.egInput === "kana"); home(mode); return; }
       if(g.dataset.egSay){ unlock(); say(g.dataset.egSay, !!g.dataset.egSlow); if(document.body.classList.contains("playing") && typeof ans !== "undefined") ans.focus(); return; }
       setAutoSay(!autoSay()); if(autoSay()){ unlock(); say("Hello!"); } home(mode); return;
     }
@@ -448,7 +479,10 @@ const EIGO = (() => {
   const css = `
 .target{word-break:normal;overflow-wrap:anywhere;font-size:clamp(20px,6vw,26px);letter-spacing:.01em;line-height:1.55}
 .target .eg-sk{border:0}
-.eg-gram{font-size:clamp(18px,5.4vw,22px)}
+.eg-gram{font-size:clamp(18px,5.4vw,22px)}.eg-en{font-size:clamp(17px,4.8vw,21px);line-height:1.45;word-break:normal;overflow-wrap:anywhere}
+.eg-input{display:grid;grid-template-columns:auto 1fr 1fr;gap:6px;align-items:center;margin:0 0 12px}.eg-input>span{font-size:12.5px;font-weight:800;color:#334155}
+.eg-input button{padding:8px 6px;border-radius:12px;border:1.5px solid #cbd5e1;background:#fff;color:#334155;font:inherit;font-size:14px;font-weight:900;cursor:pointer;line-height:1.3}
+.eg-input button small{display:block;font-size:10.5px;font-weight:700;color:#64748b}.eg-input button.on{border-color:#0b7285;background:#e3fafc;color:#0b7285}
 .eg-learn p{margin:0}.eg-lh{display:flex;align-items:center;gap:6px;font-size:15px}.eg-lh b{word-break:break-word}
 .eg-ja{font-weight:800;color:#0b7285;margin-top:2px!important}.eg-ja.big{font-size:16px;margin:8px 0 0!important}.eg-pt{font-size:12.5px;color:#334155;margin-top:2px!important}
 .eg-say{border:1.5px solid #99e9f2;background:#fff;border-radius:99px;font:inherit;font-size:15px;line-height:1;padding:5px 8px;cursor:pointer;flex:none;color:#0b7285;font-weight:800}
@@ -533,6 +567,6 @@ body.ai-lock{overflow:hidden}
 
   // noRank: レベル61より 上(かずともの 表は 1〜60)は 送らない
   return { kind:"eigoterm", modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
-           card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), norm, tgtHtml, nameHtml, say,
-           noRank:(m, lv) => !RANK_READY || lv >= 60, noBoard:!RANK_READY, openZukan };
+           card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), norm:normIn, tgtHtml, nameHtml, say, bestTag:() => inKana ? "-kana" : "",
+           noRank:(m, lv) => !RANK_READY || lv >= 60 || !inKana, noBoard:!RANK_READY, openZukan };
 })();

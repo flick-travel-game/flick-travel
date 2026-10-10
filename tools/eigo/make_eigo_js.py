@@ -174,6 +174,65 @@ rep("openZukan, diagramSvg };", "openZukan };")
 rep("""    const hid = s.set.some(q => q.hide);
     return { name:"Lv." + (i + 1) + " " + L.icon + L.name + (hid ? " 🙈" : ""), sub:S.icon + " " + S.name + "・10語" + (hid ? "・よみを かくす" : ""), short:"Lv." + (i + 1) };""",
     """    return { name:"Lv." + (i + 1) + " " + L.icon + L.name, sub:S.icon + " " + S.name + "・10問", short:"Lv." + (i + 1) };""")
+# ── ひらがなで 打つ(はじめ)/ ABC で 打つ の 切りかえ(けいくん 2026-10-10「デフォルトは ひらがなで打つ / アルファベットに 切り替えも 出来るように」→「日本語訳をひらがなで」) ──
+#   ひらがな = 英文を 見て、日本語訳の 読み(jaReading → kr)を 打つ。ABC = いままでどおり 英文を 打つ。
+#   えらんだ ほうは 端末に おぼえる(flick-eigo-input)。⚠️ ランキングに 送るのは ひらがなの ときだけ(打つ 字が ちがうと タイムを くらべられないため)
+rep('const norm = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");',
+    """const normEn = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");
+  /* ── 答えかた: ひらがな(日本語訳を 打つ。はじめ)/ ABC(英文を 打つ)。端末に おぼえる ── */
+  const IN_KEY = "flick-eigo-input";
+  let inKana = (() => { try{ return localStorage.getItem(IN_KEY) !== "abc"; }catch(e){ return true; } })();
+  function applyInput(){
+    for(const q of ALL) q.r = inKana ? q.kr : q.rEn;
+    if(typeof document === "undefined") return;
+    const a = document.getElementById("ans"); if(a) a.setAttribute("lang", inKana ? "ja" : "en");
+    const hp = document.querySelector(".how p:nth-of-type(2)");
+    if(hp) hp.textContent = inKana ? "漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。" : "大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくて大丈夫。";
+  }
+  function setInput(kana){ inKana = kana; try{ localStorage.setItem(IN_KEY, kana ? "kana" : "abc"); }catch(e){} applyInput(); }
+  /* 打った 字の そろえかた: ひらがなの ときは 土台(index.html)の norm、ABC の ときは 英字だけ */
+  const normIn = s => inKana ? (typeof window !== "undefined" && typeof window.norm === "function" ? window.norm(s) : s) : normEn(s);
+  applyInput(); if(typeof document !== "undefined") document.addEventListener("DOMContentLoaded", applyInput);""")
+rep("      if(norm(ch)){ h += '<span class=\"' + (p < n", "      if(normEn(ch)){ h += '<span class=\"' + (p < n")
+rep("byArt:id => BY.get(id), norm, tgtHtml, nameHtml, say,", "byArt:id => BY.get(id), norm:normIn, tgtHtml, nameHtml, say, bestTag:() => inKana ? \"-kana\" : \"\",")
+rep("noRank:(m, lv) => !RANK_READY || lv >= 60,", "noRank:(m, lv) => !RANK_READY || lv >= 60 || !inKana,")
+# 打つ 字: ひらがなの ときは 土台と 同じ 見せかた
+rep("""  function tgtHtml(q, n, err){
+    let h = "", p = 0;""", """  function tgtHtml(q, n, err){
+    if(inKana){
+      const t = typeof target === "string" && target ? target : q.r;
+      let k = "";
+      for(let i = 0; i < t.length; i++) k += '<span class="' + (i < n ? "d" : (i === n ? (err ? "x" : "n") : "c")) + '">' + esc(t[i]) + '</span>';
+      return k;
+    }
+    let h = "", p = 0;""")
+# 問題の カード: ひらがなの ときは 英文が 問題(訳を 打つ)
+rep("""    h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot eg-gram">' + esc(q.c0) + '</p>' + tag +""",
+    """    if(inKana){
+      h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot eg-en" lang="en">' + esc(q.n) + '</p>' + tag +
+           '<small class="ai-cat">' + esc(q.c0) + " ・ " + LVN[q.dv].icon + " " + esc(LVN[q.dv].name) + '</small>' +
+           '<small class="ai-alt">🇯🇵 この 英語の 日本語訳を ひらがなで 打とう</small></div></div>';
+      return h;
+    }
+    h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot eg-gram">' + esc(q.c0) + '</p>' + tag +""")
+# ことば → 問題: 英字と ひらがなの 両方を 持つ。レベルの 組みかたは 英字で(どちらでも 同じ 10問)
+rep('k:"eigoterm", t:o.n', 'k:"eigoterm", t:o.n, rEn:o.r')
+# ホーム: 答えかたの 切りかえ
+rep("""    $("#kabu-panel").innerHTML = '<section class="ai-panel">' +""", """    $("#kabu-panel").innerHTML = '<section class="ai-panel">' +
+      '<div class="eg-input" role="group" aria-label="打ちかた"><span>⌨️ 打ちかた</span>' +
+        '<button type="button" data-eg-input="kana"' + (inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>あ ひらがな<small>日本語訳を 打つ</small></button>' +
+        '<button type="button" data-eg-input="abc"' + (!inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>A ABC<small>英文を 打つ</small></button></div>' +
+      (inKana ? "" : '<p class="ai-small ai-muted">ABC で 打った タイムは ランキングに のりません(ひらがなと 打つ 字が ちがうため)</p>') +""")
+rep("""    const g = e.target.closest && e.target.closest("[data-eg-say],[data-eg-auto]");
+    if(g){
+      e.stopPropagation();""", """    const g = e.target.closest && e.target.closest("[data-eg-say],[data-eg-auto],[data-eg-input]");
+    if(g){
+      e.stopPropagation();
+      if(g.dataset.egInput){ setInput(g.dataset.egInput === "kana"); home(mode); return; }""")
+rep(".eg-gram{font-size:clamp(18px,5.4vw,22px)}", """.eg-gram{font-size:clamp(18px,5.4vw,22px)}.eg-en{font-size:clamp(17px,4.8vw,21px);line-height:1.45;word-break:normal;overflow-wrap:anywhere}
+.eg-input{display:grid;grid-template-columns:auto 1fr 1fr;gap:6px;align-items:center;margin:0 0 12px}.eg-input>span{font-size:12.5px;font-weight:800;color:#334155}
+.eg-input button{padding:8px 6px;border-radius:12px;border:1.5px solid #cbd5e1;background:#fff;color:#334155;font:inherit;font-size:14px;font-weight:900;cursor:pointer;line-height:1.3}
+.eg-input button small{display:block;font-size:10.5px;font-weight:700;color:#64748b}.eg-input button.on{border-color:#0b7285;background:#e3fafc;color:#0b7285}""")
 Path("eigo").mkdir(exist_ok=True)
 Path("eigo/eigo.js").write_text(s, encoding="utf-8")
 print("eigo/eigo.js ok")

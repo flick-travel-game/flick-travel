@@ -10,7 +10,7 @@ import json, re, sys, unicodedata
 from pathlib import Path
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parent.parent
 sys.path.insert(0, str(ROOT / "tools/kabu"))
-REQ = ("id", "name", "ja", "journey", "category", "difficulty", "type", "emoji", "description")
+REQ = ("id", "name", "ja", "jaReading", "journey", "category", "difficulty", "type", "emoji", "description")
 MAXLEN = 35  # 打つ 字の 上限(けいくん 2026-09-29「おすすめ」= 35字)
 NAME_OK = re.compile(r"[A-Za-z][A-Za-z ',.?!-]*")
 PREFIX = {"fudoshi": "fu", "jisei": "ji", "uke": "uk", "tofutei": "to", "bunshi": "bs", "kankei": "ka", "hikaku": "hi", "katei": "kt", "jukugo": "ju"}
@@ -43,6 +43,8 @@ def check(d):
         n = t.get("name", "")
         if not NAME_OK.fullmatch(n): errs.append(f"{tid}: name「{n}」に 使えない 字(英字・空白・' , . ? ! - だけ。数字も ダメ)")
         if "  " in n or n != n.strip(): errs.append(f"{tid}: name の 空白が おかしい")
+        if not re.fullmatch(r"[ぁ-ゖー]+", t.get("jaReading", "")): errs.append(f"{tid}: jaReading「{t.get('jaReading')}」は ひらがなと ー だけ(ひらがなで 打つ ときの 字。訳の 読み)")
+        elif len(t["jaReading"]) > 40: warn.append(f"{tid}: jaReading が 長い({len(t['jaReading'])}字)")
         r = norm(n)
         if len(r) > MAXLEN: errs.append(f"{tid}: 打つ 字が {len(r)}字(上限 {MAXLEN})")
         if t.get("journey") in ("fudoshi", "jukugo") and n.rstrip()[-1:] in ".?!": errs.append(f"{tid}: 不規則動詞・熟語は 文では ない(ピリオドを 付けない)")
@@ -113,7 +115,7 @@ def main():
     out = []
     for t in d["terms"]:
         out.append(dict(id=t["id"], n=t["name"], r=t["reading"], j=t["journey"], c=t["category"], dv=t["difficulty"], ty=t["type"],
-                        e=t["emoji"], rel=t["relatedTerms"], ja=t["ja"], jarb=rub(t["ja"]), ds=t["description"], rb=rub(t["description"])))
+                        e=t["emoji"], rel=t["relatedTerms"], ja=t["ja"], kr=t["jaReading"], jarb=rub(t["ja"]), ds=t["description"], rb=rub(t["description"])))
     m = d["meta"]
     js = dict(asOf=m["asOf"], note=m["note"], journeys=m["journeys"], levels=m["levels"], titles=m["titles"], allTitle=m["allTitle"],
               diagrams={}, missions=[], list=out)

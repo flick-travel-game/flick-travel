@@ -419,8 +419,8 @@ GAMES = {
     "eigo": dict(name="フリック英語", modes="EIGO", kinds=set(), color="#0b7285", hero=True, logo=True,
                  art=dict(word=(900, 232), hero=(1536, 1024), alt="フリック英語。ロンドンと ニューヨークの 町で 男の子と 白い 犬が 旅をしながら、不規則動詞・時制・受動態・不定詞と動名詞・分詞・関係詞・比較・仮定法・熟語の 例文の カードに かこまれている 絵", iconv=3, wordv=4),
                  lead="不規則動詞・時制・受動態・不定詞と動名詞・分詞・関係詞・比較・仮定法・熟語を、例文を フリックで 打ち写して おぼえよう。打ち終わると 日本語訳と 文法の ポイントが 出て、🔊で 発音も 聞けるよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。",
-                 how="表示された 英語を、そのまま打ち写してね。大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。例文は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。",
-                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。iPhone は 日本語キーボードの「ABC」なら フリックで 英語が 打てるよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。"),
+                 how="表示された 英語の 日本語訳を、ひらがなで 打ってね(打つ ひらがなは 画面に 出るよ)。上の「⌨️ 打ちかた」を ABC に すると、英文を そのまま 打つ ことも できるよ(大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ)。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。例文は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。",
+                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。ABC で 打つ ときは、iPhone の 日本語キーボードを「ABC」に すれば フリックで 英語が 打てるよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。"),
     # フリックプログラマー(けいくん 2026-09-29「プログラマーになれるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 4つの 問いに「おすすめ」)。
     #   名前 = フリックプログラマー(中に 👷 エンジニアの 旅。フォルダ名 `code` は 変えない)。3段・言語は 少しだけ・2進数/16進数を 入れる・図を 作る。
     #   ことばは tools/code/terms-<旅>.json → code/terms.js(tools/code/terms_js.py)。しくみは code/code.js(CODEPG。gamedev.js を 写した)。
@@ -542,8 +542,7 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/eigo/terms_js.py")], check=True); subprocess.run([_s.executable, str(ROOT / "tools/eigo/make_eigo_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "eigo" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="eigo.js?v=%s"></script>' % (ver("terms.js"), ver("eigo.js")))
-        out, n = re.subn(r'<input class="answer" id="ans" type="text" lang="ja"', '<input class="answer" id="ans" type="text" lang="en"', out); assert n == 1
-        out, n = re.subn(r'<p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>', '<p>大文字・小文字は どちらでも OK。空白や「\' , . ? !」は 打たなくて大丈夫。</p>', out); assert n == 1
+        # 入力欄の 言語と 下の ひとことは eigo.js が 答えかた(ひらがな / ABC)に あわせて かえる
     if g["modes"] == "SHAKAI":  # 社会の コース: 国語と 同じ 形。ことばは terms.js(tools/shakai/terms-*.json から)、しくみは shakai.js(make_shakai_js.py が 作る)
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/shakai/terms_js.py")], check=True)
         subprocess.run([_s.executable, str(ROOT / "tools/shakai/make_shakai_js.py")], check=True)

@@ -321,8 +321,8 @@ GAMES = {
     #   ⚠️⚠️ いまの 所属クラブ・年俸・移籍金・いまの 順位・通算記録は 書かない(変わる)。人を けなさない・ケガ・乱闘・差別・賭けは 入れない(決まりは tools/soccer/PROMPT.md)。ルールは IFAB 競技規則 2026/27(毎年 8月に 見なおす)。
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/soccer/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
     #   届いたら tools/soccer/art/square-src.png → tools/icon_from_square.py soccer(iconv を +1)/ title-src.png → tools/title_from_art.py soccer(logo を True・art.word を 実寸に)/ soccer/hero.webp(hero を True)
-    "soccer": dict(name="フリックワールドサッカー", modes="SOCCER", kinds=set(), color="#2f9e44", hero=False, logo=False,
-                  art=dict(word=(900, 225), hero=(1536, 1024), alt="フリックワールドサッカー", iconv=1, wordv=1),
+    "soccer": dict(name="フリックワールドサッカー", modes="SOCCER", kinds=set(), color="#2f9e44", hero=True, logo=False,
+                  art=dict(word=(900, 225), hero=(1536, 1024), alt="フリックワールドサッカー", iconv=1, wordv=2),
                   lead="サッカーの きほん・ルール・世界の リーグと 大会・名門クラブと ダービー・いまの スター選手・伝説の 選手・ドリブルと テクニック・戦術と 解説の ことば・ワールドカップと 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。サッカーが すきな 小学生の ことばから はじめて、少年団の コーチ(4級審判の めやす)、解説者が 使う 戦術の ことばまで。シャペウは ポルトガル語で「ぼうし」、イギリスには 4つの 代表が ある、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは IFAB 競技規則 2026/27 で 確かめたよ(毎年 変わる ことが あるよ)。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の サッカーが つながって 見えてくるよ。FIFA・各リーグ・各クラブ・各選手とは 関係ありません。"),

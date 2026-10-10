@@ -479,6 +479,19 @@ def build(gid, g):
         assert out.count(a_) == 1, a_; out = out.replace(a_, b_)
     # head
     out = out.replace("<title>フリック世界旅行</title>", f"<title>{g['name']}</title>")
+    # 検索・LINE で 出る 説明と 本当の 住所(けいくん 2026-10-10「いますぐ検索に出す」)。⚠️ 住所は kazutomo.app/flick/<gid>/(github.io は 写し)
+    import html as _h
+    _desc = _h.escape(re.sub(r"\s+", " ", g.get("lead") or "").strip() + " かずともの フリックゲーム。", quote=True)
+    _url = f"https://kazutomo.app/flick/{gid}/"
+    _img = _url + "hero.webp" if g.get("hero") else "https://kazutomo.app/flick/hero.webp"
+    _wdesc = "世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。かずともの フリックゲーム。"
+    for a_, b_ in ((f'<meta name="description" content="{_wdesc}">', f'<meta name="description" content="{_desc}">'),
+                   ('<link rel="canonical" href="https://kazutomo.app/flick/">', f'<link rel="canonical" href="{_url}">'),
+                   ('<meta property="og:title" content="フリック世界旅行｜かずとも">', f'<meta property="og:title" content="{_h.escape(g["name"])}｜かずとも">'),
+                   (f'<meta property="og:description" content="{_wdesc}">', f'<meta property="og:description" content="{_desc}">'),
+                   ('<meta property="og:url" content="https://kazutomo.app/flick/">', f'<meta property="og:url" content="{_url}">'),
+                   ('<meta property="og:image" content="https://kazutomo.app/flick/hero.webp">', f'<meta property="og:image" content="{_img}">')):
+        assert out.count(a_) == 1, a_; out = out.replace(a_, b_)
     art = g.get("art")  # その ゲームの 絵(hero / 題名 / アイコン)が フォルダに あるとき
     if art:
         # 絵・アイコンは その フォルダの ものを 使う(名前は 世界と 同じ なので 道は そのまま)

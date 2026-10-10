@@ -1,0 +1,1344 @@
+[
+ {
+  "id": "rl-offside",
+  "name": "オフサイド",
+  "reading": "おふさいど",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "rule:offside",
+  "relatedTerms": [
+   "rl-offside-pos",
+   "rl-offside-line",
+   "rl-ar"
+  ],
+  "description": "パスが 出た しゅんかんに、相手の ゴールの 近くで まちぶせを して プレーに かかわると 反則に なる 決まりです。自分の チームの 陣地に いれば オフサイドには なりません。"
+ },
+ {
+  "id": "rl-yellow",
+  "name": "イエローカード",
+  "reading": "いえろーかーど",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-red",
+   "rl-misconduct",
+   "rl-dissent"
+  ],
+  "acceptedReadings": [
+   "いえろーかーど",
+   "けいこく"
+  ],
+  "description": "危ない プレーや 遅らせる 行為などに 主審が 出す 黄色い カードで、「警告」と いいます。同じ 試合で 2枚 もらうと レッドカードに なり、退場です。"
+ },
+ {
+  "id": "rl-red",
+  "name": "レッドカード",
+  "reading": "れっどかーど",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-sfp",
+   "rl-dogso"
+  ],
+  "acceptedReadings": [
+   "れっどかーど",
+   "たいじょう"
+  ],
+  "description": "とても 危ない プレーなどに 主審が 出す 赤い カードで、「退場」と いいます。退場した 選手の かわりは 入れられず、チームは ひとり 少ない まま 戦います。"
+ },
+ {
+  "id": "rl-foul",
+  "name": "ファウル",
+  "reading": "ふぁうる",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-dfk",
+   "rl-advantage",
+   "rl-pk"
+  ],
+  "description": "相手を けったり、押したり、つかんだり する 反則の ことです。ファウルを された チームには フリーキックが あたえられます。英語で「ずるい・不正な」と いう 意味の ことばです。"
+ },
+ {
+  "id": "rl-hand",
+  "name": "ハンドの反則",
+  "reading": "はんどのはんそく",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-foul",
+   "rl-dfk",
+   "rl-backpass"
+  ],
+  "acceptedReadings": [
+   "はんどのはんそく",
+   "はんど"
+  ],
+  "description": "手や 腕で ボールに さわる 反則です。わざと さわったり、腕を 広げて からだを 大きく 見せたり すると 反則です。腕の 上の はしは わきの下の いちばん おくまでです。キーパーは 自分の ペナルティーエリアの 中なら 手を 使えます。"
+ },
+ {
+  "id": "rl-pk",
+  "name": "ペナルティーキック",
+  "reading": "ぺなるてぃーきっく",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rule:freekick",
+  "relatedTerms": [
+   "rl-penmark",
+   "rl-pa",
+   "rl-shootout"
+  ],
+  "description": "自分の ペナルティーエリアの 中で 直接フリーキックに なる 反則を すると、相手に あたえられる キックです。ゴールから 11メートルの 点から、キーパーと 1対1で けります。"
+ },
+ {
+  "id": "rl-ck",
+  "name": "コーナーキック",
+  "reading": "こーなーきっく",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "rule:outball",
+  "relatedTerms": [
+   "rl-gk",
+   "rl-cornerarc",
+   "rl-throwin"
+  ],
+  "description": "守る チームが 最後に さわった ボールが ゴールラインを こえると、攻める チームが かどから ける キックです。コーナーキックから 直接 ゴールに 入れても 得点に なります。"
+ },
+ {
+  "id": "rl-throwin",
+  "name": "スローイン",
+  "reading": "すろーいん",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "rule:outball",
+  "relatedTerms": [
+   "rl-touchline",
+   "rl-ck",
+   "rl-countdown"
+  ],
+  "description": "ボールが タッチラインを こえたとき、最後に さわった 選手の 相手が 手で 投げ入れて 再開します。両手で 頭の うしろから 投げます。スローインから 直接 ゴールに 入れても 得点に なりません。"
+ },
+ {
+  "id": "rl-gk",
+  "name": "ゴールキック",
+  "reading": "ごーるきっく",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🥅",
+  "mapNode": "rule:outball",
+  "relatedTerms": [
+   "rl-goalarea",
+   "rl-ck",
+   "rl-countdown"
+  ],
+  "description": "攻める チームが 最後に さわった ボールが ゴールラインを こえたとき、守る チームが ゴールエリアの 中から ける キックです。ゴールキックから 直接 相手の ゴールに 入れても 得点です。"
+ },
+ {
+  "id": "rl-kickoff",
+  "name": "キックオフ",
+  "reading": "きっくおふ",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "▶️",
+  "mapNode": "rule:restart",
+  "relatedTerms": [
+   "rl-centercircle",
+   "rl-halfway",
+   "rl-dropball"
+  ],
+  "description": "試合の はじめや 後半の はじめ、得点の あとに センターマークから ける キックです。得点された チームが キックオフします。キックオフから 直接 相手の ゴールに 入れても 得点に なります。"
+ },
+ {
+  "id": "rl-referee",
+  "name": "主審",
+  "reading": "しゅしん",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧑‍⚖️",
+  "mapNode": "rule:referee",
+  "relatedTerms": [
+   "rl-ar",
+   "rl-fourth",
+   "rl-whistle"
+  ],
+  "acceptedReadings": [
+   "しゅしん",
+   "れふぇりー"
+  ],
+  "description": "フィールドの 中で 試合を さばく 審判です。笛を ふいて 反則を 止めたり、カードを 出したり します。主審の 判定は、プレーが 再開された あとは 変えられません。"
+ },
+ {
+  "id": "rl-ar",
+  "name": "副審",
+  "reading": "ふくしん",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "rule:referee",
+  "relatedTerms": [
+   "rl-referee",
+   "rl-offside",
+   "rl-fourth"
+  ],
+  "acceptedReadings": [
+   "ふくしん",
+   "あしすたんとれふぇりー"
+  ],
+  "description": "タッチラインの 外を 走る ふたりの 審判で、旗を 使って 主審を 助けます。ボールが 外に 出たかや オフサイドを 旗で 知らせます。むかしは「線審」と よばれて いました。"
+ },
+ {
+  "id": "rl-sub",
+  "name": "交代",
+  "reading": "こうたい",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "rule:player",
+  "relatedTerms": [
+   "rl-subs",
+   "rl-timedsub",
+   "rl-fourth"
+  ],
+  "description": "試合の とちゅうで 選手を 入れかえる ことです。出る 選手が フィールドを 出てから、入る 選手が ハーフウェーラインの ところから 入ります。一度 交代で 出た 選手は、ふつうは もどれません。"
+ },
+ {
+  "id": "rl-halftime",
+  "name": "ハーフタイム",
+  "reading": "はーふたいむ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "☕",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-matchtime",
+   "rl-added",
+   "rl-kickoff"
+  ],
+  "description": "前半と 後半の あいだの 休み時間です。競技規則では 15分を こえない ことに なって います。ハーフタイムの あとは、前半と 反対がわの ゴールに むかって 攻めます。"
+ },
+ {
+  "id": "rl-matchtime",
+  "name": "試合時間",
+  "reading": "しあいじかん",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-halftime",
+   "rl-added",
+   "rl-et"
+  ],
+  "description": "大人の 試合は 前半と 後半が 45分ずつで、合わせて 90分です。年代や 大会に よって 短く する ことも できます。止まった 時間の ぶんは、アディショナルタイムで 足されます。"
+ },
+ {
+  "id": "rl-shootout",
+  "name": "PK戦",
+  "reading": "ぴーけーせん",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rule:freekick",
+  "relatedTerms": [
+   "rl-pk",
+   "rl-et",
+   "rl-penmark"
+  ],
+  "acceptedReadings": [
+   "ぴーけーせん",
+   "ぺなるてぃーまーくからのきっく",
+   "ぺなるてぃーしゅーとあうと"
+  ],
+  "description": "引き分けでも 勝ちを 決めないと いけない ときの 決めかたです。正式には「ペナルティーマークからの キック」と いいます。両チーム 5人ずつ けり、同じなら ひとりずつ 続けます。"
+ },
+ {
+  "id": "rl-var",
+  "name": "VAR",
+  "reading": "ぶいえーあーる",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📺",
+  "mapNode": "rule:tech",
+  "relatedTerms": [
+   "rl-ofr",
+   "rl-rra",
+   "rl-glt"
+  ],
+  "acceptedReadings": [
+   "ぶいえーあーる",
+   "びでおあしすたんとれふぇりー"
+  ],
+  "description": "ビデオを 見て 主審を 助ける 審判です。得点・PK・退場など、大きな まちがいだけを 見なおします。男子の ワールドカップでは 2018年の ロシア大会から 使われました。"
+ },
+ {
+  "id": "rl-et",
+  "name": "延長戦",
+  "reading": "えんちょうせん",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-shootout",
+   "rl-matchtime",
+   "rl-halftime"
+  ],
+  "description": "90分で 決着が つかず、勝ちを 決めないと いけない 試合で 行う 追加の 試合です。前半と 後半 それぞれ 15分 以内で 行います。延長戦でも 決まらなければ PK戦に なります。"
+ },
+ {
+  "id": "rl-pa",
+  "name": "ペナルティーエリア",
+  "reading": "ぺなるてぃーえりあ",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟩",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-pk",
+   "rl-goalarea",
+   "rl-penarc"
+  ],
+  "description": "ゴールの 前に ある 大きな 四角です。ゴールポストから 16.5メートルの 線で かこまれて います。守る 側が この 中で 直接フリーキックに なる 反則を すると PKに なります。"
+ },
+ {
+  "id": "rl-touchline",
+  "name": "タッチライン",
+  "reading": "たっちらいん",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-goalline",
+   "rl-throwin",
+   "rl-halfway"
+  ],
+  "description": "フィールドの 長い ほうの 2本の 線です。ボールの 全体が この 線を こえると スローインです。線の 上に ボールが 少しでも かかって いれば、まだ フィールドの 中です。"
+ },
+ {
+  "id": "rl-lotg",
+  "name": "競技規則",
+  "reading": "きょうぎきそく",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "rule:referee",
+  "relatedTerms": [
+   "rl-ifab",
+   "rl-referee",
+   "rl-players"
+  ],
+  "acceptedReadings": [
+   "きょうぎきそく",
+   "るーる"
+  ],
+  "description": "サッカーの ルールを まとめた 本で、17の 条で できて います。世界中 同じ ルールで、毎年 少しずつ 見なおされます。日本では 日本サッカー協会が 日本語に して 出して います。"
+ },
+ {
+  "id": "rl-dfk",
+  "name": "直接フリーキック",
+  "reading": "ちょくせつふりーきっく",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rule:freekick",
+  "relatedTerms": [
+   "rl-ifk",
+   "rl-wall",
+   "rl-pk"
+  ],
+  "description": "けったり 押したり する ファウルや ハンドの 反則の あとに あたえられる キックです。けった ボールが そのまま 相手の ゴールに 入れば 得点に なります。"
+ },
+ {
+  "id": "rl-ifk",
+  "name": "間接フリーキック",
+  "reading": "かんせつふりーきっく",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "☝️",
+  "mapNode": "rule:freekick",
+  "relatedTerms": [
+   "rl-dfk",
+   "rl-offside",
+   "rl-backpass"
+  ],
+  "description": "オフサイドや 危ない 方法での プレーなどの あとの キックです。ほかの 選手が さわってから ゴールに 入らないと 得点に なりません。主審は 片手を 上に あげて 知らせます。"
+ },
+ {
+  "id": "rl-advantage",
+  "name": "アドバンテージ",
+  "reading": "あどばんてーじ",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👐",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-foul",
+   "rl-referee",
+   "rl-yellow"
+  ],
+  "description": "反則が あっても、プレーを 続けた ほうが された チームに 得だと 主審が 思えば、笛を ふかずに 続けさせる ことです。主審は 両腕を 前に のばして 知らせます。"
+ },
+ {
+  "id": "rl-wall",
+  "name": "壁",
+  "reading": "かべ",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "rule:freekick",
+  "relatedTerms": [
+   "rl-dfk",
+   "rl-distance",
+   "rl-ifk"
+  ],
+  "description": "フリーキックの とき、守る 選手が ならんで ゴールを ふさぐ 列の ことです。ボールから 9.15メートル はなれます。3人 以上の 壁なら、攻める 選手は 壁から 1メートル はなれます。"
+ },
+ {
+  "id": "rl-goalline",
+  "name": "ゴールライン",
+  "reading": "ごーるらいん",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-touchline",
+   "rl-goalrule",
+   "rl-gk"
+  ],
+  "description": "フィールドの 短い ほうの 2本の 線です。ゴールポストの あいだで ボールの 全体が この 線を こえると 得点です。タッチラインより 短く なければ ならないと 決まって います。"
+ },
+ {
+  "id": "rl-halfway",
+  "name": "ハーフウェーライン",
+  "reading": "はーふうぇーらいん",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-centercircle",
+   "rl-kickoff",
+   "rl-offside"
+  ],
+  "description": "フィールドを 半分に 分ける まん中の 線です。この 線より 自分の 陣地に いる 選手は オフサイドに なりません。交代で 入る 選手も、この 線の ところから 入ります。"
+ },
+ {
+  "id": "rl-centercircle",
+  "name": "センターサークル",
+  "reading": "せんたーさーくる",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-kickoff",
+   "rl-halfway",
+   "rl-penarc"
+  ],
+  "description": "フィールドの まん中に ある 半径 9.15メートルの 円です。キックオフの とき、相手の チームは この 円の 外に いなければ なりません。9.15メートルは 10ヤードの ことです。"
+ },
+ {
+  "id": "rl-goalarea",
+  "name": "ゴールエリア",
+  "reading": "ごーるえりあ",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-pa",
+   "rl-gk",
+   "rl-goalline"
+  ],
+  "description": "ゴールの すぐ 前に ある 小さな 四角です。ゴールキックは この 中の どこからでも けれます。ゴールポストから 5.5メートルの 線で かこまれて います。"
+ },
+ {
+  "id": "rl-penmark",
+  "name": "ペナルティーマーク",
+  "reading": "ぺなるてぃーまーく",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-pk",
+   "rl-shootout",
+   "rl-penarc"
+  ],
+  "description": "PKで ボールを 置く 点で、ゴールの まん中から 11メートルの ところに あります。11メートルは 12ヤードの ことです。PKの とき キーパーは 少なくとも 片足の 一部を ゴールラインに のせます。"
+ },
+ {
+  "id": "rl-added",
+  "name": "アディショナルタイム",
+  "reading": "あでぃしょなるたいむ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-matchtime",
+   "rl-fourth",
+   "rl-timedsub"
+  ],
+  "acceptedReadings": [
+   "あでぃしょなるたいむ",
+   "ろすたいむ"
+  ],
+  "description": "交代や 手当て・VARの 見なおし などで 止まった 時間を、前半や 後半の 終わりに 足す 時間です。何分 足すかは 主審が 決め、第4の 審判員が ボードで 知らせます。"
+ },
+ {
+  "id": "rl-dropball",
+  "name": "ドロップボール",
+  "reading": "どろっぷぼーる",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔽",
+  "mapNode": "rule:restart",
+  "relatedTerms": [
+   "rl-inplay",
+   "rl-kickoff",
+   "rl-referee"
+  ],
+  "description": "反則では ない 理由で 試合を 止めた ときの 再開の しかたです。主審が ボールを 落とし、地面に ついたら インプレーです。ペナルティーエリアの 中なら 守る キーパーに 落とします。"
+ },
+ {
+  "id": "rl-inplay",
+  "name": "ボールインプレー",
+  "reading": "ぼーるいんぷれー",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "rule:restart",
+  "relatedTerms": [
+   "rl-outofplay",
+   "rl-dropball",
+   "rl-goalrule"
+  ],
+  "acceptedReadings": [
+   "ぼーるいんぷれー",
+   "いんぷれー"
+  ],
+  "description": "ボールが 生きて いて、試合が 進んで いる ときの ことです。ボールが ゴールポストや クロスバーに 当たって フィールドに もどっても、インプレーの まま 続きます。"
+ },
+ {
+  "id": "rl-outofplay",
+  "name": "ボールアウトオブプレー",
+  "reading": "ぼーるあうとおぶぷれー",
+  "journey": "rule",
+  "category": "再開の しかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "rule:restart",
+  "relatedTerms": [
+   "rl-inplay",
+   "rl-goalline",
+   "rl-touchline"
+  ],
+  "acceptedReadings": [
+   "ぼーるあうとおぶぷれー",
+   "あうとおぶぷれー"
+  ],
+  "description": "ボールが 止まって いる ときの ことです。ボールの 全体が 線を こえたときや、主審が 笛で 止めた ときに アウトオブプレーに なります。そのあと 決まった 方法で 再開します。"
+ },
+ {
+  "id": "rl-matchball",
+  "name": "試合球",
+  "reading": "しあいきゅう",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚪",
+  "mapNode": "rule:ball",
+  "relatedTerms": [
+   "rl-equip",
+   "rl-lotg",
+   "rl-inplay"
+  ],
+  "description": "試合で 使う ボールです。大人の ボールは まわりが 68〜70センチ、重さは 410〜450グラムと 決まって います。日本の 小学生の 試合では、少し 小さい 4号球を よく 使います。"
+ },
+ {
+  "id": "rl-equip",
+  "name": "競技者の用具",
+  "reading": "きょうぎしゃのようぐ",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "rule:ball",
+  "relatedTerms": [
+   "rl-matchball",
+   "rl-players",
+   "rl-yellow"
+  ],
+  "description": "選手が 身に つける ものの 決まりです。シャツ・パンツ・ストッキング・すね当て・くつが 必要です。2026/27年からは、危なく なければ 安全に おおった アクセサリーも 認められました。"
+ },
+ {
+  "id": "rl-simulation",
+  "name": "シミュレーション",
+  "reading": "しみゅれーしょん",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎭",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-foul",
+   "rl-misconduct"
+  ],
+  "description": "ファウルを されて いないのに、されたように 見せて 主審を だまそうと する 反則です。イエローカードの 対象に なります。英語で「まねを する」と いう 意味の ことばです。"
+ },
+ {
+  "id": "rl-delay",
+  "name": "遅延行為",
+  "reading": "ちえんこうい",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-countdown",
+   "rl-eightsec"
+  ],
+  "description": "わざと 試合の 再開を 遅らせる 行為です。イエローカードの 対象に なります。時間を むだに しない ため、2025年からは キーパーの 8秒、2026年からは 5秒の カウントダウンも できました。"
+ },
+ {
+  "id": "rl-fourth",
+  "name": "第4の審判員",
+  "reading": "だいよんのしんぱんいん",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "4️⃣",
+  "mapNode": "rule:referee",
+  "relatedTerms": [
+   "rl-referee",
+   "rl-sub",
+   "rl-added"
+  ],
+  "acceptedReadings": [
+   "だいよんのしんぱんいん",
+   "だいよんのしんぱん",
+   "ふぉーすおふぃしゃる"
+  ],
+  "description": "ベンチの 前で 主審を 助ける 審判です。交代の ボードを かかげたり、アディショナルタイムを 知らせたり します。主審が 続けられない ときは かわりに 入る ことも あります。"
+ },
+ {
+  "id": "rl-subs",
+  "name": "交代要員",
+  "reading": "こうたいよういん",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "rule:player",
+  "relatedTerms": [
+   "rl-sub",
+   "rl-players",
+   "rl-concussion"
+  ],
+  "description": "ベンチで 交代を 待つ 選手の ことです。何人 交代できるかは 大会が 決めます。トップの 大会では 5人までで、交代の 回数は ハーフタイムを のぞいて 3回までです。"
+ },
+ {
+  "id": "rl-eightsec",
+  "name": "8秒ルール",
+  "reading": "はちびょうるーる",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-delay",
+   "rl-ck",
+   "rl-countdown"
+  ],
+  "description": "キーパーが 手で ボールを 8秒より 長く 持つと、相手の コーナーキックに なる 決まりです。2025/26年の 競技規則から はじまりました。主審は 最後の 5秒を 指で 数えて 知らせます。"
+ },
+ {
+  "id": "rl-countdown",
+  "name": "5秒のカウントダウン",
+  "reading": "ごびょうのかうんとだうん",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "rule:outball",
+  "relatedTerms": [
+   "rl-throwin",
+   "rl-gk",
+   "rl-eightsec"
+  ],
+  "description": "スローインや ゴールキックを わざと 遅らせると、主審が 5秒を 数える 決まりです。間に合わないと スローインは 相手ボール、ゴールキックは 相手の コーナーキックに なります。2026/27年から です。"
+ },
+ {
+  "id": "rl-backpass",
+  "name": "バックパス",
+  "reading": "ばっくぱす",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-ifk",
+   "rl-hand",
+   "rl-eightsec"
+  ],
+  "description": "味方が わざと 足で けった ボールや スローインを、キーパーが 手で さわると 反則に なります。相手の 間接フリーキックです。1992年に できた 決まりで、試合が ぐっと はやく なりました。"
+ },
+ {
+  "id": "rl-whistle",
+  "name": "ホイッスル",
+  "reading": "ほいっする",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "rule:referee",
+  "relatedTerms": [
+   "rl-referee",
+   "rl-kickoff",
+   "rl-advantage"
+  ],
+  "acceptedReadings": [
+   "ほいっする",
+   "ふえ"
+  ],
+  "description": "主審が ふく 笛の ことです。試合の はじめと 終わり、反則で 止める とき、PKを けらせる ときに ふきます。スローインなど はっきり した 再開では、ふかない ことも 多いです。"
+ },
+ {
+  "id": "rl-players",
+  "name": "競技者",
+  "reading": "きょうぎしゃ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👟",
+  "mapNode": "rule:player",
+  "relatedTerms": [
+   "rl-subs",
+   "rl-equip",
+   "rl-lotg"
+  ],
+  "description": "試合に 出る 選手の ことで、1チーム 11人までの うち ひとりは キーパーです。どちらかが 7人より 少ないと 試合を はじめられず、とちゅうで そう なっても 試合は 続けません。"
+ },
+ {
+  "id": "rl-ifab",
+  "name": "IFAB",
+  "reading": "あいえふえーびー",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏛️",
+  "mapNode": "rule:referee",
+  "relatedTerms": [
+   "rl-lotg",
+   "rl-referee"
+  ],
+  "acceptedReadings": [
+   "あいえふえーびー",
+   "いふぁぶ",
+   "こくさいさっかーひょうぎかい"
+  ],
+  "description": "サッカーの ルールを 決める 国際サッカー評議会です。1886年に できました。イングランド・スコットランド・ウェールズ・北アイルランドの 4つの 協会と FIFAで 話し合って 決めます。"
+ },
+ {
+  "id": "rl-glt",
+  "name": "ゴールラインテクノロジー",
+  "reading": "ごーるらいんてくのろじー",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🥅",
+  "mapNode": "rule:tech",
+  "relatedTerms": [
+   "rl-goalrule",
+   "rl-var",
+   "rl-saot"
+  ],
+  "acceptedReadings": [
+   "ごーるらいんてくのろじー",
+   "じーえるてぃー"
+  ],
+  "description": "ボールが ゴールラインを こえたかを 機械で 見わける しくみです。得点なら 主審の 腕時計に すぐ 知らせが とどきます。男子の ワールドカップでは 2014年の ブラジル大会で はじめて 使われました。"
+ },
+ {
+  "id": "rl-saot",
+  "name": "半自動オフサイドテクノロジー",
+  "reading": "はんじどうおふさいどてくのろじー",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤖",
+  "mapNode": "rule:tech",
+  "relatedTerms": [
+   "rl-offside",
+   "rl-var",
+   "rl-glt"
+  ],
+  "acceptedReadings": [
+   "はんじどうおふさいどてくのろじー",
+   "さおと"
+  ],
+  "description": "カメラと ボールの 中の センサーで 選手の 位置を はかり、オフサイドを すばやく 見つける しくみです。男子の ワールドカップでは 2022年の カタール大会で はじめて 使われました。"
+ },
+ {
+  "id": "rl-ofr",
+  "name": "オンフィールドレビュー",
+  "reading": "おんふぃーるどれびゅー",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "rule:tech",
+  "relatedTerms": [
+   "rl-var",
+   "rl-rra",
+   "rl-referee"
+  ],
+  "description": "VARから 知らせを うけた 主審が、自分で ビデオを 見て 判定を たしかめる ことです。主審は 指で 四角い 画面の 形を えがいて 知らせます。最後に 決めるのは いつも 主審です。"
+ },
+ {
+  "id": "rl-offside-pos",
+  "name": "オフサイドポジション",
+  "reading": "おふさいどぽじしょん",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "rule:offside",
+  "relatedTerms": [
+   "rl-offside",
+   "rl-offside-line",
+   "rl-halfway"
+  ],
+  "description": "相手の 陣地で、ボールと 後ろから 2番目の 相手より ゴールに 近い 位置の ことです。この 位置に いるだけでは 反則では なく、プレーに かかわった ときに オフサイドに なります。"
+ },
+ {
+  "id": "rl-offside-line",
+  "name": "オフサイドライン",
+  "reading": "おふさいどらいん",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "rule:offside",
+  "relatedTerms": [
+   "rl-offside-pos",
+   "rl-ar",
+   "rl-saot"
+  ],
+  "description": "後ろから 2番目の 相手の 選手の 位置に ひいた 見えない 線です。ふつうは キーパーの 次に うしろに いる 選手が 目安です。副審は この 線に そって 走ります。"
+ },
+ {
+  "id": "rl-noexcept",
+  "name": "オフサイドにならない再開",
+  "reading": "おふさいどにならないさいかい",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🆗",
+  "mapNode": "rule:offside",
+  "relatedTerms": [
+   "rl-offside",
+   "rl-throwin",
+   "rl-ck"
+  ],
+  "description": "ゴールキック・スローイン・コーナーキックから 直接 ボールを うけた ときは、オフサイドに なりません。そのため スローインでは 相手の うしろに 走りこんで うけても だいじょうぶです。"
+ },
+ {
+  "id": "rl-dogso",
+  "name": "DOGSO",
+  "reading": "どぐそ",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-red",
+   "rl-pk",
+   "rl-yellow"
+  ],
+  "acceptedReadings": [
+   "どぐそ",
+   "けっていてきなとくてんのきかいのそし"
+  ],
+  "description": "「決定的な 得点の 機会の 阻止」を、英語の 頭文字で よぶ ことばです。反則で 相手の 決まりそうな ゴールの チャンスを つぶす ことで、ふつうは 退場です。PKに なり、ボールを ねらった 反則なら 警告に かわります。"
+ },
+ {
+  "id": "rl-sfp",
+  "name": "著しく不正なプレー",
+  "reading": "いちじるしくふせいなぷれー",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-red",
+   "rl-foul",
+   "rl-dogso"
+  ],
+  "description": "ボールを うばう ときに、相手の 安全を おびやかす ほど 強く 危ない タックルを する 反則です。レッドカードで 退場に なります。相手を 守る ための とても 大切な 決まりです。"
+ },
+ {
+  "id": "rl-misconduct",
+  "name": "不正行為",
+  "reading": "ふせいこうい",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-red",
+   "rl-unsporting"
+  ],
+  "description": "カードの 対象に なる ふるまいの ことです。競技規則の「ファウルと 不正行為」の 条に まとめて あります。ファウルは 相手への 反則、不正行為は その ほかの よくない ふるまいを 主に いいます。"
+ },
+ {
+  "id": "rl-unsporting",
+  "name": "反スポーツ的行為",
+  "reading": "はんすぽーつてきこうい",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-simulation",
+   "rl-misconduct"
+  ],
+  "description": "スポーツらしく ない ふるまいで、イエローカードの 対象です。シミュレーションや、手で ゴールを ねらう ことも ここに 入ります。リスペクトに 欠ける 行為も 同じです。"
+ },
+ {
+  "id": "rl-dissent",
+  "name": "異議",
+  "reading": "いぎ",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-captain",
+   "rl-referee"
+  ],
+  "description": "主審の 判定に ことばや 態度で 文句を 言う ことです。キャプテンでも イエローカードの 対象に なります。判定に 不満が あっても、すぐ 次の プレーに 切りかえる ことが 大切です。"
+ },
+ {
+  "id": "rl-distance",
+  "name": "距離不保持",
+  "reading": "きょりふほじ",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-wall",
+   "rl-yellow",
+   "rl-ck"
+  ],
+  "description": "フリーキックや コーナーキックの とき、ボールから 決められた 距離を はなれない 反則です。守る 選手は 9.15メートル はなれなければ ならず、守らないと イエローカードの 対象です。"
+ },
+ {
+  "id": "rl-celebration",
+  "name": "得点の喜びかた",
+  "reading": "とくてんのよろこびかた",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎉",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-unsporting",
+   "rl-goalrule"
+  ],
+  "description": "ゴールを 喜ぶのは よい ことですが、決まりが あります。シャツを ぬぐ・シャツを 頭に かぶる・危ない 形で フェンスに のぼると イエローカードです。喜びすぎて 時間を 使いすぎても いけません。"
+ },
+ {
+  "id": "rl-goalrule",
+  "name": "得点の決まり",
+  "reading": "とくてんのきまり",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-goalline",
+   "rl-glt",
+   "rl-inplay"
+  ],
+  "description": "ゴールポストの あいだ・クロスバーの 下で、ボールの 全体が ゴールラインを こえると 得点です。少しでも 線に かかって いれば まだ ゴールでは ありません。ボールは 丸いので、上から 見て たしかめます。"
+ },
+ {
+  "id": "rl-penarc",
+  "name": "ペナルティーアーク",
+  "reading": "ぺなるてぃーあーく",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-penmark",
+   "rl-pa",
+   "rl-pk"
+  ],
+  "description": "ペナルティーエリアの 外に ある 半円の 線です。PKの とき、キッカーと キーパー いがいの 選手が ペナルティーマークから 9.15メートル はなれる ための しるしです。"
+ },
+ {
+  "id": "rl-cornerarc",
+  "name": "コーナーアーク",
+  "reading": "こーなーあーく",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-ck",
+   "rl-distance",
+   "rl-touchline"
+  ],
+  "description": "フィールドの 4つの かどに ある 半径 1メートルの 四分の一の 円です。コーナーキックは ボールを この 中に 置いて けります。かどの 旗は 高さ 1.5メートル 以上で、ぬいては いけません。"
+ },
+ {
+  "id": "rl-technical",
+  "name": "テクニカルエリア",
+  "reading": "てくにかるえりあ",
+  "journey": "rule",
+  "category": "フィールド",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "rule:field",
+  "relatedTerms": [
+   "rl-fourth",
+   "rl-subs",
+   "rl-referee"
+  ],
+  "description": "ベンチの 前に ある、監督や コーチが 指示を 出せる 場所です。指示を 出せるのは 1度に ひとりだけです。ここから 出て 指示を すると 注意される ことが あります。"
+ },
+ {
+  "id": "rl-sinbin",
+  "name": "シンビン",
+  "reading": "しんびん",
+  "journey": "rule",
+  "category": "反則と カード",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "rule:card",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-misconduct",
+   "rl-red"
+  ],
+  "acceptedReadings": [
+   "しんびん",
+   "いちじてきたいじょう"
+  ],
+  "description": "警告の 反則を した 選手を、しばらく フィールドの 外で 待たせる 決まりで、日本語では「一時的退場」です。ユースや グラスルーツの 大会が えらんで 使えます。"
+ },
+ {
+  "id": "rl-captain",
+  "name": "キャプテンオンリー",
+  "reading": "きゃぷてんおんりー",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "©️",
+  "mapNode": "rule:referee",
+  "relatedTerms": [
+   "rl-dissent",
+   "rl-referee",
+   "rl-lotg"
+  ],
+  "description": "大事な 判定の とき、主審に 近づいて 話せるのを キャプテン ひとりだけに する 決まりです。いまは 大会が えらんで 使いますが、2027年7月からは すべての 大会で 必ず 使います。"
+ },
+ {
+  "id": "rl-concussion",
+  "name": "脳しんとうの交代",
+  "reading": "のうしんとうのこうたい",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "rule:player",
+  "relatedTerms": [
+   "rl-subs",
+   "rl-sub",
+   "rl-treatment"
+  ],
+  "description": "頭を 強く 打った 選手を 守る ための 交代の 決まりで、ふつうの 交代人数とは 別に 入れかえられます。もどる ことは できません。大会が えらんで 使える 決まりです。"
+ },
+ {
+  "id": "rl-timedsub",
+  "name": "制限時間付き交代",
+  "reading": "せいげんじかんつきこうたい",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "rule:player",
+  "relatedTerms": [
+   "rl-sub",
+   "rl-subs",
+   "rl-treatment"
+  ],
+  "description": "交代で 出る 選手は 10秒 以内に フィールドを 出る 決まりです。遅れると、入る 選手は 再開から 1分 たった あとの 止まった ときまで 入れません。2026/27年からの 決まりです。"
+ },
+ {
+  "id": "rl-treatment",
+  "name": "フィールドの外での手当て",
+  "reading": "ふぃーるどのそとでのてあて",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "rule:player",
+  "relatedTerms": [
+   "rl-timedsub",
+   "rl-added",
+   "rl-concussion"
+  ],
+  "description": "フィールドの 中で 手当てを うけた 選手は、決まった 場合を のぞき、再開の あと 1分間 外で 待ちます。2026/27年からで、手当ての ふりで 時間を 使う ことを へらす ための ものです。"
+ },
+ {
+  "id": "rl-cooling",
+  "name": "クーリングブレイク",
+  "reading": "くーりんぐぶれいく",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-matchtime",
+   "rl-added",
+   "rl-halftime"
+  ],
+  "acceptedReadings": [
+   "くーりんぐぶれいく",
+   "くーりんぐぶれーく"
+  ],
+  "description": "とても 暑い 日に、からだを 冷やす ために 試合の とちゅうで とる 休みです。ふつう 90秒から 3分くらいです。1分 以内の「いんすいタイム」とは 別の ものです。"
+ },
+ {
+  "id": "rl-rra",
+  "name": "レフェリーレビューエリア",
+  "reading": "れふぇりーれびゅーえりあ",
+  "journey": "rule",
+  "category": "審判と テクノロジー",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "rule:tech",
+  "relatedTerms": [
+   "rl-ofr",
+   "rl-var",
+   "rl-referee"
+  ],
+  "acceptedReadings": [
+   "れふぇりーれびゅーえりあ",
+   "あーるあーるえー"
+  ],
+  "description": "VARを 使う 試合で、主審が ビデオを 見る ための 画面が 置かれた 場所です。フィールドの 外に あり、選手が 入ると イエローカードの 対象に なります。"
+ }
+]

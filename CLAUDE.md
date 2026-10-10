@@ -941,10 +941,11 @@
   ⚠️ **1回目は 入れなかった**: プレミアリーグの ライオン・チャンピオンズリーグの 星の ボール・FIFA の トロフィー・マンチェスター・ユナイテッドに そっくりの 盾(**本物の マーク**)/ ゲームに 無い ことば 15こ / 「ぼるとがるご」。
   2回目は 札 36こ ぜんぶ ゲームに ある 読み・本物の マーク なし(スター・伝説の 選手は 国旗と ボールだけ)。のこった 2か所は **絵の 中で 直した**(`tools/soccer/fix_text.py`):
   「ぶれみありーぐ」→「ぷれみありーぐ」/ 図鑑の 見本「ぽうしの という いみ」→「ぼうし という いみ」。もとの 絵は 入れものに 入れていない
-- アイコン・題名は まだ(仮の アイコン `tools/soccer/placeholder_icon.py`・題名は 文字。`logo=False`)。
+- **アイコンと 題名も 入れた**(2026-10-10)。アイコンは けいくんの 四角い 絵(1254px)を 切らずに そのまま(`tools/soccer/art/square-src.png` → `python3 tools/icon_from_square.py soccer`。`iconv` = 2)。四角い 絵にも「ぶれみありーぐ」「ぽうしの」が のこるが アイコンの 大きさでは 読めないので そのまま。
+  題名は ChatGPT の 切りぬき(`tools/soccer/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py soccer` → `soccer/logo-word.webp` 900×184。`logo=True`・`wordv` = 3)。「フリックワールドサッカー」12字を 読んで 確かめた。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
   届いたら 四角い 絵 → `tools/soccer/art/square-src.png` → `python3 tools/icon_from_square.py soccer`(`iconv` +1)/ 題名の 透明 PNG → `tools/soccer/art/title-src.png` → `python3 tools/title_from_art.py soccer`(`logo=True`・`art.word` を 実寸)/ `soccer/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **実在の 選手の 顔・クラブの エンブレム・大会の ロゴ・スポンサー名・本物の 背番号の 組みあわせ**を 描かせない。届いたら まず 字を 切り出して 読む(「ワールドサッカ」「フリックサッカー」に なりやすい)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #368)に 足した。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`(speed-king #368)に 足した。販売ページ `HOME_GAMES`(⚠️ サッカーは「教科を ひろげる」の 章、世界の となり)と 規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-10 に 足した
 - 確かめかた: `node tools/play-all.mjs soccer/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs soccer/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック血液型(`ketsueki/`。けいくん 2026-10-04「血液型の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。血液型の特徴をめちゃくちゃ詳しくお願いします」→ 同じ日「科学的根拠が無いということ? やめた方がいいかなぁ?」→ 3つの 案から **「このまま」**。まとめは `docs/フリック血液型-はじめかた.md`)

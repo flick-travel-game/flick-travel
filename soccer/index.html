@@ -8,7 +8,7 @@
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="favicon.png?v=1">
+<link rel="icon" type="image/png" href="favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -423,12 +423,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリックワールドサッカー</span>
+      <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="184" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックワールドサッカー</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリックワールドサッカー" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリックワールドサッカー" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -560,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"soccer", name:"フリックワールドサッカー", modes:(typeof SOCCER === "object" ? SOCCER.modes : []), assets:"../", logo:false, hero:true, dir:"soccer/", lead:"サッカーの きほん・ルール・世界の リーグと 大会・名門クラブと ダービー・いまの スター選手・伝説の 選手・ドリブルと テクニック・戦術と 解説の ことば・ワールドカップと 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。サッカーが すきな 小学生の ことばから はじめて、少年団の コーチ(4級審判の めやす)、解説者が 使う 戦術の ことばまで。シャペウは ポルトガル語で「ぼうし」、イギリスには 4つの 代表が ある、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは IFAB 競技規則 2026/27 で 確かめたよ(毎年 変わる ことが あるよ)。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の サッカーが つながって 見えてくるよ。FIFA・各リーグ・各クラブ・各選手とは 関係ありません。" };
+const GAME = { id:"soccer", name:"フリックワールドサッカー", modes:(typeof SOCCER === "object" ? SOCCER.modes : []), assets:"../", logo:true, hero:true, dir:"soccer/", lead:"サッカーの きほん・ルール・世界の リーグと 大会・名門クラブと ダービー・いまの スター選手・伝説の 選手・ドリブルと テクニック・戦術と 解説の ことば・ワールドカップと 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。サッカーが すきな 小学生の ことばから はじめて、少年団の コーチ(4級審判の めやす)、解説者が 使う 戦術の ことばまで。シャペウは ポルトガル語で「ぼうし」、イギリスには 4つの 代表が ある、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは IFAB 競技規則 2026/27 で 確かめたよ(毎年 変わる ことが あるよ)。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の サッカーが つながって 見えてくるよ。FIFA・各リーグ・各クラブ・各選手とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

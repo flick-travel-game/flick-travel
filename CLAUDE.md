@@ -973,10 +973,10 @@
   2回目は 札 36こ・4択(とらべりんぐ)・つながる ことば(すくりーん・ぱす)が ぜんぶ ゲームに ある 読みで、旅の 箱も 合っていた。
   のこった 2か所は **絵の 中で 直した**(`tools/basket/fix_text.py`。Noto Sans CJK JP Bold を もとの はばに ちぢめて 置く):
   4択 B「だぷるどりぷる」→「だぶるどりぶる」/ 9番の 札「すりーえっ?すすりー」(くずれ)→「すりーえっくすすりー」。もとの 絵は 入れものに 入れていない
-- アイコンと 題名は まだ 仮(`tools/basket/placeholder_icon.py`。木の 床に オレンジの ボール。`logo=False`)。
-  届いたら 四角い 絵 → `tools/basket/art/square-src.png` → `python3 tools/icon_from_square.py basket`(`iconv` +1)/ 題名の 透明 PNG → `tools/basket/art/title-src.png` → `python3 tools/title_from_art.py basket`(`logo=True`・`art.word` を 実寸)/ `basket/hero.webp`(`hero=True`)。
-  ⚠️ 実在の 選手の 顔・チームの ロゴ・大会の ロゴ・スポンサー名・シューズの ロゴを 描かせない。届いたら まず 字を 切り出して 読む(とても 長い 名前なので「フリックワールドバスケ」に 落ちやすい)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` と 規約の 一覧 `FLICK_SERIES_GAMES` に 足した(speed-king)。販売ページ `HOME_GAMES` は **絵が 届いてから**(トップの 絵・題名が 要る)
+- **アイコンと 題名も 入れた**(2026-10-10)。アイコンは けいくんの 四角い 絵(1254px)を 切らずに そのまま(`tools/basket/art/square-src.png` → `python3 tools/icon_from_square.py basket`。`iconv` = 2)。四角い 絵には 🔊 の マーク・4択の「あるくあるそくは」の 字の まちがいが あるが、アイコンの 大きさでは 読めないので そのまま。
+  題名は ChatGPT の 切りぬき(`tools/basket/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py basket` → `basket/logo-word.webp` 900×285。`logo=True`・`wordv` = 3)。2行の「フリックワールド / バスケットボール」16字を 読んで 確かめた。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+  ⚠️ 絵を 差しかえる ときも 実在の 選手の 顔・チームの ロゴ・大会の ロゴ・スポンサー名・シューズの ロゴを 描かせない。届いたら まず 字を 切り出して 読む
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` と 規約の 一覧 `FLICK_SERIES_GAMES` に 足した(speed-king)。販売ページ `HOME_GAMES`(教科を ひろげる の 章、ワールドサッカーの となり)にも 2026-10-10 に 足した
 - ⭐ **毎年の 見直しの 予約が ある**(`trig_01W2aAgW1yPJpsP9pCtxTbd8`。毎年 10月1日 朝8時46分)。⚠️ **ファイル名 `terms-rule.json` / `terms-star.json` / `meta.json` の `rulesVersion` を 変えない**
 - 確かめかた: `node tools/play-all.mjs basket/`(旅 9×7 + マスター 63)/ `node tools/click-all.mjs basket/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 

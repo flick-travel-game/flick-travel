@@ -1434,7 +1434,8 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - **トップの 絵は 入れた**(2026-10-11。`kankoku/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **1回目**。札 20こ・吹き出し・4ステップを 切り出して 読み、
   小さい 字の まちがい 2つを **絵の 中で 直した**(`tools/kankoku/fix_text.py`。Noto Sans CJK JP Bold・もとの 字の 色): 가나다「あ・な・だ」→「か・な・だ」/ ㄱㄴㄷ「ぎ・に・でぃ」(読みに なっていない)→「か行・な行・た行」。
   そのままに した もの: 학교「はっきょ」・괜찮아요「けんちゃなよ」(ゲームの 読みは はくきょ・くぇんちゃなよ だが ふつうの 書きかた)/ 화이팅(ゲームに 無いが よく 知られた ことば)/ 看板の 경복궁・명동・N서울타워(地名)。もとの 絵は 入れものに 入れていない
-- アイコン・題名: **まだ**(仮の アイコン `tools/kankoku/placeholder_icon.py`・題名は 文字)。届いたら `tools/kankoku/art/square-src.png` → `python3 tools/icon_from_square.py kankoku`(iconv を +1)/
+- **アイコンは 入れた**(2026-10-11。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py kankoku`。`iconv` = 2)。四角い 絵にも 가나다「あ・な・だ」・ㄱㄴㄷ「ぎ・に・でぃ」・학교「はっきょ」が のこるが アイコンの 大きさでは 読めないので そのまま(医師・教師と 同じ 判断)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+- 題名: **まだ**(文字)。届いたら `tools/kankoku/art/square-src.png` → `python3 tools/icon_from_square.py kankoku`(iconv を +1)/
   `title-src.png` → `python3 tools/title_from_art.py kankoku`(logo を True・art.word を 実寸に)/ `kankoku/hero.webp`(hero を True)。speed-king の `HOME_GAMES` にも art と word を 足す
 - かずとも: `FLICK_MODES` に krhan / krw1〜krw4 / krgram / krtalk / krnative / krmas、`FLICK_LINK_TARGETS` に kankoku、`HOME_GAMES`(英会話の となり。絵なし)・`FLICK_SERIES_GAMES` に フリック韓国語
 - 確かめかた: `node tools/play-all.mjs kankoku/`(全 ステージ)。**画面に 出る ひらがなを フリックの とちゅうの 字(し→じ・つ→っ)ごと 打っても 赤く ならない**ことも 確かめた(810問。1560問に した ときも 同じ 表なので 新しい 字の 形は 出ない)

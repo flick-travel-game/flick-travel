@@ -83,7 +83,7 @@ rep("const per = secs / Math.max(1, q.r.length);", "const per = secs / Math.max(
 sub(r"  function card\(q, prev\)\{.*?\n    return h;\n  \}\n", """  function card(q, prev){
     let h = "";
     if(prev){
-      h += '<div class="ai-learn eg-learn" role="status"><p class="eg-lh"><b lang="en">✅ ' + esc(prev.n) + '</b>' + sayBtn(prev.t) + '</p>' +
+      h += '<div class="ai-learn eg-learn" role="status"><p class="eg-lh"><b lang="en">✅ ' + esc(prev.n) + '</b>' + sayBtn(prev.t) + '</p>' + (prev.krs ? '<p class="eg-pk">' + esc(prev.krs) + '</p>' : "") +
            '<p class="eg-ja">' + prev.jarb + '</p><p class="eg-pt">💡 ' + prev.rb + '</p></div>';
     }else h += '<div class="ai-learn ai-hint">こたえると、日本語訳と 文法の ポイントが 出るよ</div>';
     const tag = pre && !pre.has(q.art) ? '<span class="ai-tag new">🆕 はじめまして</span>' : "";
@@ -104,7 +104,9 @@ sub(r"  function tgtHtml\(q, n, err\)\{.*?\n    return h;\n  \}\n", """  functio
     return '<span lang="en" class="eg-tgt">' + h + '</span>';
   }
   /* 結果の 見出し: 英文の 下に 日本語訳 */
-  function nameHtml(q){ return '<span lang="en" class="eg-nm">' + esc(q.t) + '</span><span class="eg-nmj">' + q.jarb + '</span>'; }
+  function nameHtml(q){ return '<span lang="en" class="eg-nm">' + esc(q.t) + '</span>' + kanaLine(q) + '<span class="eg-nmj">' + q.jarb + '</span>'; }
+  /* 英文の すぐ 下に 出す ひらがなの 読み(語ごとに すき間。けいくん 2026-10-11「答えのアルファベットの下にも 先程答えた ひらがなの読みがあると良い」) */
+  function kanaLine(q){ return q.krs ? '<span class="eg-nmk">' + esc(q.krs) + '</span>' : ""; }
 """)
 # 結果・図鑑: 🔊 と つながる 例文
 rep("""    let h = '<div class="ai-info">' + tag;
@@ -124,7 +126,7 @@ rep("""'"><span>' + q.e + '</span><b>' + esc(q.n) + '</b><small>'""", """'"><spa
 rep("""'<p class="ai-cn"><span class="ai-ic">' + q.e + '</span><ruby>' + esc(q.n) + '<rt>' + esc(q.r) + '</rt></ruby><button""",
     """'<p class="ai-cn"><span class="ai-ic">' + q.e + '</span><span lang="en">' + esc(q.n) + '</span><button""")
 rep("""'<p class="ai-meta">' + esc(q.c) + '</p><p class="ai-d">' + q.rb + '</p>' + info(q, true) +""",
-    """'<p class="ai-meta">' + esc(q.c) + '</p><p class="eg-ja big">' + q.jarb + '</p><p class="ai-d">💡 ' + q.rb + '</p>' + info(q, true) +""")
+    """'<p class="ai-meta">' + esc(q.c) + '</p>' + (q.krs ? '<p class="eg-pk big">' + esc(q.krs) + '</p>' : "") + '<p class="eg-ja big">' + q.jarb + '</p><p class="ai-d">💡 ' + q.rb + '</p>' + info(q, true) +""")
 # 4択クイズ: ② は「英文 → 正しい 訳は?」に(文法の ポイントより 訳の ほうが えらびやすい)
 rep("""        : '<p class="ai-qq">「<b>' + esc(it.q.n) + '</b>」の 説明として 正しいのは どれ？</p>';""",
     """        : '<p class="ai-qq">「<b lang="en">' + esc(it.q.n) + '</b>」の 日本語訳は どれ？</p>';""")
@@ -155,7 +157,7 @@ rep(".ai-panel{background:linear-gradient(160deg,#edf2ff 0%,#fff9db 55%,#ebfbee 
 s = s.replace("#3b5bdb", "#0b7285")
 rep("const css = `\n", """const css = `
 .target{word-break:normal;overflow-wrap:anywhere;font-size:clamp(20px,6vw,26px);letter-spacing:.01em;line-height:1.55}
-.target .eg-sk{border:0}\n.target .eg-gap{border:0;padding:0 .12em}
+.target .eg-sk{border:0}\n.target .eg-gap{border:0;padding:0 .12em}\n.target .eg-w{white-space:nowrap;display:inline-block}
 .eg-gram{font-size:clamp(18px,5.4vw,22px)}
 .eg-learn p{margin:0}.eg-lh{display:flex;align-items:center;gap:6px;font-size:15px}.eg-lh b{word-break:break-word}
 .eg-ja{font-weight:800;color:#0b7285;margin-top:2px!important}.eg-ja.big{font-size:16px;margin:8px 0 0!important}.eg-pt{font-size:12.5px;color:#334155;margin-top:2px!important}
@@ -163,7 +165,8 @@ rep("const css = `\n", """const css = `
 .eg-say.slow{font-size:13px}.eg-sayline{display:flex;gap:6px;margin:4px 0}.eg-learn .eg-say{padding:2px 6px;font-size:12px}
 .eg-auto{display:block;width:100%;margin:10px 0 0;padding:10px;border-radius:14px;border:1.5px dashed #94a3b8;background:#fff;color:#334155;font:inherit;font-size:13.5px;font-weight:800;cursor:pointer}
 .eg-auto.on{border-style:solid;border-color:#0b7285;color:#0b7285;background:#e3fafc}
-.eg-nm{display:block;font-size:1.02em;word-break:break-word}.eg-nmj{display:block;font-size:.88em;font-weight:700;color:#0b7285}.eg-nmj rt{color:#64748b}
+.eg-nm{display:block;font-size:1.02em;word-break:break-word}.eg-nmk{display:block;font-size:.8em;font-weight:700;color:#64748b!important;letter-spacing:.02em;margin:1px 0 2px}
+.eg-pk{font-size:12.5px;font-weight:700;color:#64748b!important;margin:1px 0 0!important}.eg-pk.big{font-size:14px;margin:6px 0 0!important}.eg-nmj{display:block;font-size:.88em;font-weight:700;color:#0b7285}.eg-nmj rt{color:#64748b}
 .ai-tile b[lang=en]{font-size:11.5px;font-weight:800}
 """)
 # 4択クイズの ① は 文法の ポイント → どの 例文?(英文を 選ぶ)。英字は 左よせで 小さく
@@ -204,12 +207,13 @@ rep("""  function tgtHtml(q, n, err){
       const t = typeof target === "string" && target ? target : q.r;
       // 語ごとに すき間を あけて 見せる(けいくん 2026-10-11「問題表示は単語ごとに半角スペースが欲しい」)。打つ 字(target)に スペースは 入れない
       const sp = [q.krs].concat(q.kals || []).find(x => x && x.replace(/ /g, "") === t) || t;
-      let k = "", i = 0;
+      // 語の 途中で 折り返さない(語ごとに nowrap の かたまり)
+      let k = '<span class="eg-w">', i = 0;
       for(const ch of sp){
-        if(ch === " "){ k += '<span class="eg-gap ' + (i > 0 && i <= n ? "d" : "c") + '"> </span>'; continue; }
+        if(ch === " "){ k += '</span><span class="eg-gap ' + (i > 0 && i <= n ? "d" : "c") + '"> </span><span class="eg-w">'; continue; }
         k += '<span class="' + (i < n ? "d" : (i === n ? (err ? "x" : "n") : "c")) + '">' + esc(ch) + '</span>'; i++;
       }
-      return k;
+      return k + '</span>';
     }
     let h = "", p = 0;""")
 # 問題の カード: ひらがなの ときは 英文が 問題(訳を 打つ)

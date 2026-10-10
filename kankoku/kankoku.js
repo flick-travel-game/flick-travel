@@ -56,7 +56,12 @@ const KANKOKU = (() => {
     let info;
     if(J.id === "krtalk"){
       const scIdx = Object.fromEntries(SC.map((S, i) => [S.id, i]));
-      info = tens(terms.slice().sort((a, b) => scIdx[a.sc] - scIdx[b.sc] || a.dv - b.dv || a.ord - b.ord));
+      /* 場面ごとに data の 順で 10文ずつ「まわり」に 分け、まわり → 場面 の 順に ならべる。
+         ⚠️ 2026-10-10 に 各場面 10文 → 20文 に ふやしたとき、前からの 15ステージ(1まわりめ)の 中身を 変えない ため。
+         ふやした 文は 2まわりめ(16〜30ステージ)に なる。まわりの 中は やさしい順 */
+      const rank = {}, round = new Map();
+      terms.slice().sort((a, b) => a.ord - b.ord).forEach(q => { const k = rank[q.sc] = (rank[q.sc] || 0) + 1; round.set(q, Math.floor((k - 1) / ROUNDS)); });
+      info = tens(terms.slice().sort((a, b) => round.get(a) - round.get(b) || scIdx[a.sc] - scIdx[b.sc] || a.dv - b.dv || a.ord - b.ord));
       info.forEach(s => { s.stop = scIdx[s.fresh[0].sc]; });
     }else{
       info = tens(terms);

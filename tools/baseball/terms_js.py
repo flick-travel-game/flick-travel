@@ -135,6 +135,7 @@ def main():
            # ワールドベースボールの 説明で 見つけた 読みまちがい(ここに 足す)
            R(r"<ruby>哲治<rt>てつじ</rt></ruby>", "<ruby>哲治<rt>てつはる</rt></ruby>"),  # 川上哲治
            R(r"<ruby>仰木<rt>おうぎ</rt></ruby>", "<ruby>仰木<rt>おおぎ</rt></ruby>"),  # 仰木彬
+           R(r"59<ruby>本<rt>ぽん</rt></ruby>", "59<ruby>本<rt>ほん</rt></ruby>"),  # スタントンの 59本
            ]
     def rub(t):
         h = rub0(t)

@@ -1,0 +1,1356 @@
+[
+ {
+  "id": "rl-travel",
+  "name": "トラベリング",
+  "reading": "とらべりんぐ",
+  "journey": "rule",
+  "category": "バイオレーション",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-zerostep",
+   "rl-doubledribble"
+  ],
+  "ruleset": "両方",
+  "description": "ボールを 持った まま 決まりより 多く 歩いて しまう 反則です。ボールを つかんで から 2ステップまで なら 動けます。笛が 鳴ると ボールは 相手の ものに なります。"
+ },
+ {
+  "id": "rl-doubledribble",
+  "name": "ダブルドリブル",
+  "reading": "だぶるどりぶる",
+  "journey": "rule",
+  "category": "バイオレーション",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-travel",
+   "rl-carrying"
+  ],
+  "ruleset": "両方",
+  "description": "ドリブルを 止めて ボールを 持った あとに、もう一度 ドリブルを はじめる 反則です。両手で 同時に ボールを つく ときも この 反則に なります。"
+ },
+ {
+  "id": "rl-personal",
+  "name": "パーソナルファウル",
+  "reading": "ぱーそなるふぁうる",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-foulout",
+   "rl-teamfoul"
+  ],
+  "ruleset": "両方",
+  "description": "相手の 体に ふれて じゃまを する、いちばん ふつうの ファウルです。おす・つかむ・たたく などが あてはまります。回数が かさなると 試合に 出られなく なります。"
+ },
+ {
+  "id": "rl-foulout",
+  "name": "ファウルアウト",
+  "reading": "ふぁうるあうと",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-personal",
+   "rl-substitution"
+  ],
+  "ruleset": "両方",
+  "description": "ファウルが 決まった 回数に なると、その 試合には もう 出られなく なる ことです。FIBA では 5回、NBA では 6回で ファウルアウトです。かわりの 選手と 交代します。"
+ },
+ {
+  "id": "rl-threeline",
+  "name": "3ポイントライン",
+  "reading": "すりーぽいんとらいん",
+  "journey": "rule",
+  "category": "コートと ライン",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌈",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-paint",
+   "rl-sideline"
+  ],
+  "ruleset": "両方",
+  "description": "この 線の 外から 決めた シュートは 3点に なります。ゴールからの 距離は FIBA が 6.75メートル、NBA が 23フィート9インチ(約7.24メートル)で、NBA の ほうが 遠いです。"
+ },
+ {
+  "id": "rl-shotclock",
+  "name": "ショットクロック",
+  "reading": "しょっとくろっく",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "rule:shotclock",
+  "relatedTerms": [
+   "rl-sec24",
+   "rl-sec14"
+  ],
+  "ruleset": "両方",
+  "description": "攻める チームが シュートを 打つまでの のこり時間を しめす 時計です。ゴールの 上などに あり、FIBA も NBA も 24秒から はじまります。"
+ },
+ {
+  "id": "rl-sec24",
+  "name": "24秒ルール",
+  "reading": "にじゅうよんびょうるーる",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "rule:shotclock",
+  "relatedTerms": [
+   "rl-shotclock",
+   "rl-sec14"
+  ],
+  "ruleset": "両方",
+  "description": "ボールを 持った チームは 24秒 以内に シュートを 打ち、ボールが リングに ふれないと いけない 決まりです。間に合わないと ボールは 相手の ものに なります。"
+ },
+ {
+  "id": "rl-sec3",
+  "name": "3秒ルール",
+  "reading": "さんびょうるーる",
+  "journey": "rule",
+  "category": "バイオレーション",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-paint",
+   "rl-defthree"
+  ],
+  "ruleset": "両方",
+  "description": "攻める 選手は 相手ゴールの 近くの ペイントエリアに 3秒より 長く いては いけない 決まりです。ゴール下に ずっと 立って 待つ ことは できません。"
+ },
+ {
+  "id": "rl-quarter",
+  "name": "クォーター",
+  "reading": "くぉーたー",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🕙",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-halftime",
+   "rl-overtime"
+  ],
+  "ruleset": "両方",
+  "description": "試合を 4つに 分けた ひとつ分の 時間です。FIBA は 1クォーター 10分、NBA は 12分です。オリンピックは 10分、NBA の 試合は 12分で 行われます。"
+ },
+ {
+  "id": "rl-timeout",
+  "name": "タイムアウト",
+  "reading": "たいむあうと",
+  "journey": "rule",
+  "category": "タイムアウトと チャレンジ",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "rule:timeout",
+  "relatedTerms": [
+   "rl-hcchallenge",
+   "rl-coachchallenge"
+  ],
+  "ruleset": "両方",
+  "description": "コーチが 試合を 止めて、選手に 作戦を 伝える 時間です。回数は FIBA が 前半2回・後半3回、NBA が 1試合 7回と 決まって います。"
+ },
+ {
+  "id": "rl-jumpball",
+  "name": "ジャンプボール",
+  "reading": "じゃんぷぼーる",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-altposs",
+   "rl-centercircle"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "じゃんぷぼーる",
+   "てぃっぷおふ"
+  ],
+  "description": "審判が 真上に 投げた ボールを、ふたりの 選手が とんで はじく ことです。試合の はじめは センターサークルで ジャンプボールを して スタートします。"
+ },
+ {
+  "id": "rl-throwin",
+  "name": "スローイン",
+  "reading": "すろーいん",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🫴",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-outofbounds",
+   "rl-sec5"
+  ],
+  "ruleset": "両方",
+  "description": "コートの 外から ボールを 投げ入れて 試合を 始めなおす ことです。ボールを わたされて から 5秒 以内に 投げないと 反則に なります。"
+ },
+ {
+  "id": "rl-outofbounds",
+  "name": "アウトオブバウンズ",
+  "reading": "あうとおぶばうんず",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-throwin",
+   "rl-sideline"
+  ],
+  "ruleset": "両方",
+  "description": "ボールや ボールを 持った 選手が コートの 外に 出る ことです。線の 上も 外に なります。最後に ボールに ふれた 選手の 相手チームの ボールで 再開します。"
+ },
+ {
+  "id": "rl-referee",
+  "name": "審判",
+  "reading": "しんぱん",
+  "journey": "rule",
+  "category": "審判と 係",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧑‍⚖️",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-crewchief",
+   "rl-umpire"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "しんぱん",
+   "れふぇりー"
+  ],
+  "description": "試合の 反則を 見て 笛で 知らせる 人です。FIBA は クルーチーフと アンパイア 1〜2人、NBA は クルーチーフ・レフェリー・アンパイアの 3人で 試合を さばきます。"
+ },
+ {
+  "id": "rl-violation",
+  "name": "バイオレーション",
+  "reading": "ばいおれーしょん",
+  "journey": "rule",
+  "category": "バイオレーション",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📛",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-travel",
+   "rl-sec24"
+  ],
+  "ruleset": "両方",
+  "description": "体の ふれあい では ない 反則を まとめた よび名です。トラベリングや 時間の 決まりの 反則などが あり、ボールが 相手チームの ものに なります。"
+ },
+ {
+  "id": "rl-charging",
+  "name": "チャージング",
+  "reading": "ちゃーじんぐ",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🐂",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-blocking",
+   "rl-nocharge"
+  ],
+  "ruleset": "両方",
+  "description": "ボールを 持った 攻める 選手が、正しく 立って 守る 相手に ぶつかって いく ファウルです。守る 側が ぶつかると ブロッキングに なり、どちらか 見分けるのが 審判の 腕の 見せどころです。"
+ },
+ {
+  "id": "rl-technical",
+  "name": "テクニカルファウル",
+  "reading": "てくにかるふぁうる",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-flagrant",
+   "rl-flopping"
+  ],
+  "ruleset": "両方",
+  "description": "おもに 体の ふれあい では ない、ふるまいの 反則です。NBA では 2回で 退場です。FIBA は 2026年版から 退場の 数に 入る カテゴリ1と、入らない カテゴリ2に 分けました。"
+ },
+ {
+  "id": "rl-overtime",
+  "name": "オーバータイム",
+  "reading": "おーばーたいむ",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-quarter",
+   "rl-bonus"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "おーばーたいむ",
+   "えんちょう",
+   "えんちょうせん"
+  ],
+  "description": "第4クォーターが 終わって 同点の ときに 行う 延長戦です。FIBA も NBA も 1回 5分で、勝ち負けが 決まるまで 何回でも 続けます。"
+ },
+ {
+  "id": "rl-basketcount",
+  "name": "バスケットカウント",
+  "reading": "ばすけっとかうんと",
+  "journey": "rule",
+  "category": "フリースロー",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎉",
+  "mapNode": "rule:freethrow",
+  "relatedTerms": [
+   "rl-twoshot",
+   "rl-shootingfoul"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "ばすけっとかうんと",
+   "あんどわん"
+  ],
+  "description": "ファウルを されながら シュートを 決めた ときに、その 点が みとめられる ことです。さらに フリースローを 1本 もらえます。アメリカでは「アンドワン」と よびます。"
+ },
+ {
+  "id": "rl-blocking",
+  "name": "ブロッキング",
+  "reading": "ぶろっきんぐ",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-charging",
+   "rl-holding"
+  ],
+  "ruleset": "両方",
+  "description": "守る 選手が 体を 入れて、攻める 選手の 進む じゃまを する ファウルです。正しい 位置に まだ 立てて いないのに ぶつかると、ブロッキングに なります。"
+ },
+ {
+  "id": "rl-sec8",
+  "name": "8秒ルール",
+  "reading": "はちびょうるーる",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "8️⃣",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-backcourt",
+   "rl-frontcourt"
+  ],
+  "ruleset": "両方",
+  "description": "自分の 守る 側の コートで ボールを 持ったら、8秒 以内に 相手側の コートへ 運ばないと いけない 決まりです。FIBA も NBA も 8秒です。"
+ },
+ {
+  "id": "rl-sec5",
+  "name": "5秒ルール",
+  "reading": "ごびょうるーる",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "5️⃣",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-throwin",
+   "rl-sec8"
+  ],
+  "ruleset": "両方",
+  "description": "スローインは 5秒 以内に 投げる 決まりです。FIBA では さらに、1メートル 以内で 守られて ボールを 持った 選手も 5秒 以内に パス・シュート・ドリブルを します。"
+ },
+ {
+  "id": "rl-sec14",
+  "name": "14秒リセット",
+  "reading": "じゅうよんびょうりせっと",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "rule:shotclock",
+  "relatedTerms": [
+   "rl-sec24",
+   "rl-shotclock"
+  ],
+  "ruleset": "両方",
+  "description": "オフェンスリバウンドを とった ときなど、フロントコートで 続けて 攻める ときに ショットクロックを 14秒に もどす 決まりです。FIBA も NBA も 同じです。"
+ },
+ {
+  "id": "rl-backcourt",
+  "name": "バックコートバイオレーション",
+  "reading": "ばっくこーとばいおれーしょん",
+  "journey": "rule",
+  "category": "バイオレーション",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-sec8",
+   "rl-frontcourt"
+  ],
+  "ruleset": "両方",
+  "description": "いちど 相手側の コートに 運んだ ボールを、自分の 守る 側の コートへ もどして しまう 反則です。センターラインを こえたら、ボールを 後ろへは もどせません。"
+ },
+ {
+  "id": "rl-goaltending",
+  "name": "ゴールテンディング",
+  "reading": "ごーるてんでぃんぐ",
+  "journey": "rule",
+  "category": "バイオレーション",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-cylinder",
+   "rl-backboard"
+  ],
+  "ruleset": "両方",
+  "description": "リングへ 落ちて くる とちゅうの シュートを さわって 止める 反則です。守る 側が すると 点が みとめられます。FIBA は リングに 当たった あとの ボールに ふれて よいなど、くわしい 決まりが NBA と ちがいます。"
+ },
+ {
+  "id": "rl-teamfoul",
+  "name": "チームファウル",
+  "reading": "ちーむふぁうる",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-bonus",
+   "rl-personal"
+  ],
+  "ruleset": "両方",
+  "description": "チーム みんなの ファウルの 回数です。1クォーターに 4回を こえると、5回目からは シュートで ない ときの ファウルでも 相手に フリースローが あたえられます。"
+ },
+ {
+  "id": "rl-paint",
+  "name": "ペイントエリア",
+  "reading": "ぺいんとえりあ",
+  "journey": "rule",
+  "category": "コートと ライン",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-sec3",
+   "rl-nocharge"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "ぺいんとえりあ",
+   "せいげんくいき",
+   "ぺいんと"
+  ],
+  "description": "ゴールの 下に ある 長方形の 場所です。色が ぬられる ことが 多いので こう よびます。正式には 制限区域と いい、攻める 選手は 3秒より 長く いられません。"
+ },
+ {
+  "id": "rl-halftime",
+  "name": "ハーフタイム",
+  "reading": "はーふたいむ",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "☕",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-quarter",
+   "rl-gameclock"
+  ],
+  "ruleset": "両方",
+  "description": "第2クォーターと 第3クォーターの あいだの 休けいです。FIBA も NBA も 15分です。ロッカールームで 前半を ふりかえり、後半の 作戦を 立てます。"
+ },
+ {
+  "id": "rl-substitution",
+  "name": "交代",
+  "reading": "こうたい",
+  "journey": "rule",
+  "category": "選手と 交代",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "rule:player",
+  "relatedTerms": [
+   "rl-foulout",
+   "rl-tableofficials"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "こうたい",
+   "めんばーこうたい"
+  ],
+  "description": "コートの 選手と ベンチの 選手が 入れかわる ことです。何回でも できます。FIBA では 試合に 出られるのは 1チーム 12人までで、コートに 立つのは 5人です。"
+ },
+ {
+  "id": "rl-heldball",
+  "name": "ヘルドボール",
+  "reading": "へるどぼーる",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤼",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-altposs",
+   "rl-jumpball"
+  ],
+  "ruleset": "両方",
+  "description": "両チームの 選手が ボールを しっかり つかみ合って、どちらの ものか 決まらない ことです。FIBA は 交代で ボールを もらい、NBA は ジャンプボールで 決めます。"
+ },
+ {
+  "id": "rl-holding",
+  "name": "ホールディング",
+  "reading": "ほーるでぃんぐ",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🫳",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-pushing",
+   "rl-blocking"
+  ],
+  "ruleset": "両方",
+  "description": "相手の 体や ユニフォームを つかんで、自由に 動けなく する ファウルです。手だけで なく 体の どこで 引きとめても ホールディングに なります。"
+ },
+ {
+  "id": "rl-illegalscreen",
+  "name": "イリーガルスクリーン",
+  "reading": "いりーがるすくりーん",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-blocking",
+   "rl-holding"
+  ],
+  "ruleset": "両方",
+  "description": "味方の ために 壁に なる スクリーンを、動きながら したり 体を ぶつけたり して 行う ファウルです。スクリーンは 止まって 立つのが 決まりです。"
+ },
+ {
+  "id": "rl-flagrant",
+  "name": "フレグラントファウル",
+  "reading": "ふれぐらんとふぁうる",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-disruptive",
+   "rl-unsportsmanlike"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "ふれぐらんとふぁうる",
+   "ふれいぐらんとふぁうる"
+  ],
+  "description": "あぶない・強すぎる ファウルです。NBA では 前から ある よび名で、FIBA も 2026年版から 使います。フリースローと 相手ボールに なり、2回で 退場です。NBA の ペナルティ2は 1回で 退場です。"
+ },
+ {
+  "id": "rl-instantreplay",
+  "name": "インスタントリプレー",
+  "reading": "いんすたんとりぷれー",
+  "journey": "rule",
+  "category": "審判と 係",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📺",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-hcchallenge",
+   "rl-coachchallenge"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "いんすたんとりぷれー",
+   "びでおはんてい"
+  ],
+  "description": "むずかしい 場面を 審判が ビデオで 見なおして 判定を 決める しくみです。FIBA の 2026年版では、ファウルの あとの ゴールテンディングも 見なおせる ように なりました。"
+ },
+ {
+  "id": "rl-freethrowline",
+  "name": "フリースローライン",
+  "reading": "ふりーすろーらいん",
+  "journey": "rule",
+  "category": "コートと ライン",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "rule:freethrow",
+  "relatedTerms": [
+   "rl-twoshot",
+   "rl-paint"
+  ],
+  "ruleset": "両方",
+  "description": "フリースローを 打つ ときに 立つ 線です。この 線を ふまずに 打ちます。FIBA は エンドラインから 5.80メートル、NBA は バックボードから 15フィート(約4.57メートル)の ところに あります。"
+ },
+ {
+  "id": "rl-centercircle",
+  "name": "センターサークル",
+  "reading": "せんたーさーくる",
+  "journey": "rule",
+  "category": "コートと ライン",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-jumpball",
+   "rl-sec8"
+  ],
+  "ruleset": "両方",
+  "description": "コートの まん中に ある 円です。試合の はじめの ジャンプボールは ここで 行います。円の まん中を 通る 線が センターラインです。"
+ },
+ {
+  "id": "rl-endline",
+  "name": "エンドライン",
+  "reading": "えんどらいん",
+  "journey": "rule",
+  "category": "コートと ライン",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-sideline",
+   "rl-outofbounds"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "えんどらいん",
+   "べーすらいん"
+  ],
+  "description": "コートの 短い ほうの はしの 線で、ゴールの 後ろに あります。NBA では ベースラインとも よびます。点を 決められた あとは ここから スローインします。"
+ },
+ {
+  "id": "rl-sideline",
+  "name": "サイドライン",
+  "reading": "さいどらいん",
+  "journey": "rule",
+  "category": "コートと ライン",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-endline",
+   "rl-outofbounds"
+  ],
+  "ruleset": "両方",
+  "description": "コートの 長い ほうの はしの 線です。コートは FIBA が 28メートル×15メートル、NBA が 94フィート×50フィート(約28.65メートル×15.24メートル)です。"
+ },
+ {
+  "id": "rl-backboard",
+  "name": "バックボード",
+  "reading": "ばっくぼーど",
+  "journey": "rule",
+  "category": "ボールと 用具",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "rule:equip",
+  "relatedTerms": [
+   "rl-goaltending",
+   "rl-paint"
+  ],
+  "ruleset": "両方",
+  "description": "リングを 取りつけて ある 板です。ボールを 当てて 入れる バンクショットにも 使います。すきとおった 板が 多く、後ろの 観客からも 見えます。"
+ },
+ {
+  "id": "rl-defthree",
+  "name": "ディフェンシブ・スリーセカンド",
+  "reading": "でぃふぇんしぶすりーせかんど",
+  "journey": "rule",
+  "category": "FIBA と NBA",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-sec3",
+   "rl-fibarules"
+  ],
+  "ruleset": "NBA",
+  "acceptedReadings": [
+   "でぃふぇんしぶすりーせかんど",
+   "でぃふぇんすさんびょう"
+  ],
+  "description": "守る 選手が、だれも 守らずに ペイントエリアに 3秒より 長く いる 反則です。NBA だけの 決まりで、FIBA には ありません。相手に フリースローが 1本 あたえられます。"
+ },
+ {
+  "id": "rl-fibarules",
+  "name": "FIBAルール",
+  "reading": "ふぃばるーる",
+  "journey": "rule",
+  "category": "FIBA と NBA",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-nbarules",
+   "rl-quarter"
+  ],
+  "ruleset": "FIBA",
+  "acceptedReadings": [
+   "ふぃばるーる",
+   "こくさいるーる"
+  ],
+  "description": "国際バスケットボール連盟 FIBA の 競技規則です。オリンピック・ワールドカップ・B リーグで 使い、日本の 部活や ミニバスの 決まりも これが もとです。いまは 2026年10月からの 2026年版です。"
+ },
+ {
+  "id": "rl-nbarules",
+  "name": "NBAルール",
+  "reading": "えぬびーえーるーる",
+  "journey": "rule",
+  "category": "FIBA と NBA",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🗽",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-fibarules",
+   "rl-defthree"
+  ],
+  "ruleset": "NBA",
+  "description": "アメリカの プロリーグ NBA の 決まりです。1クォーター 12分・6回で ファウルアウト・遠い 3ポイントライン・守りの 3秒など、FIBA と ちがう ところが あります。"
+ },
+ {
+  "id": "rl-point21",
+  "name": "21点先取",
+  "reading": "にじゅういってんせんしゅ",
+  "journey": "rule",
+  "category": "3x3",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "rule:threex3",
+  "relatedTerms": [
+   "rl-clock12",
+   "rl-check"
+  ],
+  "ruleset": "FIBA",
+  "description": "3x3 の 試合は 10分 戦うか、先に 21点を とった チームが その場で 勝ちます。ふつうの 試合と ちがい、時間が のこって いても 終わります。"
+ },
+ {
+  "id": "rl-clock12",
+  "name": "12秒ショットクロック",
+  "reading": "じゅうにびょうしょっとくろっく",
+  "journey": "rule",
+  "category": "3x3",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "rule:threex3",
+  "relatedTerms": [
+   "rl-point21",
+   "rl-clear"
+  ],
+  "ruleset": "FIBA",
+  "description": "3x3 では 12秒 以内に シュートを 打つ 決まりです。5人制の 24秒の 半分なので、とても スピードの ある 試合に なります。"
+ },
+ {
+  "id": "rl-kickball",
+  "name": "キックボール",
+  "reading": "きっくぼーる",
+  "journey": "rule",
+  "category": "バイオレーション",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-violation",
+   "rl-travel"
+  ],
+  "ruleset": "両方",
+  "description": "足で わざと ボールを けったり 止めたり する 反則です。たまたま 足に 当たった ときは 反則に なりません。こぶしで たたくのも 反則です。"
+ },
+ {
+  "id": "rl-altposs",
+  "name": "オルタネイティング・ポゼッション",
+  "reading": "おるたねいてぃんぐぽぜっしょん",
+  "journey": "rule",
+  "category": "FIBA と NBA",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-heldball",
+   "rl-jumpball"
+  ],
+  "ruleset": "FIBA",
+  "acceptedReadings": [
+   "おるたねいてぃんぐぽぜっしょん",
+   "ぽぜっしょんあろー"
+  ],
+  "description": "ヘルドボールなどの とき、両チームが 交代で ボールを もらう FIBA の しくみです。次は どちらの 番かを 矢印で しめします。NBA は その たびに ジャンプボールを します。"
+ },
+ {
+  "id": "rl-nocharge",
+  "name": "ノーチャージセミサークル",
+  "reading": "のーちゃーじせみさーくる",
+  "journey": "rule",
+  "category": "コートと ライン",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-charging",
+   "rl-restricted"
+  ],
+  "ruleset": "FIBA",
+  "description": "ゴールの 真下から 半径 1.30メートルの 半円です。この 中で 守る 選手が ぶつかられても、チャージングには なりません。NBA では リストリクテッドエリアと よびます。"
+ },
+ {
+  "id": "rl-restricted",
+  "name": "リストリクテッドエリア",
+  "reading": "りすとりくてっどえりあ",
+  "journey": "rule",
+  "category": "FIBA と NBA",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔘",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-nocharge",
+   "rl-charging"
+  ],
+  "ruleset": "NBA",
+  "description": "NBA の ゴール下の 半円で、ゴールの 中心から 4フィートです。この 中に 立つ 守備の 選手は チャージングを とれません。FIBA の ノーチャージセミサークルに あたります。"
+ },
+ {
+  "id": "rl-disruptive",
+  "name": "ディスラプティブファウル",
+  "reading": "でぃすらぷてぃぶふぁうる",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-flagrant",
+   "rl-unsportsmanlike"
+  ],
+  "ruleset": "FIBA",
+  "description": "速攻を 止めるなど、試合の 流れを こわす ファウルです。FIBA の 2026年版で できました。フリースローと 相手ボールに なります。5回の ファウルには 数えますが、2回で 退場に なる 数には 入りません。"
+ },
+ {
+  "id": "rl-unsportsmanlike",
+  "name": "アンスポーツマンライクファウル",
+  "reading": "あんすぽーつまんらいくふぁうる",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-disruptive",
+   "rl-flagrant"
+  ],
+  "ruleset": "FIBA",
+  "acceptedReadings": [
+   "あんすぽーつまんらいくふぁうる",
+   "あんすぽ"
+  ],
+  "description": "2024年版までの FIBA の よび名で、スポーツマンらしく ない 悪質な ファウルです。2026年版で ディスラプティブファウルと フレグラントファウルに 分かれ、この 名前は なくなりました。"
+ },
+ {
+  "id": "rl-disqualifying",
+  "name": "ディスクォリファイングファウル",
+  "reading": "でぃすくぉりふぁいんぐふぁうる",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-flagrant",
+   "rl-technical"
+  ],
+  "ruleset": "FIBA",
+  "description": "とても スポーツマンらしく ない ふるまいに 出される、FIBA の いちばん 重い ファウルです。1回で すぐに 退場に なります。コーチや ベンチの 人にも 出されます。"
+ },
+ {
+  "id": "rl-zerostep",
+  "name": "ゼロステップ",
+  "reading": "ぜろすてっぷ",
+  "journey": "rule",
+  "category": "バイオレーション",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👟",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-travel",
+   "rl-shootingfoul"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "ぜろすてっぷ",
+   "ぎゃざーすてっぷ"
+  ],
+  "description": "ドリブルを 終えて ボールを つかむ ときの 足は ステップに 数えない、という 考えかたの よび名です。FIBA も NBA も 同じで、NBA は「ギャザー」と よび、そこから 2ステップまで 動けます。"
+ },
+ {
+  "id": "rl-cylinder",
+  "name": "シリンダールール",
+  "reading": "しりんだーるーる",
+  "journey": "rule",
+  "category": "FIBA と NBA",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🥫",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-goaltending",
+   "rl-restricted"
+  ],
+  "ruleset": "NBA",
+  "description": "NBA では リングの 真上に 見えない 筒(シリンダー)が あると 考え、その 中の ボールに さわっては いけません。FIBA は リングに 当たった あとの ボールに ふれて よく、ここが ちがいます。"
+ },
+ {
+  "id": "rl-bonus",
+  "name": "ボーナス",
+  "reading": "ぼーなす",
+  "journey": "rule",
+  "category": "フリースロー",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "rule:freethrow",
+  "relatedTerms": [
+   "rl-teamfoul",
+   "rl-overtime"
+  ],
+  "ruleset": "NBA",
+  "acceptedReadings": [
+   "ぼーなす",
+   "ぺなるてぃしちゅえーしょん"
+  ],
+  "description": "NBA で チームファウルが 1クォーター 4回を こえ、相手に フリースローが あたえられる 状態の よび名です。のこり2分で まだ 4回に とどいて いなければ、1回目は フリースローに なりません。"
+ },
+ {
+  "id": "rl-hcchallenge",
+  "name": "ヘッドコーチチャレンジ",
+  "reading": "へっどこーちちゃれんじ",
+  "journey": "rule",
+  "category": "タイムアウトと チャレンジ",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "rule:timeout",
+  "relatedTerms": [
+   "rl-coachchallenge",
+   "rl-instantreplay"
+  ],
+  "ruleset": "FIBA",
+  "acceptedReadings": [
+   "へっどこーちちゃれんじ",
+   "へっどこーちずちゃれんじ"
+  ],
+  "description": "FIBA の ヘッドコーチが 判定の ビデオ確認を もとめる しくみです。ビデオ判定を 使う 試合で、1試合に 1回 使えます。"
+ },
+ {
+  "id": "rl-coachchallenge",
+  "name": "コーチズ・チャレンジ",
+  "reading": "こーちずちゃれんじ",
+  "journey": "rule",
+  "category": "タイムアウトと チャレンジ",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎌",
+  "mapNode": "rule:timeout",
+  "relatedTerms": [
+   "rl-hcchallenge",
+   "rl-instantreplay"
+  ],
+  "ruleset": "NBA",
+  "acceptedReadings": [
+   "こーちずちゃれんじ",
+   "こーちちゃれんじ"
+  ],
+  "description": "NBA の コーチが 判定の ビデオ確認を もとめる しくみです。1試合に 1回 使え、判定が ひっくり返って 成功すると もう1回 使えます。"
+ },
+ {
+  "id": "rl-crewchief",
+  "name": "クルーチーフ",
+  "reading": "くるーちーふ",
+  "journey": "rule",
+  "category": "審判と 係",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎖️",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-umpire",
+   "rl-referee"
+  ],
+  "ruleset": "両方",
+  "description": "審判の チームの リーダーです。審判の 意見が 分かれた ときなど、大事な ことを 最後に 決めます。FIBA にも NBA にも います。"
+ },
+ {
+  "id": "rl-umpire",
+  "name": "アンパイア",
+  "reading": "あんぱいあ",
+  "journey": "rule",
+  "category": "審判と 係",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧢",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-crewchief",
+   "rl-referee"
+  ],
+  "ruleset": "両方",
+  "description": "クルーチーフと いっしょに 試合を さばく 審判です。FIBA は クルーチーフと アンパイア 1〜2人、NBA は クルーチーフ・レフェリー・アンパイアの 3人です。"
+ },
+ {
+  "id": "rl-tableofficials",
+  "name": "テーブルオフィシャルズ",
+  "reading": "てーぶるおふぃしゃるず",
+  "journey": "rule",
+  "category": "審判と 係",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-gameclock",
+   "rl-substitution"
+  ],
+  "ruleset": "FIBA",
+  "acceptedReadings": [
+   "てーぶるおふぃしゃるず",
+   "てーぶるおふぃしゃる"
+  ],
+  "description": "コートの 横の 机で 試合を ささえる 係の 人たちです。スコアラー・タイマー・ショットクロック係などが、点数や ファウルの 記録、時計の 操作を します。"
+ },
+ {
+  "id": "rl-flopping",
+  "name": "フロッピング",
+  "reading": "ふろっぴんぐ",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎭",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-technical",
+   "rl-charging"
+  ],
+  "ruleset": "両方",
+  "description": "ぶつかられた ように 大げさに たおれて、ファウルに 見せかける 反則の 名前です。NBA では テクニカルファウル、FIBA でも カテゴリ1の テクニカルファウルに なります。"
+ },
+ {
+  "id": "rl-illegalhands",
+  "name": "イリーガルユースオブハンズ",
+  "reading": "いりーがるゆーすおぶはんず",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👋",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-holding",
+   "rl-pushing"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "いりーがるゆーすおぶはんず",
+   "はっきんぐ"
+  ],
+  "description": "手や うでで 相手を たたいたり おさえたり する ファウルです。シュートを 打つ うでを たたく ことも ふくみます。日本では ハッキングとも よばれます。"
+ },
+ {
+  "id": "rl-check",
+  "name": "チェックボール",
+  "reading": "ちぇっくぼーる",
+  "journey": "rule",
+  "category": "3x3",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "rule:threex3",
+  "relatedTerms": [
+   "rl-clear",
+   "rl-point21"
+  ],
+  "ruleset": "FIBA",
+  "description": "3x3 で、試合を はじめる ときや 止まった あとに、アーチの 後ろの まん中で 守る 選手と 攻める 選手が ボールを わたし合う ことです。"
+ },
+ {
+  "id": "rl-ot2",
+  "name": "2点先取の延長",
+  "reading": "にてんせんしゅのえんちょう",
+  "journey": "rule",
+  "category": "3x3",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "rule:threex3",
+  "relatedTerms": [
+   "rl-point21",
+   "rl-check"
+  ],
+  "ruleset": "FIBA",
+  "description": "3x3 で 同点の まま 時間が 終わった ときの 延長です。先に 2点を とった チームが 勝ちます。3x3 の 1チームは コートの 3人と 交代 1人の 4人までです。"
+ },
+ {
+  "id": "rl-frontcourt",
+  "name": "フロントコート",
+  "reading": "ふろんとこーと",
+  "journey": "rule",
+  "category": "コートと ライン",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏟️",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-backcourt",
+   "rl-sec8"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "ふろんとこーと",
+   "ばっくこーと"
+  ],
+  "description": "相手の ゴールが ある 側の 半分の コートです。自分の ゴールが ある 側は バックコートと いいます。8秒 以内に フロントコートへ ボールを 運びます。"
+ },
+ {
+  "id": "rl-gameclock",
+  "name": "ゲームクロック",
+  "reading": "げーむくろっく",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🕰️",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-shotclock",
+   "rl-quarter"
+  ],
+  "ruleset": "両方",
+  "description": "試合の のこり時間を しめす 時計です。審判の 笛で 止まります。ボールが 生きて いる ときだけ 進むので、試合は 時計の 時間より ずっと 長く かかります。"
+ },
+ {
+  "id": "rl-pushing",
+  "name": "プッシング",
+  "reading": "ぷっしんぐ",
+  "journey": "rule",
+  "category": "ファウル",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🫸",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-holding",
+   "rl-illegalhands"
+  ],
+  "ruleset": "両方",
+  "description": "手や 体で 相手を むりに おしのけたり、動かそうと したり する ファウルです。ボールを 持って いる 相手でも 持って いない 相手でも 同じです。"
+ },
+ {
+  "id": "rl-carrying",
+  "name": "キャリング",
+  "reading": "きゃりんぐ",
+  "journey": "rule",
+  "category": "バイオレーション",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "rule:violation",
+  "relatedTerms": [
+   "rl-doubledribble",
+   "rl-travel"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "きゃりんぐ",
+   "ぱーみんぐ"
+  ],
+  "description": "ドリブルの とき ボールの 下に 手を 入れて 持ち運んだり、止めて から また つき直したり する 反則です。アメリカでは パーミングとも よびます。"
+ },
+ {
+  "id": "rl-shootingfoul",
+  "name": "シューティングファウル",
+  "reading": "しゅーてぃんぐふぁうる",
+  "journey": "rule",
+  "category": "フリースロー",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rule:freethrow",
+  "relatedTerms": [
+   "rl-basketcount",
+   "rl-twoshot"
+  ],
+  "ruleset": "両方",
+  "description": "シュートを 打とうと して いる 選手への ファウルです。外れたら 2本か 3本の フリースローです。FIBA 2026年版では バックコートからの シュートは ふつう シュートの 動作と みなしません。"
+ },
+ {
+  "id": "rl-twoshot",
+  "name": "ツーショット",
+  "reading": "つーしょっと",
+  "journey": "rule",
+  "category": "フリースロー",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "rule:freethrow",
+  "relatedTerms": [
+   "rl-shootingfoul",
+   "rl-teamfoul"
+  ],
+  "ruleset": "両方",
+  "acceptedReadings": [
+   "つーしょっと",
+   "つーすろー"
+  ],
+  "description": "フリースローを 2本 打つ ことです。2点の シュートを 打つ ときに ファウルされて 外れた ときや、チームファウルが 4回を こえた あとの ファウルで あたえられます。"
+ },
+ {
+  "id": "rl-clear",
+  "name": "クリア",
+  "reading": "くりあ",
+  "journey": "rule",
+  "category": "3x3",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↗️",
+  "mapNode": "rule:threex3",
+  "relatedTerms": [
+   "rl-check",
+   "rl-clock12"
+  ],
+  "ruleset": "FIBA",
+  "acceptedReadings": [
+   "くりあ",
+   "くりありんぐ"
+  ],
+  "description": "3x3 で 守りの チームが リバウンドや スティールで ボールを とったら、まず アーチの 外へ 運ぶ 決まりです。そのまま ゴールへ 入れても 点に なりません。"
+ }
+]

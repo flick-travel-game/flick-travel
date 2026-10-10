@@ -331,8 +331,8 @@ GAMES = {
     #   ⚠️⚠️ いまの 所属チーム・年俸・トレード・いまの 順位・通算記録は 書かない(変わる)。人を けなさない・ケガ・乱闘・差別・賭け・商品の 名前は 入れない(決まりは tools/basket/PROMPT.md)。ルールは FIBA と NBA の 版を 確かめた(毎年 10月に 見なおす)
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/basket/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
     #   届いたら tools/basket/art/square-src.png → tools/icon_from_square.py basket(iconv を +1)/ title-src.png → tools/title_from_art.py basket(logo を True・art.word を 実寸に)/ basket/hero.webp(hero を True)
-    "basket": dict(name="フリックワールドバスケットボール", modes="BASKET", kinds=set(), color="#e8590c", hero=True, logo=False,
-                  art=dict(word=(900, 184), hero=(1536, 1024), alt="フリックワールドバスケットボール", iconv=1, wordv=2),
+    "basket": dict(name="フリックワールドバスケットボール", modes="BASKET", kinds=set(), color="#e8590c", hero=True, logo=True,
+                  art=dict(word=(900, 285), hero=(1536, 1024), alt="フリックワールドバスケットボール", iconv=2, wordv=3),
                   lead="バスケの きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・FIBA(国際ルール)か NBA の ルールか・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。バスケが すきな 小学生の ことばから はじめて、ミニバスの コーチ、解説者が 使う 戦術の ことばまで。はじめの ゴールは 桃の かご、ルールは 国際ルールと NBA で ちがう、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは FIBA と NBA の いまの 版で 確かめたよ(毎年 変わる ことが あるよ)。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の バスケが つながって 見えてくるよ。FIBA・NBA・各リーグ・各チーム・各選手とは 関係ありません。"),

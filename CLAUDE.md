@@ -1014,11 +1014,13 @@
   すとらいく・あうと・ふぉあぼーる が るーるの 箱(ゲームでは きほん)・だぶるぷれー が せんじゅつの 箱(ゲームでは わざ)/ 4択が「3すとらいくで どうなる?」の 形。旅ごとに ゲームに ある 読みを 4つずつ 指定して 作りなおして もらった。
   2回目は 札 36こ・4択(さんしん)・つながる ことば(とりぷるぷれー・べーすかばー・ごろ)が ぜんぶ ゲームに ある 読み。スター・伝説の 選手は 旗と 王冠だけ(顔なし)。
   のこった 2か所は **絵の 中で 直した**(`tools/baseball/fix_text.py`): 「きゅーばだいひょう」の 旗が **プエルトリコの 旗** → キューバの 旗を 描いた /「とりぷるぷれー」の ぷ が ぶ に 見えた → 書きなおした(⚠️ 太く すると ゜が つぶれる)。もとの 絵は 入れものに 入れていない
-- アイコンと 題名は まだ 仮(`tools/baseball/placeholder_icon.py`。芝の 地に 野球の ボール。`logo=False`)。
+- **アイコンと 題名も 入れた**(2026-10-10)。アイコンは けいくんの 四角い 絵(1254px)を 切らずに そのまま(`iconv` = 2)。⚠️ 四角い 絵の「きゅーばだいひょう」の 旗も プエルトリコだったので
+  `tools/baseball/fix_square.py` で キューバの 旗に 描きかえてから `tools/baseball/art/square-src.png` に した。札の「きゅーばにいひょう」の 字の まちがいは アイコンの 大きさでは 読めないので そのまま。
+  題名は ChatGPT の 切りぬき(`tools/baseball/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py baseball` → `baseball/logo-word.webp` 900×315。`logo=True`・`wordv` = 3)。2行の「フリックワールド / ベースボール」14字を 読んで 確かめた。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
   届いたら 四角い 絵 → `tools/baseball/art/square-src.png` → `python3 tools/icon_from_square.py baseball`(`iconv` +1)/ 題名の 透明 PNG → `tools/baseball/art/title-src.png` → `python3 tools/title_from_art.py baseball`(`logo=True`・`art.word` を 実寸)/ `baseball/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **実在の 選手の 顔・球団の ロゴ・大会の ロゴ・スポンサー名・グラブや バットの ロゴ**を 描かせない。届いたら まず 字を 切り出して 読む(「フリックワールドベース」「ワールドベースボール」に なりやすい)
 - ⭐ **毎年の 見直しの 予約が ある**(`trig_01AKR12rWrHnBXPVgi5JnjvB`。毎年 2月15日 朝8時45分)。⚠️ **ファイル名 `terms-rule.json` / `terms-star.json` / `terms-cup.json` / `meta.json` の `rulesVersion` を 変えない**
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king #370)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king #370)。販売ページ `HOME_GAMES`(教科を ひろげる の 章、バスケットボールの となり)と 規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-10 に 足した
 - 確かめかた: `node tools/play-all.mjs baseball/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs baseball/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック血液型(`ketsueki/`。けいくん 2026-10-04「血液型の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。血液型の特徴をめちゃくちゃ詳しくお願いします」→ 同じ日「科学的根拠が無いということ? やめた方がいいかなぁ?」→ 3つの 案から **「このまま」**。まとめは `docs/フリック血液型-はじめかた.md`)

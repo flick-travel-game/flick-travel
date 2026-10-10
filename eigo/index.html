@@ -552,15 +552,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=f561d0b8"></script>
-<script src="eigo.js?v=94f2c0a9"></script>
+<script src="terms.js?v=70265622"></script>
+<script src="eigo.js?v=52e3f6f9"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
    前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"eigo", name:"フリック英語", modes:(typeof EIGO === "object" ? EIGO.modes : []), assets:"../", logo:true, hero:true, dir:"eigo/", lead:"不規則動詞・時制・受動態・不定詞と動名詞・分詞・関係詞・比較・仮定法・熟語を、例文を フリックで 打ち写して おぼえよう。打ち終わると 日本語訳と 文法の ポイントが 出て、🔊で 発音も 聞けるよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。", how:"表示された 英語の 日本語訳を、ひらがなで 打ってね(打つ ひらがなは 画面に 出るよ)。上の「⌨️ 打ちかた」を ABC に すると、英文を そのまま 打つ ことも できるよ(大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ)。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。例文は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。ABC で 打つ ときは、iPhone の 日本語キーボードを「ABC」に すれば フリックで 英語が 打てるよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。" };
+const GAME = { id:"eigo", name:"フリック英語", modes:(typeof EIGO === "object" ? EIGO.modes : []), assets:"../", logo:true, hero:true, dir:"eigo/", lead:"不規則動詞・時制・受動態・不定詞と動名詞・分詞・関係詞・比較・仮定法・熟語を、例文を フリックで 打ち写して おぼえよう。打ち終わると 日本語訳と 文法の ポイントが 出て、🔊で 発音も 聞けるよ。中学の 基本から はじめて、高校受験・大学受験の 範囲の めやすまで。", how:"表示された 英語の 読みを、ひらがなで 打ってね(I → あい。打つ ひらがなは 画面に 出るよ)。上の「⌨️ 打ちかた」を ABC に すると、英文を そのまま 打つ ことも できるよ(大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ)。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。例文は 本物の 入試問題では ないので、受験の 勉強には 学校の 教科書や 問題集も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。ABC で 打つ ときは、iPhone の 日本語キーボードを「ABC」に すれば フリックで 英語が 打てるよ。大学入試センター・各都道府県の 教育委員会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

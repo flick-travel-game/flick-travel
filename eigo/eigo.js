@@ -140,12 +140,13 @@ const EIGO = (() => {
   function makeQs(m, lv){ unlock(); pre = discovered(); return levels[m][lv].slice(); }  // unlock = 旅を はじめる タップの 中で iPhone の 音を 出せるように
   /* 読みかたが いくつか ある ことば(SQL = えすきゅーえる / しーくえる)。打った字に 合う 読みへ 目あてを 合わせる */
   function retarget(q, v){
-    const all = [q.r].concat(q.al || []);
-    if(all.length < 2 || !v) return q.r;
+    if(!inKana) return q.r;
+    const all = [q.kr].concat(q.kal || []);
+    if(all.length < 2 || !v) return q.kr;
     if(all.includes(v)) return v;
     const pre2 = all.filter(x => x.startsWith(v));
-    if(pre2.length) return pre2.includes(q.r) ? q.r : pre2[0];
-    let best = q.r, bl = -1;
+    if(pre2.length) return pre2.includes(q.kr) ? q.kr : pre2[0];
+    let best = q.kr, bl = -1;
     for(const x of all){ let i = 0; while(i < x.length && i < v.length && x[i] === v[i]) i++; if(i > bl){ bl = i; best = x; } }
     return best;
   }
@@ -218,7 +219,7 @@ const EIGO = (() => {
     if(inKana){
       h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot eg-en" lang="en">' + esc(q.n) + '</p>' + tag +
            '<small class="ai-cat">' + esc(q.c0) + " ・ " + LVN[q.dv].icon + " " + esc(LVN[q.dv].name) + '</small>' +
-           '<small class="ai-alt">🇯🇵 この 英語の 日本語訳を ひらがなで 打とう</small></div></div>';
+           '<small class="ai-alt">🔤 英語の 読みを ひらがなで 打とう(訳は 打ち終わると 出るよ)</small></div></div>';
       return h;
     }
     h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot eg-gram">' + esc(q.c0) + '</p>' + tag + '<small class="ai-cat">' + q.jr.icon + " " + esc(q.jr.name) + " ・ " + LVN[q.dv].icon + " " + esc(LVN[q.dv].name) + '</small>' +
@@ -265,7 +266,7 @@ const EIGO = (() => {
       return '<li><span class="rn">' + J.icon + " " + J.name + (got >= all.length ? " 🏅" : "") + '</span><span class="rc"><b>' + got + '</b> / ' + all.length + '</span><i style="--w:' + (got / all.length * 100).toFixed(1) + '%;--c:' + J.color + '"></i></li>'; }).join("");
     $("#kabu-panel").innerHTML = '<section class="ai-panel">' +
       '<div class="eg-input" role="group" aria-label="打ちかた"><span>⌨️ 打ちかた</span>' +
-        '<button type="button" data-eg-input="kana"' + (inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>あ ひらがな<small>日本語訳を 打つ</small></button>' +
+        '<button type="button" data-eg-input="kana"' + (inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>あ ひらがな<small>英語の 読みを 打つ</small></button>' +
         '<button type="button" data-eg-input="abc"' + (!inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>A ABC<small>英文を 打つ</small></button></div>' +
       (inKana ? "" : '<p class="ai-small ai-muted">ABC で 打った タイムは ランキングに のりません(ひらがなと 打つ 字が ちがうため)</p>') +
       '<p class="ai-total">🧭 合計 <b>' + fmt(n) + '</b> / ' + fmt(TOTAL) + 'こ 発見</p><div class="ai-bar" style="--w:' + (n / TOTAL * 100).toFixed(1) + '%"></div>' +
@@ -567,6 +568,6 @@ body.ai-lock{overflow:hidden}
 
   // noRank: レベル61より 上(かずともの 表は 1〜60)は 送らない
   return { kind:"eigoterm", modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
-           card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), norm:normIn, tgtHtml, nameHtml, say, bestTag:() => inKana ? "-kana" : "",
+           card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), norm:normIn, retarget, tgtHtml, nameHtml, say, bestTag:() => inKana ? "-kana" : "",
            noRank:(m, lv) => !RANK_READY || lv >= 60 || !inKana, noBoard:!RANK_READY, openZukan };
 })();

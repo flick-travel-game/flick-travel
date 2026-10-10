@@ -175,7 +175,8 @@ rep("""    const hid = s.set.some(q => q.hide);
     return { name:"Lv." + (i + 1) + " " + L.icon + L.name + (hid ? " 🙈" : ""), sub:S.icon + " " + S.name + "・10語" + (hid ? "・よみを かくす" : ""), short:"Lv." + (i + 1) };""",
     """    return { name:"Lv." + (i + 1) + " " + L.icon + L.name, sub:S.icon + " " + S.name + "・10問", short:"Lv." + (i + 1) };""")
 # ── ひらがなで 打つ(はじめ)/ ABC で 打つ の 切りかえ(けいくん 2026-10-10「デフォルトは ひらがなで打つ / アルファベットに 切り替えも 出来るように」→「日本語訳をひらがなで」) ──
-#   ひらがな = 英文を 見て、日本語訳の 読み(jaReading → kr)を 打つ。ABC = いままでどおり 英文を 打つ。
+#   ひらがな = 英文を 見て、英語の 読みを ひらがなで(reading → kr。I → あい。フリック英会話と 同じ 書きかた)打つ。ABC = 英文を 打つ。
+#   ⚠️ はじめ「日本語訳を ひらがなで」に したが、けいくん 同日「日本はジャパンが答えじゃないの? これは違う。英語の読みをひらがなで」で 作りなおした
 #   えらんだ ほうは 端末に おぼえる(flick-eigo-input)。⚠️ ランキングに 送るのは ひらがなの ときだけ(打つ 字が ちがうと タイムを くらべられないため)
 rep('const norm = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");',
     """const normEn = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -211,7 +212,7 @@ rep("""    h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p
     """    if(inKana){
       h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot eg-en" lang="en">' + esc(q.n) + '</p>' + tag +
            '<small class="ai-cat">' + esc(q.c0) + " ・ " + LVN[q.dv].icon + " " + esc(LVN[q.dv].name) + '</small>' +
-           '<small class="ai-alt">🇯🇵 この 英語の 日本語訳を ひらがなで 打とう</small></div></div>';
+           '<small class="ai-alt">🔤 英語の 読みを ひらがなで 打とう(訳は 打ち終わると 出るよ)</small></div></div>';
       return h;
     }
     h += '<div class="ai-q"><span class="ai-ic">' + q.e + '</span><div><p class="spot eg-gram">' + esc(q.c0) + '</p>' + tag +""")
@@ -220,7 +221,7 @@ rep('k:"eigoterm", t:o.n', 'k:"eigoterm", t:o.n, rEn:o.r')
 # ホーム: 答えかたの 切りかえ
 rep("""    $("#kabu-panel").innerHTML = '<section class="ai-panel">' +""", """    $("#kabu-panel").innerHTML = '<section class="ai-panel">' +
       '<div class="eg-input" role="group" aria-label="打ちかた"><span>⌨️ 打ちかた</span>' +
-        '<button type="button" data-eg-input="kana"' + (inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>あ ひらがな<small>日本語訳を 打つ</small></button>' +
+        '<button type="button" data-eg-input="kana"' + (inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>あ ひらがな<small>英語の 読みを 打つ</small></button>' +
         '<button type="button" data-eg-input="abc"' + (!inKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>A ABC<small>英文を 打つ</small></button></div>' +
       (inKana ? "" : '<p class="ai-small ai-muted">ABC で 打った タイムは ランキングに のりません(ひらがなと 打つ 字が ちがうため)</p>') +""")
 rep("""    const g = e.target.closest && e.target.closest("[data-eg-say],[data-eg-auto]");
@@ -233,6 +234,10 @@ rep(".eg-gram{font-size:clamp(18px,5.4vw,22px)}", """.eg-gram{font-size:clamp(18
 .eg-input{display:grid;grid-template-columns:auto 1fr 1fr;gap:6px;align-items:center;margin:0 0 12px}.eg-input>span{font-size:12.5px;font-weight:800;color:#334155}
 .eg-input button{padding:8px 6px;border-radius:12px;border:1.5px solid #cbd5e1;background:#fff;color:#334155;font:inherit;font-size:14px;font-weight:900;cursor:pointer;line-height:1.3}
 .eg-input button small{display:block;font-size:10.5px;font-weight:700;color:#64748b}.eg-input button.on{border-color:#0b7285;background:#e3fafc;color:#0b7285}""")
+# ゆれる 読み(acceptedReadings → kal)は 打った 字に 合う ほうへ 目あてを 合わせる(ひらがなの ときだけ)
+rep("    const all = [q.r].concat(q.al || []);\n    if(all.length < 2 || !v) return q.r;", "    if(!inKana) return q.r;\n    const all = [q.kr].concat(q.kal || []);\n    if(all.length < 2 || !v) return q.kr;")
+rep("    if(pre2.length) return pre2.includes(q.r) ? q.r : pre2[0];\n    let best = q.r,", "    if(pre2.length) return pre2.includes(q.kr) ? q.kr : pre2[0];\n    let best = q.kr,")
+rep("byArt:id => BY.get(id), norm:normIn, tgtHtml,", "byArt:id => BY.get(id), norm:normIn, retarget, tgtHtml,")
 Path("eigo").mkdir(exist_ok=True)
 Path("eigo/eigo.js").write_text(s, encoding="utf-8")
 print("eigo/eigo.js ok")

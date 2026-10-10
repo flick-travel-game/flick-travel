@@ -1,0 +1,1315 @@
+[
+ {
+  "id": "rl-zone",
+  "name": "ストライクゾーン",
+  "reading": "すとらいくぞーん",
+  "journey": "rule",
+  "category": "ボールと ストライク",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rule:zone",
+  "relatedTerms": [
+   "rl-count",
+   "rl-umpire"
+  ],
+  "ruleset": "共通",
+  "description": "ホームベースの 上で、打者の 肩と ベルトの まん中あたりから ひざの 下あたりまでの 見えない はこです。ボールが 少しでも 通れば、打たなくても ストライクです。高さは ふつう 打者の かまえで 決まりますが、MLB の ABS では 身長で 決まります。"
+ },
+ {
+  "id": "rl-foul",
+  "name": "ファウル",
+  "reading": "ふぁうる",
+  "journey": "rule",
+  "category": "フェアと ファウル",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "rule:fair",
+  "relatedTerms": [
+   "rl-fair",
+   "rl-foulline",
+   "rl-foultip"
+  ],
+  "ruleset": "共通",
+  "description": "打った ボールが ファウルラインの 外側に 出る ことです。ストライクが 2つ 未満なら ストライクに 数えますが、2ストライクからの ファウルは 数えません(バントは べつ)。どの ルールでも 同じです。"
+ },
+ {
+  "id": "rl-fair",
+  "name": "フェア",
+  "reading": "ふぇあ",
+  "journey": "rule",
+  "category": "フェアと ファウル",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "rule:fair",
+  "relatedTerms": [
+   "rl-foul",
+   "rl-foulline"
+  ],
+  "ruleset": "共通",
+  "description": "打った ボールが ファウルラインの 内側で 止まったり、外野で ラインの 内側に 落ちたり する ことです。フェアに なれば 打者は 走者に なります。線の 上は フェアです(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-count",
+  "name": "ボールカウント",
+  "reading": "ぼーるかうんと",
+  "journey": "rule",
+  "category": "ボールと ストライク",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "rule:count",
+  "relatedTerms": [
+   "rl-fullcount",
+   "rl-zone"
+  ],
+  "ruleset": "共通",
+  "description": "いまの 打者に ボールと ストライクが いくつ あるかの 数です。ボールが 4つで 打者は 一塁へ、ストライクが 3つで アウトに なります。どの ルールでも 同じです。"
+ },
+ {
+  "id": "rl-fullcount",
+  "name": "フルカウント",
+  "reading": "ふるかうんと",
+  "journey": "rule",
+  "category": "ボールと ストライク",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "rule:count",
+  "relatedTerms": [
+   "rl-count",
+   "rl-foul"
+  ],
+  "ruleset": "共通",
+  "description": "3ボール 2ストライクの ことです。次の 1球で 四球か 三振か 決まる ことが 多く、いちばん 見ごたえの ある 場面です。ファウルなら フルカウントの まま 続きます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-umpire",
+  "name": "球審",
+  "reading": "きゅうしん",
+  "journey": "rule",
+  "category": "判定と 審判",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧑‍⚖️",
+  "mapNode": "rule:ump",
+  "relatedTerms": [
+   "rl-base-ump",
+   "rl-zone",
+   "rl-line-ump"
+  ],
+  "acceptedReadings": [
+   "きゅうしん",
+   "しゅしん"
+  ],
+  "ruleset": "共通",
+  "description": "捕手の うしろに 立って、ストライクと ボールを 判定する 審判です。試合を 進める 責任者でも あり、「プレーボール」も 球審が 宣告します。「主審」とも よびます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-base-ump",
+  "name": "塁審",
+  "reading": "るいしん",
+  "journey": "rule",
+  "category": "判定と 審判",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙆",
+  "mapNode": "rule:ump",
+  "relatedTerms": [
+   "rl-umpire",
+   "rl-line-ump"
+  ],
+  "ruleset": "共通",
+  "description": "一塁・二塁・三塁の 近くに 立って、セーフか アウトかを 判定する 審判です。プロ野球では 球審と 塁審 3人の 4人で 判定するのが ふつうです(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-time",
+  "name": "タイム",
+  "reading": "たいむ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "rule:ump",
+  "relatedTerms": [
+   "rl-balldead",
+   "rl-umpire"
+  ],
+  "ruleset": "共通",
+  "description": "審判が プレーを いったん 止める ことです。選手や 監督が 求め、審判が「タイム」と 宣告して はじめて 止まります。止まって いる あいだは ボールデッドで、走者は 進めません(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-foulline",
+  "name": "ファウルライン",
+  "reading": "ふぁうるらいん",
+  "journey": "rule",
+  "category": "フェアと ファウル",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "rule:fair",
+  "relatedTerms": [
+   "rl-fair",
+   "rl-foulpole"
+  ],
+  "ruleset": "共通",
+  "description": "本塁から 一塁・三塁を 通って 外野まで のびる 白い 線です。この 線の 内側が フェア、外側が ファウルです。線そのものは フェアの 場所に ふくまれます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-foulpole",
+  "name": "ファウルポール",
+  "reading": "ふぁうるぽーる",
+  "journey": "rule",
+  "category": "フェアと ファウル",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "rule:fair",
+  "relatedTerms": [
+   "rl-foulline",
+   "rl-fair"
+  ],
+  "ruleset": "共通",
+  "description": "ファウルラインの 先の 外野の はしに 立つ 高い 柱です。打球が この 柱に 当たると ファウルでは なく ホームランに なります。名前と はんたいの 結果なので へえ、と なる 決まりです(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-dh",
+  "name": "指名打者",
+  "reading": "しめいだしゃ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏏",
+  "mapNode": "rule:change",
+  "relatedTerms": [
+   "rl-universal-dh",
+   "rl-dh-end",
+   "rl-ohtani-rule"
+  ],
+  "acceptedReadings": [
+   "しめいだしゃ",
+   "でぃーえいち"
+  ],
+  "ruleset": "NPB・MLB・高校",
+  "description": "投手の かわりに 打席に 立つ 打者で「DH」とも いいます。MLB は 2022年から 両リーグ、NPB は パ・リーグで 使い、セ・リーグも 2027年から 使います。高校野球も 2026年春の 選抜から 使えます。"
+ },
+ {
+  "id": "rl-balk",
+  "name": "ボーク",
+  "reading": "ぼーく",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "rule:pitch",
+  "relatedTerms": [
+   "rl-illegal-pitch",
+   "rl-hybrid"
+  ],
+  "ruleset": "共通",
+  "description": "走者が いる ときの 投手の 反則の 動きです。投げる ふりを して やめる、セットで 止まらない などが あり、走者は みんな 1つ 先の 塁へ 進めます。2026年版の 規則では 投げはじめたら 止めずに 投げきる ことも 決まりました。"
+ },
+ {
+  "id": "rl-tagup",
+  "name": "タッチアップ",
+  "reading": "たっちあっぷ",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-force",
+   "rl-appeal"
+  ],
+  "ruleset": "共通",
+  "description": "フライが 捕られた あと、走者が もとの 塁に ふれ直してから 次の 塁へ 走る ことです。捕られる 前に 走り出すと、もとの 塁に もどらないと アウトに される ことが あります(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-extra",
+  "name": "延長戦",
+  "reading": "えんちょうせん",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "rule:inning",
+  "relatedTerms": [
+   "rl-tiebreak",
+   "rl-draw",
+   "rl-ghost-runner"
+  ],
+  "ruleset": "NPB・MLB・高校",
+  "description": "9回で 同点の ときに 続ける 試合です。NPB の 公式戦は 12回まで、MLB の ふだんの 試合は 10回から 二塁に 走者を 置いて 決着まで、高校野球は 10回から タイブレークで 行います。立場で いちばん ちがう 決まりの 一つです。"
+ },
+ {
+  "id": "rl-draw",
+  "name": "引き分け",
+  "reading": "ひきわけ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "rule:inning",
+  "relatedTerms": [
+   "rl-extra",
+   "rl-tiebreak"
+  ],
+  "ruleset": "NPB・MLB",
+  "description": "同点の まま 試合を 終える ことです。NPB では 延長12回で 同点なら 引き分けに なります。MLB の ふつうの 試合では 決着が つくまで 続けるので、引き分けは ほとんど ありません。"
+ },
+ {
+  "id": "rl-called",
+  "name": "コールドゲーム",
+  "reading": "こーるどげーむ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌧️",
+  "mapNode": "rule:inning",
+  "relatedTerms": [
+   "rl-official",
+   "rl-nogame",
+   "rl-continued"
+  ],
+  "ruleset": "共通",
+  "description": "雨などで 審判が とちゅうで 打ち切り、そこまでの 点で 勝ちを 決める 試合です。高校野球の 地方大会などでは 5回10点・7回7点の 点差でも 打ち切ります(甲子園の 全国大会では 使いません)。"
+ },
+ {
+  "id": "rl-strikeout-run",
+  "name": "振り逃げ",
+  "reading": "ふりにげ",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "rule:out",
+  "relatedTerms": [
+   "rl-foultip",
+   "rl-count"
+  ],
+  "ruleset": "共通",
+  "description": "3つめの ストライクを 捕手が ちゃんと 捕れなかった とき、打者が 一塁へ 走れる 決まりです。ただし 一塁に 走者が いて、無死か 一死の ときは 走れません。空振りでも 見逃しでも 起きます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-request",
+  "name": "リクエスト",
+  "reading": "りくえすと",
+  "journey": "rule",
+  "category": "判定と 審判",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📺",
+  "mapNode": "rule:review",
+  "relatedTerms": [
+   "rl-challenge",
+   "rl-umpire"
+  ],
+  "country": "日本",
+  "ruleset": "NPB",
+  "description": "監督が 審判の 判定に 納得できない とき、ビデオで 見直すよう 求める NPB の 制度です。2018年から はじまりました。ストライクと ボールの 判定には 使えません。"
+ },
+ {
+  "id": "rl-tiebreak",
+  "name": "タイブレーク",
+  "reading": "たいぶれーく",
+  "journey": "rule",
+  "category": "高校野球の 決まり",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-extra",
+   "rl-ghost-runner"
+  ],
+  "country": "日本",
+  "ruleset": "高校",
+  "description": "延長で 早く 決着が つくよう、塁に 走者を 置いて 始める 決まりです。高校野球では 2023年から 延長10回の はじめから 無死一二塁で 行います。投手を 守る ための 決まりでも あります。"
+ },
+ {
+  "id": "rl-foultip",
+  "name": "ファウルチップ",
+  "reading": "ふぁうるちっぷ",
+  "journey": "rule",
+  "category": "ボールと ストライク",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "rule:count",
+  "relatedTerms": [
+   "rl-foul",
+   "rl-strikeout-run"
+  ],
+  "ruleset": "共通",
+  "description": "バットに かすった 打球が するどく まっすぐ 捕手の ミットに 入り、捕球された ものです。ファウルでは なく ストライクに なり、2ストライクなら 三振です。ボールは 生きた まま で、走者は 進めます。"
+ },
+ {
+  "id": "rl-iff",
+  "name": "インフィールドフライ",
+  "reading": "いんふぃーるどふらい",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "☝️",
+  "mapNode": "rule:out",
+  "relatedTerms": [
+   "rl-force",
+   "rl-tagup"
+  ],
+  "ruleset": "共通",
+  "description": "無死か 一死で 走者が 一二塁か 満塁の とき、内野手が ふつうに 捕れる フライを 審判が 宣告すると、捕る 前でも 打者が アウトに なる 決まりです。わざと 落として 併殺を とる ことを ふせぎます。"
+ },
+ {
+  "id": "rl-ibb",
+  "name": "申告敬遠",
+  "reading": "しんこくけいえん",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "rule:change",
+  "relatedTerms": [
+   "rl-pitch-clock",
+   "rl-count"
+  ],
+  "acceptedReadings": [
+   "しんこくけいえん",
+   "しんこくこいしきゅう"
+  ],
+  "ruleset": "NPB・MLB・高校",
+  "description": "投手が ボールを 投げずに、監督が 審判に 告げるだけで 打者を 一塁へ 歩かせる 決まりです。MLB は 2017年、NPB は 2018年、高校野球は 2020年から 使っています。"
+ },
+ {
+  "id": "rl-pitch-clock",
+  "name": "ピッチクロック",
+  "reading": "ぴっちくろっく",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "rule:modern",
+  "relatedTerms": [
+   "rl-batter-time",
+   "rl-disengage",
+   "rl-ibb"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "投手が ボールを 受けてから 投げるまでの 時間を 時計で はかる MLB の ルールです。2023年に はじまり、いまは 走者なしで 15秒・走者ありで 18秒です。おくれると ボールが 1つ 足されます。NPB は 将来 入れると 決めました。"
+ },
+ {
+  "id": "rl-challenge",
+  "name": "チャレンジ",
+  "reading": "ちゃれんじ",
+  "journey": "rule",
+  "category": "判定と 審判",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎥",
+  "mapNode": "rule:review",
+  "relatedTerms": [
+   "rl-request",
+   "rl-abs"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "監督が 判定の ビデオでの 見直しを 求める MLB の 制度です。2014年に はじまりました。日本の リクエストと にた しくみで、ストライクと ボールの 判定は べつの ABS チャレンジで 見直します。"
+ },
+ {
+  "id": "rl-abs",
+  "name": "ABS",
+  "reading": "えーびーえす",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤖",
+  "mapNode": "rule:review",
+  "relatedTerms": [
+   "rl-challenge",
+   "rl-zone",
+   "rl-umpire"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "機械が ボールの 通り道を はかって ストライクか ボールかを 見る しくみです。MLB では 2026年から、球審の 判定に 打者・投手・捕手が 帽子や ヘルメットを たたいて 見直しを 求められます。1チーム 2回までで、当たれば 回数は 減りません。"
+ },
+ {
+  "id": "rl-ohtani-rule",
+  "name": "大谷ルール",
+  "reading": "おおたにるーる",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "rule:change",
+  "relatedTerms": [
+   "rl-dh",
+   "rl-universal-dh"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "先発投手と 指名打者を 同じ 選手が つとめた とき、投手を おりても 指名打者として 試合に 残れる MLB の 決まりです。大谷翔平の 二刀流から 生まれ、2022年から 使われています。"
+ },
+ {
+  "id": "rl-force",
+  "name": "フォースプレー",
+  "reading": "ふぉーすぷれー",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "rule:out",
+  "relatedTerms": [
+   "rl-tag",
+   "rl-iff"
+  ],
+  "ruleset": "共通",
+  "description": "打者が 走者に なったため、前に いた 走者が 次の 塁へ 進まなければ ならない 場面です。このとき 野手は ボールを 持って その 塁を ふむだけで アウトに できます。「封殺」とも いいます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-tag",
+  "name": "タッグプレー",
+  "reading": "たっぐぷれー",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤚",
+  "mapNode": "rule:out",
+  "relatedTerms": [
+   "rl-force",
+   "rl-tagup"
+  ],
+  "ruleset": "共通",
+  "description": "ボールを 持った 手か、ボールを 入れた グラブで 走者に ふれて アウトに する プレーです。走者が 次の 塁へ 進まなくても よい 場面では、塁を ふむ だけでは アウトに ならず、走者に ふれる 必要が あります。"
+ },
+ {
+  "id": "rl-interference",
+  "name": "守備妨害",
+  "reading": "しゅびぼうがい",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "rule:out",
+  "relatedTerms": [
+   "rl-obstruction",
+   "rl-bat-interference",
+   "rl-three-foot"
+  ],
+  "ruleset": "共通",
+  "description": "打者や 走者が、野手の 守備の じゃまを する 反則です。打球を 捕ろうと する 野手に ぶつかる などが あたり、ふつうは じゃまを した 人が アウトに なります。「インターフェア」とも いいます。"
+ },
+ {
+  "id": "rl-obstruction",
+  "name": "走塁妨害",
+  "reading": "そうるいぼうがい",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-interference",
+   "rl-bat-interference"
+  ],
+  "acceptedReadings": [
+   "そうるいぼうがい",
+   "おぶすとらくしょん"
+  ],
+  "ruleset": "共通",
+  "description": "ボールを 持って いない 野手が、走者の 走る じゃまを する 反則です。じゃまされた 走者には、じゃまが なければ 行けたと 審判が 考えた 塁が あたえられます。「オブストラクション」とも いいます。"
+ },
+ {
+  "id": "rl-bat-interference",
+  "name": "打撃妨害",
+  "reading": "だげきぼうがい",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏏",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-interference",
+   "rl-obstruction"
+  ],
+  "ruleset": "共通",
+  "description": "捕手の ミットが 打者の バットに ふれる など、守備側が 打者の 打つ じゃまを する 反則です。打者には 一塁が あたえられます。ただし 打った 結果の ほうが よければ、攻撃側が そちらを えらべます。"
+ },
+ {
+  "id": "rl-balldead",
+  "name": "ボールデッド",
+  "reading": "ぼーるでっど",
+  "journey": "rule",
+  "category": "判定と 審判",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "rule:ump",
+  "relatedTerms": [
+   "rl-inplay",
+   "rl-time"
+  ],
+  "ruleset": "共通",
+  "description": "プレーが 止まって いる 状態です。タイム・死球・ファウルの あとなどに なり、この あいだは プレーで 走者が 進んだり、アウトに なったり しません。もう一度「プレー」の 宣告で 動き出します(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-inplay",
+  "name": "インプレー",
+  "reading": "いんぷれー",
+  "journey": "rule",
+  "category": "判定と 審判",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "▶️",
+  "mapNode": "rule:ump",
+  "relatedTerms": [
+   "rl-balldead",
+   "rl-time"
+  ],
+  "ruleset": "共通",
+  "description": "ボールが 生きて いて、プレーが 続いて いる 状態です。この あいだは 走者は 進めますし、アウトにも なります。審判が タイムを かけるまで、気を ぬかない ことが 大切です(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-line-ump",
+  "name": "線審",
+  "reading": "せんしん",
+  "journey": "rule",
+  "category": "判定と 審判",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "rule:ump",
+  "relatedTerms": [
+   "rl-umpire",
+   "rl-base-ump",
+   "rl-foulpole"
+  ],
+  "ruleset": "共通",
+  "description": "外野の ファウルライン ぞいに 立って、外野への 打球が フェアか ファウルか、ホームランかを 判定する 審判です。日本シリーズなど 大事な 試合で 置かれ、6人で 判定します。"
+ },
+ {
+  "id": "rl-ground-double",
+  "name": "エンタイトルツーベース",
+  "reading": "えんたいとるつーべーす",
+  "journey": "rule",
+  "category": "フェアと ファウル",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "2️⃣",
+  "mapNode": "rule:fair",
+  "relatedTerms": [
+   "rl-fair",
+   "rl-safe-advance"
+  ],
+  "ruleset": "共通",
+  "description": "フェアの 打球が はずんで スタンドに 入った ときなどに、打者に 二塁まで あたえる 決まりです。日本で 生まれた よび名で、英語では グラウンドルール・ダブルと いいます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-three-bunt",
+  "name": "スリーバント",
+  "reading": "すりーばんと",
+  "journey": "rule",
+  "category": "ボールと ストライク",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪃",
+  "mapNode": "rule:count",
+  "relatedTerms": [
+   "rl-foul",
+   "rl-count"
+  ],
+  "ruleset": "共通",
+  "description": "2ストライクから する バントの ことです。この バントが ファウルに なると、ふつうの ファウルと ちがって 三振に なります。だから 2ストライクからの バントは 勇気が いる 作戦です(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-half-swing",
+  "name": "ハーフスイング",
+  "reading": "はーふすいんぐ",
+  "journey": "rule",
+  "category": "判定と 審判",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌗",
+  "mapNode": "rule:ump",
+  "relatedTerms": [
+   "rl-umpire",
+   "rl-base-ump"
+  ],
+  "ruleset": "共通",
+  "description": "打者が バットを 振りかけて 止めた ときの 判定です。振ったか どうかは 球審が 決めますが、捕手や 守備側が 求めると 一塁か 三塁の 塁審に 確かめて もらえます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-official",
+  "name": "試合の成立",
+  "reading": "しあいのせいりつ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "rule:inning",
+  "relatedTerms": [
+   "rl-called",
+   "rl-nogame"
+  ],
+  "ruleset": "NPB・MLB・高校",
+  "description": "雨などで 打ち切っても、正式な 試合と 認められる ことです。プロでは 5回を 終えると 成立し、高校野球では 7回です。高校野球の 甲子園の 大会では 打ち切らずに 継続試合で 続けます。"
+ },
+ {
+  "id": "rl-nogame",
+  "name": "ノーゲーム",
+  "reading": "のーげーむ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌂",
+  "mapNode": "rule:inning",
+  "relatedTerms": [
+   "rl-official",
+   "rl-called",
+   "rl-suspended"
+  ],
+  "country": "日本",
+  "ruleset": "NPB",
+  "description": "試合が 成立する 前に 雨などで 打ち切られ、試合が 無かった ことに なる ものです。NPB では 5回より 前に 打ち切られると ノーゲームで、記録も 残りません。"
+ },
+ {
+  "id": "rl-suspended",
+  "name": "サスペンデッドゲーム",
+  "reading": "さすぺんでっどげーむ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏯️",
+  "mapNode": "rule:inning",
+  "relatedTerms": [
+   "rl-continued",
+   "rl-nogame"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB・高校",
+  "description": "とちゅうで 止まった 試合を、後日 止まった 場面から 続ける ことです。MLB で 使われます。高校野球では この 名前は 使わず、継続試合と いう 決まりで 行います。"
+ },
+ {
+  "id": "rl-collision",
+  "name": "コリジョンルール",
+  "reading": "こりじょんるーる",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-slide-rule",
+   "rl-tag"
+  ],
+  "ruleset": "NPB・MLB",
+  "description": "本塁で 走者と 捕手が はげしく 衝突する ことを ふせぐ 決まりです。捕手は ボールを 持たずに 走路を ふさげず、走者も 捕手を めがけて つっこめません。NPB では 2016年から です。"
+ },
+ {
+  "id": "rl-pitch-limit",
+  "name": "投球数制限",
+  "reading": "とうきゅうすうせいげん",
+  "journey": "rule",
+  "category": "高校野球の 決まり",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-tiebreak",
+   "rl-bat"
+  ],
+  "country": "日本",
+  "ruleset": "高校",
+  "description": "高校野球で ひとりの 投手が 投げられる 球の 数の 決まりです。2020年春から 1週間で 500球までに なりました。投手の 肩や ひじを 守る ための 決まりです。"
+ },
+ {
+  "id": "rl-bat",
+  "name": "低反発バット",
+  "reading": "ていはんぱつばっと",
+  "journey": "rule",
+  "category": "高校野球の 決まり",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪵",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-pitch-limit",
+   "rl-dh"
+  ],
+  "country": "日本",
+  "ruleset": "高校",
+  "description": "打球が 飛びすぎない ように 作られた、高校野球の 新しい 基準の 金属バットです。2024年春から 使われ、太さは 64mm 未満です。守る 選手と 投手を 守る ための 決まりです。"
+ },
+ {
+  "id": "rl-reentry",
+  "name": "再出場",
+  "reading": "さいしゅつじょう",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "rule:change",
+  "relatedTerms": [
+   "rl-dh-end",
+   "rl-mound-visit"
+  ],
+  "ruleset": "共通",
+  "description": "一度 交代で 退いた 選手は、その 試合には もう 出られない 決まりです。だから 監督は 交代の 順番を よく 考えます。交代した あとは ベンチから 応援します(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-rulebook",
+  "name": "公認野球規則",
+  "reading": "こうにんやきゅうきそく",
+  "journey": "rule",
+  "category": "判定と 審判",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-umpire",
+   "rl-balk"
+  ],
+  "country": "日本",
+  "ruleset": "共通",
+  "description": "日本の 野球の いちばん もとに なる ルールの 本です。アメリカの 規則を 日本語に して 毎年 見直し、いまは 2026年版です。プロも アマチュアも この 本を もとに、それぞれの 決まりを 足して います。"
+ },
+ {
+  "id": "rl-appeal",
+  "name": "アピールプレー",
+  "reading": "あぴーるぷれー",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "rule:out",
+  "relatedTerms": [
+   "rl-missed-base",
+   "rl-tagup",
+   "rl-batting-order"
+  ],
+  "ruleset": "共通",
+  "description": "守備側が 審判に 申し出て はじめて アウトに なる プレーです。走者が 塁を ふみ忘れた・タッチアップで 早く 出た などは、申し出が なければ そのまま 進みます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-disengage",
+  "name": "牽制の制限",
+  "reading": "けんせいのせいげん",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "rule:modern",
+  "relatedTerms": [
+   "rl-pitch-clock",
+   "rl-base-size"
+  ],
+  "acceptedReadings": [
+   "けんせいのせいげん",
+   "でぃすえんげーじめんと"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "MLB では 牽制や プレートを はずす 動きは 1打席に 2回までです。3回目の 牽制で アウトに できないと ボークに なります。走者が 進めば 回数は もどります。「ディスエンゲージメント」と いいます。"
+ },
+ {
+  "id": "rl-base-size",
+  "name": "ベースの拡大",
+  "reading": "べーすのかくだい",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "rule:modern",
+  "relatedTerms": [
+   "rl-disengage",
+   "rl-pitch-clock"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "MLB は 2023年に 一塁・二塁・三塁の ベースを 18インチ(約46cm)四方に 大きく しました。まえは 15インチです。塁と 塁の あいだが 少し 短く なり、盗塁が ふえる きっかけの 一つに なりました。"
+ },
+ {
+  "id": "rl-shift-ban",
+  "name": "シフト制限",
+  "reading": "しふとせいげん",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "rule:modern",
+  "relatedTerms": [
+   "rl-base-size",
+   "rl-pitch-clock"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "MLB では 2023年から、投げる ときに 内野手 4人が 内野の 中に いて、二塁の 左右に ふたりずつ いる 決まりです。極端な 守備シフトを ふせぎ、ヒットを ふやす ための ルールです。"
+ },
+ {
+  "id": "rl-ghost-runner",
+  "name": "自動走者",
+  "reading": "じどうそうしゃ",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👻",
+  "mapNode": "rule:inning",
+  "relatedTerms": [
+   "rl-extra",
+   "rl-tiebreak"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "MLB の ふだんの 試合の 延長で、10回から 攻撃の はじめに 二塁に 走者を 置く 決まりです。2020年に はじまり、2023年から ずっと 使われて います。ポストシーズンでは 使いません。"
+ },
+ {
+  "id": "rl-universal-dh",
+  "name": "ユニバーサルDH",
+  "reading": "ゆにばーさるでぃーえいち",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "rule:change",
+  "relatedTerms": [
+   "rl-dh",
+   "rl-ohtani-rule"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "両方の リーグで 指名打者を 使う ことです。MLB は 2022年から アメリカン・リーグも ナショナル・リーグも DH に なりました。日本では セ・リーグが 2027年から DH を 使います。"
+ },
+ {
+  "id": "rl-dh-end",
+  "name": "DH解除",
+  "reading": "でぃーえいちかいじょ",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔓",
+  "mapNode": "rule:change",
+  "relatedTerms": [
+   "rl-dh",
+   "rl-reentry"
+  ],
+  "ruleset": "共通",
+  "description": "試合の とちゅうで 指名打者が 守備に ついたり、投手が 打席に 立ったり すると、その チームは 指名打者を 使えなく なる ことです。それからは 投手も 打順に 入ります(DH を 使う 試合で 共通)。"
+ },
+ {
+  "id": "rl-continued",
+  "name": "継続試合",
+  "reading": "けいぞくしあい",
+  "journey": "rule",
+  "category": "高校野球の 決まり",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔜",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-suspended",
+   "rl-called",
+   "rl-official"
+  ],
+  "country": "日本",
+  "ruleset": "高校",
+  "description": "高校野球で、雨などで とちゅうで 止まった 試合を、翌日 以降に 止まった 場面から 続ける 決まりです。何回で 止まっても 勝ち負けが 決まるまで 続けます。甲子園の 春と 夏の 大会で 使います。"
+ },
+ {
+  "id": "rl-courtesy-runner",
+  "name": "臨時代走",
+  "reading": "りんじだいそう",
+  "journey": "rule",
+  "category": "高校野球の 決まり",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-reentry",
+   "rl-messenger"
+  ],
+  "country": "日本",
+  "ruleset": "高校",
+  "description": "高校野球の 特別な 決まりで、試合中に 手当てが 長く かかる とき、出場中の 選手(投手を のぞく)が 一時的に かわりに 走る ことです。もとの 選手は 交代した ことに ならず、そのあとも 試合に 出られます。"
+ },
+ {
+  "id": "rl-messenger",
+  "name": "伝令",
+  "reading": "でんれい",
+  "journey": "rule",
+  "category": "高校野球の 決まり",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏃‍♂️",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-mound-visit",
+   "rl-courtesy-runner"
+  ],
+  "country": "日本",
+  "ruleset": "高校",
+  "description": "高校野球で、監督の 指示を 選手に 伝えに 行く 控えの 選手です。守備側が マウンドへ 送れる 伝令は 1試合 3回まで、1回 30秒以内です。攻撃側の 伝令も 3回まで。タイブレークに 入ると 1イニング 1回 使えます。"
+ },
+ {
+  "id": "rl-mound-visit",
+  "name": "マウンドに行く回数",
+  "reading": "まうんどにいくかいすう",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "rule:change",
+  "relatedTerms": [
+   "rl-messenger",
+   "rl-three-batter"
+  ],
+  "ruleset": "NPB・MLB",
+  "description": "監督や コーチが 同じ 回に 同じ 投手の ところへ 2度目に 行くと、その 投手は 交代しなければ ならない 決まりです。NPB と MLB の 決まりで、監督が グラウンドに 出ない 高校野球では 伝令の 回数で 決めます。"
+ },
+ {
+  "id": "rl-three-batter",
+  "name": "3人ルール",
+  "reading": "さんにんるーる",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "3️⃣",
+  "mapNode": "rule:change",
+  "relatedTerms": [
+   "rl-mound-visit",
+   "rl-pitch-clock"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "MLB で 2020年から、救援投手は 少なくとも 打者 3人と 対戦するか、その 回を 終えるまで 交代できない 決まりです。ひとりだけ 投げる ワンポイントの 起用が できなく なりました。"
+ },
+ {
+  "id": "rl-batter-time",
+  "name": "打者の準備時間",
+  "reading": "だしゃのじゅんびじかん",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "rule:modern",
+  "relatedTerms": [
+   "rl-pitch-clock",
+   "rl-disengage"
+  ],
+  "country": "アメリカ",
+  "ruleset": "MLB",
+  "description": "MLB の ピッチクロックで、打者は 時計が 残り 8秒に なるまでに 打席に 入り、投手の ほうを 見て かまえる 決まりです。おくれると ストライクが 1つ 足されます。"
+ },
+ {
+  "id": "rl-slide-rule",
+  "name": "併殺崩しの禁止",
+  "reading": "へいさつくずしのきんし",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛝",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-collision",
+   "rl-interference"
+  ],
+  "ruleset": "NPB・MLB",
+  "description": "併殺を ふせごうと、走者が 野手を めがけて スライディングする ことを 禁じる 決まりです。走者は 塁に まっすぐ すべりこむ 必要が あり、反則なら 守備妨害で 併殺が 成立します。MLB は 2016年、NPB は 2017年からです。"
+ },
+ {
+  "id": "rl-three-foot",
+  "name": "3フィートライン",
+  "reading": "すりーふぃーとらいん",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-interference",
+   "rl-batter-runner"
+  ],
+  "ruleset": "共通",
+  "description": "本塁と 一塁の あいだの 後半に ある、打者走者が 走る ための 線の 道です。この 道の 外を 走って 一塁への 送球の じゃまに なると、守備妨害で アウトに なります。MLB は 2024年に この 道を 内側の 土の ところまで 広げました。"
+ },
+ {
+  "id": "rl-hybrid",
+  "name": "ハイブリッドポジション",
+  "reading": "はいぶりっどぽじしょん",
+  "journey": "rule",
+  "category": "新しい ルール",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "rule:pitch",
+  "relatedTerms": [
+   "rl-balk",
+   "rl-illegal-pitch"
+  ],
+  "ruleset": "NPB・MLB",
+  "description": "セットポジションの ような 姿勢から ワインドアップで 投げる 投げかたです。アメリカの 規則の 改正を 受けて、2026年版の 公認野球規則で 日本でも 認められました。"
+ },
+ {
+  "id": "rl-infield-drop",
+  "name": "故意落球",
+  "reading": "こいらっきゅう",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🫳",
+  "mapNode": "rule:out",
+  "relatedTerms": [
+   "rl-iff",
+   "rl-force"
+  ],
+  "ruleset": "共通",
+  "description": "無死か 一死で 一塁に 走者が いる とき、内野手が フライや ライナーを わざと 落とすと、打者が アウトに なり プレーが 止まる 決まりです。落として 併殺を とる ずるい プレーを ふせぎます。"
+ },
+ {
+  "id": "rl-batting-order",
+  "name": "打順の誤り",
+  "reading": "だじゅんのあやまり",
+  "journey": "rule",
+  "category": "試合の 進めかた",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "rule:change",
+  "relatedTerms": [
+   "rl-appeal",
+   "rl-reentry"
+  ],
+  "ruleset": "共通",
+  "description": "決められた 打順と ちがう 選手が 打った ときの 決まりです。守備側が 審判に 申し出ると、本当に 打つはずだった 打者が アウトに なります。申し出が なければ そのまま 進みます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-illegal-bat",
+  "name": "反則打球",
+  "reading": "はんそくだきゅう",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "rule:out",
+  "relatedTerms": [
+   "rl-batting-order",
+   "rl-interference"
+  ],
+  "ruleset": "共通",
+  "description": "打者が 片足でも 完全に バッターボックスの 外に 出て ボールを 打つ 反則です。打者は アウトに なります。バントで 前に 出すぎた ときにも 起きやすい 反則です(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-illegal-pitch",
+  "name": "不正投球",
+  "reading": "ふせいとうきゅう",
+  "journey": "rule",
+  "category": "反則と 妨害",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "rule:pitch",
+  "relatedTerms": [
+   "rl-balk",
+   "rl-hybrid"
+  ],
+  "ruleset": "共通",
+  "description": "投手が 投手板に 軸足を ふれずに 投げたり、打者が かまえる 前に 急いで 投げたり する 反則です。走者が いれば ボーク、いなければ ボールに なります。どの 野球でも 同じ 決まりです。"
+ },
+ {
+  "id": "rl-time-play",
+  "name": "タイムプレー",
+  "reading": "たいむぷれー",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-force",
+   "rl-appeal"
+  ],
+  "ruleset": "共通",
+  "description": "3つめの アウトと 同じ ころに 走者が 本塁に かえった とき、どちらが 先かで 点が 入るか 決まる プレーです。ただし 3つめが フォースアウトや 打者走者の 一塁での アウトなら、点は 入りません。"
+ },
+ {
+  "id": "rl-passing",
+  "name": "走者の追い越し",
+  "reading": "そうしゃのおいこし",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-batter-runner",
+   "rl-time-play"
+  ],
+  "ruleset": "共通",
+  "description": "うしろの 走者が 前の 走者を 追いこすと、追いこした うしろの 走者が アウトに なる 決まりです。ホームランの ときも、前の 走者を 追いこすと アウトに なります(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-missed-base",
+  "name": "ベースの踏み忘れ",
+  "reading": "べーすのふみわすれ",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👣",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-appeal",
+   "rl-passing"
+  ],
+  "ruleset": "共通",
+  "description": "走者が 塁を ふまずに 次の 塁へ 進む ことです。守備側が ボールを 持って その 塁を ふみ、審判に 申し出ると アウトに なります。申し出が なければ そのまま です(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-safe-advance",
+  "name": "安全進塁権",
+  "reading": "あんぜんしんるいけん",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-ground-double",
+   "rl-obstruction"
+  ],
+  "ruleset": "共通",
+  "description": "アウトに される こと なく 次の 塁へ 進める 権利です。たとえば 送球が ベンチに 入ると、走者には 2つ 先の 塁が あたえられます。ボークや 走塁妨害でも あたえられます(どの ルールでも 同じ)。"
+ },
+ {
+  "id": "rl-batter-runner",
+  "name": "打者走者",
+  "reading": "だしゃそうしゃ",
+  "journey": "rule",
+  "category": "アウトと 走塁",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏃‍♀️",
+  "mapNode": "rule:run",
+  "relatedTerms": [
+   "rl-three-foot",
+   "rl-passing"
+  ],
+  "ruleset": "共通",
+  "description": "打ち終えて 一塁へ 走って いる 打者の ことです。フェアの 打球や 四球・振り逃げなどで 打者は 走者に なります。この 言いかたで、ほかの 走者と 区別して 決まりを 書きます(どの ルールでも 同じ)。"
+ }
+]

@@ -1,0 +1,1237 @@
+[
+ {
+  "id": "tc-daida",
+  "name": "代打",
+  "reading": "だいだ",
+  "journey": "tactic",
+  "category": "交代と起用",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🏏",
+  "mapNode": "tactic:sub",
+  "relatedTerms": [
+   "tc-daisou",
+   "tc-shubikatame"
+  ],
+  "description": "打順が 回ってきた 打者の かわりに、ベンチの 選手が 打席に 立つ ことです。チャンスで 出る「代打の 切り札」は 試合の 流れを 変えます。代わった 選手は その 試合に もう 出られません。"
+ },
+ {
+  "id": "tc-closer",
+  "name": "クローザー(守護神)",
+  "reading": "くろーざー",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "tactic:closer",
+  "relatedTerms": [
+   "tc-save",
+   "tc-setup",
+   "tc-kachipattern"
+  ],
+  "acceptedReadings": [
+   "くろーざー",
+   "しゅごしん"
+  ],
+  "description": "勝っている 試合の 最後の 回を まかされる 救援投手です。日本では「守護神」とも よばれ、リードを 守って 締めくくると セーブが つきます。"
+ },
+ {
+  "id": "tc-rotation",
+  "name": "先発ローテーション",
+  "reading": "せんぱつろーてーしょん",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "tactic:rotation",
+  "relatedTerms": [
+   "tc-ace",
+   "tc-naka6",
+   "tc-naka4"
+  ],
+  "description": "先発投手を 何人か 決めて、順番に 投げさせる しくみです。つかれを とる ため、NPB では 6人、MLB では 5人で 回す ことが 多いです。"
+ },
+ {
+  "id": "tc-ace",
+  "name": "エース",
+  "reading": "えーす",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🃏",
+  "mapNode": "tactic:rotation",
+  "relatedTerms": [
+   "tc-rotation",
+   "tc-kimedama"
+  ],
+  "description": "チームで いちばん たよりに なる 先発投手です。開幕戦や 短期決戦の 初戦など 大事な 試合を まかされます。日本では 背番号 18 が エースの 番号と よく いわれます。"
+ },
+ {
+  "id": "tc-nakatsugi",
+  "name": "中継ぎ",
+  "reading": "なかつぎ",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🌉",
+  "mapNode": "tactic:bullpen",
+  "relatedTerms": [
+   "tc-keitou",
+   "tc-setup",
+   "tc-hold"
+  ],
+  "description": "先発投手の あとを うけて、試合の とちゅうで 投げる 救援投手です。英語では「リリーフ」と いい、ブルペンで 準備を して 出番を 待ちます。"
+ },
+ {
+  "id": "tc-keien",
+  "name": "敬遠",
+  "reading": "けいえん",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "tactic:pitching",
+  "relatedTerms": [
+   "tc-haikyu",
+   "tc-daida"
+  ],
+  "description": "強い 打者との 勝負を わざと さけて、四球で 一塁へ 歩かせる 作戦です。次の 打者で アウトを とる ねらいが あります。いまは 投げずに 告げるだけの 申告敬遠も あります。"
+ },
+ {
+  "id": "tc-era",
+  "name": "防御率",
+  "reading": "ぼうぎょりつ",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "tactic:pstats",
+  "relatedTerms": [
+   "tc-whip",
+   "tc-fip",
+   "tc-qs"
+  ],
+  "description": "投手が 9回を 投げたら 何点 取られるかを 表した 数字です。自責点 × 9 ÷ 投球回で 計算し、数字が 小さいほど よい 投手です。"
+ },
+ {
+  "id": "tc-nitoryu",
+  "name": "二刀流",
+  "reading": "にとうりゅう",
+  "journey": "tactic",
+  "category": "交代と起用",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "tactic:sub",
+  "relatedTerms": [
+   "tc-ace",
+   "tc-cleanup"
+  ],
+  "description": "ひとりの 選手が 投手と 打者の 両方で 試合に 出る 起用の しかたです。大谷翔平が 大リーグで 投げて 打って 活躍し、世界中に 知られる ことばに なりました。"
+ },
+ {
+  "id": "tc-daisou",
+  "name": "代走",
+  "reading": "だいそう",
+  "journey": "tactic",
+  "category": "交代と起用",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "👟",
+  "mapNode": "tactic:sub",
+  "relatedTerms": [
+   "tc-daida",
+   "tc-shubikatame"
+  ],
+  "description": "塁に 出た 走者の かわりに、足の 速い 選手を 走らせる ことです。1点が ほしい 終盤に よく 使われ、盗塁や 次の 塁を ねらいます。"
+ },
+ {
+  "id": "tc-save",
+  "name": "セーブ",
+  "reading": "せーぶ",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🛟",
+  "mapNode": "tactic:closer",
+  "relatedTerms": [
+   "tc-closer",
+   "tc-hold"
+  ],
+  "description": "リードを 守ったまま 試合を 締めくくった 救援投手に つく 記録です。3点差 以内の 場面で 1回 以上 投げる などの 条件が あります。"
+ },
+ {
+  "id": "tc-keitou",
+  "name": "継投",
+  "reading": "けいとう",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "tactic:bullpen",
+  "relatedTerms": [
+   "tc-nakatsugi",
+   "tc-kachipattern"
+  ],
+  "description": "投手を つぎつぎに 交代して、試合を つないで いく ことです。どこで 代えるかは 監督の いちばん 大事な 判断の ひとつで、「継投策」とも いいます。"
+ },
+ {
+  "id": "tc-cleanup",
+  "name": "クリーンアップ",
+  "reading": "くりーんあっぷ",
+  "journey": "tactic",
+  "category": "攻めの作戦",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "tactic:order",
+  "relatedTerms": [
+   "tc-leadoff",
+   "tc-niban"
+  ],
+  "description": "3番・4番・5番の 打者を まとめた よび名です。塁に いる 走者を ホームに かえして 塁を「きれいに する」ことから この 名前が つきました。"
+ },
+ {
+  "id": "tc-kantoku",
+  "name": "監督",
+  "reading": "かんとく",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧢",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-sign",
+   "tc-keitou"
+  ],
+  "description": "試合の 作戦を 決め、選手の 起用や 交代を まかされる チームの 責任者です。野球では 監督も ユニフォームを 着て ベンチに 入るのが 特徴です。"
+ },
+ {
+  "id": "tc-sign",
+  "name": "サイン",
+  "reading": "さいん",
+  "journey": "tactic",
+  "category": "攻めの作戦",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🤚",
+  "mapNode": "tactic:small",
+  "relatedTerms": [
+   "tc-kantoku",
+   "tc-tsunagi"
+  ],
+  "description": "監督や コーチが 体を さわる などの 合図で、打者や 走者に 作戦を 伝える ことです。相手に 分からない ように、合図の 決まりを よく 変えます。"
+ },
+ {
+  "id": "tc-hold",
+  "name": "ホールド",
+  "reading": "ほーるど",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "tactic:closer",
+  "relatedTerms": [
+   "tc-save",
+   "tc-nakatsugi",
+   "tc-setup"
+  ],
+  "description": "リードや 同点の 場面で 登板し、アウトを 1つ 以上 とって、その 形を 守ったまま 次の 投手に つないだ 中継ぎ投手に つく 記録です。NPB では 2005年から 両リーグの 公式記録です。"
+ },
+ {
+  "id": "tc-haikyu",
+  "name": "配球",
+  "reading": "はいきゅう",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "tactic:pitching",
+  "relatedTerms": [
+   "tc-kimedama",
+   "tc-kankyu",
+   "tc-misedama"
+  ],
+  "description": "どの 球種を どの コースに どの 順番で 投げるかを 組み立てる ことです。捕手が サインを 出し、投手と 息を 合わせて 打者の 苦手を つきます。"
+ },
+ {
+  "id": "tc-kimedama",
+  "name": "決め球",
+  "reading": "きめだま",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "💎",
+  "mapNode": "tactic:pitching",
+  "relatedTerms": [
+   "tc-haikyu",
+   "tc-countdama"
+  ],
+  "description": "三振を とりたい ときに 投げる、その 投手の いちばん 自信の ある 球です。「ウイニングショット」とも いい、フォークや スライダーを 決め球に する 投手が 多いです。"
+ },
+ {
+  "id": "tc-obp",
+  "name": "出塁率",
+  "reading": "しゅつるいりつ",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "tactic:bstats",
+  "relatedTerms": [
+   "tc-slg",
+   "tc-ops",
+   "tc-leadoff"
+  ],
+  "description": "打者が どれだけ 塁に 出たかを 表す 数字です。ヒットだけで なく 四球や 死球も 数えるので、打率より 打者の 働きが よく 分かると いわれます。"
+ },
+ {
+  "id": "tc-shubikatame",
+  "name": "守備固め",
+  "reading": "しゅびがため",
+  "journey": "tactic",
+  "category": "交代と起用",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "tactic:sub",
+  "relatedTerms": [
+   "tc-daida",
+   "tc-daisou"
+  ],
+  "description": "リードしている 終盤に、守りの うまい 選手を 入れて 守りを 強く する 交代です。打つ 力より 守る 力を 大切に する 場面で 使います。"
+ },
+ {
+  "id": "tc-zenshin",
+  "name": "前進守備",
+  "reading": "ぜんしんしゅび",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "tactic:shift",
+  "relatedTerms": [
+   "tc-backhome",
+   "tc-shift"
+  ],
+  "description": "内野手や 外野手が ふだんより 前に 出て 守る 作戦です。三塁の 走者を かえしたくない 場面で、ゴロを 本塁へ 投げて アウトを ねらいます。"
+ },
+ {
+  "id": "tc-setup",
+  "name": "セットアッパー",
+  "reading": "せっとあっぱー",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "tactic:closer",
+  "relatedTerms": [
+   "tc-closer",
+   "tc-hold",
+   "tc-kachipattern"
+  ],
+  "description": "クローザーの 前、おもに 8回を まかされる 救援投手です。勝ちパターンの 大事な ひとりで、ホールドが つく 場面で よく 投げます。"
+ },
+ {
+  "id": "tc-kachipattern",
+  "name": "勝ちパターン",
+  "reading": "かちぱたーん",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "tactic:closer",
+  "relatedTerms": [
+   "tc-setup",
+   "tc-closer"
+  ],
+  "description": "リードした 試合の 終盤に 投げる 救援投手の 決まった 順番です。7回・8回・9回を 決まった 投手で つないで、逃げきる 形を いいます。"
+ },
+ {
+  "id": "tc-ops",
+  "name": "OPS",
+  "reading": "おーぴーえす",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "tactic:bstats",
+  "relatedTerms": [
+   "tc-obp",
+   "tc-slg",
+   "tc-woba"
+  ],
+  "description": "出塁率と 長打率を 足した 数字で、打者の 力を ひとつで 表します。計算が かんたんで 分かりやすく、解説で よく 使われます。"
+ },
+ {
+  "id": "tc-naka6",
+  "name": "中6日",
+  "reading": "なかむいか",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "tactic:rotation",
+  "relatedTerms": [
+   "tc-rotation",
+   "tc-naka4"
+  ],
+  "description": "先発投手が 登板の あと、あいだに 6日 休んで 次に 投げる 間隔です。NPB の 先発は この 間隔が 多く、6人で ローテーションを 回します。"
+ },
+ {
+  "id": "tc-naka4",
+  "name": "中4日",
+  "reading": "なかよっか",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "tactic:rotation",
+  "relatedTerms": [
+   "tc-naka6",
+   "tc-rotation"
+  ],
+  "description": "登板の あいだに 4日 休んで 次に 投げる 間隔です。試合の 間が つまった MLB で よく 見られ、5人の 先発で 回す ときの めやすに なります。"
+ },
+ {
+  "id": "tc-tamakazu",
+  "name": "球数制限",
+  "reading": "たまかずせいげん",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "💯",
+  "mapNode": "tactic:rotation",
+  "relatedTerms": [
+   "tc-rotation",
+   "tc-keitou"
+  ],
+  "description": "投手の 肩や ひじを 守る ため、1試合に 投げる 球の 数を 決めて おく 考えかたです。MLB の 先発は 100球 前後が めやすと よく いわれます。高校野球の 決まりは「投球数制限」と いいます。"
+ },
+ {
+  "id": "tc-smallball",
+  "name": "スモールベースボール",
+  "reading": "すもーるべーすぼーる",
+  "journey": "tactic",
+  "category": "攻めの作戦",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "tactic:small",
+  "relatedTerms": [
+   "tc-tsunagi",
+   "tc-bigini"
+  ],
+  "description": "バント・盗塁・ヒットエンドランなど 小さな 作戦を つみかさねて 1点ずつ とる 野球です。日本の 野球の 特徴として よく 名前が あがります。"
+ },
+ {
+  "id": "tc-leadoff",
+  "name": "リードオフマン",
+  "reading": "りーどおふまん",
+  "journey": "tactic",
+  "category": "攻めの作戦",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "tactic:order",
+  "relatedTerms": [
+   "tc-obp",
+   "tc-cleanup"
+  ],
+  "description": "1番打者の ことで、試合の はじめに 先頭で 打席に 立ち 塁に 出る 役わりの 選手です。出塁率が 高く、足の 速い 選手が よく まかされます。"
+ },
+ {
+  "id": "tc-kankyu",
+  "name": "緩急",
+  "reading": "かんきゅう",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "tactic:pitching",
+  "relatedTerms": [
+   "tc-haikyu",
+   "tc-kimedama"
+  ],
+  "description": "速い 球と おそい 球を まぜて、打者の タイミングを ずらす ことです。同じ 腕の ふりで 球の 速さが ちがうと、打者は とても 打ちにくく なります。"
+ },
+ {
+  "id": "tc-inhigh",
+  "name": "インハイ",
+  "reading": "いんはい",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "tactic:pitching",
+  "relatedTerms": [
+   "tc-outlow",
+   "tc-taikakusen",
+   "tc-misedama"
+  ],
+  "description": "ストライクゾーンの 内角の 高め、打者の 胸元に 近い ところです。ここを つく 速い 球は、外角の 球を 生かす ための 大事な 1球に なります。"
+ },
+ {
+  "id": "tc-outlow",
+  "name": "アウトロー",
+  "reading": "あうとろー",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "↘️",
+  "mapNode": "tactic:pitching",
+  "relatedTerms": [
+   "tc-inhigh",
+   "tc-taikakusen"
+  ],
+  "description": "ストライクゾーンの 外角の 低め、打者から いちばん 遠い ところです。強く 打ちかえし にくい ため、「投球の 基本」と いわれる コースです。"
+ },
+ {
+  "id": "tc-misedama",
+  "name": "見せ球",
+  "reading": "みせだま",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "tactic:pitching",
+  "relatedTerms": [
+   "tc-haikyu",
+   "tc-inhigh"
+  ],
+  "description": "打ちとる ためでは なく、打者に 見せて 意識させる ために 投げる 球です。内角の 速い 球を 見せてから 外角で 勝負するのが よく ある 形です。"
+ },
+ {
+  "id": "tc-slg",
+  "name": "長打率",
+  "reading": "ちょうだりつ",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "tactic:bstats",
+  "relatedTerms": [
+   "tc-obp",
+   "tc-ops"
+  ],
+  "description": "打数 1つ あたり いくつ 塁を すすめる 当たりを 打ったかを 表す 数字です。単打 1・二塁打 2・三塁打 3・本塁打 4と 数えて、打数で わります。"
+ },
+ {
+  "id": "tc-k9",
+  "name": "奪三振率",
+  "reading": "だっさんしんりつ",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "tactic:pstats",
+  "relatedTerms": [
+   "tc-kbb",
+   "tc-era"
+  ],
+  "description": "投手が 9回を 投げたら 三振を いくつ とるかを 表す 数字です。三振 × 9 ÷ 投球回で 計算し、大きいほど 三振を とる 力が あります。"
+ },
+ {
+  "id": "tc-whip",
+  "name": "WHIP",
+  "reading": "ういっぷ",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "tactic:pstats",
+  "relatedTerms": [
+   "tc-era",
+   "tc-fip",
+   "tc-kbb"
+  ],
+  "description": "投手が 1イニング あたり 何人の 走者を 出したかを 表す 数字です。(四球 + 被安打)÷ 投球回で 計算し、小さいほど 走者を 出さない 投手です。"
+ },
+ {
+  "id": "tc-qs",
+  "name": "QS(クオリティスタート)",
+  "reading": "きゅーえす",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "tactic:pstats",
+  "relatedTerms": [
+   "tc-era",
+   "tc-rotation"
+  ],
+  "acceptedReadings": [
+   "きゅーえす",
+   "くおりてぃすたーと"
+  ],
+  "description": "先発投手が 6回 以上を 投げて、自責点を 3点 以内に おさえる ことです。先発が 試合を つくれたかを 見る めやすに なります。"
+ },
+ {
+  "id": "tc-shift",
+  "name": "守備シフト",
+  "reading": "しゅびしふと",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "tactic:shift",
+  "relatedTerms": [
+   "tc-zenshin",
+   "tc-naiya5"
+  ],
+  "ruleset": "MLB",
+  "description": "打者の 打球が とぶ 方向に 合わせて、守る 位置を 大きく 動かす 作戦です。MLB では 2023年から、内野手を 片がわに 寄せすぎる 形が 制限されました。"
+ },
+ {
+  "id": "tc-tsunagi",
+  "name": "つなぎの野球",
+  "reading": "つなぎのやきゅう",
+  "journey": "tactic",
+  "category": "攻めの作戦",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧵",
+  "mapNode": "tactic:small",
+  "relatedTerms": [
+   "tc-smallball",
+   "tc-bigini"
+  ],
+  "description": "長打に たよらず、ヒット・四球・バントで 次の 打者へ つないで 点を とる 野球です。ひとりひとりが 自分の 役わりを 果たす ことが 大切に されます。"
+ },
+ {
+  "id": "tc-bigini",
+  "name": "ビッグイニング",
+  "reading": "びっぐいにんぐ",
+  "journey": "tactic",
+  "category": "攻めの作戦",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "tactic:small",
+  "relatedTerms": [
+   "tc-smallball",
+   "tc-cleanup"
+  ],
+  "description": "1つの 回に たくさんの 点が 入る ことです。長打や 連打が つづくと 生まれ、試合の 流れを 一気に 変えます。"
+ },
+ {
+  "id": "tc-onepoint",
+  "name": "ワンポイントリリーフ",
+  "reading": "わんぽいんとりりーふ",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "☝️",
+  "mapNode": "tactic:bullpen",
+  "relatedTerms": [
+   "tc-nakatsugi",
+   "tc-keitou"
+  ],
+  "description": "左打者 ひとりなど、決まった 打者だけを おさえる ために 出る 救援投手です。MLB では 2020年から 打者 3人と 対戦する 決まりが でき、ほとんど 見られなく なりました。"
+ },
+ {
+  "id": "tc-longrelief",
+  "name": "ロングリリーフ",
+  "reading": "ろんぐりりーふ",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🕰️",
+  "mapNode": "tactic:bullpen",
+  "relatedTerms": [
+   "tc-nakatsugi",
+   "tc-bullpenday"
+  ],
+  "description": "先発投手が 早く 降りた ときなどに、何回も 長く 投げる 救援投手です。ほかの 救援投手を 休ませる 大事な 役わりです。"
+ },
+ {
+  "id": "tc-saber",
+  "name": "セイバーメトリクス",
+  "reading": "せいばーめとりくす",
+  "journey": "tactic",
+  "category": "データ野球",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "tactic:sabr",
+  "relatedTerms": [
+   "tc-war",
+   "tc-ops",
+   "tc-statcast"
+  ],
+  "description": "野球の 記録を 数学や 統計で 調べて、選手の 本当の 力や 勝つ ための 作戦を 考える 方法です。アメリカ野球学会(SABR)の 名前から 生まれた ことばです。"
+ },
+ {
+  "id": "tc-v9",
+  "name": "V9",
+  "reading": "ぶいないん",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🏆",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-kantoku",
+   "tc-idyakyu"
+  ],
+  "country": "日本",
+  "description": "川上 監督の 巨人が 1965年から 1973年まで、9年 つづけて 日本一に なった ことです。長嶋茂雄と 王貞治が 中心でした。"
+ },
+ {
+  "id": "tc-idyakyu",
+  "name": "ID野球",
+  "reading": "あいでぃーやきゅう",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-v9",
+   "tc-haikyu"
+  ],
+  "country": "日本",
+  "description": "野村克也 監督が、データを 使って 戦う 野球に つけた 名前です。相手の くせや 配球を 調べて 作戦に 生かし、ヤクルトで 3回 日本一に なりました。"
+ },
+ {
+  "id": "tc-kuriyama",
+  "name": "栗山英樹",
+  "reading": "くりやまひでき",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎖️",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-kantoku",
+   "tc-nitoryu",
+   "tc-hara"
+  ],
+  "country": "日本",
+  "description": "2023年の WBC で 侍ジャパンを ひきいて 優勝した 監督です。決勝で アメリカに 3-2 で 勝ち、日本に 3回目の 優勝を もたらしました。"
+ },
+ {
+  "id": "tc-niban",
+  "name": "2番打者最強説",
+  "reading": "にばんだしゃさいきょうせつ",
+  "journey": "tactic",
+  "category": "攻めの作戦",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "tactic:order",
+  "relatedTerms": [
+   "tc-cleanup",
+   "tc-leadoff",
+   "tc-saber"
+  ],
+  "description": "いちばん 打てる 打者を 2番に 置くと よい と いう 考えかたです。打席が 多く 回り、走者が いる 場面でも 打てると データで 示され、MLB から 広まりました。"
+ },
+ {
+  "id": "tc-opener",
+  "name": "オープナー",
+  "reading": "おーぷなー",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "tactic:bullpen",
+  "relatedTerms": [
+   "tc-bullpenday",
+   "tc-longrelief"
+  ],
+  "description": "ふだんは 救援で 投げる 投手が 先発し、1回だけ など 短く 投げる 作戦です。相手の 上位打線を おさえてから、2番手の 投手が 長く 投げます。"
+ },
+ {
+  "id": "tc-bullpenday",
+  "name": "ブルペンデー",
+  "reading": "ぶるぺんでー",
+  "journey": "tactic",
+  "category": "投手の起用",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🚒",
+  "mapNode": "tactic:bullpen",
+  "relatedTerms": [
+   "tc-opener",
+   "tc-keitou"
+  ],
+  "description": "先発投手を 立てずに、救援投手 何人かで 1試合を 投げきる 日の ことです。先発投手が 足りない ときなどに 使う 作戦です。"
+ },
+ {
+  "id": "tc-war",
+  "name": "WAR",
+  "reading": "うぉー",
+  "journey": "tactic",
+  "category": "データ野球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🌟",
+  "mapNode": "tactic:sabr",
+  "relatedTerms": [
+   "tc-saber",
+   "tc-ops"
+  ],
+  "acceptedReadings": [
+   "うぉー",
+   "だぶりゅーえーあーる"
+  ],
+  "description": "その 選手が、代わりに すぐ 呼べる 選手(代替選手)に くらべて、チームの 勝ちを いくつ ふやしたかを 表す 数字です。打つ・守る・走る・投げるを まとめて、ポジションの ちがう 選手も くらべられます。"
+ },
+ {
+  "id": "tc-naiya5",
+  "name": "内野5人シフト",
+  "reading": "ないやごにんしふと",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "tactic:shift",
+  "relatedTerms": [
+   "tc-zenshin",
+   "tc-shift",
+   "tc-backhome"
+  ],
+  "description": "外野手を ひとり 内野に 入れて、内野手を 5人に する 守りです。サヨナラの 場面などで、ゴロで ホームを 守る ために 使われる 思いきった 作戦です。"
+ },
+ {
+  "id": "tc-backhome",
+  "name": "バックホーム体制",
+  "reading": "ばっくほーむたいせい",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "tactic:shift",
+  "relatedTerms": [
+   "tc-zenshin",
+   "tc-naiya5"
+  ],
+  "description": "外野手が 前に 出て 守り、ヒットでも すぐ 本塁へ 投げて 走者を アウトに する 構えです。1点も やれない 終盤に とる 守りの 作戦です。"
+ },
+ {
+  "id": "tc-fip",
+  "name": "FIP",
+  "reading": "ふぃっぷ",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "tactic:pstats",
+  "relatedTerms": [
+   "tc-era",
+   "tc-babip"
+  ],
+  "description": "本塁打・四球・死球・三振だけで 計算する 投手の 数字です。守る 野手の うまさに 左右されない、投手 自身の 力を 見る ために 使います。"
+ },
+ {
+  "id": "tc-babip",
+  "name": "BABIP",
+  "reading": "ばびっぷ",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "tactic:bstats",
+  "relatedTerms": [
+   "tc-fip",
+   "tc-woba"
+  ],
+  "description": "本塁打を のぞく、前に とんだ 打球が ヒットに なった 割合です。運に 左右されやすく、高すぎる ときは この先 下がる かも しれないと 見ます。"
+ },
+ {
+  "id": "tc-woba",
+  "name": "wOBA",
+  "reading": "うおば",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "tactic:bstats",
+  "relatedTerms": [
+   "tc-ops",
+   "tc-war"
+  ],
+  "acceptedReadings": [
+   "うおば",
+   "うぉば"
+  ],
+  "description": "四球・単打・二塁打・本塁打などに 点への つながりやすさの 重みを つけて、打者の 力を 1つに まとめた 数字です。出塁率と 同じくらいの 大きさに なるよう 作られています。"
+ },
+ {
+  "id": "tc-kbb",
+  "name": "K/BB",
+  "reading": "けーびーびー",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "tactic:pstats",
+  "relatedTerms": [
+   "tc-k9",
+   "tc-whip"
+  ],
+  "description": "投手の 奪三振の 数を 与四球の 数で わった 数字です。三振を とる 力と、四球を 出さない 制球力を いっしょに 見る ことが できます。"
+ },
+ {
+  "id": "tc-tokutenken",
+  "name": "得点圏打率",
+  "reading": "とくてんけんだりつ",
+  "journey": "tactic",
+  "category": "記録の指標",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "tactic:bstats",
+  "relatedTerms": [
+   "tc-obp",
+   "tc-cleanup"
+  ],
+  "description": "二塁や 三塁に 走者が いる 場面での 打率です。チャンスに 強いかを 見る 数字ですが、打席が 少ないので 年に よって 大きく 変わります。"
+ },
+ {
+  "id": "tc-taikakusen",
+  "name": "対角線",
+  "reading": "たいかくせん",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "tactic:pitching",
+  "relatedTerms": [
+   "tc-inhigh",
+   "tc-outlow"
+  ],
+  "description": "内角の 高めと 外角の 低めのように、ストライクゾーンの 対角に 投げ分ける 配球です。目の 動きが 大きく なるので、打者は 球を 追いにくく なります。"
+ },
+ {
+  "id": "tc-countdama",
+  "name": "カウント球",
+  "reading": "かうんとだま",
+  "journey": "tactic",
+  "category": "守りと配球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "tactic:pitching",
+  "relatedTerms": [
+   "tc-kimedama",
+   "tc-haikyu"
+  ],
+  "description": "ストライクを とって、カウントを 投手に 有利に する ための 球です。決め球とは 別に、ストライクを とれる 安心な 球を 持つ ことが 大切です。"
+ },
+ {
+  "id": "tc-barrel",
+  "name": "バレル",
+  "reading": "ばれる",
+  "journey": "tactic",
+  "category": "データ野球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🛢️",
+  "mapNode": "tactic:sabr",
+  "relatedTerms": [
+   "tc-dakyusokudo",
+   "tc-flyball",
+   "tc-statcast"
+  ],
+  "description": "打球の 速さと 角度が どちらも ちょうど よく、長打に なりやすい 当たりの ことです。スタットキャストで 測られ、強打者ほど バレルが 多く なります。"
+ },
+ {
+  "id": "tc-dakyusokudo",
+  "name": "打球速度",
+  "reading": "だきゅうそくど",
+  "journey": "tactic",
+  "category": "データ野球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "tactic:sabr",
+  "relatedTerms": [
+   "tc-barrel",
+   "tc-flyball"
+  ],
+  "description": "バットに 当たった あと、打球が とび出す 速さです。速いほど ヒットや 長打に なりやすく、打者の 力強さを 表す 数字として 使われます。"
+ },
+ {
+  "id": "tc-flyball",
+  "name": "フライボール革命",
+  "reading": "ふらいぼーるかくめい",
+  "journey": "tactic",
+  "category": "データ野球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "tactic:sabr",
+  "relatedTerms": [
+   "tc-dakyusokudo",
+   "tc-barrel"
+  ],
+  "country": "アメリカ",
+  "description": "ゴロより 角度の ある フライの ほうが 長打に なりやすいと データで 分かり、打球を 上げる 打ちかたが 広まった 流れです。2010年代の MLB で 起きました。"
+ },
+ {
+  "id": "tc-statcast",
+  "name": "スタットキャスト",
+  "reading": "すたっときゃすと",
+  "journey": "tactic",
+  "category": "データ野球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "tactic:sabr",
+  "relatedTerms": [
+   "tc-barrel",
+   "tc-kaitensu"
+  ],
+  "country": "アメリカ",
+  "description": "MLB が すべての 球場で 使う、ボールと 選手の 動きを 測る しくみです。打球の 速さや 角度、投球の 回転数、走る 速さまで 数字に なります。"
+ },
+ {
+  "id": "tc-kaitensu",
+  "name": "回転数",
+  "reading": "かいてんすう",
+  "journey": "tactic",
+  "category": "データ野球",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "tactic:sabr",
+  "relatedTerms": [
+   "tc-statcast",
+   "tc-kankyu"
+  ],
+  "description": "投げた ボールが 1分間に 何回 回るかを 表す 数字です。同じ 速さでも 回転の 多い ストレートは 落ちにくく、打者には 浮き上がる ように 見えます。"
+ },
+ {
+  "id": "tc-ogimagic",
+  "name": "仰木マジック",
+  "reading": "おおぎまじっく",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🪄",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-kantoku",
+   "tc-idyakyu"
+  ],
+  "country": "日本",
+  "description": "相手や 調子に 合わせて 打順を よく 入れかえる、近鉄と オリックスを ひきいた 名監督の 采配の よび名です。オリックスで 1996年に 日本一に なり、イチローを 育てた ことでも 知られます。"
+ },
+ {
+  "id": "tc-hoshino",
+  "name": "星野仙一",
+  "reading": "ほしのせんいち",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⭐",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-kantoku",
+   "tc-hara"
+  ],
+  "country": "日本",
+  "description": "中日・阪神・楽天の 3つの チームで リーグ優勝した 監督です。2013年には 楽天を はじめての 日本一に 導きました。"
+ },
+ {
+  "id": "tc-hara",
+  "name": "原辰徳",
+  "reading": "はらたつのり",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎌",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-kuriyama",
+   "tc-hoshino"
+  ],
+  "country": "日本",
+  "description": "巨人の 監督として、リーグ優勝 9回・日本一 3回を はたした 監督です。2009年の WBC では 日本代表を ひきいて 優勝しました。"
+ },
+ {
+  "id": "tc-larussa",
+  "name": "トニー・ラルーサ",
+  "reading": "とにーらるーさ",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-torre",
+   "tc-keitou"
+  ],
+  "country": "アメリカ",
+  "description": "ワールドシリーズを 3回 制した MLB の 名監督です。1989年は アスレチックス、2006年と 2011年は カージナルスで 優勝しました。"
+ },
+ {
+  "id": "tc-torre",
+  "name": "ジョー・トーリ",
+  "reading": "じょーとーり",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🗽",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-larussa",
+   "tc-stengel"
+  ],
+  "country": "アメリカ",
+  "description": "ヤンキースの 監督として、1996年・1998年・1999年・2000年と ワールドシリーズを 4回 制した 名監督です。"
+ },
+ {
+  "id": "tc-stengel",
+  "name": "ケーシー・ステンゲル",
+  "reading": "けーしーすてんげる",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎩",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-torre",
+   "tc-v9"
+  ],
+  "country": "アメリカ",
+  "description": "ヤンキースの 監督として、1949年から 1953年まで 5年 つづけて ワールドシリーズを 制した 名監督です。優勝は 全部で 7回です。"
+ },
+ {
+  "id": "tc-cox",
+  "name": "ボビー・コックス",
+  "reading": "ぼびーこっくす",
+  "journey": "tactic",
+  "category": "名監督",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "tactic:manager",
+  "relatedTerms": [
+   "tc-larussa",
+   "tc-rotation"
+  ],
+  "country": "アメリカ",
+  "description": "ブレーブスの 監督として、1995年に ワールドシリーズを 制した 名監督です。力の ある 先発投手たちを 中心に 戦いました。"
+ }
+]

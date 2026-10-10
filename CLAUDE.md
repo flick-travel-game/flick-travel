@@ -968,7 +968,12 @@
   ストックトンの 記録は「引退した とき」/ ヴィンス・カーターの「いちばん 長い」は レブロンが こえたので「4つの 年代で 試合に 出た」/ タウラジは「2023年に はじめて 1万点」/ ゴールテンディングは「決まらなくても 点」/
   ゼロステップは FIBA も NBA も 同じ / ラプターズの「アメリカの 外の ただ 1つ」は 変わりうるので 外した / プレーインは「2021年から 今の 形」/ EASL は 東アジア / UNC の 読み / マンツーマンは JBA の U12・U15 の 決まり
 - ふりがなは 確かめ役が `python3 tools/basket/ruby_dump.py <旅>` で 全語 見た。`FIX` に「ゴール下(した)」「1人(ひとり)」「2人(ふたり)」を 足した。ほか(一しゅん・2歩・日本中・アメリカ中・市場・1年中・帆船・通じる …)は 文を 言いかえて さけた
-- 絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(`tools/basket/placeholder_icon.py`。木の 床に オレンジの ボール)。`hero=False`・`logo=False`。
+- **トップの 絵は 入れた**(2026-10-10。`basket/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**:
+  ⚠️ 1回目は 入れなかった(題名の「リ」が くずれ・札 36こ中 21こが ゲームに 無い・4択が 説明 → ことばの 形で ない・「ばす」)。
+  2回目は 札 36こ・4択(とらべりんぐ)・つながる ことば(すくりーん・ぱす)が ぜんぶ ゲームに ある 読みで、旅の 箱も 合っていた。
+  のこった 2か所は **絵の 中で 直した**(`tools/basket/fix_text.py`。Noto Sans CJK JP Bold を もとの はばに ちぢめて 置く):
+  4択 B「だぷるどりぷる」→「だぶるどりぶる」/ 9番の 札「すりーえっ?すすりー」(くずれ)→「すりーえっくすすりー」。もとの 絵は 入れものに 入れていない
+- アイコンと 題名は まだ 仮(`tools/basket/placeholder_icon.py`。木の 床に オレンジの ボール。`logo=False`)。
   届いたら 四角い 絵 → `tools/basket/art/square-src.png` → `python3 tools/icon_from_square.py basket`(`iconv` +1)/ 題名の 透明 PNG → `tools/basket/art/title-src.png` → `python3 tools/title_from_art.py basket`(`logo=True`・`art.word` を 実寸)/ `basket/hero.webp`(`hero=True`)。
   ⚠️ 実在の 選手の 顔・チームの ロゴ・大会の ロゴ・スポンサー名・シューズの ロゴを 描かせない。届いたら まず 字を 切り出して 読む(とても 長い 名前なので「フリックワールドバスケ」に 落ちやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` と 規約の 一覧 `FLICK_SERIES_GAMES` に 足した(speed-king)。販売ページ `HOME_GAMES` は **絵が 届いてから**(トップの 絵・題名が 要る)

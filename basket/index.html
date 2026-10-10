@@ -428,6 +428,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックワールドバスケットボール</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリックワールドバスケットボール" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -559,7 +560,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"basket", name:"フリックワールドバスケットボール", modes:(typeof BASKET === "object" ? BASKET.modes : []), assets:"../", logo:false, hero:false, dir:"basket/", lead:"バスケの きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・FIBA(国際ルール)か NBA の ルールか・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。バスケが すきな 小学生の ことばから はじめて、ミニバスの コーチ、解説者が 使う 戦術の ことばまで。はじめの ゴールは 桃の かご、ルールは 国際ルールと NBA で ちがう、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは FIBA と NBA の いまの 版で 確かめたよ(毎年 変わる ことが あるよ)。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の バスケが つながって 見えてくるよ。FIBA・NBA・各リーグ・各チーム・各選手とは 関係ありません。" };
+const GAME = { id:"basket", name:"フリックワールドバスケットボール", modes:(typeof BASKET === "object" ? BASKET.modes : []), assets:"../", logo:false, hero:true, dir:"basket/", lead:"バスケの きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・FIBA(国際ルール)か NBA の ルールか・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。バスケが すきな 小学生の ことばから はじめて、ミニバスの コーチ、解説者が 使う 戦術の ことばまで。はじめの ゴールは 桃の かご、ルールは 国際ルールと NBA で ちがう、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは FIBA と NBA の いまの 版で 確かめたよ(毎年 変わる ことが あるよ)。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の バスケが つながって 見えてくるよ。FIBA・NBA・各リーグ・各チーム・各選手とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

@@ -148,6 +148,9 @@ body.playing{overflow:hidden}
 .board-tabs{display:flex;gap:6px;margin:8px 0}
 .board-tabs button{flex:1;padding:6px 0;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700}
 .board-tabs button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.board-champ{margin:6px 0 8px;padding:6px 10px;border-radius:12px;background:#fff7e0;color:#a35b00;font-weight:800;font-size:14px;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .board-champ{background:#3a2f12;color:#ffd77a}}
+:root[data-theme="dark"] .board-champ{background:#3a2f12;color:#ffd77a}
 .board-body{min-height:2.4em}
 .board-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-top:1px solid var(--line);font-size:14px}
 .board-row:first-child{border-top:none}
@@ -980,7 +983,7 @@ function byGrade(){ return store("flick-bygrade") === "1"; }
    記録の受けつけと 読み出しは かずとも(kazutomo.app)の サーバーが 代わりにやる(speed-king の /api/flick/*)。
    ここには 鍵も 表も 無い。つながらなくても あそびは 止めない */
 const RANK_API = "https://kazutomo.app/api/flick";
-const PERIODS = [["today","きょう"],["week","今週"],["all","いままで"]];
+const PERIODS = [["today","きょう"],["week","今週"],["month","今月"],["all","いままで"]];  // ⚠️「今月」は 2026-10-10(けいくん「今月のランキングだけ」。1位は「👑 今月の チャンピオン」)。かずともの src/lib/period.ts と 同じ 4つ
 /* ── おうちの方の アカウントと つなぐ(かずとも ④-c の 線と まったく同じ) ──
    おうちの方が かずとも に ログインして https://kazutomo.app/flick-link を ひらくと、ここへ ?link=<しるし> で もどってくる。
    しるしは 端末に1つ(flick-link。同じ 住所の下の 4つの ゲームで 共通)。GET /api/flick/plan で できることを 聞く:
@@ -1985,7 +1988,8 @@ async function drawBoard(m, lv, id){
       : boardSent === "unlisted" ? '<p class="board-note">この回は ランキングに 名前が のりませんでした。ログインすると のります</p>'
                                   : '<p class="board-note">この回は ランキングに のりませんでした: ' + esc(boardSent) + '</p>') : "";
     if(!rows.length){ body.innerHTML = '<p class="board-note">まだ だれも いないよ。いちばんのりに なれるかも！</p>' + note; return; }
-    body.innerHTML = rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
+    const champ = boardPeriod === "month" ? '<p class="board-champ">👑 今月の チャンピオン: ' + esc(rows[0].name) + '</p>' : "";  // 月1回の 大会の かわり(ニックネームだけ)
+    body.innerHTML = champ + rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
       (i < 3 ? '<span class="rk md">' + MEDALS[i] + '</span>' : '<span class="rk">' + (i+1) + '位</span>') +
       '<span class="nm">' + esc(r.name) + '</span><span class="tm">' + (r.ms/1000).toFixed(2) + '秒</span></div>').join("") + note;
   }catch(e){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません(つながりませんでした)</p>'; }

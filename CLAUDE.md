@@ -1625,3 +1625,5 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - ゲームごとの 中身は `tools/build_games.py` の `build()` が 入れかえる: 説明 = その ゲームの `lead` +「かずともの フリックゲーム。」/ 住所 = **`https://kazutomo.app/flick/<gid>/`**(github.io は 写し。本当の 住所は kazutomo.app)/ 絵 = その ゲームの `hero.webp`(無ければ 世界の 絵)
 - ⚠️ `lead` を 直すと 検索の 説明も 変わる。**`lead` は 検索で いちばん 人目に つく 文**と 思って 書く
 - かずとも側(speed-king)は `layout.tsx` の noindex を 外し、`sitemap.ts` に ゲームの ページを 足した(同じ日)
+
+- ランキングの 👑 チャンピオンは **4つの 区切り ぜんぶ**(けいくん 2026-10-10「すべて出して」): きょうの / 今週の / 今月の チャンピオン・**歴代 チャンピオン**(いままで)。字は かずともの `src/lib/period.ts` の `champ` と 同じ

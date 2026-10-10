@@ -230,8 +230,13 @@ const EIGO = (() => {
   function tgtHtml(q, n, err){
     if(inKana){
       const t = typeof target === "string" && target ? target : q.r;
-      let k = "";
-      for(let i = 0; i < t.length; i++) k += '<span class="' + (i < n ? "d" : (i === n ? (err ? "x" : "n") : "c")) + '">' + esc(t[i]) + '</span>';
+      // 語ごとに すき間を あけて 見せる(けいくん 2026-10-11「問題表示は単語ごとに半角スペースが欲しい」)。打つ 字(target)に スペースは 入れない
+      const sp = [q.krs].concat(q.kals || []).find(x => x && x.replace(/ /g, "") === t) || t;
+      let k = "", i = 0;
+      for(const ch of sp){
+        if(ch === " "){ k += '<span class="eg-gap ' + (i > 0 && i <= n ? "d" : "c") + '"> </span>'; continue; }
+        k += '<span class="' + (i < n ? "d" : (i === n ? (err ? "x" : "n") : "c")) + '">' + esc(ch) + '</span>'; i++;
+      }
       return k;
     }
     let h = "", p = 0;
@@ -480,6 +485,7 @@ const EIGO = (() => {
   const css = `
 .target{word-break:normal;overflow-wrap:anywhere;font-size:clamp(20px,6vw,26px);letter-spacing:.01em;line-height:1.55}
 .target .eg-sk{border:0}
+.target .eg-gap{border:0;padding:0 .12em}
 .eg-gram{font-size:clamp(18px,5.4vw,22px)}.eg-en{font-size:clamp(17px,4.8vw,21px);line-height:1.45;word-break:normal;overflow-wrap:anywhere}
 .eg-input{display:grid;grid-template-columns:auto 1fr 1fr;gap:6px;align-items:center;margin:0 0 12px}.eg-input>span{font-size:12.5px;font-weight:800;color:#334155}
 .eg-input button{padding:8px 6px;border-radius:12px;border:1.5px solid #cbd5e1;background:#fff;color:#334155;font:inherit;font-size:14px;font-weight:900;cursor:pointer;line-height:1.3}

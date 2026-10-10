@@ -43,9 +43,9 @@ def check(d):
         if not NAME_OK.fullmatch(n): errs.append(f"{tid}: name「{n}」に 使えない 字(英字・空白・' , . ? ! - だけ。数字も ダメ)")
         if "  " in n or n != n.strip(): errs.append(f"{tid}: name の 空白が おかしい")
         for kr in [t.get("reading", "")] + list(t.get("acceptedReadings") or []):
-            if not re.fullmatch(r"[ぁ-ゖー]+", kr or ""): errs.append(f"{tid}: 読み「{kr}」は ひらがなと ー だけ(英語の 読みを ひらがなで。けいくん 2026-10-10)")
+            if not re.fullmatch(r"[ぁ-ゖー]+( [ぁ-ゖー]+)*", kr or ""): errs.append(f"{tid}: 読み「{kr}」は ひらがなと ー と 語の あいだの 半角スペース だけ(英語の 読みを ひらがなで。けいくん 2026-10-10)")
         if t.get("acceptedReadings") and t["acceptedReadings"][0] != t.get("reading"): errs.append(f"{tid}: acceptedReadings の 先頭は reading")
-        if len(t.get("reading", "")) > 60: warn.append(f"{tid}: 読みが 長い({len(t['reading'])}字)")
+        if len(t.get("reading", "").replace(" ", "")) > 60: warn.append(f"{tid}: 読みが 長い({len(t['reading'])}字)")
         r = norm(n)
         if len(r) > MAXLEN: errs.append(f"{tid}: 打つ 字が {len(r)}字(上限 {MAXLEN})")
         if t.get("journey") in ("fudoshi", "jukugo") and n.rstrip()[-1:] in ".?!": errs.append(f"{tid}: 不規則動詞・熟語は 文では ない(ピリオドを 付けない)")
@@ -116,7 +116,7 @@ def main():
     out = []
     for t in d["terms"]:
         out.append(dict(id=t["id"], n=t["name"], r=t["typed"], j=t["journey"], c=t["category"], dv=t["difficulty"], ty=t["type"],
-                        e=t["emoji"], rel=t["relatedTerms"], ja=t["ja"], kr=t["reading"], kal=[a for a in (t.get("acceptedReadings") or []) if a != t["reading"]], jarb=rub(t["ja"]), ds=t["description"], rb=rub(t["description"])))
+                        e=t["emoji"], rel=t["relatedTerms"], ja=t["ja"], kr=t["reading"].replace(" ", ""), krs=t["reading"], kal=[a.replace(" ", "") for a in (t.get("acceptedReadings") or []) if a != t["reading"]], kals=[a for a in (t.get("acceptedReadings") or []) if a != t["reading"]], jarb=rub(t["ja"]), ds=t["description"], rb=rub(t["description"])))
     m = d["meta"]
     js = dict(asOf=m["asOf"], note=m["note"], journeys=m["journeys"], levels=m["levels"], titles=m["titles"], allTitle=m["allTitle"],
               diagrams={}, missions=[], list=out)

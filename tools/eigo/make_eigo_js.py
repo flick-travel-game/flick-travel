@@ -155,7 +155,7 @@ rep(".ai-panel{background:linear-gradient(160deg,#edf2ff 0%,#fff9db 55%,#ebfbee 
 s = s.replace("#3b5bdb", "#0b7285")
 rep("const css = `\n", """const css = `
 .target{word-break:normal;overflow-wrap:anywhere;font-size:clamp(20px,6vw,26px);letter-spacing:.01em;line-height:1.55}
-.target .eg-sk{border:0}
+.target .eg-sk{border:0}\n.target .eg-gap{border:0;padding:0 .12em}
 .eg-gram{font-size:clamp(18px,5.4vw,22px)}
 .eg-learn p{margin:0}.eg-lh{display:flex;align-items:center;gap:6px;font-size:15px}.eg-lh b{word-break:break-word}
 .eg-ja{font-weight:800;color:#0b7285;margin-top:2px!important}.eg-ja.big{font-size:16px;margin:8px 0 0!important}.eg-pt{font-size:12.5px;color:#334155;margin-top:2px!important}
@@ -202,8 +202,13 @@ rep("""  function tgtHtml(q, n, err){
     let h = "", p = 0;""", """  function tgtHtml(q, n, err){
     if(inKana){
       const t = typeof target === "string" && target ? target : q.r;
-      let k = "";
-      for(let i = 0; i < t.length; i++) k += '<span class="' + (i < n ? "d" : (i === n ? (err ? "x" : "n") : "c")) + '">' + esc(t[i]) + '</span>';
+      // 語ごとに すき間を あけて 見せる(けいくん 2026-10-11「問題表示は単語ごとに半角スペースが欲しい」)。打つ 字(target)に スペースは 入れない
+      const sp = [q.krs].concat(q.kals || []).find(x => x && x.replace(/ /g, "") === t) || t;
+      let k = "", i = 0;
+      for(const ch of sp){
+        if(ch === " "){ k += '<span class="eg-gap ' + (i > 0 && i <= n ? "d" : "c") + '"> </span>'; continue; }
+        k += '<span class="' + (i < n ? "d" : (i === n ? (err ? "x" : "n") : "c")) + '">' + esc(ch) + '</span>'; i++;
+      }
       return k;
     }
     let h = "", p = 0;""")

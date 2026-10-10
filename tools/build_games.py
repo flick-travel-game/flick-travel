@@ -339,10 +339,10 @@ GAMES = {
     # フリックワールドベースボール(けいくん 2026-10-10「ワールドベースボールの専門家(解説者)になれるレベルになるために必要な 知識、主要な野球リーグ、有名野球選手、有名な技、ルールをフリック形式の問題にしてください」→ 5つの 問いと「いまの スター選手は チーム名を 書かない」に「全部おすすめで」)。
     #   まとめは docs/フリックワールドベースボール-はじめかた.md。ことばは tools/baseball/terms-<旅>.json → baseball/terms.js(tools/baseball/terms_js.py)。しくみは baseball/baseball.js(BASEBALL。ワールドサッカーを 写して ⚖️ ルールの 札(NPB / MLB / 高校)を 足した)。かずともの 旅の 名前は bb で はじまる。
     #   ⚠️⚠️ いまの 所属チーム・年俸・契約金・いまの 順位・いまの 選手の 通算記録は 書かない(変わる)。人を けなさない・ケガ・乱闘・薬物・賭けは 入れない(決まりは tools/baseball/PROMPT.md)。ルールは 公認野球規則 2026年版・MLB 2026年度・高野連 2026年度(毎年 2月に 見なおす)。
-    #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/baseball/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
+    #   絵: トップの 絵は 2026-10-10 に 入れた(けいくんの ChatGPT の 絵・2回目。キューバの 旗と「とりぷるぷれー」を tools/baseball/fix_text.py で 直した)。アイコン・題名の 絵は まだ(仮の アイコン tools/baseball/placeholder_icon.py・logo=False)。
     #   届いたら tools/baseball/art/square-src.png → tools/icon_from_square.py baseball(iconv を +1)/ title-src.png → tools/title_from_art.py baseball(logo を True・art.word を 実寸に)/ baseball/hero.webp(hero を True)
-    "baseball": dict(name="フリックワールドベースボール", modes="BASEBALL", kinds=set(), color="#2f9e44", hero=False, logo=False,
-                  art=dict(word=(900, 184), hero=(1536, 1024), alt="フリックワールドベースボール", iconv=1, wordv=1),
+    "baseball": dict(name="フリックワールドベースボール", modes="BASEBALL", kinds=set(), color="#2f9e44", hero=True, logo=False,
+                  art=dict(word=(900, 184), hero=(1536, 1024), alt="フリックワールドベースボール", iconv=1, wordv=2),
                   lead="野球の きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・どの ルール(日本の プロ野球・MLB・高校野球)の 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。野球が すきな 小学生の ことばから はじめて、少年野球の コーチ、解説者が 使う 作戦と 数字の ことばまで。甲子園は 甲子(きのえね)の 年に できた、プエルトリコは WBC では アメリカと 別の 代表、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは 公認野球規則 2026年版・MLB 2026年度・高野連 2026年度で 確かめたよ(毎年 変わる ことが あるよ)。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の 野球が つながって 見えてくるよ。MLB・NPB・各リーグ・各球団・各選手とは 関係ありません。"),

@@ -40,8 +40,8 @@ GAMES = {
     "eikaiwa": dict(name="フリック英会話", modes="EIKAIWA", kinds=set(), color="#0e8f6e", hero=True, logo=True,
                     art=dict(word=(900, 213), hero=(1536, 1024), alt="フリック英会話。世界の 町と 英語の ふきだしの 中を 男の子と 犬が 飛んで 旅する 絵", iconv=3, wordv=5),
                     lead="英単語と 日常英会話を、フリックで 打ち写して 旅しよう。打つと 意味と 例文が 出て、🔊で 発音も 聞けるよ。身のまわりの ことばから はじめて、外国の人と 話せる 英語まで。",
-                    how="表示された 英語を、そのまま打ち写してね。大文字・小文字は どちらでも OK。空白や「' , . ? !」は 打たなくても すすむよ。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。",
-                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。iPhone は 日本語キーボードの「ABC」なら フリックで 英語が 打てるよ。"),
+                    how="ふつうは 英語の 読みを ひらがなで 打つよ(I → あい、Good morning! → ぐっどもーにんぐ)。上の「⌨️ 打ちかた」で「ABC」に すると 英語の つづりで 打てるよ(大文字・小文字は どちらでも OK、空白や記号は 打たなくても すすむ)。1回は かならず 10問。どのステージも いつも 同じ 10問なので、タイムを くらべられるよ。",
+                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。ABC で 打つときは、iPhone の 日本語キーボードの「ABC」なら フリックで 英語が 打てるよ。"),
     # 理科フリック旅行(けいくん 2026-09-26)。旅は 教科書の 4分野。1つの 旅の 中で 小学校 → 中学校(高校受験)→ 高校(大学受験)の 順に レベルが 並ぶ。
     #   ことばは tools/rika.tsv(10列。tools/check_rika_tsv.py で 確かめる)。宇宙・からだに ある ことばは 入れない。絵は まだ 無い(けいくんの 絵が 届いたら art を 足す)
     "rika": dict(name="フリック理科", modes=["rphys", "rchem", "rbio", "rgeo"], kinds={"rika"}, color="#3949ab", hero=True, logo=True,
@@ -504,8 +504,8 @@ def build(gid, g):
         # ⚠️ iPhone が 古い ファイルを おぼえていて 直した 画面が 出なかった(2026-09-26)→ 中身が かわると 住所の ?v= も かわる
         ver = lambda f: hashlib.sha1((ROOT / "eikaiwa" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="english.js?v=%s"></script>\n<script src="eikaiwa.js?v=%s"></script>' % (ver("english.js"), ver("eikaiwa.js")))
-        out, n = re.subn(r'<input class="answer" id="ans" type="text" lang="ja"', '<input class="answer" id="ans" type="text" lang="en"', out); assert n == 1
-        out, n = re.subn(r'<p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>', '<p>大文字・小文字は どちらでも OK。空白や「\' , . ? !」は 打たなくて大丈夫。</p>', out); assert n == 1
+        # 入力欄の ことば(ja / en)は 打ちかたに 合わせて eikaiwa.js が かえる(はじめは ひらがな。けいくん 2026-10-10)
+        out, n = re.subn(r'<p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>', '<p>ひらがなで 打つときは 英語の 読みを 打つよ。ABC で 打つときは 大文字・小文字は どちらでも OK、空白や記号は 打たなくても すすむよ。</p>', out); assert n == 1
     if g["modes"] == "SEIBI":  # 整備の コース: ことばは terms.js(tools/seibi/terms-*.json から)、しくみは seibi.js。中身が かわると ?v= も かわる
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/seibi/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "seibi" / f).read_bytes()).hexdigest()[:8]

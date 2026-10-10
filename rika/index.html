@@ -2463,7 +2463,7 @@ function planViewsRefresh(){
 function profiles(){ try{ const a = JSON.parse(store("flick-profiles") || "[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
 function saveProfiles(a){ store("flick-profiles", JSON.stringify(a)); }
 function curProfile(){ const id = store("flick-profile"); return profiles().find(p => p.id === id) || null; }
-function bestKey(m, lv){ const p = curProfile(); return "flick-best-" + (p ? "p" + p.id + "-" : "") + m + "-" + (lv+1); }
+function bestKey(m, lv){ const p = curProfile(); return "flick-best-" + (p ? "p" + p.id + "-" : "") + m + "-" + (lv+1) + (PLUG && PLUG.bestTag && PLUG.owns(m) ? PLUG.bestTag() : ""); }  // 英会話: 自己ベストは 打ちかた(ひらがな / アルファベット)ごと
 function bestOf(m, lv){ return parseFloat(recGet(bestKey(m, lv))); }
 function clearedSpots(m){
   if(PLUG && PLUG.owns(m)) return PLUG.discoveredIn(m);  // 会社は「出会った会社」

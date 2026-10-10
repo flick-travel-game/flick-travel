@@ -7,7 +7,8 @@ import json, re, sys, unicodedata
 from pathlib import Path
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parent.parent
 sys.path.insert(0, str(ROOT / "tools/kabu"))
-REQ = ("id", "text", "kind", "journey", "difficulty", "meaning", "emoji")
+REQ = ("id", "text", "kind", "journey", "difficulty", "meaning", "emoji", "reading")
+KANA = re.compile(r"[ぁ-ゖー]+")
 POS = {"名詞", "動詞", "形容詞", "副詞", "前置詞", "代名詞", "接続詞", "助動詞", "間投詞", "数"}
 WORD_OK = re.compile(r"[A-Za-z][A-Za-z'\-]*")
 PHRASE_OK = re.compile(r"[A-Za-z][A-Za-z ',.?!]*")
@@ -47,6 +48,8 @@ def check(d):
         if key in texts: errs.append(f"{tid}: 「{tx}」が {texts[key]} と かぶる")
         texts[key] = tid
         if not typed(tx): errs.append(f"{tid}: 打つ字が ない")
+        for r in [t.get("reading", "")] + list(t.get("acceptedReadings") or []):  # ひらがなで 打つ ときの 読み(けいくん 2026-10-10)
+            if not KANA.fullmatch(r or ""): errs.append(f"{tid}: 読み「{r}」は ひらがなと ー だけ")
         if len(t.get("meaning", "")) > 40: warn.append(f"{tid}: 意味が 長い")
     for jid, n in count.items():
         if n % 10: errs.append(f"旅 {jid} の 数 {n} が 10の倍数で ない")
@@ -65,7 +68,7 @@ def main():
     m = d["meta"]; scn = {s["id"]: s for s in m["scenes"]}
     out = []
     for t in d["list"]:
-        o = dict(id=t["id"], t=t["text"], r=typed(t["text"]), k=t["kind"], j=t["journey"], dv=t["difficulty"], e=t["emoji"],
+        o = dict(id=t["id"], t=t["text"], r=typed(t["text"]), kr=t["reading"], k=t["kind"], j=t["journey"], dv=t["difficulty"], e=t["emoji"],
                  m=t["meaning"], mrb=rub(t["meaning"]))
         if t["kind"] == "word": o["pos"] = t["pos"]; o["c"] = t["category"]
         else: o["sc"] = t["scene"]; o["c"] = scn[t["scene"]]["name"]
@@ -74,6 +77,8 @@ def main():
                 o[b] = t[a]
                 if t.get(a + "Ja"): o[b + "Ja"] = t[a + "Ja"]; o[b + "rb"] = rub(t[a + "Ja"])
         if t.get("tip"): o["tp"] = t["tip"]; o["tprb"] = rub(t["tip"])
+        alts = [a for a in (t.get("acceptedReadings") or []) if a != t["reading"]]
+        if alts: o["kal"] = alts
         out.append(o)
     js = dict(note=m["note"], journeys=m["journeys"], levels=m["levels"], scenes=m["scenes"], titles=m["titles"], allTitle=m["allTitle"], list=out)
     (ROOT / "eikaiwa").mkdir(exist_ok=True)

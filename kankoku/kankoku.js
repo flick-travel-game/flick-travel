@@ -109,7 +109,28 @@ const KANKOKU = (() => {
     }catch(e){ voice = null; }
   }
   if(TTS){ pickVoice(); try{ speechSynthesis.addEventListener("voiceschanged", pickVoice); }catch(e){} }
+  /* 人に 近い 声の 音声ファイル(tools/kankoku/tts_audio.py が 作る)。ある 字は それを 鳴らし、無ければ 端末の 声 */
+  let AMAP = {}, player = null;
+  try{ fetch("audio/map.json?v=" + Date.now().toString(36).slice(0, -4)).then(r => r.ok ? r.json() : {}).then(j => { AMAP = j || {}; }).catch(() => {}); }catch(e){}
+  function playFile(text, slow){
+    const f = AMAP[text];
+    if(!f || typeof Audio !== "function") return false;
+    try{
+      if(TTS) speechSynthesis.cancel();
+      if(!player) player = new Audio();
+      player.pause(); player.muted = false; player.src = "audio/" + f;
+      player.preservesPitch = true; player.webkitPreservesPitch = true;
+      player.playbackRate = slow ? .75 : 1;
+      const p = player.play();
+      if(p && p.catch) p.catch(() => sayTTS(text, slow));
+      return true;
+    }catch(e){ return false; }
+  }
   function say(text, slow){
+    if(!text || playFile(text, slow)) return;
+    sayTTS(text, slow);
+  }
+  function sayTTS(text, slow){
     if(!TTS || !text) return;
     try{
       speechSynthesis.cancel();
@@ -118,8 +139,13 @@ const KANKOKU = (() => {
       speechSynthesis.speak(u);
     }catch(e){}
   }
-  const SAY = () => TTS && hasKo;  // 韓国語の 声が ない 端末では 🔊 を 出さない
-  function unlock(){ if(!TTS || unlocked) return; try{ const u = new SpeechSynthesisUtterance(" "); u.volume = 0; speechSynthesis.speak(u); unlocked = true; }catch(e){} }
+  const SAY = () => Object.keys(AMAP).length > 0 || (TTS && hasKo);  // 音声ファイルも 韓国語の 声も ない 端末では 🔊 を 出さない
+  function unlock(){
+    if(unlocked) return; unlocked = true;
+    try{ if(typeof Audio === "function"){ if(!player) player = new Audio(); player.muted = true; player.src = "data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQxAADB8AhSmxhIIEVCSiJrDCQBTcu3UrAIwUdkRgQbFAZC1CQEwTJ9mjRvBA4UOLD8nKVOWfh+UlK3z/177OXrfOdKl7pyn3Xf//WreyTRUoAWgBgkOAGbZHBgG1OF6zM82DWbZaUmMBptgQhGjsyYqc9ae9XFz280948NMBWInljyzsNRFLPWdnZGWrddDsjK1unuSrVN9jJsK8KuQtQCtMBjCEtImISdNKJOopIpBFpNSMbIHCSRpRR5iakjTiyzLhchUUBwCgyKiweBv/7UsQbg8isVNoMPMjAAAA0gAAABEVFGmgqK////9bP/6XCykxBTUUzLjEwMKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"; const p = player.play(); if(p && p.then) p.then(() => { if(player.src.startsWith("data:")) player.pause(); player.muted = false; }).catch(() => { player.muted = false; }); else player.muted = false; } }catch(e){}
+    if(!TTS) return;
+    try{ const u = new SpeechSynthesisUtterance(" "); u.volume = 0; speechSynthesis.speak(u); }catch(e){}
+  }
   const AUTO_KEY = "flick-kr-say";
   function autoSay(){ try{ return localStorage.getItem(AUTO_KEY) !== "0"; }catch(e){ return true; } }
   function setAutoSay(on){ try{ localStorage.setItem(AUTO_KEY, on ? "1" : "0"); }catch(e){} }

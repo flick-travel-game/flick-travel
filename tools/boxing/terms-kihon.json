@@ -1,0 +1,1300 @@
+[
+ {
+  "id": "kh-boxing",
+  "name": "ボクシング",
+  "reading": "ぼくしんぐ",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🥊",
+  "mapNode": "kihon:ring",
+  "relatedTerms": [
+   "kh-ring",
+   "kh-glove"
+  ],
+  "acceptedReadings": [
+   "ぼくしんぐ",
+   "けんとう"
+  ],
+  "ruleset": "共通",
+  "description": "グローブを つけた ふたりが、リングの 上で パンチだけを 使って きそう スポーツです。ルールの もとは 1867年に イギリスで できた クインズベリー・ルールです。日本語では 「拳闘」とも いいました。"
+ },
+ {
+  "id": "kh-ring",
+  "name": "リング",
+  "reading": "りんぐ",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟦",
+  "mapNode": "kihon:ring",
+  "relatedTerms": [
+   "kh-rope",
+   "kh-corner",
+   "kh-canvas"
+  ],
+  "ruleset": "共通",
+  "description": "試合を する 四角い 台です。まわりを ロープで かこみ、よすみには コーナーが あります。英語の 「リング」は 「輪」と いう 意味ですが、ボクシングの リングは 四角です。"
+ },
+ {
+  "id": "kh-glove",
+  "name": "グローブ",
+  "reading": "ぐろーぶ",
+  "journey": "kihon",
+  "category": "用具",
+  "difficulty": 1,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🥊",
+  "mapNode": "kihon:gear",
+  "relatedTerms": [
+   "kh-bandage",
+   "kh-knucklepart"
+  ],
+  "acceptedReadings": [
+   "ぐろーぶ",
+   "ぐらぶ"
+  ],
+  "description": "手に はめる ボクシングの 用具です。中に クッションが 入っていて、打つ 人の こぶしを 守ります。重さは オンスで あらわし、試合と 練習で ちがう ものを 使います。"
+ },
+ {
+  "id": "kh-jab",
+  "name": "ジャブ",
+  "reading": "じゃぶ",
+  "journey": "kihon",
+  "category": "きほんの パンチ",
+  "difficulty": 1,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "👊",
+  "mapNode": "kihon:punch",
+  "relatedTerms": [
+   "kh-straight",
+   "kh-onetwo",
+   "kh-guard"
+  ],
+  "description": "前に 出している ほうの 手で、まっすぐ すばやく 打つ パンチです。すべての パンチの きほんで、距離を はかったり 次の パンチに つなげたり します。"
+ },
+ {
+  "id": "kh-straight",
+  "name": "ストレート",
+  "reading": "すとれーと",
+  "journey": "kihon",
+  "category": "きほんの パンチ",
+  "difficulty": 1,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kihon:punch",
+  "relatedTerms": [
+   "kh-jab",
+   "kh-onetwo",
+   "kh-koshi"
+  ],
+  "description": "後ろに かまえた ほうの 手で、まっすぐ 打つ パンチです。後ろ足で 床を けり、腰を 回して 体重を のせるので、ジャブより 強い パンチに なります。"
+ },
+ {
+  "id": "kh-hook",
+  "name": "フック",
+  "reading": "ふっく",
+  "journey": "kihon",
+  "category": "きほんの パンチ",
+  "difficulty": 1,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🪝",
+  "mapNode": "kihon:punch",
+  "relatedTerms": [
+   "kh-straight",
+   "kh-upper",
+   "kh-koshi"
+  ],
+  "description": "ひじを 曲げて、腰の 回転で 横から 打つ パンチです。かぎの 形を 英語で フックと いい、腕の 形が それに 似ている ことから この 名前に なりました。"
+ },
+ {
+  "id": "kh-upper",
+  "name": "アッパーカット",
+  "reading": "あっぱーかっと",
+  "journey": "kihon",
+  "category": "きほんの パンチ",
+  "difficulty": 1,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "⤴️",
+  "mapNode": "kihon:punch",
+  "relatedTerms": [
+   "kh-hook",
+   "kh-straight"
+  ],
+  "acceptedReadings": [
+   "あっぱーかっと",
+   "あっぱー"
+  ],
+  "description": "ひざを 少し 曲げて、下から 上へ つき上げる ように 打つ パンチです。ふつうは みじかく 「アッパー」と よびます。近い 距離で よく 使われます。"
+ },
+ {
+  "id": "kh-onetwo",
+  "name": "ワンツー",
+  "reading": "わんつー",
+  "journey": "kihon",
+  "category": "きほんの パンチ",
+  "difficulty": 1,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "kihon:punch",
+  "relatedTerms": [
+   "kh-jab",
+   "kh-straight"
+  ],
+  "description": "ジャブの すぐ あとに ストレートを つづけて 打つ、いちばん きほんの コンビネーションです。「ワン」が ジャブ、「ツー」が ストレートで、ジムでは まず これを 練習します。"
+ },
+ {
+  "id": "kh-gong",
+  "name": "ゴング",
+  "reading": "ごんぐ",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "kihon:gong",
+  "relatedTerms": [
+   "kh-round",
+   "kh-interval",
+   "kh-timekeeper"
+  ],
+  "ruleset": "共通",
+  "description": "ラウンドの はじまりと 終わりを 知らせる 鐘です。「カーン」と 鳴ると 試合が はじまり、もう 一度 鳴ると その ラウンドが 終わります。"
+ },
+ {
+  "id": "kh-round",
+  "name": "ラウンド",
+  "reading": "らうんど",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "kihon:gong",
+  "relatedTerms": [
+   "kh-gong",
+   "kh-interval"
+  ],
+  "ruleset": "共通",
+  "description": "試合を いくつかに 区切った ひとつ ぶんの 時間です。男子の プロの 世界タイトルマッチも オリンピックも、1ラウンドは 3分です。日本語では 「回」と いい、「12回戦」の ように 使います。"
+ },
+ {
+  "id": "kh-referee",
+  "name": "レフェリー",
+  "reading": "れふぇりー",
+  "journey": "kihon",
+  "category": "試合に かかわる 人",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧑‍⚖️",
+  "mapNode": "kihon:ref",
+  "relatedTerms": [
+   "kh-judge",
+   "kh-ring"
+  ],
+  "ruleset": "共通",
+  "description": "リングの 中で 試合を 進める 審判です。ルールを 守らせ、ブレイクや 注意などの 合図を 出します。採点は しないで、選手の 安全を 見守る のが 大きな 役目です。"
+ },
+ {
+  "id": "kh-guard",
+  "name": "ガード",
+  "reading": "がーど",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 1,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "kihon:defense",
+  "relatedTerms": [
+   "kh-guardup",
+   "kh-ago",
+   "kh-fightingpose"
+  ],
+  "description": "両手を 顔の 前に かまえて、身を 守る こと、また その かまえです。パンチを 打った あとも すぐに 手を もどして ガードを つくるのが きほんです。"
+ },
+ {
+  "id": "kh-sandbag",
+  "name": "サンドバッグ",
+  "reading": "さんどばっぐ",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 1,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-mitt",
+   "kh-doubleend",
+   "kh-punchingball"
+  ],
+  "acceptedReadings": [
+   "さんどばっぐ",
+   "へびーばっぐ"
+  ],
+  "description": "天井から つるした 大きくて 重い 袋で、思いきり パンチを 打ちこむ 練習に 使います。英語では ヘビーバッグと いいます。"
+ },
+ {
+  "id": "kh-nawatobi",
+  "name": "縄跳び",
+  "reading": "なわとび",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 1,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🪢",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-roadwork",
+   "kh-footwork"
+  ],
+  "acceptedReadings": [
+   "なわとび",
+   "じゃんぷろーぷ"
+  ],
+  "description": "ボクサーが ほぼ 毎日 行う 練習です。リズムよく 跳ぶ ことで、足の 動きと スタミナを きたえます。ジムでは ラウンドと 同じ 時間で くぎって 跳ぶ ことも 多いです。"
+ },
+ {
+  "id": "kh-mouthpiece",
+  "name": "マウスピース",
+  "reading": "まうすぴーす",
+  "journey": "kihon",
+  "category": "用具",
+  "difficulty": 1,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "😁",
+  "mapNode": "kihon:gear",
+  "relatedTerms": [
+   "kh-headgear",
+   "kh-glove"
+  ],
+  "ruleset": "共通",
+  "description": "試合や スパーリングの とき、口の 中に 入れて 歯を 守る 用具です。ボクサーは 自分の 歯の 形に あわせて 作る ことが 多いです。"
+ },
+ {
+  "id": "kh-gym",
+  "name": "ジム",
+  "reading": "じむ",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 1,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-trainer",
+   "kh-renshusei",
+   "kh-kaicho"
+  ],
+  "description": "ボクシングの 練習を する 場所です。リングや サンドバッグが あり、トレーナーに 教わりながら 練習します。日本の プロボクサーは どこかの ジムから 試合に 出ます。"
+ },
+ {
+  "id": "kh-trainer",
+  "name": "トレーナー",
+  "reading": "とれーなー",
+  "journey": "kihon",
+  "category": "試合に かかわる 人",
+  "difficulty": 1,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🧢",
+  "mapNode": "kihon:second",
+  "relatedTerms": [
+   "kh-gym",
+   "kh-second",
+   "kh-mitt"
+  ],
+  "description": "ボクサーに 技を 教え、練習を 見る 人です。ミットを もって 練習相手に なったり、試合の 日には セコンドとして コーナーに ついたり します。"
+ },
+ {
+  "id": "kh-southpaw",
+  "name": "サウスポー",
+  "reading": "さうすぽー",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 1,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🫲",
+  "mapNode": "kihon:stance",
+  "relatedTerms": [
+   "kh-orthodox",
+   "kh-fightingpose"
+  ],
+  "description": "右手と 右足を 前に 出して かまえる、左ききの 人に 多い かまえです。野球でも 左投げの 投手を こう よびます。"
+ },
+ {
+  "id": "kh-orthodox",
+  "name": "オーソドックス",
+  "reading": "おーそどっくす",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 1,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "kihon:stance",
+  "relatedTerms": [
+   "kh-southpaw",
+   "kh-fightingpose"
+  ],
+  "description": "左手と 左足を 前に 出して かまえる、右ききの 人に 多い かまえです。「ふつうの、正統な」と いう 意味の ことばで、いちばん 多くの ボクサーが この かまえです。"
+ },
+ {
+  "id": "kh-footwork",
+  "name": "フットワーク",
+  "reading": "ふっとわーく",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 1,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "👟",
+  "mapNode": "kihon:foot",
+  "relatedTerms": [
+   "kh-step",
+   "kh-juushin"
+  ],
+  "description": "リングの 上での 足の 運びかたの ことです。前後左右に すばやく 動いて、自分の 打ちやすい 距離を つくります。"
+ },
+ {
+  "id": "kh-rope",
+  "name": "ロープ",
+  "reading": "ろーぷ",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "kihon:ring",
+  "relatedTerms": [
+   "kh-ring",
+   "kh-cornerpost",
+   "kh-apron"
+  ],
+  "ruleset": "共通",
+  "description": "リングの まわりに 張られた 綱です。ボクシングの リングは ロープが 4本で、プロレスの リングは 3本の ことが 多いです。ロープの 内がわが 試合の 場所です。"
+ },
+ {
+  "id": "kh-corner",
+  "name": "コーナー",
+  "reading": "こーなー",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kihon:corner",
+  "relatedTerms": [
+   "kh-redcorner",
+   "kh-bluecorner",
+   "kh-neutral"
+  ],
+  "ruleset": "共通",
+  "description": "リングの よすみの ことです。赤と 青は 選手が 休む 場所で、のこりの ふたつは ニュートラルコーナーです。ラウンドの あいだ、選手は 自分の コーナーに もどります。"
+ },
+ {
+  "id": "kh-redcorner",
+  "name": "赤コーナー",
+  "reading": "あかこーなー",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "kihon:corner",
+  "relatedTerms": [
+   "kh-bluecorner",
+   "kh-corner"
+  ],
+  "ruleset": "共通",
+  "description": "選手が 使う ふたつの コーナーの ひとつで、赤い 色が 目じるしです。ふつう 王者や 上位の 選手が 赤コーナーに 入ります。"
+ },
+ {
+  "id": "kh-bluecorner",
+  "name": "青コーナー",
+  "reading": "あおこーなー",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔵",
+  "mapNode": "kihon:corner",
+  "relatedTerms": [
+   "kh-redcorner",
+   "kh-corner"
+  ],
+  "ruleset": "共通",
+  "description": "選手が 使う ふたつの コーナーの ひとつで、青い 色が 目じるしです。タイトルマッチでは ふつう 挑戦する 選手が 青コーナーに 入ります。"
+ },
+ {
+  "id": "kh-judge",
+  "name": "ジャッジ",
+  "reading": "じゃっじ",
+  "journey": "kihon",
+  "category": "試合に かかわる 人",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "kihon:ref",
+  "relatedTerms": [
+   "kh-referee",
+   "kh-round"
+  ],
+  "ruleset": "プロ・アマ",
+  "description": "リングの 外から 試合を 見て、ラウンドごとに 点を つける 審判です。プロの 世界タイトルマッチは 3人、オリンピックは 5人の ジャッジが 採点します。"
+ },
+ {
+  "id": "kh-second",
+  "name": "セコンド",
+  "reading": "せこんど",
+  "journey": "kihon",
+  "category": "試合に かかわる 人",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "kihon:second",
+  "relatedTerms": [
+   "kh-trainer",
+   "kh-chiefsecond",
+   "kh-cutman"
+  ],
+  "ruleset": "共通",
+  "description": "試合中、選手の コーナーに ついて 世話を する 人たちです。ラウンドの あいだの 休みに、水を わたしたり 作戦を 伝えたり します。トレーナーが つとめる ことが 多いです。"
+ },
+ {
+  "id": "kh-interval",
+  "name": "インターバル",
+  "reading": "いんたーばる",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "☕",
+  "mapNode": "kihon:gong",
+  "relatedTerms": [
+   "kh-round",
+   "kh-second"
+  ],
+  "ruleset": "共通",
+  "description": "ラウンドと ラウンドの あいだの 休みの 時間で、プロも オリンピックも 1分です。選手は コーナーの 椅子に すわり、セコンドの 話を 聞いて 次の ラウンドに そなえます。"
+ },
+ {
+  "id": "kh-headgear",
+  "name": "ヘッドギア",
+  "reading": "へっどぎあ",
+  "journey": "kihon",
+  "category": "用具",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "⛑️",
+  "mapNode": "kihon:gear",
+  "relatedTerms": [
+   "kh-mouthpiece",
+   "kh-sparring"
+  ],
+  "ruleset": "アマ",
+  "description": "頭を 守る ために かぶる 用具です。スパーリングで よく 使います。オリンピックでは 男子は 2016年の リオ大会の 前から かぶらなく なり、女子は パリ2024 でも かぶりました。"
+ },
+ {
+  "id": "kh-bandage",
+  "name": "バンデージ",
+  "reading": "ばんでーじ",
+  "journey": "kihon",
+  "category": "用具",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "kihon:gear",
+  "relatedTerms": [
+   "kh-glove",
+   "kh-knucklepart"
+  ],
+  "acceptedReadings": [
+   "ばんでーじ",
+   "ばんてーじ"
+  ],
+  "description": "グローブの 下で 手に まく 細長い 布です。こぶしと 手首を 守り、しっかり 固めます。試合の 前には セコンドが まく ことも 多く、ジムでは まきかたも 習います。"
+ },
+ {
+  "id": "kh-trunks",
+  "name": "トランクス",
+  "reading": "とらんくす",
+  "journey": "kihon",
+  "category": "用具",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🩳",
+  "mapNode": "kihon:gear",
+  "relatedTerms": [
+   "kh-gown",
+   "kh-shoes"
+  ],
+  "description": "ボクサーが 試合で はく パンツです。動きやすい ように ゆったり 作られていて、名前や 国旗を 入れる 選手も います。"
+ },
+ {
+  "id": "kh-shoes",
+  "name": "ボクシングシューズ",
+  "reading": "ぼくしんぐしゅーず",
+  "journey": "kihon",
+  "category": "用具",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "👟",
+  "mapNode": "kihon:gear",
+  "relatedTerms": [
+   "kh-trunks",
+   "kh-footwork"
+  ],
+  "acceptedReadings": [
+   "ぼくしんぐしゅーず",
+   "りんぐしゅーず"
+  ],
+  "description": "ボクシング用の くつです。足首まで つつむ 高さが あり、底が うすくて すべりにくいので、リングの 上で すばやく 動けます。"
+ },
+ {
+  "id": "kh-fightingpose",
+  "name": "ファイティングポーズ",
+  "reading": "ふぁいてぃんぐぽーず",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 2,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "kihon:stance",
+  "relatedTerms": [
+   "kh-guard",
+   "kh-orthodox",
+   "kh-southpaw"
+  ],
+  "description": "両手を 顔の 前に 上げ、足を 前後に ひらいて かまえる ボクシングの きほんの 姿勢です。ここから 打って、打ったら また この 形に もどります。"
+ },
+ {
+  "id": "kh-mitt",
+  "name": "ミット打ち",
+  "reading": "みっとうち",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-trainer",
+   "kh-sandbag",
+   "kh-onetwo"
+  ],
+  "acceptedReadings": [
+   "みっとうち",
+   "みっと"
+  ],
+  "description": "トレーナーが 手に はめた ミットに むかって パンチを 打つ 練習です。トレーナーが ミットを 出す 場所や 声で 指示を 出し、コンビネーションや タイミングを 身に つけます。"
+ },
+ {
+  "id": "kh-shadow",
+  "name": "シャドーボクシング",
+  "reading": "しゃどーぼくしんぐ",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "👤",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-mitt",
+   "kh-fightingpose",
+   "kh-footwork"
+  ],
+  "acceptedReadings": [
+   "しゃどーぼくしんぐ",
+   "しゃどー"
+  ],
+  "description": "目の 前に 相手が いると 思って、ひとりで パンチや ステップを くり返す 練習です。かがみの 前で 自分の かまえを たしかめながら 行う ことも 多く、みじかく 「シャドー」とも いいます。"
+ },
+ {
+  "id": "kh-sparring",
+  "name": "スパーリング",
+  "reading": "すぱーりんぐ",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🤜",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-headgear",
+   "kh-mitt"
+  ],
+  "description": "試合と 同じ ように、ふたりで 向かいあって パンチを 出しあう 練習です。ヘッドギアや 大きめの グローブを つけて 行う ことが 多く、試合の 前の 大切な 仕上げに なります。"
+ },
+ {
+  "id": "kh-roadwork",
+  "name": "ロードワーク",
+  "reading": "ろーどわーく",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-nawatobi",
+   "kh-footwork"
+  ],
+  "description": "道を 走る 練習の ことです。スタミナを つける ために、ボクサーは 朝 早くに 走る ことが 多いです。坂道や ダッシュを まぜる ことも あります。"
+ },
+ {
+  "id": "kh-punchingball",
+  "name": "パンチングボール",
+  "reading": "ぱんちんぐぼーる",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 2,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🍐",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-doubleend",
+   "kh-sandbag"
+  ],
+  "acceptedReadings": [
+   "ぱんちんぐぼーる",
+   "すぴーどばっぐ"
+  ],
+  "description": "台に つるした 小さな ボールを 「タタタン」と リズムよく 打ちつづける 練習用具です。手の すばやさと リズム感を きたえます。英語では スピードバッグと いいます。"
+ },
+ {
+  "id": "kh-step",
+  "name": "ステップ",
+  "reading": "すてっぷ",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 2,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "kihon:foot",
+  "relatedTerms": [
+   "kh-footwork",
+   "kh-juushin"
+  ],
+  "description": "足を すべらせる ように 小さく 動かして 位置を 変える ことです。両足を そろえず、前後に ひらいた 形の まま 動くのが きほんです。"
+ },
+ {
+  "id": "kh-body",
+  "name": "ボディ",
+  "reading": "ぼでぃ",
+  "journey": "kihon",
+  "category": "きほんの パンチ",
+  "difficulty": 2,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kihon:punch",
+  "relatedTerms": [
+   "kh-hook",
+   "kh-straight",
+   "kh-guard"
+  ],
+  "description": "顔では なく 胴を ねらう 攻めの こと、また 胴の 部分の ことです。顔と 胴を 打ちわける ことで、相手の ガードを 上下に 動かす ねらいが あります。"
+ },
+ {
+  "id": "kh-ago",
+  "name": "あごを引く",
+  "reading": "あごをひく",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 2,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🙇",
+  "mapNode": "kihon:defense",
+  "relatedTerms": [
+   "kh-guard",
+   "kh-guardup"
+  ],
+  "description": "かまえる ときに あごを 少し 下げて、肩と グローブで かくす ように する きほんの 形です。ジムで くり返し 言われる だいじな 注意です。"
+ },
+ {
+  "id": "kh-guardup",
+  "name": "ガードを上げる",
+  "reading": "がーどをあげる",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 2,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "kihon:defense",
+  "relatedTerms": [
+   "kh-guard",
+   "kh-ago"
+  ],
+  "description": "手が 下がらない ように 両手を 顔の 高さに たもつ ことです。打った あとや つかれた ときに 手が 下がりやすいので、ジムでは 「ガード、ガード」と 声が かかります。"
+ },
+ {
+  "id": "kh-protest",
+  "name": "プロテスト",
+  "reading": "ぷろてすと",
+  "journey": "kihon",
+  "category": "プロへの 道",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-license",
+   "kh-debut"
+  ],
+  "ruleset": "プロ",
+  "country": "日本",
+  "description": "プロボクサーに なる ための 試験で、日本では JBC が 行います。ルールの 筆記試験と、受ける 人どうしの スパーリングの 実技が あります。"
+ },
+ {
+  "id": "kh-debut",
+  "name": "デビュー戦",
+  "reading": "でびゅーせん",
+  "journey": "kihon",
+  "category": "プロへの 道",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-protest",
+   "kh-yonkaisen"
+  ],
+  "ruleset": "プロ",
+  "country": "日本",
+  "description": "プロボクサーに なって はじめての 試合です。日本では ふつう プロテストに 合格した あと、4回戦から デビューします。"
+ },
+ {
+  "id": "kh-nyujo",
+  "name": "入場",
+  "reading": "にゅうじょう",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 2,
+  "field": "大会・歴史",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-nyujokyoku",
+   "kh-gown",
+   "kh-call"
+  ],
+  "description": "試合の 前に 選手が 花道を 歩いて リングに 上がる ことです。お気に入りの 曲を 流し、セコンドと いっしょに 入って きます。会場が いちばん もりあがる 時間の ひとつです。"
+ },
+ {
+  "id": "kh-canvas",
+  "name": "キャンバス",
+  "reading": "きゃんばす",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "kihon:ring",
+  "relatedTerms": [
+   "kh-ring",
+   "kh-rope"
+  ],
+  "acceptedReadings": [
+   "きゃんばす",
+   "まっと"
+  ],
+  "ruleset": "共通",
+  "description": "リングの 床に はった 布の ことです。下に クッションが しいて あります。リングの 床は 「マット」とも よばれます。"
+ },
+ {
+  "id": "kh-neutral",
+  "name": "ニュートラルコーナー",
+  "reading": "にゅーとらるこーなー",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚪",
+  "mapNode": "kihon:corner",
+  "relatedTerms": [
+   "kh-corner",
+   "kh-redcorner",
+   "kh-bluecorner"
+  ],
+  "ruleset": "共通",
+  "description": "リングの よすみの うち、赤と 青の 選手の コーナーでは ない ふたつの コーナーです。どちらの 選手の ものでも ない ので 「中立の コーナー」と いう 意味の 名前です。"
+ },
+ {
+  "id": "kh-cutman",
+  "name": "カットマン",
+  "reading": "かっとまん",
+  "journey": "kihon",
+  "category": "試合に かかわる 人",
+  "difficulty": 3,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "kihon:second",
+  "relatedTerms": [
+   "kh-second",
+   "kh-chiefsecond"
+  ],
+  "description": "コーナーで 選手の 世話を する 係の ひとりです。セコンドの なかまとして、試合中の コーナーに つきます。"
+ },
+ {
+  "id": "kh-announcer",
+  "name": "リングアナウンサー",
+  "reading": "りんぐあなうんさー",
+  "journey": "kihon",
+  "category": "試合に かかわる 人",
+  "difficulty": 3,
+  "field": "大会・歴史",
+  "type": "concept",
+  "emoji": "🎤",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-call",
+   "kh-nyujo"
+  ],
+  "acceptedReadings": [
+   "りんぐあなうんさー",
+   "りんぐあな"
+  ],
+  "description": "試合の 前に 選手の 名前を よび上げたり、試合の 結果を 伝えたり する 係です。のびのある 声の よび上げは、会場を もりあげる 名物に なっています。"
+ },
+ {
+  "id": "kh-timekeeper",
+  "name": "タイムキーパー",
+  "reading": "たいむきーぱー",
+  "journey": "kihon",
+  "category": "試合に かかわる 人",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "kihon:gong",
+  "relatedTerms": [
+   "kh-gong",
+   "kh-round",
+   "kh-interval"
+  ],
+  "ruleset": "共通",
+  "description": "ラウンドや インターバルの 時間を はかり、ゴングを 鳴らす 係です。リングの そばの 席で、時計を 見ながら 試合の 時間を まもります。"
+ },
+ {
+  "id": "kh-foulcup",
+  "name": "ファウルカップ",
+  "reading": "ふぁうるかっぷ",
+  "journey": "kihon",
+  "category": "用具",
+  "difficulty": 3,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "kihon:gear",
+  "relatedTerms": [
+   "kh-trunks",
+   "kh-headgear"
+  ],
+  "acceptedReadings": [
+   "ふぁうるかっぷ",
+   "ふぁーるかっぷ"
+  ],
+  "ruleset": "共通",
+  "description": "トランクスの 下に つけて、下腹部を 守る 用具です。ベルトより 下は 打っては いけない ルールが あり、それでも 守れる ように つけます。"
+ },
+ {
+  "id": "kh-gown",
+  "name": "ガウン",
+  "reading": "がうん",
+  "journey": "kihon",
+  "category": "用具",
+  "difficulty": 3,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🥋",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-nyujo",
+   "kh-trunks"
+  ],
+  "description": "選手が 入場する ときに 着る 長い 上着です。名前や もようを 入れた はでな ガウンも 多く、リングに 上がってから ぬぎます。"
+ },
+ {
+  "id": "kh-doubleend",
+  "name": "ダブルエンドバッグ",
+  "reading": "だぶるえんどばっぐ",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 3,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-punchingball",
+   "kh-sandbag"
+  ],
+  "description": "上と 下の 両方を ひもで とめた 小さな ボールです。打つと すばやく はね返ってくるので、タイミングを あわせて 打つ 練習や、よける 練習に なります。"
+ },
+ {
+  "id": "kh-license",
+  "name": "ライセンス",
+  "reading": "らいせんす",
+  "journey": "kihon",
+  "category": "プロへの 道",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-protest",
+   "kh-yonkaisen"
+  ],
+  "ruleset": "プロ",
+  "country": "日本",
+  "description": "プロとして 試合に 出る ための 資格です。日本では JBC が 出し、C級・B級・A級に 分かれていて、勝つと 上の 級に 上がります。"
+ },
+ {
+  "id": "kh-yonkaisen",
+  "name": "4回戦",
+  "reading": "よんかいせん",
+  "journey": "kihon",
+  "category": "プロへの 道",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "4️⃣",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-debut",
+   "kh-license"
+  ],
+  "ruleset": "プロ",
+  "country": "日本",
+  "description": "4ラウンドで 行う 試合の ことです。日本では プロテストに 合格した ばかりの C級の 選手が 4回戦から 出て、勝ちを かさねて 6回戦・8回戦へと 進みます。"
+ },
+ {
+  "id": "kh-kogyo",
+  "name": "興行",
+  "reading": "こうぎょう",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 3,
+  "field": "大会・歴史",
+  "type": "concept",
+  "emoji": "🎪",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-nyujo",
+   "kh-announcer"
+  ],
+  "description": "会場に お客さんを 集めて 試合を 見せる もよおしの ことです。ひとつの 興行では 何試合も 組まれ、いちばん 最後の 注目の 試合を メインイベントと いいます。"
+ },
+ {
+  "id": "kh-call",
+  "name": "コール",
+  "reading": "こーる",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 3,
+  "field": "大会・歴史",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-announcer",
+   "kh-redcorner"
+  ],
+  "description": "リングアナウンサーが 選手の 名前や 国などを よび上げる ことです。コールされた 選手は 手を あげて こたえ、会場から 声援が 送られます。"
+ },
+ {
+  "id": "kh-knucklepart",
+  "name": "ナックルパート",
+  "reading": "なっくるぱーと",
+  "journey": "kihon",
+  "category": "用具",
+  "difficulty": 3,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "✊",
+  "mapNode": "kihon:gear",
+  "relatedTerms": [
+   "kh-glove",
+   "kh-bandage"
+  ],
+  "description": "グローブの 中で、にぎった こぶしの 指の 付け根に あたる 部分です。パンチは この ナックルパートで 当てるのが 正しい 打ちかたと されています。"
+ },
+ {
+  "id": "kh-ringside",
+  "name": "リングサイド",
+  "reading": "りんぐさいど",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 3,
+  "field": "大会・歴史",
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-ring",
+   "kh-judge"
+  ],
+  "description": "リングの すぐ まわりの 場所、また そこに ある 席の ことです。ジャッジや タイムキーパーも ここに すわります。いちばん 近くで 試合を 見られる 席です。"
+ },
+ {
+  "id": "kh-glovetouch",
+  "name": "グローブタッチ",
+  "reading": "ぐろーぶたっち",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 3,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-glove",
+   "kh-referee"
+  ],
+  "description": "試合の はじめなどに、ふたりの 選手が たがいの グローブを 軽く あわせる ことです。あいさつの 意味が あり、相手を みとめる スポーツマンシップの あらわれです。"
+ },
+ {
+  "id": "kh-koukai",
+  "name": "公開練習",
+  "reading": "こうかいれんしゅう",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 3,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "📸",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-mitt",
+   "kh-shadow"
+  ],
+  "description": "大きな 試合の 前に、ジムで 記者や ファンに 練習を 見せる ことです。ミット打ちや シャドーボクシングを 見せ、試合への 意気ごみを 話します。"
+ },
+ {
+  "id": "kh-kaicho",
+  "name": "会長",
+  "reading": "かいちょう",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 3,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "👔",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-gym",
+   "kh-trainer"
+  ],
+  "country": "日本",
+  "description": "日本の ボクシングジムでは、ジムの いちばん 上の 人を 「会長」と よびます。選手の 試合を 決めたり、ジムを まとめたり する 役目です。"
+ },
+ {
+  "id": "kh-renshusei",
+  "name": "練習生",
+  "reading": "れんしゅうせい",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 3,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🧒",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-gym",
+   "kh-protest"
+  ],
+  "country": "日本",
+  "description": "ジムに かよって ボクシングを 習っている 人の ことです。プロを めざす 人も、体を きたえたい 人も います。プロテストを 受けるのも ジムの 練習生です。"
+ },
+ {
+  "id": "kh-medicine",
+  "name": "メディシンボール",
+  "reading": "めでぃしんぼーる",
+  "journey": "kihon",
+  "category": "ジムと 練習",
+  "difficulty": 3,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "🏐",
+  "mapNode": "kihon:gym",
+  "relatedTerms": [
+   "kh-sandbag",
+   "kh-koshi"
+  ],
+  "description": "中身が つまった 重い ボールです。投げたり 受けたりして、パンチに 必要な 体の ひねりや 腹筋を きたえます。"
+ },
+ {
+  "id": "kh-koshi",
+  "name": "腰の回転",
+  "reading": "こしのかいてん",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 3,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "kihon:punch",
+  "relatedTerms": [
+   "kh-straight",
+   "kh-hook",
+   "kh-juushin"
+  ],
+  "description": "腰を くるりと 回して、体の 力を パンチに つたえる 動きです。腕の 力だけで 打つ 「手打ち」に ならない ように、ストレートや フックでは とても だいじです。"
+ },
+ {
+  "id": "kh-juushin",
+  "name": "重心",
+  "reading": "じゅうしん",
+  "journey": "kihon",
+  "category": "かまえと 動き",
+  "difficulty": 3,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kihon:foot",
+  "relatedTerms": [
+   "kh-footwork",
+   "kh-step",
+   "kh-koshi"
+  ],
+  "description": "体の 重さの 中心の ことです。かまえでは 両足の あいだに 重心を おき、前にも 後ろにも すぐ 動ける ように します。"
+ },
+ {
+  "id": "kh-apron",
+  "name": "エプロン",
+  "reading": "えぷろん",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "kihon:ring",
+  "relatedTerms": [
+   "kh-rope",
+   "kh-ring"
+  ],
+  "acceptedReadings": [
+   "えぷろん",
+   "りんぐえぷろん"
+  ],
+  "ruleset": "共通",
+  "description": "リングの ロープより 外がわに ある、床の ふちの 部分です。セコンドは ここから 選手に 声を かけます。"
+ },
+ {
+  "id": "kh-cornerpost",
+  "name": "コーナーポスト",
+  "reading": "こーなーぽすと",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "kihon:corner",
+  "relatedTerms": [
+   "kh-corner",
+   "kh-rope"
+  ],
+  "ruleset": "共通",
+  "description": "リングの よすみに 立つ 柱です。ロープを 張る ための もので、選手に あたらない ように クッションで おおわれています。"
+ },
+ {
+  "id": "kh-nyujokyoku",
+  "name": "入場曲",
+  "reading": "にゅうじょうきょく",
+  "journey": "kihon",
+  "category": "リングと 試合",
+  "difficulty": 3,
+  "field": "大会・歴史",
+  "type": "concept",
+  "emoji": "🎵",
+  "mapNode": "kihon:show",
+  "relatedTerms": [
+   "kh-nyujo",
+   "kh-gown"
+  ],
+  "description": "選手が 入場する ときに 会場に 流れる 曲です。選手が 自分で えらび、同じ 曲を 使いつづける 選手も 多いので、曲を 聞いただけで だれの 入場か わかる ことも あります。"
+ },
+ {
+  "id": "kh-chiefsecond",
+  "name": "チーフセコンド",
+  "reading": "ちーふせこんど",
+  "journey": "kihon",
+  "category": "試合に かかわる 人",
+  "difficulty": 3,
+  "field": "用具・練習",
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "kihon:second",
+  "relatedTerms": [
+   "kh-second",
+   "kh-trainer",
+   "kh-cutman"
+  ],
+  "description": "セコンドの まとめ役です。ふつうは その 選手の トレーナーが つとめ、インターバルの あいだに 作戦を 伝えます。"
+ },
+ {
+  "id": "kh-hikite",
+  "name": "引き手",
+  "reading": "ひきて",
+  "journey": "kihon",
+  "category": "きほんの パンチ",
+  "difficulty": 3,
+  "field": "パンチと防御",
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "kihon:punch",
+  "relatedTerms": [
+   "kh-jab",
+   "kh-guard"
+  ],
+  "description": "打った 手を すばやく もとの かまえに もどす ことです。打つ 速さと 同じくらい もどす 速さが だいじで、すぐ もどせば 次の パンチも ガードも 間に あいます。"
+ }
+]

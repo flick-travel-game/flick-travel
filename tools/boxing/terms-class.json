@@ -1,0 +1,1407 @@
+[
+ {
+  "id": "cl-kaikyu",
+  "name": "階級",
+  "reading": "かいきゅう",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-heavy",
+   "cl-taijubetsu",
+   "cl-jyunana"
+  ],
+  "ruleset": "共通",
+  "description": "体重で 分けた 試合の グループです。同じ くらいの 体重の 選手どうしが 戦えるように、プロでも アマでも 階級ごとに 試合を します。"
+ },
+ {
+  "id": "cl-heavy",
+  "name": "ヘビー級",
+  "reading": "へびーきゅう",
+  "journey": "class",
+  "category": "重量級",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐘",
+  "mapNode": "class:heavy",
+  "relatedTerms": [
+   "cl-cruiser",
+   "cl-chijo",
+   "cl-juryokyu"
+  ],
+  "ruleset": "プロ",
+  "description": "プロで いちばん 重い 階級で、体重の 上限が ありません。ジョー・ルイスは この 階級で 25回 防衛した 伝説の 王者です。"
+ },
+ {
+  "id": "cl-fly",
+  "name": "フライ級",
+  "reading": "ふらいきゅう",
+  "journey": "class",
+  "category": "軽量級",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🪰",
+  "mapNode": "class:mini",
+  "relatedTerms": [
+   "cl-lightfly",
+   "cl-superfly",
+   "cl-nikaikyu"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 112ポンド(約 50.8キロ)まで の 階級です。フライは 英語で ハエの こと。1952年に 白井義男が この 階級で 日本人 はじめての 世界王者に なりました。"
+ },
+ {
+  "id": "cl-bantam",
+  "name": "バンタム級",
+  "reading": "ばんたむきゅう",
+  "journey": "class",
+  "category": "軽量級",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐓",
+  "mapNode": "class:superfly",
+  "relatedTerms": [
+   "cl-superfly",
+   "cl-superbantam",
+   "cl-nikai4"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 118ポンド(約 53.5キロ)まで の 階級です。2022年に 井上尚弥が この 階級で アジアで はじめての 4団体統一を なしとげました。"
+ },
+ {
+  "id": "cl-middle",
+  "name": "ミドル級",
+  "reading": "みどるきゅう",
+  "journey": "class",
+  "category": "中量級",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐺",
+  "mapNode": "class:middle",
+  "relatedTerms": [
+   "cl-superwelter",
+   "cl-supermiddle",
+   "cl-churyokyu"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 160ポンド(約 72.6キロ)まで の 階級です。軽い 階級と 重い 階級の まんなか、と いう 意味の 名前で、むかしから ある 8つの 階級の ひとつです。"
+ },
+ {
+  "id": "cl-light",
+  "name": "ライト級",
+  "reading": "らいときゅう",
+  "journey": "class",
+  "category": "中量級",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "class:light",
+  "relatedTerms": [
+   "cl-superfeather",
+   "cl-superlight",
+   "cl-welter"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 135ポンド(約 61.2キロ)まで の 階級です。2000年に 畑山隆則が WBA の この 階級で 世界王者に なり、スーパーフェザー級と あわせて 2階級制覇を しました。"
+ },
+ {
+  "id": "cl-feather",
+  "name": "フェザー級",
+  "reading": "ふぇざーきゅう",
+  "journey": "class",
+  "category": "軽量級",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "class:feather",
+  "relatedTerms": [
+   "cl-superbantam",
+   "cl-superfeather",
+   "cl-jfeather"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 126ポンド(約 57.2キロ)まで の 階級です。フェザーは 英語で 羽の こと。長谷川穂積も バンタム級の あと この 階級で 世界王者に なりました。"
+ },
+ {
+  "id": "cl-welter",
+  "name": "ウェルター級",
+  "reading": "うぇるたーきゅう",
+  "journey": "class",
+  "category": "中量級",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐆",
+  "mapNode": "class:welter",
+  "relatedTerms": [
+   "cl-superlight",
+   "cl-superwelter",
+   "cl-middle"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 147ポンド(約 66.7キロ)まで の 階級です。「史上 最高の 選手」と よく いわれる シュガー・レイ・ロビンソンが 1946年から 王者だった 階級です。"
+ },
+ {
+  "id": "cl-minimum",
+  "name": "ミニマム級",
+  "reading": "みにまむきゅう",
+  "journey": "class",
+  "category": "軽量級",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐜",
+  "mapNode": "class:mini",
+  "relatedTerms": [
+   "cl-lightfly",
+   "cl-saikeiryo",
+   "cl-atom"
+  ],
+  "acceptedReadings": [
+   "みにまむきゅう",
+   "すとろーきゅう",
+   "みにふらいきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 男子で いちばん 軽い 105ポンド(約 47.6キロ)まで の 階級です。ストロー級や ミニフライ級とも よびます。大橋秀行は 1990年に この 階級の WBC 王者に なりました。"
+ },
+ {
+  "id": "cl-superbantam",
+  "name": "スーパーバンタム級",
+  "reading": "すーぱーばんたむきゅう",
+  "journey": "class",
+  "category": "軽量級",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐔",
+  "mapNode": "class:feather",
+  "relatedTerms": [
+   "cl-bantam",
+   "cl-feather",
+   "cl-nikai4"
+  ],
+  "acceptedReadings": [
+   "すーぱーばんたむきゅう",
+   "じゅにあふぇざーきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 122ポンド(約 55.3キロ)まで の 階級です。ジュニアフェザー級とも よびます。2023年に 井上尚弥が この 階級でも 4団体を 統一しました。"
+ },
+ {
+  "id": "cl-keiryo",
+  "name": "計量",
+  "reading": "けいりょう",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-zenjitsu",
+   "cl-limit",
+   "cl-keiryopass"
+  ],
+  "ruleset": "共通",
+  "description": "試合の 前に 選手の 体重を はかる ことです。決められた 体重の 上限を こえて いないかを 確かめます。プロでも アマでも 行います。"
+ },
+ {
+  "id": "cl-genryo",
+  "name": "減量",
+  "reading": "げんりょう",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🥗",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-keiryo",
+   "cl-zoryo",
+   "cl-taijukanri"
+  ],
+  "description": "試合の 階級の 体重に あわせる ために、体重を 落とす ことです。食事や 練習で 計画的に 体重を 調整します。"
+ },
+ {
+  "id": "cl-pound",
+  "name": "ポンド",
+  "reading": "ぽんど",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-kilogram",
+   "cl-lb",
+   "cl-limit"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 階級を 決める ときに 使う 重さの 単位です。1ポンドは 約 0.45キロ。プロの 階級は ポンドで 決められ、キロは 目安として 書かれます。"
+ },
+ {
+  "id": "cl-kilogram",
+  "name": "キログラム",
+  "reading": "きろぐらむ",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-pound",
+   "cl-olympic",
+   "cl-kilo51"
+  ],
+  "acceptedReadings": [
+   "きろぐらむ",
+   "きろ"
+  ],
+  "ruleset": "アマ",
+  "description": "日本で ふだん 使う 重さの 単位です。アマチュアや オリンピックの 階級は 「51キロ級」の ように キログラムで 決められて います。"
+ },
+ {
+  "id": "cl-limit",
+  "name": "リミット",
+  "reading": "りみっと",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-keiryo",
+   "cl-pound",
+   "cl-limitjust"
+  ],
+  "ruleset": "共通",
+  "description": "その 階級で 試合に 出られる 体重の 上限の ことです。計量で リミットより 軽ければ 試合に 出られます。ヘビー級には リミットが ありません。"
+ },
+ {
+  "id": "cl-taijubetsu",
+  "name": "体重別",
+  "reading": "たいじゅうべつ",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-kaikyu",
+   "cl-taijusa",
+   "cl-jyunana"
+  ],
+  "ruleset": "共通",
+  "description": "体重ごとに 分けて 試合を する しくみです。ボクシングでは 体の 大きさが ちがう 選手どうしが 戦わない ように、体重別に 階級が 決められて います。"
+ },
+ {
+  "id": "cl-nikaikyu",
+  "name": "2階級制覇",
+  "reading": "にかいきゅうせいは",
+  "journey": "class",
+  "category": "階級制覇",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "class:multi",
+  "relatedTerms": [
+   "cl-fukusu",
+   "cl-sankaikyu",
+   "cl-kaikyuup"
+  ],
+  "country": "日本",
+  "description": "ふたつの 階級で 世界王者に なる ことです。1965年に ファイティング原田が フライ級に つづいて バンタム級でも 王者に なり、日本人 はじめての 2階級制覇を しました。"
+ },
+ {
+  "id": "cl-keiryokyu",
+  "name": "軽量級",
+  "reading": "けいりょうきゅう",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "class:mini",
+  "relatedTerms": [
+   "cl-churyokyu",
+   "cl-juryokyu",
+   "cl-saikeiryo"
+  ],
+  "description": "体重が 軽い ほうの 階級を まとめた よび名です。ミニマム級から フェザー級 あたりを さします。スピードと 手数が 光る 階級で、日本人の 世界王者も 多く 生まれて います。"
+ },
+ {
+  "id": "cl-churyokyu",
+  "name": "中量級",
+  "reading": "ちゅうりょうきゅう",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐆",
+  "mapNode": "class:welter",
+  "relatedTerms": [
+   "cl-keiryokyu",
+   "cl-juryokyu",
+   "cl-middle"
+  ],
+  "description": "体重が まんなか くらいの 階級を まとめた よび名です。ライト級から ミドル級 あたりを さします。スピードと 強さを あわせ持つ 選手が 多い 階級です。"
+ },
+ {
+  "id": "cl-juryokyu",
+  "name": "重量級",
+  "reading": "じゅうりょうきゅう",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 1,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🏋️",
+  "mapNode": "class:heavy",
+  "relatedTerms": [
+   "cl-churyokyu",
+   "cl-heavy",
+   "cl-cruiser"
+  ],
+  "description": "体重が 重い ほうの 階級を まとめた よび名です。ライトヘビー級から ヘビー級 あたりを さします。一発の パンチの 重さが 注目されます。"
+ },
+ {
+  "id": "cl-lightfly",
+  "name": "ライトフライ級",
+  "reading": "らいとふらいきゅう",
+  "journey": "class",
+  "category": "軽量級",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐞",
+  "mapNode": "class:mini",
+  "relatedTerms": [
+   "cl-minimum",
+   "cl-fly",
+   "cl-superfly"
+  ],
+  "acceptedReadings": [
+   "らいとふらいきゅう",
+   "じゅにあふらいきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 108ポンド(約 49キロ)まで の 階級で、1975年に できました。ジュニアフライ級とも よびます。具志堅用高は この 階級で 13回 連続防衛を しました。"
+ },
+ {
+  "id": "cl-superfly",
+  "name": "スーパーフライ級",
+  "reading": "すーぱーふらいきゅう",
+  "journey": "class",
+  "category": "軽量級",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🦋",
+  "mapNode": "class:superfly",
+  "relatedTerms": [
+   "cl-fly",
+   "cl-bantam",
+   "cl-junior"
+  ],
+  "acceptedReadings": [
+   "すーぱーふらいきゅう",
+   "じゅにあばんたむきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 115ポンド(約 52.2キロ)まで の 階級で、1980年に 認められました。ジュニアバンタム級とも よびます。中谷潤人は 2023年に WBO の この 階級で 王者に なりました。"
+ },
+ {
+  "id": "cl-superfeather",
+  "name": "スーパーフェザー級",
+  "reading": "すーぱーふぇざーきゅう",
+  "journey": "class",
+  "category": "中量級",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🕊️",
+  "mapNode": "class:light",
+  "relatedTerms": [
+   "cl-feather",
+   "cl-light",
+   "cl-junior"
+  ],
+  "acceptedReadings": [
+   "すーぱーふぇざーきゅう",
+   "じゅにあらいときゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 130ポンド(約 59キロ)まで の 階級です。ジュニアライト級とも よびます。内山高志は WBA の この 階級で 11回 防衛しました。"
+ },
+ {
+  "id": "cl-superlight",
+  "name": "スーパーライト級",
+  "reading": "すーぱーらいときゅう",
+  "journey": "class",
+  "category": "中量級",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "class:welter",
+  "relatedTerms": [
+   "cl-light",
+   "cl-welter",
+   "cl-junior"
+  ],
+  "acceptedReadings": [
+   "すーぱーらいときゅう",
+   "じゅにあうぇるたーきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 140ポンド(約 63.5キロ)まで の 階級です。ジュニアウェルター級とも よびます。1986年に 浜田剛史が WBC の この 階級で 世界王者に なりました。"
+ },
+ {
+  "id": "cl-superwelter",
+  "name": "スーパーウェルター級",
+  "reading": "すーぱーうぇるたーきゅう",
+  "journey": "class",
+  "category": "中量級",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐯",
+  "mapNode": "class:middle",
+  "relatedTerms": [
+   "cl-welter",
+   "cl-middle",
+   "cl-shinsetsu"
+  ],
+  "acceptedReadings": [
+   "すーぱーうぇるたーきゅう",
+   "じゅにあみどるきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 154ポンド(約 69.9キロ)まで の 階級で、1962年に できました。ジュニアミドル級とも よびます。1971年に 輪島功一が 当時の ジュニアミドル級で 世界王者に なりました。"
+ },
+ {
+  "id": "cl-supermiddle",
+  "name": "スーパーミドル級",
+  "reading": "すーぱーみどるきゅう",
+  "journey": "class",
+  "category": "重量級",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🦁",
+  "mapNode": "class:lightheavy",
+  "relatedTerms": [
+   "cl-middle",
+   "cl-lightheavy",
+   "cl-shinsetsu"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 168ポンド(約 76.2キロ)まで の 階級で、1984年に できました。ミドル級と ライトヘビー級の あいだを うめる 階級として、IBF が はじめに 王者を 決めました。"
+ },
+ {
+  "id": "cl-lightheavy",
+  "name": "ライトヘビー級",
+  "reading": "らいとへびーきゅう",
+  "journey": "class",
+  "category": "重量級",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐻",
+  "mapNode": "class:lightheavy",
+  "relatedTerms": [
+   "cl-supermiddle",
+   "cl-cruiser",
+   "cl-heavy"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 175ポンド(約 79.4キロ)まで の 階級です。モハメド・アリは 1960年 ローマ五輪で この 階級の 金メダルを とりました。ヘビー級の すぐ 下の 重さとして 長い 歴史が あります。"
+ },
+ {
+  "id": "cl-cruiser",
+  "name": "クルーザー級",
+  "reading": "くるーざーきゅう",
+  "journey": "class",
+  "category": "重量級",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🚢",
+  "mapNode": "class:heavy",
+  "relatedTerms": [
+   "cl-lightheavy",
+   "cl-heavy",
+   "cl-bridger"
+  ],
+  "acceptedReadings": [
+   "くるーざーきゅう",
+   "じゅにあへびーきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 200ポンド(約 90.7キロ)まで の 階級で、1979年に できました。ジュニアヘビー級とも よびます。ヘビー級へ 上がる 前の 重さとして 知られます。"
+ },
+ {
+  "id": "cl-jyunana",
+  "name": "17階級",
+  "reading": "じゅうななかいきゅう",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-kaikyu",
+   "cl-saisho8",
+   "cl-shinsetsu"
+  ],
+  "acceptedReadings": [
+   "じゅうななかいきゅう",
+   "じゅうしちかいきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "いまの プロの 男子の 階級の 数です。ミニマム級から ヘビー級まで 17 あり、JBC も 17階級で 試合を 行います。むかしは もっと 少ない 階級でした。"
+ },
+ {
+  "id": "cl-zenjitsu",
+  "name": "前日計量",
+  "reading": "ぜんじつけいりょう",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-keiryo",
+   "cl-tojitsu",
+   "cl-kenshin"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 試合の 前の 日に 行う 計量です。世界戦も 日本タイトル戦も 前の 日に 体重を はかり、リミットを クリアすると 次の 日の 試合に 出られます。"
+ },
+ {
+  "id": "cl-fukusu",
+  "name": "複数階級制覇",
+  "reading": "ふくすうかいきゅうせいは",
+  "journey": "class",
+  "category": "階級制覇",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "class:multi",
+  "relatedTerms": [
+   "cl-nikaikyu",
+   "cl-sankaikyu",
+   "cl-kaikyuup"
+  ],
+  "description": "いくつもの 階級で 世界王者に なる ことです。階級を 上げても 勝ちつづける ことは 難しく、名選手の あかしと されます。"
+ },
+ {
+  "id": "cl-sankaikyu",
+  "name": "3階級制覇",
+  "reading": "さんかいきゅうせいは",
+  "journey": "class",
+  "category": "階級制覇",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🥉",
+  "mapNode": "class:multi",
+  "relatedTerms": [
+   "cl-nikaikyu",
+   "cl-yonkaikyu",
+   "cl-fukusu"
+  ],
+  "country": "日本",
+  "description": "3つの 階級で 世界王者に なる ことです。長谷川穂積は 2016年に スーパーバンタム級で、中谷潤人は 2024年に バンタム級で 3階級制覇を しました。"
+ },
+ {
+  "id": "cl-yonkaikyu",
+  "name": "4階級制覇",
+  "reading": "よんかいきゅうせいは",
+  "journey": "class",
+  "category": "階級制覇",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🍀",
+  "mapNode": "class:multi",
+  "relatedTerms": [
+   "cl-sankaikyu",
+   "cl-gokaikyu",
+   "cl-fukusu"
+  ],
+  "country": "パナマ",
+  "description": "4つの 階級で 世界王者に なる ことです。パナマの ロベルト・デュランは 1972年の ライト級から はじまり、1989年に 4つめの 階級の 王者に なりました。"
+ },
+ {
+  "id": "cl-kaikyuup",
+  "name": "階級を上げる",
+  "reading": "かいきゅうをあげる",
+  "journey": "class",
+  "category": "階級制覇",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "class:multi",
+  "relatedTerms": [
+   "cl-kaikyudown",
+   "cl-zoryo",
+   "cl-fukusu"
+  ],
+  "acceptedReadings": [
+   "かいきゅうをあげる",
+   "かいきゅうあっぷ"
+  ],
+  "description": "いまより 重い 階級に うつって 戦う ことです。体が 成長したり、新しい 目標を めざしたり する ときに 階級を 上げます。"
+ },
+ {
+  "id": "cl-kaikyudown",
+  "name": "階級を下げる",
+  "reading": "かいきゅうをさげる",
+  "journey": "class",
+  "category": "階級制覇",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "class:multi",
+  "relatedTerms": [
+   "cl-kaikyuup",
+   "cl-genryo",
+   "cl-taijukanri"
+  ],
+  "acceptedReadings": [
+   "かいきゅうをさげる",
+   "かいきゅうだうん"
+  ],
+  "description": "いまより 軽い 階級に うつって 戦う ことです。階級を 上げる ことに くらべると、あまり 多くは ありません。"
+ },
+ {
+  "id": "cl-joshi",
+  "name": "女子の階級",
+  "reading": "じょしのかいきゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "👑",
+  "mapNode": "class:women",
+  "relatedTerms": [
+   "cl-atom",
+   "cl-jfeather",
+   "cl-jlight"
+  ],
+  "ruleset": "共通",
+  "description": "女子の ボクシングにも、男子と 同じ ように 体重で 分けた 階級が あります。プロでは 男子に ない いちばん 軽い アトム級も あります。"
+ },
+ {
+  "id": "cl-olympic",
+  "name": "オリンピックの階級",
+  "reading": "おりんぴっくのかいきゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🥇",
+  "mapNode": "class:olympic",
+  "relatedTerms": [
+   "cl-paris",
+   "cl-la2028",
+   "cl-kilo51"
+  ],
+  "country": "世界",
+  "ruleset": "アマ",
+  "description": "オリンピックの ボクシングの 階級は キログラムで 決められ、プロより 数が 少ないです。大会ごとに 数が 変わり、パリ2024 と LA2028 でも ちがいます。"
+ },
+ {
+  "id": "cl-taijukei",
+  "name": "体重計",
+  "reading": "たいじゅうけい",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-keiryo",
+   "cl-limitjust",
+   "cl-under"
+  ],
+  "ruleset": "共通",
+  "description": "体重を はかる 道具です。計量では 選手が 体重計に のって、リミットを クリア したかを 確かめます。"
+ },
+ {
+  "id": "cl-zoryo",
+  "name": "増量",
+  "reading": "ぞうりょう",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🍚",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-genryo",
+   "cl-kaikyuup",
+   "cl-taijukanri"
+  ],
+  "description": "体重を ふやす ことです。上の 階級で 戦う ために、食事と トレーニングで 体を 大きく する ときに 使う ことばです。"
+ },
+ {
+  "id": "cl-saikeiryo",
+  "name": "最軽量級",
+  "reading": "さいけいりょうきゅう",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐜",
+  "mapNode": "class:mini",
+  "relatedTerms": [
+   "cl-minimum",
+   "cl-atom",
+   "cl-saijuryo"
+  ],
+  "description": "いちばん 軽い 階級の ことです。プロの 男子では ミニマム級、女子では アトム級が 最軽量級に あたります。"
+ },
+ {
+  "id": "cl-saijuryo",
+  "name": "最重量級",
+  "reading": "さいじゅうりょうきゅう",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🐘",
+  "mapNode": "class:heavy",
+  "relatedTerms": [
+   "cl-heavy",
+   "cl-saikeiryo",
+   "cl-chijo"
+  ],
+  "description": "いちばん 重い 階級の ことです。プロでは ヘビー級が 最重量級で、体重の 上限が ありません。"
+ },
+ {
+  "id": "cl-taijusa",
+  "name": "体重差",
+  "reading": "たいじゅうさ",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-taijubetsu",
+   "cl-catch",
+   "cl-kaikyu"
+  ],
+  "description": "ふたりの 選手の 体重の ちがいです。体重差が 大きいと 力の 差に つながりやすい ため、ボクシングでは 階級を 分けて 体重差を 小さく します。"
+ },
+ {
+  "id": "cl-chijo",
+  "name": "地上最強の男",
+  "reading": "ちじょうさいきょうのおとこ",
+  "journey": "class",
+  "category": "重量級",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "class:heavy",
+  "relatedTerms": [
+   "cl-heavy",
+   "cl-saijuryo",
+   "cl-juryokyu"
+  ],
+  "description": "ヘビー級の 世界王者を たたえる よび名です。体重の 上限が ない いちばん 重い 階級の 王者は、どの 時代も 特別な 存在と されて きました。"
+ },
+ {
+  "id": "cl-junior",
+  "name": "ジュニア級",
+  "reading": "じゅにあきゅう",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "class:superfly",
+  "relatedTerms": [
+   "cl-superfly",
+   "cl-superbantam",
+   "cl-superwelter"
+  ],
+  "ruleset": "プロ",
+  "description": "階級の もう ひとつの よびかたです。「スーパーフライ級」を 「ジュニアバンタム級」の ように、ひとつ 上の 階級の 名前に ジュニアを つけて よびます。アメリカの 記事で よく 使われます。"
+ },
+ {
+  "id": "cl-taijukanri",
+  "name": "体重管理",
+  "reading": "たいじゅうかんり",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 2,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-genryo",
+   "cl-zoryo",
+   "cl-keiryo"
+  ],
+  "description": "ふだんから 体重を はかって、試合の 階級に あわせて 調整する ことです。食事・練習・休みの バランスを 考えて 体重を 整えます。"
+ },
+ {
+  "id": "cl-bridger",
+  "name": "ブリッジャー級",
+  "reading": "ぶりっじゃーきゅう",
+  "journey": "class",
+  "category": "重量級",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🌉",
+  "mapNode": "class:heavy",
+  "relatedTerms": [
+   "cl-cruiser",
+   "cl-heavy",
+   "cl-shinsetsu"
+  ],
+  "acceptedReadings": [
+   "ぶりっじゃーきゅう",
+   "すーぱーくるーざーきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "200〜224ポンド(約 90.7〜101.6キロ)の 階級で、WBC が 2020年から 使って います。WBA も スーパークルーザー級の 名前で 使いましたが、2026年6月に やめました。"
+ },
+ {
+  "id": "cl-atom",
+  "name": "アトム級",
+  "reading": "あとむきゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "⚛️",
+  "mapNode": "class:women",
+  "relatedTerms": [
+   "cl-joshi",
+   "cl-minimum",
+   "cl-saikeiryo"
+  ],
+  "acceptedReadings": [
+   "あとむきゅう",
+   "じゅにあみにふらいきゅう",
+   "らいとみにまむきゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "女子の プロだけに ある 102ポンド(約 46.3キロ)まで の 階級です。ジュニアミニフライ級とも よびます。アトムは 英語で 原子と いう 意味です。"
+ },
+ {
+  "id": "cl-tojitsu",
+  "name": "当日計量",
+  "reading": "とうじつけいりょう",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-zenjitsu",
+   "cl-jupound",
+   "cl-keiryo"
+  ],
+  "ruleset": "プロ",
+  "description": "IBF の タイトル戦で、前日計量の あとに もう いちど 体重を はかる しくみです。プロの IBF の 独自の きまりとして 知られます。"
+ },
+ {
+  "id": "cl-jupound",
+  "name": "10ポンド",
+  "reading": "じゅっぽんど",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-tojitsu",
+   "cl-limit",
+   "cl-pound"
+  ],
+  "acceptedReadings": [
+   "じゅっぽんど",
+   "じっぽんど"
+  ],
+  "ruleset": "プロ",
+  "description": "IBF の 当日計量で 決められた 体重の はばです。プロの IBF タイトル戦では、試合の 日の 体重が リミットから 10ポンド(約 4.5キロ)まで と 決められて います。"
+ },
+ {
+  "id": "cl-kenshin",
+  "name": "検診",
+  "reading": "けんしん",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-zenjitsu",
+   "cl-keiryo",
+   "cl-tojitsu"
+  ],
+  "description": "プロの 前日計量と あわせて 行う、医師の チェックです。試合に 出られる 状態かを 確かめます。"
+ },
+ {
+  "id": "cl-gokaikyu",
+  "name": "5階級制覇",
+  "reading": "ごかいきゅうせいは",
+  "journey": "class",
+  "category": "階級制覇",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "class:multi",
+  "relatedTerms": [
+   "cl-yonkaikyu",
+   "cl-fukusu",
+   "cl-sankaikyu"
+  ],
+  "description": "5つの 階級で 世界王者に なる ことです。階級を 上げながら 勝ちつづける 必要が あり、長い ボクシングの 歴史でも 数える ほどしか いない 大きな 記録です。"
+ },
+ {
+  "id": "cl-kilo60",
+  "name": "60キロ級",
+  "reading": "ろくじゅっきろきゅう",
+  "acceptedReadings": [
+   "ろくじゅっきろきゅう",
+   "ろくじっきろきゅう"
+  ],
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🏅",
+  "mapNode": "class:olympic",
+  "relatedTerms": [
+   "cl-jlight",
+   "cl-la2028",
+   "cl-kilogram"
+  ],
+  "country": "世界",
+  "ruleset": "アマ",
+  "description": "アマチュアの 60キロまで の 階級です。2012年 ロンドン五輪の 女子ライト級も 60キロまで でした。LA2028 では 男子にも 女子にも ある 階級です。"
+ },
+ {
+  "id": "cl-kilo75",
+  "name": "75キロ級",
+  "reading": "ななじゅうごきろきゅう",
+  "acceptedReadings": [
+   "ななじゅうごきろきゅう",
+   "しちじゅうごきろきゅう"
+  ],
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🏅",
+  "mapNode": "class:olympic",
+  "relatedTerms": [
+   "cl-middle",
+   "cl-paris",
+   "cl-la2028"
+  ],
+  "country": "世界",
+  "ruleset": "アマ",
+  "description": "アマチュアの 75キロまで の 階級です。2012年 ロンドン五輪では 男子の ミドル級が 75キロまででした。パリ2024 と LA2028 では 女子で いちばん 重い 階級です。"
+ },
+ {
+  "id": "cl-nikai4",
+  "name": "2階級4団体統一",
+  "reading": "にかいきゅうよんだんたいとういつ",
+  "journey": "class",
+  "category": "階級制覇",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "💎",
+  "mapNode": "class:multi",
+  "relatedTerms": [
+   "cl-bantam",
+   "cl-superbantam",
+   "cl-fukusu"
+  ],
+  "country": "日本",
+  "description": "ふたつの 階級で 4団体の ベルトを すべて そろえる ことです。井上尚弥は 2022年 バンタム級、2023年 スーパーバンタム級で 達成し、4団体時代で ふたりめと なりました。"
+ },
+ {
+  "id": "cl-kilo92",
+  "name": "92キロ超級",
+  "reading": "きゅうじゅうにきろちょうきゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🏋️",
+  "mapNode": "class:olympic",
+  "relatedTerms": [
+   "cl-superheavy",
+   "cl-paris",
+   "cl-olympic"
+  ],
+  "country": "世界",
+  "ruleset": "アマ",
+  "description": "パリ2024 の 男子で いちばん 重い、92キロを こえる 選手の 階級です。体重の 上限が なく、スーパーヘビー級とも よばれます。"
+ },
+ {
+  "id": "cl-catch",
+  "name": "キャッチウェイト",
+  "reading": "きゃっちうぇいと",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-taijusa",
+   "cl-limit",
+   "cl-kaikyu"
+  ],
+  "acceptedReadings": [
+   "きゃっちうぇいと",
+   "けいやくたいじゅう"
+  ],
+  "ruleset": "プロ",
+  "description": "階級の リミットとは ちがう 体重を、ふたりの 選手が 話しあって 決めた 試合の 体重です。日本語では 契約体重とも いいます。"
+ },
+ {
+  "id": "cl-saisho8",
+  "name": "最初の8階級",
+  "reading": "さいしょのはちかいきゅう",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-jyunana",
+   "cl-shinsetsu",
+   "cl-kaikyu"
+  ],
+  "ruleset": "プロ",
+  "description": "むかしの プロの 8つの 階級です。フライ・バンタム・フェザー・ライト・ウェルター・ミドル・ライトヘビー・ヘビーの 8つで、ここから 階級が ふえて いきました。"
+ },
+ {
+  "id": "cl-shinsetsu",
+  "name": "階級の新設",
+  "reading": "かいきゅうのしんせつ",
+  "journey": "class",
+  "category": "階級の しくみ",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🆕",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-saisho8",
+   "cl-jyunana",
+   "cl-bridger"
+  ],
+  "ruleset": "プロ",
+  "description": "新しい 階級を つくる ことです。プロでは 1975年の ライトフライ級・1980年の スーパーフライ級・1984年の スーパーミドル級 などが 加わり、1987年の ミニマム級で 17階級に なりました。"
+ },
+ {
+  "id": "cl-paris",
+  "name": "パリ五輪の階級",
+  "reading": "ぱりごりんのかいきゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "class:olympic",
+  "relatedTerms": [
+   "cl-olympic",
+   "cl-la2028",
+   "cl-superheavy"
+  ],
+  "country": "フランス",
+  "ruleset": "アマ",
+  "description": "2024年 パリ五輪の ボクシングは、男子 7階級・女子 6階級の 合わせて 13階級でした。男子は 51キロから 92キロ こえまで の 階級が ありました。"
+ },
+ {
+  "id": "cl-la2028",
+  "name": "ロサンゼルス五輪の階級",
+  "reading": "ろさんぜるすごりんのかいきゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🌴",
+  "mapNode": "class:olympic",
+  "relatedTerms": [
+   "cl-paris",
+   "cl-olympic",
+   "cl-kilo51"
+  ],
+  "country": "アメリカ",
+  "ruleset": "アマ",
+  "description": "2028年 ロサンゼルス五輪の ボクシングは、男子 7階級・女子 7階級で、はじめて 男女が 同じ 数に なります。女子は 51キロから 75キロまでの 7つです。"
+ },
+ {
+  "id": "cl-kilo51",
+  "name": "51キロ級",
+  "reading": "ごじゅういちきろきゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "class:olympic",
+  "relatedTerms": [
+   "cl-kilogram",
+   "cl-paris",
+   "cl-la2028"
+  ],
+  "ruleset": "アマ",
+  "description": "アマチュアの 51キロまで の 階級です。パリ2024 では 男子で いちばん 軽い 階級、LA2028 では 女子で いちばん 軽い 階級です。"
+ },
+ {
+  "id": "cl-jfeather",
+  "name": "女子フェザー級",
+  "reading": "じょしふぇざーきゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "class:women",
+  "relatedTerms": [
+   "cl-jfly",
+   "cl-jlight",
+   "cl-feather"
+  ],
+  "country": "日本",
+  "ruleset": "アマ",
+  "description": "女子の フェザー級です。東京2020 で 入江聖奈が この 階級で 金メダルを とり、日本の 女子ボクシングで はじめての メダルと なりました。"
+ },
+ {
+  "id": "cl-jfly",
+  "name": "女子フライ級",
+  "reading": "じょしふらいきゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🎀",
+  "mapNode": "class:women",
+  "relatedTerms": [
+   "cl-jfeather",
+   "cl-fly",
+   "cl-joshi"
+  ],
+  "country": "日本",
+  "ruleset": "アマ",
+  "description": "女子の フライ級です。東京2020 では 並木月海が この 階級で 銅メダルを とりました。"
+ },
+ {
+  "id": "cl-jlight",
+  "name": "女子ライト級",
+  "reading": "じょしらいときゅう",
+  "journey": "class",
+  "category": "女子と 五輪",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "☘️",
+  "mapNode": "class:women",
+  "relatedTerms": [
+   "cl-jfeather",
+   "cl-joshi",
+   "cl-light"
+  ],
+  "country": "アイルランド",
+  "ruleset": "アマ",
+  "description": "女子の ライト級です。女子ボクシングが はじめて 行われた 2012年 ロンドン五輪で、アイルランドの ケイティ・テイラーが この 階級の 金メダルを とりました。"
+ },
+ {
+  "id": "cl-superheavy",
+  "name": "スーパーヘビー級",
+  "reading": "すーぱーへびーきゅう",
+  "journey": "class",
+  "category": "重量級",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🗻",
+  "mapNode": "class:olympic",
+  "relatedTerms": [
+   "cl-heavy",
+   "cl-paris",
+   "cl-olympic"
+  ],
+  "ruleset": "アマ",
+  "description": "アマチュアの いちばん 重い 階級の よび名として 使われて きました。1988年に レノックス・ルイス、1996年に ウラジミール・クリチコが この 階級で 五輪の 金メダルを とりました。"
+ },
+ {
+  "id": "cl-keiryopass",
+  "name": "計量パス",
+  "reading": "けいりょうぱす",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-keiryo",
+   "cl-ippatsu",
+   "cl-limitjust"
+  ],
+  "acceptedReadings": [
+   "けいりょうぱす",
+   "けいりょうくりあ"
+  ],
+  "ruleset": "共通",
+  "description": "計量で 体重が リミット いかだと 確かめられる ことです。「計量クリア」とも いい、パスすると 試合に 出る ことが 決まります。"
+ },
+ {
+  "id": "cl-ippatsu",
+  "name": "一発クリア",
+  "reading": "いっぱつくりあ",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-keiryopass",
+   "cl-limitjust",
+   "cl-under"
+  ],
+  "ruleset": "プロ",
+  "description": "1回目の 計量で リミットを クリアする ことです。プロの 前日計量の ニュースで 「計量 一発クリア」と よく 使われます。"
+ },
+ {
+  "id": "cl-limitjust",
+  "name": "リミットジャスト",
+  "reading": "りみっとじゃすと",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-limit",
+   "cl-under",
+   "cl-keiryopass"
+  ],
+  "acceptedReadings": [
+   "りみっとじゃすと",
+   "りみっとちょうど"
+  ],
+  "ruleset": "共通",
+  "description": "計量の 体重が リミットと ぴったり 同じ だった ことです。リミットちょうど とも いいます。"
+ },
+ {
+  "id": "cl-under",
+  "name": "アンダー",
+  "reading": "あんだー",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🔽",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-limitjust",
+   "cl-limit",
+   "cl-keiryopass"
+  ],
+  "ruleset": "共通",
+  "description": "計量の 体重が リミットより 軽い ことです。「200グラム アンダー」の ように、どれだけ 軽いかを あわせて 言います。"
+ },
+ {
+  "id": "cl-lb",
+  "name": "lb",
+  "reading": "えるびー",
+  "journey": "class",
+  "category": "体重と 計量",
+  "difficulty": 3,
+  "field": "団体・階級",
+  "type": "concept",
+  "emoji": "🔣",
+  "mapNode": "class:weight",
+  "relatedTerms": [
+   "cl-pound",
+   "cl-kilogram",
+   "cl-jupound"
+  ],
+  "description": "ポンドを 短く 書く ときの 記号です。「160lb」は 160ポンドの こと。ラテン語で 重さの 単位を あらわす 「リブラ」を 短く した ものです。"
+ }
+]

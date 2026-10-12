@@ -1,0 +1,1341 @@
+[
+ {
+  "id": "rl-hantei",
+  "name": "判定",
+  "reading": "はんてい",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "rule:decision",
+  "relatedTerms": [
+   "rl-saiten",
+   "rl-hanteigachi",
+   "rl-unanimous"
+  ],
+  "ruleset": "共通",
+  "description": "最後の ラウンドまで 決着が つかなかった とき、ジャッジの 採点を 合計して 勝ちを 決める ことです。プロでも アマでも 使われます。"
+ },
+ {
+  "id": "rl-down",
+  "name": "ダウン",
+  "reading": "だうん",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "rule:down",
+  "relatedTerms": [
+   "rl-count",
+   "rl-threeknockdown",
+   "rl-slip"
+  ],
+  "ruleset": "共通",
+  "description": "正しい パンチの あとに、足の うら いがいの 体の 一部が キャンバスに ついた 状態などを いいます。プロでも アマでも、レフェリーが カウントを 始めます。"
+ },
+ {
+  "id": "rl-count",
+  "name": "カウント",
+  "reading": "かうんと",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "rule:down",
+  "relatedTerms": [
+   "rl-down",
+   "rl-ko"
+  ],
+  "ruleset": "共通",
+  "description": "ダウンの あと、レフェリーが 1から 10まで 数える ことです。10秒で 決着と いう きまりは、1867年の クインズベリー・ルールにも 書かれて いました。プロも アマも 同じです。"
+ },
+ {
+  "id": "rl-ko",
+  "name": "KO",
+  "reading": "けーおー",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "rule:finish",
+  "relatedTerms": [
+   "rl-count",
+   "rl-tko",
+   "rl-down"
+  ],
+  "ruleset": "共通",
+  "description": "ノックアウトの ことです。ダウンの あと、10カウントまでに かまえを とって 試合に もどれない ときの 決着です。プロでも アマでも 使う ことばです。"
+ },
+ {
+  "id": "rl-tko",
+  "name": "TKO",
+  "reading": "てぃーけーおー",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "rule:finish",
+  "relatedTerms": [
+   "rl-ko",
+   "rl-refstop",
+   "rl-towel"
+  ],
+  "ruleset": "プロ",
+  "description": "テクニカル・ノックアウトの ことです。プロで、レフェリーが 試合を 止めたり、セコンドが 棄権を つたえたり した ときの 決着です。アマでは RSC と いいます。"
+ },
+ {
+  "id": "rl-hansoku",
+  "name": "反則",
+  "reading": "はんそく",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-lowblow",
+   "rl-butting",
+   "rl-genten"
+  ],
+  "ruleset": "共通",
+  "description": "ルールで してはいけないと 決められた 打ちかたや 動きです。ベルトより 下を 打つ・頭を ぶつける・相手を かかえる などが あり、プロでも アマでも 注意や 減点に なります。"
+ },
+ {
+  "id": "rl-lowblow",
+  "name": "ローブロー",
+  "reading": "ろーぶろー",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-hansoku",
+   "rl-genten"
+  ],
+  "ruleset": "共通",
+  "description": "ベルトの 線より 下を 打つ 反則です。プロでも アマでも してはいけません。パンチは ベルトより 上の 前と 横を ねらうのが きまりです。"
+ },
+ {
+  "id": "rl-clinch",
+  "name": "クリンチ",
+  "reading": "くりんち",
+  "journey": "rule",
+  "category": "レフェリーの 合図",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "rule:ref",
+  "relatedTerms": [
+   "rl-break",
+   "rl-holding"
+  ],
+  "ruleset": "共通",
+  "description": "相手に 組みついて、腕を おさえる 動きです。プロでも アマでも 見られますが、長く つづくと レフェリーが ブレイクを かけ、くり返すと 反則に なります。"
+ },
+ {
+  "id": "rl-break",
+  "name": "ブレイク",
+  "reading": "ぶれいく",
+  "journey": "rule",
+  "category": "レフェリーの 合図",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "rule:ref",
+  "relatedTerms": [
+   "rl-clinch",
+   "rl-holding"
+  ],
+  "ruleset": "共通",
+  "description": "組みあった ふたりを はなす ときの レフェリーの 合図です。プロでも アマでも、ブレイクの あとは 1歩 下がってから 打ちあいに もどります。"
+ },
+ {
+  "id": "rl-hikiwake",
+  "name": "引き分け",
+  "reading": "ひきわけ",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "rule:draw",
+  "relatedTerms": [
+   "rl-hantei",
+   "rl-nocontest"
+  ],
+  "ruleset": "プロ",
+  "acceptedReadings": [
+   "ひきわけ",
+   "どろー"
+  ],
+  "description": "プロで、判定の 合計点が 同じに なり 勝ちが 決まらない ことです。ドローとも いいます。アマの トーナメントでは かならず 勝者を 決めます。"
+ },
+ {
+  "id": "rl-titlematch",
+  "name": "タイトルマッチ",
+  "reading": "たいとるまっち",
+  "journey": "rule",
+  "category": "時間と ラウンド",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏆",
+  "mapNode": "rule:round",
+  "relatedTerms": [
+   "rl-twelve",
+   "rl-nontitle",
+   "rl-fifteen"
+  ],
+  "ruleset": "プロ",
+  "description": "プロで、チャンピオンの ベルトを かけて 行う 試合です。世界・東洋太平洋・日本など いろいろな タイトルが あり、ベルトの かかって いない 試合は ノンタイトル戦と いいます。"
+ },
+ {
+  "id": "rl-twelve",
+  "name": "12ラウンド",
+  "reading": "じゅうにらうんど",
+  "journey": "rule",
+  "category": "時間と ラウンド",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🕛",
+  "mapNode": "rule:round",
+  "relatedTerms": [
+   "rl-titlematch",
+   "rl-fifteen",
+   "rl-threemin"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 世界タイトルマッチの ラウンドの 数です。1回 3分で、あいだに 1分の 休みが あります。むかしは 15ラウンドでした。"
+ },
+ {
+  "id": "rl-threemin",
+  "name": "3分",
+  "reading": "さんぷん",
+  "journey": "rule",
+  "category": "時間と ラウンド",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "rule:round",
+  "relatedTerms": [
+   "rl-twelve",
+   "rl-threeround"
+  ],
+  "ruleset": "共通",
+  "description": "1ラウンドの 長さです。プロでも アマでも 3分で、ラウンドの あいだには 1分の 休みが あります。このきまりは 1867年の クインズベリー・ルールから 続いて います。"
+ },
+ {
+  "id": "rl-saiten",
+  "name": "採点",
+  "reading": "さいてん",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-tenpoint",
+   "rl-hantei",
+   "rl-scorecard"
+  ],
+  "ruleset": "共通",
+  "description": "ジャッジが ラウンドごとに どちらが 上だったかを 点数に する ことです。プロは 3人、オリンピックは 5人の ジャッジが 採点します。"
+ },
+ {
+  "id": "rl-genten",
+  "name": "減点",
+  "reading": "げんてん",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-hansoku",
+   "rl-warning",
+   "rl-hansokumake"
+  ],
+  "ruleset": "共通",
+  "description": "反則を した 選手の 点数を 引く ことです。プロでも アマでも 行われ、アマでは 警告 1回ごとに ジャッジ それぞれの 点から 1点 引かれます。"
+ },
+ {
+  "id": "rl-hansokumake",
+  "name": "反則負け",
+  "reading": "はんそくまけ",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-hansoku",
+   "rl-genten",
+   "rl-dsq"
+  ],
+  "ruleset": "共通",
+  "description": "反則が ひどい ときや くり返した ときに、その 選手の 負けと する ことです。プロでも アマでも あり、アマでは 警告が 3回に なると 失格です。"
+ },
+ {
+  "id": "rl-butting",
+  "name": "バッティング",
+  "reading": "ばってぃんぐ",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-accidental",
+   "rl-intentional"
+  ],
+  "ruleset": "共通",
+  "description": "頭と 頭が ぶつかる ことです。プロでも アマでも 頭で 打つのは 反則です。プロでは わざとか 偶然かで あつかいが 変わります。"
+ },
+ {
+  "id": "rl-holding",
+  "name": "ホールディング",
+  "reading": "ほーるでぃんぐ",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🫂",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-clinch",
+   "rl-holdhit"
+  ],
+  "ruleset": "共通",
+  "description": "相手を かかえたり つかんだり して 動けなく する 反則です。プロでも アマでも、くり返すと 注意や 減点に なります。"
+ },
+ {
+  "id": "rl-threeround",
+  "name": "3ラウンド",
+  "reading": "さんらうんど",
+  "journey": "rule",
+  "category": "アマチュア",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "3️⃣",
+  "mapNode": "rule:amateur",
+  "relatedTerms": [
+   "rl-threemin",
+   "rl-fivejudge"
+  ],
+  "ruleset": "アマ",
+  "description": "オリンピックなど アマチュアの 試合の ラウンドの 数です。1回 3分 × 3ラウンドで、あいだの 休みは 1分です。プロの 世界戦より ずっと 短い たたかいです。"
+ },
+ {
+  "id": "rl-hanteigachi",
+  "name": "判定勝ち",
+  "reading": "はんていがち",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "rule:decision",
+  "relatedTerms": [
+   "rl-hantei",
+   "rl-unanimous",
+   "rl-split"
+  ],
+  "ruleset": "共通",
+  "description": "最後まで 戦って、ジャッジの 採点で 勝つ ことです。プロでも アマでも あります。1952年の 白井義男の 世界王座も 判定勝ちでした。"
+ },
+ {
+  "id": "rl-tenpoint",
+  "name": "10点法",
+  "reading": "じってんほう",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-saiten",
+   "rl-teneight",
+   "rl-tennine"
+  ],
+  "ruleset": "共通",
+  "acceptedReadings": [
+   "じってんほう",
+   "じゅってんほう"
+  ],
+  "description": "ラウンドごとに、取った 選手に 10点、もう ひとりに 9点 などを つける 採点の しかたです。プロでも アマでも 使われ、正しくは 「10ポイント・マスト・システム」と いいます。"
+ },
+ {
+  "id": "rl-tennine",
+  "name": "10対9",
+  "reading": "じゅったいきゅう",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-tenpoint",
+   "rl-teneight"
+  ],
+  "ruleset": "共通",
+  "acceptedReadings": [
+   "じゅったいきゅう",
+   "じったいきゅう"
+  ],
+  "description": "10点法で いちばん 多い 点数の つけかたです。少しの 差で ラウンドを 取った ときに つけます。プロでも アマでも 同じです。"
+ },
+ {
+  "id": "rl-unanimous",
+  "name": "ユナニマス・デシジョン",
+  "reading": "ゆなにますでしじょん",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "3️⃣",
+  "mapNode": "rule:decision",
+  "relatedTerms": [
+   "rl-split",
+   "rl-majority",
+   "rl-hantei"
+  ],
+  "ruleset": "プロ",
+  "acceptedReadings": [
+   "ゆなにますでしじょん",
+   "ゆなにますでぃしじょん"
+  ],
+  "description": "プロの 判定で、3人の ジャッジ 全員が 同じ 選手を 勝ちに した ことです。日本語では 「3対0の 判定」とも いいます。"
+ },
+ {
+  "id": "rl-split",
+  "name": "スプリット・デシジョン",
+  "reading": "すぷりっとでしじょん",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "rule:decision",
+  "relatedTerms": [
+   "rl-unanimous",
+   "rl-majority"
+  ],
+  "ruleset": "プロ",
+  "acceptedReadings": [
+   "すぷりっとでしじょん",
+   "すぷりっとでぃしじょん"
+  ],
+  "description": "プロの 判定で、ジャッジが ふたりと ひとりに 分かれた ことです。「2対1の 判定」とも いい、とても せった 試合で 出ます。"
+ },
+ {
+  "id": "rl-majority",
+  "name": "マジョリティ・デシジョン",
+  "reading": "まじょりてぃでしじょん",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "rule:decision",
+  "relatedTerms": [
+   "rl-unanimous",
+   "rl-split"
+  ],
+  "ruleset": "プロ",
+  "acceptedReadings": [
+   "まじょりてぃでしじょん",
+   "まじょりてぃでぃしじょん"
+  ],
+  "description": "プロの 判定で、ふたりの ジャッジが 同じ 選手を 勝ちに し、ひとりが 引き分けに した ことです。「2対0の 判定」とも いいます。"
+ },
+ {
+  "id": "rl-threejudge",
+  "name": "3人のジャッジ",
+  "reading": "さんにんのじゃっじ",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-fivejudge",
+   "rl-saiten"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの 試合を 採点する ジャッジの 人数です。リングの まわりの べつべつの 席から 見て、それぞれ 自分の 採点表に 点を つけます。"
+ },
+ {
+  "id": "rl-fivejudge",
+  "name": "5人のジャッジ",
+  "reading": "ごにんのじゃっじ",
+  "journey": "rule",
+  "category": "アマチュア",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "rule:amateur",
+  "relatedTerms": [
+   "rl-threejudge",
+   "rl-threeround"
+  ],
+  "ruleset": "アマ",
+  "description": "オリンピックの ボクシングで 採点する ジャッジの 人数です。プロの 3人より 多く、10点法で ラウンドごとに 点を つけます。"
+ },
+ {
+  "id": "rl-threeknockdown",
+  "name": "スリーノックダウン制",
+  "reading": "すりーのっくだうんせい",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "3️⃣",
+  "mapNode": "rule:down",
+  "relatedTerms": [
+   "rl-freeknockdown",
+   "rl-twoknockdown"
+  ],
+  "ruleset": "プロ",
+  "description": "1つの ラウンドで 3回 ダウンすると その 時点で 決着と する きまりです。日本の プロ(JBC)は 2015年まで 使い、2016年度から やめました。団体や 試合に よって ちがいます。"
+ },
+ {
+  "id": "rl-freeknockdown",
+  "name": "フリーノックダウン制",
+  "reading": "ふりーのっくだうんせい",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "♾️",
+  "mapNode": "rule:down",
+  "relatedTerms": [
+   "rl-threeknockdown",
+   "rl-down"
+  ],
+  "ruleset": "プロ",
+  "description": "1つの ラウンドで 何回 ダウンが あっても、それだけでは 決着に しない きまりです。WBC・IBF・WBO の プロの タイトル戦は この きまりです。"
+ },
+ {
+  "id": "rl-refstop",
+  "name": "レフェリーストップ",
+  "reading": "れふぇりーすとっぷ",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "rule:finish",
+  "relatedTerms": [
+   "rl-tko",
+   "rl-rsc"
+  ],
+  "ruleset": "共通",
+  "description": "レフェリーが 「これ いじょう 続けない ほうが よい」と 決めて 試合を 止める ことです。プロでは TKO、アマでは RSC に なります。"
+ },
+ {
+  "id": "rl-kiken",
+  "name": "棄権",
+  "reading": "きけん",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏳️",
+  "mapNode": "rule:finish",
+  "relatedTerms": [
+   "rl-towel",
+   "rl-tko",
+   "rl-abd"
+  ],
+  "ruleset": "共通",
+  "description": "選手や セコンドが 自分から 試合を やめる ことです。ラウンドの あいだの 休みに 伝える ことも あります。プロでは TKO、アマでは ABD と いう 決着に なります。"
+ },
+ {
+  "id": "rl-towel",
+  "name": "タオル",
+  "reading": "たおる",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "rule:finish",
+  "relatedTerms": [
+   "rl-kiken",
+   "rl-tko"
+  ],
+  "ruleset": "共通",
+  "description": "セコンドが リングに タオルを 投げ入れるのは、棄権を つたえる 合図です。プロでも アマでも 使われる、とても よく 知られた しぐさです。"
+ },
+ {
+  "id": "rl-standing8",
+  "name": "スタンディングエイトカウント",
+  "reading": "すたんでぃんぐえいとかうんと",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "rule:down",
+  "relatedTerms": [
+   "rl-down",
+   "rl-count"
+  ],
+  "ruleset": "アマ",
+  "description": "ダウンして いなくても、レフェリーが 試合を 止めて 8まで 数える ことです。アマ(World Boxing)の ルールに あり、ダウンと 同じに 数えます。プロでは 団体や 試合に よって ちがいます。"
+ },
+ {
+  "id": "rl-tenrounds",
+  "name": "10回戦",
+  "reading": "じゅっかいせん",
+  "journey": "rule",
+  "category": "時間と ラウンド",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "rule:round",
+  "relatedTerms": [
+   "rl-twelve",
+   "rl-sixrounds"
+  ],
+  "ruleset": "プロ",
+  "acceptedReadings": [
+   "じゅっかいせん",
+   "じっかいせん"
+  ],
+  "description": "10ラウンドで 行う プロの 試合です。東洋太平洋や WBO アジアパシフィックの タイトル戦は 10回戦で 行われます。"
+ },
+ {
+  "id": "rl-nontitle",
+  "name": "ノンタイトル戦",
+  "reading": "のんたいとるせん",
+  "journey": "rule",
+  "category": "時間と ラウンド",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎽",
+  "mapNode": "rule:round",
+  "relatedTerms": [
+   "rl-titlematch"
+  ],
+  "ruleset": "プロ",
+  "description": "ベルトが かかって いない プロの 試合です。王者が 出ても、勝っても 負けても ベルトの もちぬしは 変わりません。"
+ },
+ {
+  "id": "rl-nocontest",
+  "name": "ノーコンテスト",
+  "reading": "のーこんてすと",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "rule:draw",
+  "relatedTerms": [
+   "rl-hikiwake",
+   "rl-accidental",
+   "rl-technicaldecision"
+  ],
+  "ruleset": "プロ",
+  "description": "プロで、勝ち負けを つけずに 試合を なかった ことに する 決着です。無効試合とも いい、早い ラウンドで 偶然の バッティングに より 続けられなく なった ときに、団体に よっては この あつかいに なります。"
+ },
+ {
+  "id": "rl-rabbit",
+  "name": "ラビットパンチ",
+  "reading": "らびっとぱんち",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🐇",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-hansoku",
+   "rl-lowblow"
+  ],
+  "ruleset": "共通",
+  "description": "相手の 頭の うしろを 打つ 反則の 名前です。プロでも アマでも してはいけません。"
+ },
+ {
+  "id": "rl-elbow",
+  "name": "肘打ち",
+  "reading": "ひじうち",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-hansoku",
+   "rl-butting"
+  ],
+  "ruleset": "共通",
+  "description": "ひじで 打つ 反則です。プロでも アマでも、パンチは にぎった グローブの 前の 面で 打つのが きまりです。"
+ },
+ {
+  "id": "rl-glove",
+  "name": "グローブの重さ",
+  "reading": "ぐろーぶのおもさ",
+  "journey": "rule",
+  "category": "グローブ",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "rule:glove",
+  "relatedTerms": [
+   "rl-ounce"
+  ],
+  "ruleset": "共通",
+  "description": "試合で 使う グローブは 重さが 決まって います。プロでは 軽い 階級で 8オンス、重い 階級で 10オンスが 多く、アマ(World Boxing)では 10オンスか 12オンスを 使います。"
+ },
+ {
+  "id": "rl-ounce",
+  "name": "オンス",
+  "reading": "おんす",
+  "journey": "rule",
+  "category": "グローブ",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🥊",
+  "mapNode": "rule:glove",
+  "relatedTerms": [
+   "rl-glove"
+  ],
+  "ruleset": "共通",
+  "description": "グローブの 重さの 単位です。1オンスは 約28グラムです。プロでも アマでも 「8オンス」「10オンス」のように 言います。"
+ },
+ {
+  "id": "rl-amateur",
+  "name": "アマチュアボクシング",
+  "reading": "あまちゅあぼくしんぐ",
+  "journey": "rule",
+  "category": "アマチュア",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏅",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-prob",
+   "rl-threeround",
+   "rl-fivejudge"
+  ],
+  "ruleset": "アマ",
+  "country": "世界",
+  "description": "オリンピックや 全日本選手権の ボクシングです。オリンピックでは 3分 × 3ラウンド・5人の ジャッジで 行い、日本では 日本ボクシング連盟が まとめて います。"
+ },
+ {
+  "id": "rl-prob",
+  "name": "プロボクシング",
+  "reading": "ぷろぼくしんぐ",
+  "journey": "rule",
+  "category": "アマチュア",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎟️",
+  "mapNode": "rule:diff",
+  "relatedTerms": [
+   "rl-amateur",
+   "rl-twelve"
+  ],
+  "ruleset": "プロ",
+  "description": "プロの ライセンスを もつ 選手が 戦う ボクシングです。日本では JBC(日本ボクシングコミッション)が まとめ、世界戦は 3分 × 12ラウンドです。"
+ },
+ {
+  "id": "rl-caution",
+  "name": "注意",
+  "reading": "ちゅうい",
+  "journey": "rule",
+  "category": "レフェリーの 合図",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "☝️",
+  "mapNode": "rule:ref",
+  "relatedTerms": [
+   "rl-warning",
+   "rl-hansoku"
+  ],
+  "ruleset": "アマ",
+  "description": "アマで、反則を した 選手に レフェリーが 出す いちばん 軽い 合図です。注意が 重なると、もっと 重い 警告に なる ことも あります。"
+ },
+ {
+  "id": "rl-warning",
+  "name": "警告",
+  "reading": "けいこく",
+  "journey": "rule",
+  "category": "レフェリーの 合図",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "rule:ref",
+  "relatedTerms": [
+   "rl-caution",
+   "rl-dsq",
+   "rl-genten"
+  ],
+  "ruleset": "アマ",
+  "description": "アマで、注意より 重い レフェリーの 合図です。警告 1回ごとに ジャッジ それぞれが 1点 引き、3回に なると 失格です。"
+ },
+ {
+  "id": "rl-teneight",
+  "name": "10対8",
+  "reading": "じゅったいはち",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-tennine",
+   "rl-tenseven",
+   "rl-down"
+  ],
+  "ruleset": "共通",
+  "acceptedReadings": [
+   "じゅったいはち",
+   "じったいはち"
+  ],
+  "description": "10点法で、はっきり 差が ついた ラウンドに つける 点です。プロでは ダウンを とった ラウンドに よく つけられます。"
+ },
+ {
+  "id": "rl-technicaldecision",
+  "name": "テクニカル・デシジョン",
+  "reading": "てくにかるでしじょん",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "rule:decision",
+  "relatedTerms": [
+   "rl-accidental",
+   "rl-nocontest",
+   "rl-hantei"
+  ],
+  "ruleset": "プロ",
+  "acceptedReadings": [
+   "てくにかるでしじょん",
+   "てくにかるでぃしじょん"
+  ],
+  "description": "プロで、偶然の バッティング などで とちゅうから 試合を 続けられなく なった とき、それまでの 採点で 勝ちを 決める ことです。止まった ラウンドが 早いと 引き分けや ノーコンテストに なります。"
+ },
+ {
+  "id": "rl-accidental",
+  "name": "偶然のバッティング",
+  "reading": "ぐうぜんのばってぃんぐ",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-butting",
+   "rl-intentional",
+   "rl-technicaldecision"
+  ],
+  "ruleset": "プロ",
+  "description": "わざとでは なく、頭と 頭が ぶつかって しまう ことです。プロでは 反則に ならず、その あと 試合が 止まると 判定や ノーコンテストの きまりが 使われます。"
+ },
+ {
+  "id": "rl-intentional",
+  "name": "故意のバッティング",
+  "reading": "こいのばってぃんぐ",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "❗",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-butting",
+   "rl-accidental",
+   "rl-genten"
+  ],
+  "ruleset": "共通",
+  "description": "わざと 頭を ぶつける ことです。プロでも アマでも 反則で、減点や 反則負けの もとに なります。"
+ },
+ {
+  "id": "rl-tensix",
+  "name": "10対6",
+  "reading": "じゅったいろく",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-tenseven",
+   "rl-teneight"
+  ],
+  "ruleset": "プロ",
+  "acceptedReadings": [
+   "じゅったいろく",
+   "じったいろく"
+  ],
+  "country": "日本",
+  "description": "日本の プロ(JBC)で つけられる いちばん 大きい 差の 点です。2016年度の ルール改正で、それまでの 「10対7まで」から 広げられました。"
+ },
+ {
+  "id": "rl-tenseven",
+  "name": "10対7",
+  "reading": "じゅったいなな",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-tensix",
+   "rl-teneight"
+  ],
+  "ruleset": "共通",
+  "acceptedReadings": [
+   "じゅったいなな",
+   "じったいなな"
+  ],
+  "description": "10点法で、とても 大きな 差が ついた ラウンドの 点です。アマでは 10対7が いちばん 大きい 差で、日本の プロも 2015年までは ここまででした。"
+ },
+ {
+  "id": "rl-twoknockdown",
+  "name": "2ノックダウン制",
+  "reading": "にのっくだうんせい",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "2️⃣",
+  "mapNode": "rule:down",
+  "relatedTerms": [
+   "rl-threeknockdown",
+   "rl-freeknockdown"
+  ],
+  "ruleset": "プロ",
+  "country": "日本",
+  "description": "1つの ラウンドで 2回 ダウンすると 決着と する きまりです。日本の プロ(JBC)では 4回戦で 使われて いましたが、2016年度に やめました。"
+ },
+ {
+  "id": "rl-openscoring",
+  "name": "公開採点",
+  "reading": "こうかいさいてん",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-saiten",
+   "rl-scorecard"
+  ],
+  "ruleset": "プロ",
+  "acceptedReadings": [
+   "こうかいさいてん",
+   "おーぷんすこありんぐ"
+  ],
+  "description": "とちゅうの ラウンドで、それまでの 採点を 発表する しくみです。WBC が 広めたもので、ふつうは 4回と 8回の あとに 知らせます。オープンスコアリングとも いいます。"
+ },
+ {
+  "id": "rl-fifteen",
+  "name": "15回戦",
+  "reading": "じゅうごかいせん",
+  "journey": "rule",
+  "category": "時間と ラウンド",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "rule:round",
+  "relatedTerms": [
+   "rl-twelve",
+   "rl-titlematch"
+  ],
+  "ruleset": "プロ",
+  "description": "むかしの プロの 世界タイトルマッチの 長さです。WBC が 1983年から 12回戦に 変え、ほかの 団体も 1980年代の うちに 続きました。"
+ },
+ {
+  "id": "rl-rsc",
+  "name": "RSC",
+  "reading": "あーるえすしー",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "rule:finish",
+  "relatedTerms": [
+   "rl-refstop",
+   "rl-tko",
+   "rl-wp"
+  ],
+  "ruleset": "アマ",
+  "description": "アマで、レフェリーが 試合を 止める 決着の 記号です。「レフェリー・ストップ・コンテスト」の 頭文字で、プロの TKO に あたります。"
+ },
+ {
+  "id": "rl-wp",
+  "name": "WP",
+  "reading": "だぶりゅーぴー",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "rule:decision",
+  "relatedTerms": [
+   "rl-rsc",
+   "rl-fivejudge",
+   "rl-hantei"
+  ],
+  "ruleset": "アマ",
+  "description": "アマの 判定勝ちを あらわす 記号です。「ウィン・オン・ポイント」の 頭文字で、5人の ジャッジの 採点で 決まります。"
+ },
+ {
+  "id": "rl-abd",
+  "name": "ABD",
+  "reading": "えーびーでぃー",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏳️",
+  "mapNode": "rule:finish",
+  "relatedTerms": [
+   "rl-kiken",
+   "rl-towel",
+   "rl-rsc"
+  ],
+  "ruleset": "アマ",
+  "description": "アマで、選手や セコンドが 棄権した ときの 決着の 記号です。セコンドが タオルを 投げ入れた ときも これに なります。"
+ },
+ {
+  "id": "rl-walkover",
+  "name": "不戦勝",
+  "reading": "ふせんしょう",
+  "journey": "rule",
+  "category": "アマチュア",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "rule:amateur",
+  "relatedTerms": [
+   "rl-abd",
+   "rl-dsq"
+  ],
+  "ruleset": "アマ",
+  "description": "相手が 試合に 出て こなかった ために 勝ちに なる ことです。アマでは WO と 書き、ゴングから 1分 たっても 相手が リングに 来ないと 不戦勝に なります。"
+ },
+ {
+  "id": "rl-dsq",
+  "name": "失格",
+  "reading": "しっかく",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-warning",
+   "rl-hansokumake"
+  ],
+  "ruleset": "アマ",
+  "description": "アマで、反則が もとで 負けに なる ことです。DSQ と 書き、警告が 3回に なると 自動で 失格です。"
+ },
+ {
+  "id": "rl-headgear",
+  "name": "ヘッドギアなし",
+  "reading": "へっどぎあなし",
+  "journey": "rule",
+  "category": "アマチュア",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧢",
+  "mapNode": "rule:amateur",
+  "relatedTerms": [
+   "rl-amateur",
+   "rl-elite"
+  ],
+  "ruleset": "アマ",
+  "description": "オリンピックの 男子は、2016年の リオの 前から ヘッドギアを つけずに 戦って います。World Boxing の きまりでも、エリートの 女子は ヘッドギアを つけます。"
+ },
+ {
+  "id": "rl-gongend",
+  "name": "終了のゴング",
+  "reading": "しゅうりょうのごんぐ",
+  "journey": "rule",
+  "category": "時間と ラウンド",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "rule:round",
+  "relatedTerms": [
+   "rl-threemin",
+   "rl-twelve"
+  ],
+  "ruleset": "共通",
+  "country": "日本",
+  "description": "ラウンドの 終わりを 知らせる ゴングです。プロでも アマでも、ゴングが 鳴ったら 打つのを やめて、それぞれの コーナーに もどります。"
+ },
+ {
+  "id": "rl-slip",
+  "name": "スリップ",
+  "reading": "すりっぷ",
+  "journey": "rule",
+  "category": "ダウンと 決着",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🍌",
+  "mapNode": "rule:down",
+  "relatedTerms": [
+   "rl-down",
+   "rl-count"
+  ],
+  "ruleset": "共通",
+  "description": "パンチでは なく、足を すべらせて 手や ひざを ついた ことです。レフェリーが スリップと 見たら ダウンには ならず、カウントも しません。"
+ },
+ {
+  "id": "rl-turnback",
+  "name": "背中を向ける反則",
+  "reading": "せなかをむけるはんそく",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔙",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-hansoku",
+   "rl-caution"
+  ],
+  "ruleset": "アマ",
+  "description": "パンチを さけるために わざと 背中を 向ける 反則です。アマの ルールに 書かれて いて、注意や 警告の もとに なります。"
+ },
+ {
+  "id": "rl-openblow",
+  "name": "オープンブロー",
+  "reading": "おーぷんぶろー",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-elbow",
+   "rl-hansoku"
+  ],
+  "ruleset": "共通",
+  "description": "グローブの 内がわや 手の ひらの がわで 打つ 反則です。プロでも アマでも、にぎった こぶしの 前の 面で 打つのが きまりです。"
+ },
+ {
+  "id": "rl-holdhit",
+  "name": "つかんで打つ反則",
+  "reading": "つかんでうつはんそく",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪢",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-holding",
+   "rl-clinch"
+  ],
+  "ruleset": "共通",
+  "description": "かた方の 手で 相手を つかんだり かかえたり しながら、もう かた方の 手で 打つ 反則です。プロでも アマでも してはいけません。"
+ },
+ {
+  "id": "rl-headlock",
+  "name": "ヘッドロック",
+  "reading": "へっどろっく",
+  "journey": "rule",
+  "category": "反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "rule:foul",
+  "relatedTerms": [
+   "rl-holding",
+   "rl-hansoku"
+  ],
+  "ruleset": "共通",
+  "description": "相手の 頭を 腕で かかえこむ 反則です。プロでも アマでも してはいけません。"
+ },
+ {
+  "id": "rl-scorecard",
+  "name": "採点表",
+  "reading": "さいてんひょう",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🗒️",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-saiten",
+   "rl-openscoring"
+  ],
+  "ruleset": "共通",
+  "acceptedReadings": [
+   "さいてんひょう",
+   "すこあかーど"
+  ],
+  "description": "ジャッジが ラウンドごとの 点を 書きこむ 紙です。スコアカードとも いい、試合の あとに 合計して 判定が 発表されます。プロでも アマでも 使います。"
+ },
+ {
+  "id": "rl-kijun",
+  "name": "採点基準",
+  "reading": "さいてんきじゅん",
+  "journey": "rule",
+  "category": "採点",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-saiten",
+   "rl-tenpoint"
+  ],
+  "ruleset": "共通",
+  "description": "ジャッジが 点を つける ときの めやすです。アマでは きれいに 当たった パンチの 質・技術や 作戦で 上回ったか・積極的に 戦ったか を 見ます。プロも にた めやすですが、団体に よって 書きかたが ちがいます。"
+ },
+ {
+  "id": "rl-elite",
+  "name": "エリート",
+  "reading": "えりーと",
+  "journey": "rule",
+  "category": "アマチュア",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎖️",
+  "mapNode": "rule:amateur",
+  "relatedTerms": [
+   "rl-amateur",
+   "rl-headgear"
+  ],
+  "ruleset": "アマ",
+  "description": "アマの ボクシングで、大人の 選手の 部の よび名です。オリンピックに 出るのも エリートの 選手です。"
+ },
+ {
+  "id": "rl-sixrounds",
+  "name": "6回戦",
+  "reading": "ろっかいせん",
+  "journey": "rule",
+  "category": "時間と ラウンド",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "6️⃣",
+  "mapNode": "rule:round",
+  "relatedTerms": [
+   "rl-eightrounds",
+   "rl-tenrounds"
+  ],
+  "ruleset": "プロ",
+  "country": "日本",
+  "description": "日本の プロで、B級 ライセンスの 選手が 戦う 試合の 長さです。プロテストに 受かった ばかりの 選手は 4回戦から 始めます。"
+ },
+ {
+  "id": "rl-eightrounds",
+  "name": "8回戦",
+  "reading": "はっかいせん",
+  "journey": "rule",
+  "category": "時間と ラウンド",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "8️⃣",
+  "mapNode": "rule:round",
+  "relatedTerms": [
+   "rl-sixrounds",
+   "rl-tenrounds"
+  ],
+  "ruleset": "プロ",
+  "country": "日本",
+  "description": "日本の プロで、A級 ライセンスの 選手が 戦う 試合の 長さです。8回戦より 長い 試合に 出られるのも A級の 選手です。"
+ }
+]

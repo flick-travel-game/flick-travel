@@ -10,7 +10,7 @@
 const EIGA = (() => {
   const D = EIGA_TERMS;
   const ROUNDS = 10;
-  const RANK_READY = true;  // かずともの FLICK_MODES に mvkihon / mvrekishi / mvgiho / mvgenre / mvsekai / mvnihon / mvsho / mvhihyo / mvgyokai / mvmas を 足す(speed-king)。false に すると ランキングを 出さない・送らない
+  const RANK_READY = true;  // かずともの FLICK_MODES に mvkihon / mvrekishi / mvgiho / mvgenre / mvsekai / mvnihon / mvsho / mvhihyo / mvhaiyu / mvgyokai / mvmas を 足す(speed-king)。false に すると ランキングを 出さない・送らない
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const fmt = n => n.toLocaleString("ja-JP");
   const JR = D.journeys, JBY = Object.fromEntries(JR.map(j => [j.id, j]));
@@ -18,8 +18,8 @@ const EIGA = (() => {
   /* 旅の ボタンの 色。土台が TONE[名前] を 見るので、ほかの フリックと 同じ あかるい 色に なる
      (けいくん 2026-09-28「ボタンが暗いので他のフリックのように明るくしてください」)。
      TONE に 無い 赤だけ 色で 渡す(#e0202e = 歴史・レベル2 と 同じ あかるい 赤) */
-  const TONE_OF = { kihon:"#e0202e", rekishi:"blue", giho:"purple", genre:"green", sekai:"#e0a800", nihon:"orange", sho:"#0a9396", hihyo:"pink", gyokai:"#b5651d" };
-  const MODE_OF = { kihon:"mvkihon", rekishi:"mvrekishi", giho:"mvgiho", genre:"mvgenre", sekai:"mvsekai", nihon:"mvnihon", sho:"mvsho", hihyo:"mvhihyo", gyokai:"mvgyokai" };
+  const TONE_OF = { kihon:"#e0202e", rekishi:"blue", giho:"purple", genre:"green", sekai:"#e0a800", nihon:"orange", sho:"#0a9396", hihyo:"pink", haiyu:"#7048e8", gyokai:"#b5651d" };
+  const MODE_OF = { kihon:"mvkihon", rekishi:"mvrekishi", giho:"mvgiho", genre:"mvgenre", sekai:"mvsekai", nihon:"mvnihon", sho:"mvsho", hihyo:"mvhihyo", haiyu:"mvhaiyu", gyokai:"mvgyokai" };
   const JOURNEY_OF = Object.fromEntries(Object.entries(MODE_OF).map(([j, m]) => [m, j]));
 
   /* ── ことば → 問題(土台の SPOTS と 同じ形: n 名前 / r よみ / art キー / c 小見出し / d 説明 / e 絵文字) ── */
@@ -56,7 +56,7 @@ const EIGA = (() => {
                 lvTitle:J.icon + " " + J.name + "　旅を すすめる",
                 card:(mm, done) => '<small>' + terms.length + '語・' + lv.length + 'ステージ</small><small>出会った ' + done + '語</small>' };
   }
-  /* マスター: 9つの 旅を まぜて ぜんぶ(きまった ならび。どの ステージも いつも 同じ 10語 = タイムを くらべられる) */
+  /* マスター: 10の 旅を まぜて ぜんぶ(きまった ならび。どの ステージも いつも 同じ 10語 = タイムを くらべられる) */
   {
     const h = s => { let x = 7; for(const ch of s) x = (x * 31 + ch.charCodeAt(0)) >>> 0; return x; };
     const mix = ALL.slice().sort((a, b) => a.dv - b.dv || h(a.art) - h(b.art));
@@ -66,10 +66,10 @@ const EIGA = (() => {
     if(rest) lv.push(mix.slice(-rest - (ROUNDS - rest)).sort(easy));
     levels.mvmas = lv; pools.mvmas = ALL; colors.mvmas = "green";
     maps.mvmas = { icon:"🏆", name:"マスター", cardName:"マスター", word:"映画のことば図鑑", thing:"ことば", unit:"語", doneWord:"出会った ことば",
-                  lvTitle:"🏆 マスター　9つの 旅を まぜて ぜんぶ",
-                  card:() => '<small>' + TOTAL + '語・' + lv.length + 'ステージ</small><small>9つの 旅を まぜて ぜんぶ</small>' };
+                  lvTitle:"🏆 マスター　10の 旅を まぜて ぜんぶ",
+                  card:() => '<small>' + TOTAL + '語・' + lv.length + 'ステージ</small><small>10の 旅を まぜて ぜんぶ</small>' };
   }
-  const MODES_ALL = ["mvkihon", "mvrekishi", "mvgiho", "mvgenre", "mvsekai", "mvnihon", "mvsho", "mvhihyo", "mvgyokai", "mvmas"];
+  const MODES_ALL = ["mvkihon", "mvrekishi", "mvgiho", "mvgenre", "mvsekai", "mvnihon", "mvsho", "mvhihyo", "mvhaiyu", "mvgyokai", "mvmas"];
 
   /* ── きろく(人ごと。土台の recGet / recSet = つないでいない人は とじると 消える 決まりに そろえる) ──
      flick-eiga[-p<id>] = { ことばid: [見た回数, まちがいの合計, さいごに まちがえたか(0/1), 1文字あたりの 秒, さいごに 見た 時刻(ms), はじめて 出会った 時刻(ms)] }
@@ -170,7 +170,7 @@ const EIGA = (() => {
 
   /* ── 国旗の 札(どの 国の 映画か)。作品・監督・映画祭が どの 国の 話か ── */
   const CO_ICON = { "世界":"🌍", "ヨーロッパ":"🇪🇺", "アジア":"🌏", "日本":"🇯🇵", "アメリカ":"🇺🇸", "カナダ":"🇨🇦", "メキシコ":"🇲🇽", "ブラジル":"🇧🇷",
-    "イギリス":"🇬🇧", "アイルランド":"🇮🇪", "フランス":"🇫🇷", "イタリア":"🇮🇹", "ドイツ":"🇩🇪", "スペイン":"🇪🇸", "デンマーク":"🇩🇰", "スウェーデン":"🇸🇪",
+    "イギリス":"🇬🇧", "アイルランド":"🇮🇪", "フランス":"🇫🇷", "イタリア":"🇮🇹", "ドイツ":"🇩🇪", "スイス":"🇨🇭", "ベルギー":"🇧🇪", "オランダ":"🇳🇱", "ノルウェー":"🇳🇴", "フィンランド":"🇫🇮", "アルゼンチン":"🇦🇷", "南アフリカ":"🇿🇦", "トルコ":"🇹🇷", "タイ":"🇹🇭", "マレーシア":"🇲🇾", "イスラエル":"🇮🇱", "スペイン":"🇪🇸", "デンマーク":"🇩🇰", "スウェーデン":"🇸🇪",
     "ロシア":"🇷🇺", "チェコ":"🇨🇿", "ポーランド":"🇵🇱", "インド":"🇮🇳", "イラン":"🇮🇷", "中国":"🇨🇳", "台湾":"🇹🇼", "香港":"🇭🇰", "韓国":"🇰🇷",
     "オーストラリア":"🇦🇺", "ニュージーランド":"🇳🇿" };
   function countryTag(q){ return q.co ? '<span class="ai-tag ws-co">' + q.co.split("・").map(a => (CO_ICON[a] || "🌍") + " " + esc(a)).join("・") + '</span>' : ""; }
@@ -256,10 +256,10 @@ const EIGA = (() => {
         J.stops.map((S, i) => '<span class="ar">→</span><span class="st' + (stopDone[i] ? " done" : i === cur ? " now" : "") + '">' + S.icon + " " + esc(S.name) + (stopDone[i] ? " ✅" : i === cur ? '<em>いまここ</em>' : "") + '</span>').join("") +
         '<span class="ar">→</span><span class="st goal' + (cur < 0 ? " done" : "") + '">🏆 ' + esc(J.goal) + '</span></div>' +
         '<p class="ai-lead">' + esc(J.lead) + '。1回 10問。どの ステージも いつも 同じ 10語。タイムで 勝負しよう。</p>';
-    }else chips.innerHTML = '<p class="ai-lead">9つの 旅の ことばを ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10語。</p>';
+    }else chips.innerHTML = '<p class="ai-lead">10の 旅の ことばを ぜんぶ まぜて 出すよ。どの ステージも いつも 同じ 10語。</p>';
   }
   function lvInfo(m, i){
-    if(m === "mvmas") return { name:"マスター" + (i + 1), sub:"9つの 旅から 10語", short:"マスター" + (i + 1) };
+    if(m === "mvmas") return { name:"マスター" + (i + 1), sub:"10の 旅から 10語", short:"マスター" + (i + 1) };
     const s = stageInfo[m][i], J = JBY[JOURNEY_OF[m]], S = J.stops[s.stop], L = LVN[s.dv];
     return { name:"Lv." + (i + 1) + " " + L.icon + L.name, sub:S.icon + " " + S.name + "・10語", short:"Lv." + (i + 1) };
   }

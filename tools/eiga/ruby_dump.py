@@ -15,6 +15,6 @@ def rub(t):
     for x, y in ns["FIX"]: h = x.sub(y, h)
     return h
 j = sys.argv[1]
-for t in json.loads((HERE / f"terms-{j}.json").read_text(encoding="utf-8")):
+for t in [x for f in [HERE / f"terms-{j}.json"] + sorted(HERE.glob(f"terms-{j}-*.json")) if f.exists() for x in json.loads(f.read_text(encoding="utf-8"))]:
     h = rub(t["description"] + " ／ " + t.get("midokoro", "")); pairs = re.findall(r"<ruby>(.*?)<rt>(.*?)</rt></ruby>", h)
     print(t["id"], t["name"] + ":", " ".join(f"{k}({r})" for k, r in pairs))

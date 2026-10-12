@@ -368,10 +368,9 @@ GAMES = {
     # フリックワールドボクシング(けいくん 2026-10-12「ワールドボクシングの専門家(解説者)になれるレベルになるために必要な 知識、主要な団体、有名ボクシング選手、有名な技、ルールをフリック形式の問題にしてください」→ 5つの 問いに「すべておまかせ」)。
     #   まとめは docs/フリックワールドボクシング-はじめかた.md。ことばは tools/boxing/terms-<旅>.json → boxing/terms.js(tools/boxing/terms_js.py)。しくみは boxing/boxing.js(BOXING。ワールドベースボールを 写して ⚖️ ルールの 札を プロ / アマ / 共通に)。かずともの 旅の 名前は bx で はじまる。
     #   ⚠️⚠️⚠️ なぐられた 側の ようす・ケガ・血・倒れた ようすは 1語も 書かない。いまの ベルト・戦績・ランキング・ファイトマネーは 書かない(変わる)。事件・薬物で 知られる 選手は 入れない(決まりは tools/boxing/PROMPT.md)。ルールは JBC・4団体・World Boxing の 2026年(毎年 1月に 見なおす)。
-    #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/boxing/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
-    #   届いたら tools/boxing/art/square-src.png → tools/icon_from_square.py boxing(iconv を +1)/ title-src.png → tools/title_from_art.py boxing(logo を True・art.word を 実寸に)/ boxing/hero.webp(hero を True)
-    "boxing": dict(name="フリックワールドボクシング", modes="BOXING", kinds=set(), color="#e0202e", hero=True, logo=False,
-                  art=dict(word=(900, 315), hero=(1536, 1024), alt="フリックワールドボクシング", iconv=1, wordv=2),
+    #   絵(2026-10-12): トップ boxing/hero.webp(3回目の 絵。fix_text.py で ゜を 2つ 直した)・アイコンは 四角い 絵を 切らずに そのまま(icon_from_square.py)・題名は ChatGPT の 切りぬき(title_from_art.py)。
+    "boxing": dict(name="フリックワールドボクシング", modes="BOXING", kinds=set(), color="#e0202e", hero=True, logo=True,
+                  art=dict(word=(900, 188), hero=(1536, 1024), alt="フリックワールドボクシング", iconv=2, wordv=3),
                   lead="ボクシングの きほん・ルール・世界の 団体・階級と 体重・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界の 舞台と 歴史の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・プロの ルールか アマ(オリンピック)の ルールか・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。ボクシングが すきな 小学生の ことばから はじめて、ジムに 通う 人、解説者が 使う 戦術の ことばまで。赤コーナーと 青コーナーの ちがい、後楽園ホールは 日本の ボクシングの 聖地、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 王座や 記録は 変わる ことが あるよ。ルールは JBC・4団体・World Boxing の いまの ルールで 確かめたよ(変わる ことが あるよ)。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の ボクシングが つながって 見えてくるよ。WBA・WBC・IBF・WBO・JBC・各ジム・各選手とは 関係ありません。"),

@@ -1073,10 +1073,11 @@
   3回目は 札 36こ ぜんぶ ゲームの その 旅に ある 読み。のこった ゜の まちがい 2つを **絵の 中で 直した**(`tools/boxing/fix_text.py`): はーどばんちゃー → はーどぱんちゃー / ちゃんびおんべると → ちゃんぴおんべると。
   ⚠️ 札の 地の 色は 白い ところだけで とる(上は 絵・下は 緑の ふちが かかる)。もとの 絵は 入れものに 入れていない。⚠️ 直す 文で「字だけ 入れかえて」と 頼む ときは **入れかえた 字が その 箱の 旅の ことばか**を 先に 見る
   人物は 大きな 男の子 1人(けいくん「絵は 変えないで」= この 絵の まま)
-- アイコン・題名は **まだ**(仮の アイコン `tools/boxing/placeholder_icon.py` = 青い リングに 赤い グローブ。`logo=False`)。
+- **アイコンと 題名も 入れた**(2026-10-12)。アイコンは けいくんの 四角い 絵(1254px。男の子 1人)を 切らずに そのまま(`tools/boxing/art/square-src.png` → `python3 tools/icon_from_square.py boxing`。`iconv` = 2)。四角い 絵の 札にも ちゃんびおんべると・はーどばんちゃー の ゛゜の まちがいが あるが アイコンの 大きさでは 読めないので そのまま。
+  題名は ChatGPT の 切りぬき(`tools/boxing/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py boxing` → `boxing/logo-word.webp` 900×188。`logo=True`・`wordv` = 3)。「フリックワールドボクシング」13字を 読んで 確かめた。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
   届いたら 四角い 絵 → `tools/boxing/art/square-src.png` → `python3 tools/icon_from_square.py boxing`(`iconv` +1)/ 題名の 透明 PNG → `tools/boxing/art/title-src.png` → `python3 tools/title_from_art.py boxing`(`logo=True`・`art.word` を 実寸)/ `boxing/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **2人が 向かいあって なぐりあう 絵に しない**(人物は **男の子 1人**が 正面を 向いて 笑って かまえる。⚠️ **女の子と 白い犬は 描かない** = けいくん決定 2026-10-12)・血・あざ・倒れた 人・実在の 選手の 顔・団体の ベルト・ロゴを 描かせない。届いたら まず 字を 切り出して 読む(「フリックワールドボクシン」「ワールドボクシング」に なりやすい)
-- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`・規約の 一覧 `FLICK_SERIES_GAMES` は **絵と けいくんの OK の あと**
+- かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`(教科を ひろげる の 章、ベースボールの となり)・規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-12 に 足した
 - 確かめかた: `node tools/play-all.mjs boxing/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs boxing/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 
 ## フリック血液型(`ketsueki/`。けいくん 2026-10-04「血液型の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。血液型の特徴をめちゃくちゃ詳しくお願いします」→ 同じ日「科学的根拠が無いということ? やめた方がいいかなぁ?」→ 3つの 案から **「このまま」**。まとめは `docs/フリック血液型-はじめかた.md`)

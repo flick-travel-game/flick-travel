@@ -14,8 +14,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 OUT = os.path.join(ROOT, "kankoku", "audio")
 MAP = os.path.join(OUT, "map.json")
 API = "https://texttospeech.googleapis.com/v1/"
-# 人に 近い 順。はじめに 使える ものを えらぶ(Chirp3 HD がいちばん 自然)
-VOICES = ["ko-KR-Chirp3-HD-Kore", "ko-KR-Chirp3-HD-Leda", "ko-KR-Neural2-A", "ko-KR-Wavenet-A"]
+# けいくんが えらんだ 声(Leda。2026-10-12「もっと可愛い女性の声」)が 先。使えなければ 次
+VOICES = ["ko-KR-Chirp3-HD-Leda", "ko-KR-Chirp3-HD-Kore", "ko-KR-Neural2-A", "ko-KR-Wavenet-A"]
 EXTRA = ["안녕하세요"]
 SAMPLE = "안녕하세요! 만나서 반가워요. 오늘도 같이 공부해요."
 

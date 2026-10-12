@@ -1,0 +1,1259 @@
+[
+ {
+  "id": "rs-katakori",
+  "name": "肩こり",
+  "reading": "かたこり",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🙆",
+  "mapNode": "rinsho:katakori",
+  "relatedTerms": [
+   "rs-shisei",
+   "rs-nekoze",
+   "rs-kinchogata"
+  ],
+  "part": "首・肩・背中",
+  "description": "首から 肩、背中に かけての 筋肉が こわばって、重く かたく 感じる 状態です。同じ 姿勢が つづくと 起こりやすく、あん摩マッサージ指圧師が 筋肉の こわばりを ゆるめる 手伝いを します。"
+ },
+ {
+  "id": "rs-yotsu",
+  "name": "腰痛",
+  "reading": "ようつう",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "rinsho:yotsu",
+  "relatedTerms": [
+   "rs-gikkuri",
+   "rs-kinkinmaku",
+   "rs-zakotsu"
+  ],
+  "part": "腰",
+  "description": "腰の あたりに 出る 痛みや 重さを まとめた よび名です。もとに なる ことは 人に よって ちがうので、まず 問診で ようすを 聞き、必要な ときは 病院と いっしょに 見て いきます。"
+ },
+ {
+  "id": "rs-zutsu",
+  "name": "頭痛",
+  "reading": "ずつう",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🤕",
+  "mapNode": "rinsho:katakori",
+  "relatedTerms": [
+   "rs-kinchogata",
+   "rs-katakori"
+  ],
+  "part": "頭",
+  "description": "頭に 出る 痛みを まとめた よび名です。首や 肩の こわばりと 関係する ものも あります。いつもと ちがう 頭痛や、急に 強く 出た ときは 施術より 先に 病院へ 行きます。"
+ },
+ {
+  "id": "rs-kinnikutsu",
+  "name": "筋肉痛",
+  "reading": "きんにくつう",
+  "journey": "rinsho",
+  "category": "からだ全体の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "rinsho:kega",
+  "relatedTerms": [
+   "rs-nikubanare",
+   "rs-enshou"
+  ],
+  "part": "全身",
+  "description": "ふだん しない 運動を した あとに、筋肉が だるく 痛む 状態です。少し 時間が たってから 出る ことが 多いのが ふしぎな ところです。休むと だんだん 落ちついて いきます。"
+ },
+ {
+  "id": "rs-hie",
+  "name": "冷え",
+  "reading": "ひえ",
+  "journey": "rinsho",
+  "category": "からだ全体の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "rinsho:mukumi",
+  "relatedTerms": [
+   "rs-mukumi",
+   "rs-jiritsu"
+  ],
+  "part": "手・足",
+  "description": "手足など からだの 一部が いつも 冷たく 感じる 状態です。血の めぐりや 自律神経の はたらきと 関係すると 考えられます。施術で 血の めぐりを 助ける ことが あります。"
+ },
+ {
+  "id": "rs-mukumi",
+  "name": "むくみ",
+  "reading": "むくみ",
+  "journey": "rinsho",
+  "category": "からだ全体の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "rinsho:mukumi",
+  "relatedTerms": [
+   "rs-hie",
+   "rs-junkan"
+  ],
+  "part": "脚・足",
+  "description": "からだの 中の 水分が 皮膚の 下に たまって、はれぼったく なる 状態です。医学の ことばでは 浮腫と いいます。立ちっぱなしの あとの 脚に よく 見られます。"
+ },
+ {
+  "id": "rs-nekoze",
+  "name": "猫背",
+  "reading": "ねこぜ",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🐈",
+  "mapNode": "rinsho:shisei",
+  "relatedTerms": [
+   "rs-shisei",
+   "rs-katakori",
+   "rs-sokuwan"
+  ],
+  "part": "首・背中",
+  "description": "背中が 丸く なり、頭が 前に 出た 姿勢の よび名です。首や 肩、背中の 筋肉に 負担が かかりやすく なります。ネコの 背中の 形に にて いるので、この 名前が つきました。"
+ },
+ {
+  "id": "rs-shisei",
+  "name": "姿勢",
+  "reading": "しせい",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "rinsho:shisei",
+  "relatedTerms": [
+   "rs-nekoze",
+   "rs-katakori"
+  ],
+  "part": "全身",
+  "description": "立つ・すわる ときの からだの かまえかたです。かたよった 姿勢が つづくと、首・肩・腰の 筋肉に 負担が たまります。施術の 前に 姿勢を 見る ことも 大切な 手がかりに なります。"
+ },
+ {
+  "id": "rs-nenza",
+  "name": "ねんざ",
+  "reading": "ねんざ",
+  "journey": "rinsho",
+  "category": "炎症と けが",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "rinsho:kega",
+  "relatedTerms": [
+   "rs-nikubanare",
+   "rs-kinki"
+  ],
+  "part": "足・手",
+  "description": "関節に 無理な 力が かかり、関節を ささえる 靭帯などが 傷ついた 状態です。漢字では 捻挫と 書きます。けがの すぐ あとや 骨折の 疑い が ある ときは、施術より 先に 病院へ 行きます。"
+ },
+ {
+  "id": "rs-nechigae",
+  "name": "寝ちがえ",
+  "reading": "ねちがえ",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "😴",
+  "mapNode": "rinsho:katakori",
+  "relatedTerms": [
+   "rs-katakori",
+   "rs-kinki"
+  ],
+  "part": "首",
+  "description": "ねむって いる あいだの 姿勢などが もとで、朝 起きると 首が 動かしにくく なる 状態です。首を 無理に まわさない ことが 大切です。なかなか よく ならない ときは 病院へ 行きます。"
+ },
+ {
+  "id": "rs-gikkuri",
+  "name": "ぎっくり腰",
+  "reading": "ぎっくりごし",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "rinsho:yotsu",
+  "relatedTerms": [
+   "rs-yotsu",
+   "rs-kinki"
+  ],
+  "part": "腰",
+  "description": "物を 持ち上げた ときなどに、急に 腰が 動かしにくく なる 状態の よび名です。医学では 急性腰痛と いいます。ヨーロッパでは「魔女の 一撃」と よばれる ことも あります。"
+ },
+ {
+  "id": "rs-komuragaeri",
+  "name": "こむら返り",
+  "reading": "こむらがえり",
+  "journey": "rinsho",
+  "category": "関節と 手足の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "rinsho:kega",
+  "relatedTerms": [
+   "rs-kinnikutsu",
+   "rs-hie"
+  ],
+  "part": "脚",
+  "description": "ふくらはぎの 筋肉が 急に ぎゅっと ちぢんで、ゆるまなく なる 状態です。「こむら」は ふくらはぎの 古い よび名です。ねむって いる ときや 運動中に 起こる ことが あります。"
+ },
+ {
+  "id": "rs-nikubanare",
+  "name": "肉ばなれ",
+  "reading": "にくばなれ",
+  "journey": "rinsho",
+  "category": "炎症と けが",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "rinsho:kega",
+  "relatedTerms": [
+   "rs-nenza",
+   "rs-kinnikutsu"
+  ],
+  "part": "脚",
+  "description": "走ったり 跳んだり した ときに、筋肉の 一部が 傷ついた 状態の よび名です。脚の うしろがわの 筋肉や ふくらはぎに 起こりやすいです。けがの すぐ あとは 施術より 先に 病院へ 行きます。"
+ },
+ {
+  "id": "rs-gojukata",
+  "name": "五十肩",
+  "reading": "ごじゅうかた",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "rinsho:kansetsu",
+  "relatedTerms": [
+   "rs-kenkansetsu",
+   "rs-katakori"
+  ],
+  "part": "肩・腕",
+  "description": "肩の 関節の まわりが こわばり、腕が 上がりにくく なる 状態の よび名です。四十肩とも いいます。医学では 肩関節周囲炎の ひとつとして 学びます。"
+ },
+ {
+  "id": "rs-hatsunetsu",
+  "name": "発熱",
+  "reading": "はつねつ",
+  "journey": "rinsho",
+  "category": "施術を しない とき",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "rinsho:kinki",
+  "relatedTerms": [
+   "rs-kinki",
+   "rs-taionkei",
+   "rs-kansensho"
+  ],
+  "part": "全身",
+  "description": "体温が いつもより 高く なる ことです。からだが ばい菌などと たたかって いる しるしの ことも あります。熱が ある ときは 施術より 先に 病院へ 行き、からだを 休めます。"
+ },
+ {
+  "id": "rs-stress",
+  "name": "ストレス",
+  "reading": "すとれす",
+  "journey": "rinsho",
+  "category": "からだ全体の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "😣",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-jiritsu",
+   "rs-fumin"
+  ],
+  "part": "全身",
+  "description": "心や からだに かかる 負担と、それに 反応する からだの ようすの ことです。つづくと 肩こりや ねむりにくさに つながる ことが あります。施術で リラックスを 助ける ことが あります。"
+ },
+ {
+  "id": "rs-fumin",
+  "name": "不眠",
+  "reading": "ふみん",
+  "journey": "rinsho",
+  "category": "からだ全体の 不調",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-stress",
+   "rs-jiritsu"
+  ],
+  "part": "全身",
+  "description": "夜 なかなか ねむれない、とちゅうで 目が さめる などで、ぐっすり ねむれない 状態です。自律神経の バランスと 関係すると 考えられます。つづく ときは 病院と いっしょに 考えます。"
+ },
+ {
+  "id": "rs-taionkei",
+  "name": "体温計",
+  "reading": "たいおんけい",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "rinsho:vital",
+  "relatedTerms": [
+   "rs-hatsunetsu",
+   "rs-vital"
+  ],
+  "part": "全身",
+  "description": "体温を はかる 道具です。体温は バイタルサインの ひとつで、施術の 前に 熱が ないかを 知る 手がかりに なります。熱が ある ときは 施術を ひかえます。"
+ },
+ {
+  "id": "rs-enshou",
+  "name": "炎症",
+  "reading": "えんしょう",
+  "journey": "rinsho",
+  "category": "炎症と けが",
+  "difficulty": 1,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "rinsho:ensho",
+  "relatedTerms": [
+   "rs-hosseki",
+   "rs-shucho",
+   "rs-nekkan"
+  ],
+  "description": "からだが 傷や ばい菌から 自分を 守ろうと する ときの 反応です。赤く なる・熱を もつ・はれる・痛む の 4つの しるしが 知られて います。炎症が 強い ところは 施術を ひかえます。"
+ },
+ {
+  "id": "rs-kansensho",
+  "name": "感染症",
+  "reading": "かんせんしょう",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 1,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🦠",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-hatsunetsu",
+   "rs-kinki"
+  ],
+  "part": "全身",
+  "description": "ウイルスや 細菌などが からだに 入って ふえる ことで 起こる 病気です。かぜも その ひとつです。うつる 病気の ときは 施術を ひかえ、手洗いなどで 広がりを ふせぎます。"
+ },
+ {
+  "id": "rs-kenshoen",
+  "name": "腱鞘炎",
+  "reading": "けんしょうえん",
+  "journey": "rinsho",
+  "category": "関節と 手足の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "✍️",
+  "mapNode": "rinsho:kansetsu",
+  "relatedTerms": [
+   "rs-enshou",
+   "rs-teniss"
+  ],
+  "part": "手",
+  "description": "筋肉と 骨を つなぐ 腱を つつむ さや(腱鞘)に 炎症が 起きた 状態です。手首や 指の 使いすぎで 起こりやすいです。炎症が 強い ときは その 場所の 施術を ひかえます。"
+ },
+ {
+  "id": "rs-muchiuchi",
+  "name": "むち打ち",
+  "reading": "むちうち",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "rinsho:katakori",
+  "relatedTerms": [
+   "rs-kinki",
+   "rs-katakori"
+  ],
+  "part": "首",
+  "description": "強い ゆれや しょうげきで、首が むちのように しなって 起こる 首の 不調の よび名です。正式には 頸椎捻挫などと いいます。けがの すぐ あとは 施術より 先に 病院へ 行きます。"
+ },
+ {
+  "id": "rs-zakotsu",
+  "name": "坐骨神経痛",
+  "reading": "ざこつしんけいつう",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "rinsho:shinkei",
+  "relatedTerms": [
+   "rs-yotsu",
+   "rs-hernia",
+   "rs-shibire"
+  ],
+  "part": "腰・脚",
+  "description": "腰から 脚の うしろがわへ のびる 坐骨神経に そって、しびれや 痛みが 出る 状態です。病気の 名前では なく、状態を あらわす ことばです。もとに なる ことは 医師が 調べます。"
+ },
+ {
+  "id": "rs-teniss",
+  "name": "テニス肘",
+  "reading": "てにすひじ",
+  "journey": "rinsho",
+  "category": "関節と 手足の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🎾",
+  "mapNode": "rinsho:kansetsu",
+  "relatedTerms": [
+   "rs-kenshoen",
+   "rs-enshou"
+  ],
+  "part": "腕",
+  "description": "ひじの 外がわに 痛みが 出る 状態の よび名です。医学では、腕の 骨の ひじに 近い 外がわの 出っぱりに 起こる 炎症として 学びます。テニスを しない 人でも、手首を よく 使う 作業で 起こる ことが あります。"
+ },
+ {
+  "id": "rs-hernia",
+  "name": "椎間板ヘルニア",
+  "reading": "ついかんばんへるにあ",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🦴",
+  "mapNode": "rinsho:shinkei",
+  "relatedTerms": [
+   "rs-zakotsu",
+   "rs-shibire"
+  ],
+  "part": "腰・首",
+  "description": "背骨の 骨と 骨の あいだに ある クッション(椎間板)の 中身が はみ出し、神経を 圧迫する ことが ある 状態の よび名です。「ヘルニア」は 外に 出る という 意味の ことばです。"
+ },
+ {
+  "id": "rs-kinchogata",
+  "name": "緊張型頭痛",
+  "reading": "きんちょうがたずつう",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "😖",
+  "mapNode": "rinsho:katakori",
+  "relatedTerms": [
+   "rs-zutsu",
+   "rs-katakori"
+  ],
+  "part": "頭・首・肩",
+  "description": "首や 肩の 筋肉の こわばりと 関係して、頭が しめつけられるように 感じる 頭痛です。同じ 姿勢の 作業が つづく 人に 多いと いわれます。首と 肩の こわばりを ゆるめる 手伝いを します。"
+ },
+ {
+  "id": "rs-ganseihiro",
+  "name": "眼精疲労",
+  "reading": "がんせいひろう",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "rinsho:katakori",
+  "relatedTerms": [
+   "rs-katakori",
+   "rs-kinchogata"
+  ],
+  "part": "顔・首・肩",
+  "description": "目を 使いつづけて、目の 疲れや かすみが 休んでも なかなか とれない 状態です。肩こりや 頭の 重さを いっしょに 感じる ことも あります。首や 肩の 施術で ととのえる 手伝いを します。"
+ },
+ {
+  "id": "rs-kotsusosho",
+  "name": "骨粗しょう症",
+  "reading": "こつそしょうしょう",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🦴",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-seikatsu",
+   "rs-kinki"
+  ],
+  "part": "全身",
+  "description": "骨の 中身が すかすかに なって、骨が もろく なりやすい 状態です。お年よりに 多く 見られます。施術では 力の 加減に とくに 気を つけ、病院と いっしょに 見て いきます。"
+ },
+ {
+  "id": "rs-seikatsu",
+  "name": "生活習慣病",
+  "reading": "せいかつしゅうかんびょう",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🍙",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-koketsuatsu",
+   "rs-tonyo"
+  ],
+  "part": "全身",
+  "description": "食事・運動・ねむり・たばこ などの 毎日の くらしかたが 関係して 起こる 病気を まとめた よび名です。高血圧や 糖尿病が 知られて います。くらしを ととのえる ことで 予防に つながります。"
+ },
+ {
+  "id": "rs-koketsuatsu",
+  "name": "高血圧",
+  "reading": "こうけつあつ",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-seikatsu",
+   "rs-vital"
+  ],
+  "part": "全身",
+  "description": "血管に かかる 血の 圧力が、高い 状態で つづく ことです。生活習慣病の ひとつで、ふだん 気づきにくいのが 特ちょうです。施術の 前に 血圧の ようすを 確かめる ことが あります。"
+ },
+ {
+  "id": "rs-tonyo",
+  "name": "糖尿病",
+  "reading": "とうにょうびょう",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🍬",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-seikatsu",
+   "rs-gappei"
+  ],
+  "part": "全身",
+  "description": "血液の 中の 糖が 多い 状態が つづく 病気です。生活習慣病の ひとつで、医師の もとで くらしを ととのえて いきます。施術の ときは 皮膚の 感覚の ようすにも 気を くばります。"
+ },
+ {
+  "id": "rs-kinki",
+  "name": "禁忌",
+  "reading": "きんき",
+  "journey": "rinsho",
+  "category": "施術を しない とき",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "rinsho:kinki",
+  "relatedTerms": [
+   "rs-hatsunetsu",
+   "rs-nenza",
+   "rs-kansensho"
+  ],
+  "description": "施術を しては いけない とき・場所の ことです。熱が ある とき、けがの すぐ あと、骨折の 疑い が ある とき などは、施術より 先に 病院へ 行って もらいます。"
+ },
+ {
+  "id": "rs-vital",
+  "name": "バイタルサイン",
+  "reading": "ばいたるさいん",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "rinsho:vital",
+  "relatedTerms": [
+   "rs-taionkei",
+   "rs-koketsuatsu"
+  ],
+  "part": "全身",
+  "description": "体温・脈拍・呼吸・血圧 など、生きて いる からだの ようすを あらわす しるしです。「バイタル」は 生命の という 意味です。施術の 前に 確かめる ことで、安全に つながります。"
+ },
+ {
+  "id": "rs-shishin",
+  "name": "視診",
+  "reading": "ししん",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "rinsho:shinsatsu",
+  "relatedTerms": [
+   "rs-shokushin",
+   "rs-shisei"
+  ],
+  "part": "全身",
+  "description": "目で 見て からだの ようすを 確かめる ことです。姿勢・皮膚の 色・はれ・動きかた などを 見ます。施術の 前に 問診と いっしょに 行う 大切な 手順です。"
+ },
+ {
+  "id": "rs-shokushin",
+  "name": "触診",
+  "reading": "しょくしん",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "rinsho:shinsatsu",
+  "relatedTerms": [
+   "rs-shishin",
+   "rs-attsu"
+  ],
+  "part": "全身",
+  "description": "手で ふれて からだの ようすを 確かめる ことです。筋肉の かたさ・温かさ・はれ などを 手の 感覚で さぐります。手で ふれる 仕事なので、とても 大切な ことばです。"
+ },
+ {
+  "id": "rs-attsu",
+  "name": "圧痛",
+  "reading": "あっつう",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "👆",
+  "mapNode": "rinsho:shinsatsu",
+  "relatedTerms": [
+   "rs-shokushin",
+   "rs-totsu"
+  ],
+  "description": "押した ときに 痛みを 感じる ことです。触診で、どこに こわばりや 不調が あるかを 知る 手がかりに なります。押す 場所を 少しずつ 変えて 確かめます。"
+ },
+ {
+  "id": "rs-hosseki",
+  "name": "発赤",
+  "reading": "ほっせき",
+  "journey": "rinsho",
+  "category": "炎症と けが",
+  "difficulty": 2,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "rinsho:ensho",
+  "relatedTerms": [
+   "rs-enshou",
+   "rs-nekkan"
+  ],
+  "acceptedReadings": [
+   "ほっせき",
+   "はっせき"
+  ],
+  "part": "全身",
+  "description": "皮膚が 赤く なる ことです。炎症の 4つの しるしの ひとつで、血管が 広がって 血の めぐりが ふえる ことで 起こります。"
+ },
+ {
+  "id": "rs-shucho",
+  "name": "腫脹",
+  "reading": "しゅちょう",
+  "journey": "rinsho",
+  "category": "炎症と けが",
+  "difficulty": 2,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "rinsho:ensho",
+  "relatedTerms": [
+   "rs-enshou",
+   "rs-hosseki"
+  ],
+  "description": "からだの 一部が はれて ふくらむ ことです。炎症の 4つの しるしの ひとつです。はれて いる ところは 施術を ひかえる ことが 多いです。"
+ },
+ {
+  "id": "rs-nekkan",
+  "name": "熱感",
+  "reading": "ねっかん",
+  "journey": "rinsho",
+  "category": "炎症と けが",
+  "difficulty": 2,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "rinsho:ensho",
+  "relatedTerms": [
+   "rs-enshou",
+   "rs-shucho"
+  ],
+  "description": "からだの 一部が 熱を もって いる 感じの ことです。炎症の 4つの しるしの ひとつで、触診で 手で ふれて 気づく ことが できます。"
+ },
+ {
+  "id": "rs-totsu",
+  "name": "疼痛",
+  "reading": "とうつう",
+  "journey": "rinsho",
+  "category": "炎症と けが",
+  "difficulty": 2,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "rinsho:ensho",
+  "relatedTerms": [
+   "rs-enshou",
+   "rs-attsu"
+  ],
+  "description": "痛みの ことを あらわす 医学の ことばです。炎症の 4つの しるしの ひとつでも あります。どこが・いつから・どんな ときに 感じるかを 問診で ていねいに 聞きます。"
+ },
+ {
+  "id": "rs-rheuma",
+  "name": "関節リウマチ",
+  "reading": "かんせつりうまち",
+  "journey": "rinsho",
+  "category": "関節と 手足の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "rinsho:kansetsu",
+  "relatedTerms": [
+   "rs-enshou",
+   "rs-allergy"
+  ],
+  "part": "手・足",
+  "description": "免疫の しくみが 自分の 関節に 向かって しまい、関節の はれが つづく 病気です。手や 指の 関節に 出やすいです。医師の もとで 見て もらい、施術は 病院と いっしょに 考えます。"
+ },
+ {
+  "id": "rs-jiritsu",
+  "name": "自律神経失調症",
+  "reading": "じりつしんけいしっちょうしょう",
+  "journey": "rinsho",
+  "category": "からだ全体の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "rinsho:shinkei",
+  "relatedTerms": [
+   "rs-stress",
+   "rs-fumin"
+  ],
+  "part": "全身",
+  "description": "自律神経の バランスが みだれて、だるさや ねむりにくさ などが 出る 状態の よび名です。ストレスと 関係すると いわれます。リラックスを 助ける 施術が 病院と いっしょに 使われる ことも あります。"
+ },
+ {
+  "id": "rs-shibire",
+  "name": "しびれ",
+  "reading": "しびれ",
+  "journey": "rinsho",
+  "category": "関節と 手足の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "rinsho:shinkei",
+  "relatedTerms": [
+   "rs-zakotsu",
+   "rs-shukonkan"
+  ],
+  "part": "手・足",
+  "description": "じんじん・ぴりぴりと した 感じや、ふれた 感じが にぶく なる ことです。神経が 圧迫される ことなどで 起こります。急に 出た しびれは 施術より 先に 病院へ 行きます。"
+ },
+ {
+  "id": "rs-kenkansetsu",
+  "name": "肩関節周囲炎",
+  "reading": "けんかんせつしゅういえん",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 2,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "rinsho:kansetsu",
+  "relatedTerms": [
+   "rs-gojukata",
+   "rs-enshou"
+  ],
+  "part": "肩・腕",
+  "description": "肩の 関節を つつむ まわりの 組織に 炎症や こわばりが 起きて、腕が 上がりにくく なる 状態です。よく 知られた よび名は 五十肩です。"
+ },
+ {
+  "id": "rs-allergy",
+  "name": "アレルギー",
+  "reading": "あれるぎー",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 2,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "🤧",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-rheuma",
+   "rs-kansensho"
+  ],
+  "part": "全身",
+  "description": "からだを 守る 免疫が、花粉や 食べ物 など ふつうは 害の 少ない ものに 大きく 反応しすぎる 状態です。施術で ふれる 道具や 消毒薬に 合わない 人も いるので、問診で 聞きます。"
+ },
+ {
+  "id": "rs-keikenwan",
+  "name": "頸肩腕症候群",
+  "reading": "けいけんわんしょうこうぐん",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "rinsho:katakori",
+  "relatedTerms": [
+   "rs-katakori",
+   "rs-kyokaku"
+  ],
+  "part": "首・肩・腕",
+  "description": "首・肩・腕に かけて こりや だるさ、しびれ などが 出る 状態を まとめた よび名です。パソコンなど 手を 使う 作業を つづける 人に 見られます。"
+ },
+ {
+  "id": "rs-kinkinmaku",
+  "name": "筋筋膜性腰痛",
+  "reading": "きんきんまくせいようつう",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "rinsho:yotsu",
+  "relatedTerms": [
+   "rs-yotsu",
+   "rs-trigger"
+  ],
+  "part": "腰",
+  "description": "腰の 筋肉や、筋肉を つつむ 筋膜の こわばり・疲れが もとに なって 起こる 腰痛の よび名です。施術で 筋肉の こわばりを ゆるめる 手伝いを します。"
+ },
+ {
+  "id": "rs-kyosaku",
+  "name": "脊柱管狭窄症",
+  "reading": "せきちゅうかんきょうさくしょう",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "rinsho:shinkei",
+  "relatedTerms": [
+   "rs-zakotsu",
+   "rs-shibire"
+  ],
+  "part": "腰・脚",
+  "description": "背骨の 中に ある 神経の 通り道(脊柱管)が せまく なり、神経が 圧迫される 状態です。脚の しびれや だるさが 出る ことが あります。医師と いっしょに 見て いきます。"
+ },
+ {
+  "id": "rs-kyokaku",
+  "name": "胸郭出口症候群",
+  "reading": "きょうかくでぐちしょうこうぐん",
+  "journey": "rinsho",
+  "category": "肩と 首の 不調",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🙆",
+  "mapNode": "rinsho:shinkei",
+  "relatedTerms": [
+   "rs-keikenwan",
+   "rs-shibire"
+  ],
+  "part": "首・肩・腕",
+  "description": "首の 付け根の すきまで、腕へ むかう 神経や 血管が 圧迫される 状態です。腕や 手に しびれや だるさが 出る ことが あります。なで肩の 人に 多いと いわれます。"
+ },
+ {
+  "id": "rs-shukonkan",
+  "name": "手根管症候群",
+  "reading": "しゅこんかんしょうこうぐん",
+  "journey": "rinsho",
+  "category": "関節と 手足の 不調",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "rinsho:shinkei",
+  "relatedTerms": [
+   "rs-shibire",
+   "rs-kenshoen"
+  ],
+  "part": "手",
+  "description": "手首に ある トンネルのような 通り道(手根管)で、正中神経が 圧迫される 状態です。親指から 薬指に かけて しびれが 出る ことが あります。"
+ },
+ {
+  "id": "rs-henkeihiza",
+  "name": "変形性膝関節症",
+  "reading": "へんけいせいしつかんせつしょう",
+  "journey": "rinsho",
+  "category": "関節と 手足の 不調",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "rinsho:kansetsu",
+  "relatedTerms": [
+   "rs-rheuma",
+   "rs-kinki"
+  ],
+  "part": "脚",
+  "description": "ひざの 関節の クッションに あたる 軟骨が すりへって、ひざが 動かしにくく なる 状態です。お年よりに 多く 見られます。ひざの まわりの 筋肉を ととのえる 手伝いを します。"
+ },
+ {
+  "id": "rs-sokuwan",
+  "name": "側弯症",
+  "reading": "そくわんしょう",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "rinsho:shisei",
+  "relatedTerms": [
+   "rs-nekoze",
+   "rs-shisei"
+  ],
+  "acceptedReadings": [
+   "そくわんしょう",
+   "そくわん"
+  ],
+  "part": "背中・腰",
+  "description": "背骨が 横に 曲がったり、ねじれたり する 状態です。子どもの ころに 見つかる ことが 多く、学校の 健康診断で 確かめる ことも あります。"
+ },
+ {
+  "id": "rs-gaihan",
+  "name": "外反母趾",
+  "reading": "がいはんぼし",
+  "journey": "rinsho",
+  "category": "関節と 手足の 不調",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "rinsho:kansetsu",
+  "relatedTerms": [
+   "rs-henkeihiza",
+   "rs-shisei"
+  ],
+  "part": "足",
+  "description": "足の 親指が 小指の ほうへ 曲がり、付け根の 関節が 足の 内がわに 出っぱる 状態です。「母趾」は 足の 親指の ことです。はく ものや 歩きかたと 関係すると いわれます。"
+ },
+ {
+  "id": "rs-dashin",
+  "name": "打診",
+  "reading": "だしん",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🥁",
+  "mapNode": "rinsho:shinsatsu",
+  "relatedTerms": [
+   "rs-choshin",
+   "rs-shokushin"
+  ],
+  "part": "全身",
+  "description": "からだを 指で 軽く たたいて、ひびく 音や 感じで 中の ようすを さぐる 方法です。医師が 行う 診察の 方法の ひとつとして 学びます。"
+ },
+ {
+  "id": "rs-choshin",
+  "name": "聴診",
+  "reading": "ちょうしん",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "rinsho:shinsatsu",
+  "relatedTerms": [
+   "rs-dashin",
+   "rs-vital"
+  ],
+  "part": "全身",
+  "description": "聴診器を 使って、心臓や 肺 などの 音を 聞く 方法です。医師が 行う 診察の 方法の ひとつとして 学びます。「聴」は よく 聞く という 意味です。"
+ },
+ {
+  "id": "rs-kiou",
+  "name": "既往歴",
+  "reading": "きおうれき",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "rinsho:shinsatsu",
+  "relatedTerms": [
+   "rs-genbyo",
+   "rs-kinki"
+  ],
+  "description": "これまでに かかった 病気や けがの ことです。問診で 聞いて おくと、施術を しない ほうが よい ときに 気づく 手がかりに なります。"
+ },
+ {
+  "id": "rs-genbyo",
+  "name": "現病歴",
+  "reading": "げんびょうれき",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🗒️",
+  "mapNode": "rinsho:shinsatsu",
+  "relatedTerms": [
+   "rs-kiou",
+   "rs-kyuseiki"
+  ],
+  "description": "いまの 不調が、いつ・どのように はじまり、どう 変わって きたかの ことです。問診で ていねいに 聞いて、施術の 計画に 役立てます。"
+ },
+ {
+  "id": "rs-kyuseiki",
+  "name": "急性期",
+  "reading": "きゅうせいき",
+  "journey": "rinsho",
+  "category": "施術を しない とき",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "rinsho:kinki",
+  "relatedTerms": [
+   "rs-manseiki",
+   "rs-enshou"
+  ],
+  "description": "不調や けがが 起きて まもない、炎症が 強く 出やすい 時期です。この 時期は 施術を ひかえたり、病院を すすめたり する ことが あります。"
+ },
+ {
+  "id": "rs-manseiki",
+  "name": "慢性期",
+  "reading": "まんせいき",
+  "journey": "rinsho",
+  "category": "施術を しない とき",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "rinsho:kinki",
+  "relatedTerms": [
+   "rs-kyuseiki",
+   "rs-katakori"
+  ],
+  "description": "不調が 長く つづき、ようすが 落ちついて いる 時期です。こわばりや 血の めぐりを ととのえる 施術が よく 行われる 時期です。"
+ },
+ {
+  "id": "rs-gappei",
+  "name": "合併症",
+  "reading": "がっぺいしょう",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-tonyo",
+   "rs-kiou"
+  ],
+  "description": "ある 病気に ともなって、べつの 病気や 不調が 起こる ことです。問診で 聞いて、施術で 気を つける ことを 確かめます。"
+ },
+ {
+  "id": "rs-byori",
+  "name": "病理",
+  "reading": "びょうり",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 3,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-ishuku",
+   "rs-hidai",
+   "rs-hensei"
+  ],
+  "description": "病気が どうして 起こり、からだに どんな 変化が 起きるかの しくみです。国家試験では 病理学概論として 学びます。"
+ },
+ {
+  "id": "rs-ishuku",
+  "name": "萎縮",
+  "reading": "いしゅく",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 3,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-hidai",
+   "rs-byori"
+  ],
+  "description": "いったん ふつうの 大きさに なった 臓器や 組織が、小さく なる ことです。動かさない 日が つづくと 筋肉が 細く なるのも その ひとつです。"
+ },
+ {
+  "id": "rs-hidai",
+  "name": "肥大",
+  "reading": "ひだい",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 3,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-kakeisei",
+   "rs-ishuku"
+  ],
+  "description": "細胞 ひとつひとつが 大きく なって、臓器や 組織が 大きく なる ことです。きたえた 筋肉が 太く なるのも その ひとつです。"
+ },
+ {
+  "id": "rs-kakeisei",
+  "name": "過形成",
+  "reading": "かけいせい",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 3,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-hidai",
+   "rs-kasei"
+  ],
+  "description": "細胞の 数が ふえる ことで、組織が 大きく なる ことです。細胞 ひとつひとつが 大きく なる 肥大との ちがいを 学びます。"
+ },
+ {
+  "id": "rs-kasei",
+  "name": "化生",
+  "reading": "かせい",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 3,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-kakeisei",
+   "rs-hensei"
+  ],
+  "description": "ある 種類の 細胞が、べつの 種類の 細胞に 置きかわる ことです。まわりの 刺激に からだが 合わせようと する 変化の ひとつです。"
+ },
+ {
+  "id": "rs-hensei",
+  "name": "変性",
+  "reading": "へんせい",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 3,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-ishuku",
+   "rs-kasei"
+  ],
+  "description": "細胞や 組織の 中に、ふだんは 見られない ものが たまったり、性質が 変わったり する ことです。病理の 基本の ことばです。"
+ },
+ {
+  "id": "rs-saisei",
+  "name": "再生",
+  "reading": "さいせい",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 3,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "rinsho:byoki",
+  "relatedTerms": [
+   "rs-byori",
+   "rs-enshou"
+  ],
+  "description": "傷ついて 失われた 細胞や 組織が、同じ 種類の 細胞で おぎなわれる ことです。皮膚の 小さな 傷が もとに もどるのも その ひとつです。"
+ },
+ {
+  "id": "rs-junkan",
+  "name": "循環障害",
+  "reading": "じゅんかんしょうがい",
+  "journey": "rinsho",
+  "category": "病気の きほん",
+  "difficulty": 3,
+  "field": "病理学概論",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "rinsho:mukumi",
+  "relatedTerms": [
+   "rs-mukumi",
+   "rs-hie"
+  ],
+  "part": "全身",
+  "description": "血液や リンパの 流れに みだれが 起こる ことを まとめた よび名です。むくみ(浮腫)も その ひとつとして 学びます。施術は 血の めぐりを 助ける 手伝いを します。"
+ },
+ {
+  "id": "rs-trigger",
+  "name": "トリガーポイント",
+  "reading": "とりがーぽいんと",
+  "journey": "rinsho",
+  "category": "腰と 背中の 不調",
+  "difficulty": 3,
+  "field": "あん摩マッサージ指圧理論",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rinsho:yotsu",
+  "relatedTerms": [
+   "rs-kinkinmaku",
+   "rs-attsu"
+  ],
+  "description": "筋肉の 中に できる、押すと ひびくような 感じが 出る かたい ところの よび名です。はなれた 場所に 感じが 広がる ことも あります。「トリガー」は 引き金 という 意味です。"
+ },
+ {
+  "id": "rs-toshu",
+  "name": "徒手検査",
+  "reading": "としゅけんさ",
+  "journey": "rinsho",
+  "category": "見る・ふれる・はかる",
+  "difficulty": 3,
+  "field": "臨床医学",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "rinsho:shinsatsu",
+  "relatedTerms": [
+   "rs-shokushin",
+   "rs-shishin"
+  ],
+  "part": "全身",
+  "description": "手で 関節を 動かしたり 押したりして、筋肉・関節・神経の ようすを 確かめる 検査を まとめた よび名です。「徒手」は 道具を 使わず 手だけで という 意味です。"
+ }
+]

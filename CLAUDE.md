@@ -933,7 +933,8 @@
 - 「心経」だけ 名前が「手の少陰心経」(読みが 解剖の「神経」と かぶるため)
 - **トップの 絵は 入れた**(2026-10-12。`anma/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **3回目**:
   1回目は 人が 人の 背中を さわる・ベッド・痛みの 印・薬・ゲームに 無い ことば・やりかたの 4択で 入れなかった。2回目は 説明の 箱と 机の 置物が **歯科医師の 絵の 名残り**(はのこと・歯)・人体図が 裸の 後ろ姿(おしり)・肌の 出た 背中の 札 3枚で 入れなかった。3回目は 札 36こ・4択(ごうこく)・説明の 箱「ごうこく の こと」・レベル が ぜんぶ ゲームに 合い、人体図と 背中の 札は シャツを 着た 姿(指圧は 服の 上から)。もとの 絵は 入れものに 入れていない
-  - アイコン(四角い 絵)と 題名の 透明 PNG は まだ(仮の アイコン `tools/anma/placeholder_icon.py`・`logo=False`)。届いたら 歯科医師と 同じ 手順(題名は「フリック指圧師」5字を 1字ずつ 読む)
+  - **アイコンも 入れた**(2026-10-12。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py anma`。`iconv` = 2)。中身は トップの 絵と 同じ 札・同じ 直しずみ(ごうこく の こと・シャツを 着た 人体図)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+  - 題名の 透明 PNG は まだ(`logo=False`)。届いたら `tools/anma/art/title-src.png` → `python3 tools/title_from_art.py anma`(「フリック指圧師」7字を 1字ずつ 読む)→ `logo=True`・`art.word` を 実寸・`wordv` +1。そのあと speed-king の `HOME_GAMES`・`FLICK_SERIES_GAMES` に 足す
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`・規約の 一覧は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs anma/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs anma/`(W=320 も)
 

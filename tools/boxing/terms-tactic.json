@@ -1,0 +1,1265 @@
+[
+ {
+  "id": "tc-outboxing",
+  "name": "アウトボクシング",
+  "reading": "あうとぼくしんぐ",
+  "journey": "tactic",
+  "category": "ボクサーのタイプ",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🦋",
+  "mapNode": "tactic:type",
+  "relatedTerms": [
+   "tc-infight",
+   "tc-outrange",
+   "tc-ashiwotsukau"
+  ],
+  "description": "相手と 距離を とり、フットワークと ジャブで 戦う スタイルです。打たれない 位置から ポイントを 重ねるのが 持ち味で、この タイプの 選手を アウトボクサーと いいます。"
+ },
+ {
+  "id": "tc-infight",
+  "name": "インファイト",
+  "reading": "いんふぁいと",
+  "journey": "tactic",
+  "category": "ボクサーのタイプ",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "tactic:type",
+  "relatedTerms": [
+   "tc-outboxing",
+   "tc-inrange",
+   "tc-pressure"
+  ],
+  "acceptedReadings": [
+   "いんふぁいと",
+   "いんふぁいたー"
+  ],
+  "description": "相手の ふところに 入り、近い 距離で 打ちあう スタイルです。フックや アッパー、ボディへの パンチを 多く 使い、この タイプの 選手を インファイターと いいます。"
+ },
+ {
+  "id": "tc-sakusen",
+  "name": "作戦",
+  "reading": "さくせん",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "tactic:plan",
+  "relatedTerms": [
+   "tc-gameplan",
+   "tc-scouting",
+   "tc-shiji"
+  ],
+  "description": "試合を どう 戦うかの 計画です。相手の タイプや かまえを 調べて、どの 距離で 何を 打つかを トレーナーと いっしょに 決めます。"
+ },
+ {
+  "id": "tc-kyorikan",
+  "name": "距離感",
+  "reading": "きょりかん",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "tactic:range",
+  "relatedTerms": [
+   "tc-outrange",
+   "tc-middlerange",
+   "tc-inrange"
+  ],
+  "description": "相手との あいだの 間合いを つかむ 感覚の ことです。自分の パンチが 届いて 相手の パンチが 届かない 位置を 知る ことが、ボクシングの きほんと いわれます。"
+ },
+ {
+  "id": "tc-tekazu",
+  "name": "手数",
+  "reading": "てかず",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "tactic:pace",
+  "relatedTerms": [
+   "tc-hitritsu",
+   "tc-pacehaibun",
+   "tc-yuseii"
+  ],
+  "description": "試合や ラウンドの 中で 出した パンチの 数の ことです。手数が 多いと 攻めている 印象を あたえますが、採点では 当たった パンチの 質も 大切です。"
+ },
+ {
+  "id": "tc-boxerfighter",
+  "name": "ボクサーファイター",
+  "reading": "ぼくさーふぁいたー",
+  "journey": "tactic",
+  "category": "ボクサーのタイプ",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "tactic:type",
+  "relatedTerms": [
+   "tc-outboxing",
+   "tc-infight"
+  ],
+  "description": "距離を とる ボクシングも、近くで 打ちあう ファイトも できる 選手の ことです。相手や 場面に あわせて 戦いかたを 変えられるのが 強みです。"
+ },
+ {
+  "id": "tc-slugger",
+  "name": "スラッガー",
+  "reading": "すらっがー",
+  "journey": "tactic",
+  "category": "ボクサーのタイプ",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "tactic:type",
+  "relatedTerms": [
+   "tc-hardpuncher",
+   "tc-boxerfighter"
+  ],
+  "description": "強い パンチで 勝負する タイプの 選手です。野球の 長打者と 同じ ことばで、一発の パンチ力が 持ち味です。"
+ },
+ {
+  "id": "tc-hardpuncher",
+  "name": "ハードパンチャー",
+  "reading": "はーどぱんちゃー",
+  "journey": "tactic",
+  "category": "ボクサーのタイプ",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧨",
+  "mapNode": "tactic:type",
+  "relatedTerms": [
+   "tc-slugger",
+   "tc-technician"
+  ],
+  "description": "パンチ力が とても 強い 選手の ことです。「強打者」とも いい、ひとつの パンチで 試合の 流れを 変える 力が ある 選手を さします。"
+ },
+ {
+  "id": "tc-pressure",
+  "name": "プレッシャー",
+  "reading": "ぷれっしゃー",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "tactic:ring",
+  "relatedTerms": [
+   "tc-pressurefighter",
+   "tc-maenideru",
+   "tc-cornernitsumeru"
+  ],
+  "description": "前に 出て 相手を 下がらせ、自由に させない 攻めかたの ことです。解説では 「プレッシャーを かける」と よく 言います。"
+ },
+ {
+  "id": "tc-roundwotoru",
+  "name": "ラウンドを取る",
+  "reading": "らうんどをとる",
+  "journey": "tactic",
+  "category": "採点の見かた",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "tactic:judge",
+  "relatedTerms": [
+   "tc-yukoda",
+   "tc-pointout",
+   "tc-sessen"
+  ],
+  "ruleset": "共通",
+  "description": "ジャッジの 採点で、その ラウンドを 上回った と 見られる ことです。プロでも アマでも 取った 選手に 10点が つき、1ラウンドずつ 積みあげて 判定に なります。"
+ },
+ {
+  "id": "tc-ringcenter",
+  "name": "リングの中央",
+  "reading": "りんぐのちゅうおう",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "tactic:ring",
+  "relatedTerms": [
+   "tc-ringgeneralship",
+   "tc-ropewoseou",
+   "tc-pressure"
+  ],
+  "description": "リングの まんなかの 位置です。ここに 立つと 前後左右 どこへでも 動けるので、まんなかを 取る ことは 試合を 支配する しるしと いわれます。"
+ },
+ {
+  "id": "tc-stamina",
+  "name": "スタミナ",
+  "reading": "すたみな",
+  "journey": "tactic",
+  "category": "準備と調整",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "tactic:condition",
+  "relatedTerms": [
+   "tc-pacehaibun",
+   "tc-shuuban"
+  ],
+  "description": "最後の ラウンドまで 動きつづける 体力の ことです。走りこみや 練習で きたえ、12ラウンドの 世界戦では とくに 大切です。"
+ },
+ {
+  "id": "tc-camp",
+  "name": "キャンプ",
+  "reading": "きゃんぷ",
+  "journey": "tactic",
+  "category": "準備と調整",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⛺",
+  "mapNode": "tactic:condition",
+  "relatedTerms": [
+   "tc-sparpartner",
+   "tc-chousei",
+   "tc-shiagari"
+  ],
+  "acceptedReadings": [
+   "きゃんぷ",
+   "がっしゅく"
+  ],
+  "description": "大きな 試合の 前に、練習に 集中する 時期の ことです。合宿と いう ことも あり、スパーリングや 走りこみを 計画的に 行います。"
+ },
+ {
+  "id": "tc-chousei",
+  "name": "調整",
+  "reading": "ちょうせい",
+  "journey": "tactic",
+  "category": "準備と調整",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🛠️",
+  "mapNode": "tactic:condition",
+  "relatedTerms": [
+   "tc-camp",
+   "tc-conditioning",
+   "tc-shiagari"
+  ],
+  "description": "試合の 日に いちばん よい 状態で 戦えるように、練習の 量や 休みを ととのえる ことです。「調整が うまく いった」と よく 言われます。"
+ },
+ {
+  "id": "tc-shiji",
+  "name": "セコンドの指示",
+  "reading": "せこんどのしじ",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "tactic:corner",
+  "relatedTerms": [
+   "tc-interval1min",
+   "tc-shuusei",
+   "tc-sakusen"
+  ],
+  "description": "ラウンドの あいだの インターバルに、セコンドが 選手に 伝える 作戦の ことです。「ジャブを 多く」「足を 使え」など、短い ことばで 伝えます。"
+ },
+ {
+  "id": "tc-kaisetsusha",
+  "name": "解説者",
+  "reading": "かいせつしゃ",
+  "journey": "tactic",
+  "category": "解説のことば",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎙️",
+  "mapNode": "tactic:word",
+  "relatedTerms": [
+   "tc-utasezu",
+   "tc-yuseii"
+  ],
+  "description": "テレビや 配信で 試合の 見どころや 作戦を 説明する 人です。元世界王者や トレーナーが つとめる ことが 多く、技や 作戦を 分かりやすく 伝えます。"
+ },
+ {
+  "id": "tc-utasezu",
+  "name": "打たせずに打つ",
+  "reading": "うたせずにうつ",
+  "journey": "tactic",
+  "category": "解説のことば",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "tactic:word",
+  "relatedTerms": [
+   "tc-defense",
+   "tc-outboxing",
+   "tc-kaisetsusha"
+  ],
+  "description": "相手の パンチを もらわずに、自分の パンチだけを 当てる ことです。ボクシングの 理想を 表す ことばとして、解説や ジムで よく 使われます。"
+ },
+ {
+  "id": "tc-technician",
+  "name": "テクニシャン",
+  "reading": "てくにしゃん",
+  "journey": "tactic",
+  "category": "ボクサーのタイプ",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "tactic:type",
+  "relatedTerms": [
+   "tc-counterpuncher",
+   "tc-outboxing"
+  ],
+  "description": "技術の 高い 選手の ことです。パンチの 打ちわけや 守り、距離の とりかたが うまく、力より 技で 戦う 選手を さします。"
+ },
+ {
+  "id": "tc-counterpuncher",
+  "name": "カウンターパンチャー",
+  "reading": "かうんたーぱんちゃー",
+  "journey": "tactic",
+  "category": "ボクサーのタイプ",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "tactic:type",
+  "relatedTerms": [
+   "tc-uchiowari",
+   "tc-technician"
+  ],
+  "description": "相手が 打ってきた ところに パンチを 合わせる のが 得意な 選手です。待つ ことが 多く、相手の 動きを よく 読む 力が 必要です。"
+ },
+ {
+  "id": "tc-yuseii",
+  "name": "優勢",
+  "reading": "ゆうせい",
+  "journey": "tactic",
+  "category": "解説のことば",
+  "difficulty": 1,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "tactic:word",
+  "relatedTerms": [
+   "tc-roundwotoru",
+   "tc-shudouken",
+   "tc-tekazu"
+  ],
+  "description": "試合や ラウンドで、どちらかが 上回っている ようすです。解説では 「前半は 青コーナーが 優勢」の ように 流れを 伝えます。"
+ },
+ {
+  "id": "tc-outrange",
+  "name": "アウトレンジ",
+  "reading": "あうとれんじ",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "tactic:range",
+  "relatedTerms": [
+   "tc-middlerange",
+   "tc-inrange",
+   "tc-jabkyori"
+  ],
+  "description": "相手から いちばん はなれた 距離です。長い ジャブや ストレートが 届く 間合いで、リーチの 長い 選手や アウトボクサーが 好みます。"
+ },
+ {
+  "id": "tc-middlerange",
+  "name": "ミドルレンジ",
+  "reading": "みどるれんじ",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "tactic:range",
+  "relatedTerms": [
+   "tc-outrange",
+   "tc-inrange"
+  ],
+  "description": "アウトレンジと 接近戦の あいだの 距離です。ワンツーや フックを まぜやすく、おたがいの パンチが 届く 打ちあいの 距離でも あります。"
+ },
+ {
+  "id": "tc-inrange",
+  "name": "インレンジ(接近戦)",
+  "reading": "いんれんじ",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🤏",
+  "mapNode": "tactic:range",
+  "relatedTerms": [
+   "tc-infight",
+   "tc-middlerange"
+  ],
+  "acceptedReadings": [
+   "いんれんじ",
+   "せっきんせん"
+  ],
+  "description": "体が くっつくほど 近い 距離です。ショートの フックや アッパー、ボディへの パンチが 中心に なり、インファイターが 得意と します。"
+ },
+ {
+  "id": "tc-hitritsu",
+  "name": "ヒット率",
+  "reading": "ひっとりつ",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "tactic:stats",
+  "relatedTerms": [
+   "tc-tekazu",
+   "tc-punchstats",
+   "tc-powerpunch"
+  ],
+  "description": "打った パンチの うち、当たった パンチの 割合です。手数と いっしょに 見ると、その 選手が どれだけ 正確に 打てているかが 分かります。"
+ },
+ {
+  "id": "tc-pacehaibun",
+  "name": "ペース配分",
+  "reading": "ぺーすはいぶん",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "tactic:pace",
+  "relatedTerms": [
+   "tc-stamina",
+   "tc-joban",
+   "tc-shuuban"
+  ],
+  "description": "試合の はじめから 最後まで、力を どう 使うかの 計画です。12ラウンドの 試合では 前半で 力を 使いきらない ことが 大切です。"
+ },
+ {
+  "id": "tc-jabkyori",
+  "name": "ジャブで距離をつくる",
+  "reading": "じゃぶできょりをつくる",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "👉",
+  "mapNode": "tactic:range",
+  "relatedTerms": [
+   "tc-outrange",
+   "tc-kyorikan",
+   "tc-shudouken"
+  ],
+  "description": "前の 手の ジャブを つき出して、自分に つごうの よい 間合いを たもつ ことです。「ジャブを 制する ものは 世界を 制す」とも いわれます。"
+ },
+ {
+  "id": "tc-pressurefighter",
+  "name": "プレッシャーファイター",
+  "reading": "ぷれっしゃーふぁいたー",
+  "journey": "tactic",
+  "category": "ボクサーのタイプ",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🚂",
+  "mapNode": "tactic:type",
+  "relatedTerms": [
+   "tc-pressure",
+   "tc-infight",
+   "tc-maenideru"
+  ],
+  "description": "休まず 前に 出つづけ、相手を ロープや コーナーへ 下がらせる タイプの 選手です。スタミナと 手数が 持ち味です。"
+ },
+ {
+  "id": "tc-ropewoseou",
+  "name": "ロープを背負う",
+  "reading": "ろーぷをせおう",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🪢",
+  "mapNode": "tactic:ring",
+  "relatedTerms": [
+   "tc-cornernitsumeru",
+   "tc-ringcenter",
+   "tc-ringwohiroku"
+  ],
+  "description": "選手が 下がって、背中が ロープに つく 位置に いる ことです。うしろに 下がれないので、解説では 「ロープを 背負った」と 言い、横へ 回りこむ 動きが 大切に なります。"
+ },
+ {
+  "id": "tc-cornernitsumeru",
+  "name": "コーナーにつめる",
+  "reading": "こーなーにつめる",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "tactic:ring",
+  "relatedTerms": [
+   "tc-pressure",
+   "tc-ropewoseou",
+   "tc-pressurefighter"
+  ],
+  "description": "前に 出て、相手を リングの すみ(コーナー)へ 追いこむ ことです。にげ道を 少なく して、自分の パンチを 当てやすい 位置を つくります。"
+ },
+ {
+  "id": "tc-southpawtaisaku",
+  "name": "サウスポー対策",
+  "reading": "さうすぽーたいさく",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "tactic:southpaw",
+  "relatedTerms": [
+   "tc-maeashisoto",
+   "tc-maeashi",
+   "tc-sakusen"
+  ],
+  "description": "左かまえの 相手と 戦う ための 作戦です。前の 足の 位置どりや、右ストレートを 使う タイミングを 練習で 用意します。サウスポーの 練習相手を さがす ことも あります。"
+ },
+ {
+  "id": "tc-maeashi",
+  "name": "前足の位置",
+  "reading": "まえあしのいち",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "tactic:southpaw",
+  "relatedTerms": [
+   "tc-maeashisoto",
+   "tc-southpawtaisaku"
+  ],
+  "description": "かまえた ときに 前に 出している 足が どこに あるかの ことです。とくに サウスポーと オーソドックスの 対戦では、前足の 位置の 取りあいが 大きな 見どころです。"
+ },
+ {
+  "id": "tc-cleanhit",
+  "name": "クリーンヒット",
+  "reading": "くりーんひっと",
+  "journey": "tactic",
+  "category": "採点の見かた",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "tactic:judge",
+  "relatedTerms": [
+   "tc-yukoda",
+   "tc-kousei",
+   "tc-ringgeneralship"
+  ],
+  "ruleset": "共通",
+  "description": "グローブの こぶしの 部分で、きれいに 当たった パンチです。ガードの 上や かすった パンチは 入らず、プロでも アマでも 採点で いちばん 大事な ところです。"
+ },
+ {
+  "id": "tc-yukoda",
+  "name": "有効打",
+  "reading": "ゆうこうだ",
+  "journey": "tactic",
+  "category": "採点の見かた",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "tactic:judge",
+  "relatedTerms": [
+   "tc-cleanhit",
+   "tc-roundwotoru",
+   "tc-tekazu"
+  ],
+  "ruleset": "共通",
+  "description": "採点で 数えられる、正しく 当たった パンチの ことです。手数が 多くても 有効打が 少なければ、ラウンドを 取るのは むずかしく なります。"
+ },
+ {
+  "id": "tc-kousei",
+  "name": "攻勢",
+  "reading": "こうせい",
+  "journey": "tactic",
+  "category": "採点の見かた",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "tactic:judge",
+  "relatedTerms": [
+   "tc-cleanhit",
+   "tc-pressure",
+   "tc-defense"
+  ],
+  "ruleset": "プロ",
+  "description": "パンチを 当てながら 前に 出て 攻めつづける ことです。プロの 採点の めやすの ひとつで、前に 出るだけで パンチが 当たらなければ 認められません。"
+ },
+ {
+  "id": "tc-defense",
+  "name": "ディフェンス",
+  "reading": "でぃふぇんす",
+  "journey": "tactic",
+  "category": "採点の見かた",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "tactic:judge",
+  "relatedTerms": [
+   "tc-kousei",
+   "tc-ringgeneralship",
+   "tc-utasezu"
+  ],
+  "ruleset": "プロ",
+  "description": "相手の パンチを よけたり 受けたり して、打たせない 技術です。プロの 採点の めやすの ひとつですが、抱きつく だけでは ディフェンスと 見られません。"
+ },
+ {
+  "id": "tc-scouting",
+  "name": "スカウティング",
+  "reading": "すかうてぃんぐ",
+  "journey": "tactic",
+  "category": "準備と調整",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "tactic:plan",
+  "relatedTerms": [
+   "tc-eizou",
+   "tc-sakusen",
+   "tc-gameplan"
+  ],
+  "description": "対戦相手の くせや 得意な パンチを 調べる ことです。調べた ことを もとに、試合の 作戦を 立てます。"
+ },
+ {
+  "id": "tc-eizou",
+  "name": "映像研究",
+  "reading": "えいぞうけんきゅう",
+  "journey": "tactic",
+  "category": "準備と調整",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📼",
+  "mapNode": "tactic:plan",
+  "relatedTerms": [
+   "tc-scouting",
+   "tc-gameplan"
+  ],
+  "description": "相手の これまでの 試合の 映像を 見て、動きを 調べる ことです。自分の 試合を 見なおして、直す ところを さがす ときにも 行います。"
+ },
+ {
+  "id": "tc-sparpartner",
+  "name": "スパーリングパートナー",
+  "reading": "すぱーりんぐぱーとなー",
+  "journey": "tactic",
+  "category": "準備と調整",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "tactic:condition",
+  "relatedTerms": [
+   "tc-camp",
+   "tc-southpawtaisaku"
+  ],
+  "description": "試合の 前に いっしょに スパーリングを する 練習相手です。対戦相手に にた かまえや スタイルの 選手を よぶ ことが 多いです。"
+ },
+ {
+  "id": "tc-conditioning",
+  "name": "コンディショニング",
+  "reading": "こんでぃしょにんぐ",
+  "journey": "tactic",
+  "category": "準備と調整",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧘",
+  "mapNode": "tactic:condition",
+  "relatedTerms": [
+   "tc-chousei",
+   "tc-stamina",
+   "tc-shiagari"
+  ],
+  "description": "体の 調子を ととのえる こと 全体を さします。食事・ねむり・練習の 量を 考えて、試合の 日に 力を 出しきれる 体を つくります。"
+ },
+ {
+  "id": "tc-joban",
+  "name": "序盤",
+  "reading": "じょばん",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🌅",
+  "mapNode": "tactic:pace",
+  "relatedTerms": [
+   "tc-chuuban",
+   "tc-shuuban",
+   "tc-pacehaibun"
+  ],
+  "description": "試合の はじめの ラウンドの ことです。おたがいに 相手の 動きや 距離を さぐる ことが 多く、「序盤は 様子見」と よく いわれます。"
+ },
+ {
+  "id": "tc-shuuban",
+  "name": "終盤",
+  "reading": "しゅうばん",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🌇",
+  "mapNode": "tactic:pace",
+  "relatedTerms": [
+   "tc-joban",
+   "tc-chuuban",
+   "tc-stamina"
+  ],
+  "description": "試合の 最後の ほうの ラウンドです。スタミナの 差が 出やすく、判定が 近い 試合では 終盤の ラウンドが 大事に なります。"
+ },
+ {
+  "id": "tc-shudouken",
+  "name": "主導権",
+  "reading": "しゅどうけん",
+  "journey": "tactic",
+  "category": "解説のことば",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "tactic:word",
+  "relatedTerms": [
+   "tc-ringgeneralship",
+   "tc-yuseii",
+   "tc-jabkyori"
+  ],
+  "description": "試合の 流れを 自分の 思う ように 動かす 力の ことです。解説では 「主導権を にぎる」「主導権を わたさない」と 使います。"
+ },
+ {
+  "id": "tc-ashiwotsukau",
+  "name": "足を使う",
+  "reading": "あしをつかう",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "tactic:ring",
+  "relatedTerms": [
+   "tc-outboxing",
+   "tc-ringwohiroku",
+   "tc-ropewoseou"
+  ],
+  "description": "フットワークで 動きまわり、相手に つかまらない ように 戦う ことです。セコンドが 「足を 使え」と 指示する ことも よく あります。"
+ },
+ {
+  "id": "tc-uchiowari",
+  "name": "打ち終わり",
+  "reading": "うちおわり",
+  "journey": "tactic",
+  "category": "解説のことば",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "tactic:word",
+  "relatedTerms": [
+   "tc-counterpuncher",
+   "tc-yomiai"
+  ],
+  "description": "相手が パンチを 打って、手を もどす 瞬間の ことです。ここに 自分の パンチを 合わせるのが ねらいどころと よく 言われます。"
+ },
+ {
+  "id": "tc-kakehiki",
+  "name": "駆け引き",
+  "reading": "かけひき",
+  "journey": "tactic",
+  "category": "解説のことば",
+  "difficulty": 2,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "♟️",
+  "mapNode": "tactic:word",
+  "relatedTerms": [
+   "tc-yomiai",
+   "tc-hikidashi",
+   "tc-sakusen"
+  ],
+  "description": "フェイントや 動きで 相手を まよわせ、自分に 有利な 場面を つくる ことです。強い 選手どうしの 試合では、パンチを 出す 前の 駆け引きも 見どころです。"
+ },
+ {
+  "id": "tc-ringgeneralship",
+  "name": "リングジェネラルシップ",
+  "reading": "りんぐじぇねらるしっぷ",
+  "journey": "tactic",
+  "category": "採点の見かた",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "👑",
+  "mapNode": "tactic:judge",
+  "relatedTerms": [
+   "tc-shudouken",
+   "tc-ringcenter",
+   "tc-cleanhit"
+  ],
+  "ruleset": "プロ",
+  "description": "試合の ペースや 距離、リングの どこで 戦うかを 自分の ものに する ことです。プロの 採点の めやすの ひとつで、にげまわる だけでは 認められません。"
+ },
+ {
+  "id": "tc-pointout",
+  "name": "ポイントアウト",
+  "reading": "ぽいんとあうと",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "tactic:plan",
+  "relatedTerms": [
+   "tc-roundwotoru",
+   "tc-outboxing",
+   "tc-yukoda"
+  ],
+  "description": "ラウンドを 取りつづけて、判定で 勝つ ことを ねらう 戦いかたです。打ちあいを さけ、有効打を 積みかさねます。"
+ },
+ {
+  "id": "tc-bodykouhan",
+  "name": "ボディで後半につなげる",
+  "reading": "ぼでぃでこうはんにつなげる",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "tactic:plan",
+  "relatedTerms": [
+   "tc-shuuban",
+   "tc-pacehaibun",
+   "tc-gameplan"
+  ],
+  "description": "前半から ボディへの パンチを まぜて おき、後半の ラウンドに つなげる 組み立てです。長い ラウンドの 試合で 解説者が よく 口に する 作戦です。"
+ },
+ {
+  "id": "tc-maeashisoto",
+  "name": "前足の外を取る",
+  "reading": "まえあしのそとをとる",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "tactic:southpaw",
+  "relatedTerms": [
+   "tc-maeashi",
+   "tc-southpawtaisaku"
+  ],
+  "description": "かまえが ちがう 相手と 戦う とき、自分の 前足を 相手の 前足より 外がわに おく ことです。まっすぐの パンチを 通す 角度が つくりやすいと いわれます。"
+ },
+ {
+  "id": "tc-gameplan",
+  "name": "ゲームプラン",
+  "reading": "げーむぷらん",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "tactic:plan",
+  "relatedTerms": [
+   "tc-sakusen",
+   "tc-scouting",
+   "tc-shuusei"
+  ],
+  "description": "ラウンドごとに どう 戦うかまで 決めた 試合の 計画です。「ゲームプランどおり」「ゲームプランを 変えた」の ように、解説で よく 使われます。"
+ },
+ {
+  "id": "tc-shuusei",
+  "name": "修正",
+  "reading": "しゅうせい",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "tactic:corner",
+  "relatedTerms": [
+   "tc-shiji",
+   "tc-gameplan",
+   "tc-interval1min"
+  ],
+  "description": "試合中に うまく いかない ところを 直す ことです。インターバルで セコンドが 指示を 出し、次の ラウンドで 作戦を 変えます。"
+ },
+ {
+  "id": "tc-hikidashi",
+  "name": "引き出し",
+  "reading": "ひきだし",
+  "journey": "tactic",
+  "category": "解説のことば",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🗃️",
+  "mapNode": "tactic:word",
+  "relatedTerms": [
+   "tc-kakehiki",
+   "tc-technician"
+  ],
+  "description": "選手が 持っている 技や 作戦の 数の ことです。「引き出しが 多い」選手は 相手や 場面に あわせて 戦いかたを 変えられます。"
+ },
+ {
+  "id": "tc-yomiai",
+  "name": "読み合い",
+  "reading": "よみあい",
+  "journey": "tactic",
+  "category": "解説のことば",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "tactic:word",
+  "relatedTerms": [
+   "tc-kakehiki",
+   "tc-uchiowari"
+  ],
+  "description": "おたがいに 相手の 次の 動きを 予想しあう ことです。強い 選手どうしの 試合では、静かな 時間にも この 読み合いが つづいています。"
+ },
+ {
+  "id": "tc-chuuban",
+  "name": "中盤",
+  "reading": "ちゅうばん",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🕛",
+  "mapNode": "tactic:pace",
+  "relatedTerms": [
+   "tc-joban",
+   "tc-shuuban"
+  ],
+  "description": "試合の まんなかの ラウンドです。序盤の さぐりあいが 終わって、作戦の 差が 見えはじめる ころと いわれます。"
+ },
+ {
+  "id": "tc-punchstats",
+  "name": "パンチの統計",
+  "reading": "ぱんちのとうけい",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "tactic:stats",
+  "relatedTerms": [
+   "tc-hitritsu",
+   "tc-powerpunch",
+   "tc-tekazu"
+  ],
+  "description": "打った パンチと 当たった パンチを ラウンドごとに 数えた 記録です。テレビの 中継でも 出る ことが あり、試合の 流れを 数字で 見る 助けに なります。"
+ },
+ {
+  "id": "tc-powerpunch",
+  "name": "パワーパンチ",
+  "reading": "ぱわーぱんち",
+  "journey": "tactic",
+  "category": "作戦とペース",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "tactic:stats",
+  "relatedTerms": [
+   "tc-punchstats",
+   "tc-hitritsu"
+  ],
+  "description": "パンチの 統計で、ジャブ いがいの パンチを まとめて よぶ ことばです。ストレート・フック・アッパーなどが 入り、ジャブと 分けて 数えます。"
+ },
+ {
+  "id": "tc-sessen",
+  "name": "接戦のラウンド",
+  "reading": "せっせんのらうんど",
+  "journey": "tactic",
+  "category": "採点の見かた",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🤔",
+  "mapNode": "tactic:judge",
+  "relatedTerms": [
+   "tc-roundwotoru",
+   "tc-ringgeneralship"
+  ],
+  "ruleset": "共通",
+  "description": "どちらが 上回ったか 分かりにくい ラウンドの ことです。ジャッジに よって 点が 分かれやすく、スプリット・デシジョンが 生まれる もとに なります。"
+ },
+ {
+  "id": "tc-rhythm",
+  "name": "リズム",
+  "reading": "りずむ",
+  "journey": "tactic",
+  "category": "解説のことば",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🎵",
+  "mapNode": "tactic:word",
+  "relatedTerms": [
+   "tc-kakehiki",
+   "tc-shudouken"
+  ],
+  "description": "動きや パンチを 出す 間の とりかたの ことです。解説では 「自分の リズムで 戦えている」「リズムを くずされた」と 使います。"
+ },
+ {
+  "id": "tc-interval1min",
+  "name": "インターバルの1分",
+  "reading": "いんたーばるのいっぷん",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "tactic:corner",
+  "relatedTerms": [
+   "tc-shiji",
+   "tc-shuusei"
+  ],
+  "ruleset": "共通",
+  "description": "ラウンドの あいだの 1分は、セコンドが 作戦を 伝える 大切な 時間です。何を 伝えるかは 短く しぼり、選手が すぐ 動ける ことばに します。"
+ },
+ {
+  "id": "tc-shiagari",
+  "name": "仕上がり",
+  "reading": "しあがり",
+  "journey": "tactic",
+  "category": "準備と調整",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🌟",
+  "mapNode": "tactic:condition",
+  "relatedTerms": [
+   "tc-chousei",
+   "tc-camp",
+   "tc-conditioning"
+  ],
+  "description": "試合の 日に むけて つくってきた 体や 動きの できぐあいです。解説では 「仕上がりが いい」「よく 仕上がっている」と 使います。"
+ },
+ {
+  "id": "tc-maenideru",
+  "name": "前に出る",
+  "reading": "まえにでる",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "tactic:ring",
+  "relatedTerms": [
+   "tc-pressure",
+   "tc-kousei",
+   "tc-pressurefighter"
+  ],
+  "description": "相手に むかって 進み、自分から 攻める 姿勢を 見せる ことです。ジャッジは 前に 出るだけで なく、パンチが 当たっているかも 見ます。"
+ },
+ {
+  "id": "tc-ringwohiroku",
+  "name": "リングを広く使う",
+  "reading": "りんぐをひろくつかう",
+  "journey": "tactic",
+  "category": "距離と位置",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "tactic:ring",
+  "relatedTerms": [
+   "tc-ashiwotsukau",
+   "tc-outboxing",
+   "tc-ropewoseou"
+  ],
+  "description": "リングの はしから はしまで 大きく 動いて 戦う ことです。アウトボクサーが 相手に つめられない ように する ときに よく 見られます。"
+ },
+ {
+  "id": "tc-dundee",
+  "name": "アンジェロ・ダンディー",
+  "reading": "あんじぇろだんでぃー",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "tactic:trainer",
+  "relatedTerms": [
+   "tc-futch",
+   "tc-steward"
+  ],
+  "country": "アメリカ",
+  "acceptedReadings": [
+   "あんじぇろだんでぃー",
+   "あんじぇろだんでぃ"
+  ],
+  "description": "アメリカの 名トレーナーです。マイアミビーチの ジムを 拠点に、モハメド・アリの トレーナーとして 長く コーナーに つきました。"
+ },
+ {
+  "id": "tc-futch",
+  "name": "エディ・フッチ",
+  "reading": "えでぃふっち",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "tactic:trainer",
+  "relatedTerms": [
+   "tc-dundee",
+   "tc-steward"
+  ],
+  "country": "アメリカ",
+  "description": "1970年代から 多くの ヘビー級王者を 教えた アメリカの 名トレーナーです。全米ボクシング記者協会の 年間最優秀トレーナー賞には、彼の 名前が ついています。"
+ },
+ {
+  "id": "tc-steward",
+  "name": "エマニュエル・スチュワード",
+  "reading": "えまにゅえるすちゅわーど",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "tactic:trainer",
+  "relatedTerms": [
+   "tc-kronk",
+   "tc-futch"
+  ],
+  "country": "アメリカ",
+  "description": "アメリカ デトロイトの クロンクジムで 多くの 王者を 育てた トレーナーです。1990年代には レノックス・ルイスを ヘビー級の 統一王者へ 導いた ことでも 知られます。"
+ },
+ {
+  "id": "tc-roach",
+  "name": "フレディ・ローチ",
+  "reading": "ふれでぃろーち",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "tactic:trainer",
+  "relatedTerms": [
+   "tc-wildcard",
+   "tc-steward"
+  ],
+  "country": "アメリカ",
+  "description": "アメリカの 名トレーナーです。1995年に ハリウッドで ワイルドカードジムを 開き、全米ボクシング記者協会の 年間最優秀トレーナーに 何度も えらばれています。"
+ },
+ {
+  "id": "tc-townsend",
+  "name": "エディ・タウンゼント",
+  "reading": "えでぃたうんぜんと",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "tactic:trainer",
+  "relatedTerms": [
+   "tc-beristain",
+   "tc-dundee"
+  ],
+  "country": "アメリカ・日本",
+  "description": "ハワイ 出身の トレーナーです。1962年に 日本へ 来て、6人の 日本人 世界王者を 育てました。日本の ボクシングの 指導に 大きな 足あとを のこしました。"
+ },
+ {
+  "id": "tc-beristain",
+  "name": "ナチョ・ベリスタイン",
+  "reading": "なちょべりすたいん",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "tactic:trainer",
+  "relatedTerms": [
+   "tc-townsend",
+   "tc-roach"
+  ],
+  "country": "メキシコ",
+  "description": "メキシコシティの ジムで 何人もの 世界王者を 育てた メキシコの 名トレーナーです。国際ボクシング殿堂にも えらばれています。"
+ },
+ {
+  "id": "tc-kronk",
+  "name": "クロンクジム",
+  "reading": "くろんくじむ",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🏟️",
+  "mapNode": "tactic:trainer",
+  "relatedTerms": [
+   "tc-steward",
+   "tc-wildcard"
+  ],
+  "country": "アメリカ",
+  "description": "アメリカ デトロイトに あった 名門ジムです。エマニュエル・スチュワードが 1971年から 教え、赤と 金の ユニフォームの 選手たちで 知られました。"
+ },
+ {
+  "id": "tc-wildcard",
+  "name": "ワイルドカードジム",
+  "reading": "わいるどかーどじむ",
+  "journey": "tactic",
+  "category": "名トレーナー",
+  "difficulty": 3,
+  "field": "戦術",
+  "type": "concept",
+  "emoji": "🏟️",
+  "mapNode": "tactic:trainer",
+  "relatedTerms": [
+   "tc-roach",
+   "tc-kronk"
+  ],
+  "country": "アメリカ",
+  "description": "フレディ・ローチが 1995年に 開いた、アメリカ ハリウッドの ジムです。世界中の プロ選手が 練習に おとずれる ことで 知られます。"
+ }
+]

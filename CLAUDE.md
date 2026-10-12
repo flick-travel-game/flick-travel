@@ -1070,7 +1070,7 @@
 - ふりがなは 確かめ役が `python3 tools/boxing/ruby_dump.py <旅>` で 全語 見た。`FIX` に 足した もの: 潤人(じゅんと)・月海(つきみ)・一発(いっぱつ)・2対1 の 対(たい)・手数(てかず)・両国(りょうごく)・原田(はらだ)。四すみ → よすみ・鏡・通る などは 文を 言いかえた
 - 絵: **まだ 無い**(仮の アイコン `tools/boxing/placeholder_icon.py` = 青い リングに 赤い グローブ。`hero=False`・`logo=False`)。
   届いたら 四角い 絵 → `tools/boxing/art/square-src.png` → `python3 tools/icon_from_square.py boxing`(`iconv` +1)/ 題名の 透明 PNG → `tools/boxing/art/title-src.png` → `python3 tools/title_from_art.py boxing`(`logo=True`・`art.word` を 実寸)/ `boxing/hero.webp`(`hero=True`)。
-  ⚠️ 絵を 頼む ときは **2人が 向かいあって なぐりあう 絵に しない**(「ならんで 正面を 向いて 笑って かまえる」)・血・あざ・倒れた 人・実在の 選手の 顔・団体の ベルト・ロゴを 描かせない。届いたら まず 字を 切り出して 読む(「フリックワールドボクシン」「ワールドボクシング」に なりやすい)
+  ⚠️ 絵を 頼む ときは **2人が 向かいあって なぐりあう 絵に しない**(人物は **男の子 1人**が 正面を 向いて 笑って かまえる。⚠️ **女の子と 白い犬は 描かない** = けいくん決定 2026-10-12)・血・あざ・倒れた 人・実在の 選手の 顔・団体の ベルト・ロゴを 描かせない。届いたら まず 字を 切り出して 読む(「フリックワールドボクシン」「ワールドボクシング」に なりやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`・規約の 一覧 `FLICK_SERIES_GAMES` は **絵と けいくんの OK の あと**
 - 確かめかた: `node tools/play-all.mjs boxing/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs boxing/`(W=320 も)。ふりがなを 作るには `pip install sudachipy sudachidict_core`
 

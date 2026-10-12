@@ -17,6 +17,7 @@ API = "https://texttospeech.googleapis.com/v1/"
 # 人に 近い 順。はじめに 使える ものを えらぶ(Chirp3 HD がいちばん 自然)
 VOICES = ["ko-KR-Chirp3-HD-Kore", "ko-KR-Chirp3-HD-Leda", "ko-KR-Neural2-A", "ko-KR-Wavenet-A"]
 EXTRA = ["안녕하세요"]
+SAMPLE = "안녕하세요! 만나서 반가워요. 오늘도 같이 공부해요."
 
 
 def call(path, body=None, key=""):
@@ -36,13 +37,29 @@ def main():
     ap.add_argument("--limit", type=int, default=0, help="作る 数の 上限(0 = ぜんぶ)")
     ap.add_argument("--only", default="", help="この 旅だけ(例: krhan)")
     ap.add_argument("--redo", action="store_true", help="ある 音も 作りなおす")
+    ap.add_argument("--voice", default="", help="声の 名前(例: ko-KR-Chirp3-HD-Leda。@2 を 付けると 高さを 上げる。Neural2 / Wavenet だけ)")
+    ap.add_argument("--samples", default="", help="この 声たちで 見本を 作る(カンマ区切り)。tools/kankoku/voice-samples/ に 入れる")
     a = ap.parse_args()
     key = os.environ.get("GOOGLE_TTS_KEY", "").strip()
     if not key:
         sys.exit("GOOGLE_TTS_KEY が ありません")
 
     names = {v["name"] for v in call("voices?languageCode=ko-KR", key=key).get("voices", [])}
-    voice = next((v for v in VOICES if v in names), None)
+    if a.samples:
+        d = os.path.join(ROOT, "tools", "kankoku", "voice-samples"); os.makedirs(d, exist_ok=True)
+        for spec in [v.strip() for v in a.samples.split(",") if v.strip()]:
+            name, _, pitch = spec.partition("@")
+            if name not in names:
+                print("ない 声:", name); continue
+            cfg = {"audioEncoding": "MP3"}
+            if pitch: cfg["pitch"] = float(pitch)
+            r = call("text:synthesize", {"input": {"text": SAMPLE}, "voice": {"languageCode": "ko-KR", "name": name}, "audioConfig": cfg}, key)
+            open(os.path.join(d, spec.replace("ko-KR-", "").replace("@", "_p") + ".mp3"), "wb").write(base64.b64decode(r["audioContent"]))
+            print("見本:", spec)
+        return
+    want = a.voice.partition("@")[0]
+    voice = want if want in names else next((v for v in VOICES if v in names), None)
+    pitch = a.voice.partition("@")[2]
     if not voice:
         sys.exit("韓国語の 声が 見つかりません: " + ", ".join(sorted(names)[:20]))
     print("声:", voice)
@@ -67,7 +84,7 @@ def main():
         if a.limit and made >= a.limit:
             break
         body = {"input": {"text": t}, "voice": {"languageCode": "ko-KR", "name": voice},
-                "audioConfig": {"audioEncoding": "MP3"}}
+                "audioConfig": dict({"audioEncoding": "MP3"}, **({"pitch": float(pitch)} if pitch else {}))}
         for tries in range(4):
             try:
                 r = call("text:synthesize", body, key)

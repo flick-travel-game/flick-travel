@@ -95,7 +95,16 @@ const KANKOKU = (() => {
   function pickVoice(){
     try{
       const vs = speechSynthesis.getVoices(), ko = vs.filter(v => /^ko/i.test(v.lang));
-      voice = ko.find(v => /Yuna|Google|SunHi|Heami/i.test(v.name)) || ko[0] || null;
+      // いちばん 自然な 声を えらぶ。点が 高い ほど 自然(Siri・プレミアム・拡張・Natural は 人に 近い 声)
+      const score = v => { const n = (v.name + " " + (v.voiceURI || "")).toLowerCase(); let s = 0;
+        if(/premium|プレミアム|siri/.test(n)) s += 40;
+        if(/enhanced|拡張|natural|neural|online/.test(n)) s += 30;
+        if(/google/.test(n)) s += 20;
+        if(/yuna|sunhi|injoon|hyunsu|seoyeon|jiyoung/.test(n)) s += 10;
+        if(/compact|eloquence|grandma|grandpa|rocko|shelley|flo|reed|sandy|eddy/.test(n)) s -= 50;  // 機械っぽい 声・おもしろ声は さける
+        if(/^ko-kr/i.test(v.lang)) s += 5;
+        return s; };
+      voice = ko.slice().sort((a, b) => score(b) - score(a))[0] || null;
       hasKo = ko.length > 0 || !vs.length;  // 声の 一覧が まだ 空の ときは「ある」と みなす(iPhone は あとから 届く)
     }catch(e){ voice = null; }
   }
@@ -105,7 +114,7 @@ const KANKOKU = (() => {
     try{
       speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(text);
-      u.lang = "ko-KR"; if(voice) u.voice = voice; u.rate = slow ? .6 : .85;
+      u.lang = "ko-KR"; if(voice) u.voice = voice; u.rate = slow ? .7 : 1;  // ふつうは ネイティブと 同じ 速さ。🐢 は ゆっくり
       speechSynthesis.speak(u);
     }catch(e){}
   }

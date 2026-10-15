@@ -3006,6 +3006,7 @@ function openLevels(m){
 /* ⚠️ 株式・AI・英会話・整備も どの レベルも いつも 同じ 10問(けいくん 2026-09-27「スピード記録勝負に揃えて」)。
    「もう一度だけ挑戦(まちがえた 問題だけ)」・ふくしゅう・苦手克服は やめた */
 function start(m, lv){
+  jaUnlock();  // 🔊 iPhone は さわった ときに 1回 ならさないと あとで 読めない
   if(!canPlay()){  // 登録なしの 体験が おわった(記録・ランキングは 見られる)
     // ⚠️ 止める 前に もう一度 聞く(おうちの方が べつの スマホで 払った・ネットに つながった、を ひらきなおさずに 拾う。2026-09-30)
     if(!start._asked || Date.now() - start._asked > 15000){ start._asked = Date.now(); fetchTrial().then(() => { if(canPlay()) start(m, lv); else showTrialEnd(); }); return; }
@@ -3048,11 +3049,46 @@ ans.addEventListener("compositionend", () => {
   setTimeout(() => { if(!composing && baseRaw > 0 && baseRaw <= ans.value.length){ ans.value = ans.value.slice(baseRaw); baseRaw = 0; } }, 0);
 });
 
+/* 🔊 よみあげ(けいくん 2026-10-15「すべてのフリックゲームに読み上げを追加してください / かっこいい男性の声と可愛い女性の声が選べるといいな！」)。
+   ⚠️ **答えた あとに 正しい 答えを 読む**(問題は 読まない。先に 言うと「思い出す 練習」が へる)。
+   ⚠️ 読むのは **ふりがな(q.r)**。漢字を 読ませると 機械が 読みまちがえる(合谷・湧泉 など)。
+   ⚠️ 英会話・韓国語は じぶんの よみあげが あるので さわらない。
+   声は 端末に ある 日本語の 声から えらぶ(iPhone: Otoya/Hattori=男性・Kyoko/O-ren=女性)。男性の 声が 無い 端末(Android の Google 日本語 など)は 同じ 声の 高さを 下げて「かっこいい」に 近づける。
+   えらんだ ものは 端末ごと(flick-voice: off / m / f)。はじめは「かわいい」 */
+const JA_TTS = typeof window !== "undefined" && "speechSynthesis" in window && typeof SpeechSynthesisUtterance === "function";
+const VOICE_M = /otoya|hattori|ichiro|keita|daichi|naoki|takumi|male|男性/i, VOICE_F = /kyoko|o-ren|haruka|nanami|ayumi|sayaka|mizuki|female|女性/i;
+function voiceMode(){ const v = store("flick-voice"); return v === "off" || v === "m" || v === "f" ? v : "f"; }
+function jaVoice(want){
+  if(!JA_TTS) return null;
+  const ja = speechSynthesis.getVoices().filter(v => /^ja/i.test(v.lang));
+  const re = want === "m" ? VOICE_M : VOICE_F;
+  return ja.find(v => re.test(v.name)) || null;
+}
+let jaUnlocked = false;
+function jaUnlock(){ if(!JA_TTS || jaUnlocked) return; try{ const u = new SpeechSynthesisUtterance(" "); u.volume = 0; speechSynthesis.speak(u); jaUnlocked = true; }catch(e){} }
+function jaSay(text, force){
+  const m = force || voiceMode();
+  if(!JA_TTS || m === "off" || !text) return;
+  try{
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text), v = jaVoice(m);
+    u.lang = "ja-JP"; if(v) u.voice = v;
+    u.rate = 1.0;
+    // 声が 見つからない ときは 高さで 分ける(男性 = ひくめ / 女性 = たかめ)
+    u.pitch = m === "m" ? (v ? 0.95 : 0.7) : (v ? 1.15 : 1.35);
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+if(JA_TTS){ try{ speechSynthesis.getVoices(); speechSynthesis.addEventListener("voiceschanged", () => {}); }catch(e){} }
+/* 英会話・韓国語(じぶんで 読む ゲーム)か */
+function ownTts(){ return !!(PLUG && PLUG.owns(mode) && (PLUG.kind === "english" || PLUG.kind === "korean")); }
+
 /* 1問ごとの まちがい(赤くなった回数)。プラグインの 図鑑の「まちがい」の 回数に 使う */
 let qMiss = 0, lastErr = false;
 function next(){
   times.push((performance.now()-qStart)/1000);
   if(PLUG && PLUG.owns(mode)) PLUG.answered(qs[idx], times[times.length-1], qMiss);
+  if(!ownTts()){ const q = qs[idx]; jaSay(q && (typeof q.r === "string" && q.r ? q.r : q.n)); }  // 🔊 答えた あとに ふりがなで 読む
   qMiss = 0; lastErr = false;
   idx++;
   resetBase();
@@ -3421,8 +3457,18 @@ function drawProf(){
     '<div class="prof-set"><p class="ttl">せってい</p><p class="lb">だれと くらべる？</p>'+
       '<div class="two"><button type="button" id="prof-all" class="'+(bg ? 'sk-key off' : 'on')+'">ぜんいん</button>'+
       '<div class="sel '+(bg ? 'on' : 'sk-key off')+'" id="prof-selbox"><select id="prof-grade">'+gradeOptions(p.grade)+'</select><span class="arw" aria-hidden="true">▼</span></div></div>'+
-      '<p class="hint">学年は 右を さわると かえられます</p></div>';
+      '<p class="hint">学年は 右を さわると かえられます</p>'+
+      (JA_TTS ? '<p class="lb">🔊 よみあげ(こたえた あとに 答えを 読むよ)</p>'+
+        '<div class="two" style="grid-template-columns:1fr 1fr 1fr">'+
+        [["f","👧 かわいい"],["m","👦 かっこいい"],["off","🔇 オフ"]].map(([k,n]) => '<button type="button" data-voice="'+k+'" class="'+(voiceMode() === k ? 'on' : 'sk-key off')+'">'+n+'</button>').join("")+
+        '</div>' : '')+
+      '</div>';
   bindUnlink();
+  document.querySelectorAll("[data-voice]").forEach(b => b.addEventListener("click", () => {
+    const k = b.dataset.voice; store("flick-voice", k); jaUnlocked = false; jaUnlock();
+    if(k !== "off") jaSay(k === "m" ? "よろしくな!" : "よろしくね!", k);  // ためしに ひとこと
+    drawProf();
+  }));
   $("#prof-pic").addEventListener("click", () => $("#prof-file").click());
   const un = $("#prof-unphoto"); if(un) un.addEventListener("click", () => { try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){} drawProf(); drawProfBtn(); famSyncSoon(); });
   $("#prof-rename").addEventListener("click", () => openProfForm(p.id));

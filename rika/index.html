@@ -3192,12 +3192,15 @@ async function submitScore(r){
   const ms = Math.round(r.times.reduce((a,b)=>a+b,0) * 1000);
   try{
     const res = await fetch(RANK_API + "/score" + (trialToken() ? "?t=" + encodeURIComponent(trialToken()) : ""), { method:"POST", headers:Object.assign({"content-type":"application/json"}, authHeaders()),
-      body: JSON.stringify({ name:p.name, grade:gradeKey(p.grade), mode:r.mode, level:r.level+1, ms, times:r.times.map(t => Math.round(t*1000)) }) });
+      body: JSON.stringify({ name:p.name, grade:gradeKey(p.grade), mode:r.mode, level:r.level+1, ms, times:r.times.map(t => Math.round(t*1000)), pid:pidOf(p) }) });
     const js = await res.json().catch(() => null);
     if(res.ok && js && js.ok) return js.listed === false ? "unlisted" : "ok";  // unlisted = しまったが 名前は のせない
     return (js && js.reason) ? js.reason : "おくれませんでした(" + res.status + ")";
   }catch(e){ return "つながりませんでした"; }
 }
+/* どの子か の しるし(2026-10-15 けいくん「ニックネームの件 お願いします」)。同じ ニックネームの よその 子と ランキングで まざらない ように。
+   アカウントの 中の uuid(famsync の しるし k)を 知っていれば それ(かずとも・ほかの ゲームと 同じ 子に なる)、無ければ この 端末の 子の id */
+function pidOf(p){ if(!p) return undefined; try{ const k = (famMarks()[p.id] || {}).k; if(typeof k === "string" && k) return k; }catch(e){} return p.id ? String(p.id) : undefined; }
 const MEDALS = ["🥇","🥈","🥉"];  // 1〜3位(かずともと同じ。けいくん 2026-09-26)
 async function drawBoard(m, lv, id){
   id = id || "board";  // "board"=結果画面 / "board2"=トップの きろく
@@ -3228,7 +3231,8 @@ async function drawBoard(m, lv, id){
     // 👑 1位(けいくん 2026-10-10「すべて出して」= 4つの 区切り ぜんぶ。かずともの period.ts の champ と 同じ字。ニックネームだけ)
     const CHAMP = {today:"きょうの チャンピオン", week:"今週の チャンピオン", month:"今月の チャンピオン", all:"歴代 チャンピオン"};
     const champ = '<p class="board-champ">👑 ' + (CHAMP[boardPeriod] || CHAMP.all) + ': ' + esc(rows[0].name) + '</p>';
-    body.innerHTML = champ + rows.map((r, i) => '<div class="board-row' + (r.name === p.name ? ' me' : '') + '">' +
+    const myPid = pidOf(p);
+    body.innerHTML = champ + rows.map((r, i) => '<div class="board-row' + ((r.pid ? r.pid === myPid : r.name === p.name) ? ' me' : '') + '">' +
       (i < 3 ? '<span class="rk md">' + MEDALS[i] + '</span>' : '<span class="rk">' + (i+1) + '位</span>') +
       '<span class="nm">' + esc(r.name) + '</span><span class="tm">' + (r.ms/1000).toFixed(2) + '秒</span></div>').join("") + note;
   }catch(e){ body.innerHTML = '<p class="board-note">いまは ランキングを 読めません(つながりませんでした)</p>'; }

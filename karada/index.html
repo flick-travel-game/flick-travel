@@ -3542,7 +3542,7 @@ function drawProf(){
       '<p class="hint">学年は 右を さわると かえられます</p>'+
       (JA_TTS ? '<p class="lb">🔊 よみあげ(こたえた あとに 答えを 読むよ)</p>'+
         '<div class="two" style="grid-template-columns:1fr 1fr 1fr">'+
-        [["f","👧 かわいい"],["m","👦 かっこいい"],["off","🔇 オフ"]].map(([k,n]) => '<button type="button" data-voice="'+k+'" class="'+(voiceMode() === k ? 'on' : 'sk-key off')+'">'+n+'</button>').join("")+
+        [["f","女性"],["m","男性"],["off","🔊オフ"]].map(([k,n]) => '<button type="button" data-voice="'+k+'" class="'+(voiceMode() === k ? 'on' : 'sk-key off')+'">'+n+'</button>').join("")+
         '</div>' : '')+
       '</div>';
   bindUnlink();

@@ -9327,6 +9327,9 @@ $("#prof-form").addEventListener("submit", e => {
   if(r){ $("#prof-name-err").textContent = r; $("#prof-name").classList.add("bad"); return; }
   const name = raw.trim().slice(0, 8);
   let list = profiles();
+  // ⚠️ 同じ おうちに 同じ なまえは 2人 作らない(けいくん 2026-10-15「ニックネーム変更したのにゲームには反映されない」= 「けい」が 2人 いた)。
+  //   アカウントの 表は 同じ なまえを 受けつけないので、かずとも・ほかの スマホに 名前が 届かなくなる。ことばは かずともの DUP_NAME と 同じ
+  if(list.some(p => p.id !== profEditing && p.name === name)){ $("#prof-name-err").textContent = "その なまえの 人は もう いるよ。ほかの なまえに してね"; $("#prof-name").classList.add("bad"); return; }
   if(profEditing){
     list = list.map(p => p.id === profEditing ? Object.assign({}, p, {name}) : p);
   }else{

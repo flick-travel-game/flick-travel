@@ -1314,7 +1314,7 @@
   2回目は 札 37こ ぜんぶ ゲームに ある 読み・顔は 本と アイコンだけ。のこった 2か所は **絵の 中で 直した**(`tools/shinri/fix_text.py`。Noto Sans CJK JP Bold):
   ユングの 年表の 札「(せいか と こころ)」→「(せいかく と こころ)」/ レベル3の 説明「ことばを みやすう!」→「ことばを めざそう!」。もとの 絵は 入れものに 入れていない。
   「ことばの 意味が わかる!」の 小さい 札(にた ことば・きもち・りかい・やさしさ)は ゲームに 無いが 見本の 飾りなので そのまま
-- アイコンは まだ 仮(`tools/shinri/placeholder_icon.py`。空色の 地に 白い 雲の 頭と ピンクの ハート)。題名の 絵も まだ(`logo=False` = 題名は 文字)。
+- **アイコンも 入れた**(2026-10-15。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py shinri`。`iconv` = 2)。4択の 問い(記憶を よくする 方法)は 答えが 1つに しぼれないが、アイコンの 大きさでは 読めないので そのまま。題名の 絵は まだ(`logo=False` = 題名は 文字)。
   届いたら 四角い 絵 `tools/shinri/art/square-src.png` → `python3 tools/icon_from_square.py shinri`(`iconv` を +1)/ 題名 `tools/shinri/art/title-src.png` → `python3 tools/title_from_art.py shinri`(`logo=True`・`art.word` を 実寸)/ `shinri/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは 実在の 心理学者の 顔・泣いている 子・こわい 顔を 描かせない。人物は 画面の 下 3分の1に 小さく。届いたら まず 字を 切り出して 読む(「心里学」「心理学旅行」に なりやすい)
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS` に 足した(speed-king)。販売ページ `HOME_GAMES`(章「くらしと心」の アドラー心理学の 前)と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから(題名の 字に そろえる)

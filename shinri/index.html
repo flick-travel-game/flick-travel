@@ -437,11 +437,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリック心理学</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="188" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック心理学</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリック心理学。本の ならぶ 明るい 階段の 前で 男の子と 女の子と 白い 犬が 手を のばして 笑っている 絵。まわりに 9つの 旅の ことばの 札と 4択クイズの 見本と 心理学の 年表が ならんでいる" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリック心理学。本の ならぶ 明るい 階段の 前で 男の子と 女の子と 白い 犬が 手を のばして 笑っている 絵。まわりに 9つの 旅の ことばの 札と 4択クイズの 見本と 心理学の 年表が ならんでいる" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -573,7 +573,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"shinri", name:"フリック心理学", modes:(typeof SHINRI === "object" ? SHINRI.modes : []), assets:"../", logo:false, hero:true, dir:"shinri/", lead:"心理学の きほん・脳と こころ・記憶と 考える・学習と やる気・こどもの 育ち・人と 人・性格と 知能・こころの 健康と 支える しごと・心理学の 歴史と 人の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、分野・しくみ図の どこに あるのかが 出るよ。有名な 実験は 🧪 じっけん、くらしの 中の 心理学は 💡 くらしで で わかるよ。こころに 興味の ある 子の ことばから はじめて、大学の 心理学の 教科書、公認心理師 試験の 出題基準の めやすまで。心理学の 年表や 4択クイズも あるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。自分や 友だちを 診断する ものでは ありません。こころが つらい ときは、おうちの人・先生・スクールカウンセラーに 話そう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。思い出して 打つ ことは、記憶の 研究で わかった「想起練習」そのものだよ。公認心理師試験研修センター・日本心理学会・日本臨床心理士資格認定協会とは 関係ありません。" };
+const GAME = { id:"shinri", name:"フリック心理学", modes:(typeof SHINRI === "object" ? SHINRI.modes : []), assets:"../", logo:true, hero:true, dir:"shinri/", lead:"心理学の きほん・脳と こころ・記憶と 考える・学習と やる気・こどもの 育ち・人と 人・性格と 知能・こころの 健康と 支える しごと・心理学の 歴史と 人の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、分野・しくみ図の どこに あるのかが 出るよ。有名な 実験は 🧪 じっけん、くらしの 中の 心理学は 💡 くらしで で わかるよ。こころに 興味の ある 子の ことばから はじめて、大学の 心理学の 教科書、公認心理師 試験の 出題基準の めやすまで。心理学の 年表や 4択クイズも あるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。自分や 友だちを 診断する ものでは ありません。こころが つらい ときは、おうちの人・先生・スクールカウンセラーに 話そう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。思い出して 打つ ことは、記憶の 研究で わかった「想起練習」そのものだよ。公認心理師試験研修センター・日本心理学会・日本臨床心理士資格認定協会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

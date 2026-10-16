@@ -121,8 +121,8 @@
 - 作った 助手とは 別の 助手が 1語ずつ 確かめた(読み・部首・送りがな・型・使いわけ・むずかしさ)
 - **トップの 絵は 入れた**(2026-10-16。`kanken/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。1回目は 一期一会の ふりがなが「いっせきにちょう」・はしの 行に 走る(はしる)・類義語に 読みが 混ざる・レベルが 小学校/中学校/高校 で 入れなかった。2回目の のこり 2か所は **絵の 中で 直した**(`tools/kanken/fix_text.py`): 雨の 読みの くずれ →「(あめ・あま)」/ かきとりの 書き順の 数字(1,3,3,6,3,5,6 と まちがい)を 消した。もとの 絵は 入れものに 入れていない
 - **アイコンも 入れた**(2026-10-16。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py kanken`。`iconv` = 2)。4択の「秋の反対」に 季節が まざるなど 小さい 字の 気になる ところは アイコンの 大きさでは 読めないので そのまま。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
-- 題名は まだ 文字。届いたら `title-src.png` → `python3 tools/title_from_art.py kanken`、`logo` を True・`art.word` を 実寸に・`wordv` を +1
-- かずとも(speed-king): `FLICK_MODES` に kn… の 9つ、`FLICK_LINK_TARGETS` に `kanken`。`HOME_GAMES` は 絵が 届いてから(国語の すぐ あと)
+- **題名も 入れた**(2026-10-16。けいくんの ChatGPT の 切りぬき `tools/kanken/art/title-src.png` 2000×667 → `python3 tools/title_from_art.py kanken` → `kanken/logo-word.webp` 900×287。`logo=True`・`wordv` = 3)。「フリック漢字」6字を 読んで 確かめた
+- かずとも(speed-king): `FLICK_MODES` に kn… の 9つ、`FLICK_LINK_TARGETS` に `kanken`。`HOME_GAMES`(国語の すぐ あと)・規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-10-16 に 足した
 
 ## フリック数学旅行(`sugaku/`。けいくん 2026-09-27「おすすめでよろしく」+「受験に必要な計算は入れた方がいい」)
 

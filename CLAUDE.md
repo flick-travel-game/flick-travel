@@ -1588,6 +1588,40 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - かずとも: `FLICK_MODES` に krhan / krw1〜krw4 / krgram / krtalk / krnative / krmas、`FLICK_LINK_TARGETS` に kankoku、`HOME_GAMES`(英会話の となり。絵なし)・`FLICK_SERIES_GAMES` に フリック韓国語
 - 確かめかた: `node tools/play-all.mjs kankoku/`(全 ステージ)。**画面に 出る ひらがなを フリックの とちゅうの 字(し→じ・つ→っ)ごと 打っても 赤く ならない**ことも 確かめた(810問。1560問に した ときも 同じ 表なので 新しい 字の 形は 出ない)
 
+## フリックスペイン語(`supein/`。けいくん 2026-10-16「スペイン語のネイティブになれるレベル / フリック英会話を参考に」→ 打つ字「ひらがなで問題を出してひらがなで打つ」+「ABC に 切りかえ も 付ける」・名前と 地域「おすすめ」・旅「韓国語と同じ 9つ」・語数「はじめから英会話と同じ量」。まとめは `docs/フリックスペイン語-はじめかた.md`)
+
+- 決めたこと: 名前「**フリックスペイン語**」(フォルダ `supein`・modes `SUPEIN`・旅の id は `es…`。⚠️ `sp…` は フリックスマホ)/ **韓国語と 同じ 型**(スピード記録勝負・1回 10問・苦手克服と ふくしゅうは 作らない)
+- ⭐ **打つのは 読みの ひらがな**(はじめ)。スペイン語を 大きく(記号つき。á ñ ¿ ¡ は 色を かえて)見せて 🔊(es-ES)で 聞きながら 打つ。
+  **「⌨️ 打ちかた」で ABC**(英会話と 同じ。端末に おぼえる `flick-es-input`・自己ベストは 打ちかたごと `-abc`)に すると つづりを 打つ。
+  **アクセント記号と ¿ ¡ は 打たなくても 正解**(á→a・ñ→n で くらべる)。長おしで 記号まで 打てたら「✨ アクセントも ばっちり」+ 結果に「✨ アクセント記号まで 打てた ことば n」
+  - ⚠️ はじめかたの まとめ(2-1)は「ABC で 打つ・A/B/C の 案」だったが、けいくんは **ひらがな**を えらんだ(英会話も はじめは ひらがな)
+- **どこでも 通じる 形 + 国の 札**。ふだんの 例文は ustedes。スペインだけ / 中南米だけの 言いかたは `region`(ES / LA)で「🇪🇸 スペインで よく 使う」「🌎 中南米で よく 使う」の ふだ。どちらが 正しい とは 書かない。vosotros は 文法の 旅の 項目(region ES)
+- 文の 旅は **`style`(tú / usted / ustedes / vosotros / -)と `who`(だれが だれに)を かならず 書く**。「ため口(tú)」「ていねい(usted)」「👤 店員さんに」の ふだ。⚠️ お店の人・年上・先生・知らない人には usted
+- 旅(9): 🔤 発音とつづりのきほん `eskihon` 60 / 🌱 入門の単語 `esw1` 200 / 📘 初級 `esw2` 200 / 🧭 中級 `esw3` 200(英語と にている 語・にているのに 意味が ちがう 語を note に)/ 🏙 上級 `esw4` 200(ことわざ・慣用句)/
+  📐 文法と活用 `esgram` 200 / 💬 日常会話 `estalk` 300(15場面 × 20)/ 🌟 ネイティブの表現 `esnative` 200 / 🏆 マスター `esmas` = **1560問**
+- 4段: 1 入門 = 発音が 読めて あいさつ / 2 初級 = 旅行で 困らない / 3 中級 = 友だちと ふつうに 話せる / 4 上級 = ネイティブ。画面に DELE・検定の ことばは 出さない
+- ことばは `tools/supein/src/<旅>.json`(決まりは `tools/supein/PROMPT.md`)+ `tools/supein/meta.json` → `tools/supein/spanish_js.py` が `data/spanish.json` と `supein/spanish.js`。
+  ⚠️ **id は spanish_js.py が はじめて 通したときに src に 書きこむ**(`esw1-12` の 形)。きろくが id で おぼえているので **変えない・並べかえても id は そのまま**
+- ⭐⭐ **読みの ひらがなは 手で 書かない**。text から `tools/supein/kana_es.py` の **1つの 表**で 作る(スペイン語は つづりどおりに 読むので 表で 決まる):
+  母音 あいうえお / h は 読まない / j・ge・gi は は行 / ce・ci・z は さ行(中南米の 読み)/ que qui gue gui / ll・y は や行(ye = いぇ)/ ñ = にゃ行 / ch = ちゃ行 / rr = ら行 / f = ふぁ行 / v = ば行 /
+  ti = てぃ・di = でぃ / 母音の つかない 子音 b ぶ・c く・d ど・l る・m n ん・r る・s す・x くす・z す / México・mexicano・Oaxaca の x は は行。
+  つづりと 読みが ちがう 語だけ src の `pron` に 読みどおりの つづり(いまは el reloj → "el relo" の 1つだけ)
+- ⚠️⚠️ **入れない 語**(`spanish_js.py` の `BAN` が text・例文・返事を 止める。次の 人が 足しもどさない ように):
+  ・**記号を はずすと 別の 語**: año / años(ABC で ano と 打っても 正解に なる)。cumpleaños・el baño・daño も 使わない(トイレは el servicio)
+  ・**国に よって 下品に なる 語**: coger・concha・pinche・bicho・pisar・cachar ほか。chaqueta・goma・tirar・polvo・papaya・la plata も 一覧から 外した(迷ったら 入れない)
+  ・悪口: tonto・feo・gordo・idiota など。お酒・闘牛・恋愛・政治・実在の 人と クラブの 名前も なし。toro も 闘牛を 思わせるので 例に 使わない
+  ・「ojalá que llueva」(有名な 歌の 題に 近い)→「ojalá que haga sol」
+  ・アクセントだけで ちがう 組(si/sí・el/él・tu/tú・te/té・se/sé・mi/mí・mas/más)は 記号を はずすと かぶるので 1つの 短い 文で 両方 見せる(tú y tu gato など)
+- しくみは `supein/supein.js`(SUPEIN。`kankoku/kankoku.js` を 写して 英会話の 打ちかたを 足した)。🔊 は es-ES の 声(iPhone は Mónica / Jorge など)。**スペイン語の 声が 無い 端末では 🔊 を 出さない**。
+  ⚠️ **Playwright では 声が 鳴らないので けいくんの iPhone で 1回 聞いてもらう**。土台の `ownTts()` に `spanish` を 足した(足さないと 答えの あとに 日本語の 声が 鳴る)
+- 作りかた: 1人の 助手が 8つの 旅の 一覧(`tools/supein/plan.json`。かぶり なし)→ 旅ごとに 助手 8人で 中身 → **書いた 助手とは 別の 助手 4人が 1問ずつ 確かめた**
+  (意味・性と 数・活用・tú / usted・アクセント・自然さ・子ども向け・国に よって 下品に ならないか。約100か所 直した: 英語の なかま違いの note、usted への そろえ、乾杯の ¡Salud! → くしゃみの ¡Salud! など)。
+  ⚠️ **ネイティブの 人の 目では まだ 見ていない**(見てくれる 人が いれば いちばん よい)
+- 確かめかた: `node tools/play-all.mjs supein/`(全 ステージ・ひらがな)/ `node tools/supein/play-abc.mjs`(ABC で 記号つき・記号なしの 両方を 打って 全 ステージ)/ `node tools/click-all.mjs supein/`(W=320 も)。2026-10-16 に ぜんぶ 通った
+- 絵: **まだ 無い**。仮の アイコン(`tools/supein/placeholder_icon.py`。赤と 黄色の 地に 白い ふきだし)。トップの 絵・題名は hero=False・logo=False。
+  届いたら tools/supein/art/square-src.png → `python3 tools/icon_from_square.py supein`(iconv を +1)/ title-src.png → `python3 tools/title_from_art.py supein`(logo を True・art.word を 実寸に)/ supein/hero.webp(hero を True)
+- かずとも: `FLICK_MODES` に eskihon / esw1〜esw4 / esgram / estalk / esnative / esmas、`FLICK_LINK_TARGETS` に supein、`HOME_GAMES`(韓国語の となり。絵なし)・`FLICK_SERIES_GAMES` に フリックスペイン語
+
 ## 題名の 絵(logo-word)の 切れ・欠けを 直した(けいくん 2026-10-02「タイトルが切れている、文字がかけているのが たくさんあるので すべて修復してください」)
 
 - 27枚を ならべて 見たら 11枚が 切れていた: 弁護士・料理人・保育士・医師・教師・消防士・整備士(士/人/師 の 右が 切れる)/ 警察官(察・官に 穴)/ 税理士(税に 穴・士が 切れる)/
@@ -1788,4 +1822,4 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - マイページの「せってい」に **女性 / 男性 / 🔊オフ**(けいくん 2026-10-15 に 表記を 変えた)(`flick-voice`。端末ごと。はじめは かわいい)
 - 声は 端末の 日本語の 声から 名前で えらぶ(`VOICE_M` / `VOICE_F`)。見つからない ときは 高さ(pitch)で 分ける(男性 0.7 / 女性 1.35)。⚠️ 端末で 声が ちがう
 - iPhone は さわった ときに 1回 ならさないと 読めないので、`start()` と 声を えらんだ ときに `jaUnlock()`
-- ⚠️ 英会話・韓国語は じぶんの よみあげが あるので 読まない(`ownTts()`)
+- ⚠️ 英会話・韓国語・スペイン語は じぶんの よみあげが あるので 読まない(`ownTts()`)

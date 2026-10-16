@@ -1,9 +1,9 @@
-/* フリック漢字: 常用漢字(高校卒業 程度)から 約6000字の いちばん むずかしい 漢字まで(読み・書き取り・部首・送りがな・熟語の 組み立て・四字熟語・対義語 類義語・同音 同訓 誤字)を、フリックと 指の 書き取りで おぼえる。(けいくん 2026-10-16)
+/* フリック漢字: 小学1年生の 漢字(けいくん 2026-10-16「小学1年生の漢字から対応してほしい」)から 中学・常用漢字(高校卒業 程度)・ 約6000字の いちばん むずかしい 漢字まで(読み・書き取り・部首・送りがな・熟語の 組み立て・四字熟語・対義語 類義語・同音 同訓 誤字)を、フリックと 指の 書き取りで おぼえる。(けいくん 2026-10-16)
    ─ 土台の index.html の 差しこみ口(PLUG)に「漢字の 旅」を 足す ファイル。kanken/ の ページだけが 読む ─
    ことばは tools/kanken/meta.json + tools/kanken/terms-*.json → tools/kanken/terms_js.py が data/kanken.json と kanken/terms.js(KANKEN_TERMS)に する。
    **ことばを 足す・直すのは tools/kanken/terms-<旅>.json だけ**
    ・もとは フリック国語(kokugo/kokugo.js)を 写して 作った。見た目の class 名(ai-…)は そのまま(この ページだけの CSS)
-   ・旅は 8つ + 🏆 マスター。むずかしさは 常用 → 表外(約3000字)→ 最難関(約6000字)。1回は かならず 10問。どの ステージも いつも 同じ 10語 = スピード記録勝負
+   ・旅は 8つ + 🏆 マスター。むずかしさは 小1〜小6(学年別漢字配当表)→ 中学 → 常用 → 表外(約3000字)→ 最難関(約6000字)。1回は かならず 10問。どの ステージも いつも 同じ 10語 = スピード記録勝負
    ・⭐ 書き取り(kaki)と 同音・同訓・誤字(doon)は **指で 書く**(けいくん 2026-10-16「はじめから C」= 機械が 自動で ◯×)。
      字の 形は kanken/strokes.js(KanjiVG・CC BY-SA 3.0)。**1画 書くたびに 書き順どおりの その 1画と くらべる**(タイピングの 1字ずつの 判定と 同じ)。
      合えば お手本の 線に きれいに なる。ちがえば 赤く 消えて まちがい 1回。2回 つづけて まちがえると つぎの 1画が うすく 見える(ヒント)
@@ -26,7 +26,7 @@ const KANKEN = (() => {
   const ALL = D.list.map((o, i) => {
     const j = JBY[o.j];
     const w = WRITE.has(o.j);
-    return Object.assign({}, o, { art:o.id, k:"kanjiterm", w, hide:!w && o.dv === 3 && o.j !== "bushu", n:o.n, r:o.r, e:o.e, d:o.rb, ord:i, jr:j,
+    return Object.assign({}, o, { art:o.id, k:"kanjiterm", w, hide:!w && o.dv === 10 && o.j !== "bushu", n:o.n, r:o.r, e:o.e, d:o.rb, ord:i, jr:j,
       c:j.icon + " " + j.name + " ・ " + o.c + " ・ " + LVN[o.dv].icon + " " + LVN[o.dv].name });
   });
   const BY = new Map(ALL.map(q => [q.art, q]));
@@ -51,7 +51,7 @@ const KANKEN = (() => {
   for(const J of JR){
     const m = MODE_OF[J.id], terms = ALL.filter(q => q.j === J.id);
     const info = tens(terms.slice().sort((a, b) => a.dv - b.dv || a.ord - b.ord)), lv = info.map(s => s.set);
-    info.forEach((s, k) => { s.stop = Math.min(J.stops.length - 1, Math.floor(k * J.stops.length / info.length)); });
+    info.forEach(s => { s.stop = Math.min(J.stops.length - 1, s.dv <= 6 ? 0 : s.dv - 6); });  // 小学校(dv1〜6)→ 中学(7)→ 常用(8)→ 表外(9)→ 最難関(10)
     levels[m] = lv; stageInfo[m] = info; pools[m] = terms; colors[m] = J.color;
     maps[m] = { icon:J.icon, name:J.name, cardName:J.name, title:"", word:"漢字図鑑", thing:"ことば", unit:"語", doneWord:"出会った ことば", miss:"まだ 出会っていない ことば",
                 lvTitle:J.icon + " " + J.name + "　旅を すすめる",
@@ -68,7 +68,7 @@ const KANKEN = (() => {
     levels.knmas = lv; pools.knmas = ALL.filter(q => !q.w); colors.knmas = "#c92a2a";
     maps.knmas = { icon:"🏆", name:"マスター", cardName:"マスター", word:"漢字図鑑", thing:"ことば", unit:"語", doneWord:"出会った ことば",
                   lvTitle:"🏆 マスター　打つ 6つの 旅を まぜて ぜんぶ",
-                  card:() => '<small>' + mix.length + '語・' + lv.length + 'ステージ</small><small>常用漢字から 最難関まで</small>' };
+                  card:() => '<small>' + mix.length + '語・' + lv.length + 'ステージ</small><small>小学1年生の 漢字から 最難関まで</small>' };
   }
   const MODES_ALL = ["knyomi", "knkaki", "knbushu", "knokuri", "knjukugo", "knyoji", "kntaigi", "kndoon", "knmas"];
 

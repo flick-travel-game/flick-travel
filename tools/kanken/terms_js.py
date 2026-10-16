@@ -25,7 +25,37 @@ def load():
     for J in d["meta"]["journeys"]:
         f = HERE / f"terms-{J['id']}.json"
         if f.exists(): d["terms"] += json.loads(f.read_text(encoding="utf-8"))
+        for g in sorted(HERE.glob(f"terms-{J['id']}-*.json")):  # 足しかけの ことば(でき上がったら 1つに まとめる)
+            d["terms"] += json.loads(g.read_text(encoding="utf-8"))
     return d
+
+# 学年別漢字配当表(2020〜)と 常用漢字。dv1〜6 = 小学1〜6年 / dv7 = 中学(常用の のこり)/ dv8〜10 = 常用・表外・最難関
+KL = json.loads((HERE / "kanji-lists.json").read_text(encoding="utf-8"))
+UPTO = {}; BAND = {}
+_acc = ""
+for g in "123456":
+    _acc += KL["grades"][g]; UPTO[int(g)] = set(_acc) | {"々"}; BAND[int(g)] = set(KL["grades"][g])
+UPTO[7] = set(KL["jouyou"]) | {"々"}; BAND[7] = set(KL["middle"])
+# 読み・書き取り 以外の 旅は 3つの 段だけ: dv3 = 小1〜3 / dv6 = 小4〜6 / dv7 = 中学
+SPAN = {3: set(KL["grades"]["1"] + KL["grades"]["2"] + KL["grades"]["3"]), 6: set(KL["grades"]["4"] + KL["grades"]["5"] + KL["grades"]["6"]), 7: BAND[7]}
+CJK = re.compile(r"[一-鿿々]")
+
+def tier_errs(t):
+    """小学校・中学の 段: 出す 字は その 学年までに 習う 字だけ / その 段で 新しく 習う 字を 1つは 入れる"""
+    dv = t.get("difficulty"); j = t.get("journey"); tid = t.get("id"); e = []
+    if not isinstance(dv, int) or dv > 7: return e
+    if j not in ("yomi", "kaki") and dv not in SPAN: return [f"{tid}: この 旅の 小中の 段は 3・6・7 だけ(いま {dv})"]
+    ok = UPTO[dv]
+    fields = ("name", "pair", "sentence", "wrong", "kanji", "bushu", "description", "example")
+    for f in fields:
+        for ch in CJK.findall(str(t.get(f) or "")):
+            if ch not in ok and not (f in ("description", "example") and ch in UPTO[7]):
+                e.append(f"{tid}: {f} の「{ch}」は 段 {dv} では まだ 習わない字"); break
+    band = BAND[dv] if j in ("yomi", "kaki") else SPAN[dv]
+    key = (t.get("kanji") or "") if j in ("kaki", "okuri", "bushu") else (t.get("name") or "") + (t.get("kanji") or "")
+    if j == "doon" and t.get("kind") == "goji": key = t.get("kanji") or ""
+    if not any(ch in band for ch in key): e.append(f"{tid}: 段 {dv} で 習う 字が 入っていない(「{key}」)")
+    return e
 
 def strokes_ok():
     """KanjiVG が 手元に あれば、書き取りの 字が あるかを 見る(無ければ 見ない。strokes.py が 止める)"""
@@ -62,6 +92,7 @@ def check(d):
         if len(t.get("description", "")) > 130: warn.append(f"{tid}: 説明が 長い({len(t['description'])}字)")
         for w in BAN:
             if w in text: errs.append(f"{tid}: 「{w}」は 使わない")
+        errs += tier_errs(t)
         k = t.get("kanji")
         if j in WRITE + ("okuri", "bushu") and (not k or len(k) != 1): errs.append(f"{tid}: kanji は 1字(いま「{k}」)")
         # 旅ごとの 形

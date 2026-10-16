@@ -12,7 +12,7 @@
 <meta property="og:title" content="フリックスペイン語｜かずとも">
 <meta property="og:description" content="スペイン語の 発音・単語・文法と 活用・日常会話・ネイティブの 表現を、フリックで 打って 旅しよう。スペイン語を 見て、🔊で 発音を 聞きながら、読みの ひらがなを 打つよ。打つと 意味と 例文が 出るよ。ローマ字読みの きほんから はじめて、ネイティブが ふだん 使う ことばまで。 かずともの フリックゲーム。">
 <meta property="og:url" content="https://kazutomo.app/flick/supein/">
-<meta property="og:image" content="https://kazutomo.app/flick/hero.webp">
+<meta property="og:image" content="https://kazutomo.app/flick/supein/hero.webp">
 <meta property="og:locale" content="ja_JP">
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
@@ -441,6 +441,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックスペイン語</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリックスペイン語:スペインの町なみと男の子・女の子・白い犬。発音・単語・文法・日常会話・ネイティブの表現と、学習のながれ" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -572,7 +573,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"supein", name:"フリックスペイン語", modes:(typeof SUPEIN === "object" ? SUPEIN.modes : []), assets:"../", logo:false, hero:false, dir:"supein/", lead:"スペイン語の 発音・単語・文法と 活用・日常会話・ネイティブの 表現を、フリックで 打って 旅しよう。スペイン語を 見て、🔊で 発音を 聞きながら、読みの ひらがなを 打つよ。打つと 意味と 例文が 出るよ。ローマ字読みの きほんから はじめて、ネイティブが ふだん 使う ことばまで。", how:"表示された 読みの ひらがなを、そのまま打ち写してね(Hola → おら)。上の「⌨️ 打ちかた」で「ABC」に すると スペイン語の つづりで 打てるよ。アクセント記号(á ñ など)と ¿ ¡ は 打たなくても 正解。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。読みの ひらがなは 発音に 近い 字なので、🔊で ほんとうの 音を 聞いてね。🔊 は 端末の 読み上げ機能を 使うので、端末に よって 声が ちがいます。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。ABC で 打つときは、iPhone の 日本語キーボードの「ABC」なら フリックで スペイン語が 打てるよ。" };
+const GAME = { id:"supein", name:"フリックスペイン語", modes:(typeof SUPEIN === "object" ? SUPEIN.modes : []), assets:"../", logo:false, hero:true, dir:"supein/", lead:"スペイン語の 発音・単語・文法と 活用・日常会話・ネイティブの 表現を、フリックで 打って 旅しよう。スペイン語を 見て、🔊で 発音を 聞きながら、読みの ひらがなを 打つよ。打つと 意味と 例文が 出るよ。ローマ字読みの きほんから はじめて、ネイティブが ふだん 使う ことばまで。", how:"表示された 読みの ひらがなを、そのまま打ち写してね(Hola → おら)。上の「⌨️ 打ちかた」で「ABC」に すると スペイン語の つづりで 打てるよ。アクセント記号(á ñ など)と ¿ ¡ は 打たなくても 正解。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。読みの ひらがなは 発音に 近い 字なので、🔊で ほんとうの 音を 聞いてね。🔊 は 端末の 読み上げ機能を 使うので、端末に よって 声が ちがいます。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。ABC で 打つときは、iPhone の 日本語キーボードの「ABC」なら フリックで スペイン語が 打てるよ。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

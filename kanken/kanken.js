@@ -185,7 +185,7 @@ const KANKEN = (() => {
       h += '<div class="kk-wq"><p class="kk-st">' + mark(q.st, q.kd === "goji") + '</p>' + tag +
            '<small class="ai-cat">' + esc(q.c) + '</small><small class="ai-alt">✍️ ' + what + '(書き順どおりに)</small></div>' +
            '<div class="kk-pad" data-kk="' + esc(q.art) + '"><canvas></canvas><div class="kk-side"><b class="kk-cnt"></b>' +
-           '<button type="button" class="kk-hint">💡 ヒント</button></div></div>';
+           '<span class="kk-btns"><button type="button" class="kk-hint">💡 ヒント</button><button type="button" class="kk-ans">👀 答え</button></span></div></div>';
       return h;
     }
     let big = esc(q.n), sub = "";
@@ -451,6 +451,8 @@ const KANKEN = (() => {
   const PAD = (() => {
     const U = 109, N = 16;
     let el = null, cv = null, ctx = null, q = null, S = [], k = 0, miss = 0, hint = false, acc = [], done = false, pts = null, red = null;
+    let show = false, showT = 0, showAt = 0, raf = 0;  // 👀 答え(全画を うすく + 書き順の 番号。1画ずつ のびる)
+    const STEP = 450;  // 1画 ぶんの 時間(図鑑の 書き順アニメと 同じ)
     const P = s => { const a = []; for(let i = 0; i < s.length; i += 2) a.push([s[i], s[i + 1]]); return a; };
     const dist = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1]);
     const lenOf = p => { let L = 0; for(let i = 1; i < p.length; i++) L += dist(p[i - 1], p[i]); return L; };
@@ -502,6 +504,17 @@ const KANKEN = (() => {
       ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, W, W); ctx.setTransform(W / U, 0, 0, W / U, 0, 0);
       ctx.lineCap = "round"; ctx.lineJoin = "round";
       ctx.strokeStyle = "#f3b6b6"; ctx.lineWidth = .7; ctx.setLineDash([2.5, 2.5]); ctx.beginPath(); ctx.moveTo(U / 2, 4); ctx.lineTo(U / 2, U - 4); ctx.moveTo(4, U / 2); ctx.lineTo(U - 4, U / 2); ctx.stroke(); ctx.setLineDash([]);
+      if(show){
+        for(let i = 0; i < S.length; i++){
+          const f = Math.max(0, Math.min(1, showT - i)); if(f <= 0) break;
+          const p = S[i][1], L = lenOf(P(p)) + 2;
+          ctx.strokeStyle = "rgba(201,42,42,.28)"; ctx.lineWidth = 5;
+          if(f < 1){ ctx.setLineDash([L * f, L + 10]); }
+          ctx.stroke(new Path2D(S[i][0])); ctx.setLineDash([]);
+          ctx.fillStyle = "#c92a2a"; ctx.font = "800 7px sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+          ctx.fillText(String(i + 1), p[0] - 4, p[1] - 4);
+        }
+      }
       if(hint && k < S.length){
         ctx.strokeStyle = "rgba(201,42,42,.3)"; ctx.lineWidth = 6; ctx.stroke(new Path2D(S[k][0]));
         const p = S[k][1]; ctx.fillStyle = "rgba(201,42,42,.55)"; ctx.beginPath(); ctx.arc(p[0], p[1], 3.2, 0, Math.PI * 2); ctx.fill();
@@ -513,6 +526,16 @@ const KANKEN = (() => {
         for(const a of line.slice(1)) ctx.lineTo(a[0], a[1]); if(line.length === 1) ctx.lineTo(line[0][0] + .1, line[0][1]); ctx.stroke();
       }
       const c = el && el.querySelector(".kk-cnt"); if(c) c.textContent = k + " / " + S.length + "画";
+    }
+    function play(){
+      cancelAnimationFrame(raf); show = true; showAt = performance.now(); showT = 0;
+      const mine = q;
+      const tick = now => {
+        if(q !== mine) return;
+        showT = (now - showAt) / STEP; draw();
+        if(showT < S.length) raf = requestAnimationFrame(tick);
+      };
+      raf = requestAnimationFrame(tick);
     }
     const live = () => q && !done && typeof running !== "undefined" && running && !locked && typeof qs !== "undefined" && qs[idx] === q;
     function xy(e){ const r = cv.getBoundingClientRect(); return [(e.clientX - r.left) / r.width * U, (e.clientY - r.top) / r.height * U]; }
@@ -540,6 +563,7 @@ const KANKEN = (() => {
       const box = document.querySelector('.kk-pad[data-kk="' + qq.art + '"]');
       if(!box || box.dataset.on) return;
       box.dataset.on = "1"; el = box; q = qq; S = SK[qq.kj] || []; k = 0; miss = 0; hint = false; acc = []; done = false; pts = null; red = null;
+      cancelAnimationFrame(raf); show = false; showT = 0;
       cv = box.querySelector("canvas"); ctx = cv.getContext("2d");
       const card = document.getElementById("card"), w = (card ? card.clientWidth : 300) - 34;
       const vh = (window.visualViewport ? visualViewport.height : innerHeight);
@@ -549,6 +573,8 @@ const KANKEN = (() => {
       cv.addEventListener("pointerdown", down); cv.addEventListener("pointermove", move);
       cv.addEventListener("pointerup", up); cv.addEventListener("pointercancel", up);
       box.querySelector(".kk-hint").addEventListener("pointerdown", e => { e.preventDefault(); if(!live() || hint) return; hint = true; qMiss++; draw(); });
+      // 👀 答え: その 字の 全画を うすく 出して 書き順の 番号を ふる(1画ずつ のびる)。見たら まちがい 1回(1回だけ)。上から なぞって 書けば 進める
+      box.querySelector(".kk-ans").addEventListener("pointerdown", e => { e.preventDefault(); if(!live() || !S.length) return; if(!show) qMiss++; play(); });
       if(!S.length){ el.querySelector(".kk-cnt").textContent = "形の データが ありません"; }
       draw();
       if(card) card.scrollTop = card.scrollHeight;
@@ -646,7 +672,8 @@ body.kk-writing #game .field{display:none}
 .kk-pad.ok canvas{border-color:#2f9e44;box-shadow:0 0 0 4px #d3f9d8}
 .kk-side{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;max-width:340px}
 .kk-cnt{font-size:13px;text-align:center;font-variant-numeric:tabular-nums;color:#1e1b4b}
-.kk-hint{padding:7px 14px;border-radius:12px;border:1.5px solid #fcc2d7;background:#fff;color:#a61e4d;font:inherit;font-size:12.5px;font-weight:800}
+.kk-btns{display:flex;gap:6px}
+.kk-hint,.kk-ans{padding:7px 14px;border-radius:12px;border:1.5px solid #fcc2d7;background:#fff;color:#a61e4d;font:inherit;font-size:12.5px;font-weight:800}
 .kk-tgt{font-size:13px;color:var(--muted);font-weight:700}
 .kk-blank{color:#c92a2a;margin-left:2px}.kk-sub{display:block;font-size:15px;margin-top:4px;font-weight:700;color:var(--ink)}.kk-rel{color:#1098ad}
 .kk-bu{font-size:22px;font-weight:900;color:#2f9e44}.kk-ok{color:#2f9e44;font-size:16px}

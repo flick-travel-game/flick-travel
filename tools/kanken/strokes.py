@@ -92,9 +92,9 @@ def main():
     for ch, dv in first.items():
         key = str(dv)
         groups.setdefault(key, []).append(ch)
-    if len(groups.get("7", [])) > 400:  # 中学は 1000字を こえるので 3つに
-        m = groups.pop("7"); n = len(m)
-        for i in range(3): groups["7" + "abc"[i]] = m[i * n // 3:(i + 1) * n // 3]
+    if len(groups.get("7", [])) > 200:  # 中学は 1000字を こえるので 150字くらいずつに(1こ 約350KB)
+        m = groups.pop("7"); n = len(m); k = -(-n // 150)
+        for i in range(k): groups["7" + "abcdefghij"[i]] = m[i * n // k:(i + 1) * n // k]
     head = ("/* 書き取りの 字の 形(書き順つき)。tools/kanken/strokes.py が KanjiVG から 作る。手で 直さない。\n"
             "   字の 形の データ: KanjiVG © Ulrich Apel(https://kanjivg.tagaini.net)。CC BY-SA 3.0(https://creativecommons.org/licenses/by-sa/3.0/)。\n"
             "   この ファイルも CC BY-SA 3.0 で 出します(線の 上の 点を 足した)。 */\n")

@@ -2417,13 +2417,25 @@ ans.addEventListener("compositionend", () => {
    声は 端末に ある 日本語の 声から えらぶ(iPhone: Otoya/Hattori=男性・Kyoko/O-ren=女性)。男性の 声が 無い 端末(Android の Google 日本語 など)は 同じ 声の 高さを 下げて「かっこいい」に 近づける。
    えらんだ ものは 端末ごと(flick-voice: off / m / f)。はじめは「かわいい」 */
 const JA_TTS = typeof window !== "undefined" && "speechSynthesis" in window && typeof SpeechSynthesisUtterance === "function";
-const VOICE_M = /otoya|hattori|ichiro|keita|daichi|naoki|takumi|male|男性/i, VOICE_F = /kyoko|o-ren|haruka|nanami|ayumi|sayaka|mizuki|female|女性/i;
+const VOICE_M = /otoya|hattori|ichiro|keita|daichi|naoki|takumi|(?<!fe)male|男性/i, VOICE_F = /kyoko|o-ren|haruka|nanami|ayumi|sayaka|mizuki|female|女性/i;
 function voiceMode(){ const v = store("flick-voice"); return v === "off" || v === "m" || v === "f" ? v : "f"; }
 function jaVoice(want){
   if(!JA_TTS) return null;
   const ja = speechSynthesis.getVoices().filter(v => /^ja/i.test(v.lang));
-  const re = want === "m" ? VOICE_M : VOICE_F;
-  return ja.find(v => re.test(v.name)) || null;
+  const re = want === "m" ? VOICE_M : VOICE_F, other = want === "m" ? VOICE_F : VOICE_M;
+  // 自然な 声を 先に(けいくん 2026-10-16「もっと発音を可愛い声で自然に」): プレミアム > 拡張・Natural・Neural > Google > ふつう
+  const score = v => {
+    const n = v.name || "";
+    let s = re.test(n) ? 100 : other.test(n) ? -100 : 0;
+    if(/premium|プレミアム/i.test(n)) s += 40;
+    else if(/enhanced|拡張|natural|neural|online/i.test(n)) s += 30;
+    else if(/google/i.test(n)) s += 10;
+    if(/compact|eloquence|bad news|bells|whisper|zarvox|jester|organ|cellos/i.test(n)) s -= 50;
+    return s;
+  };
+  let best = null, bs = -Infinity;
+  for(const v of ja){ const s = score(v); if(s > bs){ bs = s; best = v; } }
+  return best && bs >= (want === "m" ? 100 : 0) ? best : (want === "m" ? null : best);
 }
 let jaUnlocked = false;
 function jaUnlock(){ if(!JA_TTS || jaUnlocked) return; try{ const u = new SpeechSynthesisUtterance(" "); u.volume = 0; speechSynthesis.speak(u); jaUnlocked = true; }catch(e){} }
@@ -2434,9 +2446,10 @@ function jaSay(text, force){
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text), v = jaVoice(m);
     u.lang = "ja-JP"; if(v) u.voice = v;
-    u.rate = 1.0;
-    // 声が 見つからない ときは 高さで 分ける(男性 = ひくめ / 女性 = たかめ)
-    u.pitch = m === "m" ? (v ? 0.95 : 0.7) : (v ? 1.15 : 1.35);
+    const named = v && (m === "m" ? VOICE_M : VOICE_F).test(v.name || "");
+    // ⚠️ 高さを 上げすぎると 機械っぽく なる(けいくん 2026-10-16「可愛い声で自然に」)。女の人の 声が あれば ほんの少しだけ 上げ、すこし ゆっくり はっきり
+    u.rate = 0.95;
+    u.pitch = m === "m" ? (named ? 0.95 : 0.75) : (named ? 1.08 : 1.2);
     speechSynthesis.speak(u);
   }catch(e){}
 }

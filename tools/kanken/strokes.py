@@ -74,25 +74,45 @@ def strokes_of(ch, base):
     return out
 
 def main():
+    """⚠️ 字が 2000を こえるので 学年ごとの ファイルに 分ける(kanken/strokes/<組>.js)。
+    ゲームは kanken/strokes.js(字 → 組 の 一覧)だけを 先に 読み、遊ぶ 字の 組を あとから 読む(kanken.js の needStrokes)"""
+    import hashlib
     base = kvg_dir()
     if not base: sys.exit("KanjiVG が 見つからない(環境変数 KANJIVG に kanji フォルダを 入れる)")
-    chars = []
+    first = {}  # 字 → いちばん やさしい difficulty
     for j in ("kaki", "doon"):
         for f in [HERE / f"terms-{j}.json"] + sorted(HERE.glob(f"terms-{j}-*.json")):  # 足しかけの ことば(-a / -b)も
             if not f.exists(): continue
             for t in json.loads(f.read_text(encoding="utf-8")):
-                if t.get("kanji") and t["kanji"] not in chars: chars.append(t["kanji"])
-    data, miss = {}, []
-    for ch in chars:
-        if (base / f"{ord(ch):05x}.svg").exists(): data[ch] = strokes_of(ch, base)
-        else: miss.append(ch)
+                ch = t.get("kanji")
+                if ch: first[ch] = min(first.get(ch, 99), t.get("difficulty", 99))
+    miss = [ch for ch in first if not (base / f"{ord(ch):05x}.svg").exists()]
     if miss: sys.exit("KanjiVG に 形が ない 字: " + "".join(miss))
+    groups = {}
+    for ch, dv in first.items():
+        key = str(dv)
+        groups.setdefault(key, []).append(ch)
+    if len(groups.get("7", [])) > 400:  # 中学は 1000字を こえるので 3つに
+        m = groups.pop("7"); n = len(m)
+        for i in range(3): groups["7" + "abc"[i]] = m[i * n // 3:(i + 1) * n // 3]
     head = ("/* 書き取りの 字の 形(書き順つき)。tools/kanken/strokes.py が KanjiVG から 作る。手で 直さない。\n"
             "   字の 形の データ: KanjiVG © Ulrich Apel(https://kanjivg.tagaini.net)。CC BY-SA 3.0(https://creativecommons.org/licenses/by-sa/3.0/)。\n"
             "   この ファイルも CC BY-SA 3.0 で 出します(線の 上の 点を 足した)。 */\n")
-    (ROOT / "kanken").mkdir(exist_ok=True)
-    (ROOT / "kanken/strokes.js").write_text(head + "const KANKEN_STROKES = " + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
-    print("kanken/strokes.js", len(data), "字", (ROOT / "kanken/strokes.js").stat().st_size // 1024, "KB")
+    out = ROOT / "kanken/strokes"; out.mkdir(parents=True, exist_ok=True)
+    for old in out.glob("*.js"): old.unlink()
+    where, ver, total = {}, {}, 0
+    for key, chars in sorted(groups.items()):
+        data = {ch: strokes_of(ch, base) for ch in chars}
+        body = head + "KANKEN_STROKES_ADD(" + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ");\n"
+        (out / f"{key}.js").write_text(body, encoding="utf-8")
+        ver[key] = hashlib.sha1(body.encode()).hexdigest()[:8]
+        for ch in chars: where[ch] = key
+        total += len(body.encode()); print(f"kanken/strokes/{key}.js", len(chars), "字", len(body.encode()) // 1024, "KB")
+    (ROOT / "kanken/strokes.js").write_text(head +
+        "const KANKEN_STROKES = {}, KANKEN_STROKE_VER = " + json.dumps(ver, separators=(",", ":")) +
+        ", KANKEN_STROKE_FILE = " + json.dumps(where, ensure_ascii=False, separators=(",", ":")) + ";\n"
+        "function KANKEN_STROKES_ADD(o){ Object.assign(KANKEN_STROKES, o); }\n", encoding="utf-8")
+    print("kanken/strokes.js", len(where), "字(ぜんぶで", total // 1024, "KB を", len(groups), "こに 分けた)")
 
 if __name__ == "__main__":
     main()

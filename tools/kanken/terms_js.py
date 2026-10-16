@@ -38,7 +38,7 @@ for g in "123456":
 UPTO[7] = set(KL["jouyou"]) | {"々"}; BAND[7] = set(KL["middle"])
 # 読み・書き取り 以外の 旅は 3つの 段だけ: dv3 = 小1〜3 / dv6 = 小4〜6 / dv7 = 中学
 SPAN = {3: set(KL["grades"]["1"] + KL["grades"]["2"] + KL["grades"]["3"]), 6: set(KL["grades"]["4"] + KL["grades"]["5"] + KL["grades"]["6"]), 7: BAND[7]}
-RADICAL = set("氵亻艹宀辶扌忄冫刂攵頁冖廾彡阝礻衤糸灬疒癶罒耂月王")  # 説明に 出して よい 部首の 形
+RADICAL = set("氵亻艹宀辶扌忄冫刂攵頁冖廾彡阝礻衤糸灬疒癶罒耂月王禾")  # 説明に 出して よい 部首の 形
 CJK = re.compile(r"[一-鿿々]")
 
 def tier_errs(t):

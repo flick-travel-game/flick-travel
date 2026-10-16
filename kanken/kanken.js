@@ -12,6 +12,15 @@
    ⚠️ 漢字の 検定を 行う 団体とは 関係ない。むずかしさは めやす */
 const KANKEN = (() => {
   const D = KANKEN_TERMS, SK = typeof KANKEN_STROKES === "object" ? KANKEN_STROKES : {};
+  /* 書き順の データは 学年ごとの ファイル(kanken/strokes/<組>.js)。遊ぶ 字の 組だけ あとから 読む(tools/kanken/strokes.py) */
+  const SK_FILE = typeof KANKEN_STROKE_FILE === "object" ? KANKEN_STROKE_FILE : {}, SK_VER = typeof KANKEN_STROKE_VER === "object" ? KANKEN_STROKE_VER : {}, SK_LOAD = {};
+  function needStrokes(chars){
+    const keys = [...new Set(chars.filter(ch => ch && !SK[ch] && SK_FILE[ch]).map(ch => SK_FILE[ch]))];
+    return Promise.all(keys.map(k => SK_LOAD[k] || (SK_LOAD[k] = new Promise(ok => {
+      const s = document.createElement("script"); s.src = "strokes/" + k + ".js?v=" + (SK_VER[k] || "");
+      s.onload = () => ok(); s.onerror = () => { delete SK_LOAD[k]; ok(); }; document.head.appendChild(s);
+    }))));
+  }
   const ROUNDS = 10;
   const RANK_READY = true;  // かずともの FLICK_MODES に knyomi / knkaki / knbushu / knokuri / knjukugo / knyoji / kntaigi / kndoon / knmas を 足す(speed-king)。false に すると ランキングを 出さない・送らない
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -99,7 +108,7 @@ const KANKEN = (() => {
   }
   let pre = null;  // この回の 前に 出会っていた ことば
   /* 問題: いつも 同じ 10語(土台の LEVELS と 同じ。人ごとに かえない) */
-  function makeQs(m, lv){ pre = discovered(); return levels[m][lv].slice(); }
+  function makeQs(m, lv){ pre = discovered(); const l = levels[m][lv].slice(); needStrokes(l.filter(q => q.w).map(q => q.kj)); return l; }
   /* 読みかたが いくつか ある ことば(SQL = えすきゅーえる / しーくえる)。打った字に 合う 読みへ 目あてを 合わせる */
   function retarget(q, v){
     if(q.w) return "\u0000";  // 書く 問題は 打っても 進まない(マスに 書く)
@@ -221,6 +230,10 @@ const KANKEN = (() => {
     if(q.bu) h += '<p class="ai-small">🧩 部首: <span class="kk-bu">' + esc(q.bu) + '</span></p>';
     if(q.pr) h += '<p class="ai-small">' + esc(q.pr) + (q.rl === "対" ? " ⇔ " : " ≒ ") + esc(q.n) + '(' + (q.rl === "対" ? "対義語" : "類義語") + ')</p>';
     if(q.kj && SK[q.kj]) h += '<p class="ai-small">🖌 「' + esc(q.kj) + '」の 書き順(' + SK[q.kj].length + '画)</p>' + orderSvg(q.kj);
+    else if(q.kj && SK_FILE[q.kj]){  // まだ 読みこんでいない 字: 読みこんだら 書き順を 入れる
+      h += '<div class="kk-order-wait" data-kj="' + esc(q.kj) + '"></div>';
+      needStrokes([q.kj]).then(() => document.querySelectorAll('.kk-order-wait[data-kj="' + q.kj + '"]').forEach(w => { if(SK[q.kj]) w.outerHTML = '<p class="ai-small">🖌 「' + esc(q.kj) + '」の 書き順(' + SK[q.kj].length + '画)</p>' + orderSvg(q.kj); }));
+    }
     if(q.al) h += '<p class="ai-small">読みかた: ' + [q.r].concat(q.al).map(esc).join(" / ") + '</p>';
     const rel = (q.rel || []).map(id => BY.get(id)).filter(Boolean);
     if(rel.length) h += '<p class="ai-small">🔗 つながる ことば</p><div class="ai-chips">' + rel.map(x => d.has(x.art) ? chip(x) : '<button type="button" class="ai-chip lock" data-ai-term="' + esc(x.art) + '">❔ ？？？</button>').join("") + '</div>';
@@ -562,6 +575,12 @@ const KANKEN = (() => {
     function mount(qq){
       const box = document.querySelector('.kk-pad[data-kk="' + qq.art + '"]');
       if(!box || box.dataset.on) return;
+      if(!SK[qq.kj] && SK_FILE[qq.kj]){  // 書き順の データを 読みこんでから はじめる
+        if(box.dataset.wait) return; box.dataset.wait = "1";
+        const c = box.querySelector(".kk-cnt"); if(c) c.textContent = "よみこみちゅう…";
+        needStrokes([qq.kj]).then(() => { delete box.dataset.wait; mount(qq); });
+        return;
+      }
       box.dataset.on = "1"; el = box; q = qq; S = SK[qq.kj] || []; k = 0; miss = 0; hint = false; acc = []; done = false; pts = null; red = null;
       cancelAnimationFrame(raf); show = false; showT = 0;
       cv = box.querySelector("canvas"); ctx = cv.getContext("2d");

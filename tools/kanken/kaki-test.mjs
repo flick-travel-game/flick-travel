@@ -31,6 +31,7 @@ for (const m of MODES) {
     await p.waitForTimeout(2300);
     for (let i = 0; i < 10; i++) {
       await p.waitForSelector('.kk-pad canvas', { timeout: 3000 });
+      await p.waitForFunction(() => KANKEN_STROKES[qs[idx].kj] && document.querySelector('.kk-pad[data-on]'), null, { timeout: 8000 });  // 書き順の データは あとから 読む
       await p.waitForTimeout(60);
       const st = await p.evaluate(() => ({ kj: qs[idx].kj, S: KANKEN_STROKES[qs[idx].kj].map(s => s[1]), field: getComputedStyle(document.querySelector('#game .field')).display, sy: scrollY, idx }));
       if (st.field !== 'none') out.push(`${m} Lv${lv + 1} ${st.kj}: 入力欄が 出ている`);

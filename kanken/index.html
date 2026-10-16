@@ -437,11 +437,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリック漢字</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="287" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック漢字</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリック漢字。本と 漢字の 札が ならぶ 明るい 部屋で 男の子と 女の子と 白い 犬が 笑っている 絵。まわりに 8つの 旅の 見本と 4択クイズと レベルの 札が ならんでいる" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリック漢字。本と 漢字の 札が ならぶ 明るい 部屋で 男の子と 女の子と 白い 犬が 笑っている 絵。まわりに 8つの 旅の 見本と 4択クイズと レベルの 札が ならんでいる" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -574,7 +574,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kanken", name:"フリック漢字", modes:(typeof KANKEN === "object" ? KANKEN.modes : []), assets:"../", logo:false, hero:true, dir:"kanken/", lead:"漢字の 読み・部首・送りがな・熟語の 組み立て・四字熟語・対義語・類義語を ひらがなで フリック入力。書き取りと 同音異字・誤字は 指で 漢字を 書いて、書き順どおりに 1画ずつ 自動で ◯× が つくよ。常用漢字(高校卒業 程度)から はじめて、約6000字の いちばん むずかしい 漢字の めやすまで。4択クイズで 意味の 練習も できるよ。", how:"打つ 旅は、表示された ひらがなを そのまま打ち写してね(いちばん むずかしい ステージは 答えが かくれるよ)。書く 旅は、色の ついた カタカナを 漢字 1字で マスに 書いてね。書き順どおりに 1画ずつ 書くと、合った 線は お手本の きれいな 線に なるよ。2回 まちがえると つぎの 1画が うすく 見えるよ。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。本物の 試験は 紙に 書くので、紙に 書く 練習も してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。書く 旅は 指で ていねいに。これは 漢字を おぼえる ゲームです。漢字の 検定を 行う 団体とは 関係ありません。書き取りの 字の 形の データ: KanjiVG(© Ulrich Apel・CC BY-SA 3.0)。" };
+const GAME = { id:"kanken", name:"フリック漢字", modes:(typeof KANKEN === "object" ? KANKEN.modes : []), assets:"../", logo:true, hero:true, dir:"kanken/", lead:"漢字の 読み・部首・送りがな・熟語の 組み立て・四字熟語・対義語・類義語を ひらがなで フリック入力。書き取りと 同音異字・誤字は 指で 漢字を 書いて、書き順どおりに 1画ずつ 自動で ◯× が つくよ。常用漢字(高校卒業 程度)から はじめて、約6000字の いちばん むずかしい 漢字の めやすまで。4択クイズで 意味の 練習も できるよ。", how:"打つ 旅は、表示された ひらがなを そのまま打ち写してね(いちばん むずかしい ステージは 答えが かくれるよ)。書く 旅は、色の ついた カタカナを 漢字 1字で マスに 書いてね。書き順どおりに 1画ずつ 書くと、合った 線は お手本の きれいな 線に なるよ。2回 まちがえると つぎの 1画が うすく 見えるよ。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。本物の 試験は 紙に 書くので、紙に 書く 練習も してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。書く 旅は 指で ていねいに。これは 漢字を おぼえる ゲームです。漢字の 検定を 行う 団体とは 関係ありません。書き取りの 字の 形の データ: KanjiVG(© Ulrich Apel・CC BY-SA 3.0)。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

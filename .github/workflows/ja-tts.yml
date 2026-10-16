@@ -1,0 +1,29 @@
+# フリックシリーズの 🔊(日本語の ふりがな)の 音声を 作る(手で 押した ときだけ 動く)。鍵は Secrets の GOOGLE_TTS_KEY
+name: ja-tts
+on:
+  workflow_dispatch:
+    inputs:
+      samples:
+        description: "見本を 作る 声(カンマ区切り。空 = Chirp3-HD ぜんぶ)"
+        default: ""
+permissions:
+  contents: write
+concurrency: ja-tts
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 見本を 作る
+        env:
+          GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+        run: python3 tools/jatts/tts_ja.py ${{ inputs.samples && format('--samples {0}', inputs.samples) || '' }}
+      - name: 入れる
+        run: |
+          git config user.name flick-travel-game
+          git config user.email flick-travel-game@users.noreply.github.com
+          git add tools/jatts/voice-samples
+          git diff --cached --quiet && exit 0
+          git commit -m "フリックシリーズ: 日本語の 声の 見本"
+          git pull --rebase -q origin main
+          git push origin HEAD:main

@@ -6,6 +6,7 @@
 import { createRequire } from 'module'; const { chromium } = createRequire('/opt/node22/lib/node_modules/')('playwright');
 const W = +(process.argv[2] || 390);
 const MODES = (process.argv[3] || 'knkaki,kndoon').split(',');  // 1つの 旅だけ: node … 390 kndoon
+const [FROM, TO] = (process.argv[4] || '1-9999').split('-').map(Number);  // ステージを しぼる: node … 390 knkaki 1-60(書き取りは 220 ステージ あるので 分けて 走らせる)
 const b = await chromium.launch();
 const p = await b.newPage({ viewport: { width: W, height: 760 }, hasTouch: false });
 const errs = []; p.on('pageerror', e => errs.push(e.message));
@@ -26,7 +27,7 @@ async function drawStroke(pts, opt = {}) {
 }
 for (const m of MODES) {
   const nLv = await p.evaluate(m => LEVELS[m].length, m);
-  for (let lv = 0; lv < nLv; lv++) {
+  for (let lv = FROM - 1; lv < Math.min(nLv, TO); lv++) {
     await p.evaluate(([m, lv]) => start(m, lv), [m, lv]);
     await p.waitForTimeout(2300);
     for (let i = 0; i < 10; i++) {

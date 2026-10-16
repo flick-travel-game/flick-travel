@@ -565,7 +565,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=0b65e94a"></script>
+<script src="terms.js?v=24f8a34b"></script>
 <script src="kaji.js?v=7053141a"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
@@ -580,7 +580,7 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
                  {id:"uchu", name:"フリック宇宙図鑑", icon:"🪐", dir:"uchu/"}, {id:"karada", name:"フリックからだ図鑑", icon:"🫀", dir:"karada/"},
                  {id:"kabu", name:"フリック株式会社", icon:"🏢", dir:"kabu/"}, {id:"ai", name:"フリックAIクリエイター", icon:"🤖", dir:"ai/"},
                  {id:"eikaiwa", name:"フリック英会話", icon:"💬", dir:"eikaiwa/"},
-                 {id:"kankoku", name:"フリック韓国語", icon:"🇰🇷", dir:"kankoku/"},
+                 {id:"kankoku", name:"フリック韓国語", icon:"🇰🇷", dir:"kankoku/"}, {id:"supein", name:"フリックスペイン語", icon:"🇪🇸", dir:"supein/"},
                  {id:"eigo", name:"フリック英語", icon:"🔤", dir:"eigo/"},
                  {id:"rika", name:"フリック理科", icon:"🔬", dir:"rika/"},
                  {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"seibi/"},
@@ -612,7 +612,7 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
 /* 🧭 ゲームを えらぶ の タイル(マイページの 中 と ページの いちばん下 の 2か所で 使う。けいくん 2026-09-30「これと同じ表記にしてください」)。
    ⚠️ ならびは **かずともの マイページ(speed-king の `HOME_GAMES`)と 同じ 順**(2026-10-11 けいくん「並び順を もっと良く考えて」で 章ごとに 並べなおした。あちらを 変えたら ここも)。ゲームを 足したら ここにも 足す(無い ものは うしろに つく)。
    ⚠️ 絵は 各ゲームの `apple-touch-icon.png`、かずともは `logo-mark.webp`。名前は「フリック」を 取る(かずともの `GameGrid` と 同じ) */
-const SERIES_ORDER = ["sugaku", "kokugo", "rika", "shakai", "eigo", "rekishi", "world", "eikaiwa", "kankoku", "kyoryu", "uchu", "karada", "ketsueki", "tetsugaku", "soccer", "basket"].concat(
+const SERIES_ORDER = ["sugaku", "kokugo", "rika", "shakai", "eigo", "rekishi", "world", "eikaiwa", "kankoku", "supein", "kyoryu", "uchu", "karada", "ketsueki", "tetsugaku", "soccer", "basket"].concat(
                       ["baseball", "boxing", "kaji", "manner", "shinri", "adler", "patissier", "chef", "hanaya", "noka", "ishi", "kango", "shika", "yakuzai", "jui", "anma", "keisatsu", "shobo", "kyukyutai", "hoiku", "kyoshi", "biyo", "daiku", "seibi", "bengoshi", "zeirishi", "eiga", "gamedev", "code", "ai", "sumaho", "pasokon", "kabu", "toshika", "kigyo"]);
 function gameTilesHtml(){
   const root = GAME.id === "world" ? "./" : "../";
@@ -801,8 +801,8 @@ const COLORS = {
           toneFrom("#0077b3"), TONE.blue, toneFrom("#3324db"), TONE.purple, toneFrom("#eb14b5")],
 };
 /* 差しこみ口(PLUG)。つみあげの コースを 持つ ゲームだけが 1つ 持つ:
-   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / フリック韓国語 = kankoku/kankoku.js の KANKOKU / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語 = kokugo/kokugo.js の KOKUGO / フリック数学 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO / フリック恐竜図鑑 = kyoryu/kyoryu.js の KYORYU / フリックプログラマー = code/code.js の CODEPG / フリック英語 = eigo/eigo.js の EIGO / フリック社会 = shakai/shakai.js の SHAKAI / フリック医師 = ishi/ishi.js の ISHI / フリック教師 = kyoshi/kyoshi.js の KYOSHI / フリック料理人 = chef/chef.js の CHEF。ほかの ゲームでは null で 何もしない */
-const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : typeof KANKOKU === "object" ? KANKOKU : typeof SEIBI === "object" ? SEIBI : typeof PATISSIER === "object" ? PATISSIER : typeof KOKUGO === "object" ? KOKUGO : typeof SUGAKU === "object" ? SUGAKU : typeof HOIKU === "object" ? HOIKU : typeof KANGO === "object" ? KANGO : typeof GAMEDEV === "object" ? GAMEDEV : typeof BIYO === "object" ? BIYO : typeof KYORYU === "object" ? KYORYU : typeof CODEPG === "object" ? CODEPG : typeof EIGO === "object" ? EIGO : typeof SHAKAI === "object" ? SHAKAI : typeof ISHI === "object" ? ISHI : typeof KYOSHI === "object" ? KYOSHI : typeof CHEF === "object" ? CHEF : typeof KEISATSU === "object" ? KEISATSU : typeof SHOBO === "object" ? SHOBO : typeof KYUKYUTAI === "object" ? KYUKYUTAI : typeof BENGOSHI === "object" ? BENGOSHI : typeof ZEIRISHI === "object" ? ZEIRISHI : typeof ADLER === "object" ? ADLER : typeof TETSUGAKU === "object" ? TETSUGAKU : typeof SHINRI === "object" ? SHINRI : typeof TOSHIKA === "object" ? TOSHIKA : typeof DAIKU === "object" ? DAIKU : typeof NOKA === "object" ? NOKA : typeof HANAYA === "object" ? HANAYA : typeof KAJI === "object" ? KAJI : typeof MANNER === "object" ? MANNER : typeof YAKUZAI === "object" ? YAKUZAI : typeof JUI === "object" ? JUI : typeof SHIKA === "object" ? SHIKA : typeof ANMA === "object" ? ANMA : typeof EIGA === "object" ? EIGA : typeof SOCCER === "object" ? SOCCER : typeof BASEBALL === "object" ? BASEBALL : typeof BOXING === "object" ? BOXING : typeof BASKET === "object" ? BASKET : typeof KETSUEKI === "object" ? KETSUEKI : typeof SUMAHO === "object" ? SUMAHO : typeof PASOKON === "object" ? PASOKON : typeof KIGYO === "object" ? KIGYO : null;
+   株式フリック旅行 = kabu/kabu.js の KABU / AIフリック旅行 = ai/ai.js の AITABI / 英会話フリック旅行 = eikaiwa/eikaiwa.js の EIKAIWA / フリック韓国語 = kankoku/kankoku.js の KANKOKU / フリックスペイン語 = supein/supein.js の SUPEIN / 整備フリック旅行 = seibi/seibi.js の SEIBI / パティシエフリック = patissier/patissier.js の PATISSIER / フリック国語 = kokugo/kokugo.js の KOKUGO / フリック数学 = sugaku/sugaku.js の SUGAKU / フリック保育士 = hoiku/hoiku.js の HOIKU / フリック看護師 = kango/kango.js の KANGO / フリックゲームクリエイター = gamedev/gamedev.js の GAMEDEV / フリック美容師 = biyo/biyo.js の BIYO / フリック恐竜図鑑 = kyoryu/kyoryu.js の KYORYU / フリックプログラマー = code/code.js の CODEPG / フリック英語 = eigo/eigo.js の EIGO / フリック社会 = shakai/shakai.js の SHAKAI / フリック医師 = ishi/ishi.js の ISHI / フリック教師 = kyoshi/kyoshi.js の KYOSHI / フリック料理人 = chef/chef.js の CHEF。ほかの ゲームでは null で 何もしない */
+const PLUG = typeof KABU === "object" ? KABU : typeof AITABI === "object" ? AITABI : typeof EIKAIWA === "object" ? EIKAIWA : typeof KANKOKU === "object" ? KANKOKU : typeof SUPEIN === "object" ? SUPEIN : typeof SEIBI === "object" ? SEIBI : typeof PATISSIER === "object" ? PATISSIER : typeof KOKUGO === "object" ? KOKUGO : typeof SUGAKU === "object" ? SUGAKU : typeof HOIKU === "object" ? HOIKU : typeof KANGO === "object" ? KANGO : typeof GAMEDEV === "object" ? GAMEDEV : typeof BIYO === "object" ? BIYO : typeof KYORYU === "object" ? KYORYU : typeof CODEPG === "object" ? CODEPG : typeof EIGO === "object" ? EIGO : typeof SHAKAI === "object" ? SHAKAI : typeof ISHI === "object" ? ISHI : typeof KYOSHI === "object" ? KYOSHI : typeof CHEF === "object" ? CHEF : typeof KEISATSU === "object" ? KEISATSU : typeof SHOBO === "object" ? SHOBO : typeof KYUKYUTAI === "object" ? KYUKYUTAI : typeof BENGOSHI === "object" ? BENGOSHI : typeof ZEIRISHI === "object" ? ZEIRISHI : typeof ADLER === "object" ? ADLER : typeof TETSUGAKU === "object" ? TETSUGAKU : typeof SHINRI === "object" ? SHINRI : typeof TOSHIKA === "object" ? TOSHIKA : typeof DAIKU === "object" ? DAIKU : typeof NOKA === "object" ? NOKA : typeof HANAYA === "object" ? HANAYA : typeof KAJI === "object" ? KAJI : typeof MANNER === "object" ? MANNER : typeof YAKUZAI === "object" ? YAKUZAI : typeof JUI === "object" ? JUI : typeof SHIKA === "object" ? SHIKA : typeof ANMA === "object" ? ANMA : typeof EIGA === "object" ? EIGA : typeof SOCCER === "object" ? SOCCER : typeof BASEBALL === "object" ? BASEBALL : typeof BOXING === "object" ? BOXING : typeof BASKET === "object" ? BASKET : typeof KETSUEKI === "object" ? KETSUEKI : typeof SUMAHO === "object" ? SUMAHO : typeof PASOKON === "object" ? PASOKON : typeof KIGYO === "object" ? KIGYO : null;
 /* 株式フリック旅行の コース(kabu/kabu.js が 決める)。ほかの ゲームでは KABU が 無いので 何もしない */
 if(PLUG) for(const [m, h] of Object.entries(PLUG.colors)) COLORS.mode[m] = TONE[h] || toneFrom(h);  // "blue" などは ほかの ゲームと 同じ あかるい 色
 function toneStyle(t){ return "--sk-a:"+t.a+";--sk-b:"+t.b+";--sk-on:"+t.on; }
@@ -1803,8 +1803,8 @@ function jaSay(text, force){
   }catch(e){}
 }
 if(JA_TTS){ try{ speechSynthesis.getVoices(); speechSynthesis.addEventListener("voiceschanged", () => {}); }catch(e){} }
-/* 英会話・韓国語(じぶんで 読む ゲーム)か */
-function ownTts(){ return !!(PLUG && PLUG.owns(mode) && (PLUG.kind === "english" || PLUG.kind === "korean")); }
+/* 英会話・韓国語・スペイン語(じぶんで 読む ゲーム)か */
+function ownTts(){ return !!(PLUG && PLUG.owns(mode) && (PLUG.kind === "english" || PLUG.kind === "korean" || PLUG.kind === "spanish")); }
 
 /* 1問ごとの まちがい(赤くなった回数)。プラグインの 図鑑の「まちがい」の 回数に 使う */
 let qMiss = 0, lastErr = false;

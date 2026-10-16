@@ -78,8 +78,8 @@ def main():
     if not base: sys.exit("KanjiVG が 見つからない(環境変数 KANJIVG に kanji フォルダを 入れる)")
     chars = []
     for j in ("kaki", "doon"):
-        f = HERE / f"terms-{j}.json"
-        if f.exists():
+        for f in [HERE / f"terms-{j}.json"] + sorted(HERE.glob(f"terms-{j}-*.json")):  # 足しかけの ことば(-a / -b)も
+            if not f.exists(): continue
             for t in json.loads(f.read_text(encoding="utf-8")):
                 if t.get("kanji") and t["kanji"] not in chars: chars.append(t["kanji"])
     data, miss = {}, []

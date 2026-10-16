@@ -11,8 +11,13 @@ import argparse, base64, json, os, sys, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 API = "https://texttospeech.googleapis.com/v1/"
-# ゲームで 読むのは 打った ひらがな(答えの 読み)。見本も その 形
-SAMPLE = "はなび。 てぃらのさうるす。 いっせきにちょう。 ひかりごうせい。"
+# ⚠️ ひらがなだけを 読ませると 抑揚が 平らに なって カタコトに 聞こえる(けいくん 2026-10-16「カタコトに喋るのやめて」)。
+# 漢字・カタカナの 形を 読ませ、読みは SSML の yomigana で 決める(読みまちがいも 防ぐ)
+SAMPLE_SSML = ('<speak><phoneme alphabet="yomigana" ph="はなび">花火</phoneme>。<break time="400ms"/>'
+               'ティラノサウルス。<break time="400ms"/>'
+               '<phoneme alphabet="yomigana" ph="いっせきにちょう">一石二鳥</phoneme>。<break time="400ms"/>'
+               '<phoneme alphabet="yomigana" ph="こうごうせい">光合成</phoneme>。</speak>')
+SAMPLE_PLAIN = "花火。 ティラノサウルス。 一石二鳥。 光合成。"
 
 
 def call(path, body=None, key=""):
@@ -41,8 +46,13 @@ def main():
             print("ない 声:", name); continue
         cfg = {"audioEncoding": "MP3"}
         if pitch: cfg["pitch"] = float(pitch)
-        r = call("text:synthesize", {"input": {"text": SAMPLE}, "voice": {"languageCode": "ja-JP", "name": name}, "audioConfig": cfg}, key)
-        fn = spec.replace("ja-JP-", "").replace("@", "_p") + "_" + (names[name] or "x").lower()[:1] + ".mp3"
+        # Chirp3-HD は SSML の phoneme が 使えないことが あるので ふつうの 文で
+        inp = {"text": SAMPLE_PLAIN} if "Chirp" in name else {"ssml": SAMPLE_SSML}
+        try:
+            r = call("text:synthesize", {"input": inp, "voice": {"languageCode": "ja-JP", "name": name}, "audioConfig": cfg}, key)
+        except Exception as e:
+            print("作れない:", spec, e); continue
+        fn = "v2-" + spec.replace("ja-JP-", "").replace("@", "_p") + "_" + (names[name] or "x").lower()[:1] + ".mp3"
         open(os.path.join(d, fn), "wb").write(base64.b64decode(r["audioContent"]))
         print("見本:", fn)
 

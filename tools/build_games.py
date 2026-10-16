@@ -56,8 +56,8 @@ GAMES = {
     #   ⚠️ 打つのは 読みの ひらがな(つづりから tools/supein/kana_es.py の 表で 作る。手で 書かない)。ABC で つづりも 打てる(アクセント記号は 打たなくても 正解)
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/supein/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
     #   届いたら tools/supein/art/square-src.png → tools/icon_from_square.py supein(iconv を +1)/ title-src.png → tools/title_from_art.py supein(logo を True・art.word を 実寸に)/ supein/hero.webp(hero を True)
-    "supein": dict(name="フリックスペイン語", modes="SUPEIN", kinds=set(), color="#c60b1e", hero=True, logo=False,
-                   art=dict(word=(900, 213), hero=(1536, 1024), alt="フリックスペイン語:スペインの町なみと男の子・女の子・白い犬。発音・単語・文法・日常会話・ネイティブの表現と、学習のながれ", iconv=2, wordv=2),
+    "supein": dict(name="フリックスペイン語", modes="SUPEIN", kinds=set(), color="#c60b1e", hero=True, logo=True,
+                   art=dict(word=(900, 217), hero=(1536, 1024), alt="フリックスペイン語:スペインの町なみと男の子・女の子・白い犬。発音・単語・文法・日常会話・ネイティブの表現と、学習のながれ", iconv=2, wordv=3),
                    lead="スペイン語の 発音・単語・文法と 活用・日常会話・ネイティブの 表現を、フリックで 打って 旅しよう。スペイン語を 見て、🔊で 発音を 聞きながら、読みの ひらがなを 打つよ。打つと 意味と 例文が 出るよ。ローマ字読みの きほんから はじめて、ネイティブが ふだん 使う ことばまで。",
                    how="表示された 読みの ひらがなを、そのまま打ち写してね(Hola → おら)。上の「⌨️ 打ちかた」で「ABC」に すると スペイン語の つづりで 打てるよ。アクセント記号(á ñ など)と ¿ ¡ は 打たなくても 正解。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。読みの ひらがなは 発音に 近い 字なので、🔊で ほんとうの 音を 聞いてね。🔊 は 端末の 読み上げ機能を 使うので、端末に よって 声が ちがいます。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。ABC で 打つときは、iPhone の 日本語キーボードの「ABC」なら フリックで スペイン語が 打てるよ。"),

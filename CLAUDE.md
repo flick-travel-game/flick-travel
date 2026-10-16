@@ -119,7 +119,8 @@
 - 最難関(dv3)の 読み・四字熟語・対義語・送りがな・熟語の 型は **答えを かくす**(国語と 同じ `hide`)。部首は かくさない
 - 読み・四字熟語・対義語の 3つの 旅は 読みが かぶらない(`terms_js.py` が 止める)。部首名・型の 名前・送りがなは かぶるのが ふつう
 - 作った 助手とは 別の 助手が 1語ずつ 確かめた(読み・部首・送りがな・型・使いわけ・むずかしさ)
-- 絵は まだ。**仮の アイコン**は KanjiVG の「字」を 赤い 角丸に 白で 描いた もの(`tools/kanken/placeholder_icon.py`)。題名は 文字のまま。届いたら `tools/kanken/art/square-src.png` → `python3 tools/icon_from_square.py kanken` / `title-src.png` → `python3 tools/title_from_art.py kanken`、`build_games.py` の `art` を 足して `hero`・`logo` を True
+- **トップの 絵は 入れた**(2026-10-16。`kanken/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。1回目は 一期一会の ふりがなが「いっせきにちょう」・はしの 行に 走る(はしる)・類義語に 読みが 混ざる・レベルが 小学校/中学校/高校 で 入れなかった。2回目の のこり 2か所は **絵の 中で 直した**(`tools/kanken/fix_text.py`): 雨の 読みの くずれ →「(あめ・あま)」/ かきとりの 書き順の 数字(1,3,3,6,3,5,6 と まちがい)を 消した。もとの 絵は 入れものに 入れていない
+- アイコン・題名は まだ。**仮の アイコン**は KanjiVG の「字」を 赤い 角丸に 白で 描いた もの(`tools/kanken/placeholder_icon.py`)。題名は 文字のまま。届いたら `tools/kanken/art/square-src.png` → `python3 tools/icon_from_square.py kanken` / `title-src.png` → `python3 tools/title_from_art.py kanken`、`build_games.py` の `art` を 足して `hero`・`logo` を True
 - かずとも(speed-king): `FLICK_MODES` に kn… の 9つ、`FLICK_LINK_TARGETS` に `kanken`。`HOME_GAMES` は 絵が 届いてから(国語の すぐ あと)
 
 ## フリック数学旅行(`sugaku/`。けいくん 2026-09-27「おすすめでよろしく」+「受験に必要な計算は入れた方がいい」)

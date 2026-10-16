@@ -612,7 +612,7 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
 /* 🧭 ゲームを えらぶ の タイル(マイページの 中 と ページの いちばん下 の 2か所で 使う。けいくん 2026-09-30「これと同じ表記にしてください」)。
    ⚠️ ならびは **かずともの マイページ(speed-king の `HOME_GAMES`)と 同じ 順**(2026-10-11 けいくん「並び順を もっと良く考えて」で 章ごとに 並べなおした。あちらを 変えたら ここも)。ゲームを 足したら ここにも 足す(無い ものは うしろに つく)。
    ⚠️ 絵は 各ゲームの `apple-touch-icon.png`、かずともは `logo-mark.webp`。名前は「フリック」を 取る(かずともの `GameGrid` と 同じ) */
-const SERIES_ORDER = ["sugaku", "kokugo", "rika", "shakai", "eigo", "rekishi", "world", "eikaiwa", "kankoku", "supein", "kyoryu", "uchu", "karada", "ketsueki", "tetsugaku", "soccer", "basket"].concat(
+const SERIES_ORDER = ["sugaku", "kokugo", "rika", "shakai", "eigo", "rekishi", "world", "eikaiwa", "supein", "kankoku", "kyoryu", "uchu", "karada", "ketsueki", "tetsugaku", "soccer", "basket"].concat(
                       ["baseball", "boxing", "kaji", "manner", "shinri", "adler", "patissier", "chef", "hanaya", "noka", "ishi", "kango", "shika", "yakuzai", "jui", "anma", "keisatsu", "shobo", "kyukyutai", "hoiku", "kyoshi", "biyo", "daiku", "seibi", "bengoshi", "zeirishi", "eiga", "gamedev", "code", "ai", "sumaho", "pasokon", "kabu", "toshika", "kigyo"]);
 function gameTilesHtml(){
   const root = GAME.id === "world" ? "./" : "../";

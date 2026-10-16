@@ -1622,7 +1622,7 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
 - **アイコンも 入れた**(2026-10-16。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py supein`。`iconv` = 2)。四角い 絵の 札には ゲームに 無い 旅(聞く・話す・読む・書く / スペインの文化 / 地図と旅行フレーズ)・「スラング」「フォニックス」・**牛の 絵**(闘牛を 思わせる)が あるが、アイコンの 大きさでは 読めない・見えないので そのまま(医師・教師と 同じ 判断)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
 - **題名も 入れた**(2026-10-16。けいくんの ChatGPT の 切りぬき `tools/supein/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py supein` → `supein/logo-word.webp` 900×217。`logo=True`・`wordv` = 3)。「フリックスペイン語」9字を 読んで 確かめた
   届いたら tools/supein/art/square-src.png → `python3 tools/icon_from_square.py supein`(iconv を +1)/ title-src.png → `python3 tools/title_from_art.py supein`(logo を True・art.word を 実寸に)/ supein/hero.webp(hero を True)
-- かずとも: `FLICK_MODES` に eskihon / esw1〜esw4 / esgram / estalk / esnative / esmas、`FLICK_LINK_TARGETS` に supein、`HOME_GAMES`(韓国語の となり。絵なし)・`FLICK_SERIES_GAMES` に フリックスペイン語
+- かずとも: `FLICK_MODES` に eskihon / esw1〜esw4 / esgram / estalk / esnative / esmas、`FLICK_LINK_TARGETS` に supein、`HOME_GAMES`(英会話の すぐ あと・韓国語の 前。けいくん 2026-10-16「スペイン語は英会話の次に」。`SERIES_ORDER` も 同じ)・`FLICK_SERIES_GAMES` に フリックスペイン語
 
 ## 題名の 絵(logo-word)の 切れ・欠けを 直した(けいくん 2026-10-02「タイトルが切れている、文字がかけているのが たくさんあるので すべて修復してください」)
 

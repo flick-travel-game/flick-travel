@@ -1619,7 +1619,8 @@ node tools/click-all.mjs                # 見えている ボタンを ぜんぶ
   ⚠️ **ネイティブの 人の 目では まだ 見ていない**(見てくれる 人が いれば いちばん よい)
 - 確かめかた: `node tools/play-all.mjs supein/`(全 ステージ・ひらがな)/ `node tools/supein/play-abc.mjs`(ABC で 記号つき・記号なしの 両方を 打って 全 ステージ)/ `node tools/click-all.mjs supein/`(W=320 も)。2026-10-16 に ぜんぶ 通った
 - **トップの 絵は 入れた**(2026-10-16。`supein/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の 1回目。字を 切り出して 読み、3か所を **絵の 中で 直した**(`tools/supein/fix_text.py`):「学学習のながれ」の 前の 黄色い 学 → ★(クイズの ★と そろえた)/ ふきだし「発音?きいて」の くずれた 字 → 「を」/ Por favor の 読み「ボル」→「ポル」。そのままに した もの: 絵の 中の 読みが カタカナ(ゲームは ひらがな)・レベルの 札が Lv.1 たんご 〜 Lv.4 ねいてぃぶ表現(ゲームの 段は 入門〜上級。意味は 通る)・サグラダ・ファミリアに 似た 建物(小さい)。もとの 絵は 入れものに 入れていない
-- アイコン・題名は **まだ**: 仮の アイコン(`tools/supein/placeholder_icon.py`。赤と 黄色の 地に 白い ふきだし)。題名は logo=False。
+- **アイコンも 入れた**(2026-10-16。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py supein`。`iconv` = 2)。四角い 絵の 札には ゲームに 無い 旅(聞く・話す・読む・書く / スペインの文化 / 地図と旅行フレーズ)・「スラング」「フォニックス」・**牛の 絵**(闘牛を 思わせる)が あるが、アイコンの 大きさでは 読めない・見えないので そのまま(医師・教師と 同じ 判断)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+- 題名は **まだ**(logo=False)。届いたら `tools/supein/art/title-src.png` → `python3 tools/title_from_art.py supein`(`logo=True`・`art.word` を 実寸・`wordv` +1)
   届いたら tools/supein/art/square-src.png → `python3 tools/icon_from_square.py supein`(iconv を +1)/ title-src.png → `python3 tools/title_from_art.py supein`(logo を True・art.word を 実寸に)/ supein/hero.webp(hero を True)
 - かずとも: `FLICK_MODES` に eskihon / esw1〜esw4 / esgram / estalk / esnative / esmas、`FLICK_LINK_TARGETS` に supein、`HOME_GAMES`(韓国語の となり。絵なし)・`FLICK_SERIES_GAMES` に フリックスペイン語
 

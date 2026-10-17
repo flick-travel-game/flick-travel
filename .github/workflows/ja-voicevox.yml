@@ -1,0 +1,31 @@
+# 声優さんの ような 声(VOICEVOX)の 見本を 作る(手で 押した ときだけ)。鍵は 要らない
+name: ja-voicevox
+on:
+  workflow_dispatch:
+    inputs:
+      chars:
+        description: "キャラの 名前(カンマ区切り。空 = ぜんぶ)"
+        default: ""
+permissions:
+  contents: write
+concurrency: ja-voicevox
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: VOICEVOX を 立てる
+        run: |
+          docker run -d --name vv -p 50021:50021 voicevox/voicevox_engine:cpu-latest
+          for i in $(seq 1 90); do curl -sf http://127.0.0.1:50021/version && break; sleep 2; done
+      - name: 見本を 作る
+        run: python3 tools/jatts/voicevox_samples.py "${{ inputs.chars }}"
+      - name: 入れる
+        run: |
+          git config user.name flick-travel-game
+          git config user.email flick-travel-game@users.noreply.github.com
+          git add tools/jatts/voicevox-samples
+          git diff --cached --quiet && exit 0
+          git commit -m "フリックシリーズ: VOICEVOX の 声の 見本"
+          git pull --rebase -q origin main
+          git push origin HEAD:main

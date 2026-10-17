@@ -3152,17 +3152,21 @@ function streakHtml(st, m){
     (isBest ? '<p class="stk-b">⭐️ いまが さいこう記録！</p>' : (st.best > 1 ? '<p class="stk-l">いちばん ながく つづいたのは ' + st.best + '日</p>' : '')) +
     '</div>';
 }
-/* みんなの れんぞく(かずともの サーバーが 数える。つながらないときは 何も出さない) */
+/* みんなの れんぞく(かずともの サーバーが 数える。つながらないときは 何も出さない)
+   ⚠️ **フリックの ゲーム ぜんぶで 1つ**。見出しに「(どのゲームでも)」(けいくん 2026-10-17「1」。そのゲームの 順位に 見えていた)
+   ⚠️ 子どもごと(pid)に 分ける。同じ ニックネームでも まざらない */
 async function drawStreakBoard(){
-  const box = $("#streak-board"), p = curProfile();
+  const box = $("#streak-board"), p = curProfile(), myPid = pidOf(p);
+  // ⚠️ 自分かどうかは pid で 見る(同じ ニックネームの よその子を 自分と まちがえない)。pid の 無い 前の 記録だけ なまえで
+  const isMe = r => !!p && (r.pid ? r.pid === myPid : r.name === p.name);
   try{
     const res = await fetch(RANK_API + "/streak");
     const js = await res.json().catch(() => null);
     const rows = (res.ok && js && js.ok && js.rows) || [];
     if(!rows.length){ box.innerHTML = ""; return; }
     const t = COLORS.mode[mode];
-    box.innerHTML = '<div class="stkb"><p class="stkb-t">みんなの れんぞく</p><ol>' + rows.map((r, i) =>
-      '<li class="' + (p && r.name === p.name ? 'sk-card' : 'sk-key') + '"' + (p && r.name === p.name ? ' style="' + toneStyle(t) + '"' : '') + '>' +
+    box.innerHTML = '<div class="stkb"><p class="stkb-t">みんなの れんぞく(どのゲームでも)</p><ol>' + rows.map((r, i) =>
+      '<li class="' + (isMe(r) ? 'sk-card' : 'sk-key') + '"' + (isMe(r) ? ' style="' + toneStyle(t) + '"' : '') + '>' +
       '<span class="rk">' + (i < 3 ? MEDALS[i] : (i + 1)) + '</span><span class="nm">' + esc(r.name) + '</span><span class="dy">🔥 ' + r.days + '日</span></li>').join("") + '</ol></div>';
   }catch(e){ box.innerHTML = ""; }
 }

@@ -30,13 +30,17 @@ def main():
         if want and s["name"] not in want: continue
         styles = s["styles"][:2]  # ノーマル と もう1つ(あまあま など)
         for st in styles:
+          try:
             q = post("audio_query?" + urllib.parse.urlencode({"text": TEXT, "speaker": st["id"]}))
             wav = post("synthesis?" + urllib.parse.urlencode({"speaker": st["id"]}), q, raw=True)
-            base = os.path.join(d, f"{s['name']}_{st['name']}")
+            safe = lambda x: x.replace("/", "-").replace(" ", "")
+            base = os.path.join(d, f"{safe(s['name'])}_{safe(st['name'])}")
             open(base + ".wav", "wb").write(wav)
             subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", base + ".wav", "-b:a", "64k", base + ".mp3"], check=True)
             os.remove(base + ".wav")
             print("見本:", s["name"], st["name"])
+          except Exception as e:
+            print("しくじり:", s["name"], st["name"], e)
 
 
 if __name__ == "__main__":

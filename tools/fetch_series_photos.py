@@ -37,6 +37,9 @@ LEAD_CACHE = ROOT / "tools" / "series-leadimages.json"  # 題名 → {"img": フ
 INFO_CACHE = ROOT / "tools" / "series-fileinfo.json"    # Commons の 写真の情報
 MIMES = ("image/jpeg", "image/png", "image/svg+xml", "image/gif", "image/tiff", "image/webp", "video/webm", "application/ogg")  # 動画は 縮小版(静止画)をもらう
 _last = [0.0]
+# 記事の 代表画像が 問題と 合わなかった もの(2026-10-18。宇宙図鑑の 新しい 旅。目で 見て 外した)。
+#   例: オリンポス山 → ギリシャの 山 / 火星の水 → 映画の ろう人形 / カウントダウン → サッカーの 時計 / 多元宇宙 → 宇宙背景放射の 図
+NO_PHOTO = set(['astastrobio', 'astbbn', 'astbigrip', 'astcomposition', 'astem', 'astemc2', 'astmultiverse', 'aststardust', 'asttimedil', 'astwolfrayet', 'expcountdown', 'expswingby', 'obsaperture', 'plamagneto', 'plamarsdust', 'plamarswater', 'plaolympus', 'plasynodic'])
 
 
 def get(url):
@@ -150,6 +153,7 @@ def main():
     m = F.re.search(r"=\s*(\{.*\});", js_path.read_text(encoding="utf-8"), F.re.S)
     photos = json.loads(m.group(1)) if m else {}
     keys = [k for k in keys if redo or k not in photos]  # もう取ってある ものは とばす(つづきから)
+    keys = [k for k in keys if k not in NO_PHOTO]  # 記事の 代表画像が 問題と 合わない もの(絵文字の カードの まま)
     lead = lead_images([SERIES[k][0] for k in keys])
     want = {}  # key → File:名前
     for k in keys:

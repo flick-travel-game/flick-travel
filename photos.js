@@ -28018,5 +28018,8909 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
   "page": "https://commons.wikimedia.org/wiki/File:Toshodaiji_Nara_Nara_pref00bs5s900.jpg",
   "file": "File:Toshodaiji Nara Nara pref00bs5s900.jpg"
+ },
+ "soccer.kh-soccer": {
+  "src": "photo-soccer.kh-soccer.jpg",
+  "author": "Rick Dikeman",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Football_in_Bloomington,_Indiana,_1995.jpg",
+  "file": "File:Football in Bloomington, Indiana, 1995.jpg"
+ },
+ "soccer.kh-midfielder": {
+  "src": "photo-soccer.kh-midfielder.jpg",
+  "author": "No machine-readable author provided. MesserWoland assumed (b…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Boisko.svg",
+  "file": "File:Boisko.svg"
+ },
+ "soccer.kh-heading": {
+  "src": "photo-soccer.kh-heading.jpg",
+  "author": "Tomas Caspers",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cologne_FC_vs._Xanthi_FC_(October_13,_2007).jpg",
+  "file": "File:Cologne FC vs. Xanthi FC (October 13, 2007).jpg"
+ },
+ "soccer.kh-sebango": {
+  "src": "photo-soccer.kh-sebango.jpg",
+  "author": "Shai Pal",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FC_Barcelona_-_Bayer_04_Leverkusen,_7_mar_2012_(07).jpg",
+  "file": "File:FC Barcelona - Bayer 04 Leverkusen, 7 mar 2012 (07).jpg"
+ },
+ "soccer.kh-centerback": {
+  "src": "photo-soccer.kh-centerback.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gonzalo_Montiel_Argentina_v_Spain_19_July_2026-077.jpg",
+  "file": "File:Gonzalo Montiel Argentina v Spain 19 July 2026-077.jpg"
+ },
+ "soccer.kh-sideback": {
+  "src": "photo-soccer.kh-sideback.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gonzalo_Montiel_Argentina_v_Spain_19_July_2026-077.jpg",
+  "file": "File:Gonzalo Montiel Argentina v Spain 19 July 2026-077.jpg"
+ },
+ "soccer.kh-volante": {
+  "src": "photo-soccer.kh-volante.jpg",
+  "author": "No machine-readable author provided. MesserWoland assumed (b…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Boisko.svg",
+  "file": "File:Boisko.svg"
+ },
+ "soccer.kh-topshita": {
+  "src": "photo-soccer.kh-topshita.jpg",
+  "author": "No machine-readable author provided. MesserWoland assumed (b…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Boisko.svg",
+  "file": "File:Boisko.svg"
+ },
+ "soccer.kh-insidekick": {
+  "src": "photo-soccer.kh-insidekick.jpg",
+  "author": "Ronnie Macdonald",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ARS-OM_1314_Ramsey_free_kick_(cropped).jpg",
+  "file": "File:ARS-OM 1314 Ramsey free kick (cropped).jpg"
+ },
+ "soccer.kh-instepkick": {
+  "src": "photo-soccer.kh-instepkick.jpg",
+  "author": "Ronnie Macdonald",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ARS-OM_1314_Ramsey_free_kick_(cropped).jpg",
+  "file": "File:ARS-OM 1314 Ramsey free kick (cropped).jpg"
+ },
+ "soccer.kh-outsidekick": {
+  "src": "photo-soccer.kh-outsidekick.jpg",
+  "author": "Ronnie Macdonald",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ARS-OM_1314_Ramsey_free_kick_(cropped).jpg",
+  "file": "File:ARS-OM 1314 Ramsey free kick (cropped).jpg"
+ },
+ "soccer.kh-infrontkick": {
+  "src": "photo-soccer.kh-infrontkick.jpg",
+  "author": "Ronnie Macdonald",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ARS-OM_1314_Ramsey_free_kick_(cropped).jpg",
+  "file": "File:ARS-OM 1314 Ramsey free kick (cropped).jpg"
+ },
+ "soccer.kh-volley": {
+  "src": "photo-soccer.kh-volley.jpg",
+  "author": "Alejandro Ramos",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chilena_de_Sergio_Ramos.jpg",
+  "file": "File:Chilena de Sergio Ramos.jpg"
+ },
+ "soccer.kh-futsal": {
+  "src": "photo-soccer.kh-futsal.jpg",
+  "author": "B1mbo, SVG by User:Hedavid",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Futsal_pictogram.svg",
+  "file": "File:Futsal pictogram.svg"
+ },
+ "soccer.kh-beachsoccer": {
+  "src": "photo-soccer.kh-beachsoccer.jpg",
+  "author": "Netanya city hall. Original uploader was yaara k. at he.wiki…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Beachsoccer.jpg",
+  "file": "File:Beachsoccer.jpg"
+ },
+ "soccer.kh-goalperformance": {
+  "src": "photo-soccer.kh-goalperformance.jpg",
+  "author": "Pierre-Yves Beaudouin",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20121216_PSG-ASSE_54.jpg",
+  "file": "File:20121216 PSG-ASSE 54.jpg"
+ },
+ "soccer.rl-offside": {
+  "src": "photo-soccer.rl-offside.jpg",
+  "author": "Steindy (talk) 23:45, 26 November 2010 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Clemens_Sch%C3%BCttengruber,_Fu%C3%9Fballschiedsrichter_(02).jpg",
+  "file": "File:Clemens Schüttengruber, Fußballschiedsrichter (02).jpg"
+ },
+ "soccer.rl-yellow": {
+  "src": "photo-soccer.rl-yellow.jpg",
+  "author": "Steindy (talk) 11:44, 19 June 2011 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Massimo_Busacca,_Referee,_Switzerland_(10).jpg",
+  "file": "File:Massimo Busacca, Referee, Switzerland (10).jpg"
+ },
+ "soccer.rl-red": {
+  "src": "photo-soccer.rl-red.jpg",
+  "author": "No machine-readable author provided. Ed g2s assumed (based o…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_card.svg",
+  "file": "File:Red card.svg"
+ },
+ "soccer.rl-pk": {
+  "src": "photo-soccer.rl-pk.jpg",
+  "author": "不明",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ivory_Coast_penalty.jpg",
+  "file": "File:Ivory Coast penalty.jpg"
+ },
+ "soccer.rl-ck": {
+  "src": "photo-soccer.rl-ck.jpg",
+  "author": "Johan Elisson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cornerkick.jpg",
+  "file": "File:Cornerkick.jpg"
+ },
+ "soccer.rl-throwin": {
+  "src": "photo-soccer.rl-throwin.jpg",
+  "author": "Rick Dikeman",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Soccer_throw_in_nch.jpg",
+  "file": "File:Soccer throw in nch.jpg"
+ },
+ "soccer.rl-gk": {
+  "src": "photo-soccer.rl-gk.jpg",
+  "author": "Pierre-Yves Beaudouin",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20121216_PSG-ASSE_05_-_M%C3%A9line_G%C3%A9rard.jpg",
+  "file": "File:20121216 PSG-ASSE 05 - Méline Gérard.jpg"
+ },
+ "soccer.rl-ar": {
+  "src": "photo-soccer.rl-ar.jpg",
+  "author": "Steindy (talk) 23:45, 26 November 2010 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Clemens_Sch%C3%BCttengruber,_Fu%C3%9Fballschiedsrichter_(02).jpg",
+  "file": "File:Clemens Schüttengruber, Fußballschiedsrichter (02).jpg"
+ },
+ "soccer.rl-shootout": {
+  "src": "photo-soccer.rl-shootout.jpg",
+  "author": "Dddeco",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Nisigaoka-soccer-stadium-PK.JPG",
+  "file": "File:Nisigaoka-soccer-stadium-PK.JPG"
+ },
+ "soccer.rl-touchline": {
+  "src": "photo-soccer.rl-touchline.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Football_Field_(ja).png",
+  "file": "File:Football Field (ja).png"
+ },
+ "soccer.rl-dfk": {
+  "src": "photo-soccer.rl-dfk.jpg",
+  "author": "photo taken by Markus Dallarosa",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Freistoss-RB_Salzburg-18-09-2005.jpg",
+  "file": "File:Freistoss-RB Salzburg-18-09-2005.jpg"
+ },
+ "soccer.rl-ifk": {
+  "src": "photo-soccer.rl-ifk.jpg",
+  "author": "photo taken by Markus Dallarosa",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Freistoss-RB_Salzburg-18-09-2005.jpg",
+  "file": "File:Freistoss-RB Salzburg-18-09-2005.jpg"
+ },
+ "soccer.rl-goalarea": {
+  "src": "photo-soccer.rl-goalarea.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Football_Field_(ja).png",
+  "file": "File:Football Field (ja).png"
+ },
+ "soccer.rl-dropball": {
+  "src": "photo-soccer.rl-dropball.jpg",
+  "author": "Steindy (talk) 20:57, 14 November 2010 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Manuel_Sch%C3%BCttengruber,_Fu%C3%9Fballschiedsrichter_(08).jpg",
+  "file": "File:Manuel Schüttengruber, Fußballschiedsrichter (08).jpg"
+ },
+ "soccer.rl-fourth": {
+  "src": "photo-soccer.rl-fourth.jpg",
+  "author": "Steffen Prößdorf",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20191002_Fu%C3%9Fball,_M%C3%A4nner,_UEFA_Champions_League,_RB_Leipzig_-_Olympique_Lyonnais_by_Stepro_StP_0043-2.jpg",
+  "file": "File:20191002 Fußball, Männer, UEFA Champions League, RB Leipzig - Olympique Lyonnais by Stepro StP 0043-2.jpg"
+ },
+ "soccer.rl-whistle": {
+  "src": "photo-soccer.rl-whistle.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Whistles.jpg",
+  "file": "File:Whistles.jpg"
+ },
+ "soccer.rl-offside-pos": {
+  "src": "photo-soccer.rl-offside-pos.jpg",
+  "author": "Steindy (talk) 23:45, 26 November 2010 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Clemens_Sch%C3%BCttengruber,_Fu%C3%9Fballschiedsrichter_(03).jpg",
+  "file": "File:Clemens Schüttengruber, Fußballschiedsrichter (03).jpg"
+ },
+ "soccer.rl-dogso": {
+  "src": "photo-soccer.rl-dogso.jpg",
+  "author": "No machine-readable author provided. Ed g2s assumed (based o…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_card.svg",
+  "file": "File:Red card.svg"
+ },
+ "soccer.lg-premier": {
+  "src": "photo-soccer.lg-premier.jpg",
+  "author": "Premier League",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pl-logo-light.svg",
+  "file": "File:Pl-logo-light.svg"
+ },
+ "soccer.lg-ligue1": {
+  "src": "photo-soccer.lg-ligue1.jpg",
+  "author": "LFP France",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Logo_Ligue_1_McDonald%27s_2024.svg",
+  "file": "File:Logo Ligue 1 McDonald's 2024.svg"
+ },
+ "soccer.lg-jleague": {
+  "src": "photo-soccer.lg-jleague.jpg",
+  "author": "Japan Pro Soccer League",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:J_league_logo_2026.svg",
+  "file": "File:J league logo 2026.svg"
+ },
+ "soccer.lg-ucl": {
+  "src": "photo-soccer.lg-ucl.jpg",
+  "author": "UEFA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:UEFA_Champions_League_logo.png",
+  "file": "File:UEFA Champions League logo.png"
+ },
+ "soccer.lg-cwc": {
+  "src": "photo-soccer.lg-cwc.jpg",
+  "author": "FIFA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FIFA_Club_World_Cup_logo.svg",
+  "file": "File:FIFA Club World Cup logo.svg"
+ },
+ "soccer.lg-tennouhai": {
+  "src": "photo-soccer.lg-tennouhai.jpg",
+  "author": "Ohtani tanya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Emperors_cup.JPG",
+  "file": "File:Emperors cup.JPG"
+ },
+ "soccer.lg-facup": {
+  "src": "photo-soccer.lg-facup.jpg",
+  "author": "The Football Association",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Emirates_FA_Cup_Logo_2020.jpg",
+  "file": "File:Emirates FA Cup Logo 2020.jpg"
+ },
+ "soccer.lg-eredivisie": {
+  "src": "photo-soccer.lg-eredivisie.jpg",
+  "author": "Forzaruvo94",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Landskampioen_Schaal.png",
+  "file": "File:Landskampioen Schaal.png"
+ },
+ "soccer.lg-primeira": {
+  "src": "photo-soccer.lg-primeira.jpg",
+  "author": "Primeira Liga",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Liga_Portugal_Betclic_logo.svg",
+  "file": "File:Liga Portugal Betclic logo.svg"
+ },
+ "soccer.lg-saudi": {
+  "src": "photo-soccer.lg-saudi.jpg",
+  "author": "Saudi Pro League",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Saudi_Pro_League_Logo.svg",
+  "file": "File:Saudi Pro League Logo.svg"
+ },
+ "soccer.lg-levain": {
+  "src": "photo-soccer.lg-levain.jpg",
+  "author": "Noriko Puffy",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:J_League_Cup_2003.jpg",
+  "file": "File:J League Cup 2003.jpg"
+ },
+ "soccer.lg-kogohai": {
+  "src": "photo-soccer.lg-kogohai.jpg",
+  "author": "Ohtani tanya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Emperors_cup.JPG",
+  "file": "File:Emperors cup.JPG"
+ },
+ "soccer.lg-uel": {
+  "src": "photo-soccer.lg-uel.jpg",
+  "author": "UEFA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Europa_League_2021.svg",
+  "file": "File:Europa League 2021.svg"
+ },
+ "soccer.lg-uecl": {
+  "src": "photo-soccer.lg-uecl.jpg",
+  "author": "UEFA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:UEFA_Conference_League_logo_(2024_version).svg",
+  "file": "File:UEFA Conference League logo (2024 version).svg"
+ },
+ "soccer.lg-aclelite": {
+  "src": "photo-soccer.lg-aclelite.jpg",
+  "author": "Mehdi Bolourian",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AFC_Champions_League_trophy.jpg",
+  "file": "File:AFC Champions League trophy.jpg"
+ },
+ "soccer.lg-copadelrey": {
+  "src": "photo-soccer.lg-copadelrey.jpg",
+  "author": "Real Federación Española de Fútbol",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Copa_del_Rey_logo_(2021).svg",
+  "file": "File:Copa del Rey logo (2021).svg"
+ },
+ "soccer.lg-coppaitalia": {
+  "src": "photo-soccer.lg-coppaitalia.jpg",
+  "author": "Lega Nazionale Professionisti Serie A Upload by OttavianoLol…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Logo_of_Coppa_Italia_Frecciarossa_(2024-2025).svg",
+  "file": "File:Logo of Coppa Italia Frecciarossa (2024-2025).svg"
+ },
+ "soccer.lg-eflcup": {
+  "src": "photo-soccer.lg-eflcup.jpg",
+  "author": "VEO15",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:League_Cup_at_Old_Trafford.jpg",
+  "file": "File:League Cup at Old Trafford.jpg"
+ },
+ "soccer.lg-supercup": {
+  "src": "photo-soccer.lg-supercup.jpg",
+  "author": "UEFA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:UEFA_Supercup_logo.png",
+  "file": "File:UEFA Supercup logo.png"
+ },
+ "soccer.lg-superlig": {
+  "src": "photo-soccer.lg-superlig.jpg",
+  "author": "TCDD Süper Lig",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%BCper_Lig_logo.svg",
+  "file": "File:Süper Lig logo.svg"
+ },
+ "soccer.lg-ligamx": {
+  "src": "photo-soccer.lg-ligamx.jpg",
+  "author": "Liga MX",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:MX_logo.png",
+  "file": "File:MX logo.png"
+ },
+ "soccer.lg-concacaf": {
+  "src": "photo-soccer.lg-concacaf.jpg",
+  "author": "CONCACAF",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:CONCACAF_Champions_Cup_logo.svg",
+  "file": "File:CONCACAF Champions Cup logo.svg"
+ },
+ "soccer.lg-uwcl": {
+  "src": "photo-soccer.lg-uwcl.jpg",
+  "author": "UEFA Women's Champions League",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:UEFA_Women%27s_Champions_League_logo.svg",
+  "file": "File:UEFA Women's Champions League logo.svg"
+ },
+ "soccer.cb-real": {
+  "src": "photo-soccer.cb-real.jpg",
+  "author": "Zoser",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernab%C3%A9u_Madrid.jpg",
+  "file": "File:Estadio Santiago Bernabéu Madrid.jpg"
+ },
+ "soccer.cb-barca": {
+  "src": "photo-soccer.cb-barca.jpg",
+  "author": "Oh-Barcelona.com from Barcelona, Spain",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Camp_Nou_aerial_(cropped).jpg",
+  "file": "File:Camp Nou aerial (cropped).jpg"
+ },
+ "soccer.cb-manu": {
+  "src": "photo-soccer.cb-manu.jpg",
+  "author": "André Zahn",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Trafford_inside_20060726_1.jpg",
+  "file": "File:Old Trafford inside 20060726 1.jpg"
+ },
+ "soccer.cb-mancity": {
+  "src": "photo-soccer.cb-mancity.jpg",
+  "author": "Cléria De Souza",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Etihad_Stadium.jpg",
+  "file": "File:Etihad Stadium.jpg"
+ },
+ "soccer.cb-dortmund": {
+  "src": "photo-soccer.cb-dortmund.jpg",
+  "author": "Lispir (Lispir)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Borussia_Dortmund_logo.svg",
+  "file": "File:Borussia Dortmund logo.svg"
+ },
+ "soccer.cb-juve": {
+  "src": "photo-soccer.cb-juve.jpg",
+  "author": "forzaq8 from kuwait, kuwait",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Juventus_v_Real_Madrid,_Champions_League,_Stadium,_Turin,_2013.jpg",
+  "file": "File:Juventus v Real Madrid, Champions League, Stadium, Turin, 2013.jpg"
+ },
+ "soccer.cb-inter": {
+  "src": "photo-soccer.cb-inter.jpg",
+  "author": "Coolcaesar",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2200_Mission_College_Boulevard.jpg",
+  "file": "File:2200 Mission College Boulevard.jpg"
+ },
+ "soccer.cb-psg": {
+  "src": "photo-soccer.cb-psg.jpg",
+  "author": "Topfmodel",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Parc_des_Princes_-_Tribune_Borelli.jpg",
+  "file": "File:Parc des Princes - Tribune Borelli.jpg"
+ },
+ "soccer.cb-atletico": {
+  "src": "photo-soccer.cb-atletico.jpg",
+  "author": "Elwin594",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Final_Score_-_Atleti_vs_Real_Madrid.png",
+  "file": "File:Final Score - Atleti vs Real Madrid.png"
+ },
+ "soccer.cb-clasico": {
+  "src": "photo-soccer.cb-clasico.jpg",
+  "author": "Xavier Rondón Medina",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Final_SuperCopa_ESP_2011_(6056383408).jpg",
+  "file": "File:Final SuperCopa ESP 2011 (6056383408).jpg"
+ },
+ "soccer.cb-kashima": {
+  "src": "photo-soccer.cb-kashima.jpg",
+  "author": "Waka77",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Kashima_Stadium_1.JPG",
+  "file": "File:Kashima Stadium 1.JPG"
+ },
+ "soccer.cb-urawa": {
+  "src": "photo-soccer.cb-urawa.jpg",
+  "author": "Spitfireap",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Saitama_Stadium_Panorama.jpg",
+  "file": "File:Saitama Stadium Panorama.jpg"
+ },
+ "soccer.cb-marinos": {
+  "src": "photo-soccer.cb-marinos.jpg",
+  "author": "WAKA77",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Nissan_Stadium_20101123.jpg",
+  "file": "File:Nissan Stadium 20101123.jpg"
+ },
+ "soccer.cb-tottenham": {
+  "src": "photo-soccer.cb-tottenham.jpg",
+  "author": "Arne Müseler",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:London_Tottenham_Hotspur_Stadium.jpg",
+  "file": "File:London Tottenham Hotspur Stadium.jpg"
+ },
+ "soccer.cb-roma": {
+  "src": "photo-soccer.cb-roma.jpg",
+  "author": "Vincenzo.togni",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Stadio_Olimpico_di_Roma_before_the_match_AS_Roma_vs_HJK_Helsinki_(2022).jpg",
+  "file": "File:The Stadio Olimpico di Roma before the match AS Roma vs HJK Helsinki (2022).jpg"
+ },
+ "soccer.cb-benfica": {
+  "src": "photo-soccer.cb-benfica.jpg",
+  "author": "Bento Mântua (died in 1926)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Emblema_Benfica_1930_(Sem_fundo).png",
+  "file": "File:Emblema Benfica 1930 (Sem fundo).png"
+ },
+ "soccer.cb-boca": {
+  "src": "photo-soccer.cb-boca.jpg",
+  "author": "Club Atlético Boca Juniors",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Club_Atl%C3%A9tico_Boca_Juniors_logo_(70_stars).png",
+  "file": "File:Club Atlético Boca Juniors logo (70 stars).png"
+ },
+ "soccer.cb-river": {
+  "src": "photo-soccer.cb-river.jpg",
+  "author": "Club Atlético River Plate",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Club_Atl%C3%A9tico_River_Plate_logo.svg",
+  "file": "File:Club Atlético River Plate logo.svg"
+ },
+ "soccer.cb-marseille": {
+  "src": "photo-soccer.cb-marseille.jpg",
+  "author": "Unknown/OM",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:OM_2026_logo.png",
+  "file": "File:OM 2026 logo.png"
+ },
+ "soccer.cb-milanderby": {
+  "src": "photo-soccer.cb-milanderby.jpg",
+  "author": "FC Internazionale Milano S.p.A. / Bureau Borsche",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FC_Internazionale_Milano_2021.svg",
+  "file": "File:FC Internazionale Milano 2021.svg"
+ },
+ "soccer.cb-manderby": {
+  "src": "photo-soccer.cb-manderby.jpg",
+  "author": "EclecticArkie",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Manchester_Derby_Kits.svg",
+  "file": "File:Manchester Derby Kits.svg"
+ },
+ "soccer.cb-mersey": {
+  "src": "photo-soccer.cb-mersey.jpg",
+  "author": "Everton Football Club",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Merseyside_Derby_2017_(1)_-_Everton_Football_Club.png",
+  "file": "File:Merseyside Derby 2017 (1) - Everton Football Club.png"
+ },
+ "soccer.cb-bernabeu": {
+  "src": "photo-soccer.cb-bernabeu.jpg",
+  "author": "Nationaal Archief, Den Haag, Rijksfotoarchief: Fotocollectie…",
+  "license": "CC BY-SA 3.0 NL",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Santiago_Bernabeu.jpg",
+  "file": "File:Santiago Bernabeu.jpg"
+ },
+ "soccer.cb-campnou": {
+  "src": "photo-soccer.cb-campnou.jpg",
+  "author": "Oh-Barcelona.com from Barcelona, Spain",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Camp_Nou_aerial_(cropped).jpg",
+  "file": "File:Camp Nou aerial (cropped).jpg"
+ },
+ "soccer.cb-oldtrafford": {
+  "src": "photo-soccer.cb-oldtrafford.jpg",
+  "author": "Arne Müseler",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Manchester_United_Old_Trafford_(cropped).jpg",
+  "file": "File:Manchester United Old Trafford (cropped).jpg"
+ },
+ "soccer.cb-anfield": {
+  "src": "photo-soccer.cb-anfield.jpg",
+  "author": "Ruaraidh Gillies",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Panorama_of_Anfield_with_new_main_stand_(29676137824).jpg",
+  "file": "File:Panorama of Anfield with new main stand (29676137824).jpg"
+ },
+ "soccer.cb-wembley": {
+  "src": "photo-soccer.cb-wembley.jpg",
+  "author": "Øyvind Vik",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:England_mai_2007_040.jpg",
+  "file": "File:England mai 2007 040.jpg"
+ },
+ "soccer.cb-kawasaki": {
+  "src": "photo-soccer.cb-kawasaki.jpg",
+  "author": "Waka77",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Todoroki_15031401.JPG",
+  "file": "File:Todoroki 15031401.JPG"
+ },
+ "soccer.cb-gamba": {
+  "src": "photo-soccer.cb-gamba.jpg",
+  "author": "Gamba Osaka",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gamba_Osaka_logo.svg",
+  "file": "File:Gamba Osaka logo.svg"
+ },
+ "soccer.cb-superclasico": {
+  "src": "photo-soccer.cb-superclasico.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mourzo_v_ramondiaz.jpg",
+  "file": "File:Mourzo v ramondiaz.jpg"
+ },
+ "soccer.cb-klassieker": {
+  "src": "photo-soccer.cb-klassieker.jpg",
+  "author": "Polygoon Hollands Nieuws",
+  "license": "CC BY-SA 3.0 NL",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ajax_voetbalkampioen_van_Nederland.ogv",
+  "file": "File:Ajax voetbalkampioen van Nederland.ogv"
+ },
+ "soccer.cb-feyenoord": {
+  "src": "photo-soccer.cb-feyenoord.jpg",
+  "author": "Feyenoord Rotterdam N.V.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Feyenoord_logo_since_2009.svg",
+  "file": "File:Feyenoord logo since 2009.svg"
+ },
+ "soccer.cb-bombonera": {
+  "src": "photo-soccer.cb-bombonera.jpg",
+  "author": "ProtoplasmaKid",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Alberto_J._Armando_%22La_Bombonera%22_01.jpg",
+  "file": "File:Vista aérea del Estadio Alberto J. Armando \"La Bombonera\" 01.jpg"
+ },
+ "soccer.cb-gunners": {
+  "src": "photo-soccer.cb-gunners.jpg",
+  "author": "Arne Müseler",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:London_Emirates_Stadium_arsenal.jpg",
+  "file": "File:London Emirates Stadium arsenal.jpg"
+ },
+ "soccer.cb-cantera": {
+  "src": "photo-soccer.cb-cantera.jpg",
+  "author": "Tysto",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Youth-soccer-indiana.jpg",
+  "file": "File:Youth-soccer-indiana.jpg"
+ },
+ "soccer.st-messi": {
+  "src": "photo-soccer.st-messi.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg",
+  "file": "File:Leo Messi Argentina v Egypt 7 July 2026-1.jpg"
+ },
+ "soccer.st-cronaldo": {
+  "src": "photo-soccer.st-cronaldo.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg",
+  "file": "File:Cristiano Ronaldo Croatia v Portugal 2 July 2026-075 (cropped).jpg"
+ },
+ "soccer.st-mbappe": {
+  "src": "photo-soccer.st-mbappe.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kylian_Mbappe_France_v_Senegal_16_June_2026-391_(cropped).jpg",
+  "file": "File:Kylian Mbappe France v Senegal 16 June 2026-391 (cropped).jpg"
+ },
+ "soccer.st-haaland": {
+  "src": "photo-soccer.st-haaland.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg",
+  "file": "File:Erling Haaland Morocco v Norway 7 June 2026-51.jpg"
+ },
+ "soccer.st-yamal": {
+  "src": "photo-soccer.st-yamal.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamine_Yamal_France_v_Spain_7.24.26-142.jpg",
+  "file": "File:Lamine Yamal France v Spain 7.24.26-142.jpg"
+ },
+ "soccer.st-vinicius": {
+  "src": "photo-soccer.st-vinicius.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vin%C3%ADcius_J%C3%BAnior_Brazil_V_Morocco_13_June_2026-207_(cropped).jpg",
+  "file": "File:Vinícius Júnior Brazil V Morocco 13 June 2026-207 (cropped).jpg"
+ },
+ "soccer.st-bellingham": {
+  "src": "photo-soccer.st-bellingham.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jude_Bellingham_England_v_Panama_27_June_26-160_(cropped).jpg",
+  "file": "File:Jude Bellingham England v Panama 27 June 26-160 (cropped).jpg"
+ },
+ "soccer.st-salah": {
+  "src": "photo-soccer.st-salah.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg",
+  "file": "File:Mohamed Salah Argentina v Egypt 7 July 2026-163 (cropped).jpg"
+ },
+ "soccer.st-kane": {
+  "src": "photo-soccer.st-kane.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Harry_Kane_England_v_Ghana_23_June_2026-219_(cropped).jpg",
+  "file": "File:Harry Kane England v Ghana 23 June 2026-219 (cropped).jpg"
+ },
+ "soccer.st-pedri": {
+  "src": "photo-soccer.st-pedri.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pedri_Argentina_v_Spain_19_July_2026-197_(cropped).jpg",
+  "file": "File:Pedri Argentina v Spain 19 July 2026-197 (cropped).jpg"
+ },
+ "soccer.st-dembele": {
+  "src": "photo-soccer.st-dembele.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ousmane_Dembele_France_v_Senegal_16_June_2026-341_(cropped).jpg",
+  "file": "File:Ousmane Dembele France v Senegal 16 June 2026-341 (cropped).jpg"
+ },
+ "soccer.st-mitoma": {
+  "src": "photo-soccer.st-mitoma.jpg",
+  "author": "jamesboyes",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kaoru_Mitoma_(2022).jpg",
+  "file": "File:Kaoru Mitoma (2022).jpg"
+ },
+ "soccer.st-kubo": {
+  "src": "photo-soccer.st-kubo.jpg",
+  "author": "Ali Mohammed Mahdi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Takefusa_Kubo.jpg",
+  "file": "File:Takefusa Kubo.jpg"
+ },
+ "soccer.st-bonmati": {
+  "src": "photo-soccer.st-bonmati.jpg",
+  "author": "copy by Kelsiesmith7",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2019-05-18_Fu%C3%9Fball,_Frauen,_UEFA_Women%27s_Champions_League,_Olympique_Lyonnais_-_FC_Barcelona_StP_0032_LR10_by_Stepro_(cropped).jpg",
+  "file": "File:2019-05-18 Fußball, Frauen, UEFA Women's Champions League, Olympique Lyonnais - FC Barcelona StP 0032 LR10 by Stepro (cropped).jpg"
+ },
+ "soccer.st-debruyne": {
+  "src": "photo-soccer.st-debruyne.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_(cropped).jpg",
+  "file": "File:Kevin De Bruyne USMNT v Belgium Mar 28 2026-64 (cropped).jpg"
+ },
+ "soccer.st-endo": {
+  "src": "photo-soccer.st-endo.jpg",
+  "author": "Jeollo von VfB-exklusiv.de",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wataru_endo.jpg",
+  "file": "File:Wataru endo.jpg"
+ },
+ "soccer.st-saka": {
+  "src": "photo-soccer.st-saka.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bukayo_Saka_England_v_Panama_27_June_26-108_(cropped).jpg",
+  "file": "File:Bukayo Saka England v Panama 27 June 26-108 (cropped).jpg"
+ },
+ "soccer.st-musiala": {
+  "src": "photo-soccer.st-musiala.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jamal_Musiala_Ecuador_v_Germany_25_June_2026-174_(cropped).jpg",
+  "file": "File:Jamal Musiala Ecuador v Germany 25 June 2026-174 (cropped).jpg"
+ },
+ "soccer.st-son": {
+  "src": "photo-soccer.st-son.jpg",
+  "author": "Ujishadow",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BFA_2023_-2_Heung-Min_Son_(cropped).jpg",
+  "file": "File:BFA 2023 -2 Heung-Min Son (cropped).jpg"
+ },
+ "soccer.st-wirtz": {
+  "src": "photo-soccer.st-wirtz.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Florian_Wirtz_Ecuador_v_Germany_25_June_2026-181_(cropped).jpg",
+  "file": "File:Florian Wirtz Ecuador v Germany 25 June 2026-181 (cropped).jpg"
+ },
+ "soccer.st-lautaro": {
+  "src": "photo-soccer.st-lautaro.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lautaro_Martinez_Argentina_v_Spain_19_July_2026-049_(cropped).jpg",
+  "file": "File:Lautaro Martinez Argentina v Spain 19 July 2026-049 (cropped).jpg"
+ },
+ "soccer.st-alvarez": {
+  "src": "photo-soccer.st-alvarez.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Julian_Alvarez_Argentina_v_Spain_19_July_2026-173_(cropped).jpg",
+  "file": "File:Julian Alvarez Argentina v Spain 19 July 2026-173 (cropped).jpg"
+ },
+ "soccer.st-valverde": {
+  "src": "photo-soccer.st-valverde.jpg",
+  "author": "Uilhfdghuidgfiuhgdfhui",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Valverde_playing_for_Real_Madrid_in_2025.png",
+  "file": "File:Valverde playing for Real Madrid in 2025.png"
+ },
+ "soccer.st-rice": {
+  "src": "photo-soccer.st-rice.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Declan_Rice_England_v_Ghana_23_June_2026-150.jpg",
+  "file": "File:Declan Rice England v Ghana 23 June 2026-150.jpg"
+ },
+ "soccer.st-bruno": {
+  "src": "photo-soccer.st-bruno.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27_(cropped).jpg",
+  "file": "File:Bruno Fernandes USMNT v Portugal Mar 31 2026-27 (cropped).jpg"
+ },
+ "soccer.st-palmer": {
+  "src": "photo-soccer.st-palmer.jpg",
+  "author": "The White House",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cole_Palmer_2025_FIFA_Club_World_Cup_Final.jpg",
+  "file": "File:Cole Palmer 2025 FIFA Club World Cup Final.jpg"
+ },
+ "soccer.st-kimmich": {
+  "src": "photo-soccer.st-kimmich.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joshua_Kimmich_Ecuador_v_Germany_25_June_2026-149.jpg",
+  "file": "File:Joshua Kimmich Ecuador v Germany 25 June 2026-149.jpg"
+ },
+ "soccer.st-courtois": {
+  "src": "photo-soccer.st-courtois.jpg",
+  "author": "Кирилл Венедиктов",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Thibaut_Courtois_at_the_2018_World_Cup_(cropped).jpg",
+  "file": "File:Thibaut Courtois at the 2018 World Cup (cropped).jpg"
+ },
+ "soccer.st-donnarumma": {
+  "src": "photo-soccer.st-donnarumma.jpg",
+  "author": "MichaelEmilio",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Norway_Italy_-_June_2025_A_17_(Gianluigi_Donnarumma).jpg",
+  "file": "File:Norway Italy - June 2025 A 17 (Gianluigi Donnarumma).jpg"
+ },
+ "soccer.st-emi": {
+  "src": "photo-soccer.st-emi.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Emiliano_Martinez_Argentina_v_Egypt_7_July_2026-093_(cropped).jpg",
+  "file": "File:Emiliano Martinez Argentina v Egypt 7 July 2026-093 (cropped).jpg"
+ },
+ "soccer.st-saliba": {
+  "src": "photo-soccer.st-saliba.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:William_Saliba_France_v_Senegal_16_June_2026-336_(cropped).jpg",
+  "file": "File:William Saliba France v Senegal 16 June 2026-336 (cropped).jpg"
+ },
+ "soccer.st-nico": {
+  "src": "photo-soccer.st-nico.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nico_Williams_Argentina_v_Spain_19_July_2026-196_(cropped).jpg",
+  "file": "File:Nico Williams Argentina v Spain 19 July 2026-196 (cropped).jpg"
+ },
+ "soccer.st-doue": {
+  "src": "photo-soccer.st-doue.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Desire_Doue_France_v_Senegal_16_June_2026-223_(cropped).jpg",
+  "file": "File:Desire Doue France v Senegal 16 June 2026-223 (cropped).jpg"
+ },
+ "soccer.st-kamada": {
+  "src": "photo-soccer.st-kamada.jpg",
+  "author": "Sven Mandel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2022128173756_2022-05-08_Fussball_Eintracht_Frankfurt_vs_Borussia_M%C3%B6nchengladbach_-_Sven_-_1D_X_MK_II_-_0725_-_AK8I7460_(Daichi_Kamada_cropped).jpg",
+  "file": "File:2022128173756 2022-05-08 Fussball Eintracht Frankfurt vs Borussia Mönchengladbach - Sven - 1D X MK II - 0725 - AK8I7460 (Daichi Kamada cropped).jpg"
+ },
+ "soccer.st-doan": {
+  "src": "photo-soccer.st-doan.jpg",
+  "author": "Amir Ostovari",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ritsu_Doan,_2019_AFC_Asian_Cup_1.jpg",
+  "file": "File:Ritsu Doan, 2019 AFC Asian Cup 1.jpg"
+ },
+ "soccer.st-ueda": {
+  "src": "photo-soccer.st-ueda.jpg",
+  "author": "Carlo Bruil Fotografie",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Go_Ahead_Eagles_-_Feyenoord_-_53679351240_(Ayase_Ueda).jpg",
+  "file": "File:Go Ahead Eagles - Feyenoord - 53679351240 (Ayase Ueda).jpg"
+ },
+ "soccer.st-kerr": {
+  "src": "photo-soccer.st-kerr.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sam_Kerr_Gotham_v_Seattle_18_July_2026-378_(cropped).jpg",
+  "file": "File:Sam Kerr Gotham v Seattle 18 July 2026-378 (cropped).jpg"
+ },
+ "soccer.st-putellas": {
+  "src": "photo-soccer.st-putellas.jpg",
+  "author": "MichaelEmilio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brann_-_Bar%C3%A7a_Femen%C3%AD_CG3A5851_(cropped).jpg",
+  "file": "File:Brann - Barça Femení CG3A5851 (cropped).jpg"
+ },
+ "soccer.st-miyazawa": {
+  "src": "photo-soccer.st-miyazawa.jpg",
+  "author": "James Boyes",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BHA_Women_2_MUFC_Women_3_02_11_2025-220_(cropped).jpg",
+  "file": "File:BHA Women 2 MUFC Women 3 02 11 2025-220 (cropped).jpg"
+ },
+ "soccer.st-gyokeres": {
+  "src": "photo-soccer.st-gyokeres.jpg",
+  "author": "Mikael Hervestad",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Viktor_Gy%C3%B6keres_2026-06-04_1.jpg",
+  "file": "File:Viktor Gyökeres 2026-06-04 1.jpg"
+ },
+ "soccer.st-ferran": {
+  "src": "photo-soccer.st-ferran.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferran_Torres_France_v_Spain_7.24.26-237_(cropped).jpg",
+  "file": "File:Ferran Torres France v Spain 7.24.26-237 (cropped).jpg"
+ },
+ "soccer.st-cubarsi": {
+  "src": "photo-soccer.st-cubarsi.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pau_Cubarsi_Argentina_v_Spain_19_July_2026-181_(cropped).jpg",
+  "file": "File:Pau Cubarsi Argentina v Spain 19 July 2026-181 (cropped).jpg"
+ },
+ "soccer.st-simon": {
+  "src": "photo-soccer.st-simon.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Unai_Simon_Argentina_v_Spain_19_July_2026-078_(cropped).jpg",
+  "file": "File:Unai Simon Argentina v Spain 19 July 2026-078 (cropped).jpg"
+ },
+ "soccer.st-nuno": {
+  "src": "photo-soccer.st-nuno.jpg",
+  "author": "YantsImages",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Portugal_national_football_team_0866_(cropped).jpg",
+  "file": "File:Portugal national football team 0866 (cropped).jpg"
+ },
+ "soccer.st-gvardiol": {
+  "src": "photo-soccer.st-gvardiol.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Josko_Gvardiol_Croatia_v_Portugal_2_July_2026-262.jpg",
+  "file": "File:Josko Gvardiol Croatia v Portugal 2 July 2026-262.jpg"
+ },
+ "soccer.st-macallister": {
+  "src": "photo-soccer.st-macallister.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alexis_Mac_Allister_Argentina_v_Spain_19_July_2026-162_(cropped).jpg",
+  "file": "File:Alexis Mac Allister Argentina v Spain 19 July 2026-162 (cropped).jpg"
+ },
+ "soccer.st-odegaard": {
+  "src": "photo-soccer.st-odegaard.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Martin_Odegaard_France_v_Norway_26_June_26-014.jpg",
+  "file": "File:Martin Odegaard France v Norway 26 June 26-014.jpg"
+ },
+ "soccer.st-oyarzabal": {
+  "src": "photo-soccer.st-oyarzabal.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mikel_Oyarzabal_France_v_Spain_7.24.26-161_(cropped).jpg",
+  "file": "File:Mikel Oyarzabal France v Spain 7.24.26-161 (cropped).jpg"
+ },
+ "soccer.st-olmo": {
+  "src": "photo-soccer.st-olmo.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dani_Olmo_France_v_Spain_7.24.26-176_(cropped).jpg",
+  "file": "File:Dani Olmo France v Spain 7.24.26-176 (cropped).jpg"
+ },
+ "soccer.st-itakura": {
+  "src": "photo-soccer.st-itakura.jpg",
+  "author": "Mtjonenfa",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ko_Itakura_(cropped).jpg",
+  "file": "File:Ko Itakura (cropped).jpg"
+ },
+ "soccer.st-zion": {
+  "src": "photo-soccer.st-zion.jpg",
+  "author": "RuinDig/Yuki Uchida",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ZION_SUZUKI_-_JPN_vs_THA_-_Friendly_Match_-_2024.01.01.jpg",
+  "file": "File:ZION SUZUKI - JPN vs THA - Friendly Match - 2024.01.01.jpg"
+ },
+ "soccer.st-nakamura": {
+  "src": "photo-soccer.st-nakamura.jpg",
+  "author": "Paté kroute",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Nakamura_asse_sr_2425.png",
+  "file": "File:Nakamura asse sr 2425.png"
+ },
+ "soccer.st-ito": {
+  "src": "photo-soccer.st-ito.jpg",
+  "author": "Paté kroute",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ito_asse_sr_2425.png",
+  "file": "File:Ito asse sr 2425.png"
+ },
+ "soccer.st-tomiyasu": {
+  "src": "photo-soccer.st-tomiyasu.jpg",
+  "author": "Supporterhéninois",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:RC_Lens_-_Arsenal_FC_(03-10-2023)_29.jpg",
+  "file": "File:RC Lens - Arsenal FC (03-10-2023) 29.jpg"
+ },
+ "soccer.st-lauren": {
+  "src": "photo-soccer.st-lauren.jpg",
+  "author": "James Boyes from UK",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lauren_James_Eng_Women_0_Czech_Rep_0_11_10_2022-488_(52426864234)_(cropped_-_James).jpg",
+  "file": "File:Lauren James Eng Women 0 Czech Rep 0 11 10 2022-488 (52426864234) (cropped - James).jpg"
+ },
+ "soccer.st-rodman": {
+  "src": "photo-soccer.st-rodman.jpg",
+  "author": "S. Davis",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Trinity_Rodman.jpg",
+  "file": "File:Trinity Rodman.jpg"
+ },
+ "soccer.st-paralluelo": {
+  "src": "photo-soccer.st-paralluelo.jpg",
+  "author": "Rh723",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Salma_Paralluelo_2026_(cropped).jpg",
+  "file": "File:Salma Paralluelo 2026 (cropped).jpg"
+ },
+ "soccer.le-pele": {
+  "src": "photo-soccer.le-pele.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pele_con_brasil_(cropped).jpg",
+  "file": "File:Pele con brasil (cropped).jpg"
+ },
+ "soccer.le-maradona": {
+  "src": "photo-soccer.le-maradona.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Argentina_celebrando_copa_(cropped).jpg",
+  "file": "File:Argentina celebrando copa (cropped).jpg"
+ },
+ "soccer.le-cruyff": {
+  "src": "photo-soccer.le-cruyff.jpg",
+  "author": "Mieremet, Rob / Anefo",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Johan_Cruyff_1974c.jpg",
+  "file": "File:Johan Cruyff 1974c.jpg"
+ },
+ "soccer.le-beckenbauer": {
+  "src": "photo-soccer.le-beckenbauer.jpg",
+  "author": "Panini Group",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Franz_Beckenbauer_(1975).jpg",
+  "file": "File:Franz Beckenbauer (1975).jpg"
+ },
+ "soccer.le-zidane": {
+  "src": "photo-soccer.le-zidane.jpg",
+  "author": "Hadi Abyar",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zinedine_Zidane_by_Tasnim_03.jpg",
+  "file": "File:Zinedine Zidane by Tasnim 03.jpg"
+ },
+ "soccer.le-ronaldo": {
+  "src": "photo-soccer.le-ronaldo.jpg",
+  "author": "Lula Oficial",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:12.12.2025_%E2%80%93_Cerim%C3%B4nia_de_lan%C3%A7amento_do_SBT_News_-_54980664160_(cropped2).jpg",
+  "file": "File:12.12.2025 – Cerimônia de lançamento do SBT News - 54980664160 (cropped2).jpg"
+ },
+ "soccer.le-ronaldinho": {
+  "src": "photo-soccer.le-ronaldinho.jpg",
+  "author": "Nuță Lucian",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sports_Festival_2025_-_4_(cropped).jpg",
+  "file": "File:Sports Festival 2025 - 4 (cropped).jpg"
+ },
+ "soccer.le-beckham": {
+  "src": "photo-soccer.le-beckham.jpg",
+  "author": "Soccer Aid for Unicef",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:David_Beckham_UNICEF_(cropped2).jpg",
+  "file": "File:David Beckham UNICEF (cropped2).jpg"
+ },
+ "soccer.le-maldini": {
+  "src": "photo-soccer.le-maldini.jpg",
+  "author": "GOAL TV",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Paolo_Maldini_AC_Milan_Technical_director_2018.jpg",
+  "file": "File:Paolo Maldini AC Milan Technical director 2018.jpg"
+ },
+ "soccer.le-baggio": {
+  "src": "photo-soccer.le-baggio.jpg",
+  "author": "AbolfaZl0990",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D8%B1%D9%88%D8%A8%D8%B1%D8%AA%D9%88_%D8%A8%D8%A7%D8%AC%D9%88_(cropped).jpg",
+  "file": "File:روبرتو باجو (cropped).jpg"
+ },
+ "soccer.le-zico": {
+  "src": "photo-soccer.le-zico.jpg",
+  "author": "Doha Stadium Plus",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zico_2012.jpg",
+  "file": "File:Zico 2012.jpg"
+ },
+ "soccer.le-henry": {
+  "src": "photo-soccer.le-henry.jpg",
+  "author": "Web Summit",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Thierry_Henry_(51649035951)_(cropped).jpg",
+  "file": "File:Thierry Henry (51649035951) (cropped).jpg"
+ },
+ "soccer.le-iniesta": {
+  "src": "photo-soccer.le-iniesta.jpg",
+  "author": "Антон Зайцев",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ESP-RUS_(15).jpg",
+  "file": "File:ESP-RUS (15).jpg"
+ },
+ "soccer.le-buffon": {
+  "src": "photo-soccer.le-buffon.jpg",
+  "author": "MichaelEmilio",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Norway_Italy_-_June_2025_A_44_(Gianluigi_Buffon).jpg",
+  "file": "File:Norway Italy - June 2025 A 44 (Gianluigi Buffon).jpg"
+ },
+ "soccer.le-sawa": {
+  "src": "photo-soccer.le-sawa.jpg",
+  "author": "GoToVan from Vancouver, Canada",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Homare_Sawa_2015_(cropped).jpg",
+  "file": "File:Homare Sawa 2015 (cropped).jpg"
+ },
+ "soccer.le-nakata": {
+  "src": "photo-soccer.le-nakata.jpg",
+  "author": "norio nakayama",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hidetoshi_Nakata_in_Okinawa.jpg",
+  "file": "File:Hidetoshi Nakata in Okinawa.jpg"
+ },
+ "soccer.le-nakamura": {
+  "src": "photo-soccer.le-nakamura.jpg",
+  "author": "Neier",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shunsuke2_20080622.png",
+  "file": "File:Shunsuke2 20080622.png"
+ },
+ "soccer.le-osama": {
+  "src": "photo-soccer.le-osama.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pele_con_brasil_(cropped).jpg",
+  "file": "File:Pele con brasil (cropped).jpg"
+ },
+ "soccer.le-casillas": {
+  "src": "photo-soccer.le-casillas.jpg",
+  "author": "Web Summit",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Iker-Casillas-SportsTrade-2021-cropped.jpg",
+  "file": "File:Iker-Casillas-SportsTrade-2021-cropped.jpg"
+ },
+ "soccer.le-totti": {
+  "src": "photo-soccer.le-totti.jpg",
+  "author": "Антон Зайцев",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:KL-2018_(4).jpg",
+  "file": "File:KL-2018 (4).jpg"
+ },
+ "soccer.le-pirlo": {
+  "src": "photo-soccer.le-pirlo.jpg",
+  "author": "Original: Save the Dream from Doha, Qatar Derivative work: N…",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Andrea_Pirlo,_Save_the_Dream_at_the_Supercoppa_(cropped).jpg",
+  "file": "File:Andrea Pirlo, Save the Dream at the Supercoppa (cropped).jpg"
+ },
+ "soccer.le-ibrahimovic": {
+  "src": "photo-soccer.le-ibrahimovic.jpg",
+  "author": "Meghdad Madadi",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zlatan_Ibrahimovi%C4%87_June_2018.jpg",
+  "file": "File:Zlatan Ibrahimović June 2018.jpg"
+ },
+ "soccer.le-robertocarlos": {
+  "src": "photo-soccer.le-robertocarlos.jpg",
+  "author": "Web Summit",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LS3_1288_(53332367864)_(cropped).jpg",
+  "file": "File:LS3 1288 (53332367864) (cropped).jpg"
+ },
+ "soccer.le-cafu": {
+  "src": "photo-soccer.le-cafu.jpg",
+  "author": "Palácio do Planalto from Brasilia, Brasil",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:14_06_2019_Abertura_da_Copa_Am%C3%A9rica_Brasil_2019_(48064408836)_(cropped).jpg",
+  "file": "File:14 06 2019 Abertura da Copa América Brasil 2019 (48064408836) (cropped).jpg"
+ },
+ "soccer.le-kahn": {
+  "src": "photo-soccer.le-kahn.jpg",
+  "author": "Steffen Prößdorf",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2022-07-30_Fu%C3%9Fball,_M%C3%A4nner,_DFL-Supercup,_RB_Leipzig_-_FC_Bayern_M%C3%BCnchen_1DX_3179_by_Stepro.jpg",
+  "file": "File:2022-07-30 Fußball, Männer, DFL-Supercup, RB Leipzig - FC Bayern München 1DX 3179 by Stepro.jpg"
+ },
+ "soccer.le-klose": {
+  "src": "photo-soccer.le-klose.jpg",
+  "author": "Werner100359",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FC_RB_Salzburg_gegen_SCR_Altach_(2023-03-19)_44.jpg",
+  "file": "File:FC RB Salzburg gegen SCR Altach (2023-03-19) 44.jpg"
+ },
+ "soccer.le-gerrard": {
+  "src": "photo-soccer.le-gerrard.jpg",
+  "author": "Эдгар Брещанов",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Steven_Gerrard_2018.jpg",
+  "file": "File:Steven Gerrard 2018.jpg"
+ },
+ "soccer.le-rooney": {
+  "src": "photo-soccer.le-rooney.jpg",
+  "author": "All-Pro Reels from District of Columbia, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wayne_Rooney_(50121495731)_(cropped).jpg",
+  "file": "File:Wayne Rooney (50121495731) (cropped).jpg"
+ },
+ "soccer.le-figo": {
+  "src": "photo-soccer.le-figo.jpg",
+  "author": "Žan Kolman",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Luis_Figo_2023.jpg",
+  "file": "File:Luis Figo 2023.jpg"
+ },
+ "soccer.le-drogba": {
+  "src": "photo-soccer.le-drogba.jpg",
+  "author": "Y.Leclercq©",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Didier_Drogba_(2019)_(cropped2).jpg",
+  "file": "File:Didier Drogba (2019) (cropped2).jpg"
+ },
+ "soccer.le-vanbasten": {
+  "src": "photo-soccer.le-vanbasten.jpg",
+  "author": "Пресс-служба Президента Российской Федерации",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin%27s_meeting_with_the_legends_of_world_football_(2018-07-06)_12.jpg",
+  "file": "File:Vladimir Putin's meeting with the legends of world football (2018-07-06) 12.jpg"
+ },
+ "soccer.le-gullit": {
+  "src": "photo-soccer.le-gullit.jpg",
+  "author": "Barcex",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:25th_Laureus_World_Sports_Awards_-_Ruud_Gullit_-_240422_131911_(cropped).jpg",
+  "file": "File:25th Laureus World Sports Awards - Ruud Gullit - 240422 131911 (cropped).jpg"
+ },
+ "soccer.le-bergkamp": {
+  "src": "photo-soccer.le-bergkamp.jpg",
+  "author": "Kieran Clarke",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dennis_Bergkamp_2014.jpg",
+  "file": "File:Dennis Bergkamp 2014.jpg"
+ },
+ "soccer.le-cannavaro": {
+  "src": "photo-soccer.le-cannavaro.jpg",
+  "author": "Doha Stadium Plus Qatar",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fabio_Cannavaro_2011.jpg",
+  "file": "File:Fabio Cannavaro 2011.jpg"
+ },
+ "soccer.le-matthaus": {
+  "src": "photo-soccer.le-matthaus.jpg",
+  "author": "Steffen Prößdorf",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2019_Lothar_Matth%C3%A4us.jpg",
+  "file": "File:2019 Lothar Matthäus.jpg"
+ },
+ "soccer.le-gerdmuller": {
+  "src": "photo-soccer.le-gerdmuller.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gerd_M%C3%BCller_c1973_(cropped).jpg",
+  "file": "File:Gerd Müller c1973 (cropped).jpg"
+ },
+ "soccer.le-romario": {
+  "src": "photo-soccer.le-romario.jpg",
+  "author": "Agência Senado from Brasilia, Brazil",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Senadores_da_57%C2%AA_Legislatura_(52689451805).jpg",
+  "file": "File:Senadores da 57ª Legislatura (52689451805).jpg"
+ },
+ "soccer.le-rivaldo": {
+  "src": "photo-soccer.le-rivaldo.jpg",
+  "author": "w:User:Nursultan12",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rivaldo_bunyodkor_2010.jpg",
+  "file": "File:Rivaldo bunyodkor 2010.jpg"
+ },
+ "soccer.le-garrincha": {
+  "src": "photo-soccer.le-garrincha.jpg",
+  "author": "El Gráfico",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:MFdSantos-Garrincha.jpg",
+  "file": "File:MFdSantos-Garrincha.jpg"
+ },
+ "soccer.le-kamamoto": {
+  "src": "photo-soccer.le-kamamoto.jpg",
+  "author": "Ogiyoshisan",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kunishige_Kamamoto_IMG_3322_20140110.JPG",
+  "file": "File:Kunishige Kamamoto IMG 3322 20140110.JPG"
+ },
+ "soccer.le-miahamm": {
+  "src": "photo-soccer.le-miahamm.jpg",
+  "author": "momovieman",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mia_Hamm_signing_an_autograph.jpg",
+  "file": "File:Mia Hamm signing an autograph.jpg"
+ },
+ "soccer.le-distefano": {
+  "src": "photo-soccer.le-distefano.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "CC BY-SA 3.0 NL",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Alfredo_Di_St%C3%A9fano_1962.jpg",
+  "file": "File:Alfredo Di Stéfano 1962.jpg"
+ },
+ "soccer.le-puskas": {
+  "src": "photo-soccer.le-puskas.jpg",
+  "author": "Panini",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferenc_Puskas_en_1965.jpg",
+  "file": "File:Ferenc Puskas en 1965.jpg"
+ },
+ "soccer.le-yashin": {
+  "src": "photo-soccer.le-yashin.jpg",
+  "author": "Kroon, Ron for Anefo",
+  "license": "CC BY-SA 3.0 NL",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Lev_Yashin.jpg",
+  "file": "File:Lev Yashin.jpg"
+ },
+ "soccer.le-eusebio": {
+  "src": "photo-soccer.le-eusebio.jpg",
+  "author": "Harry Pot for Anefo ]]), 1945-1989 - negatiefstroken zwart/w…",
+  "license": "CC BY-SA 3.0 NL",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Eusebio_(1963_version2).jpg",
+  "file": "File:Eusebio (1963 version2).jpg"
+ },
+ "soccer.le-charlton": {
+  "src": "photo-soccer.le-charlton.jpg",
+  "author": "ANEFO",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:LondonHouseAmsterdam1966_Bobby_Charlton.jpg",
+  "file": "File:LondonHouseAmsterdam1966 Bobby Charlton.jpg"
+ },
+ "soccer.le-best": {
+  "src": "photo-soccer.le-best.jpg",
+  "author": "Bert Verhoeff for Anefo , NL-HaNA, ANEFO / neg. stroken, 194…",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:George_best_1976.jpg",
+  "file": "File:George best 1976.jpg"
+ },
+ "soccer.le-weah": {
+  "src": "photo-soccer.le-weah.jpg",
+  "author": "U.S. Embassy in Monrovia, Liberia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:George_Weah_in_2019_(cropped).jpg",
+  "file": "File:George Weah in 2019 (cropped).jpg"
+ },
+ "soccer.le-neeskens": {
+  "src": "photo-soccer.le-neeskens.jpg",
+  "author": "Mieremet, Rob / Anefo",
+  "license": "CC BY-SA 3.0 NL",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Johan_Neeskens_1974.jpg",
+  "file": "File:Johan Neeskens 1974.jpg"
+ },
+ "soccer.le-rijkaard": {
+  "src": "photo-soccer.le-rijkaard.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:FrankRijkaard2.jpg",
+  "file": "File:FrankRijkaard2.jpg"
+ },
+ "soccer.le-baresi": {
+  "src": "photo-soccer.le-baresi.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Franco_baresi_panini_card_1979.jpg",
+  "file": "File:Franco baresi panini card 1979.jpg"
+ },
+ "soccer.le-raul": {
+  "src": "photo-soccer.le-raul.jpg",
+  "author": "Barcex",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:25th_Laureus_World_Sports_Awards_-_Ra%C3%BAl_-_240422_132916-2_(cropped).jpg",
+  "file": "File:25th Laureus World Sports Awards - Raúl - 240422 132916-2 (cropped).jpg"
+ },
+ "soccer.le-batistuta": {
+  "src": "photo-soccer.le-batistuta.jpg",
+  "author": "Roberto Vicario",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Omar_Batistuta_(2).jpg",
+  "file": "File:Omar Batistuta (2).jpg"
+ },
+ "soccer.le-wambach": {
+  "src": "photo-soccer.le-wambach.jpg",
+  "author": "Abby_Wambach_USA_vs_Can_Sep17.jpg: Ampatent derivative work:…",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wambach-cropped.jpg",
+  "file": "File:Wambach-cropped.jpg"
+ },
+ "soccer.le-miyama": {
+  "src": "photo-soccer.le-miyama.jpg",
+  "author": "The original uploader was Thewomensgame at English Wikipedia…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aya_Miyama_in_2011.jpg",
+  "file": "File:Aya Miyama in 2011.jpg"
+ },
+ "soccer.le-okudera": {
+  "src": "photo-soccer.le-okudera.jpg",
+  "author": "https://www.youtube.com/channel/UCGT8-m8F4ymUUS8eRrwqlBg",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yasuhiko_Okudera.jpg",
+  "file": "File:Yasuhiko Okudera.jpg"
+ },
+ "soccer.le-ono": {
+  "src": "photo-soccer.le-ono.jpg",
+  "author": "Eric Berry aka Efcso",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shinji_Ono_WSW.jpg",
+  "file": "File:Shinji Ono WSW.jpg"
+ },
+ "soccer.le-endo": {
+  "src": "photo-soccer.le-endo.jpg",
+  "author": "Neier",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yasuhito_End%C5%8D_against_Bahrain_June_22_2008.png",
+  "file": "File:Yasuhito Endō against Bahrain June 22 2008.png"
+ },
+ "soccer.le-kawaguchi": {
+  "src": "photo-soccer.le-kawaguchi.jpg",
+  "author": "yoppy from Kawasaki, Kanagawa, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yoshikatsu_Kawaguchi.jpg",
+  "file": "File:Yoshikatsu Kawaguchi.jpg"
+ },
+ "soccer.dr-cruyff": {
+  "src": "photo-soccer.dr-cruyff.jpg",
+  "author": "Bert Verhoeff for Anefo , Nationaal Archief",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Oefeninterland_Nederland_tegen_Argentini%C3%AB_4-1;_nr._6,_7_Cruyff,_kop.jpg",
+  "file": "File:Oefeninterland Nederland tegen Argentinië 4-1; nr. 6, 7 Cruyff, kop.jpg"
+ },
+ "soccer.dr-rabona": {
+  "src": "photo-soccer.dr-rabona.jpg",
+  "author": "Kieran Clarke",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alex_Oxlade-Chamberlain_rabona.jpg",
+  "file": "File:Alex Oxlade-Chamberlain rabona.jpg"
+ },
+ "soccer.dr-mukaiten": {
+  "src": "photo-soccer.dr-mukaiten.jpg",
+  "author": "Rick Dikeman",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Football_in_Bloomington,_Indiana,_1995.jpg",
+  "file": "File:Football in Bloomington, Indiana, 1995.jpg"
+ },
+ "soccer.dr-nolook": {
+  "src": "photo-soccer.dr-nolook.jpg",
+  "author": "Дмитрий Неймырок",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Xabi_Alonso_Euro_2012_vs_France_02.jpg",
+  "file": "File:Xabi Alonso Euro 2012 vs France 02.jpg"
+ },
+ "soccer.dr-chip": {
+  "src": "photo-soccer.dr-chip.jpg",
+  "author": "Ronnie Macdonald",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ARS-OM_1314_Ramsey_free_kick_(cropped).jpg",
+  "file": "File:ARS-OM 1314 Ramsey free kick (cropped).jpg"
+ },
+ "soccer.dr-drive": {
+  "src": "photo-soccer.dr-drive.jpg",
+  "author": "Rick Dikeman",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Football_in_Bloomington,_Indiana,_1995.jpg",
+  "file": "File:Football in Bloomington, Indiana, 1995.jpg"
+ },
+ "soccer.dr-freestyle": {
+  "src": "photo-soccer.dr-freestyle.jpg",
+  "author": "Marie-Lan Nguyen",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Football_freestyle_2013_Masters_epee_t171023.jpg",
+  "file": "File:Football freestyle 2013 Masters epee t171023.jpg"
+ },
+ "soccer.tc-442": {
+  "src": "photo-soccer.tc-442.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Leaflet_advert_for_blackburn_rovers_match-1887.jpg",
+  "file": "File:Leaflet advert for blackburn rovers match-1887.jpg"
+ },
+ "soccer.tc-433": {
+  "src": "photo-soccer.tc-433.jpg",
+  "author": "Mario Ortegon",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:4-3-3.png",
+  "file": "File:4-3-3.png"
+ },
+ "soccer.tc-pep": {
+  "src": "photo-soccer.tc-pep.jpg",
+  "author": "Steffen Prößdorf",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Josep_Guardiola_2023-10-04_Fu%C3%9Fball,_M%C3%A4nner,_UEFA_Champions_League,_RB_Leipzig_-_Manchester_City_FC_1DX_2797_(cropped).jpg",
+  "file": "File:Josep Guardiola 2023-10-04 Fußball, Männer, UEFA Champions League, RB Leipzig - Manchester City FC 1DX 2797 (cropped).jpg"
+ },
+ "soccer.tc-offsidetrap": {
+  "src": "photo-soccer.tc-offsidetrap.jpg",
+  "author": "Steindy (talk) 23:45, 26 November 2010 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Clemens_Sch%C3%BCttengruber,_Fu%C3%9Fballschiedsrichter_(03).jpg",
+  "file": "File:Clemens Schüttengruber, Fußballschiedsrichter (03).jpg"
+ },
+ "soccer.tc-insidehalf": {
+  "src": "photo-soccer.tc-insidehalf.jpg",
+  "author": "No machine-readable author provided. MesserWoland assumed (b…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Boisko.svg",
+  "file": "File:Boisko.svg"
+ },
+ "soccer.tc-klopp": {
+  "src": "photo-soccer.tc-klopp.jpg",
+  "author": "Derivative work: EndzoneEnthusiast",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2022-07-21_Fu%C3%9Fball,_M%C3%A4nner,Freundschaftsspiel,_RB_Leipzig_-_FC_Liverpool_1DX_2243_by_Stepro_(cropped)_(cropped).jpg",
+  "file": "File:2022-07-21 Fußball, Männer,Freundschaftsspiel, RB Leipzig - FC Liverpool 1DX 2243 by Stepro (cropped) (cropped).jpg"
+ },
+ "soccer.tc-mourinho": {
+  "src": "photo-soccer.tc-mourinho.jpg",
+  "author": "Zafer",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Mourinho_20250206_(1).jpg",
+  "file": "File:José Mourinho 20250206 (1).jpg"
+ },
+ "soccer.tc-ferguson": {
+  "src": "photo-soccer.tc-ferguson.jpg",
+  "author": "Gordon Flood",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SAF_CL_semi_2009_(cropped).jpg",
+  "file": "File:SAF CL semi 2009 (cropped).jpg"
+ },
+ "soccer.tc-moriyasu": {
+  "src": "photo-soccer.tc-moriyasu.jpg",
+  "author": "内閣官房内閣広報室",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fumio_Kishida_with_Japan_National_Football_Team_after_Qatar_World_Cup_(8)_(cropped).jpg",
+  "file": "File:Fumio Kishida with Japan National Football Team after Qatar World Cup (8) (cropped).jpg"
+ },
+ "soccer.tc-tikitaka": {
+  "src": "photo-soccer.tc-tikitaka.jpg",
+  "author": "Илья Хохлов",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spain_national_football_team_Euro_2012_trophy_02.jpg",
+  "file": "File:Spain national football team Euro 2012 trophy 02.jpg"
+ },
+ "soccer.tc-totalfootball": {
+  "src": "photo-soccer.tc-totalfootball.jpg",
+  "author": "Rainer Mittelstädt",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-N0716-0311,_Fu%C3%9Fball-WM,_BRD_-_Niederlande_2-1.jpg",
+  "file": "File:Bundesarchiv Bild 183-N0716-0311, Fußball-WM, BRD - Niederlande 2-1.jpg"
+ },
+ "soccer.tc-catenaccio": {
+  "src": "photo-soccer.tc-catenaccio.jpg",
+  "author": "Catenaccio.png: Heimdall / *derivative work: Oldsteve69 (tal…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Catenaccio1.png",
+  "file": "File:Catenaccio1.png"
+ },
+ "soccer.tc-michels": {
+  "src": "photo-soccer.tc-michels.jpg",
+  "author": "Rob Bogaerts for Anefo",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Rinus_Michels_(1984).jpg",
+  "file": "File:Rinus Michels (1984).jpg"
+ },
+ "soccer.tc-sacchi": {
+  "src": "photo-soccer.tc-sacchi.jpg",
+  "author": "Elena Torre",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Arrigo_Sacchi_2007_(cropped).jpg",
+  "file": "File:Arrigo Sacchi 2007 (cropped).jpg"
+ },
+ "soccer.tc-herrera": {
+  "src": "photo-soccer.tc-herrera.jpg",
+  "author": "Original: Unknown authorUnknown author Derivative work: TDKR…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1964%E2%80%9365_Inter_Milan_-_Giacinto_Facchetti,_Helenio_Herrera_(cropped).jpg",
+  "file": "File:1964–65 Inter Milan - Giacinto Facchetti, Helenio Herrera (cropped).jpg"
+ },
+ "soccer.tc-osim": {
+  "src": "photo-soccer.tc-osim.jpg",
+  "author": "Radiofabrik Community Media Association Salzburg",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ivica_Osim_-_SK_Sturm_(1999).jpg",
+  "file": "File:Ivica Osim - SK Sturm (1999).jpg"
+ },
+ "soccer.tc-ancelotti": {
+  "src": "photo-soccer.tc-ancelotti.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carlo_Ancelotti_Brazil_V_Morocco_13_June_2026-34.jpg",
+  "file": "File:Carlo Ancelotti Brazil V Morocco 13 June 2026-34.jpg"
+ },
+ "soccer.tc-wenger": {
+  "src": "photo-soccer.tc-wenger.jpg",
+  "author": "Barcex",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Ars%C3%A8ne_Wenger_-_240422_192850_(cropped).jpg",
+  "file": "File:25th Laureus World Sports Awards - Red Carpet - Arsène Wenger - 240422 192850 (cropped).jpg"
+ },
+ "soccer.cp-ballondor": {
+  "src": "photo-soccer.cp-ballondor.jpg",
+  "author": "Tkotw12",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2016_Ballon_dOr_CR7Museum.jpg",
+  "file": "File:2016 Ballon dOr CR7Museum.jpg"
+ },
+ "soccer.cp-julesrimet": {
+  "src": "photo-soccer.cp-julesrimet.jpg",
+  "author": "Bert Verhoeff / Anefo",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Finale_wereldkampioenschap_voetbal_1974_in_Munchen,_West_Duitsland_tegen_Nederla,_Bestanddeelnr_927-3080.jpg",
+  "file": "File:Finale wereldkampioenschap voetbal 1974 in Munchen, West Duitsland tegen Nederla, Bestanddeelnr 927-3080.jpg"
+ },
+ "soccer.cp-johor": {
+  "src": "photo-soccer.cp-johor.jpg",
+  "author": "Dddeco",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Johor_Bahru_1997.jpg",
+  "file": "File:Johor Bahru 1997.jpg"
+ },
+ "soccer.cp-goldenglove": {
+  "src": "photo-soccer.cp-goldenglove.jpg",
+  "author": "Mariodpl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Golden_gloves.jpg",
+  "file": "File:Golden gloves.jpg"
+ },
+ "soccer.cp-womenballon": {
+  "src": "photo-soccer.cp-womenballon.jpg",
+  "author": "Barcex",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:25th_Laureus_World_Sports_Awards_-_240422_214032.jpg",
+  "file": "File:25th Laureus World Sports Awards - 240422 214032.jpg"
+ },
+ "soccer.cp-selecao": {
+  "src": "photo-soccer.cp-selecao.jpg",
+  "author": "Confederação Brasileira de Futebol",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Brazilian_Football_Confederation_logo.svg",
+  "file": "File:Brazilian Football Confederation logo.svg"
+ },
+ "soccer.cp-amatch": {
+  "src": "photo-soccer.cp-amatch.jpg",
+  "author": "Stef ter Braak",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Martijn_Bosman.jpg",
+  "file": "File:Martijn Bosman.jpg"
+ },
+ "soccer.cp-goldcup": {
+  "src": "photo-soccer.cp-goldcup.jpg",
+  "author": "James Pollard",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Ascot_Gold_Cup_1834_James_Pollard.jpg",
+  "file": "File:The Ascot Gold Cup 1834 James Pollard.jpg"
+ },
+ "soccer.cp-yashin": {
+  "src": "photo-soccer.cp-yashin.jpg",
+  "author": "Paté kroute",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Donnarumma_asse_psg_2425.png",
+  "file": "File:Donnarumma asse psg 2425.png"
+ },
+ "soccer.cp-threelions": {
+  "src": "photo-soccer.cp-threelions.jpg",
+  "author": "Sangjinhwa (originally America06)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Arms_of_The_Football_Association_(include_star).svg",
+  "file": "File:Arms of The Football Association (include star).svg"
+ },
+ "basket.kh-basketball": {
+  "src": "photo-basket.kh-basketball.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LeBron_James_Layup_(Cleveland_vs_Brooklyn_2018).jpg",
+  "file": "File:LeBron James Layup (Cleveland vs Brooklyn 2018).jpg"
+ },
+ "basket.kh-dunk": {
+  "src": "photo-basket.kh-dunk.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TMac_over_Deshawn.jpg",
+  "file": "File:TMac over Deshawn.jpg"
+ },
+ "basket.kh-defense": {
+  "src": "photo-basket.kh-defense.jpg",
+  "author": "Tim Wang",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carter_vs_Gasol,_Lakers_vs_Magic.jpg",
+  "file": "File:Carter vs Gasol, Lakers vs Magic.jpg"
+ },
+ "basket.kh-threept": {
+  "src": "photo-basket.kh-threept.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TMac_over_Deshawn.jpg",
+  "file": "File:TMac over Deshawn.jpg"
+ },
+ "basket.kh-freethrow": {
+  "src": "photo-basket.kh-freethrow.jpg",
+  "author": "Michael Sandoval from Pleasant Hill, CA, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kobe_Bryant_Freethrow_Spurs.jpg",
+  "file": "File:Kobe Bryant Freethrow Spurs.jpg"
+ },
+ "basket.kh-ball": {
+  "src": "photo-basket.kh-ball.jpg",
+  "author": "No machine-readable author provided. Jersyko assumed (based …",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Happy_face_ball.jpg",
+  "file": "File:Happy face ball.jpg"
+ },
+ "basket.kh-pg": {
+  "src": "photo-basket.kh-pg.jpg",
+  "author": "HITNOM",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FIBA_basketball_positioning.png",
+  "file": "File:FIBA basketball positioning.png"
+ },
+ "basket.kh-number": {
+  "src": "photo-basket.kh-number.jpg",
+  "author": "Shai Pal",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FC_Barcelona_-_Bayer_04_Leverkusen,_7_mar_2012_(07).jpg",
+  "file": "File:FC Barcelona - Bayer 04 Leverkusen, 7 mar 2012 (07).jpg"
+ },
+ "basket.kh-sg": {
+  "src": "photo-basket.kh-sg.jpg",
+  "author": "HITNOM",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FIBA_basketball_positioning.png",
+  "file": "File:FIBA basketball positioning.png"
+ },
+ "basket.kh-sf": {
+  "src": "photo-basket.kh-sf.jpg",
+  "author": "HITNOM",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FIBA_basketball_positioning.png",
+  "file": "File:FIBA basketball positioning.png"
+ },
+ "basket.kh-pf": {
+  "src": "photo-basket.kh-pf.jpg",
+  "author": "HITNOM",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FIBA_basketball_positioning.png",
+  "file": "File:FIBA basketball positioning.png"
+ },
+ "basket.kh-block": {
+  "src": "photo-basket.kh-block.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0 IT",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/it/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Blocked_shots_by_Oscar_Torres.JPG",
+  "file": "File:Blocked shots by Oscar Torres.JPG"
+ },
+ "basket.kh-buzzer": {
+  "src": "photo-basket.kh-buzzer.jpg",
+  "author": "Michael Saechang",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Derek_Fisher_buzzer_beater_vs._Clippers_in_2010.jpg",
+  "file": "File:Derek Fisher buzzer beater vs. Clippers in 2010.jpg"
+ },
+ "basket.kh-wheelchair": {
+  "src": "photo-basket.kh-wheelchair.jpg",
+  "author": "Wheelchair_basketball_090923_akita.jpg: User:STB-1 derivativ…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wheelchair_basketball_090923_akita_cropped.jpg",
+  "file": "File:Wheelchair basketball 090923 akita cropped.jpg"
+ },
+ "basket.kh-uniform": {
+  "src": "photo-basket.kh-uniform.jpg",
+  "author": "Massimo Finizio",
+  "license": "CC BY-SA 2.0 IT",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/it/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Three_point_shoot.JPG",
+  "file": "File:Three point shoot.JPG"
+ },
+ "basket.kh-tripledouble": {
+  "src": "photo-basket.kh-tripledouble.jpg",
+  "author": "New York World-Telegram and the Sun staff photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wilt_Chamberlain_Nate_Thurmond.jpg",
+  "file": "File:Wilt Chamberlain Nate Thurmond.jpg"
+ },
+ "basket.kh-doubledouble": {
+  "src": "photo-basket.kh-doubledouble.jpg",
+  "author": "New York World-Telegram and the Sun staff photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wilt_Chamberlain_Nate_Thurmond.jpg",
+  "file": "File:Wilt Chamberlain Nate Thurmond.jpg"
+ },
+ "basket.kh-sixthman": {
+  "src": "photo-basket.kh-sixthman.jpg",
+  "author": "Dan Fornal",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jamal_Crawford_2010_cropped.jpg",
+  "file": "File:Jamal Crawford 2010 cropped.jpg"
+ },
+ "basket.kh-street": {
+  "src": "photo-basket.kh-street.jpg",
+  "author": "Irene Tong",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:VeniceBeachStreetballers.jpg",
+  "file": "File:VeniceBeachStreetballers.jpg"
+ },
+ "basket.rl-shotclock": {
+  "src": "photo-basket.rl-shotclock.jpg",
+  "author": "TonyTheTiger",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20130103_Mitch_McGary_shot_clock-game_clock_(1).JPG",
+  "file": "File:20130103 Mitch McGary shot clock-game clock (1).JPG"
+ },
+ "basket.rl-sec24": {
+  "src": "photo-basket.rl-sec24.jpg",
+  "author": "TonyTheTiger",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20130103_Mitch_McGary_shot_clock-game_clock_(1).JPG",
+  "file": "File:20130103 Mitch McGary shot clock-game clock (1).JPG"
+ },
+ "basket.rl-jumpball": {
+  "src": "photo-basket.rl-jumpball.jpg",
+  "author": "Keith Allison from Owings Mills, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joakim_Noah_and_JaVale_McGee.jpg",
+  "file": "File:Joakim Noah and JaVale McGee.jpg"
+ },
+ "basket.rl-goaltending": {
+  "src": "photo-basket.rl-goaltending.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TMac_over_Deshawn.jpg",
+  "file": "File:TMac over Deshawn.jpg"
+ },
+ "basket.lg-nba": {
+  "src": "photo-basket.lg-nba.jpg",
+  "author": "Logo by Alan Siegel (born 1938), vectorization by Based5290",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:National_Basketball_Association_logo_2017-present.svg",
+  "file": "File:National Basketball Association logo 2017-present.svg"
+ },
+ "basket.lg-dunkcontest": {
+  "src": "photo-basket.lg-dunkcontest.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Obi_Toppin_(2022_All-Star_Weekend).jpg",
+  "file": "File:Obi Toppin (2022 All-Star Weekend).jpg"
+ },
+ "basket.lg-bleague": {
+  "src": "photo-basket.lg-bleague.jpg",
+  "author": "B.League",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:B.League_logo_(2026).svg",
+  "file": "File:B.League logo (2026).svg"
+ },
+ "basket.lg-ncaa": {
+  "src": "photo-basket.lg-ncaa.jpg",
+  "author": "NCAA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NCAA_logo.svg",
+  "file": "File:NCAA logo.svg"
+ },
+ "basket.lg-bpremier": {
+  "src": "photo-basket.lg-bpremier.jpg",
+  "author": "B.League",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:B.League_logo_(2026).svg",
+  "file": "File:B.League logo (2026).svg"
+ },
+ "basket.lg-finalfour": {
+  "src": "photo-basket.lg-finalfour.jpg",
+  "author": "United State Department of State's U.S. Department of State'…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:2014_NCAA_women%27s_basketball_tournament_Final_Four_Nashville.jpg",
+  "file": "File:2014 NCAA women's basketball tournament Final Four Nashville.jpg"
+ },
+ "basket.lg-ncaatourney": {
+  "src": "photo-basket.lg-ncaatourney.jpg",
+  "author": "National Collegiate Athletic Association",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:March_Madness_logo.svg",
+  "file": "File:March Madness logo.svg"
+ },
+ "basket.lg-acb": {
+  "src": "photo-basket.lg-acb.jpg",
+  "author": "Asociación de Clubs de Baloncesto",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Liga_Endesa_2019_logo.svg",
+  "file": "File:Liga Endesa 2019 logo.svg"
+ },
+ "basket.tm-lakers": {
+  "src": "photo-basket.tm-lakers.jpg",
+  "author": "The original uploader was Tkgd2007 at English Wikipedia.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Lakers_logo.svg",
+  "file": "File:Los Angeles Lakers logo.svg"
+ },
+ "basket.tm-celtics": {
+  "src": "photo-basket.tm-celtics.jpg",
+  "author": "Boston Celtics",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:CelticsWordmark.svg",
+  "file": "File:CelticsWordmark.svg"
+ },
+ "basket.tm-heat": {
+  "src": "photo-basket.tm-heat.jpg",
+  "author": "Miami Heat",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Miami_Heat_wordmark.gif",
+  "file": "File:Miami Heat wordmark.gif"
+ },
+ "basket.tm-bucks": {
+  "src": "photo-basket.tm-bucks.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Milwaukee_Bucks_wordmark_2015-current.png",
+  "file": "File:Milwaukee Bucks wordmark 2015-current.png"
+ },
+ "basket.tm-thunder": {
+  "src": "photo-basket.tm-thunder.jpg",
+  "author": "sportslogos.net",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Okc_wordmark.gif",
+  "file": "File:Okc wordmark.gif"
+ },
+ "basket.tm-brex": {
+  "src": "photo-basket.tm-brex.jpg",
+  "author": "Miyuki Meinaka",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brex_Arena,_May_2021_01.jpg",
+  "file": "File:Brex Arena, May 2021 01.jpg"
+ },
+ "basket.tm-jets": {
+  "src": "photo-basket.tm-jets.jpg",
+  "author": "Archiroid21",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LaLa_arena_2024.jpg",
+  "file": "File:LaLa arena 2024.jpg"
+ },
+ "basket.tm-kings": {
+  "src": "photo-basket.tm-kings.jpg",
+  "author": "Kk123456123456",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Okinawa_arena_2.jpg",
+  "file": "File:Okinawa arena 2.jpg"
+ },
+ "basket.tm-msg": {
+  "src": "photo-basket.tm-msg.jpg",
+  "author": "Ajay Suresh from New York, NY, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Madison_Square_Garden_(MSG)_-_Full_(48124330357).jpg",
+  "file": "File:Madison Square Garden (MSG) - Full (48124330357).jpg"
+ },
+ "basket.tm-sixers": {
+  "src": "photo-basket.tm-sixers.jpg",
+  "author": "Philadelphia 76ers",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Philadelphia76ers2.png",
+  "file": "File:Philadelphia76ers2.png"
+ },
+ "basket.tm-pistons": {
+  "src": "photo-basket.tm-pistons.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Detroit_Pistons.svg",
+  "file": "File:Logo of the Detroit Pistons.svg"
+ },
+ "basket.tm-nets": {
+  "src": "photo-basket.tm-nets.jpg",
+  "author": "Brooklyn Nets",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Brooklyn_Nets_newlogo.svg",
+  "file": "File:Brooklyn Nets newlogo.svg"
+ },
+ "basket.tm-blazers": {
+  "src": "photo-basket.tm-blazers.jpg",
+  "author": "Portland Trail Blazers",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:TrailBlazers.png",
+  "file": "File:TrailBlazers.png"
+ },
+ "basket.tm-grizzlies": {
+  "src": "photo-basket.tm-grizzlies.jpg",
+  "author": "sportslogos.net",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Memphis_grizzlies_wordmark.gif",
+  "file": "File:Memphis grizzlies wordmark.gif"
+ },
+ "basket.tm-pacers": {
+  "src": "photo-basket.tm-pacers.jpg",
+  "author": "sportslogos.net",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Indiana_Pacers_wordmark.gif",
+  "file": "File:Indiana Pacers wordmark.gif"
+ },
+ "basket.tm-hawks": {
+  "src": "photo-basket.tm-hawks.jpg",
+  "author": "sportslogos.net",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Atlanta_hawks_wordmark.png",
+  "file": "File:Atlanta hawks wordmark.png"
+ },
+ "basket.tm-alvark": {
+  "src": "photo-basket.tm-alvark.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TOKYO_FM_%E3%80%8EJA%E5%85%A8%E8%BE%B2COUNTDOWN_JAPAN%E3%80%8F%E5%85%AC%E9%96%8B%E7%94%9F%E6%94%BE%E9%80%81_HELLO!_ARENA_DAY_TOYOTA_ARENA_TOKYO_2025%E5%B9%B410%E6%9C%884%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202510041238_DSCN4991.jpg",
+  "file": "File:TOKYO FM 『JA全農COUNTDOWN JAPAN』公開生放送 HELLO! ARENA DAY TOYOTA ARENA TOKYO 2025年10月4日の東京 202510041238 DSCN4991.jpg"
+ },
+ "basket.tm-brave": {
+  "src": "photo-basket.tm-brave.jpg",
+  "author": "日陰猫Joga at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Todoroki_Arena.jpg",
+  "file": "File:Todoroki Arena.jpg"
+ },
+ "basket.tm-levanga": {
+  "src": "photo-basket.tm-levanga.jpg",
+  "author": "もんもん at Japanese Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:KITAYELL(1).jpg",
+  "file": "File:KITAYELL(1).jpg"
+ },
+ "basket.tm-duke": {
+  "src": "photo-basket.tm-duke.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Duke_Chapel_4_16_05.jpg",
+  "file": "File:Duke Chapel 4 16 05.jpg"
+ },
+ "basket.tm-unc": {
+  "src": "photo-basket.tm-unc.jpg",
+  "author": "University of North Carolina system",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:UNC_system_logo.png",
+  "file": "File:UNC system logo.png"
+ },
+ "basket.tm-ucla": {
+  "src": "photo-basket.tm-ucla.jpg",
+  "author": "b r e n t",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Janss_Steps,_Royce_Hall_in_background,_UCLA.jpg",
+  "file": "File:Janss Steps, Royce Hall in background, UCLA.jpg"
+ },
+ "basket.tm-bcors": {
+  "src": "photo-basket.tm-bcors.jpg",
+  "author": "Hanegi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BCORCENTER.jpg",
+  "file": "File:BCORCENTER.jpg"
+ },
+ "basket.tm-bostongarden": {
+  "src": "photo-basket.tm-bostongarden.jpg",
+  "author": "Copyright by Steve Lipofsky Basketballphoto.com",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lipofsky-Boston-Garden.jpg",
+  "file": "File:Lipofsky-Boston-Garden.jpg"
+ },
+ "basket.tm-panathinaikos": {
+  "src": "photo-basket.tm-panathinaikos.jpg",
+  "author": "Panathinaikos A.O.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Panathinaikos_A.O._logo.svg",
+  "file": "File:Panathinaikos A.O. logo.svg"
+ },
+ "basket.tm-seahorse": {
+  "src": "photo-basket.tm-seahorse.jpg",
+  "author": "Asturio Cantabrio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kariya_Wing_Arena_2020-10_ac_(4).jpg",
+  "file": "File:Kariya Wing Arena 2020-10 ac (4).jpg"
+ },
+ "basket.tm-susanoo": {
+  "src": "photo-basket.tm-susanoo.jpg",
+  "author": "NASA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Matsue_City_General_Gymnasium.png",
+  "file": "File:Matsue City General Gymnasium.png"
+ },
+ "basket.tm-dragonflies": {
+  "src": "photo-basket.tm-dragonflies.jpg",
+  "author": "南八尾電車区 at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:HRS_sunplaza_main1_021214.JPG",
+  "file": "File:HRS sunplaza main1 021214.JPG"
+ },
+ "basket.tm-dolphins": {
+  "src": "photo-basket.tm-dolphins.jpg",
+  "author": "円周率３パーセント",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NGO_Kita_Meijokoen_20250712_1446a.jpg",
+  "file": "File:NGO Kita Meijokoen 20250712 1446a.jpg"
+ },
+ "basket.tm-kentucky": {
+  "src": "photo-basket.tm-kentucky.jpg",
+  "author": "w_lemay",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Main,_University_of_Kentucky,_Administration_Drive,_Lexington,_KY_-_53670403663.jpg",
+  "file": "File:Old Main, University of Kentucky, Administration Drive, Lexington, KY - 53670403663.jpg"
+ },
+ "basket.tm-kansas": {
+  "src": "photo-basket.tm-kansas.jpg",
+  "author": "Concorde642",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:PXL_20230416_204313033.jpg",
+  "file": "File:PXL 20230416 204313033.jpg"
+ },
+ "basket.tm-uconn": {
+  "src": "photo-basket.tm-uconn.jpg",
+  "author": "Global Jet",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:UCONNfromsky.jpg",
+  "file": "File:UCONNfromsky.jpg"
+ },
+ "basket.tm-evessa": {
+  "src": "photo-basket.tm-evessa.jpg",
+  "author": "聖石大戦ぶぅぶぅ",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maishima_Arena.jpg",
+  "file": "File:Maishima Arena.jpg"
+ },
+ "basket.st-lebron": {
+  "src": "photo-basket.st-lebron.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LeBron_James,_25_November_2023_02_(cropped).jpg",
+  "file": "File:LeBron James, 25 November 2023 02 (cropped).jpg"
+ },
+ "basket.st-curry": {
+  "src": "photo-basket.st-curry.jpg",
+  "author": "The White House",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Steph_Curry_P20230117AS-1347_(cropped).jpg",
+  "file": "File:Steph Curry P20230117AS-1347 (cropped).jpg"
+ },
+ "basket.st-durant": {
+  "src": "photo-basket.st-durant.jpg",
+  "author": "YESNetwork",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kevin_Durant_Interview_in_2023_-_2.png",
+  "file": "File:Kevin Durant Interview in 2023 - 2.png"
+ },
+ "basket.st-doncic": {
+  "src": "photo-basket.st-doncic.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Luka_Doncic_(51914951721)_(cropped1).jpg",
+  "file": "File:Luka Doncic (51914951721) (cropped1).jpg"
+ },
+ "basket.st-jokic": {
+  "src": "photo-basket.st-jokic.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nikola_Jokic_free_throw_(cropped).jpg",
+  "file": "File:Nikola Jokic free throw (cropped).jpg"
+ },
+ "basket.st-giannis": {
+  "src": "photo-basket.st-giannis.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Giannis_Antetokounmpo_(51915153421)_(cropped).jpg",
+  "file": "File:Giannis Antetokounmpo (51915153421) (cropped).jpg"
+ },
+ "basket.st-sga": {
+  "src": "photo-basket.st-sga.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shai_Gilgeous-Alexander_-_Thunder_vs._Wizards.png",
+  "file": "File:Shai Gilgeous-Alexander - Thunder vs. Wizards.png"
+ },
+ "basket.st-wemby": {
+  "src": "photo-basket.st-wemby.jpg",
+  "author": "Frenchieinportland",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Victor_Wembanyama_San_Antonio_Spurs_2024.jpg",
+  "file": "File:Victor Wembanyama San Antonio Spurs 2024.jpg"
+ },
+ "basket.st-hachimura": {
+  "src": "photo-basket.st-hachimura.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rui_Hachimura_(52381582438).jpg",
+  "file": "File:Rui Hachimura (52381582438).jpg"
+ },
+ "basket.st-kawamura": {
+  "src": "photo-basket.st-kawamura.jpg",
+  "author": "りさこ",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yuki_Kawamura_2020-2021.jpg",
+  "file": "File:Yuki Kawamura 2020-2021.jpg"
+ },
+ "basket.st-watanabe": {
+  "src": "photo-basket.st-watanabe.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%B8%A1%E9%82%8A%E9%9B%84%E5%A4%AA_%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC7%E7%AF%80_%E3%82%A2%E3%83%AB%E3%83%90%E3%83%AB%E3%82%AF%E6%9D%B1%E4%BA%AC_vs_%E5%8D%83%E8%91%89%E3%82%B8%E3%82%A7%E3%83%83%E3%83%84_TOYOTA_ARENA_TOKYO_2025%E5%B9%B411%E6%9C%882%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202511021745_DSCN5748.jpg",
+  "file": "File:渡邊雄太 りそなグループ B.LEAGUE 2025-26 B1リーグ戦 第7節 アルバルク東京 vs 千葉ジェッツ TOYOTA ARENA TOKYO 2025年11月2日の東京 202511021745 DSCN5748.jpg"
+ },
+ "basket.st-tominaga": {
+  "src": "photo-basket.st-tominaga.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%B0%B8%E5%95%93%E7%94%9F_%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC6%E7%AF%80_%E3%82%B5%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E6%B8%8B%E8%B0%B7_vs_%E3%83%AC%E3%83%90%E3%83%B3%E3%82%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E3%81%B2%E3%81%8C%E3%81%97%E3%82%93%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2025%E5%B9%B410%E6%9C%8829%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202510291901_DSCN3888.jpg",
+  "file": "File:富永啓生 りそなグループ B.LEAGUE 2025-26 B1リーグ戦 第6節 サンロッカーズ渋谷 vs レバンガ北海道 ひがしんアリーナ 2025年10月29日の東京 202510291901 DSCN3888.jpg"
+ },
+ "basket.st-embiid": {
+  "src": "photo-basket.st-embiid.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joel_Embiid_2019.jpg",
+  "file": "File:Joel Embiid 2019.jpg"
+ },
+ "basket.st-tatum": {
+  "src": "photo-basket.st-tatum.jpg",
+  "author": "Hameltion",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Celtics_at_Wizards_2024-12-044_(cropped_2).jpg",
+  "file": "File:Celtics at Wizards 2024-12-044 (cropped 2).jpg"
+ },
+ "basket.st-clark": {
+  "src": "photo-basket.st-clark.jpg",
+  "author": "John Mac",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Caitlin_Clark_Fever_(cropped).jpg",
+  "file": "File:Caitlin Clark Fever (cropped).jpg"
+ },
+ "basket.st-wilson": {
+  "src": "photo-basket.st-wilson.jpg",
+  "author": "John Mac",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:A%27ja_Wilson_(53756794398)_(cropped).jpg",
+  "file": "File:A'ja Wilson (53756794398) (cropped).jpg"
+ },
+ "basket.st-brunson": {
+  "src": "photo-basket.st-brunson.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jalen_Brunson_(cropped).jpg",
+  "file": "File:Jalen Brunson (cropped).jpg"
+ },
+ "basket.st-flagg": {
+  "src": "photo-basket.st-flagg.jpg",
+  "author": "Hameltion",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Duke_at_UNC,_Mar_2025,_Flagg.jpg",
+  "file": "File:Duke at UNC, Mar 2025, Flagg.jpg"
+ },
+ "basket.st-togashi": {
+  "src": "photo-basket.st-togashi.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%A8%AB%E5%8B%87%E6%A8%B9_%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC7%E7%AF%80_%E3%82%A2%E3%83%AB%E3%83%90%E3%83%AB%E3%82%AF%E6%9D%B1%E4%BA%AC_vs_%E5%8D%83%E8%91%89%E3%82%B8%E3%82%A7%E3%83%83%E3%83%84_TOYOTA_ARENA_TOKYO_2025%E5%B9%B411%E6%9C%882%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202511021943_DSCN6266.jpg",
+  "file": "File:富樫勇樹 りそなグループ B.LEAGUE 2025-26 B1リーグ戦 第7節 アルバルク東京 vs 千葉ジェッツ TOYOTA ARENA TOKYO 2025年11月2日の東京 202511021943 DSCN6266.jpg"
+ },
+ "basket.st-booker": {
+  "src": "photo-basket.st-booker.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Devin_Booker_(2022_All-Star_Weekend).jpg",
+  "file": "File:Devin Booker (2022 All-Star Weekend).jpg"
+ },
+ "basket.st-mitchell": {
+  "src": "photo-basket.st-mitchell.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Donovan_Mitchell_Pregame.jpg",
+  "file": "File:Donovan Mitchell Pregame.jpg"
+ },
+ "basket.st-brown": {
+  "src": "photo-basket.st-brown.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaylen_Brown_2022.jpg",
+  "file": "File:Jaylen Brown 2022.jpg"
+ },
+ "basket.st-haliburton": {
+  "src": "photo-basket.st-haliburton.jpg",
+  "author": "Chensiyuan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1_tyrese_haliburton_2025_(cropped_2).jpg",
+  "file": "File:1 tyrese haliburton 2025 (cropped 2).jpg"
+ },
+ "basket.st-zion": {
+  "src": "photo-basket.st-zion.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zion_Williamson_2020.jpg",
+  "file": "File:Zion Williamson 2020.jpg"
+ },
+ "basket.st-trae": {
+  "src": "photo-basket.st-trae.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Trae_Young_(51916215049)_(cropped).jpg",
+  "file": "File:Trae Young (51916215049) (cropped).jpg"
+ },
+ "basket.st-davis": {
+  "src": "photo-basket.st-davis.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Anthony_Davis_pre-game_(cropped).jpg",
+  "file": "File:Anthony Davis pre-game (cropped).jpg"
+ },
+ "basket.st-adebayo": {
+  "src": "photo-basket.st-adebayo.jpg",
+  "author": "Joe Glorioso",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bam_Adebayo.jpg",
+  "file": "File:Bam Adebayo.jpg"
+ },
+ "basket.st-gobert": {
+  "src": "photo-basket.st-gobert.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rudy_Gobert.jpg",
+  "file": "File:Rudy Gobert.jpg"
+ },
+ "basket.st-banchero": {
+  "src": "photo-basket.st-banchero.jpg",
+  "author": "Al Ward",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Paolo_Banchero.png",
+  "file": "File:Paolo Banchero.png"
+ },
+ "basket.st-cunningham": {
+  "src": "photo-basket.st-cunningham.jpg",
+  "author": "Chensiyuan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1_cade_cunningham_2024.jpg",
+  "file": "File:1 cade cunningham 2024.jpg"
+ },
+ "basket.st-maxey": {
+  "src": "photo-basket.st-maxey.jpg",
+  "author": "All-Pro Reels from District of Columbia, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tyrese_Maxey_(51781889578)_(cropped).jpg",
+  "file": "File:Tyrese Maxey (51781889578) (cropped).jpg"
+ },
+ "basket.st-murray": {
+  "src": "photo-basket.st-murray.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jamal_Murray_free_throw_(cropped).jpg",
+  "file": "File:Jamal Murray free throw (cropped).jpg"
+ },
+ "basket.st-sabonis": {
+  "src": "photo-basket.st-sabonis.jpg",
+  "author": "Augustas Didžgalvis",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Domantas_Sabonis_by_Augustas_Didzgalvis_(cropped).jpg",
+  "file": "File:Domantas Sabonis by Augustas Didzgalvis (cropped).jpg"
+ },
+ "basket.st-towns": {
+  "src": "photo-basket.st-towns.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Karl-Anthony_Towns_(51914283512)_(cropped)_(cropped).jpg",
+  "file": "File:Karl-Anthony Towns (51914283512) (cropped) (cropped).jpg"
+ },
+ "basket.st-schroder": {
+  "src": "photo-basket.st-schroder.jpg",
+  "author": "Steffen Prößdorf, crop by CalDoesIt",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2022-07-03_Basketball,_M%C3%A4nner,_European_Qualifiers,_Deutschland_-_Polen_1DX_1386_by_Stepro_(cropped).jpg",
+  "file": "File:2022-07-03 Basketball, Männer, European Qualifiers, Deutschland - Polen 1DX 1386 by Stepro (cropped).jpg"
+ },
+ "basket.st-stewart": {
+  "src": "photo-basket.st-stewart.jpg",
+  "author": "User:Zafer",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Breanna_Stewart_12_United_States_20260910_(1)_(cropped).JPG",
+  "file": "File:Breanna Stewart 12 United States 20260910 (1) (cropped).JPG"
+ },
+ "basket.st-hiejima": {
+  "src": "photo-basket.st-hiejima.jpg",
+  "author": "User:STB-1",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiejima_makoto.jpg",
+  "file": "File:Hiejima makoto.jpg"
+ },
+ "basket.st-hawkinson": {
+  "src": "photo-basket.st-hawkinson.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Josh_Hawkinson_%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC1%E7%AF%80_%E3%82%B5%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E6%B8%8B%E8%B0%B7_vs_%E7%A7%8B%E7%94%B0%E3%83%8E%E3%83%BC%E3%82%B6%E3%83%B3%E3%83%8F%E3%83%94%E3%83%8D%E3%83%83%E3%83%84_%E9%9D%92%E5%B1%B1%E5%AD%A6%E9%99%A2%E8%A8%98%E5%BF%B5%E9%A4%A8_2025%E5%B9%B410%E6%9C%884%E6%97%A5%E3%81%AE%E6%B8%8B%E8%B0%B7%E5%8C%BA_202510042021_DSCN6591.jpg",
+  "file": "File:Josh Hawkinson りそなグループ B.LEAGUE 2025-26 B1リーグ戦 第1節 サンロッカーズ渋谷 vs 秋田ノーザンハピネッツ 青山学院記念館 2025年10月4日の渋谷区 202510042021 DSCN6591.jpg"
+ },
+ "basket.st-baba": {
+  "src": "photo-basket.st-baba.jpg",
+  "author": "Sakuragijr",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E9%A6%AC%E5%A0%B4%E9%9B%84%E5%A4%A7%E3%81%AE%E5%86%99%E7%9C%9F.jpg",
+  "file": "File:馬場雄大の写真.jpg"
+ },
+ "basket.st-machida": {
+  "src": "photo-basket.st-machida.jpg",
+  "author": "Zafer",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rui_Machida_13_Japan_20260311_(1).jpg",
+  "file": "File:Rui Machida 13 Japan 20260311 (1).jpg"
+ },
+ "basket.st-yamamoto": {
+  "src": "photo-basket.st-yamamoto.jpg",
+  "author": "Zafer",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mai_Yamamoto_23_Japan_20260311_(1)_(cropped).jpg",
+  "file": "File:Mai Yamamoto 23 Japan 20260311 (1) (cropped).jpg"
+ },
+ "basket.st-holmgren": {
+  "src": "photo-basket.st-holmgren.jpg",
+  "author": "Steve Cheng, Bruin Report Online",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chet_Holmgren.jpg",
+  "file": "File:Chet Holmgren.jpg"
+ },
+ "basket.st-mobley": {
+  "src": "photo-basket.st-mobley.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Evan_Mobley.jpg",
+  "file": "File:Evan Mobley.jpg"
+ },
+ "basket.st-jjj": {
+  "src": "photo-basket.st-jjj.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaren_Jackson_(51814052094)_(cropped).jpg",
+  "file": "File:Jaren Jackson (51814052094) (cropped).jpg"
+ },
+ "basket.st-markkanen": {
+  "src": "photo-basket.st-markkanen.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lauri_Markkanen,_Cavaliers_vs_Rockets_on_December_15,_2021_(cropped).jpg",
+  "file": "File:Lauri Markkanen, Cavaliers vs Rockets on December 15, 2021 (cropped).jpg"
+ },
+ "basket.st-giddey": {
+  "src": "photo-basket.st-giddey.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Josh_Giddey_2022.jpg",
+  "file": "File:Josh Giddey 2022.jpg"
+ },
+ "basket.st-fox": {
+  "src": "photo-basket.st-fox.jpg",
+  "author": "NewishIdeas",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:De%27Aaron_Fox.jpg",
+  "file": "File:De'Aaron Fox.jpg"
+ },
+ "basket.st-jwilliams": {
+  "src": "photo-basket.st-jwilliams.jpg",
+  "author": "Daiei Onoguchi",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jalen_Williams_OKCThunder_2025_NBA_Cup_(cropped)_(cropped).jpg",
+  "file": "File:Jalen Williams OKCThunder 2025 NBA Cup (cropped) (cropped).jpg"
+ },
+ "basket.st-porzingis": {
+  "src": "photo-basket.st-porzingis.jpg",
+  "author": "Hameltion",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Celtics_at_Wizards_2024-12-005_(cropped).jpg",
+  "file": "File:Celtics at Wizards 2024-12-005 (cropped).jpg"
+ },
+ "basket.st-barrett": {
+  "src": "photo-basket.st-barrett.jpg",
+  "author": "Sandro Halank, Wikimedia Commons",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023-08-09_Deutschland_gegen_Kanada_(Basketball-L%C3%A4nderspiel)_by_Sandro_Halank%E2%80%93063.jpg",
+  "file": "File:2023-08-09 Deutschland gegen Kanada (Basketball-Länderspiel) by Sandro Halank–063.jpg"
+ },
+ "basket.st-daniels": {
+  "src": "photo-basket.st-daniels.jpg",
+  "author": "404x404",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dyson_Daniels_(2025).jpg",
+  "file": "File:Dyson Daniels (2025).jpg"
+ },
+ "basket.st-thompson": {
+  "src": "photo-basket.st-thompson.jpg",
+  "author": "Pikraken",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Amen_Thompson_2026.jpg",
+  "file": "File:Amen Thompson 2026.jpg"
+ },
+ "basket.st-sarr": {
+  "src": "photo-basket.st-sarr.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2025_Alex_Sarr_(cropped).jpg",
+  "file": "File:2025 Alex Sarr (cropped).jpg"
+ },
+ "basket.st-bogdanovic": {
+  "src": "photo-basket.st-bogdanovic.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bogdan_(51636059777)_(cropped).jpg",
+  "file": "File:Bogdan (51636059777) (cropped).jpg"
+ },
+ "basket.st-barnes": {
+  "src": "photo-basket.st-barnes.jpg",
+  "author": "All-Pro Reels from District of Columbia, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Scottie_Barnes,_Wizards_vs_Raptors_on_October_12,_2021.jpg",
+  "file": "File:Scottie Barnes, Wizards vs Raptors on October 12, 2021.jpg"
+ },
+ "basket.st-bueckers": {
+  "src": "photo-basket.st-bueckers.jpg",
+  "author": "John Mac",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Paige_Bueckers_Dallas_Wings_2_(cropped).jpg",
+  "file": "File:Paige Bueckers Dallas Wings 2 (cropped).jpg"
+ },
+ "basket.st-akaho": {
+  "src": "photo-basket.st-akaho.jpg",
+  "author": "User:STB-1",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Akaho_himawari.jpg",
+  "file": "File:Akaho himawari.jpg"
+ },
+ "basket.le-jordan": {
+  "src": "photo-basket.le-jordan.jpg",
+  "author": "Zach Catanzareti Photo",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Michael_jordan_admad_rashad_(51276390562)_(cropped).jpg",
+  "file": "File:Michael jordan admad rashad (51276390562) (cropped).jpg"
+ },
+ "basket.le-magic": {
+  "src": "photo-basket.le-magic.jpg",
+  "author": "Daniel Benavides from Austin, TX",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Magic_Johnson_at_SXSW_2022_(51958828669)_(cropped).jpg",
+  "file": "File:Magic Johnson at SXSW 2022 (51958828669) (cropped).jpg"
+ },
+ "basket.le-bird": {
+  "src": "photo-basket.le-bird.jpg",
+  "author": "Kurt Shimala",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Larrybird.jpg",
+  "file": "File:Larrybird.jpg"
+ },
+ "basket.le-kareem": {
+  "src": "photo-basket.le-kareem.jpg",
+  "author": "Yahoo from Sunnyvale, California, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kareem_Abdul-Jabbar_May_2014.jpg",
+  "file": "File:Kareem Abdul-Jabbar May 2014.jpg"
+ },
+ "basket.le-shaq": {
+  "src": "photo-basket.le-shaq.jpg",
+  "author": "TechCrunch",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TechCrunch_Disrupt_2023_-_Day_1_(cropped).jpg",
+  "file": "File:TechCrunch Disrupt 2023 - Day 1 (cropped).jpg"
+ },
+ "basket.le-kobe": {
+  "src": "photo-basket.le-kobe.jpg",
+  "author": "Bryan Horowitz",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kobe_Bryant_in_2010-4.jpg",
+  "file": "File:Kobe Bryant in 2010-4.jpg"
+ },
+ "basket.le-duncan": {
+  "src": "photo-basket.le-duncan.jpg",
+  "author": "Keith Allison from Owings Mills, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tim_Duncan.jpg",
+  "file": "File:Tim Duncan.jpg"
+ },
+ "basket.le-chamberlain": {
+  "src": "photo-basket.le-chamberlain.jpg",
+  "author": "Wilt_Chamberlain2.jpg: Fred Palumbo, World Telegram staff ph…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wilt_Chamberlain3.jpg",
+  "file": "File:Wilt Chamberlain3.jpg"
+ },
+ "basket.le-russell": {
+  "src": "photo-basket.le-russell.jpg",
+  "author": "Pete Souza",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bill_Russell_in_the_Green_Room.jpg",
+  "file": "File:Bill Russell in the Green Room.jpg"
+ },
+ "basket.le-dirk": {
+  "src": "photo-basket.le-dirk.jpg",
+  "author": "Sven Mandel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dirk_Nowitzki_-_2019202181209_2019-07-21_Champions_for_Charity_-_1829_-_B70I1864.jpg",
+  "file": "File:Dirk Nowitzki - 2019202181209 2019-07-21 Champions for Charity - 1829 - B70I1864.jpg"
+ },
+ "basket.le-yao": {
+  "src": "photo-basket.le-yao.jpg",
+  "author": "World Travel & Tourism Council",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yao_Ming_in_2014.jpg",
+  "file": "File:Yao Ming in 2014.jpg"
+ },
+ "basket.le-iverson": {
+  "src": "photo-basket.le-iverson.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Allen_Iverson_08.jpg",
+  "file": "File:Allen Iverson 08.jpg"
+ },
+ "basket.le-nash": {
+  "src": "photo-basket.le-nash.jpg",
+  "author": "Scott L from Los Angeles, United States of America",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SteveNash2014.jpg",
+  "file": "File:SteveNash2014.jpg"
+ },
+ "basket.le-hakeem": {
+  "src": "photo-basket.le-hakeem.jpg",
+  "author": "U.S. Department of State",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nigerian_President_Buhari_Stands_With_Secretary_Kerry,_U.S._Delegation_After_They_Attended_His_Inauguration_Ceremony_(cropped).jpg",
+  "file": "File:Nigerian President Buhari Stands With Secretary Kerry, U.S. Delegation After They Attended His Inauguration Ceremony (cropped).jpg"
+ },
+ "basket.le-pippen": {
+  "src": "photo-basket.le-pippen.jpg",
+  "author": "Sea Cow",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Scottie_Pippen_5-2-22_(cropped).jpg",
+  "file": "File:Scottie Pippen 5-2-22 (cropped).jpg"
+ },
+ "basket.le-wade": {
+  "src": "photo-basket.le-wade.jpg",
+  "author": "US Embassy London",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Dwyane_Wade_2012.jpg",
+  "file": "File:Dwyane Wade 2012.jpg"
+ },
+ "basket.le-leslie": {
+  "src": "photo-basket.le-leslie.jpg",
+  "author": "Angela George at https://www.flickr.com/photos/sharongraphic…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LisaLeslieDec10.jpg",
+  "file": "File:LisaLeslieDec10.jpg"
+ },
+ "basket.le-carter": {
+  "src": "photo-basket.le-carter.jpg",
+  "author": "Danny Bollinger",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vince_Carter_2013-03-25_(1).jpg",
+  "file": "File:Vince Carter 2013-03-25 (1).jpg"
+ },
+ "basket.le-malone": {
+  "src": "photo-basket.le-malone.jpg",
+  "author": "Karl_Malone_visits_Afghanistan.jpg: Chairman of the Joint Ch…",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Karl_Malone_in_Afghanistan.jpg",
+  "file": "File:Karl Malone in Afghanistan.jpg"
+ },
+ "basket.le-stockton": {
+  "src": "photo-basket.le-stockton.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:John_Stockton_2022.jpg",
+  "file": "File:John Stockton 2022.jpg"
+ },
+ "basket.le-barkley": {
+  "src": "photo-basket.le-barkley.jpg",
+  "author": "Chensiyuan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1_charles_barkley_2019_(cropped).jpg",
+  "file": "File:1 charles barkley 2019 (cropped).jpg"
+ },
+ "basket.le-ewing": {
+  "src": "photo-basket.le-ewing.jpg",
+  "author": "AlexanderJonesi",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Patrick_Ewing_2021_(cropped).jpg",
+  "file": "File:Patrick Ewing 2021 (cropped).jpg"
+ },
+ "basket.le-garnett": {
+  "src": "photo-basket.le-garnett.jpg",
+  "author": "Keith Allison from Baltimore, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kevin_Garnett_2008-01-13.jpg",
+  "file": "File:Kevin Garnett 2008-01-13.jpg"
+ },
+ "basket.le-erving": {
+  "src": "photo-basket.le-erving.jpg",
+  "author": "Ash Carter",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Julius_Erving_2016.jpg",
+  "file": "File:Julius Erving 2016.jpg"
+ },
+ "basket.le-reggie": {
+  "src": "photo-basket.le-reggie.jpg",
+  "author": "Flickr user Philadelphia 76ers",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Reggie_Miller_crop.png",
+  "file": "File:Reggie Miller crop.png"
+ },
+ "basket.le-allen": {
+  "src": "photo-basket.le-allen.jpg",
+  "author": "7th Army Training Command from Grafenwoehr, Germany",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ray_Allen_161208-A-HE359-046_(31482070191).jpg",
+  "file": "File:Ray Allen 161208-A-HE359-046 (31482070191).jpg"
+ },
+ "basket.le-ginobili": {
+  "src": "photo-basket.le-ginobili.jpg",
+  "author": "Mike",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Manu_Ginobili_Spurs-Magic011_(cropped).jpg",
+  "file": "File:Manu Ginobili Spurs-Magic011 (cropped).jpg"
+ },
+ "basket.le-parker": {
+  "src": "photo-basket.le-parker.jpg",
+  "author": "Zereshk",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Parker_khomar.JPG",
+  "file": "File:Parker khomar.JPG"
+ },
+ "basket.le-bird2": {
+  "src": "photo-basket.le-bird2.jpg",
+  "author": "SusanLesch",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bird-20180912.jpg",
+  "file": "File:Bird-20180912.jpg"
+ },
+ "basket.le-robertson": {
+  "src": "photo-basket.le-robertson.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oscar_Robertson_1960s.jpeg",
+  "file": "File:Oscar Robertson 1960s.jpeg"
+ },
+ "basket.le-west": {
+  "src": "photo-basket.le-west.jpg",
+  "author": "The White House from Washington, DC",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:President_Trump_Presents_the_Medal_of_Freedom_to_Jerry_West_(48688558152)_(cropped).jpg",
+  "file": "File:President Trump Presents the Medal of Freedom to Jerry West (48688558152) (cropped).jpg"
+ },
+ "basket.le-mcgrady": {
+  "src": "photo-basket.le-mcgrady.jpg",
+  "author": "U.S. Air Force photo by Senior Airman Noah D. Coger",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tracy_McGrady_visits_Al_Udeid_(6937003)_(cropped).jpg",
+  "file": "File:Tracy McGrady visits Al Udeid (6937003) (cropped).jpg"
+ },
+ "basket.le-carmelo": {
+  "src": "photo-basket.le-carmelo.jpg",
+  "author": "Tripsdubs",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carmelo_Anthony_at_2025_NBA_All_Star_Weekend_(cropped).jpg",
+  "file": "File:Carmelo Anthony at 2025 NBA All Star Weekend (cropped).jpg"
+ },
+ "basket.le-oogami": {
+  "src": "photo-basket.le-oogami.jpg",
+  "author": "User:STB-1",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ohga_yuko.jpg",
+  "file": "File:Ohga yuko.jpg"
+ },
+ "basket.le-orimo": {
+  "src": "photo-basket.le-orimo.jpg",
+  "author": "User:STB-1",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Orimo_takehiko_levanga.jpg",
+  "file": "File:Orimo takehiko levanga.jpg"
+ },
+ "basket.le-hagiwara": {
+  "src": "photo-basket.le-hagiwara.jpg",
+  "author": "User:STB-1",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hagiwara_mikiko.jpg",
+  "file": "File:Hagiwara mikiko.jpg"
+ },
+ "basket.le-candace": {
+  "src": "photo-basket.le-candace.jpg",
+  "author": "Sergeev Pavel",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Candace_Parker_2012.jpg",
+  "file": "File:Candace Parker 2012.jpg"
+ },
+ "basket.le-drj": {
+  "src": "photo-basket.le-drj.jpg",
+  "author": "Ash Carter",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Julius_Erving_2016.jpg",
+  "file": "File:Julius Erving 2016.jpg"
+ },
+ "basket.le-pierce": {
+  "src": "photo-basket.le-pierce.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Paul_Pierce_Shooting_Basketball.jpg",
+  "file": "File:Paul Pierce Shooting Basketball.jpg"
+ },
+ "basket.le-baylor": {
+  "src": "photo-basket.le-baylor.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Elgin_Baylor_Night_program-(cropped).jpg",
+  "file": "File:Elgin Baylor Night program-(cropped).jpg"
+ },
+ "basket.le-havlicek": {
+  "src": "photo-basket.le-havlicek.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:John_Havliceck,_Boston_Celtics,_1960s.jpg",
+  "file": "File:John Havliceck, Boston Celtics, 1960s.jpg"
+ },
+ "basket.le-thomas": {
+  "src": "photo-basket.le-thomas.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Isiah_Thomas_2007_(cropped).jpg",
+  "file": "File:Isiah Thomas 2007 (cropped).jpg"
+ },
+ "basket.le-gervin": {
+  "src": "photo-basket.le-gervin.jpg",
+  "author": "Kevin Fitzgerald",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:George_Gervin_ABA.jpeg",
+  "file": "File:George Gervin ABA.jpeg"
+ },
+ "basket.le-mikan": {
+  "src": "photo-basket.le-mikan.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:George_Mikan_1945.jpeg",
+  "file": "File:George Mikan 1945.jpeg"
+ },
+ "basket.le-cousy": {
+  "src": "photo-basket.le-cousy.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bob_Cousy_(1).jpeg",
+  "file": "File:Bob Cousy (1).jpeg"
+ },
+ "basket.le-sabonis": {
+  "src": "photo-basket.le-sabonis.jpg",
+  "author": "Steve Lipofsky www.Basketballphoto.com",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Arvydas_Sabonis.jpg",
+  "file": "File:Arvydas Sabonis.jpg"
+ },
+ "basket.le-kukoc": {
+  "src": "photo-basket.le-kukoc.jpg",
+  "author": "David Krichmar",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toni_Kukoc_081423_cropped_(cropped1).jpg",
+  "file": "File:Toni Kukoc 081423 cropped (cropped1).jpg"
+ },
+ "basket.le-schmidt": {
+  "src": "photo-basket.le-schmidt.jpg",
+  "author": "Sérgio (Savaman) Savarese",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Schmidtoscar.jpg",
+  "file": "File:Schmidtoscar.jpg"
+ },
+ "basket.le-marc": {
+  "src": "photo-basket.le-marc.jpg",
+  "author": "FCBQ",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Marc_Gasol_2022_Girona_(cropped).png",
+  "file": "File:Marc Gasol 2022 Girona (cropped).png"
+ },
+ "basket.le-cheryl": {
+  "src": "photo-basket.le-cheryl.jpg",
+  "author": "Jayne Kamin, Los Angeles Times",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheryl_Miller_in_Final_Four_game_against_Tennessee.jpg",
+  "file": "File:Cheryl Miller in Final Four game against Tennessee.jpg"
+ },
+ "basket.le-swoopes": {
+  "src": "photo-basket.le-swoopes.jpg",
+  "author": "© Two Gypsy Hearts (photo taken by Kate)",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sheryl_Swoopes_WNBA.jpg",
+  "file": "File:Sheryl Swoopes WNBA.jpg"
+ },
+ "basket.le-moore": {
+  "src": "photo-basket.le-moore.jpg",
+  "author": "Lorie Shaull from St Paul, United States",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maya_Moore_speaking_at_the_Marshall_Project_in_Washington_DC_(48751715837)_(cropped).jpg",
+  "file": "File:Maya Moore speaking at the Marshall Project in Washington DC (48751715837) (cropped).jpg"
+ },
+ "basket.le-jackson": {
+  "src": "photo-basket.le-jackson.jpg",
+  "author": "Gina from Kent, WA, USA",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lauren_Jackson_2a.JPG",
+  "file": "File:Lauren Jackson 2a.JPG"
+ },
+ "basket.le-sako": {
+  "src": "photo-basket.le-sako.jpg",
+  "author": "User:STB-1",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sako_kenichi_20150104.jpg",
+  "file": "File:Sako kenichi 20150104.jpg"
+ },
+ "basket.le-dream": {
+  "src": "photo-basket.le-dream.jpg",
+  "author": "Jeremy Chan from United States",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The-Dream_performing_(cropped).jpg",
+  "file": "File:The-Dream performing (cropped).jpg"
+ },
+ "basket.mv-alleyoop": {
+  "src": "photo-basket.mv-alleyoop.jpg",
+  "author": "TonyTheTiger",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20130103_Alley_Oop_(2).jpg",
+  "file": "File:20130103 Alley Oop (2).jpg"
+ },
+ "basket.mv-boxout": {
+  "src": "photo-basket.mv-boxout.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pau_Gasol_boxout.jpg",
+  "file": "File:Pau Gasol boxout.jpg"
+ },
+ "basket.mv-scoop": {
+  "src": "photo-basket.mv-scoop.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TMac_over_Deshawn.jpg",
+  "file": "File:TMac over Deshawn.jpg"
+ },
+ "basket.tc-jackson": {
+  "src": "photo-basket.tc-jackson.jpg",
+  "author": "Phil_Jackson_3.jpg: Keith Allison from Baltimore, USA deriva…",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Phil_Jackson_3_cropped.jpg",
+  "file": "File:Phil Jackson 3 cropped.jpg"
+ },
+ "basket.tc-smallball": {
+  "src": "photo-basket.tc-smallball.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_steal.jpg",
+  "file": "File:Baseball steal.jpg"
+ },
+ "basket.tc-pointfwd": {
+  "src": "photo-basket.tc-pointfwd.jpg",
+  "author": "HITNOM",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FIBA_basketball_positioning.png",
+  "file": "File:FIBA basketball positioning.png"
+ },
+ "basket.tc-popovich": {
+  "src": "photo-basket.tc-popovich.jpg",
+  "author": "The Obama White House",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gregg_Popovich_speaks_at_the_White_House_2015-01-12_(cropped).jpg",
+  "file": "File:Gregg Popovich speaks at the White House 2015-01-12 (cropped).jpg"
+ },
+ "basket.tc-hovasse": {
+  "src": "photo-basket.tc-hovasse.jpg",
+  "author": "User:STB-1",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tom_Hovasse.jpg",
+  "file": "File:Tom Hovasse.jpg"
+ },
+ "basket.tc-auerbach": {
+  "src": "photo-basket.tc-auerbach.jpg",
+  "author": "[Copyright held by Steve Lipofsky Basketballphoto.com}",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Auerbach_Lipofsky.jpg",
+  "file": "File:Auerbach Lipofsky.jpg"
+ },
+ "basket.tc-wooden": {
+  "src": "photo-basket.tc-wooden.jpg",
+  "author": "Associated Students of the University of California at Los A…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:John_Wooden.JPG",
+  "file": "File:John Wooden.JPG"
+ },
+ "basket.tc-k": {
+  "src": "photo-basket.tc-k.jpg",
+  "author": "Petty Officer 1st Class Chad J. McNeeley, U.S. Navy",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mike_Krzyzewski_-_basketball_coach.jpg",
+  "file": "File:Mike Krzyzewski - basketball coach.jpg"
+ },
+ "basket.tc-riley": {
+  "src": "photo-basket.tc-riley.jpg",
+  "author": "Department of Defense",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pat_Riley_speaks_at_Eglin_Air_Force_Base_(cropped).jpg",
+  "file": "File:Pat Riley speaks at Eglin Air Force Base (cropped).jpg"
+ },
+ "basket.tc-dantoni": {
+  "src": "photo-basket.tc-dantoni.jpg",
+  "author": "[1] Matt Hickey",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mike_D%27Antoni_2010.jpg",
+  "file": "File:Mike D'Antoni 2010.jpg"
+ },
+ "basket.cp-worldcup": {
+  "src": "photo-basket.cp-worldcup.jpg",
+  "author": "FIBA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FIBA_Basketball_World_Cup_logo.svg",
+  "file": "File:FIBA Basketball World Cup logo.svg"
+ },
+ "basket.cp-3x3": {
+  "src": "photo-basket.cp-3x3.jpg",
+  "author": "Sebasports",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:3x3basketball.jpg",
+  "file": "File:3x3basketball.jpg"
+ },
+ "basket.cp-naismith": {
+  "src": "photo-basket.cp-naismith.jpg",
+  "author": "Evdcoldeportes.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:James_Naismith_with_a_basketball.jpg",
+  "file": "File:James Naismith with a basketball.jpg"
+ },
+ "basket.cp-paris": {
+  "src": "photo-basket.cp-paris.jpg",
+  "author": "Ibex73",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Olympic_rings_on_the_Eiffel_Tower_2024_(2).jpg",
+  "file": "File:Olympic rings on the Eiffel Tower 2024 (2).jpg"
+ },
+ "basket.cp-eurobasket": {
+  "src": "photo-basket.cp-eurobasket.jpg",
+  "author": "FIBA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FIBA_EuroBasket_logo.svg",
+  "file": "File:FIBA EuroBasket logo.svg"
+ },
+ "basket.cp-barcelona": {
+  "src": "photo-basket.cp-barcelona.jpg",
+  "author": "Nikolai Karaneschev",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Barcelona_AUGUST_1992_the_Olympic_Games_(Juegos_Ol%C3%ADmpicos_de_Barcelona_1992)_-_panoramio.jpg",
+  "file": "File:Barcelona AUGUST 1992 the Olympic Games (Juegos Olímpicos de Barcelona 1992) - panoramio.jpg"
+ },
+ "basket.cp-berlin": {
+  "src": "photo-basket.cp-berlin.jpg",
+  "author": "FOTO:Fortepan — ID 16319: Adományozó/Donor: Vass Károly.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kil%C3%A1t%C3%A1s_a_Harangtoronyb%C3%B3l_a_Waldb%C3%BChne-re_az_1936._ny%C3%A1ri_olimpiai_j%C3%A1t%C3%A9kok_alatt._Fortepan_16319.jpg",
+  "file": "File:Kilátás a Harangtoronyból a Waldbühne-re az 1936. nyári olimpiai játékok alatt. Fortepan 16319.jpg"
+ },
+ "basket.cp-allnba": {
+  "src": "photo-basket.cp-allnba.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LeBron_James_(51959977144)_(cropped2).jpg",
+  "file": "File:LeBron James (51959977144) (cropped2).jpg"
+ },
+ "basket.cp-ymca": {
+  "src": "photo-basket.cp-ymca.jpg",
+  "author": "World YMCA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:World_YMCA_logo.png",
+  "file": "File:World YMCA logo.png"
+ },
+ "basket.cp-rokyu": {
+  "src": "photo-basket.cp-rokyu.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LeBron_James_Layup_(Cleveland_vs_Brooklyn_2018).jpg",
+  "file": "File:LeBron James Layup (Cleveland vs Brooklyn 2018).jpg"
+ },
+ "basket.cp-omori": {
+  "src": "photo-basket.cp-omori.jpg",
+  "author": "Springfield College",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hyozo_Omori_1907.png",
+  "file": "File:Hyozo Omori 1907.png"
+ },
+ "basket.cp-gulick": {
+  "src": "photo-basket.cp-gulick.jpg",
+  "author": "Harris & Ewing photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Luther_Gulick_(social_scientist).jpg",
+  "file": "File:Luther Gulick (social scientist).jpg"
+ },
+ "basket.cp-sekaisenshuken": {
+  "src": "photo-basket.cp-sekaisenshuken.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ruggeri_pumpido_enrique_copas.jpg",
+  "file": "File:Ruggeri pumpido enrique copas.jpg"
+ },
+ "basket.cp-naismithtrophy": {
+  "src": "photo-basket.cp-naismithtrophy.jpg",
+  "author": "Griff88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FIBA_World_Cup_2023_Trophy_Tour_-_Jakarta_-_Naismith_Trophy_(2).jpg",
+  "file": "File:FIBA World Cup 2023 Trophy Tour - Jakarta - Naismith Trophy (2).jpg"
+ },
+ "basket.cp-afrobasket": {
+  "src": "photo-basket.cp-afrobasket.jpg",
+  "author": "FIBA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FIBA_AfroBasket_logo.svg",
+  "file": "File:FIBA AfroBasket logo.svg"
+ },
+ "basket.cp-montreal": {
+  "src": "photo-basket.cp-montreal.jpg",
+  "author": "Luciano Inostroza Budinich",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:JJOO_Montreal_1976.jpg",
+  "file": "File:JJOO Montreal 1976.jpg"
+ },
+ "baseball.kh-yakyu": {
+  "src": "photo-baseball.kh-yakyu.jpg",
+  "author": "Original uploader was Fabiopao at it.wikipedia",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:David_Ortiz,_Ram%C3%B3n_Hern%C3%A1ndez_and_Derryl_Cousins,_2006_Boston_Red_Sox_season.jpg",
+  "file": "File:David Ortiz, Ramón Hernández and Derryl Cousins, 2006 Boston Red Sox season.jpg"
+ },
+ "baseball.kh-homerun": {
+  "src": "photo-baseball.kh-homerun.jpg",
+  "author": "Kevin Rushforth",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20060825_Barry_Bonds_follow_through.jpg",
+  "file": "File:20060825 Barry Bonds follow through.jpg"
+ },
+ "baseball.kh-ball": {
+  "src": "photo-baseball.kh-ball.jpg",
+  "author": "No machine-readable author provided. Jersyko assumed (based …",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Happy_face_ball.jpg",
+  "file": "File:Happy face ball.jpg"
+ },
+ "baseball.kh-safe": {
+  "src": "photo-baseball.kh-safe.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cleveland_Indians_shortstop_Asdrubal_Cabrera_(13)_and_Baltimore_Orioles_shortstop_J.J._Hardy_(2)_(5945180420).jpg",
+  "file": "File:Cleveland Indians shortstop Asdrubal Cabrera (13) and Baltimore Orioles shortstop J.J. Hardy (2) (5945180420).jpg"
+ },
+ "baseball.kh-strikeout": {
+  "src": "photo-baseball.kh-strikeout.jpg",
+  "author": "own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Swinging_strikeout.jpg",
+  "file": "File:Swinging strikeout.jpg"
+ },
+ "baseball.kh-inning": {
+  "src": "photo-baseball.kh-inning.jpg",
+  "author": "Gamweb",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Daytona_Cubs_P4060068_alternative_crop.jpg",
+  "file": "File:Daytona Cubs P4060068 alternative crop.jpg"
+ },
+ "baseball.kh-catchball": {
+  "src": "photo-baseball.kh-catchball.jpg",
+  "author": "Lance Cpl. Jonathan Boynes",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:San_Diego_Padres_host_baseball_clinic_for_military_children_140624-M-PC317-001.jpg",
+  "file": "File:San Diego Padres host baseball clinic for military children 140624-M-PC317-001.jpg"
+ },
+ "baseball.kh-mound": {
+  "src": "photo-baseball.kh-mound.jpg",
+  "author": "Malingering",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mariano_Clutch.jpg",
+  "file": "File:Mariano Clutch.jpg"
+ },
+ "baseball.kh-first": {
+  "src": "photo-baseball.kh-first.jpg",
+  "author": "MyName (Cacophony)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:SafecoFieldTop.jpg",
+  "file": "File:SafecoFieldTop.jpg"
+ },
+ "baseball.kh-second": {
+  "src": "photo-baseball.kh-second.jpg",
+  "author": "MyName (Cacophony)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:SafecoFieldTop.jpg",
+  "file": "File:SafecoFieldTop.jpg"
+ },
+ "baseball.kh-third": {
+  "src": "photo-baseball.kh-third.jpg",
+  "author": "MyName (Cacophony)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:SafecoFieldTop.jpg",
+  "file": "File:SafecoFieldTop.jpg"
+ },
+ "baseball.kh-batorder": {
+  "src": "photo-baseball.kh-batorder.jpg",
+  "author": "Jleybov",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:StlAtl_032701_lineupcard.jpg",
+  "file": "File:StlAtl 032701 lineupcard.jpg"
+ },
+ "baseball.kh-swing": {
+  "src": "photo-baseball.kh-swing.jpg",
+  "author": "own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Swinging_strikeout.jpg",
+  "file": "File:Swinging strikeout.jpg"
+ },
+ "baseball.kh-grounder": {
+  "src": "photo-baseball.kh-grounder.jpg",
+  "author": "Spaluch1",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Casey_McGehee_2009.jpg",
+  "file": "File:Casey McGehee 2009.jpg"
+ },
+ "baseball.kh-infield": {
+  "src": "photo-baseball.kh-infield.jpg",
+  "author": "Ken Lund from Reno, Nevada, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dodger_Stadium,_Los_Angeles,_California_(14331204090).jpg",
+  "file": "File:Dodger Stadium, Los Angeles, California (14331204090).jpg"
+ },
+ "baseball.kh-bullpen": {
+  "src": "photo-baseball.kh-bullpen.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_bullpen_2004.jpg",
+  "file": "File:Baseball bullpen 2004.jpg"
+ },
+ "baseball.kh-mitt": {
+  "src": "photo-baseball.kh-mitt.jpg",
+  "author": "Stephen Nakatani",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_%26_Mitt.jpg",
+  "file": "File:Baseball & Mitt.jpg"
+ },
+ "baseball.kh-daseki": {
+  "src": "photo-baseball.kh-daseki.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_jimmy_rollins_2004.jpg",
+  "file": "File:Baseball jimmy rollins 2004.jpg"
+ },
+ "baseball.kh-double": {
+  "src": "photo-baseball.kh-double.jpg",
+  "author": "Minda Haas Kuhlmann",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:McBroom_with_a_double.jpg",
+  "file": "File:McBroom with a double.jpg"
+ },
+ "baseball.kh-insidepark": {
+  "src": "photo-baseball.kh-insidepark.jpg",
+  "author": "Kevin Rushforth",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20060825_Barry_Bonds_follow_through.jpg",
+  "file": "File:20060825 Barry Bonds follow through.jpg"
+ },
+ "baseball.kh-grandslam": {
+  "src": "photo-baseball.kh-grandslam.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Travis_Bazzana_Grand_Slam_Home_Run_(53896845773).webm",
+  "file": "File:Travis Bazzana Grand Slam Home Run (53896845773).webm"
+ },
+ "baseball.kh-rbi": {
+  "src": "photo-baseball.kh-rbi.jpg",
+  "author": "Djh57",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Albert_Pujols_DSC_5191.jpg",
+  "file": "File:Albert Pujols DSC 5191.jpg"
+ },
+ "baseball.kh-kanpu": {
+  "src": "photo-baseball.kh-kanpu.jpg",
+  "author": "slgckgc",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Martin_Brodeur_during_game_at_Prudential_Center_vs_Ottawa_11-25-09_3.jpeg",
+  "file": "File:Martin Brodeur during game at Prudential Center vs Ottawa 11-25-09 3.jpeg"
+ },
+ "baseball.kh-kanto": {
+  "src": "photo-baseball.kh-kanto.jpg",
+  "author": "Charles M. Conlon",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cy_Young_by_Conlon,_1911-crop.jpg",
+  "file": "File:Cy Young by Conlon, 1911-crop.jpg"
+ },
+ "baseball.kh-perfect": {
+  "src": "photo-baseball.kh-perfect.jpg",
+  "author": "myisrblue529 on Flickr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DSC04443_18th_Perfect_Game_in_Major_League_Baseball_History.jpg",
+  "file": "File:DSC04443 18th Perfect Game in Major League Baseball History.jpg"
+ },
+ "baseball.kh-winpitcher": {
+  "src": "photo-baseball.kh-winpitcher.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Denny_McLain_1966.jpg",
+  "file": "File:Denny McLain 1966.jpg"
+ },
+ "baseball.rl-zone": {
+  "src": "photo-baseball.rl-zone.jpg",
+  "author": "User Mori Chan on Flickr (Original version) User Num(Crop an…",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Strike_zone_en.JPG",
+  "file": "File:Strike zone en.JPG"
+ },
+ "baseball.rl-umpire": {
+  "src": "photo-baseball.rl-umpire.jpg",
+  "author": "Rdikeman",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_umpire_2004.jpg",
+  "file": "File:Baseball umpire 2004.jpg"
+ },
+ "baseball.rl-base-ump": {
+  "src": "photo-baseball.rl-base-ump.jpg",
+  "author": "Rdikeman",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_umpire_2004.jpg",
+  "file": "File:Baseball umpire 2004.jpg"
+ },
+ "baseball.rl-foulpole": {
+  "src": "photo-baseball.rl-foulpole.jpg",
+  "author": "MyName (Cacophony)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:SafecoFieldTop.jpg",
+  "file": "File:SafecoFieldTop.jpg"
+ },
+ "baseball.rl-dh": {
+  "src": "photo-baseball.rl-dh.jpg",
+  "author": "Cake6 (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium7.jpg",
+  "file": "File:Hanshin Koshien Stadium7.jpg"
+ },
+ "baseball.rl-balk": {
+  "src": "photo-baseball.rl-balk.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bob_Shaw_1964.jpg",
+  "file": "File:Bob Shaw 1964.jpg"
+ },
+ "baseball.rl-tagup": {
+  "src": "photo-baseball.rl-tagup.jpg",
+  "author": "James G",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Orioles_at_Blue_Jays_(9118904217).jpg",
+  "file": "File:Orioles at Blue Jays (9118904217).jpg"
+ },
+ "baseball.rl-strikeout-run": {
+  "src": "photo-baseball.rl-strikeout-run.jpg",
+  "author": "Eric Kilby from Somerville, MA, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kalish_Leaves_the_Box_(3802058047).jpg",
+  "file": "File:Kalish Leaves the Box (3802058047).jpg"
+ },
+ "baseball.rl-iff": {
+  "src": "photo-baseball.rl-iff.jpg",
+  "author": "James Bond",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Infield_fly.jpg",
+  "file": "File:Infield fly.jpg"
+ },
+ "baseball.rl-ibb": {
+  "src": "photo-baseball.rl-ibb.jpg",
+  "author": "計記録",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Naruohama-Stadium-4.jpg",
+  "file": "File:Naruohama-Stadium-4.jpg"
+ },
+ "baseball.rl-pitch-clock": {
+  "src": "photo-baseball.rl-pitch-clock.jpg",
+  "author": "Minda Haas from Omaha",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pitch_clock!_(16998109219).jpg",
+  "file": "File:Pitch clock! (16998109219).jpg"
+ },
+ "baseball.rl-force": {
+  "src": "photo-baseball.rl-force.jpg",
+  "author": "James G",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Johnson_flips_the_ball_to_Escobar_while_lying_down_to_get_the_force_out._(7984357473).jpg",
+  "file": "File:Johnson flips the ball to Escobar while lying down to get the force out. (7984357473).jpg"
+ },
+ "baseball.rl-ground-double": {
+  "src": "photo-baseball.rl-ground-double.jpg",
+  "author": "Cathy T from Washington, DC area",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ground_rule_double.jpg",
+  "file": "File:Ground rule double.jpg"
+ },
+ "baseball.rl-three-bunt": {
+  "src": "photo-baseball.rl-three-bunt.jpg",
+  "author": "User:DX Broadrec",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bunt_High_school_baseball_in_Japan_2007.jpg",
+  "file": "File:Bunt High school baseball in Japan 2007.jpg"
+ },
+ "baseball.rl-half-swing": {
+  "src": "photo-baseball.rl-half-swing.jpg",
+  "author": "own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Swinging_strikeout.jpg",
+  "file": "File:Swinging strikeout.jpg"
+ },
+ "baseball.rl-suspended": {
+  "src": "photo-baseball.rl-suspended.jpg",
+  "author": "Edg126",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2008_world_series_rain_delay.JPG",
+  "file": "File:2008 world series rain delay.JPG"
+ },
+ "baseball.rl-collision": {
+  "src": "photo-baseball.rl-collision.jpg",
+  "author": "Keith Allison on Flickr.",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matt_Wieters_blocks_plate_Derek_Jeter_by_Keith_Allison_original.jpg",
+  "file": "File:Matt Wieters blocks plate Derek Jeter by Keith Allison original.jpg"
+ },
+ "baseball.rl-rulebook": {
+  "src": "photo-baseball.rl-rulebook.jpg",
+  "author": "Spalding (company) (Life time: n/a)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Official_Baseball_Rules_(1921).jpg",
+  "file": "File:Official Baseball Rules (1921).jpg"
+ },
+ "baseball.rl-dh-end": {
+  "src": "photo-baseball.rl-dh-end.jpg",
+  "author": "Cake6 (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium7.jpg",
+  "file": "File:Hanshin Koshien Stadium7.jpg"
+ },
+ "baseball.rl-continued": {
+  "src": "photo-baseball.rl-continued.jpg",
+  "author": "Edg126",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2008_world_series_rain_delay.JPG",
+  "file": "File:2008 world series rain delay.JPG"
+ },
+ "baseball.rl-courtesy-runner": {
+  "src": "photo-baseball.rl-courtesy-runner.jpg",
+  "author": "Dirk DBQ",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pinch_Runner_(15902821374).jpg",
+  "file": "File:Pinch Runner (15902821374).jpg"
+ },
+ "baseball.rl-messenger": {
+  "src": "photo-baseball.rl-messenger.jpg",
+  "author": "Europeana staff photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Meldeg%C3%A4ngertasche_mit_Kompass_und_Feldstecher_von_Walter_Naumann,_item_1.jpg",
+  "file": "File:Meldegängertasche mit Kompass und Feldstecher von Walter Naumann, item 1.jpg"
+ },
+ "baseball.rl-three-foot": {
+  "src": "photo-baseball.rl-three-foot.jpg",
+  "author": "No machine-readable author provided. Num assumed (based on c…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Miller_Park_threefoot_line.jpg",
+  "file": "File:Miller Park threefoot line.jpg"
+ },
+ "baseball.rl-safe-advance": {
+  "src": "photo-baseball.rl-safe-advance.jpg",
+  "author": "Cathy T from Washington, DC area",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ground_rule_double.jpg",
+  "file": "File:Ground rule double.jpg"
+ },
+ "baseball.rl-batter-runner": {
+  "src": "photo-baseball.rl-batter-runner.jpg",
+  "author": "Photo taken and authorized by Derral Chen, friend of the upl…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Suzuki_Ichiro_runs_to_homeplate.jpg",
+  "file": "File:Suzuki Ichiro runs to homeplate.jpg"
+ },
+ "baseball.lg-mlb": {
+  "src": "photo-baseball.lg-mlb.jpg",
+  "author": "Jerry Nicholas Dior (1932 – 2015)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Major_League_Baseball_logo.svg",
+  "file": "File:Major League Baseball logo.svg"
+ },
+ "baseball.lg-natsu": {
+  "src": "photo-baseball.lg-natsu.jpg",
+  "author": "Own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium2.JPG",
+  "file": "File:Hanshin Koshien Stadium2.JPG"
+ },
+ "baseball.lg-senbatsu": {
+  "src": "photo-baseball.lg-senbatsu.jpg",
+  "author": "Own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium2.JPG",
+  "file": "File:Hanshin Koshien Stadium2.JPG"
+ },
+ "baseball.lg-hrderby": {
+  "src": "photo-baseball.lg-hrderby.jpg",
+  "author": "Arturo Pardavila III from Hoboken, NJ, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Giancarlo_Stanton_holds_up_the_T-Mobile_-HRDerby_trophy._(28476385401).jpg",
+  "file": "File:Giancarlo Stanton holds up the T-Mobile -HRDerby trophy. (28476385401).jpg"
+ },
+ "baseball.lg-kyuen": {
+  "src": "photo-baseball.lg-kyuen.jpg",
+  "author": "博友社 (Hakuyu-sha Co., Ltd.)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Osawa_Sasaki_Akiyama_Doi_1956_Scan10001.JPG",
+  "file": "File:Osawa Sasaki Akiyama Doi 1956 Scan10001.JPG"
+ },
+ "baseball.lg-kaimaku": {
+  "src": "photo-baseball.lg-kaimaku.jpg",
+  "author": "abrowncoat",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dodger_Stadium_Opening_Day_2009.jpg",
+  "file": "File:Dodger Stadium Opening Day 2009.jpg"
+ },
+ "baseball.lg-ds": {
+  "src": "photo-baseball.lg-ds.jpg",
+  "author": "BrokenSphere",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rick_Ankiel_hits_home_run_at_2010_NLDS_Game_2.JPG",
+  "file": "File:Rick Ankiel hits home run at 2010 NLDS Game 2.JPG"
+ },
+ "baseball.lg-springtraining": {
+  "src": "photo-baseball.lg-springtraining.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Dodgers_spring_training_at_Holman_Stadium,_Dodgertown,_1994.jpg",
+  "file": "File:Los Angeles Dodgers spring training at Holman Stadium, Dodgertown, 1994.jpg"
+ },
+ "baseball.lg-mlbdraft": {
+  "src": "photo-baseball.lg-mlbdraft.jpg",
+  "author": "SounderBruce",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023_MLB_Draft_at_Lumen_Field_in_Seattle,_WA.jpg",
+  "file": "File:2023 MLB Draft at Lumen Field in Seattle, WA.jpg"
+ },
+ "baseball.lg-rokudai": {
+  "src": "photo-baseball.lg-rokudai.jpg",
+  "author": "江戸村のとくぞう",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rikkyo_University-2.jpg",
+  "file": "File:Rikkyo University-2.jpg"
+ },
+ "baseball.lg-toshitaiko": {
+  "src": "photo-baseball.lg-toshitaiko.jpg",
+  "author": "Baykin",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Toshitaikou_opening.jpg",
+  "file": "File:Toshitaikou opening.jpg"
+ },
+ "baseball.lg-cpbl": {
+  "src": "photo-baseball.lg-cpbl.jpg",
+  "author": "Onestanley",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Taichungstadium01.jpg",
+  "file": "File:Taichungstadium01.jpg"
+ },
+ "baseball.lg-winter": {
+  "src": "photo-baseball.lg-winter.jpg",
+  "author": "Periodico 26 Las Tunas",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Tunas_vs._Cocodrilos_(cropped).jpg",
+  "file": "File:Tunas vs. Cocodrilos (cropped).jpg"
+ },
+ "baseball.lg-lcs": {
+  "src": "photo-baseball.lg-lcs.jpg",
+  "author": "KennethHan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NLCS_2008.jpg",
+  "file": "File:NLCS 2008.jpg"
+ },
+ "baseball.lg-negro": {
+  "src": "photo-baseball.lg-negro.jpg",
+  "author": "dbking",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Negro_League_emblem.jpg",
+  "file": "File:Negro League emblem.jpg"
+ },
+ "baseball.lg-jingu": {
+  "src": "photo-baseball.lg-jingu.jpg",
+  "author": "江戸村のとくぞう",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japan_Student_Baseball_211120a.jpg",
+  "file": "File:Japan Student Baseball 211120a.jpg"
+ },
+ "baseball.lg-21seiki": {
+  "src": "photo-baseball.lg-21seiki.jpg",
+  "author": "Own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hanshin_Koshien_Stadium2.JPG",
+  "file": "File:Hanshin Koshien Stadium2.JPG"
+ },
+ "baseball.lg-aagpbl": {
+  "src": "photo-baseball.lg-aagpbl.jpg",
+  "author": "The Pink Oboe",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Logo_of_the_All-American_Girls_Professional_Baseball_League.svg",
+  "file": "File:Logo of the All-American Girls Professional Baseball League.svg"
+ },
+ "baseball.lg-posting": {
+  "src": "photo-baseball.lg-posting.jpg",
+  "author": "Rdikeman at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ichiro.jpg",
+  "file": "File:Ichiro.jpg"
+ },
+ "baseball.lg-cactus": {
+  "src": "photo-baseball.lg-cactus.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Dodgers_spring_training_at_Holman_Stadium,_Dodgertown,_1994.jpg",
+  "file": "File:Los Angeles Dodgers spring training at Holman Stadium, Dodgertown, 1994.jpg"
+ },
+ "baseball.lg-gamesa": {
+  "src": "photo-baseball.lg-gamesa.jpg",
+  "author": "Bernard Gagnon",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_Sox_2007.jpg",
+  "file": "File:Red Sox 2007.jpg"
+ },
+ "baseball.tm-giants": {
+  "src": "photo-baseball.tm-giants.jpg",
+  "author": "Yomiuri Giants",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yomiuri_Giants_logo.svg",
+  "file": "File:Yomiuri Giants logo.svg"
+ },
+ "baseball.tm-tigers": {
+  "src": "photo-baseball.tm-tigers.jpg",
+  "author": "Hanshin Tigers Baseball Club,Ltd.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hanshin_tigers_insignia.svg",
+  "file": "File:Hanshin tigers insignia.svg"
+ },
+ "baseball.tm-dragons": {
+  "src": "photo-baseball.tm-dragons.jpg",
+  "author": "Original: Torsodog Vector: ヒッパソス",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chunichi_Dragons_insignia.svg",
+  "file": "File:Chunichi Dragons insignia.svg"
+ },
+ "baseball.tm-baystars": {
+  "src": "photo-baseball.tm-baystars.jpg",
+  "author": "さもってぃおすし",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%A8%AA%E6%B5%9CDena%E3%83%99%E3%82%A4%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA%E3%83%AD%E3%82%B4.png",
+  "file": "File:横浜Denaベイスターズロゴ.png"
+ },
+ "baseball.tm-carp": {
+  "src": "photo-baseball.tm-carp.jpg",
+  "author": "Original: RingoSB Vector: ヒッパソス",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiroshima_Toyo_Carp_insignia.svg",
+  "file": "File:Hiroshima Toyo Carp insignia.svg"
+ },
+ "baseball.tm-swallows": {
+  "src": "photo-baseball.tm-swallows.jpg",
+  "author": "Original: RandyFitz Vector: ヒッパソス",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tokyo_Yakult_Swallows_insignia.svg",
+  "file": "File:Tokyo Yakult Swallows insignia.svg"
+ },
+ "baseball.tm-hawks": {
+  "src": "photo-baseball.tm-hawks.jpg",
+  "author": "Original: Torsodog Vector: ヒッパソス",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fukuoka_SoftBank_Hawks_insignia.svg",
+  "file": "File:Fukuoka SoftBank Hawks insignia.svg"
+ },
+ "baseball.tm-fighters": {
+  "src": "photo-baseball.tm-fighters.jpg",
+  "author": "Original: Torsodog Vector: ヒッパソス",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hokkaido_Nippon-Ham_Fighters_insignia.svg",
+  "file": "File:Hokkaido Nippon-Ham Fighters insignia.svg"
+ },
+ "baseball.tm-buffaloes": {
+  "src": "photo-baseball.tm-buffaloes.jpg",
+  "author": "Original: Haruakibay Vector: ヒッパソス",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Orix_Buffaloes_insignia.svg",
+  "file": "File:Orix Buffaloes insignia.svg"
+ },
+ "baseball.tm-eagles": {
+  "src": "photo-baseball.tm-eagles.jpg",
+  "author": "Rakuten Baseball, Inc.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Rakuten_eagles_insignia.svg",
+  "file": "File:Rakuten eagles insignia.svg"
+ },
+ "baseball.tm-lions": {
+  "src": "photo-baseball.tm-lions.jpg",
+  "author": "SEIBU LIONS,INC.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Seibu_lions_insignia.svg",
+  "file": "File:Seibu lions insignia.svg"
+ },
+ "baseball.tm-marines": {
+  "src": "photo-baseball.tm-marines.jpg",
+  "author": "Original: Nakanan Vector: ヒッパソス",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chiba_Lotte_Marines_insignia.svg",
+  "file": "File:Chiba Lotte Marines insignia.svg"
+ },
+ "baseball.tm-koshien": {
+  "src": "photo-baseball.tm-koshien.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:202309081549_IMG_3516.jpg",
+  "file": "File:202309081549 IMG 3516.jpg"
+ },
+ "baseball.tm-tokyodome": {
+  "src": "photo-baseball.tm-tokyodome.jpg",
+  "author": "User:DX Broadrec",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tokyo_Dome_2007-12.jpg",
+  "file": "File:Tokyo Dome 2007-12.jpg"
+ },
+ "baseball.tm-homebase": {
+  "src": "photo-baseball.tm-homebase.jpg",
+  "author": "Lighten-up",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Friends_Arena_from_inside.jpg",
+  "file": "File:Friends Arena from inside.jpg"
+ },
+ "baseball.tm-fenway": {
+  "src": "photo-baseball.tm-fenway.jpg",
+  "author": "User Jared Vincent on Flickr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fenway_from_Legend%27s_Box.jpg",
+  "file": "File:Fenway from Legend's Box.jpg"
+ },
+ "baseball.tm-yankeestadium": {
+  "src": "photo-baseball.tm-yankeestadium.jpg",
+  "author": "Andrew nyr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:YankeeStadium-9-21-22-1.jpg",
+  "file": "File:YankeeStadium-9-21-22-1.jpg"
+ },
+ "baseball.tm-dodgerstadium": {
+  "src": "photo-baseball.tm-dodgerstadium.jpg",
+  "author": "Spatms",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dodger_Stadium_and_Chavez_Ravine_far_view,_Chicago_Cubs_at_Los_Angeles_Dodgers,_(April_12,_2025).jpg",
+  "file": "File:Dodger Stadium and Chavez Ravine far view, Chicago Cubs at Los Angeles Dodgers, (April 12, 2025).jpg"
+ },
+ "baseball.tm-jingu": {
+  "src": "photo-baseball.tm-jingu.jpg",
+  "author": "江戸村のとくぞう",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Meiji_Jingu_Stadium_2019c.jpg",
+  "file": "File:Meiji Jingu Stadium 2019c.jpg"
+ },
+ "baseball.tm-akaheru": {
+  "src": "photo-baseball.tm-akaheru.jpg",
+  "author": "Original: RingoSB Vector: ヒッパソス",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiroshima_Toyo_Carp_insignia.svg",
+  "file": "File:Hiroshima Toyo Carp insignia.svg"
+ },
+ "baseball.tm-subway": {
+  "src": "photo-baseball.tm-subway.jpg",
+  "author": "New York Yankees organization",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NewYorkYankees_caplogo.svg",
+  "file": "File:NewYorkYankees caplogo.svg"
+ },
+ "baseball.tm-freeway": {
+  "src": "photo-baseball.tm-freeway.jpg",
+  "author": "Los Angeles Angels of Anaheim",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Angels_of_Anaheim.svg",
+  "file": "File:Los Angeles Angels of Anaheim.svg"
+ },
+ "baseball.tm-reds": {
+  "src": "photo-baseball.tm-reds.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cincinnati_Reds_Logo.svg",
+  "file": "File:Cincinnati Reds Logo.svg"
+ },
+ "baseball.tm-camden": {
+  "src": "photo-baseball.tm-camden.jpg",
+  "author": "Maryland GovPics",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Orioles_Opening_Day_(52803246215).jpg",
+  "file": "File:Orioles Opening Day (52803246215).jpg"
+ },
+ "baseball.tm-astrodome": {
+  "src": "photo-baseball.tm-astrodome.jpg",
+  "author": "No machine-readable author provided. Bobbyweatherford~common…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Reliant_Astrodome.jpg",
+  "file": "File:Reliant Astrodome.jpg"
+ },
+ "baseball.tm-balloon": {
+  "src": "photo-baseball.tm-balloon.jpg",
+  "author": "Chris Gladis (MShades) from Kyoto, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Balloons.jpg",
+  "file": "File:Balloons.jpg"
+ },
+ "baseball.tm-toratou": {
+  "src": "photo-baseball.tm-toratou.jpg",
+  "author": "Chris Gladis (MShades) from Kyoto, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Balloons.jpg",
+  "file": "File:Balloons.jpg"
+ },
+ "baseball.st-ohtani": {
+  "src": "photo-baseball.st-ohtani.jpg",
+  "author": "All-Pro Reels from District of Columbia, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dodgers_at_Nationals_(53677192000)_(cropped2).jpg",
+  "file": "File:Dodgers at Nationals (53677192000) (cropped2).jpg"
+ },
+ "baseball.st-yamamoto": {
+  "src": "photo-baseball.st-yamamoto.jpg",
+  "author": "All-Pro Reels from District of Columbia, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yoshinobu_Yamamoto_in_2024_(53676737736).jpg",
+  "file": "File:Yoshinobu Yamamoto in 2024 (53676737736).jpg"
+ },
+ "baseball.st-sasakiroki": {
+  "src": "photo-baseball.st-sasakiroki.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E4%BD%90%E3%80%85%E6%9C%A8%E6%9C%97%E5%B8%8C_MLB_Tokyo_Series_by_Guggenheim_Pre-season_games_Los_Angeles_Dodgers_vs_%E8%AA%AD%E5%A3%B2%E3%82%B8%E3%83%A3%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%84_%E6%9D%B1%E4%BA%AC%E3%83%89%E3%83%BC%E3%83%A0_2025%E5%B9%B43%E6%9C%8815%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202503151741_DSCN2909.jpg",
+  "file": "File:佐々木朗希 MLB Tokyo Series by Guggenheim Pre-season games Los Angeles Dodgers vs 読売ジャイアンツ 東京ドーム 2025年3月15日の東京 202503151741 DSCN2909.jpg"
+ },
+ "baseball.st-murakami": {
+  "src": "photo-baseball.st-murakami.jpg",
+  "author": "TSUBAME98",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:YS-Munetaka_Murakami20211010.jpg",
+  "file": "File:YS-Munetaka Murakami20211010.jpg"
+ },
+ "baseball.st-suzukiseiya": {
+  "src": "photo-baseball.st-suzukiseiya.jpg",
+  "author": "Carpawa",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E9%88%B4%E6%9C%A8%E8%AA%A0%E4%B9%9F20160617.jpg",
+  "file": "File:鈴木誠也20160617.jpg"
+ },
+ "baseball.st-imanaga": {
+  "src": "photo-baseball.st-imanaga.jpg",
+  "author": "OmiyuF",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Imanaga_pitching_form_3.jpg",
+  "file": "File:Imanaga pitching form 3.jpg"
+ },
+ "baseball.st-judge": {
+  "src": "photo-baseball.st-judge.jpg",
+  "author": "The White House",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Aaron_Judge_posing_with_Donald_Trump_2025-09-11_(cropped).jpg",
+  "file": "File:Aaron Judge posing with Donald Trump 2025-09-11 (cropped).jpg"
+ },
+ "baseball.st-betts": {
+  "src": "photo-baseball.st-betts.jpg",
+  "author": "All-Pro Reels from District of Columbia, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dodgers_at_Nationals_(53676957188)_(cropped).jpg",
+  "file": "File:Dodgers at Nationals (53676957188) (cropped).jpg"
+ },
+ "baseball.st-trout": {
+  "src": "photo-baseball.st-trout.jpg",
+  "author": "Mogami Kariya",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mike_Trout_(52252097714)_(cropped).jpg",
+  "file": "File:Mike Trout (52252097714) (cropped).jpg"
+ },
+ "baseball.st-harper": {
+  "src": "photo-baseball.st-harper.jpg",
+  "author": "All-Pro Reels from District of Columbia, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bryce_Harper_Stare_Down_Pregame_from_Nationals_vs._Phillies_at_Nationals_Park,_May_13th,_2021_(All-Pro_Reels_Photography)_(51188354283)_(cropped).jpg",
+  "file": "File:Bryce Harper Stare Down Pregame from Nationals vs. Phillies at Nationals Park, May 13th, 2021 (All-Pro Reels Photography) (51188354283) (cropped).jpg"
+ },
+ "baseball.st-acuna": {
+  "src": "photo-baseball.st-acuna.jpg",
+  "author": "All-Pro Reels from District of Columbia, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ronald_Acuna_Jr._HR_from_Nationals_vs._Braves_at_Nationals_Park,_April_6th,_2021_(All-Pro_Reels_Photography)_(51102624580)_(cropped).png",
+  "file": "File:Ronald Acuna Jr. HR from Nationals vs. Braves at Nationals Park, April 6th, 2021 (All-Pro Reels Photography) (51102624580) (cropped).png"
+ },
+ "baseball.st-guerrero": {
+  "src": "photo-baseball.st-guerrero.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vladimir_Guerrero_Jr._(52066695159)_(cropped).jpg",
+  "file": "File:Vladimir Guerrero Jr. (52066695159) (cropped).jpg"
+ },
+ "baseball.st-freeman": {
+  "src": "photo-baseball.st-freeman.jpg",
+  "author": "All-Pro Reels from District of Columbia, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Freddie_Freeman_-_Dodgers_vs_Nationals_4-23-2024.jpg",
+  "file": "File:Freddie Freeman - Dodgers vs Nationals 4-23-2024.jpg"
+ },
+ "baseball.st-skenes": {
+  "src": "photo-baseball.st-skenes.jpg",
+  "author": "Yeroc3103",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Paul_Skenes_Pitching_2026.jpg",
+  "file": "File:Paul Skenes Pitching 2026.jpg"
+ },
+ "baseball.st-lindor": {
+  "src": "photo-baseball.st-lindor.jpg",
+  "author": "D. Benjamin Miller",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Francisco_Lindor_during_warmups,_March_15,_2024_(1)_(cropped).jpg",
+  "file": "File:Francisco Lindor during warmups, March 15, 2024 (1) (cropped).jpg"
+ },
+ "baseball.st-stanton": {
+  "src": "photo-baseball.st-stanton.jpg",
+  "author": "Jeffrey Hyde from Bryan, TX, United States",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Giancarlo_Stanton_(53947423106)_(cropped).jpg",
+  "file": "File:Giancarlo Stanton (53947423106) (cropped).jpg"
+ },
+ "baseball.st-raleigh": {
+  "src": "photo-baseball.st-raleigh.jpg",
+  "author": "Arc1294",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CalRaleigh2025.png",
+  "file": "File:CalRaleigh2025.png"
+ },
+ "baseball.st-yoshida": {
+  "src": "photo-baseball.st-yoshida.jpg",
+  "author": "Chris Waugaman",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Masataka_Yoshida_April14,_2026_(cropped).jpg",
+  "file": "File:Masataka Yoshida April14, 2026 (cropped).jpg"
+ },
+ "baseball.st-senga": {
+  "src": "photo-baseball.st-senga.jpg",
+  "author": "Johnmaxmena2",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kodai_Senga_March_31_2026_636.png",
+  "file": "File:Kodai Senga March 31 2026 636.png"
+ },
+ "baseball.st-okamoto": {
+  "src": "photo-baseball.st-okamoto.jpg",
+  "author": "沖田 亮",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gk_ryoDSC_97122.jpg",
+  "file": "File:Gk ryoDSC 97122.jpg"
+ },
+ "baseball.st-satoteruaki": {
+  "src": "photo-baseball.st-satoteruaki.jpg",
+  "author": "とらとうはんしん",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Teruaki-Sato-20240310-Koshien.jpg",
+  "file": "File:Teruaki-Sato-20240310-Koshien.jpg"
+ },
+ "baseball.st-kondo": {
+  "src": "photo-baseball.st-kondo.jpg",
+  "author": "Orixbaseballclub",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kensuke_Kondoh_Hawks_20230405.jpg",
+  "file": "File:Kensuke Kondoh Hawks 20230405.jpg"
+ },
+ "baseball.st-miyagi": {
+  "src": "photo-baseball.st-miyagi.jpg",
+  "author": "KINGtheFACT on Wikimedia Commons (Original version) UCintern…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiroya_Miyagi_on_November_6,_2020_(1).jpg",
+  "file": "File:Hiroya Miyagi on November 6, 2020 (1).jpg"
+ },
+ "baseball.st-takahashihiroto": {
+  "src": "photo-baseball.st-takahashihiroto.jpg",
+  "author": "neko kabachi",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiroto_TAKAHASHI_DRAGONS_19_20220729.jpg",
+  "file": "File:Hiroto TAKAHASHI DRAGONS 19 20220729.jpg"
+ },
+ "baseball.st-shuto": {
+  "src": "photo-baseball.st-shuto.jpg",
+  "author": "ほしぞら",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%81%BF%E3%81%9A%E3%81%BBPayPay%E3%83%89%E3%83%BC%E3%83%A0_2024.9.18.jpg",
+  "file": "File:みずほPayPayドーム 2024.9.18.jpg"
+ },
+ "baseball.st-maki": {
+  "src": "photo-baseball.st-maki.jpg",
+  "author": "ぽこ太郎",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20210306_Shugo_Maki_infielder_of_the_Yokohama_DeNA_BayStars,_at_Yokohama_Stadium_(VS_ORIX).jpg",
+  "file": "File:20210306 Shugo Maki infielder of the Yokohama DeNA BayStars, at Yokohama Stadium (VS ORIX).jpg"
+ },
+ "baseball.st-yamadatetsuto": {
+  "src": "photo-baseball.st-yamadatetsuto.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E7%94%B0%E5%93%B2%E4%BA%BA%E3%80%90JERA_%E3%82%BB%E3%83%BB%E3%83%AA%E3%83%BC%E3%82%B0%E5%85%AC%E5%BC%8F%E6%88%A6%E3%80%91%E6%9D%B1%E4%BA%AC%E3%83%A4%E3%82%AF%E3%83%AB%E3%83%88%E3%82%B9%E3%83%AF%E3%83%AD%E3%83%BC%E3%82%BA_vs_%E8%AA%AD%E5%A3%B2%E3%82%B8%E3%83%A3%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%84_20%E5%9B%9E%E6%88%A6_%E6%98%8E%E6%B2%BB%E7%A5%9E%E5%AE%AE%E9%87%8E%E7%90%83%E5%A0%B4_2026%E5%B9%B48%E6%9C%8825%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202608251831_DSCN9820_(2).jpg",
+  "file": "File:山田哲人【JERA セ・リーグ公式戦】東京ヤクルトスワローズ vs 読売ジャイアンツ 20回戦 明治神宮野球場 2026年8月25日の東京 202608251831 DSCN9820 (2).jpg"
+ },
+ "baseball.st-witt": {
+  "src": "photo-baseball.st-witt.jpg",
+  "author": "Johnmaxmena2",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bobbywittjrprofile.png",
+  "file": "File:Bobbywittjrprofile.png"
+ },
+ "baseball.st-henderson": {
+  "src": "photo-baseball.st-henderson.jpg",
+  "author": "Reunion",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:GunnarHenderson.jpg",
+  "file": "File:GunnarHenderson.jpg"
+ },
+ "baseball.st-marte": {
+  "src": "photo-baseball.st-marte.jpg",
+  "author": "Reunion",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:KetelMarte.jpg",
+  "file": "File:KetelMarte.jpg"
+ },
+ "baseball.st-carroll": {
+  "src": "photo-baseball.st-carroll.jpg",
+  "author": "Reunion",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CorbinCarroll.jpg",
+  "file": "File:CorbinCarroll.jpg"
+ },
+ "baseball.st-delacruz": {
+  "src": "photo-baseball.st-delacruz.jpg",
+  "author": "Reunion",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:EllyDeLaCruz_(09092025).jpg",
+  "file": "File:EllyDeLaCruz (09092025).jpg"
+ },
+ "baseball.st-schwarber": {
+  "src": "photo-baseball.st-schwarber.jpg",
+  "author": "Zach McHoul",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023-04-08_kyle_schwarber_swinging.jpg",
+  "file": "File:2023-04-08 kyle schwarber swinging.jpg"
+ },
+ "baseball.st-alonso": {
+  "src": "photo-baseball.st-alonso.jpg",
+  "author": "D. Benjamin Miller",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Pete_Alonso_playing_defense,_March_25,_2023_(1)_(cropped).jpg",
+  "file": "File:Pete Alonso playing defense, March 25, 2023 (1) (cropped).jpg"
+ },
+ "baseball.st-crochet": {
+  "src": "photo-baseball.st-crochet.jpg",
+  "author": "Photo by Baumology (Twitter & Instagram @_baumology_)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Garrett_Crochet_Tennessee_(cropped).jpg",
+  "file": "File:Garrett Crochet Tennessee (cropped).jpg"
+ },
+ "baseball.st-sale": {
+  "src": "photo-baseball.st-sale.jpg",
+  "author": "KA Sports Photos from Hanover, MD, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chris_Sale_(48069955113)_(cropped).jpg",
+  "file": "File:Chris Sale (48069955113) (cropped).jpg"
+ },
+ "baseball.st-cole": {
+  "src": "photo-baseball.st-cole.jpg",
+  "author": "Jeffrey Hyde from Bryan, TX, United States",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gerrit_Cole_(53947688783)_(cropped).jpg",
+  "file": "File:Gerrit Cole (53947688783) (cropped).jpg"
+ },
+ "baseball.st-diaz": {
+  "src": "photo-baseball.st-diaz.jpg",
+  "author": "D. Benjamin Miller",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Edwin_Diaz_on_March_2,_2019_(cropped_2).jpg",
+  "file": "File:Edwin Diaz on March 2, 2019 (cropped 2).jpg"
+ },
+ "baseball.st-perez": {
+  "src": "photo-baseball.st-perez.jpg",
+  "author": "Johnmaxmena2",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SalvadorPerezkccaptain2023.jpg",
+  "file": "File:SalvadorPerezkccaptain2023.jpg"
+ },
+ "baseball.st-seager": {
+  "src": "photo-baseball.st-seager.jpg",
+  "author": "Ken Lund from Reno, Nevada, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Corey_Seager_(53626731583)_(cropped).jpg",
+  "file": "File:Corey Seager (53626731583) (cropped).jpg"
+ },
+ "baseball.st-togo": {
+  "src": "photo-baseball.st-togo.jpg",
+  "author": "Hahifuheho",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Shosei_Togo_20210403.JPG",
+  "file": "File:Shosei Togo 20210403.JPG"
+ },
+ "baseball.st-murakamishoki": {
+  "src": "photo-baseball.st-murakamishoki.jpg",
+  "author": "嘉男たまらん",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9D%91%E4%B8%8A.jpg",
+  "file": "File:村上.jpg"
+ },
+ "baseball.st-genda": {
+  "src": "photo-baseball.st-genda.jpg",
+  "author": "えすぱにぃ",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Genda6.jpg",
+  "file": "File:Genda6.jpg"
+ },
+ "baseball.st-kai": {
+  "src": "photo-baseball.st-kai.jpg",
+  "author": "フジナミゼン",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kai.takuya.10.jpg",
+  "file": "File:Kai.takuya.10.jpg"
+ },
+ "baseball.st-taisei": {
+  "src": "photo-baseball.st-taisei.jpg",
+  "author": "Hahifuheho",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Giants_Taiusei_Ota_20220813_(cropped).jpg",
+  "file": "File:Giants Taiusei Ota 20220813 (cropped).jpg"
+ },
+ "baseball.st-sugano": {
+  "src": "photo-baseball.st-sugano.jpg",
+  "author": "松崎斗真",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E8%8F%85%E9%87%8E%E6%99%BA%E4%B9%8B_2024%E5%B9%B4.jpg",
+  "file": "File:菅野智之 2024年.jpg"
+ },
+ "baseball.st-kikuchi": {
+  "src": "photo-baseball.st-kikuchi.jpg",
+  "author": "Moto \"Club4AG\" Miwa from USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yusei_Kikuchi_(48035182857).jpg",
+  "file": "File:Yusei Kikuchi (48035182857).jpg"
+ },
+ "baseball.st-caminero": {
+  "src": "photo-baseball.st-caminero.jpg",
+  "author": "Raysfanjake1984",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:JuniorCaminero.jpg",
+  "file": "File:JuniorCaminero.jpg"
+ },
+ "baseball.st-webb": {
+  "src": "photo-baseball.st-webb.jpg",
+  "author": "FanDuel",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Logan_Webb_(5-stwy4BMKU).png",
+  "file": "File:Logan Webb (5-stwy4BMKU).png"
+ },
+ "baseball.st-misiorowski": {
+  "src": "photo-baseball.st-misiorowski.jpg",
+  "author": "Drovetochicago",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jacob_Misiorowski.jpg",
+  "file": "File:Jacob Misiorowski.jpg"
+ },
+ "baseball.st-hader": {
+  "src": "photo-baseball.st-hader.jpg",
+  "author": "Johnmaxmena2",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Game_03_2025_Astros-Cardinals_Apr_14_josh_hader.png",
+  "file": "File:Game 03 2025 Astros-Cardinals Apr 14 josh hader.png"
+ },
+ "baseball.st-masonmiller": {
+  "src": "photo-baseball.st-masonmiller.jpg",
+  "author": "False casey",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mason_Miller_Padres_8.22.2026.jpg",
+  "file": "File:Mason Miller Padres 8.22.2026.jpg"
+ },
+ "baseball.st-rutschman": {
+  "src": "photo-baseball.st-rutschman.jpg",
+  "author": "Maryland GovPics",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Adley_Rutschman_cropped_from_Pre_Game_Warmup_(52802968734).jpg",
+  "file": "File:Adley Rutschman cropped from Pre Game Warmup (52802968734).jpg"
+ },
+ "baseball.st-maikelgarcia": {
+  "src": "photo-baseball.st-maikelgarcia.jpg",
+  "author": "Johnmaxmena2",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maikel_Garcia_Royals_2025.png",
+  "file": "File:Maikel Garcia Royals 2025.png"
+ },
+ "baseball.st-arraez": {
+  "src": "photo-baseball.st-arraez.jpg",
+  "author": "slgckgc",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Luis_Arr%C3%A1ez_batting_against_Tylor_Megill%27s_First_Pitch_of_the_Game.jpg",
+  "file": "File:Luis Arráez batting against Tylor Megill's First Pitch of the Game.jpg"
+ },
+ "baseball.st-baldwin": {
+  "src": "photo-baseball.st-baldwin.jpg",
+  "author": "Reunion",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DrakeBaldwin.jpg",
+  "file": "File:DrakeBaldwin.jpg"
+ },
+ "baseball.st-kirk": {
+  "src": "photo-baseball.st-kirk.jpg",
+  "author": "slgckgc",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alejandro_Kirk_Batting_(51289909037)_(cropped).jpg",
+  "file": "File:Alejandro Kirk Batting (51289909037) (cropped).jpg"
+ },
+ "baseball.st-teoscar": {
+  "src": "photo-baseball.st-teoscar.jpg",
+  "author": "David from Washington, DC",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Teoscar_Hern%C3%A1ndez_(53680486178)_(cropped).jpg",
+  "file": "File:Teoscar Hernández (53680486178) (cropped).jpg"
+ },
+ "baseball.st-snell": {
+  "src": "photo-baseball.st-snell.jpg",
+  "author": "Reunion",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BlakeSnell_(cropped).jpg",
+  "file": "File:BlakeSnell (cropped).jpg"
+ },
+ "baseball.st-bellinger": {
+  "src": "photo-baseball.st-bellinger.jpg",
+  "author": "U.S. Air Force photo by Staff Sgt. Jesenia Landaverde",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cody_Bellinger_(7883003)_(cropped).jpg",
+  "file": "File:Cody Bellinger (7883003) (cropped).jpg"
+ },
+ "baseball.le-ruth": {
+  "src": "photo-baseball.le-ruth.jpg",
+  "author": "Paul Thompson, NY",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Babe_Ruth_circa_1920.jpg",
+  "file": "File:Babe Ruth circa 1920.jpg"
+ },
+ "baseball.le-nagashima": {
+  "src": "photo-baseball.le-nagashima.jpg",
+  "author": "大臣官房人事課",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shigeo_Nagashima_cropped_1_Shigeo_Nagashima_20211103.jpg",
+  "file": "File:Shigeo Nagashima cropped 1 Shigeo Nagashima 20211103.jpg"
+ },
+ "baseball.le-ichiro": {
+  "src": "photo-baseball.le-ichiro.jpg",
+  "author": "Jeffrey Hayes",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ichiro_Suzuki_(51007034081)_(cropped).jpg",
+  "file": "File:Ichiro Suzuki (51007034081) (cropped).jpg"
+ },
+ "baseball.le-nomo": {
+  "src": "photo-baseball.le-nomo.jpg",
+  "author": "Ryosuke Yagi",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_(31879540).jpg",
+  "file": "File:投げます (31879540).jpg"
+ },
+ "baseball.le-matsui": {
+  "src": "photo-baseball.le-matsui.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hideki_Matsui_in_USA-7.jpg",
+  "file": "File:Hideki Matsui in USA-7.jpg"
+ },
+ "baseball.le-robinson": {
+  "src": "photo-baseball.le-robinson.jpg",
+  "author": "Photo by Bob Sandberg, Look photographer Restoration by Adam…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jackie_Robinson,_Brooklyn_Dodgers,_1954.jpg",
+  "file": "File:Jackie Robinson, Brooklyn Dodgers, 1954.jpg"
+ },
+ "baseball.le-aaron": {
+  "src": "photo-baseball.le-aaron.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hank_Aaron_1974.jpg",
+  "file": "File:Hank Aaron 1974.jpg"
+ },
+ "baseball.le-gehrig": {
+  "src": "photo-baseball.le-gehrig.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lou_Gehrig_in_1923_(cropped).jpg",
+  "file": "File:Lou Gehrig in 1923 (cropped).jpg"
+ },
+ "baseball.le-sawamura": {
+  "src": "photo-baseball.le-sawamura.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sawamura_eji00.jpg",
+  "file": "File:Sawamura eji00.jpg"
+ },
+ "baseball.le-kaneda": {
+  "src": "photo-baseball.le-kaneda.jpg",
+  "author": "博友社 (Hakuyu-sha Co., Ltd.)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Masaichi_Kaneda_1956_Scan10003.JPG",
+  "file": "File:Masaichi Kaneda 1956 Scan10003.JPG"
+ },
+ "baseball.le-ryan": {
+  "src": "photo-baseball.le-ryan.jpg",
+  "author": "Nolan_Ryan_Tiger_Stadium_1990.jpg: Chuck Andersen derivative…",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nolan_Ryan_Tiger_Stadium_1990_CROP.jpg",
+  "file": "File:Nolan Ryan Tiger Stadium 1990 CROP.jpg"
+ },
+ "baseball.le-cyyoung": {
+  "src": "photo-baseball.le-cyyoung.jpg",
+  "author": "Chicago Daily News",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cy_Young_(1903).jpg",
+  "file": "File:Cy Young (1903).jpg"
+ },
+ "baseball.le-matsuzaka": {
+  "src": "photo-baseball.le-matsuzaka.jpg",
+  "author": "slgckgc on Flickr (Original version) UCinternational (Crop)",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Daisuke_Matsuzaka_on_March_7,_2014.jpg",
+  "file": "File:Daisuke Matsuzaka on March 7, 2014.jpg"
+ },
+ "baseball.le-ochiai": {
+  "src": "photo-baseball.le-ochiai.jpg",
+  "author": "machu. on Flickr (Original version) UCinternational (Crop)",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiromitsu_Ochiai.jpg",
+  "file": "File:Hiromitsu Ochiai.jpg"
+ },
+ "baseball.le-jeter": {
+  "src": "photo-baseball.le-jeter.jpg",
+  "author": "TechCrunch",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Derek_Jeter_at_TechCrunch_Disrupt_NY_2017_-_Day_1_(cropped).jpg",
+  "file": "File:Derek Jeter at TechCrunch Disrupt NY 2017 - Day 1 (cropped).jpg"
+ },
+ "baseball.le-griffey": {
+  "src": "photo-baseball.le-griffey.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ken_Griffey,_Jr._June_2009_(cropped).jpg",
+  "file": "File:Ken Griffey, Jr. June 2009 (cropped).jpg"
+ },
+ "baseball.le-rivera": {
+  "src": "photo-baseball.le-rivera.jpg",
+  "author": "User Keith Allison on Flickr",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mariano_Rivera_allison_7_29_07.jpg",
+  "file": "File:Mariano Rivera allison 7 29 07.jpg"
+ },
+ "baseball.le-clemente": {
+  "src": "photo-baseball.le-clemente.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Roberto_Clemente_1965.jpg",
+  "file": "File:Roberto Clemente 1965.jpg"
+ },
+ "baseball.le-dimaggio": {
+  "src": "photo-baseball.le-dimaggio.jpg",
+  "author": "Tom Sande",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Joe_DiMaggio.jpg",
+  "file": "File:Joe DiMaggio.jpg"
+ },
+ "baseball.le-twilliams": {
+  "src": "photo-baseball.le-twilliams.jpg",
+  "author": "Unknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ted_Williams_(cropped).jpg",
+  "file": "File:Ted Williams (cropped).jpg"
+ },
+ "baseball.le-mays": {
+  "src": "photo-baseball.le-mays.jpg",
+  "author": "New York World-Telegram and the Sun staff photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Willie_Mays_and_Roy_Campanella_NYWTS.jpg",
+  "file": "File:Willie Mays and Roy Campanella NYWTS.jpg"
+ },
+ "baseball.le-mantle": {
+  "src": "photo-baseball.le-mantle.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mickey_Mantle_1957_(cropped).jpg",
+  "file": "File:Mickey Mantle 1957 (cropped).jpg"
+ },
+ "baseball.le-cobb": {
+  "src": "photo-baseball.le-cobb.jpg",
+  "author": "International Film Service",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1913_Ty_Cobb_portrait_photo.png",
+  "file": "File:1913 Ty Cobb portrait photo.png"
+ },
+ "baseball.le-koufax": {
+  "src": "photo-baseball.le-koufax.jpg",
+  "author": "Los Angeles Times",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sandy_Koufax_1963_crop.jpg",
+  "file": "File:Sandy Koufax 1963 crop.jpg"
+ },
+ "baseball.le-ripken": {
+  "src": "photo-baseball.le-ripken.jpg",
+  "author": "Arturo Pardavila III from Hoboken, NJ, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2015_-_Cal_Ripken_Jr._(22985699933)_(cropped).jpg",
+  "file": "File:2015 - Cal Ripken Jr. (22985699933) (cropped).jpg"
+ },
+ "baseball.le-rjohnson": {
+  "src": "photo-baseball.le-rjohnson.jpg",
+  "author": "Arturo Pardavila III",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Randy_Johnson_2016.jpg",
+  "file": "File:Randy Johnson 2016.jpg"
+ },
+ "baseball.le-maddux": {
+  "src": "photo-baseball.le-maddux.jpg",
+  "author": "User ScottRAnselmo on en.wikipedia ScottRAnselmo (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maddux_53.jpg",
+  "file": "File:Maddux 53.jpg"
+ },
+ "baseball.le-pedro": {
+  "src": "photo-baseball.le-pedro.jpg",
+  "author": "Arturo Pardavila III",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pedro_Martinez_HOF.jpg",
+  "file": "File:Pedro Martinez HOF.jpg"
+ },
+ "baseball.le-kershaw": {
+  "src": "photo-baseball.le-kershaw.jpg",
+  "author": "The White House",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kershaw_at_White_House_(cropped).jpg",
+  "file": "File:Kershaw at White House (cropped).jpg"
+ },
+ "baseball.le-pujols": {
+  "src": "photo-baseball.le-pujols.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pujols2019_(cropped).jpg",
+  "file": "File:Pujols2019 (cropped).jpg"
+ },
+ "baseball.le-kawakami": {
+  "src": "photo-baseball.le-kawakami.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kawakami_Tetsuharu.jpg",
+  "file": "File:Kawakami Tetsuharu.jpg"
+ },
+ "baseball.le-inao": {
+  "src": "photo-baseball.le-inao.jpg",
+  "author": "ベースボール・マガジン社（Baseball Magazine Co. Ltd)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kazuhisa_Inao_1956_IMG_20220326_0001.jpg",
+  "file": "File:Kazuhisa Inao 1956 IMG 20220326 0001.jpg"
+ },
+ "baseball.le-harimoto": {
+  "src": "photo-baseball.le-harimoto.jpg",
+  "author": "博友社 (Hakuyu-sha Co., Ltd.)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Isao_Harimoto_1959_Scan10007.jpg",
+  "file": "File:Isao Harimoto 1959 Scan10007.jpg"
+ },
+ "baseball.le-yamada": {
+  "src": "photo-baseball.le-yamada.jpg",
+  "author": "m-louis",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BsSQUARE_Yamada_Hisashi.jpg",
+  "file": "File:BsSQUARE Yamada Hisashi.jpg"
+ },
+ "baseball.le-sasaki": {
+  "src": "photo-baseball.le-sasaki.jpg",
+  "author": "Ogiyoshisan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kazuhiro_Sasaki_IMG_8063-1_20160320.jpg",
+  "file": "File:Kazuhiro Sasaki IMG 8063-1 20160320.jpg"
+ },
+ "baseball.le-uehara": {
+  "src": "photo-baseball.le-uehara.jpg",
+  "author": "Keith Allison on Flickr",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koji_Uehara_2_on_June_15,_2013(crop).jpg",
+  "file": "File:Koji Uehara 2 on June 15, 2013(crop).jpg"
+ },
+ "baseball.le-kuroda": {
+  "src": "photo-baseball.le-kuroda.jpg",
+  "author": "Cbl62",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiroki_Kuroda_(2011).jpg",
+  "file": "File:Hiroki Kuroda (2011).jpg"
+ },
+ "baseball.le-park": {
+  "src": "photo-baseball.le-park.jpg",
+  "author": "사진&여행",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2017_02%EC%9B%94_22%EC%9D%BC_MBN_Y_Forum_2017_(3)_(cropped).jpg",
+  "file": "File:2017 02월 22일 MBN Y Forum 2017 (3) (cropped).jpg"
+ },
+ "baseball.le-mrpro": {
+  "src": "photo-baseball.le-mrpro.jpg",
+  "author": "大臣官房人事課",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shigeo_Nagashima_cropped_1_Shigeo_Nagashima_20211103.jpg",
+  "file": "File:Shigeo Nagashima cropped 1 Shigeo Nagashima 20211103.jpg"
+ },
+ "baseball.le-wjohnson": {
+  "src": "photo-baseball.le-wjohnson.jpg",
+  "author": "Jackson, William Henry, 1843-1942, photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Walter_Johnson_1924.jpg",
+  "file": "File:Walter Johnson 1924.jpg"
+ },
+ "baseball.le-gwynn": {
+  "src": "photo-baseball.le-gwynn.jpg",
+  "author": "Krusty from Saint Paul, MN",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tony_Gwynn_2011_(cropped).jpg",
+  "file": "File:Tony Gwynn 2011 (cropped).jpg"
+ },
+ "baseball.le-paige": {
+  "src": "photo-baseball.le-paige.jpg",
+  "author": "Los Angeles Times",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Satchel_Paige_seated_next_to_bleachers_(2).jpg",
+  "file": "File:Satchel Paige seated next to bleachers (2).jpg"
+ },
+ "baseball.le-cabrera": {
+  "src": "photo-baseball.le-cabrera.jpg",
+  "author": "Ian D'Andrea from Philadelphia, PA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Miguel_Cabrera_(47773834531).jpg",
+  "file": "File:Miguel Cabrera (47773834531).jpg"
+ },
+ "baseball.le-valenzuela": {
+  "src": "photo-baseball.le-valenzuela.jpg",
+  "author": "Jim Accordino",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fernando_Valenzuela_in_bullpen.jpg",
+  "file": "File:Fernando Valenzuela in bullpen.jpg"
+ },
+ "baseball.le-murakami": {
+  "src": "photo-baseball.le-murakami.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Masanori_Murakami_with_the_San_Francisco_Giants.jpg",
+  "file": "File:Masanori Murakami with the San Francisco Giants.jpg"
+ },
+ "baseball.le-furuta": {
+  "src": "photo-baseball.le-furuta.jpg",
+  "author": "TSUBAME98",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:YS-Atsuya-Furuta20190711-01.jpg",
+  "file": "File:YS-Atsuya-Furuta20190711-01.jpg"
+ },
+ "baseball.le-sun": {
+  "src": "photo-baseball.le-sun.jpg",
+  "author": "Gwangju Munhwa Broadcasting Corporation (official YouTube ac…",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%EC%84%A0%EB%8F%99%EC%97%B4_(KIA_%ED%83%80%EC%9D%B4%EA%B1%B0%EC%A6%88_%EA%B0%90%EB%8F%85).jpg",
+  "file": "File:선동열 (KIA 타이거즈 감독).jpg"
+ },
+ "baseball.le-wangcm": {
+  "src": "photo-baseball.le-wangcm.jpg",
+  "author": "Keith Allison from Hanover, MD, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chien-Ming_Wang_(2312062796).jpg",
+  "file": "File:Chien-Ming Wang (2312062796).jpg"
+ },
+ "baseball.le-kuo": {
+  "src": "photo-baseball.le-kuo.jpg",
+  "author": "Gaffky",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:HAWKS83-Tai-Yuan_Kuo.jpg",
+  "file": "File:HAWKS83-Tai-Yuan Kuo.jpg"
+ },
+ "baseball.le-dageki": {
+  "src": "photo-baseball.le-dageki.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kawakami_Tetsuharu.jpg",
+  "file": "File:Kawakami Tetsuharu.jpg"
+ },
+ "baseball.le-on": {
+  "src": "photo-baseball.le-on.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sadaharu-Oh-2.png",
+  "file": "File:Sadaharu-Oh-2.png"
+ },
+ "baseball.le-tenran": {
+  "src": "photo-baseball.le-tenran.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Emperor_Showa_in_Saineikan.jpg",
+  "file": "File:Emperor Showa in Saineikan.jpg"
+ },
+ "baseball.wz-changeup": {
+  "src": "photo-baseball.wz-changeup.jpg",
+  "author": "Toto-artist (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Change_up_1.JPG",
+  "file": "File:Change up 1.JPG"
+ },
+ "baseball.wz-overhand": {
+  "src": "photo-baseball.wz-overhand.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_pitching_motion_2004.jpg",
+  "file": "File:Baseball pitching motion 2004.jpg"
+ },
+ "baseball.wz-sidearm": {
+  "src": "photo-baseball.wz-sidearm.jpg",
+  "author": "ぽこ太郎",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20140713_Rto_Akiyoshi,_pitcher_of_the_Tokyo_Yakult_Swallows,_at_Meiji_Jingu_Stadium.JPG",
+  "file": "File:20140713 Rto Akiyoshi, pitcher of the Tokyo Yakult Swallows, at Meiji Jingu Stadium.JPG"
+ },
+ "baseball.wz-underhand": {
+  "src": "photo-baseball.wz-underhand.jpg",
+  "author": "Keith Allison",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bradford_delivery.jpg",
+  "file": "File:Bradford delivery.jpg"
+ },
+ "baseball.wz-pickoff": {
+  "src": "photo-baseball.wz-pickoff.jpg",
+  "author": "Brett A. Dawson",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Indiana_vs_Navy,_Baseball_pick-off_attempt.jpg",
+  "file": "File:Indiana vs Navy, Baseball pick-off attempt.jpg"
+ },
+ "baseball.wz-sacbunt": {
+  "src": "photo-baseball.wz-sacbunt.jpg",
+  "author": "Ed Schipul (eschipul) from Houston, TX, US",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_bunt.jpg",
+  "file": "File:The bunt.jpg"
+ },
+ "baseball.wz-steal": {
+  "src": "photo-baseball.wz-steal.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_steal.jpg",
+  "file": "File:Baseball steal.jpg"
+ },
+ "baseball.wz-headslide": {
+  "src": "photo-baseball.wz-headslide.jpg",
+  "author": "All-Pro Reels",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ronald_Acuna_(50337465807)_(cropped).jpg",
+  "file": "File:Ronald Acuna (50337465807) (cropped).jpg"
+ },
+ "baseball.wz-centergaeshi": {
+  "src": "photo-baseball.wz-centergaeshi.jpg",
+  "author": "Philpottm",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Marcus_Thames_Tigers_2007.jpg",
+  "file": "File:Marcus Thames Tigers 2007.jpg"
+ },
+ "baseball.wz-cutter": {
+  "src": "photo-baseball.wz-cutter.jpg",
+  "author": "AtomicRED",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cut_Fastball.gif",
+  "file": "File:Cut Fastball.gif"
+ },
+ "baseball.wz-setposition": {
+  "src": "photo-baseball.wz-setposition.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_pitching_motion_2004.jpg",
+  "file": "File:Baseball pitching motion 2004.jpg"
+ },
+ "baseball.wz-safetybunt": {
+  "src": "photo-baseball.wz-safetybunt.jpg",
+  "author": "User:DX Broadrec",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bunt_High_school_baseball_in_Japan_2007.jpg",
+  "file": "File:Bunt High school baseball in Japan 2007.jpg"
+ },
+ "baseball.wz-rundown": {
+  "src": "photo-baseball.wz-rundown.jpg",
+  "author": "Keiteay",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Jumbo_Shrimp_rundown_2.jpg",
+  "file": "File:Jumbo Shrimp rundown 2.jpg"
+ },
+ "baseball.wz-doublesteal": {
+  "src": "photo-baseball.wz-doublesteal.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_steal.jpg",
+  "file": "File:Baseball steal.jpg"
+ },
+ "baseball.wz-homesteal": {
+  "src": "photo-baseball.wz-homesteal.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_steal.jpg",
+  "file": "File:Baseball steal.jpg"
+ },
+ "baseball.wz-threequarter": {
+  "src": "photo-baseball.wz-threequarter.jpg",
+  "author": "roger.badsoul on Flickr (Original version) UCinternational (…",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sugiuchi_Toshiya,_Beijing_2008.jpg",
+  "file": "File:Sugiuchi Toshiya, Beijing 2008.jpg"
+ },
+ "baseball.wz-knucklecurve": {
+  "src": "photo-baseball.wz-knucklecurve.jpg",
+  "author": "AtomicRED",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:12-6_Curveball_(single_frame).gif",
+  "file": "File:12-6 Curveball (single frame).gif"
+ },
+ "baseball.wz-circlechange": {
+  "src": "photo-baseball.wz-circlechange.jpg",
+  "author": "Toto-artist (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Change_up_1.JPG",
+  "file": "File:Change up 1.JPG"
+ },
+ "baseball.wz-gyro": {
+  "src": "photo-baseball.wz-gyro.jpg",
+  "author": "Anywill",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gyroball_motion.jpg",
+  "file": "File:Gyroball motion.jpg"
+ },
+ "baseball.wz-slowcurve": {
+  "src": "photo-baseball.wz-slowcurve.jpg",
+  "author": "AtomicRED",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:12-6_Curveball_(single_frame).gif",
+  "file": "File:12-6 Curveball (single frame).gif"
+ },
+ "baseball.wz-slurve": {
+  "src": "photo-baseball.wz-slurve.jpg",
+  "author": "Sliderillustration.png: Alex Voerman (Aviper2k7) derivative …",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Slider_pitch_illustration.svg",
+  "file": "File:Slider pitch illustration.svg"
+ },
+ "baseball.wz-delayed": {
+  "src": "photo-baseball.wz-delayed.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_steal.jpg",
+  "file": "File:Baseball steal.jpg"
+ },
+ "baseball.wz-pushbunt": {
+  "src": "photo-baseball.wz-pushbunt.jpg",
+  "author": "User:DX Broadrec",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bunt_High_school_baseball_in_Japan_2007.jpg",
+  "file": "File:Bunt High school baseball in Japan 2007.jpg"
+ },
+ "baseball.wz-basecover": {
+  "src": "photo-baseball.wz-basecover.jpg",
+  "author": "Brett A. Dawson",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Indiana_vs_Navy,_Baseball_pick-off_attempt.jpg",
+  "file": "File:Indiana vs Navy, Baseball pick-off attempt.jpg"
+ },
+ "baseball.tc-daida": {
+  "src": "photo-baseball.tc-daida.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1988_Nashville_Lenny_Harris.jpg",
+  "file": "File:1988 Nashville Lenny Harris.jpg"
+ },
+ "baseball.tc-nakatsugi": {
+  "src": "photo-baseball.tc-nakatsugi.jpg",
+  "author": "User laffy4k on Flickr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jacob%27s_Field_Fultz_and_Betancourt_in_the_Bullpen.jpg",
+  "file": "File:Jacob's Field Fultz and Betancourt in the Bullpen.jpg"
+ },
+ "baseball.tc-daisou": {
+  "src": "photo-baseball.tc-daisou.jpg",
+  "author": "Dirk DBQ",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pinch_Runner_(15902821374).jpg",
+  "file": "File:Pinch Runner (15902821374).jpg"
+ },
+ "baseball.tc-save": {
+  "src": "photo-baseball.tc-save.jpg",
+  "author": "User Keith Allison on Flickr",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mariano_Rivera_allison_7_29_07.jpg",
+  "file": "File:Mariano Rivera allison 7 29 07.jpg"
+ },
+ "baseball.tc-keitou": {
+  "src": "photo-baseball.tc-keitou.jpg",
+  "author": "User laffy4k on Flickr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jacob%27s_Field_Fultz_and_Betancourt_in_the_Bullpen.jpg",
+  "file": "File:Jacob's Field Fultz and Betancourt in the Bullpen.jpg"
+ },
+ "baseball.tc-cleanup": {
+  "src": "photo-baseball.tc-cleanup.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lou_Gehrig_in_1923_(cropped).jpg",
+  "file": "File:Lou Gehrig in 1923 (cropped).jpg"
+ },
+ "baseball.tc-kantoku": {
+  "src": "photo-baseball.tc-kantoku.jpg",
+  "author": "Bain News Service",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Connie_Mack_%26_Ira_Thomas,_1914.jpg",
+  "file": "File:Connie Mack & Ira Thomas, 1914.jpg"
+ },
+ "baseball.tc-hold": {
+  "src": "photo-baseball.tc-hold.jpg",
+  "author": "User Chrisjnelson on en.wikipedia",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Arthur_Rhodes.jpg",
+  "file": "File:Arthur Rhodes.jpg"
+ },
+ "baseball.tc-haikyu": {
+  "src": "photo-baseball.tc-haikyu.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_catcher.jpg",
+  "file": "File:Baseball catcher.jpg"
+ },
+ "baseball.tc-obp": {
+  "src": "photo-baseball.tc-obp.jpg",
+  "author": "Apex Photo Company",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1939_Ted_Williams.png",
+  "file": "File:1939 Ted Williams.png"
+ },
+ "baseball.tc-setup": {
+  "src": "photo-baseball.tc-setup.jpg",
+  "author": "User laffy4k on Flickr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jacob%27s_Field_Fultz_and_Betancourt_in_the_Bullpen.jpg",
+  "file": "File:Jacob's Field Fultz and Betancourt in the Bullpen.jpg"
+ },
+ "baseball.tc-smallball": {
+  "src": "photo-baseball.tc-smallball.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_steal.jpg",
+  "file": "File:Baseball steal.jpg"
+ },
+ "baseball.tc-leadoff": {
+  "src": "photo-baseball.tc-leadoff.jpg",
+  "author": "Jleybov",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:StlAtl_032701_lineupcard.jpg",
+  "file": "File:StlAtl 032701 lineupcard.jpg"
+ },
+ "baseball.tc-slg": {
+  "src": "photo-baseball.tc-slg.jpg",
+  "author": "Harrison Studio",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Josh_Gibson_1931.jpg",
+  "file": "File:Josh Gibson 1931.jpg"
+ },
+ "baseball.tc-k9": {
+  "src": "photo-baseball.tc-k9.jpg",
+  "author": "own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Swinging_strikeout.jpg",
+  "file": "File:Swinging strikeout.jpg"
+ },
+ "baseball.tc-onepoint": {
+  "src": "photo-baseball.tc-onepoint.jpg",
+  "author": "User laffy4k on Flickr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jacob%27s_Field_Fultz_and_Betancourt_in_the_Bullpen.jpg",
+  "file": "File:Jacob's Field Fultz and Betancourt in the Bullpen.jpg"
+ },
+ "baseball.tc-longrelief": {
+  "src": "photo-baseball.tc-longrelief.jpg",
+  "author": "User laffy4k on Flickr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jacob%27s_Field_Fultz_and_Betancourt_in_the_Bullpen.jpg",
+  "file": "File:Jacob's Field Fultz and Betancourt in the Bullpen.jpg"
+ },
+ "baseball.tc-saber": {
+  "src": "photo-baseball.tc-saber.jpg",
+  "author": "Colette Morton and Dan Holden",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bill_James_2010.jpg",
+  "file": "File:Bill James 2010.jpg"
+ },
+ "baseball.tc-kuriyama": {
+  "src": "photo-baseball.tc-kuriyama.jpg",
+  "author": "内閣官房内閣広報室",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hideki_Kuriyama_20230310.jpg",
+  "file": "File:Hideki Kuriyama 20230310.jpg"
+ },
+ "baseball.tc-bullpenday": {
+  "src": "photo-baseball.tc-bullpenday.jpg",
+  "author": "User Rdikeman on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseball_bullpen_2004.jpg",
+  "file": "File:Baseball bullpen 2004.jpg"
+ },
+ "baseball.tc-naiya5": {
+  "src": "photo-baseball.tc-naiya5.jpg",
+  "author": "PSzalapski at en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Baseballpositioning-normal.png",
+  "file": "File:Baseballpositioning-normal.png"
+ },
+ "baseball.tc-babip": {
+  "src": "photo-baseball.tc-babip.jpg",
+  "author": "Minnesota Twins",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1978_Minnesota_Twins_Postcards_Rod_Carew.jpg",
+  "file": "File:1978 Minnesota Twins Postcards Rod Carew.jpg"
+ },
+ "baseball.tc-statcast": {
+  "src": "photo-baseball.tc-statcast.jpg",
+  "author": "redlegsfan21 from Vandalia, OH, United States",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:U.S._Cellular_Field_(20801009225).jpg",
+  "file": "File:U.S. Cellular Field (20801009225).jpg"
+ },
+ "baseball.tc-hoshino": {
+  "src": "photo-baseball.tc-hoshino.jpg",
+  "author": "Cake6 (talk)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:RE-Senichi-Hoshino20110309_(cropped).jpg",
+  "file": "File:RE-Senichi-Hoshino20110309 (cropped).jpg"
+ },
+ "baseball.tc-hara": {
+  "src": "photo-baseball.tc-hara.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%8E%9F%E8%BE%B0%E5%BE%B3_202405281757_DSCN6856.jpg",
+  "file": "File:原辰徳 202405281757 DSCN6856.jpg"
+ },
+ "baseball.tc-larussa": {
+  "src": "photo-baseball.tc-larussa.jpg",
+  "author": "Gage Skidmore",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tony_La_Russa_by_Gage_Skidmore.jpg",
+  "file": "File:Tony La Russa by Gage Skidmore.jpg"
+ },
+ "baseball.tc-torre": {
+  "src": "photo-baseball.tc-torre.jpg",
+  "author": "Arturo Pardavila III",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joe_Torre_Winter_Meetings.jpg",
+  "file": "File:Joe Torre Winter Meetings.jpg"
+ },
+ "baseball.tc-stengel": {
+  "src": "photo-baseball.tc-stengel.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Casey_Stengel_1953.png",
+  "file": "File:Casey Stengel 1953.png"
+ },
+ "baseball.tc-cox": {
+  "src": "photo-baseball.tc-cox.jpg",
+  "author": "Bobby_Cox_signs_autograph.jpg: Dottie White derivative work:…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bobby_Cox_signs_autograph_CROPPED.jpg",
+  "file": "File:Bobby Cox signs autograph CROPPED.jpg"
+ },
+ "baseball.cp-samurai": {
+  "src": "photo-baseball.cp-samurai.jpg",
+  "author": "Baseball Federation of Japan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:SAMURAI_JAPAN_logo.svg",
+  "file": "File:SAMURAI JAPAN logo.svg"
+ },
+ "baseball.cp-worldseries": {
+  "src": "photo-baseball.cp-worldseries.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:World_Series_Trophy_(48262268286).jpg",
+  "file": "File:World Series Trophy (48262268286).jpg"
+ },
+ "baseball.cp-nihonseries": {
+  "src": "photo-baseball.cp-nihonseries.jpg",
+  "author": "江戸村のとくぞう",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korakuen_Stadium-1.jpg",
+  "file": "File:Korakuen Stadium-1.jpg"
+ },
+ "baseball.cp-cyyoung": {
+  "src": "photo-baseball.cp-cyyoung.jpg",
+  "author": "Bain News Service",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cy_Young.jpg",
+  "file": "File:Cy Young.jpg"
+ },
+ "baseball.cp-sawamura": {
+  "src": "photo-baseball.cp-sawamura.jpg",
+  "author": "Published by 日本スポーツ出版社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Eiji_Sawamura.jpg",
+  "file": "File:Eiji Sawamura.jpg"
+ },
+ "baseball.cp-eikyuketsuban": {
+  "src": "photo-baseball.cp-eikyuketsuban.jpg",
+  "author": "Michael Barera",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Detroit_December_2015_67_(Joe_Louis_Arena).jpg",
+  "file": "File:Detroit December 2015 67 (Joe Louis Arena).jpg"
+ },
+ "baseball.cp-saitashou": {
+  "src": "photo-baseball.cp-saitashou.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Victor_Starffin00.jpeg",
+  "file": "File:Victor Starffin00.jpeg"
+ },
+ "baseball.cp-premier12": {
+  "src": "photo-baseball.cp-premier12.jpg",
+  "author": "Karaage to Ochazuke",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2015_WBSC_Premier12_at_Tokyo_Dome_1.JPG",
+  "file": "File:2015 WBSC Premier12 at Tokyo Dome 1.JPG"
+ },
+ "baseball.cp-madonna": {
+  "src": "photo-baseball.cp-madonna.jpg",
+  "author": "Baseball Federation of Japan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:SAMURAI_JAPAN_logo.svg",
+  "file": "File:SAMURAI JAPAN logo.svg"
+ },
+ "baseball.cp-goldglove": {
+  "src": "photo-baseball.cp-goldglove.jpg",
+  "author": "oaktree_brian_1976",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alomar_Golden_Glove_award.jpg",
+  "file": "File:Alomar Golden Glove award.jpg"
+ },
+ "baseball.cp-silverslugger": {
+  "src": "photo-baseball.cp-silverslugger.jpg",
+  "author": "Flickr user MissChatter",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rizzo_with_Silver_Slugger.jpg",
+  "file": "File:Rizzo with Silver Slugger.jpg"
+ },
+ "baseball.cp-jrday": {
+  "src": "photo-baseball.cp-jrday.jpg",
+  "author": "Photo by Bob Sandberg Look photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jrobinson.jpg",
+  "file": "File:Jrobinson.jpg"
+ },
+ "baseball.cp-ushof": {
+  "src": "photo-baseball.cp-ushof.jpg",
+  "author": "Kenneth C. Zirkel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:National_Baseball_Hall_of_Fame_and_Museum,_Cooperstown,_NY.jpg",
+  "file": "File:National Baseball Hall of Fame and Museum, Cooperstown, NY.jpg"
+ },
+ "baseball.cp-chuman": {
+  "src": "photo-baseball.cp-chuman.jpg",
+  "author": "published by 西日本新聞社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kanae_Chuman.jpg",
+  "file": "File:Kanae Chuman.jpg"
+ },
+ "baseball.cp-shiki": {
+  "src": "photo-baseball.cp-shiki.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Masaoka_Shiki.jpg",
+  "file": "File:Masaoka Shiki.jpg"
+ },
+ "baseball.cp-taipei": {
+  "src": "photo-baseball.cp-taipei.jpg",
+  "author": "Pixeltoo, updated by Zscout370",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Emblem_of_Chinese_Taipei_for_Olympic_games.svg",
+  "file": "File:Emblem of Chinese Taipei for Olympic games.svg"
+ },
+ "baseball.cp-wsmvp": {
+  "src": "photo-baseball.cp-wsmvp.jpg",
+  "author": "United Press International",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Reggie_Jackson_October_1973.jpeg",
+  "file": "File:Reggie Jackson October 1973.jpeg"
+ },
+ "baseball.cp-redstockings": {
+  "src": "photo-baseball.cp-redstockings.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1868_Reds.jpg",
+  "file": "File:1868 Reds.jpg"
+ },
+ "baseball.cp-barcelona": {
+  "src": "photo-baseball.cp-barcelona.jpg",
+  "author": "Nikolai Karaneschev",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Barcelona_AUGUST_1992_the_Olympic_Games_(Juegos_Ol%C3%ADmpicos_de_Barcelona_1992)_-_panoramio.jpg",
+  "file": "File:Barcelona AUGUST 1992 the Olympic Games (Juegos Olímpicos de Barcelona 1992) - panoramio.jpg"
+ },
+ "baseball.cp-shoriki": {
+  "src": "photo-baseball.cp-shoriki.jpg",
+  "author": "朝日新聞社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shoriki_Matsutaro.JPG",
+  "file": "File:Shoriki Matsutaro.JPG"
+ },
+ "baseball.cp-aaronaward": {
+  "src": "photo-baseball.cp-aaronaward.jpg",
+  "author": "White House Photographers. The source gives no specific phot…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hank_Aaron_1978.jpg",
+  "file": "File:Hank Aaron 1978.jpg"
+ },
+ "baseball.cp-clemente": {
+  "src": "photo-baseball.cp-clemente.jpg",
+  "author": "J. G. Taylor Spink",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1962_Baseball_Guide.p21.jpg",
+  "file": "File:1962 Baseball Guide.p21.jpg"
+ },
+ "baseball.cp-saikoshutsurui": {
+  "src": "photo-baseball.cp-saikoshutsurui.jpg",
+  "author": "Apex Photo Company",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1939_Ted_Williams.png",
+  "file": "File:1939 Ted Williams.png"
+ },
+ "baseball.cp-chutsugi": {
+  "src": "photo-baseball.cp-chutsugi.jpg",
+  "author": "Cake6 (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CD-Hitoki-Iwase.jpg",
+  "file": "File:CD-Hitoki-Iwase.jpg"
+ },
+ "baseball.cp-koyaren": {
+  "src": "photo-baseball.cp-koyaren.jpg",
+  "author": "Coffee1000mg",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japan_High_School_Baseball_Federation.jpg",
+  "file": "File:Japan High School Baseball Federation.jpg"
+ },
+ "baseball.cp-cmtrophy": {
+  "src": "photo-baseball.cp-cmtrophy.jpg",
+  "author": "Erik Drost",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:World_Series_Trophy_(48262268286).jpg",
+  "file": "File:World Series Trophy (48262268286).jpg"
+ },
+ "baseball.cp-asiangames": {
+  "src": "photo-baseball.cp-asiangames.jpg",
+  "author": "Olympic Council of Asia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Asian_Games_logo.svg",
+  "file": "File:Asian Games logo.svg"
+ },
+ "baseball.cp-baseball5": {
+  "src": "photo-baseball.cp-baseball5.jpg",
+  "author": "The World Baseball Softball Confederation",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:WBSC_Baseball5.jpg",
+  "file": "File:WBSC Baseball5.jpg"
+ },
+ "baseball.cp-sokeisen": {
+  "src": "photo-baseball.cp-sokeisen.jpg",
+  "author": "No known restrictions on publication. Bain News Service phot…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Waseda_Univ._baseball_team_1911.jpg",
+  "file": "File:Waseda Univ. baseball team 1911.jpg"
+ },
+ "boxing.kh-boxing": {
+  "src": "photo-boxing.kh-boxing.jpg",
+  "author": "Jonny Smeds (Jsmeds)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Asikainen-di_Giacomo.jpg",
+  "file": "File:Asikainen-di Giacomo.jpg"
+ },
+ "boxing.kh-jab": {
+  "src": "photo-boxing.kh-jab.jpg",
+  "author": "Delmas alain",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Allongecolor.jpg",
+  "file": "File:Allongecolor.jpg"
+ },
+ "boxing.kh-upper": {
+  "src": "photo-boxing.kh-upper.jpg",
+  "author": "Wayne Short",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Boxing080905_photoshop.jpg",
+  "file": "File:Boxing080905 photoshop.jpg"
+ },
+ "boxing.kh-referee": {
+  "src": "photo-boxing.kh-referee.jpg",
+  "author": "Andy Todd",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cricket_Umpire.jpg",
+  "file": "File:Cricket Umpire.jpg"
+ },
+ "boxing.kh-sandbag": {
+  "src": "photo-boxing.kh-sandbag.jpg",
+  "author": "The original uploader was NoNo at English Wikipedia.",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Punching_bag.jpg",
+  "file": "File:Punching bag.jpg"
+ },
+ "boxing.kh-nawatobi": {
+  "src": "photo-boxing.kh-nawatobi.jpg",
+  "author": "Osupon",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Jump_rope_for_children.JPG",
+  "file": "File:Jump rope for children.JPG"
+ },
+ "boxing.kh-headgear": {
+  "src": "photo-boxing.kh-headgear.jpg",
+  "author": "User:Soh32",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Headgear-ama.jpg",
+  "file": "File:Headgear-ama.jpg"
+ },
+ "boxing.kh-shadow": {
+  "src": "photo-boxing.kh-shadow.jpg",
+  "author": "Alain Delmas (France)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Jab3.jpg",
+  "file": "File:Jab3.jpg"
+ },
+ "boxing.kh-sparring": {
+  "src": "photo-boxing.kh-sparring.jpg",
+  "author": "George Grantham Bain Collection (Library of Congress)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tommy_Burns_sparring.jpg",
+  "file": "File:Tommy Burns sparring.jpg"
+ },
+ "boxing.kh-punchingball": {
+  "src": "photo-boxing.kh-punchingball.jpg",
+  "author": "The original uploader was NoNo at English Wikipedia.",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Punching_bag.jpg",
+  "file": "File:Punching bag.jpg"
+ },
+ "boxing.kh-canvas": {
+  "src": "photo-boxing.kh-canvas.jpg",
+  "author": "Gordana Adamovic-Mladenovic from Windsor, Canada",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Linen,_Texture_(2242358989).jpg",
+  "file": "File:Linen, Texture (2242358989).jpg"
+ },
+ "boxing.kh-announcer": {
+  "src": "photo-boxing.kh-announcer.jpg",
+  "author": "Shayne Miller",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Michael_Buffer_Fight_For_Children_Washington_DC_Nov_2007.JPG",
+  "file": "File:Michael Buffer Fight For Children Washington DC Nov 2007.JPG"
+ },
+ "boxing.kh-foulcup": {
+  "src": "photo-boxing.kh-foulcup.jpg",
+  "author": "Taken and uploaded to the English language Wikipedia by Conn…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Protective_cup.jpg",
+  "file": "File:Protective cup.jpg"
+ },
+ "boxing.kh-gown": {
+  "src": "photo-boxing.kh-gown.jpg",
+  "author": "Janmad",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Dressing_gown_wiki.jpg",
+  "file": "File:Dressing gown wiki.jpg"
+ },
+ "boxing.rl-clinch": {
+  "src": "photo-boxing.rl-clinch.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Boxing2-clinch.jpg",
+  "file": "File:Boxing2-clinch.jpg"
+ },
+ "boxing.rl-amateur": {
+  "src": "photo-boxing.rl-amateur.jpg",
+  "author": "Jonny Smeds (Jsmeds)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Asikainen-di_Giacomo.jpg",
+  "file": "File:Asikainen-di Giacomo.jpg"
+ },
+ "boxing.og-belt": {
+  "src": "photo-boxing.og-belt.jpg",
+  "author": "Johnnynajjar",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:WBCnew1.jpg",
+  "file": "File:WBCnew1.jpg"
+ },
+ "boxing.cl-heavy": {
+  "src": "photo-boxing.cl-heavy.jpg",
+  "author": "Charlie",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Andrew_Golota_vs_Kevin_McBride.jpg",
+  "file": "File:Andrew Golota vs Kevin McBride.jpg"
+ },
+ "boxing.cl-taijukei": {
+  "src": "photo-boxing.cl-taijukei.jpg",
+  "author": "Qurren",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tanita_analog_bathroom_scale_THA-528.jpg",
+  "file": "File:Tanita analog bathroom scale THA-528.jpg"
+ },
+ "boxing.st-inouenaoya": {
+  "src": "photo-boxing.st-inouenaoya.jpg",
+  "author": "内閣官房内閣広報室",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Naoya_Inoue_20230302suports_03.jpg",
+  "file": "File:Naoya Inoue 20230302suports 03.jpg"
+ },
+ "boxing.st-yafai": {
+  "src": "photo-boxing.st-yafai.jpg",
+  "author": "Gyafai10",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Galal_yafai.jpg",
+  "file": "File:Galal yafai.jpg"
+ },
+ "boxing.st-jalolov": {
+  "src": "photo-boxing.st-jalolov.jpg",
+  "author": "НОК Узбекистана",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bakhodir_Jalolov_(2023-05-12)_(cropped).jpg",
+  "file": "File:Bakhodir Jalolov (2023-05-12) (cropped).jpg"
+ },
+ "boxing.st-ennis": {
+  "src": "photo-boxing.st-ennis.jpg",
+  "author": "MILLION DOLLAZ WORTH OF GAME",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaron_Ennis_2026.png",
+  "file": "File:Jaron Ennis 2026.png"
+ },
+ "boxing.st-taduran": {
+  "src": "photo-boxing.st-taduran.jpg",
+  "author": "Senator JV Ejercito",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pedro_Taduran.jpg",
+  "file": "File:Pedro Taduran.jpg"
+ },
+ "boxing.st-donaire": {
+  "src": "photo-boxing.st-donaire.jpg",
+  "author": "Arvee Eco from QUEENS, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nonito_Donaire_2011.jpg",
+  "file": "File:Nonito Donaire 2011.jpg"
+ },
+ "boxing.st-tsuboi": {
+  "src": "photo-boxing.st-tsuboi.jpg",
+  "author": "Yuuchihiro",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Boxingaiba2021tomoya.jpg",
+  "file": "File:Boxingaiba2021tomoya.jpg"
+ },
+ "boxing.st-akhmadaliev": {
+  "src": "photo-boxing.st-akhmadaliev.jpg",
+  "author": "Sports.uz",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Murodjon_Akhmadaliev,_April_2021.jpg",
+  "file": "File:Murodjon Akhmadaliev, April 2021.jpg"
+ },
+ "boxing.st-price": {
+  "src": "photo-boxing.st-price.jpg",
+  "author": "National Lottery Good Causes",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lauren_Price_in_2021.png",
+  "file": "File:Lauren Price in 2021.png"
+ },
+ "boxing.st-nunez": {
+  "src": "photo-boxing.st-nunez.jpg",
+  "author": "Ian D'Andrea",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eduardo_N%C3%BA%C3%B1ez_2018_(cropped).jpg",
+  "file": "File:Eduardo Núñez 2018 (cropped).jpg"
+ },
+ "boxing.le-ali": {
+  "src": "photo-boxing.le-ali.jpg",
+  "author": "Ira Rosenberg",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Muhammad_Ali_NYWTS.jpg",
+  "file": "File:Muhammad Ali NYWTS.jpg"
+ },
+ "boxing.le-shirai": {
+  "src": "photo-boxing.le-shirai.jpg",
+  "author": "朝日新聞社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shirai_Yoshio.jpg",
+  "file": "File:Shirai Yoshio.jpg"
+ },
+ "boxing.le-gushiken": {
+  "src": "photo-boxing.le-gushiken.jpg",
+  "author": "俊仁 (Toshihito) 小林 (Kobayashi)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Y%C5%8Dk%C5%8D_Gushiken,_Mar._2003.jpg",
+  "file": "File:Yōkō Gushiken, Mar. 2003.jpg"
+ },
+ "boxing.le-tatsuyoshi": {
+  "src": "photo-boxing.le-tatsuyoshi.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joichiro_Tatsuyoshi,_2015_(cropped).jpg",
+  "file": "File:Joichiro Tatsuyoshi, 2015 (cropped).jpg"
+ },
+ "boxing.le-harada": {
+  "src": "photo-boxing.le-harada.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Masahiko_Harada_1968.jpg",
+  "file": "File:Masahiko Harada 1968.jpg"
+ },
+ "boxing.le-louis": {
+  "src": "photo-boxing.le-louis.jpg",
+  "author": "Carl Van Vechten",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Joe_Louis_by_van_Vechten.jpg",
+  "file": "File:Joe Louis by van Vechten.jpg"
+ },
+ "boxing.le-robinson": {
+  "src": "photo-boxing.le-robinson.jpg",
+  "author": "ACME",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sugar_Ray_Robinson_1947.jpg",
+  "file": "File:Sugar Ray Robinson 1947.jpg"
+ },
+ "boxing.le-hasegawa": {
+  "src": "photo-boxing.le-hasegawa.jpg",
+  "author": "Ogiyoshisan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hozumi_Hasegawa_IMG_0383-1_20181104.jpg",
+  "file": "File:Hozumi Hasegawa IMG 0383-1 20181104.jpg"
+ },
+ "boxing.le-yamanaka": {
+  "src": "photo-boxing.le-yamanaka.jpg",
+  "author": "大徳義幸",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E4%B8%AD%E6%85%8E%E4%BB%8B.jpg",
+  "file": "File:山中慎介.jpg"
+ },
+ "boxing.le-uchiyama": {
+  "src": "photo-boxing.le-uchiyama.jpg",
+  "author": "sumomojam",
+  "license": "CC BY-SA 2.1 JP",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Takashi_Uchiyama_in_his_triumphal_parade.jpg",
+  "file": "File:Takashi Uchiyama in his triumphal parade.jpg"
+ },
+ "boxing.le-naniwa": {
+  "src": "photo-boxing.le-naniwa.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joichiro_Tatsuyoshi,_2015_(cropped).jpg",
+  "file": "File:Joichiro Tatsuyoshi, 2015 (cropped).jpg"
+ },
+ "boxing.le-kaminohidari": {
+  "src": "photo-boxing.le-kaminohidari.jpg",
+  "author": "大徳義幸",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E4%B8%AD%E6%85%8E%E4%BB%8B.jpg",
+  "file": "File:山中慎介.jpg"
+ },
+ "boxing.le-dempsey": {
+  "src": "photo-boxing.le-dempsey.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jack_Dempsey_1.jpg",
+  "file": "File:Jack Dempsey 1.jpg"
+ },
+ "boxing.le-wajima": {
+  "src": "photo-boxing.le-wajima.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Koichi_Wajima_c1973.jpg",
+  "file": "File:Koichi Wajima c1973.jpg"
+ },
+ "boxing.le-lennox": {
+  "src": "photo-boxing.le-lennox.jpg",
+  "author": "gdcgraphics at https://www.flickr.com/photos/gdcgraphics/",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:LennoxLewisSept10TIFF.jpg",
+  "file": "File:LennoxLewisSept10TIFF.jpg"
+ },
+ "boxing.le-patterson": {
+  "src": "photo-boxing.le-patterson.jpg",
+  "author": "Unknown authorUnknown author or not provided",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Floyd_Patterson_1962b.jpg",
+  "file": "File:Floyd Patterson 1962b.jpg"
+ },
+ "boxing.le-duran": {
+  "src": "photo-boxing.le-duran.jpg",
+  "author": "Jim Accordino",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roberto-Duran-1994_(cropped).png",
+  "file": "File:Roberto-Duran-1994 (cropped).png"
+ },
+ "boxing.le-ishinokobushi": {
+  "src": "photo-boxing.le-ishinokobushi.jpg",
+  "author": "Jim Accordino",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roberto-Duran-1994_(cropped).png",
+  "file": "File:Roberto-Duran-1994 (cropped).png"
+ },
+ "boxing.le-brownbomber": {
+  "src": "photo-boxing.le-brownbomber.jpg",
+  "author": "Carl Van Vechten",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Joe_Louis_by_van_Vechten.jpg",
+  "file": "File:Joe Louis by van Vechten.jpg"
+ },
+ "boxing.le-cassius": {
+  "src": "photo-boxing.le-cassius.jpg",
+  "author": "Ira Rosenberg",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Muhammad_Ali_NYWTS.jpg",
+  "file": "File:Muhammad Ali NYWTS.jpg"
+ },
+ "boxing.le-ebihara": {
+  "src": "photo-boxing.le-ebihara.jpg",
+  "author": "ベースボール・マガジン社 (Baseball Magazine Co., Ltd.)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiroyuki_Ebihara_1962_(01)_Scan10007_161022.jpg",
+  "file": "File:Hiroyuki Ebihara 1962 (01) Scan10007 161022.jpg"
+ },
+ "boxing.le-khaosai": {
+  "src": "photo-boxing.le-khaosai.jpg",
+  "author": "B20180",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Khaosai_Galaxy_9.jpg",
+  "file": "File:Khaosai Galaxy 9.jpg"
+ },
+ "boxing.le-klitschko": {
+  "src": "photo-boxing.le-klitschko.jpg",
+  "author": "MSC/Kuhlmann",
+  "license": "CC BY 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Volodymyr_Klychko_(Vladimir_Klitschko)_of_Ukraine_at_the_59th_Munich_Security_Conference_in_Munich_on_17_February_2023_-_(cropped).jpg",
+  "file": "File:Volodymyr Klychko (Vladimir Klitschko) of Ukraine at the 59th Munich Security Conference in Munich on 17 February 2023 - (cropped).jpg"
+ },
+ "boxing.le-honoo": {
+  "src": "photo-boxing.le-honoo.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Koichi_Wajima_c1973.jpg",
+  "file": "File:Koichi Wajima c1973.jpg"
+ },
+ "boxing.le-holmes": {
+  "src": "photo-boxing.le-holmes.jpg",
+  "author": "TSGT W.D. Boradman",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Larry_Holmes_1979_zoom.jpg",
+  "file": "File:Larry Holmes 1979 zoom.jpg"
+ },
+ "boxing.le-armstrong": {
+  "src": "photo-boxing.le-armstrong.jpg",
+  "author": "Carl Van Vechten",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Henry_Armstrong.jpg",
+  "file": "File:Henry Armstrong.jpg"
+ },
+ "boxing.le-jofre": {
+  "src": "photo-boxing.le-jofre.jpg",
+  "author": "UnknownUnknown",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Eder_Jofre_(1970).tif",
+  "file": "File:Eder Jofre (1970).tif"
+ },
+ "boxing.le-ougon": {
+  "src": "photo-boxing.le-ougon.jpg",
+  "author": "UnknownUnknown",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Eder_Jofre_(1970).tif",
+  "file": "File:Eder Jofre (1970).tif"
+ },
+ "boxing.le-pedroza": {
+  "src": "photo-boxing.le-pedroza.jpg",
+  "author": "Will Hart",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Eusebio_Pedroza_in_KO_Magazine.jpg",
+  "file": "File:Eusebio Pedroza in KO Magazine.jpg"
+ },
+ "boxing.le-trinidad": {
+  "src": "photo-boxing.le-trinidad.jpg",
+  "author": "U.S. Air Force photo/Airman 1st Class Sheila deVera",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Trinidad,_F%C3%A9lix_(2007)_(cropped).jpg",
+  "file": "File:Trinidad, Félix (2007) (cropped).jpg"
+ },
+ "boxing.le-rijker": {
+  "src": "photo-boxing.le-rijker.jpg",
+  "author": "Nimueva at Dutch Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:LuciaRijker.jpg",
+  "file": "File:LuciaRijker.jpg"
+ },
+ "boxing.wz-bodyblow": {
+  "src": "photo-boxing.wz-bodyblow.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Footwork.jpg",
+  "file": "File:Footwork.jpg"
+ },
+ "boxing.wz-parrying": {
+  "src": "photo-boxing.wz-parrying.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Blow2.jpg",
+  "file": "File:Blow2.jpg"
+ },
+ "boxing.wz-flickerjab": {
+  "src": "photo-boxing.wz-flickerjab.jpg",
+  "author": "Delmas alain",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Allongecolor.jpg",
+  "file": "File:Allongecolor.jpg"
+ },
+ "boxing.tc-infight": {
+  "src": "photo-boxing.tc-infight.jpg",
+  "author": "Thadius856 (SVG conversion) & Parutakupiu (original image)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Boxing_pictogram.svg",
+  "file": "File:Boxing pictogram.svg"
+ },
+ "boxing.tc-boxerfighter": {
+  "src": "photo-boxing.tc-boxerfighter.jpg",
+  "author": "Royal Navy official photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Boxing_Tournament_in_Aid_of_King_George%27s_Fund_For_Sailors_at_the_Royal_Naval_Air_Station,_Henstridge,_Somerset,_July_1945_A29806.jpg",
+  "file": "File:Boxing Tournament in Aid of King George's Fund For Sailors at the Royal Naval Air Station, Henstridge, Somerset, July 1945 A29806.jpg"
+ },
+ "boxing.tc-steward": {
+  "src": "photo-boxing.tc-steward.jpg",
+  "author": "KTerceira",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Keith_Terceira_and_Manny_Steward.jpg",
+  "file": "File:Keith Terceira and Manny Steward.jpg"
+ },
+ "boxing.tc-roach": {
+  "src": "photo-boxing.tc-roach.jpg",
+  "author": "Frederick Manligas Nacino (Opusdeiphotography)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Freddie_Roach.jpg",
+  "file": "File:Freddie Roach.jpg"
+ },
+ "boxing.cp-olympic": {
+  "src": "photo-boxing.cp-olympic.jpg",
+  "author": "Original author: Pierre de Coubertin (1863-1937)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Olympic_flag.svg",
+  "file": "File:Olympic flag.svg"
+ },
+ "boxing.cp-goldmedal": {
+  "src": "photo-boxing.cp-goldmedal.jpg",
+  "author": "കാക്കര",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gold_Medal,_%E0%B4%B8%E0%B5%8D%E0%B4%B5%E0%B5%BC%E0%B4%A3%E0%B5%8D%E0%B4%A3%E0%B4%AA%E0%B4%A4%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%82.JPG",
+  "file": "File:Gold Medal, സ്വർണ്ണപതക്കം.JPG"
+ },
+ "boxing.cp-silver": {
+  "src": "photo-boxing.cp-silver.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1896_Olympic_medal.jpg",
+  "file": "File:1896 Olympic medal.jpg"
+ },
+ "boxing.cp-bronze": {
+  "src": "photo-boxing.cp-bronze.jpg",
+  "author": "Image:Gary AbrahamMedal design: Giuseppe Cassioli (1865-1942…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1980_Summer_Olympics_bronze_medal.JPG",
+  "file": "File:1980 Summer Olympics bronze medal.JPG"
+ },
+ "boxing.cp-korakuen": {
+  "src": "photo-boxing.cp-korakuen.jpg",
+  "author": "Bject",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20170104_Korakuen_Hall.jpg",
+  "file": "File:20170104 Korakuen Hall.jpg"
+ },
+ "boxing.cp-tokyodome": {
+  "src": "photo-boxing.cp-tokyodome.jpg",
+  "author": "User:DX Broadrec",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tokyo_Dome_2007-12.jpg",
+  "file": "File:Tokyo Dome 2007-12.jpg"
+ },
+ "boxing.cp-lasvegas": {
+  "src": "photo-boxing.cp-lasvegas.jpg",
+  "author": "Composite made by Ruhrfisch (talk), photos by Mfield, Kcferr…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Las_Vegas_composite.png",
+  "file": "File:Las Vegas composite.png"
+ },
+ "boxing.cp-sakurai": {
+  "src": "photo-boxing.cp-sakurai.jpg",
+  "author": "PhotoKishimoto Co., Ltd.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Takao_Sakurai_1964.jpg",
+  "file": "File:Takao Sakurai 1964.jpg"
+ },
+ "boxing.cp-sekaisenshuken": {
+  "src": "photo-boxing.cp-sekaisenshuken.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ruggeri_pumpido_enrique_copas.jpg",
+  "file": "File:Ruggeri pumpido enrique copas.jpg"
+ },
+ "boxing.cp-joshi": {
+  "src": "photo-boxing.cp-joshi.jpg",
+  "author": "Denis Gustavo",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Women_boxing.jpg",
+  "file": "File:Women boxing.jpg"
+ },
+ "boxing.cp-queensberry": {
+  "src": "photo-boxing.cp-queensberry.jpg",
+  "author": "Leslie Ward",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Marquess_of_Queensberry_10_November_1877.jpg",
+  "file": "File:Marquess of Queensberry 10 November 1877.jpg"
+ },
+ "boxing.cp-bareknuckle": {
+  "src": "photo-boxing.cp-bareknuckle.jpg",
+  "author": "José María Mora",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:John_L_Sullivan.jpg",
+  "file": "File:John L Sullivan.jpg"
+ },
+ "boxing.cp-msg": {
+  "src": "photo-boxing.cp-msg.jpg",
+  "author": "Ajay Suresh from New York, NY, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Madison_Square_Garden_(MSG)_-_Full_(48124330357).jpg",
+  "file": "File:Madison Square Garden (MSG) - Full (48124330357).jpg"
+ },
+ "boxing.cp-ryogoku": {
+  "src": "photo-boxing.cp-ryogoku.jpg",
+  "author": "Souka Kinmei",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ryogoku_Kokugikan_(taken_from_Kokugikan_Street).jpg",
+  "file": "File:Ryogoku Kokugikan (taken from Kokugikan Street).jpg"
+ },
+ "boxing.cp-ariake": {
+  "src": "photo-boxing.cp-ariake.jpg",
+  "author": "ウィ貴公子",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%89%E6%98%8E%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2024%E5%B9%B412%E6%9C%8816%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202412161406_IMG_4936.jpg",
+  "file": "File:有明アリーナ 2024年12月16日の東京 202412161406 IMG 4936.jpg"
+ },
+ "boxing.cp-ibhof": {
+  "src": "photo-boxing.cp-ibhof.jpg",
+  "author": "Bill Littman",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Inside_of_the_IBHOF.jpg",
+  "file": "File:Inside of the IBHOF.jpg"
+ },
+ "boxing.cp-kinshasa": {
+  "src": "photo-boxing.cp-kinshasa.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Foreman_tira_golpe_a_clay.jpg",
+  "file": "File:Foreman tira golpe a clay.jpg"
+ },
+ "boxing.cp-kokuspo": {
+  "src": "photo-boxing.cp-kokuspo.jpg",
+  "author": "Opqr",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gifu_seiryu04.JPG",
+  "file": "File:Gifu seiryu04.JPG"
+ },
+ "boxing.cp-namiki": {
+  "src": "photo-boxing.cp-namiki.jpg",
+  "author": "自衛隊",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsukimi_Namiki.png",
+  "file": "File:Tsukimi Namiki.png"
+ },
+ "boxing.cp-tanaka": {
+  "src": "photo-boxing.cp-tanaka.jpg",
+  "author": "Kwnnw K",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E4%B8%AD%E4%BA%AE%E6%98%8E.jpg",
+  "file": "File:田中亮明.jpg"
+ },
+ "boxing.cp-asiangames": {
+  "src": "photo-boxing.cp-asiangames.jpg",
+  "author": "Olympic Council of Asia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Asian_Games_logo.svg",
+  "file": "File:Asian Games logo.svg"
+ },
+ "boxing.cp-queensberrykoshaku": {
+  "src": "photo-boxing.cp-queensberrykoshaku.jpg",
+  "author": "Saltspan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_the_marquess_of_Queensberry.png",
+  "file": "File:Coat of arms of the marquess of Queensberry.png"
+ },
+ "boxing.cp-stlouis": {
+  "src": "photo-boxing.cp-stlouis.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Saint_Louis_1904-The_Olympic_stadium_(cropped).jpg",
+  "file": "File:Saint Louis 1904-The Olympic stadium (cropped).jpg"
+ },
+ "boxing.cp-antwerp": {
+  "src": "photo-boxing.cp-antwerp.jpg",
+  "author": "La Vie au Grand Air",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:La_c%C3%A9r%C3%A9monie_d%27ouverture_des_JO_de_1920_%C3%A0_Anvers.jpg",
+  "file": "File:La cérémonie d'ouverture des JO de 1920 à Anvers.jpg"
+ },
+ "boxing.cp-tanabe": {
+  "src": "photo-boxing.cp-tanabe.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kiyoshi_Tanabe,_Abdel_Moneim_El-Guindi,_Gyula_T%C3%B6r%C3%B6k,_Sergei_Sivko_1960.jpg",
+  "file": "File:Kiyoshi Tanabe, Abdel Moneim El-Guindi, Gyula Török, Sergei Sivko 1960.jpg"
+ },
+ "boxing.cp-gymnasium": {
+  "src": "photo-boxing.cp-gymnasium.jpg",
+  "author": "Bject",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20170104_Korakuen_Hall.jpg",
+  "file": "File:20170104 Korakuen Hall.jpg"
+ },
+ "eiga.kh-eiga": {
+  "src": "photo-eiga.kh-eiga.jpg",
+  "author": "Fernando de Sousa from Melbourne, Australia",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cinemaaustralia.jpg",
+  "file": "File:Cinemaaustralia.jpg"
+ },
+ "eiga.kh-kantoku": {
+  "src": "photo-eiga.kh-kantoku.jpg",
+  "author": "Bain News Service",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Connie_Mack_%26_Ira_Thomas,_1914.jpg",
+  "file": "File:Connie Mack & Ira Thomas, 1914.jpg"
+ },
+ "eiga.kh-kyakuhon": {
+  "src": "photo-eiga.kh-kyakuhon.jpg",
+  "author": "木林森",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kitaro_script.jpg",
+  "file": "File:Kitaro script.jpg"
+ },
+ "eiga.kh-jimaku": {
+  "src": "photo-eiga.kh-jimaku.jpg",
+  "author": "Palmtree3000",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Closed-Caption-Example.svg",
+  "file": "File:Closed-Caption-Example.svg"
+ },
+ "eiga.kh-kachinko": {
+  "src": "photo-eiga.kh-kachinko.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ni%C3%B1a_con_claqueta.jpg",
+  "file": "File:Niña con claqueta.jpg"
+ },
+ "eiga.kh-cameraman": {
+  "src": "photo-eiga.kh-cameraman.jpg",
+  "author": "Kai Mörk",
+  "license": "CC BY 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Msc_2009-Sunday,_11.00_-_12.30_Uhr-Moerk_013.jpg",
+  "file": "File:Msc 2009-Sunday, 11.00 - 12.30 Uhr-Moerk 013.jpg"
+ },
+ "eiga.kh-rokuon": {
+  "src": "photo-eiga.kh-rokuon.jpg",
+  "author": "Harris & Ewing",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Frances_Densmore_recording_Mountain_Chief2.jpg",
+  "file": "File:Frances Densmore recording Mountain Chief2.jpg"
+ },
+ "eiga.kh-daihon": {
+  "src": "photo-eiga.kh-daihon.jpg",
+  "author": "木林森",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kitaro_script.jpg",
+  "file": "File:Kitaro script.jpg"
+ },
+ "eiga.kh-crankin": {
+  "src": "photo-eiga.kh-crankin.jpg",
+  "author": "Victor Grigas",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Photography_by_Victor_Albert_Grigas_(1919-2017)_00232_Old_Town_Art_Fair_Chicago_1968_(23705070328).jpg",
+  "file": "File:Photography by Victor Albert Grigas (1919-2017) 00232 Old Town Art Fair Chicago 1968 (23705070328).jpg"
+ },
+ "eiga.kh-screen": {
+  "src": "photo-eiga.kh-screen.jpg",
+  "author": "assistent08",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Airscreen.JPG",
+  "file": "File:Airscreen.JPG"
+ },
+ "eiga.rk-lumiere": {
+  "src": "photo-eiga.rk-lumiere.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lumi%C3%A8re_brothers.jpg",
+  "file": "File:Lumière brothers.jpg"
+ },
+ "eiga.rk-cinematographe": {
+  "src": "photo-eiga.rk-cinematographe.jpg",
+  "author": "Victorgrigas",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Institut_Lumi%C3%A8re_-_CINEMATOGRAPHE_Camera.jpg",
+  "file": "File:Institut Lumière - CINEMATOGRAPHE Camera.jpg"
+ },
+ "eiga.rk-edison": {
+  "src": "photo-eiga.rk-edison.jpg",
+  "author": "Louis Bachrach, Bachrach Studios, restored by Michel Vuijlst…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Thomas_Edison2.jpg",
+  "file": "File:Thomas Edison2.jpg"
+ },
+ "eiga.rk-melies": {
+  "src": "photo-eiga.rk-melies.jpg",
+  "author": "Georges Méliès",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:M%C3%A9li%C3%A8s_portrait_(cropped).png",
+  "file": "File:Méliès portrait (cropped).png"
+ },
+ "eiga.rk-silent": {
+  "src": "photo-eiga.rk-silent.jpg",
+  "author": "Thomas A. Edison, IncPhotographer: Edwin S. Porter.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Chemulpo_Bay_edison.ogv",
+  "file": "File:Battle of Chemulpo Bay edison.ogv"
+ },
+ "eiga.rk-chaplin": {
+  "src": "photo-eiga.rk-chaplin.jpg",
+  "author": "Strauss-Peyton Studio",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Charlie_Chaplin_portrait_Getty_1739411952.jpg",
+  "file": "File:Charlie Chaplin portrait Getty 1739411952.jpg"
+ },
+ "eiga.rk-keaton": {
+  "src": "photo-eiga.rk-keaton.jpg",
+  "author": "Bain News Service",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Busterkeaton_edit.jpg",
+  "file": "File:Busterkeaton edit.jpg"
+ },
+ "eiga.rk-talkie": {
+  "src": "photo-eiga.rk-talkie.jpg",
+  "author": "L. Gaumont & Co",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gaumont1902.jpg",
+  "file": "File:Gaumont1902.jpg"
+ },
+ "eiga.rk-hollywood": {
+  "src": "photo-eiga.rk-hollywood.jpg",
+  "author": "Diliff",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hollywood_boulevard_from_kodak_theatre.jpg",
+  "file": "File:Hollywood boulevard from kodak theatre.jpg"
+ },
+ "eiga.rk-technicolor": {
+  "src": "photo-eiga.rk-technicolor.jpg",
+  "author": "New York, Wid's Films and Film Folks, Inc.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%22Technicolor_is_natural_color%22_Paul_Whiteman_stars_in_the_King_of_Jazz_-_from,_The_Film_Daily,_Jul-Dec_1930_(page_218_crop).jpg",
+  "file": "File:\"Technicolor is natural color\" Paul Whiteman stars in the King of Jazz - from, The Film Daily, Jul-Dec 1930 (page 218 crop).jpg"
+ },
+ "eiga.rk-projector": {
+  "src": "photo-eiga.rk-projector.jpg",
+  "author": "Asturio Cantabrio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matsunaga_Bunko_projectors_ac_(5).jpg",
+  "file": "File:Matsunaga Bunko projectors ac (5).jpg"
+ },
+ "eiga.rk-film": {
+  "src": "photo-eiga.rk-film.jpg",
+  "author": "Babi Hijau",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Film_StandardForm001.jpg",
+  "file": "File:Film StandardForm001.jpg"
+ },
+ "eiga.rk-kinetoscope": {
+  "src": "photo-eiga.rk-kinetoscope.jpg",
+  "author": "Albert Tissandier",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kinetoscope.jpg",
+  "file": "File:Kinetoscope.jpg"
+ },
+ "eiga.rk-muybridge": {
+  "src": "photo-eiga.rk-muybridge.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Optic_Projection_fig_411.jpg",
+  "file": "File:Optic Projection fig 411.jpg"
+ },
+ "eiga.rk-zoetrope": {
+  "src": "photo-eiga.rk-zoetrope.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zoetrope.jpg",
+  "file": "File:Zoetrope.jpg"
+ },
+ "eiga.rk-lloyd": {
+  "src": "photo-eiga.rk-lloyd.jpg",
+  "author": "Paramount Productions Inc. (film screenshot)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Harold_Lloyd_in_the_Milky_Way.jpg",
+  "file": "File:Harold Lloyd in the Milky Way.jpg"
+ },
+ "eiga.rk-studio": {
+  "src": "photo-eiga.rk-studio.jpg",
+  "author": "Agnès Contensou",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Paramount_Pictures.jpg",
+  "file": "File:Paramount Pictures.jpg"
+ },
+ "eiga.rk-nouvellevague": {
+  "src": "photo-eiga.rk-nouvellevague.jpg",
+  "author": "Janus Films",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Three_by_Truffaut_poster.jpg",
+  "file": "File:Three by Truffaut poster.jpg"
+ },
+ "eiga.rk-truffaut": {
+  "src": "photo-eiga.rk-truffaut.jpg",
+  "author": "Jack de Nijs for Anefo",
+  "license": "CC BY-SA 3.0 NL",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Truffaut_(1965).jpg",
+  "file": "File:François Truffaut (1965).jpg"
+ },
+ "eiga.rk-cinemascope": {
+  "src": "photo-eiga.rk-cinemascope.jpg",
+  "author": "Trailer at TCM",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Robe_1953_Trailer_Screenshot_2.png",
+  "file": "File:The Robe 1953 Trailer Screenshot 2.png"
+ },
+ "eiga.rk-drivein": {
+  "src": "photo-eiga.rk-drivein.jpg",
+  "author": "Assistant08",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Autokino.jpg",
+  "file": "File:Autokino.jpg"
+ },
+ "eiga.rk-newcinema": {
+  "src": "photo-eiga.rk-newcinema.jpg",
+  "author": "Distributed by Warner Bros.-Seven Arts.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bonnie_and_Clyde_(1967_teaser_poster).jpg",
+  "file": "File:Bonnie and Clyde (1967 teaser poster).jpg"
+ },
+ "eiga.rk-dvd": {
+  "src": "photo-eiga.rk-dvd.jpg",
+  "author": "User:Wanted, User:Ochro",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:DVD-R_bottom-side.jpg",
+  "file": "File:DVD-R bottom-side.jpg"
+ },
+ "eiga.rk-gentoki": {
+  "src": "photo-eiga.rk-gentoki.jpg",
+  "author": "Photo: Andreas Praefcke",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Laterna_magica_Aulendorf.jpg",
+  "file": "File:Laterna magica Aulendorf.jpg"
+ },
+ "eiga.rk-reynaud": {
+  "src": "photo-eiga.rk-reynaud.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Reynaud.jpg",
+  "file": "File:Reynaud.jpg"
+ },
+ "eiga.rk-griffith": {
+  "src": "photo-eiga.rk-griffith.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:David_Wark_Griffith_portrait.jpg",
+  "file": "File:David Wark Griffith portrait.jpg"
+ },
+ "eiga.rk-sennett": {
+  "src": "photo-eiga.rk-sennett.jpg",
+  "author": "Fred Hartsook (1878-1930)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mack_Sennett_1916.jpg",
+  "file": "File:Mack Sennett 1916.jpg"
+ },
+ "eiga.rk-eisenstein": {
+  "src": "photo-eiga.rk-eisenstein.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sergei_Eisenstein_03.jpg",
+  "file": "File:Sergei Eisenstein 03.jpg"
+ },
+ "eiga.rk-vitaphone": {
+  "src": "photo-eiga.rk-vitaphone.jpg",
+  "author": "Unnamed photographer for Vitaphone / ATT",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:VitaphoneDemo.jpg",
+  "file": "File:VitaphoneDemo.jpg"
+ },
+ "eiga.rk-hollywoodsign": {
+  "src": "photo-eiga.rk-hollywoodsign.jpg",
+  "author": "Thomas Wolf, www.foto-tw.de",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hollywood_Sign_(Zuschnitt).jpg",
+  "file": "File:Hollywood Sign (Zuschnitt).jpg"
+ },
+ "eiga.rk-godard": {
+  "src": "photo-eiga.rk-godard.jpg",
+  "author": "Gary Stevens",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jean-Luc_Godard_at_Berkeley,_1968.jpg",
+  "file": "File:Jean-Luc Godard at Berkeley, 1968.jpg"
+ },
+ "eiga.rk-cinematheque": {
+  "src": "photo-eiga.rk-cinematheque.jpg",
+  "author": "La Citta Vita",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gehrys_American_Center_2011.jpg",
+  "file": "File:Gehrys American Center 2011.jpg"
+ },
+ "eiga.rk-film35": {
+  "src": "photo-eiga.rk-film35.jpg",
+  "author": "運動会プロテインパワー",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Anime_Tokyo_Station_-_35mm_Film.jpg",
+  "file": "File:Anime Tokyo Station - 35mm Film.jpg"
+ },
+ "eiga.rk-kokuritsu": {
+  "src": "photo-eiga.rk-kokuritsu.jpg",
+  "author": "鈴木一誌",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nfaj_logo.svg",
+  "file": "File:Nfaj logo.svg"
+ },
+ "eiga.gh-soundtrack": {
+  "src": "photo-eiga.gh-soundtrack.jpg",
+  "author": "U. S. Navy. Photographed by Cmacd123 at en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:USN16mmSoundtrack.jpg",
+  "file": "File:USN16mmSoundtrack.jpg"
+ },
+ "eiga.gh-silhouette": {
+  "src": "photo-eiga.gh-silhouette.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:WALDST3.jpg",
+  "file": "File:WALDST3.jpg"
+ },
+ "eiga.gh-mocap": {
+  "src": "photo-eiga.gh-mocap.jpg",
+  "author": "T-tus at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:MotionCapture.jpg",
+  "file": "File:MotionCapture.jpg"
+ },
+ "eiga.gh-tracking": {
+  "src": "photo-eiga.gh-tracking.jpg",
+  "author": "Sean Devine at http://picasaweb.google.com/seanmdevine",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AlamoFilming.jpg",
+  "file": "File:AlamoFilming.jpg"
+ },
+ "eiga.gn-comedy": {
+  "src": "photo-eiga.gn-comedy.jpg",
+  "author": "Unknown artistUnknown artist",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tragic_comic_masks_-_roman_mosaic.jpg",
+  "file": "File:Tragic comic masks - roman mosaic.jpg"
+ },
+ "eiga.gn-musical": {
+  "src": "photo-eiga.gn-musical.jpg",
+  "author": "Central Litho. & Eng. Co. (signed)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Crookfinale.jpg",
+  "file": "File:Crookfinale.jpg"
+ },
+ "eiga.gn-love": {
+  "src": "photo-eiga.gn-love.jpg",
+  "author": "Trailer screenshot Licencing information : https://web.archi…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tyrone_power_alice_faye_ragtime6.jpg",
+  "file": "File:Tyrone power alice faye ragtime6.jpg"
+ },
+ "eiga.gn-mystery": {
+  "src": "photo-eiga.gn-mystery.jpg",
+  "author": "A Tower magazine",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mystery_January_1934.jpg",
+  "file": "File:Mystery January 1934.jpg"
+ },
+ "eiga.gn-kaiju": {
+  "src": "photo-eiga.gn-kaiju.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kingkongposter.jpg",
+  "file": "File:Kingkongposter.jpg"
+ },
+ "eiga.gn-jidaigeki": {
+  "src": "photo-eiga.gn-jidaigeki.jpg",
+  "author": "Japanexperterna.se",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Samurai_actors.jpg",
+  "file": "File:Samurai actors.jpg"
+ },
+ "eiga.gn-western": {
+  "src": "photo-eiga.gn-western.jpg",
+  "author": "United Artists",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Stagecoach-1939.jpg",
+  "file": "File:Stagecoach-1939.jpg"
+ },
+ "eiga.gn-suspense": {
+  "src": "photo-eiga.gn-suspense.jpg",
+  "author": "Frank Reicher Productions",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Suspense_(1919)_-_2.jpg",
+  "file": "File:Suspense (1919) - 2.jpg"
+ },
+ "eiga.gn-chanbara": {
+  "src": "photo-eiga.gn-chanbara.jpg",
+  "author": "Japanexperterna.se",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Samurai_actors.jpg",
+  "file": "File:Samurai actors.jpg"
+ },
+ "eiga.gn-roadmovie": {
+  "src": "photo-eiga.gn-roadmovie.jpg",
+  "author": "Stéphane Mahot Selbymay",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Detour.jpg",
+  "file": "File:Detour.jpg"
+ },
+ "eiga.gn-spaceopera": {
+  "src": "photo-eiga.gn-spaceopera.jpg",
+  "author": "Originally uploaded by Nagle (Transferred by Hyju)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Planetstoriesclichecover.jpg",
+  "file": "File:Planetstoriesclichecover.jpg"
+ },
+ "eiga.gn-campbell": {
+  "src": "photo-eiga.gn-campbell.jpg",
+  "author": "Joan Halifax",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joseph_Campbell_at_Feathered_Pipe_Ranch,_Montana_(cropped).jpg",
+  "file": "File:Joseph Campbell at Feathered Pipe Ranch, Montana (cropped).jpg"
+ },
+ "eiga.gn-screwball": {
+  "src": "photo-eiga.gn-screwball.jpg",
+  "author": "RKO",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:BabyPoster2.jpg",
+  "file": "File:BabyPoster2.jpg"
+ },
+ "eiga.gn-trickster": {
+  "src": "photo-eiga.gn-trickster.jpg",
+  "author": "Ernest Henri Griset",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Reynard-the-fox.jpg",
+  "file": "File:Reynard-the-fox.jpg"
+ },
+ "eiga.gn-antihero": {
+  "src": "photo-eiga.gn-antihero.jpg",
+  "author": "movie studio",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Clint_Eastwood_-_1960s.JPG",
+  "file": "File:Clint Eastwood - 1960s.JPG"
+ },
+ "eiga.sk-spielberg": {
+  "src": "photo-eiga.sk-spielberg.jpg",
+  "author": "Martin Kraft",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:MKr25402_Steven_Spielberg_(Berlinale_2023)_(3x4_cropped).jpg",
+  "file": "File:MKr25402 Steven Spielberg (Berlinale 2023) (3x4 cropped).jpg"
+ },
+ "eiga.sk-disney": {
+  "src": "photo-eiga.sk-disney.jpg",
+  "author": "NASA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Walt_disney_portrait.jpg",
+  "file": "File:Walt disney portrait.jpg"
+ },
+ "eiga.sk-pixar": {
+  "src": "photo-eiga.sk-pixar.jpg",
+  "author": "Coolcaesar",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pixaranimationstudios.jpg",
+  "file": "File:Pixaranimationstudios.jpg"
+ },
+ "eiga.sk-lucas": {
+  "src": "photo-eiga.sk-lucas.jpg",
+  "author": "Gage Skidmore",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:George_Lucas_by_Gage_Skidmore.jpg",
+  "file": "File:George Lucas by Gage Skidmore.jpg"
+ },
+ "eiga.sk-zemeckis": {
+  "src": "photo-eiga.sk-zemeckis.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Robert_Zemeckis_%22The_Walk%22_at_Opening_Ceremony_of_the_28th_Tokyo_International_Film_Festival_(21835891403)_(cropped).jpg",
+  "file": "File:Robert Zemeckis \"The Walk\" at Opening Ceremony of the 28th Tokyo International Film Festival (21835891403) (cropped).jpg"
+ },
+ "eiga.sk-burton": {
+  "src": "photo-eiga.sk-burton.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tim_Burton-63605.jpg",
+  "file": "File:Tim Burton-63605.jpg"
+ },
+ "eiga.sk-docter": {
+  "src": "photo-eiga.sk-docter.jpg",
+  "author": "nicolas genin from Paris, France",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pete_Docter_cropped_2009.jpg",
+  "file": "File:Pete Docter cropped 2009.jpg"
+ },
+ "eiga.sk-aardman": {
+  "src": "photo-eiga.sk-aardman.jpg",
+  "author": "yellow book",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aardman_Animation,_Bristol,_Headquarters.jpg",
+  "file": "File:Aardman Animation, Bristol, Headquarters.jpg"
+ },
+ "eiga.sk-hitchcock": {
+  "src": "photo-eiga.sk-hitchcock.jpg",
+  "author": "Ante Brkan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hitchcock,_Alfred_02.jpg",
+  "file": "File:Hitchcock, Alfred 02.jpg"
+ },
+ "eiga.sk-cameron": {
+  "src": "photo-eiga.sk-cameron.jpg",
+  "author": "Kevin Paul",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:James_Cameron_at_53rd_Saturn_Awards_2026-01_(cropped).jpg",
+  "file": "File:James Cameron at 53rd Saturn Awards 2026-01 (cropped).jpg"
+ },
+ "eiga.sk-nolan": {
+  "src": "photo-eiga.sk-nolan.jpg",
+  "author": "PhilipRomano",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ChristopherNolan-byPhilipRomano_(cropped).jpg",
+  "file": "File:ChristopherNolan-byPhilipRomano (cropped).jpg"
+ },
+ "eiga.sk-wes": {
+  "src": "photo-eiga.sk-wes.jpg",
+  "author": "Diana Ringo",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wes_Anderson_at_the_2018_Berlin_Film_Festival.jpg",
+  "file": "File:Wes Anderson at the 2018 Berlin Film Festival.jpg"
+ },
+ "eiga.sk-marvelstudios": {
+  "src": "photo-eiga.sk-marvelstudios.jpg",
+  "author": "Coolcaesar",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Frankgwellsbuilding.JPG",
+  "file": "File:Frankgwellsbuilding.JPG"
+ },
+ "eiga.sk-capra": {
+  "src": "photo-eiga.sk-capra.jpg",
+  "author": "Columbia Pictures",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Frank_Capra.jpg",
+  "file": "File:Frank Capra.jpg"
+ },
+ "eiga.sk-welles": {
+  "src": "photo-eiga.sk-welles.jpg",
+  "author": "Carl Van Vechten",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Orson_Welles_1937.jpg",
+  "file": "File:Orson Welles 1937.jpg"
+ },
+ "eiga.sk-fellini": {
+  "src": "photo-eiga.sk-fellini.jpg",
+  "author": "Italiamia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Federico_Fellini_010.jpg",
+  "file": "File:Federico Fellini 010.jpg"
+ },
+ "eiga.sk-desica": {
+  "src": "photo-eiga.sk-desica.jpg",
+  "author": "Stevan Kragujević",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:S_Kragujevic,_Vittorio_De_Sica,_1959.JPG",
+  "file": "File:S Kragujevic, Vittorio De Sica, 1959.JPG"
+ },
+ "eiga.sk-tati": {
+  "src": "photo-eiga.sk-tati.jpg",
+  "author": "Willy Pragher",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kabarett_der_Komiker;_Jacques_Tati_013575c.jpg",
+  "file": "File:Kabarett der Komiker; Jacques Tati 013575c.jpg"
+ },
+ "eiga.sk-ray": {
+  "src": "photo-eiga.sk-ray.jpg",
+  "author": "Dinu Alam Newyork",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Satyajit_Ray_in_New_York_(cropped).jpg",
+  "file": "File:Satyajit Ray in New York (cropped).jpg"
+ },
+ "eiga.sk-kiarostami": {
+  "src": "photo-eiga.sk-kiarostami.jpg",
+  "author": "مهرزاد بروجردی",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kiarostami_Boroujerdi_(3)(Cropped).jpg",
+  "file": "File:Kiarostami Boroujerdi (3)(Cropped).jpg"
+ },
+ "eiga.sk-zhang": {
+  "src": "photo-eiga.sk-zhang.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zhang_Yimou_from_%22Full_River_Red%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2023_(53347207442).jpg",
+  "file": "File:Zhang Yimou from \"Full River Red\" at Red Carpet of the Tokyo International Film Festival 2023 (53347207442).jpg"
+ },
+ "eiga.sk-bird": {
+  "src": "photo-eiga.sk-bird.jpg",
+  "author": "nicolas genin from Paris, France",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brad_bird_cropped_2009.jpg",
+  "file": "File:Brad bird cropped 2009.jpg"
+ },
+ "eiga.sk-park": {
+  "src": "photo-eiga.sk-park.jpg",
+  "author": "Sam Felder",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wallace,_Gromit,_and_creator_Nick_Park.jpg",
+  "file": "File:Wallace, Gromit, and creator Nick Park.jpg"
+ },
+ "eiga.sk-feige": {
+  "src": "photo-eiga.sk-feige.jpg",
+  "author": "Gage Skidmore from Peoria, AZ, United States of America",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kevin_Feige_(48462887397)_(cropped).jpg",
+  "file": "File:Kevin Feige (48462887397) (cropped).jpg"
+ },
+ "eiga.sk-raimi": {
+  "src": "photo-eiga.sk-raimi.jpg",
+  "author": "Super Festivals from Ft. Lauderdale, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sam_Raimi_(53896379405)_(cropped).jpg",
+  "file": "File:Sam Raimi (53896379405) (cropped).jpg"
+ },
+ "eiga.sk-jackson": {
+  "src": "photo-eiga.sk-jackson.jpg",
+  "author": "Gage Skidmore",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Peter_Jackson_SDCC_2014.jpg",
+  "file": "File:Peter Jackson SDCC 2014.jpg"
+ },
+ "eiga.sk-russo": {
+  "src": "photo-eiga.sk-russo.jpg",
+  "author": "Gage Skidmore",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joe_Russo_%26_Anthony_Russo_by_Gage_Skidmore.jpg",
+  "file": "File:Joe Russo & Anthony Russo by Gage Skidmore.jpg"
+ },
+ "eiga.sk-coogler": {
+  "src": "photo-eiga.sk-coogler.jpg",
+  "author": "Kevin Paul",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ryan_Coogler_-_Sinners_2025_(cropped).jpg",
+  "file": "File:Ryan Coogler - Sinners 2025 (cropped).jpg"
+ },
+ "eiga.sk-gerwig": {
+  "src": "photo-eiga.sk-gerwig.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Greta_Gerwig.jpg",
+  "file": "File:Greta Gerwig.jpg"
+ },
+ "eiga.sk-abrams": {
+  "src": "photo-eiga.sk-abrams.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:J._J._Abrams.jpg",
+  "file": "File:J. J. Abrams.jpg"
+ },
+ "eiga.sk-stanlee": {
+  "src": "photo-eiga.sk-stanlee.jpg",
+  "author": "Gage Skidmore from Peoria, AZ, United States of America",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Stan_Lee_(14201944210).jpg",
+  "file": "File:Stan Lee (14201944210).jpg"
+ },
+ "eiga.sk-zimmer": {
+  "src": "photo-eiga.sk-zimmer.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sound007RAH041022_(43_of_69)_(52406449433)_(cropped).jpg",
+  "file": "File:Sound007RAH041022 (43 of 69) (52406449433) (cropped).jpg"
+ },
+ "eiga.nh-miyazaki": {
+  "src": "photo-eiga.nh-miyazaki.jpg",
+  "author": "Natasha Baucas at https://www.flickr.com/photos/sdnatasha/",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:HayaoMiyazakiCCJuly09.jpg",
+  "file": "File:HayaoMiyazakiCCJuly09.jpg"
+ },
+ "eiga.nh-ghibli": {
+  "src": "photo-eiga.nh-ghibli.jpg",
+  "author": "Akonnchiroll",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Studio_Ghibli_studio_3.jpg",
+  "file": "File:Studio Ghibli studio 3.jpg"
+ },
+ "eiga.nh-kurosawa": {
+  "src": "photo-eiga.nh-kurosawa.jpg",
+  "author": "キネマ旬報社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kinema-Junpo-1960-December-Special-1.jpg",
+  "file": "File:Kinema-Junpo-1960-December-Special-1.jpg"
+ },
+ "eiga.nh-shinkai": {
+  "src": "photo-eiga.nh-shinkai.jpg",
+  "author": "Elena Ternovaja",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Makoto_Shinkai,_2023.jpg",
+  "file": "File:Makoto Shinkai, 2023.jpg"
+ },
+ "eiga.nh-hosoda": {
+  "src": "photo-eiga.nh-hosoda.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hosoda_Mamoru_from_%22The_World_of_Mamoru_Hosoda%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2016_(33644165075).jpg",
+  "file": "File:Hosoda Mamoru from \"The World of Mamoru Hosoda\" at Opening Ceremony of the Tokyo International Film Festival 2016 (33644165075).jpg"
+ },
+ "eiga.nh-tezuka": {
+  "src": "photo-eiga.nh-tezuka.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Osamu_Tezuka_1951_Scan10008-2.JPG",
+  "file": "File:Osamu Tezuka 1951 Scan10008-2.JPG"
+ },
+ "eiga.nh-yamadayoji": {
+  "src": "photo-eiga.nh-yamadayoji.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yamada_Yoji_from_%22Tora-san,_Wish_You_Were_Here%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2019_(49014012331).jpg",
+  "file": "File:Yamada Yoji from \"Tora-san, Wish You Were Here\" at Opening Ceremony of the Tokyo International Film Festival 2019 (49014012331).jpg"
+ },
+ "eiga.nh-takahata": {
+  "src": "photo-eiga.nh-takahata.jpg",
+  "author": "Boungawa",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Isao_Takahata.jpg",
+  "file": "File:Isao Takahata.jpg"
+ },
+ "eiga.nh-ozu": {
+  "src": "photo-eiga.nh-ozu.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yasujiro_Ozu_01.jpg",
+  "file": "File:Yasujiro Ozu 01.jpg"
+ },
+ "eiga.nh-tsuburaya": {
+  "src": "photo-eiga.nh-tsuburaya.jpg",
+  "author": "Tsuburaya Productions",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Eiji_Tsuburaya_1966.jpg",
+  "file": "File:Eiji Tsuburaya 1966.jpg"
+ },
+ "eiga.nh-koreeda": {
+  "src": "photo-eiga.nh-koreeda.jpg",
+  "author": "Colleen Sturtevant",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hirokazu_Koreeda_Venice_Film_Festival.jpg",
+  "file": "File:Hirokazu Koreeda Venice Film Festival.jpg"
+ },
+ "eiga.nh-suo": {
+  "src": "photo-eiga.nh-suo.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Suo_Masayuki_from_%22Talking_the_Pictures%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2019_(49014096832).jpg",
+  "file": "File:Suo Masayuki from \"Talking the Pictures\" at Opening Ceremony of the Tokyo International Film Festival 2019 (49014096832).jpg"
+ },
+ "eiga.nh-hisaishi": {
+  "src": "photo-eiga.nh-hisaishi.jpg",
+  "author": "citykane",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Joe_Hisaishi_2011.jpg",
+  "file": "File:Joe Hisaishi 2011.jpg"
+ },
+ "eiga.nh-mizoguchi": {
+  "src": "photo-eiga.nh-mizoguchi.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kenji_Mizoguchi_3.jpg",
+  "file": "File:Kenji Mizoguchi 3.jpg"
+ },
+ "eiga.nh-naruse": {
+  "src": "photo-eiga.nh-naruse.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mikio_Naruse.jpg",
+  "file": "File:Mikio Naruse.jpg"
+ },
+ "eiga.nh-kinoshita": {
+  "src": "photo-eiga.nh-kinoshita.jpg",
+  "author": "産業経済新聞社（Sankei Shinbun Co., Ltd.）",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kinoshita-Keisuke-1.jpg",
+  "file": "File:Kinoshita-Keisuke-1.jpg"
+ },
+ "eiga.nh-toeidoga": {
+  "src": "photo-eiga.nh-toeidoga.jpg",
+  "author": "Akonnchiroll",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nakano_Central_Park_E.jpg",
+  "file": "File:Nakano Central Park E.jpg"
+ },
+ "eiga.nh-kawamoto": {
+  "src": "photo-eiga.nh-kawamoto.jpg",
+  "author": "derivative work: Esn (talk) Kihachiro_Kawamoto_2006_Ottawa.J…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kihachiro_Kawamoto_2006_Ottawa_cropped.jpg",
+  "file": "File:Kihachiro Kawamoto 2006 Ottawa cropped.jpg"
+ },
+ "eiga.nh-yuasa": {
+  "src": "photo-eiga.nh-yuasa.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yuasa_Masaaki_from_%22The_World_of_Masaaki_Yuasa%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2018_(30678155317).jpg",
+  "file": "File:Yuasa Masaaki from \"The World of Masaaki Yuasa\" at Opening Ceremony of the Tokyo International Film Festival 2018 (30678155317).jpg"
+ },
+ "eiga.nh-makino": {
+  "src": "photo-eiga.nh-makino.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sh%C5%8Dz%C5%8D_Makino.jpg",
+  "file": "File:Shōzō Makino.jpg"
+ },
+ "eiga.nh-tokugi": {
+  "src": "photo-eiga.nh-tokugi.jpg",
+  "author": "キネマ旬報社 撮影者不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsuburaya_Eiji01.jpg",
+  "file": "File:Tsuburaya Eiji01.jpg"
+ },
+ "eiga.nh-asakusa": {
+  "src": "photo-eiga.nh-asakusa.jpg",
+  "author": "『世界畫報』昭和十二年二月號 / Sekai Gahō February 1937 issue",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Asakusa_Rokku.jpg",
+  "file": "File:Asakusa Rokku.jpg"
+ },
+ "eiga.nh-yamazaki": {
+  "src": "photo-eiga.nh-yamazaki.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yamazaki_Takashi_from_%22Godzilla_Minus_One%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2023_(53348355520)_(cropped)_(2).jpg",
+  "file": "File:Yamazaki Takashi from \"Godzilla Minus One\" at Red Carpet of the Tokyo International Film Festival 2023 (53348355520) (cropped) (2).jpg"
+ },
+ "eiga.sh-academy": {
+  "src": "photo-eiga.sh-academy.jpg",
+  "author": "Prayitno",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Decorative_Trophies.jpg",
+  "file": "File:Decorative Trophies.jpg"
+ },
+ "eiga.sh-oscar": {
+  "src": "photo-eiga.sh-oscar.jpg",
+  "author": "Prayitno",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Decorative_Trophies.jpg",
+  "file": "File:Decorative Trophies.jpg"
+ },
+ "eiga.sh-cannes": {
+  "src": "photo-eiga.sh-cannes.jpg",
+  "author": "No machine-readable author provided. Nikita~commonswiki assu…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cannes.Redcarpet.jpg",
+  "file": "File:Cannes.Redcarpet.jpg"
+ },
+ "eiga.sh-palme": {
+  "src": "photo-eiga.sh-palme.jpg",
+  "author": "Association Française du Festival International du Film",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Palme_d%27Or_2023.svg",
+  "file": "File:Palme d'Or 2023.svg"
+ },
+ "eiga.sh-berlin": {
+  "src": "photo-eiga.sh-berlin.jpg",
+  "author": "Maharepa",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Berlinale2007.jpg",
+  "file": "File:Berlinale2007.jpg"
+ },
+ "eiga.sh-kinguma": {
+  "src": "photo-eiga.sh-kinguma.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%C4%B0lker_%C3%87atak_at_the_2026_Berlin_International_Film_Festival-61847.jpg",
+  "file": "File:İlker Çatak at the 2026 Berlin International Film Festival-61847.jpg"
+ },
+ "eiga.sh-venice": {
+  "src": "photo-eiga.sh-venice.jpg",
+  "author": "dalbera from Paris, France",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mostra_Internazionale_d%E2%80%99Arte_Cinematografica_(Venezia)_(4979198162).jpg",
+  "file": "File:Mostra Internazionale d’Arte Cinematografica (Venezia) (4979198162).jpg"
+ },
+ "eiga.sh-kinjishi": {
+  "src": "photo-eiga.sh-kinjishi.jpg",
+  "author": "Carnby",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Leone_d%27Oro_gold_silhouette.svg",
+  "file": "File:Leone d'Oro gold silhouette.svg"
+ },
+ "eiga.sh-jpacademy": {
+  "src": "photo-eiga.sh-jpacademy.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:201211_Twenty-four_eyes17s5.jpg",
+  "file": "File:201211 Twenty-four eyes17s5.jpg"
+ },
+ "eiga.sh-tiffjp": {
+  "src": "photo-eiga.sh-tiffjp.jpg",
+  "author": "Dick Thomas Johnson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_Carpet_of_the_Tokyo_International_Film_Festival_2022_-_52460343892.jpg",
+  "file": "File:Red Carpet of the Tokyo International Film Festival 2022 - 52460343892.jpg"
+ },
+ "eiga.sh-ampas": {
+  "src": "photo-eiga.sh-ampas.jpg",
+  "author": "Ucla90024",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AMPAS.jpg",
+  "file": "File:AMPAS.jpg"
+ },
+ "eiga.sh-worldpremiere": {
+  "src": "photo-eiga.sh-worldpremiere.jpg",
+  "author": "Alan Light",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Premiere_at_Chinese_Theater_(3555047236).jpg",
+  "file": "File:Premiere at Chinese Theater (3555047236).jpg"
+ },
+ "eiga.sh-annecy": {
+  "src": "photo-eiga.sh-annecy.jpg",
+  "author": "DeborahForsans",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ecrangeant.jpg",
+  "file": "File:Ecrangeant.jpg"
+ },
+ "eiga.sh-toronto": {
+  "src": "photo-eiga.sh-toronto.jpg",
+  "author": "Vlad Podvorny",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TIFF_comes_in_Toronto_(29465981882).jpg",
+  "file": "File:TIFF comes in Toronto (29465981882).jpg"
+ },
+ "eiga.sh-sundance": {
+  "src": "photo-eiga.sh-sundance.jpg",
+  "author": "Travis Wise",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sundance_Film_Festival.jpg",
+  "file": "File:Sundance Film Festival.jpg"
+ },
+ "eiga.sh-busan": {
+  "src": "photo-eiga.sh-busan.jpg",
+  "author": "biffThe logo is from the BIFF Official Website website. www.…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Biff_logo.jpg",
+  "file": "File:Biff logo.jpg"
+ },
+ "eiga.sh-bafta": {
+  "src": "photo-eiga.sh-bafta.jpg",
+  "author": "Ben Sutherland from Forest Hill, London, European Union",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BAFTA_Mask_and_BBC_Logo_(2008).jpg",
+  "file": "File:BAFTA Mask and BBC Logo (2008).jpg"
+ },
+ "eiga.sh-cesar": {
+  "src": "photo-eiga.sh-cesar.jpg",
+  "author": "Georges Biard",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Isabelle_Huppert_C%C3%A9sars_2017_2.jpg",
+  "file": "File:Isabelle Huppert Césars 2017 2.jpg"
+ },
+ "eiga.sh-eiyokinjishi": {
+  "src": "photo-eiga.sh-eiyokinjishi.jpg",
+  "author": "David Shankbone",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ellen_Burstyn_at_the_2009_Tribeca_Film_Festival.jpg",
+  "file": "File:Ellen Burstyn at the 2009 Tribeca Film Festival.jpg"
+ },
+ "eiga.sh-ginguma": {
+  "src": "photo-eiga.sh-ginguma.jpg",
+  "author": "Siebbi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Silverbj%C3%B6rnen_-_Filmfestivalen_i_Berlin.jpg",
+  "file": "File:Silverbjörnen - Filmfestivalen i Berlin.jpg"
+ },
+ "eiga.sh-annie": {
+  "src": "photo-eiga.sh-annie.jpg",
+  "author": "Annie Award",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Annie_Awards_wordmark_(2023).svg",
+  "file": "File:Annie Awards wordmark (2023).svg"
+ },
+ "eiga.sh-locarno": {
+  "src": "photo-eiga.sh-locarno.jpg",
+  "author": "Simone1986 at Italian Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Festival_internazionale_del_film_di_Locarno.JPG",
+  "file": "File:Festival internazionale del film di Locarno.JPG"
+ },
+ "eiga.hh-yodogawa": {
+  "src": "photo-eiga.hh-yodogawa.jpg",
+  "author": "学習研究社 撮影者不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nagaharu_Yodogawa.jpg",
+  "file": "File:Nagaharu Yodogawa.jpg"
+ },
+ "eiga.hh-mizuno": {
+  "src": "photo-eiga.hh-mizuno.jpg",
+  "author": "時事通信社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Eiga-Nenkan-1967-2.jpg",
+  "file": "File:Eiga-Nenkan-1967-2.jpg"
+ },
+ "eiga.hh-kinejun": {
+  "src": "photo-eiga.hh-kinejun.jpg",
+  "author": "Not 100% guaranteed, but most likely Saburo Tanaka (1899-196…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:KinemaJunpo_(TheMovieTimes)_1919-07-11_No1_cover.jpg",
+  "file": "File:KinemaJunpo (TheMovieTimes) 1919-07-11 No1 cover.jpg"
+ },
+ "eiga.hh-ebert": {
+  "src": "photo-eiga.hh-ebert.jpg",
+  "author": "Sound Opinions",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roger_Ebert_cropped.jpg",
+  "file": "File:Roger Ebert cropped.jpg"
+ },
+ "eiga.hh-cahiers": {
+  "src": "photo-eiga.hh-cahiers.jpg",
+  "author": "Cahiers du Cinéma",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cahiers_du_Cin%C3%A9ma_logo.svg",
+  "file": "File:Cahiers du Cinéma logo.svg"
+ },
+ "eiga.hh-bestten": {
+  "src": "photo-eiga.hh-bestten.jpg",
+  "author": "Not 100% guaranteed, but most likely Saburo Tanaka (1899-196…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:KinemaJunpo_(TheMovieTimes)_1919-07-11_No1_cover.jpg",
+  "file": "File:KinemaJunpo (TheMovieTimes) 1919-07-11 No1 cover.jpg"
+ },
+ "eiga.hh-kigoron": {
+  "src": "photo-eiga.hh-kigoron.jpg",
+  "author": "Napoleon Sarony",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Charles_Sanders_Peirce.jpg",
+  "file": "File:Charles Sanders Peirce.jpg"
+ },
+ "eiga.hh-cult": {
+  "src": "photo-eiga.hh-cult.jpg",
+  "author": "Mark James Miller",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:UA_Cinema_Rocky_Horror.jpg",
+  "file": "File:UA Cinema Rocky Horror.jpg"
+ },
+ "eiga.hy-hanks": {
+  "src": "photo-eiga.hy-hanks.jpg",
+  "author": "Alan Light",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kevin_Kline_%26_Tom_Hanks_(252967475)_(cropped).jpg",
+  "file": "File:Kevin Kline & Tom Hanks (252967475) (cropped).jpg"
+ },
+ "eiga.hy-cruise": {
+  "src": "photo-eiga.hy-cruise.jpg",
+  "author": "Kevin Paul",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tom_Cruise_at_53rd_Saturn_Awards_2026-01.jpg",
+  "file": "File:Tom Cruise at 53rd Saturn Awards 2026-01.jpg"
+ },
+ "eiga.hy-ford": {
+  "src": "photo-eiga.hy-ford.jpg",
+  "author": "Kevin Paul",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Harrison_Ford_-_Televerse_2025-03.jpg",
+  "file": "File:Harrison Ford - Televerse 2025-03.jpg"
+ },
+ "eiga.hy-dicaprio": {
+  "src": "photo-eiga.hy-dicaprio.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Leonardo_DiCaprio_-_BFI_Southbank_3_(crop).jpg",
+  "file": "File:Leonardo DiCaprio - BFI Southbank 3 (crop).jpg"
+ },
+ "eiga.hy-watson": {
+  "src": "photo-eiga.hy-watson.jpg",
+  "author": "Georges Biard",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Emma_Watson_2013.jpg",
+  "file": "File:Emma Watson 2013.jpg"
+ },
+ "eiga.hy-radcliffe": {
+  "src": "photo-eiga.hy-radcliffe.jpg",
+  "author": "PhilipRomano",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DanielRadcliffe-byPhilipRomano.jpg",
+  "file": "File:DanielRadcliffe-byPhilipRomano.jpg"
+ },
+ "eiga.hy-hemsworth": {
+  "src": "photo-eiga.hy-hemsworth.jpg",
+  "author": "Gage Skidmore",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chris_Hemsworth_by_Gage_Skidmore_3.jpg",
+  "file": "File:Chris Hemsworth by Gage Skidmore 3.jpg"
+ },
+ "eiga.hy-johansson": {
+  "src": "photo-eiga.hy-johansson.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Scarlett_Johansson-8588.jpg",
+  "file": "File:Scarlett Johansson-8588.jpg"
+ },
+ "eiga.hy-hepburn": {
+  "src": "photo-eiga.hy-hepburn.jpg",
+  "author": "Bud Fraker (1916-2002) [1]",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:AudreyKHepburn.jpg",
+  "file": "File:AudreyKHepburn.jpg"
+ },
+ "eiga.hy-chan": {
+  "src": "photo-eiga.hy-chan.jpg",
+  "author": "Eva Rinaldi",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jackie_Chan_July_2016.jpg",
+  "file": "File:Jackie Chan July 2016.jpg"
+ },
+ "eiga.hy-reeves": {
+  "src": "photo-eiga.hy-reeves.jpg",
+  "author": "Gabriel Hutchinson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Keanu_Reeves_at_TIFF_2025_02_(Cropped).jpg",
+  "file": "File:Keanu Reeves at TIFF 2025 02 (Cropped).jpg"
+ },
+ "eiga.hy-carrey": {
+  "src": "photo-eiga.hy-carrey.jpg",
+  "author": "SHOWTIME",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jim_Carrey_2020_cropped.jpg",
+  "file": "File:Jim Carrey 2020 cropped.jpg"
+ },
+ "eiga.hy-williams": {
+  "src": "photo-eiga.hy-williams.jpg",
+  "author": "ABC",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Robin_Williams_1978.jpg",
+  "file": "File:Robin Williams 1978.jpg"
+ },
+ "eiga.hy-andrews": {
+  "src": "photo-eiga.hy-andrews.jpg",
+  "author": "20th Century Fox",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Julie_Andrews_-_portrait.jpg",
+  "file": "File:Julie Andrews - portrait.jpg"
+ },
+ "eiga.hy-johnson": {
+  "src": "photo-eiga.hy-johnson.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dwayne_Johnson-1809_(cropped).jpg",
+  "file": "File:Dwayne Johnson-1809 (cropped).jpg"
+ },
+ "eiga.hy-black": {
+  "src": "photo-eiga.hy-black.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TenaciousDO2160623_(38_of_62)_Jack_Black.jpg",
+  "file": "File:TenaciousDO2160623 (38 of 62) Jack Black.jpg"
+ },
+ "eiga.hy-pratt": {
+  "src": "photo-eiga.hy-pratt.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chris_Pratt_2018.jpg",
+  "file": "File:Chris Pratt 2018.jpg"
+ },
+ "eiga.hy-jmifune": {
+  "src": "photo-eiga.hy-jmifune.jpg",
+  "author": "映画世界社 (Eiga Sekai Publications, Inc.)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Toshiro_Mifune_1954_Scan10003_160913.jpg",
+  "file": "File:Toshiro Mifune 1954 Scan10003 160913.jpg"
+ },
+ "eiga.hy-jatsumi": {
+  "src": "photo-eiga.hy-jatsumi.jpg",
+  "author": "中日新聞社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chunichi1967-11-27-1.jpg",
+  "file": "File:Chunichi1967-11-27-1.jpg"
+ },
+ "eiga.hy-jtakakura": {
+  "src": "photo-eiga.hy-jtakakura.jpg",
+  "author": "国際情報社 撮影者不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ken_Takakura.jpg",
+  "file": "File:Ken Takakura.jpg"
+ },
+ "eiga.hy-jyoshinaga": {
+  "src": "photo-eiga.hy-jyoshinaga.jpg",
+  "author": "国際情報社",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yoshinaga-Sayuri-1.jpg",
+  "file": "File:Yoshinaga-Sayuri-1.jpg"
+ },
+ "eiga.hy-jyakusho": {
+  "src": "photo-eiga.hy-jyakusho.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yakusho_Koji_from_%22Perfect_Days%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2023_(53348111441).jpg",
+  "file": "File:Yakusho Koji from \"Perfect Days\" at Red Carpet of the Tokyo International Film Festival 2023 (53348111441).jpg"
+ },
+ "eiga.hy-jkimura": {
+  "src": "photo-eiga.hy-jkimura.jpg",
+  "author": "Leah Shang",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Taakuya_Kimura_2008_39.jpg",
+  "file": "File:Taakuya Kimura 2008 39.jpg"
+ },
+ "eiga.hy-jkamiki": {
+  "src": "photo-eiga.hy-jkamiki.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kamiki_Ryunosuke_from_%22Godzilla_Minus_One%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2023_(53348227359)_(cropped).jpg",
+  "file": "File:Kamiki Ryunosuke from \"Godzilla Minus One\" at Red Carpet of the Tokyo International Film Festival 2023 (53348227359) (cropped).jpg"
+ },
+ "eiga.hy-jhirose": {
+  "src": "photo-eiga.hy-jhirose.jpg",
+  "author": "Martin Kraft",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:MKr377554_Suzu_Hirose_(A_Pale_View_of_Hills,_Cannes_2025).jpg",
+  "file": "File:MKr377554 Suzu Hirose (A Pale View of Hills, Cannes 2025).jpg"
+ },
+ "eiga.hy-jnagasawa": {
+  "src": "photo-eiga.hy-jnagasawa.jpg",
+  "author": "nakashi",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:11R_Tokyo_Yushun_(Japanese_Derby)_(G1,_3yo)_Turf_2400m_at_Tokyo_racecourse_winners%27_celemony_%E8%A1%A8%E5%BD%B0%E5%BC%8F_(52931958413)_Masami_Nagasawa.jpg",
+  "file": "File:11R Tokyo Yushun (Japanese Derby) (G1, 3yo) Turf 2400m at Tokyo racecourse winners' celemony 表彰式 (52931958413) Masami Nagasawa.jpg"
+ },
+ "eiga.hy-jayase": {
+  "src": "photo-eiga.hy-jayase.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ayase_Haruka_from_%22Route29%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2024_(54576966862).jpg",
+  "file": "File:Ayase Haruka from \"Route29\" at Red Carpet of the Tokyo International Film Festival 2024 (54576966862).jpg"
+ },
+ "eiga.hy-jashida": {
+  "src": "photo-eiga.hy-jashida.jpg",
+  "author": "LucaFazPhoto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mana_Ashida_at_82nd_Venice_International_Film_Festival-2.jpg",
+  "file": "File:Mana Ashida at 82nd Venice International Film Festival-2.jpg"
+ },
+ "eiga.hy-depp": {
+  "src": "photo-eiga.hy-depp.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Johnny_Depp_2020.jpg",
+  "file": "File:Johnny Depp 2020.jpg"
+ },
+ "eiga.hy-downey": {
+  "src": "photo-eiga.hy-downey.jpg",
+  "author": "PhilipRomano",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:RobertDowneyJr-byPhilipRomano7_(cropped).jpg",
+  "file": "File:RobertDowneyJr-byPhilipRomano7 (cropped).jpg"
+ },
+ "eiga.hy-wsmith": {
+  "src": "photo-eiga.hy-wsmith.jpg",
+  "author": "TechCrunch",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TechCrunch_Disrupt_San_Francisco_2019_-_Day_1_(48834070763).jpg",
+  "file": "File:TechCrunch Disrupt San Francisco 2019 - Day 1 (48834070763).jpg"
+ },
+ "eiga.hy-schwarzenegger": {
+  "src": "photo-eiga.hy-schwarzenegger.jpg",
+  "author": "DHSgov",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Arnold_2025.jpg",
+  "file": "File:Arnold 2025.jpg"
+ },
+ "eiga.hy-stallone": {
+  "src": "photo-eiga.hy-stallone.jpg",
+  "author": "The White House",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:P20251206DT-0472_(cropped;_Sylvester_Stallone).jpg",
+  "file": "File:P20251206DT-0472 (cropped; Sylvester Stallone).jpg"
+ },
+ "eiga.hy-culkin": {
+  "src": "photo-eiga.hy-culkin.jpg",
+  "author": "Kevin Paul",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Macaulay_Culkin_-_Home_Alone_35th.jpg",
+  "file": "File:Macaulay Culkin - Home Alone 35th.jpg"
+ },
+ "eiga.hy-gadot": {
+  "src": "photo-eiga.hy-gadot.jpg",
+  "author": "Rogue Artists",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gal_Gadot_for_Revlon_(cropped).jpg",
+  "file": "File:Gal Gadot for Revlon (cropped).jpg"
+ },
+ "eiga.hy-jwatanabe": {
+  "src": "photo-eiga.hy-jwatanabe.jpg",
+  "author": "在ロサンゼルス日本国総領事館 Consulate-General of Japan in Los Angeles",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ken_Watanabe_20220615.jpg",
+  "file": "File:Ken Watanabe 20220615.jpg"
+ },
+ "eiga.hy-jfukuyama": {
+  "src": "photo-eiga.hy-jfukuyama.jpg",
+  "author": "Pagan Tsai",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fukuyama_Masaharu_in_Taipei,_2013_cropped_2.jpg",
+  "file": "File:Fukuyama Masaharu in Taipei, 2013 cropped 2.jpg"
+ },
+ "eiga.hy-jhashimoto": {
+  "src": "photo-eiga.hy-jhashimoto.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hashimoto_Kanna_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2017_(39304102215)_(cropped).jpg",
+  "file": "File:Hashimoto Kanna at Opening Ceremony of the Tokyo International Film Festival 2017 (39304102215) (cropped).jpg"
+ },
+ "eiga.hy-monroe": {
+  "src": "photo-eiga.hy-monroe.jpg",
+  "author": "Studio publicity still",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Marilyn_Monroe,_Photoplay_1953.jpg",
+  "file": "File:Marilyn Monroe, Photoplay 1953.jpg"
+ },
+ "eiga.hy-kelly": {
+  "src": "photo-eiga.hy-kelly.jpg",
+  "author": "Metro-Goldwyn-Mayer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gene_kelly.jpg",
+  "file": "File:Gene kelly.jpg"
+ },
+ "eiga.hy-stone": {
+  "src": "photo-eiga.hy-stone.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Emma_Stone_at_the_2025_Venice_Film_Festival-6313_(cropped).jpg",
+  "file": "File:Emma Stone at the 2025 Venice Film Festival-6313 (cropped).jpg"
+ },
+ "eiga.hy-gosling": {
+  "src": "photo-eiga.hy-gosling.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:GoslingBFI081223_(22_of_30)_(53388157347)_(cropped).jpg",
+  "file": "File:GoslingBFI081223 (22 of 30) (53388157347) (cropped).jpg"
+ },
+ "eiga.hy-robbie": {
+  "src": "photo-eiga.hy-robbie.jpg",
+  "author": "Ondine Goat",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Margot_Robbie_at_the_Paris_premiere_of_%22Wuthering_Heights%22.jpg",
+  "file": "File:Margot Robbie at the Paris premiere of \"Wuthering Heights\".jpg"
+ },
+ "eiga.hy-jackman": {
+  "src": "photo-eiga.hy-jackman.jpg",
+  "author": "Bryan Berlin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hugh_Jackman_Is_This_Thing_On-68_(cropped).jpg",
+  "file": "File:Hugh Jackman Is This Thing On-68 (cropped).jpg"
+ },
+ "eiga.hy-streep": {
+  "src": "photo-eiga.hy-streep.jpg",
+  "author": "PBS TV",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Meryl_Streep_%22Uncommon_Women_and_Others%22_(1978_PBS_press_photo).jpg",
+  "file": "File:Meryl Streep \"Uncommon Women and Others\" (1978 PBS press photo).jpg"
+ },
+ "eiga.hy-zendaya": {
+  "src": "photo-eiga.hy-zendaya.jpg",
+  "author": "PhilipRomano",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zendaya-byPhilipRomano.jpg",
+  "file": "File:Zendaya-byPhilipRomano.jpg"
+ },
+ "eiga.hy-chalamet": {
+  "src": "photo-eiga.hy-chalamet.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Timoth%C3%A9e_Chalamet-63482_(cropped).jpg",
+  "file": "File:Timothée Chalamet-63482 (cropped).jpg"
+ },
+ "eiga.hy-hamill": {
+  "src": "photo-eiga.hy-hamill.jpg",
+  "author": "Gage Skidmore",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mark_Hamill_by_Gage_Skidmore_4.jpg",
+  "file": "File:Mark Hamill by Gage Skidmore 4.jpg"
+ },
+ "eiga.hy-fox": {
+  "src": "photo-eiga.hy-fox.jpg",
+  "author": "Chuck Kennedy (Pete for America)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Michael_J_Fox_2020.jpg",
+  "file": "File:Michael J Fox 2020.jpg"
+ },
+ "eiga.hy-evans": {
+  "src": "photo-eiga.hy-evans.jpg",
+  "author": "Sara Komatsu",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chris_Evans_at_the_2025_Toronto_International_Film_Festival_(cropped).jpg",
+  "file": "File:Chris Evans at the 2025 Toronto International Film Festival (cropped).jpg"
+ },
+ "eiga.hy-peck": {
+  "src": "photo-eiga.hy-peck.jpg",
+  "author": "Metro-Goldwyn-Mayer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Peck_The_Valley_of_Decision.jpg",
+  "file": "File:Peck The Valley of Decision.jpg"
+ },
+ "eiga.hy-lee": {
+  "src": "photo-eiga.hy-lee.jpg",
+  "author": "National General Pictures",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bruce_Lee_as_Chen_Zhen_(4x5_cropped).jpg",
+  "file": "File:Bruce Lee as Chen Zhen (4x5 cropped).jpg"
+ },
+ "eiga.hy-mckellen": {
+  "src": "photo-eiga.hy-mckellen.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:McKellenRichmnd040219-5_(46275370484)_(cropped).jpg",
+  "file": "File:McKellenRichmnd040219-5 (46275370484) (cropped).jpg"
+ },
+ "eiga.hy-smith": {
+  "src": "photo-eiga.hy-smith.jpg",
+  "author": "N/A studio",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Maggie_Smith_-_Vintage_(trim).jpg",
+  "file": "File:Maggie Smith - Vintage (trim).jpg"
+ },
+ "eiga.hy-hathaway": {
+  "src": "photo-eiga.hy-hathaway.jpg",
+  "author": "Ministry of culture, sports and Tourism- Lee Jeong-woo",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Anne_Hathaway-_Press_conference_for_the_film_%22The_Devil_Wears_Prada_2%22_-_55194764955_(cropped).jpg",
+  "file": "File:Anne Hathaway- Press conference for the film \"The Devil Wears Prada 2\" - 55194764955 (cropped).jpg"
+ },
+ "eiga.hy-roberts": {
+  "src": "photo-eiga.hy-roberts.jpg",
+  "author": "Colleen Sturtevant",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Julia_Roberts_2025.jpg",
+  "file": "File:Julia Roberts 2025.jpg"
+ },
+ "eiga.hy-bullock": {
+  "src": "photo-eiga.hy-bullock.jpg",
+  "author": "Kevin Paul",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sandra_Bullock_at_The_Egyptian_Theatre_2024.jpg",
+  "file": "File:Sandra Bullock at The Egyptian Theatre 2024.jpg"
+ },
+ "eiga.hy-chow": {
+  "src": "photo-eiga.hy-chow.jpg",
+  "author": "Kit Liew",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Stephen_Chow,_2008_(cropped).JPG",
+  "file": "File:Stephen Chow, 2008 (cropped).JPG"
+ },
+ "eiga.hy-atkinson": {
+  "src": "photo-eiga.hy-atkinson.jpg",
+  "author": "Eva Rinaldi",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Johnny_English_Reborn_Movie_Premiere_Rowan_Atkinson_(6111701042).jpg",
+  "file": "File:Johnny English Reborn Movie Premiere Rowan Atkinson (6111701042).jpg"
+ },
+ "eiga.hy-jbaisho": {
+  "src": "photo-eiga.hy-jbaisho.jpg",
+  "author": "桃園書房",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shosetsu-Club-1962-March-1.jpg",
+  "file": "File:Shosetsu-Club-1962-March-1.jpg"
+ },
+ "eiga.hy-jkiki": {
+  "src": "photo-eiga.hy-jkiki.jpg",
+  "author": "Andriy Makukha (Amakuha)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:OIFF_2015-07-18_125524_-_Kirin_Kiki.jpg",
+  "file": "File:OIFF 2015-07-18 125524 - Kirin Kiki.jpg"
+ },
+ "eiga.hy-jnishida": {
+  "src": "photo-eiga.hy-jnishida.jpg",
+  "author": "文部科学省",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toshiyuki_Nishida_cropped_3_Toshiyuki_Nishida_20180511.jpg",
+  "file": "File:Toshiyuki Nishida cropped 3 Toshiyuki Nishida 20180511.jpg"
+ },
+ "eiga.hy-jsuda": {
+  "src": "photo-eiga.hy-jsuda.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Suda_Masaki_from_%22Sunset_Sunrise%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2024_(54576992127).jpg",
+  "file": "File:Suda Masaki from \"Sunset Sunrise\" at Red Carpet of the Tokyo International Film Festival 2024 (54576992127).jpg"
+ },
+ "eiga.hy-jarimura": {
+  "src": "photo-eiga.hy-jarimura.jpg",
+  "author": "K-POPIT 케이팝잇",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kentaro_Sakaguchi_%26_Kasumi_Arimura_at_2024_the_Busan_International_Film_Festival_(BIFF)_12.jpg",
+  "file": "File:Kentaro Sakaguchi & Kasumi Arimura at 2024 the Busan International Film Festival (BIFF) 12.jpg"
+ },
+ "eiga.hy-jabe": {
+  "src": "photo-eiga.hy-jabe.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Abe_Hiroshi_from_%22Legend_of_the_Demon_Cat%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2017_(25332258907).jpg",
+  "file": "File:Abe Hiroshi from \"Legend of the Demon Cat\" at Opening Ceremony of the Tokyo International Film Festival 2017 (25332258907).jpg"
+ },
+ "eiga.hy-jhamabe": {
+  "src": "photo-eiga.hy-jhamabe.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hamabe_Minami_from_%22Godzilla_Minus_One%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2023_(53347905526)_(cropped).jpg",
+  "file": "File:Hamabe Minami from \"Godzilla Minus One\" at Red Carpet of the Tokyo International Film Festival 2023 (53347905526) (cropped).jpg"
+ },
+ "eiga.hy-jtsumabuki": {
+  "src": "photo-eiga.hy-jtsumabuki.jpg",
+  "author": "Georges Biard",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Satoshi_Tsumabuki_Cannes_2015.jpg",
+  "file": "File:Satoshi Tsumabuki Cannes 2015.jpg"
+ },
+ "eiga.hy-jyamazaki": {
+  "src": "photo-eiga.hy-jyamazaki.jpg",
+  "author": "Girlmaking",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kingdom%2BSingapore%2BPremiere%2BPress%2BConference%2Bcaagvhp5Gwax.jpg",
+  "file": "File:Kingdom+Singapore+Premiere+Press+Conference+caagvhp5Gwax.jpg"
+ },
+ "eiga.hy-jnozawa": {
+  "src": "photo-eiga.hy-jnozawa.jpg",
+  "author": "Unknown Author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E9%87%8E%E6%B2%A2%E9%9B%85%E5%AD%90.png",
+  "file": "File:野沢雅子.png"
+ },
+ "eiga.hy-jtanakamayumi": {
+  "src": "photo-eiga.hy-jtanakamayumi.jpg",
+  "author": "Airman 1st Class Natalie Doan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mayumi_Tanaka_2023.jpg",
+  "file": "File:Mayumi Tanaka 2023.jpg"
+ },
+ "eiga.hy-jhanae": {
+  "src": "photo-eiga.hy-jhanae.jpg",
+  "author": "Gage Skidmore",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Natsuki_Hanae_by_Gage_Skidmore.jpg",
+  "file": "File:Natsuki Hanae by Gage Skidmore.jpg"
+ },
+ "eiga.hy-freeman": {
+  "src": "photo-eiga.hy-freeman.jpg",
+  "author": "U.S. Secretary of Defense",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Morgan_Freeman_at_The_Pentagon_on_2_August_2023_-_230802-D-PM193-3363_(cropped).jpg",
+  "file": "File:Morgan Freeman at The Pentagon on 2 August 2023 - 230802-D-PM193-3363 (cropped).jpg"
+ },
+ "eiga.hy-connery": {
+  "src": "photo-eiga.hy-connery.jpg",
+  "author": "Stuart Crawford at https://www.flickr.com/photos/potatojunki…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SeanConneryJune08.jpg",
+  "file": "File:SeanConneryJune08.jpg"
+ },
+ "eiga.hy-garland": {
+  "src": "photo-eiga.hy-garland.jpg",
+  "author": "Eric Carpenter for en:Metro-Goldwyn-Mayer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Judy_Garland_publicity_photo.png",
+  "file": "File:Judy Garland publicity photo.png"
+ },
+ "eiga.hy-murphy": {
+  "src": "photo-eiga.hy-murphy.jpg",
+  "author": "David Shankbone",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eddie_Murphy_Tribeca_Shankbone_2010_NYC_(2).jpg",
+  "file": "File:Eddie Murphy Tribeca Shankbone 2010 NYC (2).jpg"
+ },
+ "eiga.hy-hgrant": {
+  "src": "photo-eiga.hy-hgrant.jpg",
+  "author": "Kurt Kulac",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hugh_Grant_in_2014.jpg",
+  "file": "File:Hugh Grant in 2014.jpg"
+ },
+ "eiga.hy-fisher": {
+  "src": "photo-eiga.hy-fisher.jpg",
+  "author": "By Riccardo Ghilardi - Crop of File:Actress Carrie Fisher © …",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carrie_Fisher_2013-a_straightened.jpg",
+  "file": "File:Carrie Fisher 2013-a straightened.jpg"
+ },
+ "eiga.hy-washington": {
+  "src": "photo-eiga.hy-washington.jpg",
+  "author": "Gabriel Hutchinson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Denzel_Washington_at_the_2025_Cannes_Film_Festival.jpg",
+  "file": "File:Denzel Washington at the 2025 Cannes Film Festival.jpg"
+ },
+ "eiga.hy-jyoshizawa": {
+  "src": "photo-eiga.hy-jyoshizawa.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yoshizawa_Ryo_from_%22Family%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2023_(53348335033).jpg",
+  "file": "File:Yoshizawa Ryo from \"Family\" at Red Carpet of the Tokyo International Film Festival 2023 (53348335033).jpg"
+ },
+ "eiga.hy-jmiyazaki": {
+  "src": "photo-eiga.hy-jmiyazaki.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Miyazaki_Aoi_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2017_(40170393182).jpg",
+  "file": "File:Miyazaki Aoi at Opening Ceremony of the Tokyo International Film Festival 2017 (40170393182).jpg"
+ },
+ "eiga.hy-jyokohama": {
+  "src": "photo-eiga.hy-jyokohama.jpg",
+  "author": "マイナビニュース【エンタメ・ホビー】",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ryusei_Yokohama_20190704.jpg",
+  "file": "File:Ryusei Yokohama 20190704.jpg"
+ },
+ "eiga.hy-jkatsu": {
+  "src": "photo-eiga.hy-jkatsu.jpg",
+  "author": "Kokusai Joho Sha Publishing Co., Ltd.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%8B%9D%E6%96%B0%E5%A4%AA%E9%83%8E_Shintaro_Katsu_(1955).jpg",
+  "file": "File:勝新太郎 Shintaro Katsu (1955).jpg"
+ },
+ "eiga.hy-bogart": {
+  "src": "photo-eiga.hy-bogart.jpg",
+  "author": "Warner Bros.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Humphrey_Bogart_High_Sierra_Still.jpg",
+  "file": "File:Humphrey Bogart High Sierra Still.jpg"
+ },
+ "eiga.hy-dean": {
+  "src": "photo-eiga.hy-dean.jpg",
+  "author": "movie studio",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:James_Dean_-_publicity_-_early.JPG",
+  "file": "File:James Dean - publicity - early.JPG"
+ },
+ "eiga.hy-astaire": {
+  "src": "photo-eiga.hy-astaire.jpg",
+  "author": "Studio publicity still",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fred_Astaire.png",
+  "file": "File:Fred Astaire.png"
+ },
+ "eiga.hy-temple": {
+  "src": "photo-eiga.hy-temple.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shirleytemple.jpg",
+  "file": "File:Shirleytemple.jpg"
+ },
+ "eiga.hy-grant": {
+  "src": "photo-eiga.hy-grant.jpg",
+  "author": "Grant,_Cary_(Suspicion)_01.jpg: RKO publicity photographer. …",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Grant,_Cary_(Suspicion)_01_Crisco_edit.jpg",
+  "file": "File:Grant, Cary (Suspicion) 01 Crisco edit.jpg"
+ },
+ "eiga.hy-leigh": {
+  "src": "photo-eiga.hy-leigh.jpg",
+  "author": "Fawcett Publications",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Vivien_Leigh_Scarlet.jpg",
+  "file": "File:Vivien Leigh Scarlet.jpg"
+ },
+ "eiga.hy-gable": {
+  "src": "photo-eiga.hy-gable.jpg",
+  "author": "Studio publicity still",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gable,_Clark_01.jpg",
+  "file": "File:Gable, Clark 01.jpg"
+ },
+ "eiga.hy-deneuve": {
+  "src": "photo-eiga.hy-deneuve.jpg",
+  "author": "Photo Londi",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Catherine_Deneuve_(1966).png",
+  "file": "File:Catherine Deneuve (1966).png"
+ },
+ "eiga.hy-gabin": {
+  "src": "photo-eiga.hy-gabin.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jean_Gabin,_1904-1976_(cropped).jpg",
+  "file": "File:Jean Gabin, 1904-1976 (cropped).jpg"
+ },
+ "eiga.hy-benigni": {
+  "src": "photo-eiga.hy-benigni.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roberto_Benigni-5274.jpg",
+  "file": "File:Roberto Benigni-5274.jpg"
+ },
+ "eiga.hy-sy": {
+  "src": "photo-eiga.hy-sy.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Omar_Sy_(2020).jpg",
+  "file": "File:Omar Sy (2020).jpg"
+ },
+ "eiga.hy-mikkelsen": {
+  "src": "photo-eiga.hy-mikkelsen.jpg",
+  "author": "LucaFazPhoto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mads_Mikkelsen_at_82nd_Venice_International_Film_Festival_(cropped2).jpg",
+  "file": "File:Mads Mikkelsen at 82nd Venice International Film Festival (cropped2).jpg"
+ },
+ "eiga.hy-khan": {
+  "src": "photo-eiga.hy-khan.jpg",
+  "author": "Bollywood Hungama",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AamirKhan.jpg",
+  "file": "File:AamirKhan.jpg"
+ },
+ "eiga.hy-rajini": {
+  "src": "photo-eiga.hy-rajini.jpg",
+  "author": "Dani Charles, Silverscreen Media Inc. (https://silverscreen.…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rajinikanth_at_the_Inauguration_of_MGR_Statue.jpg",
+  "file": "File:Rajinikanth at the Inauguration of MGR Statue.jpg"
+ },
+ "eiga.hy-yeoh": {
+  "src": "photo-eiga.hy-yeoh.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Michelle_Yeoh-2268.jpg",
+  "file": "File:Michelle Yeoh-2268.jpg"
+ },
+ "eiga.hy-zhang": {
+  "src": "photo-eiga.hy-zhang.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zhang_Ziyi-63357.jpg",
+  "file": "File:Zhang Ziyi-63357.jpg"
+ },
+ "eiga.hy-newman": {
+  "src": "photo-eiga.hy-newman.jpg",
+  "author": "MGM",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Paul_Newman_1958.jpg",
+  "file": "File:Paul Newman 1958.jpg"
+ },
+ "eiga.hy-vandyke": {
+  "src": "photo-eiga.hy-vandyke.jpg",
+  "author": "Gage Skidmore from Surprise, AZ, United States of America",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dick_Van_Dyke_May_2024.jpg",
+  "file": "File:Dick Van Dyke May 2024.jpg"
+ },
+ "eiga.hy-jryu": {
+  "src": "photo-eiga.hy-jryu.jpg",
+  "author": "東京朝日新聞社・大阪朝日新聞社Tokyo Asahi Shinbun & Osaka Asahi Shinbun.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chishu_Ryu_1940_IMG_20201231_0001_(grayscale).jpg",
+  "file": "File:Chishu Ryu 1940 IMG 20201231 0001 (grayscale).jpg"
+ },
+ "eiga.hy-jhara": {
+  "src": "photo-eiga.hy-jhara.jpg",
+  "author": "Unknown photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gaho-Gendaishi-Volume3-1.png",
+  "file": "File:Gaho-Gendaishi-Volume3-1.png"
+ },
+ "eiga.hy-jtakamine": {
+  "src": "photo-eiga.hy-jtakamine.jpg",
+  "author": "新東宝 / Shin Tōhō",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hideko_Takamine.jpg",
+  "file": "File:Hideko Takamine.jpg"
+ },
+ "eiga.hy-jshimura": {
+  "src": "photo-eiga.hy-jshimura.jpg",
+  "author": "Unknown photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shin-Eiga-1947-June-1.jpg",
+  "file": "File:Shin-Eiga-1947-June-1.jpg"
+ },
+ "eiga.hy-jsanada": {
+  "src": "photo-eiga.hy-jsanada.jpg",
+  "author": "Embassy of the United States in Japan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiroyuki_Sanada_20240220.jpg",
+  "file": "File:Hiroyuki Sanada 20240220.jpg"
+ },
+ "eiga.hy-jsakai": {
+  "src": "photo-eiga.hy-jsakai.jpg",
+  "author": "総務省",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Masato_Sakai_International_Drama_Festival_in_Tokyo_2014_2.png",
+  "file": "File:Masato Sakai International Drama Festival in Tokyo 2014 2.png"
+ },
+ "eiga.hy-jnomura": {
+  "src": "photo-eiga.hy-jnomura.jpg",
+  "author": "文化庁",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mansai_Nomura_(original).jpg",
+  "file": "File:Mansai Nomura (original).jpg"
+ },
+ "eiga.hy-jaoi": {
+  "src": "photo-eiga.hy-jaoi.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aoi_Yu_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2017_(40203519371)_(cropped).jpg",
+  "file": "File:Aoi Yu at Opening Ceremony of the Tokyo International Film Festival 2017 (40203519371) (cropped).jpg"
+ },
+ "eiga.hy-jueno": {
+  "src": "photo-eiga.hy-jueno.jpg",
+  "author": "Kinocine",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Juri_Ueno_in_PIFF_2008.jpg",
+  "file": "File:Juri Ueno in PIFF 2008.jpg"
+ },
+ "eiga.hy-jyoshioka": {
+  "src": "photo-eiga.hy-jyoshioka.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yoshioka_Hidetaka_from_%22Tora-san,_Wish_You_Were_Here%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2019_(49013472433).jpg",
+  "file": "File:Yoshioka Hidetaka from \"Tora-san, Wish You Were Here\" at Opening Ceremony of the Tokyo International Film Festival 2019 (49013472433).jpg"
+ },
+ "eiga.hy-jninomiya": {
+  "src": "photo-eiga.hy-jninomiya.jpg",
+  "author": "Kacy Bao",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kazunari_Ninomiya_of_Exit_8_at_2025_Cannes_Red_Carpet_(cropped).jpg",
+  "file": "File:Kazunari Ninomiya of Exit 8 at 2025 Cannes Red Carpet (cropped).jpg"
+ },
+ "eiga.hy-jshimamoto": {
+  "src": "photo-eiga.hy-jshimamoto.jpg",
+  "author": "User:Nihonjoe",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Sumi_Shimamoto_at_Sakura-Con_2007_Crop.png",
+  "file": "File:Sumi Shimamoto at Sakura-Con 2007 Crop.png"
+ },
+ "eiga.hy-jyamadera": {
+  "src": "photo-eiga.hy-jyamadera.jpg",
+  "author": "テリー土屋のくるまの話【公式】",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yamadera_Koichi.png",
+  "file": "File:Yamadera Koichi.png"
+ },
+ "eiga.hy-bergman": {
+  "src": "photo-eiga.hy-bergman.jpg",
+  "author": "New York Sunday News",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ingrid_Bergman_in_1946.jpg",
+  "file": "File:Ingrid Bergman in 1946.jpg"
+ },
+ "eiga.hy-taylor": {
+  "src": "photo-eiga.hy-taylor.jpg",
+  "author": "Studio publicity still",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Taylor,_Elizabeth_posed.jpg",
+  "file": "File:Taylor, Elizabeth posed.jpg"
+ },
+ "eiga.hy-loren": {
+  "src": "photo-eiga.hy-loren.jpg",
+  "author": "United Artists",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sophia_Loren_(1957).jpg",
+  "file": "File:Sophia Loren (1957).jpg"
+ },
+ "eiga.hy-delon": {
+  "src": "photo-eiga.hy-delon.jpg",
+  "author": "Reporters Associati & Archivi\\Mondadori",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Alain_Delon_1961.jpg",
+  "file": "File:Alain Delon 1961.jpg"
+ },
+ "eiga.hy-wayne": {
+  "src": "photo-eiga.hy-wayne.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:John_Wayne_Publicity_Photo_1952.jpg",
+  "file": "File:John Wayne Publicity Photo 1952.jpg"
+ },
+ "eiga.hy-heston": {
+  "src": "photo-eiga.hy-heston.jpg",
+  "author": "20th Century Fox studios",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Charlton_Heston_-_1953.jpg",
+  "file": "File:Charlton Heston - 1953.jpg"
+ },
+ "eiga.hy-jkitano": {
+  "src": "photo-eiga.hy-jkitano.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Takeshi_Kitano_2017.jpg",
+  "file": "File:Takeshi Kitano 2017.jpg"
+ },
+ "eiga.hy-jkagawa": {
+  "src": "photo-eiga.hy-jkagawa.jpg",
+  "author": "Ogiyoshisan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ichikawa_Chusha_IX_Teruyuki_Kagawa_IMG_3004r_20160109.JPG",
+  "file": "File:Ichikawa Chusha IX Teruyuki Kagawa IMG 3004r 20160109.JPG"
+ },
+ "eiga.hy-jhigashide": {
+  "src": "photo-eiga.hy-jhigashide.jpg",
+  "author": "Dick Thomas Johnson from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Higashide_Masahiro_from_%22Satoshi-_A_Move_for_Tomorrow%22_at_Opening_Ceremony_of_the_Tokyo_International_Film_Festival_2016_(32831024483).jpg",
+  "file": "File:Higashide Masahiro from \"Satoshi- A Move for Tomorrow\" at Opening Ceremony of the Tokyo International Film Festival 2016 (32831024483).jpg"
+ },
+ "eiga.gy-eigakan": {
+  "src": "photo-eiga.gy-eigakan.jpg",
+  "author": "Tarquin Binary",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Screen_on_the_green_1.jpg",
+  "file": "File:Screen on the green 1.jpg"
+ },
+ "eiga.gy-poster": {
+  "src": "photo-eiga.gy-poster.jpg",
+  "author": "Toulouse-Lautrec, Henri de",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lautrec_ambassadeurs,_aristide_bruant_(poster)_1892.jpg",
+  "file": "File:Lautrec ambassadeurs, aristide bruant (poster) 1892.jpg"
+ },
+ "eiga.gy-eirin": {
+  "src": "photo-eiga.gy-eirin.jpg",
+  "author": "映画倫理委員会 (Film Classification and Rating Organization of Japa…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Eirin_logo.svg",
+  "file": "File:Eirin logo.svg"
+ },
+ "eiga.gy-satsueijo": {
+  "src": "photo-eiga.gy-satsueijo.jpg",
+  "author": "Todd Dwyer",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Office_View_of_the_Warner_Bros_Studio_Lot_-_panoramio.jpg",
+  "file": "File:Office View of the Warner Bros Studio Lot - panoramio.jpg"
+ },
+ "eiga.gy-eishagishi": {
+  "src": "photo-eiga.gy-eishagishi.jpg",
+  "author": "Asturio Cantabrio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matsunaga_Bunko_projectors_ac_(5).jpg",
+  "file": "File:Matsunaga Bunko projectors ac (5).jpg"
+ },
+ "eiga.gy-postpro": {
+  "src": "photo-eiga.gy-postpro.jpg",
+  "author": "Channel R at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Linear_suite.jpg",
+  "file": "File:Linear suite.jpg"
+ },
+ "eiga.gy-jishueiga": {
+  "src": "photo-eiga.gy-jishueiga.jpg",
+  "author": "Federico Gatto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:St%C3%A9phane_Briz%C3%A9_in_Buenos_Aires_in_2019.jpg",
+  "file": "File:Stéphane Brizé in Buenos Aires in 2019.jpg"
+ },
+ "eiga.gy-indie": {
+  "src": "photo-eiga.gy-indie.jpg",
+  "author": "Federico Gatto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:St%C3%A9phane_Briz%C3%A9_in_Buenos_Aires_in_2019.jpg",
+  "file": "File:Stéphane Brizé in Buenos Aires in 2019.jpg"
+ },
+ "eiga.gy-seion": {
+  "src": "photo-eiga.gy-seion.jpg",
+  "author": "Audio Mix House from United States",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:80-channel_Solid_State_Logic_(SSL)_XL_9000_K_Series_Console_at_Audio_Mix_House,_Studio_B_(13430494534).jpg",
+  "file": "File:80-channel Solid State Logic (SSL) XL 9000 K Series Console at Audio Mix House, Studio B (13430494534).jpg"
  }
 };

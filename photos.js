@@ -16930,5 +16930,11093 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
   "page": "https://commons.wikimedia.org/wiki/File:LIGO_measurement_of_gravitational_waves.svg",
   "file": "File:LIGO measurement of gravitational waves.svg"
+ },
+ "hanaya.hr-sakura": {
+  "src": "photo-hanaya.hr-sakura.jpg",
+  "author": "TANAKA Juuyoh (田中十洋)",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sakura_and_Moss_Pink_-_%E6%A1%9C(%E3%81%95%E3%81%8F%E3%82%89)%E3%81%A8%E8%8A%9D%E6%A1%9C(%E3%81%97%E3%81%B0%E3%81%96%E3%81%8F%E3%82%89).jpg",
+  "file": "File:Sakura and Moss Pink - 桜(さくら)と芝桜(しばざくら).jpg"
+ },
+ "hanaya.hr-tulip": {
+  "src": "photo-hanaya.hr-tulip.jpg",
+  "author": "Arashiyama",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_and_Tulips_4.jpg",
+  "file": "File:Mount Fuji and Tulips 4.jpg"
+ },
+ "hanaya.hr-tanpopo": {
+  "src": "photo-hanaya.hr-tanpopo.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:L%C3%B6wenzahn_uhf.JPG",
+  "file": "File:Löwenzahn uhf.JPG"
+ },
+ "hanaya.hr-nanohana": {
+  "src": "photo-hanaya.hr-nanohana.jpg",
+  "author": "MaedaAkihiko",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brassica-napus_Overall-picture.jpg",
+  "file": "File:Brassica-napus Overall-picture.jpg"
+ },
+ "hanaya.hr-ume": {
+  "src": "photo-hanaya.hr-ume.jpg",
+  "author": "Kakidai",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Prunus_mume.JPG",
+  "file": "File:Prunus mume.JPG"
+ },
+ "hanaya.hr-momo": {
+  "src": "photo-hanaya.hr-momo.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Illustration_Prunus_persica0.jpg",
+  "file": "File:Illustration Prunus persica0.jpg"
+ },
+ "hanaya.hr-tsubomi": {
+  "src": "photo-hanaya.hr-tsubomi.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:LotusBud0048b.jpg",
+  "file": "File:LotusBud0048b.jpg"
+ },
+ "hanaya.hr-pansy": {
+  "src": "photo-hanaya.hr-pansy.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Pansy_aka.jpg",
+  "file": "File:Pansy aka.jpg"
+ },
+ "hanaya.hr-gerbera": {
+  "src": "photo-hanaya.hr-gerbera.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_gabera4051.jpg",
+  "file": "File:W gabera4051.jpg"
+ },
+ "hanaya.hr-sweetpea": {
+  "src": "photo-hanaya.hr-sweetpea.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lathyrus_odoratus4.jpg",
+  "file": "File:Lathyrus odoratus4.jpg"
+ },
+ "hanaya.hr-freesia": {
+  "src": "photo-hanaya.hr-freesia.jpg",
+  "author": "Makoto hasuma",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Freesia_refracta.jpg",
+  "file": "File:Freesia refracta.jpg"
+ },
+ "hanaya.hr-fuji": {
+  "src": "photo-hanaya.hr-fuji.jpg",
+  "author": "Raul654",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Wisteria_floribunda5.jpg",
+  "file": "File:Wisteria floribunda5.jpg"
+ },
+ "hanaya.hr-tsutsuji": {
+  "src": "photo-hanaya.hr-tsutsuji.jpg",
+  "author": "Sea of Japan",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Azalea_of_Maizuru.jpg",
+  "file": "File:Azalea of Maizuru.jpg"
+ },
+ "hanaya.hr-hyacinth": {
+  "src": "photo-hanaya.hr-hyacinth.jpg",
+  "author": "Nesnad",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hyacinthus_orientalis_-_Kanagawa_-_2026_March_18.jpeg",
+  "file": "File:Hyacinthus orientalis - Kanagawa - 2026 March 18.jpeg"
+ },
+ "hanaya.hr-kaika": {
+  "src": "photo-hanaya.hr-kaika.jpg",
+  "author": "solarissmoke",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Water_lily_time-lapse.ogv",
+  "file": "File:Water lily time-lapse.ogv"
+ },
+ "hanaya.hr-sakurazensen": {
+  "src": "photo-hanaya.hr-sakurazensen.jpg",
+  "author": "No machine-readable author provided. Pqks758 assumed (based …",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sakura_Zensen.jpg",
+  "file": "File:Sakura Zensen.jpg"
+ },
+ "hanaya.hr-ranunculus": {
+  "src": "photo-hanaya.hr-ranunculus.jpg",
+  "author": "Jörg Hempel",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ranunculus_repens_LC0036.jpg",
+  "file": "File:Ranunculus repens LC0036.jpg"
+ },
+ "hanaya.hr-nemophila": {
+  "src": "photo-hanaya.hr-nemophila.jpg",
+  "author": "Peter D. Tillman",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Baby_blue-eyes,_Calf_Canyon.jpg",
+  "file": "File:Baby blue-eyes, Calf Canyon.jpg"
+ },
+ "hanaya.hr-anemone": {
+  "src": "photo-hanaya.hr-anemone.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_anemone4031.jpg",
+  "file": "File:W anemone4031.jpg"
+ },
+ "hanaya.hr-someiyoshino": {
+  "src": "photo-hanaya.hr-someiyoshino.jpg",
+  "author": "松岡明芳",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2020-04-07_Prunus_%C3%97_yedoensis_Tambasasayama,Hyogo(%E4%B8%B9%E6%B3%A2%E7%AF%A0%E5%B1%B1%E5%B8%82%E7%AF%A0%E5%B1%B1%E5%B7%9D%E3%81%AE%E3%82%BD%E3%83%A1%E3%82%A4%E3%83%A8%E3%82%B7%E3%83%8E)DSCF2986%E2%98%86%E5%BD%A1.jpg",
+  "file": "File:2020-04-07 Prunus × yedoensis Tambasasayama,Hyogo(丹波篠山市篠山川のソメイヨシノ)DSCF2986☆彡.jpg"
+ },
+ "hanaya.hr-yaezakura": {
+  "src": "photo-hanaya.hr-yaezakura.jpg",
+  "author": "SLIMHANNYA",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Flower_Association_of_Japan_1.jpg",
+  "file": "File:The Flower Association of Japan 1.jpg"
+ },
+ "hanaya.hr-shidarezakura": {
+  "src": "photo-hanaya.hr-shidarezakura.jpg",
+  "author": "京浜にけ at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Miharu_Miharu-Takizakura_Front_1.jpg",
+  "file": "File:Miharu Miharu-Takizakura Front 1.jpg"
+ },
+ "hanaya.hr-lilac": {
+  "src": "photo-hanaya.hr-lilac.jpg",
+  "author": "Jjron",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lilac_Flower%26Leaves,_SC,_Vic,_13.10.2007.jpg",
+  "file": "File:Lilac Flower&Leaves, SC, Vic, 13.10.2007.jpg"
+ },
+ "hanaya.hr-botan": {
+  "src": "photo-hanaya.hr-botan.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Paeonia_suffruticosa01_2048.jpg",
+  "file": "File:Paeonia suffruticosa01 2048.jpg"
+ },
+ "hanaya.hr-shakuyaku": {
+  "src": "photo-hanaya.hr-shakuyaku.jpg",
+  "author": "User:Charvex",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Paeonia_lactiflora_Pink_Hawaiian_Coral.jpg",
+  "file": "File:Paeonia lactiflora Pink Hawaiian Coral.jpg"
+ },
+ "hanaya.hr-kingyoso": {
+  "src": "photo-hanaya.hr-kingyoso.jpg",
+  "author": "Jim Evans",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Snapdragon_--_Antirrhinum_majus.jpg",
+  "file": "File:Snapdragon -- Antirrhinum majus.jpg"
+ },
+ "hanaya.hr-shibazakura": {
+  "src": "photo-hanaya.hr-shibazakura.jpg",
+  "author": "Paweł Michalik",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Phlox_subulata_flower.jpg",
+  "file": "File:Phlox subulata flower.jpg"
+ },
+ "hanaya.hr-haru7": {
+  "src": "photo-hanaya.hr-haru7.jpg",
+  "author": "Blue Lotus",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_seven_herbs.jpg",
+  "file": "File:The seven herbs.jpg"
+ },
+ "hanaya.hr-crocus": {
+  "src": "photo-hanaya.hr-crocus.jpg",
+  "author": "Benjamin Gimmel, BenHur",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fr%C3%BChlingsblumen_Krokus.jpg",
+  "file": "File:Frühlingsblumen Krokus.jpg"
+ },
+ "hanaya.hr-yagurumagiku": {
+  "src": "photo-hanaya.hr-yagurumagiku.jpg",
+  "author": "TeunSpaans",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:CentaureaCyanus-bloem-kl.jpg",
+  "file": "File:CentaureaCyanus-bloem-kl.jpg"
+ },
+ "hanaya.hr-azalea": {
+  "src": "photo-hanaya.hr-azalea.jpg",
+  "author": "F.Adler",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Azelea.JPG",
+  "file": "File:Azelea.JPG"
+ },
+ "hanaya.hr-shakunage": {
+  "src": "photo-hanaya.hr-shakunage.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_shakunage2031.jpg",
+  "file": "File:W shakunage2031.jpg"
+ },
+ "hanaya.hr-lupinus": {
+  "src": "photo-hanaya.hr-lupinus.jpg",
+  "author": "George Chernilevsky",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lupinus_polyphyllus_UA_2015_G5.jpg",
+  "file": "File:Lupinus polyphyllus UA 2015 G5.jpg"
+ },
+ "hanaya.hr-yamabuki": {
+  "src": "photo-hanaya.hr-yamabuki.jpg",
+  "author": "ignis",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kerria_japonica_001_JPN.jpg",
+  "file": "File:Kerria japonica 001 JPN.jpg"
+ },
+ "hanaya.hr-katakuri": {
+  "src": "photo-hanaya.hr-katakuri.jpg",
+  "author": "Kropsoq",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Erythronium_japonicum_2006_005.jpg",
+  "file": "File:Erythronium japonicum 2006 005.jpg"
+ },
+ "hanaya.hr-odamaki": {
+  "src": "photo-hanaya.hr-odamaki.jpg",
+  "author": "Qwert1234",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aquilegia_flabellata_var._pumila_5.JPG",
+  "file": "File:Aquilegia flabellata var. pumila 5.JPG"
+ },
+ "hanaya.hr-waxflower": {
+  "src": "photo-hanaya.hr-waxflower.jpg",
+  "author": "No machine-readable author provided. Eug assumed (based on c…",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Chamelaucium_uncinatum2.jpg",
+  "file": "File:Chamelaucium uncinatum2.jpg"
+ },
+ "hanaya.hr-miyakowasure": {
+  "src": "photo-hanaya.hr-miyakowasure.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gymnaster_savatieri1.jpg",
+  "file": "File:Gymnaster savatieri1.jpg"
+ },
+ "hanaya.hr-sakuraso": {
+  "src": "photo-hanaya.hr-sakuraso.jpg",
+  "author": "京浜にけ at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Saitama_Tajimagahara_Primula_Sieboldii_Primrose_Habitat_2.jpg",
+  "file": "File:Saitama Tajimagahara Primula Sieboldii Primrose Habitat 2.jpg"
+ },
+ "hanaya.hr-geranium": {
+  "src": "photo-hanaya.hr-geranium.jpg",
+  "author": "Laitche",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Rose_Geranium_-_cluster.jpg",
+  "file": "File:Rose Geranium - cluster.jpg"
+ },
+ "hanaya.hr-hanakaido": {
+  "src": "photo-hanaya.hr-hanakaido.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Malus_halliana3.jpg",
+  "file": "File:Malus halliana3.jpg"
+ },
+ "hanaya.hr-hanafubuki": {
+  "src": "photo-hanaya.hr-hanafubuki.jpg",
+  "author": "TANAKA Juuyoh (田中十洋)",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cherry_blossoms_-_Sakura_-_02_-_%E6%A1%9C.jpg",
+  "file": "File:Cherry blossoms - Sakura - 02 - 桜.jpg"
+ },
+ "hanaya.hr-hazakura": {
+  "src": "photo-hanaya.hr-hazakura.jpg",
+  "author": "白糸",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cherry_tree_with_early_leaves.JPG",
+  "file": "File:Cherry tree with early leaves.JPG"
+ },
+ "hanaya.hr-enishida": {
+  "src": "photo-hanaya.hr-enishida.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cytisus_scoparius3.jpg",
+  "file": "File:Cytisus scoparius3.jpg"
+ },
+ "hanaya.nt-himawari": {
+  "src": "photo-hanaya.nt-himawari.jpg",
+  "author": "Jakub Hałun",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20180729_1018_s%C5%82onecznik_4501_DxO.jpg",
+  "file": "File:20180729 1018 słonecznik 4501 DxO.jpg"
+ },
+ "hanaya.nt-yuri": {
+  "src": "photo-hanaya.nt-yuri.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0 FR",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Lilium_bulbiferum.jpg",
+  "file": "File:Lilium bulbiferum.jpg"
+ },
+ "hanaya.nt-hibiscus": {
+  "src": "photo-hanaya.nt-hibiscus.jpg",
+  "author": "Lestat (Jan Mehlich)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hibiskus_rosa-sinensis_-_Kwiat.JPG",
+  "file": "File:Hibiskus rosa-sinensis - Kwiat.JPG"
+ },
+ "hanaya.nt-tsuyu": {
+  "src": "photo-hanaya.nt-tsuyu.jpg",
+  "author": "Darkest tree This photo was taken with Canon PowerShot SX110…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Plum_rain_in_Shinjuku,_Tokyo.jpg",
+  "file": "File:Plum rain in Shinjuku, Tokyo.jpg"
+ },
+ "hanaya.nt-kikyo": {
+  "src": "photo-hanaya.nt-kikyo.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:130803_Tonomine_highland_Kamikawa_Hyogo_pref_Japan10bs5.jpg",
+  "file": "File:130803 Tonomine highland Kamikawa Hyogo pref Japan10bs5.jpg"
+ },
+ "hanaya.nt-eustoma": {
+  "src": "photo-hanaya.nt-eustoma.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eustoma_grandiflorum_purple_02.jpg",
+  "file": "File:Eustoma grandiflorum purple 02.jpg"
+ },
+ "hanaya.nt-salvia": {
+  "src": "photo-hanaya.nt-salvia.jpg",
+  "author": "Famartin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023-10-21_15_29_06_Scarlet_sage_flowers_along_Montague_Avenue_in_the_Mountainview_section_of_Ewing_Township,_Mercer_County,_New_Jersey.jpg",
+  "file": "File:2023-10-21 15 29 06 Scarlet sage flowers along Montague Avenue in the Mountainview section of Ewing Township, Mercer County, New Jersey.jpg"
+ },
+ "hanaya.nt-petunia": {
+  "src": "photo-hanaya.nt-petunia.jpg",
+  "author": "Yves6",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Petunia_hybrida_01.JPG",
+  "file": "File:Petunia hybrida 01.JPG"
+ },
+ "hanaya.nt-begonia": {
+  "src": "photo-hanaya.nt-begonia.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%99%E3%82%B4%E3%83%8B%E3%82%A22.jpg",
+  "file": "File:ベゴニア2.jpg"
+ },
+ "hanaya.nt-kuchinashi": {
+  "src": "photo-hanaya.nt-kuchinashi.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gardenia_jasminoides_in_Mount_Yagi_2008-06-13.jpg",
+  "file": "File:Gardenia jasminoides in Mount Yagi 2008-06-13.jpg"
+ },
+ "hanaya.nt-bougainvillea": {
+  "src": "photo-hanaya.nt-bougainvillea.jpg",
+  "author": "松岡明芳",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2013-07-18_My_An_Onsen_Resort_%E3%83%9F%E3%83%BC%E3%82%A2%E3%83%B3%E6%B8%A9%E6%B3%89_DSCF1299.jpg",
+  "file": "File:2013-07-18 My An Onsen Resort ミーアン温泉 DSCF1299.jpg"
+ },
+ "hanaya.nt-kakitsubata": {
+  "src": "photo-hanaya.nt-kakitsubata.jpg",
+  "author": "Dennis L. Lindwall",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kakitsubata1.jpg",
+  "file": "File:Kakitsubata1.jpg"
+ },
+ "hanaya.nt-gladiolus": {
+  "src": "photo-hanaya.nt-gladiolus.jpg",
+  "author": "Pharaoh Hound",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gladiolus_cultivar_Priscilla_2.jpg",
+  "file": "File:Gladiolus cultivar Priscilla 2.jpg"
+ },
+ "hanaya.nt-hyakunichiso": {
+  "src": "photo-hanaya.nt-hyakunichiso.jpg",
+  "author": "Judgefloro",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:6801jfUnidentified_Zinnia_Angelesfvf_19.JPG",
+  "file": "File:6801jfUnidentified Zinnia Angelesfvf 19.JPG"
+ },
+ "hanaya.nt-nichinichiso": {
+  "src": "photo-hanaya.nt-nichinichiso.jpg",
+  "author": "みっち",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nitinitisou.jpg",
+  "file": "File:Nitinitisou.jpg"
+ },
+ "hanaya.nt-portulaca": {
+  "src": "photo-hanaya.nt-portulaca.jpg",
+  "author": "Júlio Reis (Tintazul)",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Portulaca_oleracea_stems.jpg",
+  "file": "File:Portulaca oleracea stems.jpg"
+ },
+ "hanaya.nt-impatiens": {
+  "src": "photo-hanaya.nt-impatiens.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Impatiens_walleriana_-_blossom_(aka).jpg",
+  "file": "File:Impatiens walleriana - blossom (aka).jpg"
+ },
+ "hanaya.nt-sarusuberi": {
+  "src": "photo-hanaya.nt-sarusuberi.jpg",
+  "author": "Francisco Manuel Blanco (O.S.A.)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lagerstroemia_indica_Blanco1.207-cropped.jpg",
+  "file": "File:Lagerstroemia indica Blanco1.207-cropped.jpg"
+ },
+ "hanaya.nt-delphinium": {
+  "src": "photo-hanaya.nt-delphinium.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Delphinium_sp1.jpg",
+  "file": "File:Delphinium sp1.jpg"
+ },
+ "hanaya.nt-clematis": {
+  "src": "photo-hanaya.nt-clematis.jpg",
+  "author": "Jolly Janner",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Clematis_%27Nelly_Moser%27.JPG",
+  "file": "File:Clematis 'Nelly Moser'.JPG"
+ },
+ "hanaya.nt-jasmine": {
+  "src": "photo-hanaya.nt-jasmine.jpg",
+  "author": "Didier Descouens",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:(MHNT)_Jasminum_polyanthum_%E2%80%93_flowers_and_buds.jpg",
+  "file": "File:(MHNT) Jasminum polyanthum – flowers and buds.jpg"
+ },
+ "hanaya.nt-sennichiko": {
+  "src": "photo-hanaya.nt-sennichiko.jpg",
+  "author": "Kurt Stüber [1]",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gomphrena_globosa1.jpg",
+  "file": "File:Gomphrena globosa1.jpg"
+ },
+ "hanaya.nt-mukuge": {
+  "src": "photo-hanaya.nt-mukuge.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hibiscus_syriacus_2.jpg",
+  "file": "File:Hibiscus syriacus 2.jpg"
+ },
+ "hanaya.nt-fuyo": {
+  "src": "photo-hanaya.nt-fuyo.jpg",
+  "author": "Sphl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hibiscus_mutabilis.jpg",
+  "file": "File:Hibiscus mutabilis.jpg"
+ },
+ "hanaya.nt-agapanthus": {
+  "src": "photo-hanaya.nt-agapanthus.jpg",
+  "author": "Nesnad",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Agapanthus_-_Kanagawa_2026_June_14_various_2.jpg",
+  "file": "File:Agapanthus - Kanagawa 2026 June 14 various 2.jpg"
+ },
+ "hanaya.nt-rudbeckia": {
+  "src": "photo-hanaya.nt-rudbeckia.jpg",
+  "author": "Greschtester",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rudbeckia_hirta.JPG",
+  "file": "File:Rudbeckia hirta.JPG"
+ },
+ "hanaya.nt-echinacea": {
+  "src": "photo-hanaya.nt-echinacea.jpg",
+  "author": "Hedwig Storch",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Asteraceae_IMG_7674.JPG",
+  "file": "File:Asteraceae IMG 7674.JPG"
+ },
+ "hanaya.nt-nouzen": {
+  "src": "photo-hanaya.nt-nouzen.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CampsisGrandiflora.jpg",
+  "file": "File:CampsisGrandiflora.jpg"
+ },
+ "hanaya.nt-tokeiso": {
+  "src": "photo-hanaya.nt-tokeiso.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_tokeisou5071.jpg",
+  "file": "File:W tokeisou5071.jpg"
+ },
+ "hanaya.nt-plumeria": {
+  "src": "photo-hanaya.nt-plumeria.jpg",
+  "author": "Renesis",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Frangipani_flowers.jpg",
+  "file": "File:Frangipani flowers.jpg"
+ },
+ "hanaya.nt-strelitzia": {
+  "src": "photo-hanaya.nt-strelitzia.jpg",
+  "author": "Myukew",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Strelitzia_reginae-Berlin.jpg",
+  "file": "File:Strelitzia reginae-Berlin.jpg"
+ },
+ "hanaya.nt-bouvardia": {
+  "src": "photo-hanaya.nt-bouvardia.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_akane1091.jpg",
+  "file": "File:W akane1091.jpg"
+ },
+ "hanaya.nt-allium": {
+  "src": "photo-hanaya.nt-allium.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Illustration_Allium_ursinum0.jpg",
+  "file": "File:Illustration Allium ursinum0.jpg"
+ },
+ "hanaya.nt-tachiaoi": {
+  "src": "photo-hanaya.nt-tachiaoi.jpg",
+  "author": "松岡明芳",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2021-06-06_Althaea_rosea_%E3%82%BF%E3%83%81%E3%82%A2%E3%82%AA%E3%82%A4%EF%BC%88%E7%AB%8B%E8%91%B5%E3%80%81%E5%AD%A6%E5%90%8D%EF%BC%9AAlthaea_rosea%E3%80%81%E3%82%B7%E3%83%8E%E3%83%8B%E3%83%A0%EF%BC%9AAlcea_rosea%EF%BC%89DSCF3025.jpg",
+  "file": "File:2021-06-06 Althaea rosea タチアオイ（立葵、学名：Althaea rosea、シノニム：Alcea rosea）DSCF3025.jpg"
+ },
+ "hanaya.nt-torenia": {
+  "src": "photo-hanaya.nt-torenia.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Torenia_fournieri1.jpg",
+  "file": "File:Torenia fournieri1.jpg"
+ },
+ "hanaya.nt-pentas": {
+  "src": "photo-hanaya.nt-pentas.jpg",
+  "author": "Cody Hough",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Penta.JPG",
+  "file": "File:Penta.JPG"
+ },
+ "hanaya.nt-gazania": {
+  "src": "photo-hanaya.nt-gazania.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gazania_sp.jpg",
+  "file": "File:Gazania sp.jpg"
+ },
+ "hanaya.nt-coleus": {
+  "src": "photo-hanaya.nt-coleus.jpg",
+  "author": "Saharadesertfox",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Coleus_Blumei_01.jpg",
+  "file": "File:Coleus Blumei 01.jpg"
+ },
+ "hanaya.nt-plumbago": {
+  "src": "photo-hanaya.nt-plumbago.jpg",
+  "author": "Miyuki Meinaka",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Flowers_of_Plumbago_auriculata_in_TBG.jpg",
+  "file": "File:Flowers of Plumbago auriculata in TBG.jpg"
+ },
+ "hanaya.nt-curcuma": {
+  "src": "photo-hanaya.nt-curcuma.jpg",
+  "author": "Ahoerstemeier (talk) (Uploads)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Siam_Tulip.jpg",
+  "file": "File:Siam Tulip.jpg"
+ },
+ "hanaya.ak-cosmos": {
+  "src": "photo-hanaya.ak-cosmos.jpg",
+  "author": "Kakidai",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cosmos_Kinchakuda_3.JPG",
+  "file": "File:Cosmos Kinchakuda 3.JPG"
+ },
+ "hanaya.ak-kiku": {
+  "src": "photo-hanaya.ak-kiku.jpg",
+  "author": "Miya",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kiku_yellow01.jpg",
+  "file": "File:Kiku yellow01.jpg"
+ },
+ "hanaya.ak-kinmokusei": {
+  "src": "photo-hanaya.ak-kinmokusei.jpg",
+  "author": "Laitr Keiows",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans_(orange_flowers).jpg",
+  "file": "File:Osmanthus fragrans (orange flowers).jpg"
+ },
+ "hanaya.ak-susuki": {
+  "src": "photo-hanaya.ak-susuki.jpg",
+  "author": "松岡明芳",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_pampas_grass_%E3%82%B9%E3%82%B9%E3%82%AD%E3%81%AE%E7%A9%82%E6%B3%A2PB080105.jpg",
+  "file": "File:Japanese pampas grass ススキの穂波PB080105.jpg"
+ },
+ "hanaya.ak-koyo": {
+  "src": "photo-hanaya.ak-koyo.jpg",
+  "author": "ノボホショコロトソ",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ginkgo_tree-lined_avenue_in_Hokkaido_University_03.jpg",
+  "file": "File:Ginkgo tree-lined avenue in Hokkaido University 03.jpg"
+ },
+ "hanaya.ak-dahlia": {
+  "src": "photo-hanaya.ak-dahlia.jpg",
+  "author": "en:User:Ramin Nakisa",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:DahliaDahlstarSunsetPink.jpg",
+  "file": "File:DahliaDahlstarSunsetPink.jpg"
+ },
+ "hanaya.ak-ichou": {
+  "src": "photo-hanaya.ak-ichou.jpg",
+  "author": "Qian2007",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ginkgo_2024.jpg",
+  "file": "File:Ginkgo 2024.jpg"
+ },
+ "hanaya.ak-kaki": {
+  "src": "photo-hanaya.ak-kaki.jpg",
+  "author": "Tomomarusan",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kaki.JPG",
+  "file": "File:Kaki.JPG"
+ },
+ "hanaya.ak-rindo": {
+  "src": "photo-hanaya.ak-rindo.jpg",
+  "author": "Kāru Ojisan",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_rindou1111.jpg",
+  "file": "File:W rindou1111.jpg"
+ },
+ "hanaya.ak-keito": {
+  "src": "photo-hanaya.ak-keito.jpg",
+  "author": "Sphl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Keitou.jpg",
+  "file": "File:Keitou.jpg"
+ },
+ "hanaya.ak-akinanakusa": {
+  "src": "photo-hanaya.ak-akinanakusa.jpg",
+  "author": "Blue Lotus",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_seven_herbs.jpg",
+  "file": "File:The seven herbs.jpg"
+ },
+ "hanaya.ak-blueberry": {
+  "src": "photo-hanaya.ak-blueberry.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Vaccinium_corymbosum(01).jpg",
+  "file": "File:Vaccinium corymbosum(01).jpg"
+ },
+ "hanaya.ak-zakuro": {
+  "src": "photo-hanaya.ak-zakuro.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Illustration_Punica_granatum1.jpg",
+  "file": "File:Illustration Punica granatum1.jpg"
+ },
+ "hanaya.ak-waremoko": {
+  "src": "photo-hanaya.ak-waremoko.jpg",
+  "author": "Björn Höfling",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sanguisorba-officinalis.jpg",
+  "file": "File:Sanguisorba-officinalis.jpg"
+ },
+ "hanaya.ak-ginmokusei": {
+  "src": "photo-hanaya.ak-ginmokusei.jpg",
+  "author": "Juni from Kyoto, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans.jpg",
+  "file": "File:Osmanthus fragrans.jpg"
+ },
+ "hanaya.ak-hypericum": {
+  "src": "photo-hanaya.ak-hypericum.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_otogirisou4071.jpg",
+  "file": "File:W otogirisou4071.jpg"
+ },
+ "hanaya.ak-ominaeshi": {
+  "src": "photo-hanaya.ak-ominaeshi.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Patrinia_scabiosifolia2.jpg",
+  "file": "File:Patrinia scabiosifolia2.jpg"
+ },
+ "hanaya.ak-shumeigiku": {
+  "src": "photo-hanaya.ak-shumeigiku.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Anemone_hupehensis_var_japonica1.jpg",
+  "file": "File:Anemone hupehensis var japonica1.jpg"
+ },
+ "hanaya.ak-pampas": {
+  "src": "photo-hanaya.ak-pampas.jpg",
+  "author": "Sphl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:PampasGrass_2004.jpg",
+  "file": "File:PampasGrass 2004.jpg"
+ },
+ "hanaya.ak-chococosmos": {
+  "src": "photo-hanaya.ak-chococosmos.jpg",
+  "author": "Björn Appel",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cosmos-atrosanguineus.jpg",
+  "file": "File:Cosmos-atrosanguineus.jpg"
+ },
+ "hanaya.ak-kibanacosmos": {
+  "src": "photo-hanaya.ak-kibanacosmos.jpg",
+  "author": "Sphl at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cosmos_sulphureus_0.jpg",
+  "file": "File:Cosmos sulphureus 0.jpg"
+ },
+ "hanaya.ak-murasakishikibu": {
+  "src": "photo-hanaya.ak-murasakishikibu.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Callicarpa_japonica3.jpg",
+  "file": "File:Callicarpa japonica3.jpg"
+ },
+ "hanaya.ak-nanakamado": {
+  "src": "photo-hanaya.ak-nanakamado.jpg",
+  "author": "Mintleaf",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nanakamado_tree.jpg",
+  "file": "File:Nanakamado tree.jpg"
+ },
+ "hanaya.ak-dodantsutsuji": {
+  "src": "photo-hanaya.ak-dodantsutsuji.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Enkianthus_perulatus2.jpg",
+  "file": "File:Enkianthus perulatus2.jpg"
+ },
+ "hanaya.ak-kuri": {
+  "src": "photo-hanaya.ak-kuri.jpg",
+  "author": "Apple2000",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Chestnut04.jpg",
+  "file": "File:Japanese Chestnut04.jpg"
+ },
+ "hanaya.ak-enokorogusa": {
+  "src": "photo-hanaya.ak-enokorogusa.jpg",
+  "author": "Ayotte, Gilles, 1948-",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Setaria_viridis_15-p.bot-seta.viridi-09.jpg",
+  "file": "File:Setaria viridis 15-p.bot-seta.viridi-09.jpg"
+ },
+ "hanaya.ak-kikuningyo": {
+  "src": "photo-hanaya.ak-kikuningyo.jpg",
+  "author": "No machine-readable author provided. Geomr~commonswiki assum…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chrysanthemum_festival,_Miyauchi,_Nanyo_City,_Yamagata_Prefecture,_Japan_-_20051016.jpg",
+  "file": "File:Chrysanthemum festival, Miyauchi, Nanyo City, Yamagata Prefecture, Japan - 20051016.jpg"
+ },
+ "hanaya.ak-nerine": {
+  "src": "photo-hanaya.ak-nerine.jpg",
+  "author": "Kurt Stüber [1]",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Nerine_bowdenii0.jpg",
+  "file": "File:Nerine bowdenii0.jpg"
+ },
+ "hanaya.ak-gama": {
+  "src": "photo-hanaya.ak-gama.jpg",
+  "author": "User:Bogdan",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Typha_latifolia_02_bgiu.jpg",
+  "file": "File:Typha latifolia 02 bgiu.jpg"
+ },
+ "hanaya.ak-tsuwabuki": {
+  "src": "photo-hanaya.ak-tsuwabuki.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Petasites_japonicus02.jpg",
+  "file": "File:Petasites japonicus02.jpg"
+ },
+ "hanaya.ak-pyracantha": {
+  "src": "photo-hanaya.ak-pyracantha.jpg",
+  "author": "Brosen",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Brosen_pyracantha_coccinea2.jpg",
+  "file": "File:Brosen pyracantha coccinea2.jpg"
+ },
+ "hanaya.ak-umemodoki": {
+  "src": "photo-hanaya.ak-umemodoki.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ilex_serrata3.jpg",
+  "file": "File:Ilex serrata3.jpg"
+ },
+ "hanaya.ak-tsuruumemodoki": {
+  "src": "photo-hanaya.ak-tsuruumemodoki.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Celastrus_orbiculatus.jpg",
+  "file": "File:Celastrus orbiculatus.jpg"
+ },
+ "hanaya.ak-sankirai": {
+  "src": "photo-hanaya.ak-sankirai.jpg",
+  "author": "Xicheng He, Tao Yi, Yina Tang, Jun Xu, Jianye Zhang, Yazhou …",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Smilacis_Glabrae_Rhizoma.webp",
+  "file": "File:Smilacis Glabrae Rhizoma.webp"
+ },
+ "hanaya.ak-helichrysum": {
+  "src": "photo-hanaya.ak-helichrysum.jpg",
+  "author": "Didier B (Sam67fr)",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Helichrysum_umbraculigerum.jpg",
+  "file": "File:Helichrysum umbraculigerum.jpg"
+ },
+ "hanaya.ak-kangaroopaw": {
+  "src": "photo-hanaya.ak-kangaroopaw.jpg",
+  "author": "Gnangarra",
+  "license": "CC BY 2.5 AU",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5/au/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Anigozanthos_manglesii_gnangarra-1007.jpg",
+  "file": "File:Anigozanthos manglesii gnangarra-1007.jpg"
+ },
+ "hanaya.ak-ornithogalum": {
+  "src": "photo-hanaya.ak-ornithogalum.jpg",
+  "author": "Meneerke bloem",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ornithogalum_umbellatum_close-up2.jpg",
+  "file": "File:Ornithogalum umbellatum close-up2.jpg"
+ },
+ "hanaya.ak-saffron": {
+  "src": "photo-hanaya.ak-saffron.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Crocus_sativus_sahuran.jpg",
+  "file": "File:Crocus sativus sahuran.jpg"
+ },
+ "hanaya.ak-tamasudare": {
+  "src": "photo-hanaya.ak-tamasudare.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Zephyranthes_candida1.jpg",
+  "file": "File:Zephyranthes candida1.jpg"
+ },
+ "hanaya.ak-yaburan": {
+  "src": "photo-hanaya.ak-yaburan.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Liriope_muscari1.jpg",
+  "file": "File:Liriope muscari1.jpg"
+ },
+ "hanaya.ak-kichijoso": {
+  "src": "photo-hanaya.ak-kichijoso.jpg",
+  "author": "Baldhead1010",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%AD%E3%83%81%E3%82%B8%E3%83%A7%E3%82%A6%E3%82%BD%E3%82%A6.jpg",
+  "file": "File:キチジョウソウ.jpg"
+ },
+ "hanaya.ak-karasuuri": {
+  "src": "photo-hanaya.ak-karasuuri.jpg",
+  "author": "ja:user:sphl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Trichosanthes_cucumeroides0.jpg",
+  "file": "File:Trichosanthes cucumeroides0.jpg"
+ },
+ "hanaya.ak-fusentowata": {
+  "src": "photo-hanaya.ak-fusentowata.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Asclepias_physocarpa2.jpg",
+  "file": "File:Asclepias physocarpa2.jpg"
+ },
+ "hanaya.ak-katoranoo": {
+  "src": "photo-hanaya.ak-katoranoo.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Physostegia_virginiana3.jpg",
+  "file": "File:Physostegia virginiana3.jpg"
+ },
+ "hanaya.ak-akebi": {
+  "src": "photo-hanaya.ak-akebi.jpg",
+  "author": "Philipp Franz von Siebold and Joseph Gerhard Zuccarini",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Akebia_quinata_SZ77.png",
+  "file": "File:Akebia quinata SZ77.png"
+ },
+ "hanaya.ak-mayumi": {
+  "src": "photo-hanaya.ak-mayumi.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Euonymus_hamiltonianus_from_Japan_Wikipedia.jpg",
+  "file": "File:Euonymus hamiltonianus from Japan Wikipedia.jpg"
+ },
+ "hanaya.ak-nokongiku": {
+  "src": "photo-hanaya.ak-nokongiku.jpg",
+  "author": "Keisotyo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Aster_ageratoides_subsp_ovatus_nokongiku01.jpg",
+  "file": "File:Aster ageratoides subsp ovatus nokongiku01.jpg"
+ },
+ "hanaya.ak-misebaya": {
+  "src": "photo-hanaya.ak-misebaya.jpg",
+  "author": "Digigalos",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sedum_sieboldii_01.jpg",
+  "file": "File:Sedum sieboldii 01.jpg"
+ },
+ "hanaya.ak-akimaki": {
+  "src": "photo-hanaya.ak-akimaki.jpg",
+  "author": "Jean-François Millet",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_(II)_013.jpg",
+  "file": "File:Jean-François Millet (II) 013.jpg"
+ },
+ "hanaya.fy-poinsettia": {
+  "src": "photo-hanaya.fy-poinsettia.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Poinsettia2004.jpg",
+  "file": "File:Poinsettia2004.jpg"
+ },
+ "hanaya.fy-cyclamen": {
+  "src": "photo-hanaya.fy-cyclamen.jpg",
+  "author": "Ellen Levy Finch",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:CyclamenPink,_2004.jpg",
+  "file": "File:CyclamenPink, 2004.jpg"
+ },
+ "hanaya.fy-tsubaki": {
+  "src": "photo-hanaya.fy-tsubaki.jpg",
+  "author": "User:BotBln",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Camellia_japonica_BotGardBln271207C.jpg",
+  "file": "File:Camellia japonica BotGardBln271207C.jpg"
+ },
+ "hanaya.fy-suisen": {
+  "src": "photo-hanaya.fy-suisen.jpg",
+  "author": "Matsuo banana",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%BE%A4%E7%94%9F%E3%81%99%E3%82%8B%E3%82%B9%E3%82%A4%E3%82%BB%E3%83%B3.jpg",
+  "file": "File:群生するスイセン.jpg"
+ },
+ "hanaya.fy-sazanka": {
+  "src": "photo-hanaya.fy-sazanka.jpg",
+  "author": "Philipp Franz von Siebold and Joseph Gerhard Zuccarini",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Camellia_sasanqua_SZ83.png",
+  "file": "File:Camellia sasanqua SZ83.png"
+ },
+ "hanaya.fy-christmasrose": {
+  "src": "photo-hanaya.fy-christmasrose.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Helleborus_niger_.JPG",
+  "file": "File:Helleborus niger .JPG"
+ },
+ "hanaya.fy-senryo": {
+  "src": "photo-hanaya.fy-senryo.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sarcandra_glabra2.jpg",
+  "file": "File:Sarcandra glabra2.jpg"
+ },
+ "hanaya.fy-habotan": {
+  "src": "photo-hanaya.fy-habotan.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Flowering_cabbage.jpg",
+  "file": "File:Flowering cabbage.jpg"
+ },
+ "hanaya.fy-mominoki": {
+  "src": "photo-hanaya.fy-mominoki.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:OTannenbaumNoten.gif",
+  "file": "File:OTannenbaumNoten.gif"
+ },
+ "hanaya.fy-hiiragi": {
+  "src": "photo-hanaya.fy-hiiragi.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Osmanthus_heterophyllus.jpg",
+  "file": "File:Osmanthus heterophyllus.jpg"
+ },
+ "hanaya.fy-seiyohiiragi": {
+  "src": "photo-hanaya.fy-seiyohiiragi.jpg",
+  "author": "4028mdk09",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Strauch_mit_roten_Beeren.JPG",
+  "file": "File:Strauch mit roten Beeren.JPG"
+ },
+ "hanaya.fy-snowdrop": {
+  "src": "photo-hanaya.fy-snowdrop.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Galanthus_nivalis.jpg",
+  "file": "File:Galanthus nivalis.jpg"
+ },
+ "hanaya.fy-fukujuso": {
+  "src": "photo-hanaya.fy-fukujuso.jpg",
+  "author": "Alpsdake",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Adonis_ramosa_fukujyusou_fujiwaradake_2009_3_2.jpg",
+  "file": "File:Adonis ramosa fukujyusou fujiwaradake 2009 3 2.jpg"
+ },
+ "hanaya.fy-manryo": {
+  "src": "photo-hanaya.fy-manryo.jpg",
+  "author": "Batholith",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ardisia_crenata_20101209_a.jpg",
+  "file": "File:Ardisia crenata 20101209 a.jpg"
+ },
+ "hanaya.fy-robai": {
+  "src": "photo-hanaya.fy-robai.jpg",
+  "author": "Ans",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Roubai2006.jpg",
+  "file": "File:Roubai2006.jpg"
+ },
+ "hanaya.fy-cymbidium": {
+  "src": "photo-hanaya.fy-cymbidium.jpg",
+  "author": "Arne and Bent Larsen, Haarby, Denmark",
+  "license": "CC BY-SA 2.5 DK",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/dk/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:A_and_B_Larsen_orchids_-_Cymbidium_Eastern_Star_Kawano_DSCN4732.JPG",
+  "file": "File:A and B Larsen orchids - Cymbidium Eastern Star Kawano DSCN4732.JPG"
+ },
+ "hanaya.fy-primula": {
+  "src": "photo-hanaya.fy-primula.jpg",
+  "author": "The original uploader was Harp at English Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Primula.jpg",
+  "file": "File:Primula.jpg"
+ },
+ "hanaya.fy-nekoyanagi": {
+  "src": "photo-hanaya.fy-nekoyanagi.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_nekoyanagi2031.jpg",
+  "file": "File:W nekoyanagi2031.jpg"
+ },
+ "hanaya.fy-eucalyptus": {
+  "src": "photo-hanaya.fy-eucalyptus.jpg",
+  "author": "Gabriel Collares",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eucalipto_(Eucalyptus_sp.)_na_zona_rural_de_Bag%C3%A9.jpg",
+  "file": "File:Eucalipto (Eucalyptus sp.) na zona rural de Bagé.jpg"
+ },
+ "hanaya.fy-kalanchoe": {
+  "src": "photo-hanaya.fy-kalanchoe.jpg",
+  "author": "Imuzak",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kalanchoe_pinnata.JPG",
+  "file": "File:Kalanchoe pinnata.JPG"
+ },
+ "hanaya.fy-shakobasaboten": {
+  "src": "photo-hanaya.fy-shakobasaboten.jpg",
+  "author": "Toni Gürke",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Schlumbergera_truncata_BlKakteenT25.jpg",
+  "file": "File:Schlumbergera truncata BlKakteenT25.jpg"
+ },
+ "hanaya.fy-saintpaulia": {
+  "src": "photo-hanaya.fy-saintpaulia.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Purple_African_Violet_Top.JPG",
+  "file": "File:Purple African Violet Top.JPG"
+ },
+ "hanaya.fy-dendrobium": {
+  "src": "photo-hanaya.fy-dendrobium.jpg",
+  "author": "Lucien Linden; Book Title: Lindenia Iconographie des Orchidé…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Dendrobium_bigibbum3454.jpg",
+  "file": "File:Dendrobium bigibbum3454.jpg"
+ },
+ "hanaya.fy-kinsenka": {
+  "src": "photo-hanaya.fy-kinsenka.jpg",
+  "author": "Kurt Stüber [1]",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Calendula_officinalis1.jpg",
+  "file": "File:Calendula officinalis1.jpg"
+ },
+ "hanaya.fy-alyssum": {
+  "src": "photo-hanaya.fy-alyssum.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Alyssum_saxatile.jpg",
+  "file": "File:Alyssum saxatile.jpg"
+ },
+ "hanaya.fy-yadorigi": {
+  "src": "photo-hanaya.fy-yadorigi.jpg",
+  "author": "Carl Axel Magnus Lindman",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:363_Viscum_album.jpg",
+  "file": "File:363 Viscum album.jpg"
+ },
+ "hanaya.fy-kinkan": {
+  "src": "photo-hanaya.fy-kinkan.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Citrus_japonica2.jpg",
+  "file": "File:Citrus japonica2.jpg"
+ },
+ "hanaya.fy-cineraria": {
+  "src": "photo-hanaya.fy-cineraria.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cineraria3.jpg",
+  "file": "File:Cineraria3.jpg"
+ },
+ "hanaya.fy-fuyusango": {
+  "src": "photo-hanaya.fy-fuyusango.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Solanum_pseudocapsicum.jpg",
+  "file": "File:Solanum pseudocapsicum.jpg"
+ },
+ "hanaya.fy-yabukoji": {
+  "src": "photo-hanaya.fy-yabukoji.jpg",
+  "author": "Qwert1234",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ardisia_japonica_3.JPG",
+  "file": "File:Ardisia japonica 3.JPG"
+ },
+ "hanaya.fy-yatsude": {
+  "src": "photo-hanaya.fy-yatsude.jpg",
+  "author": "Fernando Losada Rodríguez",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fatsia_japonica.003_-_Zapateira.jpg",
+  "file": "File:Fatsia japonica.003 - Zapateira.jpg"
+ },
+ "hanaya.fy-mansaku": {
+  "src": "photo-hanaya.fy-mansaku.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hamamelis_japonica4.jpg",
+  "file": "File:Hamamelis japonica4.jpg"
+ },
+ "hanaya.fy-setsubunso": {
+  "src": "photo-hanaya.fy-setsubunso.jpg",
+  "author": "Qwert1234",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eranthis_pinnatifida_4.JPG",
+  "file": "File:Eranthis pinnatifida 4.JPG"
+ },
+ "hanaya.fy-yukiwariso": {
+  "src": "photo-hanaya.fy-yukiwariso.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Primula_farinosa_subsp._modesta.jpg",
+  "file": "File:Primula farinosa subsp. modesta.jpg"
+ },
+ "hanaya.fy-obai": {
+  "src": "photo-hanaya.fy-obai.jpg",
+  "author": "The original uploader was 用心阁 at Chinese Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Yingchun.JPG",
+  "file": "File:Yingchun.JPG"
+ },
+ "hanaya.fy-sanshuyu": {
+  "src": "photo-hanaya.fy-sanshuyu.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_sanshuyu4031.jpg",
+  "file": "File:W sanshuyu4031.jpg"
+ },
+ "hanaya.fy-kunshiran": {
+  "src": "photo-hanaya.fy-kunshiran.jpg",
+  "author": "Fan Wen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Clivia_nobilis-flower_view.jpg",
+  "file": "File:Clivia nobilis-flower view.jpg"
+ },
+ "hanaya.fy-oxalis": {
+  "src": "photo-hanaya.fy-oxalis.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_katabami4061.jpg",
+  "file": "File:W katabami4061.jpg"
+ },
+ "hanaya.fy-euryops": {
+  "src": "photo-hanaya.fy-euryops.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Euryops_daisy01.jpg",
+  "file": "File:Euryops daisy01.jpg"
+ },
+ "hanaya.fy-shirotaegiku": {
+  "src": "photo-hanaya.fy-shirotaegiku.jpg",
+  "author": "Digigalos",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Senecio_cineraria_01.jpg",
+  "file": "File:Senecio cineraria 01.jpg"
+ },
+ "hanaya.fy-fukinoto": {
+  "src": "photo-hanaya.fy-fukinoto.jpg",
+  "author": "Sphl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fuki.jpg",
+  "file": "File:Fuki.jpg"
+ },
+ "hanaya.fy-paphiopedilum": {
+  "src": "photo-hanaya.fy-paphiopedilum.jpg",
+  "author": "Daiju Azuma",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Paphiopedilum_miya.jpg",
+  "file": "File:Paphiopedilum miya.jpg"
+ },
+ "hanaya.fy-asebi": {
+  "src": "photo-hanaya.fy-asebi.jpg",
+  "author": "Kurt Stüber [1]",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pieris_japonica2.jpg",
+  "file": "File:Pieris japonica2.jpg"
+ },
+ "hanaya.fy-nemesia": {
+  "src": "photo-hanaya.fy-nemesia.jpg",
+  "author": "Julie Anne Workman",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nemesia_cheiranthus.jpg",
+  "file": "File:Nemesia cheiranthus.jpg"
+ },
+ "hanaya.fy-fuyume": {
+  "src": "photo-hanaya.fy-fuyume.jpg",
+  "author": "Rosser1954",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aesculus_hippocastanum_bud_and_its_sticky_cataphylls,_Spiers_Old_School_Grounds,_Beith.jpg",
+  "file": "File:Aesculus hippocastanum bud and its sticky cataphylls, Spiers Old School Grounds, Beith.jpg"
+ },
+ "hanaya.fy-onshitsusaibai": {
+  "src": "photo-hanaya.fy-onshitsusaibai.jpg",
+  "author": "Oilstreet (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsurumi-ryokuchi4-R.jpg",
+  "file": "File:Tsurumi-ryokuchi4-R.jpg"
+ },
+ "hanaya.hk-hanakotoba": {
+  "src": "photo-hanaya.hk-hanakotoba.jpg",
+  "author": "Alphonse Mucha",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%27Language_of_Flowers%27_by_Alphonse_Mucha.jpg",
+  "file": "File:'Language of Flowers' by Alphonse Mucha.jpg"
+ },
+ "hanaya.hk-rose": {
+  "src": "photo-hanaya.hk-rose.jpg",
+  "author": "Laitche",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mrs._Herbert_Stevens_May_2008.jpg",
+  "file": "File:Mrs. Herbert Stevens May 2008.jpg"
+ },
+ "hanaya.hk-carnation": {
+  "src": "photo-hanaya.hk-carnation.jpg",
+  "author": "草花写真館",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_carnation4051.jpg",
+  "file": "File:W carnation4051.jpg"
+ },
+ "hanaya.hk-kasumi": {
+  "src": "photo-hanaya.hk-kasumi.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gypsophila_muralis_Gypsy_Rose1.jpg",
+  "file": "File:Gypsophila muralis Gypsy Rose1.jpg"
+ },
+ "hanaya.hk-tanjoka": {
+  "src": "photo-hanaya.hk-tanjoka.jpg",
+  "author": "Alphonse Mucha",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%27Language_of_Flowers%27_by_Alphonse_Mucha.jpg",
+  "file": "File:'Language of Flowers' by Alphonse Mucha.jpg"
+ },
+ "hanaya.hk-minirose": {
+  "src": "photo-hanaya.hk-minirose.jpg",
+  "author": "Laitche",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mrs._Herbert_Stevens_May_2008.jpg",
+  "file": "File:Mrs. Herbert Stevens May 2008.jpg"
+ },
+ "hanaya.hk-kocho": {
+  "src": "photo-hanaya.hk-kocho.jpg",
+  "author": "pinay06",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Boholflora7.jpg",
+  "file": "File:Boholflora7.jpg"
+ },
+ "hanaya.hk-monstera": {
+  "src": "photo-hanaya.hk-monstera.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Monstera_friedrichsthalii1.jpg",
+  "file": "File:Monstera friedrichsthalii1.jpg"
+ },
+ "hanaya.hk-gajumaru": {
+  "src": "photo-hanaya.hk-gajumaru.jpg",
+  "author": "H. Zell",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ficus_microcarpa_-_La_Gomera_01.jpg",
+  "file": "File:Ficus microcarpa - La Gomera 01.jpg"
+ },
+ "hanaya.hk-olive": {
+  "src": "photo-hanaya.hk-olive.jpg",
+  "author": "(RNBC) member [?] at en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Olea_europaea_subsp_europaeaOliveTree.jpg",
+  "file": "File:Olea europaea subsp europaeaOliveTree.jpg"
+ },
+ "hanaya.hk-rosemary": {
+  "src": "photo-hanaya.hk-rosemary.jpg",
+  "author": "不明",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ChristianBauer_flowering_rosemary.jpg",
+  "file": "File:ChristianBauer flowering rosemary.jpg"
+ },
+ "hanaya.hk-mint": {
+  "src": "photo-hanaya.hk-mint.jpg",
+  "author": "Michael Becker",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mentha_longifolia_2005.08.02_09.53.56.jpg",
+  "file": "File:Mentha longifolia 2005.08.02 09.53.56.jpg"
+ },
+ "hanaya.hk-kanyo": {
+  "src": "photo-hanaya.hk-kanyo.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chlorophytum_comosum0.jpg",
+  "file": "File:Chlorophytum comosum0.jpg"
+ },
+ "hanaya.hk-sansevieria": {
+  "src": "photo-hanaya.hk-sansevieria.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sansevieria_trifasciata1.jpg",
+  "file": "File:Sansevieria trifasciata1.jpg"
+ },
+ "hanaya.hk-pothos": {
+  "src": "photo-hanaya.hk-pothos.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Epipremnum_aureum1.jpg",
+  "file": "File:Epipremnum aureum1.jpg"
+ },
+ "hanaya.hk-gomu": {
+  "src": "photo-hanaya.hk-gomu.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Rubber_tree_plantation.JPG",
+  "file": "File:Rubber tree plantation.JPG"
+ },
+ "hanaya.hk-basil": {
+  "src": "photo-hanaya.hk-basil.jpg",
+  "author": "Castielli",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Basil-Basilico-Ocimum_basilicum-albahaca.jpg",
+  "file": "File:Basil-Basilico-Ocimum basilicum-albahaca.jpg"
+ },
+ "hanaya.hk-kokka": {
+  "src": "photo-hanaya.hk-kokka.jpg",
+  "author": "Kropsoq",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:2007_Sakura_of_Fukushima-e_007.jpg",
+  "file": "File:2007 Sakura of Fukushima-e 007.jpg"
+ },
+ "hanaya.hk-cattleya": {
+  "src": "photo-hanaya.hk-cattleya.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cattleya_gaskelliana.jpg",
+  "file": "File:Cattleya gaskelliana.jpg"
+ },
+ "hanaya.hk-denfare": {
+  "src": "photo-hanaya.hk-denfare.jpg",
+  "author": "No machine-readable author provided. Calvin Teo assumed (bas…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Orchid_plants.jpg",
+  "file": "File:Orchid plants.jpg"
+ },
+ "hanaya.hk-oncidium": {
+  "src": "photo-hanaya.hk-oncidium.jpg",
+  "author": "W. Fitch del. et lith. (= Walter Hood Fitch, 1817 - 1892), J…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oncidium_cheirophorum.jpg",
+  "file": "File:Oncidium cheirophorum.jpg"
+ },
+ "hanaya.sd-hanabira": {
+  "src": "photo-hanaya.sd-hanabira.jpg",
+  "author": "Mariana Ruiz LadyofHats",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mature_flower_diagram.svg",
+  "file": "File:Mature flower diagram.svg"
+ },
+ "hanaya.sd-kuki": {
+  "src": "photo-hanaya.sd-kuki.jpg",
+  "author": "松岡明芳",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Betula_platyphylla_var._japonica,7013906_Akiyoshi_Matsuoka.JPG",
+  "file": "File:Betula platyphylla var. japonica,7013906 Akiyoshi Matsuoka.JPG"
+ },
+ "hanaya.sd-ha": {
+  "src": "photo-hanaya.sd-ha.jpg",
+  "author": "Jon Sullivan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Leaf_1_web.jpg",
+  "file": "File:Leaf 1 web.jpg"
+ },
+ "hanaya.sd-ne": {
+  "src": "photo-hanaya.sd-ne.jpg",
+  "author": "Claus Ableiter",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wurzeln_am_Bergh%C3%A4user_Altrhein,_Speyerer_Auwald.JPG",
+  "file": "File:Wurzeln am Berghäuser Altrhein, Speyerer Auwald.JPG"
+ },
+ "hanaya.sd-kyukon": {
+  "src": "photo-hanaya.sd-kyukon.jpg",
+  "author": "This photography was created by Mariluna. Other photos see h…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tulipa_fringed_-_burgundy_lace_-_bulbs.jpg",
+  "file": "File:Tulipa fringed - burgundy lace - bulbs.jpg"
+ },
+ "hanaya.sd-hachiue": {
+  "src": "photo-hanaya.sd-hachiue.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chlorophytum_comosum0.jpg",
+  "file": "File:Chlorophytum comosum0.jpg"
+ },
+ "hanaya.sd-kiribana": {
+  "src": "photo-hanaya.sd-kiribana.jpg",
+  "author": "Photo by and (c)2007 Jina Lee",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rose_hydrangea_calla_wedding_bouquet.jpg",
+  "file": "File:Rose hydrangea calla wedding bouquet.jpg"
+ },
+ "hanaya.sd-oshibe": {
+  "src": "photo-hanaya.sd-oshibe.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Amaryllis_stamens_aka.jpg",
+  "file": "File:Amaryllis stamens aka.jpg"
+ },
+ "hanaya.sd-meshibe": {
+  "src": "photo-hanaya.sd-meshibe.jpg",
+  "author": "original: Magnolia_Watsoni.JPG: WibblyWibby derivative work:…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Magnolia_wieseneri_-_labelled_gynoecium.jpg",
+  "file": "File:Magnolia wieseneri - labelled gynoecium.jpg"
+ },
+ "hanaya.sd-kafun": {
+  "src": "photo-hanaya.sd-kafun.jpg",
+  "author": "Dartmouth College Electron Microscope Facility",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Misc_pollen.jpg",
+  "file": "File:Misc pollen.jpg"
+ },
+ "hanaya.sd-gaku": {
+  "src": "photo-hanaya.sd-gaku.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Swertia_bimaculata_(sepal_s2).jpg",
+  "file": "File:Swertia bimaculata (sepal s2).jpg"
+ },
+ "hanaya.sd-hiryo": {
+  "src": "photo-hanaya.sd-hiryo.jpg",
+  "author": "Antonín Slejška Original uploader was Antonín Slejška at cs.…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Krechty_kompostarna.jpg",
+  "file": "File:Krechty kompostarna.jpg"
+ },
+ "hanaya.sd-sashiki": {
+  "src": "photo-hanaya.sd-sashiki.jpg",
+  "author": "The original uploader was Gmihail at Serbian Wikipedia.",
+  "license": "CC BY-SA 3.0 RS",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Adventitious_roots_of_Magnolia_cutting.jpg",
+  "file": "File:Adventitious roots of Magnolia cutting.jpg"
+ },
+ "hanaya.sd-kabuwake": {
+  "src": "photo-hanaya.sd-kabuwake.jpg",
+  "author": "あなたのサンドバッグになりたい",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%A0%AA%E7%AB%8B%E3%81%A1%E3%81%99%E3%82%8B%E9%9B%91%E6%9C%A83285697.jpg",
+  "file": "File:株立ちする雑木3285697.jpg"
+ },
+ "hanaya.sd-ichinen": {
+  "src": "photo-hanaya.sd-ichinen.jpg",
+  "author": "Rasbak",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Doperwt_rijserwt_peulen_Pisum_sativum.jpg",
+  "file": "File:Doperwt rijserwt peulen Pisum sativum.jpg"
+ },
+ "hanaya.sd-tanen": {
+  "src": "photo-hanaya.sd-tanen.jpg",
+  "author": "Didier Descouens",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vinca_major_-_Flower_and_bud.jpg",
+  "file": "File:Vinca major - Flower and bud.jpg"
+ },
+ "hanaya.sd-shukkon": {
+  "src": "photo-hanaya.sd-shukkon.jpg",
+  "author": "PowerlockeDurim",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Erneuerungsknospen.png",
+  "file": "File:Erneuerungsknospen.png"
+ },
+ "hanaya.sd-baiyodo": {
+  "src": "photo-hanaya.sd-baiyodo.jpg",
+  "author": "Chris Radcliff from San Diego, CA, USA. Color-corrected and …",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Potting_soil.jpg",
+  "file": "File:Potting soil.jpg"
+ },
+ "hanaya.sd-fuyodo": {
+  "src": "photo-hanaya.sd-fuyodo.jpg",
+  "author": "Original: Wilsonbiggs Vector: EssensStrassen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Soil_Horizons.svg",
+  "file": "File:Soil Horizons.svg"
+ },
+ "hanaya.sd-hanaga": {
+  "src": "photo-hanaya.sd-hanaga.jpg",
+  "author": "Rosser1954",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aesculus_hippocastanum_bud_and_its_sticky_cataphylls,_Spiers_Old_School_Grounds,_Beith.jpg",
+  "file": "File:Aesculus hippocastanum bud and its sticky cataphylls, Spiers Old School Grounds, Beith.jpg"
+ },
+ "hanaya.sd-kikuka": {
+  "src": "photo-hanaya.sd-kikuka.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Euryops_daisy01.jpg",
+  "file": "File:Euryops daisy01.jpg"
+ },
+ "hanaya.sd-barake": {
+  "src": "photo-hanaya.sd-barake.jpg",
+  "author": "Jürgen Howaldt",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Rosa_rugosa_Bluete.jpg",
+  "file": "File:Rosa rugosa Bluete.jpg"
+ },
+ "hanaya.sd-engei": {
+  "src": "photo-hanaya.sd-engei.jpg",
+  "author": "Jon Sullivan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:African_daisy_(Osteospermum_sp._%27Pink_Whirls%27).jpg",
+  "file": "File:African daisy (Osteospermum sp. 'Pink Whirls').jpg"
+ },
+ "hanaya.sd-yurika": {
+  "src": "photo-hanaya.sd-yurika.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Trillium_tschonoskii_s2.jpg",
+  "file": "File:Trillium tschonoskii s2.jpg"
+ },
+ "hanaya.sd-ranka": {
+  "src": "photo-hanaya.sd-ranka.jpg",
+  "author": "Sphl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cephalanthera_falcata_1.jpg",
+  "file": "File:Cephalanthera falcata 1.jpg"
+ },
+ "hanaya.sd-nadeshikoka": {
+  "src": "photo-hanaya.sd-nadeshikoka.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Chickweed_(aka).jpg",
+  "file": "File:Chickweed (aka).jpg"
+ },
+ "hanaya.sd-aburanaka": {
+  "src": "photo-hanaya.sd-aburanaka.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Brassica_rapa_ja02.jpg",
+  "file": "File:Brassica rapa ja02.jpg"
+ },
+ "hanaya.sd-ethylene": {
+  "src": "photo-hanaya.sd-ethylene.jpg",
+  "author": "Benjah-bmm27 (Ben Mills) Redrawn (vector graphic) by Origami…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ethylene-CRC-MW-dimensions-2D-Vector.svg",
+  "file": "File:Ethylene-CRC-MW-dimensions-2D-Vector.svg"
+ },
+ "hanaya.sd-doukan": {
+  "src": "photo-hanaya.sd-doukan.jpg",
+  "author": "Kelvinsong",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Xylem_cells.svg",
+  "file": "File:Xylem cells.svg"
+ },
+ "hanaya.sd-josan": {
+  "src": "photo-hanaya.sd-josan.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:FA_Geisenheim22.jpg",
+  "file": "File:FA Geisenheim22.jpg"
+ },
+ "hanaya.sd-kogousei": {
+  "src": "photo-hanaya.sd-kogousei.jpg",
+  "author": "Daniel Mayer (mav) - original imageVector version by Yerpo和訳…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Simple_photosynthesis_overview-ja.svg",
+  "file": "File:Simple photosynthesis overview-ja.svg"
+ },
+ "hanaya.sd-kyumin": {
+  "src": "photo-hanaya.sd-kyumin.jpg",
+  "author": "Bobjgalindo",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Snowed-in_tree_in_Hermiston.JPG",
+  "file": "File:Snowed-in tree in Hermiston.JPG"
+ },
+ "hanaya.sd-shunka": {
+  "src": "photo-hanaya.sd-shunka.jpg",
+  "author": "Anneli Salo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hyoscyamus_niger_Hullukaali_Bolm%C3%B6rt_C_IMG_7657.JPG",
+  "file": "File:Hyoscyamus niger Hullukaali Bolmört C IMG 7657.JPG"
+ },
+ "hanaya.sd-shibo": {
+  "src": "photo-hanaya.sd-shibo.jpg",
+  "author": "JonRichfield",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Superior_ovary_in_Aloe_IMG_2029d.jpg",
+  "file": "File:Superior ovary in Aloe IMG 2029d.jpg"
+ },
+ "hanaya.sd-kaka": {
+  "src": "photo-hanaya.sd-kaka.jpg",
+  "author": "Ulf Mehlig",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Ovary_position.svg",
+  "file": "File:Ovary position.svg"
+ },
+ "hanaya.ar-hanataba": {
+  "src": "photo-hanaya.ar-hanataba.jpg",
+  "author": "Sherry Main from USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wedding_Bouquet.jpg",
+  "file": "File:Wedding Bouquet.jpg"
+ },
+ "hanaya.ar-arrangement": {
+  "src": "photo-hanaya.ar-arrangement.jpg",
+  "author": "鄧南光",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lady_arranging_flower_bouquet_Tokyo_1930s.jpg",
+  "file": "File:Lady arranging flower bouquet Tokyo 1930s.jpg"
+ },
+ "hanaya.ar-ribbon": {
+  "src": "photo-hanaya.ar-ribbon.jpg",
+  "author": "יעל י",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tapes.Israel.jpg",
+  "file": "File:Tapes.Israel.jpg"
+ },
+ "hanaya.ar-kabin": {
+  "src": "photo-hanaya.ar-kabin.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Chinese_vase.jpg",
+  "file": "File:Chinese vase.jpg"
+ },
+ "hanaya.ar-bouquet": {
+  "src": "photo-hanaya.ar-bouquet.jpg",
+  "author": "Sherry Main from USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wedding_Bouquet.jpg",
+  "file": "File:Wedding Bouquet.jpg"
+ },
+ "hanaya.ar-ikebana": {
+  "src": "photo-hanaya.ar-ikebana.jpg",
+  "author": "Avensisblue",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ikebana_enshu-way.jpg",
+  "file": "File:Ikebana enshu-way.jpg"
+ },
+ "hanaya.ar-preserved": {
+  "src": "photo-hanaya.ar-preserved.jpg",
+  "author": "Ken FUNAKOSHI from Yokohama, Japan",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Flower_Bouquet.jpg",
+  "file": "File:Flower Bouquet.jpg"
+ },
+ "hanaya.ar-chomusubi": {
+  "src": "photo-hanaya.ar-chomusubi.jpg",
+  "author": "AnonMoos",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shoelace_knot.svg",
+  "file": "File:Shoelace knot.svg"
+ },
+ "hanaya.ar-corsage": {
+  "src": "photo-hanaya.ar-corsage.jpg",
+  "author": "Abbie Rowe",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Photograph_of_actress_Ingrid_Bergman_pinning_a_corsage_on_First_Lady_Bess_Truman,_who_received_a_community_chest..._-_NARA_-_199441.tif",
+  "file": "File:Photograph of actress Ingrid Bergman pinning a corsage on First Lady Bess Truman, who received a community chest... - NARA - 199441.tif"
+ },
+ "hanaya.ar-herbarium": {
+  "src": "photo-hanaya.ar-herbarium.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Archive-ugent-be-500C7CB6-DFDB-11E5-9D50-9943D43445F2_DS-266_(cropped).jpg",
+  "file": "File:Archive-ugent-be-500C7CB6-DFDB-11E5-9D50-9943D43445F2 DS-266 (cropped).jpg"
+ },
+ "hanaya.ar-ikenobo": {
+  "src": "photo-hanaya.ar-ikenobo.jpg",
+  "author": "mariemon",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Senkou5939.JPG",
+  "file": "File:Senkou5939.JPG"
+ },
+ "hanaya.ar-ohara": {
+  "src": "photo-hanaya.ar-ohara.jpg",
+  "author": "Gryffindor",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ikebana_exhibition_at_Meguro_Gajoen_2018_01.jpg",
+  "file": "File:Ikebana exhibition at Meguro Gajoen 2018 01.jpg"
+ },
+ "hanaya.ar-hoshoku": {
+  "src": "photo-hanaya.ar-hoshoku.jpg",
+  "author": "＋－ at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:MunsellColorCircle.png",
+  "file": "File:MunsellColorCircle.png"
+ },
+ "hanaya.ar-gradation": {
+  "src": "photo-hanaya.ar-gradation.jpg",
+  "author": "Toshihiro Oimatsu",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Autumn_gradation.jpg",
+  "file": "File:Autumn gradation.jpg"
+ },
+ "hanaya.ar-shikisokan": {
+  "src": "photo-hanaya.ar-shikisokan.jpg",
+  "author": "KoenB",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Colors-i54-ring.png",
+  "file": "File:Colors-i54-ring.png"
+ },
+ "hanaya.ar-moribana": {
+  "src": "photo-hanaya.ar-moribana.jpg",
+  "author": "Gryffindor",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ikebana_exhibition_at_Meguro_Gajoen_2018_02.jpg",
+  "file": "File:Ikebana exhibition at Meguro Gajoen 2018 02.jpg"
+ },
+ "hanaya.sg-hanaya": {
+  "src": "photo-hanaya.sg-hanaya.jpg",
+  "author": "Sergi Larripa (User:SergiL)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:050529_Barcelona_091.jpg",
+  "file": "File:050529 Barcelona 091.jpg"
+ },
+ "hanaya.sg-hahanohi": {
+  "src": "photo-hanaya.sg-hahanohi.jpg",
+  "author": "Josef Türk Jun.",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Herztorte_zum_Muttertag.jpg",
+  "file": "File:Herztorte zum Muttertag.jpg"
+ },
+ "hanaya.sg-chichinohi": {
+  "src": "photo-hanaya.sg-chichinohi.jpg",
+  "author": "Dean Michaud",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Father_on_father%27s_day.jpg",
+  "file": "File:Father on father's day.jpg"
+ },
+ "hanaya.sg-keironohi": {
+  "src": "photo-hanaya.sg-keironohi.jpg",
+  "author": "Adam Jones from Kelowna, BC, Canada",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Trio_of_Elderly_Women_-_Nikko_-_Japan_(48048348417).jpg",
+  "file": "File:Trio of Elderly Women - Nikko - Japan (48048348417).jpg"
+ },
+ "hanaya.sg-christmas": {
+  "src": "photo-hanaya.sg-christmas.jpg",
+  "author": "Kelvin Kay, en:user:kkmd",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gifts_xmas.jpg",
+  "file": "File:Gifts xmas.jpg"
+ },
+ "hanaya.sg-hinamatsuri": {
+  "src": "photo-hanaya.sg-hinamatsuri.jpg",
+  "author": "opencontent / David Wiley",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hina_matsuri_display.jpg",
+  "file": "File:Hina matsuri display.jpg"
+ },
+ "hanaya.sg-otsukimi": {
+  "src": "photo-hanaya.sg-otsukimi.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E7%A7%8B%E3%81%AE%E5%90%8D%E6%9C%88.jpg",
+  "file": "File:中秋の名月.jpg"
+ },
+ "hanaya.sg-bucket": {
+  "src": "photo-hanaya.sg-bucket.jpg",
+  "author": "ArnoldReinhold",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bucket.agr.jpg",
+  "file": "File:Bucket.agr.jpg"
+ },
+ "hanaya.sg-apron": {
+  "src": "photo-hanaya.sg-apron.jpg",
+  "author": "Cnssbb",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ZM9-04(100%25_cotton_apron).JPG",
+  "file": "File:ZM9-04(100% cotton apron).JPG"
+ },
+ "hanaya.sg-tento": {
+  "src": "photo-hanaya.sg-tento.jpg",
+  "author": "Mr.ちゅらさん",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matsuya_Keihan_Moriguchi_Station.jpg",
+  "file": "File:Matsuya Keihan Moriguchi Station.jpg"
+ },
+ "hanaya.sg-nefuda": {
+  "src": "photo-hanaya.sg-nefuda.jpg",
+  "author": "Rei at en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:JapaneseFruit.jpg",
+  "file": "File:JapaneseFruit.jpg"
+ },
+ "hanaya.sg-halloween": {
+  "src": "photo-hanaya.sg-halloween.jpg",
+  "author": "Toby Ord",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Jack-o%27-Lantern_2003-10-31.jpg",
+  "file": "File:Jack-o'-Lantern 2003-10-31.jpg"
+ },
+ "hanaya.sg-wagomu": {
+  "src": "photo-hanaya.sg-wagomu.jpg",
+  "author": "Bill Ebbesen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rubber_bands_-_Colors_-_Studio_photo_2011.jpg",
+  "file": "File:Rubber bands - Colors - Studio photo 2011.jpg"
+ },
+ "hanaya.sg-whiteday": {
+  "src": "photo-hanaya.sg-whiteday.jpg",
+  "author": "Flickr user mersy ( Masashi Yanagiya)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:White_Day_001.jpg",
+  "file": "File:White Day 001.jpg"
+ },
+ "hanaya.sg-kekkonkinenbi": {
+  "src": "photo-hanaya.sg-kekkonkinenbi.jpg",
+  "author": "Saint George Hare",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fifty_years_since_our_wedding_day-George_Hare.jpg",
+  "file": "File:Fifty years since our wedding day-George Hare.jpg"
+ },
+ "hanaya.sg-ohigan": {
+  "src": "photo-hanaya.sg-ohigan.jpg",
+  "author": "Kakidai",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lycoris_radiata_-_Kinchakuda_Plateau,_Hidaka,_Saitama.jpg",
+  "file": "File:Lycoris radiata - Kinchakuda Plateau, Hidaka, Saitama.jpg"
+ },
+ "hanaya.sg-obon": {
+  "src": "photo-hanaya.sg-obon.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Osurasma,_or_praying_a_soul_out_of_purgatory-J._M._W._Silver.jpg",
+  "file": "File:Osurasma, or praying a soul out of purgatory-J. M. W. Silver.jpg"
+ },
+ "hanaya.sg-kadomatsu": {
+  "src": "photo-hanaya.sg-kadomatsu.jpg",
+  "author": "白蛇の騎士",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E4%BD%8F%E5%90%89%E7%A5%9E%E7%A4%BE_(%E7%A5%9E%E6%88%B8%E5%B8%82%E8%A5%BF%E5%8C%BA)2008%E5%88%9D%E8%A9%A3_%E7%A4%BE%E6%AE%BFP1010466.jpg",
+  "file": "File:住吉神社 (神戸市西区)2008初詣 社殿P1010466.jpg"
+ },
+ "hanaya.sg-tango": {
+  "src": "photo-hanaya.sg-tango.jpg",
+  "author": "tiseb from Nagasaki",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Flying_Koi_by_tiseb_in_Nagasaki.jpg",
+  "file": "File:Flying Koi by tiseb in Nagasaki.jpg"
+ },
+ "hanaya.sg-christmaswreath": {
+  "src": "photo-hanaya.sg-christmaswreath.jpg",
+  "author": "Oxana59",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Christmas_Wreath.png",
+  "file": "File:Christmas Wreath.png"
+ },
+ "hanaya.sg-flowerdesigner": {
+  "src": "photo-hanaya.sg-flowerdesigner.jpg",
+  "author": "鄧南光",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lady_arranging_flower_bouquet_Tokyo_1930s.jpg",
+  "file": "File:Lady arranging flower bouquet Tokyo 1930s.jpg"
+ },
+ "hanaya.sg-shimekazari": {
+  "src": "photo-hanaya.sg-shimekazari.jpg",
+  "author": "日:Jnn",
+  "license": "CC BY 2.1 JP",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.1/jp/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Izumooyashiro89.JPG",
+  "file": "File:Izumooyashiro89.JPG"
+ },
+ "hanaya.sg-kirifuki": {
+  "src": "photo-hanaya.sg-kirifuki.jpg",
+  "author": "Hustvedt",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spray_bottle.jpg",
+  "file": "File:Spray bottle.jpg"
+ },
+ "hanaya.sg-gomutebukuro": {
+  "src": "photo-hanaya.sg-gomutebukuro.jpg",
+  "author": "Kippelboy",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Centre_de_Documentaci%C3%B3_Museu_T%C3%A8xtil_de_Terrassa-_Reserves-_Teixits-_Guants002.JPG",
+  "file": "File:Centre de Documentació Museu Tèxtil de Terrassa- Reserves- Teixits- Guants002.JPG"
+ },
+ "hanaya.sg-chinretsu": {
+  "src": "photo-hanaya.sg-chinretsu.jpg",
+  "author": "JEXP",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dio_Kawachinagano_04.jpg",
+  "file": "File:Dio Kawachinagano 04.jpg"
+ },
+ "hanaya.si-zaiko": {
+  "src": "photo-hanaya.si-zaiko.jpg",
+  "author": "Pete Brown from Gambrills, MD, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Teenage_Engineering_Pocket_Operators_-_PO-14_sub_%26_stock_cartons_-_2015_NAMM_Show.jpg",
+  "file": "File:Teenage Engineering Pocket Operators - PO-14 sub & stock cartons - 2015 NAMM Show.jpg"
+ },
+ "hanaya.si-oroshiuri": {
+  "src": "photo-hanaya.si-oroshiuri.jpg",
+  "author": "www.GlynLowe.com from Hamburg, Germany",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercado_dos_Lavradores,_Madeira_(16587278615).jpg",
+  "file": "File:Mercado dos Lavradores, Madeira (16587278615).jpg"
+ },
+ "hanaya.si-coldchain": {
+  "src": "photo-hanaya.si-coldchain.jpg",
+  "author": "SELEGALA",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Yamato_aoc.jpg",
+  "file": "File:Yamato aoc.jpg"
+ },
+ "hanaya.si-shukka": {
+  "src": "photo-hanaya.si-shukka.jpg",
+  "author": "Yogou0088",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%EF%BC%98%E5%B7%A5%E5%A0%B4%E5%86%85.jpg",
+  "file": "File:８工場内.jpg"
+ },
+ "hanaya.si-nokyo": {
+  "src": "photo-hanaya.si-nokyo.jpg",
+  "author": "全国農業協同組合中央会",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:JA_logo.svg",
+  "file": "File:JA logo.svg"
+ },
+ "hanaya.sk-aisatsu": {
+  "src": "photo-hanaya.sk-aisatsu.jpg",
+  "author": "Yifei He",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Welcome_differentlangs.svg",
+  "file": "File:Welcome differentlangs.svg"
+ },
+ "hanaya.sk-egao": {
+  "src": "photo-hanaya.sk-egao.jpg",
+  "author": "Faisal Akram from Dhaka, Bangladesh",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Colors_of_a_Smile_(3832023337).jpg",
+  "file": "File:Colors of a Smile (3832023337).jpg"
+ },
+ "hanaya.sk-ryoshusho": {
+  "src": "photo-hanaya.sk-ryoshusho.jpg",
+  "author": "National Museum of American History",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:US-BEP-Receipt_for_currency_(23_July_1915).jpg",
+  "file": "File:US-BEP-Receipt for currency (23 July 1915).jpg"
+ },
+ "hanaya.sk-pointcard": {
+  "src": "photo-hanaya.sk-pointcard.jpg",
+  "author": "User:Mattes",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kundenkarten.JPG",
+  "file": "File:Kundenkarten.JPG"
+ },
+ "hanaya.sk-cashless": {
+  "src": "photo-hanaya.sk-cashless.jpg",
+  "author": "Iain Hector",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Community_Noun_project_39956.svg",
+  "file": "File:Community Noun project 39956.svg"
+ },
+ "hanaya.sk-bridal": {
+  "src": "photo-hanaya.sk-bridal.jpg",
+  "author": "Edmund Blair Leighton",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Edmund_Blair_Leighton_-_The_Wedding_Register.jpg",
+  "file": "File:Edmund Blair Leighton - The Wedding Register.jpg"
+ },
+ "hanaya.ke-shotengai": {
+  "src": "photo-hanaya.ke-shotengai.jpg",
+  "author": "BJP039",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%8D%83%E6%9E%97%E5%95%86%E5%BA%97%E8%A1%97.jpg",
+  "file": "File:千林商店街.jpg"
+ },
+ "hanaya.ke-genkashokyaku": {
+  "src": "photo-hanaya.ke-genkashokyaku.jpg",
+  "author": "João Pimentel Ferreira",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Depreciation_car.svg",
+  "file": "File:Depreciation car.svg"
+ },
+ "noka.kh-nogyo": {
+  "src": "photo-noka.kh-nogyo.jpg",
+  "author": "Painter of the burial chamber of Sennedjem",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Maler_der_Grabkammer_des_Sennudem_001.jpg",
+  "file": "File:Maler der Grabkammer des Sennudem 001.jpg"
+ },
+ "noka.kh-noka": {
+  "src": "photo-noka.kh-noka.jpg",
+  "author": "Ralf Roletschek",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:04-09-12-Schaupfl%C3%BCgen-Fahrenwalde-RalfR-IMG_1232.jpg",
+  "file": "File:04-09-12-Schaupflügen-Fahrenwalde-RalfR-IMG 1232.jpg"
+ },
+ "noka.kh-tanbo": {
+  "src": "photo-noka.kh-tanbo.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryza_sativa_Rice_sprouts_ja01.jpg",
+  "file": "File:Oryza sativa Rice sprouts ja01.jpg"
+ },
+ "noka.kh-hatake": {
+  "src": "photo-noka.kh-hatake.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:140724_Biei_Hokkaido_Japan01s8.jpg",
+  "file": "File:140724 Biei Hokkaido Japan01s8.jpg"
+ },
+ "noka.kh-tanemaki": {
+  "src": "photo-noka.kh-tanemaki.jpg",
+  "author": "Jean-François Millet",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_(II)_013.jpg",
+  "file": "File:Jean-François Millet (II) 013.jpg"
+ },
+ "noka.kh-me": {
+  "src": "photo-noka.kh-me.jpg",
+  "author": "Rosser1954",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aesculus_hippocastanum_bud_and_its_sticky_cataphylls,_Spiers_Old_School_Grounds,_Beith.jpg",
+  "file": "File:Aesculus hippocastanum bud and its sticky cataphylls, Spiers Old School Grounds, Beith.jpg"
+ },
+ "noka.kh-ne": {
+  "src": "photo-noka.kh-ne.jpg",
+  "author": "Claus Ableiter",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wurzeln_am_Bergh%C3%A4user_Altrhein,_Speyerer_Auwald.JPG",
+  "file": "File:Wurzeln am Berghäuser Altrhein, Speyerer Auwald.JPG"
+ },
+ "noka.kh-kukibu": {
+  "src": "photo-noka.kh-kukibu.jpg",
+  "author": "松岡明芳",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Betula_platyphylla_var._japonica,7013906_Akiyoshi_Matsuoka.JPG",
+  "file": "File:Betula platyphylla var. japonica,7013906 Akiyoshi Matsuoka.JPG"
+ },
+ "noka.kh-ha": {
+  "src": "photo-noka.kh-ha.jpg",
+  "author": "Jon Sullivan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Leaf_1_web.jpg",
+  "file": "File:Leaf 1 web.jpg"
+ },
+ "noka.kh-hana": {
+  "src": "photo-noka.kh-hana.jpg",
+  "author": "The original uploader was Gombe at Japanese Wikipedia. Modif…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cherry_blossoms_(2004).jpg",
+  "file": "File:Cherry blossoms (2004).jpg"
+ },
+ "noka.kh-shukaku": {
+  "src": "photo-noka.kh-shukaku.jpg",
+  "author": "Pieter Brueghel the Elder",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Harvesters_by_Brueghel.jpg",
+  "file": "File:The Harvesters by Brueghel.jpg"
+ },
+ "noka.kh-shun": {
+  "src": "photo-noka.kh-shun.jpg",
+  "author": "Inoke",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Huriuri-1.jpg",
+  "file": "File:Huriuri-1.jpg"
+ },
+ "noka.kh-kisetsu": {
+  "src": "photo-noka.kh-kisetsu.jpg",
+  "author": "J.hagelüken",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:B%C3%A4ume_Jahreszeit_2013.jpg",
+  "file": "File:Bäume Jahreszeit 2013.jpg"
+ },
+ "noka.kh-tsuyu": {
+  "src": "photo-noka.kh-tsuyu.jpg",
+  "author": "Darkest tree This photo was taken with Canon PowerShot SX110…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Plum_rain_in_Shinjuku,_Tokyo.jpg",
+  "file": "File:Plum rain in Shinjuku, Tokyo.jpg"
+ },
+ "noka.kh-kateisaien": {
+  "src": "photo-noka.kh-kateisaien.jpg",
+  "author": "Paris Histoire",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Potager_du_Roi.jpg",
+  "file": "File:Potager du Roi.jpg"
+ },
+ "noka.kh-saibai": {
+  "src": "photo-noka.kh-saibai.jpg",
+  "author": "HelloMojo at en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Community_Garden,_Melbourne,_Australia.jpg",
+  "file": "File:Community Garden, Melbourne, Australia.jpg"
+ },
+ "noka.kh-kogosei": {
+  "src": "photo-noka.kh-kogosei.jpg",
+  "author": "Daniel Mayer (mav) - original imageVector version by Yerpo和訳…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Simple_photosynthesis_overview-ja.svg",
+  "file": "File:Simple photosynthesis overview-ja.svg"
+ },
+ "noka.kh-hatsuga": {
+  "src": "photo-noka.kh-hatsuga.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sunflower_seedlings.jpg",
+  "file": "File:Sunflower seedlings.jpg"
+ },
+ "noka.kh-honba": {
+  "src": "photo-noka.kh-honba.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fagus_crenata_in_Mount_Haku_2010-06-11.jpg",
+  "file": "File:Fagus crenata in Mount Haku 2010-06-11.jpg"
+ },
+ "noka.kh-shiyo": {
+  "src": "photo-noka.kh-shiyo.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fagus_crenata_in_Mount_Haku_2010-06-11.jpg",
+  "file": "File:Fagus crenata in Mount Haku 2010-06-11.jpg"
+ },
+ "noka.kh-koyomi": {
+  "src": "photo-noka.kh-koyomi.jpg",
+  "author": "Limbourg brothers / Barthélemy d'Eyck",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg",
+  "file": "File:Les Très Riches Heures du duc de Berry mars.jpg"
+ },
+ "noka.kh-risshun": {
+  "src": "photo-noka.kh-risshun.jpg",
+  "author": "Suzuki Harunobu",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E9%88%B4%E6%9C%A8%E6%98%A5%E4%BF%A1%E7%94%BB%E3%80%8C%E9%A2%A8%E4%BF%97%E5%9B%9B%E5%AD%A3%E6%AD%8C%E4%BB%99_%E7%AB%8B%E6%98%A5%E3%80%8D-The_First_Day_of_Spring_(Risshun),_from_the_series_Fashionable_Poetic_Immortals_of_the_Four_Seasons_(F%C5%ABzoku_shiki_Kasen)_MET_DP119536.jpg",
+  "file": "File:鈴木春信画「風俗四季歌仙 立春」-The First Day of Spring (Risshun), from the series Fashionable Poetic Immortals of the Four Seasons (Fūzoku shiki Kasen) MET DP119536.jpg"
+ },
+ "noka.kh-geshi": {
+  "src": "photo-noka.kh-geshi.jpg",
+  "author": "Image by Przemyslaw \"Blueshade\" Idzkiewicz",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Earth-lighting-summer-solstice_EN.png",
+  "file": "File:Earth-lighting-summer-solstice EN.png"
+ },
+ "noka.kh-shubun": {
+  "src": "photo-noka.kh-shubun.jpg",
+  "author": "Image by Przemyslaw \"Blueshade\" Idzkiewicz",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Earth-lighting-equinox_EN.png",
+  "file": "File:Earth-lighting-equinox EN.png"
+ },
+ "noka.kh-toji": {
+  "src": "photo-noka.kh-toji.jpg",
+  "author": "Image by Przemyslaw \"Blueshade\" Idzkiewicz",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Earth-lighting-winter-solstice_EN.png",
+  "file": "File:Earth-lighting-winter-solstice EN.png"
+ },
+ "noka.kh-hachijuhachiya": {
+  "src": "photo-noka.kh-hachijuhachiya.jpg",
+  "author": "vera46",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tea_picking_01.jpg",
+  "file": "File:Tea picking 01.jpg"
+ },
+ "noka.kh-shimo": {
+  "src": "photo-noka.kh-shimo.jpg",
+  "author": "Stiller Beobachter from Ansbach, Germany",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:It%27s_cold_outside_-_Flickr_-_Stiller_Beobachter.jpg",
+  "file": "File:It's cold outside - Flickr - Stiller Beobachter.jpg"
+ },
+ "noka.kh-osojimo": {
+  "src": "photo-noka.kh-osojimo.jpg",
+  "author": "Stiller Beobachter from Ansbach, Germany",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:It%27s_cold_outside_-_Flickr_-_Stiller_Beobachter.jpg",
+  "file": "File:It's cold outside - Flickr - Stiller Beobachter.jpg"
+ },
+ "noka.kh-kanbatsu": {
+  "src": "photo-noka.kh-kanbatsu.jpg",
+  "author": "CIAT",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NP_Kenya_211011_34_(6269481663).jpg",
+  "file": "File:NP Kenya 211011 34 (6269481663).jpg"
+ },
+ "noka.kh-yoryokutai": {
+  "src": "photo-noka.kh-yoryokutai.jpg",
+  "author": "Kristian Peters -- Fabelfroh",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Plagiomnium_affine_laminazellen.jpeg",
+  "file": "File:Plagiomnium affine laminazellen.jpeg"
+ },
+ "noka.kh-kiko": {
+  "src": "photo-noka.kh-kiko.jpg",
+  "author": "Photohound",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tomato_leaf_stomate_1-color.jpg",
+  "file": "File:Tomato leaf stomate 1-color.jpg"
+ },
+ "noka.kh-josan": {
+  "src": "photo-noka.kh-josan.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:FA_Geisenheim22.jpg",
+  "file": "File:FA Geisenheim22.jpg"
+ },
+ "noka.kh-kokyu": {
+  "src": "photo-noka.kh-kokyu.jpg",
+  "author": "Cruithne9",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gas_exchange.jpg",
+  "file": "File:Gas exchange.jpg"
+ },
+ "noka.kh-konmo": {
+  "src": "photo-noka.kh-konmo.jpg",
+  "author": "Oregon Caves from Cave Junction, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mycorhizae_fungus_(10333483254).jpg",
+  "file": "File:Mycorhizae fungus (10333483254).jpg"
+ },
+ "noka.kh-dokan": {
+  "src": "photo-noka.kh-dokan.jpg",
+  "author": "Kelvinsong",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Xylem_cells.svg",
+  "file": "File:Xylem cells.svg"
+ },
+ "noka.kh-ikansoku": {
+  "src": "photo-noka.kh-ikansoku.jpg",
+  "author": "RobKohl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Leitb%C3%BCndel.svg",
+  "file": "File:Leitbündel.svg"
+ },
+ "noka.kh-seichoten": {
+  "src": "photo-noka.kh-seichoten.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:M%C3%A9rist%C3%A8me_couches.png",
+  "file": "File:Méristème couches.png"
+ },
+ "noka.kh-kyumin": {
+  "src": "photo-noka.kh-kyumin.jpg",
+  "author": "Bobjgalindo",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Snowed-in_tree_in_Hermiston.JPG",
+  "file": "File:Snowed-in tree in Hermiston.JPG"
+ },
+ "noka.kh-shunka": {
+  "src": "photo-noka.kh-shunka.jpg",
+  "author": "Anneli Salo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hyoscyamus_niger_Hullukaali_Bolm%C3%B6rt_C_IMG_7657.JPG",
+  "file": "File:Hyoscyamus niger Hullukaali Bolmört C IMG 7657.JPG"
+ },
+ "noka.kh-hojo": {
+  "src": "photo-noka.kh-hojo.jpg",
+  "author": "Jean-Pol GRANDMONT",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mozet_(Belgique),_la_ferme_de_Baseille..jpg",
+  "file": "File:Mozet (Belgique), la ferme de Baseille..jpg"
+ },
+ "noka.kh-zairaishu": {
+  "src": "photo-noka.kh-zairaishu.jpg",
+  "author": "Theendofforever at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mainelupin.jpg",
+  "file": "File:Mainelupin.jpg"
+ },
+ "noka.kh-hangesho": {
+  "src": "photo-noka.kh-hangesho.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_karasubishaku5051.jpg",
+  "file": "File:W karasubishaku5051.jpg"
+ },
+ "noka.ys-yasai": {
+  "src": "photo-noka.ys-yasai.jpg",
+  "author": "Alex Proimos from Sydney, Australia",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Colours_of_Health_(4877352097).jpg",
+  "file": "File:Colours of Health (4877352097).jpg"
+ },
+ "noka.ys-tomato": {
+  "src": "photo-noka.ys-tomato.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tomatoes-on-the-bush.jpg",
+  "file": "File:Tomatoes-on-the-bush.jpg"
+ },
+ "noka.ys-kyuri": {
+  "src": "photo-noka.ys-kyuri.jpg",
+  "author": "Stephen Ausmus, USDA ARS",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ARS_cucumber.jpg",
+  "file": "File:ARS cucumber.jpg"
+ },
+ "noka.ys-nasu": {
+  "src": "photo-noka.ys-nasu.jpg",
+  "author": "Horst Frank",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Aubergine.jpg",
+  "file": "File:Aubergine.jpg"
+ },
+ "noka.ys-piman": {
+  "src": "photo-noka.ys-piman.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:GreenPeppers.jpg",
+  "file": "File:GreenPeppers.jpg"
+ },
+ "noka.ys-kabocha": {
+  "src": "photo-noka.ys-kabocha.jpg",
+  "author": "George Chernilevsky",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Cucurbita_2011_G1_Large.jpg",
+  "file": "File:Cucurbita 2011 G1 Large.jpg"
+ },
+ "noka.ys-tomorokoshi": {
+  "src": "photo-noka.ys-tomorokoshi.jpg",
+  "author": "The original Uploader was wstoakLL at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:VegCorn.jpg",
+  "file": "File:VegCorn.jpg"
+ },
+ "noka.ys-edamame": {
+  "src": "photo-noka.ys-edamame.jpg",
+  "author": "Tammy Green (aka Zesmerelda) from Chicago Upscale Dining + L…",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Edamame_by_Zesmerelda_in_Chicago.jpg",
+  "file": "File:Edamame by Zesmerelda in Chicago.jpg"
+ },
+ "noka.ys-kyabetsu": {
+  "src": "photo-noka.ys-kyabetsu.jpg",
+  "author": "Bill Tarpenning",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cabbage.jpg",
+  "file": "File:Cabbage.jpg"
+ },
+ "noka.ys-hakusai": {
+  "src": "photo-noka.ys-hakusai.jpg",
+  "author": "Forest & Kim Starr",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Starr_070730-7855_Brassica_rapa.jpg",
+  "file": "File:Starr 070730-7855 Brassica rapa.jpg"
+ },
+ "noka.ys-retasu": {
+  "src": "photo-noka.ys-retasu.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lettuce_iceberg_variety.jpeg",
+  "file": "File:Lettuce iceberg variety.jpeg"
+ },
+ "noka.ys-horenso": {
+  "src": "photo-noka.ys-horenso.jpg",
+  "author": "Quadell",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Spinach_produce-1.jpg",
+  "file": "File:Spinach produce-1.jpg"
+ },
+ "noka.ys-negi": {
+  "src": "photo-noka.ys-negi.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Scallion_Negi.jpg",
+  "file": "File:Scallion Negi.jpg"
+ },
+ "noka.ys-ninjin": {
+  "src": "photo-noka.ys-ninjin.jpg",
+  "author": "Roberta F.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mrkva.JPG",
+  "file": "File:Mrkva.JPG"
+ },
+ "noka.ys-daikon": {
+  "src": "photo-noka.ys-daikon.jpg",
+  "author": "Chris 73",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Daikon.Japan.jpg",
+  "file": "File:Daikon.Japan.jpg"
+ },
+ "noka.ys-jagaimo": {
+  "src": "photo-noka.ys-jagaimo.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Potatoes.jpg",
+  "file": "File:Potatoes.jpg"
+ },
+ "noka.ys-satsumaimo": {
+  "src": "photo-noka.ys-satsumaimo.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ipomoea_batatas.jpg",
+  "file": "File:Ipomoea batatas.jpg"
+ },
+ "noka.ys-minitomato": {
+  "src": "photo-noka.ys-minitomato.jpg",
+  "author": "Luc Viatour",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tomates_cerises_Luc_Viatour.jpg",
+  "file": "File:Tomates cerises Luc Viatour.jpg"
+ },
+ "noka.ys-burokkori": {
+  "src": "photo-noka.ys-burokkori.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Broccoli2.jpg",
+  "file": "File:Broccoli2.jpg"
+ },
+ "noka.ys-komatsuna": {
+  "src": "photo-noka.ys-komatsuna.jpg",
+  "author": "日陰猫Joga at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Komatsuna.jpg",
+  "file": "File:Komatsuna.jpg"
+ },
+ "noka.ys-okura": {
+  "src": "photo-noka.ys-okura.jpg",
+  "author": "Bill Tarpenning",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bucket_of_raw_okra_pods.jpg",
+  "file": "File:Bucket of raw okra pods.jpg"
+ },
+ "noka.ys-gobo": {
+  "src": "photo-noka.ys-gobo.jpg",
+  "author": "The original uploader was たね at Japanese Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_gobou4031.jpg",
+  "file": "File:W gobou4031.jpg"
+ },
+ "noka.ys-satoimo": {
+  "src": "photo-noka.ys-satoimo.jpg",
+  "author": "Dalgial",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Colocasia_esculenta_in_Gwangju_Korea.JPG",
+  "file": "File:Colocasia esculenta in Gwangju Korea.JPG"
+ },
+ "noka.ys-asuparagasu": {
+  "src": "photo-noka.ys-asuparagasu.jpg",
+  "author": "CSvBibra",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Illustration_Asparagus_officinalis0b.jpg",
+  "file": "File:Illustration Asparagus officinalis0b.jpg"
+ },
+ "noka.ys-shoga": {
+  "src": "photo-noka.ys-shoga.jpg",
+  "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Koeh-146-no_text.jpg",
+  "file": "File:Koeh-146-no text.jpg"
+ },
+ "noka.ys-ninniku": {
+  "src": "photo-noka.ys-ninniku.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Allium_sativum_Woodwill_1793.jpg",
+  "file": "File:Allium sativum Woodwill 1793.jpg"
+ },
+ "noka.ys-une": {
+  "src": "photo-noka.ys-une.jpg",
+  "author": "Namazu-tron",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Une(Japanese)(ridge)-_between_plowed_furrows.JPG",
+  "file": "File:Une(Japanese)(ridge)- between plowed furrows.JPG"
+ },
+ "noka.ys-mabiki": {
+  "src": "photo-noka.ys-mabiki.jpg",
+  "author": "Victor M. Vicente Selvas",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Malus_domestica_-_Abans_d%27aclarirPICT1233-horz.jpg",
+  "file": "File:Malus domestica - Abans d'aclarirPICT1233-horz.jpg"
+ },
+ "noka.ys-roji": {
+  "src": "photo-noka.ys-roji.jpg",
+  "author": "HelloMojo at en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Community_Garden,_Melbourne,_Australia.jpg",
+  "file": "File:Community Garden, Melbourne, Australia.jpg"
+ },
+ "noka.ys-tsuihi": {
+  "src": "photo-noka.ys-tsuihi.jpg",
+  "author": "Antonín Slejška Original uploader was Antonín Slejška at cs.…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Krechty_kompostarna.jpg",
+  "file": "File:Krechty kompostarna.jpg"
+ },
+ "noka.ys-tsuchiyose": {
+  "src": "photo-noka.ys-tsuchiyose.jpg",
+  "author": "Namazu-tron",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Une(Japanese)(ridge)-_between_plowed_furrows.JPG",
+  "file": "File:Une(Japanese)(ridge)- between plowed furrows.JPG"
+ },
+ "noka.ys-rinsaku": {
+  "src": "photo-noka.ys-rinsaku.jpg",
+  "author": "NASA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Crops_Kansas_AST_20010624.jpg",
+  "file": "File:Crops Kansas AST 20010624.jpg"
+ },
+ "noka.ys-konsai": {
+  "src": "photo-noka.ys-konsai.jpg",
+  "author": "Beatrice Murch",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Root_vegetables,_2007.jpg",
+  "file": "File:Root vegetables, 2007.jpg"
+ },
+ "noka.ys-yosai": {
+  "src": "photo-noka.ys-yosai.jpg",
+  "author": "L1NDUS",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%A9%BA%E5%BF%83%E8%8F%9C_(33054012960).jpg",
+  "file": "File:空心菜 (33054012960).jpg"
+ },
+ "noka.ys-imorui": {
+  "src": "photo-noka.ys-imorui.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Aardappelknollen_Fresco_(Solanum_tuberosum_%27Fresco%27).jpg",
+  "file": "File:Aardappelknollen Fresco (Solanum tuberosum 'Fresco').jpg"
+ },
+ "noka.ys-mamerui": {
+  "src": "photo-noka.ys-mamerui.jpg",
+  "author": "QuimGil",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dry_beans.jpg",
+  "file": "File:Dry beans.jpg"
+ },
+ "noka.ys-danshaku": {
+  "src": "photo-noka.ys-danshaku.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Potatoes.jpg",
+  "file": "File:Potatoes.jpg"
+ },
+ "noka.ys-mekuin": {
+  "src": "photo-noka.ys-mekuin.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Potatoes.jpg",
+  "file": "File:Potatoes.jpg"
+ },
+ "noka.ys-kasai": {
+  "src": "photo-noka.ys-kasai.jpg",
+  "author": "Biswarup Ganguly",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vegetables_0006.JPG",
+  "file": "File:Vegetables 0006.JPG"
+ },
+ "noka.ys-suiko": {
+  "src": "photo-noka.ys-suiko.jpg",
+  "author": "Satoshi KINOKUNI",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Indoor_Hydroponics_of_Morus,_Japan_(38459770052).jpg",
+  "file": "File:Indoor Hydroponics of Morus, Japan (38459770052).jpg"
+ },
+ "noka.ys-shokubutsukojo": {
+  "src": "photo-noka.ys-shokubutsukojo.jpg",
+  "author": "Satoshi KINOKUNI",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%A1%91%E3%81%AE%E6%B0%B4%E8%80%95%E6%A0%BD%E5%9F%B9%E3%82%92%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%83%A0%E3%81%95%E3%82%93%E3%81%AB%E3%81%A6_(37776549804).jpg",
+  "file": "File:桑の水耕栽培をされているストリームさんにて (37776549804).jpg"
+ },
+ "noka.ys-daigi": {
+  "src": "photo-noka.ys-daigi.jpg",
+  "author": "No machine-readable author provided. Kobako assumed (based o…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Zweij%C3%A4hrige-Gei%C3%9Ffu%C3%9Fveredelu.jpg",
+  "file": "File:Zweijährige-Geißfußveredelu.jpg"
+ },
+ "noka.ys-companion": {
+  "src": "photo-noka.ys-companion.jpg",
+  "author": "Neil Palmer",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Intercropping_coffee_tomatoes.jpg",
+  "file": "File:Intercropping coffee tomatoes.jpg"
+ },
+ "noka.ys-kekkyu": {
+  "src": "photo-noka.ys-kekkyu.jpg",
+  "author": "L1NDUS",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%A9%BA%E5%BF%83%E8%8F%9C_(33054012960).jpg",
+  "file": "File:空心菜 (33054012960).jpg"
+ },
+ "noka.ys-aburana": {
+  "src": "photo-noka.ys-aburana.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Brassica_rapa_ja02.jpg",
+  "file": "File:Brassica rapa ja02.jpg"
+ },
+ "noka.ys-nasuka": {
+  "src": "photo-noka.ys-nasuka.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Solanum_melongena_ja02.jpg",
+  "file": "File:Solanum melongena ja02.jpg"
+ },
+ "noka.ys-uri": {
+  "src": "photo-noka.ys-uri.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cucumis_sativus1.jpg",
+  "file": "File:Cucumis sativus1.jpg"
+ },
+ "noka.km-okome": {
+  "src": "photo-noka.km-okome.jpg",
+  "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryza_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-232.jpg",
+  "file": "File:Oryza sativa - Köhler–s Medizinal-Pflanzen-232.jpg"
+ },
+ "noka.km-ine": {
+  "src": "photo-noka.km-ine.jpg",
+  "author": "Keith Weller",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:US_long_grain_rice.jpg",
+  "file": "File:US long grain rice.jpg"
+ },
+ "noka.km-taue": {
+  "src": "photo-noka.km-taue.jpg",
+  "author": "katorisi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rice-transplanting_Festival_in_Katori-jingu_1,katori-city,japan.jpg",
+  "file": "File:Rice-transplanting Festival in Katori-jingu 1,katori-city,japan.jpg"
+ },
+ "noka.km-inekari": {
+  "src": "photo-noka.km-inekari.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rice-combine-harvester,_Katori-city,_Japan.jpg",
+  "file": "File:Rice-combine-harvester, Katori-city, Japan.jpg"
+ },
+ "noka.km-suiden": {
+  "src": "photo-noka.km-suiden.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryza_sativa_Rice_sprouts_ja01.jpg",
+  "file": "File:Oryza sativa Rice sprouts ja01.jpg"
+ },
+ "noka.km-genmai": {
+  "src": "photo-noka.km-genmai.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Brown_rice.jpg",
+  "file": "File:Brown rice.jpg"
+ },
+ "noka.km-hakumai": {
+  "src": "photo-noka.km-hakumai.jpg",
+  "author": "Miyuki Meinaka",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Utsunomiya_Blitzen_Rice,_Yudai_21.jpg",
+  "file": "File:Utsunomiya Blitzen Rice, Yudai 21.jpg"
+ },
+ "noka.km-shinmai": {
+  "src": "photo-noka.km-shinmai.jpg",
+  "author": "吉田宅浪",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%81%BE%E3%81%BB%E3%82%89%E7%B1%B3_5kg.jpg",
+  "file": "File:まほら米 5kg.jpg"
+ },
+ "noka.km-mochigome": {
+  "src": "photo-noka.km-mochigome.jpg",
+  "author": "katorisi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rice-cake_making,Katori-city,Japan.JPG",
+  "file": "File:Rice-cake making,Katori-city,Japan.JPG"
+ },
+ "noka.km-wara": {
+  "src": "photo-noka.km-wara.jpg",
+  "author": "Green",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rice_straw.jpg",
+  "file": "File:Rice straw.jpg"
+ },
+ "noka.km-inaho": {
+  "src": "photo-noka.km-inaho.jpg",
+  "author": "Keith Weller",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:US_long_grain_rice.jpg",
+  "file": "File:US long grain rice.jpg"
+ },
+ "noka.km-koshihikari": {
+  "src": "photo-noka.km-koshihikari.jpg",
+  "author": "Siriusplot",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rice_Japonica_Koshihikari.jpg",
+  "file": "File:Rice Japonica Koshihikari.jpg"
+ },
+ "noka.km-tanada": {
+  "src": "photo-noka.km-tanada.jpg",
+  "author": "Jeff Caylor",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:RiceTerracesVietnam.jpg",
+  "file": "File:RiceTerracesVietnam.jpg"
+ },
+ "noka.km-mugi": {
+  "src": "photo-noka.km-mugi.jpg",
+  "author": "唐山健志郎",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%BE%8E%E7%91%9B%E3%81%AE%E5%A4%8F.JPG",
+  "file": "File:美瑛の夏.JPG"
+ },
+ "noka.km-komugi": {
+  "src": "photo-noka.km-komugi.jpg",
+  "author": "Walther Otto Müller",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Triticum_aestivum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-274.jpg",
+  "file": "File:Triticum aestivum - Köhler–s Medizinal-Pflanzen-274.jpg"
+ },
+ "noka.km-daizu": {
+  "src": "photo-noka.km-daizu.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_daizu4111.jpg",
+  "file": "File:W daizu4111.jpg"
+ },
+ "noka.km-komeko": {
+  "src": "photo-noka.km-komeko.jpg",
+  "author": "Siriusplot",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%B1%B3%E7%B2%89100.jpg",
+  "file": "File:米粉100.jpg"
+ },
+ "noka.km-nuka": {
+  "src": "photo-noka.km-nuka.jpg",
+  "author": "Guadalupe Chaquilla-Quilca, René Renato Balandrán-Quintana, …",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wheat_bran_structure.gif",
+  "file": "File:Wheat bran structure.gif"
+ },
+ "noka.km-inasaku": {
+  "src": "photo-noka.km-inasaku.jpg",
+  "author": "AndrewMT",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:RiceYield.png",
+  "file": "File:RiceYield.png"
+ },
+ "noka.km-tanemomi": {
+  "src": "photo-noka.km-tanemomi.jpg",
+  "author": "No machine-readable author provided. Green assumed (based on…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Unhulled_rice.jpg",
+  "file": "File:Unhulled rice.jpg"
+ },
+ "noka.km-aze": {
+  "src": "photo-noka.km-aze.jpg",
+  "author": "User:Geofrog",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:RicePaddyJapan1.jpg",
+  "file": "File:RicePaddyJapan1.jpg"
+ },
+ "noka.km-yousuiro": {
+  "src": "photo-noka.km-yousuiro.jpg",
+  "author": "松岡明芳",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Kishi-House_Nishiwaki,Hyogo,Japan_%E6%97%A7%E6%9D%A5%E4%BD%8F%E5%AE%B6%E4%BD%8F%E5%AE%85%EF%BC%88%E6%9D%A5%E4%BD%8F%E6%A2%85%E5%90%89%E6%97%A7%E9%82%B8%EF%BC%89DSCF9595.JPG",
+  "file": "File:Old Kishi-House Nishiwaki,Hyogo,Japan 旧来住家住宅（来住梅吉旧邸）DSCF9595.JPG"
+ },
+ "noka.km-momigara": {
+  "src": "photo-noka.km-momigara.jpg",
+  "author": "No machine-readable author provided. Green assumed (based on…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rice_chaffs.jpg",
+  "file": "File:Rice chaffs.jpg"
+ },
+ "noka.km-dakkoku": {
+  "src": "photo-noka.km-dakkoku.jpg",
+  "author": "Jayaseerlourdhuraj",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:A_farmer.jpg",
+  "file": "File:A farmer.jpg"
+ },
+ "noka.km-haigamai": {
+  "src": "photo-noka.km-haigamai.jpg",
+  "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryza_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-232.jpg",
+  "file": "File:Oryza sativa - Köhler–s Medizinal-Pflanzen-232.jpg"
+ },
+ "noka.km-komai": {
+  "src": "photo-noka.km-komai.jpg",
+  "author": "吉田宅浪",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%81%BE%E3%81%BB%E3%82%89%E7%B1%B3_5kg.jpg",
+  "file": "File:まほら米 5kg.jpg"
+ },
+ "noka.km-uruchimai": {
+  "src": "photo-noka.km-uruchimai.jpg",
+  "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryza_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-232.jpg",
+  "file": "File:Oryza sativa - Köhler–s Medizinal-Pflanzen-232.jpg"
+ },
+ "noka.km-sakamai": {
+  "src": "photo-noka.km-sakamai.jpg",
+  "author": "Takuya Oikawa",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%B3%E3%82%B7%E3%83%92%E3%82%AB%E3%83%AA%E7%AD%89_(16915906410).jpg",
+  "file": "File:コシヒカリ等 (16915906410).jpg"
+ },
+ "noka.km-omugi": {
+  "src": "photo-noka.km-omugi.jpg",
+  "author": "Craig Nagy",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korea-Barley-01.jpg",
+  "file": "File:Korea-Barley-01.jpg"
+ },
+ "noka.km-bunketsu": {
+  "src": "photo-noka.km-bunketsu.jpg",
+  "author": "Victor M. Vicente Selvas",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hordeum_vulgare_-_Barley_tillering.jpg",
+  "file": "File:Hordeum vulgare - Barley tillering.jpg"
+ },
+ "noka.km-japonica": {
+  "src": "photo-noka.km-japonica.jpg",
+  "author": "No machine-readable author provided. Green assumed (based on…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hinohikari_hulled.jpg",
+  "file": "File:Hinohikari hulled.jpg"
+ },
+ "noka.km-indica": {
+  "src": "photo-noka.km-indica.jpg",
+  "author": "No machine-readable author provided. Ranveig assumed (based …",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Brun_ris.jpg",
+  "file": "File:Brun ris.jpg"
+ },
+ "noka.km-rikuto": {
+  "src": "photo-noka.km-rikuto.jpg",
+  "author": "Rosyaraur (talk)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:4_upland_rice_field.jpg",
+  "file": "File:4 upland rice field.jpg"
+ },
+ "noka.km-senmaida": {
+  "src": "photo-noka.km-senmaida.jpg",
+  "author": "Jeff Caylor",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:RiceTerracesVietnam.jpg",
+  "file": "File:RiceTerracesVietnam.jpg"
+ },
+ "noka.km-touhuku": {
+  "src": "photo-noka.km-touhuku.jpg",
+  "author": "Misei sen",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E4%BB%A4%E5%92%8C8%E5%B9%B48%E6%9C%88%E5%8D%83%E8%91%89%E8%B1%AA%E9%9B%A8%E3%81%AB%E3%82%88%E3%82%8A%E3%81%AA%E3%81%8E%E5%80%92%E3%81%95%E3%82%8C%E3%81%9F%E3%82%A4%E3%83%8D.jpg",
+  "file": "File:令和8年8月千葉豪雨によりなぎ倒されたイネ.jpg"
+ },
+ "noka.kd-kudamono": {
+  "src": "photo-noka.kd-kudamono.jpg",
+  "author": "George Chernilevsky",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Apples_on_tree_2011_G1.jpg",
+  "file": "File:Apples on tree 2011 G1.jpg"
+ },
+ "noka.kd-ringo": {
+  "src": "photo-noka.kd-ringo.jpg",
+  "author": "Abhijit Tembhekar from Mumbai, India",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_Apple.jpg",
+  "file": "File:Red Apple.jpg"
+ },
+ "noka.kd-ichigo": {
+  "src": "photo-noka.kd-ichigo.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Strawberries.JPG",
+  "file": "File:Strawberries.JPG"
+ },
+ "noka.kd-momo": {
+  "src": "photo-noka.kd-momo.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Illustration_Prunus_persica0.jpg",
+  "file": "File:Illustration Prunus persica0.jpg"
+ },
+ "noka.kd-nashi": {
+  "src": "photo-noka.kd-nashi.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pear-tree,katori-city,japan.JPG",
+  "file": "File:Pear-tree,katori-city,japan.JPG"
+ },
+ "noka.kd-melon": {
+  "src": "photo-noka.kd-melon.jpg",
+  "author": "USDA photo by Scott Bauer. Image Number K7355-11.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cucumis_melo_var._reticulatus_(photo_by_Scott_Bauer).jpg",
+  "file": "File:Cucumis melo var. reticulatus (photo by Scott Bauer).jpg"
+ },
+ "noka.kd-kuri": {
+  "src": "photo-noka.kd-kuri.jpg",
+  "author": "Apple2000",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Chestnut04.jpg",
+  "file": "File:Japanese Chestnut04.jpg"
+ },
+ "noka.kd-blueberry": {
+  "src": "photo-noka.kd-blueberry.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Vaccinium_corymbosum(01).jpg",
+  "file": "File:Vaccinium corymbosum(01).jpg"
+ },
+ "noka.kd-kiwi": {
+  "src": "photo-noka.kd-kiwi.jpg",
+  "author": "Crowhurst et al.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Actinidia_fruits.jpg",
+  "file": "File:Actinidia fruits.jpg"
+ },
+ "noka.kd-kajuen": {
+  "src": "photo-noka.kd-kajuen.jpg",
+  "author": "David Shankbone",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lemon_Orchard_in_the_Galilee_by_David_Shankbone.jpg",
+  "file": "File:Lemon Orchard in the Galilee by David Shankbone.jpg"
+ },
+ "noka.kd-himawari": {
+  "src": "photo-noka.kd-himawari.jpg",
+  "author": "Jakub Hałun",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20180729_1018_s%C5%82onecznik_4501_DxO.jpg",
+  "file": "File:20180729 1018 słonecznik 4501 DxO.jpg"
+ },
+ "noka.kd-tulip": {
+  "src": "photo-noka.kd-tulip.jpg",
+  "author": "Arashiyama",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_and_Tulips_4.jpg",
+  "file": "File:Mount Fuji and Tulips 4.jpg"
+ },
+ "noka.kd-bara": {
+  "src": "photo-noka.kd-bara.jpg",
+  "author": "Laitche",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mrs._Herbert_Stevens_May_2008.jpg",
+  "file": "File:Mrs. Herbert Stevens May 2008.jpg"
+ },
+ "noka.kd-carnation": {
+  "src": "photo-noka.kd-carnation.jpg",
+  "author": "草花写真館",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_carnation4051.jpg",
+  "file": "File:W carnation4051.jpg"
+ },
+ "noka.kd-mitsubachi": {
+  "src": "photo-noka.kd-mitsubachi.jpg",
+  "author": "Jon Sullivan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bee_Collecting_Pollen_2004-08-14.jpg",
+  "file": "File:Bee Collecting Pollen 2004-08-14.jpg"
+ },
+ "noka.kd-kyukon": {
+  "src": "photo-noka.kd-kyukon.jpg",
+  "author": "This photography was created by Mariluna. Other photos see h…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tulipa_fringed_-_burgundy_lace_-_bulbs.jpg",
+  "file": "File:Tulipa fringed - burgundy lace - bulbs.jpg"
+ },
+ "noka.kd-kaju": {
+  "src": "photo-noka.kd-kaju.jpg",
+  "author": "George Chernilevsky",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Apples_on_tree_2011_G1.jpg",
+  "file": "File:Apples on tree 2011 G1.jpg"
+ },
+ "noka.kd-jufun": {
+  "src": "photo-noka.kd-jufun.jpg",
+  "author": "Malene Thyssen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bombus_Bumblebee_(Bestoevning).jpg",
+  "file": "File:Bombus Bumblebee (Bestoevning).jpg"
+ },
+ "noka.kd-kafun": {
+  "src": "photo-noka.kd-kafun.jpg",
+  "author": "Dartmouth College Electron Microscope Facility",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Misc_pollen.jpg",
+  "file": "File:Misc pollen.jpg"
+ },
+ "noka.kd-tsugiki": {
+  "src": "photo-noka.kd-tsugiki.jpg",
+  "author": "No machine-readable author provided. Kobako assumed (based o…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Zweij%C3%A4hrige-Gei%C3%9Ffu%C3%9Fveredelu.jpg",
+  "file": "File:Zweijährige-Geißfußveredelu.jpg"
+ },
+ "noka.kd-sentei": {
+  "src": "photo-noka.kd-sentei.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Podocarpus_macrophyllus,katori-city,japan.JPG",
+  "file": "File:Podocarpus macrophyllus,katori-city,japan.JPG"
+ },
+ "noka.kd-kankitsu": {
+  "src": "photo-noka.kd-kankitsu.jpg",
+  "author": "Scott Bauer, USDA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Citrus_fruits.jpg",
+  "file": "File:Citrus fruits.jpg"
+ },
+ "noka.kd-unshu": {
+  "src": "photo-noka.kd-unshu.jpg",
+  "author": "Batholith",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Citrus_unshiu_20101127_c.jpg",
+  "file": "File:Citrus unshiu 20101127 c.jpg"
+ },
+ "noka.kd-shine": {
+  "src": "photo-noka.kd-shine.jpg",
+  "author": "黒崎一男",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3%E3%83%9E%E3%82%B9%E3%82%AB%E3%83%83%E3%83%88.jpg",
+  "file": "File:シャインマスカット.jpg"
+ },
+ "noka.kd-yonashi": {
+  "src": "photo-noka.kd-yonashi.jpg",
+  "author": "Keith Weller",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pears.jpg",
+  "file": "File:Pears.jpg"
+ },
+ "noka.kd-kosui": {
+  "src": "photo-noka.kd-kosui.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pear-tree,katori-city,japan.JPG",
+  "file": "File:Pear-tree,katori-city,japan.JPG"
+ },
+ "noka.kd-kaki": {
+  "src": "photo-noka.kd-kaki.jpg",
+  "author": "Chenspec",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aluf_Sadeh_interchange_2015_(4).JPG",
+  "file": "File:Aluf Sadeh interchange 2015 (4).JPG"
+ },
+ "noka.kd-kirihana": {
+  "src": "photo-noka.kd-kirihana.jpg",
+  "author": "Photo by and (c)2007 Jina Lee",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rose_hydrangea_calla_wedding_bouquet.jpg",
+  "file": "File:Rose hydrangea calla wedding bouquet.jpg"
+ },
+ "noka.kd-yuzu": {
+  "src": "photo-noka.kd-yuzu.jpg",
+  "author": "Nikita from Russian Federation",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Yuzu_oranges_(6459456959).jpg",
+  "file": "File:Yuzu oranges (6459456959).jpg"
+ },
+ "noka.kd-jinkojufun": {
+  "src": "photo-noka.kd-jinkojufun.jpg",
+  "author": "Internet Archive Book Images",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cucurbita_hand_pollination_page_78_of_%22Luther_Burbank,_his_methods_and_discoveries...%22_(1914).jpg",
+  "file": "File:Cucurbita hand pollination page 78 of \"Luther Burbank, his methods and discoveries...\" (1914).jpg"
+ },
+ "noka.kd-seishi": {
+  "src": "photo-noka.kd-seishi.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Podocarpus_macrophyllus,katori-city,japan.JPG",
+  "file": "File:Podocarpus macrophyllus,katori-city,japan.JPG"
+ },
+ "noka.kd-kekkashi": {
+  "src": "photo-noka.kd-kekkashi.jpg",
+  "author": "George Chernilevsky",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Apples_on_tree_2011_G1.jpg",
+  "file": "File:Apples on tree 2011 G1.jpg"
+ },
+ "noka.kd-lafrance": {
+  "src": "photo-noka.kd-lafrance.jpg",
+  "author": "Fg2",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:PearLaFrance.jpg",
+  "file": "File:PearLaFrance.jpg"
+ },
+ "noka.kd-kaga": {
+  "src": "photo-noka.kd-kaga.jpg",
+  "author": "Rosser1954",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aesculus_hippocastanum_bud_and_its_sticky_cataphylls,_Spiers_Old_School_Grounds,_Beith.jpg",
+  "file": "File:Aesculus hippocastanum bud and its sticky cataphylls, Spiers Old School Grounds, Beith.jpg"
+ },
+ "noka.kd-sashiki": {
+  "src": "photo-noka.kd-sashiki.jpg",
+  "author": "The original uploader was Gmihail at Serbian Wikipedia.",
+  "license": "CC BY-SA 3.0 RS",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Adventitious_roots_of_Magnolia_cutting.jpg",
+  "file": "File:Adventitious roots of Magnolia cutting.jpg"
+ },
+ "noka.kd-kanyo": {
+  "src": "photo-noka.kd-kanyo.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chlorophytum_comosum0.jpg",
+  "file": "File:Chlorophytum comosum0.jpg"
+ },
+ "noka.ts-hiryo": {
+  "src": "photo-noka.ts-hiryo.jpg",
+  "author": "Antonín Slejška Original uploader was Antonín Slejška at cs.…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Krechty_kompostarna.jpg",
+  "file": "File:Krechty kompostarna.jpg"
+ },
+ "noka.ts-taihi": {
+  "src": "photo-noka.ts-taihi.jpg",
+  "author": "Crystalclear",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Compost_site_germany.JPG",
+  "file": "File:Compost site germany.JPG"
+ },
+ "noka.ts-fuyodo": {
+  "src": "photo-noka.ts-fuyodo.jpg",
+  "author": "Original: Wilsonbiggs Vector: EssensStrassen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Soil_Horizons.svg",
+  "file": "File:Soil Horizons.svg"
+ },
+ "noka.ts-ekichu": {
+  "src": "photo-noka.ts-ekichu.jpg",
+  "author": "Dekayem",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lady_bugs_are_a_beneficial_insect_commonly_sold_for_biological_control_of_aphids..jpg",
+  "file": "File:Lady bugs are a beneficial insect commonly sold for biological control of aphids..jpg"
+ },
+ "noka.ts-tentomushi": {
+  "src": "photo-noka.ts-tentomushi.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Coccinella_septempunctata_detail.jpg",
+  "file": "File:Coccinella septempunctata detail.jpg"
+ },
+ "noka.ts-zasso": {
+  "src": "photo-noka.ts-zasso.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_oobako4041.jpg",
+  "file": "File:W oobako4041.jpg"
+ },
+ "noka.ts-kusatori": {
+  "src": "photo-noka.ts-kusatori.jpg",
+  "author": "Kuratle",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Soldaten_beim_M%C3%A4hen_des_Heugrases_-_CH-BAR_-_3238639.tif",
+  "file": "File:Soldaten beim Mähen des Heugrases - CH-BAR - 3238639.tif"
+ },
+ "noka.ts-nendo": {
+  "src": "photo-noka.ts-nendo.jpg",
+  "author": "Siim Sepp",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Clay-ss-2005.jpg",
+  "file": "File:Clay-ss-2005.jpg"
+ },
+ "noka.ts-suna": {
+  "src": "photo-noka.ts-suna.jpg",
+  "author": "あおもりくま（aomorikuma）",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%A0%82%E6%8B%A1%E5%A4%A7.jpg",
+  "file": "File:砂拡大.jpg"
+ },
+ "noka.ts-noyaku": {
+  "src": "photo-noka.ts-noyaku.jpg",
+  "author": "Josephine-v-G",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Condor_landbouwspuit.jpg",
+  "file": "File:Condor landbouwspuit.jpg"
+ },
+ "noka.ts-dojo": {
+  "src": "photo-noka.ts-dojo.jpg",
+  "author": "Carlosblh",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Estructura-suelo.jpg",
+  "file": "File:Estructura-suelo.jpg"
+ },
+ "noka.ts-kagakuhiryo": {
+  "src": "photo-noka.ts-kagakuhiryo.jpg",
+  "author": "Antonín Slejška Original uploader was Antonín Slejška at cs.…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Krechty_kompostarna.jpg",
+  "file": "File:Krechty kompostarna.jpg"
+ },
+ "noka.ts-yukihiryo": {
+  "src": "photo-noka.ts-yukihiryo.jpg",
+  "author": "Anna Frodesiak",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Manure_01.JPG",
+  "file": "File:Manure 01.JPG"
+ },
+ "noka.ts-sanyoso": {
+  "src": "photo-noka.ts-sanyoso.jpg",
+  "author": "金城",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89%E8%88%88%E7%94%A31.JPG",
+  "file": "File:ゴールド興産1.JPG"
+ },
+ "noka.ts-chisso": {
+  "src": "photo-noka.ts-chisso.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Liquid_nitrogen_dsc04496.jpg",
+  "file": "File:Liquid nitrogen dsc04496.jpg"
+ },
+ "noka.ts-rinsan": {
+  "src": "photo-noka.ts-rinsan.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Phosphoric-acid-2D-dimensions.png",
+  "file": "File:Phosphoric-acid-2D-dimensions.png"
+ },
+ "noka.ts-kariumu": {
+  "src": "photo-noka.ts-kariumu.jpg",
+  "author": "Dnn87",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Potassium.JPG",
+  "file": "File:Potassium.JPG"
+ },
+ "noka.ts-sekkai": {
+  "src": "photo-noka.ts-sekkai.jpg",
+  "author": "Picture taken by w:User:Walkerma in June 2005.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Calcium_hydroxide.jpg",
+  "file": "File:Calcium hydroxide.jpg"
+ },
+ "noka.ts-motogoe": {
+  "src": "photo-noka.ts-motogoe.jpg",
+  "author": "Antonín Slejška Original uploader was Antonín Slejška at cs.…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Krechty_kompostarna.jpg",
+  "file": "File:Krechty kompostarna.jpg"
+ },
+ "noka.ts-ryokuhi": {
+  "src": "photo-noka.ts-ryokuhi.jpg",
+  "author": "トビの大盛",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ono-himawarino-oka-park6226180%E2%97%8F.jpg",
+  "file": "File:Ono-himawarino-oka-park6226180●.jpg"
+ },
+ "noka.ts-fushoku": {
+  "src": "photo-noka.ts-fushoku.jpg",
+  "author": "Original: Wilsonbiggs Vector: EssensStrassen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Soil_Horizons.svg",
+  "file": "File:Soil Horizons.svg"
+ },
+ "noka.ts-konryukin": {
+  "src": "photo-noka.ts-konryukin.jpg",
+  "author": "Louisa Howard - Dartmouth Electron Microscope Facility",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Root-nodule01.jpg",
+  "file": "File:Root-nodule01.jpg"
+ },
+ "noka.ts-udonko": {
+  "src": "photo-noka.ts-udonko.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Powdery_mildew.JPG",
+  "file": "File:Powdery mildew.JPG"
+ },
+ "noka.ts-satoyama": {
+  "src": "photo-noka.ts-satoyama.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Inagi_satoyama_06b5841s.jpg",
+  "file": "File:Inagi satoyama 06b5841s.jpg"
+ },
+ "noka.ts-byogenkin": {
+  "src": "photo-noka.ts-byogenkin.jpg",
+  "author": "explorebiology",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:XBio_illustration_%E2%80%93_Pathogen.png",
+  "file": "File:XBio illustration – Pathogen.png"
+ },
+ "noka.ts-kudo": {
+  "src": "photo-noka.ts-kudo.jpg",
+  "author": "Warut Roonguthai",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Magnesium_crystals.jpg",
+  "file": "File:Magnesium crystals.jpg"
+ },
+ "noka.ts-kurobokudo": {
+  "src": "photo-noka.ts-kurobokudo.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Andisol_profile.jpg",
+  "file": "File:Andisol profile.jpg"
+ },
+ "noka.ts-kinkonkin": {
+  "src": "photo-noka.ts-kinkonkin.jpg",
+  "author": "Σ64",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Amanita_pseudoporphyria_06.jpg",
+  "file": "File:Amanita pseudoporphyria 06.jpg"
+ },
+ "noka.ts-betobyo": {
+  "src": "photo-noka.ts-betobyo.jpg",
+  "author": "The original uploader was Agne27 at English Wikipedia. (Orig…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Downy_and_Powdery_mildew_on_grape_leaf.JPG",
+  "file": "File:Downy and Powdery mildew on grape leaf.JPG"
+ },
+ "noka.ts-enrui": {
+  "src": "photo-noka.ts-enrui.jpg",
+  "author": "Scott Bauer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_fields_in_central_California.jpg",
+  "file": "File:Aerial view of fields in central California.jpg"
+ },
+ "noka.dg-tractor": {
+  "src": "photo-noka.dg-tractor.jpg",
+  "author": "Solitude",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Modern-tractor.jpg",
+  "file": "File:Modern-tractor.jpg"
+ },
+ "noka.dg-taueki": {
+  "src": "photo-noka.dg-taueki.jpg",
+  "author": "katorisi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rice-planting-machine_2,katori-city,japan.JPG",
+  "file": "File:Rice-planting-machine 2,katori-city,japan.JPG"
+ },
+ "noka.dg-scoop": {
+  "src": "photo-noka.dg-scoop.jpg",
+  "author": "SvenPek",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Skovl.jpg",
+  "file": "File:Skovl.jpg"
+ },
+ "noka.dg-joro": {
+  "src": "photo-noka.dg-joro.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Watercan.png",
+  "file": "File:Watercan.png"
+ },
+ "noka.dg-vinylhouse": {
+  "src": "photo-noka.dg-vinylhouse.jpg",
+  "author": "Shift",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Greenhouse_for_rice.jpg",
+  "file": "File:Greenhouse for rice.jpg"
+ },
+ "noka.dg-kusakariki": {
+  "src": "photo-noka.dg-kusakariki.jpg",
+  "author": "Green",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Handy_mower.jpg",
+  "file": "File:Handy mower.jpg"
+ },
+ "noka.dg-seimaiki": {
+  "src": "photo-noka.dg-seimaiki.jpg",
+  "author": "No machine-readable author provided. Green assumed (based on…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rice_polisher_japanese.jpg",
+  "file": "File:Rice polisher japanese.jpg"
+ },
+ "noka.dg-kounki": {
+  "src": "photo-noka.dg-kounki.jpg",
+  "author": "Green",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rotary_tiller_compact.jpg",
+  "file": "File:Rotary tiller compact.jpg"
+ },
+ "noka.dg-sprinkler": {
+  "src": "photo-noka.dg-sprinkler.jpg",
+  "author": "Anton",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sprinkler_Irrigation_-_Sprinkler_head.JPG",
+  "file": "File:Sprinkler Irrigation - Sprinkler head.JPG"
+ },
+ "noka.dg-smart": {
+  "src": "photo-noka.dg-smart.jpg",
+  "author": "Grummelbacke",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Primel_mit_bewaesserungsautomatik.jpg",
+  "file": "File:Primel mit bewaesserungsautomatik.jpg"
+ },
+ "noka.dg-gps": {
+  "src": "photo-noka.dg-gps.jpg",
+  "author": "Gnsin",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Global-Positioning-System.jpg",
+  "file": "File:Global-Positioning-System.jpg"
+ },
+ "noka.dg-sensor": {
+  "src": "photo-noka.dg-sensor.jpg",
+  "author": "Project Kei",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Smart_sensor_PS-SMT-W01.jpg",
+  "file": "File:Smart sensor PS-SMT-W01.jpg"
+ },
+ "noka.dg-senbakoki": {
+  "src": "photo-noka.dg-senbakoki.jpg",
+  "author": "katorisi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_old_threshing_machine,Senba-koki,Katori-city,Japan.JPG",
+  "file": "File:Japanese old threshing machine,Senba-koki,Katori-city,Japan.JPG"
+ },
+ "noka.dg-tomi": {
+  "src": "photo-noka.dg-tomi.jpg",
+  "author": "Kusakabe Kimbei",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kusakabe_Kimbei_-_59_Cleaning_Rice.jpg",
+  "file": "File:Kusakabe Kimbei - 59 Cleaning Rice.jpg"
+ },
+ "noka.dg-ashibumi": {
+  "src": "photo-noka.dg-ashibumi.jpg",
+  "author": "100yen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Step_type_thresher.JPG",
+  "file": "File:Step type thresher.JPG"
+ },
+ "noka.dg-kanriki": {
+  "src": "photo-noka.dg-kanriki.jpg",
+  "author": "Green",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rotary_tiller_compact.jpg",
+  "file": "File:Rotary tiller compact.jpg"
+ },
+ "noka.dg-momisuriki": {
+  "src": "photo-noka.dg-momisuriki.jpg",
+  "author": "No machine-readable author provided. Green assumed (based on…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:An_old-type_huller.jpg",
+  "file": "File:An old-type huller.jpg"
+ },
+ "noka.dg-karibaraiki": {
+  "src": "photo-noka.dg-karibaraiki.jpg",
+  "author": "Green",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Handy_mower.jpg",
+  "file": "File:Handy mower.jpg"
+ },
+ "noka.dg-unpansha": {
+  "src": "photo-noka.dg-unpansha.jpg",
+  "author": "No machine-readable author provided. Klever assumed (based o…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Renault_Magnum-Palifor_(B)-2004.jpg",
+  "file": "File:Renault Magnum-Palifor (B)-2004.jpg"
+ },
+ "noka.dg-pipehouse": {
+  "src": "photo-noka.dg-pipehouse.jpg",
+  "author": "Shift",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Greenhouse_for_rice.jpg",
+  "file": "File:Greenhouse for rice.jpg"
+ },
+ "noka.dg-kankisen": {
+  "src": "photo-noka.dg-kankisen.jpg",
+  "author": "Saud",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Xpelair_GX12_Extractor_Fan.jpg",
+  "file": "File:Xpelair GX12 Extractor Fan.jpg"
+ },
+ "noka.dg-forklift": {
+  "src": "photo-noka.dg-forklift.jpg",
+  "author": "Forklift_Truck-blank.svg: Ewan ar Born derivative work: //Se…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Forklift_Truck-no_lines.svg",
+  "file": "File:Forklift Truck-no lines.svg"
+ },
+ "noka.dg-seatbelt": {
+  "src": "photo-noka.dg-seatbelt.jpg",
+  "author": "ITU Pictures",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Crash_test_dummy_with_three-point_seat_belt_(cropped).jpg",
+  "file": "File:Crash test dummy with three-point seat belt (cropped).jpg"
+ },
+ "noka.dg-plow": {
+  "src": "photo-noka.dg-plow.jpg",
+  "author": "Ralf Roletschek",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:04-09-12-Schaupfl%C3%BCgen-Fahrenwalde-RalfR-IMG_1232.jpg",
+  "file": "File:04-09-12-Schaupflügen-Fahrenwalde-RalfR-IMG 1232.jpg"
+ },
+ "noka.dg-baler": {
+  "src": "photo-noka.dg-baler.jpg",
+  "author": "Flominator",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Round_baler_3058.jpg",
+  "file": "File:Round baler 3058.jpg"
+ },
+ "noka.dg-rtk": {
+  "src": "photo-noka.dg-rtk.jpg",
+  "author": "TS Eriksson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Real_time_kinematic.svg",
+  "file": "File:Real time kinematic.svg"
+ },
+ "noka.ck-ushi": {
+  "src": "photo-noka.ck-ushi.jpg",
+  "author": "不明",
+  "license": "CC BY 1.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koe_zijaanzicht_2.JPG",
+  "file": "File:Koe zijaanzicht 2.JPG"
+ },
+ "noka.ck-gyunyu": {
+  "src": "photo-noka.ck-gyunyu.jpg",
+  "author": "Stefan Kühn",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Milk_glass.jpg",
+  "file": "File:Milk glass.jpg"
+ },
+ "noka.ck-tamago": {
+  "src": "photo-noka.ck-tamago.jpg",
+  "author": "Adolphe Millot",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Adolphe_Millot_oeufs-fixed.jpg",
+  "file": "File:Adolphe Millot oeufs-fixed.jpg"
+ },
+ "noka.ck-buta": {
+  "src": "photo-noka.ck-buta.jpg",
+  "author": "Scott Bauer, USDA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sow_with_piglet.jpg",
+  "file": "File:Sow with piglet.jpg"
+ },
+ "noka.ck-niwatori": {
+  "src": "photo-noka.ck-niwatori.jpg",
+  "author": "竹之内 惇",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ryujin.tif",
+  "file": "File:Ryujin.tif"
+ },
+ "noka.ck-cheese": {
+  "src": "photo-noka.ck-cheese.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Camembert.jpg",
+  "file": "File:Camembert.jpg"
+ },
+ "noka.ck-butter": {
+  "src": "photo-noka.ck-butter.jpg",
+  "author": "Renee Comet (National Cancer Institute)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NCI_butter.jpg",
+  "file": "File:NCI butter.jpg"
+ },
+ "noka.ck-yogurt": {
+  "src": "photo-noka.ck-yogurt.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Yogurt_of_the_Bulgarija_Pavilion_of_Expo_2005_Aichi_Japan.jpg",
+  "file": "File:Yogurt of the Bulgarija Pavilion of Expo 2005 Aichi Japan.jpg"
+ },
+ "noka.ck-hitsuji": {
+  "src": "photo-noka.ck-hitsuji.jpg",
+  "author": "Keith Weller",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Flock_of_sheep.jpg",
+  "file": "File:Flock of sheep.jpg"
+ },
+ "noka.ck-uma": {
+  "src": "photo-noka.ck-uma.jpg",
+  "author": "Mikel Ortega from Errenteria, Basque Country, Spain, with a …",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Biandintz_eta_zaldiak_-_modified2.jpg",
+  "file": "File:Biandintz eta zaldiak - modified2.jpg"
+ },
+ "noka.ck-yagi": {
+  "src": "photo-noka.ck-yagi.jpg",
+  "author": "Steve Ford Elliott",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Irish_Goat.jpg",
+  "file": "File:Irish Goat.jpg"
+ },
+ "noka.ck-nyugyu": {
+  "src": "photo-noka.ck-nyugyu.jpg",
+  "author": "Keith Weller/USDA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg",
+  "file": "File:Cow female black white.jpg"
+ },
+ "noka.ck-nikugyu": {
+  "src": "photo-noka.ck-nikugyu.jpg",
+  "author": "不明",
+  "license": "CC BY 1.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koe_zijaanzicht_2.JPG",
+  "file": "File:Koe zijaanzicht 2.JPG"
+ },
+ "noka.ck-bokuso": {
+  "src": "photo-noka.ck-bokuso.jpg",
+  "author": "ulrichstill",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Arkadia_pasture_Peloponnese.jpg",
+  "file": "File:Arkadia pasture Peloponnese.jpg"
+ },
+ "noka.ck-rakuno": {
+  "src": "photo-noka.ck-rakuno.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Holstein_cows_large.jpg",
+  "file": "File:Holstein cows large.jpg"
+ },
+ "noka.ck-namacream": {
+  "src": "photo-noka.ck-namacream.jpg",
+  "author": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:01_Mmm..._Apple_Crisp_with_Whipped_Cream.jpg",
+  "file": "File:01 Mmm... Apple Crisp with Whipped Cream.jpg"
+ },
+ "noka.ck-wagyu": {
+  "src": "photo-noka.ck-wagyu.jpg",
+  "author": "Atsasebo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:10th_Wagyukyoshinkai_Shinsa.jpg",
+  "file": "File:10th Wagyukyoshinkai Shinsa.jpg"
+ },
+ "noka.ck-holstein": {
+  "src": "photo-noka.ck-holstein.jpg",
+  "author": "Keith Weller/USDA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg",
+  "file": "File:Cow female black white.jpg"
+ },
+ "noka.ck-kuroge": {
+  "src": "photo-noka.ck-kuroge.jpg",
+  "author": "Japanexperterna.se",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tajimagyu2.jpg",
+  "file": "File:Tajimagyu2.jpg"
+ },
+ "noka.ck-sakunyu": {
+  "src": "photo-noka.ck-sakunyu.jpg",
+  "author": "Kurt Kümpfel",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-08969-0002,_Bauer_beim_Melken.jpg",
+  "file": "File:Bundesarchiv Bild 183-08969-0002, Bauer beim Melken.jpg"
+ },
+ "noka.ck-seinyu": {
+  "src": "photo-noka.ck-seinyu.jpg",
+  "author": "Lesyeuxpourvoir",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bouteilles_commerce_lait_cru_vache_Aveyron_sud.JPG",
+  "file": "File:Bouteilles commerce lait cru vache Aveyron sud.JPG"
+ },
+ "noka.ck-broiler": {
+  "src": "photo-noka.ck-broiler.jpg",
+  "author": "春桜咲く",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%96%E3%83%AD%E3%82%A4%E3%83%A9%E3%83%BC%E4%B8%AD%E9%9B%9B.jpg",
+  "file": "File:ブロイラー中雛.jpg"
+ },
+ "noka.ck-nyuseihin": {
+  "src": "photo-noka.ck-nyuseihin.jpg",
+  "author": "大分帰省中",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oita_midori_milk.jpg",
+  "file": "File:Oita midori milk.jpg"
+ },
+ "noka.ck-juishi": {
+  "src": "photo-noka.ck-juishi.jpg",
+  "author": "self",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Picture_468.jpg",
+  "file": "File:Picture 468.jpg"
+ },
+ "noka.ck-ahiru": {
+  "src": "photo-noka.ck-ahiru.jpg",
+  "author": "SC36",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Duck0001.jpg",
+  "file": "File:Duck0001.jpg"
+ },
+ "noka.ck-silage": {
+  "src": "photo-noka.ck-silage.jpg",
+  "author": "W.carter",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Field_and_silage_bales_in_%C3%96vre_Tuntorp_3.jpg",
+  "file": "File:Field and silage bales in Övre Tuntorp 3.jpg"
+ },
+ "noka.ck-rollbale": {
+  "src": "photo-noka.ck-rollbale.jpg",
+  "author": "Flominator",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Round_baler_3058.jpg",
+  "file": "File:Round baler 3058.jpg"
+ },
+ "noka.ck-sakunyurobot": {
+  "src": "photo-noka.ck-sakunyurobot.jpg",
+  "author": "High Contrast",
+  "license": "CC BY 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:DeLaval_milking_station.jpg",
+  "file": "File:DeLaval milking station.jpg"
+ },
+ "noka.ck-chikusha": {
+  "src": "photo-noka.ck-chikusha.jpg",
+  "author": "Horseexperts",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pferdebox_Roewer%26Rueb.jpg",
+  "file": "File:Pferdebox Roewer&Rueb.jpg"
+ },
+ "noka.ck-welfare": {
+  "src": "photo-noka.ck-welfare.jpg",
+  "author": "L214 - Éthique & animaux.",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cochon_nain_vietnamien_du_Refuge_GroinGroin_en_train_de_se_faire_caresser_-_Photo_de_L214_-_%C3%89thique_%26_animaux.jpg",
+  "file": "File:Cochon nain vietnamien du Refuge GroinGroin en train de se faire caresser - Photo de L214 - Éthique & animaux.jpg"
+ },
+ "noka.ck-taihika": {
+  "src": "photo-noka.ck-taihika.jpg",
+  "author": "Crystalclear",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Compost_site_germany.JPG",
+  "file": "File:Compost site germany.JPG"
+ },
+ "noka.ck-biogas": {
+  "src": "photo-noka.ck-biogas.jpg",
+  "author": "Abrarmicro30",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Biogas.png",
+  "file": "File:Biogas.png"
+ },
+ "noka.ck-hansu": {
+  "src": "photo-noka.ck-hansu.jpg",
+  "author": "Amada44",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gazelle_rumination_-_zoom.webm",
+  "file": "File:Gazelle rumination - zoom.webm"
+ },
+ "noka.sg-shukka": {
+  "src": "photo-noka.sg-shukka.jpg",
+  "author": "Yogou0088",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%EF%BC%98%E5%B7%A5%E5%A0%B4%E5%86%85.jpg",
+  "file": "File:８工場内.jpg"
+ },
+ "noka.sg-michinoeki": {
+  "src": "photo-noka.sg-michinoeki.jpg",
+  "author": "Filler",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Michinoeki_shinshu_tsutakijuku.jpg",
+  "file": "File:Michinoeki shinshu tsutakijuku.jpg"
+ },
+ "noka.sg-ichiba": {
+  "src": "photo-noka.sg-ichiba.jpg",
+  "author": "www.GlynLowe.com from Hamburg, Germany",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercado_dos_Lavradores,_Madeira_(16587278615).jpg",
+  "file": "File:Mercado dos Lavradores, Madeira (16587278615).jpg"
+ },
+ "noka.sg-nokyo": {
+  "src": "photo-noka.sg-nokyo.jpg",
+  "author": "全国農業協同組合中央会",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:JA_logo.svg",
+  "file": "File:JA logo.svg"
+ },
+ "noka.sg-chisanchisho": {
+  "src": "photo-noka.sg-chisanchisho.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Marylebone_Farmers_Market_2005.jpg",
+  "file": "File:Marylebone Farmers Market 2005.jpg"
+ },
+ "noka.sg-seika": {
+  "src": "photo-noka.sg-seika.jpg",
+  "author": "Samuell",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SuperstoreWinkler5.JPG",
+  "file": "File:SuperstoreWinkler5.JPG"
+ },
+ "noka.sg-norin": {
+  "src": "photo-noka.sg-norin.jpg",
+  "author": "農林水産省",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E8%BE%B2%E6%9E%97%E6%B0%B4%E7%94%A3%E7%9C%81%E3%83%AD%E3%82%B4%E3%83%9E%E3%83%BC%E3%82%AF.svg",
+  "file": "File:農林水産省ロゴマーク.svg"
+ },
+ "noka.sg-oroshiuri": {
+  "src": "photo-noka.sg-oroshiuri.jpg",
+  "author": "www.GlynLowe.com from Hamburg, Germany",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercado_dos_Lavradores,_Madeira_(16587278615).jpg",
+  "file": "File:Mercado dos Lavradores, Madeira (16587278615).jpg"
+ },
+ "noka.sg-kengyo": {
+  "src": "photo-noka.sg-kengyo.jpg",
+  "author": "Ralf Roletschek",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:04-09-12-Schaupfl%C3%BCgen-Fahrenwalde-RalfR-IMG_1232.jpg",
+  "file": "File:04-09-12-Schaupflügen-Fahrenwalde-RalfR-IMG 1232.jpg"
+ },
+ "noka.sg-sengyo": {
+  "src": "photo-noka.sg-sengyo.jpg",
+  "author": "Ralf Roletschek",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:04-09-12-Schaupfl%C3%BCgen-Fahrenwalde-RalfR-IMG_1232.jpg",
+  "file": "File:04-09-12-Schaupflügen-Fahrenwalde-RalfR-IMG 1232.jpg"
+ },
+ "noka.sg-hoki": {
+  "src": "photo-noka.sg-hoki.jpg",
+  "author": "Miyuki Meinaka",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Abandoned_Paddy_Field_in_Japan.jpg",
+  "file": "File:Abandoned Paddy Field in Japan.jpg"
+ },
+ "noka.sg-shoen": {
+  "src": "photo-noka.sg-shoen.jpg",
+  "author": "Limbourg brothers / Barthélemy d'Eyck",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg",
+  "file": "File:Les Très Riches Heures du duc de Berry mars.jpg"
+ },
+ "noka.sg-taiko": {
+  "src": "photo-noka.sg-taiko.jpg",
+  "author": "KKPCW",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%B0%BE%E5%BC%B5%E5%9B%BD%E6%B5%B7%E6%9D%B1%E9%83%A1%E5%86%85%E6%B4%A5%E5%B3%B6%E5%8C%97%E5%8F%A3%E5%BE%A1%E6%A4%9C%E5%9C%B0%E5%B8%B3%EF%BC%88%E7%A7%80%E5%90%89%E6%B8%85%E6%AD%A3%E8%A8%98%E5%BF%B5%E9%A4%A8%EF%BC%89.jpg",
+  "file": "File:尾張国海東郡内津島北口御検地帳（秀吉清正記念館）.jpg"
+ },
+ "noka.sg-ninomiya": {
+  "src": "photo-noka.sg-ninomiya.jpg",
+  "author": "岡本秋暉（（1807-1862）",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ninomiya-Sontoku.jpg",
+  "file": "File:Ninomiya-Sontoku.jpg"
+ },
+ "noka.sg-anzenhosho": {
+  "src": "photo-noka.sg-anzenhosho.jpg",
+  "author": "Stephen Morrison/Africa Practice for AusAID",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Africa_Food_Security_18_(10665134354).jpg",
+  "file": "File:Africa Food Security 18 (10665134354).jpg"
+ },
+ "noka.sg-dengaku": {
+  "src": "photo-noka.sg-dengaku.jpg",
+  "author": "Abasaa",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:2014_Oji_Dengaku_02.JPG",
+  "file": "File:2014 Oji Dengaku 02.JPG"
+ },
+ "noka.sg-genka": {
+  "src": "photo-noka.sg-genka.jpg",
+  "author": "João Pimentel Ferreira",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Depreciation_car.svg",
+  "file": "File:Depreciation car.svg"
+ },
+ "jui.kh-juishi": {
+  "src": "photo-jui.kh-juishi.jpg",
+  "author": "self",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Picture_468.jpg",
+  "file": "File:Picture 468.jpg"
+ },
+ "jui.kh-dobutsubyoin": {
+  "src": "photo-jui.kh-dobutsubyoin.jpg",
+  "author": "Nesnad",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Veterinarian_clinic_-_Shinagawa_May_26_2022_03-27-59_PM.jpeg",
+  "file": "File:Veterinarian clinic - Shinagawa May 26 2022 03-27-59 PM.jpeg"
+ },
+ "jui.kh-chosinki": {
+  "src": "photo-jui.kh-chosinki.jpg",
+  "author": "Stethoscopes",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Doctors_stethoscope_2.jpg",
+  "file": "File:Doctors stethoscope 2.jpg"
+ },
+ "jui.kh-taionkei": {
+  "src": "photo-jui.kh-taionkei.jpg",
+  "author": "Zwager",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kwikthermometers.jpg",
+  "file": "File:Kwikthermometers.jpg"
+ },
+ "jui.kh-kangoshi": {
+  "src": "photo-jui.kh-kangoshi.jpg",
+  "author": "U.S. Navy photo by Bill W. Love",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:US_Navy_110222-N-KF478-102_Dental_officers_prepare_a_sedated_U.S._Customs_and_Border_Protection_working_dog_for_a_root_canal.jpg",
+  "file": "File:US Navy 110222-N-KF478-102 Dental officers prepare a sedated U.S. Customs and Border Protection working dog for a root canal.jpg"
+ },
+ "jui.kh-hakui": {
+  "src": "photo-jui.kh-hakui.jpg",
+  "author": "André",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaleco.jpg",
+  "file": "File:Jaleco.jpg"
+ },
+ "jui.kh-pethotel": {
+  "src": "photo-jui.kh-pethotel.jpg",
+  "author": "Own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kanku_Pet_Hotel.JPG",
+  "file": "File:Kanku Pet Hotel.JPG"
+ },
+ "jui.kh-ecollar": {
+  "src": "photo-jui.kh-ecollar.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Cat_with_Elizabethan_collar.jpg",
+  "file": "File:Cat with Elizabethan collar.jpg"
+ },
+ "jui.kr-shippo": {
+  "src": "photo-jui.kr-shippo.jpg",
+  "author": "Gilles Gonthier",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%C3%89cureuil_roux_--_Red_Squirrel_-a.jpg",
+  "file": "File:Écureuil roux -- Red Squirrel -a.jpg"
+ },
+ "jui.kr-hone": {
+  "src": "photo-jui.kr-hone.jpg",
+  "author": "不明",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Left_femur_of_extinct_elephant,_Alaska,_Ice_Age_Wellcome_L0057714.jpg",
+  "file": "File:Left femur of extinct elephant, Alaska, Ice Age Wellcome L0057714.jpg"
+ },
+ "jui.kr-soushoku": {
+  "src": "photo-jui.kr-soushoku.jpg",
+  "author": "Raul654.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:White-tailed_deer_(Odocoileus_virginianus)_grazing_-_20050809.jpg",
+  "file": "File:White-tailed deer (Odocoileus virginianus) grazing - 20050809.jpg"
+ },
+ "jui.kr-zasshoku": {
+  "src": "photo-jui.kr-zasshoku.jpg",
+  "author": "See above. Compilation by AnthroBit",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Omnivore_Examples.png",
+  "file": "File:Omnivore Examples.png"
+ },
+ "jui.kr-kenshi": {
+  "src": "photo-jui.kr-kenshi.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Azawakh_K9.jpg",
+  "file": "File:Azawakh K9.jpg"
+ },
+ "jui.kr-honyurui": {
+  "src": "photo-jui.kr-honyurui.jpg",
+  "author": "Dermoptère-2011-02-02.JPG: *Dermoptère.JPG: Didasteph deriva…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mammal_Diversity_2011.png",
+  "file": "File:Mammal Diversity 2011.png"
+ },
+ "jui.kr-choorui": {
+  "src": "photo-jui.kr-choorui.jpg",
+  "author": "Southern_cassowary.jpg: Frank Wouters of Antwerp, Belgium He…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bird_Diversity_2011.png",
+  "file": "File:Bird Diversity 2011.png"
+ },
+ "jui.kr-yakosei": {
+  "src": "photo-jui.kr-yakosei.jpg",
+  "author": "Wing-Chi Poon",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Owl_at_Night.jpg",
+  "file": "File:Owl at Night.jpg"
+ },
+ "jui.kr-tsuno": {
+  "src": "photo-jui.kr-tsuno.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0 FR",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Cow_DSC03997.jpg",
+  "file": "File:Cow DSC03997.jpg"
+ },
+ "jui.kr-hachurui": {
+  "src": "photo-jui.kr-hachurui.jpg",
+  "author": "Haplochromis Leigh Bedford Dmitry Bogdanov Kevmin Nobu Tamur…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sauropsida_exemple.jpg",
+  "file": "File:Sauropsida exemple.jpg"
+ },
+ "jui.kr-himou": {
+  "src": "photo-jui.kr-himou.jpg",
+  "author": "Tharish",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Blackhair10.jpg",
+  "file": "File:Blackhair10.jpg"
+ },
+ "jui.kr-koon": {
+  "src": "photo-jui.kr-koon.jpg",
+  "author": "Arno / Coen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Wiki_ostrich.jpg",
+  "file": "File:Wiki ostrich.jpg"
+ },
+ "jui.kr-koukaku": {
+  "src": "photo-jui.kr-koukaku.jpg",
+  "author": "Hibernian (talk)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Horse_and_Man.jpg",
+  "file": "File:Horse and Man.jpg"
+ },
+ "jui.kr-sekitsui": {
+  "src": "photo-jui.kr-sekitsui.jpg",
+  "author": "User:Follix User:Jamez42 User:Albert kok User:Tiithunt",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vertebrata_002.png",
+  "file": "File:Vertebrata 002.png"
+ },
+ "jui.kr-sonou": {
+  "src": "photo-jui.kr-sonou.jpg",
+  "author": "Sarah G",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Budgerigar_with_full_crop.jpg",
+  "file": "File:Budgerigar with full crop.jpg"
+ },
+ "jui.kr-flehmen": {
+  "src": "photo-jui.kr-flehmen.jpg",
+  "author": "Brandinian",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FlehmenResponseHorse.jpg",
+  "file": "File:FlehmenResponseHorse.jpg"
+ },
+ "jui.kr-shokumo": {
+  "src": "photo-jui.kr-shokumo.jpg",
+  "author": "Tomomarusan",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Cat_0380.JPG",
+  "file": "File:Cat 0380.JPG"
+ },
+ "jui.kr-sanran": {
+  "src": "photo-jui.kr-sanran.jpg",
+  "author": "Adolphe Millot",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Adolphe_Millot_oeufs-fixed.jpg",
+  "file": "File:Adolphe Millot oeufs-fixed.jpg"
+ },
+ "jui.kr-umou": {
+  "src": "photo-jui.kr-umou.jpg",
+  "author": "Adolphe Millot (1857-1921) (ill.); Gothance 14:26, 3 Decembe…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Types_de_plumes._-_Larousse_pour_tous,_-1907-1910-.jpg",
+  "file": "File:Types de plumes. - Larousse pour tous, -1907-1910-.jpg"
+ },
+ "jui.pt-pet": {
+  "src": "photo-jui.pt-pet.jpg",
+  "author": "HappyPettingsGurgaon",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Woman_with_two_dogs.jpg",
+  "file": "File:Woman with two dogs.jpg"
+ },
+ "jui.pt-inu": {
+  "src": "photo-jui.pt-inu.jpg",
+  "author": "Томасина, Taru T Torpström, Tuomas Rinta, danny O., Pat028, …",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Coat_types_3.jpg",
+  "file": "File:Coat types 3.jpg"
+ },
+ "jui.pt-neko": {
+  "src": "photo-jui.pt-neko.jpg",
+  "author": "Alvesgaspar, Martin Bahmann, Hisashi, Von.grzanka, Dovenetel",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cat_poster_1.jpg",
+  "file": "File:Cat poster 1.jpg"
+ },
+ "jui.pt-usagi": {
+  "src": "photo-jui.pt-usagi.jpg",
+  "author": "JJ Harrison (https://www.jjharrison.com.au/)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_Tasmania.jpg",
+  "file": "File:Oryctolagus cuniculus Tasmania.jpg"
+ },
+ "jui.pt-hamster": {
+  "src": "photo-jui.pt-hamster.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Goldhamster_2.jpg",
+  "file": "File:Goldhamster 2.jpg"
+ },
+ "jui.pt-sanpo": {
+  "src": "photo-jui.pt-sanpo.jpg",
+  "author": "松岡明芳",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Walk_under_the_cherry_tree_Muko-River_%E3%82%B5%E3%82%AF%E3%83%A9%E3%81%AE%E6%9C%A8%E4%B8%8B%E3%81%AE%E6%95%A3%E6%AD%A9%EF%BC%88%E6%AD%A6%E5%BA%AB%E5%B7%9D%E4%B8%8A%E6%B5%81%EF%BC%89_DSCF0228%E2%98%86.JPG",
+  "file": "File:Walk under the cherry tree Muko-River サクラの木下の散歩（武庫川上流） DSCF0228☆.JPG"
+ },
+ "jui.pt-dogfood": {
+  "src": "photo-jui.pt-dogfood.jpg",
+  "author": "carterse",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kibbles_How_Others_See_Me.jpg",
+  "file": "File:Kibbles How Others See Me.jpg"
+ },
+ "jui.pt-catfood": {
+  "src": "photo-jui.pt-catfood.jpg",
+  "author": "irrational cat Original uploader was Dodo bird at en.wikiped…",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Catdryfood.jpg",
+  "file": "File:Catdryfood.jpg"
+ },
+ "jui.pt-oyatsu": {
+  "src": "photo-jui.pt-oyatsu.jpg",
+  "author": "Daniel Lobo",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Merienda_Naturaleza_muerta.jpg",
+  "file": "File:Merienda Naturaleza muerta.jpg"
+ },
+ "jui.pt-chocolate": {
+  "src": "photo-jui.pt-chocolate.jpg",
+  "author": "nagualdesign",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_(blue_background).jpg",
+  "file": "File:Chocolate (blue background).jpg"
+ },
+ "jui.pt-hamigaki": {
+  "src": "photo-jui.pt-hamigaki.jpg",
+  "author": "Bill Branson (Photographer)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Man_brushing_teeth.jpg",
+  "file": "File:Man brushing teeth.jpg"
+ },
+ "jui.pt-shibainu": {
+  "src": "photo-jui.pt-shibainu.jpg",
+  "author": "Roberto Vasarri",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shiba_inu_taiki.jpg",
+  "file": "File:Shiba inu taiki.jpg"
+ },
+ "jui.pt-toypoodle": {
+  "src": "photo-jui.pt-toypoodle.jpg",
+  "author": "Sagaciousphil",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Poodle,_cropped.JPG",
+  "file": "File:Poodle, cropped.JPG"
+ },
+ "jui.pt-chihuahua": {
+  "src": "photo-jui.pt-chihuahua.jpg",
+  "author": "Tatiana Borisova",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chihuahuasmoothcoat.jpg",
+  "file": "File:Chihuahuasmoothcoat.jpg"
+ },
+ "jui.pt-dachs": {
+  "src": "photo-jui.pt-dachs.jpg",
+  "author": "Ellen Levy Finch (Elf)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:MiniDachshund1_wb.jpg",
+  "file": "File:MiniDachshund1 wb.jpg"
+ },
+ "jui.pt-golden": {
+  "src": "photo-jui.pt-golden.jpg",
+  "author": "Dirk Vorderstraße",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Carlos_(10581910556).jpg",
+  "file": "File:Golden Retriever Carlos (10581910556).jpg"
+ },
+ "jui.pt-labrador": {
+  "src": "photo-jui.pt-labrador.jpg",
+  "author": "derivative work: Djmirko (talk)wereweweewewewg.jpg",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:YellowLabradorLooking_new.jpg",
+  "file": "File:YellowLabradorLooking new.jpg"
+ },
+ "jui.pt-pomeranian": {
+  "src": "photo-jui.pt-pomeranian.jpg",
+  "author": "Ksmtbwnc",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pomeranian-tb.png",
+  "file": "File:Pomeranian-tb.png"
+ },
+ "jui.pt-inko": {
+  "src": "photo-jui.pt-inko.jpg",
+  "author": "Fábio de Paina Nunes",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Araras-canind%C3%A9_em_Campo_Grande.jpg",
+  "file": "File:Araras-canindé em Campo Grande.jpg"
+ },
+ "jui.pt-buncho": {
+  "src": "photo-jui.pt-buncho.jpg",
+  "author": "Francesco Veronesi from Italy",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Java_Sparrow_-_Baluran_NP_-_East_Java_MG_8180_(29726690101).jpg",
+  "file": "File:Java Sparrow - Baluran NP - East Java MG 8180 (29726690101).jpg"
+ },
+ "jui.pt-guinea": {
+  "src": "photo-jui.pt-guinea.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Two_adult_Guinea_Pigs_(Cavia_porcellus).jpg",
+  "file": "File:Two adult Guinea Pigs (Cavia porcellus).jpg"
+ },
+ "jui.pt-ferret": {
+  "src": "photo-jui.pt-ferret.jpg",
+  "author": "Frank Vincentz and Magig and Tilo Hauke, Dissen a.T.W., Germ…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Furets_albinos_champagne_et_zibeline_sable.jpg",
+  "file": "File:Furets albinos champagne et zibeline sable.jpg"
+ },
+ "jui.pt-kame": {
+  "src": "photo-jui.pt-kame.jpg",
+  "author": "Moise Nicu",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tortoise._on_leaves.JPG",
+  "file": "File:Tortoise. on leaves.JPG"
+ },
+ "jui.pt-tokage": {
+  "src": "photo-jui.pt-tokage.jpg",
+  "author": "ja:User:月と太陽",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pogona0.jpg",
+  "file": "File:Pogona0.jpg"
+ },
+ "jui.pt-kingyo": {
+  "src": "photo-jui.pt-kingyo.jpg",
+  "author": "Daiju Azuma",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Goldfishs.jpg",
+  "file": "File:Goldfishs.jpg"
+ },
+ "jui.pt-nettaigyo": {
+  "src": "photo-jui.pt-nettaigyo.jpg",
+  "author": "Tan Meng Yoe at English Wikipedia",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Neontetra_tmy.JPG",
+  "file": "File:Neontetra tmy.JPG"
+ },
+ "jui.pt-himan": {
+  "src": "photo-jui.pt-himan.jpg",
+  "author": "Renée Gordon (FDA), Victovoi",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Obesity-waist_circumference.svg",
+  "file": "File:Obesity-waist circumference.svg"
+ },
+ "jui.pt-dogrun": {
+  "src": "photo-jui.pt-dogrun.jpg",
+  "author": "663highland",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:230503_Blue_Ridge_Hotel_Kannabe_Highland_Toyooka_Hyogo_pref_Japan02s3.jpg",
+  "file": "File:230503 Blue Ridge Hotel Kannabe Highland Toyooka Hyogo pref Japan02s3.jpg"
+ },
+ "jui.pt-cattower": {
+  "src": "photo-jui.pt-cattower.jpg",
+  "author": "Rakudokan202",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cat_tower_photo.jpg",
+  "file": "File:Cat tower photo.jpg"
+ },
+ "jui.pt-scottish": {
+  "src": "photo-jui.pt-scottish.jpg",
+  "author": "Mihai Matei",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Adult_Scottish_Fold.jpg",
+  "file": "File:Adult Scottish Fold.jpg"
+ },
+ "jui.pt-amesho": {
+  "src": "photo-jui.pt-amesho.jpg",
+  "author": "The original uploader was Chango at Japanese Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Americanshorthair.JPG",
+  "file": "File:Americanshorthair.JPG"
+ },
+ "jui.pt-munchkin": {
+  "src": "photo-jui.pt-munchkin.jpg",
+  "author": "Venezsian1573",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:A_Munchkin_cat_in_a_transparent_bowl.jpg",
+  "file": "File:A Munchkin cat in a transparent bowl.jpg"
+ },
+ "jui.pt-exotic": {
+  "src": "photo-jui.pt-exotic.jpg",
+  "author": "Philipp Salzgeber",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:PhodopusSungorus_1.jpg",
+  "file": "File:PhodopusSungorus 1.jpg"
+ },
+ "jui.bk-ensho": {
+  "src": "photo-jui.bk-ensho.jpg",
+  "author": "Dr.Harry Gouvas, MD, PhD",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Allergy_to_Antibiotic_Cefaclor.JPG",
+  "file": "File:Allergy to Antibiotic Cefaclor.JPG"
+ },
+ "jui.yb-chip": {
+  "src": "photo-jui.yb-chip.jpg",
+  "author": "Gareth Halfacree from Bradford, UK",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_3_(24986543980).png",
+  "file": "File:Raspberry Pi 3 (24986543980).png"
+ },
+ "jui.sg-nyugyu": {
+  "src": "photo-jui.sg-nyugyu.jpg",
+  "author": "Keith Weller/USDA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg",
+  "file": "File:Cow female black white.jpg"
+ },
+ "jui.sg-niwatori": {
+  "src": "photo-jui.sg-niwatori.jpg",
+  "author": "竹之内 惇",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ryujin.tif",
+  "file": "File:Ryujin.tif"
+ },
+ "jui.sg-uma": {
+  "src": "photo-jui.sg-uma.jpg",
+  "author": "Mikel Ortega from Errenteria, Basque Country, Spain, with a …",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Biandintz_eta_zaldiak_-_modified2.jpg",
+  "file": "File:Biandintz eta zaldiak - modified2.jpg"
+ },
+ "jui.sg-hitsuji": {
+  "src": "photo-jui.sg-hitsuji.jpg",
+  "author": "Keith Weller",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Flock_of_sheep.jpg",
+  "file": "File:Flock of sheep.jpg"
+ },
+ "jui.sg-yagi": {
+  "src": "photo-jui.sg-yagi.jpg",
+  "author": "Steve Ford Elliott",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Irish_Goat.jpg",
+  "file": "File:Irish Goat.jpg"
+ },
+ "jui.sg-holstein": {
+  "src": "photo-jui.sg-holstein.jpg",
+  "author": "Keith Weller/USDA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cow_female_black_white.jpg",
+  "file": "File:Cow female black white.jpg"
+ },
+ "jui.sg-wagyu": {
+  "src": "photo-jui.sg-wagyu.jpg",
+  "author": "Atsasebo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:10th_Wagyukyoshinkai_Shinsa.jpg",
+  "file": "File:10th Wagyukyoshinkai Shinsa.jpg"
+ },
+ "jui.sg-nikugyu": {
+  "src": "photo-jui.sg-nikugyu.jpg",
+  "author": "不明",
+  "license": "CC BY 1.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koe_zijaanzicht_2.JPG",
+  "file": "File:Koe zijaanzicht 2.JPG"
+ },
+ "jui.sg-bokuso": {
+  "src": "photo-jui.sg-bokuso.jpg",
+  "author": "ulrichstill",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Arkadia_pasture_Peloponnese.jpg",
+  "file": "File:Arkadia pasture Peloponnese.jpg"
+ },
+ "jui.sg-rakuno": {
+  "src": "photo-jui.sg-rakuno.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Holstein_cows_large.jpg",
+  "file": "File:Holstein cows large.jpg"
+ },
+ "jui.sg-sakunyu": {
+  "src": "photo-jui.sg-sakunyu.jpg",
+  "author": "Kurt Kümpfel",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-08969-0002,_Bauer_beim_Melken.jpg",
+  "file": "File:Bundesarchiv Bild 183-08969-0002, Bauer beim Melken.jpg"
+ },
+ "jui.sg-kyosoba": {
+  "src": "photo-jui.sg-kyosoba.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Applebite-Gentlemen.jpg",
+  "file": "File:Applebite-Gentlemen.jpg"
+ },
+ "jui.sg-kuroge": {
+  "src": "photo-jui.sg-kuroge.jpg",
+  "author": "Japanexperterna.se",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tajimagyu2.jpg",
+  "file": "File:Tajimagyu2.jpg"
+ },
+ "jui.sg-thoroughbred": {
+  "src": "photo-jui.sg-thoroughbred.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Applebite-Gentlemen.jpg",
+  "file": "File:Applebite-Gentlemen.jpg"
+ },
+ "jui.sg-silage": {
+  "src": "photo-jui.sg-silage.jpg",
+  "author": "W.carter",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Field_and_silage_bales_in_%C3%96vre_Tuntorp_3.jpg",
+  "file": "File:Field and silage bales in Övre Tuntorp 3.jpg"
+ },
+ "jui.sg-welfare": {
+  "src": "photo-jui.sg-welfare.jpg",
+  "author": "L214 - Éthique & animaux.",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cochon_nain_vietnamien_du_Refuge_GroinGroin_en_train_de_se_faire_caresser_-_Photo_de_L214_-_%C3%89thique_%26_animaux.jpg",
+  "file": "File:Cochon nain vietnamien du Refuge GroinGroin en train de se faire caresser - Photo de L214 - Éthique & animaux.jpg"
+ },
+ "jui.ys-dobutsuen": {
+  "src": "photo-jui.ys-dobutsuen.jpg",
+  "author": "en:User:Cburnett",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:San_Diego_Zoo_entrance_elephant.jpg",
+  "file": "File:San Diego Zoo entrance elephant.jpg"
+ },
+ "jui.ys-suizokukan": {
+  "src": "photo-jui.ys-suizokukan.jpg",
+  "author": "Totti",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shikoku_Aquarium_Uzushio.jpg",
+  "file": "File:Shikoku Aquarium Uzushio.jpg"
+ },
+ "jui.ys-yasei": {
+  "src": "photo-jui.ys-yasei.jpg",
+  "author": "Superbsic",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wildlife_at_Maasai_Mara_(Lion).jpg",
+  "file": "File:Wildlife at Maasai Mara (Lion).jpg"
+ },
+ "jui.ys-zou": {
+  "src": "photo-jui.ys-zou.jpg",
+  "author": "The author is nickandmel2006 on flickr",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Elephant_near_ndutu.jpg",
+  "file": "File:Elephant near ndutu.jpg"
+ },
+ "jui.ys-penguin": {
+  "src": "photo-jui.ys-penguin.jpg",
+  "author": "shi zhao",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:African_Penguin_at_Boulders_Beach_1.jpg",
+  "file": "File:African Penguin at Boulders Beach 1.jpg"
+ },
+ "jui.ys-panda": {
+  "src": "photo-jui.ys-panda.jpg",
+  "author": "Asio otus",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Berlin-BaoBao1-Asio.jpg",
+  "file": "File:Berlin-BaoBao1-Asio.jpg"
+ },
+ "jui.ys-toki": {
+  "src": "photo-jui.ys-toki.jpg",
+  "author": "Danielinblue",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nipponia_nippon.jpg",
+  "file": "File:Nipponia nippon.jpg"
+ },
+ "jui.ys-gairaishu": {
+  "src": "photo-jui.ys-gairaishu.jpg",
+  "author": "John Robert McPherson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dromedary_Camelus_dromedarius_Diamantina_Developmental_Road_Boulia_Shire_Queensland_P1060445.jpg",
+  "file": "File:Dromedary Camelus dromedarius Diamantina Developmental Road Boulia Shire Queensland P1060445.jpg"
+ },
+ "jui.ys-seitaikei": {
+  "src": "photo-jui.ys-seitaikei.jpg",
+  "author": "Richard Ling <wikipedia@rling.com>",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Blue_Linckia_Starfish.JPG",
+  "file": "File:Blue Linckia Starfish.JPG"
+ },
+ "jui.ys-wataridori": {
+  "src": "photo-jui.ys-wataridori.jpg",
+  "author": "Thermos",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:BrantaLeucopsisMigration.jpg",
+  "file": "File:BrantaLeucopsisMigration.jpg"
+ },
+ "jui.ys-araiguma": {
+  "src": "photo-jui.ys-araiguma.jpg",
+  "author": "David Menke",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Raccoon_climbing_in_tree_clipped.jpg",
+  "file": "File:Raccoon climbing in tree clipped.jpg"
+ },
+ "jui.ys-satoyama": {
+  "src": "photo-jui.ys-satoyama.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Inagi_satoyama_06b5841s.jpg",
+  "file": "File:Inagi satoyama 06b5841s.jpg"
+ },
+ "jui.ys-ezuke": {
+  "src": "photo-jui.ys-ezuke.jpg",
+  "author": "Alyson Hurt from Arlington, Va., USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:No_Feeding.jpg",
+  "file": "File:No Feeding.jpg"
+ },
+ "jui.ys-enrich": {
+  "src": "photo-jui.ys-enrich.jpg",
+  "author": "Ginkgo100",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Asian_elephant_enrichment.jpg",
+  "file": "File:Asian elephant enrichment.jpg"
+ },
+ "jui.ys-kounotori": {
+  "src": "photo-jui.ys-kounotori.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bocian_czarnodzioby_Ciconia_boyciana_RB7.jpg",
+  "file": "File:Bocian czarnodzioby Ciconia boyciana RB7.jpg"
+ },
+ "jui.ys-raicho": {
+  "src": "photo-jui.ys-raicho.jpg",
+  "author": "Jan Frode Haugseth",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rock_Ptarmigan_(Lagopus_Muta).jpg",
+  "file": "File:Rock Ptarmigan (Lagopus Muta).jpg"
+ },
+ "jui.ys-iriomote": {
+  "src": "photo-jui.ys-iriomote.jpg",
+  "author": "Momotarou2012",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Iriomote_cat_Stuffed_specimen.jpg",
+  "file": "File:Iriomote cat Stuffed specimen.jpg"
+ },
+ "jui.ys-tsushima": {
+  "src": "photo-jui.ys-tsushima.jpg",
+  "author": "Pontafon",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsushima_Cat_001.jpg",
+  "file": "File:Tsushima Cat 001.jpg"
+ },
+ "jui.ys-zairaishu": {
+  "src": "photo-jui.ys-zairaishu.jpg",
+  "author": "Theendofforever at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mainelupin.jpg",
+  "file": "File:Mainelupin.jpg"
+ },
+ "jui.ys-koyushu": {
+  "src": "photo-jui.ys-koyushu.jpg",
+  "author": "Didier B (Sam67fr)",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Orange-breasted_Sunbird_(Nectarinia_violacea).jpg",
+  "file": "File:Orange-breasted Sunbird (Nectarinia violacea).jpg"
+ },
+ "jui.ys-blackbass": {
+  "src": "photo-jui.ys-blackbass.jpg",
+  "author": "The original uploader was Zoe at English Wikipedia. Later ve…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:LargemouthBass.jpg",
+  "file": "File:LargemouthBass.jpg"
+ },
+ "jui.ys-cites": {
+  "src": "photo-jui.ys-cites.jpg",
+  "author": "CITES",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:CITES_Logo.tif",
+  "file": "File:CITES Logo.tif"
+ },
+ "jui.ys-kaiju": {
+  "src": "photo-jui.ys-kaiju.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Humpback_Whale_underwater_shot.jpg",
+  "file": "File:Humpback Whale underwater shot.jpg"
+ },
+ "jui.ys-shunohozon": {
+  "src": "photo-jui.ys-shunohozon.jpg",
+  "author": "Archibald Thorburn",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Archibald_Thorburn_Blackcocks_at_the_Lek_1901.jpg",
+  "file": "File:Archibald Thorburn Blackcocks at the Lek 1901.jpg"
+ },
+ "jui.ys-kankyokyoiku": {
+  "src": "photo-jui.ys-kankyokyoiku.jpg",
+  "author": "Kokopelado",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Observaci%C3%B3n_de_aves_en_Nador.JPG",
+  "file": "File:Observación de aves en Nador.JPG"
+ },
+ "jui.ys-chojuhogoku": {
+  "src": "photo-jui.ys-chojuhogoku.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Yatsuhigata_04x4720s.jpg",
+  "file": "File:Yatsuhigata 04x4720s.jpg"
+ },
+ "jui.ys-fieldwork": {
+  "src": "photo-jui.ys-fieldwork.jpg",
+  "author": "Panek",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zoobentos_sampling_Krippenbach.jpg",
+  "file": "File:Zoobentos sampling Krippenbach.jpg"
+ },
+ "jui.ys-ramsar": {
+  "src": "photo-jui.ys-ramsar.jpg",
+  "author": "Ramsar Convention",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Ramsar_logo.svg",
+  "file": "File:Ramsar logo.svg"
+ },
+ "jui.ys-shinryaku": {
+  "src": "photo-jui.ys-shinryaku.jpg",
+  "author": "John Robert McPherson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dromedary_Camelus_dromedarius_Diamantina_Developmental_Road_Boulia_Shire_Queensland_P1060445.jpg",
+  "file": "File:Dromedary Camelus dromedarius Diamantina Developmental Road Boulia Shire Queensland P1060445.jpg"
+ },
+ "jui.ys-mimigame": {
+  "src": "photo-jui.ys-mimigame.jpg",
+  "author": "John J. Mosesso, NBII",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Yellow-bellied_Slider.jpg",
+  "file": "File:Yellow-bellied Slider.jpg"
+ },
+ "jui.ys-ecoservice": {
+  "src": "photo-jui.ys-ecoservice.jpg",
+  "author": "Honeybee_(Apis_mellifera)_pollinating_Avocado_cv._Zutano_(Pe…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Honeybee_(Apis_mellifera)_pollinating_Avocado_cv.jpg",
+  "file": "File:Honeybee (Apis mellifera) pollinating Avocado cv.jpg"
+ },
+ "jui.ys-keystone": {
+  "src": "photo-jui.ys-keystone.jpg",
+  "author": "Bjørn Christian Tørrissen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Junior-Jaguar-Belize-Zoo.jpg",
+  "file": "File:Junior-Jaguar-Belize-Zoo.jpg"
+ },
+ "jui.ks-keneki": {
+  "src": "photo-jui.ks-keneki.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Quarantine_guardship_Rhin_1830.jpg",
+  "file": "File:Quarantine guardship Rhin 1830.jpg"
+ },
+ "jui.ks-shohikigen": {
+  "src": "photo-jui.ks-shohikigen.jpg",
+  "author": "Edward Betts",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Expiration.jpg",
+  "file": "File:Expiration.jpg"
+ },
+ "jui.ks-gyunyu": {
+  "src": "photo-jui.ks-gyunyu.jpg",
+  "author": "Stefan Kühn",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Milk_glass.jpg",
+  "file": "File:Milk glass.jpg"
+ },
+ "jui.ks-reizo": {
+  "src": "photo-jui.ks-reizo.jpg",
+  "author": "N-Lange.de",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kuehlregal_USA.jpg",
+  "file": "File:Kuehlregal USA.jpg"
+ },
+ "jui.ks-kenekijo": {
+  "src": "photo-jui.ks-kenekijo.jpg",
+  "author": "Noukei314",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gate(3),Animal_Quarantine_Service_(yokohama).jpg",
+  "file": "File:Gate(3),Animal Quarantine Service (yokohama).jpg"
+ },
+ "jui.ks-sekken": {
+  "src": "photo-jui.ks-sekken.jpg",
+  "author": "Olga Ernst",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Soap_Shop,_T%C3%BCbingen_(2019).jpg",
+  "file": "File:Soap Shop, Tübingen (2019).jpg"
+ },
+ "jui.ks-pcr": {
+  "src": "photo-jui.ks-pcr.jpg",
+  "author": "Tinojasontran",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:PCR_machine.jpg",
+  "file": "File:PCR machine.jpg"
+ },
+ "jui.hk-juigaku": {
+  "src": "photo-jui.hk-juigaku.jpg",
+  "author": "Andrew Dunn",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Veterinary_Surgeon.jpg",
+  "file": "File:Veterinary Surgeon.jpg"
+ },
+ "chef.sz-daikon": {
+  "src": "photo-chef.sz-daikon.jpg",
+  "author": "Chris 73",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Daikon.Japan.jpg",
+  "file": "File:Daikon.Japan.jpg"
+ },
+ "chef.sz-kyabetsu": {
+  "src": "photo-chef.sz-kyabetsu.jpg",
+  "author": "Bill Tarpenning",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cabbage.jpg",
+  "file": "File:Cabbage.jpg"
+ },
+ "chef.sz-jagaimo": {
+  "src": "photo-chef.sz-jagaimo.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Potatoes.jpg",
+  "file": "File:Potatoes.jpg"
+ },
+ "chef.sz-shiitake": {
+  "src": "photo-chef.sz-shiitake.jpg",
+  "author": "frankenstoen from Portland, Oregon",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shiitakegrowing.jpg",
+  "file": "File:Shiitakegrowing.jpg"
+ },
+ "chef.sz-maguro": {
+  "src": "photo-chef.sz-maguro.jpg",
+  "author": "SEFSC Pascagoula Laboratory; Collection of Brandi Noble, NOA…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fish4499_-_Flickr_-_NOAA_Photo_Library.jpg",
+  "file": "File:Fish4499 - Flickr - NOAA Photo Library.jpg"
+ },
+ "chef.sz-butaniku": {
+  "src": "photo-chef.sz-butaniku.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pork.jpg",
+  "file": "File:Pork.jpg"
+ },
+ "chef.sz-toriniku": {
+  "src": "photo-chef.sz-toriniku.jpg",
+  "author": "Biswarup Ganguly",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_-_Kolkata_2011-02-11_1007.JPG",
+  "file": "File:Chicken - Kolkata 2011-02-11 1007.JPG"
+ },
+ "chef.sz-tamago": {
+  "src": "photo-chef.sz-tamago.jpg",
+  "author": "Adolphe Millot",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Adolphe_Millot_oeufs-fixed.jpg",
+  "file": "File:Adolphe Millot oeufs-fixed.jpg"
+ },
+ "chef.sz-gyunyu": {
+  "src": "photo-chef.sz-gyunyu.jpg",
+  "author": "Stefan Kühn",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Milk_glass.jpg",
+  "file": "File:Milk glass.jpg"
+ },
+ "chef.sz-kome": {
+  "src": "photo-chef.sz-kome.jpg",
+  "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryza_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-232.jpg",
+  "file": "File:Oryza sativa - Köhler–s Medizinal-Pflanzen-232.jpg"
+ },
+ "chef.sz-tofu": {
+  "src": "photo-chef.sz-tofu.jpg",
+  "author": "DryPot",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_SilkyTofu_(Kinugoshi_Tofu).JPG",
+  "file": "File:Japanese SilkyTofu (Kinugoshi Tofu).JPG"
+ },
+ "chef.sz-natto": {
+  "src": "photo-chef.sz-natto.jpg",
+  "author": "User:Gleam",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Natto_mixed.jpg",
+  "file": "File:Natto mixed.jpg"
+ },
+ "chef.sz-wakame": {
+  "src": "photo-chef.sz-wakame.jpg",
+  "author": "division, CSIRO",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_904_Undaria_pinnatifida_Japanese_kelp.jpg",
+  "file": "File:CSIRO ScienceImage 904 Undaria pinnatifida Japanese kelp.jpg"
+ },
+ "chef.sz-shoyu": {
+  "src": "photo-chef.sz-shoyu.jpg",
+  "author": "국립국어원",
+  "license": "CC BY-SA 2.0 KR",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Soy_sauce_2.jpg",
+  "file": "File:Soy sauce 2.jpg"
+ },
+ "chef.sz-miso": {
+  "src": "photo-chef.sz-miso.jpg",
+  "author": "wilbanks from Shop of boiled beans, side dishes and miso, Ad…",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Miso_paste_by_wilbanks_in_Nishiki_Ichiba,_Kyoto.jpg",
+  "file": "File:Miso paste by wilbanks in Nishiki Ichiba, Kyoto.jpg"
+ },
+ "chef.sz-sato": {
+  "src": "photo-chef.sz-sato.jpg",
+  "author": "Lauri Andler (Phantom)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sugar_2xmacro.jpg",
+  "file": "File:Sugar 2xmacro.jpg"
+ },
+ "chef.sz-shun": {
+  "src": "photo-chef.sz-shun.jpg",
+  "author": "Inoke",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Huriuri-1.jpg",
+  "file": "File:Huriuri-1.jpg"
+ },
+ "chef.sz-gobo": {
+  "src": "photo-chef.sz-gobo.jpg",
+  "author": "The original uploader was たね at Japanese Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_gobou4031.jpg",
+  "file": "File:W gobou4031.jpg"
+ },
+ "chef.sz-renkon": {
+  "src": "photo-chef.sz-renkon.jpg",
+  "author": "FotoosRobin",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lotus_root.jpg",
+  "file": "File:Lotus root.jpg"
+ },
+ "chef.sz-shungiku": {
+  "src": "photo-chef.sz-shungiku.jpg",
+  "author": "Laitche",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chrysanthemum_coronarium_May_2008.jpg",
+  "file": "File:Chrysanthemum coronarium May 2008.jpg"
+ },
+ "chef.sz-matsutake": {
+  "src": "photo-chef.sz-matsutake.jpg",
+  "author": "Tomomarusan",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Matsutake.jpg",
+  "file": "File:Matsutake.jpg"
+ },
+ "chef.sz-shiromi": {
+  "src": "photo-chef.sz-shiromi.jpg",
+  "author": "Jlikes2Fish",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pacific_Halibut_Fileting.JPG",
+  "file": "File:Pacific Halibut Fileting.JPG"
+ },
+ "chef.sz-akami": {
+  "src": "photo-chef.sz-akami.jpg",
+  "author": "Santeri Viinamäki",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Christmas_ham.jpg",
+  "file": "File:Christmas ham.jpg"
+ },
+ "chef.sz-aozakana": {
+  "src": "photo-chef.sz-aozakana.jpg",
+  "author": "Jastrow",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Maquereaux_etal.jpg",
+  "file": "File:Maquereaux etal.jpg"
+ },
+ "chef.sz-tai": {
+  "src": "photo-chef.sz-tai.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pagrus_major_Red_seabream_ja01.jpg",
+  "file": "File:Pagrus major Red seabream ja01.jpg"
+ },
+ "chef.sz-buri": {
+  "src": "photo-chef.sz-buri.jpg",
+  "author": "E-190's",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Seriola_quinqueradiata_(200810).jpg",
+  "file": "File:Seriola quinqueradiata (200810).jpg"
+ },
+ "chef.sz-ika": {
+  "src": "photo-chef.sz-ika.jpg",
+  "author": "Philippe Bourjon",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sepioteuthis_lessoniana_R%C3%A9union.JPG",
+  "file": "File:Sepioteuthis lessoniana Réunion.JPG"
+ },
+ "chef.sz-rosu": {
+  "src": "photo-chef.sz-rosu.jpg",
+  "author": "Nesnad",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Beef_cuts_ja2015.svg",
+  "file": "File:Beef cuts ja2015.svg"
+ },
+ "chef.sz-sasami": {
+  "src": "photo-chef.sz-sasami.jpg",
+  "author": "Biswarup Ganguly",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_-_Kolkata_2011-02-11_1007.JPG",
+  "file": "File:Chicken - Kolkata 2011-02-11 1007.JPG"
+ },
+ "chef.sz-teba": {
+  "src": "photo-chef.sz-teba.jpg",
+  "author": "Biswarup Ganguly",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_-_Kolkata_2011-02-11_1007.JPG",
+  "file": "File:Chicken - Kolkata 2011-02-11 1007.JPG"
+ },
+ "chef.sz-kyorikiko": {
+  "src": "photo-chef.sz-kyorikiko.jpg",
+  "author": "Veganbaking.net from USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:All-Purpose_Flour_(4107895947).jpg",
+  "file": "File:All-Purpose Flour (4107895947).jpg"
+ },
+ "chef.sz-hakurikiko": {
+  "src": "photo-chef.sz-hakurikiko.jpg",
+  "author": "Veganbaking.net from USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:All-Purpose_Flour_(4107895947).jpg",
+  "file": "File:All-Purpose Flour (4107895947).jpg"
+ },
+ "chef.sz-mochigome": {
+  "src": "photo-chef.sz-mochigome.jpg",
+  "author": "katorisi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rice-cake_making,Katori-city,Japan.JPG",
+  "file": "File:Rice-cake making,Katori-city,Japan.JPG"
+ },
+ "chef.sz-genmai": {
+  "src": "photo-chef.sz-genmai.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Brown_rice.jpg",
+  "file": "File:Brown rice.jpg"
+ },
+ "chef.sz-daizu": {
+  "src": "photo-chef.sz-daizu.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_daizu4111.jpg",
+  "file": "File:W daizu4111.jpg"
+ },
+ "chef.sz-konbu": {
+  "src": "photo-chef.sz-konbu.jpg",
+  "author": "Anna Maj Michelson, Portland, United States",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kelp_in_Neskowin.jpg",
+  "file": "File:Kelp in Neskowin.jpg"
+ },
+ "chef.sz-hijiki": {
+  "src": "photo-chef.sz-hijiki.jpg",
+  "author": "Okamura, Kintaro",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Icones_of_Japanese_algae_(Pl._CXXVIII)_(8006311177).jpg",
+  "file": "File:Icones of Japanese algae (Pl. CXXVIII) (8006311177).jpg"
+ },
+ "chef.sz-mirin": {
+  "src": "photo-chef.sz-mirin.jpg",
+  "author": "Badagnani",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mirinbowl.jpg",
+  "file": "File:Mirinbowl.jpg"
+ },
+ "chef.sz-kankitsu": {
+  "src": "photo-chef.sz-kankitsu.jpg",
+  "author": "Scott Bauer, USDA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Citrus_fruits.jpg",
+  "file": "File:Citrus fruits.jpg"
+ },
+ "chef.sz-nyuseihin": {
+  "src": "photo-chef.sz-nyuseihin.jpg",
+  "author": "大分帰省中",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oita_midori_milk.jpg",
+  "file": "File:Oita midori milk.jpg"
+ },
+ "chef.sz-ranou": {
+  "src": "photo-chef.sz-ranou.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Egg_cross_section.png",
+  "file": "File:Egg cross section.png"
+ },
+ "chef.sz-bara": {
+  "src": "photo-chef.sz-bara.jpg",
+  "author": "Laitche",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mrs._Herbert_Stevens_May_2008.jpg",
+  "file": "File:Mrs. Herbert Stevens May 2008.jpg"
+ },
+ "chef.sz-ryokuoshoku": {
+  "src": "photo-chef.sz-ryokuoshoku.jpg",
+  "author": "Jamain",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pumpkin_J1.jpg",
+  "file": "File:Pumpkin J1.jpg"
+ },
+ "chef.sz-kokakurui": {
+  "src": "photo-chef.sz-kokakurui.jpg",
+  "author": "Amada44 Keisotyo Matthew R. Lee Jonhlifar9 Quentin Groom Sil…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Crustacea_collage.png",
+  "file": "File:Crustacea collage.png"
+ },
+ "chef.sz-nimaigai": {
+  "src": "photo-chef.sz-nimaigai.jpg",
+  "author": "不明",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Bivalvia.jpg",
+  "file": "File:Bivalvia.jpg"
+ },
+ "chef.sz-koyadofu": {
+  "src": "photo-chef.sz-koyadofu.jpg",
+  "author": "Lombroso",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koya-dofu_(2012.07.31).jpg",
+  "file": "File:Koya-dofu (2012.07.31).jpg"
+ },
+ "chef.sz-kiriboshi": {
+  "src": "photo-chef.sz-kiriboshi.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Kiriboshi_daikon_002.jpg",
+  "file": "File:Kiriboshi daikon 002.jpg"
+ },
+ "chef.sz-kanpyo": {
+  "src": "photo-chef.sz-kanpyo.jpg",
+  "author": "Sakurai Midori",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kampyo.JPG",
+  "file": "File:Kampyo.JPG"
+ },
+ "chef.sz-kanten": {
+  "src": "photo-chef.sz-kanten.jpg",
+  "author": "Sjschen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:GreenTeaYokan.jpg",
+  "file": "File:GreenTeaYokan.jpg"
+ },
+ "chef.sz-kunsei": {
+  "src": "photo-chef.sz-kunsei.jpg",
+  "author": "Roland Zumbühl (Picswiss), Arlesheim (Commons:Picswiss proje…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Picswiss_BE-91-01_Freilichtmuseum_Ballenberg-.jpg",
+  "file": "File:Picswiss BE-91-01 Freilichtmuseum Ballenberg-.jpg"
+ },
+ "chef.sz-jukusei": {
+  "src": "photo-chef.sz-jukusei.jpg",
+  "author": "Jo Anna Barber",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dry_aging_beef.jpg",
+  "file": "File:Dry aging beef.jpg"
+ },
+ "chef.sz-kyoyasai": {
+  "src": "photo-chef.sz-kyoyasai.jpg",
+  "author": "kazuh from Kyoto",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kyo-yasai_set_for_nabemono_by_kazuh_in_Kyoto.jpg",
+  "file": "File:Kyo-yasai set for nabemono by kazuh in Kyoto.jpg"
+ },
+ "chef.sz-haigamai": {
+  "src": "photo-chef.sz-haigamai.jpg",
+  "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oryza_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-232.jpg",
+  "file": "File:Oryza sativa - Köhler–s Medizinal-Pflanzen-232.jpg"
+ },
+ "chef.kr-hocho": {
+  "src": "photo-chef.kr-hocho.jpg",
+  "author": "Olaf Simons",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Four_chef%27s_knives_and_an_paring_knife.jpg",
+  "file": "File:Four chef's knives and an paring knife.jpg"
+ },
+ "chef.kr-manaita": {
+  "src": "photo-chef.kr-manaita.jpg",
+  "author": "Donovan Govan.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chopping_Board.jpg",
+  "file": "File:Chopping Board.jpg"
+ },
+ "chef.kr-sengiri": {
+  "src": "photo-chef.kr-sengiri.jpg",
+  "author": "Kisi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%AD%E3%83%A3%E3%83%99%E3%83%84%E3%81%AE%E7%B9%8A%E5%88%87%E3%82%8A_01.jpg",
+  "file": "File:キャベツの繊切り 01.jpg"
+ },
+ "chef.kr-mijin": {
+  "src": "photo-chef.kr-mijin.jpg",
+  "author": "Mirepoix(cuisine).JPG: Glane23 derivative work: Jerpeck (tal…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mirepoix(cuisine)-2009-04-06.jpg",
+  "file": "File:Mirepoix(cuisine)-2009-04-06.jpg"
+ },
+ "chef.kr-peeler": {
+  "src": "photo-chef.kr-peeler.jpg",
+  "author": "Pengo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Peeler_01_Pengo.jpg",
+  "file": "File:Peeler 01 Pengo.jpg"
+ },
+ "chef.kr-urokotori": {
+  "src": "photo-chef.kr-urokotori.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Urokotori.FishScaler.jpg",
+  "file": "File:Urokotori.FishScaler.jpg"
+ },
+ "chef.kr-kakushibocho": {
+  "src": "photo-chef.kr-kakushibocho.jpg",
+  "author": "User:Mattes",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Krip.JPG",
+  "file": "File:Krip.JPG"
+ },
+ "chef.kr-sanmai": {
+  "src": "photo-chef.kr-sanmai.jpg",
+  "author": "サフィル",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:3mai_before.JPG",
+  "file": "File:3mai before.JPG"
+ },
+ "chef.kr-nimai": {
+  "src": "photo-chef.kr-nimai.jpg",
+  "author": "サフィル",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:3mai_before.JPG",
+  "file": "File:3mai before.JPG"
+ },
+ "chef.kr-sebiraki": {
+  "src": "photo-chef.kr-sebiraki.jpg",
+  "author": "halfrain",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E9%AF%9B%E3%81%AE%E3%81%B2%E3%82%89%E3%81%8D_-_flickr_14968705320_46ddc52947_o.jpg",
+  "file": "File:鯛のひらき - flickr 14968705320 46ddc52947 o.jpg"
+ },
+ "chef.kr-yudoshi": {
+  "src": "photo-chef.kr-yudoshi.jpg",
+  "author": "Benny Mazur",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Parboiling_peaches.jpg",
+  "file": "File:Parboiling peaches.jpg"
+ },
+ "chef.kr-santoku": {
+  "src": "photo-chef.kr-santoku.jpg",
+  "author": "Holger müller",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Santoku_Kochmesser.jpg",
+  "file": "File:Santoku Kochmesser.jpg"
+ },
+ "chef.kr-deba": {
+  "src": "photo-chef.kr-deba.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DebaBocho.Cleaver.Japan.jpg",
+  "file": "File:DebaBocho.Cleaver.Japan.jpg"
+ },
+ "chef.kr-gyuto": {
+  "src": "photo-chef.kr-gyuto.jpg",
+  "author": "ProjectManhattan",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chef%27s_knife.jpg",
+  "file": "File:Chef's knife.jpg"
+ },
+ "chef.kr-harabiraki": {
+  "src": "photo-chef.kr-harabiraki.jpg",
+  "author": "halfrain",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E9%AF%9B%E3%81%AE%E3%81%B2%E3%82%89%E3%81%8D_-_flickr_14968705320_46ddc52947_o.jpg",
+  "file": "File:鯛のひらき - flickr 14968705320 46ddc52947 o.jpg"
+ },
+ "chef.kr-yanagiba": {
+  "src": "photo-chef.kr-yanagiba.jpg",
+  "author": "Fred the Oyster",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_knife_blade_types_B.svg",
+  "file": "File:Japanese knife blade types B.svg"
+ },
+ "chef.kr-usuba": {
+  "src": "photo-chef.kr-usuba.jpg",
+  "author": "Frank Schulenburg",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hitohira_Tanaka_Mosuke_210mm_Kamagata_Usuba_Aogami_1_(2026)-104A7986.jpg",
+  "file": "File:Hitohira Tanaka Mosuke 210mm Kamagata Usuba Aogami 1 (2026)-104A7986.jpg"
+ },
+ "chef.kr-chukabocho": {
+  "src": "photo-chef.kr-chukabocho.jpg",
+  "author": "Olaf Simons",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Four_chef%27s_knives_and_an_paring_knife.jpg",
+  "file": "File:Four chef's knives and an paring knife.jpg"
+ },
+ "chef.kr-petty": {
+  "src": "photo-chef.kr-petty.jpg",
+  "author": "Olaf Simons",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Four_chef%27s_knives_and_an_paring_knife.jpg",
+  "file": "File:Four chef's knives and an paring knife.jpg"
+ },
+ "chef.kr-toishi": {
+  "src": "photo-chef.kr-toishi.jpg",
+  "author": "Modeha",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toishi.jpg",
+  "file": "File:Toishi.jpg"
+ },
+ "chef.kr-gomai": {
+  "src": "photo-chef.kr-gomai.jpg",
+  "author": "サフィル",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hirame_flatfish_front.JPG",
+  "file": "File:Hirame flatfish front.JPG"
+ },
+ "chef.kr-daimyo": {
+  "src": "photo-chef.kr-daimyo.jpg",
+  "author": "サフィル",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:3mai_before.JPG",
+  "file": "File:3mai before.JPG"
+ },
+ "chef.kr-kannon": {
+  "src": "photo-chef.kr-kannon.jpg",
+  "author": "撮影・工藤利三郎（社寺建築写真帖4）",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Miroku_Zushi.jpg",
+  "file": "File:Miroku Zushi.jpg"
+ },
+ "chef.kr-chateau": {
+  "src": "photo-chef.kr-chateau.jpg",
+  "author": "ToucanWings",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_073.jpg",
+  "file": "File:Vue aérienne du domaine de Versailles par ToucanWings - Creative Commons By Sa 3.0 - 073.jpg"
+ },
+ "chef.wz-niru": {
+  "src": "photo-chef.wz-niru.jpg",
+  "author": "User:Kentin",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_onishime_2009.JPG",
+  "file": "File:Japanese onishime 2009.JPG"
+ },
+ "chef.wz-itameru": {
+  "src": "photo-chef.wz-itameru.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wok_Cooking.jpg",
+  "file": "File:Wok Cooking.jpg"
+ },
+ "chef.wz-ageru": {
+  "src": "photo-chef.wz-ageru.jpg",
+  "author": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Deep-fried_foods_with_dipping_sauce.jpg",
+  "file": "File:Deep-fried foods with dipping sauce.jpg"
+ },
+ "chef.wz-musu": {
+  "src": "photo-chef.wz-musu.jpg",
+  "author": "민정기 마태오 Matteo J.K. Mihn",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Dimsum-shanghai.JPG",
+  "file": "File:Dimsum-shanghai.JPG"
+ },
+ "chef.wz-yuderu": {
+  "src": "photo-chef.wz-yuderu.jpg",
+  "author": "jonl",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Boiling_edamame_by_jonl.jpg",
+  "file": "File:Boiling edamame by jonl.jpg"
+ },
+ "chef.wz-aeru": {
+  "src": "photo-chef.wz-aeru.jpg",
+  "author": "Babi Hijau",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hourensougomaae001.jpg",
+  "file": "File:Hourensougomaae001.jpg"
+ },
+ "chef.wz-furaipan": {
+  "src": "photo-chef.wz-furaipan.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pfanne_(Edelstahl).jpg",
+  "file": "File:Pfanne (Edelstahl).jpg"
+ },
+ "chef.wz-karaage": {
+  "src": "photo-chef.wz-karaage.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_karaage_003.jpg",
+  "file": "File:Chicken karaage 003.jpg"
+ },
+ "chef.wz-toromi": {
+  "src": "photo-chef.wz-toromi.jpg",
+  "author": "Dana Yi",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Potato_starch_slurry.jpg",
+  "file": "File:Potato starch slurry.jpg"
+ },
+ "chef.wz-mushiki": {
+  "src": "photo-chef.wz-mushiki.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Steamers.jpg",
+  "file": "File:Steamers.jpg"
+ },
+ "chef.wz-donabe": {
+  "src": "photo-chef.wz-donabe.jpg",
+  "author": "photo: Qurren (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cainz_Donabe_Hakusen-nagashi_19cm_1.jpg",
+  "file": "File:Cainz Donabe Hakusen-nagashi 19cm 1.jpg"
+ },
+ "chef.wz-otoshibuta": {
+  "src": "photo-chef.wz-otoshibuta.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:OtoshiButa.DropLid.jpg",
+  "file": "File:OtoshiButa.DropLid.jpg"
+ },
+ "chef.wz-nitsuke": {
+  "src": "photo-chef.wz-nitsuke.jpg",
+  "author": "User:Kentin",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_onishime_2009.JPG",
+  "file": "File:Japanese onishime 2009.JPG"
+ },
+ "chef.wz-keiryocup": {
+  "src": "photo-chef.wz-keiryocup.jpg",
+  "author": "Yanagi774 at Japanese Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Keiryoucup.JPG",
+  "file": "File:Keiryoucup.JPG"
+ },
+ "chef.wz-keiryo": {
+  "src": "photo-chef.wz-keiryo.jpg",
+  "author": "Saharasav",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Keiryo_spoons.jpg",
+  "file": "File:Keiryo spoons.jpg"
+ },
+ "chef.wz-suage": {
+  "src": "photo-chef.wz-suage.jpg",
+  "author": "Masashi Yanagiya",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%81%B5%E3%81%8D%E3%81%AE%E3%81%A8%E3%81%86%E3%81%AE%E7%B4%A0%E6%8F%9A%E3%81%92.jpg",
+  "file": "File:ふきのとうの素揚げ.jpg"
+ },
+ "chef.wz-atsuryokunabe": {
+  "src": "photo-chef.wz-atsuryokunabe.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pressure_cooker.jpg",
+  "file": "File:Pressure cooker.jpg"
+ },
+ "chef.wz-seiro": {
+  "src": "photo-chef.wz-seiro.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mushiki.Steamer.jpg",
+  "file": "File:Mushiki.Steamer.jpg"
+ },
+ "chef.wz-mizudoki": {
+  "src": "photo-chef.wz-mizudoki.jpg",
+  "author": "Jon Pallbo (Jon.Pallbo@gmail.com)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Potato_flour2.jpg",
+  "file": "File:Potato flour2.jpg"
+ },
+ "chef.wz-ruu": {
+  "src": "photo-chef.wz-ruu.jpg",
+  "author": "Oskila",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Thickening.jpg",
+  "file": "File:Thickening.jpg"
+ },
+ "chef.wz-yusen": {
+  "src": "photo-chef.wz-yusen.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bain-marie.JPG",
+  "file": "File:Bain-marie.JPG"
+ },
+ "chef.wz-jikabi": {
+  "src": "photo-chef.wz-jikabi.jpg",
+  "author": "Manuel QC",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Meat_fillets_being_grilled.jpg",
+  "file": "File:Meat fillets being grilled.jpg"
+ },
+ "chef.wz-koka": {
+  "src": "photo-chef.wz-koka.jpg",
+  "author": "Picasa author kalaya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cornstarch_mixed_with_water.jpg",
+  "file": "File:Cornstarch mixed with water.jpg"
+ },
+ "chef.wz-nishime": {
+  "src": "photo-chef.wz-nishime.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Nishime_002.jpg",
+  "file": "File:Nishime 002.jpg"
+ },
+ "chef.wz-itameni": {
+  "src": "photo-chef.wz-itameni.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wok_Cooking.jpg",
+  "file": "File:Wok Cooking.jpg"
+ },
+ "chef.wz-ih": {
+  "src": "photo-chef.wz-ih.jpg",
+  "author": "Felix Reimann",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ceranfeld.jpg",
+  "file": "File:Ceranfeld.jpg"
+ },
+ "chef.wz-karameru": {
+  "src": "photo-chef.wz-karameru.jpg",
+  "author": "Takeaway",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2014_0531_Cr%C3%A8me_br%C3%BBl%C3%A9e_Doi_Mae_Salong.jpg",
+  "file": "File:2014 0531 Crème brûlée Doi Mae Salong.jpg"
+ },
+ "chef.wz-meiraado": {
+  "src": "photo-chef.wz-meiraado.jpg",
+  "author": "User HappyApple on en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Louis_Camille_Maillard.jpg",
+  "file": "File:Louis Camille Maillard.jpg"
+ },
+ "chef.wz-gyoko": {
+  "src": "photo-chef.wz-gyoko.jpg",
+  "author": "Daler Boi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Light_glinting_off_icicles.jpg",
+  "file": "File:Light glinting off icicles.jpg"
+ },
+ "chef.wz-gelka": {
+  "src": "photo-chef.wz-gelka.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Konnyaku.jpg",
+  "file": "File:Konnyaku.jpg"
+ },
+ "chef.wz-tairyu": {
+  "src": "photo-chef.wz-tairyu.jpg",
+  "author": "EyrianCon-struct",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:ConvectionCells.svg",
+  "file": "File:ConvectionCells.svg"
+ },
+ "chef.wz-shinku": {
+  "src": "photo-chef.wz-shinku.jpg",
+  "author": "Pedro.serna",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sous_Vide_Cooking.jpg",
+  "file": "File:Sous Vide Cooking.jpg"
+ },
+ "chef.wz-steamcon": {
+  "src": "photo-chef.wz-steamcon.jpg",
+  "author": "RETIGO Ltd., Láň 2310, 756 64 Rožnov pod Radhoštěm, CZ",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Retigo_Blue_Vision_623i.tif",
+  "file": "File:Retigo Blue Vision 623i.tif"
+ },
+ "chef.ws-washoku": {
+  "src": "photo-chef.ws-washoku.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Osechi_001.jpg",
+  "file": "File:Osechi 001.jpg"
+ },
+ "chef.ws-misoshiru": {
+  "src": "photo-chef.ws-misoshiru.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Miso_Soup_001.jpg",
+  "file": "File:Miso Soup 001.jpg"
+ },
+ "chef.ws-sushi": {
+  "src": "photo-chef.ws-sushi.jpg",
+  "author": "Yumi Kimura",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Various_sushi,_beautiful_October_night_at_midnight.jpg",
+  "file": "File:Various sushi, beautiful October night at midnight.jpg"
+ },
+ "chef.ws-tempura": {
+  "src": "photo-chef.ws-tempura.jpg",
+  "author": "Nesnad",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Tempurainjapan-ikebukuro-dec312007.jpg",
+  "file": "File:Tempurainjapan-ikebukuro-dec312007.jpg"
+ },
+ "chef.ws-sashimi": {
+  "src": "photo-chef.ws-sashimi.jpg",
+  "author": "663highland",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
+  "file": "File:241109 Shigaraki ware Koga Shiga pref Japan01s3.jpg"
+ },
+ "chef.ws-udon": {
+  "src": "photo-chef.ws-udon.jpg",
+  "author": "udono",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Udon_by_udono.jpg",
+  "file": "File:Udon by udono.jpg"
+ },
+ "chef.ws-onigiri": {
+  "src": "photo-chef.ws-onigiri.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Onigiri_002.jpg",
+  "file": "File:Onigiri 002.jpg"
+ },
+ "chef.ws-nimono": {
+  "src": "photo-chef.ws-nimono.jpg",
+  "author": "User:Kentin",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_onishime_2009.JPG",
+  "file": "File:Japanese onishime 2009.JPG"
+ },
+ "chef.ws-sukiyaki": {
+  "src": "photo-chef.ws-sukiyaki.jpg",
+  "author": "ajari",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sukiyaki_01.jpg",
+  "file": "File:Sukiyaki 01.jpg"
+ },
+ "chef.ws-nikujaga": {
+  "src": "photo-chef.ws-nikujaga.jpg",
+  "author": "Yumi Kimura from Yokohama, JAPAN",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Braised_pork_and_potatoes_(3089327692).jpg",
+  "file": "File:Braised pork and potatoes (3089327692).jpg"
+ },
+ "chef.ws-oden": {
+  "src": "photo-chef.ws-oden.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Oden_001.jpg",
+  "file": "File:Oden 001.jpg"
+ },
+ "chef.ws-shabushabu": {
+  "src": "photo-chef.ws-shabushabu.jpg",
+  "author": "jimg944",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shabu-shabu-01.jpg",
+  "file": "File:Shabu-shabu-01.jpg"
+ },
+ "chef.ws-chawanmushi": {
+  "src": "photo-chef.ws-chawanmushi.jpg",
+  "author": "Brücke-Osteuropa",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Chawan-mushi.JPG",
+  "file": "File:Chawan-mushi.JPG"
+ },
+ "chef.ws-osechi": {
+  "src": "photo-chef.ws-osechi.jpg",
+  "author": "No machine-readable author provided. Sixgimic assumed (based…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Oseti.jpg",
+  "file": "File:Oseti.jpg"
+ },
+ "chef.ws-ichiju": {
+  "src": "photo-chef.ws-ichiju.jpg",
+  "author": "サフィル",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Home_Dinner_1Soup_and_Many_Dishes.jpg",
+  "file": "File:Japanese Home Dinner 1Soup and Many Dishes.jpg"
+ },
+ "chef.ws-toshikoshi": {
+  "src": "photo-chef.ws-toshikoshi.jpg",
+  "author": "Tokyofuchu2009",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toshikoshisoba.jpg",
+  "file": "File:Toshikoshisoba.jpg"
+ },
+ "chef.ws-nanakusa": {
+  "src": "photo-chef.ws-nanakusa.jpg",
+  "author": "Blue Lotus",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nanakusa_gayu_on_Nanakusa_no_sekku.jpg",
+  "file": "File:Nanakusa gayu on Nanakusa no sekku.jpg"
+ },
+ "chef.ws-nigiri": {
+  "src": "photo-chef.ws-nigiri.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Rokusanen_Wakayama_Japan07s5.jpg",
+  "file": "File:Rokusanen Wakayama Japan07s5.jpg"
+ },
+ "chef.ws-makizushi": {
+  "src": "photo-chef.ws-makizushi.jpg",
+  "author": "pasqualeschiavoneph",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Makizushi2.jpg",
+  "file": "File:Makizushi2.jpg"
+ },
+ "chef.ws-shirumono": {
+  "src": "photo-chef.ws-shirumono.jpg",
+  "author": "sunday driver from Gion, Kyoto",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Suimono_by_sunday_driver_in_Kyoto.jpg",
+  "file": "File:Suimono by sunday driver in Kyoto.jpg"
+ },
+ "chef.ws-suimono": {
+  "src": "photo-chef.ws-suimono.jpg",
+  "author": "Mullenkedheim from Tonami, Toyama",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Suimono_with_crab_and_tofu_by_Mullenkedheim_in_Tonami,_Toyama.jpg",
+  "file": "File:Suimono with crab and tofu by Mullenkedheim in Tonami, Toyama.jpg"
+ },
+ "chef.ws-aemono": {
+  "src": "photo-chef.ws-aemono.jpg",
+  "author": "Babi Hijau",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hourensougomaae001.jpg",
+  "file": "File:Hourensougomaae001.jpg"
+ },
+ "chef.ws-shusai": {
+  "src": "photo-chef.ws-shusai.jpg",
+  "author": "Floris van Dyck",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Floris_Claesz._van_Dyck_001.jpg",
+  "file": "File:Floris Claesz. van Dyck 001.jpg"
+ },
+ "chef.ws-fukusai": {
+  "src": "photo-chef.ws-fukusai.jpg",
+  "author": "Stuart Spivack from Cleveland, Ohio, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Flickr_stuart_spivack_173603796--Macaroni_and_cheese.jpg",
+  "file": "File:Flickr stuart spivack 173603796--Macaroni and cheese.jpg"
+ },
+ "chef.ws-kombudashi": {
+  "src": "photo-chef.ws-kombudashi.jpg",
+  "author": "Sakurai Midori",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Katsuobushi_02.jpg",
+  "file": "File:Katsuobushi 02.jpg"
+ },
+ "chef.ws-konomono": {
+  "src": "photo-chef.ws-konomono.jpg",
+  "author": "DoWhile",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Nukazuke.jpg",
+  "file": "File:Nukazuke.jpg"
+ },
+ "chef.ws-shojin": {
+  "src": "photo-chef.ws-shojin.jpg",
+  "author": "Pratyeka at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chinese-buddhist-cuisine-taiwan-1.jpg",
+  "file": "File:Chinese-buddhist-cuisine-taiwan-1.jpg"
+ },
+ "chef.ws-kiritanpo": {
+  "src": "photo-chef.ws-kiritanpo.jpg",
+  "author": "桜田守宏 at Japanese Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kiritanpo.jpg",
+  "file": "File:Kiritanpo.jpg"
+ },
+ "chef.ws-hoto": {
+  "src": "photo-chef.ws-hoto.jpg",
+  "author": "No machine-readable author provided. Jungle assumed (based o…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Houtou.jpg",
+  "file": "File:Houtou.jpg"
+ },
+ "chef.ws-toki": {
+  "src": "photo-chef.ws-toki.jpg",
+  "author": "Chukwukajustice",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Traditional_pottery_in_Nigeria_(Ikpu_ite)_19.jpg",
+  "file": "File:Traditional pottery in Nigeria (Ikpu ite) 19.jpg"
+ },
+ "chef.ws-shikki": {
+  "src": "photo-chef.ws-shikki.jpg",
+  "author": "Tokyo National Museum",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Writing_Box_Yatsuhashi_bridge_design.jpg",
+  "file": "File:Writing Box Yatsuhashi bridge design.jpg"
+ },
+ "chef.ws-tsuma": {
+  "src": "photo-chef.ws-tsuma.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sashimi.jpg",
+  "file": "File:Sashimi.jpg"
+ },
+ "chef.ws-gameni": {
+  "src": "photo-chef.ws-gameni.jpg",
+  "author": "南無観自在",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%81%8C%E3%82%81%E7%85%AE%EF%BC%88%E7%AD%91%E5%89%8D%E7%85%AE%EF%BC%89P1010424.jpg",
+  "file": "File:がめ煮（筑前煮）P1010424.jpg"
+ },
+ "chef.ws-chanchan": {
+  "src": "photo-chef.ws-chanchan.jpg",
+  "author": "サフィル",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Grilled_Fish_HokkeChanChanYaki.jpg",
+  "file": "File:Grilled Fish HokkeChanChanYaki.jpg"
+ },
+ "chef.ws-jibuni": {
+  "src": "photo-chef.ws-jibuni.jpg",
+  "author": "Asacyan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jibuni_01.jpg",
+  "file": "File:Jibuni 01.jpg"
+ },
+ "chef.ws-suikuchi": {
+  "src": "photo-chef.ws-suikuchi.jpg",
+  "author": "sunday driver from Gion, Kyoto",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Suimono_by_sunday_driver_in_Kyoto.jpg",
+  "file": "File:Suimono by sunday driver in Kyoto.jpg"
+ },
+ "chef.ws-honzen": {
+  "src": "photo-chef.ws-honzen.jpg",
+  "author": "Tomoya Nozaki",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NIBITASHI.jpg",
+  "file": "File:NIBITASHI.jpg"
+ },
+ "chef.ws-suiji": {
+  "src": "photo-chef.ws-suiji.jpg",
+  "author": "Mullenkedheim from Tonami, Toyama",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Suimono_with_crab_and_tofu_by_Mullenkedheim_in_Tonami,_Toyama.jpg",
+  "file": "File:Suimono with crab and tofu by Mullenkedheim in Tonami, Toyama.jpg"
+ },
+ "chef.ws-wandane": {
+  "src": "photo-chef.ws-wandane.jpg",
+  "author": "Mullenkedheim from Tonami, Toyama",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Suimono_with_crab_and_tofu_by_Mullenkedheim_in_Tonami,_Toyama.jpg",
+  "file": "File:Suimono with crab and tofu by Mullenkedheim in Tonami, Toyama.jpg"
+ },
+ "chef.ws-fucha": {
+  "src": "photo-chef.ws-fucha.jpg",
+  "author": "hakuunan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hakuunan.jpg",
+  "file": "File:Hakuunan.jpg"
+ },
+ "chef.ws-shippoku": {
+  "src": "photo-chef.ws-shippoku.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Nagasaki_Shippoku_Hamakatsu11s.jpg",
+  "file": "File:Nagasaki Shippoku Hamakatsu11s.jpg"
+ },
+ "chef.sk-pasta": {
+  "src": "photo-chef.sk-pasta.jpg",
+  "author": "Ivan Vighetto",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tagliatelle_al_rag%C3%B9_(image_modified).jpg",
+  "file": "File:Tagliatelle al ragù (image modified).jpg"
+ },
+ "chef.sk-curry": {
+  "src": "photo-chef.sk-curry.jpg",
+  "author": "masa from JAPAN",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Indian_curry_with_dosa.jpg",
+  "file": "File:Indian curry with dosa.jpg"
+ },
+ "chef.sk-hamburger": {
+  "src": "photo-chef.sk-hamburger.jpg",
+  "author": "Namiwoo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%99%E3%83%BC%E3%82%B3%E3%83%B3%E3%83%81%E3%83%BC%E3%82%BA%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC.jpg",
+  "file": "File:ベーコンチーズバーガー.jpg"
+ },
+ "chef.sk-gyoza": {
+  "src": "photo-chef.sk-gyoza.jpg",
+  "author": "Yeepunchmen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E5%8D%97%E6%8A%95%E8%8D%89%E5%B1%AF%E6%B0%B4%E9%A4%83Nantou,_Taiwan_Caotun_dumplings.jpg",
+  "file": "File:台灣南投草屯水餃Nantou, Taiwan Caotun dumplings.jpg"
+ },
+ "chef.sk-pizza": {
+  "src": "photo-chef.sk-pizza.jpg",
+  "author": "Kos88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita_in_Naples_2015.JPG",
+  "file": "File:Pizza Margherita in Naples 2015.JPG"
+ },
+ "chef.sk-sausage": {
+  "src": "photo-chef.sk-sausage.jpg",
+  "author": "ZhengZhou",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wurstteller.png",
+  "file": "File:Wurstteller.png"
+ },
+ "chef.sk-omelette": {
+  "src": "photo-chef.sk-omelette.jpg",
+  "author": "Gomurafuji",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%AA%E3%83%A0%E3%83%AC%E3%83%84.jpg",
+  "file": "File:オムレツ.jpg"
+ },
+ "chef.sk-gratin": {
+  "src": "photo-chef.sk-gratin.jpg",
+  "author": "Kuha455405",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Macaronigratin.jpg",
+  "file": "File:Macaronigratin.jpg"
+ },
+ "chef.sk-chahan": {
+  "src": "photo-chef.sk-chahan.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ramen_and_Chahan_002.jpg",
+  "file": "File:Ramen and Chahan 002.jpg"
+ },
+ "chef.sk-harumaki": {
+  "src": "photo-chef.sk-harumaki.jpg",
+  "author": "Brücke-Osteuropa",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cuisine_of_China_0086.JPG",
+  "file": "File:Cuisine of China 0086.JPG"
+ },
+ "chef.sk-chef": {
+  "src": "photo-chef.sk-chef.jpg",
+  "author": "Chef martin joel vasquez",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chef_martin_joel_vasquez.jpg",
+  "file": "File:Chef martin joel vasquez.jpg"
+ },
+ "chef.sk-kimchi": {
+  "src": "photo-chef.sk-kimchi.jpg",
+  "author": "Nagyman, a flickr user",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gimchi.jpg",
+  "file": "File:Gimchi.jpg"
+ },
+ "chef.sk-mabodofu": {
+  "src": "photo-chef.sk-mabodofu.jpg",
+  "author": "Kos88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mapo_doufu_by_Chen_Mapo_Restaurant_in_Chengdu_Sichuan%EF%BC%88%E9%99%B3%E9%BA%BB%E5%A9%86%E8%B1%86%E8%85%90%E5%BA%97%E3%81%AE%E9%BA%BB%E5%A9%86%E8%B1%86%E8%85%90%EF%BC%89.JPG",
+  "file": "File:Mapo doufu by Chen Mapo Restaurant in Chengdu Sichuan（陳麻婆豆腐店の麻婆豆腐）.JPG"
+ },
+ "chef.sk-bibimbap": {
+  "src": "photo-chef.sk-bibimbap.jpg",
+  "author": "abex (a flickr user)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korean.food-Bibimbap-02.jpg",
+  "file": "File:Korean.food-Bibimbap-02.jpg"
+ },
+ "chef.sk-tacos": {
+  "src": "photo-chef.sk-tacos.jpg",
+  "author": "Larry Miller",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
+  "file": "File:001 Tacos de carnitas, carne asada y al pastor.jpg"
+ },
+ "chef.sk-paella": {
+  "src": "photo-chef.sk-paella.jpg",
+  "author": "Jan Harenburg",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:01_Paella_Valenciana_original.jpg",
+  "file": "File:01 Paella Valenciana original.jpg"
+ },
+ "chef.sk-risotto": {
+  "src": "photo-chef.sk-risotto.jpg",
+  "author": "No machine-readable author provided. Rainer Zenz assumed (ba…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Steinpilzrisotto.jpg",
+  "file": "File:Steinpilzrisotto.jpg"
+ },
+ "chef.sk-potaufeu": {
+  "src": "photo-chef.sk-potaufeu.jpg",
+  "author": "Benoît Prieur",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Restaurant_Volga_(Lyon)_-_pot_au_feu_arm%C3%A9nien.jpg",
+  "file": "File:Restaurant Volga (Lyon) - pot au feu arménien.jpg"
+ },
+ "chef.sk-pho": {
+  "src": "photo-chef.sk-pho.jpg",
+  "author": "Kham Tran - www.khamtran.com",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pho-Beef-Noodles-2008.jpg",
+  "file": "File:Pho-Beef-Noodles-2008.jpg"
+ },
+ "chef.sk-aldente": {
+  "src": "photo-chef.sk-aldente.jpg",
+  "author": "Eloquence at English Wikipedia Later versions were uploaded …",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Spaghetti-cooking.jpg",
+  "file": "File:Spaghetti-cooking.jpg"
+ },
+ "chef.sk-saute": {
+  "src": "photo-chef.sk-saute.jpg",
+  "author": "Alex Voerman (aviper2k7)",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Sauteed_potatoes.png",
+  "file": "File:Sauteed potatoes.png"
+ },
+ "chef.sk-meuniere": {
+  "src": "photo-chef.sk-meuniere.jpg",
+  "author": "Jay Cross from Berkeley, California, US",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sole_meuniere_(4689490702).jpg",
+  "file": "File:Sole meuniere (4689490702).jpg"
+ },
+ "chef.sk-horsdoeuvre": {
+  "src": "photo-chef.sk-horsdoeuvre.jpg",
+  "author": "Peng",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Salatteller.JPG",
+  "file": "File:Salatteller.JPG"
+ },
+ "chef.sk-namul": {
+  "src": "photo-chef.sk-namul.jpg",
+  "author": "by snak (a flickr user)",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korean.food-Namul-02.jpg",
+  "file": "File:Korean.food-Namul-02.jpg"
+ },
+ "chef.sk-chige": {
+  "src": "photo-chef.sk-chige.jpg",
+  "author": "by miyagawa",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korean_stew-Kimchi_jjigae-01.jpg",
+  "file": "File:Korean stew-Kimchi jjigae-01.jpg"
+ },
+ "chef.sk-carpaccio": {
+  "src": "photo-chef.sk-carpaccio.jpg",
+  "author": "Boca Dorada",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carpaccio.jpg",
+  "file": "File:Carpaccio.jpg"
+ },
+ "chef.sk-quiche": {
+  "src": "photo-chef.sk-quiche.jpg",
+  "author": "Ghouston",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Quiche.jpg",
+  "file": "File:Quiche.jpg"
+ },
+ "chef.sk-kebab": {
+  "src": "photo-chef.sk-kebab.jpg",
+  "author": "Beshef",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kebab.jpg",
+  "file": "File:Kebab.jpg"
+ },
+ "chef.sk-borscht": {
+  "src": "photo-chef.sk-borscht.jpg",
+  "author": "liz west from Boxborough, MA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Borscht_served.jpg",
+  "file": "File:Borscht served.jpg"
+ },
+ "chef.sk-tomyumkung": {
+  "src": "photo-chef.sk-tomyumkung.jpg",
+  "author": "Takeaway",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tom_yam_kung_maenam.jpg",
+  "file": "File:Tom yam kung maenam.jpg"
+ },
+ "chef.sk-demiglace": {
+  "src": "photo-chef.sk-demiglace.jpg",
+  "author": "Edward Russell",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:C%C3%B4te_de_Porc_Fermi%C3%A8re.jpg",
+  "file": "File:Côte de Porc Fermière.jpg"
+ },
+ "chef.sk-bechamel": {
+  "src": "photo-chef.sk-bechamel.jpg",
+  "author": "Adriano",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lasagne.jpg",
+  "file": "File:Lasagne.jpg"
+ },
+ "chef.sk-nampla": {
+  "src": "photo-chef.sk-nampla.jpg",
+  "author": "Heinrich Damm (User:Hdamm, Hdamm at German Wikipedia)",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Thaifishsauce0609.jpg",
+  "file": "File:Thaifishsauce0609.jpg"
+ },
+ "chef.sk-bouillabaisse": {
+  "src": "photo-chef.sk-bouillabaisse.jpg",
+  "author": "Slastic",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bullabessa.jpg",
+  "file": "File:Bullabessa.jpg"
+ },
+ "chef.sk-tapas": {
+  "src": "photo-chef.sk-tapas.jpg",
+  "author": "The original uploader was Asterion at English Wikipedia.",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Puntillitas.jpg",
+  "file": "File:Puntillitas.jpg"
+ },
+ "chef.sk-flambe": {
+  "src": "photo-chef.sk-flambe.jpg",
+  "author": "Jenene from Chinatown, New York City, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Banana_flamb%C3%A9_-_by_Jenene.jpg",
+  "file": "File:Banana flambé - by Jenene.jpg"
+ },
+ "chef.sk-gazpacho": {
+  "src": "photo-chef.sk-gazpacho.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tomato_gazpacho.jpg",
+  "file": "File:Tomato gazpacho.jpg"
+ },
+ "chef.sk-couscous": {
+  "src": "photo-chef.sk-couscous.jpg",
+  "author": "brandi sims",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Organic_couscous-01.jpg",
+  "file": "File:Organic couscous-01.jpg"
+ },
+ "chef.sk-consomme": {
+  "src": "photo-chef.sk-consomme.jpg",
+  "author": "Kui-Doraku",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Consomme_de_volaille.jpg",
+  "file": "File:Consomme de volaille.jpg"
+ },
+ "chef.sk-bouillon": {
+  "src": "photo-chef.sk-bouillon.jpg",
+  "author": "Kui-Doraku",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bouillon_de_volaille.jpg",
+  "file": "File:Bouillon de volaille.jpg"
+ },
+ "chef.sk-terrine": {
+  "src": "photo-chef.sk-terrine.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pates_p1150435.jpg",
+  "file": "File:Pates p1150435.jpg"
+ },
+ "chef.sk-confit": {
+  "src": "photo-chef.sk-confit.jpg",
+  "author": "Bertrand Devouard (can be contacted through anthere)",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Gesier.jpg",
+  "file": "File:Gesier.jpg"
+ },
+ "chef.sk-aburadoshi": {
+  "src": "photo-chef.sk-aburadoshi.jpg",
+  "author": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Deep-fried_foods_with_dipping_sauce.jpg",
+  "file": "File:Deep-fried foods with dipping sauce.jpg"
+ },
+ "chef.sk-bouquetgarni": {
+  "src": "photo-chef.sk-bouquetgarni.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bouquet_garni_p1150476_extracted.jpg",
+  "file": "File:Bouquet garni p1150476 extracted.jpg"
+ },
+ "chef.sk-hollandaise": {
+  "src": "photo-chef.sk-hollandaise.jpg",
+  "author": "Mark James Miller",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fresh_Asparagus_and_hollandaise.jpg",
+  "file": "File:Fresh Asparagus and hollandaise.jpg"
+ },
+ "chef.sk-antipasto": {
+  "src": "photo-chef.sk-antipasto.jpg",
+  "author": "https://www.flickr.com/people/globetrotter1937/ (Retouched b…",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Antipasto_all%27italiana.jpg",
+  "file": "File:Antipasto all'italiana.jpg"
+ },
+ "chef.sk-garniture": {
+  "src": "photo-chef.sk-garniture.jpg",
+  "author": "Stu Spivack",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Garnished_crabcake.jpg",
+  "file": "File:Garnished crabcake.jpg"
+ },
+ "chef.sk-deglacer": {
+  "src": "photo-chef.sk-deglacer.jpg",
+  "author": "Mike Czyzewski",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fondwhite.jpg",
+  "file": "File:Fondwhite.jpg"
+ },
+ "chef.es-shokuchudoku": {
+  "src": "photo-chef.es-shokuchudoku.jpg",
+  "author": "GNOME icon artists; Pbroks13 (talk)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Food_Safety_1.svg",
+  "file": "File:Food Safety 1.svg"
+ },
+ "chef.es-reizo": {
+  "src": "photo-chef.es-reizo.jpg",
+  "author": "N-Lange.de",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kuehlregal_USA.jpg",
+  "file": "File:Kuehlregal USA.jpg"
+ },
+ "chef.es-shohikigen": {
+  "src": "photo-chef.es-shohikigen.jpg",
+  "author": "Edward Betts",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Expiration.jpg",
+  "file": "File:Expiration.jpg"
+ },
+ "chef.es-shomikigen": {
+  "src": "photo-chef.es-shomikigen.jpg",
+  "author": "Edward Betts",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Expiration.jpg",
+  "file": "File:Expiration.jpg"
+ },
+ "chef.es-mask": {
+  "src": "photo-chef.es-mask.jpg",
+  "author": "Wereskowa",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wearing_FFP_mask_during_the_COVID-19_pandemic_in_Khmelnytskyi,_April_2020.jpg",
+  "file": "File:Wearing FFP mask during the COVID-19 pandemic in Khmelnytskyi, April 2020.jpg"
+ },
+ "chef.es-hakui": {
+  "src": "photo-chef.es-hakui.jpg",
+  "author": "André",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaleco.jpg",
+  "file": "File:Jaleco.jpg"
+ },
+ "chef.es-boshi": {
+  "src": "photo-chef.es-boshi.jpg",
+  "author": "Londres, E. Stanford",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chapeaux_en_peau_de_castor.jpg",
+  "file": "File:Chapeaux en peau de castor.jpg"
+ },
+ "chef.es-chorishi": {
+  "src": "photo-chef.es-chorishi.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cooks_050918_154402.jpg",
+  "file": "File:Cooks 050918 154402.jpg"
+ },
+ "chef.es-jiaensosan": {
+  "src": "photo-chef.es-jiaensosan.jpg",
+  "author": "Д.Ильин: vectorization",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sodium-hypochlorite.svg",
+  "file": "File:Sodium-hypochlorite.svg"
+ },
+ "chef.es-tenkabutsu": {
+  "src": "photo-chef.es-tenkabutsu.jpg",
+  "author": "Helge Höpfner",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lecithin-Formulierungen.jpg",
+  "file": "File:Lecithin-Formulierungen.jpg"
+ },
+ "chef.es-menkyo": {
+  "src": "photo-chef.es-menkyo.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cooks_050918_154402.jpg",
+  "file": "File:Cooks 050918 154402.jpg"
+ },
+ "chef.es-histamine": {
+  "src": "photo-chef.es-histamine.jpg",
+  "author": "Vaccinationist",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Histamine.svg",
+  "file": "File:Histamine.svg"
+ },
+ "chef.es-junzuru": {
+  "src": "photo-chef.es-junzuru.jpg",
+  "author": "David Wiley from Barboursville, WV",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Curry-filled_donuts_by_opencontent_in_Fukuoka.jpg",
+  "file": "File:Curry-filled donuts by opencontent in Fukuoka.jpg"
+ },
+ "chef.es-gyakusei": {
+  "src": "photo-chef.es-gyakusei.jpg",
+  "author": "Paginazero",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Benzalconium_chloride.svg",
+  "file": "File:Benzalconium chloride.svg"
+ },
+ "chef.es-solanin": {
+  "src": "photo-chef.es-solanin.jpg",
+  "author": "Original: Calvero Vector: Calvero",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Solanine.svg",
+  "file": "File:Solanine.svg"
+ },
+ "chef.ey-gochisosama": {
+  "src": "photo-chef.ey-gochisosama.jpg",
+  "author": "Cory Doctorow from Beautiful Downtown Burbank, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Restaurant,_Roppongi,_Tokyo,_Japan_1_(133461680).jpg",
+  "file": "File:Restaurant, Roppongi, Tokyo, Japan 1 (133461680).jpg"
+ },
+ "chef.ey-hashi": {
+  "src": "photo-chef.ey-hashi.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chopstick.JPG",
+  "file": "File:Chopstick.JPG"
+ },
+ "chef.ey-vitamin": {
+  "src": "photo-chef.ey-vitamin.jpg",
+  "author": "Ragesoss",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:B_vitamin_supplement_tablets.jpg",
+  "file": "File:B vitamin supplement tablets.jpg"
+ },
+ "chef.ey-tanpaku": {
+  "src": "photo-chef.ey-tanpaku.jpg",
+  "author": "→AzaToth",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Myoglobin.png",
+  "file": "File:Myoglobin.png"
+ },
+ "chef.ey-calcium": {
+  "src": "photo-chef.ey-calcium.jpg",
+  "author": "Matthias Zepper",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Calcium_unter_Argon_Schutzgasatmosph%C3%A4re.jpg",
+  "file": "File:Calcium unter Argon Schutzgasatmosphäre.jpg"
+ },
+ "chef.ey-kyushoku": {
+  "src": "photo-chef.ey-kyushoku.jpg",
+  "author": "Osamu Iwasaki from Tokyo, Japan",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ky%C5%ABshoku@Japan_01.jpg",
+  "file": "File:Kyūshoku@Japan 01.jpg"
+ },
+ "chef.ey-hinamatsuri": {
+  "src": "photo-chef.ey-hinamatsuri.jpg",
+  "author": "opencontent / David Wiley",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hina_matsuri_display.jpg",
+  "file": "File:Hina matsuri display.jpg"
+ },
+ "chef.ey-setsubun": {
+  "src": "photo-chef.ey-setsubun.jpg",
+  "author": "Katsushika Hokusai (葛飾北斎, Japanese, †1849)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hokusai_Setsubun_no_Oni.jpg",
+  "file": "File:Hokusai Setsubun no Oni.jpg"
+ },
+ "chef.ey-otsukimi": {
+  "src": "photo-chef.ey-otsukimi.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E7%A7%8B%E3%81%AE%E5%90%8D%E6%9C%88.jpg",
+  "file": "File:中秋の名月.jpg"
+ },
+ "chef.ey-tansuika": {
+  "src": "photo-chef.ey-tansuika.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wheat_products.jpg",
+  "file": "File:Wheat products.jpg"
+ },
+ "chef.ey-shishitsu": {
+  "src": "photo-chef.ey-shishitsu.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tripalmitoylglycerol.png",
+  "file": "File:Tripalmitoylglycerol.png"
+ },
+ "chef.ey-shokumotsu": {
+  "src": "photo-chef.ey-shokumotsu.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fruit,_Vegetables_and_Grain_NCI_Visuals_Online.jpg",
+  "file": "File:Fruit, Vegetables and Grain NCI Visuals Online.jpg"
+ },
+ "chef.ey-shokuhinloss": {
+  "src": "photo-chef.ey-shokuhinloss.jpg",
+  "author": "Sean Aranda",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Food_Waste_Fiasco_(15819007150).jpg",
+  "file": "File:Food Waste Fiasco (15819007150).jpg"
+ },
+ "chef.ey-chisan": {
+  "src": "photo-chef.ey-chisan.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Marylebone_Farmers_Market_2005.jpg",
+  "file": "File:Marylebone Farmers Market 2005.jpg"
+ },
+ "chef.ey-vitc": {
+  "src": "photo-chef.ey-vitc.jpg",
+  "author": "Yikrazuul",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:L-Ascorbic_acid.svg",
+  "file": "File:L-Ascorbic acid.svg"
+ },
+ "chef.ey-tango": {
+  "src": "photo-chef.ey-tango.jpg",
+  "author": "tiseb from Nagasaki",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Flying_Koi_by_tiseb_in_Nagasaki.jpg",
+  "file": "File:Flying Koi by tiseb in Nagasaki.jpg"
+ },
+ "chef.ey-doyo": {
+  "src": "photo-chef.ey-doyo.jpg",
+  "author": "Hyougushi",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Unadon_by_Hyougushi_in_Mishima,_Shizuoka.jpg",
+  "file": "File:Unadon by Hyougushi in Mishima, Shizuoka.jpg"
+ },
+ "chef.ey-toshitsu": {
+  "src": "photo-chef.ey-toshitsu.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wheat_products.jpg",
+  "file": "File:Wheat products.jpg"
+ },
+ "chef.ey-genen": {
+  "src": "photo-chef.ey-genen.jpg",
+  "author": "Poyraz 72",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Table_salt_with_salt_shaker_V1.jpg",
+  "file": "File:Table salt with salt shaker V1.jpg"
+ },
+ "chef.ey-aminosan": {
+  "src": "photo-chef.ey-aminosan.jpg",
+  "author": "Ben Mills",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Glycine-skeletal.png",
+  "file": "File:Glycine-skeletal.png"
+ },
+ "chef.ey-ohigan": {
+  "src": "photo-chef.ey-ohigan.jpg",
+  "author": "Kakidai",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lycoris_radiata_-_Kinchakuda_Plateau,_Hidaka,_Saitama.jpg",
+  "file": "File:Lycoris radiata - Kinchakuda Plateau, Hidaka, Saitama.jpg"
+ },
+ "chef.ey-balanceguide": {
+  "src": "photo-chef.ey-balanceguide.jpg",
+  "author": "厚生労働省",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Syokuji_balance_guide.gif",
+  "file": "File:Syokuji balance guide.gif"
+ },
+ "chef.ey-seibun": {
+  "src": "photo-chef.ey-seibun.jpg",
+  "author": "Trounce",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:US_Nutritional_Fact_Label_2.svg",
+  "file": "File:US Nutritional Fact Label 2.svg"
+ },
+ "chef.ey-halal": {
+  "src": "photo-chef.ey-halal.jpg",
+  "author": "Wikimedia Commons / Mu",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Halal_shop_sign,_Rue_de_Patay,_Paris_13.jpg",
+  "file": "File:Halal shop sign, Rue de Patay, Paris 13.jpg"
+ },
+ "chef.ey-teshoku": {
+  "src": "photo-chef.ey-teshoku.jpg",
+  "author": "Richard from kansas city, united states",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ethiopian_food.jpg",
+  "file": "File:Ethiopian food.jpg"
+ },
+ "chef.ey-foodbank": {
+  "src": "photo-chef.ey-foodbank.jpg",
+  "author": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fort_Bragg_Food_Bank_-_November_2022_-_Sarah_Stierch.jpg",
+  "file": "File:Fort Bragg Food Bank - November 2022 - Sarah Stierch.jpg"
+ },
+ "chef.ey-sdgs": {
+  "src": "photo-chef.ey-sdgs.jpg",
+  "author": "United Nations",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:SustainableDevelopmentGoalsLogo.svg",
+  "file": "File:SustainableDevelopmentGoalsLogo.svg"
+ },
+ "chef.ey-gyunabe": {
+  "src": "photo-chef.ey-gyunabe.jpg",
+  "author": "ajari",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sukiyaki_01.jpg",
+  "file": "File:Sukiyaki 01.jpg"
+ },
+ "chef.ey-jinjitsu": {
+  "src": "photo-chef.ey-jinjitsu.jpg",
+  "author": "Blue Lotus",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nanakusa_gayu_on_Nanakusa_no_sekku.jpg",
+  "file": "File:Nanakusa gayu on Nanakusa no sekku.jpg"
+ },
+ "chef.os-wine": {
+  "src": "photo-chef.os-wine.jpg",
+  "author": "USBGroup4",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spier_21_Gables.jpg",
+  "file": "File:Spier 21 Gables.jpg"
+ },
+ "chef.os-redwine": {
+  "src": "photo-chef.os-redwine.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_Wine_Glass.jpg",
+  "file": "File:Red Wine Glass.jpg"
+ },
+ "chef.os-whitewine": {
+  "src": "photo-chef.os-whitewine.jpg",
+  "author": "Tokyo Tanenhaus",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Preparing_a_wine_tasting_flight_at_a_tasting_bar.jpg",
+  "file": "File:Preparing a wine tasting flight at a tasting bar.jpg"
+ },
+ "chef.os-nihonshu": {
+  "src": "photo-chef.os-nihonshu.jpg",
+  "author": "The Epopt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sake_set.jpg",
+  "file": "File:Sake set.jpg"
+ },
+ "chef.os-beer": {
+  "src": "photo-chef.os-beer.jpg",
+  "author": "Ukko.de",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Weizenbier-ukko.jpg",
+  "file": "File:Weizenbier-ukko.jpg"
+ },
+ "chef.os-shochu": {
+  "src": "photo-chef.os-shochu.jpg",
+  "author": "https://publicdomainq.net/shochu-japanese-liquor-0014762/",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Shochu_001.jpg",
+  "file": "File:Shochu 001.jpg"
+ },
+ "chef.os-cocktail": {
+  "src": "photo-chef.os-cocktail.jpg",
+  "author": "Dennis Mojado",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cocktail1.jpg",
+  "file": "File:Cocktail1.jpg"
+ },
+ "chef.os-rose": {
+  "src": "photo-chef.os-rose.jpg",
+  "author": "THOR",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sancerre_rose_Wine.jpg",
+  "file": "File:Sancerre rose Wine.jpg"
+ },
+ "chef.os-sparkling": {
+  "src": "photo-chef.os-sparkling.jpg",
+  "author": "bgvjpe",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Glass_of_champagne.jpg",
+  "file": "File:Glass of champagne.jpg"
+ },
+ "chef.os-champagne": {
+  "src": "photo-chef.os-champagne.jpg",
+  "author": "bgvjpe",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Glass_of_champagne.jpg",
+  "file": "File:Glass of champagne.jpg"
+ },
+ "chef.os-whisky": {
+  "src": "photo-chef.os-whisky.jpg",
+  "author": "Original uploader was Hammersbach at en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:CanadianWhisky.JPG",
+  "file": "File:CanadianWhisky.JPG"
+ },
+ "chef.os-umeshu": {
+  "src": "photo-chef.os-umeshu.jpg",
+  "author": "松岡明芳",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2021-06-16_Umeshu_%E6%A2%85%E9%85%92_DSCF3478.jpg",
+  "file": "File:2021-06-16 Umeshu 梅酒 DSCF3478.jpg"
+ },
+ "chef.os-sommelier": {
+  "src": "photo-chef.os-sommelier.jpg",
+  "author": "OneArmedMan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sommelier_F.I.S.A.R..jpg",
+  "file": "File:Sommelier F.I.S.A.R..jpg"
+ },
+ "chef.os-tokkuri": {
+  "src": "photo-chef.os-tokkuri.jpg",
+  "author": "katorisi",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Sake-bottle,binbou-tokkuri,japan.JPG",
+  "file": "File:Sake-bottle,binbou-tokkuri,japan.JPG"
+ },
+ "chef.os-ochoko": {
+  "src": "photo-chef.os-ochoko.jpg",
+  "author": "Ken from Lisle, IL, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Powder_pink_sake_cup_02.jpg",
+  "file": "File:Powder pink sake cup 02.jpg"
+ },
+ "chef.os-kan": {
+  "src": "photo-chef.os-kan.jpg",
+  "author": "みやとも from Japan.",
+  "license": "CC BY 2.1 JP",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.1/jp/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Kanzake_01.jpg",
+  "file": "File:Kanzake 01.jpg"
+ },
+ "chef.os-reishu": {
+  "src": "photo-chef.os-reishu.jpg",
+  "author": "The Epopt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sake_set.jpg",
+  "file": "File:Sake set.jpg"
+ },
+ "chef.os-junmai": {
+  "src": "photo-chef.os-junmai.jpg",
+  "author": "The Epopt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sake_set.jpg",
+  "file": "File:Sake set.jpg"
+ },
+ "chef.os-ginjo": {
+  "src": "photo-chef.os-ginjo.jpg",
+  "author": "The Epopt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sake_set.jpg",
+  "file": "File:Sake set.jpg"
+ },
+ "chef.os-daiginjo": {
+  "src": "photo-chef.os-daiginjo.jpg",
+  "author": "The Epopt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sake_set.jpg",
+  "file": "File:Sake set.jpg"
+ },
+ "chef.os-honjozo": {
+  "src": "photo-chef.os-honjozo.jpg",
+  "author": "The Epopt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sake_set.jpg",
+  "file": "File:Sake set.jpg"
+ },
+ "chef.os-tokutei": {
+  "src": "photo-chef.os-tokutei.jpg",
+  "author": "The Epopt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sake_set.jpg",
+  "file": "File:Sake set.jpg"
+ },
+ "chef.os-nigori": {
+  "src": "photo-chef.os-nigori.jpg",
+  "author": "8joKeaton",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nigorizake-bottle_and_tyoko-.jpg",
+  "file": "File:Nigorizake-bottle and tyoko-.jpg"
+ },
+ "chef.os-sakamai": {
+  "src": "photo-chef.os-sakamai.jpg",
+  "author": "Takuya Oikawa",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%B3%E3%82%B7%E3%83%92%E3%82%AB%E3%83%AA%E7%AD%89_(16915906410).jpg",
+  "file": "File:コシヒカリ等 (16915906410).jpg"
+ },
+ "chef.os-koji": {
+  "src": "photo-chef.os-koji.jpg",
+  "author": "Zenyrgarden",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koji_Mold_Rice.jpg",
+  "file": "File:Koji Mold Rice.jpg"
+ },
+ "chef.os-sakagura": {
+  "src": "photo-chef.os-sakagura.jpg",
+  "author": "文藤 資成",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2011-12-12_yucho-sake,%E6%B2%B9%E9%95%B7%E9%85%92%E9%80%A0.jpg",
+  "file": "File:2011-12-12 yucho-sake,油長酒造.jpg"
+ },
+ "chef.os-atsukan": {
+  "src": "photo-chef.os-atsukan.jpg",
+  "author": "みやとも from Japan.",
+  "license": "CC BY 2.1 JP",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.1/jp/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Kanzake_01.jpg",
+  "file": "File:Kanzake 01.jpg"
+ },
+ "chef.os-awamori": {
+  "src": "photo-chef.os-awamori.jpg",
+  "author": "jetalone from Ginza, Tokyo",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Various_Awamori_bottles_by_jetalone_in_Ginza,_Tokyo.jpg",
+  "file": "File:Various Awamori bottles by jetalone in Ginza, Tokyo.jpg"
+ },
+ "chef.os-imojochu": {
+  "src": "photo-chef.os-imojochu.jpg",
+  "author": "Jun Seita",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mori_Izo.jpg",
+  "file": "File:Mori Izo.jpg"
+ },
+ "chef.os-brandy": {
+  "src": "photo-chef.os-brandy.jpg",
+  "author": "Szalony kucharz",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Martell_in_brandy_snifter.jpg",
+  "file": "File:Martell in brandy snifter.jpg"
+ },
+ "chef.os-liqueur": {
+  "src": "photo-chef.os-liqueur.jpg",
+  "author": "Eric Litton",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Absinthe-glass.jpg",
+  "file": "File:Absinthe-glass.jpg"
+ },
+ "chef.os-cabernet": {
+  "src": "photo-chef.os-cabernet.jpg",
+  "author": "Agne27 at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_Mountain_Cabernet_Sauvignon_grapes_from_Hedge_Vineyards.jpg",
+  "file": "File:Red Mountain Cabernet Sauvignon grapes from Hedge Vineyards.jpg"
+ },
+ "chef.os-chardonnay": {
+  "src": "photo-chef.os-chardonnay.jpg",
+  "author": "Pleclown",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chardonnay_(Commune).jpg",
+  "file": "File:Chardonnay (Commune).jpg"
+ },
+ "chef.os-merlot": {
+  "src": "photo-chef.os-merlot.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Merlot_Grape.jpg",
+  "file": "File:Merlot Grape.jpg"
+ },
+ "chef.os-pinot": {
+  "src": "photo-chef.os-pinot.jpg",
+  "author": "Cjp24",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Grape_near_Sancerre.jpg",
+  "file": "File:Grape near Sancerre.jpg"
+ },
+ "chef.os-martini": {
+  "src": "photo-chef.os-martini.jpg",
+  "author": "Ralf Roletschek",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:15-09-26-RalfR-WLC-0084.jpg",
+  "file": "File:15-09-26-RalfR-WLC-0084.jpg"
+ },
+ "chef.os-champagne-region": {
+  "src": "photo-chef.os-champagne-region.jpg",
+  "author": "Milenioscuro",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Champagne_in_France_(1789).svg",
+  "file": "File:Champagne in France (1789).svg"
+ },
+ "chef.os-ginandtonic": {
+  "src": "photo-chef.os-ginandtonic.jpg",
+  "author": "Katherine Lim",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gin_and_tonic_20121122.jpg",
+  "file": "File:Gin and tonic 20121122.jpg"
+ },
+ "chef.os-mojito": {
+  "src": "photo-chef.os-mojito.jpg",
+  "author": "Ralf Roletschek",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:15-09-26-RalfR-WLC-0067.jpg",
+  "file": "File:15-09-26-RalfR-WLC-0067.jpg"
+ },
+ "chef.os-shokoshu": {
+  "src": "photo-chef.os-shokoshu.jpg",
+  "author": "No machine-readable author provided. Farde~commonswiki assum…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Chinese-wine-Hua-Tiao.jpg",
+  "file": "File:Chinese-wine-Hua-Tiao.jpg"
+ },
+ "chef.os-tannin": {
+  "src": "photo-chef.os-tannin.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bottle_of_tannic_acid.jpg",
+  "file": "File:Bottle of tannic acid.jpg"
+ },
+ "chef.os-terroir": {
+  "src": "photo-chef.os-terroir.jpg",
+  "author": "Friedrich Petersdorff",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:080110_zell_mosel.JPG",
+  "file": "File:080110 zell mosel.JPG"
+ },
+ "chef.os-decant": {
+  "src": "photo-chef.os-decant.jpg",
+  "author": "Andi schmitt",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dekantieren.svg",
+  "file": "File:Dekantieren.svg"
+ },
+ "chef.os-junmaidaiginjo": {
+  "src": "photo-chef.os-junmaidaiginjo.jpg",
+  "author": "The Epopt",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sake_set.jpg",
+  "file": "File:Sake set.jpg"
+ },
+ "chef.os-yamadanishiki": {
+  "src": "photo-chef.os-yamadanishiki.jpg",
+  "author": "Simon-sake",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Yamada_Nishiki_rice_(unpolished)_from_Hyogo.jpg",
+  "file": "File:Yamada Nishiki rice (unpolished) from Hyogo.jpg"
+ },
+ "chef.os-riesling": {
+  "src": "photo-chef.os-riesling.jpg",
+  "author": "No machine-readable author provided. T.o.m.~commonswiki assu…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Riesling_grapes_leaves.jpg",
+  "file": "File:Riesling grapes leaves.jpg"
+ },
+ "chef.os-shuzeiho": {
+  "src": "photo-chef.os-shuzeiho.jpg",
+  "author": "Sakurambo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Go-shichi_no_kiri_crest_2.svg",
+  "file": "File:Go-shichi no kiri crest 2.svg"
+ },
+ "chef.os-bouchonne": {
+  "src": "photo-chef.os-bouchonne.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Winebottles.JPG",
+  "file": "File:Winebottles.JPG"
+ },
+ "patissier.za-komugiko": {
+  "src": "photo-patissier.za-komugiko.jpg",
+  "author": "Veganbaking.net from USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:All-Purpose_Flour_(4107895947).jpg",
+  "file": "File:All-Purpose Flour (4107895947).jpg"
+ },
+ "patissier.za-tamago": {
+  "src": "photo-patissier.za-tamago.jpg",
+  "author": "Adolphe Millot",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Adolphe_Millot_oeufs-fixed.jpg",
+  "file": "File:Adolphe Millot oeufs-fixed.jpg"
+ },
+ "patissier.za-satou": {
+  "src": "photo-patissier.za-satou.jpg",
+  "author": "Lauri Andler (Phantom)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sugar_2xmacro.jpg",
+  "file": "File:Sugar 2xmacro.jpg"
+ },
+ "patissier.za-bataa": {
+  "src": "photo-patissier.za-bataa.jpg",
+  "author": "Renee Comet (National Cancer Institute)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NCI_butter.jpg",
+  "file": "File:NCI butter.jpg"
+ },
+ "patissier.za-gyuunyuu": {
+  "src": "photo-patissier.za-gyuunyuu.jpg",
+  "author": "Stefan Kühn",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Milk_glass.jpg",
+  "file": "File:Milk glass.jpg"
+ },
+ "patissier.za-namakuriimu": {
+  "src": "photo-patissier.za-namakuriimu.jpg",
+  "author": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:01_Mmm..._Apple_Crisp_with_Whipped_Cream.jpg",
+  "file": "File:01 Mmm... Apple Crisp with Whipped Cream.jpg"
+ },
+ "patissier.za-chokoreeto": {
+  "src": "photo-patissier.za-chokoreeto.jpg",
+  "author": "nagualdesign",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_(blue_background).jpg",
+  "file": "File:Chocolate (blue background).jpg"
+ },
+ "patissier.za-hakurikiko": {
+  "src": "photo-patissier.za-hakurikiko.jpg",
+  "author": "Veganbaking.net from USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:All-Purpose_Flour_(4107895947).jpg",
+  "file": "File:All-Purpose Flour (4107895947).jpg"
+ },
+ "patissier.za-ranou": {
+  "src": "photo-patissier.za-ranou.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Egg_cross_section.png",
+  "file": "File:Egg cross section.png"
+ },
+ "patissier.za-ranpaku": {
+  "src": "photo-patissier.za-ranpaku.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Egg_cross_section.png",
+  "file": "File:Egg cross section.png"
+ },
+ "patissier.za-ichigo": {
+  "src": "photo-patissier.za-ichigo.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Strawberries.JPG",
+  "file": "File:Strawberries.JPG"
+ },
+ "patissier.za-hachimitsu": {
+  "src": "photo-patissier.za-hachimitsu.jpg",
+  "author": "Scott Bauer, USDA ARS",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Runny_hunny.jpg",
+  "file": "File:Runny hunny.jpg"
+ },
+ "patissier.za-banira": {
+  "src": "photo-patissier.za-banira.jpg",
+  "author": "Everglades National Park",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Vanilla_planifolia_1.jpg",
+  "file": "File:Vanilla planifolia 1.jpg"
+ },
+ "patissier.za-aamondo": {
+  "src": "photo-patissier.za-aamondo.jpg",
+  "author": "Plàcid Pérez Bru",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ametllesjuliol.jpg",
+  "file": "File:Ametllesjuliol.jpg"
+ },
+ "patissier.za-kokoa": {
+  "src": "photo-patissier.za-kokoa.jpg",
+  "author": "Keith Weller, USDA ARS",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cacao-pod-k4636-14.jpg",
+  "file": "File:Cacao-pod-k4636-14.jpg"
+ },
+ "patissier.za-shio": {
+  "src": "photo-patissier.za-shio.jpg",
+  "author": "Poyraz 72",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Table_salt_with_salt_shaker_V1.jpg",
+  "file": "File:Table salt with salt shaker V1.jpg"
+ },
+ "patissier.za-guranyuutou": {
+  "src": "photo-patissier.za-guranyuutou.jpg",
+  "author": "Lauri Andler (Phantom)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sugar_2xmacro.jpg",
+  "file": "File:Sugar 2xmacro.jpg"
+ },
+ "patissier.za-zeratin": {
+  "src": "photo-patissier.za-zeratin.jpg",
+  "author": "Danielle dk",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gelatine.png",
+  "file": "File:Gelatine.png"
+ },
+ "patissier.za-beekingupaudaa": {
+  "src": "photo-patissier.za-beekingupaudaa.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Backpulver.jpg",
+  "file": "File:Backpulver.jpg"
+ },
+ "patissier.za-remon": {
+  "src": "photo-patissier.za-remon.jpg",
+  "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Citrus_x_limon_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-041.jpg",
+  "file": "File:Citrus x limon - Köhler–s Medizinal-Pflanzen-041.jpg"
+ },
+ "patissier.za-kyorikiko": {
+  "src": "photo-patissier.za-kyorikiko.jpg",
+  "author": "Veganbaking.net from USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:All-Purpose_Flour_(4107895947).jpg",
+  "file": "File:All-Purpose Flour (4107895947).jpg"
+ },
+ "patissier.za-chuurikiko": {
+  "src": "photo-patissier.za-chuurikiko.jpg",
+  "author": "Veganbaking.net from USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:All-Purpose_Flour_(4107895947).jpg",
+  "file": "File:All-Purpose Flour (4107895947).jpg"
+ },
+ "patissier.za-guruten": {
+  "src": "photo-patissier.za-guruten.jpg",
+  "author": "Zantastik",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pain_au_levain_dit_%C3%A0_l%27ancienne_02.jpg",
+  "file": "File:Pain au levain dit à l'ancienne 02.jpg"
+ },
+ "patissier.za-denpun": {
+  "src": "photo-patissier.za-denpun.jpg",
+  "author": "Picasa author kalaya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cornstarch_mixed_with_water.jpg",
+  "file": "File:Cornstarch mixed with water.jpg"
+ },
+ "patissier.za-joohakutou": {
+  "src": "photo-patissier.za-joohakutou.jpg",
+  "author": "Kyoyaku-25",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Production_of_sugar.png",
+  "file": "File:Production of sugar.png"
+ },
+ "patissier.za-mizuame": {
+  "src": "photo-patissier.za-mizuame.jpg",
+  "author": "tanakawho from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mizuame_001.jpg",
+  "file": "File:Mizuame 001.jpg"
+ },
+ "patissier.za-juusou": {
+  "src": "photo-patissier.za-juusou.jpg",
+  "author": "Nicolás Lichtmaier",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:SodiumBicarbonate.svg",
+  "file": "File:SodiumBicarbonate.svg"
+ },
+ "patissier.za-kanten": {
+  "src": "photo-patissier.za-kanten.jpg",
+  "author": "Sjschen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:GreenTeaYokan.jpg",
+  "file": "File:GreenTeaYokan.jpg"
+ },
+ "patissier.za-pekuchin": {
+  "src": "photo-patissier.za-pekuchin.jpg",
+  "author": "FrozenMan at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pectin.jpg",
+  "file": "File:Pectin.jpg"
+ },
+ "patissier.za-shootoningu": {
+  "src": "photo-patissier.za-shootoningu.jpg",
+  "author": "Paoletta S.",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Strutto.jpg",
+  "file": "File:Strutto.jpg"
+ },
+ "patissier.za-maagarin": {
+  "src": "photo-patissier.za-maagarin.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Margarine.jpg",
+  "file": "File:Margarine.jpg"
+ },
+ "patissier.za-kuriimuchiizu": {
+  "src": "photo-patissier.za-kuriimuchiizu.jpg",
+  "author": "Renee Comet (photographer)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Philly_cream_cheese.jpg",
+  "file": "File:Philly cream cheese.jpg"
+ },
+ "patissier.za-kakaomasu": {
+  "src": "photo-patissier.za-kakaomasu.jpg",
+  "author": "John Lodder from Chicago",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:100%5E_chocolate_-_Flickr_-_jlodder.jpg",
+  "file": "File:100^ chocolate - Flickr - jlodder.jpg"
+ },
+ "patissier.za-funtou": {
+  "src": "photo-patissier.za-funtou.jpg",
+  "author": "Atm100",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Powdered_Sugar_-_Macro.jpg",
+  "file": "File:Powdered Sugar - Macro.jpg"
+ },
+ "patissier.za-youshu": {
+  "src": "photo-patissier.za-youshu.jpg",
+  "author": "Original uploader was Hammersbach at en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:CanadianWhisky.JPG",
+  "file": "File:CanadianWhisky.JPG"
+ },
+ "patissier.za-nyuuka": {
+  "src": "photo-patissier.za-nyuuka.jpg",
+  "author": "International Union of Pure and Applied Chemistry (IUPAC)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:IUPAC_definition_for_an_emulsion.png",
+  "file": "File:IUPAC definition for an emulsion.png"
+ },
+ "patissier.za-dasshifunnyuu": {
+  "src": "photo-patissier.za-dasshifunnyuu.jpg",
+  "author": "ProjectManhattan",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Milk_powder_cropped.jpg",
+  "file": "File:Milk powder cropped.jpg"
+ },
+ "patissier.za-muenbataa": {
+  "src": "photo-patissier.za-muenbataa.jpg",
+  "author": "Renee Comet (National Cancer Institute)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NCI_butter.jpg",
+  "file": "File:NCI butter.jpg"
+ },
+ "patissier.za-kakaobataa": {
+  "src": "photo-patissier.za-kakaobataa.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cocoa_butter_p1410148.JPG",
+  "file": "File:Cocoa butter p1410148.JPG"
+ },
+ "patissier.za-tenkatou": {
+  "src": "photo-patissier.za-tenkatou.jpg",
+  "author": "NEUROtiker",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Beta-D-Fructofuranose.svg",
+  "file": "File:Beta-D-Fructofuranose.svg"
+ },
+ "patissier.za-meiraadohannou": {
+  "src": "photo-patissier.za-meiraadohannou.jpg",
+  "author": "User HappyApple on en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Louis_Camille_Maillard.jpg",
+  "file": "File:Louis Camille Maillard.jpg"
+ },
+ "patissier.za-karameruka": {
+  "src": "photo-patissier.za-karameruka.jpg",
+  "author": "Takeaway",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2014_0531_Cr%C3%A8me_br%C3%BBl%C3%A9e_Doi_Mae_Salong.jpg",
+  "file": "File:2014 0531 Crème brûlée Doi Mae Salong.jpg"
+ },
+ "patissier.za-hakkoubataa": {
+  "src": "photo-patissier.za-hakkoubataa.jpg",
+  "author": "Renee Comet (National Cancer Institute)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NCI_butter.jpg",
+  "file": "File:NCI butter.jpg"
+ },
+ "patissier.za-pyuure": {
+  "src": "photo-patissier.za-pyuure.jpg",
+  "author": "Frédérique Voisin-Demery from Grenoble, France",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pur%C3%A9ed_veggies.jpg",
+  "file": "File:Puréed veggies.jpg"
+ },
+ "patissier.za-toreharoosu": {
+  "src": "photo-patissier.za-toreharoosu.jpg",
+  "author": "Fvasconcellos",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Trehalose.svg",
+  "file": "File:Trehalose.svg"
+ },
+ "patissier.za-heezerunattsu": {
+  "src": "photo-patissier.za-heezerunattsu.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Illustration_Corylus_avellana0.jpg",
+  "file": "File:Illustration Corylus avellana0.jpg"
+ },
+ "patissier.za-pisutachio": {
+  "src": "photo-patissier.za-pisutachio.jpg",
+  "author": "Stan Shebs",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pistacio_vera_Kerman_2.jpg",
+  "file": "File:Pistacio vera Kerman 2.jpg"
+ },
+ "patissier.za-howaitochokoreeto": {
+  "src": "photo-patissier.za-howaitochokoreeto.jpg",
+  "author": "MIKI Yoshihito from Sapporo City, Hokkaido., JAPAN",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Meiji_white_chocolate.jpg",
+  "file": "File:Meiji white chocolate.jpg"
+ },
+ "patissier.za-koka": {
+  "src": "photo-patissier.za-koka.jpg",
+  "author": "Picasa author kalaya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cornstarch_mixed_with_water.jpg",
+  "file": "File:Cornstarch mixed with water.jpg"
+ },
+ "patissier.za-shotou": {
+  "src": "photo-patissier.za-shotou.jpg",
+  "author": "NEUROtiker",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Saccharose2.svg",
+  "file": "File:Saccharose2.svg"
+ },
+ "patissier.za-budoutou": {
+  "src": "photo-patissier.za-budoutou.jpg",
+  "author": "Yikrazuul",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Beta-D-Glucose.svg",
+  "file": "File:Beta-D-Glucose.svg"
+ },
+ "patissier.za-katou": {
+  "src": "photo-patissier.za-katou.jpg",
+  "author": "Darkness3560",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Skeletal_Structure_of_Cyclic_D-Fructose.svg",
+  "file": "File:Skeletal Structure of Cyclic D-Fructose.svg"
+ },
+ "patissier.za-reshichin": {
+  "src": "photo-patissier.za-reshichin.jpg",
+  "author": "Jü",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:1-Oleoyl-2-almitoyl-phosphatidylcholine_Structural_Formulae_V.1.png",
+  "file": "File:1-Oleoyl-2-almitoyl-phosphatidylcholine Structural Formulae V.1.png"
+ },
+ "patissier.ki-sponge": {
+  "src": "photo-patissier.ki-sponge.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sponge_cake.jpg",
+  "file": "File:Sponge cake.jpg"
+ },
+ "patissier.ki-pie": {
+  "src": "photo-patissier.ki-pie.jpg",
+  "author": "Scott Bauer, USDA ARS",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Motherhood_and_apple_pie.jpg",
+  "file": "File:Motherhood and apple pie.jpg"
+ },
+ "patissier.ki-tart": {
+  "src": "photo-patissier.ki-tart.jpg",
+  "author": "sayo ts",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:125taruto.jpg",
+  "file": "File:125taruto.jpg"
+ },
+ "patissier.ki-choux": {
+  "src": "photo-patissier.ki-choux.jpg",
+  "author": "Foodista",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Choux_pastry_swans.jpg",
+  "file": "File:Choux pastry swans.jpg"
+ },
+ "patissier.ki-meringue": {
+  "src": "photo-patissier.ki-meringue.jpg",
+  "author": "Mike Lehmann, Mike Switzerland 12:44, 27 January 2007 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Meringues_9027.jpg",
+  "file": "File:Meringues 9027.jpg"
+ },
+ "patissier.ki-genoise": {
+  "src": "photo-patissier.ki-genoise.jpg",
+  "author": "EXEAIR",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pandispagna_cotto.JPG",
+  "file": "File:Pandispagna cotto.JPG"
+ },
+ "patissier.ki-biscuit": {
+  "src": "photo-patissier.ki-biscuit.jpg",
+  "author": "Lou Sander",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:BiscuitsAmerican%26British.png",
+  "file": "File:BiscuitsAmerican&British.png"
+ },
+ "patissier.ki-orikomi": {
+  "src": "photo-patissier.ki-orikomi.jpg",
+  "author": "Popo le Chien",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Pate_feuilletee.jpg",
+  "file": "File:Pate feuilletee.jpg"
+ },
+ "patissier.ki-shucre": {
+  "src": "photo-patissier.ki-shucre.jpg",
+  "author": "Rollopack",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Crostata_grano_saraceno.jpg",
+  "file": "File:Crostata grano saraceno.jpg"
+ },
+ "patissier.ki-detrempe": {
+  "src": "photo-patissier.ki-detrempe.jpg",
+  "author": "Xanthous Onyx",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oil_color(Cadmium_Red_Medium_and_Pyrrol_Crimson).jpg",
+  "file": "File:Oil color(Cadmium Red Medium and Pyrrol Crimson).jpg"
+ },
+ "patissier.ki-kihou": {
+  "src": "photo-patissier.ki-kihou.jpg",
+  "author": "User:Salimfadhley",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Coffee_bubbles.jpg",
+  "file": "File:Coffee bubbles.jpg"
+ },
+ "patissier.cr-whipped": {
+  "src": "photo-patissier.cr-whipped.jpg",
+  "author": "Nukkus (talk)",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pumpkin_Pie.JPG",
+  "file": "File:Pumpkin Pie.JPG"
+ },
+ "patissier.cr-custard": {
+  "src": "photo-patissier.cr-custard.jpg",
+  "author": "SUBARUsti2020hk",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cremepatissiere_hk_jp.jpg",
+  "file": "File:Cremepatissiere hk jp.jpg"
+ },
+ "patissier.cr-jelly": {
+  "src": "photo-patissier.cr-jelly.jpg",
+  "author": "Quercus acuta",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:House_Foods_-_JELLY_ACE.jpg",
+  "file": "File:House Foods - JELLY ACE.jpg"
+ },
+ "patissier.cr-icecream": {
+  "src": "photo-patissier.cr-icecream.jpg",
+  "author": "Lotus Head from Johannesburg, Gauteng, South Africa",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ice_Cream_dessert_02.jpg",
+  "file": "File:Ice Cream dessert 02.jpg"
+ },
+ "patissier.cr-sherbet": {
+  "src": "photo-patissier.cr-sherbet.jpg",
+  "author": "Anette B.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sorbet.jpg",
+  "file": "File:Sorbet.jpg"
+ },
+ "patissier.cr-topping": {
+  "src": "photo-patissier.cr-topping.jpg",
+  "author": "Midori",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tinutuan_topping.JPG",
+  "file": "File:Tinutuan topping.JPG"
+ },
+ "patissier.cr-candy": {
+  "src": "photo-patissier.cr-candy.jpg",
+  "author": "毒島みるく",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Chupa_Chups_variants_(2).jpg",
+  "file": "File:Chupa Chups variants (2).jpg"
+ },
+ "patissier.cr-caramel": {
+  "src": "photo-patissier.cr-caramel.jpg",
+  "author": "No machine-readable author provided. Rainer Zenz assumed (ba…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Caramel-2.jpg",
+  "file": "File:Caramel-2.jpg"
+ },
+ "patissier.cr-bavarois": {
+  "src": "photo-patissier.cr-bavarois.jpg",
+  "author": "User:Mattes",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bayerische_Creme.JPG",
+  "file": "File:Bayerische Creme.JPG"
+ },
+ "patissier.cr-namachoco": {
+  "src": "photo-patissier.cr-namachoco.jpg",
+  "author": "sirooziya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ganache_(ROYCE%27).jpg",
+  "file": "File:Ganache (ROYCE').jpg"
+ },
+ "patissier.cr-wataame": {
+  "src": "photo-patissier.cr-wataame.jpg",
+  "author": "FocalPoint",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cotton_candy_%CE%9C%CE%B1%CE%BB%CE%BB%CE%AF_%CF%84%CE%B7%CF%82_%CE%B3%CF%81%CE%B9%CE%AC%CF%82.JPG",
+  "file": "File:Cotton candy Μαλλί της γριάς.JPG"
+ },
+ "patissier.cr-softcream": {
+  "src": "photo-patissier.cr-softcream.jpg",
+  "author": "Acidburn24m at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Soft_Ice_cream.jpg",
+  "file": "File:Soft Ice cream.jpg"
+ },
+ "patissier.cr-tempering": {
+  "src": "photo-patissier.cr-tempering.jpg",
+  "author": "Tracy Hunter",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_Tempering_Machine.jpg",
+  "file": "File:Chocolate Tempering Machine.jpg"
+ },
+ "patissier.cr-ganache": {
+  "src": "photo-patissier.cr-ganache.jpg",
+  "author": "Luisa Contreras",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:00_Ganach%C3%A9_de_chocolate.jpg",
+  "file": "File:00 Ganaché de chocolate.jpg"
+ },
+ "patissier.cr-buttercream": {
+  "src": "photo-patissier.cr-buttercream.jpg",
+  "author": "sweetfacecakes",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Britney_Wedding_Cake.jpg",
+  "file": "File:Britney Wedding Cake.jpg"
+ },
+ "patissier.cr-chantilly": {
+  "src": "photo-patissier.cr-chantilly.jpg",
+  "author": "Nukkus (talk)",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pumpkin_Pie.JPG",
+  "file": "File:Pumpkin Pie.JPG"
+ },
+ "patissier.cr-syrup": {
+  "src": "photo-patissier.cr-syrup.jpg",
+  "author": "FotoosVanRobin from Netherlands",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maltose_syrup.jpg",
+  "file": "File:Maltose syrup.jpg"
+ },
+ "patissier.cr-fondant": {
+  "src": "photo-patissier.cr-fondant.jpg",
+  "author": "Michael Prudhomme",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cakeinwhitesatin-1.jpg",
+  "file": "File:Cakeinwhitesatin-1.jpg"
+ },
+ "patissier.cr-sorbet": {
+  "src": "photo-patissier.cr-sorbet.jpg",
+  "author": "Anette B.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sorbet.jpg",
+  "file": "File:Sorbet.jpg"
+ },
+ "patissier.cr-coulis": {
+  "src": "photo-patissier.cr-coulis.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Coulis_fraises_pr%C3%A9paration.jpg",
+  "file": "File:Coulis fraises préparation.jpg"
+ },
+ "patissier.cr-praline": {
+  "src": "photo-patissier.cr-praline.jpg",
+  "author": "gren",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sweet_Julep%27s_pralines_on_a_cutting_board.jpg",
+  "file": "File:Sweet Julep's pralines on a cutting board.jpg"
+ },
+ "patissier.cr-icing": {
+  "src": "photo-patissier.cr-icing.jpg",
+  "author": "me (w:User:pfctdayelise)",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_Sour-Cream_Icing_on_cake.JPG",
+  "file": "File:Chocolate Sour-Cream Icing on cake.JPG"
+ },
+ "patissier.cr-sabayon": {
+  "src": "photo-patissier.cr-sabayon.jpg",
+  "author": "stu_spivack",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Marsala_sabayon_with_cookie_and_local_stone_fruit.jpg",
+  "file": "File:Marsala sabayon with cookie and local stone fruit.jpg"
+ },
+ "patissier.cr-nougat": {
+  "src": "photo-patissier.cr-nougat.jpg",
+  "author": "The original uploader was Gregory at Finnish Wikipedia.",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Nougat.jpg",
+  "file": "File:Nougat.jpg"
+ },
+ "patissier.cr-granite": {
+  "src": "photo-patissier.cr-granite.jpg",
+  "author": "Angelo57p",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Granita_originelle_au_citron_de_Sicile.jpg",
+  "file": "File:Granita originelle au citron de Sicile.jpg"
+ },
+ "patissier.cr-caramelize": {
+  "src": "photo-patissier.cr-caramelize.jpg",
+  "author": "Takeaway",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2014_0531_Cr%C3%A8me_br%C3%BBl%C3%A9e_Doi_Mae_Salong.jpg",
+  "file": "File:2014 0531 Crème brûlée Doi Mae Salong.jpg"
+ },
+ "patissier.cr-confit": {
+  "src": "photo-patissier.cr-confit.jpg",
+  "author": "Bertrand Devouard (can be contacted through anthere)",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Gesier.jpg",
+  "file": "File:Gesier.jpg"
+ },
+ "patissier.se-shortcake": {
+  "src": "photo-patissier.se-shortcake.jpg",
+  "author": "Megan Chromik",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Strawberry_shortcake_on_white_plate,_March_2009.jpg",
+  "file": "File:Strawberry shortcake on white plate, March 2009.jpg"
+ },
+ "patissier.se-choucreme": {
+  "src": "photo-patissier.se-choucreme.jpg",
+  "author": "The original uploader was Hykw-a4 at Japanese Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Shu-cream.jpg",
+  "file": "File:Shu-cream.jpg"
+ },
+ "patissier.se-cheesecake": {
+  "src": "photo-patissier.se-cheesecake.jpg",
+  "author": "MyName (Claus Ableiter)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:K%C3%A4sekuchen.JPG",
+  "file": "File:Käsekuchen.JPG"
+ },
+ "patissier.se-donut": {
+  "src": "photo-patissier.se-donut.jpg",
+  "author": "Evan-Amos",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Glazed-Donut.jpg",
+  "file": "File:Glazed-Donut.jpg"
+ },
+ "patissier.se-macaron": {
+  "src": "photo-patissier.se-macaron.jpg",
+  "author": "Myrabella",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Macaron_1.jpg",
+  "file": "File:Macaron 1.jpg"
+ },
+ "patissier.se-waffle": {
+  "src": "photo-patissier.se-waffle.jpg",
+  "author": "Parkerman & Christie from San Diego, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Waffles_with_Strawberries.jpg",
+  "file": "File:Waffles with Strawberries.jpg"
+ },
+ "patissier.se-crepe": {
+  "src": "photo-patissier.se-crepe.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Crepes_dsc07085.jpg",
+  "file": "File:Crepes dsc07085.jpg"
+ },
+ "patissier.se-castella": {
+  "src": "photo-patissier.se-castella.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Castella_002.jpg",
+  "file": "File:Castella 002.jpg"
+ },
+ "patissier.se-tiramisu": {
+  "src": "photo-patissier.se-tiramisu.jpg",
+  "author": "Markus Mitterauer from Austria aka addicted",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tiramisu_Fanes.jpg",
+  "file": "File:Tiramisu Fanes.jpg"
+ },
+ "patissier.se-baumkuchen": {
+  "src": "photo-patissier.se-baumkuchen.jpg",
+  "author": "katorisi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Baumkuchen,dresden,Deutschland.JPG",
+  "file": "File:Baumkuchen,dresden,Deutschland.JPG"
+ },
+ "patissier.se-eclair": {
+  "src": "photo-patissier.se-eclair.jpg",
+  "author": "Luftpirat",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Liebesknochen1.JPG",
+  "file": "File:Liebesknochen1.JPG"
+ },
+ "patissier.se-scone": {
+  "src": "photo-patissier.se-scone.jpg",
+  "author": "Takeaway",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Scones_cream_jam.jpg",
+  "file": "File:Scones cream jam.jpg"
+ },
+ "patissier.se-churros": {
+  "src": "photo-patissier.se-churros.jpg",
+  "author": "User:Dominik",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_with_churros.jpg",
+  "file": "File:Chocolate with churros.jpg"
+ },
+ "patissier.se-applepie": {
+  "src": "photo-patissier.se-applepie.jpg",
+  "author": "Len Rizzi (photographer)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FoodApplePie.jpg",
+  "file": "File:FoodApplePie.jpg"
+ },
+ "patissier.se-gelato": {
+  "src": "photo-patissier.se-gelato.jpg",
+  "author": "WhisperToMe",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FlavorsgelatoFlorence.JPG",
+  "file": "File:FlavorsgelatoFlorence.JPG"
+ },
+ "patissier.se-madeleine": {
+  "src": "photo-patissier.se-madeleine.jpg",
+  "author": "myself (Bernard Leprêtre)",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Madeleines_de_Commercy.jpg",
+  "file": "File:Madeleines de Commercy.jpg"
+ },
+ "patissier.se-financier": {
+  "src": "photo-patissier.se-financier.jpg",
+  "author": "Fanny Schertzer",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Financiers.jpg",
+  "file": "File:Financiers.jpg"
+ },
+ "patissier.se-millefeuille": {
+  "src": "photo-patissier.se-millefeuille.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mille-feuille_01.jpg",
+  "file": "File:Mille-feuille 01.jpg"
+ },
+ "patissier.se-cremebrulee": {
+  "src": "photo-patissier.se-cremebrulee.jpg",
+  "author": "No machine-readable author provided. BenFrantzDale~commonswi…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Crem_brule_closeup.jpg",
+  "file": "File:Crem brule closeup.jpg"
+ },
+ "patissier.se-pannacotta": {
+  "src": "photo-patissier.se-pannacotta.jpg",
+  "author": "de:Benutzer:Lowsource",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Panna_Cotta-2.jpg",
+  "file": "File:Panna Cotta-2.jpg"
+ },
+ "patissier.se-sachertorte": {
+  "src": "photo-patissier.se-sachertorte.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sachertorte_DSC03027.JPG",
+  "file": "File:Sachertorte DSC03027.JPG"
+ },
+ "patissier.se-stollen": {
+  "src": "photo-patissier.se-stollen.jpg",
+  "author": "knusperj",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Rosinen-Christstollen_angeschnitten.jpg",
+  "file": "File:Rosinen-Christstollen angeschnitten.jpg"
+ },
+ "patissier.se-galettedesrois": {
+  "src": "photo-patissier.se-galettedesrois.jpg",
+  "author": "Steph Gray le 15 janvier 2011 (CC BY-Sa 2.0)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Galette_des_rois_exemple.jpg",
+  "file": "File:Galette des rois exemple.jpg"
+ },
+ "patissier.se-panettone": {
+  "src": "photo-patissier.se-panettone.jpg",
+  "author": "N i c o l a from Fiumicino (Rome), Italy",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Panettone_-_Nicolettone_2017_-_IMG_7085_(31752542285).jpg",
+  "file": "File:Panettone - Nicolettone 2017 - IMG 7085 (31752542285).jpg"
+ },
+ "patissier.se-konpeito": {
+  "src": "photo-patissier.se-konpeito.jpg",
+  "author": "Midori",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kompeito_konpeito.JPG",
+  "file": "File:Kompeito konpeito.JPG"
+ },
+ "patissier.se-boro": {
+  "src": "photo-patissier.se-boro.jpg",
+  "author": "Captain76",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Marub%C5%8Dro.jpg",
+  "file": "File:Marubōro.jpg"
+ },
+ "patissier.se-nanbangashi": {
+  "src": "photo-patissier.se-nanbangashi.jpg",
+  "author": "mariemon",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E8%95%8E%E9%BA%A6%E3%81%BB%E3%81%86%E3%82%8B4276.JPG",
+  "file": "File:蕎麦ほうる4276.JPG"
+ },
+ "patissier.se-shortbread": {
+  "src": "photo-patissier.se-shortbread.jpg",
+  "author": "User:Dave souza",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Shortbread_fingers.jpg",
+  "file": "File:Shortbread fingers.jpg"
+ },
+ "patissier.se-eggtart": {
+  "src": "photo-patissier.se-eggtart.jpg",
+  "author": "See-ming Lee",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Egg_Tarts_with_Puff_Pastry.jpg",
+  "file": "File:Egg Tarts with Puff Pastry.jpg"
+ },
+ "patissier.se-canele": {
+  "src": "photo-patissier.se-canele.jpg",
+  "author": "DimiTalen",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Canel%C3%A9s_on_a_stone_plate,_2015.jpg",
+  "file": "File:Canelés on a stone plate, 2015.jpg"
+ },
+ "patissier.se-apfelstrudel": {
+  "src": "photo-patissier.se-apfelstrudel.jpg",
+  "author": "che",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Strudel.jpg",
+  "file": "File:Strudel.jpg"
+ },
+ "patissier.se-millecrepe": {
+  "src": "photo-patissier.se-millecrepe.jpg",
+  "author": "Laitr Keiows",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mille_cr%C3%AApe.jpg",
+  "file": "File:Mille crêpe.jpg"
+ },
+ "patissier.se-saintehonore": {
+  "src": "photo-patissier.se-saintehonore.jpg",
+  "author": "Chatsam",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Saint-honor%C3%A9_(p%C3%A2tisserie).JPG",
+  "file": "File:Saint-honoré (pâtisserie).JPG"
+ },
+ "patissier.se-parisbrest": {
+  "src": "photo-patissier.se-parisbrest.jpg",
+  "author": "Dainee Ranaweera",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:St_Petrocs_Hotel_-_Paris_Brest.jpg",
+  "file": "File:St Petrocs Hotel - Paris Brest.jpg"
+ },
+ "patissier.se-cannoli": {
+  "src": "photo-patissier.se-cannoli.jpg",
+  "author": "Jules Morgan from Montreal, Canada",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cannoli_(7864444138).jpg",
+  "file": "File:Cannoli (7864444138).jpg"
+ },
+ "patissier.se-baklava": {
+  "src": "photo-patissier.se-baklava.jpg",
+  "author": "Kultigin",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Baklava_-_Turkish_special,_80-ply.JPEG",
+  "file": "File:Baklava - Turkish special, 80-ply.JPEG"
+ },
+ "patissier.se-christmaspudding": {
+  "src": "photo-patissier.se-christmaspudding.jpg",
+  "author": "User Musical Linguist on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Christmas_pudding.JPG",
+  "file": "File:Christmas pudding.JPG"
+ },
+ "patissier.se-mincepie": {
+  "src": "photo-patissier.se-mincepie.jpg",
+  "author": "en:User:Jmb",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Mince_Pie.jpg",
+  "file": "File:Mince Pie.jpg"
+ },
+ "patissier.se-lebkuchen": {
+  "src": "photo-patissier.se-lebkuchen.jpg",
+  "author": "Jonik",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Freshly_baked_gingerbread_-_Christmas_2004.jpg",
+  "file": "File:Freshly baked gingerbread - Christmas 2004.jpg"
+ },
+ "patissier.se-gateauchocolat": {
+  "src": "photo-patissier.se-gateauchocolat.jpg",
+  "author": "Politikaner",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Keoln_Maerz_2009_PD_20090327_078.JPG",
+  "file": "File:Keoln Maerz 2009 PD 20090327 078.JPG"
+ },
+ "patissier.se-florentin": {
+  "src": "photo-patissier.se-florentin.jpg",
+  "author": "毒島みるく",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Florentins_in_Japan.jpg",
+  "file": "File:Florentins in Japan.jpg"
+ },
+ "patissier.se-blancmange": {
+  "src": "photo-patissier.se-blancmange.jpg",
+  "author": "SKopp",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Blanc-manger_on_glass_platter.jpg",
+  "file": "File:Blanc-manger on glass platter.jpg"
+ },
+ "patissier.se-chiffoncake": {
+  "src": "photo-patissier.se-chiffoncake.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chiffon_cake_01.jpg",
+  "file": "File:Chiffon cake 01.jpg"
+ },
+ "patissier.se-trifle": {
+  "src": "photo-patissier.se-trifle.jpg",
+  "author": "--Ben 18:33, 25 March 2006 (UTC)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Trifle.jpg",
+  "file": "File:Trifle.jpg"
+ },
+ "patissier.se-savarin": {
+  "src": "photo-patissier.se-savarin.jpg",
+  "author": "Nicubunu",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Savarine.jpg",
+  "file": "File:Savarine.jpg"
+ },
+ "patissier.se-crepesuzette": {
+  "src": "photo-patissier.se-crepesuzette.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cr%C3%AApe_Suzette.jpg",
+  "file": "File:Crêpe Suzette.jpg"
+ },
+ "patissier.se-careme": {
+  "src": "photo-patissier.se-careme.jpg",
+  "author": "Fontaine, Pierre François Léonard",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:M-A-Careme.jpg",
+  "file": "File:M-A-Careme.jpg"
+ },
+ "patissier.se-piecemontee": {
+  "src": "photo-patissier.se-piecemontee.jpg",
+  "author": "Georges Biard",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Salon_du_chocolat_2011_3.jpg",
+  "file": "File:Salon du chocolat 2011 3.jpg"
+ },
+ "patissier.se-croquembouche": {
+  "src": "photo-patissier.se-croquembouche.jpg",
+  "author": "John Johnston",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ceremonial_cake_whacker_(6744018029).jpg",
+  "file": "File:Ceremonial cake whacker (6744018029).jpg"
+ },
+ "patissier.se-bienenstich": {
+  "src": "photo-patissier.se-bienenstich.jpg",
+  "author": "Mufi69",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Bienenstich.jpg",
+  "file": "File:Bienenstich.jpg"
+ },
+ "patissier.se-kaiserschmarrn": {
+  "src": "photo-patissier.se-kaiserschmarrn.jpg",
+  "author": "Kaleissin",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kaiserschmarrn_at_Weihenstephan_2005-08-03.jpg",
+  "file": "File:Kaiserschmarrn at Weihenstephan 2005-08-03.jpg"
+ },
+ "patissier.se-salzburgernockerl": {
+  "src": "photo-patissier.se-salzburgernockerl.jpg",
+  "author": "Tourismus Salzburg - original uploader was Salzburg at de.wi…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Salzburger_Nockerln_04_gastronomie_001.jpg",
+  "file": "File:Salzburger Nockerln 04 gastronomie 001.jpg"
+ },
+ "patissier.se-turron": {
+  "src": "photo-patissier.se-turron.jpg",
+  "author": "Tamorlan",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Turr%C3%B3n_de_Alicante_(Casa_Mira).jpg",
+  "file": "File:Turrón de Alicante (Casa Mira).jpg"
+ },
+ "patissier.se-zuccotto": {
+  "src": "photo-patissier.se-zuccotto.jpg",
+  "author": "Naomi KAWAKAMI,Gattaiola Dolci",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zuccotto_gattaiola_kawa.jpg",
+  "file": "File:Zuccotto gattaiola kawa.jpg"
+ },
+ "patissier.se-kouglof": {
+  "src": "photo-patissier.se-kouglof.jpg",
+  "author": "No machine-readable author provided. Vargenau assumed (based…",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kouglof.png",
+  "file": "File:Kouglof.png"
+ },
+ "patissier.se-bostoncreampie": {
+  "src": "photo-patissier.se-bostoncreampie.jpg",
+  "author": "cara fealy choate",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bostoncreampie.jpg",
+  "file": "File:Bostoncreampie.jpg"
+ },
+ "patissier.se-lokum": {
+  "src": "photo-patissier.se-lokum.jpg",
+  "author": "Quick fix",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TurkishDelightDisplay.jpg",
+  "file": "File:TurkishDelightDisplay.jpg"
+ },
+ "patissier.se-gulabjamun": {
+  "src": "photo-patissier.se-gulabjamun.jpg",
+  "author": "Preeti Tamilarasan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Milk_Powder_Gulab_Jamun_by_Preeti_Tamilarasan.jpg",
+  "file": "File:Milk Powder Gulab Jamun by Preeti Tamilarasan.jpg"
+ },
+ "patissier.wa-wagashi": {
+  "src": "photo-patissier.wa-wagashi.jpg",
+  "author": "Ai Amo from Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%92%8C%E8%8F%93%E5%AD%90_(5376984019).jpg",
+  "file": "File:和菓子 (5376984019).jpg"
+ },
+ "patissier.wa-daifuku": {
+  "src": "photo-patissier.wa-daifuku.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Daifuku_001.jpg",
+  "file": "File:Daifuku 001.jpg"
+ },
+ "patissier.wa-dango": {
+  "src": "photo-patissier.wa-dango.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Mitarashi_dango_001.jpg",
+  "file": "File:Mitarashi dango 001.jpg"
+ },
+ "patissier.wa-dorayaki": {
+  "src": "photo-patissier.wa-dorayaki.jpg",
+  "author": "Ocdp",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dorayaki_001_(3).jpg",
+  "file": "File:Dorayaki 001 (3).jpg"
+ },
+ "patissier.wa-yokan": {
+  "src": "photo-patissier.wa-yokan.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Youkan_002.jpg",
+  "file": "File:Youkan 002.jpg"
+ },
+ "patissier.wa-kashiwamochi": {
+  "src": "photo-patissier.wa-kashiwamochi.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Kashiwa-mochi_001.jpg",
+  "file": "File:Kashiwa-mochi 001.jpg"
+ },
+ "patissier.wa-sakuramochi": {
+  "src": "photo-patissier.wa-sakuramochi.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Sakura-mochi_003.jpg",
+  "file": "File:Sakura-mochi 003.jpg"
+ },
+ "patissier.wa-mitarashi": {
+  "src": "photo-patissier.wa-mitarashi.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Mitarashi_dango_001.jpg",
+  "file": "File:Mitarashi dango 001.jpg"
+ },
+ "patissier.wa-taiyaki": {
+  "src": "photo-patissier.wa-taiyaki.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Taiyaki_003.jpg",
+  "file": "File:Taiyaki 003.jpg"
+ },
+ "patissier.wa-manju": {
+  "src": "photo-patissier.wa-manju.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Manju_001.jpg",
+  "file": "File:Manju 001.jpg"
+ },
+ "patissier.wa-azuki": {
+  "src": "photo-patissier.wa-azuki.jpg",
+  "author": "The original uploader was たね at Japanese Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_azuki1091.jpg",
+  "file": "File:W azuki1091.jpg"
+ },
+ "patissier.wa-tsubuan": {
+  "src": "photo-patissier.wa-tsubuan.jpg",
+  "author": "Midori",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_bean_paste_anko.JPG",
+  "file": "File:Red bean paste anko.JPG"
+ },
+ "patissier.wa-koshian": {
+  "src": "photo-patissier.wa-koshian.jpg",
+  "author": "Midori",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_bean_paste_anko.JPG",
+  "file": "File:Red bean paste anko.JPG"
+ },
+ "patissier.wa-kinako": {
+  "src": "photo-patissier.wa-kinako.jpg",
+  "author": "Tiia Monto",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Soy_powder.jpg",
+  "file": "File:Soy powder.jpg"
+ },
+ "patissier.wa-warabimochi": {
+  "src": "photo-patissier.wa-warabimochi.jpg",
+  "author": "Jpatokal",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Senjuan_Yoshimune_warabimochi.jpg",
+  "file": "File:Senjuan Yoshimune warabimochi.jpg"
+ },
+ "patissier.wa-monaka": {
+  "src": "photo-patissier.wa-monaka.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Tawara-monaka_001.jpg",
+  "file": "File:Tawara-monaka 001.jpg"
+ },
+ "patissier.wa-senbei": {
+  "src": "photo-patissier.wa-senbei.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Senbei_005.jpg",
+  "file": "File:Senbei 005.jpg"
+ },
+ "patissier.wa-shiratama": {
+  "src": "photo-patissier.wa-shiratama.jpg",
+  "author": "Asturio Cantabrio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ginsui_ac_(4).jpg",
+  "file": "File:Ginsui ac (4).jpg"
+ },
+ "patissier.wa-joshinko": {
+  "src": "photo-patissier.wa-joshinko.jpg",
+  "author": "FotoosVanRobin",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Two_kinds_of_rice_flour.jpg",
+  "file": "File:Two kinds of rice flour.jpg"
+ },
+ "patissier.wa-shiratamako": {
+  "src": "photo-patissier.wa-shiratamako.jpg",
+  "author": "Siriusplot",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%B1%B3%E7%B2%89100.jpg",
+  "file": "File:米粉100.jpg"
+ },
+ "patissier.wa-mochiko": {
+  "src": "photo-patissier.wa-mochiko.jpg",
+  "author": "Siriusplot",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%B1%B3%E7%B2%89100.jpg",
+  "file": "File:米粉100.jpg"
+ },
+ "patissier.wa-kuzuko": {
+  "src": "photo-patissier.wa-kuzuko.jpg",
+  "author": "Maduixa at Serbian Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kuzu.JPG",
+  "file": "File:Kuzu.JPG"
+ },
+ "patissier.wa-gyuhi": {
+  "src": "photo-patissier.wa-gyuhi.jpg",
+  "author": "Steven Damron from San Francisco",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Orange_gyuhi_and_suama.jpg",
+  "file": "File:Orange gyuhi and suama.jpg"
+ },
+ "patissier.wa-nerikiri": {
+  "src": "photo-patissier.wa-nerikiri.jpg",
+  "author": "Tarobo",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Nerikiri_natsu.jpg",
+  "file": "File:Nerikiri natsu.jpg"
+ },
+ "patissier.wa-kintsuba": {
+  "src": "photo-patissier.wa-kintsuba.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kintsuba,katori-city,japan.JPG",
+  "file": "File:Kintsuba,katori-city,japan.JPG"
+ },
+ "patissier.wa-mizuyokan": {
+  "src": "photo-patissier.wa-mizuyokan.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Youkan_002.jpg",
+  "file": "File:Youkan 002.jpg"
+ },
+ "patissier.wa-namagashi": {
+  "src": "photo-patissier.wa-namagashi.jpg",
+  "author": "akira yamada from Yokohama, Japan",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Namagashi.jpg",
+  "file": "File:Namagashi.jpg"
+ },
+ "patissier.wa-higashi": {
+  "src": "photo-patissier.wa-higashi.jpg",
+  "author": "iwaryo from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Higashi.jpg",
+  "file": "File:Higashi.jpg"
+ },
+ "patissier.wa-kusamochi": {
+  "src": "photo-patissier.wa-kusamochi.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Yomogi-dango_001.jpg",
+  "file": "File:Yomogi-dango 001.jpg"
+ },
+ "patissier.wa-tsukimidango": {
+  "src": "photo-patissier.wa-tsukimidango.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Mitarashi_dango_001.jpg",
+  "file": "File:Mitarashi dango 001.jpg"
+ },
+ "patissier.wa-kurikinton": {
+  "src": "photo-patissier.wa-kurikinton.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Kurikinton_001.jpg",
+  "file": "File:Kurikinton 001.jpg"
+ },
+ "patissier.wa-zundamochi": {
+  "src": "photo-patissier.wa-zundamochi.jpg",
+  "author": "Σ64",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zunda-mochi.jpg",
+  "file": "File:Zunda-mochi.jpg"
+ },
+ "patissier.wa-wasanbon": {
+  "src": "photo-patissier.wa-wasanbon.jpg",
+  "author": "iwaryo from Tokyo, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Higashi.jpg",
+  "file": "File:Higashi.jpg"
+ },
+ "patissier.wa-kuromitsu": {
+  "src": "photo-patissier.wa-kuromitsu.jpg",
+  "author": "Ben Winnick (flickr user: benfest)",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Muscovadosugar.jpg",
+  "file": "File:Muscovadosugar.jpg"
+ },
+ "patissier.wa-joyoko": {
+  "src": "photo-patissier.wa-joyoko.jpg",
+  "author": "FotoosVanRobin",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Two_kinds_of_rice_flour.jpg",
+  "file": "File:Two kinds of rice flour.jpg"
+ },
+ "patissier.wa-ogurean": {
+  "src": "photo-patissier.wa-ogurean.jpg",
+  "author": "Midori",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_bean_paste_anko.JPG",
+  "file": "File:Red bean paste anko.JPG"
+ },
+ "patissier.wa-kingyoku": {
+  "src": "photo-patissier.wa-kingyoku.jpg",
+  "author": "Miyuki Meinaka",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kohaku-kan.jpg",
+  "file": "File:Kohaku-kan.jpg"
+ },
+ "patissier.wa-rakugan": {
+  "src": "photo-patissier.wa-rakugan.jpg",
+  "author": "katorisi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rakugan,Inashiki-city,Japan.JPG",
+  "file": "File:Rakugan,Inashiki-city,Japan.JPG"
+ },
+ "patissier.wa-aruheito": {
+  "src": "photo-patissier.wa-aruheito.jpg",
+  "author": "Kykk wiki",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Murasakino-Gensui_Ariheitou-sakura.jpg",
+  "file": "File:Murasakino-Gensui Ariheitou-sakura.jpg"
+ },
+ "patissier.wa-ukishima": {
+  "src": "photo-patissier.wa-ukishima.jpg",
+  "author": "Claus Ableiter",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kleiner_Arbersee_-_direkter_Blick_vom_Gro%C3%9Fen_Arber.JPG",
+  "file": "File:Kleiner Arbersee - direkter Blick vom Großen Arber.JPG"
+ },
+ "patissier.wa-karukan": {
+  "src": "photo-patissier.wa-karukan.jpg",
+  "author": "Σ64",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Karukan_01.jpg",
+  "file": "File:Karukan 01.jpg"
+ },
+ "patissier.wa-hannamagashi": {
+  "src": "photo-patissier.wa-hannamagashi.jpg",
+  "author": "Mune720",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%8D%8A%E7%94%9F%E8%8F%93%E5%AD%90.jpg",
+  "file": "File:半生菓子.jpg"
+ },
+ "patissier.wa-seiro": {
+  "src": "photo-patissier.wa-seiro.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mushiki.Steamer.jpg",
+  "file": "File:Mushiki.Steamer.jpg"
+ },
+ "patissier.wa-neriyokan": {
+  "src": "photo-patissier.wa-neriyokan.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Youkan_002.jpg",
+  "file": "File:Youkan 002.jpg"
+ },
+ "patissier.wa-hanabiramochi": {
+  "src": "photo-patissier.wa-hanabiramochi.jpg",
+  "author": "竹麦魚 at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hanabiramochi.JPG",
+  "file": "File:Hanabiramochi.JPG"
+ },
+ "patissier.wa-wakaayu": {
+  "src": "photo-patissier.wa-wakaayu.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Waka-Ayu_002.jpg",
+  "file": "File:Waka-Ayu 002.jpg"
+ },
+ "patissier.wa-konashi": {
+  "src": "photo-patissier.wa-konashi.jpg",
+  "author": "7'o'7",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kantsubaki_konashi.jpg",
+  "file": "File:Kantsubaki konashi.jpg"
+ },
+ "patissier.do-awatateki": {
+  "src": "photo-patissier.do-awatateki.jpg",
+  "author": "No machine-readable author provided. Peng assumed (based on …",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Schneebesen1.JPG",
+  "file": "File:Schneebesen1.JPG"
+ },
+ "patissier.do-bowl": {
+  "src": "photo-patissier.do-bowl.jpg",
+  "author": "不明",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:China,_Jiangxi_province,_Jingdezhen,_Ming_dynasty_(1368-1644),_Xuande_mark_-_Bowl_with_Decoration_of_the_%22Three_Friends%22_-_1953.631_-_Cleveland_Museum_of_Art.tif",
+  "file": "File:China, Jiangxi province, Jingdezhen, Ming dynasty (1368-1644), Xuande mark - Bowl with Decoration of the \"Three Friends\" - 1953.631 - Cleveland Museum of Art.tif"
+ },
+ "patissier.do-hakari": {
+  "src": "photo-patissier.do-hakari.jpg",
+  "author": "Photo: Andreas Praefcke",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Samenwaage.jpg",
+  "file": "File:Samenwaage.jpg"
+ },
+ "patissier.do-oven": {
+  "src": "photo-patissier.do-oven.jpg",
+  "author": "Jean-François Millet",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_(II)_005.jpg",
+  "file": "File:Jean-François Millet (II) 005.jpg"
+ },
+ "patissier.do-shiboribukuro": {
+  "src": "photo-patissier.do-shiboribukuro.jpg",
+  "author": "No machine-readable author provided. Polyparadigm~commonswik…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Plastic_pastry_bag.JPG",
+  "file": "File:Plastic pastry bag.JPG"
+ },
+ "patissier.do-furui": {
+  "src": "photo-patissier.do-furui.jpg",
+  "author": "User:BMK",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Laboratory_sieves_BMK.jpg",
+  "file": "File:Laboratory sieves BMK.jpg"
+ },
+ "patissier.do-keiryospoon": {
+  "src": "photo-patissier.do-keiryospoon.jpg",
+  "author": "Saharasav",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Keiryo_spoons.jpg",
+  "file": "File:Keiryo spoons.jpg"
+ },
+ "patissier.do-reizoko": {
+  "src": "photo-patissier.do-reizoko.jpg",
+  "author": "W.carter",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Open_refrigerator_with_food_at_night.jpg",
+  "file": "File:Open refrigerator with food at night.jpg"
+ },
+ "patissier.do-shomikigen": {
+  "src": "photo-patissier.do-shomikigen.jpg",
+  "author": "Edward Betts",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Expiration.jpg",
+  "file": "File:Expiration.jpg"
+ },
+ "patissier.do-shohikigen": {
+  "src": "photo-patissier.do-shohikigen.jpg",
+  "author": "Edward Betts",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Expiration.jpg",
+  "file": "File:Expiration.jpg"
+ },
+ "patissier.do-tansuikabutsu": {
+  "src": "photo-patissier.do-tansuikabutsu.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wheat_products.jpg",
+  "file": "File:Wheat products.jpg"
+ },
+ "patissier.do-shishitsu": {
+  "src": "photo-patissier.do-shishitsu.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tripalmitoylglycerol.png",
+  "file": "File:Tripalmitoylglycerol.png"
+ },
+ "patissier.do-vitamin": {
+  "src": "photo-patissier.do-vitamin.jpg",
+  "author": "Ragesoss",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:B_vitamin_supplement_tablets.jpg",
+  "file": "File:B vitamin supplement tablets.jpg"
+ },
+ "patissier.do-shokumotsusen": {
+  "src": "photo-patissier.do-shokumotsusen.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fruit,_Vegetables_and_Grain_NCI_Visuals_Online.jpg",
+  "file": "File:Fruit, Vegetables and Grain NCI Visuals Online.jpg"
+ },
+ "patissier.do-tenkabutsu": {
+  "src": "photo-patissier.do-tenkabutsu.jpg",
+  "author": "Helge Höpfner",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lecithin-Formulierungen.jpg",
+  "file": "File:Lecithin-Formulierungen.jpg"
+ },
+ "patissier.do-josuido": {
+  "src": "photo-patissier.do-josuido.jpg",
+  "author": "Photo taken by de:Benutzer:Alex Anlicker using a Nikon Coolp…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Drinking_water.jpg",
+  "file": "File:Drinking water.jpg"
+ },
+ "patissier.do-palette": {
+  "src": "photo-patissier.do-palette.jpg",
+  "author": "Original uploader was IYY at en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Palette_knife.jpg",
+  "file": "File:Palette knife.jpg"
+ },
+ "patissier.do-ondokei": {
+  "src": "photo-patissier.do-ondokei.jpg",
+  "author": "Hedwig Storch",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1024_Pyrometer-8445.jpg",
+  "file": "File:1024 Pyrometer-8445.jpg"
+ },
+ "patissier.do-datsusanso": {
+  "src": "photo-patissier.do-datsusanso.jpg",
+  "author": "Psychofox at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nippon_Kayaku_Food_Techno_oxygen_absorber_20061022.jpg",
+  "file": "File:Nippon Kayaku Food Techno oxygen absorber 20061022.jpg"
+ },
+ "patissier.do-shinku": {
+  "src": "photo-patissier.do-shinku.jpg",
+  "author": "Your Best Digs",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vacuum_sealer_with_food_sealed_on_wooden_table_and_rolls_of_plastic_for_sealing.jpg",
+  "file": "File:Vacuum sealer with food sealed on wooden table and rolls of plastic for sealing.jpg"
+ },
+ "patissier.do-gaschikan": {
+  "src": "photo-patissier.do-gaschikan.jpg",
+  "author": "Photo by Peggy Greb.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Test_Modified_Atmosphere.jpg",
+  "file": "File:Test Modified Atmosphere.jpg"
+ },
+ "patissier.do-jishukaishu": {
+  "src": "photo-patissier.do-jishukaishu.jpg",
+  "author": "Cullen328",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Auto_fire_Vallejo_1.jpg",
+  "file": "File:Auto fire Vallejo 1.jpg"
+ },
+ "daiku.kh-daiku": {
+  "src": "photo-daiku.kh-daiku.jpg",
+  "author": "Eugen Nosko",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Fotothek_df_n-10_0000828.jpg",
+  "file": "File:Fotothek df n-10 0000828.jpg"
+ },
+ "daiku.kh-jutaku": {
+  "src": "photo-daiku.kh-jutaku.jpg",
+  "author": "wakanmuri from Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%BB%BA%E5%A3%B2%E4%BD%8F%E5%AE%85_(4355308311).jpg",
+  "file": "File:建売住宅 (4355308311).jpg"
+ },
+ "daiku.kh-koumuten": {
+  "src": "photo-daiku.kh-koumuten.jpg",
+  "author": "JuergenL",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Landesmesse_Baustelle_Parkhaus.jpg",
+  "file": "File:Landesmesse Baustelle Parkhaus.jpg"
+ },
+ "daiku.kh-sekkeizu": {
+  "src": "photo-daiku.kh-sekkeizu.jpg",
+  "author": "Sven Gleich",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:DIN_69893_hsk_63a_drawing.png",
+  "file": "File:DIN 69893 hsk 63a drawing.png"
+ },
+ "daiku.kh-zumen": {
+  "src": "photo-daiku.kh-zumen.jpg",
+  "author": "Franck Le Rhun",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Lat%C3%A9co%C3%A8re_28.svg",
+  "file": "File:Latécoère 28.svg"
+ },
+ "daiku.kh-madori": {
+  "src": "photo-daiku.kh-madori.jpg",
+  "author": "United States Department of the Interior.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Putnam_House_-_floor_plans.jpg",
+  "file": "File:Putnam House - floor plans.jpg"
+ },
+ "daiku.kh-reform": {
+  "src": "photo-daiku.kh-reform.jpg",
+  "author": "Abbie Rowe",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Shell_of_the_White_House_during_the_Renovation-05-17-1950_b.jpg",
+  "file": "File:The Shell of the White House during the Renovation-05-17-1950 b.jpg"
+ },
+ "daiku.kh-tsubo": {
+  "src": "photo-daiku.kh-tsubo.jpg",
+  "author": "Asanagi",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsubo_2024-07-14.png",
+  "file": "File:Tsubo 2024-07-14.png"
+ },
+ "daiku.kh-jotoshiki": {
+  "src": "photo-daiku.kh-jotoshiki.jpg",
+  "author": "Japanese House of Councillors",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Diet_Hall_Raising_Ceremony_1927.jpg",
+  "file": "File:Japanese Diet Hall Raising Ceremony 1927.jpg"
+ },
+ "daiku.kh-muneage": {
+  "src": "photo-daiku.kh-muneage.jpg",
+  "author": "Japanese House of Councillors",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Diet_Hall_Raising_Ceremony_1927.jpg",
+  "file": "File:Japanese Diet Hall Raising Ceremony 1927.jpg"
+ },
+ "daiku.kh-kenchikushi": {
+  "src": "photo-daiku.kh-kenchikushi.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Architect.png",
+  "file": "File:Architect.png"
+ },
+ "daiku.kh-heimenzu": {
+  "src": "photo-daiku.kh-heimenzu.jpg",
+  "author": "Drawing by Oskar Marmorek (1863-1909)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Venedig-in-Wien-Lageplan.jpg",
+  "file": "File:Venedig-in-Wien-Lageplan.jpg"
+ },
+ "daiku.kh-ritsumenzu": {
+  "src": "photo-daiku.kh-ritsumenzu.jpg",
+  "author": "Jacques-Germain Soufflot",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Panth%C3%A9on_Soufflot_-_%C3%A9levation_principale.png",
+  "file": "File:Panthéon Soufflot - élevation principale.png"
+ },
+ "daiku.kh-zairai": {
+  "src": "photo-daiku.kh-zairai.jpg",
+  "author": "Wikiwikiyarou",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8%E9%80%A0%E8%BB%B8%E7%B5%84%E6%A7%8B%E6%B3%95.jpg",
+  "file": "File:木造軸組構法.jpg"
+ },
+ "daiku.kh-twobyfour": {
+  "src": "photo-daiku.kh-twobyfour.jpg",
+  "author": "Jaksmata",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Wood-framed_house.jpg",
+  "file": "File:Wood-framed house.jpg"
+ },
+ "daiku.kh-prefab": {
+  "src": "photo-daiku.kh-prefab.jpg",
+  "author": "H. Raab (User:Vesta)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Prefabricated_house_construction.gif",
+  "file": "File:Prefabricated house construction.gif"
+ },
+ "daiku.kh-tekkotsu": {
+  "src": "photo-daiku.kh-tekkotsu.jpg",
+  "author": "大分帰省中",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oita_horuto_hall.jpg",
+  "file": "File:Oita horuto hall.jpg"
+ },
+ "daiku.kh-sun": {
+  "src": "photo-daiku.kh-sun.jpg",
+  "author": "Baomi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wooden_Ruler.jpg",
+  "file": "File:Wooden Ruler.jpg"
+ },
+ "daiku.kh-ken": {
+  "src": "photo-daiku.kh-ken.jpg",
+  "author": "Urashimataro",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Moya_hisashi.svg",
+  "file": "File:Moya hisashi.svg"
+ },
+ "daiku.kh-kisokoji": {
+  "src": "photo-daiku.kh-kisokoji.jpg",
+  "author": "User:Xofc",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:081111-Pile-driver.jpeg",
+  "file": "File:081111-Pile-driver.jpeg"
+ },
+ "daiku.kh-tenkaizu": {
+  "src": "photo-daiku.kh-tenkaizu.jpg",
+  "author": "No machine-readable author provided. V-KV3 assumed (based on…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Draw_dev_6.PNG",
+  "file": "File:Draw dev 6.PNG"
+ },
+ "daiku.kh-mokuzojiku": {
+  "src": "photo-daiku.kh-mokuzojiku.jpg",
+  "author": "Wikiwikiyarou",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8%E9%80%A0%E8%BB%B8%E7%B5%84%E6%A7%8B%E6%B3%95.jpg",
+  "file": "File:木造軸組構法.jpg"
+ },
+ "daiku.kh-wakugumi": {
+  "src": "photo-daiku.kh-wakugumi.jpg",
+  "author": "Jaksmata",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Wood-framed_house.jpg",
+  "file": "File:Wood-framed house.jpg"
+ },
+ "daiku.kh-jiban": {
+  "src": "photo-daiku.kh-jiban.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:DrillRig.jpg",
+  "file": "File:DrillRig.jpg"
+ },
+ "daiku.kh-edoma": {
+  "src": "photo-daiku.kh-edoma.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Youkoukan06n4592.jpg",
+  "file": "File:Youkoukan06n4592.jpg"
+ },
+ "daiku.ki-ki": {
+  "src": "photo-daiku.ki-ki.jpg",
+  "author": "No machine-readable author provided. Jdforrester assumed (ba…",
+  "license": "CC BY 1.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sequoiadendron_giganteum_at_Kenilworth_Castle.jpg",
+  "file": "File:Sequoiadendron giganteum at Kenilworth Castle.jpg"
+ },
+ "daiku.ki-mokuzai": {
+  "src": "photo-daiku.ki-mokuzai.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotanimokuzai.JPG",
+  "file": "File:Kotanimokuzai.JPG"
+ },
+ "daiku.ki-maruta": {
+  "src": "photo-daiku.ki-maruta.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotanimokuzai.JPG",
+  "file": "File:Kotanimokuzai.JPG"
+ },
+ "daiku.ki-kakuzai": {
+  "src": "photo-daiku.ki-kakuzai.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotanimokuzai.JPG",
+  "file": "File:Kotanimokuzai.JPG"
+ },
+ "daiku.ki-sugi": {
+  "src": "photo-daiku.ki-sugi.jpg",
+  "author": "Batholith",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Taro-sugi_20111002.jpg",
+  "file": "File:Taro-sugi 20111002.jpg"
+ },
+ "daiku.ki-hinoki": {
+  "src": "photo-daiku.ki-hinoki.jpg",
+  "author": "Σ64",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chamaecyparis_obtusa_01.jpg",
+  "file": "File:Chamaecyparis obtusa 01.jpg"
+ },
+ "daiku.ki-matsu": {
+  "src": "photo-daiku.ki-matsu.jpg",
+  "author": "yeowatzup at Flickr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pinus_densiflora_Kumgangsan.jpg",
+  "file": "File:Pinus densiflora Kumgangsan.jpg"
+ },
+ "daiku.ki-kuri": {
+  "src": "photo-daiku.ki-kuri.jpg",
+  "author": "Apple2000",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Chestnut04.jpg",
+  "file": "File:Japanese Chestnut04.jpg"
+ },
+ "daiku.ki-nenrin": {
+  "src": "photo-daiku.ki-nenrin.jpg",
+  "author": "MPF",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Taxus_wood.jpg",
+  "file": "File:Taxus wood.jpg"
+ },
+ "daiku.ki-mokume": {
+  "src": "photo-daiku.ki-mokume.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotanimokuzai.JPG",
+  "file": "File:Kotanimokuzai.JPG"
+ },
+ "daiku.ki-juhi": {
+  "src": "photo-daiku.ki-juhi.jpg",
+  "author": "Σ64",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Karamatsu-hyouhi.JPG",
+  "file": "File:Karamatsu-hyouhi.JPG"
+ },
+ "daiku.ki-shinyoju": {
+  "src": "photo-daiku.ki-shinyoju.jpg",
+  "author": "Akiyoshi's Room",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%92%E3%83%8E%E3%82%AD%E4%BA%BA%E5%B7%A5%E6%9E%97%E3%81%AE%E3%81%82%E3%82%8B%E9%87%8C%E5%B1%B1P7306340.jpg",
+  "file": "File:ヒノキ人工林のある里山P7306340.jpg"
+ },
+ "daiku.ki-gohan": {
+  "src": "photo-daiku.ki-gohan.jpg",
+  "author": "Bystander",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spruce_plywood.JPG",
+  "file": "File:Spruce plywood.JPG"
+ },
+ "daiku.ki-bassai": {
+  "src": "photo-daiku.ki-bassai.jpg",
+  "author": "John Fletcher Ford (1862–1914)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Logging_oregon.jpg",
+  "file": "File:Logging oregon.jpg"
+ },
+ "daiku.ki-seizai": {
+  "src": "photo-daiku.ki-seizai.jpg",
+  "author": "liempdma",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cutting_lumber_with_a_swingblade_sawmill-2.jpg",
+  "file": "File:Cutting lumber with a swingblade sawmill-2.jpg"
+ },
+ "daiku.ki-kashi": {
+  "src": "photo-daiku.ki-kashi.jpg",
+  "author": "No machine-readable author provided. Inti-sol~commonswiki as…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Quercus_myrsinaefolia.JPG",
+  "file": "File:Quercus myrsinaefolia.JPG"
+ },
+ "daiku.ki-beimatsu": {
+  "src": "photo-daiku.ki-beimatsu.jpg",
+  "author": "Walter Siegmund",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Pseudotsuga_menziesii_28236.JPG",
+  "file": "File:Pseudotsuga menziesii 28236.JPG"
+ },
+ "daiku.ki-tsuga": {
+  "src": "photo-daiku.ki-tsuga.jpg",
+  "author": "Philipp Franz von Siebold and Joseph Gerhard Zuccarini",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Abies_tsuja_SZ106.png",
+  "file": "File:Abies tsuja SZ106.png"
+ },
+ "daiku.ki-masame": {
+  "src": "photo-daiku.ki-masame.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotanimokuzai.JPG",
+  "file": "File:Kotanimokuzai.JPG"
+ },
+ "daiku.ki-itame": {
+  "src": "photo-daiku.ki-itame.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotanimokuzai.JPG",
+  "file": "File:Kotanimokuzai.JPG"
+ },
+ "daiku.ki-shinzai": {
+  "src": "photo-daiku.ki-shinzai.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotanimokuzai.JPG",
+  "file": "File:Kotanimokuzai.JPG"
+ },
+ "daiku.ki-henzai": {
+  "src": "photo-daiku.ki-henzai.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotanimokuzai.JPG",
+  "file": "File:Kotanimokuzai.JPG"
+ },
+ "daiku.ki-shuseizai": {
+  "src": "photo-daiku.ki-shuseizai.jpg",
+  "author": "Own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fake%EF%BC%BFInnocence%EF%BC%BFColumn.jpg",
+  "file": "File:Fake＿Innocence＿Column.jpg"
+ },
+ "daiku.ki-moku": {
+  "src": "photo-daiku.ki-moku.jpg",
+  "author": "Own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Acer_pictum.jpg",
+  "file": "File:Acer pictum.jpg"
+ },
+ "daiku.ki-particle": {
+  "src": "photo-daiku.ki-particle.jpg",
+  "author": "en:User:Rotor DB",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Particleboard.jpg",
+  "file": "File:Particleboard.jpg"
+ },
+ "daiku.ki-shirata": {
+  "src": "photo-daiku.ki-shirata.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Kotanimokuzai.JPG",
+  "file": "File:Kotanimokuzai.JPG"
+ },
+ "daiku.ki-setchaku": {
+  "src": "photo-daiku.ki-setchaku.jpg",
+  "author": "Babi Hijau",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:AdhesivesForHouseUse001.jpg",
+  "file": "File:AdhesivesForHouseUse001.jpg"
+ },
+ "daiku.ki-sekko": {
+  "src": "photo-daiku.ki-sekko.jpg",
+  "author": "Amaxson at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Drywall.jpg",
+  "file": "File:Drywall.jpg"
+ },
+ "daiku.ki-dannetsuzai": {
+  "src": "photo-daiku.ki-dannetsuzai.jpg",
+  "author": "Achim Hering",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hallway_insulation.jpg",
+  "file": "File:Hallway insulation.jpg"
+ },
+ "daiku.dg-nokogiri": {
+  "src": "photo-daiku.dg-nokogiri.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Miki_City_Hardware_Museum04s3872.jpg",
+  "file": "File:Miki City Hardware Museum04s3872.jpg"
+ },
+ "daiku.dg-kanna": {
+  "src": "photo-daiku.dg-kanna.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:160312_Takenaka_Carpentry_Tools_Museum_Kobe_Japan21bs.jpg",
+  "file": "File:160312 Takenaka Carpentry Tools Museum Kobe Japan21bs.jpg"
+ },
+ "daiku.dg-nomi": {
+  "src": "photo-daiku.dg-nomi.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Miki_City_Hardware_Museum06n3872.jpg",
+  "file": "File:Miki City Hardware Museum06n3872.jpg"
+ },
+ "daiku.dg-kanazuchi": {
+  "src": "photo-daiku.dg-kanazuchi.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Miki_City_Hardware_Museum07s3872.jpg",
+  "file": "File:Miki City Hardware Museum07s3872.jpg"
+ },
+ "daiku.dg-kugi": {
+  "src": "photo-daiku.dg-kugi.jpg",
+  "author": "Walter J. Pilsak",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Nails.jpg",
+  "file": "File:Nails.jpg"
+ },
+ "daiku.dg-genno": {
+  "src": "photo-daiku.dg-genno.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Miki_City_Hardware_Museum07s3872.jpg",
+  "file": "File:Miki City Hardware Museum07s3872.jpg"
+ },
+ "daiku.dg-makijaku": {
+  "src": "photo-daiku.dg-makijaku.jpg",
+  "author": "Luigi Chiesa",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rotella_metrica.jpg",
+  "file": "File:Rotella metrica.jpg"
+ },
+ "daiku.dg-suiheiki": {
+  "src": "photo-daiku.dg-suiheiki.jpg",
+  "author": "aTarom",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:DetalleNivelDeBurbuja.jpg",
+  "file": "File:DetalleNivelDeBurbuja.jpg"
+ },
+ "daiku.dg-kizuchi": {
+  "src": "photo-daiku.dg-kizuchi.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Miki_City_Hardware_Museum07s3872.jpg",
+  "file": "File:Miki City Hardware Museum07s3872.jpg"
+ },
+ "daiku.dg-yasuri": {
+  "src": "photo-daiku.dg-yasuri.jpg",
+  "author": "No machine-readable author provided. MatthiasKabel assumed (…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Surface_of_a_file.jpg",
+  "file": "File:Surface of a file.jpg"
+ },
+ "daiku.dg-dogubako": {
+  "src": "photo-daiku.dg-dogubako.jpg",
+  "author": "M.Minderhoud",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gereedschapskist.jpg",
+  "file": "File:Gereedschapskist.jpg"
+ },
+ "daiku.dg-kyatatsu": {
+  "src": "photo-daiku.dg-kyatatsu.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Straz_pozarna_podnosniki_2.JPG",
+  "file": "File:Straz pozarna podnosniki 2.JPG"
+ },
+ "daiku.dg-toishi": {
+  "src": "photo-daiku.dg-toishi.jpg",
+  "author": "Modeha",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toishi.jpg",
+  "file": "File:Toishi.jpg"
+ },
+ "daiku.dg-marunoko": {
+  "src": "photo-daiku.dg-marunoko.jpg",
+  "author": "Rasbak",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cirkelzaag_(Circular_saw).jpg",
+  "file": "File:Cirkelzaag (Circular saw).jpg"
+ },
+ "daiku.dg-denkidoriru": {
+  "src": "photo-daiku.dg-denkidoriru.jpg",
+  "author": "Ssawka at Polish Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Electric_drill.jpg",
+  "file": "File:Electric drill.jpg"
+ },
+ "daiku.dg-daiganna": {
+  "src": "photo-daiku.dg-daiganna.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:160312_Takenaka_Carpentry_Tools_Museum_Kobe_Japan21bs.jpg",
+  "file": "File:160312 Takenaka Carpentry Tools Museum Kobe Japan21bs.jpg"
+ },
+ "daiku.dg-sagefuri": {
+  "src": "photo-daiku.dg-sagefuri.jpg",
+  "author": "Jim Thomas",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Plumb_bob.jpg",
+  "file": "File:Plumb bob.jpg"
+ },
+ "daiku.dg-arato": {
+  "src": "photo-daiku.dg-arato.jpg",
+  "author": "Modeha",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toishi.jpg",
+  "file": "File:Toishi.jpg"
+ },
+ "daiku.dg-nakato": {
+  "src": "photo-daiku.dg-nakato.jpg",
+  "author": "Modeha",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toishi.jpg",
+  "file": "File:Toishi.jpg"
+ },
+ "daiku.dg-shiagedo": {
+  "src": "photo-daiku.dg-shiagedo.jpg",
+  "author": "Modeha",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toishi.jpg",
+  "file": "File:Toishi.jpg"
+ },
+ "daiku.dg-impakuto": {
+  "src": "photo-daiku.dg-impakuto.jpg",
+  "author": "Bushytails at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Impact_wrench_01.jpg",
+  "file": "File:Impact wrench 01.jpg"
+ },
+ "daiku.dg-mimisen": {
+  "src": "photo-daiku.dg-mimisen.jpg",
+  "author": "Your Best Digs",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Types_of_Earplugs.jpg",
+  "file": "File:Types of Earplugs.jpg"
+ },
+ "daiku.dg-anzengutsu": {
+  "src": "photo-daiku.dg-anzengutsu.jpg",
+  "author": "Liftarn",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Steel-toe_boots.jpg",
+  "file": "File:Steel-toe boots.jpg"
+ },
+ "daiku.dg-yubisashi": {
+  "src": "photo-daiku.dg-yubisashi.jpg",
+  "author": "Cassiopeia sweet.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Odakyu_Conductor.jpg",
+  "file": "File:Odakyu Conductor.jpg"
+ },
+ "daiku.dg-tsuiraku": {
+  "src": "photo-daiku.dg-tsuiraku.jpg",
+  "author": "http://oceanservice.noaa.gov/",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Harness_-_01.jpg",
+  "file": "File:Harness - 01.jpg"
+ },
+ "daiku.dg-sukoya": {
+  "src": "photo-daiku.dg-sukoya.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SquareEngineersMachinist.jpg",
+  "file": "File:SquareEngineersMachinist.jpg"
+ },
+ "daiku.dg-hagane": {
+  "src": "photo-daiku.dg-hagane.jpg",
+  "author": "ArcelorMittal Kryvyi Rih",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D1%80%D0%BC%D0%B0%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D0%BA%D0%B0%D1%82.jpg",
+  "file": "File:Арматурный прокат.jpg"
+ },
+ "daiku.kz-kiso": {
+  "src": "photo-daiku.kz-kiso.jpg",
+  "author": "User:Xofc",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:081111-Pile-driver.jpeg",
+  "file": "File:081111-Pile-driver.jpeg"
+ },
+ "daiku.kz-dodai": {
+  "src": "photo-daiku.kz-dodai.jpg",
+  "author": "Own work",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cellulose_insulation100.JPG",
+  "file": "File:Cellulose insulation100.JPG"
+ },
+ "daiku.kz-hashira": {
+  "src": "photo-daiku.kz-hashira.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Horyu-ji_entasis2048b.jpg",
+  "file": "File:Horyu-ji entasis2048b.jpg"
+ },
+ "daiku.kz-yane": {
+  "src": "photo-daiku.kz-yane.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Roofes.JPG",
+  "file": "File:Roofes.JPG"
+ },
+ "daiku.kz-yuka": {
+  "src": "photo-daiku.kz-yuka.jpg",
+  "author": "User:Cro-Cop2",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Laminaat.jpg",
+  "file": "File:Laminaat.jpg"
+ },
+ "daiku.kz-tenjo": {
+  "src": "photo-daiku.kz-tenjo.jpg",
+  "author": "Tipoune",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Les_peintures_de_la_galerie_des_Glaces_du_ch%C3%A2teau_de_Versailles.jpg",
+  "file": "File:Les peintures de la galerie des Glaces du château de Versailles.jpg"
+ },
+ "daiku.kz-taruki": {
+  "src": "photo-daiku.kz-taruki.jpg",
+  "author": "Wikiwikiyarou",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8%E9%80%A0%E8%BB%B8%E7%B5%84%E6%A7%8B%E6%B3%95.jpg",
+  "file": "File:木造軸組構法.jpg"
+ },
+ "daiku.kz-koyagumi": {
+  "src": "photo-daiku.kz-koyagumi.jpg",
+  "author": "Wikiwikiyarou",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8%E9%80%A0%E8%BB%B8%E7%B5%84%E6%A7%8B%E6%B3%95.jpg",
+  "file": "File:木造軸組構法.jpg"
+ },
+ "daiku.kz-yosemune": {
+  "src": "photo-daiku.kz-yosemune.jpg",
+  "author": "Hip_roof.jpg: Wikiwikiyarou derivative work: Malyszkz (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hip_roof.svg",
+  "file": "File:Hip roof.svg"
+ },
+ "daiku.kz-taishin": {
+  "src": "photo-daiku.kz-taishin.jpg",
+  "author": "Valentin Shustov",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Two-12-story-concurrent-testing.gif",
+  "file": "File:Two-12-story-concurrent-testing.gif"
+ },
+ "daiku.kz-dannetsu": {
+  "src": "photo-daiku.kz-dannetsu.jpg",
+  "author": "Achim Hering",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hallway_insulation.jpg",
+  "file": "File:Hallway insulation.jpg"
+ },
+ "daiku.kz-kanki": {
+  "src": "photo-daiku.kz-kanki.jpg",
+  "author": "Antonio Mette",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Exhaust_fan_4.jpg",
+  "file": "File:Exhaust fan 4.jpg"
+ },
+ "daiku.kz-bosui": {
+  "src": "photo-daiku.kz-bosui.jpg",
+  "author": "Siamsens",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Applying_waterproofing_material_to_the_outside_of_a_tunnel.jpg",
+  "file": "File:Applying waterproofing material to the outside of a tunnel.jpg"
+ },
+ "daiku.kz-nunokiso": {
+  "src": "photo-daiku.kz-nunokiso.jpg",
+  "author": "User:Xofc",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:081111-Pile-driver.jpeg",
+  "file": "File:081111-Pile-driver.jpeg"
+ },
+ "daiku.kz-anka": {
+  "src": "photo-daiku.kz-anka.jpg",
+  "author": "ほーるだうん",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AnchorBolt_M12_01.jpg",
+  "file": "File:AnchorBolt M12 01.jpg"
+ },
+ "daiku.kz-nokigeta": {
+  "src": "photo-daiku.kz-nokigeta.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8%E9%80%A0%E8%BB%B8%E7%B5%84%E5%B7%A5%E6%B3%95%E6%96%AD%E9%9D%A2%E5%9B%B3.png",
+  "file": "File:木造軸組工法断面図.png"
+ },
+ "daiku.kz-mabashira": {
+  "src": "photo-daiku.kz-mabashira.jpg",
+  "author": "Ahp378",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:WallPanelDiagram.svg",
+  "file": "File:WallPanelDiagram.svg"
+ },
+ "daiku.kz-moya": {
+  "src": "photo-daiku.kz-moya.jpg",
+  "author": "Ktmchi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:G060-tikas.png",
+  "file": "File:G060-tikas.png"
+ },
+ "daiku.kz-irimoya": {
+  "src": "photo-daiku.kz-irimoya.jpg",
+  "author": "Irimoya.jpg: Wikiwikiyarou derivative work: Malyszkz (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Irimoya.svg",
+  "file": "File:Irimoya.svg"
+ },
+ "daiku.kz-hafu": {
+  "src": "photo-daiku.kz-hafu.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%A6%99%E5%BF%83%E5%AF%BA_%E5%A4%A7%E5%BA%AB%E8%A3%8F.JPG",
+  "file": "File:妙心寺 大庫裏.JPG"
+ },
+ "daiku.kz-hanakakushi": {
+  "src": "photo-daiku.kz-hanakakushi.jpg",
+  "author": "ムカイ at Japanese Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E4%B8%80%E8%88%AC%E6%9C%A8%E9%80%A0%E5%BB%BA%E7%AF%89%E8%BB%92%E6%96%AD%E9%9D%A2%E4%BE%8B%E5%9B%B3.png",
+  "file": "File:一般木造建築軒断面例図.png"
+ },
+ "daiku.kz-hagoita": {
+  "src": "photo-daiku.kz-hagoita.jpg",
+  "author": "ほーるだうん",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:HagoitaBolt_M12_01.jpg",
+  "file": "File:HagoitaBolt M12 01.jpg"
+ },
+ "daiku.kz-holdown": {
+  "src": "photo-daiku.kz-holdown.jpg",
+  "author": "ほーるだうん",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:HoledownKanamono_Vis_15kN_01.jpg",
+  "file": "File:HoledownKanamono Vis 15kN 01.jpg"
+ },
+ "daiku.kz-menshin": {
+  "src": "photo-daiku.kz-menshin.jpg",
+  "author": "Miyuki Meinaka",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Earthquake_protector_of_Showakan,_TPG.jpg",
+  "file": "File:Earthquake protector of Showakan, TPG.jpg"
+ },
+ "daiku.kz-toshitsu": {
+  "src": "photo-daiku.kz-toshitsu.jpg",
+  "author": "ほーるだうん",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ToushitsuBousuiSheet_01.jpg",
+  "file": "File:ToushitsuBousuiSheet 01.jpg"
+ },
+ "daiku.tg-hozoana": {
+  "src": "photo-daiku.tg-hozoana.jpg",
+  "author": "GreyCat",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mortise_and_tenon_joint.svg",
+  "file": "File:Mortise and tenon joint.svg"
+ },
+ "daiku.tg-kusabi": {
+  "src": "photo-daiku.tg-kusabi.jpg",
+  "author": "Iainf 03:12, 8 July 2006 (UTC)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wedge-diagram.svg",
+  "file": "File:Wedge-diagram.svg"
+ },
+ "daiku.tg-koshikake": {
+  "src": "photo-daiku.tg-koshikake.jpg",
+  "author": "User:Ellywa (original photo)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chair.png",
+  "file": "File:Chair.png"
+ },
+ "daiku.sa-washitsu": {
+  "src": "photo-daiku.sa-washitsu.jpg",
+  "author": "ja:User:Ignis",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%92%8C%E5%AE%A4%E3%83%BB%E5%BA%8A%E3%81%AE%E9%96%93%E3%81%AE%E5%90%84%E9%83%A8%E5%90%8D%E7%A7%B0.jpg",
+  "file": "File:和室・床の間の各部名称.jpg"
+ },
+ "daiku.sa-tatami": {
+  "src": "photo-daiku.sa-tatami.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Youkoukan06n4592.jpg",
+  "file": "File:Youkoukan06n4592.jpg"
+ },
+ "daiku.sa-shoji": {
+  "src": "photo-daiku.sa-shoji.jpg",
+  "author": "Ktmchi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gs01-rinsyun.jpg",
+  "file": "File:Gs01-rinsyun.jpg"
+ },
+ "daiku.sa-fusuma": {
+  "src": "photo-daiku.sa-fusuma.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_okada_house05_800.jpg",
+  "file": "File:Old okada house05 800.jpg"
+ },
+ "daiku.sa-tokonoma": {
+  "src": "photo-daiku.sa-tokonoma.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Tenryuji_Kyoto29s5s4200.jpg",
+  "file": "File:Tenryuji Kyoto29s5s4200.jpg"
+ },
+ "daiku.sa-kaidan": {
+  "src": "photo-daiku.sa-kaidan.jpg",
+  "author": "Arend041",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Houten_trap_001.svg",
+  "file": "File:Houten trap 001.svg"
+ },
+ "daiku.sa-oshiire": {
+  "src": "photo-daiku.sa-oshiire.jpg",
+  "author": "Ruizo at French Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Futons_ranges.jpg",
+  "file": "File:Futons ranges.jpg"
+ },
+ "daiku.sa-genkan": {
+  "src": "photo-daiku.sa-genkan.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_komoro-honjin-omoya02s3872.jpg",
+  "file": "File:Old komoro-honjin-omoya02s3872.jpg"
+ },
+ "daiku.sa-tesuri": {
+  "src": "photo-daiku.sa-tesuri.jpg",
+  "author": "Photo: Andreas Praefcke",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BMF_Gel%C3%A4nder.jpg",
+  "file": "File:BMF Geländer.jpg"
+ },
+ "daiku.sa-hikido": {
+  "src": "photo-daiku.sa-hikido.jpg",
+  "author": "User:Ies (Trimmed by Gulfox)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wuppertal_-_Bayer-Sportpark_22_ies2.jpg",
+  "file": "File:Wuppertal - Bayer-Sportpark 22 ies2.jpg"
+ },
+ "daiku.sa-engawa": {
+  "src": "photo-daiku.sa-engawa.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Ishibe_shukubanosato13s3200.jpg",
+  "file": "File:Ishibe shukubanosato13s3200.jpg"
+ },
+ "daiku.sa-flooring": {
+  "src": "photo-daiku.sa-flooring.jpg",
+  "author": "Kevin Payravi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oak_flooring.jpg",
+  "file": "File:Oak flooring.jpg"
+ },
+ "daiku.sa-yoshitsu": {
+  "src": "photo-daiku.sa-yoshitsu.jpg",
+  "author": "Asturio Cantabrio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Inage_Villa_Western-style_room_ac_(5).jpg",
+  "file": "File:Inage Villa Western-style room ac (5).jpg"
+ },
+ "daiku.sa-amado": {
+  "src": "photo-daiku.sa-amado.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Storm-door,amado,narita-city,japan.JPG",
+  "file": "File:Storm-door,amado,narita-city,japan.JPG"
+ },
+ "daiku.sa-kabegami": {
+  "src": "photo-daiku.sa-kabegami.jpg",
+  "author": "Photo: Andreas Praefcke",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gentlemens_Lounge_RCMH.jpg",
+  "file": "File:Gentlemens Lounge RCMH.jpg"
+ },
+ "daiku.sa-amadoi": {
+  "src": "photo-daiku.sa-amadoi.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Drainspout,amadoi,katori-city,japan.JPG",
+  "file": "File:Drainspout,amadoi,katori-city,japan.JPG"
+ },
+ "daiku.sa-hirakido": {
+  "src": "photo-daiku.sa-hirakido.jpg",
+  "author": "User:Ies (Trimmed by Gulfox)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wuppertal_-_Bayer-Sportpark_22_ies2.jpg",
+  "file": "File:Wuppertal - Bayer-Sportpark 22 ies2.jpg"
+ },
+ "daiku.sa-shikii": {
+  "src": "photo-daiku.sa-shikii.jpg",
+  "author": "Infrogmation of New Orleans",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NMP_1780s_House_interior_Door_Sill.JPG",
+  "file": "File:NMP 1780s House interior Door Sill.JPG"
+ },
+ "daiku.sa-nageshi": {
+  "src": "photo-daiku.sa-nageshi.jpg",
+  "author": "ja:User:Ignis",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%92%8C%E5%AE%A4%E3%83%BB%E5%BA%8A%E3%81%AE%E9%96%93%E3%81%AE%E5%90%84%E9%83%A8%E5%90%8D%E7%A7%B0.jpg",
+  "file": "File:和室・床の間の各部名称.jpg"
+ },
+ "daiku.sa-agarigamachi": {
+  "src": "photo-daiku.sa-agarigamachi.jpg",
+  "author": "Bcxfu75k",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shiba_inu_at_the_entrance_of_a_house,_-Japan_2010_a_%E4%B8%8A%E3%82%8A%E6%A1%86.png",
+  "file": "File:Shiba inu at the entrance of a house, -Japan 2010 a 上り框.png"
+ },
+ "daiku.sa-ranma": {
+  "src": "photo-daiku.sa-ranma.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wooden-panel-used-as-a-decorative-transom-above-paper-covered-sliding-doors,ranma,katori-city,japan.JPG",
+  "file": "File:Wooden-panel-used-as-a-decorative-transom-above-paper-covered-sliding-doors,ranma,katori-city,japan.JPG"
+ },
+ "daiku.sa-tobukuro": {
+  "src": "photo-daiku.sa-tobukuro.jpg",
+  "author": "Fg2",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nagasaki-Dejima-1739.jpg",
+  "file": "File:Nagasaki-Dejima-1739.jpg"
+ },
+ "daiku.sa-shikkui": {
+  "src": "photo-daiku.sa-shikkui.jpg",
+  "author": "No machine-readable author provided. おぉたむすねィく探検隊 assumed (ba…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:%E8%95%BE%E3%81%AE%E3%82%B7%E3%83%A2%E3%82%AF%E3%83%AC%E3%83%B3%E3%81%A8%E5%8F%A4%E6%B0%91%E5%AE%B6.JPG",
+  "file": "File:蕾のシモクレンと古民家.JPG"
+ },
+ "daiku.sa-keisodo": {
+  "src": "photo-daiku.sa-keisodo.jpg",
+  "author": "不明",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mineraly.sk_-_diatomit.jpg",
+  "file": "File:Mineraly.sk - diatomit.jpg"
+ },
+ "daiku.sa-oogabe": {
+  "src": "photo-daiku.sa-oogabe.jpg",
+  "author": "photo: Qurren (talk) Taken with Canon IXY 430F (Digital IXUS…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Inariyama-juku_kimono_shop.jpg",
+  "file": "File:Inariyama-juku kimono shop.jpg"
+ },
+ "daiku.sa-enkoita": {
+  "src": "photo-daiku.sa-enkoita.jpg",
+  "author": "Ippukucho",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ShayokanIndoor3.JPG",
+  "file": "File:ShayokanIndoor3.JPG"
+ },
+ "daiku.sa-itanoma": {
+  "src": "photo-daiku.sa-itanoma.jpg",
+  "author": "Kevin Payravi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oak_flooring.jpg",
+  "file": "File:Oak flooring.jpg"
+ },
+ "daiku.sa-toso": {
+  "src": "photo-daiku.sa-toso.jpg",
+  "author": "National Photo Company Collection",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Spraying_lacquer_on_cabinets_LCCN2016850642.jpg",
+  "file": "File:Spraying lacquer on cabinets LCCN2016850642.jpg"
+ },
+ "daiku.sa-goutenjo": {
+  "src": "photo-daiku.sa-goutenjo.jpg",
+  "author": "Tipoune",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Les_peintures_de_la_galerie_des_Glaces_du_ch%C3%A2teau_de_Versailles.jpg",
+  "file": "File:Les peintures de la galerie des Glaces du château de Versailles.jpg"
+ },
+ "daiku.sa-kasagi": {
+  "src": "photo-daiku.sa-kasagi.jpg",
+  "author": "8-hachiro",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kawawake-jinja05.JPG",
+  "file": "File:Kawawake-jinja05.JPG"
+ },
+ "daiku.sr-fune": {
+  "src": "photo-daiku.sr-fune.jpg",
+  "author": "Eugen Nosko",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Fotothek_df_n-10_0000828.jpg",
+  "file": "File:Fotothek df n-10 0000828.jpg"
+ },
+ "daiku.sr-shokunin": {
+  "src": "photo-daiku.sr-shokunin.jpg",
+  "author": "diametrik",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Salinas_Grandes,_Salta_y_Jujuy_(Argentina).jpg",
+  "file": "File:Salinas Grandes, Salta y Jujuy (Argentina).jpg"
+ },
+ "daiku.sr-minarai": {
+  "src": "photo-daiku.sr-minarai.jpg",
+  "author": "Joachim Müllerchen",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Reetdach_P7040055.JPG",
+  "file": "File:Reetdach P7040055.JPG"
+ },
+ "daiku.sr-sakan": {
+  "src": "photo-daiku.sr-sakan.jpg",
+  "author": "朕邦萬広",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chinese_construction_worker_001.jpg",
+  "file": "File:Chinese construction worker 001.jpg"
+ },
+ "daiku.sr-niwashi": {
+  "src": "photo-daiku.sr-niwashi.jpg",
+  "author": "Original uploader was Jasper33 at en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Parterre2.jpg",
+  "file": "File:Parterre2.jpg"
+ },
+ "daiku.sr-denkiya": {
+  "src": "photo-daiku.sr-denkiya.jpg",
+  "author": "AUTUMNSNAKE",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Doi_shotengai_Shikoku-chuo_5772.jpg",
+  "file": "File:Doi shotengai Shikoku-chuo 5772.jpg"
+ },
+ "daiku.sr-zousaku": {
+  "src": "photo-daiku.sr-zousaku.jpg",
+  "author": "Eugen Nosko",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Fotothek_df_n-10_0000828.jpg",
+  "file": "File:Fotothek df n-10 0000828.jpg"
+ },
+ "daiku.sr-katawaku": {
+  "src": "photo-daiku.sr-katawaku.jpg",
+  "author": "Eugen Nosko",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Fotothek_df_n-10_0000828.jpg",
+  "file": "File:Fotothek df n-10 0000828.jpg"
+ },
+ "daiku.sr-hyogu": {
+  "src": "photo-daiku.sr-hyogu.jpg",
+  "author": "郵便次郎",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hyougu-ten%E8%A1%A8%E5%85%B7%E5%BA%975250053.jpg",
+  "file": "File:Hyougu-ten表具店5250053.jpg"
+ },
+ "daiku.sr-nikyu": {
+  "src": "photo-daiku.sr-nikyu.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Architect.png",
+  "file": "File:Architect.png"
+ },
+ "daiku.sr-mokuzo": {
+  "src": "photo-daiku.sr-mokuzo.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Architect.png",
+  "file": "File:Architect.png"
+ },
+ "daiku.sr-ikkyu": {
+  "src": "photo-daiku.sr-ikkyu.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Architect.png",
+  "file": "File:Architect.png"
+ },
+ "daiku.sr-hikiya": {
+  "src": "photo-daiku.sr-hikiya.jpg",
+  "author": "Wolfe House & Building Movers",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:William-walker-house-relocation-edgeworth-pa.jpg",
+  "file": "File:William-walker-house-relocation-edgeworth-pa.jpg"
+ },
+ "daiku.sr-kobiki": {
+  "src": "photo-daiku.sr-kobiki.jpg",
+  "author": "Katsushika Hokusai",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Fuji_from_the_mountains_of_Totomi.jpg",
+  "file": "File:The Fuji from the mountains of Totomi.jpg"
+ },
+ "daiku.sr-ishiku": {
+  "src": "photo-daiku.sr-ishiku.jpg",
+  "author": "The original uploader was So Leblanc at French Wikipedia.",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Trace_la_pointe.JPG",
+  "file": "File:Trace la pointe.JPG"
+ },
+ "daiku.sr-wasen": {
+  "src": "photo-daiku.sr-wasen.jpg",
+  "author": "Waka moana",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Utasebune.jpg",
+  "file": "File:Utasebune.jpg"
+ },
+ "daiku.sr-kote": {
+  "src": "photo-daiku.sr-kote.jpg",
+  "author": "Mike Lupinacci",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Masons_trowel.jpg",
+  "file": "File:Masons trowel.jpg"
+ },
+ "daiku.rk-horyuji": {
+  "src": "photo-daiku.rk-horyuji.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Horyu-ji45s2s4500.jpg",
+  "file": "File:Horyu-ji45s2s4500.jpg"
+ },
+ "daiku.rk-gojunoto": {
+  "src": "photo-daiku.rk-gojunoto.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Horyu-ji06s3200.jpg",
+  "file": "File:Horyu-ji06s3200.jpg"
+ },
+ "daiku.rk-todaiji": {
+  "src": "photo-daiku.rk-todaiji.jpg",
+  "author": "Mont Blank rich",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E5%A4%A7%E5%AF%BA_%E5%A4%A7%E4%BB%8F%E6%AE%BF%EF%BC%882024%E5%B9%B4%EF%BC%89.jpg",
+  "file": "File:東大寺 大仏殿（2024年）.jpg"
+ },
+ "daiku.rk-ise": {
+  "src": "photo-daiku.rk-ise.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Naiku_001.jpg",
+  "file": "File:Naiku 001.jpg"
+ },
+ "daiku.rk-izumo": {
+  "src": "photo-daiku.rk-izumo.jpg",
+  "author": "Saigen Jiro",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Haiden_of_Izumo-taisha-1.JPG",
+  "file": "File:Haiden of Izumo-taisha-1.JPG"
+ },
+ "daiku.rk-shiro": {
+  "src": "photo-daiku.rk-shiro.jpg",
+  "author": "fi:Käyttäjä:Mp",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hameen_linna_ja_bastioni.jpg",
+  "file": "File:Hameen linna ja bastioni.jpg"
+ },
+ "daiku.rk-tenshu": {
+  "src": "photo-daiku.rk-tenshu.jpg",
+  "author": "左１列上から ja:姫路城-file:Himeji Castle The Keep Towers.jpg(user:Re…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:JapaneseCastle12ExistenceKeepTower.jpg",
+  "file": "File:JapaneseCastle12ExistenceKeepTower.jpg"
+ },
+ "daiku.rk-himeji": {
+  "src": "photo-daiku.rk-himeji.jpg",
+  "author": "Nikos Kitsakis",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Himeji_castle_in_may_2015.jpg",
+  "file": "File:Himeji castle in may 2015.jpg"
+ },
+ "daiku.rk-kiyomizu": {
+  "src": "photo-daiku.rk-kiyomizu.jpg",
+  "author": "Martin Falbisoner",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-02.jpg",
+  "file": "File:Kiyomizu-dera, Kyoto, November 2016 -02.jpg"
+ },
+ "daiku.rk-chashitsu": {
+  "src": "photo-daiku.rk-chashitsu.jpg",
+  "author": "Lombroso",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Urakuen_Joan.jpg",
+  "file": "File:Urakuen Joan.jpg"
+ },
+ "daiku.rk-rikyu": {
+  "src": "photo-daiku.rk-rikyu.jpg",
+  "author": "painted by 長谷川等伯, calligraphy by 春屋宗園",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sen_no_Rikyu_JPN.jpg",
+  "file": "File:Sen no Rikyu JPN.jpg"
+ },
+ "daiku.rk-shotoku": {
+  "src": "photo-daiku.rk-shotoku.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sh%C5%8Dtoku_Taishi_Sh%C5%8Dmanky%C5%8D_K%C5%8Dsan.jpg",
+  "file": "File:Shōtoku Taishi Shōmankyō Kōsan.jpg"
+ },
+ "daiku.rk-gassho": {
+  "src": "photo-daiku.rk-gassho.jpg",
+  "author": "タクナワン",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_traditional_architecture_Gassh%C5%8D-zukuri.jpg",
+  "file": "File:Japanese traditional architecture Gasshō-zukuri.jpg"
+ },
+ "daiku.rk-kayabuki": {
+  "src": "photo-daiku.rk-kayabuki.jpg",
+  "author": "Leyo",
+  "license": "CC BY-SA 3.0 CH",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ch/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Shirakawa-go_houses_1.jpg",
+  "file": "File:Shirakawa-go houses 1.jpg"
+ },
+ "daiku.rk-kawara": {
+  "src": "photo-daiku.rk-kawara.jpg",
+  "author": "by Reggaeman",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Shizutani_school_the_hall_and_shosai.JPG",
+  "file": "File:Shizutani school the hall and shosai.JPG"
+ },
+ "daiku.rk-bunkazai": {
+  "src": "photo-daiku.rk-bunkazai.jpg",
+  "author": "Oilstreet (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Byodoin_Phoenix_Hall_Uji_10-1R.jpg",
+  "file": "File:Byodoin Phoenix Hall Uji 10-1R.jpg"
+ },
+ "daiku.rk-isan": {
+  "src": "photo-daiku.rk-isan.jpg",
+  "author": "Henrik Sendelbach",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:UNESCO_World_Heritage_flag.jpg",
+  "file": "File:UNESCO World Heritage flag.jpg"
+ },
+ "daiku.rk-sengu": {
+  "src": "photo-daiku.rk-sengu.jpg",
+  "author": "Tawashi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%BC%8F%E5%B9%B4%E9%81%B7%E5%AE%AE%E8%A8%98%E5%BF%B5%E7%A5%9E%E5%AE%AE%E7%BE%8E%E8%A1%93%E9%A4%A8.jpg",
+  "file": "File:式年遷宮記念神宮美術館.jpg"
+ },
+ "daiku.rk-toshodaiji": {
+  "src": "photo-daiku.rk-toshodaiji.jpg",
+  "author": "Naokijp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toshodai-ji,_Golden_Hall_01.jpg",
+  "file": "File:Toshodai-ji, Golden Hall 01.jpg"
+ },
+ "daiku.rk-yakushiji": {
+  "src": "photo-daiku.rk-yakushiji.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Yakushiji_Nara06s3s4440.jpg",
+  "file": "File:Yakushiji Nara06s3s4440.jpg"
+ },
+ "daiku.rk-shinden": {
+  "src": "photo-daiku.rk-shinden.jpg",
+  "author": "Ktmchi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:G010-HR07-06.jpg",
+  "file": "File:G010-HR07-06.jpg"
+ },
+ "daiku.rk-shoin": {
+  "src": "photo-daiku.rk-shoin.jpg",
+  "author": "Dingy",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ginkakuji_Temple_Togudo_2009_059.jpg",
+  "file": "File:Ginkakuji Temple Togudo 2009 059.jpg"
+ },
+ "daiku.rk-sukiyazukuri": {
+  "src": "photo-daiku.rk-sukiyazukuri.jpg",
+  "author": "Hideyuki KAMON from Takarazuka / 宝塚, Hyogo / 兵庫, Japan / 日本",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hiunkaku_Nishi_Honganji.jpg",
+  "file": "File:Hiunkaku Nishi Honganji.jpg"
+ },
+ "daiku.rk-katsura": {
+  "src": "photo-daiku.rk-katsura.jpg",
+  "author": "Cyril Bèle",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Katsura6.jpg",
+  "file": "File:Katsura6.jpg"
+ },
+ "daiku.rk-jingoro": {
+  "src": "photo-daiku.rk-jingoro.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kuniyoshi,_The_Famous,_Unrivalled_Hidari_Jingoro.jpg",
+  "file": "File:Kuniyoshi, The Famous, Unrivalled Hidari Jingoro.jpg"
+ },
+ "daiku.rk-nishioka": {
+  "src": "photo-daiku.rk-nishioka.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Yakushiji_Nara05s3s4200.jpg",
+  "file": "File:Yakushiji Nara05s3s4200.jpg"
+ },
+ "daiku.rk-chona": {
+  "src": "photo-daiku.rk-chona.jpg",
+  "author": "GWphotograph",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20th_Century_Hatchet.jpg",
+  "file": "File:20th Century Hatchet.jpg"
+ },
+ "daiku.rk-yariganna": {
+  "src": "photo-daiku.rk-yariganna.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:160312_Takenaka_Carpentry_Tools_Museum_Kobe_Japan21bs.jpg",
+  "file": "File:160312 Takenaka Carpentry Tools Museum Kobe Japan21bs.jpg"
+ },
+ "daiku.rk-hiwadabuki": {
+  "src": "photo-daiku.rk-hiwadabuki.jpg",
+  "author": "No machine-readable author provided. Fg2 assumed (based on c…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kyoto_Toji_Hiwadabuki_C0990.jpg",
+  "file": "File:Kyoto Toji Hiwadabuki C0990.jpg"
+ },
+ "daiku.rk-shinmei": {
+  "src": "photo-daiku.rk-shinmei.jpg",
+  "author": "N yotarou",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Izawa-no-miya_07.jpg",
+  "file": "File:Izawa-no-miya 07.jpg"
+ },
+ "daiku.rk-taisha": {
+  "src": "photo-daiku.rk-taisha.jpg",
+  "author": "Blue Lotus",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Izumo-taisha_121538651_f69f257ed0_o.jpg",
+  "file": "File:Izumo-taisha 121538651 f69f257ed0 o.jpg"
+ },
+ "daiku.rk-azekura": {
+  "src": "photo-daiku.rk-azekura.jpg",
+  "author": "あずきごはん",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shosin-shouso.jpg",
+  "file": "File:Shosin-shouso.jpg"
+ },
+ "daiku.rk-shosoin": {
+  "src": "photo-daiku.rk-shosoin.jpg",
+  "author": "あずきごはん",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shosin-shouso.jpg",
+  "file": "File:Shosin-shouso.jpg"
+ },
+ "daiku.rk-kiwarisho": {
+  "src": "photo-daiku.rk-kiwarisho.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%8C%A0%E9%81%93%E5%A5%A5%E7%A7%98%E5%B7%BB%E5%A1%94%E4%B9%8B%E5%B7%BB%E3%83%BB%E5%A0%82%E5%AE%AE%E9%9B%9B%E5%BD%A2.jpg",
+  "file": "File:匠道奥秘巻塔之巻・堂宮雛形.jpg"
+ },
+ "daiku.rk-nakai": {
+  "src": "photo-daiku.rk-nakai.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nakai_Masakiyo.jpg",
+  "file": "File:Nakai Masakiyo.jpg"
+ },
+ "daiku.rk-nikko": {
+  "src": "photo-daiku.rk-nikko.jpg",
+  "author": "Jpatokal",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nikko_Toshogu_Yomeimon_Gate_2024.jpg",
+  "file": "File:Nikko Toshogu Yomeimon Gate 2024.jpg"
+ },
+ "daiku.rk-kakezukuri": {
+  "src": "photo-daiku.rk-kakezukuri.jpg",
+  "author": "あずきごはん",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Haiden-kakezukuri.jpg",
+  "file": "File:Haiden-kakezukuri.jpg"
+ },
+ "daiku.rk-karahafu": {
+  "src": "photo-daiku.rk-karahafu.jpg",
+  "author": "ムカイ at Japanese Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kara-hafu.png",
+  "file": "File:Kara-hafu.png"
+ },
+ "daiku.rk-kumimono": {
+  "src": "photo-daiku.rk-kumimono.jpg",
+  "author": "Sailko",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kyoto,_palazzo_imperiale,_padiglione_shishinden,_03.jpg",
+  "file": "File:Kyoto, palazzo imperiale, padiglione shishinden, 03.jpg"
+ },
+ "daiku.rk-soseki": {
+  "src": "photo-daiku.rk-soseki.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Rikyu-hachimangu07s4592.jpg",
+  "file": "File:Rikyu-hachimangu07s4592.jpg"
+ },
+ "daiku.rk-hottate": {
+  "src": "photo-daiku.rk-hottate.jpg",
+  "author": "Σ64",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Takayukasikisouko-nezumigaesi.JPG",
+  "file": "File:Takayukasikisouko-nezumigaesi.JPG"
+ },
+ "daiku.rk-daibutsuyo": {
+  "src": "photo-daiku.rk-daibutsuyo.jpg",
+  "author": "Nekosuki",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Todai-ji_Nandai-mon_National_Treasure_%E5%9B%BD%E5%AE%9D%E6%9D%B1%E5%A4%A7%E5%AF%BA%E5%8D%97%E5%A4%A7%E9%96%8017.JPG",
+  "file": "File:Todai-ji Nandai-mon National Treasure 国宝東大寺南大門17.JPG"
+ },
+ "daiku.rk-zenshuyo": {
+  "src": "photo-daiku.rk-zenshuyo.jpg",
+  "author": "Wiki708 at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kozanji_Temple_(Shimonoseki).JPG",
+  "file": "File:Kozanji Temple (Shimonoseki).JPG"
+ },
+ "daiku.rk-chogen": {
+  "src": "photo-daiku.rk-chogen.jpg",
+  "author": "b_mode68",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:080330-162412.jpg",
+  "file": "File:080330-162412.jpg"
+ },
+ "daiku.rk-taian": {
+  "src": "photo-daiku.rk-taian.jpg",
+  "author": "663highland",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:060408_Myoki-an_Oyamazaki_Kyoto_pref_Japan01s3.jpg",
+  "file": "File:060408 Myoki-an Oyamazaki Kyoto pref Japan01s3.jpg"
+ },
+ "daiku.rk-takayuka": {
+  "src": "photo-daiku.rk-takayuka.jpg",
+  "author": "Saigen Jiro",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Yoshinogari-iseki_takayukashiki-souko.JPG",
+  "file": "File:Yoshinogari-iseki takayukashiki-souko.JPG"
+ },
+ "daiku.rk-shirakawago": {
+  "src": "photo-daiku.rk-shirakawago.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shirakawa-go_(2017-07-22).jpg",
+  "file": "File:Shirakawa-go (2017-07-22).jpg"
+ },
+ "daiku.rk-shibi": {
+  "src": "photo-daiku.rk-shibi.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Toshodaiji_Nara_Nara_pref00bs5s900.jpg",
+  "file": "File:Toshodaiji Nara Nara pref00bs5s900.jpg"
  }
 };

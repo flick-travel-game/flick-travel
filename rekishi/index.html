@@ -791,7 +791,7 @@ const TONE = {
 const COLORS = {
   mode: { world: TONE.blue, japan: TONE.pink, wnames: TONE.green, jnames: TONE.orange, wpeople: TONE.purple, jpeople: toneFrom("#e0202e"),
           capitals: toneFrom("#0d6e8c"), wevents: TONE.orange, jevents: TONE.blue,  /* 歴史: けいくん 2026-09-27「1」= あかるい 色に */
-          usolar: TONE.orange, usky: TONE.blue, ucos: TONE.purple,  /* 宇宙: けいくん 2026-09-27「このボタンもっと明るい色に」→ 世界と 同じ あかるい 色に */ kbone: TONE.orange, korgan: TONE.pink, kcell: TONE.green, ktsubo: TONE.purple,  /* からだ: 同じく あかるい 色に */
+          usolar: TONE.orange, usky: TONE.blue, ucos: TONE.purple, uexp: TONE.pink, uplan: TONE.green, uobs: TONE.orange, uastro: TONE.blue,  /* 宇宙の 4つの 旅(けいくん 2026-10-18「宇宙博士レベルに」) */  /* 宇宙: けいくん 2026-09-27「このボタンもっと明るい色に」→ 世界と 同じ あかるい 色に */ kbone: TONE.orange, korgan: TONE.pink, kcell: TONE.green, ktsubo: TONE.purple,  /* からだ: 同じく あかるい 色に */
           rphys: TONE.blue, rchem: TONE.pink, rbio: TONE.green, rgeo: TONE.orange },  /* 理科: あかるい 色(2026-09-27) */  // 首都は 白い字になる こさ(#0b8f9e・#0b7c8a だと 暗い字になった。toneFrom の on を見る)
   /* レベル1〜10(虹の順)。docs に無い色は toneFrom で作る。
      ⚠️ ぜんぶ ボタンの字が 白になる こさ にしてある(1つだけ 黒い字だと 浮くため)。
@@ -2137,6 +2137,9 @@ const POOLS = { world: SPOTS.filter(q => !q.k && !isJapan(q)), japan: SPOTS.filt
                 capitals: SPOTS.filter(q => q.k === "capital"), wevents: SPOTS.filter(q => q.k === "event" && !isJapan(q)), jevents: SPOTS.filter(q => q.k === "event" && isJapan(q)),
                 /* 宇宙フリック旅行(key の あたま sol / sky / cos)・からだフリック旅行(bon mus / org sys / cel) */
                 usolar: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sol")), usky: SPOTS.filter(q => q.k === "space" && q.art.startsWith("sky")), ucos: SPOTS.filter(q => q.k === "space" && q.art.startsWith("cos")),
+                /* 宇宙図鑑に 足した 4つの 旅(けいくん 2026-10-18「宇宙博士レベルになれるように」)。⚠️ もとの 3つの 旅の レベルが 変わらないよう 新しい key の あたまに 分けた */
+                uexp: SPOTS.filter(q => q.k === "space" && q.art.startsWith("exp")), uplan: SPOTS.filter(q => q.k === "space" && q.art.startsWith("pla")),
+                uobs: SPOTS.filter(q => q.k === "space" && q.art.startsWith("obs")), uastro: SPOTS.filter(q => q.k === "space" && q.art.startsWith("ast")),
                 kbone: SPOTS.filter(q => q.k === "body" && /^(bon|mus)/.test(q.art)), korgan: SPOTS.filter(q => q.k === "body" && /^(org|sys)/.test(q.art)), kcell: SPOTS.filter(q => q.k === "body" && q.art.startsWith("cel")), ktsubo: SPOTS.filter(q => q.k === "body" && q.art.startsWith("tsb")) ,
                 /* 理科フリック旅行(key の あたま phy / chm と el / bio / geo)。学年(g: e 小学校 / j 中学校 / h 高校)の 順に レベルが 並ぶ */
                 rphys: SPOTS.filter(q => q.k === "rika" && q.art.startsWith("phy")), rchem: SPOTS.filter(q => q.k === "rika" && /^(chm|el)/.test(q.art)),
@@ -2175,6 +2178,10 @@ function unitOf(M){ return M.unit === undefined ? "か所" : M.unit; }
 MAPS.usolar = { svg:true, maps:["solar"], w:1080, h:420, src:"", icon:"🪐", name:"太陽系", title:"太陽系の図", word:"太陽系の図", sub:"太陽・惑星・衛星・探査機", thing:"天体", unit:"", doneWord:"知った天体", miss:"まだ知らない天体" };
 MAPS.usky = { svg:true, maps:["sky"], w:1080, h:540, src:"", icon:"⭐", name:"星と星座", title:"星図", word:"星図", sub:"1等星・星座・銀河・星雲", thing:"星", unit:"", doneWord:"知った星", miss:"まだ知らない星" };
 MAPS.ucos = { svg:true, maps:["sky","solar"], w:1080, h:540, src:"", icon:"🌌", name:"宇宙のことば", title:"宇宙の図", word:"宇宙の図", sub:"ブラックホール・光年・宇宙飛行士…", thing:"ことばの場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.uexp = { svg:true, maps:["solar"], w:1080, h:420, src:"", icon:"🚀", name:"宇宙開発と探査", title:"太陽系の図", word:"太陽系の図", sub:"ロケット・探査機・宇宙飛行士…", thing:"ことばの場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.uplan = { svg:true, maps:["solar"], w:1080, h:420, src:"", icon:"☄️", name:"惑星と小天体", title:"太陽系の図", word:"太陽系の図", sub:"惑星の地形・彗星・流星群・系外惑星…", thing:"ことばの場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.uobs = { svg:true, maps:["sky"], w:1080, h:540, src:"", icon:"🔭", name:"天文学と観測", title:"星図", word:"星図", sub:"望遠鏡・観測のことば・天文学者…", thing:"ことばの場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
+MAPS.uastro = { svg:true, maps:["sky"], w:1080, h:540, src:"", icon:"⚛️", name:"宇宙物理学", title:"星図", word:"星図", sub:"相対性理論・ブラックホール・宇宙の始まりと未来…", thing:"ことばの場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
 MAPS.kbone = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🦴", name:"ほねと きんにく", title:"からだの図", word:"からだの図", sub:"骨・関節・筋肉", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.korgan = { svg:true, maps:["front","head"], w:720, h:900, src:"", icon:"🫀", name:"臓器と しくみ", title:"からだの図", word:"からだの図", sub:"心臓・肺・胃・脳・血液・ホルモン…", thing:"場所", unit:"", doneWord:"知った場所", miss:"まだ知らない場所" };
 MAPS.kcell = { svg:true, maps:["cell"], w:720, h:720, src:"", icon:"🧬", name:"細胞と 遺伝", title:"細胞の図", word:"細胞の図", sub:"細胞・DNA・遺伝子…", thing:"場所", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
@@ -2185,7 +2192,7 @@ MAPS.rphys = { svg:true, maps:["phys"], w:1080, h:760, src:"", icon:"⚡", name:
 MAPS.rchem = { svg:true, maps:["ptable","chem"], w:1080, h:760, src:"", icon:"⚗️", name:"化学", title:"周期表と 化学の地図", word:"周期表と 化学の地図", sub:"元素・水溶液・化学変化・イオン・実験器具", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
 MAPS.rbio = { svg:true, maps:["bio"], w:1080, h:760, src:"", icon:"🌱", name:"生物", title:"生物の地図", word:"生物の地図", sub:"植物・動物・生態系・進化・微生物", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
 MAPS.rgeo = { svg:true, maps:["geo"], w:1080, h:760, src:"", icon:"🌋", name:"地学", title:"地球の断面図", word:"地球の断面図", sub:"天気・地層・火山・地震・プレート", thing:"ことば", unit:"", doneWord:"知ったことば", miss:"まだ知らないことば" };
-const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "kbone", "korgan", "kcell", "ktsubo", "rphys", "rchem", "rbio", "rgeo"];
+const ALL_MODES = ["world", "japan", "wnames", "jnames", "wpeople", "jpeople", "capitals", "wevents", "jevents", "usolar", "usky", "ucos", "uplan", "uexp", "uobs", "uastro", "kbone", "korgan", "kcell", "ktsubo", "rphys", "rchem", "rbio", "rgeo"];
 if(PLUG) for(const m of PLUG.modes){ MAPS[m] = Object.assign({}, MAPS.world, PLUG.maps[m]); ALL_MODES.push(m); }
 const MODES = ALL_MODES.filter(m => GAME.modes.includes(m));  // この ゲームに 出す 旅だけ
 const SMALL = {"ぁ":"あ","ぃ":"い","ぅ":"う","ぇ":"え","ぉ":"お","っ":"つ","ゃ":"や","ゅ":"ゆ","ょ":"よ","ゎ":"わ"};

@@ -12352,38 +12352,6 @@ const PHOTOS = {
   "page": "https://commons.wikimedia.org/wiki/File:Insect_collage.png",
   "file": "File:Insect collage.png"
  },
- "biopupa": {
-  "src": "photo-biopupa.jpg",
-  "author": "De Sousa, V.; Couri, M.",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pupae_of_Japanagromyza_inferna_Spencer_in_gall_of_Centrosema_virginianum_L._-_ZooKeys-374-045-g005.jpg",
-  "file": "File:Pupae of Japanagromyza inferna Spencer in gall of Centrosema virginianum L. - ZooKeys-374-045-g005.jpg"
- },
- "bioincompletemeta": {
-  "src": "photo-bioincompletemeta.jpg",
-  "author": "Beatriz Moisset",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Milkweedbugs.nymphadult9.0.jpg",
-  "file": "File:Milkweedbugs.nymphadult9.0.jpg"
- },
- "biolarva": {
-  "src": "photo-biolarva.jpg",
-  "author": "Beatriz Moisset",
-  "license": "CC BY-SA 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Eurosta_solidaginis_larva.jpg",
-  "file": "File:Eurosta solidaginis larva.jpg"
- },
- "bioimago": {
-  "src": "photo-bioimago.jpg",
-  "author": "T. N. Mundhenk",
-  "license": "CC BY 2.5",
-  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Cicada_molting_animated-2.gif",
-  "file": "File:Cicada molting animated-2.gif"
- },
  "biocabbagebf": {
   "src": "photo-biocabbagebf.jpg",
   "author": "Nesnad",
@@ -12407,30 +12375,6 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Tadpoles_-_Flickr_-_GregTheBusker_(1).jpg",
   "file": "File:Tadpoles - Flickr - GregTheBusker (1).jpg"
- },
- "bioantenna": {
-  "src": "photo-bioantenna.jpg",
-  "author": "Alpsdake",
-  "license": "CC BY-SA 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Actias_aliena_(antennae).jpg",
-  "file": "File:Actias aliena (antennae).jpg"
- },
- "biocompoundeye": {
-  "src": "photo-biocompoundeye.jpg",
-  "author": "Insects Unlocked",
-  "license": "CC0（パブリックドメイン）",
-  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "page": "https://commons.wikimedia.org/wiki/File:Eyes_and_ocelli_of_an_orchid_bee_(Apidae,_Euglossa_hansoni_(Moure))_(36522833083).jpg",
-  "file": "File:Eyes and ocelli of an orchid bee (Apidae, Euglossa hansoni (Moure)) (36522833083).jpg"
- },
- "biopillbug": {
-  "src": "photo-biopillbug.jpg",
-  "author": "不明",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:ArmadillidiumVulgare.jpg",
-  "file": "File:ArmadillidiumVulgare.jpg"
  },
  "biohibernation": {
   "src": "photo-biohibernation.jpg",
@@ -12463,14 +12407,6 @@ const PHOTOS = {
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
   "page": "https://commons.wikimedia.org/wiki/File:W_tonosamabatta5061.jpg",
   "file": "File:W tonosamabatta5061.jpg"
- },
- "bioyago": {
-  "src": "photo-bioyago.jpg",
-  "author": "André Karwath aka Aka",
-  "license": "CC BY-SA 2.5",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Aeshna_cyanea_-_larva_(aka).jpg",
-  "file": "File:Aeshna cyanea - larva (aka).jpg"
  },
  "biocicada": {
   "src": "photo-biocicada.jpg",
@@ -12527,14 +12463,6 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Neuston,_Plankton,_Nekton,_Benthos.jpg",
   "file": "File:Neuston, Plankton, Nekton, Benthos.jpg"
- },
- "biovorticella": {
-  "src": "photo-biovorticella.jpg",
-  "author": "Ｋｓ",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Turiganemusikorony.jpg",
-  "file": "File:Turiganemusikorony.jpg"
  },
  "biodiatom": {
   "src": "photo-biodiatom.jpg",
@@ -12752,14 +12680,6 @@ const PHOTOS = {
   "page": "https://commons.wikimedia.org/wiki/File:Salt_water_fish_with_Finnish_text.jpg",
   "file": "File:Salt water fish with Finnish text.jpg"
  },
- "bioviviparous": {
-  "src": "photo-bioviviparous.jpg",
-  "author": "MedievalRich",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Aphid-giving-birth.jpg",
-  "file": "File:Aphid-giving-birth.jpg"
- },
  "biohomologous": {
   "src": "photo-biohomologous.jpg",
   "author": "Волков Владислав Петрович",
@@ -12784,14 +12704,6 @@ const PHOTOS = {
   "page": "https://commons.wikimedia.org/wiki/File:Worms_in_soil_factory.jpg",
   "file": "File:Worms in soil factory.jpg"
  },
- "bioindicator": {
-  "src": "photo-bioindicator.jpg",
-  "author": "Bruce Marlin",
-  "license": "CC BY-SA 2.5",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Trichoptera_caddisfly_1.jpg",
-  "file": "File:Trichoptera caddisfly 1.jpg"
- },
  "biofungi": {
   "src": "photo-biofungi.jpg",
   "author": "Termininja MarkusHagenlocher (File:Flaschenstäubling.jpg) St…",
@@ -12799,22 +12711,6 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Fungi_Diversity.jpg",
   "file": "File:Fungi Diversity.jpg"
- },
- "biohypha": {
-  "src": "photo-biohypha.jpg",
-  "author": "Y_tambe",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Penicillium.jpg",
-  "file": "File:Penicillium.jpg"
- },
- "biomold": {
-  "src": "photo-biomold.jpg",
-  "author": "Dr. David Midgley",
-  "license": "CC BY-SA 2.5",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Aspergillus_fumigatus.jpg",
-  "file": "File:Aspergillus fumigatus.jpg"
  },
  "biomushroom": {
   "src": "photo-biomushroom.jpg",

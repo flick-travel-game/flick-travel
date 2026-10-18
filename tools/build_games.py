@@ -805,6 +805,11 @@ def build(gid, g):
     # FAME は 名所だけの もの
     out, n = re.subn(r"const FAME = \{.*?\};", "const FAME = {};", out, count=1, flags=re.S)
     d = ROOT / gid; d.mkdir(exist_ok=True)
+    # 📖 Wikipedia の リンク(tools/wiki_links.py が 作る <ゲーム>/wiki.js。けいくん 2026-10-18「すべてのフリックゲームで Wikipedia の説明リンクつきに」)
+    if (d / "wiki.js").exists():
+        import hashlib
+        wv = hashlib.sha1((d / "wiki.js").read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="wiki.js?v=%s"></script>' % wv, 1)
     (d / "index.html").write_text(out, encoding="utf-8")
     (d / "manifest.webmanifest").write_text(json.dumps({
         "name": g["name"], "short_name": g["name"], "start_url": "./", "scope": "/", "display": "standalone",  # scope は kazutomo.app ぜんぶ(2026-09-30。ホーム画面の アプリの 中で ほかの ゲーム・ログインへ 行っても 同じ アプリ = 同じ ログインの まま)

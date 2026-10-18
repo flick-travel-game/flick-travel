@@ -6008,14 +6008,6 @@ const PHOTOS = {
   "page": "https://commons.wikimedia.org/wiki/File:Lunar-eclipse-09-11-2003.jpeg",
   "file": "File:Lunar-eclipse-09-11-2003.jpeg"
  },
- "solannular": {
-  "src": "photo-solannular.jpg",
-  "author": "No machine-readable author provided. Aliparsa assumed (based…",
-  "license": "CC BY 2.5",
-  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:EclipseMarch06.jpg",
-  "file": "File:EclipseMarch06.jpg"
- },
  "solfullmoon": {
   "src": "photo-solfullmoon.jpg",
   "author": "Gregory H. Revera",
@@ -6047,14 +6039,6 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Daniel_Hershman_-_march_moon_(by).jpg",
   "file": "File:Daniel Hershman - march moon (by).jpg"
- },
- "solphases": {
-  "src": "photo-solphases.jpg",
-  "author": "Tomruen",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Lunar_libration_with_phase_Oct_2007_(continuous_loop).gif",
-  "file": "File:Lunar libration with phase Oct 2007 (continuous loop).gif"
  },
  "soltide": {
   "src": "photo-soltide.jpg",
@@ -6455,14 +6439,6 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BD%D0%BE%D0%BC%D0%B0%D0%BB%D0%B8%D0%B8.gif",
   "file": "File:Аномалии.gif"
- },
- "cosgravity": {
-  "src": "photo-cosgravity.jpg",
-  "author": "NASA, ESA, and the Hubble Heritage Team (STScI/AURA)",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:UGC_1810_and_UGC_1813_in_Arp_273_(captured_by_the_Hubble_Space_Telescope).jpg",
-  "file": "File:UGC 1810 and UGC 1813 in Arp 273 (captured by the Hubble Space Telescope).jpg"
  },
  "cosfusion": {
   "src": "photo-cosfusion.jpg",
@@ -7264,22 +7240,6 @@ const PHOTOS = {
   "page": "https://commons.wikimedia.org/wiki/File:Ursa_Major_constellation_map.svg",
   "file": "File:Ursa Major constellation map.svg"
  },
- "skyalpheratz": {
-  "src": "photo-skyalpheratz.jpg",
-  "author": "不明",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Alpheratz.gif",
-  "file": "File:Alpheratz.gif"
- },
- "skybellatrix": {
-  "src": "photo-skybellatrix.jpg",
-  "author": "Lithopsian",
-  "license": "CC BY-SA 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lambda_Orionis.jpg",
-  "file": "File:Lambda Orionis.jpg"
- },
  "skyalnilam": {
   "src": "photo-skyalnilam.jpg",
   "author": "不明",
@@ -7690,22 +7650,6 @@ const PHOTOS = {
  },
  "coscmb": {
   "src": "photo-coscmb.jpg",
-  "author": "NASA / WMAP Science Team",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:WMAP_2012.png",
-  "file": "File:WMAP 2012.png"
- },
- "cosdarkmatter": {
-  "src": "photo-cosdarkmatter.jpg",
-  "author": "NASA/JPL-Caltech",
-  "license": "パブリックドメイン",
-  "licenseUrl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Hairy_Dark_Matter.jpg",
-  "file": "File:Hairy Dark Matter.jpg"
- },
- "cosdarkenergy": {
-  "src": "photo-cosdarkenergy.jpg",
   "author": "NASA / WMAP Science Team",
   "license": "パブリックドメイン",
   "licenseUrl": "",

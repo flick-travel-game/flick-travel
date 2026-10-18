@@ -743,7 +743,9 @@ function creditOf(ph){
   return "写真："+who+"（"+lic+"）／Wikimedia Commons";
 }
 function pic(q){
-  if(q.e) return {html:'<div class="ph emoji"><span>'+q.e+'</span></div>', label:"", credit:""};  // 地名は 絵文字のカード
+  /* 宇宙図鑑は 写真が あれば 写真(けいくん 2026-10-18「元々の問題の答えが すべて絵文字だから 写真と Wikipedia のリンク付きで」)。
+     ⚠️ からだ・理科は まだ 写真を 目で 見ていないので 絵文字の まま(見てから 足す) */
+  if(q.e && !(q.k === "space" && PHOTO_LIST[q.art])) return {html:'<div class="ph emoji"><span>'+q.e+'</span></div>', label:"", credit:""};  // 地名は 絵文字のカード
   const ph = PHOTO_LIST[q.art];
   if(!ph && q.k === "person") return {html:'<div class="ph emoji"><span>👤</span></div>', label:"", credit:""};  // 肖像が まだ無い偉人(けいくん 2026-09-25「1」= 先に出して あとで足す)
   if(!ph) return {html:(ART[q.art]||ART_WORLD)(), label:"イラスト", credit:""};

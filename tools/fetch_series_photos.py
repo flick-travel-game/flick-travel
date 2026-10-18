@@ -38,8 +38,9 @@ INFO_CACHE = ROOT / "tools" / "series-fileinfo.json"    # Commons の 写真の�
 MIMES = ("image/jpeg", "image/png", "image/svg+xml", "image/gif", "image/tiff", "image/webp", "video/webm", "application/ogg")  # 動画は 縮小版(静止画)をもらう
 _last = [0.0]
 # 記事の 代表画像が 問題と 合わなかった もの(2026-10-18。宇宙図鑑の 新しい 旅。目で 見て 外した)。
+#   2026-10-18 に もとの 3つの 旅(sol/sky/cos)も 目で 見て 7枚 足した(金環日食 → 皆既日食の 写真 / アルフェラッツ → 星団 など)。
 #   例: オリンポス山 → ギリシャの 山 / 火星の水 → 映画の ろう人形 / カウントダウン → サッカーの 時計 / 多元宇宙 → 宇宙背景放射の 図
-NO_PHOTO = set(['astastrobio', 'astbbn', 'astbigrip', 'astcomposition', 'astem', 'astemc2', 'astmultiverse', 'aststardust', 'asttimedil', 'astwolfrayet', 'expcountdown', 'expswingby', 'obsaperture', 'plamagneto', 'plamarsdust', 'plamarswater', 'plaolympus', 'plasynodic'])
+NO_PHOTO = set(['astastrobio', 'astbbn', 'astbigrip', 'astcomposition', 'astem', 'astemc2', 'astmultiverse', 'aststardust', 'asttimedil', 'astwolfrayet', 'cosdarkenergy', 'cosdarkmatter', 'cosgravity', 'expcountdown', 'expswingby', 'obsaperture', 'plamagneto', 'plamarsdust', 'plamarswater', 'plaolympus', 'plasynodic', 'skyalpheratz', 'skybellatrix', 'solannular', 'solphases'])
 
 
 def get(url):

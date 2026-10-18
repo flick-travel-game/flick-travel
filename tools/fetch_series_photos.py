@@ -39,8 +39,9 @@ MIMES = ("image/jpeg", "image/png", "image/svg+xml", "image/gif", "image/tiff", 
 _last = [0.0]
 # 記事の 代表画像が 問題と 合わなかった もの(2026-10-18。宇宙図鑑の 新しい 旅。目で 見て 外した)。
 #   2026-10-18 に もとの 3つの 旅(sol/sky/cos)も 目で 見て 7枚 足した(金環日食 → 皆既日食の 写真 / アルフェラッツ → 星団 など)。
+#   2026-10-18 に からだ・理科も 目で 見て 17枚 足した(けがの 写真・寄生虫・津波の 被害など 子どもに 見せたくない もの / 合わない もの)。
 #   例: オリンポス山 → ギリシャの 山 / 火星の水 → 映画の ろう人形 / カウントダウン → サッカーの 時計 / 多元宇宙 → 宇宙背景放射の 図
-NO_PHOTO = set(['astastrobio', 'astbbn', 'astbigrip', 'astcomposition', 'astem', 'astemc2', 'astmultiverse', 'aststardust', 'asttimedil', 'astwolfrayet', 'cosdarkenergy', 'cosdarkmatter', 'cosgravity', 'expcountdown', 'expswingby', 'obsaperture', 'plamagneto', 'plamarsdust', 'plamarswater', 'plaolympus', 'plasynodic', 'skyalpheratz', 'skybellatrix', 'solannular', 'solphases'])
+NO_PHOTO = set(['astastrobio', 'astbbn', 'astbigrip', 'astcomposition', 'astem', 'astemc2', 'astmultiverse', 'aststardust', 'asttimedil', 'astwolfrayet', 'biofoodchain', 'biolichen', 'bioparasitism', 'bonthorax', 'chmionize', 'cosdarkenergy', 'cosdarkmatter', 'cosgravity', 'expcountdown', 'expswingby', 'geoliquefaction', 'geomidstream', 'geotsunami', 'obsaperture', 'plamagneto', 'plamarsdust', 'plamarswater', 'plaolympus', 'plasynodic', 'skyalpheratz', 'skybellatrix', 'solannular', 'solphases', 'syscough', 'sysexcretion', 'sysmineral', 'syspuberty', 'sysreflex', 'syssaliva', 'sysscab', 'syssprain', 'sysstrain'])
 
 
 def get(url):

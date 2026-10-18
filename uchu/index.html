@@ -733,6 +733,9 @@ const ART_WORLD=()=>svg(R(0,0,320,180,"#cfe0f0")+C(160,90,62,"#5b9bd5")+
   PA("M126 108 Q140 104 146 116 Q138 128 128 124Z","#7fbf6a"));
 /* 本物の写真は photos.js の PHOTOS から読む（写真・撮影者・ライセンス）。無ければイラストを出す */
 const PHOTO_LIST = (typeof PHOTOS === "object" && PHOTOS) ? PHOTOS : {};
+/* ことばの ゲームの Wikipedia の 題名(<ゲーム>/wiki.js。tools/wiki_links.py が 作る)。記事が ある ことばだけ */
+const WIKI_LIST = (typeof WIKI === "object" && WIKI) ? WIKI : {};
+const wikiLink = t => t ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(t) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "";
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function creditOf(ph){
   const lic = ph.licenseUrl ? '<a href="'+esc(ph.licenseUrl)+'" target="_blank" rel="noopener">'+esc(ph.license)+'</a>' : esc(ph.license);
@@ -740,9 +743,13 @@ function creditOf(ph){
   return "写真："+who+"（"+lic+"）／Wikimedia Commons";
 }
 function pic(q){
+  /* ことばの ゲーム(花屋・農家・サッカー など)の 写真: key は「<ゲーム>.<ことばid>」(tools/fetch_game_photos.py。けいくん 2026-10-18「物が写るゲームだけ」) */
+  const gph = PLUG && q.k === PLUG.kind ? PHOTO_LIST[GAME.id + "." + q.art] : null;
+  if(gph) return {html:'<div class="ph"><img class="blur" src="'+esc(GAME.assets + gph.src)+'" alt=""><img class="main" src="'+esc(GAME.assets + gph.src)+'" alt="'+esc(q.n)+'"></div>', label:"写真", credit:creditOf(gph)};
   /* 宇宙図鑑は 写真が あれば 写真(けいくん 2026-10-18「元々の問題の答えが すべて絵文字だから 写真と Wikipedia のリンク付きで」)。
-     ⚠️ からだ・理科は まだ 写真を 目で 見ていないので 絵文字の まま(見てから 足す) */
-  if(q.e && !(q.k === "space" && PHOTO_LIST[q.art])) return {html:'<div class="ph emoji"><span>'+q.e+'</span></div>', label:"", credit:""};  // 地名は 絵文字のカード
+     理科も 同じ日に 目で 見てから 出した(合わない・子どもに 見せたくない ものは 外した)。
+     ⚠️ **からだ図鑑は 出さない**(けいくん 2026-10-18「体の画像気持ち悪いなぁ」。内臓・筋肉・病気の 絵が 多い)。写真の ファイルは 残してある */
+  if(q.e && !((q.k === "space" || q.k === "rika") && PHOTO_LIST[q.art])) return {html:'<div class="ph emoji"><span>'+q.e+'</span></div>', label:"", credit:""};  // 地名は 絵文字のカード
   const ph = PHOTO_LIST[q.art];
   if(!ph && q.k === "person") return {html:'<div class="ph emoji"><span>👤</span></div>', label:"", credit:""};  // 肖像が まだ無い偉人(けいくん 2026-09-25「1」= 先に出して あとで足す)
   if(!ph) return {html:(ART[q.art]||ART_WORLD)(), label:"イラスト", credit:""};
@@ -1504,7 +1511,7 @@ function gmapUrl(q){
 }
 function gmapLink(q){
   /* 会社は 公式サイト(けいくん 2026-09-26「四季報が出来なければ その会社のリンクに」→ おすすめ = 公式サイト)+ Wikipedia */
-  if(PLUG && q.k === PLUG.kind) return "";  // プラグインの コース(株式・AI): リンクは PLUG.info が 出す  // 会社の コース: リンクは PLUG.info が 出す
+  if(PLUG && q.k === PLUG.kind) return wikiLink(WIKI_LIST[q.art]);  // ことばの ゲーム: Wikipedia に 同じ 名前の 記事が あれば(2026-10-18)  // プラグインの コース(株式・AI): リンクは PLUG.info が 出す  // 会社の コース: リンクは PLUG.info が 出す
   if(q.k === "company") return '<a class="gmap" href="' + esc(q.u) + '" target="_blank" rel="noopener noreferrer">🏢 公式サイトを見る</a>'
     + (q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "");
   if(q.k === "space" || q.k === "body" || q.k === "rika") return q.w ? '<a class="gmap" href="https://ja.wikipedia.org/wiki/' + encodeURIComponent(q.w) + '" target="_blank" rel="noopener noreferrer">📖 Wikipedia で くわしく</a>' : "";

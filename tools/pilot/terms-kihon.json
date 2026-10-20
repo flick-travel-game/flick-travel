@@ -1,0 +1,1220 @@
+[
+ {
+  "id": "ki-hikoki",
+  "name": "飛行機",
+  "reading": "ひこうき",
+  "journey": "kihon",
+  "category": "機体の形",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-ryokakuki",
+   "ki-dotai",
+   "ki-shuyoku"
+  ],
+  "description": "翼で 空気の 力を 受けて 空を 飛ぶ 乗り物。エンジンで 前に 進み、翼が 生む 揚力で 機体を ささえます。"
+ },
+ {
+  "id": "ki-ryokakuki",
+  "name": "旅客機",
+  "reading": "りょかくき",
+  "journey": "kihon",
+  "category": "機体の形",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛫",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-hikoki",
+   "ki-kyakushitsu",
+   "ki-kyakushitsujomuin"
+  ],
+  "description": "お客さんを 乗せて 空港と 空港の あいだを 飛ぶ 飛行機。大きな ものは 数百人を 乗せて、海の 向こうまで 一気に 運びます。"
+ },
+ {
+  "id": "ki-dotai",
+  "name": "胴体",
+  "reading": "どうたい",
+  "journey": "kihon",
+  "category": "つくり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛩",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-kishu",
+   "ki-shuyoku",
+   "ki-biyoku"
+  ],
+  "description": "飛行機の まん中の 長い 筒。操縦席・客室・荷物の 部屋が 入っていて、主翼と 尾翼が ここに つきます。"
+ },
+ {
+  "id": "ki-kishu",
+  "name": "機首",
+  "reading": "きしゅ",
+  "journey": "kihon",
+  "category": "つくり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-dotai",
+   "ki-sojuseki"
+  ],
+  "description": "胴体の いちばん 前の 先っぽ。空気を なめらかに 分ける 形です。旅客機の 機首には 前の 雲や 雨を 見る レーダーが 入っています。"
+ },
+ {
+  "id": "ki-shuyoku",
+  "name": "主翼",
+  "reading": "しゅよく",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪽",
+  "mapNode": "kihon:shuyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-dotai",
+   "ki-hojoyoku",
+   "ki-flap"
+  ],
+  "description": "胴体の 左右に のびる 大きな 翼。空気の 流れから 揚力を 生んで、飛行機を 空に ささえます。旅客機では 中に 燃料も 入っています。"
+ },
+ {
+  "id": "ki-biyoku",
+  "name": "尾翼",
+  "reading": "びよく",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔺",
+  "mapNode": "kihon:biyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-suiheibiyoku",
+   "ki-suichokubiyoku",
+   "ki-dotai"
+  ],
+  "description": "胴体の うしろに ある 小さな 翼の あつまり。矢の 羽根の ように、飛行機が まっすぐ 安定して 飛べる ように します。"
+ },
+ {
+  "id": "ki-suiheibiyoku",
+  "name": "水平尾翼",
+  "reading": "すいへいびよく",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "kihon:biyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-biyoku",
+   "ki-shokoda",
+   "ki-suiheianteiban"
+  ],
+  "description": "尾翼の うち 横に 広がる 翼。機首が 上や 下に ふらふら しない ように ささえ、うしろの 昇降舵で 機首の 向きを 変えます。"
+ },
+ {
+  "id": "ki-suichokubiyoku",
+  "name": "垂直尾翼",
+  "reading": "すいちょくびよく",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kihon:biyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-biyoku",
+   "ki-hokoda",
+   "ki-suichokuanteiban"
+  ],
+  "description": "尾翼の うち たてに 立っている 翼。機首が 左右に ふらつかない ように し、うしろの 方向舵で 向きを 整えます。"
+ },
+ {
+  "id": "ki-hojoyoku",
+  "name": "補助翼(エルロン)",
+  "reading": "ほじょよく",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kihon:hojoyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shuyoku",
+   "ki-sojukan",
+   "ki-sadohojoyoku"
+  ],
+  "description": "主翼の うしろの 外がわに ある 動く 板。左右で 反対に 上下し、飛行機を 左右に かたむけます(ロール)。英語で エルロン。"
+ },
+ {
+  "id": "ki-shokoda",
+  "name": "昇降舵(エレベーター)",
+  "reading": "しょうこうだ",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "kihon:shokoda",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-suiheibiyoku",
+   "ki-sojukan",
+   "ki-trimtab"
+  ],
+  "description": "水平尾翼の うしろに ある 動く 板。上下に 動いて 機首を 上げたり 下げたり します(ピッチ)。英語で エレベーター。"
+ },
+ {
+  "id": "ki-hokoda",
+  "name": "方向舵(ラダー)",
+  "reading": "ほうこうだ",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "kihon:hokoda",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-suichokubiyoku",
+   "ki-rudderpedal"
+  ],
+  "description": "垂直尾翼の うしろに ある 動く 板。左右に 動いて 機首の 向きを 左右に 変えます(ヨー)。足の ペダルで 動かし、英語で ラダー。"
+ },
+ {
+  "id": "ki-flap",
+  "name": "フラップ",
+  "reading": "ふらっぷ",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛬",
+  "mapNode": "kihon:flap",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shuyoku",
+   "ki-spoiler",
+   "ki-slat"
+  ],
+  "description": "主翼の うしろに ある、うしろ下へ のびる 板。ゆっくり 飛んでも 揚力が 足りる ように する しかけで、離陸と 着陸の ときに 出します。"
+ },
+ {
+  "id": "ki-engine",
+  "name": "エンジン",
+  "reading": "えんじん",
+  "journey": "kihon",
+  "category": "エンジン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "kihon:engine",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-propeller",
+   "ki-nacelle",
+   "ki-sohatsuki"
+  ],
+  "description": "飛行機を 前へ おし進める 力(推力)を 生む 装置。旅客機は ジェットエンジン、小さな 飛行機は プロペラを 回す エンジンが 多いです。"
+ },
+ {
+  "id": "ki-propeller",
+  "name": "プロペラ",
+  "reading": "ぷろぺら",
+  "journey": "kihon",
+  "category": "エンジン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "kihon:engine",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-engine",
+   "ki-tanpatsuki"
+  ],
+  "description": "エンジンで 回す 羽根。1枚1枚が 小さな 翼の 形を していて、空気を うしろへ おしやり、その 反対の 力で 前に 進みます。"
+ },
+ {
+  "id": "ki-landinggear",
+  "name": "ランディングギア(脚)",
+  "reading": "らんでぃんぐぎあ",
+  "journey": "kihon",
+  "category": "脚",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "kihon:gear",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-zenkyaku",
+   "ki-shukyaku",
+   "ki-hikikomikyaku"
+  ],
+  "description": "地上を 走ったり、着陸の ときに 体を 受けとめたり する 足。車輪と、ゆれを やわらげる しかけで できています。"
+ },
+ {
+  "id": "ki-sojuseki",
+  "name": "操縦席(コックピット)",
+  "reading": "そうじゅうせき",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧑‍✈️",
+  "mapNode": "kihon:cockpit",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-sojukan",
+   "ki-keikiban",
+   "ki-overheadpanel"
+  ],
+  "description": "パイロットが 座って 飛行機を 動かす 場所。英語で コックピット。旅客機では 左に 機長、右に 副操縦士が 座るのが ふつうです。"
+ },
+ {
+  "id": "ki-sojukan",
+  "name": "操縦かん",
+  "reading": "そうじゅうかん",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🕹",
+  "mapNode": "kihon:sojukan",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-hojoyoku",
+   "ki-shokoda",
+   "ki-sojurin"
+  ],
+  "description": "手で にぎって 飛行機の 向きを 変える レバー。前後に 動かすと 機首が 上下し、左右に たおすと 機体が かたむきます。"
+ },
+ {
+  "id": "ki-kyakushitsu",
+  "name": "客室",
+  "reading": "きゃくしつ",
+  "journey": "kihon",
+  "category": "客室",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💺",
+  "mapNode": "kihon:kyakushitsu",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-kyakushitsujomuin",
+   "ki-seatbelt",
+   "ki-yoatsu"
+  ],
+  "description": "お客さんが 座る 部屋。上空でも 楽に 息が できる よう、空気の 圧力が 調整されています。"
+ },
+ {
+  "id": "ki-kyakushitsujomuin",
+  "name": "客室乗務員",
+  "reading": "きゃくしつじょうむいん",
+  "journey": "kihon",
+  "category": "客室",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "kihon:kyakushitsu",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-kyakushitsu",
+   "ki-hijoguchi",
+   "ki-seatbelt"
+  ],
+  "description": "客室で お客さんの 安全と 快適を 守る 人。飲みものを 配るだけで なく、非常口や 救命胴衣の 使いかたを 教える 大事な 役目が あります。"
+ },
+ {
+  "id": "ki-seatbelt",
+  "name": "シートベルト",
+  "reading": "しーとべると",
+  "journey": "kihon",
+  "category": "客室",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "kihon:kyakushitsu",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-kyakushitsu",
+   "ki-kyakushitsujomuin"
+  ],
+  "description": "座席に 体を とめる ベルト。空気の ゆれで 機体が ゆれても、しめていれば 安心です。座っている ときは いつも しめて おくのが おすすめ。"
+ },
+ {
+  "id": "ki-spoiler",
+  "name": "スポイラー",
+  "reading": "すぽいらー",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "kihon:flap",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-flap",
+   "ki-speedbrake",
+   "ki-groundspoiler"
+  ],
+  "description": "主翼の 上に ある 立ち上がる 板。立てると 揚力が へって 空気の じゃまが ふえ、速さを 落としたり 高さを 下げたり できます。"
+ },
+ {
+  "id": "ki-slat",
+  "name": "スラット",
+  "reading": "すらっと",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kihon:flap",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-flap",
+   "ki-krugerflap",
+   "ki-shuyoku"
+  ],
+  "description": "主翼の 前の ふちから 前へ せり出す 板。翼との すきまに 空気を 通して、大きな 角度でも 流れが はがれにくく します。"
+ },
+ {
+  "id": "ki-trimtab",
+  "name": "トリムタブ",
+  "reading": "とりむたぶ",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎚",
+  "mapNode": "kihon:shokoda",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shokoda",
+   "ki-balancetab",
+   "ki-antiservotab"
+  ],
+  "description": "舵の うしろに ある 小さな 板。これを 調整すると、操縦かんを ずっと 押したり 引いたり しなくても 同じ 姿勢を 保てます。"
+ },
+ {
+  "id": "ki-throttle",
+  "name": "スロットル",
+  "reading": "すろっとる",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎛",
+  "mapNode": "kihon:sojukan",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-engine",
+   "ki-sojuseki"
+  ],
+  "description": "エンジンの 力を 強く したり 弱く したり する レバー。前に 出すと 力が 強く なります。"
+ },
+ {
+  "id": "ki-rudderpedal",
+  "name": "ラダーペダル",
+  "reading": "らだーぺだる",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "kihon:sojukan",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-hokoda",
+   "ki-sojukan",
+   "ki-nosewheelsteering"
+  ],
+  "description": "足もとの 2つの ペダル。ふむと 方向舵が 動きます。多くの 小さな 飛行機では、ペダルの 上を つま先で おすと 車輪の ブレーキにも なります。"
+ },
+ {
+  "id": "ki-sojurin",
+  "name": "操縦輪(ヨーク)",
+  "reading": "そうじゅうりん",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎡",
+  "mapNode": "kihon:sojukan",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-sojukan",
+   "ki-sidestick"
+  ],
+  "description": "ハンドルの 形を した 操縦かん。英語で ヨーク。回すと 機体が かたむき、押したり 引いたり すると 機首が 上下します。"
+ },
+ {
+  "id": "ki-zenkyaku",
+  "name": "前脚",
+  "reading": "ぜんきゃく",
+  "journey": "kihon",
+  "category": "脚",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "kihon:gear",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shukyaku",
+   "ki-landinggear",
+   "ki-nosewheelsteering"
+  ],
+  "description": "機首の 下に ある 脚。地上で 向きを 変える 役目も もちます。前脚 1本と 主脚 2本の 形が、いまの 飛行機で いちばん 多い 形です。"
+ },
+ {
+  "id": "ki-shukyaku",
+  "name": "主脚",
+  "reading": "しゅきゃく",
+  "journey": "kihon",
+  "category": "脚",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "kihon:gear",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-zenkyaku",
+   "ki-landinggear",
+   "ki-wheelbrake"
+  ],
+  "description": "重心の 近くに ある 太い 脚。着陸の とき 体重の ほとんどを 受けとめます。大きな 旅客機は 主脚に たくさんの タイヤが 並びます。"
+ },
+ {
+  "id": "ki-wheelbrake",
+  "name": "ホイールブレーキ",
+  "reading": "ほいーるぶれーき",
+  "journey": "kihon",
+  "category": "脚",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "kihon:gear",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shukyaku",
+   "ki-rudderpedal"
+  ],
+  "description": "車輪の 回転を おさえて 止まる ための ブレーキ。主脚の 車輪に ついていて、着陸の あとや 地上で 止まる ときに 使います。"
+ },
+ {
+  "id": "ki-yokutan",
+  "name": "翼端",
+  "reading": "よくたん",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔚",
+  "mapNode": "kihon:shuyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shuyoku",
+   "ki-hojoyoku"
+  ],
+  "description": "主翼の いちばん 外がわの 先。ここでは 空気の うずが できやすいので、先を 上に 曲げた 小さな 翼を つけた 飛行機も あります。"
+ },
+ {
+  "id": "ki-fueltank",
+  "name": "燃料タンク",
+  "reading": "ねんりょうたんく",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛽",
+  "mapNode": "kihon:shuyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shuyoku",
+   "ki-integraltank"
+  ],
+  "description": "燃料を ためて おく 入れもの。旅客機では 主翼の 中に 燃料を 入れる ことが 多く、翼の 重さを 内がわから ささえる 役にも 立ちます。"
+ },
+ {
+  "id": "ki-suiheianteiban",
+  "name": "水平安定板",
+  "reading": "すいへいあんていばん",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟰",
+  "mapNode": "kihon:biyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-suiheibiyoku",
+   "ki-shokoda"
+  ],
+  "description": "水平尾翼の うち 動かない 前の 部分。機首が 上下に ゆれても もとに もどる ように する、安定の 役目を します。"
+ },
+ {
+  "id": "ki-suichokuanteiban",
+  "name": "垂直安定板",
+  "reading": "すいちょくあんていばん",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "kihon:biyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-suichokubiyoku",
+   "ki-hokoda",
+   "ki-dorsalfin"
+  ],
+  "description": "垂直尾翼の うち 動かない 前の 部分。風見鶏の ように、機首を 進む 向きに そろえる 役目を します。"
+ },
+ {
+  "id": "ki-tanyoki",
+  "name": "単葉機",
+  "reading": "たんようき",
+  "journey": "kihon",
+  "category": "機体の形",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛩",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-fukuyoki",
+   "ki-koyokuki"
+  ],
+  "description": "主翼が 1段だけの 飛行機。いまの 飛行機の ほとんどが 単葉機です。"
+ },
+ {
+  "id": "ki-fukuyoki",
+  "name": "複葉機",
+  "reading": "ふくようき",
+  "journey": "kihon",
+  "category": "機体の形",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪁",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-tanyoki",
+   "ki-hikoki"
+  ],
+  "description": "主翼が 上下に 2枚 重なった 飛行機。軽くて じょうぶに 作りやすく、むかしは たくさん ありました。ライト兄弟の 飛行機も 複葉機です。"
+ },
+ {
+  "id": "ki-koyokuki",
+  "name": "高翼機",
+  "reading": "こうよくき",
+  "journey": "kihon",
+  "category": "機体の形",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "kihon:shuyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-teiyokuki",
+   "ki-shuyoku"
+  ],
+  "description": "主翼が 胴体の 上に つく 飛行機。下の 地面が よく 見えるので、空から ながめる 練習や 写真の しごとに 向いています。"
+ },
+ {
+  "id": "ki-teiyokuki",
+  "name": "低翼機",
+  "reading": "ていよくき",
+  "journey": "kihon",
+  "category": "機体の形",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "kihon:shuyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-koyokuki",
+   "ki-shuyoku"
+  ],
+  "description": "主翼が 胴体の 下に つく 飛行機。旅客機の 多くは この 形で、翼の 下に エンジンを つるしやすく なります。"
+ },
+ {
+  "id": "ki-tanpatsuki",
+  "name": "単発機",
+  "reading": "たんぱつき",
+  "journey": "kihon",
+  "category": "エンジン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "kihon:engine",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-sohatsuki",
+   "ki-propeller"
+  ],
+  "description": "エンジンを 1つ もつ 飛行機。小さな 練習機に 多い 形です。"
+ },
+ {
+  "id": "ki-sohatsuki",
+  "name": "双発機",
+  "reading": "そうはつき",
+  "journey": "kihon",
+  "category": "エンジン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "2️⃣",
+  "mapNode": "kihon:engine",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-tanpatsuki",
+   "ki-engine"
+  ],
+  "description": "エンジンを 2つ もつ 飛行機。いまの 旅客機の 多くは 双発機で、1つが 止まっても もう1つで 安全に 飛びつづけられる よう 作られています。"
+ },
+ {
+  "id": "ki-hikikomikyaku",
+  "name": "引き込み脚",
+  "reading": "ひきこみきゃく",
+  "journey": "kihon",
+  "category": "脚",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "kihon:gear",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-koteikyaku",
+   "ki-landinggear"
+  ],
+  "description": "飛んでいる あいだ 胴体や 翼の 中に しまえる 脚。空気の じゃまが へって、速く 飛べます。"
+ },
+ {
+  "id": "ki-koteikyaku",
+  "name": "固定脚",
+  "reading": "こていきゃく",
+  "journey": "kihon",
+  "category": "脚",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "kihon:gear",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-hikikomikyaku",
+   "ki-landinggear"
+  ],
+  "description": "しまわずに 出した ままの 脚。しくみが かんたんで 軽く、小さな 練習機に 多い 形です。"
+ },
+ {
+  "id": "ki-yoatsu",
+  "name": "与圧",
+  "reading": "よあつ",
+  "journey": "kihon",
+  "category": "つくり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-kyakushitsu",
+   "ki-outflowvalve",
+   "ki-dotai"
+  ],
+  "description": "客室の 空気に 圧力を かけて、地上に 近い 楽な 空気に たもつ こと。旅客機の 客室は、高い 山の 上くらいの 気圧に 保たれています。"
+ },
+ {
+  "id": "ki-keikiban",
+  "name": "計器盤",
+  "reading": "けいきばん",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎛",
+  "mapNode": "kihon:cockpit",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-sojuseki",
+   "ki-overheadpanel"
+  ],
+  "description": "操縦席の 正面に ある、速さ・高さ・向き などを 示す 計器が ならんだ 板。いまは 大きな 画面に まとめた 飛行機が 多いです。"
+ },
+ {
+  "id": "ki-hijoguchi",
+  "name": "非常口",
+  "reading": "ひじょうぐち",
+  "journey": "kihon",
+  "category": "客室",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "kihon:kyakushitsu",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-dasshutsuslide",
+   "ki-kyakushitsujomuin"
+  ],
+  "description": "いざと いう とき、すぐに 外へ 出られる ように 用意してある 出口。近くの 席の 人は 客室乗務員の お手伝いを たのまれる ことも あります。"
+ },
+ {
+  "id": "ki-kyumeidoi",
+  "name": "救命胴衣",
+  "reading": "きゅうめいどうい",
+  "journey": "kihon",
+  "category": "客室",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "kihon:kyakushitsu",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-kyakushitsu",
+   "ki-kyakushitsujomuin"
+  ],
+  "description": "海の 上を 飛ぶ ときの 備えとして 座席の 下などに ある ベスト。ふくらませて 水に 浮くための ものです。"
+ },
+ {
+  "id": "ki-flybywire",
+  "name": "フライバイワイヤ",
+  "reading": "ふらいばいわいや",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kihon:sojukan",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-sidestick",
+   "ki-sojukan",
+   "ki-sojusaku"
+  ],
+  "description": "操縦かんの 動きを 電気の 信号に かえて コンピューターが 舵を 動かす しくみ。機体が 決められた はんいを こえない よう 手助けも します。"
+ },
+ {
+  "id": "ki-sidestick",
+  "name": "サイドスティック",
+  "reading": "さいどすてぃっく",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎮",
+  "mapNode": "kihon:sojukan",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-flybywire",
+   "ki-sojurin"
+  ],
+  "description": "座席の 横に ある 小さな 操縦かん。フライバイワイヤの 旅客機の 一部が 使っていて、前の テーブルを 広く 使えます。"
+ },
+ {
+  "id": "ki-stabilator",
+  "name": "スタビレーター",
+  "reading": "すたびれーたー",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪚",
+  "mapNode": "kihon:shokoda",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-suiheibiyoku",
+   "ki-antiservotab"
+  ],
+  "description": "水平尾翼ぜんたいが 1枚の 板として 動く しくみ。安定板と 昇降舵を 分けず、まるごと 角度を 変えて 機首を 上下させます。"
+ },
+ {
+  "id": "ki-fowlerflap",
+  "name": "ファウラーフラップ",
+  "reading": "ふぁうらーふらっぷ",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kihon:flap",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-flap",
+   "ki-krugerflap"
+  ],
+  "description": "うしろへ すべり出しながら 下がる フラップ。翼の 面積も 増えるので、とても 大きな 揚力を 生めます。旅客機に よく 使われます。"
+ },
+ {
+  "id": "ki-krugerflap",
+  "name": "クルーガーフラップ",
+  "reading": "くるーがーふらっぷ",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔻",
+  "mapNode": "kihon:flap",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-slat",
+   "ki-fowlerflap"
+  ],
+  "description": "主翼の 前の ふちの 下から 前へ 開く 板。スラットと 同じく、ゆっくり 飛ぶ ときに 翼の 前の 空気の 流れを 助けます。"
+ },
+ {
+  "id": "ki-flaperon",
+  "name": "フラッペロン",
+  "reading": "ふらっぺろん",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kihon:hojoyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-hojoyoku",
+   "ki-flap"
+  ],
+  "description": "フラップと 補助翼の 2つの 役を 1枚で する 動く 板。両方 下げれば フラップ、左右 反対に 動かせば 補助翼に なります。"
+ },
+ {
+  "id": "ki-speedbrake",
+  "name": "スピードブレーキ",
+  "reading": "すぴーどぶれーき",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "kihon:flap",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-spoiler",
+   "ki-groundspoiler"
+  ],
+  "description": "飛んでいる ときに 空気の じゃまを わざと ふやして 速さを 落とす しかけ。旅客機では 主翼の スポイラーを 立てて 使います。"
+ },
+ {
+  "id": "ki-groundspoiler",
+  "name": "グランドスポイラー",
+  "reading": "ぐらんどすぽいらー",
+  "journey": "kihon",
+  "category": "翼",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛬",
+  "mapNode": "kihon:flap",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-spoiler",
+   "ki-speedbrake",
+   "ki-wheelbrake"
+  ],
+  "description": "着陸して 車輪が 地面に ついたら 大きく 立つ スポイラー。揚力を 消して 体重を 車輪に かけ、ブレーキが よく 効く ように します。"
+ },
+ {
+  "id": "ki-sadohojoyoku",
+  "name": "差動補助翼",
+  "reading": "さどうほじょよく",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kihon:hojoyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-hojoyoku",
+   "ki-hokoda"
+  ],
+  "description": "上がる 補助翼を 大きく、下がる 補助翼を 小さく 動かす しくみ。かたむけた ときに 機首が 逆へ ふられる くせ(アドバースヨー)を 小さく します。"
+ },
+ {
+  "id": "ki-balancetab",
+  "name": "バランスタブ",
+  "reading": "ばらんすたぶ",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "kihon:shokoda",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-trimtab",
+   "ki-antiservotab"
+  ],
+  "description": "舵が 動くと 反対の 向きに 動く 小さな 板。空気の 力で 舵を 助けて、パイロットが 操縦かんを 動かす 力を 軽く します。"
+ },
+ {
+  "id": "ki-antiservotab",
+  "name": "アンチサーボタブ",
+  "reading": "あんちさーぼたぶ",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "kihon:shokoda",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-stabilator",
+   "ki-balancetab"
+  ],
+  "description": "舵と 同じ 向きに 動く 小さな 板。わざと 少し 重く して、動きすぎを ふせぎ 手ごたえを 生みます。スタビレーターに よく つきます。"
+ },
+ {
+  "id": "ki-nacelle",
+  "name": "ナセル",
+  "reading": "なせる",
+  "journey": "kihon",
+  "category": "エンジン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧯",
+  "mapNode": "kihon:engine",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-engine",
+   "ki-pylon"
+  ],
+  "description": "エンジンを つつむ 流線形の 入れもの。空気の じゃまを へらし、エンジンを 守ります。"
+ },
+ {
+  "id": "ki-pylon",
+  "name": "パイロン",
+  "reading": "ぱいろん",
+  "journey": "kihon",
+  "category": "エンジン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "kihon:engine",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-nacelle",
+   "ki-teiyokuki"
+  ],
+  "description": "エンジンを 主翼の 下などに つるす 柱。重い エンジンの 力を 翼に 伝え、燃料や 電気の 管も 中を 通ります。"
+ },
+ {
+  "id": "ki-oleo",
+  "name": "オレオ緩衝装置",
+  "reading": "おれおかんしょうそうち",
+  "journey": "kihon",
+  "category": "脚",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛢",
+  "mapNode": "kihon:gear",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shukyaku",
+   "ki-landinggear"
+  ],
+  "description": "脚の 中で 油と 空気を つかって 着陸の 衝撃を やわらげる 筒。ばねと、ゆれを しずめる 役を 同時に こなし、はねかえりを おさえます。"
+ },
+ {
+  "id": "ki-nosewheelsteering",
+  "name": "ノーズホイールステアリング",
+  "reading": "のーずほいーるすてありんぐ",
+  "journey": "kihon",
+  "category": "脚",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kihon:gear",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-zenkyaku",
+   "ki-rudderpedal"
+  ],
+  "description": "前脚の 車輪の 向きを 変えて 地上で 曲がる しくみ。大きな 旅客機では 操縦席の 横の 小さな ハンドルで 動かします。"
+ },
+ {
+  "id": "ki-overheadpanel",
+  "name": "オーバーヘッドパネル",
+  "reading": "おーばーへっどぱねる",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔝",
+  "mapNode": "kihon:cockpit",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-sojuseki",
+   "ki-keikiban"
+  ],
+  "description": "操縦席の 頭の 上に ある スイッチの 板。電気・燃料・空気・明かり などの 仕組みを まとめて 動かします。"
+ },
+ {
+  "id": "ki-semimonocoque",
+  "name": "セミモノコック構造",
+  "reading": "せみものこっくこうぞう",
+  "journey": "kihon",
+  "category": "つくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥚",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shuketa",
+   "ki-rib",
+   "ki-dotai"
+  ],
+  "description": "外の 板と、中の 輪の 骨組みや たての 補強材が いっしょに 力を 受けもつ つくり。軽くて じょうぶなので、いまの 飛行機の 胴体の 多くが この つくりです。"
+ },
+ {
+  "id": "ki-shuketa",
+  "name": "主桁(スパー)",
+  "reading": "しゅけた",
+  "journey": "kihon",
+  "category": "つくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦴",
+  "mapNode": "kihon:shuyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-rib",
+   "ki-shuyoku",
+   "ki-semimonocoque"
+  ],
+  "description": "主翼の 中を 根元から 先まで 通る 太い 骨。英語で スパー。揚力を 受けとめて 胴体に 伝える、翼の 背骨です。"
+ },
+ {
+  "id": "ki-rib",
+  "name": "リブ(小骨)",
+  "reading": "りぶ",
+  "journey": "kihon",
+  "category": "つくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦴",
+  "mapNode": "kihon:shuyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-shuketa",
+   "ki-shuyoku"
+  ],
+  "description": "主翼の 中で 前から うしろへ ならぶ 骨。翼の 断面の 形(翼型)を つくり、外の 板を ささえます。"
+ },
+ {
+  "id": "ki-sojusaku",
+  "name": "操縦索(ケーブル)",
+  "reading": "そうじゅうさく",
+  "journey": "kihon",
+  "category": "操縦席",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧵",
+  "mapNode": "kihon:sojukan",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-sojukan",
+   "ki-flybywire"
+  ],
+  "description": "操縦かんや ペダルの 動きを 舵に 伝える 金属の ワイヤー。小さな 飛行機の 多くは この ワイヤーで 舵が 動きます。"
+ },
+ {
+  "id": "ki-outflowvalve",
+  "name": "アウトフローバルブ",
+  "reading": "あうとふろーばるぶ",
+  "journey": "kihon",
+  "category": "つくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-yoatsu",
+   "ki-kyakushitsu"
+  ],
+  "description": "客室の 空気を 外へ 逃がす 量を 調整する 弁。開け具合を 変えて、客室の 気圧を ちょうど よく 保ちます。"
+ },
+ {
+  "id": "ki-dasshutsuslide",
+  "name": "脱出スライド",
+  "reading": "だっしゅつすらいど",
+  "journey": "kihon",
+  "category": "客室",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛝",
+  "mapNode": "kihon:kyakushitsu",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-hijoguchi",
+   "ki-kyakushitsujomuin"
+  ],
+  "description": "出口から すばやく 外へ 出る ための すべり台。ふだんは ドアに たたんで しまってあり、使う ときだけ ふくらみます。"
+ },
+ {
+  "id": "ki-integraltank",
+  "name": "インテグラルタンク",
+  "reading": "いんてぐらるたんく",
+  "journey": "kihon",
+  "category": "つくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "kihon:shuyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-fueltank",
+   "ki-shuketa"
+  ],
+  "description": "翼の 骨組みと 外の 板の すきまを ふさいで、翼 そのものを 燃料の 入れものに した タンク。別の タンクを 入れるより 軽く できます。"
+ },
+ {
+  "id": "ki-yokudofairing",
+  "name": "翼胴フェアリング",
+  "reading": "よくどうふぇありんぐ",
+  "journey": "kihon",
+  "category": "つくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "kihon:dotai",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-dotai",
+   "ki-shuyoku"
+  ],
+  "description": "主翼と 胴体の つなぎ目を おおう なめらかな カバー。角で 空気が みだれるのを ふせいで、じゃまな 力を へらします。"
+ },
+ {
+  "id": "ki-dorsalfin",
+  "name": "ドーサルフィン",
+  "reading": "どーさるふぃん",
+  "journey": "kihon",
+  "category": "尾翼と舵",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦈",
+  "mapNode": "kihon:biyoku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ki-suichokuanteiban",
+   "ki-suichokubiyoku"
+  ],
+  "description": "垂直尾翼の 前に のびる 低い ひれ。機体が 横を 向いた ときにも 安定を たもつ 助けに なります。"
+ }
+]

@@ -1403,7 +1403,8 @@
 - 📷 **写真を 71まい 足した**(けいくん 2026-10-20「写真が入ってないよ？」)。機首・尾翼 などは 記事の 代表画像が 航空会社・軍用機だったので 外して いた → 英語版 Wikipedia の 記事に ある 写真から **目で 見て えらんだ**(航空会社の ロゴ・軍用機・事故の 写真は さけた)。
   しくみは `tools/fetch_game_photos.py` の **`GAME_PICKS`**(key → Commons の File 名)。`fetch_series_photos.py` の `PICKS` が 代表画像の かわりに それを 取る(`NO_GAME_PHOTO` に 入っていても PICKS が 勝つ)。いまは 186 / 630語に 写真。
   ⚠️ 機首・燃料タンク・除氷・747 は よい 写真が 無かった(航空会社・軍用機)ので 絵文字の まま。足すときも かならず 目で 見る
-- **絵は まだ**(仮の アイコン `tools/pilot/placeholder_icon.py` = 空色に 白い 飛行機。`hero=False`・`logo=False`)。届いたら `python3 tools/icon_from_square.py pilot` / `title_from_art.py pilot` → `hero` `logo` を True・`iconv` / `wordv` を +1・`art.word` を 実寸に。
+- **アイコンは 入れた**(2026-10-20。けいくんの 四角い 絵 1254px を 切らずに そのまま `tools/pilot/art/square-src.png` → `python3 tools/icon_from_square.py pilot`。`iconv` = 2)。4択(人工地平儀)・計算(450km/h × 2.5h = 1,125km)は 正しい。札の 小さい 字に ゲームに 無い ことばが あるが アイコンの 大きさでは 読めないので そのまま。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+- **トップの 絵と 題名は まだ**(`hero=False`・`logo=False`)。届いたら `title_from_art.py pilot` → `hero` `logo` を True・`wordv` を +1・`art.word` を 実寸に。
   ⚠️ 絵を 頼む ときは 実在の 会社の 塗り分け・ロゴ・こわれた 機体・あらしを 描かせない。人物は 画面の 下 3分の1に 小さく。届いたら まず 字を 切り出して 読む。販売ページ `HOME_GAMES`(章「夢のしごと」の 整備士の となり)と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs pilot/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs pilot/`(W=320 も)。計算問題は scratchpad で `CALC` を 3000回ずつ 回して 選択肢が 4つ・NaN なし・番号 01〜36
 

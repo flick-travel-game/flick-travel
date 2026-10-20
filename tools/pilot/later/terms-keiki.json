@@ -1,0 +1,682 @@
+[
+ {
+  "id": "ke-fan",
+  "name": "ファン",
+  "reading": "ふぁん",
+  "journey": "keiki",
+  "category": "ジェットエンジン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "keiki:jet",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-turbofan",
+   "ke-bypass"
+  ],
+  "description": "ターボファンの いちばん 前で 回る 大きな 羽根車。旅客機の エンジンが 生む 押す 力の 多くは、じつは この ファンが 押した 空気から 来ています。"
+ },
+ {
+  "id": "ke-nozzle",
+  "name": "ノズル",
+  "reading": "のずる",
+  "journey": "keiki",
+  "category": "ジェットエンジン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "keiki:jet",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-turbine",
+   "ke-jetengine"
+  ],
+  "description": "エンジンの いちばん うしろで、ガスを ふき出す 出口。形で ガスの 速さを ととのえます。"
+ },
+ {
+  "id": "ke-intake",
+  "name": "空気取り入れ口",
+  "reading": "くうきとりいれぐち",
+  "journey": "keiki",
+  "category": "ジェットエンジン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "keiki:jet",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-fan",
+   "ke-asshukuki"
+  ],
+  "description": "エンジンが 空気を 吸いこむ 入口。空気が みだれずに なめらかに 入る ように、形が くふうされています。"
+ },
+ {
+  "id": "ke-kyuyu",
+  "name": "給油",
+  "reading": "きゅうゆ",
+  "journey": "keiki",
+  "category": "燃料と電気",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛽",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-nenryo",
+   "ke-nenryopump"
+  ],
+  "description": "飛行機に 燃料を 入れる こと。大きな 空港では 地下の パイプや タンク車から、主翼の 下の 口に つないで 入れます。"
+ },
+ {
+  "id": "ke-oat",
+  "name": "外気温度計",
+  "reading": "がいきおんどけい",
+  "journey": "keiki",
+  "category": "速度と高度",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "keiki:kodo",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-mitsudo",
+   "ke-kodokei"
+  ],
+  "description": "機体の 外の 空気の 温度を はかる 計器。真対気速度の 計算や、氷が つきそうか どうかを 考える ときに 使います。"
+ },
+ {
+  "id": "ke-battery",
+  "name": "バッテリー",
+  "reading": "ばってりー",
+  "journey": "keiki",
+  "category": "燃料と電気",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "keiki:glass",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-hatsudenki",
+   "ke-denki"
+  ],
+  "description": "電気を ためておく 電池。エンジンを かける ときや、発電機が 止まった ときの そなえに 使います。"
+ },
+ {
+  "id": "ke-hatsudenki",
+  "name": "発電機",
+  "reading": "はつでんき",
+  "journey": "keiki",
+  "category": "燃料と電気",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "keiki:glass",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-battery",
+   "ke-denki"
+  ],
+  "description": "エンジンの 回転で 電気を 作る 機械。計器・無線・ライトなどに 電気を 送り、バッテリーにも 充電します。"
+ },
+ {
+  "id": "ke-rotor",
+  "name": "回転翼(ローター)",
+  "reading": "かいてんよく",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚁",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-turboshaft",
+   "ke-kahen"
+  ],
+  "description": "ヘリコプターの 上で 回る 長い 翼。回る ことで 揚力を 生み、まっすぐ 上がったり 空中で 止まったり できます。"
+ },
+ {
+  "id": "ke-keihoon",
+  "name": "警報音",
+  "reading": "けいほうおん",
+  "journey": "keiki",
+  "category": "画面と自動操縦",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "keiki:auto",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-autopilot",
+   "ke-gpws"
+  ],
+  "description": "知っておいて ほしい ことが あると 鳴る 音や 声。パイロットが 早めに 気づいて、あわてずに たしかめる ための 合図です。"
+ },
+ {
+  "id": "ke-nenryopump",
+  "name": "燃料ポンプ",
+  "reading": "ねんりょうぽんぷ",
+  "journey": "keiki",
+  "category": "燃料と電気",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛽",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-nenryo",
+   "ke-kyuyu"
+  ],
+  "description": "タンクの 燃料を エンジンへ 送る ポンプ。大きな 飛行機では いくつも あり、1つが 止まっても ほかで 送れます。"
+ },
+ {
+  "id": "ke-yellowarc",
+  "name": "イエローアーク",
+  "reading": "いえろーあーく",
+  "journey": "keiki",
+  "category": "速度と高度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "keiki:sokudo",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-greenarc",
+   "ke-redline"
+  ],
+  "description": "速度計の 黄色い 帯。空気が おだやかな ときだけ 使ってよい 速さの はんいで、ゆれる ときは 入らない ように します。"
+ },
+ {
+  "id": "ke-yuon",
+  "name": "油温計",
+  "reading": "ゆおんけい",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-yuatsu",
+   "ke-enginekeiki"
+  ],
+  "description": "エンジンの オイルの 温度を 示す 計器。オイルが 熱く なりすぎない ように 見守ります。"
+ },
+ {
+  "id": "ke-yuatsu",
+  "name": "油圧計",
+  "reading": "ゆあつけい",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛢",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-yuon",
+   "ke-enginekeiki"
+  ],
+  "description": "エンジンの 中を まわる オイルの 圧力を 示す 計器。エンジンを かけたら すぐに たしかめる、大事な 計器です。"
+ },
+ {
+  "id": "ke-kyuki",
+  "name": "吸気圧力計",
+  "reading": "きゅうきあつりょくけい",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎚",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-teisoku",
+   "ke-kakyuki"
+  ],
+  "description": "エンジンが 吸う 空気の 圧力を 示す 計器(マニホールド圧力計)。定速プロペラの 飛行機では、エンジンの 力の めやすに なります。"
+ },
+ {
+  "id": "ke-pitotheater",
+  "name": "ピトーヒーター",
+  "reading": "ぴとーひーたー",
+  "journey": "keiki",
+  "category": "速度と高度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "keiki:pitot",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-pitot",
+   "ke-oat"
+  ],
+  "description": "ピトー管を 電気で 温めて、氷が つかない ように する しくみ。雲の 中や 寒い 空でも、速度計を 正しく 動かす ために 使います。"
+ },
+ {
+  "id": "ke-daitai",
+  "name": "代替静圧源",
+  "reading": "だいたいせいあつげん",
+  "journey": "keiki",
+  "category": "速度と高度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕳",
+  "mapNode": "keiki:shoko",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-seiatsuko",
+   "ke-seiatsu"
+  ],
+  "description": "外の 静圧孔が つまった ときに、かわりに 機内から 静圧を とる しくみ。切りかえると、計器の 数字が 少し 変わる ことが あります。"
+ },
+ {
+  "id": "ke-denki",
+  "name": "電気系統",
+  "reading": "でんきけいとう",
+  "journey": "keiki",
+  "category": "燃料と電気",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "keiki:glass",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-hatsudenki",
+   "ke-battery"
+  ],
+  "description": "発電機・バッテリー・電線・スイッチなど、電気を 作って くばる しくみ ぜんたい。大きな 飛行機では 道を いくつも 用意して、1つが 止まっても 困らない ように しています。"
+ },
+ {
+  "id": "ke-yuatsukeito",
+  "name": "油圧系統",
+  "reading": "ゆあつけいとう",
+  "journey": "keiki",
+  "category": "画面と自動操縦",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛢",
+  "mapNode": "keiki:auto",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-denki",
+   "ke-autopilot"
+  ],
+  "description": "油の 圧力で、大きな 舵・脚・ブレーキなどを 動かす しくみ。大きな 飛行機では 力が いるので これを 使い、系統を いくつも 用意しています。"
+ },
+ {
+  "id": "ke-cylinder",
+  "name": "シリンダー",
+  "reading": "しりんだー",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-piston",
+   "ke-plug"
+  ],
+  "description": "ピストンが 往復する 筒の 形の 部屋。この 中で 燃料と 空気が 燃えます。小さな 飛行機の エンジンは、冷やしやすい ように シリンダーが 左右に 向かい合う 形が 多いです。"
+ },
+ {
+  "id": "ke-piston",
+  "name": "ピストン",
+  "reading": "ぴすとん",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-cylinder",
+   "ke-crank"
+  ],
+  "description": "シリンダーの 中を 往復する 部品。燃えた ガスに 押されて 動き、その 動きが クランク軸で 回る 力に 変わります。"
+ },
+ {
+  "id": "ke-crank",
+  "name": "クランク軸",
+  "reading": "くらんくじく",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-piston",
+   "ke-reciprocating"
+  ],
+  "description": "ピストンの 往復を 回る 動きに 変える 軸。小さな 飛行機では、この 軸に プロペラが つながっています。"
+ },
+ {
+  "id": "ke-kakyuki",
+  "name": "過給機(ターボチャージャー)",
+  "reading": "かきゅうき",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-kyuki",
+   "ke-reciprocating"
+  ],
+  "description": "エンジンに 入る 空気を 押しこんで ふやす 装置。空気の うすい 高い 空でも、エンジンの 力を たもちやすく なります。"
+ },
+ {
+  "id": "ke-machkei",
+  "name": "マッハ計",
+  "reading": "まっはけい",
+  "journey": "keiki",
+  "category": "速度と高度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏎",
+  "mapNode": "keiki:sokudo",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-tas",
+   "ke-sokudokei"
+  ],
+  "description": "音の 速さに くらべて 何倍で 飛んでいるかを 示す 計器。高い 空を 速く 飛ぶ 旅客機では、マッハ数で 速さを 決める ことが 多いです。"
+ },
+ {
+  "id": "ke-octane",
+  "name": "オクタン価",
+  "reading": "おくたんか",
+  "journey": "keiki",
+  "category": "燃料と電気",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛽",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-avgas",
+   "ke-detonation"
+  ],
+  "description": "ガソリンが 異常燃焼(ノッキング)を どれだけ おこしにくいかを 表す 数字。エンジンに 合った 数字の 燃料を 使う ことが 大切です。"
+ },
+ {
+  "id": "ke-turboshaft",
+  "name": "ターボシャフト",
+  "reading": "たーぼしゃふと",
+  "journey": "keiki",
+  "category": "ジェットエンジン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚁",
+  "mapNode": "keiki:jet",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-rotor",
+   "ke-turboprop"
+  ],
+  "description": "タービンの 回る 力を 軸から 取り出す エンジン。ヘリコプターの ローターを 回す ために よく 使われます。"
+ },
+ {
+  "id": "ke-carbice",
+  "name": "気化器アイシング",
+  "reading": "きかきあいしんぐ",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-kikaki",
+   "ke-kongohi"
+  ],
+  "description": "気化器の 中で 空気が 冷えて 氷が つく こと。外が 暖かい 日でも しめった 空気なら おきる ことが あり、温める しくみ(キャブレターヒート)で ふせぎます。"
+ },
+ {
+  "id": "ke-detonation",
+  "name": "デトネーション",
+  "reading": "でとねーしょん",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-octane",
+   "ke-preignition"
+  ],
+  "description": "シリンダーの 中で 燃料と 空気が、ふつうの 燃えかたではなく 一度に はげしく 燃える 異常燃焼。正しい 燃料と 混合比を 守る ことで ふせぎます。"
+ },
+ {
+  "id": "ke-preignition",
+  "name": "プレイグニッション",
+  "reading": "ぷれいぐにっしょん",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-detonation",
+   "ke-plug"
+  ],
+  "description": "点火プラグが 火花を 出す 前に、熱く なった 部分から 早く 火が ついて しまう 異常燃焼。エンジンを 熱く しすぎない ことで ふせぎます。"
+ },
+ {
+  "id": "ke-governor",
+  "name": "プロペラガバナー",
+  "reading": "ぷろぺらがばなー",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-teisoku",
+   "ke-kahen"
+  ],
+  "description": "定速プロペラの 回転数を 一定に たもつ ため、羽根の 角度を 自動で 変える 装置。"
+ },
+ {
+  "id": "ke-feathering",
+  "name": "フェザリング",
+  "reading": "ふぇざりんぐ",
+  "journey": "keiki",
+  "category": "ピストン・プロペラ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "keiki:prop",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-kahen",
+   "ke-governor"
+  ],
+  "description": "止めた エンジンの プロペラの 羽根を、うすい 面が 風の 向きに そろう ように 回す こと。空気の じゃまを 小さく して、のこりの エンジンで なめらかに 飛べる ように します。"
+ },
+ {
+  "id": "ke-autoland",
+  "name": "オートランド",
+  "reading": "おーとらんど",
+  "journey": "keiki",
+  "category": "画面と自動操縦",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛬",
+  "mapNode": "keiki:auto",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-autopilot",
+   "ke-denpakodo"
+  ],
+  "description": "着陸まで 自動で 行う しくみ。霧で 前が 見えにくい ときでも、地上の 電波と 機体の 計器を 使って 安全に 着陸できます。パイロットは その あいだも ずっと 見守っています。"
+ },
+ {
+  "id": "ke-afterburner",
+  "name": "アフターバーナー",
+  "reading": "あふたーばーなー",
+  "journey": "keiki",
+  "category": "ジェットエンジン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "keiki:jet",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-nozzle",
+   "ke-ramjet"
+  ],
+  "description": "ジェットエンジンの 出口の 手前で もう一度 燃料を 燃やし、さらに 大きな 力を 出す しくみ。燃料を たくさん 使うので、おもに 戦闘機が 使います。"
+ },
+ {
+  "id": "ke-ramjet",
+  "name": "ラムジェット",
+  "reading": "らむじぇっと",
+  "journey": "keiki",
+  "category": "ジェットエンジン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "keiki:jet",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-afterburner",
+   "ke-asshukuki"
+  ],
+  "description": "圧縮機を もたず、速く 進む 勢いで 空気を 縮める ジェットエンジン。止まった ままでは 動かせないので、ほかの 力で 速く なってから 使います。"
+ },
+ {
+  "id": "ke-compstall",
+  "name": "コンプレッサーストール",
+  "reading": "こんぷれっさーすとーる",
+  "journey": "keiki",
+  "category": "ジェットエンジン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "keiki:jet",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-asshukuki",
+   "ke-fadec"
+  ],
+  "description": "圧縮機の 羽根で 空気の 流れが みだれ、うまく 縮められなく なる こと。エンジンの 調節や 空気の 入れかたの くふうで、おきにくく しています。"
+ },
+ {
+  "id": "ke-gpws",
+  "name": "対地接近警報装置",
+  "reading": "たいちせっきんけいほうそうち",
+  "journey": "keiki",
+  "category": "画面と自動操縦",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "keiki:auto",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-denpakodo",
+   "ke-keihoon"
+  ],
+  "description": "地面や 山に 近づきすぎる 前に、声で 知らせる 装置。地形の データや 電波高度計を 使い、早めに 高さを とる ように 教えてくれます。"
+ },
+ {
+  "id": "ke-tcas",
+  "name": "TCAS(空中衝突防止装置)",
+  "reading": "てぃーきゃす",
+  "journey": "keiki",
+  "category": "画面と自動操縦",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "keiki:auto",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-gpws",
+   "ke-keihoon"
+  ],
+  "description": "近くの 飛行機の 位置を 画面に 出し、近づきそうな ときは 上がるか 下がるかを 声で 教える 装置。相手の 機体とも 通信して、べつべつの 向きを 教えます。"
+ },
+ {
+  "id": "ke-vnav",
+  "name": "VNAV",
+  "reading": "ぶいなぶ",
+  "journey": "keiki",
+  "category": "画面と自動操縦",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "keiki:shoko",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-lnav",
+   "ke-fms"
+  ],
+  "description": "FMS が 計算した 高さの 道すじに そって、上がったり 下がったり する しくみ。"
+ },
+ {
+  "id": "ke-lnav",
+  "name": "LNAV",
+  "reading": "えるなぶ",
+  "journey": "keiki",
+  "category": "画面と自動操縦",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "keiki:auto",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-vnav",
+   "ke-fms"
+  ],
+  "description": "FMS に 入れた 道すじに そって、左右の 向きを 自動で 合わせる しくみ。"
+ },
+ {
+  "id": "ke-standby",
+  "name": "スタンバイ計器",
+  "reading": "すたんばいけいき",
+  "journey": "keiki",
+  "category": "基本の計器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎛",
+  "mapNode": "keiki:shisei",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-shisei",
+   "ke-glass"
+  ],
+  "description": "大きな 画面とは 別に 置かれた 小さな 予備の 計器。姿勢・速さ・高さを 示し、別の 電気で 動くので、いつでも たよれます。"
+ },
+ {
+  "id": "ke-apparent",
+  "name": "見かけの偏位",
+  "reading": "みかけのへんい",
+  "journey": "keiki",
+  "category": "ジャイロ・コンパス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "keiki:gyro",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ke-gosei",
+   "ke-teishingi"
+  ],
+  "description": "ジャイロは 宇宙に 対して 向きを たもつので、回る 地球の 上では 少しずつ ずれて 見える こと。定針儀を ときどき 合わせなおす 理由の 1つです。"
+ }
+]

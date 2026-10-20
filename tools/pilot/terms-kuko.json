@@ -1,0 +1,1222 @@
+[
+ {
+  "id": "ku-kuko",
+  "name": "空港",
+  "reading": "くうこう",
+  "journey": "kuko",
+  "category": "空港の 建物",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛫",
+  "mapNode": "kuko:terminal",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-kassoro",
+   "ku-terminal"
+  ],
+  "description": "飛行機が 離陸・着陸し、人や 荷物が 乗りおりする ための 場所です。滑走路・誘導路・ターミナル・管制塔 などが そろって います。"
+ },
+ {
+  "id": "ku-kassoro",
+  "name": "滑走路",
+  "reading": "かっそうろ",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛣",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-bango",
+   "ku-ririku"
+  ],
+  "description": "飛行機が 離陸や 着陸の ときに 走る、長くて まっすぐな 道です。大きな 空港では 長さ 3000メートル ほどの ものも あります。"
+ },
+ {
+  "id": "ku-yudoro",
+  "name": "誘導路",
+  "reading": "ゆうどうろ",
+  "journey": "kuko",
+  "category": "誘導路と エプロン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "➰",
+  "mapNode": "kuko:yudoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-kassoro",
+   "ku-apron"
+  ],
+  "description": "滑走路と エプロンを つなぐ、飛行機が 地上を 走る ための 道です。アルファベットの 名前が つけられて います。"
+ },
+ {
+  "id": "ku-apron",
+  "name": "エプロン",
+  "reading": "えぷろん",
+  "journey": "kuko",
+  "category": "誘導路と エプロン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "kuko:apron",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-marshaller",
+   "ku-pushback"
+  ],
+  "description": "飛行機を とめて、乗りおりや 荷物の つみおろし、給油を する 広い 場所です。"
+ },
+ {
+  "id": "ku-tower",
+  "name": "管制塔",
+  "reading": "かんせいとう",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "kuko:tower",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-kanseikan",
+   "ku-towerkan"
+  ],
+  "description": "空港を 高い ところから 見わたす 塔で、管制官が 飛行機に 指示を 出します。滑走路や 誘導路が よく 見える 場所に 建って います。",
+  "kotoba": "離陸や 着陸の 許可は、管制塔と 無線で 交信して もらいます。"
+ },
+ {
+  "id": "ku-kanseikan",
+  "name": "管制官",
+  "reading": "かんせいかん",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎧",
+  "mapNode": "kuko:tower",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-tower",
+   "ku-radar"
+  ],
+  "description": "無線や レーダーで 飛行機に 道や 高さを 伝え、ぶつからない ように 間を とる しごとの 人です。",
+  "kotoba": "操縦士は 管制官の 指示を くりかえして 伝え、まちがいが ないかを 確かめます。"
+ },
+ {
+  "id": "ku-ririku",
+  "name": "離陸",
+  "reading": "りりく",
+  "journey": "kuko",
+  "category": "離陸",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛫",
+  "mapNode": "kuko:ririku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-kassoro",
+   "ku-yokokaze"
+  ],
+  "description": "飛行機が 滑走路を 走って 地面から はなれ、空へ 上がる ことです。へえ、向かい風に 向かって 離陸すると、短い 距離で 浮かび 上がれます。",
+  "kotoba": "管制塔から 離陸の 許可を もらって から、滑走路で 走りだします。"
+ },
+ {
+  "id": "ku-chakuriku",
+  "name": "着陸",
+  "reading": "ちゃくりく",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛬",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-touchdown",
+   "ku-goaround"
+  ],
+  "description": "空から おりて きて、滑走路に タイヤを つけて 止まる ことです。着陸も 向かい風の ほうが 短い 距離で 止まれます。",
+  "kotoba": "管制塔から 着陸の 許可を もらって から、滑走路に おります。"
+ },
+ {
+  "id": "ku-goaround",
+  "name": "ゴーアラウンド",
+  "reading": "ごーあらうんど",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-chakuriku",
+   "ku-final"
+  ],
+  "description": "着陸を やめて、もう一度 上がって やりなおす ことです。少しでも 気に なる ことが あれば えらぶ、安全の ための ふつうの 操作です。",
+  "kotoba": "操縦士が やりなおしを 管制に 伝え、管制は 次の 道や 高さを 指示します。"
+ },
+ {
+  "id": "ku-terminal",
+  "name": "ターミナル",
+  "reading": "たーみなる",
+  "journey": "kuko",
+  "category": "空港の 建物",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kuko:terminal",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-gate",
+   "ku-bridge"
+  ],
+  "description": "乗る 人が 手続きを したり 待ったり する 空港の 建物です。お店や 出発・到着の ロビーが あります。"
+ },
+ {
+  "id": "ku-gate",
+  "name": "搭乗口(ゲート)",
+  "reading": "とうじょうぐち",
+  "journey": "kuko",
+  "category": "空港の 建物",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "kuko:terminal",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-bridge",
+   "ku-terminal"
+  ],
+  "description": "飛行機に 乗る ための 入口で、番号が ついて います。出発の 少し 前から 乗りこみが はじまります。"
+ },
+ {
+  "id": "ku-bango",
+  "name": "滑走路の番号",
+  "reading": "かっそうろのばんごう",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-kassoro",
+   "ku-chushinsen"
+  ],
+  "description": "滑走路の はしに 大きく 書かれた 数字です。へえ、滑走路の 向きの 方位を 10で わった かずで、34なら 約340度の 方向を 向いて います。"
+ },
+ {
+  "id": "ku-three",
+  "name": "3レターコード",
+  "reading": "すりーれたーこーど",
+  "journey": "kuko",
+  "category": "空港の コード",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "kuko:code",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-four",
+   "ku-kuko"
+  ],
+  "description": "空港を 英字 3文字で あらわす 記号です。羽田は HND、成田は NRT、関西国際空港は KIX。荷物の タグにも 書かれて います。"
+ },
+ {
+  "id": "ku-marshaller",
+  "name": "マーシャラー",
+  "reading": "まーしゃらー",
+  "journey": "kuko",
+  "category": "誘導路と エプロン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🙆",
+  "mapNode": "kuko:apron",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-apron",
+   "ku-spot"
+  ],
+  "description": "エプロンで、両手の 合図で 飛行機を とめる 場所まで みちびく 人です。操縦席からは 見えにくい 地面の ようすを 教えて くれます。"
+ },
+ {
+  "id": "ku-pushback",
+  "name": "プッシュバック",
+  "reading": "ぷっしゅばっく",
+  "journey": "kuko",
+  "category": "誘導路と エプロン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "kuko:apron",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-towing",
+   "ku-apron"
+  ],
+  "description": "出発の とき、飛行機を 車で うしろへ おし出す ことです。へえ、旅客機は ふつう 自分で うしろへは 進みません。"
+ },
+ {
+  "id": "ku-bridge",
+  "name": "ボーディングブリッジ",
+  "reading": "ぼーでぃんぐぶりっじ",
+  "journey": "kuko",
+  "category": "空港の 建物",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌉",
+  "mapNode": "kuko:terminal",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-gate",
+   "ku-terminal"
+  ],
+  "description": "ターミナルから 飛行機の ドアまで のびる、屋根の ある 通路です。雨の 日でも ぬれずに 乗りおり できます。"
+ },
+ {
+  "id": "ku-hub",
+  "name": "ハブ空港",
+  "reading": "はぶくうこう",
+  "journey": "kuko",
+  "category": "空港の 建物",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "kuko:terminal",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-terminal",
+   "ku-slot"
+  ],
+  "description": "たくさんの 路線が 集まり、乗りかえの 中心に なる 空港です。車輪の 中心(ハブ)から 線が のびる 形に たとえた 呼び名です。"
+ },
+ {
+  "id": "ku-touchdown",
+  "name": "タッチダウン(接地)",
+  "reading": "たっちだうん",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-chakuriku",
+   "ku-settai"
+  ],
+  "description": "着陸で タイヤが 滑走路に ふれる しゅんかんの ことで、接地とも いいます。白く 塗られた 接地帯を めやすに おります。"
+ },
+ {
+  "id": "ku-hoan",
+  "name": "保安検査",
+  "reading": "ほあんけんさ",
+  "journey": "kuko",
+  "category": "空港の 建物",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛂",
+  "mapNode": "kuko:terminal",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-gate",
+   "ku-terminal"
+  ],
+  "description": "飛行機に 乗る 前に、持ちものや からだを 機械で 調べる 場所です。乗る 人 みんなが 安心して 旅を できるように します。"
+ },
+ {
+  "id": "ku-kassoroto",
+  "name": "滑走路灯",
+  "reading": "かっそうろとう",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-kassoro",
+   "ku-shinnyuto"
+  ],
+  "description": "滑走路の ふちや 中心などに ならぶ 灯りです。夜や 見えにくい 日でも、滑走路の 形と 向きが 分かります。"
+ },
+ {
+  "id": "ku-ground",
+  "name": "グランド(地上管制)",
+  "reading": "ぐらんど",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "kuko:ground",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-taxi",
+   "ku-delivery"
+  ],
+  "description": "地上管制の 呼び名です。エプロンや 誘導路を 走る 飛行機に、通る 道を 指示します。",
+  "kotoba": "動きだす 前に 呼びだし、どの 誘導路で 滑走路へ 行くかを 教えて もらいます。",
+  "acceptedReadings": [
+   "ぐらんど",
+   "ぐらうんど"
+  ]
+ },
+ {
+  "id": "ku-towerkan",
+  "name": "タワー(飛行場管制)",
+  "reading": "たわー",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "kuko:tower",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-ground",
+   "ku-approach"
+  ],
+  "description": "飛行場管制の 呼び名です。滑走路と その まわりの 空を うけもち、離陸と 着陸の 許可を 出します。",
+  "kotoba": "滑走路の 手前まで 来たら 呼びだし、離陸の 許可を 待ちます。"
+ },
+ {
+  "id": "ku-approach",
+  "name": "アプローチ(進入管制)",
+  "reading": "あぷろーち",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "kuko:approach",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-radar",
+   "ku-towerkan"
+  ],
+  "description": "進入管制の 呼び名です。空港の まわりの 空で、着陸に 向かう 飛行機を レーダーで 見て、順番に ならべます。",
+  "kotoba": "空港に 近づくと 呼びだし、高さと 向きの 指示を 受けて おりて いきます。"
+ },
+ {
+  "id": "ku-radar",
+  "name": "レーダー管制",
+  "reading": "れーだーかんせい",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📺",
+  "mapNode": "kuko:approach",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-approach",
+   "ku-ssr"
+  ],
+  "description": "レーダーの 画面で 飛行機の 位置を 見ながら 行う 管制です。雲の 中でも 飛行機どうしの 間を たもてます。",
+  "kotoba": "管制官は 画面を 見て 向きや 高さを 伝え、飛行機を 整理します。"
+ },
+ {
+  "id": "ku-delivery",
+  "name": "デリバリー(管制承認の伝達)",
+  "reading": "でりばりー",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "kuko:ground",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-ground",
+   "ku-kanseikan"
+  ],
+  "description": "出発の 前に、飛ぶ 道と 高さの 承認を 伝える 担当です。大きな 空港に いて、動きだす 前に いちばん はじめに 呼びだします。",
+  "kotoba": "出発の 前に 呼びだし、承認された 飛行の 道を 受けとって 書きとめます。"
+ },
+ {
+  "id": "ku-pattern",
+  "name": "場周経路(トラフィックパターン)",
+  "reading": "じょうしゅうけいろ",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-downwind",
+   "ku-final"
+  ],
+  "description": "空港の まわりを 四角く まわる、着陸の ための 決まった 道すじです。小さな 飛行機の 練習で よく 使います。",
+  "kotoba": "管制は「いま パターンの どの 辺に いるか」を 聞いて 順番を 決めます。"
+ },
+ {
+  "id": "ku-downwind",
+  "name": "ダウンウインド",
+  "reading": "だうんういんど",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-pattern",
+   "ku-base"
+  ],
+  "description": "場周経路で、滑走路と 平行に、着陸と 反対の 向きへ 飛ぶ 辺です。ここで 着陸の 準備を 整えます。",
+  "kotoba": "この 辺に 入ったら 位置を 管制に 伝え、着陸の 順番を 教えて もらいます。"
+ },
+ {
+  "id": "ku-base",
+  "name": "ベースレグ",
+  "reading": "べーすれぐ",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-downwind",
+   "ku-final"
+  ],
+  "description": "場周経路で、滑走路に 対して 横向きに 飛ぶ 辺です。ここから 曲がると 最後の 直線に 入ります。",
+  "kotoba": "管制は この 辺で 曲がる 時を 指示して、前の 機との 間を ととのえます。"
+ },
+ {
+  "id": "ku-final",
+  "name": "ファイナル",
+  "reading": "ふぁいなる",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-base",
+   "ku-papi"
+  ],
+  "description": "着陸の 直前、滑走路に まっすぐ 向かって おりる 最後の 直線です。",
+  "kotoba": "この 直線に 入ると 位置を 伝え、着陸の 許可を もらいます。"
+ },
+ {
+  "id": "ku-crosswind",
+  "name": "クロスウインド(レグ)",
+  "reading": "くろすういんど",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↗️",
+  "mapNode": "kuko:ririku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-pattern",
+   "ku-downwind"
+  ],
+  "description": "場周経路で、離陸した あと 滑走路に 対して 横向きに 飛ぶ 辺です。ここから ダウンウインドへ つながります。",
+  "kotoba": "パターンを まわる 機は、この 辺の 位置も 管制に 伝えます。"
+ },
+ {
+  "id": "ku-yokokaze",
+  "name": "横風",
+  "reading": "よこかぜ",
+  "journey": "kuko",
+  "category": "離陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "kuko:ririku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-fukinagashi",
+   "ku-ririku"
+  ],
+  "description": "滑走路に 対して 横から ふく 風です。機体が 流されない ように 向きを 合わせ、強すぎる ときは 別の 滑走路を 使います。"
+ },
+ {
+  "id": "ku-holding",
+  "name": "ホールディング(空中待機)",
+  "reading": "ほーるでぃんぐ",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "kuko:matsu",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-approach",
+   "ku-kankakukansei"
+  ],
+  "description": "空港が 混みあう ときなどに、決まった 場所で 競走の トラックの ような 形を えがいて 空中で 待つ ことです。順番が 来たら 着陸に 向かいます。",
+  "kotoba": "管制から 待つ 場所と 高さ、待つ 時間の めやすを 伝えられます。"
+ },
+ {
+  "id": "ku-touchandgo",
+  "name": "タッチアンドゴー",
+  "reading": "たっちあんどごー",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-chakuriku",
+   "ku-pattern"
+  ],
+  "description": "着陸して タイヤが ついたら、止まらずに そのまま また 離陸する 練習です。短い 時間で 何回も 着陸の 練習が できます。",
+  "kotoba": "練習の 機は 着陸の 許可と あわせて、この 練習を する ことを 伝えます。"
+ },
+ {
+  "id": "ku-teishiichi",
+  "name": "滑走路停止位置",
+  "reading": "かっそうろていしいち",
+  "journey": "kuko",
+  "category": "誘導路と エプロン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "kuko:yudoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-yudoro",
+   "ku-towerkan"
+  ],
+  "description": "誘導路から 滑走路に 入る 手前の、止まって 待つ ための 線です。黄色い 線が ならび、許可が あるまで こえません。",
+  "kotoba": "管制が「この 線の 手前で 待つ」ように 言えば、そこで 止まって 待ちます。"
+ },
+ {
+  "id": "ku-shinnyuto",
+  "name": "進入灯",
+  "reading": "しんにゅうとう",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-papi",
+   "ku-kassoroto"
+  ],
+  "description": "滑走路の 手前に ならぶ 灯りの 列です。雲から 出た ときに、滑走路の 場所と 向きを すぐに 見つけられます。"
+ },
+ {
+  "id": "ku-papi",
+  "name": "PAPI(進入角指示灯)",
+  "reading": "ぱぴ",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "kuko:chakuriku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-final",
+   "ku-shinnyuto"
+  ],
+  "description": "滑走路の よこに ならぶ 4つの 灯りで、おりる 角度を 教えます。白 2つ・赤 2つに 見えれば 正しい 角度です。"
+ },
+ {
+  "id": "ku-chushinsen",
+  "name": "滑走路中心線",
+  "reading": "かっそうろちゅうしんせん",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-kassoro",
+   "ku-settai"
+  ],
+  "description": "滑走路の まん中に ひかれた 白い 線です。離陸や 着陸で、この 線に 合わせて まっすぐ 走ります。"
+ },
+ {
+  "id": "ku-settai",
+  "name": "接地帯",
+  "reading": "せっちたい",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "▬",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-touchdown",
+   "ku-chushinsen"
+  ],
+  "description": "滑走路の はじめの 部分で、タイヤを つける めやすの 場所です。白い しま模様で しめされて います。"
+ },
+ {
+  "id": "ku-v1",
+  "name": "V1(離陸決定速度)",
+  "reading": "ぶいわん",
+  "journey": "kuko",
+  "category": "離陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "kuko:ririku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ku-vr",
+   "ku-kasokuteishi"
+  ],
+  "description": "離陸を やめるか 続けるかを 決める 速度です。これより 前なら 止まれ、これを こえたら 離陸を 続けると 前もって 決めて おきます。"
+ },
+ {
+  "id": "ku-vr",
+  "name": "VR(機首上げ速度)",
+  "reading": "ぶいあーる",
+  "journey": "kuko",
+  "category": "離陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⤴️",
+  "mapNode": "kuko:ririku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ku-v1",
+   "ku-v2"
+  ],
+  "description": "離陸の とき、機首を 上げはじめる 速度です。この 速度で 操縦かんを 引き、地面から はなれて いきます。"
+ },
+ {
+  "id": "ku-v2",
+  "name": "V2(安全離陸速度)",
+  "reading": "ぶいつー",
+  "journey": "kuko",
+  "category": "離陸",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "2️⃣",
+  "mapNode": "kuko:ririku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ku-vr",
+   "ku-ririkukyori"
+  ],
+  "description": "離陸の あと、片方の エンジンが 使えなくても 安全に 上がって いける 速度です。もしもの 時も ゆとりが あるよう 計算されて います。"
+ },
+ {
+  "id": "ku-four",
+  "name": "4レターコード",
+  "reading": "ふぉーれたーこーど",
+  "journey": "kuko",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔠",
+  "mapNode": "kuko:code",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-three",
+   "ku-kuko"
+  ],
+  "description": "ICAO が 決めた、空港を 英字 4文字で あらわす 記号です。羽田は RJTT、成田は RJAA。飛行計画などで 使います。"
+ },
+ {
+  "id": "ku-taxi",
+  "name": "タキシング(地上走行)",
+  "reading": "たきしんぐ",
+  "journey": "kuko",
+  "category": "誘導路と エプロン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚕",
+  "mapNode": "kuko:yudoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-yudoro",
+   "ku-ground"
+  ],
+  "description": "飛行機が 自分の 力で 地上を 走る ことで、地上走行とも いいます。誘導路を とおって 滑走路と スポットの 間を 行き来します。",
+  "kotoba": "地上管制から 走る 道を 指示され、その とおりに 進みます。"
+ },
+ {
+  "id": "ku-spot",
+  "name": "スポット",
+  "reading": "すぽっと",
+  "journey": "kuko",
+  "category": "誘導路と エプロン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "kuko:apron",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-apron",
+   "ku-marshaller"
+  ],
+  "description": "エプロンの 中で、1機ずつ とめる 場所の ことです。番号が ついて いて、到着の 前に 決められます。",
+  "kotoba": "着陸した あと、地上管制から とめる 場所の 番号を 伝えられます。"
+ },
+ {
+  "id": "ku-fukinagashi",
+  "name": "吹き流し",
+  "reading": "ふきながし",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎏",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-yokokaze",
+   "ku-kassoro"
+  ],
+  "description": "風の 向きと 強さを 見る ための 布の 筒です。風が 強いほど まっすぐ のび、ふいて くる 向きが 一目で 分かります。"
+ },
+ {
+  "id": "ku-kokurokansei",
+  "name": "航空路管制",
+  "reading": "こうくうろかんせい",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "kuko:approach",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-radar",
+   "ku-kankakukansei"
+  ],
+  "description": "空港から はなれた 空の 航空路を 飛ぶ 飛行機を、広い 範囲で 見守る 管制です。日本の 空を いくつかに 分けて うけもちます。",
+  "kotoba": "高い 空を 飛ぶ あいだは、この 管制と 交信して 高さや 道の 指示を 受けます。"
+ },
+ {
+  "id": "ku-terminalradar",
+  "name": "ターミナルレーダー管制",
+  "reading": "たーみなるれーだーかんせい",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖥",
+  "mapNode": "kuko:approach",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-approach",
+   "ku-radar"
+  ],
+  "description": "大きな 空港の まわりで、レーダーを 使って 出発と 到着の 飛行機を 整理する 管制です。",
+  "kotoba": "出発の あとや 到着の 前に 交信し、レーダーで 道を みちびいて もらいます。"
+ },
+ {
+  "id": "ku-asde",
+  "name": "空港面探知レーダー",
+  "reading": "くうこうめんたんちれーだー",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "kuko:ground",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-ground",
+   "ku-ssr"
+  ],
+  "description": "空港の 地面の 上を 動く 飛行機や 車を 見る ための レーダーです。夜や 霧の 日でも、地上の ようすが 画面で 分かります。"
+ },
+ {
+  "id": "ku-ssr",
+  "name": "二次レーダー(SSR)",
+  "reading": "にじれーだー",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "kuko:approach",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-ichiji",
+   "ku-radar"
+  ],
+  "description": "飛行機の 機械に 電波を 送り、返って きた 答えから 便名や 高さを 知る レーダーです。英語の 頭文字で SSR と いいます。"
+ },
+ {
+  "id": "ku-ichiji",
+  "name": "一次レーダー",
+  "reading": "いちじれーだー",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "kuko:approach",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-ssr",
+   "ku-radar"
+  ],
+  "description": "電波を 出して、飛行機に はね返って きた 電波で 位置を 見る レーダーです。飛行機の 機械が 答えなくても 位置が 分かります。"
+ },
+ {
+  "id": "ku-vector",
+  "name": "レーダーベクター",
+  "reading": "れーだーべくたー",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kuko:approach",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-radar",
+   "ku-approach"
+  ],
+  "description": "管制官が レーダーを 見ながら、飛ぶ 向きを 指示して 飛行機を みちびく ことです。",
+  "kotoba": "管制から 向きの 数字を 伝えられ、その 方位へ 向けて 飛びます。"
+ },
+ {
+  "id": "ku-kankakukansei",
+  "name": "管制間隔",
+  "reading": "かんせいかんかく",
+  "journey": "kuko",
+  "category": "管制",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kuko:approach",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-vector",
+   "ku-kohoranki"
+  ],
+  "description": "飛行機どうしが 近づきすぎない ように、前後・左右・上下に とる あいだの ことです。管制官は いつも この 間を 守って 指示を 出します。",
+  "kotoba": "管制は 間を 守る ために、速さや 高さの 指示を 出します。"
+ },
+ {
+  "id": "ku-kohoranki",
+  "name": "後方乱気流",
+  "reading": "こうほうらんきりゅう",
+  "journey": "kuko",
+  "category": "離陸",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "kuko:ririku",
+  "field": "航空気象",
+  "relatedTerms": [
+   "ku-kankakukansei",
+   "ku-v2"
+  ],
+  "description": "飛んで いる 飛行機の 翼の 先から 生まれる うずの 流れです。大きな 機体の すぐ うしろは さけ、間を あけて 離陸や 着陸を します。"
+ },
+ {
+  "id": "ku-kasokuteishi",
+  "name": "加速停止距離",
+  "reading": "かそくていしきょり",
+  "journey": "kuko",
+  "category": "離陸",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "kuko:ririku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ku-v1",
+   "ku-ririkukyori"
+  ],
+  "description": "離陸の とちゅうで やめると 決めた とき、止まるまでに 必要な 距離です。この 距離が 滑走路に おさまるかを 前もって 計算します。"
+ },
+ {
+  "id": "ku-ririkukyori",
+  "name": "離陸距離",
+  "reading": "りりくきょり",
+  "journey": "kuko",
+  "category": "離陸",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kuko:ririku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ku-kasokuteishi",
+   "ku-v2"
+  ],
+  "description": "走りはじめてから 決まった 高さに 上がるまでの 距離です。機体の 重さ・気温・風で かわるので、毎回 計算します。"
+ },
+ {
+  "id": "ku-chakurikukyori",
+  "name": "着陸距離",
+  "reading": "ちゃくりくきょり",
+  "journey": "kuko",
+  "category": "着陸",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kuko:chakuriku",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ku-masatsu",
+   "ku-touchdown"
+  ],
+  "description": "決まった 高さから おりて きて、止まるまでの 距離です。滑走路が ぬれて いると 長く なるので、天気も 見て 計算します。"
+ },
+ {
+  "id": "ku-masatsu",
+  "name": "摩擦係数",
+  "reading": "まさつけいすう",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "kuko:kassoro",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ku-hydro",
+   "ku-chakurikukyori"
+  ],
+  "description": "タイヤと 滑走路の あいだの すべりにくさを かずで あらわした ものです。雨や 雪の 日は 測って、ブレーキの ききかたの めやすに します。"
+ },
+ {
+  "id": "ku-hydro",
+  "name": "ハイドロプレーニング",
+  "reading": "はいどろぷれーにんぐ",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kuko:kassoro",
+  "field": "航空工学",
+  "relatedTerms": [
+   "ku-grooving",
+   "ku-masatsu"
+  ],
+  "description": "滑走路に たまった 水の 膜に タイヤが 乗って、すべりやすく なる ことです。滑走路に 細い みぞを 作って、水を にがして ふせぎます。"
+ },
+ {
+  "id": "ku-grooving",
+  "name": "グルービング",
+  "reading": "ぐるーびんぐ",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-hydro",
+   "ku-masatsu"
+  ],
+  "description": "滑走路の 表面に、横向きの 細い みぞを たくさん 刻む ことです。雨水が みぞから ぬけて、タイヤが しっかり 地面を つかめます。"
+ },
+ {
+  "id": "ku-kasotai",
+  "name": "過走帯(オーバーラン)",
+  "reading": "かそうたい",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-resa",
+   "ku-kassoro"
+  ],
+  "description": "滑走路の はしの 先に つづく、舗装された 部分です。止まるのが 少し 長く なった ときの ゆとりに なります。"
+ },
+ {
+  "id": "ku-resa",
+  "name": "滑走路端安全区域(RESA)",
+  "reading": "かっそうろたんあんぜんくいき",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟩",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-kasotai",
+   "ku-kassoro"
+  ],
+  "description": "滑走路の 先に もうけた、平らで ひろい 区域です。万一 滑走路から はみ出しても、安全に 止まれる ように 作られて います。"
+ },
+ {
+  "id": "ku-kosokudasshutsu",
+  "name": "高速脱出誘導路",
+  "reading": "こうそくだっしゅつゆうどうろ",
+  "journey": "kuko",
+  "category": "誘導路と エプロン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↘️",
+  "mapNode": "kuko:yudoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-yudoro",
+   "ku-chakurikukyori"
+  ],
+  "description": "滑走路から 斜めに 分かれる 誘導路です。着陸した 機が 速めの 速度の まま 出られ、次の 機が 早く 滑走路を 使えます。"
+ },
+ {
+  "id": "ku-deicing",
+  "name": "ディアイシング(除氷)",
+  "reading": "でぃあいしんぐ",
+  "journey": "kuko",
+  "category": "地上の しごと",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "kuko:chijo",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-groundhandling",
+   "ku-terminal"
+  ],
+  "description": "雪や 霜を 機体から とりのぞく 作業です。翼の 形を きれいに たもち、ちゃんと 揚力が 出るように します。"
+ },
+ {
+  "id": "ku-slot",
+  "name": "発着枠(スロット)",
+  "reading": "はっちゃくわく",
+  "journey": "kuko",
+  "category": "空港の 建物",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕘",
+  "mapNode": "kuko:terminal",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-unyojikan",
+   "ku-hub"
+  ],
+  "description": "混みあう 空港で、決められた 時間に 離陸や 着陸が できる わくの ことです。航空会社は この わくの 中で 便を 組みます。"
+ },
+ {
+  "id": "ku-unyojikan",
+  "name": "運用時間",
+  "reading": "うんようじかん",
+  "journey": "kuko",
+  "category": "空港の 建物",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕰",
+  "mapNode": "kuko:terminal",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-slot",
+   "ku-kuko"
+  ],
+  "description": "空港が 飛行機の 離陸や 着陸を 受けつける 時間です。まわりの くらしに 合わせて 決まり、24時間 使える 空港も あります。"
+ },
+ {
+  "id": "ku-rampcontrol",
+  "name": "ランプコントロール",
+  "reading": "らんぷこんとろーる",
+  "journey": "kuko",
+  "category": "誘導路と エプロン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "kuko:apron",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-spot",
+   "ku-ground"
+  ],
+  "description": "エプロンの 中で、飛行機の 動きを 見守り 指示を 出す しごとです。空港や 航空会社の 人が うけもちます。",
+  "kotoba": "エプロンを 動く ときは、ここと 交信して スポットへの 出入りを 確かめます。"
+ },
+ {
+  "id": "ku-groundhandling",
+  "name": "グランドハンドリング",
+  "reading": "ぐらんどはんどりんぐ",
+  "journey": "kuko",
+  "category": "地上の しごと",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧳",
+  "mapNode": "kuko:chijo",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-towing",
+   "ku-deicing"
+  ],
+  "description": "地上で 飛行機を 支える しごと ぜんぶの ことです。荷物の つみおろし・誘導・給油の 手伝い・機内の そうじ などが あります。"
+ },
+ {
+  "id": "ku-towing",
+  "name": "トーイングカー",
+  "reading": "とーいんぐかー",
+  "journey": "kuko",
+  "category": "地上の しごと",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚜",
+  "mapNode": "kuko:chijo",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-pushback",
+   "ku-groundhandling"
+  ],
+  "description": "飛行機を おしたり 引いたり する、背の ひくい 力もちの 車です。プッシュバックや 機体の 移動に 使います。"
+ },
+ {
+  "id": "ku-intersection",
+  "name": "インターセクション離陸",
+  "reading": "いんたーせくしょんりりく",
+  "journey": "kuko",
+  "category": "離陸",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "kuko:ririku",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-kassoro",
+   "ku-ririkukyori"
+  ],
+  "description": "滑走路の はしでは なく、とちゅうの 誘導路から 入って 離陸する ことです。距離が じゅうぶん 足りる ときに 使い、時間を 短く できます。",
+  "kotoba": "管制から とちゅうの 誘導路から 入るよう 言われたら、残りの 距離を 確かめます。"
+ },
+ {
+  "id": "ku-heni",
+  "name": "変位末端",
+  "reading": "へんいまったん",
+  "journey": "kuko",
+  "category": "滑走路",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kuko:kassoro",
+  "field": "空港・管制",
+  "relatedTerms": [
+   "ku-settai",
+   "ku-bango"
+  ],
+  "description": "滑走路の 着陸の はじまりを、はしより 奥に ずらした 位置です。手前の 部分は 白い 矢印で しめされ、離陸には 使える ことも あります。"
+ }
+]

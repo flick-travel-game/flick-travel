@@ -1,0 +1,686 @@
+[
+ {
+  "id": "te-ame",
+  "name": "雨",
+  "reading": "あめ",
+  "journey": "tenki",
+  "category": "雲",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "tenki:kumochu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-ransoun",
+   "te-yuki"
+  ],
+  "description": "雲の 中の 水や 氷の つぶが 大きく なって、ふってくる もの。強い 雨では 前が 見えにくく なり、滑走路も すべりやすく なります。"
+ },
+ {
+  "id": "te-yuki",
+  "name": "雪",
+  "reading": "ゆき",
+  "journey": "tenki",
+  "category": "雲",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "tenki:kumochu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-ame",
+   "te-chakuhyo"
+  ],
+  "description": "雲の 中で できた 氷の 結晶が、とけずに ふってくる もの。雪の 日は 滑走路の 雪かきや、機体に つもった 雪を とる 作業が 行われます。"
+ },
+ {
+  "id": "te-hare",
+  "name": "晴れ",
+  "reading": "はれ",
+  "journey": "tenki",
+  "category": "天気の報告",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "tenki:hokoku",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-unryo",
+   "te-kokiatsu"
+  ],
+  "description": "雲が 少ない 天気。日本の 天気予報では 空の 2〜8割が 雲でも「晴れ」で、1割 以下だと「快晴」です。"
+ },
+ {
+  "id": "te-niji",
+  "name": "虹",
+  "reading": "にじ",
+  "journey": "tenki",
+  "category": "雲",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌈",
+  "mapNode": "tenki:kumoka",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-ame",
+   "te-kumo"
+  ],
+  "description": "太陽の 光が 雨つぶの 中で 曲がって、色が 分かれて 見える もの。太陽を 背に した 向きに 見えます。空の 上からは まるい 輪の 虹が 見える ことも あります。"
+ },
+ {
+  "id": "te-tenkizu",
+  "name": "天気図",
+  "reading": "てんきず",
+  "journey": "tenki",
+  "category": "天気の報告",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "tenki:hokoku",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-toatsu",
+   "te-yoho"
+  ],
+  "description": "高気圧・低気圧・前線などを 地図に かいた 図。天気の 大きな 流れを 一目で つかむ ために 使います。"
+ },
+ {
+  "id": "te-eisei",
+  "name": "気象衛星",
+  "reading": "きしょうえいせい",
+  "journey": "tenki",
+  "category": "天気の報告",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛰",
+  "mapNode": "tenki:hokoku",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-tenkizu",
+   "te-yoho"
+  ],
+  "description": "宇宙から 雲の 様子を 写す 人工衛星。日本の 気象衛星は「ひまわり」と いい、雲の 動きを いつも 見ています。"
+ },
+ {
+  "id": "te-tsuyu",
+  "name": "梅雨",
+  "reading": "つゆ",
+  "journey": "tenki",
+  "category": "気圧と前線",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "tenki:zensen",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-teitai",
+   "te-kidan"
+  ],
+  "description": "6月ごろから 7月ごろに、雨や くもりの 日が 続く 時期。停滞前線の 梅雨前線が 日本の 近くに とどまる ために おきます。",
+  "acceptedReadings": [
+   "つゆ",
+   "ばいう"
+  ]
+ },
+ {
+  "id": "te-unkai",
+  "name": "雲海",
+  "reading": "うんかい",
+  "journey": "tenki",
+  "category": "雲",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌥",
+  "mapNode": "tenki:kumoka",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-sosekiun",
+   "te-soun"
+  ],
+  "description": "高い ところから 見下ろすと、雲が 海の ように 広がって 見える もの。飛行機の 窓から 見る 雲の 上の 景色は、乗る 人の 楽しみでも あります。"
+ },
+ {
+  "id": "te-kisetsufu",
+  "name": "季節風",
+  "reading": "きせつふう",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎐",
+  "mapNode": "tenki:kaze",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-umikaze",
+   "te-fuko"
+  ],
+  "description": "季節で 向きが 変わる 大きな 風。日本の 冬は 北西から、夏は 南東から ふく ことが 多いです。"
+ },
+ {
+  "id": "te-umikaze",
+  "name": "海風",
+  "reading": "うみかぜ",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "tenki:kaze",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-rikukaze",
+   "te-kisetsufu"
+  ],
+  "description": "昼間に 海から 陸へ ふく 風。陸の ほうが 早く 温まり、そこで 上がった 空気の あとに 海の 空気が 流れこみます。"
+ },
+ {
+  "id": "te-toatsu",
+  "name": "等圧線",
+  "reading": "とうあつせん",
+  "journey": "tenki",
+  "category": "気圧と前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "tenki:kiatsu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-tenkizu",
+   "te-kiatsu"
+  ],
+  "description": "天気図で 気圧が 同じ ところを 結んだ 線。線の 間が せまい ところほど 風が 強く ふきます。"
+ },
+ {
+  "id": "te-rikukaze",
+  "name": "陸風",
+  "reading": "りくかぜ",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "tenki:kaze",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-umikaze",
+   "te-yamakaze"
+  ],
+  "description": "夜に 陸から 海へ ふく 風。夜は 陸の ほうが 早く 冷える ために おきます。"
+ },
+ {
+  "id": "te-tanikaze",
+  "name": "谷風",
+  "reading": "たにかぜ",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "tenki:kaze",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-yamakaze",
+   "te-umikaze"
+  ],
+  "description": "昼間に 谷から 山の 上へ 向かって ふき上がる 風。日に 温められた 山の 斜面に そって、空気が のぼります。"
+ },
+ {
+  "id": "te-yamakaze",
+  "name": "山風",
+  "reading": "やまかぜ",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "tenki:kaze",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-tanikaze",
+   "te-rikukaze"
+  ],
+  "description": "夜に 山の 上から 谷へ ふきおりる 風。冷えた 斜面の 空気が 重く なって 流れおります。"
+ },
+ {
+  "id": "te-ontai",
+  "name": "温帯低気圧",
+  "reading": "おんたいていきあつ",
+  "journey": "tenki",
+  "category": "気圧と前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "tenki:kiatsu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-nettai",
+   "te-zensen"
+  ],
+  "description": "日本など 中くらいの 緯度で 生まれる 低気圧。冷たい 空気と 暖かい 空気の さかい目で 育ち、前線を ともないます。"
+ },
+ {
+  "id": "te-nettai",
+  "name": "熱帯低気圧",
+  "reading": "ねったいていきあつ",
+  "journey": "tenki",
+  "category": "気圧と前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "tenki:kiatsu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-taifu",
+   "te-ontai"
+  ],
+  "description": "暖かい 熱帯の 海で 生まれる 低気圧。前線は ありません。強く なると 台風に なります。"
+ },
+ {
+  "id": "te-kidan",
+  "name": "気団",
+  "reading": "きだん",
+  "journey": "tenki",
+  "category": "気圧と前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "tenki:zensen",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-zensen",
+   "te-tsuyu"
+  ],
+  "description": "広い はんいで 気温や しめりけが そろった、大きな 空気の かたまり。冬の シベリア気団・夏の 小笠原気団 などが、日本の 天気を 決めます。"
+ },
+ {
+  "id": "te-foehn",
+  "name": "フェーン現象",
+  "reading": "ふぇーんげんしょう",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "tenki:kaze",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-yamakaze",
+   "te-kanso"
+  ],
+  "description": "しめった 風が 山を こえて 反対がわに ふきおりる とき、かわいた 暖かい 風に なる こと。山の 向こうで 気温が 大きく 上がる ことが あります。"
+ },
+ {
+  "id": "te-moya",
+  "name": "もや",
+  "reading": "もや",
+  "journey": "tenki",
+  "category": "霧と見えかた",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌫",
+  "mapNode": "tenki:shitei",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-kiri",
+   "te-enmu"
+  ],
+  "description": "小さな 水の つぶで、少し かすんで 見える 状態。見通しが 1km 以上 ある ものを もや、1km 未満を 霧と 分けます。"
+ },
+ {
+  "id": "te-enmu",
+  "name": "煙霧",
+  "reading": "えんむ",
+  "journey": "tenki",
+  "category": "霧と見えかた",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌫",
+  "mapNode": "tenki:shitei",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-moya",
+   "te-gyakuten"
+  ],
+  "description": "かわいた ちりや けむりなどで、空が かすんで 見える 状態。水の つぶ ではない ところが、もやと ちがいます。"
+ },
+ {
+  "id": "te-shitsudo",
+  "name": "湿度",
+  "reading": "しつど",
+  "journey": "tenki",
+  "category": "霧と見えかた",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "tenki:shitei",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-roten",
+   "te-kiri"
+  ],
+  "description": "空気が どれくらい 水蒸気を ふくんでいるかの わりあい。気温が 下がると 湿度が 上がり、100% に 近づくと 霧や 雲が できます。"
+ },
+ {
+  "id": "te-toppu",
+  "name": "突風",
+  "reading": "とっぷう",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "tenki:kaze",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-fusoku",
+   "te-gustfront"
+  ],
+  "description": "急に 強く ふく 風。天気の 報告では、平均の 風速と いっしょに 突風の 強さも 書かれます。"
+ },
+ {
+  "id": "te-raiu",
+  "name": "雷雨",
+  "reading": "らいう",
+  "journey": "tenki",
+  "category": "積乱雲と雷",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛈",
+  "mapNode": "tenki:sekiran",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-kaminari",
+   "te-sekiranun"
+  ],
+  "description": "雷を ともなう 強い 雨。積乱雲の 下で おき、空港の 近くに あると、出発や 到着を 少し 待つ ことも あります。"
+ },
+ {
+  "id": "te-unryo",
+  "name": "雲量",
+  "reading": "うんりょう",
+  "journey": "tenki",
+  "category": "天気の報告",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "tenki:hokoku",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-ceiling",
+   "te-hare"
+  ],
+  "description": "空の どれくらいを 雲が おおっているかの 量。空の 報告では 空を 8つに 分けて 数え、少ない 順に FEW・SCT・BKN・OVC と 書きます。"
+ },
+ {
+  "id": "te-josho",
+  "name": "上昇気流",
+  "reading": "じょうしょうきりゅう",
+  "journey": "tenki",
+  "category": "ゆれと氷",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "tenki:ranki",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-kako",
+   "te-sekiun"
+  ],
+  "description": "上へ 向かう 空気の 流れ。雲を 作る もとで、グライダーは この 流れに のって 高さを かせぎます。"
+ },
+ {
+  "id": "te-zensengiri",
+  "name": "前線霧",
+  "reading": "ぜんせんぎり",
+  "journey": "tenki",
+  "category": "霧と見えかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌁",
+  "mapNode": "tenki:shitei",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-kiri",
+   "te-ondan"
+  ],
+  "description": "前線の 近くで、暖かい 雨が 冷たい 空気の 中に ふり、水蒸気が ふえて できる 霧。温暖前線の 前で できやすいです。"
+ },
+ {
+  "id": "te-kassho",
+  "name": "滑昇霧",
+  "reading": "かっしょうぎり",
+  "journey": "tenki",
+  "category": "霧と見えかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "tenki:shitei",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-kiri",
+   "te-tanikaze"
+  ],
+  "description": "しめった 空気が 山の 斜面を ゆっくり 上り、冷えて できる 霧。"
+ },
+ {
+  "id": "te-jokigiri",
+  "name": "蒸気霧",
+  "reading": "じょうきぎり",
+  "journey": "tenki",
+  "category": "霧と見えかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "tenki:shitei",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-kiri",
+   "te-iryugiri"
+  ],
+  "description": "冷たい 空気が、それより 暖かい 水面の 上に 流れて きて、湯気の ように 立ちのぼる 霧。冬の 北海道で 見られる「けあらし」も これです。"
+ },
+ {
+  "id": "te-tani",
+  "name": "気圧の谷",
+  "reading": "きあつのたに",
+  "journey": "tenki",
+  "category": "気圧と前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "tenki:kiatsu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-one",
+   "te-teikiatsu"
+  ],
+  "description": "天気図で、気圧の 低い ところが 谷の ように のびた 部分。ここが 近づくと 雲が ふえ、天気が くずれやすく なります。"
+ },
+ {
+  "id": "te-one",
+  "name": "気圧の尾根",
+  "reading": "きあつのおね",
+  "journey": "tenki",
+  "category": "気圧と前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "tenki:kiatsu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-tani",
+   "te-kokiatsu"
+  ],
+  "description": "天気図で、気圧の 高い ところが 尾根の ように のびた 部分。天気が よく なりやすい ところです。"
+ },
+ {
+  "id": "te-kanreiteiki",
+  "name": "寒冷低気圧",
+  "reading": "かんれいていきあつ",
+  "journey": "tenki",
+  "category": "気圧と前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "tenki:kiatsu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-tani",
+   "te-fuantei"
+  ],
+  "description": "上空に 冷たい 空気を もった 低気圧。上と 下の 気温の 差が 大きく なるので、積乱雲や 雷が おきやすく なります。"
+ },
+ {
+  "id": "te-suchi",
+  "name": "数値予報",
+  "reading": "すうちよほう",
+  "journey": "tenki",
+  "category": "天気の報告",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "tenki:hokoku",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-yoho",
+   "te-eisei"
+  ],
+  "description": "空気の 動きを 計算の 式に して、コンピューターで これからの 天気を 計算する 方法。今の 天気予報の もとに なっています。"
+ },
+ {
+  "id": "te-streak",
+  "name": "ジェットストリーク",
+  "reading": "じぇっとすとりーく",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "tenki:jetkiryu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-jet",
+   "te-enchoku"
+  ],
+  "description": "ジェット気流の 中でも、とくに 風が 強い 部分。まわりとの 風の 差が 大きいので、晴天乱気流が おきやすい ところです。"
+ },
+ {
+  "id": "te-hendo",
+  "name": "偏西風波動",
+  "reading": "へんせいふうはどう",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "tenki:jetkiryu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-henseifu",
+   "te-tani"
+  ],
+  "description": "偏西風が 南北に 大きく 波打って 流れる こと。波の 形が、高気圧や 低気圧の 動き、寒さや 暑さを 左右します。"
+ },
+ {
+  "id": "te-shearline",
+  "name": "シアライン",
+  "reading": "しあらいん",
+  "journey": "tenki",
+  "category": "気圧と前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "tenki:zensen",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-zensen",
+   "te-fuko"
+  ],
+  "description": "風の 向きや 強さが 大きく ちがう 空気が 出会う 線。前線と ちがって 気温の 差は 小さいですが、雲が できやすく なります。"
+ },
+ {
+  "id": "te-elmo",
+  "name": "セントエルモの火",
+  "reading": "せんとえるものひ",
+  "journey": "tenki",
+  "category": "積乱雲と雷",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "tenki:sekiran",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-kaminari",
+   "te-raiu"
+  ],
+  "description": "雷雲の 近くで、機体の 先や 窓に 青白い 光が 見える こと。空気中の 電気が 静かに 光る もので、心配 いりません。昔の 船乗りも マストの 先で 見ていました。"
+ },
+ {
+  "id": "te-blocking",
+  "name": "ブロッキング高気圧",
+  "reading": "ぶろっきんぐこうきあつ",
+  "journey": "tenki",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "tenki:jetkiryu",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-hendo",
+   "te-kokiatsu"
+  ],
+  "description": "偏西風の 流れを せき止める ように、同じ 場所に 長く とどまる 高気圧。同じ 天気が 何日も 続く もとに なります。"
+ },
+ {
+  "id": "te-kako",
+  "name": "下降気流",
+  "reading": "かこうきりゅう",
+  "journey": "tenki",
+  "category": "ゆれと氷",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "tenki:ranki",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-josho",
+   "te-downburst"
+  ],
+  "description": "下へ 向かう 空気の 流れ。空気が おりる ところでは 雲が 消えやすく、高気圧の まん中でも 見られます。"
+ },
+ {
+  "id": "te-gustfront",
+  "name": "ガストフロント",
+  "reading": "がすとふろんと",
+  "journey": "tenki",
+  "category": "積乱雲と雷",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "tenki:sekiran",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-downburst",
+   "te-toppu"
+  ],
+  "description": "積乱雲から ふき出した 冷たい 空気の 先っぽ。地面の 近くに 突風を 運び、雲から はなれた 場所まで とどく ことが あります。"
+ },
+ {
+  "id": "te-tairyusei",
+  "name": "対流性乱気流",
+  "reading": "たいりゅうせいらんきりゅう",
+  "journey": "tenki",
+  "category": "ゆれと氷",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫨",
+  "mapNode": "tenki:ranki",
+  "field": "航空気象",
+  "relatedTerms": [
+   "te-josho",
+   "te-kako"
+  ],
+  "description": "地面が 温められて できる 上下の 空気の 流れで おこる ゆれ。晴れた 夏の 昼間、低い 空で おきやすいです。"
+ }
+]

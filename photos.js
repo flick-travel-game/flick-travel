@@ -36922,5 +36922,925 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
   "page": "https://commons.wikimedia.org/wiki/File:80-channel_Solid_State_Logic_(SSL)_XL_9000_K_Series_Console_at_Audio_Mix_House,_Studio_B_(13430494534).jpg",
   "file": "File:80-channel Solid State Logic (SSL) XL 9000 K Series Console at Audio Mix House, Studio B (13430494534).jpg"
+ },
+ "pilot.ki-propeller": {
+  "src": "photo-pilot.ki-propeller.jpg",
+  "author": "Photographer’s Mate 2nd Class Michael Sandberg",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Propeller_EP-3E_1500x2100.jpg",
+  "file": "File:Propeller EP-3E 1500x2100.jpg"
+ },
+ "pilot.ki-shukyaku": {
+  "src": "photo-pilot.ki-shukyaku.jpg",
+  "author": "No machine-readable author provided. MichiK assumed (based o…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:747-Gear.jpg",
+  "file": "File:747-Gear.jpg"
+ },
+ "pilot.ki-koyokuki": {
+  "src": "photo-pilot.ki-koyokuki.jpg",
+  "author": "Steelpillow",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Monoplane_high.svg",
+  "file": "File:Monoplane high.svg"
+ },
+ "pilot.ki-teiyokuki": {
+  "src": "photo-pilot.ki-teiyokuki.jpg",
+  "author": "Steelpillow",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Monoplane_low.svg",
+  "file": "File:Monoplane low.svg"
+ },
+ "pilot.ki-hijoguchi": {
+  "src": "photo-pilot.ki-hijoguchi.jpg",
+  "author": "alerante, based on PDF linked above",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Emergency_Exit_ISO_Pictogram_(green).svg",
+  "file": "File:Emergency Exit ISO Pictogram (green).svg"
+ },
+ "pilot.ki-flybywire": {
+  "src": "photo-pilot.ki-flybywire.jpg",
+  "author": "Ralf Roletschek",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Airbus-319-cockpit.jpg",
+  "file": "File:Airbus-319-cockpit.jpg"
+ },
+ "pilot.ki-sidestick": {
+  "src": "photo-pilot.ki-sidestick.jpg",
+  "author": "Sugarcaddy (talk) (Uploads)",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:BoeingControlYokes.jpg",
+  "file": "File:BoeingControlYokes.jpg"
+ },
+ "pilot.ki-flaperon": {
+  "src": "photo-pilot.ki-flaperon.jpg",
+  "author": "Bruce C. Cooper (uploader)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Boeing_777_Wing_Flaperon_(Part_No._657_BB).jpg",
+  "file": "File:Boeing 777 Wing Flaperon (Part No. 657 BB).jpg"
+ },
+ "pilot.ke-shisei": {
+  "src": "photo-pilot.ke-shisei.jpg",
+  "author": "Photographer: Reddy & Garcia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:VMS_Artificial_Horizon.jpg",
+  "file": "File:VMS Artificial Horizon.jpg"
+ },
+ "pilot.ke-kodokei": {
+  "src": "photo-pilot.ke-kodokei.jpg",
+  "author": "Chopper",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Manifold_Pressure.jpg",
+  "file": "File:Manifold Pressure.jpg"
+ },
+ "pilot.ke-shokokei": {
+  "src": "photo-pilot.ke-shokokei.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cair-Xk10-vario.jpeg",
+  "file": "File:Cair-Xk10-vario.jpeg"
+ },
+ "pilot.ke-pitot": {
+  "src": "photo-pilot.ke-pitot.jpg",
+  "author": "Bernard de Go Mars",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Prandtl%27s_Pitot-static_tube,_old_and_new_form.png",
+  "file": "File:Prandtl's Pitot-static tube, old and new form.png"
+ },
+ "pilot.ke-glass": {
+  "src": "photo-pilot.ke-glass.jpg",
+  "author": "Naddsy",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Airbus_A380_cockpit.jpg",
+  "file": "File:Airbus A380 cockpit.jpg"
+ },
+ "pilot.ke-autopilot": {
+  "src": "photo-pilot.ke-autopilot.jpg",
+  "author": "Snowdog",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FMS_B747-cockpit.jpg",
+  "file": "File:FMS B747-cockpit.jpg"
+ },
+ "pilot.ke-jetengine": {
+  "src": "photo-pilot.ke-jetengine.jpg",
+  "author": "Kiefer. from Darmstadt , Germany",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kiefer_Lufthansa_Airbus_A320_D-AIZQ_(13315338774).jpg",
+  "file": "File:Kiefer Lufthansa Airbus A320 D-AIZQ (13315338774).jpg"
+ },
+ "pilot.ke-turbofan": {
+  "src": "photo-pilot.ke-turbofan.jpg",
+  "author": "Richard Wheeler (Zephyris)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Turbofan3_Labelled.gif",
+  "file": "File:Turbofan3 Labelled.gif"
+ },
+ "pilot.ke-kaitenkei": {
+  "src": "photo-pilot.ke-kaitenkei.jpg",
+  "author": "Berlin.karajan",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tachometer,_2007.JPG",
+  "file": "File:Tachometer, 2007.JPG"
+ },
+ "pilot.ke-taiki": {
+  "src": "photo-pilot.ke-taiki.jpg",
+  "author": "U.S. Federal Aviation Administration",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:FAA-8083-3A_Fig_12-1.PNG",
+  "file": "File:FAA-8083-3A Fig 12-1.PNG"
+ },
+ "pilot.ke-teishingi": {
+  "src": "photo-pilot.ke-teishingi.jpg",
+  "author": "The original uploader was Cleared as filed at English Wikipe…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:C172_heading_indicator.jpg",
+  "file": "File:C172 heading indicator.jpg"
+ },
+ "pilot.ke-shinku": {
+  "src": "photo-pilot.ke-shinku.jpg",
+  "author": "Graphic: Inductiveload Animation MichaelFrey (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roots_blower_-_2_lobes.gif",
+  "file": "File:Roots blower - 2 lobes.gif"
+ },
+ "pilot.ke-reciprocating": {
+  "src": "photo-pilot.ke-reciprocating.jpg",
+  "author": "User:Wapcaplet",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Four_stroke_engine_diagram.jpg",
+  "file": "File:Four stroke engine diagram.jpg"
+ },
+ "pilot.ke-magneto": {
+  "src": "photo-pilot.ke-magneto.jpg",
+  "author": "Renault",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Renault_190HP_magneto_fig11.jpg",
+  "file": "File:Renault 190HP magneto fig11.jpg"
+ },
+ "pilot.ke-turboprop": {
+  "src": "photo-pilot.ke-turboprop.jpg",
+  "author": "Original: Emoscopes Vector: M0tty",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Turboprop_operation-en.svg",
+  "file": "File:Turboprop operation-en.svg"
+ },
+ "pilot.ke-kishoradar": {
+  "src": "photo-pilot.ke-kishoradar.jpg",
+  "author": "Bidgee",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Berrimah-radar-darwin-nt.jpg",
+  "file": "File:Berrimah-radar-darwin-nt.jpg"
+ },
+ "pilot.ke-jetfuel": {
+  "src": "photo-pilot.ke-jetfuel.jpg",
+  "author": "Project Kei",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aviation_fuel_storage_tank_and_transportation_truck.jpg",
+  "file": "File:Aviation fuel storage tank and transportation truck.jpg"
+ },
+ "pilot.ke-irs": {
+  "src": "photo-pilot.ke-irs.jpg",
+  "author": "Sanjay Acharya",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Project_SPIRE_Inertial_Navigation_Control.jpg",
+  "file": "File:Project SPIRE Inertial Navigation Control.jpg"
+ },
+ "pilot.ke-saisa": {
+  "src": "photo-pilot.ke-saisa.jpg",
+  "author": "Lucas Vieira",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gyroscope_precession.gif",
+  "file": "File:Gyroscope precession.gif"
+ },
+ "pilot.ke-mitsudo": {
+  "src": "photo-pilot.ke-mitsudo.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Density_Altitude.png",
+  "file": "File:Density Altitude.png"
+ },
+ "pilot.ke-denpakodo": {
+  "src": "photo-pilot.ke-denpakodo.jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AERO_Friedrichshafen_2018,_Friedrichshafen_(1X7A4785).jpg",
+  "file": "File:AERO Friedrichshafen 2018, Friedrichshafen (1X7A4785).jpg"
+ },
+ "pilot.ke-bypass": {
+  "src": "photo-pilot.ke-bypass.jpg",
+  "author": "Richard Wheeler (Zephyris)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Turbofan3_Labelled.gif",
+  "file": "File:Turbofan3 Labelled.gif"
+ },
+ "pilot.ke-turbine": {
+  "src": "photo-pilot.ke-turbine.jpg",
+  "author": "Siemens Pressebild, http://www.siemens.com",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Dampfturbine_Laeufer01.jpg",
+  "file": "File:Dampfturbine Laeufer01.jpg"
+ },
+ "pilot.ke-reverser": {
+  "src": "photo-pilot.ke-reverser.jpg",
+  "author": "Pieter van Marion from Netherlands",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:F-GTAR_Air_France_(3698209485).jpg",
+  "file": "File:F-GTAR Air France (3698209485).jpg"
+ },
+ "pilot.ke-fadec": {
+  "src": "photo-pilot.ke-fadec.jpg",
+  "author": "Easaman",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:EEC-Piston-Eng.jpg",
+  "file": "File:EEC-Piston-Eng.jpg"
+ },
+ "pilot.ke-teisoku": {
+  "src": "photo-pilot.ke-teisoku.jpg",
+  "author": "Adrian Pingstone",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hercules.propeller.details.jpg",
+  "file": "File:Hercules.propeller.details.jpg"
+ },
+ "pilot.te-kumo": {
+  "src": "photo-pilot.te-kumo.jpg",
+  "author": "Glg",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Cumulus_cloud_above_Lechtaler_Alps_at_tannheim,_Austria.jpg",
+  "file": "File:Cumulus cloud above Lechtaler Alps at tannheim, Austria.jpg"
+ },
+ "pilot.te-sekiranun": {
+  "src": "photo-pilot.te-sekiranun.jpg",
+  "author": "Photo taken by Bidgee",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Wagga-Cumulonimbus.jpg",
+  "file": "File:Wagga-Cumulonimbus.jpg"
+ },
+ "pilot.te-kaminari": {
+  "src": "photo-pilot.te-kaminari.jpg",
+  "author": "Mircea Madau",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lightning_over_Oradea_Romania_3.jpg",
+  "file": "File:Lightning over Oradea Romania 3.jpg"
+ },
+ "pilot.te-taifu": {
+  "src": "photo-pilot.te-taifu.jpg",
+  "author": "NASA, LAADS Web, HDF File processed by Supportstorm",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Haiyan_2013-11-07_1345Z_(alternate).png",
+  "file": "File:Haiyan 2013-11-07 1345Z (alternate).png"
+ },
+ "pilot.te-kiri": {
+  "src": "photo-pilot.te-kiri.jpg",
+  "author": "Lukas Beck",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Naturpark_Siebengebirge_Petersberg_lub_2024-06-02_img01_Petersberg_Shuttle.jpg",
+  "file": "File:Naturpark Siebengebirge Petersberg lub 2024-06-02 img01 Petersberg Shuttle.jpg"
+ },
+ "pilot.te-teikiatsu": {
+  "src": "photo-pilot.te-teikiatsu.jpg",
+  "author": "NASA/GSFC, MODIS Rapid Response Team, Jacques Descloitres",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Low_pressure_system_over_Iceland.jpg",
+  "file": "File:Low pressure system over Iceland.jpg"
+ },
+ "pilot.te-kiatsu": {
+  "src": "photo-pilot.te-kiatsu.jpg",
+  "author": "James Petts from London, England",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Barometer_(6824817752).jpg",
+  "file": "File:Barometer (6824817752).jpg"
+ },
+ "pilot.te-jet": {
+  "src": "photo-pilot.te-jet.jpg",
+  "author": "Lyndon State College Meteorology",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jetstreamconfig.jpg",
+  "file": "File:Jetstreamconfig.jpg"
+ },
+ "pilot.te-henseifu": {
+  "src": "photo-pilot.te-henseifu.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 1.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Atmospheric_circulation_ja.png",
+  "file": "File:Atmospheric circulation ja.png"
+ },
+ "pilot.te-rankiryu": {
+  "src": "photo-pilot.te-rankiryu.jpg",
+  "author": "NOAA Photo Library, NOAA Central Library OAR/ERL/National Se…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Turbulent_gust_front_-_NOAA.jpg",
+  "file": "File:Turbulent gust front - NOAA.jpg"
+ },
+ "pilot.te-hikokigumo": {
+  "src": "photo-pilot.te-hikokigumo.jpg",
+  "author": "Cp9asngf",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korean_Air_Airbus_A380-800_with_contrail.JPG",
+  "file": "File:Korean Air Airbus A380-800 with contrail.JPG"
+ },
+ "pilot.te-kenun": {
+  "src": "photo-pilot.te-kenun.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cirrusclouds-Georgia-Oct1st.jpg",
+  "file": "File:Cirrusclouds-Georgia-Oct1st.jpg"
+ },
+ "pilot.te-sekiun": {
+  "src": "photo-pilot.te-sekiun.jpg",
+  "author": "User:Brosen",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Brosen_clouds_lake1.jpg",
+  "file": "File:Brosen clouds lake1.jpg"
+ },
+ "pilot.te-fuko": {
+  "src": "photo-pilot.te-fuko.jpg",
+  "author": "Nevit Dilmen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Wind_vane_05643.jpg",
+  "file": "File:Wind vane 05643.jpg"
+ },
+ "pilot.te-fusoku": {
+  "src": "photo-pilot.te-fusoku.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wind_speed_climatology.jpg",
+  "file": "File:Wind speed climatology.jpg"
+ },
+ "pilot.te-yoho": {
+  "src": "photo-pilot.te-yoho.jpg",
+  "author": "気象庁",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Weather_forecast_by_JMA_20230511.png",
+  "file": "File:Weather forecast by JMA 20230511.png"
+ },
+ "pilot.te-kanrei": {
+  "src": "photo-pilot.te-kanrei.jpg",
+  "author": "Shira2023",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%AF%92%E5%86%B7%E5%89%8D%E7%B7%9A%E3%81%AE%E9%9B%B2.png",
+  "file": "File:寒冷前線の雲.png"
+ },
+ "pilot.te-ondan": {
+  "src": "photo-pilot.te-ondan.jpg",
+  "author": "António Miguel de Campos - en:User:Tó campos",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nuvens_Fquente.jpg",
+  "file": "File:Nuvens Fquente.jpg"
+ },
+ "pilot.te-teitai": {
+  "src": "photo-pilot.te-teitai.jpg",
+  "author": "National Centers for Environmental Prediction",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:2020-03-14_Surface_Weather_Map_NOAA.png",
+  "file": "File:2020-03-14 Surface Weather Map NOAA.png"
+ },
+ "pilot.te-heisoku": {
+  "src": "photo-pilot.te-heisoku.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Warmfrontokklusion_en.png",
+  "file": "File:Warmfrontokklusion en.png"
+ },
+ "pilot.te-kensekiun": {
+  "src": "photo-pilot.te-kensekiun.jpg",
+  "author": "King of Hearts",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cirrocumulus_clouds_Thousand_Oaks_July_2010.jpg",
+  "file": "File:Cirrocumulus clouds Thousand Oaks July 2010.jpg"
+ },
+ "pilot.te-kensoun": {
+  "src": "photo-pilot.te-kensoun.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cirrostratus02.jpg",
+  "file": "File:Cirrostratus02.jpg"
+ },
+ "pilot.te-kosekiun": {
+  "src": "photo-pilot.te-kosekiun.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Altocumulus1.jpg",
+  "file": "File:Altocumulus1.jpg"
+ },
+ "pilot.te-kosoun": {
+  "src": "photo-pilot.te-kosoun.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Altostratus_with_sun_and_Cu_con.JPG",
+  "file": "File:Altostratus with sun and Cu con.JPG"
+ },
+ "pilot.te-ransoun": {
+  "src": "photo-pilot.te-ransoun.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ns1.jpg",
+  "file": "File:Ns1.jpg"
+ },
+ "pilot.te-sosekiun": {
+  "src": "photo-pilot.te-sosekiun.jpg",
+  "author": "image/photo was taken by Wikipedia and Wikimedia Commons use…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jezioro_Niegocin_w_okolicach_Gi%C5%BCycka_030.jpg",
+  "file": "File:Jezioro Niegocin w okolicach Giżycka 030.jpg"
+ },
+ "pilot.te-soun": {
+  "src": "photo-pilot.te-soun.jpg",
+  "author": "Famartin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2015-01-14_11_43_55_View_north_under_some_low_clouds_along_Nevada_State_Route_487_(Baker_Road)_north_of_Baker,_Nevada.JPG",
+  "file": "File:2015-01-14 11 43 55 View north under some low clouds along Nevada State Route 487 (Baker Road) north of Baker, Nevada.JPG"
+ },
+ "pilot.te-shitei": {
+  "src": "photo-pilot.te-shitei.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fog%26Sunny.jpg",
+  "file": "File:Fog&Sunny.jpg"
+ },
+ "pilot.te-untei": {
+  "src": "photo-pilot.te-untei.jpg",
+  "author": "Samoano",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:LesOcres.jpg",
+  "file": "File:LesOcres.jpg"
+ },
+ "pilot.te-windshear": {
+  "src": "photo-pilot.te-windshear.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cirrus_clouds2.jpg",
+  "file": "File:Cirrus clouds2.jpg"
+ },
+ "pilot.te-hyojun": {
+  "src": "photo-pilot.te-hyojun.jpg",
+  "author": "Cmglee",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Comparison_International_Standard_Atmosphere_space_diving.svg",
+  "file": "File:Comparison International Standard Atmosphere space diving.svg"
+ },
+ "pilot.te-roten": {
+  "src": "photo-pilot.te-roten.jpg",
+  "author": "Krauss",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cloud_forest_mount_kinabalu-withHygrom.jpg",
+  "file": "File:Cloud forest mount kinabalu-withHygrom.jpg"
+ },
+ "pilot.te-tairyuken": {
+  "src": "photo-pilot.te-tairyuken.jpg",
+  "author": "NASA/Jeff Williams",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ISS-47_Islands_In_The_Sky,_Indonesia.jpg",
+  "file": "File:ISS-47 Islands In The Sky, Indonesia.jpg"
+ },
+ "pilot.te-kenkaimen": {
+  "src": "photo-pilot.te-kenkaimen.jpg",
+  "author": "National Weather Service JetStream",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jetcrosssection.jpg",
+  "file": "File:Jetcrosssection.jpg"
+ },
+ "pilot.te-seisoken": {
+  "src": "photo-pilot.te-seisoken.jpg",
+  "author": "NASA/Scott Kelly",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ISS-46_Soyuz_TMA-17M_reentry.jpg",
+  "file": "File:ISS-46 Soyuz TMA-17M reentry.jpg"
+ },
+ "pilot.te-koso": {
+  "src": "photo-pilot.te-koso.jpg",
+  "author": "NWS, which is a branch of NOAA, a US government agency",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NAM_500_MB.PNG",
+  "file": "File:NAM 500 MB.PNG"
+ },
+ "pilot.te-uhyo": {
+  "src": "photo-pilot.te-uhyo.jpg",
+  "author": "Velatrix",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Freezing_Rain_on_Tree_Branch.jpg",
+  "file": "File:Freezing Rain on Tree Branch.jpg"
+ },
+ "pilot.te-juhyo": {
+  "src": "photo-pilot.te-juhyo.jpg",
+  "author": "Marcin Sochacki (Wanted)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rime_ice.jpg",
+  "file": "File:Rime ice.jpg"
+ },
+ "pilot.te-gyakuten": {
+  "src": "photo-pilot.te-gyakuten.jpg",
+  "author": "JohanTheGhost",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:SmokeCeilingInLochcarron.jpg",
+  "file": "File:SmokeCeilingInLochcarron.jpg"
+ },
+ "pilot.te-sangakuha": {
+  "src": "photo-pilot.te-sangakuha.jpg",
+  "author": "Dake",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Vol_d%27onde.svg",
+  "file": "File:Vol d'onde.svg"
+ },
+ "pilot.te-coriolis": {
+  "src": "photo-pilot.te-coriolis.jpg",
+  "author": "Hubi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Corioliskraftanimation.gif",
+  "file": "File:Corioliskraftanimation.gif"
+ },
+ "pilot.te-buys": {
+  "src": "photo-pilot.te-buys.jpg",
+  "author": "Johan Heinrich Neuman (1819-1898)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Buysballot.jpg",
+  "file": "File:Buysballot.jpg"
+ },
+ "pilot.te-itcz": {
+  "src": "photo-pilot.te-itcz.jpg",
+  "author": "Mats Halldin",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ITCZ_january-july.png",
+  "file": "File:ITCZ january-july.png"
+ },
+ "pilot.te-squall": {
+  "src": "photo-pilot.te-squall.jpg",
+  "author": "David Roth, Hydrometeorological Prediction Center, NOAA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pennsylvania_thunderstorm_21_July_2003.png",
+  "file": "File:Pennsylvania thunderstorm 21 July 2003.png"
+ },
+ "pilot.te-kazanbai": {
+  "src": "photo-pilot.te-kazanbai.jpg",
+  "author": "ISS Crew Earth Observations experiment and the Image Science…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:MtCleveland_ISS013-E-24184.jpg",
+  "file": "File:MtCleveland ISS013-E-24184.jpg"
+ },
+ "pilot.te-uncho": {
+  "src": "photo-pilot.te-uncho.jpg",
+  "author": "Chad Sparkes from Kissimmee,Florida, United States",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Blanket_of_Clouds_(14415796771)_(cropped).jpg",
+  "file": "File:Blanket of Clouds (14415796771) (cropped).jpg"
+ },
+ "pilot.ku-kuko": {
+  "src": "photo-pilot.ku-kuko.jpg",
+  "author": "CellarDoor85 (Robert Aehnelt).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Airport_infrastructure.png",
+  "file": "File:Airport infrastructure.png"
+ },
+ "pilot.ku-kassoro": {
+  "src": "photo-pilot.ku-kassoro.jpg",
+  "author": "Emil Hedaya",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Great_Barrier_Reef_Airport.JPG",
+  "file": "File:Great Barrier Reef Airport.JPG"
+ },
+ "pilot.ku-tower": {
+  "src": "photo-pilot.ku-tower.jpg",
+  "author": "やねまか",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_Control_Tower.jpg",
+  "file": "File:Tokyo International Airport Control Tower.jpg"
+ },
+ "pilot.ku-kanseikan": {
+  "src": "photo-pilot.ku-kanseikan.jpg",
+  "author": "Greenland Airports Mittarfeqarfiit",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aasiaat_Airport_(27422884182).jpg",
+  "file": "File:Aasiaat Airport (27422884182).jpg"
+ },
+ "pilot.ku-chakuriku": {
+  "src": "photo-pilot.ku-chakuriku.jpg",
+  "author": "PDX Aviation - HD(ish) Plane Spotting",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:UPS_N575UP_747-400F_Landing_Portland_Airport_(PDX).ogv",
+  "file": "File:UPS N575UP 747-400F Landing Portland Airport (PDX).ogv"
+ },
+ "pilot.ku-bridge": {
+  "src": "photo-pilot.ku-bridge.jpg",
+  "author": "Project Kei",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tokyo_International_Airport_-_Terminal_1.jpg",
+  "file": "File:Tokyo International Airport - Terminal 1.jpg"
+ },
+ "pilot.ku-downwind": {
+  "src": "photo-pilot.ku-downwind.jpg",
+  "author": "nattou",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Airfield_Traffic_Pattern.jpg",
+  "file": "File:Airfield Traffic Pattern.jpg"
+ },
+ "pilot.ku-base": {
+  "src": "photo-pilot.ku-base.jpg",
+  "author": "nattou",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Airfield_Traffic_Pattern.jpg",
+  "file": "File:Airfield Traffic Pattern.jpg"
+ },
+ "pilot.ku-fukinagashi": {
+  "src": "photo-pilot.ku-fukinagashi.jpg",
+  "author": "Taxiarchos228",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Freiburg_im_Breisgau_-_Flugplatz_-_Windsack.jpg",
+  "file": "File:Freiburg im Breisgau - Flugplatz - Windsack.jpg"
+ },
+ "pilot.ku-kohoranki": {
+  "src": "photo-pilot.ku-kohoranki.jpg",
+  "author": "NASA Langley Research Center (NASA-LaRC), Edited by Fir0002",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Airplane_vortex_edit.jpg",
+  "file": "File:Airplane vortex edit.jpg"
+ },
+ "pilot.ku-hydro": {
+  "src": "photo-pilot.ku-hydro.jpg",
+  "author": "Victovoi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hydroplaning.svg",
+  "file": "File:Hydroplaning.svg"
+ },
+ "pilot.ji-kicho": {
+  "src": "photo-pilot.ji-kicho.jpg",
+  "author": "Mark Groover",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Crew_amt4586_preflight.jpg",
+  "file": "File:Crew amt4586 preflight.jpg"
+ },
+ "pilot.ji-fukusojushi": {
+  "src": "photo-pilot.ji-fukusojushi.jpg",
+  "author": "Algkalv (talk)",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wideroe-dash8-cockpit.jpg",
+  "file": "File:Wideroe-dash8-cockpit.jpg"
+ },
+ "pilot.ji-raito": {
+  "src": "photo-pilot.ji-raito.jpg",
+  "author": "Orville Wright and Wilbur Wright (credited as photographers)…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wilbur_Wright.jpg",
+  "file": "File:Wilbur Wright.jpg"
+ },
+ "pilot.ji-ninomiya": {
+  "src": "photo-pilot.ji-ninomiya.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chuhachi_Ninomiya.jpg",
+  "file": "File:Chuhachi Ninomiya.jpg"
+ },
+ "pilot.ji-earhart": {
+  "src": "photo-pilot.ji-earhart.jpg",
+  "author": "Copyright by Underwood and Underwood (not renewed)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Earhart.jpg",
+  "file": "File:Earhart.jpg"
+ },
+ "pilot.ji-checklist": {
+  "src": "photo-pilot.ji-checklist.jpg",
+  "author": "VideoPlasty",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Checklist_Flat_Icon_Vector.svg",
+  "file": "File:Checklist Flat Icon Vector.svg"
+ },
+ "pilot.ji-concorde": {
+  "src": "photo-pilot.ji-concorde.jpg",
+  "author": "Jeroen Stroes Aviation Photography from Netherlands",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:G-boab_(32758231448).jpg",
+  "file": "File:G-boab (32758231448).jpg"
+ },
+ "pilot.ji-ys11": {
+  "src": "photo-pilot.ji-ys11.jpg",
+  "author": "Toshiro Aoki",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japan_Maritime_Self-Defence_Force_NAMC_YS-11M_(YS-11-112)_Aoki-1.jpg",
+  "file": "File:Japan Maritime Self-Defence Force NAMC YS-11M (YS-11-112) Aoki-1.jpg"
+ },
+ "pilot.ji-flyer": {
+  "src": "photo-pilot.ji-flyer.jpg",
+  "author": "John T. Daniels",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wrightflyer.jpg",
+  "file": "File:Wrightflyer.jpg"
+ },
+ "pilot.ji-uchu": {
+  "src": "photo-pilot.ji-uchu.jpg",
+  "author": "NASA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bruce_McCandless_II_during_EVA_in_1984.jpg",
+  "file": "File:Bruce McCandless II during EVA in 1984.jpg"
+ },
+ "pilot.ji-jisaboke": {
+  "src": "photo-pilot.ji-jisaboke.jpg",
+  "author": "Óscar (xindilo/fotosderianxo)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Reloxos_no_Parque_do_Pasatempo,_Betanzos_edit.jpg",
+  "file": "File:Reloxos no Parque do Pasatempo, Betanzos edit.jpg"
+ },
+ "pilot.ji-stlouis": {
+  "src": "photo-pilot.ji-stlouis.jpg",
+  "author": "Steph Doyle (USAF Retired)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Spirit_of_St._Louis.jpg",
+  "file": "File:Spirit of St. Louis.jpg"
+ },
+ "pilot.ji-hino": {
+  "src": "photo-pilot.ji-hino.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E9%87%8E_%E7%86%8A%E8%94%B5.jpg",
+  "file": "File:日野 熊蔵.jpg"
+ },
+ "pilot.ji-tokugawa": {
+  "src": "photo-pilot.ji-tokugawa.jpg",
+  "author": "Gordon Andreassend",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tokugawa_Yoshitoshi.jpg",
+  "file": "File:Tokugawa Yoshitoshi.jpg"
+ },
+ "pilot.ji-montgolfier": {
+  "src": "photo-pilot.ji-montgolfier.jpg",
+  "author": "Unidentified painter",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Jacques-%C3%89tienne_Montgolfier.jpg",
+  "file": "File:Jacques-Étienne Montgolfier.jpg"
+ },
+ "pilot.ji-bleriot": {
+  "src": "photo-pilot.ji-bleriot.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Louis_Bleriot.jpg",
+  "file": "File:Louis Bleriot.jpg"
+ },
+ "pilot.ji-dc3": {
+  "src": "photo-pilot.ji-dc3.jpg",
+  "author": "Towpilot",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Douglas_DC-3,_SE-CFP.jpg",
+  "file": "File:Douglas DC-3, SE-CFP.jpg"
+ },
+ "pilot.ji-hatsuhiko": {
+  "src": "photo-pilot.ji-hatsuhiko.jpg",
+  "author": "John T. Daniels",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wright_First_Flight_1903Dec17_(full_restore_115).jpg",
+  "file": "File:Wright First Flight 1903Dec17 (full restore 115).jpg"
+ },
+ "pilot.ji-swisscheese": {
+  "src": "photo-pilot.ji-swisscheese.jpg",
+  "author": "Davidmack",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Swiss_cheese_model_of_accident_causation.png",
+  "file": "File:Swiss cheese model of accident causation.png"
+ },
+ "pilot.ji-kukanshiki": {
+  "src": "photo-pilot.ji-kukanshiki.jpg",
+  "author": "U.S. Navy photo by Photographer's Mate 3rd Class M. Jeremie …",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:US_Navy_050107-N-6074Y-024_Pilots_fly_their_MH-60S_Knighthawk_helicopter_in_white_out_conditions_as_they_pass_through_a_cloud_in_airspace_just_off_the_coast_of_Sumatra,_Indonesia_near_Banda_Aceh.jpg",
+  "file": "File:US Navy 050107-N-6074Y-024 Pilots fly their MH-60S Knighthawk helicopter in white out conditions as they pass through a cloud in airspace just off the coast of Sumatra, Indonesia near Banda Aceh.jpg"
+ },
+ "pilot.ji-circadian": {
+  "src": "photo-pilot.ji-circadian.jpg",
+  "author": "NoNameGYassineMrabetTalk✉ fixed by Addicted04",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Biological_clock_human.svg",
+  "file": "File:Biological clock human.svg"
+ },
+ "pilot.ji-yeager": {
+  "src": "photo-pilot.ji-yeager.jpg",
+  "author": "USAAF official photographer",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Charles_Yeager_photo_portrait_head_on_shoulders_left_side.jpg",
+  "file": "File:Charles Yeager photo portrait head on shoulders left side.jpg"
+ },
+ "pilot.ji-whittle": {
+  "src": "photo-pilot.ji-whittle.jpg",
+  "author": "British Government",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Frank_Whittle_CH_011867_crop.jpg",
+  "file": "File:Frank Whittle CH 011867 crop.jpg"
+ },
+ "pilot.ji-santosdumont": {
+  "src": "photo-pilot.ji-santosdumont.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Alberto_Santos-Dumont_(1918).jpg",
+  "file": "File:Alberto Santos-Dumont (1918).jpg"
  }
 };

@@ -1,0 +1,682 @@
+[
+ {
+  "id": "ko-hoijishin",
+  "name": "方位磁針",
+  "reading": "ほういじしん",
+  "journey": "koho",
+  "category": "方位と北",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "koho:hoi",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-jihoku",
+   "ko-hoi"
+  ],
+  "description": "北を さす 針の ついた 道具。飛行機の 操縦席にも 磁気コンパスが あり、電気が なくても 向きが 分かります。"
+ },
+ {
+  "id": "ko-hokkyoku",
+  "name": "北極",
+  "reading": "ほっきょく",
+  "journey": "koho",
+  "category": "地球と地図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "koho:jihoku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-shinpoku",
+   "ko-nankyoku"
+  ],
+  "description": "地球の 回る 軸の 北の はし。真北の 向きの 先です。方位磁針が さす 磁北の 場所は 北極点とは ちがい、少しずつ 動いています。"
+ },
+ {
+  "id": "ko-nankyoku",
+  "name": "南極",
+  "reading": "なんきょく",
+  "journey": "koho",
+  "category": "地球と地図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐧",
+  "mapNode": "koho:jihoku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-hokkyoku",
+   "ko-sekido"
+  ],
+  "description": "地球の 回る 軸の 南の はし。南極点に 立つと、どちらを 向いても 北に なります。"
+ },
+ {
+  "id": "ko-jisoku",
+  "name": "時速",
+  "reading": "じそく",
+  "journey": "koho",
+  "category": "航法と単位",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚄",
+  "mapNode": "koho:tani",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-knot",
+   "ko-kyori"
+  ],
+  "description": "1時間に 進む 距離で あらわす 速さ。旅客機の 巡航は 時速 900km 前後で、ノットに なおすと 約490ノットです。"
+ },
+ {
+  "id": "ko-kyori",
+  "name": "距離",
+  "reading": "きょり",
+  "journey": "koho",
+  "category": "航法と単位",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "koho:tani",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-kairi",
+   "ko-dme"
+  ],
+  "description": "2つの 地点の あいだの 長さ。空では おもに 海里で あらわします。"
+ },
+ {
+  "id": "ko-mejirushi",
+  "name": "目印",
+  "reading": "めじるし",
+  "journey": "koho",
+  "category": "航法と単位",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌉",
+  "mapNode": "koho:suisoku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-chimonkoho",
+   "ko-checkpoint"
+  ],
+  "description": "空から 見て 場所が 分かる もの。川・海岸線・線路・大きな 橋・山などが 地文航法の 手がかりに なります。"
+ },
+ {
+  "id": "ko-chikyugi",
+  "name": "地球儀",
+  "reading": "ちきゅうぎ",
+  "journey": "koho",
+  "category": "地球と地図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "koho:ido",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-taikenkoro",
+   "ko-sekido"
+  ],
+  "description": "地球を 小さな 球に した もの。地球儀の 上で 2つの 地点に 糸を はると、大圏航路が かんたんに 分かります。"
+ },
+ {
+  "id": "ko-sekaichizu",
+  "name": "世界地図",
+  "reading": "せかいちず",
+  "journey": "koho",
+  "category": "地球と地図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "koho:ido",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-mercator",
+   "ko-chikyugi"
+  ],
+  "description": "地球ぜんぶを 平らに かいた 地図。丸い 地球を 平らに するので、形・広さ・向きの どこかが かならず ずれます。"
+ },
+ {
+  "id": "ko-denpa",
+  "name": "電波",
+  "reading": "でんぱ",
+  "journey": "koho",
+  "category": "電波の道しるべ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "koho:vor",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-vor",
+   "ko-gps"
+  ],
+  "description": "光と なかまの、目に 見えない 波。無線の 声も、航法の 道しるべも、レーダーも 電波を 使います。"
+ },
+ {
+  "id": "ko-hizukehenkosen",
+  "name": "日付変更線",
+  "reading": "ひづけへんこうせん",
+  "journey": "koho",
+  "category": "地球と地図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "koho:ido",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-keido",
+   "ko-jisa"
+  ],
+  "description": "経度180度の あたりに 引かれた、日付が かわる 線。西から 東へ こえると、日付が 1日 もどります。"
+ },
+ {
+  "id": "ko-nihonhyojunji",
+  "name": "日本標準時",
+  "reading": "にほんひょうじゅんじ",
+  "journey": "koho",
+  "category": "飛行計画",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕘",
+  "mapNode": "koho:keikaku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-utc",
+   "ko-toukei"
+  ],
+  "description": "日本で 使う 時刻で、東経135度(兵庫県 明石市など)を もとに しています。協定世界時より 9時間 進んでいます。"
+ },
+ {
+  "id": "ko-toukei",
+  "name": "東経",
+  "reading": "とうけい",
+  "journey": "koho",
+  "category": "地球と地図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "koho:ido",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-keido",
+   "ko-hokui"
+  ],
+  "description": "経度0度の 線より 東がわの 経度。日本は おおよそ 東経122度から 154度の あいだに あります。"
+ },
+ {
+  "id": "ko-hokui",
+  "name": "北緯",
+  "reading": "ほくい",
+  "journey": "koho",
+  "category": "地球と地図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "koho:ido",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-ido",
+   "ko-toukei"
+  ],
+  "description": "赤道より 北がわの 緯度。日本は おおよそ 北緯20度から 46度の あいだに あります。"
+ },
+ {
+  "id": "ko-dofunbyo",
+  "name": "度分秒",
+  "reading": "どふんびょう",
+  "journey": "koho",
+  "category": "地球と地図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "koho:ido",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-ido",
+   "ko-kairi"
+  ],
+  "description": "角度を こまかく あらわす 書きかた。1度は 60分、1分は 60秒です。緯度・経度は この 形で 書きます。"
+ },
+ {
+  "id": "ko-hyoko",
+  "name": "標高",
+  "reading": "ひょうこう",
+  "journey": "koho",
+  "category": "道と高さ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏔️",
+  "mapNode": "koho:kokodo",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-mea",
+   "ko-junkokodo"
+  ],
+  "description": "海面から はかった 地面の 高さ。空港や 山の 高さは 標高で あらわし、山を よゆうを もって こえる 高さを 決める もとに なります。"
+ },
+ {
+  "id": "ko-shoyojikan",
+  "name": "所要時間",
+  "reading": "しょようじかん",
+  "journey": "koho",
+  "category": "飛行計画",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "koho:keikaku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-eta",
+   "ko-taichisokudo"
+  ],
+  "description": "出発から 到着までに かかる 時間。距離を 対地速度で わって もとめます。"
+ },
+ {
+  "id": "ko-eta",
+  "name": "到着予定時刻(ETA)",
+  "reading": "とうちゃくよていじこく",
+  "journey": "koho",
+  "category": "飛行計画",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕓",
+  "mapNode": "koho:keikaku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-shoyojikan",
+   "ko-flightplan"
+  ],
+  "description": "目的地に つく 予定の 時刻。飛んでいる あいだも、風に あわせて 計算しなおします。"
+ },
+ {
+  "id": "ko-keisanban",
+  "name": "航法計算盤",
+  "reading": "こうほうけいさんばん",
+  "journey": "koho",
+  "category": "航法と単位",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "koho:suisoku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-kazenosankakkei",
+   "ko-suisokukoho"
+  ],
+  "description": "円い 計算尺の ついた パイロットの 道具。電池が なくても、時間・距離・速さ・燃料・風の 計算が できます。"
+ },
+ {
+  "id": "ko-jihoi",
+  "name": "磁方位",
+  "reading": "じほうい",
+  "journey": "koho",
+  "category": "方位と北",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "koho:jihoku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-shinhoi",
+   "ko-jihoku"
+  ],
+  "description": "磁北を 0度として はかった 方位。滑走路の 番号や、管制が 出す 向きの 指示は、ふつう 磁方位で あらわします。"
+ },
+ {
+  "id": "ko-shinhoi",
+  "name": "真方位",
+  "reading": "しんほうい",
+  "journey": "koho",
+  "category": "方位と北",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "koho:jihoku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-jihoi",
+   "ko-hensa"
+  ],
+  "description": "真北を 0度として はかった 方位。地図に 線を 引いて はかるのは 真方位で、偏差を たし引きして 磁方位に なおします。"
+ },
+ {
+  "id": "ko-tod",
+  "name": "降下開始点(TOD)",
+  "reading": "こうかかいしてん",
+  "journey": "koho",
+  "category": "道と高さ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↘️",
+  "mapNode": "koho:kokodo",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-junko",
+   "ko-star"
+  ],
+  "description": "巡航の 高さから 下がりはじめる 地点。早すぎても おそすぎても むだが 出るので、前もって 計算しておきます。"
+ },
+ {
+  "id": "ko-leg",
+  "name": "レグ",
+  "reading": "れぐ",
+  "journey": "koho",
+  "category": "道と高さ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "koho:koro",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-waypoint",
+   "ko-kokuro"
+  ],
+  "description": "空の 道の、地点と 地点の あいだの 1区間。飛行計画は いくつもの レグを つないで できています。"
+ },
+ {
+  "id": "ko-nenryoshohiritsu",
+  "name": "燃料消費率",
+  "reading": "ねんりょうしょうひりつ",
+  "journey": "koho",
+  "category": "飛行計画",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛽",
+  "mapNode": "koho:nenryo",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-nenryokeikaku",
+   "ko-kozokujikan"
+  ],
+  "description": "1時間に どれだけ 燃料を 使うか。これに 飛ぶ 時間を かけると、いる 燃料の 量が 分かります。"
+ },
+ {
+  "id": "ko-homing",
+  "name": "ホーミング",
+  "reading": "ほーみんぐ",
+  "journey": "koho",
+  "category": "電波の道しるべ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "koho:vor",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-adf",
+   "ko-ndb"
+  ],
+  "description": "ADFの 針が いつも 前を さすように 飛んで、NDB局へ むかう やりかた。かんたんですが、風が あると 道すじが 曲がります。"
+ },
+ {
+  "id": "ko-ichitsuhoten",
+  "name": "位置通報点",
+  "reading": "いちつうほうてん",
+  "journey": "koho",
+  "category": "道と高さ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "koho:koro",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-waypoint",
+   "ko-fix"
+  ],
+  "description": "そこを 通った ときに、管制へ 位置を 知らせる ことに なっている 地点。"
+ },
+ {
+  "id": "ko-compasscourse",
+  "name": "コンパス針路",
+  "reading": "こんぱすしんろ",
+  "journey": "koho",
+  "category": "方位と北",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "koho:jihoku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-jihoi",
+   "ko-deviation"
+  ],
+  "description": "磁方位に、その 機体の コンパスの くせ(自差)を なおした 向き。この 数字に あわせて 飛べば、ねらった 向きに 進めます。"
+ },
+ {
+  "id": "ko-deviation",
+  "name": "デビエーションカード",
+  "reading": "でびえーしょんかーど",
+  "journey": "koho",
+  "category": "方位と北",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "koho:jihoku",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-compasscourse",
+   "ko-hoijishin"
+  ],
+  "description": "その 機体の 方位磁針が、向きごとに 何度 ずれるかを 書いた カード。操縦席の コンパスの 近くに 置いてあります。"
+ },
+ {
+  "id": "ko-mea",
+  "name": "最低航空路高度(MEA)",
+  "reading": "さいていこうくうろこうど",
+  "journey": "koho",
+  "category": "道と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "koho:kokodo",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-moca",
+   "ko-kokuro"
+  ],
+  "description": "航空路の その 区間で、山などから じゅうぶん はなれ、航法の 電波も しっかり とどく 高さ。これより 上を 飛びます。"
+ },
+ {
+  "id": "ko-moca",
+  "name": "最低障害物間隔高度(MOCA)",
+  "reading": "さいていしょうがいぶつかんかくこうど",
+  "journey": "koho",
+  "category": "道と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏔️",
+  "mapNode": "koho:kokodo",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-mea",
+   "ko-hyoko"
+  ],
+  "description": "山や 建物などの 上に、決められた よゆうを もって 飛べる いちばん 低い 高さ。MEAより 低い ことが あります。"
+ },
+ {
+  "id": "ko-fix",
+  "name": "フィックス",
+  "reading": "ふぃっくす",
+  "journey": "koho",
+  "category": "道と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "koho:koro",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-waypoint",
+   "ko-ichitsuhoten"
+  ],
+  "description": "電波の 局からの 方位や 距離、衛星などで 決まる 空の 上の 地点。ウェイポイントも フィックスの 1つです。"
+ },
+ {
+  "id": "ko-dmearc",
+  "name": "DMEアーク",
+  "reading": "でぃーえむいーあーく",
+  "journey": "koho",
+  "category": "電波の道しるべ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "koho:vor",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-dme",
+   "ko-keikishinnyu"
+  ],
+  "description": "DME局から 同じ 距離を たもって、円の 一部を えがくように 飛ぶ 道すじ。計器進入の 中で 使われる ことが あります。"
+ },
+ {
+  "id": "ko-slantrange",
+  "name": "スラントレンジ",
+  "reading": "すらんとれんじ",
+  "journey": "koho",
+  "category": "電波の道しるべ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "koho:vor",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-dme",
+   "ko-kyori"
+  ],
+  "description": "DMEが はかる、局から 飛行機までの ななめの 距離。局の 真上を 飛んでも、高さの ぶんが あるので 0には なりません。"
+ },
+ {
+  "id": "ko-ilscategory",
+  "name": "ILSカテゴリー",
+  "reading": "あいえるえすかてごりー",
+  "journey": "koho",
+  "category": "着陸の電波",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "koho:ils",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-ils",
+   "ko-da"
+  ],
+  "description": "ILSで おりる ときに、どれだけ 見えにくくても 着陸できるかの 区分。カテゴリー1・2・3が あり、数字が 大きいほど 霧の 中でも おりられます。"
+ },
+ {
+  "id": "ko-backcourse",
+  "name": "バックコース",
+  "reading": "ばっくこーす",
+  "journey": "koho",
+  "category": "着陸の電波",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔙",
+  "mapNode": "koho:ils",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-localizer",
+   "ko-ils"
+  ],
+  "description": "ILSの ローカライザーの 電波を、ふだんと 反対の 向きから 使う こと。計器の 針の 動きが 逆に なるので、気を つけて 使います。"
+ },
+ {
+  "id": "ko-gbas",
+  "name": "GBAS",
+  "reading": "じーばす",
+  "journey": "koho",
+  "category": "衛星と広域航法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "koho:gps",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-sbas",
+   "ko-gnss"
+  ],
+  "description": "空港の 地上局が 衛星の 位置の ずれを なおす 情報を 送り、衛星を 使って 正確な 着陸の 道すじを 作る しくみ。"
+ },
+ {
+  "id": "ko-flyby",
+  "name": "フライバイ(ウェイポイント)",
+  "reading": "ふらいばい",
+  "journey": "koho",
+  "category": "道と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "koho:koro",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-flyover",
+   "ko-waypoint"
+  ],
+  "description": "その 地点の 少し 手前から 曲がりはじめて、なめらかに 次の 道へ つなぐ ウェイポイント。"
+ },
+ {
+  "id": "ko-flyover",
+  "name": "フライオーバー(ウェイポイント)",
+  "reading": "ふらいおーばー",
+  "journey": "koho",
+  "category": "道と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⤴️",
+  "mapNode": "koho:koro",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-flyby",
+   "ko-waypoint"
+  ],
+  "description": "その 地点の 真上を 通ってから 曲がる ウェイポイント。かならず 上を 通りたい 場所で 使います。"
+ },
+ {
+  "id": "ko-kozokukyori",
+  "name": "航続距離",
+  "reading": "こうぞくきょり",
+  "journey": "koho",
+  "category": "飛行計画",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "koho:nenryo",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-kozokujikan",
+   "ko-nenryokeikaku"
+  ],
+  "description": "燃料を いっぱいに して 飛べる 距離。長い 国際線を 飛ぶ 旅客機ほど 長く なります。"
+ },
+ {
+  "id": "ko-kozokujikan",
+  "name": "航続時間",
+  "reading": "こうぞくじかん",
+  "journey": "koho",
+  "category": "飛行計画",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "koho:nenryo",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-kozokukyori",
+   "ko-nenryoshohiritsu"
+  ],
+  "description": "燃料を いっぱいに して 飛びつづけられる 時間。小さな 飛行機の 計画では とくに だいじです。"
+ },
+ {
+  "id": "ko-servicevolume",
+  "name": "サービスボリューム",
+  "reading": "さーびすぼりゅーむ",
+  "journey": "koho",
+  "category": "電波の道しるべ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔵",
+  "mapNode": "koho:vor",
+  "field": "空中航法",
+  "relatedTerms": [
+   "ko-vor",
+   "ko-mea"
+  ],
+  "description": "VORなどの 電波を 正しく 使える 範囲。高さと 局からの 距離で 決まっていて、その 外では あてに しません。"
+ }
+]

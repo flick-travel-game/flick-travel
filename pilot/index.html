@@ -437,11 +437,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリックパイロット</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="205" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックパイロット</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリックパイロット" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリックパイロット" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -574,7 +574,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"pilot", name:"フリックパイロット", modes:(typeof PILOT === "object" ? PILOT.modes : []), assets:"../", logo:false, hero:true, dir:"pilot/", lead:"飛行機の きほん・飛ぶ しくみ・計器と エンジン・空の 天気・空の 道と 地図・無線と 英語・空の きまり・空港と 管制・パイロットの しごとと 歴史の ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出て、無線の ことばは「🎧 こうしんで」で 使いかたが わかるよ。飛行機が すきな 子の ことばから はじめて、自家用操縦士・事業用操縦士の 学科試験(航空工学・航空気象・空中航法・航空通信・航空法規)の めやすまで。4択クイズと 計算問題で 学科試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。これで 飛べる わけでは ありません。実際に 飛ぶには 訓練校で 教官と 練習し、国家試験に 受かる 必要が あります。試験の 勉強には 過去問と 教科書も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、空の 上の しごとが 見えてくるよ。国土交通省 航空局・航空大学校・航空会社とは 関係ありません。" };
+const GAME = { id:"pilot", name:"フリックパイロット", modes:(typeof PILOT === "object" ? PILOT.modes : []), assets:"../", logo:true, hero:true, dir:"pilot/", lead:"飛行機の きほん・飛ぶ しくみ・計器と エンジン・空の 天気・空の 道と 地図・無線と 英語・空の きまり・空港と 管制・パイロットの しごとと 歴史の ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出て、無線の ことばは「🎧 こうしんで」で 使いかたが わかるよ。飛行機が すきな 子の ことばから はじめて、自家用操縦士・事業用操縦士の 学科試験(航空工学・航空気象・空中航法・航空通信・航空法規)の めやすまで。4択クイズと 計算問題で 学科試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。これで 飛べる わけでは ありません。実際に 飛ぶには 訓練校で 教官と 練習し、国家試験に 受かる 必要が あります。試験の 勉強には 過去問と 教科書も 使ってね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、空の 上の しごとが 見えてくるよ。国土交通省 航空局・航空大学校・航空会社とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

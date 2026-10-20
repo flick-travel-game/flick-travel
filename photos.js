@@ -37842,5 +37842,573 @@ const PHOTOS = {
   "licenseUrl": "",
   "page": "https://commons.wikimedia.org/wiki/File:Alberto_Santos-Dumont_(1918).jpg",
   "file": "File:Alberto Santos-Dumont (1918).jpg"
+ },
+ "pilot.ki-hikoki": {
+  "src": "photo-pilot.ki-hikoki.jpg",
+  "author": "FlugKerl2",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1968-Cessna-172K.jpg",
+  "file": "File:1968-Cessna-172K.jpg"
+ },
+ "pilot.ki-ryokakuki": {
+  "src": "photo-pilot.ki-ryokakuki.jpg",
+  "author": "Atlantique air assistance",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1900C_envol.jpg",
+  "file": "File:1900C envol.jpg"
+ },
+ "pilot.ki-dotai": {
+  "src": "photo-pilot.ki-dotai.jpg",
+  "author": "Christoph von Blücher",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fuselage_Piper_PA18.JPG",
+  "file": "File:Fuselage Piper PA18.JPG"
+ },
+ "pilot.ki-shuyoku": {
+  "src": "photo-pilot.ki-shuyoku.jpg",
+  "author": "Mgw89",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cloud_over_A340_wing.JPG",
+  "file": "File:Cloud over A340 wing.JPG"
+ },
+ "pilot.ki-biyoku": {
+  "src": "photo-pilot.ki-biyoku.jpg",
+  "author": "Federal Aviation Administration",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Empennage_components.png",
+  "file": "File:Empennage components.png"
+ },
+ "pilot.ki-hojoyoku": {
+  "src": "photo-pilot.ki-hojoyoku.jpg",
+  "author": "Pearson Scott Foresman",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Alieron_A-44_(PSF).png",
+  "file": "File:Alieron A-44 (PSF).png"
+ },
+ "pilot.ki-shokoda": {
+  "src": "photo-pilot.ki-shokoda.jpg",
+  "author": "YSSYguy at English Wikipedia",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Light_aircraft_elevator_and_trim_tab.JPG",
+  "file": "File:Light aircraft elevator and trim tab.JPG"
+ },
+ "pilot.ki-flap": {
+  "src": "photo-pilot.ki-flap.jpg",
+  "author": "AlexHe34",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:A_fully_extended_flap.jpg",
+  "file": "File:A fully extended flap.jpg"
+ },
+ "pilot.ki-engine": {
+  "src": "photo-pilot.ki-engine.jpg",
+  "author": "Sovxx",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ALF502.JPG",
+  "file": "File:ALF502.JPG"
+ },
+ "pilot.ki-landinggear": {
+  "src": "photo-pilot.ki-landinggear.jpg",
+  "author": "Julian Herzog (Website)",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Airbus_A350-941_F-WWCF_MSN002_main_landing_gear_ILA_Berlin_2016_06_(cropped).jpg",
+  "file": "File:Airbus A350-941 F-WWCF MSN002 main landing gear ILA Berlin 2016 06 (cropped).jpg"
+ },
+ "pilot.ki-sojuseki": {
+  "src": "photo-pilot.ki-sojuseki.jpg",
+  "author": "Naddsy",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Airbus_A380_cockpit.jpg",
+  "file": "File:Airbus A380 cockpit.jpg"
+ },
+ "pilot.ki-kyakushitsu": {
+  "src": "photo-pilot.ki-kyakushitsu.jpg",
+  "author": "FLY!",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lufthansa_737_interior.jpg",
+  "file": "File:Lufthansa 737 interior.jpg"
+ },
+ "pilot.ki-seatbelt": {
+  "src": "photo-pilot.ki-seatbelt.jpg",
+  "author": "Daniel Schwen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Airplane_seat_belt_2.jpg",
+  "file": "File:Airplane seat belt 2.jpg"
+ },
+ "pilot.ki-spoiler": {
+  "src": "photo-pilot.ki-spoiler.jpg",
+  "author": "Annom",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lift_dumperinnerworkingsa320.jpg",
+  "file": "File:Lift dumperinnerworkingsa320.jpg"
+ },
+ "pilot.ki-slat": {
+  "src": "photo-pilot.ki-slat.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Wing.slat.600pix.jpg",
+  "file": "File:Wing.slat.600pix.jpg"
+ },
+ "pilot.ki-throttle": {
+  "src": "photo-pilot.ki-throttle.jpg",
+  "author": "Olivier Cleynen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Center_panel_of_B747-100_cockpit.jpg",
+  "file": "File:Center panel of B747-100 cockpit.jpg"
+ },
+ "pilot.ki-sojurin": {
+  "src": "photo-pilot.ki-sojurin.jpg",
+  "author": "Dtom at Croatian Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pilotska_kabina_zrakoplova.JPG",
+  "file": "File:Pilotska kabina zrakoplova.JPG"
+ },
+ "pilot.ki-zenkyaku": {
+  "src": "photo-pilot.ki-zenkyaku.jpg",
+  "author": "Aeroprints.com",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:PT-ORK_Cessna_150_(8181521509).jpg",
+  "file": "File:PT-ORK Cessna 150 (8181521509).jpg"
+ },
+ "pilot.ki-yokutan": {
+  "src": "photo-pilot.ki-yokutan.jpg",
+  "author": "Eric Salard",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:EC-JZY_CDG-BCN_(7173062326).jpg",
+  "file": "File:EC-JZY CDG-BCN (7173062326).jpg"
+ },
+ "pilot.ki-tanyoki": {
+  "src": "photo-pilot.ki-tanyoki.jpg",
+  "author": "Ahunt at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:PietenpolAirCamperGN1.JPG",
+  "file": "File:PietenpolAirCamperGN1.JPG"
+ },
+ "pilot.ki-fukuyoki": {
+  "src": "photo-pilot.ki-fukuyoki.jpg",
+  "author": "Armchair Aviator's",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fleet_16B_(C-FPFF).jpg",
+  "file": "File:Fleet 16B (C-FPFF).jpg"
+ },
+ "pilot.ki-tanpatsuki": {
+  "src": "photo-pilot.ki-tanpatsuki.jpg",
+  "author": "Mike Burdett",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:G-AVRZ_Piper_PA-28-180_Cherokee_C_at_Northrepps.jpg",
+  "file": "File:G-AVRZ Piper PA-28-180 Cherokee C at Northrepps.jpg"
+ },
+ "pilot.ki-sohatsuki": {
+  "src": "photo-pilot.ki-sohatsuki.jpg",
+  "author": "San Diego Air & Space Museum Archives",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Beechcraft_Baron_58TC.jpg",
+  "file": "File:Beechcraft Baron 58TC.jpg"
+ },
+ "pilot.ki-koteikyaku": {
+  "src": "photo-pilot.ki-koteikyaku.jpg",
+  "author": "RenioLinossi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:De_Havilland_DH.82_Tiger_Moth_-_undercarriage_tailwheel_detail.jpg",
+  "file": "File:De Havilland DH.82 Tiger Moth - undercarriage tailwheel detail.jpg"
+ },
+ "pilot.ki-keikiban": {
+  "src": "photo-pilot.ki-keikiban.jpg",
+  "author": "Arpingstone",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Slingsby.t67c.panel.g-bocm.arp.jpg",
+  "file": "File:Slingsby.t67c.panel.g-bocm.arp.jpg"
+ },
+ "pilot.ki-kyumeidoi": {
+  "src": "photo-pilot.ki-kyumeidoi.jpg",
+  "author": "WhisperToMe",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:LifevestlocationSeatbeltreminder.jpg",
+  "file": "File:LifevestlocationSeatbeltreminder.jpg"
+ },
+ "pilot.ki-groundspoiler": {
+  "src": "photo-pilot.ki-groundspoiler.jpg",
+  "author": "TSRL",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Airbrakes_on_Capstan.jpg",
+  "file": "File:Airbrakes on Capstan.jpg"
+ },
+ "pilot.ki-nacelle": {
+  "src": "photo-pilot.ki-nacelle.jpg",
+  "author": "Martin J.Galloway (John at English Wikipedia)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Boeing_707_engineviewedit.jpg",
+  "file": "File:Boeing 707 engineviewedit.jpg"
+ },
+ "pilot.ki-rib": {
+  "src": "photo-pilot.ki-rib.jpg",
+  "author": "Peripitus",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:DH-60_Gipsy_Moth_Wing_Structure.JPG",
+  "file": "File:DH-60 Gipsy Moth Wing Structure.JPG"
+ },
+ "pilot.ki-dasshutsuslide": {
+  "src": "photo-pilot.ki-dasshutsuslide.jpg",
+  "author": "SuperJet International",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SSJ100_CEET_1_(9318514205).jpg",
+  "file": "File:SSJ100 CEET 1 (9318514205).jpg"
+ },
+ "pilot.ke-sokudokei": {
+  "src": "photo-pilot.ke-sokudokei.jpg",
+  "author": "U.S. Dept. of Transportation, Federal Aviation Administratio…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:ASI_ME.png",
+  "file": "File:ASI ME.png"
+ },
+ "pilot.ke-hoishijiki": {
+  "src": "photo-pilot.ke-hoishijiki.jpg",
+  "author": "U.S. Dept. of Transportation, FAA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:DG_interior.png",
+  "file": "File:DG interior.png"
+ },
+ "pilot.ke-sixpack": {
+  "src": "photo-pilot.ke-sixpack.jpg",
+  "author": "Meggar at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Six_flight_instruments.JPG",
+  "file": "File:Six flight instruments.JPG"
+ },
+ "pilot.ke-gyro": {
+  "src": "photo-pilot.ke-gyro.jpg",
+  "author": "Lucas Vieira",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:3D_Gyroscope.png",
+  "file": "File:3D Gyroscope.png"
+ },
+ "pilot.ke-blackbox": {
+  "src": "photo-pilot.ke-blackbox.jpg",
+  "author": "NTSB",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fdr_sidefront.jpg",
+  "file": "File:Fdr sidefront.jpg"
+ },
+ "pilot.ke-seiatsuko": {
+  "src": "photo-pilot.ke-seiatsuko.jpg",
+  "author": "SempreVolando",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:StaticPort.jpg",
+  "file": "File:StaticPort.jpg"
+ },
+ "pilot.ke-turncoord": {
+  "src": "photo-pilot.ke-turncoord.jpg",
+  "author": "Dhaluza at en.wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Turn_indicators.png",
+  "file": "File:Turn indicators.png"
+ },
+ "pilot.ke-kikaki": {
+  "src": "photo-pilot.ke-kikaki.jpg",
+  "author": "Scheinwerfermann",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Holley_2280.jpg",
+  "file": "File:Holley 2280.jpg"
+ },
+ "pilot.ke-plug": {
+  "src": "photo-pilot.ke-plug.jpg",
+  "author": "User Gzuckier on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:67d2scd.jpg",
+  "file": "File:67d2scd.jpg"
+ },
+ "pilot.ke-kahen": {
+  "src": "photo-pilot.ke-kahen.jpg",
+  "author": "MKFI",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cutaway_constant_speed_propeller_hub.JPG",
+  "file": "File:Cutaway constant speed propeller hub.JPG"
+ },
+ "pilot.ke-apu": {
+  "src": "photo-pilot.ke-apu.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:A380_APU_P1230093.jpg",
+  "file": "File:A380 APU P1230093.jpg"
+ },
+ "pilot.ke-fms": {
+  "src": "photo-pilot.ke-fms.jpg",
+  "author": "Doronenko",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Honeywell_FMS.jpg",
+  "file": "File:Honeywell FMS.jpg"
+ },
+ "pilot.ke-pfd": {
+  "src": "photo-pilot.ke-pfd.jpg",
+  "author": "WKHarmon / Kyle Harmon",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Primary_Flight_Display_Garmin_G1000.jpg",
+  "file": "File:Primary Flight Display Garmin G1000.jpg"
+ },
+ "pilot.ke-asshukuki": {
+  "src": "photo-pilot.ke-asshukuki.jpg",
+  "author": "Greg Goebel",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:TF30_Side_Cut_Compressor_HP.jpeg",
+  "file": "File:TF30 Side Cut Compressor HP.jpeg"
+ },
+ "pilot.ke-nenshoshitsu": {
+  "src": "photo-pilot.ke-nenshoshitsu.jpg",
+  "author": "Olivier Cleynen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Combustor_on_Rolls-Royce_Nene_turbojet_(1).jpg",
+  "file": "File:Combustor on Rolls-Royce Nene turbojet (1).jpg"
+ },
+ "pilot.te-chakuhyo": {
+  "src": "photo-pilot.te-chakuhyo.jpg",
+  "author": "NASA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Icing_on_a_plane.jpg",
+  "file": "File:Icing on a plane.jpg"
+ },
+ "pilot.te-hoshagiri": {
+  "src": "photo-pilot.te-hoshagiri.jpg",
+  "author": "Ian W. Fieggen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20080313_Foggy_Street.jpg",
+  "file": "File:20080313 Foggy Street.jpg"
+ },
+ "pilot.te-iryugiri": {
+  "src": "photo-pilot.te-iryugiri.jpg",
+  "author": "Dr. Thomas Liptak",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Frankfurt,_Friedrich-Ebert-Anlage_in_the_fog.jpg",
+  "file": "File:Frankfurt, Friedrich-Ebert-Anlage in the fog.jpg"
+ },
+ "pilot.te-microburst": {
+  "src": "photo-pilot.te-microburst.jpg",
+  "author": "NWSPhoenix",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Downburst.jpg",
+  "file": "File:Downburst.jpg"
+ },
+ "pilot.te-hyo": {
+  "src": "photo-pilot.te-hyo.jpg",
+  "author": "Bdahl",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Hailstones.jpg",
+  "file": "File:Hailstones.jpg"
+ },
+ "pilot.ku-yudoro": {
+  "src": "photo-pilot.ku-yudoro.jpg",
+  "author": "My another account at English Wikipedia",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ben_Gurion_International_Airport_4_taxiway_signs.JPG",
+  "file": "File:Ben Gurion International Airport 4 taxiway signs.JPG"
+ },
+ "pilot.ku-terminal": {
+  "src": "photo-pilot.ku-terminal.jpg",
+  "author": "Benoît Prieur",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Aerial_wiew_of_Los_Angeles_International_Airport,_Juy_2022_(2).jpg",
+  "file": "File:Aerial wiew of Los Angeles International Airport, Juy 2022 (2).jpg"
+ },
+ "pilot.ku-gate": {
+  "src": "photo-pilot.ku-gate.jpg",
+  "author": "Jnpet",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Incheon_Airport6.JPG",
+  "file": "File:Incheon Airport6.JPG"
+ },
+ "pilot.ku-bango": {
+  "src": "photo-pilot.ku-bango.jpg",
+  "author": "Carlos Delgado",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:15R-33L_-_Aeropuerto_de_Madrid-Barajas_-_detail.jpg",
+  "file": "File:15R-33L - Aeropuerto de Madrid-Barajas - detail.jpg"
+ },
+ "pilot.ku-hoan": {
+  "src": "photo-pilot.ku-hoan.jpg",
+  "author": "Diligent",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aeroport_de_dubai_terminal_3_egate_(echecking_of_passport).jpg",
+  "file": "File:Aeroport de dubai terminal 3 egate (echecking of passport).jpg"
+ },
+ "pilot.ku-towerkan": {
+  "src": "photo-pilot.ku-towerkan.jpg",
+  "author": "Myself (Adrian Pingstone).",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Control_tower_at_Birmingham_Airport,_England_27June2019_arp.jpg",
+  "file": "File:Control tower at Birmingham Airport, England 27June2019 arp.jpg"
+ },
+ "pilot.ku-shinnyuto": {
+  "src": "photo-pilot.ku-shinnyuto.jpg",
+  "author": "Garitzko",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Approach_Lighting_System_Bremen_1.jpg",
+  "file": "File:Approach Lighting System Bremen 1.jpg"
+ },
+ "pilot.ku-papi": {
+  "src": "photo-pilot.ku-papi.jpg",
+  "author": "Original uploader Tswgb. Edit by Abuk SABUK",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:PAPI_Jersey_Airport.JPG",
+  "file": "File:PAPI Jersey Airport.JPG"
+ },
+ "pilot.ku-taxi": {
+  "src": "photo-pilot.ku-taxi.jpg",
+  "author": "L.G. Liao",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Airbus_airliners_lined_up_at_Chengdu.jpg",
+  "file": "File:Airbus airliners lined up at Chengdu.jpg"
+ },
+ "pilot.ku-asde": {
+  "src": "photo-pilot.ku-asde.jpg",
+  "author": "Charly Whisky 16:44, 2 January 2007 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Asr910.jpg",
+  "file": "File:Asr910.jpg"
+ },
+ "pilot.ku-towing": {
+  "src": "photo-pilot.ku-towing.jpg",
+  "author": "Homoatrox",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BelAZ_74271_aircraft_tractor_2.jpg",
+  "file": "File:BelAZ 74271 aircraft tractor 2.jpg"
+ },
+ "pilot.ji-saintex": {
+  "src": "photo-pilot.ji-saintex.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Antoine_de_Saint-Euxpery_(1920).jpg",
+  "file": "File:Antoine de Saint-Euxpery (1920).jpg"
+ },
+ "pilot.ji-simulator": {
+  "src": "photo-pilot.ji-simulator.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:AC97-0295-13_a.jpeg",
+  "file": "File:AC97-0295-13 a.jpeg"
+ },
+ "pilot.ji-seibishi": {
+  "src": "photo-pilot.ji-seibishi.jpg",
+  "author": "National Transportation Safety Board",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bombardier_Maintenance_(6240614231).jpg",
+  "file": "File:Bombardier Maintenance (6240614231).jpg"
+ },
+ "pilot.ji-kittyhawk": {
+  "src": "photo-pilot.ji-kittyhawk.jpg",
+  "author": "John T. Daniels",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:First_flight2.jpg",
+  "file": "File:First flight2.jpg"
+ },
+ "pilot.ji-preflight": {
+  "src": "photo-pilot.ji-preflight.jpg",
+  "author": "Janke",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DC10Checklist.jpg",
+  "file": "File:DC10Checklist.jpg"
+ },
+ "pilot.ji-lilienthal": {
+  "src": "photo-pilot.ji-lilienthal.jpg",
+  "author": "Richard Neuhauss (assumed)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lilienthal_in_flight.jpg",
+  "file": "File:Lilienthal in flight.jpg"
+ },
+ "pilot.ji-ffs": {
+  "src": "photo-pilot.ji-ffs.jpg",
+  "author": "SuperJet International",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:SSJ100_FFS_1_(9318513805).jpg",
+  "file": "File:SSJ100 FFS 1 (9318513805).jpg"
+ },
+ "pilot.ji-ohain": {
+  "src": "photo-pilot.ji-ohain.jpg",
+  "author": "Heinkel",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Heinkel_He_178_050602-F-1234P-002.jpg",
+  "file": "File:Heinkel He 178 050602-F-1234P-002.jpg"
+ },
+ "pilot.ji-coleman": {
+  "src": "photo-pilot.ji-coleman.jpg",
+  "author": "Unknown",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bessie_Coleman_in_1923.jpg",
+  "file": "File:Bessie Coleman in 1923.jpg"
+ },
+ "pilot.ji-widebody": {
+  "src": "photo-pilot.ji-widebody.jpg",
+  "author": "SounderBruce",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Boeing_777X_flyover_at_2025_Seafair_-_01.jpg",
+  "file": "File:Boeing 777X flyover at 2025 Seafair - 01.jpg"
  }
 };

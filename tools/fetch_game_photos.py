@@ -25,6 +25,81 @@ NO_GAME_PHOTO |= set(["pilot.ji-briefing", "pilot.ji-humanfactor", "pilot.ji-kod
 # フリックパイロット(2026-10-20): 写真は 物が 写る 旅(飛行機のきほん・計器とエンジン・空の天気・空港と管制・しごとと歴史)だけ。ほかの 旅(飛ぶしくみ・航法・無線・きまり)は 取らない
 NO_GAME_PHOTO |= set(["pilot.ho-alcohol", "pilot.ho-chicago", "pilot.ho-jigyoyo", "pilot.ho-jikayo", "pilot.ho-jujisha", "pilot.ho-katashikisho", "pilot.ho-keikisho", "pilot.ho-kinshi", "pilot.ho-kokudo", "pilot.ho-kokuho", "pilot.ho-kokujoho", "pilot.ho-kokukyoku", "pilot.ho-kokunaisen", "pilot.ho-kokusaisen", "pilot.ho-kokuseki", "pilot.ho-kuiki", "pilot.ho-kyokugi", "pilot.ho-logbook", "pilot.ho-nisshi", "pilot.ho-shinnyu", "pilot.ho-shiyojigyo", "pilot.ho-taikaizen", "pilot.ho-taikurui", "pilot.ho-taikusho", "pilot.ho-teiki", "pilot.ho-unsojigyo", "pilot.ho-yakan", "pilot.ko-chizu", "pilot.ko-daitaikuko", "pilot.ko-etops", "pilot.ko-feet", "pilot.ko-glideslope", "pilot.ko-gnss", "pilot.ko-gps", "pilot.ko-hensa", "pilot.ko-hoi", "pilot.ko-ido", "pilot.ko-jihoku", "pilot.ko-jinkoeisei", "pilot.ko-jisa", "pilot.ko-kanseikoho", "pilot.ko-kazenosankakkei", "pilot.ko-keido", "pilot.ko-knot", "pilot.ko-koho", "pilot.ko-kokuro", "pilot.ko-koseki", "pilot.ko-localizer", "pilot.ko-marker", "pilot.ko-mercator", "pilot.ko-pnr", "pilot.ko-sbas", "pilot.ko-sekido", "pilot.ko-shinpoku", "pilot.ko-shukushaku", "pilot.ko-suisokukoho", "pilot.ko-tacan", "pilot.ko-taichisokudo", "pilot.ko-taikenkoro", "pilot.ko-touzainanboku", "pilot.ko-vor", "pilot.ko-waypoint", "pilot.mu-adsb", "pilot.mu-atis", "pilot.mu-callsign", "pilot.mu-handoff", "pilot.mu-kokueigo", "pilot.mu-kokumusentsushinshi", "pilot.mu-mayday", "pilot.mu-musen", "pilot.mu-panpan", "pilot.mu-shuhasu", "pilot.mu-squawk", "pilot.mu-transponder", "pilot.mu-volmet", "pilot.yo-arearule", "pilot.yo-aspect", "pilot.yo-bernoulli", "pilot.yo-camber", "pilot.yo-dutchroll", "pilot.yo-fudo", "pilot.yo-jimenkoka", "pilot.yo-juryoku", "pilot.yo-jushin", "pilot.yo-kakku", "pilot.yo-kamihikoki", "pilot.yo-koryoku", "pilot.yo-koutaiyoku", "pilot.yo-kyokaiso", "pilot.yo-mach", "pilot.yo-mukaekaku", "pilot.yo-mukaikaze", "pilot.yo-reynolds", "pilot.yo-rinkaimach", "pilot.yo-ryusenkei", "pilot.yo-sayohansayo", "pilot.yo-sayujiku", "pilot.yo-sennonsoku", "pilot.yo-shissoku", "pilot.yo-shissokukeiho", "pilot.yo-shogekiha", "pilot.yo-stickshaker", "pilot.yo-suiheihiko", "pilot.yo-suiryoku", "pilot.yo-yokohi", "pilot.yo-yokugata", "pilot.yo-yokumenkaju", "pilot.yo-yokutanuzu", "pilot.yo-yoryoku", "pilot.yo-yoryokukeisu", "pilot.yo-yottsunochikara", "pilot.yo-yudokoryoku", "pilot.yo-yugaikoryoku", "pilot.yo-zenen", "pilot.yo-zengojiku"])
 
+# フリックパイロット(2026-10-20 けいくん「写真が入ってないよ？」): 記事の 代表画像が 航空会社・軍用機だった ことばに、Commons から 目で 見て えらんだ 写真
+GAME_PICKS = {
+ "pilot.ki-hikoki": "File:1968-Cessna-172K.jpg",
+ "pilot.ki-ryokakuki": "File:1900C envol.jpg",
+ "pilot.ki-dotai": "File:Fuselage Piper PA18.JPG",
+ "pilot.ki-shuyoku": "File:Cloud over A340 wing.JPG",
+ "pilot.ki-biyoku": "File:Empennage components.png",
+ "pilot.ki-hojoyoku": "File:Alieron A-44 (PSF).png",
+ "pilot.ki-shokoda": "File:Light aircraft elevator and trim tab.JPG",
+ "pilot.ki-flap": "File:A fully extended flap.jpg",
+ "pilot.ki-engine": "File:ALF502.JPG",
+ "pilot.ki-landinggear": "File:Airbus A350-941 F-WWCF MSN002 main landing gear ILA Berlin 2016 06 (cropped).jpg",
+ "pilot.ki-sojuseki": "File:Airbus A380 cockpit.jpg",
+ "pilot.ki-kyakushitsu": "File:Lufthansa 737 interior.jpg",
+ "pilot.ki-seatbelt": "File:Airplane seat belt 2.jpg",
+ "pilot.ki-spoiler": "File:Lift dumperinnerworkingsa320.jpg",
+ "pilot.ki-slat": "File:Wing.slat.600pix.jpg",
+ "pilot.ki-throttle": "File:Center panel of B747-100 cockpit.jpg",
+ "pilot.ki-sojurin": "File:Pilotska kabina zrakoplova.JPG",
+ "pilot.ki-zenkyaku": "File:PT-ORK Cessna 150 (8181521509).jpg",
+ "pilot.ki-yokutan": "File:EC-JZY CDG-BCN (7173062326).jpg",
+ "pilot.ki-tanyoki": "File:PietenpolAirCamperGN1.JPG",
+ "pilot.ki-fukuyoki": "File:Fleet 16B (C-FPFF).jpg",
+ "pilot.ki-tanpatsuki": "File:G-AVRZ Piper PA-28-180 Cherokee C at Northrepps.jpg",
+ "pilot.ki-sohatsuki": "File:Beechcraft Baron 58TC.jpg",
+ "pilot.ki-koteikyaku": "File:De Havilland DH.82 Tiger Moth - undercarriage tailwheel detail.jpg",
+ "pilot.ki-keikiban": "File:Slingsby.t67c.panel.g-bocm.arp.jpg",
+ "pilot.ke-sixpack": "File:Six flight instruments.JPG",
+ "pilot.ki-kyumeidoi": "File:LifevestlocationSeatbeltreminder.jpg",
+ "pilot.ki-nacelle": "File:Boeing 707 engineviewedit.jpg",
+ "pilot.ki-rib": "File:DH-60 Gipsy Moth Wing Structure.JPG",
+ "pilot.ki-dasshutsuslide": "File:SSJ100 CEET 1 (9318514205).jpg",
+ "pilot.ki-groundspoiler": "File:Airbrakes on Capstan.jpg",
+ "pilot.ke-sokudokei": "File:ASI ME.png",
+ "pilot.ke-hoishijiki": "File:DG interior.png",
+ "pilot.ke-gyro": "File:3D Gyroscope.png",
+ "pilot.ke-blackbox": "File:Fdr sidefront.jpg",
+ "pilot.ke-seiatsuko": "File:StaticPort.jpg",
+ "pilot.ke-turncoord": "File:Turn indicators.png",
+ "pilot.ke-kikaki": "File:Holley 2280.jpg",
+ "pilot.ke-plug": "File:67d2scd.jpg",
+ "pilot.ke-kahen": "File:Cutaway constant speed propeller hub.JPG",
+ "pilot.ke-apu": "File:A380 APU P1230093.jpg",
+ "pilot.ke-pfd": "File:Primary Flight Display Garmin G1000.jpg",
+ "pilot.ke-asshukuki": "File:TF30 Side Cut Compressor HP.jpeg",
+ "pilot.ke-nenshoshitsu": "File:Combustor on Rolls-Royce Nene turbojet (1).jpg",
+ "pilot.ke-fms": "File:Honeywell FMS.jpg",
+ "pilot.te-chakuhyo": "File:Icing on a plane.jpg",
+ "pilot.te-hoshagiri": "File:20080313 Foggy Street.jpg",
+ "pilot.te-iryugiri": "File:Frankfurt, Friedrich-Ebert-Anlage in the fog.jpg",
+ "pilot.te-hyo": "File:Hailstones.jpg",
+ "pilot.te-microburst": "File:Downburst.jpg",
+ "pilot.ku-yudoro": "File:Ben Gurion International Airport 4 taxiway signs.JPG",
+ "pilot.ku-terminal": "File:Aerial wiew of Los Angeles International Airport, Juy 2022 (2).jpg",
+ "pilot.ku-gate": "File:Incheon Airport6.JPG",
+ "pilot.ku-bango": "File:15R-33L - Aeropuerto de Madrid-Barajas - detail.jpg",
+ "pilot.ku-hoan": "File:Aeroport de dubai terminal 3 egate (echecking of passport).jpg",
+ "pilot.ku-towerkan": "File:Control tower at Birmingham Airport, England 27June2019 arp.jpg",
+ "pilot.ku-papi": "File:PAPI Jersey Airport.JPG",
+ "pilot.ku-shinnyuto": "File:Approach Lighting System Bremen 1.jpg",
+ "pilot.ku-taxi": "File:Airbus airliners lined up at Chengdu.jpg",
+ "pilot.ku-asde": "File:Asr910.jpg",
+ "pilot.ku-towing": "File:BelAZ 74271 aircraft tractor 2.jpg",
+ "pilot.ji-saintex": "File:Antoine de Saint-Euxpery (1920).jpg",
+ "pilot.ji-simulator": "File:AC97-0295-13 a.jpeg",
+ "pilot.ji-ffs": "File:SSJ100 FFS 1 (9318513805).jpg",
+ "pilot.ji-seibishi": "File:Bombardier Maintenance (6240614231).jpg",
+ "pilot.ji-kittyhawk": "File:First flight2.jpg",
+ "pilot.ji-preflight": "File:DC10Checklist.jpg",
+ "pilot.ji-lilienthal": "File:Lilienthal in flight.jpg",
+ "pilot.ji-ohain": "File:Heinkel He 178 050602-F-1234P-002.jpg",
+ "pilot.ji-coleman": "File:Bessie Coleman in 1923.jpg",
+ "pilot.ji-widebody": "File:Boeing 777X flyover at 2025 Seafair - 01.jpg"
+}
+
 
 def main():
     only = [a for a in sys.argv[1:] if not a.startswith("--")]
@@ -34,9 +109,11 @@ def main():
     for g in games:
         for t in json.loads((ROOT / "data" / f"{g}.json").read_text(encoding="utf-8"))["terms"]:
             title = cache.get(t["name"])
-            if title:
-                S.SERIES[f"{g}.{t['id']}"] = (title, t["name"], g)
+            key = f"{g}.{t['id']}"
+            if title or key in GAME_PICKS:
+                S.SERIES[key] = (title or t["name"], t["name"], g)
     S.NO_PHOTO |= NO_GAME_PHOTO
+    S.PICKS.update(GAME_PICKS)
     print(len(S.SERIES), "語に Wikipedia の 記事", flush=True)
     sys.argv = sys.argv[:1] + [a for a in sys.argv[1:] if a.startswith("--")]
     S.main()

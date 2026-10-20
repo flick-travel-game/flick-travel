@@ -113,6 +113,10 @@ def lead_images(titles):
     return cache
 
 
+# key → "File:…"(記事の 代表画像の かわりに 目で 見て えらんだ Commons の 写真。fetch_game_photos.py が 足す)
+PICKS = {}
+
+
 def file_infos(titles):
     infos = json.loads(INFO_CACHE.read_text(encoding="utf-8")) if INFO_CACHE.exists() else {}
     todo = [t for t in dict.fromkeys(titles) if t.replace("_", " ") not in infos]
@@ -156,10 +160,12 @@ def main():
     m = F.re.search(r"=\s*(\{.*\});", js_path.read_text(encoding="utf-8"), F.re.S)
     photos = json.loads(m.group(1)) if m else {}
     keys = [k for k in keys if redo or k not in photos]  # もう取ってある ものは とばす(つづきから)
-    keys = [k for k in keys if k not in NO_PHOTO]  # 記事の 代表画像が 問題と 合わない もの(絵文字の カードの まま)
-    lead = lead_images([SERIES[k][0] for k in keys])
-    want = {}  # key → File:名前
+    keys = [k for k in keys if k not in NO_PHOTO or k in PICKS]  # 記事の 代表画像が 問題と 合わない もの(絵文字の カードの まま。PICKS で えらんだ ものは 取る)
+    lead = lead_images([SERIES[k][0] for k in keys if k not in PICKS])
+    want = {k: PICKS[k] for k in keys if k in PICKS}  # key → File:名前
     for k in keys:
+        if k in PICKS:
+            continue
         t = SERIES[k][0]
         c = lead.get(t)
         if c is None:

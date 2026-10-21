@@ -415,8 +415,8 @@ GAMES = {
     #   まとめは docs/フリックスーパーカー-はじめかた.md。ことばは tools/supercar/terms-<旅>.json → supercar/terms.js(tools/supercar/terms_js.py)。しくみは supercar/supercar.js(SUPERCAR。cabin.js を 写した)。
     #   ⚠️⚠️ 値段・事故・公道の スピードは 入れない。最高速は テストコースの 話(決まりは tools/supercar/PROMPT.md)
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/supercar/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)
-    "supercar": dict(name="フリックスーパーカー", modes="SUPERCAR", kinds=set(), color="#e03131", hero=True, logo=False,
-                     art=dict(word=(900, 200), hero=(1536, 1024), alt="フリックスーパーカー。世界の スーパーカーの 札が ならぶ 中で、男の子と 女の子と 白い 犬が 手を のばす 絵", wordv=2, iconv=2),
+    "supercar": dict(name="フリックスーパーカー", modes="SUPERCAR", kinds=set(), color="#e03131", hero=True, logo=True,
+                     art=dict(word=(900, 171), hero=(1536, 1024), alt="フリックスーパーカー。世界の スーパーカーの 札が ならぶ 中で、男の子と 女の子と 白い 犬が 手を のばす 絵", wordv=3, iconv=2),
                      lead="スーパーカーの きほん・しくみと 技術・イタリア / ドイツ / イギリス / 世界 / 日本の メーカーと 名車・ハイパーカーと 記録・伝説の 名車と 人の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、国・メーカー・発表した 年が 出るよ。車が すきな 子の 入門から、専門家の ことばまで。",
                      how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。馬力・最高速などの 数字は メーカーの 公表値を まるめた めやすで、年式や 版で ちがうよ。最高速や 加速は テストコースや サーキットの 話。道路では 交通ルールを 守ろうね。",
                      rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の スーパーカーが つながって 見えてくるよ。実在の メーカーとは 関係ありません。"),

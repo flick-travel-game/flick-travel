@@ -1485,7 +1485,7 @@
   ぼるしぇ → ぽるしぇ・ばがーに → ぱがーに・すーぶら → すーぷら / レベル3「スーパーーはかせに」→「スーパーカーはかせに」/ ことばの いみ「ちかくに」→「じめんに」・「ふらずに」→「ふらつかずに」。もとの 絵は 入れものに 入れていない。
   ⚠️ 「みにかー」の 札の 車は 本物の 小さな 車に にている(ロゴ・ナンバーは 無い)。気に なるなら 作りなおしで
 - **アイコンは 入れた**(2026-10-21。けいくんの 四角い 絵 1254px を 切らずに そのまま `tools/supercar/art/square-src.png` → `python3 tools/icon_from_square.py supercar`。`iconv` = 2)。四角い 絵の 小さい 字の まちがい(ぼるしぇ・ばがーに・ゲームに 無い ぺにんふぁりーな・キャビンアテンダントの 4択「かしこまりました」と 着く時刻の 計算・レベルの 説明)は アイコンの 大きさでは 読めないので そのまま(医師・教師と 同じ 判断)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
-- 題名は まだ 文字(`logo=False`)。届いたら 題名の 透明 PNG → `title_from_art.py`(`logo=True`・`art.word` を 実寸に・`wordv` +1)。
+- **題名も 入れた**(2026-10-21。けいくんの ChatGPT の 切りぬき `tools/supercar/art/title-src.png` → `python3 tools/title_from_art.py supercar` → `supercar/logo-word.webp` 900×171。`logo=True`・`wordv` = 3)。「フリックスーパーカー」10字(パの ゜も)を 読んで 確かめた。差しかえる ときは 同じ 台本で `wordv` +1
   ⚠️ 絵を 頼む ときは **実在の 車の 形・ロゴ・エンブレム・ナンバー**を 描かせない。届いたら 字を 切り出して 読む(「スーバーカー」「スーパーカ」に なりやすい)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵と けいくんの OK の あと**
 - ⚠️ 組み立てる 前に `pip install sudachipy sudachidict_core==20260723.1`(⚠️ それでも `supein/spanish.js` だけは ふりがなが 1か所 変わる(大人数)。スーパーカーと 関係ないので `git checkout supein/spanish.js` で もどし、`supein/index.html` の `spanish.js?v=` も もとに もどした)(⚠️ 版を そろえないと **ほかの ゲームの ふりがなが 変わる**。2026-10-21 に 1回 新しい 版で 組み立てて しまい、ほかの ゲームの terms.js を もどした)
 - 確かめかた: `node tools/play-all.mjs supercar/`(全198ステージ。旅 9×11 + マスター 99)/ `node tools/click-all.mjs supercar/`(W=320 も)。`python3 tools/supercar/terms_js.py --check`

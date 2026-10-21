@@ -1,0 +1,727 @@
+[
+ {
+  "id": "ki-captain",
+  "name": "キャプテン",
+  "reading": "きゃぷてん",
+  "journey": "kihon",
+  "category": "乗員と 操縦室",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧢",
+  "mapNode": "kihon:cockpit",
+  "field": "英語",
+  "relatedTerms": [
+   "ki-kicho",
+   "ki-kichoannounce"
+  ],
+  "description": "機長を 英語で 呼ぶ ときの 言葉です。機内放送では「こちらは キャプテンです」と 名のる ことが あります。客室乗務員も 英語で こう 呼びます。",
+  "ei": "captain"
+ },
+ {
+  "id": "ki-hijikake",
+  "name": "ひじかけ",
+  "reading": "ひじかけ",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛋️",
+  "mapNode": "kihon:seat",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-zaseki",
+   "ki-recline"
+  ],
+  "description": "座席の 横に ある うでを のせる ところです。通路側の ひじかけは、上に 上がる ものも あります。車いすから 座席へ 移る かたの 役に 立ちます。",
+  "ei": "armrest"
+ },
+ {
+  "id": "ki-recline",
+  "name": "リクライニング",
+  "reading": "りくらいにんぐ",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "kihon:seat",
+  "field": "接遇",
+  "relatedTerms": [
+   "ki-hijikake",
+   "ki-zaseki"
+  ],
+  "description": "座席の 背もたれを うしろへ たおす ことです。たおす 前に うしろの 人へ ひと声 かけると、おたがいに 気持ちよく すごせます。離陸と 着陸の ときは もどします。",
+  "settai": "うしろの お客さまが 食事中なら、少し 待つ ように そっと お伝え します。",
+  "ei": "recline"
+ },
+ {
+  "id": "ki-shade",
+  "name": "窓のシェード",
+  "reading": "まどのしぇーど",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌗",
+  "mapNode": "kihon:tsuro",
+  "field": "保安",
+  "relatedTerms": [
+   "ki-mado",
+   "ki-denshishade"
+  ],
+  "description": "窓を おおう 日よけです。離陸と 着陸の ときは あけて もらう ことが 多く、外の ようすが 客室から 見える ように します。",
+  "ei": "window shade"
+ },
+ {
+  "id": "ki-dokushoto",
+  "name": "読書灯",
+  "reading": "どくしょとう",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "kihon:overhead",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-yobidashi",
+   "ki-shomei"
+  ],
+  "description": "座席の 上に ある 小さな ライトです。客室を 暗く した ときも、本を 読んだり 書類を 書いたり できます。となりの 人の まぶしさにも 気を くばります。",
+  "ei": "reading light"
+ },
+ {
+  "id": "ki-yobidashi",
+  "name": "呼び出しボタン",
+  "reading": "よびだしぼたん",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "kihon:overhead",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-dokushoto",
+   "ki-chime"
+  ],
+  "description": "お客さまが 客室乗務員を 呼ぶ ための ボタンです。押すと 音が 鳴り、ランプが つきます。客室乗務員は すぐに その 席へ 向かいます。",
+  "settai": "「お呼びでしょうか」と 笑顔で うかがい、用が すんだら ランプを 消します。",
+  "ei": "call button"
+ },
+ {
+  "id": "ki-jetki",
+  "name": "ジェット機",
+  "reading": "じぇっとき",
+  "journey": "kihon",
+  "category": "機体",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛫",
+  "mapNode": "kihon:kitai",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-hikoki",
+   "ki-sohatsu"
+  ],
+  "description": "ジェットエンジンで 飛ぶ 飛行機です。高い 空を 速く 飛べます。いまの 旅客機の 多くが ジェット機です。",
+  "ei": "jet"
+ },
+ {
+  "id": "ki-shuyoku",
+  "name": "主翼",
+  "reading": "しゅよく",
+  "journey": "kihon",
+  "category": "機体",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪽",
+  "mapNode": "kihon:kitai",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-hikoki",
+   "ki-winglet"
+  ],
+  "description": "機体を 空に うかばせる 大きな つばさです。多くの 旅客機では、つばさの 中に 燃料を 入れて います。窓から つばさが 見える 席も あります。",
+  "ei": "wing"
+ },
+ {
+  "id": "ki-kinai",
+  "name": "機内",
+  "reading": "きない",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛋️",
+  "mapNode": "kihon:economy",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-cabin",
+   "ki-shomei"
+  ],
+  "description": "飛行機の 中の ことです。地上より 空気が かわきやすいので、客室乗務員は 飲みものを すすめて、お客さまが 気持ちよく すごせる ように します。",
+  "settai": "かわいた 空気の 中なので、こまめに お水を おすすめ します。"
+ },
+ {
+  "id": "ki-seatpocket",
+  "name": "シートポケット",
+  "reading": "しーとぽけっと",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "kihon:seat",
+  "field": "保安",
+  "relatedTerms": [
+   "ki-table",
+   "ki-zaseki"
+  ],
+  "description": "前の 座席の うしろに ある ポケットです。安全の しおりが 入って います。うすい 物を 入れる ところで、重い 物は 入れない ように お願い します。",
+  "settai": "おりる 前に「お忘れ物は ございませんか」と 声を かけます。",
+  "ei": "seat pocket"
+ },
+ {
+  "id": "ki-handrail",
+  "name": "ハンドレール",
+  "reading": "はんどれーる",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤚",
+  "mapNode": "kihon:overhead",
+  "field": "保安",
+  "relatedTerms": [
+   "ki-bin",
+   "ki-tsuro"
+  ],
+  "description": "上の 棚の 下がわに ある、手で つかむ ための 手すりです。通路を 歩く ときに つかまると、少し ゆれても 安心です。",
+  "ei": "handrail"
+ },
+ {
+  "id": "ki-ottoman",
+  "name": "オットマン",
+  "reading": "おっとまん",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "kihon:first",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-first",
+   "ki-fullflat"
+  ],
+  "description": "足を のせる 台です。上の クラスの 席に ついて いる ことが あり、足を のばして ゆったり 休めます。",
+  "ei": "ottoman"
+ },
+ {
+  "id": "ki-nagasu",
+  "name": "流すボタン",
+  "reading": "ながすぼたん",
+  "journey": "kihon",
+  "category": "化粧室",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚽",
+  "mapNode": "kihon:lavatory",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-shiyochu",
+   "ki-vacuum"
+  ],
+  "description": "化粧室で 水を 流す ボタンです。大きな 音が するので、はじめての お客さまは おどろく ことが あります。お子さまには 先に 教えて あげます。",
+  "settai": "「大きな 音が しますが 大丈夫ですよ」と お子さまに 伝えます。",
+  "ei": "flush button"
+ },
+ {
+  "id": "ki-nikaiseki",
+  "name": "2階席",
+  "reading": "にかいせき",
+  "journey": "kihon",
+  "category": "機体",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kihon:kitai",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-widebody",
+   "ki-zaseki"
+  ],
+  "description": "客室が 上と 下の 2つの 階に 分かれた 機体の、上の 階の 席です。階段で つながって いて、客室乗務員も 上と 下を 行き来します。",
+  "ei": "upper deck"
+ },
+ {
+  "id": "ki-sohatsu",
+  "name": "双発機",
+  "reading": "そうはつき",
+  "journey": "kihon",
+  "category": "機体",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "kihon:kitai",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-jetki",
+   "ki-widebody"
+  ],
+  "description": "エンジンを 2つ つけた 飛行機です。いまの 旅客機には 双発機が 多く、遠い 国へ 飛ぶ 大きな 機体にも あります。",
+  "ei": "twin-engine"
+ },
+ {
+  "id": "ki-kitaibango",
+  "name": "機体番号",
+  "reading": "きたいばんごう",
+  "journey": "kihon",
+  "category": "機体",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "kihon:kitai",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-katashiki",
+   "ki-hikoki"
+  ],
+  "description": "機体 一つずつに つけられた 番号です。日本の 機体は「JA」で はじまります。同じ 種類の 機体でも、この 番号で 見分けます。",
+  "ei": "registration"
+ },
+ {
+  "id": "ki-harness",
+  "name": "ショルダーハーネス",
+  "reading": "しょるだーはーねす",
+  "journey": "kihon",
+  "category": "乗務員の 持ち場",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎽",
+  "mapNode": "kihon:jumpseat",
+  "field": "保安",
+  "relatedTerms": [
+   "ki-jumpseat",
+   "ki-mochiba"
+  ],
+  "description": "ジャンプシートに ついて いる、肩から しめる ベルトです。体を しっかり 席に とめるので、離陸や 着陸の ときも すぐに 動ける 姿勢を たもてます。",
+  "ei": "shoulder harness"
+ },
+ {
+  "id": "ki-crewrest",
+  "name": "クルーレスト(乗務員の休憩室)",
+  "reading": "くるーれすと",
+  "journey": "kihon",
+  "category": "乗務員の 持ち場",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛌",
+  "mapNode": "kihon:jumpseat",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-mochiba",
+   "ki-crew"
+  ],
+  "description": "長い 旅で 乗務員が 交代で 休む ための 場所です。ベッドが ある ものも あります。しっかり 休んで、到着まで 元気に はたらけるように します。",
+  "ei": "crew rest"
+ },
+ {
+  "id": "ki-shomei",
+  "name": "客室の照明",
+  "reading": "きゃくしつのしょうめい",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "kihon:overhead",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-dokushoto",
+   "ki-kanripanel"
+  ],
+  "description": "客室の 明かりです。夜の 旅では 暗く して、お客さまが ねむれる ように します。夜の 着陸前に 暗く するのは、目を 外の 暗さに なれさせる ためでも あります。",
+  "ei": "cabin lights"
+ },
+ {
+  "id": "ki-flightdeck",
+  "name": "フライトデッキ",
+  "reading": "ふらいとでっき",
+  "journey": "kihon",
+  "category": "乗員と 操縦室",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "kihon:cockpit",
+  "field": "英語",
+  "relatedTerms": [
+   "ki-cockpit",
+   "ki-kicho"
+  ],
+  "description": "操縦室の 別の 呼びかたです。英語の 放送や 書類で よく 使われます。客室乗務員は どちらの 言葉でも わかる ように して おきます。",
+  "ei": "flight deck"
+ },
+ {
+  "id": "ki-minibar",
+  "name": "ミニバー",
+  "reading": "みにばー",
+  "journey": "kihon",
+  "category": "ギャレー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧃",
+  "mapNode": "kihon:galley",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-galley",
+   "ki-koho"
+  ],
+  "description": "お客さまが 自由に 飲みものや おかしを とれる コーナーです。長い 旅の 機内に 置かれる ことが あります。客室乗務員が ときどき 中身を 足します。",
+  "ei": "minibar"
+ },
+ {
+  "id": "ki-curtain",
+  "name": "仕切りのカーテン",
+  "reading": "しきりのかーてん",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎭",
+  "mapNode": "kihon:business",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-business",
+   "ki-economy"
+  ],
+  "description": "クラスと クラスの あいだを 区切る カーテンです。それぞれの 客室で 落ちついて すごせる ように します。離陸と 着陸の ときは あけて おく ことが 多いです。",
+  "ei": "curtain"
+ },
+ {
+  "id": "ki-staggered",
+  "name": "スタッガード配列",
+  "reading": "すたっがーどはいれつ",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kihon:business",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-direct",
+   "ki-business"
+  ],
+  "description": "席を ななめに ずらして ならべる 方法です。となりの 人と 顔が 近く ならず、多くの 席から 通路へ 出やすく なります。",
+  "ei": "staggered layout"
+ },
+ {
+  "id": "ki-seatmap",
+  "name": "シートマップ",
+  "reading": "しーとまっぷ",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "kihon:seat",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-zasekibango",
+   "ki-config"
+  ],
+  "description": "機内の 席の ならびを 図に した ものです。客室乗務員は これを 見て、手助けが いる かたの 席や 特別な 食事の 席を たしかめます。",
+  "ei": "seat map"
+ },
+ {
+  "id": "ki-333",
+  "name": "3-3-3配列",
+  "reading": "さんさんさんはいれつ",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kihon:economy",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-widebody",
+   "ki-config"
+  ],
+  "description": "横 1列に 3席・3席・3席と ならぶ 席の ならびです。あいだに 通路が 2本 あります。はばの 広い 機体の エコノミークラスで よく 見られます。"
+ },
+ {
+  "id": "ki-chime",
+  "name": "チャイム",
+  "reading": "ちゃいむ",
+  "journey": "kihon",
+  "category": "乗務員の 持ち場",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎵",
+  "mapNode": "kihon:jumpseat",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-yobidashi",
+   "ki-beltsign"
+  ],
+  "description": "機内で 鳴る「ポーン」という 合図の 音です。お客さまの 呼び出しや、乗務員どうしの 連絡などで 鳴りかたが ちがいます。客室乗務員は 音で 聞き分けます。",
+  "ei": "chime"
+ },
+ {
+  "id": "ki-drain",
+  "name": "ドレイン(排水口)",
+  "reading": "どれいん",
+  "journey": "kihon",
+  "category": "ギャレー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚰",
+  "mapNode": "kihon:galley",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-galley",
+   "ki-boiler"
+  ],
+  "description": "ギャレーの 流しに ある、水を 捨てる 口です。飲み残しの 飲みものは ここに 流します。つまらない ように、物を 入れない よう 気を つけます。",
+  "ei": "drain"
+ },
+ {
+  "id": "ki-config",
+  "name": "コンフィギュレーション(座席配置)",
+  "reading": "こんふぃぎゅれーしょん",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kihon:economy",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-seatmap",
+   "ki-333"
+  ],
+  "description": "機内の 座席の ならべかたの ことです。同じ 型式の 機体でも、クラスの 数や 席の 数が ちがう ことが あります。客室乗務員は 乗る 前に 確かめます。",
+  "ei": "configuration"
+ },
+ {
+  "id": "ki-aft",
+  "name": "アフトキャビン(後方の客室)",
+  "reading": "あふときゃびん",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔙",
+  "mapNode": "kihon:economy",
+  "field": "英語",
+  "relatedTerms": [
+   "ki-forward",
+   "ki-koho"
+  ],
+  "description": "客室の うしろの ほうの ことです。英語で「アフト」と 言います。乗務員どうしの 連絡で、場所を みじかく 伝える ときに 使います。",
+  "ei": "aft cabin"
+ },
+ {
+  "id": "ki-forward",
+  "name": "フォワードキャビン(前方の客室)",
+  "reading": "ふぉわーどきゃびん",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔜",
+  "mapNode": "kihon:economy",
+  "field": "英語",
+  "relatedTerms": [
+   "ki-aft",
+   "ki-zenpo"
+  ],
+  "description": "客室の 前の ほうの ことです。英語で「フォワード」と 言います。「フォワードの ギャレー」の ように、場所を 伝える ときに 使います。",
+  "ei": "forward cabin"
+ },
+ {
+  "id": "ki-turndown",
+  "name": "ターンダウンサービス",
+  "reading": "たーんだうんさーびす",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌛",
+  "mapNode": "kihon:first",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-first",
+   "ki-fullflat"
+  ],
+  "description": "席を ベッドに して、ふとんや まくらを ととのえる サービスです。上の クラスで、お客さまが 休みたい ときに 客室乗務員が 用意します。",
+  "settai": "「お休みの ご用意を いたしましょうか」と うかがいます。",
+  "ei": "turndown service"
+ },
+ {
+  "id": "ki-suite",
+  "name": "スイート",
+  "reading": "すいーと",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏨",
+  "mapNode": "kihon:first",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-koshitsu",
+   "ki-first"
+  ],
+  "description": "とびらで 区切られた 小さな 部屋の ような 席です。ホテルの 部屋の ように、ゆったり すごせます。一部の 機体の 上の クラスに あります。",
+  "settai": "とびらが しまって いる ときは、そっと ノックして お声がけ します。",
+  "ei": "suite"
+ },
+ {
+  "id": "ki-lieflat",
+  "name": "ライフラット",
+  "reading": "らいふらっと",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kihon:business",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-fullflat",
+   "ki-business"
+  ],
+  "description": "ほぼ 平らに なりますが、少しだけ ななめに なる 席です。まっすぐ 平らに なる フルフラットとは 少し ちがいます。",
+  "ei": "lie-flat"
+ },
+ {
+  "id": "ki-direct",
+  "name": "ダイレクトアイルアクセス",
+  "reading": "だいれくとあいるあくせす",
+  "journey": "kihon",
+  "category": "客席と クラス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "kihon:business",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-staggered",
+   "ki-business"
+  ],
+  "description": "どの 席からも、となりの 人を またがずに 通路へ 出られる ならびかたです。夜に ねむって いる 人を 起こさずに すみます。",
+  "ei": "direct aisle access"
+ },
+ {
+  "id": "ki-kichoannounce",
+  "name": "機長アナウンス",
+  "reading": "きちょうあなうんす",
+  "journey": "kihon",
+  "category": "乗員と 操縦室",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎙️",
+  "mapNode": "kihon:cockpit",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-kicho",
+   "ki-pa"
+  ],
+  "description": "機長が 客室へ 向けて する 放送です。飛ぶ 高さや 到着の 時刻、ゆれの 予報などを 伝えます。客室乗務員は 内容を 聞いて、サービスの 時間を 考えます。",
+  "ei": "captain's announcement"
+ },
+ {
+  "id": "ki-binlock",
+  "name": "ビンのロック",
+  "reading": "びんのろっく",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "kihon:overhead",
+  "field": "保安",
+  "relatedTerms": [
+   "ki-bin",
+   "ki-handrail"
+  ],
+  "description": "上の 棚を しっかり 閉めて、かぎを かける ことです。離陸の 前に、客室乗務員が 一つずつ 閉まって いるか 見て まわります。"
+ },
+ {
+  "id": "ki-crossaisle",
+  "name": "クロスアイル(横の通路)",
+  "reading": "くろすあいる",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kihon:tsuro",
+  "field": "保安",
+  "relatedTerms": [
+   "ki-tsuro",
+   "ki-widebody"
+  ],
+  "description": "2本の 通路を 横に つなぐ 通り道です。ドアの 近くに ある ことが 多く、客室乗務員や お客さまが 向こうの 通路へ 移る ときに 使います。",
+  "ei": "cross aisle"
+ },
+ {
+  "id": "ki-breather",
+  "name": "ブリーザーホール(窓の小さな穴)",
+  "reading": "ぶりーざーほーる",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕳️",
+  "mapNode": "kihon:tsuro",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-mado",
+   "ki-yoatsu"
+  ],
+  "description": "客室の 窓に ある 小さな 穴です。重なった 窓の 板の あいだの 空気の 圧力を そろえ、くもりにくく する 役目が あります。",
+  "ei": "breather hole"
+ },
+ {
+  "id": "ki-winglet",
+  "name": "ウイングレット",
+  "reading": "ういんぐれっと",
+  "journey": "kihon",
+  "category": "機体",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "kihon:kitai",
+  "field": "しごと",
+  "relatedTerms": [
+   "ki-shuyoku",
+   "ki-sohatsu"
+  ],
+  "description": "つばさの 先が 上に まがった 部分です。つばさの 先に できる 空気の うずを へらして、燃料を 少なく して 飛べる ように します。",
+  "ei": "winglet"
+ },
+ {
+  "id": "ki-denshishade",
+  "name": "電子シェード",
+  "reading": "でんししぇーど",
+  "journey": "kihon",
+  "category": "座席まわり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔅",
+  "mapNode": "kihon:tsuro",
+  "field": "サービス",
+  "relatedTerms": [
+   "ki-shade",
+   "ki-mado"
+  ],
+  "description": "ボタンで 窓の 明るさを かえられる しくみです。日よけの 板の かわりに、窓そのものが 暗く なります。一部の 新しい 機体に あります。",
+  "settai": "使いかたに こまって いる かたに、ボタンの 場所を お伝え します。",
+  "ei": "electronic window shade"
+ }
+]

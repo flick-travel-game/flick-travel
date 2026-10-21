@@ -1,0 +1,1362 @@
+[
+ {
+  "id": "se-meal",
+  "name": "機内食",
+  "reading": "きないしょく",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍱",
+  "mapNode": "service:meal",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-menu",
+   "se-cart",
+   "se-tokubetsu"
+  ],
+  "description": "飛行機の 中で 出す 食事です。地上の 工場で 作り、機内の オーブンで あたためて お出しします。上空は 空気が かわいて いて 味を 感じにくいと いわれ、味つけを くふうして います。",
+  "settai": "「お食事を お持ちしました」と 笑顔で テーブルに そっと 置きます。",
+  "ei": "in-flight meal"
+ },
+ {
+  "id": "se-tokubetsu",
+  "name": "特別食",
+  "reading": "とくべつしょく",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "service:tokubetsu",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-halal",
+   "se-allergy",
+   "se-vege"
+  ],
+  "description": "宗教の 決まりや 体の 理由などで、ふつうの 機内食が 合わない かたの ための 食事です。予約の ときに 前もって たのんで もらい、その かたの 席まで お届けします。",
+  "settai": "「ご予約の お食事です」と お名前を 確かめて お渡しします。",
+  "ei": "special meal"
+ },
+ {
+  "id": "se-drink",
+  "name": "ドリンク",
+  "reading": "どりんく",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥤",
+  "mapNode": "service:drink",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-juice",
+   "se-coffee",
+   "se-water"
+  ],
+  "description": "機内で お出しする 飲みもの です。上空の 機内は とても かわいて いるので、こまめに 水分を とる ことは 体を 守る ことにも つながります。",
+  "settai": "「お飲みものは いかがですか」と 目を 見て たずねます。",
+  "ei": "drink"
+ },
+ {
+  "id": "se-oshibori",
+  "name": "おしぼり",
+  "reading": "おしぼり",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧻",
+  "mapNode": "service:oshibori",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-meal",
+   "se-blanket"
+  ],
+  "description": "手や 顔を ふく ための ぬれた タオルです。食事の 前などに お配りします。日本で 生まれた おもてなしで、海外の 航空会社でも 出す ところが あります。",
+  "settai": "「おしぼりを どうぞ」と 手に 取りやすい 向きで さし出します。",
+  "ei": "hot towel"
+ },
+ {
+  "id": "se-blanket",
+  "name": "ブランケット",
+  "reading": "ぶらんけっと",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛌",
+  "mapNode": "service:blanket",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-makura",
+   "se-amenity"
+  ],
+  "description": "ひざや 体に かける うすい 毛布です。機内は 場所や 時間で 寒く 感じる ことが あるので、ほしい かたに お配りします。ねむって いる かたの ようすにも 気を くばります。",
+  "settai": "「寒く ありませんか」と 声を かけ、ほしい かたに お持ちします。",
+  "ei": "blanket"
+ },
+ {
+  "id": "se-makura",
+  "name": "まくら",
+  "reading": "まくら",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛏",
+  "mapNode": "service:blanket",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-blanket",
+   "se-amenity"
+  ],
+  "description": "首や 頭を 支えて、座席で 休みやすく する ための ものです。長い 飛行では、首の うしろや 腰に あてて つかう かたも います。",
+  "settai": "「まくらを お使いに なりますか」と そっと たずねます。",
+  "ei": "pillow"
+ },
+ {
+  "id": "se-amenity",
+  "name": "アメニティ",
+  "reading": "あめにてぃ",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "service:amenity",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-slipper",
+   "se-haburashi",
+   "se-blanket"
+  ],
+  "description": "長い 旅を 心地よく すごして もらう ための 小物です。歯ブラシ・スリッパ・アイマスク などが あり、どの クラスか や 路線で 中身が ちがいます。",
+  "settai": "「よろしければ お使いください」と 中身も そえて お渡しします。",
+  "ei": "amenity"
+ },
+ {
+  "id": "se-hanbai",
+  "name": "機内販売",
+  "reading": "きないはんばい",
+  "journey": "service",
+  "category": "販売と免税",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛍",
+  "mapNode": "service:hanbai",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-menzei",
+   "se-cart",
+   "se-shoppay"
+  ],
+  "description": "機内で 品物を 売る サービスです。カートを 押して 通路を 回ったり、たのまれた 品を 席まで お届けしたり します。旅の 思い出や おみやげに えらばれます。",
+  "settai": "「何か お手伝い いたしましょうか」と ゆっくり 見て もらいます。",
+  "ei": "in-flight sales"
+ },
+ {
+  "id": "se-menzei",
+  "name": "免税品",
+  "reading": "めんぜいひん",
+  "journey": "service",
+  "category": "販売と免税",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "service:menzei",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-hanbai",
+   "se-menzeihani",
+   "se-kosui"
+  ],
+  "description": "国と 国の あいだを 飛ぶ 国際線で、税金が かからずに 買える 品物です。化粧品や 香水 などが あります。持ちこめる 量には 国ごとの 決まりが あります。",
+  "settai": "「お持ち帰りの 量の 決まりも ご案内 いたします」と そえます。",
+  "ei": "duty-free"
+ },
+ {
+  "id": "se-nyukokucard",
+  "name": "入国カード",
+  "reading": "にゅうこくかーど",
+  "journey": "service",
+  "category": "入国の書類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "service:shorui",
+  "field": "空港",
+  "relatedTerms": [
+   "se-zeikan",
+   "se-kakikata",
+   "se-passport"
+  ],
+  "description": "よその 国に 入る ときに 名前や 滞在先 などを 書く 紙です。必要な 国へ 向かう 便で お配りします。国に よっては インターネットで 出す ところも あります。",
+  "settai": "「入国の カードは お入り用ですか」と 人数ぶん お配りします。",
+  "ei": "arrival card"
+ },
+ {
+  "id": "se-ehon",
+  "name": "絵本",
+  "reading": "えほん",
+  "journey": "service",
+  "category": "子どもの サービス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "service:kids",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-omocha",
+   "se-childmeal"
+  ],
+  "description": "子どもの お客さまに お渡しする 本です。長い 時間 座って いると 子どもは あきやすいので、楽しく すごせる ように 用意して いる 航空会社が あります。",
+  "settai": "「どうぞ 読んでね」と 目の 高さを 合わせて 渡します。",
+  "ei": "picture book"
+ },
+ {
+  "id": "se-cart",
+  "name": "カート",
+  "reading": "かーと",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "service:cart",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-mealcart",
+   "se-meal",
+   "se-hanbai"
+  ],
+  "description": "食事や 飲みものを のせて 通路を 運ぶ ワゴンです。せまい 通路に 合わせて 細長い 形に なって います。止める ときは かならず ブレーキを かけます。",
+  "settai": "「うしろを 通ります」と 声を かけて ゆっくり 押します。",
+  "ei": "cart"
+ },
+ {
+  "id": "se-juice",
+  "name": "ジュース",
+  "reading": "じゅーす",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧃",
+  "mapNode": "service:drink",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-drink",
+   "se-softdrink"
+  ],
+  "description": "果物などから 作った 飲みもの です。オレンジや りんご などが あり、子どもの お客さまにも 人気が あります。あまり 冷たすぎない ように 気を くばる ことも あります。",
+  "settai": "「オレンジと りんごが ございます」と 中身を ならべて たずねます。",
+  "ei": "juice"
+ },
+ {
+  "id": "se-coffee",
+  "name": "コーヒー",
+  "reading": "こーひー",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☕",
+  "mapNode": "service:drink",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-drink",
+   "se-ryokucha"
+  ],
+  "description": "豆を いって 作る 温かい 飲みものです。食事の あとに たのむ かたが 多く います。熱いので、カップを 手わたす ときは 持ち手の 向きに 気を つけます。",
+  "settai": "「熱いので お気を つけください」と ひと言 そえます。",
+  "ei": "coffee"
+ },
+ {
+  "id": "se-ryokucha",
+  "name": "緑茶",
+  "reading": "りょくちゃ",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍵",
+  "mapNode": "service:drink",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-drink",
+   "se-washoku"
+  ],
+  "description": "日本の 緑色の お茶です。和食と よく 合います。日本の 便では 海外の お客さまが はじめて 飲む ことも あり、日本の 味を 知る きっかけに なります。",
+  "settai": "「日本の お茶は いかがですか」と すすめます。",
+  "ei": "green tea"
+ },
+ {
+  "id": "se-water",
+  "name": "ミネラルウォーター",
+  "reading": "みねらるうぉーたー",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "service:drink",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-drink",
+   "se-juice"
+  ],
+  "description": "天然の 水を つめた 飲み水です。長い 飛行では こまめに 水分を とると、足の 血の めぐりを 守る ことに つながります。夜の 便でも 声を かけられる ように します。",
+  "settai": "「お水を お持ちしましょうか」と ねむって いない かたに 声を かけます。",
+  "ei": "mineral water"
+ },
+ {
+  "id": "se-slipper",
+  "name": "スリッパ",
+  "reading": "すりっぱ",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥿",
+  "mapNode": "service:amenity",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-amenity",
+   "se-haburashi"
+  ],
+  "description": "機内で はく 室内用の くつです。長い 飛行では 足が むくみやすいので、くつを ぬいで 楽に すごせる ように 用意する ことが あります。",
+  "settai": "「よろしければ お使いください」と 足もとに そっと 置きます。",
+  "ei": "slippers"
+ },
+ {
+  "id": "se-haburashi",
+  "name": "歯ブラシ",
+  "reading": "はぶらし",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪥",
+  "mapNode": "service:amenity",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-amenity",
+   "se-slipper"
+  ],
+  "description": "歯を みがく ための 小さな ブラシです。長い 飛行や 夜の 便では、化粧室で 歯を みがいて すっきり したい かたの ために アメニティに 入って います。",
+  "settai": "「化粧室にも ご用意が ございます」と 場所も 伝えます。",
+  "ei": "toothbrush"
+ },
+ {
+  "id": "se-omocha",
+  "name": "おもちゃ",
+  "reading": "おもちゃ",
+  "journey": "service",
+  "category": "子どもの サービス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧸",
+  "mapNode": "service:kids",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-ehon",
+   "se-childmeal"
+  ],
+  "description": "子どもの お客さまに 配る 遊び道具です。小さな 部品で のどに つまらない ように、年れいに 合った ものを えらんで お渡しします。",
+  "settai": "「どれが いいかな」と 子どもに えらんで もらいます。",
+  "ei": "toy"
+ },
+ {
+  "id": "se-menu",
+  "name": "メニュー",
+  "reading": "めにゅー",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "service:meal",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-meal",
+   "se-zensai",
+   "se-main"
+  ],
+  "description": "その 便で 出す 料理や 飲みものを 書いた 案内です。前もって 見て もらうと、えらぶ ときに 迷いにくく なります。料理の 中身を 聞かれたら やさしく 説明します。",
+  "settai": "「本日の お料理は こちらです」と 両手で お渡しします。",
+  "ei": "menu"
+ },
+ {
+  "id": "se-halal",
+  "name": "ハラールミール",
+  "reading": "はらーるみーる",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "service:tokubetsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "se-tokubetsu",
+   "se-kosher",
+   "se-mealcode"
+  ],
+  "description": "イスラムの 教えの 決まりに そって 作った 食事です。豚肉や お酒を 使いません。その 決まりを 大事に する かたが 安心して 食べられる ように、前もって 用意します。",
+  "settai": "「ご予約の お食事です」と 中身を 確かめて お渡しします。",
+  "ei": "halal meal"
+ },
+ {
+  "id": "se-vege",
+  "name": "ベジタリアンミール",
+  "reading": "べじたりあんみーる",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥗",
+  "mapNode": "service:tokubetsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "se-tokubetsu",
+   "se-hindu"
+  ],
+  "description": "肉や 魚を 使わない 食事です。考えかたや 体の 理由など、えらぶ 理由は 人に よって さまざまです。卵や 乳を 使うか どうかで いくつかの 種類が あります。",
+  "settai": "ご予約の 種類を 確かめてから お渡しします。",
+  "ei": "vegetarian meal"
+ },
+ {
+  "id": "se-kosher",
+  "name": "コーシャミール",
+  "reading": "こーしゃみーる",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✡",
+  "mapNode": "service:tokubetsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "se-halal",
+   "se-tokubetsu"
+  ],
+  "description": "ユダヤの 教えの 決まりに そって 作った 食事です。決まった 台所で 作り、封を した まま 運ばれます。その 封を お客さまに 確かめて もらってから あける ことが あります。",
+  "settai": "封を あけずに お渡しし、お客さまの 希望を うかがいます。",
+  "ei": "kosher meal"
+ },
+ {
+  "id": "se-allergy",
+  "name": "アレルギー対応食",
+  "reading": "あれるぎーたいおうしょく",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚠",
+  "mapNode": "service:tokubetsu",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-tokubetsu",
+   "se-gluten",
+   "se-tokubetsukakunin"
+  ],
+  "description": "たまごや 小麦 などで 体の ぐあいが わるく なる かたの ために、その 材料を 使わずに 作った 食事です。お名前と 中身を ていねいに 確かめて から お渡しします。",
+  "settai": "「ご注文の 内容と 合って いますか」と いっしょに 確かめます。",
+  "ei": "allergy-friendly meal"
+ },
+ {
+  "id": "se-childmeal",
+  "name": "チャイルドミール",
+  "reading": "ちゃいるどみーる",
+  "journey": "service",
+  "category": "子どもの サービス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍔",
+  "mapNode": "service:kids",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-babymeal",
+   "se-omocha",
+   "se-ehon"
+  ],
+  "description": "子どもが 食べやすい ように 作った 機内食です。子どもの 好きな 味や 形に くふうして あります。予約の ときに 前もって たのむ ことが 多い 特別食の ひとつです。",
+  "settai": "「お子さまの お食事を お先に お持ちしました」と 声を かけます。",
+  "ei": "child meal"
+ },
+ {
+  "id": "se-babymeal",
+  "name": "ベビーミール",
+  "reading": "べびーみーる",
+  "journey": "service",
+  "category": "子どもの サービス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍼",
+  "mapNode": "service:kids",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-childmeal",
+   "se-tokubetsu"
+  ],
+  "description": "赤ちゃんの ための 食事です。食べやすい やわらかい 食べものが 用意されます。ミルクの お湯を たのまれる ことも あり、温度に 気を くばって お渡しします。",
+  "settai": "「お湯の 温度は いかがですか」と いっしょに 確かめます。",
+  "ei": "baby meal"
+ },
+ {
+  "id": "se-mealcart",
+  "name": "ミールカート",
+  "reading": "みーるかーと",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "service:cart",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-cart",
+   "se-meal",
+   "se-traysetto"
+  ],
+  "description": "機内食の トレーを たくさん つめて 運ぶ カートです。ギャレーで あたためた 食事を のせて、通路を 回りながら 1人ずつ お配りします。",
+  "settai": "「お食事を お配りして おります」と 声を かけて 進みます。",
+  "ei": "meal cart"
+ },
+ {
+  "id": "se-wine",
+  "name": "ワイン",
+  "reading": "わいん",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍷",
+  "mapNode": "service:wine",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-redwine",
+   "se-whitewine",
+   "se-sommelier"
+  ],
+  "description": "ぶどうから 作る お酒です。機内では 料理に 合わせて 何種類か 用意されます。おとなの お客さまに たのまれたら お出しし、飲みすぎて いないかにも 気を くばります。",
+  "settai": "お水も いっしょに すすめ、体調に 気を くばります。",
+  "ei": "wine"
+ },
+ {
+  "id": "se-redwine",
+  "name": "赤ワイン",
+  "reading": "あかわいん",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍷",
+  "mapNode": "service:wine",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-wine",
+   "se-whitewine"
+  ],
+  "description": "黒い ぶどうを 皮ごと 使って 作る 赤い ワインです。肉の 料理と いっしょに たのまれる ことが 多く、冷やしすぎずに お出しします。",
+  "settai": "グラスを 持つ 手もとに こぼれない ように そっと 置きます。",
+  "ei": "red wine"
+ },
+ {
+  "id": "se-whitewine",
+  "name": "白ワイン",
+  "reading": "しろわいん",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥂",
+  "mapNode": "service:wine",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-wine",
+   "se-redwine"
+  ],
+  "description": "おもに 白い ぶどうから 作る ワインです。魚の 料理と いっしょに たのまれる ことが 多く、冷やして お出しします。",
+  "settai": "「冷やした 白ワインで ございます」と そえて お出しします。",
+  "ei": "white wine"
+ },
+ {
+  "id": "se-sommelier",
+  "name": "ソムリエ",
+  "reading": "そむりえ",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍇",
+  "mapNode": "service:wine",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-wine",
+   "se-label"
+  ],
+  "description": "ワインの 専門家です。ワインの 知識を 学んで 資格を とる 客室乗務員も いて、料理と 合う ワインや 味の ちがいを わかりやすく ご案内します。",
+  "settai": "「お料理に 合う ものを ご案内 いたします」と 落ちついて 話します。",
+  "ei": "sommelier"
+ },
+ {
+  "id": "se-champagne",
+  "name": "シャンパン",
+  "reading": "しゃんぱん",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍾",
+  "mapNode": "service:wine",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-wine",
+   "se-whitewine"
+  ],
+  "description": "フランスの シャンパーニュ地方で 作られる、あわの 出る ワインです。その 地方の 決まりに 合った ものだけが この 名前を 使えます。せんを あける ときは 音が 出ない ように 静かに あけます。",
+  "settai": "ほかの お客さまを おどろかせない よう 静かに 栓を あけます。",
+  "ei": "champagne"
+ },
+ {
+  "id": "se-softdrink",
+  "name": "ソフトドリンク",
+  "reading": "そふとどりんく",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥤",
+  "mapNode": "service:drink",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-drink",
+   "se-juice",
+   "se-water"
+  ],
+  "description": "お酒の 入って いない 飲みものの ことです。ジュース・炭酸の 飲みもの・お茶 などが あります。子どもから おとなまで、どなたにでも お出しできます。",
+  "settai": "「お茶や ジュースも ございます」と 種類を ご案内します。",
+  "ei": "soft drink"
+ },
+ {
+  "id": "se-zensai",
+  "name": "前菜",
+  "reading": "ぜんさい",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥗",
+  "mapNode": "service:meal",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-main",
+   "se-menu"
+  ],
+  "description": "食事の さいしょに 出す 小さな 料理です。サラダや 小鉢 などが あります。上の クラスでは 前菜・メイン・デザートと 順番に お出しします。",
+  "settai": "「前菜を お持ちしました」と 料理の 名前も そえます。",
+  "ei": "appetizer"
+ },
+ {
+  "id": "se-main",
+  "name": "メインディッシュ",
+  "reading": "めいんでぃっしゅ",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍖",
+  "mapNode": "service:meal",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-zensai",
+   "se-meal",
+   "se-entree"
+  ],
+  "description": "食事の 中で いちばん 中心に なる 料理です。肉か 魚などから えらんで もらう ことが 多く、ギャレーで あたためて 熱い うちに お出しします。",
+  "settai": "「肉と 魚の どちらに なさいますか」と たずねます。",
+  "ei": "main dish"
+ },
+ {
+  "id": "se-washoku",
+  "name": "和食",
+  "reading": "わしょく",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍙",
+  "mapNode": "service:meal",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "se-yoshoku",
+   "se-ryokucha",
+   "se-meal"
+  ],
+  "description": "ごはんや 魚、煮物 などの 日本の 料理です。日本を 発着する 便では よく 用意され、海外の お客さまが 日本の 味に 出会う 場にも なります。",
+  "settai": "中身を たずねられたら、材料を やさしく 説明します。",
+  "ei": "Japanese meal"
+ },
+ {
+  "id": "se-yoshoku",
+  "name": "洋食",
+  "reading": "ようしょく",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍝",
+  "mapNode": "service:meal",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "se-washoku",
+   "se-meal"
+  ],
+  "description": "パンや パスタ、肉の 料理 などの 西洋風の 料理です。和食と ならべて、どちらかを えらんで もらう ことが あります。",
+  "settai": "「和食と 洋食が ございます」と 両方を ご案内します。",
+  "ei": "Western meal"
+ },
+ {
+  "id": "se-zeikan",
+  "name": "税関申告書",
+  "reading": "ぜいかんしんこくしょ",
+  "journey": "service",
+  "category": "入国の書類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "service:shorui",
+  "field": "空港",
+  "relatedTerms": [
+   "se-nyukokucard",
+   "se-kakikata",
+   "se-passport"
+  ],
+  "description": "国に 入る ときに、持って いる 物を 税関に 知らせる 書類です。日本に 入る ときは 家族で 1枚に まとめて 書けます。インターネットで 出す 方法も あります。",
+  "settai": "「ご家族で 1枚で だいじょうぶです」と ご案内します。",
+  "ei": "customs declaration"
+ },
+ {
+  "id": "se-kakikata",
+  "name": "書きかたの案内",
+  "reading": "かきかたのあんない",
+  "journey": "service",
+  "category": "入国の書類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🖊",
+  "mapNode": "service:shorui",
+  "field": "接遇",
+  "relatedTerms": [
+   "se-nyukokucard",
+   "se-zeikan"
+  ],
+  "description": "入国の 書類の 書きかたを ご案内する ことです。本人が 書く ところは かわりに 書かず、どの 欄に 何を 書くかを わかりやすく 説明します。英語の 欄に こまる かたが 多い ところです。",
+  "settai": "「こちらの 欄には お名前を お書きください」と 指で 示します。",
+  "ei": "How to fill in the form"
+ },
+ {
+  "id": "se-pouch",
+  "name": "アメニティポーチ",
+  "reading": "あめにてぃぽーち",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👝",
+  "mapNode": "service:amenity",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-amenity",
+   "se-haburashi"
+  ],
+  "description": "アメニティを まとめて 入れた 小さな 袋です。旅の あとも 使える ように、しっかりした つくりの ものが 多く、記念に 持ち帰る かたも います。",
+  "settai": "「お持ち帰り いただけます」と ひと言 そえます。",
+  "ei": "amenity kit"
+ },
+ {
+  "id": "se-bedmake",
+  "name": "ベッドメイク",
+  "reading": "べっどめいく",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛏",
+  "mapNode": "service:blanket",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-blanket",
+   "se-mattress",
+   "se-pajama"
+  ],
+  "description": "ねむる 時間に、たいらに した 座席に しきものや 毛布を ととのえて、ベッドの ように する ことです。ビジネスクラスや ファーストクラスで 行います。",
+  "settai": "「ベッドの ご用意を いたしましょうか」と 時間を うかがいます。",
+  "ei": "turndown service"
+ },
+ {
+  "id": "se-pajama",
+  "name": "機内用パジャマ",
+  "reading": "きないようぱじゃま",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👕",
+  "mapNode": "service:amenity",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-bedmake",
+   "se-amenity"
+  ],
+  "description": "機内で 着がえて くつろぐ ための 服です。長い 夜の 便の 上の クラスで 用意する 航空会社が あります。着がえは 化粧室で して もらいます。",
+  "settai": "「お着がえは 化粧室で どうぞ」と ご案内します。",
+  "ei": "pajamas"
+ },
+ {
+  "id": "se-shoppay",
+  "name": "クレジットカード払い",
+  "reading": "くれじっとかーどばらい",
+  "journey": "service",
+  "category": "販売と免税",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "service:hanbai",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-hanbai",
+   "se-otsuri"
+  ],
+  "description": "機内販売の 代金を カードで 支払う ことです。お金を 持ち歩かずに すむので 多くの 方が 使います。カードは お客さまの 目の 前で あつかい、すぐに お返しします。",
+  "settai": "「カードを お返し いたします」と 両手で 渡します。",
+  "ei": "credit card payment"
+ },
+ {
+  "id": "se-menzeihani",
+  "name": "免税の範囲",
+  "reading": "めんぜいのはんい",
+  "journey": "service",
+  "category": "販売と免税",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖",
+  "mapNode": "service:menzei",
+  "field": "空港",
+  "relatedTerms": [
+   "se-menzei",
+   "se-zeikan"
+  ],
+  "description": "税金を はらわずに 国へ 持ちこめる 量や 金額の 決まりです。国ごとに ちがい、こえると 税金が かかります。たくさん 買う かたには、着く 国の 決まりも ご案内します。",
+  "settai": "「着く 国の 決まりを ご案内 いたします」と そえます。",
+  "ei": "duty-free allowance"
+ },
+ {
+  "id": "se-kosui",
+  "name": "香水",
+  "reading": "こうすい",
+  "journey": "service",
+  "category": "販売と免税",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "service:menzei",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-menzei",
+   "se-menzeihani"
+  ],
+  "description": "よい 香りの 液体です。免税品で 人気が あります。液体なので、乗りつぎで 手荷物の 決まりが ある ときは 気を つけて ご案内します。",
+  "settai": "「お乗りつぎは ございますか」と 先に たずねます。",
+  "ei": "perfume"
+ },
+ {
+  "id": "se-hindu",
+  "name": "ヒンズーミール",
+  "reading": "ひんずーみーる",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕉",
+  "mapNode": "service:tokubetsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "se-vege",
+   "se-tokubetsu",
+   "se-mealcode"
+  ],
+  "description": "ヒンズー教の 食の 考えかたを 大事に する かたの ための 食事です。牛肉を 使わずに 作られます。肉や 魚を 食べるか どうかは 人に よって ちがうので、ご予約の 中身を 確かめます。",
+  "settai": "ご予約の 内容を 確かめて、まちがいなく お届けします。",
+  "ei": "Hindu meal"
+ },
+ {
+  "id": "se-gluten",
+  "name": "グルテンフリー",
+  "reading": "ぐるてんふりー",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "service:tokubetsu",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-allergy",
+   "se-tokubetsu"
+  ],
+  "description": "小麦・大麦・ライ麦に ふくまれる グルテンと いう 成分を 使わない 食事です。体の 理由で グルテンを とれない かたの ために 用意します。",
+  "settai": "パンを そえない ことも 伝え、中身を いっしょに 確かめます。",
+  "ei": "gluten-free"
+ },
+ {
+  "id": "se-teien",
+  "name": "低塩食",
+  "reading": "ていえんしょく",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧂",
+  "mapNode": "service:tokubetsu",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-teishibo",
+   "se-tokubetsu"
+  ],
+  "description": "塩を ひかえて 作った 食事です。体の ために 塩分を 気に する かたが、旅の あいだも ふだんと 同じ ように 食事を 楽しめる ように 用意します。",
+  "settai": "塩や しょうゆの 小袋を そえない ことに 気を つけます。",
+  "ei": "low-salt meal"
+ },
+ {
+  "id": "se-teishibo",
+  "name": "低脂肪食",
+  "reading": "ていしぼうしょく",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥦",
+  "mapNode": "service:tokubetsu",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-teien",
+   "se-tokubetsu"
+  ],
+  "description": "あぶらを ひかえて 作った 食事です。体の ために あぶらの 量を 気に する かたの ための 特別食で、蒸したり ゆでたり して 作られる ことが 多く あります。",
+  "settai": "ご予約の 食事か どうか、お名前と いっしょに 確かめます。",
+  "ei": "low-fat meal"
+ },
+ {
+  "id": "se-mealcode",
+  "name": "ミールコード",
+  "reading": "みーるこーど",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "service:tokubetsu",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-tokubetsu",
+   "se-tokubetsukakunin",
+   "se-halal"
+  ],
+  "description": "特別食の 種類を あらわす 4文字の 記号です。子どもの 食事は CHML、赤ちゃんの 食事は BBML、コーシャは KSML の ように、多くの 航空会社で 共通の 記号が 使われて います。",
+  "settai": "記号と 実際の 食事が 合って いるか ラベルで 確かめます。",
+  "ei": "meal code"
+ },
+ {
+  "id": "se-tokubetsukakunin",
+  "name": "特別食の確認",
+  "reading": "とくべつしょくのかくにん",
+  "journey": "service",
+  "category": "特別食",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "service:tokubetsu",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-tokubetsu",
+   "se-mealcode",
+   "se-allergy"
+  ],
+  "description": "特別食を たのんだ かたの 座席と お名前、食事の 中身が 合って いるかを 確かめる ことです。まちがいを ふせぐ ため、ふつうの 食事より 先に お届けする ことが 多く あります。",
+  "settai": "「◯◯さまの ご予約の お食事です」と お名前で 確かめます。",
+  "ei": "special meal check"
+ },
+ {
+  "id": "se-entree",
+  "name": "アントレ",
+  "reading": "あんとれ",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍽",
+  "mapNode": "service:meal",
+  "field": "英語",
+  "relatedTerms": [
+   "se-main",
+   "se-zensai",
+   "se-menu"
+  ],
+  "description": "アメリカの 英語では メインの 料理を さします。いっぽう フランス語では、食事の はじめに 出す 前菜の ことです。国に よって 意味が ちがう ので、メニューを 読む ときに 気を つけます。",
+  "settai": "中身を たずねられたら「メインの お料理です」と 言いかえます。",
+  "ei": "entree"
+ },
+ {
+  "id": "se-catering",
+  "name": "ケータリング",
+  "reading": "けーたりんぐ",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "service:cart",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-tosaisu",
+   "se-cart",
+   "se-meal"
+  ],
+  "description": "機内食や 飲みものを 地上で 作り、飛行機へ 運んで 積みこむ しごとです。荷台が 高く 上がる 車で、ギャレーの ドアに 直接 つけて 積みこみます。",
+  "settai": "積みこまれた 品と 数が 合って いるか、受けとる ときに 確かめます。",
+  "ei": "catering"
+ },
+ {
+  "id": "se-tosaisu",
+  "name": "ミールの搭載数",
+  "reading": "みーるのとうさいすう",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "service:cart",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-catering",
+   "se-mealcart"
+  ],
+  "description": "飛行機に 積みこむ 機内食の 数です。予約の 人数や 特別食の 数に 合わせて 積みこみ、出発の 前に 足りて いるかを 確かめます。",
+  "settai": "足りない ときは 早めに 先輩や 地上の 係に 伝えます。",
+  "ei": "meal count"
+ },
+ {
+  "id": "se-atatame",
+  "name": "温める時間",
+  "reading": "あたためるじかん",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏲",
+  "mapNode": "service:meal",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-meal",
+   "se-main"
+  ],
+  "description": "ギャレーの オーブンで 料理を 温める 時間です。料理ごとに 決められた 時間と 温度を 守る ことで、おいしく 安全に お出しできます。",
+  "settai": "お出しする 時間から さかのぼって 温めはじめます。",
+  "ei": "heating time"
+ },
+ {
+  "id": "se-traysetto",
+  "name": "トレーセット",
+  "reading": "とれーせっと",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍱",
+  "mapNode": "service:cart",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-mealcart",
+   "se-meal"
+  ],
+  "description": "1人ぶんの 食事を のせた お盆の ことです。料理・はし や フォーク・ナプキン などが そろって いるかを 確かめて から お出しします。",
+  "settai": "テーブルに 置いたら、ふたや 包みの あけかたも 伝えます。",
+  "ei": "meal tray"
+ },
+ {
+  "id": "se-fuin",
+  "name": "カートの封印",
+  "reading": "かーとのふういん",
+  "journey": "service",
+  "category": "食事とカート",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "service:cart",
+  "field": "保安",
+  "relatedTerms": [
+   "se-cart",
+   "se-zaiko"
+  ],
+  "description": "カートの 扉に つける しるしの ついた 止め具です。だれも あけて いない ことを 確かめる ために 使い、番号を 記録して 中身を 守ります。",
+  "settai": "封の 番号を 書類と 見くらべてから あけます。",
+  "ei": "seal"
+ },
+ {
+  "id": "se-zaiko",
+  "name": "免税品の在庫",
+  "reading": "めんぜいひんのざいこ",
+  "journey": "service",
+  "category": "販売と免税",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "service:menzei",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-menzei",
+   "se-uriage",
+   "se-fuin"
+  ],
+  "description": "機内に 積んで ある 免税品の 数です。出発の 前と 売った あとに 数を 数えて、書類と 合って いるかを 確かめます。",
+  "settai": "売り切れの ときは「申しわけ ございません」と 代わりの 品を ご案内します。",
+  "ei": "inventory"
+ },
+ {
+  "id": "se-uriage",
+  "name": "売上の記録",
+  "reading": "うりあげのきろく",
+  "journey": "service",
+  "category": "販売と免税",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "service:hanbai",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-zaiko",
+   "se-otsuri",
+   "se-shoppay"
+  ],
+  "description": "機内販売で 何が いくつ 売れたかを 書きのこす ことです。お金や カードの 記録と 品物の 数が 合う ように、ていねいに 書きます。",
+  "settai": "お客さまを お待たせしない よう、記録は 手早く 正確に します。",
+  "ei": "sales record"
+ },
+ {
+  "id": "se-otsuri",
+  "name": "おつり",
+  "reading": "おつり",
+  "journey": "service",
+  "category": "販売と免税",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪙",
+  "mapNode": "service:hanbai",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-gaika",
+   "se-uriage"
+  ],
+  "description": "代金より 多く 受けとった とき お返しする お金です。どの お金で 返すかを 先に 伝え、お客さまの 前で いっしょに 数えて お渡しします。",
+  "settai": "「◯◯円の お返しです」と 声に 出して 数えます。",
+  "ei": "change"
+ },
+ {
+  "id": "se-gaika",
+  "name": "外貨",
+  "reading": "がいか",
+  "journey": "service",
+  "category": "販売と免税",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💱",
+  "mapNode": "service:hanbai",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-otsuri",
+   "se-shoppay"
+  ],
+  "description": "自分の 国の お金とは ちがう、外国の お金です。国際線の 機内販売では いくつかの 国の お金で 払える ことが あり、その 日の 決まった 値で 計算します。",
+  "settai": "使える お金の 種類を 先に お伝えします。",
+  "ei": "foreign currency"
+ },
+ {
+  "id": "se-label",
+  "name": "ワインのラベル",
+  "reading": "わいんのらべる",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "service:wine",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-wine",
+   "se-sommelier",
+   "se-hinshu"
+  ],
+  "description": "ワインの びんに はって ある 紙です。作られた 土地や ぶどうの 種類、作った 年 などが 書いて あります。お出しする 前に お客さまに 見せて 確かめて もらう ことが あります。",
+  "settai": "ラベルを お客さまに 向けて、名前を そえて お見せします。",
+  "ei": "wine label"
+ },
+ {
+  "id": "se-tasting",
+  "name": "テイスティング",
+  "reading": "ていすてぃんぐ",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "service:wine",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-wine",
+   "se-sommelier",
+   "se-label"
+  ],
+  "description": "香りや 味を 確かめる ことです。機内で 出す ワインは、地上で 専門家が 何度も 確かめて えらびます。上空では 味の 感じかたが かわる ことも 考えて えらばれます。",
+  "settai": "香りや 味の 特ちょうを やさしい 言葉で ご案内します。",
+  "ei": "tasting"
+ },
+ {
+  "id": "se-hinshu",
+  "name": "ぶどうの品種",
+  "reading": "ぶどうのひんしゅ",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍇",
+  "mapNode": "service:wine",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-label",
+   "se-redwine",
+   "se-whitewine"
+  ],
+  "description": "ワインに 使う ぶどうの 種類です。赤ワインの カベルネ・ソーヴィニヨン、白ワインの シャルドネ などが あり、種類に よって 香りや 味が ちがいます。",
+  "settai": "たずねられたら 品種の 名前と 味の ちがいを ご案内します。",
+  "ei": "grape variety"
+ },
+ {
+  "id": "se-decaf",
+  "name": "カフェインレス",
+  "reading": "かふぇいんれす",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☕",
+  "mapNode": "service:drink",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-coffee",
+   "se-drinkrun"
+  ],
+  "description": "ねむけを さます カフェインと いう 成分を ぬいた、または へらした 飲みものです。夜の 便で 温かい ものを 飲んでも、ねむりを じゃましにくく なります。",
+  "settai": "「夜でも 飲みやすい ものも ございます」と ご案内します。",
+  "ei": "decaf"
+ },
+ {
+  "id": "se-drinkrun",
+  "name": "ドリンクラン",
+  "reading": "どりんくらん",
+  "journey": "service",
+  "category": "飲みもの",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "service:drink",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-drink",
+   "se-water",
+   "se-cart"
+  ],
+  "description": "カートや お盆で 通路を 回って、飲みものを お配りする ことです。食事の あとや 長い 飛行の あいだに 何度か 行い、水分を とって もらう きっかけにも なります。",
+  "settai": "ねむって いる かたは 起こさず、起きた ときに お届けします。",
+  "ei": "drink run"
+ },
+ {
+  "id": "se-warmer",
+  "name": "おしぼりウォーマー",
+  "reading": "おしぼりうぉーまー",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "service:oshibori",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-oshibori"
+  ],
+  "description": "ギャレーで おしぼりを 温める 機械です。ちょうど よい 温かさに して おけば、お出しする ときに すぐ 配れます。熱く なりすぎて いないかも 確かめます。",
+  "settai": "手に 取って 温度を 確かめてから お配りします。",
+  "ei": "towel warmer"
+ },
+ {
+  "id": "se-mattress",
+  "name": "マットレスパッド",
+  "reading": "まっとれすぱっど",
+  "journey": "service",
+  "category": "くつろぎ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛏",
+  "mapNode": "service:blanket",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-bedmake",
+   "se-blanket"
+  ],
+  "description": "たいらに した 座席の 上に しく、うすくて やわらかい しきものです。座席の かたさを やわらげ、ベッドの ように ゆっくり 休んで もらえます。",
+  "settai": "しわが ない ように ととのえ、まくらの 向きも そろえます。",
+  "ei": "mattress pad"
+ },
+ {
+  "id": "se-passport",
+  "name": "パスポート番号の欄",
+  "reading": "ぱすぽーとばんごうのらん",
+  "journey": "service",
+  "category": "入国の書類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛂",
+  "mapNode": "service:shorui",
+  "field": "空港",
+  "relatedTerms": [
+   "se-nyukokucard",
+   "se-kakikata"
+  ],
+  "description": "入国の 書類で、パスポートの 番号を 書く 欄です。数字と ローマ字が まざって いるので、パスポートを 見ながら 1字ずつ うつして もらう よう ご案内します。",
+  "settai": "「パスポートを 見ながら お書きください」と 伝えます。",
+  "ei": "passport number"
+ },
+ {
+  "id": "se-kidsamenity",
+  "name": "キッズアメニティ",
+  "reading": "きっずあめにてぃ",
+  "journey": "service",
+  "category": "子どもの サービス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "service:kids",
+  "field": "サービス",
+  "relatedTerms": [
+   "se-omocha",
+   "se-ehon",
+   "se-childmeal"
+  ],
+  "description": "子どもの お客さまの ための アメニティです。おもちゃや ぬりえ などが 入って いて、年れいに 合わせて えらんで お渡しします。",
+  "settai": "保護者の かたにも「お使いください」と ひと声 かけます。",
+  "ei": "kids amenity"
+ }
+]

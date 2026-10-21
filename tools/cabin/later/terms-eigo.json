@@ -1,0 +1,806 @@
+[
+ {
+  "id": "ei-flight",
+  "name": "flight",
+  "reading": "ふらいと",
+  "journey": "eigo",
+  "category": "空港と入国",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "eigo:kuko",
+  "field": "空港",
+  "relatedTerms": [
+   "ei-flightnumber",
+   "ei-gate",
+   "ei-enjoyflight"
+  ],
+  "description": "空の 旅・飛行機の 便の 英語です。「Thank you for flying with us」の ように、アナウンスにも よく 出て きます。",
+  "settai": "「How was your flight?」と 聞くと、お客さまとの 会話の きっかけに なります。",
+  "ei": "flight"
+ },
+ {
+  "id": "ei-gate",
+  "name": "gate",
+  "reading": "げーと",
+  "journey": "eigo",
+  "category": "空港と入国",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "eigo:kuko",
+  "field": "空港",
+  "relatedTerms": [
+   "ei-gatenumber",
+   "ei-boardinggate",
+   "ei-flight"
+  ],
+  "description": "搭乗口の 英語です。空港で 飛行機に 乗る ための 出入り口で、番号が ついて います。乗り継ぎの お客さまに よく 聞かれます。",
+  "settai": "乗り継ぎの ゲートを 聞かれたら、着いてから の 案内の しかたを 伝えます。",
+  "ei": "gate"
+ },
+ {
+  "id": "ei-thisway",
+  "name": "This way, please.",
+  "reading": "でぃすうぇいぷりーず",
+  "journey": "eigo",
+  "category": "お手伝い",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👉",
+  "mapNode": "eigo:help",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-comethisway",
+   "ei-watchstep",
+   "ei-mayihelpyou"
+  ],
+  "description": "「こちらへ どうぞ」と 案内する 英語です。席を さがして いる お客さまを つれて いく ときに 使います。",
+  "settai": "手の ひら 全体で 方向を しめし、お客さまの 少し 前を 歩きます。",
+  "ei": "This way, please."
+ },
+ {
+  "id": "ei-watchstep",
+  "name": "Watch your step.",
+  "reading": "うぉっちゆあすてっぷ",
+  "journey": "eigo",
+  "category": "お手伝い",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👣",
+  "mapNode": "eigo:help",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-thisway",
+   "ei-mayihelpyou"
+  ],
+  "description": "「足もとに お気を つけ ください」と いう 英語です。乗りおりの ときや、段差の ある 場所で 声を かけます。",
+  "settai": "小さい 子や 年配の かたには、とくに ゆっくり 伝えます。",
+  "ei": "Watch your step."
+ },
+ {
+  "id": "ei-whattime",
+  "name": "What time is it?",
+  "reading": "わっとたいむいずいっと",
+  "journey": "eigo",
+  "category": "数字と時刻",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🕐",
+  "mapNode": "eigo:suji",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-localtime",
+   "ei-eta"
+  ],
+  "description": "「いま 何時ですか」と 聞く 英語です。お客さまから よく 聞かれる ので、着く 場所の 時刻と あわせて 答えられると 安心です。",
+  "settai": "時差が ある ときは 「現地の 時刻」で 答えると 親切です。",
+  "ei": "What time is it?"
+ },
+ {
+  "id": "ei-meal",
+  "name": "meal",
+  "reading": "みーる",
+  "journey": "eigo",
+  "category": "食事",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍱",
+  "mapNode": "eigo:meal",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-chickenorfish",
+   "ei-specialmeal",
+   "ei-enjoymeal"
+  ],
+  "description": "食事の 英語です。機内食は 「in-flight meal」とも いいます。配る 前に 「Meal service will begin soon.」の ように 知らせます。",
+  "settai": "食事を 配る ときは テーブルを 出して もらえるか 先に 聞きます。",
+  "ei": "meal"
+ },
+ {
+  "id": "ei-pillow",
+  "name": "pillow",
+  "reading": "ぴろー",
+  "journey": "eigo",
+  "category": "座席と機内",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛏️",
+  "mapNode": "eigo:kinai",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-blanket",
+   "ei-headset"
+  ],
+  "description": "まくらの 英語です。長い 旅で 休む お客さまに よく たのまれます。",
+  "acceptedReadings": [
+   "ぴろー",
+   "ぴろう"
+  ],
+  "settai": "首や 腰に あてる 使いかたも あると 伝えると、楽に すごして もらえます。",
+  "ei": "pillow"
+ },
+ {
+  "id": "ei-headset",
+  "name": "headset",
+  "reading": "へっどせっと",
+  "journey": "eigo",
+  "category": "座席と機内",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎧",
+  "mapNode": "eigo:kinai",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-ife",
+   "ei-pillow"
+  ],
+  "description": "頭に つける イヤホンの 英語です。機内の 映画や 音楽を 楽しむ ときに 使います。",
+  "settai": "つなぐ 場所が 分からない かたには、ひじかけの 穴を しめして 案内します。",
+  "ei": "headset"
+ },
+ {
+  "id": "ei-goodnight",
+  "name": "Good night.",
+  "reading": "ぐっどないと",
+  "journey": "eigo",
+  "category": "あいさつ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "eigo:welcome",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-goodevening",
+   "ei-blanket"
+  ],
+  "description": "「おやすみなさい」の 英語です。夜の 便で 明かりを 暗く した あと、休む お客さまに やさしく 声を かけます。",
+  "settai": "休んで いる かたを 起こさない よう、小さな 声で 伝えます。",
+  "ei": "Good night."
+ },
+ {
+  "id": "ei-enjoyflight",
+  "name": "Enjoy your flight.",
+  "reading": "えんじょいゆあふらいと",
+  "journey": "eigo",
+  "category": "アナウンス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "😊",
+  "mapNode": "eigo:announce",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-welcomeaboard",
+   "ei-flight"
+  ],
+  "description": "「空の 旅を お楽しみ ください」と いう 英語です。お出むかえの あとや、アナウンスの むすびに よく 使います。",
+  "settai": "席に つかれた お客さまへ、笑顔で ひと言 そえると 旅の はじまりが 楽しく なります。",
+  "ei": "Enjoy your flight."
+ },
+ {
+  "id": "ei-boardingtime",
+  "name": "boarding time",
+  "reading": "ぼーでぃんぐたいむ",
+  "journey": "eigo",
+  "category": "数字と時刻",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕒",
+  "mapNode": "eigo:suji",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-departure",
+   "ei-boardinggate",
+   "ei-boardingpass"
+  ],
+  "description": "搭乗の 時刻の 英語です。出発の 時刻より 前に はじまるので、搭乗券で 確かめて もらいます。",
+  "settai": "乗り継ぎの お客さまには、つぎの 便の 搭乗時刻を いっしょに 確かめます。",
+  "ei": "boarding time"
+ },
+ {
+  "id": "ei-rightback",
+  "name": "I'll be right back.",
+  "reading": "あいるびーらいとばっく",
+  "journey": "eigo",
+  "category": "お手伝い",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "eigo:teinei",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-justamoment",
+   "ei-letmecheck",
+   "ei-getitforyou"
+  ],
+  "description": "「すぐに 戻ります」と いう 英語です。たのまれた 物を とりに 行く ときに 伝えると、お客さまが 安心して 待てます。",
+  "settai": "言った あとは できる だけ 早く 戻ります。",
+  "ei": "I'll be right back."
+ },
+ {
+  "id": "ei-everythingok",
+  "name": "Is everything all right?",
+  "reading": "いずえぶりしんぐおーるらいと",
+  "journey": "eigo",
+  "category": "お手伝い",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "😌",
+  "mapNode": "eigo:help",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-needhelp",
+   "ei-mayihelpyou"
+  ],
+  "description": "「何か 問題は ありませんか」と 様子を うかがう 英語です。食事の あとや、気分が すぐれない ように 見える ときに 声を かけます。",
+  "settai": "返事を 急がせず、相手の 表情も よく 見ます。",
+  "ei": "Is everything all right?"
+ },
+ {
+  "id": "ei-needhelp",
+  "name": "Do you need any help?",
+  "reading": "どぅーゆーにーどえにーへるぷ",
+  "journey": "eigo",
+  "category": "お手伝い",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🆘",
+  "mapNode": "eigo:help",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-mayihelpyou",
+   "ei-everythingok"
+  ],
+  "description": "「お手伝いが 必要ですか」と 聞く 英語です。荷物・席・書類など、こまって いそうな 人に 声を かけます。",
+  "settai": "お手伝いを ことわられても、笑顔で 「Please let me know.」と 返します。",
+  "ei": "Do you need any help?"
+ },
+ {
+  "id": "ei-specialmeal",
+  "name": "special meal",
+  "reading": "すぺしゃるみーる",
+  "journey": "eigo",
+  "category": "食事",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥗",
+  "mapNode": "eigo:meal",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-allergy",
+   "ei-meal"
+  ],
+  "description": "特別食の 英語です。アレルギー・宗教・体の ことなどで、前もって たのまれた 食事です。まちがえない よう 名前と 席を 確かめて 配ります。",
+  "settai": "配る ときは 「This is your special meal.」と 名前を 確かめて わたします。",
+  "ei": "special meal"
+ },
+ {
+  "id": "ei-beeforchicken",
+  "name": "Beef or chicken?",
+  "reading": "びーふおあちきん",
+  "journey": "eigo",
+  "category": "食事",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥩",
+  "mapNode": "eigo:meal",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-chickenorfish",
+   "ei-meal"
+  ],
+  "description": "「牛肉と チキン、どちらに しますか」と 聞く 英語です。機内食の メニューに あわせて、えらぶ ものの 名前を 入れかえて 使います。",
+  "settai": "1つが なくなった ときは、おわびして ほかの ものを すすめます。",
+  "ei": "Beef or chicken?"
+ },
+ {
+  "id": "ei-dutyfree",
+  "name": "duty-free",
+  "reading": "でゅーてぃーふりー",
+  "journey": "eigo",
+  "category": "空港と入国",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛍️",
+  "mapNode": "eigo:kinai",
+  "field": "サービス",
+  "relatedTerms": [
+   "ei-onbehalf",
+   "ei-customs"
+  ],
+  "description": "免税の 英語です。国際線では 税金の かからない 品物を 機内で 買える ことが あります。",
+  "acceptedReadings": [
+   "でゅーてぃーふりー",
+   "でゅーてぃふりー"
+  ],
+  "settai": "すすめる ときは カタログを 見せて、押しつけない ように します。",
+  "ei": "duty-free"
+ },
+ {
+  "id": "ei-ladies",
+  "name": "Ladies and gentlemen",
+  "reading": "れでぃーすあんどじぇんとるめん",
+  "journey": "eigo",
+  "category": "アナウンス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "eigo:announce",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-onbehalf",
+   "ei-landing"
+  ],
+  "description": "「みなさま」と いう 英語です。英語の アナウンスの はじまりに よく 使う 決まった 言いかたです。男女を 分けずに 「everyone」などと 言う 航空会社も あります。",
+  "acceptedReadings": [
+   "れでぃーすあんどじぇんとるめん",
+   "れでぃーすあんじぇんとるめん"
+  ],
+  "settai": "アナウンスは あわてず、聞きとりやすい 速さで 話します。",
+  "ei": "Ladies and gentlemen"
+ },
+ {
+  "id": "ei-landing",
+  "name": "landing",
+  "reading": "らんでぃんぐ",
+  "journey": "eigo",
+  "category": "アナウンス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛬",
+  "mapNode": "eigo:announce",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-takeoff",
+   "ei-prepareforlanding",
+   "ei-finalapproach"
+  ],
+  "description": "着陸の 英語です。着陸の 前には ベルト・座席の 背・テーブルを もとに もどして もらいます。",
+  "settai": "着陸の 前は 客室を まわって、準備が できて いるか やさしく 確かめます。",
+  "ei": "landing"
+ },
+ {
+  "id": "ei-takeoff",
+  "name": "takeoff",
+  "reading": "ていくおふ",
+  "journey": "eigo",
+  "category": "アナウンス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛫",
+  "mapNode": "eigo:announce",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-landing",
+   "ei-fasten",
+   "ei-upright"
+  ],
+  "description": "離陸の 英語です。飛行機が 地面を はなれて 空へ 上がる ことです。離陸の 前に もう いちど ベルトを 確かめます。",
+  "acceptedReadings": [
+   "ていくおふ",
+   "てーくおふ"
+  ],
+  "settai": "離陸の 前に 「We'll be taking off shortly.」と 知らせます。",
+  "ei": "takeoff"
+ },
+ {
+  "id": "ei-remainseated",
+  "name": "Remain seated.",
+  "reading": "りめいんしーてっど",
+  "journey": "eigo",
+  "category": "安全",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "eigo:belt",
+  "field": "保安",
+  "relatedTerms": [
+   "ei-stayseated",
+   "ei-fasten"
+  ],
+  "description": "「お席に ついたまま で いて ください」と いう 英語です。着陸の あと、飛行機が 止まるまで 座って いて もらう ときに 使います。",
+  "settai": "止まるまで の あいだ、「もう 少し お待ち ください」と やさしく 伝えます。",
+  "ei": "Remain seated."
+ },
+ {
+  "id": "ei-bumpy",
+  "name": "bumpy",
+  "reading": "ばんぴー",
+  "journey": "eigo",
+  "category": "安全",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "eigo:yure",
+  "field": "保安",
+  "relatedTerms": [
+   "ei-turbulence",
+   "ei-roughair",
+   "ei-lightchop"
+  ],
+  "description": "「ガタガタ ゆれる」と いう 英語です。ゆれる ときの ようすを やさしく 伝える ことばです。",
+  "acceptedReadings": [
+   "ばんぴー",
+   "ばんぴい"
+  ],
+  "settai": "「It may be a little bumpy.」と 前もって 伝えると、お客さまが おどろきません。",
+  "ei": "bumpy"
+ },
+ {
+  "id": "ei-roughair",
+  "name": "rough air",
+  "reading": "らふえあ",
+  "journey": "eigo",
+  "category": "安全",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "eigo:yure",
+  "field": "保安",
+  "relatedTerms": [
+   "ei-bumpy",
+   "ei-turbulence"
+  ],
+  "description": "ゆれやすい 空気の 英語です。「turbulence」と 同じ ような 意味で、アナウンスで 使う ことが あります。",
+  "settai": "ゆれる ことを 伝える ときは、ベルトを しめれば 安全だと そえます。",
+  "ei": "rough air"
+ },
+ {
+  "id": "ei-gatenumber",
+  "name": "gate number",
+  "reading": "げーとなんばー",
+  "journey": "eigo",
+  "category": "数字と時刻",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "eigo:suji",
+  "field": "空港",
+  "relatedTerms": [
+   "ei-gate",
+   "ei-boardinggate",
+   "ei-connecting"
+  ],
+  "description": "搭乗口の 番号の 英語です。乗り継ぎの お客さまに よく 聞かれます。番号は 変わる ことも あるので、空港の 表示で 確かめて もらいます。",
+  "settai": "分からない ときは 着いてから 確かめる 場所を 伝えます。",
+  "ei": "gate number"
+ },
+ {
+  "id": "ei-transfer",
+  "name": "transfer",
+  "reading": "とらんすふぁー",
+  "journey": "eigo",
+  "category": "空港と入国",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "eigo:kuko",
+  "field": "空港",
+  "relatedTerms": [
+   "ei-connecting",
+   "ei-layover"
+  ],
+  "description": "乗り継ぎの 英語です。空港では 「Transfer」の 案内に 進むと、つぎの 便へ 向かえます。",
+  "settai": "乗り継ぎの お客さまには、着いたら どの 表示に 進むか 伝えます。",
+  "ei": "transfer"
+ },
+ {
+  "id": "ei-unfasten",
+  "name": "Unfasten your seatbelt.",
+  "reading": "あんふぁすんゆあしーとべると",
+  "journey": "eigo",
+  "category": "安全",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔓",
+  "mapNode": "eigo:belt",
+  "field": "保安",
+  "relatedTerms": [
+   "ei-fasten",
+   "ei-remainseated"
+  ],
+  "description": "「シートベルトを はずして ください」と いう 英語です。飛行機が 止まり、ベルトの サインが 消えてから 使います。",
+  "settai": "サインが 消える 前は はずさない ように、やさしく お願い します。",
+  "ei": "Unfasten your seatbelt."
+ },
+ {
+  "id": "ei-comethisway",
+  "name": "Come this way.",
+  "reading": "かむでぃすうぇい",
+  "journey": "eigo",
+  "category": "お手伝い",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👉",
+  "mapNode": "eigo:belt",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-thisway",
+   "ei-emergencyexit",
+   "ei-leavebags"
+  ],
+  "description": "「こちらへ 来て ください」と いう 英語です。出口へ 早く 安全に 向かって もらう かけ声にも 使います。",
+  "settai": "手で 方向を はっきり しめしながら 言うと 伝わります。",
+  "ei": "Come this way."
+ },
+ {
+  "id": "ei-ampm",
+  "name": "a.m. / p.m.",
+  "reading": "えーえむぴーえむ",
+  "journey": "eigo",
+  "category": "数字と時刻",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕛",
+  "mapNode": "eigo:suji",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-localtime",
+   "ei-eta"
+  ],
+  "description": "午前と 午後を あらわす 英語です。a.m. が 午前、p.m. が 午後。時刻の うしろに つけて 「3 p.m.」の ように 言います。",
+  "settai": "時刻を 伝える ときは 午前か 午後かを はっきり 言います。",
+  "ei": "a.m. / p.m."
+ },
+ {
+  "id": "ei-getitforyou",
+  "name": "I'll get it for you.",
+  "reading": "あいるげっといっとふぉーゆー",
+  "journey": "eigo",
+  "category": "お手伝い",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "eigo:help",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-rightback",
+   "ei-letmecheck"
+  ],
+  "description": "「お持ち します」と いう 英語です。上の 棚の 荷物や 飲みものなど、お客さまの かわりに とりに 行く ときに 使います。",
+  "settai": "持ってきたら 「Here you are.」と わたします。",
+  "ei": "I'll get it for you."
+ },
+ {
+  "id": "ei-ife",
+  "name": "in-flight entertainment",
+  "reading": "いんふらいとえんたーていんめんと",
+  "journey": "eigo",
+  "category": "座席と機内",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📺",
+  "mapNode": "eigo:kinai",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-headset",
+   "ei-readinglight"
+  ],
+  "description": "機内エンターテインメントの 英語です。座席の 画面で 見られる 映画・音楽・ゲームなどを まとめて いいます。",
+  "settai": "使いかたが 分からない かたには、画面の さわりかたを 案内します。",
+  "ei": "in-flight entertainment"
+ },
+ {
+  "id": "ei-boardinggate",
+  "name": "boarding gate",
+  "reading": "ぼーでぃんぐげーと",
+  "journey": "eigo",
+  "category": "空港と入国",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "eigo:kuko",
+  "field": "空港",
+  "relatedTerms": [
+   "ei-gate",
+   "ei-gatenumber",
+   "ei-boardingtime"
+  ],
+  "description": "搭乗口の 英語です。「gate」と 同じ 意味で、空港の 案内や アナウンスで 使われます。",
+  "settai": "乗り継ぎの お客さまには、つぎの 搭乗口を 着いてから 確かめる よう 伝えます。",
+  "ei": "boarding gate"
+ },
+ {
+  "id": "ei-lightchop",
+  "name": "light chop",
+  "reading": "らいとちょっぷ",
+  "journey": "eigo",
+  "category": "安全",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "eigo:yure",
+  "field": "保安",
+  "relatedTerms": [
+   "ei-bumpy",
+   "ei-roughair",
+   "ei-turbulence"
+  ],
+  "description": "小さく 小きざみに 続く ゆれの 英語です。かるい ゆれを 伝える ときに 使う ことが あります。",
+  "settai": "かるい ゆれでも、ベルトを しめて いて もらうと 安心です。",
+  "ei": "light chop"
+ },
+ {
+  "id": "ei-foryoursafety",
+  "name": "for your safety",
+  "reading": "ふぉーゆあせーふてぃー",
+  "journey": "eigo",
+  "category": "安全",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "eigo:yure",
+  "field": "保安",
+  "relatedTerms": [
+   "ei-fasten",
+   "ei-returntoseat"
+  ],
+  "description": "「安全の ために」と いう 英語です。お願いの 理由を そえる ときに 使います。理由が 分かると、お客さまも 協力 しやすく なります。",
+  "acceptedReadings": [
+   "ふぉーゆあせーふてぃー",
+   "ふぉーゆあせいふてぃー"
+  ],
+  "settai": "「For your safety, please fasten your seatbelt.」の ように 使います。",
+  "ei": "for your safety"
+ },
+ {
+  "id": "ei-mayiseebp",
+  "name": "May I see your boarding pass?",
+  "reading": "めいあいしーゆあぼーでぃんぐぱす",
+  "journey": "eigo",
+  "category": "あいさつ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "eigo:welcome",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-boardingpass",
+   "ei-welcomeaboard"
+  ],
+  "description": "「搭乗券を 拝見 できますか」と いう ていねいな 英語です。お出むかえの ときに、席を 案内する ために 見せて もらいます。",
+  "settai": "見た あとは 「Thank you.」と 返して、席の 方向を しめします。",
+  "ei": "May I see your boarding pass?"
+ },
+ {
+  "id": "ei-goodevening",
+  "name": "Good evening.",
+  "reading": "ぐっどいーぶにんぐ",
+  "journey": "eigo",
+  "category": "あいさつ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌆",
+  "mapNode": "eigo:welcome",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-goodnight",
+   "ei-hello"
+  ],
+  "description": "「こんばんは」の 英語です。夕方からの 便の お出むかえで 使います。「Good night.」は 別れる ときの ことば なので 使い分けます。",
+  "settai": "夕方の 便では おちついた 声で あいさつ すると、くつろいで もらえます。",
+  "ei": "Good evening."
+ },
+ {
+  "id": "ei-seeagain",
+  "name": "Nice to see you again.",
+  "reading": "ないすとぅしーゆーあげいん",
+  "journey": "eigo",
+  "category": "あいさつ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤗",
+  "mapNode": "eigo:welcome",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-welcomeback",
+   "ei-hopetosee"
+  ],
+  "description": "「また お会い できて うれしいです」と いう 英語です。前にも 乗って くれた お客さまを お出むかえ する ときに 使います。",
+  "settai": "覚えて いる ことを 伝えると、お客さまに 特別な 気持ちが 届きます。",
+  "ei": "Nice to see you again."
+ },
+ {
+  "id": "ei-welcomeback",
+  "name": "Welcome back.",
+  "reading": "うぇるかむばっく",
+  "journey": "eigo",
+  "category": "あいさつ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "eigo:welcome",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-seeagain",
+   "ei-welcomeaboard"
+  ],
+  "description": "「お帰りなさい」と いう 英語です。旅から 帰る お客さまや、また 乗って くれた お客さまに 使います。",
+  "settai": "帰りの 便では 「Welcome back to Japan.」と 言う ことも あります。",
+  "ei": "Welcome back."
+ },
+ {
+  "id": "ei-onbehalf",
+  "name": "on behalf of the crew",
+  "reading": "おんびはーふおぶざくるー",
+  "journey": "eigo",
+  "category": "アナウンス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "eigo:announce",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-hopetosee",
+   "ei-cabincrew",
+   "ei-ladies"
+  ],
+  "description": "「乗員を 代表して」と いう 英語です。アナウンスの むすびで、みんなの 気持ちを まとめて 伝える ときに 使います。",
+  "acceptedReadings": [
+   "おんびはーふおぶざくるー",
+   "おんびはーふおぶじくるー"
+  ],
+  "settai": "代表して 話す ときは、チーム みんなの 気持ちを こめて 伝えます。",
+  "ei": "on behalf of the crew"
+ },
+ {
+  "id": "ei-hopetosee",
+  "name": "We hope to see you again.",
+  "reading": "うぃーほーぷとぅしーゆーあげいん",
+  "journey": "eigo",
+  "category": "アナウンス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👋",
+  "mapNode": "eigo:announce",
+  "field": "英語",
+  "relatedTerms": [
+   "ei-onbehalf",
+   "ei-niceday",
+   "ei-seeagain"
+  ],
+  "description": "「また お会い できる ことを 願って います」と いう 英語です。着いた あとの アナウンスや、お見送りで 使います。",
+  "settai": "お見送りでは 1人ひとりに 気持ちを こめて 伝えます。",
+  "ei": "We hope to see you again."
+ },
+ {
+  "id": "ei-returnticket",
+  "name": "return ticket",
+  "reading": "りたーんちけっと",
+  "journey": "eigo",
+  "category": "空港と入国",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎟️",
+  "mapNode": "eigo:nyukoku",
+  "field": "空港",
+  "relatedTerms": [
+   "ei-howlong",
+   "ei-immigration",
+   "ei-passport"
+  ],
+  "description": "帰りの 航空券の 英語です。入国審査で 帰りの 予定を 聞かれる ことが あります。",
+  "settai": "「帰りの 航空券を すぐ 出せる ように して おくと 安心です」と 伝えます。",
+  "ei": "return ticket"
+ }
+]

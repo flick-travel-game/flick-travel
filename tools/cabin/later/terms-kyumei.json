@@ -1,0 +1,694 @@
+[
+ {
+  "id": "ky-fukuro",
+  "name": "エチケット袋",
+  "reading": "えちけっとぶくろ",
+  "journey": "kyumei",
+  "category": "気分と 体調",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛍",
+  "mapNode": "kyumei:kibun",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-kibun",
+   "ky-yoi"
+  ],
+  "description": "気分が わるく なった ときに 使う 紙の 袋です。座席の 前の ポケットに 入って います。客室乗務員は 使った あと すぐ うけとり、新しい ものを お渡しします。",
+  "settai": "そっと 新しい 袋を お渡しし、ほかの かたの 目に つかない ように 気を くばります。"
+ },
+ {
+  "id": "ky-yoko",
+  "name": "横になる",
+  "reading": "よこになる",
+  "journey": "kyumei",
+  "category": "気分と 体調",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛌",
+  "mapNode": "kyumei:kibun",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-kibun",
+   "ky-ansei"
+  ],
+  "description": "気分が わるい お客さまが いて 席が あいて いれば、横に なって もらう ことが あります。体を 楽に すると、落ちつく ことが 多いです。"
+ },
+ {
+  "id": "ky-omizu",
+  "name": "お水を飲む",
+  "reading": "おみずをのむ",
+  "journey": "kyumei",
+  "category": "耳・足・時差",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥤",
+  "mapNode": "kyumei:ashi",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-suibun",
+   "ky-dassui"
+  ],
+  "description": "機内は かわいて いるので、のどが かわく 前に お水を 飲むのが 大事です。お酒や カフェインの 多い 飲みものだけで なく、お水も いっしょに すすめます。",
+  "settai": "「お水も いっしょに いかがですか」と お声がけします。"
+ },
+ {
+  "id": "ky-hakujo",
+  "name": "白杖",
+  "reading": "はくじょう",
+  "journey": "kyumei",
+  "category": "手助けが いる かた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦯",
+  "mapNode": "kyumei:tedasuke",
+  "field": "接遇",
+  "relatedTerms": [
+   "ky-modoken",
+   "ky-kaijo"
+  ],
+  "description": "目の 見えない かたや 見えにくい かたが 使う 白い つえです。客室乗務員は 座席や 化粧室の 場所を ことばで ていねいに 伝え、ご本人の 希望を 聞いて 手伝います。",
+  "settai": "「右手の 先に ひじかけが あります」と 向きを ことばで 伝えます。"
+ },
+ {
+  "id": "ky-modoken",
+  "name": "盲導犬",
+  "reading": "もうどうけん",
+  "journey": "kyumei",
+  "category": "手助けが いる かた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦮",
+  "mapNode": "kyumei:tedasuke",
+  "field": "接遇",
+  "relatedTerms": [
+   "ky-hojoken",
+   "ky-hakujo"
+  ],
+  "description": "目の 見えない かたが 歩くのを 助ける 犬です。補助犬の 一つで、決まりに そって 客室に いっしょに 乗れます。しごと中の 犬に かってに さわったり 食べものを あげたり しません。"
+ },
+ {
+  "id": "ky-shock",
+  "name": "電気ショック",
+  "reading": "でんきしょっく",
+  "journey": "kyumei",
+  "category": "AEDと 心肺蘇生",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kyumei:aed",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-aed",
+   "ky-kaiseki"
+  ],
+  "description": "AED が 心臓の リズムを 調べて、ひつような ときに 行う 電気の 刺激です。その とき だれも 体に ふれて いない ことを、AED の 声に したがって 確かめます。"
+ },
+ {
+  "id": "ky-oisha",
+  "name": "お医者さん",
+  "reading": "おいしゃさん",
+  "journey": "kyumei",
+  "category": "お医者さんと 協力",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "kyumei:doctor",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-doctorcall",
+   "ky-iryo"
+  ],
+  "description": "機内で 体調を くずした お客さまが いる とき、乗りあわせた お医者さんが 手伝って くれる ことが あります。客室乗務員は 道具を 用意し、お医者さんの 判断に そって 協力します。"
+ },
+ {
+  "id": "ky-nikko",
+  "name": "日光を浴びる",
+  "reading": "にっこうをあびる",
+  "journey": "kyumei",
+  "category": "耳・足・時差",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "kyumei:jisa",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-jisaboke",
+   "ky-tainai"
+  ],
+  "description": "時差ボケを 楽に する ために、着いた 国で 朝の 日の 光を あびると、体の 時計が 合いやすく なると 言われます。客室乗務員も ステイ先で くふう します。"
+ },
+ {
+  "id": "ky-shokumotsu",
+  "name": "食物アレルギー",
+  "reading": "しょくもつあれるぎー",
+  "journey": "kyumei",
+  "category": "アレルギー",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍽",
+  "mapNode": "kyumei:allergy",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-allergy",
+   "ky-genzairyo"
+  ],
+  "description": "特定の 食べものに 体が 反応して しまう ことです。客室乗務員は 特別食の 注文を 確かめ、お客さまの 名前と 席と 食事が 合って いるか ていねいに 照らしあわせます。"
+ },
+ {
+  "id": "ky-onaka",
+  "name": "ベルトはおなかの下",
+  "reading": "べるとはおなかのした",
+  "journey": "kyumei",
+  "category": "手助けが いる かた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤰",
+  "mapNode": "kyumei:ninpu",
+  "field": "接遇",
+  "relatedTerms": [
+   "ky-ninpu",
+   "ky-koki"
+  ],
+  "description": "妊娠中の かたは、シートベルトを おなかの ふくらみの 下、腰の 低い ところで しめます。おなかを しめつけずに 安全に 座って もらう ための お伝えです。",
+  "settai": "「ベルトは おなかの 下で しめると 楽ですよ」と お伝えします。"
+ },
+ {
+  "id": "ky-hana",
+  "name": "鼻をつまむ",
+  "reading": "はなをつまむ",
+  "journey": "kyumei",
+  "category": "耳・足・時差",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "kyumei:mimi",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-miminuki",
+   "ky-mimi"
+  ],
+  "description": "耳抜きの 方法の 一つです。鼻を つまんで 口を とじ、そっと 鼻に 息を 送ると、耳の つまりが とれる ことが あります。強く やりすぎない ことが 大事です。"
+ },
+ {
+  "id": "ky-dassui",
+  "name": "脱水",
+  "reading": "だっすい",
+  "journey": "kyumei",
+  "category": "気分と 体調",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏜",
+  "mapNode": "kyumei:kibun",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-suibun",
+   "ky-omizu"
+  ],
+  "description": "体の 水分が 足りなく なる ことです。機内の 空気は かわいて いるので、気づかない うちに 水分が へる ことが あります。こまめに お水を 飲むと 予防に なります。"
+ },
+ {
+  "id": "ky-milk",
+  "name": "ミルクのお湯",
+  "reading": "みるくのおゆ",
+  "journey": "kyumei",
+  "category": "子どもと 赤ちゃん",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍼",
+  "mapNode": "kyumei:kodomo",
+  "field": "サービス",
+  "relatedTerms": [
+   "ky-akachan",
+   "ky-babyfood"
+  ],
+  "description": "赤ちゃんの ミルクを 作る ための お湯です。客室乗務員は ギャレーで 用意し、熱すぎない ように 気を つけて お渡し します。",
+  "settai": "「お湯は 熱いので お気を つけください」と そえて お渡しします。"
+ },
+ {
+  "id": "ky-um",
+  "name": "UM(ひとりで乗る子ども)",
+  "reading": "ゆーえむ",
+  "journey": "kyumei",
+  "category": "子どもと 赤ちゃん",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧒",
+  "mapNode": "kyumei:kodomo",
+  "field": "接遇",
+  "relatedTerms": [
+   "ky-hitoritabi",
+   "ky-hikiwatashi"
+  ],
+  "description": "英語の Unaccompanied Minor の 略で、大人が いっしょで なく ひとりで 乗る 子どもの ことです。客室乗務員が 気を くばり、到着後は 決められた むかえの 人に 引きわたします。",
+  "settai": "目線を 合わせて「何か あったら 呼んでね」と 声を かけます。",
+  "ei": "Unaccompanied Minor"
+ },
+ {
+  "id": "ky-kaifuku",
+  "name": "回復体位",
+  "reading": "かいふくたいい",
+  "journey": "kyumei",
+  "category": "AEDと 心肺蘇生",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛌",
+  "mapNode": "kyumei:kyumeisho",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-kokyu",
+   "ky-kido"
+  ],
+  "description": "意識が はっきり しない けれど 息を して いる 人を、横向きに して 休ませる 姿勢です。息の 通り道を たもち、救急の 人に 引きつぐ まで ようすを 見守ります。"
+ },
+ {
+  "id": "ky-rensa",
+  "name": "救命の連鎖",
+  "reading": "きゅうめいのれんさ",
+  "journey": "kyumei",
+  "category": "AEDと 心肺蘇生",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛓",
+  "mapNode": "kyumei:kyumeisho",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-sosei",
+   "ky-aed"
+  ],
+  "description": "命を 助ける ための 4つの 輪の つながりです。予防・早い 気づきと 通報・心肺蘇生と AED・救急隊や 病院の 手当て が 切れずに つながる ことが 大事と されて います。"
+ },
+ {
+  "id": "ky-onsei",
+  "name": "音声ガイド",
+  "reading": "おんせいがいど",
+  "journey": "kyumei",
+  "category": "AEDと 心肺蘇生",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔊",
+  "mapNode": "kyumei:aed",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-aed",
+   "ky-pad"
+  ],
+  "description": "AED は ふたを あけると、つぎに 何を するかを 声で 教えて くれます。あわてずに 声に したがえば、はじめての 人でも 使える ように 作られて います。"
+ },
+ {
+  "id": "ky-padichi",
+  "name": "パッドを貼る位置",
+  "reading": "ぱっどをはるいち",
+  "journey": "kyumei",
+  "category": "AEDと 心肺蘇生",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "kyumei:aed",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-pad",
+   "ky-shoni"
+  ],
+  "description": "AED の パッドを はる 場所です。どこに はるかは パッドに 絵で しめされて いるので、その 絵の とおりに はります。訓練では 人形を 使って 練習します。"
+ },
+ {
+  "id": "ky-kango",
+  "name": "看護師",
+  "reading": "かんごし",
+  "journey": "kyumei",
+  "category": "お医者さんと 協力",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👩‍⚕️",
+  "mapNode": "kyumei:doctor",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-iryo",
+   "ky-oisha"
+  ],
+  "description": "病院などで 患者さんの 手当てや 世話を する しごとの 人です。1930年に 世界で はじめての 客室乗務員と して 乗った エレン・チャーチさんも 看護師でした。"
+ },
+ {
+  "id": "ky-bombeten",
+  "name": "酸素ボンベの点検",
+  "reading": "さんそぼんべのてんけん",
+  "journey": "kyumei",
+  "category": "酸素ボンベ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "kyumei:sanso",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-bombe",
+   "ky-zanryo"
+  ],
+  "description": "出発の 前に、酸素ボンベが 決められた 場所に あり、すぐ 使える ように なって いるかを 確かめる ことです。いざと いう ときに あわてない ように、毎回 点検します。"
+ },
+ {
+  "id": "ky-portable",
+  "name": "ポータブル酸素",
+  "reading": "ぽーたぶるさんそ",
+  "journey": "kyumei",
+  "category": "酸素ボンベ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "kyumei:sanso",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-bombe",
+   "ky-medif"
+  ],
+  "description": "ふだんから 酸素が ひつような かたが 使う、持ち運べる 酸素の 機械です。機内に 持ちこめるかは 機械の 種類や 航空会社の 決まりで ちがい、前もって 申し出が いります。"
+ },
+ {
+  "id": "ky-kaki",
+  "name": "火気厳禁",
+  "reading": "かきげんきん",
+  "journey": "kyumei",
+  "category": "酸素ボンベ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚭",
+  "mapNode": "kyumei:sanso",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-bombe",
+   "ky-portable"
+  ],
+  "description": "火を 近づけては いけない と いう 決まりです。酸素は ものが 燃えるのを 助けるので、酸素を 使う ときは まわりで 火を 使わない ように します。"
+ },
+ {
+  "id": "ky-hojoken",
+  "name": "補助犬",
+  "reading": "ほじょけん",
+  "journey": "kyumei",
+  "category": "手助けが いる かた",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐕‍🦺",
+  "mapNode": "kyumei:tedasuke",
+  "field": "接遇",
+  "relatedTerms": [
+   "ky-modoken",
+   "ky-kaijo"
+  ],
+  "description": "盲導犬・介助犬・聴導犬の 3つを まとめた 呼びかたです。体の ことで 手助けが いる かたを 助ける 犬で、決まりに そって 客室に いっしょに 乗れます。"
+ },
+ {
+  "id": "ky-yoteibi",
+  "name": "出産予定日",
+  "reading": "しゅっさんよていび",
+  "journey": "kyumei",
+  "category": "手助けが いる かた",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "kyumei:ninpu",
+  "field": "接遇",
+  "relatedTerms": [
+   "ky-shusu",
+   "ky-shindan"
+  ],
+  "description": "赤ちゃんが 生まれる 予定の 日です。予定日が 近い かたが 飛行機に 乗る ときは、航空会社に よって 診断書や お医者さんの 同意が いる ことが あります。"
+ },
+ {
+  "id": "ky-kamin",
+  "name": "仮眠",
+  "reading": "かみん",
+  "journey": "kyumei",
+  "category": "耳・足・時差",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "😴",
+  "mapNode": "kyumei:jisa",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-jisaboke",
+   "ky-tainai"
+  ],
+  "description": "みじかい 時間 ねむって 休む ことです。長い 国際線では、客室乗務員も 交代で 決められた 場所で 休み、体調を ととのえて しごとを します。"
+ },
+ {
+  "id": "ky-teiketto",
+  "name": "低血糖",
+  "reading": "ていけっとう",
+  "journey": "kyumei",
+  "category": "気分と 体調",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍬",
+  "mapNode": "kyumei:kibun",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-kibun",
+   "ky-chijo"
+  ],
+  "description": "血の 中の 糖が 少なく なり、ふるえや 冷や汗が 出る ことが ある 状態です。食事の 時間が ずれる 長い 飛行では 気を くばり、お医者さんや 地上の 専門家と 協力して 対応します。"
+ },
+ {
+  "id": "ky-taion",
+  "name": "体温",
+  "reading": "たいおん",
+  "journey": "kyumei",
+  "category": "気分と 体調",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "kyumei:kibun",
+  "field": "サービス",
+  "relatedTerms": [
+   "ky-kibun",
+   "ky-ansei"
+  ],
+  "description": "体の あたたかさです。寒そうな かたには ブランケットを、暑そうな かたには 冷たい おしぼりや 飲みものを すすめ、楽に すごして もらいます。",
+  "settai": "「ブランケットを お持ちしましょうか」と お声がけします。"
+ },
+ {
+  "id": "ky-fuku",
+  "name": "ゆったりした服",
+  "reading": "ゆったりしたふく",
+  "journey": "kyumei",
+  "category": "耳・足・時差",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👕",
+  "mapNode": "kyumei:ashi",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-economy",
+   "ky-socks"
+  ],
+  "description": "体を しめつけない 服です。長い 飛行で 足の 血の めぐりを わるく しない ため、エコノミークラス症候群の 予防に すすめられて います。"
+ },
+ {
+  "id": "ky-suimin",
+  "name": "睡眠のリズム",
+  "reading": "すいみんのりずむ",
+  "journey": "kyumei",
+  "category": "耳・足・時差",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "kyumei:jisa",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-tainai",
+   "ky-genchi"
+  ],
+  "description": "ねむる 時間と おきる 時間の くりかえしです。時差の ある 旅では、出発の 数日 前から 少しずつ 現地の 時刻に よせると 楽に なる ことが あります。"
+ },
+ {
+  "id": "ky-nutshikae",
+  "name": "ナッツの提供をひかえる",
+  "reading": "なっつのていきょうをひかえる",
+  "journey": "kyumei",
+  "category": "アレルギー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "kyumei:allergy",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-nuts",
+   "ky-allergy"
+  ],
+  "description": "ナッツの アレルギーが ある お客さまが いる とき、まわりで ナッツを 出すのを ひかえる ことが あります。どう するかは 航空会社の 決まりに そって 決めます。"
+ },
+ {
+  "id": "ky-doi",
+  "name": "医師の同意",
+  "reading": "いしのどうい",
+  "journey": "kyumei",
+  "category": "手助けが いる かた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖊",
+  "mapNode": "kyumei:ninpu",
+  "field": "接遇",
+  "relatedTerms": [
+   "ky-medif",
+   "ky-shindan"
+  ],
+  "description": "体の ことで 手助けが いる かたや 出産が 近い かたが 飛行機に 乗るのを、お医者さんが みとめる ことです。MEDIF や 診断書で 前もって しめして もらう ことが あります。"
+ },
+ {
+  "id": "ky-escort",
+  "name": "エスコート(付きそい)",
+  "reading": "えすこーと",
+  "journey": "kyumei",
+  "category": "手助けが いる かた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍🤝‍🧑",
+  "mapNode": "kyumei:tedasuke",
+  "field": "接遇",
+  "relatedTerms": [
+   "ky-kaijo",
+   "ky-medif"
+  ],
+  "description": "体の ことで 手助けが いる かたに、旅の あいだ 付きそう 人の ことです。客室乗務員は 付きそいの かたとも 話して、どんな 手助けが よいかを 確かめます。",
+  "ei": "escort"
+ },
+ {
+  "id": "ky-omutsu",
+  "name": "おむつがえ",
+  "reading": "おむつがえ",
+  "journey": "kyumei",
+  "category": "子どもと 赤ちゃん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "kyumei:kodomo",
+  "field": "サービス",
+  "relatedTerms": [
+   "ky-akachan",
+   "ky-junyu"
+  ],
+  "description": "赤ちゃんの おむつを とりかえる ことです。おむつを かえる 台が ついた 化粧室が ある 飛行機も あり、客室乗務員は その 場所を ご案内します。",
+  "settai": "台の ある 化粧室の 場所を そっと お伝えします。"
+ },
+ {
+  "id": "ky-babyfood",
+  "name": "ベビーフード",
+  "reading": "べびーふーど",
+  "journey": "kyumei",
+  "category": "子どもと 赤ちゃん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥣",
+  "mapNode": "kyumei:kodomo",
+  "field": "サービス",
+  "relatedTerms": [
+   "ky-akachan",
+   "ky-milk"
+  ],
+  "description": "赤ちゃん向けの やわらかい 食べものです。前もって たのむと 用意して くれる 航空会社も あり、アレルギーの 有無も いっしょに 確かめます。",
+  "ei": "baby food"
+ },
+ {
+  "id": "ky-okyu",
+  "name": "応急手当",
+  "reading": "おうきゅうてあて",
+  "journey": "kyumei",
+  "category": "お医者さんと 協力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "kyumei:doctor",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-firstaid",
+   "ky-kyukyubako"
+  ],
+  "description": "急な 体調の 変化に、救急の 人に まかせる まで その 場で 行う 手当てです。客室乗務員は 訓練で 学び、お医者さんや 地上の 専門家と 協力します。"
+ },
+ {
+  "id": "ky-mizufuku",
+  "name": "胸の水をふく",
+  "reading": "むねのみずをふく",
+  "journey": "kyumei",
+  "category": "AEDと 心肺蘇生",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧻",
+  "mapNode": "kyumei:aed",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-pad",
+   "ky-padichi"
+  ],
+  "description": "胸が ぬれて いると、AED の パッドが しっかり つかず、電気が うまく 流れない ことが あります。その ため、パッドを はる 前に 胸の 水を ふきとります。"
+ },
+ {
+  "id": "ky-zanryo",
+  "name": "酸素の残量",
+  "reading": "さんそのざんりょう",
+  "journey": "kyumei",
+  "category": "酸素ボンベ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "kyumei:sanso",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-bombe",
+   "ky-bombeten"
+  ],
+  "description": "ボンベに のこって いる 酸素の 量です。メーターで 確かめられ、出発の 前の 点検で 足りて いるかを 見ます。"
+ },
+ {
+  "id": "ky-kotei",
+  "name": "酸素ボンベの固定",
+  "reading": "さんそぼんべのこてい",
+  "journey": "kyumei",
+  "category": "酸素ボンベ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "kyumei:sanso",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-bombe",
+   "ky-bombeten"
+  ],
+  "description": "酸素ボンベが ゆれで 動かない ように、決まった 場所に しっかり とめて おく ことです。使った あとも もとの 場所に もどして 固定します。"
+ },
+ {
+  "id": "ky-kyoryoku",
+  "name": "協力者を集める",
+  "reading": "きょうりょくしゃをあつめる",
+  "journey": "kyumei",
+  "category": "AEDと 心肺蘇生",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "kyumei:kyumeisho",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-kotai",
+   "ky-doctorcall"
+  ],
+  "description": "体調を くずした お客さまが いる とき、ほかの 客室乗務員や まわりの お客さまに 助けを もとめる ことです。AED を 持って くる 人・交代する 人 など、手分けして 動きます。",
+  "settai": "「手伝って いただけますか」と はっきり お願いします。"
+ },
+ {
+  "id": "ky-hanazumari",
+  "name": "鼻づまり",
+  "reading": "はなづまり",
+  "journey": "kyumei",
+  "category": "耳・足・時差",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤧",
+  "mapNode": "kyumei:mimi",
+  "field": "救急",
+  "relatedTerms": [
+   "ky-miminuki",
+   "ky-chuji"
+  ],
+  "description": "かぜ などで 鼻が つまって いると、耳抜きが しにくく、着陸の とき 耳が いたく なりやすい ことが あります。客室乗務員は 耳の ようすに 気を くばります。"
+ }
+]

@@ -38410,5 +38410,669 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Boeing_777X_flyover_at_2025_Seafair_-_01.jpg",
   "file": "File:Boeing 777X flyover at 2025 Seafair - 01.jpg"
+ },
+ "cabin.ki-business": {
+  "src": "photo-cabin.ki-business.jpg",
+  "author": "衛兵隊衛士",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ANA_B777-300ER%E2%91%A2.JPG",
+  "file": "File:ANA B777-300ER③.JPG"
+ },
+ "cabin.ki-economy": {
+  "src": "photo-cabin.ki-economy.jpg",
+  "author": "衛兵隊衛士",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ANA_B777-300ER%E2%91%A5.JPG",
+  "file": "File:ANA B777-300ER⑥.JPG"
+ },
+ "cabin.ki-jumpseat": {
+  "src": "photo-cabin.ki-jumpseat.jpg",
+  "author": "Christopher Doyle from Horley, United Kingdom",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:A320_Door_2L.jpg",
+  "file": "File:A320 Door 2L.jpg"
+ },
+ "cabin.ki-narrowbody": {
+  "src": "photo-cabin.ki-narrowbody.jpg",
+  "author": "Uploader's mother, digitally altered by Mr.choppers",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AirAsia_interior.jpg",
+  "file": "File:AirAsia interior.jpg"
+ },
+ "cabin.ki-premium": {
+  "src": "photo-cabin.ki-premium.jpg",
+  "author": "Delta News Hub",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:A350-_Interior_-_Premium_Select_(37221441742).jpg",
+  "file": "File:A350- Interior - Premium Select (37221441742).jpg"
+ },
+ "cabin.ki-coffee": {
+  "src": "photo-cabin.ki-coffee.jpg",
+  "author": "Consumer Reports, Inc.",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Consumer_Reports_-_Zojirushi_coffeemaker_alt.tif",
+  "file": "File:Consumer Reports - Zojirushi coffeemaker alt.tif"
+ },
+ "cabin.ki-omutsu": {
+  "src": "photo-cabin.ki-omutsu.jpg",
+  "author": "Photo: Andreas Praefcke",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Puppen-Wickeltisch_c1900_Berlin_SlgKiJu.jpg",
+  "file": "File:Puppen-Wickeltisch c1900 Berlin SlgKiJu.jpg"
+ },
+ "cabin.ki-ife": {
+  "src": "photo-cabin.ki-ife.jpg",
+  "author": "Cweyer at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:N3744F_cabin1.jpg",
+  "file": "File:N3744F cabin1.jpg"
+ },
+ "cabin.ho-shiori": {
+  "src": "photo-cabin.ho-shiori.jpg",
+  "author": "BerlinDruck",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Germania_Safety_card.jpg",
+  "file": "File:Germania Safety card.jpg"
+ },
+ "cabin.ho-kyumeidoi": {
+  "src": "photo-cabin.ho-kyumeidoi.jpg",
+  "author": "Martin Talbot from Moscow, Russia",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Azores_Picture_352_(2888976321).jpg",
+  "file": "File:Azores Picture 352 (2888976321).jpg"
+ },
+ "cabin.ho-hijoguchi": {
+  "src": "photo-cabin.ho-hijoguchi.jpg",
+  "author": "alerante, based on PDF linked above",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Emergency_Exit_ISO_Pictogram_(green).svg",
+  "file": "File:Emergency Exit ISO Pictogram (green).svg"
+ },
+ "cabin.ho-kinaimode": {
+  "src": "photo-cabin.ho-kinaimode.jpg",
+  "author": "Perplexed Guide",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Nexus5Android4.4.2inAirplanemode.png",
+  "file": "File:Nexus5Android4.4.2inAirplanemode.png"
+ },
+ "cabin.ho-shokaki": {
+  "src": "photo-cabin.ho-shokaki.jpg",
+  "author": "Nesnad",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanesefireextingisher-may28-2015.jpg",
+  "file": "File:Japanesefireextingisher-may28-2015.jpg"
+ },
+ "cabin.ho-kinen": {
+  "src": "photo-cabin.ho-kinen.jpg",
+  "author": "Stefan-Xp",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rauchen_Verboten.svg",
+  "file": "File:Rauchen Verboten.svg"
+ },
+ "cabin.ho-yudoto": {
+  "src": "photo-cabin.ho-yudoto.jpg",
+  "author": "alerante, based on PDF linked above",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Emergency_Exit_ISO_Pictogram_(green).svg",
+  "file": "File:Emergency Exit ISO Pictogram (green).svg"
+ },
+ "cabin.ho-smartphone": {
+  "src": "photo-cabin.ho-smartphone.jpg",
+  "author": "Sage Ross",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wikipedia_homepage_on_a_large_Android_phone,_2015-04-16.jpg",
+  "file": "File:Wikipedia homepage on a large Android phone, 2015-04-16.jpg"
+ },
+ "cabin.ho-ikada": {
+  "src": "photo-cabin.ho-ikada.jpg",
+  "author": "No machine-readable author provided. Edge Nabe assumed (base…",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:CA340036.jpg",
+  "file": "File:CA340036.jpg"
+ },
+ "cabin.ho-kemurikanchi": {
+  "src": "photo-cabin.ho-kemurikanchi.jpg",
+  "author": "Drb400atx",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Proprietary-type_fire_alarm_manual_call_point.JPG",
+  "file": "File:Proprietary-type fire alarm manual call point.JPG"
+ },
+ "cabin.ho-lithium": {
+  "src": "photo-cabin.ho-lithium.jpg",
+  "author": "Krzysztof Woźnica - KyloDee",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Battery-lithium-cr2032.jpg",
+  "file": "File:Battery-lithium-cr2032.jpg"
+ },
+ "cabin.ho-mochikomi": {
+  "src": "photo-cabin.ho-mochikomi.jpg",
+  "author": "User:Mattes",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Luggage_compartments_Airbus.JPG",
+  "file": "File:Luggage compartments Airbus.JPG"
+ },
+ "cabin.ho-childseat": {
+  "src": "photo-cabin.ho-childseat.jpg",
+  "author": "No machine-readable author provided. Emandbri assumed (based…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Safeseat.jpg",
+  "file": "File:Safeseat.jpg"
+ },
+ "cabin.ho-breaker": {
+  "src": "photo-cabin.ho-breaker.jpg",
+  "author": "shampoorobot",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FUJI_EA603B_MCCB_500A.jpg",
+  "file": "File:FUJI EA603B MCCB 500A.jpg"
+ },
+ "cabin.ho-megaphone": {
+  "src": "photo-cabin.ho-megaphone.jpg",
+  "author": "100yen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Megaphone_with_hand_microphone.JPG",
+  "file": "File:Megaphone with hand microphone.JPG"
+ },
+ "cabin.ho-kaichu": {
+  "src": "photo-cabin.ho-kaichu.jpg",
+  "author": "Harry20 at German Wikipedia (Original text: de:Benutzer:Harr…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:3_Lampen--_49_LED,_30_LED,_7_LED%2B_Kryptonbirne1.jpg",
+  "file": "File:3 Lampen-- 49 LED, 30 LED, 7 LED+ Kryptonbirne1.jpg"
+ },
+ "cabin.se-meal": {
+  "src": "photo-cabin.se-meal.jpg",
+  "author": "Alexsh",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Air_Canada_Economy_Meal_Breakfast_20170805.jpg",
+  "file": "File:Air Canada Economy Meal Breakfast 20170805.jpg"
+ },
+ "cabin.se-drink": {
+  "src": "photo-cabin.se-drink.jpg",
+  "author": "Cocktailmarler",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Glass_of_Cola.jpg",
+  "file": "File:Glass of Cola.jpg"
+ },
+ "cabin.se-oshibori": {
+  "src": "photo-cabin.se-oshibori.jpg",
+  "author": "Lemon-s",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Oshibori.jpg",
+  "file": "File:Oshibori.jpg"
+ },
+ "cabin.se-makura": {
+  "src": "photo-cabin.se-makura.jpg",
+  "author": "Amin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pillows_on_a_hotel_bed.jpg",
+  "file": "File:Pillows on a hotel bed.jpg"
+ },
+ "cabin.se-menzei": {
+  "src": "photo-cabin.se-menzei.jpg",
+  "author": "No machine-readable author provided. David Shay assumed (bas…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Duty_Free_shop_-_Ben_Gurion_Airport.jpg",
+  "file": "File:Duty Free shop - Ben Gurion Airport.jpg"
+ },
+ "cabin.se-ehon": {
+  "src": "photo-cabin.se-ehon.jpg",
+  "author": "No machine-readable author provided. Brams assumed (based on…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Picturebook1.JPG",
+  "file": "File:Picturebook1.JPG"
+ },
+ "cabin.se-juice": {
+  "src": "photo-cabin.se-juice.jpg",
+  "author": "Agricultural Research Service",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Orange_juice_1.jpg",
+  "file": "File:Orange juice 1.jpg"
+ },
+ "cabin.se-coffee": {
+  "src": "photo-cabin.se-coffee.jpg",
+  "author": "Bex Walton",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Latte_and_dark_coffee.jpg",
+  "file": "File:Latte and dark coffee.jpg"
+ },
+ "cabin.se-ryokucha": {
+  "src": "photo-cabin.se-ryokucha.jpg",
+  "author": "Robert Donovan from Franklin, TN, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Small_cup_of_green_tea.jpg",
+  "file": "File:Small cup of green tea.jpg"
+ },
+ "cabin.se-water": {
+  "src": "photo-cabin.se-water.jpg",
+  "author": "Walter J. Pilsak, Waldsassen, Germany",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Stilles_Mineralwasser.jpg",
+  "file": "File:Stilles Mineralwasser.jpg"
+ },
+ "cabin.se-slipper": {
+  "src": "photo-cabin.se-slipper.jpg",
+  "author": "No machine-readable author provided. Akir assumed (based on …",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Slippers_for_Wiktionary.JPG",
+  "file": "File:Slippers for Wiktionary.JPG"
+ },
+ "cabin.se-haburashi": {
+  "src": "photo-cabin.se-haburashi.jpg",
+  "author": "Jonas Bergsten",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Toothbrush_x3_20050716_001.jpg",
+  "file": "File:Toothbrush x3 20050716 001.jpg"
+ },
+ "cabin.se-omocha": {
+  "src": "photo-cabin.se-omocha.jpg",
+  "author": "Pratheepps",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wooden_toys.JPG",
+  "file": "File:Wooden toys.JPG"
+ },
+ "cabin.se-wine": {
+  "src": "photo-cabin.se-wine.jpg",
+  "author": "USBGroup4",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spier_21_Gables.jpg",
+  "file": "File:Spier 21 Gables.jpg"
+ },
+ "cabin.se-redwine": {
+  "src": "photo-cabin.se-redwine.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_Wine_Glass.jpg",
+  "file": "File:Red Wine Glass.jpg"
+ },
+ "cabin.se-whitewine": {
+  "src": "photo-cabin.se-whitewine.jpg",
+  "author": "Tokyo Tanenhaus",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Preparing_a_wine_tasting_flight_at_a_tasting_bar.jpg",
+  "file": "File:Preparing a wine tasting flight at a tasting bar.jpg"
+ },
+ "cabin.se-sommelier": {
+  "src": "photo-cabin.se-sommelier.jpg",
+  "author": "OneArmedMan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sommelier_F.I.S.A.R..jpg",
+  "file": "File:Sommelier F.I.S.A.R..jpg"
+ },
+ "cabin.se-champagne": {
+  "src": "photo-cabin.se-champagne.jpg",
+  "author": "bgvjpe",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Glass_of_champagne.jpg",
+  "file": "File:Glass of champagne.jpg"
+ },
+ "cabin.se-softdrink": {
+  "src": "photo-cabin.se-softdrink.jpg",
+  "author": "Wilfredor",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Soft_drink_shelf_2.jpg",
+  "file": "File:Soft drink shelf 2.jpg"
+ },
+ "cabin.se-zensai": {
+  "src": "photo-cabin.se-zensai.jpg",
+  "author": "Peng",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Salatteller.JPG",
+  "file": "File:Salatteller.JPG"
+ },
+ "cabin.se-washoku": {
+  "src": "photo-cabin.se-washoku.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Osechi_001.jpg",
+  "file": "File:Osechi 001.jpg"
+ },
+ "cabin.se-kosui": {
+  "src": "photo-cabin.se-kosui.jpg",
+  "author": "Angela Andriot",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vintage_Atomizer_Perfume_Bottle.JPG",
+  "file": "File:Vintage Atomizer Perfume Bottle.JPG"
+ },
+ "cabin.sk-jisa": {
+  "src": "photo-cabin.sk-jisa.jpg",
+  "author": "UnaitxuGV, Heitordp and others",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:World_Time_Zones_Map.png",
+  "file": "File:World Time Zones Map.png"
+ },
+ "cabin.sk-hizukehenkosen": {
+  "src": "photo-cabin.sk-hizukehenkosen.jpg",
+  "author": "Arnaudf",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dateline-animation-3deg-borderonly-180px.gif",
+  "file": "File:Dateline-animation-3deg-borderonly-180px.gif"
+ },
+ "cabin.sk-summertime": {
+  "src": "photo-cabin.sk-summertime.jpg",
+  "author": "TimeZonesBoy",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DST_Countries_Map.png",
+  "file": "File:DST Countries Map.png"
+ },
+ "cabin.sk-newyork": {
+  "src": "photo-cabin.sk-newyork.jpg",
+  "author": "Bleff (compilation), for proper author attribution see sourc…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NYC_Montage_2011.jpg",
+  "file": "File:NYC Montage 2011.jpg"
+ },
+ "cabin.sk-paris": {
+  "src": "photo-cabin.sk-paris.jpg",
+  "author": "Wladyslaw (Taxiarchos228)",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Paris_-_Eiffelturm_und_Marsfeld2.jpg",
+  "file": "File:Paris - Eiffelturm und Marsfeld2.jpg"
+ },
+ "cabin.sk-london": {
+  "src": "photo-cabin.sk-london.jpg",
+  "author": "Ilya Grigorik",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:London_Skyline_(125508655).jpeg",
+  "file": "File:London Skyline (125508655).jpeg"
+ },
+ "cabin.sk-seoul": {
+  "src": "photo-cabin.sk-seoul.jpg",
+  "author": "Joon Kyu Park",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Seoul_(175734251).jpeg",
+  "file": "File:Seoul (175734251).jpeg"
+ },
+ "cabin.sk-hawaii": {
+  "src": "photo-cabin.sk-hawaii.jpg",
+  "author": "Dbenbenn",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Hawaii.svg",
+  "file": "File:Flag of Hawaii.svg"
+ },
+ "cabin.sk-sydney": {
+  "src": "photo-cabin.sk-sydney.jpg",
+  "author": "Anoldtreeok",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Montage_of_Sydney1.jpg",
+  "file": "File:Montage of Sydney1.jpg"
+ },
+ "cabin.sk-dubai": {
+  "src": "photo-cabin.sk-dubai.jpg",
+  "author": "Caleb Whiting dogbear869",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Dubai,_United_Arab_Emirates_(Unsplash_suv4vuJsH6g).jpg",
+  "file": "File:Dubai, United Arab Emirates (Unsplash suv4vuJsH6g).jpg"
+ },
+ "cabin.sk-brazil": {
+  "src": "photo-cabin.sk-brazil.jpg",
+  "author": "Raimundo Teixeira Mendes",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Brazil.svg",
+  "file": "File:Flag of Brazil.svg"
+ },
+ "cabin.sk-gmt": {
+  "src": "photo-cabin.sk-gmt.jpg",
+  "author": "Takasunrise0921",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Prime-meridian.jpg",
+  "file": "File:Prime-meridian.jpg"
+ },
+ "cabin.sk-timezone": {
+  "src": "photo-cabin.sk-timezone.jpg",
+  "author": "UnaitxuGV, Heitordp and others",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:World_Time_Zones_Map.png",
+  "file": "File:World Time Zones Map.png"
+ },
+ "cabin.sk-natsujikan": {
+  "src": "photo-cabin.sk-natsujikan.jpg",
+  "author": "TimeZonesBoy",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DST_Countries_Map.png",
+  "file": "File:DST Countries Map.png"
+ },
+ "cabin.sk-beijing": {
+  "src": "photo-cabin.sk-beijing.jpg",
+  "author": "Montage by ASDFGH (talk) and Foxy1219(talk), source image au…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Beijing_montage_2019.png",
+  "file": "File:Beijing montage 2019.png"
+ },
+ "cabin.sk-shanghai": {
+  "src": "photo-cabin.sk-shanghai.jpg",
+  "author": "ASDFGHJ, pontmarcheur (compilations, for proper attribution …",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shanghai_montage.png",
+  "file": "File:Shanghai montage.png"
+ },
+ "cabin.sk-tokei135": {
+  "src": "photo-cabin.sk-tokei135.jpg",
+  "author": "TUBS",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:World_location_map_(equirectangular_180).svg",
+  "file": "File:World location map (equirectangular 180).svg"
+ },
+ "cabin.sk-keido": {
+  "src": "photo-cabin.sk-keido.jpg",
+  "author": "Stefan Kühn (Fotograf)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Azimutalprojektion-schief_kl-cropped.png",
+  "file": "File:Azimutalprojektion-schief kl-cropped.png"
+ },
+ "cabin.sk-fuyujikan": {
+  "src": "photo-cabin.sk-fuyujikan.jpg",
+  "author": "UnaitxuGV, Heitordp and others",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:World_Time_Zones_Map.png",
+  "file": "File:World Time Zones Map.png"
+ },
+ "cabin.sk-danjiki": {
+  "src": "photo-cabin.sk-danjiki.jpg",
+  "author": "Stock Catalog",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Empty_table_setting_plate_fork_knife_(42585288225).jpg",
+  "file": "File:Empty table setting plate fork knife (42585288225).jpg"
+ },
+ "cabin.sk-buenosaires": {
+  "src": "photo-cabin.sk-buenosaires.jpg",
+  "author": "Bleff",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Montaje_de_la_Ciudad_de_Buenos_Aires.png",
+  "file": "File:Montaje de la Ciudad de Buenos Aires.png"
+ },
+ "cabin.sk-saopaulo": {
+  "src": "photo-cabin.sk-saopaulo.jpg",
+  "author": "Compilation by Heitor Carvalho Jorge",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Montagem_SP.png",
+  "file": "File:Montagem SP.png"
+ },
+ "cabin.sk-nairobi": {
+  "src": "photo-cabin.sk-nairobi.jpg",
+  "author": "Southlondoneye (talk) 20:30, 29 March 2015 (UTC)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nairobi_Montage_A.jpg",
+  "file": "File:Nairobi Montage A.jpg"
+ },
+ "cabin.sk-johannesburg": {
+  "src": "photo-cabin.sk-johannesburg.jpg",
+  "author": "Mangwanani",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Johannesburg,_South_Africa.svg",
+  "file": "File:Flag of Johannesburg, South Africa.svg"
+ },
+ "cabin.sk-doha": {
+  "src": "photo-cabin.sk-doha.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:City_montage_of_Doha2.png",
+  "file": "File:City montage of Doha2.png"
+ },
+ "cabin.ku-kuko": {
+  "src": "photo-cabin.ku-kuko.jpg",
+  "author": "CellarDoor85 (Robert Aehnelt).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Airport_infrastructure.png",
+  "file": "File:Airport infrastructure.png"
+ },
+ "cabin.ku-shukkoku": {
+  "src": "photo-cabin.ku-shukkoku.jpg",
+  "author": "User:Mattes",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:VTBS-Passport_control.JPG",
+  "file": "File:VTBS-Passport control.JPG"
+ },
+ "cabin.ku-nyukoku": {
+  "src": "photo-cabin.ku-nyukoku.jpg",
+  "author": "User:Mattes",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:VTBS-Passport_control.JPG",
+  "file": "File:VTBS-Passport control.JPG"
+ },
+ "cabin.ku-zeikan": {
+  "src": "photo-cabin.ku-zeikan.jpg",
+  "author": "Amin",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Netherlands_Customs_Douane_Schiphol_Airport.jpg",
+  "file": "File:Netherlands Customs Douane Schiphol Airport.jpg"
+ },
+ "cabin.ku-kekko": {
+  "src": "photo-cabin.ku-kekko.jpg",
+  "author": "Addd wiki (talk)",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:HYD_board_2.jpg",
+  "file": "File:HYD board 2.jpg"
+ },
+ "cabin.ku-tojo": {
+  "src": "photo-cabin.ku-tojo.jpg",
+  "author": "メルビル This photo was taken with Casio Exilim EX-ZR100",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CRJ-700NG%EF%BC%BFtrap.JPG",
+  "file": "File:CRJ-700NG＿trap.JPG"
+ },
+ "cabin.ku-suitcase": {
+  "src": "photo-cabin.ku-suitcase.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Suitcase_750x500.jpg",
+  "file": "File:Suitcase 750x500.jpg"
+ },
+ "cabin.ku-kassoro": {
+  "src": "photo-cabin.ku-kassoro.jpg",
+  "author": "Emil Hedaya",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Great_Barrier_Reef_Airport.JPG",
+  "file": "File:Great Barrier Reef Airport.JPG"
+ },
+ "cabin.ku-tenbo": {
+  "src": "photo-cabin.ku-tenbo.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Obiki-no-hana_Kasumi_Coast_Hyogo_pref03n4020.jpg",
+  "file": "File:Obiki-no-hana Kasumi Coast Hyogo pref03n4020.jpg"
+ },
+ "cabin.ku-tag": {
+  "src": "photo-cabin.ku-tag.jpg",
+  "author": "Ja3far Alzebi (Join my OF) at English Wikipedia",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Dca-baggage-tag.jpg",
+  "file": "File:Dca-baggage-tag.jpg"
+ },
+ "cabin.ku-jutaku": {
+  "src": "photo-cabin.ku-jutaku.jpg",
+  "author": "Mattes",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2015_Madeira_Samsung_(211).jpg",
+  "file": "File:2015 Madeira Samsung (211).jpg"
+ },
+ "cabin.ku-washington": {
+  "src": "photo-cabin.ku-washington.jpg",
+  "author": "CITES",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:CITES_Logo.tif",
+  "file": "File:CITES Logo.tif"
  }
 };

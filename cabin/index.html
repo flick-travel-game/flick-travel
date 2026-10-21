@@ -12,7 +12,7 @@
 <meta property="og:title" content="フリックキャビンアテンダント｜かずとも">
 <meta property="og:description" content="客室と 飛行機の きほん・安全を 守る しくみ・お客さまの 体調・機内の サービス・おもてなしと マナー・空の 英語・世界の 都市と 文化・空港と フライト・客室乗務員の しごとと なりかたの ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出て、「🤝 おもてなし」で お客さまへの 使いかたが、英語の ことばは 🔊 で 英語の 音が わかるよ。飛行機や 旅行が すきな 子の ことばから はじめて、航空会社の 採用試験・入社後の 訓練(保安・救急・サービス・接遇・英語)の めやすまで。4択クイズと 計算問題(時差・着く 時刻・機内の サービスの 数・お金・単位)で 練習も できるよ。 かずともの フリックゲーム。">
 <meta property="og:url" content="https://kazutomo.app/flick/cabin/">
-<meta property="og:image" content="https://kazutomo.app/flick/hero.webp">
+<meta property="og:image" content="https://kazutomo.app/flick/cabin/hero.webp">
 <meta property="og:locale" content="ja_JP">
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
@@ -441,6 +441,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックキャビンアテンダント</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリックキャビンアテンダント" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -573,7 +574,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"cabin", name:"フリックキャビンアテンダント", modes:(typeof CABIN === "object" ? CABIN.modes : []), assets:"../", logo:false, hero:false, dir:"cabin/", lead:"客室と 飛行機の きほん・安全を 守る しくみ・お客さまの 体調・機内の サービス・おもてなしと マナー・空の 英語・世界の 都市と 文化・空港と フライト・客室乗務員の しごとと なりかたの ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出て、「🤝 おもてなし」で お客さまへの 使いかたが、英語の ことばは 🔊 で 英語の 音が わかるよ。飛行機や 旅行が すきな 子の ことばから はじめて、航空会社の 採用試験・入社後の 訓練(保安・救急・サービス・接遇・英語)の めやすまで。4択クイズと 計算問題(時差・着く 時刻・機内の サービスの 数・お金・単位)で 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。これで 受かる わけでは ありません。客室乗務員に なるには 航空会社の 採用試験を うけ、入社後の 訓練を うけます。面接・笑顔・ことばづかい・英語の 練習は ゲームの 外でも してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、空の 上で みんなを 守り、もてなす しごとが 見えてくるよ。実在の 航空会社とは 関係ありません。" };
+const GAME = { id:"cabin", name:"フリックキャビンアテンダント", modes:(typeof CABIN === "object" ? CABIN.modes : []), assets:"../", logo:false, hero:true, dir:"cabin/", lead:"客室と 飛行機の きほん・安全を 守る しくみ・お客さまの 体調・機内の サービス・おもてなしと マナー・空の 英語・世界の 都市と 文化・空港と フライト・客室乗務員の しごとと なりかたの ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出て、「🤝 おもてなし」で お客さまへの 使いかたが、英語の ことばは 🔊 で 英語の 音が わかるよ。飛行機や 旅行が すきな 子の ことばから はじめて、航空会社の 採用試験・入社後の 訓練(保安・救急・サービス・接遇・英語)の めやすまで。4択クイズと 計算問題(時差・着く 時刻・機内の サービスの 数・お金・単位)で 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。これで 受かる わけでは ありません。客室乗務員に なるには 航空会社の 採用試験を うけ、入社後の 訓練を うけます。面接・笑顔・ことばづかい・英語の 練習は ゲームの 外でも してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、空の 上で みんなを 守り、もてなす しごとが 見えてくるよ。実在の 航空会社とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

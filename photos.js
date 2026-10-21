@@ -39074,5 +39074,2749 @@ const PHOTOS = {
   "licenseUrl": "",
   "page": "https://commons.wikimedia.org/wiki/File:CITES_Logo.tif",
   "file": "File:CITES Logo.tif"
+ },
+ "supercar.ki-supercar": {
+  "src": "photo-supercar.ki-supercar.jpg",
+  "author": "Will ainsworth",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:F40_Ferrari_20090509.jpg",
+  "file": "File:F40 Ferrari 20090509.jpg"
+ },
+ "supercar.ki-hypercar": {
+  "src": "photo-supercar.ki-hypercar.jpg",
+  "author": "More Cars from Berlin, Germany",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_Project_One_(26646584439).jpg",
+  "file": "File:Mercedes-AMG Project One (26646584439).jpg"
+ },
+ "supercar.ki-sportscar": {
+  "src": "photo-supercar.ki-sportscar.jpg",
+  "author": "Ethan Llamas",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nissan_Z_RZ34_Premium_Seiran_Blue_x_black_roof.jpg",
+  "file": "File:Nissan Z RZ34 Premium Seiran Blue x black roof.jpg"
+ },
+ "supercar.ki-bariki": {
+  "src": "photo-supercar.ki-bariki.jpg",
+  "author": "Pete Markham from Loretto, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Horse....Carriage....Cell_Phone%3F_(1035544976).jpg",
+  "file": "File:Horse....Carriage....Cell Phone? (1035544976).jpg"
+ },
+ "supercar.ki-midship": {
+  "src": "photo-supercar.ki-midship.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:En_mr001.png",
+  "file": "File:En mr001.png"
+ },
+ "supercar.ki-coupe": {
+  "src": "photo-supercar.ki-coupe.jpg",
+  "author": "Y.Leclercq",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DSC06569-Lexus_RC_(2).jpg",
+  "file": "File:DSC06569-Lexus RC (2).jpg"
+ },
+ "supercar.ki-opencar": {
+  "src": "photo-supercar.ki-opencar.jpg",
+  "author": "TTTNIS",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Mazda_Roadster_ND.jpg",
+  "file": "File:Mazda Roadster ND.jpg"
+ },
+ "supercar.ki-tire": {
+  "src": "photo-supercar.ki-tire.jpg",
+  "author": "Angie from Sawara, Chiba-ken, Japan",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Car_tires.jpg",
+  "file": "File:Car tires.jpg"
+ },
+ "supercar.ki-concept": {
+  "src": "photo-supercar.ki-concept.jpg",
+  "author": "不明",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%88%E3%83%A8%E3%82%BFPM.jpg",
+  "file": "File:トヨタPM.jpg"
+ },
+ "supercar.ki-motorshow": {
+  "src": "photo-supercar.ki-motorshow.jpg",
+  "author": "Nan Palmero from San Antonio, TX, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Paris_Motor_Show_2012_(8065314290).jpg",
+  "file": "File:Paris Motor Show 2012 (8065314290).jpg"
+ },
+ "supercar.ki-circuit": {
+  "src": "photo-supercar.ki-circuit.jpg",
+  "author": "Maverick Helicopters",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Las_Vegas_Motor_Speedway_in_March_2011.jpg",
+  "file": "File:Las Vegas Motor Speedway in March 2011.jpg"
+ },
+ "supercar.ki-rearengine": {
+  "src": "photo-supercar.ki-rearengine.jpg",
+  "author": "Bill Abbott",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Flickr_-_wbaiv_-_Porsche_911_%22normally_aspirated%22_ie_no_turbosupercharger.jpg",
+  "file": "File:Flickr - wbaiv - Porsche 911 \"normally aspirated\" ie no turbosupercharger.jpg"
+ },
+ "supercar.ki-targa": {
+  "src": "photo-supercar.ki-targa.jpg",
+  "author": "MartinHansV",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:MHV_VW-Porsche_914-6.jpg",
+  "file": "File:MHV VW-Porsche 914-6.jpg"
+ },
+ "supercar.ki-fastback": {
+  "src": "photo-supercar.ki-fastback.jpg",
+  "author": "No machine-readable author provided. Citroënist assumed (bas…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Scarab_OHTM.JPG",
+  "file": "File:Scarab OHTM.JPG"
+ },
+ "supercar.ki-wheelbase": {
+  "src": "photo-supercar.ki-wheelbase.jpg",
+  "author": "Teccirio",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Wheelbase001.png",
+  "file": "File:Wheelbase001.png"
+ },
+ "supercar.ki-nurburgring": {
+  "src": "photo-supercar.ki-nurburgring.jpg",
+  "author": "Will Pittenger",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:N%C3%BCrburgring_-_Grand-Prix-Strecke.svg",
+  "file": "File:Nürburgring - Grand-Prix-Strecke.svg"
+ },
+ "supercar.ki-geneva": {
+  "src": "photo-supercar.ki-geneva.jpg",
+  "author": "R20k",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:IntAutoSalonGenf08.JPG",
+  "file": "File:IntAutoSalonGenf08.JPG"
+ },
+ "supercar.ki-tokyoshow": {
+  "src": "photo-supercar.ki-tokyoshow.jpg",
+  "author": "TAKA@P.P.R.S",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_45th_Tokyo_Motor_Show_2017-5_(38038155031).jpg",
+  "file": "File:The 45th Tokyo Motor Show 2017-5 (38038155031).jpg"
+ },
+ "supercar.ki-bucket": {
+  "src": "photo-supercar.ki-bucket.jpg",
+  "author": "The Car Spy",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_360_Spider_F1_-_Flickr_-_The_Car_Spy_(14).jpg",
+  "file": "File:Ferrari 360 Spider F1 - Flickr - The Car Spy (14).jpg"
+ },
+ "supercar.ki-shootingbrake": {
+  "src": "photo-supercar.ki-shootingbrake.jpg",
+  "author": "2011-03-04_Autosalon_Genf_1205.JPG: Norbert Aepli, Switzerla…",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_FF_Autosalon_Genf.JPG",
+  "file": "File:Ferrari FF Autosalon Genf.JPG"
+ },
+ "supercar.ki-codatronca": {
+  "src": "photo-supercar.ki-codatronca.jpg",
+  "author": "Ckrockett",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%2769_Fiat_850_Coupe,_example_of_Kammback.jpg",
+  "file": "File:'69 Fiat 850 Coupe, example of Kammback.jpg"
+ },
+ "supercar.ki-transaxle": {
+  "src": "photo-supercar.ki-transaxle.jpg",
+  "author": "Missile shot",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nissan_GT-R_cutmodel.JPG",
+  "file": "File:Nissan GT-R cutmodel.JPG"
+ },
+ "supercar.ki-bespoke": {
+  "src": "photo-supercar.ki-bespoke.jpg",
+  "author": "Sven Krolczik",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bespoke_chalkstripe_suit_sven_krolczik.jpg",
+  "file": "File:Bespoke chalkstripe suit sven krolczik.jpg"
+ },
+ "supercar.ki-nordschleife": {
+  "src": "photo-supercar.ki-nordschleife.jpg",
+  "author": "Will Pittenger",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:N%C3%BCrburgring_-_Grand-Prix-Strecke.svg",
+  "file": "File:Nürburgring - Grand-Prix-Strecke.svg"
+ },
+ "supercar.ki-spa": {
+  "src": "photo-supercar.ki-spa.jpg",
+  "author": "Planet Labs, Inc.",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Circuit_de_Spa-Francorchamps,_April_22,_2018_SkySat_(cropped).jpg",
+  "file": "File:Circuit de Spa-Francorchamps, April 22, 2018 SkySat (cropped).jpg"
+ },
+ "supercar.ki-lagunaseca": {
+  "src": "photo-supercar.ki-lagunaseca.jpg",
+  "author": "Will Pittenger",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Laguna_Seca.svg",
+  "file": "File:Laguna Seca.svg"
+ },
+ "supercar.ki-nm": {
+  "src": "photo-supercar.ki-nm.jpg",
+  "author": "Lehasa",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Newton-metre.png",
+  "file": "File:Newton-metre.png"
+ },
+ "supercar.ki-braking": {
+  "src": "photo-supercar.ki-braking.jpg",
+  "author": "Comyu",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Discbrake.jpg",
+  "file": "File:Discbrake.jpg"
+ },
+ "supercar.ki-concours": {
+  "src": "photo-supercar.ki-concours.jpg",
+  "author": "Classicsworkshop",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1921_Kissel_6-45_Gold_Bug_Speedster_-_Best_in_Class_-_2018_Pebble_Beach_Concours_d%27Elegance.jpg",
+  "file": "File:1921 Kissel 6-45 Gold Bug Speedster - Best in Class - 2018 Pebble Beach Concours d'Elegance.jpg"
+ },
+ "supercar.ki-paris": {
+  "src": "photo-supercar.ki-paris.jpg",
+  "author": "Nan Palmero from San Antonio, TX, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Paris_Motor_Show_2012_(8065259131).jpg",
+  "file": "File:Paris Motor Show 2012 (8065259131).jpg"
+ },
+ "supercar.ki-torque": {
+  "src": "photo-supercar.ki-torque.jpg",
+  "author": "Yawe",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Torque_animation.gif",
+  "file": "File:Torque animation.gif"
+ },
+ "supercar.ki-racingcar": {
+  "src": "photo-supercar.ki-racingcar.jpg",
+  "author": "kevinmcgill from Den Bosch, Netherlands",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2013_24_Hours_of_Le_Mans_5585_(9120999792).jpg",
+  "file": "File:2013 24 Hours of Le Mans 5585 (9120999792).jpg"
+ },
+ "supercar.ki-checkered": {
+  "src": "photo-supercar.ki-checkered.jpg",
+  "author": "Royalbroil",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:RacingFlagsJune2007.jpg",
+  "file": "File:RacingFlagsJune2007.jpg"
+ },
+ "supercar.ki-goodwood": {
+  "src": "photo-supercar.ki-goodwood.jpg",
+  "author": "Troxx",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Goodwood2007-005.jpg",
+  "file": "File:Goodwood2007-005.jpg"
+ },
+ "supercar.ki-magnesium": {
+  "src": "photo-supercar.ki-magnesium.jpg",
+  "author": "Brett Weinstein (Wikipedia User: Nrbelex)",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:SC06_2005_Porsche_Carrera_GT_wheel.jpg",
+  "file": "File:SC06 2005 Porsche Carrera GT wheel.jpg"
+ },
+ "supercar.ki-frankfurt": {
+  "src": "photo-supercar.ki-frankfurt.jpg",
+  "author": "Thomas Wolf, www.foto-tw.de",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_IAA_2009_B%C3%BChne.jpg",
+  "file": "File:Mercedes-Benz IAA 2009 Bühne.jpg"
+ },
+ "supercar.ki-tread": {
+  "src": "photo-supercar.ki-tread.jpg",
+  "author": "Truthdowser at English Wikipedia",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wheelbase_and_Track.png",
+  "file": "File:Wheelbase and Track.png"
+ },
+ "supercar.gi-turbo": {
+  "src": "photo-supercar.gi-turbo.jpg",
+  "author": "Pippi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Turbo_charger_1.jpg",
+  "file": "File:Turbo charger 1.jpg"
+ },
+ "supercar.gi-ev": {
+  "src": "photo-supercar.gi-ev.jpg",
+  "author": "Benespit",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:0_Nissan_Sakura_1.jpg",
+  "file": "File:0 Nissan Sakura 1.jpg"
+ },
+ "supercar.gi-alumi": {
+  "src": "photo-supercar.gi-alumi.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aluminium-4.jpg",
+  "file": "File:Aluminium-4.jpg"
+ },
+ "supercar.gi-brake": {
+  "src": "photo-supercar.gi-brake.jpg",
+  "author": "Comyu",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Discbrake.jpg",
+  "file": "File:Discbrake.jpg"
+ },
+ "supercar.gi-gullwing": {
+  "src": "photo-supercar.gi-gullwing.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:1955_Mercedes-Benz_300SL_Gullwing_Coupe_34.jpg",
+  "file": "File:1955 Mercedes-Benz 300SL Gullwing Coupe 34.jpg"
+ },
+ "supercar.gi-scissor": {
+  "src": "photo-supercar.gi-scissor.jpg",
+  "author": "nakhon100",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Carabo_Bertone_(4345325783).jpg",
+  "file": "File:Alfa Romeo Carabo Bertone (4345325783).jpg"
+ },
+ "supercar.gi-suspension": {
+  "src": "photo-supercar.gi-suspension.jpg",
+  "author": "Pearson Scott Foresman",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Suspension_System_(PSF).png",
+  "file": "File:Suspension System (PSF).png"
+ },
+ "supercar.gi-boxer": {
+  "src": "photo-supercar.gi-boxer.jpg",
+  "author": "Frank Lente",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Moteurs_%C3%A0_Plat_-_V_%C3%A0_180%C2%B0_vs._Boxer.png",
+  "file": "File:Moteurs à Plat - V à 180° vs. Boxer.png"
+ },
+ "supercar.gi-v6": {
+  "src": "photo-supercar.gi-v6.jpg",
+  "author": "Swaroopvarma at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:IC_engine.JPG",
+  "file": "File:IC engine.JPG"
+ },
+ "supercar.gi-straight6": {
+  "src": "photo-supercar.gi-straight6.jpg",
+  "author": "Kether83 at English Wikipedia",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:M20B25_block.jpg",
+  "file": "File:M20B25 block.jpg"
+ },
+ "supercar.gi-na": {
+  "src": "photo-supercar.gi-na.jpg",
+  "author": "Tokumeigakarinoaoshima",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mazda_SKYACTIV-G_2.0.jpg",
+  "file": "File:Mazda SKYACTIV-G 2.0.jpg"
+ },
+ "supercar.gi-supercharger": {
+  "src": "photo-supercar.gi-supercharger.jpg",
+  "author": "Graphic: Inductiveload Animation MichaelFrey (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roots_blower_-_2_lobes.gif",
+  "file": "File:Roots blower - 2 lobes.gif"
+ },
+ "supercar.gi-twinturbo": {
+  "src": "photo-supercar.gi-twinturbo.jpg",
+  "author": "Tennen-Gas",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Nissan_RB26DETT_001.JPG",
+  "file": "File:Nissan RB26DETT 001.JPG"
+ },
+ "supercar.gi-intercooler": {
+  "src": "photo-supercar.gi-intercooler.jpg",
+  "author": "Steev Selby from Wollongong, Australia",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Intercooler-2_Stage_system.jpg",
+  "file": "File:Intercooler-2 Stage system.jpg"
+ },
+ "supercar.gi-plugin": {
+  "src": "photo-supercar.gi-plugin.jpg",
+  "author": "Brücke-Osteuropa",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:BYD_02.JPG",
+  "file": "File:BYD 02.JPG"
+ },
+ "supercar.gi-spaceframe": {
+  "src": "photo-supercar.gi-spaceframe.jpg",
+  "author": "jrok",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ToyotaTundraChassis.jpg",
+  "file": "File:ToyotaTundraChassis.jpg"
+ },
+ "supercar.gi-wishbone": {
+  "src": "photo-supercar.gi-wishbone.jpg",
+  "author": "RB30DE",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Double_wishbone_suspension.jpg",
+  "file": "File:Double wishbone suspension.jpg"
+ },
+ "supercar.gi-twinscroll": {
+  "src": "photo-supercar.gi-twinscroll.jpg",
+  "author": "Quentin Schwinn (NASA)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Turbocharger.jpg",
+  "file": "File:Turbocharger.jpg"
+ },
+ "supercar.gi-inwheel": {
+  "src": "photo-supercar.gi-inwheel.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Honda_FCX_rear_in-wheel_motor_Honda_Collection_Hall.jpg",
+  "file": "File:Honda FCX rear in-wheel motor Honda Collection Hall.jpg"
+ },
+ "supercar.gi-torqueconv": {
+  "src": "photo-supercar.gi-torqueconv.jpg",
+  "author": "Comyu",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Torque-converter.jpg",
+  "file": "File:Torque-converter.jpg"
+ },
+ "supercar.gi-gurney": {
+  "src": "photo-supercar.gi-gurney.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gurney-flap.svg",
+  "file": "File:Gurney-flap.svg"
+ },
+ "supercar.gi-downforce": {
+  "src": "photo-supercar.gi-downforce.jpg",
+  "author": "Rdikeman at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Front_wings_f1.jpg",
+  "file": "File:Front wings f1.jpg"
+ },
+ "supercar.gi-disc": {
+  "src": "photo-supercar.gi-disc.jpg",
+  "author": "The359",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_F430_Challenge_Brake.JPG",
+  "file": "File:Ferrari F430 Challenge Brake.JPG"
+ },
+ "supercar.gi-slick": {
+  "src": "photo-supercar.gi-slick.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Yokohama_ADVAN_Tires_WTCC_2006.jpg",
+  "file": "File:Yokohama ADVAN Tires WTCC 2006.jpg"
+ },
+ "supercar.gi-drag": {
+  "src": "photo-supercar.gi-drag.jpg",
+  "author": "Gap1",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:W1-2.jpg",
+  "file": "File:W1-2.jpg"
+ },
+ "supercar.gi-popup": {
+  "src": "photo-supercar.gi-popup.jpg",
+  "author": "Tao280m",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sprinter_Trueno_1600_GT_(AE86).jpg",
+  "file": "File:Sprinter Trueno 1600 GT (AE86).jpg"
+ },
+ "supercar.gi-radiator": {
+  "src": "photo-supercar.gi-radiator.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Automobile_radiator.jpg",
+  "file": "File:Automobile radiator.jpg"
+ },
+ "supercar.gi-gasoline": {
+  "src": "photo-supercar.gi-gasoline.jpg",
+  "author": "Burger",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Gasoline_in_mason_jar.jpg",
+  "file": "File:Gasoline in mason jar.jpg"
+ },
+ "supercar.gi-displacement": {
+  "src": "photo-supercar.gi-displacement.jpg",
+  "author": "tmoore at English Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Displacement.gif",
+  "file": "File:Displacement.gif"
+ },
+ "supercar.gi-drysump": {
+  "src": "photo-supercar.gi-drysump.jpg",
+  "author": "Arnero",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Dry_sump.svg",
+  "file": "File:Dry sump.svg"
+ },
+ "supercar.gi-caliper": {
+  "src": "photo-supercar.gi-caliper.jpg",
+  "author": "The359",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_F430_Challenge_Brake.JPG",
+  "file": "File:Ferrari F430 Challenge Brake.JPG"
+ },
+ "supercar.gi-shock": {
+  "src": "photo-supercar.gi-shock.jpg",
+  "author": "No machine-readable author provided. TEy~commonswiki assumed…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Damper_1.jpg",
+  "file": "File:Damper 1.jpg"
+ },
+ "supercar.gi-clutch": {
+  "src": "photo-supercar.gi-clutch.jpg",
+  "author": "The original uploader was N.MacInnes at English Wikipedia.",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Clutch_explosion.jpg",
+  "file": "File:Clutch explosion.jpg"
+ },
+ "supercar.gi-pullrod": {
+  "src": "photo-supercar.gi-pullrod.jpg",
+  "author": "RB30DE",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Double_wishbone_suspension.jpg",
+  "file": "File:Double wishbone suspension.jpg"
+ },
+ "supercar.it-ferrari": {
+  "src": "photo-supercar.it-ferrari.jpg",
+  "author": "nimame",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E6%9C%AC%E7%A4%BE%E5%89%8D_(36309429124).jpg",
+  "file": "File:フェラーリ本社前 (36309429124).jpg"
+ },
+ "supercar.it-lamborghini": {
+  "src": "photo-supercar.it-lamborghini.jpg",
+  "author": "Fabrizio Pivari (Pivari.com)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini,_Sant%27Agata_Bolognese,_Bologna.jpg",
+  "file": "File:Lamborghini, Sant'Agata Bolognese, Bologna.jpg"
+ },
+ "supercar.it-maserati": {
+  "src": "photo-supercar.it-maserati.jpg",
+  "author": "Arnaud 25",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maserati_Mod%C3%A8ne_0002.JPG",
+  "file": "File:Maserati Modène 0002.JPG"
+ },
+ "supercar.it-alfaromeo": {
+  "src": "photo-supercar.it-alfaromeo.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_6C_1930_Italy.jpg",
+  "file": "File:Alfa Romeo 6C 1930 Italy.jpg"
+ },
+ "supercar.it-f40": {
+  "src": "photo-supercar.it-f40.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_F40_7.jpg",
+  "file": "File:Ferrari F40 7.jpg"
+ },
+ "supercar.it-enzo": {
+  "src": "photo-supercar.it-enzo.jpg",
+  "author": "Vauxford",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2003_Ferrari_Enzo_6.0.jpg",
+  "file": "File:2003 Ferrari Enzo 6.0.jpg"
+ },
+ "supercar.it-testarossa": {
+  "src": "photo-supercar.it-testarossa.jpg",
+  "author": "Brett Weinstein (Wikipedia User: Nrbelex)",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:SC06_1991_Ferrari_Testarossa.jpg",
+  "file": "File:SC06 1991 Ferrari Testarossa.jpg"
+ },
+ "supercar.it-countach": {
+  "src": "photo-supercar.it-countach.jpg",
+  "author": "Countachinfo.de",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Countach_Autostadt.jpg",
+  "file": "File:Countach Autostadt.jpg"
+ },
+ "supercar.it-miura": {
+  "src": "photo-supercar.it-miura.jpg",
+  "author": "Eric Manesse",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_miura_coup%C3%A9_1967_-aa.jpg",
+  "file": "File:Lamborghini miura coupé 1967 -aa.jpg"
+ },
+ "supercar.it-diablo": {
+  "src": "photo-supercar.it-diablo.jpg",
+  "author": "Toru.wiki",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini-Diablo-New.jpg",
+  "file": "File:Lamborghini-Diablo-New.jpg"
+ },
+ "supercar.it-aventador": {
+  "src": "photo-supercar.it-aventador.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Aventador_LP700-4.jpg",
+  "file": "File:Lamborghini Aventador LP700-4.jpg"
+ },
+ "supercar.it-huracan": {
+  "src": "photo-supercar.it-huracan.jpg",
+  "author": "Norbert Aepli, Switzerland (User:Noebu)",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2014-03-04_Geneva_Motor_Show_1375.JPG",
+  "file": "File:2014-03-04 Geneva Motor Show 1375.JPG"
+ },
+ "supercar.it-zonda": {
+  "src": "photo-supercar.it-zonda.jpg",
+  "author": "Public domainPublic domainfalsefalse This work has been rele…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pagani_Zonda.jpg",
+  "file": "File:Pagani Zonda.jpg"
+ },
+ "supercar.it-huayra": {
+  "src": "photo-supercar.it-huayra.jpg",
+  "author": "Edvvc from London, UK",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2015_Pagani_Huayra_(19244929734)_(cropped).jpg",
+  "file": "File:2015 Pagani Huayra (19244929734) (cropped).jpg"
+ },
+ "supercar.it-maranello": {
+  "src": "photo-supercar.it-maranello.jpg",
+  "author": "nimame",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E6%9C%AC%E7%A4%BE%E5%89%8D_(36309429124).jpg",
+  "file": "File:フェラーリ本社前 (36309429124).jpg"
+ },
+ "supercar.it-f80": {
+  "src": "photo-supercar.it-f80.jpg",
+  "author": "Pauls.127",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:FerrariF80_(resized)_(cropped).jpg",
+  "file": "File:FerrariF80 (resized) (cropped).jpg"
+ },
+ "supercar.it-12cilindri": {
+  "src": "photo-supercar.it-12cilindri.jpg",
+  "author": "TTTNIS",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:2024_Ferrari_12_Cilindri.jpg",
+  "file": "File:2024 Ferrari 12 Cilindri.jpg"
+ },
+ "supercar.it-350gt": {
+  "src": "photo-supercar.it-350gt.jpg",
+  "author": "CHARLES400GT",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:DSCN0169(1).JPG",
+  "file": "File:DSCN0169(1).JPG"
+ },
+ "supercar.it-urus": {
+  "src": "photo-supercar.it-urus.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Urus_20180306_Genf_2018.jpg",
+  "file": "File:Lamborghini Urus 20180306 Genf 2018.jpg"
+ },
+ "supercar.it-temerario": {
+  "src": "photo-supercar.it-temerario.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Temerario_IMG_5367.jpg",
+  "file": "File:Lamborghini Temerario IMG 5367.jpg"
+ },
+ "supercar.it-espada": {
+  "src": "photo-supercar.it-espada.jpg",
+  "author": "Thomas Vogt from Paderborn, Deutschland",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Espada_(40099489415).jpg",
+  "file": "File:Lamborghini Espada (40099489415).jpg"
+ },
+ "supercar.it-utopia": {
+  "src": "photo-supercar.it-utopia.jpg",
+  "author": "Mr.choppers",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2024_Pagani_Utopia_(no._26)_in_Yellow_and_Black,_front_right.jpg",
+  "file": "File:2024 Pagani Utopia (no. 26) in Yellow and Black, front right.jpg"
+ },
+ "supercar.it-mc12": {
+  "src": "photo-supercar.it-mc12.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2004_Maserati_MC12_HCC23.jpg",
+  "file": "File:2004 Maserati MC12 HCC23.jpg"
+ },
+ "supercar.it-mc20": {
+  "src": "photo-supercar.it-mc20.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maserati_MC20_1X7A0044.jpg",
+  "file": "File:Maserati MC20 1X7A0044.jpg"
+ },
+ "supercar.it-bora": {
+  "src": "photo-supercar.it-bora.jpg",
+  "author": "Stahlkocher",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Maserati_Bora_yellow_vr_TCE.jpg",
+  "file": "File:Maserati Bora yellow vr TCE.jpg"
+ },
+ "supercar.it-pantera": {
+  "src": "photo-supercar.it-pantera.jpg",
+  "author": "Spanish Coches",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:De_Tomaso_Pantera_GT5-S_(7160836758).jpg",
+  "file": "File:De Tomaso Pantera GT5-S (7160836758).jpg"
+ },
+ "supercar.it-pininfarina": {
+  "src": "photo-supercar.it-pininfarina.jpg",
+  "author": "LarryStevens",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Pininfarina_1.jpg",
+  "file": "File:Pininfarina 1.jpg"
+ },
+ "supercar.it-fxx": {
+  "src": "photo-supercar.it-fxx.jpg",
+  "author": "Damian Morys",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_FXX_red.jpg",
+  "file": "File:Ferrari FXX red.jpg"
+ },
+ "supercar.it-499p": {
+  "src": "photo-supercar.it-499p.jpg",
+  "author": "Original: 350z33 Derivative work: 350z33",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari499P2023Sebring_(cropped).jpg",
+  "file": "File:Ferrari499P2023Sebring (cropped).jpg"
+ },
+ "supercar.it-veneno": {
+  "src": "photo-supercar.it-veneno.jpg",
+  "author": "Clément Bucco-Lechat",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Lamborghini_Veneno_1.jpg",
+  "file": "File:Geneva MotorShow 2013 - Lamborghini Veneno 1.jpg"
+ },
+ "supercar.it-centenario": {
+  "src": "photo-supercar.it-centenario.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2016_Lamborghini_Centenario_rear_LC25.jpg",
+  "file": "File:2016 Lamborghini Centenario rear LC25.jpg"
+ },
+ "supercar.it-lpi8004": {
+  "src": "photo-supercar.it-lpi8004.jpg",
+  "author": "Alexander-93",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LPI_800-4_IMG_8008_(cropped).jpg",
+  "file": "File:Lamborghini Countach LPI 800-4 IMG 8008 (cropped).jpg"
+ },
+ "supercar.it-silhouette": {
+  "src": "photo-supercar.it-silhouette.jpg",
+  "author": "Mr.choppers",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Silhouette_3000_targa_at_Classic_Remise_Berlin,_front_right.jpg",
+  "file": "File:Lamborghini Silhouette 3000 targa at Classic Remise Berlin, front right.jpg"
+ },
+ "supercar.it-jarama": {
+  "src": "photo-supercar.it-jarama.jpg",
+  "author": "Karrmann",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lambo_Jarama.jpg",
+  "file": "File:Lambo Jarama.jpg"
+ },
+ "supercar.it-lm002": {
+  "src": "photo-supercar.it-lm002.jpg",
+  "author": "Detectandpreserve",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_LM002_Gen1_Type129_1986-1993_1988_frontleft_2013-03-17_U.JPG",
+  "file": "File:Lamborghini LM002 Gen1 Type129 1986-1993 1988 frontleft 2013-03-17 U.JPG"
+ },
+ "supercar.it-marzal": {
+  "src": "photo-supercar.it-marzal.jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Marzal,_GIMS_2018,_Le_Grand-Saconnex_(1X7A1407).jpg",
+  "file": "File:Lamborghini Marzal, GIMS 2018, Le Grand-Saconnex (1X7A1407).jpg"
+ },
+ "supercar.it-khamsin": {
+  "src": "photo-supercar.it-khamsin.jpg",
+  "author": "zombieite",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lovely_(4676819205).jpg",
+  "file": "File:Lovely (4676819205).jpg"
+ },
+ "supercar.it-carabo": {
+  "src": "photo-supercar.it-carabo.jpg",
+  "author": "edvvc",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1968_Alfa_Romeo_Carabo.jpg",
+  "file": "File:1968 Alfa Romeo Carabo.jpg"
+ },
+ "supercar.it-montreal": {
+  "src": "photo-supercar.it-montreal.jpg",
+  "author": "Marvin Raaijmakers",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Montreal.PNG",
+  "file": "File:Alfa Romeo Montreal.PNG"
+ },
+ "supercar.it-4c": {
+  "src": "photo-supercar.it-4c.jpg",
+  "author": "Thesupermat",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Festival_automobile_international_2014_-_Alfa_Romeo_4C_-_009.jpg",
+  "file": "File:Festival automobile international 2014 - Alfa Romeo 4C - 009.jpg"
+ },
+ "supercar.it-mangusta": {
+  "src": "photo-supercar.it-mangusta.jpg",
+  "author": "Mr.choppers",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1969_De_Tomaso_Mangusta_in_Gold,_front_right.jpg",
+  "file": "File:1969 De Tomaso Mangusta in Gold, front right.jpg"
+ },
+ "supercar.it-f50": {
+  "src": "photo-supercar.it-f50.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:A_Ferrari_F50.jpg",
+  "file": "File:A Ferrari F50.jpg"
+ },
+ "supercar.it-murcielago": {
+  "src": "photo-supercar.it-murcielago.jpg",
+  "author": "Brett Weinstein (Wikipedia User: Nrbelex)",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:SC06_Lamborghini_Murci%C3%A9lago.jpg",
+  "file": "File:SC06 Lamborghini Murciélago.jpg"
+ },
+ "supercar.it-gallardo": {
+  "src": "photo-supercar.it-gallardo.jpg",
+  "author": "Alexander-93",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Gallardo_coupes_1X7A7419.jpg",
+  "file": "File:Lamborghini Gallardo coupes 1X7A7419.jpg"
+ },
+ "supercar.it-revuelto": {
+  "src": "photo-supercar.it-revuelto.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023_Lamborghini_Revuelto_Low_HCC23.jpg",
+  "file": "File:2023 Lamborghini Revuelto Low HCC23.jpg"
+ },
+ "supercar.it-modena": {
+  "src": "photo-supercar.it-modena.jpg",
+  "author": "Rossoporpora",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Collage_Modena.jpg",
+  "file": "File:Collage Modena.jpg"
+ },
+ "supercar.it-reventon": {
+  "src": "photo-supercar.it-reventon.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2010_Lamborghini_Reventon_Roadster.jpg",
+  "file": "File:2010 Lamborghini Reventon Roadster.jpg"
+ },
+ "supercar.it-islero": {
+  "src": "photo-supercar.it-islero.jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Islero,_Techno_Classica_2018,_Essen_(IMG_9696).jpg",
+  "file": "File:Lamborghini Islero, Techno Classica 2018, Essen (IMG 9696).jpg"
+ },
+ "supercar.it-urraco": {
+  "src": "photo-supercar.it-urraco.jpg",
+  "author": "nakhon100",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Urraco_P300_(9696988924).jpg",
+  "file": "File:Lamborghini Urraco P300 (9696988924).jpg"
+ },
+ "supercar.it-f12": {
+  "src": "photo-supercar.it-f12.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_F12berlinetta_DSC_6990.jpg",
+  "file": "File:Ferrari F12berlinetta DSC 6990.jpg"
+ },
+ "supercar.it-bologna": {
+  "src": "photo-supercar.it-bologna.jpg",
+  "author": "collection by DanieleDF1995 (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Collage_Bologna.jpg",
+  "file": "File:Collage Bologna.jpg"
+ },
+ "supercar.it-f355": {
+  "src": "photo-supercar.it-f355.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_F355_GTS_(1997)_IMG_3515.jpg",
+  "file": "File:Ferrari F355 GTS (1997) IMG 3515.jpg"
+ },
+ "supercar.it-ghibli": {
+  "src": "photo-supercar.it-ghibli.jpg",
+  "author": "Vauxford",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2018_Maserati_Ghibli_GranLusso_Diesel_3.0_facelift_Front.jpg",
+  "file": "File:2018 Maserati Ghibli GranLusso Diesel 3.0 facelift Front.jpg"
+ },
+ "supercar.it-taurus": {
+  "src": "photo-supercar.it-taurus.jpg",
+  "author": "IAU and Sky & Telescope magazine (Roger Sinnott & Rick Fienb…",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Taurus_IAU.svg",
+  "file": "File:Taurus IAU.svg"
+ },
+ "supercar.it-cizeta": {
+  "src": "photo-supercar.it-cizeta.jpg",
+  "author": "Craig Howell from San Carlos, CA, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cizeta-Moroder_V16T_-_Concorso_Italiano_2003_-_fvr.jpg",
+  "file": "File:Cizeta-Moroder V16T - Concorso Italiano 2003 - fvr.jpg"
+ },
+ "supercar.de-911": {
+  "src": "photo-supercar.de-911.jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_911_No_1000000,_70_Years_Porsche_Sports_Car,_Berlin_(1X7A3888).jpg",
+  "file": "File:Porsche 911 No 1000000, 70 Years Porsche Sports Car, Berlin (1X7A3888).jpg"
+ },
+ "supercar.de-amg": {
+  "src": "photo-supercar.de-amg.jpg",
+  "author": "Tokumeigakarinoaoshima",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_GT_R_(C190)_front.jpg",
+  "file": "File:Mercedes-AMG GT R (C190) front.jpg"
+ },
+ "supercar.de-carreragt": {
+  "src": "photo-supercar.de-carreragt.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_Carrera_GT_(72212).jpg",
+  "file": "File:Porsche Carrera GT (72212).jpg"
+ },
+ "supercar.de-959": {
+  "src": "photo-supercar.de-959.jpg",
+  "author": "stephenhanafin",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_959_silver_at_Auto_Salon_Singen.jpg",
+  "file": "File:Porsche 959 silver at Auto Salon Singen.jpg"
+ },
+ "supercar.de-300sl": {
+  "src": "photo-supercar.de-300sl.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:1955_Mercedes-Benz_300SL_Gullwing_Coupe_34.jpg",
+  "file": "File:1955 Mercedes-Benz 300SL Gullwing Coupe 34.jpg"
+ },
+ "supercar.de-amgone": {
+  "src": "photo-supercar.de-amgone.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_One_IAA_2021_1X7A0108.jpg",
+  "file": "File:Mercedes-AMG One IAA 2021 1X7A0108.jpg"
+ },
+ "supercar.de-m1": {
+  "src": "photo-supercar.de-m1.jpg",
+  "author": "Mr.choppers",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BMW_M1,_front_right_(Brooklyn).jpg",
+  "file": "File:BMW M1, front right (Brooklyn).jpg"
+ },
+ "supercar.de-munich": {
+  "src": "photo-supercar.de-munich.jpg",
+  "author": "Alphasinus",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Munchen_collage.jpg",
+  "file": "File:Munchen collage.jpg"
+ },
+ "supercar.de-vwgroup": {
+  "src": "photo-supercar.de-vwgroup.jpg",
+  "author": "Vanellus Foto",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wolfsburg_VWHochhaus.jpg",
+  "file": "File:Wolfsburg VWHochhaus.jpg"
+ },
+ "supercar.de-964": {
+  "src": "photo-supercar.de-964.jpg",
+  "author": "Alexandre Prevot from Nancy, France",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_964_Carrera_2_(51707730347).jpg",
+  "file": "File:Porsche 964 Carrera 2 (51707730347).jpg"
+ },
+ "supercar.de-993": {
+  "src": "photo-supercar.de-993.jpg",
+  "author": "Abehn",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_993_targa_mainz.jpg",
+  "file": "File:Porsche 993 targa mainz.jpg"
+ },
+ "supercar.de-917": {
+  "src": "photo-supercar.de-917.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_917_KH_Coupe_in_the_Porsche-Museum_(2009)_IMG_2731.jpg",
+  "file": "File:Porsche 917 KH Coupe in the Porsche-Museum (2009) IMG 2731.jpg"
+ },
+ "supercar.de-956": {
+  "src": "photo-supercar.de-956.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_956_front-left_Porsche_Museum.jpg",
+  "file": "File:Porsche 956 front-left Porsche Museum.jpg"
+ },
+ "supercar.de-taycan": {
+  "src": "photo-supercar.de-taycan.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_Taycan_at_IAA_2019_IMG_0786.jpg",
+  "file": "File:Porsche Taycan at IAA 2019 IMG 0786.jpg"
+ },
+ "supercar.de-904": {
+  "src": "photo-supercar.de-904.jpg",
+  "author": "Alexander-93",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_904_Carrera_GTS_in_the_Porsche-Museum_(2009)_IMG_7409.jpg",
+  "file": "File:Porsche 904 Carrera GTS in the Porsche-Museum (2009) IMG 7409.jpg"
+ },
+ "supercar.de-300slr": {
+  "src": "photo-supercar.de-300slr.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_300_SLR_1986-08-16.jpg",
+  "file": "File:Mercedes-Benz 300 SLR 1986-08-16.jpg"
+ },
+ "supercar.de-c111": {
+  "src": "photo-supercar.de-c111.jpg",
+  "author": "Johannes Maximilian",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C_111_II_IMG_1379_2023-11-25_JM.jpg",
+  "file": "File:Mercedes-Benz C 111 II IMG 1379 2023-11-25 JM.jpg"
+ },
+ "supercar.de-silverarrow": {
+  "src": "photo-supercar.de-silverarrow.jpg",
+  "author": "Phil Guest",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_monument_at_Goodwood_2014_006.jpg",
+  "file": "File:Mercedes-Benz monument at Goodwood 2014 006.jpg"
+ },
+ "supercar.de-z8": {
+  "src": "photo-supercar.de-z8.jpg",
+  "author": "Spurzem - Lothar Spurzem",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:BMW_Z8_(2009-05-20).JPG",
+  "file": "File:BMW Z8 (2009-05-20).JPG"
+ },
+ "supercar.de-bmwm": {
+  "src": "photo-supercar.de-bmwm.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BMW_M6_GT3_IAA_2015.jpg",
+  "file": "File:BMW M6 GT3 IAA 2015.jpg"
+ },
+ "supercar.de-507": {
+  "src": "photo-supercar.de-507.jpg",
+  "author": "Stefan Krause, Germany",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BMW_507.jpg",
+  "file": "File:BMW 507.jpg"
+ },
+ "supercar.de-gt1": {
+  "src": "photo-supercar.de-gt1.jpg",
+  "author": "Eduardo Parise / eduparise",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_911_GT1_n%C2%B026_(winner_of_the_1998_24h_of_Le_Mans_race).jpg",
+  "file": "File:Porsche 911 GT1 n°26 (winner of the 1998 24h of Le Mans race).jpg"
+ },
+ "supercar.de-935": {
+  "src": "photo-supercar.de-935.jpg",
+  "author": "AlfvanBeem",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_Coupe_935_(1976)_pic2.JPG",
+  "file": "File:Porsche Coupe 935 (1976) pic2.JPG"
+ },
+ "supercar.de-997": {
+  "src": "photo-supercar.de-997.jpg",
+  "author": "Cruizer",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche911997.jpg",
+  "file": "File:Porsche911997.jpg"
+ },
+ "supercar.de-992": {
+  "src": "photo-supercar.de-992.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_992_Carrera_S_coupe_IMG_5847.jpg",
+  "file": "File:Porsche 992 Carrera S coupe IMG 5847.jpg"
+ },
+ "supercar.de-991": {
+  "src": "photo-supercar.de-991.jpg",
+  "author": "Calm Vistas",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2012_NAIAS_Red_Porsche_991_convertible_(world_premiere).jpg",
+  "file": "File:2012 NAIAS Red Porsche 991 convertible (world premiere).jpg"
+ },
+ "supercar.de-996": {
+  "src": "photo-supercar.de-996.jpg",
+  "author": "Ultegra",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_996_(1999_model_year).JPG",
+  "file": "File:Porsche 996 (1999 model year).JPG"
+ },
+ "supercar.de-w196": {
+  "src": "photo-supercar.de-w196.jpg",
+  "author": "MartinHansV",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:MHV_MB_W196_Silberpfeil_Streamline_1955.jpg",
+  "file": "File:MHV MB W196 Silberpfeil Streamline 1955.jpg"
+ },
+ "supercar.de-356": {
+  "src": "photo-supercar.de-356.jpg",
+  "author": "Alf van Beem",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_356_Coupe_(1964)_p1.JPG",
+  "file": "File:Porsche 356 Coupe (1964) p1.JPG"
+ },
+ "supercar.de-amggt": {
+  "src": "photo-supercar.de-amggt.jpg",
+  "author": "TTTNIS",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_GT43_Coupe_C192.jpg",
+  "file": "File:Mercedes-AMG GT43 Coupe C192.jpg"
+ },
+ "supercar.de-sls": {
+  "src": "photo-supercar.de-sls.jpg",
+  "author": "M 93",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLS_AMG_(C_197)_%E2%80%93_Heckansicht_ge%C3%B6ffnet,_10._August_2011,_D%C3%BCsseldorf.jpg",
+  "file": "File:Mercedes-Benz SLS AMG (C 197) – Heckansicht geöffnet, 10. August 2011, Düsseldorf.jpg"
+ },
+ "supercar.de-i8": {
+  "src": "photo-supercar.de-i8.jpg",
+  "author": "Alexander-93",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:BMW_i8_Roadster_Ulitmate_Sophisto_Edition_IMG_1805.jpg",
+  "file": "File:BMW i8 Roadster Ulitmate Sophisto Edition IMG 1805.jpg"
+ },
+ "supercar.de-gemballa": {
+  "src": "photo-supercar.de-gemballa.jpg",
+  "author": "GEMBALLA GmbH",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:GEMBALLA_Mistrale.jpg",
+  "file": "File:GEMBALLA Mistrale.jpg"
+ },
+ "supercar.de-alpina": {
+  "src": "photo-supercar.de-alpina.jpg",
+  "author": "No machine-readable author provided. CrazyD assumed (based o…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:BMW_850_Alpina_3.jpg",
+  "file": "File:BMW 850 Alpina 3.jpg"
+ },
+ "supercar.de-eb118": {
+  "src": "photo-supercar.de-eb118.jpg",
+  "author": "MPW57",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bugatti_EB_118_1.jpg",
+  "file": "File:Bugatti EB 118 1.jpg"
+ },
+ "supercar.de-gumpert": {
+  "src": "photo-supercar.de-gumpert.jpg",
+  "author": "Alexandre Prévot from Nancy, France",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gumpert_Apollo_S_(8743283021).jpg",
+  "file": "File:Gumpert Apollo S (8743283021).jpg"
+ },
+ "supercar.de-acschnitzer": {
+  "src": "photo-supercar.de-acschnitzer.jpg",
+  "author": "Peter Braatz",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:ACS_Gebaeude.jpg",
+  "file": "File:ACS Gebaeude.jpg"
+ },
+ "supercar.de-908": {
+  "src": "photo-supercar.de-908.jpg",
+  "author": "ignis",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_Coupe_908_LH_1968_Mulhouse_FRA_001.JPG",
+  "file": "File:Porsche Coupe 908 LH 1968 Mulhouse FRA 001.JPG"
+ },
+ "supercar.de-962": {
+  "src": "photo-supercar.de-962.jpg",
+  "author": "The359 at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lowenbrau962.JPG",
+  "file": "File:Lowenbrau962.JPG"
+ },
+ "supercar.gb-mclarenf1": {
+  "src": "photo-supercar.gb-mclarenf1.jpg",
+  "author": "Chelsea Jay",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1996_McLaren_F1_Chassis_No_63_6.1_Front.jpg",
+  "file": "File:1996 McLaren F1 Chassis No 63 6.1 Front.jpg"
+ },
+ "supercar.gb-p1": {
+  "src": "photo-supercar.gb-p1.jpg",
+  "author": "Norbert Aepli, Switzerland (User:Noebu)",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2013-03-05_Geneva_Motor_Show_7845_(cropped).JPG",
+  "file": "File:2013-03-05 Geneva Motor Show 7845 (cropped).JPG"
+ },
+ "supercar.gb-senna": {
+  "src": "photo-supercar.gb-senna.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:McLaren_Senna_IMG_3279.jpg",
+  "file": "File:McLaren Senna IMG 3279.jpg"
+ },
+ "supercar.gb-720s": {
+  "src": "photo-supercar.gb-720s.jpg",
+  "author": "Kevauto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2018_McLaren_720S_front,_Hagerty_6.1.19.jpg",
+  "file": "File:2018 McLaren 720S front, Hagerty 6.1.19.jpg"
+ },
+ "supercar.gb-valkyrie": {
+  "src": "photo-supercar.gb-valkyrie.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_Valkyrie_Side_Angle.jpg",
+  "file": "File:Aston Martin Valkyrie Side Angle.jpg"
+ },
+ "supercar.gb-db5": {
+  "src": "photo-supercar.gb-db5.jpg",
+  "author": "DeFacto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DB5_(Skyfall).jpg",
+  "file": "File:Aston Martin DB5 (Skyfall).jpg"
+ },
+ "supercar.gb-etype": {
+  "src": "photo-supercar.gb-etype.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaguar_E-type_Series_I.jpg",
+  "file": "File:Jaguar E-type Series I.jpg"
+ },
+ "supercar.gb-xj220": {
+  "src": "photo-supercar.gb-xj220.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaguar_XJ220_LC22.jpg",
+  "file": "File:Jaguar XJ220 LC22.jpg"
+ },
+ "supercar.gb-esprit": {
+  "src": "photo-supercar.gb-esprit.jpg",
+  "author": "Mr.choppers",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1999_Lotus_Esprit_V8_type_918.jpg",
+  "file": "File:1999 Lotus Esprit V8 type 918.jpg"
+ },
+ "supercar.gb-750s": {
+  "src": "photo-supercar.gb-750s.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023_McLaren_750S_Yellow.jpg",
+  "file": "File:2023 McLaren 750S Yellow.jpg"
+ },
+ "supercar.gb-765lt": {
+  "src": "photo-supercar.gb-765lt.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2022_McLaren_765LT_Spider_MSO1.jpg",
+  "file": "File:2022 McLaren 765LT Spider MSO1.jpg"
+ },
+ "supercar.gb-elva": {
+  "src": "photo-supercar.gb-elva.jpg",
+  "author": "Liam Walker",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2020_McLaren_Elva_4.0_Front.jpg",
+  "file": "File:2020 McLaren Elva 4.0 Front.jpg"
+ },
+ "supercar.gb-artura": {
+  "src": "photo-supercar.gb-artura.jpg",
+  "author": "Alexander-93",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:McLaren_Artura_IMG_0529.jpg",
+  "file": "File:McLaren Artura IMG 0529.jpg"
+ },
+ "supercar.gb-vanquish": {
+  "src": "photo-supercar.gb-vanquish.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_Vanquish_(2024)_DSC_7892.jpg",
+  "file": "File:Aston Martin Vanquish (2024) DSC 7892.jpg"
+ },
+ "supercar.gb-one77": {
+  "src": "photo-supercar.gb-one77.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2014_Aston_Martin_One-77_Blue_Rear_77.jpg",
+  "file": "File:2014 Aston Martin One-77 Blue Rear 77.jpg"
+ },
+ "supercar.gb-dbs": {
+  "src": "photo-supercar.gb-dbs.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2011_Aston_Martin_DBS_Auto_1.jpg",
+  "file": "File:2011 Aston Martin DBS Auto 1.jpg"
+ },
+ "supercar.gb-vantage": {
+  "src": "photo-supercar.gb-vantage.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2022_Aston_Martin_Vantage_V12_Auto.jpg",
+  "file": "File:2022 Aston Martin Vantage V12 Auto.jpg"
+ },
+ "supercar.gb-xj13": {
+  "src": "photo-supercar.gb-xj13.jpg",
+  "author": "Brian Snelson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1966JaguarXJ-13.jpg",
+  "file": "File:1966JaguarXJ-13.jpg"
+ },
+ "supercar.gb-dtype": {
+  "src": "photo-supercar.gb-dtype.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaguar_D-Type_1966.jpg",
+  "file": "File:Jaguar D-Type 1966.jpg"
+ },
+ "supercar.gb-ctype": {
+  "src": "photo-supercar.gb-ctype.jpg",
+  "author": "LSDSL",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaguar_C-Type_(Jaguar_XK_120_C).jpg",
+  "file": "File:Jaguar C-Type (Jaguar XK 120 C).jpg"
+ },
+ "supercar.gb-xk120": {
+  "src": "photo-supercar.gb-xk120.jpg",
+  "author": "HSV",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaguar_XK120_front.jpg",
+  "file": "File:Jaguar XK120 front.jpg"
+ },
+ "supercar.gb-exige": {
+  "src": "photo-supercar.gb-exige.jpg",
+  "author": "Arthouse.de",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lotus_Exige_Sport_380.jpg",
+  "file": "File:Lotus Exige Sport 380.jpg"
+ },
+ "supercar.gb-emira": {
+  "src": "photo-supercar.gb-emira.jpg",
+  "author": "Alexander-93",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lotus_Emira_IMG_8023.jpg",
+  "file": "File:Lotus Emira IMG 8023.jpg"
+ },
+ "supercar.gb-europa": {
+  "src": "photo-supercar.gb-europa.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lotus_Europe_Special_(Circuit_no_Okami)_front-left_2014_Super_GT_Suzuka.jpg",
+  "file": "File:Lotus Europe Special (Circuit no Okami) front-left 2014 Super GT Suzuka.jpg"
+ },
+ "supercar.gb-600lt": {
+  "src": "photo-supercar.gb-600lt.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2019_McLaren_600LT_(10653).jpg",
+  "file": "File:2019 McLaren 600LT (10653).jpg"
+ },
+ "supercar.gb-675lt": {
+  "src": "photo-supercar.gb-675lt.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:McLaren_675LT_7.jpg",
+  "file": "File:McLaren 675LT 7.jpg"
+ },
+ "supercar.gb-lagonda": {
+  "src": "photo-supercar.gb-lagonda.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1983_Aston_Martin_Lagonda_Series_2_Classic-Gala_2025_DSC_1111_(cropped).jpg",
+  "file": "File:1983 Aston Martin Lagonda Series 2 Classic-Gala 2025 DSC 1111 (cropped).jpg"
+ },
+ "supercar.gb-db4": {
+  "src": "photo-supercar.gb-db4.jpg",
+  "author": "Brett Weinstein (Wikipedia User: Nrbelex)",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:SC06_Aston_Martin_DB4.jpg",
+  "file": "File:SC06 Aston Martin DB4.jpg"
+ },
+ "supercar.gb-elan": {
+  "src": "photo-supercar.gb-elan.jpg",
+  "author": "SG2012 nakhon100 Brian Snelson Grenadille",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Four_Elans.jpg",
+  "file": "File:Four Elans.jpg"
+ },
+ "supercar.gb-evora": {
+  "src": "photo-supercar.gb-evora.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2009_Lotus_Evora_4.jpg",
+  "file": "File:2009 Lotus Evora 4.jpg"
+ },
+ "supercar.gb-elite": {
+  "src": "photo-supercar.gb-elite.jpg",
+  "author": "SG2012",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lotus_Elite_(1961)_-_9000322838.jpg",
+  "file": "File:Lotus Elite (1961) - 9000322838.jpg"
+ },
+ "supercar.gb-xjr15": {
+  "src": "photo-supercar.gb-xjr15.jpg",
+  "author": "Vauxford",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1991_Jaguar_XJR-15_6.0.jpg",
+  "file": "File:1991 Jaguar XJR-15 6.0.jpg"
+ },
+ "supercar.gb-xkss": {
+  "src": "photo-supercar.gb-xkss.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaguar_XKSS_1957.jpg",
+  "file": "File:Jaguar XKSS 1957.jpg"
+ },
+ "supercar.gb-speedtail": {
+  "src": "photo-supercar.gb-speedtail.jpg",
+  "author": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:McLaren_Speedtail_Genf_2019_1Y7A5636.jpg",
+  "file": "File:McLaren Speedtail Genf 2019 1Y7A5636.jpg"
+ },
+ "supercar.gb-w1": {
+  "src": "photo-supercar.gb-w1.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2025_McLaren_W1_FOS25.jpg",
+  "file": "File:2025 McLaren W1 FOS25.jpg"
+ },
+ "supercar.gb-valhalla": {
+  "src": "photo-supercar.gb-valhalla.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2022_Aston_Martin_Valhalla_2.jpg",
+  "file": "File:2022 Aston Martin Valhalla 2.jpg"
+ },
+ "supercar.gb-evija": {
+  "src": "photo-supercar.gb-evija.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023_Lotus_Evija_2.jpg",
+  "file": "File:2023 Lotus Evija 2.jpg"
+ },
+ "supercar.gb-elise": {
+  "src": "photo-supercar.gb-elise.jpg",
+  "author": "Overlaet",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lotus_Elise_Club_Racer_(front_quarter).jpg",
+  "file": "File:Lotus Elise Club Racer (front quarter).jpg"
+ },
+ "supercar.gb-bondcar": {
+  "src": "photo-supercar.gb-bondcar.jpg",
+  "author": "DeFacto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DB5_(Skyfall).jpg",
+  "file": "File:Aston Martin DB5 (Skyfall).jpg"
+ },
+ "supercar.gb-silverstone": {
+  "src": "photo-supercar.gb-silverstone.jpg",
+  "author": "Nilfanion, created using Ordnance Survey data",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Northamptonshire_UK_location_map_(1974-2021).svg",
+  "file": "File:Northamptonshire UK location map (1974-2021).svg"
+ },
+ "supercar.gb-noble": {
+  "src": "photo-supercar.gb-noble.jpg",
+  "author": "Brian Snelson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Noble_M600.jpg",
+  "file": "File:Noble M600.jpg"
+ },
+ "supercar.gb-brooklands": {
+  "src": "photo-supercar.gb-brooklands.jpg",
+  "author": "BrooklandsCircuitLayout.png: Original uploader was Spiderlou…",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Brooklands_Circuit_Layout.svg",
+  "file": "File:Brooklands Circuit Layout.svg"
+ },
+ "supercar.gb-cosworth": {
+  "src": "photo-supercar.gb-cosworth.jpg",
+  "author": "Doctorindy",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CosworthDFSV8engine.JPG",
+  "file": "File:CosworthDFSV8engine.JPG"
+ },
+ "supercar.gb-ginetta": {
+  "src": "photo-supercar.gb-ginetta.jpg",
+  "author": "Paul ss1",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Andrew_Watson_Ginetta_G55_Thruxton_2013.jpg",
+  "file": "File:Andrew Watson Ginetta G55 Thruxton 2013.jpg"
+ },
+ "supercar.gb-lotus49": {
+  "src": "photo-supercar.gb-lotus49.jpg",
+  "author": "Deep silence (Mikaël Restoux)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lotus_49-1.JPG",
+  "file": "File:Lotus 49-1.JPG"
+ },
+ "supercar.gb-xjr9": {
+  "src": "photo-supercar.gb-xjr9.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaguar_XJR-9_LM_front-left_Heritage_Motor_Centre,_Gaydon.jpg",
+  "file": "File:Jaguar XJR-9 LM front-left Heritage Motor Centre, Gaydon.jpg"
+ },
+ "supercar.gb-bulldog": {
+  "src": "photo-supercar.gb-bulldog.jpg",
+  "author": "edvvc",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1979_Aston_Martin_Bulldog.jpg",
+  "file": "File:1979 Aston Martin Bulldog.jpg"
+ },
+ "supercar.sk-veyron": {
+  "src": "photo-supercar.sk-veyron.jpg",
+  "author": "M 93",
+  "license": "CC BY-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Bugatti_Veyron_16.4_%E2%80%93_Heckansicht_(4),_5._April_2012,_D%C3%BCsseldorf.jpg",
+  "file": "File:Bugatti Veyron 16.4 – Heckansicht (4), 5. April 2012, Düsseldorf.jpg"
+ },
+ "supercar.sk-chiron": {
+  "src": "photo-supercar.sk-chiron.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bugatti_Chiron_1.jpg",
+  "file": "File:Bugatti Chiron 1.jpg"
+ },
+ "supercar.sk-rimac": {
+  "src": "photo-supercar.sk-rimac.jpg",
+  "author": "The Car Spy",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rimac_Concept_One_-_Salon_Priv%C3%A9_London_2012_(7956529248).jpg",
+  "file": "File:Rimac Concept One - Salon Privé London 2012 (7956529248).jpg"
+ },
+ "supercar.sk-nevera": {
+  "src": "photo-supercar.sk-nevera.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rimac_Nevera.jpg",
+  "file": "File:Rimac Nevera.jpg"
+ },
+ "supercar.sk-jesko": {
+  "src": "photo-supercar.sk-jesko.jpg",
+  "author": "Alexander-93",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koenigsegg_Jesko_Auto_Zuerich_2023_1X7A0924.jpg",
+  "file": "File:Koenigsegg Jesko Auto Zuerich 2023 1X7A0924.jpg"
+ },
+ "supercar.sk-agera": {
+  "src": "photo-supercar.sk-agera.jpg",
+  "author": "richard",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koenigsegg_agera.jpg",
+  "file": "File:Koenigsegg agera.jpg"
+ },
+ "supercar.sk-fordgt": {
+  "src": "photo-supercar.sk-fordgt.jpg",
+  "author": "Jiří Sedláček",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ford_GT_2018_and_Ford_GT_1968_at_Legendy_2019_in_Prague_(cropped).jpg",
+  "file": "File:Ford GT 2018 and Ford GT 1968 at Legendy 2019 in Prague (cropped).jpg"
+ },
+ "supercar.sk-gt40": {
+  "src": "photo-supercar.sk-gt40.jpg",
+  "author": "Sicnag",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1968_Ford_GT40_Mk_I_(14288662849).jpg",
+  "file": "File:1968 Ford GT40 Mk I (14288662849).jpg"
+ },
+ "supercar.sk-corvette": {
+  "src": "photo-supercar.sk-corvette.jpg",
+  "author": "Rick Briggs",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2020_Chevrolet_Corvette_convertible_(C8)_front_view.jpg",
+  "file": "File:2020 Chevrolet Corvette convertible (C8) front view.jpg"
+ },
+ "supercar.sk-viper": {
+  "src": "photo-supercar.sk-viper.jpg",
+  "author": "Patrick Corcoran",
+  "license": "CC BY 2.0 IT",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/it/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%22_14_Fiat-Chrysler_SRT_Viper_GTS.jpg",
+  "file": "File:\" 14 Fiat-Chrysler SRT Viper GTS.jpg"
+ },
+ "supercar.sk-mustang": {
+  "src": "photo-supercar.sk-mustang.jpg",
+  "author": "Stacy Sheff from Los Angeles, USA",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Ford_Mustang_VII.jpg",
+  "file": "File:Ford Mustang VII.jpg"
+ },
+ "supercar.sk-camaro": {
+  "src": "photo-supercar.sk-camaro.jpg",
+  "author": "Kevauto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2019_Chevrolet_Camaro_2SS_6.2L_front_3.16.19.jpg",
+  "file": "File:2019 Chevrolet Camaro 2SS 6.2L front 3.16.19.jpg"
+ },
+ "supercar.sk-type35": {
+  "src": "photo-supercar.sk-type35.jpg",
+  "author": "Dontpanic (Dogcow on de.wikipedia)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bugatti_Type_35.jpg",
+  "file": "File:Bugatti Type 35.jpg"
+ },
+ "supercar.sk-bolide": {
+  "src": "photo-supercar.sk-bolide.jpg",
+  "author": "Mr.choppers",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2025_Bugatti_Bolide_in_Black,_front_left_(Miller).jpg",
+  "file": "File:2025 Bugatti Bolide in Black, front left (Miller).jpg"
+ },
+ "supercar.sk-centodieci": {
+  "src": "photo-supercar.sk-centodieci.jpg",
+  "author": "Mr.choppers",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2022_Bugatti_Centodieci_in_Grigio_Chiaro,_front_right2.jpg",
+  "file": "File:2022 Bugatti Centodieci in Grigio Chiaro, front right2.jpg"
+ },
+ "supercar.sk-conceptone": {
+  "src": "photo-supercar.sk-conceptone.jpg",
+  "author": "Norbert Aepli, Switzerland (User:Noebu)",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2016-03-01_Geneva_Motor_Show_0977.JPG",
+  "file": "File:2016-03-01 Geneva Motor Show 0977.JPG"
+ },
+ "supercar.sk-zagreb": {
+  "src": "photo-supercar.sk-zagreb.jpg",
+  "author": "Nick Savchenko from Kiev, Ukraine",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zagreb_(29255640143).jpg",
+  "file": "File:Zagreb (29255640143).jpg"
+ },
+ "supercar.sk-cc8s": {
+  "src": "photo-supercar.sk-cc8s.jpg",
+  "author": "Andrew Basterfield",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2003_Koenigsegg_CC8S_(35862871624).jpg",
+  "file": "File:2003 Koenigsegg CC8S (35862871624).jpg"
+ },
+ "supercar.sk-angelholm": {
+  "src": "photo-supercar.sk-angelholm.jpg",
+  "author": "Abelson at English Wikipedia",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Angelholm_courthouse.jpg",
+  "file": "File:Angelholm courthouse.jpg"
+ },
+ "supercar.sk-challenger": {
+  "src": "photo-supercar.sk-challenger.jpg",
+  "author": "Ermell",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dodge_Challenger_SRT8_(2015)_Hirschaid-20220709-RM-120221_(cropped).jpg",
+  "file": "File:Dodge Challenger SRT8 (2015) Hirschaid-20220709-RM-120221 (cropped).jpg"
+ },
+ "supercar.sk-tuatara": {
+  "src": "photo-supercar.sk-tuatara.jpg",
+  "author": "SSCNA",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2019_SSC_Tuatara_at_Pebble_Beach_Press_Conference.jpg",
+  "file": "File:2019 SSC Tuatara at Pebble Beach Press Conference.jpg"
+ },
+ "supercar.sk-saleens7": {
+  "src": "photo-supercar.sk-saleens7.jpg",
+  "author": "Semnoz at French Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:SAG2004_181_Saleen.jpg",
+  "file": "File:SAG2004 181 Saleen.jpg"
+ },
+ "supercar.sk-delorean": {
+  "src": "photo-supercar.sk-delorean.jpg",
+  "author": "TTTNIS",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:De_Lorean_DMC-12_01.jpg",
+  "file": "File:De Lorean DMC-12 01.jpg"
+ },
+ "supercar.sk-venturi": {
+  "src": "photo-supercar.sk-venturi.jpg",
+  "author": "Blood Destructor",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Venturi_221_CUP_Prototype_-_Mondial_de_l%27Automobile_de_Paris_2014.jpg",
+  "file": "File:Venturi 221 CUP Prototype - Mondial de l'Automobile de Paris 2014.jpg"
+ },
+ "supercar.sk-alpinea110": {
+  "src": "photo-supercar.sk-alpinea110.jpg",
+  "author": "User Ericd on en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Alpine_A110_1800_Group_IV.JPG",
+  "file": "File:Alpine A110 1800 Group IV.JPG"
+ },
+ "supercar.sk-spano": {
+  "src": "photo-supercar.sk-spano.jpg",
+  "author": "Clément Bucco-Lechat",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Spania_GTA_Spano_steering_wheel.jpg",
+  "file": "File:Geneva MotorShow 2013 - Spania GTA Spano steering wheel.jpg"
+ },
+ "supercar.sk-bt62": {
+  "src": "photo-supercar.sk-bt62.jpg",
+  "author": "Vauxford",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2018_Brabham_BT62_5.4_Front.jpg",
+  "file": "File:2018 Brabham BT62 5.4 Front.jpg"
+ },
+ "supercar.sk-mosler": {
+  "src": "photo-supercar.sk-mosler.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Moslermt900.jpg",
+  "file": "File:Moslermt900.jpg"
+ },
+ "supercar.sk-gt90": {
+  "src": "photo-supercar.sk-gt90.jpg",
+  "author": "TaurusEmerald",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1995_Ford_GT90_Petersen_Automotive_Museum.jpg",
+  "file": "File:1995 Ford GT90 Petersen Automotive Museum.jpg"
+ },
+ "supercar.sk-divo": {
+  "src": "photo-supercar.sk-divo.jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bugatti_Divo,_GIMS_2019,_Le_Grand-Saconnex_(GIMS0029).jpg",
+  "file": "File:Bugatti Divo, GIMS 2019, Le Grand-Saconnex (GIMS0029).jpg"
+ },
+ "supercar.sk-tourbillon": {
+  "src": "photo-supercar.sk-tourbillon.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2024_Bugatti_Tourbillon_14.jpg",
+  "file": "File:2024 Bugatti Tourbillon 14.jpg"
+ },
+ "supercar.sk-eb110": {
+  "src": "photo-supercar.sk-eb110.jpg",
+  "author": "Lothar Spurzem",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:2007-06-15_18_Bugatti_EB_110_(bearb_-_kl).jpg",
+  "file": "File:2007-06-15 18 Bugatti EB 110 (bearb - kl).jpg"
+ },
+ "supercar.sk-regera": {
+  "src": "photo-supercar.sk-regera.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2019_Koenigsegg_Regera_LC24.jpg",
+  "file": "File:2019 Koenigsegg Regera LC24.jpg"
+ },
+ "supercar.sk-gemera": {
+  "src": "photo-supercar.sk-gemera.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koenigsegg_Gemera.jpg",
+  "file": "File:Koenigsegg Gemera.jpg"
+ },
+ "supercar.sk-ccx": {
+  "src": "photo-supercar.sk-ccx.jpg",
+  "author": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koenigsegg_CCX_4.jpg",
+  "file": "File:Koenigsegg CCX 4.jpg"
+ },
+ "supercar.sk-spykerc8": {
+  "src": "photo-supercar.sk-spykerc8.jpg",
+  "author": "Thecodmaster at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Broughtonsspyker.jpg",
+  "file": "File:Broughtonsspyker.jpg"
+ },
+ "supercar.sk-xbow": {
+  "src": "photo-supercar.sk-xbow.jpg",
+  "author": "Brian Snelson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:KTMX-Bow.jpg",
+  "file": "File:KTMX-Bow.jpg"
+ },
+ "supercar.sk-ep9": {
+  "src": "photo-supercar.sk-ep9.jpg",
+  "author": "NIO NextEV",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:NIO_EP9_das_Elektroauto_.jpg",
+  "file": "File:NIO EP9 das Elektroauto .jpg"
+ },
+ "supercar.sk-vector": {
+  "src": "photo-supercar.sk-vector.jpg",
+  "author": "Karrmann",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:VectorW8.jpg",
+  "file": "File:VectorW8.jpg"
+ },
+ "supercar.sk-panoz": {
+  "src": "photo-supercar.sk-panoz.jpg",
+  "author": "Tony Harrison from Farnborough, UK",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DAMS_Panoz_GTR-1.jpg",
+  "file": "File:DAMS Panoz GTR-1.jpg"
+ },
+ "supercar.sk-detroit": {
+  "src": "photo-supercar.sk-detroit.jpg",
+  "author": "Above listed authors",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Detroit_Montage.jpg",
+  "file": "File:Detroit Montage.jpg"
+ },
+ "supercar.sk-ccr": {
+  "src": "photo-supercar.sk-ccr.jpg",
+  "author": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2009_Koenigsegg_CCR_SCD24.jpg",
+  "file": "File:2009 Koenigsegg CCR SCD24.jpg"
+ },
+ "supercar.sk-a310": {
+  "src": "photo-supercar.sk-a310.jpg",
+  "author": "Berthold Werner",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Renault_Alpine_A310_BW_2016-09-03_13-21-47_(cropped).jpg",
+  "file": "File:Renault Alpine A310 BW 2016-09-03 13-21-47 (cropped).jpg"
+ },
+ "supercar.sk-teslaroadster": {
+  "src": "photo-supercar.sk-teslaroadster.jpg",
+  "author": "Thomas doerfer",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tesla_Roadster.JPG",
+  "file": "File:Tesla Roadster.JPG"
+ },
+ "supercar.sk-yangwang": {
+  "src": "photo-supercar.sk-yangwang.jpg",
+  "author": "JustAnotherCarDesigner",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Yangwang_U9_003_(resized).jpg",
+  "file": "File:Yangwang U9 003 (resized).jpg"
+ },
+ "supercar.jp-nsx": {
+  "src": "photo-supercar.jp-nsx.jpg",
+  "author": "Travis Rigel Lukas Hornung",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:AcuraNSX-05-cropped.jpg",
+  "file": "File:AcuraNSX-05-cropped.jpg"
+ },
+ "supercar.jp-gtr": {
+  "src": "photo-supercar.jp-gtr.jpg",
+  "author": "Hatsukari715",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nissan_GT-R_01.JPG",
+  "file": "File:Nissan GT-R 01.JPG"
+ },
+ "supercar.jp-lfa": {
+  "src": "photo-supercar.jp-lfa.jpg",
+  "author": "Tennen-Gas",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lexus_LFA_001.JPG",
+  "file": "File:Lexus LFA 001.JPG"
+ },
+ "supercar.jp-2000gt": {
+  "src": "photo-supercar.jp-2000gt.jpg",
+  "author": "Mytho88",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1967_Toyota_2000GT_01.jpg",
+  "file": "File:1967 Toyota 2000GT 01.jpg"
+ },
+ "supercar.jp-rx7": {
+  "src": "photo-supercar.jp-rx7.jpg",
+  "author": "名古屋太郎",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:200209_FD3S_spirit_R.jpg",
+  "file": "File:200209 FD3S spirit R.jpg"
+ },
+ "supercar.jp-rotary": {
+  "src": "photo-supercar.jp-rotary.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rotary_engine_rotor.jpg",
+  "file": "File:Rotary engine rotor.jpg"
+ },
+ "supercar.jp-suzuka": {
+  "src": "photo-supercar.jp-suzuka.jpg",
+  "author": "Ocdp",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Suzuka_Circuit_2013_001.svg",
+  "file": "File:Suzuka Circuit 2013 001.svg"
+ },
+ "supercar.jp-fuji": {
+  "src": "photo-supercar.jp-fuji.jpg",
+  "author": "No machine-readable author provided. Jungle assumed (based o…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fisco-mainstand.jpg",
+  "file": "File:Fisco-mainstand.jpg"
+ },
+ "supercar.jp-honda": {
+  "src": "photo-supercar.jp-honda.jpg",
+  "author": "Akonnchiroll",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toranomon_Alcea_Tower.jpg",
+  "file": "File:Toranomon Alcea Tower.jpg"
+ },
+ "supercar.jp-toyota": {
+  "src": "photo-supercar.jp-toyota.jpg",
+  "author": "Tokumeigakarinoaoshima",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Headquarter_of_Toyota_Motor_Corporation_3.JPG",
+  "file": "File:Headquarter of Toyota Motor Corporation 3.JPG"
+ },
+ "supercar.jp-lexus": {
+  "src": "photo-supercar.jp-lexus.jpg",
+  "author": "IFCAR",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Lexus_LS_400.jpg",
+  "file": "File:Lexus LS 400.jpg"
+ },
+ "supercar.jp-orochi": {
+  "src": "photo-supercar.jp-orochi.jpg",
+  "author": "Oq10pass",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Mitsuoka_Orochi_%2707_(5).jpg",
+  "file": "File:Mitsuoka Orochi '07 (5).jpg"
+ },
+ "supercar.jp-fairladyz": {
+  "src": "photo-supercar.jp-fairladyz.jpg",
+  "author": "The photographer is Joseph Gillespie",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:LegendZCAR.jpg",
+  "file": "File:LegendZCAR.jpg"
+ },
+ "supercar.jp-nismo": {
+  "src": "photo-supercar.jp-nismo.jpg",
+  "author": "Hatsukari715",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nissan_GT-R_01.JPG",
+  "file": "File:Nissan GT-R 01.JPG"
+ },
+ "supercar.jp-lc": {
+  "src": "photo-supercar.jp-lc.jpg",
+  "author": "Kirakiraouji",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2017_LEXUS_LC500h_JAPAN_FRONT.jpg",
+  "file": "File:2017 LEXUS LC500h JAPAN FRONT.jpg"
+ },
+ "supercar.jp-gr86": {
+  "src": "photo-supercar.jp-gr86.jpg",
+  "author": "Tokumeigakarinoaoshima",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toyota_GR86_RZ%2210th_Anniversary_Limited%22_(3BA-ZN8)_front.jpg",
+  "file": "File:Toyota GR86 RZ\"10th Anniversary Limited\" (3BA-ZN8) front.jpg"
+ },
+ "supercar.jp-toyota7": {
+  "src": "photo-supercar.jp-toyota7.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toyota_7_Turbo_front-left_2012_Suzuka_Circuit_Time_Machine_Exhibition.jpg",
+  "file": "File:Toyota 7 Turbo front-left 2012 Suzuka Circuit Time Machine Exhibition.jpg"
+ },
+ "supercar.jp-rxvision": {
+  "src": "photo-supercar.jp-rxvision.jpg",
+  "author": "Qurren (talk) Taken with Canon IXY 430F (Digital IXUS 245 HS…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mazda_RX-Vision_in_Automobile_Council_2016.jpg",
+  "file": "File:Mazda RX-Vision in Automobile Council 2016.jpg"
+ },
+ "supercar.jp-mitsuoka": {
+  "src": "photo-supercar.jp-mitsuoka.jpg",
+  "author": "Yasu (talk)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mitsuoka_Motor_headquarters.jpg",
+  "file": "File:Mitsuoka Motor headquarters.jpg"
+ },
+ "supercar.jp-zz2": {
+  "src": "photo-supercar.jp-zz2.jpg",
+  "author": "Tommy Kaira ZZ",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tomweb.jpg",
+  "file": "File:Tomweb.jpg"
+ },
+ "supercar.jp-caspita": {
+  "src": "photo-supercar.jp-caspita.jpg",
+  "author": "Toyotacoronaexsaloon",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jiotto_caspita_1st_f.jpg",
+  "file": "File:Jiotto caspita 1st f.jpg"
+ },
+ "supercar.jp-rb26": {
+  "src": "photo-supercar.jp-rb26.jpg",
+  "author": "RocketJohn",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nissan_RB26DETT_Engine_-_Rear_Side.jpg",
+  "file": "File:Nissan RB26DETT Engine - Rear Side.jpg"
+ },
+ "supercar.jp-vr38": {
+  "src": "photo-supercar.jp-vr38.jpg",
+  "author": "RocketJohn",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nissan_VR38DETT_Engine_at_Nissan_Engine_Museum_(cropped).jpg",
+  "file": "File:Nissan VR38DETT Engine at Nissan Engine Museum (cropped).jpg"
+ },
+ "supercar.jp-c30a": {
+  "src": "photo-supercar.jp-c30a.jpg",
+  "author": "Tennen-Gas",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Honda_C30A_engine_001.jpg",
+  "file": "File:Honda C30A engine 001.jpg"
+ },
+ "supercar.jp-vtec": {
+  "src": "photo-supercar.jp-vtec.jpg",
+  "author": "Subwoofer1983 at German Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:I-VTEC_Motor.jpg",
+  "file": "File:I-VTEC Motor.jpg"
+ },
+ "supercar.jp-ts020": {
+  "src": "photo-supercar.jp-ts020.jpg",
+  "author": "Mytho88",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:1999_Toyota_TS020_01.jpg",
+  "file": "File:1999 Toyota TS020 01.jpg"
+ },
+ "supercar.jp-r26b": {
+  "src": "photo-supercar.jp-r26b.jpg",
+  "author": "韋駄天狗",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mazda-787B.JPG",
+  "file": "File:Mazda-787B.JPG"
+ },
+ "supercar.jp-sugo": {
+  "src": "photo-supercar.jp-sugo.jpg",
+  "author": "redlegsfan21 from Vandalia, OH, United States",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sportsland_SUGO_(27169582042).jpg",
+  "file": "File:Sportsland SUGO (27169582042).jpg"
+ },
+ "supercar.jp-787b": {
+  "src": "photo-supercar.jp-787b.jpg",
+  "author": "韋駄天狗",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mazda-787B.JPG",
+  "file": "File:Mazda-787B.JPG"
+ },
+ "supercar.jp-motegi": {
+  "src": "photo-supercar.jp-motegi.jpg",
+  "author": "Abasaa",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Super_Speedway_(Twin_Ring_Motegi)_01.JPG",
+  "file": "File:Super Speedway (Twin Ring Motegi) 01.JPG"
+ },
+ "supercar.jp-s2000": {
+  "src": "photo-supercar.jp-s2000.jpg",
+  "author": "free photos & art",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Year_2000_Honda_S_2000_(9934080094).jpg",
+  "file": "File:Year 2000 Honda S 2000 (9934080094).jpg"
+ },
+ "supercar.jp-rx8": {
+  "src": "photo-supercar.jp-rx8.jpg",
+  "author": "IFCAR",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mazda_RX-8.jpg",
+  "file": "File:Mazda RX-8.jpg"
+ },
+ "supercar.jp-cosmo": {
+  "src": "photo-supercar.jp-cosmo.jpg",
+  "author": "名古屋太郎",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:EUNOS_COSMO_3rotor.jpg",
+  "file": "File:EUNOS COSMO 3rotor.jpg"
+ },
+ "supercar.jp-ox99": {
+  "src": "photo-supercar.jp-ox99.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Yamaha_OX99-11_front.jpg",
+  "file": "File:Yamaha OX99-11 front.jpg"
+ },
+ "supercar.jp-roadster": {
+  "src": "photo-supercar.jp-roadster.jpg",
+  "author": "根川大橋 (Negawa Ohashi)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mazda_Roadster_(MX-5)_by_Negawa_Bridge.jpg",
+  "file": "File:Mazda Roadster (MX-5) by Negawa Bridge.jpg"
+ },
+ "supercar.jp-mr2": {
+  "src": "photo-supercar.jp-mr2.jpg",
+  "author": "GreenGhost74",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1993ToyotaMR2Hardtop.jpg",
+  "file": "File:1993ToyotaMR2Hardtop.jpg"
+ },
+ "supercar.jp-gto": {
+  "src": "photo-supercar.jp-gto.jpg",
+  "author": "Tokumeigakarinoaoshima",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mitsubishi_GTO_(E-Z16A)_front.jpg",
+  "file": "File:Mitsubishi GTO (E-Z16A) front.jpg"
+ },
+ "supercar.jp-autopolis": {
+  "src": "photo-supercar.jp-autopolis.jpg",
+  "author": "Bobo12345 (talk) (Uploads)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Autopolis_racing_circuit_(Kamitsue,_Oita,_Japan).JPG",
+  "file": "File:Autopolis racing circuit (Kamitsue, Oita, Japan).JPG"
+ },
+ "supercar.jp-tsukuba": {
+  "src": "photo-supercar.jp-tsukuba.jpg",
+  "author": "なおっつ",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsukuba_Circuit.jpg",
+  "file": "File:Tsukuba Circuit.jpg"
+ },
+ "supercar.jp-kyusha": {
+  "src": "photo-supercar.jp-kyusha.jpg",
+  "author": "Stephen Foskett (Wikipedia User: sfoskett)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:1916_Ford_Model_T_touring_car.JPG",
+  "file": "File:1916 Ford Model T touring car.JPG"
+ },
+ "supercar.jp-s800": {
+  "src": "photo-supercar.jp-s800.jpg",
+  "author": "Lothar Spurzem",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Honda_S_800_Front_(2011-06-19)_b.jpg",
+  "file": "File:Honda S 800 Front (2011-06-19) b.jpg"
+ },
+ "supercar.jp-hsv010": {
+  "src": "photo-supercar.jp-hsv010.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ralph_Firman_2010_Super_GT_Fuji_400km_qualify_Super_Lap.jpg",
+  "file": "File:Ralph Firman 2010 Super GT Fuji 400km qualify Super Lap.jpg"
+ },
+ "supercar.jp-mid4": {
+  "src": "photo-supercar.jp-mid4.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nissan_MID4_front-left_2015_Motorsport_Japan.jpg",
+  "file": "File:Nissan MID4 front-left 2015 Motorsport Japan.jpg"
+ },
+ "supercar.jp-ra272": {
+  "src": "photo-supercar.jp-ra272.jpg",
+  "author": "Mclarensenna",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Honda_RA272_twinringmotegi.jpg",
+  "file": "File:Honda RA272 twinringmotegi.jpg"
+ },
+ "supercar.hy-carbon": {
+  "src": "photo-supercar.hy-carbon.jpg",
+  "author": "Cjp24",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Carbon_fiber-2.jpg",
+  "file": "File:Carbon fiber-2.jpg"
+ },
+ "supercar.hy-fxxk": {
+  "src": "photo-supercar.hy-fxxk.jpg",
+  "author": "emperornie",
+  "license": "CC BY-SA 2.0 IT",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/it/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:2015_Ferrari_FXX-K_in_Shanghai.jpg",
+  "file": "File:2015 Ferrari FXX-K in Shanghai.jpg"
+ },
+ "supercar.hy-titanium": {
+  "src": "photo-supercar.hy-titanium.jpg",
+  "author": "Alchemist-hp (pse-mendelejew.de)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Titan-crystal_bar.JPG",
+  "file": "File:Titan-crystal bar.JPG"
+ },
+ "supercar.hy-inconel": {
+  "src": "photo-supercar.hy-inconel.jpg",
+  "author": "Ascaron",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Inconel_718.JPG",
+  "file": "File:Inconel 718.JPG"
+ },
+ "supercar.hy-kevlar": {
+  "src": "photo-supercar.hy-kevlar.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kevlar_chemical_structure.png",
+  "file": "File:Kevlar chemical structure.png"
+ },
+ "supercar.hy-kers": {
+  "src": "photo-supercar.hy-kers.jpg",
+  "author": ".mw-parser-output .messagebox{margin:4px 0;width:auto;border…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kinetic_Energy_Recovery_System.gif",
+  "file": "File:Kinetic Energy Recovery System.gif"
+ },
+ "supercar.hy-mguk": {
+  "src": "photo-supercar.hy-mguk.jpg",
+  "author": ".mw-parser-output .messagebox{margin:4px 0;width:auto;border…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kinetic_Energy_Recovery_System.gif",
+  "file": "File:Kinetic Energy Recovery System.gif"
+ },
+ "supercar.hy-graphene": {
+  "src": "photo-supercar.hy-graphene.jpg",
+  "author": "AlexanderAlUS",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Graphen.jpg",
+  "file": "File:Graphen.jpg"
+ },
+ "supercar.hy-polycarbonate": {
+  "src": "photo-supercar.hy-polycarbonate.jpg",
+  "author": "Donmike10 (talk)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Polycarbonate_water_bottle.JPG",
+  "file": "File:Polycarbonate water bottle.JPG"
+ },
+ "supercar.hy-simulator": {
+  "src": "photo-supercar.hy-simulator.jpg",
+  "author": "Los Alamos National Laboratory",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kiva_Simulation.jpg",
+  "file": "File:Kiva Simulation.jpg"
+ },
+ "supercar.hy-bernoulli": {
+  "src": "photo-supercar.hy-bernoulli.jpg",
+  "author": "user:ComputerGeezer and Geof",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:VenturiFlow.png",
+  "file": "File:VenturiFlow.png"
+ },
+ "supercar.hy-boundary": {
+  "src": "photo-supercar.hy-boundary.jpg",
+  "author": "tuso",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Boundary_Layer.png",
+  "file": "File:Boundary Layer.png"
+ },
+ "supercar.hy-autoclave": {
+  "src": "photo-supercar.hy-autoclave.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Autoclave(1).JPG",
+  "file": "File:Autoclave(1).JPG"
+ },
+ "supercar.hy-solidstate": {
+  "src": "photo-supercar.hy-solidstate.jpg",
+  "author": "Luca Bertoli",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:All-Solid-State_Battery.png",
+  "file": "File:All-Solid-State Battery.png"
+ },
+ "supercar.hy-cd": {
+  "src": "photo-supercar.hy-cd.jpg",
+  "author": "Gap1",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:W1-2.jpg",
+  "file": "File:W1-2.jpg"
+ },
+ "supercar.hy-rollcage": {
+  "src": "photo-supercar.hy-rollcage.jpg",
+  "author": "Tennen-Gas",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Suzuki_Swift_JWRC_%2705_005.JPG",
+  "file": "File:Suzuki Swift JWRC '05 005.JPG"
+ },
+ "supercar.hy-lmdh": {
+  "src": "photo-supercar.hy-lmdh.jpg",
+  "author": "MIDWST.BLUR",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:GTP_(53107337217).jpg",
+  "file": "File:GTP (53107337217).jpg"
+ },
+ "supercar.hy-carbonneutral": {
+  "src": "photo-supercar.hy-carbonneutral.jpg",
+  "author": "Global Carbon Project",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Global_CO2_Pathways_Using_Remaining_Carbon_Budgets.svg",
+  "file": "File:Global CO2 Pathways Using Remaining Carbon Budgets.svg"
+ },
+ "supercar.hy-bbw": {
+  "src": "photo-supercar.hy-bbw.jpg",
+  "author": "AnSchu94",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Erprobungsfahrzeug_SpeedE_der_fka_GmbH.jpg",
+  "file": "File:Erprobungsfahrzeug SpeedE der fka GmbH.jpg"
+ },
+ "supercar.hy-oval": {
+  "src": "photo-supercar.hy-oval.jpg",
+  "author": "Jeff",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Daytona_International_Speedway_2011.jpg",
+  "file": "File:Daytona International Speedway 2011.jpg"
+ },
+ "supercar.hy-biofuel": {
+  "src": "photo-supercar.hy-biofuel.jpg",
+  "author": "Shizhao拍摄",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Biodiesel.JPG",
+  "file": "File:Biodiesel.JPG"
+ },
+ "supercar.dn-keshigomu": {
+  "src": "photo-supercar.dn-keshigomu.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Supercar_eraser.JPG",
+  "file": "File:Supercar eraser.JPG"
+ },
+ "supercar.dn-carrozzeria": {
+  "src": "photo-supercar.dn-carrozzeria.jpg",
+  "author": "Clément Bucco-Lechat",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Pininfarina_Sergio_right_front_view_(cropped).jpg",
+  "file": "File:Geneva MotorShow 2013 - Pininfarina Sergio right front view (cropped).jpg"
+ },
+ "supercar.dn-toyotamuseum": {
+  "src": "photo-supercar.dn-toyotamuseum.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toyota_Automobile_Museum_2013_September.jpg",
+  "file": "File:Toyota Automobile Museum 2013 September.jpg"
+ },
+ "supercar.dn-tailfin": {
+  "src": "photo-supercar.dn-tailfin.jpg",
+  "author": "Christer Johansson",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Cadillac1001.jpg",
+  "file": "File:Cadillac1001.jpg"
+ },
+ "supercar.dn-oilshock": {
+  "src": "photo-supercar.dn-oilshock.jpg",
+  "author": "Energy Information Administration",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nominalrealoilprices1968-2006.png",
+  "file": "File:Nominalrealoilprices1968-2006.png"
+ },
+ "supercar.dn-haigas": {
+  "src": "photo-supercar.dn-haigas.jpg",
+  "author": "Ruben de Rijcke",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Automobile_exhaust_gas.jpg",
+  "file": "File:Automobile exhaust gas.jpg"
+ },
+ "supercar.dn-groupc": {
+  "src": "photo-supercar.dn-groupc.jpg",
+  "author": "Morio",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Porsche_956_front-left_Porsche_Museum.jpg",
+  "file": "File:Porsche 956 front-left Porsche Museum.jpg"
+ },
+ "supercar.dn-sarthe": {
+  "src": "photo-supercar.dn-sarthe.jpg",
+  "author": "Sander from Rotterdam, Netherlands",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Le_Mans_Pits_at_Night.jpg",
+  "file": "File:Le Mans Pits at Night.jpg"
+ },
+ "supercar.dn-daytona": {
+  "src": "photo-supercar.dn-daytona.jpg",
+  "author": "Will Pittenger",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Daytona_International_Speedway_-_Road_Course.svg",
+  "file": "File:Daytona International Speedway - Road Course.svg"
+ },
+ "supercar.dn-sebring": {
+  "src": "photo-supercar.dn-sebring.jpg",
+  "author": "Will Pittenger",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sebring_International_Raceway.svg",
+  "file": "File:Sebring International Raceway.svg"
+ },
+ "supercar.dn-nur24": {
+  "src": "photo-supercar.dn-nur24.jpg",
+  "author": "Will Pittenger",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:N%C3%BCrburgring_-_Nordschleife.svg",
+  "file": "File:Nürburgring - Nordschleife.svg"
+ },
+ "supercar.dn-spa24": {
+  "src": "photo-supercar.dn-spa24.jpg",
+  "author": "Will Pittenger",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spa-Francorchamps_of_Belgium.svg",
+  "file": "File:Spa-Francorchamps of Belgium.svg"
+ },
+ "supercar.dn-pikes": {
+  "src": "photo-supercar.dn-pikes.jpg",
+  "author": "Hogs555",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pikespeak.JPG",
+  "file": "File:Pikespeak.JPG"
+ },
+ "supercar.dn-mazdamuseum": {
+  "src": "photo-supercar.dn-mazdamuseum.jpg",
+  "author": "Taisyo",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%9E%E3%83%84%E3%83%80%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A001.jpg",
+  "file": "File:マツダミュージアム01.jpg"
+ },
+ "supercar.dn-hondahall": {
+  "src": "photo-supercar.dn-hondahall.jpg",
+  "author": "韋駄天狗",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:HondaCollectionHall.JPG",
+  "file": "File:HondaCollectionHall.JPG"
+ },
+ "supercar.dn-autostadt": {
+  "src": "photo-supercar.dn-autostadt.jpg",
+  "author": "Ralf Roletschek",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:14-01-18-autostadt-wob-037.jpg",
+  "file": "File:14-01-18-autostadt-wob-037.jpg"
+ },
+ "supercar.dn-lemansstart": {
+  "src": "photo-supercar.dn-lemansstart.jpg",
+  "author": "Lothar Spurzem",
+  "license": "CC BY-SA 2.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:1965-05-23_Le-Mans-Start_3.jpg",
+  "file": "File:1965-05-23 Le-Mans-Start 3.jpg"
+ },
+ "supercar.dn-targa": {
+  "src": "photo-supercar.dn-targa.jpg",
+  "author": "David Lees",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1965-05-09_Targa_Florio_Collesano_winner_Ferrari_330_P2_0828_Vaccarella%2BBandini.jpg",
+  "file": "File:1965-05-09 Targa Florio Collesano winner Ferrari 330 P2 0828 Vaccarella+Bandini.jpg"
+ },
+ "supercar.dn-taikyu": {
+  "src": "photo-supercar.dn-taikyu.jpg",
+  "author": "United Autosports",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:IMSA_WeatherTech_SportsCar_Championship_(26964718068).jpg",
+  "file": "File:IMSA WeatherTech SportsCar Championship (26964718068).jpg"
+ },
+ "supercar.dn-fujimuseum": {
+  "src": "photo-supercar.dn-fujimuseum.jpg",
+  "author": "テレストレラッソ",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fuji-Motorsports-Museum-1stFloor.jpg",
+  "file": "File:Fuji-Motorsports-Museum-1stFloor.jpg"
+ },
+ "supercar.dn-nihonmuseum": {
+  "src": "photo-supercar.dn-nihonmuseum.jpg",
+  "author": "先従隗始",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Motorcar_Museum_of_Japan_20231103_01.jpg",
+  "file": "File:Motorcar Museum of Japan 20231103 01.jpg"
  }
 };

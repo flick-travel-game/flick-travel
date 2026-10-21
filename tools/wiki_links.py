@@ -25,6 +25,10 @@ CACHE = ROOT / "tools" / "wiki-titles.json"  # 名前 → 題名(無ければ nu
 DATA = {"ai": "aiTerms"}  # ゲームの フォルダ → data/ の ファイル名(ちがう ものだけ)
 SKIP = {"eikaiwa", "kankoku", "supein", "kabu", "uchu", "karada", "rika", "rekishi"}  # ことばの 旅では ない / もう リンクが ある
 NO_WIKI = {}  # "ゲーム:ことばid" → 理由(合わない 記事。見つけたら 足す)
+NO_WIKI.update({"supercar:ki-premiere": "演劇の 初演の 記事", "supercar:ki-lhd": "輸入車の 記事", "supercar:it-cavallino": "歌の 記事", "supercar:it-bizzarrini": "メーカーの 一覧", "supercar:gb-cx75": "ガスタービンの 記事",
+                "supercar:hy-hypersport": "ゲームの 記事", "supercar:hy-gte": "電話の 会社の 記事", "supercar:dn-ghia": "歯車の 記事", "supercar:ki-maker": "製造業 全体の 記事", "supercar:gi-dihedral": "ガルウィング(べつの ドア)",
+                "supercar:ki-weight": "乾燥重量(べつの はかりかた)", "supercar:gi-pullrod": "べつの 足まわりの 記事"})
+ALT_DOT = {"supercar"}  # 名前の 空白を「・」に した 題名も さがす ゲーム
 # フリックキャビンアテンダント(2026-10-21): 転送先が べつの もの・会社名・決めつけに なる 記事を 外した
 NO_WIKI.update({"cabin:ei-visa": "カードの 会社の 記事", "cabin:ei-delayed": "英語の 作品名の 記事", "cabin:ki-pitch": "座席 全体の 記事", "cabin:ki-doorhandle": "家の ドアノブの 記事",
                 "cabin:ho-sansohassei": "酸素濃縮器(べつの 機械)", "cabin:ma-nijukeigo": "「日本語の乱れ」は 人を 責める 向き", "cabin:ku-okidome": "ボーディング・ブリッジ(反対の もの)",
@@ -89,7 +93,12 @@ def main():
             continue
         terms = json.loads(f.read_text(encoding="utf-8"))["terms"]
         print(g, len(terms), flush=True)
-        lookup([t["name"] for t in terms], cache)
+        # ⭐ スーパーカーは「フェラーリ F40」→ 記事は「フェラーリ・F40」の 形が 多い。空白を「・」に した 名前も 聞いて、ある ほうを 使う(2026-10-21)
+        alt = {t["name"]: t["name"].replace(" ", "・") for t in terms if g in ALT_DOT and " " in t["name"]}
+        lookup([t["name"] for t in terms] + list(alt.values()), cache)
+        for n, v in alt.items():
+            if not cache.get(n) and cache.get(v): cache[n] = cache[v]
+        if alt: CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")  # 写真(fetch_game_photos.py)も 名前で 引くので おぼえる
         # ⚠️ ふつうの 記事だけ(「Wikipedia:お知らせ」のような 案内の ページに 転送される ことが ある)
         wiki = {t["id"]: cache[t["name"]] for t in terms if cache.get(t["name"]) and not NS.match(cache[t["name"]]) and f"{g}:{t['id']}" not in NO_WIKI}
         (ROOT / g / "wiki.js").write_text(

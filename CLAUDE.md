@@ -1479,7 +1479,12 @@
   町の 紋章(シュトゥットガルト・ヴォルフスブルク・モルスハイム …)/ 人の 顔(ディーノ・プラモデルの 子)/ 事故を 思わせる(パナメリカーナの われた 窓・衝突試験の 人形・グループB の 観客)/
   タバコの 広告(MP4/4)/ 闘牛 / 戦闘機の 計器(HUD)/ べつの 車(ハコスカ・ケンメリ → いまの スカイライン、930 → 991、ディヘドラル → 300SL、ヴォワチュール・ノワール → シロン)/ 関係ない 写真(パガーニ → イタリアの 町・ジャガー → 動物・ハニカム → ハチの 巣・マニュアル → 楽器 など)
 - 📷 写真クイズに 出る 車は 154台。⚠️ `PHOTO_SKIP`(`supercar.js`)= 型の ぜんぶを まとめた 名前(911・GT-R)と 同じ 写真の 語。「911 と 991」の ように 答えが 2つ ある 問題に なるため。まちがいの 選択肢も 同じ 写真の 車を さける
-- 絵は まだ 無い: 仮の アイコン `tools/supercar/placeholder_icon.py`(夕日・チェッカーフラッグ・タイヤ。実在の 車の 形は 描かない)・題名は 文字(`hero=False`・`logo=False`)。届いたら 四角い 絵 → `tools/supercar/art/square-src.png` → `python3 tools/icon_from_square.py supercar` / 題名の 透明 PNG → `title_from_art.py` / `supercar/hero.webp`(`hero=True`)。
+- **トップの 絵は 入れた**(2026-10-21。`supercar/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。
+  1回目は 札 14こが ゲームに 無い ことば(ぼでぃ・こくぴっと・えあろ・めるせです・さいこうそく・ぱわー・でざいなー …)・火を ふく エンジン・本物の 人のような 顔・「¡しろう!」・レベルの 名前が ちがう で 入れなかった。
+  2回目の のこりは **絵の 中で 直した**(`tools/supercar/fix_text.py`): きほんの 札 4つは 絵と 合う ことばに 書きかえ(えんじんの 絵 = えんじん / 赤い車 = すーぱーかー / 運転席 = うんてんせき / メーター = さいこうそくど)/
+  ぼるしぇ → ぽるしぇ・ばがーに → ぱがーに・すーぶら → すーぷら / レベル3「スーパーーはかせに」→「スーパーカーはかせに」/ ことばの いみ「ちかくに」→「じめんに」・「ふらずに」→「ふらつかずに」。もとの 絵は 入れものに 入れていない。
+  ⚠️ 「みにかー」の 札の 車は 本物の 小さな 車に にている(ロゴ・ナンバーは 無い)。気に なるなら 作りなおしで
+- アイコンと 題名は まだ: 仮の アイコン `tools/supercar/placeholder_icon.py`(夕日・チェッカーフラッグ・タイヤ。実在の 車の 形は 描かない)・題名は 文字(`logo=False`)。届いたら 四角い 絵 → `tools/supercar/art/square-src.png` → `python3 tools/icon_from_square.py supercar`(`iconv` を 足す)/ 題名の 透明 PNG → `title_from_art.py`(`logo=True`・`art.word` を 実寸に・`wordv` +1)。
   ⚠️ 絵を 頼む ときは **実在の 車の 形・ロゴ・エンブレム・ナンバー**を 描かせない。届いたら 字を 切り出して 読む(「スーバーカー」「スーパーカ」に なりやすい)。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は **絵と けいくんの OK の あと**
 - ⚠️ 組み立てる 前に `pip install sudachipy sudachidict_core==20260723.1`(⚠️ それでも `supein/spanish.js` だけは ふりがなが 1か所 変わる(大人数)。スーパーカーと 関係ないので `git checkout supein/spanish.js` で もどし、`supein/index.html` の `spanish.js?v=` も もとに もどした)(⚠️ 版を そろえないと **ほかの ゲームの ふりがなが 変わる**。2026-10-21 に 1回 新しい 版で 組み立てて しまい、ほかの ゲームの terms.js を もどした)
 - 確かめかた: `node tools/play-all.mjs supercar/`(全198ステージ。旅 9×11 + マスター 99)/ `node tools/click-all.mjs supercar/`(W=320 も)。`python3 tools/supercar/terms_js.py --check`

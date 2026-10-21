@@ -12,13 +12,13 @@
 <meta property="og:title" content="フリックスーパーカー｜かずとも">
 <meta property="og:description" content="スーパーカーの きほん・しくみと 技術・イタリア / ドイツ / イギリス / 世界 / 日本の メーカーと 名車・ハイパーカーと 記録・伝説の 名車と 人の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、国・メーカー・発表した 年が 出るよ。車が すきな 子の 入門から、専門家の ことばまで。 かずともの フリックゲーム。">
 <meta property="og:url" content="https://kazutomo.app/flick/supercar/">
-<meta property="og:image" content="https://kazutomo.app/flick/hero.webp">
+<meta property="og:image" content="https://kazutomo.app/flick/supercar/hero.webp">
 <meta property="og:locale" content="ja_JP">
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png?v=2">
+<link rel="icon" type="image/png" href="favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -436,10 +436,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
+      <img class="logo-mark" src="logo-mark2.webp" alt="" width="144" height="144" aria-hidden="true">
       <span class="logo-text">フリックスーパーカー</span>
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックスーパーカー</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリックスーパーカー。世界の スーパーカーの 札が ならぶ 中で、男の子と 女の子と 白い 犬が 手を のばす 絵" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -572,7 +574,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"supercar", name:"フリックスーパーカー", modes:(typeof SUPERCAR === "object" ? SUPERCAR.modes : []), assets:"../", logo:false, hero:false, dir:"supercar/", lead:"スーパーカーの きほん・しくみと 技術・イタリア / ドイツ / イギリス / 世界 / 日本の メーカーと 名車・ハイパーカーと 記録・伝説の 名車と 人の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、国・メーカー・発表した 年が 出るよ。車が すきな 子の 入門から、専門家の ことばまで。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。馬力・最高速などの 数字は メーカーの 公表値を まるめた めやすで、年式や 版で ちがうよ。最高速や 加速は テストコースや サーキットの 話。道路では 交通ルールを 守ろうね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の スーパーカーが つながって 見えてくるよ。実在の メーカーとは 関係ありません。" };
+const GAME = { id:"supercar", name:"フリックスーパーカー", modes:(typeof SUPERCAR === "object" ? SUPERCAR.modes : []), assets:"../", logo:false, hero:true, dir:"supercar/", lead:"スーパーカーの きほん・しくみと 技術・イタリア / ドイツ / イギリス / 世界 / 日本の メーカーと 名車・ハイパーカーと 記録・伝説の 名車と 人の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、国・メーカー・発表した 年が 出るよ。車が すきな 子の 入門から、専門家の ことばまで。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。馬力・最高速などの 数字は メーカーの 公表値を まるめた めやすで、年式や 版で ちがうよ。最高速や 加速は テストコースや サーキットの 話。道路では 交通ルールを 守ろうね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の スーパーカーが つながって 見えてくるよ。実在の メーカーとは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

@@ -25,6 +25,10 @@ CACHE = ROOT / "tools" / "wiki-titles.json"  # 名前 → 題名(無ければ nu
 DATA = {"ai": "aiTerms"}  # ゲームの フォルダ → data/ の ファイル名(ちがう ものだけ)
 SKIP = {"eikaiwa", "kankoku", "supein", "kabu", "uchu", "karada", "rika", "rekishi"}  # ことばの 旅では ない / もう リンクが ある
 NO_WIKI = {}  # "ゲーム:ことばid" → 理由(合わない 記事。見つけたら 足す)
+# フリックキャビンアテンダント(2026-10-21): 転送先が べつの もの・会社名・決めつけに なる 記事を 外した
+NO_WIKI.update({"cabin:ei-visa": "カードの 会社の 記事", "cabin:ei-delayed": "英語の 作品名の 記事", "cabin:ki-pitch": "座席 全体の 記事", "cabin:ki-doorhandle": "家の ドアノブの 記事",
+                "cabin:ho-sansohassei": "酸素濃縮器(べつの 機械)", "cabin:ma-nijukeigo": "「日本語の乱れ」は 人を 責める 向き", "cabin:ku-okidome": "ボーディング・ブリッジ(反対の もの)",
+                "cabin:sh-briefing": "会議 全体の 記事", "cabin:sh-suihei": "飛翔(鳥なども ふくむ 記事)"})
 NS = __import__("re").compile(r"^(Wikipedia|WP|Help|ヘルプ|Portal|ポータル|Template|Category|カテゴリ|File|ファイル|プロジェクト|特別|Special|利用者|User|MediaWiki):")
 UA = "flick-travel-wiki-links/1.0 (https://flick-travel-game.github.io/flick-travel/)"
 

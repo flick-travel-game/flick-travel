@@ -1,0 +1,1287 @@
+[
+ {
+  "id": "sk-hnd",
+  "name": "HND(羽田空港)",
+  "reading": "えいちえぬでぃー",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛫",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-nrt",
+   "sk-kukocode"
+  ],
+  "description": "東京の 羽田空港を あらわす 3文字の コードです。町から 近く、国内線も 国際線も たくさん 飛んで います。荷物の タグや 搭乗券にも この 3文字が 印刷されます。",
+  "settai": "お客さまの 行き先の コードを 見て、乗りまちがいが ないか 確かめます。"
+ },
+ {
+  "id": "sk-nrt",
+  "name": "NRT(成田国際空港)",
+  "reading": "えぬあーるてぃー",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✈",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-hnd",
+   "sk-kukocode"
+  ],
+  "description": "千葉県に ある 成田国際空港の コードです。東京の そばの 空港は 羽田と 成田の 2つ あるので、コードで しっかり 見分けます。",
+  "settai": "「東京行き」の お客さまには、羽田か 成田かを ていねいに 確かめます。"
+ },
+ {
+  "id": "sk-kix",
+  "name": "KIX(関西国際空港)",
+  "reading": "けーあいえっくす",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-hnd",
+   "sk-ngo"
+  ],
+  "description": "大阪の 近くに ある 関西国際空港の コードです。海を うめたてて 作った 島の 上に あります。大阪には 伊丹空港も あるので、まちがえない ように します。"
+ },
+ {
+  "id": "sk-jisa",
+  "name": "時差",
+  "reading": "じさ",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🕰",
+  "mapNode": "sekai:jisa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-jst",
+   "sk-jisakeisan",
+   "sk-timezone"
+  ],
+  "description": "国や 地域に よって 時計の 時刻が ちがう ことです。地球が まわって いて、太陽の 当たる 時間が 場所で ちがう からです。到着地の 時刻を お知らせ するのも 客室乗務員の しごとです。",
+  "settai": "到着の 前に 現地の 時刻を お伝え すると、お客さまが 時計を 合わせやすく なります。",
+  "ei": "time difference"
+ },
+ {
+  "id": "sk-hizukehenkosen",
+  "name": "日付変更線",
+  "reading": "ひづけへんこうせん",
+  "journey": "sekai",
+  "category": "日付変更線と 地球",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "sekai:henko",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-higashimawari",
+   "sk-hizukemodoru",
+   "sk-keido"
+  ],
+  "description": "太平洋の 上を 南北に 通る、日付を 切りかえる ための 線です。東へ こえると 日付が 1日 もどり、西へ こえると 1日 進みます。日本と アメリカの あいだを 飛ぶ ときに こえます。",
+  "settai": "到着の 日付が 出発と ちがう ときは、まちがえない よう お伝え します。",
+  "ei": "International Date Line"
+ },
+ {
+  "id": "sk-summertime",
+  "name": "サマータイム",
+  "reading": "さまーたいむ",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☀",
+  "mapNode": "sekai:summer",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-natsujikan",
+   "sk-tokeisusumeru",
+   "sk-fuyujikan"
+  ],
+  "description": "夏の あいだ 時計を 1時間 進めて、明るい 時間を 有効に 使う しくみです。ヨーロッパや アメリカなどで 行われて いますが、日本では 行って いません。この 時期は 日本との 時差が 1時間 かわります。",
+  "settai": "サマータイム中の 行き先では、時差が いつもと ちがう ことを お伝え します。",
+  "ei": "daylight saving time"
+ },
+ {
+  "id": "sk-nihao",
+  "name": "ニーハオ(中国語)",
+  "reading": "にーはお",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🀄",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-xiexie",
+   "sk-beijing"
+  ],
+  "description": "中国語で「こんにちは」の あいさつです。中国や 台湾などで 使われます。その 土地の ことばで ひとこと あいさつ すると、お客さまの 表情が やわらぐ ことが あります。",
+  "settai": "中国語を 話す お客さまを 笑顔で お出むかえ する ときに 使えます。",
+  "ei": "Ni hao"
+ },
+ {
+  "id": "sk-bonjour",
+  "name": "ボンジュール(フランス語)",
+  "reading": "ぼんじゅーる",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥐",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-paris",
+   "sk-xiexie"
+  ],
+  "description": "フランス語で「こんにちは」の あいさつです。フランスの ほか、カナダの 一部 など フランス語を 話す 地域でも 使われます。",
+  "settai": "パリ行きの 便で お客さまを お出むかえ する ときに 使えます。",
+  "ei": "Bonjour"
+ },
+ {
+  "id": "sk-annyeong",
+  "name": "アンニョンハセヨ(韓国語)",
+  "reading": "あんにょんはせよ",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🇰🇷",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-kamsahamnida",
+   "sk-seoul"
+  ],
+  "description": "韓国語で「こんにちは」の ていねいな あいさつです。朝でも 夜でも 使えます。日本と 韓国は 近いので、この あいさつを 聞く 機会も 多いです。",
+  "settai": "韓国語を 話す お客さまへの お出むかえで 使えます。",
+  "ei": "Annyeonghaseyo"
+ },
+ {
+  "id": "sk-aloha",
+  "name": "アロハ(ハワイ語)",
+  "reading": "あろは",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌺",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-hawaii",
+   "sk-hnl"
+  ],
+  "description": "ハワイ語の あいさつで、「こんにちは」「さようなら」の ほか、愛や 思いやりの 気持ちも ふくむ ことばです。ハワイ行きの 便では、機内が この あいさつで あたたかい 空気に なります。",
+  "settai": "ハワイ到着の 前に、旅の はじまりを いっしょに よろこぶ ひとことに なります。",
+  "ei": "Aloha"
+ },
+ {
+  "id": "sk-newyork",
+  "name": "ニューヨーク",
+  "reading": "にゅーよーく",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗽",
+  "mapNode": "sekai:namerica",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-jfk",
+   "sk-jisa"
+  ],
+  "description": "アメリカの 東がわに ある 大きな 都市で、自由の女神が 有名です。日本との 時差は マイナス14時間(サマータイム中は マイナス13時間)。日本の お昼は、ニューヨークでは 前の 日の 夜です。",
+  "ei": "New York"
+ },
+ {
+  "id": "sk-paris",
+  "name": "パリ",
+  "reading": "ぱり",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "sekai:europe",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-cdg",
+   "sk-bonjour"
+  ],
+  "description": "フランスの 首都で、エッフェル塔が 有名です。日本との 時差は マイナス8時間(サマータイム中は マイナス7時間)。食べものや 美術を 楽しみに 行く お客さまも 多い 町です。",
+  "ei": "Paris"
+ },
+ {
+  "id": "sk-london",
+  "name": "ロンドン",
+  "reading": "ろんどん",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎡",
+  "mapNode": "sekai:europe",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-lhr",
+   "sk-gmt"
+  ],
+  "description": "イギリスの 首都で、時計台の ビッグ・ベンが 有名です。日本との 時差は マイナス9時間(サマータイム中は マイナス8時間)。世界の 時刻の 基準と された グリニッジも ロンドンに あります。",
+  "ei": "London"
+ },
+ {
+  "id": "sk-seoul",
+  "name": "ソウル",
+  "reading": "そうる",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏯",
+  "mapNode": "sekai:asia",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-icn",
+   "sk-annyeong"
+  ],
+  "description": "韓国の 首都です。日本との 時差は ありません。日本から 近く、みじかい 時間で 行ける ので、週末の 旅行に 出かける お客さまも います。",
+  "ei": "Seoul"
+ },
+ {
+  "id": "sk-hawaii",
+  "name": "ハワイ",
+  "reading": "はわい",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏝",
+  "mapNode": "sekai:oceania",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-hnl",
+   "sk-aloha",
+   "sk-hizukehenkosen"
+  ],
+  "description": "太平洋に うかぶ アメリカの 州で、たくさんの 島が あります。日本との 時差は マイナス19時間で、サマータイムは ありません。日本から 行くと 日付変更線を こえます。",
+  "ei": "Hawaii"
+ },
+ {
+  "id": "sk-sydney",
+  "name": "シドニー",
+  "reading": "しどにー",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦘",
+  "mapNode": "sekai:oceania",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-minaminatsu",
+   "sk-summertime"
+  ],
+  "description": "オーストラリアの 大きな 都市で、貝がらの ような 形の オペラハウスが 有名です。日本との 時差は プラス1時間(サマータイム中は プラス2時間)。南半球なので 季節が 日本と 反対です。",
+  "ei": "Sydney"
+ },
+ {
+  "id": "sk-dubai",
+  "name": "ドバイ",
+  "reading": "どばい",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "sekai:africa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-doha",
+   "sk-islam"
+  ],
+  "description": "アラブ首長国連邦の 都市で、世界で いちばん 高い ビルが あります。日本との 時差は マイナス5時間。ヨーロッパや アフリカへ 向かう 乗り継ぎの 町としても 使われます。",
+  "ei": "Dubai"
+ },
+ {
+  "id": "sk-brazil",
+  "name": "ブラジル",
+  "reading": "ぶらじる",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚽",
+  "mapNode": "sekai:samerica",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-obrigado",
+   "sk-saopaulo"
+  ],
+  "description": "南アメリカに ある 大きな 国で、ポルトガル語が 話されて います。日本から 見ると 地球の ほぼ 反対がわに あり、とても 長い 旅に なります。サッカーが さかんな 国 としても 知られて います。",
+  "ei": "Brazil"
+ },
+ {
+  "id": "sk-kukocode",
+  "name": "空港コード",
+  "reading": "くうこうこーど",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-hnd",
+   "sk-threeletter"
+  ],
+  "description": "世界の 空港に つけられた アルファベット 3文字の 名前です。同じ 名前の 町が あっても、コードなら まちがえません。搭乗券や 荷物の タグに 書かれて います。",
+  "settai": "お客さまの 搭乗券の コードで、行き先を すばやく 確かめます。",
+  "ei": "airport code"
+ },
+ {
+  "id": "sk-tip",
+  "name": "チップ",
+  "reading": "ちっぷ",
+  "journey": "sekai",
+  "category": "食と 文化",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💵",
+  "mapNode": "sekai:bunka",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-servicecharge",
+   "sk-newyork"
+  ],
+  "description": "サービスへの お礼として わたす お金です。アメリカなど、レストランで チップを わたす 習慣が ある 国や 地域が あります。日本では ふつう わたしません。",
+  "settai": "到着地の チップの 習慣を 聞かれたら、わかる はんいで ご案内 します。",
+  "ei": "tip"
+ },
+ {
+  "id": "sk-lhr",
+  "name": "LHR(ロンドン・ヒースロー空港)",
+  "reading": "えるえいちあーる",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💂",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-london",
+   "sk-kukocode"
+  ],
+  "description": "ロンドンの ヒースロー空港の コードです。ヨーロッパでも とくに 大きな 空港の 1つで、世界中から 飛行機が 集まります。",
+  "ei": "Heathrow"
+ },
+ {
+  "id": "sk-jfk",
+  "name": "JFK(ニューヨーク・ジョン・F・ケネディ国際空港)",
+  "reading": "じぇーえふけー",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗽",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-newyork",
+   "sk-kukocode"
+  ],
+  "description": "ニューヨークの ジョン・F・ケネディ国際空港の コードです。空港の 名前に なった 人の 名前の 頭文字が、そのまま コードに なって います。"
+ },
+ {
+  "id": "sk-cdg",
+  "name": "CDG(パリ・シャルル・ド・ゴール空港)",
+  "reading": "しーでぃーじー",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥖",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-paris",
+   "sk-kukocode"
+  ],
+  "description": "パリの シャルル・ド・ゴール空港の コードです。こちらも 空港の 名前に なった 人の 頭文字から できて います。パリの 町の 中心から 少し はなれた ところに あります。"
+ },
+ {
+  "id": "sk-sin",
+  "name": "SIN(シンガポール・チャンギ空港)",
+  "reading": "えすあいえぬ",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌴",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-kukocode",
+   "sk-jisa"
+  ],
+  "description": "シンガポールの チャンギ空港の コードです。乗り継ぎで 使う お客さまも 多い 空港です。日本との 時差は マイナス1時間なので、時差ボケが 少ない 行き先です。",
+  "ei": "Changi"
+ },
+ {
+  "id": "sk-lax",
+  "name": "LAX(ロサンゼルス国際空港)",
+  "reading": "えるえーえっくす",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎬",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-kukocode",
+   "sk-jfk"
+  ],
+  "description": "アメリカの ロサンゼルス国際空港の コードです。太平洋を こえて 日本と むすばれる、アメリカの 西がわの 大きな 空港です。"
+ },
+ {
+  "id": "sk-icn",
+  "name": "ICN(ソウル・仁川国際空港)",
+  "reading": "あいしーえぬ",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛬",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-seoul",
+   "sk-kukocode"
+  ],
+  "description": "韓国の ソウルの 近くに ある 仁川国際空港の コードです。海の そばに あり、アジアの 乗り継ぎの 空港としても 使われます。",
+  "ei": "Incheon"
+ },
+ {
+  "id": "sk-hnl",
+  "name": "HNL(ホノルル空港)",
+  "reading": "えいちえぬえる",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌺",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-hawaii",
+   "sk-aloha"
+  ],
+  "description": "ハワイの ホノルルに ある、ダニエル・K・イノウエ国際空港の コードです。日本から ハワイへ 行く お客さまの 多くが ここに 到着します。",
+  "ei": "Honolulu"
+ },
+ {
+  "id": "sk-threeletter",
+  "name": "3レターコード",
+  "reading": "すりーれたーこーど",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔠",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-kukocode",
+   "sk-hnd"
+  ],
+  "description": "空港を あらわす アルファベット 3文字の コードの ことです。空港の 名前や 町の 名前から つけられる ことが 多いですが、昔の 名前から きた ものも あります。",
+  "ei": "three-letter code"
+ },
+ {
+  "id": "sk-cts",
+  "name": "CTS(新千歳空港)",
+  "reading": "しーてぃーえす",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "❄",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-kukocode",
+   "sk-oka"
+  ],
+  "description": "北海道の 新千歳空港の コードです。冬は 雪が 多い 空港で、スキーや 雪まつりを 楽しみに 行く お客さまも います。",
+  "settai": "冬の 便では、到着地が 寒い ことを 前もって お伝え します。"
+ },
+ {
+  "id": "sk-fuk",
+  "name": "FUK(福岡空港)",
+  "reading": "えふゆーけー",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍜",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-kukocode",
+   "sk-oka"
+  ],
+  "description": "福岡空港の コードです。町の 中心に とても 近く、地下鉄で すぐ 行ける 空港として 知られて います。"
+ },
+ {
+  "id": "sk-oka",
+  "name": "OKA(那覇空港)",
+  "reading": "おーけーえー",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-kukocode",
+   "sk-cts"
+  ],
+  "description": "沖縄の 那覇空港の コードです。あたたかい 南の 島への 旅の 入口で、海を 楽しみに 行く お客さまも 多い 空港です。"
+ },
+ {
+  "id": "sk-ngo",
+  "name": "NGO(中部国際空港)",
+  "reading": "えぬじーおー",
+  "journey": "sekai",
+  "category": "空港の コード",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏯",
+  "mapNode": "sekai:code",
+  "field": "空港",
+  "relatedTerms": [
+   "sk-kix",
+   "sk-kukocode"
+  ],
+  "description": "愛知県に ある 中部国際空港の コードです。名古屋の 町の 名前から きて います。海の 上に 作られた 空港です。"
+ },
+ {
+  "id": "sk-obrigado",
+  "name": "オブリガード(ポルトガル語)",
+  "reading": "おぶりがーど",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙏",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-brazil",
+   "sk-gracias"
+  ],
+  "description": "ポルトガル語で「ありがとう」です。ブラジルや ポルトガルで 使われます。言う 人が 男性なら オブリガード、女性なら オブリガーダと 形が かわります。",
+  "settai": "ポルトガル語を 話す お客さまに、お礼の ひとことと して 使えます。",
+  "ei": "Obrigado"
+ },
+ {
+  "id": "sk-xiexie",
+  "name": "シェイシェイ(中国語)",
+  "reading": "しぇいしぇい",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙇",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-nihao",
+   "sk-beijing"
+  ],
+  "description": "中国語で「ありがとう」です。お客さまから 言われたら、笑顔で 返すと 気持ちが 伝わります。",
+  "settai": "飲みものを おわたし した あとの お礼に、笑顔で こたえます。",
+  "ei": "Xie xie",
+  "acceptedReadings": [
+   "しぇいしぇい",
+   "しえしえ"
+  ]
+ },
+ {
+  "id": "sk-kamsahamnida",
+  "name": "カムサハムニダ(韓国語)",
+  "reading": "かむさはむにだ",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙇",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-annyeong",
+   "sk-seoul"
+  ],
+  "description": "韓国語で「ありがとうございます」の ていねいな 言いかたです。日本語の ていねい語と 同じ ように、相手を うやまう 気持ちが こもって います。",
+  "settai": "韓国語を 話す お客さまへの お礼に 使えます。",
+  "ei": "Kamsahamnida"
+ },
+ {
+  "id": "sk-namaste",
+  "name": "ナマステ(ヒンディー語)",
+  "reading": "なますて",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙏",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-hindu",
+   "sk-assalam"
+  ],
+  "description": "インドや ネパールなどで 使われる あいさつです。胸の 前で 両手を 合わせて 言う ことが あります。会った とき にも 別れる とき にも 使えます。",
+  "settai": "お客さまが 手を 合わせて あいさつ されたら、笑顔で こたえます。",
+  "ei": "Namaste"
+ },
+ {
+  "id": "sk-gracias",
+  "name": "グラシアス(スペイン語)",
+  "reading": "ぐらしあす",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💃",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-obrigado",
+   "sk-buenosaires"
+  ],
+  "description": "スペイン語で「ありがとう」です。スペインや、メキシコ・アルゼンチンなど 中南米の 多くの 国で 使われます。",
+  "settai": "スペイン語を 話す お客さまへの お礼に 使えます。",
+  "ei": "Gracias"
+ },
+ {
+  "id": "sk-jst",
+  "name": "日本標準時",
+  "reading": "にほんひょうじゅんじ",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "sekai:jisa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-tokei135",
+   "sk-utc"
+  ],
+  "description": "日本の 時刻の 基準です。兵庫県の 明石市を 通る 東経135度の 線を もとに 決められて います。世界の 基準の 時刻より 9時間 進んで います。",
+  "ei": "Japan Standard Time"
+ },
+ {
+  "id": "sk-gmt",
+  "name": "グリニッジ標準時",
+  "reading": "ぐりにっじひょうじゅんじ",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "sekai:jisa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-london",
+   "sk-utc"
+  ],
+  "description": "ロンドンの グリニッジ天文台を 通る 経度0度の 線を もとに した 時刻です。昔から 世界の 時刻の 基準と されて きました。",
+  "ei": "Greenwich Mean Time"
+ },
+ {
+  "id": "sk-timezone",
+  "name": "タイムゾーン",
+  "reading": "たいむぞーん",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "sekai:jisa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-jisa",
+   "sk-keido"
+  ],
+  "description": "同じ 時刻を 使う 地域の まとまりです。日本は 国の 中が 1つの 時刻ですが、アメリカの ように 大きな 国では、国の 中に いくつもの 時刻が あります。",
+  "ei": "time zone"
+ },
+ {
+  "id": "sk-natsujikan",
+  "name": "夏時間",
+  "reading": "なつじかん",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌞",
+  "mapNode": "sekai:summer",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-summertime",
+   "sk-fuyujikan"
+  ],
+  "description": "サマータイムの 日本語の 呼び名です。夏の あいだ 時計を 1時間 進めます。行き先が 夏時間 かどうかで、時差の 数が かわります。"
+ },
+ {
+  "id": "sk-ramadan",
+  "name": "ラマダン",
+  "reading": "らまだん",
+  "journey": "sekai",
+  "category": "食と 文化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "sekai:bunka",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-danjiki",
+   "sk-islam"
+  ],
+  "description": "イスラム教の こよみで 大切な 月です。日の出から 日の入りまで 食べものや 飲みものを とらない 人が います。毎年 少しずつ 時期が ずれます。",
+  "settai": "食事の 時間に ついて、お客さまの ご希望を ていねいに うかがいます。",
+  "ei": "Ramadan"
+ },
+ {
+  "id": "sk-islam",
+  "name": "イスラム教",
+  "reading": "いすらむきょう",
+  "journey": "sekai",
+  "category": "食と 文化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕌",
+  "mapNode": "sekai:bunka",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-ramadan",
+   "sk-oinori"
+  ],
+  "description": "世界で 多くの 人が 信じて いる 宗教です。豚肉や お酒を 口に しない 決まりを 大事に する 人が います。航空会社に よっては、決まりに 合わせた 特別な 機内食を 前もって 頼めます。",
+  "settai": "食事の 中身を 聞かれたら、材料を 正しく お伝え します。",
+  "ei": "Islam"
+ },
+ {
+  "id": "sk-beijing",
+  "name": "北京",
+  "reading": "ぺきん",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏮",
+  "mapNode": "sekai:asia",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-nihao",
+   "sk-shanghai"
+  ],
+  "description": "中国の 首都で、近くには 万里の長城が あります。北京首都国際空港の コードは PEK です。日本との 時差は マイナス1時間です。",
+  "ei": "Beijing"
+ },
+ {
+  "id": "sk-shanghai",
+  "name": "上海",
+  "reading": "しゃんはい",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌃",
+  "mapNode": "sekai:asia",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-beijing",
+   "sk-xiexie"
+  ],
+  "description": "中国の 東がわの 海に 近い 大きな 都市です。高い ビルが ならぶ 夜景が 有名です。日本から 近く、しごとで 行き来 する お客さまも 多い 町です。",
+  "ei": "Shanghai"
+ },
+ {
+  "id": "sk-utc",
+  "name": "協定世界時(UTC)",
+  "reading": "きょうていせかいじ",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⌚",
+  "mapNode": "sekai:jisa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-gmt",
+   "sk-jst"
+  ],
+  "description": "世界の 時刻を そろえる ための 基準の 時刻です。日本の 時刻は UTCに 9時間 足した もの です。飛行機の 運航でも、国ごとの 時刻の ちがいで まよわない よう UTCが 使われます。",
+  "ei": "Coordinated Universal Time"
+ },
+ {
+  "id": "sk-tokei135",
+  "name": "東経135度",
+  "reading": "とうけいひゃくさんじゅうごど",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "sekai:jisa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-jst",
+   "sk-keido"
+  ],
+  "description": "日本の 標準時の もとに なって いる 経度の 線です。経度0度から 135度 東に あり、15度で 1時間 なので、9時間の ちがいに なります。兵庫県の 明石市を 通ります。"
+ },
+ {
+  "id": "sk-jisakeisan",
+  "name": "時差の計算",
+  "reading": "じさのけいさん",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "sekai:jisa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-jisa",
+   "sk-london"
+  ],
+  "description": "日本の 時刻に 時差を 足したり 引いたり して、現地の 時刻を 出す ことです。たとえば 日本が お昼の 12時なら、時差 マイナス9時間の ロンドンは 朝の 3時です(サマータイムで ない とき)。",
+  "settai": "お客さまに 現地の 時刻を 聞かれても、すぐ こたえられる ように します。"
+ },
+ {
+  "id": "sk-higashimawari",
+  "name": "東まわり",
+  "reading": "ひがしまわり",
+  "journey": "sekai",
+  "category": "日付変更線と 地球",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡",
+  "mapNode": "sekai:henko",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-nishimawari",
+   "sk-hizukehenkosen"
+  ],
+  "description": "東の 方向へ 飛ぶ ことです。上空では 西から 東へ 強い 風が ふく ことが 多く、追い風で 早く 着く ことが あります。東へ 行く 旅は 時差ボケが 出やすい とも いわれます。",
+  "ei": "eastbound"
+ },
+ {
+  "id": "sk-nishimawari",
+  "name": "西まわり",
+  "reading": "にしまわり",
+  "journey": "sekai",
+  "category": "日付変更線と 地球",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅",
+  "mapNode": "sekai:henko",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-higashimawari",
+   "sk-hizukehenkosen"
+  ],
+  "description": "西の 方向へ 飛ぶ ことです。上空の 西から ふく 風が 向かい風に なり、同じ きょりでも 東へ 行く より 時間が かかる ことが あります。",
+  "ei": "westbound"
+ },
+ {
+  "id": "sk-keido",
+  "name": "経度",
+  "reading": "けいど",
+  "journey": "sekai",
+  "category": "日付変更線と 地球",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "sekai:henko",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-tokei135",
+   "sk-timezone"
+  ],
+  "description": "地球の 東西の 位置を あらわす 数です。グリニッジを 0度として、東と 西へ 180度ずつ あります。経度が 15度 ちがうと、時刻が おおよそ 1時間 ちがいます。",
+  "ei": "longitude"
+ },
+ {
+  "id": "sk-hizukemodoru",
+  "name": "日付が1日もどる",
+  "reading": "ひづけがいちにちもどる",
+  "journey": "sekai",
+  "category": "日付変更線と 地球",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔙",
+  "mapNode": "sekai:henko",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-hizukehenkosen",
+   "sk-hawaii"
+  ],
+  "description": "日付変更線を 東へ こえると、カレンダーの 日付が 1日 もどる ことです。日本を 夜に 出て ハワイに 着くと、まだ 出発した 日の 朝、という ことが あります。",
+  "settai": "到着の 日付と 時刻を、ゆっくり はっきり お知らせ します。"
+ },
+ {
+  "id": "sk-minaminatsu",
+  "name": "南半球の夏",
+  "reading": "みなみはんきゅうのなつ",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏖",
+  "mapNode": "sekai:summer",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-sydney",
+   "sk-summertime"
+  ],
+  "description": "赤道より 南の 国では、日本が 冬の とき 夏に なります。オーストラリアでは 夏に クリスマスを むかえます。服装の 準備に かかわるので、到着地の 季節は 大切な 情報です。",
+  "settai": "到着地の 季節や 気温を お伝え すると、お客さまが 上着を 用意できます。"
+ },
+ {
+  "id": "sk-tokeisusumeru",
+  "name": "時計を1時間進める",
+  "reading": "とけいをいちじかんすすめる",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "sekai:summer",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-summertime",
+   "sk-fuyujikan"
+  ],
+  "description": "サマータイムが はじまる 日に、時計を 1時間 先へ 進める ことです。その 日は 1日が 23時間に なります。切りかえの 日は 年に よって かわります。",
+  "ei": "spring forward"
+ },
+ {
+  "id": "sk-fuyujikan",
+  "name": "冬時間",
+  "reading": "ふゆじかん",
+  "journey": "sekai",
+  "category": "時差と 時計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏪",
+  "mapNode": "sekai:summer",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-summertime",
+   "sk-tokeisusumeru"
+  ],
+  "description": "サマータイムが 終わって、時計を 1時間 もどした あとの ふだんの 時刻の ことです。たとえば ロンドンと 日本の 時差は、冬時間では マイナス9時間に もどります。",
+  "ei": "standard time"
+ },
+ {
+  "id": "sk-assalam",
+  "name": "アッサラーム・アライクム(アラビア語)",
+  "reading": "あっさらーむあらいくむ",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕌",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-islam",
+   "sk-doha"
+  ],
+  "description": "アラビア語の あいさつで、「あなたに 平安が ありますように」という 意味です。中東などで 使われます。言われた ほうは「ワ・アライクム・アッサラーム」と 返します。",
+  "settai": "アラビア語を 話す お客さまを お出むかえ する ときに 使えます。",
+  "ei": "Assalamu alaikum"
+ },
+ {
+  "id": "sk-spasibo",
+  "name": "スパシーバ(ロシア語)",
+  "reading": "すぱしーば",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪆",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-xiexie",
+   "sk-obrigado"
+  ],
+  "description": "ロシア語で「ありがとう」です。ロシアの ほか、ロシア語を 話す 人が いる 地域で 使われます。",
+  "settai": "ロシア語を 話す お客さまへの お礼に 使えます。",
+  "ei": "Spasibo"
+ },
+ {
+  "id": "sk-xinchao",
+  "name": "シンチャオ(ベトナム語)",
+  "reading": "しんちゃお",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍲",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-nihao",
+   "sk-terimakasih"
+  ],
+  "description": "ベトナム語で「こんにちは」です。朝・昼・夜の どの 時間でも 使えます。",
+  "settai": "ベトナム語を 話す お客さまの お出むかえに 使えます。",
+  "ei": "Xin chao"
+ },
+ {
+  "id": "sk-terimakasih",
+  "name": "テリマカシ(インドネシア語)",
+  "reading": "てりまかし",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌋",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-xinchao",
+   "sk-obrigado"
+  ],
+  "description": "インドネシア語で「ありがとう」です。マレーシアで 話される マレー語でも、にた ことばが 使われます。",
+  "settai": "インドネシア語を 話す お客さまへの お礼に 使えます。",
+  "ei": "Terima kasih"
+ },
+ {
+  "id": "sk-jambo",
+  "name": "ジャンボ(スワヒリ語)",
+  "reading": "じゃんぼ",
+  "journey": "sekai",
+  "category": "世界の あいさつ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦒",
+  "mapNode": "sekai:aisatsu",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-nairobi",
+   "sk-namaste"
+  ],
+  "description": "スワヒリ語で「こんにちは」です。ケニアや タンザニアなど、アフリカの 東がわで 使われる ことばです。",
+  "settai": "旅に 出る お客さまとの 会話の きっかけに なります。",
+  "ei": "Jambo"
+ },
+ {
+  "id": "sk-danjiki",
+  "name": "断食",
+  "reading": "だんじき",
+  "journey": "sekai",
+  "category": "食と 文化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍽",
+  "mapNode": "sekai:bunka",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-ramadan",
+   "sk-oinori"
+  ],
+  "description": "決められた あいだ、食べものや 飲みものを とらない ことです。ラマダンの 月に 日の出から 日の入りまで 断食を する 人が います。機内でも その 決まりを 大事に する お客さまが います。",
+  "settai": "日が しずんでから 食事が できる よう、時間を ご相談 します。",
+  "ei": "fasting"
+ },
+ {
+  "id": "sk-hindu",
+  "name": "ヒンドゥー教",
+  "reading": "ひんどぅーきょう",
+  "journey": "sekai",
+  "category": "食と 文化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐄",
+  "mapNode": "sekai:bunka",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-namaste",
+   "sk-danjiki"
+  ],
+  "description": "インドや ネパールで 多くの 人が 信じて いる 宗教です。牛を 大切に して 牛肉を 食べない 人や、肉を 食べない 人が います。",
+  "settai": "食事を お出し する とき、中身の 材料を はっきり お伝え します。",
+  "ei": "Hinduism"
+ },
+ {
+  "id": "sk-judaism",
+  "name": "ユダヤ教",
+  "reading": "ゆだやきょう",
+  "journey": "sekai",
+  "category": "食と 文化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕎",
+  "mapNode": "sekai:bunka",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-islam",
+   "sk-danjiki"
+  ],
+  "description": "ユダヤの 人びとに 受けつがれて きた 宗教です。食べものに「コーシャ」と よばれる 決まりを 大事に する 人が います。決まりに 合わせた 機内食を 頼める 航空会社も あります。",
+  "settai": "前もって 頼まれた 特別な 食事を、まちがえず お届け します。",
+  "ei": "Judaism"
+ },
+ {
+  "id": "sk-oinori",
+  "name": "お祈りの時間",
+  "reading": "おいのりのじかん",
+  "journey": "sekai",
+  "category": "食と 文化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧎",
+  "mapNode": "sekai:bunka",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-islam",
+   "sk-ramadan"
+  ],
+  "description": "イスラム教では 1日に 5回 お祈りを する 決まりを 大事に する 人が います。機内で 時間に なった とき、ゆれや シートベルトの サインに 気を つけながら、場所を いっしょに 考えます。",
+  "settai": "お祈りの 場所を 聞かれたら、安全な ところを ご相談 します。",
+  "ei": "prayer time"
+ },
+ {
+  "id": "sk-servicecharge",
+  "name": "サービス料",
+  "reading": "さーびすりょう",
+  "journey": "sekai",
+  "category": "食と 文化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "sekai:bunka",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-tip",
+   "sk-newyork"
+  ],
+  "description": "レストランや ホテルの 料金に、はじめから ふくまれて いる サービスの お金です。サービス料が 入って いる ときは、チップを 足さなくて よい 場合も あります。",
+  "ei": "service charge"
+ },
+ {
+  "id": "sk-buenosaires",
+  "name": "ブエノスアイレス",
+  "reading": "ぶえのすあいれす",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💃",
+  "mapNode": "sekai:samerica",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-gracias",
+   "sk-brazil"
+  ],
+  "description": "南アメリカの アルゼンチンの 首都で、ダンスの タンゴが 生まれた 町として 知られて います。日本から とても 遠く、乗り継ぎを して 行く 長い 旅に なります。",
+  "ei": "Buenos Aires"
+ },
+ {
+  "id": "sk-saopaulo",
+  "name": "サンパウロ",
+  "reading": "さんぱうろ",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "sekai:samerica",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-brazil",
+   "sk-obrigado"
+  ],
+  "description": "ブラジルで いちばん 大きな 都市です。日本から うつり住んだ 人の 子や 孫が 多く くらして いて、日本の 食べものの お店も あります。",
+  "ei": "Sao Paulo"
+ },
+ {
+  "id": "sk-nairobi",
+  "name": "ナイロビ",
+  "reading": "ないろび",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦁",
+  "mapNode": "sekai:africa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-jambo",
+   "sk-johannesburg"
+  ],
+  "description": "アフリカの ケニアの 首都です。町の すぐ 近くに 国立公園が あり、キリンや シマウマなどの 野生の 動物を 見る ことが できます。",
+  "ei": "Nairobi"
+ },
+ {
+  "id": "sk-johannesburg",
+  "name": "ヨハネスブルグ",
+  "reading": "よはねすぶるぐ",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛏",
+  "mapNode": "sekai:africa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-nairobi",
+   "sk-doha"
+  ],
+  "description": "南アフリカで いちばん 大きな 都市です。昔、金が とれた ことで 大きく なった 町です。アフリカの 南へ 向かう 旅の 入口に なります。",
+  "ei": "Johannesburg"
+ },
+ {
+  "id": "sk-doha",
+  "name": "ドーハ",
+  "reading": "どーは",
+  "journey": "sekai",
+  "category": "世界の 都市",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐪",
+  "mapNode": "sekai:africa",
+  "field": "世界の文化",
+  "relatedTerms": [
+   "sk-dubai",
+   "sk-assalam"
+  ],
+  "description": "中東の カタールの 首都で、空港の コードは DOH です。日本と ヨーロッパや アフリカを むすぶ 乗り継ぎの 町として 使われます。",
+  "settai": "乗り継ぎの お客さまには、つぎの 便の 案内を わかりやすく お伝え します。",
+  "ei": "Doha"
+ }
+]

@@ -1,0 +1,736 @@
+[
+ {
+  "id": "ho-ashimoto",
+  "name": "足もとの荷物",
+  "reading": "あしもとのにもつ",
+  "journey": "hoan",
+  "category": "手荷物",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👟",
+  "mapNode": "hoan:tenimotsu",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-tenimotsu",
+   "ho-doafukin",
+   "ho-table"
+  ],
+  "description": "前の 座席の 下に 入れた 荷物です。足もとに はみ出して いると、通る ときの じゃまに なります。離着陸の 前は きちんと 奥まで 入れて もらいます。"
+ },
+ {
+  "id": "ho-table",
+  "name": "テーブルをしまう",
+  "reading": "てーぶるをしまう",
+  "journey": "hoan",
+  "category": "安全の 説明と 点検",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍽️",
+  "mapNode": "hoan:tenken",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-semotare",
+   "ho-ashimoto",
+   "ho-smartphone"
+  ],
+  "description": "離陸と 着陸の ときは、テーブルを 元に もどして とめて もらいます。テーブルが 出て いると、席から 通路へ 出にくく なる ためです。",
+  "settai": "飲みものの カップは 先に お下げして から、お願いします。",
+  "ei": "tray table"
+ },
+ {
+  "id": "ho-buckle",
+  "name": "バックル",
+  "reading": "ばっくる",
+  "journey": "hoan",
+  "category": "シートベルト",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "hoan:belt",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-shimeru",
+   "ho-seatbelt"
+  ],
+  "description": "シートベルトの 金具です。ふたを 上に 持ち上げると はずれます。車の ベルトと はずしかたが ちがうので、安全の 説明で かならず 見せます。",
+  "ei": "buckle"
+ },
+ {
+  "id": "ho-shimeru",
+  "name": "ベルトをしめる",
+  "reading": "べるとをしめる",
+  "journey": "hoan",
+  "category": "シートベルト",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤏",
+  "mapNode": "hoan:belt",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-seatbelt",
+   "ho-buckle",
+   "ho-beltchosei"
+  ],
+  "description": "金具を カチッと はめて、ベルトを しめる ことです。腰の 低い ところで、ゆるみの ない ように しめるのが ポイントです。",
+  "settai": "しめかたが 分からない 方には そっと 近くで お見せします。",
+  "ei": "Fasten your seat belt."
+ },
+ {
+  "id": "ho-mobilebattery",
+  "name": "モバイルバッテリー",
+  "reading": "もばいるばってりー",
+  "journey": "hoan",
+  "category": "電子機器",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "hoan:denshi",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-lithium",
+   "ho-hatsunetsu",
+   "ho-lighter"
+  ],
+  "description": "スマートフォンなどを 充電する 電池です。あずける 荷物には 入れず、機内に 持って 入る 決まりです。持ちかたや 使いかたの 決まりは 会社や 国で ちがうので、案内に したがって もらいます。",
+  "settai": "持ちこみの 決まりを 分かりやすく ご案内します。",
+  "ei": "power bank"
+ },
+ {
+  "id": "ho-kimari",
+  "name": "機内のきまり",
+  "reading": "きないのきまり",
+  "journey": "hoan",
+  "category": "機内の きまり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "hoan:kimari",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-shiji",
+   "ho-kokuho",
+   "ho-kinen"
+  ],
+  "description": "機内には みんなが 安全に すごす ための 決まりが あります。ベルトの サイン・禁煙・電子機器の 使いかた などです。客室乗務員は 決まりの 理由も そえて ていねいに 伝えます。"
+ },
+ {
+  "id": "ho-shiji",
+  "name": "乗務員の指示",
+  "reading": "じょうむいんのしじ",
+  "journey": "hoan",
+  "category": "機内の きまり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "hoan:kimari",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kimari",
+   "ho-kencho",
+   "ho-hoanyoin"
+  ],
+  "description": "安全の ために 乗務員が お願いする ことです。お客さまは 安全の ための 指示に したがう ことが 決まって います。だから 乗務員は 短く はっきり、分かりやすく 伝えます。",
+  "settai": "「ご協力 ありがとう ございます」と お礼を そえます。"
+ },
+ {
+  "id": "ho-lighter",
+  "name": "ライター",
+  "reading": "らいたー",
+  "journey": "hoan",
+  "category": "火と 煙",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "hoan:hi",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-mobilebattery",
+   "ho-kinen",
+   "ho-seigenhin"
+  ],
+  "description": "たばこに 火を つける 道具です。持ちこみや あずけかたに 決まりが あります。機内で 使う ことは できません。",
+  "ei": "lighter"
+ },
+ {
+  "id": "ho-hijoguchibasho",
+  "name": "非常口の場所",
+  "reading": "ひじょうぐちのばしょ",
+  "journey": "hoan",
+  "category": "非常口と 脱出",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "hoan:hijoguchi",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-hijoguchi",
+   "ho-kazoeru",
+   "ho-shiori"
+  ],
+  "description": "自分の 席から いちばん 近い 非常口が どこか、知って おく ことです。うしろの ほうに ある ことも あります。安全の 説明では 手で 方向を しめして 場所を 伝えます。"
+ },
+ {
+  "id": "ho-maskhiku",
+  "name": "マスクを引く",
+  "reading": "ますくをひく",
+  "journey": "hoan",
+  "category": "救命胴衣と 酸素",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👇",
+  "mapNode": "hoan:sanso",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-sansomask",
+   "ho-kuchihana",
+   "ho-fukuramanai"
+  ],
+  "description": "出て きた 酸素マスクを 手前に 引くと、酸素が 流れはじめます。引いて から 口と 鼻に あてて、ゴムひもを 頭に かけます。"
+ },
+ {
+  "id": "ho-himo",
+  "name": "ひもを引く",
+  "reading": "ひもをひく",
+  "journey": "hoan",
+  "category": "救命胴衣と 酸素",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪢",
+  "mapNode": "hoan:kyumei",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kyumeidoi",
+   "ho-sotodefukurama",
+   "ho-bochoshiki"
+  ],
+  "description": "救命胴衣を ふくらませる ための ひもです。引くと 中の ガスで 一気に ふくらみます。足りない ときは 口で ふく 管から 空気を 足せます。"
+ },
+ {
+  "id": "ho-sotodefukurama",
+  "name": "外に出てからふくらませる",
+  "reading": "そとにでてからふくらませる",
+  "journey": "hoan",
+  "category": "救命胴衣と 酸素",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "hoan:kyumei",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kyumeidoi",
+   "ho-himo",
+   "ho-motazu"
+  ],
+  "description": "救命胴衣は、飛行機の 外に 出てから ふくらませます。中で ふくらませると、出口を 通りにくく なる ためです。安全の 説明で かならず 伝える 大切な ポイントです。"
+ },
+ {
+  "id": "ho-bochoshiki",
+  "name": "膨張式",
+  "reading": "ぼうちょうしき",
+  "journey": "hoan",
+  "category": "救命胴衣と 酸素",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "hoan:kyumei",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-himo",
+   "ho-kyumeidoi"
+  ],
+  "description": "ふだんは うすく たたまれて いて、使う ときに ガスや 空気で ふくらむ しくみです。救命胴衣や 脱出スライドに 使われて います。小さく しまえるので、座席の 下にも 入ります。",
+  "ei": "inflatable"
+ },
+ {
+  "id": "ho-kuchihana",
+  "name": "口と鼻をおおう",
+  "reading": "くちとはなをおおう",
+  "journey": "hoan",
+  "category": "救命胴衣と 酸素",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "hoan:sanso",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-sansomask",
+   "ho-maskhiku"
+  ],
+  "description": "酸素マスクは、口と 鼻を いっしょに おおう ように つけます。ゴムひもを 頭に かけて、ふつうに 息を します。"
+ },
+ {
+  "id": "ho-slideraft",
+  "name": "スライドラフト",
+  "reading": "すらいどらふと",
+  "journey": "hoan",
+  "category": "非常口と 脱出",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚣",
+  "mapNode": "hoan:slide",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-slide",
+   "ho-ikada"
+  ],
+  "description": "脱出スライドが、水の 上では いかだの かわりに なる しくみです。ドアから はずして 水に うかべる ことが できます。どの 飛行機に あるかは 機体で ちがいます。",
+  "ei": "slide raft"
+ },
+ {
+  "id": "ho-highheel",
+  "name": "ハイヒールをぬぐ",
+  "reading": "はいひーるをぬぐ",
+  "journey": "hoan",
+  "category": "非常口と 脱出",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👠",
+  "mapNode": "hoan:slide",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-slide",
+   "ho-motazu",
+   "ho-kinkyu"
+  ],
+  "description": "脱出スライドで すべる 前に、かかとの 高い くつは ぬいで もらいます。スライドを 傷つけず、すべり おりた あとも 安全に 動ける ように する ためです。"
+ },
+ {
+  "id": "ho-motazu",
+  "name": "手荷物を持たずに",
+  "reading": "てにもつをもたずに",
+  "journey": "hoan",
+  "category": "非常口と 脱出",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "hoan:slide",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-slide",
+   "ho-sotodefukurama",
+   "ho-highheel"
+  ],
+  "description": "外へ 出る ときは、荷物を 持たずに 出て もらいます。荷物を 持つと 通路が つまり、みんなが 早く 出られなく なる ためです。荷物より 早く 外へ、が 大切です。"
+ },
+ {
+  "id": "ho-exitjoken",
+  "name": "非常口座席の条件",
+  "reading": "ひじょうぐちざせきのじょうけん",
+  "journey": "hoan",
+  "category": "非常口と 脱出",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "hoan:hijoguchi",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-exitrow",
+   "ho-exitsetsumei",
+   "ho-enjosha"
+  ],
+  "description": "非常口座席に すわる 人の 条件です。ドアを 開ける 手伝いが できる こと、乗務員の 説明が 分かる こと などが あります。合わない ときは、ほかの 席に かわって もらいます。",
+  "settai": "席の 変更は 理由を そえて ていねいに お願いします。"
+ },
+ {
+  "id": "ho-cabincheck",
+  "name": "キャビンチェック",
+  "reading": "きゃびんちぇっく",
+  "journey": "hoan",
+  "category": "安全の 説明と 点検",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "hoan:tenken",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-anzentenken",
+   "ho-shuno",
+   "ho-preflight"
+  ],
+  "description": "客室の ようすを 見て まわり、安全を 確かめる ことです。ベルト・荷物・背もたれ・テーブルなどを 一つずつ 見ます。離着陸の 前に かならず 行います。",
+  "ei": "cabin check"
+ },
+ {
+  "id": "ho-lavcheck",
+  "name": "化粧室の点検",
+  "reading": "けしょうしつのてんけん",
+  "journey": "hoan",
+  "category": "安全の 説明と 点検",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚻",
+  "mapNode": "hoan:tenken",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kemurikanchi",
+   "ho-lavkitsuen",
+   "ho-cabincheck"
+  ],
+  "description": "化粧室に 人が いないか、物が 残って いないか、煙感知器が 正しく 動くか などを 確かめる ことです。離着陸の 前や 飛んで いる 間にも 見ます。"
+ },
+ {
+  "id": "ho-fushinbutsu",
+  "name": "不審物の確認",
+  "reading": "ふしんぶつのかくにん",
+  "journey": "hoan",
+  "category": "安全の 説明と 点検",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕵️",
+  "mapNode": "hoan:tenken",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-anzentenken",
+   "ho-cabincheck",
+   "ho-preflight"
+  ],
+  "description": "持ち主の 分からない 物が 機内に ないかを 確かめる ことです。お客さまが 乗る 前に、座席の まわりや 棚を 見て まわります。見つけたら 決まりに そって 報告します。"
+ },
+ {
+  "id": "ho-laptop",
+  "name": "ノートパソコン",
+  "reading": "のーとぱそこん",
+  "journey": "hoan",
+  "category": "電子機器",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "hoan:denshi",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-denshiseigen",
+   "ho-table",
+   "ho-smartphone"
+  ],
+  "description": "ノートパソコンは、離着陸の ときに しまって もらう ことが 多いです。ひざの 上に あると、外へ 出る ときの じゃまに なる ためです。",
+  "ei": "laptop"
+ },
+ {
+  "id": "ho-shokatejun",
+  "name": "消火の手順",
+  "reading": "しょうかのてじゅん",
+  "journey": "hoan",
+  "category": "火と 煙",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍🚒",
+  "mapNode": "hoan:hi",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-halon",
+   "ho-pbe",
+   "ho-himoto"
+  ],
+  "description": "火や 煙に 気づいた ときに 動く 順番の 決まりです。消す 人・知らせる 人などの 役わりを 分けて チームで 動き、機長にも すぐ 伝えます。訓練で 何度も 練習します。"
+ },
+ {
+  "id": "ho-nomisugi",
+  "name": "飲みすぎに注意",
+  "reading": "のみすぎにちゅうい",
+  "journey": "hoan",
+  "category": "機内の きまり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥂",
+  "mapNode": "hoan:kimari",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kimari",
+   "ho-shiji"
+  ],
+  "description": "機内で お酒を 飲みすぎない ように 気を くばる ことです。客室乗務員は お客さまの ようすを 見ながら、お水を すすめたり、提供を ひかえたり します。",
+  "settai": "「お水も いかがですか」と さりげなく おすすめします。"
+ },
+ {
+  "id": "ho-lavchushi",
+  "name": "化粧室の使用中止",
+  "reading": "けしょうしつのしようちゅうし",
+  "journey": "hoan",
+  "category": "ゆれる とき",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hoan:yure",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-yure",
+   "ho-chakuseki",
+   "ho-seatbelt"
+  ],
+  "description": "ゆれる ときや ベルトの サインが ついて いる ときは、化粧室の 使用を ひかえて もらう ことが あります。ゆれが おさまったら、また 使えます。",
+  "settai": "「ゆれが おさまり しだい ご案内します」と 伝えます。"
+ },
+ {
+  "id": "ho-demomask",
+  "name": "デモ用の酸素マスク",
+  "reading": "でもようのさんそますく",
+  "journey": "hoan",
+  "category": "救命胴衣と 酸素",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎭",
+  "mapNode": "hoan:sanso",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-demo",
+   "ho-sansomask",
+   "ho-maskhiku"
+  ],
+  "description": "安全の 説明で 乗務員が 見せる ための 酸素マスクです。マスクを 引いて 口と 鼻を おおう 動きを ゆっくり 見せます。"
+ },
+ {
+  "id": "ho-demodoi",
+  "name": "デモ用の救命胴衣",
+  "reading": "でもようのきゅうめいどうい",
+  "journey": "hoan",
+  "category": "安全の 説明と 点検",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "hoan:demo",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-demo",
+   "ho-kyumeidoi",
+   "ho-himo"
+  ],
+  "description": "安全の 説明で 乗務員が 見せる ための 救命胴衣です。頭から かぶって ベルトを しめる 動きを、どの 席からも 見える ように 大きく 見せます。"
+ },
+ {
+  "id": "ho-beltchosei",
+  "name": "ベルトの調整",
+  "reading": "べるとのちょうせい",
+  "journey": "hoan",
+  "category": "シートベルト",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "hoan:belt",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-shimeru",
+   "ho-beltkakunin",
+   "ho-enchobelt"
+  ],
+  "description": "ベルトの 長さを 体に 合わせる ことです。はしを 引くと しまり、金具を かたむけると ゆるみます。腰の 低い ところで ぴったり しめるのが ポイントです。"
+ },
+ {
+  "id": "ho-hotdrink",
+  "name": "ホットドリンクの中止",
+  "reading": "ほっとどりんくのちゅうし",
+  "journey": "hoan",
+  "category": "ゆれる とき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☕",
+  "mapNode": "hoan:yure",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-chudan",
+   "ho-yure",
+   "ho-kotei"
+  ],
+  "description": "ゆれそうな ときは、熱い 飲みものの サービスを 先に 止めます。こぼれて やけどを しない ように する ためです。ゆれが おさまったら、また お出しします。",
+  "settai": "「おさまり しだい お持ちします」と お約束します。",
+  "ei": "hot drink"
+ },
+ {
+  "id": "ho-denpa",
+  "name": "電波を出す機器",
+  "reading": "でんぱをだすきき",
+  "journey": "hoan",
+  "category": "電子機器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "hoan:denshi",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kinaimode",
+   "ho-ped",
+   "ho-denshiseigen"
+  ],
+  "description": "電波を 出して 通信する 機器の ことです。機内では 電波を 止める 設定を お願いする ことが あります。機内の Wi-Fi が 使える 飛行機も あります。"
+ },
+ {
+  "id": "ho-zasekishita",
+  "name": "救命胴衣は座席の下",
+  "reading": "きゅうめいどういはざせきのした",
+  "journey": "hoan",
+  "category": "救命胴衣と 酸素",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "hoan:kyumei",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kyumeidoi",
+   "ho-shiori",
+   "ho-demodoi"
+  ],
+  "description": "多くの 飛行機では、救命胴衣は 座席の 下に あります。ひじかけの 中などに ある 飛行機も あるので、安全の しおりで 確かめて もらいます。"
+ },
+ {
+  "id": "ho-crewdoi",
+  "name": "乗務員用の救命胴衣",
+  "reading": "じょうむいんようのきゅうめいどうい",
+  "journey": "hoan",
+  "category": "救命胴衣と 酸素",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "hoan:kyumei",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kyumeidoi",
+   "ho-demodoi"
+  ],
+  "description": "客室乗務員が 使う 救命胴衣です。お客さま用と 色を かえて、乗務員だと 見分けやすく して いる ことが あります。"
+ },
+ {
+  "id": "ho-denshitabako",
+  "name": "電子たばこ",
+  "reading": "でんしたばこ",
+  "journey": "hoan",
+  "category": "機内の きまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚭",
+  "mapNode": "hoan:kimari",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kinen",
+   "ho-lithium",
+   "ho-lavkitsuen"
+  ],
+  "description": "電気の 力で 使う たばこです。機内で 使う ことは できません。電池が 入って いるので、持ちこみや あずけかたにも 決まりが あります。",
+  "ei": "e-cigarette"
+ },
+ {
+  "id": "ho-jidoslide",
+  "name": "自動でふくらむスライド",
+  "reading": "じどうでふくらむすらいど",
+  "journey": "hoan",
+  "category": "非常口と 脱出",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "hoan:slide",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-slide",
+   "ho-sotokakunin",
+   "ho-bochoshiki"
+  ],
+  "description": "ドアを 決まった 状態に して おくと、開けた ときに スライドが 自動で ふくらむ しくみです。出発の 前に 乗務員が ドアを この 状態に して、たがいに 確かめ合います。"
+ },
+ {
+  "id": "ho-sotokakunin",
+  "name": "外の確認",
+  "reading": "そとのかくにん",
+  "journey": "hoan",
+  "category": "非常口と 脱出",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "hoan:hijoguchi",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-dasshutsuguchi",
+   "ho-jidoslide",
+   "ho-hijoguchi"
+  ],
+  "description": "ドアを 開ける 前に、窓から 外の ようすを 見る ことです。その ドアから 安全に 出られるかを 確かめて から 開けます。"
+ },
+ {
+  "id": "ho-shugo",
+  "name": "集合場所",
+  "reading": "しゅうごうばしょ",
+  "journey": "hoan",
+  "category": "非常口と 脱出",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "hoan:slide",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kinkyu",
+   "ho-megaphone",
+   "ho-ikada"
+  ],
+  "description": "外へ 出た あと、飛行機から はなれて みんなが 集まる 場所です。乗務員は みんなが そろって いるかを 確かめます。"
+ },
+ {
+  "id": "ho-hijoto",
+  "name": "非常灯",
+  "reading": "ひじょうとう",
+  "journey": "hoan",
+  "category": "安全の 説明と 点検",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "hoan:demo",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-floorpath",
+   "ho-yudoto",
+   "ho-kaichu"
+  ],
+  "description": "ふだんの 明かりが 消えた ときに、自動で つく 明かりです。客室や 出口の まわりを 照らして、みんなが 動きやすい ように します。",
+  "ei": "emergency lighting"
+ },
+ {
+  "id": "ho-fukuramanai",
+  "name": "ふくらまない袋",
+  "reading": "ふくらまないふくろ",
+  "journey": "hoan",
+  "category": "救命胴衣と 酸素",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "hoan:sanso",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-sansomask",
+   "ho-sansohassei",
+   "ho-maskhiku"
+  ],
+  "description": "酸素マスクに ついた 袋は、ふくらまない ことが あります。袋が ふくらまなくても、酸素は ちゃんと 流れて います。安心して ふつうに 息を して もらいます。"
+ },
+ {
+  "id": "ho-doafukin",
+  "name": "ドア付近の荷物",
+  "reading": "どあふきんのにもつ",
+  "journey": "hoan",
+  "category": "手荷物",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "hoan:tenimotsu",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-ashimoto",
+   "ho-hijoguchi",
+   "ho-tenimotsu"
+  ],
+  "description": "ドアの 近くには 荷物を 置かない 決まりです。ドアの まわりが あいて いれば、いざと いう ときに すぐ 開けて 外へ 出られます。"
+ },
+ {
+  "id": "ho-lavkitsuen",
+  "name": "化粧室での喫煙禁止",
+  "reading": "けしょうしつでのきつえんきんし",
+  "journey": "hoan",
+  "category": "機内の きまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚭",
+  "mapNode": "hoan:kimari",
+  "field": "保安",
+  "relatedTerms": [
+   "ho-kinen",
+   "ho-kemurikanchi",
+   "ho-lavcheck"
+  ],
+  "description": "化粧室でも たばこは すえない 決まりです。法律でも 禁止されて います。煙感知器が ついて いて、小さな 煙にも すぐ 気づけます。"
+ }
+]

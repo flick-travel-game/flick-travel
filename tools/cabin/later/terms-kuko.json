@@ -1,0 +1,725 @@
+[
+ {
+  "id": "ku-kanseito",
+  "name": "管制塔",
+  "reading": "かんせいとう",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "kuko:staff",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-kanseikan",
+   "ku-kassoro"
+  ],
+  "description": "空港を 高い ところから 見わたす 塔です。中で 航空管制官が 飛行機に 離陸や 着陸の 許可を 出します。客室乗務員は 機長からの 合図で 離陸の 準備が 整った ことを 知ります。",
+  "ei": "control tower"
+ },
+ {
+  "id": "ku-unko",
+  "name": "運航情報",
+  "reading": "うんこうじょうほう",
+  "journey": "kuko",
+  "category": "おくれと 乗り継ぎ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "kuko:okure",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-chien",
+   "ku-kekko"
+  ],
+  "description": "便が 予定どおりか、おくれや 欠航が ないかを 知らせる 情報です。空港の 画面や インターネットで 見られます。お客さまに 聞かれた とき、すぐ 答えられる ように 確かめて おきます。",
+  "settai": "最新の 運航情報を 確かめてから お答えします。",
+  "ei": "flight information"
+ },
+ {
+  "id": "ku-uketori",
+  "name": "手荷物受取所",
+  "reading": "てにもつうけとりしょ",
+  "journey": "kuko",
+  "category": "荷物",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛅",
+  "mapNode": "kuko:nimotsu",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-turntable",
+   "ku-lost"
+  ],
+  "description": "着いた 空港で 預けた 荷物を 受けとる 場所です。便名ごとに 受けとる 場所が 分かれて います。着陸の あとの 案内で、お客さまに 場所を お伝えする ことも あります。",
+  "ei": "baggage claim"
+ },
+ {
+  "id": "ku-turntable",
+  "name": "ターンテーブル",
+  "reading": "たーんてーぶる",
+  "journey": "kuko",
+  "category": "荷物",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kuko:nimotsu",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-uketori",
+   "ku-tag"
+  ],
+  "description": "預けた 荷物が 流れて くる、ぐるぐる 回る 台です。似た かばんも あるので、手荷物タグの 番号を 見て 自分の ものか 確かめると 安心です。",
+  "ei": "carousel"
+ },
+ {
+  "id": "ku-kiosk",
+  "name": "自動チェックイン機",
+  "reading": "じどうちぇっくいんき",
+  "journey": "kuko",
+  "category": "出発の 手続き",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🖥",
+  "mapNode": "kuko:checkin",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-checkin",
+   "ku-online"
+  ],
+  "description": "画面に そって 自分で チェックインが できる 機械です。搭乗券や 荷物の タグが 出てきます。使いかたに 迷う お客さまには、地上の 係の 人が そばで 手伝います。",
+  "ei": "kiosk"
+ },
+ {
+  "id": "ku-menzeiten",
+  "name": "免税店",
+  "reading": "めんぜいてん",
+  "journey": "kuko",
+  "category": "出入国",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛍",
+  "mapNode": "kuko:shukkoku",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-shukkoku",
+   "ku-gate"
+  ],
+  "description": "出国の 手続きの あとに ある、税金が かからない 値段で 買い物が できる お店です。お酒や 化粧品などが あります。機内でも 免税品の 販売を する ことが あります。",
+  "ei": "duty-free shop"
+ },
+ {
+  "id": "ku-tojokaishi",
+  "name": "搭乗開始",
+  "reading": "とうじょうかいし",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "kuko:tojo",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-tojo",
+   "ku-yusen"
+  ],
+  "description": "搭乗口で お客さまが 飛行機に 乗りはじめる ことです。そのころ 客室乗務員は 機内の 準備を 終えて、ドアの そばで お出むかえの 用意を して います。",
+  "ei": "boarding begins"
+ },
+ {
+  "id": "ku-yusen",
+  "name": "優先搭乗",
+  "reading": "ゆうせんとうじょう",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⭐",
+  "mapNode": "kuko:tojo",
+  "field": "接遇",
+  "relatedTerms": [
+   "ku-junban",
+   "ku-tojo"
+  ],
+  "description": "ほかの お客さまより 先に 乗れる しくみです。小さな 子ども連れの かたや 手助けが 要る かたが 先に 乗ると、あわてずに 座席に つけます。",
+  "settai": "手助けが 要る かたの 荷物を 先に 棚へ お入れします。",
+  "ei": "priority boarding"
+ },
+ {
+  "id": "ku-bridge",
+  "name": "ボーディングブリッジ",
+  "reading": "ぼーでぃんぐぶりっじ",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌉",
+  "mapNode": "kuko:gate",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-gate",
+   "ku-spot"
+  ],
+  "description": "ターミナルと 飛行機の ドアを つなぐ、屋根の ある 通路です。雨の 日も ぬれずに 乗れます。客室乗務員は この 通路の 先の ドアで お客さまを お出むかえします。",
+  "ei": "boarding bridge"
+ },
+ {
+  "id": "ku-bus",
+  "name": "バスで飛行機へ",
+  "reading": "ばすでひこうきへ",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "kuko:gate",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-busgate",
+   "ku-gate"
+  ],
+  "description": "建物から はなれた 場所に とまる 飛行機へ、バスで 向かう 乗りかたです。タラップと いう 階段を 上って 乗ります。足もとに 気を つける ように 声を かけます。",
+  "settai": "階段では「足もとに お気を つけください」と 声を かけます。",
+  "ei": "bus to the aircraft"
+ },
+ {
+  "id": "ku-spot",
+  "name": "スポット(駐機場)",
+  "reading": "すぽっと",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "kuko:hub",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-apron",
+   "ku-bridge"
+  ],
+  "description": "空港で 飛行機を とめる、1機ずつ 決まった 場所です。番号が ついて います。ここで お客さまの 乗りおりや 荷物の つみおろし、機内の 準備が 行われます。",
+  "ei": "spot"
+ },
+ {
+  "id": "ku-apron",
+  "name": "エプロン",
+  "reading": "えぷろん",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛬",
+  "mapNode": "kuko:hub",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-spot",
+   "ku-marshaller"
+  ],
+  "description": "飛行機を とめて、乗りおりや 荷物の つみおろし、給油を する 広い 場所です。いくつもの スポットが ならび、たくさんの 車と 人が 働いて います。",
+  "ei": "apron"
+ },
+ {
+  "id": "ku-busgate",
+  "name": "バスゲート",
+  "reading": "ばすげーと",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚏",
+  "mapNode": "kuko:gate",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-bus",
+   "ku-okidome"
+  ],
+  "description": "バスに 乗って 飛行機へ 向かう ための 搭乗口です。建物から はなれた 場所に とまる 飛行機の ときに 使います。バスの 中では 立って 乗る ことも あります。",
+  "ei": "bus gate"
+ },
+ {
+  "id": "ku-gatechange",
+  "name": "ゲート変更",
+  "reading": "げーとへんこう",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kuko:gate",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-gate",
+   "ku-gateannounce"
+  ],
+  "description": "乗る 予定の 搭乗口が 別の 番号に かわる ことです。空港の 画面や 放送で 知らせます。お客さまが 迷わない ように 地上の 係の 人も 声を かけて まわります。",
+  "ei": "gate change"
+ },
+ {
+  "id": "ku-lounge",
+  "name": "ラウンジ",
+  "reading": "らうんじ",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛋",
+  "mapNode": "kuko:gate",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-gate",
+   "ku-yusen"
+  ],
+  "description": "出発までの 時間を ゆっくり すごせる 部屋です。上の クラスの お客さまなどが 使えます。飲みものや 軽い 食事が 用意されて いる ところも あります。",
+  "ei": "lounge"
+ },
+ {
+  "id": "ku-handling",
+  "name": "グランドハンドリング",
+  "reading": "ぐらんどはんどりんぐ",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚛",
+  "mapNode": "kuko:staff",
+  "field": "しごと",
+  "relatedTerms": [
+   "ku-kyuyu",
+   "ku-towing"
+  ],
+  "description": "空港で 飛行機が 出発できる ように、荷物の つみおろしや 誘導などを する 地上の しごとです。客室乗務員と 同じく、定刻に 安全に 飛ぶ ために 欠かせません。",
+  "ei": "ground handling"
+ },
+ {
+  "id": "ku-seibishi",
+  "name": "整備士",
+  "reading": "せいびし",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "kuko:staff",
+  "field": "しごと",
+  "relatedTerms": [
+   "ku-handling",
+   "ku-kyuyu"
+  ],
+  "description": "飛行機の 機体や エンジンを 点検して、安全に 飛べる ように 整える 人です。機内の 設備に 気に なる ところが あれば、客室乗務員から 整備士に 伝えます。",
+  "ei": "aircraft mechanic"
+ },
+ {
+  "id": "ku-kanseikan",
+  "name": "航空管制官",
+  "reading": "こうくうかんせいかん",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎧",
+  "mapNode": "kuko:staff",
+  "field": "しごと",
+  "relatedTerms": [
+   "ku-kanseito",
+   "ku-dispatcher"
+  ],
+  "description": "無線で パイロットに 指示を 出して、飛行機どうしが 安全な 間かくを とれる ように する 人です。日本では 国の 職員が この しごとを して います。",
+  "ei": "air traffic controller"
+ },
+ {
+  "id": "ku-dispatcher",
+  "name": "ディスパッチャー(運航管理者)",
+  "reading": "でぃすぱっちゃー",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "kuko:staff",
+  "field": "しごと",
+  "relatedTerms": [
+   "ku-kanseikan",
+   "ku-seibishi"
+  ],
+  "description": "天気や 燃料などを 調べて 飛行の 計画を 作り、機長と いっしょに 出発を 決める 人です。地上から 飛んでいる 便を 見守ります。運航管理者とも 言います。",
+  "ei": "dispatcher"
+ },
+ {
+  "id": "ku-dobutsu",
+  "name": "動物検疫",
+  "reading": "どうぶつけんえき",
+  "journey": "kuko",
+  "category": "税関と 検疫",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐄",
+  "mapNode": "kuko:zeikan",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-ken-eki",
+   "ku-tanchiken"
+  ],
+  "description": "外国から 動物の 病気が 入らない ように、肉の 加工品や ペットなどを 確かめる 検疫です。お土産の 肉製品などには 持ちこめない ものも あります。",
+  "ei": "animal quarantine"
+ },
+ {
+  "id": "ku-zeikankensa",
+  "name": "税関検査",
+  "reading": "ぜいかんけんさ",
+  "journey": "kuko",
+  "category": "税関と 検疫",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "kuko:zeikan",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-zeikan",
+   "ku-shinkoku"
+  ],
+  "description": "税関の 係の 人が 荷物を 開けたり 質問したり して、持ちこむ 物を 確かめる ことです。聞かれた ことに 正直に 答えれば すぐに 終わります。",
+  "ei": "customs inspection"
+ },
+ {
+  "id": "ku-stamp-in",
+  "name": "入国スタンプ",
+  "reading": "にゅうこくすたんぷ",
+  "journey": "kuko",
+  "category": "出入国",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📕",
+  "mapNode": "kuko:nyukoku",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-nyukoku",
+   "ku-joriku"
+  ],
+  "description": "入国の 手続きが すんだ しるしに パスポートに 押す はんこです。国に よって 形や 色が ちがいます。スタンプの かわりに シールを はる 国も あります。",
+  "ei": "entry stamp"
+ },
+ {
+  "id": "ku-nokori",
+  "name": "パスポートの残りの期間",
+  "reading": "ぱすぽーとののこりのきかん",
+  "journey": "kuko",
+  "category": "出入国",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "kuko:shukkoku",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-nyukoku",
+   "ku-yuko"
+  ],
+  "description": "パスポートの 有効期限まで あと どれくらい あるか と いう ことです。国に よっては 入国の とき、残りの 期間が 決められた 長さ 以上 ある ことが ひつようです。",
+  "ei": "passport validity"
+ },
+ {
+  "id": "ku-finalcall",
+  "name": "ファイナルコール",
+  "reading": "ふぁいなるこーる",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "kuko:tojo",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-shimekiri",
+   "ku-gate"
+  ],
+  "description": "まだ 乗って いない お客さまへの、出発 直前の 最後の 呼びだしです。名前を 呼ぶ ことも あります。そのあいだも 機内では 出発の 準備が 進みます。",
+  "ei": "final call"
+ },
+ {
+  "id": "ku-counter",
+  "name": "カウンター",
+  "reading": "かうんたー",
+  "journey": "kuko",
+  "category": "出発の 手続き",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "kuko:checkin",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-checkin",
+   "ku-ground"
+  ],
+  "description": "空港で チェックインや 荷物を 預ける 手続きを する 受付の 台です。地上の 係の 人が 対応します。席の クラスごとに 分かれて いる ことも あります。",
+  "ei": "counter"
+ },
+ {
+  "id": "ku-waiting",
+  "name": "ウェイティング(キャンセル待ち)",
+  "reading": "うぇいてぃんぐ",
+  "journey": "kuko",
+  "category": "出発の 手続き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙏",
+  "mapNode": "kuko:checkin",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-overbooking",
+   "ku-noshow"
+  ],
+  "description": "満席の 便で、空いた 席が 出るのを 待つ ことです。キャンセル待ちとも 言います。乗れるかは 出発の 直前まで 分からない ことが あります。",
+  "ei": "standby"
+ },
+ {
+  "id": "ku-denshi",
+  "name": "電子申告",
+  "reading": "でんししんこく",
+  "journey": "kuko",
+  "category": "税関と 検疫",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📲",
+  "mapNode": "kuko:zeikan",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-shinkokusho",
+   "ku-zeikan"
+  ],
+  "description": "税関に 出す 申告を、紙では なく スマートフォンなどで 前もって する ことです。専用の ゲートを 通れる 空港も あり、手続きが 早く すみます。",
+  "ei": "electronic declaration"
+ },
+ {
+  "id": "ku-group",
+  "name": "グループ搭乗",
+  "reading": "ぐるーぷとうじょう",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "kuko:tojo",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-junban",
+   "ku-yusen"
+  ],
+  "description": "座席の 場所などで お客さまを いくつかの グループに 分けて、順に 乗って もらう しくみです。搭乗券に グループの 番号が 書かれて いる ことが あります。",
+  "ei": "group boarding"
+ },
+ {
+  "id": "ku-24h",
+  "name": "24時間空港",
+  "reading": "にじゅうよじかんくうこう",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌃",
+  "mapNode": "kuko:hub",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-curfew",
+   "ku-slot"
+  ],
+  "description": "夜中も 飛行機の 離陸や 着陸が できる 空港です。日本では 羽田や 関西国際空港などが そうです。夜の 便を 運べるので、海外への 便も 多く なります。",
+  "ei": "24-hour airport"
+ },
+ {
+  "id": "ku-kyuyu",
+  "name": "給油",
+  "reading": "きゅうゆ",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛽",
+  "mapNode": "kuko:staff",
+  "field": "しごと",
+  "relatedTerms": [
+   "ku-handling",
+   "ku-dispatcher"
+  ],
+  "description": "飛行機に 燃料を 入れる ことです。給油車などで 入れます。給油中は 安全の ために 決まりが あり、お客さまが 乗って いる ときも 客室乗務員が 気を くばります。",
+  "ei": "refueling"
+ },
+ {
+  "id": "ku-gateannounce",
+  "name": "ゲートアナウンス",
+  "reading": "げーとあなうんす",
+  "journey": "kuko",
+  "category": "搭乗",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔊",
+  "mapNode": "kuko:gate",
+  "field": "英語",
+  "relatedTerms": [
+   "ku-gatechange",
+   "ku-finalcall"
+  ],
+  "description": "搭乗口で 流れる 放送です。搭乗の 開始や 順番、ゲートの 変更などを 知らせます。日本語と 英語など いくつかの 言葉で 伝える ことが あります。",
+  "ei": "gate announcement"
+ },
+ {
+  "id": "ku-chienshomei",
+  "name": "遅延証明",
+  "reading": "ちえんしょうめい",
+  "journey": "kuko",
+  "category": "おくれと 乗り継ぎ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "kuko:okure",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-chien",
+   "ku-unko"
+  ],
+  "description": "便が おくれた ことを 示す 書類です。会社や 学校に 出す ときに 使えます。インターネットで 出せる ように して いる 航空会社も あります。",
+  "ei": "delay certificate"
+ },
+ {
+  "id": "ku-kokusai",
+  "name": "国際線の乗り継ぎ",
+  "reading": "こくさいせんののりつぎ",
+  "journey": "kuko",
+  "category": "おくれと 乗り継ぎ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "kuko:noritsugi",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-transit",
+   "ku-mct"
+  ],
+  "description": "国際線から 国際線、または 国内線へ 乗りかえる ことです。乗りかえの 空港で 保安検査や 入国審査を 受ける ことが あります。時間に 余ゆうを もつと 安心です。",
+  "ei": "international connection"
+ },
+ {
+  "id": "ku-shukkokuzei",
+  "name": "出国税",
+  "reading": "しゅっこくぜい",
+  "journey": "kuko",
+  "category": "出入国",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "kuko:shukkoku",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-shukkoku",
+   "ku-esta"
+  ],
+  "description": "日本を 出国する とき かかる 税で、国際観光旅客税と 言います。ふつうは 航空券の 代金に ふくめて 払います。観光の ための しくみ作りに 使われます。",
+  "ei": "departure tax"
+ },
+ {
+  "id": "ku-bio",
+  "name": "バイオメトリクス",
+  "reading": "ばいおめとりくす",
+  "journey": "kuko",
+  "category": "出入国",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧬",
+  "mapNode": "kuko:nyukoku",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-kao",
+   "ku-shimon"
+  ],
+  "description": "指紋や 顔などの 体の 特ちょうで、本人か 確かめる しくみです。出入国の 手続きで 使われます。早く 正しく 確かめられるので、手続きの 待ち時間が 短く なります。",
+  "ei": "biometrics"
+ },
+ {
+  "id": "ku-tray",
+  "name": "保安検査のトレー",
+  "reading": "ほあんけんさのとれー",
+  "journey": "kuko",
+  "category": "保安検査",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗃",
+  "mapNode": "kuko:hoan",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-xray",
+   "ku-ekitai"
+  ],
+  "description": "保安検査で、上着や かばん、パソコン、液体の 袋などを のせて 検査の 機械に 通す 入れものです。終わったら 忘れものが ないか 確かめて 受けとります。",
+  "ei": "tray"
+ },
+ {
+  "id": "ku-tanchiken",
+  "name": "検疫探知犬",
+  "reading": "けんえきたんちけん",
+  "journey": "kuko",
+  "category": "税関と 検疫",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "kuko:zeikan",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-dobutsu",
+   "ku-ken-eki"
+  ],
+  "description": "荷物の 中の 肉や くだものなどを、においで 見つける ように 訓練された 犬です。空港の 荷物の 受けとり場などで 働いて います。",
+  "ei": "detector dog"
+ },
+ {
+  "id": "ku-fragile",
+  "name": "こわれもの",
+  "reading": "こわれもの",
+  "journey": "kuko",
+  "category": "荷物",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍶",
+  "mapNode": "kuko:nimotsu",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-azuke",
+   "ku-tag"
+  ],
+  "description": "こわれやすい 荷物の ことです。預ける ときに 伝えると、こわれもの の しるしを つけて もらえる ことが あります。大切な 物は 機内に 持ちこむ ほうが 安心です。",
+  "ei": "fragile"
+ },
+ {
+  "id": "ku-checkinshime",
+  "name": "チェックインの締切",
+  "reading": "ちぇっくいんのしめきり",
+  "journey": "kuko",
+  "category": "出発の 手続き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕐",
+  "mapNode": "kuko:checkin",
+  "field": "空港",
+  "relatedTerms": [
+   "ku-checkin",
+   "ku-shimekiri"
+  ],
+  "description": "チェックインの 受付を 終える 時刻です。便や 空港で 決まって います。すぎると 乗れない ことが あるので、早めに 空港に 着く ように 案内されます。",
+  "ei": "check-in deadline"
+ },
+ {
+  "id": "ku-rampcontrol",
+  "name": "ランプコントロール",
+  "reading": "らんぷこんとろーる",
+  "journey": "kuko",
+  "category": "空港の しくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "kuko:staff",
+  "field": "しごと",
+  "relatedTerms": [
+   "ku-spot",
+   "ku-kanseikan"
+  ],
+  "description": "エプロンの 上を 動く 飛行機や 車の 流れを 見守り、とまる 場所の 調整などを する しごとです。管制塔と 連絡を とって、地上の 動きを なめらかに します。",
+  "ei": "ramp control"
+ }
+]

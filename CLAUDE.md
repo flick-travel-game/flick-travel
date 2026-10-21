@@ -1444,7 +1444,8 @@
   1回目は 札 36こ中 18こが ゲームに 無い 読み(おーばーへっどろっかー・あんぜんでん・きぶんぶりょう・わごん・まどりーど …)・4択の 正解が まちがい(飲みものを わたす ときに「こちらへ どうぞ」)・選択肢に「しつれいします」(BAN の 字)・レベルの 名前が ちがう、で 入れなかった。
   2回目は 札 36こ・4択(かしこまりました)・レベル ぜんぶ ゲームの 読み。のこった「じゃんぶしーと」の ぶ だけ **絵の 中で ぷ に 直した**(`tools/cabin/fix_text.py`)。もとの 絵は 入れものに 入れていない。
   ⚠️ 人物は 頼んだ「子ども2人と 犬を 下に 小さく」では なく、まん中に 大きな 制服の 女の人(手は ほおに そえる 形・指の くずれ なし・会社の ロゴ なし)。けいくんの 絵の まま 入れた
-- **アイコン・題名の 絵は まだ**(仮の アイコン `tools/cabin/placeholder_icon.py` = 飛行機の 窓。logo=False)。題名は 字(長いので ホームでは「フリックキャビンアテンダ…」と 切れる。絵の 題名が 届けば 直る)。
+- **アイコンは 入れた**(2026-10-21。けいくんの 四角い 絵 1254px を 切らずに そのまま `tools/cabin/art/square-src.png` → `python3 tools/icon_from_square.py cabin`。`iconv` = 2)。札の ことばは トップの 絵と 同じ。「じゃんぶしーと」の ぶ は アイコンの 大きさでは 読めないので そのまま。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+- **題名の 絵は まだ**(logo=False)。題名は 字(長いので ホームでは「フリックキャビンアテンダ…」と 切れる。絵の 題名が 届けば 直る)。
   届いたら `tools/cabin/art/square-src.png` → `python3 tools/icon_from_square.py cabin`(iconv を +1)/ `title-src.png` → `python3 tools/title_from_art.py cabin`(logo を True・art.word を 実寸に)/ `cabin/hero.webp`(hero を True)。
   ⚠️ ChatGPT は「キャビンアテンダン」「キャピン」と まちがえやすい。**届いた 字を かならず 切り出して 読む**。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs cabin/`(全126ステージ。旅 9×7 + マスター 63)/ `node tools/click-all.mjs cabin/`(W=320 も)。計算問題は `CALC` を 3000回ずつ 回す

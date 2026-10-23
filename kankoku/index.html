@@ -119,6 +119,10 @@ body.playing{overflow:hidden}
 .field .answer::selection{background:transparent}
 .typed{position:absolute;left:14px;right:14px;top:50%;transform:translateY(-50%);font-size:18px;
   white-space:nowrap;overflow:hidden;pointer-events:none;color:var(--ink)}
+/* まちがえたら 出る「⌫ けす」(けいくん 2026-10-23「選択出来なくてなにも反応しない」。入力欄の 字・カーソルは 見えないので、長おしで えらぶ ことが できない) */
+.fix{position:absolute;right:6px;top:50%;transform:translateY(-50%);font:inherit;font-size:15px;font-weight:700;
+  padding:6px 12px;border-radius:8px;border:0;background:var(--red);color:#fff;cursor:pointer}
+.field.err .typed{right:96px}
 .typed:empty::before{content:"ここに打つ(青い線が次の文字)";color:var(--muted)}
 .count{position:absolute;inset:0;border-radius:12px;background:var(--card);display:grid;place-items:center;font-size:72px;color:var(--red);z-index:2}
 
@@ -515,6 +519,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done"
       aria-label="ここに入力">
     <span class="typed" id="typed"></span>
+    <button type="button" class="fix hidden" id="fix" aria-label="まちがえた字を けす">⌫ けす</button>
     </div>
   </section>
 
@@ -1780,7 +1785,7 @@ function resetBase(){
   // 変換中で なければ 前の 問題の 字を 入力欄から 消す(長く なりすぎると 入力を 止めてしまう キーボードが あるため。
   // 変換中に 消すと キーボードと ずれるので、そのときは 消さずに 位置だけ 覚える)
   if(!composing && ans.value){ ans.value = ""; }
-  baseRaw = ans.value.length; lastLen = 0; $("#typed").textContent = "";
+  baseRaw = ans.value.length; lastLen = 0; $("#typed").textContent = ""; showFix(false);
 }
 ans.addEventListener("compositionstart", () => { composing = true; });
 ans.addEventListener("compositionend", () => {
@@ -1842,7 +1847,7 @@ function next(){
   times.push((performance.now()-qStart)/1000);
   if(PLUG && PLUG.owns(mode)) PLUG.answered(qs[idx], times[times.length-1], qMiss);
   if(!ownTts()){ const q = qs[idx]; jaSay(q && (typeof q.r === "string" && q.r ? q.r : q.n)); }  // 🔊 答えた あとに ふりがなで 読む
-  qMiss = 0; lastErr = false;
+  qMiss = 0; lastErr = false; showFix(false);
   idx++;
   resetBase();
   if(idx >= qs.length){ finish(); return; }
@@ -1861,9 +1866,26 @@ ans.addEventListener("input", () => {
   const r = judge(v);
   renderTarget(r.n, r.err);
   ans.classList.toggle("bad", r.err);
+  showFix(r.err);
   if(r.err && !lastErr) qMiss++;
   lastErr = r.err;
   if(r.done) next();
+});
+
+/* ⌫ けす … まちがえた ところから うしろを 消して、正しい ところまで もどす。
+   ボタンを おすと 入力欄から はなれて 変換が 確定するので、ここで 字を 書きかえても キーボードと ずれない。
+   消したら すぐ 入力欄に もどす(おした 指の うごきの 中なので iPhone でも キーボードが 出たまま) */
+function showFix(on){ $("#fix").classList.toggle("hidden", !on); ans.parentNode.classList.toggle("err", !!on); }
+$("#fix").addEventListener("click", () => {
+  if(!running || locked) return;
+  const raw = ans.value.slice(Math.min(baseRaw, ans.value.length));
+  const ok = k => { const v = PLUG && PLUG.norm && PLUG.owns(mode) ? PLUG.norm(raw.slice(0, k)) : norm(raw.slice(0, k)); return !judge(v).err; };
+  let k = raw.length;
+  while(k > 0 && !ok(k)) k--;
+  composing = false;
+  ans.value = raw.slice(0, k); baseRaw = 0;
+  ans.focus();
+  ans.dispatchEvent(new Event("input"));
 });
 
 function finish(){

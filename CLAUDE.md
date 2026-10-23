@@ -1519,7 +1519,8 @@
 - 歴史の 人は きほんに 6人だけ(フーディーニ・デレン・ブラウン・ジェームズ・ランディ・ザ・マジック・サークル・ダニンジャー・クレスキン)。生まれた 年は 書かない。いま 活動している 日本の 人は 出さない
 - 相談先は 消費者ホットライン 188(番号まで)・24時間子供SOSダイヤル(名前だけ)
 - **トップの 絵は 入れた**(2026-10-23。`mentalist/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。1回目は 札の ことば 16こが ゲームに 無い・6こが ちがう 旅の 箱・9番の 箱が 心理の ことば で 入れなかった。2回目は 札 36こ ぜんぶ ゲームの その 旅に ある 読み。のこりの 小さい 字の くずれを **絵の 中で 直した**(`tools/mentalist/fix_text.py`。字だけ cv2.inpaint で 消して Noto Sans CJK JP Bold で 書きなおす): まん中の ことわり書き 2行(「…つかった げいです。/ ほんとうに こころを よむ わけでは ありません。」)/ 本の 2行 / ことばの いみの 説明と やってみよう(「やってもいい? と きいてから」入り)/ レベル3 / とらんぶ → とらんぷ。札の 絵が ことばと 合わない もの(さいころ = 電卓 など)は 小さいので そのまま。もとの 絵は 入れものに 入れていない
-- アイコン・題名は まだ(仮の アイコン `tools/mentalist/placeholder_icon.py` = 夜空と シルクハットと トランプと ?マーク。`logo=False`)。届いたら `tools/mentalist/art/square-src.png` → `python3 tools/icon_from_square.py mentalist`(iconv を +1)/ `title-src.png` → `python3 tools/title_from_art.py mentalist`(logo を True・art.word を 実寸)/ `mentalist/hero.webp`(hero を True)。
+- **アイコンも 入れた**(2026-10-23。けいくんの 四角い 絵 1254px を 切らずに そのまま `python3 tools/icon_from_square.py mentalist`。`iconv` = 2)。四角い 絵の 小さい 字の まちがい(とらんぶ・1089の 演目の 見本が「18+81=99」で おわる)は アイコンの 大きさでは 読めないので そのまま
+- 題名は まだ(仮の アイコン `tools/mentalist/placeholder_icon.py` = 夜空と シルクハットと トランプと ?マーク。`logo=False`)。届いたら `tools/mentalist/art/square-src.png` → `python3 tools/icon_from_square.py mentalist`(iconv を +1)/ `title-src.png` → `python3 tools/title_from_art.py mentalist`(logo を True・art.word を 実寸)/ `mentalist/hero.webp`(hero を True)。
   ⚠️ 絵を 頼む ときは こわい 絵・目が 光る・催眠の うずまき・実在の 人を 描かせない。人物は 下 3分の1に 小さく。「メンタリスド」「メンタリト」に なりやすいので 届いた 字を かならず 読む。販売ページ `HOME_GAMES` と 規約の 一覧は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs mentalist/`(全198ステージ。旅 9×11 + マスター 99)/ `node tools/click-all.mjs mentalist/`(W=320 も)/ 計算問題は `CALC` を 3000回ずつ
 

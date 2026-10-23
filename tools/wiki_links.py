@@ -25,6 +25,11 @@ CACHE = ROOT / "tools" / "wiki-titles.json"  # 名前 → 題名(無ければ nu
 DATA = {"ai": "aiTerms"}  # ゲームの フォルダ → data/ の ファイル名(ちがう ものだけ)
 SKIP = {"eikaiwa", "kankoku", "supein", "kabu", "uchu", "karada", "rika", "rekishi"}  # ことばの 旅では ない / もう リンクが ある
 NO_WIKI = {}  # "ゲーム:ことばid" → 理由(合わない 記事。見つけたら 足す)
+NO_WIKI.update({"mentalist:ki-tane": "植物の 種子の 記事", "mentalist:ki-fushigi": "数の 単位の 記事", "mentalist:sr-kijunten": "測量の 記事", "mentalist:sr-priming": "記憶 全体の 記事",
+                "mentalist:ka-suiri": "推理小説の 記事", "mentalist:kk-mnemonic": "プログラムの 記事", "mentalist:bu-showmanship": "プロレスの 記事", "mentalist:bu-patter": "ゴルフの 記事",
+                "mentalist:js-akakuro": "小説の 記事", "mentalist:sr-gentei": "べつの 意味の 記事", "mentalist:ki-routine": "べつの 意味の 記事", "mentalist:js-renshu": "学習 全体の 記事",
+                "mentalist:kt-oumu": "医療の ことばの 記事", "mentalist:kt-hiyu": "べつの ことばの 記事", "mentalist:ki-effect": "べつの 意味の 記事", "mentalist:ki-effecten": "音響の 記事",
+                "mentalist:kk-katamari": "べつの 意味の 記事", "mentalist:kk-kirokukai": "陸上競技の 記事"})
 NO_WIKI.update({"supercar:ki-premiere": "演劇の 初演の 記事", "supercar:ki-lhd": "輸入車の 記事", "supercar:it-cavallino": "歌の 記事", "supercar:it-bizzarrini": "メーカーの 一覧", "supercar:gb-cx75": "ガスタービンの 記事",
                 "supercar:hy-hypersport": "ゲームの 記事", "supercar:hy-gte": "電話の 会社の 記事", "supercar:dn-ghia": "歯車の 記事", "supercar:ki-maker": "製造業 全体の 記事", "supercar:gi-dihedral": "ガルウィング(べつの ドア)",
                 "supercar:ki-weight": "乾燥重量(べつの はかりかた)", "supercar:gi-pullrod": "べつの 足まわりの 記事"})

@@ -549,8 +549,8 @@ GAMES = {
     #   ⚠️⚠️ 超能力とは 書かない・人を あやつる 向きに しない・しぐさで うそが 分かる とは 書かない・道具の しかけと よその 演目の たねは 書かない(決まりは tools/mentalist/PROMPT.md)。
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/mentalist/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
     #   届いたら tools/mentalist/art/square-src.png → tools/icon_from_square.py mentalist(iconv を +1)/ title-src.png → tools/title_from_art.py mentalist(logo を True・art.word を 実寸に)/ mentalist/hero.webp(hero を True)
-    "mentalist": dict(name="フリックメンタリスト", modes="MENTALIST", kinds=set(), color="#7048e8", hero=True, logo=False,
-                      art=dict(word=(900, 200), hero=(1536, 1024), alt="フリックメンタリスト", iconv=2, wordv=2),
+    "mentalist": dict(name="フリックメンタリスト", modes="MENTALIST", kinds=set(), color="#7048e8", hero=True, logo=True,
+                      art=dict(word=(900, 191), hero=(1536, 1024), alt="フリックメンタリスト", iconv=2, wordv=3),
                       lead="メンタリズムの きほん・こころの しくみ・観察と 読みとり・記憶の 技・ことばの 力・数の ふしぎ・舞台と 演じかた・演目と 実践・こころの 決まりの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と「🎯 やってみよう」(きょう できる 練習)が 出て、🧠 しくみ・🎩 ぶたい で 心理と 舞台での 使いかたも わかるよ。🎩 演目(1089の 予言・カレンダーの 9つの 数・記憶の 宮殿 など 10本)は 手順を 1つずつ めくって 練習でき、📅 きょうの 練習で 6つの 力を 毎日 きたえられるよ。4択クイズと 計算問題(数の ふしぎ)も あるよ。メンタリズムは 心理学と 観察を つかった パフォーマンスで、超能力では ありません。",
                       how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。メンタリズムは 心理学と 観察を つかった パフォーマンスです。本当に こころが 読める わけでは ありません。友だちや 家族に ためす ときは「やってもいい?」と 聞いてから、いやなら やめようね。道具の しかけや、よその 人の 演目の たねは のせていないよ。",
                       rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、観察・記憶・心理・ことば・数・舞台の 6つの 力が つながって 見えてくるよ。実在の メンタリスト・マジックの 団体とは 関係ありません。"),

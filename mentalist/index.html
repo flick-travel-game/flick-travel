@@ -437,11 +437,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリックメンタリスト</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="191" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックメンタリスト</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリックメンタリスト" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリックメンタリスト" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -574,7 +574,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"mentalist", name:"フリックメンタリスト", modes:(typeof MENTALIST === "object" ? MENTALIST.modes : []), assets:"../", logo:false, hero:true, dir:"mentalist/", lead:"メンタリズムの きほん・こころの しくみ・観察と 読みとり・記憶の 技・ことばの 力・数の ふしぎ・舞台と 演じかた・演目と 実践・こころの 決まりの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と「🎯 やってみよう」(きょう できる 練習)が 出て、🧠 しくみ・🎩 ぶたい で 心理と 舞台での 使いかたも わかるよ。🎩 演目(1089の 予言・カレンダーの 9つの 数・記憶の 宮殿 など 10本)は 手順を 1つずつ めくって 練習でき、📅 きょうの 練習で 6つの 力を 毎日 きたえられるよ。4択クイズと 計算問題(数の ふしぎ)も あるよ。メンタリズムは 心理学と 観察を つかった パフォーマンスで、超能力では ありません。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。メンタリズムは 心理学と 観察を つかった パフォーマンスです。本当に こころが 読める わけでは ありません。友だちや 家族に ためす ときは「やってもいい?」と 聞いてから、いやなら やめようね。道具の しかけや、よその 人の 演目の たねは のせていないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、観察・記憶・心理・ことば・数・舞台の 6つの 力が つながって 見えてくるよ。実在の メンタリスト・マジックの 団体とは 関係ありません。" };
+const GAME = { id:"mentalist", name:"フリックメンタリスト", modes:(typeof MENTALIST === "object" ? MENTALIST.modes : []), assets:"../", logo:true, hero:true, dir:"mentalist/", lead:"メンタリズムの きほん・こころの しくみ・観察と 読みとり・記憶の 技・ことばの 力・数の ふしぎ・舞台と 演じかた・演目と 実践・こころの 決まりの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と「🎯 やってみよう」(きょう できる 練習)が 出て、🧠 しくみ・🎩 ぶたい で 心理と 舞台での 使いかたも わかるよ。🎩 演目(1089の 予言・カレンダーの 9つの 数・記憶の 宮殿 など 10本)は 手順を 1つずつ めくって 練習でき、📅 きょうの 練習で 6つの 力を 毎日 きたえられるよ。4択クイズと 計算問題(数の ふしぎ)も あるよ。メンタリズムは 心理学と 観察を つかった パフォーマンスで、超能力では ありません。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。メンタリズムは 心理学と 観察を つかった パフォーマンスです。本当に こころが 読める わけでは ありません。友だちや 家族に ためす ときは「やってもいい?」と 聞いてから、いやなら やめようね。道具の しかけや、よその 人の 演目の たねは のせていないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、観察・記憶・心理・ことば・数・舞台の 6つの 力が つながって 見えてくるよ。実在の メンタリスト・マジックの 団体とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

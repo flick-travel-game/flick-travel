@@ -41818,5 +41818,357 @@ const PHOTOS = {
   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "page": "https://commons.wikimedia.org/wiki/File:Motorcar_Museum_of_Japan_20231103_01.jpg",
   "file": "File:Motorcar Museum of Japan 20231103 01.jpg"
+ },
+ "inu.ks-poodle": {
+  "src": "photo-inu.ks-poodle.jpg",
+  "author": "Sagaciousphil",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Poodle,_cropped.JPG",
+  "file": "File:Poodle, cropped.JPG"
+ },
+ "inu.ks-chihuahua": {
+  "src": "photo-inu.ks-chihuahua.jpg",
+  "author": "Tatiana Borisova",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chihuahuasmoothcoat.jpg",
+  "file": "File:Chihuahuasmoothcoat.jpg"
+ },
+ "inu.ks-shiba": {
+  "src": "photo-inu.ks-shiba.jpg",
+  "author": "Roberto Vasarri",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Shiba_inu_taiki.jpg",
+  "file": "File:Shiba inu taiki.jpg"
+ },
+ "inu.ks-minidachs": {
+  "src": "photo-inu.ks-minidachs.jpg",
+  "author": "Ellen Levy Finch (Elf)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:MiniDachshund1_wb.jpg",
+  "file": "File:MiniDachshund1 wb.jpg"
+ },
+ "inu.ks-pomeranian": {
+  "src": "photo-inu.ks-pomeranian.jpg",
+  "author": "Ksmtbwnc",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pomeranian-tb.png",
+  "file": "File:Pomeranian-tb.png"
+ },
+ "inu.ks-minischnauzer": {
+  "src": "photo-inu.ks-minischnauzer.jpg",
+  "author": "Zorik07",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B2%D0%B5%D1%80%D0%B3%D1%88%D0%BD%D0%B0%D1%83%D1%86%D0%B5%D1%80_%D0%BE%D0%BA%D1%80%D0%B0%D1%81_%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9_%D1%81_%D1%81%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D0%BE%D0%BC.JPG",
+  "file": "File:Цвергшнауцер окрас черный с серебром.JPG"
+ },
+ "inu.ks-frenchbull": {
+  "src": "photo-inu.ks-frenchbull.jpg",
+  "author": "Sou Kinoshita",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:French_bulldog_Sou_Kinoshita_001.jpg",
+  "file": "File:French bulldog Sou Kinoshita 001.jpg"
+ },
+ "inu.ks-yorkie": {
+  "src": "photo-inu.ks-yorkie.jpg",
+  "author": "Svenska Mässan from Sweden",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:(2_version)_Grupp_3,_YORKSHIRETERRIER,_NO_UCH_SE_UCH_Oxzar_Amazing_Bel%E2%80%99s_Toffy_(24310212305).jpg",
+  "file": "File:(2 version) Grupp 3, YORKSHIRETERRIER, NO UCH SE UCH Oxzar Amazing Bel’s Toffy (24310212305).jpg"
+ },
+ "inu.ks-maltese": {
+  "src": "photo-inu.ks-maltese.jpg",
+  "author": "Sannse",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Maltese_600.jpg",
+  "file": "File:Maltese 600.jpg"
+ },
+ "inu.ks-shihtzu": {
+  "src": "photo-inu.ks-shihtzu.jpg",
+  "author": "Melanie Dullinger - White Magic Kennels <info@whitemagickenn…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Shih-Tzu.JPG",
+  "file": "File:Shih-Tzu.JPG"
+ },
+ "inu.ks-golden": {
+  "src": "photo-inu.ks-golden.jpg",
+  "author": "Dirk Vorderstraße",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Carlos_(10581910556).jpg",
+  "file": "File:Golden Retriever Carlos (10581910556).jpg"
+ },
+ "inu.ks-labrador": {
+  "src": "photo-inu.ks-labrador.jpg",
+  "author": "derivative work: Djmirko (talk)wereweweewewewg.jpg",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:YellowLabradorLooking_new.jpg",
+  "file": "File:YellowLabradorLooking new.jpg"
+ },
+ "inu.ks-corgi": {
+  "src": "photo-inu.ks-corgi.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cardigan_Welsh_Corgi_600.jpg",
+  "file": "File:Cardigan Welsh Corgi 600.jpg"
+ },
+ "inu.ks-akita": {
+  "src": "photo-inu.ks-akita.jpg",
+  "author": "B@rt",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Akita_inu.jpeg",
+  "file": "File:Akita inu.jpeg"
+ },
+ "inu.ks-pug": {
+  "src": "photo-inu.ks-pug.jpg",
+  "author": "Abuk SABUK",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fawn_pug_2.5year-old.JPG",
+  "file": "File:Fawn pug 2.5year-old.JPG"
+ },
+ "inu.ks-beagle": {
+  "src": "photo-inu.ks-beagle.jpg",
+  "author": "Satou-m94ik",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%93%E3%83%BC%E3%82%B0%E3%83%AB%E7%8A%AC.jpg",
+  "file": "File:ビーグル犬.jpg"
+ },
+ "inu.ks-bordercollie": {
+  "src": "photo-inu.ks-bordercollie.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Border_Collie_600.jpg",
+  "file": "File:Border Collie 600.jpg"
+ },
+ "inu.ks-jackrussell": {
+  "src": "photo-inu.ks-jackrussell.jpg",
+  "author": "Ume31",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:JRTBILLY.jpg",
+  "file": "File:JRTBILLY.jpg"
+ },
+ "inu.ks-cavalier": {
+  "src": "photo-inu.ks-cavalier.jpg",
+  "author": "Andreweatock",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CarterBIS.Tiki.13.6.09.jpg",
+  "file": "File:CarterBIS.Tiki.13.6.09.jpg"
+ },
+ "inu.ks-husky": {
+  "src": "photo-inu.ks-husky.jpg",
+  "author": "Utopialand",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Siberian-husky.jpg",
+  "file": "File:Siberian-husky.jpg"
+ },
+ "inu.ks-dalmatian": {
+  "src": "photo-inu.ks-dalmatian.jpg",
+  "author": "Heinz Höfling",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Dalmatiner_3.jpg",
+  "file": "File:Dalmatiner 3.jpg"
+ },
+ "inu.ks-shepherd": {
+  "src": "photo-inu.ks-shepherd.jpg",
+  "author": "gomagoti",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:German_Shepherd_-_DSC_0346_(10096362833).jpg",
+  "file": "File:German Shepherd - DSC 0346 (10096362833).jpg"
+ },
+ "inu.ks-stbernard": {
+  "src": "photo-inu.ks-stbernard.jpg",
+  "author": "Svenska Mässan from Sweden, isolated by Pitke",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Grupp_2_SANK_BERNHARDSHUND,_KORTH%C3%85RIG,_St_Zamba%E2%80%99s_Downtown_Diamond_(isolated).png",
+  "file": "File:Grupp 2 SANK BERNHARDSHUND, KORTHÅRIG, St Zamba’s Downtown Diamond (isolated).png"
+ },
+ "inu.ks-pekingese": {
+  "src": "photo-inu.ks-pekingese.jpg",
+  "author": "SheltieBoy",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:1AKC_Pekingese_Dog_Show_2011.jpg",
+  "file": "File:1AKC Pekingese Dog Show 2011.jpg"
+ },
+ "inu.ks-kai": {
+  "src": "photo-inu.ks-kai.jpg",
+  "author": "Kei87c1",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kai-front.jpg",
+  "file": "File:Kai-front.jpg"
+ },
+ "inu.ks-kishu": {
+  "src": "photo-inu.ks-kishu.jpg",
+  "author": "Sabine, user of DogWiki",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kishu.jpg",
+  "file": "File:Kishu.jpg"
+ },
+ "inu.ks-shikoku": {
+  "src": "photo-inu.ks-shikoku.jpg",
+  "author": "Bigsteeve (en.wikipedia)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Shikoku_dog.jpg",
+  "file": "File:Shikoku dog.jpg"
+ },
+ "inu.ks-hokkaido": {
+  "src": "photo-inu.ks-hokkaido.jpg",
+  "author": "しでん at Japanese Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hokkaidou_inu.jpg",
+  "file": "File:Hokkaidou inu.jpg"
+ },
+ "inu.ks-sheltie": {
+  "src": "photo-inu.ks-sheltie.jpg",
+  "author": "Flickr user nickobec (Nick Cowie)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shetland_Sheepdog_sable.jpg",
+  "file": "File:Shetland Sheepdog sable.jpg"
+ },
+ "inu.ks-boston": {
+  "src": "photo-inu.ks-boston.jpg",
+  "author": "Ad0626",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%83%9C%E3%82%B9%E3%83%88%E3%83%B3%E3%83%86%E3%83%AA%E3%82%A2.jpg",
+  "file": "File:ボストンテリア.jpg"
+ },
+ "inu.ks-whippet": {
+  "src": "photo-inu.ks-whippet.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:WhippetWhiteSaddled_wb.jpg",
+  "file": "File:WhippetWhiteSaddled wb.jpg"
+ },
+ "inu.ks-borzoi": {
+  "src": "photo-inu.ks-borzoi.jpg",
+  "author": "Pleple2000",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chart_rosyjski_borzoj_rybnik-kamien_pl.jpg",
+  "file": "File:Chart rosyjski borzoj rybnik-kamien pl.jpg"
+ },
+ "inu.ks-bullterrier": {
+  "src": "photo-inu.ks-bullterrier.jpg",
+  "author": "Томасина",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bull_Terrier_2.JPG",
+  "file": "File:Bull Terrier 2.JPG"
+ },
+ "inu.ks-pyrenees": {
+  "src": "photo-inu.ks-pyrenees.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pyrenean_Mountain_Dog_600.jpg",
+  "file": "File:Pyrenean Mountain Dog 600.jpg"
+ },
+ "inu.ks-dobermann": {
+  "src": "photo-inu.ks-dobermann.jpg",
+  "author": "Ilicivan at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:European_Dobermann.jpg",
+  "file": "File:European Dobermann.jpg"
+ },
+ "inu.ks-minpin": {
+  "src": "photo-inu.ks-minpin.jpg",
+  "author": "Sebastian Wallin. Sebastian Wallin. Sebwal",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Miniature_pinscher.jpg",
+  "file": "File:Miniature pinscher.jpg"
+ },
+ "inu.ks-samoyed": {
+  "src": "photo-inu.ks-samoyed.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Samoyed_600.jpg",
+  "file": "File:Samoyed 600.jpg"
+ },
+ "inu.ks-basset": {
+  "src": "photo-inu.ks-basset.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Basset_Hound_600.jpg",
+  "file": "File:Basset Hound 600.jpg"
+ },
+ "inu.ks-weimaraner": {
+  "src": "photo-inu.ks-weimaraner.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Weimaraner_wb.jpg",
+  "file": "File:Weimaraner wb.jpg"
+ },
+ "inu.ks-basenji": {
+  "src": "photo-inu.ks-basenji.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Basenji_600.jpg",
+  "file": "File:Basenji 600.jpg"
+ },
+ "inu.ks-chowchow": {
+  "src": "photo-inu.ks-chowchow.jpg",
+  "author": "Remigiusz Józefowicz",
+  "license": "CC BY-SA 2.5 PL",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/pl/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:ChowChow2Szczecin.jpg",
+  "file": "File:ChowChow2Szczecin.jpg"
+ },
+ "inu.ks-spaniel": {
+  "src": "photo-inu.ks-spaniel.jpg",
+  "author": "Angus Farquhar",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Three_Cocker_Spaniels.jpg",
+  "file": "File:Three Cocker Spaniels.jpg"
+ },
+ "inu.ks-chin": {
+  "src": "photo-inu.ks-chin.jpg",
+  "author": "Alandennis",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sachi.jpg",
+  "file": "File:Sachi.jpg"
+ },
+ "inu.ks-saluki": {
+  "src": "photo-inu.ks-saluki.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Saluki_600.jpg",
+  "file": "File:Saluki 600.jpg"
  }
 };

@@ -419,7 +419,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 .prof-sub{margin:2px 0 0;text-align:center;font-size:12px;font-weight:700;color:#94a3b8}
 .pg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px 6px;margin-top:10px}
 .pg-grid a{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#334155;font-size:10px;font-weight:900;line-height:13px;text-align:center;min-width:0}
-.pg-grid a[aria-current]{opacity:.5}
+.pg-ch{margin-top:14px}.pg-ch-ttl{display:flex;align-items:center;gap:8px;margin:0;font-size:11px;font-weight:900;color:#64748b}.pg-ch-ttl i{flex:1;height:1px;background:#e2e8f0}
 .pg-grid .tile{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;background:#f1f5f9;box-shadow:0 1px 2px rgba(0,0,0,.08)}
 .pg-grid .tile img{width:100%;height:100%;object-fit:cover;border-radius:14px;display:block}
 .prof-link .pill{display:inline-block;margin-top:8px;padding:10px 18px;border-radius:999px;background:#1e293b;color:#fff;font-size:13px;font-weight:900;text-decoration:none;line-height:20px}  /* 指で 押せる 大きさ(2026-09-30 けいくん「ボタン押せないよ」) */
@@ -623,16 +623,26 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
                  {id:"hanaya", name:"フリック花屋", icon:"💐", dir:"hanaya/"},
                  {id:"kigyo", name:"フリック起業家", icon:"🚀", dir:"kigyo/"} ];
 /* 🧭 ゲームを えらぶ の タイル(マイページの 中 と ページの いちばん下 の 2か所で 使う。けいくん 2026-09-30「これと同じ表記にしてください」)。
-   ⚠️ ならびは **かずともの マイページ(speed-king の `HOME_GAMES`)と 同じ 順**(2026-10-11 けいくん「並び順を もっと良く考えて」で 章ごとに 並べなおした。あちらを 変えたら ここも)。ゲームを 足したら ここにも 足す(無い ものは うしろに つく)。
-   ⚠️ 絵は 各ゲームの `apple-touch-icon.png`、かずともは `logo-mark.webp`。名前は「フリック」を 取る(かずともの `GameGrid` と 同じ) */
-const SERIES_ORDER = ["sugaku", "kokugo", "kanken", "rika", "shakai", "eigo", "rekishi", "world", "eikaiwa", "supein", "kankoku", "kyoryu", "uchu", "karada", "ketsueki", "tetsugaku", "soccer", "supercar", "basket"].concat(
-                      ["baseball", "boxing", "kaji", "manner", "shinri", "adler", "mentalist", "patissier", "chef", "hanaya", "noka", "ishi", "kango", "shika", "yakuzai", "jui", "inu", "anma", "keisatsu", "shobo", "kyukyutai", "hoiku", "kyoshi", "biyo", "daiku", "seibi", "pilot", "cabin", "bengoshi", "zeirishi", "eiga", "gamedev", "code", "ai", "sumaho", "pasokon", "kabu", "toshika", "kigyo"]);
+   ⚠️ **章ごとに 分けて 出す**(けいくん 2026-10-24「10問のゲーム後の1番下にあるリンクも すべてのゲームでカテゴリー分けしてください」)。
+   章の 名前と ならびは **かずともの マイページ(speed-king の `HOME_CHAPTERS`)と 同じ**(あちらを 変えたら ここも)。ゲームを 足したら どれかの 章に 足す(どの 章にも 無い ものは いちばん下の「そのほか」に つく)。
+   ⚠️ 絵は 各ゲームの `apple-touch-icon.png`、かずともは `logo-mark.webp`。名前は「フリック」を 取る(かずともの `GameGrid` と 同じ)。
+   ⚠️ いま いる ゲームも うすく しない(かずともと 同じ。けいくん 2026-10-24「薄くなってるのはおかしい」) */
+const SERIES_CHAPTERS = [
+  { title:"5つの教科", ids:["kazutomo", "sugaku", "kokugo", "kanken", "rika", "shakai", "eigo"] },
+  { title:"教科をひろげる", ids:["rekishi", "world", "eikaiwa", "supein", "kankoku", "kyoryu", "uchu", "karada", "ketsueki", "tetsugaku"] },
+  { title:"スポーツ", ids:["soccer", "supercar", "basket", "baseball", "boxing"] },
+  { title:"くらしと心", ids:["kaji", "manner", "shinri", "adler", "mentalist"] },
+  { title:"夢のしごと", ids:["patissier", "chef", "hanaya", "noka", "ishi", "kango", "shika", "yakuzai", "jui", "inu", "anma", "keisatsu", "shobo", "kyukyutai", "hoiku", "kyoshi", "biyo", "daiku", "seibi", "pilot", "cabin", "bengoshi", "zeirishi", "eiga", "gamedev", "code"] },
+  { title:"未来をのぞく", ids:["ai", "sumaho", "pasokon", "kabu", "toshika", "kigyo"] } ];
 function gameTilesHtml(){
   const root = GAME.id === "world" ? "./" : "../";
-  const rank = id => { const k = SERIES_ORDER.indexOf(id); return k < 0 ? 999 : k; };
-  const tiles = [{ name: "かずとも", img: "https://kazutomo.app/logo-mark.webp", href: "https://kazutomo.app/play", cur: false }]
-    .concat(SERIES.slice().sort((a, b) => rank(a.id) - rank(b.id)).map(g => ({ name: g.name.replace(/^フリック/, ""), img: root + g.dir + "apple-touch-icon.png", href: root + g.dir, cur: g.id === GAME.id })));
-  return '<div class="pg-grid">' + tiles.map(x => '<a href="' + x.href + '"' + (x.cur ? ' aria-current="page"' : '') + '><span class="tile"><img src="' + x.img + '" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span>' + esc(x.name) + '</span></a>').join("") + '</div>';
+  const by = { kazutomo:{ name: "かずとも", img: "https://kazutomo.app/logo-mark.webp", href: "https://kazutomo.app/play" } };
+  for(const g of SERIES) by[g.id] = { name: g.name.replace(/^フリック/, ""), img: root + g.dir + "apple-touch-icon.png", href: root + g.dir };
+  const used = new Set(), chapters = SERIES_CHAPTERS.map(c => ({ title:c.title, tiles:c.ids.filter(id => { if(!by[id]) return false; used.add(id); return true; }).map(id => by[id]) }));
+  const rest = Object.keys(by).filter(id => !used.has(id)).map(id => by[id]);
+  if(rest.length) chapters.push({ title:"そのほか", tiles:rest });
+  const tile = x => '<a href="' + x.href + '"><span class="tile"><img src="' + x.img + '" alt="" width="52" height="52" loading="lazy" decoding="async"></span><span>' + esc(x.name) + '</span></a>';
+  return chapters.filter(c => c.tiles.length).map(c => '<div class="pg-ch"><p class="pg-ch-ttl"><span>' + esc(c.title) + '</span><i aria-hidden="true"></i></p><div class="pg-grid">' + c.tiles.map(tile).join("") + '</div></div>').join("");
 }
 const QUOTES = [
   {t:"天才とは1%のひらめきと99%の努力である", a:"エジソン", r:"てんさいとはいちぱーせんとのひらめきときゅうじゅうきゅうぱーせんとのどりょくである", ar:"えじそん"},

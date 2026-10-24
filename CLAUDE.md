@@ -1253,7 +1253,8 @@
 - 📖 Wikipedia は 243 / 630語。ちがう 記事 16こは `NO_WIKI`(レセプション → パーティー・ダルラン → べつの 人・インナー → 下着 など)。**写真は まだ 取っていない**(取るなら 物だけ。⚠️ 選手の 顔・チームの エンブレム・ボールの 会社の ロゴを 入れない。人の 語は `SKIP_FIELD` に)
 - **トップの 絵は 入れた**(2026-10-24。`volley/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。1回目は 札の ことばが ゲームに 無い もの だらけで 入れなかった。
   2回目の のこり 4か所は **絵の 中で 直した**(`tools/volley/fix_text.py`): ぼーらんど → ぽーらんど / ぶぉーめーしょん → ふぉーめーしょん / せかいせんしゅけん(くずれ)/ レベル3「なるう!」→「なろう!」。もとの 絵は 入れものに 入れていない
-- アイコン・題名は **まだ**(仮の アイコン `tools/volley/placeholder_icon.py`。`logo=False`)。届いたら 四角い 絵 → `tools/volley/art/square-src.png` → `python3 tools/icon_from_square.py volley`(`iconv` +1)/ 題名 `tools/volley/art/title-src.png` → `python3 tools/title_from_art.py volley`(`logo=True`・`art.word` を 実寸)/ `volley/hero.webp`(`hero=True`)。
+- **アイコンは 入れた**(2026-10-24。けいくんの 四角い 絵 1254px を 切らずに そのまま `tools/volley/art/square-src.png` → `python3 tools/icon_from_square.py volley`。`iconv` = 2)。四角い 絵の 小さい 字の まちがい(ぼーらんど・ぶぉーめーしょん・せかはせんしゅけん・6番の 見出し「ぎじゅつと かいせつ」・番号が 7を とばす)は アイコンの 大きさでは 読めないので そのまま。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+- 題名は **まだ**(`logo=False`)。届いたら 題名 `tools/volley/art/title-src.png` → `python3 tools/title_from_art.py volley`(`logo=True`・`art.word` を 実寸・`wordv` +1)。
   ⚠️ 絵を 頼む ときは 実在の 選手の 顔・チームや 大会の ロゴ・ボールの 会社の 柄を 描かせない。人物は 下 3分の1に 小さく。「バレボール」「ワールドバレー」に なりやすいので 字を かならず 読む
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`・販売ページ `HOME_GAMES`(スポーツの 章、ボクシングの となり。絵なし = 名前の 字)・規約の 一覧 `FLICK_SERIES_GAMES` に 足した(speed-king)
 - ⭐ **毎年の 見直しの 予約が ある**(`trig_01TUCypNk63BrMTagkyvN542`。毎年 9月1日 朝8時45分。けいくん 2026-10-24「1」)。⚠️ **ファイル名 `terms-rule.json` / `terms-star.json` と `mkmeta.py` の `RV` を 変えない**

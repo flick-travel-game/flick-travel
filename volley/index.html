@@ -12,7 +12,7 @@
 <meta property="og:title" content="フリックワールドバレーボール｜かずとも">
 <meta property="og:description" content="バレーの きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・6人制か ビーチバレーか などの 種目・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。バレーが すきな 小学生の ことばから はじめて、ママさんバレーや 部活の コーチ、解説者が 使う 戦術の ことばまで。リベロは ちがう 色の ユニフォーム、バレーは バスケの 4年後に 生まれた、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。 かずともの フリックゲーム。">
 <meta property="og:url" content="https://kazutomo.app/flick/volley/">
-<meta property="og:image" content="https://kazutomo.app/flick/hero.webp">
+<meta property="og:image" content="https://kazutomo.app/flick/volley/hero.webp">
 <meta property="og:locale" content="ja_JP">
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
@@ -449,6 +449,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックワールドバレーボール</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリックワールドバレーボール" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <!-- 答えの ひらがな あり / 無し(けいくん 2026-10-24「フリック漢字以外のすべてのフリックゲームも ひらがな無しの選択が出来るようにしてください」)。
          ぜんぶの ゲームで 同じ 1つの きまり(localStorage の flick-kana)。無し = 打つ 字が ？ に なる(まちがえた 1字だけ 見える)。自己ベストは あり / 無し で 別 -->
@@ -578,6 +579,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
+<script src="wiki.js?v=62b9ece8"></script>
 <script src="terms.js?v=27cce065"></script>
 <script src="volley.js?v=c07ab795"></script>
 <script>
@@ -586,7 +588,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"volley", name:"フリックワールドバレーボール", modes:(typeof VOLLEY === "object" ? VOLLEY.modes : []), assets:"../", logo:false, hero:false, dir:"volley/", lead:"バレーの きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・6人制か ビーチバレーか などの 種目・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。バレーが すきな 小学生の ことばから はじめて、ママさんバレーや 部活の コーチ、解説者が 使う 戦術の ことばまで。リベロは ちがう 色の ユニフォーム、バレーは バスケの 4年後に 生まれた、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは FIVB と JVA の いまの 版で 確かめたよ(変わる ことが あるよ)。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の バレーが つながって 見えてくるよ。FIVB・JVA・各リーグ・各チーム・各選手とは 関係ありません。" };
+const GAME = { id:"volley", name:"フリックワールドバレーボール", modes:(typeof VOLLEY === "object" ? VOLLEY.modes : []), assets:"../", logo:false, hero:true, dir:"volley/", lead:"バレーの きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・6人制か ビーチバレーか などの 種目・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。バレーが すきな 小学生の ことばから はじめて、ママさんバレーや 部活の コーチ、解説者が 使う 戦術の ことばまで。リベロは ちがう 色の ユニフォーム、バレーは バスケの 4年後に 生まれた、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは FIVB と JVA の いまの 版で 確かめたよ(変わる ことが あるよ)。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の バレーが つながって 見えてくるよ。FIVB・JVA・各リーグ・各チーム・各選手とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

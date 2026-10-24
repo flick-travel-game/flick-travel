@@ -330,7 +330,7 @@ GAMES = {
     #   → 「iPhone」は アップルの 登録商標で、かずともは お金を いただく サービスなので 名前は「フリックスマホ」。5つの 問いに「全部おすすめで」)。
     #   まとめは docs/フリックスマホ-はじめかた.md。ことばは tools/sumaho/terms-<旅>.json → sumaho/terms.js(tools/sumaho/terms_js.py)。しくみは sumaho/sumaho.js(SUMAHO。薬剤師を 写して 📱 やって みよう を 足した)。
     #   ⚠️⚠️ 商標を 1語の 答えに しない・機種名・バージョンの 番号・ボタンの 押しかた・料金・通信会社や SNS の 名前・子どもを 守る 決まりの ぬけ道・人を 傷つける 使いかたは 出さない(決まりは tools/sumaho/PROMPT.md)。
-    #   絵: トップは けいくんの ChatGPT の 絵(2回目・2026-10-03。゛と ゜の まちがい 5つは tools/sumaho/fix_text.py で 直した)。アイコンは まだ 仮(tools/sumaho/placeholder_icon.py)・題名の 絵は まだ 無い(logo=False)。
+    #   絵: トップは けいくんの ChatGPT の 絵(2回目・2026-10-03。゛と ゜の まちがい 5つは tools/sumaho/fix_text.py で 直した)。アイコンは まだ 仮(tools/sumaho/placeholder_icon.py)・題名は けいくんの ChatGPT の 切りぬき(tools/inu/art/title-src.png → tools/title_from_art.py inu)。
     #   届いたら tools/sumaho/art/square-src.png → tools/icon_from_square.py sumaho(iconv を +1)/ title-src.png → tools/title_from_art.py sumaho(logo を True・art.word を 実寸に)/ sumaho/hero.webp(hero を True)
     "sumaho": dict(name="フリックスマホ", modes="SUMAHO", kinds=set(), color="#1c7ed6", hero=True, logo=True,
                    art=dict(word=(900, 219), hero=(1536, 1024), alt="フリックスマホ。男の子と 女の子が スマホを 持って 笑い、白い 犬が となりに いる 絵。まわりに 10の 旅の ことばの 札と 4択クイズ・ことばの 意味と つながり・レベルの 見本が ならんでいる", iconv=2, wordv=3),
@@ -372,9 +372,9 @@ GAMES = {
     # フリック犬の気持ち(けいくん 2026-10-23「犬の気持ちがわかるように なるために必要な知識をフリック形式の問題にしてください」→「犬種と歴史を増やして トイプードルを入れて」「しつけも増やして」→ 5つの 問いに「全部おすすめ」)。
     #   まとめは docs/フリック犬の気持ち-はじめかた.md。ことばは tools/inu/terms-<旅>.json → inu/terms.js(tools/inu/terms_js.py)。しくみは inu/inu.js(INU。メンタリストを 写して 🐶 犬からの 手紙・📘 レッスン・📅 きょうの かんさつ・💭 きもち・🔬 かがく・🐕 犬種の 札 を 足した)。
     #   ⚠️⚠️ こわく 書かない(かまれる・事故)・犬種の 性格を 決めつけない・科学と 言い伝えを 分ける・罰の しつけは 名前も 書かない(決まりは tools/inu/PROMPT.md)。
-    #   絵: トップの 絵は けいくんの ChatGPT の 絵(2回目。2026-10-24。小さい 字 4つを tools/inu/fix_text.py で 直した)。アイコンは けいくんの 四角い 絵(2026-10-24。メンタリストの 文が まざった 2か所を tools/inu/fix_square.py で 直して art/square-src.png に)。題名の 絵は まだ 無い(logo=False)。届いたら tools/inu/art/square-src.png → tools/icon_from_square.py inu / title-src.png → tools/title_from_art.py inu (iconv を +1)/ inu/hero.webp(hero・logo を True・art.word を 実寸に)
-    "inu": dict(name="フリック犬の気持ち", modes="INU", kinds=set(), color="#e8590c", hero=True, logo=False,
-                art=dict(word=(900, 200), hero=(1536, 1024), alt="フリック犬の気持ち", iconv=2, wordv=2),
+    #   絵: トップの 絵は けいくんの ChatGPT の 絵(2回目。2026-10-24。小さい 字 4つを tools/inu/fix_text.py で 直した)。アイコンは けいくんの 四角い 絵(2026-10-24。メンタリストの 文が まざった 2か所を tools/inu/fix_square.py で 直して art/square-src.png に)。題名は けいくんの ChatGPT の 切りぬき(tools/inu/art/title-src.png → tools/title_from_art.py inu)。届いたら tools/inu/art/square-src.png → tools/icon_from_square.py inu / title-src.png → tools/title_from_art.py inu (iconv を +1)/ inu/hero.webp(hero・logo を True・art.word を 実寸に)
+    "inu": dict(name="フリック犬の気持ち", modes="INU", kinds=set(), color="#e8590c", hero=True, logo=True,
+                art=dict(word=(900, 221), hero=(1536, 1024), alt="フリック犬の気持ち", iconv=2, wordv=3),
                 lead="犬の 体の サイン・声と におい・やめての サイン(犬の「落ちついて」の 合図)・犬の くらし・ほめて 教える しつけ・困りごとの なおしかた・犬の 体の しくみ・犬種図鑑(トイプードルから)・犬の 歴史と はたらく 犬・犬と 人が 安心・犬の こころの ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出て、💭 きもち(このとき 犬は たぶん こう 感じている)・🔬 かがく(研究で わかった ことか 言い伝えか)・🎯 やってみよう(きょう できる かんさつ)も わかるよ。🐶 犬からの 手紙(20の 場面で 犬の 気持ちを 読む)・📘 レッスン(ほめて 教える 15本)・📅 きょうの かんさつ も あるよ。4択クイズで 意味と 犬種の 国・グループを たしかめる 練習も できるよ。",
                 how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。犬の 気持ちは 1匹ずつ ちがうよ。この ゲームは 読みかたの ヒントです。知らない 犬には いきなり さわらず、まず 飼い主さんに「さわっても いいですか」と 聞こうね。しつけは ほめて 教える やりかただけを のせているよ。犬の ようすが いつもと ちがう ときは 獣医さんに 相談しよう。",
                 rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、犬の しっぽと 耳と 声と くらしが つながって 見えてくるよ。環境省・動物病院・ドッグトレーナーの 団体・犬の 登録団体とは 関係ありません。"),

@@ -97,7 +97,9 @@ GAME_PICKS = {
  "pilot.ji-lilienthal": "File:Lilienthal in flight.jpg",
  "pilot.ji-ohain": "File:Heinkel He 178 050602-F-1234P-002.jpg",
  "pilot.ji-coleman": "File:Bessie Coleman in 1923.jpg",
- "pilot.ji-widebody": "File:Boeing 777X flyover at 2025 Seafair - 01.jpg"
+ "pilot.ji-widebody": "File:Boeing 777X flyover at 2025 Seafair - 01.jpg",
+ # フリック犬の気持ち(2026-10-24 けいくん「可愛いトイプードルの写真に変更してください」): 記事の 代表画像は 大きな プードルだったので、Commons で さがして アプリコットの トイプードルの 顔を えらんだ
+ "inu.ks-toypoodle": "File:Toy Poodle head.jpg"
 }
 
 # フリックキャビンアテンダント(2026-10-21)の 写真を 目で 見て 外した もの(今の 航空会社の 塗り分け・軍用機・実在の 乗務員の 顔・「危険」の 札・衝突試験の 人形・宗教の しるし・合わない 写真)
@@ -107,7 +109,7 @@ NO_GAME_PHOTO |= set(["cabin.ho-kemuri", "cabin.ho-kokuho", "cabin.ho-rankiryu",
 # フリックスーパーカー(2026-10-21): ならべて 目で 見て 外した もの(ロゴ・町の 紋章・人の 顔・事故を 思わせる もの・べつの 車・関係ない 写真)
 NO_GAME_PHOTO |= set(["supercar.ki-frontmid", "supercar.de-930", "supercar.de-961", "supercar.de-affalterbach", "supercar.de-aircooled", "supercar.de-audi", "supercar.de-autounion", "supercar.de-benz", "supercar.de-bmw", "supercar.de-brabus", "supercar.de-hockenheim", "supercar.de-ingolstadt", "supercar.de-leipzig", "supercar.de-neckarsulm", "supercar.de-porsche", "supercar.de-stuttgart", "supercar.de-watercooled", "supercar.de-wolfsburg", "supercar.dn-boom", "supercar.dn-ghia", "supercar.dn-groupb", "supercar.dn-lemans", "supercar.dn-millemiglia", "supercar.dn-panamericana", "supercar.dn-plamodel", "supercar.dn-zagato", "supercar.gb-astonmartin", "supercar.gb-cx75", "supercar.gb-jaguar", "supercar.gb-mp44", "supercar.gb-rollsroyce", "supercar.gb-tvr", "supercar.gb-woking", "supercar.gi-butterfly", "supercar.gi-dihedral", "supercar.gi-honeycomb", "supercar.gi-intake", "supercar.gi-launch", "supercar.gi-longtail", "supercar.gi-manual", "supercar.gi-regen", "supercar.gi-v8", "supercar.hy-charge", "supercar.hy-cooling", "supercar.hy-datalogger", "supercar.hy-gte", "supercar.hy-guinness", "supercar.hy-hcclass", "supercar.hy-louver", "supercar.hy-magnesium", "supercar.hy-telemetry", "supercar.hy-windtunnel", "supercar.it-bertone", "supercar.it-detomaso", "supercar.it-dino", "supercar.it-pagani", "supercar.it-scuderia", "supercar.it-toro", "supercar.jp-hakosuka", "supercar.jp-kenmeri", "supercar.jp-mazda", "supercar.jp-nsxr", "supercar.jp-owl", "supercar.jp-prince", "supercar.jp-supergt", "supercar.ki-awd", "supercar.ki-hud", "supercar.ki-kasoku", "supercar.ki-kw", "supercar.ki-lhd", "supercar.ki-maker", "supercar.ki-premiere", "supercar.ki-prototype", "supercar.ki-rpm", "supercar.ki-seatbelt", "supercar.ki-serial", "supercar.ki-supersports", "supercar.ki-topspeed", "supercar.ki-wheel", "supercar.sk-bugatti", "supercar.sk-donkervoort", "supercar.sk-molsheim", "supercar.sk-voiturenoire"])
 # フリック犬の気持ち(2026-10-24): ならべて 目で 見て 外した もの(グループの 語に べつの 犬種・何匹も ならんだ 写真・ラバ・トイプードルに 大きな プードル・ブラッドハウンドに べつの 猟犬)
-NO_GAME_PHOTO |= set(["inu.ks-g-scent", "inu.ks-g-sight", "inu.ks-kogata", "inu.ks-zasshu", "inu.ks-toypoodle", "inu.ks-bloodhound", "inu.ks-chugata", "inu.ks-oogata", "inu.ks-giantschnauzer", "inu.ks-kuroshiba", "inu.ks-shiroshiba"])
+NO_GAME_PHOTO |= set(["inu.ks-g-scent", "inu.ks-g-sight", "inu.ks-kogata", "inu.ks-zasshu", "inu.ks-bloodhound", "inu.ks-chugata", "inu.ks-oogata", "inu.ks-giantschnauzer", "inu.ks-kuroshiba", "inu.ks-shiroshiba"])
 SKIP_PREFIX = {"cabin": ("ky-", "ma-", "sh-", "ei-"),
                "inu": ("sg-", "nk-", "ym-", "kr-", "st-", "km-", "kd-", "rk-", "az-", "kk-")}  # フリック犬の気持ち(2026-10-24): 写真は 犬種図鑑だけ(しぐさは コードの 図。体・こころの 写真は 出さない)
 SKIP_FIELD = {"supercar": ("人",)}  # スーパーカーは 人の 語の 写真を 取らない(実在の 人の 顔写真は 入れない。2026-10-21)

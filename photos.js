@@ -42290,5 +42290,13 @@ const PHOTOS = {
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Giaccomo.jpg",
   "file": "File:Giaccomo.jpg"
+ },
+ "inu.ks-toypoodle": {
+  "src": "photo-inu.ks-toypoodle.jpg",
+  "author": "Manuelito2021consupadre",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Toy_Poodle_head.jpg",
+  "file": "File:Toy Poodle head.jpg"
  }
 };

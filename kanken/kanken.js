@@ -8,6 +8,8 @@
      字の 形は kanken/strokes.js(KanjiVG・CC BY-SA 3.0)。**1画 書くたびに 書き順どおりの その 1画と くらべる**(タイピングの 1字ずつの 判定と 同じ)。
      合えば お手本の 線に きれいに なる。ちがえば 赤く 消えて まちがい 1回。2回 つづけて まちがえると つぎの 1画が うすく 見える(ヒント)
    ・最難関の 読み・四字熟語・対義語・送りがな・熟語の 型は **答えを かくす**(国語と 同じ hide)
+   ・⭐ 「ひらがな 無し」(けいくん 2026-10-24「漢字の問題をすべて ひらがな無しも選択出来るようにしてください」): 旅マップの 上の 切りかえで、打つ 6つの 旅 ぜんぶの 答え(ひらがな)を かくせる(最難関の hide と 同じ 見せかた)。
+     えらんだ ものは 端末に おぼえる(flick-kn-kana)。自己ベストは ひらがな あり / 無し で 分ける(bestTag。英会話の 打ちかたと 同じ しくみ)
    ・🏆 マスターは 打つ 6つの 旅だけを まぜる(書く 旅を まぜると スマホの キーボードが 出たり 消えたり するため)
    ⚠️ 漢字の 検定を 行う 団体とは 関係ない。むずかしさは めやす */
 const KANKEN = (() => {
@@ -30,13 +32,20 @@ const KANKEN = (() => {
   const MODE_OF = { yomi:"knyomi", kaki:"knkaki", bushu:"knbushu", okuri:"knokuri", jukugo:"knjukugo", yoji:"knyoji", taigi:"kntaigi", doon:"kndoon" };
   const WRITE = new Set(["kaki", "doon"]);  // 指で 書く 旅
   const JOURNEY_OF = Object.fromEntries(Object.entries(MODE_OF).map(([j, m]) => [m, j]));
+  /* ── ひらがな あり / 無し(けいくん 2026-10-24)。無し = 打つ 旅 ぜんぶで 答えの ひらがなを ？ に する(最難関の hide と 同じ)。端末に おぼえる ── */
+  const KANA_KEY = "flick-kn-kana";
+  let noKana = (() => { try{ return localStorage.getItem(KANA_KEY) === "off"; }catch(e){ return false; } })();
+  function setKana(on){ noKana = !on; try{ localStorage.setItem(KANA_KEY, on ? "on" : "off"); }catch(e){} }
 
   /* ── ことば → 問題(土台の SPOTS と 同じ形: n 名前 / r よみ / art キー / c 小見出し / d 説明 / e 絵文字) ── */
   const ALL = D.list.map((o, i) => {
     const j = JBY[o.j];
     const w = WRITE.has(o.j);
-    return Object.assign({}, o, { art:o.id, k:"kanjiterm", w, hide:!w && o.dv === 10 && o.j !== "bushu", n:o.n, r:o.r, e:o.e, d:o.rb, ord:i, jr:j,
+    const q = Object.assign({}, o, { art:o.id, k:"kanjiterm", w, n:o.n, r:o.r, e:o.e, d:o.rb, ord:i, jr:j,
       c:j.icon + " " + j.name + " ・ " + o.c + " ・ " + LVN[o.dv].icon + " " + LVN[o.dv].name });
+    const hard = !w && o.dv === 10 && o.j !== "bushu";  // 最難関は いつも かくす(部首は のぞく)
+    Object.defineProperty(q, "hide", { get(){ return hard || (!w && noKana); }, enumerable:true, configurable:true });  // ひらがな 無し なら 打つ 旅 ぜんぶ
+    return q;
   });
   const BY = new Map(ALL.map(q => [q.art, q]));
   const TOTAL = ALL.length;
@@ -256,6 +265,11 @@ const KANKEN = (() => {
       '<ul class="ai-jr">' + jr + '</ul>' +
       '<p class="ai-title">' + (t ? t[1] + " いまの称号「<b>" + esc(t[2]) + "</b>」" : "🎒 さいしょの 称号まで あと " + (10 - n) + "語") +
       (nx && t ? '<small>つぎ「' + esc(nx[2]) + '」まで あと ' + (nx[0] - n) + '語</small>' : "") + (td ? '<small>📅 きょう 覚えた ことば ' + td + '語</small>' : "") + '</p>' +
+      '<div class="kk-kana" role="group" aria-label="ひらがなの 見せかた"><span>👀 答えの ひらがな</span>' +
+      '<button type="button" data-kn-kana="on"' + (!noKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>あ あり</button>' +
+      '<button type="button" data-kn-kana="off"' + (noKana ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + '>🙈 無し</button></div>' +
+      '<p class="kk-kb">' + (noKana ? "🙈 打つ 6つの 旅 ぜんぶで、答えの ひらがなが ？ に なるよ。思い出して 打とう。まちがえると その 1字だけ 見えるよ。自己ベストは「無し」で 別に おぼえるよ。" :
+        "あ 答えの ひらがなが 見えるよ(最難関だけは いつも ？)。「無し」に すると ぜんぶの 問題で かくせるよ。") + '</p>' +
       '<div class="ai-btns"><button type="button" class="ai-btn" data-ai-open="zukan">📖 漢字図鑑</button>' +
       '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 4択クイズ</button>' +
       '<button type="button" class="ai-btn" data-ai-open="fav">⭐ お気に入り' + (fv ? "(" + fv + ")" : "") + '</button></div>' +
@@ -426,8 +440,9 @@ const KANKEN = (() => {
 
   /* ── おす・えらぶ(まとめて 受ける。結果画面や シートの 中身は 何度も 書きかわるため) ── */
   document.addEventListener("click", e => {
-    const t = e.target.closest && e.target.closest("[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-ans],[data-ai-qstart],[data-ai-qnext],.ai-node");
+    const t = e.target.closest && e.target.closest("[data-kn-kana],[data-ai-term],[data-ai-open],[data-ai-diag],[data-ai-fav],[data-ai-back],[data-ai-more],[data-ai-ans],[data-ai-qstart],[data-ai-qnext],.ai-node");
     if(!t) return;
+    if(t.dataset.knKana){ setKana(t.dataset.knKana === "on"); if(typeof showBest === "function") showBest(); else home(mode); return; }  // 自己ベストの 表示も 切りかわる
     if(t.dataset.aiTerm) return detail(t.dataset.aiTerm);
     if(t.dataset.aiBack){ trail.pop(); const id = trail[trail.length - 1]; if(id){ trail.pop(); detail(id); } return; }
     if(t.dataset.aiFav){ toggleFav(t.dataset.aiFav); trail.pop(); detail(t.dataset.aiFav); if(document.getElementById("ai-zk") && !document.getElementById("ai-zk").classList.contains("hidden")) drawZukan(); home(mode); return; }
@@ -624,6 +639,9 @@ const KANKEN = (() => {
 .ai-jr li{display:grid;grid-template-columns:1fr auto;font-size:13px;align-items:baseline;gap:4px}.ai-jr .rn{font-weight:800}.ai-jr i{grid-column:1/-1;height:6px;margin:2px 0 5px}
 .ai-jr .rc{font-variant-numeric:tabular-nums;color:#64748b}.ai-jr .rc b{color:#1e1b4b}
 .ai-title{margin:8px 0 10px;font-size:14px}.ai-title small{display:block;color:#64748b;font-size:12px;margin-top:2px}
+.kk-kana{display:flex;align-items:center;gap:6px;margin:0 0 6px;font-size:13px;font-weight:800;color:#334155}.kk-kana span{flex:none}
+.kk-kana button{flex:1;padding:9px 6px;border-radius:12px;border:1.5px solid #cbd5e1;background:#fff;color:#334155;font:inherit;font-size:13.5px;font-weight:800;cursor:pointer}.kk-kana button.on{background:#1d6fe0;border-color:#1d6fe0;color:#fff}
+.kk-kb{font-size:12px;color:#475569;line-height:1.7;margin:0 0 12px;background:#fff;border-radius:12px;padding:8px 10px}
 .ai-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .ai-btn{padding:11px 8px;border-radius:14px;border:1.5px solid #c7d2fe;background:#fff;color:#1e1b4b;font:inherit;font-weight:800;font-size:14px;cursor:pointer}
 .ai-btn:active{transform:translateY(1px)}.ai-wide{width:100%;margin-top:10px}
@@ -708,6 +726,6 @@ body.ai-lock{overflow:hidden}
 
   // noRank: レベル61より 上(かずともの 表は 1〜60)は 送らない
   return { kind:"kanjiterm", modes:MODES_ALL, pools, levels, maps, colors, owns:m => MODES_ALL.includes(m), discoveredIn, makeQs, answered, finished, resultMsg,
-           card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), retarget, tgtHtml,
+           card, info, home, lvInfo, cardModes:() => MODES_ALL, byArt:id => BY.get(id), retarget, tgtHtml, bestTag:() => noKana ? "-nokana" : "",
            noRank:(m, lv) => !RANK_READY || lv >= 60, noBoard:!RANK_READY, openZukan, diagramSvg };
 })();

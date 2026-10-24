@@ -497,6 +497,13 @@ const KANKEN = (() => {
       const tolPos = (acc.length >= 2 ? 15 : 22) + Math.min(8, lt / 10);
       if(dist(cT, cU) > tolPos) return false;
       if(lt < 12) return lu < 40;  // 点(、)は 場所だけ
+      /* 短い 線(冖の 左の 点・小さな はらい。お手本で 12〜22)は、指では 点のように ずっと 短く 書く 人が 多い(けいくん 2026-10-24「学」の 4画めが「何回書いても合格しない」)。
+         長さの 下限は 見ない。向きだけ 逆でなければ 通す(短すぎて 向きが 分からない ときは 場所だけ)。くせの 合わせ(acc)には 入れない(形が あてにならないため) */
+      if(lt < 22 && lu < lt * .5){
+        if(lu < 5) return true;
+        const vt0 = [T[N - 1][0] - T[0][0], T[N - 1][1] - T[0][1]], vu0 = [U2[N - 1][0] - U2[0][0], U2[N - 1][1] - U2[0][1]];
+        return (vt0[0] * vu0[0] + vt0[1] * vu0[1]) / ((Math.hypot(...vt0) || 1) * (Math.hypot(...vu0) || 1)) > -.2;
+      }
       if(lu < lt * .35 || lu > lt * 2.6 + 10) return false;
       let sh = 0; for(let i = 0; i < N; i++) sh += dist([U2[i][0] - cU[0], U2[i][1] - cU[1]], [T[i][0] - cT[0], T[i][1] - cT[1]]);
       if(sh / N > Math.max(7, lt * .24)) return false;

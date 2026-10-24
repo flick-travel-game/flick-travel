@@ -441,11 +441,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリック犬の気持ち</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="221" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック犬の気持ち</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリック犬の気持ち" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリック犬の気持ち" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -579,7 +579,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"inu", name:"フリック犬の気持ち", modes:(typeof INU === "object" ? INU.modes : []), assets:"../", logo:false, hero:true, dir:"inu/", lead:"犬の 体の サイン・声と におい・やめての サイン(犬の「落ちついて」の 合図)・犬の くらし・ほめて 教える しつけ・困りごとの なおしかた・犬の 体の しくみ・犬種図鑑(トイプードルから)・犬の 歴史と はたらく 犬・犬と 人が 安心・犬の こころの ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出て、💭 きもち(このとき 犬は たぶん こう 感じている)・🔬 かがく(研究で わかった ことか 言い伝えか)・🎯 やってみよう(きょう できる かんさつ)も わかるよ。🐶 犬からの 手紙(20の 場面で 犬の 気持ちを 読む)・📘 レッスン(ほめて 教える 15本)・📅 きょうの かんさつ も あるよ。4択クイズで 意味と 犬種の 国・グループを たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。犬の 気持ちは 1匹ずつ ちがうよ。この ゲームは 読みかたの ヒントです。知らない 犬には いきなり さわらず、まず 飼い主さんに「さわっても いいですか」と 聞こうね。しつけは ほめて 教える やりかただけを のせているよ。犬の ようすが いつもと ちがう ときは 獣医さんに 相談しよう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、犬の しっぽと 耳と 声と くらしが つながって 見えてくるよ。環境省・動物病院・ドッグトレーナーの 団体・犬の 登録団体とは 関係ありません。" };
+const GAME = { id:"inu", name:"フリック犬の気持ち", modes:(typeof INU === "object" ? INU.modes : []), assets:"../", logo:true, hero:true, dir:"inu/", lead:"犬の 体の サイン・声と におい・やめての サイン(犬の「落ちついて」の 合図)・犬の くらし・ほめて 教える しつけ・困りごとの なおしかた・犬の 体の しくみ・犬種図鑑(トイプードルから)・犬の 歴史と はたらく 犬・犬と 人が 安心・犬の こころの ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出て、💭 きもち(このとき 犬は たぶん こう 感じている)・🔬 かがく(研究で わかった ことか 言い伝えか)・🎯 やってみよう(きょう できる かんさつ)も わかるよ。🐶 犬からの 手紙(20の 場面で 犬の 気持ちを 読む)・📘 レッスン(ほめて 教える 15本)・📅 きょうの かんさつ も あるよ。4択クイズで 意味と 犬種の 国・グループを たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。犬の 気持ちは 1匹ずつ ちがうよ。この ゲームは 読みかたの ヒントです。知らない 犬には いきなり さわらず、まず 飼い主さんに「さわっても いいですか」と 聞こうね。しつけは ほめて 教える やりかただけを のせているよ。犬の ようすが いつもと ちがう ときは 獣医さんに 相談しよう。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、犬の しっぽと 耳と 声と くらしが つながって 見えてくるよ。環境省・動物病院・ドッグトレーナーの 団体・犬の 登録団体とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

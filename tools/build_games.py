@@ -462,8 +462,8 @@ GAMES = {
     #   まとめは docs/フリックワールドバレーボール-はじめかた.md。ことばは tools/volley/terms-<旅>.json → volley/terms.js(tools/volley/terms_js.py)。しくみは volley/volley.js(VOLLEY。ボクシングを 写して 種目の 札(6人制 / ビーチ / 9人制 / シッティング)を 足した)。
     #   ⚠️⚠️ いまの 所属・年俸・順位・決定率は 書かない(変わる)。指導の 暴力・ハラスメントの 話・まんがの 登場人物・商品名は 入れない(決まりは tools/volley/PROMPT.md)。ルールは FIVB / JVA の いまの 版(毎年 9月に 見なおす)。
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/volley/placeholder_icon.py)。届いたら tools/volley/art/square-src.png → tools/icon_from_square.py volley(iconv を +1)/ title-src.png → tools/title_from_art.py volley(logo を True)/ volley/hero.webp(hero を True)
-    "volley": dict(name="フリックワールドバレーボール", modes="VOLLEY", kinds=set(), color="#1c7ed6", hero=True, logo=False,
-                  art=dict(word=(900, 188), hero=(1536, 1024), alt="フリックワールドバレーボール", iconv=2, wordv=2),
+    "volley": dict(name="フリックワールドバレーボール", modes="VOLLEY", kinds=set(), color="#1c7ed6", hero=True, logo=True,
+                  art=dict(word=(900, 304), hero=(1536, 1024), alt="フリックワールドバレーボール", iconv=2, wordv=3),
                   lead="バレーの きほん・ルール・世界の リーグと 大会・名門チームと ライバル・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・世界大会と 代表の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・6人制か ビーチバレーか などの 種目・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。バレーが すきな 小学生の ことばから はじめて、ママさんバレーや 部活の コーチ、解説者が 使う 戦術の ことばまで。リベロは ちがう 色の ユニフォーム、バレーは バスケの 4年後に 生まれた、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の 所属や 記録は 変わる ことが あるよ。ルールは FIVB と JVA の いまの 版で 確かめたよ(変わる ことが あるよ)。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の バレーが つながって 見えてくるよ。FIVB・JVA・各リーグ・各チーム・各選手とは 関係ありません。"),

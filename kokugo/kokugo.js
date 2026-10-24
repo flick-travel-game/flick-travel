@@ -1,22 +1,22 @@
-/* フリック国語旅行: 高校受験・大学受験の 国語の 知識(漢字の読み・四字熟語・ことわざ・文法・古文単語・古典文法・漢文・文学史・評論の キーワード)を、フリックで 打って おぼえる。(けいくん 2026-09-27)
+/* フリック国語旅行: 高校受験・大学受験の 国語の 知識(ことばの意味・カタカナ語・ことわざ・文法・古文単語・古典文法・漢文・文学史・評論の キーワード)を、フリックで 打って おぼえる。(けいくん 2026-09-27)
    ─ 土台の index.html(世界フリック旅行)の 差しこみ口(PLUG)に「国語の 旅」を 足す ファイル。kokugo/ の ページだけが 読む ─
    ことばは tools/kokugo/meta.json + tools/kokugo/terms-*.json → tools/kokugo/terms_js.py が data/kokugo.json と kokugo/terms.js(KOKUGO_TERMS)に する。
    **ことばを 足す・直すのは tools/kokugo/terms-<旅>.json だけ**
    ・もとは パティシエフリック(patissier/patissier.js)を 写して 作った。見た目の class 名(ai-…)は そのまま(この ページだけの CSS)
    ・旅は 9つ + 🏆 マスター。レベルは 入門(中学の 基本)→ 中級(高校受験)→ 上級(大学受験)。1回は かならず 10問。どの ステージも いつも 同じ 10語 = スピード記録勝負
-   ・⚠️ 漢字の読みの 上級(と マスターに まざった その語)は **よみを かくす**(けいくん 2026-09-27「おすすめ」)。tgtHtml で 打つ 字を ？ に する。まちがえると その 1字だけ 見える(ヒント)
+   ・漢字の読み・四字熟語の 旅は 消した(フリック漢字に ある。けいくん 2026-10-24)。かわりに ことばの意味・カタカナ語。hide(よみを かくす)の しくみは 残っているが 当たる 語は もう 無い(答えを かくすのは 土台の「ひらがな 無し」)
    ・古文単語は 歴史的仮名遣い(をかし)を 見せて、現代仮名遣い(おかし)を 打つ
    ・しくみ図の かわりに 時代の 年表(けいくん 2026-09-27「年表」)。📍が 立つのは 文学史だけ(mapNode が ある 語だけ)
    ⚠️ 高校受験・大学受験の 範囲の めやす。本物の 入試問題では ない */
 const KOKUGO = (() => {
   const D = KOKUGO_TERMS;
   const ROUNDS = 10;
-  const RANK_READY = true;  // かずともの FLICK_MODES に kyomi / kyoji / kkotowaza / kbunpo / kkobun / kkoten / kkanbun / kbungaku / khyoron / kokumas を 足す(speed-king)。false に すると ランキングを 出さない・送らない
+  const RANK_READY = true;  // かずともの FLICK_MODES に kkgoi / kkatakana / kkotowaza / kbunpo / kkobun / kkoten / kkanbun / kbungaku / khyoron / kokumas を 足す(speed-king)。false に すると ランキングを 出さない・送らない
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const fmt = n => n.toLocaleString("ja-JP");
   const JR = D.journeys, JBY = Object.fromEntries(JR.map(j => [j.id, j]));
   const LVN = Object.fromEntries(D.levels.map(l => [l.difficulty, l]));
-  const MODE_OF = { yomi:"kyomi", yoji:"kyoji", kotowaza:"kkotowaza", bunpo:"kbunpo", kobun:"kkobun", koten:"kkoten", kanbun:"kkanbun", bungaku:"kbungaku", hyoron:"khyoron" };
+  const MODE_OF = { goi:"kkgoi", katakana:"kkatakana", kotowaza:"kkotowaza", bunpo:"kbunpo", kobun:"kkobun", koten:"kkoten", kanbun:"kkanbun", bungaku:"kbungaku", hyoron:"khyoron" };
   const JOURNEY_OF = Object.fromEntries(Object.entries(MODE_OF).map(([j, m]) => [m, j]));
 
   /* ── ことば → 問題(土台の SPOTS と 同じ形: n 名前 / r よみ / art キー / c 小見出し / d 説明 / e 絵文字) ── */
@@ -66,7 +66,7 @@ const KOKUGO = (() => {
                   lvTitle:"🏆 マスター　9つの 旅を まぜて ぜんぶ",
                   card:() => '<small>' + TOTAL + '語・' + lv.length + 'ステージ</small><small>中学の 基本から 大学受験まで</small>' };
   }
-  const MODES_ALL = ["kyomi", "kyoji", "kkotowaza", "kbunpo", "kkobun", "kkoten", "kkanbun", "kbungaku", "khyoron", "kokumas"];
+  const MODES_ALL = ["kkgoi", "kkatakana", "kkotowaza", "kbunpo", "kkobun", "kkoten", "kkanbun", "kbungaku", "khyoron", "kokumas"];
 
   /* ── きろく(人ごと。土台の recGet / recSet = つないでいない人は とじると 消える 決まりに そろえる) ──
      flick-kokugo[-p<id>] = { ことばid: [見た回数, まちがいの合計, さいごに まちがえたか(0/1), 1文字あたりの 秒, さいごに 見た 時刻(ms), はじめて 出会った 時刻(ms)] }

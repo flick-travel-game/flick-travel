@@ -42170,5 +42170,125 @@ const PHOTOS = {
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Saluki_600.jpg",
   "file": "File:Saluki 600.jpg"
+ },
+ "inu.ks-nihonspitz": {
+  "src": "photo-inu.ks-nihonspitz.jpg",
+  "author": "Kacey Original uploader was Kimyata at en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Japspitzpup.jpg",
+  "file": "File:Japspitzpup.jpg"
+ },
+ "inu.ks-nihonterrier": {
+  "src": "photo-inu.ks-nihonterrier.jpg",
+  "author": "Pleple2000",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Terrier_22.04.2012_2pl.jpg",
+  "file": "File:Japanese Terrier 22.04.2012 2pl.jpg"
+ },
+ "inu.ks-bulldog": {
+  "src": "photo-inu.ks-bulldog.jpg",
+  "author": "Pleple2000",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Racib%C3%B3rz_2007_082.jpg",
+  "file": "File:Racibórz 2007 082.jpg"
+ },
+ "inu.ks-greatdane": {
+  "src": "photo-inu.ks-greatdane.jpg",
+  "author": "Lilly M",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Great_Dane_K02.jpg",
+  "file": "File:Great Dane K02.jpg"
+ },
+ "inu.ks-roughcollie": {
+  "src": "photo-inu.ks-roughcollie.jpg",
+  "author": "Yasu w",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rough_Collie_japan04.jpg",
+  "file": "File:Rough Collie japan04.jpg"
+ },
+ "inu.ks-cairn": {
+  "src": "photo-inu.ks-cairn.jpg",
+  "author": "Ronald Müller-Hagen (Ketterechts)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cairn-Terrier-Garten1.jpg",
+  "file": "File:Cairn-Terrier-Garten1.jpg"
+ },
+ "inu.ks-bolognese": {
+  "src": "photo-inu.ks-bolognese.jpg",
+  "author": "Pleple2000",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bolo%C5%84czyk_5e3.jpg",
+  "file": "File:Bolończyk 5e3.jpg"
+ },
+ "inu.ks-oldenglish": {
+  "src": "photo-inu.ks-oldenglish.jpg",
+  "author": "Photo taken by Harald Urnes, Norway",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_english_sheepdog_Ch_Bobbyclown%27s_Dare_for_More.jpg",
+  "file": "File:Old english sheepdog Ch Bobbyclown's Dare for More.jpg"
+ },
+ "inu.ks-keeshond": {
+  "src": "photo-inu.ks-keeshond.jpg",
+  "author": "dancing with wolves",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Keeshond_Majic_standing_cropped.jpg",
+  "file": "File:Keeshond Majic standing cropped.jpg"
+ },
+ "inu.ks-deerhound": {
+  "src": "photo-inu.ks-deerhound.jpg",
+  "author": "Sisteskrik",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Karrie.JPG",
+  "file": "File:Karrie.JPG"
+ },
+ "inu.ks-americanakita": {
+  "src": "photo-inu.ks-americanakita.jpg",
+  "author": "No machine-readable author provided. Pleple2000 assumed (bas…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Great_japanese_dog00.jpg",
+  "file": "File:Great japanese dog00.jpg"
+ },
+ "inu.ks-komondor": {
+  "src": "photo-inu.ks-komondor.jpg",
+  "author": "Photo taken by Flickr user whartonds. Edit (cropped) by Phar…",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Komondor_Westminster_Dog_Show_crop.jpg",
+  "file": "File:Komondor Westminster Dog Show crop.jpg"
+ },
+ "inu.ks-vizsla": {
+  "src": "photo-inu.ks-vizsla.jpg",
+  "author": "Tino Hentschel (sharpened by Caronna)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Vizsla_02.jpg",
+  "file": "File:Vizsla 02.jpg"
+ },
+ "inu.ks-chesapeake": {
+  "src": "photo-inu.ks-chesapeake.jpg",
+  "author": "Nevilley",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chesapeakebayretriever01-l.jpg",
+  "file": "File:Chesapeakebayretriever01-l.jpg"
+ },
+ "inu.ks-irishwolf": {
+  "src": "photo-inu.ks-irishwolf.jpg",
+  "author": "A. Montino",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Giaccomo.jpg",
+  "file": "File:Giaccomo.jpg"
  }
 };

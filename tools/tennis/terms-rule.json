@@ -1,0 +1,1278 @@
+[
+ {
+  "id": "rl-fault",
+  "name": "フォルト",
+  "reading": "ふぉると",
+  "journey": "rule",
+  "category": "フォルトと レット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "❌",
+  "mapNode": "rule:fault",
+  "relatedTerms": [
+   "rl-doublefault",
+   "rl-let",
+   "rl-footfault"
+  ],
+  "ruleset": "共通",
+  "description": "サーブが 正しい サービスボックスに 入らない ことです。1本め が フォルトでも、もう 1本 打つ ことが できます。"
+ },
+ {
+  "id": "rl-doublefault",
+  "name": "ダブルフォルト",
+  "reading": "だぶるふぉると",
+  "journey": "rule",
+  "category": "フォルトと レット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "rule:fault",
+  "relatedTerms": [
+   "rl-fault",
+   "rl-secondserve"
+  ],
+  "ruleset": "共通",
+  "description": "1本め と 2本め の サーブが 両方とも フォルトに なる ことです。その ポイントは 相手の ものに なります。"
+ },
+ {
+  "id": "rl-let",
+  "name": "レット",
+  "reading": "れっと",
+  "journey": "rule",
+  "category": "フォルトと レット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "rule:fault",
+  "relatedTerms": [
+   "rl-fault",
+   "rl-netin",
+   "rl-nolet"
+  ],
+  "ruleset": "共通",
+  "description": "サーブが ネットに ふれてから 正しい サービスボックスに 入った ときなどに、その 1本を やりなおす ことです。失点にも 得点にも なりません。"
+ },
+ {
+  "id": "rl-footfault",
+  "name": "フットフォルト",
+  "reading": "ふっとふぉると",
+  "journey": "rule",
+  "category": "フォルトと レット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "rule:fault",
+  "relatedTerms": [
+   "rl-fault",
+   "rl-servestance"
+  ],
+  "ruleset": "共通",
+  "description": "サーブを 打つ ときに ベースラインや コートの 中に 足が ふれる 反則です。フォルト 1本と 同じ あつかいに なります。両足が 地面から はなれるのは だいじょうぶです。"
+ },
+ {
+  "id": "rl-firstserve",
+  "name": "ファーストサーブ",
+  "reading": "ふぁーすとさーぶ",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-secondserve",
+   "rl-fault"
+  ],
+  "ruleset": "共通",
+  "description": "1ポイントで 最初に 打つ サーブです。フォルトでも 2本めが あるので、思いきって 速い ボールを 打つ 選手が 多いです。"
+ },
+ {
+  "id": "rl-secondserve",
+  "name": "セカンドサーブ",
+  "reading": "せかんどさーぶ",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "2️⃣",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-firstserve",
+   "rl-doublefault"
+  ],
+  "ruleset": "共通",
+  "description": "1本め が フォルトに なった あとに 打つ 2本めの サーブです。これも 入らないと ダブルフォルトなので、回転を かけて 確実に 入れる ことが 多いです。"
+ },
+ {
+  "id": "rl-twobounce",
+  "name": "ツーバウンド",
+  "reading": "つーばうんど",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚾",
+  "mapNode": "rule:point",
+  "relatedTerms": [
+   "rl-inplay",
+   "rl-wc2bounce"
+  ],
+  "ruleset": "共通",
+  "description": "ボールが 自分の コートで 2回 はずむ 前に 打ち返せない ことです。その ポイントは 失点に なります。返すのは ワンバウンドか ノーバウンドまでです。"
+ },
+ {
+  "id": "rl-nettouch",
+  "name": "ネットタッチ",
+  "reading": "ねっとたっち",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🥅",
+  "mapNode": "rule:inplay",
+  "relatedTerms": [
+   "rl-overnet",
+   "rl-bodytouch"
+  ],
+  "ruleset": "共通",
+  "description": "プレー中に 体や ラケット・ウェアが ネットや ネットポストに ふれる ことです。ふれた 選手の 失点に なります。"
+ },
+ {
+  "id": "rl-in",
+  "name": "イン",
+  "reading": "いん",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "rule:call",
+  "relatedTerms": [
+   "rl-out",
+   "rl-challenge"
+  ],
+  "ruleset": "共通",
+  "description": "ボールが コートの 中に 落ちる ことです。ラインに 少しでも かかれば イン に なります。ラインも コートの 一部 だからです。"
+ },
+ {
+  "id": "rl-out",
+  "name": "アウト",
+  "reading": "あうと",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "rule:call",
+  "relatedTerms": [
+   "rl-in",
+   "rl-challenge"
+  ],
+  "ruleset": "共通",
+  "description": "ボールが コートの 線の 外に 落ちる ことです。打った 選手の 失点に なります。"
+ },
+ {
+  "id": "rl-tiebreak",
+  "name": "タイブレーク",
+  "reading": "たいぶれーく",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "rule:tiebreak",
+  "relatedTerms": [
+   "rl-tbserve",
+   "rl-tenpointtb",
+   "rl-tbset"
+  ],
+  "ruleset": "共通",
+  "description": "ゲームが 6-6 に なった ときに セットを 決める 方法です。先に 7点 取り、2点差が つくまで つづきます。6点ごとに エンドを かえます。"
+ },
+ {
+  "id": "rl-changeend",
+  "name": "チェンジエンド",
+  "reading": "ちぇんじえんど",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-90sec",
+   "rl-setbreak"
+  ],
+  "ruleset": "共通",
+  "description": "コートの 左右を 入れかわる ことです。1ゲームめ・3ゲームめ の ように 奇数の ゲームの あとに かえます。風や 日ざしの 有利・不利が かたよらない ためです。"
+ },
+ {
+  "id": "rl-inplay",
+  "name": "インプレー",
+  "reading": "いんぷれー",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎾",
+  "mapNode": "rule:inplay",
+  "relatedTerms": [
+   "rl-twobounce",
+   "rl-netin"
+  ],
+  "ruleset": "共通",
+  "description": "ボールが 打たれて ポイントが 決まるまでの、プレーが つづいて いる あいだの ことです。サーブが 入った ところから はじまります。"
+ },
+ {
+  "id": "rl-bestof3",
+  "name": "3セットマッチ",
+  "reading": "さんせっとまっち",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🥉",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-bestof5",
+   "rl-matchtb"
+  ],
+  "ruleset": "共通",
+  "description": "先に 2セット 取った 方が 勝つ 試合です。ツアーの ほとんどの 大会の シングルスは この 形です。"
+ },
+ {
+  "id": "rl-bestof5",
+  "name": "5セットマッチ",
+  "reading": "ごせっとまっち",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏟️",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-bestof3",
+   "rl-tenpointtb"
+  ],
+  "ruleset": "共通",
+  "description": "先に 3セット 取った 方が 勝つ 長い 試合です。4大大会の 男子シングルスで 使われ、体力と 集中力が ためされます。"
+ },
+ {
+  "id": "rl-serveright",
+  "name": "サーブは 右から",
+  "reading": "さーぶはみぎから",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-servechange",
+   "rl-servestance"
+  ],
+  "ruleset": "共通",
+  "description": "どの ゲームも 最初の サーブは コートの 右半分(デュースサイド)から 打ちます。そのあと 1ポイントごとに 左右を かえて、対角の サービスボックスに 入れます。"
+ },
+ {
+  "id": "rl-cointoss",
+  "name": "コイントス",
+  "reading": "こいんとす",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪙",
+  "mapNode": "rule:order",
+  "relatedTerms": [
+   "rl-servechange",
+   "rl-changeend"
+  ],
+  "ruleset": "共通",
+  "description": "試合の はじめに コインなどで 決める ことです。勝った 選手は サーブか レシーブか、または どちらの エンドから はじめるかを えらべます。"
+ },
+ {
+  "id": "rl-challenge",
+  "name": "チャレンジ",
+  "reading": "ちゃれんじ",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📺",
+  "mapNode": "rule:call",
+  "relatedTerms": [
+   "rl-elc",
+   "rl-overrule",
+   "rl-in"
+  ],
+  "ruleset": "共通",
+  "description": "判定に 納得できない ときに、選手が 機械の 映像で 確かめて もらう しくみです。ボールの 落ちた 場所が 画面に 出ます。電子ライン判定の 大会では 機械が すぐ 決めます。"
+ },
+ {
+  "id": "rl-manner",
+  "name": "観戦マナー",
+  "reading": "かんせんまなー",
+  "journey": "rule",
+  "category": "マナーと 罰",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤫",
+  "mapNode": "rule:conduct",
+  "relatedTerms": [
+   "rl-handshake",
+   "rl-changeend"
+  ],
+  "ruleset": "共通",
+  "description": "見る 人の マナーです。ポイント中は 静かに して、席の 移動は チェンジエンドの ときに します。選手が 集中できる ように する ためです。"
+ },
+ {
+  "id": "rl-handshake",
+  "name": "試合後の 握手",
+  "reading": "しあいごのあくしゅ",
+  "journey": "rule",
+  "category": "マナーと 罰",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "rule:conduct",
+  "relatedTerms": [
+   "rl-manner",
+   "rl-codeviolation"
+  ],
+  "ruleset": "共通",
+  "description": "試合が 終わったら、ネットの ところで 相手と 握手を します。主審とも 握手を して、おたがいを たたえるのが テニスの ならわしです。"
+ },
+ {
+  "id": "rl-noad",
+  "name": "ノーアドバンテージ",
+  "reading": "のーあどばんてーじ",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-matchtb",
+   "rl-tiebreak"
+  ],
+  "acceptedReadings": [
+   "のーあどばんてーじ",
+   "のーあど"
+  ],
+  "ruleset": "共通",
+  "description": "デュースに なったら、次の 1点を とった 方が その ゲームを 取る 方式です。ITF の 決まりでは レシーブする 側が 左右の どちらで 受けるかを えらびます。ダブルスで よく 使われます。"
+ },
+ {
+  "id": "rl-matchtb",
+  "name": "マッチタイブレーク",
+  "reading": "まっちたいぶれーく",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "rule:tiebreak",
+  "relatedTerms": [
+   "rl-tenpointtb",
+   "rl-noad",
+   "rl-bestof3"
+  ],
+  "ruleset": "共通",
+  "description": "最後の セットの かわりに 行う 10点の タイブレークです。先に 10点・2点差で 勝ちが 決まります。ATP ファイナルズの ダブルスなどで 使われます。"
+ },
+ {
+  "id": "rl-tenpointtb",
+  "name": "10ポイントタイブレーク",
+  "reading": "てんぽいんとたいぶれーく",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏆",
+  "mapNode": "rule:tiebreak",
+  "relatedTerms": [
+   "rl-tiebreak",
+   "rl-bestof5"
+  ],
+  "ruleset": "共通",
+  "description": "4大大会の 最終セットが 6-6 に なった ときに 行う、先に 10点の タイブレークです。2022年から 4つの 大会が そろって この 形に しました。それまでは 大会ごとに ちがいました。"
+ },
+ {
+  "id": "rl-setbreak",
+  "name": "セットブレーク",
+  "reading": "せっとぶれーく",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-90sec",
+   "rl-changeend"
+  ],
+  "ruleset": "共通",
+  "description": "セットと セットの あいだの 休けいです。ITF の 決まりでは いちばん 長くて 120秒です。"
+ },
+ {
+  "id": "rl-25sec",
+  "name": "25秒ルール",
+  "reading": "にじゅうごびょうるーる",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-shotclock",
+   "rl-timeviolation"
+  ],
+  "ruleset": "共通",
+  "description": "ポイントが 終わってから 次の サーブまでは、いちばん 長くて 25秒 と いう 決まりです。試合の テンポを 保つ ための ルールです。"
+ },
+ {
+  "id": "rl-90sec",
+  "name": "90秒の 休けい",
+  "reading": "きゅうじゅうびょうのきゅうけい",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧃",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-changeend",
+   "rl-setbreak"
+  ],
+  "ruleset": "共通",
+  "description": "チェンジエンドの ときの 休けいは いちばん 長くて 90秒です。ただし 各セットの 1ゲームめの あとと タイブレークの とちゅうは 休まずに コートを かえます。"
+ },
+ {
+  "id": "rl-shotclock",
+  "name": "ショットクロック",
+  "reading": "しょっとくろっく",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-25sec",
+   "rl-timeviolation"
+  ],
+  "ruleset": "共通",
+  "description": "ポイントの あいだに 使える 時間を 数えて 見せる 大きな 時計です。選手も 観客も のこりの 秒数が わかります。4大大会や 多くの ツアーの 大会で 使われます。"
+ },
+ {
+  "id": "rl-timeviolation",
+  "name": "タイムバイオレーション",
+  "reading": "たいむばいおれーしょん",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-25sec",
+   "rl-shotclock",
+   "rl-warning"
+  ],
+  "ruleset": "共通",
+  "description": "決められた 時間を こえて しまう 反則です。ツアーでは 1回めは 警告で、つぎからは サーバーなら サーブ 1本、レシーバーなら 1ポイントを 失います。"
+ },
+ {
+  "id": "rl-mto",
+  "name": "メディカルタイムアウト",
+  "reading": "めでぃかるたいむあうと",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-toilet",
+   "rl-setbreak"
+  ],
+  "ruleset": "共通",
+  "description": "体の ぐあいを トレーナーに 見て もらう ための 時間です。ITF の 決まりでは 3分です。"
+ },
+ {
+  "id": "rl-elc",
+  "name": "電子ライン判定",
+  "reading": "でんしらいんはんてい",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤖",
+  "mapNode": "rule:call",
+  "relatedTerms": [
+   "rl-challenge",
+   "rl-ballmark"
+  ],
+  "ruleset": "共通",
+  "description": "カメラと 機械が ボールの イン・アウトを 判定する しくみです。ATP は 2025年から ツアーの 大会で 使い、ウィンブルドンも 2025年に 線審を やめました。全仏は 2026年も 線審が 判定して います。"
+ },
+ {
+  "id": "rl-overrule",
+  "name": "オーバールール",
+  "reading": "おーばーるーる",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "☝️",
+  "mapNode": "rule:call",
+  "relatedTerms": [
+   "rl-challenge",
+   "rl-in"
+  ],
+  "ruleset": "共通",
+  "description": "線審の 判定が はっきり まちがって いる ときに、主審が 判定を 言いなおす ことです。"
+ },
+ {
+  "id": "rl-ballmark",
+  "name": "ボールマーク",
+  "reading": "ぼーるまーく",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "rule:call",
+  "relatedTerms": [
+   "rl-elc",
+   "rl-in"
+  ],
+  "ruleset": "クレー",
+  "description": "クレーコートに のこる ボールの あとです。イン か アウト か 迷う ときは、主審が 台から おりて あとを 見に いきます。赤土の コートならではの 判定です。"
+ },
+ {
+  "id": "rl-selfjudge",
+  "name": "セルフジャッジ",
+  "reading": "せるふじゃっじ",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "rule:call",
+  "relatedTerms": [
+   "rl-in",
+   "rl-out",
+   "rl-manner"
+  ],
+  "ruleset": "共通",
+  "description": "審判が いない 試合で、選手が 自分で 判定する ことです。自分の コート側に 落ちた ボールは 自分が 判定します。迷った ときは 相手に 有利に とるのが マナーです。"
+ },
+ {
+  "id": "rl-codeviolation",
+  "name": "コードバイオレーション",
+  "reading": "こーどばいおれーしょん",
+  "journey": "rule",
+  "category": "マナーと 罰",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "rule:conduct",
+  "relatedTerms": [
+   "rl-warning",
+   "rl-pointpenalty",
+   "rl-gamepenalty"
+  ],
+  "ruleset": "共通",
+  "description": "選手の ふるまいの 決まりを やぶる 反則です。くり返すと 罰が だんだん 重く なります。"
+ },
+ {
+  "id": "rl-pointpenalty",
+  "name": "ポイントペナルティ",
+  "reading": "ぽいんとぺなるてぃ",
+  "journey": "rule",
+  "category": "マナーと 罰",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "rule:conduct",
+  "relatedTerms": [
+   "rl-warning",
+   "rl-gamepenalty",
+   "rl-codeviolation"
+  ],
+  "ruleset": "共通",
+  "description": "反則を くり返した ときに、罰として 相手に 1ポイントを あたえる ことです。警告の つぎの 段階です。"
+ },
+ {
+  "id": "rl-coaching",
+  "name": "コーチング",
+  "reading": "こーちんぐ",
+  "journey": "rule",
+  "category": "マナーと 罰",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "rule:conduct",
+  "relatedTerms": [
+   "rl-codeviolation",
+   "rl-warning"
+  ],
+  "ruleset": "共通",
+  "description": "コーチが 試合中に 助言する ことです。ポイント中は だめで、大会が みとめれば ポイントの あいだや 休けい中に 短く 伝えられます。手の 合図は いつでも、ことばは 同じ エンドに いる ときだけです。"
+ },
+ {
+  "id": "rl-bodytouch",
+  "name": "ボディタッチ",
+  "reading": "ぼでぃたっち",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "rule:point",
+  "relatedTerms": [
+   "rl-nettouch",
+   "rl-twobounce"
+  ],
+  "ruleset": "共通",
+  "description": "プレー中の ボールが ラケット いがいの 体や ウェアに 当たる ことです。当たった 選手の 失点です。コートの 外に いても、ノーバウンドで 当たれば 失点に なります。"
+ },
+ {
+  "id": "rl-overnet",
+  "name": "オーバーネット",
+  "reading": "おーばーねっと",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "rule:inplay",
+  "relatedTerms": [
+   "rl-nettouch",
+   "rl-hindrance"
+  ],
+  "ruleset": "共通",
+  "description": "ボールが まだ 自分の コートに 来ていないのに、ネットを こえて 打って しまう 反則です。打った あとの ラケットが ネットを こえるのは だいじょうぶです。"
+ },
+ {
+  "id": "rl-netin",
+  "name": "ネットイン",
+  "reading": "ねっといん",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rule:inplay",
+  "relatedTerms": [
+   "rl-let",
+   "rl-inplay",
+   "rl-posthit"
+  ],
+  "ruleset": "共通",
+  "description": "ラリー中の ボールが ネットに ふれて 相手コートに 入る ことです。そのまま プレーは つづきます。サーブの ときは レット に なります。"
+ },
+ {
+  "id": "rl-servechange",
+  "name": "サーブの 交代",
+  "reading": "さーぶのこうたい",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "rule:order",
+  "relatedTerms": [
+   "rl-serveright",
+   "rl-cointoss",
+   "rl-dblserveorder"
+  ],
+  "ruleset": "共通",
+  "description": "サーブは 1ゲームごとに 交代します。1ゲームめで サーブを 受けた 選手が、2ゲームめで サーブを 打ちます。"
+ },
+ {
+  "id": "rl-dblserveorder",
+  "name": "ダブルスの サーブじゅん",
+  "reading": "だぶるすのさーぶじゅん",
+  "journey": "rule",
+  "category": "ダブルスと 車いす",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "rule:doubles",
+  "relatedTerms": [
+   "rl-dblreceiveorder",
+   "rl-servechange"
+  ],
+  "ruleset": "共通",
+  "description": "ダブルスでは 各セットの はじめに、どちらが サーブを 打つかを ペアで 決めます。4人が 順番に サーブを 打ち、その セットの あいだは 順番を かえません。"
+ },
+ {
+  "id": "rl-dblreceiveorder",
+  "name": "ダブルスの レシーブじゅん",
+  "reading": "だぶるすのれしーぶじゅん",
+  "journey": "rule",
+  "category": "ダブルスと 車いす",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "rule:doubles",
+  "relatedTerms": [
+   "rl-dblserveorder",
+   "rl-dblanyone"
+  ],
+  "ruleset": "共通",
+  "description": "ダブルスで サーブを 受ける 順番です。セットの はじめに、どちらが 右側で 受けるかを 決め、その セットの あいだは かえません。"
+ },
+ {
+  "id": "rl-wc2bounce",
+  "name": "車いすテニスの 2バウンド",
+  "reading": "くるまいすてにすのつーばうんど",
+  "journey": "rule",
+  "category": "ダブルスと 車いす",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "♿",
+  "mapNode": "rule:wheel",
+  "relatedTerms": [
+   "rl-wcbody",
+   "rl-wcpush",
+   "rl-twobounce"
+  ],
+  "ruleset": "共通",
+  "description": "車いすテニスでは、ボールが 2回 はずむ までに 打ち返せば よい 決まりです。2回めの バウンドは コートの 外でも かまいません。ほかは ふつうの テニスと ほぼ 同じです。"
+ },
+ {
+  "id": "rl-walkover",
+  "name": "ウォークオーバー",
+  "reading": "うぉーくおーばー",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-retire",
+   "rl-default"
+  ],
+  "ruleset": "共通",
+  "description": "相手が 試合を 始められず、戦わずに 勝ちが 決まる ことです。日本語では 不戦勝 と いいます。"
+ },
+ {
+  "id": "rl-retire",
+  "name": "リタイア",
+  "reading": "りたいあ",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏳️",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-walkover",
+   "rl-mto"
+  ],
+  "ruleset": "共通",
+  "description": "試合の とちゅうで 続けられなく なり、試合を やめる ことです。相手の 勝ちに なります。"
+ },
+ {
+  "id": "rl-toilet",
+  "name": "トイレットブレーク",
+  "reading": "といれっとぶれーく",
+  "journey": "rule",
+  "category": "時間",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚻",
+  "mapNode": "rule:time",
+  "relatedTerms": [
+   "rl-mto",
+   "rl-setbreak"
+  ],
+  "ruleset": "共通",
+  "description": "トイレや 着がえの ために コートを はなれる 休けいです。とれる 回数や 時間は、大会の 決まりで 決められて います。"
+ },
+ {
+  "id": "rl-gamepenalty",
+  "name": "ゲームペナルティ",
+  "reading": "げーむぺなるてぃ",
+  "journey": "rule",
+  "category": "マナーと 罰",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "rule:conduct",
+  "relatedTerms": [
+   "rl-pointpenalty",
+   "rl-default"
+  ],
+  "ruleset": "共通",
+  "description": "反則を さらに くり返した ときに、罰として 相手に 1ゲームを あたえる ことです。ポイントペナルティの つぎの 段階です。"
+ },
+ {
+  "id": "rl-default",
+  "name": "デフォルト",
+  "reading": "でふぉると",
+  "journey": "rule",
+  "category": "マナーと 罰",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "rule:conduct",
+  "relatedTerms": [
+   "rl-gamepenalty",
+   "rl-codeviolation"
+  ],
+  "ruleset": "共通",
+  "description": "とても 重い 反則が あった ときに、その 選手を 失格に して 試合を 終わらせる ことです。いちばん 重い 罰です。"
+ },
+ {
+  "id": "rl-warning",
+  "name": "警告",
+  "reading": "けいこく",
+  "journey": "rule",
+  "category": "マナーと 罰",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "rule:conduct",
+  "relatedTerms": [
+   "rl-codeviolation",
+   "rl-pointpenalty"
+  ],
+  "ruleset": "共通",
+  "description": "反則の 1回めに 主審が 出す 注意です。多くの 大会では、警告 → ポイント → ゲーム と 罰が 重く なって いきます。"
+ },
+ {
+  "id": "rl-notup",
+  "name": "ノットアップ",
+  "reading": "のっとあっぷ",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙅‍♂️",
+  "mapNode": "rule:call",
+  "relatedTerms": [
+   "rl-twobounce",
+   "rl-overrule"
+  ],
+  "ruleset": "共通",
+  "description": "ボールが 2回 はずんでから 打たれた ときに、主審が する コールです。打つのが 間に合わなかった ことを 知らせ、その ポイントは 失点に なります。"
+ },
+ {
+  "id": "rl-nolet",
+  "name": "ノーレット",
+  "reading": "のーれっと",
+  "journey": "rule",
+  "category": "フォルトと レット",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "rule:fault",
+  "relatedTerms": [
+   "rl-let",
+   "rl-netin"
+  ],
+  "ruleset": "共通",
+  "description": "サーブが ネットに ふれても やりなおさず、そのまま プレーを つづける 方式です。ITF の 規則では、大会が えらべる 方式の 1つとして のって います。"
+ },
+ {
+  "id": "rl-shortset",
+  "name": "ショートセット",
+  "reading": "しょーとせっと",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🩳",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-nextgen",
+   "rl-tbset"
+  ],
+  "ruleset": "共通",
+  "description": "先に 4ゲーム 取った 方が 取る 短い セットです。2025年の ネクストジェン ATP ファイナルズでは、3-3 で タイブレークに なる 形で 使われました。"
+ },
+ {
+  "id": "rl-tbset",
+  "name": "タイブレークセット",
+  "reading": "たいぶれーくせっと",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-advset",
+   "rl-tiebreak"
+  ],
+  "ruleset": "共通",
+  "description": "ゲームが 6-6 に なったら タイブレークで 決める セットです。いまの テニスでは ほとんどの セットが この 形です。"
+ },
+ {
+  "id": "rl-advset",
+  "name": "アドバンテージセット",
+  "reading": "あどばんてーじせっと",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "♾️",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-tbset",
+   "rl-tenpointtb"
+  ],
+  "ruleset": "共通",
+  "description": "タイブレークを せず、2ゲーム差が つくまで つづける セットです。むかしの 4大大会の 最終セットでは この 形が 使われ、とても 長い 試合が 生まれました。"
+ },
+ {
+  "id": "rl-tbserve",
+  "name": "タイブレークの サーブじゅん",
+  "reading": "たいぶれーくのさーぶじゅん",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "rule:tiebreak",
+  "relatedTerms": [
+   "rl-tiebreak",
+   "rl-matchtb"
+  ],
+  "ruleset": "共通",
+  "description": "タイブレークでは 最初の 1点だけ ひとりが 打ち、そのあとは 2点ずつ 交代で サーブします。最初の 1点は デュースサイドから 打ちます。"
+ },
+ {
+  "id": "rl-doublehit",
+  "name": "ダブルヒット",
+  "reading": "だぶるひっと",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "rule:inplay",
+  "relatedTerms": [
+   "rl-bodytouch",
+   "rl-overnet"
+  ],
+  "ruleset": "共通",
+  "description": "ボールに わざと 2回 ラケットを 当てる 反則です。1回の スイングで たまたま 2回 当たって しまうのは、反則に なりません。"
+ },
+ {
+  "id": "rl-hindrance",
+  "name": "ヒンダランス",
+  "reading": "ひんだらんす",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "rule:inplay",
+  "relatedTerms": [
+   "rl-overnet",
+   "rl-let"
+  ],
+  "ruleset": "共通",
+  "description": "相手の プレーの じゃまに なる ことです。わざと した ときは 失点、わざとでは ない ときや となりの コートから ボールが 入った ときは レット に なります。"
+ },
+ {
+  "id": "rl-posthit",
+  "name": "ネットポストに 当たる ボール",
+  "reading": "ねっとぽすとにあたるぼーる",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪧",
+  "mapNode": "rule:inplay",
+  "relatedTerms": [
+   "rl-netin",
+   "rl-aroundpost"
+  ],
+  "ruleset": "共通",
+  "description": "ラリー中に ボールが ネットポストに 当たって 相手コートに 入れば、正しい 返球です。でも サーブが ネットポストに 当たると フォルトに なります。"
+ },
+ {
+  "id": "rl-aroundpost",
+  "name": "ポストの 外を 回る ショット",
+  "reading": "ぽすとのそとをまわるしょっと",
+  "journey": "rule",
+  "category": "インプレーと 失点",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "rule:inplay",
+  "relatedTerms": [
+   "rl-posthit",
+   "rl-netin"
+  ],
+  "ruleset": "共通",
+  "description": "ネットの 上を 通らず、ネットポストの 外側を 回って 相手コートに 入る ボールです。ネットより 低くても 正しい 返球に なります。"
+ },
+ {
+  "id": "rl-retoss",
+  "name": "トスの やりなおし",
+  "reading": "とすのやりなおし",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-servestance",
+   "rl-receiverready"
+  ],
+  "ruleset": "共通",
+  "description": "サーブの トスが うまく 上がらない ときに、打たずに ボールを つかむ ことです。つかんで やりなおしても フォルトには なりません。"
+ },
+ {
+  "id": "rl-receiverready",
+  "name": "レシーバーの 準備",
+  "reading": "れしーばーのじゅんび",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧘",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-retoss",
+   "rl-servechange"
+  ],
+  "ruleset": "共通",
+  "description": "サーバーは、サーブを 受ける 選手の 準備が できるまで 打っては いけません。受ける 選手が 返そうと すれば、準備が できて いた と みなされます。"
+ },
+ {
+  "id": "rl-servestance",
+  "name": "サーブの 立ち位置",
+  "reading": "さーぶのたちいち",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-footfault",
+   "rl-serveright"
+  ],
+  "ruleset": "共通",
+  "description": "サーブは ベースラインの 後ろで、センターマークと サイドラインを のばした 線の あいだに 立って 打ちます。シングルスでは シングルスの 線、ダブルスでは ダブルスの 線までです。"
+ },
+ {
+  "id": "rl-dblanyone",
+  "name": "ダブルスの 打つ 順",
+  "reading": "だぶるすのうつじゅん",
+  "journey": "rule",
+  "category": "ダブルスと 車いす",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤜",
+  "mapNode": "rule:doubles",
+  "relatedTerms": [
+   "rl-dblreceiveorder",
+   "rl-dblserveorder"
+  ],
+  "ruleset": "共通",
+  "description": "ダブルスの ラリーでは、ペアの どちらが 打っても かまいません。交代で 打つ 決まりは なく、近い 方が 打つのが ふつうです。"
+ },
+ {
+  "id": "rl-wrongorder",
+  "name": "順番の まちがい",
+  "reading": "じゅんばんのまちがい",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "rule:order",
+  "relatedTerms": [
+   "rl-servechange",
+   "rl-dblserveorder"
+  ],
+  "ruleset": "共通",
+  "description": "サーブの 順番や エンドを まちがえたら、気づいた ときに 正しく 直します。それまでの ポイントは そのまま 数えます。"
+ },
+ {
+  "id": "rl-wcbody",
+  "name": "車いすは 体の 一部",
+  "reading": "くるまいすはからだのいちぶ",
+  "journey": "rule",
+  "category": "ダブルスと 車いす",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🦽",
+  "mapNode": "rule:wheel",
+  "relatedTerms": [
+   "rl-wc2bounce",
+   "rl-wcpush"
+  ],
+  "ruleset": "共通",
+  "description": "車いすテニスでは、車いすは 選手の 体の 一部と して あつかわれます。だから ボールが 車いすに 当たれば、体に 当たったのと 同じに なります。"
+ },
+ {
+  "id": "rl-wcpush",
+  "name": "サーブ前の ひとこぎ",
+  "reading": "さーぶまえのひとこぎ",
+  "journey": "rule",
+  "category": "ダブルスと 車いす",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "rule:wheel",
+  "relatedTerms": [
+   "rl-wcbody",
+   "rl-wc2bounce"
+  ],
+  "ruleset": "共通",
+  "description": "車いすテニスでは、サーブを 打つ 前に 車いすを 1回 こいで 動いても よい 決まりです。打つ ときは ベースラインの 後ろに いなければ いけません。"
+ },
+ {
+  "id": "rl-ballchange",
+  "name": "ボールチェンジ",
+  "reading": "ぼーるちぇんじ",
+  "journey": "rule",
+  "category": "サーブ",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🆕",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-cointoss",
+   "rl-bestof3"
+  ],
+  "ruleset": "共通",
+  "description": "試合の とちゅうで 新しい ボールに かえる ことです。決めた 奇数の ゲームごと か、セットの はじめに かえる と ITF の 規則に あります。"
+ },
+ {
+  "id": "rl-rulebook",
+  "name": "テニス規則",
+  "reading": "てにすきそく",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-scorecall",
+   "rl-tiebreak"
+  ],
+  "ruleset": "共通",
+  "description": "ITF(国際テニス連盟)が 決める テニスの ルールです。いまは 2026年版で、英語版が 正しい 文と されて います。"
+ },
+ {
+  "id": "rl-nextgen",
+  "name": "ネクストジェンルール",
+  "reading": "ねくすとじぇんるーる",
+  "journey": "rule",
+  "category": "試合の 形",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "rule:format",
+  "relatedTerms": [
+   "rl-shortset",
+   "rl-noad"
+  ],
+  "ruleset": "共通",
+  "description": "若い 選手の 大会 ネクストジェン ATP ファイナルズで ためされる 新しい ルールです。2025年は 4ゲーム先取の セットや ノーアド、サーブの 1本めと 2本めの あいだは 8秒などが ためされました。"
+ },
+ {
+  "id": "rl-scorecall",
+  "name": "スコアは サーバーから",
+  "reading": "すこあはさーばーから",
+  "journey": "rule",
+  "category": "判定",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "rule:call",
+  "relatedTerms": [
+   "rl-servechange",
+   "rl-selfjudge"
+  ],
+  "ruleset": "共通",
+  "description": "スコアを 言う ときは、サーブを 打つ 側の 点を 先に 言います。30-15 なら、サーバーが 30点、レシーバーが 15点 です。"
+ }
+]

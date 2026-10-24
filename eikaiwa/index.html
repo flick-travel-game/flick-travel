@@ -454,7 +454,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- 答えの ひらがな あり / 無し(けいくん 2026-10-24「フリック漢字以外のすべてのフリックゲームも ひらがな無しの選択が出来るようにしてください」)。
          ぜんぶの ゲームで 同じ 1つの きまり(localStorage の flick-kana)。無し = 打つ 字が ？ に なる(まちがえた 1字だけ 見える)。自己ベストは あり / 無し で 別 -->
     <div class="kana-opt" id="kana-opt" role="group" aria-label="答えの ひらがなの 見せかた"><span>👀 答えの ひらがな</span>
-      <button type="button" data-kana="on" class="on" aria-pressed="true">あ あり</button><button type="button" data-kana="off" aria-pressed="false">🙈 無し</button></div>
+      <button type="button" data-kana="on" class="on" aria-pressed="true">あり</button><button type="button" data-kana="off" aria-pressed="false">無し</button></div>
     <p class="kana-note-home" id="kana-note"></p>
     <div class="modes" id="modes"></div>
     <div id="kabu-panel"></div><!-- 株式フリック旅行だけ: 集めた会社・称号(kabu/kabu.js) -->
@@ -1280,7 +1280,7 @@ function kanaOff(){ return noKana; }
 function setKana(on){ noKana = !on; store("flick-kana", on ? "on" : "off"); drawKana(); }
 function drawKana(){
   document.querySelectorAll("#kana-opt button").forEach(b => { const on = (b.dataset.kana === "off") === noKana; b.classList.toggle("on", on); b.setAttribute("aria-pressed", on ? "true" : "false"); });
-  const n = $("#kana-note"); if(n) n.textContent = noKana ? "🙈 打つ 字が ？ に なるよ。答えを 思い出して 打とう。まちがえると その 1字だけ 見えるよ。自己ベストは「無し」で 別に おぼえるよ。" : "あ 打つ 字(ひらがな)が 見えるよ。「無し」に すると ？ に なって、思い出して 打つ 練習が できるよ。";
+  const n = $("#kana-note"); if(n) n.textContent = noKana ? "🙈 打つ 字が ？ に なるよ。答えを 思い出して 打とう。まちがえると その 1字だけ 見えるよ。自己ベストは「無し」で 別に おぼえるよ。" : "👀 打つ 字(ひらがな)が 見えるよ。「無し」に すると ？ に なって、思い出して 打つ 練習が できるよ。";
 }
 function maskTarget(){
   if(!noKana) return;

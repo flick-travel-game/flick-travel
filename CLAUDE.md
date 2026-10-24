@@ -1251,7 +1251,9 @@
   事実の 直し: 退場は ペナルティエリアで 待つ・2人の リベロは 13人以上 登録の とき(大会の 大きさに 関係ない)・SV.LEAGUE の ライセンスの 数字を 消した・チームの 前の 名前(JTサンダーズ広島)・ユニチカは 2000年に 活動を 終えた など
 - ふりがなは 文を 言いかえて よけた(「◯対◯」→「◯点ずつ」・通る・角・数歩・白帯・際・春高・皇后杯・八幡・大松・猫田・森田淳悟 など)。`FIX` は まだ 空。見かたは `python3 tools/volley/ruby_dump.py <旅>`
 - 📖 Wikipedia は 243 / 630語。ちがう 記事 16こは `NO_WIKI`(レセプション → パーティー・ダルラン → べつの 人・インナー → 下着 など)。**写真は まだ 取っていない**(取るなら 物だけ。⚠️ 選手の 顔・チームの エンブレム・ボールの 会社の ロゴを 入れない。人の 語は `SKIP_FIELD` に)
-- 絵は **まだ**(仮の アイコン `tools/volley/placeholder_icon.py`。`hero=False`・`logo=False`)。届いたら 四角い 絵 → `tools/volley/art/square-src.png` → `python3 tools/icon_from_square.py volley`(`iconv` +1)/ 題名 `tools/volley/art/title-src.png` → `python3 tools/title_from_art.py volley`(`logo=True`・`art.word` を 実寸)/ `volley/hero.webp`(`hero=True`)。
+- **トップの 絵は 入れた**(2026-10-24。`volley/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。1回目は 札の ことばが ゲームに 無い もの だらけで 入れなかった。
+  2回目の のこり 4か所は **絵の 中で 直した**(`tools/volley/fix_text.py`): ぼーらんど → ぽーらんど / ぶぉーめーしょん → ふぉーめーしょん / せかいせんしゅけん(くずれ)/ レベル3「なるう!」→「なろう!」。もとの 絵は 入れものに 入れていない
+- アイコン・題名は **まだ**(仮の アイコン `tools/volley/placeholder_icon.py`。`logo=False`)。届いたら 四角い 絵 → `tools/volley/art/square-src.png` → `python3 tools/icon_from_square.py volley`(`iconv` +1)/ 題名 `tools/volley/art/title-src.png` → `python3 tools/title_from_art.py volley`(`logo=True`・`art.word` を 実寸)/ `volley/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは 実在の 選手の 顔・チームや 大会の ロゴ・ボールの 会社の 柄を 描かせない。人物は 下 3分の1に 小さく。「バレボール」「ワールドバレー」に なりやすいので 字を かならず 読む
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`・販売ページ `HOME_GAMES`(スポーツの 章、ボクシングの となり。絵なし = 名前の 字)・規約の 一覧 `FLICK_SERIES_GAMES` に 足した(speed-king)
 - ⭐ **毎年の 見直しの 予約が ある**(`trig_01TUCypNk63BrMTagkyvN542`。毎年 9月1日 朝8時45分。けいくん 2026-10-24「1」)。⚠️ **ファイル名 `terms-rule.json` / `terms-star.json` と `mkmeta.py` の `RV` を 変えない**

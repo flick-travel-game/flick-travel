@@ -1,0 +1,1286 @@
+[
+ {
+  "id": "rl-touchnet",
+  "name": "タッチネット",
+  "reading": "たっちねっと",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🥅",
+  "mapNode": "rule:netfoul",
+  "relatedTerms": [
+   "rl-overnet",
+   "rl-antenna"
+  ],
+  "ruleset": "共通",
+  "description": "ボールを さわる 動きの とちゅうで、アンテナの あいだの ネットに ふれて しまう 反則です。跳ぶ・打つ・着地する までが 動きに 入ります。相手の 点に なります。"
+ },
+ {
+  "id": "rl-overnet",
+  "name": "オーバーネット",
+  "reading": "おーばーねっと",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "rule:netfoul",
+  "relatedTerms": [
+   "rl-touchnet",
+   "rl-passing"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "相手の コートの 上で、相手が 攻撃する 前に ボールに さわって しまう 反則です。ブロックで 手を ネットの 向こうに 出すのは、相手の じゃまを しなければ だいじょうぶです。"
+ },
+ {
+  "id": "rl-holding",
+  "name": "ホールディング",
+  "reading": "ほーるでぃんぐ",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✊",
+  "mapNode": "rule:contact",
+  "relatedTerms": [
+   "rl-double",
+   "rl-handset"
+  ],
+  "ruleset": "共通",
+  "description": "ボールを つかんだり 投げたり して、はじかずに 持って しまう 反則です。キャッチとも よばれます。ボールは はね返す ように さわるのが 決まりです。",
+  "acceptedReadings": [
+   "ほーるでぃんぐ",
+   "きゃっち"
+  ]
+ },
+ {
+  "id": "rl-double",
+  "name": "ダブルコンタクト",
+  "reading": "だぶるこんたくと",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "rule:contact",
+  "relatedTerms": [
+   "rl-holding",
+   "rl-firstcontact"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "ひとりの 選手が ボールに 続けて 2回 さわって しまう 反則です。ドリブルとも よばれます。ブロックの あとや、チームの 1回目の ときには 例外が あります。",
+  "acceptedReadings": [
+   "だぶるこんたくと",
+   "どりぶる"
+  ]
+ },
+ {
+  "id": "rl-fourhit",
+  "name": "フォアヒット",
+  "reading": "ふぉあひっと",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "4️⃣",
+  "mapNode": "rule:contact",
+  "relatedTerms": [
+   "rl-blocktouch",
+   "rl-netplay"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "相手に 返す までに、チームで 4回 ボールに さわって しまう 反則です。オーバータイムスとも よばれます。返球は 3回までに しなければ なりません。",
+  "acceptedReadings": [
+   "ふぉあひっと",
+   "おーばーたいむす"
+  ]
+ },
+ {
+  "id": "rl-footfault",
+  "name": "フットフォルト",
+  "reading": "ふっとふぉると",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-servicezone",
+   "rl-serve8"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "サーブを 打つ ときや ジャンプサーブで 踏み切る ときに、エンドラインや コートの 中を 踏んで しまう 反則です。打った あとなら コートの 中に 着地しても かまいません。"
+ },
+ {
+  "id": "rl-25",
+  "name": "25点先取",
+  "reading": "にじゅうごてんせんしゅ",
+  "journey": "rule",
+  "category": "得点と セット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-2tensa",
+   "rl-5set"
+  ],
+  "ruleset": "6人制",
+  "description": "6人制の 1セットは、先に 25点を とった チームが 勝ちです。ただし 2点の 差が ないと 終わりません。24対24に なると、2点 はなれる まで 続きます。"
+ },
+ {
+  "id": "rl-2tensa",
+  "name": "2点差",
+  "reading": "にてんさ",
+  "journey": "rule",
+  "category": "得点と セット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-25",
+   "rl-21"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "セットを とるには、相手より 2点 多く なければ ならない 決まりです。6人制は 24対24、ビーチは 20対20から、2点 はなれる まで 試合が 続きます。"
+ },
+ {
+  "id": "rl-attackline",
+  "name": "アタックライン",
+  "reading": "あたっくらいん",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-frontzone",
+   "rl-backattackrule"
+  ],
+  "ruleset": "6人制",
+  "description": "センターラインから 3メートルの ところに 引かれた 線です。この 線より 前が フロントゾーンです。後衛の 選手が 高い ボールを 打つ ときは、この 線より 後ろから 跳びます。"
+ },
+ {
+  "id": "rl-endline",
+  "name": "エンドライン",
+  "reading": "えんどらいん",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-sideline",
+   "rl-servicezone"
+  ],
+  "ruleset": "共通",
+  "description": "コートの いちばん 奥に ある、ネットと 平行な 線です。サーブは この 線の 後ろから 打ちます。線は コートの 中に 入るので、ボールが 線に のれば インです。"
+ },
+ {
+  "id": "rl-sideline",
+  "name": "サイドライン",
+  "reading": "さいどらいん",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟧",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-endline",
+   "rl-inout"
+  ],
+  "ruleset": "共通",
+  "description": "コートの 横の ながい 線です。2本の サイドラインと 2本の エンドラインで コートが できています。サイドラインの 真上の ネットには、白い サイドバンドが 付いています。"
+ },
+ {
+  "id": "rl-centerline",
+  "name": "センターライン",
+  "reading": "せんたーらいん",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-passing",
+   "rl-attackline"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "6人制で ネットの 真下に 引かれた、コートを ふたつに 分ける 線です。線の はばは 両方の コートの ものと されます。ビーチの コートには この 線が ありません。"
+ },
+ {
+  "id": "rl-antenna",
+  "name": "アンテナ",
+  "reading": "あんてな",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "rule:net",
+  "relatedTerms": [
+   "rl-antennaout",
+   "rl-touchnet"
+  ],
+  "ruleset": "共通",
+  "description": "ネットの 両はしに 立てる 赤と 白の しまの 細い 棒です。アンテナは ネットの 一部と されます。ボールが アンテナに 当たったり、その 外を 通ったり すると アウトです。"
+ },
+ {
+  "id": "rl-netheight",
+  "name": "ネットの高さ",
+  "reading": "ねっとのたかさ",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "rule:net",
+  "relatedTerms": [
+   "rl-antenna",
+   "rl-beachcourt"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "ネットの 上の はしの 高さは、男子が 2.43メートル、女子が 2.24メートルです。6人制も ビーチも 同じ 高さです。高さは コートの まんなかで はかります。"
+ },
+ {
+  "id": "rl-shushin",
+  "name": "主審",
+  "reading": "しゅしん",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧑‍⚖️",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-fukushin",
+   "rl-servepermit"
+  ],
+  "ruleset": "共通",
+  "description": "ネットの はしの 審判台に 立って 試合を さばく、いちばん 上の 審判です。笛で サーブの 合図を して、ラリーの おわりを 決めます。目の 高さは ネットより 少し 上です。"
+ },
+ {
+  "id": "rl-fukushin",
+  "name": "副審",
+  "reading": "ふくしん",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-shushin",
+   "rl-kirokuin"
+  ],
+  "ruleset": "6人制",
+  "description": "主審の 向かい側で、ポストの 近くに 立つ 審判です。主審を 助けながら、ネットの 下や タッチネット、レシーブ側の 位置、交代や タイムアウトを 見ます。主審が 続けられない ときは かわりを します。"
+ },
+ {
+  "id": "rl-timeout",
+  "name": "タイムアウト",
+  "reading": "たいむあうと",
+  "journey": "rule",
+  "category": "リベロと 交代",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "rule:sub",
+  "relatedTerms": [
+   "rl-sub",
+   "rl-tto"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "チームが 試合を 止めて、ひと息 ついたり 作戦を 話したり する 時間です。長さは 30秒です。6人制は 1セットに 2回、ビーチは 1セットに 1回まで とれます。"
+ },
+ {
+  "id": "rl-sub",
+  "name": "選手交代",
+  "reading": "せんしゅこうたい",
+  "journey": "rule",
+  "category": "リベロと 交代",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "rule:sub",
+  "relatedTerms": [
+   "rl-timeout",
+   "rl-libreplace"
+  ],
+  "ruleset": "6人制",
+  "description": "コートの 選手と ベンチの 選手が 入れかわる ことです。6人制では 1セットに 6回まで できます。はじめに 出た 選手は、1セットに 1回だけ 同じ 位置に もどれます。"
+ },
+ {
+  "id": "rl-serve8",
+  "name": "サーブの8秒",
+  "reading": "さーぶのはちびょう",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-servepermit",
+   "rl-serve5"
+  ],
+  "ruleset": "6人制",
+  "description": "6人制の サーブは、主審が 笛を ふいてから 8秒の うちに 打たなければ ならない 決まりです。間に 合わないと 反則です。笛より 先に 打った サーブは やり直しに なります。"
+ },
+ {
+  "id": "rl-yellow",
+  "name": "イエローカード",
+  "reading": "いえろーかーど",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 1,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-redcard",
+   "rl-delay"
+  ],
+  "ruleset": "6人制",
+  "description": "ふるまいが よくない 選手や チームに 主審が 出す 注意の カードです。6人制では 点は 動きませんが、これより 先は 罰が つく という しるしです。記録用紙に 書かれます。"
+ },
+ {
+  "id": "rl-positional",
+  "name": "ポジショナルフォルト",
+  "reading": "ぽじしょなるふぉると",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "rule:rotation",
+  "relatedTerms": [
+   "rl-serviceorder",
+   "rl-lineup"
+  ],
+  "ruleset": "6人制",
+  "description": "サーブを 打つ 瞬間に、決まった 位置の 順に 並んで いない 反則です。2025年からの 競技規則では、守る レシーブ側だけが 順番どおりに 並べば よく、サーブ側は 自由な 位置に 立てます。"
+ },
+ {
+  "id": "rl-5set",
+  "name": "5セットめ",
+  "reading": "ごせっとめ",
+  "journey": "rule",
+  "category": "得点と セット",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "5️⃣",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-25",
+   "rl-courtchange"
+  ],
+  "ruleset": "6人制",
+  "description": "6人制で 2対2に なった ときに 行う、勝ち負けを 決める セットです。このセットだけは 15点を 先に とった ほうが 勝ちで、ほかと 同じく 2点の 差が いります。"
+ },
+ {
+  "id": "rl-3setsenshu",
+  "name": "3セット先取",
+  "reading": "さんせっとせんしゅ",
+  "journey": "rule",
+  "category": "得点と セット",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏆",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-5set",
+   "rl-21"
+  ],
+  "ruleset": "6人制",
+  "description": "6人制の 試合は、先に 3セットを とった チームの 勝ちです。だから 試合は 3セットから 5セットの あいだで 終わります。セットの あいだの 休みは 3分です。"
+ },
+ {
+  "id": "rl-courtchange",
+  "name": "コートチェンジ",
+  "reading": "こーとちぇんじ",
+  "journey": "rule",
+  "category": "得点と セット",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "rule:score",
+  "relatedTerms": [
+   "rl-5set",
+   "rl-3set15"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "チームが コートを 入れかえる ことです。6人制は セットごとと、5セットめで 8点に なった とき。ビーチは 1・2セットめが 7点ごと、3セットめが 5点ごとです。風や 日ざしの 差を なくします。"
+ },
+ {
+  "id": "rl-blocktouch",
+  "name": "ブロックのワンタッチ",
+  "reading": "ぶろっくのわんたっち",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "rule:attack",
+  "relatedTerms": [
+   "rl-fourhit",
+   "rl-backblock"
+  ],
+  "ruleset": "6人制・ビーチ",
+  "description": "ブロックで ボールに さわった ときの 数えかたです。6人制では チームの 回数に 数えず、あと 3回 さわれます。ビーチでは 1回に 数えるので、のこりは 2回です。"
+ },
+ {
+  "id": "rl-backblock",
+  "name": "後衛のブロック",
+  "reading": "こうえいのぶろっく",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "rule:attack",
+  "relatedTerms": [
+   "rl-blocktouch",
+   "rl-libblock"
+  ],
+  "ruleset": "6人制",
+  "description": "ブロックが できるのは 前衛の 3人だけで、後衛の 選手が ブロックに 加わって ボールに さわると 反則です。ネットより 上に 手を 出して いる ときに 数えます。"
+ },
+ {
+  "id": "rl-serveblock",
+  "name": "サーブのブロック",
+  "reading": "さーぶのぶろっく",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "rule:attack",
+  "relatedTerms": [
+   "rl-backblock",
+   "rl-lifting"
+  ],
+  "ruleset": "6人制・シッティング",
+  "description": "相手の サーブを ネットぎわで ブロックする ことです。6人制では 反則に なります。シッティングバレーでは ゆるされて いて、6人制との 大きな ちがいの ひとつです。"
+ },
+ {
+  "id": "rl-backattackrule",
+  "name": "バックアタックの決まり",
+  "reading": "ばっくあたっくのきまり",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🛫",
+  "mapNode": "rule:attack",
+  "relatedTerms": [
+   "rl-attackline",
+   "rl-attackhit"
+  ],
+  "ruleset": "6人制",
+  "description": "後衛の 選手が ネットより 高い ボールを 打つ ときの 決まりです。踏み切る 足が アタックラインに ふれたり 越えたり して いては いけません。打った あとは 前に 着地できます。"
+ },
+ {
+  "id": "rl-libreplace",
+  "name": "リベロリプレイスメント",
+  "reading": "りべろりぷれいすめんと",
+  "journey": "rule",
+  "category": "リベロと 交代",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "rule:libero",
+  "relatedTerms": [
+   "rl-sub",
+   "rl-libblock"
+  ],
+  "ruleset": "6人制",
+  "description": "リベロが 後衛の 選手と 入れかわる ことです。ふつうの 選手交代の 回数には 数えず、何回でも できます。ただし 入れかわりの あいだには ラリーが 1回 いります。"
+ },
+ {
+  "id": "rl-libblock",
+  "name": "リベロのブロック",
+  "reading": "りべろのぶろっく",
+  "journey": "rule",
+  "category": "リベロと 交代",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "rule:libero",
+  "relatedTerms": [
+   "rl-libreplace",
+   "rl-liboverhand"
+  ],
+  "ruleset": "6人制",
+  "description": "リベロは ブロックも ブロックの ふりも できない 決まりです。サーブも 打てません。ネットより 高い ボールを 相手に 打ち返す 攻撃も できず、守り専門の 選手です。"
+ },
+ {
+  "id": "rl-delay",
+  "name": "遅延",
+  "reading": "ちえん",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-improper"
+  ],
+  "ruleset": "6人制",
+  "description": "交代の 準備が おそいなど、試合の 再開を おくらせる ことです。ディレイとも いいます。1回目は 注意だけですが、同じ 試合で 2回目からは 相手に 1点と サーブ権が うつります。",
+  "acceptedReadings": [
+   "ちえん",
+   "でぃれい"
+  ]
+ },
+ {
+  "id": "rl-challenge",
+  "name": "チャレンジ",
+  "reading": "ちゃれんじ",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📹",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-challengereferee",
+   "rl-inout"
+  ],
+  "ruleset": "6人制",
+  "description": "判定を ビデオで たしかめて もらう しくみで、大きな 大会で 使われます。インか アウトか などを 映像で 見直します。2025年からは ラリーが 終わってから かけます。",
+  "acceptedReadings": [
+   "ちゃれんじ",
+   "びでおはんてい"
+  ]
+ },
+ {
+  "id": "rl-redcard",
+  "name": "レッドカード",
+  "reading": "れっどかーど",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-yellow",
+   "rl-expulsion"
+  ],
+  "ruleset": "6人制",
+  "description": "礼儀に はずれた ふるまいを した ときに 出る 罰の カードです。6人制では 相手チームに 1点と サーブ権が 入ります。イエローカードより 重い しるしです。"
+ },
+ {
+  "id": "rl-senshin",
+  "name": "線審",
+  "reading": "せんしん",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-shushin",
+   "rl-inout"
+  ],
+  "ruleset": "6人制",
+  "description": "コートの 角の 近くに 立ち、旗で インか アウトかを 知らせる 審判です。4人か ふたりで つきます。ボールが アンテナに さわった ことも 旗で 合図します。"
+ },
+ {
+  "id": "rl-kirokuin",
+  "name": "記録員",
+  "reading": "きろくいん",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-fukushin",
+   "rl-assistscorer"
+  ],
+  "ruleset": "6人制",
+  "description": "主審の 向かいの 机に すわり、点数や 交代、タイムアウトを 記録用紙に 書く 係です。決まりと ちがう ことが あれば ブザーで 知らせます。副審と 力を 合わせて 動きます。"
+ },
+ {
+  "id": "rl-frontzone",
+  "name": "フロントゾーン",
+  "reading": "ふろんとぞーん",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-attackline",
+   "rl-liboverhand"
+  ],
+  "ruleset": "6人制",
+  "description": "センターラインから アタックラインまでの、ネットに 近い 場所です。サイドラインの 外の フリーゾーンまで 続くと 考えます。後衛の 選手は ここから 高い ボールを 打てません。"
+ },
+ {
+  "id": "rl-servicezone",
+  "name": "サービスゾーン",
+  "reading": "さーびすぞーん",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-endline",
+   "rl-footfault"
+  ],
+  "ruleset": "6人制",
+  "description": "エンドラインの 後ろに ある、はば 9メートルの サーブを 打つ 場所です。横は サイドラインを のばした 短い 線で しめされ、奥は フリーゾーンの はしまで 続きます。"
+ },
+ {
+  "id": "rl-21",
+  "name": "21点先取",
+  "reading": "にじゅういってんせんしゅ",
+  "journey": "rule",
+  "category": "得点と セット",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏖️",
+  "mapNode": "rule:beach",
+  "relatedTerms": [
+   "rl-3set15",
+   "rl-2tensa"
+  ],
+  "ruleset": "ビーチ・9人制",
+  "description": "ビーチバレーと 9人制では、先に 21点を とった チームが セットを とります。どちらも 20対20に なると、2点 はなれる まで 続きます。2セットを 先に とれば 勝ちです。"
+ },
+ {
+  "id": "rl-3set15",
+  "name": "3セットめ15点",
+  "reading": "さんせっとめじゅうごてん",
+  "journey": "rule",
+  "category": "得点と セット",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🌅",
+  "mapNode": "rule:beach",
+  "relatedTerms": [
+   "rl-21",
+   "rl-courtchange"
+  ],
+  "ruleset": "ビーチ",
+  "description": "ビーチで 1セットずつ とりあった ときに 行う 3セットめは、15点を 先に とった ほうが 勝ちです。2点の 差が いるのは ほかの セットと 同じです。"
+ },
+ {
+  "id": "rl-handset",
+  "name": "ハンドセット",
+  "reading": "はんどせっと",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👐",
+  "mapNode": "rule:beach",
+  "relatedTerms": [
+   "rl-holding",
+   "rl-openhand"
+  ],
+  "ruleset": "ビーチ",
+  "description": "ビーチで 指を 使って 上げる オーバーハンドの トスの ことです。1回目の ボールでも 指で 2度 さわれば 反則です。相手コートへ 指で 返すなら、肩の 線と 直角に 飛ばします。"
+ },
+ {
+  "id": "rl-beachcourt",
+  "name": "ビーチのコート",
+  "reading": "びーちのこーと",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🏝️",
+  "mapNode": "rule:beach",
+  "relatedTerms": [
+   "rl-netheight",
+   "rl-centerline"
+  ],
+  "ruleset": "ビーチ",
+  "description": "ビーチバレーの コートは 16メートル×8メートルで、6人制より 小さいです。線は テープの ような 帯で、センターラインは ありません。サーブで 砂が 動いて 線が ずれても 反則に なりません。"
+ },
+ {
+  "id": "rl-netplay",
+  "name": "ネットプレー",
+  "reading": "ねっとぷれー",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🕸️",
+  "mapNode": "rule:beach",
+  "relatedTerms": [
+   "rl-fourhit",
+   "rl-freeposition"
+  ],
+  "ruleset": "9人制",
+  "description": "9人制で ネットに かかった ボールを 続けて プレーできる 決まりです。ネットに ふれた ボールが あれば、4回までに 相手コートへ 返せば よい ことに なります。"
+ },
+ {
+  "id": "rl-freeposition",
+  "name": "フリーポジション",
+  "reading": "ふりーぽじしょん",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "rule:rotation",
+  "relatedTerms": [
+   "rl-netplay",
+   "rl-positional"
+  ],
+  "ruleset": "9人制",
+  "description": "9人制では ローテーションが なく、選手は 決まった 位置を 回りません。前に 立つ 人、後ろで 守る 人が ほぼ 決まって いて、6人制とは ちがう 技や 作戦が 生まれました。"
+ },
+ {
+  "id": "rl-lifting",
+  "name": "リフティング",
+  "reading": "りふてぃんぐ",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "rule:contact",
+  "relatedTerms": [
+   "rl-serveblock",
+   "rl-sitcourt"
+  ],
+  "ruleset": "シッティング",
+  "description": "シッティングバレーで、プレーの とき お尻から 肩までの 体が 床から はなれて しまう 反則です。とくに 攻撃や ブロックの ときに きびしく 見られます。"
+ },
+ {
+  "id": "rl-inout",
+  "name": "インとアウト",
+  "reading": "いんとあうと",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 2,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-sideline",
+   "rl-senshin"
+  ],
+  "ruleset": "共通",
+  "description": "ボールが 床に ついた とき、少しでも 線に さわって いれば インです。ぜんぶ 線の 外なら アウトです。天井や アンテナ、コートの 外の 人や 物に 当たっても アウトに なります。"
+ },
+ {
+  "id": "rl-passing",
+  "name": "パッシング・ザ・センターライン",
+  "reading": "ぱっしんぐざせんたーらいん",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👣",
+  "mapNode": "rule:netfoul",
+  "relatedTerms": [
+   "rl-centerline",
+   "rl-touchnet"
+  ],
+  "ruleset": "6人制",
+  "description": "足が センターラインを 越えて、ぜんぶ 相手の コートに 入って しまう 反則です。足の 一部が 線の 上か 真上に のこって いれば、相手の じゃまを しない かぎり 反則では ありません。"
+ },
+ {
+  "id": "rl-openhand",
+  "name": "オープンハンドのティップ",
+  "reading": "おーぷんはんどのてぃっぷ",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖖",
+  "mapNode": "rule:beach",
+  "relatedTerms": [
+   "rl-handset",
+   "rl-attackhit"
+  ],
+  "ruleset": "ビーチ",
+  "description": "ビーチで 指を ひらいた 手で ボールを 軽く 落とす 攻撃は 反則です。軽く 打つなら、指先を かたく そろえて 突きます。6人制では 反則では ありません。"
+ },
+ {
+  "id": "rl-firstcontact",
+  "name": "1回目の例外",
+  "reading": "いっかいめのれいがい",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "rule:contact",
+  "relatedTerms": [
+   "rl-double",
+   "rl-simultaneous"
+  ],
+  "ruleset": "6人制",
+  "description": "チームの 1回目の さわりでは、ひとつの 動きの 中なら ボールが 体の いくつかの 場所に 続けて 当たっても 反則に なりません。強い サーブや スパイクを 受けやすく するためです。"
+ },
+ {
+  "id": "rl-attackhit",
+  "name": "アタックヒット",
+  "reading": "あたっくひっと",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "💥",
+  "mapNode": "rule:attack",
+  "relatedTerms": [
+   "rl-backattackrule",
+   "rl-netin"
+  ],
+  "ruleset": "6人制",
+  "description": "サーブと ブロック 以外で、ボールを 相手の ほうへ 送る プレーを まとめて よぶ 言葉です。ボールが ネットの 面を ぜんぶ 越えるか、相手が さわった ときに 完了と されます。"
+ },
+ {
+  "id": "rl-servepermit",
+  "name": "サービスの許可",
+  "reading": "さーびすのきょか",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-shushin",
+   "rl-serve8"
+  ],
+  "ruleset": "6人制",
+  "description": "両チームの 準備が できて、サーブを 打つ 人が ボールを 持った ことを 主審が たしかめて、笛で 合図する ことです。ここから ボールが 試合に 入ります。"
+ },
+ {
+  "id": "rl-serviceorder",
+  "name": "サービスオーダー",
+  "reading": "さーびすおーだー",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "rule:rotation",
+  "relatedTerms": [
+   "rl-positional",
+   "rl-lineup"
+  ],
+  "ruleset": "6人制",
+  "description": "サーブを 打つ 順番の ことです。順番を まちがえて 打つと ローテーションの 反則に なり、相手に 1点と サーブ権が うつります。順番は はじめの 並びで 決まります。",
+  "acceptedReadings": [
+   "さーびすおーだー",
+   "さーびんぐおーだー"
+  ]
+ },
+ {
+  "id": "rl-antennaout",
+  "name": "アンテナの外",
+  "reading": "あんてなのそと",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "rule:net",
+  "relatedTerms": [
+   "rl-antenna",
+   "rl-attackhit"
+  ],
+  "ruleset": "6人制",
+  "description": "アンテナの 外を 通った ボールは アウトです。ただし チームの 1回目の ボールなら、相手の フリーゾーンまで 追いかけて、同じ 側の アンテナの 外を 通して 取り返せます。"
+ },
+ {
+  "id": "rl-assisted",
+  "name": "アシステッドヒット",
+  "reading": "あしすてっどひっと",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "rule:contact",
+  "relatedTerms": [
+   "rl-holding",
+   "rl-firstcontact"
+  ],
+  "ruleset": "6人制",
+  "description": "なかまや 物に つかまって 体を ささえ、その 力で ボールを 打つ 反則です。ただし ネットに ふれそうな なかまを 止めたり、引きもどしたり するのは かまいません。"
+ },
+ {
+  "id": "rl-expulsion",
+  "name": "退場",
+  "reading": "たいじょう",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-redcard",
+   "rl-yellow"
+  ],
+  "ruleset": "6人制",
+  "description": "とても 失礼な ふるまいを した 選手に 出る 罰です。赤と 黄色の カードを いっしょに 出します。その セットの あいだは コートに もどれず、ひかえ室で 待ちます。"
+ },
+ {
+  "id": "rl-assistscorer",
+  "name": "アシスタントスコアラー",
+  "reading": "あしすたんとすこあらー",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🗒️",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-kirokuin",
+   "rl-libreplace"
+  ],
+  "ruleset": "6人制",
+  "description": "記録員の となりに すわって 手伝う 係です。リベロの 入れかわりを 記録して、記録員が 続けられない ときは かわりを します。大きな 国際大会では かならず おかれます。"
+ },
+ {
+  "id": "rl-challengereferee",
+  "name": "チャレンジレフェリー",
+  "reading": "ちゃれんじれふぇりー",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-challenge",
+   "rl-shushin"
+  ],
+  "ruleset": "6人制",
+  "description": "ビデオの チャレンジを 使う 大会で、映像の 見直しを 見守る 審判です。決まりどおりに 進んで いるか 見て、結果を 主審に 伝えます。"
+ },
+ {
+  "id": "rl-tto",
+  "name": "テクニカルタイムアウト",
+  "reading": "てくにかるたいむあうと",
+  "journey": "rule",
+  "category": "リベロと 交代",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🕰️",
+  "mapNode": "rule:beach",
+  "relatedTerms": [
+   "rl-timeout",
+   "rl-21"
+  ],
+  "ruleset": "ビーチ",
+  "description": "ビーチの 国際大会で、1・2セットめに 両チームの 点を 足して 21点に なると 自動で とる 30秒の 休みです。3セットめには ありません。"
+ },
+ {
+  "id": "rl-sitcourt",
+  "name": "シッティングのコート",
+  "reading": "しってぃんぐのこーと",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "♿",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-lifting",
+   "rl-serveblock"
+  ],
+  "ruleset": "シッティング",
+  "description": "シッティングバレーの コートは 10メートル×6メートルで、アタックラインは センターラインから 2メートルです。ネットは 男子 1.15メートル、女子 1.05メートルと 低めです。"
+ },
+ {
+  "id": "rl-lineup",
+  "name": "ラインアップシート",
+  "reading": "らいんあっぷしーと",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "rule:rotation",
+  "relatedTerms": [
+   "rl-positional",
+   "rl-serviceorder"
+  ],
+  "ruleset": "6人制",
+  "description": "監督が セットの 前に 出す、はじめに コートに 出る 6人と その 並び順を 書いた 紙です。この 順番が そのセットの ローテーションに なります。出した あとは 交代で しか 変えられません。"
+ },
+ {
+  "id": "rl-improper",
+  "name": "不当な要求",
+  "reading": "ふとうなようきゅう",
+  "journey": "rule",
+  "category": "リベロと 交代",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙅‍♂️",
+  "mapNode": "rule:sub",
+  "relatedTerms": [
+   "rl-delay",
+   "rl-sub"
+  ],
+  "ruleset": "6人制",
+  "description": "ラリー中や 笛の あとの タイムアウトなど、決まりに 合わない 中断の お願いです。その 試合で 1回目は 記録されるだけですが、くり返すと 遅延の 罰に なります。"
+ },
+ {
+  "id": "rl-redesignation",
+  "name": "リベロの再指名",
+  "reading": "りべろのさいしめい",
+  "journey": "rule",
+  "category": "リベロと 交代",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🔖",
+  "mapNode": "rule:libero",
+  "relatedTerms": [
+   "rl-2libero",
+   "rl-libblock"
+  ],
+  "ruleset": "6人制",
+  "description": "リベロが ひとりだけで、その リベロが 続けられない とき、ほかの 選手を あたらしい リベロに 決める ことです。コートに 出て いない 選手から えらびます。"
+ },
+ {
+  "id": "rl-freezone",
+  "name": "フリーゾーン",
+  "reading": "ふりーぞーん",
+  "journey": "rule",
+  "category": "コートと ネット",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "rule:court",
+  "relatedTerms": [
+   "rl-servicezone",
+   "rl-antennaout"
+  ],
+  "ruleset": "6人制",
+  "description": "コートの まわりの、プレーしても よい 場所です。はばは 3メートル以上で、大きな 国際大会では サイドラインから 5メートル、エンドラインから 6.5メートル とります。"
+ },
+ {
+  "id": "rl-simultaneous",
+  "name": "同時接触",
+  "reading": "どうじせっしょく",
+  "journey": "rule",
+  "category": "ボールの 反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "rule:contact",
+  "relatedTerms": [
+   "rl-fourhit",
+   "rl-blocktouch"
+  ],
+  "ruleset": "6人制",
+  "description": "ふたり 以上が ボールに 同時に さわる ことです。味方 どうしなら ブロック 以外は 2回と 数えます。ネットの 上で 相手と 同時に さわったら、受けた チームが また 3回 さわれます。"
+ },
+ {
+  "id": "rl-2libero",
+  "name": "2人のリベロ",
+  "reading": "ふたりのりべろ",
+  "journey": "rule",
+  "category": "リベロと 交代",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "👯",
+  "mapNode": "rule:libero",
+  "relatedTerms": [
+   "rl-libreplace",
+   "rl-redesignation"
+  ],
+  "ruleset": "6人制",
+  "description": "1チームは リベロを ふたりまで 登録できます。コートに 出られるのは いつも ひとりだけです。大きな 大会で 13人 以上を 登録する ときは、ふたり おく ことが 決まりです。"
+ },
+ {
+  "id": "rl-liboverhand",
+  "name": "リベロのオーバーハンド",
+  "reading": "りべろのおーばーはんど",
+  "journey": "rule",
+  "category": "リベロと 交代",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "rule:libero",
+  "relatedTerms": [
+   "rl-frontzone",
+   "rl-libblock"
+  ],
+  "ruleset": "6人制",
+  "description": "リベロが フロントゾーンで 指を 使って 上げた トスは、ネットより 高い ところで 打っては いけない 決まりです。アタックラインより 後ろから 上げた トスなら 自由に 打てます。"
+ },
+ {
+  "id": "rl-screen",
+  "name": "スクリーン",
+  "reading": "すくりーん",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🙈",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-serviceorder",
+   "rl-footfault"
+  ],
+  "ruleset": "6人制",
+  "description": "サーブ側の 選手が 腕を ふったり 固まって 立ったり して、相手から サーブを 見えなく する 反則です。サーブの とき サーブ側は 頭より 上に 手を 上げては いけません。"
+ },
+ {
+  "id": "rl-serve5",
+  "name": "サーブの5秒",
+  "reading": "さーぶのごびょう",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "rule:beach",
+  "relatedTerms": [
+   "rl-serve8",
+   "rl-footfault"
+  ],
+  "ruleset": "ビーチ",
+  "description": "ビーチの サーブは、主審の 笛から 5秒の うちに 打つ 決まりです。6人制の 8秒より 短いです。打つ とき エンドラインの 下に 足を 入れても いけません。"
+ },
+ {
+  "id": "rl-9serve",
+  "name": "9人制のサーブ",
+  "reading": "きゅうにんせいのさーぶ",
+  "journey": "rule",
+  "category": "サーブと 位置",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "rule:serve",
+  "relatedTerms": [
+   "rl-freeposition",
+   "rl-netplay"
+  ],
+  "ruleset": "9人制",
+  "description": "9人制では サーブを 2本まで 打てます。1本目を 失敗しても もう一度 打てて、2本 続けて 失敗すると 相手の 点に なり、サーブ権も うつります。"
+ },
+ {
+  "id": "rl-netin",
+  "name": "ネットイン",
+  "reading": "ねっといん",
+  "journey": "rule",
+  "category": "ネットと 攻撃の 反則",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🎾",
+  "mapNode": "rule:net",
+  "relatedTerms": [
+   "rl-attackhit",
+   "rl-antennaout"
+  ],
+  "ruleset": "6人制",
+  "description": "ボールが ネットに ふれながら 相手コートへ 入る ことです。6人制では サーブでも ゆるされて います。ネットに 打ちこんだ ボールも、3回の うちなら 取り返せます。"
+ },
+ {
+  "id": "rl-cointoss",
+  "name": "コイントス",
+  "reading": "こいんとす",
+  "journey": "rule",
+  "category": "審判と 進行",
+  "difficulty": 3,
+  "field": "ルール",
+  "type": "concept",
+  "emoji": "🪙",
+  "mapNode": "rule:official",
+  "relatedTerms": [
+   "rl-shushin",
+   "rl-5set"
+  ],
+  "ruleset": "6人制",
+  "description": "試合の 前に 主審が 両キャプテンの 前で 行う 決めかたです。勝った ほうが サーブか レシーブか、または コートを えらびます。5セットめの 前にも もう一度 行います。"
+ }
+]

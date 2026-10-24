@@ -26,16 +26,16 @@ s = """/* フリック数学旅行: 算数〜高校受験・大学受験の 数�
 """ + s[a:]
 rep("KOKUGO_TERMS", "SUGAKU_TERMS")
 rep("const KOKUGO = ", "const SUGAKU = ")
-rep('const RANK_READY = true;  // かずともの FLICK_MODES に kyomi / kyoji / kkotowaza / kbunpo / kkobun / kkoten / kkanbun / kbungaku / khyoron / kokumas を 足す(speed-king)',
+rep('const RANK_READY = true;  // かずともの FLICK_MODES に kkgoi / kkatakana / kkotowaza / kbunpo / kkobun / kkoten / kkanbun / kbungaku / khyoron / kokumas を 足す(speed-king)',
     'const RANK_READY = true;  // かずともの FLICK_MODES に mkazu / mzukei / mshiki / mkansu / mdata / mkoko / mhito / sugamas を 足す(speed-king)')
-rep('const MODE_OF = { yomi:"kyomi", yoji:"kyoji", kotowaza:"kkotowaza", bunpo:"kbunpo", kobun:"kkobun", koten:"kkoten", kanbun:"kkanbun", bungaku:"kbungaku", hyoron:"khyoron" };',
+rep('const MODE_OF = { goi:"kkgoi", katakana:"kkatakana", kotowaza:"kkotowaza", bunpo:"kbunpo", kobun:"kkobun", koten:"kkoten", kanbun:"kkanbun", bungaku:"kbungaku", hyoron:"khyoron" };',
     'const MODE_OF = { kazu:"mkazu", zukei:"mzukei", shiki:"mshiki", kansu:"mkansu", data:"mdata", koko:"mkoko", hito:"mhito" };')
 rep('k:"kokuterm", hide:o.j === "yomi" && o.dv === 3', 'k:"sugaterm", hide:false, fx:o.c === "公式を打つ"')
 rep('LVN[o.dv].icon + " " + LVN[o.dv].name });', 'LVN[o.dv].icon + " " + LVN[o.dv].name + "(" + o.gr + ")" });')
 rep('kind:"kokuterm"', 'kind:"sugaterm"')
 rep('"kokumas"', '"sugamas"', 0)
 rep('levels.kokumas', 'levels.sugamas', 0); rep('pools.kokumas', 'pools.sugamas'); rep('colors.kokumas = "#3b5bdb"', 'colors.sugamas = "#3b5bdb"'); rep('maps.kokumas', 'maps.sugamas')
-rep('const MODES_ALL = ["kyomi", "kyoji", "kkotowaza", "kbunpo", "kkobun", "kkoten", "kkanbun", "kbungaku", "khyoron", "sugamas"];',
+rep('const MODES_ALL = ["kkgoi", "kkatakana", "kkotowaza", "kbunpo", "kkobun", "kkoten", "kkanbun", "kbungaku", "khyoron", "sugamas"];',
     'const MODES_ALL = ["mkazu", "mzukei", "mshiki", "mkansu", "mdata", "mkoko", "mhito", "sugamas"];')
 rep("国語図鑑", "数学図鑑", 0)
 rep("9つの 旅", "7つの 旅", 0)

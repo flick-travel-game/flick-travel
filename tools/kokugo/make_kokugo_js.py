@@ -23,15 +23,15 @@ s = """/* フリック国語旅行: 高校受験・大学受験の 国語の 知
 rep("PATISSIER_TERMS", "KOKUGO_TERMS")
 rep("const PATISSIER = ", "const KOKUGO = ")
 rep('const RANK_READY = true;  // かずともの FLICK_MODES に pzairyo / pkiji / pcream / psekai / pwagashi / pdogu / pmas を 足す(speed-king)',
-    'const RANK_READY = true;  // かずともの FLICK_MODES に kyomi / kyoji / kkotowaza / kbunpo / kkobun / kkoten / kkanbun / kbungaku / khyoron / kokumas を 足す(speed-king)')
+    'const RANK_READY = true;  // かずともの FLICK_MODES に kkgoi / kkatakana / kkotowaza / kbunpo / kkobun / kkoten / kkanbun / kbungaku / khyoron / kokumas を 足す(speed-king)')
 rep('const MODE_OF = { zairyo:"pzairyo", kiji:"pkiji", cream:"pcream", sekai:"psekai", wagashi:"pwagashi", dogu:"pdogu" };',
-    'const MODE_OF = { yomi:"kyomi", yoji:"kyoji", kotowaza:"kkotowaza", bunpo:"kbunpo", kobun:"kkobun", koten:"kkoten", kanbun:"kkanbun", bungaku:"kbungaku", hyoron:"khyoron" };')
+    'const MODE_OF = { goi:"kkgoi", katakana:"kkatakana", kotowaza:"kkotowaza", bunpo:"kbunpo", kobun:"kkobun", koten:"kkoten", kanbun:"kkanbun", bungaku:"kbungaku", hyoron:"khyoron" };')
 rep('k:"patiterm"', 'k:"kokuterm", hide:o.j === "yomi" && o.dv === 3')
 rep('kind:"patiterm"', 'kind:"kokuterm"')
 rep('"pmas"', '"kokumas"', 0)
 rep('levels.pmas', 'levels.kokumas', 0); rep('pools.pmas', 'pools.kokumas'); rep('colors.pmas = "#d6336c"', 'colors.kokumas = "#3b5bdb"'); rep('maps.pmas', 'maps.kokumas')
 rep('const MODES_ALL = ["pzairyo", "pkiji", "pcream", "psekai", "pwagashi", "pdogu", "kokumas"];',
-    'const MODES_ALL = ["kyomi", "kyoji", "kkotowaza", "kbunpo", "kkobun", "kkoten", "kkanbun", "kbungaku", "khyoron", "kokumas"];')
+    'const MODES_ALL = ["kkgoi", "kkatakana", "kkotowaza", "kbunpo", "kkobun", "kkoten", "kkanbun", "kbungaku", "khyoron", "kokumas"];')
 rep("お菓子図鑑", "国語図鑑", 0)
 rep("6つの 旅", "9つの 旅", 0)
 rep('flick-patissier', 'flick-kokugo', 0)

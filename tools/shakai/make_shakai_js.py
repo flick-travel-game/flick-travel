@@ -20,15 +20,15 @@ s = """/* フリック社会旅行: 高校受験・大学受験の 社会(公民
 """ + s[a:]
 rep("KOKUGO_TERMS", "SHAKAI_TERMS")
 rep("const KOKUGO = ", "const SHAKAI = ")
-rep("// かずともの FLICK_MODES に kyomi / kyoji / kkotowaza / kbunpo / kkobun / kkoten / kkanbun / kbungaku / khyoron / kokumas を 足す(speed-king)",
+rep("// かずともの FLICK_MODES に kkgoi / kkatakana / kkotowaza / kbunpo / kkobun / kkoten / kkanbun / kbungaku / khyoron / kokumas を 足す(speed-king)",
     "// かずともの FLICK_MODES に shkenpo / shseiji / shkeizai / shkokusai / shjapan / shsekai / shchizu / shmas を 足す(speed-king)")
-rep('const MODE_OF = { yomi:"kyomi", yoji:"kyoji", kotowaza:"kkotowaza", bunpo:"kbunpo", kobun:"kkobun", koten:"kkoten", kanbun:"kkanbun", bungaku:"kbungaku", hyoron:"khyoron" };',
+rep('const MODE_OF = { goi:"kkgoi", katakana:"kkatakana", kotowaza:"kkotowaza", bunpo:"kbunpo", kobun:"kkobun", koten:"kkoten", kanbun:"kkanbun", bungaku:"kbungaku", hyoron:"khyoron" };',
     'const MODE_OF = { kenpo:"shkenpo", seiji:"shseiji", keizai:"shkeizai", kokusai:"shkokusai", japan:"shjapan", sekai:"shsekai", chizu:"shchizu" };')
 rep('k:"kokuterm", hide:o.j === "yomi" && o.dv === 3', 'k:"shakaiterm"')
 rep('kind:"kokuterm"', 'kind:"shakaiterm"', 0)
 rep('"kokumas"', '"shmas"', 0)
 rep('levels.kokumas', 'levels.shmas', 0); rep('pools.kokumas', 'pools.shmas'); rep('colors.kokumas = "#3b5bdb"', 'colors.shmas = "#0c8599"'); rep('maps.kokumas', 'maps.shmas')
-rep('const MODES_ALL = ["kyomi", "kyoji", "kkotowaza", "kbunpo", "kkobun", "kkoten", "kkanbun", "kbungaku", "khyoron", "shmas"];',
+rep('const MODES_ALL = ["kkgoi", "kkatakana", "kkotowaza", "kbunpo", "kkobun", "kkoten", "kkanbun", "kbungaku", "khyoron", "shmas"];',
     'const MODES_ALL = ["shkenpo", "shseiji", "shkeizai", "shkokusai", "shjapan", "shsekai", "shchizu", "shmas"];')
 rep("国語図鑑", "社会図鑑", 0)
 rep('flick-kokugo', 'flick-shakai', 0)

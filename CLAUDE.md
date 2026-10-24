@@ -943,7 +943,10 @@
   フェード / アイコンタクトの 研究の 言いすぎ / 生類憐みの令を 公平に / 手を かがせるの 見なおしは furui / マイクロチップと 鑑札 / 2022年の 犬種と 行動の 研究の 数 / 肉球の 汗の 言いすぎ / うなるを しからない 理由 / フリーズの きもちを こわく ない ことばに
 - 📖 Wikipedia は 129 / 830語(`NO_WIKI` で 17語 外した: ガルダ・便器・賞・ザ・プラン9・集積回路・映画「いまを生きる」・雑誌「なかよし」など)。
   **写真は 犬種図鑑だけ 44枚**(しぐさは コードの 図。`SKIP_PREFIX` で ほかの 旅は 取らない)。ならべて 見て 6枚 外した(グループの 語に べつの 犬種・何匹も・ラバ・トイプードルに 大きな プードル・ブラッドハウンドに べつの 猟犬)
-- **絵は まだ**: 仮の アイコン(`tools/inu/placeholder_icon.py` = 夕やけに 白い 犬の 顔と ハート)。題名は 文字。届いたら `tools/inu/art/square-src.png` → `python3 tools/icon_from_square.py inu`(`iconv` を 2 に)/ 題名 `title-src.png` → `python3 tools/title_from_art.py inu`(`logo=True`・`art.word` を 実寸)/ `inu/hero.webp`(`hero=True`)。
+- **トップの 絵は 入れた**(2026-10-24。`inu/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。
+  ⚠️ 1回目は 入れなかった: 札 40こ中 約20こが ゲームに 無い ことば(むだぼえ・すいみん・こころ・どうぶつびょういん・るーる …)/「ぼくどうけん」/ **歯を むいた 犬 2枚**(「は」「うなる」)/ はーねす が あんしんの 箱 /「れっすん」が ミニゲーム。旅ごとに ゲームに ある 読みを 4つずつ 指定して 作りなおして もらった。
+  2回目は 札 40こ ぜんぶ ゲームに ある 読み・歯を むいた 犬なし。のこった 小さい 字 4つは **絵の 中で 直した**(`tools/inu/fix_text.py`): ようきゅうぽえ → ぼえ / さわがいきゅうじょけん → さいがい / きょうの かんそう → かんさつ / すずそう → やすもう。もとの 絵は 入れものに 入れていない
+- **アイコンと 題名は まだ**: 仮の アイコン(`tools/inu/placeholder_icon.py` = 夕やけに 白い 犬の 顔と ハート)。題名は 文字。届いたら `tools/inu/art/square-src.png` → `python3 tools/icon_from_square.py inu`(`iconv` を 2 に)/ 題名 `title-src.png` → `python3 tools/title_from_art.py inu`(`logo=True`・`art.word` を 実寸・`wordv` +1)。
   ⚠️ 絵を 頼む ときは 犬の 足 4本・しっぽ 1本・耳 2つ・こわい 顔や 歯を むいた 犬を 描かせない。人物は 下 3分の1に 小さく。「犬の気待ち」「犬の気持」に なりやすいので 届いた 字を かならず 読む。販売ページ `HOME_GAMES` と 規約の 一覧は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs inu/`(全166ステージ。旅 9×7 + 2×10 + マスター 83)/ `node tools/click-all.mjs inu/`(W=320 も)/ `python3 tools/inu/terms_js.py --check`
 

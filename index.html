@@ -9583,7 +9583,7 @@ function renderCard(){
     h += '<p class="spot">'+q.n+'</p><p class="country">'+q.c+'</p>';
   }
   h += '<div class="target" id="tgt"></div>';
-  if(noKana) h += '<p class="kana-note">🙈 ひらがな 無し: 答えを 思い出して 打とう。まちがえると その 1字だけ 見えるよ</p>';
+  if(noKana && !q.w) h += '<p class="kana-note">🙈 ひらがな 無し: 答えを 思い出して 打とう。まちがえると その 1字だけ 見えるよ</p>';  // 指で 書く 問題(漢字の 書き取り q.w)には 出さない(打つ 字が 無い)
   $("#card").innerHTML = h;
   $("#prog").textContent = (PLUG && PLUG.owns(mode) ? PLUG.lvInfo(mode, level).short : "Lv." + (level+1)) + "　" + (idx+1) + " / " + qs.length;
   renderTarget(0, false);

@@ -43,6 +43,8 @@ NS = __import__("re").compile(r"^(Wikipedia|WP|Help|ヘルプ|Portal|ポータ�
 UA = "flick-travel-wiki-links/1.0 (https://flick-travel-game.github.io/flick-travel/)"
 
 
+NO_WIKI.update({"volley:kh-reception": "パーティーの 記事", "volley:kh-fullset": "べつの 作品の 記事", "volley:kh-shoes": "上履きの 記事", "volley:rl-handset": "電話機の 記事", "volley:lg-kogohai": "べつの 大会の 記事", "volley:lg-champs": "選手権 全体の 記事", "volley:lg-scudetto": "サッカーの 記事", "volley:tm-trentino": "県の 記事", "volley:st-darlan": "べつの 人の 記事", "volley:st-akimoto": "べつの 名前の 記事", "volley:wz-broad": "車の 記事", "volley:wz-inner": "下着の 記事", "volley:tc-haikyu": "野球の 記事", "volley:tc-scouting": "べつの 運動の 記事", "volley:lg-regular": "スポーツ 全体の 記事", "volley:lg-roundrobin": "リーグ戦 全体の 記事"})  # フリックワールドバレーボール(2026-10-24。目で 見て 外した)
+
 def api(params):
     """POST で 聞く(題名が 50こ でも URL が 長く ならない)。429 は Retry-After だけ 待つ。呼ぶ あいだは 2秒 あける"""
     data = urllib.parse.urlencode(params).encode("utf-8")

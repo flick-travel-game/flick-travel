@@ -1305,5 +1305,755 @@
     "description": "毎日 体を なでながら、いつもと ちがう ところが ないか 見る ことです。毛の ようす・耳・目・足先などを さわって おくと、小さな 変化に 気づけます。気に なったら 獣医さんへ。",
     "kimochi": "たぶん なでられるのが 好きな 場所と 苦手な 場所が ある",
     "renshu": "家の 犬を なでる とき、頭から しっぽまで 順番に そっと さわってみよう。"
+  },
+  {
+    "id": "kr-oyatsu",
+    "name": "おやつ",
+    "reading": "おやつ",
+    "journey": "kurashi",
+    "category": "ごはん",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🦴",
+    "mapNode": "kurashi:food",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-gohan-ryo",
+      "kr-gohan"
+    ],
+    "description": "ごはんとは べつに あげる 小さな 食べ物です。犬は おやつが 大好きな ことが 多いですが、あげすぎると ごはんが 入らなく なります。1日に あげる 量を 家族で 決めて おくと 安心です。",
+    "kimochi": "たぶん「いい ものが 出てくるかも」と、ふくろの 音だけで わくわく している ことが 多い",
+    "renshu": "おやつを あげる 前に、家族で「きょう あげた 数」を 紙に 書いて みよう。"
+  },
+  {
+    "id": "kr-sanpo-yoi",
+    "name": "散歩の用意",
+    "reading": "さんぽのようい",
+    "journey": "kurashi",
+    "category": "散歩",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🎒",
+    "mapNode": "kurashi:walk",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-sanpo",
+      "kr-unchi"
+    ],
+    "description": "散歩に 出る 前の じゅんびです。リード・うんちを 入れる ふくろ・水などを 持ちます。用意を はじめると、犬は 散歩だと 気づいて 玄関に 来る ことが よく あります。",
+    "kimochi": "たぶん リードの 音を 聞いた だけで「散歩だ!」と うれしく なって いる ことが 多い",
+    "renshu": "散歩に 持って いく ものを 3つ 書きだして、出かける 前に いっしょに 確かめよう。"
+  },
+  {
+    "id": "kr-ame-sanpo",
+    "name": "雨の日の散歩",
+    "reading": "あめのひのさんぽ",
+    "journey": "kurashi",
+    "category": "散歩",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "☔",
+    "mapNode": "kurashi:walk",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-sanpo",
+      "kr-karada-fuku"
+    ],
+    "description": "雨の 日の 散歩です。雨の 日も 外の においを 楽しむ 犬が いる 一方、ぬれるのが 苦手な 犬も います。短めに したり、家の 中で 鼻を 使う あそびに かえたり できます。",
+    "kimochi": "ぬれるのが 苦手な 犬は たぶん 玄関で 足が 止まる ことが 多い",
+    "renshu": "雨の 日、家の 犬が 玄関で どんな 顔を するか 見てみよう。犬が いなければ 雨の 日の 散歩の 動画を 見よう。"
+  },
+  {
+    "id": "kr-mizuire",
+    "name": "水入れをあらう",
+    "reading": "みずいれをあらう",
+    "journey": "kurashi",
+    "category": "水と ねる 場所",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🫧",
+    "mapNode": "kurashi:water",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-atarashii-mizu",
+      "kr-mizunomiba"
+    ],
+    "description": "水を 入れる 器を あらう ことです。水入れは ぬるぬる しやすいので、毎日 あらって 新しい 水を 入れます。きれいな 水だと、犬も 気持ちよく 飲めます。",
+    "renshu": "家の 犬の 水入れを 指で さわって、ぬるぬる して いないか 確かめて みよう。"
+  },
+  {
+    "id": "kr-mofu",
+    "name": "毛布",
+    "reading": "もうふ",
+    "journey": "kurashi",
+    "category": "水と ねる 場所",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🛌",
+    "mapNode": "kurashi:bed",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-neru-basho",
+      "kr-samui-hi"
+    ],
+    "description": "犬の ねる 場所に しく やわらかい 布です。自分の においが ついた 毛布は、犬に とって 安心できる ものに なる ことが あります。ときどき 洗って 清潔に たもちます。",
+    "kimochi": "たぶん 自分の においの する 毛布に くるまると ほっと する ことが 多い",
+    "renshu": "家の 犬が 毛布の 上で ねる とき、どんな かっこうで ねて いるか 見てみよう。"
+  },
+  {
+    "id": "kr-ball",
+    "name": "ボールあそび",
+    "reading": "ぼーるあそび",
+    "journey": "kurashi",
+    "category": "あそび",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⚾",
+    "mapNode": "kurashi:play",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-mottekoi",
+      "kr-asobi-jikan"
+    ],
+    "description": "ボールを ころがしたり 投げたり して あそぶ ことです。追いかけるのが 好きな 犬は 多いですが、ボールは 犬の 口に のみこめない 大きさの ものを えらびます。",
+    "kimochi": "たぶん 動く ボールを 見ると「つかまえたい!」と 気持ちが 高まる ことが 多い",
+    "renshu": "家の 中で ボールを そっと ころがして、家の 犬が どこまで 追いかけるか 見てみよう。"
+  },
+  {
+    "id": "kr-omocha-bako",
+    "name": "おもちゃ箱",
+    "reading": "おもちゃばこ",
+    "journey": "kurashi",
+    "category": "あそび",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧸",
+    "mapNode": "kurashi:play",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-chiiku",
+      "kr-ball"
+    ],
+    "description": "犬の おもちゃを しまって おく 箱です。おもちゃを 出しっぱなしに せず、ときどき 入れかえると、犬は また 新しい 気持ちで あそべる ことが あります。",
+    "kimochi": "たぶん しばらく 見なかった おもちゃは「新しい!」と 感じる ことが 多い",
+    "renshu": "おもちゃを 2つの グループに 分けて、1週間ごとに 入れかえて みよう。"
+  },
+  {
+    "id": "kr-rusuban-omocha",
+    "name": "おるすばんのおもちゃ",
+    "reading": "おるすばんのおもちゃ",
+    "journey": "kurashi",
+    "category": "留守番",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧩",
+    "mapNode": "kurashi:alone",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-rusuban",
+      "kr-chiiku"
+    ],
+    "description": "留守番の あいだ、犬が ひとりで あそべる おもちゃです。中に おやつを 入れる おもちゃなら、時間を かけて 楽しめます。こわれにくく、のみこめない ものを えらびます。",
+    "kimochi": "たぶん 楽しい おもちゃが あると、ひとりの 時間も 落ちついて すごせる ことが 多い",
+    "renshu": "おうちの 人と いっしょに、留守番の とき わたす おもちゃを 1つ 決めて みよう。"
+  },
+  {
+    "id": "kr-koinu-toilet",
+    "name": "子犬のトイレ",
+    "reading": "こいぬのといれ",
+    "journey": "kurashi",
+    "category": "トイレ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🐶",
+    "mapNode": "kurashi:puppy",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-toilet",
+      "kr-toilet-timing"
+    ],
+    "description": "子犬の トイレの ことです。子犬は おしっこを がまん できる 時間が 短いので、ねおきや ごはんの 後に トイレへ つれて いきます。できたら たくさん ほめます。",
+    "kimochi": "たぶん 子犬は「したく なったら すぐ」で、場所を 選ぶ よゆうが ない ことが 多い",
+    "renshu": "子犬の トイレトレーニングの 動画を 見て、どんな ときに トイレへ つれて いくか 見てみよう。"
+  },
+  {
+    "id": "kr-karada-fuku",
+    "name": "体をふく",
+    "reading": "からだをふく",
+    "journey": "kurashi",
+    "category": "お手入れ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧻",
+    "mapNode": "kurashi:care",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-ame-sanpo",
+      "kr-nikukyu-care"
+    ],
+    "description": "散歩の 後や 雨の 日に、タオルで 体や 足を ふく ことです。さいしょは 足を さわられるのが 苦手な 犬も いるので、ほめながら 少しずつ 慣らします。",
+    "kimochi": "足に さわられると たぶん 少し どきっと する 犬も 多い",
+    "renshu": "家の 犬の 足を ふく とき、1本 ふく たびに「いいこ」と 声を かけて みよう。"
+  },
+  {
+    "id": "kr-gyunyu",
+    "name": "牛乳に気をつける",
+    "reading": "ぎゅうにゅうにきをつける",
+    "journey": "kurashi",
+    "category": "ごはん",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🥛",
+    "mapNode": "kurashi:ng",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-seibun",
+      "kr-tabetara"
+    ],
+    "description": "人の 飲む 牛乳は、おなかを こわしやすい 犬が 多い と 言われます。牛乳の 中の あまい 成分を うまく 分けられない 犬が いるためです。あげる 前に 獣医さんに 相談します。",
+    "renshu": "冷蔵庫の 中で、犬に あげない ほうが いい ものを 家族で 話して みよう。"
+  },
+  {
+    "id": "kr-tori-hone",
+    "name": "鶏の骨",
+    "reading": "とりのほね",
+    "journey": "kurashi",
+    "category": "ごはん",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🍗",
+    "mapNode": "kurashi:ng",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-tabetara",
+      "kr-seibun"
+    ],
+    "description": "火を 通した 鶏の 骨は かたく、たてに さけやすい と 言われます。だから 犬には あげません。もし 食べて しまったら、おうちの 人に 知らせて 獣医さんに 相談します。",
+    "renshu": "からあげを 食べた 後、骨を どこに すてるか 家族で 決めて おこう。"
+  },
+  {
+    "id": "kr-gohan-jikan",
+    "name": "ごはんの時間を決める",
+    "reading": "ごはんのじかんをきめる",
+    "journey": "kurashi",
+    "category": "ごはん",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⏰",
+    "mapNode": "kurashi:food",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-gohan-kaisu",
+      "kr-gohan"
+    ],
+    "description": "毎日 だいたい 同じ 時間に ごはんを あげる ことです。時間が そろうと、犬は「そろそろ ごはん」と わかって 落ちつきやすく なります。トイレの 時間も そろいやすく なります。",
+    "kimochi": "たぶん ごはんの 時間が 近づくと、そわそわ して 台所を 見る ことが 多い",
+    "renshu": "家の 犬が ごはんの 何分 前から そわそわ するか、時計を 見て 調べて みよう。"
+  },
+  {
+    "id": "kr-hayagui",
+    "name": "早食い",
+    "reading": "はやぐい",
+    "journey": "kurashi",
+    "category": "ごはん",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⚡",
+    "mapNode": "kurashi:food",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-gohan",
+      "kr-chiiku"
+    ],
+    "description": "ごはんを とても 早く 食べて しまう ことです。早食いの 犬には、ごはんを 何回かに 分けたり、でこぼこの ある 食器や 知育おもちゃを 使ったり して、ゆっくり 食べられる ように します。",
+    "kimochi": "たぶん「とられる 前に 食べなきゃ」と 急いで いる 犬も いる",
+    "renshu": "家の 犬が ごはんを 食べおわるまで 何秒 かかるか、そっと 数えて みよう。"
+  },
+  {
+    "id": "kr-natsu-sanpo",
+    "name": "夏の散歩の時間",
+    "reading": "なつのさんぽのじかん",
+    "journey": "kurashi",
+    "category": "散歩",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🌅",
+    "mapNode": "kurashi:walk",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-asphalt",
+      "kr-atsusa"
+    ],
+    "description": "夏は、すずしい 朝早くや 日が しずんだ 後に 散歩する ことです。日中の 地面は とても 熱く なります。出かける 前に 手の ひらで 地面を さわって 確かめます。",
+    "renshu": "夏の 夕方、手の ひらで 地面を 5秒 さわって、熱く ないか 確かめて みよう。"
+  },
+  {
+    "id": "kr-mizu-yoku",
+    "name": "水をよく飲む日",
+    "reading": "みずをよくのむひ",
+    "journey": "kurashi",
+    "category": "水と ねる 場所",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💧",
+    "mapNode": "kurashi:water",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-mizu-ryo",
+      "kr-atsusa"
+    ],
+    "description": "いつもより たくさん 水を 飲む 日です。暑い 日や よく 運動した 日は 飲む 量が ふえます。そうで ないのに 何日も たくさん 飲む ときは、獣医さんに 相談します。",
+    "kimochi": "暑い 日は たぶん「のどが かわいた」と 水入れに 何回も 行く ことが 多い",
+    "renshu": "家の 犬の 水入れに 朝 入れた 水が、夕方 どれくらい へったか 見てみよう。"
+  },
+  {
+    "id": "kr-basho-futatsu",
+    "name": "ねる場所を2つ",
+    "reading": "ねるばしょをふたつ",
+    "journey": "kurashi",
+    "category": "水と ねる 場所",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏠",
+    "mapNode": "kurashi:bed",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-neru-basho",
+      "kr-negura"
+    ],
+    "description": "犬の ねる 場所を 2か所 用意する ことです。日当たりの いい 場所と すずしい 場所が あると、犬は その日の 暑さに 合わせて 自分で えらべます。",
+    "kimochi": "たぶん 自分で えらべると、気持ちよく ねむれる 場所を さがす ことが 多い",
+    "renshu": "家の 犬が 朝と 夜で ねる 場所を かえて いるか、見てみよう。"
+  },
+  {
+    "id": "kr-toilet-nioi",
+    "name": "トイレのにおい",
+    "reading": "といれのにおい",
+    "journey": "kurashi",
+    "category": "トイレ",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👃",
+    "mapNode": "kurashi:toilet",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-toilet-sheet",
+      "kr-unchi"
+    ],
+    "description": "トイレの においの ことです。犬は 鼻が とても いいので、よごれた トイレは いやがる ことが あります。早めに かたづけて、においが のこらない ように します。",
+    "kimochi": "よごれた トイレの そばは たぶん 犬に とって 近づきたく ない 場所な ことが 多い",
+    "renshu": "トイレシートを かえる タイミングを 家族で 決めて、表に 書いて みよう。"
+  },
+  {
+    "id": "kr-takara-sagashi",
+    "name": "宝さがしあそび",
+    "reading": "たからさがしあそび",
+    "journey": "kurashi",
+    "category": "あそび",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💎",
+    "mapNode": "kurashi:play",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-hana-asobi",
+      "kr-nosework"
+    ],
+    "description": "部屋の どこかに おやつを かくして、犬に 鼻で さがして もらう あそびです。さいしょは 見える 場所に 置き、だんだん むずかしく します。雨の 日にも ぴったりです。",
+    "kimochi": "たぶん においを たどって 見つけると、とても 満足する ことが 多い",
+    "renshu": "家の 犬に 見える 場所へ おやつを 3つ 置いて、見つける 順番を 見てみよう。"
+  },
+  {
+    "id": "kr-kakurenbo",
+    "name": "かくれんぼ",
+    "reading": "かくれんぼ",
+    "journey": "kurashi",
+    "category": "あそび",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🙈",
+    "mapNode": "kurashi:play",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-asobi-jikan",
+      "kr-takara-sagashi"
+    ],
+    "description": "人が かくれて、犬に 見つけて もらう あそびです。見つけたら たくさん ほめて あげます。「おいで」の 練習にも なります。さいしょは すぐ 見つかる 場所に かくれます。",
+    "kimochi": "たぶん 家族を 見つけた とき、とても うれしい 気持ちに なる ことが 多い",
+    "renshu": "家族の だれかが ドアの かげに かくれて、家の 犬が 何秒で 来るか 数えて みよう。"
+  },
+  {
+    "id": "kr-kaeri-aisatsu",
+    "name": "帰ってきたときのあいさつ",
+    "reading": "かえってきたときのあいさつ",
+    "journey": "kurashi",
+    "category": "留守番",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚪",
+    "mapNode": "kurashi:alone",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-rusuban",
+      "kr-hitori-jikan"
+    ],
+    "description": "家に 帰って きた ときの あいさつです。犬が 落ちつくまで 少し 待ってから、静かに 声を かけると、帰る ことが 大さわぎに なりにくいと 言われます。",
+    "kimochi": "たぶん 家族が 帰ると、うれしくて じっと して いられない ことが 多い",
+    "renshu": "家に 帰ったら 10まで 数えて、家の 犬が 落ちついてから「ただいま」と 言おう。"
+  },
+  {
+    "id": "kr-fuyu-fuku",
+    "name": "冬の服",
+    "reading": "ふゆのふく",
+    "journey": "kurashi",
+    "category": "暑さ・寒さ",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧥",
+    "mapNode": "kurashi:season",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-samui-hi",
+      "kr-kanmouki"
+    ],
+    "description": "寒い 日に 犬に 着せる 服です。毛の 短い 犬・小さな 犬・年を とった 犬には 助けに なる ことが あります。服が 苦手な 犬も いるので、むりに 着せません。",
+    "kimochi": "服を 着ると たぶん 体が かたく なる 犬も いる",
+    "renshu": "冬の 散歩で 服を 着て いる 犬を はなれて 見て、どんな 毛の 犬が 多いか 数えて みよう。"
+  },
+  {
+    "id": "kr-me-teire",
+    "name": "目のお手入れ",
+    "reading": "めのおていれ",
+    "journey": "kurashi",
+    "category": "お手入れ",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👁",
+    "mapNode": "kurashi:care",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-kenko-check",
+      "kr-brushing"
+    ],
+    "description": "目の まわりを きれいに する お手入れです。目やにが ついて いたら、しめらせた やわらかい 布で そっと ふきます。目が 赤い・なみだが 多い ときは 獣医さんへ。",
+    "kimochi": "顔の 近くを さわられると たぶん 少し どきっと する 犬も 多い",
+    "renshu": "家の 犬の 目を 明るい 場所で そっと 見て、きのうと ちがう ところが ないか 見よう。"
+  },
+  {
+    "id": "kr-senior-gohan",
+    "name": "シニアのごはん",
+    "reading": "しにあのごはん",
+    "journey": "kurashi",
+    "category": "年れい",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🥣",
+    "mapNode": "kurashi:senior",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-senior-ki",
+      "kr-lifestage"
+    ],
+    "description": "年を とった 犬の ための ごはんです。体の 動かしかたが 変わるので、ごはんの 量や 種類を 見なおす ことが あります。かえる ときは 獣医さんに 相談して 少しずつ。",
+    "renshu": "年を とった 犬の ごはんの 動画を 見て、どんな 工夫が あるか さがして みよう。"
+  },
+  {
+    "id": "kr-hanokawari",
+    "name": "子犬の歯のはえかわり",
+    "reading": "こいぬのはのはえかわり",
+    "journey": "kurashi",
+    "category": "年れい",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🦷",
+    "mapNode": "kurashi:puppy",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-koinu",
+      "kr-hamigaki"
+    ],
+    "description": "子犬の 歯が、大人の 歯に かわる ことです。生後 数か月の ころに はえかわり、その ころは 口が むずむず して、ものを よく かじる ことが あります。かじって いい おもちゃを 用意します。",
+    "kimochi": "たぶん 歯が むずむず して、何か かじりたい 気持ちが 強い ことが 多い",
+    "renshu": "子犬が おもちゃを かじる 動画を 見て、どんな おもちゃを かじって いるか 見てみよう。"
+  },
+  {
+    "id": "kr-taiju-kiroku",
+    "name": "体重の記録",
+    "reading": "たいじゅうのきろく",
+    "journey": "kurashi",
+    "category": "ごはん",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "kurashi:food",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-gohan-ryo",
+      "kr-body-condition"
+    ],
+    "description": "犬の 体重を はかって 書きのこす ことです。毎月 はかると、少しずつの 変化に 気づけます。人が 犬を だいて はかり、人だけの 体重を 引く 方法も あります。",
+    "renshu": "家の 犬の 体重を おうちの 人と はかって、カレンダーに 書いて みよう。"
+  },
+  {
+    "id": "kr-body-condition",
+    "name": "ボディコンディション",
+    "reading": "ぼでぃこんでぃしょん",
+    "journey": "kurashi",
+    "category": "ごはん",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "kurashi:food",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-taiju-kiroku",
+      "kr-gohan-ryo"
+    ],
+    "description": "体を さわったり 上から 見たり して、太りすぎや やせすぎを 見る やりかたです。あばら骨に そっと ふれて わかるか、上から 見て 腰の くびれが あるかを 見ます。",
+    "renshu": "動画で 犬を 上から 見た すがたを さがして、腰の くびれが あるか 見てみよう。",
+    "ei": "body condition"
+  },
+  {
+    "id": "kr-goin",
+    "name": "誤飲をふせぐ",
+    "reading": "ごいんをふせぐ",
+    "journey": "kurashi",
+    "category": "ごはん",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧷",
+    "mapNode": "kurashi:ng",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-tabetara",
+      "kr-kanyo"
+    ],
+    "description": "食べ物で ない ものを 犬が のみこまない ように する ことです。小さな おもちゃ・電池・薬・ひもなどは、犬の 届かない 場所に しまいます。のみこんだら すぐ 獣医さんへ。",
+    "kimochi": "たぶん 犬は 気に なる ものを まず 口で 確かめよう と する ことが 多い",
+    "renshu": "家の 床を 犬の 目の 高さで 見て、口に 入りそうな ものを 3つ さがして みよう。"
+  },
+  {
+    "id": "kr-kanyo",
+    "name": "観葉植物",
+    "reading": "かんようしょくぶつ",
+    "journey": "kurashi",
+    "category": "ごはん",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🪴",
+    "mapNode": "kurashi:ng",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-goin",
+      "kr-seibun"
+    ],
+    "description": "家に かざる 植物です。植物の 中には 犬の 体に 合わない 成分を ふくむ ものも あります。犬が かじらない 高い 場所に 置き、かじったら すぐ 獣医さんへ。",
+    "renshu": "家に ある 植物の 名前を 調べて、犬に 合わない ものか おうちの 人と 確かめよう。"
+  },
+  {
+    "id": "kr-suibun-gohan",
+    "name": "水分の多いごはん",
+    "reading": "すいぶんのおおいごはん",
+    "journey": "kurashi",
+    "category": "水と ねる 場所",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🍲",
+    "mapNode": "kurashi:water",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-mizu-ryo",
+      "kr-food"
+    ],
+    "description": "水分を 多く ふくむ ごはんの ことです。あまり 水を 飲まない 犬は、ごはんから 水分を とる ことも できます。ドライフードを ぬるま湯で ふやかす 方法も あります。",
+    "renshu": "ドッグフードの ふくろの 説明を 見て、水分が どれくらい ふくまれて いるか 見てみよう。"
+  },
+  {
+    "id": "kr-nedoko-ondo",
+    "name": "寝床の温度",
+    "reading": "ねどこのおんど",
+    "journey": "kurashi",
+    "category": "水と ねる 場所",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌡",
+    "mapNode": "kurashi:bed",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-ac",
+      "kr-basho-futatsu"
+    ],
+    "description": "犬の ねる 場所の 温度です。床に 近い 場所は、人が 感じるより 暑かったり 寒かったり します。犬の ねる 高さに 温度計を 置くと わかりやすいです。",
+    "kimochi": "たぶん 暑いと 体を のばして、寒いと 丸く なって ねる ことが 多い",
+    "renshu": "家の 犬が ねて いる かっこうを 見て、のびて いるか 丸く なって いるか 見てみよう。"
+  },
+  {
+    "id": "kr-toilet-seiko",
+    "name": "トイレの成功率",
+    "reading": "といれのせいこうりつ",
+    "journey": "kurashi",
+    "category": "トイレ",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📊",
+    "mapNode": "kurashi:toilet",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-toilet-timing",
+      "kr-koinu-toilet"
+    ],
+    "description": "トイレで できた 回数を 記録して、どれくらい できるように なったかを 見る ことです。数で 見ると、うまく いかない 時間帯や 場所に 気づけます。できた 回を ほめるのが 大切です。",
+    "renshu": "子犬の トイレの 記録表を 紙に つくって、どんな 欄が いるか 考えて みよう。"
+  },
+  {
+    "id": "kr-sanpo-jiyu",
+    "name": "散歩の自由時間",
+    "reading": "さんぽのじゆうじかん",
+    "journey": "kurashi",
+    "category": "散歩",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌿",
+    "mapNode": "kurashi:walk",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-sniff-walk",
+      "kr-nioi-jikan"
+    ],
+    "description": "散歩の 中で、犬が 行きたい 方向や かぎたい においを 自分で えらべる 時間です。自分で えらべる 時間が あると、犬は 満足しやすい と 言われます。安全な 場所で 行います。",
+    "kimochi": "たぶん 自分で えらんで 歩けると、気持ちが 落ちつく ことが 多い",
+    "renshu": "散歩の 5分だけ、家の 犬が 行きたい 方へ 安全に ついて いって みよう。"
+  },
+  {
+    "id": "kr-kangaeru-asobi",
+    "name": "考えるあそび",
+    "reading": "かんがえるあそび",
+    "journey": "kurashi",
+    "category": "あそび",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧠",
+    "mapNode": "kurashi:play",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-chiiku",
+      "kr-enrich"
+    ],
+    "description": "おやつを 出す しかけを とくなど、犬が 頭を 使う あそびです。体を たくさん 動かせない 日でも、考える あそびで 満足できる ことが あります。かんたんな ものから はじめます。",
+    "kimochi": "たぶん 自分で とけた とき、とても 満足する ことが 多い",
+    "renshu": "紙コップ 3つの 1つに おやつを かくして、家の 犬が どれを えらぶか 見てみよう。"
+  },
+  {
+    "id": "kr-rusuban-camera",
+    "name": "留守番カメラ",
+    "reading": "るすばんかめら",
+    "journey": "kurashi",
+    "category": "留守番",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📹",
+    "mapNode": "kurashi:alone",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-rusuban",
+      "kr-rusuban-junbi"
+    ],
+    "description": "家の 中を うつす カメラで、留守番中の 犬の ようすを 見る ことです。ねて いるか、そわそわ して いるかが わかり、留守番の 工夫に 役立ちます。",
+    "renshu": "留守番カメラの 動画を 見て、犬が いちばん 長く して いる ことを 見つけて みよう。"
+  },
+  {
+    "id": "kr-atsusa-shisu",
+    "name": "暑さ指数",
+    "reading": "あつさしすう",
+    "journey": "kurashi",
+    "category": "暑さ・寒さ",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "☀️",
+    "mapNode": "kurashi:season",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-atsusa",
+      "kr-natsu-sanpo"
+    ],
+    "description": "気温・湿度・日ざしから 出す、熱中症の なりやすさの めやすです。人の ための 数字ですが、地面に 近い 犬は もっと 暑く 感じます。高い 日は 散歩の 時間を 考えます。",
+    "renshu": "天気予報で きょうの 暑さ指数を 調べて、散歩に いい 時間を 考えて みよう。"
+  },
+  {
+    "id": "kr-roken-yoru",
+    "name": "老犬の夜",
+    "reading": "ろうけんのよる",
+    "journey": "kurashi",
+    "category": "年れい",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌙",
+    "mapNode": "kurashi:senior",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-roken",
+      "kr-roken-care"
+    ],
+    "description": "年を とった 犬は、夜に 起きたり 歩きまわったり する ことが あります。昼に 日光を あび、少し 体を 動かすと 夜 ねやすく なる ことも あります。気に なったら 獣医さんへ。",
+    "kimochi": "たぶん 夜に 目が さめると、まわりが わからず 不安に なる ことも ある",
+    "renshu": "年を とった 犬と くらす 人の 話を 聞いて、夜の 工夫を 1つ おぼえよう。"
+  },
+  {
+    "id": "kr-roken-care",
+    "name": "老犬のケア",
+    "reading": "ろうけんのけあ",
+    "journey": "kurashi",
+    "category": "年れい",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🤲",
+    "mapNode": "kurashi:senior",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-roken",
+      "kr-dansa"
+    ],
+    "description": "年を とった 犬の くらしを 助ける お世話です。段差を へらす・すべらない 床・ゆっくり 散歩・体を なでる 時間などが あります。できなく なった ことより、できる ことを 楽しみます。",
+    "kimochi": "たぶん 体が ゆっくりに なっても、家族と いっしょの 時間は うれしい ことが 多い",
+    "renshu": "年を とった 犬の 動画を 見て、家の 中の どんな 工夫が あるか 3つ さがそう。"
+  },
+  {
+    "id": "kr-sodachi-jiki",
+    "name": "子犬の育ちの時期",
+    "reading": "こいぬのそだちのじき",
+    "journey": "kurashi",
+    "category": "年れい",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📅",
+    "mapNode": "kurashi:puppy",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-shakaika",
+      "kr-koinu"
+    ],
+    "description": "子犬が 育つ ときの 時期の 分けかたです。目や 耳が ひらく 時期・まわりに 慣れやすい 社会化期・若い 犬の 時期などが あります。時期に 合った 経験が 大切と 言われます。",
+    "kagaku": "kenkyu",
+    "kagakuNote": "子犬の 育ちの 時期は 1960年代から 研究されて いる。何週ごろかは 本に よって 少し ちがう",
+    "renshu": "子犬の 成長の 動画を 見て、目や 耳が ひらく ころの ようすを 見てみよう。"
+  },
+  {
+    "id": "kr-kedama",
+    "name": "毛玉をほどく",
+    "reading": "けだまをほどく",
+    "journey": "kurashi",
+    "category": "お手入れ",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🪮",
+    "mapNode": "kurashi:care",
+    "field": "くらし",
+    "relatedTerms": [
+      "kr-brushing",
+      "kr-kanmouki"
+    ],
+    "description": "毛が からまって できた かたまりを ほどく ことです。毛の 長い 犬に できやすく、ひっぱると 痛いので、指で 少しずつ ほぐします。大きな ものは トリマーさんに 相談します。",
+    "kimochi": "からまった 毛を ひっぱられると たぶん いやな 気持ちに なる ことが 多い",
+    "renshu": "ブラッシングの とき、耳の うしろや わきの 下に 毛玉が ないか そっと さわろう。"
   }
 ]

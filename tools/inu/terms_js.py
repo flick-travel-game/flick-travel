@@ -39,7 +39,12 @@ RB_FIX = {
     "1<ruby>匹<rt>ひき</rt></ruby>": "1<ruby>匹<rt>ぴき</rt></ruby>",
     "<ruby>1匹<rt>いちひき</rt></ruby>": "<ruby>1匹<rt>いっぴき</rt></ruby>",
 }
-RB_RE = [(re.compile(r"<ruby>数<rt>すう</rt></ruby>(?!<)"), "<ruby>数<rt>かず</rt></ruby>")]
+RB_RE = [(re.compile(r"<ruby>数<rt>すう</rt></ruby>(?!<)"), "<ruby>数<rt>かず</rt></ruby>"),
+         # 「足の 間に」「肉球の 間の 毛」は あいだ(「あっと いう 間に」「間に 合う」「すき間」「声の 間」は ま の まま)
+         (re.compile(r"(?<!いう )<ruby>間<rt>ま</rt></ruby>に(?! (?:<ruby>)?合)"), "<ruby>間<rt>あいだ</rt></ruby>に"),
+         (re.compile(r"<ruby>間<rt>ま</rt></ruby>の(?= (?:<ruby>)?毛)"), "<ruby>間<rt>あいだ</rt></ruby>の"),
+         (re.compile(r"<ruby>前<rt>ぜん</rt></ruby>・"), "<ruby>前<rt>まえ</rt></ruby>・"),
+         (re.compile(r"(?<!年)(?<!その)<ruby>後<rt>ご</rt></ruby>"), "<ruby>後<rt>あと</rt></ruby>")]
 PRE = {"shigusa": "sg-", "nakigoe": "nk-", "yamete": "ym-", "kurashi": "kr-", "shitsuke": "st-", "komari": "km-",
        "karada": "kd-", "kenshu": "ks-", "rekishi": "rk-", "anzen": "az-", "kokoro": "kk-"}
 FIELDS = {"しぐさ", "声", "やめて", "くらし", "しつけ", "困りごと", "体", "犬種", "歴史", "安全", "こころ"}

@@ -1393,5 +1393,769 @@
   "description": "しぐさを、その とき どこで 何が 起きて いたか と いっしょに 読む ことです。同じ あくびでも、ねる 前と 動物病院では 気持ちが ちがいます。場面を 知ると、しぐさの 意味が はっきり します。",
   "kimochi": "同じ しぐさでも、場面が ちがえば たぶん 気持ちも ちがう",
   "renshu": "家の 犬が 同じ しぐさを した 2つの 場面を メモして、気持ちが 同じか 考えよう。"
+ },
+ {
+  "id": "sg-tail-straight",
+  "name": "しっぽをまっすぐのばす",
+  "reading": "しっぽをまっすぐのばす",
+  "journey": "shigusa",
+  "category": "しっぽ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "shigusa:tail",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-tail-high",
+   "sg-tail-stiff"
+  ],
+  "description": "しっぽを 背中と 同じ 高さで、うしろへ まっすぐ のばす ようすです。何かに 気が ついて、じっと ようすを うかがって いる ときに 見られる ことが 多いです。耳や 目の 向きと いっしょに 見ます。",
+  "kimochi": "たぶん 「あれは 何だろう?」と 気に なって いる",
+  "renshu": "散歩中の 犬が 何かに 気づいた とき、しっぽが まっすぐに なるか はなれて 見てみよう。"
+ },
+ {
+  "id": "sg-tail-curl",
+  "name": "くるんと巻いたしっぽ",
+  "reading": "くるんとまいたしっぽ",
+  "journey": "shigusa",
+  "category": "しっぽ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "shigusa:tail",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-tail-normal",
+   "sg-tail-short"
+  ],
+  "description": "柴犬など、しっぽが 背中の 上で くるんと 巻いて いる 犬の しっぽです。巻いて いるのが その 犬の ふつうなので、巻きが ゆるむ・ほどけて 下がる などの 変化で 気持ちを 読みます。",
+  "kimochi": "巻きが ゆるんで 下がったら、たぶん 少し 不安か つかれて いる",
+  "renshu": "巻いた しっぽの 犬の 動画を さがして、巻きが ゆるむ 場面を 見つけてみよう。"
+ },
+ {
+  "id": "sg-ear-one",
+  "name": "片耳だけ動く",
+  "reading": "かたみみだけうごく",
+  "journey": "shigusa",
+  "category": "耳と目",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "shigusa:ears",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-ears-twitch",
+   "sg-ears-front"
+  ],
+  "description": "耳が かたほうだけ くるっと 動く ようすです。犬は 左右の 耳を べつべつに 動かして、音の する 方向を さがせます。ねて いる ときでも 片耳だけ 動く ことが あります。",
+  "kimochi": "たぶん 「いま 何か 聞こえたかも」と 音を たしかめて いる",
+  "renshu": "家の 犬が くつろいで いる とき、遠くの 音に 片耳だけ 動かすか 見てみよう。"
+ },
+ {
+  "id": "sg-kyoton",
+  "name": "きょとんとした顔",
+  "reading": "きょとんとしたかお",
+  "journey": "shigusa",
+  "category": "口と顔",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐶",
+  "mapNode": "shigusa:face",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-head-tilt",
+   "sg-eyes-round"
+  ],
+  "description": "目を まるく して、口を とじ、動きが 止まった 顔です。思いがけない ものを 見た ときや、何を すれば いいか わからない ときに 見られる ことが 多いです。考えて いる ところの ことも あります。",
+  "kimochi": "たぶん 「え、いまの 何?」と ふしぎに 思って いる",
+  "renshu": "動画で 犬が はじめての ものに 出会う 場面を 見て、きょとん 顔を さがしてみよう。"
+ },
+ {
+  "id": "sg-head-tilt",
+  "name": "首をかしげる",
+  "reading": "くびをかしげる",
+  "journey": "shigusa",
+  "category": "口と顔",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤔",
+  "mapNode": "shigusa:face",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-kyoton",
+   "sg-ear-one"
+  ],
+  "description": "人の 声や ふしぎな 音を 聞いた とき、首を 横に かたむける しぐさです。音を よく 聞く ため とも、顔を 見る ため とも 言われます。おもちゃの 名前を たくさん 知る 犬が、名前を 聞いた ときに よく かしげた と いう 研究も あります。",
+  "kimochi": "たぶん 「いまの 音、なんだろう?」と よく 聞こうと して いる",
+  "kagaku": "kenkyuchu",
+  "kagakuNote": "なぜ かしげるかは まだ はっきり せず、いくつかの 説が 調べられて いる",
+  "renshu": "家の 犬に いつもと ちがう 声の 高さで 名前を よんで、首を かしげるか 見てみよう。"
+ },
+ {
+  "id": "sg-smile",
+  "name": "にっこり顔",
+  "reading": "にっこりがお",
+  "journey": "shigusa",
+  "category": "口と顔",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "😊",
+  "mapNode": "shigusa:mouth",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-mouth-loose",
+   "sg-play-face"
+  ],
+  "description": "口を 少し あけて、口の 力が ぬけ、目も やわらかい 顔です。人には にっこり 笑って いる ように 見えます。体の 力も ぬけて いれば、くつろいで いる ことが 多いです。",
+  "kimochi": "たぶん 「いい 気分だな」と のんびり して いる",
+  "renshu": "家の 犬が いちばん にっこり 顔に なる 場面を 3つ さがしてみよう。"
+ },
+ {
+  "id": "sg-surisuri",
+  "name": "すりすりする",
+  "reading": "すりすりする",
+  "journey": "shigusa",
+  "category": "体ぜんぶ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤗",
+  "mapNode": "shigusa:whole",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-lean",
+   "sg-body-loose"
+  ],
+  "description": "体や 顔を 人や 家具に こすりつける しぐさです。あまえて いる ときも、かゆい ときも、自分の においを つけて いる ときも あります。何度も かゆそうに こする なら、獣医さんに 見て もらいます。",
+  "kimochi": "人に すりすり する ときは たぶん 「そばに いたいな」",
+  "renshu": "家の 犬が すりすり するのは 人・ソファ・床の どれが 多いか、1週間 数えてみよう。"
+ },
+ {
+  "id": "sg-pyon",
+  "name": "ぴょんぴょんはねる",
+  "reading": "ぴょんぴょんはねる",
+  "journey": "shigusa",
+  "category": "あそび",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐇",
+  "mapNode": "shigusa:playbow",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-bounce",
+   "sg-playbow"
+  ],
+  "description": "その場で 4本の 足で ぴょんぴょん はねる ようすです。うれしくて 気持ちが あふれて いる ときや、あそびに さそう ときに 見られる ことが 多いです。子犬に とくに よく 見られます。",
+  "kimochi": "たぶん 「うれしくて じっと して いられない!」",
+  "renshu": "子犬が あそぶ 動画を 見て、ぴょんぴょん はねる 場面を さがしてみよう。"
+ },
+ {
+  "id": "sg-sleep-up",
+  "name": "あおむけで寝る",
+  "reading": "あおむけでねる",
+  "journey": "shigusa",
+  "category": "おなか・前足・ブルブル",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "😴",
+  "mapNode": "shigusa:belly",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-belly",
+   "sg-belly-two"
+  ],
+  "description": "おなかを 上に 向け、足を だらんと させて ねる ようすです。おなかは 大事な ところなので、まわりが 安心な ときに 見られる ことが 多いです。体の 熱を にがす ため とも 言われます。",
+  "kimochi": "たぶん 「ここは 安心。ぐっすり ねよう」",
+  "renshu": "家の 犬が あおむけで ねて いたら、起こさずに そっと 見守ろう。ねがおを 絵に かくのも いいね。"
+ },
+ {
+  "id": "sg-shake-water",
+  "name": "水からあがってブルブル",
+  "reading": "みずからあがってぶるぶる",
+  "journey": "shigusa",
+  "category": "おなか・前足・ブルブル",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💦",
+  "mapNode": "shigusa:shake",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-shake",
+   "sg-shake-wake"
+  ],
+  "description": "水あびや シャンプーの あと、体を ブルブル ふって 水を とばす ことです。頭から しっぽへ、なみの ように ふるえが 伝わります。ほんの 数秒で 毛の 水を たくさん とばせる と 言われます。",
+  "kimochi": "たぶん 「ぬれて 重いよ、すっきり したい!」",
+  "renshu": "犬が 水から あがる 動画を ゆっくり 再生して、ブルブルが 頭から しっぽへ 伝わるか 見てみよう。"
+ },
+ {
+  "id": "sg-tail-tip",
+  "name": "しっぽの先だけふる",
+  "reading": "しっぽのさきだけふる",
+  "journey": "shigusa",
+  "category": "しっぽ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "shigusa:tail",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-tail-wag",
+   "sg-tail-stiff"
+  ],
+  "description": "しっぽの 根もとは 動かさず、先の ほうだけ 小さく ふる ようすです。気を はって いる ときや、相手を よく 見て いる ときに 見られる ことが 多いです。しっぽを ふって いても、うれしいとは かぎりません。",
+  "kimochi": "たぶん 「どう しようかな」と 気を はって いる",
+  "renshu": "散歩中の 犬どうしが 会う とき、しっぽが 根もとから ふれて いるか 先だけか はなれて 見よう。"
+ },
+ {
+  "id": "sg-tail-stiff",
+  "name": "しっぽがかたまる",
+  "reading": "しっぽがかたまる",
+  "journey": "shigusa",
+  "category": "しっぽ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "shigusa:tail",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-tail-tip",
+   "sg-tail-straight"
+  ],
+  "description": "しっぽが ぴんと かたく なり、動きが 止まる ようすです。何かに 強く 気を とられて いる ときや、きんちょう して いる ときに 見られる ことが 多いです。体も かたく なって いたら、そっと はなれます。",
+  "kimochi": "たぶん 「ちょっと 待って。いま 様子を 見て いる」",
+  "renshu": "動画で 犬の しっぽが かたまる しゅんかんを さがし、その 前に 何が あったか 考えよう。"
+ },
+ {
+  "id": "sg-airplane-ears",
+  "name": "飛行機耳",
+  "reading": "ひこうきみみ",
+  "journey": "shigusa",
+  "category": "耳と目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "shigusa:ears",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-ears-side",
+   "sg-ears-back"
+  ],
+  "description": "耳を 横に ひらいて、飛行機の つばさの ように した 形です。まよって いる ときや、相手に「こわく ないよ」と 伝えたい ときに 見られる ことが 多いです。あまえる ときにも 出ます。",
+  "kimochi": "たぶん 「ちょっと どきどき。でも なかよく したいな」",
+  "renshu": "家の 犬が 飛行機耳に なる 場面を 見つけたら、そのとき 何が あったか メモしよう。"
+ },
+ {
+  "id": "sg-eyes-round",
+  "name": "目が丸くなる",
+  "reading": "めがまるくなる",
+  "journey": "shigusa",
+  "category": "耳と目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "shigusa:eyes",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-eyes-wide",
+   "sg-kyoton"
+  ],
+  "description": "何かに おどろいた しゅんかん、目が まるく 大きく なる ようすです。黒目が 大きく 見える ことも あります。すぐ もとに もどれば ただの びっくり、長く つづけば 不安の ことが 多いです。",
+  "kimochi": "たぶん 「わっ、びっくり した!」",
+  "renshu": "家の 犬が 物音で 目を まるく したら、何秒で もとの 目に もどるか 見てみよう。"
+ },
+ {
+  "id": "sg-glance",
+  "name": "ちらっと見る",
+  "reading": "ちらっとみる",
+  "journey": "shigusa",
+  "category": "耳と目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "shigusa:eyes",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-stare",
+   "sg-eyes-soft"
+  ],
+  "description": "何かを して いる とちゅうで、ちらっと 人の 顔を 見る しぐさです。「これで いいの?」と たしかめて いる ことが 多いです。こまった とき 人の 顔を 見て 助けを もとめる 犬が 多い と いう 研究も あります。",
+  "kimochi": "たぶん 「ねえ、見てる? これで いい?」",
+  "kagaku": "kenkyu",
+  "kagakuNote": "とけない 問題の 前で、人の 顔を 見る 犬が 多い と いう 研究が ある",
+  "renshu": "家の 犬と あそんで いる とき、犬が ちらっと こちらを 見たら にっこり 返してみよう。"
+ },
+ {
+  "id": "sg-chin-floor",
+  "name": "あごを床におく",
+  "reading": "あごをゆかにおく",
+  "journey": "shigusa",
+  "category": "体のかまえ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "shigusa:weight",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-weight",
+   "sg-body-loose"
+  ],
+  "description": "ふせた まま、あごを 床に ぺたっと つける ようすです。くつろいで いる ときに よく 見られますが、目が 動いて いれば まわりを 見張って いる ことも あります。目と 耳も いっしょに 見ます。",
+  "kimochi": "たぶん 「のんびり。でも ちょっとだけ 見て いるよ」",
+  "renshu": "家の 犬が あごを 床に つけて いる とき、目が とじて いるか 動いて いるか 見てみよう。"
+ },
+ {
+  "id": "sg-lean",
+  "name": "体を相手にあずける",
+  "reading": "からだをあいてにあずける",
+  "journey": "shigusa",
+  "category": "体のかまえ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤗",
+  "mapNode": "shigusa:weight",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-surisuri",
+   "sg-weight"
+  ],
+  "description": "人の 足などに 体を もたれかける ようすです。「そばに いたい」と あまえて いる ことが 多いですが、知らない 場所で 不安な ときに 寄りかかる ことも あります。まわりの ようすと いっしょに 見ます。",
+  "kimochi": "たぶん 「くっついて いると 安心」",
+  "renshu": "家の 犬が 体を あずけて きたら、そっと 手を そえて、どんな 場面で 多いか 考えよう。"
+ },
+ {
+  "id": "sg-mouth-snap",
+  "name": "ハッと口をとじる",
+  "reading": "はっとくちをとじる",
+  "journey": "shigusa",
+  "category": "口と顔",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "😮",
+  "mapNode": "shigusa:mouth",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-mouth-close",
+   "sg-mouth-loose"
+  ],
+  "description": "ハッハッと あけて いた 口を、急に きゅっと とじる ようすです。何かに 気が ついた ときや、ちょっと きんちょう した ときに 見られる ことが 多いです。とじた あと 何を 見て いるかが ヒントです。",
+  "kimochi": "たぶん 「おや? 何か 気に なる」",
+  "renshu": "散歩中の 犬が 急に 口を とじたら、その 犬が 何を 見て いるか はなれて さがしてみよう。"
+ },
+ {
+  "id": "sg-ruff",
+  "name": "首まわりの毛",
+  "reading": "くびまわりのけ",
+  "journey": "shigusa",
+  "category": "体のかまえ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦁",
+  "mapNode": "shigusa:hair",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-hair-up",
+   "sg-hair-shoulder"
+  ],
+  "description": "首の まわりや かたの 毛の ことです。どきどき した ときや 気持ちが 高まった ときに、ここの 毛が ふわっと 立つ ことが あります。毛が 立つのは わざと では なく、体が 自然に そう なります。",
+  "kimochi": "毛が 立って いたら、たぶん 気持ちが 高まって いる",
+  "renshu": "家の 犬が 落ちついて いる ときの 首まわりの 毛を よく 見て、ふだんの 形を おぼえよう。"
+ },
+ {
+  "id": "sg-play-face",
+  "name": "あそびの顔",
+  "reading": "あそびのかお",
+  "journey": "shigusa",
+  "category": "あそび",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "😆",
+  "mapNode": "shigusa:playbow",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-playbow",
+   "sg-smile"
+  ],
+  "description": "口を 大きく あけ、口の 力が ぬけた、あそんで いる ときの 顔です。歯が 見えても、顔が やわらかければ あそびの 合図の ことが 多いです。犬どうしの あそびで よく 見られます。",
+  "kimochi": "たぶん 「これは あそびだよ。楽しいね!」",
+  "renshu": "犬どうしが あそぶ 動画を 見て、口の 力が ぬけた あそびの 顔を さがしてみよう。"
+ },
+ {
+  "id": "sg-chase-invite",
+  "name": "おいかけっこの合図",
+  "reading": "おいかけっこのあいず",
+  "journey": "shigusa",
+  "category": "あそび",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "shigusa:playbow",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-play-invite",
+   "sg-role-swap"
+  ],
+  "description": "相手の そばを さっと 走りぬけ、ふりかえって 見る しぐさです。「追いかけて!」と さそって いる ことが 多いです。追いかける 役と にげる 役を、ときどき 交代するのも あそびの しるしです。",
+  "kimochi": "たぶん 「つかまえて ごらん!」",
+  "renshu": "ドッグランの 犬を はなれて 見て、追いかける 役と にげる 役が 交代するか 見てみよう。"
+ },
+ {
+  "id": "sg-side",
+  "name": "わき腹を見せる",
+  "reading": "わきばらをみせる",
+  "journey": "shigusa",
+  "category": "おなか・前足・ブルブル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "shigusa:belly",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-belly",
+   "sg-belly-two"
+  ],
+  "description": "相手に 体の 横、わき腹を 向ける しぐさです。正面から 向き合わないので、「あらそう 気は ないよ」と 伝えて いる ことが 多いです。そのまま 寄って くれば、なかよく したい 気持ちの ことも あります。",
+  "kimochi": "たぶん 「こわく ないよ。おだやかに いこう」",
+  "renshu": "家の 犬が 人や 犬に わき腹を 向ける 場面を さがし、その あと どう したか 見てみよう。"
+ },
+ {
+  "id": "sg-paw-face",
+  "name": "前足で顔をかく",
+  "reading": "まえあしでかおをかく",
+  "journey": "shigusa",
+  "category": "おなか・前足・ブルブル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐾",
+  "mapNode": "shigusa:paw",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-paw-up",
+   "sg-paw-focus"
+  ],
+  "description": "前足で 顔や 目の まわりを こする しぐさです。かゆい ときも ありますが、まよった ときに 気持ちを 落ちつける ために する ことも あります。何度も つづく なら、獣医さんに 見て もらいます。",
+  "kimochi": "たぶん 「むずむず する」か「ちょっと こまったな」",
+  "renshu": "家の 犬が 前足で 顔を かいたら、直前に 何が あったか メモしよう。"
+ },
+ {
+  "id": "sg-nose-wrinkle",
+  "name": "鼻にしわを寄せる",
+  "reading": "はなにしわをよせる",
+  "journey": "shigusa",
+  "category": "口と顔",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "shigusa:face",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-lip-curl",
+   "sg-face-hard"
+  ],
+  "description": "鼻の 上に しわを 寄せ、顔が かたく なる ようすです。「それ以上 近づかないで」と はっきり 伝えて いる 合図の ことが 多いです。見たら すぐ 手を 止め、そっと はなれて、犬に 場所を あげます。",
+  "kimochi": "たぶん 「もう やめて。はなれて ほしい」",
+  "renshu": "動画で 鼻に しわを 寄せる 前に、どんな 小さな サインが 出て いたか さかのぼって 見てみよう。"
+ },
+ {
+  "id": "sg-baseline",
+  "name": "いつもとのちがい",
+  "reading": "いつもとのちがい",
+  "journey": "shigusa",
+  "category": "体ぜんぶ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "shigusa:whole",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-body-all",
+   "sg-face-scale"
+  ],
+  "description": "その 犬の ふだんの ようすと くらべて、ちがう ところを 見つける ことです。しぐさの 読みかたは、犬ごとに 少しずつ ちがいます。元気や 食よくが いつもと ちがう 日が つづいたら、獣医さんに 相談します。",
+  "kimochi": "いつもと ちがう ときは、たぶん 何か 気に なる ことが ある",
+  "renshu": "家の 犬の ふだんの ねかた・歩きかた・しっぽの 高さを ノートに 書いておこう。"
+ },
+ {
+  "id": "sg-tail-angle",
+  "name": "しっぽの角度",
+  "reading": "しっぽのかくど",
+  "journey": "shigusa",
+  "category": "しっぽ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "shigusa:tail",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-tail-high",
+   "sg-tail-low"
+  ],
+  "description": "しっぽが 背中の 線から どれくらい 上か 下かを 見る 読みかたです。上がるほど 気持ちが 高まり、下がるほど 不安や つかれが 多い と 考えられて います。犬種で ふだんの 角度が ちがうので、その 犬と くらべます。",
+  "kimochi": "角度が 急に 変わったら、たぶん 気持ちも 動いて いる",
+  "renshu": "家の 犬の しっぽの 角度を、横から 見て 時計の 針の 形で メモしてみよう。"
+ },
+ {
+  "id": "sg-tail-short",
+  "name": "しっぽの短い犬の読みかた",
+  "reading": "しっぽのみじかいいぬのよみかた",
+  "journey": "shigusa",
+  "category": "しっぽ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "shigusa:tail",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-tail-angle",
+   "sg-body-all"
+  ],
+  "description": "しっぽが とても 短い 犬は、しっぽの 動きが 見えにくい ことが あります。その ときは おしりの ゆれ・耳・口・体の 重心を いつもより よく 見ます。しっぽが 読めなくても、体は たくさん 話して います。",
+  "kimochi": "おしりが ふりふり ゆれて いたら、たぶん うれしい",
+  "renshu": "しっぽの 短い 犬の 動画を さがして、しっぽの かわりに どこで 気持ちが わかるか 見てみよう。"
+ },
+ {
+  "id": "sg-ears-combo",
+  "name": "耳の向きの組みあわせ",
+  "reading": "みみのむきのくみあわせ",
+  "journey": "shigusa",
+  "category": "耳と目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "shigusa:ears",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-ears-front",
+   "sg-ears-back"
+  ],
+  "description": "耳の 向きを、目・口・しっぽと 組みあわせて 読む ことです。耳が 前でも、口が とじて 体が かたければ 気を はって いる ことが あります。耳だけで 決めず、ほかの ところと くらべます。",
+  "kimochi": "耳が 前で 体が やわらかいなら、たぶん わくわく",
+  "renshu": "家の 犬の 耳・口・しっぽを 同時に 見て、3つの ようすを 1行で メモしてみよう。"
+ },
+ {
+  "id": "sg-eye-muscle",
+  "name": "目のまわりの筋肉",
+  "reading": "めのまわりのきんにく",
+  "journey": "shigusa",
+  "category": "耳と目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👁",
+  "mapNode": "shigusa:eyes",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-brow",
+   "sg-eyes-soft"
+  ],
+  "description": "目の まわりの 筋肉の 力の 入りかたで、目の 形が 変わります。力が ぬけると 目は 細く やわらかく、力が 入ると まるく かたく 見えます。目の 形は、顔の 中でも 気持ちが 出やすい ところです。",
+  "kimochi": "目が やわらかく 細い ときは、たぶん リラックス して いる",
+  "renshu": "家の 犬の 目を、ねむい とき・あそぶ とき・物音の とき で くらべてみよう。"
+ },
+ {
+  "id": "sg-koukaku",
+  "name": "口角",
+  "reading": "こうかく",
+  "journey": "shigusa",
+  "category": "口と顔",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👄",
+  "mapNode": "shigusa:mouth",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-mouth-back",
+   "sg-mouth-tight"
+  ],
+  "description": "くちびるの はしっこ、口の 角の ことです。口角が うしろに 長く 引かれると 不安や あまえ、前に 寄って 口が 短く なると 気を はって いる ことが 多い と 言われます。表情を 読む 大事な ヒントです。",
+  "kimochi": "口角が うしろに 引けたら、たぶん 「こまったな」",
+  "renshu": "犬の 写真を 何枚か 見て、口の 角が 前か うしろかを くらべてみよう。"
+ },
+ {
+  "id": "sg-weight-sway",
+  "name": "重心のゆれ",
+  "reading": "じゅうしんのゆれ",
+  "journey": "shigusa",
+  "category": "体のかまえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "shigusa:weight",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-weight-shift",
+   "sg-weight"
+  ],
+  "description": "体の 重さが、前と うしろを 行ったり 来たり する ようすです。近づこうか、はなれようか まよって いる ことが 多いです。ゆれが 止まって うしろに 下がったら、むりに 近づかず 待ちます。",
+  "kimochi": "たぶん 「行こうかな、やめようかな」と まよって いる",
+  "renshu": "散歩中の 犬が はじめての ものに 出会った とき、体が 前後に ゆれるか はなれて 見てみよう。"
+ },
+ {
+  "id": "sg-long-hair",
+  "name": "毛の長い犬の読みかた",
+  "reading": "けのながいいぬのよみかた",
+  "journey": "shigusa",
+  "category": "体のかまえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐩",
+  "mapNode": "shigusa:hair",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-hair-range",
+   "sg-body-all"
+  ],
+  "description": "毛が 長い 犬は、毛が 立っても 見えにくく、目や 口も かくれやすいです。その ときは 耳の 動き・体の 重心・動く 速さを よく 見ます。顔まわりの 毛を 整えると、表情が 見やすく なります。",
+  "kimochi": "見えにくい ときこそ、たぶん 動きに 気持ちが 出て いる",
+  "renshu": "毛の 長い 犬の 動画を 見て、顔が 見えない ときに どこで 気持ちが わかるか さがそう。"
+ },
+ {
+  "id": "sg-play-pause",
+  "name": "あそびのお休み",
+  "reading": "あそびのおやすみ",
+  "journey": "shigusa",
+  "category": "あそび",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏸",
+  "mapNode": "shigusa:playbow",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-metasignal",
+   "sg-play-fight"
+  ],
+  "description": "楽しく あそぶ 犬どうしは、ときどき 動きを 止めて 少し 休みます。においを かいだり ブルブル したり して、熱く なりすぎない ように して いる ことが 多いです。お休みの ある あそびは、楽しい あそびの しるしです。",
+  "kimochi": "たぶん 「ちょっと ひと休み。また あそぼう」",
+  "renshu": "犬どうしが あそぶ 動画を 見て、何秒ごとに お休みが 入るか 数えてみよう。"
+ },
+ {
+  "id": "sg-play-fight",
+  "name": "あそびとけんかのちがい",
+  "reading": "あそびとけんかのちがい",
+  "journey": "shigusa",
+  "category": "あそび",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤼",
+  "mapNode": "shigusa:playbow",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-play-pause",
+   "sg-role-swap"
+  ],
+  "description": "あそびでは、体が やわらかく、役を 交代し、お休みも 入ります。けんかに 近づくと、体が かたく、動きが 速く なり、片方が にげつづけます。片方が いやがって いたら、飼い主が 名前を よんで 休ませます。",
+  "kimochi": "片方が にげて ばかり なら、たぶん もう 楽しく ない",
+  "renshu": "ドッグランを はなれて 見て、楽しそうな あそびの しるしを 3つ さがしてみよう。"
+ },
+ {
+  "id": "sg-back-play",
+  "name": "あおむけのあそび",
+  "reading": "あおむけのあそび",
+  "journey": "shigusa",
+  "category": "あそび",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤸",
+  "mapNode": "shigusa:belly",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-self-handicap",
+   "sg-surrender"
+  ],
+  "description": "あそびの 中で、わざと あおむけに なって 下から 相手と じゃれる ことです。体の 大きい 犬が 小さい 犬に あわせて する ことも あります。上と 下を 交代して いれば、楽しい あそびの ことが 多いです。",
+  "kimochi": "たぶん 「下から あそぶのも 楽しいよ」",
+  "renshu": "子犬どうしが あそぶ 動画を 見て、上と 下が 何回 入れかわるか 数えてみよう。"
+ },
+ {
+  "id": "sg-shake-stress",
+  "name": "ストレスのあとのブルブル",
+  "reading": "すとれすのあとのぶるぶる",
+  "journey": "shigusa",
+  "category": "おなか・前足・ブルブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "shigusa:shake",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-shake-reset",
+   "sg-shake"
+  ],
+  "description": "ぬれて いないのに、何かの あとで ブルブル する ことです。だっこの あと、動物病院の あと、知らない 人に さわられた あと などに よく 見られます。その 前に 何が あったかを 知ると、犬の 苦手が 見えて きます。",
+  "kimochi": "たぶん 「ふう、どきどき した。気持ちを 切りかえよう」",
+  "renshu": "家の 犬が ぬれて いないのに ブルブル したら、その 前の 1分に 何が あったか メモしよう。"
+ },
+ {
+  "id": "sg-stretch-greet",
+  "name": "前足をのばすあいさつ",
+  "reading": "まえあしをのばすあいさつ",
+  "journey": "shigusa",
+  "category": "おなか・前足・ブルブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐕",
+  "mapNode": "shigusa:paw",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-playbow",
+   "sg-shake-wake"
+  ],
+  "description": "前足を 前に のばし、おしりを 上げて、のびを しながら 近づく あいさつです。プレイバウと にて いますが ゆっくりで、家族を むかえる ときに 見られる ことが 多いです。「おかえり」と 伝えて いる ように 見えます。",
+  "kimochi": "たぶん 「おかえり! リラックス して いるよ」",
+  "renshu": "家族が 帰って きた とき、家の 犬が のびを しながら むかえるか 見てみよう。"
+ },
+ {
+  "id": "sg-face-habit",
+  "name": "表情のくせ",
+  "reading": "ひょうじょうのくせ",
+  "journey": "shigusa",
+  "category": "口と顔",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐶",
+  "mapNode": "shigusa:face",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-baseline",
+   "sg-face-scale"
+  ],
+  "description": "犬にも、1匹ずつ よく する 表情の くせが あります。いつも 口を 少し あけて いる 犬、まゆが よく 動く 犬など いろいろです。くせを 知って おくと、いつもと ちがう 顔に 気づきやすく なります。",
+  "kimochi": "くせと ちがう 顔の ときは、たぶん 気持ちが 動いて いる",
+  "renshu": "家の 犬の 顔の 写真を 毎日 1枚 とって、よく する 表情を さがしてみよう。"
+ },
+ {
+  "id": "sg-slowmo",
+  "name": "ゆっくり動画で見る",
+  "reading": "ゆっくりどうがでみる",
+  "journey": "shigusa",
+  "category": "体ぜんぶ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎬",
+  "mapNode": "shigusa:whole",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-combo",
+   "sg-scene"
+  ],
+  "description": "とった 動画を ゆっくり 再生して、しぐさを 読む 方法です。あくびや 鼻なめ、目の 動きは、ほんの 一しゅんで 見のがしやすい からです。専門家も 動画を 何度も 見て、しぐさを 調べて います。",
+  "kimochi": "ゆっくり 見ると、たぶん 小さな 気持ちの 合図が 見つかる",
+  "renshu": "犬の 動画を 10秒 とるか さがして、ゆっくり 再生で 気づいた しぐさを 書き出そう。"
+ },
+ {
+  "id": "sg-order",
+  "name": "しぐさの順番",
+  "reading": "しぐさのじゅんばん",
+  "journey": "shigusa",
+  "category": "体ぜんぶ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "shigusa:whole",
+  "field": "しぐさ",
+  "relatedTerms": [
+   "sg-combo",
+   "sg-slowmo"
+  ],
+  "description": "しぐさが どの 順番で 出たかを 見る 読みかたです。目を そらし、あくびを して、体を 横に 向けたら、少しずつ「やめて」を 強めて いる ことが あります。順番を 知ると、早めに 気づけます。",
+  "kimochi": "サインが つづけて 出たら、たぶん 気持ちが 強く なって いる",
+  "renshu": "犬の 動画を 見て、出た しぐさを 1つずつ 順番に 書いてみよう。"
  }
 ]

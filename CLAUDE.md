@@ -1283,6 +1283,7 @@
   ⚠️ 絵を 頼む ときは 実在の 選手の 顔・大会や ブランドの ロゴを 描かせない。人物は 下 3分の1に 小さく。「テ二ス」「ワールドテニ」に なりやすいので 字を かならず 読む
 - 写真・Wikipedia の リンクは まだ 取っていない
 - かずともの `FLICK_MODES` / `FLICK_LINK_TARGETS`・販売ページ `HOME_GAMES`(スポーツの 章、バレーボールの となり。絵なし = 名前の 字)・規約の 一覧 `FLICK_SERIES_GAMES` に 足した(speed-king)
+- ⭐ **毎年の 見直しの 予約が ある**(`trig_01VQ1KozobAqLpEvpKsuVGhB`。毎年 **1月6日** 朝8時45分。けいくん 2026-10-25「1」= 引退も ルールの 新しい 年の 版も 出そろい、全豪オープンの 前)。⚠️ **ファイル名 `terms-rule.json` / `terms-star.json` と `mkmeta.py` の `RV` を 変えない**
 - 確かめかた: `node tools/play-all.mjs tennis/`(全63ステージ・4とおりの 打ちかた)/ `node tools/click-all.mjs tennis/`(W=320 も)/ `python3 tools/tennis/terms_js.py --check`
 
 ## フリック血液型(`ketsueki/`。けいくん 2026-10-04「血液型の専門家になれるレベルになるために必要な 知識をフリック形式の問題にしてください。血液型の特徴をめちゃくちゃ詳しくお願いします」→ 同じ日「科学的根拠が無いということ? やめた方がいいかなぁ?」→ 3つの 案から **「このまま」**。まとめは `docs/フリック血液型-はじめかた.md`)

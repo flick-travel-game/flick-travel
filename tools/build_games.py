@@ -471,8 +471,8 @@ GAMES = {
     #   まとめは docs/フリックワールドテニス-はじめかた.md。ことばは tools/tennis/terms-<旅>.json → tennis/terms.js(tools/tennis/terms_js.py)。しくみは tennis/tennis.js(TENNIS。ワールドバレーボールを 写して 札を サーフェス(ハード / クレー / グラス / 共通)に)。かずともの 旅の 名前は tn で はじまる。
     #   ⚠️⚠️ いまの ランキング・賞金・勝率・ケガ・ドーピング・賭け・商品名は 書かない(決まりは tools/tennis/PROMPT.md)。ルールは ITF / ATP / WTA / JTA の 2026年(毎年 12月に 見なおす)。
     #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/tennis/placeholder_icon.py)。届いたら tools/tennis/art/square-src.png → tools/icon_from_square.py tennis(iconv を +1)/ title-src.png → tools/title_from_art.py tennis(logo を True)/ tennis/hero.webp(hero を True)
-    "tennis": dict(name="フリックワールドテニス", modes="TENNIS", kinds=set(), color="#2b8a3e", hero=True, logo=False,
-                  art=dict(word=(900, 200), hero=(1536, 1024), alt="フリックワールドテニス", iconv=2, wordv=2),
+    "tennis": dict(name="フリックワールドテニス", modes="TENNIS", kinds=set(), color="#2b8a3e", hero=True, logo=True,
+                  art=dict(word=(900, 340), hero=(1536, 1024), alt="フリックワールドテニス", iconv=2, wordv=3),
                   lead="テニスの きほん・ルール・ツアーと 大会・4大大会と 歴史・いまの スター選手・伝説の 選手・技と テクニック・戦術と 解説の ことば・国別対抗と オリンピックの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 国の 話か・ハード / クレー / グラスの どの コートの 話か・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。テニスが すきな 小学生の ことばから はじめて、テニススクールや 部活の コーチ、解説者が 使う 戦術の ことばまで。0点を「ラブ」と よぶ、4大大会は 1つずつ コートの 面が ちがう、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。選手の ランキングや 記録は 変わる ことが あるよ。ルールは ITF・ATP・WTA・JTA の いまの 版で 確かめたよ(変わる ことが あるよ)。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、世界の テニスが つながって 見えてくるよ。ITF・ATP・WTA・JTA・各大会・各選手とは 関係ありません。"),

@@ -139,6 +139,12 @@ def main():
            # ワールドテニスの 説明で 見つけた 読みまちがい(ここに 足す)
            R(r"(?<![\d０-９])1<ruby>人<rt>ひと</rt></ruby>", "<ruby>1人<rt>ひとり</rt></ruby>"),
            R(r"(?<![\d０-９])2<ruby>人<rt>ひと</rt></ruby>", "<ruby>2人<rt>ふたり</rt></ruby>"),
+           # 人の 名前(slam・cup・waza・tactic の 確かめで 足した)
+           R(r"<ruby>熊谷<rt>くまがい</rt></ruby><ruby>一弥<rt>かずや</rt></ruby>", "<ruby>熊谷一弥<rt>くまがいいちや</rt></ruby>"),
+           R(r"<ruby>小田<rt>おだ</rt></ruby><ruby>凱<rt>がい</rt></ruby><ruby>人<rt>にん</rt></ruby>", "<ruby>小田凱人<rt>おだときと</rt></ruby>"),
+           R(r"<ruby>上地<rt>うえち</rt></ruby><ruby>結衣<rt>ゆい</rt></ruby>", "<ruby>上地結衣<rt>かみじゆい</rt></ruby>"),
+           R(r"<ruby>三木<rt>みき</rt></ruby><ruby>龍喜<rt>たつき</rt></ruby>", "<ruby>三木龍喜<rt>みきりゅうき</rt></ruby>"),
+           R(r"<ruby>逆<rt>ぎゃっ</rt></ruby>クロス", "<ruby>逆<rt>ぎゃく</rt></ruby>クロス"),
            ]
     def rub(t):
         h = rub0(t)

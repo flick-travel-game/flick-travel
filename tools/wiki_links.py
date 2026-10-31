@@ -34,6 +34,11 @@ NO_WIKI.update({"mentalist:ki-tane": "植物の 種子の 記事", "mentalist:ki
 NO_WIKI.update({"supercar:ki-premiere": "演劇の 初演の 記事", "supercar:ki-lhd": "輸入車の 記事", "supercar:it-cavallino": "歌の 記事", "supercar:it-bizzarrini": "メーカーの 一覧", "supercar:gb-cx75": "ガスタービンの 記事",
                 "supercar:hy-hypersport": "ゲームの 記事", "supercar:hy-gte": "電話の 会社の 記事", "supercar:dn-ghia": "歯車の 記事", "supercar:ki-maker": "製造業 全体の 記事", "supercar:gi-dihedral": "ガルウィング(べつの ドア)",
                 "supercar:ki-weight": "乾燥重量(べつの はかりかた)", "supercar:gi-pullrod": "べつの 足まわりの 記事"})
+# フリック気象予報士(2026-10-31): 転送先が べつの もの・広すぎる・古い よび名の 記事を 外した
+NO_WIKI.update({"kisho:ki-yabane": "矢(武器)の 記事", "kisho:ge-riming": "押韻(詩)の 記事", "kisho:ka-himawari": "花の ヒマワリの 記事", "kisho:ka-koshiten": "数学の 記事",
+                "kisho:ta-churitsu": "数学の 不動点の 記事", "kisho:ta-hozonryo": "力学の べつの 記事", "kisho:ho-caster": "ニュースキャスターの 記事", "kisho:ho-juken": "入学試験の 記事",
+                "kisho:ho-jitsugishiken": "広すぎる 記事", "kisho:ni-shou": "雨 全体の 記事", "kisho:ni-nihonkaigawa": "古い よび名(裏日本)の 記事", "kisho:ni-taiheiyogawa": "古い よび名(表日本)の 記事",
+                "kisho:ta-chikyuhosha": "気温の 記事", "kisho:ta-kennetsu": "相転移の 記事", "kisho:ta-jokuu": "空 全体の 記事", "kisho:ho-kokka": "資格 全体の 記事"})
 ALT_DOT = {"supercar"}  # 名前の 空白を「・」に した 題名も さがす ゲーム
 # フリックキャビンアテンダント(2026-10-21): 転送先が べつの もの・会社名・決めつけに なる 記事を 外した
 NO_WIKI.update({"cabin:ei-visa": "カードの 会社の 記事", "cabin:ei-delayed": "英語の 作品名の 記事", "cabin:ki-pitch": "座席 全体の 記事", "cabin:ki-doorhandle": "家の ドアノブの 記事",

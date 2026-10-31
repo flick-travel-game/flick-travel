@@ -1,0 +1,1986 @@
+[
+ {
+  "id": "bo-hinan",
+  "name": "避難",
+  "reading": "ひなん",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-hinanbasho",
+   "bo-hayame"
+  ],
+  "description": "あぶない 場所から 安全な 場所へ 移る ことです。家の 外へ 行く だけで なく、安全な 家の 上の 階に いる ことも 避難に なります。"
+ },
+ {
+  "id": "bo-hinanjo",
+  "name": "避難所",
+  "reading": "ひなんじょ",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-hinanbasho",
+   "bo-hinan"
+  ],
+  "description": "家に もどれない ときに しばらく 生活する ための 場所です。学校の 体育館などが 多く、市町村が 前もって 決めて います。",
+  "acceptedReadings": [
+   "ひなんじょ",
+   "ひなんしょ"
+  ]
+ },
+ {
+  "id": "bo-hazard",
+  "name": "ハザードマップ",
+  "reading": "はざーどまっぷ",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "bosai:hazard",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-shinsuisotei",
+   "bo-dosyakeikai"
+  ],
+  "description": "川が あふれた ときに 水が くる 場所や がけの 近くなどを 色で しめした 地図です。ふだんから 家族で 見て、逃げる 道を 決めて おきます。"
+ },
+ {
+  "id": "bo-keiho",
+  "name": "警報",
+  "reading": "けいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "bosai:lv3",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-chuiho",
+   "bo-tokubetsu"
+  ],
+  "description": "重大な 災害が 起きる おそれの ある ときに 気象庁が 出す 情報です。大雨などでは「レベル3」の 名前が 付き、避難に 時間の かかる 人は 避難を はじめる 目安です。"
+ },
+ {
+  "id": "bo-chuiho",
+  "name": "注意報",
+  "reading": "ちゅういほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "bosai:lv2",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-keiho",
+   "bo-sokichui"
+  ],
+  "description": "災害が 起きる おそれの ある ときに 気象庁が 出す 情報です。大雨などでは「レベル2」の 名前が 付き、ハザードマップで 逃げる 場所や 道を 確かめます。"
+ },
+ {
+  "id": "bo-tokubetsu",
+  "name": "特別警報",
+  "reading": "とくべつけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "bosai:lv5",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-keiho",
+   "bo-l5oame"
+  ],
+  "description": "数十年に 一度の ような 重大な 災害の おそれが とても 高い ときに 出す、いちばん 上の 警報です。出る 前に 避難を すませて おく ことが 大切です。"
+ },
+ {
+  "id": "bo-bosai",
+  "name": "防災",
+  "reading": "ぼうさい",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-kunren",
+   "bo-mochidashi"
+  ],
+  "description": "災害に そなえ、起きた ときの 備えを ふだんから して おく ことです。天気の 情報を 早めに 知る ことも 大事な 防災です。"
+ },
+ {
+  "id": "bo-mochidashi",
+  "name": "非常持ち出し袋",
+  "reading": "ひじょうもちだしぶくろ",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-bosai",
+   "bo-hayame"
+  ],
+  "description": "避難する ときに すぐ 持ち出せる ように、水・食べ物・明かり・薬などを 入れて おく 袋です。ときどき 中身を 見なおします。"
+ },
+ {
+  "id": "bo-hayame",
+  "name": "早めの避難",
+  "reading": "はやめのひなん",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-hinan",
+   "bo-mytimeline"
+  ],
+  "description": "暗く なる 前や 雨が 強く なる 前に 避難を はじめる ことです。へえ: 夜や 強い 雨の 中は 道が 見えにくいので、明るい うちに 動くと 安全に 逃げられます。"
+ },
+ {
+  "id": "bo-kunren",
+  "name": "防災訓練",
+  "reading": "ぼうさいくんれん",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-bosai",
+   "bo-hinanbasho"
+  ],
+  "description": "災害の ときの 動きかたを ふだんから 練習する ことです。避難の 道や 集まる 場所を 体で おぼえて おくと、いざと いう ときに 落ちついて 動けます。"
+ },
+ {
+  "id": "bo-keikailv",
+  "name": "警戒レベル",
+  "reading": "けいかいれべる",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-koreisha",
+   "bo-hinanshiji"
+  ],
+  "description": "住民が とる 行動を 1から 5の 数字で しめした ものです。大雨などの 防災気象情報にも 同じ 数字が 付いて いて、レベル4までに 避難を すませます。"
+ },
+ {
+  "id": "bo-kozui",
+  "name": "洪水",
+  "reading": "こうずい",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-gaisui",
+   "bo-naisui"
+  ],
+  "description": "大雨で 川の 水が ふえて、あふれ出す ことです。上流で 降った 雨が あとから 流れて くるので、雨が やんだ あとも 川には 近づきません。"
+ },
+ {
+  "id": "bo-dosha",
+  "name": "土砂災害",
+  "reading": "どしゃさいがい",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-gakekuzure",
+   "bo-dosekiryu"
+  ],
+  "description": "がけ崩れ・土石流・地すべりを まとめた 言いかたです。長く 雨が 降って 土に 水が たまると 起きやすく、がけや 山の 近くの 人は 早めに 避難します。"
+ },
+ {
+  "id": "bo-shinsui",
+  "name": "浸水",
+  "reading": "しんすい",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-naisui",
+   "bo-okunai"
+  ],
+  "description": "雨水や 川の 水が 家や 道に 入りこむ ことです。低い 土地や 地下は 水が たまりやすいので、強い 雨の ときは 近づかない ように します。"
+ },
+ {
+  "id": "bo-takashio",
+  "name": "高潮",
+  "reading": "たかしお",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-suiage",
+   "bo-fukiyose"
+  ],
+  "description": "台風や 発達した 低気圧で 海面が 高く なる ことです。気圧が 下がる 吸い上げと 強い 風の 吹き寄せで 起き、海の 近くの 人は 早めに 高い 所へ 逃げます。"
+ },
+ {
+  "id": "bo-necchu",
+  "name": "熱中症",
+  "reading": "ねっちゅうしょう",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥤",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-necchualert",
+   "bo-bosai"
+  ],
+  "description": "暑さで 体の 中に 熱が こもり、体の 調子が わるく なる ことです。水分と 塩分を とり、すずしい 所で 休むと ふせげます。"
+ },
+ {
+  "id": "bo-hinanbasho",
+  "name": "避難場所",
+  "reading": "ひなんばしょ",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-shiteikinkyu",
+   "bo-hinanjo"
+  ],
+  "description": "災害から 身を 守る ために いちじ 逃げこむ 場所です。高台や じょうぶな 建物などで、災害の 種類ごとに 使える 場所が ちがいます。"
+ },
+ {
+  "id": "bo-kishojoho",
+  "name": "気象情報",
+  "reading": "きしょうじょうほう",
+  "journey": "bosai",
+  "category": "ほかの情報",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📻",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-keiho",
+   "bo-kaisetsu"
+  ],
+  "description": "天気予報・警報・注意報など、気象庁が 出す 天気の 情報を まとめた 言いかたです。テレビや ホームページで 早めに 確かめます。"
+ },
+ {
+  "id": "bo-gakekuzure",
+  "name": "がけ崩れ",
+  "reading": "がけくずれ",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-dosha",
+   "bo-zencho"
+  ],
+  "description": "急な 斜面が 雨で 水を ふくみ、いっきに くずれ落ちる ことです。斜面から 小石が 落ちる・水が わき出すなどの 前ぶれが あれば すぐ はなれます。"
+ },
+ {
+  "id": "bo-mytimeline",
+  "name": "マイ・タイムライン",
+  "reading": "まいたいむらいん",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "bo-timeline",
+   "bo-hayame"
+  ],
+  "description": "台風や 大雨の ときに「いつ・だれが・何を するか」を 自分や 家族で 前もって 決めて おく 避難の 計画です。"
+ },
+ {
+  "id": "bo-sokichui",
+  "name": "早期注意情報",
+  "reading": "そうきちゅういじょうほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "bosai:lv1",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l2oame",
+   "bo-jikeiretsu"
+  ],
+  "description": "5日先までに 警報級の 現象が 起きる 可能性を［高］［中］で しめす 情報です。大雨・高潮などでは レベル1で、心がまえを 高める 目安に なります。"
+ },
+ {
+  "id": "bo-l2oame",
+  "name": "レベル2大雨注意報",
+  "reading": "れべるにおおあめちゅういほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "bosai:lv2",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l3oame",
+   "bo-chuiho"
+  ],
+  "description": "大雨による 浸水や、大きな 川 以外の 川の 氾濫の おそれが ある ときに 出ます。2026年5月から 名前に レベルが 付き、避難の 道や 場所を 確かめる 目安です。"
+ },
+ {
+  "id": "bo-l3oame",
+  "name": "レベル3大雨警報",
+  "reading": "れべるさんおおあめけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "bosai:lv3",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l4oame",
+   "bo-koreisha"
+  ],
+  "description": "大雨で 重大な 浸水などの おそれが ある ときに 出ます。高齢者等避難の 目安で、避難に 時間の かかる 人は この ときに 避難を はじめます。"
+ },
+ {
+  "id": "bo-l4oame",
+  "name": "レベル4大雨危険警報",
+  "reading": "れべるよんおおあめきけんけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟪",
+  "mapNode": "bosai:lv4",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l5oame",
+   "bo-hinanshiji"
+  ],
+  "description": "大雨による 浸水などの 危険が とても 高い ときに 出る、2026年に 新しく できた 危険警報です。避難指示の 目安で、危ない 場所の 人は 全員 避難します。"
+ },
+ {
+  "id": "bo-l5oame",
+  "name": "レベル5大雨特別警報",
+  "reading": "れべるごおおあめとくべつけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "bosai:lv5",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l4oame",
+   "bo-kinkyu"
+  ],
+  "description": "数十年に 一度の 大雨で、災害が 起きて いるか せまって いる ときに 出ます。その とき 逃げるのは むずかしい ことも あるので、レベル4までに 避難を すませます。"
+ },
+ {
+  "id": "bo-l4dosha",
+  "name": "レベル4土砂災害危険警報",
+  "reading": "れべるよんどしゃさいがいきけんけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟪",
+  "mapNode": "bosai:lv4",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l3dosha",
+   "bo-doshakikikuru"
+  ],
+  "description": "土砂災害の 危険が とても 高く、避難指示の 目安と なる 情報です。もとは「土砂災害警戒情報」と よばれて いました。都道府県と 気象庁が いっしょに 出します。"
+ },
+ {
+  "id": "bo-l3hanran",
+  "name": "レベル3氾濫警報",
+  "reading": "れべるさんはんらんけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "bosai:lv3",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l4hanran",
+   "bo-gaisui"
+  ],
+  "description": "洪水予報河川で 氾濫の おそれが ある ときに 川ごとに 出ます。2026年5月に「洪水警報」は なくなり、川の 氾濫の 情報に 変わりました。"
+ },
+ {
+  "id": "bo-l4hanran",
+  "name": "レベル4氾濫危険警報",
+  "reading": "れべるよんはんらんきけんけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟪",
+  "mapNode": "bosai:lv4",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l3hanran",
+   "bo-l5hanran"
+  ],
+  "description": "洪水予報河川で 氾濫の 危険が とても 高く なった ときに 出ます。避難指示の 目安で、川の 近くや 浸水しそうな 場所の 人は 避難を すませます。"
+ },
+ {
+  "id": "bo-l4takashio",
+  "name": "レベル4高潮危険警報",
+  "reading": "れべるよんたかしおきけんけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟪",
+  "mapNode": "bosai:lv4",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-takashio",
+   "bo-l3takashio"
+  ],
+  "description": "高潮で 浸水の 危険が とても 高い ときに 出る 危険警報です。避難指示の 目安で、海の 近くの 人は 風が 強く なる 前に 高い 所へ 避難します。"
+ },
+ {
+  "id": "bo-koreisha",
+  "name": "高齢者等避難",
+  "reading": "こうれいしゃとうひなん",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hinanshiji",
+   "bo-yoshien"
+  ],
+  "description": "警戒レベル3で 市町村が 出す 避難情報です。お年よりや 体の 不自由な 人など 避難に 時間の かかる 人と その 支援者が 避難を はじめます。"
+ },
+ {
+  "id": "bo-hinanshiji",
+  "name": "避難指示",
+  "reading": "ひなんしじ",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-koreisha",
+   "bo-kinkyu"
+  ],
+  "description": "警戒レベル4で 市町村が 出す 避難情報で、危ない 場所に いる 人は 全員 避難します。2021年に 避難勧告が なくなり、避難指示に 一本化されました。"
+ },
+ {
+  "id": "bo-kinkyu",
+  "name": "緊急安全確保",
+  "reading": "きんきゅうあんぜんかくほ",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🆘",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hinanshiji",
+   "bo-okunai"
+  ],
+  "description": "警戒レベル5で 市町村が 出す 情報で、すでに 安全な 避難が むずかしい ことも あります。少しでも 高い 所へ 移るなど、その場で できる 安全な 行動を とります。"
+ },
+ {
+  "id": "bo-kikikuru",
+  "name": "キキクル",
+  "reading": "ききくる",
+  "journey": "bosai",
+  "category": "キキクル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "bosai:kikikuru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-oamekikikuru",
+   "bo-doshakikikuru"
+  ],
+  "description": "大雨による 災害の 危険度を 地図の 上に 色で しめす 気象庁の 情報です。黄・赤・紫・黒の 順に 危険が 高く、紫までに 避難を すませます。"
+ },
+ {
+  "id": "bo-oamekikikuru",
+  "name": "大雨キキクル",
+  "reading": "おおあめききくる",
+  "journey": "bosai",
+  "category": "キキクル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "bosai:kikikuru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-shinsuikikikuru",
+   "bo-kozuikikikuru"
+  ],
+  "description": "洪水キキクルと 浸水キキクルの 危険度を 重ねて しめす キキクルで、2026年から 新しく 見られる ように なりました。ボタンで それぞれの 表示に 切りかえられます。"
+ },
+ {
+  "id": "bo-sokuho",
+  "name": "気象防災速報",
+  "reading": "きしょうぼうさいそくほう",
+  "journey": "bosai",
+  "category": "速報と解説",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "bosai:sokuho",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-sokusenjo",
+   "bo-sokukiroku"
+  ],
+  "description": "線状降水帯の 発生や 記録的な 短時間の 大雨など、いま 起きて いる 極端な 現象を すばやく 伝える 情報です。2026年から この 名前に そろえられました。"
+ },
+ {
+  "id": "bo-bofukeiho",
+  "name": "暴風警報",
+  "reading": "ぼうふうけいほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-bofutoku",
+   "bo-kyofuchui"
+  ],
+  "description": "暴風で 重大な 災害の おそれが ある ときに 出る 警報です。警戒レベルの 数字は 付きません。風が 強く なる 前に 外の 物を しまい、外出を ひかえます。"
+ },
+ {
+  "id": "bo-oyukikeiho",
+  "name": "大雪警報",
+  "reading": "おおゆきけいほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-oyukitoku",
+   "bo-bofusetsu"
+  ],
+  "description": "大雪で 重大な 災害の おそれが ある ときに 出る 警報です。警戒レベルの 数字は 付きません。車の 立ち往生などに そなえて、出かける 予定を 見なおします。"
+ },
+ {
+  "id": "bo-harokeiho",
+  "name": "波浪警報",
+  "reading": "はろうけいほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-harochui",
+   "bo-uneri"
+  ],
+  "description": "高い 波で 重大な 災害の おそれが ある ときに 出る 警報です。警戒レベルの 数字は 付きません。海岸や 堤防には 近づかない ように します。"
+ },
+ {
+  "id": "bo-kaminarichui",
+  "name": "雷注意報",
+  "reading": "かみなりちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-sokutatsu",
+   "bo-kyofuchui"
+  ],
+  "description": "落雷や 突風・ひょうなど、積乱雲による 現象に 注意を よびかける 注意報です。雷が 聞こえたら じょうぶな 建物や 車の 中に 入ります。"
+ },
+ {
+  "id": "bo-kyofuchui",
+  "name": "強風注意報",
+  "reading": "きょうふうちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍃",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-bofukeiho",
+   "bo-fusetsu"
+  ],
+  "description": "強い 風による 災害に 注意を よびかける 注意報です。暴風警報より 一つ 下の 段階で、看板や 植木ばちが 飛ばされない ように します。"
+ },
+ {
+  "id": "bo-naisui",
+  "name": "内水氾濫",
+  "reading": "ないすいはんらん",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-gaisui",
+   "bo-shinsui"
+  ],
+  "description": "強い 雨に 下水道や 水路の 排水が 追いつかず、町の 中に 水が あふれる ことです。大きな 川が あふれて いなくても 起き、地下や 低い 道は 早めに さけます。"
+ },
+ {
+  "id": "bo-gaisui",
+  "name": "外水氾濫",
+  "reading": "がいすいはんらん",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏞",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-naisui",
+   "bo-kozui"
+  ],
+  "description": "川の 堤防から 水が あふれたり、堤防が くずれたりして 川の 水が 町に 流れこむ ことです。洪水予報河川では 氾濫の 情報で 早めに 知らせます。"
+ },
+ {
+  "id": "bo-dosekiryu",
+  "name": "土石流",
+  "reading": "どせきりゅう",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-dosha",
+   "bo-zencho"
+  ],
+  "description": "山や 谷の 土や 石が 雨水と いっしょに いっきに 流れ下る ことです。とても 速いので、谷の 出口の 近くの 人は 雨が 強く なる 前に 避難します。"
+ },
+ {
+  "id": "bo-jisuberi",
+  "name": "地すべり",
+  "reading": "じすべり",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-dosha",
+   "bo-zencho"
+  ],
+  "description": "斜面の 土が 地下水の 力で ゆっくり 下へ すべり動く ことです。地面の ひび割れや 井戸の 水の 変化などが 前ぶれに なります。"
+ },
+ {
+  "id": "bo-nadare",
+  "name": "雪崩",
+  "reading": "なだれ",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-nadarechui",
+   "bo-yusetsu"
+  ],
+  "description": "山の 斜面に つもった 雪が 一度に すべり落ちる ことです。大雪の あとや 気温が 急に 上がった ときに 起きやすく、雪の 斜面に 近づかない ように します。"
+ },
+ {
+  "id": "bo-gyoseimusen",
+  "name": "防災行政無線",
+  "reading": "ぼうさいぎょうせいむせん",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hinanshiji",
+   "bo-koreisha"
+  ],
+  "description": "市町村が 屋外の スピーカーなどで 避難情報を 住民に 伝える しくみです。雨の 音で 聞こえにくい ときは テレビや ラジオでも 確かめます。"
+ },
+ {
+  "id": "bo-shiteikinkyu",
+  "name": "指定緊急避難場所",
+  "reading": "していきんきゅうひなんばしょ",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hinanbasho",
+   "bo-hinanjo"
+  ],
+  "description": "洪水・土砂災害などの 種類ごとに 安全だと して 市町村が 決めた 避難の 場所です。災害の 種類に よって 使えない 場所が あるので 前もって 確かめます。"
+ },
+ {
+  "id": "bo-okunai",
+  "name": "屋内安全確保",
+  "reading": "おくないあんぜんかくほ",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-tachinoki",
+   "bo-shinsui"
+  ],
+  "description": "浸水しても 安全な 高さに いる ときなど、家の 上の 階に とどまって 身を 守る 避難の しかたです。ハザードマップで 自分の 家が 使えるか 確かめます。"
+ },
+ {
+  "id": "bo-necchualert",
+  "name": "熱中症警戒アラート",
+  "reading": "ねっちゅうしょうけいかいあらーと",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-necchu",
+   "bo-bosai"
+  ],
+  "description": "熱中症の 危険が とても 高く なる と 予想される ときに 環境省と 気象庁が 出す 情報です。暑さ指数を もとに 出し、外での 運動を ひかえる 目安に なります。"
+ },
+ {
+  "id": "bo-tachinoki",
+  "name": "立ち退き避難",
+  "reading": "たちのきひなん",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-okunai",
+   "bo-shiteikinkyu"
+  ],
+  "description": "家を はなれて、指定緊急避難場所や 親せきの 家など 安全な 場所へ 移る 避難の しかたです。浸水の 深い 所や がけの 近くの 人は こちらを 選びます。"
+ },
+ {
+  "id": "bo-l2dosha",
+  "name": "レベル2土砂災害注意報",
+  "reading": "れべるにどしゃさいがいちゅういほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "bosai:lv2",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l3dosha",
+   "bo-dosha"
+  ],
+  "description": "土砂災害の おそれが ある ときに 出る 注意報です。2026年から 大雨とは 分けて、土砂災害だけの 情報として 出る ように なりました。"
+ },
+ {
+  "id": "bo-l2hanran",
+  "name": "レベル2氾濫注意報",
+  "reading": "れべるにはんらんちゅういほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "bosai:lv2",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l3hanran",
+   "bo-gaisui"
+  ],
+  "description": "洪水予報河川で 氾濫の おそれが ある ときに 川ごとに 出る 注意報です。川の 水位の 情報と 合わせて、避難の 道や 場所を 確かめる 目安です。"
+ },
+ {
+  "id": "bo-l2takashio",
+  "name": "レベル2高潮注意報",
+  "reading": "れべるにたかしおちゅういほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "bosai:lv2",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l3takashio",
+   "bo-takashio"
+  ],
+  "description": "高潮で 浸水の おそれが ある ときに 出る 注意報です。台風などで 潮位が 上がる 前から 出して、海の 近くの 人に 早めの 準備を よびかけます。"
+ },
+ {
+  "id": "bo-l3dosha",
+  "name": "レベル3土砂災害警報",
+  "reading": "れべるさんどしゃさいがいけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "bosai:lv3",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l4dosha",
+   "bo-l2dosha"
+  ],
+  "description": "土砂災害の おそれが 高まり、高齢者等避難の 目安と なる 警報です。まもなく レベル4土砂災害危険警報が 出そうな ときにも 出して、早めの 避難を うながします。"
+ },
+ {
+  "id": "bo-l3takashio",
+  "name": "レベル3高潮警報",
+  "reading": "れべるさんたかしおけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "bosai:lv3",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l4takashio",
+   "bo-l2takashio"
+  ],
+  "description": "高潮で 重大な 浸水の おそれが ある ときに 出る 警報で、高齢者等避難の 目安です。へえ: 高潮は 風が 強く なる 前から 備えが 要るので、早めに 出されます。"
+ },
+ {
+  "id": "bo-l5dosha",
+  "name": "レベル5土砂災害特別警報",
+  "reading": "れべるごどしゃさいがいとくべつけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "bosai:lv5",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l4dosha",
+   "bo-kinkyu"
+  ],
+  "description": "土砂災害が 起きて いるか せまって いる ときの いちばん 上の 情報で、警戒レベル5に あたります。この 前の レベル4までに 避難を すませて おきます。"
+ },
+ {
+  "id": "bo-l5hanran",
+  "name": "レベル5氾濫特別警報",
+  "reading": "れべるごはんらんとくべつけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "bosai:lv5",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l4hanran",
+   "bo-kinkyu"
+  ],
+  "description": "2026年に 新しく できた 河川氾濫の 特別警報です。洪水予報河川で 氾濫が 起きて いるか せまって いる ときに 出し、警戒レベル5に あたります。"
+ },
+ {
+  "id": "bo-l5takashio",
+  "name": "レベル5高潮特別警報",
+  "reading": "れべるごたかしおとくべつけいほう",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "bosai:lv5",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-l4takashio",
+   "bo-kinkyu"
+  ],
+  "description": "高潮による 浸水が 起きて いるか せまって いる ときの いちばん 上の 情報で、警戒レベル5に あたります。海の 近くの 人は レベル4までに 避難を すませます。"
+ },
+ {
+  "id": "bo-doshakikikuru",
+  "name": "土砂キキクル",
+  "reading": "どしゃききくる",
+  "journey": "bosai",
+  "category": "キキクル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "bosai:kikikuru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-kikikuru",
+   "bo-dojo"
+  ],
+  "description": "土砂災害の 危険度を 地図に 色で しめす キキクルです。土壌雨量指数などを もとに 2時間先までの 危険度を しめし、紫は レベル4に あたります。"
+ },
+ {
+  "id": "bo-shinsuikikikuru",
+  "name": "浸水キキクル",
+  "reading": "しんすいききくる",
+  "journey": "bosai",
+  "category": "キキクル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "bosai:kikikuru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hyomen",
+   "bo-oamekikikuru"
+  ],
+  "description": "短い 時間の 強い 雨による 浸水の 危険度を 地図に しめす キキクルです。表面雨量指数を もとに します。"
+ },
+ {
+  "id": "bo-kozuikikikuru",
+  "name": "洪水キキクル",
+  "reading": "こうずいききくる",
+  "journey": "bosai",
+  "category": "キキクル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "bosai:kikikuru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-ryuiki",
+   "bo-oamekikikuru"
+  ],
+  "description": "川の 氾濫の 危険度を 川の 流れに 沿って 色で しめす キキクルです。流域雨量指数を もとに、上流の 雨が 流れて くる ようすも 考えます。"
+ },
+ {
+  "id": "bo-sokusenjo",
+  "name": "気象防災速報(線状降水帯発生)",
+  "reading": "きしょうぼうさいそくほうせんじょうこうすいたいはっせい",
+  "journey": "bosai",
+  "category": "速報と解説",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "bosai:sokuho",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-sokuho",
+   "bo-shuchugou"
+  ],
+  "description": "線状降水帯が 発生して、同じ 場所で 強い 雨が 降りつづいて いる ことを 伝える 速報です。もとは「顕著な大雨に関する気象情報」と よばれて いました。"
+ },
+ {
+  "id": "bo-sokukiroku",
+  "name": "気象防災速報(記録的短時間大雨)",
+  "reading": "きしょうぼうさいそくほうきろくてきたんじかんおおあめ",
+  "journey": "bosai",
+  "category": "速報と解説",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "bosai:sokuho",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-sokuho",
+   "bo-moretsuame"
+  ],
+  "description": "数年に 一度の ような 短い 時間の 大雨が 観測・解析された ときに 出す 速報です。もとは「記録的短時間大雨情報」と よばれて いました。"
+ },
+ {
+  "id": "bo-sokutatsu",
+  "name": "気象防災速報(竜巻注意)",
+  "reading": "きしょうぼうさいそくほうたつまきちゅうい",
+  "journey": "bosai",
+  "category": "速報と解説",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌪",
+  "mapNode": "bosai:sokuho",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-sokuho",
+   "bo-kaminarichui"
+  ],
+  "description": "竜巻などの 激しい 突風が 起きやすい ときに 出す 速報です。もとは「竜巻注意情報」と よばれて いました。空が 急に 暗く なったら じょうぶな 建物に 入ります。"
+ },
+ {
+  "id": "bo-jikeiretsu",
+  "name": "時系列情報",
+  "reading": "じけいれつじょうほう",
+  "journey": "bosai",
+  "category": "速報と解説",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-sokichui",
+   "bo-kaisetsu"
+  ],
+  "description": "明日までの 警報・注意報の 見通しを 3時間ごとなどに しめす 情報で、2026年から 毎日 4回 出ます。警報が 出る 前から、いつ 危なく なるかが わかります。"
+ },
+ {
+  "id": "bo-kaisetsu",
+  "name": "気象解説情報",
+  "reading": "きしょうかいせつじょうほう",
+  "journey": "bosai",
+  "category": "速報と解説",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📰",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-jikeiretsu",
+   "bo-taifujoho"
+  ],
+  "description": "いまと これからの 気象の ようすを まとめて 解説する 情報です。2026年から「気象情報」や 台風の 総合的な 情報などが この 名前に まとめられました。"
+ },
+ {
+  "id": "bo-bofusetsu",
+  "name": "暴風雪警報",
+  "reading": "ぼうふうせつけいほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌨",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-fusetsu",
+   "bo-oyukikeiho"
+  ],
+  "description": "雪を ともなう 暴風で 重大な 災害の おそれが ある ときに 出る 警報です。ふぶきで 前が 見えなく なるので、外出を ひかえます。"
+ },
+ {
+  "id": "bo-bofutoku",
+  "name": "暴風特別警報",
+  "reading": "ぼうふうとくべつけいほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-bofukeiho",
+   "bo-tokubetsu"
+  ],
+  "description": "数十年に 一度の 強さの 台風などで 暴風が 予想される ときに 出る 特別警報です。警戒レベルの 数字は 付きませんが、最大級の 警戒が 必要です。"
+ },
+ {
+  "id": "bo-oyukitoku",
+  "name": "大雪特別警報",
+  "reading": "おおゆきとくべつけいほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-oyukikeiho",
+   "bo-tokubetsu"
+  ],
+  "description": "数十年に 一度の 降雪量に なる と 予想される ときに 出る 特別警報です。早めに 食べ物や 燃料を そなえ、外出を ひかえます。"
+ },
+ {
+  "id": "bo-nadarechui",
+  "name": "なだれ注意報",
+  "reading": "なだれちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-nadare",
+   "bo-yusetsu"
+  ],
+  "description": "なだれが 起きる おそれが ある ときに 出る 注意報です。山の 斜面の 下の 道や 家の 人は 雪の 斜面に 近づかない ように します。"
+ },
+ {
+  "id": "bo-chakusetsu",
+  "name": "着雪注意報",
+  "reading": "ちゃくせつちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌨",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-chakuhyo",
+   "bo-oyukikeiho"
+  ],
+  "description": "しめった 雪が 電線や 木に つく ことで 起きる 災害に 注意を よびかける 注意報です。電線が 切れて 停電する ことに そなえます。"
+ },
+ {
+  "id": "bo-chakuhyo",
+  "name": "着氷注意報",
+  "reading": "ちゃくひょうちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-chakusetsu",
+   "bo-teion"
+  ],
+  "description": "水しぶきや 雨が こおりついて 船や 電線に つく ことで 起きる 災害に 注意を よびかける 注意報です。北の 海の 船などに 大事です。"
+ },
+ {
+  "id": "bo-yusetsu",
+  "name": "融雪注意報",
+  "reading": "ゆうせつちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-nadarechui",
+   "bo-shinsui"
+  ],
+  "description": "つもった 雪が とけて できた 水で、浸水や 土砂災害が 起きる おそれが ある ときに 出る 注意報です。暖かい 雨が 降る ときに 気を つけます。"
+ },
+ {
+  "id": "bo-nomu",
+  "name": "濃霧注意報",
+  "reading": "のうむちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-chakuhyo",
+   "bo-kanso"
+  ],
+  "description": "こい 霧で 見通しが 悪く なり、交通などに 災害の おそれが ある ときに 出る 注意報です。車や 船、飛行機の 運行に 大事な 情報です。"
+ },
+ {
+  "id": "bo-kanso",
+  "name": "乾燥注意報",
+  "reading": "かんそうちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-kasaikisho",
+   "bo-nomu"
+  ],
+  "description": "空気が かわいて 火事が 起きやすい ときに 出る 注意報です。実効湿度や 最小湿度を もとに 出し、火の 取りあつかいに 気を つけます。"
+ },
+ {
+  "id": "bo-teion",
+  "name": "低温注意報",
+  "reading": "ていおんちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥶",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-shimochui",
+   "bo-chakuhyo"
+  ],
+  "description": "気温が とても 低く なり、農作物や 水道管の こおりつきなどに 災害の おそれが ある ときに 出る 注意報です。"
+ },
+ {
+  "id": "bo-shimochui",
+  "name": "霜注意報",
+  "reading": "しもちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-teion",
+   "bo-kanso"
+  ],
+  "description": "春や 秋の 晴れた 朝に 霜が おりて、農作物に 災害の おそれが ある ときに 出る 注意報です。へえ: 風が 弱く よく 晴れた 夜は 放射冷却で 霜が おりやすく なります。"
+ },
+ {
+  "id": "bo-fusetsu",
+  "name": "風雪注意報",
+  "reading": "ふうせつちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌨",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-bofusetsu",
+   "bo-kyofuchui"
+  ],
+  "description": "雪を ともなう 強い 風に 注意を よびかける 注意報です。暴風雪警報より 一つ 下の 段階で、ふぶきによる 見通しの 悪さに 気を つけます。"
+ },
+ {
+  "id": "bo-harochui",
+  "name": "波浪注意報",
+  "reading": "はろうちゅういほう",
+  "journey": "bosai",
+  "category": "ほかの警報・注意報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-harokeiho",
+   "bo-yugi"
+  ],
+  "description": "高い 波による 災害の おそれが ある ときに 出る 注意報です。波浪警報より 一つ 下の 段階で、海の レジャーや 釣りは ひかえます。"
+ },
+ {
+  "id": "bo-dojo",
+  "name": "土壌雨量指数",
+  "reading": "どじょううりょうしすう",
+  "journey": "bosai",
+  "category": "キキクル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "bosai:kikikuru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-doshakikikuru",
+   "bo-hyomen"
+  ],
+  "description": "降った 雨が 土の 中に どれだけ たまって いるかを 数で しめした ものです。雨が やんでも すぐには 下がらないので、土砂災害の 警戒が つづく ことが あります。"
+ },
+ {
+  "id": "bo-hyomen",
+  "name": "表面雨量指数",
+  "reading": "ひょうめんうりょうしすう",
+  "journey": "bosai",
+  "category": "キキクル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "bosai:kikikuru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-shinsuikikikuru",
+   "bo-dojo"
+  ],
+  "description": "降った 雨が 地面の 表面に どれだけ たまって いるかを 数で しめした ものです。短い 時間の 強い 雨による 浸水の 危険度に 使います。"
+ },
+ {
+  "id": "bo-ryuiki",
+  "name": "流域雨量指数",
+  "reading": "りゅういきうりょうしすう",
+  "journey": "bosai",
+  "category": "キキクル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "bosai:kikikuru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-kozuikikikuru",
+   "bo-dojo"
+  ],
+  "description": "川の 上流に 降った 雨が どれだけ 下流へ 流れて くるかを 数で しめした ものです。川の 氾濫の 危険度に 使います。"
+ },
+ {
+  "id": "bo-kijun",
+  "name": "警報基準",
+  "reading": "けいほうきじゅん",
+  "journey": "bosai",
+  "category": "レベルの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "bosai:lv3",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-keiho",
+   "bo-niji"
+  ],
+  "description": "警報・注意報を 出す かどうかを 決める ものさしです。土地ごとに 災害の 起きやすさが ちがうので、市町村ごとに 決められ、ときどき 見なおされます。"
+ },
+ {
+  "id": "bo-niji",
+  "name": "二次細分区域",
+  "reading": "にじさいぶんくいき",
+  "journey": "bosai",
+  "category": "ほかの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-kijun",
+   "bo-keiho"
+  ],
+  "description": "警報・注意報を 出す ときの 区域で、ほぼ 市町村ごとに 分けられて います。広い 市などでは 一つの 市を さらに 分ける ことも あります。"
+ },
+ {
+  "id": "bo-shinsuisotei",
+  "name": "浸水想定区域",
+  "reading": "しんすいそうていくいき",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "bosai:hazard",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hazard",
+   "bo-gaisui"
+  ],
+  "description": "川が あふれた ときに 浸水する と 考えられる 範囲で、水防法に もとづいて 決められます。ハザードマップの もとに なります。"
+ },
+ {
+  "id": "bo-dosyakeikai",
+  "name": "土砂災害警戒区域",
+  "reading": "どしゃさいがいけいかいくいき",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "bosai:hazard",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-doshatokubetsu",
+   "bo-hazard"
+  ],
+  "description": "土砂災害が 起きる おそれの ある 区域で、イエローゾーンとも よばれます。この 区域の 人は 早めの 避難が 大切です。"
+ },
+ {
+  "id": "bo-doshatokubetsu",
+  "name": "土砂災害特別警戒区域",
+  "reading": "どしゃさいがいとくべつけいかいくいき",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "bosai:hazard",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-dosyakeikai",
+   "bo-hazard"
+  ],
+  "description": "土砂災害警戒区域の 中でも 建物が こわれる ほどの 力が かかる おそれの ある 区域で、レッドゾーンとも よばれます。建物の 建てかたにも 決まりが あります。"
+ },
+ {
+  "id": "bo-yoshien",
+  "name": "避難行動要支援者",
+  "reading": "ひなんこうどうようしえんしゃ",
+  "journey": "bosai",
+  "category": "避難",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "bosai:hinan",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-koreisha",
+   "bo-yohairyo"
+  ],
+  "description": "災害の とき 自分 だけでは 避難が むずかしく、手助けが 必要な 人の ことです。市町村は 名簿を つくり、近所の 人と 助けあう しくみを 考えます。"
+ },
+ {
+  "id": "bo-timeline",
+  "name": "タイムライン",
+  "reading": "たいむらいん",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-mytimeline",
+   "bo-chiku"
+  ],
+  "description": "台風などが 近づく ときに「いつ・だれが・何を するか」を 時間の 流れに そって 決めた 防災行動計画です。市町村や 鉄道会社などが 前もって つくります。"
+ },
+ {
+  "id": "bo-adviser",
+  "name": "気象防災アドバイザー",
+  "reading": "きしょうぼうさいあどばいざー",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👩‍💼",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-jett",
+   "bo-timeline"
+  ],
+  "description": "地域の 気象と 防災に くわしい 人を 国土交通省が 委嘱し、市町村の 防災を 助ける しくみです。気象台の OB や 気象予報士などが ふだんの 勉強会や 大雨の ときの 判断を 支えます。"
+ },
+ {
+  "id": "bo-jett",
+  "name": "気象庁防災対応支援チーム(JETT)",
+  "reading": "きしょうちょうぼうさいたいおうしえんちーむ",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-adviser",
+   "bo-kaisetsu"
+  ],
+  "description": "大きな 災害が 起きそうな ときや 起きた ときに、気象庁の 職員が 自治体へ 行って 気象の 解説を する チームです。JETT とも よばれます。"
+ },
+ {
+  "id": "bo-suiage",
+  "name": "吸い上げ効果",
+  "reading": "すいあげこうか",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-takashio",
+   "bo-fukiyose"
+  ],
+  "description": "気圧が 下がると 海面が 吸い上げられる ように 高く なる はたらきです。へえ: 気圧が 1hPa 下がると 海面は およそ 1cm 上がります。"
+ },
+ {
+  "id": "bo-fukiyose",
+  "name": "吹き寄せ効果",
+  "reading": "ふきよせこうか",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-takashio",
+   "bo-suiage"
+  ],
+  "description": "海から 陸へ 向かう 強い 風で 海水が 岸に 吹き寄せられ、海面が 高く なる はたらきです。遠浅で 奥まった 湾ほど 大きく なりやすいです。"
+ },
+ {
+  "id": "bo-mancho",
+  "name": "満潮",
+  "reading": "まんちょう",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌕",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-takashio",
+   "bo-fukiyose"
+  ],
+  "description": "潮が 満ちて 海面が いちばん 高く なる ときです。台風が 近づく 時間と 満潮が 重なると 高潮が より 高く なるので、予報で 気を つけます。"
+ },
+ {
+  "id": "bo-uneri",
+  "name": "うねり",
+  "reading": "うねり",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-furo",
+   "bo-yugi"
+  ],
+  "description": "遠くの 台風などで できた 波が 伝わって きた、周期の 長い 波です。その 場所の 風が 弱くても 高い 波が 打ち寄せる ことが あります。"
+ },
+ {
+  "id": "bo-yugi",
+  "name": "有義波高",
+  "reading": "ゆうぎはこう",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-uneri",
+   "bo-harochui"
+  ],
+  "description": "ある 時間に 来た 波を 高い ほうから 3分の1 選んで 平均した 波の 高さです。天気予報の「波の 高さ」は ふつう この 値です。"
+ },
+ {
+  "id": "bo-furo",
+  "name": "風浪",
+  "reading": "ふうろう",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-uneri",
+   "bo-harokeiho"
+  ],
+  "description": "その 場所で 吹いて いる 風に よって できる 波です。風が 強く、長い 時間・長い きょり 吹くほど 高く なります。"
+ },
+ {
+  "id": "bo-shuchugou",
+  "name": "集中豪雨",
+  "reading": "しゅうちゅうごうう",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-sokusenjo",
+   "bo-hageshii"
+  ],
+  "description": "せまい 地域に 短い 時間で たくさんの 雨が 降る ことです。積乱雲が つぎつぎに できると 起きやすく、キキクルで 危険度を 確かめます。"
+ },
+ {
+  "id": "bo-shinso",
+  "name": "深層崩壊",
+  "reading": "しんそうほうかい",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hyoso",
+   "bo-dosha"
+  ],
+  "description": "山の 斜面が 表面の 土だけで なく、深い 岩の 層から 大きく くずれる ことです。長い 雨の あとに 起きる ことが あります。"
+ },
+ {
+  "id": "bo-hyoso",
+  "name": "表層崩壊",
+  "reading": "ひょうそうほうかい",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-shinso",
+   "bo-gakekuzure"
+  ],
+  "description": "斜面の 表面に ある うすい 土の 層が くずれる ことです。強い 雨で 土が 水を ふくむと 起きやすく、がけ崩れの 多くは この 形です。"
+ },
+ {
+  "id": "bo-zencho",
+  "name": "前兆現象",
+  "reading": "ぜんちょうげんしょう",
+  "journey": "bosai",
+  "category": "水と土砂",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "bosai:mizu",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-gakekuzure",
+   "bo-dosekiryu"
+  ],
+  "description": "土砂災害の 前に 見られる ことの ある 変化です。小石が 落ちる・川が にごる・水が 急に へる などに 気づいたら すぐ その 場を はなれます。"
+ },
+ {
+  "id": "bo-kasaikisho",
+  "name": "火災気象通報",
+  "reading": "かさいきしょうつうほう",
+  "journey": "bosai",
+  "category": "ほかの情報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "bosai:ichiran",
+  "field": "気象業務法",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-kanso",
+   "bo-kyofuchui"
+  ],
+  "description": "空気が かわいて 風が 強いなど、火事が 起きやすい 気象の ときに 気象台が 都道府県知事に 伝える 通報です。消防法で 決められて いて、火災警報の もとに なります。"
+ },
+ {
+  "id": "bo-taifujoho",
+  "name": "台風情報",
+  "reading": "たいふうじょうほう",
+  "journey": "bosai",
+  "category": "速報と解説",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "bosai:ichiran",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-kaisetsu",
+   "bo-bofukeiho"
+  ],
+  "description": "台風の 中心の 位置・強さ・進む 向きと、予報円などを 伝える 情報です。暴風域に 入る 前に 備えを すませる ために 使います。"
+ },
+ {
+  "id": "bo-yohairyo",
+  "name": "要配慮者利用施設",
+  "reading": "ようはいりょしゃりようしせつ",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "bosai:hazard",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-yoshien",
+   "bo-shinsuisotei"
+  ],
+  "description": "老人ホームや 幼稚園・病院など、避難に 手助けが 要る 人が 使う 施設です。浸水などの おそれの ある 区域では 避難確保計画を つくり、訓練を します。"
+ },
+ {
+  "id": "bo-chiku",
+  "name": "地区防災計画",
+  "reading": "ちくぼうさいけいかく",
+  "journey": "bosai",
+  "category": "そなえ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "bosai:mamoru",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-timeline",
+   "bo-kunren"
+  ],
+  "description": "町内会などの 住民が 自分たちで つくる 地域の 防災の 計画です。災害対策基本法に もとづく しくみで、市町村の 防災計画に 入れて もらう ことも できます。"
+ },
+ {
+  "id": "bo-moretsuame",
+  "name": "猛烈な雨",
+  "reading": "もうれつなあめ",
+  "journey": "bosai",
+  "category": "雨と風の強さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "bosai:lv1",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hijohageshi",
+   "bo-sokukiroku"
+  ],
+  "description": "1時間に 80mm 以上の 雨を いう 予報の ことばです。息苦しく なる ような 圧迫感の ある 雨で、大きな 災害に つながる おそれが あります。"
+ },
+ {
+  "id": "bo-hijohageshi",
+  "name": "非常に激しい雨",
+  "reading": "ひじょうにはげしいあめ",
+  "journey": "bosai",
+  "category": "雨と風の強さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "bosai:lv1",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-moretsuame",
+   "bo-hageshii"
+  ],
+  "description": "1時間に 50mm 以上 80mm 未満の 雨を いう 予報の ことばです。滝の ように ごうごうと 降り、かさは まったく 役に 立ちません。"
+ },
+ {
+  "id": "bo-hageshii",
+  "name": "激しい雨",
+  "reading": "はげしいあめ",
+  "journey": "bosai",
+  "category": "雨と風の強さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "bosai:lv1",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hijohageshi",
+   "bo-shinsui"
+  ],
+  "description": "1時間に 30mm 以上 50mm 未満の 雨を いう 予報の ことばです。バケツを ひっくり返した ように 降り、道が 川の ように なります。"
+ },
+ {
+  "id": "bo-moretsukaze",
+  "name": "猛烈な風",
+  "reading": "もうれつなかぜ",
+  "journey": "bosai",
+  "category": "雨と風の強さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "bosai:lv1",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-hijotsuyoi",
+   "bo-bofukeiho"
+  ],
+  "description": "平均の 風速が 毎秒 30m 以上の 風を いう 予報の ことばです。外での 行動は とても 危ないので、じょうぶな 建物の 中で すごします。"
+ },
+ {
+  "id": "bo-hijotsuyoi",
+  "name": "非常に強い風",
+  "reading": "ひじょうにつよいかぜ",
+  "journey": "bosai",
+  "category": "雨と風の強さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "bosai:lv1",
+  "field": "防災気象情報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "bo-moretsukaze",
+   "bo-kyofuchui"
+  ],
+  "description": "平均の 風速が 毎秒 20m 以上 30m 未満の 風を いう 予報の ことばです。何かに つかまらないと 立って いられない ほどの 強さです。"
+ }
+]

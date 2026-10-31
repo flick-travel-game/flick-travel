@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """index.html(世界フリック旅行 = 土台)から、シリーズの ほかのゲームの ページを 作る。
-   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ kankoku/ supein/ rika/ seibi/ pilot/ cabin/ patissier/ kokugo/ kanken/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ kyukyutai/ bengoshi/ zeirishi/ shinri/ adler/ toshika/ daiku/ noka/ hanaya/ yakuzai/ jui/ shika/ ketsueki/ tetsugaku/ sumaho/ pasokon/ kigyo/ mentalist/ inu/ の index.html
+   python3 tools/build_games.py        → rekishi/ uchu/ karada/ kabu/ ai/ eikaiwa/ kankoku/ supein/ rika/ seibi/ pilot/ cabin/ kisho/ patissier/ kokugo/ kanken/ sugaku/ hoiku/ kango/ gamedev/ biyo/ kyoryu/ code/ shakai/ ishi/ kyoshi/ chef/ keisatsu/ shobo/ kyukyutai/ bengoshi/ zeirishi/ shinri/ adler/ toshika/ daiku/ noka/ hanaya/ yakuzai/ jui/ shika/ ketsueki/ tetsugaku/ sumaho/ pasokon/ kigyo/ mentalist/ inu/ の index.html
 - 土台は 1つ。直すのは index.html だけで、これを 走らせれば ほかのゲームにも 同じ直しが 入る
 - 変えるのは: <head> の 題名・manifest・アイコン / GAME の 2行 / 問題の中身(その ゲームの ぶんだけ)/ ふりがな(その ぶんだけ)/ 写真の道("../")
 ⚠️ できた ページは 手で直さない(次に 走らせると 消える)"""
@@ -83,6 +83,16 @@ GAMES = {
                   lead="飛行機の きほん・飛ぶ しくみ・計器と エンジン・空の 天気・空の 道と 地図・無線と 英語・空の きまり・空港と 管制・パイロットの しごとと 歴史の ことばを、ひらがなで フリック入力。打つと その ことばの 意味が 出て、無線の ことばは「🎧 こうしんで」で 使いかたが わかるよ。飛行機が すきな 子の ことばから はじめて、自家用操縦士・事業用操縦士の 学科試験(航空工学・航空気象・空中航法・航空通信・航空法規)の めやすまで。4択クイズと 計算問題で 学科試験の 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。これで 飛べる わけでは ありません。実際に 飛ぶには 訓練校で 教官と 練習し、国家試験に 受かる 必要が あります。試験の 勉強には 過去問と 教科書も 使ってね。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、空の 上の しごとが 見えてくるよ。国土交通省 航空局・航空大学校・航空会社とは 関係ありません。"),
+    # フリック気象予報士(けいくん 2026-10-31「気象予報士のテストに受かるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 名前「おすすめのまま」・
+    #   旅と 段「これで受かるレベルになる?」→「気象予報士に受かるレベルになるように作成してください」= 990語(旅ごとに 入門20・中級30・上級60)+ 🧮 計算問題)。
+    #   まとめは docs/フリック気象予報士-はじめかた.md。ことばは tools/kisho/terms-<旅>.json → kisho/terms.js(tools/kisho/terms_js.py)。しくみは kisho/kisho.js(KISHO。パイロットを 写した。📝 試験の 札・🧮 公式・🧩 4択・🧮 計算問題)。
+    #   ⚠️⚠️ 災害を こわく しない・変わる 数字・民間の 気象会社の 名前は 出さない。防災気象情報は 2026年5月29日からの 新しい 名前(決まりは tools/kisho/PROMPT.md)。
+    #   絵は まだ(仮の アイコン tools/kisho/placeholder_icon.py)。届いたら tools/kisho/art/square-src.png → tools/icon_from_square.py kisho(iconv を +1)/ title-src.png → tools/title_from_art.py kisho(logo を True・art.word を 実寸に)/ kisho/hero.webp(hero を True)
+    "kisho": dict(name="フリック気象予報士", modes="KISHO", kinds=set(), color="#1c7ed6", hero=False, logo=False,
+                  art=dict(word=(900, 200), hero=(1536, 1024), alt="フリック気象予報士", iconv=1, wordv=1),
+                  lead="天気の きほん・大気の しくみ・風と 大気の 動き・雲と 雨と いろいろな 気象・観測と 予報の 道具・日本の 天気と 季節・防災と 気象情報・法律と 気象の しごと・天気図の 読みかた(実技)の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どこで 出るか(学科一般・学科専門・実技)が わかるよ。天気が すきな 子の ことばから、気象予報士試験の 範囲の めやすまで 990語。4択クイズと 計算問題で 学科試験の 練習も できるよ。",
+                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 天気と 避難は、気象庁と 市町村の 情報を 見てね。実技試験の 記述(天気図を 見て 文で 答える)は 過去問で 練習してね。",
+                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、空の しくみが 見えてくるよ。気象庁・気象業務支援センターとは 関係ありません。"),
     # フリックキャビンアテンダント(けいくん 2026-10-20「キャビンアテンダントに受かるレベルになるために必要な知識をフリック形式の問題にしてください」→ 5つの 問いに「全部おすすめで」・デッドヘッドは「入れる」・並びは「パイロットのすぐあと」)。
     #   まとめは docs/フリックキャビンアテンダント-はじめかた.md。ことばは tools/cabin/terms-<旅>.json → cabin/terms.js(tools/cabin/terms_js.py)。しくみは cabin/cabin.js(CABIN。パイロットを 写した。🤝 おもてなし・🔊 英語で 聞く・🧩 4択クイズ・🧮 計算問題)。
     #   ⚠️⚠️ 事故・墜落・こわい 字・見た目の 決めつけ・会社名は 出さない(決まりは tools/cabin/PROMPT.md)。
@@ -677,6 +687,10 @@ def build(gid, g):
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/pilot/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "pilot" / f).read_bytes()).hexdigest()[:8]
         out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="pilot.js?v=%s"></script>' % (ver("terms.js"), ver("pilot.js")))
+    if g["modes"] == "KISHO":  # 気象予報士の コース: パイロットと 同じ 形。ことばは terms.js(tools/kisho/terms-*.json から)、しくみは kisho.js
+        import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/kisho/terms_js.py")], check=True)
+        ver = lambda f: hashlib.sha1((ROOT / "kisho" / f).read_bytes()).hexdigest()[:8]
+        out = out.replace('<script src="../photos.js"></script>', '<script src="../photos.js"></script>\n<script src="terms.js?v=%s"></script>\n<script src="kisho.js?v=%s"></script>' % (ver("terms.js"), ver("kisho.js")))
     if g["modes"] == "CABIN":  # キャビンアテンダントの コース: パイロットと 同じ 形。ことばは terms.js(tools/cabin/terms-*.json から)、しくみは cabin.js
         import subprocess, sys as _s, hashlib; subprocess.run([_s.executable, str(ROOT / "tools/cabin/terms_js.py")], check=True)
         ver = lambda f: hashlib.sha1((ROOT / "cabin" / f).read_bytes()).hexdigest()[:8]

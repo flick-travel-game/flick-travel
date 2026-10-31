@@ -1,0 +1,1990 @@
+[
+ {
+  "id": "ni-haru",
+  "name": "春",
+  "reading": "はる",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "nihon:haru",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-idosei",
+   "ni-haruichi"
+  ],
+  "description": "移動性高気圧と 低気圧が 交互に 西から やってきて、天気が 数日ごとに 変わる 季節です。予報士は 高気圧と 低気圧の 通る 時間を 読んで 晴れと 雨を 予想します。"
+ },
+ {
+  "id": "ni-natsu",
+  "name": "夏",
+  "reading": "なつ",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌻",
+  "mapNode": "nihon:natsu",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-taiheiyoko",
+   "ni-nankohokutei"
+  ],
+  "description": "太平洋高気圧に おおわれて 暑く、湿った 晴れの 日が 続く 季節です。午後は 強い 日ざしで あたためられ、山の 近くなどで 積乱雲が できやすく なります。"
+ },
+ {
+  "id": "ni-aki",
+  "name": "秋",
+  "reading": "あき",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍁",
+  "mapNode": "nihon:aki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-akisame",
+   "ni-idosei"
+  ],
+  "description": "夏の 終わりに 秋雨前線が 停滞し、そのあと 移動性高気圧が 来て さわやかな 晴れが 増える 季節です。台風が 日本に 近づきやすい 時期でも あります。"
+ },
+ {
+  "id": "ni-fuyu",
+  "name": "冬",
+  "reading": "ふゆ",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛄",
+  "mapNode": "nihon:fuyu",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-seikotoutei",
+   "ni-kisetsufu"
+  ],
+  "description": "シベリア高気圧から 冷たい 北西の 季節風が 吹く 季節です。日本海側では 雪や くもり、太平洋側では 乾いた 晴れが 多く なります。"
+ },
+ {
+  "id": "ni-tsuyu",
+  "name": "梅雨",
+  "reading": "つゆ",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "nihon:tsuyu",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-baiuzensen",
+   "ni-tsuyuiri"
+  ],
+  "description": "初夏に 梅雨前線が 日本付近に とどまり、雨や くもりの 日が 多く なる 時期です。季節の 変わり目の 現象で、梅雨前線が 北へ 上がると 夏に なります。",
+  "acceptedReadings": [
+   "つゆ",
+   "ばいう"
+  ]
+ },
+ {
+  "id": "ni-tsuyuiri",
+  "name": "梅雨入り",
+  "reading": "つゆいり",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌂",
+  "mapNode": "nihon:tsuyu",
+  "field": "予報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-tsuyu",
+   "ni-tsuyuake"
+  ],
+  "description": "梅雨の 時期に 入る ことです。気象庁は 地方ごとに「梅雨入りしたと みられる」と 知らせ、季節が 終わってから 見なおして 日を 決めます。"
+ },
+ {
+  "id": "ni-tsuyuake",
+  "name": "梅雨明け",
+  "reading": "つゆあけ",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌞",
+  "mapNode": "nihon:tsuyu",
+  "field": "予報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-tsuyuiri",
+   "ni-taiheiyoko"
+  ],
+  "description": "梅雨の 時期が 終わる ことです。太平洋高気圧が 強まって 梅雨前線が 北へ 上がると 梅雨明けに なります。日付は あとで 見なおされる ことが あります。"
+ },
+ {
+  "id": "ni-haruichi",
+  "name": "春一番",
+  "reading": "はるいちばん",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "nihon:haru",
+  "field": "気象現象",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-nihonkaitei",
+   "ni-haru"
+  ],
+  "description": "立春から 春分までに、はじめて 吹く 強い 南よりの 風です。日本海を 低気圧が 進む ときに 吹きます。暖かくても 風が 強いので 注意が いります。"
+ },
+ {
+  "id": "ni-kogarashi",
+  "name": "木枯らし",
+  "reading": "こがらし",
+  "journey": "nihon",
+  "category": "風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "nihon:aki",
+  "field": "気象現象",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-seikotoutei",
+   "ni-kisetsufu"
+  ],
+  "description": "秋の 終わりから 冬の はじめに 吹く、冷たい 北よりの 強い 風です。冬型の 気圧配置に なりはじめた 合図で、気象庁は 東京地方と 近畿地方で 木枯らし1号を 知らせます。"
+ },
+ {
+  "id": "ni-kisetsufu",
+  "name": "季節風",
+  "reading": "きせつふう",
+  "journey": "nihon",
+  "category": "風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎐",
+  "mapNode": "nihon:kisetsufu",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-monsoon",
+   "ni-fuyu"
+  ],
+  "description": "季節に よって 向きが 変わる 風です。冬は 大陸から 北西の 風、夏は 海から 南東の 風が 吹きやすく なります。陸と 海の あたたまりかたの ちがいで 生まれます。"
+ },
+ {
+  "id": "ni-satsukibare",
+  "name": "五月晴れ",
+  "reading": "さつきばれ",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎏",
+  "mapNode": "nihon:haru",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-idosei",
+   "ni-haru"
+  ],
+  "description": "5月ごろの さわやかな 晴れの ことです。へえ、もとは 旧暦の 五月(いまの 6月ごろ)の 梅雨の 晴れ間を さした ことばでした。"
+ },
+ {
+  "id": "ni-koharu",
+  "name": "小春日和",
+  "reading": "こはるびより",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "nihon:aki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-idosei",
+   "ni-aki"
+  ],
+  "description": "晩秋から 初冬に かけて、移動性高気圧に おおわれた 暖かい 晴れの 日の ことです。春の ことでは ない ので 注意します。"
+ },
+ {
+  "id": "ni-sakura",
+  "name": "桜の開花",
+  "reading": "さくらのかいか",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "nihon:haru",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-haru",
+   "ni-koyo"
+  ],
+  "description": "桜の 花が 咲きはじめる ことです。気象台では 決まった 標本木で 生物季節観測を して、開花を 知らせます。気温の 高さが 開花の 早さに かかわります。"
+ },
+ {
+  "id": "ni-koyo",
+  "name": "紅葉",
+  "reading": "こうよう",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍁",
+  "mapNode": "nihon:aki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-aki",
+   "ni-sakura"
+  ],
+  "description": "秋に かえでなどの 葉が 赤や 黄色に 色づく ことです。気象台は かえでの 紅葉日を 観測し、季節の 進み具合を 記録しています。"
+ },
+ {
+  "id": "ni-hatsuyuki",
+  "name": "初雪",
+  "reading": "はつゆき",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "nihon:fuyu",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-fuyu",
+   "ni-kanpa"
+  ],
+  "description": "その 冬に はじめて 降る 雪です。みぞれも 初雪に 数えます。寒気が 南へ 下りてくる 目じるしに なります。"
+ },
+ {
+  "id": "ni-mosho",
+  "name": "猛暑",
+  "reading": "もうしょ",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥵",
+  "mapNode": "nihon:natsu",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-taiheiyoko",
+   "ni-tibet"
+  ],
+  "description": "とても 暑い ことです。最高気温が 35℃以上の 日を 気象庁は 猛暑日と よびます。こまめに 水を 飲み、すずしい 場所で 熱中症を ふせぎましょう。"
+ },
+ {
+  "id": "ni-zansho",
+  "name": "残暑",
+  "reading": "ざんしょ",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "nihon:natsu",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-risshu",
+   "ni-mosho"
+  ],
+  "description": "立秋を すぎても 続く 暑さの ことです。太平洋高気圧が 強く 残ると 残暑が 長く なります。"
+ },
+ {
+  "id": "ni-kanpa",
+  "name": "寒波",
+  "reading": "かんぱ",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥶",
+  "mapNode": "nihon:fuyu",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-fukidashi",
+   "ni-siberia"
+  ],
+  "description": "強い 寒気が 大陸から 流れこみ、気温が 大きく 下がる ことです。上空の 寒気の 強さは 500hPa や 850hPa の 気温で 見ます。"
+ },
+ {
+  "id": "ni-nihonkaigawa",
+  "name": "日本海側",
+  "reading": "にほんかいがわ",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "nihon:chiiki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-nihonkaikiko",
+   "ni-sujijo"
+  ],
+  "description": "本州の 日本海に 面した 地方です。冬は 季節風が 海で 水蒸気を もらい、山に ぶつかって 雪を 降らせるので、雪が 多く なります。"
+ },
+ {
+  "id": "ni-taiheiyogawa",
+  "name": "太平洋側",
+  "reading": "たいへいようがわ",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌅",
+  "mapNode": "nihon:chiiki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-taiheiyokiko",
+   "ni-karakkaze"
+  ],
+  "description": "本州の 太平洋に 面した 地方です。冬は 山を こえた 乾いた 風が 吹き、晴れの 日が 多く なります。"
+ },
+ {
+  "id": "ni-idosei",
+  "name": "移動性高気圧",
+  "reading": "いどうせいこうきあつ",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌤",
+  "mapNode": "nihon:haru",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-haru",
+   "ni-taijo"
+  ],
+  "description": "春や 秋に、偏西風に 乗って 西から 東へ 動く 高気圧です。高気圧の 前では 晴れ、うしろから 低気圧が 来ると 天気が くずれます。"
+ },
+ {
+  "id": "ni-baiuzensen",
+  "name": "梅雨前線",
+  "reading": "ばいうぜんせん",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "nihon:tsuyu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-okhotsk",
+   "ni-taiheiyoko"
+  ],
+  "description": "梅雨の ころに 日本付近に 停滞する 前線です。北の オホーツク海高気圧と 南の 太平洋高気圧の あいだに でき、西日本では 南から 湿った 空気が 入り 大雨に なりやすいです。"
+ },
+ {
+  "id": "ni-okhotsk",
+  "name": "オホーツク海高気圧",
+  "reading": "おほーつくかいこうきあつ",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "nihon:tsuyu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-baiuzensen",
+   "ni-yamase"
+  ],
+  "description": "梅雨の ころに オホーツク海に できる、冷たく 湿った 高気圧です。強いと 北日本や 東日本の 太平洋側に やませを 吹かせ、気温が 上がりにくく なります。"
+ },
+ {
+  "id": "ni-taiheiyoko",
+  "name": "太平洋高気圧",
+  "reading": "たいへいようこうきあつ",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "nihon:natsu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-ogasawara",
+   "ni-enpen"
+  ],
+  "description": "夏に 太平洋に 広がる 暖かく 湿った 高気圧です。日本が すっぽり おおわれると 晴れて 暑く なります。張りだしの 形で 夏の 天気が 決まります。"
+ },
+ {
+  "id": "ni-siberia",
+  "name": "シベリア高気圧",
+  "reading": "しべりあこうきあつ",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "nihon:fuyu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-seikotoutei",
+   "ni-kanpa"
+  ],
+  "description": "冬に シベリアなどの 大陸で、地面が 冷えて できる 冷たく 乾いた 高気圧です。この 高気圧から 北西の 季節風が 日本へ 吹きだします。"
+ },
+ {
+  "id": "ni-seikotoutei",
+  "name": "西高東低",
+  "reading": "せいこうとうてい",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "nihon:fuyu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ni-fuyugata",
+   "ni-siberia"
+  ],
+  "description": "西に 高気圧、東に 低気圧が ある 気圧配置です。冬の 代表的な 形で、日本付近の 等圧線が 南北に 縦じまの ように ならび、北西の 季節風が 強く 吹きます。"
+ },
+ {
+  "id": "ni-fuyugata",
+  "name": "冬型の気圧配置",
+  "reading": "ふゆがたのきあつはいち",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "nihon:fuyu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ni-seikotoutei",
+   "ni-yamayuki"
+  ],
+  "description": "西高東低に なった 冬の 気圧配置です。等圧線の 間隔が せまいほど 季節風が 強く、日本海側の 雪も 強まりやすいと 読みます。"
+ },
+ {
+  "id": "ni-nankohokutei",
+  "name": "南高北低",
+  "reading": "なんこうほくてい",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "nihon:natsu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ni-taiheiyoko",
+   "ni-natsu"
+  ],
+  "description": "南に 太平洋高気圧、北に 低い 気圧が ある 夏の 気圧配置です。南よりの 風が 吹き、蒸し暑い 晴れの 日に なります。"
+ },
+ {
+  "id": "ni-akisame",
+  "name": "秋雨前線",
+  "reading": "あきさめぜんせん",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "nihon:aki",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-aki",
+   "ni-baiuzensen"
+  ],
+  "description": "夏の 終わりから 秋に、太平洋高気圧が 南へ 下がって 日本付近に 停滞する 前線です。台風が 近づくと 前線の 活動が 強まり、大雨に なる ことが あります。"
+ },
+ {
+  "id": "ni-yamase",
+  "name": "やませ",
+  "reading": "やませ",
+  "journey": "nihon",
+  "category": "風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌫",
+  "mapNode": "nihon:kisetsufu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-okhotsk",
+   "ni-reika"
+  ],
+  "description": "夏の ころ、北日本の 太平洋側に 吹く 冷たく 湿った 東よりの 風です。オホーツク海高気圧から 吹き、低い 雲や 霧で 日照が 少なく 気温が 下がります。"
+ },
+ {
+  "id": "ni-sujijo",
+  "name": "筋状の雲",
+  "reading": "すじじょうのくも",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌨",
+  "mapNode": "nihon:fuyu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-fukidashi",
+   "ni-henshitsu"
+  ],
+  "description": "冬に 寒気が 日本海へ 吹きだすと、衛星画像で 見える すじの ような 雲の 列です。海から 熱と 水蒸気を もらって できます。すじが 陸に 近いほど 寒気が 強いと 読みます。"
+ },
+ {
+  "id": "ni-24sekki",
+  "name": "二十四節気",
+  "reading": "にじゅうしせっき",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-risshun",
+   "ni-geshi"
+  ],
+  "description": "1年を 太陽の 動きで 24に 分け、季節の 名前を つけた ものです。立春・夏至・冬至などが あります。天気の 解説で 季節の 目安として よく 使われます。"
+ },
+ {
+  "id": "ni-risshun",
+  "name": "立春",
+  "reading": "りっしゅん",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-24sekki",
+   "ni-haruichi"
+  ],
+  "description": "二十四節気の ひとつで、暦の うえで 春が 始まる 日です。2月4日ごろです。春一番は 立春から 春分までに 吹く 風と 決められています。"
+ },
+ {
+  "id": "ni-geshi",
+  "name": "夏至",
+  "reading": "げし",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-toji",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、北半球で 昼が いちばん 長い 日です。6月21日ごろです。梅雨の さなかなので、日照は 多く ない ことが あります。"
+ },
+ {
+  "id": "ni-toji",
+  "name": "冬至",
+  "reading": "とうじ",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-geshi",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、北半球で 昼が いちばん 短い 日です。12月22日ごろです。いちばん 寒い ころは これより あと、大寒の ころに なります。"
+ },
+ {
+  "id": "ni-shunbun",
+  "name": "春分",
+  "reading": "しゅんぶん",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌷",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-shubun",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、昼と 夜の 長さが ほぼ 同じに なる 日です。3月20日ごろです。「暑さ寒さも 彼岸まで」と いわれます。"
+ },
+ {
+  "id": "ni-shubun",
+  "name": "秋分",
+  "reading": "しゅうぶん",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎑",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-shunbun",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、秋に 昼と 夜の 長さが ほぼ 同じに なる 日です。9月23日ごろです。"
+ },
+ {
+  "id": "ni-natanezuyu",
+  "name": "菜種梅雨",
+  "reading": "なたねづゆ",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌼",
+  "mapNode": "nihon:haru",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-haru",
+   "ni-tsuyu"
+  ],
+  "description": "菜の花が 咲く 3月から 4月ごろの、雨や くもりが 続く 天気です。本州の 南に 前線が 停滞しやすく なって 起こります。"
+ },
+ {
+  "id": "ni-hanabie",
+  "name": "花冷え",
+  "reading": "はなびえ",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "nihon:haru",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-kannomodori",
+   "ni-sakura"
+  ],
+  "description": "桜が 咲くころに、一時的に 寒さが もどる ことです。北から 寒気が 入ったり、移動性高気圧の 晴れた 夜に 冷えこんだり して 起こります。"
+ },
+ {
+  "id": "ni-kannomodori",
+  "name": "寒の戻り",
+  "reading": "かんのもどり",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧣",
+  "mapNode": "nihon:haru",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-hanabie",
+   "ni-kanpa"
+  ],
+  "description": "暖かく なりはじめた 春に、また 寒さが もどる ことです。低気圧が 通った あと 一時的に 冬型の 気圧配置に なると 起こります。"
+ },
+ {
+  "id": "ni-ogasawara",
+  "name": "小笠原気団",
+  "reading": "おがさわらきだん",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏝",
+  "mapNode": "nihon:natsu",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-taiheiyoko",
+   "ni-okhotsk"
+  ],
+  "description": "太平洋高気圧の 中の、高温で 湿った 気団です。夏の 日本の 蒸し暑さの もとです。"
+ },
+ {
+  "id": "ni-ondanka",
+  "name": "地球温暖化",
+  "reading": "ちきゅうおんだんか",
+  "journey": "nihon",
+  "category": "気候の変化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "nihon:henka",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-hendo",
+   "ni-ipcc"
+  ],
+  "description": "二酸化炭素などの 温室効果ガスが 増えて、地球全体の 気温が 上がる ことです。予報士は 長い 目で 見た 気候の 変化も 知って おく ことが 大切です。"
+ },
+ {
+  "id": "ni-heat",
+  "name": "ヒートアイランド",
+  "reading": "ひーとあいらんど",
+  "journey": "nihon",
+  "category": "気候の変化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "nihon:henka",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-toshi",
+   "ni-ondanka"
+  ],
+  "description": "都市の 気温が まわりの 郊外より 高く なる 現象です。建物や アスファルトが 熱を ためる ことや、車や エアコンの 排熱が もとです。夜の 気温が 下がりにくく なります。"
+ },
+ {
+  "id": "ni-kiko",
+  "name": "気候",
+  "reading": "きこう",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "nihon:kikou",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-hensa",
+   "ni-koppen"
+  ],
+  "description": "ある 場所の、長い 期間の 平均的な 天気の ようすです。気象庁は 30年間の 平均を「平年値」と して、10年ごとに 新しく しています。"
+ },
+ {
+  "id": "ni-heinennami",
+  "name": "平年並",
+  "reading": "へいねんなみ",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-sankaikyu",
+   "ni-kaikyu"
+  ],
+  "description": "長期予報で、気温や 降水量が 平年に 近い ことを あらわす 階級です。平年並の はばは 過去の 30年間の 記録の 中で 3分の1の ぶんに 決めます。"
+ },
+ {
+  "id": "ni-kisetsuyoho",
+  "name": "季節予報",
+  "reading": "きせつよほう",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-ikkagetsu",
+   "ni-sankagetsu"
+  ],
+  "description": "1か月より 先の 天候の 傾向を 予想する 長期予報です。1か月予報・3か月予報・暖候期予報・寒候期予報が あり、平年と くらべた 確率で あらわします。"
+ },
+ {
+  "id": "ni-ikkagetsu",
+  "name": "1か月予報",
+  "reading": "いっかげつよほう",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-kisetsuyoho",
+   "ni-2shukan"
+  ],
+  "description": "この先 1か月の 気温・降水量・日照などを、平年と くらべて 予想する 季節予報です。毎週 発表されます。"
+ },
+ {
+  "id": "ni-sankagetsu",
+  "name": "3か月予報",
+  "reading": "さんかげつよほう",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-kisetsuyoho",
+   "ni-ikkagetsu"
+  ],
+  "description": "この先 3か月の 天候を、月ごとの 気温や 降水量で 予想する 季節予報です。毎月 1回 発表されます。"
+ },
+ {
+  "id": "ni-karakkaze",
+  "name": "空っ風",
+  "reading": "からっかぜ",
+  "journey": "nihon",
+  "category": "風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍃",
+  "mapNode": "nihon:kisetsufu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-taiheiyogawa",
+   "ni-fuyugata"
+  ],
+  "description": "冬に 関東平野などへ 吹く、冷たく 乾いた 北西の 強い 風です。日本海側で 雪を 降らせた 季節風が 山を こえて 乾いて 吹き下ります。火の 取りあつかいに 注意します。"
+ },
+ {
+  "id": "ni-tsuyuzamu",
+  "name": "梅雨寒",
+  "reading": "つゆざむ",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧥",
+  "mapNode": "nihon:tsuyu",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-okhotsk",
+   "ni-yamase"
+  ],
+  "description": "梅雨の ころに、気温が 低く 肌寒く なる ことです。オホーツク海高気圧から 冷たい 空気が 入る ときに 起こりやすく なります。"
+ },
+ {
+  "id": "ni-jpcz",
+  "name": "日本海寒帯気団収束帯(JPCZ)",
+  "reading": "にほんかいかんたいきだんしゅうそくたい",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌨",
+  "mapNode": "nihon:fuyu",
+  "field": "気象現象",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-fukidashi",
+   "ni-satoyuki"
+  ],
+  "description": "冬に 朝鮮半島の 北の 山に 分かれた 季節風が、日本海で ふたたび 合わさって できる 風の 集まる 帯です。発達した 雪雲が 帯状に 続き、局地的な 大雪に なりやすいです。"
+ },
+ {
+  "id": "ni-satoyuki",
+  "name": "里雪型",
+  "reading": "さとゆきがた",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "nihon:fuyu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ni-yamayuki",
+   "ni-jpcz"
+  ],
+  "description": "日本海側の 平野や 海ぞいで 雪が 多く なる 型です。上空に 強い 寒気や 寒冷渦が あり、等圧線が 日本海で 袋の ように ふくらむ 形の ときに 起こりやすいです。"
+ },
+ {
+  "id": "ni-yamayuki",
+  "name": "山雪型",
+  "reading": "やまゆきがた",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "nihon:fuyu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ni-satoyuki",
+   "ni-fuyugata"
+  ],
+  "description": "日本海側の 山沿いで 雪が 多く なる 型です。等圧線が 南北に こみあって 季節風が 強く、雪雲が 山に ぶつかって 雪を 降らせます。"
+ },
+ {
+  "id": "ni-fukidashi",
+  "name": "寒気の吹き出し",
+  "reading": "かんきのふきだし",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "nihon:fuyu",
+  "field": "気象現象",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-sujijo",
+   "ni-henshitsu"
+  ],
+  "description": "大陸の 冷たい 空気が 季節風で 日本海や 太平洋へ 流れだす ことです。衛星画像では すじ状の 雲が 見え、雲が できはじめる 位置で 寒気の 強さを 読みます。"
+ },
+ {
+  "id": "ni-henshitsu",
+  "name": "気団変質",
+  "reading": "きだんへんしつ",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "nihon:fuyu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-fukidashi",
+   "ni-sujijo"
+  ],
+  "description": "気団が 動くうちに、下の 海や 陸から 熱や 水蒸気を もらって 性質が 変わる ことです。冬の 季節風は 日本海で あたためられ、湿って 不安定に なります。"
+ },
+ {
+  "id": "ni-hokuto",
+  "name": "北東気流",
+  "reading": "ほくとうきりゅう",
+  "journey": "nihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌥",
+  "mapNode": "nihon:kisetsufu",
+  "field": "気象現象",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-okhotsk",
+   "ni-tsuyuzamu"
+  ],
+  "description": "関東地方などに 吹く、冷たく 湿った 北東よりの 風です。低い 雲が 広がり、くもりや 小雨で 気温が 上がりにくく なります。"
+ },
+ {
+  "id": "ni-enpen",
+  "name": "縁辺流",
+  "reading": "えんぺんりゅう",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "nihon:natsu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ni-taiheiyoko",
+   "ni-baiuzensen"
+  ],
+  "description": "太平洋高気圧の ふちを 時計回りに 回る、暖かく 湿った 空気の 流れです。高気圧の ふちに あたる 地域では 大雨に なりやすいと 読みます。"
+ },
+ {
+  "id": "ni-tibet",
+  "name": "チベット高気圧",
+  "reading": "ちべっとこうきあつ",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "nihon:natsu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-taiheiyoko",
+   "ni-mosho"
+  ],
+  "description": "夏に チベット高原の 上空に できる 大きな 高気圧です。東へ 張りだして 太平洋高気圧と 重なると、日本は 厚い 高気圧に おおわれ 暑さが 強まります。"
+ },
+ {
+  "id": "ni-nangan",
+  "name": "南岸低気圧",
+  "reading": "なんがんていきあつ",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "nihon:fuyu",
+  "field": "気象現象",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-fuyu",
+   "ni-taiheiyogawa"
+  ],
+  "description": "本州の 南の 海の 上を 東へ 進む 低気圧です。冬から 春先に 通ると、関東など 太平洋側に 雪を 降らせる ことが あります。雨か 雪かの 予想が むずかしい 低気圧です。"
+ },
+ {
+  "id": "ni-nihonkaitei",
+  "name": "日本海低気圧",
+  "reading": "にほんかいていきあつ",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "nihon:haru",
+  "field": "気象現象",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-haruichi",
+   "ni-maystorm"
+  ],
+  "description": "日本海を 東や 北東へ 進む 低気圧です。南から 暖かく 強い 風を 引きこみ、春一番や フェーン現象を もたらす ことが あります。"
+ },
+ {
+  "id": "ni-maystorm",
+  "name": "メイストーム",
+  "reading": "めいすとーむ",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "nihon:haru",
+  "field": "気象現象",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-nihonkaitei",
+   "ni-haru"
+  ],
+  "description": "5月ごろ、日本付近で 急に 発達する 低気圧の ことです。春でも 強い 風や 雨に なるので、山や 海の 予定は 天気予報を 確かめましょう。"
+ },
+ {
+  "id": "ni-taijo",
+  "name": "帯状高気圧",
+  "reading": "たいじょうこうきあつ",
+  "journey": "nihon",
+  "category": "春と秋",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟦",
+  "mapNode": "nihon:haru",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-idosei",
+   "ni-haru"
+  ],
+  "description": "東西に 長く のびた 高気圧です。春や 秋に 日本付近を おおうと、晴れの 日が 長く 続きます。"
+ },
+ {
+  "id": "ni-kaikyu",
+  "name": "階級区分",
+  "reading": "かいきゅうくぶん",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-sankaikyu",
+   "ni-heinennami"
+  ],
+  "description": "長期予報で 気温や 降水量を「低い・平年並・高い」などの 区分で あらわす 決まりです。それぞれの 区分に なる 確率を 予報します。"
+ },
+ {
+  "id": "ni-sankaikyu",
+  "name": "3階級",
+  "reading": "さんかいきゅう",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-kaikyu",
+   "ni-heinennami"
+  ],
+  "description": "長期予報の「低い・平年並・高い」の 3つの 区分です。過去 30年の 記録を 3等分した はばで 決めるので、平年の 確率は どれも 33%です。"
+ },
+ {
+  "id": "ni-kankoki",
+  "name": "寒候期予報",
+  "reading": "かんこうきよほう",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛄",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-dankoki",
+   "ni-sankagetsu"
+  ],
+  "description": "冬の 天候の 傾向を 予想する 季節予報です。9月に 3か月予報と いっしょに 発表されます。"
+ },
+ {
+  "id": "ni-dankoki",
+  "name": "暖候期予報",
+  "reading": "だんこうきよほう",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌻",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-kankoki",
+   "ni-sankagetsu"
+  ],
+  "description": "夏の 天候の 傾向と、梅雨の ころの 降水量を 予想する 季節予報です。2月に 3か月予報と いっしょに 発表されます。"
+ },
+ {
+  "id": "ni-2shukan",
+  "name": "2週間気温予報",
+  "reading": "にしゅうかんきおんよほう",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-soki",
+   "ni-ikkagetsu"
+  ],
+  "description": "8日先から 12日先までの 気温を、5日間の 平均で 予想する 情報です。毎日 発表され、先の 暑さや 寒さへの 早めの 備えに 役立ちます。"
+ },
+ {
+  "id": "ni-soki",
+  "name": "早期天候情報",
+  "reading": "そうきてんこうじょうほう",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "nihon:choki",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-2shukan",
+   "ni-heinennami"
+  ],
+  "description": "1〜2週間先に、その 時期と しては かなり 高い・低い 気温などに なる 可能性が 高い ときに 出す 情報です。早めの 備えを うながします。"
+ },
+ {
+  "id": "ni-hensa",
+  "name": "偏差",
+  "reading": "へんさ",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "nihon:choki",
+  "field": "気候",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-kiko",
+   "ni-heinennami"
+  ],
+  "description": "ある 値と 平年値との 差です。気温の 偏差が プラスなら 平年より 高く、マイナスなら 低いと 読みます。"
+ },
+ {
+  "id": "ni-ketsugo",
+  "name": "大気海洋結合モデル",
+  "reading": "たいきかいようけつごうもでる",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "nihon:choki",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-kisetsuyoho",
+   "ni-dankoki"
+  ],
+  "description": "大気と 海の 動きを いっしょに 計算する 数値予報モデルです。海の 温度の 変化は ゆっくりで 長く 大気に 影響するので、3か月予報などの 季節予報に 使います。"
+ },
+ {
+  "id": "ni-ijo",
+  "name": "異常気象",
+  "reading": "いじょうきしょう",
+  "journey": "nihon",
+  "category": "気候の変化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❗",
+  "mapNode": "nihon:henka",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-kyokutan",
+   "ni-hendo"
+  ],
+  "description": "ふだんとは 大きく ちがう 天候の ことです。気象庁は ある 場所・時期に 30年に 1回 以下 しか 起こらない 現象を 異常気象と しています。"
+ },
+ {
+  "id": "ni-hendo",
+  "name": "気候変動",
+  "reading": "きこうへんどう",
+  "journey": "nihon",
+  "category": "気候の変化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "nihon:henka",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-ondanka",
+   "ni-ipcc"
+  ],
+  "description": "長い 期間の 平均的な 気候が 変わる ことです。太陽や 火山などの 自然の 原因と、温室効果ガスなど 人の 活動に よる 原因が あります。"
+ },
+ {
+  "id": "ni-ipcc",
+  "name": "IPCC",
+  "reading": "あいぴーしーしー",
+  "journey": "nihon",
+  "category": "気候の変化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "nihon:henka",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-hendo",
+   "ni-ondanka"
+  ],
+  "description": "気候変動に関する政府間パネルの 英語の 頭文字です。世界の 科学者の 研究を まとめて、気候変動の 報告書を 出しています。1988年に WMO などが つくりました。"
+ },
+ {
+  "id": "ni-toshi",
+  "name": "都市気候",
+  "reading": "としきこう",
+  "journey": "nihon",
+  "category": "気候の変化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "nihon:henka",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-heat",
+   "ni-kiko"
+  ],
+  "description": "都市に できる 特有の 気候です。ヒートアイランドの ほか、乾きやすさや 風の 弱まりなど、まわりの 郊外と ちがう ようすが 見られます。"
+ },
+ {
+  "id": "ni-koppen",
+  "name": "ケッペンの気候区分",
+  "reading": "けっぺんのきこうくぶん",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "nihon:sekai",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-onshitsujun",
+   "ni-kansotai"
+  ],
+  "description": "気温と 降水量を もとに、植物の ようすで 世界の 気候を 分けた 区分です。熱帯・乾燥帯・温帯・冷帯・寒帯などに 分けます。考えた 人の 名前が ついています。"
+ },
+ {
+  "id": "ni-onshitsujun",
+  "name": "温帯湿潤気候",
+  "reading": "おんたいしつじゅんきこう",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "nihon:sekai",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-koppen",
+   "ni-kiko"
+  ],
+  "description": "ケッペンの 区分で、四季が はっきりし 1年を 通して 雨が 多い 温帯の 気候です。日本の 多くの 地域が 入ります。"
+ },
+ {
+  "id": "ni-nihonkaikiko",
+  "name": "日本海側気候",
+  "reading": "にほんかいがわきこう",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "nihon:kikou",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-nihonkaigawa",
+   "ni-taiheiyokiko"
+  ],
+  "description": "冬に 雪や くもりの 日が 多く、降水量が 多く なる 日本海側の 気候です。季節風が 日本海で 水蒸気を もらって 雪を 降らせる ことが もとです。"
+ },
+ {
+  "id": "ni-taiheiyokiko",
+  "name": "太平洋側気候",
+  "reading": "たいへいようがわきこう",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌅",
+  "mapNode": "nihon:kikou",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-taiheiyogawa",
+   "ni-nihonkaikiko"
+  ],
+  "description": "夏に 雨が 多く、冬は 乾いた 晴れの 日が 多い 太平洋側の 気候です。梅雨や 台風の 雨が 多い ことも 特徴です。"
+ },
+ {
+  "id": "ni-setouchi",
+  "name": "瀬戸内の気候",
+  "reading": "せとうちのきこう",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛵",
+  "mapNode": "nihon:kikou",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-chuo",
+   "ni-kiko"
+  ],
+  "description": "瀬戸内海の まわりの 気候です。夏も 冬も 季節風が 中国山地と 四国山地に さえぎられるので、1年を 通して 雨が 少なく 晴れの 日が 多いです。"
+ },
+ {
+  "id": "ni-nansei",
+  "name": "南西諸島の気候",
+  "reading": "なんせいしょとうのきこう",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌺",
+  "mapNode": "nihon:kikou",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-onshitsujun",
+   "ni-kiko"
+  ],
+  "description": "沖縄や 奄美などの 南西諸島の 気候です。冬も 暖かく、1年を 通して 雨が 多い 亜熱帯の 気候です。梅雨の 時期は 本州より 早く なります。"
+ },
+ {
+  "id": "ni-hokkaido",
+  "name": "北海道の気候",
+  "reading": "ほっかいどうのきこう",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐄",
+  "mapNode": "nihon:kikou",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-kiko",
+   "ni-tsuyu"
+  ],
+  "description": "冬の 寒さが きびしく、夏は すずしい 北海道の 気候です。梅雨前線が とどきにくいので、はっきりした 梅雨が ありません。"
+ },
+ {
+  "id": "ni-chuo",
+  "name": "中央高地の気候",
+  "reading": "ちゅうおうこうちのきこう",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏞",
+  "mapNode": "nihon:kikou",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-setouchi",
+   "ni-kiko"
+  ],
+  "description": "長野県などの 内陸の 気候です。まわりを 山に かこまれて 1年の 降水量が 少なく、昼と 夜や 夏と 冬の 気温の 差が 大きく なります。"
+ },
+ {
+  "id": "ni-monsoon",
+  "name": "モンスーン",
+  "reading": "もんすーん",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "nihon:sekai",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-kisetsufu",
+   "ni-koppen"
+  ],
+  "description": "季節に よって 向きが 変わる 風の ことで、季節風と 同じ 意味です。アジアの 夏の モンスーンは 海から 湿った 空気を 運び、たくさんの 雨を 降らせます。"
+ },
+ {
+  "id": "ni-kansotai",
+  "name": "乾燥帯",
+  "reading": "かんそうたい",
+  "journey": "nihon",
+  "category": "気候区分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏜",
+  "mapNode": "nihon:sekai",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-koppen",
+   "ni-onshitsujun"
+  ],
+  "description": "ケッペンの 区分で、雨が 少なく 蒸発の ほうが 多い 気候帯です。砂漠や 草原が 広がります。下りる 空気が 多い 亜熱帯高圧帯の 下に 多く あります。"
+ },
+ {
+  "id": "ni-keichitsu",
+  "name": "啓蟄",
+  "reading": "けいちつ",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐛",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-usui",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、冬ごもりしていた 虫が 土から 出てくる ころです。3月6日ごろです。"
+ },
+ {
+  "id": "ni-daikan",
+  "name": "大寒",
+  "reading": "だいかん",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-toji",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、1年で いちばん 寒い ころと される 時期です。1月20日ごろです。"
+ },
+ {
+  "id": "ni-rikka",
+  "name": "立夏",
+  "reading": "りっか",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎏",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-24sekki",
+   "ni-risshun"
+  ],
+  "description": "二十四節気の ひとつで、暦の うえで 夏が 始まる 日です。5月5日ごろです。"
+ },
+ {
+  "id": "ni-risshu",
+  "name": "立秋",
+  "reading": "りっしゅう",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎐",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-zansho",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、暦の うえで 秋が 始まる 日です。8月7日ごろです。これより あとの 暑さは 残暑と よびます。"
+ },
+ {
+  "id": "ni-ritto",
+  "name": "立冬",
+  "reading": "りっとう",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-24sekki",
+   "ni-kogarashi"
+  ],
+  "description": "二十四節気の ひとつで、暦の うえで 冬が 始まる 日です。11月7日ごろです。"
+ },
+ {
+  "id": "ni-shosho",
+  "name": "処暑",
+  "reading": "しょしょ",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-risshu",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、暑さが やわらぎはじめる ころです。8月23日ごろです。"
+ },
+ {
+  "id": "ni-hakuro",
+  "name": "白露",
+  "reading": "はくろ",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-kanro",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、草に 白い 露が つきはじめる ころです。9月8日ごろです。夜に 冷えて 露点より 下がると 露が できます。"
+ },
+ {
+  "id": "ni-usui",
+  "name": "雨水",
+  "reading": "うすい",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-keichitsu",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、雪が 雨に 変わり 氷が とけはじめる ころです。2月19日ごろです。"
+ },
+ {
+  "id": "ni-shoshochu",
+  "name": "小暑",
+  "reading": "しょうしょ",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎋",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-taisho",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、暑さが 本格的に なりはじめる ころです。7月7日ごろです。"
+ },
+ {
+  "id": "ni-taisho",
+  "name": "大暑",
+  "reading": "たいしょ",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-shoshochu",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、1年で いちばん 暑い ころと される 時期です。7月23日ごろです。"
+ },
+ {
+  "id": "ni-kanro",
+  "name": "寒露",
+  "reading": "かんろ",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍁",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-hakuro",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、露が 冷たく 感じられる ころです。10月8日ごろです。"
+ },
+ {
+  "id": "ni-shosetsu",
+  "name": "小雪",
+  "reading": "しょうせつ",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌨",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-taisetsu",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、雪が 少しずつ 降りはじめる ころです。11月22日ごろです。"
+ },
+ {
+  "id": "ni-taisetsu",
+  "name": "大雪",
+  "reading": "たいせつ",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛄",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-shosetsu",
+   "ni-24sekki"
+  ],
+  "description": "二十四節気の ひとつで、雪が 本格的に 降りだす ころです。12月7日ごろです。たくさん 降る 雪の「おおゆき」とは 読みが ちがいます。"
+ },
+ {
+  "id": "ni-nyubai",
+  "name": "入梅",
+  "reading": "にゅうばい",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌂",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-tsuyuiri",
+   "ni-88ya"
+  ],
+  "description": "暦の うえでの 梅雨入りの 日で、雑節の ひとつです。6月11日ごろです。実際の 梅雨入りは 気象庁が 天気の ようすから 地方ごとに 決めます。"
+ },
+ {
+  "id": "ni-88ya",
+  "name": "八十八夜",
+  "reading": "はちじゅうはちや",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍵",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-nyubai",
+   "ni-210ka"
+  ],
+  "description": "立春から 数えて 88日目、5月2日ごろの 雑節です。このころまで 遅霜が 出る ことが あり、農家が 霜に 気を つける 目安と されて きました。"
+ },
+ {
+  "id": "ni-210ka",
+  "name": "二百十日",
+  "reading": "にひゃくとおか",
+  "journey": "nihon",
+  "category": "暦のことば",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "nihon:sekki",
+  "field": "気候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ni-88ya",
+   "ni-aki"
+  ],
+  "description": "立春から 数えて 210日目、9月1日ごろの 雑節です。稲の 花が 咲く ころで、台風が 来やすい 時期と して 昔から 注意されて きました。"
+ },
+ {
+  "id": "ni-rokko",
+  "name": "六甲おろし",
+  "reading": "ろっこうおろし",
+  "journey": "nihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "nihon:chiiki",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-kisetsufu",
+   "ni-kiyokawa"
+  ],
+  "description": "冬に 六甲山から 神戸や 大阪の 方へ 吹き下りる、冷たい 北よりの 風です。山を こえて 吹き下りる おろし風の ひとつです。"
+ },
+ {
+  "id": "ni-kiyokawa",
+  "name": "清川だし",
+  "reading": "きよかわだし",
+  "journey": "nihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "nihon:chiiki",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-yamaji",
+   "ni-hiroto"
+  ],
+  "description": "山形県の 庄内平野に、最上川の 谷から 吹きだす 強い 東よりの 風です。やまじ風・広戸風と ならび、日本の 三大局地風と よばれます。"
+ },
+ {
+  "id": "ni-yamaji",
+  "name": "やまじ風",
+  "reading": "やまじかぜ",
+  "journey": "nihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "nihon:chiiki",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-kiyokawa",
+   "ni-hiroto"
+  ],
+  "description": "愛媛県の 四国中央市の あたりで、四国山地から 吹き下りる 強い 南よりの 風です。日本海を 低気圧が 進む ときや 台風の ときに 吹きやすく なります。",
+  "acceptedReadings": [
+   "やまじかぜ",
+   "やまじ"
+  ]
+ },
+ {
+  "id": "ni-hiroto",
+  "name": "広戸風",
+  "reading": "ひろとかぜ",
+  "journey": "nihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "nihon:chiiki",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-yamaji",
+   "ni-kiyokawa"
+  ],
+  "description": "岡山県の 那岐山の 南に 吹き下りる 強い 北よりの 風です。台風が 近くの 南を 通る ときに 吹きやすく なります。"
+ },
+ {
+  "id": "ni-kyokutan",
+  "name": "極端現象",
+  "reading": "きょくたんげんしょう",
+  "journey": "nihon",
+  "category": "気候の変化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "nihon:henka",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-ijo",
+   "ni-ondanka"
+  ],
+  "description": "大雨や 猛暑など、ふだんより ずっと かたよった 現象です。温暖化が 進むと、強い 雨や 高い 気温が 起こりやすく なると 考えられています。"
+ },
+ {
+  "id": "ni-kaimensui",
+  "name": "海面水位の上昇",
+  "reading": "かいめんすいいのじょうしょう",
+  "journey": "nihon",
+  "category": "気候の変化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "nihon:henka",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ni-ondanka",
+   "ni-hendo"
+  ],
+  "description": "地球温暖化で 海の 水位が 上がる ことです。海水が あたためられて ふくらむ ことと、陸の 氷河や 氷が とけて 海に 流れこむ ことが 原因です。"
+ },
+ {
+  "id": "ni-reika",
+  "name": "冷夏",
+  "reading": "れいか",
+  "journey": "nihon",
+  "category": "梅雨と夏",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌥",
+  "mapNode": "nihon:natsu",
+  "field": "気候",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-yamase",
+   "ni-okhotsk"
+  ],
+  "description": "夏の 平均気温が 平年より 低い 夏です。オホーツク海高気圧が 強く やませが 続いたり、太平洋高気圧の 張りだしが 弱かったり すると 起こります。"
+ },
+ {
+  "id": "ni-danto",
+  "name": "暖冬",
+  "reading": "だんとう",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌤",
+  "mapNode": "nihon:fuyu",
+  "field": "気候",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-kanto",
+   "ni-siberia"
+  ],
+  "description": "冬の 平均気温が 平年より 高い 冬です。シベリア高気圧が 弱く、寒気の 流れこみが 少ないと 起こりやすく なります。"
+ },
+ {
+  "id": "ni-kanto",
+  "name": "寒冬",
+  "reading": "かんとう",
+  "journey": "nihon",
+  "category": "冬",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥶",
+  "mapNode": "nihon:fuyu",
+  "field": "気候",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-danto",
+   "ni-kanpa"
+  ],
+  "description": "冬の 平均気温が 平年より 低い 冬です。寒気が 何度も 南へ 下りてくると 起こりやすく なります。"
+ },
+ {
+  "id": "ni-shou",
+  "name": "少雨",
+  "reading": "しょうう",
+  "journey": "nihon",
+  "category": "長期予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏜",
+  "mapNode": "nihon:choki",
+  "field": "気候",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ni-heinennami",
+   "ni-kaikyu"
+  ],
+  "description": "降水量が 平年より 少ない ことです。長く 続くと 水不足に なるので、長期予報で 早めに 知らせます。"
+ }
+]

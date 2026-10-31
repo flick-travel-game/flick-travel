@@ -1,0 +1,2010 @@
+[
+ {
+  "id": "ka-amedas",
+  "name": "アメダス",
+  "reading": "あめだす",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-chiikikansoku",
+   "ka-uryokei"
+  ],
+  "description": "地域気象観測システムの 愛称です。全国に 細かく ならんだ 観測所で 雨・気温・風などを 自動で はかります。予報士は まず アメダスで いまの 天気を つかみます。"
+ },
+ {
+  "id": "ka-eisei",
+  "name": "気象衛星",
+  "reading": "きしょうえいせい",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛰",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-himawari",
+   "ka-seishi"
+  ],
+  "description": "宇宙から 地球の 雲や 水蒸気を 見る 人工衛星です。海の 上など 観測所の ない 場所の ようすも わかるので、台風や 低気圧の 監視に 欠かせません。"
+ },
+ {
+  "id": "ka-himawari",
+  "name": "ひまわり",
+  "reading": "ひまわり",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌻",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-seishi",
+   "ka-kumogazo"
+  ],
+  "description": "日本の 静止気象衛星の 愛称です。日本と アジア・太平洋を いつも 同じ 場所から 見つづけます。8号と 9号の 2機で、1機が 観測し もう1機が ひかえる 形で 運用されています。"
+ },
+ {
+  "id": "ka-radar",
+  "name": "気象レーダー",
+  "reading": "きしょうれーだー",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-doppler",
+   "ka-amagumo"
+  ],
+  "description": "電波を 出し、雨つぶや 雪に はね返って もどる 電波で 雨の 場所と 強さを 調べる 装置です。全国の レーダーを つなぐと、日本の どこで 雨が 降っているかが 一目で わかります。"
+ },
+ {
+  "id": "ka-tenkizu",
+  "name": "天気図",
+  "reading": "てんきず",
+  "journey": "kansoku",
+  "category": "天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "kansoku:tenkizu",
+  "field": "実技",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-sokuho",
+   "ka-kosotenkizu"
+  ],
+  "description": "気圧・前線・高気圧と 低気圧を 地図に かいた 図です。等圧線の こみぐあいで 風の 強さも 読めます。予報士の 実技試験は 天気図を 読む 力が 中心です。"
+ },
+ {
+  "id": "ka-ondokei",
+  "name": "温度計",
+  "reading": "おんどけい",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-tsufuto",
+   "ka-kansoku"
+  ],
+  "description": "気温を はかる 道具です。気象庁の 観測では 地面から およそ 1.5mの 高さで、日の 光が 直接 当たらない ように して はかります。"
+ },
+ {
+  "id": "ka-uryokei",
+  "name": "雨量計",
+  "reading": "うりょうけい",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-tentomasu",
+   "ka-amedas"
+  ],
+  "description": "降った 雨や 雪の 量を はかる 道具です。量は 水の 深さ(mm)で あらわします。雪は とかして 水に して はかります。"
+ },
+ {
+  "id": "ka-fukofusoku",
+  "name": "風向風速計",
+  "reading": "ふうこうふうそくけい",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-fusha",
+   "ka-amedas"
+  ],
+  "description": "風が 吹いてくる 向きと 速さを はかる 道具です。風向は 風が 吹いてくる ほうで よび、北から 吹けば 北の 風です。"
+ },
+ {
+  "id": "ka-kiatsukei",
+  "name": "気圧計",
+  "reading": "きあつけい",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-chijokansoku",
+   "ka-amedas"
+  ],
+  "description": "気圧を はかる 道具です。観測所の 高さが ちがうと 気圧も 変わるので、天気図では 海面の 高さに 直した 気圧(海面気圧)を 使います。"
+ },
+ {
+  "id": "ka-shitsudokei",
+  "name": "湿度計",
+  "reading": "しつどけい",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-ondokei",
+   "ka-chijokansoku"
+  ],
+  "description": "空気の しめりぐあい(湿度)を はかる 道具です。湿度が 高いと 雲や 霧が できやすく、低いと 火の 取りあつかいに 注意が いります。"
+ },
+ {
+  "id": "ka-kansoku",
+  "name": "観測",
+  "reading": "かんそく",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-chijokansoku",
+   "ka-kosokansoku"
+  ],
+  "description": "気温・雨・風・雲などを はかったり 見たり する ことです。予報は 正確な 観測から はじまります。観測が 少ない 場所ほど 予報は むずかしく なります。"
+ },
+ {
+  "id": "ka-yohokan",
+  "name": "予報官",
+  "reading": "よほうかん",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "kansoku:yohokan",
+  "field": "予報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-jikkyo",
+   "ka-guidance"
+  ],
+  "description": "気象庁で 天気予報や 警報を 出す 人です。数値予報や 観測を 見くらべ、最後は 人が 考えて 発表します。予報士試験の 実技は この しごとに 近い 内容です。"
+ },
+ {
+  "id": "ka-kumogazo",
+  "name": "雲画像",
+  "reading": "くもがぞう",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-kashigazo",
+   "ka-sekigaigazo"
+  ],
+  "description": "気象衛星から 見た 雲の 写真です。可視・赤外・水蒸気など 何種類か あり、組みあわせて 雲の 高さや 厚さを 読みとります。"
+ },
+ {
+  "id": "ka-zonde",
+  "name": "ラジオゾンデ",
+  "reading": "らじおぞんで",
+  "journey": "kansoku",
+  "category": "上空の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "kansoku:zonde",
+  "field": "観測",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ka-kikyu",
+   "ka-kosokansoku"
+  ],
+  "description": "気球に つるして 上空へ 飛ばす 観測器です。上がりながら 気温・湿度・気圧を はかり、位置の 変化から 風も わかります。高層天気図の もとに なる データです。"
+ },
+ {
+  "id": "ka-kikyu",
+  "name": "気球",
+  "reading": "ききゅう",
+  "journey": "kansoku",
+  "category": "上空の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "kansoku:zonde",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-zonde",
+   "ka-kosokansoku"
+  ],
+  "description": "ラジオゾンデを つり上げる ゴムの 風船です。上空ほど 気圧が 低いので ふくらんでいき、高い 空で われます。観測器は パラシュートで ゆっくり 下ります。"
+ },
+ {
+  "id": "ka-supercom",
+  "name": "スーパーコンピュータ",
+  "reading": "すーぱーこんぴゅーた",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🖥",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-suchi",
+   "ka-model"
+  ],
+  "description": "とても 速く 計算できる コンピュータです。気象庁は 数値予報の たくさんの 計算を スーパーコンピュータで 行い、決まった 時刻までに 結果を 出します。",
+  "acceptedReadings": [
+   "すーぱーこんぴゅーた",
+   "すーぱーこんぴゅーたー"
+  ]
+ },
+ {
+  "id": "ka-suchi",
+  "name": "数値予報",
+  "reading": "すうちよほう",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ka-model",
+   "ka-supercom"
+  ],
+  "description": "大気の 動きを あらわす 物理の 式を コンピュータで 解き、未来の 大気を 計算する 方法です。いまの 天気予報は 数値予報が 土台に なっています。"
+ },
+ {
+  "id": "ka-nisshokei",
+  "name": "日照計",
+  "reading": "にっしょうけい",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-zenten",
+   "ka-amedas"
+  ],
+  "description": "日が 照った 時間(日照時間)を はかる 道具です。強い 日の 光が 当たっている あいだを 数えます。"
+ },
+ {
+  "id": "ka-sekisetsukei",
+  "name": "積雪計",
+  "reading": "せきせつけい",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-amedas",
+   "ka-uryokei"
+  ],
+  "description": "積もった 雪の 深さを はかる 道具です。上から 光や 音を 当て、はね返るまでの 時間で 雪の 表面までの きょりを 調べる しくみが 使われています。"
+ },
+ {
+  "id": "ka-amagumo",
+  "name": "雨雲の動き",
+  "reading": "あまぐものうごき",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ka-nowcast",
+   "ka-radar"
+  ],
+  "description": "気象庁の ホームページで、レーダーで 見た いまの 雨と 少し 先の 雨を 地図で 見られる ものです。雷や 竜巻の ナウキャストも いっしょに 見られます。"
+ },
+ {
+  "id": "ka-kashigazo",
+  "name": "可視画像",
+  "reading": "かしがぞう",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌤",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-sekigaigazo",
+   "ka-kumogazo"
+  ],
+  "description": "雲が はね返す 太陽の 光を 写した 画像です。厚い 雲ほど 白く 写ります。太陽の 光を 使うので 夜は 見えません。"
+ },
+ {
+  "id": "ka-sekigaigazo",
+  "name": "赤外画像",
+  "reading": "せきがいがぞう",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-kashigazo",
+   "ka-kido"
+  ],
+  "description": "雲や 地面が 出す 赤外線から 温度を 見る 画像です。温度が 低い ほど 白く するので、高い 雲ほど 白く 写ります。昼も 夜も 使えます。"
+ },
+ {
+  "id": "ka-suijokigazo",
+  "name": "水蒸気画像",
+  "reading": "すいじょうきがぞう",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-sekigaigazo",
+   "ka-kumogazo"
+  ],
+  "description": "上空の 中ほどから 上の 水蒸気の 多い 少ないを 見る 画像です。雲が ない ところでも 空気の 流れが わかり、暗い ところは 乾いた 空気が 下りてきている 目じるしです。"
+ },
+ {
+  "id": "ka-seishi",
+  "name": "静止気象衛星",
+  "reading": "せいしきしょうえいせい",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛰",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-himawari",
+   "ka-kyokukido"
+  ],
+  "description": "赤道の 上空 およそ 3万6千kmを、地球の 自転と 同じ 速さで 回る 衛星です。地上から 見ると 止まって 見え、同じ 範囲を 短い 間隔で 見つづけられます。"
+ },
+ {
+  "id": "ka-kyokukido",
+  "name": "極軌道気象衛星",
+  "reading": "きょくきどうきしょうえいせい",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-seishi",
+   "ka-microwave"
+  ],
+  "description": "北極と 南極の 近くを 通る 低い 軌道を 回る 衛星です。同じ 場所は ときどきしか 通りませんが、近くから くわしく 見られ、静止衛星が 苦手な 極地方も 見えます。"
+ },
+ {
+  "id": "ka-chijokansoku",
+  "name": "地上気象観測",
+  "reading": "ちじょうきしょうかんそく",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-amedas",
+   "ka-mokushi"
+  ],
+  "description": "地上で 気圧・気温・湿度・風・雨・日照などを はかる 観測です。気象台や アメダスで 行い、地上天気図の もとに なります。"
+ },
+ {
+  "id": "ka-kosokansoku",
+  "name": "高層気象観測",
+  "reading": "こうそうきしょうかんそく",
+  "journey": "kansoku",
+  "category": "上空の観測",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "kansoku:zonde",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-zonde",
+   "ka-shitei"
+  ],
+  "description": "上空の 気温・湿度・風を はかる 観測です。ラジオゾンデは 世界中で 同じ 時刻(日本時間の 9時と 21時)に 飛ばし、各国の データを 交換します。"
+ },
+ {
+  "id": "ka-profiler",
+  "name": "ウィンドプロファイラ",
+  "reading": "うぃんどぷろふぁいら",
+  "journey": "kansoku",
+  "category": "上空の観測",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "kansoku:profiler",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-doppler",
+   "ka-kosokansoku"
+  ],
+  "description": "地上から 上空へ 電波を 出し、もどってくる 電波の ずれから 上空の 風を はかる 装置です。気球を 飛ばさずに 短い 間隔で 風が わかります。",
+  "acceptedReadings": [
+   "うぃんどぷろふぁいら",
+   "うぃんどぷろふぁいらー"
+  ]
+ },
+ {
+  "id": "ka-doppler",
+  "name": "ドップラーレーダー",
+  "reading": "どっぷらーれーだー",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-dopplersokudo",
+   "ka-profiler"
+  ],
+  "description": "雨つぶが 近づくか 遠ざかるかで 電波の 周波数が ずれる ことを 使い、風も はかれる レーダーです。竜巻の もとに なる 渦を 見つける 手がかりに なります。"
+ },
+ {
+  "id": "ka-kaisekiuryo",
+  "name": "解析雨量",
+  "reading": "かいせきうりょう",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-radar",
+   "ka-uryokei"
+  ],
+  "description": "レーダーの 面の 情報を、雨量計の 正確な 値で 直して 作る 雨量の 分布です。雨量計の ない 場所の 雨も くわしく わかります。キキクルの 計算にも 使われます。"
+ },
+ {
+  "id": "ka-nowcast",
+  "name": "降水ナウキャスト",
+  "reading": "こうすいなうきゃすと",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "kansoku:radar",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-kokaizo",
+   "ka-gaiso"
+  ],
+  "description": "レーダーで 見た 雨の 動きを もとに、1時間先までの 雨を 細かく 予想する 情報です。5分ごとに 新しく なり、急な 雨の 備えに 役立ちます。"
+ },
+ {
+  "id": "ka-rainow",
+  "name": "雷ナウキャスト",
+  "reading": "かみなりなうきゃすと",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kansoku:radar",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-liden",
+   "ka-nowcast"
+  ],
+  "description": "雷の 起こりやすさを 活動度で あらわし、1時間先まで 予想する 情報です。雷の 観測や レーダーの データを もとに 作ります。活動度が 出たら 早めに 建物の 中へ。"
+ },
+ {
+  "id": "ka-tatsunow",
+  "name": "竜巻発生確度ナウキャスト",
+  "reading": "たつまきはっせいかくどなうきゃすと",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌪",
+  "mapNode": "kansoku:radar",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-doppler",
+   "ka-rainow"
+  ],
+  "description": "竜巻などの 激しい 突風が 起こりやすい 場所を、発生確度 2段階で あらわす 情報です。1時間先まで 予想します。ドップラーレーダーの 渦の 情報などを 使います。"
+ },
+ {
+  "id": "ka-tanjikan",
+  "name": "降水短時間予報",
+  "reading": "こうすいたんじかんよほう",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕒",
+  "mapNode": "kansoku:radar",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-kongo",
+   "ka-nowcast"
+  ],
+  "description": "雨の 強さの 分布を 15時間先まで 1時間ごとに 予想する 情報です。はじめは 雨の 動きを のばし、先の 時間ほど 数値予報の 結果を 多く 使います。"
+ },
+ {
+  "id": "ka-model",
+  "name": "数値予報モデル",
+  "reading": "すうちよほうもでる",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kansoku:model",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-gsm",
+   "ka-msm"
+  ],
+  "description": "大気の 物理の 式を 解いて 未来を 計算する プログラムです。地球全体を 計算する もの、日本の まわりを 細かく 計算する ものなど、目的ごとに 使い分けます。"
+ },
+ {
+  "id": "ka-shokichi",
+  "name": "初期値",
+  "reading": "しょきち",
+  "journey": "kansoku",
+  "category": "データ同化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎬",
+  "mapNode": "kansoku:doka",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-doka",
+   "ka-kaisekichi"
+  ],
+  "description": "数値予報で 計算を 始める ときの 大気の 状態です。初期値が 実際と ずれていると、計算が 進むほど ずれが 大きく なります。"
+ },
+ {
+  "id": "ka-koshiten",
+  "name": "格子点",
+  "reading": "こうしてん",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔲",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-koshikankaku",
+   "ka-suchi"
+  ],
+  "description": "数値予報で 気温や 風を 計算する、空に 規則正しく ならべた 点です。点と 点の あいだより 小さな ものは そのままでは 計算に あらわれません。"
+ },
+ {
+  "id": "ka-doka",
+  "name": "データ同化",
+  "reading": "でーたどうか",
+  "journey": "kansoku",
+  "category": "データ同化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "kansoku:doka",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-shokichi",
+   "ka-4dvar"
+  ],
+  "description": "観測の データと 数値予報の 結果を 合わせて、できるだけ 正しい 大気の 状態(初期値)を 作る 作業です。観測が 少ない 場所も モデルで おぎないます。"
+ },
+ {
+  "id": "ka-ensemble",
+  "name": "アンサンブル予報",
+  "reading": "あんさんぶるよほう",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎻",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-setsudo",
+   "ka-spread"
+  ],
+  "description": "少しずつ ちがう 初期値などで 何回も 計算し、結果の ばらつきを 見る 予報です。ばらつきが 小さいと 予報の 信頼度が 高く、大きいと 低いと 考えます。"
+ },
+ {
+  "id": "ka-guidance",
+  "name": "ガイダンス",
+  "reading": "がいだんす",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "kansoku:guidance",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-keito",
+   "ka-kionguidance"
+  ],
+  "description": "数値予報の 結果を、天気・気温・降水確率などの わかりやすい 予報に 直す しくみです。過去の 予報と 実況の 関係を 学ばせて、モデルの くせも 直します。"
+ },
+ {
+  "id": "ka-jikkyo",
+  "name": "実況",
+  "reading": "じっきょう",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "kansoku:yohokan",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-yohokan",
+   "ka-amedas"
+  ],
+  "description": "いま 実際に 起きている 天気の ようすです。予報士は 予報と 実況を 見くらべて、ずれていれば 早めに 予報を 直します。"
+ },
+ {
+  "id": "ka-kosotenkizu",
+  "name": "高層天気図",
+  "reading": "こうそうてんきず",
+  "journey": "kansoku",
+  "category": "天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "kansoku:tenkizu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ka-shitei",
+   "ka-tenkizu"
+  ],
+  "description": "上空の 決まった 気圧の 面ごとに、高さ・気温・風などを かいた 天気図です。850・700・500・300hPa などが あり、実技試験で よく 使います。"
+ },
+ {
+  "id": "ka-sokuho",
+  "name": "速報天気図",
+  "reading": "そくほうてんきず",
+  "journey": "kansoku",
+  "category": "天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "kansoku:tenkizu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ka-tenkizu",
+   "ka-yoso"
+  ],
+  "description": "観測の 結果から すぐに 作って 出す 地上天気図です。3時間ごとに 作られ、いまの 気圧配置や 前線の 位置が わかります。"
+ },
+ {
+  "id": "ka-yoso",
+  "name": "予想天気図",
+  "reading": "よそうてんきず",
+  "journey": "kansoku",
+  "category": "天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔮",
+  "mapNode": "kansoku:tenkizu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ka-model",
+   "ka-sokuho"
+  ],
+  "description": "数値予報の 結果を もとに、先の 時刻の 気圧配置などを かいた 天気図です。予報士は 予想天気図で 低気圧の 進む 先や 発達を 読みます。"
+ },
+ {
+  "id": "ka-liden",
+  "name": "雷監視システム(ライデン)",
+  "reading": "らいかんししすてむ",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-rainow",
+   "ka-radar"
+  ],
+  "description": "雷が 出す 電波を 地上の センサーで とらえ、雷の 位置を 調べる 気象庁の しくみです。英語の 頭文字で ライデン(LIDEN)と よびます。雷ナウキャストにも 使われます。",
+  "acceptedReadings": [
+   "らいかんししすてむ",
+   "らいでん"
+  ]
+ },
+ {
+  "id": "ka-suikei",
+  "name": "推計気象分布",
+  "reading": "すいけいきしょうぶんぷ",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-amedas",
+   "ka-eisei"
+  ],
+  "description": "アメダスや 衛星の データを 組みあわせ、観測所の ない 場所の 天気・気温・日照などを 細かい 面で 見積もった 分布です。"
+ },
+ {
+  "id": "ka-gsm",
+  "name": "全球モデル",
+  "reading": "ぜんきゅうもでる",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "kansoku:model",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-model",
+   "ka-geps"
+  ],
+  "description": "地球全体の 大気を 計算する 数値予報モデルです。英語の 頭文字で GSM と よびます。週間天気予報や 台風の 進路予報の もとに なります。"
+ },
+ {
+  "id": "ka-msm",
+  "name": "メソモデル",
+  "reading": "めそもでる",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "kansoku:model",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-gsm",
+   "ka-lfm"
+  ],
+  "description": "日本の まわりを 地球全体より 細かく 計算する 数値予報モデルです。MSM と よびます。大雨など 防災の ための 予報の もとに なります。"
+ },
+ {
+  "id": "ka-lfm",
+  "name": "局地モデル",
+  "reading": "きょくちもでる",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "kansoku:model",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-msm",
+   "ka-hiseiriki"
+  ],
+  "description": "日本の まわりを メソモデルより さらに 細かく、短い 時間先まで 計算する モデルです。LFM と よびます。急な 大雨や 雷の 予報に 役立ちます。"
+ },
+ {
+  "id": "ka-chiikikansoku",
+  "name": "地域気象観測システム",
+  "reading": "ちいききしょうかんそくしすてむ",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-amedas",
+   "ka-chijokansoku"
+  ],
+  "description": "アメダスの 正式な 名前です。全国に ならべた 無人の 観測所で 雨や 気温を 自動で はかり、集めた データを すぐに 気象庁へ 送ります。"
+ },
+ {
+  "id": "ka-nijuhenpa",
+  "name": "二重偏波レーダー",
+  "reading": "にじゅうへんぱれーだー",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-radar",
+   "ka-hansha"
+  ],
+  "description": "縦と 横、2つの 向きに ゆれる 電波を 出す レーダーです。もどる 電波の ちがいから 雨つぶの 形が わかり、雨の 強さを より 正確に 見積もれます。気象庁は 順に 二重偏波に 入れかえています。"
+ },
+ {
+  "id": "ka-zr",
+  "name": "Z-R関係",
+  "reading": "ぜっとあーるかんけい",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-hansha",
+   "ka-kaisekiuryo"
+  ],
+  "description": "レーダーの 反射因子 Z と 雨の 強さ R の 関係です。Z は 雨つぶの 大きさの 6乗に 比例するので、同じ Z でも 雨つぶの 大きさで 雨の 強さが ちがう ことが あります。"
+ },
+ {
+  "id": "ka-brightband",
+  "name": "ブライトバンド",
+  "reading": "ぶらいとばんど",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-hansha",
+   "ka-zr"
+  ],
+  "description": "雪が とけて 雨に 変わる 高さ(融解層)で、レーダーの エコーが 帯の ように 強く 写る ことです。とけかけの 雪は 表面が ぬれて 大きいので 電波を 強く 返します。"
+ },
+ {
+  "id": "ka-hansha",
+  "name": "反射強度",
+  "reading": "はんしゃきょうど",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-zr",
+   "ka-nijuhenpa"
+  ],
+  "description": "レーダーの 電波が 雨つぶなどに 当たって はね返る 強さです。強いほど 雨が 強いと 考えますが、雨つぶの 大きさや 雪・ひょうでも 変わります。"
+ },
+ {
+  "id": "ka-chikeiecho",
+  "name": "地形エコー",
+  "reading": "ちけいえこー",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-seaclutter",
+   "ka-hansha"
+  ],
+  "description": "レーダーの 電波が 山などの 地形に 当たって もどる、雨では ない エコーです。いつも 同じ 場所に 出るので、取りのぞいて 使います。"
+ },
+ {
+  "id": "ka-seaclutter",
+  "name": "シークラッタ",
+  "reading": "しーくらった",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-chikeiecho",
+   "ka-hansha"
+  ],
+  "description": "レーダーの 電波が 海の 波に 当たって もどる、雨では ない エコーです。風が 強く 波が 高い ときに 海の 上に 出やすく なります。",
+  "acceptedReadings": [
+   "しーくらった",
+   "しーくらったー"
+  ]
+ },
+ {
+  "id": "ka-echotop",
+  "name": "エコー頂高度",
+  "reading": "えこーちょうこうど",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-hansha",
+   "ka-unchoko"
+  ],
+  "description": "レーダーで 見た エコーの いちばん 高い ところの 高さです。高いほど 雲が 高く のびた 強い 対流と 考え、積乱雲の 発達を 見る 目じるしに します。"
+ },
+ {
+  "id": "ka-dopplersokudo",
+  "name": "ドップラー速度",
+  "reading": "どっぷらーそくど",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kansoku:radar",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-doppler",
+   "ka-tatsunow"
+  ],
+  "description": "ドップラーレーダーで はかる、雨つぶが レーダーに 近づく・遠ざかる 速さです。近づく 速さと 遠ざかる 速さが となりあうと、渦や 風の 集まりを 見つけられます。"
+ },
+ {
+  "id": "ka-kido",
+  "name": "輝度温度",
+  "reading": "きどおんど",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-sekigaigazo",
+   "ka-unchoko"
+  ],
+  "description": "衛星が とらえた 赤外線の 強さを 温度に 直した ものです。雲頂の 輝度温度が 低いほど 雲頂が 高いと わかります。"
+ },
+ {
+  "id": "ka-tsuiseki",
+  "name": "大気追跡風",
+  "reading": "たいきついせきふう",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-kumogazo",
+   "ka-himawari"
+  ],
+  "description": "続けて 撮った 衛星画像で 雲や 水蒸気の 動きを 追い、上空の 風を 求めた ものです。観測の 少ない 海の 上の 風が わかり、データ同化に 使われます。"
+ },
+ {
+  "id": "ka-unchoko",
+  "name": "雲頂高度",
+  "reading": "うんちょうこうど",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-kido",
+   "ka-echotop"
+  ],
+  "description": "雲の いちばん 上の 高さです。赤外画像の 温度と 上空の 気温を くらべて 見積もります。積乱雲は 雲頂高度が 高く なります。"
+ },
+ {
+  "id": "ka-sabun",
+  "name": "差分画像",
+  "reading": "さぶんがぞう",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-sekigaigazo",
+   "ka-kido"
+  ],
+  "description": "ちがう 波長で 見た 2つの 画像の 差を とった 画像です。夜の 霧や 低い 雲は ふつうの 赤外画像では 見えにくいですが、差分画像で 見分けやすく なります。"
+ },
+ {
+  "id": "ka-microwave",
+  "name": "マイクロ波放射計",
+  "reading": "まいくろはほうしゃけい",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-kyokukido",
+   "ka-kakosui"
+  ],
+  "description": "雲や 雨が 出す マイクロ波を はかる 装置で、極軌道衛星などに のっています。マイクロ波は 雲を 通りぬけるので、雲の 中の 雨や 水蒸気の 量が わかります。"
+ },
+ {
+  "id": "ka-sanrankei",
+  "name": "散乱計",
+  "reading": "さんらんけい",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-microwave",
+   "ka-kyokukido"
+  ],
+  "description": "衛星から 海面へ 電波を 出し、波で 散らばって もどる 電波の 強さから 海上の 風を 求める 装置です。台風の まわりの 風の 分布を 知る 手がかりに なります。"
+ },
+ {
+  "id": "ka-gnss",
+  "name": "GNSS掩蔽観測",
+  "reading": "じーえぬえすえすえんぺいかんそく",
+  "journey": "kansoku",
+  "category": "上空の観測",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛰",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-kakosui",
+   "ka-doka"
+  ],
+  "description": "測位衛星の 電波が 大気を 通る ときに 曲がる ことを、低い 軌道の 衛星で とらえる 観測です。曲がりぐあいから 上空の 気温や 水蒸気が わかります。"
+ },
+ {
+  "id": "ka-kakosui",
+  "name": "可降水量",
+  "reading": "かこうすいりょう",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-gnss",
+   "ka-microwave"
+  ],
+  "description": "空気の 柱に ふくまれる 水蒸気を ぜんぶ 水に した ときの 深さです。多いと 大雨の もとが たくさん あると 考えます。地上の GNSS の 受信機でも 求められます。"
+ },
+ {
+  "id": "ka-koshikankaku",
+  "name": "格子間隔",
+  "reading": "こうしかんかく",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-koshiten",
+   "ka-bunkaino"
+  ],
+  "description": "数値予報の 格子点と 格子点の あいだの きょりです。小さいほど 細かい 現象まで 表せますが、計算の 量は ずっと 多く なります。"
+ },
+ {
+  "id": "ka-yohohensu",
+  "name": "予報変数",
+  "reading": "よほうへんすう",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-primitive",
+   "ka-koshiten"
+  ],
+  "description": "数値予報で 時間を 進めながら 計算する 量です。風・気温・水蒸気・気圧などで、式で 未来の 値を 求めます。"
+ },
+ {
+  "id": "ka-primitive",
+  "name": "プリミティブ方程式",
+  "reading": "ぷりみてぃぶほうていしき",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-seirikikinji",
+   "ka-yohohensu"
+  ],
+  "description": "数値予報の もとに なる、運動・熱・水蒸気・質量の 保存などを まとめた 式の 組です。静力学平衡の 近似を 使った 形を こう よびます。"
+ },
+ {
+  "id": "ka-seirikikinji",
+  "name": "静力学近似",
+  "reading": "せいりきがくきんじ",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-primitive",
+   "ka-hiseiriki"
+  ],
+  "description": "気圧の 上下の 差と 重力が つりあうと して、上下の 加速度を 計算しない 近似です。大きな 規模の 動きでは よく 合いますが、積乱雲の ような 強い 上昇気流は 表せません。"
+ },
+ {
+  "id": "ka-hiseiriki",
+  "name": "非静力学モデル",
+  "reading": "ひせいりきがくもでる",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛈",
+  "mapNode": "kansoku:model",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-seirikikinji",
+   "ka-lfm"
+  ],
+  "description": "静力学近似を 使わず、上下の 加速度も 計算する モデルです。積乱雲の ような 強い 上昇気流を 表せるので、細かい 格子の モデルに 使います。"
+ },
+ {
+  "id": "ka-param",
+  "name": "パラメタリゼーション",
+  "reading": "ぱらめたりぜーしょん",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-koshikankaku",
+   "ka-hiseiriki"
+  ],
+  "description": "格子より 小さくて 直接 計算できない 雲や 乱流などの はたらきを、格子の 値から 見積もって 取りいれる 方法です。",
+  "acceptedReadings": [
+   "ぱらめたりぜーしょん",
+   "ぱらめたりぜいしょん"
+  ]
+ },
+ {
+  "id": "ka-4dvar",
+  "name": "4次元変分法",
+  "reading": "よじげんへんぶんほう",
+  "journey": "kansoku",
+  "category": "データ同化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "kansoku:doka",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-doka",
+   "ka-kyakkan"
+  ],
+  "description": "ある 時間の はばの 中の 観測を、時間の 流れも ふくめて モデルと 合わせる データ同化の 方法です。いつ はかった データかを 生かせるのが 強みです。",
+  "acceptedReadings": [
+   "よじげんへんぶんほう",
+   "よんじげんへんぶんほう"
+  ]
+ },
+ {
+  "id": "ka-kyakkan",
+  "name": "客観解析",
+  "reading": "きゃっかんかいせき",
+  "journey": "kansoku",
+  "category": "データ同化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔲",
+  "mapNode": "kansoku:doka",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-doka",
+   "ka-daiichi"
+  ],
+  "description": "ばらばらの 場所で はかった 観測を、決まった 方法で 格子点の 値に 直す ことです。人の 判断を 入れずに 計算で 行うので 客観と いいます。"
+ },
+ {
+  "id": "ka-daiichi",
+  "name": "第一推定値",
+  "reading": "だいいちすいていち",
+  "journey": "kansoku",
+  "category": "データ同化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kansoku:doka",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-kyakkan",
+   "ka-doka"
+  ],
+  "description": "データ同化で 出発点に する 大気の 状態です。少し 前の 時刻から 計算した 予報の 値を 使い、そこに 観測を 合わせて 直します。"
+ },
+ {
+  "id": "ka-hinshitsu",
+  "name": "品質管理",
+  "reading": "ひんしつかんり",
+  "journey": "kansoku",
+  "category": "データ同化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "kansoku:doka",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-doka",
+   "ka-kyakkan"
+  ],
+  "description": "データ同化の 前に、まちがった 観測や 大きく ずれた 観測を 見つけて のぞく 作業です。おかしな データが 入ると 初期値が くるいます。"
+ },
+ {
+  "id": "ka-kyokaichi",
+  "name": "境界値",
+  "reading": "きょうかいち",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖼",
+  "mapNode": "kansoku:model",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-msm",
+   "ka-gsm"
+  ],
+  "description": "日本の まわりだけを 計算する モデルで、計算する 範囲の ふちに 与える 値です。外がわの 大きな モデルの 予報から もらいます。"
+ },
+ {
+  "id": "ka-spectral",
+  "name": "スペクトル法",
+  "reading": "すぺくとるほう",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-sabunho",
+   "ka-gsm"
+  ],
+  "description": "大気の ようすを たくさんの 波の 重ね合わせで あらわして 計算する 方法です。地球全体の モデルで 使われて きました。"
+ },
+ {
+  "id": "ka-sabunho",
+  "name": "差分法",
+  "reading": "さぶんほう",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔲",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-spectral",
+   "ka-koshiten"
+  ],
+  "description": "となりの 格子点との 値の 差を 使って、式の 変化を 近似して 計算する 方法です。数値予報の 基本の 計算の しかたです。"
+ },
+ {
+  "id": "ka-cfl",
+  "name": "CFL条件",
+  "reading": "しーえふえるじょうけん",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "kansoku:suchi",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-koshikankaku",
+   "ka-sabunho"
+  ],
+  "description": "数値予報で 1回に 進める 時間の 長さの 上限を 決める 条件です。格子間隔を 小さく すると、時間の きざみも 小さく しないと 計算が くずれます。"
+ },
+ {
+  "id": "ka-yosokukano",
+  "name": "予測可能性",
+  "reading": "よそくかのうせい",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-chaos",
+   "ka-ensemble"
+  ],
+  "description": "どれくらい 先まで 予報が できるかの 目安です。大気には カオスの 性質が あるので、先の 時間ほど 予報は むずかしく なります。"
+ },
+ {
+  "id": "ka-chaos",
+  "name": "カオス",
+  "reading": "かおす",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-butterfly",
+   "ka-yosokukano"
+  ],
+  "description": "はじめの 小さな ちがいが 時間と ともに 大きく 育つ 性質です。大気も カオスなので、初期値の わずかな 誤差が 先の 予報を 大きく 変えます。"
+ },
+ {
+  "id": "ka-butterfly",
+  "name": "バタフライ効果",
+  "reading": "ばたふらいこうか",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦋",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-chaos",
+   "ka-setsudo"
+  ],
+  "description": "小さな ちがいが 遠い 先で 大きな ちがいに なる ことの たとえです。気象学者の ローレンツが、蝶の はばたきの 話として 紹介した ことで 知られます。"
+ },
+ {
+  "id": "ka-bunkaino",
+  "name": "分解能",
+  "reading": "ぶんかいのう",
+  "journey": "kansoku",
+  "category": "数値予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "kansoku:model",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-koshikankaku",
+   "ka-param"
+  ],
+  "description": "モデルが どれくらい 小さな 現象まで 表せるかの 細かさです。格子間隔と 同じでは なく、表せるのは 格子間隔の 何倍か 大きな 現象です。"
+ },
+ {
+  "id": "ka-geps",
+  "name": "全球アンサンブル予報システム",
+  "reading": "ぜんきゅうあんさんぶるよほうしすてむ",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-ensemble",
+   "ka-gsm"
+  ],
+  "description": "全球モデルを もとに した アンサンブル予報の しくみです。台風の 進路や 週間天気予報、2週間・1か月先の 予報に 使われます。"
+ },
+ {
+  "id": "ka-meps",
+  "name": "メソアンサンブル予報システム",
+  "reading": "めそあんさんぶるよほうしすてむ",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-ensemble",
+   "ka-msm"
+  ],
+  "description": "メソモデルを もとに した アンサンブル予報の しくみです。大雨などの 起こりやすさや 予報の ばらつきを 見て、防災の 情報に 生かします。"
+ },
+ {
+  "id": "ka-spread",
+  "name": "スプレッド",
+  "reading": "すぷれっど",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-ensemble",
+   "ka-ensheikin"
+  ],
+  "description": "アンサンブル予報の 各メンバーの 結果の ばらつきです。スプレッドが 大きいほど 予報が ゆれやすく、信頼度が 低いと 読みます。"
+ },
+ {
+  "id": "ka-ensheikin",
+  "name": "アンサンブル平均",
+  "reading": "あんさんぶるへいきん",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-spread",
+   "ka-ensemble"
+  ],
+  "description": "アンサンブル予報の 各メンバーの 結果を 平均した ものです。ばらばらな 細かい ずれが 打ち消しあうので、1つの 予報より 誤差が 小さく なりやすいです。"
+ },
+ {
+  "id": "ka-setsudo",
+  "name": "初期摂動",
+  "reading": "しょきせつどう",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-ensemble",
+   "ka-butterfly"
+  ],
+  "description": "アンサンブル予報で、初期値に わざと 加える 小さな ずれです。誤差が 育ちやすい 向きに 与えて、起こりうる 結果の はばを 調べます。"
+ },
+ {
+  "id": "ka-keito",
+  "name": "系統誤差",
+  "reading": "けいとうごさ",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kansoku:guidance",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-guidance",
+   "ka-yohogosa"
+  ],
+  "description": "いつも 同じ 向きに かたよる 誤差です。たとえば モデルが ある 場所の 気温を いつも 低めに 出すなら、ガイダンスで その くせを 直せます。"
+ },
+ {
+  "id": "ka-kalman",
+  "name": "カルマンフィルター",
+  "reading": "かるまんふぃるたー",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "kansoku:guidance",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-guidance",
+   "ka-kionguidance"
+  ],
+  "description": "新しい 予報と 実況が 入る たびに、式の 係数を 少しずつ 直していく 方法です。モデルが 変わっても すばやく なじむので、ガイダンスに 使われます。",
+  "acceptedReadings": [
+   "かるまんふぃるたー",
+   "かるまんふぃるた"
+  ]
+ },
+ {
+  "id": "ka-nn",
+  "name": "ニューラルネットワーク",
+  "reading": "にゅーらるねっとわーく",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "kansoku:guidance",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-guidance",
+   "ka-jukaiki"
+  ],
+  "description": "脳の 神経の つながりを まねた 計算の しくみです。たくさんの データの 複雑な 関係を 学べるので、ガイダンスを 作る 方法の 1つとして 使われます。"
+ },
+ {
+  "id": "ka-hindo",
+  "name": "頻度バイアス補正",
+  "reading": "ひんどばいあすほせい",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kansoku:guidance",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-guidance",
+   "ka-keito"
+  ],
+  "description": "ガイダンスで 予想した 現象の 出る 回数が、実況の 回数と 合う ように 直す 方法です。強い 雨が 少なめに 予想される くせなどを 直します。"
+ },
+ {
+  "id": "ka-jukaiki",
+  "name": "線形重回帰",
+  "reading": "せんけいじゅうかいき",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "kansoku:guidance",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-nn",
+   "ka-guidance"
+  ],
+  "description": "いくつかの 量の 足し算で 予想したい 量を あらわす 統計の 方法です。過去の データで 係数を 決め、ガイダンスに 使います。"
+ },
+ {
+  "id": "ka-hatsurai",
+  "name": "発雷確率",
+  "reading": "はつらいかくりつ",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kansoku:guidance",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-guidance",
+   "ka-rainow"
+  ],
+  "description": "ある 時間に 雷が 起こる 確率を 予想する ガイダンスです。大気の 不安定さなどを もとに 計算し、雷注意報を 出す 判断に 役立ちます。"
+ },
+ {
+  "id": "ka-kionguidance",
+  "name": "気温ガイダンス",
+  "reading": "きおんがいだんす",
+  "journey": "kansoku",
+  "category": "ガイダンスと予報",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "kansoku:guidance",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-guidance",
+   "ka-kalman"
+  ],
+  "description": "数値予報から 最高気温・最低気温などを 予想する ガイダンスです。モデルの 地形と 本当の 地形の ちがいなどから 出る くせも 直します。"
+ },
+ {
+  "id": "ka-gaiso",
+  "name": "外挿",
+  "reading": "がいそう",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kansoku:radar",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-nowcast",
+   "ka-tanjikan"
+  ],
+  "description": "いまの 動きが そのまま 続くと して、先の ようすを のばして 予想する ことです。ナウキャストは 雨の 動きを 外挿して 作ります。"
+ },
+ {
+  "id": "ka-tsuho",
+  "name": "国際気象通報式",
+  "reading": "こくさいきしょうつうほうしき",
+  "journey": "kansoku",
+  "category": "天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "kansoku:tenkizu",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-chijokansoku",
+   "ka-tenkizu"
+  ],
+  "description": "観測の 結果を 世界中で 同じ 形の 数字と 記号に して 送る 決まりです。国が ちがっても すぐ 読めるので、天気図を 作る ことが できます。"
+ },
+ {
+  "id": "ka-zenten",
+  "name": "全天日射量",
+  "reading": "ぜんてんにっしゃりょう",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-nisshokei",
+   "ka-chijokansoku"
+  ],
+  "description": "空 全体から 地面の 水平な 面に とどく 太陽の エネルギーの 量です。日の 光が 直接 届く ぶんと、空で 散らばって 届く ぶんを 合わせて はかります。"
+ },
+ {
+  "id": "ka-tsufuto",
+  "name": "通風筒",
+  "reading": "つうふうとう",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-ondokei",
+   "ka-chijokansoku"
+  ],
+  "description": "温度計を 入れる 筒で、日の 光を さえぎり、ファンで 外の 空気を 通して 気温を はかる ものです。日射の 熱で 気温が 高く はかられるのを ふせぎます。"
+ },
+ {
+  "id": "ka-tentomasu",
+  "name": "転倒ます型雨量計",
+  "reading": "てんとうますがたうりょうけい",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪣",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-uryokei",
+   "ka-amedas"
+  ],
+  "description": "雨水を 小さな ますに ため、決まった 量に なると ますが 倒れて 水を 捨てる 雨量計です。倒れた 回数を 数えて 雨量を 求めます。アメダスで 使われています。"
+ },
+ {
+  "id": "ka-fusha",
+  "name": "風車型風向風速計",
+  "reading": "ふうしゃがたふうこうふうそくけい",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛩",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-fukofusoku",
+   "ka-amedas"
+  ],
+  "description": "飛行機の 形の 本体の 前に プロペラが ついた 風向風速計です。しっぽの 板で 風上を 向き、プロペラの 回る 速さで 風速を はかります。"
+ },
+ {
+  "id": "ka-kokaizo",
+  "name": "高解像度降水ナウキャスト",
+  "reading": "こうかいぞうどこうすいなうきゃすと",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "kansoku:radar",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-nowcast",
+   "ka-gaiso"
+  ],
+  "description": "降水ナウキャストを さらに 細かく した 情報です。気象庁の レーダーに 加えて 国土交通省の レーダーなども 使い、急な 大雨を 細かい 場所ごとに 見られます。"
+ },
+ {
+  "id": "ka-kongo",
+  "name": "今後の雨",
+  "reading": "こんごのあめ",
+  "journey": "kansoku",
+  "category": "レーダー",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☂️",
+  "mapNode": "kansoku:radar",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-tanjikan",
+   "ka-amagumo"
+  ],
+  "description": "気象庁の ホームページで、降水短時間予報を 地図で 見られる ものの 名前です。この先 数時間から 半日ほどの 雨の 降りかたを 確かめるのに 役立ちます。"
+ },
+ {
+  "id": "ka-yohogosa",
+  "name": "予報誤差",
+  "reading": "よほうごさ",
+  "journey": "kansoku",
+  "category": "アンサンブル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "kansoku:ensemble",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-keito",
+   "ka-yosokukano"
+  ],
+  "description": "予報と 実況との 差です。初期値の 誤差と、モデルが 大気を 完全には 表せない ことの 両方から 生まれます。"
+ },
+ {
+  "id": "ka-kaisekichi",
+  "name": "解析値",
+  "reading": "かいせきち",
+  "journey": "kansoku",
+  "category": "データ同化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "kansoku:doka",
+  "field": "数値予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-doka",
+   "ka-shokichi"
+  ],
+  "description": "データ同化で 作られた、ある 時刻の 大気の 状態の 値です。数値予報の 初期値に なるほか、天気図を かく もとにも 使います。"
+ },
+ {
+  "id": "ka-shitei",
+  "name": "指定気圧面",
+  "reading": "していきあつめん",
+  "journey": "kansoku",
+  "category": "天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "kansoku:tenkizu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ka-kosotenkizu",
+   "ka-kosokansoku"
+  ],
+  "description": "高層の 観測で 決まって 値を 報告する 気圧の 面です。850・700・500・300hPa などで、高層天気図は この 面ごとに かきます。"
+ },
+ {
+  "id": "ka-mokushi",
+  "name": "目視観測",
+  "reading": "もくしかんそく",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👁",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-jido",
+   "ka-chijokansoku"
+  ],
+  "description": "人が 目で 見て、雲の 量や 種類、天気などを 観測する ことです。機械では むずかしい 項目も ありますが、自動観測への 切りかえが 進んでいます。"
+ },
+ {
+  "id": "ka-jido",
+  "name": "自動観測",
+  "reading": "じどうかんそく",
+  "journey": "kansoku",
+  "category": "地上の観測",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤖",
+  "mapNode": "kansoku:amedas",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-mokushi",
+   "ka-amedas"
+  ],
+  "description": "機械が 人の かわりに 決まった 時間に 観測する ことです。夜も 休まず はかれ、データを すぐに 送れます。"
+ },
+ {
+  "id": "ka-dvorak",
+  "name": "ドボラック法",
+  "reading": "どぼらっくほう",
+  "journey": "kansoku",
+  "category": "衛星",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "kansoku:eisei",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ka-himawari",
+   "ka-kumogazo"
+  ],
+  "description": "衛星画像の 台風の 雲の 形や まとまりかたから、台風の 強さを 見積もる 方法です。考えた 人の 名前から この 名前が つきました。海の 上の 台風の 強さを 知る 大事な 手がかりです。"
+ }
+]

@@ -1,0 +1,2055 @@
+[
+ {
+  "id": "ri-henseifu",
+  "name": "偏西風",
+  "reading": "へんせいふう",
+  "journey": "rikigaku",
+  "category": "大きな風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "rikigaku:henseifu",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-jet",
+   "ri-henseihado"
+  ],
+  "description": "中緯度の 上空を 西から 東へ 吹く 風です。天気が 西から 東へ 移りかわるのは この 風に 高気圧や 低気圧が 運ばれる ためです。"
+ },
+ {
+  "id": "ri-boeki",
+  "name": "貿易風",
+  "reading": "ぼうえきふう",
+  "journey": "rikigaku",
+  "category": "大きな風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛵",
+  "mapNode": "rikigaku:henseifu",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-hadley",
+   "ri-itcz"
+  ],
+  "description": "熱帯で 一年じゅう 東寄りに 吹く 風です。北半球では 北東から 吹きます。むかし 帆船が 貿易に 使った ことから この 名前が つきました。"
+ },
+ {
+  "id": "ri-jet",
+  "name": "ジェット気流",
+  "reading": "じぇっときりゅう",
+  "journey": "rikigaku",
+  "category": "ジェット",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "rikigaku:jet",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-henseifu",
+   "ri-anettaijet",
+   "ri-kantaijet"
+  ],
+  "description": "偏西風の 中で とくに 強く 吹く 帯です。対流圏の 上の ほう(およそ 200〜300hPa)に あり、低気圧の 発達や 進む 向きを 決める 大事な 目じるしです。"
+ },
+ {
+  "id": "ri-umikaze",
+  "name": "海風",
+  "reading": "うみかぜ",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-rikukaze",
+   "ri-kairiku",
+   "ri-umikazezensen"
+  ],
+  "description": "晴れた 昼に 海から 陸へ 吹く 風です。陸の ほうが 早く 温まって 空気が 上がり、そこへ 海の 冷たい 空気が 入ります。"
+ },
+ {
+  "id": "ri-rikukaze",
+  "name": "陸風",
+  "reading": "りくかぜ",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏝",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-umikaze",
+   "ri-kairiku"
+  ],
+  "description": "晴れた 夜に 陸から 海へ 吹く 風です。夜は 陸の ほうが 早く 冷えるので、海風とは 反対向きに なります。"
+ },
+ {
+  "id": "ri-yamakaze",
+  "name": "山風",
+  "reading": "やまかぜ",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-tanikaze",
+   "ri-sankoku",
+   "ri-reikiko"
+  ],
+  "description": "夜に 山の 斜面から 谷へ 下りる 風です。斜面の 空気が 冷えて 重く なり、すべり 下ります。"
+ },
+ {
+  "id": "ri-tanikaze",
+  "name": "谷風",
+  "reading": "たにかぜ",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏞",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-yamakaze",
+   "ri-sankoku"
+  ],
+  "description": "晴れた 昼に 谷から 山の 斜面を 上がる 風です。日に 当たった 斜面の 空気が 温まって 上がります。山の 午後の 雲の もとにも なります。"
+ },
+ {
+  "id": "ri-uzu",
+  "name": "渦",
+  "reading": "うず",
+  "journey": "rikigaku",
+  "category": "渦",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-uzudo",
+   "ri-tokei",
+   "ri-hantokei"
+  ],
+  "description": "空気が ぐるぐる 回る 流れです。低気圧や 台風も 大きな 渦です。予報士は 回る 強さを 渦度と いう 量で あらわします。"
+ },
+ {
+  "id": "ri-jiten",
+  "name": "地球の自転",
+  "reading": "ちきゅうのじてん",
+  "journey": "rikigaku",
+  "category": "見かけの力",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "rikigaku:coriolis",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-coriolis",
+   "ri-coriparam"
+  ],
+  "description": "地球は 1日に 1回 西から 東へ 回っています。この 回転の ため、地球の 上で 動く 風には コリオリ力と いう 見かけの 力が はたらきます。"
+ },
+ {
+  "id": "ri-masatsu",
+  "name": "摩擦",
+  "reading": "まさつ",
+  "journey": "rikigaku",
+  "category": "摩擦",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪵",
+  "mapNode": "rikigaku:masatsu",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-chijofu",
+   "ri-ekman",
+   "ri-sodo"
+  ],
+  "description": "地面や 海面との こすれで 風を 弱める 力です。地上の 風は 摩擦の ため、上空の 風より 弱く、向きも 少し ずれます。"
+ },
+ {
+  "id": "ri-kitakaze",
+  "name": "北風",
+  "reading": "きたかぜ",
+  "journey": "rikigaku",
+  "category": "風向",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-minamikaze",
+   "ri-kazakami"
+  ],
+  "description": "北から 吹いてくる 風です。風向は 吹いてくる 方向で 言い、天気図では 16方位で あらわします。冬の 季節風は 北西や 北の 風です。"
+ },
+ {
+  "id": "ri-minamikaze",
+  "name": "南風",
+  "reading": "みなみかぜ",
+  "journey": "rikigaku",
+  "category": "風向",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-kitakaze",
+   "ri-kazakami"
+  ],
+  "description": "南から 吹いてくる 風です。暖かく 湿った 空気を 運ぶ ことが 多く、予報士は 南風が 強まると 雨の 強まりにも 気を つけます。"
+ },
+ {
+  "id": "ri-kazashimo",
+  "name": "風下",
+  "reading": "かざしも",
+  "journey": "rikigaku",
+  "category": "風向",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍃",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-kazakami",
+   "ri-sangakuha"
+  ],
+  "description": "風が 吹いていく 側の ことです。山の 風下では 空気が 下りて 乾いたり、山岳波が できたり します。"
+ },
+ {
+  "id": "ri-kazakami",
+  "name": "風上",
+  "reading": "かざかみ",
+  "journey": "rikigaku",
+  "category": "風向",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎏",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-kazashimo",
+   "ri-kitakaze"
+  ],
+  "description": "風が 吹いてくる 側の ことです。天気の 変化は 風上から やって くるので、予報士は 風上の 雲や 雨の ようすを 見ます。"
+ },
+ {
+  "id": "ri-soyokaze",
+  "name": "そよ風",
+  "reading": "そよかぜ",
+  "journey": "rikigaku",
+  "category": "風の強さ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍃",
+  "mapNode": "rikigaku:keido",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-mufu",
+   "ri-keidoryoku"
+  ],
+  "description": "木の 葉が ゆれる くらいの やわらかな 弱い 風です。天気図で 等圧線の 間が 広い ところでは、気圧の 差が 小さく 風も 弱く なります。"
+ },
+ {
+  "id": "ri-mufu",
+  "name": "無風",
+  "reading": "むふう",
+  "journey": "rikigaku",
+  "category": "風の強さ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎐",
+  "mapNode": "rikigaku:keido",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-soyokaze",
+   "ri-nagi"
+  ],
+  "description": "風が ほとんど ない ことです。観測では 風速が およそ 0.2m/s 以下だと 静穏と して、風向を 決めません。"
+ },
+ {
+  "id": "ri-nagi",
+  "name": "凪",
+  "reading": "なぎ",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌅",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-kairiku",
+   "ri-umikaze",
+   "ri-mufu"
+  ],
+  "description": "海風と 陸風が 入れかわる 朝や 夕方に、風が やむ ことです。朝凪・夕凪と いいます。瀬戸内海の 夕凪は よく 知られています。"
+ },
+ {
+  "id": "ri-tsumuji",
+  "name": "つむじ風",
+  "reading": "つむじかぜ",
+  "journey": "rikigaku",
+  "category": "小さな渦",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "気象現象",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-uzu",
+   "ri-kyokuchifu"
+  ],
+  "description": "地面の 近くで 小さく うずを 巻いて 吹く 風です。落ち葉や 砂を 巻き上げる ことが あります。晴れた 日に できる ものは じん旋風とも いいます。"
+ },
+ {
+  "id": "ri-tokei",
+  "name": "時計回り",
+  "reading": "とけいまわり",
+  "journey": "rikigaku",
+  "category": "回る向き",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🕐",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-hantokei",
+   "ri-koukiatsusei"
+  ],
+  "description": "北半球の 高気圧では、地上の 風が 時計回りに 吹き出します。南半球では 反対の 反時計回りに なります。"
+ },
+ {
+  "id": "ri-hantokei",
+  "name": "反時計回り",
+  "reading": "はんとけいまわり",
+  "journey": "rikigaku",
+  "category": "回る向き",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ri-tokei",
+   "ri-teikiatsusei"
+  ],
+  "description": "北半球の 低気圧や 台風では、地上の 風が 反時計回りに 吹きこみます。南半球では 時計回りに なります。"
+ },
+ {
+  "id": "ri-keidoryoku",
+  "name": "気圧傾度力",
+  "reading": "きあつけいどりょく",
+  "journey": "rikigaku",
+  "category": "風を動かす力",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "rikigaku:keido",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-chikofu",
+   "ri-coriolis",
+   "ri-touatsumen"
+  ],
+  "description": "気圧の 高い ほうから 低い ほうへ 空気を 押す 力です。等圧線に 直角に はたらき、等圧線の 間が せまい ほど 強く なって 風が 強まります。"
+ },
+ {
+  "id": "ri-coriolis",
+  "name": "コリオリ力(転向力)",
+  "reading": "こりおりりょく",
+  "journey": "rikigaku",
+  "category": "風を動かす力",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "rikigaku:coriolis",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-jiten",
+   "ri-chikofu",
+   "ri-coriparam"
+  ],
+  "description": "地球の 自転で 生まれる 見かけの 力です。北半球では 動く 向きの 右へ 曲げます。風が 速い ほど、緯度が 高い ほど 強く、赤道では はたらきません。",
+  "acceptedReadings": [
+   "こりおりりょく",
+   "てんこうりょく"
+  ]
+ },
+ {
+  "id": "ri-chikofu",
+  "name": "地衡風",
+  "reading": "ちこうふう",
+  "journey": "rikigaku",
+  "category": "つりあう風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "rikigaku:chiko",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-keidoryoku",
+   "ri-coriolis",
+   "ri-hichiko"
+  ],
+  "description": "気圧傾度力と コリオリ力が つりあって 吹く 風です。等圧線に 平行に、北半球では 低圧側を 左に 見て 吹きます。摩擦の 少ない 上空の 風に 近いです。"
+ },
+ {
+  "id": "ri-keidofu",
+  "name": "傾度風",
+  "reading": "けいどふう",
+  "journey": "rikigaku",
+  "category": "つりあう風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "rikigaku:keidofu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-chikofu",
+   "ri-enshin",
+   "ri-senko"
+  ],
+  "description": "曲がった 等圧線に そって 吹く 風で、遠心力も ふくめて つりあいます。同じ 気圧の 傾きなら、高気圧の まわりの 風の ほうが 低気圧より 強く なります。"
+ },
+ {
+  "id": "ri-chijofu",
+  "name": "地上風",
+  "reading": "ちじょうふう",
+  "journey": "rikigaku",
+  "category": "地上の風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "rikigaku:masatsu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-masatsu",
+   "ri-masatsushu",
+   "ri-ekman"
+  ],
+  "description": "地面の 近くで 吹く 風です。摩擦で 弱まるので、等圧線を 斜めに 横切って 低圧側へ 吹きこみます。陸の 上は 海の 上より 横切る 角度が 大きいです。"
+ },
+ {
+  "id": "ri-enshin",
+  "name": "遠心力",
+  "reading": "えんしんりょく",
+  "journey": "rikigaku",
+  "category": "風を動かす力",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎠",
+  "mapNode": "rikigaku:keidofu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-keidofu",
+   "ri-senko"
+  ],
+  "description": "曲がって 進む 流れが、外へ 引っぱられる ように 感じる 見かけの 力です。台風の 中心近くや 竜巻の ような 小さく 速い 渦で 大事に なります。"
+ },
+ {
+  "id": "ri-daijunkan",
+  "name": "大気大循環",
+  "reading": "たいきだいじゅんかん",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-hadley",
+   "ri-ferrel",
+   "ri-kyokujunkan"
+  ],
+  "description": "地球 全体を めぐる 空気の 大きな 流れです。赤道で あまる 熱を 極へ 運んでいます。ハドレー循環・フェレル循環・極循環の 3つに 分けて 考えます。"
+ },
+ {
+  "id": "ri-hadley",
+  "name": "ハドレー循環",
+  "reading": "はどれーじゅんかん",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-daijunkan",
+   "ri-anettaikoatsu",
+   "ri-itcz"
+  ],
+  "description": "赤道近くで 空気が 上がり、緯度 30度 付近で 下りる 南北の 循環です。下の ほうでは 赤道へ 戻る 流れが 貿易風に なります。"
+ },
+ {
+  "id": "ri-anettaikoatsu",
+  "name": "亜熱帯高圧帯",
+  "reading": "あねったいこうあつたい",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏜",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-hadley",
+   "ri-boeki"
+  ],
+  "description": "緯度 30度 付近に ならぶ 高気圧の 帯です。ハドレー循環の 下りる 空気で 晴れやすく、世界の 大きな 砂漠の 多くは この あたりに あります。"
+ },
+ {
+  "id": "ri-itcz",
+  "name": "熱帯収束帯",
+  "reading": "ねったいしゅうそくたい",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-hadley",
+   "ri-boeki",
+   "ri-hentohado"
+  ],
+  "description": "南北の 貿易風が 赤道付近で ぶつかり、積乱雲が 帯の ように ならぶ ところです。季節に よって 南北に 動きます。衛星の 雲画像で よく 見えます。"
+ },
+ {
+  "id": "ri-kyokuhento",
+  "name": "極偏東風",
+  "reading": "きょくへんとうふう",
+  "journey": "rikigaku",
+  "category": "大きな風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "rikigaku:henseifu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-kyokujunkan",
+   "ri-henseifu"
+  ],
+  "description": "極の 近くの 地上で 吹く 東寄りの 風です。極で 冷えて 下りた 空気が 低い 緯度へ 流れ出し、コリオリ力で 曲げられます。"
+ },
+ {
+  "id": "ri-kantaijet",
+  "name": "寒帯前線ジェット",
+  "reading": "かんたいぜんせんじぇっと",
+  "journey": "rikigaku",
+  "category": "ジェット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "rikigaku:jet",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-kantaizensen",
+   "ri-anettaijet",
+   "ri-jet"
+  ],
+  "description": "寒帯前線の 上空に できる ジェット気流です。南北の 温度差が 大きい 所に でき、位置や 強さが よく 変わります。温帯低気圧の 発達に かかわります。"
+ },
+ {
+  "id": "ri-anettaijet",
+  "name": "亜熱帯ジェット",
+  "reading": "あねったいじぇっと",
+  "journey": "rikigaku",
+  "category": "ジェット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "rikigaku:jet",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-hadley",
+   "ri-kakuundo",
+   "ri-kantaijet"
+  ],
+  "description": "ハドレー循環の 北の 端、緯度 30度 付近の 上空に できる ジェット気流です。冬の 日本付近で とくに 強く なります。"
+ },
+ {
+  "id": "ri-shusoku",
+  "name": "収束",
+  "reading": "しゅうそく",
+  "journey": "rikigaku",
+  "category": "収束・発散",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏬",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-hassan",
+   "ri-kasoshusoku",
+   "ri-renzoku"
+  ],
+  "description": "空気が まわりから 集まって くる ことです。地上で 収束すると 空気は 行き場が なく 上がり、雲が できやすく なります。"
+ },
+ {
+  "id": "ri-hassan",
+  "name": "発散",
+  "reading": "はっさん",
+  "journey": "rikigaku",
+  "category": "収束・発散",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏫",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-shusoku",
+   "ri-josohassan"
+  ],
+  "description": "空気が まわりへ 広がって いく ことです。地上で 発散する 高気圧では 上から 空気が 下りて きて 晴れやすく なります。"
+ },
+ {
+  "id": "ri-uzudo",
+  "name": "渦度",
+  "reading": "うずど",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-sotaiuzu",
+   "ri-seiuzu",
+   "ri-fuuzu"
+  ],
+  "description": "空気の 回転の 強さを あらわす 量です。北半球では 反時計回り(低気圧の 回り)を 正と します。500hPa の 天気図で よく 見ます。"
+ },
+ {
+  "id": "ri-trough",
+  "name": "トラフ",
+  "reading": "とらふ",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-ridge",
+   "ri-henseihado",
+   "ri-tanpatrough"
+  ],
+  "description": "上空の 等高度線が 南へ へこんだ 気圧の 谷です。トラフの 前(東側)では 空気が 上がりやすく、地上の 低気圧が 発達しやすく なります。"
+ },
+ {
+  "id": "ri-ridge",
+  "name": "リッジ",
+  "reading": "りっじ",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-trough",
+   "ri-henseihado"
+  ],
+  "description": "上空の 等高度線が 北へ ふくらんだ 気圧の 尾根です。リッジの 下は 空気が 下りやすく、天気が よく なる ことが 多いです。"
+ },
+ {
+  "id": "ri-henseihado",
+  "name": "偏西風波動",
+  "reading": "へんせいふうはどう",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-trough",
+   "ri-ridge",
+   "ri-rossby"
+  ],
+  "description": "偏西風が 南北に うねりながら 流れる 波の ことです。うねりの 谷と 尾根が 東へ 進むので、天気は 周期的に 変わります。"
+ },
+ {
+  "id": "ri-dako",
+  "name": "蛇行",
+  "reading": "だこう",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐍",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-henseihado",
+   "ri-blocking",
+   "ri-teishisu"
+  ],
+  "description": "偏西風が 南北に 大きく うねる ことです。蛇行が 大きいと 寒気が 南へ、暖気が 北へ 入りこみ、同じ 天気が 長く 続く ことが あります。"
+ },
+ {
+  "id": "ri-kairiku",
+  "name": "海陸風",
+  "reading": "かいりくふう",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏖",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-umikaze",
+   "ri-rikukaze",
+   "ri-nagi"
+  ],
+  "description": "海と 陸の 温まりかた・冷えかたの ちがいで、昼と 夜に 向きが 入れかわる 風です。海の ほうが 温まりにくく 冷えにくい ことから 起こります。"
+ },
+ {
+  "id": "ri-sankoku",
+  "name": "山谷風",
+  "reading": "さんこくふう",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-tanikaze",
+   "ri-yamakaze",
+   "ri-shamen"
+  ],
+  "description": "昼は 谷風、夜は 山風と、山と 谷の あいだで 向きが 入れかわる 風です。晴れて 風の 弱い 日に はっきり あらわれます。",
+  "acceptedReadings": [
+   "さんこくふう",
+   "やまたにかぜ"
+  ]
+ },
+ {
+  "id": "ri-shear",
+  "name": "風の鉛直シア",
+  "reading": "かぜのえんちょくしあ",
+  "journey": "rikigaku",
+  "category": "シア",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "rikigaku:ondofu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-ondofu",
+   "ri-kh",
+   "ri-shearuzu"
+  ],
+  "description": "高さに よって 風の 向きや 強さが 変わる ことです。鉛直シアが 大きいと 積乱雲が 長もち しやすく、予報士は 発達した 積乱雲の めやすに します。"
+ },
+ {
+  "id": "ri-teikiatsusei",
+  "name": "低気圧性回転",
+  "reading": "ていきあつせいかいてん",
+  "journey": "rikigaku",
+  "category": "回る向き",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-koukiatsusei",
+   "ri-seiuzu",
+   "ri-hantokei"
+  ],
+  "description": "低気圧と 同じ 向きの 回転です。北半球では 反時計回りで、渦度は 正に なります。"
+ },
+ {
+  "id": "ri-koukiatsusei",
+  "name": "高気圧性回転",
+  "reading": "こうきあつせいかいてん",
+  "journey": "rikigaku",
+  "category": "回る向き",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕐",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-teikiatsusei",
+   "ri-fuuzu",
+   "ri-tokei"
+  ],
+  "description": "高気圧と 同じ 向きの 回転です。北半球では 時計回りで、渦度は 負に なります。"
+ },
+ {
+  "id": "ri-kyokuchifu",
+  "name": "局地風",
+  "reading": "きょくちふう",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏯",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-bora",
+   "ri-kairiku",
+   "ri-sankoku"
+  ],
+  "description": "山や 谷・海岸などの 地形が つくる、その 地域だけの 風です。日本にも「おろし」「だし」など、土地ごとの 名前が ついた 風が たくさん あります。"
+ },
+ {
+  "id": "ri-ondofu",
+  "name": "温度風",
+  "reading": "おんどふう",
+  "journey": "rikigaku",
+  "category": "シア",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "rikigaku:ondofu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-chikofu",
+   "ri-shear",
+   "ri-keiatsu"
+  ],
+  "description": "上空と 下の 地衡風の 差の ことです。等温線(層厚の 線)に 平行に、北半球では 暖かい 側を 右に 見て 吹きます。中緯度で 上空ほど 西風が 強いのは この ためです。"
+ },
+ {
+  "id": "ri-kyokujunkan",
+  "name": "極循環",
+  "reading": "きょくじゅんかん",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-daijunkan",
+   "ri-kyokuhento",
+   "ri-ferrel"
+  ],
+  "description": "極で 冷えた 空気が 下り、緯度 60度 付近で 上がる 循環です。地上では 極偏東風に なります。"
+ },
+ {
+  "id": "ri-ferrel",
+  "name": "フェレル循環",
+  "reading": "ふぇれるじゅんかん",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-daijunkan",
+   "ri-hadley",
+   "ri-kyokujunkan"
+  ],
+  "description": "ハドレー循環と 極循環の あいだ、中緯度に 考える 循環です。暖かい 側で 下り 冷たい 側で 上がる 間接循環で、本当は 偏西風の 波が 熱を 運んでいます。"
+ },
+ {
+  "id": "ri-rossby",
+  "name": "ロスビー波",
+  "reading": "ろすびーは",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-henseihado",
+   "ri-beta",
+   "ri-chochoha"
+  ],
+  "description": "偏西風に できる 大きな 波です。地球の 丸さで コリオリ力が 南北で ちがう ことから 生まれます。波は 西へ 進もうと しますが、偏西風に 運ばれて ゆっくり 東へ 動きます。"
+ },
+ {
+  "id": "ri-senko",
+  "name": "旋衡風",
+  "reading": "せんこうふう",
+  "journey": "rikigaku",
+  "category": "つりあう風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "rikigaku:keidofu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-keidofu",
+   "ri-enshin",
+   "ri-chikofu"
+  ],
+  "description": "気圧傾度力と 遠心力が つりあって 吹く 風です。竜巻の ように 小さく 速い 渦では コリオリ力が ほとんど 効かないので、回る 向きが どちらにも なります。"
+ },
+ {
+  "id": "ri-kansei",
+  "name": "慣性振動",
+  "reading": "かんせいしんどう",
+  "journey": "rikigaku",
+  "category": "見かけの力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "rikigaku:coriolis",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-coriolis",
+   "ri-coriparam"
+  ],
+  "description": "ほかの 力が なく、コリオリ力だけで 空気が 円を 描いて 回る 動きです。周期は 緯度で 決まり、高緯度ほど 短く なります。"
+ },
+ {
+  "id": "ri-keiatsu",
+  "name": "傾圧大気",
+  "reading": "けいあつたいき",
+  "journey": "rikigaku",
+  "category": "傾圧・順圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "rikigaku:ondofu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-junatsu",
+   "ri-ondofu",
+   "ri-keiatsufuan"
+  ],
+  "description": "等圧面と 等温面が 交わっている 大気です。同じ 高さでも 南北に 温度差が あり、温度風が 吹きます。中緯度の 大気は 傾圧大気です。"
+ },
+ {
+  "id": "ri-junatsu",
+  "name": "順圧大気",
+  "reading": "じゅんあつたいき",
+  "journey": "rikigaku",
+  "category": "傾圧・順圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "rikigaku:ondofu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-keiatsu",
+   "ri-junatsufuan"
+  ],
+  "description": "等圧面と 等温面が 平行な 大気です。温度風が なく、上空でも 下でも 地衡風が 同じに なります。熱帯の 大気は これに 近いです。"
+ },
+ {
+  "id": "ri-keiatsufuan",
+  "name": "傾圧不安定",
+  "reading": "けいあつふあんてい",
+  "journey": "rikigaku",
+  "category": "傾圧・順圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-keiatsu",
+   "ri-kantaizensen",
+   "ri-trough"
+  ],
+  "description": "南北の 温度差を もとに 波が 育つ 不安定です。温帯低気圧が 発達する しくみで、このとき 上空の 気圧の 谷は 地上の 低気圧の 西に 傾きます。"
+ },
+ {
+  "id": "ri-junatsufuan",
+  "name": "順圧不安定",
+  "reading": "じゅんあつふあんてい",
+  "journey": "rikigaku",
+  "category": "傾圧・順圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-junatsu",
+   "ri-shearuzu"
+  ],
+  "description": "風の 水平の 差(水平シア)を もとに 波や 渦が 育つ 不安定です。温度差では なく 風の 差が エネルギーの もとです。"
+ },
+ {
+  "id": "ri-sotaiuzu",
+  "name": "相対渦度",
+  "reading": "そうたいうずど",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-uzudo",
+   "ri-wakusei",
+   "ri-zettaiuzu"
+  ],
+  "description": "地面に 立って 見た ときの 空気の 回転の 強さです。シア渦度と 曲率渦度を 合わせた ものです。ふつう 渦度と いうと これを さします。"
+ },
+ {
+  "id": "ri-wakusei",
+  "name": "惑星渦度",
+  "reading": "わくせいうずど",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-coriparam",
+   "ri-zettaiuzu",
+   "ri-beta"
+  ],
+  "description": "地球の 自転に よる 渦度で、コリオリパラメータ f と 同じです。北極で いちばん 大きく、赤道で 0 に なります。"
+ },
+ {
+  "id": "ri-zettaiuzu",
+  "name": "絶対渦度",
+  "reading": "ぜったいうずど",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-sotaiuzu",
+   "ri-wakusei",
+   "ri-uzuhozon"
+  ],
+  "description": "相対渦度に 惑星渦度 f を 足した 渦度です。宇宙から 見た 本当の 回転の 強さに あたります。高層天気図の 500hPa には この 等値線が かかれています。"
+ },
+ {
+  "id": "ri-uzui",
+  "name": "渦位",
+  "reading": "うずい",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔮",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-zettaiuzu",
+   "ri-uzuhozon"
+  ],
+  "description": "絶対渦度と 大気の 安定の 度合いを 合わせた 量です。断熱で 摩擦の ない 動きでは 変わらないので、空気の 目じるしに なります。上空から 渦位の 大きい 空気が 下りると 低気圧が 発達しやすいです。"
+ },
+ {
+  "id": "ri-uzuhozon",
+  "name": "絶対渦度保存",
+  "reading": "ぜったいうずどほぞん",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♾",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-zettaiuzu",
+   "ri-wakusei",
+   "ri-rossby"
+  ],
+  "description": "発散も 収束も ない 流れでは 絶対渦度が 変わらない、と いう 決まりです。北へ 動いて f が 増えると 相対渦度が へります。ロスビー波を 考える もとです。"
+ },
+ {
+  "id": "ri-seiuzu",
+  "name": "正渦度",
+  "reading": "せいうずど",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-uzudo",
+   "ri-fuuzu",
+   "ri-trough"
+  ],
+  "description": "北半球で 反時計回りの 回転を あらわす 渦度です。500hPa の トラフの あたりに 正渦度の 大きな 所が あり、その 東側では 上昇流が 起こりやすいです。"
+ },
+ {
+  "id": "ri-fuuzu",
+  "name": "負渦度",
+  "reading": "ふうずど",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-uzudo",
+   "ri-seiuzu",
+   "ri-ridge"
+  ],
+  "description": "北半球で 時計回りの 回転を あらわす 渦度です。リッジや 高気圧の あたりで 負に なります。"
+ },
+ {
+  "id": "ri-shearuzu",
+  "name": "シア渦度",
+  "reading": "しあうずど",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-sotaiuzu",
+   "ri-kyokuritsu",
+   "ri-shear"
+  ],
+  "description": "流れが まっすぐでも、横に 風の 強さの 差が ある ために 生まれる 渦度です。ジェット気流の 北側では 低気圧性の シア渦度に なります。"
+ },
+ {
+  "id": "ri-kyokuritsu",
+  "name": "曲率渦度",
+  "reading": "きょくりつうずど",
+  "journey": "rikigaku",
+  "category": "渦度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-sotaiuzu",
+   "ri-shearuzu",
+   "ri-trough"
+  ],
+  "description": "流れが 曲がって いる ために 生まれる 渦度です。トラフの 底では 反時計回りに 曲がるので 正に なります。"
+ },
+ {
+  "id": "ri-enchoku",
+  "name": "鉛直流",
+  "reading": "えんちょくりゅう",
+  "journey": "rikigaku",
+  "category": "上下の流れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-renzoku",
+   "ri-omegasokudo",
+   "ri-shusoku"
+  ],
+  "description": "空気の 上下の 流れです。水平の 風に くらべて とても 弱いので 直接は はかりにくく、収束・発散や 渦度の 移流から 見積もります。"
+ },
+ {
+  "id": "ri-renzoku",
+  "name": "連続の式",
+  "reading": "れんぞくのしき",
+  "journey": "rikigaku",
+  "category": "式と量",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-enchoku",
+   "ri-shusoku",
+   "ri-hassan"
+  ],
+  "description": "空気の 量(質量)が 消えたり 増えたり しない ことを あらわす 式です。下で 収束すると 上昇流、上で 発散すると その 下で 上昇流、と 考える もとです。"
+ },
+ {
+  "id": "ri-undo",
+  "name": "運動方程式",
+  "reading": "うんどうほうていしき",
+  "journey": "rikigaku",
+  "category": "式と量",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "rikigaku:keido",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-keidoryoku",
+   "ri-coriolis",
+   "ri-masatsu"
+  ],
+  "description": "空気に はたらく 力と、空気の 速さの 変わりかた(加速度)の 関係を あらわす 式です。気圧傾度力・コリオリ力・摩擦などが 入ります。数値予報も この 式を 解いています。"
+ },
+ {
+  "id": "ri-coriparam",
+  "name": "コリオリパラメータ",
+  "reading": "こりおりぱらめーた",
+  "journey": "rikigaku",
+  "category": "式と量",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "rikigaku:coriolis",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-coriolis",
+   "ri-wakusei",
+   "ri-beta"
+  ],
+  "description": "コリオリ力の 大きさを 決める 量で、f = 2Ωsinφ です。Ω は 地球の 自転の 速さ、φ は 緯度です。緯度が 高い ほど 大きく なります。"
+ },
+ {
+  "id": "ri-hichiko",
+  "name": "非地衡風",
+  "reading": "ひちこうふう",
+  "journey": "rikigaku",
+  "category": "つりあう風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↗️",
+  "mapNode": "rikigaku:chiko",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-chikofu",
+   "ri-chosei",
+   "ri-shusoku"
+  ],
+  "description": "本当の 風と 地衡風との ずれです。とても 小さいですが、収束や 発散を 生み、上昇流や 天気の 変化に つながる 大事な 部分です。"
+ },
+ {
+  "id": "ri-ekman",
+  "name": "エクマン層",
+  "reading": "えくまんそう",
+  "journey": "rikigaku",
+  "category": "境界層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "rikigaku:masatsu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-masatsu",
+   "ri-chijofu",
+   "ri-masatsushu"
+  ],
+  "description": "地面の 摩擦が 効く 下の 層(およそ 1km まで)です。上へ いくほど 風が 強まり、北半球では 向きが 右へ 回って 地衡風に 近づきます。"
+ },
+ {
+  "id": "ri-masatsushu",
+  "name": "摩擦収束",
+  "reading": "まさつしゅうそく",
+  "journey": "rikigaku",
+  "category": "境界層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏬",
+  "mapNode": "rikigaku:masatsu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-chijofu",
+   "ri-ekman",
+   "ri-kasoshusoku"
+  ],
+  "description": "摩擦の ため、低気圧の 中心へ 地上風が 吹きこんで 集まる ことです。集まった 空気が 上がるので、低気圧では 雲が できやすく なります。"
+ },
+ {
+  "id": "ri-secchikyo",
+  "name": "接地境界層",
+  "reading": "せっちきょうかいそう",
+  "journey": "rikigaku",
+  "category": "境界層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "rikigaku:masatsu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-ekman",
+   "ri-ranryu",
+   "ri-sodo"
+  ],
+  "description": "地面の すぐ 上の うすい 層です。風は 高さと ともに 急に 強く なり、熱や 水蒸気の やりとりが 活発です。"
+ },
+ {
+  "id": "ri-ranryu",
+  "name": "乱流",
+  "reading": "らんりゅう",
+  "journey": "rikigaku",
+  "category": "境界層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💫",
+  "mapNode": "rikigaku:masatsu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-secchikyo",
+   "ri-kh"
+  ],
+  "description": "大小の うずが まざった 不規則な 流れです。熱や 水蒸気・運動量を 上下に よく まぜます。飛行機が ゆれる 乱気流も その 一つです。"
+ },
+ {
+  "id": "ri-sodo",
+  "name": "粗度",
+  "reading": "そど",
+  "journey": "rikigaku",
+  "category": "境界層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌲",
+  "mapNode": "rikigaku:masatsu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-masatsu",
+   "ri-secchikyo"
+  ],
+  "description": "地面の でこぼこの 度合いです。森や 町は 粗度が 大きく、風が 弱まりやすい です。海の 上は 粗度が 小さく、風が 強く なりやすいです。"
+ },
+ {
+  "id": "ri-chochoha",
+  "name": "超長波",
+  "reading": "ちょうちょうは",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-rossby",
+   "ri-wakuseikibo",
+   "ri-chohatrough"
+  ],
+  "description": "地球を 1周する あいだに 1〜3回 うねる、とても 長い 偏西風の 波です。動きが おそく、長い 期間の 天候に かかわります。"
+ },
+ {
+  "id": "ri-tanpatrough",
+  "name": "短波トラフ",
+  "reading": "たんぱとらふ",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "rikigaku:nami",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ri-trough",
+   "ri-chohatrough"
+  ],
+  "description": "長い 波の 上を 速く 東へ 進む 小さな トラフです。地上の 低気圧の 発達に よく かかわるので、予報士は 500hPa の 渦度で 追いかけます。"
+ },
+ {
+  "id": "ri-chohatrough",
+  "name": "長波トラフ",
+  "reading": "ちょうはとらふ",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "rikigaku:nami",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ri-trough",
+   "ri-tanpatrough",
+   "ri-chochoha"
+  ],
+  "description": "偏西風の 大きな 波の 谷です。ゆっくり 動き、ほとんど 止まる ことも あります。この 谷の 位置で、寒気の 入りやすい 地域が 決まります。"
+ },
+ {
+  "id": "ri-blocking",
+  "name": "ブロッキング高気圧",
+  "reading": "ぶろっきんぐこうきあつ",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-omega",
+   "ri-dako",
+   "ri-setsuriko"
+  ],
+  "description": "偏西風の 流れを せき止める ように、中・高緯度に 居すわる 高気圧です。数日〜1週間 以上 続き、同じ 天気が 長びく ことが あります。"
+ },
+ {
+  "id": "ri-omega",
+  "name": "オメガブロック",
+  "reading": "おめがぶろっく",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-blocking",
+   "ri-setsuriko"
+  ],
+  "description": "ブロッキングの ひとつで、等高度線が ギリシャ文字の Ω の ように 曲がった 形です。まん中に 高気圧、両側に 低気圧が あります。"
+ },
+ {
+  "id": "ri-setsurite",
+  "name": "切離低気圧",
+  "reading": "せつりていきあつ",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔻",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-trough",
+   "ri-setsuriko",
+   "ri-blocking"
+  ],
+  "description": "深まった トラフが 偏西風から 切りはなされて できる 上空の 低気圧です。寒冷渦とも いいます。動きが おそく、下に 寒気が あるので 雷雨が 続きやすいです。"
+ },
+ {
+  "id": "ri-setsuriko",
+  "name": "切離高気圧",
+  "reading": "せつりこうきあつ",
+  "journey": "rikigaku",
+  "category": "波",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔺",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-blocking",
+   "ri-setsurite",
+   "ri-omega"
+  ],
+  "description": "リッジが 偏西風から 切りはなされ、高緯度に 残った 高気圧です。ブロッキング高気圧に なる ことが 多いです。"
+ },
+ {
+  "id": "ri-tozai",
+  "name": "東西指数",
+  "reading": "とうざいしすう",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-teishisu",
+   "ri-henseifu"
+  ],
+  "description": "中緯度の 南北の 気圧の 差から 求める、偏西風の 強さの 指数です。大きいと 西風が まっすぐ 強く、小さいと 南北に 蛇行します。"
+ },
+ {
+  "id": "ri-teishisu",
+  "name": "低指数循環",
+  "reading": "ていしすうじゅんかん",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-tozai",
+   "ri-dako",
+   "ri-blocking"
+  ],
+  "description": "東西指数が 小さく、偏西風が 南北に 大きく 蛇行する 流れです。寒気が 南へ 下りやすく、天候が 偏りやすく なります。反対は 高指数循環です。"
+ },
+ {
+  "id": "ri-kakuundo",
+  "name": "角運動量保存",
+  "reading": "かくうんどうりょうほぞん",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛸",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-anettaijet",
+   "ri-hadley"
+  ],
+  "description": "回る ものの 勢いが 保たれる 決まりです。ハドレー循環で 赤道から 北へ 動く 空気は、地軸に 近づくので 東向きの 速さが 増え、亜熱帯ジェットが できます。"
+ },
+ {
+  "id": "ri-mjo",
+  "name": "マッデン・ジュリアン振動",
+  "reading": "まっでんじゅりあんしんどう",
+  "journey": "rikigaku",
+  "category": "熱帯の変動",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌴",
+  "mapNode": "rikigaku:junkan",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-walker",
+   "ri-hentohado"
+  ],
+  "description": "熱帯で 雲の 多い 所が、およそ 30〜60日の 周期で インド洋から 太平洋へ 東へ 進む 変動です。台風の できやすさや 1か月予報にも かかわります。"
+ },
+ {
+  "id": "ri-walker",
+  "name": "ウォーカー循環",
+  "reading": "うぉーかーじゅんかん",
+  "journey": "rikigaku",
+  "category": "熱帯の変動",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "rikigaku:junkan",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-mjo",
+   "ri-boeki"
+  ],
+  "description": "赤道の 太平洋で 東西に めぐる 循環です。西の インドネシア付近で 上がり、東の 南アメリカ沖で 下ります。エルニーニョの ときは 弱まります。"
+ },
+ {
+  "id": "ri-hentohado",
+  "name": "偏東風波動",
+  "reading": "へんとうふうはどう",
+  "journey": "rikigaku",
+  "category": "熱帯の変動",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "rikigaku:henseifu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-boeki",
+   "ri-itcz"
+  ],
+  "description": "熱帯の 東風の 中を 西へ 進む 波です。波の 中で 雲が まとまり、台風の もとに なる ことが あります。"
+ },
+ {
+  "id": "ri-sokan",
+  "name": "総観規模",
+  "reading": "そうかんきぼ",
+  "journey": "rikigaku",
+  "category": "規模",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-meso",
+   "ri-wakuseikibo"
+  ],
+  "description": "およそ 1000km 前後の 大きさで、数日の 寿命を もつ 現象の 規模です。ふだんの 地上天気図の 高気圧や 低気圧が これに あたります。"
+ },
+ {
+  "id": "ri-meso",
+  "name": "メソスケール",
+  "reading": "めそすけーる",
+  "journey": "rikigaku",
+  "category": "規模",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-sokan",
+   "ri-umikazezensen"
+  ],
+  "description": "数km〜数百km の 大きさの 現象の 規模です。積乱雲の 集まりや 海風前線・局地前線などで、短時間の 強い 雨の 予報に 大事です。"
+ },
+ {
+  "id": "ri-wakuseikibo",
+  "name": "惑星規模",
+  "reading": "わくせいきぼ",
+  "journey": "rikigaku",
+  "category": "規模",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "rikigaku:nami",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-sokan",
+   "ri-chochoha"
+  ],
+  "description": "1万km を こえる、地球の 大きさに 近い 規模です。超長波や 大循環などが これに あたり、長期予報で 大事に なります。"
+ },
+ {
+  "id": "ri-bora",
+  "name": "ボラ",
+  "reading": "ぼら",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥶",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-kyokuchifu",
+   "ri-shamen"
+  ],
+  "description": "山の 上に たまった 冷たい 空気が、山を 越えて 吹き下りる 強く 冷たい 風です。下りても 冷たいのが フェーンとの ちがいです。アドリア海沿岸の 風の 名前から つきました。"
+ },
+ {
+  "id": "ri-shamen",
+  "name": "斜面風",
+  "reading": "しゃめんふう",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-sankoku",
+   "ri-yamakaze",
+   "ri-reikiko"
+  ],
+  "description": "山の 斜面に そって 吹く 風です。昼は 温まった 空気が 上り、夜は 冷えた 空気が 下ります。"
+ },
+ {
+  "id": "ri-reikiko",
+  "name": "冷気湖",
+  "reading": "れいきこ",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏞",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-yamakaze",
+   "ri-shamen"
+  ],
+  "description": "晴れて 風の 弱い 夜に、斜面を 下りた 冷たい 空気が 盆地や 谷に たまった ものです。朝の 霧や 霜の もとに なります。"
+ },
+ {
+  "id": "ri-sangakuha",
+  "name": "山岳波",
+  "reading": "さんがくは",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-kazashimo",
+   "ri-bora"
+  ],
+  "description": "強い 風が 山を 越えた あと、風下で 上下に うねる 波です。うねりの 山の 所に レンズの ような 雲や つるし雲が できる ことが あります。"
+ },
+ {
+  "id": "ri-umikazezensen",
+  "name": "海風前線",
+  "reading": "うみかぜぜんせん",
+  "journey": "rikigaku",
+  "category": "局地の風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏖",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-umikaze",
+   "ri-kyokuchizensen",
+   "ri-meso"
+  ],
+  "description": "内陸へ 進む 海風の 先端です。暖かい 陸の 空気と ぶつかって 上昇流が でき、夏の 午後に 積乱雲が 立つ ことが あります。"
+ },
+ {
+  "id": "ri-streak",
+  "name": "ジェットストリーク",
+  "reading": "じぇっとすとりーく",
+  "journey": "rikigaku",
+  "category": "ジェット",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "rikigaku:jet",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-jet",
+   "ri-josohassan"
+  ],
+  "description": "ジェット気流の 中で とくに 風の 強い 部分です。北半球では 入口の 右側と 出口の 左側で 上空の 発散が 起こり、下で 上昇流が 強まりやすいです。"
+ },
+ {
+  "id": "ri-kantaizensen",
+  "name": "寒帯前線",
+  "reading": "かんたいぜんせん",
+  "journey": "rikigaku",
+  "category": "前線帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "rikigaku:jet",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-kantaijet",
+   "ri-keiatsufuan"
+  ],
+  "description": "中緯度で 寒気と 暖気が 接する、地球を とりまく 大きな 前線帯です。極前線とも いいます。ここで 温帯低気圧が つぎつぎに 生まれます。"
+ },
+ {
+  "id": "ri-kasojet",
+  "name": "下層ジェット",
+  "reading": "かそうじぇっと",
+  "journey": "rikigaku",
+  "category": "ジェット",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "rikigaku:jet",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-kasoshusoku",
+   "ri-shusoku"
+  ],
+  "description": "対流圏の 下の ほう(850hPa 付近など)で 強く 吹く 風の 帯です。暖かく 湿った 空気を 大量に 運ぶので、大雨の 予想で とても 大事です。"
+ },
+ {
+  "id": "ri-kyokuyajet",
+  "name": "極夜ジェット",
+  "reading": "きょくやじぇっと",
+  "journey": "rikigaku",
+  "category": "ジェット",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌌",
+  "mapNode": "rikigaku:jet",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-jet"
+  ],
+  "description": "冬の 極の まわりの 成層圏で 強く 吹く 西風です。冬の 極は 日が 当たらず 冷えるので、南北の 温度差が 大きく なって 生まれます。"
+ },
+ {
+  "id": "ri-touatsumen",
+  "name": "等圧面",
+  "reading": "とうあつめん",
+  "journey": "rikigaku",
+  "category": "式と量",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "rikigaku:keido",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-keidoryoku",
+   "ri-trough"
+  ],
+  "description": "気圧が 同じ 所を つないだ 面です。高層天気図は 500hPa などの 等圧面の 高さを 等高度線で あらわし、地上天気図の 等圧線と 同じ ように 読みます。"
+ },
+ {
+  "id": "ri-josohassan",
+  "name": "上層発散",
+  "reading": "じょうそうはっさん",
+  "journey": "rikigaku",
+  "category": "収束・発散",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏫",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-kasoshusoku",
+   "ri-hassan",
+   "ri-streak"
+  ],
+  "description": "上空で 空気が 広がる ことです。上で 空気が 出ていくと 下の 気圧が 下がり、上昇流が 続いて 地上の 低気圧が 発達します。"
+ },
+ {
+  "id": "ri-kasoshusoku",
+  "name": "下層収束",
+  "reading": "かそうしゅうそく",
+  "journey": "rikigaku",
+  "category": "収束・発散",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏬",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-josohassan",
+   "ri-shusoku",
+   "ri-masatsushu"
+  ],
+  "description": "下の 層で 空気が 集まる ことです。集まった 空気は 上がるしか ないので、上空の 発散と 組に なって 雲や 雨が できます。"
+ },
+ {
+  "id": "ri-omegasokudo",
+  "name": "鉛直p速度(ω)",
+  "reading": "えんちょくぴーそくど",
+  "journey": "rikigaku",
+  "category": "上下の流れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "rikigaku:uzu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-enchoku",
+   "ri-renzoku"
+  ],
+  "description": "上下の 流れを 気圧の 変わりかた(hPa/h)で あらわした 量です。上昇流では 気圧が 下がるので マイナスに なります。700hPa の 天気図で 上昇流を 見る ときに 使います。",
+  "acceptedReadings": [
+   "えんちょくぴーそくど",
+   "おめが"
+  ]
+ },
+ {
+  "id": "ri-chosei",
+  "name": "地衡風調節",
+  "reading": "ちこうふうちょうせつ",
+  "journey": "rikigaku",
+  "category": "つりあう風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "rikigaku:chiko",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-chikofu",
+   "ri-hichiko"
+  ],
+  "description": "気圧と 風の つりあいが くずれた とき、風と 気圧が たがいに 変わって 地衡風の つりあいに もどる ことです。"
+ },
+ {
+  "id": "ri-beta",
+  "name": "ベータ効果",
+  "reading": "べーたこうか",
+  "journey": "rikigaku",
+  "category": "見かけの力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "rikigaku:coriolis",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-coriparam",
+   "ri-rossby",
+   "ri-wakusei"
+  ],
+  "description": "コリオリパラメータ f が 北へ いくほど 大きく なる ことの 効果です。ロスビー波が 西へ 進もうと する もとです。台風が 北西へ 動こうと する 力にも なります。"
+ },
+ {
+  "id": "ri-kh",
+  "name": "ケルビン・ヘルムホルツ不安定",
+  "reading": "けるびんへるむほるつふあんてい",
+  "journey": "rikigaku",
+  "category": "シア",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "rikigaku:ondofu",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-shear",
+   "ri-ranryu"
+  ],
+  "description": "上下の 風の 差が 大きい 所で、境目が 波打って 巻きこむ 不安定です。波の ような 雲が できる ことが あり、飛行機の 乱気流の もとにも なります。"
+ },
+ {
+  "id": "ri-shigomen",
+  "name": "子午面循環",
+  "reading": "しごめんじゅんかん",
+  "journey": "rikigaku",
+  "category": "大循環",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "rikigaku:junkan",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-hadley",
+   "ri-daijunkan"
+  ],
+  "description": "南北と 上下の 面で 見た 空気の 循環です。東西に 平均して 見ると、ハドレー循環などの 姿が わかります。"
+ },
+ {
+  "id": "ri-kyokuchizensen",
+  "name": "局地前線",
+  "reading": "きょくちぜんせん",
+  "journey": "rikigaku",
+  "category": "前線帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "rikigaku:kyokuchi",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-umikazezensen",
+   "ri-meso",
+   "ri-kyokuchifu"
+  ],
+  "description": "地形や 海陸の ちがいで できる、小さな 地域の 前線です。地上天気図には かかれない ことも ありますが、局地的な 雨や 気温の 急な 変化に かかわります。"
+ },
+ {
+  "id": "ri-rossbysu",
+  "name": "ロスビー数",
+  "reading": "ろすびーすう",
+  "journey": "rikigaku",
+  "category": "式と量",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "rikigaku:chiko",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ri-chikofu",
+   "ri-coriparam"
+  ],
+  "description": "慣性の 力と コリオリ力の 比です。小さいほど コリオリ力が 効き、地衡風の 考えが よく 当てはまります。総観規模では 小さく、竜巻では 大きく なります。"
+ }
+]

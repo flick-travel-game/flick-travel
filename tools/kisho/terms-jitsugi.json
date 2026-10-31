@@ -1,0 +1,2029 @@
+[
+ {
+  "id": "ji-chijo",
+  "name": "地上天気図",
+  "reading": "ちじょうてんきず",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-teichushin",
+   "ji-zensenkigo"
+  ],
+  "description": "海面の 高さに なおした 気圧の 等圧線と 前線・高気圧・低気圧を かいた 図です。実技では まず この 図で 天気の 大きな ようすを つかみます。"
+ },
+ {
+  "id": "ji-kanki",
+  "name": "寒気",
+  "reading": "かんき",
+  "journey": "jitsugi",
+  "category": "移流",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥶",
+  "mapNode": "jitsugi:iryu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kankiiryu",
+   "ji-jokuukanki"
+  ],
+  "description": "まわりより 冷たい 空気です。高層天気図では 等温線で 寒気の 場所を 見つけ、どちらへ 流れて いくかを 考えます。"
+ },
+ {
+  "id": "ji-danki",
+  "name": "暖気",
+  "reading": "だんき",
+  "journey": "jitsugi",
+  "category": "移流",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "jitsugi:iryu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-dankiiryu",
+   "ji-kanki"
+  ],
+  "description": "まわりより 暖かい 空気です。暖気が 北へ 運ばれる 所では 空気が もち上がり、雲が できやすく なります。"
+ },
+ {
+  "id": "ji-shimetta",
+  "name": "湿った空気",
+  "reading": "しめったくうき",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "jitsugi:h700",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shissu",
+   "ji-shimeriiki"
+  ],
+  "description": "水蒸気を 多く ふくむ 空気です。上昇すると すぐ 飽和して 雲や 雨に なるので、予報士は 湿った 空気が どこから 来るかを 見ます。"
+ },
+ {
+  "id": "ji-kawaita",
+  "name": "乾いた空気",
+  "reading": "かわいたくうき",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏜",
+  "mapNode": "jitsugi:h700",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kansoiki",
+   "ji-dryslot"
+  ],
+  "description": "水蒸気が 少ない 空気です。上昇しても 雲が できにくく、乾いた 空気が 入ると 雲が 切れて 天気が 回復します。"
+ },
+ {
+  "id": "ji-kumonoobi",
+  "name": "雲の帯",
+  "reading": "くものおび",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-taijoun",
+   "ji-zensenkaiseki"
+  ],
+  "description": "気象衛星の 画像に 長く のびて 見える 雲の 帯です。前線に そって できる ことが 多く、前線の 位置を 決める 手がかりに なります。"
+ },
+ {
+  "id": "ji-amenohani",
+  "name": "雨の範囲",
+  "reading": "あめのはんい",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-tokosui",
+   "ji-chijo"
+  ],
+  "description": "雨が 降っている・降りそうな 場所の 広がりです。予想天気図の 降水量の 図や レーダーで たしかめ、前線や 低気圧との 位置を くらべます。"
+ },
+ {
+  "id": "ji-teichushin",
+  "name": "低気圧の中心",
+  "reading": "ていきあつのちゅうしん",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-hattatsu",
+   "ji-kochushin"
+  ],
+  "description": "地上天気図で「低」や L の 字と ×印で 示される、気圧が いちばん 低い 所です。中心の 気圧と 動く 向き・速さが 書きそえて あります。"
+ },
+ {
+  "id": "ji-kochushin",
+  "name": "高気圧の中心",
+  "reading": "こうきあつのちゅうしん",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-teichushin",
+   "ji-sokanba"
+  ],
+  "description": "地上天気図で「高」や H の 字と ×印で 示される、気圧が いちばん 高い 所です。まわりでは 下降流が 起き、晴れやすく なります。"
+ },
+ {
+  "id": "ji-zensenkigo",
+  "name": "前線の記号",
+  "reading": "ぜんせんのきごう",
+  "journey": "jitsugi",
+  "category": "前線",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔺",
+  "mapNode": "jitsugi:zensenkaiseki",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-zensenkaiseki",
+   "ji-kanreitsuka"
+  ],
+  "description": "寒冷前線は 三角、温暖前線は 半円の 記号で かきます。三角や 半円が ついた 側へ 前線が 進む ことを 表しています。"
+ },
+ {
+  "id": "ji-utsurikawari",
+  "name": "天気の移り変わり",
+  "reading": "てんきのうつりかわり",
+  "journey": "jitsugi",
+  "category": "トラフ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "jitsugi:trough",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-nishikara",
+   "ji-troughtsuka"
+  ],
+  "description": "日本付近の 天気は 低気圧や 高気圧が 動く ことで 変わります。実技では 何時間か あとの 予想図と くらべて、天気の 変わりかたを 文で 答えます。"
+ },
+ {
+  "id": "ji-nishikara",
+  "name": "西から東へ",
+  "reading": "にしからひがしへ",
+  "journey": "jitsugi",
+  "category": "トラフ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "jitsugi:trough",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-utsurikawari",
+   "ji-300"
+  ],
+  "description": "日本の 上空には 偏西風が ふくので、高気圧や 低気圧は ふつう 西から 東へ 動きます。へえ: 昔から「夕焼けの 次の 日は 晴れ」と いわれる わけの ひとつです。"
+ },
+ {
+  "id": "ji-kumonougoki",
+  "name": "雲の動き",
+  "reading": "くものうごき",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎞",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kumonoobi",
+   "ji-uniki"
+  ],
+  "description": "雲画像を 時間の 順に つづけて 見ると、雲が どちらへ どれくらい 動くかが わかります。雲が 広がるか 消えるかも 読みとります。"
+ },
+ {
+  "id": "ji-jokuukanki",
+  "name": "上空の寒気",
+  "reading": "じょうくうのかんき",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "jitsugi:h500",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-500",
+   "ji-kanreiuzu"
+  ],
+  "description": "高い 空に 入ってくる 冷たい 空気です。下が 暖かく 上が 冷たいと 大気が 不安定に なり、積乱雲や 雷が 起きやすく なります。"
+ },
+ {
+  "id": "ji-shinro",
+  "name": "台風の進路",
+  "reading": "たいふうのしんろ",
+  "journey": "jitsugi",
+  "category": "台風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "jitsugi:taifujitsugi",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-yohoen",
+   "ji-idosokudo"
+  ],
+  "description": "台風の 中心が 進む 道すじです。太平洋高気圧の ふちや 偏西風に そって 動く ことが 多く、予報円を つないで 進路を 予想します。"
+ },
+ {
+  "id": "ji-tsuyosa",
+  "name": "風の強さ",
+  "reading": "かぜのつよさ",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-chijo",
+   "ji-f-chikofu"
+  ],
+  "description": "地上天気図では 等圧線の 間隔が せまい 所ほど 風が 強く なります。予報士は 等圧線の こみぐあいから 強風の 場所を 読みます。"
+ },
+ {
+  "id": "ji-hattatsu",
+  "name": "低気圧の発達",
+  "reading": "ていきあつのはったつ",
+  "journey": "jitsugi",
+  "category": "トラフ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "jitsugi:trough",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-fukamari",
+   "ji-teichushin"
+  ],
+  "description": "低気圧の 中心気圧が 下がり、雨や 風が 強く なる ことです。上空の トラフが 近づくと 発達しやすい ことを、高層天気図で たしかめます。"
+ },
+ {
+  "id": "ji-kumonouzu",
+  "name": "雲のうず",
+  "reading": "くものうず",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-comma",
+   "ji-teichushin"
+  ],
+  "description": "雲画像に 見える うずを まいた 雲です。発達した 低気圧や 台風の 中心の 目じるしに なります。"
+ },
+ {
+  "id": "ji-amagumo",
+  "name": "雨雲",
+  "reading": "あまぐも",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-uniki",
+   "ji-kanatoko"
+  ],
+  "description": "雨を 降らせる 雲です。赤外画像で 白く 明るい 雲は 雲の てっぺんが 高く 冷たいので、強い 雨を 降らせる ことが あります。"
+ },
+ {
+  "id": "ji-kionbunpu",
+  "name": "気温の分布",
+  "reading": "きおんのぶんぷ",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "jitsugi:h850",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-toon",
+   "ji-850"
+  ],
+  "description": "気温が どこで 高く どこで 低いかの ようすです。高層天気図の 等温線で 見て、寒気や 暖気の 場所を つかみます。"
+ },
+ {
+  "id": "ji-850",
+  "name": "850hPa",
+  "reading": "はっぴゃくごじゅうへくとぱすかる",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "jitsugi:h850",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-toon",
+   "ji-tosotoon"
+  ],
+  "description": "上空 およそ 1500m の 等圧面の 天気図です。気温と 風から 前線や 寒気・暖気を 読みます。へえ: 冬に 850hPa が およそ −6℃ だと、地上が 雪に なる めやすです。"
+ },
+ {
+  "id": "ji-700",
+  "name": "700hPa",
+  "reading": "ななひゃくへくとぱすかる",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "jitsugi:h700",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shissu",
+   "ji-700josho"
+  ],
+  "description": "上空 およそ 3000m の 等圧面の 天気図です。湿数で 湿った 所を、鉛直流で 上昇流の 所を 見て、雲や 雨の 場所を 考えます。"
+ },
+ {
+  "id": "ji-500",
+  "name": "500hPa",
+  "reading": "ごひゃくへくとぱすかる",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "jitsugi:h500",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-tokodo",
+   "ji-seiuzuiryu"
+  ],
+  "description": "上空 およそ 5500m の 等圧面の 天気図です。トラフや 渦度・寒気を 見る いちばん 大事な 図です。へえ: 冬の 日本海側では −30℃ 以下が 大雪の めやすと されます。"
+ },
+ {
+  "id": "ji-300",
+  "name": "300hPa",
+  "reading": "さんびゃくへくとぱすかる",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "jitsugi:h300",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kyofujiku",
+   "ji-tofusoku"
+  ],
+  "description": "上空 およそ 9000m の 等圧面の 天気図です。等風速線で ジェット気流の 強風軸を 見つけ、低気圧の 発達や 乱気流を 考えます。"
+ },
+ {
+  "id": "ji-tokodo",
+  "name": "等高度線",
+  "reading": "とうこうどせん",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "jitsugi:h500",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-500",
+   "ji-5400"
+  ],
+  "description": "等圧面の 高さが 同じ 所を 結んだ 線です。高層天気図では 等圧線の かわりに 使い、500hPa では 60m ごとに かかれます。線が こむほど 風が 強く なります。"
+ },
+ {
+  "id": "ji-toon",
+  "name": "等温線",
+  "reading": "とうおんせん",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "jitsugi:h850",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kionbunpu",
+   "ji-onshuchu"
+  ],
+  "description": "気温が 同じ 所を 結んだ 線です。等温線が こむ 所は 寒気と 暖気の さかいめで、前線を 引く 手がかりに なります。"
+ },
+ {
+  "id": "ji-dankiiryu",
+  "name": "暖気移流",
+  "reading": "だんきいりゅう",
+  "journey": "jitsugi",
+  "category": "移流",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "jitsugi:iryu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-junten",
+   "ji-ondoiryu"
+  ],
+  "description": "風が 暖かい 空気を 冷たい 側へ 運ぶ ことです。暖気移流の 所では 空気が ゆっくり もち上がり、温暖前線の 前で 雲が 広がります。"
+ },
+ {
+  "id": "ji-kankiiryu",
+  "name": "寒気移流",
+  "reading": "かんきいりゅう",
+  "journey": "jitsugi",
+  "category": "移流",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "jitsugi:iryu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-gyakuten",
+   "ji-ondoiryu"
+  ],
+  "description": "風が 冷たい 空気を 暖かい 側へ 運ぶ ことです。寒冷前線の うしろや 冬の 季節風で 強く なり、気温が 下がります。"
+ },
+ {
+  "id": "ji-shissu",
+  "name": "湿数",
+  "reading": "しっすう",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "jitsugi:h700",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shimeriiki",
+   "ji-700"
+  ],
+  "description": "気温から 露点温度を 引いた 値です。小さいほど 空気が 飽和に 近く 湿っていて、高層天気図で 雲の できやすい 所を 見る 手がかりに なります。"
+ },
+ {
+  "id": "ji-yohoen",
+  "name": "予報円",
+  "reading": "よほうえん",
+  "journey": "jitsugi",
+  "category": "台風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "jitsugi:taifujitsugi",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shinro",
+   "ji-bofukeikai"
+  ],
+  "description": "台風の 中心が 予報した 時刻に 入ると 予想される 範囲の 円です。中心が この 円に 入る 確率は およそ 70% です。円の 大きさは 台風の 強さでは ありません。"
+ },
+ {
+  "id": "ji-bofukeikai",
+  "name": "暴風警戒域",
+  "reading": "ぼうふうけいかいいき",
+  "journey": "jitsugi",
+  "category": "台風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌪",
+  "mapNode": "jitsugi:taifujitsugi",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-yohoen",
+   "ji-hairukakuritsu"
+  ],
+  "description": "台風の 中心が 予報円の 中を 進んだ とき、暴風域に 入る おそれの ある 範囲です。早めの そなえの めやすに なります。"
+ },
+ {
+  "id": "ji-chushinichi",
+  "name": "台風の中心位置",
+  "reading": "たいふうのちゅうしんいち",
+  "journey": "jitsugi",
+  "category": "台風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "jitsugi:taifujitsugi",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shinro",
+   "ji-idosokudo"
+  ],
+  "description": "台風の 中心が どこに あるかを 緯度と 経度で 表した ものです。実技では 天気図から 中心位置を 読みとって 答える ことが あります。"
+ },
+ {
+  "id": "ji-zensenkaiseki",
+  "name": "前線解析",
+  "reading": "ぜんせんかいせき",
+  "journey": "jitsugi",
+  "category": "前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "jitsugi:zensenkaiseki",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-onshuchu",
+   "ji-shuchutai"
+  ],
+  "description": "天気図を 見て 前線の 位置を 決める ことです。温度や 相当温位の 集中帯の 暖かい 側の ふちに 引く ことが 多く、風の 変わりめも たしかめます。"
+ },
+ {
+  "id": "ji-uniki",
+  "name": "雲域",
+  "reading": "うんいき",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kumonoobi",
+   "ji-shimeriiki"
+  ],
+  "description": "雲画像で 雲が ある 範囲です。高層天気図の 湿った 所や 上昇流の 所と くらべて、雲域が なぜ そこに あるかを 考えます。"
+ },
+ {
+  "id": "ji-emagram",
+  "name": "エマグラム",
+  "reading": "えまぐらむ",
+  "journey": "jitsugi",
+  "category": "エマグラム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-jotaikyoku",
+   "ji-ssi"
+  ],
+  "description": "高さ(気圧)ごとの 気温と 露点を かいた 図です。乾燥断熱線などと くらべて、大気の 安定・不安定や 雲の 高さを 読みとります。"
+ },
+ {
+  "id": "ji-troughtsuka",
+  "name": "トラフの通過",
+  "reading": "とらふのつうか",
+  "journey": "jitsugi",
+  "category": "トラフ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛅",
+  "mapNode": "jitsugi:trough",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-zenmen",
+   "ji-komen"
+  ],
+  "description": "上空の トラフが 頭の 上を 通る ことです。トラフの 前では 雲が ふえて 天気が くずれ、通りすぎると 回復に 向かいます。"
+ },
+ {
+  "id": "ji-tofusoku",
+  "name": "等風速線",
+  "reading": "とうふうそくせん",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "jitsugi:h300",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kyofujiku",
+   "ji-300"
+  ],
+  "description": "風速が 同じ 所を 結んだ 線です。300hPa の 天気図で 使い、線で かこまれた 速い 所から ジェット気流の 位置が わかります。"
+ },
+ {
+  "id": "ji-kyofujiku",
+  "name": "強風軸",
+  "reading": "きょうふうじく",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➰",
+  "mapNode": "jitsugi:h300",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-tofusoku",
+   "ji-uzudo0"
+  ],
+  "description": "ジェット気流の 中で 風が いちばん 強い 所を 結んだ 線です。強風軸の 近くでは 雲の すじや 乱気流が 見られる ことが あります。"
+ },
+ {
+  "id": "ji-joshoryuiki",
+  "name": "上昇流域",
+  "reading": "じょうしょうりゅういき",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "jitsugi:h700",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-700josho",
+   "ji-uniki"
+  ],
+  "description": "空気が 上へ 動いている 所です。上昇すると 冷えて 雲が できるので、700hPa の 上昇流域は 雨の 範囲と よく 重なります。"
+ },
+ {
+  "id": "ji-kakoryuiki",
+  "name": "下降流域",
+  "reading": "かこうりゅういき",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "jitsugi:h700",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-joshoryuiki",
+   "ji-kansoiki"
+  ],
+  "description": "空気が 下へ 動いている 所です。下降すると 温まって 乾くので、雲が 消えて 晴れやすく なります。"
+ },
+ {
+  "id": "ji-danmenzu",
+  "name": "鉛直断面図",
+  "reading": "えんちょくだんめんず",
+  "journey": "jitsugi",
+  "category": "エマグラム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-emagram",
+   "ji-kionenchoku"
+  ],
+  "description": "ある 線に そって 空を たてに 切った ように、上下の 気温や 風・湿りを 示した 図です。前線面の かたむきなどを 読みとります。"
+ },
+ {
+  "id": "ji-24yoso",
+  "name": "24時間予想図",
+  "reading": "にじゅうよじかんよそうず",
+  "acceptedReadings": [
+   "にじゅうよじかんよそうず",
+   "にじゅうよんじかんよそうず"
+  ],
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔮",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shokijikoku",
+   "ji-tokosui"
+  ],
+  "description": "数値予報で 計算した、初期時刻から 24時間 あとの 天気図です。実技では 解析図と 予想図を くらべて、低気圧や 前線の 動きを 答えます。"
+ },
+ {
+  "id": "ji-shokijikoku",
+  "name": "初期時刻",
+  "reading": "しょきじこく",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕘",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-24yoso",
+   "ji-chijo"
+  ],
+  "description": "予想天気図の もとに なった 観測の 時刻です。天気図の 時刻は 協定世界時で 書かれる ことが 多く、日本時間は 9時間 足して 考えます。"
+ },
+ {
+  "id": "ji-kanreitsuka",
+  "name": "寒冷前線の通過",
+  "reading": "かんれいぜんせんのつうか",
+  "journey": "jitsugi",
+  "category": "前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "jitsugi:zensenkaiseki",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-zensenkigo",
+   "ji-kankiiryu"
+  ],
+  "description": "寒冷前線が 通ると、気温が 下がり 風向きが 南寄りから 西〜北寄りに 変わり、気圧が 上がりはじめます。にわか雨や 雷が 起きる ことも あります。"
+ },
+ {
+  "id": "ji-kijutsu",
+  "name": "記述問題",
+  "reading": "きじゅつもんだい",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-chijo",
+   "ji-utsurikawari"
+  ],
+  "description": "実技試験で 天気図を 見て、決まった 字数で 文に して 答える 問題です。「なにが・どこで・どうなるか」を 天気図の 根拠と いっしょに 書きます。"
+ },
+ {
+  "id": "ji-tosotoon",
+  "name": "等相当温位線",
+  "reading": "とうそうとうおんいせん",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "jitsugi:h850",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kosoto",
+   "ji-shitsuzetsu"
+  ],
+  "description": "相当温位が 同じ 所を 結んだ 線です。850hPa で 使い、暖かく 湿った 空気の 流れこみや 前線の 位置を 見つけます。"
+ },
+ {
+  "id": "ji-tokosui",
+  "name": "等降水量線",
+  "reading": "とうこうすいりょうせん",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-amenohani",
+   "ji-24yoso"
+  ],
+  "description": "予想される 降水量が 同じ 所を 結んだ 線です。数値予報の 予想図で、雨の 多い 所と 少ない 所を 読みとります。"
+ },
+ {
+  "id": "ji-kionenchoku",
+  "name": "気温の鉛直分布",
+  "reading": "きおんのえんちょくぶんぷ",
+  "journey": "jitsugi",
+  "category": "エマグラム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-jotaikyoku",
+   "ji-emagram"
+  ],
+  "description": "高さに よって 気温が どう 変わるかの ようすです。上ほど 気温が 上がる 逆転層が あると、その 下に 霧や 低い 雲が たまりやすく なります。"
+ },
+ {
+  "id": "ji-shimeriiki",
+  "name": "湿り域",
+  "reading": "しめりいき",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "jitsugi:h700",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shissu",
+   "ji-uniki"
+  ],
+  "description": "湿数が 小さく 湿っている 範囲です。雲画像の 雲域と だいたい 重なるので、雲の 広がりを 説明する 根拠に なります。"
+ },
+ {
+  "id": "ji-kansoiki",
+  "name": "乾燥域",
+  "reading": "かんそういき",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏜",
+  "mapNode": "jitsugi:h700",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shissu",
+   "ji-kakoryuiki"
+  ],
+  "description": "湿数が 大きく 乾いている 範囲です。下降流の 所や 乾いた 空気が 入る 所に 見られ、雲が 少なく 晴れやすく なります。"
+ },
+ {
+  "id": "ji-seiuzuiryu",
+  "name": "正渦度移流",
+  "reading": "せいうずどいりゅう",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "jitsugi:h500",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-zenmen",
+   "ji-uzudokyokudai"
+  ],
+  "description": "正の 渦度が 風に 運ばれて くる ことです。トラフの 前面で 起き、上昇流が 生まれて 地上の 低気圧が 発達しやすく なります。"
+ },
+ {
+  "id": "ji-uzudokyokudai",
+  "name": "渦度極大",
+  "reading": "うずどきょくだい",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "jitsugi:h500",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-seiuzuiryu",
+   "ji-fukamari"
+  ],
+  "description": "500hPa の 渦度の 図で、正の 渦度が いちばん 大きい 所です。トラフの 位置の 目じるしに なり、その 動きを 追って 天気の 変化を 予想します。"
+ },
+ {
+  "id": "ji-uzudo0",
+  "name": "渦度0線",
+  "reading": "うずどぜろせん",
+  "acceptedReadings": [
+   "うずどぜろせん",
+   "うずどれいせん"
+  ],
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "0️⃣",
+  "mapNode": "jitsugi:h500",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kyofujiku",
+   "ji-uzudokyokudai"
+  ],
+  "description": "渦度が ちょうど 0 の 所を 結んだ 線です。500hPa では おおよそ 強風軸に 近い 位置に あり、ジェットを 見つける めやすに なります。"
+ },
+ {
+  "id": "ji-5400",
+  "name": "5400m等高度線",
+  "reading": "ごせんよんひゃくめーとるとうこうどせん",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "jitsugi:h500",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-5700",
+   "ji-kyofujiku"
+  ],
+  "description": "500hPa の 5400m の 等高度線です。実技では、寒帯前線ジェットが この 線の 近くを 通る ことが 多い という めやすで 使われます。"
+ },
+ {
+  "id": "ji-5700",
+  "name": "5700m等高度線",
+  "reading": "ごせんななひゃくめーとるとうこうどせん",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "jitsugi:h500",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-5400",
+   "ji-300"
+  ],
+  "description": "500hPa の 5700m の 等高度線です。実技では、亜熱帯ジェットが この 線の 近くを 通る ことが 多い という めやすで 使われます。"
+ },
+ {
+  "id": "ji-kanreiuzu",
+  "name": "寒冷渦",
+  "reading": "かんれいうず",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "jitsugi:h500",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-jokuukanki",
+   "ji-comma"
+  ],
+  "description": "上空に できた、冷たい 空気を もつ 低気圧の うずです。寒冷低気圧とも いい、その 下では 大気が 不安定に なり、雷や にわか雨が 続く ことが あります。"
+ },
+ {
+  "id": "ji-shitsuzetsu",
+  "name": "湿舌",
+  "reading": "しつぜつ",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👅",
+  "mapNode": "jitsugi:h850",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kosoto",
+   "ji-tosotoon"
+  ],
+  "description": "850hPa で 相当温位の 高い 空気が 舌の ように 北へ のびた 所です。梅雨の ころに よく 見られ、その 先で 大雨に なりやすいので 注意して 見ます。"
+ },
+ {
+  "id": "ji-kosoto",
+  "name": "高相当温位域",
+  "reading": "こうそうとうおんいいき",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔆",
+  "mapNode": "jitsugi:h850",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shitsuzetsu",
+   "ji-tosotoon"
+  ],
+  "description": "相当温位が 高い、暖かく 湿った 空気の 広がりです。この 空気が 流れこむ 所では 積乱雲が できやすく、大雨の 予想に 使います。"
+ },
+ {
+  "id": "ji-shuchutai",
+  "name": "相当温位の集中帯",
+  "reading": "そうとうおんいのしゅうちゅうたい",
+  "journey": "jitsugi",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "jitsugi:zensenkaiseki",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-zensenkaiseki",
+   "ji-tosotoon"
+  ],
+  "description": "等相当温位線が こみあった 帯です。性質の ちがう 空気の さかいめなので、梅雨前線のように 温度差の 小さい 前線を 引く 手がかりに なります。"
+ },
+ {
+  "id": "ji-onshuchu",
+  "name": "温度集中帯",
+  "reading": "おんどしゅうちゅうたい",
+  "journey": "jitsugi",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "jitsugi:zensenkaiseki",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-zensenkaiseki",
+   "ji-toon"
+  ],
+  "description": "等温線が こみあった 帯です。寒気と 暖気の さかいめに あたり、850hPa の 温度集中帯の 南の ふちに そって 前線を 引く ことが 多いです。"
+ },
+ {
+  "id": "ji-daniki",
+  "name": "暖域",
+  "reading": "だんいき",
+  "journey": "jitsugi",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌤",
+  "mapNode": "jitsugi:zensenkaiseki",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kaniki",
+   "ji-zensenkaiseki"
+  ],
+  "description": "温帯低気圧で、温暖前線と 寒冷前線に はさまれた 暖かい 空気の 所です。南寄りの 風で 気温が 高く、むし暑く なる ことも あります。"
+ },
+ {
+  "id": "ji-kaniki",
+  "name": "寒域",
+  "reading": "かんいき",
+  "journey": "jitsugi",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "jitsugi:zensenkaiseki",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-daniki",
+   "ji-kankiiryu"
+  ],
+  "description": "前線を はさんで 冷たい 空気が ある 側です。寒冷前線の うしろでは 北寄りの 風に 変わり、気温が 下がります。"
+ },
+ {
+  "id": "ji-bulge",
+  "name": "バルジ",
+  "reading": "ばるじ",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-hattatsu",
+   "ji-uniki"
+  ],
+  "description": "雲画像で、雲域の 北の ふちが 高気圧のように 外へ ふくらんだ 形です。低気圧が これから 発達する 合図の ひとつと されます。"
+ },
+ {
+  "id": "ji-tapering",
+  "name": "テーパリングクラウド",
+  "reading": "てーぱりんぐくらうど",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥕",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-ninjin",
+   "ji-kanatoko"
+  ],
+  "description": "風上の 方へ 細く とがった にんじんの 形の 雲域です。発達した 積乱雲の あつまりで、とがった 先の 近くで 強い 雨や 雷が 起きやすい ことが あります。"
+ },
+ {
+  "id": "ji-dryslot",
+  "name": "ドライスロット",
+  "reading": "どらいすろっと",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-aniki",
+   "ji-hattatsu"
+  ],
+  "description": "発達中の 低気圧の 雲域に、うしろから 乾いた 空気が 切れこんで できる 雲の ない すき間です。低気圧が 発達している しるしです。"
+ },
+ {
+  "id": "ji-comma",
+  "name": "コンマ雲",
+  "reading": "こんまぐも",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kanreiuzu",
+   "ji-kumonouzu"
+  ],
+  "description": "寒気の 中に できる、句読点の コンマ(,)の 形の 雲です。上空の 渦や 小さな 低気圧に ともない、にわか雪や 雷を もたらす ことが あります。"
+ },
+ {
+  "id": "ji-transverse",
+  "name": "トランスバースライン",
+  "reading": "とらんすばーすらいん",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-cirrusstreak",
+   "ji-kyofujiku"
+  ],
+  "description": "ジェット気流に ほぼ 直角に ならぶ、すじ状の 巻雲です。強風軸の 近くに 見られ、晴天乱気流が 起きやすい 所の 手がかりに なります。"
+ },
+ {
+  "id": "ji-cirrusstreak",
+  "name": "シーラスストリーク",
+  "reading": "しーらすすとりーく",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-transverse",
+   "ji-taijoun"
+  ],
+  "description": "ジェット気流に そって 細長く のびる 巻雲の すじです。すじの 向きから 上空の 風の 流れや 強風軸の 位置が わかります。"
+ },
+ {
+  "id": "ji-taijoun",
+  "name": "帯状雲",
+  "reading": "たいじょううん",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎗",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-cirrusstreak",
+   "ji-kumonoobi"
+  ],
+  "description": "帯の ように 長く 続く 雲域です。ジェット気流や 前線に そって でき、帯の 北の ふちが 強風軸の 目じるしに なる ことも あります。"
+ },
+ {
+  "id": "ji-aniki",
+  "name": "暗域",
+  "reading": "あんいき",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌑",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-anka",
+   "ji-dryslot"
+  ],
+  "description": "水蒸気画像で 暗く 見える 所です。上空が 乾いている しるしで、下降流の 所や 成層圏の 空気が 下りてきた 所に 見られます。"
+ },
+ {
+  "id": "ji-anka",
+  "name": "暗化",
+  "reading": "あんか",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌘",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-aniki",
+   "ji-orekomi"
+  ],
+  "description": "水蒸気画像で、ある 所が 時間と ともに 暗く なる ことです。乾いた 空気が 下りてきた しるしで、トラフの 深まりや 低気圧の 発達の 手がかりに なります。"
+ },
+ {
+  "id": "ji-opencell",
+  "name": "オープンセル",
+  "reading": "おーぷんせる",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍩",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-closedcell",
+   "ji-kankiiryu"
+  ],
+  "description": "まん中が 晴れて まわりに 雲が 輪の ように ならぶ 雲の 形です。冷たい 空気が 暖かい 海の 上に 強く ふき出す ときに よく 見られます。"
+ },
+ {
+  "id": "ji-closedcell",
+  "name": "クローズドセル",
+  "reading": "くろーずどせる",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-opencell",
+   "ji-uniki"
+  ],
+  "description": "まん中に 雲が あり、すき間の 少ない 層積雲が ならぶ 雲の 形です。寒気の ふき出しが 弱まってきた 所などで 見られます。"
+ },
+ {
+  "id": "ji-karman",
+  "name": "カルマン渦",
+  "reading": "かるまんうず",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-opencell",
+   "ji-kumonougoki"
+  ],
+  "description": "島などの 風下に、左右 たがいちがいに ならぶ 渦の 列です。冬の 季節風が ふく ころ、済州島や 屋久島の 風下で 雲画像に よく 見られます。"
+ },
+ {
+  "id": "ji-kanatoko",
+  "name": "かなとこ雲",
+  "reading": "かなとこぐも",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛈",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-tapering",
+   "ji-amagumo"
+  ],
+  "description": "積乱雲の てっぺんが 圏界面に ぶつかり、横に 広がった 雲です。雲画像では 白く 明るく まるい 雲域に 見え、強い 対流の しるしに なります。"
+ },
+ {
+  "id": "ji-ninjin",
+  "name": "にんじん状雲",
+  "reading": "にんじんじょううん",
+  "journey": "jitsugi",
+  "category": "雲画像",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥕",
+  "mapNode": "jitsugi:eiseiga",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-tapering",
+   "ji-kanatoko"
+  ],
+  "description": "テーパリングクラウドの べつの よび名です。にんじんの ように 片方が 細く とがった 形から この 名が つきました。"
+ },
+ {
+  "id": "ji-zenmen",
+  "name": "トラフの前面",
+  "reading": "とらふのぜんめん",
+  "journey": "jitsugi",
+  "category": "トラフ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "jitsugi:trough",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-seiuzuiryu",
+   "ji-komen"
+  ],
+  "description": "上空の トラフの 東側です。正渦度移流で 上昇流が 起き、雲が でき 地上の 低気圧が 発達しやすい 所です。"
+ },
+ {
+  "id": "ji-komen",
+  "name": "トラフの後面",
+  "reading": "とらふのこうめん",
+  "journey": "jitsugi",
+  "category": "トラフ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "jitsugi:trough",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-zenmen",
+   "ji-kakoryuiki"
+  ],
+  "description": "上空の トラフの 西側です。下降流と 寒気移流の 所に なりやすく、雲が 消えて 晴れ間が 広がる ことが 多いです。"
+ },
+ {
+  "id": "ji-fukamari",
+  "name": "トラフの深まり",
+  "reading": "とらふのふかまり",
+  "journey": "jitsugi",
+  "category": "トラフ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "jitsugi:trough",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-hattatsu",
+   "ji-uzudokyokudai"
+  ],
+  "description": "トラフが 南へ 深く のび、気圧の 谷が はっきりする ことです。トラフが 深まると その 前の 低気圧も 発達しやすく なります。"
+ },
+ {
+  "id": "ji-jikukatamuki",
+  "name": "低気圧の軸の傾き",
+  "reading": "ていきあつのじくのかたむき",
+  "journey": "jitsugi",
+  "category": "トラフ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "jitsugi:trough",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-fukamari",
+   "ji-hattatsu"
+  ],
+  "description": "地上の 低気圧の 中心から 上空の トラフまでを 結んだ 軸の かたむきです。上ほど 西へ かたむいていると 発達し、まっすぐ たつと 発達の さかりを すぎます。"
+ },
+ {
+  "id": "ji-junten",
+  "name": "風の順転",
+  "reading": "かぜのじゅんてん",
+  "journey": "jitsugi",
+  "category": "移流",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "jitsugi:iryu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-dankiiryu",
+   "ji-gyakuten"
+  ],
+  "description": "上の 高さほど 風向きが 時計回りに 変わる ことです。北半球では 暖気移流が ある しるしで、温暖前線の 前などで 見られます。"
+ },
+ {
+  "id": "ji-gyakuten",
+  "name": "風の逆転",
+  "reading": "かぜのぎゃくてん",
+  "journey": "jitsugi",
+  "category": "移流",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "jitsugi:iryu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kankiiryu",
+   "ji-junten"
+  ],
+  "description": "上の 高さほど 風向きが 反時計回りに 変わる ことです。北半球では 寒気移流が ある しるしで、寒冷前線の うしろなどで 見られます。"
+ },
+ {
+  "id": "ji-ondoiryu",
+  "name": "温度移流",
+  "reading": "おんどいりゅう",
+  "journey": "jitsugi",
+  "category": "移流",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "jitsugi:iryu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-dankiiryu",
+   "ji-kankiiryu"
+  ],
+  "description": "風が 気温の ちがう 空気を 運ぶ ことです。風が 等温線を 横切る 角度が 大きく 強いほど、温度移流も 大きく なります。"
+ },
+ {
+  "id": "ji-orekomi",
+  "name": "圏界面の折れ込み",
+  "reading": "けんかいめんのおれこみ",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪂",
+  "mapNode": "jitsugi:h300",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-anka",
+   "ji-300"
+  ],
+  "description": "ジェット気流の 近くで 圏界面が 下へ 折れこみ、成層圏の 乾いた 空気が 対流圏へ 下りてくる ことです。水蒸気画像の 暗域や 低気圧の 発達と 関係します。"
+ },
+ {
+  "id": "ji-700josho",
+  "name": "700hPaの上昇流",
+  "reading": "ななひゃくへくとぱすかるのじょうしょうりゅう",
+  "journey": "jitsugi",
+  "category": "高層天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "jitsugi:h700",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-joshoryuiki",
+   "ji-700"
+  ],
+  "description": "700hPa での 上下の 空気の 動きです。気圧の 変わりかた(鉛直p速度)で 表すので、上昇流は マイナスの 値に なります。雨の 場所と くらべます。"
+ },
+ {
+  "id": "ji-ssi",
+  "name": "SSI(ショワルター安定指数)",
+  "reading": "しょわるたーあんていしすう",
+  "acceptedReadings": [
+   "しょわるたーあんていしすう",
+   "えすえすあい"
+  ],
+  "journey": "jitsugi",
+  "category": "指数",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-li",
+   "ji-kindex"
+  ],
+  "description": "850hPa の 空気を 500hPa まで 持ち上げた ときの 気温を、500hPa の 気温から 引いた 指数です。値が 小さいほど 不安定で、0 より 小さいと 雷雨に 注意します。"
+ },
+ {
+  "id": "ji-li",
+  "name": "リフティッド指数",
+  "reading": "りふてぃっどしすう",
+  "acceptedReadings": [
+   "りふてぃっどしすう",
+   "りふてぃっどいんでっくす"
+  ],
+  "journey": "jitsugi",
+  "category": "指数",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-ssi",
+   "ji-kindex"
+  ],
+  "description": "地上付近の 空気を 500hPa まで 持ち上げて、まわりの 気温と くらべる 指数です。SSI と 同じく、マイナスが 大きいほど 大気が 不安定です。"
+ },
+ {
+  "id": "ji-kindex",
+  "name": "K指数",
+  "reading": "けーしすう",
+  "acceptedReadings": [
+   "けーしすう",
+   "けいしすう"
+  ],
+  "journey": "jitsugi",
+  "category": "指数",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-ssi",
+   "ji-li"
+  ],
+  "description": "850hPa と 500hPa の 気温の 差と、850hPa・700hPa の 湿りを 合わせた 指数です。値が 大きいほど 雷雨が 起きやすい めやすに なります。"
+ },
+ {
+  "id": "ji-jotaikyoku",
+  "name": "状態曲線",
+  "reading": "じょうたいきょくせん",
+  "journey": "jitsugi",
+  "category": "エマグラム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-emagram",
+   "ji-kionenchoku"
+  ],
+  "description": "エマグラムに かいた、ラジオゾンデで はかった 気温の 線です。乾燥断熱線や 湿潤断熱線と くらべて、大気の 安定度を 読みとります。"
+ },
+ {
+  "id": "ji-kansodannetsusen",
+  "name": "乾燥断熱線",
+  "reading": "かんそうだんねつせん",
+  "journey": "jitsugi",
+  "category": "エマグラム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shitsujunsen",
+   "ji-jotaikyoku"
+  ],
+  "description": "エマグラムで、飽和していない 空気が 上下する ときの 気温の 変わりかたを 示す 線です。温位が 同じ 所を 結んだ 線でも あります。"
+ },
+ {
+  "id": "ji-shitsujunsen",
+  "name": "湿潤断熱線",
+  "reading": "しつじゅんだんねつせん",
+  "journey": "jitsugi",
+  "category": "エマグラム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-kansodannetsusen",
+   "ji-untei"
+  ],
+  "description": "エマグラムで、飽和した 空気が 上昇する ときの 気温の 変わりかたを 示す 線です。潜熱が 出るので、乾燥断熱線より ゆっくり 気温が 下がります。"
+ },
+ {
+  "id": "ji-tohowa",
+  "name": "等飽和混合比線",
+  "reading": "とうほうわこんごうひせん",
+  "journey": "jitsugi",
+  "category": "エマグラム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💦",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-untei",
+   "ji-f-kongohi"
+  ],
+  "description": "エマグラムで、飽和混合比が 同じ 所を 結んだ 線です。露点の 高さを 読み、空気を 持ち上げた ときに 雲が できる 高さを 求める のに 使います。"
+ },
+ {
+  "id": "ji-untei",
+  "name": "雲底高度",
+  "reading": "うんていこうど",
+  "journey": "jitsugi",
+  "category": "エマグラム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "jitsugi:emagram",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-tohowa",
+   "ji-kansodannetsusen"
+  ],
+  "description": "雲の 底の 高さです。エマグラムで 地上の 空気を 乾燥断熱線に そって 持ち上げ、露点から のびる 等飽和混合比線と 交わる 高さ(持ち上げ凝結高度)から 求めます。"
+ },
+ {
+  "id": "ji-kyofuhankei",
+  "name": "強風域の半径",
+  "reading": "きょうふういきのはんけい",
+  "journey": "jitsugi",
+  "category": "台風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "jitsugi:taifujitsugi",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-bofukeikai",
+   "ji-shinro"
+  ],
+  "description": "台風の 中心から、風速 15m/s 以上の 強風域が 広がる きょりです。強風域の 半径で 台風の 大きさを 表します。"
+ },
+ {
+  "id": "ji-idosokudo",
+  "name": "台風の移動速度",
+  "reading": "たいふうのいどうそくど",
+  "journey": "jitsugi",
+  "category": "台風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "jitsugi:taifujitsugi",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shinro",
+   "ji-chushinichi"
+  ],
+  "description": "台風が 進む 速さと 向きです。北上して 偏西風に 乗ると 速く なり、進む 向きの 右側では 風が 強く なりやすいので 注意します。"
+ },
+ {
+  "id": "ji-kappatsu",
+  "name": "前線の活発化",
+  "reading": "ぜんせんのかっぱつか",
+  "journey": "jitsugi",
+  "category": "台風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "jitsugi:taifujitsugi",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-shitsuzetsu",
+   "ji-zensenkaiseki"
+  ],
+  "description": "台風が 遠くに あっても、暖かく 湿った 空気が 前線に 流れこみ、前線の 雨が 強まる ことです。台風が 来る 前から 大雨に そなえます。"
+ },
+ {
+  "id": "ji-hairukakuritsu",
+  "name": "台風の暴風域に入る確率",
+  "reading": "たいふうのぼうふういきにはいるかくりつ",
+  "journey": "jitsugi",
+  "category": "台風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "jitsugi:taifujitsugi",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-bofukeikai",
+   "ji-yohoen"
+  ],
+  "description": "それぞれの 地域が、台風の 暴風域に 入る 確率を 気象庁が 計算して 出す 情報です。いつごろ 暴風に なりそうかを 知り、早めの そなえに 使います。"
+ },
+ {
+  "id": "ji-kaijokeiho",
+  "name": "海上警報",
+  "reading": "かいじょうけいほう",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚓",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-chijo",
+   "ji-tsuyosa"
+  ],
+  "description": "船の ための 警報で、天気図には 英字で 書かれます。W は 海上警報、GW は 海上強風警報、SW は 海上暴風警報、TW は 海上台風警報、FOG は 海上濃霧警報です。"
+ },
+ {
+  "id": "ji-sokanba",
+  "name": "総観場",
+  "reading": "そうかんば",
+  "journey": "jitsugi",
+  "category": "地上天気図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "jitsugi:chijo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ji-chijo",
+   "ji-kochushin"
+  ],
+  "description": "数千km ほどの 広さで 見た、高気圧・低気圧・前線の 大きな 配置です。実技では まず 総観場を つかんでから、細かい 現象を 考えます。"
+ },
+ {
+  "id": "ji-f-seiriki",
+  "name": "静力学平衡の式",
+  "reading": "でるたぴーいこーるまいなすろーじーでるたぜっと",
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "formula": "Δp = −ρgΔz",
+  "relatedTerms": [
+   "ji-f-jotai",
+   "ji-f-soko"
+  ],
+  "description": "Δp は 気圧の 差、ρ は 空気の 密度、g は 重力加速度、Δz は 高さの 差です。上へ 行くほど 気圧が 下がる わけを 表し、等圧面の 高さを 考える もとに なります。"
+ },
+ {
+  "id": "ji-f-jotai",
+  "name": "気体の状態方程式",
+  "reading": "ぴーいこーるろーあーるてぃー",
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "formula": "p = ρRT",
+  "relatedTerms": [
+   "ji-f-seiriki",
+   "ji-f-soko"
+  ],
+  "description": "p は 気圧、ρ は 空気の 密度、R は 乾燥空気の 気体定数、T は 絶対温度です。同じ 気圧なら 暖かい 空気ほど 密度が 小さく 軽い ことが わかります。"
+ },
+ {
+  "id": "ji-f-coriolis",
+  "name": "コリオリパラメータの式",
+  "reading": "えふいこーるにおめがさいんふぁい",
+  "acceptedReadings": [
+   "えふいこーるにおめがさいんふぁい"
+  ],
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "formula": "f = 2Ω sinφ",
+  "relatedTerms": [
+   "ji-f-chikofu",
+   "ji-f-zettaiuzu"
+  ],
+  "description": "f は コリオリパラメータ、Ω は 地球の 自転の 角速度、φ は 緯度です。緯度が 高いほど f は 大きく、赤道では 0 に なります。"
+ },
+ {
+  "id": "ji-f-chikofu",
+  "name": "地衡風の式",
+  "reading": "ぶいじーいこーるろーえふぶんのいちかけるでるたえぬぶんのでるたぴー",
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "formula": "Vg = (1/ρf)(Δp/Δn)",
+  "relatedTerms": [
+   "ji-f-coriolis",
+   "ji-tsuyosa"
+  ],
+  "description": "Vg は 地衡風の 速さ、ρ は 密度、f は コリオリパラメータ、Δp/Δn は 等圧線に 直角な 向きの 気圧の 差です。等圧線が こむほど 風が 強い ことを 表します。"
+ },
+ {
+  "id": "ji-f-oni",
+  "name": "温位の式",
+  "reading": "しーたいこーるてぃーかけるぴーぶんのせんのかっぱじょう",
+  "acceptedReadings": [
+   "しーたいこーるてぃーかけるぴーぶんのせんのかっぱじょう",
+   "しーたいこーるてぃーぴーぶんのせんのかっぱじょう"
+  ],
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "formula": "θ = T(1000/p)^κ",
+  "relatedTerms": [
+   "ji-kansodannetsusen",
+   "ji-f-jotai"
+  ],
+  "description": "θ は 温位、T は 絶対温度、p は 気圧(hPa)、κ は 気体定数を 定圧比熱で 割った 数で およそ 0.29 です。空気を 乾燥断熱で 1000hPa に した ときの 温度を 求めます。"
+ },
+ {
+  "id": "ji-f-genritsu",
+  "name": "気温減率の式",
+  "reading": "がんまいこーるまいなすでるたぜっとぶんのでるたてぃー",
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "formula": "Γ = −ΔT/Δz",
+  "relatedTerms": [
+   "ji-kionenchoku",
+   "ji-f-oni"
+  ],
+  "description": "Γ は 気温減率、ΔT は 気温の 差、Δz は 高さの 差です。上へ 行くほど 気温が 下がると Γ は プラスに なり、大気の 安定・不安定を 考える もとに なります。"
+ },
+ {
+  "id": "ji-f-soko",
+  "name": "層厚の式",
+  "reading": "でるたぜっといこーるじーぶんのあーるてぃーかけるえるえぬぴーにぶんのぴーいち",
+  "acceptedReadings": [
+   "でるたぜっといこーるじーぶんのあーるてぃーかけるえるえぬぴーにぶんのぴーいち",
+   "でるたぜっといこーるじーぶんのあーるてぃーかけるろぐぴーにぶんのぴーいち"
+  ],
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "formula": "Δz = (RT/g) ln(p1/p2)",
+  "relatedTerms": [
+   "ji-f-seiriki",
+   "ji-f-jotai"
+  ],
+  "description": "Δz は 2つの 等圧面の あいだの 厚さ、R は 気体定数、T は その 層の 平均の 気温、p1・p2 は 下と 上の 気圧です。暖かい 層ほど 厚く なる ことが わかります。"
+ },
+ {
+  "id": "ji-f-kongohi",
+  "name": "混合比の式",
+  "reading": "だぶりゅーいこーるれいてんろくにーにかけるぴーひくいーぶんのいー",
+  "acceptedReadings": [
+   "だぶりゅーいこーるれいてんろくにーにかけるぴーひくいーぶんのいー",
+   "だぶりゅーいこーるれいてんろくにーにーかけるぴーひくいーぶんのいー",
+   "だぶりゅーいこーるれいてんろくににかけるぴーひくいーぶんのいー"
+  ],
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "formula": "w = 0.622e/(p−e)",
+  "relatedTerms": [
+   "ji-tohowa",
+   "ji-shissu"
+  ],
+  "description": "w は 混合比、e は 水蒸気圧、p は 気圧、0.622 は 水蒸気と 乾燥空気の 分子量の 比です。乾いた 空気 1kg あたりの 水蒸気の 量を 求めます。"
+ },
+ {
+  "id": "ji-f-zettaiuzu",
+  "name": "絶対渦度の式",
+  "reading": "いーたいこーるぜーたたすえふ",
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "formula": "η = ζ + f",
+  "relatedTerms": [
+   "ji-f-coriolis",
+   "ji-uzudokyokudai"
+  ],
+  "description": "η は 絶対渦度、ζ は 地面から 見た 相対渦度、f は 地球の 自転に よる コリオリパラメータです。水平の 発散が なければ 保存され、トラフの 動きを 考える もとに なります。"
+ },
+ {
+  "id": "ji-f-stefan",
+  "name": "ステファン・ボルツマンの式",
+  "reading": "いーいこーるしぐまてぃーのよんじょう",
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "formula": "E = σT⁴",
+  "relatedTerms": [
+   "ji-f-wien",
+   "ji-f-jotai"
+  ],
+  "description": "E は 物体が 出す 放射の エネルギー、σ は ステファン・ボルツマン定数、T は 絶対温度です。へえ: 温度が 2倍に なると 放射は 16倍に なります。"
+ },
+ {
+  "id": "ji-f-wien",
+  "name": "ウィーンの変位則の式",
+  "reading": "らむだえむいこーるてぃーぶんのえー",
+  "journey": "jitsugi",
+  "category": "公式",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "jitsugi:koshiki",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "formula": "λm = a/T",
+  "relatedTerms": [
+   "ji-f-stefan",
+   "ji-aniki"
+  ],
+  "description": "λm は 放射が いちばん 強い 波長、a は 定数(およそ 2900μm・K)、T は 絶対温度です。太陽は 可視光で、地球は 赤外線で いちばん 強く 放射する わけが わかります。"
+ }
+]

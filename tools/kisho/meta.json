@@ -388,16 +388,16 @@
      "y": 40
     },
     {
-     "id": "zensen",
-     "label": "前線",
-     "icon": "〰️",
+     "id": "kaze",
+     "label": "風向・風速",
+     "icon": "🌬",
      "x": 300,
      "y": 40
     },
     {
-     "id": "kumo",
-     "label": "雲",
-     "icon": "☁️",
+     "id": "zensen",
+     "label": "前線",
+     "icon": "〰️",
      "x": 60,
      "y": 130
     },
@@ -409,51 +409,51 @@
      "y": 130
     },
     {
-     "id": "shitsudo",
-     "label": "湿度・露点",
-     "icon": "💧",
+     "id": "kumo",
+     "label": "雲",
+     "icon": "☁️",
      "x": 300,
      "y": 130
-    },
-    {
-     "id": "kaze",
-     "label": "風向・風速",
-     "icon": "🌬",
-     "x": 60,
-     "y": 220
     },
     {
      "id": "kion",
      "label": "気温",
      "icon": "🌡",
-     "x": 180,
+     "x": 60,
      "y": 220
     },
     {
      "id": "kigo",
      "label": "天気記号",
      "icon": "⛅",
+     "x": 180,
+     "y": 220
+    },
+    {
+     "id": "shitsudo",
+     "label": "湿度・露点",
+     "icon": "💧",
      "x": 300,
      "y": 220
+    },
+    {
+     "id": "kishocho",
+     "label": "気象庁",
+     "icon": "🏛",
+     "x": 60,
+     "y": 310
     },
     {
      "id": "yoho",
      "label": "天気予報",
      "icon": "📺",
-     "x": 60,
+     "x": 180,
      "y": 310
     },
     {
      "id": "kakuritsu",
      "label": "降水確率",
      "icon": "☂️",
-     "x": 180,
-     "y": 310
-    },
-    {
-     "id": "kishocho",
-     "label": "気象庁",
-     "icon": "🏛",
      "x": 300,
      "y": 310
     }
@@ -475,18 +475,23 @@
      ""
     ],
     [
+     "kumo",
+     "kosui",
+     "ふる"
+    ],
+    [
      "shitsudo",
      "kumo",
      "できる"
     ],
     [
+     "kishocho",
      "yoho",
-     "kakuritsu",
      ""
     ],
     [
-     "kishocho",
      "yoho",
+     "kakuritsu",
      ""
     ]
    ]
@@ -520,16 +525,16 @@
      "y": 40
     },
     {
-     "id": "genritsu",
-     "label": "気温減率",
-     "icon": "📉",
+     "id": "dannetsu",
+     "label": "断熱変化",
+     "icon": "🎈",
      "x": 60,
      "y": 130
     },
     {
-     "id": "dannetsu",
-     "label": "断熱変化",
-     "icon": "🎈",
+     "id": "genritsu",
+     "label": "気温減率",
+     "icon": "📉",
      "x": 180,
      "y": 130
     },
@@ -631,30 +636,30 @@
      "y": 40
     },
     {
-     "id": "coriolis",
-     "label": "コリオリ力",
-     "icon": "🔄",
+     "id": "chiko",
+     "label": "地衡風",
+     "icon": "🧭",
      "x": 180,
      "y": 40
     },
     {
-     "id": "chiko",
-     "label": "地衡風",
-     "icon": "🧭",
+     "id": "coriolis",
+     "label": "コリオリ力",
+     "icon": "🔄",
      "x": 300,
      "y": 40
-    },
-    {
-     "id": "keidofu",
-     "label": "傾度風",
-     "icon": "🌀",
-     "x": 60,
-     "y": 130
     },
     {
      "id": "masatsu",
      "label": "摩擦と 地上風",
      "icon": "🪨",
+     "x": 60,
+     "y": 130
+    },
+    {
+     "id": "keidofu",
+     "label": "傾度風",
+     "icon": "🌀",
      "x": 180,
      "y": 130
     },
@@ -666,9 +671,9 @@
      "y": 130
     },
     {
-     "id": "jet",
-     "label": "ジェット気流",
-     "icon": "💨",
+     "id": "junkan",
+     "label": "大気大循環",
+     "icon": "♻️",
      "x": 60,
      "y": 220
     },
@@ -680,9 +685,9 @@
      "y": 220
     },
     {
-     "id": "junkan",
-     "label": "大気大循環",
-     "icon": "♻️",
+     "id": "jet",
+     "label": "ジェット気流",
+     "icon": "💨",
      "x": 300,
      "y": 220
     },
@@ -717,16 +722,11 @@
     [
      "coriolis",
      "chiko",
-     "つりあう"
-    ],
-    [
-     "chiko",
-     "keidofu",
      ""
     ],
     [
      "chiko",
-     "masatsu",
+     "keidofu",
      ""
     ],
     [
@@ -737,6 +737,11 @@
     [
      "junkan",
      "henseifu",
+     ""
+    ],
+    [
+     "nami",
+     "uzu",
      ""
     ]
    ]
@@ -749,16 +754,16 @@
    "bg": "",
    "nodes": [
     {
-     "id": "dekiru",
-     "label": "雲の できかた",
-     "icon": "☁️",
+     "id": "ame",
+     "label": "雨の しくみ",
+     "icon": "🌧",
      "x": 60,
      "y": 40
     },
     {
-     "id": "ame",
-     "label": "雨の しくみ",
-     "icon": "🌧",
+     "id": "dekiru",
+     "label": "雲の できかた",
+     "icon": "☁️",
      "x": 180,
      "y": 40
     },
@@ -770,65 +775,65 @@
      "y": 40
     },
     {
-     "id": "toppu",
-     "label": "竜巻・突風",
-     "icon": "🌪",
+     "id": "kudarisame",
+     "label": "雪・ひょう・あられ",
+     "icon": "❄️",
      "x": 60,
      "y": 130
     },
     {
-     "id": "taifu",
-     "label": "台風",
-     "icon": "🌀",
+     "id": "toppu",
+     "label": "竜巻・突風",
+     "icon": "🌪",
      "x": 180,
-     "y": 130
-    },
-    {
-     "id": "ontai",
-     "label": "温帯低気圧",
-     "icon": "🔄",
-     "x": 300,
      "y": 130
     },
     {
      "id": "senjo",
      "label": "線状降水帯",
      "icon": "🟥",
+     "x": 300,
+     "y": 130
+    },
+    {
+     "id": "taifu",
+     "label": "台風",
+     "icon": "🌀",
      "x": 60,
+     "y": 220
+    },
+    {
+     "id": "ontai",
+     "label": "温帯低気圧",
+     "icon": "🔄",
+     "x": 180,
+     "y": 220
+    },
+    {
+     "id": "enso",
+     "label": "エルニーニョ・ラニーニャ",
+     "icon": "🌊",
+     "x": 300,
      "y": 220
     },
     {
      "id": "kiri",
      "label": "霧",
      "icon": "🌁",
-     "x": 180,
-     "y": 220
+     "x": 60,
+     "y": 310
     },
     {
      "id": "fen",
      "label": "フェーン・局地の 現象",
      "icon": "🏔",
-     "x": 300,
-     "y": 220
+     "x": 180,
+     "y": 310
     },
     {
      "id": "hikari",
      "label": "虹・かさ・光",
      "icon": "🌈",
-     "x": 60,
-     "y": 310
-    },
-    {
-     "id": "kudarisame",
-     "label": "雪・ひょう・あられ",
-     "icon": "❄️",
-     "x": 180,
-     "y": 310
-    },
-    {
-     "id": "enso",
-     "label": "エルニーニョ・ラニーニャ",
-     "icon": "🌊",
      "x": 300,
      "y": 310
     }
@@ -845,8 +850,8 @@
      "育つ"
     ],
     [
-     "raiun",
-     "toppu",
+     "ame",
+     "kudarisame",
      ""
     ],
     [
@@ -855,14 +860,14 @@
      ""
     ],
     [
+     "senjo",
+     "toppu",
+     ""
+    ],
+    [
      "taifu",
      "ontai",
      "かわる"
-    ],
-    [
-     "ame",
-     "kudarisame",
-     ""
     ]
    ]
   },
@@ -902,30 +907,30 @@
      "y": 130
     },
     {
-     "id": "profiler",
-     "label": "ウィンドプロファイラ",
-     "icon": "📶",
+     "id": "doka",
+     "label": "データ同化",
+     "icon": "🔗",
      "x": 180,
      "y": 130
     },
     {
-     "id": "doka",
-     "label": "データ同化",
-     "icon": "🔗",
+     "id": "profiler",
+     "label": "ウィンドプロファイラ",
+     "icon": "📶",
      "x": 300,
      "y": 130
-    },
-    {
-     "id": "suchi",
-     "label": "数値予報",
-     "icon": "🖥",
-     "x": 60,
-     "y": 220
     },
     {
      "id": "model",
      "label": "全球・メソ・局地モデル",
      "icon": "🗺",
+     "x": 60,
+     "y": 220
+    },
+    {
+     "id": "suchi",
+     "label": "数値予報",
+     "icon": "🖥",
      "x": 180,
      "y": 220
     },
@@ -937,40 +942,40 @@
      "y": 220
     },
     {
+     "id": "tenkizu",
+     "label": "天気図",
+     "icon": "🗞",
+     "x": 60,
+     "y": 310
+    },
+    {
      "id": "guidance",
      "label": "ガイダンス",
      "icon": "📋",
-     "x": 60,
+     "x": 180,
      "y": 310
     },
     {
      "id": "yohokan",
      "label": "予報官と 発表",
      "icon": "📣",
-     "x": 180,
-     "y": 310
-    },
-    {
-     "id": "tenkizu",
-     "label": "天気図",
-     "icon": "🗞",
      "x": 300,
      "y": 310
     }
    ],
    "edges": [
     [
-     "amedas",
-     "doka",
-     ""
-    ],
-    [
      "zonde",
      "doka",
      ""
     ],
     [
-     "eisei",
+     "radar",
+     "doka",
+     ""
+    ],
+    [
+     "profiler",
      "doka",
      ""
     ],
@@ -1020,9 +1025,9 @@
      "y": 40
     },
     {
-     "id": "aki",
-     "label": "秋",
-     "icon": "🍁",
+     "id": "kisetsufu",
+     "label": "季節風",
+     "icon": "🎐",
      "x": 60,
      "y": 130
     },
@@ -1034,9 +1039,9 @@
      "y": 130
     },
     {
-     "id": "kisetsufu",
-     "label": "季節風",
-     "icon": "🎐",
+     "id": "aki",
+     "label": "秋",
+     "icon": "🍁",
      "x": 300,
      "y": 130
     },
@@ -1145,9 +1150,9 @@
      "y": 40
     },
     {
-     "id": "lv4",
-     "label": "レベル4 危険警報",
-     "icon": "4️⃣",
+     "id": "kikikuru",
+     "label": "キキクル",
+     "icon": "🗺",
      "x": 60,
      "y": 130
     },
@@ -1159,30 +1164,30 @@
      "y": 130
     },
     {
-     "id": "hinan",
-     "label": "避難情報",
-     "icon": "🏃",
+     "id": "lv4",
+     "label": "レベル4 危険警報",
+     "icon": "4️⃣",
      "x": 300,
      "y": 130
-    },
-    {
-     "id": "kikikuru",
-     "label": "キキクル",
-     "icon": "🗺",
-     "x": 60,
-     "y": 220
     },
     {
      "id": "sokuho",
      "label": "気象防災速報",
      "icon": "📢",
-     "x": 180,
+     "x": 60,
      "y": 220
     },
     {
      "id": "ichiran",
      "label": "ほかの 警報・注意報",
      "icon": "📋",
+     "x": 180,
+     "y": 220
+    },
+    {
+     "id": "hinan",
+     "label": "避難情報",
+     "icon": "🏃",
      "x": 300,
      "y": 220
     },
@@ -1235,6 +1240,11 @@
      "にげる"
     ],
     [
+     "hinan",
+     "mamoru",
+     ""
+    ],
+    [
      "hazard",
      "mamoru",
      ""
@@ -1249,16 +1259,16 @@
    "bg": "",
    "nodes": [
     {
-     "id": "ho",
-     "label": "気象業務法",
-     "icon": "📕",
+     "id": "yohoshi",
+     "label": "気象予報士",
+     "icon": "🎓",
      "x": 60,
      "y": 40
     },
     {
-     "id": "yohoshi",
-     "label": "気象予報士",
-     "icon": "🎓",
+     "id": "ho",
+     "label": "気象業務法",
+     "icon": "📕",
      "x": 180,
      "y": 40
     },
@@ -1270,16 +1280,16 @@
      "y": 40
     },
     {
-     "id": "kishocho",
-     "label": "気象庁の 役わり",
-     "icon": "🏛",
+     "id": "shigoto",
+     "label": "予報士の しごと",
+     "icon": "📺",
      "x": 60,
      "y": 130
     },
     {
-     "id": "wmo",
-     "label": "WMO・世界の 協力",
-     "icon": "🌐",
+     "id": "kishocho",
+     "label": "気象庁の 役わり",
+     "icon": "🏛",
      "x": 180,
      "y": 130
     },
@@ -1298,16 +1308,16 @@
      "y": 220
     },
     {
-     "id": "seido",
-     "label": "予報の 精度",
-     "icon": "🎯",
+     "id": "wmo",
+     "label": "WMO・世界の 協力",
+     "icon": "🌐",
      "x": 180,
      "y": 220
     },
     {
-     "id": "oyo",
-     "label": "予想の 応用",
-     "icon": "🧩",
+     "id": "seido",
+     "label": "予報の 精度",
+     "icon": "🎯",
      "x": 300,
      "y": 220
     },
@@ -1326,9 +1336,9 @@
      "y": 310
     },
     {
-     "id": "shigoto",
-     "label": "予報士の しごと",
-     "icon": "📺",
+     "id": "oyo",
+     "label": "予想の 応用",
+     "icon": "🧩",
      "x": 300,
      "y": 310
     }
@@ -1345,6 +1355,11 @@
      ""
     ],
     [
+     "yohoshi",
+     "shigoto",
+     ""
+    ],
+    [
      "kyoka",
      "minkan",
      ""
@@ -1352,11 +1367,6 @@
     [
      "kishocho",
      "wmo",
-     ""
-    ],
-    [
-     "yohoshi",
-     "shigoto",
      ""
     ],
     [
@@ -1374,37 +1384,37 @@
    "bg": "",
    "nodes": [
     {
+     "id": "zensenkaiseki",
+     "label": "前線の 解析",
+     "icon": "✏️",
+     "x": 60,
+     "y": 40
+    },
+    {
      "id": "chijo",
      "label": "地上天気図",
      "icon": "🗞",
-     "x": 60,
+     "x": 180,
      "y": 40
     },
     {
      "id": "h850",
      "label": "850hPa(下の 空)",
      "icon": "🌡",
-     "x": 180,
+     "x": 300,
      "y": 40
+    },
+    {
+     "id": "eiseiga",
+     "label": "雲画像を 読む",
+     "icon": "🛰",
+     "x": 60,
+     "y": 130
     },
     {
      "id": "h700",
      "label": "700hPa(湿り)",
      "icon": "💧",
-     "x": 300,
-     "y": 40
-    },
-    {
-     "id": "h500",
-     "label": "500hPa(上空の 寒気・渦)",
-     "icon": "🌀",
-     "x": 60,
-     "y": 130
-    },
-    {
-     "id": "h300",
-     "label": "300hPa(ジェット)",
-     "icon": "💨",
      "x": 180,
      "y": 130
     },
@@ -1423,30 +1433,30 @@
      "y": 220
     },
     {
-     "id": "zensenkaiseki",
-     "label": "前線の 解析",
-     "icon": "✏️",
+     "id": "h500",
+     "label": "500hPa(上空の 寒気・渦)",
+     "icon": "🌀",
      "x": 180,
      "y": 220
     },
     {
-     "id": "eiseiga",
-     "label": "雲画像を 読む",
-     "icon": "🛰",
+     "id": "h300",
+     "label": "300hPa(ジェット)",
+     "icon": "💨",
      "x": 300,
      "y": 220
-    },
-    {
-     "id": "emagram",
-     "label": "エマグラム・指数",
-     "icon": "📊",
-     "x": 60,
-     "y": 310
     },
     {
      "id": "taifujitsugi",
      "label": "台風の 実技",
      "icon": "🌀",
+     "x": 60,
+     "y": 310
+    },
+    {
+     "id": "emagram",
+     "label": "エマグラム・指数",
+     "icon": "📊",
      "x": 180,
      "y": 310
     },
@@ -1460,13 +1470,8 @@
    ],
    "edges": [
     [
-     "h500",
-     "trough",
-     ""
-    ],
-    [
-     "h850",
-     "iryu",
+     "chijo",
+     "zensenkaiseki",
      ""
     ],
     [
@@ -1475,13 +1480,18 @@
      ""
     ],
     [
-     "chijo",
-     "zensenkaiseki",
+     "h850",
+     "iryu",
      ""
     ],
     [
      "h300",
      "h500",
+     ""
+    ],
+    [
+     "h500",
+     "trough",
      ""
     ],
     [

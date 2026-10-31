@@ -25,6 +25,8 @@ RB_FIX = {
     "2<ruby>人<rt>ひと</rt></ruby>": "<ruby>2人<rt>ふたり</rt></ruby>",
     "<ruby>積乱<rt>せきらん</rt></ruby><ruby>雲<rt>くも</rt></ruby>": "<ruby>積乱雲<rt>せきらんうん</rt></ruby>",
 }
+# ふりがなの 直しの つづき(助手が 旅ごとに 見つけた もの。tools/kisho/rbfix-*.json = {"まちがい": "正しい"})
+for _f in sorted(HERE.glob("rbfix-*.json")): RB_FIX.update(json.loads(_f.read_text(encoding="utf-8")))
 FIELDS = {"大気の構造", "大気の熱力学", "降水過程", "大気の放射", "大気の力学", "気象現象", "気候", "気象業務法", "観測", "数値予報", "予報", "防災気象情報", "実技"}
 RULESETS = {"学科一般", "学科専門", "実技", "共通"}
 

@@ -1,0 +1,2092 @@
+[
+ {
+  "id": "ta-kuki",
+  "name": "空気",
+  "reading": "くうき",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-chisso",
+   "ta-sanso",
+   "ta-taiki"
+  ],
+  "description": "地球を つつむ 気体の まざりものです。かわいた 空気は 窒素と 酸素が ほとんどで、水蒸気は 場所や 時間で 大きく 変わります。"
+ },
+ {
+  "id": "ta-taiki",
+  "name": "大気",
+  "reading": "たいき",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-kuki",
+   "ta-tairyuken",
+   "ta-seisoken"
+  ],
+  "description": "地球を つつむ 空気の 層です。気温の 変わりかたで、下から 対流圏・成層圏・中間圏・熱圏に 分けます。天気は おもに 対流圏で 起こります。"
+ },
+ {
+  "id": "ta-tairyuken",
+  "name": "対流圏",
+  "reading": "たいりゅうけん",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛅",
+  "mapNode": "taiki:taiko",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kenkaimen",
+   "ta-genritsu",
+   "ta-seisoken"
+  ],
+  "description": "地上から およそ 11km までの、大気の いちばん 下の 層です。上ほど 気温が 下がり、雲・雨・風など ほとんどの 天気が ここで 起こります。"
+ },
+ {
+  "id": "ta-seisoken",
+  "name": "成層圏",
+  "reading": "せいそうけん",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛫",
+  "mapNode": "taiki:seiso",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-ozon",
+   "ta-tairyuken",
+   "ta-chukanken"
+  ],
+  "description": "対流圏の 上、およそ 50km までの 層です。オゾンが 紫外線を 吸収するので、上ほど 気温が 高く なります。上下の 動きが 起こりにくい 層です。"
+ },
+ {
+  "id": "ta-ozon",
+  "name": "オゾン層",
+  "reading": "おぞんそう",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "taiki:seiso",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-shigaisen",
+   "ta-ozonhole",
+   "ta-chapman"
+  ],
+  "description": "成層圏に ある オゾンの 多い 層です。生きものに よくない 紫外線を 吸収して 地上を 守り、成層圏を 温めて います。"
+ },
+ {
+  "id": "ta-suijoki",
+  "name": "水蒸気",
+  "reading": "すいじょうき",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-johatsu",
+   "ta-gyoketsu",
+   "ta-howa"
+  ],
+  "description": "気体に なった 水で、目には 見えません。冷えて 凝結すると 雲に なります。凝結の ときに 出す 熱が、雲や 台風を 育てます。"
+ },
+ {
+  "id": "ta-nissha",
+  "name": "日射",
+  "reading": "にっしゃ",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌞",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-taiyohosha",
+   "ta-hosha",
+   "ta-albedo"
+  ],
+  "description": "太陽から とどく 光や 熱の ことです。地面を 温め、その 熱が 空気に 伝わって 気温が 上がります。"
+ },
+ {
+  "id": "ta-hosha",
+  "name": "放射",
+  "reading": "ほうしゃ",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-taiyohosha",
+   "ta-chikyuhosha",
+   "ta-kokutai"
+  ],
+  "description": "電磁波で エネルギーが 伝わる ことです。空気が なくても 伝わります。どんな ものも、温度に おうじて 放射を 出して います。"
+ },
+ {
+  "id": "ta-jokuu",
+  "name": "上空",
+  "reading": "じょうくう",
+  "journey": "taiki",
+  "category": "気圧と高さ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛩",
+  "mapNode": "taiki:takasa",
+  "field": "大気の構造",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-taiki",
+   "ta-geopo",
+   "ta-tairyuken"
+  ],
+  "description": "地面から 高い 所の 空です。予報士は 上空の 寒気や 風を、高層天気図で 読みとります。上空の ようすが 地上の 天気を 決めます。"
+ },
+ {
+  "id": "ta-sanso",
+  "name": "酸素",
+  "reading": "さんそ",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-chisso",
+   "ta-kuki",
+   "ta-ozon"
+  ],
+  "description": "かわいた 空気の およそ 21% を しめる 気体です。上空の 酸素が 紫外線を 受けて、オゾンが できます。"
+ },
+ {
+  "id": "ta-chisso",
+  "name": "窒素",
+  "reading": "ちっそ",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-sanso",
+   "ta-kuki",
+   "ta-kinshitsu"
+  ],
+  "description": "かわいた 空気の およそ 78% を しめる、いちばん 多い 気体です。ほかの ものと 反応しにくい 気体です。"
+ },
+ {
+  "id": "ta-co2",
+  "name": "二酸化炭素",
+  "reading": "にさんかたんそ",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-onshitsu",
+   "ta-chikyuhosha",
+   "ta-mado"
+  ],
+  "description": "空気に わずかに ふくまれる 気体です。地球からの 赤外線を 吸収する 温室効果ガスで、ふえると 地球が 温まりやすく なります。"
+ },
+ {
+  "id": "ta-onshitsu",
+  "name": "温室効果",
+  "reading": "おんしつこうか",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏡",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-co2",
+   "ta-chikyuhosha",
+   "ta-hoshaheiko"
+  ],
+  "description": "大気が 地球からの 赤外線を 吸収し、地上へ 放射し返して 温める はたらきです。へえ: これが なければ 地球の 平均気温は 0℃ を 大きく 下回ります。"
+ },
+ {
+  "id": "ta-johatsu",
+  "name": "蒸発",
+  "reading": "じょうはつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💦",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-gyoketsu",
+   "ta-kikanetsu",
+   "ta-suijoki"
+  ],
+  "description": "水が 水蒸気に なる ことです。まわりから 熱を うばいます。海から 蒸発した 水蒸気が、雨の もとに なります。"
+ },
+ {
+  "id": "ta-gyoketsu",
+  "name": "凝結",
+  "reading": "ぎょうけつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-johatsu",
+   "ta-gyoketsunetsu",
+   "ta-howa"
+  ],
+  "description": "水蒸気が 冷えて 水に なる ことです。空気が 飽和すると 起こり、雲や 霧が できます。このとき 潜熱を 出します。"
+ },
+ {
+  "id": "ta-howa",
+  "name": "飽和",
+  "reading": "ほうわ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-gyoketsu",
+   "ta-howasuijokiatsu",
+   "ta-suijoki"
+  ],
+  "description": "空気が、その 温度で ふくめる いっぱいまで 水蒸気を ふくんだ 状態です。湿度 100%。これ以上 冷えると 凝結が 始まります。"
+ },
+ {
+  "id": "ta-josho",
+  "name": "上昇気流",
+  "reading": "じょうしょうきりゅう",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-kako",
+   "ta-bocho",
+   "ta-tairyu"
+  ],
+  "description": "上へ 向かう 空気の 流れです。空気が 上がると ふくらんで 冷え、雲が できます。低気圧や 前線、山の 斜面で 起こります。"
+ },
+ {
+  "id": "ta-kako",
+  "name": "下降気流",
+  "reading": "かこうきりゅう",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-josho",
+   "ta-asshuku",
+   "ta-chinkosei"
+  ],
+  "description": "下へ 向かう 空気の 流れです。下りる 空気は 縮んで 温まり、雲が 消えます。高気圧の 下で 晴れやすい わけです。"
+ },
+ {
+  "id": "ta-shigaisen",
+  "name": "紫外線",
+  "reading": "しがいせん",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🕶",
+  "mapNode": "taiki:seiso",
+  "field": "大気の放射",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-ozon",
+   "ta-tanpa",
+   "ta-taiyohosha"
+  ],
+  "description": "目に 見える 光より 波長の 短い 光です。日焼けの もとに なります。多くは 成層圏の オゾン層に 吸収されます。"
+ },
+ {
+  "id": "ta-sekigaisen",
+  "name": "赤外線",
+  "reading": "せきがいせん",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ta-chikyuhosha",
+   "ta-choha",
+   "ta-mado"
+  ],
+  "description": "目に 見える 光より 波長の 長い 光です。地球や 大気は おもに 赤外線を 出して います。気象衛星の 赤外画像も これで 見ます。"
+ },
+ {
+  "id": "ta-chukanken",
+  "name": "中間圏",
+  "reading": "ちゅうかんけん",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌌",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-seisoken",
+   "ta-netsuken",
+   "ta-taiki"
+  ],
+  "description": "成層圏の 上、およそ 50〜80km の 層です。上ほど 気温が 下がり、上の 境目あたりが 大気の 中で いちばん 寒い 所です。"
+ },
+ {
+  "id": "ta-netsuken",
+  "name": "熱圏",
+  "reading": "ねつけん",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌠",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-chukanken",
+   "ta-denriso",
+   "ta-taiki"
+  ],
+  "description": "中間圏の 上、およそ 80km より 上の 層です。太陽の 強い 光を 吸収して 上ほど 気温が 上がります。オーロラが 光る 所です。"
+ },
+ {
+  "id": "ta-kenkaimen",
+  "name": "圏界面",
+  "reading": "けんかいめん",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "taiki:taiko",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-tairyuken",
+   "ta-seisoken",
+   "ta-genritsu"
+  ],
+  "description": "対流圏と 成層圏の 境目です。高さは 熱帯で 高く、極で 低く なります。積乱雲の てっぺんは ここで 止まり 横に 広がります。"
+ },
+ {
+  "id": "ta-genritsu",
+  "name": "気温減率",
+  "reading": "きおんげんりつ",
+  "journey": "taiki",
+  "category": "断熱変化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "taiki:genritsu",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kansodan",
+   "ta-shitsujun",
+   "ta-hyojun"
+  ],
+  "description": "高さが 上がると 気温が 下がる 割合です。対流圏の 平均で およそ 6.5℃/km。断熱減率と くらべて 大気の 安定・不安定を 見ます。"
+ },
+ {
+  "id": "ta-dannetsu",
+  "name": "断熱変化",
+  "reading": "だんねつへんか",
+  "journey": "taiki",
+  "category": "断熱変化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "taiki:dannetsu",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-bocho",
+   "ta-asshuku",
+   "ta-daiichi"
+  ],
+  "description": "まわりと 熱の やりとりを せずに、空気の 温度が 変わる ことです。上がる 空気は 冷え、下りる 空気は 温まります。"
+ },
+ {
+  "id": "ta-bocho",
+  "name": "断熱膨張",
+  "reading": "だんねつぼうちょう",
+  "journey": "taiki",
+  "category": "断熱変化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "taiki:dannetsu",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-dannetsu",
+   "ta-asshuku",
+   "ta-josho"
+  ],
+  "description": "上がった 空気が、まわりの 気圧が 下がって ふくらむ ことです。ふくらむ ために エネルギーを 使うので 温度が 下がります。雲が できる もとです。"
+ },
+ {
+  "id": "ta-asshuku",
+  "name": "断熱圧縮",
+  "reading": "だんねつあっしゅく",
+  "journey": "taiki",
+  "category": "断熱変化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗜",
+  "mapNode": "taiki:dannetsu",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-dannetsu",
+   "ta-bocho",
+   "ta-kako"
+  ],
+  "description": "下りた 空気が、まわりの 気圧が 上がって 縮む ことです。温度が 上がります。フェーン現象や 高気圧の 晴れに つながります。"
+ },
+ {
+  "id": "ta-kansodan",
+  "name": "乾燥断熱減率",
+  "reading": "かんそうだんねつげんりつ",
+  "journey": "taiki",
+  "category": "断熱変化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏜",
+  "mapNode": "taiki:dannetsu",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-shitsujun",
+   "ta-genritsu",
+   "ta-oni"
+  ],
+  "description": "飽和して いない 空気が 上下する ときの 温度の 変わる 割合です。およそ 10℃/km(9.8℃/km)。湿度に 関係なく ほぼ 一定です。"
+ },
+ {
+  "id": "ta-shitsujun",
+  "name": "湿潤断熱減率",
+  "reading": "しつじゅんだんねつげんりつ",
+  "journey": "taiki",
+  "category": "断熱変化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "taiki:dannetsu",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kansodan",
+   "ta-sennetsu",
+   "ta-genritsu"
+  ],
+  "description": "飽和した 空気が 上がる ときの 温度の 下がる 割合です。潜熱が 出るので 乾燥断熱減率より 小さく、およそ 4〜7℃/km。暖かいほど 小さい。"
+ },
+ {
+  "id": "ta-antei",
+  "name": "大気の安定",
+  "reading": "たいきのあんてい",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-fuantei",
+   "ta-zettaiantei",
+   "ta-gyakuten"
+  ],
+  "description": "空気の かたまりを 少し 持ち上げても、もとの 高さに もどろうと する 状態です。雲が 上へ 育ちにくく、層状の 雲や 霧に なりやすい。"
+ },
+ {
+  "id": "ta-fuantei",
+  "name": "大気の不安定",
+  "reading": "たいきのふあんてい",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⤴️",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-antei",
+   "ta-cape",
+   "ta-joken"
+  ],
+  "description": "空気の かたまりを 少し 持ち上げると、どんどん 上がって いく 状態です。積乱雲が 発達しやすく、雷や 強い 雨に 注意します。"
+ },
+ {
+  "id": "ta-sennetsu",
+  "name": "潜熱",
+  "reading": "せんねつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫖",
+  "mapNode": "taiki:senne",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kennetsu",
+   "ta-gyoketsunetsu",
+   "ta-kikanetsu"
+  ],
+  "description": "水が 水蒸気・水・氷の あいだで すがたを 変える ときに、出入りする 熱です。温度は 変えずに、凝結の ときに 大気を 温めます。"
+ },
+ {
+  "id": "ta-kennetsu",
+  "name": "顕熱",
+  "reading": "けんねつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "taiki:senne",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-sennetsu",
+   "ta-tairyu",
+   "ta-netsushushi"
+  ],
+  "description": "温度の 変化として 伝わる 熱です。温まった 地面から 空気へ 伝わり、気温を 上げます。地表の 熱収支で 潜熱と ならべて 考えます。"
+ },
+ {
+  "id": "ta-tairyu",
+  "name": "対流",
+  "reading": "たいりゅう",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "taiki:taiko",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-josho",
+   "ta-fuantei",
+   "ta-tairyuken"
+  ],
+  "description": "温まって 軽く なった 空気が 上がり、冷えた 空気が 下りる 動きです。夏の 午後の 積乱雲は、この 対流で 育ちます。"
+ },
+ {
+  "id": "ta-taiyohosha",
+  "name": "太陽放射",
+  "reading": "たいようほうしゃ",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-tanpa",
+   "ta-chikyuhosha",
+   "ta-taiyoteisu"
+  ],
+  "description": "太陽が 出す 放射です。いちばん 強いのは 目に 見える 光の あたりで、波長が 短いので 短波放射とも いいます。"
+ },
+ {
+  "id": "ta-chikyuhosha",
+  "name": "地球放射",
+  "reading": "ちきゅうほうしゃ",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-choha",
+   "ta-taiyohosha",
+   "ta-onshitsu"
+  ],
+  "description": "地面や 大気が 出す 放射です。おもに 赤外線で、波長が 長いので 長波放射とも いいます。夜も 出つづけます。"
+ },
+ {
+  "id": "ta-albedo",
+  "name": "アルベド",
+  "reading": "あるべど",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪞",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-taiyohosha",
+   "ta-hoshaheiko",
+   "ta-netsushushi"
+  ],
+  "description": "とどいた 太陽放射の うち、はね返される 割合です。地球 全体では およそ 0.3。雪や 雲は 大きく、海は 小さい 値です。"
+ },
+ {
+  "id": "ta-netsushushi",
+  "name": "熱収支",
+  "reading": "ねつしゅうし",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-albedo",
+   "ta-taiyohosha",
+   "ta-chikyuhosha"
+  ],
+  "description": "入って くる エネルギーと 出て いく エネルギーの 出入りの ことです。地球 全体では、太陽放射と 地球放射が ほぼ つりあって います。"
+ },
+ {
+  "id": "ta-gyakuten",
+  "name": "逆転層",
+  "reading": "ぎゃくてんそう",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-secchi",
+   "ta-chinkosei",
+   "ta-zensensei"
+  ],
+  "description": "上へ いくほど 気温が 高く なる 層です。とても 安定で、下の 空気が 上へ ぬけません。霧や 煙が たまりやすく なります。"
+ },
+ {
+  "id": "ta-hyojun",
+  "name": "標準大気",
+  "reading": "ひょうじゅんたいき",
+  "journey": "taiki",
+  "category": "気圧と高さ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "taiki:takasa",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-genritsu",
+   "ta-geopo",
+   "ta-kenkaimen"
+  ],
+  "description": "世界の 平均的な 大気を まねた もの差しです。海面で 15℃・1013.25hPa、11km まで 6.5℃/km で 下がると 決めて います。飛行機の 高度計にも 使います。"
+ },
+ {
+  "id": "ta-seiriki",
+  "name": "静力学平衡",
+  "reading": "せいりきがくへいこう",
+  "journey": "taiki",
+  "category": "気圧と高さ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "taiki:seiriki",
+  "field": "大気の力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-jotai",
+   "ta-soko",
+   "ta-geopo"
+  ],
+  "description": "空気が 上下に 動かない ように、上向きの 気圧傾度力と 下向きの 重力が つりあって いる 状態です。高層の 気圧と 高さの 計算の もとです。"
+ },
+ {
+  "id": "ta-kukikai",
+  "name": "空気塊",
+  "reading": "くうきかい",
+  "journey": "taiki",
+  "category": "断熱変化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "taiki:dannetsu",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-dannetsu",
+   "ta-furyoku",
+   "ta-lcl"
+  ],
+  "description": "大気の 動きを 考える ために、まわりと まざらない と 考えた 小さな 空気の かたまりです。持ち上げて 安定・不安定を 調べます。"
+ },
+ {
+  "id": "ta-kashi",
+  "name": "可視光線",
+  "reading": "かしこうせん",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌈",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-taiyohosha",
+   "ta-shigaisen",
+   "ta-sekigaisen"
+  ],
+  "description": "目に 見える 光です。波長は およそ 0.4〜0.7μm。気象衛星の 可視画像は、昼間に 雲が 太陽の 光を はね返す ようすを 見ます。"
+ },
+ {
+  "id": "ta-sanran",
+  "name": "散乱",
+  "reading": "さんらん",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💫",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-rayleigh",
+   "ta-mie",
+   "ta-aerosol"
+  ],
+  "description": "光が 空気の 分子や つぶに 当たって、いろいろな 向きに 広がる ことです。空が 青く、雲が 白く 見える わけです。"
+ },
+ {
+  "id": "ta-kyushu",
+  "name": "吸収",
+  "reading": "きゅうしゅう",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧽",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-sanran",
+   "ta-mado",
+   "ta-ozon"
+  ],
+  "description": "放射を 受けとめて、熱などに 変える ことです。オゾンは 紫外線を、水蒸気や 二酸化炭素は 赤外線を よく 吸収します。"
+ },
+ {
+  "id": "ta-ozonhole",
+  "name": "オゾンホール",
+  "reading": "おぞんほーる",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕳",
+  "mapNode": "taiki:seiso",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-ozon",
+   "ta-fron",
+   "ta-psc"
+  ],
+  "description": "南極の 上空で、春に オゾンが 大きく へる 所です。へえ: 南極の 春は 9〜10月。フロンの 規制で、少しずつ もどって きて います。"
+ },
+ {
+  "id": "ta-fron",
+  "name": "フロン",
+  "reading": "ふろん",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "taiki:seiso",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-ozonhole",
+   "ta-ozon",
+   "ta-psc"
+  ],
+  "description": "むかし 冷蔵庫などに 使われた 物質です。成層圏で 塩素を 出し、オゾンを こわします。モントリオール議定書で 世界が 規制しました。"
+ },
+ {
+  "id": "ta-hoshareikyaku",
+  "name": "放射冷却",
+  "reading": "ほうしゃれいきゃく",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌌",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-chikyuhosha",
+   "ta-secchi",
+   "ta-gyakuten"
+  ],
+  "description": "晴れて 風の 弱い 夜に、地面が 放射で 熱を 出して 冷える ことです。朝の 冷えこみや 霜・霧の 予報で 大事に なります。"
+ },
+ {
+  "id": "ta-kikanetsu",
+  "name": "気化熱",
+  "reading": "きかねつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "taiki:senne",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-johatsu",
+   "ta-sennetsu",
+   "ta-gyoketsunetsu"
+  ],
+  "description": "水が 蒸発する ときに、まわりから うばう 熱です。打ち水で すずしく なるのも これです。湿球温度が 低く 出る わけです。"
+ },
+ {
+  "id": "ta-gyoketsunetsu",
+  "name": "凝結熱",
+  "reading": "ぎょうけつねつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "taiki:senne",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-gyoketsu",
+   "ta-sennetsu",
+   "ta-shitsujun"
+  ],
+  "description": "水蒸気が 水に なる ときに 出す 熱です。雲の 中の 空気を 温めて 上昇を 強め、積乱雲や 台風の エネルギーに なります。"
+ },
+ {
+  "id": "ta-oni",
+  "name": "温位",
+  "reading": "おんい",
+  "journey": "taiki",
+  "category": "温位",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "taiki:oni",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-soto",
+   "ta-kansodan",
+   "ta-hozonryo"
+  ],
+  "description": "空気を 1000hPa まで 乾燥断熱で 下ろした ときの 温度です。乾燥断熱変化では 変わらないので、空気の かたまりの 目じるしに なります。"
+ },
+ {
+  "id": "ta-soto",
+  "name": "相当温位",
+  "reading": "そうとうおんい",
+  "journey": "taiki",
+  "category": "温位",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "taiki:oni",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-oni",
+   "ta-tairyufuan",
+   "ta-shikkyuoni"
+  ],
+  "description": "空気の 水蒸気を すべて 凝結させ、その 潜熱で 温めた うえで もとめた 温位です。850hPa で 高い 所は 湿った 暖気で、大雨の 目じるしに なります。"
+ },
+ {
+  "id": "ta-shikkyuoni",
+  "name": "湿球温位",
+  "reading": "しっきゅうおんい",
+  "journey": "taiki",
+  "category": "温位",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "taiki:oni",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-soto",
+   "ta-oni",
+   "ta-hozonryo"
+  ],
+  "description": "湿球温度を もとに した 温位です。乾燥断熱でも 湿潤断熱でも ほぼ 変わらないので、空気の かたまりを 見分ける 目じるしに 使えます。"
+ },
+ {
+  "id": "ta-kaondo",
+  "name": "仮温度",
+  "reading": "かおんど",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-jotai",
+   "ta-hishitsu",
+   "ta-soko"
+  ],
+  "description": "湿った 空気と 同じ 気圧・同じ 密度の 乾燥空気の 温度です。水蒸気は 軽いので、仮温度は 気温より 少し 高く なります。"
+ },
+ {
+  "id": "ta-kongohi",
+  "name": "混合比",
+  "reading": "こんごうひ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-hishitsu",
+   "ta-howakongo",
+   "ta-suijokiatsu"
+  ],
+  "description": "乾燥空気 1kg に、何g の 水蒸気が まざって いるかを 表した 量です。断熱変化では 凝結しない かぎり 変わりません。エマグラムで 使います。"
+ },
+ {
+  "id": "ta-hishitsu",
+  "name": "比湿",
+  "reading": "ひしつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kongohi",
+   "ta-kaondo",
+   "ta-suijokiatsu"
+  ],
+  "description": "湿った 空気 1kg の 中に、水蒸気が 何g ふくまれるかを 表した 量です。値は 混合比と ほとんど 同じです。"
+ },
+ {
+  "id": "ta-howakongo",
+  "name": "飽和混合比",
+  "reading": "ほうわこんごうひ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kongohi",
+   "ta-howasuijokiatsu",
+   "ta-lcl"
+  ],
+  "description": "空気が 飽和した ときの 混合比です。気温と 気圧で 決まります。エマグラムの 等飽和混合比線は これを 表します。"
+ },
+ {
+  "id": "ta-suijokiatsu",
+  "name": "水蒸気圧",
+  "reading": "すいじょうきあつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-howasuijokiatsu",
+   "ta-kongohi",
+   "ta-hishitsu"
+  ],
+  "description": "空気の 気圧の うち、水蒸気が 受け持つ 分です。露点の 温度で 飽和する 水蒸気圧と 同じ 値に なります。"
+ },
+ {
+  "id": "ta-howasuijokiatsu",
+  "name": "飽和水蒸気圧",
+  "reading": "ほうわすいじょうきあつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-suijokiatsu",
+   "ta-cc",
+   "ta-howa"
+  ],
+  "description": "空気が 飽和した ときの 水蒸気圧です。温度だけで 決まり、温度が 高いほど 大きく なります。氷の 上では 水の 上より 少し 小さい。"
+ },
+ {
+  "id": "ta-cc",
+  "name": "クラウジウス・クラペイロンの式",
+  "reading": "くらうじうすくらぺいろんのしき",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "taiki:suijoki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-howasuijokiatsu",
+   "ta-sennetsu",
+   "ta-howa"
+  ],
+  "description": "飽和水蒸気圧が 温度で どう 変わるかを 表す 式です。へえ: 気温が 1℃ 上がると、飽和水蒸気圧は およそ 7% ふえます。"
+ },
+ {
+  "id": "ta-jotai",
+  "name": "状態方程式",
+  "reading": "じょうたいほうていしき",
+  "journey": "taiki",
+  "category": "気圧と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "taiki:seiriki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kitaiteisu",
+   "ta-seiriki",
+   "ta-kaondo"
+  ],
+  "description": "気圧・密度・温度の 関係を 表す 式で、p = ρRT です。気圧が 同じなら、温度の 高い 空気ほど 密度が 小さく 軽く なります。"
+ },
+ {
+  "id": "ta-kitaiteisu",
+  "name": "気体定数",
+  "reading": "きたいていすう",
+  "journey": "taiki",
+  "category": "気圧と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔣",
+  "mapNode": "taiki:seiriki",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-jotai",
+   "ta-teiatsu",
+   "ta-kaondo"
+  ],
+  "description": "状態方程式に 出て くる 定数 R です。乾燥空気では およそ 287 J/(kg・K)。温位の 式にも 出て きます。"
+ },
+ {
+  "id": "ta-hinetsu",
+  "name": "比熱",
+  "reading": "ひねつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "taiki:senne",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-teiatsu",
+   "ta-kennetsu",
+   "ta-daiichi"
+  ],
+  "description": "1kg の ものを 1K(1℃)上げる のに 必要な 熱です。水は 比熱が 大きいので、海は 温まりにくく 冷めにくい のです。"
+ },
+ {
+  "id": "ta-teiatsu",
+  "name": "定圧比熱",
+  "reading": "ていあつひねつ",
+  "journey": "taiki",
+  "category": "水蒸気と熱",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "taiki:senne",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-hinetsu",
+   "ta-daiichi",
+   "ta-oni"
+  ],
+  "description": "気圧を 一定に 保って 温めた ときの 比熱です。乾燥空気では およそ 1004 J/(kg・K)。乾燥断熱減率は 重力加速度を これで わった 値です。"
+ },
+ {
+  "id": "ta-daiichi",
+  "name": "熱力学第一法則",
+  "reading": "ねつりきがくだいいちほうそく",
+  "journey": "taiki",
+  "category": "断熱変化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "taiki:dannetsu",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-dannetsu",
+   "ta-teiatsu",
+   "ta-hinetsu"
+  ],
+  "description": "加えた 熱は、内部エネルギーの 増加と 外への 仕事に 分かれる と いう 法則です。熱を 加えずに ふくらむと、温度が 下がる わけが わかります。"
+ },
+ {
+  "id": "ta-lcl",
+  "name": "持ち上げ凝結高度",
+  "reading": "もちあげぎょうけつこうど",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-lfc",
+   "ta-howakongo",
+   "ta-kukikai"
+  ],
+  "description": "地上の 空気を 乾燥断熱で 持ち上げた とき、飽和する 高さです。雲底の 高さの 目安で、エマグラムで もとめます。"
+ },
+ {
+  "id": "ta-lfc",
+  "name": "自由対流高度",
+  "reading": "じゆうたいりゅうこうど",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-lcl",
+   "ta-el",
+   "ta-cin"
+  ],
+  "description": "持ち上げた 空気が、まわりより 暖かく なって 自分で 上がり始める 高さです。ここまで 持ち上げる きっかけが あると 対流が 始まります。"
+ },
+ {
+  "id": "ta-el",
+  "name": "平衡高度",
+  "reading": "へいこうこうど",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-lfc",
+   "ta-cape",
+   "ta-kenkaimen"
+  ],
+  "description": "上がって きた 空気の 温度が、まわりと 同じに なる 高さです。浮力が なくなり、積乱雲の 雲頂の 目安に なります。"
+ },
+ {
+  "id": "ta-cape",
+  "name": "CAPE(対流有効位置エネルギー)",
+  "reading": "たいりゅうゆうこういちえねるぎー",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-cin",
+   "ta-lfc",
+   "ta-el"
+  ],
+  "description": "自由対流高度から 平衡高度までに、空気の かたまりが もらえる 浮力の エネルギーです。大きいほど 強い 対流が 起こりえます。"
+ },
+ {
+  "id": "ta-cin",
+  "name": "対流抑制(CIN)",
+  "reading": "たいりゅうよくせい",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-cape",
+   "ta-lfc",
+   "ta-lcl"
+  ],
+  "description": "自由対流高度まで 持ち上げる ために こえる 必要が ある、じゃまの エネルギーです。大きいと、不安定でも 対流が 始まりにくく なります。"
+ },
+ {
+  "id": "ta-joken",
+  "name": "条件付き不安定",
+  "reading": "じょうけんつきふあんてい",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-zettaiantei",
+   "ta-zettaifuan",
+   "ta-lfc"
+  ],
+  "description": "気温減率が 湿潤断熱減率より 大きく、乾燥断熱減率より 小さい 状態です。飽和して いなければ 安定、飽和すると 不安定に なります。"
+ },
+ {
+  "id": "ta-zettaiantei",
+  "name": "絶対安定",
+  "reading": "ぜったいあんてい",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧘",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-joken",
+   "ta-zettaifuan",
+   "ta-antei"
+  ],
+  "description": "気温減率が 湿潤断熱減率より 小さい 状態です。飽和して いても いなくても、持ち上げた 空気は もとに もどります。"
+ },
+ {
+  "id": "ta-zettaifuan",
+  "name": "絶対不安定",
+  "reading": "ぜったいふあんてい",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⤴️",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-joken",
+   "ta-zettaiantei",
+   "ta-churitsu"
+  ],
+  "description": "気温減率が 乾燥断熱減率より 大きい 状態です。すぐに 対流が 起きて 解消されるので、ふつうは 晴れた 日中の 地面 近くの うすい 層で 見られる くらいです。"
+ },
+ {
+  "id": "ta-tairyufuan",
+  "name": "対流不安定",
+  "reading": "たいりゅうふあんてい",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-soto",
+   "ta-fuantei",
+   "ta-senzai"
+  ],
+  "description": "上ほど 相当温位が 低い 層の 性質です。層 全体が 持ち上げられて 飽和すると 不安定に なります。下層に 湿った 暖気が 入ると 起こります。"
+ },
+ {
+  "id": "ta-senzai",
+  "name": "潜在不安定",
+  "reading": "せんざいふあんてい",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-cape",
+   "ta-lfc",
+   "ta-tairyufuan"
+  ],
+  "description": "空気の かたまりを 自由対流高度より 上まで 持ち上げると、まわりより 暖かく なって 浮力が 生まれる 状態です。CAPE が ある 状態とも いえます。"
+ },
+ {
+  "id": "ta-churitsu",
+  "name": "中立安定",
+  "reading": "ちゅうりつあんてい",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-zettaiantei",
+   "ta-zettaifuan",
+   "ta-antei"
+  ],
+  "description": "気温減率が 断熱減率と 等しい 状態です。持ち上げた 空気は、その 高さで そのまま 止まります。"
+ },
+ {
+  "id": "ta-chinkosei",
+  "name": "沈降性逆転",
+  "reading": "ちんこうせいぎゃくてん",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-gyakuten",
+   "ta-kako",
+   "ta-zensensei"
+  ],
+  "description": "高気圧の 下降気流で 空気が 縮んで 温まり、できる 逆転層です。逆転層の 上は 乾燥して いるのが 見分ける ポイントです。"
+ },
+ {
+  "id": "ta-zensensei",
+  "name": "前線性逆転",
+  "reading": "ぜんせんせいぎゃくてん",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎢",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-gyakuten",
+   "ta-chinkosei",
+   "ta-secchi"
+  ],
+  "description": "前線面の 下の 冷たい 空気と、上の 暖かい 空気の 境で できる 逆転層です。逆転層の 上の 空気が 湿って いるのが 目じるしです。"
+ },
+ {
+  "id": "ta-secchi",
+  "name": "接地逆転",
+  "reading": "せっちぎゃくてん",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-hoshareikyaku",
+   "ta-gyakuten",
+   "ta-kyokaiso"
+  ],
+  "description": "晴れた 夜の 放射冷却で 地面 近くが 冷え、地面に 接して できる 逆転層です。朝の 霧や 冷えこみの もとに なります。"
+ },
+ {
+  "id": "ta-kongoso",
+  "name": "混合層",
+  "reading": "こんごうそう",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥣",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kyokaiso",
+   "ta-tairyu",
+   "ta-jiyutaiki"
+  ],
+  "description": "日中に 地面が 温められ、対流や 乱流で 空気が よく まざった 下の 層です。中では 温位や 混合比が ほぼ 一定に なります。"
+ },
+ {
+  "id": "ta-kyokaiso",
+  "name": "大気境界層",
+  "reading": "たいききょうかいそう",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪵",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-jiyutaiki",
+   "ta-kongoso",
+   "ta-secchi"
+  ],
+  "description": "地面の 摩擦や 熱の 影響を 受ける、大気の いちばん 下の 層です。厚さは およそ 1km ですが、昼と 夜で 大きく 変わります。"
+ },
+ {
+  "id": "ta-jiyutaiki",
+  "name": "自由大気",
+  "reading": "じゆうたいき",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕊",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kyokaiso",
+   "ta-kongoso",
+   "ta-tairyuken"
+  ],
+  "description": "大気境界層より 上の、地面の 摩擦を ほとんど 受けない 大気です。ここの 風は 地衡風に 近く なります。"
+ },
+ {
+  "id": "ta-gidannetsu",
+  "name": "偽断熱過程",
+  "reading": "ぎだんねつかてい",
+  "journey": "taiki",
+  "category": "断熱変化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "taiki:dannetsu",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-shitsujun",
+   "ta-shikkyuoni",
+   "ta-dannetsu"
+  ],
+  "description": "飽和した 空気が 上がる とき、できた 水や 氷は すぐ 落ちて しまうと 考える 変化です。エマグラムの 湿潤断熱線は ふつう これで 引きます。"
+ },
+ {
+  "id": "ta-kinshitsu",
+  "name": "均質圏",
+  "reading": "きんしつけん",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟰",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-chisso",
+   "ta-sanso",
+   "ta-netsuken"
+  ],
+  "description": "気体が よく まざり、成分の 割合が ほぼ 同じ 大気の 範囲です。地上から およそ 80km まで。その 上を 非均質圏と いいます。"
+ },
+ {
+  "id": "ta-denriso",
+  "name": "電離層",
+  "reading": "でんりそう",
+  "journey": "taiki",
+  "category": "大気の層",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📻",
+  "mapNode": "taiki:so",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-netsuken",
+   "ta-chukanken",
+   "ta-taiki"
+  ],
+  "description": "太陽の 強い 光で 空気が 電気を おびた 層です。おもに 熱圏に あり、電波を はね返すので 遠くまで 無線が とどきます。"
+ },
+ {
+  "id": "ta-totsuzen",
+  "name": "成層圏突然昇温",
+  "reading": "せいそうけんとつぜんしょうおん",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "taiki:seiso",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kyokuuzu",
+   "ta-seisoken",
+   "ta-qbo"
+  ],
+  "description": "冬の 極の 成層圏で、数日の うちに 気温が 大きく 上がる 現象です。下から 上がって くる 大きな 波が 極渦を 弱める ことで 起こります。"
+ },
+ {
+  "id": "ta-qbo",
+  "name": "準2年周期振動",
+  "reading": "じゅんにねんしゅうきしんどう",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "taiki:seiso",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-seisoken",
+   "ta-totsuzen",
+   "ta-kyokuuzu"
+  ],
+  "description": "赤道の 上空の 成層圏で、東風と 西風が およそ 2年あまりの 周期で 入れかわる 現象です。風の 向きは 上から 下へ おりて きます。"
+ },
+ {
+  "id": "ta-psc",
+  "name": "極成層圏雲",
+  "reading": "きょくせいそうけんうん",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "taiki:seiso",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-ozonhole",
+   "ta-kyokuuzu",
+   "ta-fron"
+  ],
+  "description": "冬の 極の とても 寒い 成層圏に できる 雲です。この 雲の つぶの 表面で 反応が 進み、オゾンを こわす 塩素が 出やすく なります。"
+ },
+ {
+  "id": "ta-chapman",
+  "name": "チャップマン機構",
+  "reading": "ちゃっぷまんきこう",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "taiki:seiso",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-ozon",
+   "ta-shigaisen",
+   "ta-sanso"
+  ],
+  "description": "紫外線で 酸素分子が わかれ、酸素原子と くっついて オゾンが でき、また こわれる 反応の 組み合わせです。オゾン層の でき方の 基本です。"
+ },
+ {
+  "id": "ta-kyokuuzu",
+  "name": "極渦",
+  "reading": "きょくうず",
+  "journey": "taiki",
+  "category": "成層圏とオゾン",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "taiki:seiso",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-totsuzen",
+   "ta-psc",
+   "ta-ozonhole"
+  ],
+  "description": "冬の 極の 上空を 取りまく、強い 西風の 大きな 渦です。中に 冷たい 空気を 閉じこめます。南極の 極渦は とくに 強く 安定です。"
+ },
+ {
+  "id": "ta-hoshaheiko",
+  "name": "放射平衡温度",
+  "reading": "ほうしゃへいこうおんど",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-onshitsu",
+   "ta-albedo",
+   "ta-stefan"
+  ],
+  "description": "入る 太陽放射と 出る 放射が つりあった ときの 温度です。地球は およそ −18℃。実際の 平均 およそ 15℃ との 差が 温室効果です。"
+ },
+ {
+  "id": "ta-stefan",
+  "name": "ステファン・ボルツマンの法則",
+  "reading": "すてふぁんぼるつまんのほうそく",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kokutai",
+   "ta-wien",
+   "ta-hoshaheiko"
+  ],
+  "description": "黒体が 出す 放射の 強さは、絶対温度の 4乗に 比例する と いう 法則です。温度が 2倍に なると 放射は 16倍に なります。"
+ },
+ {
+  "id": "ta-wien",
+  "name": "ウィーンの変位則",
+  "reading": "うぃーんのへんいそく",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌈",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-stefan",
+   "ta-kokutai",
+   "ta-taiyohosha"
+  ],
+  "description": "放射が いちばん 強い 波長は、温度が 高いほど 短い と いう 法則です。太陽は 可視光、地球は 赤外線が いちばん 強く なります。"
+ },
+ {
+  "id": "ta-kokutai",
+  "name": "黒体",
+  "reading": "こくたい",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-stefan",
+   "ta-kirchhoff",
+   "ta-hosharitsu"
+  ],
+  "description": "とどいた 放射を すべて 吸収し、その 温度で 出せる いちばん 強い 放射を 出す、理想の 物体です。放射の 法則の もとに なります。"
+ },
+ {
+  "id": "ta-taiyoteisu",
+  "name": "太陽定数",
+  "reading": "たいようていすう",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-taiyohosha",
+   "ta-albedo",
+   "ta-hoshaheiko"
+  ],
+  "description": "大気の 上で、太陽に 向いた 面が 受ける 太陽放射の 強さです。およそ 1370 W/m²。地球の 熱収支の 計算の 出発点です。"
+ },
+ {
+  "id": "ta-mado",
+  "name": "大気の窓",
+  "reading": "たいきのまど",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-chikyuhosha",
+   "ta-kyushu",
+   "ta-sekigaisen"
+  ],
+  "description": "大気に ほとんど 吸収されない、およそ 8〜12μm の 赤外線の 波長帯です。気象衛星の 赤外画像は この 波長で 雲や 地面を 見ます。"
+ },
+ {
+  "id": "ta-tanpa",
+  "name": "短波放射",
+  "reading": "たんぱほうしゃ",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔆",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-choha",
+   "ta-taiyohosha",
+   "ta-albedo"
+  ],
+  "description": "太陽からの 放射の ことです。地球の 放射より 波長が ずっと 短いので こう よびます。可視光や 紫外線が ふくまれます。"
+ },
+ {
+  "id": "ta-choha",
+  "name": "長波放射",
+  "reading": "ちょうはほうしゃ",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-tanpa",
+   "ta-chikyuhosha",
+   "ta-mado"
+  ],
+  "description": "地面や 大気、雲が 出す 赤外線の 放射です。雲が 多い 夜は、雲からの 長波放射で 冷えこみが 弱く なります。"
+ },
+ {
+  "id": "ta-rayleigh",
+  "name": "レイリー散乱",
+  "reading": "れいりーさんらん",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟦",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-mie",
+   "ta-sanran",
+   "ta-kashi"
+  ],
+  "description": "光の 波長より ずっと 小さな 空気の 分子による 散乱です。波長の 短い 青い 光ほど 強く 散らばるので、空は 青く 見えます。"
+ },
+ {
+  "id": "ta-mie",
+  "name": "ミー散乱",
+  "reading": "みーさんらん",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-rayleigh",
+   "ta-sanran",
+   "ta-aerosol"
+  ],
+  "description": "雲の つぶなど、光の 波長と 同じくらいか、それより 大きな つぶに よる 散乱です。色に よらず 散らばるので、雲は 白く 見えます。"
+ },
+ {
+  "id": "ta-hosharitsu",
+  "name": "放射率",
+  "reading": "ほうしゃりつ",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kokutai",
+   "ta-kirchhoff",
+   "ta-stefan"
+  ],
+  "description": "同じ 温度の 黒体と くらべて、どれだけ 放射を 出すかの 割合です。0〜1 の 値で、黒体は 1 です。"
+ },
+ {
+  "id": "ta-kirchhoff",
+  "name": "キルヒホッフの法則",
+  "reading": "きるひほっふのほうそく",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-hosharitsu",
+   "ta-kokutai",
+   "ta-kyushu"
+  ],
+  "description": "同じ 温度・同じ 波長では、吸収率と 放射率が 等しい と いう 法則です。よく 吸収する ものは、よく 放射も します。"
+ },
+ {
+  "id": "ta-aerosol",
+  "name": "エーロゾル",
+  "reading": "えーろぞる",
+  "journey": "taiki",
+  "category": "放射",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫",
+  "mapNode": "taiki:hosha",
+  "field": "大気の放射",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-mie",
+   "ta-sanran",
+   "ta-albedo"
+  ],
+  "description": "空気中に うかぶ ちりや 塩、すすなどの 小さな つぶです。日ざしを さえぎる 日傘効果が あり、雲が できる ときの 凝結核にも なります。"
+ },
+ {
+  "id": "ta-geopo",
+  "name": "ジオポテンシャル高度",
+  "reading": "じおぽてんしゃるこうど",
+  "journey": "taiki",
+  "category": "気圧と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "taiki:takasa",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-seiriki",
+   "ta-soko",
+   "ta-scaleh"
+  ],
+  "description": "重力の 強さの ちがいを ならして 表した 高さです。高層天気図の 等高度線は この 高さで かきます。単位は gpm。"
+ },
+ {
+  "id": "ta-soko",
+  "name": "層厚",
+  "reading": "そうこう",
+  "journey": "taiki",
+  "category": "気圧と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "taiki:takasa",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-sokko",
+   "ta-geopo",
+   "ta-kaondo"
+  ],
+  "description": "2つの 気圧面の あいだの 厚さです。その 間の 平均の 気温が 高いほど 厚く なります。寒気が 入ると うすく なります。"
+ },
+ {
+  "id": "ta-sokko",
+  "name": "測高公式",
+  "reading": "そっこうこうしき",
+  "journey": "taiki",
+  "category": "気圧と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "taiki:takasa",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-soko",
+   "ta-seiriki",
+   "ta-jotai"
+  ],
+  "description": "静力学平衡と 状態方程式から 導く、層厚と 平均気温の 関係の 式です。気圧面の 高さを 計算する ときに 使います。"
+ },
+ {
+  "id": "ta-scaleh",
+  "name": "スケールハイト",
+  "reading": "すけーるはいと",
+  "journey": "taiki",
+  "category": "気圧と高さ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "taiki:takasa",
+  "field": "大気の構造",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-geopo",
+   "ta-seiriki",
+   "ta-soko"
+  ],
+  "description": "高さが 上がって 気圧が 1/e(およそ 37%)に なる 高さです。地球の 大気では およそ 8km。気圧の へりかたの 目安に なります。"
+ },
+ {
+  "id": "ta-furyoku",
+  "name": "浮力",
+  "reading": "ふりょく",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-kukikai",
+   "ta-cape",
+   "ta-brunt"
+  ],
+  "description": "まわりより 軽い 空気の かたまりが 受ける、上向きの 力です。まわりより 温度が 高いと 浮力が 生まれ、上昇します。"
+ },
+ {
+  "id": "ta-brunt",
+  "name": "ブラント・バイサラ振動数",
+  "reading": "ぶらんとばいさらしんどうすう",
+  "journey": "taiki",
+  "category": "安定と不安定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "taiki:antei",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-furyoku",
+   "ta-antei",
+   "ta-oni"
+  ],
+  "description": "安定な 大気で、上下に ずらした 空気が もとの 高さの まわりで ゆれる 速さです。大きいほど 大気が 安定です。山の 風下の 波と 関係します。"
+ },
+ {
+  "id": "ta-hozonryo",
+  "name": "保存量",
+  "reading": "ほぞんりょう",
+  "journey": "taiki",
+  "category": "温位",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "taiki:oni",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ta-oni",
+   "ta-shikkyuoni",
+   "ta-soto"
+  ],
+  "description": "断熱変化の あいだ 値が 変わらない 量です。温位や 相当温位など。空気が 動いても 追いかけられるので、気団の 見分けに 使います。"
+ }
+]

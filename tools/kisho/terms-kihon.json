@@ -1,0 +1,2092 @@
+[
+ {
+  "id": "ki-tenki",
+  "name": "天気",
+  "reading": "てんき",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌤",
+  "mapNode": "kihon:kigo",
+  "field": "気象現象",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-hare",
+   "ki-kumori",
+   "ki-kigo"
+  ],
+  "description": "晴れ・曇り・雨 など、その ときの 空の ようすの ことです。予報士は 天気図と 観測から、これからの 天気を 予想して 伝えます。"
+ },
+ {
+  "id": "ki-hare",
+  "name": "晴れ",
+  "reading": "はれ",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "kihon:kigo",
+  "field": "気象現象",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-kaisei",
+   "ki-unryo",
+   "ki-kumori"
+  ],
+  "description": "空を おおう 雲の 量(雲量)が 2〜8 の ときの 天気です。へえ: 雲が 半分以上 あっても、雲量 8 までなら「晴れ」です。"
+ },
+ {
+  "id": "ki-kumori",
+  "name": "曇り",
+  "reading": "くもり",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "kihon:kigo",
+  "field": "気象現象",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-hare",
+   "ki-unryo",
+   "ki-kumo"
+  ],
+  "description": "雲量が 9 以上で、雨や 雪などが 降って いない 天気です。予報では 雲の 多さと 降るか どうかを 分けて 考えます。"
+ },
+ {
+  "id": "ki-ame",
+  "name": "雨",
+  "reading": "あめ",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "kihon:kosui",
+  "field": "降水過程",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-kosuiryo",
+   "ki-kumo",
+   "ki-yuki"
+  ],
+  "description": "雲の 中で 大きく なった 水の つぶが 落ちて くる ものです。予報士は 雨の 量と 強さ、降る 時間を 予想します。"
+ },
+ {
+  "id": "ki-yuki",
+  "name": "雪",
+  "reading": "ゆき",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "kihon:kosui",
+  "field": "降水過程",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-sekisetsu",
+   "ki-mizore",
+   "ki-ame"
+  ],
+  "description": "雲の 中で できた 氷の 結晶が とけずに 落ちて くる ものです。地上の 気温と 上空の 気温で、雨か 雪かが 分かれます。"
+ },
+ {
+  "id": "ki-kaze",
+  "name": "風",
+  "reading": "かぜ",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "kihon:kaze",
+  "field": "大気の力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-fuko",
+   "ki-fusoku",
+   "ki-kiatsu"
+  ],
+  "description": "空気の 動きです。気圧の 高い ほうから 低い ほうへ 動こうと します。天気図の 等圧線が こむ ほど 風が 強く なります。"
+ },
+ {
+  "id": "ki-kion",
+  "name": "気温",
+  "reading": "きおん",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "kihon:kion",
+  "field": "大気の構造",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-saiko",
+   "ki-saitei",
+   "ki-hyakuyo"
+  ],
+  "description": "空気の 温度です。気象庁は 日なたを さけ、地上 およそ 1.5m の 高さで はかります。予報では 最高気温と 最低気温を 出します。"
+ },
+ {
+  "id": "ki-kiatsu",
+  "name": "気圧",
+  "reading": "きあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "kihon:kiatsu",
+  "field": "大気の構造",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-hpa",
+   "ki-touatsu",
+   "ki-koukiatsu"
+  ],
+  "description": "上に ある 空気の 重さで 押される 力です。単位は ヘクトパスカル(hPa)。高い 所ほど 上の 空気が へるので 低く なります。"
+ },
+ {
+  "id": "ki-koukiatsu",
+  "name": "高気圧",
+  "reading": "こうきあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔵",
+  "mapNode": "kihon:koukiatsu",
+  "field": "気象現象",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-teikiatsu",
+   "ki-chushin",
+   "ki-kanreiko"
+  ],
+  "description": "まわりより 気圧が 高い 所です。下降気流で 雲が できにくく、晴れやすく なります。北半球では 時計回りに 風が ふき出します。"
+ },
+ {
+  "id": "ki-teikiatsu",
+  "name": "低気圧",
+  "reading": "ていきあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "kihon:koukiatsu",
+  "field": "気象現象",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-koukiatsu",
+   "ki-zensen",
+   "ki-chushin"
+  ],
+  "description": "まわりより 気圧が 低い 所です。上昇気流で 雲が でき、天気が くずれやすく なります。北半球では 反時計回りに 風が ふきこみます。"
+ },
+ {
+  "id": "ki-zensen",
+  "name": "前線",
+  "reading": "ぜんせん",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "kihon:zensen",
+  "field": "気象現象",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-ondan",
+   "ki-kanrei",
+   "ki-kidan"
+  ],
+  "description": "温度や しめり気の ちがう 空気の かたまりが ぶつかる 境目です。前線の 近くでは 雲が でき、雨が 降りやすく なります。"
+ },
+ {
+  "id": "ki-kumo",
+  "name": "雲",
+  "reading": "くも",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-jisshu",
+   "ki-sekiran",
+   "ki-unryo"
+  ],
+  "description": "空気中の 水蒸気が 冷えて できた、小さな 水や 氷の つぶの 集まりです。雲の 形から 空気の 動きが 読みとれます。"
+ },
+ {
+  "id": "ki-shitsudo",
+  "name": "湿度",
+  "reading": "しつど",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kihon:shitsudo",
+  "field": "大気の熱力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-sotaishitsu",
+   "ki-roten",
+   "ki-howasuijoki"
+  ],
+  "description": "空気の しめり具合です。ふつうは 相対湿度(%)で 表します。湿度が 100% に 近づくと 霧や 雲が できやすく なります。"
+ },
+ {
+  "id": "ki-yoho",
+  "name": "天気予報",
+  "reading": "てんきよほう",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📺",
+  "mapNode": "kihon:yoho",
+  "field": "予報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-kishocho",
+   "ki-shukan",
+   "ki-fuken"
+  ],
+  "description": "観測と 数値予報を もとに、これからの 天気を 予想して 知らせる ことです。気象庁や、許可を 受けた 事業者が 出します。"
+ },
+ {
+  "id": "ki-kakuritsu",
+  "name": "降水確率",
+  "reading": "こうすいかくりつ",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☂️",
+  "mapNode": "kihon:kakuritsu",
+  "field": "予報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-kakuritsuyoho",
+   "ki-kosuiryo",
+   "ki-yoho"
+  ],
+  "description": "決まった 時間に 1mm 以上の 雨や 雪が 降る 確率です。へえ: 30% は「30% の 雨の 量」では なく、降る 確からしさです。"
+ },
+ {
+  "id": "ki-kishocho",
+  "name": "気象庁",
+  "reading": "きしょうちょう",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "kihon:kishocho",
+  "field": "気象業務法",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-chiho",
+   "ki-kanku",
+   "ki-kinenbi"
+  ],
+  "description": "国の 気象の 役所です。観測・予報・警報を 行い、防災の 情報を 出します。国土交通省の 外局です。"
+ },
+ {
+  "id": "ki-fuko",
+  "name": "風向",
+  "reading": "ふうこう",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kihon:kaze",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-16hoi",
+   "ki-fusoku",
+   "ki-yabane"
+  ],
+  "description": "風が ふいて くる 方角です。「北の 風」は 北から ふいて くる 風。ふつう 16方位で 表します。"
+ },
+ {
+  "id": "ki-fusoku",
+  "name": "風速",
+  "reading": "ふうそく",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "kihon:kaze",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-fuko",
+   "ki-shunkan",
+   "ki-saidaifu"
+  ],
+  "description": "風の 速さです。単位は m/s。ふつうは 10分間の 平均の 値を 使います。風速計で はかります。"
+ },
+ {
+  "id": "ki-kosuiryo",
+  "name": "降水量",
+  "reading": "こうすいりょう",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kihon:kosui",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-ame",
+   "ki-kosuikyodo",
+   "ki-kakuritsu"
+  ],
+  "description": "降った 雨や 雪が、流れずに たまった ときの 水の 深さです。単位は mm。雪は とかして 水に して はかります。"
+ },
+ {
+  "id": "ki-hyakuyo",
+  "name": "百葉箱",
+  "reading": "ひゃくようばこ",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "kihon:kion",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-kion",
+   "ki-shitsudo",
+   "ki-kanshitsu"
+  ],
+  "description": "気温や 湿度を はかる 温度計を 入れた、白い 木の 箱です。いまの 気象台では、空気を 送りこむ 通風式の 装置で はかります。"
+ },
+ {
+  "id": "ki-ondan",
+  "name": "温暖前線",
+  "reading": "おんだんぜんせん",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "kihon:zensen",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kanrei",
+   "ki-zensenmen",
+   "ki-ransou"
+  ],
+  "description": "暖かい 空気が 冷たい 空気の 上に ゆっくり はい上がる 前線です。広い 範囲に 乱層雲が でき、しとしと 雨が 長く 続きます。"
+ },
+ {
+  "id": "ki-kanrei",
+  "name": "寒冷前線",
+  "reading": "かんれいぜんせん",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔵",
+  "mapNode": "kihon:zensen",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-ondan",
+   "ki-sekiran",
+   "ki-heisoku"
+  ],
+  "description": "冷たい 空気が 暖かい 空気の 下に もぐりこむ 前線です。積乱雲が でき、せまい 範囲で 強い 雨や 雷・突風が 起こりやすく なります。"
+ },
+ {
+  "id": "ki-teitai",
+  "name": "停滞前線",
+  "reading": "ていたいぜんせん",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟣",
+  "mapNode": "kihon:zensen",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-zensen",
+   "ki-kidan",
+   "ki-zensentai"
+  ],
+  "description": "暖かい 空気と 冷たい 空気の 力が つりあい、ほとんど 動かない 前線です。梅雨前線や 秋雨前線が この なかまです。"
+ },
+ {
+  "id": "ki-heisoku",
+  "name": "閉塞前線",
+  "reading": "へいそくぜんせん",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟪",
+  "mapNode": "kihon:zensen",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-heisokuten",
+   "ki-ondangata",
+   "ki-kanreigata"
+  ],
+  "description": "寒冷前線が 温暖前線に 追いついて できる 前線です。低気圧が 発達の いちばん 強い ころを すぎた 目じるしに なります。"
+ },
+ {
+  "id": "ki-touatsu",
+  "name": "等圧線",
+  "reading": "とうあつせん",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "kihon:kiatsu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-hojo",
+   "ki-kaimenkiatsu",
+   "ki-kiatsu"
+  ],
+  "description": "気圧の 同じ 所を 結んだ 線です。地上天気図では 4hPa ごとの 実線で、20hPa ごとに 太く かきます。こんでいる 所は 風が 強い。"
+ },
+ {
+  "id": "ki-hpa",
+  "name": "ヘクトパスカル",
+  "reading": "へくとぱすかる",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kihon:kiatsu",
+  "field": "大気の構造",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-kiatsu",
+   "ki-touatsu",
+   "ki-genchi"
+  ],
+  "description": "気圧の 単位です。1hPa は 100パスカル。地上の 平均の 気圧は およそ 1013hPa で、これを 1気圧と いいます。"
+ },
+ {
+  "id": "ki-roten",
+  "name": "露点",
+  "reading": "ろてん",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌫",
+  "mapNode": "kihon:shitsudo",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-shitsudo",
+   "ki-howasuijoki",
+   "ki-soten"
+  ],
+  "description": "空気を 冷やして いった とき、水蒸気が 飽和して 水滴が でき始める 温度です。気温と 露点が 近いほど しめった 空気です。"
+ },
+ {
+  "id": "ki-howasuijoki",
+  "name": "飽和水蒸気量",
+  "reading": "ほうわすいじょうきりょう",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "kihon:shitsudo",
+  "field": "大気の熱力学",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-roten",
+   "ki-shitsudo",
+   "ki-sotaishitsu"
+  ],
+  "description": "1m³ の 空気が ふくむ ことの できる 水蒸気の いちばん 多い 量です。気温が 高いほど 多く なります。"
+ },
+ {
+  "id": "ki-sekiran",
+  "name": "積乱雲",
+  "reading": "せきらんうん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛈",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-sekiun",
+   "ki-tairyuun",
+   "ki-shuu"
+  ],
+  "description": "上へ 大きく のびた 雲で、雷・強い 雨・ひょう・突風を もたらします。てっぺんが 平らに 広がった「かなとこ雲」に なる ことも。"
+ },
+ {
+  "id": "ki-sekiun",
+  "name": "積雲",
+  "reading": "せきうん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛅",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-sekiran",
+   "ki-tairyuun",
+   "ki-sousekiun"
+  ],
+  "description": "晴れた 日に もくもくと できる わた雲です。上昇気流で できます。どんどん 高く 育つと 積乱雲に なります。"
+ },
+ {
+  "id": "ki-souun",
+  "name": "層雲",
+  "reading": "そううん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌁",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kasou",
+   "ki-kirisame",
+   "ki-sousekiun"
+  ],
+  "description": "いちばん 低い 所に できる、霧のような 灰色の 雲です。霧雨を 降らせる ことが あります。地面に つくと 霧と よびます。"
+ },
+ {
+  "id": "ki-kenun",
+  "name": "巻雲",
+  "reading": "けんうん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kensekiun",
+   "ki-kensou",
+   "ki-josou"
+  ],
+  "description": "高い 空に できる、はけで はいたような すじ雲です。氷の つぶで できて います。低気圧が 近づく 前ぶれの ことも あります。"
+ },
+ {
+  "id": "ki-ransou",
+  "name": "乱層雲",
+  "reading": "らんそううん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-ondan",
+   "ki-kousou",
+   "ki-chusou"
+  ],
+  "description": "空 一面を おおう 暗い 灰色の 雨雲です。雨や 雪を 長い 時間 降らせます。温暖前線の 近くで よく 見られます。"
+ },
+ {
+  "id": "ki-kosekiun",
+  "name": "高積雲",
+  "reading": "こうせきうん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐑",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kensekiun",
+   "ki-chusou",
+   "ki-kousou"
+  ],
+  "description": "中くらいの 高さに できる、かたまりが ならんだ ひつじ雲です。うろこ雲(巻積雲)より 一つ一つの かたまりが 大きく 見えます。"
+ },
+ {
+  "id": "ki-unryo",
+  "name": "雲量",
+  "reading": "うんりょう",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "kihon:kigo",
+  "field": "観測",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-zenunryo",
+   "ki-hare",
+   "ki-kaisei"
+  ],
+  "description": "空の 全体を 10 と して、雲が おおっている 割合を 0〜10 で 表した ものです。快晴・晴れ・曇りを 分ける もとに なります。"
+ },
+ {
+  "id": "ki-kaisei",
+  "name": "快晴",
+  "reading": "かいせい",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌞",
+  "mapNode": "kihon:kigo",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-hare",
+   "ki-unryo",
+   "ki-zenunryo"
+  ],
+  "description": "雲量が 1 以下の、ほとんど 雲の ない 天気です。晴れた 夜は 放射冷却で 朝の 気温が 下がりやすく なります。"
+ },
+ {
+  "id": "ki-hyo",
+  "name": "ひょう",
+  "reading": "ひょう",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "kihon:kosui",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-arare",
+   "ki-sekiran",
+   "ki-mizore"
+  ],
+  "description": "積乱雲から 降る、直径 5mm 以上の 氷の つぶです。強い 上昇気流の 中で 上下しながら 大きく なります。"
+ },
+ {
+  "id": "ki-arare",
+  "name": "あられ",
+  "reading": "あられ",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚪",
+  "mapNode": "kihon:kosui",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-hyo",
+   "ki-mizore",
+   "ki-yuki"
+  ],
+  "description": "直径 5mm 未満の 氷の つぶです。ひょうと あられは 大きさで 分けます。冬の 日本海側で よく 降ります。"
+ },
+ {
+  "id": "ki-mizore",
+  "name": "みぞれ",
+  "reading": "みぞれ",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌨",
+  "mapNode": "kihon:kosui",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-yuki",
+   "ki-ame",
+   "ki-arare"
+  ],
+  "description": "雨と 雪が まじって 降る ものです。気象庁の 統計では 雪の なかまに 入れます。地上の 気温が 0℃ くらいの ときに 降りやすい。"
+ },
+ {
+  "id": "ki-saiko",
+  "name": "最高気温",
+  "reading": "さいこうきおん",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔆",
+  "mapNode": "kihon:kion",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-saitei",
+   "ki-manatsubi",
+   "ki-nichikaku"
+  ],
+  "description": "1日の うちで いちばん 高く なった 気温です。晴れた 日は ふつう 昼すぎに 出ます。"
+ },
+ {
+  "id": "ki-saitei",
+  "name": "最低気温",
+  "reading": "さいていきおん",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "kihon:kion",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-saiko",
+   "ki-fuyubi",
+   "ki-nichikaku"
+  ],
+  "description": "1日の うちで いちばん 低く なった 気温です。晴れて 風の 弱い 夜は 放射冷却で、明け方に 出やすく なります。"
+ },
+ {
+  "id": "ki-manatsubi",
+  "name": "真夏日",
+  "reading": "まなつび",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍉",
+  "mapNode": "kihon:kion",
+  "field": "予報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-moshobi",
+   "ki-saiko",
+   "ki-fuyubi"
+  ],
+  "description": "最高気温が 30℃ 以上の 日です。25℃ 以上は 夏日と いいます。熱中症に 気を つけて 水分を とりましょう。"
+ },
+ {
+  "id": "ki-moshobi",
+  "name": "猛暑日",
+  "reading": "もうしょび",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥵",
+  "mapNode": "kihon:kion",
+  "field": "予報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-manatsubi",
+   "ki-saiko",
+   "ki-nichikaku"
+  ],
+  "description": "最高気温が 35℃ 以上の 日です。気象庁が 2007年から 使い始めた ことばです。すずしい 所で すごし、水分を こまめに とりましょう。"
+ },
+ {
+  "id": "ki-fuyubi",
+  "name": "冬日",
+  "reading": "ふゆび",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛄",
+  "mapNode": "kihon:kion",
+  "field": "予報",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-saitei",
+   "ki-manatsubi",
+   "ki-sekisetsu"
+  ],
+  "description": "最低気温が 0℃ 未満の 日です。最高気温も 0℃ 未満の 日は 真冬日と いいます。道路の こおりに 気を つけます。"
+ },
+ {
+  "id": "ki-kigo",
+  "name": "天気記号",
+  "reading": "てんききごう",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛅",
+  "mapNode": "kihon:kigo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-kokusai",
+   "ki-nihonshiki",
+   "ki-yabane"
+  ],
+  "description": "天気図で 天気を 表す 記号です。丸の 中の 印で 晴れ・曇り・雨などを 表し、矢羽で 風向と 風力を そえます。"
+ },
+ {
+  "id": "ki-furyoku",
+  "name": "風力",
+  "reading": "ふうりょく",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎐",
+  "mapNode": "kihon:kaze",
+  "field": "観測",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-furyokukai",
+   "ki-fusoku",
+   "ki-yabane"
+  ],
+  "description": "風の 強さを、木や 海の ようすから 0〜12 の 13段階で 表した ものです。日本式の 天気図では 矢羽の 数で かきます。"
+ },
+ {
+  "id": "ki-shukan",
+  "name": "週間天気予報",
+  "reading": "しゅうかんてんきよほう",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "kihon:yoho",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-shinraido",
+   "ki-yoho",
+   "ki-fuken"
+  ],
+  "description": "7日先までの 天気・気温・降水確率の 予報です。先の 日ほど 当たりにくいので、信頼度 A・B・C を いっしょに 出します。"
+ },
+ {
+  "id": "ki-yohoku",
+  "name": "予報区",
+  "reading": "よほうく",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "kihon:yoho",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-ichiji",
+   "ki-fuken",
+   "ki-chiho"
+  ],
+  "description": "天気予報を 出す ために 分けた 区域です。府県や、府県を さらに 分けた 地域ごとに 予報を 出します。"
+ },
+ {
+  "id": "ki-chiho",
+  "name": "地方気象台",
+  "reading": "ちほうきしょうだい",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kihon:kishocho",
+  "field": "気象業務法",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kanku",
+   "ki-kishocho",
+   "ki-yohoku"
+  ],
+  "description": "府県ごとに 置かれた 気象台です。その 府県の 天気予報や 警報・注意報を 出し、市町村の 防災も 手助けします。"
+ },
+ {
+  "id": "ki-kinenbi",
+  "name": "気象記念日",
+  "reading": "きしょうきねんび",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎂",
+  "mapNode": "kihon:kishocho",
+  "field": "気象業務法",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-kishocho",
+   "ki-kion",
+   "ki-kiatsu"
+  ],
+  "description": "6月1日です。1875年の この日、東京で 気象の 観測が 始まった ことに ちなみます。気象庁の もとに なった 東京気象台が できた 日です。"
+ },
+ {
+  "id": "ki-jisshu",
+  "name": "十種雲形",
+  "reading": "じっしゅうんけい",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-josou",
+   "ki-chusou",
+   "ki-kasou"
+  ],
+  "description": "雲を 形と 高さで 10種類に 分ける、世界 共通の 分けかたです。上層雲・中層雲・下層雲と、上へ のびる 雲に 分けられます。"
+ },
+ {
+  "id": "ki-kensekiun",
+  "name": "巻積雲",
+  "reading": "けんせきうん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐟",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kenun",
+   "ki-kosekiun",
+   "ki-josou"
+  ],
+  "description": "高い 空に 小さな かたまりが たくさん ならぶ うろこ雲・いわし雲です。氷の つぶで できて います。"
+ },
+ {
+  "id": "ki-kensou",
+  "name": "巻層雲",
+  "reading": "けんそううん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kenun",
+   "ki-kousou",
+   "ki-josou"
+  ],
+  "description": "高い 空を うすく おおう ベールのような うす雲です。太陽や 月の まわりに「かさ」が 出ます。低気圧が 近づく 合図の ことも。"
+ },
+ {
+  "id": "ki-kousou",
+  "name": "高層雲",
+  "reading": "こうそううん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌥",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kensou",
+   "ki-ransou",
+   "ki-chusou"
+  ],
+  "description": "中くらいの 高さを 灰色に おおう おぼろ雲です。太陽が すりガラスごしの ように ぼんやり 見えます。かさは できません。"
+ },
+ {
+  "id": "ki-sousekiun",
+  "name": "層積雲",
+  "reading": "そうせきうん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-souun",
+   "ki-kasou",
+   "ki-sekiun"
+  ],
+  "description": "低い 空に 大きな かたまりが うねのように ならぶ うね雲・くもり雲です。日本で よく 見られる 雲の 一つです。"
+ },
+ {
+  "id": "ki-josou",
+  "name": "上層雲",
+  "reading": "じょうそううん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kenun",
+   "ki-kensekiun",
+   "ki-kensou"
+  ],
+  "description": "高い 空に できる 雲の なかまです。巻雲・巻積雲・巻層雲の 3つ。気温が 低いので 氷の つぶで できて います。"
+ },
+ {
+  "id": "ki-chusou",
+  "name": "中層雲",
+  "reading": "ちゅうそううん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kosekiun",
+   "ki-kousou",
+   "ki-ransou"
+  ],
+  "description": "中くらいの 高さに できる 雲の なかまです。高積雲・高層雲で、乱層雲を ここに 入れる ことも あります。"
+ },
+ {
+  "id": "ki-kasou",
+  "name": "下層雲",
+  "reading": "かそううん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-sousekiun",
+   "ki-souun",
+   "ki-tairyuun"
+  ],
+  "description": "低い 空に できる 雲の なかまです。層積雲・層雲が 入ります。雲底が 低いと 見通しや 飛行機の 運航に 関わります。"
+ },
+ {
+  "id": "ki-tairyuun",
+  "name": "対流雲",
+  "reading": "たいりゅううん",
+  "journey": "kihon",
+  "category": "雲",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "kihon:kumo",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-sekiun",
+   "ki-sekiran",
+   "ki-shuu"
+  ],
+  "description": "積雲や 積乱雲のように、上昇気流で 上へ のびて いく 雲です。大気が 不安定な ときに 発達し、にわか雨や 雷を もたらします。"
+ },
+ {
+  "id": "ki-kokusai",
+  "name": "国際式天気記号",
+  "reading": "こくさいしきてんききごう",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "kihon:kigo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-nihonshiki",
+   "ki-kigo",
+   "ki-yabane"
+  ],
+  "description": "世界 共通の 天気記号です。現在の 天気を 00〜99 の 100種類で 表し、雲や 気圧の 変化も 書き入れます。"
+ },
+ {
+  "id": "ki-nihonshiki",
+  "name": "日本式天気記号",
+  "reading": "にほんしきてんききごう",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🇯🇵",
+  "mapNode": "kihon:kigo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-kokusai",
+   "ki-kigo",
+   "ki-furyoku"
+  ],
+  "description": "日本の ラジオや 新聞の 天気図などで 使う 天気記号です。国際式より 種類が 少なく、ひと目で わかりやすく なって います。"
+ },
+ {
+  "id": "ki-zenunryo",
+  "name": "全雲量",
+  "reading": "ぜんうんりょう",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "kihon:kigo",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-unryo",
+   "ki-kaisei",
+   "ki-shitei"
+  ],
+  "description": "高さに 関係なく、空に ある すべての 雲を 合わせた 雲量です。天気を 決める ときは この 全雲量を 使います。"
+ },
+ {
+  "id": "ki-shitei",
+  "name": "視程",
+  "reading": "してい",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "kihon:kigo",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-souun",
+   "ki-zenunryo",
+   "ki-kirisame"
+  ],
+  "description": "水平の 方向に、目で 見通せる いちばん 遠い 距離です。霧や 雨、もやで 短く なり、飛行機や 船の 安全に 大事です。"
+ },
+ {
+  "id": "ki-yabane",
+  "name": "矢羽",
+  "reading": "やばね",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏹",
+  "mapNode": "kihon:kaze",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-fuko",
+   "ki-kigo",
+   "ki-furyoku"
+  ],
+  "description": "風向と 風の 強さを 表す 記号です。矢は 風が ふいて くる 向きに のばします。国際式では 長い 羽が 10ノット、短い 羽が 5ノットです。"
+ },
+ {
+  "id": "ki-furyokukai",
+  "name": "風力階級",
+  "reading": "ふうりょくかいきゅう",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎚",
+  "mapNode": "kihon:kaze",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-furyoku",
+   "ki-fusoku",
+   "ki-yabane"
+  ],
+  "description": "風の 強さを 0〜12 に 分けた 表です。もとは イギリスの ビューフォートが 船の ために 考えました。気象庁風力階級とも いいます。"
+ },
+ {
+  "id": "ki-shunkan",
+  "name": "瞬間風速",
+  "reading": "しゅんかんふうそく",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kihon:kaze",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-saidaishun",
+   "ki-fusoku",
+   "ki-toppuritsu"
+  ],
+  "description": "刻々と 変わる 風の 速さです。気象庁は 0.25秒 ごとの 値を 3秒間 平均して 出します。平均の 風より ずっと 強い ことが あります。"
+ },
+ {
+  "id": "ki-saidaifu",
+  "name": "最大風速",
+  "reading": "さいだいふうそく",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "kihon:kaze",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-fusoku",
+   "ki-saidaishun",
+   "ki-shunkan"
+  ],
+  "description": "ある 期間の うちで、10分間 平均の 風速が いちばん 大きかった 値です。台風の 強さを 表す ときにも 使います。"
+ },
+ {
+  "id": "ki-saidaishun",
+  "name": "最大瞬間風速",
+  "reading": "さいだいしゅんかんふうそく",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎏",
+  "mapNode": "kihon:kaze",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-shunkan",
+   "ki-saidaifu",
+   "ki-toppuritsu"
+  ],
+  "description": "ある 期間の うちで、瞬間風速が いちばん 大きかった 値です。突風の 強さの 目安に なります。"
+ },
+ {
+  "id": "ki-toppuritsu",
+  "name": "突風率",
+  "reading": "とっぷうりつ",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "kihon:kaze",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-saidaishun",
+   "ki-saidaifu",
+   "ki-shunkan"
+  ],
+  "description": "最大瞬間風速を 平均風速で わった 値です。風の 強弱の ばらつきを 表し、地形や 建物が 多い 所ほど 大きく なります。"
+ },
+ {
+  "id": "ki-16hoi",
+  "name": "16方位",
+  "reading": "じゅうろくほうい",
+  "journey": "kihon",
+  "category": "風",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kihon:kaze",
+  "field": "観測",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "ki-fuko",
+   "ki-yabane",
+   "ki-fusoku"
+  ],
+  "description": "北・北北東・北東 …と、ぐるりを 16 に 分けた 方角です。風向は ふつう この 16方位で 表します。"
+ },
+ {
+  "id": "ki-sotaishitsu",
+  "name": "相対湿度",
+  "reading": "そうたいしつど",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "kihon:shitsudo",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-shitsudo",
+   "ki-roten",
+   "ki-shikkyu"
+  ],
+  "description": "その 気温で 飽和する 水蒸気圧に くらべ、いまの 水蒸気圧が 何% かを 表した ものです。水蒸気が 同じでも 気温が 上がると 下がります。"
+ },
+ {
+  "id": "ki-jikko",
+  "name": "実効湿度",
+  "reading": "じっこうしつど",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "kihon:shitsudo",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-sotaishitsu",
+   "ki-shitsudo",
+   "ki-kanshitsu"
+  ],
+  "description": "その 日の 湿度に、前の 日 までの 湿度を 重みを つけて 加えた 値です。木の 乾きぐあいの 目安で、火の 取りあつかいの 注意に 使います。"
+ },
+ {
+  "id": "ki-shikkyu",
+  "name": "湿球温度",
+  "reading": "しっきゅうおんど",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "kihon:shitsudo",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kanshitsu",
+   "ki-sotaishitsu",
+   "ki-roten"
+  ],
+  "description": "布で ぬらした 温度計が 示す 温度です。水が 蒸発して 熱を うばうので、空気が 乾いている ほど 気温より 低く なります。"
+ },
+ {
+  "id": "ki-kanshitsu",
+  "name": "乾湿計",
+  "reading": "かんしつけい",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "kihon:shitsudo",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-shikkyu",
+   "ki-sotaishitsu",
+   "ki-hyakuyo"
+  ],
+  "description": "ふつうの 温度計(乾球)と ぬらした 温度計(湿球)を ならべた 湿度計です。2つの 温度の 差から 湿度を もとめます。"
+ },
+ {
+  "id": "ki-soten",
+  "name": "霜点",
+  "reading": "そうてん",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "kihon:shitsudo",
+  "field": "大気の熱力学",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-roten",
+   "ki-sotaishitsu",
+   "ki-shikkyu"
+  ],
+  "description": "空気を 冷やした とき、氷に 対して 飽和する 温度です。0℃ より 低い 所では 露点より 少し 高く なります。霜の でき始めの 目安。"
+ },
+ {
+  "id": "ki-genchi",
+  "name": "現地気圧",
+  "reading": "げんちきあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "kihon:kiatsu",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-kaimenkosei",
+   "ki-kaimenkiatsu",
+   "ki-hpa"
+  ],
+  "description": "観測所の 高さで はかった ままの 気圧です。高い 所ほど 低く 出るので、天気図には そのまま 使いません。"
+ },
+ {
+  "id": "ki-kaimenkosei",
+  "name": "海面更正",
+  "reading": "かいめんこうせい",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "kihon:kiatsu",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-genchi",
+   "ki-kaimenkiatsu",
+   "ki-touatsu"
+  ],
+  "description": "現地気圧を、海面の 高さで 計算しなおす ことです。高さの ちがう 観測所の 気圧を くらべられる ように します。"
+ },
+ {
+  "id": "ki-kaimenkiatsu",
+  "name": "海面気圧",
+  "reading": "かいめんきあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kihon:kiatsu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-kaimenkosei",
+   "ki-touatsu",
+   "ki-chushin"
+  ],
+  "description": "海面の 高さに 直した 気圧です。地上天気図の 等圧線は この 海面気圧で かきます。"
+ },
+ {
+  "id": "ki-tani",
+  "name": "気圧の谷",
+  "reading": "きあつのたに",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔻",
+  "mapNode": "kihon:kiatsu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-one",
+   "ki-teikiatsu",
+   "ki-touatsu"
+  ],
+  "description": "低い 気圧の 所が、細長く のびた 所です。天気図では 等圧線が U字や V字に 曲がり、天気が くずれやすい 所です。"
+ },
+ {
+  "id": "ki-one",
+  "name": "気圧の尾根",
+  "reading": "きあつのおね",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔺",
+  "mapNode": "kihon:kiatsu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-tani",
+   "ki-koukiatsu",
+   "ki-touatsu"
+  ],
+  "description": "高い 気圧の 所が、細長く のびた 所です。天気が 比較的 よく、気圧の 谷との 間で 天気が 移り変わります。"
+ },
+ {
+  "id": "ki-chushin",
+  "name": "中心気圧",
+  "reading": "ちゅうしんきあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kihon:koukiatsu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-teikiatsu",
+   "ki-koukiatsu",
+   "ki-kaimenkiatsu"
+  ],
+  "description": "高気圧や 低気圧の まん中の 気圧です。低気圧や 台風では、中心気圧が 下がるほど 発達して いると 読みとれます。"
+ },
+ {
+  "id": "ki-hojo",
+  "name": "補助等圧線",
+  "reading": "ほじょとうあつせん",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "kihon:kiatsu",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-touatsu",
+   "ki-kaimenkiatsu",
+   "ki-tani"
+  ],
+  "description": "等圧線の 間が 広い ときに、2hPa ごとに 破線で 加える 等圧線です。弱い 気圧の 谷や 低気圧を 見つけやすく します。"
+ },
+ {
+  "id": "ki-kanreiko",
+  "name": "寒冷高気圧",
+  "reading": "かんれいこうきあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "kihon:koukiatsu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-ondanko",
+   "ki-koukiatsu",
+   "ki-kidan"
+  ],
+  "description": "冷たく 重い 空気が 地面 近くに たまって できる、背の 低い 高気圧です。冬の シベリア高気圧が 代表です。上空は 低気圧の ことも。"
+ },
+ {
+  "id": "ki-ondanko",
+  "name": "温暖高気圧",
+  "reading": "おんだんこうきあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "kihon:koukiatsu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kanreiko",
+   "ki-koukiatsu",
+   "ki-kidan"
+  ],
+  "description": "上空まで 暖かい 空気で できた、背の 高い 高気圧です。夏の 太平洋高気圧が 代表です。下降気流で 晴れて 暑く なります。"
+ },
+ {
+  "id": "ki-netsuteki",
+  "name": "熱的低気圧",
+  "reading": "ねつてきていきあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "kihon:koukiatsu",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-teikiatsu",
+   "ki-kion",
+   "ki-nichikaku"
+  ],
+  "description": "強い 日ざしで 地面が 温まり、空気が 軽く なって できる 低気圧です。夏の 大陸の 内側などで できます。前線は ありません。"
+ },
+ {
+  "id": "ki-futatsudama",
+  "name": "二つ玉低気圧",
+  "reading": "ふたつだまていきあつ",
+  "journey": "kihon",
+  "category": "気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎎",
+  "mapNode": "kihon:koukiatsu",
+  "field": "気象現象",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-teikiatsu",
+   "ki-ondan",
+   "ki-kanrei"
+  ],
+  "description": "日本の 南と 北を、2つの 低気圧が ならんで 進む 形です。日本 全体で 天気が くずれ、通った あとは 冬型に なる ことが 多い。"
+ },
+ {
+  "id": "ki-zensentai",
+  "name": "前線帯",
+  "reading": "ぜんせんたい",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎗",
+  "mapNode": "kihon:zensen",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-zensen",
+   "ki-zensenmen",
+   "ki-kidan"
+  ],
+  "description": "温度の 差が 大きい 空気が 帯のように 広がる 所です。地上の 前線は、この 帯の 暖かい 側の へりに 引きます。"
+ },
+ {
+  "id": "ki-zensenmen",
+  "name": "前線面",
+  "reading": "ぜんせんめん",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kihon:zensen",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-zensen",
+   "ki-zensentai",
+   "ki-ondan"
+  ],
+  "description": "暖かい 空気と 冷たい 空気の 境目の 面です。冷たい 空気の 側へ ななめに かたむいて います。地面と 交わる 線が 前線です。"
+ },
+ {
+  "id": "ki-heisokuten",
+  "name": "閉塞点",
+  "reading": "へいそくてん",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "kihon:zensen",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-heisoku",
+   "ki-ondan",
+   "ki-kanrei"
+  ],
+  "description": "閉塞前線・温暖前線・寒冷前線の 3つが 交わる 点です。新しい 低気圧が できたり、雨が 強く なったり しやすい 所です。"
+ },
+ {
+  "id": "ki-ondangata",
+  "name": "温暖型閉塞",
+  "reading": "おんだんがたへいそく",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔼",
+  "mapNode": "kihon:zensen",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kanreigata",
+   "ki-heisoku",
+   "ki-zensenmen"
+  ],
+  "description": "寒冷前線の 後ろの 寒気が、温暖前線の 前の 寒気より 暖かい ときの 閉塞です。寒冷前線が 前の 寒気の 上に はい上がります。"
+ },
+ {
+  "id": "ki-kanreigata",
+  "name": "寒冷型閉塞",
+  "reading": "かんれいがたへいそく",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔽",
+  "mapNode": "kihon:zensen",
+  "field": "気象現象",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-ondangata",
+   "ki-heisoku",
+   "ki-kanrei"
+  ],
+  "description": "寒冷前線の 後ろの 寒気が、温暖前線の 前の 寒気より 冷たい ときの 閉塞です。後ろの 寒気が 前の 寒気の 下に もぐりこみます。"
+ },
+ {
+  "id": "ki-kidan",
+  "name": "気団",
+  "reading": "きだん",
+  "journey": "kihon",
+  "category": "前線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧳",
+  "mapNode": "kihon:zensen",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-zensen",
+   "ki-kanreiko",
+   "ki-ondanko"
+  ],
+  "description": "広い 範囲で 温度や しめり気が ほぼ そろった 空気の かたまりです。日本の まわりには シベリア気団や 小笠原気団などが あります。"
+ },
+ {
+  "id": "ki-kosuikyodo",
+  "name": "降水強度",
+  "reading": "こうすいきょうど",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "kihon:kosui",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-kosuiryo",
+   "ki-shuu",
+   "ki-sekiran"
+  ],
+  "description": "雨の 強さを、1時間 あたりの 降水量(mm/h)に 直して 表した ものです。レーダーの 雨の 強さの 図は これで 色分けします。"
+ },
+ {
+  "id": "ki-sekisetsu",
+  "name": "積雪",
+  "reading": "せきせつ",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛷",
+  "mapNode": "kihon:kosui",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-kosetsu",
+   "ki-yuki",
+   "ki-fuyubi"
+  ],
+  "description": "地面に 積もって いる 雪の 深さです。単位は cm。積雪計で はかります。重さで 雪が しずむので、降雪量の 合計とは 合いません。"
+ },
+ {
+  "id": "ki-kosetsu",
+  "name": "降雪量",
+  "reading": "こうせつりょう",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌨",
+  "mapNode": "kihon:kosui",
+  "field": "観測",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-sekisetsu",
+   "ki-yuki",
+   "ki-kosuiryo"
+  ],
+  "description": "ある 時間の うちに、新しく 降り積もった 雪の 深さです。積雪の 深さの 増えた 分から もとめます。大雪の 予報で 使います。"
+ },
+ {
+  "id": "ki-kirisame",
+  "name": "霧雨",
+  "reading": "きりさめ",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌦",
+  "mapNode": "kihon:kosui",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-souun",
+   "ki-ame",
+   "ki-shitei"
+  ],
+  "description": "直径 0.5mm 未満の、とても 細かい 雨つぶの 雨です。層雲から 降る ことが 多く、霧のように ただよって 見えます。"
+ },
+ {
+  "id": "ki-shuu",
+  "name": "しゅう雨",
+  "reading": "しゅうう",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌦",
+  "mapNode": "kihon:kosui",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-tairyuun",
+   "ki-sekiran",
+   "ki-kosuikyodo"
+  ],
+  "description": "積雲や 積乱雲から、急に 降り始めて 急に やむ 雨です。にわか雨とも いいます。強さが 急に 変わるのが とくちょうです。"
+ },
+ {
+  "id": "ki-chakuhyosei",
+  "name": "着氷性の雨",
+  "reading": "ちゃくひょうせいのあめ",
+  "journey": "kihon",
+  "category": "雨と雪",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "kihon:kosui",
+  "field": "降水過程",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-mizore",
+   "ki-ame",
+   "ki-fuyubi"
+  ],
+  "description": "0℃ より 冷たいのに こおらない 過冷却の 雨で、ものに ふれると すぐ こおります。電線や 道路に 氷が つくので 注意します。"
+ },
+ {
+  "id": "ki-kakuritsuyoho",
+  "name": "確率予報",
+  "reading": "かくりつよほう",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "kihon:kakuritsu",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-kakuritsu",
+   "ki-shinraido",
+   "ki-yoho"
+  ],
+  "description": "現象が 起こる 確からしさを、% で 表す 予報です。降水確率が 代表です。使う 人が、自分で 備えを 決める 手がかりに なります。"
+ },
+ {
+  "id": "ki-tenkibunpu",
+  "name": "天気分布予報",
+  "reading": "てんきぶんぷよほう",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟩",
+  "mapNode": "kihon:yoho",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-jikeiretsu",
+   "ki-fuken",
+   "ki-yohoku"
+  ],
+  "description": "5km の ます目ごとに、天気や 気温・降水量を 地図の 色で 表す 予報です。府県より せまい 地域の 天気の ちがいが わかります。"
+ },
+ {
+  "id": "ki-jikeiretsu",
+  "name": "地域時系列予報",
+  "reading": "ちいきじけいれつよほう",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "kihon:yoho",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-tenkibunpu",
+   "ki-fuken",
+   "ki-yoho"
+  ],
+  "description": "3時間ごとの 天気・気温・風を、地域ごとに 時間の 順に ならべた 予報です。1日の 天気の 移り変わりが わかります。"
+ },
+ {
+  "id": "ki-fuken",
+  "name": "府県天気予報",
+  "reading": "ふけんてんきよほう",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📰",
+  "mapNode": "kihon:yoho",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-ichiji",
+   "ki-yohoku",
+   "ki-jikeiretsu"
+  ],
+  "description": "府県を いくつかの 地域に 分けて、今日・明日・明後日の 天気や 気温を 知らせる 予報です。地方気象台などが 出します。"
+ },
+ {
+  "id": "ki-ichiji",
+  "name": "一次細分区域",
+  "reading": "いちじさいぶんくいき",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "kihon:yoho",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-yohoku",
+   "ki-fuken",
+   "ki-chiho"
+  ],
+  "description": "府県天気予報を 出す ために、府県を いくつかに 分けた 区域です。天気が 似ている 所を まとめて あります。"
+ },
+ {
+  "id": "ki-shinraido",
+  "name": "信頼度",
+  "reading": "しんらいど",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅰️",
+  "mapNode": "kihon:yoho",
+  "field": "予報",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-shukan",
+   "ki-kakuritsuyoho",
+   "ki-yoho"
+  ],
+  "description": "週間天気予報で、雨が 降るか どうかの 予報の 確かさを A・B・C の 3つで 表した ものです。A が いちばん 確かです。"
+ },
+ {
+  "id": "ki-kanku",
+  "name": "管区気象台",
+  "reading": "かんくきしょうだい",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏯",
+  "mapNode": "kihon:kishocho",
+  "field": "気象業務法",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-chiho",
+   "ki-kishocho",
+   "ki-koso"
+  ],
+  "description": "いくつかの 府県を まとめた 地方ごとに 置かれた 気象台です。その 地方の 地方気象台を まとめ、広い 地域の 予報を 出します。"
+ },
+ {
+  "id": "ki-koso",
+  "name": "高層気象台",
+  "reading": "こうそうきしょうだい",
+  "journey": "kihon",
+  "category": "予報と気象庁",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "kihon:kishocho",
+  "field": "観測",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-kanku",
+   "ki-kishocho",
+   "ki-kion"
+  ],
+  "description": "茨城県 つくば市に ある、上空の 観測を 行う 気象台です。へえ: ここで 大石和三郎が、のちに ジェット気流と よばれる 強い 風を 観測しました。"
+ },
+ {
+  "id": "ki-utc",
+  "name": "協定世界時",
+  "reading": "きょうていせかいじ",
+  "journey": "kihon",
+  "category": "天気と記号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕘",
+  "mapNode": "kihon:kigo",
+  "field": "実技",
+  "ruleset": "実技",
+  "relatedTerms": [
+   "ki-kigo",
+   "ki-kokusai",
+   "ki-kaimenkiatsu"
+  ],
+  "description": "世界 共通の 時刻です。日本時間は UTC より 9時間 進んで います。天気図の「00UTC」は 日本時間の 朝9時です。"
+ },
+ {
+  "id": "ki-nichikaku",
+  "name": "日較差",
+  "reading": "にちかくさ",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "kihon:kion",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-saiko",
+   "ki-saitei",
+   "ki-nenkaku"
+  ],
+  "description": "1日の 最高気温と 最低気温の 差です。晴れて 乾いた 日や 内陸で 大きく、曇りや 雨の 日、海の 近くでは 小さく なります。"
+ },
+ {
+  "id": "ki-nenkaku",
+  "name": "年較差",
+  "reading": "ねんかくさ",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "kihon:kion",
+  "field": "気候",
+  "ruleset": "学科一般",
+  "relatedTerms": [
+   "ki-nichikaku",
+   "ki-heinenchi",
+   "ki-kidan"
+  ],
+  "description": "1年の うち、いちばん 暑い 月と いちばん 寒い 月の 平均気温の 差です。大陸の 内側や 高緯度で 大きく なります。"
+ },
+ {
+  "id": "ki-heinenchi",
+  "name": "平年値",
+  "reading": "へいねんち",
+  "journey": "kihon",
+  "category": "気温と湿度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "kihon:kion",
+  "field": "気候",
+  "ruleset": "学科専門",
+  "relatedTerms": [
+   "ki-nenkaku",
+   "ki-nichikaku",
+   "ki-kishocho"
+  ],
+  "description": "30年間の 観測の 平均です。10年ごとに 新しく します。「平年より 高い」と いう ときの くらべる もとに なります。"
+ }
+]

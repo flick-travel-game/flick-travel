@@ -18,7 +18,7 @@
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="favicon.png?v=1">
+<link rel="icon" type="image/png" href="favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -444,12 +444,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
-      <img class="logo-mark" src="logo-mark2.webp?v=1" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリック気象予報士</span>
+      <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="211" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック気象予報士</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリック気象予報士" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリック気象予報士" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <!-- 答えの ひらがな あり / 無し(けいくん 2026-10-24「フリック漢字以外のすべてのフリックゲームも ひらがな無しの選択が出来るようにしてください」)。
          ぜんぶの ゲームで 同じ 1つの きまり(localStorage の flick-kana)。無し = 打つ 字が ？ に なる(まちがえた 1字だけ 見える)。自己ベストは あり / 無し で 別 -->
@@ -588,7 +588,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"kisho", name:"フリック気象予報士", modes:(typeof KISHO === "object" ? KISHO.modes : []), assets:"../", logo:false, hero:true, dir:"kisho/", lead:"天気の きほん・大気の しくみ・風と 大気の 動き・雲と 雨と いろいろな 気象・観測と 予報の 道具・日本の 天気と 季節・防災と 気象情報・法律と 気象の しごと・天気図の 読みかた(実技)の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どこで 出るか(学科一般・学科専門・実技)が わかるよ。天気が すきな 子の ことばから、気象予報士試験の 範囲の めやすまで 990語。4択クイズと 計算問題で 学科試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 天気と 避難は、気象庁と 市町村の 情報を 見てね。実技試験の 記述(天気図を 見て 文で 答える)は 過去問で 練習してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、空の しくみが 見えてくるよ。気象庁・気象業務支援センターとは 関係ありません。" };
+const GAME = { id:"kisho", name:"フリック気象予報士", modes:(typeof KISHO === "object" ? KISHO.modes : []), assets:"../", logo:true, hero:true, dir:"kisho/", lead:"天気の きほん・大気の しくみ・風と 大気の 動き・雲と 雨と いろいろな 気象・観測と 予報の 道具・日本の 天気と 季節・防災と 気象情報・法律と 気象の しごと・天気図の 読みかた(実技)の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どこで 出るか(学科一般・学科専門・実技)が わかるよ。天気が すきな 子の ことばから、気象予報士試験の 範囲の めやすまで 990語。4択クイズと 計算問題で 学科試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 天気と 避難は、気象庁と 市町村の 情報を 見てね。実技試験の 記述(天気図を 見て 文で 答える)は 過去問で 練習してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、空の しくみが 見えてくるよ。気象庁・気象業務支援センターとは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

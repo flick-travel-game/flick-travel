@@ -89,6 +89,7 @@
 ## 💾 消えた 記録を 同じ スマホから 取りもどす(2026-11-01。けいくん「無料化と 記録を残すしくみ 進めてください」)
 - iPhone の Safari は 7日 ひらかないと localStorage を 消す。かずともの サーバーの 記録(`flick_scores`)には **どの スマホか の しるし(`device`。HttpOnly の クッキー `kz_dev`。`/api/flick/score` に 送った とき サーバーが 置く)**が つく(speed-king `docs/db/019-device.sql`)
 - 土台 `index.html` の `recoverFromServer()`: **プロフィールが 1人も いない とき だけ** `kazutomo.app/api/recover` に 聞いて、なまえ・学年・旅ごとの 自己ベスト(`flick-best-p<pid>-<mode>-<level>`。ひらがな あり の ほう)を 戻す。1タブ 1回(`sessionStorage` の `flick-recovered`)。kazutomo.app で ひらいた ときだけ(github.io では クッキーが 届かない)
+- **アイコンの 写真も あずかる**(2026-11-01 けいくん「B」): 写真を 入れた/消した とき `photoPush` / `photoDrop` が `kazutomo.app/api/photo` に POST / DELETE(この端末専用。`device_photos` 表)。`recoverFromServer()` が `d.photos`(pid → dataUrl)を `flick-photo-<pid>` に 戻す。写真は **120px・JPEG 0.7**(まえは 160/0.8)。「写真を 消す」「人を 消す」で サーバーからも すぐ 消す。1年 ひらかれない 端末の 写真は かずとも側が 自動で 消す。説明は かずともの プライバシーに 書いてある
 - 図鑑の「出会った ことば」(`flick-kanken` など)は 戻らない(サーバーに 無い)。人が いる スマホでは 何も しない(上書きしない)
 - 無料化は speed-king の `NEXT_PUBLIC_PAID_OPEN` を 0 に するだけ(体験の 期限・値段・sessionStorage の 道が ぜんぶ 切れる)。この 入れものは さわらなくて よい
 

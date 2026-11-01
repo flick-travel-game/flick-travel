@@ -3468,12 +3468,16 @@ function restoreLast(){
 }
 
 /* ── だれが あそぶ？ の 画面(かずとも `Game.tsx` の picker と 同じ作り。けいくん 2026-09-25) ──
-   写真は 160px の 四角に 切って JPEG にしてから しまう(flick-photo-<id>。かずとも `photo.ts` と同じ)。
+   写真は 120px の 四角に 切って JPEG(0.7)にしてから しまう(flick-photo-<id>。かずとも `photo.ts` と同じ。2026-11-01 に 160/0.8 → 120/0.7)。
    ⚠️ そのまま しまうと 1枚で localStorage が いっぱいになり なまえも 記録も しまえなくなる。
-   写真は この端末の中だけ。ランキングに 出るのは なまえ・学年・タイムだけ */
+   写真は ランキングに 出ない(出るのは なまえ・学年・タイムだけ)。記録を 戻すために **この端末専用で** かずともの `/api/photo` に あずかる
+   (2026-11-01 けいくん「B」。写真を 消したら サーバーからも すぐ 消す。1年 ひらかれない 端末の 写真は 自動で 消える) */
 const TONE_LIST = [TONE.pink, TONE.blue, TONE.green, TONE.orange, TONE.purple, toneFrom("#e0202e")];
 let profEditing = null;  // null=なにも打っていない / ""=あたらしい人 / id=なまえを なおす
 function photoOf(id){ return store("flick-photo-" + id) || ""; }
+/* 写真を かずともに あずける / 消す(この端末専用。送れなくても だまって あきらめる。同じ住所のときだけ) */
+function photoPush(pid, data){ try{ if(location.origin !== new URL(RANK_API).origin || !pid) return; fetch(RANK_API + "/photo", { method:"POST", headers:{ "content-type":"application/json" }, body:JSON.stringify({ pid, photo:data }), keepalive:true }).catch(() => {}); }catch(e){} }
+function photoDrop(pid){ try{ if(location.origin !== new URL(RANK_API).origin || !pid) return; fetch(RANK_API + "/photo", { method:"DELETE", headers:{ "content-type":"application/json" }, body:JSON.stringify({ pid }), keepalive:true }).catch(() => {}); }catch(e){} }
 function firstChar(s){ return [...(s || "")][0] || "?"; }
 function tileHtml(p, i, cls){
   const ph = p ? photoOf(p.id) : "";
@@ -3562,13 +3566,14 @@ function drawProf(){
     drawProf();
   }));
   $("#prof-pic").addEventListener("click", () => $("#prof-file").click());
-  const un = $("#prof-unphoto"); if(un) un.addEventListener("click", () => { try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){} drawProf(); drawProfBtn(); famSyncSoon(); });
+  const un = $("#prof-unphoto"); if(un) un.addEventListener("click", () => { try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){} photoDrop(p.id); drawProf(); drawProfBtn(); famSyncSoon(); });
   $("#prof-rename").addEventListener("click", () => openProfForm(p.id));
   $("#prof-del").addEventListener("click", () => {
     // ⚠️ 記録は 消さない(かずともと同じ)。消えるのは なまえと 写真だけ
     if(!confirm(signedIn() ? "「" + p.name + "」を 消します。\nアカウントからも 消えます(かずともでも 消えます)。\nきろくは のこります。いいですか？" : "「" + p.name + "」を この スマホから 消します。\nきろくは のこります。いいですか？")) return;
     famRemove(p.id);
     try{ localStorage.removeItem("flick-photo-" + p.id); }catch(e){}
+    photoDrop(p.id);
     const rest = profiles().filter(x => x.id !== p.id); saveProfiles(rest);
     store("flick-profile", rest[0] ? rest[0].id : ""); store("flick-last", "");
     drawProf(); afterProfileChange();
@@ -3650,11 +3655,11 @@ function toIconDataUrl(file){
     im.onload = () => {
       URL.revokeObjectURL(url);
       try{
-        const c = document.createElement("canvas"); c.width = 160; c.height = 160;
+        const c = document.createElement("canvas"); c.width = 120; c.height = 120;
         const ctx = c.getContext("2d"); if(!ctx){ reject(new Error("えがけませんでした")); return; }
         const side = Math.min(im.width, im.height);
-        ctx.drawImage(im, (im.width - side)/2, (im.height - side)/2, side, side, 0, 0, 160, 160);
-        resolve(c.toDataURL("image/jpeg", 0.8));
+        ctx.drawImage(im, (im.width - side)/2, (im.height - side)/2, side, side, 0, 0, 120, 120);
+        resolve(c.toDataURL("image/jpeg", 0.7));
       }catch(e){ reject(new Error("小さく できませんでした")); }
     };
     im.onerror = () => { URL.revokeObjectURL(url); reject(new Error("写真を よみこめませんでした")); };
@@ -3669,6 +3674,7 @@ $("#prof-file").addEventListener("change", async e => {
     const data = await toIconDataUrl(f);
     try{ localStorage.setItem("flick-photo-" + p.id, data); }
     catch(x){ if(err) err.textContent = "スマホの中が いっぱいで しまえませんでした"; return; }
+    photoPush(p.id, data);
     drawProf(); drawProfBtn(); famSyncSoon();
   }catch(x){ if(err) err.textContent = "この 写真は つかえませんでした。べつの 写真で ためしてね"; }
 });
@@ -3809,6 +3815,12 @@ function recoverFromServer(){
       if(!b || !ok(b.pid) || typeof b.mode !== "string" || !/^[a-z0-9]+$/.test(b.mode) || typeof b.level !== "number" || typeof b.ms !== "number" || b.ms <= 0) continue;
       const k = "flick-best-p" + b.pid + "-" + b.mode + "-" + b.level;
       try{ if(localStorage.getItem(k) === null) localStorage.setItem(k, (b.ms / 1000).toFixed(2)); }catch(e){}
+    }
+    // あずかっていた アイコンの 写真も もどす(pid → dataUrl)
+    if(d.photos && typeof d.photos === "object"){
+      for(const [pid, data] of Object.entries(d.photos)){
+        if(ok(pid) && typeof data === "string" && data.startsWith("data:image/jpeg;base64,") && data.length <= 60000){ try{ localStorage.setItem("flick-photo-" + pid, data); }catch(e){} }
+      }
     }
     saveProfiles(ps); store("flick-profile", ps[0].id); recMemo = null;
     showBest();

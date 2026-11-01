@@ -1652,7 +1652,7 @@
   4択 D の けんうん(C と かぶり)→ そううん / じけんで できんこと → しけんで でるところ / ぎっかせんもん → がっかせんもん。
   ⚠️ 色が 横に 変わる 札は 列ごとに 上下を つなぐ `verase`(横に つなぐと となりの 色が にじんだ)。もとの 絵は 入れものに 入れていない
 - ⭐ **毎年の 見直しの 予約が ある**(`trig_01QqPAr85oFjohH7uAzSCeFo`。毎年 **4月1日** 朝8時45分。けいくん 2026-11-01「1」)。防災気象情報の 名前・試験の 決まりを 気象庁と 気象業務支援センターで 確かめる。⚠️ 予約には GitHub の 道具が ついていない(PR を 作れない ときは 枝に push して 知らせる)
-- アイコンは **まだ 仮**(`tools/kisho/placeholder_icon.py` = 青空に 太陽・雲・雨つぶ)。題名も 文字(`logo=False`)。
+- **アイコンと 題名も 入れた**(2026-11-01)。アイコンは けいくんの 四角い 絵 1254px を 切らずに そのまま(`tools/kisho/art/square-src.png` → `python3 tools/icon_from_square.py kisho`。`iconv` = 2)。四角い 絵の 題名は ひらがなの「きしょうよほうし」で、札にも ゲームに 無い ことば(くうき・ねつのいどう など)が あるが アイコンの 大きさでは 読めないので そのまま。題名は ChatGPT の 切りぬき(`tools/kisho/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py kisho` → `kisho/logo-word.webp` 900×211。`logo=True`・`wordv` = 3)。「フリック気象予報士」9字を 読んで 確かめた。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
   届いたら 四角い 絵 → `tools/kisho/art/square-src.png` → `python3 tools/icon_from_square.py kisho`(`iconv` +1)/ 題名の 透明 PNG → `tools/kisho/art/title-src.png` → `python3 tools/title_from_art.py kisho`(`logo=True`・`art.word` を 実寸)/ `kisho/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **こわれた 家・水に つかった 町・泣いている 人・天気アプリや テレビ局の ロゴ**を 描かせない。人物は 下 3分の1に 小さく。「気象予報土」「気象予報師」に なりやすいので 届いた 字を かならず 読む。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs kisho/`(全198ステージ。旅 9×11 + マスター 99。VAR=nfd / spacing / commit も)/ `node tools/click-all.mjs kisho/`(W=320 も)/ `python3 tools/kisho/terms_js.py --check`

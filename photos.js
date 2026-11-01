@@ -42298,5 +42298,1061 @@ const PHOTOS = {
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Toy_Poodle_head.jpg",
   "file": "File:Toy Poodle head.jpg"
+ },
+ "yoho.kh-mitsubachi": {
+  "src": "photo-yoho.kh-mitsubachi.jpg",
+  "author": "Jon Sullivan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bee_Collecting_Pollen_2004-08-14.jpg",
+  "file": "File:Bee Collecting Pollen 2004-08-14.jpg"
+ },
+ "yoho.kh-hachimitsu": {
+  "src": "photo-yoho.kh-hachimitsu.jpg",
+  "author": "Scott Bauer, USDA ARS",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Runny_hunny.jpg",
+  "file": "File:Runny hunny.jpg"
+ },
+ "yoho.kh-joouba": {
+  "src": "photo-yoho.kh-joouba.jpg",
+  "author": "Alex Anlicker at German Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bienenkoenigin.JPG",
+  "file": "File:Bienenkoenigin.JPG"
+ },
+ "yoho.kh-hatarakibachi": {
+  "src": "photo-yoho.kh-hatarakibachi.jpg",
+  "author": "Martin Ziegler",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Apis_Cerana_Chiang_Mai_w_queen_P1011011-3.jpg",
+  "file": "File:Apis Cerana Chiang Mai w queen P1011011-3.jpg"
+ },
+ "yoho.kh-kafun": {
+  "src": "photo-yoho.kh-kafun.jpg",
+  "author": "Dartmouth College Electron Microscope Facility",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Misc_pollen.jpg",
+  "file": "File:Misc pollen.jpg"
+ },
+ "yoho.kh-kamitsu": {
+  "src": "photo-yoho.kh-kamitsu.jpg",
+  "author": "Daiju Azuma",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Nectar.jpg",
+  "file": "File:Nectar.jpg"
+ },
+ "yoho.kh-jufun": {
+  "src": "photo-yoho.kh-jufun.jpg",
+  "author": "Malene Thyssen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bombus_Bumblebee_(Bestoevning).jpg",
+  "file": "File:Bombus Bumblebee (Bestoevning).jpg"
+ },
+ "yoho.kh-rokkakkei": {
+  "src": "photo-yoho.kh-rokkakkei.jpg",
+  "author": "László Németh",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Regular_polygon_6_annotated.svg",
+  "file": "File:Regular polygon 6 annotated.svg"
+ },
+ "yoho.kh-seiyo": {
+  "src": "photo-yoho.kh-seiyo.jpg",
+  "author": "Andreas Trepte",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Apis_mellifera_Western_honey_bee.jpg",
+  "file": "File:Apis mellifera Western honey bee.jpg"
+ },
+ "yoho.kh-nihon": {
+  "src": "photo-yoho.kh-nihon.jpg",
+  "author": "Takahashi",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Vespa_simillima_xanthoptera01.jpg",
+  "file": "File:Vespa simillima xanthoptera01.jpg"
+ },
+ "yoho.kh-konchu": {
+  "src": "photo-yoho.kh-konchu.jpg",
+  "author": "Bugboy52.40",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Insect_collage.png",
+  "file": "File:Insect collage.png"
+ },
+ "yoho.kh-hachimoku": {
+  "src": "photo-yoho.kh-hachimoku.jpg",
+  "author": "Jon Sullivan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bee_Collecting_Pollen_2004-08-14.jpg",
+  "file": "File:Bee Collecting Pollen 2004-08-14.jpg"
+ },
+ "yoho.kh-mitsubachika": {
+  "src": "photo-yoho.kh-mitsubachika.jpg",
+  "author": "Pollinator",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Xylocopa_micans.JPG",
+  "file": "File:Xylocopa micans.JPG"
+ },
+ "yoho.kh-kafunbaikai": {
+  "src": "photo-yoho.kh-kafunbaikai.jpg",
+  "author": "Malene Thyssen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bombus_Bumblebee_(Bestoevning).jpg",
+  "file": "File:Bombus Bumblebee (Bestoevning).jpg"
+ },
+ "yoho.kh-tanpaku": {
+  "src": "photo-yoho.kh-tanpaku.jpg",
+  "author": "→AzaToth",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Myoglobin.png",
+  "file": "File:Myoglobin.png"
+ },
+ "yoho.kh-honeycomb": {
+  "src": "photo-yoho.kh-honeycomb.jpg",
+  "author": "Merdal at Turkish Wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Honey_comb.jpg",
+  "file": "File:Honey comb.jpg"
+ },
+ "yoho.kh-shinshakai": {
+  "src": "photo-yoho.kh-shinshakai.jpg",
+  "author": "Tenan",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Revisando_las_larvas_de_una_colmenas.jpg",
+  "file": "File:Revisando las larvas de una colmenas.jpg"
+ },
+ "yoho.kh-toyo": {
+  "src": "photo-yoho.kh-toyo.jpg",
+  "author": "Rushenb",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Apis_cerana,_Asiatic_honey_bee_-_Khao_Yai_National_Park.jpg",
+  "file": "File:Apis cerana, Asiatic honey bee - Khao Yai National Park.jpg"
+ },
+ "yoho.kh-hanbaisu": {
+  "src": "photo-yoho.kh-hanbaisu.jpg",
+  "author": "Ian Alexander",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Haplodiploid_Sex_Determination_in_Honey_Bees.svg",
+  "file": "File:Haplodiploid Sex Determination in Honey Bees.svg"
+ },
+ "yoho.kh-kyoshinka": {
+  "src": "photo-yoho.kh-kyoshinka.jpg",
+  "author": "Pietro Niolu",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dasyscolia_ciliata.jpg",
+  "file": "File:Dasyscolia ciliata.jpg"
+ },
+ "yoho.kh-zoku": {
+  "src": "photo-yoho.kh-zoku.jpg",
+  "author": "Jon Sullivan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bee_Collecting_Pollen_2004-08-14.jpg",
+  "file": "File:Bee Collecting Pollen 2004-08-14.jpg"
+ },
+ "yoho.kh-seitaikei": {
+  "src": "photo-yoho.kh-seitaikei.jpg",
+  "author": "Richard Ling <wikipedia@rling.com>",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Blue_Linckia_Starfish.JPG",
+  "file": "File:Blue Linckia Starfish.JPG"
+ },
+ "yoho.kr-pheromone": {
+  "src": "photo-yoho.kr-pheromone.jpg",
+  "author": "Pollinator",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Nasinov_9024.JPG",
+  "file": "File:Nasinov 9024.JPG"
+ },
+ "yoho.dg-tebukuro": {
+  "src": "photo-yoho.dg-tebukuro.jpg",
+  "author": "Kippelboy",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Centre_de_Documentaci%C3%B3_Museu_T%C3%A8xtil_de_Terrassa-_Reserves-_Teixits-_Guants002.JPG",
+  "file": "File:Centre de Documentació Museu Tèxtil de Terrassa- Reserves- Teixits- Guants002.JPG"
+ },
+ "yoho.dg-boushi": {
+  "src": "photo-yoho.dg-boushi.jpg",
+  "author": "Londres, E. Stanford",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Chapeaux_en_peau_de_castor.jpg",
+  "file": "File:Chapeaux en peau de castor.jpg"
+ },
+ "yoho.sg-suzumebachi": {
+  "src": "photo-yoho.sg-suzumebachi.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Oosuzumebati.jpg",
+  "file": "File:Oosuzumebati.jpg"
+ },
+ "yoho.sg-ichigo": {
+  "src": "photo-yoho.sg-ichigo.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Strawberries.JPG",
+  "file": "File:Strawberries.JPG"
+ },
+ "yoho.sg-melon": {
+  "src": "photo-yoho.sg-melon.jpg",
+  "author": "USDA photo by Scott Bauer. Image Number K7355-11.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Cucumis_melo_var._reticulatus_(photo_by_Scott_Bauer).jpg",
+  "file": "File:Cucumis melo var. reticulatus (photo by Scott Bauer).jpg"
+ },
+ "yoho.sg-fuyugakoi": {
+  "src": "photo-yoho.sg-fuyugakoi.jpg",
+  "author": "Moja",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ginkakuji05.jpg",
+  "file": "File:Ginkakuji05.jpg"
+ },
+ "yoho.sg-ketsuro": {
+  "src": "photo-yoho.sg-ketsuro.jpg",
+  "author": "Mougenka・妄言家",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ketsuro_on_window.jpg",
+  "file": "File:Ketsuro on window.jpg"
+ },
+ "yoho.sg-maruhanabachi": {
+  "src": "photo-yoho.sg-maruhanabachi.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Steenhommel_mannetje.jpg",
+  "file": "File:Steenhommel mannetje.jpg"
+ },
+ "yoho.hn-hana": {
+  "src": "photo-yoho.hn-hana.jpg",
+  "author": "The original uploader was Gombe at Japanese Wikipedia. Modif…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cherry_blossoms_(2004).jpg",
+  "file": "File:Cherry blossoms (2004).jpg"
+ },
+ "yoho.hn-nanohana": {
+  "src": "photo-yoho.hn-nanohana.jpg",
+  "author": "MaedaAkihiko",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brassica-napus_Overall-picture.jpg",
+  "file": "File:Brassica-napus Overall-picture.jpg"
+ },
+ "yoho.hn-sakura": {
+  "src": "photo-yoho.hn-sakura.jpg",
+  "author": "TANAKA Juuyoh (田中十洋)",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sakura_and_Moss_Pink_-_%E6%A1%9C(%E3%81%95%E3%81%8F%E3%82%89)%E3%81%A8%E8%8A%9D%E6%A1%9C(%E3%81%97%E3%81%B0%E3%81%96%E3%81%8F%E3%82%89).jpg",
+  "file": "File:Sakura and Moss Pink - 桜(さくら)と芝桜(しばざくら).jpg"
+ },
+ "yoho.hn-tanpopo": {
+  "src": "photo-yoho.hn-tanpopo.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:L%C3%B6wenzahn_uhf.JPG",
+  "file": "File:Löwenzahn uhf.JPG"
+ },
+ "yoho.hn-shirotsumekusa": {
+  "src": "photo-yoho.hn-shirotsumekusa.jpg",
+  "author": "なかと",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%82%B7%E3%83%AD%E3%83%84%E3%83%A1%E3%82%AF%E3%82%B5.jpg",
+  "file": "File:シロツメクサ.jpg"
+ },
+ "yoho.hn-himawari": {
+  "src": "photo-yoho.hn-himawari.jpg",
+  "author": "Jakub Hałun",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20180729_1018_s%C5%82onecznik_4501_DxO.jpg",
+  "file": "File:20180729 1018 słonecznik 4501 DxO.jpg"
+ },
+ "yoho.hn-kuri": {
+  "src": "photo-yoho.hn-kuri.jpg",
+  "author": "Apple2000",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_Chestnut04.jpg",
+  "file": "File:Japanese Chestnut04.jpg"
+ },
+ "yoho.hn-mikan": {
+  "src": "photo-yoho.hn-mikan.jpg",
+  "author": "Batholith",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Citrus_unshiu_20101127_c.jpg",
+  "file": "File:Citrus unshiu 20101127 c.jpg"
+ },
+ "yoho.hn-ringo": {
+  "src": "photo-yoho.hn-ringo.jpg",
+  "author": "Abhijit Tembhekar from Mumbai, India",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_Apple.jpg",
+  "file": "File:Red Apple.jpg"
+ },
+ "yoho.hn-blueberry": {
+  "src": "photo-yoho.hn-blueberry.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Vaccinium_corymbosum(01).jpg",
+  "file": "File:Vaccinium corymbosum(01).jpg"
+ },
+ "yoho.hn-soba": {
+  "src": "photo-yoho.hn-soba.jpg",
+  "author": "Kurt Stüber [1]",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fagopyrum_esculentum0.jpg",
+  "file": "File:Fagopyrum esculentum0.jpg"
+ },
+ "yoho.hn-biwa": {
+  "src": "photo-yoho.hn-biwa.jpg",
+  "author": "Wouter Hagens",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Eriobotrya_japonica_C.jpg",
+  "file": "File:Eriobotrya japonica C.jpg"
+ },
+ "yoho.hn-ume": {
+  "src": "photo-yoho.hn-ume.jpg",
+  "author": "Kakidai",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Prunus_mume.JPG",
+  "file": "File:Prunus mume.JPG"
+ },
+ "yoho.hn-acacia": {
+  "src": "photo-yoho.hn-acacia.jpg",
+  "author": "Daiju Azuma",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Acacia_baileyana.jpg",
+  "file": "File:Acacia baileyana.jpg"
+ },
+ "yoho.hn-oshibe": {
+  "src": "photo-yoho.hn-oshibe.jpg",
+  "author": "André Karwath aka Aka",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Amaryllis_stamens_aka.jpg",
+  "file": "File:Amaryllis stamens aka.jpg"
+ },
+ "yoho.hn-meshibe": {
+  "src": "photo-yoho.hn-meshibe.jpg",
+  "author": "original: Magnolia_Watsoni.JPG: WibblyWibby derivative work:…",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Magnolia_wieseneri_-_labelled_gynoecium.jpg",
+  "file": "File:Magnolia wieseneri - labelled gynoecium.jpg"
+ },
+ "yoho.hn-hanabira": {
+  "src": "photo-yoho.hn-hanabira.jpg",
+  "author": "Mariana Ruiz LadyofHats",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Mature_flower_diagram.svg",
+  "file": "File:Mature flower diagram.svg"
+ },
+ "yoho.hn-mitsugenshokubutsu": {
+  "src": "photo-yoho.hn-mitsugenshokubutsu.jpg",
+  "author": "Ivar Leidus",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Apis_mellifera_-_Melilotus_albus_-_Keila2.jpg",
+  "file": "File:Apis mellifera - Melilotus albus - Keila2.jpg"
+ },
+ "yoho.hn-niseacacia": {
+  "src": "photo-yoho.hn-niseacacia.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Robinia-pseudoacacia.JPG",
+  "file": "File:Robinia-pseudoacacia.JPG"
+ },
+ "yoho.hn-tochinoki": {
+  "src": "photo-yoho.hn-tochinoki.jpg",
+  "author": "Jonathan Cardy",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aesculus_turbinata,_Barge_walk.jpg",
+  "file": "File:Aesculus turbinata, Barge walk.jpg"
+ },
+ "yoho.hn-shinanoki": {
+  "src": "photo-yoho.hn-shinanoki.jpg",
+  "author": "Alpsdake",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Tilia_japonica_s10.jpg",
+  "file": "File:Tilia japonica s10.jpg"
+ },
+ "yoho.hn-hazenoki": {
+  "src": "photo-yoho.hn-hazenoki.jpg",
+  "author": "Pieria(Uploader and Photographer)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Rhus_succedanea-01.jpg",
+  "file": "File:Rhus succedanea-01.jpg"
+ },
+ "yoho.hn-nashi": {
+  "src": "photo-yoho.hn-nashi.jpg",
+  "author": "katorisi",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pear-tree,katori-city,japan.JPG",
+  "file": "File:Pear-tree,katori-city,japan.JPG"
+ },
+ "yoho.hn-momo": {
+  "src": "photo-yoho.hn-momo.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Illustration_Prunus_persica0.jpg",
+  "file": "File:Illustration Prunus persica0.jpg"
+ },
+ "yoho.hn-kabocha": {
+  "src": "photo-yoho.hn-kabocha.jpg",
+  "author": "George Chernilevsky",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Cucurbita_2011_G1_Large.jpg",
+  "file": "File:Cucurbita 2011 G1 Large.jpg"
+ },
+ "yoho.hn-suika": {
+  "src": "photo-yoho.hn-suika.jpg",
+  "author": "Shu Suehiro",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Citrullus_lanatus5SHSU.jpg",
+  "file": "File:Citrullus lanatus5SHSU.jpg"
+ },
+ "yoho.hn-chubaika": {
+  "src": "photo-yoho.hn-chubaika.jpg",
+  "author": "SC36",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chubai2.jpg",
+  "file": "File:Chubai2.jpg"
+ },
+ "yoho.hn-fubaika": {
+  "src": "photo-yoho.hn-fubaika.jpg",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Quercus_acutissima12.jpg",
+  "file": "File:Quercus acutissima12.jpg"
+ },
+ "yoho.hn-mitsusen": {
+  "src": "photo-yoho.hn-mitsusen.jpg",
+  "author": "Alpsdake",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Swertia_bimaculata_(n5).JPG",
+  "file": "File:Swertia bimaculata (n5).JPG"
+ },
+ "yoho.hn-hagi": {
+  "src": "photo-yoho.hn-hagi.jpg",
+  "author": "Miya",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Lespedeza_ja03.jpg",
+  "file": "File:Lespedeza ja03.jpg"
+ },
+ "yoho.hn-seitaka": {
+  "src": "photo-yoho.hn-seitaka.jpg",
+  "author": "‘Uncle Carl’ (カールおじさん).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:W_seitakaawadatisou4111.jpg",
+  "file": "File:W seitakaawadatisou4111.jpg"
+ },
+ "yoho.hn-yatsude": {
+  "src": "photo-yoho.hn-yatsude.jpg",
+  "author": "Fernando Losada Rodríguez",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fatsia_japonica.003_-_Zapateira.jpg",
+  "file": "File:Fatsia japonica.003 - Zapateira.jpg"
+ },
+ "yoho.hn-ryokuhi": {
+  "src": "photo-yoho.hn-ryokuhi.jpg",
+  "author": "トビの大盛",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ono-himawarino-oka-park6226180%E2%97%8F.jpg",
+  "file": "File:Ono-himawarino-oka-park6226180●.jpg"
+ },
+ "yoho.hn-kadan": {
+  "src": "photo-yoho.hn-kadan.jpg",
+  "author": "User:Deepak",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Kuekenhoff_001.jpg",
+  "file": "File:Kuekenhoff 001.jpg"
+ },
+ "yoho.hn-gairoju": {
+  "src": "photo-yoho.hn-gairoju.jpg",
+  "author": "David Monniaux",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Paris_Champs_Elysees_westwards_DSC03316.JPG",
+  "file": "File:Paris Champs Elysees westwards DSC03316.JPG"
+ },
+ "yoho.hn-harienju": {
+  "src": "photo-yoho.hn-harienju.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Robinia-pseudoacacia.JPG",
+  "file": "File:Robinia-pseudoacacia.JPG"
+ },
+ "yoho.hn-yurinoki": {
+  "src": "photo-yoho.hn-yurinoki.jpg",
+  "author": "Karl Gruber",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Liriodendron_tulipifera_Tulpenbaum_Baden_4152.jpg",
+  "file": "File:Liriodendron tulipifera Tulpenbaum Baden 4152.jpg"
+ },
+ "yoho.hn-karasuzansho": {
+  "src": "photo-yoho.hn-karasuzansho.jpg",
+  "author": "Shih-Shiuan Kao",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E9%A3%9F%E8%8C%B1%E8%90%B8.jpg",
+  "file": "File:食茱萸.jpg"
+ },
+ "yoho.hn-nankinhaze": {
+  "src": "photo-yoho.hn-nankinhaze.jpg",
+  "author": "Talko",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:DeerNaraJapan.jpg",
+  "file": "File:DeerNaraJapan.jpg"
+ },
+ "yoho.hn-egonoki": {
+  "src": "photo-yoho.hn-egonoki.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Styrax_japonica2.JPG",
+  "file": "File:Styrax japonica2.JPG"
+ },
+ "yoho.hn-mitsuhyo": {
+  "src": "photo-yoho.hn-mitsuhyo.jpg",
+  "author": "Plantsurfer",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mimulus_nectar_guide_UV_VIS.jpg",
+  "file": "File:Mimulus nectar guide UV VIS.jpg"
+ },
+ "yoho.hn-sofun": {
+  "src": "photo-yoho.hn-sofun.jpg",
+  "author": "Malene Thyssen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bombus_Bumblebee_(Bestoevning).jpg",
+  "file": "File:Bombus Bumblebee (Bestoevning).jpg"
+ },
+ "yoho.hn-kinryohen": {
+  "src": "photo-yoho.hn-kinryohen.jpg",
+  "author": "tanohei",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E8%8A%B1%E3%82%AD%E3%83%B3%E3%83%AA%E3%83%A7%E3%82%A6%E3%83%98%E3%83%B3.jpg",
+  "file": "File:白花キンリョウヘン.jpg"
+ },
+ "yoho.hn-cymbidium": {
+  "src": "photo-yoho.hn-cymbidium.jpg",
+  "author": "Arne and Bent Larsen, Haarby, Denmark",
+  "license": "CC BY-SA 2.5 DK",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/dk/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:A_and_B_Larsen_orchids_-_Cymbidium_Eastern_Star_Kawano_DSCN4732.JPG",
+  "file": "File:A and B Larsen orchids - Cymbidium Eastern Star Kawano DSCN4732.JPG"
+ },
+ "yoho.hn-tanenso": {
+  "src": "photo-yoho.hn-tanenso.jpg",
+  "author": "Didier Descouens",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vinca_major_-_Flower_and_bud.jpg",
+  "file": "File:Vinca major - Flower and bud.jpg"
+ },
+ "yoho.hn-ichinenso": {
+  "src": "photo-yoho.hn-ichinenso.jpg",
+  "author": "Rasbak",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Doperwt_rijserwt_peulen_Pisum_sativum.jpg",
+  "file": "File:Doperwt rijserwt peulen Pisum sativum.jpg"
+ },
+ "yoho.sh-mitsuro": {
+  "src": "photo-yoho.sh-mitsuro.jpg",
+  "author": "Frank Mikley",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Beeswax.jpg",
+  "file": "File:Beeswax.jpg"
+ },
+ "yoho.sh-royaljelly": {
+  "src": "photo-yoho.sh-royaljelly.jpg",
+  "author": "Waugsberg",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Weiselzellen_68a.jpg",
+  "file": "File:Weiselzellen 68a.jpg"
+ },
+ "yoho.sh-propolis": {
+  "src": "photo-yoho.sh-propolis.jpg",
+  "author": "akarlovic",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Popunjavanje_pukotin_propolisom.jpg",
+  "file": "File:Popunjavanje pukotin propolisom.jpg"
+ },
+ "yoho.sh-budoto": {
+  "src": "photo-yoho.sh-budoto.jpg",
+  "author": "Yikrazuul",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Beta-D-Glucose.svg",
+  "file": "File:Beta-D-Glucose.svg"
+ },
+ "yoho.sh-kato": {
+  "src": "photo-yoho.sh-kato.jpg",
+  "author": "Darkness3560",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Skeletal_Structure_of_Cyclic_D-Fructose.svg",
+  "file": "File:Skeletal Structure of Cyclic D-Fructose.svg"
+ },
+ "yoho.sh-suibun": {
+  "src": "photo-yoho.sh-suibun.jpg",
+  "author": "Luc Viatour",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Spider_web_Luc_Viatour.jpg",
+  "file": "File:Spider web Luc Viatour.jpg"
+ },
+ "yoho.sh-binzume": {
+  "src": "photo-yoho.sh-binzume.jpg",
+  "author": "No machine-readable author provided. Maximaximax assumed (ba…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Soviet_mayones_jar_250_ml.jpg",
+  "file": "File:Soviet mayones jar 250 ml.jpg"
+ },
+ "yoho.sh-rosoku": {
+  "src": "photo-yoho.sh-rosoku.jpg",
+  "author": "4028mdk09",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Einzelne_Kerze.JPG",
+  "file": "File:Einzelne Kerze.JPG"
+ },
+ "yoho.sh-dipper": {
+  "src": "photo-yoho.sh-dipper.jpg",
+  "author": "Matankic",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Honey_dipper.jpg",
+  "file": "File:Honey dipper.jpg"
+ },
+ "yoho.sh-mineral": {
+  "src": "photo-yoho.sh-mineral.jpg",
+  "author": "Deposition authors: Kim, C.U., Kim, J.K.; Visualization auth…",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Human_carbonic_anhydrase_II_PDB%3D6LUX.png",
+  "file": "File:Human carbonic anhydrase II PDB=6LUX.png"
+ },
+ "yoho.sh-roka": {
+  "src": "photo-yoho.sh-roka.jpg",
+  "author": "Suman6395",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hot_FIltration.jpg",
+  "file": "File:Hot FIltration.jpg"
+ },
+ "yoho.sh-koso": {
+  "src": "photo-yoho.sh-koso.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Purine_Nucleoside_Phosphorylase.jpg",
+  "file": "File:Purine Nucleoside Phosphorylase.jpg"
+ },
+ "yoho.sh-yusen": {
+  "src": "photo-yoho.sh-yusen.jpg",
+  "author": "不明",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bain-marie.JPG",
+  "file": "File:Bain-marie.JPG"
+ },
+ "yoho.sh-shomikigen": {
+  "src": "photo-yoho.sh-shomikigen.jpg",
+  "author": "Edward Betts",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Expiration.jpg",
+  "file": "File:Expiration.jpg"
+ },
+ "yoho.sh-glucoseoxidase": {
+  "src": "photo-yoho.sh-glucoseoxidase.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:077-GlucoseOxidase-1gpe-composite.png",
+  "file": "File:077-GlucoseOxidase-1gpe-composite.png"
+ },
+ "yoho.sh-shoto": {
+  "src": "photo-yoho.sh-shoto.jpg",
+  "author": "NEUROtiker",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Saccharose2.svg",
+  "file": "File:Saccharose2.svg"
+ },
+ "yoho.sh-oligo": {
+  "src": "photo-yoho.sh-oligo.jpg",
+  "author": "Timin2002",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:FOS.svg",
+  "file": "File:FOS.svg"
+ },
+ "yoho.sh-gluconsan": {
+  "src": "photo-yoho.sh-gluconsan.jpg",
+  "author": "Benjah-bmm27",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:D-gluconic-acid-3D-balls.png",
+  "file": "File:D-gluconic-acid-3D-balls.png"
+ },
+ "yoho.sh-kafunbunseki": {
+  "src": "photo-yoho.sh-kafunbunseki.jpg",
+  "author": "Carlos Jaramillo, Surangi W. Punyasena, et al.",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pollen_and_spore_grains_in_brightfield,_DIC_and_confocal_microscopy_-_Jaramillo_et_al_2025_-_PPP_Figure_1.jpg",
+  "file": "File:Pollen and spore grains in brightfield, DIC and confocal microscopy - Jaramillo et al 2025 - PPP Figure 1.jpg"
+ },
+ "yoho.sh-ounyu": {
+  "src": "photo-yoho.sh-ounyu.jpg",
+  "author": "Waugsberg",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Weiselzellen_68a.jpg",
+  "file": "File:Weiselzellen 68a.jpg"
+ },
+ "yoho.sh-chinden": {
+  "src": "photo-yoho.sh-chinden.jpg",
+  "author": "ZabMilenko: orginal ZooFari: vector Mrmw: optimized, multila…",
+  "license": "CC0（パブリックドメイン）",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Chemical_precipitation_diagram_multilang.svg",
+  "file": "File:Chemical precipitation diagram multilang.svg"
+ },
+ "yoho.bk-dani": {
+  "src": "photo-yoho.bk-dani.jpg",
+  "author": "Rayanne Lehman, Pennsylvania Department of Agriculture, Bugw…",
+  "license": "CC BY 3.0 US",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+  "page": "https://commons.wikimedia.org/wiki/File:Bryobia_praetiosa_Koch.jpg",
+  "file": "File:Bryobia praetiosa Koch.jpg"
+ },
+ "yoho.bk-osuzume": {
+  "src": "photo-yoho.bk-osuzume.jpg",
+  "author": "Filippo Turetta",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vespa_Mandarinia_Magnifica_-_Filippo_Turetta.jpg",
+  "file": "File:Vespa Mandarinia Magnifica - Filippo Turetta.jpg"
+ },
+ "yoho.bk-ari": {
+  "src": "photo-yoho.bk-ari.jpg",
+  "author": "不明",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Fire_ants.jpg",
+  "file": "File:Fire ants.jpg"
+ },
+ "yoho.bk-tsubame": {
+  "src": "photo-yoho.bk-tsubame.jpg",
+  "author": "Dion Art",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%BB%D0%B0%D1%81%D1%82%D0%BE%D1%87%D0%BA%D0%B0_(Hirundo_rustica),_%D0%9C%D0%B5%D0%BB%D0%B8%D1%85%D0%BE%D0%B2%D0%BE.jpg",
+  "file": "File:Деревенская ласточка (Hirundo rustica), Мелихово.jpg"
+ },
+ "yoho.bk-nezumi": {
+  "src": "photo-yoho.bk-nezumi.jpg",
+  "author": "George Shuklin (talk)",
+  "license": "CC BY-SA 1.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%8B%D1%88%D1%8C_2.jpg",
+  "file": "File:Мышь 2.jpg"
+ },
+ "yoho.bk-kaeru": {
+  "src": "photo-yoho.bk-kaeru.jpg",
+  "author": "UnknownUnknown , Leipzig ; Berlin ; Wien : F.A. Brockhaus",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Anoures.jpg",
+  "file": "File:Anoures.jpg"
+ },
+ "yoho.bk-tenteki": {
+  "src": "photo-yoho.bk-tenteki.jpg",
+  "author": "Tomomarusan",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Hierodula_patellifera_preys_on_maculaticollis.JPG",
+  "file": "File:Hierodula patellifera preys on maculaticollis.JPG"
+ },
+ "yoho.bk-kabi": {
+  "src": "photo-yoho.bk-kabi.jpg",
+  "author": "Dr. David Midgley",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Aspergillus_fumigatus.jpg",
+  "file": "File:Aspergillus fumigatus.jpg"
+ },
+ "yoho.bk-ga": {
+  "src": "photo-yoho.bk-ga.jpg",
+  "author": "Sphl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ume-edashaku.jpg",
+  "file": "File:Ume-edashaku.jpg"
+ },
+ "yoho.bk-senjo": {
+  "src": "photo-yoho.bk-senjo.jpg",
+  "author": "Bill Branson (Photographer)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Woman_washing_hands.jpg",
+  "file": "File:Woman washing hands.jpg"
+ },
+ "yoho.bk-hokyu": {
+  "src": "photo-yoho.bk-hokyu.jpg",
+  "author": "Jon Sullivan",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Bee_Collecting_Pollen_2004-08-14.jpg",
+  "file": "File:Bee Collecting Pollen 2004-08-14.jpg"
+ },
+ "yoho.bk-hegiita": {
+  "src": "photo-yoho.bk-hegiita.jpg",
+  "author": "Courtesy, Eric Erbe, Christopher Pooley: USDA, ARS, EMU.",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Varroa_destructor_on_honeybee_host.jpg",
+  "file": "File:Varroa destructor on honeybee host.jpg"
+ },
+ "yoho.bk-akarin": {
+  "src": "photo-yoho.bk-akarin.jpg",
+  "author": "USDA",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Tracheal_mite_-_Acarapis_woodi.jpg",
+  "file": "File:Tracheal mite - Acarapis woodi.jpg"
+ },
+ "yoho.bk-fuso": {
+  "src": "photo-yoho.bk-fuso.jpg",
+  "author": "Pollinator",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Loque_americana.jpg",
+  "file": "File:Loque americana.jpg"
+ },
+ "yoho.bk-byogentai": {
+  "src": "photo-yoho.bk-byogentai.jpg",
+  "author": "explorebiology",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:XBio_illustration_%E2%80%93_Pathogen.png",
+  "file": "File:XBio illustration – Pathogen.png"
+ },
+ "yoho.bk-tsuzuriga": {
+  "src": "photo-yoho.bk-tsuzuriga.jpg",
+  "author": "Andy Reago & Chrissy McClarren",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Galleria_mellonella_%E2%80%93_Greater_Wax_Moth_(44040100721).jpg",
+  "file": "File:Galleria mellonella – Greater Wax Moth (44040100721).jpg"
+ },
+ "yoho.bk-bihoshichu": {
+  "src": "photo-yoho.bk-bihoshichu.jpg",
+  "author": "No machine-readable author provided. Javier martin assumed (…",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Fibrillanosema_spore.jpg",
+  "file": "File:Fibrillanosema spore.jpg"
+ },
+ "yoho.bk-gaho": {
+  "src": "photo-yoho.bk-gaho.jpg",
+  "author": "Y tambe (original uploader)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bacillus_subtilis_Spore.jpg",
+  "file": "File:Bacillus subtilis Spore.jpg"
+ },
+ "yoho.bk-virus": {
+  "src": "photo-yoho.bk-virus.jpg",
+  "author": "不明",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rotavirus_Reconstruction.jpg",
+  "file": "File:Rotavirus Reconstruction.jpg"
+ },
+ "yoho.bk-hachikuma": {
+  "src": "photo-yoho.bk-hachikuma.jpg",
+  "author": "J.M.Garg",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oriental_Honey-buzzard_(Pernis_ptilorhynchus)-_Male_at_Kolkata_I_IMG_7451.jpg",
+  "file": "File:Oriental Honey-buzzard (Pernis ptilorhynchus)- Male at Kolkata I IMG 7451.jpg"
+ },
+ "yoho.bk-tsukinowaguma": {
+  "src": "photo-yoho.bk-tsukinowaguma.jpg",
+  "author": "Guérin Nicolas (messages)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ursus_thibetanus_3_(Wroclaw_zoo).JPG",
+  "file": "File:Ursus thibetanus 3 (Wroclaw zoo).JPG"
+ },
+ "yoho.bk-ccd": {
+  "src": "photo-yoho.bk-ccd.jpg",
+  "author": "Björn Appel. Edit by Waugsberg (cropped)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Honeybee-cooling_cropped.jpg",
+  "file": "File:Honeybee-cooling cropped.jpg"
+ },
+ "yoho.hm-todofuken": {
+  "src": "photo-yoho.hm-todofuken.jpg",
+  "author": "TheOtherJesse",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Regions_and_Prefectures_of_Japan.svg",
+  "file": "File:Regions and Prefectures of Japan.svg"
+ },
+ "yoho.hm-kachiku": {
+  "src": "photo-yoho.hm-kachiku.jpg",
+  "author": "Painter of the burial chamber of Sennedjem",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Maler_der_Grabkammer_des_Sennudem_001.jpg",
+  "file": "File:Maler der Grabkammer des Sennudem 001.jpg"
+ },
+ "yoho.hm-shokuhin": {
+  "src": "photo-yoho.hm-shokuhin.jpg",
+  "author": "El Mono Español",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Collage_Japanese_Cuisine_by_User-EME.png",
+  "file": "File:Collage Japanese Cuisine by User-EME.png"
+ },
+ "yoho.hm-rekishi": {
+  "src": "photo-yoho.hm-rekishi.jpg",
+  "author": "Ken'yu (賢瑜)",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Kojiki_Shinpukuji.jpg",
+  "file": "File:Kojiki Shinpukuji.jpg"
+ },
+ "yoho.hm-egypt": {
+  "src": "photo-yoho.hm-egypt.jpg",
+  "author": "Than217 at English Wikipedia",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Abu_Simbel_Temple_May_30_2007.jpg",
+  "file": "File:Abu Simbel Temple May 30 2007.jpg"
+ },
+ "yoho.hm-nobel": {
+  "src": "photo-yoho.hm-nobel.jpg",
+  "author": "AlphaZeta",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:NobelP2.png",
+  "file": "File:NobelP2.png"
+ },
+ "yoho.hm-noka": {
+  "src": "photo-yoho.hm-noka.jpg",
+  "author": "Ralf Roletschek",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:04-09-12-Schaupfl%C3%BCgen-Fahrenwalde-RalfR-IMG_1232.jpg",
+  "file": "File:04-09-12-Schaupflügen-Fahrenwalde-RalfR-IMG 1232.jpg"
+ },
+ "yoho.hm-genzairyo": {
+  "src": "photo-yoho.hm-genzairyo.jpg",
+  "author": "Edward Betts",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Expiration.jpg",
+  "file": "File:Expiration.jpg"
+ },
+ "yoho.hm-daigakko": {
+  "src": "photo-yoho.hm-daigakko.jpg",
+  "author": "Painter of the burial chamber of Sennedjem",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Maler_der_Grabkammer_des_Sennudem_001.jpg",
+  "file": "File:Maler der Grabkammer des Sennudem 001.jpg"
+ },
+ "yoho.hm-anzen": {
+  "src": "photo-yoho.hm-anzen.jpg",
+  "author": "GNOME icon artists; Pbroks13 (talk)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Food_Safety_1.svg",
+  "file": "File:Food Safety 1.svg"
+ },
+ "yoho.hm-kodogaku": {
+  "src": "photo-yoho.hm-kodogaku.jpg",
+  "author": "creator of composite, User:Medeis; original authors, as cred…",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Animal_diversity.png",
+  "file": "File:Animal diversity.png"
+ },
+ "yoho.hm-shoki": {
+  "src": "photo-yoho.hm-shoki.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "パブリックドメイン",
+  "licenseUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Nihonshoki_tanaka_version.jpg",
+  "file": "File:Nihonshoki tanaka version.jpg"
  }
 };

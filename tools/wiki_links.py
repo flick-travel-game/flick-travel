@@ -49,6 +49,7 @@ UA = "flick-travel-wiki-links/1.0 (https://flick-travel-game.github.io/flick-tra
 
 
 NO_WIKI.update({"volley:kh-reception": "パーティーの 記事", "volley:kh-fullset": "べつの 作品の 記事", "volley:kh-shoes": "上履きの 記事", "volley:rl-handset": "電話機の 記事", "volley:lg-kogohai": "べつの 大会の 記事", "volley:lg-champs": "選手権 全体の 記事", "volley:lg-scudetto": "サッカーの 記事", "volley:tm-trentino": "県の 記事", "volley:st-darlan": "べつの 人の 記事", "volley:st-akimoto": "べつの 名前の 記事", "volley:wz-broad": "車の 記事", "volley:wz-inner": "下着の 記事", "volley:tc-haikyu": "野球の 記事", "volley:tc-scouting": "べつの 運動の 記事", "volley:lg-regular": "スポーツ 全体の 記事", "volley:lg-roundrobin": "リーグ戦 全体の 記事"})  # フリックワールドバレーボール(2026-10-24。目で 見て 外した)
+NO_WIKI.update({"yoho:jo-shojoou": "イングランドの 女王の 記事", "yoho:jo-caucasian": "人の 分類の 記事", "yoho:sg-kyuji": "人の 食事の 記事", "yoho:hn-kyukoden": "田んぼ 全体の 記事", "yoho:jo-candy": "おかしの 記事", "yoho:jo-mark": "しるし 全体の 記事", "yoho:dg-marking": "文房具の 記事", "yoho:sg-kashidashi": "図書館の 貸出の 記事", "yoho:sh-kanetsu": "熱 全体の 記事", "yoho:hm-hyoji": "表示 全体の 記事", "yoho:hm-sekokisoku": "省令 全体の 記事", "yoho:jo-sanran": "卵 全体の 記事", "yoho:bk-todokede": "べつの 法律の 記事"})  # フリック養蜂家(2026-11-01)
 
 def api(params):
     """POST で 聞く(題名が 50こ でも URL が 長く ならない)。429 は Retry-After だけ 待つ。呼ぶ あいだは 2秒 あける"""

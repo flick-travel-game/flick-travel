@@ -88,8 +88,8 @@ GAMES = {
     #   まとめは docs/フリック気象予報士-はじめかた.md。ことばは tools/kisho/terms-<旅>.json → kisho/terms.js(tools/kisho/terms_js.py)。しくみは kisho/kisho.js(KISHO。パイロットを 写した。📝 試験の 札・🧮 公式・🧩 4択・🧮 計算問題)。
     #   ⚠️⚠️ 災害を こわく しない・変わる 数字・民間の 気象会社の 名前は 出さない。防災気象情報は 2026年5月29日からの 新しい 名前(決まりは tools/kisho/PROMPT.md)。
     #   絵は まだ(仮の アイコン tools/kisho/placeholder_icon.py)。届いたら tools/kisho/art/square-src.png → tools/icon_from_square.py kisho(iconv を +1)/ title-src.png → tools/title_from_art.py kisho(logo を True・art.word を 実寸に)/ kisho/hero.webp(hero を True)
-    "kisho": dict(name="フリック気象予報士", modes="KISHO", kinds=set(), color="#1c7ed6", hero=False, logo=False,
-                  art=dict(word=(900, 200), hero=(1536, 1024), alt="フリック気象予報士", iconv=1, wordv=1),
+    "kisho": dict(name="フリック気象予報士", modes="KISHO", kinds=set(), color="#1c7ed6", hero=True, logo=False,
+                  art=dict(word=(900, 200), hero=(1536, 1024), alt="フリック気象予報士", iconv=1, wordv=2),
                   lead="天気の きほん・大気の しくみ・風と 大気の 動き・雲と 雨と いろいろな 気象・観測と 予報の 道具・日本の 天気と 季節・防災と 気象情報・法律と 気象の しごと・天気図の 読みかた(実技)の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、試験の どこで 出るか(学科一般・学科専門・実技)が わかるよ。天気が すきな 子の ことばから、気象予報士試験の 範囲の めやすまで 990語。4択クイズと 計算問題で 学科試験の 練習も できるよ。",
                   how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 天気と 避難は、気象庁と 市町村の 情報を 見てね。実技試験の 記述(天気図を 見て 文で 答える)は 過去問で 練習してね。",
                   rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、空の しくみが 見えてくるよ。気象庁・気象業務支援センターとは 関係ありません。"),

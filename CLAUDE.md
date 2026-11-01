@@ -1646,7 +1646,12 @@
   やませ(春から夏)/ 静穏(0.3m/s 未満 = 風力0)/ 500hPa 高度・渦度図は 相対渦度 / エルニーニョ監視海域の 基準値(前年までの 30年平均)/ 南方振動(熱帯の 太平洋)/ 非常に強い風(20以上30未満 m/s)/ 世界気象デー(「世界気象の日」では ない)/
   洪水警報の あつかい / 気象防災アドバイザー(国土交通大臣が 委嘱)/ 災害救助法 / 地衡風調節の 読み(ちょうせつ)
 - ふりがなは 助手 2人が 990語の ふりがなを ぜんぶ 読んで 直した(言いかえ 約20か所 + `rbfix-*.json` 57しゅるい: 二十四節気・渦度・湿数・雲域・巻雲・中谷宇吉郎・太平洋高気圧 など)
-- 絵: **まだ 無い**(仮の アイコン `tools/kisho/placeholder_icon.py` = 青空に 太陽・雲・雨つぶ。`hero=False`・`logo=False`)。
+- **トップの 絵は 入れた**(2026-11-01。`kisho/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。
+  1回目は ゲームに 無い 読み 6つ(れーだー・ばいう・てれびかいせつ・ていきあつのしんろ・4択の らんそう / うすぐも)・くずれた山と あふれた川の 札・赤い十字で 入れなかった。
+  2回目の のこり 6か所は **絵の 中で 直した**(`tools/kisho/fix_text.py`。けいくん「1」): ぼうきい → ぼうさい / たいふつ → たいふうのしんろ / じょっと → じぇっときりゅう /
+  4択 D の けんうん(C と かぶり)→ そううん / じけんで できんこと → しけんで でるところ / ぎっかせんもん → がっかせんもん。
+  ⚠️ 色が 横に 変わる 札は 列ごとに 上下を つなぐ `verase`(横に つなぐと となりの 色が にじんだ)。もとの 絵は 入れものに 入れていない
+- アイコンは **まだ 仮**(`tools/kisho/placeholder_icon.py` = 青空に 太陽・雲・雨つぶ)。題名も 文字(`logo=False`)。
   届いたら 四角い 絵 → `tools/kisho/art/square-src.png` → `python3 tools/icon_from_square.py kisho`(`iconv` +1)/ 題名の 透明 PNG → `tools/kisho/art/title-src.png` → `python3 tools/title_from_art.py kisho`(`logo=True`・`art.word` を 実寸)/ `kisho/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **こわれた 家・水に つかった 町・泣いている 人・天気アプリや テレビ局の ロゴ**を 描かせない。人物は 下 3分の1に 小さく。「気象予報土」「気象予報師」に なりやすいので 届いた 字を かならず 読む。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
 - 確かめかた: `node tools/play-all.mjs kisho/`(全198ステージ。旅 9×11 + マスター 99。VAR=nfd / spacing / commit も)/ `node tools/click-all.mjs kisho/`(W=320 も)/ `python3 tools/kisho/terms_js.py --check`

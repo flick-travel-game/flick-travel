@@ -1,0 +1,6328 @@
+{
+ "kihon": [
+  {
+   "id": "kh-mitsubachi",
+   "name": "ミツバチ",
+   "reading": "みつばち",
+   "difficulty": 1,
+   "mapNode": "kihon:seiyo",
+   "field": "生態",
+   "bee": "共通",
+   "note": "花の みつと 花粉を あつめる ハチ"
+  },
+  {
+   "id": "kh-hachimitsu",
+   "name": "はちみつ",
+   "reading": "はちみつ",
+   "difficulty": 1,
+   "mapNode": "kihon:mitsu",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "ハチが 花蜜から 作る あまい 食べもの"
+  },
+  {
+   "id": "kh-joouba",
+   "name": "女王蜂",
+   "reading": "じょおうばち",
+   "difficulty": 1,
+   "mapNode": "kihon:joou",
+   "field": "生態",
+   "bee": "共通",
+   "note": "群に 1ぴきの 卵を うむ メス"
+  },
+  {
+   "id": "kh-hatarakibachi",
+   "name": "働き蜂",
+   "reading": "はたらきばち",
+   "difficulty": 1,
+   "mapNode": "kihon:hataraki",
+   "field": "生態",
+   "bee": "共通",
+   "note": "巣の しごとを する メスの ハチ"
+  },
+  {
+   "id": "kh-obachi",
+   "name": "雄蜂",
+   "reading": "おばち",
+   "difficulty": 1,
+   "mapNode": "kihon:obachi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王と 出会う ための オスの ハチ",
+   "acceptedReadings": [
+    "おばち",
+    "ゆうほう"
+   ]
+  },
+  {
+   "id": "kh-subako",
+   "name": "巣箱",
+   "reading": "すばこ",
+   "difficulty": 1,
+   "mapNode": "kihon:yoho",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "ミツバチを 飼う ための 箱"
+  },
+  {
+   "id": "kh-kafun",
+   "name": "花粉",
+   "reading": "かふん",
+   "difficulty": 1,
+   "mapNode": "kihon:kafun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチの タンパク質の 食べもの"
+  },
+  {
+   "id": "kh-kamitsu",
+   "name": "花蜜",
+   "reading": "かみつ",
+   "difficulty": 1,
+   "mapNode": "kihon:mitsu",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "花が 出す あまい しる"
+  },
+  {
+   "id": "kh-jufun",
+   "name": "受粉",
+   "reading": "じゅふん",
+   "difficulty": 1,
+   "mapNode": "kihon:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花粉が めしべに つく こと"
+  },
+  {
+   "id": "kh-su",
+   "name": "巣",
+   "reading": "す",
+   "difficulty": 1,
+   "mapNode": "kihon:su",
+   "field": "生態",
+   "bee": "共通",
+   "note": "ろうで できた ハチの すみか"
+  },
+  {
+   "id": "kh-rokkakkei",
+   "name": "六角形",
+   "reading": "ろっかっけい",
+   "difficulty": 1,
+   "mapNode": "kihon:su",
+   "field": "生態",
+   "bee": "共通",
+   "note": "巣房の 形"
+  },
+  {
+   "id": "kh-seiyo",
+   "name": "セイヨウミツバチ",
+   "reading": "せいようみつばち",
+   "difficulty": 1,
+   "mapNode": "kihon:seiyo",
+   "field": "生態",
+   "bee": "西洋",
+   "note": "養蜂の 中心と なる ミツバチ"
+  },
+  {
+   "id": "kh-nihon",
+   "name": "ニホンミツバチ",
+   "reading": "にほんみつばち",
+   "difficulty": 1,
+   "mapNode": "kihon:nihon",
+   "field": "生態",
+   "bee": "日本",
+   "note": "日本に もとから いる ミツバチ"
+  },
+  {
+   "id": "kh-konchu",
+   "name": "昆虫",
+   "reading": "こんちゅう",
+   "difficulty": 1,
+   "mapNode": "kihon:seiyo",
+   "field": "生態",
+   "bee": "共通",
+   "note": "あし 6本・はね 4枚の なかま"
+  },
+  {
+   "id": "kh-yoho",
+   "name": "養蜂",
+   "reading": "ようほう",
+   "difficulty": 1,
+   "mapNode": "kihon:yoho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ミツバチを 飼う こと"
+  },
+  {
+   "id": "kh-yohoka",
+   "name": "養蜂家",
+   "reading": "ようほうか",
+   "difficulty": 1,
+   "mapNode": "kihon:yoho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ミツバチを 飼う 人"
+  },
+  {
+   "id": "kh-mure",
+   "name": "群",
+   "reading": "むれ",
+   "difficulty": 1,
+   "mapNode": "kihon:colony",
+   "field": "生態",
+   "bee": "共通",
+   "note": "ひとつの 巣で くらす ハチの あつまり"
+  },
+  {
+   "id": "kh-bunpo",
+   "name": "分蜂",
+   "reading": "ぶんぽう",
+   "difficulty": 1,
+   "mapNode": "kihon:bunpo",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王が 群の 半分ほどと 巣を 出る こと"
+  },
+  {
+   "id": "kh-colony",
+   "name": "コロニー",
+   "reading": "ころにー",
+   "difficulty": 1,
+   "mapNode": "kihon:colony",
+   "field": "生態",
+   "bee": "共通",
+   "note": "群の 別の 言いかた"
+  },
+  {
+   "id": "kh-subo",
+   "name": "巣房",
+   "reading": "すぼう",
+   "difficulty": 1,
+   "mapNode": "kihon:su",
+   "field": "生態",
+   "bee": "共通",
+   "note": "巣の 六角形の 小部屋"
+  },
+  {
+   "id": "kh-shakaisei",
+   "name": "社会性昆虫",
+   "reading": "しゃかいせいこんちゅう",
+   "difficulty": 2,
+   "mapNode": "kihon:colony",
+   "field": "生態",
+   "bee": "共通",
+   "note": "なかまで 役わりを 分けて くらす 昆虫"
+  },
+  {
+   "id": "kh-hachimoku",
+   "name": "ハチ目",
+   "reading": "はちもく",
+   "difficulty": 2,
+   "mapNode": "kihon:seiyo",
+   "field": "生態",
+   "bee": "共通",
+   "note": "ハチや アリの なかまの 分類"
+  },
+  {
+   "id": "kh-mitsubachika",
+   "name": "ミツバチ科",
+   "reading": "みつばちか",
+   "difficulty": 2,
+   "mapNode": "kihon:seiyo",
+   "field": "生態",
+   "bee": "共通",
+   "note": "ミツバチや マルハナバチの なかま"
+  },
+  {
+   "id": "kh-pollination",
+   "name": "ポリネーション",
+   "reading": "ぽりねーしょん",
+   "difficulty": 2,
+   "mapNode": "kihon:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "受粉の 英語の 言いかた"
+  },
+  {
+   "id": "kh-kafunbaikai",
+   "name": "花粉媒介",
+   "reading": "かふんばいかい",
+   "difficulty": 2,
+   "mapNode": "kihon:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花粉を 花から 花へ 運ぶ こと"
+  },
+  {
+   "id": "kh-bungyo",
+   "name": "分業",
+   "reading": "ぶんぎょう",
+   "difficulty": 2,
+   "mapNode": "kihon:hataraki",
+   "field": "生態",
+   "bee": "共通",
+   "note": "しごとを 分けて 受けもつ こと"
+  },
+  {
+   "id": "kh-joobusshitsu",
+   "name": "女王物質",
+   "reading": "じょおうぶっしつ",
+   "difficulty": 2,
+   "mapNode": "kihon:joou",
+   "field": "生態",
+   "bee": "共通",
+   "note": "女王が 出す 群を まとめる におい"
+  },
+  {
+   "id": "kh-joojumyo",
+   "name": "女王の寿命",
+   "reading": "じょおうのじゅみょう",
+   "difficulty": 2,
+   "mapNode": "kihon:joou",
+   "field": "生態",
+   "bee": "共通",
+   "note": "女王は およそ 数年 生きる"
+  },
+  {
+   "id": "kh-kobi",
+   "name": "交尾",
+   "reading": "こうび",
+   "difficulty": 2,
+   "mapNode": "kihon:obachi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王と 雄蜂が 空で 出会う こと"
+  },
+  {
+   "id": "kh-museiran",
+   "name": "無精卵",
+   "reading": "むせいらん",
+   "difficulty": 2,
+   "mapNode": "kihon:obachi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "雄蜂に なる 卵"
+  },
+  {
+   "id": "kh-nectar",
+   "name": "ネクター",
+   "reading": "ねくたー",
+   "difficulty": 2,
+   "mapNode": "kihon:mitsu",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "花蜜の 別の 言いかた"
+  },
+  {
+   "id": "kh-chomitsu",
+   "name": "貯蜜",
+   "reading": "ちょみつ",
+   "difficulty": 2,
+   "mapNode": "kihon:mitsu",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "巣に たくわえた みつ"
+  },
+  {
+   "id": "kh-kafundango",
+   "name": "花粉だんご",
+   "reading": "かふんだんご",
+   "difficulty": 2,
+   "mapNode": "kihon:kafun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "あしに つけて 運ぶ 花粉の かたまり"
+  },
+  {
+   "id": "kh-beebread",
+   "name": "ビーブレッド",
+   "reading": "びーぶれっど",
+   "difficulty": 2,
+   "mapNode": "kihon:kafun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "巣房に ためて 発酵した 花粉"
+  },
+  {
+   "id": "kh-tanpaku",
+   "name": "タンパク質",
+   "reading": "たんぱくしつ",
+   "difficulty": 2,
+   "mapNode": "kihon:kafun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花粉に ふくまれる からだを 作る 栄養"
+  },
+  {
+   "id": "kh-bunpogun",
+   "name": "分蜂群",
+   "reading": "ぶんぽうぐん",
+   "difficulty": 2,
+   "mapNode": "kihon:bunpo",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "分蜂で 巣を 出た ハチの あつまり"
+  },
+  {
+   "id": "kh-tansakubachi",
+   "name": "探索蜂",
+   "reading": "たんさくばち",
+   "difficulty": 2,
+   "mapNode": "kihon:bunpo",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "新しい すみかを さがす 働き蜂"
+  },
+  {
+   "id": "kh-suwakare",
+   "name": "巣分かれ",
+   "reading": "すわかれ",
+   "difficulty": 2,
+   "mapNode": "kihon:bunpo",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "分蜂の 昔からの 言いかた"
+  },
+  {
+   "id": "kh-hogun",
+   "name": "蜂群",
+   "reading": "ほうぐん",
+   "difficulty": 2,
+   "mapNode": "kihon:colony",
+   "field": "生態",
+   "bee": "共通",
+   "note": "群の 養蜂の 言いかた"
+  },
+  {
+   "id": "kh-suita",
+   "name": "巣板",
+   "reading": "すいた",
+   "difficulty": 2,
+   "mapNode": "kihon:su",
+   "field": "生態",
+   "bee": "共通",
+   "note": "巣房が ならんだ ろうの 板"
+  },
+  {
+   "id": "kh-honeycomb",
+   "name": "ハニカム構造",
+   "reading": "はにかむこうぞう",
+   "difficulty": 2,
+   "mapNode": "kihon:su",
+   "field": "生態",
+   "bee": "共通",
+   "note": "六角形を すきまなく ならべた 形"
+  },
+  {
+   "id": "kh-wabachi",
+   "name": "和蜂",
+   "reading": "わばち",
+   "difficulty": 2,
+   "mapNode": "kihon:nihon",
+   "field": "生態",
+   "bee": "日本",
+   "note": "ニホンミツバチの 別の よび名"
+  },
+  {
+   "id": "kh-yobachi",
+   "name": "洋蜂",
+   "reading": "ようばち",
+   "difficulty": 2,
+   "mapNode": "kihon:seiyo",
+   "field": "生態",
+   "bee": "西洋",
+   "note": "セイヨウミツバチの 別の よび名"
+  },
+  {
+   "id": "kh-zairaishu",
+   "name": "在来種",
+   "reading": "ざいらいしゅ",
+   "difficulty": 2,
+   "mapNode": "kihon:nihon",
+   "field": "生態",
+   "bee": "日本",
+   "note": "もとから その 土地に いる 生きもの"
+  },
+  {
+   "id": "kh-gairaishu",
+   "name": "外来種",
+   "reading": "がいらいしゅ",
+   "difficulty": 2,
+   "mapNode": "kihon:seiyo",
+   "field": "生態",
+   "bee": "西洋",
+   "note": "ほかの 国から 入ってきた 生きもの"
+  },
+  {
+   "id": "kh-choukotai",
+   "name": "超個体",
+   "reading": "ちょうこたい",
+   "difficulty": 3,
+   "mapNode": "kihon:colony",
+   "field": "生態",
+   "bee": "共通",
+   "note": "群 全体を 1つの 生きものと 見る 考え"
+  },
+  {
+   "id": "kh-shinshakai",
+   "name": "真社会性",
+   "reading": "しんしゃかいせい",
+   "difficulty": 3,
+   "mapNode": "kihon:colony",
+   "field": "生態",
+   "bee": "共通",
+   "note": "卵を うむ 役と 働く 役が 分かれた 社会"
+  },
+  {
+   "id": "kh-caste",
+   "name": "カースト",
+   "reading": "かーすと",
+   "difficulty": 3,
+   "mapNode": "kihon:colony",
+   "field": "生態",
+   "bee": "共通",
+   "note": "女王・働き蜂の 役わりの 分かれ"
+  },
+  {
+   "id": "kh-mellifera",
+   "name": "アピス・メリフェラ",
+   "reading": "あぴすめりふぇら",
+   "difficulty": 3,
+   "mapNode": "kihon:seiyo",
+   "field": "生態",
+   "bee": "西洋",
+   "note": "セイヨウミツバチの 学名"
+  },
+  {
+   "id": "kh-toyo",
+   "name": "トウヨウミツバチ",
+   "reading": "とうようみつばち",
+   "difficulty": 3,
+   "mapNode": "kihon:nihon",
+   "field": "生態",
+   "bee": "日本",
+   "note": "ニホンミツバチを ふくむ アジアの 種"
+  },
+  {
+   "id": "kh-cerana",
+   "name": "アピス・セラナ",
+   "reading": "あぴすせらな",
+   "difficulty": 3,
+   "mapNode": "kihon:nihon",
+   "field": "生態",
+   "bee": "日本",
+   "note": "トウヨウミツバチの 学名"
+  },
+  {
+   "id": "kh-hanbaisu",
+   "name": "半倍数性",
+   "reading": "はんばいすうせい",
+   "difficulty": 3,
+   "mapNode": "kihon:obachi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "オスと メスで 染色体の 組の 数が ちがう しくみ"
+  },
+  {
+   "id": "kh-tanihassei",
+   "name": "単為生殖",
+   "reading": "たんいせいしょく",
+   "difficulty": 3,
+   "mapNode": "kihon:obachi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "交尾なしの 卵から 子が 育つ こと"
+  },
+  {
+   "id": "kh-eiyokokan",
+   "name": "栄養交換",
+   "reading": "えいようこうかん",
+   "difficulty": 3,
+   "mapNode": "kihon:hataraki",
+   "field": "生態",
+   "bee": "共通",
+   "note": "口うつしで 食べものを 分けあう こと"
+  },
+  {
+   "id": "kh-hoji",
+   "name": "蜂児",
+   "reading": "ほうじ",
+   "difficulty": 3,
+   "mapNode": "kihon:su",
+   "field": "生態",
+   "bee": "共通",
+   "note": "卵・幼虫・さなぎの まとめた よび名"
+  },
+  {
+   "id": "kh-ikujiken",
+   "name": "育児圏",
+   "reading": "いくじけん",
+   "difficulty": 3,
+   "mapNode": "kihon:su",
+   "field": "生態",
+   "bee": "西洋",
+   "note": "巣枠の まん中の 蜂児が いる ところ"
+  },
+  {
+   "id": "kh-chomitsuken",
+   "name": "貯蜜圏",
+   "reading": "ちょみつけん",
+   "difficulty": 3,
+   "mapNode": "kihon:su",
+   "field": "生態",
+   "bee": "西洋",
+   "note": "みつを ためる 巣の 上や まわり"
+  },
+  {
+   "id": "kh-teiihiko",
+   "name": "定位飛行",
+   "reading": "ていいひこう",
+   "difficulty": 3,
+   "mapNode": "kihon:hataraki",
+   "field": "生態",
+   "bee": "共通",
+   "note": "巣の 場所を おぼえる はじめての 飛行"
+  },
+  {
+   "id": "kh-kiso",
+   "name": "帰巣",
+   "reading": "きそう",
+   "difficulty": 3,
+   "mapNode": "kihon:hataraki",
+   "field": "生態",
+   "bee": "共通",
+   "note": "巣に もどる こと"
+  },
+  {
+   "id": "kh-houka",
+   "name": "訪花",
+   "reading": "ほうか",
+   "difficulty": 3,
+   "mapNode": "kihon:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチが 花を おとずれる こと"
+  },
+  {
+   "id": "kh-teikasei",
+   "name": "定花性",
+   "reading": "ていかせい",
+   "difficulty": 3,
+   "mapNode": "kihon:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "同じ 種類の 花を つづけて まわる 性質"
+  },
+  {
+   "id": "kh-kyoshinka",
+   "name": "共進化",
+   "reading": "きょうしんか",
+   "difficulty": 3,
+   "mapNode": "kihon:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花と ハチが たがいに 合わせて 変わる こと"
+  },
+  {
+   "id": "kh-zoku",
+   "name": "ミツバチ属",
+   "reading": "みつばちぞく",
+   "difficulty": 3,
+   "mapNode": "kihon:seiyo",
+   "field": "生態",
+   "bee": "共通",
+   "note": "ミツバチだけの 分類の まとまり"
+  },
+  {
+   "id": "kh-seitaikei",
+   "name": "生態系",
+   "reading": "せいたいけい",
+   "difficulty": 3,
+   "mapNode": "kihon:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "生きものと まわりの つながり"
+  },
+  {
+   "id": "kh-gunsei",
+   "name": "群勢",
+   "reading": "ぐんせい",
+   "difficulty": 3,
+   "mapNode": "kihon:colony",
+   "field": "生態",
+   "bee": "共通",
+   "note": "群の 大きさや いきおい"
+  },
+  {
+   "id": "kh-yohogyo",
+   "name": "養蜂業",
+   "reading": "ようほうぎょう",
+   "difficulty": 3,
+   "mapNode": "kihon:yoho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ミツバチを 飼う 仕事"
+  },
+  {
+   "id": "kh-yaseigun",
+   "name": "野生群",
+   "reading": "やせいぐん",
+   "difficulty": 3,
+   "mapNode": "kihon:nihon",
+   "field": "生態",
+   "bee": "日本",
+   "note": "木の うろなどに すむ 群"
+  },
+  {
+   "id": "kh-obachisubo",
+   "name": "雄蜂巣房",
+   "reading": "おばちすぼう",
+   "difficulty": 3,
+   "mapNode": "kihon:su",
+   "field": "生態",
+   "bee": "共通",
+   "note": "雄蜂が 育つ 少し 大きな 巣房"
+  },
+  {
+   "id": "kh-hatarakijumyo",
+   "name": "働き蜂の寿命",
+   "reading": "はたらきばちのじゅみょう",
+   "difficulty": 3,
+   "mapNode": "kihon:hataraki",
+   "field": "生態",
+   "bee": "共通",
+   "note": "夏は およそ 1か月 冬は 数か月"
+  },
+  {
+   "id": "kh-dentatsu",
+   "name": "情報伝達",
+   "reading": "じょうほうでんたつ",
+   "difficulty": 3,
+   "mapNode": "kihon:hataraki",
+   "field": "生態",
+   "bee": "共通",
+   "note": "ダンスや においで 知らせあう こと"
+  }
+ ],
+ "karada": [
+  {
+   "id": "kr-tamago",
+   "name": "卵",
+   "reading": "たまご",
+   "difficulty": 1,
+   "mapNode": "karada:tamago",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "一生の はじまり"
+  },
+  {
+   "id": "kr-yochu",
+   "name": "幼虫",
+   "reading": "ようちゅう",
+   "difficulty": 1,
+   "mapNode": "karada:yochu",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "卵から かえった 白い 子ども"
+  },
+  {
+   "id": "kr-sanagi",
+   "name": "さなぎ",
+   "reading": "さなぎ",
+   "difficulty": 1,
+   "mapNode": "karada:sanagi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "ふたの 下で 成虫に 変わる 時期"
+  },
+  {
+   "id": "kr-seichu",
+   "name": "成虫",
+   "reading": "せいちゅう",
+   "difficulty": 1,
+   "mapNode": "karada:seichu",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "はねの ある おとなの ハチ"
+  },
+  {
+   "id": "kr-fukugan",
+   "name": "複眼",
+   "reading": "ふくがん",
+   "difficulty": 1,
+   "mapNode": "karada:me",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "小さな 目が あつまった 大きな 目"
+  },
+  {
+   "id": "kr-shokkaku",
+   "name": "触角",
+   "reading": "しょっかく",
+   "difficulty": 1,
+   "mapNode": "karada:me",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "においや ふれた ものを 感じる"
+  },
+  {
+   "id": "kr-hane",
+   "name": "はね",
+   "reading": "はね",
+   "difficulty": 1,
+   "mapNode": "karada:hane",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "4枚 ある 飛ぶ ための もの"
+  },
+  {
+   "id": "kr-ashi",
+   "name": "あし",
+   "reading": "あし",
+   "difficulty": 1,
+   "mapNode": "karada:ashi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "6本 ある あし"
+  },
+  {
+   "id": "kr-hari",
+   "name": "針",
+   "reading": "はり",
+   "difficulty": 1,
+   "mapNode": "karada:hari",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "巣を 守る ときだけ 使う 針"
+  },
+  {
+   "id": "kr-kafunkago",
+   "name": "花粉かご",
+   "reading": "かふんかご",
+   "difficulty": 1,
+   "mapNode": "karada:ashi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "後ろあしの 花粉を のせる くぼみ"
+  },
+  {
+   "id": "kr-atama",
+   "name": "頭",
+   "reading": "あたま",
+   "difficulty": 1,
+   "mapNode": "karada:seichu",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "目・触角・口が ある ところ"
+  },
+  {
+   "id": "kr-mune",
+   "name": "胸",
+   "reading": "むね",
+   "difficulty": 1,
+   "mapNode": "karada:seichu",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "はねと あしが つく ところ"
+  },
+  {
+   "id": "kr-hara",
+   "name": "腹",
+   "reading": "はら",
+   "difficulty": 1,
+   "mapNode": "karada:seichu",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "蜜胃や 針が ある ところ"
+  },
+  {
+   "id": "kr-henntai",
+   "name": "完全変態",
+   "reading": "かんぜんへんたい",
+   "difficulty": 1,
+   "mapNode": "karada:sanagi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "卵 幼虫 さなぎ 成虫と 育つ こと"
+  },
+  {
+   "id": "kr-hachinoji",
+   "name": "8の字ダンス",
+   "reading": "はちのじだんす",
+   "difficulty": 1,
+   "mapNode": "karada:dance",
+   "field": "生態",
+   "bee": "共通",
+   "note": "遠い 花の 場所を 知らせる ダンス"
+  },
+  {
+   "id": "kr-endance",
+   "name": "円ダンス",
+   "reading": "えんだんす",
+   "difficulty": 1,
+   "mapNode": "karada:dance",
+   "field": "生態",
+   "bee": "共通",
+   "note": "近くに 花が あると 知らせる ダンス"
+  },
+  {
+   "id": "kr-shita",
+   "name": "舌",
+   "reading": "した",
+   "difficulty": 1,
+   "mapNode": "karada:kuchi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "みつを なめとる 長い 舌"
+  },
+  {
+   "id": "kr-haoto",
+   "name": "羽音",
+   "reading": "はおと",
+   "difficulty": 1,
+   "mapNode": "karada:hane",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "はねを うごかす 音"
+  },
+  {
+   "id": "kr-tangan",
+   "name": "単眼",
+   "reading": "たんがん",
+   "difficulty": 1,
+   "mapNode": "karada:me",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "頭の 上の 小さな 3つの 目"
+  },
+  {
+   "id": "kr-ro",
+   "name": "ろう",
+   "reading": "ろう",
+   "difficulty": 1,
+   "mapNode": "karada:sen",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "おなかから 出す 巣の 材料"
+  },
+  {
+   "id": "kr-kofun",
+   "name": "口吻",
+   "reading": "こうふん",
+   "difficulty": 2,
+   "mapNode": "karada:kuchi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "みつを 吸う ストローの ような 口"
+  },
+  {
+   "id": "kr-mitsui",
+   "name": "蜜胃",
+   "reading": "みつい",
+   "difficulty": 2,
+   "mapNode": "karada:kuchi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "みつを ためて 運ぶ ふくろ"
+  },
+  {
+   "id": "kr-oago",
+   "name": "大あご",
+   "reading": "おおあご",
+   "difficulty": 2,
+   "mapNode": "karada:kuchi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "ろうを こねたり かんだり する あご"
+  },
+  {
+   "id": "kr-rosen",
+   "name": "ろう腺",
+   "reading": "ろうせん",
+   "difficulty": 2,
+   "mapNode": "karada:sen",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "ろうを 出す おなかの 腺"
+  },
+  {
+   "id": "kr-nasanov",
+   "name": "ナサノフ腺",
+   "reading": "なさのふせん",
+   "difficulty": 2,
+   "mapNode": "karada:sen",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "なかまを よぶ においを 出す 腺"
+  },
+  {
+   "id": "kr-pheromone",
+   "name": "フェロモン",
+   "reading": "ふぇろもん",
+   "difficulty": 2,
+   "mapNode": "karada:sen",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "なかまに 知らせる においの 物質"
+  },
+  {
+   "id": "kr-naikin",
+   "name": "内勤蜂",
+   "reading": "ないきんばち",
+   "difficulty": 2,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "巣の 中で 働く 若い 働き蜂"
+  },
+  {
+   "id": "kr-gaikin",
+   "name": "外勤蜂",
+   "reading": "がいきんばち",
+   "difficulty": 2,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "外で みつや 花粉を あつめる 働き蜂"
+  },
+  {
+   "id": "kr-ikujibachi",
+   "name": "育児蜂",
+   "reading": "いくじばち",
+   "difficulty": 2,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "幼虫に えさを あたえる 働き蜂"
+  },
+  {
+   "id": "kr-monban",
+   "name": "門番蜂",
+   "reading": "もんばんばち",
+   "difficulty": 2,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "巣門で 見はる 働き蜂"
+  },
+  {
+   "id": "kr-saijibachi",
+   "name": "採餌蜂",
+   "reading": "さいじばち",
+   "difficulty": 2,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "花へ 出かける 働き蜂"
+  },
+  {
+   "id": "kr-sojibachi",
+   "name": "掃除蜂",
+   "reading": "そうじばち",
+   "difficulty": 2,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "巣房を きれいに する 働き蜂"
+  },
+  {
+   "id": "kr-nichirei",
+   "name": "日齢",
+   "reading": "にちれい",
+   "difficulty": 2,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "成虫に なってからの 日数"
+  },
+  {
+   "id": "kr-fuyubachi",
+   "name": "冬蜂",
+   "reading": "ふゆばち",
+   "difficulty": 2,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "冬を こす 長生きの 働き蜂"
+  },
+  {
+   "id": "kr-natsubachi",
+   "name": "夏蜂",
+   "reading": "なつばち",
+   "difficulty": 2,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "夏に よく 働く 働き蜂"
+  },
+  {
+   "id": "kr-hishokin",
+   "name": "飛翔筋",
+   "reading": "ひしょうきん",
+   "difficulty": 2,
+   "mapNode": "karada:hane",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "はねを 動かす 胸の 筋肉"
+  },
+  {
+   "id": "kr-dappi",
+   "name": "脱皮",
+   "reading": "だっぴ",
+   "difficulty": 2,
+   "mapNode": "karada:yochu",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "幼虫が 皮を ぬいで 大きく なる こと"
+  },
+  {
+   "id": "kr-uka",
+   "name": "羽化",
+   "reading": "うか",
+   "difficulty": 2,
+   "mapNode": "karada:sanagi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "さなぎから 成虫が 出てくる こと"
+  },
+  {
+   "id": "kr-yugaihoji",
+   "name": "有蓋蜂児",
+   "reading": "ゆうがいほうじ",
+   "difficulty": 2,
+   "mapNode": "karada:sanagi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "ろうの ふたが された 蜂児"
+  },
+  {
+   "id": "kr-kafunbrush",
+   "name": "花粉ブラシ",
+   "reading": "かふんぶらし",
+   "difficulty": 2,
+   "mapNode": "karada:ashi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "あしの 毛で 花粉を あつめる"
+  },
+  {
+   "id": "kr-sakatoge",
+   "name": "逆とげ",
+   "reading": "さかとげ",
+   "difficulty": 2,
+   "mapNode": "karada:hari",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "働き蜂の 針の かえし"
+  },
+  {
+   "id": "kr-rohen",
+   "name": "ろう片",
+   "reading": "ろうへん",
+   "difficulty": 2,
+   "mapNode": "karada:sen",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "おなかから 出る うすい ろうの 板"
+  },
+  {
+   "id": "kr-kimon",
+   "name": "気門",
+   "reading": "きもん",
+   "difficulty": 2,
+   "mapNode": "karada:seichu",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "からだの 横の 息を する 穴"
+  },
+  {
+   "id": "kr-taishoku",
+   "name": "体色",
+   "reading": "たいしょく",
+   "difficulty": 2,
+   "mapNode": "karada:seichu",
+   "field": "からだ",
+   "bee": "日本",
+   "note": "ニホンミツバチは 黒っぽい"
+  },
+  {
+   "id": "kr-ookisa",
+   "name": "体の大きさ",
+   "reading": "からだのおおきさ",
+   "difficulty": 2,
+   "mapNode": "karada:seichu",
+   "field": "からだ",
+   "bee": "日本",
+   "note": "ニホンミツバチは 少し 小さい"
+  },
+  {
+   "id": "kr-kaintosen",
+   "name": "下咽頭腺",
+   "reading": "かいんとうせん",
+   "difficulty": 3,
+   "mapNode": "karada:sen",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "ローヤルゼリーを 作る 頭の 腺"
+  },
+  {
+   "id": "kr-daigakusen",
+   "name": "大顎腺",
+   "reading": "だいがくせん",
+   "difficulty": 3,
+   "mapNode": "karada:sen",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "あごの つけねの 腺"
+  },
+  {
+   "id": "kr-keihou",
+   "name": "警報フェロモン",
+   "reading": "けいほうふぇろもん",
+   "difficulty": 3,
+   "mapNode": "karada:sen",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "あぶないと 仲間に 知らせる におい"
+  },
+  {
+   "id": "kr-zeni",
+   "name": "前胃",
+   "reading": "ぜんい",
+   "difficulty": 3,
+   "mapNode": "karada:kuchi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "蜜胃と 中腸の あいだの 弁"
+  },
+  {
+   "id": "kr-chucho",
+   "name": "中腸",
+   "reading": "ちゅうちょう",
+   "difficulty": 3,
+   "mapNode": "karada:kuchi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "食べものを こなす ところ"
+  },
+  {
+   "id": "kr-senpu",
+   "name": "扇風行動",
+   "reading": "せんぷうこうどう",
+   "difficulty": 3,
+   "mapNode": "karada:hane",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "はねで 風を 送り 巣を すずしく する"
+  },
+  {
+   "id": "kr-shiko",
+   "name": "翅鈎",
+   "reading": "しこう",
+   "difficulty": 3,
+   "mapNode": "karada:hane",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "前ばねと 後ろばねを つなぐ かぎ"
+  },
+  {
+   "id": "kr-fusetsu",
+   "name": "ふ節",
+   "reading": "ふせつ",
+   "difficulty": 3,
+   "mapNode": "karada:ashi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "あしの 先の 節"
+  },
+  {
+   "id": "kr-shokkakusoji",
+   "name": "触角掃除器",
+   "reading": "しょっかくそうじき",
+   "difficulty": 3,
+   "mapNode": "karada:ashi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "前あしで 触角を きれいに する くぼみ"
+  },
+  {
+   "id": "kr-kogan",
+   "name": "個眼",
+   "reading": "こがん",
+   "difficulty": 3,
+   "mapNode": "karada:me",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "複眼を 作る 1つ1つの 小さな 目"
+  },
+  {
+   "id": "kr-shigaisen",
+   "name": "紫外線",
+   "reading": "しがいせん",
+   "difficulty": 3,
+   "mapNode": "karada:me",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "ハチには 見える 光"
+  },
+  {
+   "id": "kr-henko",
+   "name": "偏光",
+   "reading": "へんこう",
+   "difficulty": 3,
+   "mapNode": "karada:me",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "くもりでも 方角を 知る 手がかりの 光"
+  },
+  {
+   "id": "kr-taiyocompass",
+   "name": "太陽コンパス",
+   "reading": "たいようこんぱす",
+   "difficulty": 3,
+   "mapNode": "karada:dance",
+   "field": "生態",
+   "bee": "共通",
+   "note": "太陽の 位置で 方角を 知る しくみ"
+  },
+  {
+   "id": "kr-shirifuri",
+   "name": "尻振りダンス",
+   "reading": "しりふりだんす",
+   "difficulty": 3,
+   "mapNode": "karada:dance",
+   "field": "生態",
+   "bee": "共通",
+   "note": "8の字ダンスの まっすぐ 進む ところ"
+  },
+  {
+   "id": "kr-dancegengo",
+   "name": "ダンス言語",
+   "reading": "だんすげんご",
+   "difficulty": 3,
+   "mapNode": "karada:dance",
+   "field": "生態",
+   "bee": "共通",
+   "note": "ダンスで 場所を 伝える しくみ"
+  },
+  {
+   "id": "kr-yoka",
+   "name": "蛹化",
+   "reading": "ようか",
+   "difficulty": 3,
+   "mapNode": "karada:sanagi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "幼虫が さなぎに なる こと"
+  },
+  {
+   "id": "kr-zenyo",
+   "name": "前蛹",
+   "reading": "ぜんよう",
+   "difficulty": 3,
+   "mapNode": "karada:sanagi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "さなぎに なる 前の 時期"
+  },
+  {
+   "id": "kr-mayu",
+   "name": "繭",
+   "reading": "まゆ",
+   "difficulty": 3,
+   "mapNode": "karada:sanagi",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "幼虫が 巣房の 中で はく 糸の まく"
+  },
+  {
+   "id": "kr-fuka",
+   "name": "孵化",
+   "reading": "ふか",
+   "difficulty": 3,
+   "mapNode": "karada:tamago",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "卵から 幼虫が かえる こと"
+  },
+  {
+   "id": "kr-juseiran",
+   "name": "受精卵",
+   "reading": "じゅせいらん",
+   "difficulty": 3,
+   "mapNode": "karada:tamago",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "メスに なる 卵"
+  },
+  {
+   "id": "kr-shibotai",
+   "name": "脂肪体",
+   "reading": "しぼうたい",
+   "difficulty": 3,
+   "mapNode": "karada:seichu",
+   "field": "からだ",
+   "bee": "共通",
+   "note": "栄養を たくわえる からだの 組織"
+  },
+  {
+   "id": "kr-reisabungyo",
+   "name": "齢差分業",
+   "reading": "れいさぶんぎょう",
+   "difficulty": 3,
+   "mapNode": "karada:nichirei",
+   "field": "生態",
+   "bee": "共通",
+   "note": "日齢で しごとが 変わる しくみ"
+  },
+  {
+   "id": "kr-shimmering",
+   "name": "シマリング",
+   "reading": "しまりんぐ",
+   "difficulty": 3,
+   "mapNode": "karada:hane",
+   "field": "からだ",
+   "bee": "日本",
+   "note": "ニホンミツバチが 波の ように からだを ふる"
+  },
+  {
+   "id": "kr-grooming",
+   "name": "グルーミング",
+   "reading": "ぐるーみんぐ",
+   "difficulty": 3,
+   "mapNode": "karada:seichu",
+   "field": "からだ",
+   "bee": "日本",
+   "note": "からだの ダニを はらい落とす 行動"
+  },
+  {
+   "id": "kr-teion",
+   "name": "低温活動",
+   "reading": "ていおんかつどう",
+   "difficulty": 3,
+   "mapNode": "karada:hane",
+   "field": "からだ",
+   "bee": "日本",
+   "note": "ニホンミツバチは 気温が 低めでも 飛ぶ"
+  }
+ ],
+ "dogu": [
+  {
+   "id": "dg-suwaku",
+   "name": "巣枠",
+   "reading": "すわく",
+   "difficulty": 1,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣を 作らせる 木の わく"
+  },
+  {
+   "id": "dg-sumon",
+   "name": "巣門",
+   "reading": "すもん",
+   "difficulty": 1,
+   "mapNode": "dogu:sumon",
+   "field": "道具",
+   "bee": "共通",
+   "note": "巣箱の 出入り口"
+  },
+  {
+   "id": "dg-futa",
+   "name": "ふた",
+   "reading": "ふた",
+   "difficulty": 1,
+   "mapNode": "dogu:futa",
+   "field": "道具",
+   "bee": "共通",
+   "note": "巣箱の いちばん 上の ふた"
+  },
+  {
+   "id": "dg-uchibuta",
+   "name": "内ぶた",
+   "reading": "うちぶた",
+   "difficulty": 1,
+   "mapNode": "dogu:futa",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠の 上に のせる 板"
+  },
+  {
+   "id": "dg-sokoita",
+   "name": "底板",
+   "reading": "そこいた",
+   "difficulty": 1,
+   "mapNode": "dogu:sokoban",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣箱の 底の 板"
+  },
+  {
+   "id": "dg-kunenki",
+   "name": "燻煙器",
+   "reading": "くんえんき",
+   "difficulty": 1,
+   "mapNode": "dogu:kunen",
+   "field": "道具",
+   "bee": "共通",
+   "note": "煙で ハチを おだやかに する 道具"
+  },
+  {
+   "id": "dg-menpu",
+   "name": "面布",
+   "reading": "めんぷ",
+   "difficulty": 1,
+   "mapNode": "dogu:menpu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "顔を 守る あみの おおい"
+  },
+  {
+   "id": "dg-tebukuro",
+   "name": "手袋",
+   "reading": "てぶくろ",
+   "difficulty": 1,
+   "mapNode": "dogu:menpu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "手を 守る 手ぶくろ"
+  },
+  {
+   "id": "dg-bogofuku",
+   "name": "防護服",
+   "reading": "ぼうごふく",
+   "difficulty": 1,
+   "mapNode": "dogu:menpu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "からだを 守る 白い 服"
+  },
+  {
+   "id": "dg-bunriki",
+   "name": "遠心分離機",
+   "reading": "えんしんぶんりき",
+   "difficulty": 1,
+   "mapNode": "dogu:bunriki",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠を 回して みつを とる 機械"
+  },
+  {
+   "id": "dg-mitsugatana",
+   "name": "蜜刀",
+   "reading": "みつがたな",
+   "difficulty": 1,
+   "mapNode": "dogu:bunriki",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "蜜ぶたを 切る おとなの 道具"
+  },
+  {
+   "id": "dg-kyujiki",
+   "name": "給餌器",
+   "reading": "きゅうじき",
+   "difficulty": 1,
+   "mapNode": "dogu:kyuji",
+   "field": "道具",
+   "bee": "共通",
+   "note": "砂糖水を 入れる えさ入れ"
+  },
+  {
+   "id": "dg-tsugibako",
+   "name": "継箱",
+   "reading": "つぎばこ",
+   "difficulty": 1,
+   "mapNode": "dogu:tsugibako",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣箱の 上に かさねる 箱"
+  },
+  {
+   "id": "dg-suso",
+   "name": "巣礎",
+   "reading": "すそ",
+   "difficulty": 1,
+   "mapNode": "dogu:suso",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣房の もようの ついた ろうの 板"
+  },
+  {
+   "id": "dg-hivetool",
+   "name": "ハイブツール",
+   "reading": "はいぶつーる",
+   "difficulty": 1,
+   "mapNode": "dogu:kunen",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠を はがす おとなの 道具"
+  },
+  {
+   "id": "dg-hachibrush",
+   "name": "蜂ブラシ",
+   "reading": "はちぶらし",
+   "difficulty": 1,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "ハチを やさしく はらう ブラシ"
+  },
+  {
+   "id": "dg-nagagutsu",
+   "name": "長ぐつ",
+   "reading": "ながぐつ",
+   "difficulty": 1,
+   "mapNode": "dogu:menpu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "足もとを 守る"
+  },
+  {
+   "id": "dg-boushi",
+   "name": "帽子",
+   "reading": "ぼうし",
+   "difficulty": 1,
+   "mapNode": "dogu:menpu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "面布と いっしょに かぶる"
+  },
+  {
+   "id": "dg-subakodai",
+   "name": "巣箱台",
+   "reading": "すばこだい",
+   "difficulty": 1,
+   "mapNode": "dogu:sokoban",
+   "field": "道具",
+   "bee": "共通",
+   "note": "巣箱を 地面から 上げる 台"
+  },
+  {
+   "id": "dg-kemuri",
+   "name": "煙",
+   "reading": "けむり",
+   "difficulty": 1,
+   "mapNode": "dogu:kunen",
+   "field": "道具",
+   "bee": "共通",
+   "note": "ハチを おちつかせる"
+  },
+  {
+   "id": "dg-kakuoban",
+   "name": "隔王板",
+   "reading": "かくおうばん",
+   "difficulty": 2,
+   "mapNode": "dogu:kakuo",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "女王が 通れない すきまの 板"
+  },
+  {
+   "id": "dg-suhi",
+   "name": "巣脾",
+   "reading": "すひ",
+   "difficulty": 2,
+   "mapNode": "dogu:suso",
+   "field": "道具",
+   "bee": "共通",
+   "note": "ハチが ろうで 作った 巣の 板"
+  },
+  {
+   "id": "dg-langbox",
+   "name": "ラングストロス式巣箱",
+   "reading": "らんぐすとろすしきすばこ",
+   "difficulty": 2,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠を 取りだせる 標準の 巣箱"
+  },
+  {
+   "id": "dg-jubako",
+   "name": "重箱式巣箱",
+   "reading": "じゅうばこしきすばこ",
+   "difficulty": 2,
+   "mapNode": "dogu:tsugibako",
+   "field": "道具",
+   "bee": "日本",
+   "note": "箱を たてに かさねる ニホンミツバチの 巣箱"
+  },
+  {
+   "id": "dg-sumonita",
+   "name": "巣門板",
+   "reading": "すもんいた",
+   "difficulty": 2,
+   "mapNode": "dogu:sumon",
+   "field": "道具",
+   "bee": "共通",
+   "note": "巣門の 広さを 変える 板"
+  },
+  {
+   "id": "dg-tanbako",
+   "name": "単箱",
+   "reading": "たんばこ",
+   "difficulty": 2,
+   "mapNode": "dogu:tsugibako",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "継箱を のせない 1段の 巣箱"
+  },
+  {
+   "id": "dg-kafunsaishu",
+   "name": "花粉採集器",
+   "reading": "かふんさいしゅうき",
+   "difficulty": 2,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣門で 花粉だんごを 落として あつめる"
+  },
+  {
+   "id": "dg-mitsukoshi",
+   "name": "蜜こし器",
+   "reading": "みつこしき",
+   "difficulty": 2,
+   "mapNode": "dogu:bunriki",
+   "field": "道具",
+   "bee": "共通",
+   "note": "みつの ごみを こす あみ"
+  },
+  {
+   "id": "dg-wakushiki",
+   "name": "枠式給餌器",
+   "reading": "わくしききゅうじき",
+   "difficulty": 2,
+   "mapNode": "dogu:kyuji",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠の 形の えさ入れ"
+  },
+  {
+   "id": "dg-sumonkyuji",
+   "name": "巣門給餌器",
+   "reading": "すもんきゅうじき",
+   "difficulty": 2,
+   "mapNode": "dogu:kyuji",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣門から さしこむ えさ入れ"
+  },
+  {
+   "id": "dg-kankiko",
+   "name": "換気口",
+   "reading": "かんきこう",
+   "difficulty": 2,
+   "mapNode": "dogu:futa",
+   "field": "道具",
+   "bee": "共通",
+   "note": "巣箱の 風の 通り道"
+  },
+  {
+   "id": "dg-sotobuta",
+   "name": "外ぶた",
+   "reading": "そとぶた",
+   "difficulty": 2,
+   "mapNode": "dogu:futa",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "雨を ふせぐ 外がわの ふた"
+  },
+  {
+   "id": "dg-obachiwaku",
+   "name": "雄蜂巣枠",
+   "reading": "おばちすわく",
+   "difficulty": 2,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "雄蜂の 巣房を 作らせる 巣枠"
+  },
+  {
+   "id": "dg-shikiriita",
+   "name": "仕切り板",
+   "reading": "しきりいた",
+   "difficulty": 2,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣箱の 中を 区切る 板"
+  },
+  {
+   "id": "dg-amizoko",
+   "name": "網底",
+   "reading": "あみぞこ",
+   "difficulty": 2,
+   "mapNode": "dogu:sokoban",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "網に なった 底板"
+  },
+  {
+   "id": "dg-kunenzai",
+   "name": "くん煙材",
+   "reading": "くんえんざい",
+   "difficulty": 2,
+   "mapNode": "dogu:kunen",
+   "field": "道具",
+   "bee": "共通",
+   "note": "燻煙器で もやす 材料"
+  },
+  {
+   "id": "dg-chomitsutank",
+   "name": "貯蜜タンク",
+   "reading": "ちょみつたんく",
+   "difficulty": 2,
+   "mapNode": "dogu:bunriki",
+   "field": "道具",
+   "bee": "共通",
+   "note": "しぼった みつを ためる 入れもの"
+  },
+  {
+   "id": "dg-machibako",
+   "name": "待ち箱",
+   "reading": "まちばこ",
+   "difficulty": 2,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "日本",
+   "note": "分蜂群が 入るのを 待つ 箱"
+  },
+  {
+   "id": "dg-ichubari",
+   "name": "移虫針",
+   "reading": "いちゅうばり",
+   "difficulty": 2,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "幼虫を すくう 細い 道具"
+  },
+  {
+   "id": "dg-marking",
+   "name": "マーキングペン",
+   "reading": "まーきんぐぺん",
+   "difficulty": 2,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "女王の 背に しるしを つける"
+  },
+  {
+   "id": "dg-suwakukake",
+   "name": "巣枠かけ",
+   "reading": "すわくかけ",
+   "difficulty": 2,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "内検中に 巣枠を かけておく 台"
+  },
+  {
+   "id": "dg-kansatsubako",
+   "name": "観察箱",
+   "reading": "かんさつばこ",
+   "difficulty": 2,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "ガラスごしに 巣を 見る 箱"
+  },
+  {
+   "id": "dg-karasuwaku",
+   "name": "空巣枠",
+   "reading": "からすわく",
+   "difficulty": 2,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣の ない 巣枠"
+  },
+  {
+   "id": "dg-sosowaku",
+   "name": "巣礎枠",
+   "reading": "すそわく",
+   "difficulty": 2,
+   "mapNode": "dogu:suso",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣礎を はった 巣枠"
+  },
+  {
+   "id": "dg-yane",
+   "name": "屋根",
+   "reading": "やね",
+   "difficulty": 2,
+   "mapNode": "dogu:futa",
+   "field": "道具",
+   "bee": "共通",
+   "note": "巣箱を 雨と 日ざしから 守る"
+  },
+  {
+   "id": "dg-beespace",
+   "name": "ビースペース",
+   "reading": "びーすぺーす",
+   "difficulty": 3,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "ハチが ろうで うめない すきま"
+  },
+  {
+   "id": "dg-uezan",
+   "name": "上桟",
+   "reading": "うえざん",
+   "difficulty": 3,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠の 上の 木"
+  },
+  {
+   "id": "dg-shitazan",
+   "name": "下桟",
+   "reading": "したざん",
+   "difficulty": 3,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠の 下の 木"
+  },
+  {
+   "id": "dg-hoffman",
+   "name": "ホフマン式巣枠",
+   "reading": "ほふまんしきすわく",
+   "difficulty": 3,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "となりと すきまが そろう 巣枠"
+  },
+  {
+   "id": "dg-spacer",
+   "name": "スペーサー",
+   "reading": "すぺーさー",
+   "difficulty": 3,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠の 間を そろえる 部品"
+  },
+  {
+   "id": "dg-susen",
+   "name": "巣線",
+   "reading": "すせん",
+   "difficulty": 3,
+   "mapNode": "dogu:suso",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣礎を ささえる 細い 針金"
+  },
+  {
+   "id": "dg-jinkososo",
+   "name": "人工巣礎",
+   "reading": "じんこうすそ",
+   "difficulty": 3,
+   "mapNode": "dogu:suso",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "人が 作った 巣礎"
+  },
+  {
+   "id": "dg-plasticsuso",
+   "name": "プラスチック巣礎",
+   "reading": "ぷらすちっくすそ",
+   "difficulty": 3,
+   "mapNode": "dogu:suso",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "プラスチックで できた 巣礎"
+  },
+  {
+   "id": "dg-sessen",
+   "name": "接線式分離機",
+   "reading": "せっせんしきぶんりき",
+   "difficulty": 3,
+   "mapNode": "dogu:bunriki",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠の 面を 外に むけて 回す 分離機"
+  },
+  {
+   "id": "dg-hosha",
+   "name": "放射式分離機",
+   "reading": "ほうしゃしきぶんりき",
+   "difficulty": 3,
+   "mapNode": "dogu:bunriki",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "巣枠を 車輪の ように ならべる 分離機"
+  },
+  {
+   "id": "dg-shudo",
+   "name": "手動分離機",
+   "reading": "しゅどうぶんりき",
+   "difficulty": 3,
+   "mapNode": "dogu:bunriki",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "手で 回す 分離機"
+  },
+  {
+   "id": "dg-denkimitsugatana",
+   "name": "電気蜜刀",
+   "reading": "でんきみつがたな",
+   "difficulty": 3,
+   "mapNode": "dogu:bunriki",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "あたためて 使う 蜜刀"
+  },
+  {
+   "id": "dg-uncapping",
+   "name": "アンキャッピングフォーク",
+   "reading": "あんきゃっぴんぐふぉーく",
+   "difficulty": 3,
+   "mapNode": "dogu:bunriki",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "蜜ぶたを 起こす フォーク"
+  },
+  {
+   "id": "dg-nigashiita",
+   "name": "逃がし板",
+   "reading": "にがしいた",
+   "difficulty": 3,
+   "mapNode": "dogu:futa",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "継箱から ハチを 下へ 移す 板"
+  },
+  {
+   "id": "dg-kyusuiki",
+   "name": "給水器",
+   "reading": "きゅうすいき",
+   "difficulty": 3,
+   "mapNode": "dogu:kyuji",
+   "field": "道具",
+   "bee": "共通",
+   "note": "ハチの 水飲み場"
+  },
+  {
+   "id": "dg-marutabako",
+   "name": "丸太巣箱",
+   "reading": "まるたすばこ",
+   "difficulty": 3,
+   "mapNode": "dogu:tsugibako",
+   "field": "道具",
+   "bee": "日本",
+   "note": "丸太を くりぬいた 昔ながらの 巣箱"
+  },
+  {
+   "id": "dg-propsaishu",
+   "name": "プロポリス採集器",
+   "reading": "ぷろぽりすさいしゅうき",
+   "difficulty": 3,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "すきまに プロポリスを ぬらせる 網"
+  },
+  {
+   "id": "dg-royokai",
+   "name": "ろう溶解器",
+   "reading": "ろうようかいき",
+   "difficulty": 3,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "古い 巣を とかして ろうを とる"
+  },
+  {
+   "id": "dg-jujibo",
+   "name": "十字棒",
+   "reading": "じゅうじぼう",
+   "difficulty": 3,
+   "mapNode": "dogu:suwaku",
+   "field": "道具",
+   "bee": "日本",
+   "note": "重箱の 巣が 落ちないように 通す 棒"
+  },
+  {
+   "id": "dg-tenita",
+   "name": "天板",
+   "reading": "てんいた",
+   "difficulty": 3,
+   "mapNode": "dogu:futa",
+   "field": "道具",
+   "bee": "日本",
+   "note": "重箱式の いちばん 上の 板"
+  },
+  {
+   "id": "dg-nezumiyoke",
+   "name": "ネズミよけ",
+   "reading": "ねずみよけ",
+   "difficulty": 3,
+   "mapNode": "dogu:sumon",
+   "field": "道具",
+   "bee": "西洋",
+   "note": "冬に ネズミが 入らないように する"
+  },
+  {
+   "id": "dg-smoker",
+   "name": "スモーカー",
+   "reading": "すもーかー",
+   "difficulty": 3,
+   "mapNode": "dogu:kunen",
+   "field": "道具",
+   "bee": "共通",
+   "note": "燻煙器の 英語の よび名"
+  },
+  {
+   "id": "dg-fuigo",
+   "name": "ふいご",
+   "reading": "ふいご",
+   "difficulty": 3,
+   "mapNode": "dogu:kunen",
+   "field": "道具",
+   "bee": "共通",
+   "note": "燻煙器の 風を 送る ふくろ"
+  },
+  {
+   "id": "dg-veil",
+   "name": "ベール",
+   "reading": "べーる",
+   "difficulty": 3,
+   "mapNode": "dogu:menpu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "面布の 別の よび名"
+  },
+  {
+   "id": "dg-hokakubako",
+   "name": "捕獲箱",
+   "reading": "ほかくばこ",
+   "difficulty": 3,
+   "mapNode": "dogu:kogu",
+   "field": "道具",
+   "bee": "共通",
+   "note": "分蜂群を 入れて 運ぶ 箱"
+  }
+ ],
+ "shigoto": [
+  {
+   "id": "sg-saimitsu",
+   "name": "採蜜",
+   "reading": "さいみつ",
+   "difficulty": 1,
+   "mapNode": "shigoto:saimitsu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "巣から はちみつを とる しごと"
+  },
+  {
+   "id": "sg-naiken",
+   "name": "内検",
+   "reading": "ないけん",
+   "difficulty": 1,
+   "mapNode": "shigoto:naiken",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "巣箱を 開けて 中を 見る しごと"
+  },
+  {
+   "id": "sg-etto",
+   "name": "越冬",
+   "reading": "えっとう",
+   "difficulty": 1,
+   "mapNode": "shigoto:ettou",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "群が 冬を こす こと"
+  },
+  {
+   "id": "sg-kyuji",
+   "name": "給餌",
+   "reading": "きゅうじ",
+   "difficulty": 1,
+   "mapNode": "shigoto:ettou",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "ハチに えさを あたえる こと"
+  },
+  {
+   "id": "sg-satomizu",
+   "name": "砂糖水",
+   "reading": "さとうみず",
+   "difficulty": 1,
+   "mapNode": "shigoto:ettou",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "みつが 足りない ときの えさ"
+  },
+  {
+   "id": "sg-suzumebachi",
+   "name": "スズメバチ",
+   "reading": "すずめばち",
+   "difficulty": 1,
+   "mapNode": "shigoto:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "夏から 秋に 巣を ねらう 大きな ハチ"
+  },
+  {
+   "id": "sg-hiyoke",
+   "name": "日よけ",
+   "reading": "ひよけ",
+   "difficulty": 1,
+   "mapNode": "shigoto:natsu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "巣箱に 日かげを 作る"
+  },
+  {
+   "id": "sg-kyusui",
+   "name": "給水",
+   "reading": "きゅうすい",
+   "difficulty": 1,
+   "mapNode": "shigoto:natsu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "ハチの 水を 用意する"
+  },
+  {
+   "id": "sg-hoon",
+   "name": "保温",
+   "reading": "ほおん",
+   "difficulty": 1,
+   "mapNode": "shigoto:fuyu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "冬の 巣箱を あたたかく する"
+  },
+  {
+   "id": "sg-bunpotaisaku",
+   "name": "分蜂対策",
+   "reading": "ぶんぽうたいさく",
+   "difficulty": 1,
+   "mapNode": "shigoto:bunpo",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "分蜂を おさえる 工夫"
+  },
+  {
+   "id": "sg-soji",
+   "name": "掃除",
+   "reading": "そうじ",
+   "difficulty": 1,
+   "mapNode": "shigoto:naiken",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "底板の ごみを とる"
+  },
+  {
+   "id": "sg-kiroku",
+   "name": "記録",
+   "reading": "きろく",
+   "difficulty": 1,
+   "mapNode": "shigoto:kiroku",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "内検の ようすを 書きのこす"
+  },
+  {
+   "id": "sg-nisshi",
+   "name": "飼育日誌",
+   "reading": "しいくにっし",
+   "difficulty": 1,
+   "mapNode": "shigoto:kiroku",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "毎回の 記録帳"
+  },
+  {
+   "id": "sg-tenki",
+   "name": "天気",
+   "reading": "てんき",
+   "difficulty": 1,
+   "mapNode": "shigoto:kiroku",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "晴れて おだやかな 日に 内検する"
+  },
+  {
+   "id": "sg-okibasho",
+   "name": "置き場所",
+   "reading": "おきばしょ",
+   "difficulty": 1,
+   "mapNode": "shigoto:tenshi",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "日当たりと 風通しの よい 場所"
+  },
+  {
+   "id": "sg-ido",
+   "name": "移動",
+   "reading": "いどう",
+   "difficulty": 1,
+   "mapNode": "shigoto:tenshi",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "巣箱を 別の 場所へ 運ぶ"
+  },
+  {
+   "id": "sg-ichigo",
+   "name": "イチゴ",
+   "reading": "いちご",
+   "difficulty": 1,
+   "mapNode": "shigoto:pollination",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "ハウスで ミツバチが 受粉を 助ける"
+  },
+  {
+   "id": "sg-melon",
+   "name": "メロン",
+   "reading": "めろん",
+   "difficulty": 1,
+   "mapNode": "shigoto:pollination",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "ミツバチで 受粉する ハウスの 作物"
+  },
+  {
+   "id": "sg-house",
+   "name": "ハウス",
+   "reading": "はうす",
+   "difficulty": 1,
+   "mapNode": "shigoto:pollination",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "ビニールハウスでの 受粉"
+  },
+  {
+   "id": "sg-mimawari",
+   "name": "見回り",
+   "reading": "みまわり",
+   "difficulty": 1,
+   "mapNode": "shigoto:naiken",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "巣門の ようすを 外から 見る"
+  },
+  {
+   "id": "sg-kensei",
+   "name": "建勢",
+   "reading": "けんせい",
+   "difficulty": 2,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "春に 群を 大きく する こと"
+  },
+  {
+   "id": "sg-zoso",
+   "name": "増巣",
+   "reading": "ぞうそう",
+   "difficulty": 2,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "巣枠を 足して 巣を 広げる"
+  },
+  {
+   "id": "sg-tsugibakokake",
+   "name": "継箱かけ",
+   "reading": "つぎばこかけ",
+   "difficulty": 2,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "巣箱に 継箱を のせる"
+  },
+  {
+   "id": "sg-irekae",
+   "name": "巣枠の入れかえ",
+   "reading": "すわくのいれかえ",
+   "difficulty": 2,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "巣枠の 位置を ならべかえる"
+  },
+  {
+   "id": "sg-oudaikakunin",
+   "name": "王台の確認",
+   "reading": "おうだいのかくにん",
+   "difficulty": 2,
+   "mapNode": "shigoto:bunpo",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "分蜂の 前ぶれを 見る"
+  },
+  {
+   "id": "sg-kizashi",
+   "name": "分蜂の兆し",
+   "reading": "ぶんぽうのきざし",
+   "difficulty": 2,
+   "mapNode": "shigoto:bunpo",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "王台が できるなどの 前ぶれ"
+  },
+  {
+   "id": "sg-bunpohokaku",
+   "name": "分蜂群の捕獲",
+   "reading": "ぶんぽうぐんのほかく",
+   "difficulty": 2,
+   "mapNode": "shigoto:bunpo",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "出ていった 群を 箱に 入れる"
+  },
+  {
+   "id": "sg-saimitsuwaku",
+   "name": "採蜜枠",
+   "reading": "さいみつわく",
+   "difficulty": 2,
+   "mapNode": "shigoto:saimitsu",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "みつを とる 巣枠"
+  },
+  {
+   "id": "sg-chomitsuwaku",
+   "name": "貯蜜枠",
+   "reading": "ちょみつわく",
+   "difficulty": 2,
+   "mapNode": "shigoto:saimitsu",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "みつが たまった 巣枠"
+  },
+  {
+   "id": "sg-atsusa",
+   "name": "暑さ対策",
+   "reading": "あつさたいさく",
+   "difficulty": 2,
+   "mapNode": "shigoto:natsu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "夏に 巣箱を すずしく する"
+  },
+  {
+   "id": "sg-suzumetaisaku",
+   "name": "スズメバチ対策",
+   "reading": "すずめばちたいさく",
+   "difficulty": 2,
+   "mapNode": "shigoto:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣門を 守る 工夫"
+  },
+  {
+   "id": "sg-sumonshuku",
+   "name": "巣門の縮小",
+   "reading": "すもんのしゅくしょう",
+   "difficulty": 2,
+   "mapNode": "shigoto:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣門を せまく して 守る"
+  },
+  {
+   "id": "sg-bogoami",
+   "name": "防護網",
+   "reading": "ぼうごあみ",
+   "difficulty": 2,
+   "mapNode": "shigoto:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣門の 前に はる 網"
+  },
+  {
+   "id": "sg-danitaisaku",
+   "name": "ダニ対策",
+   "reading": "だにたいさく",
+   "difficulty": 2,
+   "mapNode": "shigoto:aki",
+   "field": "病気・害敵",
+   "bee": "西洋",
+   "note": "ダニを ふやさない 世話"
+  },
+  {
+   "id": "sg-ettojunbi",
+   "name": "越冬準備",
+   "reading": "えっとうじゅんび",
+   "difficulty": 2,
+   "mapNode": "shigoto:ettou",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "冬の 前に みつと ハチを ととのえる"
+  },
+  {
+   "id": "sg-daiyokafun",
+   "name": "代用花粉",
+   "reading": "だいようかふん",
+   "difficulty": 2,
+   "mapNode": "shigoto:ettou",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "花粉が 少ない ときの えさ"
+  },
+  {
+   "id": "sg-chomitsukakunin",
+   "name": "貯蜜の確認",
+   "reading": "ちょみつのかくにん",
+   "difficulty": 2,
+   "mapNode": "shigoto:ettou",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "冬を こす みつが あるか 見る"
+  },
+  {
+   "id": "sg-fuyugakoi",
+   "name": "冬囲い",
+   "reading": "ふゆがこい",
+   "difficulty": 2,
+   "mapNode": "shigoto:fuyu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "巣箱を 寒さから 囲う"
+  },
+  {
+   "id": "sg-hoonzai",
+   "name": "保温材",
+   "reading": "ほおんざい",
+   "difficulty": 2,
+   "mapNode": "shigoto:fuyu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "巣箱を 包む あたたかい 材料"
+  },
+  {
+   "id": "sg-kyogun",
+   "name": "強群",
+   "reading": "きょうぐん",
+   "difficulty": 2,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "ハチが 多く いきおいの ある 群"
+  },
+  {
+   "id": "sg-jakugun",
+   "name": "弱群",
+   "reading": "じゃくぐん",
+   "difficulty": 2,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "ハチが 少ない 群"
+  },
+  {
+   "id": "sg-teichi",
+   "name": "定置養蜂",
+   "reading": "ていちようほう",
+   "difficulty": 2,
+   "mapNode": "shigoto:tenshi",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "巣箱を 同じ 場所に おく 養蜂"
+  },
+  {
+   "id": "sg-idoyoho",
+   "name": "移動養蜂",
+   "reading": "いどうようほう",
+   "difficulty": 2,
+   "mapNode": "shigoto:tenshi",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "花を 追って 巣箱を 運ぶ 養蜂"
+  },
+  {
+   "id": "sg-kashidashi",
+   "name": "貸し出し",
+   "reading": "かしだし",
+   "difficulty": 2,
+   "mapNode": "shigoto:pollination",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "受粉の ために 群を 農家へ 貸す"
+  },
+  {
+   "id": "sg-nenkan",
+   "name": "年間計画",
+   "reading": "ねんかんけいかく",
+   "difficulty": 2,
+   "mapNode": "shigoto:kiroku",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "1年の しごとの 予定"
+  },
+  {
+   "id": "sg-soshun",
+   "name": "早春の内検",
+   "reading": "そうしゅんのないけん",
+   "difficulty": 3,
+   "mapNode": "shigoto:naiken",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "春の はじめの 内検"
+  },
+  {
+   "id": "sg-hojikakunin",
+   "name": "蜂児の確認",
+   "reading": "ほうじのかくにん",
+   "difficulty": 3,
+   "mapNode": "shigoto:naiken",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "卵や 幼虫の ようすを 見る"
+  },
+  {
+   "id": "sg-joukakunin",
+   "name": "女王の確認",
+   "reading": "じょおうのかくにん",
+   "difficulty": 3,
+   "mapNode": "shigoto:naiken",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "女王が いるか 見る"
+  },
+  {
+   "id": "sg-sanranken",
+   "name": "産卵圏",
+   "reading": "さんらんけん",
+   "difficulty": 3,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "女王が 卵を うむ 範囲"
+  },
+  {
+   "id": "sg-wakusu",
+   "name": "枠数",
+   "reading": "わくすう",
+   "difficulty": 3,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "ハチが おおう 巣枠の 数"
+  },
+  {
+   "id": "sg-gunseichosei",
+   "name": "群勢の調整",
+   "reading": "ぐんせいのちょうせい",
+   "difficulty": 3,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "群の 大きさを そろえる"
+  },
+  {
+   "id": "sg-suhikoshin",
+   "name": "巣脾の更新",
+   "reading": "すひのこうしん",
+   "difficulty": 3,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "古い 巣を 新しく する"
+  },
+  {
+   "id": "sg-tsugitashi",
+   "name": "継ぎ足し",
+   "reading": "つぎたし",
+   "difficulty": 3,
+   "mapNode": "shigoto:kensei",
+   "field": "飼育管理",
+   "bee": "日本",
+   "note": "重箱式で 箱を 下に 足す"
+  },
+  {
+   "id": "sg-bunponetsu",
+   "name": "分蜂熱",
+   "reading": "ぶんぽうねつ",
+   "difficulty": 3,
+   "mapNode": "shigoto:bunpo",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "群が 分蜂しようと する ようす"
+  },
+  {
+   "id": "sg-oudaijokyo",
+   "name": "王台の除去",
+   "reading": "おうだいのじょきょ",
+   "difficulty": 3,
+   "mapNode": "shigoto:bunpo",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "分蜂を おさえる ため 王台を とる"
+  },
+  {
+   "id": "sg-murehokaku",
+   "name": "群の捕獲",
+   "reading": "むれのほかく",
+   "difficulty": 3,
+   "mapNode": "shigoto:bunpo",
+   "field": "飼育管理",
+   "bee": "日本",
+   "note": "野生の 分蜂群を 巣箱に むかえる"
+  },
+  {
+   "id": "sg-machibakosecchi",
+   "name": "待ち箱の設置",
+   "reading": "まちばこのせっち",
+   "difficulty": 3,
+   "mapNode": "shigoto:bunpo",
+   "field": "飼育管理",
+   "bee": "日本",
+   "note": "分蜂の 季節に 待ち箱を おく"
+  },
+  {
+   "id": "sg-kanjukumitsu",
+   "name": "完熟蜜",
+   "reading": "かんじゅくみつ",
+   "difficulty": 3,
+   "mapNode": "shigoto:saimitsu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "ふたが された 水分の 少ない みつ"
+  },
+  {
+   "id": "sg-ichibanmitsu",
+   "name": "一番蜜",
+   "reading": "いちばんみつ",
+   "difficulty": 3,
+   "mapNode": "shigoto:saimitsu",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "その年 はじめて とる みつ"
+  },
+  {
+   "id": "sg-taremitsu",
+   "name": "垂れ蜜",
+   "reading": "たれみつ",
+   "difficulty": 3,
+   "mapNode": "shigoto:saimitsu",
+   "field": "飼育管理",
+   "bee": "日本",
+   "note": "巣を 切って 自然に たれた みつ"
+  },
+  {
+   "id": "sg-toho",
+   "name": "盗蜂",
+   "reading": "とうほう",
+   "difficulty": 3,
+   "mapNode": "shigoto:natsu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "ほかの 群の みつを うばう こと"
+  },
+  {
+   "id": "sg-suochi",
+   "name": "巣落ち",
+   "reading": "すおち",
+   "difficulty": 3,
+   "mapNode": "shigoto:natsu",
+   "field": "飼育管理",
+   "bee": "日本",
+   "note": "暑さで 巣が 落ちる こと"
+  },
+  {
+   "id": "sg-akikyuji",
+   "name": "秋の給餌",
+   "reading": "あきのきゅうじ",
+   "difficulty": 3,
+   "mapNode": "shigoto:aki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "冬の 前に えさを 足す"
+  },
+  {
+   "id": "sg-fuyubachiikusei",
+   "name": "冬蜂の育成",
+   "reading": "ふゆばちのいくせい",
+   "difficulty": 3,
+   "mapNode": "shigoto:aki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "冬を こす ハチを 育てる"
+  },
+  {
+   "id": "sg-ettoshudan",
+   "name": "越冬集団",
+   "reading": "えっとうしゅうだん",
+   "difficulty": 3,
+   "mapNode": "shigoto:fuyu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "冬に ハチが かたまって あたたまる"
+  },
+  {
+   "id": "sg-ketsuro",
+   "name": "結露",
+   "reading": "けつろ",
+   "difficulty": 3,
+   "mapNode": "shigoto:fuyu",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "巣箱の 中に できる 水てき"
+  },
+  {
+   "id": "sg-ettochi",
+   "name": "越冬地",
+   "reading": "えっとうち",
+   "difficulty": 3,
+   "mapNode": "shigoto:tenshi",
+   "field": "飼育管理",
+   "bee": "西洋",
+   "note": "移動養蜂で 冬を こす 場所"
+  },
+  {
+   "id": "sg-shisetsuengei",
+   "name": "施設園芸",
+   "reading": "しせつえんげい",
+   "difficulty": 3,
+   "mapNode": "shigoto:pollination",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "ハウスで 作物を 育てる 農業"
+  },
+  {
+   "id": "sg-maruhanabachi",
+   "name": "マルハナバチ",
+   "reading": "まるはなばち",
+   "difficulty": 3,
+   "mapNode": "shigoto:pollination",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ハウスの 受粉に 使われる 別の ハチ"
+  },
+  {
+   "id": "sg-murebango",
+   "name": "群番号",
+   "reading": "むればんごう",
+   "difficulty": 3,
+   "mapNode": "shigoto:kiroku",
+   "field": "飼育管理",
+   "bee": "共通",
+   "note": "群ごとに つける 番号"
+  }
+ ],
+ "hana": [
+  {
+   "id": "hn-hana",
+   "name": "花",
+   "reading": "はな",
+   "difficulty": 1,
+   "mapNode": "hana:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "みつと 花粉を 出す ところ"
+  },
+  {
+   "id": "hn-mitsugen",
+   "name": "蜜源",
+   "reading": "みつげん",
+   "difficulty": 1,
+   "mapNode": "hana:ryumitsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチが みつを とる 花"
+  },
+  {
+   "id": "hn-renge",
+   "name": "レンゲ",
+   "reading": "れんげ",
+   "difficulty": 1,
+   "mapNode": "hana:haru",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "春の 田んぼに さく 蜜源"
+  },
+  {
+   "id": "hn-nanohana",
+   "name": "菜の花",
+   "reading": "なのはな",
+   "difficulty": 1,
+   "mapNode": "hana:haru",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "春の 黄色い 蜜源"
+  },
+  {
+   "id": "hn-sakura",
+   "name": "サクラ",
+   "reading": "さくら",
+   "difficulty": 1,
+   "mapNode": "hana:haru",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "春の はじめの 蜜源"
+  },
+  {
+   "id": "hn-tanpopo",
+   "name": "タンポポ",
+   "reading": "たんぽぽ",
+   "difficulty": 1,
+   "mapNode": "hana:kafungen",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花粉も みつも とれる 春の 花"
+  },
+  {
+   "id": "hn-clover",
+   "name": "クローバー",
+   "reading": "くろーばー",
+   "difficulty": 1,
+   "mapNode": "hana:kusa",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "初夏の 草の 蜜源"
+  },
+  {
+   "id": "hn-shirotsumekusa",
+   "name": "シロツメクサ",
+   "reading": "しろつめくさ",
+   "difficulty": 1,
+   "mapNode": "hana:kusa",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "クローバーの 和名"
+  },
+  {
+   "id": "hn-himawari",
+   "name": "ヒマワリ",
+   "reading": "ひまわり",
+   "difficulty": 1,
+   "mapNode": "hana:natsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "夏の 大きな 花"
+  },
+  {
+   "id": "hn-kuri",
+   "name": "クリ",
+   "reading": "くり",
+   "difficulty": 1,
+   "mapNode": "hana:natsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "初夏の 木の 蜜源"
+  },
+  {
+   "id": "hn-mikan",
+   "name": "ミカン",
+   "reading": "みかん",
+   "difficulty": 1,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "みかん畑の 花も 蜜源"
+  },
+  {
+   "id": "hn-ringo",
+   "name": "リンゴ",
+   "reading": "りんご",
+   "difficulty": 1,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチが 受粉を 助ける 果樹"
+  },
+  {
+   "id": "hn-blueberry",
+   "name": "ブルーベリー",
+   "reading": "ぶるーべりー",
+   "difficulty": 1,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチが 受粉を 助ける 小さな 果樹"
+  },
+  {
+   "id": "hn-soba",
+   "name": "ソバ",
+   "reading": "そば",
+   "difficulty": 1,
+   "mapNode": "hana:aki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "秋の 白い 花の 蜜源"
+  },
+  {
+   "id": "hn-biwa",
+   "name": "ビワ",
+   "reading": "びわ",
+   "difficulty": 1,
+   "mapNode": "hana:fuyu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "冬に さく 蜜源"
+  },
+  {
+   "id": "hn-ume",
+   "name": "ウメ",
+   "reading": "うめ",
+   "difficulty": 1,
+   "mapNode": "hana:fuyu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "冬の おわりに さく 花"
+  },
+  {
+   "id": "hn-acacia",
+   "name": "アカシア",
+   "reading": "あかしあ",
+   "difficulty": 1,
+   "mapNode": "hana:ki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ニセアカシアの ふつうの よび名"
+  },
+  {
+   "id": "hn-oshibe",
+   "name": "おしべ",
+   "reading": "おしべ",
+   "difficulty": 1,
+   "mapNode": "hana:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花粉を 作る ところ"
+  },
+  {
+   "id": "hn-meshibe",
+   "name": "めしべ",
+   "reading": "めしべ",
+   "difficulty": 1,
+   "mapNode": "hana:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花粉を うけて 実に なる ところ"
+  },
+  {
+   "id": "hn-hanabira",
+   "name": "花びら",
+   "reading": "はなびら",
+   "difficulty": 1,
+   "mapNode": "hana:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチを まねく 色の ついた ところ"
+  },
+  {
+   "id": "hn-mitsugenshokubutsu",
+   "name": "蜜源植物",
+   "reading": "みつげんしょくぶつ",
+   "difficulty": 2,
+   "mapNode": "hana:ueru",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "みつが よく とれる 植物"
+  },
+  {
+   "id": "hn-kafungen",
+   "name": "花粉源",
+   "reading": "かふんげん",
+   "difficulty": 2,
+   "mapNode": "hana:kafungen",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花粉が よく とれる 植物"
+  },
+  {
+   "id": "hn-ryumitsuki",
+   "name": "流蜜期",
+   "reading": "りゅうみつき",
+   "difficulty": 2,
+   "mapNode": "hana:ryumitsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花が みつを たくさん 出す 時期"
+  },
+  {
+   "id": "hn-niseacacia",
+   "name": "ニセアカシア",
+   "reading": "にせあかしあ",
+   "difficulty": 2,
+   "mapNode": "hana:ki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "初夏の 大切な 木の 蜜源"
+  },
+  {
+   "id": "hn-tochinoki",
+   "name": "トチノキ",
+   "reading": "とちのき",
+   "difficulty": 2,
+   "mapNode": "hana:ki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "山の 初夏の 蜜源"
+  },
+  {
+   "id": "hn-shinanoki",
+   "name": "シナノキ",
+   "reading": "しなのき",
+   "difficulty": 2,
+   "mapNode": "hana:natsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "夏の 木の 蜜源"
+  },
+  {
+   "id": "hn-hazenoki",
+   "name": "ハゼノキ",
+   "reading": "はぜのき",
+   "difficulty": 2,
+   "mapNode": "hana:natsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "初夏の 木の 蜜源"
+  },
+  {
+   "id": "hn-nashi",
+   "name": "ナシ",
+   "reading": "なし",
+   "difficulty": 2,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "受粉が 大切な 果樹"
+  },
+  {
+   "id": "hn-momo",
+   "name": "モモ",
+   "reading": "もも",
+   "difficulty": 2,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "春に さく 果樹"
+  },
+  {
+   "id": "hn-kabocha",
+   "name": "カボチャ",
+   "reading": "かぼちゃ",
+   "difficulty": 2,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチが 受粉を 助ける 野菜"
+  },
+  {
+   "id": "hn-suika",
+   "name": "スイカ",
+   "reading": "すいか",
+   "difficulty": 2,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチが 受粉を 助ける 夏の 作物"
+  },
+  {
+   "id": "hn-chubaika",
+   "name": "虫媒花",
+   "reading": "ちゅうばいか",
+   "difficulty": 2,
+   "mapNode": "hana:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "虫が 花粉を 運ぶ 花"
+  },
+  {
+   "id": "hn-fubaika",
+   "name": "風媒花",
+   "reading": "ふうばいか",
+   "difficulty": 2,
+   "mapNode": "hana:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "風が 花粉を 運ぶ 花"
+  },
+  {
+   "id": "hn-mitsusen",
+   "name": "蜜腺",
+   "reading": "みつせん",
+   "difficulty": 2,
+   "mapNode": "hana:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花の みつを 出す ところ"
+  },
+  {
+   "id": "hn-kodohankei",
+   "name": "行動半径",
+   "reading": "こうどうはんけい",
+   "difficulty": 2,
+   "mapNode": "hana:hanni",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "巣から およそ 2〜3kmほど 飛ぶ"
+  },
+  {
+   "id": "hn-saijihanni",
+   "name": "採餌範囲",
+   "reading": "さいじはんい",
+   "difficulty": 2,
+   "mapNode": "hana:hanni",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチが 花を さがす 範囲"
+  },
+  {
+   "id": "hn-hagi",
+   "name": "ハギ",
+   "reading": "はぎ",
+   "difficulty": 2,
+   "mapNode": "hana:aki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "秋の 七草の 1つの 蜜源"
+  },
+  {
+   "id": "hn-seitaka",
+   "name": "セイタカアワダチソウ",
+   "reading": "せいたかあわだちそう",
+   "difficulty": 2,
+   "mapNode": "hana:aki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "秋の 黄色い 蜜源"
+  },
+  {
+   "id": "hn-yatsude",
+   "name": "ヤツデ",
+   "reading": "やつで",
+   "difficulty": 2,
+   "mapNode": "hana:fuyu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "冬の はじめに さく 白い 花"
+  },
+  {
+   "id": "hn-ryokuhi",
+   "name": "緑肥",
+   "reading": "りょくひ",
+   "difficulty": 2,
+   "mapNode": "hana:ueru",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "田畑の こやしに する レンゲなど"
+  },
+  {
+   "id": "hn-kadan",
+   "name": "花壇",
+   "reading": "かだん",
+   "difficulty": 2,
+   "mapNode": "hana:ueru",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ハチの 好む 花を 植える"
+  },
+  {
+   "id": "hn-gairoju",
+   "name": "街路樹",
+   "reading": "がいろじゅ",
+   "difficulty": 2,
+   "mapNode": "hana:ki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "町の 木も 蜜源に なる"
+  },
+  {
+   "id": "hn-mitsugencalendar",
+   "name": "蜜源カレンダー",
+   "reading": "みつげんかれんだー",
+   "difficulty": 2,
+   "mapNode": "hana:ryumitsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "季節ごとの 蜜源の 表"
+  },
+  {
+   "id": "hn-kaikaki",
+   "name": "開花期",
+   "reading": "かいかき",
+   "difficulty": 2,
+   "mapNode": "hana:ryumitsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花が さく 時期"
+  },
+  {
+   "id": "hn-kafuniro",
+   "name": "花粉の色",
+   "reading": "かふんのいろ",
+   "difficulty": 2,
+   "mapNode": "hana:kafungen",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花の 種類で ちがう 花粉だんごの 色"
+  },
+  {
+   "id": "hn-harienju",
+   "name": "ハリエンジュ",
+   "reading": "はりえんじゅ",
+   "difficulty": 3,
+   "mapNode": "hana:ki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "ニセアカシアの 和名"
+  },
+  {
+   "id": "hn-kihada",
+   "name": "キハダ",
+   "reading": "きはだ",
+   "difficulty": 3,
+   "mapNode": "hana:ki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "初夏の 山の 木の 蜜源"
+  },
+  {
+   "id": "hn-yurinoki",
+   "name": "ユリノキ",
+   "reading": "ゆりのき",
+   "difficulty": 3,
+   "mapNode": "hana:ki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "大きな 花の 木の 蜜源"
+  },
+  {
+   "id": "hn-karasuzansho",
+   "name": "カラスザンショウ",
+   "reading": "からすざんしょう",
+   "difficulty": 3,
+   "mapNode": "hana:natsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "夏の 木の 蜜源"
+  },
+  {
+   "id": "hn-nankinhaze",
+   "name": "ナンキンハゼ",
+   "reading": "なんきんはぜ",
+   "difficulty": 3,
+   "mapNode": "hana:natsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "夏に さく 木の 蜜源"
+  },
+  {
+   "id": "hn-egonoki",
+   "name": "エゴノキ",
+   "reading": "えごのき",
+   "difficulty": 3,
+   "mapNode": "hana:haru",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "春から 初夏の 白い 花の 木"
+  },
+  {
+   "id": "hn-vetch",
+   "name": "ヘアリーベッチ",
+   "reading": "へありーべっち",
+   "difficulty": 3,
+   "mapNode": "hana:kusa",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "緑肥にも なる 草の 蜜源"
+  },
+  {
+   "id": "hn-kanro",
+   "name": "甘露",
+   "reading": "かんろ",
+   "difficulty": 3,
+   "mapNode": "hana:ki",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "木の 汁を 吸う 虫が 出す あまい しる"
+  },
+  {
+   "id": "hn-natsugare",
+   "name": "夏枯れ",
+   "reading": "なつがれ",
+   "difficulty": 3,
+   "mapNode": "hana:natsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "夏に 花が 少なく なる 時期"
+  },
+  {
+   "id": "hn-hazakaiki",
+   "name": "蜜源の端境期",
+   "reading": "みつげんのはざかいき",
+   "difficulty": 3,
+   "mapNode": "hana:ryumitsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "蜜源が とぎれる 時期"
+  },
+  {
+   "id": "hn-kagaimitsusen",
+   "name": "花外蜜腺",
+   "reading": "かがいみつせん",
+   "difficulty": 3,
+   "mapNode": "hana:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花いがいの ところに ある 蜜腺"
+  },
+  {
+   "id": "hn-mitsuhyo",
+   "name": "蜜標",
+   "reading": "みつひょう",
+   "difficulty": 3,
+   "mapNode": "hana:jufun",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "みつの ありかを しめす 花の もよう"
+  },
+  {
+   "id": "hn-sofun",
+   "name": "送粉",
+   "reading": "そうふん",
+   "difficulty": 3,
+   "mapNode": "hana:hanni",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花粉を 運んで 受粉させる こと"
+  },
+  {
+   "id": "hn-jikafuwago",
+   "name": "自家不和合性",
+   "reading": "じかふわごうせい",
+   "difficulty": 3,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "同じ 品種の 花粉では 実が なりにくい 性質"
+  },
+  {
+   "id": "hn-ketsujitsu",
+   "name": "結実",
+   "reading": "けつじつ",
+   "difficulty": 3,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "受粉して 実が なる こと"
+  },
+  {
+   "id": "hn-jufunju",
+   "name": "受粉樹",
+   "reading": "じゅふんじゅ",
+   "difficulty": 3,
+   "mapNode": "hana:sakumotsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花粉を わけるため 一緒に 植える 木"
+  },
+  {
+   "id": "hn-kinryohen",
+   "name": "キンリョウヘン",
+   "reading": "きんりょうへん",
+   "difficulty": 3,
+   "mapNode": "hana:haru",
+   "field": "蜜源",
+   "bee": "日本",
+   "note": "ニホンミツバチの 分蜂群を 引きよせる ラン"
+  },
+  {
+   "id": "hn-cymbidium",
+   "name": "シンビジウム",
+   "reading": "しんびじうむ",
+   "difficulty": 3,
+   "mapNode": "hana:haru",
+   "field": "蜜源",
+   "bee": "日本",
+   "note": "一部の 品種が ニホンミツバチを 引きよせる ラン"
+  },
+  {
+   "id": "hn-yuin",
+   "name": "誘引",
+   "reading": "ゆういん",
+   "difficulty": 3,
+   "mapNode": "hana:ueru",
+   "field": "蜜源",
+   "bee": "日本",
+   "note": "花の においで 分蜂群を よぶ こと"
+  },
+  {
+   "id": "hn-kyukoden",
+   "name": "休耕田",
+   "reading": "きゅうこうでん",
+   "difficulty": 3,
+   "mapNode": "hana:ueru",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "休んでいる 田に 蜜源を 植える"
+  },
+  {
+   "id": "hn-hokakonchu",
+   "name": "訪花昆虫",
+   "reading": "ほうかこんちゅう",
+   "difficulty": 3,
+   "mapNode": "hana:hanni",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花を おとずれる 虫たち"
+  },
+  {
+   "id": "hn-bunpitsu",
+   "name": "蜜の分泌",
+   "reading": "みつのぶんぴつ",
+   "difficulty": 3,
+   "mapNode": "hana:ryumitsu",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "花が みつを 出す こと"
+  },
+  {
+   "id": "hn-hiatari",
+   "name": "日当たり",
+   "reading": "ひあたり",
+   "difficulty": 3,
+   "mapNode": "hana:ueru",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "蜜源の 花が よく さく 条件"
+  },
+  {
+   "id": "hn-tanenso",
+   "name": "多年草",
+   "reading": "たねんそう",
+   "difficulty": 3,
+   "mapNode": "hana:kusa",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "何年も 生きる 草"
+  },
+  {
+   "id": "hn-ichinenso",
+   "name": "一年草",
+   "reading": "いちねんそう",
+   "difficulty": 3,
+   "mapNode": "hana:kusa",
+   "field": "蜜源",
+   "bee": "共通",
+   "note": "1年で 一生を 終える 草"
+  }
+ ],
+ "seihin": [
+  {
+   "id": "sh-mitsuro",
+   "name": "蜜蝋",
+   "reading": "みつろう",
+   "difficulty": 1,
+   "mapNode": "seihin:mitsuro",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "働き蜂が 出す ろう"
+  },
+  {
+   "id": "sh-royaljelly",
+   "name": "ローヤルゼリー",
+   "reading": "ろーやるぜりー",
+   "difficulty": 1,
+   "mapNode": "seihin:royal",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "女王の 幼虫の 食べもの",
+   "acceptedReadings": [
+    "ろーやるぜりー",
+    "ろいやるぜりー"
+   ]
+  },
+  {
+   "id": "sh-propolis",
+   "name": "プロポリス",
+   "reading": "ぷろぽりす",
+   "difficulty": 1,
+   "mapNode": "seihin:propolis",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "木の やにと ハチの だ液から 作る もの"
+  },
+  {
+   "id": "sh-mitsubuta",
+   "name": "蜜ぶた",
+   "reading": "みつぶた",
+   "difficulty": 1,
+   "mapNode": "seihin:mitsubuta",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "みつを ためた 巣房の ろうの ふた"
+  },
+  {
+   "id": "sh-kessho",
+   "name": "結晶",
+   "reading": "けっしょう",
+   "difficulty": 1,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつが 白く かたまる こと"
+  },
+  {
+   "id": "sh-budoto",
+   "name": "ブドウ糖",
+   "reading": "ぶどうとう",
+   "difficulty": 1,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつの おもな 糖の 1つ"
+  },
+  {
+   "id": "sh-kato",
+   "name": "果糖",
+   "reading": "かとう",
+   "difficulty": 1,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつの おもな 糖の 1つ"
+  },
+  {
+   "id": "sh-suibun",
+   "name": "水分",
+   "reading": "すいぶん",
+   "difficulty": 1,
+   "mapNode": "seihin:noshuku",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつに 少し のこる 水"
+  },
+  {
+   "id": "sh-binzume",
+   "name": "瓶詰",
+   "reading": "びんづめ",
+   "difficulty": 1,
+   "mapNode": "seihin:bin",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつを びんに つめる"
+  },
+  {
+   "id": "sh-label",
+   "name": "ラベル",
+   "reading": "らべる",
+   "difficulty": 1,
+   "mapNode": "seihin:bin",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "びんに はる 表示の 紙"
+  },
+  {
+   "id": "sh-rosoku",
+   "name": "ろうそく",
+   "reading": "ろうそく",
+   "difficulty": 1,
+   "mapNode": "seihin:mitsuro",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "蜜蝋から 作れる あかり"
+  },
+  {
+   "id": "sh-sumitsu",
+   "name": "巣蜜",
+   "reading": "すみつ",
+   "difficulty": 1,
+   "mapNode": "seihin:mitsubuta",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "巣ごと 食べる はちみつ"
+  },
+  {
+   "id": "sh-dipper",
+   "name": "ハニーディッパー",
+   "reading": "はにーでぃっぱー",
+   "difficulty": 1,
+   "mapNode": "seihin:bin",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつを すくう 道具"
+  },
+  {
+   "id": "sh-issaimiman",
+   "name": "1歳未満",
+   "reading": "いっさいみまん",
+   "difficulty": 1,
+   "mapNode": "seihin:bin",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "1歳に なるまでは はちみつを あげない"
+  },
+  {
+   "id": "sh-amai",
+   "name": "甘い",
+   "reading": "あまい",
+   "difficulty": 1,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつの 味"
+  },
+  {
+   "id": "sh-kaori",
+   "name": "香り",
+   "reading": "かおり",
+   "difficulty": 1,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "花の 種類で ちがう におい"
+  },
+  {
+   "id": "sh-aji",
+   "name": "味",
+   "reading": "あじ",
+   "difficulty": 1,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "花の 種類で ちがう 味"
+  },
+  {
+   "id": "sh-vitamin",
+   "name": "ビタミン",
+   "reading": "びたみん",
+   "difficulty": 1,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつに 少し ふくまれる"
+  },
+  {
+   "id": "sh-mineral",
+   "name": "ミネラル",
+   "reading": "みねらる",
+   "difficulty": 1,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつに 少し ふくまれる"
+  },
+  {
+   "id": "sh-cream",
+   "name": "クリーム",
+   "reading": "くりーむ",
+   "difficulty": 1,
+   "mapNode": "seihin:mitsuro",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "蜜蝋を まぜて 作る ぬりもの"
+  },
+  {
+   "id": "sh-botulinus",
+   "name": "乳児ボツリヌス症",
+   "reading": "にゅうじぼつりぬすしょう",
+   "difficulty": 2,
+   "mapNode": "seihin:bin",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "1歳未満に あげない 理由の 病気"
+  },
+  {
+   "id": "sh-todo",
+   "name": "糖度",
+   "reading": "とうど",
+   "difficulty": 2,
+   "mapNode": "seihin:noshuku",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつの 糖の こさ およそ 78〜80%"
+  },
+  {
+   "id": "sh-todokei",
+   "name": "糖度計",
+   "reading": "とうどけい",
+   "difficulty": 2,
+   "mapNode": "seihin:noshuku",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "糖度を はかる 道具"
+  },
+  {
+   "id": "sh-noshuku",
+   "name": "濃縮",
+   "reading": "のうしゅく",
+   "difficulty": 2,
+   "mapNode": "seihin:noshuku",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はねの 風で 水分を とばす こと"
+  },
+  {
+   "id": "sh-jukusei",
+   "name": "熟成",
+   "reading": "じゅくせい",
+   "difficulty": 2,
+   "mapNode": "seihin:noshuku",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "花蜜が はちみつに 変わる こと"
+  },
+  {
+   "id": "sh-hyakkamitsu",
+   "name": "百花蜜",
+   "reading": "ひゃっかみつ",
+   "difficulty": 2,
+   "mapNode": "seihin:kamitsu",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "いろいろな 花の みつが まざった はちみつ"
+  },
+  {
+   "id": "sh-tankamitsu",
+   "name": "単花蜜",
+   "reading": "たんかみつ",
+   "difficulty": 2,
+   "mapNode": "seihin:kamitsu",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "おもに 1種類の 花の はちみつ"
+  },
+  {
+   "id": "sh-rengemitsu",
+   "name": "レンゲ蜜",
+   "reading": "れんげみつ",
+   "difficulty": 2,
+   "mapNode": "seihin:kamitsu",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "レンゲの 花の はちみつ"
+  },
+  {
+   "id": "sh-acaciamitsu",
+   "name": "アカシア蜜",
+   "reading": "あかしあみつ",
+   "difficulty": 2,
+   "mapNode": "seihin:kamitsu",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "ニセアカシアの はちみつ"
+  },
+  {
+   "id": "sh-sobamitsu",
+   "name": "ソバ蜜",
+   "reading": "そばみつ",
+   "difficulty": 2,
+   "mapNode": "seihin:kamitsu",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "色の こい ソバの はちみつ"
+  },
+  {
+   "id": "sh-junsui",
+   "name": "純粋はちみつ",
+   "reading": "じゅんすいはちみつ",
+   "difficulty": 2,
+   "mapNode": "seihin:bin",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "まぜものの ない はちみつ"
+  },
+  {
+   "id": "sh-kanetsu",
+   "name": "加熱",
+   "reading": "かねつ",
+   "difficulty": 2,
+   "mapNode": "seihin:roka",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "あたためて 処理する こと"
+  },
+  {
+   "id": "sh-hikanetsu",
+   "name": "非加熱",
+   "reading": "ひかねつ",
+   "difficulty": 2,
+   "mapNode": "seihin:roka",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "あたためずに びんに つめる こと"
+  },
+  {
+   "id": "sh-roka",
+   "name": "ろ過",
+   "reading": "ろか",
+   "difficulty": 2,
+   "mapNode": "seihin:roka",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "みつの ごみを こしとる こと"
+  },
+  {
+   "id": "sh-bunri",
+   "name": "分離",
+   "reading": "ぶんり",
+   "difficulty": 2,
+   "mapNode": "seihin:saimitsu",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "巣枠から みつを とりだす こと"
+  },
+  {
+   "id": "sh-kafunka",
+   "name": "花粉荷",
+   "reading": "かふんか",
+   "difficulty": 2,
+   "mapNode": "seihin:propolis",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "ハチが 運んだ 花粉の だんご"
+  },
+  {
+   "id": "sh-kyumitsu",
+   "name": "吸蜜",
+   "reading": "きゅうみつ",
+   "difficulty": 2,
+   "mapNode": "seihin:mitsui",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "花の みつを 吸う こと"
+  },
+  {
+   "id": "sh-kuchiutsushi",
+   "name": "口移し",
+   "reading": "くちうつし",
+   "difficulty": 2,
+   "mapNode": "seihin:ukewatashi",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "外勤蜂から 内勤蜂へ みつを わたす"
+  },
+  {
+   "id": "sh-koso",
+   "name": "酵素",
+   "reading": "こうそ",
+   "difficulty": 2,
+   "mapNode": "seihin:ukewatashi",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "ハチが みつに くわえる はたらきもの"
+  },
+  {
+   "id": "sh-combhoney",
+   "name": "コムハニー",
+   "reading": "こむはにー",
+   "difficulty": 2,
+   "mapNode": "seihin:mitsubuta",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "巣蜜の 英語の よび名"
+  },
+  {
+   "id": "sh-mead",
+   "name": "ミード",
+   "reading": "みーど",
+   "difficulty": 2,
+   "mapNode": "seihin:bin",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつから 作る おとなの お酒"
+  },
+  {
+   "id": "sh-mitsurowrap",
+   "name": "蜜蝋ラップ",
+   "reading": "みつろうらっぷ",
+   "difficulty": 2,
+   "mapNode": "seihin:mitsuro",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "布に 蜜蝋を しみこませた 包み"
+  },
+  {
+   "id": "sh-yusen",
+   "name": "湯せん",
+   "reading": "ゆせん",
+   "difficulty": 2,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "お湯で あたためて 結晶を もどす"
+  },
+  {
+   "id": "sh-shomikigen",
+   "name": "賞味期限",
+   "reading": "しょうみきげん",
+   "difficulty": 2,
+   "mapNode": "seihin:bin",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "おいしく 食べられる 期限"
+  },
+  {
+   "id": "sh-unpan",
+   "name": "蜜の運搬",
+   "reading": "みつのうんぱん",
+   "difficulty": 2,
+   "mapNode": "seihin:mitsui",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "蜜胃に 入れて 巣まで 運ぶ"
+  },
+  {
+   "id": "sh-invertase",
+   "name": "インベルターゼ",
+   "reading": "いんべるたーぜ",
+   "difficulty": 3,
+   "mapNode": "seihin:ukewatashi",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "ショ糖を ブドウ糖と 果糖に 分ける 酵素"
+  },
+  {
+   "id": "sh-glucoseoxidase",
+   "name": "グルコースオキシダーゼ",
+   "reading": "ぐるこーすおきしだーぜ",
+   "difficulty": 3,
+   "mapNode": "seihin:ukewatashi",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "ハチが くわえる 酵素の 1つ"
+  },
+  {
+   "id": "sh-shoto",
+   "name": "ショ糖",
+   "reading": "しょとう",
+   "difficulty": 3,
+   "mapNode": "seihin:kamitsu",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "花蜜に 多い 砂糖の なかま"
+  },
+  {
+   "id": "sh-kanromitsu",
+   "name": "甘露蜜",
+   "reading": "かんろみつ",
+   "difficulty": 3,
+   "mapNode": "seihin:kamitsu",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "花でなく 甘露から できた はちみつ"
+  },
+  {
+   "id": "sh-creamhoney",
+   "name": "クリームはちみつ",
+   "reading": "くりーむはちみつ",
+   "difficulty": 3,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "こまかく 結晶させた はちみつ"
+  },
+  {
+   "id": "sh-nendo",
+   "name": "粘度",
+   "reading": "ねんど",
+   "difficulty": 3,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつの ねばりの つよさ"
+  },
+  {
+   "id": "sh-oligo",
+   "name": "オリゴ糖",
+   "reading": "おりごとう",
+   "difficulty": 3,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつに 少し ふくまれる 糖"
+  },
+  {
+   "id": "sh-gluconsan",
+   "name": "グルコン酸",
+   "reading": "ぐるこんさん",
+   "difficulty": 3,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつの すっぱさの もと"
+  },
+  {
+   "id": "sh-kafunbunseki",
+   "name": "花粉分析",
+   "reading": "かふんぶんせき",
+   "difficulty": 3,
+   "mapNode": "seihin:seibun",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "はちみつの 花粉で 蜜源を しらべる"
+  },
+  {
+   "id": "sh-mitsubutamitsu",
+   "name": "蜜ぶた蜜",
+   "reading": "みつぶたみつ",
+   "difficulty": 3,
+   "mapNode": "seihin:mitsubuta",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "切った 蜜ぶたから とる みつ"
+  },
+  {
+   "id": "sh-mitsubutaro",
+   "name": "蜜ぶたろう",
+   "reading": "みつぶたろう",
+   "difficulty": 3,
+   "mapNode": "seihin:mitsuro",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "蜜ぶたから とる きれいな ろう"
+  },
+  {
+   "id": "sh-seisei",
+   "name": "精製",
+   "reading": "せいせい",
+   "difficulty": 3,
+   "mapNode": "seihin:mitsuro",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "ろうの ごみを のぞいて きれいに する"
+  },
+  {
+   "id": "sh-beeswax",
+   "name": "ビーズワックス",
+   "reading": "びーずわっくす",
+   "difficulty": 3,
+   "mapNode": "seihin:mitsuro",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "蜜蝋の 英語の よび名"
+  },
+  {
+   "id": "sh-ounyu",
+   "name": "王乳",
+   "reading": "おうにゅう",
+   "difficulty": 3,
+   "mapNode": "seihin:royal",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "ローヤルゼリーの 和名"
+  },
+  {
+   "id": "sh-namaroyal",
+   "name": "生ローヤルゼリー",
+   "reading": "なまろーやるぜりー",
+   "difficulty": 3,
+   "mapNode": "seihin:royal",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "とった ままの ローヤルゼリー"
+  },
+  {
+   "id": "sh-desensan",
+   "name": "デセン酸",
+   "reading": "でせんさん",
+   "difficulty": 3,
+   "mapNode": "seihin:royal",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "ローヤルゼリーに 特有の 成分"
+  },
+  {
+   "id": "sh-jushi",
+   "name": "樹脂",
+   "reading": "じゅし",
+   "difficulty": 3,
+   "mapNode": "seihin:propolis",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "プロポリスの もとの 木の やに"
+  },
+  {
+   "id": "sh-kafunsaishu",
+   "name": "花粉の採集",
+   "reading": "かふんのさいしゅう",
+   "difficulty": 3,
+   "mapNode": "seihin:propolis",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "花粉採集器で 花粉荷を あつめる"
+  },
+  {
+   "id": "sh-enshinbunri",
+   "name": "遠心分離",
+   "reading": "えんしんぶんり",
+   "difficulty": 3,
+   "mapNode": "seihin:saimitsu",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "回して みつを とばす しくみ"
+  },
+  {
+   "id": "sh-bunrimitsu",
+   "name": "分離蜜",
+   "reading": "ぶんりみつ",
+   "difficulty": 3,
+   "mapNode": "seihin:saimitsu",
+   "field": "生産物",
+   "bee": "西洋",
+   "note": "分離機で とった はちみつ"
+  },
+  {
+   "id": "sh-shiborimitsu",
+   "name": "しぼり蜜",
+   "reading": "しぼりみつ",
+   "difficulty": 3,
+   "mapNode": "seihin:saimitsu",
+   "field": "生産物",
+   "bee": "日本",
+   "note": "巣を しぼって とる はちみつ"
+  },
+  {
+   "id": "sh-nihonmitsu",
+   "name": "ニホンミツバチの蜜",
+   "reading": "にほんみつばちのみつ",
+   "difficulty": 3,
+   "mapNode": "seihin:kamitsu",
+   "field": "生産物",
+   "bee": "日本",
+   "note": "いろいろな 花の みつが まざる"
+  },
+  {
+   "id": "sh-jubakokiritori",
+   "name": "重箱の切り取り",
+   "reading": "じゅうばこのきりとり",
+   "difficulty": 3,
+   "mapNode": "seihin:saimitsu",
+   "field": "生産物",
+   "bee": "日本",
+   "note": "重箱の 段を 切りとって 採蜜する"
+  },
+  {
+   "id": "sh-chinden",
+   "name": "沈殿",
+   "reading": "ちんでん",
+   "difficulty": 3,
+   "mapNode": "seihin:roka",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "ごみを 底に しずめて わける"
+  },
+  {
+   "id": "sh-koshinuno",
+   "name": "こし布",
+   "reading": "こしぬの",
+   "difficulty": 3,
+   "mapNode": "seihin:roka",
+   "field": "生産物",
+   "bee": "共通",
+   "note": "みつを こす 布"
+  }
+ ],
+ "byoki": [
+  {
+   "id": "bk-dani",
+   "name": "ダニ",
+   "reading": "だに",
+   "difficulty": 1,
+   "mapNode": "byoki:varroa",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ハチに つく 小さな 生きもの"
+  },
+  {
+   "id": "bk-osuzume",
+   "name": "オオスズメバチ",
+   "reading": "おおすずめばち",
+   "difficulty": 1,
+   "mapNode": "byoki:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "日本で いちばん 大きな スズメバチ"
+  },
+  {
+   "id": "bk-kiirosuzume",
+   "name": "キイロスズメバチ",
+   "reading": "きいろすずめばち",
+   "difficulty": 1,
+   "mapNode": "byoki:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "町でも 見かける スズメバチ"
+  },
+  {
+   "id": "bk-ari",
+   "name": "アリ",
+   "reading": "あり",
+   "difficulty": 1,
+   "mapNode": "byoki:teki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣箱の みつを ねらう"
+  },
+  {
+   "id": "bk-kuma",
+   "name": "クマ",
+   "reading": "くま",
+   "difficulty": 1,
+   "mapNode": "byoki:teki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "山で 巣箱を ねらう"
+  },
+  {
+   "id": "bk-tsubame",
+   "name": "ツバメ",
+   "reading": "つばめ",
+   "difficulty": 1,
+   "mapNode": "byoki:teki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "飛んでいる ハチを 食べる 鳥"
+  },
+  {
+   "id": "bk-nezumi",
+   "name": "ネズミ",
+   "reading": "ねずみ",
+   "difficulty": 1,
+   "mapNode": "byoki:teki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "冬の 巣箱に 入りこむ"
+  },
+  {
+   "id": "bk-kaeru",
+   "name": "カエル",
+   "reading": "かえる",
+   "difficulty": 1,
+   "mapNode": "byoki:teki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣門の 近くで ハチを 食べる"
+  },
+  {
+   "id": "bk-tenteki",
+   "name": "天敵",
+   "reading": "てんてき",
+   "difficulty": 1,
+   "mapNode": "byoki:teki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ハチを ねらう 生きもの"
+  },
+  {
+   "id": "bk-byoki",
+   "name": "病気",
+   "reading": "びょうき",
+   "difficulty": 1,
+   "mapNode": "byoki:hoka",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "蜂児や 成虫の 病気"
+  },
+  {
+   "id": "bk-kabi",
+   "name": "カビ",
+   "reading": "かび",
+   "difficulty": 1,
+   "mapNode": "byoki:hoka",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "チョーク病の もとに なる"
+  },
+  {
+   "id": "bk-noyaku",
+   "name": "農薬",
+   "reading": "のうやく",
+   "difficulty": 1,
+   "mapNode": "byoki:noyaku",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "作物を 守る 薬 ハチにも 影響する"
+  },
+  {
+   "id": "bk-sumushi",
+   "name": "スムシ",
+   "reading": "すむし",
+   "difficulty": 1,
+   "mapNode": "byoki:sumushi",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣を 食べる ガの 幼虫"
+  },
+  {
+   "id": "bk-ga",
+   "name": "蛾",
+   "reading": "が",
+   "difficulty": 1,
+   "mapNode": "byoki:sumushi",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "スムシの 親"
+  },
+  {
+   "id": "bk-senjo",
+   "name": "洗浄",
+   "reading": "せんじょう",
+   "difficulty": 1,
+   "mapNode": "byoki:eisei",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣箱や 道具を 洗って 清潔に する"
+  },
+  {
+   "id": "bk-yobo",
+   "name": "予防",
+   "reading": "よぼう",
+   "difficulty": 1,
+   "mapNode": "byoki:eisei",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "病気を ふせぐ こと"
+  },
+  {
+   "id": "bk-juishi",
+   "name": "獣医師",
+   "reading": "じゅういし",
+   "difficulty": 1,
+   "mapNode": "byoki:kusuri",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ミツバチの 病気も みる"
+  },
+  {
+   "id": "bk-kusuri",
+   "name": "薬",
+   "reading": "くすり",
+   "difficulty": 1,
+   "mapNode": "byoki:kusuri",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "決まりどおりに 使う もの"
+  },
+  {
+   "id": "bk-tokyo",
+   "name": "逃去",
+   "reading": "とうきょ",
+   "difficulty": 1,
+   "mapNode": "byoki:tokyo",
+   "field": "病気・害敵",
+   "bee": "日本",
+   "note": "群が 巣を すてて 出ていく こと ニホンミツバチに 多い"
+  },
+  {
+   "id": "bk-hokyu",
+   "name": "蜂球",
+   "reading": "ほうきゅう",
+   "difficulty": 1,
+   "mapNode": "byoki:suzume",
+   "field": "病気・害敵",
+   "bee": "日本",
+   "note": "ニホンミツバチが スズメバチを 熱で 包む 守り"
+  },
+  {
+   "id": "bk-varroa",
+   "name": "バロア",
+   "reading": "ばろあ",
+   "difficulty": 2,
+   "mapNode": "byoki:varroa",
+   "field": "病気・害敵",
+   "bee": "西洋",
+   "note": "いちばん 気を つける ダニ"
+  },
+  {
+   "id": "bk-hegiita",
+   "name": "ミツバチヘギイタダニ",
+   "reading": "みつばちへぎいただに",
+   "difficulty": 2,
+   "mapNode": "byoki:varroa",
+   "field": "病気・害敵",
+   "bee": "西洋",
+   "note": "バロアの 和名"
+  },
+  {
+   "id": "bk-danikensa",
+   "name": "ダニ検査",
+   "reading": "だにけんさ",
+   "difficulty": 2,
+   "mapNode": "byoki:varroa",
+   "field": "病気・害敵",
+   "bee": "西洋",
+   "note": "ダニの 数を しらべる"
+  },
+  {
+   "id": "bk-akarin",
+   "name": "アカリンダニ",
+   "reading": "あかりんだに",
+   "difficulty": 2,
+   "mapNode": "byoki:akarin",
+   "field": "病気・害敵",
+   "bee": "日本",
+   "note": "気管に すむ ダニ ニホンミツバチに 大きな 影響"
+  },
+  {
+   "id": "bk-nozema",
+   "name": "ノゼマ病",
+   "reading": "のぜまびょう",
+   "difficulty": 2,
+   "mapNode": "byoki:nozema",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "おなかの 中の 病気"
+  },
+  {
+   "id": "bk-fuso",
+   "name": "腐蛆病",
+   "reading": "ふそびょう",
+   "difficulty": 2,
+   "mapNode": "byoki:fuso",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "見つけたら 届け出る 幼虫の 病気"
+  },
+  {
+   "id": "bk-americafuso",
+   "name": "アメリカ腐蛆病",
+   "reading": "あめりかふそびょう",
+   "difficulty": 2,
+   "mapNode": "byoki:fuso",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "腐蛆病の 1つ"
+  },
+  {
+   "id": "bk-europefuso",
+   "name": "ヨーロッパ腐蛆病",
+   "reading": "よーろっぱふそびょう",
+   "difficulty": 2,
+   "mapNode": "byoki:fuso",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "腐蛆病の 1つ"
+  },
+  {
+   "id": "bk-chalk",
+   "name": "チョーク病",
+   "reading": "ちょーくびょう",
+   "difficulty": 2,
+   "mapNode": "byoki:hoka",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "カビで 幼虫が かたくなる 病気"
+  },
+  {
+   "id": "bk-sacbrood",
+   "name": "サックブルード病",
+   "reading": "さっくぶるーどびょう",
+   "difficulty": 2,
+   "mapNode": "byoki:hoka",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ウイルスによる 幼虫の 病気"
+  },
+  {
+   "id": "bk-todokede",
+   "name": "届出伝染病",
+   "reading": "とどけでんせんびょう",
+   "difficulty": 2,
+   "mapNode": "byoki:hoka",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "見つけたら 届け出る 病気の なかま"
+  },
+  {
+   "id": "bk-byogentai",
+   "name": "病原体",
+   "reading": "びょうげんたい",
+   "difficulty": 2,
+   "mapNode": "byoki:hoka",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "病気の もとに なる 小さな 生きもの"
+  },
+  {
+   "id": "bk-kansen",
+   "name": "感染",
+   "reading": "かんせん",
+   "difficulty": 2,
+   "mapNode": "byoki:hoka",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "病気が うつる こと"
+  },
+  {
+   "id": "bk-tsuzuriga",
+   "name": "ハチノスツヅリガ",
+   "reading": "はちのすつづりが",
+   "difficulty": 2,
+   "mapNode": "byoki:sumushi",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "スムシの 親の ガ"
+  },
+  {
+   "id": "bk-furusu",
+   "name": "古巣",
+   "reading": "ふるす",
+   "difficulty": 2,
+   "mapNode": "byoki:sumushi",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "スムシが つきやすい 古い 巣"
+  },
+  {
+   "id": "bk-hokakuki",
+   "name": "捕獲器",
+   "reading": "ほかくき",
+   "difficulty": 2,
+   "mapNode": "byoki:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣門の 前に おく スズメバチの わな"
+  },
+  {
+   "id": "bk-suzumeyoke",
+   "name": "スズメバチよけ",
+   "reading": "すずめばちよけ",
+   "difficulty": 2,
+   "mapNode": "byoki:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣門に つける 守りの 網"
+  },
+  {
+   "id": "bk-suzumenosu",
+   "name": "スズメバチの巣",
+   "reading": "すずめばちのす",
+   "difficulty": 2,
+   "mapNode": "byoki:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "近くの 巣を 見つけて 専門家に 相談する"
+  },
+  {
+   "id": "bk-neonico",
+   "name": "ネオニコチノイド系",
+   "reading": "ねおにこちのいどけい",
+   "difficulty": 2,
+   "mapNode": "byoki:noyaku",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ハチへの 影響が 話題に なる 農薬の なかま"
+  },
+  {
+   "id": "bk-noyakujoho",
+   "name": "農薬の情報",
+   "reading": "のうやくのじょうほう",
+   "difficulty": 2,
+   "mapNode": "byoki:noyaku",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "農家と 養蜂家の 知らせあい"
+  },
+  {
+   "id": "bk-shoshitsu",
+   "name": "群の消失",
+   "reading": "むれのしょうしつ",
+   "difficulty": 2,
+   "mapNode": "byoki:tokyo",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "群の ハチが いなくなる こと"
+  },
+  {
+   "id": "bk-eiseikanri",
+   "name": "衛生管理",
+   "reading": "えいせいかんり",
+   "difficulty": 2,
+   "mapNode": "byoki:eisei",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣箱や 道具を 清潔に たもつ"
+  },
+  {
+   "id": "bk-daninokusuri",
+   "name": "ダニの薬",
+   "reading": "だにのくすり",
+   "difficulty": 2,
+   "mapNode": "byoki:kusuri",
+   "field": "病気・害敵",
+   "bee": "西洋",
+   "note": "獣医師や 指導員の 指示で 使う"
+  },
+  {
+   "id": "bk-doubutsuiyaku",
+   "name": "動物用医薬品",
+   "reading": "どうぶつよういやくひん",
+   "difficulty": 2,
+   "mapNode": "byoki:kusuri",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "動物に 使う ための 薬"
+  },
+  {
+   "id": "bk-shiyonokimari",
+   "name": "使用の決まり",
+   "reading": "しようのきまり",
+   "difficulty": 2,
+   "mapNode": "byoki:kusuri",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "薬を 決まりどおりに 使う こと"
+  },
+  {
+   "id": "bk-akarinsho",
+   "name": "アカリンダニ症",
+   "reading": "あかりんだにしょう",
+   "difficulty": 3,
+   "mapNode": "byoki:akarin",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "届出伝染病の 1つ"
+  },
+  {
+   "id": "bk-kikan",
+   "name": "気管",
+   "reading": "きかん",
+   "difficulty": 3,
+   "mapNode": "byoki:akarin",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "アカリンダニが すむ 息の 管"
+  },
+  {
+   "id": "bk-cerane",
+   "name": "ノゼマ・セラネ",
+   "reading": "のぜませらね",
+   "difficulty": 3,
+   "mapNode": "byoki:nozema",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ノゼマ病の もとの 1つ"
+  },
+  {
+   "id": "bk-apis",
+   "name": "ノゼマ・アピス",
+   "reading": "のぜまあぴす",
+   "difficulty": 3,
+   "mapNode": "byoki:nozema",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ノゼマ病の もとの 1つ"
+  },
+  {
+   "id": "bk-bihoshichu",
+   "name": "微胞子虫",
+   "reading": "びほうしちゅう",
+   "difficulty": 3,
+   "mapNode": "byoki:nozema",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ノゼマの なかま"
+  },
+  {
+   "id": "bk-gaho",
+   "name": "芽胞",
+   "reading": "がほう",
+   "difficulty": 3,
+   "mapNode": "byoki:fuso",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "腐蛆病の 菌が 作る 強い つぶ"
+  },
+  {
+   "id": "bk-kensa",
+   "name": "検査",
+   "reading": "けんさ",
+   "difficulty": 3,
+   "mapNode": "byoki:fuso",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "家畜保健衛生所の しらべ"
+  },
+  {
+   "id": "bk-manen",
+   "name": "まん延防止",
+   "reading": "まんえんぼうし",
+   "difficulty": 3,
+   "mapNode": "byoki:fuso",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "病気を 広げない こと"
+  },
+  {
+   "id": "bk-danihanshoku",
+   "name": "ダニの繁殖",
+   "reading": "だにのはんしょく",
+   "difficulty": 3,
+   "mapNode": "byoki:varroa",
+   "field": "病気・害敵",
+   "bee": "西洋",
+   "note": "蜂児の 巣房の 中で ふえる"
+  },
+  {
+   "id": "bk-obachitrap",
+   "name": "雄蜂トラップ",
+   "reading": "おばちとらっぷ",
+   "difficulty": 3,
+   "mapNode": "byoki:varroa",
+   "field": "病気・害敵",
+   "bee": "西洋",
+   "note": "雄蜂巣枠で ダニを へらす 工夫"
+  },
+  {
+   "id": "bk-sugarroll",
+   "name": "シュガーロール法",
+   "reading": "しゅがーろーるほう",
+   "difficulty": 3,
+   "mapNode": "byoki:varroa",
+   "field": "病気・害敵",
+   "bee": "西洋",
+   "note": "粉砂糖で ダニを 数える"
+  },
+  {
+   "id": "bk-daninotsuyosa",
+   "name": "ダニへの強さ",
+   "reading": "だにへのつよさ",
+   "difficulty": 3,
+   "mapNode": "byoki:varroa",
+   "field": "病気・害敵",
+   "bee": "日本",
+   "note": "ニホンミツバチは バロアに 強い"
+  },
+  {
+   "id": "bk-gisan",
+   "name": "ギ酸",
+   "reading": "ぎさん",
+   "difficulty": 3,
+   "mapNode": "byoki:kusuri",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ダニ対策の 薬に 使われる 成分の 名前"
+  },
+  {
+   "id": "bk-shusan",
+   "name": "シュウ酸",
+   "reading": "しゅうさん",
+   "difficulty": 3,
+   "mapNode": "byoki:kusuri",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ダニ対策の 薬に 使われる 成分の 名前"
+  },
+  {
+   "id": "bk-thymol",
+   "name": "チモール",
+   "reading": "ちもーる",
+   "difficulty": 3,
+   "mapNode": "byoki:kusuri",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ダニ対策の 薬に 使われる 成分の 名前"
+  },
+  {
+   "id": "bk-teikosei",
+   "name": "抵抗性",
+   "reading": "ていこうせい",
+   "difficulty": 3,
+   "mapNode": "byoki:kusuri",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "薬が きかなく なる こと"
+  },
+  {
+   "id": "bk-virus",
+   "name": "ウイルス",
+   "reading": "ういるす",
+   "difficulty": 3,
+   "mapNode": "byoki:hoka",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ダニが 運ぶ ことも ある 病原体"
+  },
+  {
+   "id": "bk-hanehenkei",
+   "name": "羽変形病",
+   "reading": "はねへんけいびょう",
+   "difficulty": 3,
+   "mapNode": "byoki:hoka",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "はねが ちぢれる ウイルスの 病気"
+  },
+  {
+   "id": "bk-hachikuma",
+   "name": "ハチクマ",
+   "reading": "はちくま",
+   "difficulty": 3,
+   "mapNode": "byoki:teki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "ハチの 巣を ねらう タカの なかま"
+  },
+  {
+   "id": "bk-tsukinowaguma",
+   "name": "ツキノワグマ",
+   "reading": "つきのわぐま",
+   "difficulty": 3,
+   "mapNode": "byoki:teki",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "本州の 山の クマ"
+  },
+  {
+   "id": "bk-tsumaaka",
+   "name": "ツマアカスズメバチ",
+   "reading": "つまあかすずめばち",
+   "difficulty": 3,
+   "mapNode": "byoki:suzume",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "外国から 入った スズメバチ"
+  },
+  {
+   "id": "bk-ccd",
+   "name": "蜂群崩壊症候群",
+   "reading": "ほうぐんほうかいしょうこうぐん",
+   "difficulty": 3,
+   "mapNode": "byoki:tokyo",
+   "field": "病気・害敵",
+   "bee": "西洋",
+   "note": "群の 働き蜂が いなくなる 現象"
+  },
+  {
+   "id": "bk-noyakueikyo",
+   "name": "農薬の影響",
+   "reading": "のうやくのえいきょう",
+   "difficulty": 3,
+   "mapNode": "byoki:noyaku",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "農薬が ハチに あたえる 影響"
+  },
+  {
+   "id": "bk-reitohokan",
+   "name": "冷凍保管",
+   "reading": "れいとうほかん",
+   "difficulty": 3,
+   "mapNode": "byoki:sumushi",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "巣枠を 冷やして スムシを ふせぐ"
+  },
+  {
+   "id": "bk-usuguro",
+   "name": "ウスグロツヅリガ",
+   "reading": "うすぐろつづりが",
+   "difficulty": 3,
+   "mapNode": "byoki:sumushi",
+   "field": "病気・害敵",
+   "bee": "共通",
+   "note": "スムシに なる 小さい ガ"
+  }
+ ],
+ "joou": [
+  {
+   "id": "jo-oudai",
+   "name": "王台",
+   "reading": "おうだい",
+   "difficulty": 1,
+   "mapNode": "joou:oudai",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王を 育てる 大きな 巣房"
+  },
+  {
+   "id": "jo-shinjoou",
+   "name": "新女王",
+   "reading": "しんじょおう",
+   "difficulty": 1,
+   "mapNode": "joou:ikusei",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "新しく 生まれた 女王"
+  },
+  {
+   "id": "jo-kekkonhiko",
+   "name": "結婚飛行",
+   "reading": "けっこんひこう",
+   "difficulty": 1,
+   "mapNode": "joou:kobi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王が 空で 雄蜂と 出会う 飛行"
+  },
+  {
+   "id": "jo-sanran",
+   "name": "産卵",
+   "reading": "さんらん",
+   "difficulty": 1,
+   "mapNode": "joou:sanran",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王が 巣房に 卵を うむ こと"
+  },
+  {
+   "id": "jo-hinshu",
+   "name": "品種",
+   "reading": "ひんしゅ",
+   "difficulty": 1,
+   "mapNode": "joou:hinshu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "性質の ちがう ミツバチの 系統"
+  },
+  {
+   "id": "jo-italian",
+   "name": "イタリアン",
+   "reading": "いたりあん",
+   "difficulty": 1,
+   "mapNode": "joou:hinshu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "黄色っぽく おとなしい 品種"
+  },
+  {
+   "id": "jo-carniolan",
+   "name": "カーニオラン",
+   "reading": "かーにおらん",
+   "difficulty": 1,
+   "mapNode": "joou:hinshu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "黒っぽく 寒さに 強い 品種"
+  },
+  {
+   "id": "jo-godo",
+   "name": "合同",
+   "reading": "ごうどう",
+   "difficulty": 1,
+   "mapNode": "joou:godo",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "2つの 群を 1つに する"
+  },
+  {
+   "id": "jo-murewake",
+   "name": "群分け",
+   "reading": "むれわけ",
+   "difficulty": 1,
+   "mapNode": "joou:jinko",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "1つの 群を 2つに 分ける"
+  },
+  {
+   "id": "jo-atotsugi",
+   "name": "跡つぎ",
+   "reading": "あとつぎ",
+   "difficulty": 1,
+   "mapNode": "joou:koushin",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "古い 女王に かわる 新しい 女王"
+  },
+  {
+   "id": "jo-fuzai",
+   "name": "女王不在",
+   "reading": "じょおうふざい",
+   "difficulty": 1,
+   "mapNode": "joou:muou",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "群に 女王が いない こと"
+  },
+  {
+   "id": "jo-kotai",
+   "name": "女王の交代",
+   "reading": "じょおうのこうたい",
+   "difficulty": 1,
+   "mapNode": "joou:koushin",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王が 入れかわる こと"
+  },
+  {
+   "id": "jo-mark",
+   "name": "マーク",
+   "reading": "まーく",
+   "difficulty": 1,
+   "mapNode": "joou:keito",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "女王の 背中の しるし"
+  },
+  {
+   "id": "jo-ookago",
+   "name": "王籠",
+   "reading": "おうかご",
+   "difficulty": 1,
+   "mapNode": "joou:donyu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "女王を 入れる 小さな かご"
+  },
+  {
+   "id": "jo-ikusei",
+   "name": "育成",
+   "reading": "いくせい",
+   "difficulty": 1,
+   "mapNode": "joou:ikusei",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "女王を 育てる こと"
+  },
+  {
+   "id": "jo-kohai",
+   "name": "交配",
+   "reading": "こうはい",
+   "difficulty": 1,
+   "mapNode": "joou:keito",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王と 雄蜂の 組み合わせ"
+  },
+  {
+   "id": "jo-keito",
+   "name": "系統",
+   "reading": "けいとう",
+   "difficulty": 1,
+   "mapNode": "joou:keito",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "親から つづく 親から 子へ つづく 性質の まとまり"
+  },
+  {
+   "id": "jo-ichu",
+   "name": "移虫",
+   "reading": "いちゅう",
+   "difficulty": 1,
+   "mapNode": "joou:ichu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "幼虫を 王台カップに 移す"
+  },
+  {
+   "id": "jo-jinkobunpo",
+   "name": "人工分蜂",
+   "reading": "じんこうぶんぽう",
+   "difficulty": 1,
+   "mapNode": "joou:jinko",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "人が 群を 分けて ふやす"
+  },
+  {
+   "id": "jo-donyu",
+   "name": "導入",
+   "reading": "どうにゅう",
+   "difficulty": 1,
+   "mapNode": "joou:donyu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "新しい 女王を 群に 入れる"
+  },
+  {
+   "id": "jo-kobibako",
+   "name": "交尾箱",
+   "reading": "こうびばこ",
+   "difficulty": 2,
+   "mapNode": "joou:kobi",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "新女王を 交尾させる 小さな 巣箱"
+  },
+  {
+   "id": "jo-shojoou",
+   "name": "処女王",
+   "reading": "しょじょおう",
+   "difficulty": 2,
+   "mapNode": "joou:kobi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "まだ 交尾して いない 女王"
+  },
+  {
+   "id": "jo-sanrankaishi",
+   "name": "産卵開始",
+   "reading": "さんらんかいし",
+   "difficulty": 2,
+   "mapNode": "joou:sanran",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "交尾の あと 卵を うみはじめる"
+  },
+  {
+   "id": "jo-jusei",
+   "name": "受精",
+   "reading": "じゅせい",
+   "difficulty": 2,
+   "mapNode": "joou:sanran",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "卵と 精子が あわさる こと"
+  },
+  {
+   "id": "jo-hatarakisanran",
+   "name": "働き蜂産卵",
+   "reading": "はたらきばちさんらん",
+   "difficulty": 2,
+   "mapNode": "joou:muou",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王が いない 群で 働き蜂が 卵を うむ"
+  },
+  {
+   "id": "jo-muougun",
+   "name": "無王群",
+   "reading": "むおうぐん",
+   "difficulty": 2,
+   "mapNode": "joou:muou",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王が いない 群"
+  },
+  {
+   "id": "jo-henseioudai",
+   "name": "変成王台",
+   "reading": "へんせいおうだい",
+   "difficulty": 2,
+   "mapNode": "joou:oudai",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王が いなく なった ときに 作る 王台"
+  },
+  {
+   "id": "jo-shizenoudai",
+   "name": "自然王台",
+   "reading": "しぜんおうだい",
+   "difficulty": 2,
+   "mapNode": "joou:oudai",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "ハチが 自分で 作る 王台"
+  },
+  {
+   "id": "jo-bunpooudai",
+   "name": "分蜂王台",
+   "reading": "ぶんぽうおうだい",
+   "difficulty": 2,
+   "mapNode": "joou:oudai",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "分蜂の 前に 作る 王台"
+  },
+  {
+   "id": "jo-cup",
+   "name": "王台カップ",
+   "reading": "おうだいかっぷ",
+   "difficulty": 2,
+   "mapNode": "joou:ichu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "移虫に 使う 王台の 型"
+  },
+  {
+   "id": "jo-wakaiyochu",
+   "name": "若い幼虫",
+   "reading": "わかいようちゅう",
+   "difficulty": 2,
+   "mapNode": "joou:ichu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "移虫に 使う かえって すぐの 幼虫"
+  },
+  {
+   "id": "jo-caucasian",
+   "name": "コーカシアン",
+   "reading": "こーかしあん",
+   "difficulty": 2,
+   "mapNode": "joou:hinshu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "口吻が 長い 品種"
+  },
+  {
+   "id": "jo-buckfast",
+   "name": "バックファスト",
+   "reading": "ばっくふぁすと",
+   "difficulty": 2,
+   "mapNode": "joou:hinshu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "かけあわせで 作られた 系統"
+  },
+  {
+   "id": "jo-ashu",
+   "name": "亜種",
+   "reading": "あしゅ",
+   "difficulty": 2,
+   "mapNode": "joou:hinshu",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "同じ 種の 中の 地域ごとの まとまり"
+  },
+  {
+   "id": "jo-koshin",
+   "name": "更新",
+   "reading": "こうしん",
+   "difficulty": 2,
+   "mapNode": "joou:koushin",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "女王を 新しく する こと"
+  },
+  {
+   "id": "jo-furuijoou",
+   "name": "古い女王",
+   "reading": "ふるいじょおう",
+   "difficulty": 2,
+   "mapNode": "joou:koushin",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "産卵が へってきた 女王"
+  },
+  {
+   "id": "jo-shinbunshi",
+   "name": "新聞紙合同",
+   "reading": "しんぶんしごうどう",
+   "difficulty": 2,
+   "mapNode": "joou:godo",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "新聞紙を はさんで 少しずつ 合わせる"
+  },
+  {
+   "id": "jo-bunkatsu",
+   "name": "分割",
+   "reading": "ぶんかつ",
+   "difficulty": 2,
+   "mapNode": "joou:jinko",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "巣枠を 分けて 群を ふやす"
+  },
+  {
+   "id": "jo-kakugun",
+   "name": "核群",
+   "reading": "かくぐん",
+   "difficulty": 2,
+   "mapNode": "joou:jinko",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "巣枠 数枚の 小さな 群"
+  },
+  {
+   "id": "jo-senbatsu",
+   "name": "選抜",
+   "reading": "せんばつ",
+   "difficulty": 2,
+   "mapNode": "joou:keito",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "よい 性質の 群を えらぶ"
+  },
+  {
+   "id": "jo-kinshin",
+   "name": "近親交配",
+   "reading": "きんしんこうはい",
+   "difficulty": 2,
+   "mapNode": "joou:keito",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "近い 親せきどうしの 交配"
+  },
+  {
+   "id": "jo-donyukakunin",
+   "name": "導入の確認",
+   "reading": "どうにゅうのかくにん",
+   "difficulty": 2,
+   "mapNode": "joou:donyu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "女王が うけいれられたか 見る"
+  },
+  {
+   "id": "jo-ukeire",
+   "name": "受け入れ",
+   "reading": "うけいれ",
+   "difficulty": 2,
+   "mapNode": "joou:donyu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "群が 新しい 女王を みとめる こと"
+  },
+  {
+   "id": "jo-obachiyakume",
+   "name": "雄蜂の役目",
+   "reading": "おばちのやくめ",
+   "difficulty": 2,
+   "mapNode": "joou:kobi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王と 出会う こと"
+  },
+  {
+   "id": "jo-sanranryoku",
+   "name": "女王の産卵力",
+   "reading": "じょおうのさんらんりょく",
+   "difficulty": 2,
+   "mapNode": "joou:sanran",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "女王が 卵を うむ いきおい"
+  },
+  {
+   "id": "jo-choseino",
+   "name": "貯精嚢",
+   "reading": "ちょせいのう",
+   "difficulty": 3,
+   "mapNode": "joou:sanran",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王が 精子を たくわえる ふくろ"
+  },
+  {
+   "id": "jo-seikettei",
+   "name": "性決定",
+   "reading": "せいけってい",
+   "difficulty": 3,
+   "mapNode": "joou:sanran",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "オスか メスかが 決まる しくみ"
+  },
+  {
+   "id": "jo-issaitafu",
+   "name": "一妻多夫",
+   "reading": "いっさいたふ",
+   "difficulty": 3,
+   "mapNode": "joou:kobi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "女王が 何びきもの 雄蜂と 交尾する"
+  },
+  {
+   "id": "jo-shugoiki",
+   "name": "雄蜂集合域",
+   "reading": "おばちしゅうごういき",
+   "difficulty": 3,
+   "mapNode": "joou:kobi",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "雄蜂が あつまる 空の 場所"
+  },
+  {
+   "id": "jo-jinkojusei",
+   "name": "人工授精",
+   "reading": "じんこうじゅせい",
+   "difficulty": 3,
+   "mapNode": "joou:kobi",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "人の 手で 交配させる 方法"
+  },
+  {
+   "id": "jo-ichuho",
+   "name": "移虫法",
+   "reading": "いちゅうほう",
+   "difficulty": 3,
+   "mapNode": "joou:ichu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "移虫で 女王を 育てる 方法"
+  },
+  {
+   "id": "jo-doolittle",
+   "name": "ドゥーリトル法",
+   "reading": "どぅーりとるほう",
+   "difficulty": 3,
+   "mapNode": "joou:ichu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "王台カップで 女王を 育てる 方法"
+  },
+  {
+   "id": "jo-starter",
+   "name": "スターター群",
+   "reading": "すたーたーぐん",
+   "difficulty": 3,
+   "mapNode": "joou:ikusei",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "王台を 作りはじめさせる 群"
+  },
+  {
+   "id": "jo-finisher",
+   "name": "フィニッシャー群",
+   "reading": "ふぃにっしゃーぐん",
+   "difficulty": 3,
+   "mapNode": "joou:ikusei",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "王台を 仕上げさせる 群"
+  },
+  {
+   "id": "jo-ikuogun",
+   "name": "育王群",
+   "reading": "いくおうぐん",
+   "difficulty": 3,
+   "mapNode": "joou:ikusei",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "女王を 育てる ための 群"
+  },
+  {
+   "id": "jo-obachiikusei",
+   "name": "雄蜂の育成",
+   "reading": "おばちのいくせい",
+   "difficulty": 3,
+   "mapNode": "joou:ikusei",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "交配に よい 雄蜂を 育てる"
+  },
+  {
+   "id": "jo-seijukuoudai",
+   "name": "成熟王台",
+   "reading": "せいじゅくおうだい",
+   "difficulty": 3,
+   "mapNode": "joou:oudai",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "もうすぐ 女王が 出てくる 王台"
+  },
+  {
+   "id": "jo-fugai",
+   "name": "王台の封蓋",
+   "reading": "おうだいのふうがい",
+   "difficulty": 3,
+   "mapNode": "joou:oudai",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "王台に ふたが される こと"
+  },
+  {
+   "id": "jo-ishoku",
+   "name": "王台の移植",
+   "reading": "おうだいのいしょく",
+   "difficulty": 3,
+   "mapNode": "joou:donyu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "王台を ほかの 群へ 移す"
+  },
+  {
+   "id": "jo-candy",
+   "name": "キャンディー",
+   "reading": "きゃんでぃー",
+   "difficulty": 3,
+   "mapNode": "joou:donyu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "王籠の 出口を ふさぐ 砂糖の かたまり"
+  },
+  {
+   "id": "jo-shizenkoshin",
+   "name": "自然更新",
+   "reading": "しぜんこうしん",
+   "difficulty": 3,
+   "mapNode": "joou:koushin",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "群が 自分で 女王を 入れかえる"
+  },
+  {
+   "id": "jo-bogun",
+   "name": "母群",
+   "reading": "ぼぐん",
+   "difficulty": 3,
+   "mapNode": "joou:jinko",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "分ける もとに なった 群"
+  },
+  {
+   "id": "jo-bunkatsugun",
+   "name": "分割群",
+   "reading": "ぶんかつぐん",
+   "difficulty": 3,
+   "mapNode": "joou:jinko",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "分けて できた 新しい 群"
+  },
+  {
+   "id": "jo-shizenbunpo",
+   "name": "自然分蜂",
+   "reading": "しぜんぶんぽう",
+   "difficulty": 3,
+   "mapNode": "joou:jinko",
+   "field": "繁殖",
+   "bee": "日本",
+   "note": "ニホンミツバチは おもに 分蜂で ふえる"
+  },
+  {
+   "id": "jo-kokushoku",
+   "name": "黒色種",
+   "reading": "こくしょくしゅ",
+   "difficulty": 3,
+   "mapNode": "joou:hinshu",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "ヨーロッパ北部の 黒っぽい 亜種"
+  },
+  {
+   "id": "jo-kinkojakusei",
+   "name": "近交弱勢",
+   "reading": "きんこうじゃくせい",
+   "difficulty": 3,
+   "mapNode": "joou:keito",
+   "field": "繁殖",
+   "bee": "共通",
+   "note": "近い 親せきどうしで 弱く なる こと"
+  },
+  {
+   "id": "jo-ikushu",
+   "name": "育種",
+   "reading": "いくしゅ",
+   "difficulty": 3,
+   "mapNode": "joou:keito",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "よい 系統を 作る こと"
+  },
+  {
+   "id": "jo-tanejoou",
+   "name": "種女王",
+   "reading": "たねじょおう",
+   "difficulty": 3,
+   "mapNode": "joou:keito",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "育種の もとに する 女王"
+  },
+  {
+   "id": "jo-nengoto",
+   "name": "年ごとの色",
+   "reading": "ねんごとのいろ",
+   "difficulty": 3,
+   "mapNode": "joou:keito",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "生まれた 年で 女王の しるしの 色を 変える"
+  },
+  {
+   "id": "jo-kobigun",
+   "name": "交尾群",
+   "reading": "こうびぐん",
+   "difficulty": 3,
+   "mapNode": "joou:kobi",
+   "field": "繁殖",
+   "bee": "西洋",
+   "note": "新女王を 交尾させる 小さな 群"
+  }
+ ],
+ "homu": [
+  {
+   "id": "hm-horitsu",
+   "name": "法律",
+   "reading": "ほうりつ",
+   "difficulty": 1,
+   "mapNode": "homu:shinkoho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "養蜂にも 守る 決まりが ある"
+  },
+  {
+   "id": "hm-todokede",
+   "name": "届け出",
+   "reading": "とどけで",
+   "difficulty": 1,
+   "mapNode": "homu:todoke",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "飼っている ことを 県に 知らせる"
+  },
+  {
+   "id": "hm-todofuken",
+   "name": "都道府県",
+   "reading": "とどうふけん",
+   "difficulty": 1,
+   "mapNode": "homu:todoke",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "届け出の 窓口"
+  },
+  {
+   "id": "hm-norin",
+   "name": "農林水産省",
+   "reading": "のうりんすいさんしょう",
+   "difficulty": 1,
+   "mapNode": "homu:shinkoho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "養蜂を 受けもつ 国の 役所"
+  },
+  {
+   "id": "hm-kachiku",
+   "name": "家畜",
+   "reading": "かちく",
+   "difficulty": 1,
+   "mapNode": "homu:densenho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ミツバチは 法律で 家畜に ふくまれる"
+  },
+  {
+   "id": "hm-shokuhin",
+   "name": "食品",
+   "reading": "しょくひん",
+   "difficulty": 1,
+   "mapNode": "homu:shokuhin",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "はちみつは 食品"
+  },
+  {
+   "id": "hm-hyoji",
+   "name": "表示",
+   "reading": "ひょうじ",
+   "difficulty": 1,
+   "mapNode": "homu:hyoji",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "びんに 書く 決まった 内容"
+  },
+  {
+   "id": "hm-rekishi",
+   "name": "歴史",
+   "reading": "れきし",
+   "difficulty": 1,
+   "mapNode": "homu:rekishi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "養蜂の 長い 歴史"
+  },
+  {
+   "id": "hm-egypt",
+   "name": "古代エジプト",
+   "reading": "こだいえじぷと",
+   "difficulty": 1,
+   "mapNode": "homu:rekishi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "昔から 養蜂を していた 国"
+  },
+  {
+   "id": "hm-hekiga",
+   "name": "壁画",
+   "reading": "へきが",
+   "difficulty": 1,
+   "mapNode": "homu:rekishi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "はちみつ集めを えがいた 昔の 絵"
+  },
+  {
+   "id": "hm-meiji",
+   "name": "明治時代",
+   "reading": "めいじじだい",
+   "difficulty": 1,
+   "mapNode": "homu:nihon",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "セイヨウミツバチが 日本に 入った 時代"
+  },
+  {
+   "id": "hm-kenkyu",
+   "name": "研究",
+   "reading": "けんきゅう",
+   "difficulty": 1,
+   "mapNode": "homu:kenkyu",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ミツバチの ふしぎを しらべる"
+  },
+  {
+   "id": "hm-nobel",
+   "name": "ノーベル賞",
+   "reading": "のーべるしょう",
+   "difficulty": 1,
+   "mapNode": "homu:kenkyu",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ダンスの 研究で 1973年に 受賞"
+  },
+  {
+   "id": "hm-nogyokoko",
+   "name": "農業高校",
+   "reading": "のうぎょうこうこう",
+   "difficulty": 1,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "養蜂を 学べる 学校"
+  },
+  {
+   "id": "hm-kenshu",
+   "name": "研修",
+   "reading": "けんしゅう",
+   "difficulty": 1,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "養蜂場で 学ぶ こと"
+  },
+  {
+   "id": "hm-koshukai",
+   "name": "講習会",
+   "reading": "こうしゅうかい",
+   "difficulty": 1,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "協会や 組合の 学びの 場"
+  },
+  {
+   "id": "hm-shikaku",
+   "name": "資格",
+   "reading": "しかく",
+   "difficulty": 1,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "養蜂家に 国家資格は 無い"
+  },
+  {
+   "id": "hm-yohojo",
+   "name": "養蜂場",
+   "reading": "ようほうじょう",
+   "difficulty": 1,
+   "mapNode": "homu:shigoto",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ミツバチを 飼う 場所"
+  },
+  {
+   "id": "hm-noka",
+   "name": "農家",
+   "reading": "のうか",
+   "difficulty": 1,
+   "mapNode": "homu:shigoto",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "受粉で ミツバチを 借りる 相手"
+  },
+  {
+   "id": "hm-hanbai",
+   "name": "販売",
+   "reading": "はんばい",
+   "difficulty": 1,
+   "mapNode": "homu:shigoto",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "はちみつを 売る しごと"
+  },
+  {
+   "id": "hm-shinkoho",
+   "name": "養蜂振興法",
+   "reading": "ようほうしんこうほう",
+   "difficulty": 2,
+   "mapNode": "homu:shinkoho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "1955年の 養蜂の 法律"
+  },
+  {
+   "id": "hm-shiikutodoke",
+   "name": "蜜蜂飼育届",
+   "reading": "みつばちしいくとどけ",
+   "difficulty": 2,
+   "mapNode": "homu:todoke",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "毎年 都道府県知事に 出す 届け"
+  },
+  {
+   "id": "hm-chiji",
+   "name": "都道府県知事",
+   "reading": "とどうふけんちじ",
+   "difficulty": 2,
+   "mapNode": "homu:todoke",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "届け出の あて先"
+  },
+  {
+   "id": "hm-maitoshi",
+   "name": "毎年の届出",
+   "reading": "まいとしのとどけで",
+   "difficulty": 2,
+   "mapNode": "homu:todoke",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "飼う 人は 毎年 届け出る"
+  },
+  {
+   "id": "hm-shumi",
+   "name": "趣味の養蜂",
+   "reading": "しゅみのようほう",
+   "difficulty": 2,
+   "mapNode": "homu:todoke",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "趣味でも 原則 届け出る"
+  },
+  {
+   "id": "hm-tenshi",
+   "name": "転飼",
+   "reading": "てんし",
+   "difficulty": 2,
+   "mapNode": "homu:tenshi",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "ミツバチを 移して 飼う こと"
+  },
+  {
+   "id": "hm-tenshikyoka",
+   "name": "転飼の許可",
+   "reading": "てんしのきょか",
+   "difficulty": 2,
+   "mapNode": "homu:tenshi",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "ほかの 県で 転飼する ときの 許可"
+  },
+  {
+   "id": "hm-densenho",
+   "name": "家畜伝染病予防法",
+   "reading": "かちくでんせんびょうよぼうほう",
+   "difficulty": 2,
+   "mapNode": "homu:densenho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "家畜の 病気を 広げない 法律"
+  },
+  {
+   "id": "hm-hotei",
+   "name": "法定伝染病",
+   "reading": "ほうていでんせんびょう",
+   "difficulty": 2,
+   "mapNode": "homu:densenho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "腐蛆病が あたる 病気の なかま"
+  },
+  {
+   "id": "hm-hoeijo",
+   "name": "家畜保健衛生所",
+   "reading": "かちくほけんえいせいじょ",
+   "difficulty": 2,
+   "mapNode": "homu:hoeijo",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ミツバチの 病気を 検査する 所"
+  },
+  {
+   "id": "hm-hyojiho",
+   "name": "食品表示法",
+   "reading": "しょくひんひょうじほう",
+   "difficulty": 2,
+   "mapNode": "homu:shokuhin",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "食品の 表示の 法律"
+  },
+  {
+   "id": "hm-eiseiho",
+   "name": "食品衛生法",
+   "reading": "しょくひんえいせいほう",
+   "difficulty": 2,
+   "mapNode": "homu:shokuhin",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "食品の 安全の 法律"
+  },
+  {
+   "id": "hm-genzairyo",
+   "name": "原材料名",
+   "reading": "げんざいりょうめい",
+   "difficulty": 2,
+   "mapNode": "homu:hyoji",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ラベルに 書く 中身の 名前"
+  },
+  {
+   "id": "hm-gensankoku",
+   "name": "原産国",
+   "reading": "げんさんこく",
+   "difficulty": 2,
+   "mapNode": "homu:hyoji",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "はちみつが とれた 国"
+  },
+  {
+   "id": "hm-langstroth",
+   "name": "ラングストロス",
+   "reading": "らんぐすとろす",
+   "difficulty": 2,
+   "mapNode": "homu:rekishi",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "1851年に 巣枠の 巣箱を 考えた 人"
+  },
+  {
+   "id": "hm-frisch",
+   "name": "フォン・フリッシュ",
+   "reading": "ふぉんふりっしゅ",
+   "difficulty": 2,
+   "mapNode": "homu:kenkyu",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ダンスの しくみを 見つけた 学者"
+  },
+  {
+   "id": "hm-denrai",
+   "name": "伝来",
+   "reading": "でんらい",
+   "difficulty": 2,
+   "mapNode": "homu:nihon",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "セイヨウミツバチが 日本へ 伝わった こと"
+  },
+  {
+   "id": "hm-kyokai",
+   "name": "日本養蜂協会",
+   "reading": "にほんようほうきょうかい",
+   "difficulty": 2,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "養蜂の 全国の 団体"
+  },
+  {
+   "id": "hm-kumiai",
+   "name": "養蜂組合",
+   "reading": "ようほうくみあい",
+   "difficulty": 2,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "都道府県の 養蜂家の 集まり"
+  },
+  {
+   "id": "hm-daigakko",
+   "name": "農業大学校",
+   "reading": "のうぎょうだいがっこう",
+   "difficulty": 2,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "農業を 学ぶ 学校"
+  },
+  {
+   "id": "hm-nogakubu",
+   "name": "農学部",
+   "reading": "のうがくぶ",
+   "difficulty": 2,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "大学で 農業を 学ぶ ところ"
+  },
+  {
+   "id": "hm-rokuji",
+   "name": "六次産業化",
+   "reading": "ろくじさんぎょうか",
+   "difficulty": 2,
+   "mapNode": "homu:shigoto",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "育てて 加工して 売る こと"
+  },
+  {
+   "id": "hm-kafunkohai",
+   "name": "花粉交配",
+   "reading": "かふんこうはい",
+   "difficulty": 2,
+   "mapNode": "homu:shigoto",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "作物の 受粉の 仕事"
+  },
+  {
+   "id": "hm-gyosha",
+   "name": "養蜂業者",
+   "reading": "ようほうぎょうしゃ",
+   "difficulty": 2,
+   "mapNode": "homu:shigoto",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "養蜂を 仕事に する 人"
+  },
+  {
+   "id": "hm-kiyaku",
+   "name": "公正競争規約",
+   "reading": "こうせいきょうそうきやく",
+   "difficulty": 2,
+   "mapNode": "homu:hyoji",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "はちみつ類の 表示の 業界の 決まり"
+  },
+  {
+   "id": "hm-sekokisoku",
+   "name": "施行規則",
+   "reading": "しこうきそく",
+   "difficulty": 3,
+   "mapNode": "homu:todoke",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "届け出の 細かい 決まり"
+  },
+  {
+   "id": "hm-kaisei",
+   "name": "改正",
+   "reading": "かいせい",
+   "difficulty": 3,
+   "mapNode": "homu:shinkoho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "2013年 施行の 改正で 趣味も 届け出に"
+  },
+  {
+   "id": "hm-mitsugenhogo",
+   "name": "蜜源の保護",
+   "reading": "みつげんのほご",
+   "difficulty": 3,
+   "mapNode": "homu:shinkoho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "蜜源植物を 守り ふやす こと"
+  },
+  {
+   "id": "hm-haichichosei",
+   "name": "蜂群配置の調整",
+   "reading": "ほうぐんはいちのちょうせい",
+   "difficulty": 3,
+   "mapNode": "homu:tenshi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "巣箱が 集まりすぎないよう 調整する"
+  },
+  {
+   "id": "hm-tenshisaki",
+   "name": "転飼先",
+   "reading": "てんしさき",
+   "difficulty": 3,
+   "mapNode": "homu:tenshi",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "移した 巣箱を おく 都道府県"
+  },
+  {
+   "id": "hm-kyokashinsei",
+   "name": "許可申請",
+   "reading": "きょかしんせい",
+   "difficulty": 3,
+   "mapNode": "homu:tenshi",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "転飼の 許可を もとめる 手続き"
+  },
+  {
+   "id": "hm-kachikudensen",
+   "name": "家畜伝染病",
+   "reading": "かちくでんせんびょう",
+   "difficulty": 3,
+   "mapNode": "homu:densenho",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "法定伝染病の 法律での よび名"
+  },
+  {
+   "id": "hm-tachiiri",
+   "name": "立入検査",
+   "reading": "たちいりけんさ",
+   "difficulty": 3,
+   "mapNode": "homu:hoeijo",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "役所の 人が 巣箱を しらべる"
+  },
+  {
+   "id": "hm-boekiin",
+   "name": "家畜防疫員",
+   "reading": "かちくぼうえきいん",
+   "difficulty": 3,
+   "mapNode": "homu:hoeijo",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "家畜の 病気を しらべる 役の 人"
+  },
+  {
+   "id": "hm-mitsurui",
+   "name": "はちみつ類",
+   "reading": "はちみつるい",
+   "difficulty": 3,
+   "mapNode": "homu:hyoji",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "規約で あつかう はちみつの なかま"
+  },
+  {
+   "id": "hm-katomitsu",
+   "name": "加糖はちみつ",
+   "reading": "かとうはちみつ",
+   "difficulty": 3,
+   "mapNode": "homu:hyoji",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "糖を くわえた はちみつの 表示"
+  },
+  {
+   "id": "hm-kyogikai",
+   "name": "公正取引協議会",
+   "reading": "こうせいとりひききょうぎかい",
+   "difficulty": 3,
+   "mapNode": "homu:hyoji",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "はちみつの 表示の 規約を 運営する 団体"
+  },
+  {
+   "id": "hm-anzen",
+   "name": "食品安全",
+   "reading": "しょくひんあんぜん",
+   "difficulty": 3,
+   "mapNode": "homu:shokuhin",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "食べる 人の 安全を 守る"
+  },
+  {
+   "id": "hm-trace",
+   "name": "トレーサビリティ",
+   "reading": "とれーさびりてぃ",
+   "difficulty": 3,
+   "mapNode": "homu:shokuhin",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "どこで とれたか たどれる こと"
+  },
+  {
+   "id": "hm-kadowaku",
+   "name": "可動巣枠",
+   "reading": "かどうすわく",
+   "difficulty": 3,
+   "mapNode": "homu:rekishi",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "取りだせる 巣枠の しくみ"
+  },
+  {
+   "id": "hm-kodogaku",
+   "name": "動物行動学",
+   "reading": "どうぶつこうどうがく",
+   "difficulty": 3,
+   "mapNode": "homu:kenkyu",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "動物の ふるまいを しらべる 学問"
+  },
+  {
+   "id": "hm-igakusho",
+   "name": "生理学・医学賞",
+   "reading": "せいりがくいがくしょう",
+   "difficulty": 3,
+   "mapNode": "homu:kenkyu",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "フォン・フリッシュが うけた ノーベル賞"
+  },
+  {
+   "id": "hm-kotoba",
+   "name": "ミツバチの言葉",
+   "reading": "みつばちのことば",
+   "difficulty": 3,
+   "mapNode": "homu:kenkyu",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "ダンスで つたえあう しくみ"
+  },
+  {
+   "id": "hm-washiki",
+   "name": "和式養蜂",
+   "reading": "わしきようほう",
+   "difficulty": 3,
+   "mapNode": "homu:nihon",
+   "field": "法律・しごと",
+   "bee": "日本",
+   "note": "ニホンミツバチの 昔ながらの 飼いかた"
+  },
+  {
+   "id": "hm-dento",
+   "name": "伝統養蜂",
+   "reading": "でんとうようほう",
+   "difficulty": 3,
+   "mapNode": "homu:nihon",
+   "field": "法律・しごと",
+   "bee": "日本",
+   "note": "地域に 伝わる 養蜂"
+  },
+  {
+   "id": "hm-shoki",
+   "name": "日本書紀",
+   "reading": "にほんしょき",
+   "difficulty": 3,
+   "mapNode": "homu:nihon",
+   "field": "法律・しごと",
+   "bee": "日本",
+   "note": "日本の 養蜂の 古い 記録が ある 本"
+  },
+  {
+   "id": "hm-nihontodoke",
+   "name": "ニホンミツバチの届出",
+   "reading": "にほんみつばちのとどけで",
+   "difficulty": 3,
+   "mapNode": "homu:todoke",
+   "field": "法律・しごと",
+   "bee": "日本",
+   "note": "ニホンミツバチも 届け出る"
+  },
+  {
+   "id": "hm-kenshusei",
+   "name": "研修生",
+   "reading": "けんしゅうせい",
+   "difficulty": 3,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "養蜂場で 学ぶ 人"
+  },
+  {
+   "id": "hm-shuno",
+   "name": "就農",
+   "reading": "しゅうのう",
+   "difficulty": 3,
+   "mapNode": "homu:michi",
+   "field": "法律・しごと",
+   "bee": "共通",
+   "note": "農業を 仕事に する こと"
+  },
+  {
+   "id": "hm-kohaiyo",
+   "name": "交配用ミツバチ",
+   "reading": "こうはいようみつばち",
+   "difficulty": 3,
+   "mapNode": "homu:shigoto",
+   "field": "法律・しごと",
+   "bee": "西洋",
+   "note": "受粉の ために 貸す ミツバチ"
+  }
+ ]
+}

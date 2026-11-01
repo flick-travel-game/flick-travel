@@ -2520,33 +2520,36 @@ recoverFromServer();
    /api/flick/score に 送った ときに 置かれる)が ついているので、**この スマホに 人(プロフィール)が 1人も いない とき**だけ 聞きに 行く。
    ⚠️ 取りもどすのは なまえ・学年・旅ごとの 自己ベスト(ひらがな あり の ほう)だけ。図鑑の「出会った ことば」などは 戻らない。
    ⚠️ kazutomo.app で ひらいた ときだけ(github.io の 写しでは クッキーが 届かない)。1つの タブで 1回だけ */
+/* ⚠️ 2026-11-01 から **人が いても 聞く**(ログインしている おうちは owner の 記録も かえってくる。021)。
+   ・自己ベストは **無い ところにだけ** 入れる(スマホの 記録を 上書きしない)。写真も 無い 人にだけ
+   ・人(プロフィール)を 作るのは **1人も いない とき だけ**(いままでどおり) */
 function recoverFromServer(){
   try{
     if(location.origin !== new URL(RANK_API).origin) return;
-    if(profiles().length) return;
     if(sessionStorage.getItem("flick-recovered") === "1") return;
   }catch(e){ return; }
   fetch(RANK_API + "/recover", { cache:"no-store" }).then(r => r.ok ? r.json() : null).then(d => {
     if(!d || typeof d !== "object") return;
     try{ sessionStorage.setItem("flick-recovered", "1"); }catch(e){}
-    if(profiles().length) return;  // 聞いている あいだに 人が 作られていたら さわらない
     const ok = v => typeof v === "string" && /^[A-Za-z0-9_-]{6,64}$/.test(v);
-    const ps = (Array.isArray(d.flickPlayers) ? d.flickPlayers : []).filter(p => p && ok(p.id) && typeof p.name === "string" && p.name.trim()).slice(0, 6)
-      .map(p => ({ id:p.id, name:p.name.trim().slice(0, 8), grade:GRADE_NAME[p.grade] ? p.grade : "e1" }));
-    if(!ps.length) return;
+    let changed = false;
     for(const b of (Array.isArray(d.flick) ? d.flick : [])){
       if(!b || !ok(b.pid) || typeof b.mode !== "string" || !/^[a-z0-9]+$/.test(b.mode) || typeof b.level !== "number" || typeof b.ms !== "number" || b.ms <= 0) continue;
       const k = "flick-best-p" + b.pid + "-" + b.mode + "-" + b.level;
-      try{ if(localStorage.getItem(k) === null) localStorage.setItem(k, (b.ms / 1000).toFixed(2)); }catch(e){}
+      try{ if(localStorage.getItem(k) === null){ localStorage.setItem(k, (b.ms / 1000).toFixed(2)); changed = true; } }catch(e){}
     }
-    // あずかっていた アイコンの 写真も もどす(pid → dataUrl)
+    // あずかっていた アイコンの 写真も もどす(pid → dataUrl。無い 人にだけ)
     if(d.photos && typeof d.photos === "object"){
       for(const [pid, data] of Object.entries(d.photos)){
-        if(ok(pid) && typeof data === "string" && data.startsWith("data:image/jpeg;base64,") && data.length <= 60000){ try{ localStorage.setItem("flick-photo-" + pid, data); }catch(e){} }
+        if(ok(pid) && typeof data === "string" && data.startsWith("data:image/jpeg;base64,") && data.length <= 60000 && !photoOf(pid)){ try{ localStorage.setItem("flick-photo-" + pid, data); changed = true; }catch(e){} }
       }
     }
-    saveProfiles(ps); store("flick-profile", ps[0].id); recMemo = null;
-    showBest();
+    if(!profiles().length){  // 人が 1人も いない ときだけ 人を 作る(聞いている あいだに 作られていたら さわらない)
+      const ps = (Array.isArray(d.flickPlayers) ? d.flickPlayers : []).filter(p => p && ok(p.id) && typeof p.name === "string" && p.name.trim()).slice(0, 6)
+        .map(p => ({ id:p.id, name:p.name.trim().slice(0, 8), grade:GRADE_NAME[p.grade] ? p.grade : "e1" }));
+      if(ps.length){ saveProfiles(ps); store("flick-profile", ps[0].id); changed = true; }
+    }
+    if(changed){ recMemo = null; showBest(); drawProfBtn(); }
   }).catch(() => {});
 }
 fetchPlan(true).then(() => famSync());  // できることを かずとも に 聞く(かえってきたら グラフ・おしらせを かきなおす)。⚠️ ログインは しるし なしで 変わるので 毎回 聞く

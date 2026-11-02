@@ -828,6 +828,97 @@
   "description": "ほかの 国や 地域から 人の 手で 入って きた 生きものです。セイヨウミツバチは 明治時代に 日本へ 来ました。いまは 養蜂家が 巣箱で 大切に 飼って います。"
  },
  {
+  "id": "kh-hanabachi",
+  "name": "ハナバチ",
+  "reading": "はなばち",
+  "journey": "kihon",
+  "category": "ミツバチの なかま",
+  "difficulty": 2,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🌼",
+  "mapNode": "kihon:jufun",
+  "relatedTerms": [
+   "kh-mitsubachi",
+   "kh-jufun"
+  ],
+  "bee": "共通",
+  "description": "花の 蜜と 花粉で 子を 育てる ハチの なかまの よび名です。ミツバチも ハナバチの ひとつで、ほかに マルハナバチや クマバチなども います。花と いっしょに くらす ハチたちです。"
+ },
+ {
+  "id": "kh-su-ondo",
+  "name": "巣の温度",
+  "reading": "すのおんど",
+  "journey": "kihon",
+  "category": "巣の つくり",
+  "difficulty": 2,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-ikujiken",
+   "kh-hoji"
+  ],
+  "bee": "共通",
+  "description": "子育て中の 巣の まん中は、およそ 34〜35℃に たもたれて います。外が 暑くても 寒くても、働き蜂が あたためたり 冷やしたり して、幼虫や さなぎが 育ちやすい 温度に して います。"
+ },
+ {
+  "id": "kh-mizukumi",
+  "name": "水くみ蜂",
+  "reading": "みずくみばち",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 2,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kihon:hataraki",
+  "relatedTerms": [
+   "kh-hatarakibachi",
+   "kh-bungyo"
+  ],
+  "bee": "共通",
+  "description": "水を 運ぶ 役目の 働き蜂です。暑い 日は 運んだ 水で 巣を 冷やし、幼虫の えさを うすめる ときにも 使います。巣箱の 近くに 水場が あると、ハチが 遠くまで 行かずに すみます。"
+ },
+ {
+  "id": "kh-bunpo-kisetsu",
+  "name": "分蜂の季節",
+  "reading": "ぶんぽうのきせつ",
+  "journey": "kihon",
+  "category": "ふえる しくみ",
+  "difficulty": 2,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "kihon:bunpo",
+  "relatedTerms": [
+   "kh-bunpo",
+   "kh-bunpogun"
+  ],
+  "bee": "西洋",
+  "description": "分蜂が 起きやすい 季節で、おもに 春から 初夏です。花が たくさん さいて 群が 大きく なり、巣が せまく なる ころに 起きます。養蜂家は この 季節に 巣箱を よく 見まわります。"
+ },
+ {
+  "id": "kh-kafun-yakume",
+  "name": "花粉の役目",
+  "reading": "かふんのやくめ",
+  "journey": "kihon",
+  "category": "花と みつ",
+  "difficulty": 2,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🍼",
+  "mapNode": "kihon:kafun",
+  "relatedTerms": [
+   "kh-kafun",
+   "kh-tanpaku",
+   "kh-beebread"
+  ],
+  "bee": "共通",
+  "description": "花粉は、ミツバチに とって タンパク質の もとです。育児蜂は 花粉を 食べて、幼虫の えさを つくります。花粉が 足りないと 子育てが すすまないので、春の 花粉は とても 大切です。"
+ },
+ {
   "id": "kh-choukotai",
   "name": "超個体",
   "reading": "ちょうこたい",
@@ -1278,5 +1369,638 @@
   ],
   "bee": "共通",
   "description": "なかまどうしで 知らせあう ことです。ミツバチは ダンスで 花の 場所を、においで 女王の ようすや あぶない ことを 伝えあって います。"
+ },
+ {
+  "id": "kh-hatsunetsu",
+  "name": "発熱行動",
+  "reading": "はつねつこうどう",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-su-ondo",
+   "kh-ikujiken"
+  ],
+  "bee": "共通",
+  "description": "飛ぶ ための 胸の 筋肉を ふるわせて、熱を 出す ことです。はねは 動かさずに 体を あたため、さなぎや 冬の 群を 温めます。ミツバチは 自分で 熱を つくれる 昆虫なのです。"
+ },
+ {
+  "id": "kh-kika",
+  "name": "気化冷却",
+  "reading": "きかれいきゃく",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-mizukumi",
+   "kh-su-ondo"
+  ],
+  "bee": "共通",
+  "description": "巣の 中に 水を うすく ぬり、はねで あおいで 蒸発させて 冷やす しくみです。水が 蒸発する ときに 熱を うばうので、夏の 巣も 涼しく たもてます。人が あせを かくのと 同じ しくみです。"
+ },
+ {
+  "id": "kh-torimaki",
+  "name": "女王の取り巻き",
+  "reading": "じょおうのとりまき",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "👑",
+  "mapNode": "kihon:joou",
+  "relatedTerms": [
+   "kh-joouba",
+   "kh-joobusshitsu"
+  ],
+  "bee": "共通",
+  "description": "女王の まわりを かこんで、えさを あげたり 体を なめたり する 働き蜂たちです。女王の においを 体に つけて 巣の 中を 歩き、群 全体に「女王は 元気」と 伝えます。"
+ },
+ {
+  "id": "kh-ifu",
+  "name": "異父姉妹",
+  "reading": "いふしまい",
+  "journey": "kihon",
+  "category": "ふえる しくみ",
+  "difficulty": 3,
+  "field": "繁殖",
+  "type": "concept",
+  "emoji": "👭",
+  "mapNode": "kihon:colony",
+  "relatedTerms": [
+   "kh-kobi",
+   "kh-hanbaisu"
+  ],
+  "bee": "共通",
+  "description": "母は 同じで、父が ちがう 姉妹の ことです。女王は 空で 何びきもの 雄蜂と 出会うので、ひとつの 群には 父の ちがう 働き蜂が まざって います。そのぶん 群の 性質が ゆたかに なります。"
+ },
+ {
+  "id": "kh-ransou",
+  "name": "働き蜂の卵巣",
+  "reading": "はたらきばちのらんそう",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "からだ",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "kihon:hataraki",
+  "relatedTerms": [
+   "kh-joobusshitsu",
+   "kh-hojiph",
+   "kh-museiran"
+  ],
+  "bee": "共通",
+  "description": "働き蜂も 卵巣を もって いますが、ふだんは 育ちません。女王物質と 幼虫の においが 発達を おさえて いるからです。女王が いなく なると 卵巣が 育ち、無精卵を 産む ことが あります。"
+ },
+ {
+  "id": "kh-hojiph",
+  "name": "蜂児フェロモン",
+  "reading": "ほうじふぇろもん",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "からだ",
+  "type": "concept",
+  "emoji": "👶",
+  "mapNode": "kihon:colony",
+  "relatedTerms": [
+   "kh-hoji",
+   "kh-ransou"
+  ],
+  "bee": "共通",
+  "description": "幼虫や さなぎが 出す においです。働き蜂に 子育てを うながし、働き蜂の 卵巣の 発達も おさえます。子どもの においが 群の 動きを 決めて いるのです。"
+ },
+ {
+  "id": "kh-ishikettei",
+  "name": "集団意思決定",
+  "reading": "しゅうだんいしけってい",
+  "journey": "kihon",
+  "category": "ふえる しくみ",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🗳",
+  "mapNode": "kihon:bunpo",
+  "relatedTerms": [
+   "kh-tansakubachi",
+   "kh-bunpogun",
+   "kh-teisoku"
+  ],
+  "bee": "共通",
+  "description": "分蜂群が 新しい すみかを みんなで 決める しくみです。探索蜂が 見つけた 場所を ダンスで 知らせ、よい 場所ほど 多くの ハチが 見に 行きます。決める リーダーは いません。"
+ },
+ {
+  "id": "kh-teisoku",
+  "name": "定足数",
+  "reading": "ていそくすう",
+  "journey": "kihon",
+  "category": "ふえる しくみ",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kihon:bunpo",
+  "relatedTerms": [
+   "kh-ishikettei",
+   "kh-tansakubachi"
+  ],
+  "bee": "共通",
+  "description": "すみかの 候補地に 集まった 探索蜂の 数が、ある 数を こえた ときに 行き先が 決まる しくみです。会議で 人数が そろうと 決められるのと 似て いるので、この 名前で よばれます。"
+ },
+ {
+  "id": "kh-piping",
+  "name": "パイピング",
+  "reading": "ぱいぴんぐ",
+  "journey": "kihon",
+  "category": "ふえる しくみ",
+  "difficulty": 3,
+  "field": "繁殖",
+  "type": "concept",
+  "emoji": "🎺",
+  "mapNode": "kihon:joou",
+  "relatedTerms": [
+   "kh-joouba",
+   "kh-bunpo"
+  ],
+  "bee": "共通",
+  "description": "女王が 出す、笛の ような 音です。新しい 女王が 生まれる ころや 分蜂の ころに、巣箱に 耳を あてると 聞こえる ことが あります。「トゥーッ」と ひびく ふしぎな 音です。"
+ },
+ {
+  "id": "kh-oomitsu",
+  "name": "オオミツバチ",
+  "reading": "おおみつばち",
+  "journey": "kihon",
+  "category": "ミツバチの なかま",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-komitsu",
+   "kh-zoku"
+  ],
+  "bee": "共通",
+  "description": "アジアの 南に すむ 大きな ミツバチです。木の 高い 枝や がけに、1枚だけの 大きな 巣を 外に むき出しで つくります。日本には すんで いません。"
+ },
+ {
+  "id": "kh-komitsu",
+  "name": "コミツバチ",
+  "reading": "こみつばち",
+  "journey": "kihon",
+  "category": "ミツバチの なかま",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🌿",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-oomitsu",
+   "kh-zoku"
+  ],
+  "bee": "共通",
+  "description": "アジアの 南に すむ、とても 小さな ミツバチです。木の 枝を つつむ ように、手の ひらほどの 1枚の 巣を つくります。日本には すんで いません。"
+ },
+ {
+  "id": "kh-judo",
+  "name": "樹洞",
+  "reading": "じゅどう",
+  "journey": "kihon",
+  "category": "巣の つくり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🌲",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-yaseigun",
+   "kh-nihon"
+  ],
+  "bee": "共通",
+  "description": "木の 幹に できた ほら穴、うろの ことです。野生の ミツバチは 樹洞の 中に 巣を つくり、雨や 寒さを ふせぎます。巣箱は この 樹洞を まねた 家とも 言えます。"
+ },
+ {
+  "id": "kh-katamuki",
+  "name": "巣房の傾き",
+  "reading": "すぼうのかたむき",
+  "journey": "kihon",
+  "category": "巣の つくり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-subo",
+   "kh-chomitsu"
+  ],
+  "bee": "共通",
+  "description": "巣房は 横向きですが、入口が 少し 上を 向く ように かたむいて います。蜜が こぼれにくく なる ためと 言われて きましたが、くわしい わけは いまも 研究されて います。"
+ },
+ {
+  "id": "kh-hatarakisubo",
+  "name": "働き蜂巣房",
+  "reading": "はたらきばちすぼう",
+  "journey": "kihon",
+  "category": "巣の つくり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-obachisubo",
+   "kh-subo"
+  ],
+  "bee": "共通",
+  "description": "働き蜂が 育つ 巣房で、巣の 中で いちばん 多い 小さめの へやです。雄蜂巣房より ひとまわり 小さく、ふたも 平らです。蜜や 花粉を ためる ときにも 使われます。"
+ },
+ {
+  "id": "kh-ikosubo",
+  "name": "移行巣房",
+  "reading": "いこうすぼう",
+  "journey": "kihon",
+  "category": "巣の つくり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-hatarakisubo",
+   "kh-obachisubo"
+  ],
+  "bee": "共通",
+  "description": "働き蜂巣房と 雄蜂巣房の さかいめや 巣の ふちに できる、形の そろわない 巣房です。大きさの ちがう へやを つなぐ ために、ハチが 形を 少しずつ かえて つくります。"
+ },
+ {
+  "id": "kh-kafunken",
+  "name": "花粉圏",
+  "reading": "かふんけん",
+  "journey": "kihon",
+  "category": "巣の つくり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "kihon:kafun",
+  "relatedTerms": [
+   "kh-ikujiken",
+   "kh-chomitsuken",
+   "kh-beebread"
+  ],
+  "bee": "共通",
+  "description": "巣板の 中で、花粉が ためられる 帯の ような ところです。まん中の 育児圏と 上の 貯蜜圏の あいだに できる ことが 多く、育児蜂が すぐ 取りに 行けます。"
+ },
+ {
+  "id": "kh-shunen",
+  "name": "群の周年変化",
+  "reading": "ぐんのしゅうねんへんか",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "kihon:colony",
+  "relatedTerms": [
+   "kh-gunsei",
+   "kh-oidashi"
+  ],
+  "bee": "西洋",
+  "description": "1年の 中で 群の 大きさが かわる ようすです。春に 子育てが ふえて 大きく なり、秋には 雄蜂が いなく なり、冬は 小さく まとまって 春を 待ちます。"
+ },
+ {
+  "id": "kh-policing",
+  "name": "ワーカーポリシング",
+  "reading": "わーかーぽりしんぐ",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "👮",
+  "mapNode": "kihon:colony",
+  "relatedTerms": [
+   "kh-ransou",
+   "kh-museiran"
+  ],
+  "bee": "共通",
+  "description": "働き蜂が 産んだ 卵を、ほかの 働き蜂が 見つけて とりのぞく ふるまいです。女王の 卵と においで 見わけて いると 考えられ、群の 子は ほぼ 女王の 子に なります。"
+ },
+ {
+  "id": "kh-junan",
+  "name": "分業の柔軟性",
+  "reading": "ぶんぎょうのじゅうなんせい",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "kihon:hataraki",
+  "relatedTerms": [
+   "kh-bungyo",
+   "kh-hatarakibachi"
+  ],
+  "bee": "共通",
+  "description": "足りない しごとが あると、働き蜂が 日齢に かかわらず 役目を かえられる ことです。若い ハチが 早めに 外へ 出たり、外で 働く ハチが 子育てに もどったり します。"
+ },
+ {
+  "id": "kh-drift",
+  "name": "ドリフト",
+  "reading": "どりふと",
+  "journey": "kihon",
+  "category": "養蜂",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "kihon:yoho",
+  "relatedTerms": [
+   "kh-subako",
+   "kh-kiso"
+  ],
+  "bee": "西洋",
+  "description": "ハチが まちがえて となりの 巣箱に 入って しまう ことです。同じ 形の 巣箱が 一列に ならぶと 起きやすく、巣箱の 向きや 色を かえると へらせます。"
+ },
+ {
+  "id": "kh-kumabachi",
+  "name": "クマバチ",
+  "reading": "くまばち",
+  "journey": "kihon",
+  "category": "ミツバチの なかま",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🐻",
+  "mapNode": "kihon:jufun",
+  "relatedTerms": [
+   "kh-hanabachi",
+   "kh-yaseihana"
+  ],
+  "bee": "共通",
+  "description": "春に 花の まわりを ブーンと 飛ぶ、大きくて 黒い ハナバチです。胸に 黄色い 毛が あります。見た目は 大きいですが とても おとなしく、フジなどの 花の 受粉を 助けます。"
+ },
+ {
+  "id": "kh-tayosei",
+  "name": "生物多様性",
+  "reading": "せいぶつたようせい",
+  "journey": "kihon",
+  "category": "花と みつ",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🦋",
+  "mapNode": "kihon:jufun",
+  "relatedTerms": [
+   "kh-seitaikei",
+   "kh-jufun"
+  ],
+  "bee": "共通",
+  "description": "いろいろな 生きものが、つながりあって くらして いる ことです。ミツバチや ほかの 虫が 花を 受粉させ、実や たねが できて、それを 食べる 生きものも くらして いけます。"
+ },
+ {
+  "id": "kh-yaseihana",
+  "name": "野生ハナバチ",
+  "reading": "やせいはなばち",
+  "journey": "kihon",
+  "category": "ミツバチの なかま",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🐝",
+  "mapNode": "kihon:jufun",
+  "relatedTerms": [
+   "kh-hanabachi",
+   "kh-kumabachi"
+  ],
+  "bee": "共通",
+  "description": "マルハナバチや ヒメハナバチなど、野山で くらす ハナバチの なかまです。1ぴきの メスだけで 巣を つくる 種類も 多く、ミツバチと いっしょに 花や 作物の 受粉を 支えて います。"
+ },
+ {
+  "id": "kh-genchi",
+  "name": "原産地",
+  "reading": "げんさんち",
+  "journey": "kihon",
+  "category": "ミツバチの なかま",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "kihon:seiyo",
+  "relatedTerms": [
+   "kh-seiyo",
+   "kh-gairaishu"
+  ],
+  "bee": "西洋",
+  "description": "その 生きものが もともと すんで いた 土地です。セイヨウミツバチの 原産地は ヨーロッパや アフリカ、中東の あたりで、そこから 人の 手で 世界中に 広まりました。"
+ },
+ {
+  "id": "kh-kioku",
+  "name": "時間の記憶",
+  "reading": "じかんのきおく",
+  "journey": "kihon",
+  "category": "花と みつ",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "kihon:mitsu",
+  "relatedTerms": [
+   "kh-houka",
+   "kh-teikasei"
+  ],
+  "bee": "共通",
+  "description": "花が 蜜を 出す 時こくを おぼえて、その 時間に 合わせて 出かける 力です。朝だけ 蜜を 出す 花には 朝に 通います。ミツバチは 体の 中に 時計を もって いるのです。"
+ },
+ {
+  "id": "kh-nioigaku",
+  "name": "においの学習",
+  "reading": "においのがくしゅう",
+  "journey": "kihon",
+  "category": "花と みつ",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "kihon:mitsu",
+  "relatedTerms": [
+   "kh-teikasei",
+   "kh-kioku"
+  ],
+  "bee": "共通",
+  "description": "花の においと 蜜を むすびつけて おぼえる ことです。巣に 帰った ハチの 体や 蜜の においから、なかまも どの 花が よいかを 知る ことが できます。"
+ },
+ {
+  "id": "kh-suniori",
+  "name": "巣のにおい",
+  "reading": "すのにおい",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "kihon:colony",
+  "relatedTerms": [
+   "kh-colony",
+   "kh-dentatsu"
+  ],
+  "bee": "共通",
+  "description": "群ごとに ちがう、巣の においです。巣門を 守る 門番の ハチは この においで、なかまと よその ハチを 見わけます。においが 家族の 合いことばに なって いるのです。"
+ },
+ {
+  "id": "kh-harinashi",
+  "name": "ハリナシバチ",
+  "reading": "はりなしばち",
+  "journey": "kihon",
+  "category": "ミツバチの なかま",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🍯",
+  "mapNode": "kihon:mitsu",
+  "relatedTerms": [
+   "kh-hanabachi",
+   "kh-zoku"
+  ],
+  "bee": "共通",
+  "description": "あたたかい 国に すむ、針が 小さくて 刺さない ハナバチの なかまです。ミツバチと 同じ ように 群で くらし、はちみつを つくります。ミツバチとは 別の なかまで、巣の 形も ちがいます。"
+ },
+ {
+  "id": "kh-furue",
+  "name": "震えダンス",
+  "reading": "ふるえだんす",
+  "journey": "kihon",
+  "category": "花と みつ",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🫨",
+  "mapNode": "kihon:mitsu",
+  "relatedTerms": [
+   "kh-uketori",
+   "kh-dentatsu"
+  ],
+  "bee": "共通",
+  "description": "巣に 帰った 採餌蜂が、体を ふるわせながら 歩きまわる ダンスです。蜜を 受けとる なかまが 足りない ときに おどり、「受けとり役を ふやして」と 知らせます。"
+ },
+ {
+  "id": "kh-uketori",
+  "name": "受け取り蜂",
+  "reading": "うけとりばち",
+  "journey": "kihon",
+  "category": "花と みつ",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "kihon:mitsu",
+  "relatedTerms": [
+   "kh-furue",
+   "kh-chomitsu"
+  ],
+  "bee": "共通",
+  "description": "外から 帰った 採餌蜂から、口うつしで 蜜を 受けとる 若い 働き蜂です。蜜を 巣房に ためながら、水分を とばして はちみつに 近づけて いきます。"
+ },
+ {
+  "id": "kh-saimitsugun",
+  "name": "採蜜群",
+  "reading": "さいみつぐん",
+  "journey": "kihon",
+  "category": "養蜂",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🍯",
+  "mapNode": "kihon:yoho",
+  "relatedTerms": [
+   "kh-yohoka",
+   "kh-gunsei"
+  ],
+  "bee": "西洋",
+  "description": "はちみつを とる ために、強く 大きく 育てた 群です。花が たくさん さく 季節に 働き蜂が そろう ように、春から 群を 育てて おきます。"
+ },
+ {
+  "id": "kh-hojo",
+  "name": "蜂場",
+  "reading": "ほうじょう",
+  "journey": "kihon",
+  "category": "養蜂",
+  "difficulty": 3,
+  "field": "法律・しごと",
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "kihon:yoho",
+  "relatedTerms": [
+   "kh-subako",
+   "kh-yohogyo"
+  ],
+  "bee": "共通",
+  "description": "巣箱を 置いて いる 場所の ことです。日当たりや 水場、近くの 花、まわりの 家との きょりを 考えて えらびます。いくつかの 蜂場を もつ 養蜂家も います。"
+ },
+ {
+  "id": "kh-sushitsudo",
+  "name": "巣の湿度",
+  "reading": "すのしつど",
+  "journey": "kihon",
+  "category": "巣の つくり",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "💦",
+  "mapNode": "kihon:su",
+  "relatedTerms": [
+   "kh-su-ondo",
+   "kh-kika"
+  ],
+  "bee": "共通",
+  "description": "巣の 中の しめりけの ことです。蜜から 水分を とばすと 巣は しめりやすく なりますが、働き蜂は はねで あおいで 空気を 入れかえ、子育てに ほどよい しめりけを たもつと 考えられて います。"
+ },
+ {
+  "id": "kh-seikaku",
+  "name": "群の性格",
+  "reading": "ぐんのせいかく",
+  "journey": "kihon",
+  "category": "群と 役わり",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "😊",
+  "mapNode": "kihon:yoho",
+  "relatedTerms": [
+   "kh-gunsei",
+   "kh-joouba"
+  ],
+  "bee": "西洋",
+  "description": "おとなしい、よく 集める など、群ごとに ちがう ふるまいの ことです。働き蜂は みんな 女王の 子なので、女王の 系統で かわります。おとなしい 系統を えらぶと 世話が しやすく なります。"
+ },
+ {
+  "id": "kh-oidashi",
+  "name": "雄蜂の追い出し",
+  "reading": "おばちのおいだし",
+  "journey": "kihon",
+  "category": "ふえる しくみ",
+  "difficulty": 3,
+  "field": "生態",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "kihon:obachi",
+  "relatedTerms": [
+   "kh-obachi",
+   "kh-shunen"
+  ],
+  "bee": "西洋",
+  "description": "秋に 花が へると、働き蜂が 雄蜂を 巣の 外へ 出す ことです。冬の あいだ 蜜を 大事に する ための 群の しくみで、雄蜂は ここで 役目を 終えます。春に なると また 育てられます。"
  }
 ]

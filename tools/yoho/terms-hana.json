@@ -811,6 +811,96 @@
   "description": "花の 種類で ちがう 花粉の 色です。黄色・オレンジ・白・こい赤など いろいろで、花粉だんごの 色から どの 花に 行ったか 見当が つきます。"
  },
  {
+  "id": "hn-kaki",
+  "name": "カキ",
+  "reading": "かき",
+  "journey": "hana",
+  "category": "作物と 受粉",
+  "difficulty": 2,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🟠",
+  "mapNode": "hana:sakumotsu",
+  "relatedTerms": [
+   "hn-mitsugenshokubutsu",
+   "hn-ketsujitsu"
+  ],
+  "bee": "共通",
+  "description": "秋に 実る 果物の 木で、初夏に クリーム色の 小さな 花を さかせます。花は 下向きで 目立ちませんが、蜜が 多く、ミツバチが よく 集まる 蜜源です。"
+ },
+ {
+  "id": "hn-yamazakura",
+  "name": "ヤマザクラ",
+  "reading": "やまざくら",
+  "journey": "hana",
+  "category": "春の 花",
+  "difficulty": 2,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "hana:haru",
+  "relatedTerms": [
+   "hn-sakura",
+   "hn-kafungen"
+  ],
+  "bee": "共通",
+  "description": "山に 自然に 生える サクラで、春に 葉と いっしょに 花を さかせます。春の はじめの 蜜と 花粉を くれて、群が 大きく なる 助けに なります。"
+ },
+ {
+  "id": "hn-hotokenoza",
+  "name": "ホトケノザ",
+  "reading": "ほとけのざ",
+  "journey": "hana",
+  "category": "春の 花",
+  "difficulty": 2,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌺",
+  "mapNode": "hana:haru",
+  "relatedTerms": [
+   "hn-tanpopo",
+   "hn-kafungen"
+  ],
+  "bee": "共通",
+  "description": "早春の 畑や 道ばたに さく、赤むらさきの 小さな 花の 草です。花が 少ない 春の はじめに、ミツバチの 蜜や 花粉の もとに なります。"
+ },
+ {
+  "id": "hn-inufuguri",
+  "name": "オオイヌノフグリ",
+  "reading": "おおいぬのふぐり",
+  "journey": "hana",
+  "category": "春の 花",
+  "difficulty": 2,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "💙",
+  "mapNode": "hana:haru",
+  "relatedTerms": [
+   "hn-hotokenoza",
+   "hn-kafungen"
+  ],
+  "bee": "共通",
+  "description": "早春の 道ばたに さく、小さな 青い 花の 草です。日が あたると ひらき、ミツバチが 花粉を あつめに 来ます。春の いちばん はじめに さく 花の ひとつです。"
+ },
+ {
+  "id": "hn-tsubaki",
+  "name": "ツバキ",
+  "reading": "つばき",
+  "journey": "hana",
+  "category": "秋と 冬の 花",
+  "difficulty": 2,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌹",
+  "mapNode": "hana:fuyu",
+  "relatedTerms": [
+   "hn-ume",
+   "hn-biwa"
+  ],
+  "bee": "日本",
+  "description": "冬から 春に 赤い 花を さかせる 木です。花の おくに 蜜が 多く、寒い 時期でも 飛ぶ ニホンミツバチが よく おとずれます。メジロなどの 鳥も 蜜を すいに 来ます。"
+ },
+ {
   "id": "hn-harienju",
   "name": "ハリエンジュ",
   "reading": "はりえんじゅ",
@@ -1259,5 +1349,635 @@
   ],
   "bee": "共通",
   "description": "たねから 芽を 出し、1年の うちに 花を さかせて 一生を 終える 草です。ヒマワリや ソバが そうで、毎年 たねを まいて 育てます。"
+ },
+ {
+  "id": "hn-akatsume",
+  "name": "アカツメクサ",
+  "reading": "あかつめくさ",
+  "journey": "hana",
+  "category": "草の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "hana:natsu",
+  "relatedTerms": [
+   "hn-shirotsumekusa",
+   "hn-clover"
+  ],
+  "bee": "共通",
+  "description": "初夏から 夏に さく、赤むらさきの クローバーの なかまです。花の 筒が 長いので、口の みじかい ミツバチには 蜜が とりにくく、マルハナバチが よく 来ます。"
+ },
+ {
+  "id": "hn-mochinoki",
+  "name": "モチノキ",
+  "reading": "もちのき",
+  "journey": "hana",
+  "category": "木の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "hana:ki",
+  "relatedTerms": [
+   "hn-kuroganemochi",
+   "hn-gairoju"
+  ],
+  "bee": "共通",
+  "description": "庭や 公園に 植えられる 木で、春に 黄緑色の 小さな 花を たくさん つけます。花は 目立ちませんが、ミツバチが 蜜を あつめに 来ます。"
+ },
+ {
+  "id": "hn-kuroganemochi",
+  "name": "クロガネモチ",
+  "reading": "くろがねもち",
+  "journey": "hana",
+  "category": "木の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "hana:ki",
+  "relatedTerms": [
+   "hn-mochinoki",
+   "hn-gairoju"
+  ],
+  "bee": "共通",
+  "description": "公園や 街路樹に 多い 木で、初夏に うすむらさきの 小さな 花を つけます。秋から 冬には 赤い 実が なり、花の ころには ミツバチが よく 来ます。"
+ },
+ {
+  "id": "hn-yanagi",
+  "name": "ヤナギ",
+  "reading": "やなぎ",
+  "journey": "hana",
+  "category": "木の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌿",
+  "mapNode": "hana:ki",
+  "relatedTerms": [
+   "hn-kafungen",
+   "hn-ume"
+  ],
+  "bee": "共通",
+  "description": "水辺に 多い 木で、早春に 葉より 先に 花の 穂を つけます。ネコヤナギの ような 花の 穂は、花の 少ない 春の はじめに ミツバチの 花粉と 蜜の もとに なります。"
+ },
+ {
+  "id": "hn-nezumimochi",
+  "name": "ネズミモチ",
+  "reading": "ねずみもち",
+  "journey": "hana",
+  "category": "木の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "hana:ki",
+  "relatedTerms": [
+   "hn-mochinoki",
+   "hn-gairoju"
+  ],
+  "bee": "共通",
+  "description": "生け垣に よく 使われる 木で、初夏に 白い 小さな 花を たくさん つけます。花の ころは 強い においが して、ミツバチなど 多くの 虫が 集まります。"
+ },
+ {
+  "id": "hn-akamegashiwa",
+  "name": "アカメガシワ",
+  "reading": "あかめがしわ",
+  "journey": "hana",
+  "category": "夏の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🍃",
+  "mapNode": "hana:natsu",
+  "relatedTerms": [
+   "hn-natsugare",
+   "hn-karasuzansho"
+  ],
+  "bee": "共通",
+  "description": "空き地や 林の はしに 生える 木で、新しい 葉が 赤いのが 名前の もとです。初夏から 夏に 花の 穂を つけ、ミツバチが 蜜や 花粉を あつめます。"
+ },
+ {
+  "id": "hn-utsugi",
+  "name": "ウツギ",
+  "reading": "うつぎ",
+  "journey": "hana",
+  "category": "夏の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🤍",
+  "mapNode": "hana:natsu",
+  "relatedTerms": [
+   "hn-akamegashiwa",
+   "hn-kaikaki"
+  ],
+  "bee": "共通",
+  "description": "初夏に 白い 花を たくさん さかせる 木で、「卯の花」とも よばれます。山や 生け垣で 見られ、ミツバチが 蜜を あつめに 来ます。"
+ },
+ {
+  "id": "hn-taranoki",
+  "name": "タラノキ",
+  "reading": "たらのき",
+  "journey": "hana",
+  "category": "秋と 冬の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌿",
+  "mapNode": "hana:aki",
+  "relatedTerms": [
+   "hn-hazakaiki",
+   "hn-nurude"
+  ],
+  "bee": "共通",
+  "description": "春の 芽が 山菜に なる 木です。夏の 終わりごろ、枝の 先に 白い 小さな 花が 集まって さき、ハチなど 多くの 虫が 来ます。花の 少ない ころの 蜜源です。"
+ },
+ {
+  "id": "hn-nurude",
+  "name": "ヌルデ",
+  "reading": "ぬるで",
+  "journey": "hana",
+  "category": "秋と 冬の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🍁",
+  "mapNode": "hana:aki",
+  "relatedTerms": [
+   "hn-taranoki",
+   "hn-hazenoki"
+  ],
+  "bee": "共通",
+  "description": "山や 林の はしに 生える 木で、夏の 終わりごろ 枝の 先に 白い 小さな 花を びっしり つけます。花の ころは ハチなど 多くの 虫で にぎやかに なり、秋に 葉が 赤く なります。"
+ },
+ {
+  "id": "hn-kuzu",
+  "name": "クズ",
+  "reading": "くず",
+  "journey": "hana",
+  "category": "秋と 冬の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🍇",
+  "mapNode": "hana:aki",
+  "relatedTerms": [
+   "hn-hagi",
+   "hn-seitaka"
+  ],
+  "bee": "共通",
+  "description": "夏の 終わりから 秋に、むらさきの 花を さかせる つる草です。ブドウの ような あまい においが あり、ハチが 蜜を あつめに 来ます。根からは くず粉が とれます。"
+ },
+ {
+  "id": "hn-kosendangusa",
+  "name": "コセンダングサ",
+  "reading": "こせんだんぐさ",
+  "journey": "hana",
+  "category": "秋と 冬の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌼",
+  "mapNode": "hana:aki",
+  "relatedTerms": [
+   "hn-seitaka",
+   "hn-hazakaiki"
+  ],
+  "bee": "共通",
+  "description": "秋に 黄色い 小さな 花を さかせる 草で、あたたかい 地方に 多く 生えます。花の 少ない 晩秋まで さくので、ハチの えさに なります。たねは 服に くっつきます。"
+ },
+ {
+  "id": "hn-mizosoba",
+  "name": "ミゾソバ",
+  "reading": "みぞそば",
+  "journey": "hana",
+  "category": "秋と 冬の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "💗",
+  "mapNode": "hana:aki",
+  "relatedTerms": [
+   "hn-soba",
+   "hn-kuzu"
+  ],
+  "bee": "共通",
+  "description": "秋に 田んぼの あぜや 水辺に さく 草で、うすピンクの 小さな 花が 集まって さきます。ソバの なかまで、ミツバチが 蜜を あつめに 来ます。"
+ },
+ {
+  "id": "hn-itadori",
+  "name": "イタドリ",
+  "reading": "いたどり",
+  "journey": "hana",
+  "category": "夏の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌿",
+  "mapNode": "hana:natsu",
+  "relatedTerms": [
+   "hn-soba",
+   "hn-natsugare"
+  ],
+  "bee": "共通",
+  "description": "山や 道ばたに 生える 大きな 草で、夏に 白い 小さな 花を たくさん つけます。ソバの なかまで、花の 少ない 夏の 山の 蜜源に なります。"
+ },
+ {
+  "id": "hn-sazanka",
+  "name": "サザンカ",
+  "reading": "さざんか",
+  "journey": "hana",
+  "category": "秋と 冬の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌺",
+  "mapNode": "hana:fuyu",
+  "relatedTerms": [
+   "hn-tsubaki",
+   "hn-yatsude"
+  ],
+  "bee": "共通",
+  "description": "秋の 終わりから 冬に さく、ツバキに にた 花の 木です。花の 少ない 寒い 時期に さくので、ミツバチが 晴れた 日に 蜜や 花粉を あつめに 来ます。"
+ },
+ {
+  "id": "hn-kanamemochi",
+  "name": "カナメモチ",
+  "reading": "かなめもち",
+  "journey": "hana",
+  "category": "春の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🤍",
+  "mapNode": "hana:haru",
+  "relatedTerms": [
+   "hn-nezumimochi",
+   "hn-gairoju"
+  ],
+  "bee": "共通",
+  "description": "新しい 葉が 赤く、生け垣に よく 使われる 木です。春の 終わりごろ 白い 小さな 花を たくさん つけ、ミツバチなどが 集まります。"
+ },
+ {
+  "id": "hn-goma",
+  "name": "ゴマ",
+  "reading": "ごま",
+  "journey": "hana",
+  "category": "作物と 受粉",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "hana:sakumotsu",
+  "relatedTerms": [
+   "hn-soba",
+   "hn-himawari"
+  ],
+  "bee": "共通",
+  "description": "たねを 食べる 作物で、夏に うすピンクや 白の つりがねの 形の 花を さかせます。花には 蜜が あり、ミツバチが よく おとずれます。"
+ },
+ {
+  "id": "hn-kyuri",
+  "name": "キュウリ",
+  "reading": "きゅうり",
+  "journey": "hana",
+  "category": "作物と 受粉",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🥒",
+  "mapNode": "hana:sakumotsu",
+  "relatedTerms": [
+   "hn-kabocha",
+   "hn-suika"
+  ],
+  "bee": "共通",
+  "description": "ウリの なかまの 野菜です。日本で 多く 作られる 品種は 受粉しなくても 実が 育ちますが、品種や たねを とる ときには ハチが 花粉を 運ぶ ことが 役立ちます。"
+ },
+ {
+  "id": "hn-oto",
+  "name": "オウトウ",
+  "reading": "おうとう",
+  "journey": "hana",
+  "category": "作物と 受粉",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🍒",
+  "mapNode": "hana:sakumotsu",
+  "relatedTerms": [
+   "hn-jikafuwago",
+   "hn-jufunju"
+  ],
+  "bee": "共通",
+  "description": "サクランボの なる 木です。同じ 品種の 花粉では 実が なりにくいので、ちがう 品種の 木を ならべて 植え、ミツバチなどに 花粉を 運んで もらいます。"
+ },
+ {
+  "id": "hn-almond",
+  "name": "アーモンド",
+  "reading": "あーもんど",
+  "journey": "hana",
+  "category": "作物と 受粉",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌰",
+  "mapNode": "hana:sakumotsu",
+  "relatedTerms": [
+   "hn-jikafuwago",
+   "hn-ketsujitsu"
+  ],
+  "bee": "西洋",
+  "description": "外国で 多く 作られる 木の 実です。多くの 品種は ほかの 木の 花粉が ないと 実が なりにくいので、花の ころに たくさんの 巣箱が 畑へ 運ばれます。"
+ },
+ {
+  "id": "hn-alfalfa",
+  "name": "アルファルファ",
+  "reading": "あるふぁるふぁ",
+  "journey": "hana",
+  "category": "作物と 受粉",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "hana:sakumotsu",
+  "relatedTerms": [
+   "hn-clover",
+   "hn-ryokuhi"
+  ],
+  "bee": "共通",
+  "description": "牛の えさに なる マメの なかまの 牧草です。外国では たねを とる 畑で、受粉の ために ハチが 使われます。むらさきの 花から ミツバチも 蜜を あつめます。"
+ },
+ {
+  "id": "hn-eucalyptus",
+  "name": "ユーカリ",
+  "reading": "ゆーかり",
+  "journey": "hana",
+  "category": "木の 花",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🐨",
+  "mapNode": "hana:ki",
+  "relatedTerms": [
+   "hn-acacia",
+   "hn-mitsugenshokubutsu"
+  ],
+  "bee": "共通",
+  "description": "オーストラリアなどに 多い 木で、コアラが 葉を 食べる ことで 知られます。白い ふさの ような 花から 蜜が 出て、外国では 大事な 蜜源の ひとつです。"
+ },
+ {
+  "id": "hn-hokujo",
+  "name": "蜜源の北上",
+  "reading": "みつげんのほくじょう",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "hana:ryumitsu",
+  "relatedTerms": [
+   "hn-mitsugencalendar",
+   "hn-kaikaki"
+  ],
+  "bee": "西洋",
+  "description": "花の さく 時期が、春から 夏に かけて 南から 北へ うつって いく ことです。移動養蜂は この 花の 動きを 追いかけて、巣箱を 運びます。"
+ },
+ {
+  "id": "hn-hyoko",
+  "name": "標高と開花",
+  "reading": "ひょうこうとかいか",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "hana:ryumitsu",
+  "relatedTerms": [
+   "hn-kaikaki",
+   "hn-hokujo"
+  ],
+  "bee": "共通",
+  "description": "同じ 花でも、高い 山ほど 気温が ひくいので さく 時期が おそく なります。ふもとで 花が 終わっても、山の 上では これから さく ことが あります。"
+ },
+ {
+  "id": "hn-kion",
+  "name": "気温と流蜜",
+  "reading": "きおんとりゅうみつ",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "hana:ryumitsu",
+  "relatedTerms": [
+   "hn-ryumitsuki",
+   "hn-bunpitsu"
+  ],
+  "bee": "共通",
+  "description": "あたたかく 晴れた 日は、花が 蜜を よく 出し、ハチも たくさん 飛びます。寒い 日や くもりの 日は、同じ 花でも 蜜の 出かたが へります。"
+ },
+ {
+  "id": "hn-nagaame",
+  "name": "長雨",
+  "reading": "ながあめ",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "hana:ryumitsu",
+  "relatedTerms": [
+   "hn-kion",
+   "hn-ryumitsuki"
+  ],
+  "bee": "共通",
+  "description": "雨が 何日も つづく ことです。ハチが 外へ 出られず、花の 蜜も 雨で 流れて しまうので、流蜜期に 長雨が あると 蜜が あまり たまりません。"
+ },
+ {
+  "id": "hn-eiyoka",
+  "name": "花粉の栄養価",
+  "reading": "かふんのえいようか",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🥗",
+  "mapNode": "hana:kafungen",
+  "relatedTerms": [
+   "hn-kafungen",
+   "hn-kafuniro"
+  ],
+  "bee": "共通",
+  "description": "花粉に ふくまれる タンパク質などの 栄養の 多さです。花の 種類で ちがうので、いろいろな 花の 花粉を あつめられる 場所だと、幼虫が よく 育ちます。"
+ },
+ {
+  "id": "hn-kafunbusoku",
+  "name": "花粉不足",
+  "reading": "かふんぶそく",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🥀",
+  "mapNode": "hana:kafungen",
+  "relatedTerms": [
+   "hn-kafungen",
+   "hn-eiyoka"
+  ],
+  "bee": "共通",
+  "description": "花粉が 足りない 状態です。花粉は 幼虫の えさに なるので、足りないと 子育てが へって 群が 大きく なりません。花の 少ない 時期に 起きやすいです。"
+ },
+ {
+  "id": "hn-tomorokoshi",
+  "name": "トウモロコシ",
+  "reading": "とうもろこし",
+  "journey": "hana",
+  "category": "作物と 受粉",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌽",
+  "mapNode": "hana:kafungen",
+  "relatedTerms": [
+   "hn-fubaika",
+   "hn-kafungen"
+  ],
+  "bee": "共通",
+  "description": "風で 花粉を 運ぶ 風媒花の 作物です。ハチに 受粉を たのむ ことは ありませんが、てっぺんの 穂から 出る 花粉を ミツバチが あつめに 来る ことが あります。"
+ },
+ {
+  "id": "hn-keikan",
+  "name": "景観作物",
+  "reading": "けいかんさくもつ",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🏞️",
+  "mapNode": "hana:ueru",
+  "relatedTerms": [
+   "hn-nanohana",
+   "hn-renge"
+  ],
+  "bee": "共通",
+  "description": "畑や 田んぼに、景色を きれいに する ために 植える 花です。菜の花や レンゲ、ヒマワリなどが あり、ミツバチの 蜜源にも なります。"
+ },
+ {
+  "id": "hn-shokusai",
+  "name": "蜜源植栽",
+  "reading": "みつげんしょくさい",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "hana:ueru",
+  "relatedTerms": [
+   "hn-mitsugencalendar",
+   "hn-hazakaiki"
+  ],
+  "bee": "共通",
+  "description": "ミツバチの 蜜源に なる 木や 草花を、計画して 植える ことです。花の 時期が ちがう ものを 組みあわせると、花の とぎれる 時期を へらせます。"
+ },
+ {
+  "id": "hn-gensho",
+  "name": "蜜源の減少",
+  "reading": "みつげんのげんしょう",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "hana:ueru",
+  "relatedTerms": [
+   "hn-renge",
+   "hn-shokusai"
+  ],
+  "bee": "共通",
+  "description": "レンゲ畑や 雑木林が へって、ミツバチの 蜜源が 少なく なって いる ことです。休耕田や 公園に 蜜源を 植える とりくみも あります。"
+ },
+ {
+  "id": "hn-ritchi",
+  "name": "蜂場の立地",
+  "reading": "ほうじょうのりっち",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "hana:hanni",
+  "relatedTerms": [
+   "hn-kodohankei",
+   "hn-hiatari"
+  ],
+  "bee": "西洋",
+  "description": "巣箱を おく 場所の 条件です。ハチが 飛べる 範囲に 蜜源と 水場が あり、日当たりが よく、つよい 風が あたらない ところが よいと されます。"
+ },
+ {
+  "id": "hn-kankaku",
+  "name": "蜂場の間隔",
+  "reading": "ほうじょうのかんかく",
+  "journey": "hana",
+  "category": "蜜源の 季節と 場所",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "hana:hanni",
+  "relatedTerms": [
+   "hn-saijihanni",
+   "hn-ritchi"
+  ],
+  "bee": "西洋",
+  "description": "養蜂場どうしの はなれぐあいの ことです。近すぎると 同じ 花を とりあって 蜜が 少なく なるので、ハチの 飛ぶ 範囲を 考えて 場所を えらびます。"
+ },
+ {
+  "id": "hn-takajufun",
+  "name": "他家受粉",
+  "reading": "たかじゅふん",
+  "journey": "hana",
+  "category": "花の しくみ",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "hana:jufun",
+  "relatedTerms": [
+   "hn-jikafuwago",
+   "hn-sofun"
+  ],
+  "bee": "共通",
+  "description": "ほかの 株の 花の 花粉が めしべに ついて 実を むすぶ ことです。リンゴや ナシなど 多くの 果樹は この 受粉が 必要で、ミツバチが 木から 木へ 花粉を 運びます。"
+ },
+ {
+  "id": "hn-jinkojufun",
+  "name": "人工授粉",
+  "reading": "じんこうじゅふん",
+  "journey": "hana",
+  "category": "作物と 受粉",
+  "difficulty": 3,
+  "field": "蜜源",
+  "type": "concept",
+  "emoji": "🖌️",
+  "mapNode": "hana:jufun",
+  "relatedTerms": [
+   "hn-nashi",
+   "hn-ketsujitsu"
+  ],
+  "bee": "共通",
+  "description": "人が 筆などで 花粉を めしべに つける ことです。手間の かかる しごとですが、ミツバチが 受粉を 手伝うと、その 手間を へらせます。"
  }
 ]

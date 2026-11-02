@@ -815,6 +815,96 @@
   "description": "1年の しごとの 予定表です。春の 建勢・分蜂・採蜜・夏の 守り・秋の ダニ対策・冬じたくと、季節ごとの しごとを ならべます。"
  },
  {
+  "id": "sg-saimitsu-jiki",
+  "name": "採蜜の時期",
+  "reading": "さいみつのじき",
+  "journey": "shigoto",
+  "category": "採蜜",
+  "difficulty": 2,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "shigoto:saimitsu",
+  "relatedTerms": [
+   "sg-saimitsu",
+   "sg-fugai"
+  ],
+  "bee": "西洋",
+  "description": "はちみつを とる ころあいの ことです。花の さかりが 終わる ころ、巣枠の 蜜に 蜜ぶたが 多く かかったら とりどきです。ふたは 蜜が 熟した しるしです。"
+ },
+ {
+  "id": "sg-naiken-tejun",
+  "name": "内検の手順",
+  "reading": "ないけんのてじゅん",
+  "journey": "shigoto",
+  "category": "春の 見まわり",
+  "difficulty": 2,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "shigoto:naiken",
+  "relatedTerms": [
+   "sg-naiken",
+   "sg-mochikata"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の 中を 見る ときの 順番です。煙を そっと かけ、ふたを あけ、はしの 巣枠から 順に 見て、終わったら もとの 順に もどします。決まった 順だと 見おとしが へります。"
+ },
+ {
+  "id": "sg-omosa",
+  "name": "巣箱の重さ",
+  "reading": "すばこのおもさ",
+  "journey": "shigoto",
+  "category": "冬じたく",
+  "difficulty": 2,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "shigoto:ettou",
+  "relatedTerms": [
+   "sg-chomitsukakunin",
+   "sg-etto"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の うしろを 少し 持ちあげて、重さで 蜜が どれだけ たまって いるかを みる やりかたです。ふたを あけなくて よいので、寒い 時期の 見まわりにも 使えます。"
+ },
+ {
+  "id": "sg-mizuba",
+  "name": "水場",
+  "reading": "みずば",
+  "journey": "shigoto",
+  "category": "夏と 秋の 守り",
+  "difficulty": 2,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "shigoto:natsu",
+  "relatedTerms": [
+   "sg-kyusui",
+   "sg-atsusa"
+  ],
+  "bee": "共通",
+  "description": "ミツバチが 水を くみに 来る 場所です。暑い 日は 水で 巣を 冷やします。近くに 水場を 用意すると、近所の せんたくものや プールに 行きにくく なります。"
+ },
+ {
+  "id": "sg-shitami",
+  "name": "蜜源の下見",
+  "reading": "みつげんのしたみ",
+  "journey": "shigoto",
+  "category": "置き場所と 受粉",
+  "difficulty": 2,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "shigoto:tenshi",
+  "relatedTerms": [
+   "sg-okibasho",
+   "sg-idoyoho"
+  ],
+  "bee": "西洋",
+  "description": "巣箱を おく 場所や 移す 先を 決める 前に、花の ようすを 見に 行く ことです。どんな 花が いつ さくか、水場が あるかを たしかめます。"
+ },
+ {
   "id": "sg-soshun",
   "name": "早春の内検",
   "reading": "そうしゅんのないけん",
@@ -1265,5 +1355,636 @@
   ],
   "bee": "共通",
   "description": "巣箱 ひとつずつに つける 番号です。番号で 記録を 書くと、どの 群が 強いか、いつ 女王を かえたかが まちがえずに わかります。"
+ },
+ {
+  "id": "sg-shigeki",
+  "name": "刺激給餌",
+  "reading": "しげききゅうじ",
+  "journey": "shigoto",
+  "category": "春の 見まわり",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🥄",
+  "mapNode": "shigoto:kensei",
+  "relatedTerms": [
+   "sg-kyuji",
+   "sg-kensei"
+  ],
+  "bee": "西洋",
+  "description": "春の はじめに うすい 砂糖水を 少しずつ 与えて、女王に 卵を 産む 合図を おくる ことです。花の 蜜が 入りはじめたと ハチが 感じ、群が 早く 大きく なります。"
+ },
+ {
+  "id": "sg-kinitsu",
+  "name": "群の均一化",
+  "reading": "ぐんのきんいつか",
+  "journey": "shigoto",
+  "category": "春の 見まわり",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "shigoto:kensei",
+  "relatedTerms": [
+   "sg-kyogun",
+   "sg-jakugun",
+   "sg-gunseichosei"
+  ],
+  "bee": "西洋",
+  "description": "強い 群と 弱い 群の あいだで 蜂児枠や ハチを うつして、群の 大きさを そろえる ことです。そろえると 採蜜や 分蜂の 対策が まとめて しやすく なります。"
+ },
+ {
+  "id": "sg-hojiwaku",
+  "name": "蜂児枠の移動",
+  "reading": "ほうじわくのいどう",
+  "journey": "shigoto",
+  "category": "春の 見まわり",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "shigoto:kensei",
+  "relatedTerms": [
+   "sg-jakugun",
+   "sg-kinitsu"
+  ],
+  "bee": "西洋",
+  "description": "ふたの かかった 蜂児枠を 強い 群から 弱い 群へ うつす ことです。もうすぐ 生まれる ハチが ふえるので、弱い 群が 早く 元気に なり、強い 群は 分蜂しにくく なります。"
+ },
+ {
+  "id": "sg-jogeirekae",
+  "name": "箱の上下入れかえ",
+  "reading": "はこのじょうげいれかえ",
+  "journey": "shigoto",
+  "category": "春の 見まわり",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "shigoto:kensei",
+  "relatedTerms": [
+   "sg-sanranken",
+   "sg-zoso"
+  ],
+  "bee": "西洋",
+  "description": "春に 2段の 巣箱の 上と 下を 入れかえる ことで、リバーシングとも いいます。女王は 上へ 上へと 卵を 産むので、空いた 箱を 上に すると 産卵の 場が 広がります。"
+ },
+ {
+  "id": "sg-space",
+  "name": "スペース不足",
+  "reading": "すぺーすぶそく",
+  "journey": "shigoto",
+  "category": "分蜂の 季節",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "shigoto:bunpo",
+  "relatedTerms": [
+   "sg-bunponetsu",
+   "sg-zoso"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の 中が ハチや 蜜で いっぱいに なり、すきまが 足りない 状態です。せまく なると 分蜂の 気分が 高まるので、継箱を かけて 場所を 広げます。"
+ },
+ {
+  "id": "sg-mitsuzumari",
+  "name": "蜜詰まり",
+  "reading": "みつづまり",
+  "journey": "shigoto",
+  "category": "分蜂の 季節",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🍯",
+  "mapNode": "shigoto:bunpo",
+  "relatedTerms": [
+   "sg-space",
+   "sg-sanranken"
+  ],
+  "bee": "西洋",
+  "description": "子を 育てる 場所まで 蜜で うまり、女王が 卵を 産む 巣房が なくなる 状態です。流蜜期に 起きやすく、からの 巣枠を 入れて 産卵の 場を 作ります。"
+ },
+ {
+  "id": "sg-checker",
+  "name": "チェッカーボード",
+  "reading": "ちぇっかーぼーど",
+  "journey": "shigoto",
+  "category": "分蜂の 季節",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "shigoto:bunpo",
+  "relatedTerms": [
+   "sg-bunpotaisaku",
+   "sg-chomitsuwaku"
+  ],
+  "bee": "西洋",
+  "description": "春の はじめに、育児圏の 上の 箱で 蜜枠と からの 巣枠を 交互に ならべる 分蜂対策です。上に 広さが あると ハチが 感じ、分かれる 準備を しにくく なると 考えられて います。"
+ },
+ {
+  "id": "sg-demaree",
+  "name": "デマリー法",
+  "reading": "でまりーほう",
+  "journey": "shigoto",
+  "category": "分蜂の 季節",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "shigoto:bunpo",
+  "relatedTerms": [
+   "sg-bunpotaisaku",
+   "sg-tsugibakokake"
+  ],
+  "bee": "西洋",
+  "description": "女王を 下の 箱に のこし、蜂児の 巣枠を 隔王板の 上の 箱へ うつす 分蜂対策です。女王と 子育ての 場が 分かれるので、分蜂の 気分が おさまりやすく なります。"
+ },
+ {
+  "id": "sg-mochikata",
+  "name": "巣枠の持ち方",
+  "reading": "すわくのもちかた",
+  "journey": "shigoto",
+  "category": "春の 見まわり",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "shigoto:naiken",
+  "relatedTerms": [
+   "sg-naiken",
+   "sg-naiken-tejun"
+  ],
+  "bee": "西洋",
+  "description": "巣枠は 両はしの 耳を 持って、真上に ゆっくり 持ちあげます。ななめに すると 巣が こすれて 女王を おとす ことが あるので、巣箱の 上で あつかいます。"
+ },
+ {
+  "id": "sg-umu",
+  "name": "卵の有無",
+  "reading": "たまごのうむ",
+  "journey": "shigoto",
+  "category": "春の 見まわり",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🥚",
+  "mapNode": "shigoto:naiken",
+  "relatedTerms": [
+   "sg-joukakunin",
+   "sg-hojikakunin"
+  ],
+  "bee": "西洋",
+  "description": "巣房の そこに 小さな 白い 卵が あるかを 見る ことです。卵が あれば、ここ 数日の うちに 女王が 卵を 産んだ しるしです。女王が 見つからない ときの たしかめに 使います。"
+ },
+ {
+  "id": "sg-narabi",
+  "name": "蜂児の並び",
+  "reading": "ほうじのならび",
+  "journey": "shigoto",
+  "category": "春の 見まわり",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🐝",
+  "mapNode": "shigoto:naiken",
+  "relatedTerms": [
+   "sg-hojikakunin",
+   "sg-joukakunin"
+  ],
+  "bee": "西洋",
+  "description": "ふたの かかった 蜂児が すきまなく そろって ならんで いるかを 見る ことです。そろって いれば 女王が 元気な しるしで、ぬけが 多いと 女王や 病気を たしかめます。"
+ },
+ {
+  "id": "sg-jikantai",
+  "name": "内検の時間帯",
+  "reading": "ないけんのじかんたい",
+  "journey": "shigoto",
+  "category": "春の 見まわり",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🕛",
+  "mapNode": "shigoto:naiken",
+  "relatedTerms": [
+   "sg-naiken",
+   "sg-tenki"
+  ],
+  "bee": "西洋",
+  "description": "内検は 晴れて あたたかい 日の 昼前後が よいと されます。花を さがしに 出る ハチが 多く、巣に のこる ハチが 少ないので、群が おだやかです。"
+ },
+ {
+  "id": "sg-fugairitsu",
+  "name": "封蓋率",
+  "reading": "ふうがいりつ",
+  "journey": "shigoto",
+  "category": "採蜜",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "shigoto:saimitsu",
+  "relatedTerms": [
+   "sg-fugai",
+   "sg-saimitsu-jiki"
+  ],
+  "bee": "西洋",
+  "description": "巣枠の 蜜の うち、蜜ぶたが かかった ところの 割合です。多く かかって いるほど 蜜が 熟して いて、採蜜の めやすに なります。"
+ },
+ {
+  "id": "sg-furiotoshi",
+  "name": "蜂の振り落とし",
+  "reading": "はちのふりおとし",
+  "journey": "shigoto",
+  "category": "採蜜",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "👋",
+  "mapNode": "shigoto:saimitsu",
+  "relatedTerms": [
+   "sg-saimitsuwaku",
+   "sg-saimitsu"
+  ],
+  "bee": "西洋",
+  "description": "採蜜する 巣枠に ついた ハチを、巣箱の 上で 枠を すばやく ふって 中へ おとす ことです。のこった ハチは 刷毛で やさしく はらいます。"
+ },
+ {
+  "id": "sg-nurewaku",
+  "name": "濡れ巣枠の戻し",
+  "reading": "ぬれすわくのもどし",
+  "journey": "shigoto",
+  "category": "採蜜",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "shigoto:saimitsu",
+  "relatedTerms": [
+   "sg-saimitsu",
+   "sg-toho"
+  ],
+  "bee": "西洋",
+  "description": "蜜を しぼった あとの ぬれた 巣枠を 群に もどし、のこりの 蜜を ハチに なめとって もらう ことです。夕方に もどすと 盗蜂が 起きにくく なります。"
+ },
+ {
+  "id": "sg-kanki",
+  "name": "巣箱の換気",
+  "reading": "すばこのかんき",
+  "journey": "shigoto",
+  "category": "夏と 秋の 守り",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "shigoto:natsu",
+  "relatedTerms": [
+   "sg-atsusa",
+   "sg-hiyoke"
+  ],
+  "bee": "西洋",
+  "description": "夏の 暑い 時期に、巣箱に すきまを 作って 風を 通す ことです。ハチも はねで 風を おくって 巣を 冷やして いますが、人が 手伝うと らくに なります。"
+ },
+ {
+  "id": "sg-natsunaiken",
+  "name": "夏の内検",
+  "reading": "なつのないけん",
+  "journey": "shigoto",
+  "category": "夏と 秋の 守り",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "shigoto:natsu",
+  "relatedTerms": [
+   "sg-naiken",
+   "sg-atsusa"
+  ],
+  "bee": "西洋",
+  "description": "夏は いちばん 暑い 昼すぎを さけ、朝の すずしい うちに 短い 時間で 内検を します。長く ふたを あけると 巣の 中が 暑く なり、巣も やわらかく なるからです。"
+ },
+ {
+  "id": "sg-yuin",
+  "name": "誘引液",
+  "reading": "ゆういんえき",
+  "journey": "shigoto",
+  "category": "夏と 秋の 守り",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🪤",
+  "mapNode": "shigoto:suzume",
+  "relatedTerms": [
+   "sg-suzumetaisaku",
+   "sg-suzumebachi"
+  ],
+  "bee": "共通",
+  "description": "スズメバチを わなに さそう、あまい においの 液です。春に 巣を 作りはじめる スズメバチの 女王を つかまえると、夏から 秋に 来る 数を へらせると 考えられて います。"
+ },
+ {
+  "id": "sg-suzume-kisetsu",
+  "name": "スズメバチの季節",
+  "reading": "すずめばちのきせつ",
+  "journey": "shigoto",
+  "category": "夏と 秋の 守り",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "shigoto:suzume",
+  "relatedTerms": [
+   "sg-suzumebachi",
+   "sg-bogoami"
+  ],
+  "bee": "共通",
+  "description": "スズメバチが 巣箱の 前に よく 来るのは、夏の 終わりから 秋です。この ころは スズメバチの 巣が 大きく なるので、防護網や わなで 早めに 守ります。"
+ },
+ {
+  "id": "sg-shizenrakka",
+  "name": "自然落下",
+  "reading": "しぜんらっか",
+  "journey": "shigoto",
+  "category": "夏と 秋の 守り",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "shigoto:aki",
+  "relatedTerms": [
+   "sg-danitaisaku",
+   "sg-dani-jiki"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の 底に 入れた 板に、自然に 落ちた ダニを 数える 調べかたです。数の ふえかたで、巣の 中に ダニが どれだけ いるかの めやすに します。"
+ },
+ {
+  "id": "sg-muhoji",
+  "name": "無蜂児期",
+  "reading": "むほうじき",
+  "journey": "shigoto",
+  "category": "夏と 秋の 守り",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🈳",
+  "mapNode": "shigoto:aki",
+  "relatedTerms": [
+   "sg-danitaisaku",
+   "sg-shizenrakka"
+  ],
+  "bee": "西洋",
+  "description": "巣の 中に 卵や 幼虫・さなぎが いない 時期です。ダニは ふたの かかった 巣房に かくれて ふえるので、蜂児が いない ときは ダニの 対策が しやすく なります。"
+ },
+ {
+  "id": "sg-dani-jiki",
+  "name": "ダニの増える時期",
+  "reading": "だにのふえるじき",
+  "journey": "shigoto",
+  "category": "夏と 秋の 守り",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "shigoto:aki",
+  "relatedTerms": [
+   "sg-danitaisaku",
+   "sg-fuyubachiikusei"
+  ],
+  "bee": "西洋",
+  "description": "ミツバチに つく ダニは、夏から 秋に いちばん ふえます。この ころに 対策を して おくと、冬を こす ハチを 元気に 育てられます。"
+ },
+ {
+  "id": "sg-ettogun",
+  "name": "越冬群",
+  "reading": "えっとうぐん",
+  "journey": "shigoto",
+  "category": "冬じたく",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "shigoto:ettou",
+  "relatedTerms": [
+   "sg-etto",
+   "sg-ettojunbi"
+  ],
+  "bee": "西洋",
+  "description": "冬を こす 群の ことです。秋の うちに ハチの 数と 蜜を じゅうぶんに そろえて 強い 群に して おくと、春に 早く 立ちあがります。"
+ },
+ {
+  "id": "sg-shukusho",
+  "name": "巣箱の縮小",
+  "reading": "すばこのしゅくしょう",
+  "journey": "shigoto",
+  "category": "冬じたく",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "shigoto:ettou",
+  "relatedTerms": [
+   "sg-ettojunbi",
+   "sg-hoon"
+  ],
+  "bee": "西洋",
+  "description": "冬の 前に 巣枠の 数を へらし、ハチが あたためやすい 大きさに する ことです。せまく すると、少ない ハチでも 巣の 中を あたたかく たもてます。"
+ },
+ {
+  "id": "sg-chomitsu-haichi",
+  "name": "貯蜜の配置",
+  "reading": "ちょみつのはいち",
+  "journey": "shigoto",
+  "category": "冬じたく",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "shigoto:ettou",
+  "relatedTerms": [
+   "sg-ettoshudan",
+   "sg-chomitsuwaku"
+  ],
+  "bee": "西洋",
+  "description": "冬の 前に、蜜の たまった 巣枠を ハチの かたまりの 上や 横に くるように ならべる ことです。冬の ハチは かたまったまま 少しずつ 動くので、そばに えさが あると 安心です。"
+ },
+ {
+  "id": "sg-fuyutenken",
+  "name": "冬の点検",
+  "reading": "ふゆのてんけん",
+  "journey": "shigoto",
+  "category": "冬じたく",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "shigoto:fuyu",
+  "relatedTerms": [
+   "sg-omosa",
+   "sg-mimawari"
+  ],
+  "bee": "西洋",
+  "description": "冬は ふたを あけず、外から 群の ようすを たしかめます。巣箱に 耳を あてて 羽音を きいたり、重さや 巣門の ようすを 見たり します。"
+ },
+ {
+  "id": "sg-jobukanki",
+  "name": "上部換気",
+  "reading": "じょうぶかんき",
+  "journey": "shigoto",
+  "category": "冬じたく",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "shigoto:fuyu",
+  "relatedTerms": [
+   "sg-ketsuro",
+   "sg-hoon"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の 上の ほうに 小さな すきまを 作り、しめった 空気を にがす ことです。冬は ハチの 息で 水の つぶが つきやすいので、結露を へらせます。"
+ },
+ {
+  "id": "sg-kokei",
+  "name": "固形の餌",
+  "reading": "こけいのえさ",
+  "journey": "shigoto",
+  "category": "冬じたく",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "shigoto:fuyu",
+  "relatedTerms": [
+   "sg-kyuji",
+   "sg-satomizu"
+  ],
+  "bee": "西洋",
+  "description": "冬に 砂糖水の かわりに 巣箱に おく、かためた えさです。寒い 時期は 砂糖水が 冷えて ハチが 飲みにくいので、かたまりの 砂糖を 使う ことが あります。"
+ },
+ {
+  "id": "sg-sumonjime",
+  "name": "巣門閉め",
+  "reading": "すもんじめ",
+  "journey": "shigoto",
+  "category": "置き場所と 受粉",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "shigoto:tenshi",
+  "relatedTerms": [
+   "sg-ido",
+   "sg-yakan"
+  ],
+  "bee": "西洋",
+  "description": "巣箱を 運ぶ 前に、外に 出た ハチが 帰って くるのを 待って 巣門を とじる ことです。とじる ときは 風が 通る 網を 使い、中が 暑く ならない ように します。"
+ },
+ {
+  "id": "sg-yakan",
+  "name": "夜間移動",
+  "reading": "やかんいどう",
+  "journey": "shigoto",
+  "category": "置き場所と 受粉",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "shigoto:tenshi",
+  "relatedTerms": [
+   "sg-sumonjime",
+   "sg-idoyoho"
+  ],
+  "bee": "西洋",
+  "description": "ハチが みんな 巣に もどった 夜に 巣箱を 運ぶ ことです。すずしく、とちゅうで ハチが 外に 出ないので、群に やさしい 運びかたです。"
+ },
+ {
+  "id": "sg-tsuki",
+  "name": "通気の確保",
+  "reading": "つうきのかくほ",
+  "journey": "shigoto",
+  "category": "置き場所と 受粉",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "shigoto:tenshi",
+  "relatedTerms": [
+   "sg-yakan",
+   "sg-kanki"
+  ],
+  "bee": "西洋",
+  "description": "巣箱を 運ぶ あいだ、中が 暑く ならない ように 風の 通り道を 作る ことです。網の ふたや すきまを 使って、暑さから 群を 守ります。"
+ },
+ {
+  "id": "sg-hannyu",
+  "name": "ハウスへの搬入",
+  "reading": "はうすへのはんにゅう",
+  "journey": "shigoto",
+  "category": "置き場所と 受粉",
+  "difficulty": 3,
+  "field": "法律・しごと",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "shigoto:pollination",
+  "relatedTerms": [
+   "sg-house",
+   "sg-kashidashi"
+  ],
+  "bee": "西洋",
+  "description": "作物の 花が さく ころに 合わせて、巣箱を ハウスに 入れる ことです。ハチが 巣に もどった 夕方などに 運ぶと、群が 落ちついて 新しい 場所に なれます。"
+ },
+ {
+  "id": "sg-kaifuku",
+  "name": "返却後の回復",
+  "reading": "へんきゃくごのかいふく",
+  "journey": "shigoto",
+  "category": "置き場所と 受粉",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "shigoto:pollination",
+  "relatedTerms": [
+   "sg-kashidashi",
+   "sg-jakugun"
+  ],
+  "bee": "西洋",
+  "description": "ハウスでの 受粉を 終えて もどった 群を 立てなおす ことです。ハウスは 花が かぎられるので 群が 弱りがちです。花の 多い 場所に おき、えさを 与えて 元気に します。"
+ },
+ {
+  "id": "sg-keiyaku",
+  "name": "交配の契約",
+  "reading": "こうはいのけいやく",
+  "journey": "shigoto",
+  "category": "置き場所と 受粉",
+  "difficulty": 3,
+  "field": "法律・しごと",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "shigoto:pollination",
+  "relatedTerms": [
+   "sg-kashidashi",
+   "sg-shisetsuengei"
+  ],
+  "bee": "西洋",
+  "description": "農家に ミツバチを 貸す ときに、群の 大きさや 期間、返しかたを 決めて おく 取り決めです。ハウスで 農薬を 使う 予定も 話しあって おくと、ハチを 守れます。"
+ },
+ {
+  "id": "sg-umaredoshi",
+  "name": "女王の生まれ年",
+  "reading": "じょおうのうまれどし",
+  "journey": "shigoto",
+  "category": "記録",
+  "difficulty": 3,
+  "field": "飼育管理",
+  "type": "concept",
+  "emoji": "🎂",
+  "mapNode": "shigoto:kiroku",
+  "relatedTerms": [
+   "sg-kiroku",
+   "sg-murebango"
+  ],
+  "bee": "西洋",
+  "description": "女王が 生まれた 年を 記録して おく ことです。女王は 年を かさねると 卵を 産む 力が おちて いくので、生まれ年を 見て 新しい 女王に かえる めやすに します。"
  }
 ]

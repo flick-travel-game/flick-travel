@@ -821,6 +821,96 @@
   "description": "巣箱を 雨と 強い 日ざしから 守る 屋根です。夏は 日かげを 作って、巣の 中が 暑く なりすぎない ように します。"
  },
  {
+  "id": "dg-hakari",
+  "name": "はかり",
+  "reading": "はかり",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 2,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "dogu:kogu",
+  "relatedTerms": [
+   "dg-tsugibako",
+   "dg-kyujiki"
+  ],
+  "bee": "共通",
+  "description": "巣箱の 重さを はかる 道具です。巣箱の 片がわを 持ちあげて はかると、中に たまった 蜜の 量の めやすに なります。冬の 前に えさが 足りるかを 見る ときに 役立ちます。"
+ },
+ {
+  "id": "dg-ondokei",
+  "name": "温度計",
+  "reading": "おんどけい",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 2,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🌡",
+  "mapNode": "dogu:kogu",
+  "relatedTerms": [
+   "dg-hakari",
+   "dg-kankiko"
+  ],
+  "bee": "共通",
+  "description": "温度を はかる 道具です。巣箱の 中や 置き場の 温度を 記録すると、夏の 暑さや 冬の 寒さへの 対策を 考える 手がかりに なります。"
+ },
+ {
+  "id": "dg-nijime",
+  "name": "荷締めベルト",
+  "reading": "にじめべると",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 2,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🎗",
+  "mapNode": "dogu:tsugibako",
+  "relatedTerms": [
+   "dg-tsugibako",
+   "dg-amibuta"
+  ],
+  "bee": "西洋",
+  "description": "巣箱を 運ぶ ときに、箱が ずれない ように しばる ベルトです。ふたと 継箱と 底板を ひとまとめに 締めて、すきまから ハチが 出ない ように します。台風の 前にも 使います。"
+ },
+ {
+  "id": "dg-toso",
+  "name": "巣箱の塗装",
+  "reading": "すばこのとそう",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 2,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "dogu:futa",
+  "relatedTerms": [
+   "dg-futa",
+   "dg-yane"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の 外がわに ペンキなどを ぬって、雨や 日ざしから 木を 守る ことです。ハチが ふれる 内がわは ぬりません。巣箱ごとに 色を かえると、ハチが 自分の 巣を 見わけやすく なります。"
+ },
+ {
+  "id": "dg-sumon-muki",
+  "name": "巣門の向き",
+  "reading": "すもんのむき",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 2,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "dogu:sumon",
+  "relatedTerms": [
+   "dg-sumon",
+   "dg-subakodai"
+  ],
+  "bee": "共通",
+  "description": "巣門を どの 方角に 向けるかの ことです。朝日が あたる 南東向きなどに すると、ハチが 早くから 働きはじめます。強い 北風が 吹きこむ 向きは さけます。"
+ },
+ {
   "id": "dg-beespace",
   "name": "ビースペース",
   "reading": "びーすぺーす",
@@ -1269,5 +1359,635 @@
   ],
   "bee": "共通",
   "description": "分蜂して 枝などに かたまった 群を 入れて、巣箱まで 運ぶ 箱です。分蜂群は おとなしいので、ゆっくり 箱に 入って もらいます。"
+ },
+ {
+  "id": "dg-asagata",
+  "name": "浅型継箱",
+  "reading": "あさがたつぎばこ",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🥡",
+  "mapNode": "dogu:tsugibako",
+  "relatedTerms": [
+   "dg-tsugibako",
+   "dg-fukagata"
+  ],
+  "bee": "西洋",
+  "description": "ふつうより 高さの 低い 継箱です。巣枠も 短いので、蜜で いっぱいに なっても 軽くて 持ちあげやすく なります。蜜を ためる 箱として 使われます。"
+ },
+ {
+  "id": "dg-fukagata",
+  "name": "深型巣箱",
+  "reading": "ふかがたすばこ",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🗄",
+  "mapNode": "dogu:tsugibako",
+  "relatedTerms": [
+   "dg-asagata",
+   "dg-langbox"
+  ],
+  "bee": "西洋",
+  "description": "ふつうの 高さの 巣箱です。女王が 卵を 産み、子を 育てる 育児圏に よく 使います。蜜が 入ると とても 重く なるので、持ちあげる ときは 腰に 気を つけます。"
+ },
+ {
+  "id": "dg-telescope",
+  "name": "テレスコープ式ふた",
+  "reading": "てれすこーぷしきふた",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🎩",
+  "mapNode": "dogu:futa",
+  "relatedTerms": [
+   "dg-futa",
+   "dg-uchibuta"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の 上から すっぽり かぶせて、ふちが 外がわに たれる ふたです。望遠鏡の 筒の ように かさなるので この 名前が あり、雨が 入りにくく なります。内ぶたと いっしょに 使います。"
+ },
+ {
+  "id": "dg-uchibuta-ana",
+  "name": "内ぶたの穴",
+  "reading": "うちぶたのあな",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "dogu:futa",
+  "relatedTerms": [
+   "dg-uchibuta",
+   "dg-escape"
+  ],
+  "bee": "西洋",
+  "description": "内ぶたの まん中に あいて いる 穴です。ここに 給餌器を のせたり、ビーエスケープを はめたり します。夏は 空気の 通り道にも なります。"
+ },
+ {
+  "id": "dg-escape",
+  "name": "ビーエスケープ",
+  "reading": "びーえすけーぷ",
+  "journey": "dogu",
+  "category": "採蜜の 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "dogu:futa",
+  "relatedTerms": [
+   "dg-uchibuta-ana",
+   "dg-nigashiita"
+  ],
+  "bee": "西洋",
+  "description": "ハチが 一方向にしか 通れない 小さな しかけです。採蜜の 前に 蜜の 箱の 下に 入れて おくと、ハチが 下の 箱へ 移り、蜜の 箱から ハチが へります。"
+ },
+ {
+  "id": "dg-amibuta",
+  "name": "移動用網ぶた",
+  "reading": "いどうようあみぶた",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🥅",
+  "mapNode": "dogu:futa",
+  "relatedTerms": [
+   "dg-nijime",
+   "dg-kankiko"
+  ],
+  "bee": "西洋",
+  "description": "巣箱を 運ぶ ときに 使う、金網の ふたです。風が よく 通るので、とじこめた ハチが 暑く なりすぎるのを ふせぎます。転飼などで 遠くへ 運ぶ ときに 使われます。"
+ },
+ {
+  "id": "dg-chakuchi",
+  "name": "着地板",
+  "reading": "ちゃくちいた",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🛬",
+  "mapNode": "dogu:sumon",
+  "relatedTerms": [
+   "dg-sumon",
+   "dg-sumonita"
+  ],
+  "bee": "西洋",
+  "description": "巣門の 前に 出て いる 板です。帰って きた ハチが まず ここに おりて、歩いて 巣の 中へ 入ります。ハチの ようすを 見るのにも よい 場所です。"
+ },
+ {
+  "id": "dg-nenchaku",
+  "name": "粘着シート",
+  "reading": "ねんちゃくしーと",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "dogu:sokoban",
+  "relatedTerms": [
+   "dg-amizoko",
+   "dg-sokoita"
+  ],
+  "bee": "西洋",
+  "description": "網底の 下に しいて、落ちて きた ダニを くっつけて 数える シートです。ダニの ふえぐあいが わかるので、対策が 必要かを 決める めやすに なります。"
+ },
+ {
+  "id": "dg-suijun",
+  "name": "水準器",
+  "reading": "すいじゅんき",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🟰",
+  "mapNode": "dogu:sokoban",
+  "relatedTerms": [
+   "dg-subakodai",
+   "dg-suwaku"
+  ],
+  "bee": "西洋",
+  "description": "かたむきを 見る 道具です。ハチは 真下に 向かって 巣を のばすので、巣箱が かたむくと 巣板が 巣枠から はみ出す ことが あります。巣箱台を 置く ときに 使います。"
+ },
+ {
+  "id": "dg-sokuzan",
+  "name": "側桟",
+  "reading": "そくざん",
+  "journey": "dogu",
+  "category": "巣枠と 巣礎",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🪵",
+  "mapNode": "dogu:suwaku",
+  "relatedTerms": [
+   "dg-uezan",
+   "dg-shitazan"
+  ],
+  "bee": "西洋",
+  "description": "巣枠の 左右に ある たての 木です。上桟と 下桟を つなぎ、巣線を 通す 小さな 穴が あいて います。"
+ },
+ {
+  "id": "dg-mimi",
+  "name": "巣枠の耳",
+  "reading": "すわくのみみ",
+  "journey": "dogu",
+  "category": "巣枠と 巣礎",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "dogu:suwaku",
+  "relatedTerms": [
+   "dg-uezan",
+   "dg-wakuuke"
+  ],
+  "bee": "西洋",
+  "description": "上桟の 両はしに 出て いる でっぱりです。ここを 巣箱の 内がわの 段に かけて、巣枠を ぶらさげます。巣枠を 持ちあげる ときも ここを 持ちます。"
+ },
+ {
+  "id": "dg-wakuuke",
+  "name": "枠受け",
+  "reading": "わくうけ",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "dogu:tsugibako",
+  "relatedTerms": [
+   "dg-mimi",
+   "dg-tsugibako"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の 内がわの 上の ほうに ある、段に なった ところです。巣枠の 耳を ここに のせると、巣枠が 底に つかず、ちょうど よい すきまで ならびます。"
+ },
+ {
+  "id": "dg-jo-shirushi",
+  "name": "女王の印の色",
+  "reading": "じょおうのしるしのいろ",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "dogu:kogu",
+  "relatedTerms": [
+   "dg-marking",
+   "dg-markingcage"
+  ],
+  "bee": "西洋",
+  "description": "女王の 背中に つける 印の 色は、生まれた 年の 下ひとけたで 決まって います。1と6は 白、2と7は 黄、3と8は 赤、4と9は 緑、5と0は 青です。色を 見れば、いつ 生まれた 女王か わかります。"
+ },
+ {
+  "id": "dg-maisen",
+  "name": "埋線",
+  "reading": "まいせん",
+  "journey": "dogu",
+  "category": "巣枠と 巣礎",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "♨️",
+  "mapNode": "dogu:suso",
+  "relatedTerms": [
+   "dg-susen",
+   "dg-suso"
+  ],
+  "bee": "西洋",
+  "description": "巣枠に はった 巣線を、巣礎に うめこむ ことです。線を あたためて ろうに しずめると、巣板が 蜜の 重さや 分離機の 回転でも こわれにくく なります。"
+ },
+ {
+  "id": "dg-happo",
+  "name": "発泡スチロール巣箱",
+  "reading": "はっぽうすちろーるすばこ",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "dogu:tsugibako",
+  "relatedTerms": [
+   "dg-langbox",
+   "dg-fukagata"
+  ],
+  "bee": "西洋",
+  "description": "発泡スチロールで つくった 軽い 巣箱です。熱を 通しにくいので、冬の 寒さや 夏の 日ざしの 熱から 巣を 守りやすいと されます。寒い 国の 養蜂で よく 使われます。"
+ },
+ {
+  "id": "dg-uwagi",
+  "name": "面布付き上着",
+  "reading": "めんぷつきうわぎ",
+  "journey": "dogu",
+  "category": "身を 守る 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🥼",
+  "mapNode": "dogu:menpu",
+  "relatedTerms": [
+   "dg-menpu",
+   "dg-bogofuku"
+  ],
+  "bee": "共通",
+  "description": "面布と 上着が ひとつに なった 防護服です。首の すきまが できにくいので、ハチが 服の 中に 入りにくく なります。ファスナーを しっかり しめて 着ます。"
+ },
+ {
+  "id": "dg-kawate",
+  "name": "革手袋",
+  "reading": "かわてぶくろ",
+  "journey": "dogu",
+  "category": "身を 守る 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "dogu:menpu",
+  "relatedTerms": [
+   "dg-tebukuro",
+   "dg-tsukaisute"
+  ],
+  "bee": "共通",
+  "description": "革で できた ぶあつい 手袋です。はじめての 人も 安心して 作業できます。なれた 人は、細かい 作業の ために うすい 手袋を 使う ことも あります。"
+ },
+ {
+  "id": "dg-tsukaisute",
+  "name": "使いすて手袋",
+  "reading": "つかいすててぶくろ",
+  "journey": "dogu",
+  "category": "身を 守る 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🫳",
+  "mapNode": "dogu:menpu",
+  "relatedTerms": [
+   "dg-kawate",
+   "dg-tebukuro"
+  ],
+  "bee": "共通",
+  "description": "うすくて、使ったら すてる 手袋です。巣箱ごとに とりかえると、病気の もとを ほかの 群へ 運ばずに すみます。手の 感じが わかるので 細かい 作業にも 向いて います。"
+ },
+ {
+  "id": "dg-kago",
+  "name": "分離機のかご",
+  "reading": "ぶんりきのかご",
+  "journey": "dogu",
+  "category": "採蜜の 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "dogu:bunriki",
+  "relatedTerms": [
+   "dg-bunriki",
+   "dg-sessen"
+  ],
+  "bee": "西洋",
+  "description": "遠心分離機の 中で、巣枠を 入れて 回す かごです。回ると 外へ 向かう 力で 巣房の 蜜が 飛びだし、巣は 枠に のこるので また 使えます。"
+ },
+ {
+  "id": "dg-mitsudashi",
+  "name": "蜜出し口",
+  "reading": "みつだしぐち",
+  "journey": "dogu",
+  "category": "採蜜の 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🚰",
+  "mapNode": "dogu:bunriki",
+  "relatedTerms": [
+   "dg-chomitsutank",
+   "dg-bunriki"
+  ],
+  "bee": "西洋",
+  "description": "分離機や 貯蜜タンクの 下に ついて いる、蜜を 出す 口です。ハニーゲートとも よびます。とじたり あけたり して、瓶や 容器に 蜜を そそぎます。"
+ },
+ {
+  "id": "dg-omoshi",
+  "name": "巣箱の重し",
+  "reading": "すばこのおもし",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "dogu:futa",
+  "relatedTerms": [
+   "dg-futa",
+   "dg-nijime"
+  ],
+  "bee": "共通",
+  "description": "強い 風で ふたが とばされない ように、ふたの 上に 置く 石や ブロックです。台風の 季節には 荷締めベルトと いっしょに 使うと 安心です。"
+ },
+ {
+  "id": "dg-uwaoki",
+  "name": "上置き給餌器",
+  "reading": "うえおききゅうじき",
+  "journey": "dogu",
+  "category": "えさと 水",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🍽",
+  "mapNode": "dogu:kyuji",
+  "relatedTerms": [
+   "dg-kyujiki",
+   "dg-uchibuta-ana"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の いちばん 上に のせる、大きな 給餌器です。たくさんの 糖液を 入れられるので、秋の 給餌などで 何度も あけずに すみます。ハチが おぼれない ように 足場が ついて います。"
+ },
+ {
+  "id": "dg-bottle",
+  "name": "ボトル給餌器",
+  "reading": "ぼとるきゅうじき",
+  "journey": "dogu",
+  "category": "えさと 水",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🍼",
+  "mapNode": "dogu:kyuji",
+  "relatedTerms": [
+   "dg-kyujiki",
+   "dg-uchibuta-ana"
+  ],
+  "bee": "西洋",
+  "description": "びんを さかさに して、小さな 穴から 少しずつ 糖液を 飲ませる 給餌器です。内ぶたの 穴の 上や 巣門に とりつけ、残りの 量が 外から 見えます。"
+ },
+ {
+  "id": "dg-fondant",
+  "name": "フォンダン",
+  "reading": "ふぉんだん",
+  "journey": "dogu",
+  "category": "えさと 水",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🍬",
+  "mapNode": "dogu:kyuji",
+  "relatedTerms": [
+   "dg-patty",
+   "dg-kyujiki"
+  ],
+  "bee": "西洋",
+  "description": "砂糖を 練って かためた、やわらかい えさです。水が こぼれないので、寒い 冬や 春先に 巣枠の 上に 置いて あげます。"
+ },
+ {
+  "id": "dg-patty",
+  "name": "花粉パティ",
+  "reading": "かふんぱてぃ",
+  "journey": "dogu",
+  "category": "えさと 水",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🥞",
+  "mapNode": "dogu:kyuji",
+  "relatedTerms": [
+   "dg-fondant",
+   "dg-kafunsaishu"
+  ],
+  "bee": "西洋",
+  "description": "花粉や 花粉の かわりに なる 粉を、糖と 練った えさです。巣枠の 上に のせて おくと、花粉が 少ない 時期にも 子育てが すすみます。"
+ },
+ {
+  "id": "dg-markingcage",
+  "name": "マーキングケージ",
+  "reading": "まーきんぐけーじ",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🔲",
+  "mapNode": "dogu:kogu",
+  "relatedTerms": [
+   "dg-marking",
+   "dg-jo-shirushi"
+  ],
+  "bee": "西洋",
+  "description": "女王を そっと おさえて、背中に 印を つける ための 道具です。あみ目の すきまから ペンで 印を つけるので、女王を 手で つかまずに すみます。"
+ },
+ {
+  "id": "dg-clip",
+  "name": "クイーンクリップ",
+  "reading": "くいーんくりっぷ",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "📎",
+  "mapNode": "dogu:kogu",
+  "relatedTerms": [
+   "dg-markingcage",
+   "dg-marking"
+  ],
+  "bee": "西洋",
+  "description": "女王を 一時 中に 入れて おく、せんたくばさみの ような 小さな かごです。内検の あいだ、女王を 安全に よけて おけます。"
+ },
+ {
+  "id": "dg-hogoki",
+  "name": "王台保護器",
+  "reading": "おうだいほごき",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "dogu:kogu",
+  "relatedTerms": [
+   "dg-ichubari",
+   "dg-clip"
+  ],
+  "bee": "西洋",
+  "description": "王台を 入れて 守る、小さな 筒です。ほかの 女王や 働き蜂に 王台を こわされない ように して、新しい 女王が 生まれるのを 待ちます。"
+ },
+ {
+  "id": "dg-scraper",
+  "name": "スクレーパー",
+  "reading": "すくれーぱー",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🧽",
+  "mapNode": "dogu:kogu",
+  "relatedTerms": [
+   "dg-hivetool",
+   "dg-propsaishu"
+  ],
+  "bee": "西洋",
+  "description": "巣箱の ふちや 巣枠に ついた ろうや プロポリスを けずりとる へらです。そうじを すると ふたや 巣枠が ぴったり おさまります。"
+ },
+ {
+  "id": "dg-topbar",
+  "name": "トップバー巣箱",
+  "reading": "とっぷばーすばこ",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🛶",
+  "mapNode": "dogu:suwaku",
+  "relatedTerms": [
+   "dg-langbox",
+   "dg-karasuwaku"
+  ],
+  "bee": "共通",
+  "description": "巣枠の かわりに、上に 棒だけを ならべた 巣箱です。ハチは 棒から 自由に 巣を たらして つくります。かんたんな つくりで、世界の いろいろな 地域で 使われて います。"
+ },
+ {
+  "id": "dg-warre",
+  "name": "ワレ式巣箱",
+  "reading": "われしきすばこ",
+  "journey": "dogu",
+  "category": "巣箱の つくり",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🗼",
+  "mapNode": "dogu:tsugibako",
+  "relatedTerms": [
+   "dg-topbar",
+   "dg-tsugibako"
+  ],
+  "bee": "西洋",
+  "description": "フランスの 神父 ワレが 考えた、小さめの 四角い 箱を 重ねる 巣箱です。群が 大きく なると 新しい 箱を 下に 足して いきます。上に 足す 継箱とは 逆の 考えかたです。"
+ },
+ {
+  "id": "dg-mado",
+  "name": "観察窓",
+  "reading": "かんさつまど",
+  "journey": "dogu",
+  "category": "ニホンミツバチの 巣箱",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "dogu:tsugibako",
+  "relatedTerms": [
+   "dg-jubako",
+   "dg-tenita"
+  ],
+  "bee": "日本",
+  "description": "重箱式巣箱などに つける 窓です。ふたを あけずに 中の 巣の ようすを 見られるので、ハチを おどろかせずに すみます。ふだんは 板で ふさいで 暗く して おきます。"
+ },
+ {
+  "id": "dg-tsumetai",
+  "name": "冷たい煙",
+  "reading": "つめたいけむり",
+  "journey": "dogu",
+  "category": "煙の 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "dogu:kunen",
+  "relatedTerms": [
+   "dg-kunenki",
+   "dg-kunenzai"
+  ],
+  "bee": "共通",
+  "description": "燻煙器から 出す、熱すぎない 白い 煙の ことです。熱い 煙や 火花は ハチを いためるので、ゆっくり もやして ぬるい 煙に します。"
+ },
+ {
+  "id": "dg-jhook",
+  "name": "Jフック",
+  "reading": "じぇいふっく",
+  "journey": "dogu",
+  "category": "小さな 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🪝",
+  "mapNode": "dogu:kunen",
+  "relatedTerms": [
+   "dg-hivetool",
+   "dg-scraper"
+  ],
+  "bee": "西洋",
+  "description": "先が Jの 字の ように 曲がった ハイブツールです。かぎの 部分を 巣枠の 耳に かけて、てこの ように 持ちあげられます。おとなが 使う 道具です。"
+ },
+ {
+  "id": "dg-nidan",
+  "name": "二段こし",
+  "reading": "にだんごし",
+  "journey": "dogu",
+  "category": "採蜜の 道具",
+  "difficulty": 3,
+  "field": "道具",
+  "type": "concept",
+  "emoji": "🔽",
+  "mapNode": "dogu:bunriki",
+  "relatedTerms": [
+   "dg-mitsukoshi",
+   "dg-chomitsutank"
+  ],
+  "bee": "西洋",
+  "description": "あらい 網と 細かい 網を 二段に かさねた 蜜こし器です。上の あらい 網で ろうの かけらを とり、下の 細かい 網で 小さな ごみを こします。目づまりしにくいのが よい ところです。"
  }
 ]

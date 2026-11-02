@@ -831,6 +831,98 @@
   "description": "薬を 使う 時期や 方法を、決められた とおりに 守る ことです。守る ことで はちみつに 薬が のこらず、ダニに 薬が きかなく なる ことも ふせげます。"
  },
  {
+  "id": "bk-geri",
+  "name": "下痢",
+  "reading": "げり",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 2,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🟤",
+  "mapNode": "byoki:nozema",
+  "relatedTerms": [
+   "bk-nozema",
+   "bk-cerane"
+  ],
+  "bee": "共通",
+  "description": "ハチの ふんが 水っぽく なる ことです。巣箱の 前や 巣枠に 茶色い しみが ふえて いたら、ノゼマ病などの 手がかりに なります。気づいたら ようすを 記録して、指導員に 相談します。"
+ },
+ {
+  "id": "bk-sumonkansatsu",
+  "name": "巣門観察",
+  "reading": "すもんかんさつ",
+  "journey": "byoki",
+  "category": "守りかた",
+  "difficulty": 2,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "byoki:hoka",
+  "relatedTerms": [
+   "bk-yobo",
+   "bk-soki"
+  ],
+  "bee": "共通",
+  "description": "巣箱を あけずに、巣門の 前の ハチの ようすを 見る ことです。出入りの 多さや 花粉を 運ぶ ハチ、飛べずに 歩く ハチなどを 見ると、群の 調子が わかります。毎日 さっと 見るだけでも 早く 気づけます。"
+ },
+ {
+  "id": "bk-hokan",
+  "name": "巣枠の保管",
+  "reading": "すわくのほかん",
+  "journey": "byoki",
+  "category": "スムシ",
+  "difficulty": 2,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "byoki:sumushi",
+  "relatedTerms": [
+   "bk-sumushi",
+   "bk-reitohokan",
+   "bk-mippeihokan"
+  ],
+  "bee": "西洋",
+  "description": "使わない 巣枠を、次の 季節まで しまって おく ことです。ろうの 巣は スムシが 好むので、すずしく かわいた 場所で、すきまの ない 入れものに しまいます。"
+ },
+ {
+  "id": "bk-kogata",
+  "name": "コガタスズメバチ",
+  "reading": "こがたすずめばち",
+  "journey": "byoki",
+  "category": "スズメバチ",
+  "difficulty": 2,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🟠",
+  "mapNode": "byoki:suzume",
+  "relatedTerms": [
+   "bk-osuzume",
+   "bk-kiirosuzume"
+  ],
+  "bee": "共通",
+  "description": "日本に すむ スズメバチの 1つで、オオスズメバチより 小さめです。巣箱の 前で ミツバチを ねらう ことが あるので、巣門に よけの 網を つけて 守ります。庭木や 軒下に 巣を つくる ことも あります。"
+ },
+ {
+  "id": "bk-soki",
+  "name": "病気の早期発見",
+  "reading": "びょうきのそうきはっけん",
+  "journey": "byoki",
+  "category": "守りかた",
+  "difficulty": 2,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "byoki:eisei",
+  "relatedTerms": [
+   "bk-kensa",
+   "bk-eiseikanri",
+   "bk-sumonkansatsu"
+  ],
+  "bee": "共通",
+  "description": "病気を 小さな うちに 見つける ことです。内検の たびに 幼虫や さなぎの ようすを 見て、いつもと ちがう 色や においに 気づいたら、すぐ 家畜保健衛生所に 相談します。早く わかれば ほかの 群も 守れます。"
+ },
+ {
   "id": "bk-akarinsho",
   "name": "アカリンダニ症",
   "reading": "あかりんだにしょう",
@@ -1287,5 +1379,638 @@
   ],
   "bee": "共通",
   "description": "スムシに なる ガの なかまで、ハチノスツヅリガより 小さい 種類です。古巣や しまって おいた 巣枠に つきやすいので、すきまの ない 箱に しまって 守ります。"
+ },
+ {
+  "id": "bk-kiseiritsu",
+  "name": "寄生率",
+  "reading": "きせいりつ",
+  "journey": "byoki",
+  "category": "ダニ",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "byoki:varroa",
+  "relatedTerms": [
+   "bk-danikensa",
+   "bk-sugarroll"
+  ],
+  "bee": "西洋",
+  "description": "ハチの うち どれくらいに ダニが ついて いるかの 割合です。シュガーロール法などで しらべて、割合が 高く なって いたら 対策を 考える めやすに します。"
+ },
+ {
+  "id": "bk-shinnyu",
+  "name": "巣房への侵入",
+  "reading": "すぼうへのしんにゅう",
+  "journey": "byoki",
+  "category": "ダニ",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "byoki:varroa",
+  "relatedTerms": [
+   "bk-danihanshoku",
+   "bk-varroa",
+   "bk-obachitrap"
+  ],
+  "bee": "西洋",
+  "description": "バロアは、幼虫の 巣房に ふたが される 少し 前に 中へ 入りこみ、ふたの 下で ふえます。とくに 育つ 日数の 長い 雄蜂の 巣房を 好みます。この しくみを 知ると、雄蜂トラップの わけが わかります。"
+ },
+ {
+  "id": "bk-saishinnyu",
+  "name": "ダニの再侵入",
+  "reading": "だにのさいしんにゅう",
+  "journey": "byoki",
+  "category": "ダニ",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "byoki:varroa",
+  "relatedTerms": [
+   "bk-varroa",
+   "bk-kiseiritsu"
+  ],
+  "bee": "西洋",
+  "description": "ダニを へらした あとでも、ほかの 群から まよいこんだ ハチや 盗蜂に ついて、また ダニが 入って くる ことです。近くの 養蜂家と 対策の 時期を そろえると 防ぎやすく なります。"
+ },
+ {
+  "id": "bk-tropi",
+  "name": "トロピラエラップス",
+  "reading": "とろぴらえらっぷす",
+  "journey": "byoki",
+  "category": "ダニ",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "byoki:varroa",
+  "relatedTerms": [
+   "bk-varroa",
+   "bk-dani"
+  ],
+  "bee": "西洋",
+  "description": "アジアの オオミツバチに もともと つく 小さな ダニで、セイヨウミツバチにも うつります。バロアと 同じく 幼虫の 巣房で ふえます。外国では 広がらない よう 警戒されて います。"
+ },
+ {
+  "id": "bk-kji",
+  "name": "K字ばね",
+  "reading": "けーじばね",
+  "journey": "byoki",
+  "category": "ダニ",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🪽",
+  "mapNode": "byoki:akarin",
+  "relatedTerms": [
+   "bk-akarinsho",
+   "bk-haikai"
+  ],
+  "bee": "共通",
+  "description": "左右の はねが ずれて、K の 字のように ひらいた 形の ことです。アカリンダニ症の 手がかりの 1つと されて います。見つけたら 家畜保健衛生所に 相談して、顕微鏡で しらべて もらいます。"
+ },
+ {
+  "id": "bk-haikai",
+  "name": "徘徊蜂",
+  "reading": "はいかいばち",
+  "journey": "byoki",
+  "category": "ダニ",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "byoki:akarin",
+  "relatedTerms": [
+   "bk-akarinsho",
+   "bk-kji"
+  ],
+  "bee": "日本",
+  "description": "巣門の 前を 飛べずに 歩きまわる ハチの ことです。ニホンミツバチの アカリンダニ症で よく 見られます。数が ふえて いないか 毎日 見て、早めに 相談します。"
+ },
+ {
+  "id": "bk-hoshi",
+  "name": "胞子",
+  "reading": "ほうし",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "💠",
+  "mapNode": "byoki:nozema",
+  "relatedTerms": [
+   "bk-bihoshichu",
+   "bk-kenbikyo"
+  ],
+  "bee": "共通",
+  "description": "ノゼマなどが 作る、とても 小さな つぶです。ハチの おなかの 中で ふえ、ふんと いっしょに 外へ 出ます。目では 見えないので、顕微鏡で 見つけます。"
+ },
+ {
+  "id": "bk-kenbikyo",
+  "name": "顕微鏡検査",
+  "reading": "けんびきょうけんさ",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "byoki:nozema",
+  "relatedTerms": [
+   "bk-hoshi",
+   "bk-kensa",
+   "bk-nozema"
+  ],
+  "bee": "共通",
+  "description": "ハチの おなかの 中身や 巣房の 中の ものを、顕微鏡で 大きく して 見る 検査です。ノゼマの 胞子や 腐蛆病の 菌は 目では わからないので、家畜保健衛生所などで しらべます。"
+ },
+ {
+  "id": "bk-larvae",
+  "name": "パエニバチルス・ラーバエ",
+  "reading": "ぱえにばちるすらーばえ",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🧫",
+  "mapNode": "byoki:fuso",
+  "relatedTerms": [
+   "bk-americafuso",
+   "bk-gaho"
+  ],
+  "bee": "共通",
+  "description": "アメリカ腐蛆病の もとに なる 細菌です。熱や かわきに 強い 芽胞を 作るので、道具を 通じて ほかの 群へ うつる ことが あります。見つけたら 届け出て、家畜保健衛生所の 指示に したがいます。"
+ },
+ {
+  "id": "bk-pluton",
+  "name": "メリッソコッカス・プルトン",
+  "reading": "めりっそこっかすぷるとん",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🧫",
+  "mapNode": "byoki:fuso",
+  "relatedTerms": [
+   "bk-europefuso",
+   "bk-fuso"
+  ],
+  "bee": "共通",
+  "description": "ヨーロッパ腐蛆病の もとに なる 細菌です。ふたの まだ ない 若い 幼虫に うつる ことが 多いと されて います。届け出る 決まりの 病気なので、うたがったら すぐ 相談します。"
+ },
+ {
+  "id": "bk-rope",
+  "name": "ロープテスト",
+  "reading": "ろーぷてすと",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🧵",
+  "mapNode": "byoki:fuso",
+  "relatedTerms": [
+   "bk-americafuso",
+   "bk-kensa"
+  ],
+  "bee": "共通",
+  "description": "ようすの おかしい 巣房に 細い 棒を さし入れて、ゆっくり 引きだす 見わけかたです。中身が 糸の ように のびると、アメリカ腐蛆病の うたがいが あります。その ときは すぐ 家畜保健衛生所へ 知らせます。"
+ },
+ {
+  "id": "bk-scale",
+  "name": "スケール",
+  "reading": "すけーる",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "byoki:fuso",
+  "relatedTerms": [
+   "bk-americafuso",
+   "bk-rope"
+  ],
+  "bee": "共通",
+  "description": "病気で ようすが 変わった 幼虫が、巣房の 底で かわいて うすく はりついた ものです。とれにくく、腐蛆病の 手がかりに なります。見つけたら 巣枠を そのままに して、家畜保健衛生所に 相談します。"
+ },
+ {
+  "id": "bk-hekomi",
+  "name": "巣房のふたのへこみ",
+  "reading": "すぼうのふたのへこみ",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🕳️",
+  "mapNode": "byoki:fuso",
+  "relatedTerms": [
+   "bk-fuso",
+   "bk-americafuso"
+  ],
+  "bee": "共通",
+  "description": "さなぎの 巣房の ふたが へこんだり、小さな 穴が あいたり する ことです。ふだんの ふたは 少し ふくらんで いるので、ちがいに 気づけます。腐蛆病の 手がかりの 1つです。"
+ },
+ {
+  "id": "bk-ishu",
+  "name": "異臭",
+  "reading": "いしゅう",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "byoki:fuso",
+  "relatedTerms": [
+   "bk-fuso",
+   "bk-soki"
+  ],
+  "bee": "共通",
+  "description": "巣箱を あけた ときの、ふだんと ちがう いやな においです。腐蛆病などの 手がかりに なる ことが あります。気づいたら すぐに 家畜保健衛生所に 知らせます。"
+ },
+ {
+  "id": "bk-stone",
+  "name": "ストーンブルード病",
+  "reading": "すとーんぶるーどびょう",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🍄",
+  "mapNode": "byoki:hoka",
+  "relatedTerms": [
+   "bk-kabi",
+   "bk-chalk"
+  ],
+  "bee": "共通",
+  "description": "カビが もとに なる 幼虫の 病気で、幼虫が 石の ように かたく なる ことから 名前が つきました。巣箱を 清潔に して、中が しめりすぎない ように して 防ぎます。"
+ },
+ {
+  "id": "bk-mahi",
+  "name": "麻痺病",
+  "reading": "まひびょう",
+  "journey": "byoki",
+  "category": "病気",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🦠",
+  "mapNode": "byoki:hoka",
+  "relatedTerms": [
+   "bk-virus",
+   "bk-chijirebane"
+  ],
+  "bee": "共通",
+  "description": "ウイルスが もとに なる 成虫の 病気です。からだが ふるえたり、毛が ぬけて 黒っぽく 見えたり して、うまく 飛べない ハチが 出ます。巣箱が 混みあいすぎない ように し、群を 元気に たもって 防ぎます。"
+ },
+ {
+  "id": "bk-shb",
+  "name": "ハチノスムクゲケシキスイ",
+  "reading": "はちのすむくげけしきすい",
+  "journey": "byoki",
+  "category": "ほかの 敵",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🪲",
+  "mapNode": "byoki:teki",
+  "relatedTerms": [
+   "bk-sumushi",
+   "bk-tenteki"
+  ],
+  "bee": "西洋",
+  "description": "スモールハイブビートルとも よばれる、外国の 巣箱で 見つかって いる 小さな 甲虫です。巣の 中で 幼虫が ふえると、蜜や 巣が いたんで しまいます。外国では 養蜂家が 気を つけて 見張って います。"
+ },
+ {
+  "id": "bk-mippeihokan",
+  "name": "密閉保管",
+  "reading": "みっぺいほかん",
+  "journey": "byoki",
+  "category": "スムシ",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "byoki:sumushi",
+  "relatedTerms": [
+   "bk-hokan",
+   "bk-reitohokan"
+  ],
+  "bee": "西洋",
+  "description": "巣枠を 袋や ふたの ある 箱に 入れて、ぴったり 閉じて しまう ことです。スムシの もとに なる 蛾が 入れないので、巣が いたみにくく なります。冷凍してから しまうと さらに 安心です。"
+ },
+ {
+  "id": "bk-mon",
+  "name": "モンスズメバチ",
+  "reading": "もんすずめばち",
+  "journey": "byoki",
+  "category": "スズメバチ",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "byoki:suzume",
+  "relatedTerms": [
+   "bk-osuzume",
+   "bk-kogata"
+  ],
+  "bee": "共通",
+  "description": "日本に すむ スズメバチの 1つで、夜にも 動く ことが あると いわれます。ミツバチを ねらう ことも あるので、巣門の よけは 夕方も つけた ままに して 守ります。"
+ },
+ {
+  "id": "bk-suzumejoou",
+  "name": "スズメバチの女王",
+  "reading": "すずめばちのじょおう",
+  "journey": "byoki",
+  "category": "スズメバチ",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "👑",
+  "mapNode": "byoki:suzume",
+  "relatedTerms": [
+   "bk-hokakuki",
+   "bk-suzumenosu"
+  ],
+  "bee": "共通",
+  "description": "春に 冬ごしから 目ざめ、ひとりで 巣を つくりはじめる スズメバチの 女王です。この 時期に 捕獲器を かけて おくと、秋に 巣箱へ 来る スズメバチが 少なく なります。"
+ },
+ {
+  "id": "bk-densaku",
+  "name": "電気さく",
+  "reading": "でんきさく",
+  "journey": "byoki",
+  "category": "ほかの 敵",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "byoki:teki",
+  "relatedTerms": [
+   "bk-kuma",
+   "bk-tsukinowaguma"
+  ],
+  "bee": "共通",
+  "description": "巣箱の まわりに はる、ふれると ぴりっと する さくです。クマが 巣箱に 近づくのを いやがらせて、群を 守ります。人が さわらない よう、看板も 立てて おきます。"
+ },
+ {
+  "id": "bk-shinto",
+  "name": "浸透移行性",
+  "reading": "しんとういこうせい",
+  "journey": "byoki",
+  "category": "農薬",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "byoki:noyaku",
+  "relatedTerms": [
+   "bk-neonico",
+   "bk-noyakueikyo"
+  ],
+  "bee": "共通",
+  "description": "農薬が 根や 葉から 植物の 中に しみこんで 広がる 性質です。ネオニコチノイド系などが この 性質を もち、花粉や 蜜に 出る ことが あります。だから 農家との 話しあいが 大切です。"
+ },
+ {
+  "id": "bk-kamemushi",
+  "name": "カメムシ防除",
+  "reading": "かめむしぼうじょ",
+  "journey": "byoki",
+  "category": "農薬",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "byoki:noyaku",
+  "relatedTerms": [
+   "bk-noyakujoho",
+   "bk-renkei"
+  ],
+  "bee": "共通",
+  "description": "夏に 田んぼで 稲の 実を 守る ために 行う 農薬の 作業です。ミツバチが 田んぼの 近くを 飛ぶ 時期と かさなるので、日にちを 前もって 知らせあって 巣箱を 守ります。"
+ },
+ {
+  "id": "bk-renkei",
+  "name": "農家との連携",
+  "reading": "のうかとのれんけい",
+  "journey": "byoki",
+  "category": "農薬",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "byoki:noyaku",
+  "relatedTerms": [
+   "bk-noyakujoho",
+   "bk-taihi"
+  ],
+  "bee": "共通",
+  "description": "農家と 養蜂家が 話しあって、農薬を 使う 日や 場所を 前もって 知らせあう ことです。知らせが あれば 巣箱を うつしたり 巣門を とじたり できます。ミツバチは 受粉も 助けるので、おたがいの ためです。"
+ },
+ {
+  "id": "bk-taihi",
+  "name": "一時退避",
+  "reading": "いちじたいひ",
+  "journey": "byoki",
+  "category": "農薬",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "byoki:noyaku",
+  "relatedTerms": [
+   "bk-renkei",
+   "bk-noyakujoho"
+  ],
+  "bee": "西洋",
+  "description": "農薬を 使う 時期に、巣箱を はなれた 場所へ しばらく うつす ことです。うつせない ときは、知らせに あわせて 巣門を とじる 方法も あります。暑い 日は 巣箱の 中が 熱く ならない よう 気を つけます。"
+ },
+ {
+  "id": "bk-suitai",
+  "name": "群の衰退",
+  "reading": "ぐんのすいたい",
+  "journey": "byoki",
+  "category": "守りかた",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "byoki:tokyo",
+  "relatedTerms": [
+   "bk-shoshitsu",
+   "bk-stress"
+  ],
+  "bee": "共通",
+  "description": "群の ハチが だんだん 少なく なって、元気が なく なる ことです。ダニ・病気・えさ不足など もとは いろいろ あるので、内検の 記録を 見なおして 原因を さがします。"
+ },
+ {
+  "id": "bk-stress",
+  "name": "ストレス要因",
+  "reading": "すとれすよういん",
+  "journey": "byoki",
+  "category": "守りかた",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "byoki:tokyo",
+  "relatedTerms": [
+   "bk-suitai",
+   "bk-ccd"
+  ],
+  "bee": "共通",
+  "description": "群を よわらせる もとに なる ことがらです。ダニ・病気・えさ不足・農薬・暑さなどは 1つずつは 小さくても、重なると 群が よわります。1つずつ へらすのが 守りの 基本です。"
+ },
+ {
+  "id": "bk-eiseikodo",
+  "name": "衛生行動",
+  "reading": "えいせいこうどう",
+  "journey": "byoki",
+  "category": "守りかた",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "byoki:eisei",
+  "relatedTerms": [
+   "bk-daninotsuyosa",
+   "bk-eiseikanri"
+  ],
+  "bee": "共通",
+  "description": "働き蜂が、病気や ダニの ついた 幼虫に 気づいて、巣房の ふたを あけ 外へ 運び出す 性質です。人が する 衛生管理と ちがい、ハチ じしんの 守る 力です。この 性質の 強い 系統を 選ぶ 研究も あります。"
+ },
+ {
+  "id": "bk-sogo",
+  "name": "総合防除",
+  "reading": "そうごうぼうじょ",
+  "journey": "byoki",
+  "category": "守りかた",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "byoki:eisei",
+  "relatedTerms": [
+   "bk-yobo",
+   "bk-obachitrap",
+   "bk-daninokusuri"
+  ],
+  "bee": "共通",
+  "description": "薬だけに たよらず、いくつもの 方法を 組みあわせて 群を 守る 考えかたです。IPM とも よばれます。ダニを しらべる・雄蜂トラップ・強い 系統を 選ぶ・決まりどおりの 薬などを あわせて 使います。"
+ },
+ {
+  "id": "bk-aburi",
+  "name": "巣箱のあぶり",
+  "reading": "すばこのあぶり",
+  "journey": "byoki",
+  "category": "守りかた",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "byoki:eisei",
+  "relatedTerms": [
+   "bk-senjo",
+   "bk-eiseikanri"
+  ],
+  "bee": "西洋",
+  "description": "使い終わった 古い 巣箱の 内がわを、バーナーの 火で かるく あぶって 清潔に する ことです。すみに のこった ろうや よごれを へらせます。火を 使うので、おとなが する 作業です。"
+ },
+ {
+  "id": "bk-kakuri",
+  "name": "隔離",
+  "reading": "かくり",
+  "journey": "byoki",
+  "category": "守りかた",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "byoki:eisei",
+  "relatedTerms": [
+   "bk-manen",
+   "bk-kansen"
+  ],
+  "bee": "共通",
+  "description": "病気が うたがわれる 群を、ほかの 群から はなして おく ことです。巣枠や 道具も わけて 使い、うつるのを 防ぎます。腐蛆病の うたがいの ときは、家畜保健衛生所の 指示に したがいます。"
+ },
+ {
+  "id": "bk-shiyokiroku",
+  "name": "使用記録",
+  "reading": "しようきろく",
+  "journey": "byoki",
+  "category": "薬の 決まり",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "byoki:kusuri",
+  "relatedTerms": [
+   "bk-shiyonokimari",
+   "bk-shijisho"
+  ],
+  "bee": "共通",
+  "description": "動物用の 薬を 使った ときに、日にち・場所・薬の 名前などを 書きのこす 記録です。いつ 使ったかが わかれば、はちみつを とって よい 時期を まちがえません。指示書と いっしょに しまって おきます。"
+ },
+ {
+  "id": "bk-shijisho",
+  "name": "指示書",
+  "reading": "しじしょ",
+  "journey": "byoki",
+  "category": "薬の 決まり",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "byoki:kusuri",
+  "relatedTerms": [
+   "bk-juishi",
+   "bk-shiyokiroku"
+  ],
+  "bee": "共通",
+  "description": "獣医師が 薬の 使いかたを 書いて わたす 書類です。ダニの 薬なども、獣医師や 指導員の 指示で、決まりどおりに 使います。もらった 指示書は 使用記録と いっしょに 大切に しまいます。"
+ },
+ {
+  "id": "bk-yukisan",
+  "name": "有機酸",
+  "reading": "ゆうきさん",
+  "journey": "byoki",
+  "category": "薬の 決まり",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "byoki:kusuri",
+  "relatedTerms": [
+   "bk-gisan",
+   "bk-shusan"
+  ],
+  "bee": "共通",
+  "description": "ギ酸や シュウ酸などの、酸の なかまを まとめた よびかたです。ダニの 薬に 使われる ものも ありますが、獣医師や 指導員の 指示で、決まりどおりに 使います。自分で 作ったり しません。"
+ },
+ {
+  "id": "bk-zanryu",
+  "name": "残留",
+  "reading": "ざんりゅう",
+  "journey": "byoki",
+  "category": "薬の 決まり",
+  "difficulty": 3,
+  "field": "病気・害敵",
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "byoki:kusuri",
+  "relatedTerms": [
+   "bk-shiyonokimari",
+   "bk-shiyokiroku"
+  ],
+  "bee": "共通",
+  "description": "使った 薬が、はちみつや ろうの 中に のこる ことです。はちみつは 食べものなので、使う 時期や 期間の 決まりを 守って 防ぎます。とくに 採蜜の 前は 気を つけます。"
  }
 ]

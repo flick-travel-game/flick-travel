@@ -1692,7 +1692,8 @@
 - 📖 Wikipedia は 346 / 990語(`NO_WIKI` で 23語 外した: 処女王 → イングランドの 女王・コーカシアン → 人の 分類・給餌 → 食・ウォーミングアップ → 人の 運動 など)。
   写真は 175枚(集まった 299枚から 目で 見て 124枚 外した: 人の からだ・ちがう 虫や 動物・紋章・薬の 形・肉・弾薬箱 など。`NO_GAME_PHOTO`)
 - **トップの 絵は 入れた**(2026-11-02。`yoho/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。1回目は ゲームに 無い 札 約12こ・さなぎが 成虫・すむしが 甲虫・すずめばちが 病気の 箱 で 入れなかった。2回目は 札 45こ・4択(はちのじだんす)・990語の 箱・3つの レベル ぜんぶ ゲームと 合う。のこった「まなぶ ぶんや(きほん・せいせい・かんり)」の「せいせい」だけ **絵の 中で「せいたい」に 直した**(`tools/yoho/fix_text.py`)。もとの 絵は 入れものに 入れていない
-- **アイコンも 入れた**(2026-11-02。けいくんの 四角い 絵 1254px を 切らずに そのまま `tools/yoho/art/square-src.png` → `python3 tools/icon_from_square.py yoho`。`iconv` = 2)。小さい「せいせい」は アイコンの 大きさでは 読めないので そのまま。題名は まだ(`logo=False`)。
+- **アイコンも 入れた**(2026-11-02。けいくんの 四角い 絵 1254px を 切らずに そのまま `tools/yoho/art/square-src.png` → `python3 tools/icon_from_square.py yoho`。`iconv` = 2)。小さい「せいせい」は アイコンの 大きさでは 読めないので そのまま。
+- **題名も 入れた**(2026-11-02。けいくんの ChatGPT の 切りぬき `tools/yoho/art/title-src.png` 2172×724 → `python3 tools/title_from_art.py yoho` → `yoho/logo-word.webp` 900×233。`logo=True`・`wordv` = 3)。「フリック養蜂家」7字を 読んで 確かめた(蜂 は 虫へん)。
   届いたら 四角い 絵 → `tools/yoho/art/square-src.png` → `python3 tools/icon_from_square.py yoho`(`iconv` +1)/ 題名の 透明 PNG → `tools/yoho/art/title-src.png` → `python3 tools/title_from_art.py yoho`(`logo=True`・`art.word` を 実寸)/ `yoho/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **刺されて いる ところ・はれた 顔・スズメバチが おそう ところ・はちみつの 商品や 会社の ロゴ**を 描かせない。人物は 下 3分の1に 小さく。「養峰家」「養蜂屋」「養蜂士」に なりやすいので 届いた 字を かならず 読む(蜂 = 虫へん)。販売ページ `HOME_CHAPTERS` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
 - ⭐ **毎年の 見直しの 予約が ある**(`trig_01BDNFi1Cz8GrsskdXPyCHmi`。毎年 **1月10日** 朝8時45分。けいくん 2026-11-02「予約も作ってください」)。蜜蜂飼育届の 時期に 養蜂振興法・家畜伝染病予防法の 蜜蜂の 伝染病・はちみつの 表示・1歳未満の よびかけ を 公式ページで 確かめて、変わって いたら terms と exam.txt を 直す。⚠️ 予約には GitHub の 道具が ついていない(PR を 作れない ときは 枝に push して 知らせる)。ファイル名を 変えない

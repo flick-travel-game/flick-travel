@@ -445,11 +445,11 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
       <img class="logo-mark" src="logo-mark2.webp?v=2" alt="" width="144" height="144" aria-hidden="true">
-      <span class="logo-text">フリック養蜂家</span>
+      <img class="logo-word" src="logo-word.webp?v=3" alt="" width="900" height="233" aria-hidden="true">
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック養蜂家</h1>
-    <img class="hero" src="hero.webp?v=2" alt="フリック養蜂家" width="1536" height="1024">
+    <img class="hero" src="hero.webp?v=3" alt="フリック養蜂家" width="1536" height="1024">
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
     <!-- 答えの ひらがな あり / 無し(けいくん 2026-10-24「フリック漢字以外のすべてのフリックゲームも ひらがな無しの選択が出来るようにしてください」)。
          ぜんぶの ゲームで 同じ 1つの きまり(localStorage の flick-kana)。無し = 打つ 字が ？ に なる(まちがえた 1字だけ 見える)。自己ベストは あり / 無し で 別 -->
@@ -588,7 +588,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"yoho", name:"フリック養蜂家", modes:(typeof YOHO === "object" ? YOHO.modes : []), assets:"../", logo:false, hero:true, dir:"yoho/", lead:"ミツバチの きほん・からだと 一生・巣箱と 道具・養蜂の 1年の しごと・花と 蜜源・はちみつと 生産物・病気と 敵・女王と 群の ふやしかた・法律と 養蜂の しごとの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、セイヨウミツバチの 話か ニホンミツバチの 話か(🐝 の 札)・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。ミツバチが すきな 小学生の ことばから はじめて、はじめて 巣箱を 持つ 人、プロの 養蜂家の ことばまで。巣房が 六角形な わけ・8の字ダンス・女王蜂は およそ 16日で 生まれる、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。ミツバチは めったに 刺さない おとなしい 生きものだよ。巣箱には おとなと いっしょに 近づこうね。本当の 飼育・薬・届出は 都道府県・家畜保健衛生所・獣医師の 案内を 見てください。はちみつは 1歳未満の 赤ちゃんに あげません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、ミツバチと 花と はちみつと 養蜂家の しごとが つながって 見えてくるよ。農林水産省・日本養蜂協会・養蜂場・はちみつの 会社とは 関係ありません。" };
+const GAME = { id:"yoho", name:"フリック養蜂家", modes:(typeof YOHO === "object" ? YOHO.modes : []), assets:"../", logo:true, hero:true, dir:"yoho/", lead:"ミツバチの きほん・からだと 一生・巣箱と 道具・養蜂の 1年の しごと・花と 蜜源・はちみつと 生産物・病気と 敵・女王と 群の ふやしかた・法律と 養蜂の しごとの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、セイヨウミツバチの 話か ニホンミツバチの 話か(🐝 の 札)・学ぶ 分野・しくみ図の どこに あるのかが 出るよ。ミツバチが すきな 小学生の ことばから はじめて、はじめて 巣箱を 持つ 人、プロの 養蜂家の ことばまで。巣房が 六角形な わけ・8の字ダンス・女王蜂は およそ 16日で 生まれる、などの 「へえ」も たくさん。4択クイズで 意味を たしかめる 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。ミツバチは めったに 刺さない おとなしい 生きものだよ。巣箱には おとなと いっしょに 近づこうね。本当の 飼育・薬・届出は 都道府県・家畜保健衛生所・獣医師の 案内を 見てください。はちみつは 1歳未満の 赤ちゃんに あげません。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、ミツバチと 花と はちみつと 養蜂家の しごとが つながって 見えてくるよ。農林水産省・日本養蜂協会・養蜂場・はちみつの 会社とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

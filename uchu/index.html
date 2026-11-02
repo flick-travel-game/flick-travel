@@ -78,6 +78,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-o
 .how p{margin:0 0 6px}
 .about-link{margin:14px 0 0;font-size:13px}.about-link a{color:var(--muted)}
 .legal-links{margin:8px 0 0;font-size:11px;line-height:1.9;display:flex;flex-wrap:wrap;gap:0 8px}.legal-links a{color:var(--muted)}.legal-links span{color:var(--muted);opacity:.5}
+.how .lnk{border:none;background:none;padding:0;font:inherit;font-weight:900;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .how .rule{color:var(--ink);font-weight:700;background:var(--soft);border-radius:10px;padding:10px 12px;margin-top:10px}
 
 /* ゲーム：キーボードが出ても画面内に収まるよう、見えている範囲に合わせて固定 */
@@ -502,6 +503,8 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       </div>
     </section>
     <div class="how">
+      <!-- 遊びかたの 1行目(けいくん 2026-11-02「マイページから ニックネームと アイコンを決めてと 伝えた方がいい」) -->
+      <p id="how0">さいしょに 右上の <button type="button" class="lnk" id="how0-btn">マイページ</button> で ニックネームと アイコンを 決めてね。きろくは その なまえで のこるよ。</p>
       <p id="how1">表示されたひらがなを、そのまま打ち写してね。レベル1がいちばんかんたん。どのレベルも いつも同じ10問なので、タイムをくらべられるよ。</p>
       <p>漢字に変換しなくてOK。句読点やスペースは打たなくて大丈夫。</p>
       <p class="rule" id="rule1">ルール：予測変換は使わずに、自分の指で打ち切ろう。速くなるほど、世界の名所も自然と覚えられるよ。</p>
@@ -3844,6 +3847,7 @@ if(!GAME.logo){ const mk = $(".logo-mark"); if(mk) mk.remove(); const w = $(".lo
 if(!GAME.hero){ const h = $(".hero"); if(h) h.remove(); }
 if(GAME.lead) $("#lead").textContent = GAME.lead;
 if(GAME.how) $("#how1").textContent = GAME.how;
+{ const b = $("#how0-btn"); if(b) b.addEventListener("click", () => $("#prof-btn").click()); }
 if(GAME.rule) $("#rule1").textContent = GAME.rule;
 /* シリーズの ほかのゲームへ: いちばん下にも マイページと 同じ「🧭 ゲームを えらぶ」の タイル(けいくん 2026-09-30「これと同じ表記にしてください」。まえは 絵文字 + 名前の 文字の ならび) */
 { const p = document.createElement("div"); p.className = "series";

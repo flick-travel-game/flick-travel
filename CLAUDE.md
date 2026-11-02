@@ -1694,6 +1694,7 @@
 - 絵は **まだ**(仮の アイコン `tools/yoho/placeholder_icon.py` = はちみつ色の 地に 六角形の 巣。`hero=False`・`logo=False`)。
   届いたら 四角い 絵 → `tools/yoho/art/square-src.png` → `python3 tools/icon_from_square.py yoho`(`iconv` +1)/ 題名の 透明 PNG → `tools/yoho/art/title-src.png` → `python3 tools/title_from_art.py yoho`(`logo=True`・`art.word` を 実寸)/ `yoho/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **刺されて いる ところ・はれた 顔・スズメバチが おそう ところ・はちみつの 商品や 会社の ロゴ**を 描かせない。人物は 下 3分の1に 小さく。「養峰家」「養蜂屋」「養蜂士」に なりやすいので 届いた 字を かならず 読む(蜂 = 虫へん)。販売ページ `HOME_CHAPTERS` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
+- ⭐ **毎年の 見直しの 予約が ある**(`trig_01BDNFi1Cz8GrsskdXPyCHmi`。毎年 **1月10日** 朝8時45分。けいくん 2026-11-02「予約も作ってください」)。蜜蜂飼育届の 時期に 養蜂振興法・家畜伝染病予防法の 蜜蜂の 伝染病・はちみつの 表示・1歳未満の よびかけ を 公式ページで 確かめて、変わって いたら terms と exam.txt を 直す。⚠️ 予約には GitHub の 道具が ついていない(PR を 作れない ときは 枝に push して 知らせる)。ファイル名を 変えない
 - 確かめかた: `node tools/play-all.mjs yoho/`(全198ステージ。旅 9×11 + マスター 99)/ `node tools/click-all.mjs yoho/`(W=320 も)/ `python3 tools/yoho/terms_js.py --check`
 
 ## フリックメンタリスト(`mentalist/`。けいくん 2026-10-23「世界トップレベルのメンタリストになるために必要な知識をフリック形式の問題にしてください」→「メンタリストになれるように 実践的にしてほしい」→ 5つの 問いに「全部おすすめで」。まとめは `docs/フリックメンタリスト-はじめかた.md`)

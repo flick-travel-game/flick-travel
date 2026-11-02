@@ -312,49 +312,54 @@
     "養蜂場の旅人"
    ],
    [
-    30,
+    40,
     "🐝",
     "はじめての巣箱"
    ],
    [
-    60,
+    90,
     "🔬",
     "ミツバチの物知り"
    ],
    [
-    100,
+    150,
     "🧰",
     "道具の仲間"
    ],
    [
-    160,
+    230,
     "🗓",
     "1年の仕事の仲間"
    ],
    [
-    240,
+    330,
     "🌸",
     "蜜源の案内人"
    ],
    [
-    320,
+    450,
     "🍯",
     "はちみつの職人"
    ],
    [
-    420,
+    580,
     "🛡",
     "群の守り手"
    ],
    [
-    520,
+    720,
     "👑",
     "女王づくりの名人"
    ],
    [
-    600,
+    860,
     "🧑‍🌾",
     "一人前の養蜂家"
+   ],
+   [
+    960,
+    "🏅",
+    "プロの養蜂家"
    ]
   ],
   "allTitle": [
@@ -2395,6 +2400,97 @@
    "description": "ほかの 国や 地域から 人の 手で 入って きた 生きものです。セイヨウミツバチは 明治時代に 日本へ 来ました。いまは 養蜂家が 巣箱で 大切に 飼って います。"
   },
   {
+   "id": "kh-hanabachi",
+   "name": "ハナバチ",
+   "reading": "はなばち",
+   "journey": "kihon",
+   "category": "ミツバチの なかま",
+   "difficulty": 2,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🌼",
+   "mapNode": "kihon:jufun",
+   "relatedTerms": [
+    "kh-mitsubachi",
+    "kh-jufun"
+   ],
+   "bee": "共通",
+   "description": "花の 蜜と 花粉で 子を 育てる ハチの なかまの よび名です。ミツバチも ハナバチの ひとつで、ほかに マルハナバチや クマバチなども います。花と いっしょに くらす ハチたちです。"
+  },
+  {
+   "id": "kh-su-ondo",
+   "name": "巣の温度",
+   "reading": "すのおんど",
+   "journey": "kihon",
+   "category": "巣の つくり",
+   "difficulty": 2,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🌡",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-ikujiken",
+    "kh-hoji"
+   ],
+   "bee": "共通",
+   "description": "子育て中の 巣の まん中は、およそ 34〜35℃に たもたれて います。外が 暑くても 寒くても、働き蜂が あたためたり 冷やしたり して、幼虫や さなぎが 育ちやすい 温度に して います。"
+  },
+  {
+   "id": "kh-mizukumi",
+   "name": "水くみ蜂",
+   "reading": "みずくみばち",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 2,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "💧",
+   "mapNode": "kihon:hataraki",
+   "relatedTerms": [
+    "kh-hatarakibachi",
+    "kh-bungyo"
+   ],
+   "bee": "共通",
+   "description": "水を 運ぶ 役目の 働き蜂です。暑い 日は 運んだ 水で 巣を 冷やし、幼虫の えさを うすめる ときにも 使います。巣箱の 近くに 水場が あると、ハチが 遠くまで 行かずに すみます。"
+  },
+  {
+   "id": "kh-bunpo-kisetsu",
+   "name": "分蜂の季節",
+   "reading": "ぶんぽうのきせつ",
+   "journey": "kihon",
+   "category": "ふえる しくみ",
+   "difficulty": 2,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🌸",
+   "mapNode": "kihon:bunpo",
+   "relatedTerms": [
+    "kh-bunpo",
+    "kh-bunpogun"
+   ],
+   "bee": "西洋",
+   "description": "分蜂が 起きやすい 季節で、おもに 春から 初夏です。花が たくさん さいて 群が 大きく なり、巣が せまく なる ころに 起きます。養蜂家は この 季節に 巣箱を よく 見まわります。"
+  },
+  {
+   "id": "kh-kafun-yakume",
+   "name": "花粉の役目",
+   "reading": "かふんのやくめ",
+   "journey": "kihon",
+   "category": "花と みつ",
+   "difficulty": 2,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🍼",
+   "mapNode": "kihon:kafun",
+   "relatedTerms": [
+    "kh-kafun",
+    "kh-tanpaku",
+    "kh-beebread"
+   ],
+   "bee": "共通",
+   "description": "花粉は、ミツバチに とって タンパク質の もとです。育児蜂は 花粉を 食べて、幼虫の えさを つくります。花粉が 足りないと 子育てが すすまないので、春の 花粉は とても 大切です。"
+  },
+  {
    "id": "kh-choukotai",
    "name": "超個体",
    "reading": "ちょうこたい",
@@ -2845,6 +2941,639 @@
    ],
    "bee": "共通",
    "description": "なかまどうしで 知らせあう ことです。ミツバチは ダンスで 花の 場所を、においで 女王の ようすや あぶない ことを 伝えあって います。"
+  },
+  {
+   "id": "kh-hatsunetsu",
+   "name": "発熱行動",
+   "reading": "はつねつこうどう",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🔥",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-su-ondo",
+    "kh-ikujiken"
+   ],
+   "bee": "共通",
+   "description": "飛ぶ ための 胸の 筋肉を ふるわせて、熱を 出す ことです。はねは 動かさずに 体を あたため、さなぎや 冬の 群を 温めます。ミツバチは 自分で 熱を つくれる 昆虫なのです。"
+  },
+  {
+   "id": "kh-kika",
+   "name": "気化冷却",
+   "reading": "きかれいきゃく",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🌬",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-mizukumi",
+    "kh-su-ondo"
+   ],
+   "bee": "共通",
+   "description": "巣の 中に 水を うすく ぬり、はねで あおいで 蒸発させて 冷やす しくみです。水が 蒸発する ときに 熱を うばうので、夏の 巣も 涼しく たもてます。人が あせを かくのと 同じ しくみです。"
+  },
+  {
+   "id": "kh-torimaki",
+   "name": "女王の取り巻き",
+   "reading": "じょおうのとりまき",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "👑",
+   "mapNode": "kihon:joou",
+   "relatedTerms": [
+    "kh-joouba",
+    "kh-joobusshitsu"
+   ],
+   "bee": "共通",
+   "description": "女王の まわりを かこんで、えさを あげたり 体を なめたり する 働き蜂たちです。女王の においを 体に つけて 巣の 中を 歩き、群 全体に「女王は 元気」と 伝えます。"
+  },
+  {
+   "id": "kh-ifu",
+   "name": "異父姉妹",
+   "reading": "いふしまい",
+   "journey": "kihon",
+   "category": "ふえる しくみ",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "👭",
+   "mapNode": "kihon:colony",
+   "relatedTerms": [
+    "kh-kobi",
+    "kh-hanbaisu"
+   ],
+   "bee": "共通",
+   "description": "母は 同じで、父が ちがう 姉妹の ことです。女王は 空で 何びきもの 雄蜂と 出会うので、ひとつの 群には 父の ちがう 働き蜂が まざって います。そのぶん 群の 性質が ゆたかに なります。"
+  },
+  {
+   "id": "kh-ransou",
+   "name": "働き蜂の卵巣",
+   "reading": "はたらきばちのらんそう",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🔒",
+   "mapNode": "kihon:hataraki",
+   "relatedTerms": [
+    "kh-joobusshitsu",
+    "kh-hojiph",
+    "kh-museiran"
+   ],
+   "bee": "共通",
+   "description": "働き蜂も 卵巣を もって いますが、ふだんは 育ちません。女王物質と 幼虫の においが 発達を おさえて いるからです。女王が いなく なると 卵巣が 育ち、無精卵を 産む ことが あります。"
+  },
+  {
+   "id": "kh-hojiph",
+   "name": "蜂児フェロモン",
+   "reading": "ほうじふぇろもん",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "👶",
+   "mapNode": "kihon:colony",
+   "relatedTerms": [
+    "kh-hoji",
+    "kh-ransou"
+   ],
+   "bee": "共通",
+   "description": "幼虫や さなぎが 出す においです。働き蜂に 子育てを うながし、働き蜂の 卵巣の 発達も おさえます。子どもの においが 群の 動きを 決めて いるのです。"
+  },
+  {
+   "id": "kh-ishikettei",
+   "name": "集団意思決定",
+   "reading": "しゅうだんいしけってい",
+   "journey": "kihon",
+   "category": "ふえる しくみ",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🗳",
+   "mapNode": "kihon:bunpo",
+   "relatedTerms": [
+    "kh-tansakubachi",
+    "kh-bunpogun",
+    "kh-teisoku"
+   ],
+   "bee": "共通",
+   "description": "分蜂群が 新しい すみかを みんなで 決める しくみです。探索蜂が 見つけた 場所を ダンスで 知らせ、よい 場所ほど 多くの ハチが 見に 行きます。決める リーダーは いません。"
+  },
+  {
+   "id": "kh-teisoku",
+   "name": "定足数",
+   "reading": "ていそくすう",
+   "journey": "kihon",
+   "category": "ふえる しくみ",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🔢",
+   "mapNode": "kihon:bunpo",
+   "relatedTerms": [
+    "kh-ishikettei",
+    "kh-tansakubachi"
+   ],
+   "bee": "共通",
+   "description": "すみかの 候補地に 集まった 探索蜂の 数が、ある 数を こえた ときに 行き先が 決まる しくみです。会議で 人数が そろうと 決められるのと 似て いるので、この 名前で よばれます。"
+  },
+  {
+   "id": "kh-piping",
+   "name": "パイピング",
+   "reading": "ぱいぴんぐ",
+   "journey": "kihon",
+   "category": "ふえる しくみ",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🎺",
+   "mapNode": "kihon:joou",
+   "relatedTerms": [
+    "kh-joouba",
+    "kh-bunpo"
+   ],
+   "bee": "共通",
+   "description": "女王が 出す、笛の ような 音です。新しい 女王が 生まれる ころや 分蜂の ころに、巣箱に 耳を あてると 聞こえる ことが あります。「トゥーッ」と ひびく ふしぎな 音です。"
+  },
+  {
+   "id": "kh-oomitsu",
+   "name": "オオミツバチ",
+   "reading": "おおみつばち",
+   "journey": "kihon",
+   "category": "ミツバチの なかま",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🌳",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-komitsu",
+    "kh-zoku"
+   ],
+   "bee": "共通",
+   "description": "アジアの 南に すむ 大きな ミツバチです。木の 高い 枝や がけに、1枚だけの 大きな 巣を 外に むき出しで つくります。日本には すんで いません。"
+  },
+  {
+   "id": "kh-komitsu",
+   "name": "コミツバチ",
+   "reading": "こみつばち",
+   "journey": "kihon",
+   "category": "ミツバチの なかま",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🌿",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-oomitsu",
+    "kh-zoku"
+   ],
+   "bee": "共通",
+   "description": "アジアの 南に すむ、とても 小さな ミツバチです。木の 枝を つつむ ように、手の ひらほどの 1枚の 巣を つくります。日本には すんで いません。"
+  },
+  {
+   "id": "kh-judo",
+   "name": "樹洞",
+   "reading": "じゅどう",
+   "journey": "kihon",
+   "category": "巣の つくり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🌲",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-yaseigun",
+    "kh-nihon"
+   ],
+   "bee": "共通",
+   "description": "木の 幹に できた ほら穴、うろの ことです。野生の ミツバチは 樹洞の 中に 巣を つくり、雨や 寒さを ふせぎます。巣箱は この 樹洞を まねた 家とも 言えます。"
+  },
+  {
+   "id": "kh-katamuki",
+   "name": "巣房の傾き",
+   "reading": "すぼうのかたむき",
+   "journey": "kihon",
+   "category": "巣の つくり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-subo",
+    "kh-chomitsu"
+   ],
+   "bee": "共通",
+   "description": "巣房は 横向きですが、入口が 少し 上を 向く ように かたむいて います。蜜が こぼれにくく なる ためと 言われて きましたが、くわしい わけは いまも 研究されて います。"
+  },
+  {
+   "id": "kh-hatarakisubo",
+   "name": "働き蜂巣房",
+   "reading": "はたらきばちすぼう",
+   "journey": "kihon",
+   "category": "巣の つくり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🧩",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-obachisubo",
+    "kh-subo"
+   ],
+   "bee": "共通",
+   "description": "働き蜂が 育つ 巣房で、巣の 中で いちばん 多い 小さめの へやです。雄蜂巣房より ひとまわり 小さく、ふたも 平らです。蜜や 花粉を ためる ときにも 使われます。"
+  },
+  {
+   "id": "kh-ikosubo",
+   "name": "移行巣房",
+   "reading": "いこうすぼう",
+   "journey": "kihon",
+   "category": "巣の つくり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🔀",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-hatarakisubo",
+    "kh-obachisubo"
+   ],
+   "bee": "共通",
+   "description": "働き蜂巣房と 雄蜂巣房の さかいめや 巣の ふちに できる、形の そろわない 巣房です。大きさの ちがう へやを つなぐ ために、ハチが 形を 少しずつ かえて つくります。"
+  },
+  {
+   "id": "kh-kafunken",
+   "name": "花粉圏",
+   "reading": "かふんけん",
+   "journey": "kihon",
+   "category": "巣の つくり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🟡",
+   "mapNode": "kihon:kafun",
+   "relatedTerms": [
+    "kh-ikujiken",
+    "kh-chomitsuken",
+    "kh-beebread"
+   ],
+   "bee": "共通",
+   "description": "巣板の 中で、花粉が ためられる 帯の ような ところです。まん中の 育児圏と 上の 貯蜜圏の あいだに できる ことが 多く、育児蜂が すぐ 取りに 行けます。"
+  },
+  {
+   "id": "kh-shunen",
+   "name": "群の周年変化",
+   "reading": "ぐんのしゅうねんへんか",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "📆",
+   "mapNode": "kihon:colony",
+   "relatedTerms": [
+    "kh-gunsei",
+    "kh-oidashi"
+   ],
+   "bee": "西洋",
+   "description": "1年の 中で 群の 大きさが かわる ようすです。春に 子育てが ふえて 大きく なり、秋には 雄蜂が いなく なり、冬は 小さく まとまって 春を 待ちます。"
+  },
+  {
+   "id": "kh-policing",
+   "name": "ワーカーポリシング",
+   "reading": "わーかーぽりしんぐ",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "👮",
+   "mapNode": "kihon:colony",
+   "relatedTerms": [
+    "kh-ransou",
+    "kh-museiran"
+   ],
+   "bee": "共通",
+   "description": "働き蜂が 産んだ 卵を、ほかの 働き蜂が 見つけて とりのぞく ふるまいです。女王の 卵と においで 見わけて いると 考えられ、群の 子は ほぼ 女王の 子に なります。"
+  },
+  {
+   "id": "kh-junan",
+   "name": "分業の柔軟性",
+   "reading": "ぶんぎょうのじゅうなんせい",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "kihon:hataraki",
+   "relatedTerms": [
+    "kh-bungyo",
+    "kh-hatarakibachi"
+   ],
+   "bee": "共通",
+   "description": "足りない しごとが あると、働き蜂が 日齢に かかわらず 役目を かえられる ことです。若い ハチが 早めに 外へ 出たり、外で 働く ハチが 子育てに もどったり します。"
+  },
+  {
+   "id": "kh-drift",
+   "name": "ドリフト",
+   "reading": "どりふと",
+   "journey": "kihon",
+   "category": "養蜂",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "↪️",
+   "mapNode": "kihon:yoho",
+   "relatedTerms": [
+    "kh-subako",
+    "kh-kiso"
+   ],
+   "bee": "西洋",
+   "description": "ハチが まちがえて となりの 巣箱に 入って しまう ことです。同じ 形の 巣箱が 一列に ならぶと 起きやすく、巣箱の 向きや 色を かえると へらせます。"
+  },
+  {
+   "id": "kh-kumabachi",
+   "name": "クマバチ",
+   "reading": "くまばち",
+   "journey": "kihon",
+   "category": "ミツバチの なかま",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🐻",
+   "mapNode": "kihon:jufun",
+   "relatedTerms": [
+    "kh-hanabachi",
+    "kh-yaseihana"
+   ],
+   "bee": "共通",
+   "description": "春に 花の まわりを ブーンと 飛ぶ、大きくて 黒い ハナバチです。胸に 黄色い 毛が あります。見た目は 大きいですが とても おとなしく、フジなどの 花の 受粉を 助けます。"
+  },
+  {
+   "id": "kh-tayosei",
+   "name": "生物多様性",
+   "reading": "せいぶつたようせい",
+   "journey": "kihon",
+   "category": "花と みつ",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🦋",
+   "mapNode": "kihon:jufun",
+   "relatedTerms": [
+    "kh-seitaikei",
+    "kh-jufun"
+   ],
+   "bee": "共通",
+   "description": "いろいろな 生きものが、つながりあって くらして いる ことです。ミツバチや ほかの 虫が 花を 受粉させ、実や たねが できて、それを 食べる 生きものも くらして いけます。"
+  },
+  {
+   "id": "kh-yaseihana",
+   "name": "野生ハナバチ",
+   "reading": "やせいはなばち",
+   "journey": "kihon",
+   "category": "ミツバチの なかま",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🐝",
+   "mapNode": "kihon:jufun",
+   "relatedTerms": [
+    "kh-hanabachi",
+    "kh-kumabachi"
+   ],
+   "bee": "共通",
+   "description": "マルハナバチや ヒメハナバチなど、野山で くらす ハナバチの なかまです。1ぴきの メスだけで 巣を つくる 種類も 多く、ミツバチと いっしょに 花や 作物の 受粉を 支えて います。"
+  },
+  {
+   "id": "kh-genchi",
+   "name": "原産地",
+   "reading": "げんさんち",
+   "journey": "kihon",
+   "category": "ミツバチの なかま",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🗺",
+   "mapNode": "kihon:seiyo",
+   "relatedTerms": [
+    "kh-seiyo",
+    "kh-gairaishu"
+   ],
+   "bee": "西洋",
+   "description": "その 生きものが もともと すんで いた 土地です。セイヨウミツバチの 原産地は ヨーロッパや アフリカ、中東の あたりで、そこから 人の 手で 世界中に 広まりました。"
+  },
+  {
+   "id": "kh-kioku",
+   "name": "時間の記憶",
+   "reading": "じかんのきおく",
+   "journey": "kihon",
+   "category": "花と みつ",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "⏰",
+   "mapNode": "kihon:mitsu",
+   "relatedTerms": [
+    "kh-houka",
+    "kh-teikasei"
+   ],
+   "bee": "共通",
+   "description": "花が 蜜を 出す 時こくを おぼえて、その 時間に 合わせて 出かける 力です。朝だけ 蜜を 出す 花には 朝に 通います。ミツバチは 体の 中に 時計を もって いるのです。"
+  },
+  {
+   "id": "kh-nioigaku",
+   "name": "においの学習",
+   "reading": "においのがくしゅう",
+   "journey": "kihon",
+   "category": "花と みつ",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "👃",
+   "mapNode": "kihon:mitsu",
+   "relatedTerms": [
+    "kh-teikasei",
+    "kh-kioku"
+   ],
+   "bee": "共通",
+   "description": "花の においと 蜜を むすびつけて おぼえる ことです。巣に 帰った ハチの 体や 蜜の においから、なかまも どの 花が よいかを 知る ことが できます。"
+  },
+  {
+   "id": "kh-suniori",
+   "name": "巣のにおい",
+   "reading": "すのにおい",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🪪",
+   "mapNode": "kihon:colony",
+   "relatedTerms": [
+    "kh-colony",
+    "kh-dentatsu"
+   ],
+   "bee": "共通",
+   "description": "群ごとに ちがう、巣の においです。巣門を 守る 門番の ハチは この においで、なかまと よその ハチを 見わけます。においが 家族の 合いことばに なって いるのです。"
+  },
+  {
+   "id": "kh-harinashi",
+   "name": "ハリナシバチ",
+   "reading": "はりなしばち",
+   "journey": "kihon",
+   "category": "ミツバチの なかま",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🍯",
+   "mapNode": "kihon:mitsu",
+   "relatedTerms": [
+    "kh-hanabachi",
+    "kh-zoku"
+   ],
+   "bee": "共通",
+   "description": "あたたかい 国に すむ、針が 小さくて 刺さない ハナバチの なかまです。ミツバチと 同じ ように 群で くらし、はちみつを つくります。ミツバチとは 別の なかまで、巣の 形も ちがいます。"
+  },
+  {
+   "id": "kh-furue",
+   "name": "震えダンス",
+   "reading": "ふるえだんす",
+   "journey": "kihon",
+   "category": "花と みつ",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🫨",
+   "mapNode": "kihon:mitsu",
+   "relatedTerms": [
+    "kh-uketori",
+    "kh-dentatsu"
+   ],
+   "bee": "共通",
+   "description": "巣に 帰った 採餌蜂が、体を ふるわせながら 歩きまわる ダンスです。蜜を 受けとる なかまが 足りない ときに おどり、「受けとり役を ふやして」と 知らせます。"
+  },
+  {
+   "id": "kh-uketori",
+   "name": "受け取り蜂",
+   "reading": "うけとりばち",
+   "journey": "kihon",
+   "category": "花と みつ",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "📥",
+   "mapNode": "kihon:mitsu",
+   "relatedTerms": [
+    "kh-furue",
+    "kh-chomitsu"
+   ],
+   "bee": "共通",
+   "description": "外から 帰った 採餌蜂から、口うつしで 蜜を 受けとる 若い 働き蜂です。蜜を 巣房に ためながら、水分を とばして はちみつに 近づけて いきます。"
+  },
+  {
+   "id": "kh-saimitsugun",
+   "name": "採蜜群",
+   "reading": "さいみつぐん",
+   "journey": "kihon",
+   "category": "養蜂",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🍯",
+   "mapNode": "kihon:yoho",
+   "relatedTerms": [
+    "kh-yohoka",
+    "kh-gunsei"
+   ],
+   "bee": "西洋",
+   "description": "はちみつを とる ために、強く 大きく 育てた 群です。花が たくさん さく 季節に 働き蜂が そろう ように、春から 群を 育てて おきます。"
+  },
+  {
+   "id": "kh-hojo",
+   "name": "蜂場",
+   "reading": "ほうじょう",
+   "journey": "kihon",
+   "category": "養蜂",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📍",
+   "mapNode": "kihon:yoho",
+   "relatedTerms": [
+    "kh-subako",
+    "kh-yohogyo"
+   ],
+   "bee": "共通",
+   "description": "巣箱を 置いて いる 場所の ことです。日当たりや 水場、近くの 花、まわりの 家との きょりを 考えて えらびます。いくつかの 蜂場を もつ 養蜂家も います。"
+  },
+  {
+   "id": "kh-sushitsudo",
+   "name": "巣の湿度",
+   "reading": "すのしつど",
+   "journey": "kihon",
+   "category": "巣の つくり",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "💦",
+   "mapNode": "kihon:su",
+   "relatedTerms": [
+    "kh-su-ondo",
+    "kh-kika"
+   ],
+   "bee": "共通",
+   "description": "巣の 中の しめりけの ことです。蜜から 水分を とばすと 巣は しめりやすく なりますが、働き蜂は はねで あおいで 空気を 入れかえ、子育てに ほどよい しめりけを たもつと 考えられて います。"
+  },
+  {
+   "id": "kh-seikaku",
+   "name": "群の性格",
+   "reading": "ぐんのせいかく",
+   "journey": "kihon",
+   "category": "群と 役わり",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "😊",
+   "mapNode": "kihon:yoho",
+   "relatedTerms": [
+    "kh-gunsei",
+    "kh-joouba"
+   ],
+   "bee": "西洋",
+   "description": "おとなしい、よく 集める など、群ごとに ちがう ふるまいの ことです。働き蜂は みんな 女王の 子なので、女王の 系統で かわります。おとなしい 系統を えらぶと 世話が しやすく なります。"
+  },
+  {
+   "id": "kh-oidashi",
+   "name": "雄蜂の追い出し",
+   "reading": "おばちのおいだし",
+   "journey": "kihon",
+   "category": "ふえる しくみ",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🚪",
+   "mapNode": "kihon:obachi",
+   "relatedTerms": [
+    "kh-obachi",
+    "kh-shunen"
+   ],
+   "bee": "西洋",
+   "description": "秋に 花が へると、働き蜂が 雄蜂を 巣の 外へ 出す ことです。冬の あいだ 蜜を 大事に する ための 群の しくみで、雄蜂は ここで 役目を 終えます。春に なると また 育てられます。"
   },
   {
    "id": "kr-tamago",
@@ -3667,6 +4396,96 @@
    "description": "ニホンミツバチは セイヨウミツバチより 少し 小さい からだです。とても 似て いるので、色と 大きさを あわせて 見わけます。"
   },
   {
+   "id": "kr-obachime",
+   "name": "雄蜂の目",
+   "reading": "おばちのめ",
+   "journey": "karada",
+   "category": "目と 触角",
+   "difficulty": 2,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "👀",
+   "mapNode": "karada:me",
+   "relatedTerms": [
+    "kr-fukugan",
+    "kr-shokkaku"
+   ],
+   "bee": "共通",
+   "description": "雄蜂の 複眼は とても 大きく、頭の 上で くっつく ほどです。空を 飛ぶ 女王を 遠くから 見つける ために 役立つと 考えられて います。目の 大きさで 雄蜂だと わかります。"
+  },
+  {
+   "id": "kr-tamago-kikan",
+   "name": "卵の期間",
+   "reading": "たまごのきかん",
+   "journey": "karada",
+   "category": "一生の 育ちかた",
+   "difficulty": 2,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🥚",
+   "mapNode": "karada:tamago",
+   "relatedTerms": [
+    "kr-tamago",
+    "kr-fuka"
+   ],
+   "bee": "共通",
+   "description": "卵が ふ化するまでの あいだで、およそ 3日です。女王・働き蜂・雄蜂の どれに なる 卵でも 同じです。ちがいが 出るのは、幼虫に なってからの 日数です。"
+  },
+  {
+   "id": "kr-suzukuri",
+   "name": "巣作り",
+   "reading": "すづくり",
+   "journey": "karada",
+   "category": "腺と におい",
+   "difficulty": 2,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🏗",
+   "mapNode": "karada:sen",
+   "relatedTerms": [
+    "kr-rohen",
+    "kr-rosen"
+   ],
+   "bee": "共通",
+   "description": "若い 働き蜂が、おなかから 出した ろう片を かんで やわらかく し、六角形の 巣房を つくる ことです。たくさんの ハチが くさりの ように つながって、いっしょに 巣を のばします。"
+  },
+  {
+   "id": "kr-gaikokkaku",
+   "name": "外骨格",
+   "reading": "がいこっかく",
+   "journey": "karada",
+   "category": "からだの つくり",
+   "difficulty": 2,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🦺",
+   "mapNode": "karada:seichu",
+   "relatedTerms": [
+    "kr-cuticle",
+    "kr-dappi"
+   ],
+   "bee": "共通",
+   "description": "昆虫の 体の 外がわに ある、かたい からの ことです。骨が 外に あって 体を 支え、中を 守ります。かたくて のびないので、幼虫は 脱皮しながら 大きく なります。"
+  },
+  {
+   "id": "kr-taimo",
+   "name": "体毛",
+   "reading": "たいもう",
+   "journey": "karada",
+   "category": "からだの つくり",
+   "difficulty": 2,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🧸",
+   "mapNode": "karada:seichu",
+   "relatedTerms": [
+    "kr-kafunbrush",
+    "kr-kafunkago"
+   ],
+   "bee": "共通",
+   "description": "からだじゅうに 生えて いる 毛です。ミツバチの 毛は 枝分かれして いて、花に ふれると 花粉が たくさん くっつきます。この 毛が 受粉の 大きな 力に なって います。"
+  },
+  {
    "id": "kr-kaintosen",
    "name": "下咽頭腺",
    "reading": "かいんとうせん",
@@ -4114,7 +4933,639 @@
     "kr-dancegengo"
    ],
    "bee": "共通",
-   "description": "触角の 根もとの 節に ある、ゆれや 音を 感じとる ところです。暗い 巣の 中で、ダンスを する なかまの はねの ふるえを ここで 感じとると 考えられて います。"
+   "description": "触角の 根もとに 近い 節に ある、ゆれや 音を 感じとる ところです。暗い 巣の 中で、ダンスを する なかまの はねの ふるえを ここで 感じとると 考えられて います。"
+  },
+  {
+   "id": "kr-chuzetsu",
+   "name": "中舌",
+   "reading": "ちゅうぜつ",
+   "journey": "karada",
+   "category": "口と おなかの 中",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🪄",
+   "mapNode": "karada:kuchi",
+   "relatedTerms": [
+    "kr-kofun",
+    "kr-koago"
+   ],
+   "bee": "共通",
+   "description": "口吻の まん中に ある、長い 舌の 部分です。先が ブラシの ように なって いて、花の 奥の 蜜を なめとります。のばしたり ちぢめたり して 蜜を 吸いあげます。"
+  },
+  {
+   "id": "kr-koago",
+   "name": "小あご",
+   "reading": "こあご",
+   "journey": "karada",
+   "category": "口と おなかの 中",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🧷",
+   "mapNode": "karada:kuchi",
+   "relatedTerms": [
+    "kr-chuzetsu",
+    "kr-oago"
+   ],
+   "bee": "共通",
+   "description": "口吻を つくる 部分の ひとつです。中舌を 両がわから つつみこんで、ストローの ような くだを つくります。使わない ときは 頭の 下に たたんで しまって おきます。"
+  },
+  {
+   "id": "kr-daeki",
+   "name": "唾液腺",
+   "reading": "だえきせん",
+   "journey": "karada",
+   "category": "腺と におい",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🫗",
+   "mapNode": "karada:sen",
+   "relatedTerms": [
+    "kr-kaintosen",
+    "kr-mitsui"
+   ],
+   "bee": "共通",
+   "description": "頭や 胸に ある、だ液を 出す 腺です。だ液は 食べものを やわらかく したり、ろうを こねたり する ときに 使われると 考えられて います。"
+  },
+  {
+   "id": "kr-malpighi",
+   "name": "マルピーギ管",
+   "reading": "まるぴーぎかん",
+   "journey": "karada",
+   "category": "口と おなかの 中",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "karada:kuchi",
+   "relatedTerms": [
+    "kr-chucho",
+    "kr-chokucho"
+   ],
+   "bee": "共通",
+   "description": "腸の つなぎめに ある、たくさんの 細い 管です。体の 中の いらない ものを こしとって 腸に 送ります。人の じん臓に 近い 役目を する 昆虫の しくみです。"
+  },
+  {
+   "id": "kr-chokucho",
+   "name": "直腸",
+   "reading": "ちょくちょう",
+   "journey": "karada",
+   "category": "口と おなかの 中",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🫙",
+   "mapNode": "karada:kuchi",
+   "relatedTerms": [
+    "kr-haisetsu",
+    "kr-malpighi"
+   ],
+   "bee": "共通",
+   "description": "ふんを ためて おく ところです。ミツバチは 巣の 中では ふんを しないので、冬の あいだは 外に 出られる あたたかい 日まで 直腸に ためて おきます。"
+  },
+  {
+   "id": "kr-haisetsu",
+   "name": "排泄飛行",
+   "reading": "はいせつひこう",
+   "journey": "karada",
+   "category": "からだの つくり",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🌤",
+   "mapNode": "karada:seichu",
+   "relatedTerms": [
+    "kr-chokucho",
+    "kr-fuyubachi"
+   ],
+   "bee": "共通",
+   "description": "あたたかい 日に、巣の 外へ 出て ふんを する 飛行です。冬の 晴れた 日に いっせいに 飛びだすと、巣箱の まわりに 黄色い 点が つく ことが あります。巣の 中を きれいに たもつ くふうです。"
+  },
+  {
+   "id": "kr-dufour",
+   "name": "デュフール腺",
+   "reading": "でゅふーるせん",
+   "journey": "karada",
+   "category": "腺と におい",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🧴",
+   "mapNode": "karada:sen",
+   "relatedTerms": [
+    "kr-sanrankan",
+    "kr-pheromone"
+   ],
+   "bee": "共通",
+   "description": "針の 根もとに ある 腺です。女王では 「ここに 女王が いる」と 知らせる においの 合図の 一部に なって いると 考えられて います。くわしい 役目は いまも 研究されて います。"
+  },
+  {
+   "id": "kr-koschevnikov",
+   "name": "コシェフニコフ腺",
+   "reading": "こしぇふにこふせん",
+   "journey": "karada",
+   "category": "腺と におい",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🔔",
+   "mapNode": "karada:hari",
+   "relatedTerms": [
+    "kr-keihou",
+    "kr-hari"
+   ],
+   "bee": "共通",
+   "description": "働き蜂の 針の 近くに ある 腺で、警報フェロモンを 出します。針が 使われると この においが 広がり、まわりの ハチが 用心します。巣箱では あわてず、ゆっくり 動くのが こつです。"
+  },
+  {
+   "id": "kr-isoamyl",
+   "name": "酢酸イソアミル",
+   "reading": "さくさんいそあみる",
+   "journey": "karada",
+   "category": "腺と におい",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🍌",
+   "mapNode": "karada:hari",
+   "relatedTerms": [
+    "kr-keihou",
+    "kr-koschevnikov"
+   ],
+   "bee": "共通",
+   "description": "警報フェロモンの おもな 成分の ひとつです。バナナに 似た あまい においが します。だから 巣箱の 近くでは、バナナの においを させないほうが ハチが おちつきます。"
+  },
+  {
+   "id": "kr-sanrankan",
+   "name": "産卵管",
+   "reading": "さんらんかん",
+   "journey": "karada",
+   "category": "からだの つくり",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🧬",
+   "mapNode": "karada:hari",
+   "relatedTerms": [
+    "kr-hari",
+    "kr-haritnai"
+   ],
+   "bee": "共通",
+   "description": "卵を 産む ための 管です。働き蜂の 針は、もともと この 産卵管が 形を かえた ものです。だから メスだけが 針を もち、オスの 雄蜂には 針が ありません。"
+  },
+  {
+   "id": "kr-joohari",
+   "name": "女王の針",
+   "reading": "じょおうのはり",
+   "journey": "karada",
+   "category": "からだの つくり",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "👑",
+   "mapNode": "karada:hari",
+   "relatedTerms": [
+    "kr-sanrankan",
+    "kr-sakatoge"
+   ],
+   "bee": "共通",
+   "description": "女王の 針は つるつるで、逆とげが ほとんど ありません。女王どうしが 出会った ときに 使う ことは ありますが、人を 刺す ことは ほとんど ありません。"
+  },
+  {
+   "id": "kr-haritnai",
+   "name": "針のない雄蜂",
+   "reading": "はりのないおばち",
+   "journey": "karada",
+   "category": "からだの つくり",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🙆",
+   "mapNode": "karada:hari",
+   "relatedTerms": [
+    "kr-sanrankan",
+    "kr-hari"
+   ],
+   "bee": "共通",
+   "description": "雄蜂は 針を もって いないので 刺しません。体が 大きく ずんぐり して いて、目が 大きいので 見わけられます。巣の 中では 働き蜂から えさを もらって くらします。"
+  },
+  {
+   "id": "kr-jh",
+   "name": "幼若ホルモン",
+   "reading": "ようじゃくほるもん",
+   "journey": "karada",
+   "category": "日齢と しごと",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "⚗️",
+   "mapNode": "karada:nichirei",
+   "relatedTerms": [
+    "kr-nichirei",
+    "kr-reisabungyo",
+    "kr-vg"
+   ],
+   "bee": "共通",
+   "description": "体の 中で つくられる ホルモンの ひとつです。日が たつと ふえて いき、巣の 中の しごとから 外の しごとへの 切りかわりを 早めます。日齢と しごとの 関係を 支える しくみです。"
+  },
+  {
+   "id": "kr-vg",
+   "name": "ビテロジェニン",
+   "reading": "びてろじぇにん",
+   "journey": "karada",
+   "category": "日齢と しごと",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🫘",
+   "mapNode": "karada:nichirei",
+   "relatedTerms": [
+    "kr-shibotai",
+    "kr-fuyubachi",
+    "kr-jh"
+   ],
+   "bee": "共通",
+   "description": "体に ためられる タンパク質の 一種です。育児蜂は これを 使って 幼虫の えさの もとを つくり、冬蜂は 多く ためて 長く 生きます。幼若ホルモンと たがいに おさえあう 関係が あります。"
+  },
+  {
+   "id": "kr-warmup",
+   "name": "ウォーミングアップ",
+   "reading": "うぉーみんぐあっぷ",
+   "journey": "karada",
+   "category": "はねと あし",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🔥",
+   "mapNode": "karada:hane",
+   "relatedTerms": [
+    "kr-hishokin",
+    "kr-fuyubachi"
+   ],
+   "bee": "共通",
+   "description": "寒い ときに、飛ぶ 前に 胸の 筋肉を ふるわせて 体を あたためる ことです。胸の 温度が 上がらないと うまく 飛べないので、寒い 朝は しばらく 巣門で じっと して います。"
+  },
+  {
+   "id": "kr-zenshi",
+   "name": "前翅と後翅",
+   "reading": "ぜんしとこうし",
+   "journey": "karada",
+   "category": "はねと あし",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🦋",
+   "mapNode": "karada:hane",
+   "relatedTerms": [
+    "kr-shiko",
+    "kr-hane"
+   ],
+   "bee": "共通",
+   "description": "ミツバチの はねは 4枚で、前の 前翅が 大きく、後ろの 後翅は 小さめです。飛ぶ ときは 翅鈎で 前と 後ろが つながり、2枚が 1枚の ように 動きます。"
+  },
+  {
+   "id": "kr-shimyaku",
+   "name": "翅脈",
+   "reading": "しみゃく",
+   "journey": "karada",
+   "category": "はねと あし",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🕸",
+   "mapNode": "karada:hane",
+   "relatedTerms": [
+    "kr-zenshi",
+    "kr-hane"
+   ],
+   "bee": "共通",
+   "description": "はねに 通って いる すじです。うすい はねを 骨の ように 支えます。すじの ならびかたは 種類ごとに ちがうので、ハチの なかまを 見わける 手がかりにも なります。"
+  },
+  {
+   "id": "kr-kino",
+   "name": "気嚢",
+   "reading": "きのう",
+   "journey": "karada",
+   "category": "からだの つくり",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🎈",
+   "mapNode": "karada:hane",
+   "relatedTerms": [
+    "kr-kimon",
+    "kr-hishokin"
+   ],
+   "bee": "共通",
+   "description": "体の 中に ある、空気を ためる ふくろです。気門から 入った 空気を ためて、飛ぶ ときに たくさん 必要な 空気を 筋肉へ 送る 手助けを します。"
+  },
+  {
+   "id": "kr-kafunkushi",
+   "name": "花粉くし",
+   "reading": "かふんくし",
+   "journey": "karada",
+   "category": "はねと あし",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🪮",
+   "mapNode": "karada:ashi",
+   "relatedTerms": [
+    "kr-kafunkago",
+    "kr-kafunbrush"
+   ],
+   "bee": "共通",
+   "description": "後ろあしの 内がわに ある、くしの ような 毛の ならびです。体に ついた 花粉を かきあつめ、反対の あしの 花粉かごへ 送ります。飛びながらでも できます。"
+  },
+  {
+   "id": "kr-keisetsu",
+   "name": "脛節",
+   "reading": "けいせつ",
+   "journey": "karada",
+   "category": "はねと あし",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🦿",
+   "mapNode": "karada:ashi",
+   "relatedTerms": [
+    "kr-kafunkago",
+    "kr-fusetsu"
+   ],
+   "bee": "共通",
+   "description": "あしの 中ほどに ある、長い 節です。働き蜂の 後ろあしの 脛節は 平たく 広がって いて、そこが 花粉かごに なって います。"
+  },
+  {
+   "id": "kr-jokuban",
+   "name": "褥盤",
+   "reading": "じょくばん",
+   "journey": "karada",
+   "category": "はねと あし",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🧲",
+   "mapNode": "karada:ashi",
+   "relatedTerms": [
+    "kr-fusetsu",
+    "kr-ashi"
+   ],
+   "bee": "共通",
+   "description": "あしの 先の つめの あいだに ある、やわらかい ふくらみです。つめが かからない つるつるの 面にも、これで ぴたっと くっつけます。ガラスの 上でも 歩けるのは この おかげです。"
+  },
+  {
+   "id": "kr-shikikaku",
+   "name": "色覚",
+   "reading": "しきかく",
+   "journey": "karada",
+   "category": "目と 触角",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🟦",
+   "mapNode": "karada:me",
+   "relatedTerms": [
+    "kr-shigaisen",
+    "kr-fukugan"
+   ],
+   "bee": "共通",
+   "description": "色を 見わける 力です。ミツバチは 青や 黄色、人には 見えない 紫外線が 見えますが、赤は 黒っぽく 見えます。だから 青や 黄色の 花に よく 集まります。"
+  },
+  {
+   "id": "kr-kyukaku",
+   "name": "嗅覚",
+   "reading": "きゅうかく",
+   "journey": "karada",
+   "category": "目と 触角",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "💐",
+   "mapNode": "karada:me",
+   "relatedTerms": [
+    "kr-shokkaku",
+    "kr-pheromone"
+   ],
+   "bee": "共通",
+   "description": "においを 感じる 力で、おもに 触角で かぎとります。花の においや、なかまの フェロモン、巣の においを 感じとり、暗い 巣の 中でも くらせます。"
+  },
+  {
+   "id": "kr-tamago-katamuki",
+   "name": "卵の傾き",
+   "reading": "たまごのかたむき",
+   "journey": "karada",
+   "category": "一生の 育ちかた",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "karada:tamago",
+   "relatedTerms": [
+    "kr-tamago",
+    "kr-tamago-kikan"
+   ],
+   "bee": "共通",
+   "description": "巣房の 卵は、産まれた ばかりの ときは 底に まっすぐ 立ち、日が たつと しだいに たおれて いきます。内検で 卵の 向きを 見ると、いつごろ 産まれたかの ひとつの めやすに なります。"
+  },
+  {
+   "id": "kr-tainai",
+   "name": "体内時計",
+   "reading": "たいないどけい",
+   "journey": "karada",
+   "category": "目と 触角",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "⏰",
+   "mapNode": "karada:me",
+   "relatedTerms": [
+    "kr-taiyocompass",
+    "kr-shirifuri"
+   ],
+   "bee": "共通",
+   "description": "1日の 時間の 流れを 体で 感じる しくみです。太陽は 時間と ともに 動くので、ミツバチは 体内時計で 向きを 直しながら 太陽コンパスを 使います。"
+  },
+  {
+   "id": "kr-yochuki",
+   "name": "幼虫期",
+   "reading": "ようちゅうき",
+   "journey": "karada",
+   "category": "一生の 育ちかた",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🌱",
+   "mapNode": "karada:yochu",
+   "relatedTerms": [
+    "kr-yochu",
+    "kr-yugaihoji"
+   ],
+   "bee": "共通",
+   "description": "卵から ふ化して、巣房に ふたが されるまでの 幼虫の 時期です。働き蜂では およそ 6日で、そのあいだ 育児蜂から 何度も えさを もらい、ぐんぐん 大きく なります。"
+  },
+  {
+   "id": "kr-workerjelly",
+   "name": "ワーカーゼリー",
+   "reading": "わーかーぜりー",
+   "journey": "karada",
+   "category": "一生の 育ちかた",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🍮",
+   "mapNode": "karada:yochu",
+   "relatedTerms": [
+    "kr-ikujibachi",
+    "kr-kaintosen"
+   ],
+   "bee": "共通",
+   "description": "働き蜂に なる 幼虫が もらう えさです。はじめは ローヤルゼリーに 似た ものですが、日が たつと 花粉や 蜜が まざり、中身が かわります。えさの ちがいで 女王か 働き蜂かが 決まります。"
+  },
+  {
+   "id": "kr-mugai",
+   "name": "無蓋蜂児",
+   "reading": "むがいほうじ",
+   "journey": "karada",
+   "category": "一生の 育ちかた",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🔓",
+   "mapNode": "karada:yochu",
+   "relatedTerms": [
+    "kr-yugaihoji",
+    "kr-yochuki"
+   ],
+   "bee": "共通",
+   "description": "まだ ふたが されていない 卵と 幼虫の ことです。内検で 無蓋蜂児が 見えれば、近ごろ 女王が 卵を 産んで いる しるしに なります。ふたが された ものは 有蓋蜂児と よびます。"
+  },
+  {
+   "id": "kr-meiro",
+   "name": "目の色の変化",
+   "reading": "めのいろのへんか",
+   "journey": "karada",
+   "category": "一生の 育ちかた",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🟣",
+   "mapNode": "karada:sanagi",
+   "relatedTerms": [
+    "kr-sanagi",
+    "kr-yoka"
+   ],
+   "bee": "共通",
+   "description": "さなぎの 目は、白から ピンク、むらさき、こい 茶色へと 色が かわって いきます。目の 色を 見ると、羽化までの およその 日数が わかります。"
+  },
+  {
+   "id": "kr-wakabachi",
+   "name": "若蜂",
+   "reading": "わかばち",
+   "journey": "karada",
+   "category": "日齢と しごと",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🌟",
+   "mapNode": "karada:seichu",
+   "relatedTerms": [
+    "kr-uka",
+    "kr-naikin"
+   ],
+   "bee": "共通",
+   "description": "羽化して まもない 働き蜂です。毛が ふわふわで 色が うすく、まだ うまく 飛べません。はじめは 巣の 中で 掃除などの しごとから はじめます。"
+  },
+  {
+   "id": "kr-rokyo",
+   "name": "ろう鏡",
+   "reading": "ろうきょう",
+   "journey": "karada",
+   "category": "腺と におい",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🪞",
+   "mapNode": "karada:sen",
+   "relatedTerms": [
+    "kr-rosen",
+    "kr-rohen"
+   ],
+   "bee": "共通",
+   "description": "働き蜂の おなかの 下がわに ある、ろうを 出す 平らな ところです。かがみの ように なめらかなので この 名前が あります。ここに ろう片が うすく 出て きます。"
+  },
+  {
+   "id": "kr-dance-kakudo",
+   "name": "ダンスの角度",
+   "reading": "だんすのかくど",
+   "journey": "karada",
+   "category": "ダンス",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🔺",
+   "mapNode": "karada:dance",
+   "relatedTerms": [
+    "kr-shirifuri",
+    "kr-taiyocompass"
+   ],
+   "bee": "共通",
+   "description": "尻振りダンスで まっすぐ 進む 向きと、真上との 角度が、太陽と 花の 方向の 角度を あらわします。真上に 進めば 太陽の 方向、真下なら 太陽と 反対の 方向です。"
+  },
+  {
+   "id": "kr-kyori",
+   "name": "距離の伝え方",
+   "reading": "きょりのつたえかた",
+   "journey": "karada",
+   "category": "ダンス",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "📏",
+   "mapNode": "karada:dance",
+   "relatedTerms": [
+    "kr-shirifuri",
+    "kr-hachinoji"
+   ],
+   "bee": "共通",
+   "description": "尻振りダンスで、おしりを ふりながら まっすぐ 進む 時間の 長さで、花までの 遠さを 伝えます。遠い 花ほど 長く ふります。"
+  },
+  {
+   "id": "kr-cuticle",
+   "name": "クチクラ",
+   "reading": "くちくら",
+   "journey": "karada",
+   "category": "からだの つくり",
+   "difficulty": 3,
+   "field": "からだ",
+   "type": "concept",
+   "emoji": "🧥",
+   "mapNode": "karada:seichu",
+   "relatedTerms": [
+    "kr-gaikokkaku",
+    "kr-grooming"
+   ],
+   "bee": "共通",
+   "description": "体の 表面を おおう、かたい 層の ことです。外骨格を つくり、体の 水分が にげるのを ふせぎます。いちばん 外がわは ろうの ような 物質で おおわれて います。"
+  },
+  {
+   "id": "kr-kamagata",
+   "name": "鎌形ダンス",
+   "reading": "かまがただんす",
+   "journey": "karada",
+   "category": "ダンス",
+   "difficulty": 3,
+   "field": "生態",
+   "type": "concept",
+   "emoji": "🌙",
+   "mapNode": "karada:dance",
+   "relatedTerms": [
+    "kr-endance",
+    "kr-hachinoji"
+   ],
+   "bee": "共通",
+   "description": "円ダンスと 8の字ダンスの あいだの 形で、三日月の ような 鎌の 形に おどります。花が 中くらいの きょりに ある ときに 見られ、どの きょりで 形が かわるかは、品種に よって ちがうと 言われます。"
   },
   {
    "id": "dg-suwaku",
@@ -4938,6 +6389,96 @@
    "description": "巣箱を 雨と 強い 日ざしから 守る 屋根です。夏は 日かげを 作って、巣の 中が 暑く なりすぎない ように します。"
   },
   {
+   "id": "dg-hakari",
+   "name": "はかり",
+   "reading": "はかり",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 2,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "dogu:kogu",
+   "relatedTerms": [
+    "dg-tsugibako",
+    "dg-kyujiki"
+   ],
+   "bee": "共通",
+   "description": "巣箱の 重さを はかる 道具です。巣箱の 片がわを 持ちあげて はかると、中に たまった 蜜の 量の めやすに なります。冬の 前に えさが 足りるかを 見る ときに 役立ちます。"
+  },
+  {
+   "id": "dg-ondokei",
+   "name": "温度計",
+   "reading": "おんどけい",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 2,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🌡",
+   "mapNode": "dogu:kogu",
+   "relatedTerms": [
+    "dg-hakari",
+    "dg-kankiko"
+   ],
+   "bee": "共通",
+   "description": "温度を はかる 道具です。巣箱の 中や 置き場の 温度を 記録すると、夏の 暑さや 冬の 寒さへの 対策を 考える 手がかりに なります。"
+  },
+  {
+   "id": "dg-nijime",
+   "name": "荷締めベルト",
+   "reading": "にじめべると",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 2,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🎗",
+   "mapNode": "dogu:tsugibako",
+   "relatedTerms": [
+    "dg-tsugibako",
+    "dg-amibuta"
+   ],
+   "bee": "西洋",
+   "description": "巣箱を 運ぶ ときに、箱が ずれない ように しばる ベルトです。ふたと 継箱と 底板を ひとまとめに 締めて、すきまから ハチが 出ない ように します。台風の 前にも 使います。"
+  },
+  {
+   "id": "dg-toso",
+   "name": "巣箱の塗装",
+   "reading": "すばこのとそう",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 2,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🎨",
+   "mapNode": "dogu:futa",
+   "relatedTerms": [
+    "dg-futa",
+    "dg-yane"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の 外がわに ペンキなどを ぬって、雨や 日ざしから 木を 守る ことです。ハチが ふれる 内がわは ぬりません。巣箱ごとに 色を かえると、ハチが 自分の 巣を 見わけやすく なります。"
+  },
+  {
+   "id": "dg-sumon-muki",
+   "name": "巣門の向き",
+   "reading": "すもんのむき",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 2,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🧭",
+   "mapNode": "dogu:sumon",
+   "relatedTerms": [
+    "dg-sumon",
+    "dg-subakodai"
+   ],
+   "bee": "共通",
+   "description": "巣門を どの 方角に 向けるかの ことです。朝日が あたる 南東向きなどに すると、ハチが 早くから 働きはじめます。強い 北風が 吹きこむ 向きは さけます。"
+  },
+  {
    "id": "dg-beespace",
    "name": "ビースペース",
    "reading": "びーすぺーす",
@@ -5386,6 +6927,636 @@
    ],
    "bee": "共通",
    "description": "分蜂して 枝などに かたまった 群を 入れて、巣箱まで 運ぶ 箱です。分蜂群は おとなしいので、ゆっくり 箱に 入って もらいます。"
+  },
+  {
+   "id": "dg-asagata",
+   "name": "浅型継箱",
+   "reading": "あさがたつぎばこ",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🥡",
+   "mapNode": "dogu:tsugibako",
+   "relatedTerms": [
+    "dg-tsugibako",
+    "dg-fukagata"
+   ],
+   "bee": "西洋",
+   "description": "ふつうより 高さの 低い 継箱です。巣枠も 短いので、蜜で いっぱいに なっても 軽くて 持ちあげやすく なります。蜜を ためる 箱として 使われます。"
+  },
+  {
+   "id": "dg-fukagata",
+   "name": "深型巣箱",
+   "reading": "ふかがたすばこ",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🗄",
+   "mapNode": "dogu:tsugibako",
+   "relatedTerms": [
+    "dg-asagata",
+    "dg-langbox"
+   ],
+   "bee": "西洋",
+   "description": "ふつうの 高さの 巣箱です。女王が 卵を 産み、子を 育てる 育児圏に よく 使います。蜜が 入ると とても 重く なるので、持ちあげる ときは 腰に 気を つけます。"
+  },
+  {
+   "id": "dg-telescope",
+   "name": "テレスコープ式ふた",
+   "reading": "てれすこーぷしきふた",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🎩",
+   "mapNode": "dogu:futa",
+   "relatedTerms": [
+    "dg-futa",
+    "dg-uchibuta"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の 上から すっぽり かぶせて、ふちが 外がわに たれる ふたです。望遠鏡の 筒の ように かさなるので この 名前が あり、雨が 入りにくく なります。内ぶたと いっしょに 使います。"
+  },
+  {
+   "id": "dg-uchibuta-ana",
+   "name": "内ぶたの穴",
+   "reading": "うちぶたのあな",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "⭕",
+   "mapNode": "dogu:futa",
+   "relatedTerms": [
+    "dg-uchibuta",
+    "dg-escape"
+   ],
+   "bee": "西洋",
+   "description": "内ぶたの まん中に あいて いる 穴です。ここに 給餌器を のせたり、ビーエスケープを はめたり します。夏は 空気の 通り道にも なります。"
+  },
+  {
+   "id": "dg-escape",
+   "name": "ビーエスケープ",
+   "reading": "びーえすけーぷ",
+   "journey": "dogu",
+   "category": "採蜜の 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "➡️",
+   "mapNode": "dogu:futa",
+   "relatedTerms": [
+    "dg-uchibuta-ana",
+    "dg-nigashiita"
+   ],
+   "bee": "西洋",
+   "description": "ハチが 一方向にしか 通れない 小さな しかけです。採蜜の 前に 蜜の 箱の 下に 入れて おくと、ハチが 下の 箱へ 移り、蜜の 箱から ハチが へります。"
+  },
+  {
+   "id": "dg-amibuta",
+   "name": "移動用網ぶた",
+   "reading": "いどうようあみぶた",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🥅",
+   "mapNode": "dogu:futa",
+   "relatedTerms": [
+    "dg-nijime",
+    "dg-kankiko"
+   ],
+   "bee": "西洋",
+   "description": "巣箱を 運ぶ ときに 使う、金網の ふたです。風が よく 通るので、とじこめた ハチが 暑く なりすぎるのを ふせぎます。転飼などで 遠くへ 運ぶ ときに 使われます。"
+  },
+  {
+   "id": "dg-chakuchi",
+   "name": "着地板",
+   "reading": "ちゃくちいた",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🛬",
+   "mapNode": "dogu:sumon",
+   "relatedTerms": [
+    "dg-sumon",
+    "dg-sumonita"
+   ],
+   "bee": "西洋",
+   "description": "巣門の 前に 出て いる 板です。帰って きた ハチが まず ここに おりて、歩いて 巣の 中へ 入ります。ハチの ようすを 見るのにも よい 場所です。"
+  },
+  {
+   "id": "dg-nenchaku",
+   "name": "粘着シート",
+   "reading": "ねんちゃくしーと",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "📋",
+   "mapNode": "dogu:sokoban",
+   "relatedTerms": [
+    "dg-amizoko",
+    "dg-sokoita"
+   ],
+   "bee": "西洋",
+   "description": "網底の 下に しいて、落ちて きた ダニを くっつけて 数える シートです。ダニの ふえぐあいが わかるので、対策が 必要かを 決める めやすに なります。"
+  },
+  {
+   "id": "dg-suijun",
+   "name": "水準器",
+   "reading": "すいじゅんき",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🟰",
+   "mapNode": "dogu:sokoban",
+   "relatedTerms": [
+    "dg-subakodai",
+    "dg-suwaku"
+   ],
+   "bee": "西洋",
+   "description": "かたむきを 見る 道具です。ハチは 真下に 向かって 巣を のばすので、巣箱が かたむくと 巣板が 巣枠から はみ出す ことが あります。巣箱台を 置く ときに 使います。"
+  },
+  {
+   "id": "dg-sokuzan",
+   "name": "側桟",
+   "reading": "そくざん",
+   "journey": "dogu",
+   "category": "巣枠と 巣礎",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🪵",
+   "mapNode": "dogu:suwaku",
+   "relatedTerms": [
+    "dg-uezan",
+    "dg-shitazan"
+   ],
+   "bee": "西洋",
+   "description": "巣枠の 左右に ある たての 木です。上桟と 下桟を つなぎ、巣線を 通す 小さな 穴が あいて います。"
+  },
+  {
+   "id": "dg-mimi",
+   "name": "巣枠の耳",
+   "reading": "すわくのみみ",
+   "journey": "dogu",
+   "category": "巣枠と 巣礎",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "👂",
+   "mapNode": "dogu:suwaku",
+   "relatedTerms": [
+    "dg-uezan",
+    "dg-wakuuke"
+   ],
+   "bee": "西洋",
+   "description": "上桟の 両はしに 出て いる でっぱりです。ここを 巣箱の 内がわの 段に かけて、巣枠を ぶらさげます。巣枠を 持ちあげる ときも ここを 持ちます。"
+  },
+  {
+   "id": "dg-wakuuke",
+   "name": "枠受け",
+   "reading": "わくうけ",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "dogu:tsugibako",
+   "relatedTerms": [
+    "dg-mimi",
+    "dg-tsugibako"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の 内がわの 上の ほうに ある、段に なった ところです。巣枠の 耳を ここに のせると、巣枠が 底に つかず、ちょうど よい すきまで ならびます。"
+  },
+  {
+   "id": "dg-jo-shirushi",
+   "name": "女王の印の色",
+   "reading": "じょおうのしるしのいろ",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🟢",
+   "mapNode": "dogu:kogu",
+   "relatedTerms": [
+    "dg-marking",
+    "dg-markingcage"
+   ],
+   "bee": "西洋",
+   "description": "女王の 背中に つける 印の 色は、生まれた 年の 下ひとけたで 決まって います。1と6は 白、2と7は 黄、3と8は 赤、4と9は 緑、5と0は 青です。色を 見れば、いつ 生まれた 女王か わかります。"
+  },
+  {
+   "id": "dg-maisen",
+   "name": "埋線",
+   "reading": "まいせん",
+   "journey": "dogu",
+   "category": "巣枠と 巣礎",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "♨️",
+   "mapNode": "dogu:suso",
+   "relatedTerms": [
+    "dg-susen",
+    "dg-suso"
+   ],
+   "bee": "西洋",
+   "description": "巣枠に はった 巣線を、巣礎に うめこむ ことです。線を あたためて ろうに しずめると、巣板が 蜜の 重さや 分離機の 回転でも こわれにくく なります。"
+  },
+  {
+   "id": "dg-happo",
+   "name": "発泡スチロール巣箱",
+   "reading": "はっぽうすちろーるすばこ",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🧊",
+   "mapNode": "dogu:tsugibako",
+   "relatedTerms": [
+    "dg-langbox",
+    "dg-fukagata"
+   ],
+   "bee": "西洋",
+   "description": "発泡スチロールで つくった 軽い 巣箱です。熱を 通しにくいので、冬の 寒さや 夏の 日ざしの 熱から 巣を 守りやすいと されます。寒い 国の 養蜂で よく 使われます。"
+  },
+  {
+   "id": "dg-uwagi",
+   "name": "面布付き上着",
+   "reading": "めんぷつきうわぎ",
+   "journey": "dogu",
+   "category": "身を 守る 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🥼",
+   "mapNode": "dogu:menpu",
+   "relatedTerms": [
+    "dg-menpu",
+    "dg-bogofuku"
+   ],
+   "bee": "共通",
+   "description": "面布と 上着が ひとつに なった 防護服です。首の すきまが できにくいので、ハチが 服の 中に 入りにくく なります。ファスナーを しっかり しめて 着ます。"
+  },
+  {
+   "id": "dg-kawate",
+   "name": "革手袋",
+   "reading": "かわてぶくろ",
+   "journey": "dogu",
+   "category": "身を 守る 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🧤",
+   "mapNode": "dogu:menpu",
+   "relatedTerms": [
+    "dg-tebukuro",
+    "dg-tsukaisute"
+   ],
+   "bee": "共通",
+   "description": "革で できた ぶあつい 手袋です。はじめての 人も 安心して 作業できます。なれた 人は、細かい 作業の ために うすい 手袋を 使う ことも あります。"
+  },
+  {
+   "id": "dg-tsukaisute",
+   "name": "使いすて手袋",
+   "reading": "つかいすててぶくろ",
+   "journey": "dogu",
+   "category": "身を 守る 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🫳",
+   "mapNode": "dogu:menpu",
+   "relatedTerms": [
+    "dg-kawate",
+    "dg-tebukuro"
+   ],
+   "bee": "共通",
+   "description": "うすくて、使ったら すてる 手袋です。巣箱ごとに とりかえると、病気の もとを ほかの 群へ 運ばずに すみます。手の 感じが わかるので 細かい 作業にも 向いて います。"
+  },
+  {
+   "id": "dg-kago",
+   "name": "分離機のかご",
+   "reading": "ぶんりきのかご",
+   "journey": "dogu",
+   "category": "採蜜の 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🧺",
+   "mapNode": "dogu:bunriki",
+   "relatedTerms": [
+    "dg-bunriki",
+    "dg-sessen"
+   ],
+   "bee": "西洋",
+   "description": "遠心分離機の 中で、巣枠を 入れて 回す かごです。回ると 外へ 向かう 力で 巣房の 蜜が 飛びだし、巣は 枠に のこるので また 使えます。"
+  },
+  {
+   "id": "dg-mitsudashi",
+   "name": "蜜出し口",
+   "reading": "みつだしぐち",
+   "journey": "dogu",
+   "category": "採蜜の 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🚰",
+   "mapNode": "dogu:bunriki",
+   "relatedTerms": [
+    "dg-chomitsutank",
+    "dg-bunriki"
+   ],
+   "bee": "西洋",
+   "description": "分離機や 貯蜜タンクの 下に ついて いる、蜜を 出す 口です。ハニーゲートとも よびます。とじたり あけたり して、瓶や 容器に 蜜を そそぎます。"
+  },
+  {
+   "id": "dg-omoshi",
+   "name": "巣箱の重し",
+   "reading": "すばこのおもし",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🪨",
+   "mapNode": "dogu:futa",
+   "relatedTerms": [
+    "dg-futa",
+    "dg-nijime"
+   ],
+   "bee": "共通",
+   "description": "強い 風で ふたが とばされない ように、ふたの 上に 置く 石や ブロックです。台風の 季節には 荷締めベルトと いっしょに 使うと 安心です。"
+  },
+  {
+   "id": "dg-uwaoki",
+   "name": "上置き給餌器",
+   "reading": "うえおききゅうじき",
+   "journey": "dogu",
+   "category": "えさと 水",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🍽",
+   "mapNode": "dogu:kyuji",
+   "relatedTerms": [
+    "dg-kyujiki",
+    "dg-uchibuta-ana"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の いちばん 上に のせる、大きな 給餌器です。たくさんの 糖液を 入れられるので、秋の 給餌などで 何度も あけずに すみます。ハチが おぼれない ように 足場が ついて います。"
+  },
+  {
+   "id": "dg-bottle",
+   "name": "ボトル給餌器",
+   "reading": "ぼとるきゅうじき",
+   "journey": "dogu",
+   "category": "えさと 水",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🍼",
+   "mapNode": "dogu:kyuji",
+   "relatedTerms": [
+    "dg-kyujiki",
+    "dg-uchibuta-ana"
+   ],
+   "bee": "西洋",
+   "description": "びんを さかさに して、小さな 穴から 少しずつ 糖液を 飲ませる 給餌器です。内ぶたの 穴の 上や 巣門に とりつけ、残りの 量が 外から 見えます。"
+  },
+  {
+   "id": "dg-fondant",
+   "name": "フォンダン",
+   "reading": "ふぉんだん",
+   "journey": "dogu",
+   "category": "えさと 水",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🍬",
+   "mapNode": "dogu:kyuji",
+   "relatedTerms": [
+    "dg-patty",
+    "dg-kyujiki"
+   ],
+   "bee": "西洋",
+   "description": "砂糖を 練って かためた、やわらかい えさです。水が こぼれないので、寒い 冬や 春先に 巣枠の 上に 置いて あげます。"
+  },
+  {
+   "id": "dg-patty",
+   "name": "花粉パティ",
+   "reading": "かふんぱてぃ",
+   "journey": "dogu",
+   "category": "えさと 水",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🥞",
+   "mapNode": "dogu:kyuji",
+   "relatedTerms": [
+    "dg-fondant",
+    "dg-kafunsaishu"
+   ],
+   "bee": "西洋",
+   "description": "花粉や 花粉の かわりに なる 粉を、糖と 練った えさです。巣枠の 上に のせて おくと、花粉が 少ない 時期にも 子育てが すすみます。"
+  },
+  {
+   "id": "dg-markingcage",
+   "name": "マーキングケージ",
+   "reading": "まーきんぐけーじ",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🔲",
+   "mapNode": "dogu:kogu",
+   "relatedTerms": [
+    "dg-marking",
+    "dg-jo-shirushi"
+   ],
+   "bee": "西洋",
+   "description": "女王を そっと おさえて、背中に 印を つける ための 道具です。あみ目の すきまから ペンで 印を つけるので、女王を 手で つかまずに すみます。"
+  },
+  {
+   "id": "dg-clip",
+   "name": "クイーンクリップ",
+   "reading": "くいーんくりっぷ",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "📎",
+   "mapNode": "dogu:kogu",
+   "relatedTerms": [
+    "dg-markingcage",
+    "dg-marking"
+   ],
+   "bee": "西洋",
+   "description": "女王を 一時 中に 入れて おく、せんたくばさみの ような 小さな かごです。内検の あいだ、女王を 安全に よけて おけます。"
+  },
+  {
+   "id": "dg-hogoki",
+   "name": "王台保護器",
+   "reading": "おうだいほごき",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🔒",
+   "mapNode": "dogu:kogu",
+   "relatedTerms": [
+    "dg-ichubari",
+    "dg-clip"
+   ],
+   "bee": "西洋",
+   "description": "王台を 入れて 守る、小さな 筒です。ほかの 女王や 働き蜂に 王台を こわされない ように して、新しい 女王が 生まれるのを 待ちます。"
+  },
+  {
+   "id": "dg-scraper",
+   "name": "スクレーパー",
+   "reading": "すくれーぱー",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🧽",
+   "mapNode": "dogu:kogu",
+   "relatedTerms": [
+    "dg-hivetool",
+    "dg-propsaishu"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の ふちや 巣枠に ついた ろうや プロポリスを けずりとる へらです。そうじを すると ふたや 巣枠が ぴったり おさまります。"
+  },
+  {
+   "id": "dg-topbar",
+   "name": "トップバー巣箱",
+   "reading": "とっぷばーすばこ",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🛶",
+   "mapNode": "dogu:suwaku",
+   "relatedTerms": [
+    "dg-langbox",
+    "dg-karasuwaku"
+   ],
+   "bee": "共通",
+   "description": "巣枠の かわりに、上に 棒だけを ならべた 巣箱です。ハチは 棒から 自由に 巣を たらして つくります。かんたんな つくりで、世界の いろいろな 地域で 使われて います。"
+  },
+  {
+   "id": "dg-warre",
+   "name": "ワレ式巣箱",
+   "reading": "われしきすばこ",
+   "journey": "dogu",
+   "category": "巣箱の つくり",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🗼",
+   "mapNode": "dogu:tsugibako",
+   "relatedTerms": [
+    "dg-topbar",
+    "dg-tsugibako"
+   ],
+   "bee": "西洋",
+   "description": "フランスの 神父 ワレが 考えた、小さめの 四角い 箱を 重ねる 巣箱です。群が 大きく なると 新しい 箱を 下に 足して いきます。上に 足す 継箱とは 逆の 考えかたです。"
+  },
+  {
+   "id": "dg-mado",
+   "name": "観察窓",
+   "reading": "かんさつまど",
+   "journey": "dogu",
+   "category": "ニホンミツバチの 巣箱",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🪟",
+   "mapNode": "dogu:tsugibako",
+   "relatedTerms": [
+    "dg-jubako",
+    "dg-tenita"
+   ],
+   "bee": "日本",
+   "description": "重箱式巣箱などに つける 窓です。ふたを あけずに 中の 巣の ようすを 見られるので、ハチを おどろかせずに すみます。ふだんは 板で ふさいで 暗く して おきます。"
+  },
+  {
+   "id": "dg-tsumetai",
+   "name": "冷たい煙",
+   "reading": "つめたいけむり",
+   "journey": "dogu",
+   "category": "煙の 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "❄️",
+   "mapNode": "dogu:kunen",
+   "relatedTerms": [
+    "dg-kunenki",
+    "dg-kunenzai"
+   ],
+   "bee": "共通",
+   "description": "燻煙器から 出す、熱すぎない 白い 煙の ことです。熱い 煙や 火花は ハチを いためるので、ゆっくり もやして ぬるい 煙に します。"
+  },
+  {
+   "id": "dg-jhook",
+   "name": "Jフック",
+   "reading": "じぇいふっく",
+   "journey": "dogu",
+   "category": "小さな 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🪝",
+   "mapNode": "dogu:kunen",
+   "relatedTerms": [
+    "dg-hivetool",
+    "dg-scraper"
+   ],
+   "bee": "西洋",
+   "description": "先が Jの 字の ように 曲がった ハイブツールです。かぎの 部分を 巣枠の 耳に かけて、てこの ように 持ちあげられます。おとなが 使う 道具です。"
+  },
+  {
+   "id": "dg-nidan",
+   "name": "二段こし",
+   "reading": "にだんごし",
+   "journey": "dogu",
+   "category": "採蜜の 道具",
+   "difficulty": 3,
+   "field": "道具",
+   "type": "concept",
+   "emoji": "🔽",
+   "mapNode": "dogu:bunriki",
+   "relatedTerms": [
+    "dg-mitsukoshi",
+    "dg-chomitsutank"
+   ],
+   "bee": "西洋",
+   "description": "あらい 網と 細かい 網を 二段に かさねた 蜜こし器です。上の あらい 網で ろうの かけらを とり、下の 細かい 網で 小さな ごみを こします。目づまりしにくいのが よい ところです。"
   },
   {
    "id": "sg-saimitsu",
@@ -6203,6 +8374,96 @@
    "description": "1年の しごとの 予定表です。春の 建勢・分蜂・採蜜・夏の 守り・秋の ダニ対策・冬じたくと、季節ごとの しごとを ならべます。"
   },
   {
+   "id": "sg-saimitsu-jiki",
+   "name": "採蜜の時期",
+   "reading": "さいみつのじき",
+   "journey": "shigoto",
+   "category": "採蜜",
+   "difficulty": 2,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "📅",
+   "mapNode": "shigoto:saimitsu",
+   "relatedTerms": [
+    "sg-saimitsu",
+    "sg-fugai"
+   ],
+   "bee": "西洋",
+   "description": "はちみつを とる ころあいの ことです。花の さかりが 終わる ころ、巣枠の 蜜に 蜜ぶたが 多く かかったら とりどきです。ふたは 蜜が 熟した しるしです。"
+  },
+  {
+   "id": "sg-naiken-tejun",
+   "name": "内検の手順",
+   "reading": "ないけんのてじゅん",
+   "journey": "shigoto",
+   "category": "春の 見まわり",
+   "difficulty": 2,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "📋",
+   "mapNode": "shigoto:naiken",
+   "relatedTerms": [
+    "sg-naiken",
+    "sg-mochikata"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の 中を 見る ときの 順番です。煙を そっと かけ、ふたを あけ、はしの 巣枠から 順に 見て、終わったら もとの 順に もどします。決まった 順だと 見おとしが へります。"
+  },
+  {
+   "id": "sg-omosa",
+   "name": "巣箱の重さ",
+   "reading": "すばこのおもさ",
+   "journey": "shigoto",
+   "category": "冬じたく",
+   "difficulty": 2,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "shigoto:ettou",
+   "relatedTerms": [
+    "sg-chomitsukakunin",
+    "sg-etto"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の うしろを 少し 持ちあげて、重さで 蜜が どれだけ たまって いるかを みる やりかたです。ふたを あけなくて よいので、寒い 時期の 見まわりにも 使えます。"
+  },
+  {
+   "id": "sg-mizuba",
+   "name": "水場",
+   "reading": "みずば",
+   "journey": "shigoto",
+   "category": "夏と 秋の 守り",
+   "difficulty": 2,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "💧",
+   "mapNode": "shigoto:natsu",
+   "relatedTerms": [
+    "sg-kyusui",
+    "sg-atsusa"
+   ],
+   "bee": "共通",
+   "description": "ミツバチが 水を くみに 来る 場所です。暑い 日は 水で 巣を 冷やします。近くに 水場を 用意すると、近所の せんたくものや プールに 行きにくく なります。"
+  },
+  {
+   "id": "sg-shitami",
+   "name": "蜜源の下見",
+   "reading": "みつげんのしたみ",
+   "journey": "shigoto",
+   "category": "置き場所と 受粉",
+   "difficulty": 2,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🔭",
+   "mapNode": "shigoto:tenshi",
+   "relatedTerms": [
+    "sg-okibasho",
+    "sg-idoyoho"
+   ],
+   "bee": "西洋",
+   "description": "巣箱を おく 場所や 移す 先を 決める 前に、花の ようすを 見に 行く ことです。どんな 花が いつ さくか、水場が あるかを たしかめます。"
+  },
+  {
    "id": "sg-soshun",
    "name": "早春の内検",
    "reading": "そうしゅんのないけん",
@@ -6653,6 +8914,637 @@
    ],
    "bee": "共通",
    "description": "巣箱 ひとつずつに つける 番号です。番号で 記録を 書くと、どの 群が 強いか、いつ 女王を かえたかが まちがえずに わかります。"
+  },
+  {
+   "id": "sg-shigeki",
+   "name": "刺激給餌",
+   "reading": "しげききゅうじ",
+   "journey": "shigoto",
+   "category": "春の 見まわり",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🥄",
+   "mapNode": "shigoto:kensei",
+   "relatedTerms": [
+    "sg-kyuji",
+    "sg-kensei"
+   ],
+   "bee": "西洋",
+   "description": "春の はじめに うすい 砂糖水を 少しずつ 与えて、女王に 卵を 産む 合図を おくる ことです。花の 蜜が 入りはじめたと ハチが 感じ、群が 早く 大きく なります。"
+  },
+  {
+   "id": "sg-kinitsu",
+   "name": "群の均一化",
+   "reading": "ぐんのきんいつか",
+   "journey": "shigoto",
+   "category": "春の 見まわり",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "shigoto:kensei",
+   "relatedTerms": [
+    "sg-kyogun",
+    "sg-jakugun",
+    "sg-gunseichosei"
+   ],
+   "bee": "西洋",
+   "description": "強い 群と 弱い 群の あいだで 蜂児枠や ハチを うつして、群の 大きさを そろえる ことです。そろえると 採蜜や 分蜂の 対策が まとめて しやすく なります。"
+  },
+  {
+   "id": "sg-hojiwaku",
+   "name": "蜂児枠の移動",
+   "reading": "ほうじわくのいどう",
+   "journey": "shigoto",
+   "category": "春の 見まわり",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "shigoto:kensei",
+   "relatedTerms": [
+    "sg-jakugun",
+    "sg-kinitsu"
+   ],
+   "bee": "西洋",
+   "description": "ふたの かかった 蜂児枠を 強い 群から 弱い 群へ うつす ことです。もうすぐ 生まれる ハチが ふえるので、弱い 群が 早く 元気に なり、強い 群は 分蜂しにくく なります。"
+  },
+  {
+   "id": "sg-jogeirekae",
+   "name": "箱の上下入れかえ",
+   "reading": "はこのじょうげいれかえ",
+   "journey": "shigoto",
+   "category": "春の 見まわり",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🔃",
+   "mapNode": "shigoto:kensei",
+   "relatedTerms": [
+    "sg-sanranken",
+    "sg-zoso"
+   ],
+   "bee": "西洋",
+   "description": "春に 2段の 巣箱の 上と 下を 入れかえる ことで、リバーシングとも いいます。女王は 上へ 上へと 卵を 産むので、空いた 箱を 上に すると 産卵の 場が 広がります。"
+  },
+  {
+   "id": "sg-space",
+   "name": "スペース不足",
+   "reading": "すぺーすぶそく",
+   "journey": "shigoto",
+   "category": "分蜂の 季節",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "📦",
+   "mapNode": "shigoto:bunpo",
+   "relatedTerms": [
+    "sg-bunponetsu",
+    "sg-zoso"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の 中が ハチや 蜜で いっぱいに なり、すきまが 足りない 状態です。せまく なると 分蜂の 気分が 高まるので、継箱を かけて 場所を 広げます。"
+  },
+  {
+   "id": "sg-mitsuzumari",
+   "name": "蜜詰まり",
+   "reading": "みつづまり",
+   "journey": "shigoto",
+   "category": "分蜂の 季節",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🍯",
+   "mapNode": "shigoto:bunpo",
+   "relatedTerms": [
+    "sg-space",
+    "sg-sanranken"
+   ],
+   "bee": "西洋",
+   "description": "子を 育てる 場所まで 蜜で うまり、女王が 卵を 産む 巣房が なくなる 状態です。流蜜期に 起きやすく、からの 巣枠を 入れて 産卵の 場を 作ります。"
+  },
+  {
+   "id": "sg-checker",
+   "name": "チェッカーボード",
+   "reading": "ちぇっかーぼーど",
+   "journey": "shigoto",
+   "category": "分蜂の 季節",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🏁",
+   "mapNode": "shigoto:bunpo",
+   "relatedTerms": [
+    "sg-bunpotaisaku",
+    "sg-chomitsuwaku"
+   ],
+   "bee": "西洋",
+   "description": "春の はじめに、育児圏の 上の 箱で 蜜枠と からの 巣枠を 交互に ならべる 分蜂対策です。上に 広さが あると ハチが 感じ、分かれる 準備を しにくく なると 考えられて います。"
+  },
+  {
+   "id": "sg-demaree",
+   "name": "デマリー法",
+   "reading": "でまりーほう",
+   "journey": "shigoto",
+   "category": "分蜂の 季節",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🧱",
+   "mapNode": "shigoto:bunpo",
+   "relatedTerms": [
+    "sg-bunpotaisaku",
+    "sg-tsugibakokake"
+   ],
+   "bee": "西洋",
+   "description": "女王を 下の 箱に のこし、蜂児の 巣枠を 隔王板の 上の 箱へ うつす 分蜂対策です。女王と 子育ての 場が 分かれるので、分蜂の 気分が おさまりやすく なります。"
+  },
+  {
+   "id": "sg-mochikata",
+   "name": "巣枠の持ち方",
+   "reading": "すわくのもちかた",
+   "journey": "shigoto",
+   "category": "春の 見まわり",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🤲",
+   "mapNode": "shigoto:naiken",
+   "relatedTerms": [
+    "sg-naiken",
+    "sg-naiken-tejun"
+   ],
+   "bee": "西洋",
+   "description": "巣枠は 両はしの 耳を 持って、真上に ゆっくり 持ちあげます。ななめに すると 巣が こすれて 女王を おとす ことが あるので、巣箱の 上で あつかいます。"
+  },
+  {
+   "id": "sg-umu",
+   "name": "卵の有無",
+   "reading": "たまごのうむ",
+   "journey": "shigoto",
+   "category": "春の 見まわり",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🥚",
+   "mapNode": "shigoto:naiken",
+   "relatedTerms": [
+    "sg-joukakunin",
+    "sg-hojikakunin"
+   ],
+   "bee": "西洋",
+   "description": "巣房の そこに 小さな 白い 卵が あるかを 見る ことです。卵が あれば、ここ 数日の うちに 女王が 卵を 産んだ しるしです。女王が 見つからない ときの たしかめに 使います。"
+  },
+  {
+   "id": "sg-narabi",
+   "name": "蜂児の並び",
+   "reading": "ほうじのならび",
+   "journey": "shigoto",
+   "category": "春の 見まわり",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🐝",
+   "mapNode": "shigoto:naiken",
+   "relatedTerms": [
+    "sg-hojikakunin",
+    "sg-joukakunin"
+   ],
+   "bee": "西洋",
+   "description": "ふたの かかった 蜂児が すきまなく そろって ならんで いるかを 見る ことです。そろって いれば 女王が 元気な しるしで、ぬけが 多いと 女王や 病気を たしかめます。"
+  },
+  {
+   "id": "sg-jikantai",
+   "name": "内検の時間帯",
+   "reading": "ないけんのじかんたい",
+   "journey": "shigoto",
+   "category": "春の 見まわり",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🕛",
+   "mapNode": "shigoto:naiken",
+   "relatedTerms": [
+    "sg-naiken",
+    "sg-tenki"
+   ],
+   "bee": "西洋",
+   "description": "内検は 晴れて あたたかい 日の 昼前後が よいと されます。花を さがしに 出る ハチが 多く、巣に のこる ハチが 少ないので、群が おだやかです。"
+  },
+  {
+   "id": "sg-fugairitsu",
+   "name": "封蓋率",
+   "reading": "ふうがいりつ",
+   "journey": "shigoto",
+   "category": "採蜜",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "📏",
+   "mapNode": "shigoto:saimitsu",
+   "relatedTerms": [
+    "sg-fugai",
+    "sg-saimitsu-jiki"
+   ],
+   "bee": "西洋",
+   "description": "巣枠の 蜜の うち、蜜ぶたが かかった ところの 割合です。多く かかって いるほど 蜜が 熟して いて、採蜜の めやすに なります。"
+  },
+  {
+   "id": "sg-furiotoshi",
+   "name": "蜂の振り落とし",
+   "reading": "はちのふりおとし",
+   "journey": "shigoto",
+   "category": "採蜜",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "👋",
+   "mapNode": "shigoto:saimitsu",
+   "relatedTerms": [
+    "sg-saimitsuwaku",
+    "sg-saimitsu"
+   ],
+   "bee": "西洋",
+   "description": "採蜜する 巣枠に ついた ハチを、巣箱の 上で 枠を すばやく ふって 中へ おとす ことです。のこった ハチは 刷毛で やさしく はらいます。"
+  },
+  {
+   "id": "sg-nurewaku",
+   "name": "濡れ巣枠の戻し",
+   "reading": "ぬれすわくのもどし",
+   "journey": "shigoto",
+   "category": "採蜜",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "shigoto:saimitsu",
+   "relatedTerms": [
+    "sg-saimitsu",
+    "sg-toho"
+   ],
+   "bee": "西洋",
+   "description": "蜜を しぼった あとの ぬれた 巣枠を 群に もどし、のこりの 蜜を ハチに なめとって もらう ことです。夕方に もどすと 盗蜂が 起きにくく なります。"
+  },
+  {
+   "id": "sg-kanki",
+   "name": "巣箱の換気",
+   "reading": "すばこのかんき",
+   "journey": "shigoto",
+   "category": "夏と 秋の 守り",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🌬️",
+   "mapNode": "shigoto:natsu",
+   "relatedTerms": [
+    "sg-atsusa",
+    "sg-hiyoke"
+   ],
+   "bee": "西洋",
+   "description": "夏の 暑い 時期に、巣箱に すきまを 作って 風を 通す ことです。ハチも はねで 風を おくって 巣を 冷やして いますが、人が 手伝うと らくに なります。"
+  },
+  {
+   "id": "sg-natsunaiken",
+   "name": "夏の内検",
+   "reading": "なつのないけん",
+   "journey": "shigoto",
+   "category": "夏と 秋の 守り",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "☀️",
+   "mapNode": "shigoto:natsu",
+   "relatedTerms": [
+    "sg-naiken",
+    "sg-atsusa"
+   ],
+   "bee": "西洋",
+   "description": "夏は いちばん 暑い 昼すぎを さけ、朝の すずしい うちに 短い 時間で 内検を します。長く ふたを あけると 巣の 中が 暑く なり、巣も やわらかく なるからです。"
+  },
+  {
+   "id": "sg-yuin",
+   "name": "誘引液",
+   "reading": "ゆういんえき",
+   "journey": "shigoto",
+   "category": "夏と 秋の 守り",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🪤",
+   "mapNode": "shigoto:suzume",
+   "relatedTerms": [
+    "sg-suzumetaisaku",
+    "sg-suzumebachi"
+   ],
+   "bee": "共通",
+   "description": "スズメバチを わなに さそう、あまい においの 液です。春に 巣を 作りはじめる スズメバチの 女王を つかまえると、夏から 秋に 来る 数を へらせると 考えられて います。"
+  },
+  {
+   "id": "sg-suzume-kisetsu",
+   "name": "スズメバチの季節",
+   "reading": "すずめばちのきせつ",
+   "journey": "shigoto",
+   "category": "夏と 秋の 守り",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🍂",
+   "mapNode": "shigoto:suzume",
+   "relatedTerms": [
+    "sg-suzumebachi",
+    "sg-bogoami"
+   ],
+   "bee": "共通",
+   "description": "スズメバチが 巣箱の 前に よく 来るのは、夏の 終わりから 秋です。この ころは スズメバチの 巣が 大きく なるので、防護網や わなで 早めに 守ります。"
+  },
+  {
+   "id": "sg-shizenrakka",
+   "name": "自然落下",
+   "reading": "しぜんらっか",
+   "journey": "shigoto",
+   "category": "夏と 秋の 守り",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🔍",
+   "mapNode": "shigoto:aki",
+   "relatedTerms": [
+    "sg-danitaisaku",
+    "sg-dani-jiki"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の 底に 入れた 板に、自然に 落ちた ダニを 数える 調べかたです。数の ふえかたで、巣の 中に ダニが どれだけ いるかの めやすに します。"
+  },
+  {
+   "id": "sg-muhoji",
+   "name": "無蜂児期",
+   "reading": "むほうじき",
+   "journey": "shigoto",
+   "category": "夏と 秋の 守り",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🈳",
+   "mapNode": "shigoto:aki",
+   "relatedTerms": [
+    "sg-danitaisaku",
+    "sg-shizenrakka"
+   ],
+   "bee": "西洋",
+   "description": "巣の 中に 卵や 幼虫・さなぎが いない 時期です。ダニは ふたの かかった 巣房に かくれて ふえるので、蜂児が いない ときは ダニの 対策が しやすく なります。"
+  },
+  {
+   "id": "sg-dani-jiki",
+   "name": "ダニの増える時期",
+   "reading": "だにのふえるじき",
+   "journey": "shigoto",
+   "category": "夏と 秋の 守り",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "shigoto:aki",
+   "relatedTerms": [
+    "sg-danitaisaku",
+    "sg-fuyubachiikusei"
+   ],
+   "bee": "西洋",
+   "description": "ミツバチに つく ダニは、夏から 秋に いちばん ふえます。この ころに 対策を して おくと、冬を こす ハチを 元気に 育てられます。"
+  },
+  {
+   "id": "sg-ettogun",
+   "name": "越冬群",
+   "reading": "えっとうぐん",
+   "journey": "shigoto",
+   "category": "冬じたく",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "❄️",
+   "mapNode": "shigoto:ettou",
+   "relatedTerms": [
+    "sg-etto",
+    "sg-ettojunbi"
+   ],
+   "bee": "西洋",
+   "description": "冬を こす 群の ことです。秋の うちに ハチの 数と 蜜を じゅうぶんに そろえて 強い 群に して おくと、春に 早く 立ちあがります。"
+  },
+  {
+   "id": "sg-shukusho",
+   "name": "巣箱の縮小",
+   "reading": "すばこのしゅくしょう",
+   "journey": "shigoto",
+   "category": "冬じたく",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "📉",
+   "mapNode": "shigoto:ettou",
+   "relatedTerms": [
+    "sg-ettojunbi",
+    "sg-hoon"
+   ],
+   "bee": "西洋",
+   "description": "冬の 前に 巣枠の 数を へらし、ハチが あたためやすい 大きさに する ことです。せまく すると、少ない ハチでも 巣の 中を あたたかく たもてます。"
+  },
+  {
+   "id": "sg-chomitsu-haichi",
+   "name": "貯蜜の配置",
+   "reading": "ちょみつのはいち",
+   "journey": "shigoto",
+   "category": "冬じたく",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🗂️",
+   "mapNode": "shigoto:ettou",
+   "relatedTerms": [
+    "sg-ettoshudan",
+    "sg-chomitsuwaku"
+   ],
+   "bee": "西洋",
+   "description": "冬の 前に、蜜の たまった 巣枠を ハチの かたまりの 上や 横に くるように ならべる ことです。冬の ハチは かたまったまま 少しずつ 動くので、そばに えさが あると 安心です。"
+  },
+  {
+   "id": "sg-fuyutenken",
+   "name": "冬の点検",
+   "reading": "ふゆのてんけん",
+   "journey": "shigoto",
+   "category": "冬じたく",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "👂",
+   "mapNode": "shigoto:fuyu",
+   "relatedTerms": [
+    "sg-omosa",
+    "sg-mimawari"
+   ],
+   "bee": "西洋",
+   "description": "冬は ふたを あけず、外から 群の ようすを たしかめます。巣箱に 耳を あてて 羽音を きいたり、重さや 巣門の ようすを 見たり します。"
+  },
+  {
+   "id": "sg-jobukanki",
+   "name": "上部換気",
+   "reading": "じょうぶかんき",
+   "journey": "shigoto",
+   "category": "冬じたく",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🌫️",
+   "mapNode": "shigoto:fuyu",
+   "relatedTerms": [
+    "sg-ketsuro",
+    "sg-hoon"
+   ],
+   "bee": "西洋",
+   "description": "巣箱の 上の ほうに 小さな すきまを 作り、しめった 空気を にがす ことです。冬は ハチの 息で 水の つぶが つきやすいので、結露を へらせます。"
+  },
+  {
+   "id": "sg-kokei",
+   "name": "固形の餌",
+   "reading": "こけいのえさ",
+   "journey": "shigoto",
+   "category": "冬じたく",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🧊",
+   "mapNode": "shigoto:fuyu",
+   "relatedTerms": [
+    "sg-kyuji",
+    "sg-satomizu"
+   ],
+   "bee": "西洋",
+   "description": "冬に 砂糖水の かわりに 巣箱に おく、かためた えさです。寒い 時期は 砂糖水が 冷えて ハチが 飲みにくいので、かたまりの 砂糖を 使う ことが あります。"
+  },
+  {
+   "id": "sg-sumonjime",
+   "name": "巣門閉め",
+   "reading": "すもんじめ",
+   "journey": "shigoto",
+   "category": "置き場所と 受粉",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🚪",
+   "mapNode": "shigoto:tenshi",
+   "relatedTerms": [
+    "sg-ido",
+    "sg-yakan"
+   ],
+   "bee": "西洋",
+   "description": "巣箱を 運ぶ 前に、外に 出た ハチが 帰って くるのを 待って 巣門を とじる ことです。とじる ときは 風が 通る 網を 使い、中が 暑く ならない ように します。"
+  },
+  {
+   "id": "sg-yakan",
+   "name": "夜間移動",
+   "reading": "やかんいどう",
+   "journey": "shigoto",
+   "category": "置き場所と 受粉",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🌙",
+   "mapNode": "shigoto:tenshi",
+   "relatedTerms": [
+    "sg-sumonjime",
+    "sg-idoyoho"
+   ],
+   "bee": "西洋",
+   "description": "ハチが みんな 巣に もどった 夜に 巣箱を 運ぶ ことです。すずしく、とちゅうで ハチが 外に 出ないので、群に やさしい 運びかたです。"
+  },
+  {
+   "id": "sg-tsuki",
+   "name": "通気の確保",
+   "reading": "つうきのかくほ",
+   "journey": "shigoto",
+   "category": "置き場所と 受粉",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "💨",
+   "mapNode": "shigoto:tenshi",
+   "relatedTerms": [
+    "sg-yakan",
+    "sg-kanki"
+   ],
+   "bee": "西洋",
+   "description": "巣箱を 運ぶ あいだ、中が 暑く ならない ように 風の 通り道を 作る ことです。網の ふたや すきまを 使って、暑さから 群を 守ります。"
+  },
+  {
+   "id": "sg-hannyu",
+   "name": "ハウスへの搬入",
+   "reading": "はうすへのはんにゅう",
+   "journey": "shigoto",
+   "category": "置き場所と 受粉",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🏠",
+   "mapNode": "shigoto:pollination",
+   "relatedTerms": [
+    "sg-house",
+    "sg-kashidashi"
+   ],
+   "bee": "西洋",
+   "description": "作物の 花が さく ころに 合わせて、巣箱を ハウスに 入れる ことです。ハチが 巣に もどった 夕方などに 運ぶと、群が 落ちついて 新しい 場所に なれます。"
+  },
+  {
+   "id": "sg-kaifuku",
+   "name": "返却後の回復",
+   "reading": "へんきゃくごのかいふく",
+   "journey": "shigoto",
+   "category": "置き場所と 受粉",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🌱",
+   "mapNode": "shigoto:pollination",
+   "relatedTerms": [
+    "sg-kashidashi",
+    "sg-jakugun"
+   ],
+   "bee": "西洋",
+   "description": "ハウスでの 受粉を 終えて もどった 群を 立てなおす ことです。ハウスは 花が かぎられるので 群が 弱りがちです。花の 多い 場所に おき、えさを 与えて 元気に します。"
+  },
+  {
+   "id": "sg-keiyaku",
+   "name": "交配の契約",
+   "reading": "こうはいのけいやく",
+   "journey": "shigoto",
+   "category": "置き場所と 受粉",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🤝",
+   "mapNode": "shigoto:pollination",
+   "relatedTerms": [
+    "sg-kashidashi",
+    "sg-shisetsuengei"
+   ],
+   "bee": "西洋",
+   "description": "農家に ミツバチを 貸す ときに、群の 大きさや 期間、返しかたを 決めて おく 取り決めです。ハウスで 農薬を 使う 予定も 話しあって おくと、ハチを 守れます。"
+  },
+  {
+   "id": "sg-umaredoshi",
+   "name": "女王の生まれ年",
+   "reading": "じょおうのうまれどし",
+   "journey": "shigoto",
+   "category": "記録",
+   "difficulty": 3,
+   "field": "飼育管理",
+   "type": "concept",
+   "emoji": "🎂",
+   "mapNode": "shigoto:kiroku",
+   "relatedTerms": [
+    "sg-kiroku",
+    "sg-murebango"
+   ],
+   "bee": "西洋",
+   "description": "女王が 生まれた 年を 記録して おく ことです。女王は 年を かさねると 卵を 産む 力が おちて いくので、生まれ年を 見て 新しい 女王に かえる めやすに します。"
   },
   {
    "id": "hn-hana",
@@ -7466,6 +10358,96 @@
    "description": "花の 種類で ちがう 花粉の 色です。黄色・オレンジ・白・こい赤など いろいろで、花粉だんごの 色から どの 花に 行ったか 見当が つきます。"
   },
   {
+   "id": "hn-kaki",
+   "name": "カキ",
+   "reading": "かき",
+   "journey": "hana",
+   "category": "作物と 受粉",
+   "difficulty": 2,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🟠",
+   "mapNode": "hana:sakumotsu",
+   "relatedTerms": [
+    "hn-mitsugenshokubutsu",
+    "hn-ketsujitsu"
+   ],
+   "bee": "共通",
+   "description": "秋に 実る 果物の 木で、初夏に クリーム色の 小さな 花を さかせます。花は 下向きで 目立ちませんが、蜜が 多く、ミツバチが よく 集まる 蜜源です。"
+  },
+  {
+   "id": "hn-yamazakura",
+   "name": "ヤマザクラ",
+   "reading": "やまざくら",
+   "journey": "hana",
+   "category": "春の 花",
+   "difficulty": 2,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌸",
+   "mapNode": "hana:haru",
+   "relatedTerms": [
+    "hn-sakura",
+    "hn-kafungen"
+   ],
+   "bee": "共通",
+   "description": "山に 自然に 生える サクラで、春に 葉と いっしょに 花を さかせます。春の はじめの 蜜と 花粉を くれて、群が 大きく なる 助けに なります。"
+  },
+  {
+   "id": "hn-hotokenoza",
+   "name": "ホトケノザ",
+   "reading": "ほとけのざ",
+   "journey": "hana",
+   "category": "春の 花",
+   "difficulty": 2,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌺",
+   "mapNode": "hana:haru",
+   "relatedTerms": [
+    "hn-tanpopo",
+    "hn-kafungen"
+   ],
+   "bee": "共通",
+   "description": "早春の 畑や 道ばたに さく、赤むらさきの 小さな 花の 草です。花が 少ない 春の はじめに、ミツバチの 蜜や 花粉の もとに なります。"
+  },
+  {
+   "id": "hn-inufuguri",
+   "name": "オオイヌノフグリ",
+   "reading": "おおいぬのふぐり",
+   "journey": "hana",
+   "category": "春の 花",
+   "difficulty": 2,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "💙",
+   "mapNode": "hana:haru",
+   "relatedTerms": [
+    "hn-hotokenoza",
+    "hn-kafungen"
+   ],
+   "bee": "共通",
+   "description": "早春の 道ばたに さく、小さな 青い 花の 草です。日が あたると ひらき、ミツバチが 花粉を あつめに 来ます。春の いちばん はじめに さく 花の ひとつです。"
+  },
+  {
+   "id": "hn-tsubaki",
+   "name": "ツバキ",
+   "reading": "つばき",
+   "journey": "hana",
+   "category": "秋と 冬の 花",
+   "difficulty": 2,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌹",
+   "mapNode": "hana:fuyu",
+   "relatedTerms": [
+    "hn-ume",
+    "hn-biwa"
+   ],
+   "bee": "日本",
+   "description": "冬から 春に 赤い 花を さかせる 木です。花の おくに 蜜が 多く、寒い 時期でも 飛ぶ ニホンミツバチが よく おとずれます。メジロなどの 鳥も 蜜を すいに 来ます。"
+  },
+  {
    "id": "hn-harienju",
    "name": "ハリエンジュ",
    "reading": "はりえんじゅ",
@@ -7914,6 +10896,636 @@
    ],
    "bee": "共通",
    "description": "たねから 芽を 出し、1年の うちに 花を さかせて 一生を 終える 草です。ヒマワリや ソバが そうで、毎年 たねを まいて 育てます。"
+  },
+  {
+   "id": "hn-akatsume",
+   "name": "アカツメクサ",
+   "reading": "あかつめくさ",
+   "journey": "hana",
+   "category": "草の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌸",
+   "mapNode": "hana:natsu",
+   "relatedTerms": [
+    "hn-shirotsumekusa",
+    "hn-clover"
+   ],
+   "bee": "共通",
+   "description": "初夏から 夏に さく、赤むらさきの クローバーの なかまです。花の 筒が 長いので、口の みじかい ミツバチには 蜜が とりにくく、マルハナバチが よく 来ます。"
+  },
+  {
+   "id": "hn-mochinoki",
+   "name": "モチノキ",
+   "reading": "もちのき",
+   "journey": "hana",
+   "category": "木の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌳",
+   "mapNode": "hana:ki",
+   "relatedTerms": [
+    "hn-kuroganemochi",
+    "hn-gairoju"
+   ],
+   "bee": "共通",
+   "description": "庭や 公園に 植えられる 木で、春に 黄緑色の 小さな 花を たくさん つけます。花は 目立ちませんが、ミツバチが 蜜を あつめに 来ます。"
+  },
+  {
+   "id": "hn-kuroganemochi",
+   "name": "クロガネモチ",
+   "reading": "くろがねもち",
+   "journey": "hana",
+   "category": "木の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌳",
+   "mapNode": "hana:ki",
+   "relatedTerms": [
+    "hn-mochinoki",
+    "hn-gairoju"
+   ],
+   "bee": "共通",
+   "description": "公園や 街路樹に 多い 木で、初夏に うすむらさきの 小さな 花を つけます。秋から 冬には 赤い 実が なり、花の ころには ミツバチが よく 来ます。"
+  },
+  {
+   "id": "hn-yanagi",
+   "name": "ヤナギ",
+   "reading": "やなぎ",
+   "journey": "hana",
+   "category": "木の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌿",
+   "mapNode": "hana:ki",
+   "relatedTerms": [
+    "hn-kafungen",
+    "hn-ume"
+   ],
+   "bee": "共通",
+   "description": "水辺に 多い 木で、早春に 葉より 先に 花の 穂を つけます。ネコヤナギの ような 花の 穂は、花の 少ない 春の はじめに ミツバチの 花粉と 蜜の もとに なります。"
+  },
+  {
+   "id": "hn-nezumimochi",
+   "name": "ネズミモチ",
+   "reading": "ねずみもち",
+   "journey": "hana",
+   "category": "木の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌳",
+   "mapNode": "hana:ki",
+   "relatedTerms": [
+    "hn-mochinoki",
+    "hn-gairoju"
+   ],
+   "bee": "共通",
+   "description": "生け垣に よく 使われる 木で、初夏に 白い 小さな 花を たくさん つけます。花の ころは 強い においが して、ミツバチなど 多くの 虫が 集まります。"
+  },
+  {
+   "id": "hn-akamegashiwa",
+   "name": "アカメガシワ",
+   "reading": "あかめがしわ",
+   "journey": "hana",
+   "category": "夏の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🍃",
+   "mapNode": "hana:natsu",
+   "relatedTerms": [
+    "hn-natsugare",
+    "hn-karasuzansho"
+   ],
+   "bee": "共通",
+   "description": "空き地や 林の はしに 生える 木で、新しい 葉が 赤いのが 名前の もとです。初夏から 夏に 花の 穂を つけ、ミツバチが 蜜や 花粉を あつめます。"
+  },
+  {
+   "id": "hn-utsugi",
+   "name": "ウツギ",
+   "reading": "うつぎ",
+   "journey": "hana",
+   "category": "夏の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🤍",
+   "mapNode": "hana:natsu",
+   "relatedTerms": [
+    "hn-akamegashiwa",
+    "hn-kaikaki"
+   ],
+   "bee": "共通",
+   "description": "初夏に 白い 花を たくさん さかせる 木で、「卯の花」とも よばれます。山や 生け垣で 見られ、ミツバチが 蜜を あつめに 来ます。"
+  },
+  {
+   "id": "hn-taranoki",
+   "name": "タラノキ",
+   "reading": "たらのき",
+   "journey": "hana",
+   "category": "秋と 冬の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌿",
+   "mapNode": "hana:aki",
+   "relatedTerms": [
+    "hn-hazakaiki",
+    "hn-nurude"
+   ],
+   "bee": "共通",
+   "description": "春の 芽が 山菜に なる 木です。夏の 終わりごろ、枝の 先に 白い 小さな 花が 集まって さき、ハチなど 多くの 虫が 来ます。花の 少ない ころの 蜜源です。"
+  },
+  {
+   "id": "hn-nurude",
+   "name": "ヌルデ",
+   "reading": "ぬるで",
+   "journey": "hana",
+   "category": "秋と 冬の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🍁",
+   "mapNode": "hana:aki",
+   "relatedTerms": [
+    "hn-taranoki",
+    "hn-hazenoki"
+   ],
+   "bee": "共通",
+   "description": "山や 林の はしに 生える 木で、夏の 終わりごろ 枝の 先に 白い 小さな 花を びっしり つけます。花の ころは ハチなど 多くの 虫で にぎやかに なり、秋に 葉が 赤く なります。"
+  },
+  {
+   "id": "hn-kuzu",
+   "name": "クズ",
+   "reading": "くず",
+   "journey": "hana",
+   "category": "秋と 冬の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🍇",
+   "mapNode": "hana:aki",
+   "relatedTerms": [
+    "hn-hagi",
+    "hn-seitaka"
+   ],
+   "bee": "共通",
+   "description": "夏の 終わりから 秋に、むらさきの 花を さかせる つる草です。ブドウの ような あまい においが あり、ハチが 蜜を あつめに 来ます。根からは くず粉が とれます。"
+  },
+  {
+   "id": "hn-kosendangusa",
+   "name": "コセンダングサ",
+   "reading": "こせんだんぐさ",
+   "journey": "hana",
+   "category": "秋と 冬の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌼",
+   "mapNode": "hana:aki",
+   "relatedTerms": [
+    "hn-seitaka",
+    "hn-hazakaiki"
+   ],
+   "bee": "共通",
+   "description": "秋に 黄色い 小さな 花を さかせる 草で、あたたかい 地方に 多く 生えます。花の 少ない 晩秋まで さくので、ハチの えさに なります。たねは 服に くっつきます。"
+  },
+  {
+   "id": "hn-mizosoba",
+   "name": "ミゾソバ",
+   "reading": "みぞそば",
+   "journey": "hana",
+   "category": "秋と 冬の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "💗",
+   "mapNode": "hana:aki",
+   "relatedTerms": [
+    "hn-soba",
+    "hn-kuzu"
+   ],
+   "bee": "共通",
+   "description": "秋に 田んぼの あぜや 水辺に さく 草で、うすピンクの 小さな 花が 集まって さきます。ソバの なかまで、ミツバチが 蜜を あつめに 来ます。"
+  },
+  {
+   "id": "hn-itadori",
+   "name": "イタドリ",
+   "reading": "いたどり",
+   "journey": "hana",
+   "category": "夏の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌿",
+   "mapNode": "hana:natsu",
+   "relatedTerms": [
+    "hn-soba",
+    "hn-natsugare"
+   ],
+   "bee": "共通",
+   "description": "山や 道ばたに 生える 大きな 草で、夏に 白い 小さな 花を たくさん つけます。ソバの なかまで、花の 少ない 夏の 山の 蜜源に なります。"
+  },
+  {
+   "id": "hn-sazanka",
+   "name": "サザンカ",
+   "reading": "さざんか",
+   "journey": "hana",
+   "category": "秋と 冬の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌺",
+   "mapNode": "hana:fuyu",
+   "relatedTerms": [
+    "hn-tsubaki",
+    "hn-yatsude"
+   ],
+   "bee": "共通",
+   "description": "秋の 終わりから 冬に さく、ツバキに にた 花の 木です。花の 少ない 寒い 時期に さくので、ミツバチが 晴れた 日に 蜜や 花粉を あつめに 来ます。"
+  },
+  {
+   "id": "hn-kanamemochi",
+   "name": "カナメモチ",
+   "reading": "かなめもち",
+   "journey": "hana",
+   "category": "春の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🤍",
+   "mapNode": "hana:haru",
+   "relatedTerms": [
+    "hn-nezumimochi",
+    "hn-gairoju"
+   ],
+   "bee": "共通",
+   "description": "新しい 葉が 赤く、生け垣に よく 使われる 木です。春の 終わりごろ 白い 小さな 花を たくさん つけ、ミツバチなどが 集まります。"
+  },
+  {
+   "id": "hn-goma",
+   "name": "ゴマ",
+   "reading": "ごま",
+   "journey": "hana",
+   "category": "作物と 受粉",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌾",
+   "mapNode": "hana:sakumotsu",
+   "relatedTerms": [
+    "hn-soba",
+    "hn-himawari"
+   ],
+   "bee": "共通",
+   "description": "たねを 食べる 作物で、夏に うすピンクや 白の つりがねの 形の 花を さかせます。花には 蜜が あり、ミツバチが よく おとずれます。"
+  },
+  {
+   "id": "hn-kyuri",
+   "name": "キュウリ",
+   "reading": "きゅうり",
+   "journey": "hana",
+   "category": "作物と 受粉",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🥒",
+   "mapNode": "hana:sakumotsu",
+   "relatedTerms": [
+    "hn-kabocha",
+    "hn-suika"
+   ],
+   "bee": "共通",
+   "description": "ウリの なかまの 野菜です。日本で 多く 作られる 品種は 受粉しなくても 実が 育ちますが、品種や たねを とる ときには ハチが 花粉を 運ぶ ことが 役立ちます。"
+  },
+  {
+   "id": "hn-oto",
+   "name": "オウトウ",
+   "reading": "おうとう",
+   "journey": "hana",
+   "category": "作物と 受粉",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🍒",
+   "mapNode": "hana:sakumotsu",
+   "relatedTerms": [
+    "hn-jikafuwago",
+    "hn-jufunju"
+   ],
+   "bee": "共通",
+   "description": "サクランボの なる 木です。同じ 品種の 花粉では 実が なりにくいので、ちがう 品種の 木を ならべて 植え、ミツバチなどに 花粉を 運んで もらいます。"
+  },
+  {
+   "id": "hn-almond",
+   "name": "アーモンド",
+   "reading": "あーもんど",
+   "journey": "hana",
+   "category": "作物と 受粉",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌰",
+   "mapNode": "hana:sakumotsu",
+   "relatedTerms": [
+    "hn-jikafuwago",
+    "hn-ketsujitsu"
+   ],
+   "bee": "西洋",
+   "description": "外国で 多く 作られる 木の 実です。多くの 品種は ほかの 木の 花粉が ないと 実が なりにくいので、花の ころに たくさんの 巣箱が 畑へ 運ばれます。"
+  },
+  {
+   "id": "hn-alfalfa",
+   "name": "アルファルファ",
+   "reading": "あるふぁるふぁ",
+   "journey": "hana",
+   "category": "作物と 受粉",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌱",
+   "mapNode": "hana:sakumotsu",
+   "relatedTerms": [
+    "hn-clover",
+    "hn-ryokuhi"
+   ],
+   "bee": "共通",
+   "description": "牛の えさに なる マメの なかまの 牧草です。外国では たねを とる 畑で、受粉の ために ハチが 使われます。むらさきの 花から ミツバチも 蜜を あつめます。"
+  },
+  {
+   "id": "hn-eucalyptus",
+   "name": "ユーカリ",
+   "reading": "ゆーかり",
+   "journey": "hana",
+   "category": "木の 花",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🐨",
+   "mapNode": "hana:ki",
+   "relatedTerms": [
+    "hn-acacia",
+    "hn-mitsugenshokubutsu"
+   ],
+   "bee": "共通",
+   "description": "オーストラリアなどに 多い 木で、コアラが 葉を 食べる ことで 知られます。白い ふさの ような 花から 蜜が 出て、外国では 大事な 蜜源の ひとつです。"
+  },
+  {
+   "id": "hn-hokujo",
+   "name": "蜜源の北上",
+   "reading": "みつげんのほくじょう",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🧭",
+   "mapNode": "hana:ryumitsu",
+   "relatedTerms": [
+    "hn-mitsugencalendar",
+    "hn-kaikaki"
+   ],
+   "bee": "西洋",
+   "description": "花の さく 時期が、春から 夏に かけて 南から 北へ うつって いく ことです。移動養蜂は この 花の 動きを 追いかけて、巣箱を 運びます。"
+  },
+  {
+   "id": "hn-hyoko",
+   "name": "標高と開花",
+   "reading": "ひょうこうとかいか",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "⛰️",
+   "mapNode": "hana:ryumitsu",
+   "relatedTerms": [
+    "hn-kaikaki",
+    "hn-hokujo"
+   ],
+   "bee": "共通",
+   "description": "同じ 花でも、高い 山ほど 気温が ひくいので さく 時期が おそく なります。ふもとで 花が 終わっても、山の 上では これから さく ことが あります。"
+  },
+  {
+   "id": "hn-kion",
+   "name": "気温と流蜜",
+   "reading": "きおんとりゅうみつ",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌡️",
+   "mapNode": "hana:ryumitsu",
+   "relatedTerms": [
+    "hn-ryumitsuki",
+    "hn-bunpitsu"
+   ],
+   "bee": "共通",
+   "description": "あたたかく 晴れた 日は、花が 蜜を よく 出し、ハチも たくさん 飛びます。寒い 日や くもりの 日は、同じ 花でも 蜜の 出かたが へります。"
+  },
+  {
+   "id": "hn-nagaame",
+   "name": "長雨",
+   "reading": "ながあめ",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "☔",
+   "mapNode": "hana:ryumitsu",
+   "relatedTerms": [
+    "hn-kion",
+    "hn-ryumitsuki"
+   ],
+   "bee": "共通",
+   "description": "雨が 何日も つづく ことです。ハチが 外へ 出られず、花の 蜜も 雨で 流れて しまうので、流蜜期に 長雨が あると 蜜が あまり たまりません。"
+  },
+  {
+   "id": "hn-eiyoka",
+   "name": "花粉の栄養価",
+   "reading": "かふんのえいようか",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🥗",
+   "mapNode": "hana:kafungen",
+   "relatedTerms": [
+    "hn-kafungen",
+    "hn-kafuniro"
+   ],
+   "bee": "共通",
+   "description": "花粉に ふくまれる タンパク質などの 栄養の 多さです。花の 種類で ちがうので、いろいろな 花の 花粉を あつめられる 場所だと、幼虫が よく 育ちます。"
+  },
+  {
+   "id": "hn-kafunbusoku",
+   "name": "花粉不足",
+   "reading": "かふんぶそく",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🥀",
+   "mapNode": "hana:kafungen",
+   "relatedTerms": [
+    "hn-kafungen",
+    "hn-eiyoka"
+   ],
+   "bee": "共通",
+   "description": "花粉が 足りない 状態です。花粉は 幼虫の えさに なるので、足りないと 子育てが へって 群が 大きく なりません。花の 少ない 時期に 起きやすいです。"
+  },
+  {
+   "id": "hn-tomorokoshi",
+   "name": "トウモロコシ",
+   "reading": "とうもろこし",
+   "journey": "hana",
+   "category": "作物と 受粉",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌽",
+   "mapNode": "hana:kafungen",
+   "relatedTerms": [
+    "hn-fubaika",
+    "hn-kafungen"
+   ],
+   "bee": "共通",
+   "description": "風で 花粉を 運ぶ 風媒花の 作物です。ハチに 受粉を たのむ ことは ありませんが、てっぺんの 穂から 出る 花粉を ミツバチが あつめに 来る ことが あります。"
+  },
+  {
+   "id": "hn-keikan",
+   "name": "景観作物",
+   "reading": "けいかんさくもつ",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🏞️",
+   "mapNode": "hana:ueru",
+   "relatedTerms": [
+    "hn-nanohana",
+    "hn-renge"
+   ],
+   "bee": "共通",
+   "description": "畑や 田んぼに、景色を きれいに する ために 植える 花です。菜の花や レンゲ、ヒマワリなどが あり、ミツバチの 蜜源にも なります。"
+  },
+  {
+   "id": "hn-shokusai",
+   "name": "蜜源植栽",
+   "reading": "みつげんしょくさい",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🌳",
+   "mapNode": "hana:ueru",
+   "relatedTerms": [
+    "hn-mitsugencalendar",
+    "hn-hazakaiki"
+   ],
+   "bee": "共通",
+   "description": "ミツバチの 蜜源に なる 木や 草花を、計画して 植える ことです。花の 時期が ちがう ものを 組みあわせると、花の とぎれる 時期を へらせます。"
+  },
+  {
+   "id": "hn-gensho",
+   "name": "蜜源の減少",
+   "reading": "みつげんのげんしょう",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "📉",
+   "mapNode": "hana:ueru",
+   "relatedTerms": [
+    "hn-renge",
+    "hn-shokusai"
+   ],
+   "bee": "共通",
+   "description": "レンゲ畑や 雑木林が へって、ミツバチの 蜜源が 少なく なって いる ことです。休耕田や 公園に 蜜源を 植える とりくみも あります。"
+  },
+  {
+   "id": "hn-ritchi",
+   "name": "蜂場の立地",
+   "reading": "ほうじょうのりっち",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "📍",
+   "mapNode": "hana:hanni",
+   "relatedTerms": [
+    "hn-kodohankei",
+    "hn-hiatari"
+   ],
+   "bee": "西洋",
+   "description": "巣箱を おく 場所の 条件です。ハチが 飛べる 範囲に 蜜源と 水場が あり、日当たりが よく、つよい 風が あたらない ところが よいと されます。"
+  },
+  {
+   "id": "hn-kankaku",
+   "name": "蜂場の間隔",
+   "reading": "ほうじょうのかんかく",
+   "journey": "hana",
+   "category": "蜜源の 季節と 場所",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "↔️",
+   "mapNode": "hana:hanni",
+   "relatedTerms": [
+    "hn-saijihanni",
+    "hn-ritchi"
+   ],
+   "bee": "西洋",
+   "description": "養蜂場どうしの はなれぐあいの ことです。近すぎると 同じ 花を とりあって 蜜が 少なく なるので、ハチの 飛ぶ 範囲を 考えて 場所を えらびます。"
+  },
+  {
+   "id": "hn-takajufun",
+   "name": "他家受粉",
+   "reading": "たかじゅふん",
+   "journey": "hana",
+   "category": "花の しくみ",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🔀",
+   "mapNode": "hana:jufun",
+   "relatedTerms": [
+    "hn-jikafuwago",
+    "hn-sofun"
+   ],
+   "bee": "共通",
+   "description": "ほかの 株の 花の 花粉が めしべに ついて 実を むすぶ ことです。リンゴや ナシなど 多くの 果樹は この 受粉が 必要で、ミツバチが 木から 木へ 花粉を 運びます。"
+  },
+  {
+   "id": "hn-jinkojufun",
+   "name": "人工授粉",
+   "reading": "じんこうじゅふん",
+   "journey": "hana",
+   "category": "作物と 受粉",
+   "difficulty": 3,
+   "field": "蜜源",
+   "type": "concept",
+   "emoji": "🖌️",
+   "mapNode": "hana:jufun",
+   "relatedTerms": [
+    "hn-nashi",
+    "hn-ketsujitsu"
+   ],
+   "bee": "共通",
+   "description": "人が 筆などで 花粉を めしべに つける ことです。手間の かかる しごとですが、ミツバチが 受粉を 手伝うと、その 手間を へらせます。"
   },
   {
    "id": "sh-mitsuro",
@@ -8735,6 +12347,96 @@
    "description": "働き蜂が 花の みつを 蜜胃に ためて、巣まで 運ぶ ことです。帰った ときは おなかが ふくらんで いて、からだが 少し 重く なって います。"
   },
   {
+   "id": "sh-iro",
+   "name": "はちみつの色",
+   "reading": "はちみつのいろ",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 2,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🎨",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-tankamitsu",
+    "sh-sobamitsu"
+   ],
+   "bee": "共通",
+   "description": "はちみつの 色は、花の 種類で うすい 黄色から こい 茶色まで ちがいます。アカシア蜜は うすく、ソバ蜜は こい 色です。"
+  },
+  {
+   "id": "sh-hozon",
+   "name": "蜜の保存",
+   "reading": "みつのほぞん",
+   "journey": "seihin",
+   "category": "瓶と 表示",
+   "difficulty": 2,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🫙",
+   "mapNode": "seihin:bin",
+   "relatedTerms": [
+    "sh-kessho",
+    "sh-shomikigen"
+   ],
+   "bee": "共通",
+   "description": "はちみつは ふたを しっかり しめて、日の あたらない 常温の 場所に おきます。冷蔵庫に 入れると 結晶しやすく なります。"
+  },
+  {
+   "id": "sh-mippei",
+   "name": "密閉",
+   "reading": "みっぺい",
+   "journey": "seihin",
+   "category": "瓶と 表示",
+   "difficulty": 2,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🔒",
+   "mapNode": "seihin:bin",
+   "relatedTerms": [
+    "sh-hozon",
+    "sh-suibun"
+   ],
+   "bee": "共通",
+   "description": "ふたを しっかり しめて、空気が 入らない ように する ことです。はちみつは まわりの 水分を すいやすいので、密閉して 水分が ふえるのを ふせぎます。"
+  },
+  {
+   "id": "sh-kokusan",
+   "name": "国産はちみつ",
+   "reading": "こくさんはちみつ",
+   "journey": "seihin",
+   "category": "瓶と 表示",
+   "difficulty": 2,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🗾",
+   "mapNode": "seihin:bin",
+   "relatedTerms": [
+    "sh-label",
+    "sh-junsui"
+   ],
+   "bee": "共通",
+   "description": "日本で とれた はちみつです。はちみつの ラベルには、どこの 国で とれたかを 書く 決まりが あります。"
+  },
+  {
+   "id": "sh-rouiro",
+   "name": "ろうの色",
+   "reading": "ろうのいろ",
+   "journey": "seihin",
+   "category": "蜜蝋",
+   "difficulty": 2,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🤍",
+   "mapNode": "seihin:mitsuro",
+   "relatedTerms": [
+    "sh-mitsuro",
+    "sh-seisei"
+   ],
+   "bee": "共通",
+   "description": "ミツバチが 作った ばかりの 巣は 白い ろうで できて います。巣は 使う うちに 花粉や さなぎの まゆで 黄色や 茶色に かわって いきます。"
+  },
+  {
    "id": "sh-invertase",
    "name": "インベルターゼ",
    "reading": "いんべるたーぜ",
@@ -9183,6 +12885,636 @@
    ],
    "bee": "共通",
    "description": "はちみつを こす ための 目の こまかい 布です。とった みつを とおして、ろうの かけらなどを とりのぞきます。"
+  },
+  {
+   "id": "sh-diastase",
+   "name": "ジアスターゼ",
+   "reading": "じあすたーぜ",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-koso",
+    "sh-kanetsu"
+   ],
+   "bee": "共通",
+   "description": "はちみつに ふくまれる、でんぷんを 分ける 酵素です。熱に 弱く、加熱すると へるので、はちみつに どれだけ 熱が かかったかの めやすに 使われます。"
+  },
+  {
+   "id": "sh-hmf",
+   "name": "ヒドロキシメチルフルフラール",
+   "reading": "ひどろきしめちるふるふらーる",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🔬",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-kanetsu",
+    "sh-diastase"
+   ],
+   "bee": "共通",
+   "description": "はちみつを 熱したり、長く おいたり すると ふえる 成分で、HMFと よばれます。量を はかると、はちみつの 新しさや 熱の かかりぐあいが わかります。"
+  },
+  {
+   "id": "sh-mijuku",
+   "name": "未熟蜜",
+   "reading": "みじゅくみつ",
+   "journey": "seihin",
+   "category": "花蜜から はちみつへ",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "💧",
+   "mapNode": "seihin:noshuku",
+   "relatedTerms": [
+    "sh-jukusei",
+    "sh-hakko"
+   ],
+   "bee": "西洋",
+   "description": "水分が まだ 多く、蜜ぶたが かかる 前の 蜜です。とって しまうと 長く おいた ときに 発酵しやすいので、熟すまで 待ちます。"
+  },
+  {
+   "id": "sh-fugaimitsu",
+   "name": "封蓋蜜",
+   "reading": "ふうがいみつ",
+   "journey": "seihin",
+   "category": "花蜜から はちみつへ",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🍯",
+   "mapNode": "seihin:mitsubuta",
+   "relatedTerms": [
+    "sh-mitsubuta",
+    "sh-mijuku"
+   ],
+   "bee": "共通",
+   "description": "蜜ぶたが かかった 巣房の 蜜です。ミツバチが 水分を じゅうぶん とばしてから ふたを するので、熟した はちみつの しるしです。"
+  },
+  {
+   "id": "sh-suibunchi",
+   "name": "水分値",
+   "reading": "すいぶんち",
+   "journey": "seihin",
+   "category": "花蜜から はちみつへ",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "📊",
+   "mapNode": "seihin:noshuku",
+   "relatedTerms": [
+    "sh-suibun",
+    "sh-todokei"
+   ],
+   "bee": "西洋",
+   "description": "はちみつに ふくまれる 水分の 割合です。少ないほど 発酵しにくく 長持ちします。糖度計で はかり、とった 蜜が 熟して いるかを たしかめます。"
+  },
+  {
+   "id": "sh-hakko",
+   "name": "発酵",
+   "reading": "はっこう",
+   "journey": "seihin",
+   "category": "花蜜から はちみつへ",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🫧",
+   "mapNode": "seihin:noshuku",
+   "relatedTerms": [
+    "sh-kobo",
+    "sh-mijuku"
+   ],
+   "bee": "共通",
+   "description": "水分の 多い はちみつで、酵母が ふえて あわが 出たり、すっぱい においが したり する ことです。熟した 蜜を とり、密閉して おくと 起きにくく なります。"
+  },
+  {
+   "id": "sh-kobo",
+   "name": "耐糖性酵母",
+   "reading": "たいとうせいこうぼ",
+   "journey": "seihin",
+   "category": "花蜜から はちみつへ",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🦠",
+   "mapNode": "seihin:noshuku",
+   "relatedTerms": [
+    "sh-hakko",
+    "sh-suibunchi"
+   ],
+   "bee": "共通",
+   "description": "糖が とても 多い ところでも ふえる ことの できる 酵母です。はちみつの 水分が 多いと この 酵母が ふえて、発酵の もとに なります。"
+  },
+  {
+   "id": "sh-kyushitsu",
+   "name": "吸湿性",
+   "reading": "きゅうしつせい",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "💦",
+   "mapNode": "seihin:noshuku",
+   "relatedTerms": [
+    "sh-mippei",
+    "sh-suibun"
+   ],
+   "bee": "共通",
+   "description": "まわりの 空気から 水分を すいこむ 性質です。はちみつは この 性質が つよいので、ふたを あけたままに すると 水分が ふえて しまいます。"
+  },
+  {
+   "id": "sh-joshitsu",
+   "name": "除湿",
+   "reading": "じょしつ",
+   "journey": "seihin",
+   "category": "採蜜と 処理",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "seihin:noshuku",
+   "relatedTerms": [
+    "sh-suibunchi",
+    "sh-saimitsushitsu"
+   ],
+   "bee": "西洋",
+   "description": "部屋の 空気の しめりけを とる ことです。採蜜や びん詰めを する 部屋を 除湿すると、はちみつが 水分を すいにくく なります。"
+  },
+  {
+   "id": "sh-tanekessho",
+   "name": "種結晶",
+   "reading": "たねけっしょう",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "✨",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-creamhoney",
+    "sh-kessho"
+   ],
+   "bee": "共通",
+   "description": "細かく そろった 結晶の はちみつを、もとに なる たねとして まぜる ことです。全体が 細かく 結晶して、なめらかな クリームはちみつに なります。"
+  },
+  {
+   "id": "sh-kessho-ondo",
+   "name": "結晶と温度",
+   "reading": "けっしょうとおんど",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🌡️",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-kessho",
+    "sh-yusen"
+   ],
+   "bee": "共通",
+   "description": "はちみつは すずしい ところで 結晶しやすく、あたためると また 液に もどります。結晶しても 中身は かわらないので、湯せんで ゆっくり とかせます。"
+  },
+  {
+   "id": "sh-kakku",
+   "name": "結晶の核",
+   "reading": "けっしょうのかく",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🔹",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-kessho",
+    "sh-tanekessho"
+   ],
+   "bee": "共通",
+   "description": "結晶が できはじめる もとに なる、花粉や 小さな 結晶の つぶです。核が 多い はちみつほど、早く 結晶が すすみます。"
+  },
+  {
+   "id": "sh-wariai",
+   "name": "糖の割合",
+   "reading": "とうのわりあい",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "⚗️",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-budoto",
+    "sh-kato"
+   ],
+   "bee": "共通",
+   "description": "はちみつの ブドウ糖と 果糖の 割合です。ブドウ糖が 多い 蜜ほど 結晶しやすく、果糖が 多い 蜜は 液の まま のこりやすい 傾向が あります。"
+  },
+  {
+   "id": "sh-proline",
+   "name": "プロリン",
+   "reading": "ぷろりん",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🧬",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-koso",
+    "sh-kafunbunseki"
+   ],
+   "bee": "共通",
+   "description": "はちみつに ふくまれる アミノ酸の ひとつで、いちばん 多い アミノ酸です。ミツバチが 蜜を はちみつに かえる ときに 加わる ぶんが 多いと 考えられて います。"
+  },
+  {
+   "id": "sh-sando",
+   "name": "酸度",
+   "reading": "さんど",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🍋",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-gluconsan",
+    "sh-aji"
+   ],
+   "bee": "共通",
+   "description": "はちみつに ふくまれる 酸の 量です。はちみつは あまいですが、グルコン酸などを ふくむ 弱い 酸性で、味に すっきりした 感じを あたえます。"
+  },
+  {
+   "id": "sh-konosa",
+   "name": "色の濃さ",
+   "reading": "いろのこさ",
+   "journey": "seihin",
+   "category": "成分と 味",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🟤",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-iro",
+    "sh-mineral"
+   ],
+   "bee": "共通",
+   "description": "はちみつの 色の こさです。こい 色の 蜜ほど ミネラルが 多く、味や 香りも 強い 傾向が あります。うすい 色の 蜜は やさしい 味です。"
+  },
+  {
+   "id": "sh-iseika",
+   "name": "異性化液糖",
+   "reading": "いせいかえきとう",
+   "journey": "seihin",
+   "category": "瓶と 表示",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🌽",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-junsui",
+    "sh-label"
+   ],
+   "bee": "共通",
+   "description": "トウモロコシなどの でんぷんから 作る 液の 糖です。はちみつに まぜた ものを、はちみつとして 売る ことは できません。表示の 決まりで 区別されます。"
+  },
+  {
+   "id": "sh-dotai",
+   "name": "炭素同位体比",
+   "reading": "たんそどういたいひ",
+   "journey": "seihin",
+   "category": "瓶と 表示",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🔬",
+   "mapNode": "seihin:seibun",
+   "relatedTerms": [
+    "sh-iseika",
+    "sh-junsui"
+   ],
+   "bee": "共通",
+   "description": "はちみつに サトウキビや トウモロコシの 糖が まざって いないかを 調べる 検査の ひとつです。植物の 種類で 炭素の つくりが 少し ちがう ことを 使います。"
+  },
+  {
+   "id": "sh-seichi",
+   "name": "静置",
+   "reading": "せいち",
+   "journey": "seihin",
+   "category": "採蜜と 処理",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "⏳",
+   "mapNode": "seihin:roka",
+   "relatedTerms": [
+    "sh-chinden",
+    "sh-roka"
+   ],
+   "bee": "西洋",
+   "description": "しぼった はちみつを タンクに 入れて、しばらく しずかに おいて おく ことです。あわや ろうの かけらが 上に うくので、とりのぞきやすく なります。"
+  },
+  {
+   "id": "sh-awatori",
+   "name": "泡取り",
+   "reading": "あわとり",
+   "journey": "seihin",
+   "category": "採蜜と 処理",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🥄",
+   "mapNode": "seihin:roka",
+   "relatedTerms": [
+    "sh-seichi",
+    "sh-chinden"
+   ],
+   "bee": "西洋",
+   "description": "静置して 上に うかんだ あわを すくいとる 作業です。あわを のこさずに びんに つめると、見た目も 舌ざわりも よく なります。"
+  },
+  {
+   "id": "sh-seimitsuroka",
+   "name": "精密ろ過",
+   "reading": "せいみつろか",
+   "journey": "seihin",
+   "category": "採蜜と 処理",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🧻",
+   "mapNode": "seihin:roka",
+   "relatedTerms": [
+    "sh-roka",
+    "sh-kafunbunseki"
+   ],
+   "bee": "共通",
+   "description": "とても 目の 細かい フィルターで はちみつを こす 方法です。すきとおった 蜜に なりますが、花粉まで とれて、花粉分析で 花の 種類が わかりにくく なる ことが あります。"
+  },
+  {
+   "id": "sh-juten",
+   "name": "充填",
+   "reading": "じゅうてん",
+   "journey": "seihin",
+   "category": "瓶と 表示",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🫗",
+   "mapNode": "seihin:bin",
+   "relatedTerms": [
+    "sh-binzume",
+    "sh-lot"
+   ],
+   "bee": "共通",
+   "description": "はちみつを びんや 容器に つめる 作業です。あわが 入らない ように ゆっくり 入れ、ごみが 入らない 清潔な 部屋で 行います。"
+  },
+  {
+   "id": "sh-lot",
+   "name": "ロット番号",
+   "reading": "ろっとばんごう",
+   "journey": "seihin",
+   "category": "瓶と 表示",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🏷️",
+   "mapNode": "seihin:bin",
+   "relatedTerms": [
+    "sh-label",
+    "sh-juten"
+   ],
+   "bee": "共通",
+   "description": "同じ ときに つめた 品物に つける 番号です。番号を 見れば、いつ どの 蜜を つめたかが わかるので、何か あった ときに たどれます。"
+  },
+  {
+   "id": "sh-hozonhoho",
+   "name": "保存方法の表示",
+   "reading": "ほぞんほうほうのひょうじ",
+   "journey": "seihin",
+   "category": "瓶と 表示",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "📝",
+   "mapNode": "seihin:bin",
+   "relatedTerms": [
+    "sh-label",
+    "sh-hozon"
+   ],
+   "bee": "共通",
+   "description": "ラベルに 書く、保存の しかたの 文です。「直射日光を さけて 常温で 保存して ください」などと 書きます。"
+  },
+  {
+   "id": "sh-saimitsushitsu",
+   "name": "採蜜室",
+   "reading": "さいみつしつ",
+   "journey": "seihin",
+   "category": "採蜜と 処理",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🏠",
+   "mapNode": "seihin:saimitsu",
+   "relatedTerms": [
+    "sh-bunri",
+    "sh-joshitsu"
+   ],
+   "bee": "西洋",
+   "description": "はちみつを 分離したり、びんに つめたり する 部屋です。食べものを あつかうので 清潔に し、ハチや ほこりが 入らない ように します。"
+  },
+  {
+   "id": "sh-kamitsuseibun",
+   "name": "花蜜の成分",
+   "reading": "かみつのせいぶん",
+   "journey": "seihin",
+   "category": "花蜜から はちみつへ",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🌸",
+   "mapNode": "seihin:kamitsu",
+   "relatedTerms": [
+    "sh-shoto",
+    "sh-invertase"
+   ],
+   "bee": "共通",
+   "description": "花蜜は おもに 水と 糖で できて います。花の 種類で 糖の 量や 種類が ちがい、ショ糖は ミツバチの 酵素で ブドウ糖と 果糖に 分かれます。"
+  },
+  {
+   "id": "sh-yuten",
+   "name": "ろうの融点",
+   "reading": "ろうのゆうてん",
+   "journey": "seihin",
+   "category": "蜜蝋",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🌡️",
+   "mapNode": "seihin:mitsuro",
+   "relatedTerms": [
+    "sh-mitsuro",
+    "sh-yusen"
+   ],
+   "bee": "共通",
+   "description": "蜜蝋が とけて 液に なる 温度です。およそ 62〜65℃で とけるので、湯せんで ゆっくり とかします。直接 火に かけないのが 安全です。"
+  },
+  {
+   "id": "sh-bloom",
+   "name": "ブルーム",
+   "reading": "ぶるーむ",
+   "journey": "seihin",
+   "category": "蜜蝋",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "❄️",
+   "mapNode": "seihin:mitsuro",
+   "relatedTerms": [
+    "sh-mitsuro",
+    "sh-rosoku"
+   ],
+   "bee": "共通",
+   "description": "蜜蝋や 蜜蝋の ろうそくの 表面に 出る、白い 粉の ような ものです。蜜蝋の 成分が 外に 出て きた もので、いたんだ わけでは ありません。"
+  },
+  {
+   "id": "sh-susogenryo",
+   "name": "巣礎の原料",
+   "reading": "すそのげんりょう",
+   "journey": "seihin",
+   "category": "蜜蝋",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "⬡",
+   "mapNode": "seihin:mitsuro",
+   "relatedTerms": [
+    "sh-seisei",
+    "sh-mitsuro"
+   ],
+   "bee": "西洋",
+   "description": "巣礎は、精製した 蜜蝋を うすい 板に して、六角形の もようを つけて 作ります。ハチは この 上に ろうを 足して 巣を 作ります。"
+  },
+  {
+   "id": "sh-shin",
+   "name": "ろうそくの芯",
+   "reading": "ろうそくのしん",
+   "journey": "seihin",
+   "category": "蜜蝋",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🕯️",
+   "mapNode": "seihin:mitsuro",
+   "relatedTerms": [
+    "sh-rosoku",
+    "sh-mitsuro"
+   ],
+   "bee": "共通",
+   "description": "ろうそくの まん中に ある、火を ともす 糸です。ろうそくの 太さに 合った 芯を えらぶと、すすが 出にくく、きれいに もえます。"
+  },
+  {
+   "id": "sh-sainyu",
+   "name": "採乳",
+   "reading": "さいにゅう",
+   "journey": "seihin",
+   "category": "ローヤルゼリーと プロポリス",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🥛",
+   "mapNode": "seihin:royal",
+   "relatedTerms": [
+    "sh-royaljelly",
+    "sh-ounyu"
+   ],
+   "bee": "西洋",
+   "description": "王台に たまった ローヤルゼリーを とりだす 作業です。人工の 王台に 幼虫を うつし、数日 たってから へらで すくいとります。"
+  },
+  {
+   "id": "sh-rjhozon",
+   "name": "ローヤルゼリーの保存",
+   "reading": "ろーやるぜりーのほぞん",
+   "journey": "seihin",
+   "category": "ローヤルゼリーと プロポリス",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🧊",
+   "mapNode": "seihin:royal",
+   "relatedTerms": [
+    "sh-namaroyal",
+    "sh-royaljelly"
+   ],
+   "bee": "共通",
+   "description": "ローヤルゼリーは 熱や 空気で いたみやすいので、冷凍や 冷蔵で 保存します。とった あと すぐに 冷やす ことが 大切です。"
+  },
+  {
+   "id": "sh-chushutsu",
+   "name": "プロポリスの抽出",
+   "reading": "ぷろぽりすのちゅうしゅつ",
+   "journey": "seihin",
+   "category": "ローヤルゼリーと プロポリス",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "⚗️",
+   "mapNode": "seihin:propolis",
+   "relatedTerms": [
+    "sh-propolis",
+    "sh-jushi"
+   ],
+   "bee": "共通",
+   "description": "プロポリスを アルコールなどに つけて、とける 成分を とりだす ことです。プロポリスは そのままでは かたいので、とかして 使いやすく します。"
+  },
+  {
+   "id": "sh-kafunkanso",
+   "name": "花粉の乾燥",
+   "reading": "かふんのかんそう",
+   "journey": "seihin",
+   "category": "ローヤルゼリーと プロポリス",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "🌞",
+   "mapNode": "seihin:propolis",
+   "relatedTerms": [
+    "sh-kafunka",
+    "sh-kafunsaishu"
+   ],
+   "bee": "共通",
+   "description": "あつめた 花粉荷を かわかして、水分を へらす ことです。水分が 多いと いたみやすいので、かわかしてから 保存します。"
+  },
+  {
+   "id": "sh-chozo",
+   "name": "巣房への貯蔵",
+   "reading": "すぼうへのちょぞう",
+   "journey": "seihin",
+   "category": "花蜜から はちみつへ",
+   "difficulty": 3,
+   "field": "生産物",
+   "type": "concept",
+   "emoji": "⬡",
+   "mapNode": "seihin:ukewatashi",
+   "relatedTerms": [
+    "sh-kuchiutsushi",
+    "sh-noshuku"
+   ],
+   "bee": "共通",
+   "description": "受けとった 蜜を 巣房に ためる ことです。ハチは はねで 風を おくって 水分を とばし、こく なったら 蜜ぶたを かけます。"
   },
   {
    "id": "bk-dani",
@@ -10016,6 +14348,98 @@
    "description": "薬を 使う 時期や 方法を、決められた とおりに 守る ことです。守る ことで はちみつに 薬が のこらず、ダニに 薬が きかなく なる ことも ふせげます。"
   },
   {
+   "id": "bk-geri",
+   "name": "下痢",
+   "reading": "げり",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 2,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🟤",
+   "mapNode": "byoki:nozema",
+   "relatedTerms": [
+    "bk-nozema",
+    "bk-cerane"
+   ],
+   "bee": "共通",
+   "description": "ハチの ふんが 水っぽく なる ことです。巣箱の 前や 巣枠に 茶色い しみが ふえて いたら、ノゼマ病などの 手がかりに なります。気づいたら ようすを 記録して、指導員に 相談します。"
+  },
+  {
+   "id": "bk-sumonkansatsu",
+   "name": "巣門観察",
+   "reading": "すもんかんさつ",
+   "journey": "byoki",
+   "category": "守りかた",
+   "difficulty": 2,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "👀",
+   "mapNode": "byoki:hoka",
+   "relatedTerms": [
+    "bk-yobo",
+    "bk-soki"
+   ],
+   "bee": "共通",
+   "description": "巣箱を あけずに、巣門の 前の ハチの ようすを 見る ことです。出入りの 多さや 花粉を 運ぶ ハチ、飛べずに 歩く ハチなどを 見ると、群の 調子が わかります。毎日 さっと 見るだけでも 早く 気づけます。"
+  },
+  {
+   "id": "bk-hokan",
+   "name": "巣枠の保管",
+   "reading": "すわくのほかん",
+   "journey": "byoki",
+   "category": "スムシ",
+   "difficulty": 2,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "📦",
+   "mapNode": "byoki:sumushi",
+   "relatedTerms": [
+    "bk-sumushi",
+    "bk-reitohokan",
+    "bk-mippeihokan"
+   ],
+   "bee": "西洋",
+   "description": "使わない 巣枠を、次の 季節まで しまって おく ことです。ろうの 巣は スムシが 好むので、すずしく かわいた 場所で、すきまの ない 入れものに しまいます。"
+  },
+  {
+   "id": "bk-kogata",
+   "name": "コガタスズメバチ",
+   "reading": "こがたすずめばち",
+   "journey": "byoki",
+   "category": "スズメバチ",
+   "difficulty": 2,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🟠",
+   "mapNode": "byoki:suzume",
+   "relatedTerms": [
+    "bk-osuzume",
+    "bk-kiirosuzume"
+   ],
+   "bee": "共通",
+   "description": "日本に すむ スズメバチの 1つで、オオスズメバチより 小さめです。巣箱の 前で ミツバチを ねらう ことが あるので、巣門に よけの 網を つけて 守ります。庭木や 軒下に 巣を つくる ことも あります。"
+  },
+  {
+   "id": "bk-soki",
+   "name": "病気の早期発見",
+   "reading": "びょうきのそうきはっけん",
+   "journey": "byoki",
+   "category": "守りかた",
+   "difficulty": 2,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🔎",
+   "mapNode": "byoki:eisei",
+   "relatedTerms": [
+    "bk-kensa",
+    "bk-eiseikanri",
+    "bk-sumonkansatsu"
+   ],
+   "bee": "共通",
+   "description": "病気を 小さな うちに 見つける ことです。内検の たびに 幼虫や さなぎの ようすを 見て、いつもと ちがう 色や においに 気づいたら、すぐ 家畜保健衛生所に 相談します。早く わかれば ほかの 群も 守れます。"
+  },
+  {
    "id": "bk-akarinsho",
    "name": "アカリンダニ症",
    "reading": "あかりんだにしょう",
@@ -10472,6 +14896,639 @@
    ],
    "bee": "共通",
    "description": "スムシに なる ガの なかまで、ハチノスツヅリガより 小さい 種類です。古巣や しまって おいた 巣枠に つきやすいので、すきまの ない 箱に しまって 守ります。"
+  },
+  {
+   "id": "bk-kiseiritsu",
+   "name": "寄生率",
+   "reading": "きせいりつ",
+   "journey": "byoki",
+   "category": "ダニ",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "📊",
+   "mapNode": "byoki:varroa",
+   "relatedTerms": [
+    "bk-danikensa",
+    "bk-sugarroll"
+   ],
+   "bee": "西洋",
+   "description": "ハチの うち どれくらいに ダニが ついて いるかの 割合です。シュガーロール法などで しらべて、割合が 高く なって いたら 対策を 考える めやすに します。"
+  },
+  {
+   "id": "bk-shinnyu",
+   "name": "巣房への侵入",
+   "reading": "すぼうへのしんにゅう",
+   "journey": "byoki",
+   "category": "ダニ",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🚪",
+   "mapNode": "byoki:varroa",
+   "relatedTerms": [
+    "bk-danihanshoku",
+    "bk-varroa",
+    "bk-obachitrap"
+   ],
+   "bee": "西洋",
+   "description": "バロアは、幼虫の 巣房に ふたが される 少し 前に 中へ 入りこみ、ふたの 下で ふえます。とくに 育つ 日数の 長い 雄蜂の 巣房を 好みます。この しくみを 知ると、雄蜂トラップの わけが わかります。"
+  },
+  {
+   "id": "bk-saishinnyu",
+   "name": "ダニの再侵入",
+   "reading": "だにのさいしんにゅう",
+   "journey": "byoki",
+   "category": "ダニ",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "byoki:varroa",
+   "relatedTerms": [
+    "bk-varroa",
+    "bk-kiseiritsu"
+   ],
+   "bee": "西洋",
+   "description": "ダニを へらした あとでも、ほかの 群から まよいこんだ ハチや 盗蜂に ついて、また ダニが 入って くる ことです。近くの 養蜂家と 対策の 時期を そろえると 防ぎやすく なります。"
+  },
+  {
+   "id": "bk-tropi",
+   "name": "トロピラエラップス",
+   "reading": "とろぴらえらっぷす",
+   "journey": "byoki",
+   "category": "ダニ",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🔍",
+   "mapNode": "byoki:varroa",
+   "relatedTerms": [
+    "bk-varroa",
+    "bk-dani"
+   ],
+   "bee": "西洋",
+   "description": "アジアの オオミツバチに もともと つく 小さな ダニで、セイヨウミツバチにも うつります。バロアと 同じく 幼虫の 巣房で ふえます。外国では 広がらない よう 警戒されて います。"
+  },
+  {
+   "id": "bk-kji",
+   "name": "K字ばね",
+   "reading": "けーじばね",
+   "journey": "byoki",
+   "category": "ダニ",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🪽",
+   "mapNode": "byoki:akarin",
+   "relatedTerms": [
+    "bk-akarinsho",
+    "bk-haikai"
+   ],
+   "bee": "共通",
+   "description": "左右の はねが ずれて、K の 字のように ひらいた 形の ことです。アカリンダニ症の 手がかりの 1つと されて います。見つけたら 家畜保健衛生所に 相談して、顕微鏡で しらべて もらいます。"
+  },
+  {
+   "id": "bk-haikai",
+   "name": "徘徊蜂",
+   "reading": "はいかいばち",
+   "journey": "byoki",
+   "category": "ダニ",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🚶",
+   "mapNode": "byoki:akarin",
+   "relatedTerms": [
+    "bk-akarinsho",
+    "bk-kji"
+   ],
+   "bee": "日本",
+   "description": "巣門の 前を 飛べずに 歩きまわる ハチの ことです。ニホンミツバチの アカリンダニ症で よく 見られます。数が ふえて いないか 毎日 見て、早めに 相談します。"
+  },
+  {
+   "id": "bk-hoshi",
+   "name": "胞子",
+   "reading": "ほうし",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "💠",
+   "mapNode": "byoki:nozema",
+   "relatedTerms": [
+    "bk-bihoshichu",
+    "bk-kenbikyo"
+   ],
+   "bee": "共通",
+   "description": "ノゼマなどが 作る、とても 小さな つぶです。ハチの おなかの 中で ふえ、ふんと いっしょに 外へ 出ます。目では 見えないので、顕微鏡で 見つけます。"
+  },
+  {
+   "id": "bk-kenbikyo",
+   "name": "顕微鏡検査",
+   "reading": "けんびきょうけんさ",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🔬",
+   "mapNode": "byoki:nozema",
+   "relatedTerms": [
+    "bk-hoshi",
+    "bk-kensa",
+    "bk-nozema"
+   ],
+   "bee": "共通",
+   "description": "ハチの おなかの 中身や 巣房の 中の ものを、顕微鏡で 大きく して 見る 検査です。ノゼマの 胞子や 腐蛆病の 菌は 目では わからないので、家畜保健衛生所などで しらべます。"
+  },
+  {
+   "id": "bk-larvae",
+   "name": "パエニバチルス・ラーバエ",
+   "reading": "ぱえにばちるすらーばえ",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🧫",
+   "mapNode": "byoki:fuso",
+   "relatedTerms": [
+    "bk-americafuso",
+    "bk-gaho"
+   ],
+   "bee": "共通",
+   "description": "アメリカ腐蛆病の もとに なる 細菌です。熱や かわきに 強い 芽胞を 作るので、道具を 通じて ほかの 群へ うつる ことが あります。見つけたら 届け出て、家畜保健衛生所の 指示に したがいます。"
+  },
+  {
+   "id": "bk-pluton",
+   "name": "メリッソコッカス・プルトン",
+   "reading": "めりっそこっかすぷるとん",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🧫",
+   "mapNode": "byoki:fuso",
+   "relatedTerms": [
+    "bk-europefuso",
+    "bk-fuso"
+   ],
+   "bee": "共通",
+   "description": "ヨーロッパ腐蛆病の もとに なる 細菌です。ふたの まだ ない 若い 幼虫に うつる ことが 多いと されて います。届け出る 決まりの 病気なので、うたがったら すぐ 相談します。"
+  },
+  {
+   "id": "bk-rope",
+   "name": "ロープテスト",
+   "reading": "ろーぷてすと",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🧵",
+   "mapNode": "byoki:fuso",
+   "relatedTerms": [
+    "bk-americafuso",
+    "bk-kensa"
+   ],
+   "bee": "共通",
+   "description": "ようすの おかしい 巣房に 細い 棒を さし入れて、ゆっくり 引きだす 見わけかたです。中身が 糸の ように のびると、アメリカ腐蛆病の うたがいが あります。その ときは すぐ 家畜保健衛生所へ 知らせます。"
+  },
+  {
+   "id": "bk-scale",
+   "name": "スケール",
+   "reading": "すけーる",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🟫",
+   "mapNode": "byoki:fuso",
+   "relatedTerms": [
+    "bk-americafuso",
+    "bk-rope"
+   ],
+   "bee": "共通",
+   "description": "病気で ようすが 変わった 幼虫が、巣房の 底で かわいて うすく はりついた ものです。とれにくく、腐蛆病の 手がかりに なります。見つけたら 巣枠を そのままに して、家畜保健衛生所に 相談します。"
+  },
+  {
+   "id": "bk-hekomi",
+   "name": "巣房のふたのへこみ",
+   "reading": "すぼうのふたのへこみ",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🕳️",
+   "mapNode": "byoki:fuso",
+   "relatedTerms": [
+    "bk-fuso",
+    "bk-americafuso"
+   ],
+   "bee": "共通",
+   "description": "さなぎの 巣房の ふたが へこんだり、小さな 穴が あいたり する ことです。ふだんの ふたは 少し ふくらんで いるので、ちがいに 気づけます。腐蛆病の 手がかりの 1つです。"
+  },
+  {
+   "id": "bk-ishu",
+   "name": "異臭",
+   "reading": "いしゅう",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "👃",
+   "mapNode": "byoki:fuso",
+   "relatedTerms": [
+    "bk-fuso",
+    "bk-soki"
+   ],
+   "bee": "共通",
+   "description": "巣箱を あけた ときの、ふだんと ちがう いやな においです。腐蛆病などの 手がかりに なる ことが あります。気づいたら すぐに 家畜保健衛生所に 知らせます。"
+  },
+  {
+   "id": "bk-stone",
+   "name": "ストーンブルード病",
+   "reading": "すとーんぶるーどびょう",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🍄",
+   "mapNode": "byoki:hoka",
+   "relatedTerms": [
+    "bk-kabi",
+    "bk-chalk"
+   ],
+   "bee": "共通",
+   "description": "カビが もとに なる 幼虫の 病気で、幼虫が 石の ように かたく なる ことから 名前が つきました。巣箱を 清潔に して、中が しめりすぎない ように して 防ぎます。"
+  },
+  {
+   "id": "bk-mahi",
+   "name": "麻痺病",
+   "reading": "まひびょう",
+   "journey": "byoki",
+   "category": "病気",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🦠",
+   "mapNode": "byoki:hoka",
+   "relatedTerms": [
+    "bk-virus",
+    "bk-chijirebane"
+   ],
+   "bee": "共通",
+   "description": "ウイルスが もとに なる 成虫の 病気です。からだが ふるえたり、毛が ぬけて 黒っぽく 見えたり して、うまく 飛べない ハチが 出ます。巣箱が 混みあいすぎない ように し、群を 元気に たもって 防ぎます。"
+  },
+  {
+   "id": "bk-shb",
+   "name": "ハチノスムクゲケシキスイ",
+   "reading": "はちのすむくげけしきすい",
+   "journey": "byoki",
+   "category": "ほかの 敵",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🪲",
+   "mapNode": "byoki:teki",
+   "relatedTerms": [
+    "bk-sumushi",
+    "bk-tenteki"
+   ],
+   "bee": "西洋",
+   "description": "スモールハイブビートルとも よばれる、外国の 巣箱で 見つかって いる 小さな 甲虫です。巣の 中で 幼虫が ふえると、蜜や 巣が いたんで しまいます。外国では 養蜂家が 気を つけて 見張って います。"
+  },
+  {
+   "id": "bk-mippeihokan",
+   "name": "密閉保管",
+   "reading": "みっぺいほかん",
+   "journey": "byoki",
+   "category": "スムシ",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🫙",
+   "mapNode": "byoki:sumushi",
+   "relatedTerms": [
+    "bk-hokan",
+    "bk-reitohokan"
+   ],
+   "bee": "西洋",
+   "description": "巣枠を 袋や ふたの ある 箱に 入れて、ぴったり 閉じて しまう ことです。スムシの もとに なる 蛾が 入れないので、巣が いたみにくく なります。冷凍してから しまうと さらに 安心です。"
+  },
+  {
+   "id": "bk-mon",
+   "name": "モンスズメバチ",
+   "reading": "もんすずめばち",
+   "journey": "byoki",
+   "category": "スズメバチ",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🌙",
+   "mapNode": "byoki:suzume",
+   "relatedTerms": [
+    "bk-osuzume",
+    "bk-kogata"
+   ],
+   "bee": "共通",
+   "description": "日本に すむ スズメバチの 1つで、夜にも 動く ことが あると いわれます。ミツバチを ねらう ことも あるので、巣門の よけは 夕方も つけた ままに して 守ります。"
+  },
+  {
+   "id": "bk-suzumejoou",
+   "name": "スズメバチの女王",
+   "reading": "すずめばちのじょおう",
+   "journey": "byoki",
+   "category": "スズメバチ",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "👑",
+   "mapNode": "byoki:suzume",
+   "relatedTerms": [
+    "bk-hokakuki",
+    "bk-suzumenosu"
+   ],
+   "bee": "共通",
+   "description": "春に 冬ごしから 目ざめ、ひとりで 巣を つくりはじめる スズメバチの 女王です。この 時期に 捕獲器を かけて おくと、秋に 巣箱へ 来る スズメバチが 少なく なります。"
+  },
+  {
+   "id": "bk-densaku",
+   "name": "電気さく",
+   "reading": "でんきさく",
+   "journey": "byoki",
+   "category": "ほかの 敵",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "⚡",
+   "mapNode": "byoki:teki",
+   "relatedTerms": [
+    "bk-kuma",
+    "bk-tsukinowaguma"
+   ],
+   "bee": "共通",
+   "description": "巣箱の まわりに はる、ふれると ぴりっと する さくです。クマが 巣箱に 近づくのを いやがらせて、群を 守ります。人が さわらない よう、看板も 立てて おきます。"
+  },
+  {
+   "id": "bk-shinto",
+   "name": "浸透移行性",
+   "reading": "しんとういこうせい",
+   "journey": "byoki",
+   "category": "農薬",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🌱",
+   "mapNode": "byoki:noyaku",
+   "relatedTerms": [
+    "bk-neonico",
+    "bk-noyakueikyo"
+   ],
+   "bee": "共通",
+   "description": "農薬が 根や 葉から 植物の 中に しみこんで 広がる 性質です。ネオニコチノイド系などが この 性質を もち、花粉や 蜜に 出る ことが あります。だから 農家との 話しあいが 大切です。"
+  },
+  {
+   "id": "bk-kamemushi",
+   "name": "カメムシ防除",
+   "reading": "かめむしぼうじょ",
+   "journey": "byoki",
+   "category": "農薬",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🌾",
+   "mapNode": "byoki:noyaku",
+   "relatedTerms": [
+    "bk-noyakujoho",
+    "bk-renkei"
+   ],
+   "bee": "共通",
+   "description": "夏に 田んぼで 稲の 実を 守る ために 行う 農薬の 作業です。ミツバチが 田んぼの 近くを 飛ぶ 時期と かさなるので、日にちを 前もって 知らせあって 巣箱を 守ります。"
+  },
+  {
+   "id": "bk-renkei",
+   "name": "農家との連携",
+   "reading": "のうかとのれんけい",
+   "journey": "byoki",
+   "category": "農薬",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🤝",
+   "mapNode": "byoki:noyaku",
+   "relatedTerms": [
+    "bk-noyakujoho",
+    "bk-taihi"
+   ],
+   "bee": "共通",
+   "description": "農家と 養蜂家が 話しあって、農薬を 使う 日や 場所を 前もって 知らせあう ことです。知らせが あれば 巣箱を うつしたり 巣門を とじたり できます。ミツバチは 受粉も 助けるので、おたがいの ためです。"
+  },
+  {
+   "id": "bk-taihi",
+   "name": "一時退避",
+   "reading": "いちじたいひ",
+   "journey": "byoki",
+   "category": "農薬",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🚚",
+   "mapNode": "byoki:noyaku",
+   "relatedTerms": [
+    "bk-renkei",
+    "bk-noyakujoho"
+   ],
+   "bee": "西洋",
+   "description": "農薬を 使う 時期に、巣箱を はなれた 場所へ しばらく うつす ことです。うつせない ときは、知らせに あわせて 巣門を とじる 方法も あります。暑い 日は 巣箱の 中が 熱く ならない よう 気を つけます。"
+  },
+  {
+   "id": "bk-suitai",
+   "name": "群の衰退",
+   "reading": "ぐんのすいたい",
+   "journey": "byoki",
+   "category": "守りかた",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "📉",
+   "mapNode": "byoki:tokyo",
+   "relatedTerms": [
+    "bk-shoshitsu",
+    "bk-stress"
+   ],
+   "bee": "共通",
+   "description": "群の ハチが だんだん 少なく なって、元気が なく なる ことです。ダニ・病気・えさ不足など もとは いろいろ あるので、内検の 記録を 見なおして 原因を さがします。"
+  },
+  {
+   "id": "bk-stress",
+   "name": "ストレス要因",
+   "reading": "すとれすよういん",
+   "journey": "byoki",
+   "category": "守りかた",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🧩",
+   "mapNode": "byoki:tokyo",
+   "relatedTerms": [
+    "bk-suitai",
+    "bk-ccd"
+   ],
+   "bee": "共通",
+   "description": "群を よわらせる もとに なる ことがらです。ダニ・病気・えさ不足・農薬・暑さなどは 1つずつは 小さくても、重なると 群が よわります。1つずつ へらすのが 守りの 基本です。"
+  },
+  {
+   "id": "bk-eiseikodo",
+   "name": "衛生行動",
+   "reading": "えいせいこうどう",
+   "journey": "byoki",
+   "category": "守りかた",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🧹",
+   "mapNode": "byoki:eisei",
+   "relatedTerms": [
+    "bk-daninotsuyosa",
+    "bk-eiseikanri"
+   ],
+   "bee": "共通",
+   "description": "働き蜂が、病気や ダニの ついた 幼虫に 気づいて、巣房の ふたを あけ 外へ 運び出す 性質です。人が する 衛生管理と ちがい、ハチ じしんの 守る 力です。この 性質の 強い 系統を 選ぶ 研究も あります。"
+  },
+  {
+   "id": "bk-sogo",
+   "name": "総合防除",
+   "reading": "そうごうぼうじょ",
+   "journey": "byoki",
+   "category": "守りかた",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🧰",
+   "mapNode": "byoki:eisei",
+   "relatedTerms": [
+    "bk-yobo",
+    "bk-obachitrap",
+    "bk-daninokusuri"
+   ],
+   "bee": "共通",
+   "description": "薬だけに たよらず、いくつもの 方法を 組みあわせて 群を 守る 考えかたです。IPM とも よばれます。ダニを しらべる・雄蜂トラップ・強い 系統を 選ぶ・決まりどおりの 薬などを あわせて 使います。"
+  },
+  {
+   "id": "bk-aburi",
+   "name": "巣箱のあぶり",
+   "reading": "すばこのあぶり",
+   "journey": "byoki",
+   "category": "守りかた",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🔥",
+   "mapNode": "byoki:eisei",
+   "relatedTerms": [
+    "bk-senjo",
+    "bk-eiseikanri"
+   ],
+   "bee": "西洋",
+   "description": "使い終わった 古い 巣箱の 内がわを、バーナーの 火で かるく あぶって 清潔に する ことです。すみに のこった ろうや よごれを へらせます。火を 使うので、おとなが する 作業です。"
+  },
+  {
+   "id": "bk-kakuri",
+   "name": "隔離",
+   "reading": "かくり",
+   "journey": "byoki",
+   "category": "守りかた",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🚧",
+   "mapNode": "byoki:eisei",
+   "relatedTerms": [
+    "bk-manen",
+    "bk-kansen"
+   ],
+   "bee": "共通",
+   "description": "病気が うたがわれる 群を、ほかの 群から はなして おく ことです。巣枠や 道具も わけて 使い、うつるのを 防ぎます。腐蛆病の うたがいの ときは、家畜保健衛生所の 指示に したがいます。"
+  },
+  {
+   "id": "bk-shiyokiroku",
+   "name": "使用記録",
+   "reading": "しようきろく",
+   "journey": "byoki",
+   "category": "薬の 決まり",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "📒",
+   "mapNode": "byoki:kusuri",
+   "relatedTerms": [
+    "bk-shiyonokimari",
+    "bk-shijisho"
+   ],
+   "bee": "共通",
+   "description": "動物用の 薬を 使った ときに、日にち・場所・薬の 名前などを 書きのこす 記録です。いつ 使ったかが わかれば、はちみつを とって よい 時期を まちがえません。指示書と いっしょに しまって おきます。"
+  },
+  {
+   "id": "bk-shijisho",
+   "name": "指示書",
+   "reading": "しじしょ",
+   "journey": "byoki",
+   "category": "薬の 決まり",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "📄",
+   "mapNode": "byoki:kusuri",
+   "relatedTerms": [
+    "bk-juishi",
+    "bk-shiyokiroku"
+   ],
+   "bee": "共通",
+   "description": "獣医師が 薬の 使いかたを 書いて わたす 書類です。ダニの 薬なども、獣医師や 指導員の 指示で、決まりどおりに 使います。もらった 指示書は 使用記録と いっしょに 大切に しまいます。"
+  },
+  {
+   "id": "bk-yukisan",
+   "name": "有機酸",
+   "reading": "ゆうきさん",
+   "journey": "byoki",
+   "category": "薬の 決まり",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "byoki:kusuri",
+   "relatedTerms": [
+    "bk-gisan",
+    "bk-shusan"
+   ],
+   "bee": "共通",
+   "description": "ギ酸や シュウ酸などの、酸の なかまを まとめた よびかたです。ダニの 薬に 使われる ものも ありますが、獣医師や 指導員の 指示で、決まりどおりに 使います。自分で 作ったり しません。"
+  },
+  {
+   "id": "bk-zanryu",
+   "name": "残留",
+   "reading": "ざんりゅう",
+   "journey": "byoki",
+   "category": "薬の 決まり",
+   "difficulty": 3,
+   "field": "病気・害敵",
+   "type": "concept",
+   "emoji": "🫙",
+   "mapNode": "byoki:kusuri",
+   "relatedTerms": [
+    "bk-shiyonokimari",
+    "bk-shiyokiroku"
+   ],
+   "bee": "共通",
+   "description": "使った 薬が、はちみつや ろうの 中に のこる ことです。はちみつは 食べものなので、使う 時期や 期間の 決まりを 守って 防ぎます。とくに 採蜜の 前は 気を つけます。"
   },
   {
    "id": "jo-oudai",
@@ -11301,6 +16358,96 @@
    "description": "女王が 卵を うむ いきおいの ことです。巣枠に 卵や 幼虫が すきまなく そろって いれば、産卵力の よい 女王です。流蜜期には とくに たくさん うみます。"
   },
   {
+   "id": "jo-mitsukekata",
+   "name": "女王の見つけかた",
+   "reading": "じょおうのみつけかた",
+   "journey": "joou",
+   "category": "出会いと 産卵",
+   "difficulty": 2,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🔍",
+   "mapNode": "joou:sanran",
+   "relatedTerms": [
+    "jo-mark",
+    "jo-sanran"
+   ],
+   "bee": "西洋",
+   "description": "女王は 働き蜂より からだが 長く、おなかが 細長いのが 目じるしです。まわりの ハチが 輪の ように 女王の ほうを 向いて いる 所を さがします。マークが あると ぐっと 見つけやすく なります。"
+  },
+  {
+   "id": "jo-katachi",
+   "name": "王台の形",
+   "reading": "おうだいのかたち",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 2,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🥜",
+   "mapNode": "joou:oudai",
+   "relatedTerms": [
+    "jo-oudai",
+    "jo-shizenoudai"
+   ],
+   "bee": "共通",
+   "description": "王台は、ピーナッツの からのような 形で、巣板から 下向きに たれさがる 大きな 巣房です。働き蜂の 六角形の 巣房とは 形が まるで ちがうので、内検で すぐ 見わけられます。"
+  },
+  {
+   "id": "jo-otonashisa",
+   "name": "おとなしさ",
+   "reading": "おとなしさ",
+   "journey": "joou",
+   "category": "系統と 育種",
+   "difficulty": 2,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "😌",
+   "mapNode": "joou:keito",
+   "relatedTerms": [
+    "jo-senbatsu",
+    "jo-keito"
+   ],
+   "bee": "西洋",
+   "description": "内検の ときに さわいだり 飛びまわったり しにくい 性質です。おとなしい 群は 世話が しやすく、近所の 人も 安心です。女王を 選ぶ ときの 大事な 点の 1つです。"
+  },
+  {
+   "id": "jo-shinikusa",
+   "name": "分蜂しにくさ",
+   "reading": "ぶんぽうしにくさ",
+   "journey": "joou",
+   "category": "系統と 育種",
+   "difficulty": 2,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🏠",
+   "mapNode": "joou:keito",
+   "relatedTerms": [
+    "jo-shizenbunpo",
+    "jo-senbatsu"
+   ],
+   "bee": "西洋",
+   "description": "群が 大きく なっても 分蜂を しにくい 性質です。分蜂が 少ないと ハチの 数が 保たれ、蜜を 集める 力が 落ちにくく なります。系統を 選ぶ ときに くらべる 点です。"
+  },
+  {
+   "id": "jo-saimitsuryoku",
+   "name": "採蜜力",
+   "reading": "さいみつりょく",
+   "journey": "joou",
+   "category": "系統と 育種",
+   "difficulty": 2,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🍯",
+   "mapNode": "joou:keito",
+   "relatedTerms": [
+    "jo-senbatsu",
+    "jo-otonashisa"
+   ],
+   "bee": "西洋",
+   "description": "群が 蜜を 集めて たくわえる 力です。同じ 場所でも 群ごとに ちがいが 出るので、記録を つけて くらべ、力の ある 群から 次の 女王を 育てます。"
+  },
+  {
    "id": "jo-choseino",
    "name": "貯精嚢",
    "reading": "ちょせいのう",
@@ -11751,6 +16898,636 @@
    ],
    "bee": "西洋",
    "description": "新しい 女王を 空での 出会いに 送りだす ための 小さな 群です。交尾箱に 少しの 働き蜂を 入れて 作り、女王が 卵を うみはじめるまで 世話します。"
+  },
+  {
+   "id": "jo-ichuwaku",
+   "name": "移虫枠",
+   "reading": "いちゅうわく",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🪵",
+   "mapNode": "joou:ichu",
+   "relatedTerms": [
+    "jo-cup",
+    "jo-ichu"
+   ],
+   "bee": "西洋",
+   "description": "王台カップを ならべた 横木を つけた 巣枠です。カップに 幼虫を 移したら、この 枠ごと 育王群に 入れて、王台を 育てて もらいます。"
+  },
+  {
+   "id": "jo-fukachokugo",
+   "name": "ふ化直後の幼虫",
+   "reading": "ふかちょくごのようちゅう",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🐛",
+   "mapNode": "joou:ichu",
+   "relatedTerms": [
+    "jo-wakaiyochu",
+    "jo-ichu"
+   ],
+   "bee": "西洋",
+   "description": "卵から かえって まもない、とても 小さな 幼虫です。移虫には この 幼虫を 使うと、よい 女王に 育ちやすいと されて います。巣房の 底に 白い 三日月の ように 見えます。"
+  },
+  {
+   "id": "jo-wet",
+   "name": "ウェット移虫",
+   "reading": "うぇっといちゅう",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "💧",
+   "mapNode": "joou:ichu",
+   "relatedTerms": [
+    "jo-ichuho",
+    "jo-cup"
+   ],
+   "bee": "西洋",
+   "description": "王台カップの 底に ローヤルゼリーを 少し 入れてから、幼虫を 移す やりかたです。幼虫が かわきにくく なります。何も 入れない やりかたは ドライ移虫と よばれます。"
+  },
+  {
+   "id": "jo-miller",
+   "name": "ミラー法",
+   "reading": "みらーほう",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "📐",
+   "mapNode": "joou:ichu",
+   "relatedTerms": [
+    "jo-ichuho",
+    "jo-alley"
+   ],
+   "bee": "西洋",
+   "description": "巣礎の 下の ふちを ぎざぎざに 切った 巣枠を 使い、その ふちに 王台を つくらせる 方法です。移虫を しないので、道具が 少なくて すみます。アメリカの 養蜂家 ミラーの 名前から きて います。"
+  },
+  {
+   "id": "jo-alley",
+   "name": "アレイ法",
+   "reading": "あれいほう",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "📏",
+   "mapNode": "joou:ichu",
+   "relatedTerms": [
+    "jo-miller",
+    "jo-ichuho"
+   ],
+   "bee": "西洋",
+   "description": "若い 幼虫の いる 巣板を 細い 帯の ように 切り、横向きに して 枠に つけ、王台を つくらせる 方法です。移虫を しない 方法の 1つで、ミラー法と よく くらべられます。"
+  },
+  {
+   "id": "jo-cloake",
+   "name": "クロークボード",
+   "reading": "くろーくぼーど",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🪟",
+   "mapNode": "joou:ikusei",
+   "relatedTerms": [
+    "jo-starter",
+    "jo-finisher"
+   ],
+   "bee": "西洋",
+   "description": "抜きさしできる 板の ついた 道具で、1つの 群を 女王の いない 状態と いる 状態に 切りかえます。こうして 1つの 群に、王台を つくりはじめる 役と しあげる 役を させます。"
+  },
+  {
+   "id": "jo-ikuokyuji",
+   "name": "育王中の給餌",
+   "reading": "いくおうちゅうのきゅうじ",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🥄",
+   "mapNode": "joou:ikusei",
+   "relatedTerms": [
+    "jo-ikuogun",
+    "jo-starter"
+   ],
+   "bee": "西洋",
+   "description": "王台を 育てる 群に、砂糖水や 花粉を たっぷり あたえる ことです。えさが ゆたかだと 働き蜂が ローヤルゼリーを たくさん 出し、王台を よく 育てます。"
+  },
+  {
+   "id": "jo-incubator",
+   "name": "インキュベーター",
+   "reading": "いんきゅべーたー",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🌡️",
+   "mapNode": "joou:ikusei",
+   "relatedTerms": [
+    "jo-seijukuoudai",
+    "jo-ishoku"
+   ],
+   "bee": "西洋",
+   "description": "成熟王台を 決まった 温度に たもって あずかる 器械です。女王が 生まれる ころを 見はからって、王台を 交尾箱に 移すのに 使います。女王を たくさん 育てる 養蜂家が 使います。"
+  },
+  {
+   "id": "jo-shojouka",
+   "name": "処女王の羽化",
+   "reading": "しょじょおうのうか",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🐣",
+   "mapNode": "joou:ikusei",
+   "relatedTerms": [
+    "jo-shojoou",
+    "jo-seijukuoudai"
+   ],
+   "bee": "西洋",
+   "description": "新しい 女王が 王台の 先を かじって 外へ 出て くる ことです。卵が 産まれてから およそ 16日で、働き蜂より 早く 生まれます。この あと しばらくして 交尾飛行に 飛び立ちます。"
+  },
+  {
+   "id": "jo-oudaiichi",
+   "name": "王台の位置",
+   "reading": "おうだいのいち",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "📍",
+   "mapNode": "joou:oudai",
+   "relatedTerms": [
+    "jo-bunpooudai",
+    "jo-henseioudai"
+   ],
+   "bee": "西洋",
+   "description": "巣板の 下の ふちに ならぶ 王台は 分蜂の ため、巣板の まん中に ぽつんと ある 王台は 女王の 交代の ための ことが 多いと いわれます。位置を 見ると 群の ようすが 読めます。"
+  },
+  {
+   "id": "jo-oudaitenken",
+   "name": "王台の点検",
+   "reading": "おうだいのてんけん",
+   "journey": "joou",
+   "category": "王台と 育成",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "👀",
+   "mapNode": "joou:oudai",
+   "relatedTerms": [
+    "jo-oudai",
+    "jo-bunpooudai"
+   ],
+   "bee": "西洋",
+   "description": "春から 初夏の 内検で、王台が できて いないかを 見る ことです。巣板の 下の ふちや すみに かくれて いる ことが あるので、巣枠を 1枚ずつ よく 見ます。分蜂の 気配に 早く 気づけます。"
+  },
+  {
+   "id": "jo-kobihyoshiki",
+   "name": "交尾標識",
+   "reading": "こうびひょうしき",
+   "journey": "joou",
+   "category": "出会いと 産卵",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "⚪",
+   "mapNode": "joou:kobi",
+   "relatedTerms": [
+    "jo-kekkonhiko",
+    "jo-shojoou"
+   ],
+   "bee": "西洋",
+   "description": "空で 雄蜂と 出会って 帰って きた 女王の、おしりの 先に のこる 白っぽい しるしです。これが 見えれば、交尾飛行から ぶじに もどった ことが わかります。"
+  },
+  {
+   "id": "jo-kobijo",
+   "name": "交尾場",
+   "reading": "こうびじょう",
+   "journey": "joou",
+   "category": "出会いと 産卵",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🏝️",
+   "mapNode": "joou:kobi",
+   "relatedTerms": [
+    "jo-kobigun",
+    "jo-obachigun"
+   ],
+   "bee": "西洋",
+   "description": "ほかの 群の 雄蜂が 来ない 島や 山の 中に つくる、女王の 交尾の ための 場所です。そこに よい 雄蜂を 育てた 群を おくと、ねらった 系統どうしを かけあわせられます。"
+  },
+  {
+   "id": "jo-obachigun",
+   "name": "雄蜂群",
+   "reading": "おばちぐん",
+   "journey": "joou",
+   "category": "系統と 育種",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🐝",
+   "mapNode": "joou:kobi",
+   "relatedTerms": [
+    "jo-obachiikusei",
+    "jo-kobijo"
+   ],
+   "bee": "西洋",
+   "description": "よい 雄蜂を たくさん 育てる ために 用意する 群です。雄蜂用の 巣房の 多い 巣枠を 入れて 育てます。女王の よしあしは、父と なる 雄蜂でも 変わるからです。"
+  },
+  {
+   "id": "jo-okure",
+   "name": "交尾の遅れ",
+   "reading": "こうびのおくれ",
+   "journey": "joou",
+   "category": "出会いと 産卵",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🌧️",
+   "mapNode": "joou:kobi",
+   "relatedTerms": [
+    "jo-shojoou",
+    "jo-obachisanran"
+   ],
+   "bee": "西洋",
+   "description": "雨や 寒さが つづいて、処女王が 空で 雄蜂と 出会えない ままに なる ことです。おくれが 長いと、雄蜂の 卵しか 産めない 女王に なる ことが あります。晴れの 日を 待ちます。"
+  },
+  {
+   "id": "jo-obachisanran",
+   "name": "雄蜂産卵女王",
+   "reading": "おばちさんらんじょおう",
+   "journey": "joou",
+   "category": "出会いと 産卵",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🥚",
+   "mapNode": "joou:sanran",
+   "relatedTerms": [
+    "jo-okure",
+    "jo-koshin"
+   ],
+   "bee": "西洋",
+   "description": "雄蜂の 卵しか 産まない 女王です。働き蜂の 巣房に、ふくらんだ ふたが ならぶので 気づけます。群が よわる 前に、新しい 女王に 交代させます。"
+  },
+  {
+   "id": "jo-kyushi",
+   "name": "産卵の休止",
+   "reading": "さんらんのきゅうし",
+   "journey": "joou",
+   "category": "出会いと 産卵",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "💤",
+   "mapNode": "joou:sanran",
+   "relatedTerms": [
+    "jo-sanran",
+    "jo-sanranryoku"
+   ],
+   "bee": "西洋",
+   "description": "秋から 冬や、花の 蜜が とれない 時期に、女王が 卵を 産むのを 休む ことです。病気では なく 自然な ことで、また 花の 季節が 来ると 産みはじめます。"
+  },
+  {
+   "id": "jo-keisoku",
+   "name": "巣房の計測",
+   "reading": "すぼうのけいそく",
+   "journey": "joou",
+   "category": "出会いと 産卵",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "📏",
+   "mapNode": "joou:sanran",
+   "relatedTerms": [
+    "jo-seikettei",
+    "jo-jusei"
+   ],
+   "bee": "共通",
+   "description": "女王は 卵を 産む 前に、前あしで 巣房の 大きさを たしかめると 考えられて います。大きい 雄蜂の 巣房には 無精卵、働き蜂の 巣房には 有精卵を 産みます。"
+  },
+  {
+   "id": "jo-clipping",
+   "name": "クリッピング",
+   "reading": "くりっぴんぐ",
+   "journey": "joou",
+   "category": "出会いと 産卵",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "✂️",
+   "mapNode": "joou:sanran",
+   "relatedTerms": [
+    "jo-mark",
+    "jo-shizenbunpo"
+   ],
+   "bee": "西洋",
+   "description": "女王の はねの 先を 少し 切って、遠くへ 飛べない ように する ことです。分蜂が おきても 群が 遠くへ 行かずに すみます。女王を 傷つけない よう、なれた おとなが する 作業です。"
+  },
+  {
+   "id": "jo-russian",
+   "name": "ロシアンミツバチ",
+   "reading": "ろしあんみつばち",
+   "journey": "joou",
+   "category": "品種",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🌲",
+   "mapNode": "joou:hinshu",
+   "relatedTerms": [
+    "jo-hinshu",
+    "jo-ashu"
+   ],
+   "bee": "西洋",
+   "description": "ロシアの 極東で くらして きた セイヨウミツバチを もとに した 系統です。バロアに 強い 性質が あると いわれ、研究されて います。寒さに 強い ことでも 知られます。"
+  },
+  {
+   "id": "jo-kozatsu",
+   "name": "交雑種",
+   "reading": "こうざつしゅ",
+   "journey": "joou",
+   "category": "品種",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🔀",
+   "mapNode": "joou:hinshu",
+   "relatedTerms": [
+    "jo-zasshu",
+    "jo-buckfast"
+   ],
+   "bee": "西洋",
+   "description": "ちがう 品種や 系統を かけあわせて 生まれた ハチです。両方の よい ところを ねらって つくられます。バックファストも、いくつもの 系統を かけあわせて 生まれました。"
+  },
+  {
+   "id": "jo-zasshu",
+   "name": "雑種強勢",
+   "reading": "ざっしゅきょうせい",
+   "journey": "joou",
+   "category": "系統と 育種",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "💪",
+   "mapNode": "joou:hinshu",
+   "relatedTerms": [
+    "jo-kozatsu",
+    "jo-kinkojakusei"
+   ],
+   "bee": "共通",
+   "description": "ちがう 系統を かけあわせた 1代目が、親よりも 元気に 育つ ことです。近交弱勢と 反対の 考えかたです。ただし 2代目からは 性質が ばらつきやすく なります。"
+  },
+  {
+   "id": "jo-kansetsu",
+   "name": "間接導入",
+   "reading": "かんせつどうにゅう",
+   "journey": "joou",
+   "category": "導入と 合同",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🧺",
+   "mapNode": "joou:donyu",
+   "relatedTerms": [
+    "jo-ookago",
+    "jo-candy"
+   ],
+   "bee": "西洋",
+   "description": "新しい 女王を 王籠に 入れて 巣に おき、群の においに なれさせてから 出す 導入の しかたです。キャンディーを 食べて 出口が あく 形なら、数日かけて ゆっくり なじみます。"
+  },
+  {
+   "id": "jo-chokusetsu",
+   "name": "直接導入",
+   "reading": "ちょくせつどうにゅう",
+   "journey": "joou",
+   "category": "導入と 合同",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🚪",
+   "mapNode": "joou:donyu",
+   "relatedTerms": [
+    "jo-kansetsu",
+    "jo-kyohi"
+   ],
+   "bee": "西洋",
+   "description": "王籠を 使わずに、新しい 女王を そのまま 群に 入れる 導入の しかたです。手早い ぶん、受け入れられない ことも あるので、条件が そろった ときだけ 行います。"
+  },
+  {
+   "id": "jo-pushin",
+   "name": "プッシュインケージ",
+   "reading": "ぷっしゅいんけーじ",
+   "journey": "joou",
+   "category": "導入と 合同",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🔲",
+   "mapNode": "joou:donyu",
+   "relatedTerms": [
+    "jo-kansetsu",
+    "jo-ukeire"
+   ],
+   "bee": "西洋",
+   "description": "巣板に おしこんで 使う、網の 籠です。女王は 籠の 中で 卵を 産みはじめられ、まわりの 働き蜂とも なじみやすく なります。"
+  },
+  {
+   "id": "jo-kyohi",
+   "name": "女王の拒否",
+   "reading": "じょおうのきょひ",
+   "journey": "joou",
+   "category": "導入と 合同",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🙅",
+   "mapNode": "joou:donyu",
+   "relatedTerms": [
+    "jo-ukeire",
+    "jo-toitsu"
+   ],
+   "bee": "西洋",
+   "description": "群が 新しい 女王を 受け入れない ことです。においが ちがうと、働き蜂が 女王を かこんで しまいます。王籠で においに なれさせ、無王の 時間を おいてから 入れて 防ぎます。"
+  },
+  {
+   "id": "jo-toitsu",
+   "name": "においの統一",
+   "reading": "においのとういつ",
+   "journey": "joou",
+   "category": "導入と 合同",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "👃",
+   "mapNode": "joou:godo",
+   "relatedTerms": [
+    "jo-shinbunshi",
+    "jo-godo"
+   ],
+   "bee": "西洋",
+   "description": "合同の 前に、2つの 群の においを なじませる ことです。新聞紙を あいだに はさむと、ゆっくり かじる うちに においが まざり、けんかが 少なく なります。"
+  },
+  {
+   "id": "jo-package",
+   "name": "パッケージビー",
+   "reading": "ぱっけーじびー",
+   "journey": "joou",
+   "category": "群を ふやす",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "📦",
+   "mapNode": "joou:jinko",
+   "relatedTerms": [
+    "jo-kakugun",
+    "jo-jinkobunpo"
+   ],
+   "bee": "西洋",
+   "description": "女王と 働き蜂を、網の 箱に 入れて 送る 群です。巣枠の ない 状態で とどくので、巣箱に 入れて 巣を 作って もらいます。外国では よく 使われる 群の ふやしかたです。"
+  },
+  {
+   "id": "jo-muokikan",
+   "name": "無王期間",
+   "reading": "むおうきかん",
+   "journey": "joou",
+   "category": "女王が いない 群",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "⏳",
+   "mapNode": "joou:muou",
+   "relatedTerms": [
+    "jo-muougun",
+    "jo-hatarakisanran"
+   ],
+   "bee": "西洋",
+   "description": "群に 卵を 産む 女王が いない あいだの ことです。この あいだは 新しい 卵が 産まれず、長く なると 群が よわります。王台や 新しい 女王を 入れて、早めに おわらせます。"
+  },
+  {
+   "id": "jo-kizashi",
+   "name": "無王の兆し",
+   "reading": "むおうのきざし",
+   "journey": "joou",
+   "category": "女王が いない 群",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "❔",
+   "mapNode": "joou:muou",
+   "relatedTerms": [
+    "jo-muougun",
+    "jo-testwaku"
+   ],
+   "bee": "西洋",
+   "description": "女王が いない ときの 手がかりです。卵や 若い 幼虫が 見あたらず、羽音が いつもより さわがしく、ハチが 落ちつかなく なります。気づいたら テスト枠で たしかめます。"
+  },
+  {
+   "id": "jo-fukusu",
+   "name": "複数の卵",
+   "reading": "ふくすうのたまご",
+   "journey": "joou",
+   "category": "女王が いない 群",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🥚",
+   "mapNode": "joou:muou",
+   "relatedTerms": [
+    "jo-hatarakisanran",
+    "jo-kizashi"
+   ],
+   "bee": "西洋",
+   "description": "1つの 巣房に 卵が いくつも 産まれて いる ようすです。働き蜂が 卵を 産みはじめた しるしの ことが 多いです。産みはじめた ばかりの 若い 女王でも 見られる ことが あります。"
+  },
+  {
+   "id": "jo-testwaku",
+   "name": "テスト枠",
+   "reading": "てすとわく",
+   "journey": "joou",
+   "category": "女王が いない 群",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🧪",
+   "mapNode": "joou:muou",
+   "relatedTerms": [
+    "jo-kizashi",
+    "jo-muougun"
+   ],
+   "bee": "西洋",
+   "description": "若い 幼虫の いる 巣枠を ほかの 群から 1枚 入れて、ようすを 見る ことです。数日で 王台が できれば、その 群には 女王が いないと わかります。"
+  },
+  {
+   "id": "jo-nio",
+   "name": "二王群",
+   "reading": "におうぐん",
+   "journey": "joou",
+   "category": "女王の 更新",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "👑",
+   "mapNode": "joou:koushin",
+   "relatedTerms": [
+    "jo-koshin",
+    "jo-sanranryoku"
+   ],
+   "bee": "西洋",
+   "description": "隔王板などで しきって、2匹の 女王を 1つの 群で 飼う 方法です。卵を 産む 女王が ふえる ぶん、春に ハチの 数を 早く ふやせます。"
+  },
+  {
+   "id": "jo-kentei",
+   "name": "性能検定",
+   "reading": "せいのうけんてい",
+   "journey": "joou",
+   "category": "系統と 育種",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "📋",
+   "mapNode": "joou:keito",
+   "relatedTerms": [
+    "jo-senbatsu",
+    "jo-saimitsuryoku"
+   ],
+   "bee": "西洋",
+   "description": "おとなしさ・蜜を 集める 力・病気や ダニへの 強さなどを 記録して、群どうしを くらべる ことです。よい 結果の 群を 選んで、次の 女王を 育てます。"
+  },
+  {
+   "id": "jo-tayosei",
+   "name": "遺伝的多様性",
+   "reading": "いでんてきたようせい",
+   "journey": "joou",
+   "category": "系統と 育種",
+   "difficulty": 3,
+   "field": "繁殖",
+   "type": "concept",
+   "emoji": "🌈",
+   "mapNode": "joou:keito",
+   "relatedTerms": [
+    "jo-issaitafu",
+    "jo-kinkojakusei"
+   ],
+   "bee": "共通",
+   "description": "群の 中に いろいろな 性質の ハチが まざって いる ことです。女王は 空で たくさんの 雄蜂と 出会うので、父の ちがう 働き蜂が いっしょに くらします。病気や 天気の 変化に 強く なります。"
   },
   {
    "id": "hm-horitsu",
@@ -12570,6 +18347,96 @@
    "description": "業界が 自分たちで 決めて、国に みとめられた 表示の 決まりです。はちみつ類の 表示に 関する 公正競争規約では、はちみつの 名前の つけかたなどが 決められて います。"
   },
   {
+   "id": "hm-shiikubasho",
+   "name": "飼育場所",
+   "reading": "しいくばしょ",
+   "journey": "homu",
+   "category": "法律と 届出",
+   "difficulty": 2,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📍",
+   "mapNode": "homu:todoke",
+   "relatedTerms": [
+    "hm-shiikutodoke",
+    "hm-hairyo"
+   ],
+   "bee": "共通",
+   "description": "巣箱を おいて ミツバチを 飼う 場所です。蜜蜂飼育届には、飼う 場所も 書いて 出します。人の 通り道から はなれた、日あたりの よい 場所を えらびます。"
+  },
+  {
+   "id": "hm-hairyo",
+   "name": "近所への配慮",
+   "reading": "きんじょへのはいりょ",
+   "journey": "homu",
+   "category": "養蜂の しごと",
+   "difficulty": 2,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🏘️",
+   "mapNode": "homu:shigoto",
+   "relatedTerms": [
+    "hm-funga",
+    "hm-baisho"
+   ],
+   "bee": "共通",
+   "description": "家の 近くで ミツバチを 飼う ときに、まわりの 人に 気を くばる ことです。巣門の 向きを 人の 通り道から そらしたり、水場を 用意したり します。前もって あいさつして おくと 安心です。"
+  },
+  {
+   "id": "hm-funga",
+   "name": "ふん害",
+   "reading": "ふんがい",
+   "journey": "homu",
+   "category": "養蜂の しごと",
+   "difficulty": 2,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🚗",
+   "mapNode": "homu:shigoto",
+   "relatedTerms": [
+    "hm-hairyo",
+    "hm-baisho"
+   ],
+   "bee": "共通",
+   "description": "ミツバチの ふんが、近くの 車や 洗濯物に ついて しまう 困りごとです。ハチは 巣の 外で ふんを するので、春の 晴れた 日などに 目立ちます。巣箱の 置き場所を くふうして 防ぎます。"
+  },
+  {
+   "id": "hm-baisho",
+   "name": "賠償保険",
+   "reading": "ばいしょうほけん",
+   "journey": "homu",
+   "category": "養蜂の しごと",
+   "difficulty": 2,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🛡️",
+   "mapNode": "homu:shigoto",
+   "relatedTerms": [
+    "hm-hairyo",
+    "hm-gyosha"
+   ],
+   "bee": "共通",
+   "description": "人や ものに 思わぬ 迷惑を かけて しまった ときに そなえる 保険です。ミツバチを 飼う 人が 入れる 保険も あります。もしもの ときに 落ちついて 対応できます。"
+  },
+  {
+   "id": "hm-edo",
+   "name": "江戸時代の養蜂",
+   "reading": "えどじだいのようほう",
+   "journey": "homu",
+   "category": "歴史",
+   "difficulty": 2,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🏯",
+   "mapNode": "homu:rekishi",
+   "relatedTerms": [
+    "hm-washiki",
+    "hm-dento"
+   ],
+   "bee": "日本",
+   "description": "江戸時代には、各地で ニホンミツバチを 飼って はちみつを とる 養蜂が 行われて いました。はちみつは 貴重な 品として あつかわれ、養蜂の ようすを 絵で 説明した 本も 残って います。"
+  },
+  {
    "id": "hm-sekokisoku",
    "name": "施行規則",
    "reading": "しこうきそく",
@@ -13023,6 +18890,640 @@
    ],
    "bee": "西洋",
    "description": "作物の 受粉の ために 農家に 貸しだす ミツバチです。ハウスの 中は せまいので、ハチが 弱らない よう えさや 水にも 気を くばります。"
+  },
+  {
+   "id": "hm-gunsu",
+   "name": "飼育群数",
+   "reading": "しいくぐんすう",
+   "journey": "homu",
+   "category": "法律と 届出",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🔢",
+   "mapNode": "homu:todoke",
+   "relatedTerms": [
+    "hm-shiikutodoke",
+    "hm-shimekiri"
+   ],
+   "bee": "共通",
+   "description": "飼って いる 群の 数の ことです。蜜蜂飼育届には、1月1日の 時点の 群の 数を 書きます。どこに どれだけ ミツバチが いるかが わかり、病気の 対策にも 役立ちます。"
+  },
+  {
+   "id": "hm-shimekiri",
+   "name": "届出の締め切り",
+   "reading": "とどけでのしめきり",
+   "journey": "homu",
+   "category": "法律と 届出",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📅",
+   "mapNode": "homu:todoke",
+   "relatedTerms": [
+    "hm-maitoshi",
+    "hm-sekokisoku"
+   ],
+   "bee": "共通",
+   "description": "蜜蜂飼育届は、毎年 1月31日までに 出す 決まりです。その 年の 1月1日の ようすを 書きます。年の とちゅうで 飼いはじめた ときは、その つど 出します。"
+  },
+  {
+   "id": "hm-reigai",
+   "name": "届出の例外",
+   "reading": "とどけでのれいがい",
+   "journey": "homu",
+   "category": "法律と 届出",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📎",
+   "mapNode": "homu:todoke",
+   "relatedTerms": [
+    "hm-shumi",
+    "hm-kafunkohai"
+   ],
+   "bee": "共通",
+   "description": "ミツバチを 飼う 人は 原則として 届け出ますが、届け出が いらない 場合も あります。たとえば ハウスの 花粉交配だけに 短い あいだ 使う 場合などです。くわしくは 都道府県に たしかめます。"
+  },
+  {
+   "id": "hm-tenshikikan",
+   "name": "転飼期間",
+   "reading": "てんしきかん",
+   "journey": "homu",
+   "category": "法律と 届出",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🗓️",
+   "mapNode": "homu:tenshi",
+   "relatedTerms": [
+    "hm-tenshikyoka",
+    "hm-tenshisaki"
+   ],
+   "bee": "西洋",
+   "description": "転飼で ミツバチを ほかの 場所に おいて 飼う 期間です。許可を 申しこむ ときに、いつから いつまで おくかを 書きます。期間を 守る ことで、ほかの 養蜂家との 場所の かさなりを 防ぎます。"
+  },
+  {
+   "id": "hm-kengai",
+   "name": "県外への転飼",
+   "reading": "けんがいへのてんし",
+   "journey": "homu",
+   "category": "法律と 届出",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🚚",
+   "mapNode": "homu:tenshi",
+   "relatedTerms": [
+    "hm-tenshikyoka",
+    "hm-chiji"
+   ],
+   "bee": "西洋",
+   "description": "養蜂業者が ほかの 都道府県へ ミツバチを 移して 飼う ときは、前もって 転飼先の 都道府県知事の 許可が 要ります。申請の 締切や 窓口は 都道府県ごとに ちがいます。"
+  },
+  {
+   "id": "hm-kanchiku",
+   "name": "監視伝染病",
+   "reading": "かんしでんせんびょう",
+   "journey": "homu",
+   "category": "病気の 決まり",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "👀",
+   "mapNode": "homu:densenho",
+   "relatedTerms": [
+    "hm-giji",
+    "hm-kachikudensen"
+   ],
+   "bee": "共通",
+   "description": "家畜伝染病予防法で 見はる 病気を まとめた よびかたです。家畜伝染病(法定伝染病)と 届出伝染病の 2つが あります。ミツバチの 腐蛆病・バロア病・ノゼマ病なども ここに 入ります。"
+  },
+  {
+   "id": "hm-giji",
+   "name": "検査を受ける決まり",
+   "reading": "けんさをうけるきまり",
+   "journey": "homu",
+   "category": "病気の 決まり",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🔍",
+   "mapNode": "homu:densenho",
+   "relatedTerms": [
+    "hm-kanchiku",
+    "hm-tachiiri"
+   ],
+   "bee": "共通",
+   "description": "家畜伝染病予防法に もとづいて、ミツバチを 飼う 人は 都道府県が 行う 腐蛆病などの 検査を 受けます。業者でも 趣味でも 同じです。早く 見つければ、まわりの 群も 守れます。"
+  },
+  {
+   "id": "hm-idoseigen",
+   "name": "移動の制限",
+   "reading": "いどうのせいげん",
+   "journey": "homu",
+   "category": "病気の 決まり",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🚫",
+   "mapNode": "homu:densenho",
+   "relatedTerms": [
+    "hm-densenho",
+    "hm-hoeijo"
+   ],
+   "bee": "共通",
+   "description": "病気が 広がらない ように、ミツバチの 群や 道具を 動かすのを 止める ことです。家畜伝染病が 出た ときなどに、法律の 決まりに そって 行われます。"
+  },
+  {
+   "id": "hm-teiki",
+   "name": "定期検査",
+   "reading": "ていきけんさ",
+   "journey": "homu",
+   "category": "病気の 決まり",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🔍",
+   "mapNode": "homu:hoeijo",
+   "relatedTerms": [
+    "hm-hoeijo",
+    "hm-fusokensa"
+   ],
+   "bee": "共通",
+   "description": "家畜保健衛生所が、決まった 時期に 養蜂場を まわって 病気が ないかを しらべる ことです。腐蛆病などを 早く 見つけて、広がるのを 防ぎます。"
+  },
+  {
+   "id": "hm-fusokensa",
+   "name": "腐蛆病検査",
+   "reading": "ふそびょうけんさ",
+   "journey": "homu",
+   "category": "病気の 決まり",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🧫",
+   "mapNode": "homu:hoeijo",
+   "relatedTerms": [
+    "hm-teiki",
+    "hm-kachikudensen"
+   ],
+   "bee": "共通",
+   "description": "腐蛆病に かかって いないかを しらべる 検査です。幼虫の ようすを 見たり、試料を 持ちかえって くわしく しらべたり します。県外へ 移す ときに、検査の 証明書が いる 場合も あります。"
+  },
+  {
+   "id": "hm-haccp",
+   "name": "HACCP",
+   "reading": "はさっぷ",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "✅",
+   "mapNode": "homu:shokuhin",
+   "relatedTerms": [
+    "hm-eiseiho",
+    "hm-anzen"
+   ],
+   "bee": "共通",
+   "description": "食品を つくる ときに、まちがいが おきやすい 所を 前もって 見つけて、しっかり 見はる 衛生管理の 考えかたです。2021年から、食品を あつかう 事業者は 原則として HACCPに そった 衛生管理を 行います。"
+  },
+  {
+   "id": "hm-hozon",
+   "name": "保存方法",
+   "reading": "ほぞんほうほう",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🌡️",
+   "mapNode": "homu:hyoji",
+   "relatedTerms": [
+    "hm-hyoji",
+    "hm-genzairyo"
+   ],
+   "bee": "共通",
+   "description": "ラベルに 書く、食品の しまいかたの 項目です。はちみつなら「直射日光を さけて 保存」などと 書きます。寒い 所で 白く かたまる ことが ありますが、はちみつの 自然な 性質です。"
+  },
+  {
+   "id": "hm-konnyu",
+   "name": "異物混入",
+   "reading": "いぶつこんにゅう",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🔎",
+   "mapNode": "homu:shokuhin",
+   "relatedTerms": [
+    "hm-eiseiho",
+    "hm-anzen"
+   ],
+   "bee": "共通",
+   "description": "食品の 中に 入って いては いけない ものが まざる ことです。はちみつでは ハチの からだや ろうの かけらが 入らない よう、こして びんに つめます。作業場を 清潔に する ことも 大切です。"
+  },
+  {
+   "id": "hm-meisho",
+   "name": "名称",
+   "reading": "めいしょう",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🏷️",
+   "mapNode": "homu:hyoji",
+   "relatedTerms": [
+    "hm-hyoji",
+    "hm-mitsurui"
+   ],
+   "bee": "共通",
+   "description": "ラベルに 書く、その 食品が 何かを あらわす 名前です。はちみつなら「はちみつ」などと 書きます。名前の つけかたは 公正競争規約でも 決められて います。"
+  },
+  {
+   "id": "hm-naiyoryo",
+   "name": "内容量",
+   "reading": "ないようりょう",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "homu:hyoji",
+   "relatedTerms": [
+    "hm-hyoji",
+    "hm-meisho"
+   ],
+   "bee": "共通",
+   "description": "ラベルに 書く、中身の 量の 項目です。はちみつは 重さで 書きます。びんの 重さは 入れずに、はちみつだけの 重さを はかります。"
+  },
+  {
+   "id": "hm-seizosha",
+   "name": "製造者",
+   "reading": "せいぞうしゃ",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🏭",
+   "mapNode": "homu:hyoji",
+   "relatedTerms": [
+    "hm-hyoji",
+    "hm-trace"
+   ],
+   "bee": "共通",
+   "description": "ラベルに 書く、その 食品を 作ったり つめたり した 人の 名前と 住所です。何か あった ときに、買った 人が 問い合わせできます。"
+  },
+  {
+   "id": "hm-eiyoseibun",
+   "name": "栄養成分表示",
+   "reading": "えいようせいぶんひょうじ",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📊",
+   "mapNode": "homu:hyoji",
+   "relatedTerms": [
+    "hm-hyojiho",
+    "hm-hyoji"
+   ],
+   "bee": "共通",
+   "description": "熱量や たんぱく質などの 量を 書く 表示です。食品表示法の 決まりで、びんや ふくろに 入った 食品には 原則として 書きます。小さな 事業者などは 省ける 場合も あります。"
+  },
+  {
+   "id": "hm-chuigaki",
+   "name": "注意書き",
+   "reading": "ちゅういがき",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "⚠️",
+   "mapNode": "homu:hyoji",
+   "relatedTerms": [
+    "hm-anzen",
+    "hm-hyoji"
+   ],
+   "bee": "共通",
+   "description": "ラベルに そえる、食べる 人への 大切な 知らせです。はちみつには「1歳未満の 乳児には 与えないで ください」と 書いて 知らせます。赤ちゃんの 乳児ボツリヌス症を 防ぐ ためです。"
+  },
+  {
+   "id": "hm-keihin",
+   "name": "景品表示法",
+   "reading": "けいひんひょうじほう",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📕",
+   "mapNode": "homu:hyoji",
+   "relatedTerms": [
+    "hm-yuryo",
+    "hm-kiyaku"
+   ],
+   "bee": "共通",
+   "description": "実際より よく 見せる 表示などを 禁じて、買う 人を 守る 法律です。はちみつ類の 公正競争規約も、この 法律に もとづいて 作られて います。"
+  },
+  {
+   "id": "hm-yuryo",
+   "name": "優良誤認",
+   "reading": "ゆうりょうごにん",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🙅",
+   "mapNode": "homu:hyoji",
+   "relatedTerms": [
+    "hm-keihin",
+    "hm-katomitsu"
+   ],
+   "bee": "共通",
+   "description": "品物を 実際より ずっと よい ものだと 思わせる 表示の ことです。たとえば 砂糖を まぜたのに「純粋」と 書くのは いけません。景品表示法で 禁じられて います。"
+  },
+  {
+   "id": "hm-yakki",
+   "name": "薬機法",
+   "reading": "やっきほう",
+   "journey": "homu",
+   "category": "食品と 表示",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📘",
+   "mapNode": "homu:hyoji",
+   "relatedTerms": [
+    "hm-keihin",
+    "hm-hyoji"
+   ],
+   "bee": "共通",
+   "description": "薬などの 決まりを 定めた 法律です。食品の はちみつに、病気が よく なるような ことを 書いて 売っては いけません。「おいしい」「料理に 使える」など、食べものとしての よさを 伝えます。"
+  },
+  {
+   "id": "hm-skep",
+   "name": "スケップ",
+   "reading": "すけっぷ",
+   "journey": "homu",
+   "category": "歴史",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🧺",
+   "mapNode": "homu:rekishi",
+   "relatedTerms": [
+    "hm-kadowaku",
+    "hm-langstroth"
+   ],
+   "bee": "西洋",
+   "description": "わらを 編んで 作った、ヨーロッパの 昔の 巣箱です。中の 巣を 取りだせないので、はちみつを とるのが 大変でした。可動巣枠の 巣箱が 生まれる 前に、広く 使われました。"
+  },
+  {
+   "id": "hm-huber",
+   "name": "ヒューバー",
+   "reading": "ひゅーばー",
+   "journey": "homu",
+   "category": "歴史",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🔎",
+   "mapNode": "homu:rekishi",
+   "relatedTerms": [
+    "hm-kadowaku",
+    "hm-kenkyu"
+   ],
+   "bee": "西洋",
+   "description": "スイスの 研究者で、本の ように ひらく 巣箱を 使って ミツバチの くらしを 観察しました。目が 不自由でしたが、助手の 力を かりて 多くの ことを 明らかに しました。"
+  },
+  {
+   "id": "hm-hruschka",
+   "name": "フルシュカ",
+   "reading": "ふるしゅか",
+   "acceptedReadings": [
+    "ふるしゅか",
+    "ふるしか"
+   ],
+   "journey": "homu",
+   "category": "歴史",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "homu:rekishi",
+   "relatedTerms": [
+    "hm-langstroth",
+    "hm-kadowaku"
+   ],
+   "bee": "西洋",
+   "description": "1865年に、巣を こわさずに はちみつを とりだす 遠心分離機を 発表した オーストリアの 人です。巣を くりかえし 使えるように なり、採蜜が ぐっと らくに なりました。"
+  },
+  {
+   "id": "hm-arana",
+   "name": "アラーニャ洞窟",
+   "reading": "あらーにゃどうくつ",
+   "journey": "homu",
+   "category": "歴史",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🪨",
+   "mapNode": "homu:rekishi",
+   "relatedTerms": [
+    "hm-hekiga",
+    "hm-egypt"
+   ],
+   "bee": "共通",
+   "description": "スペインに ある 洞窟で、はちみつを とる 人の すがたを えがいた 古い 岩絵が あります。人が 大昔から はちみつを 大切に して きた ことが わかります。"
+  },
+  {
+   "id": "hm-kudara",
+   "name": "百済",
+   "reading": "くだら",
+   "journey": "homu",
+   "category": "日本の 養蜂",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🏛️",
+   "mapNode": "homu:rekishi",
+   "relatedTerms": [
+    "hm-shoki",
+    "hm-dento"
+   ],
+   "bee": "日本",
+   "description": "むかし 朝鮮半島に あった 国です。日本書紀には、643年に 百済の 太子が ミツバチの 巣を 奈良の 三輪山に 放して 飼おうと したが、ふえなかったと 書かれて います。日本の 養蜂の 古い 記録の 1つです。"
+  },
+  {
+   "id": "hm-genome",
+   "name": "ゲノム解読",
+   "reading": "げのむかいどく",
+   "journey": "homu",
+   "category": "研究",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🧬",
+   "mapNode": "homu:kenkyu",
+   "relatedTerms": [
+    "hm-kenkyu",
+    "hm-kodogaku"
+   ],
+   "bee": "西洋",
+   "description": "生きものの 遺伝の 情報を まとめて 読みとく ことです。セイヨウミツバチの ゲノムは 2006年に 発表されました。病気に 強い ハチを 選ぶ 研究などに 役立って います。"
+  },
+  {
+   "id": "hm-linnaeus",
+   "name": "リンネ",
+   "reading": "りんね",
+   "journey": "homu",
+   "category": "研究",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📖",
+   "mapNode": "homu:kenkyu",
+   "relatedTerms": [
+    "hm-kenkyu",
+    "hm-genome"
+   ],
+   "bee": "西洋",
+   "description": "生きものに 学名を つける しくみを 広めた スウェーデンの 学者です。1758年に、セイヨウミツバチに アピス・メリフェラと いう 学名を つけました。"
+  },
+  {
+   "id": "hm-yunyu",
+   "name": "輸入はちみつ",
+   "reading": "ゆにゅうはちみつ",
+   "journey": "homu",
+   "category": "日本の 養蜂",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🚢",
+   "mapNode": "homu:nihon",
+   "relatedTerms": [
+    "hm-gensankoku",
+    "hm-trace"
+   ],
+   "bee": "共通",
+   "description": "外国で とれて、日本に 運ばれて きた はちみつです。ラベルには、とれた 国を 原産国として 書きます。どこで とれたかが わかると、えらぶ 手がかりに なります。"
+  },
+  {
+   "id": "hm-koukeisha",
+   "name": "後継者",
+   "reading": "こうけいしゃ",
+   "journey": "homu",
+   "category": "学ぶ 道",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🌱",
+   "mapNode": "homu:michi",
+   "relatedTerms": [
+    "hm-shuno",
+    "hm-kenshusei"
+   ],
+   "bee": "共通",
+   "description": "養蜂場や その わざを 引きつぐ 人です。ミツバチの 世話は 経験が 大切なので、いっしょに はたらきながら 少しずつ 教えて いきます。"
+  },
+  {
+   "id": "hm-chokubai",
+   "name": "直売",
+   "reading": "ちょくばい",
+   "journey": "homu",
+   "category": "養蜂の しごと",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🛍️",
+   "mapNode": "homu:shigoto",
+   "relatedTerms": [
+    "hm-hanbai",
+    "hm-hyoji"
+   ],
+   "bee": "共通",
+   "description": "とれた はちみつを、自分で 直接 お客さんに 売る ことです。量が 少なくても、表示の 決まりは ほかの 売りかたと 同じように 守ります。お客さんの 声を 聞ける よさが あります。"
+  },
+  {
+   "id": "hm-keiei",
+   "name": "経営計画",
+   "reading": "けいえいけいかく",
+   "journey": "homu",
+   "category": "養蜂の しごと",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "homu:shigoto",
+   "relatedTerms": [
+    "hm-gyosha",
+    "hm-kafunkohai"
+   ],
+   "bee": "共通",
+   "description": "飼う 群の 数・採蜜・受粉の しごと・売りかたなどを、1年を 見通して 立てる 計画です。天気や 花の ぐあいで 変わるので、記録を もとに 見なおします。"
+  },
+  {
+   "id": "hm-aoiro",
+   "name": "青色申告",
+   "reading": "あおいろしんこく",
+   "journey": "homu",
+   "category": "養蜂の しごと",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "📒",
+   "mapNode": "homu:shigoto",
+   "relatedTerms": [
+    "hm-keiei",
+    "hm-hojinka"
+   ],
+   "bee": "共通",
+   "description": "毎日の お金の 出入りを 帳簿に きちんと つけて おこなう、税の 申告の しかたです。帳簿を つける ぶん、税の 決まりで 有利な ところが あります。"
+  },
+  {
+   "id": "hm-hojinka",
+   "name": "法人化",
+   "reading": "ほうじんか",
+   "journey": "homu",
+   "category": "養蜂の しごと",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🏢",
+   "mapNode": "homu:shigoto",
+   "relatedTerms": [
+    "hm-aoiro",
+    "hm-keiei"
+   ],
+   "bee": "共通",
+   "description": "個人で して いた 養蜂を、会社などの 法人に する ことです。人を やとったり、取引を 広げたり しやすく なります。手続きや 帳簿の しごとは ふえます。"
+  },
+  {
+   "id": "hm-shinko",
+   "name": "養蜂の振興",
+   "reading": "ようほうのしんこう",
+   "journey": "homu",
+   "category": "法律と 届出",
+   "difficulty": 3,
+   "field": "法律・しごと",
+   "type": "concept",
+   "emoji": "🌼",
+   "mapNode": "homu:shinkoho",
+   "relatedTerms": [
+    "hm-shinkoho",
+    "hm-mitsugenhogo"
+   ],
+   "bee": "共通",
+   "description": "養蜂振興法が めざす ことです。はちみつや ろうの 生産を ふやし、農作物の 花粉交配にも 役立つ よう、養蜂を 守り 育てます。"
   }
  ]
 }

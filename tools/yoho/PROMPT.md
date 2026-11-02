@@ -83,7 +83,7 @@
 | 2 | 中級 | **はじめて 巣箱を 持つ 人・農業高校で 養蜂を 学ぶ 人**。道具の 名前・1年の しごと・蜜源・ダニと 病気の 名前・届出 |
 | 3 | 上級 | **プロの 養蜂家**。女王の 育成・移虫・病気の 見わけ・法律の 中身・はちみつの 成分と 表示・品種の ちがい・転飼・受粉の しごと |
 
-**1つの 旅に 70語: difficulty 1 を 20語、2 を 25語、3 を 25語**。同じ difficulty の 中は **よく 知られている 順**(ならんだ 順が ステージの 順)。
+**1つの 旅に 110語: difficulty 1 を 20語、2 を 30語、3 を 60語**(けいくん 2026-11-01「足してください」で 70語から 広げた。気象予報士と 同じ 形)。同じ difficulty の 中は **よく 知られている 順**(ならんだ 順が ステージの 順)。
 
 ## 旅と しくみ図の 場所
 
@@ -111,7 +111,7 @@
 
 ## どの 語を どの 旅に 入れるか
 
-**`tools/yoho/plan.json` が 正本**(630語の 置き場所。読みの かぶり 0 で 決めてある)。書く 助手は plan の 語を **そのまま**(id・name・reading・difficulty・mapNode・field・bee・順番)使い、説明・category・emoji・relatedTerms を 書く。
+**`tools/yoho/plan.json` が 正本**(はじめの 630語の 置き場所。足した 360語は `plan2.json`。読みの かぶり 0 で 決めてある)。書く 助手は plan の 語を **そのまま**(id・name・reading・difficulty・mapNode・field・bee・順番)使い、説明・category・emoji・relatedTerms を 書く。
 どうしても あやしい 語(事実が 確かめられない・こわい・決まりに ふれる)は 同じ 旅・同じ difficulty の 別の 語に 入れかえて よい(読みが **9つの 旅の 中で かぶらない** ことを `--check` で 確かめる)。
 
 ## ぜったいに 守ること
@@ -122,4 +122,4 @@
 
 ## 出すもの
 
-`tools/yoho/terms-<旅id>.json` に JSON の 配列(70語)で 書く。書いたら `python3 tools/yoho/terms_js.py --only <旅id>` で 形を 確かめる(まちがいが あれば 止まる)。
+`tools/yoho/terms-<旅id>.json` に JSON の 配列(110語)で 書く。書いたら `python3 tools/yoho/terms_js.py --only <旅id>` で 形を 確かめる(まちがいが あれば 止まる)。

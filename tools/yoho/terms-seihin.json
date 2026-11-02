@@ -819,6 +819,96 @@
   "description": "働き蜂が 花の みつを 蜜胃に ためて、巣まで 運ぶ ことです。帰った ときは おなかが ふくらんで いて、からだが 少し 重く なって います。"
  },
  {
+  "id": "sh-iro",
+  "name": "はちみつの色",
+  "reading": "はちみつのいろ",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 2,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-tankamitsu",
+   "sh-sobamitsu"
+  ],
+  "bee": "共通",
+  "description": "はちみつの 色は、花の 種類で うすい 黄色から こい 茶色まで ちがいます。アカシア蜜は うすく、ソバ蜜は こい 色です。"
+ },
+ {
+  "id": "sh-hozon",
+  "name": "蜜の保存",
+  "reading": "みつのほぞん",
+  "journey": "seihin",
+  "category": "瓶と 表示",
+  "difficulty": 2,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "seihin:bin",
+  "relatedTerms": [
+   "sh-kessho",
+   "sh-shomikigen"
+  ],
+  "bee": "共通",
+  "description": "はちみつは ふたを しっかり しめて、日の あたらない 常温の 場所に おきます。冷蔵庫に 入れると 結晶しやすく なります。"
+ },
+ {
+  "id": "sh-mippei",
+  "name": "密閉",
+  "reading": "みっぺい",
+  "journey": "seihin",
+  "category": "瓶と 表示",
+  "difficulty": 2,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "seihin:bin",
+  "relatedTerms": [
+   "sh-hozon",
+   "sh-suibun"
+  ],
+  "bee": "共通",
+  "description": "ふたを しっかり しめて、空気が 入らない ように する ことです。はちみつは まわりの 水分を すいやすいので、密閉して 水分が ふえるのを ふせぎます。"
+ },
+ {
+  "id": "sh-kokusan",
+  "name": "国産はちみつ",
+  "reading": "こくさんはちみつ",
+  "journey": "seihin",
+  "category": "瓶と 表示",
+  "difficulty": 2,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "seihin:bin",
+  "relatedTerms": [
+   "sh-label",
+   "sh-junsui"
+  ],
+  "bee": "共通",
+  "description": "日本で とれた はちみつです。はちみつの ラベルには、どこの 国で とれたかを 書く 決まりが あります。"
+ },
+ {
+  "id": "sh-rouiro",
+  "name": "ろうの色",
+  "reading": "ろうのいろ",
+  "journey": "seihin",
+  "category": "蜜蝋",
+  "difficulty": 2,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🤍",
+  "mapNode": "seihin:mitsuro",
+  "relatedTerms": [
+   "sh-mitsuro",
+   "sh-seisei"
+  ],
+  "bee": "共通",
+  "description": "ミツバチが 作った ばかりの 巣は 白い ろうで できて います。巣は 使う うちに 花粉や さなぎの まゆで 黄色や 茶色に かわって いきます。"
+ },
+ {
   "id": "sh-invertase",
   "name": "インベルターゼ",
   "reading": "いんべるたーぜ",
@@ -1267,5 +1357,635 @@
   ],
   "bee": "共通",
   "description": "はちみつを こす ための 目の こまかい 布です。とった みつを とおして、ろうの かけらなどを とりのぞきます。"
+ },
+ {
+  "id": "sh-diastase",
+  "name": "ジアスターゼ",
+  "reading": "じあすたーぜ",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-koso",
+   "sh-kanetsu"
+  ],
+  "bee": "共通",
+  "description": "はちみつに ふくまれる、でんぷんを 分ける 酵素です。熱に 弱く、加熱すると へるので、はちみつに どれだけ 熱が かかったかの めやすに 使われます。"
+ },
+ {
+  "id": "sh-hmf",
+  "name": "ヒドロキシメチルフルフラール",
+  "reading": "ひどろきしめちるふるふらーる",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-kanetsu",
+   "sh-diastase"
+  ],
+  "bee": "共通",
+  "description": "はちみつを 熱したり、長く おいたり すると ふえる 成分で、HMFと よばれます。量を はかると、はちみつの 新しさや 熱の かかりぐあいが わかります。"
+ },
+ {
+  "id": "sh-mijuku",
+  "name": "未熟蜜",
+  "reading": "みじゅくみつ",
+  "journey": "seihin",
+  "category": "花蜜から はちみつへ",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "seihin:noshuku",
+  "relatedTerms": [
+   "sh-jukusei",
+   "sh-hakko"
+  ],
+  "bee": "西洋",
+  "description": "水分が まだ 多く、蜜ぶたが かかる 前の 蜜です。とって しまうと 長く おいた ときに 発酵しやすいので、熟すまで 待ちます。"
+ },
+ {
+  "id": "sh-fugaimitsu",
+  "name": "封蓋蜜",
+  "reading": "ふうがいみつ",
+  "journey": "seihin",
+  "category": "花蜜から はちみつへ",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🍯",
+  "mapNode": "seihin:mitsubuta",
+  "relatedTerms": [
+   "sh-mitsubuta",
+   "sh-mijuku"
+  ],
+  "bee": "共通",
+  "description": "蜜ぶたが かかった 巣房の 蜜です。ミツバチが 水分を じゅうぶん とばしてから ふたを するので、熟した はちみつの しるしです。"
+ },
+ {
+  "id": "sh-suibunchi",
+  "name": "水分値",
+  "reading": "すいぶんち",
+  "journey": "seihin",
+  "category": "花蜜から はちみつへ",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "seihin:noshuku",
+  "relatedTerms": [
+   "sh-suibun",
+   "sh-todokei"
+  ],
+  "bee": "西洋",
+  "description": "はちみつに ふくまれる 水分の 割合です。少ないほど 発酵しにくく 長持ちします。糖度計で はかり、とった 蜜が 熟して いるかを たしかめます。"
+ },
+ {
+  "id": "sh-hakko",
+  "name": "発酵",
+  "reading": "はっこう",
+  "journey": "seihin",
+  "category": "花蜜から はちみつへ",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "seihin:noshuku",
+  "relatedTerms": [
+   "sh-kobo",
+   "sh-mijuku"
+  ],
+  "bee": "共通",
+  "description": "水分の 多い はちみつで、酵母が ふえて あわが 出たり、すっぱい においが したり する ことです。熟した 蜜を とり、密閉して おくと 起きにくく なります。"
+ },
+ {
+  "id": "sh-kobo",
+  "name": "耐糖性酵母",
+  "reading": "たいとうせいこうぼ",
+  "journey": "seihin",
+  "category": "花蜜から はちみつへ",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🦠",
+  "mapNode": "seihin:noshuku",
+  "relatedTerms": [
+   "sh-hakko",
+   "sh-suibunchi"
+  ],
+  "bee": "共通",
+  "description": "糖が とても 多い ところでも ふえる ことの できる 酵母です。はちみつの 水分が 多いと この 酵母が ふえて、発酵の もとに なります。"
+ },
+ {
+  "id": "sh-kyushitsu",
+  "name": "吸湿性",
+  "reading": "きゅうしつせい",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "💦",
+  "mapNode": "seihin:noshuku",
+  "relatedTerms": [
+   "sh-mippei",
+   "sh-suibun"
+  ],
+  "bee": "共通",
+  "description": "まわりの 空気から 水分を すいこむ 性質です。はちみつは この 性質が つよいので、ふたを あけたままに すると 水分が ふえて しまいます。"
+ },
+ {
+  "id": "sh-joshitsu",
+  "name": "除湿",
+  "reading": "じょしつ",
+  "journey": "seihin",
+  "category": "採蜜と 処理",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "seihin:noshuku",
+  "relatedTerms": [
+   "sh-suibunchi",
+   "sh-saimitsushitsu"
+  ],
+  "bee": "西洋",
+  "description": "部屋の 空気の しめりけを とる ことです。採蜜や びん詰めを する 部屋を 除湿すると、はちみつが 水分を すいにくく なります。"
+ },
+ {
+  "id": "sh-tanekessho",
+  "name": "種結晶",
+  "reading": "たねけっしょう",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-creamhoney",
+   "sh-kessho"
+  ],
+  "bee": "共通",
+  "description": "細かく そろった 結晶の はちみつを、もとに なる たねとして まぜる ことです。全体が 細かく 結晶して、なめらかな クリームはちみつに なります。"
+ },
+ {
+  "id": "sh-kessho-ondo",
+  "name": "結晶と温度",
+  "reading": "けっしょうとおんど",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-kessho",
+   "sh-yusen"
+  ],
+  "bee": "共通",
+  "description": "はちみつは すずしい ところで 結晶しやすく、あたためると また 液に もどります。結晶しても 中身は かわらないので、湯せんで ゆっくり とかせます。"
+ },
+ {
+  "id": "sh-kakku",
+  "name": "結晶の核",
+  "reading": "けっしょうのかく",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🔹",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-kessho",
+   "sh-tanekessho"
+  ],
+  "bee": "共通",
+  "description": "結晶が できはじめる もとに なる、花粉や 小さな 結晶の つぶです。核が 多い はちみつほど、早く 結晶が すすみます。"
+ },
+ {
+  "id": "sh-wariai",
+  "name": "糖の割合",
+  "reading": "とうのわりあい",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-budoto",
+   "sh-kato"
+  ],
+  "bee": "共通",
+  "description": "はちみつの ブドウ糖と 果糖の 割合です。ブドウ糖が 多い 蜜ほど 結晶しやすく、果糖が 多い 蜜は 液の まま のこりやすい 傾向が あります。"
+ },
+ {
+  "id": "sh-proline",
+  "name": "プロリン",
+  "reading": "ぷろりん",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🧬",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-koso",
+   "sh-kafunbunseki"
+  ],
+  "bee": "共通",
+  "description": "はちみつに ふくまれる アミノ酸の ひとつで、いちばん 多い アミノ酸です。ミツバチが 蜜を はちみつに かえる ときに 加わる ぶんが 多いと 考えられて います。"
+ },
+ {
+  "id": "sh-sando",
+  "name": "酸度",
+  "reading": "さんど",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🍋",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-gluconsan",
+   "sh-aji"
+  ],
+  "bee": "共通",
+  "description": "はちみつに ふくまれる 酸の 量です。はちみつは あまいですが、グルコン酸などを ふくむ 弱い 酸性で、味に すっきりした 感じを あたえます。"
+ },
+ {
+  "id": "sh-konosa",
+  "name": "色の濃さ",
+  "reading": "いろのこさ",
+  "journey": "seihin",
+  "category": "成分と 味",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🟤",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-iro",
+   "sh-mineral"
+  ],
+  "bee": "共通",
+  "description": "はちみつの 色の こさです。こい 色の 蜜ほど ミネラルが 多く、味や 香りも 強い 傾向が あります。うすい 色の 蜜は やさしい 味です。"
+ },
+ {
+  "id": "sh-iseika",
+  "name": "異性化液糖",
+  "reading": "いせいかえきとう",
+  "journey": "seihin",
+  "category": "瓶と 表示",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🌽",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-junsui",
+   "sh-label"
+  ],
+  "bee": "共通",
+  "description": "トウモロコシなどの でんぷんから 作る 液の 糖です。はちみつに まぜた ものを、はちみつとして 売る ことは できません。表示の 決まりで 区別されます。"
+ },
+ {
+  "id": "sh-dotai",
+  "name": "炭素同位体比",
+  "reading": "たんそどういたいひ",
+  "journey": "seihin",
+  "category": "瓶と 表示",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "seihin:seibun",
+  "relatedTerms": [
+   "sh-iseika",
+   "sh-junsui"
+  ],
+  "bee": "共通",
+  "description": "はちみつに サトウキビや トウモロコシの 糖が まざって いないかを 調べる 検査の ひとつです。植物の 種類で 炭素の つくりが 少し ちがう ことを 使います。"
+ },
+ {
+  "id": "sh-seichi",
+  "name": "静置",
+  "reading": "せいち",
+  "journey": "seihin",
+  "category": "採蜜と 処理",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "seihin:roka",
+  "relatedTerms": [
+   "sh-chinden",
+   "sh-roka"
+  ],
+  "bee": "西洋",
+  "description": "しぼった はちみつを タンクに 入れて、しばらく しずかに おいて おく ことです。あわや ろうの かけらが 上に うくので、とりのぞきやすく なります。"
+ },
+ {
+  "id": "sh-awatori",
+  "name": "泡取り",
+  "reading": "あわとり",
+  "journey": "seihin",
+  "category": "採蜜と 処理",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🥄",
+  "mapNode": "seihin:roka",
+  "relatedTerms": [
+   "sh-seichi",
+   "sh-chinden"
+  ],
+  "bee": "西洋",
+  "description": "静置して 上に うかんだ あわを すくいとる 作業です。あわを のこさずに びんに つめると、見た目も 舌ざわりも よく なります。"
+ },
+ {
+  "id": "sh-seimitsuroka",
+  "name": "精密ろ過",
+  "reading": "せいみつろか",
+  "journey": "seihin",
+  "category": "採蜜と 処理",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🧻",
+  "mapNode": "seihin:roka",
+  "relatedTerms": [
+   "sh-roka",
+   "sh-kafunbunseki"
+  ],
+  "bee": "共通",
+  "description": "とても 目の 細かい フィルターで はちみつを こす 方法です。すきとおった 蜜に なりますが、花粉まで とれて、花粉分析で 花の 種類が わかりにくく なる ことが あります。"
+ },
+ {
+  "id": "sh-juten",
+  "name": "充填",
+  "reading": "じゅうてん",
+  "journey": "seihin",
+  "category": "瓶と 表示",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🫗",
+  "mapNode": "seihin:bin",
+  "relatedTerms": [
+   "sh-binzume",
+   "sh-lot"
+  ],
+  "bee": "共通",
+  "description": "はちみつを びんや 容器に つめる 作業です。あわが 入らない ように ゆっくり 入れ、ごみが 入らない 清潔な 部屋で 行います。"
+ },
+ {
+  "id": "sh-lot",
+  "name": "ロット番号",
+  "reading": "ろっとばんごう",
+  "journey": "seihin",
+  "category": "瓶と 表示",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "seihin:bin",
+  "relatedTerms": [
+   "sh-label",
+   "sh-juten"
+  ],
+  "bee": "共通",
+  "description": "同じ ときに つめた 品物に つける 番号です。番号を 見れば、いつ どの 蜜を つめたかが わかるので、何か あった ときに たどれます。"
+ },
+ {
+  "id": "sh-hozonhoho",
+  "name": "保存方法の表示",
+  "reading": "ほぞんほうほうのひょうじ",
+  "journey": "seihin",
+  "category": "瓶と 表示",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "seihin:bin",
+  "relatedTerms": [
+   "sh-label",
+   "sh-hozon"
+  ],
+  "bee": "共通",
+  "description": "ラベルに 書く、保存の しかたの 文です。「直射日光を さけて 常温で 保存して ください」などと 書きます。"
+ },
+ {
+  "id": "sh-saimitsushitsu",
+  "name": "採蜜室",
+  "reading": "さいみつしつ",
+  "journey": "seihin",
+  "category": "採蜜と 処理",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "seihin:saimitsu",
+  "relatedTerms": [
+   "sh-bunri",
+   "sh-joshitsu"
+  ],
+  "bee": "西洋",
+  "description": "はちみつを 分離したり、びんに つめたり する 部屋です。食べものを あつかうので 清潔に し、ハチや ほこりが 入らない ように します。"
+ },
+ {
+  "id": "sh-kamitsuseibun",
+  "name": "花蜜の成分",
+  "reading": "かみつのせいぶん",
+  "journey": "seihin",
+  "category": "花蜜から はちみつへ",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "seihin:kamitsu",
+  "relatedTerms": [
+   "sh-shoto",
+   "sh-invertase"
+  ],
+  "bee": "共通",
+  "description": "花蜜は おもに 水と 糖で できて います。花の 種類で 糖の 量や 種類が ちがい、ショ糖は ミツバチの 酵素で ブドウ糖と 果糖に 分かれます。"
+ },
+ {
+  "id": "sh-yuten",
+  "name": "ろうの融点",
+  "reading": "ろうのゆうてん",
+  "journey": "seihin",
+  "category": "蜜蝋",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "seihin:mitsuro",
+  "relatedTerms": [
+   "sh-mitsuro",
+   "sh-yusen"
+  ],
+  "bee": "共通",
+  "description": "蜜蝋が とけて 液に なる 温度です。およそ 62〜65℃で とけるので、湯せんで ゆっくり とかします。直接 火に かけないのが 安全です。"
+ },
+ {
+  "id": "sh-bloom",
+  "name": "ブルーム",
+  "reading": "ぶるーむ",
+  "journey": "seihin",
+  "category": "蜜蝋",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "seihin:mitsuro",
+  "relatedTerms": [
+   "sh-mitsuro",
+   "sh-rosoku"
+  ],
+  "bee": "共通",
+  "description": "蜜蝋や 蜜蝋の ろうそくの 表面に 出る、白い 粉の ような ものです。蜜蝋の 成分が 外に 出て きた もので、いたんだ わけでは ありません。"
+ },
+ {
+  "id": "sh-susogenryo",
+  "name": "巣礎の原料",
+  "reading": "すそのげんりょう",
+  "journey": "seihin",
+  "category": "蜜蝋",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "⬡",
+  "mapNode": "seihin:mitsuro",
+  "relatedTerms": [
+   "sh-seisei",
+   "sh-mitsuro"
+  ],
+  "bee": "西洋",
+  "description": "巣礎は、精製した 蜜蝋を うすい 板に して、六角形の もようを つけて 作ります。ハチは この 上に ろうを 足して 巣を 作ります。"
+ },
+ {
+  "id": "sh-shin",
+  "name": "ろうそくの芯",
+  "reading": "ろうそくのしん",
+  "journey": "seihin",
+  "category": "蜜蝋",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🕯️",
+  "mapNode": "seihin:mitsuro",
+  "relatedTerms": [
+   "sh-rosoku",
+   "sh-mitsuro"
+  ],
+  "bee": "共通",
+  "description": "ろうそくの まん中に ある、火を ともす 糸です。ろうそくの 太さに 合った 芯を えらぶと、すすが 出にくく、きれいに もえます。"
+ },
+ {
+  "id": "sh-sainyu",
+  "name": "採乳",
+  "reading": "さいにゅう",
+  "journey": "seihin",
+  "category": "ローヤルゼリーと プロポリス",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🥛",
+  "mapNode": "seihin:royal",
+  "relatedTerms": [
+   "sh-royaljelly",
+   "sh-ounyu"
+  ],
+  "bee": "西洋",
+  "description": "王台に たまった ローヤルゼリーを とりだす 作業です。人工の 王台に 幼虫を うつし、数日 たってから へらで すくいとります。"
+ },
+ {
+  "id": "sh-rjhozon",
+  "name": "ローヤルゼリーの保存",
+  "reading": "ろーやるぜりーのほぞん",
+  "journey": "seihin",
+  "category": "ローヤルゼリーと プロポリス",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "seihin:royal",
+  "relatedTerms": [
+   "sh-namaroyal",
+   "sh-royaljelly"
+  ],
+  "bee": "共通",
+  "description": "ローヤルゼリーは 熱や 空気で いたみやすいので、冷凍や 冷蔵で 保存します。とった あと すぐに 冷やす ことが 大切です。"
+ },
+ {
+  "id": "sh-chushutsu",
+  "name": "プロポリスの抽出",
+  "reading": "ぷろぽりすのちゅうしゅつ",
+  "journey": "seihin",
+  "category": "ローヤルゼリーと プロポリス",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "seihin:propolis",
+  "relatedTerms": [
+   "sh-propolis",
+   "sh-jushi"
+  ],
+  "bee": "共通",
+  "description": "プロポリスを アルコールなどに つけて、とける 成分を とりだす ことです。プロポリスは そのままでは かたいので、とかして 使いやすく します。"
+ },
+ {
+  "id": "sh-kafunkanso",
+  "name": "花粉の乾燥",
+  "reading": "かふんのかんそう",
+  "journey": "seihin",
+  "category": "ローヤルゼリーと プロポリス",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "🌞",
+  "mapNode": "seihin:propolis",
+  "relatedTerms": [
+   "sh-kafunka",
+   "sh-kafunsaishu"
+  ],
+  "bee": "共通",
+  "description": "あつめた 花粉荷を かわかして、水分を へらす ことです。水分が 多いと いたみやすいので、かわかしてから 保存します。"
+ },
+ {
+  "id": "sh-chozo",
+  "name": "巣房への貯蔵",
+  "reading": "すぼうへのちょぞう",
+  "journey": "seihin",
+  "category": "花蜜から はちみつへ",
+  "difficulty": 3,
+  "field": "生産物",
+  "type": "concept",
+  "emoji": "⬡",
+  "mapNode": "seihin:ukewatashi",
+  "relatedTerms": [
+   "sh-kuchiutsushi",
+   "sh-noshuku"
+  ],
+  "bee": "共通",
+  "description": "受けとった 蜜を 巣房に ためる ことです。ハチは はねで 風を おくって 水分を とばし、こく なったら 蜜ぶたを かけます。"
  }
 ]

@@ -1,0 +1,1982 @@
+[
+ {
+  "id": "sd-sokudo",
+  "name": "速度",
+  "reading": "そくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "sokudo:hotei",
+  "field": "速度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-houteisokudo",
+   "sd-anzennasokudo"
+  ],
+  "description": "車が どれだけ 速く 走っているかを 表す ことばで、1時間に 進む 長さ(km/h)で 表します。速く なるほど 止まるまでに 長い 道のりが 要ります。"
+ },
+ {
+  "id": "sd-houteisokudo",
+  "name": "法定速度",
+  "reading": "ほうていそくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "sokudo:hotei",
+  "field": "速度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-ippandouronohouteisoku",
+   "sd-houteisokudotosaikouso"
+  ],
+  "description": "標識などで 速さが 決められていない 道で、法律が 決めている いちばん 高い 速さです。車の 種類や 道路の 種類で ちがいます。"
+ },
+ {
+  "id": "sd-jyokou",
+  "name": "徐行",
+  "reading": "じょこう",
+  "journey": "sokudo",
+  "category": "徐行",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "sokudo:joko",
+  "field": "速度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-jyokoutoichijiteishino",
+   "sd-jyokousubekibasho"
+  ],
+  "description": "すぐに 止まれる くらいの ゆっくりした 速さで 進む ことです。見通しの きかない 交差点や 曲がり角などで 徐行します。"
+ },
+ {
+  "id": "sd-oikoshi",
+  "name": "追い越し",
+  "reading": "おいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-oinuki",
+   "sd-oikoshitooinukinochiga"
+  ],
+  "description": "前の 車に 追いついた とき、進路を 変えて その 横を 通り、前に 出る ことです。追い越しが 禁止の 場所も あります。"
+ },
+ {
+  "id": "sd-oinuki",
+  "name": "追い抜き",
+  "reading": "おいぬき",
+  "journey": "sokudo",
+  "category": "追い抜き",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "sokudo:oinuki",
+  "field": "追い越し",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-oikoshi",
+   "sd-oikoshitooinukinochiga"
+  ],
+  "description": "進路を 変えずに、となりの 車線などを 走ったまま 前の 車の 前に 出る ことです。追い越しとは ちがう ことばです。"
+ },
+ {
+  "id": "sd-kinkyuujidousha",
+  "name": "緊急自動車",
+  "reading": "きんきゅうじどうしゃ",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "sokudo:kinkyu",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-sairen",
+   "sd-kousatenfukinnokinkyuu"
+  ],
+  "description": "救急車・消防車・パトカーなど、急ぎの 仕事で 走る 車です。サイレンを 鳴らして 近づいて きたら、ほかの 車は 道を ゆずります。"
+ },
+ {
+  "id": "sd-kyuukyuusha",
+  "name": "救急車",
+  "reading": "きゅうきゅうしゃ",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "sokudo:kinkyu",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-kinkyuujidousha",
+   "sd-sairen"
+  ],
+  "description": "病気の 人や けが人を 病院へ 急いで 運ぶ 車です。サイレンを 鳴らして 走っている ときは 緊急自動車なので、道を ゆずります。"
+ },
+ {
+  "id": "sd-shoubousha",
+  "name": "消防車",
+  "reading": "しょうぼうしゃ",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚒",
+  "mapNode": "sokudo:kinkyu",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-kinkyuujidousha",
+   "sd-sairen"
+  ],
+  "description": "火事を 消しに 急いで 向かう 車です。サイレンを 鳴らして 走っている ときは 緊急自動車なので、道を ゆずります。"
+ },
+ {
+  "id": "sd-patoka",
+  "name": "パトカー",
+  "reading": "ぱとかー",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚓",
+  "mapNode": "sokudo:kinkyu",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-kinkyuujidousha",
+   "sd-sekishokunokeikoutou"
+  ],
+  "description": "警察の 車です。サイレンを 鳴らし 赤い 灯火を つけて 走っている ときは 緊急自動車なので、ほかの 車は 道を ゆずります。"
+ },
+ {
+  "id": "sd-sairen",
+  "name": "サイレン",
+  "reading": "さいれん",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "sokudo:kinkyu",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-sekishokunokeikoutou",
+   "sd-kinkyuujidousha"
+  ],
+  "description": "緊急自動車が 急いで いる ことを 知らせる 音です。緊急の 用事で 走る ときは サイレンを 鳴らし、赤色の 警光灯を つけます。"
+ },
+ {
+  "id": "sd-sekishokunokeikoutou",
+  "name": "赤色の警光灯",
+  "reading": "せきしょくのけいこうとう",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "sokudo:kinkyu",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-sairen",
+   "sd-patoka"
+  ],
+  "description": "緊急自動車の 屋根などに 付いている 赤く 光る 灯火です。サイレンと いっしょに 使って、緊急の 用事で 走っている ことを 知らせます。"
+ },
+ {
+  "id": "sd-rosenbasu",
+  "name": "路線バス",
+  "reading": "ろせんばす",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "sokudo:rosen",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-rosenbasunohasshin",
+   "sd-kyuuburekidesakerutoki"
+  ],
+  "description": "決まった 道を 決まった 時間に 走る バスです。停留所から 出る ために 合図を したら、後ろの 車は じゃまを しないように します。"
+ },
+ {
+  "id": "sd-sakamichi",
+  "name": "坂道",
+  "reading": "さかみち",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-noborinokurumagayuusen",
+   "sd-kudarizakanokasoku"
+  ],
+  "description": "上り坂と 下り坂の ある 道です。上り坂では 発進が 難しく、下り坂では 速さが 出やすいので、それぞれ 気を つけて 走ります。"
+ },
+ {
+  "id": "sd-supidonodashisugi",
+  "name": "スピードの出しすぎ",
+  "reading": "すぴーどのだしすぎ",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-anzennasokudo",
+   "sd-shougekiryoku"
+  ],
+  "description": "道路や まわりの ようすに 合わない 速さで 走る ことです。止まるまでの 道のりが 長くなり、カーブで 外に ふくらみやすく なります。"
+ },
+ {
+  "id": "sd-yuzuriai",
+  "name": "ゆずり合い",
+  "reading": "ゆずりあい",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-noborinokurumagayuusen",
+   "sd-semaimichinoikichigai"
+  ],
+  "description": "せまい 道や 坂道で、おたがいに 道を ゆずって 安全に 通る ことです。決まりを 守る うえに、思いやりの 気持ちで 運転します。"
+ },
+ {
+  "id": "sd-shinrohenkou",
+  "name": "進路変更",
+  "reading": "しんろへんこう",
+  "journey": "sokudo",
+  "category": "進路変更",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "sokudo:shasen",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-kouzokushagakyuubureki",
+   "sd-miratomokushi"
+  ],
+  "description": "走る 車線や 道路の 位置を 横に 変える ことです。変える 3秒前に 合図を 出し、後ろや 横の 安全を 確かめてから 変えます。"
+ },
+ {
+  "id": "sd-seikatsudouro",
+  "name": "生活道路",
+  "reading": "せいかつどうろ",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏘️",
+  "mapNode": "sokudo:seikatsu",
+  "field": "速度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-seikatsudouronohouteis",
+   "sd-chuuousennonaidouro"
+  ],
+  "description": "家の 近くの せまい 道のように、中央線などの ない 道路です。歩く 人や 自転車が 多いので、ゆっくり 走ります。"
+ },
+ {
+  "id": "sd-anzennasokudo",
+  "name": "安全な速度",
+  "reading": "あんぜんなそくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "sokudo:shitei",
+  "field": "速度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-houteisokudo",
+   "sd-supidonodashisugi"
+  ],
+  "description": "決められた 速さの 中でも、道路の ようす・天気・見通しに 合わせた 安全な 速さで 走ります。雨や 夜は とくに 速度を 落とします。"
+ },
+ {
+  "id": "sd-taikousha",
+  "name": "対向車",
+  "reading": "たいこうしゃ",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚙",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-shougaibutsunoarugawag",
+   "sd-taikoushawosamatageruo"
+  ],
+  "description": "向こう側から 来る 車の ことです。追い越しや 右折の ときは、対向車の じゃまに ならないか 確かめます。"
+ },
+ {
+  "id": "sd-kouzokusha",
+  "name": "後続車",
+  "reading": "こうぞくしゃ",
+  "journey": "sokudo",
+  "category": "進路変更",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚘",
+  "mapNode": "sokudo:shasen",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sd-kouzokushanosokudowomi",
+   "sd-kouzokushagakyuubureki"
+  ],
+  "description": "自分の 後ろから 来る 車の ことです。進路を 変える ときは、ミラーなどで 後続車の 速さや 距離を 確かめます。"
+ },
+ {
+  "id": "sd-ippandouronohouteisoku",
+  "name": "一般道路の法定速度",
+  "reading": "いっぱんどうろのほうていそくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "sokudo:hotei",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-seikatsudouronohouteis",
+   "sd-gentsukinohouteisokudo"
+  ],
+  "description": "自動車の 一般道路での 法定速度は、中央線や 車両通行帯の ある 道路などでは 60km/hです。それ以外の 一般道路は 30km/hです。"
+ },
+ {
+  "id": "sd-gentsukinohouteisokudo",
+  "name": "原付の法定速度",
+  "reading": "げんつきのほうていそくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "sokudo:hotei",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-gentsukihahyoushikinos",
+   "sd-ippandouronohouteisoku"
+  ],
+  "description": "一般の 原付の 法定速度は 30km/hです。標識などで 決められていなければ、30km/hを こえて 走っては いけません。"
+ },
+ {
+  "id": "sd-seikatsudouronohouteis",
+  "name": "生活道路の法定速度",
+  "reading": "せいかつどうろのほうていそくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏘️",
+  "mapNode": "sokudo:seikatsu",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-chuuousennonaidouro",
+   "sd-seikatsudouro"
+  ],
+  "description": "2026年9月1日から、中央線や 車両通行帯の ない 一般道路などの 自動車の 法定速度は 30km/hです。前は 60km/hでした。"
+ },
+ {
+  "id": "sd-chuuousennonaidouro",
+  "name": "中央線のない道路",
+  "reading": "ちゅうおうせんのないどうろ",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "sokudo:seikatsu",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-seikatsudouronohouteis",
+   "sd-houshikinosokudogasaki"
+  ],
+  "description": "中央線や 車両通行帯が なく、柵などで 上りと 下りが 分けられていない 一般道路は、法定速度が 30km/hです。標識で 速さが 決められていれば その速さです。"
+ },
+ {
+  "id": "sd-houshikinosokudogasaki",
+  "name": "標識の速度が先",
+  "reading": "ひょうしきのそくどがさき",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪧",
+  "mapNode": "sokudo:shitei",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-shiteisokudo",
+   "sd-houteisokudotosaikouso"
+  ],
+  "description": "標識や 標示で 最高速度が 決められている 道では、法定速度ではなく その 速さを 守ります。標識が なければ 法定速度です。"
+ },
+ {
+  "id": "sd-jyokousubekibasho",
+  "name": "徐行すべき場所",
+  "reading": "じょこうすべきばしょ",
+  "journey": "sokudo",
+  "category": "徐行",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "sokudo:joko",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-sayuunomitooshinokikan",
+   "sd-douronomagarikadofukin"
+  ],
+  "description": "徐行の 標識の ある ところ・左右の 見通しの きかない 交差点・道路の 曲がり角付近・上り坂の 頂上付近・こう配の 急な 下り坂では 徐行します。"
+ },
+ {
+  "id": "sd-sayuunomitooshinokikan",
+  "name": "左右の見通しのきかない交差点",
+  "reading": "さゆうのみとおしのきかないこうさてん",
+  "journey": "sokudo",
+  "category": "徐行",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "sokudo:joko",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-jyokousubekibasho",
+   "sd-yuusendouronomitooshin"
+  ],
+  "description": "建物などで 左右が よく 見えない 交差点は、横から 来る 車や 人が 見えないので 徐行して 入ります。信号の ある ときなどは 別です。"
+ },
+ {
+  "id": "sd-douronomagarikadofukin",
+  "name": "道路の曲がり角付近",
+  "reading": "どうろのまがりかどふきん",
+  "journey": "sokudo",
+  "category": "徐行",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "sokudo:joko",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-jyokousubekibasho",
+   "sd-magarikadofukinnooikos"
+  ],
+  "description": "道路の 曲がり角の 近くは 先が 見えにくいので、徐行する 場所です。追い越しも 禁止されています。"
+ },
+ {
+  "id": "sd-noborizakanochoujyoufu",
+  "name": "上り坂の頂上付近",
+  "reading": "のぼりざかのちょうじょうふきん",
+  "journey": "sokudo",
+  "category": "徐行",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "sokudo:joko",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-jyokousubekibasho",
+   "sd-noborizakanochoujyoufub"
+  ],
+  "description": "上り坂の いちばん 上の 近くは 向こう側が 見えないので、徐行する 場所です。追い越しも 禁止されています。"
+ },
+ {
+  "id": "sd-koubainokyuunakudariza",
+  "name": "こう配の急な下り坂",
+  "reading": "こうばいのきゅうなくだりざか",
+  "journey": "sokudo",
+  "category": "徐行",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "sokudo:joko",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-jyokousubekibasho",
+   "sd-koubainokyuunakudarizab"
+  ],
+  "description": "こう配の 急な 下り坂は 速さが 出やすく 止まりにくいので、徐行する 場所です。追い越しも 禁止されています。"
+ },
+ {
+  "id": "sd-migigawakaraoikosu",
+  "name": "右側から追い越す",
+  "reading": "みぎがわからおいこす",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-usetsusurukurumanohida",
+   "sd-oikoshinoaizu"
+  ],
+  "description": "前の 車を 追い越す ときは、その 車の 右側を 通るのが きほんです。"
+ },
+ {
+  "id": "sd-usetsusurukurumanohida",
+  "name": "右折する車の左から追い越す",
+  "reading": "うせつするくるまのひだりからおいこす",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-migigawakaraoikosu",
+   "sd-maenokurumagamiginishi"
+  ],
+  "description": "前の 車が 右折の ために 道路の 中央(一方通行なら 右はし)に 寄って 走っている ときは、その 車の 左側を 通って 追い越します。"
+ },
+ {
+  "id": "sd-romendenshahahidarikar",
+  "name": "路面電車は左から追い越す",
+  "reading": "ろめんでんしゃはひだりからおいこす",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚋",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-migigawakaraoikosu",
+   "sd-oikoshi"
+  ],
+  "description": "路面電車を 追い越す ときは、左側を 通ります。ただし、線路が 道路の 左はしに 寄って ある ときは 右側を 通ります。"
+ },
+ {
+  "id": "sd-oikoshikinshinobasho",
+  "name": "追い越し禁止の場所",
+  "reading": "おいこしきんしのばしょ",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-kousatentosonotemaesan",
+   "sd-tonnerunooikoshi"
+  ],
+  "description": "標識で 禁止された ところ・曲がり角付近・上り坂の 頂上付近・急な 下り坂・トンネル・交差点や 踏切や 横断歩道などと その 手前 30mでは 追い越しを しません。"
+ },
+ {
+  "id": "sd-kousatentosonotemaesan",
+  "name": "交差点とその手前30m",
+  "reading": "こうさてんとそのてまえさんじゅうめーとる",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-yuusendouronokousatenn",
+   "sd-kousatennotemaenooinuk"
+  ],
+  "description": "交差点と その 手前 30m以内では 追い越しを しては いけません。ただし、優先道路を 通っている ときは 別です。"
+ },
+ {
+  "id": "sd-fumikiritosonotemaesan",
+  "name": "踏切とその手前30m",
+  "reading": "ふみきりとそのてまえさんじゅうめーとる",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚃",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-oikoshikinshinobasho",
+   "sd-kousatentosonotemaesan"
+  ],
+  "description": "踏切と その 手前 30m以内では 追い越しを しては いけません。踏切では 一時停止する 車が あるからです。"
+ },
+ {
+  "id": "sd-oudanhodoutosonotemaes",
+  "name": "横断歩道とその手前30m",
+  "reading": "おうだんほどうとそのてまえさんじゅうめーとる",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦓",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-oudanhodounotemaenooin",
+   "sd-jitenshaoudantaitosono"
+  ],
+  "description": "横断歩道と その 手前 30m以内では 追い越しを しては いけません。渡る 人の ために 止まる 車が あるからです。"
+ },
+ {
+  "id": "sd-tonnerunooikoshi",
+  "name": "トンネルの追い越し",
+  "reading": "とんねるのおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕳️",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-sharyoutsuukoutainoaru",
+   "sd-oikoshikinshinobasho"
+  ],
+  "description": "車両通行帯の ない トンネルでは 追い越しを しては いけません。トンネルの 中は せまく 見通しが 悪いからです。"
+ },
+ {
+  "id": "sd-nijyuuoikoshi",
+  "name": "二重追い越し",
+  "reading": "にじゅうおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏭️",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-oikoshi",
+   "sd-oikoshinomaenoanzenkak"
+  ],
+  "description": "前の 車が ほかの 自動車を 追い越そうと している ときに、その 車を 追い越す ことです。してはいけません。"
+ },
+ {
+  "id": "sd-oikosarerutoki",
+  "name": "追い越されるとき",
+  "reading": "おいこされるとき",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-oikoshi",
+   "sd-jyuubunnakyoriwotottem"
+  ],
+  "description": "ほかの 車に 追い越される ときは、追い越しが 終わるまで 速度を 上げては いけません。追い越す 余地が なければ、できるだけ 左に 寄って ゆずります。"
+ },
+ {
+  "id": "sd-kousatenfukinnokinkyuu",
+  "name": "交差点付近の緊急自動車",
+  "reading": "こうさてんふきんのきんきゅうじどうしゃ",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "sokudo:kinkyu",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-kousatenfukinigainokin",
+   "sd-ippoutsuukoudemiginiyo"
+  ],
+  "description": "交差点や その 近くで 緊急自動車が 近づいて きたら、交差点を さけて、道路の 左に 寄って 一時停止します。"
+ },
+ {
+  "id": "sd-kousatenfukinigainokin",
+  "name": "交差点付近以外の緊急自動車",
+  "reading": "こうさてんふきんいがいのきんきゅうじどうしゃ",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "sokudo:kinkyu",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-kousatenfukinnokinkyuu",
+   "sd-kinkyuujidousha"
+  ],
+  "description": "交差点の 近く 以外で 緊急自動車が 近づいて きたら、道路の 左に 寄って 進路を ゆずります。止まらなくても よいです。"
+ },
+ {
+  "id": "sd-rosenbasunohasshin",
+  "name": "路線バスの発進",
+  "reading": "ろせんばすのはっしん",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "sokudo:rosen",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-rosenbasu",
+   "sd-kyuuburekidesakerutoki"
+  ],
+  "description": "停留所で 止まっていた 路線バスが 出る ために 合図を したら、後ろの 車は バスの 進路変更を じゃましては いけません。"
+ },
+ {
+  "id": "sd-noborinokurumagayuusen",
+  "name": "上りの車が優先",
+  "reading": "のぼりのくるまがゆうせん",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-taihijyogaarutoki",
+   "sd-sakamichinohasshin"
+  ],
+  "description": "坂道で 行き違う ときは、上り坂での 発進が 難しいので、下りの 車が 上りの 車に 道を ゆずります。"
+ },
+ {
+  "id": "sd-shougaibutsunoarugawag",
+  "name": "障害物のある側がゆずる",
+  "reading": "しょうがいぶつのあるがわがゆずる",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-taikousha",
+   "sd-semaimichinoikichigai"
+  ],
+  "description": "自分の 進む 前に 障害物が ある ときは、あらかじめ 一時停止か 減速を して、向こうから 来る 車に 道を ゆずります。"
+ },
+ {
+  "id": "sd-kouzokushagakyuubureki",
+  "name": "後続車が急ブレーキになる進路変更",
+  "reading": "こうぞくしゃがきゅうぶれーきになるしんろへんこう",
+  "journey": "sokudo",
+  "category": "進路変更",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "sokudo:shasen",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-shinrohenkou",
+   "sd-kouzokushanosokudowomi"
+  ],
+  "description": "進路を 変えると 後ろから 来る 車が 急ブレーキや 急ハンドルを しなければ ならない ときは、進路を 変えては いけません。"
+ },
+ {
+  "id": "sd-enshinryoku",
+  "name": "遠心力",
+  "reading": "えんしんりょく",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-enshinryokuhasokudonon",
+   "sd-kabunohankeitoenshinry"
+  ],
+  "description": "カーブを 曲がる とき、車を 外側へ 押し出そうと する 力です。速いほど 大きく なるので、カーブの 手前で 速度を 落とします。"
+ },
+ {
+  "id": "sd-shougekiryoku",
+  "name": "衝撃力",
+  "reading": "しょうげきりょく",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💢",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-shougekiryokuhasokudon",
+   "sd-rokujyukkironoshougeki"
+  ],
+  "description": "車が ものに ぶつかった ときに 受ける 力です。速度が 速いほど、車が 重いほど 大きく なります。"
+ },
+ {
+  "id": "sd-kansei",
+  "name": "慣性",
+  "reading": "かんせい",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-masatsuryoku",
+   "sd-enshinryoku"
+  ],
+  "description": "動いている ものが そのまま 動き続けようと する 性質です。アクセルを はなしても 車は すぐには 止まらないので、早めに ブレーキを かけます。"
+ },
+ {
+  "id": "sd-oikoshinoaizu",
+  "name": "追い越しの合図",
+  "reading": "おいこしのあいず",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↗️",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sd-hidarinoaizuwodashitem",
+   "sd-oikoshinomaenoanzenkak"
+  ],
+  "description": "追い越す ときは 右に 進路を 変える 3秒前に 右の 合図を 出します。前に 出て もどる ときも、左の 合図を 出してから もどります。"
+ },
+ {
+  "id": "sd-jyokoutoichijiteishino",
+  "name": "徐行と一時停止のちがい",
+  "reading": "じょこうといちじていしのちがい",
+  "journey": "sokudo",
+  "category": "徐行",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "sokudo:joko",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-jyokou",
+   "sd-jyokousubekibasho"
+  ],
+  "description": "徐行は すぐ 止まれる 速さで 進み続ける こと、一時停止は 車輪を いったん 完全に 止める ことです。⚠️ 徐行の 場所で 止まらなくても 違反では ありません。"
+ },
+ {
+  "id": "sd-yuusendouronomitooshin",
+  "name": "優先道路の見通しの悪い交差点",
+  "reading": "ゆうせんどうろのみとおしのわるいこうさてん",
+  "journey": "sokudo",
+  "category": "徐行",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪧",
+  "mapNode": "sokudo:joko",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-sayuunomitooshinokikan",
+   "sd-shingounoarumitooshino"
+  ],
+  "description": "左右の 見通しの きかない 交差点でも、優先道路を 通っている ときは 徐行しなくても よいです。⚠️ 安全に 気を つけて 走るのは 同じです。"
+ },
+ {
+  "id": "sd-shingounoarumitooshino",
+  "name": "信号のある見通しの悪い交差点",
+  "reading": "しんごうのあるみとおしのわるいこうさてん",
+  "journey": "sokudo",
+  "category": "徐行",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "sokudo:joko",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-yuusendouronomitooshin",
+   "sd-sayuunomitooshinokikan"
+  ],
+  "description": "左右の 見通しの きかない 交差点でも、信号などで 交通整理が 行われている ときは 徐行しなくても よいです。⚠️ 信号が ない ときは 徐行します。"
+ },
+ {
+  "id": "sd-noborizakanochoujyoufub",
+  "name": "上り坂の頂上付近の追い越し",
+  "reading": "のぼりざかのちょうじょうふきんのおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-noborizakanochoujyoufu",
+   "sd-kyuunanoborizakanooiko"
+  ],
+  "description": "上り坂の 頂上付近では 追い越しを しては いけません。⚠️ 徐行の 場所でも あり、両方 おぼえます。"
+ },
+ {
+  "id": "sd-koubainokyuunakudarizab",
+  "name": "こう配の急な下り坂の追い越し",
+  "reading": "こうばいのきゅうなくだりざかのおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-koubainokyuunakudariza",
+   "sd-kyuunanoborizakanooiko"
+  ],
+  "description": "こう配の 急な 下り坂では 追い越しを しては いけません。⚠️ 禁止なのは 急な「下り」坂です。"
+ },
+ {
+  "id": "sd-kyuunanoborizakanooiko",
+  "name": "急な上り坂の追い越し",
+  "reading": "きゅうなのぼりざかのおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-koubainokyuunakudarizab",
+   "sd-noborizakanochoujyoufub"
+  ],
+  "description": "⚠️ こう配の 急な 上り坂は、法律の 追い越し禁止の 場所に 入っていません(頂上付近は 禁止)。ひっかけに 出やすい ところです。"
+ },
+ {
+  "id": "sd-sharyoutsuukoutainoaru",
+  "name": "車両通行帯のあるトンネル",
+  "reading": "しゃりょうつうこうたいのあるとんねる",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕳️",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-tonnerunooikoshi",
+   "sd-oikoshikinshinobasho"
+  ],
+  "description": "車両通行帯の ある トンネルでは、追い越し禁止の 標識などが なければ 追い越しが できます。⚠️ 禁止なのは 車両通行帯の ない トンネルです。"
+ },
+ {
+  "id": "sd-yuusendouronokousatenn",
+  "name": "優先道路の交差点の追い越し",
+  "reading": "ゆうせんどうろのこうさてんのおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪧",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kousatentosonotemaesan",
+   "sd-kousatennotemaenooinuk"
+  ],
+  "description": "優先道路を 通っている ときは、その 道の 交差点と 手前 30m以内でも 追い越しが できます。⚠️ 横断歩道や 踏切の 手前 30mは 禁止の ままです。"
+ },
+ {
+  "id": "sd-oudanhodounotemaenooin",
+  "name": "横断歩道の手前の追い抜き",
+  "reading": "おうだんほどうのてまえのおいぬき",
+  "journey": "sokudo",
+  "category": "追い抜き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦓",
+  "mapNode": "sokudo:oinuki",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oudanhodoutosonotemaes",
+   "sd-kousatennotemaenooinuk"
+  ],
+  "description": "横断歩道や 自転車横断帯と その 手前 30m以内では、追い越しだけで なく 追い抜きも 禁止です。⚠️ 交差点の 手前とは ちがいます。"
+ },
+ {
+  "id": "sd-kousatennotemaenooinuk",
+  "name": "交差点の手前の追い抜き",
+  "reading": "こうさてんのてまえのおいぬき",
+  "journey": "sokudo",
+  "category": "追い抜き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "sokudo:oinuki",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oudanhodounotemaenooin",
+   "sd-kousatentosonotemaesan"
+  ],
+  "description": "交差点の 手前 30m以内で 禁止されているのは 追い越しです。⚠️ 進路を 変えない 追い抜きは 禁止されて いません。"
+ },
+ {
+  "id": "sd-jyuubunnakyoriwotottem",
+  "name": "十分な距離をとって戻る",
+  "reading": "じゅうぶんなきょりをとってもどる",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-hidarinoaizuwodashitem",
+   "sd-oikoshinomaenoanzenkak"
+  ],
+  "description": "追い越した あとは、追い越した 車との 間に じゅうぶんな 距離が とれてから もとの 車線に もどります。すぐ 前に 入ると 相手が 急ブレーキに なります。"
+ },
+ {
+  "id": "sd-saikousokudowokoeruoik",
+  "name": "最高速度をこえる追い越し",
+  "reading": "さいこうそくどをこえるおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oikoshinochuushi",
+   "sd-houteisokudotosaikouso"
+  ],
+  "description": "追い越しの ときでも、最高速度を こえては いけません。⚠️ こえないと 追い越せない ときは、追い越しを しません。"
+ },
+ {
+  "id": "sd-ippoutsuukoudemiginiyo",
+  "name": "一方通行で右に寄ってゆずる",
+  "reading": "いっぽうつうこうでみぎによってゆずる",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "sokudo:kinkyu",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kousatenfukinnokinkyuu",
+   "sd-kousatenfukinigainokin"
+  ],
+  "description": "一方通行の 道で 左に 寄ると かえって 緊急自動車の じゃまに なる ときは、右に 寄って ゆずります。⚠️ いつも 左とは 限りません。"
+ },
+ {
+  "id": "sd-kyuuburekidesakerutoki",
+  "name": "急ブレーキで避けるときの路線バス",
+  "reading": "きゅうぶれーきでさけるときのろせんばす",
+  "journey": "sokudo",
+  "category": "緊急自動車・バス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "sokudo:rosen",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-rosenbasunohasshin",
+   "sd-kyuuburekinokinshi"
+  ],
+  "description": "発進の 合図を した 路線バスでも、急ブレーキや 急ハンドルで よけなければ ならない ときは、ゆずらなくても よいです。⚠️ そうでなければ ゆずります。"
+ },
+ {
+  "id": "sd-taihijyogaarutoki",
+  "name": "待避所があるとき",
+  "reading": "たいひじょがあるとき",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-noborinokurumagayuusen",
+   "sd-gakegawanokuruma"
+  ],
+  "description": "坂道の 近くに 待避所が ある ときは、上りの 車でも 待避所に 入って 待ちます。⚠️「上りが 優先」の 例外です。"
+ },
+ {
+  "id": "sd-gakegawanokuruma",
+  "name": "がけ側の車",
+  "reading": "がけがわのくるま",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏔️",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-taihijyogaarutoki",
+   "sd-semaimichinoikichigai"
+  ],
+  "description": "片側が がけの 道で 安全に 行き違えない ときは、がけ側の 車が 一時停止して 道を ゆずります。"
+ },
+ {
+  "id": "sd-enshinryokuhasokudonon",
+  "name": "遠心力は速度の二乗",
+  "reading": "えんしんりょくはそくどのにじょう",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-enshinryoku",
+   "sd-shougekiryokuhasokudon"
+  ],
+  "description": "遠心力は 速度の 2乗に 比例して 大きく なります。⚠️ 速度が 2倍に なると 遠心力は 4倍です(2倍では ありません)。"
+ },
+ {
+  "id": "sd-shougekiryokuhasokudon",
+  "name": "衝撃力は速度の二乗",
+  "reading": "しょうげきりょくはそくどのにじょう",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💢",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-shougekiryoku",
+   "sd-enshinryokuhasokudonon"
+  ],
+  "description": "衝撃力も 速度の 2乗に 比例して 大きく なります。⚠️ 速度が 2倍なら 4倍です。制動距離も 同じく 速度の 2乗に 比例します。"
+ },
+ {
+  "id": "sd-kabunohankeitoenshinry",
+  "name": "カーブの半径と遠心力",
+  "reading": "かーぶのはんけいとえんしんりょく",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-enshinryoku",
+   "sd-kabunotemaedegensoku"
+  ],
+  "description": "遠心力は カーブの 半径が 小さい(急な カーブ)ほど 大きく なります。急な カーブほど 手前で しっかり 速度を 落とします。"
+ },
+ {
+  "id": "sd-rokujyukkironoshougeki",
+  "name": "60km/hの衝撃力",
+  "reading": "ろくじゅっきろのしょうげきりょく",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-shougekiryokuhasokudon",
+   "sd-shougekiryoku"
+  ],
+  "description": "60km/hで コンクリートの 壁に ぶつかると、約14mの 高さ(ビルの 5階 くらい)から 落ちたのと 同じ くらいの 衝撃を 受けます。"
+ },
+ {
+  "id": "sd-gentsukihahyoushikinos",
+  "name": "原付は標識の速度が上でも",
+  "reading": "げんつきはひょうしきのそくどがうえでも",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "sokudo:hotei",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-gentsukinohouteisokudo",
+   "sd-houshikinosokudogasaki"
+  ],
+  "description": "標識で 50km/hなどと 決められた 道でも、一般の 原付は 30km/hを こえては いけません。⚠️ 原付は 30km/h以下の 指定だけ 従います。"
+ },
+ {
+  "id": "sd-houteisokudotosaikouso",
+  "name": "法定速度と最高速度",
+  "reading": "ほうていそくどとさいこうそくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "sokudo:shitei",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-houteisokudo",
+   "sd-shiteisokudo"
+  ],
+  "description": "最高速度は こえては いけない 速さで、標識で 決められた 指定速度か、なければ 法定速度です。⚠️ 法定速度まで 出して よいのは 安全な ときだけです。"
+ },
+ {
+  "id": "sd-yokosuberi",
+  "name": "横すべり",
+  "reading": "よこすべり",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-enshinryoku",
+   "sd-kabunotemaedegensoku"
+  ],
+  "description": "カーブで 速すぎたり、ハンドルを 切りながら 急ブレーキを かけたり すると、車が 横に すべります。カーブの 前で 速度を 落とします。"
+ },
+ {
+  "id": "sd-oikoshitooinukinochiga",
+  "name": "追い越しと追い抜きのちがい",
+  "reading": "おいこしとおいぬきのちがい",
+  "journey": "sokudo",
+  "category": "追い抜き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "sokudo:oinuki",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oikoshi",
+   "sd-oinuki"
+  ],
+  "description": "進路を 変えて 前に 出るのが 追い越し、進路を 変えずに 前に 出るのが 追い抜きです。⚠️ 禁止の 場所が ちがうので 分けて おぼえます。"
+ },
+ {
+  "id": "sd-sakamichinohasshin",
+  "name": "坂道の発進",
+  "reading": "さかみちのはっしん",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-noborinokurumagayuusen",
+   "sd-noborizakanoshakan"
+  ],
+  "description": "上り坂で 発進する ときは、できるだけ ハンドブレーキを 使い、車が 後ろに 下がらないように します。"
+ },
+ {
+  "id": "sd-noborizakanoshakan",
+  "name": "上り坂の車間",
+  "reading": "のぼりざかのしゃかん",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-sakamichinohasshin",
+   "sd-noborinokurumagayuusen"
+  ],
+  "description": "上り坂で 前の 車に 続いて 止まる ときは、近づきすぎないように します。前の 車が 発進の ときに 後ろへ 下がって くる ことが あるからです。"
+ },
+ {
+  "id": "sd-kudarizakanokasoku",
+  "name": "下り坂の加速",
+  "reading": "くだりざかのかそく",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kudarizakanokabu",
+   "sd-koubainokyuunakudariza"
+  ],
+  "description": "下り坂は 加速が ついて 止まるまでの 道のりが 長く なります。低い ギアに して エンジンブレーキを 使い、速度を おさえます。"
+ },
+ {
+  "id": "sd-oikoshinomaenoanzenkak",
+  "name": "追い越しの前の安全確認",
+  "reading": "おいこしのまえのあんぜんかくにん",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oikoshinoaizu",
+   "sd-taikoushawosamatageruo"
+  ],
+  "description": "追い越す 前は、前の 車の 前の ようす・向こうから 来る 車・後ろから 来る 車を 確かめます。ひとつでも 危なければ 追い越しません。"
+ },
+ {
+  "id": "sd-hidarinoaizuwodashitem",
+  "name": "左の合図を出して戻る",
+  "reading": "ひだりのあいずをだしてもどる",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↙️",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-jyuubunnakyoriwotottem",
+   "sd-oikoshinoaizu"
+  ],
+  "description": "追い越した あと もとの 車線に もどる ときも、左の 合図を 出し、追い越した 車との 距離を 確かめてから もどります。"
+ },
+ {
+  "id": "sd-oikoshinochuushi",
+  "name": "追い越しの中止",
+  "reading": "おいこしのちゅうし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oikoshinomaenoanzenkak",
+   "sd-saikousokudowokoeruoik"
+  ],
+  "description": "追い越しの とちゅうで 対向車が 近づくなど 危ないと 思ったら、無理を せず 追い越しを やめます。"
+ },
+ {
+  "id": "sd-magarikadofukinnooikos",
+  "name": "曲がり角付近の追い越し",
+  "reading": "まがりかどふきんのおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-douronomagarikadofukin",
+   "sd-oikoshikinshinobasho"
+  ],
+  "description": "道路の 曲がり角付近では 追い越しを しては いけません。⚠️ 徐行の 場所でも あるので、両方 おぼえます。"
+ },
+ {
+  "id": "sd-jitenshaoudantaitosono",
+  "name": "自転車横断帯とその手前30m",
+  "reading": "じてんしゃおうだんたいとそのてまえさんじゅうめーとる",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oudanhodoutosonotemaes",
+   "sd-oudanhodounotemaenooin"
+  ],
+  "description": "自転車横断帯と その 手前 30m以内でも、横断歩道と 同じく 追い越しも 追い抜きも 禁止です。"
+ },
+ {
+  "id": "sd-hidarinotsuukoutaikara",
+  "name": "左の通行帯からの追い抜き",
+  "reading": "ひだりのつうこうたいからのおいぬき",
+  "journey": "sokudo",
+  "category": "追い抜き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "sokudo:oinuki",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oinuki",
+   "sd-oikoshitooinukinochiga"
+  ],
+  "description": "車線の ある 道で、進路を 変えずに 左の 車線を 走ったまま 右の 車線の 車の 前に 出るのは 追い抜きです。⚠️ 進路を 変えれば 追い越しに なります。"
+ },
+ {
+  "id": "sd-futsuujidounirinshanoh",
+  "name": "普通自動二輪車の法定速度",
+  "reading": "ふつうじどうにりんしゃのほうていそくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏍️",
+  "mapNode": "sokudo:hotei",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-ippandouronohouteisoku",
+   "sd-gentsukinohouteisokudo"
+  ],
+  "description": "普通自動二輪車は 自動車の なかまなので、一般道路の 法定速度は 自動車と 同じです(中央線の ある 道路などで 60km/h)。⚠️ 原付の 30km/hとは ちがいます。"
+ },
+ {
+  "id": "sd-kyuuhasshin",
+  "name": "急発進",
+  "reading": "きゅうはっしん",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "sokudo:shitei",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kyuuburekinokinshi",
+   "sd-kyuunashinrohenkou"
+  ],
+  "description": "急に 発進したり 急に 速度を 上げたり する ことです。まわりに 迷惑な 音を 出し、危ないので しません。"
+ },
+ {
+  "id": "sd-sokudoninareru",
+  "name": "速度に慣れる",
+  "reading": "そくどになれる",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "😮",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-anzennasokudo",
+   "sd-supidometa"
+  ],
+  "description": "速い 速度で 長く 走ったあとは、速さに 慣れて ゆっくりに 感じます。高速道路から 一般道路に 出た あとなどは スピードメーターで 確かめます。"
+ },
+ {
+  "id": "sd-houshikigaowattarahout",
+  "name": "標識が終わったら法定速度",
+  "reading": "ひょうしきがおわったらほうていそくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔚",
+  "mapNode": "sokudo:shitei",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-shiteisokudo",
+   "sd-houteisokudo"
+  ],
+  "description": "最高速度の 標識の 区間が 終わったら、そこからは 法定速度が 最高速度です。⚠️ 生活道路では 30km/hに なる ことが あります。"
+ },
+ {
+  "id": "sd-saikousokudoihan",
+  "name": "最高速度違反",
+  "reading": "さいこうそくどいはん",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📛",
+  "mapNode": "sokudo:shitei",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-houteisokudotosaikouso",
+   "sd-supidometa"
+  ],
+  "description": "最高速度を こえて 走る 違反です。こえた 速さが 大きいほど 重い 違反に なります。いつも メーターで 速さを 確かめます。"
+ },
+ {
+  "id": "sd-zonsanjyuu",
+  "name": "ゾーン30",
+  "reading": "ぞーんさんじゅう",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏘️",
+  "mapNode": "sokudo:seikatsu",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-zonsanjyuupurasu",
+   "sd-seikatsudouronohouteis"
+  ],
+  "description": "生活道路の ある 区域を 決めて、区域の 中の 最高速度を 30km/hに する とりくみです。区域の 入口に 標識などが あります。"
+ },
+ {
+  "id": "sd-zonsanjyuupurasu",
+  "name": "ゾーン30プラス",
+  "reading": "ぞーんさんじゅうぷらす",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏘️",
+  "mapNode": "sokudo:seikatsu",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-zonsanjyuu",
+   "sd-hanpu"
+  ],
+  "description": "ゾーン30の 速度の 決まりに、ハンプや 狭さくなど 道路の 形で 速度を 落とさせる 工夫を 組み合わせた とりくみです。"
+ },
+ {
+  "id": "sd-hanpu",
+  "name": "ハンプ",
+  "reading": "はんぷ",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〽️",
+  "mapNode": "sokudo:seikatsu",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-zonsanjyuupurasu",
+   "sd-kyousaku"
+  ],
+  "description": "道路の 一部を ゆるやかに もり上げた ところです。速く 走ると 大きく ゆれるので、自然に 速度を 落として 通ります。"
+ },
+ {
+  "id": "sd-kyousaku",
+  "name": "狭さく",
+  "reading": "きょうさく",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "sokudo:seikatsu",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-zonsanjyuupurasu",
+   "sd-hanpu"
+  ],
+  "description": "道路の 一部を わざと せまく した ところです。車が 速度を 落として 通るように する 工夫です。"
+ },
+ {
+  "id": "sd-miratomokushi",
+  "name": "ミラーと目視",
+  "reading": "みらーともくし",
+  "journey": "sokudo",
+  "category": "進路変更",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪞",
+  "mapNode": "sokudo:shasen",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kouzokushanosokudowomi",
+   "sd-shinrohenkou"
+  ],
+  "description": "進路を 変える 前は、ミラーで 後ろを 見るだけで なく、顔を 向けて 目で 直接 確かめます。ミラーに 映らない ところが あるからです。"
+ },
+ {
+  "id": "sd-kabunotemaedegensoku",
+  "name": "カーブの手前で減速",
+  "reading": "かーぶのてまえでげんそく",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kabunohankeitoenshinry",
+   "sd-kabunodeguchidekasoku"
+  ],
+  "description": "カーブに 入る 前の まっすぐな ところで 早めに ブレーキを かけ、じゅうぶん 速度を 落として おきます。⚠️ カーブの 中での 急ブレーキは 横すべりの もとです。"
+ },
+ {
+  "id": "sd-kabunodeguchidekasoku",
+  "name": "カーブの出口で加速",
+  "reading": "かーぶのでぐちでかそく",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kabunotemaedegensoku",
+   "sd-yokosuberi"
+  ],
+  "description": "カーブの 中では 速度を 保ち、出口に 近づいて 先が 見えてから ゆるやかに 加速します。"
+ },
+ {
+  "id": "sd-semaimichinoikichigai",
+  "name": "狭い道の行き違い",
+  "reading": "せまいみちのいきちがい",
+  "journey": "sokudo",
+  "category": "坂道・ゆずり合い",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "sokudo:saka",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-yuzuriai",
+   "sd-shougaibutsunoarugawag"
+  ],
+  "description": "せまい 道で 行き違う ときは、左に 寄って 相手との 安全な 間隔を とります。とれない ときは 止まって ゆずります。"
+ },
+ {
+  "id": "sd-kyuuburekinokinshi",
+  "name": "急ブレーキの禁止",
+  "reading": "きゅうぶれーきのきんし",
+  "journey": "sokudo",
+  "category": "進路変更",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "sokudo:shasen",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kouzokushagakyuubureki",
+   "sd-kyuuburekidesakerutoki"
+  ],
+  "description": "危険を 防ぐ ため やむを えない とき 以外は、急ブレーキを かけては いけません。後ろの 車が 止まりきれなく なるからです。"
+ },
+ {
+  "id": "sd-masatsuryoku",
+  "name": "摩擦力",
+  "reading": "まさつりょく",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kansei",
+   "sd-yokosuberi"
+  ],
+  "description": "タイヤと 路面の あいだで はたらく 力で、ブレーキで 止まる ときに 使われます。ぬれた 路面では 小さく なり、止まるまでの 道のりが 長く なります。"
+ },
+ {
+  "id": "sd-supidometa",
+  "name": "スピードメーター",
+  "reading": "すぴーどめーたー",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "sokudo:shitei",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-sokudoninareru",
+   "sd-saikousokudoihan"
+  ],
+  "description": "自分の 車の 速さを 表す メーターです。感じだけで 速さを 決めず、ときどき メーターを 見て 最高速度を こえていないか 確かめます。"
+ },
+ {
+  "id": "sd-maenokurumagamiginishi",
+  "name": "前の車が右に進路を変えようとしているとき",
+  "reading": "まえのくるまがみぎにしんろをかえようとしているとき",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-usetsusurukurumanohida",
+   "sd-nijyuuoikoshi"
+  ],
+  "description": "前の 車が 右折などの ために 右に 進路を 変えようと している ときは、追い越しを 始めては いけません。"
+ },
+ {
+  "id": "sd-taikoushawosamatageruo",
+  "name": "対向車を妨げる追い越し",
+  "reading": "たいこうしゃをさまたげるおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚙",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-taikousha",
+   "sd-hidarigawabubunnimodor"
+  ],
+  "description": "道路の 右側部分に 出て 追い越す とき、向こうから 来る 車の じゃまに なるなら、追い越しを 始めては いけません。"
+ },
+ {
+  "id": "sd-hidarigawabubunnimodor",
+  "name": "左側部分に戻れない追い越し",
+  "reading": "ひだりがわぶぶんにもどれないおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-taikoushawosamatageruo",
+   "sd-jyuubunnakyoriwotottem"
+  ],
+  "description": "前の 車の じゃまを しなければ 道路の 左側部分に もどれない ときは、追い越しを 始めては いけません。"
+ },
+ {
+  "id": "sd-kouzokushanosokudowomi",
+  "name": "後続車の速度を見る",
+  "reading": "こうぞくしゃのそくどをみる",
+  "journey": "sokudo",
+  "category": "進路変更",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚘",
+  "mapNode": "sokudo:shasen",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-miratomokushi",
+   "sd-kouzokushagakyuubureki"
+  ],
+  "description": "進路を 変える 前は、後ろから 来る 車が いるかだけで なく、その 速さと 距離も 見ます。速い 車が 近ければ 変えるのを 待ちます。"
+ },
+ {
+  "id": "sd-shasengaherutokinogour",
+  "name": "車線が減るときの合流",
+  "reading": "しゃせんがへるときのごうりゅう",
+  "journey": "sokudo",
+  "category": "進路変更",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔻",
+  "mapNode": "sokudo:shasen",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-yuzuriai",
+   "sd-shinrohenkou"
+  ],
+  "description": "車線が 減る ところでは、早めに 合図を 出して 入り、まわりの 車も 速度を 合わせて ゆずり合います。無理に 割り込みません。"
+ },
+ {
+  "id": "sd-shiteisokudo",
+  "name": "指定速度",
+  "reading": "していそくど",
+  "journey": "sokudo",
+  "category": "速さのきまり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪧",
+  "mapNode": "sokudo:shitei",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-houshikinosokudogasaki",
+   "sd-houshikigaowattarahout"
+  ],
+  "description": "標識や 標示で 決められた 最高速度です。法定速度より 低い ことも 高い ことも あり、指定が ある 区間では その 速さを 守ります。"
+ },
+ {
+  "id": "sd-kyuunashinrohenkou",
+  "name": "急な進路変更",
+  "reading": "きゅうなしんろへんこう",
+  "journey": "sokudo",
+  "category": "進路変更",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "sokudo:shasen",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kouzokushagakyuubureki",
+   "sd-kyuuhasshin"
+  ],
+  "description": "合図を 出さずに いきなり 進路を 変える ことです。後ろや 横の 車が よけきれなく なるので しません。"
+ },
+ {
+  "id": "sd-maenokurumagatomattara",
+  "name": "前の車が止まったら",
+  "reading": "まえのくるまがとまったら",
+  "journey": "sokudo",
+  "category": "追い抜き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦓",
+  "mapNode": "sokudo:kinshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oudanhodounotemaenooin",
+   "sd-oudanhodoutosonotemaes"
+  ],
+  "description": "横断歩道の 手前で 前の 車が 止まったら、渡る 人が いる かもしれません。横を 通って 前に 出る ときは、その前に 一時停止します。"
+ },
+ {
+  "id": "sd-oogatashanooikoshi",
+  "name": "大型車の追い越し",
+  "reading": "おおがたしゃのおいこし",
+  "journey": "sokudo",
+  "category": "追い越し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚛",
+  "mapNode": "sokudo:oikoshi",
+  "field": "追い越し",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-oikoshinomaenoanzenkak",
+   "sd-jyuubunnakyoriwotottem"
+  ],
+  "description": "大型車は 長いので、追い越すのに 時間と 長い 道のりが 要ります。前が よく 見えないので、とくに 慎重に 確かめます。"
+ },
+ {
+  "id": "sd-jisokutobyousoku",
+  "name": "時速と秒速",
+  "reading": "じそくとびょうそく",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-sokudo",
+   "sd-kansei"
+  ],
+  "description": "60km/hは 1秒間に 約17m 進む 速さです(60km ÷ 3600秒)。よそ見を した 1秒の あいだにも 車は 大きく 進みます。"
+ },
+ {
+  "id": "sd-kudarizakanokabu",
+  "name": "下り坂のカーブ",
+  "reading": "くだりざかのかーぶ",
+  "journey": "sokudo",
+  "category": "速さと力",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "sokudo:kyori",
+  "field": "速度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sd-kudarizakanokasoku",
+   "sd-kabunotemaedegensoku"
+  ],
+  "description": "下り坂の カーブは 加速が つきやすいので、カーブの 手前で じゅうぶん 速度を 落とし、低い ギアで 下ります。"
+ }
+]

@@ -1,0 +1,1919 @@
+[
+ {
+  "id": "sm-untenmenkyo",
+  "name": "運転免許",
+  "reading": "うんてんめんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-futsuumenkyo",
+   "sm-menkyoshou"
+  ],
+  "description": "車を 道路で 運転する ための 許可です。運転する 車の 種類に 合った 免許が 必要です。"
+ },
+ {
+  "id": "sm-menkyoshou",
+  "name": "免許証",
+  "reading": "めんきょしょう",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-menkyoshounokeitai",
+   "sm-menkyonokoushin"
+  ],
+  "description": "運転免許を 受けた ことを 示す 証明書です。運転する ときは かならず 持ち、警察官に 求められたら 見せます。"
+ },
+ {
+  "id": "sm-futsuumenkyo",
+  "name": "普通免許",
+  "reading": "ふつうめんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-futsuumenkyodeuntendek",
+   "sm-futsuumenkyohajyuuhass"
+  ],
+  "description": "普通自動車を 運転する ための 免許です。小型特殊自動車と 一般原動機付自転車も 運転できます。"
+ },
+ {
+  "id": "sm-gentsukimenkyo",
+  "name": "原付免許",
+  "reading": "げんつきめんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-gentsukimenkyohajyuuro",
+   "sm-shinkijyungentsuki"
+  ],
+  "description": "一般原動機付自転車だけを 運転できる 免許です。16歳から 受けられます。"
+ },
+ {
+  "id": "sm-kyoushuujyo",
+  "name": "教習所",
+  "reading": "きょうしゅうじょ",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-shiteijidoushakyoushuu"
+  ],
+  "description": "運転の しかたや 交通の 決まりを 習う 所です。教室で 学ぶ 学科教習と、車に 乗る 技能教習が あります。"
+ },
+ {
+  "id": "sm-gakkashiken",
+  "name": "学科試験",
+  "reading": "がっかしけん",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-honmenkyonogakkashiken",
+   "sm-karimenkyonogakkashike"
+  ],
+  "description": "交通の 決まりの 知識を 確かめる 試験です。文章を 読んで、正しいか まちがいかを 答えます。"
+ },
+ {
+  "id": "sm-ginoushiken",
+  "name": "技能試験",
+  "reading": "ぎのうしけん",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚘",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-shiteijidoushakyoushuu"
+  ],
+  "description": "実際に 車を 運転して 技能を 見る 試験です。指定自動車教習所を 卒業した 人は、卒業検定に 合格して 1年の あいだ 免除されます。"
+ },
+ {
+  "id": "sm-karimenkyo",
+  "name": "仮免許",
+  "reading": "かりめんきょ",
+  "journey": "seido",
+  "category": "仮免許・初心運転者",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔰",
+  "mapNode": "seido:karimen",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-karimenkyonorenshuu",
+   "sm-karimenkyonoyuukoukika"
+  ],
+  "description": "本免許を とる ために、道路で 運転の 練習を する ための 免許です。1人では 運転できません。"
+ },
+ {
+  "id": "sm-shaken",
+  "name": "車検",
+  "reading": "しゃけん",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "seido:shaken",
+  "field": "車の管理",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-jidoushakensashou",
+   "sm-shakennoyuukoukikan"
+  ],
+  "description": "車が 安全などの 決まりに 合っているかを 調べる 検査です。検査を 受けて 合格した 車だけが 道路を 走れます。"
+ },
+ {
+  "id": "sm-jibaisekihoken",
+  "name": "自賠責保険",
+  "reading": "じばいせきほけん",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "seido:hoken",
+  "field": "車の管理",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-jibaisekihataijindake",
+   "sm-muhokenunten"
+  ],
+  "description": "すべての 自動車と 原付が かならず 入る 保険で、自動車損害賠償責任保険と いいます。入らずに 運転しては いけません。"
+ },
+ {
+  "id": "sm-koutsuujiko",
+  "name": "交通事故",
+  "reading": "こうつうじこ",
+  "journey": "seido",
+  "category": "事故のとき",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "seido:jiko",
+  "field": "事故・故障",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-untenwotsuzukenai",
+   "sm-hakutooban"
+  ],
+  "description": "事故が 起きたら、まず 車を 止めて、負傷者の 救護と、続けて 事故が 起きない ように 危険を 防ぐ ことを 先に 行います。"
+ },
+ {
+  "id": "sm-hakutooban",
+  "name": "110番",
+  "reading": "ひゃくとおばん",
+  "journey": "seido",
+  "category": "事故のとき",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📞",
+  "mapNode": "seido:jiko",
+  "field": "事故・故障",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-keisatsukannihoukoku"
+  ],
+  "description": "警察に 知らせる ときの 電話番号です。事故を 起こしたら、運転していた 人は 警察官に 報告します。"
+ },
+ {
+  "id": "sm-menkyonokoushin",
+  "name": "免許の更新",
+  "reading": "めんきょのこうしん",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-tanjyoubinozengoikkage",
+   "sm-menkyonoshikkou"
+  ],
+  "description": "免許証の 有効期間が 終わる 前に、新しい 免許証に する 手続きです。更新しないと 免許が 失効します。"
+ },
+ {
+  "id": "sm-tensuuseido",
+  "name": "点数制度",
+  "reading": "てんすうせいど",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "seido:tensu",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-ihantensuu",
+   "sm-ruisekitensuu"
+  ],
+  "description": "交通違反や 事故に 点数を つけ、合計の 点数に 応じて 免許の 停止や 取消しを 決める しくみです。"
+ },
+ {
+  "id": "sm-aokippu",
+  "name": "青切符",
+  "reading": "あおきっぷ",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟦",
+  "mapNode": "seido:kippu",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-hansokukin",
+   "sm-hansokukoui"
+  ],
+  "description": "比較的 軽い 違反の ときに わたされる 切符です。反則金を 納めれば、刑事裁判に ならずに すみます。"
+ },
+ {
+  "id": "sm-akakippu",
+  "name": "赤切符",
+  "reading": "あかきっぷ",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "seido:kippu",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-aokippu"
+  ],
+  "description": "酒酔い運転など、重い 違反の ときに わたされる 切符です。反則金では すまず、刑事手続きに なります。"
+ },
+ {
+  "id": "sm-nichijyoutenken",
+  "name": "日常点検",
+  "reading": "にちじょうてんけん",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "seido:nichijo",
+  "field": "車の管理",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-burekinokiki",
+   "sm-taiyanomizonofukasa"
+  ],
+  "description": "車を 使う 人が、ふだんから 自分の 責任で 行う 点検です。ブレーキや タイヤ、灯火などを 確かめます。"
+ },
+ {
+  "id": "sm-untendekirunenrei",
+  "name": "運転できる年齢",
+  "reading": "うんてんできるねんれい",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎂",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-futsuumenkyohajyuuhass",
+   "sm-gentsukimenkyohajyuuro"
+  ],
+  "description": "免許には、受けられる 年齢が 決まって います。原付免許は 16歳、普通免許は 18歳からです。"
+ },
+ {
+  "id": "sm-shiryokukensa",
+  "name": "視力検査",
+  "reading": "しりょくけんさ",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👓",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-shiryokureitennanaijyo",
+   "sm-tekiseishiken"
+  ],
+  "description": "免許を とる ときや 更新の ときに、目の 見えかたを 調べる 検査です。めがねや コンタクトレンズを 使っても かまいません。"
+ },
+ {
+  "id": "sm-ninihoken",
+  "name": "任意保険",
+  "reading": "にんいほけん",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "seido:hoken",
+  "field": "車の管理",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sm-taibutsubaishou",
+   "sm-jibaisekihoken"
+  ],
+  "description": "自賠責保険に 加えて、自分で えらんで 入る 保険です。自賠責保険では 足りない ぶんや、物の 損害にも そなえられます。"
+ },
+ {
+  "id": "sm-daiisshumenkyo",
+  "name": "第一種免許",
+  "reading": "だいいっしゅめんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-dainishumenkyo"
+  ],
+  "description": "自分で 車を 運転する ための 免許です。ふだん 運転する 人の 多くが 持っているのは、この 第一種免許です。"
+ },
+ {
+  "id": "sm-dainishumenkyo",
+  "name": "第二種免許",
+  "reading": "だいにしゅめんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚕",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-daiisshumenkyo"
+  ],
+  "description": "バスや タクシーで、お客を 乗せて 運ぶ ために 運転する ときの 免許です。運転代行の 車を 運転する ときにも 必要です。"
+ },
+ {
+  "id": "sm-futsuumenkyohajyuuhass",
+  "name": "普通免許は18歳から",
+  "reading": "ふつうめんきょはじゅうはっさいから",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎂",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-untendekirunenrei"
+  ],
+  "description": "普通免許の 免許証が もらえるのは 18歳からです。2026年4月から、仮免許も 本免許の 試験も 17歳6か月から 受けられます。試験に 受かっても、交付は 18歳に なってからです。"
+ },
+ {
+  "id": "sm-gentsukimenkyohajyuuro",
+  "name": "原付免許は16歳から",
+  "reading": "げんつきめんきょはじゅうろくさいから",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎂",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-gentsukimenkyo"
+  ],
+  "description": "原付免許は 16歳から 受けられます。普通二輪免許と 小型特殊免許も 16歳からです。"
+ },
+ {
+  "id": "sm-oogatamenkyo",
+  "name": "大型免許",
+  "reading": "おおがためんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-chuugatamenkyo"
+  ],
+  "description": "大型自動車を 運転する 免許で、中型・準中型・普通自動車なども 運転できます。ふつうは 21歳から 受けられます。"
+ },
+ {
+  "id": "sm-chuugatamenkyo",
+  "name": "中型免許",
+  "reading": "ちゅうがためんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚐",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-oogatamenkyo",
+   "sm-jyunchuugatamenkyo"
+  ],
+  "description": "中型自動車を 運転する 免許で、準中型・普通自動車なども 運転できます。ふつうは 20歳から 受けられます。"
+ },
+ {
+  "id": "sm-jyunchuugatamenkyo",
+  "name": "準中型免許",
+  "reading": "じゅんちゅうがためんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-chuugatamenkyo",
+   "sm-futsuujidoushanoookisa"
+  ],
+  "description": "車両総重量 3,500kg以上 7,500kg未満などの 準中型自動車を 運転する 免許です。18歳から 受けられます。"
+ },
+ {
+  "id": "sm-futsuunirinmenkyo",
+  "name": "普通二輪免許",
+  "reading": "ふつうにりんめんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏍️",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-oogatanirinmenkyo"
+  ],
+  "description": "総排気量 400cc以下の 二輪の 自動車(普通自動二輪車)を 運転する 免許です。16歳から 受けられます。"
+ },
+ {
+  "id": "sm-oogatanirinmenkyo",
+  "name": "大型二輪免許",
+  "reading": "おおがたにりんめんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏍️",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-futsuunirinmenkyo"
+  ],
+  "description": "400cc を こえる 大型自動二輪車を 運転する 免許で、普通自動二輪車も 運転できます。18歳から 受けられます。"
+ },
+ {
+  "id": "sm-kogatatokushumenkyo",
+  "name": "小型特殊免許",
+  "reading": "こがたとくしゅめんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚜",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-untendekirunenrei"
+  ],
+  "description": "小型特殊自動車だけを 運転できる 免許です。普通免許を 持っていれば、小型特殊自動車も 運転できます。"
+ },
+ {
+  "id": "sm-eteigentei",
+  "name": "AT限定",
+  "reading": "えーてぃーげんてい",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🅰️",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-futsuumenkyo"
+  ],
+  "description": "オートマチック車(AT車)だけを 運転できる 条件が ついた 免許です。クラッチの ある マニュアル車は 運転できません。"
+ },
+ {
+  "id": "sm-karimenkyonorenshuu",
+  "name": "仮免許の練習",
+  "reading": "かりめんきょのれんしゅう",
+  "journey": "seido",
+  "category": "仮免許・初心運転者",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "seido:karimen",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-karimenkyonodoujyousha"
+  ],
+  "description": "仮免許で 練習する ときは、指導する 人を 運転席の 横に 乗せ、車の 前と 後ろに 仮免許練習標識を つけます。"
+ },
+ {
+  "id": "sm-shoshinuntenshakikan",
+  "name": "初心運転者期間",
+  "reading": "しょしんうんてんしゃきかん",
+  "journey": "seido",
+  "category": "仮免許・初心運転者",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔰",
+  "mapNode": "seido:shoshin",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-shoshinuntenshakoushuu",
+   "sm-saishiken"
+  ],
+  "description": "免許を 受けてから 1年に なるまでの 期間です。普通免許なら この 期間は、車の 前と 後ろに 初心者マークを つけて 運転します。"
+ },
+ {
+  "id": "sm-untenwotsuzukenai",
+  "name": "運転を続けない",
+  "reading": "うんてんをつづけない",
+  "journey": "seido",
+  "category": "事故のとき",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "seido:jiko",
+  "field": "事故・故障",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-koutsuujiko",
+   "sm-fushoushanokyuugo"
+  ],
+  "description": "事故を 起こしたら、すぐに 運転を やめて 車を 止めます。そのまま 走り去っては いけません。"
+ },
+ {
+  "id": "sm-fushoushanokyuugo",
+  "name": "負傷者の救護",
+  "reading": "ふしょうしゃのきゅうご",
+  "journey": "seido",
+  "category": "事故のとき",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🆘",
+  "mapNode": "seido:jiko",
+  "field": "事故・故障",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-untenwotsuzukenai",
+   "sm-kyuugogimuihan"
+  ],
+  "description": "負傷者が いたら、119番で 救急車を 呼び、救急車が 来るまで できる 応急救護を します。むやみに 動かさない ことも 大切です。"
+ },
+ {
+  "id": "sm-keisatsukannihoukoku",
+  "name": "警察官に報告",
+  "reading": "けいさつかんにほうこく",
+  "journey": "seido",
+  "category": "事故のとき",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👮",
+  "mapNode": "seido:jiko",
+  "field": "事故・故障",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-hakutooban"
+  ],
+  "description": "事故の 場所や 負傷者の 数、物の こわれかたなどを 警察官に 報告して、指示を 受けます。小さな 事故でも 報告します。"
+ },
+ {
+  "id": "sm-douronokikenwofusegu",
+  "name": "道路の危険を防ぐ",
+  "reading": "どうろのきけんをふせぐ",
+  "journey": "seido",
+  "category": "事故のとき",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "seido:jiko",
+  "field": "事故・故障",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-untenwotsuzukenai"
+  ],
+  "description": "事故の あと、ほかの 車が 続けて ぶつからない ように、車を 安全な 場所に 移したり 停止表示器材を 置いたり して 危険を 防ぎます。"
+ },
+ {
+  "id": "sm-jibaisekihokennoshoume",
+  "name": "自賠責保険の証明書",
+  "reading": "じばいせきほけんのしょうめいしょ",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "seido:hoken",
+  "field": "車の管理",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-jibaisekihoken",
+   "sm-jidoushakensashou"
+  ],
+  "description": "自賠責保険に 入っている ことを 示す 書類です。運転する ときは、自動車検査証と いっしょに 車に 備えて おきます。"
+ },
+ {
+  "id": "sm-menkyoshounokeitai",
+  "name": "免許証の携帯",
+  "reading": "めんきょしょうのけいたい",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-menkyoshou",
+   "sm-menkyoshounoteiji"
+  ],
+  "description": "運転する ときは、免許証を 持って いなければ なりません。家に 忘れて 運転すると 違反に なります。"
+ },
+ {
+  "id": "sm-menkyoshounokisaijikou",
+  "name": "免許証の記載事項の変更",
+  "reading": "めんきょしょうのきさいじこうのへんこう",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-menkyoshou"
+  ],
+  "description": "引っ越しで 住所が 変わったり、名前が 変わったり したら、すぐに 免許証の 記載事項を 変える 手続きを します。"
+ },
+ {
+  "id": "sm-tanjyoubinozengoikkage",
+  "name": "誕生日の前後1か月",
+  "reading": "たんじょうびのぜんごいっかげつ",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-menkyonokoushin"
+  ],
+  "description": "免許の 更新は、有効期間が 終わる 年の 誕生日の 1か月前から、誕生日の 1か月後までに 受けます。"
+ },
+ {
+  "id": "sm-yuuryouuntensha",
+  "name": "優良運転者",
+  "reading": "ゆうりょううんてんしゃ",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥇",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-menkyonokoushin"
+  ],
+  "description": "一定の 期間、無事故・無違反などの 条件を 満たした 運転者です。更新の ときの 講習が 短く なります。"
+ },
+ {
+  "id": "sm-ihantensuu",
+  "name": "違反点数",
+  "reading": "いはんてんすう",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "seido:tensu",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-tensuuseido",
+   "sm-fukatensuu"
+  ],
+  "description": "違反の 種類ごとに 決められた 点数です。点数が たまると、免許の 停止や 取消しに なります。"
+ },
+ {
+  "id": "sm-hansokukin",
+  "name": "反則金",
+  "reading": "はんそくきん",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "seido:kippu",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-aokippu",
+   "sm-koutsuuhansokutsuukoku"
+  ],
+  "description": "青切符を わたされた ときに 納める お金です。決められた 期限までに 納めると、刑事裁判に ならずに すみます。"
+ },
+ {
+  "id": "sm-menkyoteishi",
+  "name": "免許停止",
+  "reading": "めんきょていし",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "seido:tensu",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-menkyotorikeshi"
+  ],
+  "description": "一定の 期間、免許の 効力が 止められる 処分です。その 期間は 運転できません。"
+ },
+ {
+  "id": "sm-menkyotorikeshi",
+  "name": "免許取消し",
+  "reading": "めんきょとりけし",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "❌",
+  "mapNode": "seido:tensu",
+  "field": "免許制度",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-menkyoteishi",
+   "sm-ruisekitensuu"
+  ],
+  "description": "免許の 効力を なくす 処分です。決められた 期間は、新しく 免許を 受ける ことも できません。"
+ },
+ {
+  "id": "sm-burekinokiki",
+  "name": "ブレーキの効き",
+  "reading": "ぶれーきのきき",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "seido:nichijo",
+  "field": "車の管理",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-burekipedarunofumishir"
+  ],
+  "description": "日常点検では、ブレーキペダルを 踏みこんだ ときの 床との すきまや 踏みごたえ、効きを 確かめます。"
+ },
+ {
+  "id": "sm-taiyanomizonofukasa",
+  "name": "タイヤの溝の深さ",
+  "reading": "たいやのみぞのふかさ",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "seido:nichijo",
+  "field": "車の管理",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-nichijyoutenken"
+  ],
+  "description": "タイヤの 溝が 十分に あるかを、スリップサインなどで 確かめます。すり減ると、雨の 日に すべりやすく なります。"
+ },
+ {
+  "id": "sm-sekisainoseigen",
+  "name": "積載の制限",
+  "reading": "せきさいのせいげん",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-jyoushateiin",
+   "sm-sekisaibutsunonagasa"
+  ],
+  "description": "車に 積める 荷物の 重さ・長さ・幅・高さには 決まりが あります。乗せられる 人数も 決まって います。"
+ },
+ {
+  "id": "sm-kenin",
+  "name": "けん引",
+  "reading": "けんいん",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sm-keninmenkyo",
+   "sm-ropuhagometoruinai"
+  ],
+  "description": "車で ほかの 車を 引いて 走る ことです。引かれる 車の 車両総重量が 750kg を こえる ときは、けん引免許が 必要です。"
+ },
+ {
+  "id": "sm-shinkijyungentsuki",
+  "name": "新基準原付",
+  "reading": "しんきじゅんげんつき",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-gentsukimenkyo"
+  ],
+  "description": "2025年4月から、総排気量 125cc以下で 最高出力 4.0kW以下の 二輪車も 原付免許で 運転できます。出力を おさえていない 125cc以下は 普通二輪免許が 要ります。"
+ },
+ {
+  "id": "sm-mainamenkyoshou",
+  "name": "マイナ免許証",
+  "reading": "まいなめんきょしょう",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-menkyoshou"
+  ],
+  "description": "マイナンバーカードに 免許の 情報を 記録した ものです。免許証と 両方 持つ ことも、どちらか 1つに する ことも できます。"
+ },
+ {
+  "id": "sm-sapokagenteimenkyo",
+  "name": "サポカー限定免許",
+  "reading": "さぽかーげんていめんきょ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚙",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-futsuumenkyo"
+  ],
+  "description": "衝突被害軽減ブレーキなどの 装置が ついた 普通自動車だけを 運転できる 条件の 免許です。本人が 申し出て 切りかえます。"
+ },
+ {
+  "id": "sm-untenginoukensa",
+  "name": "運転技能検査",
+  "reading": "うんてんぎのうけんさ",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚘",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-ninchikinoukensa"
+  ],
+  "description": "75歳以上で、決められた 違反を した ことの ある 人が、更新の ときに 受ける 運転の 検査です。75歳以上の 全員が 受ける わけでは ありません。"
+ },
+ {
+  "id": "sm-ninchikinoukensa",
+  "name": "認知機能検査",
+  "reading": "にんちきのうけんさ",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-koureishakoushuu",
+   "sm-untenginoukensa"
+  ],
+  "description": "更新期間が 終わる 日に 75歳以上の 人が 受ける 検査で、記憶力などを 調べます。70歳から 受ける 高齢者講習とは 別の ものです。"
+ },
+ {
+  "id": "sm-koureishakoushuu",
+  "name": "高齢者講習",
+  "reading": "こうれいしゃこうしゅう",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👴",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-ninchikinoukensa"
+  ],
+  "description": "更新期間が 終わる 日に 70歳以上の 人が、更新の 前に 受ける 講習です。75歳以上の 認知機能検査と 年齢を 取りちがえないように します。"
+ },
+ {
+  "id": "sm-futsuujidoushanoookisa",
+  "name": "普通自動車の大きさ",
+  "reading": "ふつうじどうしゃのおおきさ",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-futsuumenkyodeuntendek",
+   "sm-jyunchuugatamenkyo"
+  ],
+  "description": "普通自動車は、車両総重量 3,500kg未満・最大積載量 2,000kg未満・乗車定員 10人以下の 車です。11人以上 乗れる 車は 普通自動車では ありません。"
+ },
+ {
+  "id": "sm-futsuumenkyodeuntendek",
+  "name": "普通免許で運転できる車",
+  "reading": "ふつうめんきょでうんてんできるくるま",
+  "journey": "seido",
+  "category": "免許の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "seido:shurui",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-futsuumenkyo",
+   "sm-futsuujidoushanoookisa"
+  ],
+  "description": "普通免許で 運転できるのは、普通自動車・小型特殊自動車・一般原動機付自転車です。普通自動二輪車は 運転できません。"
+ },
+ {
+  "id": "sm-keninmenkyo",
+  "name": "けん引免許",
+  "reading": "けんいんめんきょ",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-nanahyakugojyukkiroika",
+   "sm-kenin"
+  ],
+  "description": "車両総重量が 750kg を こえる 車を けん引する ときに、運転する 車の 免許とは 別に 必要な 免許です。"
+ },
+ {
+  "id": "sm-nanahyakugojyukkiroika",
+  "name": "750kg以下のけん引",
+  "reading": "ななひゃくごじゅっきろいかのけんいん",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-keninmenkyo"
+  ],
+  "description": "車両総重量 750kg以下の 車を けん引する ときや、故障車を ロープで 引く ときは、けん引免許は いりません。「以下」と「こえる」の ちがいに 注意します。"
+ },
+ {
+  "id": "sm-ropuhagometoruinai",
+  "name": "ロープは5m以内",
+  "reading": "ろーぷはごめーとるいない",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪢",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-shiroinuno",
+   "sm-koshoushawokeninsuruto"
+  ],
+  "description": "故障車を ロープで 引く ときは、引く 車と 故障車の あいだを 5m以内に します。故障車にも 免許を 持つ 人が 乗って ハンドルを 操作します。"
+ },
+ {
+  "id": "sm-shiroinuno",
+  "name": "白い布",
+  "reading": "しろいぬの",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏳️",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-ropuhagometoruinai"
+  ],
+  "description": "故障車を 引く ロープの 見やすい 所に、30cm平方以上の 白い 布を つけます。赤い 布は 荷物が はみ出す ときの 目じるしなので、取りちがえないように します。"
+ },
+ {
+  "id": "sm-koshoushawokeninsuruto",
+  "name": "故障車をけん引するときの速度",
+  "reading": "こしょうしゃをけんいんするときのそくど",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-ropuhagometoruinai"
+  ],
+  "description": "故障車を ロープなどで 引く ときの 最高速度は 30km/h です。引かれる 車が 2,000kg以下で、その 3倍以上の 重さの 車で 引く ときは 40km/h です。"
+ },
+ {
+  "id": "sm-jyoushateiin",
+  "name": "乗車定員",
+  "reading": "じょうしゃていいん",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-sekisainoseigen"
+  ],
+  "description": "車に 乗せられる 人数で、運転する 人も ふくみます。自動車検査証に 記録されて います。12歳未満の 子どもは 3人を 2人と 数えます。"
+ },
+ {
+  "id": "sm-sekisaibutsunonagasa",
+  "name": "積載物の長さ",
+  "reading": "せきさいぶつのながさ",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-sekisaibutsunohaba",
+   "sm-seigengaikyoka"
+  ],
+  "description": "荷物を 積んだ 長さは、自動車の 長さの 1.2倍までです。車の 前と 後ろから はみ出すのは、それぞれ 車の 長さの 10分の1までです。"
+ },
+ {
+  "id": "sm-sekisaibutsunohaba",
+  "name": "積載物の幅",
+  "reading": "せきさいぶつのはば",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-sekisaibutsunonagasa"
+  ],
+  "description": "荷物を 積んだ 幅は、自動車の 幅の 1.2倍までです。車の 左右から はみ出すのは、それぞれ 車の 幅の 10分の1までです。"
+ },
+ {
+  "id": "sm-seigengaikyoka",
+  "name": "制限外許可",
+  "reading": "せいげんがいきょか",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-sekisaibutsunonagasa"
+  ],
+  "description": "決まりを こえる 荷物を 積む ときは、出発地の 警察署長の 許可を 受けます。許可が あれば、その 範囲で 運べます。"
+ },
+ {
+  "id": "sm-nirinnofutarinori",
+  "name": "二輪の二人乗り",
+  "reading": "にりんのふたりのり",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏍️",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-kousokunofutarinori"
+  ],
+  "description": "一般道路で 二輪車の 二人乗りが できるのは、その 免許を 受けて 1年が たった 人です。一般原動機付自転車は 二人乗りが できません。"
+ },
+ {
+  "id": "sm-kousokunofutarinori",
+  "name": "高速の二人乗り",
+  "reading": "こうそくのふたりのり",
+  "journey": "seido",
+  "category": "積載・けん引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "seido:sekisai",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-nirinnofutarinori"
+  ],
+  "description": "高速道路で 二輪車の 二人乗りが できるのは、20歳以上で 免許を 受けて 3年以上の 人です。一般道路の 1年とは ちがいます。"
+ },
+ {
+  "id": "sm-karimenkyonodoujyousha",
+  "name": "仮免許の同乗者",
+  "reading": "かりめんきょのどうじょうしゃ",
+  "journey": "seido",
+  "category": "仮免許・初心運転者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "seido:karimen",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-karimenkyonorenshuu"
+  ],
+  "description": "仮免許で 練習する ときは、その 車を 運転できる 第一種免許を 3年以上 受けている 人か、第二種免許を 持つ 人などを 横に 乗せます。"
+ },
+ {
+  "id": "sm-karimenkyonoyuukoukika",
+  "name": "仮免許の有効期間",
+  "reading": "かりめんきょのゆうこうきかん",
+  "journey": "seido",
+  "category": "仮免許・初心運転者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "seido:karimen",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-karimenkyo"
+  ],
+  "description": "仮免許の 有効期間は 6か月です。この あいだに 本免許を とらないと、仮免許を とりなおす ことに なります。"
+ },
+ {
+  "id": "sm-shoshinuntenshakoushuu",
+  "name": "初心運転者講習",
+  "reading": "しょしんうんてんしゃこうしゅう",
+  "journey": "seido",
+  "category": "仮免許・初心運転者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "seido:shoshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-shoshinuntenshakikan",
+   "sm-saishiken"
+  ],
+  "description": "初心運転者期間に、決められた 基準に あたる 違反を した 人が 受ける 講習です。受けないと 再試験に なります。"
+ },
+ {
+  "id": "sm-saishiken",
+  "name": "再試験",
+  "reading": "さいしけん",
+  "journey": "seido",
+  "category": "仮免許・初心運転者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "seido:shoshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-shoshinuntenshakoushuu"
+  ],
+  "description": "初心運転者期間の 違反で 講習を 受けなかった 人などが 受ける 試験です。合格しないと 免許が 取り消されます。"
+ },
+ {
+  "id": "sm-ruisekitensuu",
+  "name": "累積点数",
+  "reading": "るいせきてんすう",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "seido:tensu",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-kakosannennotensuu",
+   "sm-tensuuseido"
+  ],
+  "description": "違反の 点数を 足していった 合計です。合計が 一定の 点数に なると、免許の 停止や 取消しに なります。"
+ },
+ {
+  "id": "sm-zenreki",
+  "name": "前歴",
+  "reading": "ぜんれき",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📁",
+  "mapNode": "seido:tensu",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-ruisekitensuu"
+  ],
+  "description": "過去3年 以内に 免許の 停止などの 処分を 受けた 回数です。前歴が ある 人は、少ない 点数でも 処分に なります。"
+ },
+ {
+  "id": "sm-kakosannennotensuu",
+  "name": "過去3年の点数",
+  "reading": "かこさんねんのてんすう",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "seido:tensu",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-ruisekitensuu"
+  ],
+  "description": "点数は、ふつう 過去3年の あいだの 違反を 足して 数えます。ずっと 足しつづける わけでは ありません。"
+ },
+ {
+  "id": "sm-fukatensuu",
+  "name": "付加点数",
+  "reading": "ふかてんすう",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "seido:tensu",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-ihantensuu"
+  ],
+  "description": "事故を 起こした ときに、違反の 点数に 加えられる 点数です。事故の 大きさや 責任の 重さで 変わります。"
+ },
+ {
+  "id": "sm-ihanshakoushuu",
+  "name": "違反者講習",
+  "reading": "いはんしゃこうしゅう",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "seido:tensu",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-ihantensuu"
+  ],
+  "description": "比較的 軽い 違反で 点数が たまった 人が 受ける 講習です。受けると、免許の 停止に ならずに すむ 場合が あります。"
+ },
+ {
+  "id": "sm-koutsuuhansokutsuukoku",
+  "name": "交通反則通告制度",
+  "reading": "こうつうはんそくつうこくせいど",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "seido:kippu",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-hansokukoui",
+   "sm-aokippu"
+  ],
+  "description": "比較的 軽い 違反は、反則金を 納めれば 刑事裁判に ならない しくみです。2026年4月から、16歳以上の 自転車にも 使われて います。"
+ },
+ {
+  "id": "sm-hansokukoui",
+  "name": "反則行為",
+  "reading": "はんそくこうい",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📃",
+  "mapNode": "seido:kippu",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-koutsuuhansokutsuukoku"
+  ],
+  "description": "交通反則通告制度の 対象に なる、比較的 軽い 違反です。酒気帯び運転などは 反則行為に ならず、赤切符に なります。"
+ },
+ {
+  "id": "sm-jitenshanoaokippu",
+  "name": "自転車の青切符",
+  "reading": "じてんしゃのあおきっぷ",
+  "journey": "seido",
+  "category": "点数と切符",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "seido:kippu",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-koutsuuhansokutsuukoku"
+  ],
+  "description": "2026年4月から、自転車にも 青切符(交通反則通告制度)が 使われて います。対象は 16歳以上で、16歳未満は おもに 指導や 警告です。"
+ },
+ {
+  "id": "sm-menkyoshounoteiji",
+  "name": "免許証の提示",
+  "reading": "めんきょしょうのていじ",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-menkyoshounokeitai"
+  ],
+  "description": "違反を したり 事故を 起こしたり した とき、警察官から 求められたら 免許証を 見せなければ なりません。持っている だけでは 足りません。"
+ },
+ {
+  "id": "sm-menkyonoshikkou",
+  "name": "免許の失効",
+  "reading": "めんきょのしっこう",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-menkyonokoushin"
+  ],
+  "description": "更新を 受けないまま 有効期間が すぎると、免許は 効力を なくします。失効した 免許で 運転すると、無免許運転に なります。"
+ },
+ {
+  "id": "sm-menkyonojishuhennou",
+  "name": "免許の自主返納",
+  "reading": "めんきょのじしゅへんのう",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙇",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-untenkeirekishoumeisho"
+  ],
+  "description": "運転に 自信が なくなった ときなどに、自分から 申し出て 免許を 取り消して もらう ことです。"
+ },
+ {
+  "id": "sm-untenkeirekishoumeisho",
+  "name": "運転経歴証明書",
+  "reading": "うんてんけいれきしょうめいしょ",
+  "journey": "seido",
+  "category": "免許の更新",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📇",
+  "mapNode": "seido:koshin",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-menkyonojishuhennou"
+  ],
+  "description": "免許を 自主返納した 人などが 申しこむと もらえる 証明書です。これまで 運転してきた ことを 示します。これで 運転は できません。"
+ },
+ {
+  "id": "sm-jibaisekihataijindake",
+  "name": "自賠責は対人だけ",
+  "reading": "じばいせきはたいじんだけ",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "seido:hoken",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-taibutsubaishou",
+   "sm-jibaisekihoken"
+  ],
+  "description": "自賠責保険で はらわれるのは、事故で 人の 体に あたえた 損害だけです。車や 物の 損害は 対象では ありません。"
+ },
+ {
+  "id": "sm-taibutsubaishou",
+  "name": "対物賠償",
+  "reading": "たいぶつばいしょう",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "seido:hoken",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-ninihoken",
+   "sm-jibaisekihataijindake"
+  ],
+  "description": "事故で 他人の 車や 家などの 物を こわした ときの 賠償です。自賠責保険では はらわれないので、任意保険で そなえます。"
+ },
+ {
+  "id": "sm-muhokenunten",
+  "name": "無保険運転",
+  "reading": "むほけんうんてん",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "seido:hoken",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-jibaisekihoken"
+  ],
+  "description": "自賠責保険に 入っていない 車を 運転する ことで、法律で 禁止されて います。期限が 切れていないかにも 気を つけます。"
+ },
+ {
+  "id": "sm-jidoushakensashou",
+  "name": "自動車検査証",
+  "reading": "じどうしゃけんさしょう",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "seido:shaken",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-shakennoyuukoukikan",
+   "sm-jibaisekihokennoshoume"
+  ],
+  "description": "車検に 合格した ことを 示す もので、車検証とも いいます。運転する ときは 車に 備えて おきます。"
+ },
+ {
+  "id": "sm-shakennoyuukoukikan",
+  "name": "車検の有効期間",
+  "reading": "しゃけんのゆうこうきかん",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "seido:shaken",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-jidoushakensashou"
+  ],
+  "description": "車検の 有効期間は 自動車検査証に 記録されて います。期間が 切れた 車は 道路を 走れないので、早めに 車検を 受けます。"
+ },
+ {
+  "id": "sm-teikitenken",
+  "name": "定期点検",
+  "reading": "ていきてんけん",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "seido:shaken",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-nichijyoutenken"
+  ],
+  "description": "決められた 時期ごとに 行う 点検です。自家用の 普通乗用自動車は 1年ごとに 点検し、必要な 整備を します。"
+ },
+ {
+  "id": "sm-fuseikaizounokinshi",
+  "name": "不正改造の禁止",
+  "reading": "ふせいかいぞうのきんし",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "seido:shaken",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-jidoushakensashou"
+  ],
+  "description": "決まりに 合わないように 車を 改造する ことは 禁止されて います。整備が 不十分な 車を 運転しても いけません。"
+ },
+ {
+  "id": "sm-hokanbasho",
+  "name": "保管場所",
+  "reading": "ほかんばしょ",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "seido:shaken",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-jidoushakensashou"
+  ],
+  "description": "車を 持つ 人は、道路では ない 所に 車の 保管場所(車庫)を 用意します。道路を 車庫の かわりに しては いけません。"
+ },
+ {
+  "id": "sm-enjinoirunoryou",
+  "name": "エンジンオイルの量",
+  "reading": "えんじんおいるのりょう",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛢️",
+  "mapNode": "seido:nichijo",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-reikyakusui"
+  ],
+  "description": "日常点検で、エンジンオイルの 量が オイルレベルゲージの 範囲の 中に あるかを 確かめます。"
+ },
+ {
+  "id": "sm-reikyakusui",
+  "name": "冷却水",
+  "reading": "れいきゃくすい",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "seido:nichijo",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-enjinoirunoryou"
+  ],
+  "description": "エンジンを 冷やす 水です。日常点検で、リザーバタンクの 量が 決められた 範囲に あるかを 確かめます。"
+ },
+ {
+  "id": "sm-burekieki",
+  "name": "ブレーキ液",
+  "reading": "ぶれーきえき",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "seido:nichijo",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-burekipedarunofumishir"
+  ],
+  "description": "ブレーキを 動かす 液です。日常点検で、リザーバタンクの 液の 量が 決められた 範囲に あるかを 確かめます。"
+ },
+ {
+  "id": "sm-uindouosshaeki",
+  "name": "ウインドウォッシャー液",
+  "reading": "ういんどうぉっしゃーえき",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "seido:nichijo",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-reikyakusui"
+  ],
+  "description": "前の 窓を 洗う 液です。日常点検で、液の 量と、ふき出す 向きや 高さを 確かめます。"
+ },
+ {
+  "id": "sm-toukanotentou",
+  "name": "灯火の点灯",
+  "reading": "とうかのてんとう",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "seido:nichijo",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-nichijyoutenken"
+  ],
+  "description": "日常点検で、前照灯や ブレーキランプが つくか、方向指示器が 点滅するか、レンズに よごれや きずが ないかを 確かめます。"
+ },
+ {
+  "id": "sm-burekipedarunofumishir",
+  "name": "ブレーキペダルの踏みしろ",
+  "reading": "ぶれーきぺだるのふみしろ",
+  "journey": "seido",
+  "category": "車の管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "seido:nichijo",
+  "field": "車の管理",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-burekinokiki",
+   "sm-burekieki"
+  ],
+  "description": "ブレーキペダルを いっぱいに 踏んだ ときの 床との すきまや 踏みごたえを 確かめます。すきまが 少ない ときは、ブレーキ液の もれの おそれが あります。"
+ },
+ {
+  "id": "sm-kyuugogimuihan",
+  "name": "救護義務違反",
+  "reading": "きゅうごぎむいはん",
+  "journey": "seido",
+  "category": "事故のとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "seido:jiko",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-fushoushanokyuugo"
+  ],
+  "description": "事故で 負傷者が いるのに、救護を せずに 現場から 立ち去る 違反です。とても 重い 違反です。"
+ },
+ {
+  "id": "sm-shiteijidoushakyoushuu",
+  "name": "指定自動車教習所",
+  "reading": "していじどうしゃきょうしゅうじょ",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-sotsugyoukentei",
+   "sm-ginoushiken"
+  ],
+  "description": "決められた 基準を 満たし、公安委員会が 指定した 教習所です。卒業すると、1年の あいだ 運転免許試験の 技能試験が 免除されます。"
+ },
+ {
+  "id": "sm-sotsugyoukentei",
+  "name": "卒業検定",
+  "reading": "そつぎょうけんてい",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-shiteijidoushakyoushuu",
+   "sm-shuuryoukentei"
+  ],
+  "description": "指定自動車教習所の 最後に 受ける 技能の 検定です。合格して 卒業すると 技能試験が 免除され、学科試験を 受けに いきます。"
+ },
+ {
+  "id": "sm-shuuryoukentei",
+  "name": "修了検定",
+  "reading": "しゅうりょうけんてい",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-karimenkyo",
+   "sm-sotsugyoukentei"
+  ],
+  "description": "教習所の 第1段階の 終わりに 受ける 技能の 検定です。合格すると 仮免許の 学科試験を 受けられます。卒業検定とは 別の ものです。"
+ },
+ {
+  "id": "sm-tekiseishiken",
+  "name": "適性試験",
+  "reading": "てきせいしけん",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-shiryokureitennanaijyo"
+  ],
+  "description": "視力・色の 見分け・聴力などを 調べる 試験です。色は、赤・青・黄が 見分けられる ことが 必要です。"
+ },
+ {
+  "id": "sm-honmenkyonogakkashiken",
+  "name": "本免許の学科試験",
+  "reading": "ほんめんきょのがっかしけん",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-irasutomondai",
+   "sm-karimenkyonogakkashike"
+  ],
+  "description": "普通免許の 学科試験は、文章問題 90問と イラスト問題 5問で 100点満点、50分です。90点以上で 合格です。"
+ },
+ {
+  "id": "sm-karimenkyonogakkashike",
+  "name": "仮免許の学科試験",
+  "reading": "かりめんきょのがっかしけん",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-gakkashiken",
+   "sm-honmenkyonogakkashiken"
+  ],
+  "description": "仮免許の 学科試験は 文章問題 50問で 50点満点、30分です。45点以上で 合格で、イラスト問題は ありません。"
+ },
+ {
+  "id": "sm-irasutomondai",
+  "name": "イラスト問題",
+  "reading": "いらすともんだい",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖼️",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-honmenkyonogakkashiken"
+  ],
+  "description": "本免許の 学科試験に ある 危険予測の 問題です。1つの 場面に 3つの 文が あり、3つとも 正しく 答えた ときだけ 2点に なります。"
+ },
+ {
+  "id": "sm-oukyuukyuugoshochikous",
+  "name": "応急救護処置講習",
+  "reading": "おうきゅうきゅうごしょちこうしゅう",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛑️",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-fushoushanokyuugo"
+  ],
+  "description": "事故の 現場で 負傷者を 救護する ための 手当てを 学ぶ 講習です。免許を とる 前に 受けます。"
+ },
+ {
+  "id": "sm-koutsuunokyousoku",
+  "name": "交通の教則",
+  "reading": "こうつうのきょうそく",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📗",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-gakkashiken"
+  ],
+  "description": "国家公安委員会が つくった、交通の 決まりや 安全な 運転の しかたを まとめた ものです。学科試験の もとに なって います。"
+ },
+ {
+  "id": "sm-shiryokureitennanaijyo",
+  "name": "視力0.7以上",
+  "reading": "しりょくれいてんなないじょう",
+  "journey": "seido",
+  "category": "免許をとるまで",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👓",
+  "mapNode": "seido:nagare",
+  "field": "免許制度",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sm-tekiseishiken",
+   "sm-shiryokukensa"
+  ],
+  "description": "普通免許には、両目で 0.7以上、かたほうずつ 0.3以上の 視力が 必要です。めがねを 使っても かまいません。"
+ }
+]

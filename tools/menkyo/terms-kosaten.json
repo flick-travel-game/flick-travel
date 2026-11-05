@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "ks-kousaten",
+    "name": "交差点",
+    "reading": "こうさてん",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "➕",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-chokushin",
+      "ks-yuusendouronokousaten"
+    ],
+    "description": "十字路や 丁字路など、2つ 以上の 道路が 交わる ところです。車や 人が いろいろな 方向から 来るので、とくに 気を つけて 通ります。"
+  },
+  {
+    "id": "ks-sasetsu",
+    "name": "左折",
+    "reading": "させつ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⬅️",
+    "mapNode": "kosaten:sasetsu",
+    "field": "交差点",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-sasetsuhahidarihashini",
+      "ks-makikomi"
+    ],
+    "description": "交差点などで 左に 曲がる ことです。30m手前で 左の 合図を 出し、左はしに 寄って 徐行します。"
+  },
+  {
+    "id": "ks-usetsu",
+    "name": "右折",
+    "reading": "うせつ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "➡️",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-usetsuhachuuouniyoru",
+      "ks-usetsujihachokushinsha"
+    ],
+    "description": "交差点などで 右に 曲がる ことです。30m手前で 右の 合図を 出し、道路の 中央に 寄って 徐行します。まっすぐ 来る 車が 先です。"
+  },
+  {
+    "id": "ks-chokushin",
+    "name": "直進",
+    "reading": "ちょくしん",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⬆️",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-kousaten",
+      "ks-usetsujihachokushinsha"
+    ],
+    "description": "交差点を まっすぐ 進む ことです。右に 曲がる 車は、まっすぐ 進む 車や 左に 曲がる 車の じゃまを しては いけません。"
+  },
+  {
+    "id": "ks-fumikiri",
+    "name": "踏切",
+    "reading": "ふみきり",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚃",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-fumikirinoichijiteishi",
+      "ks-shadanki"
+    ],
+    "description": "道路と 線路が 交わる ところです。車は 踏切の 手前で 一時停止して、目と 耳で 左右の 安全を 確かめてから 渡ります。"
+  },
+  {
+    "id": "ks-shadanki",
+    "name": "遮断機",
+    "reading": "しゃだんき",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚧",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-shadankigaorihajimetar",
+      "ks-keihouki"
+    ],
+    "description": "列車が 来る とき 下りて きて、道路を ふさぐ 棒です。遮断機が 下り始めたら 踏切に 入っては いけません。"
+  },
+  {
+    "id": "ks-keihouki",
+    "name": "警報機",
+    "reading": "けいほうき",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔔",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-keihoukiganatteirutoki",
+      "ks-shadanki"
+    ],
+    "description": "列車が 近づくと 音を 鳴らし、赤い 灯火を 点滅させて 知らせる 機械です。鳴っている ときは 踏切に 入っては いけません。"
+  },
+  {
+    "id": "ks-senro",
+    "name": "線路",
+    "reading": "せんろ",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🛤️",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-fumikiri",
+      "ks-ressha"
+    ],
+    "description": "列車が 走る レールの 道です。線路の 上で 止まらないように、踏切の 向こう側に 入れる すき間が ある ことを 確かめてから 渡ります。"
+  },
+  {
+    "id": "ks-ressha",
+    "name": "列車",
+    "reading": "れっしゃ",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚆",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-fumikiri",
+      "ks-hantaikaranoressha"
+    ],
+    "description": "線路を 走る 電車などです。重くて 速いので、急には 止まれません。だから 踏切では 車や 人の ほうが 待ちます。"
+  },
+  {
+    "id": "ks-chuusha",
+    "name": "駐車",
+    "reading": "ちゅうしゃ",
+    "journey": "kosaten",
+    "category": "駐車と停車",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🅿️",
+    "mapNode": "kosaten:chusha",
+    "field": "駐車・停車",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-teisha",
+      "ks-chuushatoteishanochiga"
+    ],
+    "description": "車を 続けて 止めておく ことや、運転する 人が 車から はなれて すぐ 動かせない 状態の ことです。駐車禁止の 場所では できません。"
+  },
+  {
+    "id": "ks-teisha",
+    "name": "停車",
+    "reading": "ていしゃ",
+    "journey": "kosaten",
+    "category": "駐車と停車",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⏸️",
+    "mapNode": "kosaten:chusha",
+    "field": "駐車・停車",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-chuusha",
+      "ks-hitononoriori"
+    ],
+    "description": "駐車に ならない 短い 止まりかたです。人の 乗り降りや、5分 以内の 荷物の 積みおろしの ための 止まりかたが 停車です。"
+  },
+  {
+    "id": "ks-nairinsa",
+    "name": "内輪差",
+    "reading": "ないりんさ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "kosaten:nairin",
+    "field": "交差点",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-oogatashanonairinsa",
+      "ks-makikomi"
+    ],
+    "description": "車が 曲がる とき、後ろの 車輪が 前の 車輪より 内側を 通る ことで できる 差です。左折では 左後ろに 気を つけます。"
+  },
+  {
+    "id": "ks-makikomi",
+    "name": "巻き込み",
+    "reading": "まきこみ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚲",
+    "mapNode": "kosaten:nairin",
+    "field": "交差点",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-nirinshanomakikomi",
+      "ks-nairinsa"
+    ],
+    "description": "左折の ときに、左横を 走る 自転車や バイク、歩行者を 内輪差の 内側に 入れて しまう ことです。左折の 前に 左後ろを 確かめます。"
+  },
+  {
+    "id": "ks-kanjyoukousaten",
+    "name": "環状交差点",
+    "reading": "かんじょうこうさてん",
+    "journey": "kosaten",
+    "category": "環状交差点",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⭕",
+    "mapNode": "kosaten:kanjo",
+    "field": "交差点",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-kanjyoukousatennomigim",
+      "ks-kanjyoukousatennonakan"
+    ],
+    "description": "まん中の 島の まわりを 車が 右回り(時計回り)に 回る 交差点です。ラウンドアバウトとも いいます。中を 回っている 車が 先です。"
+  },
+  {
+    "id": "ks-nidankaiusetsu",
+    "name": "二段階右折",
+    "reading": "にだんかいうせつ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "↪️",
+    "mapNode": "kosaten:nidan",
+    "field": "交差点",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-gentsukinonidankaiuset",
+      "ks-nidankaiusetsunomatsub"
+    ],
+    "description": "右に 曲がる とき、交差点の 左はしを まっすぐ 向こう側まで 渡り、そこで 向きを 変えて もう一度 渡る 曲がりかたです。自転車や 原付などが します。"
+  },
+  {
+    "id": "ks-magarikado",
+    "name": "曲がり角",
+    "reading": "まがりかど",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "↪️",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-magarikadokaragometoru",
+      "ks-kousatenkaragometoru"
+    ],
+    "description": "道路が 曲がっている ところです。先が 見えにくいので、曲がり角の 近くに 車を 止めると ほかの 車から 見えにくく なり 危ないです。"
+  },
+  {
+    "id": "ks-basutei",
+    "name": "バス停",
+    "reading": "ばすてい",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚏",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-basuteikarajyuumetoru",
+      "ks-basuteinounkoujikanchu"
+    ],
+    "description": "バスが 止まって お客さんが 乗り降りする 停留所です。バス停の 標示板から 10m以内は、バスの 走る 時間には 駐車も 停車も できません。"
+  },
+  {
+    "id": "ks-shoukasen",
+    "name": "消火栓",
+    "reading": "しょうかせん",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧯",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-shoukasenkaragometoru",
+      "ks-chuushakinshinobasho"
+    ],
+    "description": "火事の ときに 消防が 水を とる 設備です。消火栓から 5m以内に 車を 駐車しては いけません。"
+  },
+  {
+    "id": "ks-shako",
+    "name": "車庫",
+    "reading": "しゃこ",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🏠",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-shakonodeiriguchikaras",
+      "ks-dourowoshakogawarinish"
+    ],
+    "description": "車を しまって おく 場所です。駐車場や 車庫の 車の 出入口から 3m以内には 駐車しては いけません。"
+  },
+  {
+    "id": "ks-chuushajyou",
+    "name": "駐車場",
+    "reading": "ちゅうしゃじょう",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🅿️",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "共通",
+    "relatedTerms": [
+      "ks-chuusha",
+      "ks-dourowoshakogawarinish"
+    ],
+    "description": "車を 止めておく ための 場所です。用事で 車を 置いておく ときは、道路ではなく 駐車場を 使います。"
+  },
+  {
+    "id": "ks-sasetsuhahidarihashini",
+    "name": "左折は左端に寄る",
+    "reading": "させつはひだりはしによる",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⬅️",
+    "mapNode": "kosaten:sasetsu",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-sasetsu",
+      "ks-oomawari"
+    ],
+    "description": "左折する ときは、前もって できるだけ 道路の 左はしに 寄り、左はしに 沿って 徐行します。左に すき間を 作らない ことで 巻き込みを 防ぎます。"
+  },
+  {
+    "id": "ks-usetsuhachuuouniyoru",
+    "name": "右折は中央に寄る",
+    "reading": "うせつはちゅうおうによる",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "➡️",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-kousatennochuushinnosu",
+      "ks-ippoutsuukouronousetsu"
+    ],
+    "description": "右折する ときは、前もって できるだけ 道路の 中央に 寄り、交差点の 中心の すぐ 内側を 徐行して 曲がります。"
+  },
+  {
+    "id": "ks-kousatennochuushinnosu",
+    "name": "交差点の中心のすぐ内側",
+    "reading": "こうさてんのちゅうしんのすぐうちがわ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-usetsuhachuuouniyoru",
+      "ks-hayamawari"
+    ],
+    "description": "右折で 通る ところは、交差点の 中心の すぐ 内側です。中心より 手前を ななめに 横切ると 早回りに なります。"
+  },
+  {
+    "id": "ks-usetsujihachokushinsha",
+    "name": "右折時は直進車・左折車が優先",
+    "reading": "うせつじはちょくしんしゃさせつしゃがゆうせん",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⬆️",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-usetsu",
+      "ks-taikoushanokagenonirin"
+    ],
+    "description": "右折する ときは、その 交差点で まっすぐ 進む 車や 左に 曲がる 車の じゃまを しては いけません。先に 通って もらいます。"
+  },
+  {
+    "id": "ks-yuusendouronokousaten",
+    "name": "優先道路の交差点",
+    "reading": "ゆうせんどうろのこうさてん",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🪧",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-michihabagahiroidouron",
+      "ks-kousadouronokurumawosa"
+    ],
+    "description": "信号などの ない 交差点で、相手の 道が 優先道路の ときは、徐行して 優先道路を 走る 車の じゃまを しないように します。"
+  },
+  {
+    "id": "ks-michihabagahiroidouron",
+    "name": "道幅が広い道路の優先",
+    "reading": "みちはばがひろいどうろのゆうせん",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "↔️",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-michihabagaakirakanihi",
+      "ks-sahouyuusen"
+    ],
+    "description": "信号などの ない 交差点で、相手の 道の 幅が 明らかに 広い ときは、徐行して 広い 道の 車の じゃまを しないように します。"
+  },
+  {
+    "id": "ks-sahouyuusen",
+    "name": "左方優先",
+    "reading": "さほうゆうせん",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⬅️",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-michihabagahiroidouron",
+      "ks-koutsuuseirinookonawar"
+    ],
+    "description": "信号などの ない 交差点で、道幅が 同じくらいで 優先道路も ない ときは、左から 来る 車の じゃまを しては いけません。"
+  },
+  {
+    "id": "ks-koutsuuseirinookonawar",
+    "name": "交通整理の行われていない交差点",
+    "reading": "こうつうせいりのおこなわれていないこうさてん",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚥",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-sahouyuusen",
+      "ks-yuusendouronokousaten"
+    ],
+    "description": "信号機も 警察官などの 手信号も ない 交差点です。優先道路・道幅・左方優先の 決まりで、どちらが 先かを 決めます。"
+  },
+  {
+    "id": "ks-kanjyoukousatennomigim",
+    "name": "環状交差点の右回り",
+    "reading": "かんじょうこうさてんのみぎまわり",
+    "journey": "kosaten",
+    "category": "環状交差点",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔃",
+    "mapNode": "kosaten:kanjo",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-kanjyoukousaten",
+      "ks-kanjyoukousatennohidar"
+    ],
+    "description": "環状交差点の 中では、車は 右回り(時計回り)に 進みます。左に 曲がる ときも 右に 曲がる ときも、同じ 向きに 回って 出口を 出ます。"
+  },
+  {
+    "id": "ks-kanjyoukousatennonakan",
+    "name": "環状交差点の中の車が優先",
+    "reading": "かんじょうこうさてんのなかのくるまがゆうせん",
+    "journey": "kosaten",
+    "category": "環状交差点",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⭕",
+    "mapNode": "kosaten:kanjo",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-kanjyoukousatennihairu",
+      "ks-kanjyoukousaten"
+    ],
+    "description": "環状交差点では、中を 回っている 車が 先です。入ろうと する 車は 徐行して、中の 車の じゃまを しないように します。"
+  },
+  {
+    "id": "ks-gentsukinonidankaiuset",
+    "name": "原付の二段階右折",
+    "reading": "げんつきのにだんかいうせつ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🛵",
+    "mapNode": "kosaten:nidan",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-katagawasanshasenijyou",
+      "ks-shingounonaikousatenno"
+    ],
+    "description": "一般の 原付は、信号などで 交通整理の ある 交差点で、二段階右折の 標識が ある ときや 片側に 車線が 3つ 以上 ある ときは 二段階右折を します。"
+  },
+  {
+    "id": "ks-katagawasanshasenijyou",
+    "name": "片側3車線以上の交差点",
+    "reading": "かたがわさんしゃせんいじょうのこうさてん",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🛣️",
+    "mapNode": "kosaten:nidan",
+    "field": "交差点",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-gentsukinonidankaiuset",
+      "ks-nidankaiusetsunomatsub"
+    ],
+    "description": "片側に 車線が 3つ 以上 ある 道路の、交通整理の ある 交差点では、一般の 原付は 二段階右折を します。標識で 指定が あれば それに 従います。"
+  },
+  {
+    "id": "ks-chuushatoteishanochiga",
+    "name": "駐車と停車のちがい",
+    "reading": "ちゅうしゃとていしゃのちがい",
+    "journey": "kosaten",
+    "category": "駐車と停車",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "kosaten:chusha",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-chuusha",
+      "ks-teisha"
+    ],
+    "description": "客待ちや 荷待ち、5分を こえる 荷物の 積みおろし、運転する 人が はなれて すぐ 動かせない 状態は 駐車です。それ以外の 止まりかたが 停車です。"
+  },
+  {
+    "id": "ks-gofuninainonimotsunots",
+    "name": "5分以内の荷物の積みおろし",
+    "reading": "ごふんいないのにもつのつみおろし",
+    "journey": "kosaten",
+    "category": "駐車と停車",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "kosaten:chusha",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-teisha",
+      "ks-chuushatoteishanochiga"
+    ],
+    "description": "5分を こえない 荷物の 積みおろしの ための 止まりかたは 停車です。5分を こえると 駐車に なります。"
+  },
+  {
+    "id": "ks-hitononoriori",
+    "name": "人の乗り降り",
+    "reading": "ひとののりおり",
+    "journey": "kosaten",
+    "category": "駐車と停車",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧍",
+    "mapNode": "kosaten:chusha",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-teisha",
+      "ks-hitomachihachuusha"
+    ],
+    "description": "人が 乗ったり 降りたり する ための 止まりかたは、時間に 関係なく 停車です。"
+  },
+  {
+    "id": "ks-chuuteishakinshinobash",
+    "name": "駐停車禁止の場所",
+    "reading": "ちゅうていしゃきんしのばしょ",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚫",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-kousatenkaragometoru",
+      "ks-fumikirikarajyuumetoru"
+    ],
+    "description": "交差点・横断歩道・自転車横断帯・踏切・軌道敷内・坂の 頂上付近・急な 坂・トンネルや、それらの 近くの 決められた 場所では、駐車も 停車も できません。"
+  },
+  {
+    "id": "ks-kousatenkaragometoru",
+    "name": "交差点から5m",
+    "reading": "こうさてんからごめーとる",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "➕",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-magarikadokaragometoru",
+      "ks-chuuteishakinshinobash"
+    ],
+    "description": "交差点の はしから 5m以内は 駐停車禁止です。交差点を 曲がる 車や 渡る 人から 見えにくく なるからです。"
+  },
+  {
+    "id": "ks-oudanhodoukaragometoru",
+    "name": "横断歩道から5m",
+    "reading": "おうだんほどうからごめーとる",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🦓",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-jitenshaoudantaikarago",
+      "ks-chuuteishakinshinobash"
+    ],
+    "description": "横断歩道の 前と 後ろの はしから、それぞれ 5m以内は 駐停車禁止です。渡る 人が 車の かげに かくれないように する ためです。"
+  },
+  {
+    "id": "ks-fumikirikarajyuumetoru",
+    "name": "踏切から10m",
+    "reading": "ふみきりからじゅうめーとる",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚃",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-chuuteishakinshinobash",
+      "ks-fumikiri"
+    ],
+    "description": "踏切の 前と 後ろの はしから、それぞれ 10m以内は 駐停車禁止です。踏切そのものも 駐停車禁止です。"
+  },
+  {
+    "id": "ks-basuteikarajyuumetoru",
+    "name": "バス停から10m",
+    "reading": "ばすていからじゅうめーとる",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚏",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-basuteinounkoujikanchu",
+      "ks-basutei"
+    ],
+    "description": "バス停や 路面電車の 停留所の 標示板(標示柱)から 10m以内は、バスなどが 走っている 時間の あいだ 駐停車禁止です。"
+  },
+  {
+    "id": "ks-kidoushikinainochuutei",
+    "name": "軌道敷内の駐停車",
+    "reading": "きどうしきないのちゅうていしゃ",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚋",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-chuuteishakinshinobash",
+      "ks-anzenchitainohidarigaw"
+    ],
+    "description": "軌道敷内は 路面電車が 走る 部分です。ここに 車を 止めると 路面電車が 通れないので、駐車も 停車も できません。"
+  },
+  {
+    "id": "ks-chuushakinshinobasho",
+    "name": "駐車禁止の場所",
+    "reading": "ちゅうしゃきんしのばしょ",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚫",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-shoukasenkaragometoru",
+      "ks-shakonodeiriguchikaras"
+    ],
+    "description": "車庫などの 出入口から 3m・工事区域の はし・消火栓などから 5m・火災報知機から 1m以内などは 駐車禁止です。停車は できます。"
+  },
+  {
+    "id": "ks-shoukasenkaragometoru",
+    "name": "消火栓から5m",
+    "reading": "しょうかせんからごめーとる",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧯",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-shoukasen",
+      "ks-shoubouyouboukasuisouk"
+    ],
+    "description": "消火栓や 指定消防水利の 標識が ある ところから 5m以内は 駐車禁止です。火事の とき 消防車が 水を とれるように する ためです。"
+  },
+  {
+    "id": "ks-shakonodeiriguchikaras",
+    "name": "車庫の出入口から3m",
+    "reading": "しゃこのでいりぐちからさんめーとる",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏠",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-shako",
+      "ks-chuushakinshinobasho"
+    ],
+    "description": "駐車場や 車庫などの 自動車用の 出入口から 3m以内は 駐車禁止です。車の 出入りを ふさがない ためです。"
+  },
+  {
+    "id": "ks-kasaihouchikikaraichim",
+    "name": "火災報知機から1m",
+    "reading": "かさいほうちきからいちめーとる",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔥",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-chuushakinshinobasho",
+      "ks-shoukasenkaragometoru"
+    ],
+    "description": "火災報知機から 1m以内は 駐車禁止です。⚠️ 3mでも 5mでも なく 1mです。"
+  },
+  {
+    "id": "ks-fumikirinoichijiteishi",
+    "name": "踏切の一時停止",
+    "reading": "ふみきりのいちじていし",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🛑",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-fumikirinoteishisen",
+      "ks-fumikirinosayuunoanzen"
+    ],
+    "description": "踏切を 渡る ときは、踏切の 手前(停止線が あれば その手前)で 一時停止して、安全を 確かめてから 進みます。"
+  },
+  {
+    "id": "ks-fumikirinosayuunoanzen",
+    "name": "踏切の左右の安全確認",
+    "reading": "ふみきりのさゆうのあんぜんかくにん",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👀",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-madowoaketeotowokiku",
+      "ks-hantaikaranoressha"
+    ],
+    "description": "踏切では 止まった あと、右と 左の 両方を 目で 見て、耳でも 列車の 音を 確かめます。"
+  },
+  {
+    "id": "ks-madowoaketeotowokiku",
+    "name": "窓を開けて音を聞く",
+    "reading": "まどをあけておとをきく",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👂",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-fumikirinosayuunoanzen",
+      "ks-fumikirinoichijiteishi"
+    ],
+    "description": "踏切の 手前で 止まったら、窓を 開けるなどして 自分の 耳で 列車が 近づく 音を 確かめます。"
+  },
+  {
+    "id": "ks-fumikirinomukougawanoy",
+    "name": "踏切の向こう側の余地",
+    "reading": "ふみきりのむこうがわのよち",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-fumikiri",
+      "ks-kousatennihairanaitoki"
+    ],
+    "description": "踏切の 向こう側が 混んでいて、渡ると 踏切の 中で 止まって しまいそうな ときは、踏切に 入っては いけません。"
+  },
+  {
+    "id": "ks-fumikiridetomattara",
+    "name": "踏切で止まったら",
+    "reading": "ふみきりでとまったら",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🆘",
+    "mapNode": "kosaten:hosha",
+    "field": "踏切",
+    "ruleset": "仮免",
+    "relatedTerms": [
+      "ks-fumikirishishouhouchis",
+      "ks-fumikirideenjingatomat"
+    ],
+    "description": "踏切の 中で 車が 動かなく なったら、すぐに 列車の 運転士などに 知らせ、車を 踏切の 外に 動かします。"
+  },
+  {
+    "id": "ks-oogatashanonairinsa",
+    "name": "大型車の内輪差",
+    "reading": "おおがたしゃのないりんさ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚛",
+    "mapNode": "kosaten:nairin",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-nairinsa",
+      "ks-nirinshanomakikomi"
+    ],
+    "description": "大型車ほど 内輪差が 大きく、左後ろも 見えにくいです。⚠️ 大型車の 左側に 自転車などが 並ぶと 巻き込まれやすいので、運転する 人は 左後ろを よく 確かめます。"
+  },
+  {
+    "id": "ks-gairinsa",
+    "name": "外輪差",
+    "reading": "がいりんさ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "kosaten:nairin",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-nairinsa",
+      "ks-oogatashanonairinsa"
+    ],
+    "description": "曲がる とき、前の 外側の 車輪と 後ろの 外側の 車輪が 通る 道すじの 差です。⚠️ 内側の 差は 内輪差です。バックで 曲がる ときは 車の 前が 外に ふくらみます。"
+  },
+  {
+    "id": "ks-nirinshanomakikomi",
+    "name": "二輪車の巻き込み",
+    "reading": "にりんしゃのまきこみ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏍️",
+    "mapNode": "kosaten:nairin",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-makikomi",
+      "ks-sasetsuhahidarihashini"
+    ],
+    "description": "左折の 前は 合図を 出し、左後ろを ミラーと 目で 確かめて 二輪車を 巻き込まないように します。左はしに 寄って、すき間に 入られないように します。"
+  },
+  {
+    "id": "ks-ippoutsuukouronousetsu",
+    "name": "一方通行路の右折",
+    "reading": "いっぽうつうこうろのうせつ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "➡️",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-usetsuhachuuouniyoru",
+      "ks-usetsu"
+    ],
+    "description": "一方通行の 道で 右折する ときは、前もって 道路の 右はしに 寄り、交差点の 中心の 内側を 徐行します。⚠️ 中央では なく 右はしに 寄ります。"
+  },
+  {
+    "id": "ks-usetsumachinoichi",
+    "name": "右折待ちの位置",
+    "reading": "うせつまちのいち",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏳",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-usetsujihachokushinsha",
+      "ks-taikoushanokagenonirin"
+    ],
+    "description": "右折で 対向車を 待つ ときは、交差点の 中心の 近くで、まっすぐ 来る 車の じゃまに ならない ところで 待ちます。"
+  },
+  {
+    "id": "ks-taikoushanokagenonirin",
+    "name": "対向車のかげの二輪車",
+    "reading": "たいこうしゃのかげのにりんしゃ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏍️",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-usetsumachinoichi",
+      "ks-usetsujihachokushinsha"
+    ],
+    "description": "右折の とき、向こうから まっすぐ 来る 車の かげに 二輪車が かくれて 見えない ことが あります。「いる かもしれない」と 考えて 確かめます。"
+  },
+  {
+    "id": "ks-usetsujinooudanhokoush",
+    "name": "右折時の横断歩行者",
+    "reading": "うせつじのおうだんほこうしゃ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🦓",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-usetsu",
+      "ks-taikoushanokagenonirin"
+    ],
+    "description": "右折や 左折で 曲がった 先に 横断歩道が あれば、渡る 人や 自転車が いるか 確かめ、いれば 手前で 止まって 先に 渡って もらいます。"
+  },
+  {
+    "id": "ks-kousatennihairanaitoki",
+    "name": "交差点に入らないとき",
+    "reading": "こうさてんにはいらないとき",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚫",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-fumikirinomukougawanoy",
+      "ks-kousaten"
+    ],
+    "description": "信号の ある 交差点で、前が 混んでいて 入ると 交差点の 中で 止まりそうな ときは、青でも 交差点に 入っては いけません。"
+  },
+  {
+    "id": "ks-michihabagaakirakanihi",
+    "name": "道幅が明らかに広い",
+    "reading": "みちはばがあきらかにひろい",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "↔️",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-michihabagahiroidouron",
+      "ks-sahouyuusen"
+    ],
+    "description": "優先に なるのは、相手の 道の 幅が「明らかに」広い ときです。⚠️ 少し 広い くらいでは 優先に ならず、左方優先などで 決めます。"
+  },
+  {
+    "id": "ks-romendenshanoyuusen",
+    "name": "路面電車の優先",
+    "reading": "ろめんでんしゃのゆうせん",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚋",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-sahouyuusen",
+      "ks-koutsuuseirinookonawar"
+    ],
+    "description": "信号などの ない 道幅が 同じくらいの 交差点では、車は 左右 どちらから 来ても 路面電車の じゃまを しては いけません。⚠️ 右から 来る 路面電車も 先です。"
+  },
+  {
+    "id": "ks-kanjyoukousatennihairu",
+    "name": "環状交差点に入るとき",
+    "reading": "かんじょうこうさてんにはいるとき",
+    "journey": "kosaten",
+    "category": "環状交差点",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🐢",
+    "mapNode": "kosaten:kanjo",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-kanjyoukousatennonakan",
+      "ks-kanjyoukousatennohokousha"
+    ],
+    "description": "環状交差点に 入る ときは 徐行し、中を 回っている 車の じゃまを しないように します。"
+  },
+  {
+    "id": "ks-kanjyoukousatennohidar",
+    "name": "環状交差点の左寄り",
+    "reading": "かんじょうこうさてんのひだりより",
+    "journey": "kosaten",
+    "category": "環状交差点",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⬅️",
+    "mapNode": "kosaten:kanjo",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-kanjyoukousatennomigim",
+      "ks-kanjyoukousatennihairu"
+    ],
+    "description": "環状交差点では 左折・右折・直進・転回の どれでも、前もって 道路の 左はしに 寄り、環状交差点の はしに 沿って 徐行します。⚠️ 右折でも 中央に 寄りません。"
+  },
+  {
+    "id": "ks-kanjyoukousatennohokousha",
+    "name": "環状交差点の歩行者",
+    "reading": "かんじょうこうさてんのほこうしゃ",
+    "journey": "kosaten",
+    "category": "環状交差点",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚶",
+    "mapNode": "kosaten:kanjo",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-kanjyoukousatennihairu",
+      "ks-kanjyoukousatennonakan"
+    ],
+    "description": "環状交差点に 入る ときや 中を 回る ときは、入ろうと する 車・中の 車に くわえて、その 近くを 渡る 歩行者にも とくに 気を つけます。"
+  },
+  {
+    "id": "ks-nidankaiusetsunomatsub",
+    "name": "二段階右折の待つ場所",
+    "reading": "にだんかいうせつのまつばしょ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏳",
+    "mapNode": "kosaten:nidan",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-nidankaiusetsu",
+      "ks-gentsukinonidankaiuset"
+    ],
+    "description": "二段階右折では、左はしに 沿って 向こう側まで 進んだら そこで 右に 向きを 変え、進む 方向の 信号が 青に なるのを 待ってから 進みます。"
+  },
+  {
+    "id": "ks-shingounonaikousatenno",
+    "name": "信号のない交差点の原付の右折",
+    "reading": "しんごうのないこうさてんのげんつきのうせつ",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛵",
+    "mapNode": "kosaten:nidan",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-gentsukinonidankaiuset",
+      "ks-katagawasanshasenijyou"
+    ],
+    "description": "⚠️ 一般の 原付が 二段階右折を するのは、信号などで 交通整理の ある 交差点だけです。信号の ない 交差点では、車と 同じく 中央に 寄って 右折します。"
+  },
+  {
+    "id": "ks-suguuntendekinaijyouta",
+    "name": "すぐ運転できない状態",
+    "reading": "すぐうんてんできないじょうたい",
+    "journey": "kosaten",
+    "category": "駐車と停車",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚶",
+    "mapNode": "kosaten:chusha",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-chuushatoteishanochiga",
+      "ks-hitomachihachuusha"
+    ],
+    "description": "運転する 人が 車から はなれて すぐに 動かせない 状態は、短い 時間でも 駐車です。⚠️「5分 以内なら 停車」は 荷物の 積みおろしの ときだけです。"
+  },
+  {
+    "id": "ks-sakanochoujyoufukinnoc",
+    "name": "坂の頂上付近の駐停車",
+    "reading": "さかのちょうじょうふきんのちゅうていしゃ",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⛰️",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-koubainokyuunasakanoch",
+      "ks-chuuteishakinshinobash"
+    ],
+    "description": "坂の 頂上付近は 向こう側から 見えにくいので 駐停車禁止です。"
+  },
+  {
+    "id": "ks-koubainokyuunasakanoch",
+    "name": "こう配の急な坂の駐停車",
+    "reading": "こうばいのきゅうなさかのちゅうていしゃ",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📐",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-sakanochoujyoufukinnoc",
+      "ks-sakamichinochuusha"
+    ],
+    "description": "こう配の 急な 坂は、上りも 下りも 駐停車禁止です。⚠️ 追い越しが 禁止なのは 急な 下り坂だけなので、まちがえないように します。"
+  },
+  {
+    "id": "ks-tonnerunochuuteisha",
+    "name": "トンネルの駐停車",
+    "reading": "とんねるのちゅうていしゃ",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🕳️",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-chuuteishakinshinobash",
+      "ks-sakanochoujyoufukinnoc"
+    ],
+    "description": "トンネルの 中は 駐停車禁止です。⚠️ 追い越しは 車両通行帯が あれば できますが、駐停車は 車両通行帯が あっても できません。"
+  },
+  {
+    "id": "ks-magarikadokaragometoru",
+    "name": "曲がり角から5m",
+    "reading": "まがりかどからごめーとる",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "↪️",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-kousatenkaragometoru",
+      "ks-magarikado"
+    ],
+    "description": "道路の 曲がり角から 5m以内は 駐停車禁止です。"
+  },
+  {
+    "id": "ks-anzenchitainohidarigaw",
+    "name": "安全地帯の左側とその前後10m",
+    "reading": "あんぜんちたいのひだりがわとそのぜんごじゅうめーとる",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏝️",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-basuteikarajyuumetoru",
+      "ks-chuuteishakinshinobash"
+    ],
+    "description": "安全地帯の 左側と、その 前と 後ろの はしから それぞれ 10m以内は 駐停車禁止です。⚠️ 横断歩道の 5mと ちがい 10mです。"
+  },
+  {
+    "id": "ks-jitenshaoudantaikarago",
+    "name": "自転車横断帯から5m",
+    "reading": "じてんしゃおうだんたいからごめーとる",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚲",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-oudanhodoukaragometoru",
+      "ks-chuuteishakinshinobash"
+    ],
+    "description": "自転車横断帯の 前と 後ろの はしから、それぞれ 5m以内は 駐停車禁止です。横断歩道と 同じです。"
+  },
+  {
+    "id": "ks-basuteinounkoujikanchu",
+    "name": "バス停の運行時間中",
+    "reading": "ばすていのうんこうじかんちゅう",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🕘",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-basuteikarajyuumetoru",
+      "ks-basutei"
+    ],
+    "description": "バス停から 10m以内が 駐停車禁止なのは、バスが 走っている 時間だけです。⚠️ 運行時間の 外なら、ほかの 禁止が なければ 止められます。"
+  },
+  {
+    "id": "ks-dourokoujinokuikinohas",
+    "name": "道路工事の区域の端から5m",
+    "reading": "どうろこうじのくいきのはしからごめーとる",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚧",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-chuushakinshinobasho",
+      "ks-shoubouyoukikaikigunoo"
+    ],
+    "description": "道路工事の 区域の はしから 5m以内は 駐車禁止です。⚠️ 駐車禁止なので、停車は できます。"
+  },
+  {
+    "id": "ks-shoubouyoukikaikigunoo",
+    "name": "消防用機械器具の置場から5m",
+    "reading": "しょうぼうようきかいきぐのおきばからごめーとる",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚒",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-shoubouyouboukasuisouk",
+      "ks-shoukasenkaragometoru"
+    ],
+    "description": "消防用の 機械や 器具の 置場、その 出入口から 5m以内は 駐車禁止です。"
+  },
+  {
+    "id": "ks-shoubouyouboukasuisouk",
+    "name": "消防用防火水そうから5m",
+    "reading": "しょうぼうようぼうかすいそうからごめーとる",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💧",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-shoubouyoukikaikigunoo",
+      "ks-shoukasenkaragometoru"
+    ],
+    "description": "消防用の 防火水そうの はしや 出入口、その 吸水口などから 5m以内は 駐車禁止です。"
+  },
+  {
+    "id": "ks-migigawanisantengometo",
+    "name": "右側に3.5m以上の余地",
+    "reading": "みぎがわにさんてんごめーとるいじょうのよち",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-yochiganakutemochuusha",
+      "ks-chuushakinshinobasho"
+    ],
+    "description": "駐車した とき、車の 右側の 道路に 3.5m以上の 余地が 残らない 場所では 駐車できません。⚠️「以下」ではなく「3.5m以上 残す」です。"
+  },
+  {
+    "id": "ks-yochiganakutemochuusha",
+    "name": "余地がなくても駐車できるとき",
+    "reading": "よちがなくてもちゅうしゃできるとき",
+    "journey": "kosaten",
+    "category": "駐車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "kosaten:chukin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-migigawanisantengometo",
+      "ks-suguuntendekinaijyouta"
+    ],
+    "description": "右側に 3.5mの 余地が なくても、荷物の 積みおろしで 運転する 人が はなれない(すぐ 動かせる)ときや、けが人を 助ける ために やむを えない ときは 駐車できます。"
+  },
+  {
+    "id": "ks-douronohidarihashiniso",
+    "name": "道路の左端に沿って止める",
+    "reading": "どうろのひだりはしにそってとめる",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⬅️",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-reitennanagometoruwoko",
+      "ks-nijyuuchuusha"
+    ],
+    "description": "駐車や 停車を する ときは、道路の 左はしに 沿い、ほかの 交通の じゃまに ならないように 止めます。"
+  },
+  {
+    "id": "ks-reitennanagometoruwoko",
+    "name": "0.75mをこえる路側帯",
+    "reading": "れいてんななごめーとるをこえるろそくたい",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-reitennanagometoruikan",
+      "ks-douronohidarihashiniso"
+    ],
+    "description": "幅が 0.75mを こえる 路側帯では、中に 入って 止め、車の 左側に 0.75mの 余地を 残します。⚠️ 白線が 2本の 路側帯には 入れません。"
+  },
+  {
+    "id": "ks-reitennanagometoruikan",
+    "name": "0.75m以下の路側帯",
+    "reading": "れいてんななごめーとるいかのろそくたい",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-reitennanagometoruwoko",
+      "ks-douronohidarihashiniso"
+    ],
+    "description": "幅が 0.75m以下の 路側帯では、中に 入らず、車道の 左はしに 沿って 止めます。⚠️ 0.75m「を こえる」か「以下」かで 止めかたが ちがいます。"
+  },
+  {
+    "id": "ks-nijyuuchuusha",
+    "name": "二重駐車",
+    "reading": "にじゅうちゅうしゃ",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚗",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-douronohidarihashiniso",
+      "ks-chuushatoteishanochiga"
+    ],
+    "description": "道路の はしに 止まっている 車の 横に ならべて 止める ことです。道を ふさぐので、ならべて 駐車や 停車を しては いけません。"
+  },
+  {
+    "id": "ks-sakamichinochuusha",
+    "name": "坂道の駐車",
+    "reading": "さかみちのちゅうしゃ",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⛰️",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-handoburekiwokakeru",
+      "ks-koubainokyuunasakanoch"
+    ],
+    "description": "坂道で 車から はなれる ときは、ハンドブレーキを かけ、ギアを 上り坂は ロー・下り坂は バック(AT車は P)に 入れ、輪止めを します。"
+  },
+  {
+    "id": "ks-handoburekiwokakeru",
+    "name": "ハンドブレーキをかける",
+    "reading": "はんどぶれーきをかける",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🅿️",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-sakamichinochuusha",
+      "ks-kurumakarahanarerutoki"
+    ],
+    "description": "車から はなれる ときは、エンジンを 止め、ハンドブレーキを しっかり かけて、車が 動き出さないように します。"
+  },
+  {
+    "id": "ks-yakannochuuteisha",
+    "name": "夜間の駐停車",
+    "reading": "やかんのちゅうていしゃ",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌙",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-douronohidarihashiniso",
+      "ks-handoburekiwokakeru"
+    ],
+    "description": "夜に 幅 5.5m以上の 道路に 駐車や 停車を する ときは、非常点滅表示灯・駐車灯・尾灯の どれかを つけて、後ろの 車に 知らせます。⚠️ 後ろから よく 見える 明るい 場所などは 別です。"
+  },
+  {
+    "id": "ks-pakingumeta",
+    "name": "パーキング・メーター",
+    "reading": "ぱーきんぐめーたー",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏲️",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-pakinguchiketto",
+      "ks-houchisharyou"
+    ],
+    "description": "時間を 決めて 駐車できる 区間(時間制限駐車区間)に ある 機械です。止めたら すぐに 使い、決められた 時間の 中で 車を 動かします。"
+  },
+  {
+    "id": "ks-pakinguchiketto",
+    "name": "パーキング・チケット",
+    "reading": "ぱーきんぐちけっと",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎫",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-pakingumeta",
+      "ks-houchisharyou"
+    ],
+    "description": "時間制限駐車区間で、機械から 発行される 券です。止めたら すぐに 受けとって 車の 見やすい ところに 置き、決められた 時間で 動かします。"
+  },
+  {
+    "id": "ks-houchisharyou",
+    "name": "放置車両",
+    "reading": "ほうちしゃりょう",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚫",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-suguuntendekinaijyouta",
+      "ks-pakingumeta"
+    ],
+    "description": "違法な 駐車で、運転する 人が はなれて すぐに 動かせない 車の ことです。車の 持ち主(使用者)も 責任を 問われます。"
+  },
+  {
+    "id": "ks-kurumakarahanarerutoki",
+    "name": "車から離れるときの盗難防止",
+    "reading": "くるまからはなれるときのとうなんぼうし",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔑",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-handoburekiwokakeru",
+      "ks-dourowoshakogawarinish"
+    ],
+    "description": "車から はなれる ときは、エンジンを 止めて キーを 持ち、窓を 閉めて ドアを ロックします。ほかの 人に 勝手に 運転されないように する ためです。"
+  },
+  {
+    "id": "ks-fumikirinoshingouki",
+    "name": "踏切の信号機",
+    "reading": "ふみきりのしんごうき",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚦",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-fumikirinoichijiteishi",
+      "ks-fumikirinoteishisen"
+    ],
+    "description": "踏切に 信号機が ある ときは、その 信号に 従います。⚠️ 青信号なら 一時停止しないで 進めますが、安全は 確かめます。"
+  },
+  {
+    "id": "ks-fumikirinonakadehensok",
+    "name": "踏切の中で変速しない",
+    "reading": "ふみきりのなかでへんそくしない",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⚙️",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-rakurin",
+      "ks-fumikirideenjingatomat"
+    ],
+    "description": "踏切の 中で エンジンが 止まらないように、ギアを 変えず、発進した ときの 低い ギアの まま 一気に 渡ります。"
+  },
+  {
+    "id": "ks-rakurin",
+    "name": "落輪",
+    "reading": "らくりん",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛞",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-fumikirinonakadehensok",
+      "ks-fumikirinomukougawanoy"
+    ],
+    "description": "車輪が 道路の はしから 落ちて しまう ことです。踏切では 左に 寄りすぎず、歩行者や 対向車に 気を つけながら やや 中央寄りを 通ります。"
+  },
+  {
+    "id": "ks-shadankigaorihajimetar",
+    "name": "遮断機が下り始めたら",
+    "reading": "しゃだんきがおりはじめたら",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚧",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-shadanki",
+      "ks-keihoukiganatteirutoki"
+    ],
+    "description": "遮断機が 下り始めたら、まだ 下りきって いなくても 踏切に 入っては いけません。⚠️ 急いで 渡るのは だめです。"
+  },
+  {
+    "id": "ks-keihoukiganatteirutoki",
+    "name": "警報機が鳴っているとき",
+    "reading": "けいほうきがなっているとき",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔔",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-keihouki",
+      "ks-keihoukiganatteinakutemo"
+    ],
+    "description": "警報機が 鳴っている あいだは 踏切に 入っては いけません。⚠️ 列車が 見えなくても 待ちます。"
+  },
+  {
+    "id": "ks-fumikirishishouhouchis",
+    "name": "踏切支障報知装置",
+    "reading": "ふみきりししょうほうちそうち",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔴",
+    "mapNode": "kosaten:hosha",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-fumikiridetomattara",
+      "ks-hatsuentou"
+    ],
+    "description": "警報機の 柱などに ある 押しボタン式の 非常ボタンです。踏切で 車が 動けなく なったら、押して 列車に 知らせます。"
+  },
+  {
+    "id": "ks-hatsuentou",
+    "name": "発炎筒",
+    "reading": "はつえんとう",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧨",
+    "mapNode": "kosaten:hosha",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-fumikirishishouhouchis",
+      "ks-kemurinodeyasuimonodeaizu"
+    ],
+    "description": "火を つけると 赤く 光る 非常用の 道具で、車に のせておきます。踏切に 非常ボタンが ない ときは、発炎筒などで 列車に 知らせます。"
+  },
+  {
+    "id": "ks-fumikirideenjingatomat",
+    "name": "踏切でエンジンが止まったら",
+    "reading": "ふみきりでえんじんがとまったら",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚗",
+    "mapNode": "kosaten:hosha",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-fumikiridetomattara",
+      "ks-fumikirinonakadehensok"
+    ],
+    "description": "踏切の 中で エンジンが 止まったら、あわてず すぐに 非常ボタンなどで 列車に 知らせ、車を 踏切の 外に 動かします。"
+  },
+  {
+    "id": "ks-kemurinodeyasuimonodeaizu",
+    "name": "煙の出やすいもので合図",
+    "reading": "けむりのでやすいものであいず",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💨",
+    "mapNode": "kosaten:hosha",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-hatsuentou",
+      "ks-fumikirishishouhouchis"
+    ],
+    "description": "非常ボタンも 発炎筒も ない ときや 使い切った ときは、煙の 出やすい ものを 近くで 燃やすなどして 列車に 知らせます。"
+  },
+  {
+    "id": "ks-hayamawari",
+    "name": "早回り",
+    "reading": "はやまわり",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "↗️",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-kousatennochuushinnosu",
+      "ks-usetsuhachuuouniyoru"
+    ],
+    "description": "右折の とき、交差点の 中心の すぐ 内側を 通らずに 手前で ななめに 曲がる ことです。⚠️ 対向車や 歩行者と ぶつかりやすいので しません。"
+  },
+  {
+    "id": "ks-oomawari",
+    "name": "大回り",
+    "reading": "おおまわり",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "↩️",
+    "mapNode": "kosaten:sasetsu",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-sasetsuhahidarihashini",
+      "ks-makikomi"
+    ],
+    "description": "左折の とき、いったん 右に ふくらんでから 曲がる ことです。⚠️ 左に すき間が でき 二輪車が 入りやすいので、左はしに 寄ったまま 曲がります。"
+  },
+  {
+    "id": "ks-kousadouronokurumawosa",
+    "name": "交差道路の車を妨げない",
+    "reading": "こうさどうろのくるまをさまたげない",
+    "journey": "kosaten",
+    "category": "交差点の通りかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛑",
+    "mapNode": "kosaten:yusen",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-yuusendouronokousaten",
+      "ks-sahouyuusen"
+    ],
+    "description": "一時停止の 標識が ある 交差点では、停止線の 手前で 止まった あと、横の 道を 通る 車の じゃまを しては いけません。⚠️ 止まれば 先に 行けるわけでは ありません。"
+  },
+  {
+    "id": "ks-fumikirinoteishisen",
+    "name": "踏切の停止線",
+    "reading": "ふみきりのていしせん",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏹️",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-fumikirinoichijiteishi",
+      "ks-fumikirinoshingouki"
+    ],
+    "description": "踏切の 手前に 停止線が ある ときは、停止線の 手前で 一時停止します。停止線が なければ 踏切の すぐ 手前で 止まります。"
+  },
+  {
+    "id": "ks-hantaikaranoressha",
+    "name": "反対からの列車",
+    "reading": "はんたいからのれっしゃ",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔁",
+    "mapNode": "kosaten:fumikiri",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-fumikirinosayuunoanzen",
+      "ks-ressha"
+    ],
+    "description": "片方からの 列車が 通り過ぎても、すぐ 反対から 別の 列車が 来る ことが あります。通り過ぎた あとも 左右を 確かめます。"
+  },
+  {
+    "id": "ks-hitomachihachuusha",
+    "name": "人待ちは駐車",
+    "reading": "ひとまちはちゅうしゃ",
+    "journey": "kosaten",
+    "category": "駐車と停車",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⌛",
+    "mapNode": "kosaten:chusha",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-hitononoriori",
+      "ks-chuushatoteishanochiga"
+    ],
+    "description": "人を 待つ ために 続けて 止まって いるのは、客待ちと 同じく 駐車です。⚠️ 運転席に いて すぐ 動かせても 駐車です。乗り降りの ための 止まりかただけが 停車です。"
+  },
+  {
+    "id": "ks-koshouhachuusha",
+    "name": "故障は駐車",
+    "reading": "こしょうはちゅうしゃ",
+    "journey": "kosaten",
+    "category": "駐車と停車",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔧",
+    "mapNode": "kosaten:chusha",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-chuushatoteishanochiga",
+      "ks-suguuntendekinaijyouta"
+    ],
+    "description": "故障で 車が 続けて 止まって いるのは 駐車です。⚠️ 運転する 人が 乗っていても 駐車に なります。"
+  },
+  {
+    "id": "ks-chuushakinshibashodeno",
+    "name": "駐車禁止場所での停車",
+    "reading": "ちゅうしゃきんしばしょでのていしゃ",
+    "journey": "kosaten",
+    "category": "駐車と停車",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏸️",
+    "mapNode": "kosaten:chusha",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-chuushakinshinobasho",
+      "ks-teisha"
+    ],
+    "description": "駐車禁止の 場所でも、人の 乗り降りなどの 停車は できます。⚠️ 駐停車禁止の 場所では 停車も できません。"
+  },
+  {
+    "id": "ks-kikenwofusegutamenoich",
+    "name": "危険を防ぐための一時停止",
+    "reading": "きけんをふせぐためのいちじていし",
+    "journey": "kosaten",
+    "category": "駐停車禁止",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛑",
+    "mapNode": "kosaten:chuteikin",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-chuuteishakinshinobash",
+      "ks-kousatennihairanaitoki"
+    ],
+    "description": "駐停車禁止の 場所でも、信号や 警察官の 指示に 従う ときや、危険を 防ぐ ために 一時停止する ことは できます。"
+  },
+  {
+    "id": "ks-keihoukiganatteinakutemo",
+    "name": "警報機が鳴っていなくても確かめる",
+    "reading": "けいほうきがなっていなくてもたしかめる",
+    "journey": "kosaten",
+    "category": "踏切",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👀",
+    "mapNode": "kosaten:hosha",
+    "field": "踏切",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-keihoukiganatteirutoki",
+      "ks-fumikirinosayuunoanzen"
+    ],
+    "description": "警報機が 鳴っていない ときや 遮断機が 下りていない ときでも、機械が 故障している ことが あります。⚠️ かならず 自分で 安全を 確かめます。"
+  },
+  {
+    "id": "ks-usasetsunoshinrohenkou",
+    "name": "右左折する車の進路変更",
+    "reading": "うさせつするくるまのしんろへんこう",
+    "journey": "kosaten",
+    "category": "右左折",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "↔️",
+    "mapNode": "kosaten:usetsu",
+    "field": "交差点",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-sasetsuhahidarihashini",
+      "ks-usetsuhachuuouniyoru"
+    ],
+    "description": "右折や 左折の ために 前の 車が 合図を して 中央や 左はしに 寄ろうと している ときは、後ろの 車は その 進路変更を じゃましては いけません。"
+  },
+  {
+    "id": "ks-dourowoshakogawarinish",
+    "name": "道路を車庫がわりにしない",
+    "reading": "どうろをしゃこがわりにしない",
+    "journey": "kosaten",
+    "category": "止めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏠",
+    "mapNode": "kosaten:hoho",
+    "field": "駐車・停車",
+    "ruleset": "本免",
+    "relatedTerms": [
+      "ks-shako",
+      "ks-chuushajyou"
+    ],
+    "description": "自動車を 持つ 人は、道路 以外の 場所に 車を しまう 場所を 用意します。道路を 車庫の かわりに 使っては いけません。"
+  }
+]

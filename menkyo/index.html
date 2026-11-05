@@ -582,8 +582,8 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=86800f7b"></script>
-<script src="menkyo.js?v=2e2e1108"></script>
+<script src="terms.js?v=9009c74b"></script>
+<script src="menkyo.js?v=ad04ccc5"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
    前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
@@ -600,7 +600,7 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
                  {id:"kankoku", name:"フリック韓国語", icon:"🇰🇷", dir:"kankoku/"}, {id:"supein", name:"フリックスペイン語", icon:"🇪🇸", dir:"supein/"},
                  {id:"eigo", name:"フリック英語", icon:"🔤", dir:"eigo/"},
                  {id:"rika", name:"フリック理科", icon:"🔬", dir:"rika/"},
-                 {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"seibi/"}, {id:"pilot", name:"フリックパイロット", icon:"✈️", dir:"pilot/"}, {id:"cabin", name:"フリックキャビンアテンダント", icon:"💺", dir:"cabin/"}, {id:"kisho", name:"フリック気象予報士", icon:"🌦", dir:"kisho/"},
+                 {id:"seibi", name:"フリック整備士", icon:"🔧", dir:"seibi/"}, {id:"pilot", name:"フリックパイロット", icon:"✈️", dir:"pilot/"}, {id:"cabin", name:"フリックキャビンアテンダント", icon:"💺", dir:"cabin/"}, {id:"kisho", name:"フリック気象予報士", icon:"🌦", dir:"kisho/"}, {id:"menkyo", name:"フリック自動車運転免許", icon:"🚗", dir:"menkyo/"},
                  {id:"patissier", name:"パティシエフリック", icon:"🍰", dir:"patissier/"},
                  {id:"kokugo", name:"フリック国語", icon:"📖", dir:"kokugo/"},
                  {id:"kanken", name:"フリック漢字", icon:"✍️", dir:"kanken/"},
@@ -637,7 +637,7 @@ const SERIES_CHAPTERS = [
   { title:"教科をひろげる", ids:["rekishi", "world", "eikaiwa", "supein", "kankoku", "kyoryu", "uchu", "karada", "ketsueki", "tetsugaku"] },
   { title:"スポーツ", ids:["soccer", "basket", "baseball", "boxing", "volley", "tennis", "supercar"] },
   { title:"くらしと心", ids:["kaji", "manner", "shinri", "adler", "mentalist"] },
-  { title:"夢のしごと", ids:["patissier", "chef", "hanaya", "noka", "yoho", "ishi", "kango", "shika", "yakuzai", "jui", "inu", "anma", "keisatsu", "shobo", "kyukyutai", "hoiku", "kyoshi", "biyo", "daiku", "seibi", "pilot", "cabin", "bengoshi", "zeirishi", "kisho", "eiga", "gamedev", "code"] },
+  { title:"夢のしごと", ids:["patissier", "chef", "hanaya", "noka", "yoho", "ishi", "kango", "shika", "yakuzai", "jui", "inu", "anma", "keisatsu", "shobo", "kyukyutai", "hoiku", "kyoshi", "biyo", "daiku", "seibi", "menkyo", "pilot", "cabin", "bengoshi", "zeirishi", "kisho", "eiga", "gamedev", "code"] },
   { title:"未来をのぞく", ids:["ai", "sumaho", "pasokon", "kabu", "toshika", "kigyo"] } ];
 function gameTilesHtml(){
   const root = GAME.id === "world" ? "./" : "../";

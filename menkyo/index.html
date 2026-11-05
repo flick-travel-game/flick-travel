@@ -12,7 +12,7 @@
 <meta property="og:title" content="フリック自動車運転免許｜かずとも">
 <meta property="og:description" content="信号と 合図・標識・標示と 走る 場所・歩行者と 自転車を 守る・速さと 追い越し・交差点と 駐停車と 踏切・高速道路と 夜と 悪天候・安全運転の 心と 危険予測・免許と 車の きまりの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、仮免・本免の どちらで 出るかが わかるよ。歩く 人・自転車の 人として 知っておく きまりから、運転免許の 学科試験の 範囲の めやすまで 990語。⭕❌ もんだい・本番と 同じ 形の 模擬試験・危険予測・標識クイズで 学科試験の 練習も できるよ。 かずともの フリックゲーム。">
 <meta property="og:url" content="https://kazutomo.app/flick/menkyo/">
-<meta property="og:image" content="https://kazutomo.app/flick/hero.webp">
+<meta property="og:image" content="https://kazutomo.app/flick/menkyo/hero.webp">
 <meta property="og:locale" content="ja_JP">
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
@@ -451,6 +451,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック自動車運転免許</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリック自動車運転免許" width="1536" height="1024">
     <!-- 🙂 さいしょに マイページで ニックネームと アイコン(けいくん 2026-11-02。いちばん下の 遊びかたでは 見つからなかった → 説明の すぐ下へ)。アイコンが まだ 無い 人にだけ -->
     <p class="how0 hidden" id="how0">🙂 さいしょに 右上の <button type="button" class="lnk" id="how0-btn">マイページ</button> で ニックネームと アイコンを 決めてね。きろくは その なまえで のこるよ。</p>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
@@ -590,7 +591,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"menkyo", name:"フリック自動車運転免許", modes:(typeof MENKYO === "object" ? MENKYO.modes : []), assets:"../", logo:false, hero:false, dir:"menkyo/", lead:"信号と 合図・標識・標示と 走る 場所・歩行者と 自転車を 守る・速さと 追い越し・交差点と 駐停車と 踏切・高速道路と 夜と 悪天候・安全運転の 心と 危険予測・免許と 車の きまりの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、仮免・本免の どちらで 出るかが わかるよ。歩く 人・自転車の 人として 知っておく きまりから、運転免許の 学科試験の 範囲の めやすまで 990語。⭕❌ もんだい・本番と 同じ 形の 模擬試験・危険予測・標識クイズで 学科試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 試験の 前には 教習所の 教本と「交通の教則」で 確かめてね。運転の 練習(技能)は 教習所で してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、道の きまりと 思いやりが 見えてくるよ。警察庁・都道府県の 公安委員会とは 関係ありません。" };
+const GAME = { id:"menkyo", name:"フリック自動車運転免許", modes:(typeof MENKYO === "object" ? MENKYO.modes : []), assets:"../", logo:false, hero:true, dir:"menkyo/", lead:"信号と 合図・標識・標示と 走る 場所・歩行者と 自転車を 守る・速さと 追い越し・交差点と 駐停車と 踏切・高速道路と 夜と 悪天候・安全運転の 心と 危険予測・免許と 車の きまりの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、仮免・本免の どちらで 出るかが わかるよ。歩く 人・自転車の 人として 知っておく きまりから、運転免許の 学科試験の 範囲の めやすまで 990語。⭕❌ もんだい・本番と 同じ 形の 模擬試験・危険予測・標識クイズで 学科試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 試験の 前には 教習所の 教本と「交通の教則」で 確かめてね。運転の 練習(技能)は 教習所で してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、道の きまりと 思いやりが 見えてくるよ。警察庁・都道府県の 公安委員会とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

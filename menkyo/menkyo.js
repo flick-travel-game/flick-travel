@@ -212,7 +212,7 @@ const MENKYO = (() => {
       '<button type="button" class="ai-btn" data-ai-open="maru">⭕❌ もんだい</button>' +
       '<button type="button" class="ai-btn mj-big" data-ai-open="exam">🎯 模擬試験</button>' +
       '<button type="button" class="ai-btn" data-ai-open="kiken">🖼 危険予測</button>' +
-      '<button type="button" class="ai-btn" data-ai-open="sign">📷 標識クイズ</button>' +
+      (SIGNS.length >= 4 ? '<button type="button" class="ai-btn" data-ai-open="sign">📷 標識クイズ</button>' : "") +
       '<button type="button" class="ai-btn" data-ai-open="review">❌ まちがえた 問題' + (missList().length ? "(" + missList().length + ")" : "") + '</button>' +
       '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 4択クイズ</button>' +
       '<button type="button" class="ai-btn" data-ai-open="fav">⭐ お気に入り' + (fv ? "(" + fv + ")" : "") + '</button></div>' +

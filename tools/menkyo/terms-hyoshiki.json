@@ -1,0 +1,1982 @@
+[
+ {
+  "id": "hs-houshiki",
+  "name": "標識",
+  "reading": "ひょうしき",
+  "journey": "hyoshiki",
+  "category": "標識のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪧",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-honhyoushiki",
+   "hs-hojyohyoushiki"
+  ],
+  "description": "道路の そばに 立てて、交通の 決まりや 注意・行き先を 知らせる 板です。本標識と 補助標識が あります。"
+ },
+ {
+  "id": "hs-ichijiteishinohyoushik",
+  "name": "一時停止の標識",
+  "reading": "いちじていしのひょうしき",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "hyoshiki:tomare",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-gyakusankakkeinohyoush",
+   "hs-jyokounohyoushiki"
+  ],
+  "description": "赤い 逆三角形に「止まれ」と 書いた 標識です。停止線の 直前(線が なければ 交差点の 直前)で かならず 一時停止します。"
+ },
+ {
+  "id": "hs-tsuukoudome",
+  "name": "通行止め",
+  "reading": "つうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-sharyoutsuukoudome",
+   "hs-hokoushatsuukoudome"
+  ],
+  "description": "歩く 人も 車も 路面電車も 通れない ことを 示す 標識です。この 先へは 進めません。"
+ },
+ {
+  "id": "hs-sharyoushinnyuukinshi",
+  "name": "車両進入禁止",
+  "reading": "しゃりょうしんにゅうきんし",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-ippoutsuukou",
+   "hs-tsuukoudome"
+  ],
+  "description": "赤い 丸に 白い 横棒の 標識で、一方通行の 出口などに あります。車は この 標識の 向こうへ 入れません。"
+ },
+ {
+  "id": "hs-ippoutsuukou",
+  "name": "一方通行",
+  "reading": "いっぽうつうこう",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "hyoshiki:ippo",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-sharyoushinnyuukinshi",
+   "hs-kiseihyoushiki"
+  ],
+  "description": "矢印の 向きにだけ 車が 進める 道です。反対向きに 進んでは いけません。"
+ },
+ {
+  "id": "hs-saikousokudo",
+  "name": "最高速度",
+  "reading": "さいこうそくど",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "hyoshiki:saiko",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-saiteisokudonohyoushik",
+   "hs-jyokounohyoushiki"
+  ],
+  "description": "数字の 速さを こえて 走っては いけない ことを 示す 標識です。数字は 時速(km/h)です。"
+ },
+ {
+  "id": "hs-oudanhodounohyoushiki",
+  "name": "横断歩道の標識",
+  "reading": "おうだんほどうのひょうしき",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚸",
+  "mapNode": "hyoshiki:yusen",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-jitenshaoudantainohyou",
+   "hs-shijihyoushiki"
+  ],
+  "description": "青い 地に 歩く 人の 絵の 標識で、ここが 横断歩道だと 示します。運転する 人は 渡る 人が いないか 確かめます。"
+ },
+ {
+  "id": "hs-jitenshatsuukoudome",
+  "name": "特定小型原動機付自転車・自転車通行止め",
+  "reading": "とくていこがたげんどうきつきじてんしゃじてんしゃつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚳",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-jitenshasenyou",
+   "hs-tsuukoudome"
+  ],
+  "description": "特定小型原動機付自転車と 自転車が 通れない ことを 示す 標識です。自転車に のる 人は 別の 道を 通ります。"
+ },
+ {
+  "id": "hs-hokoushatsuukoudome",
+  "name": "歩行者等通行止め",
+  "reading": "ほこうしゃとうつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚷",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-hokoushatououdankinshi",
+   "hs-hokoushasenyou"
+  ],
+  "description": "歩く 人が 通れない ことを 示す 標識です。歩く 人は 別の 道を 通ります。"
+ },
+ {
+  "id": "hs-chuushakinshi",
+  "name": "駐車禁止",
+  "reading": "ちゅうしゃきんし",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoshiki:chusha",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-chuuteishakinshi",
+   "hs-chuushaka"
+  ],
+  "description": "青い 丸に 赤い 斜めの 線 1本の 標識です。駐車は できませんが、人の 乗り降りなどの 短い 停車は できます。"
+ },
+ {
+  "id": "hs-chuuteishakinshi",
+  "name": "駐停車禁止",
+  "reading": "ちゅうていしゃきんし",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoshiki:chusha",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-chuushakinshi",
+   "hs-teishaka"
+  ],
+  "description": "青い 丸に 赤い バツの 標識です。駐車も 停車も できません。人を 乗せ降ろしする ための 停止も できません。"
+ },
+ {
+  "id": "hs-jyokounohyoushiki",
+  "name": "徐行の標識",
+  "reading": "じょこうのひょうしき",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "hyoshiki:saiko",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-ichijiteishinohyoushik",
+   "hs-saikousokudo"
+  ],
+  "description": "赤い 逆三角形に「徐行」と 書いた 標識です。すぐに 止まれる 速さに 落として 進みます。"
+ },
+ {
+  "id": "hs-kiseihyoushiki",
+  "name": "規制標識",
+  "reading": "きせいひょうしき",
+  "journey": "hyoshiki",
+  "category": "標識のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-shijihyoushiki",
+   "hs-honhyoushiki"
+  ],
+  "description": "「通れない」「止まれ」「この 速さまで」など、交通の しかたを 禁止したり 決めたり する 標識です。"
+ },
+ {
+  "id": "hs-shijihyoushiki",
+  "name": "指示標識",
+  "reading": "しじひょうしき",
+  "journey": "hyoshiki",
+  "category": "標識のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟦",
+  "mapNode": "hyoshiki:shiji",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-kiseihyoushiki",
+   "hs-oudanhodounohyoushiki"
+  ],
+  "description": "「駐車できる」「ここが 横断歩道」など、して よい ことや 決められた 場所を 示す 標識です。"
+ },
+ {
+  "id": "hs-keikaihyoushiki",
+  "name": "警戒標識",
+  "reading": "けいかいひょうしき",
+  "journey": "hyoshiki",
+  "category": "標識のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔶",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-kiironohishigatanohyou",
+   "hs-fumikiriari"
+  ],
+  "description": "黄色の ひし形で、この 先の 危ない ところや 注意する ことを 前もって 知らせる 標識です。"
+ },
+ {
+  "id": "hs-annaihyoushiki",
+  "name": "案内標識",
+  "reading": "あんないひょうしき",
+  "journey": "hyoshiki",
+  "category": "標識のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-midoriironoannaihyoush",
+   "hs-aoironoannaihyoushiki"
+  ],
+  "description": "地名・方面・距離などを 知らせて、道を 案内する 標識です。"
+ },
+ {
+  "id": "hs-hojyohyoushiki",
+  "name": "補助標識",
+  "reading": "ほじょひょうしき",
+  "journey": "hyoshiki",
+  "category": "標識のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-honhyoushiki",
+   "hs-hijikannohojyohyoushik"
+  ],
+  "description": "本標識の 下に 付いて、時間・曜日・車の 種類・理由などを 示し、意味を おぎなう 標識です。"
+ },
+ {
+  "id": "hs-gakkouyouchiennadoari",
+  "name": "学校・幼稚園・保育所などあり",
+  "reading": "がっこうようちえんほいくしょなどあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-tsuugakuronohojyohyous",
+   "hs-keikaihyoushiki"
+  ],
+  "description": "この 先に 学校・幼稚園・保育所などが ある ことを 知らせる 警戒標識です。子どもの 飛び出しに 注意して 走ります。"
+ },
+ {
+  "id": "hs-fumikiriari",
+  "name": "踏切あり",
+  "reading": "ふみきりあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚃",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-keikaihyoushiki",
+   "hs-shingoukiari"
+  ],
+  "description": "この 先に 踏切が ある ことを 知らせる 警戒標識です。踏切の 手前では 一時停止の 用意を します。"
+ },
+ {
+  "id": "hs-hokoushatououdankinshi",
+  "name": "歩行者等横断禁止",
+  "reading": "ほこうしゃとうおうだんきんし",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚷",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hs-hokoushatsuukoudome",
+   "hs-oudanhodounohyoushiki"
+  ],
+  "description": "ここでは 歩く 人が 道路を 横断しては いけない ことを 示す 標識です。近くの 横断歩道を 使って 渡ります。"
+ },
+ {
+  "id": "hs-honhyoushiki",
+  "name": "本標識",
+  "reading": "ほんひょうしき",
+  "journey": "hyoshiki",
+  "category": "標識のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪧",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-hojyohyoushiki",
+   "hs-kiseihyoushiki"
+  ],
+  "description": "標識の 中心と なる もので、規制標識・指示標識・警戒標識・案内標識の 4種類が あります。"
+ },
+ {
+  "id": "hs-sharyoutsuukoudome",
+  "name": "車両通行止め",
+  "reading": "しゃりょうつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-tsuukoudome",
+   "hs-sharyoukumiawasetsuuko"
+  ],
+  "description": "車(自動車・原付・自転車など)が 通れない ことを 示す 標識です。歩く 人は 通れます。"
+ },
+ {
+  "id": "hs-nirinnojidoushagendouk",
+  "name": "二輪の自動車・一般原動機付自転車通行止め",
+  "reading": "にりんのじどうしゃいっぱんげんどうきつきじてんしゃつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏍️",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-sharyoutsuukoudome",
+   "hs-oogatajidounirinshaoyo"
+  ],
+  "description": "オートバイなどの 二輪の 自動車と 一般原動機付自転車が 通れない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-oogatakamotsujidoushat",
+  "name": "大型貨物自動車等通行止め",
+  "reading": "おおがたかもつじどうしゃとうつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-tokuteinosaidaisekisai",
+   "hs-oogatajyouyoujidoushat"
+  ],
+  "description": "大型貨物自動車・特定中型貨物自動車・大型特殊自動車が 通れない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-shiteihoukougaishinkou",
+  "name": "指定方向外進行禁止",
+  "reading": "していほうこうがいしんこうきんし",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↗️",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-ippoutsuukou",
+   "hs-shinkouhoukoubetsutsuu"
+  ],
+  "description": "青い 丸の 中の 矢印の 向きにしか 進めない ことを 示す 標識です。矢印の ない 向きへは 曲がれません。"
+ },
+ {
+  "id": "hs-sharyououdankinshi",
+  "name": "車両横断禁止",
+  "reading": "しゃりょうおうだんきんし",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoshiki:oikoshi",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-tenkaikinshi",
+   "hs-shiteihoukougaishinkou"
+  ],
+  "description": "車が 道路を 横切る ことを 禁止する 標識です。ただし 道路の 外の お店などへ 左折して 入る 横断は できます。"
+ },
+ {
+  "id": "hs-tenkaikinshi",
+  "name": "転回禁止",
+  "reading": "てんかいきんし",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "hyoshiki:oikoshi",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-sharyououdankinshi",
+   "hs-oikoshikinshi"
+  ],
+  "description": "車が 転回(Uターン)しては いけない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-oikoshinotamenomigigaw",
+  "name": "追越しのための右側部分はみ出し通行禁止",
+  "reading": "おいこしのためのみぎがわぶぶんはみだしつうこうきんし",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoshiki:oikoshi",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-oikoshikinshi",
+   "hs-chuuousennohyoushiki"
+  ],
+  "description": "追い越しの ために 道路の 右側に はみ出しては いけない ことを 示す 標識です。右側に はみ出さない 追い越しは 禁止されて いません。"
+ },
+ {
+  "id": "hs-oikoshikinshi",
+  "name": "追越し禁止",
+  "reading": "おいこしきんし",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoshiki:oikoshi",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-oikoshinotamenomigigaw",
+   "hs-tenkaikinshi"
+  ],
+  "description": "「追越し禁止」の 補助標識が 付いた 標識で、はみ出さなくても 追い越しが できません。はみ出し禁止の 標識と 区別します。"
+ },
+ {
+  "id": "hs-yuusendouro",
+  "name": "優先道路",
+  "reading": "ゆうせんどうろ",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔷",
+  "mapNode": "hyoshiki:yusen",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-zenpouyuusendouro",
+   "hs-shijihyoushiki"
+  ],
+  "description": "この 道が 優先道路である ことを 示す 標識です。交わる 道の 車は、優先道路を 通る 車の じゃまを しては いけません。"
+ },
+ {
+  "id": "hs-anzenchitainohyoushiki",
+  "name": "安全地帯の標識",
+  "reading": "あんぜんちたいのひょうしき",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏝️",
+  "mapNode": "hyoshiki:shiji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-oudanhodounohyoushiki",
+   "hs-shijihyoushiki"
+  ],
+  "description": "ここが 安全地帯である ことを 示す 標識です。車は 安全地帯に 入っては いけません。"
+ },
+ {
+  "id": "hs-teishisennohyoushiki",
+  "name": "停止線の標識",
+  "reading": "ていしせんのひょうしき",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoshiki:shiji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-ichijiteishinohyoushik",
+   "hs-shijihyoushiki"
+  ],
+  "description": "車が 止まる ときの 位置を 示す 指示標識です。路面の 停止線と 同じ 意味です。"
+ },
+ {
+  "id": "hs-chuuousennohyoushiki",
+  "name": "中央線の標識",
+  "reading": "ちゅうおうせんのひょうしき",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "hyoshiki:shiji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-oikoshinotamenomigigaw",
+   "hs-shijihyoushiki"
+  ],
+  "description": "道路の 中央や 中央線である ことを 示す 指示標識です。車は その 線から 左の 部分を 通ります。"
+ },
+ {
+  "id": "hs-chuushaka",
+  "name": "駐車可",
+  "reading": "ちゅうしゃか",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoshiki:shiji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-teishaka",
+   "hs-chuushakinshi"
+  ],
+  "description": "青い 四角に「P」の 標識で、駐車して よい ことを 示します。"
+ },
+ {
+  "id": "hs-teishaka",
+  "name": "停車可",
+  "reading": "ていしゃか",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoshiki:shiji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-chuushaka",
+   "hs-chuuteishakinshi"
+  ],
+  "description": "停車して よい ことを 示す 標識です。駐車が できるとは かぎりません。"
+ },
+ {
+  "id": "hs-jitenshaoudantainohyou",
+  "name": "自転車横断帯の標識",
+  "reading": "じてんしゃおうだんたいのひょうしき",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoshiki:shiji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-oudanhodounohyoushiki",
+   "hs-shijihyoushiki"
+  ],
+  "description": "ここが 自転車横断帯である ことを 示す 指示標識です。自転車は 近くに 自転車横断帯が あれば そこを 渡ります。"
+ },
+ {
+  "id": "hs-dourokoujichuu",
+  "name": "道路工事中",
+  "reading": "どうろこうじちゅう",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-keikaihyoushiki",
+   "hs-fukuingenshou"
+  ],
+  "description": "この 先で 道路工事を している ことを 知らせる 警戒標識です。速度を 落とし、誘導に 従います。"
+ },
+ {
+  "id": "hs-rakusekinoosoreari",
+  "name": "落石のおそれあり",
+  "reading": "らくせきのおそれあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-keikaihyoushiki",
+   "hs-doubutsugatobidasuosor"
+  ],
+  "description": "山の 道などで、この 先 石が 落ちて くる おそれが ある ことを 知らせる 警戒標識です。"
+ },
+ {
+  "id": "hs-suberiyasui",
+  "name": "滑りやすい",
+  "reading": "すべりやすい",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌧️",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-keikaihyoushiki",
+   "hs-romenoutotsuari"
+  ],
+  "description": "路面が 滑りやすい ことを 知らせる 警戒標識です。急ブレーキ・急ハンドルを さけ、速度を 落とします。"
+ },
+ {
+  "id": "hs-shingoukiari",
+  "name": "信号機あり",
+  "reading": "しんごうきあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-keikaihyoushiki",
+   "hs-fumikiriari"
+  ],
+  "description": "この 先に 信号機が ある ことを 知らせる 警戒標識です。速度を 落として 近づきます。"
+ },
+ {
+  "id": "hs-fukuingenshou",
+  "name": "幅員減少",
+  "reading": "ふくいんげんしょう",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-shasensuugenshou",
+   "hs-dourokoujichuu"
+  ],
+  "description": "この 先で 道の 幅が せまく なる ことを 知らせる 警戒標識です。"
+ },
+ {
+  "id": "hs-noborikyuukoubaiari",
+  "name": "上り急こう配あり",
+  "reading": "のぼりきゅうこうばいあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-kudarikyuukoubaiari",
+   "hs-keikaihyoushiki"
+  ],
+  "description": "この 先に 急な 上り坂が ある ことを 知らせる 警戒標識です。数字は 坂の こう配(%)です。"
+ },
+ {
+  "id": "hs-kudarikyuukoubaiari",
+  "name": "下り急こう配あり",
+  "reading": "くだりきゅうこうばいあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-noborikyuukoubaiari",
+   "hs-keikaihyoushiki"
+  ],
+  "description": "この 先に 急な 下り坂が ある ことを 知らせる 警戒標識です。こう配の 急な 下り坂は 追い越し禁止の 場所でも あります。"
+ },
+ {
+  "id": "hs-keitekinarase",
+  "name": "警笛鳴らせ",
+  "reading": "けいてきならせ",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📯",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-kiseihyoushiki",
+   "hs-hajimarinohojyohyoushi"
+  ],
+  "description": "この 標識の ある 場所を 通る ときは、警音器を 鳴らさなければ ならない ことを 示す 規制標識です。"
+ },
+ {
+  "id": "hs-jyuuryouseigen",
+  "name": "重量制限",
+  "reading": "じゅうりょうせいげん",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-takasaseigen",
+   "hs-saidaihaba"
+  ],
+  "description": "板に 書かれた 重さより 総重量の 重い 車は 通れない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-takasaseigen",
+  "name": "高さ制限",
+  "reading": "たかさせいげん",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-jyuuryouseigen",
+   "hs-saidaihaba"
+  ],
+  "description": "板に 書かれた 高さより 高い 車は 通れない ことを 示す 標識です。積んだ 荷物の 高さも ふくみます。"
+ },
+ {
+  "id": "hs-hokoushasenyou",
+  "name": "歩行者等専用",
+  "reading": "ほこうしゃとうせんよう",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-hokoushatsuukoudome",
+   "hs-futsuujitenshatouoyobi"
+  ],
+  "description": "歩行者専用道路などを 示す 標識で、車は ふつう 通れません。許可を 受けて 通る 車は、歩く 人に 注意して 徐行します。"
+ },
+ {
+  "id": "hs-jikanseigenchuushakuka",
+  "name": "時間制限駐車区間",
+  "reading": "じかんせいげんちゅうしゃくかん",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "hyoshiki:chusha",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-chuushaka",
+   "hs-chuushakinshi"
+  ],
+  "description": "時間を 限って 同じ 車が 続けて 駐車できる 区間である ことを 示す 標識です。パーキング・メーターなどで 時間を 守ります。"
+ },
+ {
+  "id": "hs-saiteisokudonohyoushik",
+  "name": "最低速度の標識",
+  "reading": "さいていそくどのひょうしき",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐇",
+  "mapNode": "hyoshiki:saiko",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-saikousokudo",
+   "hs-jidoushasenyou"
+  ],
+  "description": "自動車の 最低の 速さを 決める 標識です。この 速さより おそく 走っては いけません。数字の 下に 線が あります。"
+ },
+ {
+  "id": "hs-shinkouhoukoubetsutsuu",
+  "name": "進行方向別通行区分",
+  "reading": "しんこうほうこうべつつうこうくぶん",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hs-shiteihoukougaishinkou",
+   "hs-sharyoutsuukoukubun"
+  ],
+  "description": "交差点で 進む 方向ごとに 通る 車両通行帯を 決める 標識です。曲がる 方向の 通行帯へ 早めに 移ります。"
+ },
+ {
+  "id": "hs-oogatajyouyoujidoushat",
+  "name": "大型乗用自動車等通行止め",
+  "reading": "おおがたじょうようじどうしゃとうつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-oogatakamotsujidoushat",
+   "hs-sharyoukumiawasetsuuko"
+  ],
+  "description": "大型乗用自動車と 特定中型乗用自動車(大きな バスなど)が 通れない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-tokuteinosaidaisekisai",
+  "name": "特定の最大積載量以上の貨物自動車等通行止め",
+  "reading": "とくていのさいだいせきさいりょういじょうのかもつじどうしゃとうつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚛",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-oogatakamotsujidoushat",
+   "hs-sharyounoshuruinohojyo"
+  ],
+  "description": "補助標識に 書かれた 最大積載量 以上の 貨物自動車などが 通れない 標識です。「以上」なので 書かれた 量 ちょうども 通れません。"
+ },
+ {
+  "id": "hs-oogatajidounirinshaoyo",
+  "name": "大型自動二輪車及び普通自動二輪車二人乗り通行禁止",
+  "reading": "おおがたじどうにりんしゃおよびふつうじどうにりんしゃふたりのりつうこうきんし",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏍️",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-nirinnojidoushagendouk",
+   "hs-sharyoukumiawasetsuuko"
+  ],
+  "description": "大型自動二輪車と 普通自動二輪車の 二人乗りでの 通行を 禁止する 標識です。1人で 乗るのは 禁止されて いません。"
+ },
+ {
+  "id": "hs-jidoushasenyou",
+  "name": "自動車専用",
+  "reading": "じどうしゃせんよう",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-saiteisokudonohyoushik",
+   "hs-midoriironoannaihyoush"
+  ],
+  "description": "高速自動車国道や 自動車専用道路である ことを 示す 標識です。原付・自転車・歩く 人は 入れません。"
+ },
+ {
+  "id": "hs-jitenshasenyou",
+  "name": "特定小型原動機付自転車・自転車専用",
+  "reading": "とくていこがたげんどうきつきじてんしゃじてんしゃせんよう",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-jitenshatsuukoudome",
+   "hs-futsuujitenshatouoyobi"
+  ],
+  "description": "特定小型原動機付自転車と 自転車だけが 通れる 道を 示す 標識です。ほかの 車も 歩く 人も 通れません。"
+ },
+ {
+  "id": "hs-koureiuntenshatouhyoushou",
+  "name": "高齢運転者等標章自動車駐車可",
+  "reading": "こうれいうんてんしゃとうひょうしょうじどうしゃちゅうしゃか",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoshiki:chusha",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-chuushaka",
+   "hs-sharyounoshuruinohojyo"
+  ],
+  "description": "高齢運転者等標章を 掲げた 車(標章車)だけが 駐車できる ことを 示す 標識です。標章の ない 車は ここに 駐車できません。"
+ },
+ {
+  "id": "hs-futsuujitenshatouoyobi",
+  "name": "普通自転車等及び歩行者等専用",
+  "reading": "ふつうじてんしゃとうおよびほこうしゃとうせんよう",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-jitenshasenyou",
+   "hs-hokoushasenyou"
+  ],
+  "description": "特定小型原付・自転車と 歩く 人だけが 通れる 道を 示します。歩道に あれば、普通自転車などが 歩道の 車道寄りを 徐行して 通れる 意味にも なります。"
+ },
+ {
+  "id": "hs-sharyoutsuukoukubun",
+  "name": "車両通行区分",
+  "reading": "しゃりょうつうこうくぶん",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-tokuteinoshuruinoshary",
+   "hs-shinkouhoukoubetsutsuu"
+  ],
+  "description": "車の 種類ごとに 通る 車両通行帯を 決める 標識です。決められた 通行帯を 通ります。"
+ },
+ {
+  "id": "hs-tokuteinoshuruinoshary",
+  "name": "特定の種類の車両の通行区分",
+  "reading": "とくていのしゅるいのしゃりょうのつうこうくぶん",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-sharyoutsuukoukubun",
+   "hs-keninjidoushanokousoku"
+  ],
+  "description": "大型貨物自動車など 特定の 種類の 車に 対して、通る 車両通行帯を 決める 標識です。"
+ },
+ {
+  "id": "hs-keninjidoushanokousoku",
+  "name": "牽引自動車の高速自動車国道通行区分",
+  "reading": "けんいんじどうしゃのこうそくじどうしゃこくどうつうこうくぶん",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚛",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-tokuteinoshuruinoshary",
+   "hs-sharyoutsuukoukubun"
+  ],
+  "description": "総重量 750kg を こえる 車を けん引する 自動車が、高速自動車国道の 本線車道で 通る 通行帯を 決める 標識です。"
+ },
+ {
+  "id": "hs-gendoukitsukijitenshan",
+  "name": "一般原動機付自転車の右折方法(二段階)",
+  "reading": "いっぱんげんどうきつきじてんしゃのうせつほうほうにだんかい",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-gendoukitsukijitenshanb",
+   "hs-kanjyounokousatennioke"
+  ],
+  "description": "この 交差点では 一般原動機付自転車は 二段階で 右折しなければ ならない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-gendoukitsukijitenshanb",
+  "name": "一般原動機付自転車の右折方法(小回り)",
+  "reading": "いっぱんげんどうきつきじてんしゃのうせつほうほうこまわり",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-gendoukitsukijitenshan",
+   "hs-shinkouhoukoubetsutsuu"
+  ],
+  "description": "この 交差点では 一般原動機付自転車も 小回り(自動車と 同じ 方法)で 右折する ことを 示す 標識です。片側 3車線 以上でも 二段階には しません。"
+ },
+ {
+  "id": "hs-kanjyounokousatennioke",
+  "name": "環状の交差点における右回り通行",
+  "reading": "かんじょうのこうさてんにおけるみぎまわりつうこう",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-rotariari",
+   "hs-gendoukitsukijitenshan"
+  ],
+  "description": "環状交差点で 車が 右回り(時計回り)に 通らなければ ならない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-heikouchuusha",
+  "name": "平行駐車",
+  "reading": "へいこうちゅうしゃ",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoshiki:chusha",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-chokkakuchuusha",
+   "hs-nanamechuusha"
+  ],
+  "description": "駐車する ときは 道路の 端に 平行に 止めなければ ならない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-chokkakuchuusha",
+  "name": "直角駐車",
+  "reading": "ちょっかくちゅうしゃ",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoshiki:chusha",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-heikouchuusha",
+   "hs-nanamechuusha"
+  ],
+  "description": "駐車する ときは 道路の 端に 直角に 止めなければ ならない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-nanamechuusha",
+  "name": "斜め駐車",
+  "reading": "ななめちゅうしゃ",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoshiki:chusha",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-heikouchuusha",
+   "hs-chokkakuchuusha"
+  ],
+  "description": "駐車する ときは 道路の 端に 斜めに 止めなければ ならない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-kikenbutsusekisaishary",
+  "name": "危険物積載車両通行止め",
+  "reading": "きけんぶつせきさいしゃりょうつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛢️",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-sharyoukumiawasetsuuko",
+   "hs-tokuteinosaidaisekisai"
+  ],
+  "description": "火薬や 燃えやすい 物などの 危険物を 積んだ 車が 通れない ことを 示す 標識です。"
+ },
+ {
+  "id": "hs-gyakusankakkeinohyoush",
+  "name": "逆三角形の標識",
+  "reading": "ぎゃくさんかっけいのひょうしき",
+  "journey": "hyoshiki",
+  "category": "標識のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔻",
+  "mapNode": "hyoshiki:tomare",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-ichijiteishinohyoushik",
+   "hs-jyokounohyoushiki"
+  ],
+  "description": "赤い 逆三角形の 標識は「一時停止」と「徐行」の 2つです。止まれは かならず 止まり、徐行は すぐ 止まれる 速さで 進みます。形が 同じなので 字を 読みます。"
+ },
+ {
+  "id": "hs-zenpouyuusendouro",
+  "name": "前方優先道路",
+  "reading": "ぜんぽうゆうせんどうろ",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔷",
+  "mapNode": "hyoshiki:yusen",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-yuusendouro",
+   "hs-hojyohyoushiki"
+  ],
+  "description": "この 道と 交わる 前の 道が 優先道路である ことを 示す 標識です。前の 道を 通る 車の じゃまを しないよう 徐行して 入ります。"
+ },
+ {
+  "id": "hs-hijikannohojyohyoushik",
+  "name": "日・時間の補助標識",
+  "reading": "ひじかんのほじょひょうしき",
+  "journey": "hyoshiki",
+  "category": "補助標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕘",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-hojyohyoushiki",
+   "hs-kukannaikuikinai"
+  ],
+  "description": "本標識の 規制が 行われる 日や 時間を 示す 補助標識です。書かれた 時間の 外は その 規制は ありません。"
+ },
+ {
+  "id": "hs-kukannaikuikinai",
+  "name": "区間内・区域内",
+  "reading": "くかんないくいきない",
+  "journey": "hyoshiki",
+  "category": "補助標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-hajimarinohojyohyoushi",
+   "hs-owarinohojyohyoushiki"
+  ],
+  "description": "本標識の 規制が 行われている 区間の 中、区域の 中である ことを 示す 補助標識です。"
+ },
+ {
+  "id": "hs-hajimarinohojyohyoushi",
+  "name": "始まりの補助標識",
+  "reading": "はじまりのほじょひょうしき",
+  "journey": "hyoshiki",
+  "category": "補助標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "▶️",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-owarinohojyohyoushiki",
+   "hs-kukannaikuikinai"
+  ],
+  "description": "本標識の 規制が ここから 始まる ことを 示す 補助標識です。"
+ },
+ {
+  "id": "hs-owarinohojyohyoushiki",
+  "name": "終わりの補助標識",
+  "reading": "おわりのほじょひょうしき",
+  "journey": "hyoshiki",
+  "category": "補助標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏹️",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-hajimarinohojyohyoushi",
+   "hs-kukannaikuikinai"
+  ],
+  "description": "本標識の 規制が ここで 終わる ことを 示す 補助標識です。この 先は その 規制が ありません。"
+ },
+ {
+  "id": "hs-kyorikuiki",
+  "name": "距離・区域",
+  "reading": "きょりくいき",
+  "journey": "hyoshiki",
+  "category": "補助標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-kukannaikuikinai",
+   "hs-hijikannohojyohyoushik"
+  ],
+  "description": "規制が 行われている 場所や 危ない 場所までの 距離・区間・区域を 示す 補助標識です。"
+ },
+ {
+  "id": "hs-sharyounoshuruinohojyo",
+  "name": "車の種類の補助標識",
+  "reading": "くるまのしゅるいのほじょひょうしき",
+  "journey": "hyoshiki",
+  "category": "補助標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-hojyohyoushiki",
+   "hs-tokuteinosaidaisekisai"
+  ],
+  "description": "本標識の 規制が どの 種類の 車に かかるかを 示す 補助標識です。書かれた 車だけが 対象に なったり、のぞかれたり します。"
+ },
+ {
+  "id": "hs-tsuugakuronohojyohyous",
+  "name": "通学路の補助標識",
+  "reading": "つうがくろのほじょひょうしき",
+  "journey": "hyoshiki",
+  "category": "補助標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-gakkouyouchiennadoari",
+   "hs-hojyohyoushiki"
+  ],
+  "description": "子どもが 学校・幼稚園・保育所などに 通う 道である ことを 示す 補助標識です。とくに 子どもに 注意して 走ります。"
+ },
+ {
+  "id": "hs-chuushayochinohojyohyo",
+  "name": "駐車余地の補助標識",
+  "reading": "ちゅうしゃよちのほじょひょうしき",
+  "journey": "hyoshiki",
+  "category": "補助標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-heikouchuusha",
+   "hs-hojyohyoushiki"
+  ],
+  "description": "「駐車余地」の 標識の 下に 付き、駐車する とき 車の 右側に 空けなければ ならない 余地の 長さを 示す 補助標識です。"
+ },
+ {
+  "id": "hs-kiseiyokoku",
+  "name": "規制予告",
+  "reading": "きせいよこく",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "hyoshiki:shiji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-kiseihyoushiki",
+   "hs-shijihyoushiki"
+  ],
+  "description": "この 先で 通行止め などの 交通規制が 行われている ことを 前もって 知らせる 指示標識です。"
+ },
+ {
+  "id": "hs-romendenshateiryuujyo",
+  "name": "路面電車停留場",
+  "reading": "ろめんでんしゃていりゅうじょう",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚋",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-annaihyoushiki",
+   "hs-kidoushikinaitsuukouka"
+  ],
+  "description": "路面電車の 停留場の 場所を 示す 案内標識です。乗り降りする 人や 安全地帯に 注意します。"
+ },
+ {
+  "id": "hs-kidoushikinaitsuukouka",
+  "name": "軌道敷内通行可",
+  "reading": "きどうしきないつうこうか",
+  "journey": "hyoshiki",
+  "category": "指示標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚋",
+  "mapNode": "hyoshiki:shiji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-romendenshateiryuujyo",
+   "hs-shijihyoushiki"
+  ],
+  "description": "自動車が 軌道敷の 中を 通って よい ことを 示す 指示標識です。後ろから 路面電車が 来たら 軌道敷の 外へ 出ます。"
+ },
+ {
+  "id": "hs-haikoukukkyokuari",
+  "name": "背向屈曲あり",
+  "reading": "はいこうくっきょくあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-kukkyokuari",
+   "hs-tsuzuraoriari"
+  ],
+  "description": "この 先で 道が 右・左(または 左・右)と S字に 曲がる ことを 知らせる 警戒標識です。"
+ },
+ {
+  "id": "hs-tsuzuraoriari",
+  "name": "つづら折あり",
+  "reading": "つづらおりあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-haikoukukkyokuari",
+   "hs-kukkyokuari"
+  ],
+  "description": "この 先で 曲がり道が 何度も くり返す ことを 知らせる 警戒標識です。山の 道に 多く あります。"
+ },
+ {
+  "id": "hs-gouryuukoutsuuari",
+  "name": "合流交通あり",
+  "reading": "ごうりゅうこうつうあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-shasensuugenshou",
+   "hs-keikaihyoushiki"
+  ],
+  "description": "この 先で ほかの 道から 車が 合流して くる ことを 知らせる 警戒標識です。"
+ },
+ {
+  "id": "hs-shasensuugenshou",
+  "name": "車線数減少",
+  "reading": "しゃせんすうげんしょう",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↘️",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-fukuingenshou",
+   "hs-gouryuukoutsuuari"
+  ],
+  "description": "この 先で 車線の 数が 減る ことを 知らせる 警戒標識です。早めに 進路を 変える 準備を します。"
+ },
+ {
+  "id": "hs-nihoukoukoutsuu",
+  "name": "二方向交通",
+  "reading": "にほうこうこうつう",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-ippoutsuukou",
+   "hs-keikaihyoushiki"
+  ],
+  "description": "この 先は 向かいから 来る 車と すれ違う 二方向の 交通に なる ことを 知らせる 警戒標識です。"
+ },
+ {
+  "id": "hs-yokokazechuui",
+  "name": "横風注意",
+  "reading": "よこかぜちゅうい",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-keikaihyoushiki",
+   "hs-doubutsugatobidasuosor"
+  ],
+  "description": "強い 横風の おそれが ある ことを 知らせる 警戒標識です。橋の 上や トンネルの 出口で ハンドルを しっかり 持ちます。"
+ },
+ {
+  "id": "hs-doubutsugatobidasuosor",
+  "name": "動物が飛び出すおそれあり",
+  "reading": "どうぶつがとびだすおそれあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦌",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-yokokazechuui",
+   "hs-rakusekinoosoreari"
+  ],
+  "description": "動物が 飛び出して くる おそれが ある ことを 知らせる 警戒標識です。速度を 落として 走ります。"
+ },
+ {
+  "id": "hs-sonotanokiken",
+  "name": "その他の危険",
+  "reading": "そのたのきけん",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❗",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-keikaihyoushiki",
+   "hs-hojyohyoushiki"
+  ],
+  "description": "ほかの 警戒標識に 当てはまらない 危険が ある ことを 知らせる 警戒標識です。注意して 進みます。"
+ },
+ {
+  "id": "hs-rotariari",
+  "name": "ロータリーあり",
+  "reading": "ろーたりーあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-kanjyounokousatennioke",
+   "hs-keikaihyoushiki"
+  ],
+  "description": "この 先に ロータリー(まるい 交差点)が ある ことを 知らせる 警戒標識です。"
+ },
+ {
+  "id": "hs-kukkyokuari",
+  "name": "屈曲あり",
+  "reading": "くっきょくあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-haikoukukkyokuari",
+   "hs-tsuzuraoriari"
+  ],
+  "description": "この 先で 道が 右(または 左)に 曲がる ことを 知らせる 警戒標識です。カーブの 手前で 速度を 落とします。"
+ },
+ {
+  "id": "hs-romenoutotsuari",
+  "name": "路面の凹凸あり",
+  "reading": "ろめんのおうとつあり",
+  "journey": "hyoshiki",
+  "category": "警戒標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〽️",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-suberiyasui",
+   "hs-keikaihyoushiki"
+  ],
+  "description": "路面に でこぼこが ある ことを 知らせる 警戒標識です。速度を 落として 通ります。"
+ },
+ {
+  "id": "hs-houmenoyobihoukounoyok",
+  "name": "方面と方向の予告",
+  "reading": "ほうめんとほうこうのよこく",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-houmenoyobishasen",
+   "hs-annaihyoushiki"
+  ],
+  "description": "この 先の 交差点で、どの 方向へ 行けば どの 方面に 着くかを 前もって 知らせる 案内標識です。"
+ },
+ {
+  "id": "hs-iriguchinohoukou",
+  "name": "入口の方向",
+  "reading": "いりぐちのほうこう",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-deguchinoyokoku",
+   "hs-midoriironoannaihyoush"
+  ],
+  "description": "高速道路などの 入口が ある 方向を 示す 案内標識です。"
+ },
+ {
+  "id": "hs-hijyoudenwa",
+  "name": "非常電話",
+  "reading": "ひじょうでんわ",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☎️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-hijyouchuushatai",
+   "hs-midoriironoannaihyoush"
+  ],
+  "description": "高速道路などで 非常電話が ある 場所を 示す 案内標識です。故障などの とき 連絡に 使います。"
+ },
+ {
+  "id": "hs-taihijyo",
+  "name": "待避所",
+  "reading": "たいひじょ",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-hijyouchuushatai",
+   "hs-annaihyoushiki"
+  ],
+  "description": "せまい 道で 車どうしが すれ違う ために よける 待避所の 場所を 示す 案内標識です。"
+ },
+ {
+  "id": "hs-hijyouchuushatai",
+  "name": "非常駐車帯",
+  "reading": "ひじょうちゅうしゃたい",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-hijyoudenwa",
+   "hs-taihijyo"
+  ],
+  "description": "高速道路などで 故障の ときなどに 止める 非常駐車帯の 場所を 示す 案内標識です。"
+ },
+ {
+  "id": "hs-chuushajyounoannaihyou",
+  "name": "駐車場の案内標識",
+  "reading": "ちゅうしゃじょうのあんないひょうしき",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-chuushaka",
+   "hs-annaihyoushiki"
+  ],
+  "description": "駐車場の 場所を 示す 案内標識です。"
+ },
+ {
+  "id": "hs-touhanshasen",
+  "name": "登坂車線",
+  "reading": "とうはんしゃせん",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-shasensuugenshou",
+   "hs-annaihyoushiki"
+  ],
+  "description": "上り坂で 速度の おそい 車が 通る ための 登坂車線が ある ことを 示す 案内標識です。"
+ },
+ {
+  "id": "hs-kokudoubangou",
+  "name": "国道番号",
+  "reading": "こくどうばんごう",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-douronotsuushoumei",
+   "hs-annaihyoushiki"
+  ],
+  "description": "その 道が 何号線の 国道かを 示す 案内標識です。"
+ },
+ {
+  "id": "hs-sabisueria",
+  "name": "サービス・エリア",
+  "reading": "さーびすえりあ",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍽️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-hijyouchuushatai",
+   "hs-midoriironoannaihyoush"
+  ],
+  "description": "高速道路で サービス・エリアが ある ことを 示す 案内標識です。疲れたら 早めに 休みます。"
+ },
+ {
+  "id": "hs-midoriironoannaihyoush",
+  "name": "緑色の案内標識",
+  "reading": "みどりいろのあんないひょうしき",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟩",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-aoironoannaihyoushiki",
+   "hs-jidoushasenyou"
+  ],
+  "description": "高速道路の 案内標識の 多くは 緑の 地に 白の 字です。一般道路の 青の 案内標識と 色で 見分けられます。"
+ },
+ {
+  "id": "hs-aoironoannaihyoushiki",
+  "name": "青色の案内標識",
+  "reading": "あおいろのあんないひょうしき",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟦",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-midoriironoannaihyoush",
+   "hs-houmenoyobihoukounoyok"
+  ],
+  "description": "一般道路の 方面や 距離の 案内標識の 多くは 青の 地に 白の 字です。"
+ },
+ {
+  "id": "hs-sharyoukumiawasetsuuko",
+  "name": "車両(組合せ)通行止め",
+  "reading": "しゃりょうくみあわせつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-sharyoutsuukoudome",
+   "hs-oogatajyouyoujidoushat"
+  ],
+  "description": "板に 絵で 示された 種類の 車が 通れない ことを 示す 標識です。絵の ない 車は 通れます。"
+ },
+ {
+  "id": "hs-taiyachienwotoritsuket",
+  "name": "タイヤチェーンを取り付けていない車両通行止め",
+  "reading": "たいやちぇーんをとりつけていないしゃりょうつうこうどめ",
+  "journey": "hyoshiki",
+  "category": "通行止め・進入禁止",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "hyoshiki:shinnyu",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-suberiyasui",
+   "hs-sharyoukumiawasetsuuko"
+  ],
+  "description": "タイヤチェーンを 着けていない 車が 通れない ことを 示す 標識です。雪の 道で 出されます。"
+ },
+ {
+  "id": "hs-kiironohishigatanohyou",
+  "name": "黄色のひし形の標識",
+  "reading": "きいろのひしがたのひょうしき",
+  "journey": "hyoshiki",
+  "category": "標識のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔶",
+  "mapNode": "hyoshiki:keikai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-keikaihyoushiki",
+   "hs-gyakusankakkeinohyoush"
+  ],
+  "description": "黄色の ひし形の 標識は 警戒標識です。「してはいけない」の 規制では なく、この 先の 危険を 知らせる 注意の 標識です。"
+ },
+ {
+  "id": "hs-saidaihaba",
+  "name": "最大幅",
+  "reading": "さいだいはば",
+  "journey": "hyoshiki",
+  "category": "規制標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "hyoshiki:kisei",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-takasaseigen",
+   "hs-jyuuryouseigen"
+  ],
+  "description": "板に 書かれた 幅より 横幅の 広い 車は 通れない ことを 示す 標識です。積んだ 荷物の 幅も ふくみます。"
+ },
+ {
+  "id": "hs-houmenoyobishasen",
+  "name": "方面と車線",
+  "reading": "ほうめんとしゃせん",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-houmenoyobihoukounoyok",
+   "hs-shinkouhoukoubetsutsuu"
+  ],
+  "description": "行き先の 方面ごとに どの 車線を 通れば よいかを 示す 案内標識です。"
+ },
+ {
+  "id": "hs-kiseiriyuunohojyohyous",
+  "name": "規制理由の補助標識",
+  "reading": "きせいりゆうのほじょひょうしき",
+  "journey": "hyoshiki",
+  "category": "補助標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "hyoshiki:hojo",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-hojyohyoushiki",
+   "hs-hijikannohojyohyoushik"
+  ],
+  "description": "本標識の 規制が なぜ 行われているか(工事中・学校など)を 示す 補助標識です。"
+ },
+ {
+  "id": "hs-deguchinoyokoku",
+  "name": "出口の予告",
+  "reading": "でぐちのよこく",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↗️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-iriguchinohoukou",
+   "hs-midoriironoannaihyoush"
+  ],
+  "description": "高速道路などの 出口が 近い ことを 前もって 知らせる 案内標識です。早めに 左の 車線へ 移る 準備を します。"
+ },
+ {
+  "id": "hs-douronotsuushoumei",
+  "name": "道路の通称名",
+  "reading": "どうろのつうしょうめい",
+  "journey": "hyoshiki",
+  "category": "案内標識",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "hyoshiki:annai",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hs-kokudoubangou",
+   "hs-annaihyoushiki"
+  ],
+  "description": "その 道路の 呼び名(通称名)を 示す 案内標識です。"
+ }
+]

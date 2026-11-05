@@ -1,0 +1,1986 @@
+[
+ {
+  "id": "hj-dourohyouji",
+  "name": "道路標示",
+  "reading": "どうろひょうじ",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-kiseihyouji",
+   "hj-shijihyouji"
+  ],
+  "description": "道路の 上に ペイントや びょうで 書かれた 線・記号・文字です。規制標示と 指示標示の 2種類が あります。"
+ },
+ {
+  "id": "hj-shiroisen",
+  "name": "白い線",
+  "reading": "しろいせん",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-kiiroisen",
+   "hj-shironojissen"
+  ],
+  "description": "路面の 白の 線は、中央線・車両通行帯・路側帯・横断歩道など、通る 場所を 示す ことが 多い 線です。"
+ },
+ {
+  "id": "hj-kiiroisen",
+  "name": "黄色い線",
+  "reading": "きいろいせん",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-shiroisen",
+   "hj-kiironojissen"
+  ],
+  "description": "路面の 黄色の 線は、進路変更禁止や はみ出し禁止など「してはいけない」を 示す ことが 多い 線です。"
+ },
+ {
+  "id": "hj-chuuousen",
+  "name": "中央線",
+  "reading": "ちゅうおうせん",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-hidarigawatsuukou",
+   "hj-chuuousenhamannakatoha"
+  ],
+  "description": "道路の 中央を 示す 線です。車は 中央線から 左の 部分を 通ります。"
+ },
+ {
+  "id": "hj-shadou",
+  "name": "車道",
+  "reading": "しゃどう",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-hodou",
+   "hj-hodoutoshadounokubetsu"
+  ],
+  "description": "車が 通る ための 道路の 部分です。歩道と 車道の 区別が ある 道路では、車は 車道を 通ります。"
+ },
+ {
+  "id": "hj-hodou",
+  "name": "歩道",
+  "reading": "ほどう",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-shadou",
+   "hj-enseki"
+  ],
+  "description": "歩く 人が 通る ため、縁石や さくで 区切られた 道路の 部分です。歩道が あれば 歩く 人は 歩道を 通ります。"
+ },
+ {
+  "id": "hj-hidarigawatsuukou",
+  "name": "左側通行",
+  "reading": "ひだりがわつうこう",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-chuuousen",
+   "hj-kipurefuto"
+  ],
+  "description": "日本では 車は 道路の 左側を 通ります。歩く 人は 歩道の ない 道では 右側を 歩きます。"
+ },
+ {
+  "id": "hj-rosokutai",
+  "name": "路側帯",
+  "reading": "ろそくたい",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-hodounonaimichi",
+   "hj-rosokutainomittsunoshu"
+  ],
+  "description": "歩道の ない 道路の 端に、白の 線で 区切られた 歩く 人の ための 帯です。自動車は ここを 通っては いけません。自転車は 歩く 人の じゃまに ならなければ 通れます。"
+ },
+ {
+  "id": "hj-jitenshadou",
+  "name": "自転車道",
+  "reading": "じてんしゃどう",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-jitenshadouwotoorujite",
+   "hj-jitenshadouwokurumahat"
+  ],
+  "description": "自転車が 通る ため、縁石や さくで 区切られた 車道の 部分です。自転車道が あれば 普通自転車は そこを 通ります。"
+ },
+ {
+  "id": "hj-sharyoutsuukoutai",
+  "name": "車両通行帯",
+  "reading": "しゃりょうつうこうたい",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-shasen",
+   "hj-ichibanhidarinotsuukou"
+  ],
+  "description": "車が 道路の 決められた 部分を 通るよう 標示で 区切った 帯です。車線や レーンとも いいます。"
+ },
+ {
+  "id": "hj-anzenchitai",
+  "name": "安全地帯",
+  "reading": "あんぜんちたい",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏝️",
+  "mapNode": "hyoji:churyu",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-anzenchitainihairanai",
+   "hj-rojyoushougaibutsusekk"
+  ],
+  "description": "路面電車に 乗り降りする 人や 横断する 人を 守る ための 島や 場所です。車は 入っては いけません。"
+ },
+ {
+  "id": "hj-jitenshaoudantai",
+  "name": "自転車横断帯",
+  "reading": "じてんしゃおうだんたい",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:shijihyoji",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-jitenshaoudantaitoouda",
+   "hj-oudanhodounohyouji"
+  ],
+  "description": "自転車が 道路を 横断する ための 場所を 示す 標示です。近くに あれば 自転車は そこを 渡ります。"
+ },
+ {
+  "id": "hj-douryuutai",
+  "name": "導流帯",
+  "reading": "どうりゅうたい",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦓",
+  "mapNode": "hyoji:churyu",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-douryuutaitotachiiriki",
+   "hj-tachiirikinshibubun"
+  ],
+  "description": "白の しま模様で、車が 安全に 通れるよう 通り道を 導く ための、車が 通らないように している 部分です。ゼブラとも いいます。"
+ },
+ {
+  "id": "hj-hishigatanohyouji",
+  "name": "ひし形の標示",
+  "reading": "ひしがたのひょうじ",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔷",
+  "mapNode": "hyoji:hishi",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-oudanhodounohyouji",
+   "hj-jitenshaoudantai"
+  ],
+  "description": "路面の ひし形の 標示は、この 先に 横断歩道や 自転車横断帯が ある ことの 予告です。渡る 人が いないか 注意します。"
+ },
+ {
+  "id": "hj-shasen",
+  "name": "車線",
+  "reading": "しゃせん",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-sharyoutsuukoutai",
+   "hj-katagawaisshasen"
+  ],
+  "description": "車が 一列に 並んで 通る 道の 部分です。教則では 車両通行帯の ことを 車線とも いいます。"
+ },
+ {
+  "id": "hj-romendensha",
+  "name": "路面電車",
+  "reading": "ろめんでんしゃ",
+  "journey": "hyoji",
+  "category": "路面電車と軌道敷",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚋",
+  "mapNode": "hyoji:kido",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-kidoushiki",
+   "hj-romendenshagachikazuit"
+  ],
+  "description": "道路の 上の 線路を 走る 電車です。運転する 人は 路面電車の 進行を じゃましないように します。"
+ },
+ {
+  "id": "hj-kidoushiki",
+  "name": "軌道敷",
+  "reading": "きどうしき",
+  "journey": "hyoji",
+  "category": "路面電車と軌道敷",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "hyoji:kido",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-kidoushikinainotsuukou",
+   "hj-romendensha"
+  ],
+  "description": "路面電車が 走る 線路の 部分です。車は ふつう 軌道敷の 中を 通っては いけません。"
+ },
+ {
+  "id": "hj-kipurefuto",
+  "name": "キープレフト",
+  "reading": "きーぷれふと",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-hidarigawatsuukou",
+   "hj-sharyoutsuukoutainonai"
+  ],
+  "description": "道路の 左に 寄って 走る ことです。車両通行帯の ない 道路では、追い越しなどの ほかは 左に 寄って 通ります。"
+ },
+ {
+  "id": "hj-oudanhodounohyouji",
+  "name": "横断歩道の標示",
+  "reading": "おうだんほどうのひょうじ",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦓",
+  "mapNode": "hyoji:shijihyoji",
+  "field": "標識・標示",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-hishigatanohyouji",
+   "hj-jitenshaoudantai"
+  ],
+  "description": "路面の 白い しま模様で、ここが 横断歩道だと 示す 標示です。渡る 人が いれば 車は 手前で 止まります。"
+ },
+ {
+  "id": "hj-hodounonaimichi",
+  "name": "歩道のない道",
+  "reading": "ほどうのないみち",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "hj-rosokutai",
+   "hj-hodoutoshadounokubetsub"
+  ],
+  "description": "歩道の ない 道では、歩く 人は 右側の 端を 歩きます。車は 歩く 人の 横を 通る とき 安全な 間隔を とるか 徐行します。"
+ },
+ {
+  "id": "hj-kiseihyouji",
+  "name": "規制標示",
+  "reading": "きせいひょうじ",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-shijihyouji",
+   "hj-dourohyouji"
+  ],
+  "description": "転回禁止・駐車禁止・進路変更禁止など、交通の しかたを 禁止したり 決めたり する 標示です。"
+ },
+ {
+  "id": "hj-shijihyouji",
+  "name": "指示標示",
+  "reading": "しじひょうじ",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "hyoji:shijihyoji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-kiseihyouji",
+   "hj-dourohyouji"
+  ],
+  "description": "横断歩道・停止線・中央線など、して よい ことや 決められた 場所を 示す 標示です。"
+ },
+ {
+  "id": "hj-shironojissen",
+  "name": "白の実線",
+  "reading": "しろのじっせん",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-shironohasen",
+   "hj-kiironojissen"
+  ],
+  "description": "白の 実線は 中央線や 車両通行帯・路側帯などを 区切る 線です。黄色の 線と ちがい、それだけで 進路変更禁止の 意味は ありません。"
+ },
+ {
+  "id": "hj-shironohasen",
+  "name": "白の破線",
+  "reading": "しろのはせん",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-shironojissen",
+   "hj-chuuousennoshironohase"
+  ],
+  "description": "白の 破線(とぎれた 線)は 中央線や 車両通行帯の 境などに 使われます。安全を 確かめれば 進路を 変えられる 線です。"
+ },
+ {
+  "id": "hj-kiironojissen",
+  "name": "黄色の実線",
+  "reading": "きいろのじっせん",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-shinrohenkoukinshinose",
+   "hj-kiironochuuousenwokoer"
+  ],
+  "description": "黄色の 実線は、車両通行帯の 間なら 進路変更禁止、中央線なら 追い越しの ための はみ出し禁止を 示します。"
+ },
+ {
+  "id": "hj-shinrohenkoukinshinose",
+  "name": "進路変更禁止の線",
+  "reading": "しんろへんこうきんしのせん",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-kiironojissen",
+   "hj-katagawadakekiironosen"
+  ],
+  "description": "車両通行帯が 黄色の 線で 区切られていたら、その 線を こえて 進路を 変えては いけません。"
+ },
+ {
+  "id": "hj-ichibanhidarinotsuukou",
+  "name": "いちばん左の通行帯",
+  "reading": "いちばんひだりのつうこうたい",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-daiichitsuukoutai",
+   "hj-migigawanotsuukoutai"
+  ],
+  "description": "車両通行帯の ある 道路では、ふつう 左から 数えて 1番目の 通行帯を 通ります。"
+ },
+ {
+  "id": "hj-migigawanotsuukoutai",
+  "name": "右側の通行帯",
+  "reading": "みぎがわのつうこうたい",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-ichibanhidarinotsuukou",
+   "hj-sharyoutsuukoutaigamit"
+  ],
+  "description": "片側 2つの 通行帯なら ふつうは 左を 通り、右は 追い越しなどの ときに 使います。追い越したら 左へ もどります。"
+ },
+ {
+  "id": "hj-chuuteishakinshirosoku",
+  "name": "駐停車禁止路側帯",
+  "reading": "ちゅうていしゃきんしろそくたい",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-rosokutainomittsunoshu",
+   "hj-hokoushayourosokutai"
+  ],
+  "description": "白の 実線と 破線の 2本で 区切った 路側帯です。中に 入って 駐車・停車しては いけません。"
+ },
+ {
+  "id": "hj-hokoushayourosokutai",
+  "name": "歩行者用路側帯",
+  "reading": "ほこうしゃようろそくたい",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-hokoushayourosokutaino",
+   "hj-chuuteishakinshirosoku"
+  ],
+  "description": "白の 実線 2本で 区切った 路側帯で、歩く 人だけの ものです。車の 駐停車も、自転車の 通行も できません。"
+ },
+ {
+  "id": "hj-teishikinshibubun",
+  "name": "停止禁止部分",
+  "reading": "ていしきんしぶぶん",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "hyoji:hairi",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-tachiirikinshibubun",
+   "hj-hokanokoutsuuwosamatag"
+  ],
+  "description": "白の わくに バツの 標示で、警察署や 消防署の 前などに あります。前が つまって この 中で 止まりそうなら 入っては いけません。"
+ },
+ {
+  "id": "hj-tachiirikinshibubun",
+  "name": "立入り禁止部分",
+  "reading": "たちいりきんしぶぶん",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "hyoji:hairi",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-douryuutaitotachiiriki",
+   "hj-teishikinshibubun"
+  ],
+  "description": "黄色の わくの 中に 白の 斜線が ある 標示で、車が 入っては いけない 部分です。"
+ },
+ {
+  "id": "hj-hodouwoyokogirutoki",
+  "name": "歩道を横切るとき",
+  "reading": "ほどうをよこぎるとき",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-rosokutaiwoyokogiru",
+   "hj-hodou"
+  ],
+  "description": "道路の 外の お店などに 出入りする ため 歩道を 横切る ときは、歩道に 入る 直前で 一時停止し、歩く 人の じゃまを しません。"
+ },
+ {
+  "id": "hj-kidoushikinainotsuukou",
+  "name": "軌道敷内の通行",
+  "reading": "きどうしきないのつうこう",
+  "journey": "hyoji",
+  "category": "路面電車と軌道敷",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "hyoji:kido",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-kidoushikinainihaireru",
+   "hj-kidoushiki"
+  ],
+  "description": "車は 原則として 軌道敷の 中を 通っては いけません。右左折や 横断の ため 横切る ときなどは 通れます。"
+ },
+ {
+  "id": "hj-senyoutsuukoutai",
+  "name": "専用通行帯",
+  "reading": "せんようつうこうたい",
+  "journey": "hyoji",
+  "category": "専用・優先通行帯",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "hyoji:senyo",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-senyoutsuukoutaiwotoor",
+   "hj-yuusentsuukoutaitoseny"
+  ],
+  "description": "「バス専用」などと 標示で 決められた 車だけが 通れる 車両通行帯です。ほかの 車は ふつう 通れません。"
+ },
+ {
+  "id": "hj-rosenbasutouyuusentsuu",
+  "name": "路線バス等優先通行帯",
+  "reading": "ろせんばすとうゆうせんつうこうたい",
+  "journey": "hyoji",
+  "category": "専用・優先通行帯",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "hyoji:senyo",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-yuusentsuukoutaikarade",
+   "hj-yuusentsuukoutaitoseny"
+  ],
+  "description": "路線バスなどが 優先して 通る 通行帯です。ほかの 車も 通れますが、バスが 近づいたら すぐに 出ます。"
+ },
+ {
+  "id": "hj-futsuujitenshasenyouts",
+  "name": "普通自転車専用通行帯",
+  "reading": "ふつうじてんしゃせんようつうこうたい",
+  "journey": "hyoji",
+  "category": "専用・優先通行帯",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:senyo",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-jitenshadoutojitenshas",
+   "hj-senyoutsuukoutai"
+  ],
+  "description": "普通自転車の ための 専用の 車両通行帯です。自動車は ここを 通っては いけません。"
+ },
+ {
+  "id": "hj-sharyoutsuukoutainokyo",
+  "name": "車両通行帯の境界線",
+  "reading": "しゃりょうつうこうたいのきょうかいせん",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-sharyoutsuukoutai",
+   "hj-tsuukoutaiwomataganai"
+  ],
+  "description": "車両通行帯と 車両通行帯の 境を 示す 線です。白なら 安全を 確かめて 進路を 変えられ、黄色なら 変えられません。"
+ },
+ {
+  "id": "hj-douronohidarigawabubun",
+  "name": "道路の左側部分",
+  "reading": "どうろのひだりがわぶぶん",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-douronomigigawabubun",
+   "hj-douronochuuou"
+  ],
+  "description": "道路の 中央(中央線が あれば その 線)から 左の 部分です。車は ふつう ここを 通ります。"
+ },
+ {
+  "id": "hj-shadougaisokusen",
+  "name": "車道外側線",
+  "reading": "しゃどうがいそくせん",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-rosokutaitoshadougaiso",
+   "hj-rosokutai"
+  ],
+  "description": "車道の 外側の はしを 示す 白の 線で、道路の 管理者が 引く 区画線です。歩道の ある 側の 車道外側線の 外は 路側帯では ありません。"
+ },
+ {
+  "id": "hj-ensekinokiironohasen",
+  "name": "縁石の黄色の破線",
+  "reading": "えんせきのきいろのはせん",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-ensekinokiironojissen",
+   "hj-houjinoshirotokiiro"
+  ],
+  "description": "縁石などに 黄色の 破線が あれば 駐車禁止です。人の 乗り降りなどの 停車は できます。"
+ },
+ {
+  "id": "hj-ensekinokiironojissen",
+  "name": "縁石の黄色の実線",
+  "reading": "えんせきのきいろのじっせん",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-ensekinokiironohasen",
+   "hj-houjinoshirotokiiro"
+  ],
+  "description": "縁石などに 黄色の 実線が あれば 駐停車禁止です。駐車も 停車も できません。破線(駐車禁止)と 区別します。"
+ },
+ {
+  "id": "hj-douronomigigawabubun",
+  "name": "道路の右側部分",
+  "reading": "どうろのみぎがわぶぶん",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-douronohidarigawabubun",
+   "hj-migigawawotsuukoudekir"
+  ],
+  "description": "道路の 中央から 右の 部分です。ふつうは はみ出さず、決められた ときだけ はみ出して 通れます。"
+ },
+ {
+  "id": "hj-rosokutaiwoyokogiru",
+  "name": "路側帯を横切る",
+  "reading": "ろそくたいをよこぎる",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-hodouwoyokogirutoki",
+   "hj-rosokutai"
+  ],
+  "description": "道路の 外へ 出入りする ために 路側帯を 横切る ときも、入る 直前で 一時停止して、歩く 人の じゃまを しません。"
+ },
+ {
+  "id": "hj-sharyoutsuukoutainonai",
+  "name": "車両通行帯のない道路",
+  "reading": "しゃりょうつうこうたいのないどうろ",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-kipurefuto",
+   "hj-douronohidarigawabubun"
+  ],
+  "description": "車両通行帯の ない 道路では、追い越しなどで しかたない ときの ほかは、道路の 左に 寄って 通ります。"
+ },
+ {
+  "id": "hj-jitenshadouwokurumahat",
+  "name": "自転車道を車は通らない",
+  "reading": "じてんしゃどうをくるまはとおらない",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-jitenshadou",
+   "hj-hodoutoshadounokubetsu"
+  ],
+  "description": "自動車や 一般原動機付自転車は 自転車道を 通っては いけません。道路の 外へ 出入りする ために 横切るのは できます。"
+ },
+ {
+  "id": "hj-hodoutoshadounokubetsu",
+  "name": "歩道と車道の区別のある道路",
+  "reading": "ほどうとしゃどうのくべつのあるどうろ",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-shadou",
+   "hj-hodou"
+  ],
+  "description": "歩道と 車道の 区別の ある 道路では、車は 車道を 通ります。歩道や 路側帯を 通っては いけません。"
+ },
+ {
+  "id": "hj-douronochuuou",
+  "name": "道路の中央",
+  "reading": "どうろのちゅうおう",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-chuuousen",
+   "hj-douronohidarigawabubun"
+  ],
+  "description": "中央線の ない 道路では、道路の まん中が 左側と 右側を 分ける めやすです。その 左を 通ります。"
+ },
+ {
+  "id": "hj-migigawawotsuukoudekir",
+  "name": "右側を通行できるとき",
+  "reading": "みぎがわをつうこうできるとき",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-douronomigigawabubun",
+   "hj-hidarigawabubunnohabag"
+  ],
+  "description": "一方通行の 道路や、工事などで 左側を 通れない ときは、右側に はみ出して 通れます。工事などの ときは はみ出しを できるだけ 少なく します。"
+ },
+ {
+  "id": "hj-rosokutainojitensha",
+  "name": "路側帯の自転車",
+  "reading": "ろそくたいのじてんしゃ",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "hj-hokoushayourosokutaino",
+   "hj-rosokutai"
+  ],
+  "description": "自転車は 道路の 左側に ある 路側帯を 通れます。歩く 人の じゃまに なる ときや、歩行者用路側帯では 通れません。"
+ },
+ {
+  "id": "hj-douryuutaitotachiiriki",
+  "name": "導流帯と立入り禁止部分",
+  "reading": "どうりゅうたいとたちいりきんしぶぶん",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦓",
+  "mapNode": "hyoji:churyu",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-douryuutai",
+   "hj-tachiirikinshibubun"
+  ],
+  "description": "白の しま模様の 導流帯は 車が 通らないように している 部分で、なるべく 入りません。黄色の わくの 立入り禁止部分は 入っては いけません。白と 黄色を 区別します。"
+ },
+ {
+  "id": "hj-hodoutorosokutainochig",
+  "name": "歩道と路側帯のちがい",
+  "reading": "ほどうとろそくたいのちがい",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-hodou",
+   "hj-rosokutai"
+  ],
+  "description": "歩道は 縁石や さくで 区切られた 部分、路側帯は 白の 線(標示)だけで 区切られた 部分です。どちらも 車は 通れません。"
+ },
+ {
+  "id": "hj-kidoushikinainihaireru",
+  "name": "軌道敷内に入れるとき",
+  "reading": "きどうしきないにはいれるとき",
+  "journey": "hyoji",
+  "category": "路面電車と軌道敷",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "hyoji:kido",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-kidoushikinainotsuukou",
+   "hj-romendenshagachikazuit"
+  ],
+  "description": "軌道敷に 入れるのは、右左折・横断・転回で 横切る とき、危険を 防ぐ とき、左側が せまい ときや 工事の とき、「軌道敷内通行可」の 標識で 許された ときなどです。"
+ },
+ {
+  "id": "hj-romendenshagachikazuit",
+  "name": "路面電車が近づいたら軌道敷の外へ",
+  "reading": "ろめんでんしゃがちかづいたらきどうしきのそとへ",
+  "journey": "hyoji",
+  "category": "路面電車と軌道敷",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚋",
+  "mapNode": "hyoji:kido",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-kidoushikinainihaireru",
+   "hj-romendensha"
+  ],
+  "description": "軌道敷の 中を 通っている とき 後ろから 路面電車が 近づいたら、すぐに 軌道敷の 外へ 出るか、電車から じゅうぶん 離れます。"
+ },
+ {
+  "id": "hj-futsuujitenshanokousat",
+  "name": "普通自転車の交差点進入禁止",
+  "reading": "ふつうじてんしゃのこうさてんしんにゅうきんし",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-jitenshaoudantai",
+   "hj-kiseihyouji"
+  ],
+  "description": "交差点の 手前の 黄色の 線と 自転車の 記号の 標示で、普通自転車は この 線を こえて 交差点に 入っては いけません。自転車横断帯を 通ります。"
+ },
+ {
+  "id": "hj-rojyoushougaibutsusekk",
+  "name": "安全地帯又は路上障害物に接近",
+  "reading": "あんぜんちたいまたはろじょうしょうがいぶつにせっきん",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "hyoji:churyu",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-anzenchitai",
+   "hj-douryuutai"
+  ],
+  "description": "この 先に 安全地帯や 道路上の 障害物が あり、近づいている ことを 示す 指示標示です。よける 方向に 早めに 寄ります。"
+ },
+ {
+  "id": "hj-nidanteishisen",
+  "name": "二段停止線",
+  "reading": "にだんていしせん",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:shijihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-shijihyouji",
+   "hj-usasetsunohouhounohyou"
+  ],
+  "description": "停止線が 2本 ある 標示で、前の 線は 二輪車、後ろの 線は 四輪車などが 止まる 位置です。"
+ },
+ {
+  "id": "hj-usasetsunohouhounohyou",
+  "name": "右左折の方法の標示",
+  "reading": "うさせつのほうほうのひょうじ",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-shinkouhoukounohyouji",
+   "hj-kanjyounokousatennioke"
+  ],
+  "description": "交差点で 右左折する とき 通らなければ ならない 部分を 示す 標示です。標示が あれば それに 従って 曲がります。"
+ },
+ {
+  "id": "hj-shinkouhoukounohyouji",
+  "name": "進行方向の標示",
+  "reading": "しんこうほうこうのひょうじ",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "hyoji:shijihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-usasetsunohouhounohyou",
+   "hj-sasetsusenyounotsuukou"
+  ],
+  "description": "通行帯に 白の 矢印で、車が 進める 方向を 示す 標示です。"
+ },
+ {
+  "id": "hj-migigawatsuukounohyou",
+  "name": "右側通行の標示",
+  "reading": "みぎがわつうこうのひょうじ",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "hyoji:shijihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-douronomigigawabubun",
+   "hj-migigawawotsuukoudekir"
+  ],
+  "description": "こう配の 急な 道路の 曲がり角付近などで、車が 道路の 右の 部分を 通って よい ことを 示す 標示です。"
+ },
+ {
+  "id": "hj-yuusentsuukoutaikarade",
+  "name": "優先通行帯から出る",
+  "reading": "ゆうせんつうこうたいからでる",
+  "journey": "hyoji",
+  "category": "専用・優先通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚌",
+  "mapNode": "hyoji:senyo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-rosenbasutouyuusentsuu",
+   "hj-yuusentsuukoutaitoseny"
+  ],
+  "description": "路線バス等優先通行帯を 通っている とき 後ろから バスが 来たら、すぐに 出ます。混んでいて 出られなく なりそうなら、はじめから 通りません。"
+ },
+ {
+  "id": "hj-senyoutsuukoutaiwotoor",
+  "name": "専用通行帯を通れる車",
+  "reading": "せんようつうこうたいをとおれるくるま",
+  "journey": "hyoji",
+  "category": "専用・優先通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "hyoji:senyo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-senyoutsuukoutai",
+   "hj-senyoutsuukoutainojika"
+  ],
+  "description": "バスの 専用通行帯でも、小型特殊自動車・原付・軽車両は 通れます。ほかの 車は 右左折の ため 寄る ときや 工事などの ときだけ 入れます。"
+ },
+ {
+  "id": "hj-yuusentsuukoutaitoseny",
+  "name": "優先通行帯と専用通行帯のちがい",
+  "reading": "ゆうせんつうこうたいとせんようつうこうたいのちがい",
+  "journey": "hyoji",
+  "category": "専用・優先通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "hyoji:senyo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-senyoutsuukoutai",
+   "hj-rosenbasutouyuusentsuu"
+  ],
+  "description": "「優先」通行帯は ほかの 車も 通れて バスが 来たら 出ます。「専用」通行帯は 決められた 車の ほか ふつう 通れません。2つを 区別します。"
+ },
+ {
+  "id": "hj-sharyoutsuukoutaigamit",
+  "name": "車両通行帯が3つ以上",
+  "reading": "しゃりょうつうこうたいがみっついじょう",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-migigawanotsuukoutai",
+   "hj-gentsukinotsuukoutai"
+  ],
+  "description": "片側に 通行帯が 3つ 以上 あれば、自動車は いちばん 右を 追い越しの ために 空けて、ほかの 通行帯を 速さに 合わせて 通ります。"
+ },
+ {
+  "id": "hj-tsuukoutaiwomataganai",
+  "name": "通行帯をまたがない",
+  "reading": "つうこうたいをまたがない",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-sharyoutsuukoutainochu",
+   "hj-midarinashinrohenkou"
+  ],
+  "description": "車両通行帯の ある 道路では、2つの 通行帯に またがったり はみ出したり して 走っては いけません。"
+ },
+ {
+  "id": "hj-katagawadakekiironosen",
+  "name": "片側だけ黄色の線",
+  "reading": "かたがわだけきいろのせん",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-shinrohenkoukinshinose",
+   "hj-kiironojissen"
+  ],
+  "description": "白の 線の となりに 黄色の 線が 引かれている ときは、黄色の 線が ある 側の 通行帯からは 進路を 変えられません。反対側からは 変えられます。"
+ },
+ {
+  "id": "hj-anzenchitainihairanai",
+  "name": "安全地帯に入らない",
+  "reading": "あんぜんちたいにはいらない",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏝️",
+  "mapNode": "hyoji:churyu",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-anzenchitai",
+   "hj-tachiirikinshibubun"
+  ],
+  "description": "車は 安全地帯に 入っては いけません。歩く 人が いる 安全地帯の 横を 通る ときは 徐行します。"
+ },
+ {
+  "id": "hj-ippoutsuukouronomigiga",
+  "name": "一方通行路の右側",
+  "reading": "いっぽうつうこうろのみぎがわ",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-migigawawotsuukoudekir",
+   "hj-douronomigigawabubun"
+  ],
+  "description": "一方通行の 道路では、道路の 右側も 通れます。この ときは「はみ出しを できるだけ 少なく」の 決まりも ありません。"
+ },
+ {
+  "id": "hj-hidarigawabubunnohabag",
+  "name": "左側部分の幅が十分でないとき",
+  "reading": "ひだりがわぶぶんのはばがじゅうぶんでないとき",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-migigawawotsuukoudekir",
+   "hj-hidarigawabubunnohabagb"
+  ],
+  "description": "道路の 左側部分の 幅が 自分の 車が 通るのに じゅうぶんで ない ときは、右側に はみ出して 通れます。はみ出し方は できるだけ 少なく します。"
+ },
+ {
+  "id": "hj-chuuousenhamannakatoha",
+  "name": "中央線はまんなかとは限らない",
+  "reading": "ちゅうおうせんはまんなかとはかぎらない",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-chuuousen",
+   "hj-douronochuuou"
+  ],
+  "description": "中央線は 道路の まん中に あるとは かぎりません。標示で 中央線が 示されていれば、その 線が 道路の 中央と されます。"
+ },
+ {
+  "id": "hj-nanameoudanka",
+  "name": "斜め横断可",
+  "reading": "ななめおうだんか",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "hyoji:shijihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-oudanhodounohyouji",
+   "hj-shijihyouji"
+  ],
+  "description": "交差点で 歩く 人が 斜めに 横断できる ことを 示す 標示です。曲がる 車は 斜めに 渡る 人にも 注意します。"
+ },
+ {
+  "id": "hj-chuuoubunritai",
+  "name": "中央分離帯",
+  "reading": "ちゅうおうぶんりたい",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "hyoji:churyu",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-koutsuutou",
+   "hj-chuuousen"
+  ],
+  "description": "上りと 下りの 車線を 分ける ために 道路の 中央に 作られた 帯です。この 道は 往復の 方向が 分けられています。"
+ },
+ {
+  "id": "hj-koutsuutou",
+  "name": "交通島",
+  "reading": "こうつうとう",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏝️",
+  "mapNode": "hyoji:churyu",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-chuuoubunritai",
+   "hj-anzenchitai"
+  ],
+  "description": "交差点などで 車の 流れを 分けたり 歩く 人が 待ったり する ために 作られた 島の ような 場所です。車は 入りません。"
+ },
+ {
+  "id": "hj-hodoutoshadounokubetsub",
+  "name": "歩道と車道の区別のない道路",
+  "reading": "ほどうとしゃどうのくべつのないどうろ",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-hodounonaimichi",
+   "hj-rosokutai"
+  ],
+  "description": "歩道と 車道の 区別の ない 道路では、端に 路側帯が 引かれている ことが 多く、歩く 人は そこを 通ります。車は 歩く 人の 横で 安全な 間隔か 徐行です。"
+ },
+ {
+  "id": "hj-gentsukinotsuukoutai",
+  "name": "原付の通行帯",
+  "reading": "げんつきのつうこうたい",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-sharyoutsuukoutaigamit",
+   "hj-ichibanhidarinotsuukou"
+  ],
+  "description": "一般原動機付自転車は、通行帯が 3つ 以上 あっても いちばん 左の 通行帯を 通ります。速さに 合わせて 右へ 移れるのは 自動車です。"
+ },
+ {
+  "id": "hj-kiironosentousasetsu",
+  "name": "黄色の線と右左折",
+  "reading": "きいろのせんとうさせつ",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-shinrohenkoukinshinose",
+   "hj-katagawadakekiironosen"
+  ],
+  "description": "右左折の ためでも 黄色の 進路変更禁止の 線を こえては いけません。黄色の 線が 始まる 前に、早めに 曲がる 方向の 通行帯へ 移ります。"
+ },
+ {
+  "id": "hj-chuuousennoshironohase",
+  "name": "中央線の白の破線",
+  "reading": "ちゅうおうせんのしろのはせん",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-chuuousennoshironojiss",
+   "hj-hidarigawabubunnohabagb"
+  ],
+  "description": "白の 破線の 中央線の 道路では、左側部分の 幅が 6m 未満で 右側が 見通せ 対向車の じゃまに ならなければ、はみ出して 追い越せます。条件が そろわなければ できません。"
+ },
+ {
+  "id": "hj-kiironochuuousenwokoer",
+  "name": "黄色の中央線をこえる右折",
+  "reading": "きいろのちゅうおうせんをこえるうせつ",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-kiironojissen",
+   "hj-chuuousennoshironohase"
+  ],
+  "description": "黄色の 中央線は「追い越しの ための はみ出し禁止」です。追い越し では ない 右折で 道路の 外へ 出る ときは こえられます。"
+ },
+ {
+  "id": "hj-hokoushayoudouronotsuu",
+  "name": "歩行者用道路の通行",
+  "reading": "ほこうしゃようどうろのつうこう",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-hokanokoutsuuwosamatag",
+   "hj-hodouninoriagenai"
+  ],
+  "description": "歩行者用道路を 許可を 受けて 通る 車は、とくに 歩く 人に 注意して 徐行しなければ なりません。"
+ },
+ {
+  "id": "hj-hokanokoutsuuwosamatag",
+  "name": "他の交通を妨げる横断",
+  "reading": "ほかのこうつうをさまたげるおうだん",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "hyoji:hairi",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-dourogainiderutokinous",
+   "hj-hokoushayoudouronotsuu"
+  ],
+  "description": "歩く 人や ほかの 車の じゃまに なる おそれが ある ときは、横断・転回・後退や、道路の 外へ 出入りする ための 右左折を しては いけません。",
+  "acceptedReadings": [
+   "ほかのこうつうをさまたげるおうだん",
+   "たのこうつうをさまたげるおうだん"
+  ]
+ },
+ {
+  "id": "hj-dourogainiderutokinosa",
+  "name": "道路外に出るときの左折",
+  "reading": "どうろがいにでるときのさせつ",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-dourogainiderutokinous",
+   "hj-hodouwoyokogirutoki"
+  ],
+  "description": "道路の 外へ 出る ため 左折する ときは、前もって できるだけ 道路の 左端に 寄り、徐行します。"
+ },
+ {
+  "id": "hj-dourogainiderutokinous",
+  "name": "道路外に出るときの右折",
+  "reading": "どうろがいにでるときのうせつ",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-dourogainiderutokinosa",
+   "hj-hokanokoutsuuwosamatag"
+  ],
+  "description": "道路の 外へ 出る ため 右折する ときは、前もって できるだけ 道路の 中央(一方通行なら 右端)に 寄り、徐行します。"
+ },
+ {
+  "id": "hj-katagawaisshasen",
+  "name": "片側一車線",
+  "reading": "かたがわいっしゃせん",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-katagawanishasenijyoun",
+   "hj-shasen"
+  ],
+  "description": "それぞれの 方向に 車線が 1つずつの 道路です。対向車と すれ違うので、中央線から 左の 部分を 通ります。"
+ },
+ {
+  "id": "hj-katagawanishasenijyoun",
+  "name": "片側2車線以上の道路",
+  "reading": "かたがわにしゃせんいじょうのどうろ",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-katagawaisshasen",
+   "hj-ichibanhidarinotsuukou"
+  ],
+  "description": "それぞれの 方向に 車線が 2つ 以上 ある 道路です。ふつうは 左の 通行帯を 通り、追い越しの ときに 右を 使います。"
+ },
+ {
+  "id": "hj-sasetsusenyounotsuukou",
+  "name": "左折専用の通行帯",
+  "reading": "させつせんようのつうこうたい",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-usetsusenyounotsuukout",
+   "hj-shinkouhoukounohyouji"
+  ],
+  "description": "交差点の 手前で 左折する 車が 通るよう 決められた 通行帯です。まっすぐ 行く 車は 入りません。"
+ },
+ {
+  "id": "hj-usetsusenyounotsuukout",
+  "name": "右折専用の通行帯",
+  "reading": "うせつせんようのつうこうたい",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-sasetsusenyounotsuukou",
+   "hj-shinkouhoukounohyouji"
+  ],
+  "description": "交差点の 手前で 右折する 車が 通るよう 決められた 通行帯です。右折する ときは 早めに 移ります。"
+ },
+ {
+  "id": "hj-futsuujitenshanohodout",
+  "name": "特例特定小型原動機付自転車・普通自転車の歩道通行部分",
+  "reading": "とくれいとくていこがたげんどうきつきじてんしゃふつうじてんしゃのほどうつうこうぶぶん",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-jitenshadou",
+   "hj-rosokutainojitensha"
+  ],
+  "description": "歩道の 中に 白線と 自転車の 記号で 示された、普通自転車などが 通る 部分です。歩く 人が いなければ 安全な 速さで、いれば 徐行して 通ります。"
+ },
+ {
+  "id": "hj-kanjyounokousatennioke",
+  "name": "環状交差点における左折等の方法",
+  "reading": "かんじょうこうさてんにおけるさせつとうのほうほう",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-usasetsunohouhounohyou",
+   "hj-dourogainiderutokinosa"
+  ],
+  "description": "環状交差点で 左折・右折・直進・転回する とき 通らなければ ならない 部分を 示す 標示です。"
+ },
+ {
+  "id": "hj-keisharyouhadouronosas",
+  "name": "軽車両は道路の左側端",
+  "reading": "けいしゃりょうはどうろのさそくたん",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-rosokutainojitensha",
+   "hj-kipurefuto"
+  ],
+  "description": "自転車などの 軽車両は、道路の 左側端に 寄って 通ります。自動車の「左に 寄る」より さらに 端です。"
+ },
+ {
+  "id": "hj-midarinashinrohenkou",
+  "name": "みだりな進路変更",
+  "reading": "みだりなしんろへんこう",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-tsuukoutaiwomataganai",
+   "hj-sharyoutsuukoutainochu"
+  ],
+  "description": "用も ないのに 何度も 進路を 変えては いけません。後ろの 車の めいわくに なり、事故の もとにも なります。"
+ },
+ {
+  "id": "hj-chuuousennoshironojiss",
+  "name": "中央線の白の実線",
+  "reading": "ちゅうおうせんのしろのじっせん",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-chuuousennoshironohase",
+   "hj-kiironochuuousenwokoer"
+  ],
+  "description": "白の 実線の 中央線は 黄色と ちがい はみ出し禁止の 標示では ありません。それでも はみ出せるのは 左側が 6m 未満で 見通しが よい ときなどに 限られます。"
+ },
+ {
+  "id": "hj-shasenkyoukaisentochuu",
+  "name": "車線境界線と中央線",
+  "reading": "しゃせんきょうかいせんとちゅうおうせん",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-chuuousen",
+   "hj-sharyoutsuukoutainokyo"
+  ],
+  "description": "車線境界線は 4車線 以上の 道路で 同じ 方向の 車線の 境を、中央線は 道路の 中央を 示します。役わりが ちがいます。"
+ },
+ {
+  "id": "hj-jitenshadouwotoorujite",
+  "name": "自転車道を通る自転車",
+  "reading": "じてんしゃどうをとおるじてんしゃ",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-jitenshadou",
+   "hj-jitenshadoutojitenshas"
+  ],
+  "description": "自転車道の ある 道路では、普通自転車は 自転車道を 通らなければ なりません。工事などで しかたない ときは 別です。"
+ },
+ {
+  "id": "hj-jitenshaoudantaitoouda",
+  "name": "自転車横断帯と横断歩道",
+  "reading": "じてんしゃおうだんたいとおうだんほどう",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:shijihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-jitenshaoudantai",
+   "hj-oudanhodounohyouji"
+  ],
+  "description": "自転車横断帯は 自転車が、横断歩道は 歩く 人が 渡る 場所です。近くに 自転車横断帯が あれば 自転車は そこを 渡ります。"
+ },
+ {
+  "id": "hj-rosokutainomittsunoshu",
+  "name": "路側帯の3つの種類",
+  "reading": "ろそくたいのみっつのしゅるい",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "3️⃣",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-chuuteishakinshirosoku",
+   "hj-hokoushayourosokutai"
+  ],
+  "description": "路側帯は 3種類。白の 実線 1本の 路側帯、実線と 破線の 駐停車禁止路側帯、実線 2本の 歩行者用路側帯です。線の 形で 見分けます。"
+ },
+ {
+  "id": "hj-shironojissennoshasenk",
+  "name": "白の線の車両通行帯",
+  "reading": "しろのせんのしゃりょうつうこうたい",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-shinrohenkoukinshinose",
+   "hj-midarinashinrohenkou"
+  ],
+  "description": "白の 線で 区切られた 車両通行帯は、進路変更禁止では ありません。ただし むやみな 進路変更は せず、変える ときは 安全を 確かめて 合図します。"
+ },
+ {
+  "id": "hj-houjinoshirotokiiro",
+  "name": "標示の白と黄色",
+  "reading": "ひょうじのしろときいろ",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-kiiroisen",
+   "hj-shiroisen"
+  ],
+  "description": "標示の 黄色は 進路変更禁止・はみ出し禁止・駐停車禁止など「禁止」を 示す ことが 多い 色です。白は 場所や 区切りを 示す ことが 多いです。"
+ },
+ {
+  "id": "hj-kiseihyoujitoshijihyou",
+  "name": "規制標示と指示標示のちがい",
+  "reading": "きせいひょうじとしじひょうじのちがい",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-kiseihyouji",
+   "hj-shijihyouji"
+  ],
+  "description": "規制標示は「してはいけない」「こう しなさい」を 決める もの、指示標示は「して よい」「ここが ◯◯」を 示す ものです。"
+ },
+ {
+  "id": "hj-houshikitohyoujinochig",
+  "name": "標識と標示のちがい",
+  "reading": "ひょうしきとひょうじのちがい",
+  "journey": "hyoji",
+  "category": "標示のしくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪧",
+  "mapNode": "hyoji:kiseihyoji",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-dourohyouji",
+   "hj-kiseihyoujitoshijihyou"
+  ],
+  "description": "標識は 道路の そばに 立てた 板、標示は 路面に 書いた 線・記号・文字です。字が「識」と「示」で ちがいます。"
+ },
+ {
+  "id": "hj-jitenshadoutojitenshas",
+  "name": "自転車道と自転車専用通行帯",
+  "reading": "じてんしゃどうとじてんしゃせんようつうこうたい",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-jitenshadou",
+   "hj-futsuujitenshasenyouts"
+  ],
+  "description": "自転車道は 縁石や さくで 区切られた 部分、普通自転車専用通行帯は 標示で 決めた 車両通行帯です。さくが あるか どうかで 見分けます。"
+ },
+ {
+  "id": "hj-rosokutaitoshadougaiso",
+  "name": "路側帯と車道外側線のちがい",
+  "reading": "ろそくたいとしゃどうがいそくせんのちがい",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-shadougaisokusen",
+   "hj-rosokutai"
+  ],
+  "description": "路側帯で 駐停車する ときは、幅が 0.75m を こえれば 中に 入り 左に 0.75m 空けます。歩道の ある 側の 車道外側線は 路側帯では なく、車道の 左端に 沿って 止めます。"
+ },
+ {
+  "id": "hj-hidarigawabubunnohabagb",
+  "name": "左側部分の幅が6m未満の道",
+  "reading": "ひだりがわぶぶんのはばがろくめーとるみまんのみち",
+  "journey": "hyoji",
+  "category": "左側通行とはみ出し",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "hyoji:hidari",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-chuuousennoshironohase",
+   "hj-hidarigawabubunnohabag"
+  ],
+  "description": "左側部分の 幅が 6m 未満の 見通しの よい 道路では、はみ出し禁止で なければ はみ出して 追い越せます。6m「以上」の 道では できません。"
+ },
+ {
+  "id": "hj-kousatennonakamadetsuz",
+  "name": "交差点の中まで続く中央線",
+  "reading": "こうさてんのなかまでつづくちゅうおうせん",
+  "journey": "hyoji",
+  "category": "線の色と形",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "hyoji:sen",
+  "field": "標識・標示",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-chuuousen",
+   "hj-douronochuuou"
+  ],
+  "description": "交差点の 中まで 中央線や 車両通行帯が 続いている 道路は 優先道路です。交わる 道の 車は その 道の 車の じゃまを しません。"
+ },
+ {
+  "id": "hj-rittaikousa",
+  "name": "立体交差",
+  "reading": "りったいこうさ",
+  "journey": "hyoji",
+  "category": "入ってはいけない場所",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌉",
+  "mapNode": "hyoji:churyu",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-koutsuutou",
+   "hj-chuuoubunritai"
+  ],
+  "description": "道路と 道路が 橋などで 上下に 分かれて 交わる ところです。車どうしの 流れが 同じ 高さで ぶつからない しくみです。"
+ },
+ {
+  "id": "hj-enseki",
+  "name": "縁石",
+  "reading": "えんせき",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-hodou",
+   "hj-hodoutorosokutainochig"
+  ],
+  "description": "歩道と 車道の 境に ある 少し 高い ブロックです。縁石で 区切られて いれば 歩道です。"
+ },
+ {
+  "id": "hj-daiichitsuukoutai",
+  "name": "第一通行帯",
+  "reading": "だいいちつうこうたい",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-ichibanhidarinotsuukou",
+   "hj-gentsukinotsuukoutai"
+  ],
+  "description": "道路の 左側の 端から 数えて 1番目の 車両通行帯です。車は ふつう ここを 通ります。"
+ },
+ {
+  "id": "hj-hokoushayourosokutaino",
+  "name": "歩行者用路側帯の自転車",
+  "reading": "ほこうしゃようろそくたいのじてんしゃ",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚷",
+  "mapNode": "hyoji:rosoku",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-hokoushayourosokutai",
+   "hj-rosokutainojitensha"
+  ],
+  "description": "白の 実線 2本の 歩行者用路側帯は、自転車も 通れません。ふつうの 路側帯(白の 実線 1本)とは ちがいます。"
+ },
+ {
+  "id": "hj-senyoutsuukoutainojika",
+  "name": "専用通行帯の時間外",
+  "reading": "せんようつうこうたいのじかんがい",
+  "journey": "hyoji",
+  "category": "専用・優先通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕘",
+  "mapNode": "hyoji:senyo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-senyoutsuukoutai",
+   "hj-senyoutsuukoutaiwotoor"
+  ],
+  "description": "専用通行帯は、補助標識に 書かれた 時間の 外なら ほかの 車も 通れます。標識の 時間を よく 見ます。"
+ },
+ {
+  "id": "hj-sharyoutsuukoutainochu",
+  "name": "車両通行帯の中央を走る",
+  "reading": "しゃりょうつうこうたいのちゅうおうをはしる",
+  "journey": "hyoji",
+  "category": "車両通行帯",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "hyoji:tsukotai",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-tsuukoutaiwomataganai",
+   "hj-midarinashinrohenkou"
+  ],
+  "description": "車両通行帯の 中では、線に かからないよう 通行帯の まん中を 通ります。"
+ },
+ {
+  "id": "hj-hodouninoriagenai",
+  "name": "歩道に乗り上げない",
+  "reading": "ほどうにのりあげない",
+  "journey": "hyoji",
+  "category": "路側帯と歩道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "hyoji:hodo",
+  "field": "通行する場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "hj-hodou",
+   "hj-hodoutoshadounokubetsu"
+  ],
+  "description": "車は 歩道を 通る 場所では ありません。止める ときなどに 歩道に 乗り上げないように します。歩道を 横切るのは 道路の 外へ 出入りする ときだけです。"
+ }
+]

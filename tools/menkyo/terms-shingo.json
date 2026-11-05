@@ -1,0 +1,1983 @@
+[
+ {
+  "id": "sg-aoironotouka",
+  "name": "青色の灯火",
+  "reading": "あおいろのとうか",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "shingo:ao",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-kiironotouka",
+   "sg-akaironotouka"
+  ],
+  "description": "車は まっすぐ・左折・右折が できます。歩く 人は 進めます。ただし 自転車や 二段階右折の 原付は 右折する 地点まで まっすぐ 進み、そこで 向きを 変えるまでです。"
+ },
+ {
+  "id": "sg-kiironotouka",
+  "name": "黄色の灯火",
+  "reading": "きいろのとうか",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "shingo:kiiro",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-akaironotouka",
+   "sg-kiirodetomarenaitoki"
+  ],
+  "description": "車は 停止位置から 先へ 進んでは いけません。歩く 人は 横断を 始めず、渡っている 人は 急いで 渡り終えるか 引き返します。"
+ },
+ {
+  "id": "sg-akaironotouka",
+  "name": "赤色の灯火",
+  "reading": "あかいろのとうか",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "shingo:aka",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-teishiichi",
+   "sg-kiironotouka"
+  ],
+  "description": "車は 停止位置を こえて 進んでは いけません。歩く 人も 横断しては いけません。止まる 場所は 停止線の 直前です。"
+ },
+ {
+  "id": "sg-shingouki",
+  "name": "信号機",
+  "reading": "しんごうき",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "shingo:teishisen",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-shingounosanshoku",
+   "sg-taimensurushingou"
+  ],
+  "description": "色の 灯火で 道路の 交通を 整理する 機械です。横に ならぶ ときは 右から 赤・黄・青、たてに ならぶ ときは 上から 赤・黄・青の 順です。"
+ },
+ {
+  "id": "sg-shingounosanshoku",
+  "name": "信号の三色",
+  "reading": "しんごうのさんしょく",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚥",
+  "mapNode": "shingo:ao",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-aoironotouka",
+   "sg-kiironotouka",
+   "sg-akaironotouka"
+  ],
+  "description": "信号は 青 → 黄 → 赤の 順に 変わります。青は「進む ことが できる」、黄は「止まれ」、赤は「進んでは いけない」の 合図です。"
+ },
+ {
+  "id": "sg-hokoushayoushingou",
+  "name": "歩行者用信号",
+  "reading": "ほこうしゃようしんごう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-hokoushayounoaonotenme",
+   "sg-oudanhodouwowatarujite"
+  ],
+  "description": "人の 形が 光る 信号で、歩く 人の ための ものです。横断歩道を 自転車で 渡る ときも この 信号に 従います。"
+ },
+ {
+  "id": "sg-hokoushayounoaonotenme",
+  "name": "歩行者用の青の点滅",
+  "reading": "ほこうしゃようのあおのてんめつ",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-hokoushayoushingou",
+   "sg-kiironotouka"
+  ],
+  "description": "人の 形の 青が 点滅したら、横断を 始めては いけません。渡っている 途中なら 急いで 渡り終えるか 引き返します。意味は 黄色の 信号と 同じです。"
+ },
+ {
+  "id": "sg-oshibotanshikishingou",
+  "name": "押しボタン式信号",
+  "reading": "おしぼたんしきしんごう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔘",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-hokoushayoushingou",
+   "sg-kannoushikishingou"
+  ],
+  "description": "渡りたい 人が ボタンを 押すと、しばらくして 歩行者用の 信号が 青に 変わる 信号です。押したら 青に なるまで 待ちます。"
+ },
+ {
+  "id": "sg-jitenshayoushingou",
+  "name": "自転車用信号",
+  "reading": "じてんしゃようしんごう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-hokoushajitenshasenyou",
+   "sg-hokoushayoushingou"
+  ],
+  "description": "自転車に 向けて 出される 信号です。自転車用と 示された 信号が あれば、自転車は その 信号に 従います。自転車も 車の なかまです。"
+ },
+ {
+  "id": "sg-aonoyajirushi",
+  "name": "青の矢印",
+  "reading": "あおのやじるし",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-akashingoutoaonoyajiru",
+   "sg-yajirushinohoukoudakes"
+  ],
+  "description": "赤や 黄の 信号が 出ていても、車は 青の 矢印の 向きに 進めます。矢印の ない 方向へは 進めません。"
+ },
+ {
+  "id": "sg-akanotenmetsu",
+  "name": "赤の点滅",
+  "reading": "あかのてんめつ",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "shingo:tenmetsu",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-akanotenmetsunoichijit",
+   "sg-kinotenmetsu"
+  ],
+  "description": "赤が 点滅していたら、車は 停止位置で かならず 一時停止を して、安全を 確かめてから 進みます。歩く 人は まわりに 注意して 進めます。"
+ },
+ {
+  "id": "sg-kinotenmetsu",
+  "name": "黄の点滅",
+  "reading": "きのてんめつ",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "shingo:tenmetsu",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-kinotenmetsunosusumika",
+   "sg-akanotenmetsu"
+  ],
+  "description": "黄が 点滅していたら、歩く 人も 車も ほかの 交通に 注意して 進む ことが できます。止まる 決まりでは ありません。"
+ },
+ {
+  "id": "sg-teishisen",
+  "name": "停止線",
+  "reading": "ていしせん",
+  "journey": "shingo",
+  "category": "停止位置",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "shingo:teishisen",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-teishiichi",
+   "sg-shingoumachi"
+  ],
+  "description": "車が 止まる 位置を 示す 白い 線です。赤や 黄の 信号で 止まる ときは、この 線の 直前で 止まります。"
+ },
+ {
+  "id": "sg-shingoumachi",
+  "name": "信号待ち",
+  "reading": "しんごうまち",
+  "journey": "shingo",
+  "category": "停止位置",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "shingo:teishisen",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-teishisen",
+   "sg-shingounokawarime"
+  ],
+  "description": "赤の 信号では 停止線の 手前で 待ちます。歩く 人は 歩道で 待ち、車道に 出て 待たないように します。"
+ },
+ {
+  "id": "sg-teshingou",
+  "name": "手信号",
+  "reading": "てしんごう",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👮",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-keisatsukan",
+   "sg-shingoutoteshingougach"
+  ],
+  "description": "警察官や 交通巡視員が 腕で 交通を 整理する 合図です。信号機と ちがう 合図でも、手信号に 従います。"
+ },
+ {
+  "id": "sg-keisatsukan",
+  "name": "警察官",
+  "reading": "けいさつかん",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👮",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-teshingou",
+   "sg-keisatsukannoshijinish"
+  ],
+  "description": "交差点などで 手信号を して 交通を 整理する ことが あります。警察官の 手信号や 指示が あれば、それに 従って 通ります。"
+ },
+ {
+  "id": "sg-aizu",
+  "name": "合図",
+  "reading": "あいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-houkoushijiki",
+   "sg-udenoaizu"
+  ],
+  "description": "曲がる・止まる・下がる など これから する ことを まわりに 知らせる ことです。曲がり終わったら 合図を やめます。"
+ },
+ {
+  "id": "sg-houkoushijiki",
+  "name": "方向指示器",
+  "reading": "ほうこうしじき",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-aizu",
+   "sg-usetsunoaizu"
+  ],
+  "description": "右折・左折・進路変更の ときに 点滅させて 合図する 灯火です。ウインカーとも いいます。"
+ },
+ {
+  "id": "sg-udenoaizu",
+  "name": "腕の合図",
+  "reading": "うでのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-houkoushijiki",
+   "sg-migiudewosuiheininobas"
+  ],
+  "description": "方向指示器の かわりに 腕で 曲がる 方向や 止まる ことを 知らせる 合図です。自転車に のる ときも 使います。"
+ },
+ {
+  "id": "sg-keionki",
+  "name": "警音器",
+  "reading": "けいおんき",
+  "journey": "shingo",
+  "category": "警音器",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📯",
+  "mapNode": "shingo:keionki",
+  "field": "運転者の心得",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "sg-keionkinomuyaminashiyo",
+   "sg-keitekikukannomitooshi"
+  ],
+  "description": "車の ホーンで、クラクションとも いいます。決められた 場所と 危ない ときの ほかは 鳴らしては いけません。"
+ },
+ {
+  "id": "sg-kiirodetomarenaitoki",
+  "name": "黄色で止まれないとき",
+  "reading": "きいろでとまれないとき",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "shingo:kiiro",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-kiironotouka",
+   "sg-kiirodekasokushinai"
+  ],
+  "description": "黄に 変わった とき 停止位置の すぐ 近くに いて 安全に 止まれない 場合は、そのまま 進めます。止まれるのに 進むのは いけません。"
+ },
+ {
+  "id": "sg-akashingoutoaonoyajiru",
+  "name": "赤信号と青の矢印",
+  "reading": "あかしんごうとあおのやじるし",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-aonoyajirushi",
+   "sg-yajirushinohoukoudakes"
+  ],
+  "description": "赤信号と いっしょに 青の 矢印が 出ていたら、車は 矢印の 向きに 進めます。ほかの 向きへは 赤なので 進めません。"
+ },
+ {
+  "id": "sg-usetsunoyajirushi",
+  "name": "右折の矢印",
+  "reading": "うせつのやじるし",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-aonoyajirushidetenkai",
+   "sg-usetsunoyajirushitotai"
+  ],
+  "description": "右向きの 青の 矢印では、車は 右折できます。転回(Uターン)も できます。"
+ },
+ {
+  "id": "sg-teishiichi",
+  "name": "停止位置",
+  "reading": "ていしいち",
+  "journey": "shingo",
+  "category": "停止位置",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "shingo:teishisen",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-teishisen",
+   "sg-teishisennonaikousaten"
+  ],
+  "description": "信号で 止まる 場所です。停止線が あれば その 直前、なければ 交差点や 横断歩道の 直前などです。"
+ },
+ {
+  "id": "sg-teishisennonaikousaten",
+  "name": "停止線のない交差点",
+  "reading": "ていしせんのないこうさてん",
+  "journey": "shingo",
+  "category": "停止位置",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "shingo:teishisen",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-teishiichi",
+   "sg-oudanhodounochokuzen"
+  ],
+  "description": "停止線の ない 交差点では、交差点の 直前で 止まります。すぐ 手前に 横断歩道が あれば、その 横断歩道の 直前です。"
+ },
+ {
+  "id": "sg-oudanhodounochokuzen",
+  "name": "横断歩道の直前",
+  "reading": "おうだんほどうのちょくぜん",
+  "journey": "shingo",
+  "category": "停止位置",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦓",
+  "mapNode": "shingo:teishisen",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-teishisennonaikousaten",
+   "sg-oudanhodoudakenoshingo"
+  ],
+  "description": "停止線が なく 横断歩道や 自転車横断帯が ある ところでは、その 直前が 停止位置です。横断歩道の 上で 止まらないように します。"
+ },
+ {
+  "id": "sg-teshingounoshoumen",
+  "name": "手信号の正面",
+  "reading": "てしんごうのしょうめん",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-teshingounohaimen",
+   "sg-teshingounoyoko"
+  ],
+  "description": "腕を 横に 水平に 上げた 警察官の 正面に 向かう 交通は、赤色の 灯火と 同じ 意味です。止まって 待ちます。"
+ },
+ {
+  "id": "sg-teshingounohaimen",
+  "name": "手信号の背面",
+  "reading": "てしんごうのはいめん",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-teshingounoshoumen",
+   "sg-teshingounoyoko"
+  ],
+  "description": "腕を 横に 水平に 上げた 警察官の 背中の 側から 向かう 交通も、赤色の 灯火と 同じ 意味です。"
+ },
+ {
+  "id": "sg-teshingounoyoko",
+  "name": "手信号の横",
+  "reading": "てしんごうのよこ",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-teshingounoshoumen",
+   "sg-udewozujyouniageru"
+  ],
+  "description": "腕を 横に 水平に 上げた 警察官の 体の 正面と 平行に 進む 交通(横の 交通)は、青色の 灯火と 同じ 意味です。"
+ },
+ {
+  "id": "sg-udewozujyouniageru",
+  "name": "腕を垂直に上げる",
+  "reading": "うでをすいちょくにあげる",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-teshingounoyoko",
+   "sg-toukawozujyouniageru"
+  ],
+  "description": "警察官が 腕を 垂直に 上げたら、それまで 青だった 交通は 黄色、それと 交わる 交通は 赤色と 同じ 意味です。"
+ },
+ {
+  "id": "sg-toukashingou",
+  "name": "灯火信号",
+  "reading": "とうかしんごう",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shingo:toka",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-toukawoyokonifuru",
+   "sg-toukawozujyouniageru"
+  ],
+  "description": "警察官などが 灯火を 振って 交通を 整理する 合図で、夜に よく 使われます。手信号と 同じように 従います。"
+ },
+ {
+  "id": "sg-toukawoyokonifuru",
+  "name": "灯火を横に振る",
+  "reading": "とうかをよこにふる",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shingo:toka",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-toukashingou",
+   "sg-toukanofuruhoukounisus"
+  ],
+  "description": "灯火が 振られている 方向に 進む 交通は 青色、それと 交わる 交通は 赤色の 灯火と 同じ 意味です。"
+ },
+ {
+  "id": "sg-toukawozujyouniageru",
+  "name": "灯火を頭上に上げる",
+  "reading": "とうかをずじょうにあげる",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shingo:toka",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-toukawoyokonifuru",
+   "sg-udewozujyouniageru"
+  ],
+  "description": "灯火を 頭の 上に 上げたら、それまで 灯火が 振られていた 方向に 進む 交通は 黄色、交わる 交通は 赤色と 同じ 意味です。"
+ },
+ {
+  "id": "sg-shingoutoteshingougach",
+  "name": "信号と手信号がちがうとき",
+  "reading": "しんごうとてしんごうがちがうとき",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-teshingou",
+   "sg-keisatsukannoshijinish"
+  ],
+  "description": "信号機の 信号と 警察官の 手信号が ちがう ときは、手信号に 従います。その 場の 安全の ために 出されて いるからです。"
+ },
+ {
+  "id": "sg-usetsunoaizu",
+  "name": "右折の合図",
+  "reading": "うせつのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-aizuhasanjyuumetorutem",
+   "sg-sasetsunoaizu"
+  ],
+  "description": "右折する ときは、曲がる 地点(交差点では その 手前の 側端)から 30m 手前で 右の 合図を 出します。"
+ },
+ {
+  "id": "sg-sasetsunoaizu",
+  "name": "左折の合図",
+  "reading": "させつのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-aizuhasanjyuumetorutem",
+   "sg-usetsunoaizu"
+  ],
+  "description": "左折する ときは、曲がる 地点(交差点では その 手前の 側端)から 30m 手前で 左の 合図を 出します。"
+ },
+ {
+  "id": "sg-aizuhasanjyuumetorutem",
+  "name": "合図は30m手前",
+  "reading": "あいずはさんじゅうめーとるてまえ",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-usetsunoaizu",
+   "sg-aizuhayakusanbyoumae"
+  ],
+  "description": "右折・左折・転回の 合図は、その 地点の 30m 手前で 出します。進路変更の「約3秒前」と まちがえないように します。"
+ },
+ {
+  "id": "sg-shinrohenkounoaizu",
+  "name": "進路変更の合図",
+  "reading": "しんろへんこうのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↗️",
+  "mapNode": "shingo:shinro",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-aizuhayakusanbyoumae",
+   "sg-anzenkakunintoaizunojy"
+  ],
+  "description": "同じ 方向に 進みながら 進路を 変える ときは、変えようと する 約3秒前に 合図を 出します。"
+ },
+ {
+  "id": "sg-aizuhayakusanbyoumae",
+  "name": "合図は約3秒前",
+  "reading": "あいずはやくさんびょうまえ",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "shingo:shinro",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-shinrohenkounoaizu",
+   "sg-aizuhasanjyuumetorutem"
+  ],
+  "description": "進路変更の 合図は 約3秒前です。右左折・転回の「30m 手前」と 時期の 決めかたが ちがいます。"
+ },
+ {
+  "id": "sg-tenkainoaizu",
+  "name": "転回の合図",
+  "reading": "てんかいのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-usetsunoaizu",
+   "sg-aonoyajirushidetenkai"
+  ],
+  "description": "転回(Uターン)する ときは、転回する 地点の 30m 手前で 右の 合図を 出します。"
+ },
+ {
+  "id": "sg-koutainoaizu",
+  "name": "後退の合図",
+  "reading": "こうたいのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔙",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-koutaitou",
+   "sg-tenohirawoushironifuru"
+  ],
+  "description": "後退(バック)する ときは、後退しようと する ときに 合図します。後退灯を つけるか、腕で 合図します。"
+ },
+ {
+  "id": "sg-jyokouyateishinoaizu",
+  "name": "徐行や停止の合図",
+  "reading": "じょこうやていしのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-seidoutou",
+   "sg-udewonanameshitaninoba"
+  ],
+  "description": "徐行や 停止を する ときは、そう しようと する ときに 制動灯(ブレーキランプ)か、腕を 斜め下に 伸ばす 合図で 知らせます。"
+ },
+ {
+  "id": "sg-aizuhakouigaowarumade",
+  "name": "合図は行為が終わるまで",
+  "reading": "あいずはこういがおわるまで",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-aizu",
+   "sg-aizuwoshitemoyuusensar"
+  ],
+  "description": "合図は 曲がる などの 行為が 終わるまで 続け、終わったら やめます。曲がらないのに 合図を 出しては いけません。"
+ },
+ {
+  "id": "sg-keionkinomuyaminashiyo",
+  "name": "警音器のむやみな使用",
+  "reading": "けいおんきのむやみなしよう",
+  "journey": "shingo",
+  "category": "警音器",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔇",
+  "mapNode": "shingo:keionki",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-keionki",
+   "sg-yamuwoenaitokinokeionk"
+  ],
+  "description": "あいさつや お礼、「早く 進んで」の 合図に 警音器を 鳴らしては いけません。鳴らせるのは 決められた 場所と 危険を 防ぐ ときだけです。"
+ },
+ {
+  "id": "sg-keitekikukannomitooshi",
+  "name": "警笛区間の見通しの悪い交差点",
+  "reading": "けいてきくかんのみとおしのわるいこうさてん",
+  "journey": "shingo",
+  "category": "警音器",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📯",
+  "mapNode": "shingo:keionki",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-keitekikukannomagarika",
+   "sg-keitekikukanigainokous"
+  ],
+  "description": "「警笛区間」の 標識が ある 区間で、左右の 見通しの きかない 交差点を 通る ときは 警音器を 鳴らします。"
+ },
+ {
+  "id": "sg-hijyoutenmetsuhyoujito",
+  "name": "非常点滅表示灯",
+  "reading": "ひじょうてんめつひょうじとう",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-seidoutou",
+   "sg-houkoushijiki"
+  ],
+  "description": "左右の 方向指示器を いっしょに 点滅させる 灯火で、ハザードランプとも いいます。夜に 道路で 止まる ときなどに 使います。"
+ },
+ {
+  "id": "sg-seidoutou",
+  "name": "制動灯",
+  "reading": "せいどうとう",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-jyokouyateishinoaizu",
+   "sg-burekiwosuukainiwakete"
+  ],
+  "description": "ブレーキを 踏むと 後ろが 赤く 光る 灯火で、ブレーキランプとも いいます。止まる ことを 後ろの 車に 知らせます。"
+ },
+ {
+  "id": "sg-koutaitou",
+  "name": "後退灯",
+  "reading": "こうたいとう",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚪",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-koutainoaizu",
+   "sg-koutainoaizunojiki"
+  ],
+  "description": "後退(バック)する ときに 後ろに つく 白い 灯火です。これが 後退の 合図に なります。"
+ },
+ {
+  "id": "sg-jisashikishingou",
+  "name": "時差式信号",
+  "reading": "じさしきしんごう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-jisashikishingoutouset",
+   "sg-taimensurushingou"
+  ],
+  "description": "向かいあう 方向で 信号が 変わる 時間を ずらしている 信号です。自分の 前の 信号だけを 見て 進みます。"
+ },
+ {
+  "id": "sg-sasetsukanohyoujiban",
+  "name": "左折可の標示板",
+  "reading": "させつかのひょうじばん",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↙️",
+  "mapNode": "shingo:teishisen",
+  "field": "信号",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "sg-akashingounosasetsu",
+   "sg-aoshingounosasetsutoou"
+  ],
+  "description": "白地に 青の 左向きの 矢印の 板が あれば、前の 信号が 赤や 黄でも まわりに 注意して 左折できます。横断する 人の じゃまを しては いけません。"
+ },
+ {
+  "id": "sg-kiironoyajirushi",
+  "name": "黄色の矢印",
+  "reading": "きいろのやじるし",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚋",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aonoyajirushi",
+   "sg-yajirushinohoukoudakes"
+  ],
+  "description": "黄色の 矢印は 路面電車の ための 信号です。車は 黄色の 矢印では 進めません。青の 矢印と 取りちがえないように します。"
+ },
+ {
+  "id": "sg-aonoyajirushitonidanka",
+  "name": "青の矢印と二段階右折の原付",
+  "reading": "あおのやじるしとにだんかいうせつのげんつき",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-usetsunoyajirushi",
+   "sg-keisharyoutousetsunoya"
+  ],
+  "description": "二段階右折を する 一般原動機付自転車は、右向きの 青の 矢印では 進めません。青信号で まっすぐ 進み、向きを 変えてから 前の 信号が 青に なるのを 待ちます。"
+ },
+ {
+  "id": "sg-keisharyoutousetsunoya",
+  "name": "軽車両と右折の矢印",
+  "reading": "けいしゃりょうとうせつのやじるし",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aonoyajirushitonidanka",
+   "sg-usetsunoyajirushi"
+  ],
+  "description": "自転車などの 軽車両と 特定小型原動機付自転車も、右向きの 青の 矢印では 進めません。右折は いつも 二段階で します。"
+ },
+ {
+  "id": "sg-aonoyajirushidetenkai",
+  "name": "青の矢印で転回",
+  "reading": "あおのやじるしでてんかい",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-usetsunoyajirushi",
+   "sg-tenkainoaizu"
+  ],
+  "description": "右向きの 青の 矢印では、右折の ほか 転回も できます。左向きや 直進の 矢印では 転回できません。"
+ },
+ {
+  "id": "sg-kinotenmetsunosusumika",
+  "name": "黄の点滅の進みかた",
+  "reading": "きのてんめつのすすみかた",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "shingo:tenmetsu",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-kinotenmetsu",
+   "sg-akanotenmetsunoichijit"
+  ],
+  "description": "黄の 点滅は「ほかの 交通に 注意して 進める」です。一時停止や 徐行の 決まりでは ありません。赤の 点滅(一時停止)と 区別します。"
+ },
+ {
+  "id": "sg-akanotenmetsunoichijit",
+  "name": "赤の点滅の一時停止",
+  "reading": "あかのてんめつのいちじていし",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "shingo:tenmetsu",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-akanotenmetsu",
+   "sg-kinotenmetsunosusumika"
+  ],
+  "description": "赤の 点滅では 停止位置で 一時停止します。徐行では 足りません。止まって 安全を 確かめ、交わる 道の 車の じゃまを しないよう 進みます。"
+ },
+ {
+  "id": "sg-sharyouyounoshingounis",
+  "name": "車両用の信号に従う",
+  "reading": "しゃりょうようのしんごうにしたがう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-hokoushayoushingou",
+   "sg-taimensurushingou"
+  ],
+  "description": "車を 運転する ときは 車両用の 信号に 従います。歩行者用の 信号が 青でも、車両用が 赤なら 進めません。"
+ },
+ {
+  "id": "sg-hokoushajitenshasenyou",
+  "name": "歩行者・自転車専用の標示",
+  "reading": "ほこうしゃじてんしゃせんようのひょうじ",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-jitenshayoushingou",
+   "sg-oudanhodouwowatarujite"
+  ],
+  "description": "歩行者用の 信号に「歩行者・自転車専用」の 標示板が あれば、自転車は 車道を 通る ときも その 信号に 従います。"
+ },
+ {
+  "id": "sg-kiironotoukatohokousha",
+  "name": "黄色の灯火と歩行者",
+  "reading": "きいろのとうかとほこうしゃ",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "shingo:kiiro",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-kiironotouka",
+   "sg-hokoushayounoaonotenme"
+  ],
+  "description": "車両用の 黄色の 灯火では、歩く 人は 横断を 始めては いけません。運転者は、渡り終えようと 急ぐ 人に 気をつけます。"
+ },
+ {
+  "id": "sg-kousatennonakadeakanin",
+  "name": "交差点の中で赤になったら",
+  "reading": "こうさてんのなかであかになったら",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "shingo:aka",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-akaironotouka",
+   "sg-usetsumachichuunokiiro"
+  ],
+  "description": "交差点の 中で もう 右折や 左折を している 車は、赤に なっても そのまま 進めます。右折の ときは 青で 進む 車の じゃまを しません。自転車などは 右折している 地点で 止まります。"
+ },
+ {
+  "id": "sg-shingougakieteirutoki",
+  "name": "信号が消えているとき",
+  "reading": "しんごうがきえているとき",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚫",
+  "mapNode": "shingo:teishisen",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-shingouki",
+   "sg-akanotenmetsunoichijit"
+  ],
+  "description": "停電などで 信号が 消えていたら、交通整理の 行われていない 交差点と 考えて 通ります。速度を 落とし、安全を 確かめて 進みます。"
+ },
+ {
+  "id": "sg-koutsuujyunshiin",
+  "name": "交通巡視員",
+  "reading": "こうつうじゅんしいん",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-teshingou",
+   "sg-keisatsukan"
+  ],
+  "description": "警察官と 同じように 手信号で 交通整理を する ことが ある 人です。交通巡視員の 手信号にも 従います。"
+ },
+ {
+  "id": "sg-migiudewosuiheininobas",
+  "name": "右腕を水平に伸ばす",
+  "reading": "みぎうでをすいへいにのばす",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👉",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-hidariudenohijiwosuich",
+   "sg-udenoaizu"
+  ],
+  "description": "右腕を 車の 外に 出して 水平に 伸ばすと、右折・転回・右への 進路変更の 合図です。"
+ },
+ {
+  "id": "sg-hidariudewosuiheininob",
+  "name": "左腕を水平に伸ばす",
+  "reading": "ひだりうでをすいへいにのばす",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👈",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-migiudenohijiwosuichok",
+   "sg-udenoaizu"
+  ],
+  "description": "左腕を 車の 外に 出して 水平に 伸ばすと、左折・左への 進路変更の 合図です。"
+ },
+ {
+  "id": "sg-udewonanameshitaninoba",
+  "name": "腕を斜め下に伸ばす",
+  "reading": "うでをななめしたにのばす",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👇",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-jyokouyateishinoaizu",
+   "sg-tenohirawoushironifuru"
+  ],
+  "description": "腕を 車の 外に 出して 斜め下に 伸ばすと、徐行・停止の 合図です。手のひらを 後ろに 向けて 前後に 動かすと 後退の 合図に なります。"
+ },
+ {
+  "id": "sg-hidariudenohijiwosuich",
+  "name": "左腕のひじを垂直に上げる",
+  "reading": "ひだりうでのひじをすいちょくにあげる",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-migiudewosuiheininobas",
+   "sg-migiudenohijiwosuichok"
+  ],
+  "description": "左腕を 車の 左の 外に 出して ひじを 垂直に 上に 曲げると、右折・右への 進路変更の 合図です。左折と まちがえやすいので 注意します。"
+ },
+ {
+  "id": "sg-migiudenohijiwosuichok",
+  "name": "右腕のひじを垂直に上げる",
+  "reading": "みぎうでのひじをすいちょくにあげる",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-hidariudewosuiheininob",
+   "sg-hidariudenohijiwosuich"
+  ],
+  "description": "右腕を 車の 右の 外に 出して ひじを 垂直に 上に 曲げると、左折・左への 進路変更の 合図です。右折では ないので 注意します。"
+ },
+ {
+  "id": "sg-tenohirawoushironifuru",
+  "name": "手のひらを後ろに振る",
+  "reading": "てのひらをうしろにふる",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-koutainoaizu",
+   "sg-udewonanameshitaninoba"
+  ],
+  "description": "腕を 斜め下に 伸ばし、手のひらを 後ろに 向けて 前後に 動かすと 後退の 合図です。手のひらを 動かさなければ 徐行・停止の 合図です。"
+ },
+ {
+  "id": "sg-kanjyoukousatenwoderut",
+  "name": "環状交差点を出るときの合図",
+  "reading": "かんじょうこうさてんをでるときのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aizuhakouigaowarumade",
+   "sg-sasetsunoaizu"
+  ],
+  "description": "環状交差点では 入る ときの 合図は いりません。出る ときに、出る 出口の 1つ 手前の 出口を 通りすぎたら 左の 合図を 出します。"
+ },
+ {
+  "id": "sg-hasshinnoaizu",
+  "name": "発進の合図",
+  "reading": "はっしんのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-houkoushijiki",
+   "sg-shinrohenkounoaizu"
+  ],
+  "description": "道路の 端から 発進する ときは、方向指示器などで 発進の 合図を して、もう一度 ミラーなどで 前後左右を 確かめてから 進みます。"
+ },
+ {
+  "id": "sg-zenshoutounotenmetsude",
+  "name": "前照灯の点滅で知らせる",
+  "reading": "ぜんしょうとうのてんめつでしらせる",
+  "journey": "shingo",
+  "category": "警音器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shingo:keionki",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-keionki",
+   "sg-keitekikukanigainokous"
+  ],
+  "description": "夜、見通しの 悪い 交差点や カーブの 手前では、前照灯を 上向きに するか 点滅させて、自分の 車が 来る ことを 知らせます。"
+ },
+ {
+  "id": "sg-yamuwoenaitokinokeionk",
+  "name": "やむを得ないときの警音器",
+  "reading": "やむをえないときのけいおんき",
+  "journey": "shingo",
+  "category": "警音器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📯",
+  "mapNode": "shingo:keionki",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-keionkinomuyaminashiyo",
+   "sg-keionki"
+  ],
+  "description": "危険を 防ぐ ため どうしても 必要な ときは、警笛区間の 外でも 警音器を 鳴らせます。あいさつや 催促は これに 当たりません。"
+ },
+ {
+  "id": "sg-keitekikukannomagarika",
+  "name": "警笛区間の曲がり角",
+  "reading": "けいてきくかんのまがりかど",
+  "journey": "shingo",
+  "category": "警音器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "shingo:keionki",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-keitekikukannomitooshi",
+   "sg-keitekikukannonoboriza"
+  ],
+  "description": "警笛区間の 中で、見通しの きかない 道路の 曲がり角を 通る ときは 警音器を 鳴らします。見通しが きくなら 鳴らす 義務は ありません。"
+ },
+ {
+  "id": "sg-keitekikukannonoboriza",
+  "name": "警笛区間の上り坂の頂上",
+  "reading": "けいてきくかんののぼりざかのちょうじょう",
+  "journey": "shingo",
+  "category": "警音器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "shingo:keionki",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-keitekikukannomagarika",
+   "sg-keitekikukannomitooshi"
+  ],
+  "description": "警笛区間の 中で、見通しの きかない 上り坂の 頂上を 通る ときは 警音器を 鳴らします。下り坂は 決まりに 入っていません。"
+ },
+ {
+  "id": "sg-keitekikukanigainokous",
+  "name": "警笛区間以外の交差点",
+  "reading": "けいてきくかんいがいのこうさてん",
+  "journey": "shingo",
+  "category": "警音器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔇",
+  "mapNode": "shingo:keionki",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-keitekikukannomitooshi",
+   "sg-zenshoutounotenmetsude"
+  ],
+  "description": "警笛区間の 標識が ない ところでは、見通しの 悪い 交差点でも 警音器を 鳴らす 決まりは なく、鳴らしては いけません。徐行して 安全を 確かめます。"
+ },
+ {
+  "id": "sg-kannoushikishingou",
+  "name": "感応式信号",
+  "reading": "かんのうしきしんごう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-oshibotanshikishingou",
+   "sg-shingouki"
+  ],
+  "description": "道路の 機械が 車を 見つけると 青に 変わる しくみの 信号です。待っている 車が いる 方向に 合わせて 変わります。"
+ },
+ {
+  "id": "sg-sasetsunoyajirushi",
+  "name": "左折の矢印",
+  "reading": "させつのやじるし",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-yajirushinohoukoudakes",
+   "sg-aoshingounosasetsutoou"
+  ],
+  "description": "左向きの 青の 矢印では 左折できます。まっすぐや 右へは 進めません。横断している 人の じゃまを しないよう 曲がります。"
+ },
+ {
+  "id": "sg-chokushinnoyajirushi",
+  "name": "直進の矢印",
+  "reading": "ちょくしんのやじるし",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-yajirushinohoukoudakes",
+   "sg-sasetsunoyajirushi"
+  ],
+  "description": "上向きの 青の 矢印では まっすぐ 進めます。右折や 左折は できません。"
+ },
+ {
+  "id": "sg-taimensurushingou",
+  "name": "対面する信号",
+  "reading": "たいめんするしんごう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "shingo:ao",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-jisashikishingou",
+   "sg-sharyouyounoshingounis"
+  ],
+  "description": "自分が 向かっている 方向の 信号に 従います。横の 信号が 赤でも、前の 信号が 青とは かぎりません。"
+ },
+ {
+  "id": "sg-ittoutenmetsushikishin",
+  "name": "一灯点滅式信号",
+  "reading": "いっとうてんめつしきしんごう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔆",
+  "mapNode": "shingo:tenmetsu",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-akanotenmetsu",
+   "sg-kinotenmetsu"
+  ],
+  "description": "灯火が 1つで、赤か 黄の 点滅だけを 出す 信号です。赤の 点滅なら 一時停止、黄の 点滅なら 注意して 進みます。"
+ },
+ {
+  "id": "sg-shingoumushi",
+  "name": "信号無視",
+  "reading": "しんごうむし",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "shingo:aka",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-akaironotouka",
+   "sg-shingounokawarime"
+  ],
+  "description": "信号の 意味に 従わずに 進む 違反です。赤で 停止位置を こえるのは 信号無視です。黄で 止まれるのに 進むのも 違反に なります。"
+ },
+ {
+  "id": "sg-hoshabunrishikishingou",
+  "name": "歩車分離式信号",
+  "reading": "ほしゃぶんりしきしんごう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚸",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-hokoushayoushingou",
+   "sg-aoshingounosasetsutoou"
+  ],
+  "description": "歩く 人が 渡る 時間と 車が 進む 時間を 分けた 信号です。歩く 人が 渡っている あいだ 車の 信号は 赤に なります。"
+ },
+ {
+  "id": "sg-aizuwoshitemoyuusensar",
+  "name": "合図をしても優先されない",
+  "reading": "あいずをしてもゆうせんされない",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "shingo:shinro",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-anzenkakunintoaizunojy",
+   "sg-shinrohenkounoaizu"
+  ],
+  "description": "合図を 出しても 自分が 優先に なるわけでは ありません。後ろの 車が 急ブレーキや 急ハンドルで よけないと いけないなら、進路を 変えては いけません。"
+ },
+ {
+  "id": "sg-anzenkakunintoaizunojy",
+  "name": "安全確認と合図の順",
+  "reading": "あんぜんかくにんとあいずのじゅん",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪞",
+  "mapNode": "shingo:shinro",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aizuwoshitemoyuusensar",
+   "sg-shinrohenkounoaizu"
+  ],
+  "description": "進路を 変える ときは、まず ミラーで 安全を 確かめ、それから 合図を 出し、もう一度 ミラーや 目で 確かめてから 変えます。合図が 先では ありません。"
+ },
+ {
+  "id": "sg-akashingounosasetsu",
+  "name": "赤信号の左折",
+  "reading": "あかしんごうのさせつ",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "shingo:aka",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-sasetsukanohyoujiban",
+   "sg-akaironotouka"
+  ],
+  "description": "赤信号では 左折も できません。左折して よいのは「左折可」の 標示板(白地に 青の 矢印)が ある ときだけです。"
+ },
+ {
+  "id": "sg-jyokouteishinoaizunoji",
+  "name": "徐行・停止の合図の時期",
+  "reading": "じょこうていしのあいずのじき",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-jyokouyateishinoaizu",
+   "sg-koutainoaizunojiki"
+  ],
+  "description": "徐行・停止の 合図は「そう しようと する とき」に 出します。右左折の「30m 手前」や 進路変更の「約3秒前」と 時期が ちがいます。"
+ },
+ {
+  "id": "sg-koutainoaizunojiki",
+  "name": "後退の合図の時期",
+  "reading": "こうたいのあいずのじき",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-koutainoaizu",
+   "sg-jyokouteishinoaizunoji"
+  ],
+  "description": "後退の 合図も「後退しようと する とき」に 出します。決まった 距離や 秒数は ありません。"
+ },
+ {
+  "id": "sg-kousatennosokutankaras",
+  "name": "交差点の側端から30m",
+  "reading": "こうさてんのそくたんからさんじゅうめーとる",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aizuhasanjyuumetorutem",
+   "sg-usetsunoaizu"
+  ],
+  "description": "交差点で 右左折する ときの 30m は、交差点の 中心ではなく 手前の 側端(交差点の 入口の はし)から 測ります。"
+ },
+ {
+  "id": "sg-yajirushitohokousha",
+  "name": "矢印と歩行者",
+  "reading": "やじるしとほこうしゃ",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aoshingounosasetsutoou",
+   "sg-sasetsunoyajirushi"
+  ],
+  "description": "青の 矢印で 曲がる ときも、横断歩道を 渡る 人や 自転車が いれば その じゃまを しては いけません。矢印は 人より 優先と いう 意味では ありません。"
+ },
+ {
+  "id": "sg-toukanitaimensuruhouko",
+  "name": "灯火と交わる交通",
+  "reading": "とうかとまじわるこうつう",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shingo:toka",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-toukawoyokonifuru",
+   "sg-toukanofuruhoukounisus"
+  ],
+  "description": "灯火が 横に 振られている とき、振られている 方向と 交わる 方向から 来る 交通は、赤色の 灯火と 同じ 意味です。"
+ },
+ {
+  "id": "sg-toukanofuruhoukounisus",
+  "name": "灯火の振る方向に進む交通",
+  "reading": "とうかのふるほうこうにすすむこうつう",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shingo:toka",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-toukawoyokonifuru",
+   "sg-toukanitaimensuruhouko"
+  ],
+  "description": "灯火が 横に 振られている とき、振られている 方向に 進む 交通は 青色の 灯火と 同じ 意味です。交わる 交通は 赤です。"
+ },
+ {
+  "id": "sg-keisatsukannoshijinish",
+  "name": "警察官の指示に従う",
+  "reading": "けいさつかんのしじにしたがう",
+  "journey": "shingo",
+  "category": "手信号",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👮",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-shingoutoteshingougach",
+   "sg-keisatsukan"
+  ],
+  "description": "警察官や 交通巡視員の 指示が 信号や 標識・標示と ちがっていても、指示の ほうが 優先します。"
+ },
+ {
+  "id": "sg-houkoushijikigakoshous",
+  "name": "方向指示器が故障したとき",
+  "reading": "ほうこうしじきがこしょうしたとき",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-udenoaizu",
+   "sg-migiudewosuiheininobas"
+  ],
+  "description": "方向指示器が こわれて 使えない ときは、腕で 合図を します。西日で 方向指示器が 見えにくい ときも、腕の 合図を あわせて 使います。"
+ },
+ {
+  "id": "sg-usetsunoyajirushitotai",
+  "name": "右折の矢印と対向車",
+  "reading": "うせつのやじるしとたいこうしゃ",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-usetsunoyajirushi",
+   "sg-jisashikishingoutouset"
+  ],
+  "description": "右向きの 矢印で 右折する ときも、対向から 来る 車や 横断する 人が いないか 確かめてから 曲がります。"
+ },
+ {
+  "id": "sg-usetsumachichuunokiiro",
+  "name": "右折待ち中の黄色",
+  "reading": "うせつまちちゅうのきいろ",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "shingo:kiiro",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-kousatennonakadeakanin",
+   "sg-kiironotouka"
+  ],
+  "description": "交差点の 中で 右折を 待っている ときに 黄に なったら、対向車の じゃまを しないよう 気をつけて 速やかに 右折を 終えます。"
+ },
+ {
+  "id": "sg-shingounokawarime",
+  "name": "信号の変わり目",
+  "reading": "しんごうのかわりめ",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "shingo:kiiro",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-kiirodekasokushinai",
+   "sg-aoshingoudemoanzenkaku"
+  ],
+  "description": "信号が 変わる ころは あわてやすい ときです。前の 信号を 見て、まだ 赤なのに 横の 信号を 見て 動き出さないように します。"
+ },
+ {
+  "id": "sg-oudanhodouwowatarujite",
+  "name": "横断歩道を渡る自転車の信号",
+  "reading": "おうだんほどうをわたるじてんしゃのしんごう",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚲",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-hokoushayoushingou",
+   "sg-hokoushajitenshasenyou"
+  ],
+  "description": "自転車で 横断歩道を 渡る ときは、人の 形の 信号に 従います。人の 形の 青が 点滅したら 渡り始めては いけません。"
+ },
+ {
+  "id": "sg-aoshingoudemoanzenkaku",
+  "name": "青信号でも安全確認",
+  "reading": "あおしんごうでもあんぜんかくにん",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "shingo:ao",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aohasusumukotogadekiru",
+   "sg-yajirushitohokousha"
+  ],
+  "description": "青は「進む ことが できる」で、安全の 約束では ありません。信号を 守らない 人や 車が いる かもしれないので、まわりを 見て 進みます。"
+ },
+ {
+  "id": "sg-keisatsukannoichimetor",
+  "name": "警察官の1m手前",
+  "reading": "けいさつかんのいちめーとるてまえ",
+  "journey": "shingo",
+  "category": "停止位置",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "shingo:tesingo",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-teshingounoshoumen",
+   "sg-teishiichi"
+  ],
+  "description": "交差点や 横断歩道・踏切が ない ところで 手信号を している ときは、警察官の 1m 手前が 停止位置です。"
+ },
+ {
+  "id": "sg-maenokurumanoaizuwomir",
+  "name": "前の車の合図を見る",
+  "reading": "まえのくるまのあいずをみる",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aizu",
+   "sg-seidoutou"
+  ],
+  "description": "前の 車の 方向指示器や 制動灯を よく 見ると、曲がる・止まるが 早く 分かります。車間距離を とって あわてずに 対応します。"
+ },
+ {
+  "id": "sg-aizunodashiokure",
+  "name": "合図の出し遅れ",
+  "reading": "あいずのだしおくれ",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "shingo:shinro",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aizuhasanjyuumetorutem",
+   "sg-aizuhayakusanbyoumae"
+  ],
+  "description": "曲がる 直前に 合図を 出すと、後ろの 車や 歩く 人が 準備できません。30m 手前・約3秒前の 時期を 守ります。"
+ },
+ {
+  "id": "sg-nirinshanoaizu",
+  "name": "二輪車の合図",
+  "reading": "にりんしゃのあいず",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏍️",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-udenoaizu",
+   "sg-aizu"
+  ],
+  "description": "二輪車も 四輪車と 同じ 時期に 合図を 出します。曲がる 30m 手前、進路変更の 約3秒前です。"
+ },
+ {
+  "id": "sg-oudanhodoudakenoshingo",
+  "name": "横断歩道だけの信号",
+  "reading": "おうだんほどうだけのしんごう",
+  "journey": "shingo",
+  "category": "停止位置",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦓",
+  "mapNode": "shingo:teishisen",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-oudanhodounochokuzen",
+   "sg-oshibotanshikishingou"
+  ],
+  "description": "交差点で ない ところの 横断歩道に ある 信号では、停止線が なければ 横断歩道の 直前で 止まります。"
+ },
+ {
+  "id": "sg-aohasusumukotogadekiru",
+  "name": "青は進むことができる",
+  "reading": "あおはすすむことができる",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "shingo:ao",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aoshingoudemoanzenkaku",
+   "sg-aoironotouka"
+  ],
+  "description": "青の 意味は「進まなければ ならない」では なく「進む ことが できる」です。前が つまっていれば 交差点に 入らずに 待ちます。"
+ },
+ {
+  "id": "sg-kiirohatomarenoaizu",
+  "name": "黄色は止まれの合図",
+  "reading": "きいろはとまれのあいず",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "shingo:kiiro",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-kiironotouka",
+   "sg-kiirodetomarenaitoki"
+  ],
+  "description": "黄は「注意して 進め」では なく、停止位置から 先へ 進んでは いけない 合図です。進めるのは 安全に 止まれない ときだけです。"
+ },
+ {
+  "id": "sg-yajirushinohoukoudakes",
+  "name": "矢印の方向だけ進める",
+  "reading": "やじるしのほうこうだけすすめる",
+  "journey": "shingo",
+  "category": "矢印と点滅",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "shingo:yajirushi",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-aonoyajirushi",
+   "sg-chokushinnoyajirushi"
+  ],
+  "description": "青の 矢印で 進めるのは 矢印の 向きだけです。ほかの 向きは、出ている 赤や 黄の 灯火の 意味の とおりです。"
+ },
+ {
+  "id": "sg-burekiwosuukainiwakete",
+  "name": "ブレーキを数回に分けて踏む",
+  "reading": "ぶれーきをすうかいにわけてふむ",
+  "journey": "shingo",
+  "category": "合図",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "shingo:aizu",
+  "field": "運転者の心得",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-seidoutou",
+   "sg-maenokurumanoaizuwomir"
+  ],
+  "description": "ブレーキを 何回かに 分けて 踏むと 制動灯が 点滅し、後ろの 車に 止まる ことを 知らせられます。追突を 防ぐのに 役立ちます。"
+ },
+ {
+  "id": "sg-aoshingounosasetsutoou",
+  "name": "青信号の左折と横断歩行者",
+  "reading": "あおしんごうのさせつとおうだんほこうしゃ",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "shingo:ao",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-yajirushitohokousha",
+   "sg-sasetsukanohyoujiban"
+  ],
+  "description": "青信号で 左折する ときも、横断歩道を 渡る 人や 自転車の じゃまを しては いけません。止まって 先に 渡ってもらいます。"
+ },
+ {
+  "id": "sg-kiirodekasokushinai",
+  "name": "黄色で加速しない",
+  "reading": "きいろでかそくしない",
+  "journey": "shingo",
+  "category": "信号の色",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟡",
+  "mapNode": "shingo:kiiro",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-kiirodetomarenaitoki",
+   "sg-shingounokawarime"
+  ],
+  "description": "黄に 変わりそうな とき 急いで 速度を 上げて 進むのは 危険です。青が 長く 続いていたら、止まる 準備を して 近づきます。"
+ },
+ {
+  "id": "sg-jisashikishingoutouset",
+  "name": "時差式信号と右折",
+  "reading": "じさしきしんごうとうせつ",
+  "journey": "shingo",
+  "category": "信号の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "shingo:kogata",
+  "field": "信号",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "sg-jisashikishingou",
+   "sg-usetsunoyajirushitotai"
+  ],
+  "description": "時差式信号では 自分の 信号が 黄や 赤に なっても、対向の 信号は まだ 青の ことが あります。右折の ときは 対向車が 来ると 考えます。"
+ }
+]

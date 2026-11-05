@@ -1,0 +1,1944 @@
+[
+ {
+  "id": "kk-kousokudouro",
+  "name": "高速道路",
+  "reading": "こうそくどうろ",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-honsenshadou",
+   "kk-intachienji"
+  ],
+  "description": "高速自動車国道と 自動車専用道路を まとめて 高速道路と いいます。歩く 人や 自転車は 入れません。車が 速く 走るので、まわりを よく 見て 走ります。"
+ },
+ {
+  "id": "kk-intachienji",
+  "name": "インターチェンジ",
+  "reading": "いんたーちぇんじ",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-ryoukinjyo",
+   "kk-kasokushasen"
+  ],
+  "description": "高速道路の 出入口です。入るときは 加速車線で 速さを 上げ、出るときは 減速車線に 入ってから 速さを 落とします。"
+ },
+ {
+  "id": "kk-ryoukinjyo",
+  "name": "料金所",
+  "reading": "りょうきんじょ",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-intachienji"
+  ],
+  "description": "高速道路の 通行料金を はらう 所です。料金を はらう ための 停車は、高速道路でも できます。"
+ },
+ {
+  "id": "kk-zenshoutou",
+  "name": "前照灯",
+  "reading": "ぜんしょうとう",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-uwamukinozenshoutou",
+   "kk-shitamukinozenshoutou",
+   "kk-yakannotouka"
+  ],
+  "description": "車の 前を 照らす 灯火で、ヘッドライトとも いいます。夜や トンネルの 中で つけて、前を 見やすく します。"
+ },
+ {
+  "id": "kk-bitou",
+  "name": "尾灯",
+  "reading": "びとう",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-zenshoutou",
+   "kk-shahabatou"
+  ],
+  "description": "車の 後ろに ある 赤い 灯火です。夜に つけて、後ろの 車に 自分の 車の 位置を 知らせます。"
+ },
+ {
+  "id": "kk-tonneru",
+  "name": "トンネル",
+  "reading": "とんねる",
+  "journey": "kosoku",
+  "category": "トンネル・山道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚇",
+  "mapNode": "kosoku:tunnel",
+  "field": "危険な場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-tonnerunoiriguchidegen",
+   "kk-anjyunnou"
+  ],
+  "description": "山の 中などを 通る 道です。中は 暗いので ライトを つけます。入る 前と 出る ときは 速度を 落とします。"
+ },
+ {
+  "id": "kk-amenohi",
+  "name": "雨の日",
+  "reading": "あめのひ",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☔",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-amenofurihajime",
+   "kk-nuretaromen",
+   "kk-amenohinoshakankyori"
+  ],
+  "description": "雨の 日は 前が 見えにくく、道も すべりやすく なります。晴れの 日より 速度を 落とし、車間距離を 長く とります。"
+ },
+ {
+  "id": "kk-kiri",
+  "name": "霧",
+  "reading": "きり",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-zenbumutou",
+   "kk-kirinotokinomeyasu"
+  ],
+  "description": "霧が 出ると 前が とても 見えにくく なります。ライトを 早めに つけて、速度を 落として 走ります。"
+ },
+ {
+  "id": "kk-yukimichi",
+  "name": "雪道",
+  "reading": "ゆきみち",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-taiyachien",
+   "kk-fuyuyoutaiya",
+   "kk-wadachi"
+  ],
+  "description": "雪の 道は すべりやすく、止まるまでに 長い 距離が かかります。急発進・急ブレーキ・急ハンドルを しない ことが 大切です。"
+ },
+ {
+  "id": "kk-koottamichi",
+  "name": "凍った道",
+  "reading": "こおったみち",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-burakkuaisuban",
+   "kk-koottamichinobureki"
+  ],
+  "description": "凍った 道は とても すべりやすく なります。速度を 十分に 落とし、車間距離を たっぷり とって 走ります。"
+ },
+ {
+  "id": "kk-taiyachien",
+  "name": "タイヤチェーン",
+  "reading": "たいやちぇーん",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛓️",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-yukimichi",
+   "kk-fuyuyoutaiya"
+  ],
+  "description": "タイヤに 巻いて 雪道で すべりにくく する 道具です。標識で、チェーンを つけていない 車が 通れない 道も あります。"
+ },
+ {
+  "id": "kk-waipa",
+  "name": "ワイパー",
+  "reading": "わいぱー",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧽",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-amenohi",
+   "kk-madonokumori"
+  ],
+  "description": "前の 窓に ついた 雨を ふきとる 装置です。雨の 日に よく 見えるよう、ふだんから 点検して おきます。"
+ },
+ {
+  "id": "kk-shakankyori",
+  "name": "車間距離",
+  "reading": "しゃかんきょり",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kosoku:shakan",
+  "field": "高速道路",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-amenohinoshakankyori",
+   "kk-kousokunoshakankyori"
+  ],
+  "description": "前の 車との あいだの 距離です。前の 車が 急に 止まっても ぶつからない だけの 長さを とります。"
+ },
+ {
+  "id": "kk-bureki",
+  "name": "ブレーキ",
+  "reading": "ぶれーき",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-futtobureki",
+   "kk-enjinbureki"
+  ],
+  "description": "車の 速さを 落としたり 止めたり する 装置です。急ブレーキに ならないよう、早めに やさしく 踏みます。"
+ },
+ {
+  "id": "kk-rokata",
+  "name": "路肩",
+  "reading": "ろかた",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "kosoku:rokata",
+  "field": "高速道路",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-kousokunorokatahatoore",
+   "kk-yamuwoezurokatanitomer"
+  ],
+  "description": "道路の はしの 部分です。高速道路では 路肩を 走っては いけません。故障などで やむを得ない ときに 止まる 場所です。"
+ },
+ {
+  "id": "kk-koshou",
+  "name": "故障",
+  "reading": "こしょう",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-teishihyoujikizai",
+   "kk-gadorerunosotonihinan"
+  ],
+  "description": "車が 動かなく なる ことです。高速道路で 故障したら、停止表示器材を 置き、安全な 場所に 避難します。"
+ },
+ {
+  "id": "kk-teishihyoujikizai",
+  "name": "停止表示器材",
+  "reading": "ていしひょうじきざい",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-teishihyoujikizaiwokou",
+   "kk-koshou"
+  ],
+  "description": "車が 止まっている ことを 後ろの 車に 知らせる 道具で、三角表示板とも いいます。高速道路を 走るときは 積んで おきましょう。"
+ },
+ {
+  "id": "kk-nenryou",
+  "name": "燃料",
+  "reading": "ねんりょう",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛽",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-kousokunomaenotenken"
+  ],
+  "description": "ガソリンなど 車を 動かす もとです。高速道路で 燃料が 切れて 止まらないよう、入る 前に 量を 確かめます。"
+ },
+ {
+  "id": "kk-yuugata",
+  "name": "夕方",
+  "reading": "ゆうがた",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌇",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-zenshoutou",
+   "kk-yakannotouka"
+  ],
+  "description": "夕方の うす暗い 時間は まわりが 見えにくく なります。早めに ライトを つけて、自分の 車が いることを 知らせます。"
+ },
+ {
+  "id": "kk-yamamichi",
+  "name": "山道",
+  "reading": "やまみち",
+  "journey": "kosoku",
+  "category": "トンネル・山道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "kosoku:tunnel",
+  "field": "危険な場所",
+  "ruleset": "共通",
+  "relatedTerms": [
+   "kk-kabumira",
+   "kk-gakekuzure"
+  ],
+  "description": "カーブや 坂が 多い 道です。カーブの 手前で 速度を 落とし、下り坂では エンジンブレーキを 使います。"
+ },
+ {
+  "id": "kk-uwamukinozenshoutou",
+  "name": "上向きの前照灯",
+  "reading": "うわむきのぜんしょうとう",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "kosoku:surechigai",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-shitamukinozenshoutou",
+   "kk-taikoushatosurechigaut"
+  ],
+  "description": "走行用の 前照灯で、遠くまで 照らします。交通量の 多い 市街地などを のぞき、夜は 上向きに して 歩行者を 早く 見つけます。"
+ },
+ {
+  "id": "kk-shitamukinozenshoutou",
+  "name": "下向きの前照灯",
+  "reading": "したむきのぜんしょうとう",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔅",
+  "mapNode": "kosoku:surechigai",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-uwamukinozenshoutou",
+   "kk-maenokurumanitsuzukuto"
+  ],
+  "description": "すれ違い用の 前照灯です。対向車と すれ違う ときや、前の 車の すぐ 後ろを 走る ときは 下向きに 切りかえます。"
+ },
+ {
+  "id": "kk-taikoushatosurechigaut",
+  "name": "対向車とすれ違うとき",
+  "reading": "たいこうしゃとすれちがうとき",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "kosoku:surechigai",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-shitamukinozenshoutou",
+   "kk-mabushiitokihahidarize"
+  ],
+  "description": "夜に 対向車と すれ違う ときは、相手の 目が くらまないよう、前照灯を 下向きに するか 減光します。"
+ },
+ {
+  "id": "kk-maenokurumanitsuzukuto",
+  "name": "前の車に続くとき",
+  "reading": "まえのくるまにつづくとき",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚙",
+  "mapNode": "kosoku:surechigai",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-shitamukinozenshoutou"
+  ],
+  "description": "夜に 前の 車の すぐ 後ろを 走る ときは、前照灯を 下向きに します。上向きの ままだと 前の 運転者が まぶしく なります。"
+ },
+ {
+  "id": "kk-yakannotouka",
+  "name": "夜間の灯火",
+  "reading": "やかんのとうか",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-zenshoutou",
+   "kk-bitou",
+   "kk-shahabatou"
+  ],
+  "description": "夜に 道路を 通る ときは、前照灯・車幅灯・尾灯・番号灯などを つけなければ なりません。"
+ },
+ {
+  "id": "kk-hirudemoraito",
+  "name": "昼でもライト",
+  "reading": "ひるでもらいと",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-gojyuumetorusakigamien",
+   "kk-tonneru"
+  ],
+  "description": "昼でも トンネルの 中や 濃い 霧の 中など 暗い 場所では、夜と 同じように ライトを つけます。"
+ },
+ {
+  "id": "kk-gojyuumetorusakigamien",
+  "name": "50m先が見えないとき",
+  "reading": "ごじゅうめーとるさきがみえないとき",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-hirudemoraito",
+   "kk-kousokuhanihyakumetoru"
+  ],
+  "description": "一般道路で、昼でも 50m 先が 見えない ような 暗い 場所を 通る ときは 灯火を つけます。高速道路では 200m です。"
+ },
+ {
+  "id": "kk-shahabatou",
+  "name": "車幅灯",
+  "reading": "しゃはばとう",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟠",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-yakannotouka",
+   "kk-bitou"
+  ],
+  "description": "車の 前に ある 小さな 灯火で、車の 幅を まわりに 知らせます。夜は 前照灯や 尾灯と いっしょに つけます。"
+ },
+ {
+  "id": "kk-bangoutou",
+  "name": "番号灯",
+  "reading": "ばんごうとう",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-yakannotouka"
+  ],
+  "description": "後ろの ナンバープレートを 照らす 灯火です。夜は 尾灯などと いっしょに つけて、番号が 見えるように します。"
+ },
+ {
+  "id": "kk-jyouhatsugenshou",
+  "name": "蒸発現象",
+  "reading": "じょうはつげんしょう",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫥",
+  "mapNode": "kosoku:surechigai",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-taikoushatosurechigaut"
+  ],
+  "description": "自分の 車と 対向車の ライトが 重なって、道路の 中央付近に いる 歩行者が 見えなく なる ことです。夜は 中央付近にも 気を つけます。"
+ },
+ {
+  "id": "kk-mabushiitokihahidarize",
+  "name": "まぶしいときは左前方を見る",
+  "reading": "まぶしいときはひだりぜんぽうをみる",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "😎",
+  "mapNode": "kosoku:surechigai",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-taikoushatosurechigaut",
+   "kk-jyouhatsugenshou"
+  ],
+  "description": "対向車の ライトが まぶしい ときは、視点を やや 左前方に 移して、目が くらまないように します。"
+ },
+ {
+  "id": "kk-zenbumutou",
+  "name": "前部霧灯",
+  "reading": "ぜんぶむとう",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌁",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-kiri",
+   "kk-kirinotokihashitamuki"
+  ],
+  "description": "霧の ときに 使う 補助の 前照灯で、霧灯とも いいます。霧灯が あれば 霧灯を、なければ 前照灯を 早めに つけます。"
+ },
+ {
+  "id": "kk-amenofurihajime",
+  "name": "雨の降り始め",
+  "reading": "あめのふりはじめ",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌦️",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-amenohi",
+   "kk-nuretaromen"
+  ],
+  "description": "雨の 降り始めの 舗装道路は 特に すべりやすく なります。速度を 落とし、急ブレーキや 急ハンドルを しないように します。"
+ },
+ {
+  "id": "kk-haidoropureningugensho",
+  "name": "ハイドロプレーニング現象",
+  "reading": "はいどろぷれーにんぐげんしょう",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-surihettataiya",
+   "kk-nuretaromen"
+  ],
+  "description": "雨の 中を 速い 速度で 走ると、タイヤが 水の 上に 浮いて、ハンドルや ブレーキが 効かなく なる ことです。速度を 落として 防ぎます。"
+ },
+ {
+  "id": "kk-enjinbureki",
+  "name": "エンジンブレーキ",
+  "reading": "えんじんぶれーき",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-futtobureki",
+   "kk-nagaikudarizakanoenjin"
+  ],
+  "description": "アクセルを もどしたり 低い ギアに 入れたり して 速度を 落とす 方法です。下り坂で フットブレーキを 助けます。"
+ },
+ {
+  "id": "kk-futtobureki",
+  "name": "フットブレーキ",
+  "reading": "ふっとぶれーき",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-enjinbureki",
+   "kk-fuedogenshou"
+  ],
+  "description": "足で 踏む ブレーキです。高速で 走っている ときは 一度に 強く 踏まず、数回に 分けて 踏みます。"
+ },
+ {
+  "id": "kk-wadachi",
+  "name": "わだち",
+  "reading": "わだち",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-yukimichi"
+  ],
+  "description": "前の 車が 通った タイヤの 跡です。雪道では、できるだけ 車の 通った 跡を 選んで 走ると すべりにくく なります。"
+ },
+ {
+  "id": "kk-fuyuyoutaiya",
+  "name": "冬用タイヤ",
+  "reading": "ふゆようたいや",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-taiyachien",
+   "kk-yukimichi"
+  ],
+  "description": "スタッドレスタイヤなど 雪道むけの タイヤです。雪道や 凍った 道では、チェーンか 雪路用の タイヤを つけます。"
+ },
+ {
+  "id": "kk-hashinouenotouketsu",
+  "name": "橋の上の凍結",
+  "reading": "はしのうえのとうけつ",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌉",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-hikagenotouketsu",
+   "kk-burakkuaisuban"
+  ],
+  "description": "橋の 上は 下からも 冷えるので、ほかの 道より 先に 凍りやすく なります。寒い 日は 手前で 速度を 落とします。"
+ },
+ {
+  "id": "kk-hikagenotouketsu",
+  "name": "日陰の凍結",
+  "reading": "ひかげのとうけつ",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌲",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-hashinouenotouketsu"
+  ],
+  "description": "日の 当たらない 日陰は、雪や 氷が とけ残りやすい 所です。日なたが かわいていても、日陰は すべると 考えます。"
+ },
+ {
+  "id": "kk-tonnerunodeguchinoyoko",
+  "name": "トンネルの出口の横風",
+  "reading": "とんねるのでぐちのよこかぜ",
+  "journey": "kosoku",
+  "category": "トンネル・山道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "kosoku:tunnel",
+  "field": "危険な場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-tonneru"
+  ],
+  "description": "トンネルや 切り通しの 出口では、横風で ハンドルを 取られる ことが あります。風の 強い 日は 速度を 落とします。"
+ },
+ {
+  "id": "kk-raitonotodokuhani",
+  "name": "ライトの届く範囲",
+  "reading": "らいとのとどくはんい",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-uwamukinozenshoutou"
+  ],
+  "description": "夜は ライトが 届く 範囲の 中で 止まれる 速度で 走ります。速すぎると、見えた ときには もう 止まれません。"
+ },
+ {
+  "id": "kk-amenohinoshakankyori",
+  "name": "雨の日の車間距離",
+  "reading": "あめのひのしゃかんきょり",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kosoku:shakan",
+  "field": "高速道路",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-amenohi",
+   "kk-shakankyori"
+  ],
+  "description": "雨で 路面が ぬれると、止まるまでの 距離が 長く なります。晴れの 日より 車間距離を 長く とります。"
+ },
+ {
+  "id": "kk-yukimichinohasshin",
+  "name": "雪道の発進",
+  "reading": "ゆきみちのはっしん",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-yukimichi",
+   "kk-yukinosakamichi"
+  ],
+  "description": "雪道では アクセルを そっと 踏んで、ゆっくり 発進します。急に 踏むと タイヤが 空回りして すべります。"
+ },
+ {
+  "id": "kk-kyuuhandoruwoshinai",
+  "name": "急ハンドルをしない",
+  "reading": "きゅうはんどるをしない",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-yukimichi",
+   "kk-koottamichi"
+  ],
+  "description": "すべりやすい 道で 急ハンドルを 切ると、車が 横に すべる もとに なります。ハンドルは ゆるやかに 回します。"
+ },
+ {
+  "id": "kk-kirinotokinokeionki",
+  "name": "霧のときの警音器",
+  "reading": "きりのときのけいおんき",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📯",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-kiri"
+  ],
+  "description": "霧で 前が よく 見えない ときは、危険を 防ぐ ため、必要に 応じて 警音器を 鳴らします。"
+ },
+ {
+  "id": "kk-burakkuaisuban",
+  "name": "ブラックアイスバーン",
+  "reading": "ぶらっくあいすばーん",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🖤",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-koottamichi",
+   "kk-hashinouenotouketsu"
+  ],
+  "description": "路面が うすい 氷で おおわれ、ぬれている だけに 見える 状態です。見た目で 決めつけず、寒い 朝や 夜は 凍結を 疑います。"
+ },
+ {
+  "id": "kk-nuretaromen",
+  "name": "濡れた路面",
+  "reading": "ぬれたろめん",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-amenohi",
+   "kk-haidoropureningugensho"
+  ],
+  "description": "ぬれた 路面は タイヤと 路面の まさつが 小さく なり、制動距離が 長く なります。速度を 落として 走ります。"
+ },
+ {
+  "id": "kk-kansuishitadouro",
+  "name": "冠水した道路",
+  "reading": "かんすいしたどうろ",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-mizutamarinoatonoburek"
+  ],
+  "description": "大雨で 水に つかった 道路です。深さが 分からない 水の 中には 入らず、ほかの 道を 通ります。"
+ },
+ {
+  "id": "kk-mizutamarinoatonoburek",
+  "name": "水たまりのあとのブレーキ",
+  "reading": "みずたまりのあとのぶれーき",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💦",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "仮免",
+  "relatedTerms": [
+   "kk-kansuishitadouro",
+   "kk-futtobureki"
+  ],
+  "description": "深い 水たまりを 通ると、ブレーキの 効きが 悪く なる ことが あります。通った あとは 軽く ブレーキを 踏んで 効きを 確かめます。"
+ },
+ {
+  "id": "kk-honsenshadou",
+  "name": "本線車道",
+  "reading": "ほんせんしゃどう",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣️",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kasokushasen",
+   "kk-honsennokurumagayuusen"
+  ],
+  "description": "高速道路で ふだん 高速で 走る 部分です。加速車線・減速車線・登坂車線・路側帯・路肩は 本線車道に ふくまれない ことに 注意します。"
+ },
+ {
+  "id": "kk-honsennokurumagayuusen",
+  "name": "本線の車が優先",
+  "reading": "ほんせんのくるまがゆうせん",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-honsenshadou",
+   "kk-kasokushasen"
+  ],
+  "description": "本線車道に 入る ときは、本線を 走る 車の 進行を 妨げては いけません。合流では 入る 側が ゆずり、加速車線の 車が 先では ありません。"
+ },
+ {
+  "id": "kk-kasokushasen",
+  "name": "加速車線",
+  "reading": "かそくしゃせん",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "kosoku:kasoku",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kasokushasendejyuubunn",
+   "kk-honsennokurumagayuusen"
+  ],
+  "description": "本線車道に 入る 前に 速度を 上げる ための 車線です。加速車線が ある ときは、かならず そこを 通ります。"
+ },
+ {
+  "id": "kk-gensokushasen",
+  "name": "減速車線",
+  "reading": "げんそくしゃせん",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐌",
+  "mapNode": "kosoku:kasoku",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-deguchinotemaedegensok"
+  ],
+  "description": "本線車道から 出る ときに 速度を 落とす ための 車線です。減速は 本線車道ではなく、減速車線に 入ってから します。"
+ },
+ {
+  "id": "kk-kasokushasendejyuubunn",
+  "name": "加速車線で十分に加速",
+  "reading": "かそくしゃせんでじゅうぶんにかそく",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "kosoku:kasoku",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kasokushasen"
+  ],
+  "description": "加速車線では 十分に 加速して、本線の 流れに 合わせてから 合流します。ゆっくりの ままだと かえって 合流が 難しく なります。"
+ },
+ {
+  "id": "kk-deguchinotemaedegensok",
+  "name": "出口の手前で減速車線へ",
+  "reading": "でぐちのてまえでげんそくしゃせんへ",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔽",
+  "mapNode": "kosoku:kasoku",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-gensokushasen"
+  ],
+  "description": "出口に 近づいたら、あらかじめ 出口側の 車線を 走ります。減速車線に 入ってから、速度計で 確かめながら 速度を 落とします。"
+ },
+ {
+  "id": "kk-deguchiwotoorisugitara",
+  "name": "出口を通り過ぎたら",
+  "reading": "でぐちをとおりすぎたら",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "kosoku:kasoku",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-tenkaikoutaioudannokin"
+  ],
+  "description": "出口を 通り過ぎても、本線車道で 止まったり 後退したり しては いけません。そのまま 次の 出口まで 進みます。"
+ },
+ {
+  "id": "kk-tenkaikoutaioudannokin",
+  "name": "転回・後退・横断の禁止",
+  "reading": "てんかいこうたいおうだんのきんし",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-deguchiwotoorisugitara",
+   "kk-honsenshadou"
+  ],
+  "description": "本線車道では、転回・後退・横断を しては いけません。中央分離帯を 横切る ことも できません。"
+ },
+ {
+  "id": "kk-oikoshishasen",
+  "name": "追越車線",
+  "reading": "おいこししゃせん",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏭️",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-soukoushasen",
+   "kk-kousokunooikoshihamigi"
+  ],
+  "description": "追い越しの ときに 使う 車線です。追い越しが 終わったら 走行車線に もどります。走り続ける ための 車線では ありません。"
+ },
+ {
+  "id": "kk-soukoushasen",
+  "name": "走行車線",
+  "reading": "そうこうしゃせん",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚘",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-oikoshishasen"
+  ],
+  "description": "ふだん 走る 車線です。左側の 白い 線を めやすに、車線の やや 左寄りを 走ると、追い越す 車との 間隔が とれます。"
+ },
+ {
+  "id": "kk-kousokujidoushakokudou",
+  "name": "高速自動車国道",
+  "reading": "こうそくじどうしゃこくどう",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-jidoushasenyoudouro",
+   "kk-saiteisokudohagojyukki"
+  ],
+  "description": "全国を 結ぶ 高速道路です。本線車道には、法律で 最高速度と 最低速度が 決められて います。"
+ },
+ {
+  "id": "kk-jidoushasenyoudouro",
+  "name": "自動車専用道路",
+  "reading": "じどうしゃせんようどうろ",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kousokujidoushakokudou",
+   "kk-jidoushasenyoudouronos"
+  ],
+  "description": "自動車だけが 通れる 道路で、高速道路の 1つです。歩行者・自転車・一般原動機付自転車は 入れません。"
+ },
+ {
+  "id": "kk-jidoushasenyoudouronos",
+  "name": "自動車専用道路の最低速度",
+  "reading": "じどうしゃせんようどうろのさいていそくど",
+  "journey": "kosoku",
+  "category": "高速の速度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "kosoku:saitei",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-jidoushasenyoudouro",
+   "kk-saiteisokudohagojyukki"
+  ],
+  "description": "自動車専用道路には、法律で 決まった 最低速度が ありません。50km/h の 最低速度は 高速自動車国道の 決まりなので、取りちがえに 注意します。"
+ },
+ {
+  "id": "kk-kousokudouronosaikouso",
+  "name": "高速道路の最高速度",
+  "reading": "こうそくどうろのさいこうそくど",
+  "journey": "kosoku",
+  "category": "高速の速度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏎️",
+  "mapNode": "kosoku:saitei",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-oogatakamotsujidoushan",
+   "kk-saiteisokudohagojyukki"
+  ],
+  "description": "標識が ない 高速自動車国道の 本線車道では、普通自動車の 最高速度は 100km/h です。大型の 貨物自動車などは もっと 低く 決まって います。"
+ },
+ {
+  "id": "kk-saiteisokudohagojyukki",
+  "name": "最低速度は50km/h",
+  "reading": "さいていそくどはごじゅっきろ",
+  "journey": "kosoku",
+  "category": "高速の速度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "kosoku:saitei",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kousokudouronosaikouso",
+   "kk-jidoushasenyoudouronos"
+  ],
+  "description": "標識が ない 高速自動車国道の 本線車道では、50km/h に 達しない 速度で 走っては いけません。往復の 方向が 分かれていない 区間は 別です。"
+ },
+ {
+  "id": "kk-oogatakamotsujidoushan",
+  "name": "大型貨物自動車の高速の速度",
+  "reading": "おおがたかもつじどうしゃのこうそくのそくど",
+  "journey": "kosoku",
+  "category": "高速の速度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "kosoku:saitei",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kousokudouronosaikouso",
+   "kk-keninsurukurumanokouso"
+  ],
+  "description": "標識が ない 高速自動車国道の 本線車道で、大型貨物自動車の 最高速度は 90km/h です。普通自動車の 100km/h と 同じでは ありません。"
+ },
+ {
+  "id": "kk-keninsurukurumanokouso",
+  "name": "けん引する車の高速の速度",
+  "reading": "けんいんするくるまのこうそくのそくど",
+  "journey": "kosoku",
+  "category": "高速の速度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "kosoku:saitei",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-oogatakamotsujidoushan"
+  ],
+  "description": "高速自動車国道で ほかの 車を けん引する ときの 最高速度は 80km/h です。けん引できるのは、けん引の ための 構造と 装置の ある 車どうしだけです。"
+ },
+ {
+  "id": "kk-gentsukihakousokuwotoo",
+  "name": "原付は高速を通れない",
+  "reading": "げんつきはこうそくをとおれない",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛵",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-hakunijyuugoshishiikan"
+  ],
+  "description": "一般原動機付自転車は 高速道路を 通れません。原付免許で 運転できる 125cc以下の 新しい 原付も 同じです。"
+ },
+ {
+  "id": "kk-hakunijyuugoshishiikan",
+  "name": "125cc以下の二輪",
+  "reading": "ひゃくにじゅうごしーしーいかのにりん",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏍️",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-gentsukihakousokuwotoo"
+  ],
+  "description": "総排気量 125cc以下の 二輪車は、普通二輪免許で 運転する 車でも 高速道路を 通れません。"
+ },
+ {
+  "id": "kk-kousokunoshakankyori",
+  "name": "高速の車間距離",
+  "reading": "こうそくのしゃかんきょり",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kosoku:shakan",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-shakankyori",
+   "kk-amenohinoshakankyori"
+  ],
+  "description": "路面が かわいて タイヤが 新しい とき、100km/h なら 約100m、80km/h なら 約80m の 車間距離が 必要です。雨で タイヤが 減っていれば、約2倍に なる ことも あります。"
+ },
+ {
+  "id": "kk-kousokunorokatahatoore",
+  "name": "高速の路肩は通れない",
+  "reading": "こうそくのろかたはとおれない",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "kosoku:rokata",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-honsenshadoudetomarana",
+   "kk-rokata"
+  ],
+  "description": "高速道路の 路側帯や 路肩を 走っては いけません。渋滞していても、路肩を 通って 前に 進む ことは できません。"
+ },
+ {
+  "id": "kk-honsenshadoudetomarana",
+  "name": "本線車道で止まらない",
+  "reading": "ほんせんしゃどうでとまらない",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "kosoku:rokata",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-yamuwoezurokatanitomer"
+  ],
+  "description": "高速道路では、危険を 防ぐ ための 一時停止などの ほかは、駐車も 停車も できません。パーキングエリアや 料金所での 停車は できます。"
+ },
+ {
+  "id": "kk-yamuwoezurokatanitomer",
+  "name": "やむを得ず路肩に止める",
+  "reading": "やむをえずろかたにとめる",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-teishihyoujikizaiwokou",
+   "kk-gadorerunosotonihinan"
+  ],
+  "description": "故障などで やむを得ない ときは、十分な 幅の ある 路肩や 路側帯に 止めます。本線車道に 止めた ままに しません。"
+ },
+ {
+  "id": "kk-teishihyoujikizaiwokou",
+  "name": "停止表示器材を後方に置く",
+  "reading": "ていしひょうじきざいをこうほうにおく",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-teishihyoujikizai",
+   "kk-yamuwoezurokatanitomer"
+  ],
+  "description": "高速道路で 止まったら、停止表示器材を 車の 後方の 路上に 置きます。夜や 視界が 200m 以下の ときは、非常点滅表示灯なども つけます。"
+ },
+ {
+  "id": "kk-gadorerunosotonihinan",
+  "name": "ガードレールの外に避難",
+  "reading": "がーどれーるのそとにひなん",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-teishihyoujikizaiwokou"
+  ],
+  "description": "高速道路で 動けなく なったら、車の 中に 残らず、ガードレールの 外側など 安全な 場所に 避難して、110番などで 知らせます。"
+ },
+ {
+  "id": "kk-zenshoutounogenkou",
+  "name": "前照灯の減光",
+  "reading": "ぜんしょうとうのげんこう",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔅",
+  "mapNode": "kosoku:surechigai",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-taikoushatosurechigaut",
+   "kk-shitamukinozenshoutou"
+  ],
+  "description": "前照灯の 光を 弱めて、相手を まぶしく させない ことです。対向車と すれ違う ときは、減光するか 下向きに します。下向きだけが 正解では ありません。"
+ },
+ {
+  "id": "kk-zenshoutounotenmetsu",
+  "name": "前照灯の点滅",
+  "reading": "ぜんしょうとうのてんめつ",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-uwamukinozenshoutou"
+  ],
+  "description": "見通しの 悪い 交差点や カーブの 手前では、前照灯を 上向きに するか 点滅させて、ほかの 車や 歩行者に 近づいて いることを 知らせます。"
+ },
+ {
+  "id": "kk-kousokuhanihyakumetoru",
+  "name": "高速は200m先が見えないとき",
+  "reading": "こうそくはにひゃくめーとるさきがみえないとき",
+  "journey": "kosoku",
+  "category": "夜のライト",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "kosoku:light",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-gojyuumetorusakigamien",
+   "kk-hirudemoraito"
+  ],
+  "description": "高速道路では、昼でも トンネルや 濃い 霧で 200m 先が 見えない ときは 灯火を つけます。一般道路の 50m と 取りちがえないように します。"
+ },
+ {
+  "id": "kk-kirinotokihashitamuki",
+  "name": "霧のときは下向き",
+  "reading": "きりのときはしたむき",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-zenbumutou",
+   "kk-kiri"
+  ],
+  "description": "霧の ときに 前照灯を 上向きに すると、光が 霧に はね返って かえって 見えにくく なります。霧灯か 下向きの 前照灯を 使います。"
+ },
+ {
+  "id": "kk-koottamichinobureki",
+  "name": "凍った道のブレーキ",
+  "reading": "こおったみちのぶれーき",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-koottamichi",
+   "kk-enjinbureki"
+  ],
+  "description": "凍った 道で 強く ブレーキを 踏むと タイヤが すべります。エンジンブレーキを 使い、ブレーキは 軽く 何回かに 分けて 踏みます。"
+ },
+ {
+  "id": "kk-fuedogenshou",
+  "name": "フェード現象",
+  "reading": "ふぇーどげんしょう",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-beparokkugenshou",
+   "kk-nagaikudarizakanoenjin"
+  ],
+  "description": "フットブレーキを 使いすぎて ブレーキが 熱く なり、効きが 悪く なる ことです。ブレーキ液に 泡が できる ベーパーロック現象とは 別の ものです。"
+ },
+ {
+  "id": "kk-beparokkugenshou",
+  "name": "ベーパーロック現象",
+  "reading": "べーぱーろっくげんしょう",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-fuedogenshou",
+   "kk-nagaikudarizakanoenjin"
+  ],
+  "description": "ブレーキを 使いすぎた 熱で ブレーキ液に 泡が でき、ペダルを 踏んでも 効かなく なる ことです。長い 下り坂で 起きやすく なります。"
+ },
+ {
+  "id": "kk-nagaikudarizakanoenjin",
+  "name": "長い下り坂のエンジンブレーキ",
+  "reading": "ながいくだりざかのえんじんぶれーき",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-enjinbureki",
+   "kk-fuedogenshou"
+  ],
+  "description": "長い 下り坂では 低い ギアに して エンジンブレーキを 使います。フットブレーキを ひんぱんに 使いすぎると、急に 効かなく なる ことが あります。"
+ },
+ {
+  "id": "kk-anchirokkuburekishisut",
+  "name": "アンチロック・ブレーキ・システム",
+  "reading": "あんちろっくぶれーきしすてむ",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅰️",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-futtobureki",
+   "kk-koottamichinobureki"
+  ],
+  "description": "急ブレーキの ときに タイヤが 止まって すべるのを 防ぎ、ハンドルを 効きやすく する 装置で、ABS とも いいます。止まるまでの 距離が いつも 短く なる わけでは ありません。"
+ },
+ {
+  "id": "kk-tonnerunoiriguchidegen",
+  "name": "トンネルの入口で減速",
+  "reading": "とんねるのいりぐちでげんそく",
+  "journey": "kosoku",
+  "category": "トンネル・山道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚇",
+  "mapNode": "kosoku:tunnel",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-anjyunnou",
+   "kk-tonneru"
+  ],
+  "description": "明るさが 急に 変わると、目は しばらく よく 見えなく なります。トンネルに 入る 前と 出る ときは 速度を 落とします。"
+ },
+ {
+  "id": "kk-anjyunnou",
+  "name": "暗順応",
+  "reading": "あんじゅんのう",
+  "journey": "kosoku",
+  "category": "トンネル・山道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌑",
+  "mapNode": "kosoku:tunnel",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-meijyunnou",
+   "kk-tonnerunoiriguchidegen"
+  ],
+  "description": "明るい 所から 暗い 所に 入った とき、目が 暗さに 慣れる ことです。明るさに 慣れる 明順応より 時間が かかります。"
+ },
+ {
+  "id": "kk-meijyunnou",
+  "name": "明順応",
+  "reading": "めいじゅんのう",
+  "journey": "kosoku",
+  "category": "トンネル・山道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌕",
+  "mapNode": "kosoku:tunnel",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-anjyunnou"
+  ],
+  "description": "暗い 所から 明るい 所に 出た とき、目が 明るさに 慣れる ことです。トンネルの 出口で まぶしく 感じるのは このためです。"
+ },
+ {
+  "id": "kk-kabumira",
+  "name": "カーブミラー",
+  "reading": "かーぶみらー",
+  "journey": "kosoku",
+  "category": "トンネル・山道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪞",
+  "mapNode": "kosoku:tunnel",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-yamamichi"
+  ],
+  "description": "見通しの 悪い カーブや 交差点に ある 鏡です。映る ものは 実際より 遠く 小さく 見えるので、たよりすぎず 速度を 落とします。"
+ },
+ {
+  "id": "kk-jyuutainosaikoubi",
+  "name": "渋滞の最後尾",
+  "reading": "じゅうたいのさいこうび",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚥",
+  "mapNode": "kosoku:shakan",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kousokunoshakankyori",
+   "kk-sagu"
+  ],
+  "description": "高速道路で 渋滞の 最後尾に 近づいたら、早めに 速度を 落とし、非常点滅表示灯などで 後ろの 車に 知らせると 追突を 防げます。"
+ },
+ {
+  "id": "kk-kousokudouronogyakusou",
+  "name": "高速道路の逆走",
+  "reading": "こうそくどうろのぎゃくそう",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-tenkaikoutaioudannokin"
+  ],
+  "description": "高速道路を 反対向きに 走る ことです。まちがえて 入っても 本線車道で 転回や 後退は せず、安全な 場所に 止まって 110番などで 知らせます。"
+ },
+ {
+  "id": "kk-jyankushon",
+  "name": "ジャンクション",
+  "reading": "じゃんくしょん",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-intachienji"
+  ],
+  "description": "高速道路どうしが つながる 分かれ道です。行き先の 案内標識を 早めに 見て、あわてて 進路を 変えないように します。"
+ },
+ {
+  "id": "kk-kousokunomaenotenken",
+  "name": "高速の前の点検",
+  "reading": "こうそくのまえのてんけん",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-nenryou",
+   "kk-taiyanokuukiatsu"
+  ],
+  "description": "高速道路に 入る 前は、燃料・冷却水・エンジンオイルの 量や 荷物の 積みかたを 点検します。不足で 止まらない ための 決まりです。"
+ },
+ {
+  "id": "kk-taiyanokuukiatsu",
+  "name": "タイヤの空気圧",
+  "reading": "たいやのくうきあつ",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-sutandeinguuebugenshou"
+  ],
+  "description": "タイヤの 空気の 圧力です。高速道路を 走る ときは、空気圧を やや 高めに します。低い ままだと タイヤが 波打つ ことが あります。"
+ },
+ {
+  "id": "kk-sutandeinguuebugenshou",
+  "name": "スタンディングウェーブ現象",
+  "reading": "すたんでぃんぐうぇーぶげんしょう",
+  "journey": "kosoku",
+  "category": "ブレーキと車",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "〰️",
+  "mapNode": "kosoku:brake",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-taiyanokuukiatsu"
+  ],
+  "description": "空気圧の 低い タイヤで 高速で 走ると、タイヤが 波打つように ゆがむ ことです。熱を もって パンクの もとに なるので、空気圧を 確かめます。"
+ },
+ {
+  "id": "kk-kousokunooikoshihamigi",
+  "name": "高速の追い越しは右から",
+  "reading": "こうそくのおいこしはみぎから",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kosoku:honsen",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-oikoshishasen"
+  ],
+  "description": "高速道路でも、追い越しは 前の 車の 右側から します。左側から 追い越しては いけません。追い越したら 走行車線に もどります。"
+ },
+ {
+  "id": "kk-surihettataiya",
+  "name": "すり減ったタイヤ",
+  "reading": "すりへったたいや",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-haidoropureningugensho"
+  ],
+  "description": "溝が すり減った タイヤは、雨の 日に 水を うまく はけず すべりやすく なり、ハイドロプレーニング現象も 起きやすく なります。"
+ },
+ {
+  "id": "kk-yukinosakamichi",
+  "name": "雪の坂道",
+  "reading": "ゆきのさかみち",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏔️",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-yukimichinohasshin"
+  ],
+  "description": "雪の 坂道では、低い ギアで 一定の 速さを 保って 走ります。上り坂の 途中で 止まると 発進が 難しく なるので、前の 車との 間を あけます。"
+ },
+ {
+  "id": "kk-gakekuzure",
+  "name": "がけ崩れ",
+  "reading": "がけくずれ",
+  "journey": "kosoku",
+  "category": "トンネル・山道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "kosoku:tunnel",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-yamamichi"
+  ],
+  "description": "大雨の あとの 山道では、地盤が ゆるんで がけや 路肩が くずれやすく なります。落石にも 気を つけ、路肩に 寄りすぎない ように 走ります。"
+ },
+ {
+  "id": "kk-daijishinnotoki",
+  "name": "大地震のとき",
+  "reading": "だいじしんのとき",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kiwotsuketamamahinan"
+  ],
+  "description": "運転中に 大地震が 起きたら、急ハンドル・急ブレーキを さけて 道路の 左側に 止めます。ラジオなどで 情報を 聞いて 行動します。"
+ },
+ {
+  "id": "kk-kiwotsuketamamahinan",
+  "name": "キーをつけたまま避難",
+  "reading": "きーをつけたままひなん",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔑",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-daijishinnotoki"
+  ],
+  "description": "地震で 車を 道路に 置いて 避難する ときは、左側に 寄せて エンジンを 止め、キーは つけたままに して、窓を 閉め、ドアは ロックしません。"
+ },
+ {
+  "id": "kk-kirinotokinomeyasu",
+  "name": "霧のときの目安",
+  "reading": "きりのときのめやす",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kiri",
+   "kk-zenbumutou"
+  ],
+  "description": "霧の ときは、中央線や ガードレール、前の 車の 尾灯を めやすに して、速度を 落として 走ります。"
+ },
+ {
+  "id": "kk-manhoru",
+  "name": "マンホール",
+  "reading": "まんほーる",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕳️",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-nuretaromen"
+  ],
+  "description": "雨で ぬれた マンホールの ふたや 工事の 鉄板は すべりやすい 所です。その 上で 急ブレーキや 急ハンドルを しないように します。"
+ },
+ {
+  "id": "kk-ochiba",
+  "name": "落ち葉",
+  "reading": "おちば",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍂",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-nuretaromen"
+  ],
+  "description": "ぬれた 落ち葉の 上は すべりやすく なります。秋の 山道などでは 速度を 落として 走ります。"
+ },
+ {
+  "id": "kk-jyarimichi",
+  "name": "砂利道",
+  "reading": "じゃりみち",
+  "journey": "kosoku",
+  "category": "トンネル・山道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "kosoku:tunnel",
+  "field": "危険な場所",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-yamamichi"
+  ],
+  "description": "砂利道は、タイヤが すべったり ハンドルを 取られたり しやすい 道です。速度を 落とし、ハンドルを しっかり 持ちます。"
+ },
+ {
+  "id": "kk-tonnerunodeguchinotouk",
+  "name": "トンネルの出口の凍結",
+  "reading": "とんねるのでぐちのとうけつ",
+  "journey": "kosoku",
+  "category": "雪道・凍結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "kosoku:yuki",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-tonnerunoiriguchidegen",
+   "kk-hikagenotouketsu"
+  ],
+  "description": "冬は トンネルの 中が かわいていても、出口の 先が 凍っている ことが あります。出る 前に 速度を 落とします。"
+ },
+ {
+  "id": "kk-obahito",
+  "name": "オーバーヒート",
+  "reading": "おーばーひーと",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kousokunomaenotenken"
+  ],
+  "description": "エンジンが 熱く なりすぎる ことです。冷却水が 足りないと 起きやすいので、高速道路に 入る 前に 量を 確かめます。"
+ },
+ {
+  "id": "kk-panku",
+  "name": "パンク",
+  "reading": "ぱんく",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛞",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-taiyanokuukiatsu"
+  ],
+  "description": "タイヤの 空気が 抜ける ことです。走行中に パンクしたら ハンドルを しっかり にぎり、急ブレーキを さけて、何回かに 分けて ブレーキを 踏んで 止まります。"
+ },
+ {
+  "id": "kk-batteriagari",
+  "name": "バッテリーあがり",
+  "reading": "ばってりーあがり",
+  "journey": "kosoku",
+  "category": "故障・もしものとき",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "kosoku:kosho",
+  "field": "事故・故障",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-kousokunomaenotenken"
+  ],
+  "description": "バッテリーの 電気が なくなり、エンジンが かからなく なる ことです。ライトの 消し忘れに 注意し、点検で 確かめます。"
+ },
+ {
+  "id": "kk-sagu",
+  "name": "サグ",
+  "reading": "さぐ",
+  "journey": "kosoku",
+  "category": "高速道路の走りかた",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "kosoku:shakan",
+  "field": "高速道路",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-jyuutainosaikoubi"
+  ],
+  "description": "下り坂から 上り坂に 変わる 所です。気づかない うちに 速度が 落ちて 渋滞の もとに なるので、速度計を 見て 速さを 保ちます。"
+ },
+ {
+  "id": "kk-madonokumori",
+  "name": "窓のくもり",
+  "reading": "まどのくもり",
+  "journey": "kosoku",
+  "category": "雨・霧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌁",
+  "mapNode": "kosoku:ame",
+  "field": "夜間・悪天候",
+  "ruleset": "本免",
+  "relatedTerms": [
+   "kk-waipa"
+  ],
+  "description": "雨の 日は 窓の 内側が くもりやすく なります。デフロスターを 使ったり 窓を 開けたり して、くもりを 取ります。"
+ }
+]

@@ -63,6 +63,22 @@ def word(w):
         if i < len(nas) and ch in "ãõ": nas[i] = True
     out = []; i = 0; n = len(s)
     def V(k): return s[k] if 0 <= k < n and s[k] in VOW else ""
+    def cv(row, vi):
+        """子音の 行 row + s[vi] の 母音。鼻に ぬける 音(ã ão ãe õe)と うしろの m / n も 見る。つぎの 位置を かえす"""
+        v = s[vi]
+        if nas[vi]:
+            if v == "a" and vi + 1 < n and s[vi + 1] == "o": out.append(ROW[row][v] + "うん"); return vi + 2
+            if v == "a" and vi + 1 < n and s[vi + 1] == "e": out.append(ROW[row][v] + "いん"); return vi + 2
+            if v == "o" and vi + 1 < n and s[vi + 1] == "e": out.append(ROW[row][v] + "いん"); return vi + 2
+            out.append(ROW[row][v] + "ん"); return vi + 1
+        out.append(ROW[row][v])
+        n1 = s[vi + 1] if vi + 1 < n else ""; n2 = s[vi + 2] if vi + 2 < n else ""
+        if n1 and n1 in "mn" and (not n2 or n2 not in VOW + "h"):
+            if n1 == "m" and not n2 and v == "e": out[-1] += "いん"; return vi + 2
+            if n1 == "m" and not n2 and v == "a": out[-1] += "うん"; return vi + 2
+            if n2 == "s" and vi + 3 == n and v == "e": out[-1] += "いんす"; return vi + 3
+            out[-1] += "ん"; return vi + 2
+        return vi + 1
     while i < n:
         c = s[i]; nx = s[i + 1] if i + 1 < n else ""; nx2 = s[i + 2] if i + 2 < n else ""
         if c in VOW:
@@ -83,29 +99,29 @@ def word(w):
             out.append(ROW[""][c]); i += 1; continue
         # 2字の 子音
         if c == "c" and nx == "h":
-            if V(i + 2): out.append(ROW["sh"][nx2]); i += 3
+            if V(i + 2): i = cv("sh", i + 2)
             else: out.append("し"); i += 2
             continue
         if c == "l" and nx == "h":
-            if V(i + 2): out.append(ROW["ly"][nx2]); i += 3
+            if V(i + 2): i = cv("ly", i + 2)
             else: out.append("り"); i += 2
             continue
         if c == "n" and nx == "h":
-            if V(i + 2): out.append(ROW["ny"][nx2]); i += 3
+            if V(i + 2): i = cv("ny", i + 2)
             else: out.append("に"); i += 2
             continue
         if c == "r" and nx == "r":
-            if V(i + 2): out.append(ROW["h"][nx2]); i += 3
+            if V(i + 2): i = cv("h", i + 2)
             else: out.append("る"); i += 2
             continue
         if c == "s" and nx == "s":
-            if V(i + 2): out.append(ROW["s"][nx2]); i += 3
+            if V(i + 2): i = cv("s", i + 2)
             else: out.append("す"); i += 2
             continue
         if c == "q" and nx == "u":
-            if nx2 in "ei" and nx2: out.append(ROW["k"][nx2]); i += 3; continue
+            if nx2 and nx2 in "ei": i = cv("k", i + 2); continue
             if V(i + 2): out.append("く" + ROW[""][nx2]); i += 3; continue
-        if c == "g" and nx == "u" and nx2 and nx2 in "ei" and raw[i + 1] != "ü": out.append(ROW["g"][nx2]); i += 3; continue
+        if c == "g" and nx == "u" and nx2 and nx2 in "ei" and raw[i + 1] != "ü": i = cv("g", i + 2); continue
         # 1字の 子音 + 母音
         if V(i + 1):
             v = nx
@@ -125,21 +141,7 @@ def word(w):
             elif c == "h": row = ""
             else: row = {"b": "b", "d": "d", "f": "f", "k": "k", "m": "m", "n": "n", "p": "p", "t": "t", "v": "v", "w": "w", "y": "y"}.get(c)
             if row is not None:
-                # 鼻に ぬける 母音(ã õ)が つづく とき
-                if nas[i + 1]:
-                    if v == "a" and i + 2 < n and s[i + 2] == "o": out.append(ROW[row][v] + "うん"); i += 3; continue
-                    if v == "a" and i + 2 < n and s[i + 2] == "e": out.append(ROW[row][v] + "いん"); i += 3; continue
-                    if v == "o" and i + 2 < n and s[i + 2] == "e": out.append(ROW[row][v] + "いん"); i += 3; continue
-                    out.append(ROW[row][v] + "ん"); i += 2; continue
-                out.append(ROW[row][v]); i += 1
-                # つぎの 母音の 処理は 上の 母音の 道に まかせたいので、ここで 母音を 1字 すすめて 鼻音だけ 見る
-                c2 = s[i]; n1 = s[i + 1] if i + 1 < n else ""; n2 = s[i + 2] if i + 2 < n else ""
-                if n1 and n1 in "mn" and (not n2 or n2 not in VOW + "h"):
-                    if n1 == "m" and not n2 and c2 == "e": out[-1] += "いん"; i += 2; continue
-                    if n1 == "m" and not n2 and c2 == "a": out[-1] += "うん"; i += 2; continue
-                    if n2 == "s" and i + 3 == n and c2 == "e": out[-1] += "いんす"; i += 3; continue
-                    out[-1] += "ん"; i += 2; continue
-                i += 1; continue
+                i = cv(row, i + 1); continue
         # 母音の つかない 子音
         if c == "ç": out.append("す"); i += 1; continue
         if nx and nx in "rl" and c in CODA_CL: out.append(CODA_CL[c]); i += 1; continue

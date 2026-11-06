@@ -64,10 +64,10 @@ GAMES = {
     # フリックポルトガル語(けいくん 2026-11-06「進めて」。まとめ docs/フリックポルトガル語-はじめかた.md の とおり → 打つ字「スペイン語と同じ」・「ブラジルが基本」・旅と 問題の 数「スペイン語と同じ」)。
     #   ことばは tools/porutogaru/src/<旅>.json → porutogaru/portuguese.js(tools/porutogaru/porutogaru_js.py)。しくみは porutogaru/porutogaru.js(PORUTOGARU。supein.js を 写した)。
     #   ⚠️ 打つのは 読みの ひらがな(ブラジルの 読み。つづりから tools/porutogaru/kana_pt.py の 表で 作る。手で 書かない)。ABC で つづりも 打てる(アクセント記号と ç は 打たなくても 正解)
-    #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/porutogaru/placeholder_icon.py)。トップの 絵・題名の 絵は まだ 無い(hero=False・logo=False)。
+    #   絵: けいくんの ChatGPT の 絵が 届くまで 仮の アイコン(tools/porutogaru/placeholder_icon.py)。トップの 絵は 2026-11-06 に 入れた(けいくんの ChatGPT の 絵の 1回目。ばん→ぱん・あて らご→あて ろご・ぽるとがるの 札 3つ(ぼんで・ぱすてる は ブラジルの ことば)を tools/porutogaru/fix_text.py で 直した)。題名の 絵は まだ(logo=False)。
     #   届いたら tools/porutogaru/art/square-src.png → tools/icon_from_square.py porutogaru(iconv を +1)/ title-src.png → tools/title_from_art.py porutogaru(logo を True・art.word を 実寸に)/ porutogaru/hero.webp(hero を True)
-    "porutogaru": dict(name="フリックポルトガル語", modes="PORUTOGARU", kinds=set(), color="#009c3b", hero=False, logo=False,
-                   art=dict(word=(900, 200), hero=(1536, 1024), alt="フリックポルトガル語", iconv=1, wordv=1),
+    "porutogaru": dict(name="フリックポルトガル語", modes="PORUTOGARU", kinds=set(), color="#009c3b", hero=True, logo=False,
+                   art=dict(word=(900, 200), hero=(1536, 1024), alt="フリックポルトガル語:リオデジャネイロとリスボンの町なみと男の子・女の子・白い犬。発音・単語・文法・日常会話・ネイティブの表現と、ブラジルとポルトガルのことば", iconv=1, wordv=2),
                    lead="ポルトガル語の 発音・単語・文法と 活用・日常会話・ネイティブの 表現を、フリックで 打って 旅しよう。ポルトガル語を 見て、🔊で 発音を 聞きながら、読みの ひらがなを 打つよ。打つと 意味と 例文が 出るよ。ブラジルの ことばが 基本で、ポルトガルの 言いかたも わかるよ。",
                    how="表示された 読みの ひらがなを、そのまま打ち写してね(Olá → おら、obrigado → おぶりがどぅ)。読みは ブラジルの 発音だよ。上の「⌨️ 打ちかた」で「ABC」に すると ポルトガル語の つづりで 打てるよ。アクセント記号(ã ô など)と ç は 打たなくても 正解。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。読みの ひらがなは 発音に 近い 字なので、🔊で ほんとうの 音を 聞いてね。🔊 は 端末の 読み上げ機能を 使うので、端末に よって 声が ちがいます。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。ABC で 打つときは、iPhone の 日本語キーボードの「ABC」なら フリックで ポルトガル語が 打てるよ。"),

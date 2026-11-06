@@ -1670,6 +1670,7 @@
   届いたら 四角い 絵 → `tools/nail/art/square-src.png` → `python3 tools/icon_from_square.py nail`(`iconv` +1)/ 題名の 透明 PNG → `tools/nail/art/title-src.png` → `python3 tools/title_from_art.py nail`(`logo=True`・`art.word` を 実寸)/ `nail/hero.webp`(`hero=True`)。
   ⚠️ 絵を 頼む ときは **手を 大きく 描かせない**(デザインは ネイルチップの かざり台で 見せる)・ボトルは ラベルなし・ブランドの ロゴや 実在の キャラクターを 描かせない。「フリックネイリス」「フリックネイルリスト」に なりやすいので 届いた 字を かならず 読む。
   販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから。写真(`fetch_game_photos.py`)は まだ 足していない
+- ⚠️ 取りこんだ 日(2026-11-06)に GitHub Pages の 出しなおしが 3回 時間切れ(`deploy` の syncing_files で 10分)に なった。組み立ては 成功していて GitHub の 調子も「問題なし」。**小さな コミットを もう1つ 入れて 出しなおす**(2026-11-06 の 4ede96e → 9c22d05 も 同じ 形で 直った)
 - 確かめかた: `node tools/play-all.mjs nail/`(全198ステージ。旅 9×11 + マスター 99)/ `node tools/click-all.mjs nail/`(W=320 も)/ `python3 tools/nail/terms_js.py --check`
 
 ## フリック気象予報士(`kisho/`。けいくん 2026-10-31「新しいセッションで フリック気象予報士を作成したい。気象予報士のテストに受かるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 名前「おすすめのまま」・旅と 段は「これで受かるレベルになるの？」→「**気象予報士に受かるレベルになるように作成してください**」。まとめは `docs/フリック気象予報士-はじめかた.md`)

@@ -453,7 +453,7 @@ const TAKKEN = (() => {
   function startMaru(list){ const pool = list || shuffle(mPool()).slice(0, QN); if(!pool.length){ drawMaru("問題が ないよ。はんいを 広げてね"); return; } mq = { list:pool, i:0, ok:0, picked:undefined, miss:[], review:!!list }; drawMaru(); }
   function drawMaru(msg){
     const sh = document.getElementById("ai-mq"), Q = mq;
-    let h = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>' + (Q && Q.review ? "❌ まちがえた 問題" : "⭕❌ 一問一答") + '</h2>';
+    let h = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>' + (Q && Q.review ? "❌ まちがえた 問題" : Q && Q.list[0] && Q.list[0].o ? "🔢 数字クイズ" : "⭕❌ 一問一答") + '</h2>';
     if(!Q){
       h += '<p class="ai-qlead">文を 読んで 正しければ ⭕・まちがいなら ❌。本番の 4択は、この 見分けの 力で 解けるよ。<b>「必ず」「自ら 売主」「宅建業者 どうし」「以内 / 以上」「許可 / 届出」</b>の ような ひっかけに 気を つけてね。' + QN + '問。</p>' +
         '<div class="ai-zf ai-qset"><select id="td-mj">' + opt("", "🧭 ぜんぶの 旅", mset.j) + JR.map(J => opt(J.id, J.icon + " " + J.name, mset.j)).join("") + '</select>' +
@@ -466,7 +466,7 @@ const TAKKEN = (() => {
         (Q.review ? '<p class="ai-small ai-muted">2回 つづけて 正解すると「まちがえた 問題」から 消えるよ。のこり ' + missList().length + '問</p>' : "") +
         (Q.miss.length ? '<p class="ai-small">🔁 まちがえた 問題</p>' + Q.miss.map(m => m.o ? '<div class="td-rv"><p>' + esc(m.q) + '</p><b>答え ' + esc(m.a) + '</b> ' + esc(m.w) + '</div>' : '<div class="td-rv"><p>' + esc(m.q) + '</p><b>答え ' + OX(m.a) + '</b> ' + esc(m.w) + '</div>').join("") : "") +
         (Q.review ? '<button type="button" class="ai-btn ai-wide ai-go" data-ai-open="review">もう一度</button>' :
-          '<button type="button" class="ai-btn ai-wide ai-go" data-td-mstart="1">もう一度(同じ はんい)</button><button type="button" class="ai-btn ai-wide" data-ai-open="maru">はんいを えらびなおす</button>');
+          (Q.list[0] && Q.list[0].o ? '<button type="button" class="ai-btn ai-wide ai-go" data-td-nstart="1">もう一度</button><button type="button" class="ai-btn ai-wide" data-ai-open="num">はんいを えらびなおす</button>' : '<button type="button" class="ai-btn ai-wide ai-go" data-td-mstart="1">もう一度(同じ はんい)</button><button type="button" class="ai-btn ai-wide" data-ai-open="maru">はんいを えらびなおす</button>'));
     }else{
       const m = Q.list[Q.i];
       h += '<p class="ai-qn">' + (Q.i + 1) + ' / ' + Q.list.length + '　<span>' + m.jr.icon + " " + esc(m.jr.name) + (m.dv ? " ・ " + LVN[m.dv].icon + " " + esc(LVN[m.dv].name) : " ・ 🔢 数字") + '</span></p>' + (m.o ? numCard(m, Q.picked) : maruCard(m, Q.picked));
@@ -542,9 +542,9 @@ const TAKKEN = (() => {
     for(const it of ex.list){
       const ok = itemOk(it), b = by[it.rs] = by[it.rs] || { ok:0, n:0 }; b.n++;
       if(ok){ pts++; b.ok++; } else wrong.push(it);
+      if(it.a === undefined) continue;  // 答えて いない 問題は 復習に 入れない(採点を いそいだ ときに 50問 入らない ように)
       if(it.t === "n") missMark("n:" + it.n.id, ok);
-      else if(it.a !== undefined){ const m = it.st[it.a]; if(!ok) missMark("m:" + m.id, false); }  // えらんだ 文が まちがいの もとなら 復習へ
-      if(it.t === "m" && !ok) missMark("m:" + it.st[it.ans].id, false);
+      else if(!ok){ missMark("m:" + it.st[it.a].id, false); missMark("m:" + it.st[it.ans].id, false); }  // えらんだ 文と 正解の 文を 復習へ
     }
     const max = ex.list.length + (ex.exempt ? 5 : 0); if(ex.exempt) pts += 5;  // 免除の 5問は 正解あつかい(本番と 同じ)
     return { pts, max, by, wrong };

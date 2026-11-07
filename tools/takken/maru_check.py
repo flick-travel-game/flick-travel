@@ -6,7 +6,7 @@ import json, re, sys, difflib
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from terms_js import BAN, RULESETS
+from terms_js import BAN, RULESETS, ban_text
 JR = ["kenri", "bukken", "sozoku", "gyoho", "torihiki", "toshi", "kenchiku", "zei", "kakaku"]
 PRE = dict(kenri="ke", bukken="bu", sozoku="so", gyoho="gy", torihiki="to", toshi="ts", kenchiku="kc", zei="ze", kakaku="kk")
 GOAL = dict(kenri=140, bukken=130, sozoku=120, gyoho=150, torihiki=160, toshi=130, kenchiku=130, zei=110, kakaku=130)
@@ -18,7 +18,7 @@ def terms():
         f = HERE / f"terms-{j}.json"
         if f.exists(): ids |= {t["id"] for t in json.loads(f.read_text(encoding="utf-8"))}
     return ids
-def banned(txt): return [w for w in BAN if w in txt]
+def banned(txt): return [w for w in BAN if w in ban_text(txt)]
 def main():
     only = [a for a in sys.argv[1:] if a in JR]
     tid = terms(); errs = []; warn = []; allq = []; total = 0

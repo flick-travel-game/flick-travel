@@ -1,0 +1,1986 @@
+[
+ {
+  "id": "so-souzoku",
+  "name": "相続",
+  "reading": "そうぞく",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-isan",
+   "so-souzokunin"
+  ],
+  "description": "家族などが 財産を 引きつぐ ことです。家や 土地だけで なく、借金も 引きつぎます。宅建では、売主が 相続で 家を 手に入れた とき、登記の 名義を 確かめる ことが 大切です。"
+ },
+ {
+  "id": "so-isan",
+  "name": "遺産",
+  "reading": "いさん",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzoku",
+   "so-isanbunkatsu"
+  ],
+  "description": "相続で 引きつがれる 財産です。土地・建物・預金の ほか、借金も ふくまれます。相続人が 何人も いる ときは、分ける までは みんなの 共有に なります。"
+ },
+ {
+  "id": "so-igonsho",
+  "name": "遺言書",
+  "reading": "いごんしょ",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-igon",
+   "so-jihitsushoushoigon"
+  ],
+  "description": "財産を だれに どう 引きつぐかを 書いた 書面です。決まった 形で 書かないと 効力が ありません。家の 売買では、遺言書で 家を 引きついだ 人が 売主に なる ことも あります。"
+ },
+ {
+  "id": "so-souzokunin",
+  "name": "相続人",
+  "reading": "そうぞくにん",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👨‍👩‍👧",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-hisouzokunin",
+   "so-haiguusha"
+  ],
+  "description": "財産を 引きつぐ 人です。だれが なるかは 法律で 決まっていて、配偶者と、子・親・兄弟姉妹の 順で 決まります。"
+ },
+ {
+  "id": "so-haiguusha",
+  "name": "配偶者",
+  "reading": "はいぐうしゃ",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💑",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-fuufu",
+   "so-souzokunin"
+  ],
+  "description": "結婚している 相手、つまり 夫から 見た 妻、妻から 見た 夫です。配偶者は いつも 相続人に なり、子や 親と いっしょに 財産を 引きつぎます。"
+ },
+ {
+  "id": "so-fuufu",
+  "name": "夫婦",
+  "reading": "ふうふ",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👫",
+  "mapNode": "sozoku:haigu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-haiguusha",
+   "so-haiguushakyyojuuke"
+  ],
+  "description": "結婚している ふたりです。おたがいが 配偶者に なります。夫婦で 住んで いた 家に、のこされた 配偶者が 住みつづけられる しくみも あります。"
+ },
+ {
+  "id": "so-rentaihoshounin",
+  "name": "連帯保証人",
+  "reading": "れんたいほしょうにん",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-hoshounin",
+   "so-rentaisaimu"
+  ],
+  "description": "借りた 人と 同じ 重さの 責任を 負う 保証人です。「まず 借りた 人に 請求して」と 言う ことが できません。部屋を 借りる ときに 頼まれる ことが あります。"
+ },
+ {
+  "id": "so-hoshounin",
+  "name": "保証人",
+  "reading": "ほしょうにん",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-rentaihoshounin",
+   "so-hoshoukeiyaku"
+  ],
+  "description": "お金を 借りた 人が 払えない ときに、かわりに 払う 約束を した 人です。家を 借りる ときの 家賃や、お金を 借りる ときに 頼まれます。"
+ },
+ {
+  "id": "so-zouyo",
+  "name": "贈与",
+  "reading": "ぞうよ",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎀",
+  "mapNode": "sozoku:shiyo",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-shomenniyoranaizou",
+   "so-futantsukizouyo"
+  ],
+  "description": "ただで 財産を あげる 契約です。あげる 人の 申し出に、もらう 人が「受けます」と 言うと 成り立ちます。親から 子へ 家や 土地を 贈る ことも あります。"
+ },
+ {
+  "id": "so-benshou",
+  "name": "弁償",
+  "reading": "べんしょう",
+  "journey": "sozoku",
+  "category": "不法行為",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "sozoku:fuho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-fuhoukoui",
+   "so-kashitsusousai"
+  ],
+  "description": "人の 物を こわしたり、迷惑を かけたり した ときに、お金などで つぐなう ことです。法律では 損害賠償と いいます。"
+ },
+ {
+  "id": "so-rifuomu",
+  "name": "リフォーム",
+  "reading": "りふぉーむ",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛠",
+  "mapNode": "sozoku:ukeoi",
+  "field": "くらし",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-ukeoi",
+   "so-ukeoininnokeiyakuf"
+  ],
+  "description": "家を 直したり、新しく したり する 工事です。工事を 完成させる 約束なので、法律では 請負の 契約に なります。"
+ },
+ {
+  "id": "so-inin",
+  "name": "委任",
+  "reading": "いにん",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "sozoku:ukeoi",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-zenkanchuuigimu",
+   "so-ininnokaijo"
+  ],
+  "description": "法律の 手続きなどを ほかの 人に まかせる 契約です。家の 売り買いを 不動産屋さんに 頼む ときにも 考えかたが 使われます。報酬は、特約が なければ もらえません。"
+ },
+ {
+  "id": "so-souzokutouki",
+  "name": "相続登記",
+  "reading": "そうぞくとうき",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "sozoku:sotoki",
+  "field": "不動産登記法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokutoukinogimu",
+   "so-souzokutoukinokige"
+  ],
+  "description": "相続で 手に入れた 土地や 建物の 名義を、引きついだ 人に 変える 登記です。相続人が ひとりで 申請できます。いまは しなければ ならない 決まりに なっています。"
+ },
+ {
+  "id": "so-isanbunkatsu",
+  "name": "遺産分割",
+  "reading": "いさんぶんかつ",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍰",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-isanbunkatsukyyoug",
+   "so-houteisouzokubun"
+  ],
+  "description": "相続人どうしで、だれが どの 財産を 引きつぐかを 決める ことです。分けた 結果は、相続が はじまった 時に さかのぼって 効力が あります。"
+ },
+ {
+  "id": "so-houteisouzokubun",
+  "name": "法定相続分",
+  "reading": "ほうていそうぞくぶん",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-haiguushatokonosou",
+   "so-shiteisouzokubun"
+  ],
+  "description": "法律で 決まった、相続人ごとの 分ける 割合です。遺言で 割合が 決められて いなければ、これが めやすに なります。"
+ },
+ {
+  "id": "so-souzokuhouki",
+  "name": "相続放棄",
+  "reading": "そうぞくほうき",
+  "journey": "sozoku",
+  "category": "承認・放棄",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "sozoku:shonin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokuhoukinoshin",
+   "so-souzokuhoukitodais"
+  ],
+  "description": "財産も 借金も 引きつがない ことです。放棄すると、はじめから 相続人で なかった ことに なります。家庭裁判所に 申し出て します。"
+ },
+ {
+  "id": "so-shakuyousho",
+  "name": "借用書",
+  "reading": "しゃくようしょ",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✍️",
+  "mapNode": "sozoku:shiyo",
+  "field": "くらし",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-kinsenshouhitaisha",
+   "so-hoshounin"
+  ],
+  "description": "お金を 借りた ことを 書いた 書面です。いくら 借りて、いつ 返すかを 書いて おくと、あとで もめるのを ふせげます。"
+ },
+ {
+  "id": "so-ukeoi",
+  "name": "請負",
+  "reading": "うけおい",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏗",
+  "mapNode": "sozoku:ukeoi",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-rifuomu",
+   "so-ukeoinohoushuu"
+  ],
+  "description": "仕事を 完成させる ことを 約束し、その 結果に 報酬を 払う 契約です。家を 建てる 工事は 請負の 代表です。"
+ },
+ {
+  "id": "so-shinzoku",
+  "name": "親族",
+  "reading": "しんぞく",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokunin",
+   "so-haiguusha"
+  ],
+  "description": "家族や 結婚で つながる 人たちの ことです。法律で 範囲が 決まっていて、配偶者も ふくまれます。相続人は 親族の 中から 決まります。"
+ },
+ {
+  "id": "so-hoshoukeiyaku",
+  "name": "保証契約",
+  "reading": "ほしょうけいやく",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🖊",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-hoshounin",
+   "so-kojinnehoshou"
+  ],
+  "description": "保証人に なる 約束です。書面で しないと 効力が ありません。電子の 記録で した ときも 書面と 同じに あつかいます。"
+ },
+ {
+  "id": "so-hisouzokunin",
+  "name": "被相続人",
+  "reading": "ひそうぞくにん",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌲",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokunin",
+   "so-isan"
+  ],
+  "description": "財産を のこした 人、つまり 相続される 人です。だれが 相続人に なるかは、被相続人との つながりで 決まります。"
+ },
+ {
+  "id": "so-daishuusouzoku",
+  "name": "代襲相続",
+  "reading": "だいしゅうそうぞく",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👶",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-kyyoudaishimainoda",
+   "so-souzokuhoukitodais"
+  ],
+  "description": "相続人に なる はずの 子が 先に いなく なった ときなどに、その 子の 子(孫)が かわりに 相続する ことです。相続欠格や 廃除の ときも 起きます。"
+ },
+ {
+  "id": "so-souzokukekkaku",
+  "name": "相続欠格",
+  "reading": "そうぞくけっかく",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokuninnohaijo",
+   "so-daishuusouzoku"
+  ],
+  "description": "遺言書を 勝手に 書きかえたり、かくしたり した 人などは、法律で 当然に 相続人に なれません。手続きは 要りません。その 人の 子は 代襲相続できます。"
+ },
+ {
+  "id": "so-souzokuninnohaijo",
+  "name": "相続人の廃除",
+  "reading": "そうぞくにんのはいじょ",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokukekkaku",
+   "so-iryyuubun"
+  ],
+  "description": "財産を のこす 人に ひどい ことを した 相続人を、家庭裁判所の 手続きで 相続人から 外す ことです。遺留分の ある 相続人が 対象です。遺言でも できます。"
+ },
+ {
+  "id": "so-shiteisouzokubun",
+  "name": "指定相続分",
+  "reading": "していそうぞくぶん",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✒️",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-houteisouzokubun",
+   "so-igon"
+  ],
+  "description": "遺言で 決めた 相続の 割合です。遺言が あれば、法定相続分より こちらが 先に 使われます。"
+ },
+ {
+  "id": "so-kiyobun",
+  "name": "寄与分",
+  "reading": "きよぶん",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💪",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-tokubetsujueki",
+   "so-isanbunkatsukyyoug"
+  ],
+  "description": "家の 仕事を 手伝ったり、看病したり して、財産を 守ったり ふやしたり した 相続人に、取り分を 上乗せする しくみです。まず 相続人の 話しあいで 決めます。"
+ },
+ {
+  "id": "so-tokubetsujueki",
+  "name": "特別受益",
+  "reading": "とくべつじゅえき",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-kiyobun",
+   "so-mochimodoshimenjon"
+  ],
+  "description": "結婚や くらしの 元手として、生きている うちに もらった 財産などの ことです。公平に なるよう、相続分を 計算する ときに 考えに 入れます。"
+ },
+ {
+  "id": "so-tanjunshounin",
+  "name": "単純承認",
+  "reading": "たんじゅんしょうにん",
+  "journey": "sozoku",
+  "category": "承認・放棄",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "sozoku:shonin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-houteitanjunshouni",
+   "so-genteishounin"
+  ],
+  "description": "財産も 借金も すべて 引きつぐ ことです。3か月 以内に 限定承認も 放棄も しなければ、単純承認した ものと みなされます。"
+ },
+ {
+  "id": "so-genteishounin",
+  "name": "限定承認",
+  "reading": "げんていしょうにん",
+  "journey": "sozoku",
+  "category": "承認・放棄",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "sozoku:shonin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-kyyoudoudenogentei",
+   "so-tanjunshounin"
+  ],
+  "description": "引きついだ プラスの 財産の 範囲で だけ、借金などを 払う と 決めて 相続する ことです。家庭裁判所に 申し出ます。"
+ },
+ {
+  "id": "so-jukuryyokikan",
+  "name": "熟慮期間",
+  "reading": "じゅくりょきかん",
+  "journey": "sozoku",
+  "category": "承認・放棄",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "sozoku:shonin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-jukuryyokikannokis",
+   "so-souzokuhouki"
+  ],
+  "description": "承認するか 放棄するかを 考える 期間で、自分が 相続人に なったと 知った 時から 3か月 以内です。家庭裁判所で のばして もらう ことも できます。"
+ },
+ {
+  "id": "so-igon",
+  "name": "遺言",
+  "reading": "いごん",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕊",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-igonsho",
+   "so-izou"
+  ],
+  "description": "財産を だれに どう 引きつぐかを、自分の 意思で 決めて おく ことです。法律で 決まった 形で しないと 効力が ありません。",
+  "acceptedReadings": [
+   "いごん",
+   "ゆいごん"
+  ]
+ },
+ {
+  "id": "so-jihitsushoushoigon",
+  "name": "自筆証書遺言",
+  "reading": "じひつしょうしょいごん",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🖋",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-zaisanmokuroku",
+   "so-kennin"
+  ],
+  "description": "全文・日付・氏名を 自分で 書いて、印を おす 遺言です。手軽ですが、ふつうは 家庭裁判所の 検認が 要ります。"
+ },
+ {
+  "id": "so-kouseishoushoigon",
+  "name": "公正証書遺言",
+  "reading": "こうせいしょうしょいごん",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-kennin",
+   "so-igon"
+  ],
+  "description": "公証人が 作る 遺言です。証人 2人 以上が 立ち会います。形の まちがいが 起きにくく、家庭裁判所の 検認も 要りません。"
+ },
+ {
+  "id": "so-izou",
+  "name": "遺贈",
+  "reading": "いぞう",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💝",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-igon",
+   "so-souzokutouki"
+  ],
+  "description": "遺言で 財産を あげる ことです。相続人で ない 人にも できます。相続人への 遺贈なら、その 相続人が ひとりで 所有権の 登記を 申請できます。"
+ },
+ {
+  "id": "so-iryyuubun",
+  "name": "遺留分",
+  "reading": "いりゅうぶん",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "sozoku:iryu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-iryyuubunnowariai",
+   "so-iryyuubunshingaiga"
+  ],
+  "description": "遺言が あっても、決まった 相続人に のこされる 最低限の 取り分です。兄弟姉妹には ありません。"
+ },
+ {
+  "id": "so-iryyuubunshingaiga",
+  "name": "遺留分侵害額請求",
+  "reading": "いりゅうぶんしんがいがくせいきゅう",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "sozoku:iryu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-iryyuubun",
+   "so-iryyuubunshingaiga2"
+  ],
+  "description": "遺留分より 少なく しか もらえなかった 人が、多く もらった 人に、足りない ぶんの お金を 求める ことです。家や 土地 そのものを 取りもどす のでは ありません。"
+ },
+ {
+  "id": "so-haiguushakyyojuuke",
+  "name": "配偶者居住権",
+  "reading": "はいぐうしゃきょじゅうけん",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏡",
+  "mapNode": "sozoku:haigu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-haiguushakyyojuuke2",
+   "so-haiguushakyyojuuke3"
+  ],
+  "description": "のこされた 配偶者が、住んで いた 家に ただで 住みつづけられる 権利です。遺産分割・遺贈・家庭裁判所の 審判で 手に入れます。"
+ },
+ {
+  "id": "so-haiguushatankikyyo",
+  "name": "配偶者短期居住権",
+  "reading": "はいぐうしゃたんききょじゅうけん",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛏",
+  "mapNode": "sozoku:haigu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-haiguushakyyojuuke",
+   "so-fuufu"
+  ],
+  "description": "ただで 住んで いた 配偶者が、しばらく ただで 住める 権利です。遺産分割で 家の 行き先が 決まる 日か、相続開始から 6か月の、遅い ほうの 日まで 住めます。"
+ },
+ {
+  "id": "so-souzokutoukinogimu",
+  "name": "相続登記の義務",
+  "reading": "そうぞくとうきのぎむ",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "sozoku:sotoki",
+  "field": "不動産登記法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokutoukinokige",
+   "so-souzokuninshinkoku"
+  ],
+  "description": "相続で 土地や 建物を 手に入れた 人は、登記を 申請しなければ ならない 決まりです。2024年4月1日から 始まり、それより 前の 相続も 対象です。"
+ },
+ {
+  "id": "so-souzokuninshinkoku",
+  "name": "相続人申告登記",
+  "reading": "そうぞくにんしんこくとうき",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙋‍♀️",
+  "mapNode": "sozoku:sotoki",
+  "field": "不動産登記法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokutoukinogimu",
+   "so-souzokutoukinokige"
+  ],
+  "description": "「自分は 相続人です」と 登記所に 申し出る、かんたんな 方法です。期限 までに 申し出れば、相続登記の 義務を 果たした ことに なります。"
+ },
+ {
+  "id": "so-fuhoukoui",
+  "name": "不法行為",
+  "reading": "ふほうこうい",
+  "journey": "sozoku",
+  "category": "不法行為",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "sozoku:fuho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-benshou",
+   "so-shiyoushasekinin"
+  ],
+  "description": "わざと、または 不注意で、ほかの 人の 権利や 利益を こわして 損害を あたえる ことです。損害賠償の 責任が 生まれます。"
+ },
+ {
+  "id": "so-shiyoushasekinin",
+  "name": "使用者責任",
+  "reading": "しようしゃせきにん",
+  "journey": "sozoku",
+  "category": "不法行為",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "sozoku:fuho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-fuhoukoui",
+   "so-kyyuushou"
+  ],
+  "description": "従業員が 仕事中に ほかの 人へ 損害を あたえた とき、会社も 賠償の 責任を 負う ことです。会社が 払った あと、従業員に 求償する ことも できます。"
+ },
+ {
+  "id": "so-zenkanchuuigimu",
+  "name": "善管注意義務",
+  "reading": "ぜんかんちゅういぎむ",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "sozoku:ukeoi",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-inin",
+   "so-kitaku"
+  ],
+  "description": "仕事を まかされた 人が はらう、ていねいな 注意の 決まりです。「善良な 管理者の 注意」の 略です。報酬が なくても、委任なら この 注意が 要ります。"
+ },
+ {
+  "id": "so-rentaisaimu",
+  "name": "連帯債務",
+  "reading": "れんたいさいむ",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-rentaisaimunozetta",
+   "so-kyyuushou"
+  ],
+  "description": "何人もが、それぞれ 借金の 全部を 払う 義務を 負う ことです。お金を 貸した 人は、だれにでも 全部を 請求できます。"
+ },
+ {
+  "id": "so-saikokunokoubenken",
+  "name": "催告の抗弁権",
+  "reading": "さいこくのこうべんけん",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-kensakunokoubenken",
+   "so-rentaihoshounin"
+  ],
+  "description": "保証人が 請求された とき「まず お金を 借りた 本人に 請求して」と 言える 権利です。ふつうの 保証人には ありますが、連帯保証人には ありません。"
+ },
+ {
+  "id": "so-kensakunokoubenken",
+  "name": "検索の抗弁権",
+  "reading": "けんさくのこうべんけん",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-saikokunokoubenken",
+   "so-shutarusaimusha"
+  ],
+  "description": "本人に 払う 力が あり、取り立てが かんたんだと 保証人が 示せば、先に 本人の 財産から 取り立てて もらえる 権利です。連帯保証人には ありません。"
+ },
+ {
+  "id": "so-sousai",
+  "name": "相殺",
+  "reading": "そうさい",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "sozoku:sosai",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-sousaitekijou",
+   "so-sashiosaetosousai"
+  ],
+  "description": "おたがいに 同じ 種類の 借りが ある とき、同じ 額を 差し引いて 消す ことです。相手への 意思表示で します。"
+ },
+ {
+  "id": "so-saikenjouto",
+  "name": "債権譲渡",
+  "reading": "さいけんじょうと",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "sozoku:sosai",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-saikenjoutonotaiko",
+   "so-joutoseigentokuyak"
+  ],
+  "description": "お金を 払って もらう 権利(債権)を、ほかの 人に ゆずる ことです。家賃を 受けとる 権利を ゆずる ことも できます。"
+ },
+ {
+  "id": "so-shiyoutaishaku",
+  "name": "使用貸借",
+  "reading": "しようたいしゃく",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "sozoku:shiyo",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-shiyoutaishakunosh",
+   "so-kinsenshouhitaisha"
+  ],
+  "description": "ただで 物を 貸し借りする 契約です。親が 子に ただで 家を 貸す ような ときです。家賃を 払う 賃貸借とは ちがい、借地借家法の 守りは ありません。"
+ },
+ {
+  "id": "so-kinsenshouhitaisha",
+  "name": "金銭消費貸借",
+  "reading": "きんせんしょうひたいしゃく",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💰",
+  "mapNode": "sozoku:shiyo",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-shakuyousho",
+   "so-shiyoutaishaku"
+  ],
+  "description": "お金を 借りて、同じ 額を あとで 返す 契約です。利息は、特約が なければ 請求できません。住宅ローンも この しくみです。"
+ },
+ {
+  "id": "so-souzokuninnojuni",
+  "name": "相続人の順位",
+  "reading": "そうぞくにんのじゅんい",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokunin",
+   "so-chokkeisonzokunoso"
+  ],
+  "description": "相続人に なる 順番は、子 → 父母など(直系尊属)→ 兄弟姉妹 です。前の 順位の 人が いれば、うしろの 順位の 人は 相続人に なりません。配偶者は 順位に 関係なく いつも 相続人です。"
+ },
+ {
+  "id": "so-taijinosouzoku",
+  "name": "胎児の相続",
+  "reading": "たいじのそうぞく",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤰",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokuninnojuni",
+   "so-souzokunin"
+  ],
+  "description": "お母さんの おなかに いる 赤ちゃんは、相続に ついては、もう 生まれた ものと みなされます。ひっかけ: 生まれる 前でも 相続人に なれます。"
+ },
+ {
+  "id": "so-kyyoudaishimainoda",
+  "name": "兄弟姉妹の代襲",
+  "reading": "きょうだいしまいのだいしゅう",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👦",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-daishuusouzoku",
+   "so-kyyoudaishimainoso"
+  ],
+  "description": "兄弟姉妹が 相続人の とき、その 子(おい・めい)は 代襲相続できます。ひっかけ: 子の 場合と ちがい、おい・めいの 子までは 代襲しません。"
+ },
+ {
+  "id": "so-tokubetsuenkosha",
+  "name": "特別縁故者",
+  "reading": "とくべつえんこしゃ",
+  "journey": "sozoku",
+  "category": "相続人",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "sozoku:sozokunin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokunin",
+   "so-hisouzokunin"
+  ],
+  "description": "相続人が いない とき、いっしょに くらした 人や 看病した 人などが、家庭裁判所に 請求して 財産を 分けて もらえる しくみです。ひっかけ: 当然に もらえる わけでは ありません。"
+ },
+ {
+  "id": "so-haiguushatokonosou",
+  "name": "配偶者と子の相続分",
+  "reading": "はいぐうしゃとこのそうぞくぶん",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍕",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-houteisouzokubun",
+   "so-chokkeisonzokunoso"
+  ],
+  "description": "配偶者と 子が 相続人の とき、相続分は 配偶者 2分の1、子 2分の1 です。子が 何人か いれば、2分の1を 人数で 等しく 分けます。"
+ },
+ {
+  "id": "so-chokkeisonzokunoso",
+  "name": "直系尊属の相続分",
+  "reading": "ちょっけいそんぞくのそうぞくぶん",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👴",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-haiguushatokonosou",
+   "so-kyyoudaishimainoso"
+  ],
+  "description": "配偶者と 直系尊属(父母など)が 相続人の とき、配偶者 3分の2、直系尊属 3分の1 です。ひっかけ: 子が いれば 父母は 相続人に なりません。"
+ },
+ {
+  "id": "so-kyyoudaishimainoso",
+  "name": "兄弟姉妹の相続分",
+  "reading": "きょうだいしまいのそうぞくぶん",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👫",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-chokkeisonzokunoso",
+   "so-hanketsukyyoudaino"
+  ],
+  "description": "配偶者と 兄弟姉妹が 相続人の とき、配偶者 4分の3、兄弟姉妹 4分の1 です。ひっかけ: 2分の1や 3分の1と まちがえやすい 組み合わせです。"
+ },
+ {
+  "id": "so-hanketsukyyoudaino",
+  "name": "半血兄弟の相続分",
+  "reading": "はんけつきょうだいのそうぞくぶん",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-kyyoudaishimainoso",
+   "so-houteisouzokubun"
+  ],
+  "description": "父母の 片方だけが 同じ 兄弟姉妹の 相続分は、父母の 両方が 同じ 兄弟姉妹の 2分の1 です。ひっかけ: 子の 相続分には この ちがいは ありません。"
+ },
+ {
+  "id": "so-isanbunkatsunokins",
+  "name": "遺産分割の禁止",
+  "reading": "いさんぶんかつのきんし",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-isanbunkatsu",
+   "so-igon"
+  ],
+  "description": "遺言で、相続開始から 5年を こえない 期間、遺産を 分ける ことを 禁止できます。相続人の 合意でも 5年 以内で 分けない と 決められます。"
+ },
+ {
+  "id": "so-isanbunkatsukyyoug",
+  "name": "遺産分割協議",
+  "reading": "いさんぶんかつきょうぎ",
+  "journey": "sozoku",
+  "category": "相続分・遺産分割",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗣",
+  "mapNode": "sozoku:bun",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-isanbunkatsu",
+   "so-kiyobun"
+  ],
+  "description": "相続人 全員で 話しあって、財産の 分けかたを 決める ことです。まとまらなければ 家庭裁判所に 頼めます。ひっかけ: 多数決では 決められません。"
+ },
+ {
+  "id": "so-jukuryyokikannokis",
+  "name": "熟慮期間の起算点",
+  "reading": "じゅくりょきかんのきさんてん",
+  "journey": "sozoku",
+  "category": "承認・放棄",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "sozoku:shonin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-jukuryyokikan",
+   "so-souzokuhouki"
+  ],
+  "description": "3か月を 数えはじめるのは、自分が 相続人に なったと 知った 時からです。ひっかけ: 相続が はじまった 日からでは ありません。相続人が 未成年者なら、法定代理人が 知った 時からです。"
+ },
+ {
+  "id": "so-kyyoudoudenogentei",
+  "name": "共同での限定承認",
+  "reading": "きょうどうでのげんていしょうにん",
+  "journey": "sozoku",
+  "category": "承認・放棄",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "sozoku:shonin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-genteishounin",
+   "so-souzokuhouki"
+  ],
+  "description": "相続人が 何人も いる とき、限定承認は 全員 そろって でないと できません。ひっかけ: 放棄は ひとりずつ できますが、限定承認は ひとりでは できません。"
+ },
+ {
+  "id": "so-houteitanjunshouni",
+  "name": "法定単純承認",
+  "reading": "ほうていたんじゅんしょうにん",
+  "journey": "sozoku",
+  "category": "承認・放棄",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "sozoku:shonin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-tanjunshounin",
+   "so-jukuryyokikan"
+  ],
+  "description": "財産を 売るなど 処分したり、3か月 以内に 何も しなかったり すると、単純承認した ものと みなされます。ひっかけ: 保存の ための 行為では みなされません。"
+ },
+ {
+  "id": "so-souzokuhoukitodais",
+  "name": "相続放棄と代襲",
+  "reading": "そうぞくほうきとだいしゅう",
+  "journey": "sozoku",
+  "category": "承認・放棄",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "sozoku:shonin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokuhouki",
+   "so-daishuusouzoku"
+  ],
+  "description": "相続を 放棄した 人の 子は、代襲相続しません。放棄した 人は はじめから 相続人で なかった ことに なるからです。ひっかけ: 欠格・廃除なら 代襲が 起きます。"
+ },
+ {
+  "id": "so-souzokuhoukinoshin",
+  "name": "相続放棄の申述",
+  "reading": "そうぞくほうきのしんじゅつ",
+  "journey": "sozoku",
+  "category": "承認・放棄",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "sozoku:shonin",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokuhouki",
+   "so-jukuryyokikan"
+  ],
+  "description": "相続の 放棄は、家庭裁判所に 申述して します。ほかの 相続人に「放棄します」と 伝える だけでは 放棄に なりません。ひっかけ: 書面の 合意では できません。"
+ },
+ {
+  "id": "so-igonnouryyoku",
+  "name": "遺言能力",
+  "reading": "いごんのうりょく",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎂",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-igon",
+   "so-igonnotekkai"
+  ],
+  "description": "遺言は 15歳に なれば できます。親の 同意も 要りません。ひっかけ: 成年(18歳)に なる 前でも、15歳 以上なら ひとりで できます。"
+ },
+ {
+  "id": "so-igonnotekkai",
+  "name": "遺言の撤回",
+  "reading": "いごんのてっかい",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-igonnouryyoku",
+   "so-igon"
+  ],
+  "description": "遺言は いつでも、遺言の 形で 取り消す(撤回する)ことが できます。前の 遺言と ちがう 遺言を あとで 書くと、ちがう 部分は 撤回した ものと みなされます。"
+ },
+ {
+  "id": "so-jihitsushoushoigon2",
+  "name": "自筆証書遺言の保管制度",
+  "reading": "じひつしょうしょいごんのほかんせいど",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏤",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-jihitsushoushoigon",
+   "so-kennin"
+  ],
+  "description": "自分で 書いた 遺言書を 法務局が あずかる しくみです。2020年7月10日に 始まりました。ひっかけ: ここに あずけた 遺言書は 家庭裁判所の 検認が 要りません。"
+ },
+ {
+  "id": "so-kennin",
+  "name": "検認",
+  "reading": "けんにん",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔏",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-jihitsushoushoigon",
+   "so-kouseishoushoigon"
+  ],
+  "description": "遺言書を 家庭裁判所で 確かめて、書きかえを ふせぐ 手続きです。ひっかけ: 公正証書遺言と 法務局に あずけた 遺言書は 要りません。検認は 遺言が 有効かを 決める ものでは ありません。"
+ },
+ {
+  "id": "so-zaisanmokuroku",
+  "name": "財産目録",
+  "reading": "ざいさんもくろく",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📑",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-jihitsushoushoigon",
+   "so-igonsho"
+  ],
+  "description": "財産の 一覧です。自筆証書遺言に つける 目録は、パソコンで 作っても よい ことに なっています。ひっかけ: そのかわり 目録の 毎ページに 署名と 押印が 要ります。"
+ },
+ {
+  "id": "so-igonshikkousha",
+  "name": "遺言執行者",
+  "reading": "いごんしっこうしゃ",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👔",
+  "mapNode": "sozoku:igon",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-igon",
+   "so-izou"
+  ],
+  "description": "遺言の 中身を 実現する ために 動く 人です。遺言で 決めて おけます。遺言執行者が いれば、遺贈の 手続きは この 人だけが します。未成年者は なれません。"
+ },
+ {
+  "id": "so-iryyuubunnowariai",
+  "name": "遺留分の割合",
+  "reading": "いりゅうぶんのわりあい",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥧",
+  "mapNode": "sozoku:iryu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-iryyuubun",
+   "so-kyyoudaishimainoir"
+  ],
+  "description": "遺留分は、直系尊属(父母など)だけが 相続人の とき 3分の1、それ以外は 2分の1 です。ひっかけ: 配偶者が いれば、父母が いても 2分の1です。"
+ },
+ {
+  "id": "so-kyyoudaishimainoir",
+  "name": "兄弟姉妹の遺留分",
+  "reading": "きょうだいしまいのいりゅうぶん",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙅‍♂️",
+  "mapNode": "sozoku:iryu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-iryyuubunnowariai",
+   "so-iryyuubun"
+  ],
+  "description": "兄弟姉妹には 遺留分が ありません。だから 遺言で 全部を ほかの 人に あげると 決めて あれば、兄弟姉妹は お金を 求められません。ひっかけ: 相続人には なれます。"
+ },
+ {
+  "id": "so-iryyuubunnohouki",
+  "name": "遺留分の放棄",
+  "reading": "いりゅうぶんのほうき",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "sozoku:iryu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-iryyuubun",
+   "so-souzokuhouki"
+  ],
+  "description": "相続が はじまる 前の 遺留分の 放棄は、家庭裁判所の 許可が あると 効力が あります。ひっかけ: 相続の 放棄は 前もって できませんが、遺留分の 放棄は できます。"
+ },
+ {
+  "id": "so-iryyuubunshingaiga2",
+  "name": "遺留分侵害額請求の期間",
+  "reading": "いりゅうぶんしんがいがくせいきゅうのきかん",
+  "journey": "sozoku",
+  "category": "遺言・遺留分",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "sozoku:iryu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-iryyuubunshingaiga",
+   "so-iryyuubun"
+  ],
+  "description": "遺留分侵害額請求は、相続開始と 侵害する 贈与や 遺贈を 知った 時から 1年で 時効に なります。知らなくても、相続開始から 10年で できなく なります。"
+ },
+ {
+  "id": "so-haiguushakyyojuuke2",
+  "name": "配偶者居住権の登記",
+  "reading": "はいぐうしゃきょじゅうけんのとうき",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗂",
+  "mapNode": "sozoku:haigu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-haiguushakyyojuuke",
+   "so-souzokutouki"
+  ],
+  "description": "家の 持ち主は、配偶者に 配偶者居住権の 登記を させる 義務が あります。登記を すれば、家を 買った 人などにも 住む 権利を 主張できます。ひっかけ: 住んで いる だけでは 足りません。"
+ },
+ {
+  "id": "so-haiguushakyyojuuke3",
+  "name": "配偶者居住権の存続期間",
+  "reading": "はいぐうしゃきょじゅうけんのそんぞくきかん",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♾",
+  "mapNode": "sozoku:haigu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-haiguushakyyojuuke",
+   "so-haiguushakyyojuuke2"
+  ],
+  "description": "配偶者居住権は、原則 配偶者が 生きて いる 間 ずっと つづきます。遺産分割や 遺言で 期間を 決める ことも できます。ひっかけ: 人に ゆずる ことは できません。"
+ },
+ {
+  "id": "so-mochimodoshimenjon",
+  "name": "持戻し免除の推定",
+  "reading": "もちもどしめんじょのすいてい",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "sozoku:haigu",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-tokubetsujueki",
+   "so-fuufu"
+  ],
+  "description": "結婚して 20年 以上の 夫婦の 一方が、住む 家や その 土地を もう 一方に 贈った とき、特別受益として 計算に もどさない 意思が あったと 推定されます。"
+ },
+ {
+  "id": "so-souzokutoukinokige",
+  "name": "相続登記の期限",
+  "reading": "そうぞくとうきのきげん",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "sozoku:sotoki",
+  "field": "不動産登記法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokutoukinogimu",
+   "so-souzokutoukinokary"
+  ],
+  "description": "相続登記は、相続の 開始と 所有権を 得た ことを 知った 日から 3年 以内に 申請します。ひっかけ: 相続が はじまった 日から ではなく、知った 日から 数えます。"
+ },
+ {
+  "id": "so-souzokutochikokkok",
+  "name": "相続土地国庫帰属制度",
+  "reading": "そうぞくとちこっこきぞくせいど",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏞",
+  "mapNode": "sozoku:sotoki",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokutouki",
+   "so-isan"
+  ],
+  "description": "相続などで 手に入れた、いらない 土地を、法務大臣の 承認を 受けて 国に 引きとって もらう しくみです。10年分の 管理の 費用を もとに した 負担金を 納めます。"
+ },
+ {
+  "id": "so-houteisouzokujouho",
+  "name": "法定相続情報証明",
+  "reading": "ほうていそうぞくじょうほうしょうめい",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗃",
+  "mapNode": "sozoku:sotoki",
+  "field": "不動産登記法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokutouki",
+   "so-souzokunin"
+  ],
+  "description": "相続人が だれかを 1枚に まとめた 一覧図を、登記所が 保管して 写しを 出す しくみです。たくさんの 戸籍の 書類の かわりに 使えて、相続の 手続きが らくに なります。"
+ },
+ {
+  "id": "so-isanbunkatsugonoto",
+  "name": "遺産分割後の登記",
+  "reading": "いさんぶんかつごのとうき",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "sozoku:sotoki",
+  "field": "不動産登記法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokutoukinokige",
+   "so-isanbunkatsu"
+  ],
+  "description": "法定相続分で 登記した あと、遺産分割で それより 多く 手に入れた 人は、分割の 日から 3年 以内に 登記を 申請します。ひっかけ: 分割前の 3年とは べつに 数えます。"
+ },
+ {
+  "id": "so-souzokutoukinokary",
+  "name": "相続登記の過料",
+  "reading": "そうぞくとうきのかりょう",
+  "journey": "sozoku",
+  "category": "配偶者の住まい・相続登記",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚨",
+  "mapNode": "sozoku:sotoki",
+  "field": "不動産登記法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-souzokutoukinokige",
+   "so-souzokuninshinkoku"
+  ],
+  "description": "正当な 理由が ないのに 相続登記を しないと、10万円 以下の 過料に なる ことが あります。ひっかけ: 住所の 変更登記を しない ときの 過料は 5万円 以下で、額が ちがいます。"
+ },
+ {
+  "id": "so-kousakubutsusekini",
+  "name": "工作物責任",
+  "reading": "こうさくぶつせきにん",
+  "journey": "sozoku",
+  "category": "不法行為",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "sozoku:fuho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-fuhoukoui",
+   "so-kyyuushou"
+  ],
+  "description": "へいや 建物など 土地の 工作物に 欠陥が あって 人に 損害を あたえた とき、まず 住んで いる 人などの 占有者が 責任を 負います。ひっかけ: 占有者に 過失が なければ、所有者は 過失が なくても 責任を 負います。"
+ },
+ {
+  "id": "so-fuhoukouinojikou",
+  "name": "不法行為の時効",
+  "reading": "ふほうこういのじこう",
+  "journey": "sozoku",
+  "category": "不法行為",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "sozoku:fuho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-fuhoukoui",
+   "so-kyyoudoufuhoukoui"
+  ],
+  "description": "不法行為の 損害賠償は、損害と 加害者を 知った 時から 3年、不法行為の 時から 20年で 時効に なります。ひっかけ: 人の 生命・身体を 害した ときは 3年が 5年に なります。"
+ },
+ {
+  "id": "so-kyyoudoufuhoukoui",
+  "name": "共同不法行為",
+  "reading": "きょうどうふほうこうい",
+  "journey": "sozoku",
+  "category": "不法行為",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👬",
+  "mapNode": "sozoku:fuho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-fuhoukoui",
+   "so-kyyuushou"
+  ],
+  "description": "何人かで いっしょに 損害を あたえた とき、それぞれが 連帯して 全部の 賠償の 責任を 負います。だれが 損害を 出したか わからない ときも 同じです。"
+ },
+ {
+  "id": "so-kashitsusousai",
+  "name": "過失相殺",
+  "reading": "かしつそうさい",
+  "journey": "sozoku",
+  "category": "不法行為",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖",
+  "mapNode": "sozoku:fuho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-benshou",
+   "so-fuhoukoui"
+  ],
+  "description": "被害を 受けた 人にも 不注意が あった とき、賠償の 額を 減らす ことです。ひっかけ: 不法行為では 裁判所が 考えに 入れる ことが「できる」、債務不履行では 必ず 考えに 入れます。"
+ },
+ {
+  "id": "so-kyyuushou",
+  "name": "求償",
+  "reading": "きゅうしょう",
+  "journey": "sozoku",
+  "category": "不法行為",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "sozoku:fuho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-shiyoushasekinin",
+   "so-rentaisaimu"
+  ],
+  "description": "ほかの 人の ぶんまで 払った 人が、その 人に「あなたの ぶんを 返して」と 求める ことです。連帯債務や 使用者責任で 出てきます。"
+ },
+ {
+  "id": "so-ukeoininnokeiyakuf",
+  "name": "請負人の契約不適合責任",
+  "reading": "うけおいにんのけいやくふてきごうせきにん",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "sozoku:ukeoi",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-ukeoi",
+   "so-rifuomu"
+  ],
+  "description": "請負でも、売買の 契約不適合責任の 決まりが 使われます。注文者は 不適合を 知った 時から 1年 以内に 通知します。ひっかけ: 注文者の 材料や 指図が 原因なら 原則 請求できません。"
+ },
+ {
+  "id": "so-chuumonshanokaijo",
+  "name": "注文者の解除",
+  "reading": "ちゅうもんしゃのかいじょ",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "sozoku:ukeoi",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-ukeoi",
+   "so-ukeoinohoushuu"
+  ],
+  "description": "仕事が 完成する 前なら、注文者は いつでも 損害を 賠償して 請負の 契約を 解除できます。ひっかけ: 請負人の ほうからは、この 決まりでは 解除できません。"
+ },
+ {
+  "id": "so-ininnokaijo",
+  "name": "委任の解除",
+  "reading": "いにんのかいじょ",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "sozoku:ukeoi",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-inin",
+   "so-ininnoshuuryyoujiy"
+  ],
+  "description": "委任は、まかせた 人も まかされた 人も、いつでも 解除できます。ひっかけ: 相手に 不利な 時期の 解除は、やむを 得ない 事情が なければ 損害を 賠償します。"
+ },
+ {
+  "id": "so-ininnoshuuryyoujiy",
+  "name": "委任の終了事由",
+  "reading": "いにんのしゅうりょうじゆう",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔚",
+  "mapNode": "sozoku:ukeoi",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-ininnokaijo",
+   "so-inin"
+  ],
+  "description": "委任は、委任者か 受任者が 亡くなった とき、どちらかが 破産した とき、受任者が 後見開始の 審判を 受けた ときに 終わります。ひっかけ: 委任者の 後見開始では 終わりません。"
+ },
+ {
+  "id": "so-ukeoinohoushuu",
+  "name": "請負の報酬",
+  "reading": "うけおいのほうしゅう",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💵",
+  "mapNode": "sozoku:ukeoi",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-ukeoi",
+   "so-chuumonshanokaijo"
+  ],
+  "description": "請負の 報酬は、できあがった 物の 引渡しと 同時に 払うのが 原則です。ひっかけ: 委任の 報酬と ちがい、仕事の 完成と 結びついて います。"
+ },
+ {
+  "id": "so-kitaku",
+  "name": "寄託",
+  "reading": "きたく",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "sozoku:ukeoi",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-zenkanchuuigimu",
+   "so-inin"
+  ],
+  "description": "物を あずかって もらう 契約です。ただで あずかる 人は、自分の 物と 同じ くらいの 注意で 保管すれば よい ことに なっています。あずけた 人は いつでも 返してと 言えます。"
+ },
+ {
+  "id": "so-kojinnehoshou",
+  "name": "個人根保証",
+  "reading": "こじんねほしょう",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-hoshoukeiyaku",
+   "so-hoshounin"
+  ],
+  "description": "これから 生まれる 借りを まとめて 保証する 根保証を、個人が 引きうける ことです。上限の 額(極度額)を 決めないと 効力が ありません。家賃の 保証も ふくみます。"
+ },
+ {
+  "id": "so-hoshouninhenojouho",
+  "name": "保証人への情報提供",
+  "reading": "ほしょうにんへのじょうほうていきょう",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "ℹ️",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-hoshounin",
+   "so-shutarusaimusha"
+  ],
+  "description": "頼まれて 保証人に なった 人が たずねれば、お金を 貸した 人は、本人が きちんと 払って いるかを 教えなければ なりません。ひっかけ: 頼まれずに なった 保証人には この 決まりは ありません。"
+ },
+ {
+  "id": "so-rentaisaimunozetta",
+  "name": "連帯債務の絶対効",
+  "reading": "れんたいさいむのぜったいこう",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-rentaisaimu",
+   "so-sousai"
+  ],
+  "description": "連帯債務者の ひとりに 起きた ことは、原則 ほかの 人に 影響しません。弁済・相殺・更改・混同だけは 全員に 効きます。ひっかけ: 請求や 免除は 原則 ほかの 人に 効きません。"
+ },
+ {
+  "id": "so-bunbetsunorieki",
+  "name": "分別の利益",
+  "reading": "ぶんべつのりえき",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-hoshounin",
+   "so-rentaihoshounin"
+  ],
+  "description": "ふつうの 保証人が 何人も いる とき、それぞれ 人数で 割った ぶんだけ 責任を 負う ことです。ひっかけ: 連帯保証人には 分別の 利益が ありません。"
+ },
+ {
+  "id": "so-shutarusaimusha",
+  "name": "主たる債務者",
+  "reading": "しゅたるさいむしゃ",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "sozoku:hosho",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-hoshounin",
+   "so-saikokunokoubenken"
+  ],
+  "description": "お金を 借りた 本人など、保証される もとの 借りを 負う 人です。保証人は、本人が 言える 言い分を 使って 支払いを ことわる ことも できます。"
+ },
+ {
+  "id": "so-sousaitekijou",
+  "name": "相殺適状",
+  "reading": "そうさいてきじょう",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "sozoku:sosai",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-sousai",
+   "so-sashiosaetosousai"
+  ],
+  "description": "相殺できる 状態の ことです。おたがいに 同じ 種類の 借りが あり、両方 支払いの 期日が きて いる ことが 必要です。相殺の 効力は この 状態に なった 時に さかのぼります。"
+ },
+ {
+  "id": "so-sashiosaetosousai",
+  "name": "差押えと相殺",
+  "reading": "さしおさえとそうさい",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "sozoku:sosai",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-sousai",
+   "so-sousaitekijou"
+  ],
+  "description": "差し押さえられた 債権でも、差押えの 前に 手に入れた 債権でなら、相殺を 差し押さえた 人に 主張できます。ひっかけ: 差押えの あとに 手に入れた 債権では 原則 できません。"
+ },
+ {
+  "id": "so-fuhoukouisaikentos",
+  "name": "不法行為債権と相殺",
+  "reading": "ふほうこういさいけんとそうさい",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "sozoku:sosai",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-sousai",
+   "so-fuhoukoui"
+  ],
+  "description": "わざと 不法行為を した 加害者は、その 損害賠償の 借りを 相殺で 消せません。人の 生命・身体を 害した ときも 同じです。ひっかけ: 被害者の ほうからは 相殺できます。"
+ },
+ {
+  "id": "so-joutoseigentokuyak",
+  "name": "譲渡制限特約",
+  "reading": "じょうとせいげんとくやく",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "sozoku:sosai",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-saikenjouto",
+   "so-saikenjoutonotaiko"
+  ],
+  "description": "「この 債権を ゆずらない」と いう 特約が あっても、ゆずる こと 自体は 有効です。ひっかけ: 特約を 知って いたか、重い 不注意で 知らなかった 人には、支払いを ことわれます。"
+ },
+ {
+  "id": "so-saikenjoutonotaiko",
+  "name": "債権譲渡の対抗要件",
+  "reading": "さいけんじょうとのたいこうようけん",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "sozoku:sosai",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-saikenjouto",
+   "so-joutoseigentokuyak"
+  ],
+  "description": "債権を ゆずった ことは、ゆずった 人からの 通知か、債務者の 承諾が ないと 主張できません。ひっかけ: 債務者 以外の 人に 主張するには、確定日付の ある 証書で します。"
+ },
+ {
+  "id": "so-saimuhikiuke",
+  "name": "債務引受",
+  "reading": "さいむひきうけ",
+  "journey": "sozoku",
+  "category": "保証・債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "sozoku:sosai",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-rentaisaimu",
+   "so-saikenjouto"
+  ],
+  "description": "ほかの 人が 借りを 引きうける ことです。もとの 人も いっしょに 負う 併存的債務引受と、もとの 人が 借りから 外れる 免責的債務引受が あります。"
+ },
+ {
+  "id": "so-shiyoutaishakunosh",
+  "name": "使用貸借の終了",
+  "reading": "しようたいしゃくのしゅうりょう",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "sozoku:shiyo",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-shiyoutaishaku",
+   "so-inin"
+  ],
+  "description": "使用貸借は、期間を 決めて いれば その 期間の 終わりで 終わります。借りた 人が 亡くなった ときも 終わります。ひっかけ: 貸した 人が 亡くなっても 終わりません。"
+ },
+ {
+  "id": "so-shomenniyoranaizou",
+  "name": "書面によらない贈与",
+  "reading": "しょめんによらないぞうよ",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗯",
+  "mapNode": "sozoku:shiyo",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-zouyo",
+   "so-futantsukizouyo"
+  ],
+  "description": "書面に しない 贈与は、あげる 人も もらう 人も 解除できます。ひっかけ: すでに わたし終えた ところは 解除できません。書面で した 贈与は、この 決まりでは 解除できません。"
+ },
+ {
+  "id": "so-futantsukizouyo",
+  "name": "負担付贈与",
+  "reading": "ふたんつきぞうよ",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "sozoku:shiyo",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-zouyo",
+   "so-shomenniyoranaizou"
+  ],
+  "description": "「家を あげる かわりに 面倒を 見て」の ように、もらう 人にも 義務が ある 贈与です。おたがいに 義務を 負う 契約の 決まりが 使われます。"
+ },
+ {
+  "id": "so-jimukanri",
+  "name": "事務管理",
+  "reading": "じむかんり",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "sozoku:shiyo",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-futouritoku",
+   "so-inin"
+  ],
+  "description": "頼まれて いないのに、ほかの 人の ために その 人の 用事を して あげる ことです。本人の 利益に いちばん 合う やりかたで します。かかった 有益な 費用は 返して もらえます。"
+ },
+ {
+  "id": "so-futouritoku",
+  "name": "不当利得",
+  "reading": "ふとうりとく",
+  "journey": "sozoku",
+  "category": "いろいろな契約",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "sozoku:shiyo",
+  "field": "民法",
+  "ruleset": "権利関係",
+  "relatedTerms": [
+   "so-jimukanri",
+   "so-kyyuushou"
+  ],
+  "description": "法律上の 理由が ないのに、ほかの 人の 損で 得を した 人は、その 得を 返さなければ なりません。ひっかけ: 知って いて 得を した 人は、利息も つけて 返します。"
+ }
+]

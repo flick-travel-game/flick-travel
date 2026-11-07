@@ -1,0 +1,1982 @@
+[
+ {
+  "id": "kc-kenchiku",
+  "name": "建築",
+  "reading": "けんちく",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏗",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukakunin",
+   "kc-kenchikushi"
+  ],
+  "description": "建物を 新しく 建てる ことの ほか、増築・改築・移転も 建築基準法では「建築」と いいます。家を 建てる 前に、法律に 合うかを 確かめる しくみが あります。"
+ },
+ {
+  "id": "kc-douro",
+  "name": "道路",
+  "reading": "どうろ",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛣",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukijunhouno",
+   "kc-setsudougimu"
+  ],
+  "description": "人や 車が 通る 道です。家を 建てる 土地は 道路に 面している ことが 大切で、建築基準法には「道路」の 決まりが あります。"
+ },
+ {
+  "id": "kc-michihaba",
+  "name": "道幅",
+  "reading": "みちはば",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-douro",
+   "kc-fukuinyonmetoru"
+  ],
+  "description": "道路の 横の はばの ことで、法律では「幅員(ふくいん)」と いいます。道幅で 建てられる 建物の 大きさが 変わる ことも あります。"
+ },
+ {
+  "id": "kc-shikichi",
+  "name": "敷地",
+  "reading": "しきち",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟫",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-shikichimenseki",
+   "kc-setsudougimu"
+  ],
+  "description": "建物が 建つ 土地の ことです。家を 買う ときは、敷地が 道路に どう 面しているかを よく 見ます。"
+ },
+ {
+  "id": "kc-ikkodate",
+  "name": "一戸建て",
+  "reading": "いっこだて",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "kenchiku:yoto",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-juutaku",
+   "kc-teisoujuukyyosenyo"
+  ],
+  "description": "1つの 家族が 住む ための 独立した 家です。住宅は 工業専用地域 以外の 用途地域で 建てられます。"
+ },
+ {
+  "id": "kc-nikaidate",
+  "name": "二階建て",
+  "reading": "にかいだて",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "kenchiku:takasa",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukakunin",
+   "kc-takasa"
+  ],
+  "description": "2つの 階が ある 建物です。2025年4月から、2階建ての 木造住宅も 構造などの 審査を 省けない 建物に なりました。"
+ },
+ {
+  "id": "kc-hiatari",
+  "name": "日当たり",
+  "reading": "ひあたり",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "kenchiku:nichiei",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nichieikisei",
+   "kc-kitagawashasenseig"
+  ],
+  "description": "部屋に 日の 光が 入る ことです。まわりの 家の 日当たりを 守る ために、北側斜線制限や 日影規制が あります。"
+ },
+ {
+  "id": "kc-bouka",
+  "name": "防火",
+  "reading": "ぼうか",
+  "journey": "kenchiku",
+  "category": "防火",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧯",
+  "mapNode": "kenchiku:boka",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-boukachiiki",
+   "kc-taikakenchikubutsu"
+  ],
+  "description": "火事が 広がらない ように ふせぐ ことです。建物が 集まる 町では、防火地域などで 燃えにくい 建物に する 決まりが あります。"
+ },
+ {
+  "id": "kc-sekkeizu",
+  "name": "設計図",
+  "reading": "せっけいず",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukakunin",
+   "kc-kenchikushi"
+  ],
+  "description": "建物の 形・大きさ・つくりを 示す 図です。建築確認では、設計図などの 書類で 法律に 合うかを 確かめます。"
+ },
+ {
+  "id": "kc-kenchikushi",
+  "name": "建築士",
+  "reading": "けんちくし",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👷",
+  "mapNode": "kenchiku:kakunin",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-sekkeizu",
+   "kc-kenchikukakunin"
+  ],
+  "description": "建物の 設計や 工事監理を する 国家資格の 人です。家づくりで 法律に 合う 図面を つくる 大切な 役目です。"
+ },
+ {
+  "id": "kc-mado",
+  "name": "窓",
+  "reading": "まど",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-saikou",
+   "kc-kanki"
+  ],
+  "description": "光と 風を 入れる 開口部です。住宅の 居室には、光を 入れる 窓の 大きさ(採光)の 決まりが あります。"
+ },
+ {
+  "id": "kc-kaidan",
+  "name": "階段",
+  "reading": "かいだん",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-tesurinosecchi",
+   "kc-tantaikitei"
+  ],
+  "description": "上の 階へ 上がる ための つくりです。安全の ために、階段には 手すりを つける 決まりが あります。"
+ },
+ {
+  "id": "kc-yane",
+  "name": "屋根",
+  "reading": "やね",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "kenchiku:shasen",
+  "field": "土地・建物",
+  "ruleset": "免除科目",
+  "relatedTerms": [
+   "kc-shasenseigen",
+   "kc-boukachiiki"
+  ],
+  "description": "建物の いちばん 上の おおいです。斜線制限で 屋根が ななめに 切られた 形の 建物が 町で 見られます。"
+ },
+ {
+  "id": "kc-takasa",
+  "name": "高さ",
+  "reading": "たかさ",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kenchiku:takasa",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-zettaitakasanoseig",
+   "kc-shasenseigen"
+  ],
+  "description": "地面から 建物の 上までの 長さです。低い 住宅の 地域では 高さの 上限が 決められています。"
+ },
+ {
+  "id": "kc-niwa",
+  "name": "庭",
+  "reading": "にわ",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "kenchiku:kenpei",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenpeiritsu",
+   "kc-shikichimenseki"
+  ],
+  "description": "建物の まわりの 空いている 土地です。建ぺい率の 決まりで、敷地の 中に 空き地が のこる ように なっています。"
+ },
+ {
+  "id": "kc-yukamenseki",
+  "name": "床面積",
+  "reading": "ゆかめんせき",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🟦",
+  "mapNode": "kenchiku:yoseki",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nobemenseki",
+   "kc-yousekiritsu"
+  ],
+  "description": "建物の 各階の 床の 広さです。各階の 床面積を 足すと 延べ面積に なり、容積率の 計算に 使います。"
+ },
+ {
+  "id": "kc-shikichimenseki",
+  "name": "敷地面積",
+  "reading": "しきちめんせき",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kenchiku:kenpei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenpeiritsu",
+   "kc-yousekiritsu"
+  ],
+  "description": "敷地を 真上から 見た 広さです。2項道路の 中心から 2mの 線までの 部分は、敷地面積に ふくめません。"
+ },
+ {
+  "id": "kc-kenchikumenseki",
+  "name": "建築面積",
+  "reading": "けんちくめんせき",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "kenchiku:kenpei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenpeiritsu",
+   "kc-shikichimenseki"
+  ],
+  "description": "建物を 真上から 見た ときの 広さです。建ぺい率は、この 建築面積を 敷地面積で わって 出します。"
+ },
+ {
+  "id": "kc-juutaku",
+  "name": "住宅",
+  "reading": "じゅうたく",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏡",
+  "mapNode": "kenchiku:yoto",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-ikkodate",
+   "kc-juutakugatateraren"
+  ],
+  "description": "人が 住む ための 建物です。用途地域の 決まりで、住宅は 工業専用地域では 建てられません。"
+ },
+ {
+  "id": "kc-hikage",
+  "name": "日影",
+  "reading": "ひかげ",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌥",
+  "mapNode": "kenchiku:nichiei",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nichieikisei",
+   "kc-toujibi"
+  ],
+  "description": "建物が つくる かげです。かげが まわりの 家に 長い 時間 かからない ように、日影規制が あります。"
+ },
+ {
+  "id": "kc-kenchikukijunhouno",
+  "name": "建築基準法の道路",
+  "reading": "けんちくきじゅんほうのどうろ",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛣",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-fukuinyonmetoru",
+   "kc-nikoudouro"
+  ],
+  "description": "建築基準法で「道路」と いうのは、原則 幅員 4m以上の 道路法の 道路などです。道が あっても 法律の 道路でなければ 家は 建てにくく なります。"
+ },
+ {
+  "id": "kc-setsudougimu",
+  "name": "接道義務",
+  "reading": "せつどうぎむ",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukijunhouno",
+   "kc-setsudougimunoreig"
+  ],
+  "description": "建物の 敷地は、建築基準法の 道路に 2m以上 接しなければ なりません。火事や 急病の とき 人や 車が 出入りできる ように する 決まりです。"
+ },
+ {
+  "id": "kc-nikoudouro",
+  "name": "2項道路",
+  "reading": "にこうどうろ",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛤",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-settobakku",
+   "kc-kenchikukijunhouno"
+  ],
+  "description": "幅員 4m未満でも、法律が 使われた ときに 建物が 立ちならんでいて 特定行政庁が 指定した 道は、道路と みなされます。42条2項の 道路なので こう よびます。"
+ },
+ {
+  "id": "kc-youtoseigen",
+  "name": "用途制限",
+  "reading": "ようとせいげん",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "kenchiku:yoto",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-juutakugatateraren",
+   "kc-youtoseigennotokur"
+  ],
+  "description": "用途地域ごとに 建てられる 建物・建てられない 建物を 決める 決まりです。住まいの 近くに 大きな 工場が 建たない ように します。"
+ },
+ {
+  "id": "kc-kenpeiritsu",
+  "name": "建ぺい率",
+  "reading": "けんぺいりつ",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "kenchiku:kenpei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikumenseki",
+   "kc-kenpeiritsunokanwa"
+  ],
+  "description": "建築面積の 敷地面積に 対する 割合です。商業地域は 10分の8、ほかの 地域は 都市計画で 決めた 数字が 上限です。"
+ },
+ {
+  "id": "kc-kenpeiritsunokanwa",
+  "name": "建ぺい率の緩和",
+  "reading": "けんぺいりつのかんわ",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "kenchiku:kenpei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kadochinokenpeirit",
+   "kc-boukachiikinainota"
+  ],
+  "description": "特定行政庁が 指定した 角地や、防火地域の 耐火建築物などでは 建ぺい率が 10分の1 ふえます。両方 そろえば 10分の2です。"
+ },
+ {
+  "id": "kc-yousekiritsu",
+  "name": "容積率",
+  "reading": "ようせきりつ",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kenchiku:yoseki",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nobemenseki",
+   "kc-zenmendouronofukui"
+  ],
+  "description": "延べ面積の 敷地面積に 対する 割合です。建物の 床の 合計の 大きさを おさえて、町の 道路などが こまない ように します。"
+ },
+ {
+  "id": "kc-nobemenseki",
+  "name": "延べ面積",
+  "reading": "のべめんせき",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "kenchiku:yoseki",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-yukamenseki",
+   "kc-yousekiritsu"
+  ],
+  "description": "各階の 床面積を ぜんぶ 足した 広さです。容積率を 計算する ときに 使います。"
+ },
+ {
+  "id": "kc-zettaitakasanoseig",
+  "name": "絶対高さの制限",
+  "reading": "ぜったいたかさのせいげん",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kenchiku:takasa",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-teisoujuukyyonotak",
+   "kc-takasa"
+  ],
+  "description": "低層住居専用地域と 田園住居地域で、建物の 高さを 10m か 12m までと する 決まりです。どちらに するかは 都市計画で 決めます。"
+ },
+ {
+  "id": "kc-shasenseigen",
+  "name": "斜線制限",
+  "reading": "しゃせんせいげん",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kenchiku:shasen",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-douroshasenseigen",
+   "kc-kitagawashasenseig"
+  ],
+  "description": "ななめの 線を 引いて、その 線より 上に 建物が 出ない ように する 高さの 決まりです。道路斜線・隣地斜線・北側斜線の 3つが あります。"
+ },
+ {
+  "id": "kc-douroshasenseigen",
+  "name": "道路斜線制限",
+  "reading": "どうろしゃせんせいげん",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛣",
+  "mapNode": "kenchiku:shasen",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-douroshasennotekiy",
+   "kc-shasenseigen"
+  ],
+  "description": "前の 道路の 反対側の 境界線から ななめの 線で 高さを おさえる 決まりです。用途地域の どの 地域にも かかります。"
+ },
+ {
+  "id": "kc-rinchishasenseigen",
+  "name": "隣地斜線制限",
+  "reading": "りんちしゃせんせいげん",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "kenchiku:shasen",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-rinchishasengateki",
+   "kc-shasenseigen"
+  ],
+  "description": "となりの 土地の 日当たりや 風通しの ため、隣地境界線から ななめの 線で 高さを おさえます。20m か 31mを こえる 部分から かかります。"
+ },
+ {
+  "id": "kc-kitagawashasenseig",
+  "name": "北側斜線制限",
+  "reading": "きたがわしゃせんせいげん",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kenchiku:shasen",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kitagawashasennote",
+   "kc-hiatari"
+  ],
+  "description": "北どなりの 家の 日当たりを 守る ため、真北の 方向に ななめの 線で 高さを おさえる 決まりです。低層住居専用地域などで かかります。"
+ },
+ {
+  "id": "kc-nichieikisei",
+  "name": "日影規制",
+  "reading": "にちえいきせい",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌥",
+  "mapNode": "kenchiku:nichiei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-toujibi",
+   "kc-nichieikiseinotais"
+  ],
+  "description": "建物の かげが まわりに 長く かからない ように 高さを おさえる 決まりです。地方公共団体の 条例で 指定した 区域だけに かかります。"
+ },
+ {
+  "id": "kc-toujibi",
+  "name": "冬至日",
+  "reading": "とうじび",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "kenchiku:nichiei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nichieikisei",
+   "kc-hikage"
+  ],
+  "description": "1年で 昼が いちばん 短い 日です。日影規制は、冬至日の 午前8時から 午後4時(北海道は 9時から 3時)の かげで 見ます。"
+ },
+ {
+  "id": "kc-boukachiiki",
+  "name": "防火地域",
+  "reading": "ぼうかちいき",
+  "journey": "kenchiku",
+  "category": "防火",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "kenchiku:boka",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-junboukachiiki",
+   "kc-boukachiikinainoke"
+  ],
+  "description": "町の 中心など、火事を ふせぐ ため とくに きびしい 決まりが かかる 地域です。都市計画で 定めます。"
+ },
+ {
+  "id": "kc-junboukachiiki",
+  "name": "準防火地域",
+  "reading": "じゅんぼうかちいき",
+  "journey": "kenchiku",
+  "category": "防火",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧯",
+  "mapNode": "kenchiku:boka",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-boukachiiki",
+   "kc-junboukachiikinain"
+  ],
+  "description": "防火地域の まわりなどで、防火地域の 次に きびしい 決まりが かかる 地域です。大きさや 階数で 求められる つくりが 変わります。"
+ },
+ {
+  "id": "kc-taikakenchikubutsu",
+  "name": "耐火建築物",
+  "reading": "たいかけんちくぶつ",
+  "journey": "kenchiku",
+  "category": "防火",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "kenchiku:boka",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-boukachiikinainoke",
+   "kc-boukachiiki"
+  ],
+  "description": "火事に なっても 燃えにくく、こわれにくい つくりの 建物です。防火地域の 大きな 建物などに 求められます。"
+ },
+ {
+  "id": "kc-kenchikukakunin",
+  "name": "建築確認",
+  "reading": "けんちくかくにん",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kakuninzumishou",
+   "kc-kenchikushuji"
+  ],
+  "description": "工事の 前に、建物の 計画が 法律に 合うかを 建築主事などに 確かめて もらう しくみです。確認済証を もらうまで 工事を はじめられません。"
+ },
+ {
+  "id": "kc-kenchikushuji",
+  "name": "建築主事",
+  "reading": "けんちくしゅじ",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukakunin",
+   "kc-shiteikakuninkensa"
+  ],
+  "description": "建築確認や 検査を する 市町村や 都道府県の 職員です。民間の 指定確認検査機関も 確認を できます。"
+ },
+ {
+  "id": "kc-kanryyoukensa",
+  "name": "完了検査",
+  "reading": "かんりょうけんさ",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-karishiyounonintei",
+   "kc-tokuteikoutei"
+  ],
+  "description": "工事が 終わったら、建築主は 完了した 日から 4日以内に とどく ように 検査を 申請します。合格すると 検査済証が もらえます。"
+ },
+ {
+  "id": "kc-kakuninzumishou",
+  "name": "確認済証",
+  "reading": "かくにんずみしょう",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukakunin",
+   "kc-kanryyoukensa"
+  ],
+  "description": "建築確認が すんだ ことを 示す 書面です。これを 受けとった 後でなければ 工事を はじめられません。"
+ },
+ {
+  "id": "kc-tantaikitei",
+  "name": "単体規定",
+  "reading": "たんたいきてい",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-shuudankitei",
+   "kc-saikou"
+  ],
+  "description": "建物 ひとつずつの 安全や 衛生の 決まりで、全国 どこでも かかります。採光・換気・手すり などが あります。"
+ },
+ {
+  "id": "kc-shuudankitei",
+  "name": "集団規定",
+  "reading": "しゅうだんきてい",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-tantaikitei",
+   "kc-youtoseigen"
+  ],
+  "description": "町の 中で 建物どうしが 調和する ための 決まりです。道路・用途制限・建ぺい率・容積率 などで、原則 都市計画区域と 準都市計画区域の 中で かかります。"
+ },
+ {
+  "id": "kc-saikou",
+  "name": "採光",
+  "reading": "さいこう",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌞",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kyyoshitsunosaikou",
+   "kc-mado"
+  ],
+  "description": "居室に 日の 光を 入れる ことです。窓などの 大きさが 床面積の 一定の 割合 以上に なる よう 決められています。"
+ },
+ {
+  "id": "kc-kanki",
+  "name": "換気",
+  "reading": "かんき",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-saikou",
+   "kc-shikkuhausutaisaku"
+  ],
+  "description": "居室の 空気を 入れかえる ことです。換気に 有効な 窓などは 床面積の 20分の1 以上が 必要です(換気設備が あれば 別)。"
+ },
+ {
+  "id": "kc-teisoujuukyyosenyo",
+  "name": "低層住居専用地域",
+  "reading": "ていそうじゅうきょせんようちいき",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏡",
+  "mapNode": "kenchiku:teiso",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-teisoujuukyyonotak",
+   "kc-tenpokenyoujuutaku"
+  ],
+  "description": "第一種・第二種低層住居専用地域を まとめた よび名です。低い 住宅の 静かな 環境を 守る ため、建物の 用途も 高さも きびしく 決められています。"
+ },
+ {
+  "id": "kc-gaihekinokoutaikyy",
+  "name": "外壁の後退距離",
+  "reading": "がいへきのこうたいきょり",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kenchiku:teiso",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-teisoujuukyyosenyo",
+   "kc-zettaitakasanoseig"
+  ],
+  "description": "低層住居専用地域と 田園住居地域で、外壁を 敷地の 境界線から はなす 距離です。都市計画で 定める ときは 1.5m か 1mです。"
+ },
+ {
+  "id": "kc-kenchikukyyoutei",
+  "name": "建築協定",
+  "reading": "けんちくきょうてい",
+  "journey": "kenchiku",
+  "category": "協定・そのほか",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "kenchiku:kyotei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukyyouteino",
+   "kc-kenchikukyyouteino2"
+  ],
+  "description": "土地の 所有者などが、建物の 用途・形・色 などに ついて 自分たちで 結ぶ 約束です。市町村の 条例で 定めた 区域で 結べます。"
+ },
+ {
+  "id": "kc-youtohenkou",
+  "name": "用途変更",
+  "reading": "ようとへんこう",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kenchiku:kyotei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-youtohenkounokakun",
+   "kc-kenchikukakunin"
+  ],
+  "description": "建物の 使いみちを 変える ことです。たとえば 事務所を ホテルに 変える ときは、建築確認が 要る ことが あります。"
+ },
+ {
+  "id": "kc-settobakku",
+  "name": "セットバック",
+  "reading": "せっとばっく",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nikoudouro",
+   "kc-shikichimenseki"
+  ],
+  "description": "2項道路に 面した 土地で、道路の 中心線から 2mの 線まで 下がって 建てる ことです。下がった 部分は 敷地面積に 入らず、塀なども 置けません。"
+ },
+ {
+  "id": "kc-ichishiteidouro",
+  "name": "位置指定道路",
+  "reading": "いちしていどうろ",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukijunhouno",
+   "kc-setsudougimu"
+  ],
+  "description": "土地を 分けて 家を 建てる ために つくった 道で、特定行政庁から 位置の 指定を 受けた ものです。指定を 受ければ 建築基準法の 道路に なります。"
+ },
+ {
+  "id": "kc-setsudougimunoreig",
+  "name": "接道義務の例外",
+  "reading": "せつどうぎむのれいがい",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔓",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-setsudougimu",
+   "kc-kenchikushinsakai"
+  ],
+  "description": "まわりに 広い 空き地が ある 建物などで、特定行政庁が 建築審査会の 同意を 得て 許可すれば、2m 接していなくても 建てられます。「許可」と「同意」の 両方を 見ます。"
+ },
+ {
+  "id": "kc-douronainokenchiku",
+  "name": "道路内の建築制限",
+  "reading": "どうろないのけんちくせいげん",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-douro",
+   "kc-setsudougimu"
+  ],
+  "description": "建物や 擁壁は、原則 道路の 中や 道路に はみ出して つくれません。地下の 建物や、許可を 受けた 公衆便所・巡査派出所 などは 例外です。"
+ },
+ {
+  "id": "kc-fukuinyonmetoru",
+  "name": "幅員4メートル",
+  "reading": "ふくいんよんめーとる",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukijunhouno",
+   "kc-nikoudouro"
+  ],
+  "description": "建築基準法の 道路の 基本の はばです。特定行政庁が 指定する 区域では 6mに なります。「4m以上」で 4mちょうども ふくみます。"
+ },
+ {
+  "id": "kc-joureiniyorusetsud",
+  "name": "条例による接道の付加",
+  "reading": "じょうれいによるせつどうのふか",
+  "journey": "kenchiku",
+  "category": "道路と接道",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "kenchiku:doro",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-setsudougimu",
+   "kc-setsudougimunoreig"
+  ],
+  "description": "特殊建築物・3階以上・延べ面積 1,000㎡超 などの 建物は、地方公共団体が 条例で 接道の 決まりを きびしく できます。ゆるめる 条例では ありません。"
+ },
+ {
+  "id": "kc-futatsunoyoutochii",
+  "name": "二つの用途地域にまたがる敷地",
+  "reading": "ふたつのようとちいきにまたがるしきち",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kenchiku:yoto",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-youtoseigen",
+   "kc-kenpeiritsunokajuu"
+  ],
+  "description": "敷地が 2つの 用途地域に またがる ときは、敷地の 過半が ある 地域の 用途制限が 全体に かかります。建ぺい率・容積率は 過半では なく 加重平均です。"
+ },
+ {
+  "id": "kc-youtoseigennotokur",
+  "name": "用途制限の特例許可",
+  "reading": "ようとせいげんのとくれいきょか",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗝",
+  "mapNode": "kenchiku:yoto",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-youtoseigen",
+   "kc-kenchikushinsakai"
+  ],
+  "description": "用途地域で ふつうは 建てられない 建物も、特定行政庁が 許可すれば 建てられます。その 前に 公開で 意見を 聞き、建築審査会の 同意を 得ます。"
+ },
+ {
+  "id": "kc-oroshiurishijounoi",
+  "name": "卸売市場の位置",
+  "reading": "おろしうりしじょうのいち",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "kenchiku:yoto",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-youtoseigen",
+   "kc-futatsunoyoutochii"
+  ],
+  "description": "都市計画区域の 中で 卸売市場・火葬場・ごみ焼却場などを 建てるには、原則 都市計画で 敷地の 位置が 決まっている 必要が あります。"
+ },
+ {
+  "id": "kc-juutakugatateraren",
+  "name": "住宅が建てられない地域",
+  "reading": "じゅうたくがたてられないちいき",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "kenchiku:yoto",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-juutaku",
+   "kc-youtoseigen"
+  ],
+  "description": "住宅が 建てられない 用途地域は 工業専用地域だけです。工業地域には 住宅を 建てられる ので、取りちがえに 気を つけます。"
+ },
+ {
+  "id": "kc-daikibonatenponose",
+  "name": "大規模な店舗の制限",
+  "reading": "だいきぼなてんぽのせいげん",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "kenchiku:yoto",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-youtoseigen",
+   "kc-juutakugatateraren"
+  ],
+  "description": "店舗などで 床面積が 1万㎡を こえる 大きな 建物は、近隣商業地域・商業地域・準工業地域でしか 建てられません。工業地域では 建てられません。"
+ },
+ {
+  "id": "kc-daigakunokenchikus",
+  "name": "大学の建築制限",
+  "reading": "だいがくのけんちくせいげん",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "kenchiku:yoto",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-youtoseigen",
+   "kc-teisoujuukyyosenyo"
+  ],
+  "description": "大学は 低層住居専用地域と 田園住居地域では 建てられませんが、第一種中高層住居専用地域なら 建てられます。小中学校・高校は 低層住居でも 建てられます。"
+ },
+ {
+  "id": "kc-kadochinokenpeirit",
+  "name": "角地の建ぺい率緩和",
+  "reading": "かどちのけんぺいりつかんわ",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kenchiku:kenpei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenpeiritsunokanwa",
+   "kc-kenpeiritsu"
+  ],
+  "description": "特定行政庁が 指定した 角地に ある 建物は、建ぺい率が 10分の1 ふえます。ただの 角地では なく「指定」が 要る ことに 気を つけます。"
+ },
+ {
+  "id": "kc-boukachiikinainota",
+  "name": "防火地域内の耐火建築物の緩和",
+  "reading": "ぼうかちいきないのたいかけんちくぶつのかんわ",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "kenchiku:kenpei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenpeiritsunokanwa",
+   "kc-kenpeiritsunoseige"
+  ],
+  "description": "防火地域の 耐火建築物など、準防火地域の 耐火建築物など・準耐火建築物などは 建ぺい率が 10分の1 ふえます。準防火地域では 準耐火でも よい ところが ひっかけです。"
+ },
+ {
+  "id": "kc-kenpeiritsunoseige",
+  "name": "建ぺい率の制限がない場合",
+  "reading": "けんぺいりつのせいげんがないばあい",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♾",
+  "mapNode": "kenchiku:kenpei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-boukachiikinainota",
+   "kc-kenpeiritsu"
+  ],
+  "description": "建ぺい率が 10分の8の 地域で 防火地域に ある 耐火建築物などは、建ぺい率の 制限が ありません。巡査派出所・公衆便所なども 制限なしです。"
+ },
+ {
+  "id": "kc-kenpeiritsunokajuu",
+  "name": "建ぺい率の加重平均",
+  "reading": "けんぺいりつのかじゅうへいきん",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kenchiku:kenpei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-yousekiritsunokaju",
+   "kc-futatsunoyoutochii"
+  ],
+  "description": "敷地が 建ぺい率の ちがう 地域に またがる ときは、それぞれの 面積の 割合で 加重平均して 計算します。過半の 地域の 数字では ありません。"
+ },
+ {
+  "id": "kc-shikichimensekinos",
+  "name": "敷地面積の最低限度",
+  "reading": "しきちめんせきのさいていげんど",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔳",
+  "mapNode": "kenchiku:kenpei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-shikichimenseki",
+   "kc-kenpeiritsu"
+  ],
+  "description": "用途地域の 都市計画で、敷地面積の 最低限度を 決められます。小さな 敷地に 分けすぎない ための ものです。決める ときは 200㎡を こえては いけません。"
+ },
+ {
+  "id": "kc-zenmendouronofukui",
+  "name": "前面道路の幅員による制限",
+  "reading": "ぜんめんどうろのふくいんによるせいげん",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛣",
+  "mapNode": "kenchiku:yoseki",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-juukyyokeinojousuu",
+   "kc-yousekiritsu"
+  ],
+  "description": "前の 道路の 幅員が 12m未満の ときは、幅員に 決まった 数を かけた 容積率と 都市計画の 容積率の 小さい ほうが 上限に なります。2つ あれば 広い ほうの 道路で 見ます。"
+ },
+ {
+  "id": "kc-juukyyokeinojousuu",
+  "name": "住居系の乗数",
+  "reading": "じゅうきょけいのじょうすう",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "kenchiku:yoseki",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-zenmendouronofukui",
+   "kc-yousekiritsu"
+  ],
+  "description": "前面道路が 12m未満の とき、住居系の 地域では 原則 幅員に 10分の4を かけます。ほかの 地域は 原則 10分の6です。住居系か どうかを 先に 見ます。"
+ },
+ {
+  "id": "kc-yousekiritsunisann",
+  "name": "容積率に算入しない部分",
+  "reading": "ようせきりつにさんにゅうしないぶぶん",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛗",
+  "mapNode": "kenchiku:yoseki",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-yousekiritsu",
+   "kc-chikashitsunoyouse"
+  ],
+  "description": "エレベーターの 昇降路や、共同住宅・老人ホームなどの 共用の 廊下・階段は、容積率の 延べ面積に 入れません。共用部分の 決まりなので 一戸建ての 中の 階段は べつです。"
+ },
+ {
+  "id": "kc-chikashitsunoyouse",
+  "name": "地下室の容積率緩和",
+  "reading": "ちかしつのようせきりつかんわ",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "kenchiku:yoseki",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-yousekiritsunisann",
+   "kc-yousekiritsu"
+  ],
+  "description": "天井が 地盤面から 1m以下の 地階に ある 住宅などの 部分は、住宅などの 床面積の 合計の 3分の1までは 延べ面積に 入れません。"
+ },
+ {
+  "id": "kc-yousekiritsunokaju",
+  "name": "容積率の加重平均",
+  "reading": "ようせきりつのかじゅうへいきん",
+  "journey": "kenchiku",
+  "category": "建ぺい率・容積率",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kenchiku:yoseki",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenpeiritsunokajuu",
+   "kc-yousekiritsu"
+  ],
+  "description": "敷地が 容積率の ちがう 地域に またがる ときも、面積の 割合で 加重平均します。用途制限の「過半」の 決まりと まちがえない ように します。"
+ },
+ {
+  "id": "kc-hiraisetsubi",
+  "name": "避雷設備",
+  "reading": "ひらいせつび",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kenchiku:takasa",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-hijouyounoshoukouk",
+   "kc-takasa"
+  ],
+  "description": "かみなりから 建物を 守る 設備です。高さが 20mを こえる 建物には つけなければ なりません。"
+ },
+ {
+  "id": "kc-hijouyounoshoukouk",
+  "name": "非常用の昇降機",
+  "reading": "ひじょうようのしょうこうき",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛗",
+  "mapNode": "kenchiku:takasa",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-hiraisetsubi",
+   "kc-takasa"
+  ],
+  "description": "火事などの とき 消防の 人が 使う エレベーターです。高さが 31mを こえる 建物には 原則 必要です。20mの 避雷設備と 数字を 取りちがえない ように します。"
+ },
+ {
+  "id": "kc-koudochikunotakasa",
+  "name": "高度地区の高さ",
+  "reading": "こうどちくのたかさ",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "kenchiku:takasa",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-zettaitakasanoseig",
+   "kc-takasa"
+  ],
+  "description": "高度地区は 用途地域の 中で、建物の 高さの 最高限度 または 最低限度を 都市計画で 決める 地区です。建物は その 高さに 合わせます。"
+ },
+ {
+  "id": "kc-kitagawashasennote",
+  "name": "北側斜線の適用地域",
+  "reading": "きたがわしゃせんのてきようちいき",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kenchiku:shasen",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kitagawashasenseig",
+   "kc-rinchishasengateki"
+  ],
+  "description": "北側斜線は 低層住居専用地域・田園住居地域と 中高層住居専用地域だけに かかります。中高層でも 日影規制が かかる ところは のぞきます。"
+ },
+ {
+  "id": "kc-rinchishasengateki",
+  "name": "隣地斜線が適用されない地域",
+  "reading": "りんちしゃせんがてきようされないちいき",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "kenchiku:shasen",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-rinchishasenseigen",
+   "kc-zettaitakasanoseig"
+  ],
+  "description": "第一種・第二種低層住居専用地域と 田園住居地域には 隣地斜線制限が かかりません。10mか 12mの 高さの 上限が あるからです。"
+ },
+ {
+  "id": "kc-douroshasennotekiy",
+  "name": "道路斜線の適用距離",
+  "reading": "どうろしゃせんのてきようきょり",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kenchiku:shasen",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-douroshasenseigen",
+   "kc-tenkuuritsu"
+  ],
+  "description": "道路斜線は、道路の 反対側の 境界線から 一定の 距離までの 範囲だけに かかります。距離は 地域と 容積率で 20mから 50mまで 変わります。"
+ },
+ {
+  "id": "kc-tenkuuritsu",
+  "name": "天空率",
+  "reading": "てんくうりつ",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌌",
+  "mapNode": "kenchiku:shasen",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-shasenseigen",
+   "kc-douroshasennotekiy"
+  ],
+  "description": "ある 位置から 空が 見える 割合です。斜線制限と 同じ くらい 採光・通風を 確保できる 建物は、斜線制限が かかりません。"
+ },
+ {
+  "id": "kc-nichieikiseinotais",
+  "name": "日影規制の対象区域",
+  "reading": "にちえいきせいのたいしょうくいき",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "kenchiku:nichiei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nichieikisei",
+   "kc-kuikigainokenchiku"
+  ],
+  "description": "日影規制を かけられるのは 住居系・近隣商業・準工業 地域などで、商業地域・工業地域・工業専用地域は 対象外です。条例で 指定して はじめて かかります。"
+ },
+ {
+  "id": "kc-nichieikiseinotais2",
+  "name": "日影規制の対象建築物",
+  "reading": "にちえいきせいのたいしょうけんちくぶつ",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kenchiku:nichiei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nichieikiseinotais",
+   "kc-sokuteimennotakasa"
+  ],
+  "description": "低層住居専用地域などでは 軒の 高さ 7m超 か 地階を 除く 3階 以上、中高層住居専用地域などでは 高さ 10m超の 建物が 対象です。"
+ },
+ {
+  "id": "kc-sokuteimennotakasa",
+  "name": "測定面の高さ",
+  "reading": "そくていめんのたかさ",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kenchiku:nichiei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nichieikiseinotais2",
+   "kc-nichieikisei"
+  ],
+  "description": "日影を はかる 水平面の 高さで、平均地盤面から はかります。低層住居専用地域などは 1.5m、ほかの 地域は 4m か 6.5mです。"
+ },
+ {
+  "id": "kc-kuikigainokenchiku",
+  "name": "区域外の建築物への日影規制",
+  "reading": "くいきがいのけんちくぶつへのにちえいきせい",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌓",
+  "mapNode": "kenchiku:nichiei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-nichieikiseinotais",
+   "kc-nichieikisei"
+  ],
+  "description": "対象区域の 外でも、高さが 10mを こえ、冬至日に 区域の 中へ かげを 落とす 建物は、区域の 中に ある ものと して 日影規制が かかります。"
+ },
+ {
+  "id": "kc-boukachiikinainoke",
+  "name": "防火地域内の建築物",
+  "reading": "ぼうかちいきないのけんちくぶつ",
+  "journey": "kenchiku",
+  "category": "防火",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kenchiku:boka",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-boukachiiki",
+   "kc-taikakenchikubutsu"
+  ],
+  "description": "防火地域では、階数 3以上 か 延べ面積 100㎡超の 建物は 耐火建築物 なみの つくりが 必要です。小さな 建物にも 防火の 決まりが あります。"
+ },
+ {
+  "id": "kc-junboukachiikinain",
+  "name": "準防火地域内の建築物",
+  "reading": "じゅんぼうかちいきないのけんちくぶつ",
+  "journey": "kenchiku",
+  "category": "防火",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "kenchiku:boka",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-junboukachiiki",
+   "kc-boukachiikinainoke"
+  ],
+  "description": "準防火地域では、地階を 除く 階数 4以上 か 延べ面積 1,500㎡超の 建物は 耐火建築物 なみの つくりが 必要です。防火地域の 3以上・100㎡と くらべて おぼえます。"
+ },
+ {
+  "id": "kc-boukaheki",
+  "name": "防火壁",
+  "reading": "ぼうかへき",
+  "journey": "kenchiku",
+  "category": "防火",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "kenchiku:boka",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-taikakenchikubutsu",
+   "kc-bouka"
+  ],
+  "description": "延べ面積が 1,000㎡を こえる 建物は、防火壁などで 区切り、それぞれ 1,000㎡ 以内に します。耐火建築物・準耐火建築物は この 決まりの 外です。"
+ },
+ {
+  "id": "kc-boukachiikitojunbo",
+  "name": "防火地域と準防火地域にまたがる",
+  "reading": "ぼうかちいきとじゅんぼうかちいきにまたがる",
+  "journey": "kenchiku",
+  "category": "防火",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kenchiku:boka",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-boukachiiki",
+   "kc-junboukachiiki"
+  ],
+  "description": "建物が 防火地域と 準防火地域に またがる ときは、全体に きびしい 防火地域の 決まりが かかります。防火壁で 区切った 外の 部分は べつです。"
+ },
+ {
+  "id": "kc-gaihekinokoukoubu",
+  "name": "外壁の開口部",
+  "reading": "がいへきのこうこうぶ",
+  "journey": "kenchiku",
+  "category": "防火",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "kenchiku:boka",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-junboukachiiki",
+   "kc-boukachiiki"
+  ],
+  "description": "防火地域・準防火地域の 建物は、外壁の 開口部で 延焼の おそれの ある 部分に 防火設備を つけます。外壁が 耐火構造なら 隣地境界線に 接して つくれます。"
+ },
+ {
+  "id": "kc-daikibokenchikubut",
+  "name": "大規模建築物の確認",
+  "reading": "だいきぼけんちくぶつのかくにん",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏟",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukakunin",
+   "kc-toshikeikakukuikin"
+  ],
+  "description": "2階 以上 か 延べ面積 200㎡超の 建物や、200㎡超の 特殊建築物は、都市計画区域の 外でも 建築確認が 要ります。場所に 関係ない ところが ポイントです。"
+ },
+ {
+  "id": "kc-toshikeikakukuikin",
+  "name": "都市計画区域内の新築",
+  "reading": "としけいかくくいきないのしんちく",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-daikibokenchikubut",
+   "kc-kenchikukakunin"
+  ],
+  "description": "都市計画区域・準都市計画区域などの 中では、平屋の 小さな 建物でも 新築なら 建築確認が 要ります。新築には 10㎡ 以内の 例外が ありません。"
+ },
+ {
+  "id": "kc-youtohenkounokakun",
+  "name": "用途変更の確認",
+  "reading": "ようとへんこうのかくにん",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-youtohenkou",
+   "kc-kanryyoukensa"
+  ],
+  "description": "用途を 変えて 200㎡を こえる 特殊建築物に する ときは 建築確認が 要ります。にた 用途どうしの 変更は いりません。工事が 終わったら 検査の 申請では なく 届け出を します。"
+ },
+ {
+  "id": "kc-juuheihoumetoruina",
+  "name": "10平方メートル以内の増改築",
+  "reading": "じゅうへいほうめーとるいないのぞうかいちく",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukakunin",
+   "kc-boukachiiki"
+  ],
+  "description": "防火地域・準防火地域の 外で、増築・改築・移転の 床面積が 10㎡ 以内なら 建築確認は いりません。防火地域・準防火地域の 中では 10㎡ 以内でも 要ります。"
+ },
+ {
+  "id": "kc-shiteikakuninkensa",
+  "name": "指定確認検査機関",
+  "reading": "していかくにんけんさきかん",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikushuji",
+   "kc-kenchikukakunin"
+  ],
+  "description": "国土交通大臣や 都道府県知事が 指定した 民間の 機関で、建築主事と 同じ ように 確認や 検査が できます。その 確認済証も 同じ あつかいです。"
+ },
+ {
+  "id": "kc-tokuteikoutei",
+  "name": "特定工程",
+  "reading": "とくていこうてい",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kanryyoukensa",
+   "kc-kenchikukakunin"
+  ],
+  "description": "工事の とちゅうで 中間検査を 受ける 工程です。3階 以上の 共同住宅の 2階の 床と はりに 鉄筋を 置く 工事などで、終えたら 4日以内に とどく よう 申請します。"
+ },
+ {
+  "id": "kc-karishiyounonintei",
+  "name": "仮使用の認定",
+  "reading": "かりしようのにんてい",
+  "journey": "kenchiku",
+  "category": "建築確認",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔑",
+  "mapNode": "kenchiku:kakunin",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kanryyoukensa",
+   "kc-kenchikukakunin"
+  ],
+  "description": "大きな 建物は 検査済証の 前に 使えないのが 原則ですが、特定行政庁などが 安全と 認めれば 仮に 使えます。申請の 受理から 7日 たった ときも 使えます。"
+ },
+ {
+  "id": "kc-kyyoshitsunosaikou",
+  "name": "居室の採光",
+  "reading": "きょしつのさいこう",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌞",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-saikou",
+   "kc-mado"
+  ],
+  "description": "住宅の 居室では、光を 入れる 窓などの 面積が 床面積の 7分の1 以上 必要です。照明設備などの くふうで 10分の1まで ゆるめられる ことが あります。"
+ },
+ {
+  "id": "kc-ishiwatanokisei",
+  "name": "石綿の規制",
+  "reading": "いしわたのきせい",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-shikkuhausutaisaku",
+   "kc-tantaikitei"
+  ],
+  "description": "石綿(アスベスト)を 建築材料に 加えたり、石綿を 加えた 材料を 使ったり しては いけません。住む 人の 健康を 守る 決まりです。"
+ },
+ {
+  "id": "kc-shikkuhausutaisaku",
+  "name": "シックハウス対策",
+  "reading": "しっくはうすたいさく",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-ishiwatanokisei",
+   "kc-kanki"
+  ],
+  "description": "居室の ある 建物では、クロルピリホスや ホルムアルデヒドに ついて 建築材料と 換気設備の 決まりを 守ります。部屋の 空気を きれいに たもつ ためです。"
+ },
+ {
+  "id": "kc-chikainokyyoshitsu",
+  "name": "地階の居室",
+  "reading": "ちかいのきょしつ",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-tantaikitei",
+   "kc-chikashitsunoyouse"
+  ],
+  "description": "住宅の 居室・学校の 教室などを 地階に つくる ときは、壁と 床の 防湿などの 決まりが あります。地階でも 決まりを 守れば 居室を つくれます。"
+ },
+ {
+  "id": "kc-tesurinosecchi",
+  "name": "手すりの設置",
+  "reading": "てすりのせっち",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kaidan",
+   "kc-tantaikitei"
+  ],
+  "description": "階段には 手すりを つけます。ただし 高さ 1m以下の 階段の 部分には この 決まりは かかりません。"
+ },
+ {
+  "id": "kc-kizonfutekikakuken",
+  "name": "既存不適格建築物",
+  "reading": "きぞんふてきかくけんちくぶつ",
+  "journey": "kenchiku",
+  "category": "単体規定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏚",
+  "mapNode": "kenchiku:tantai",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-tantaikitei",
+   "kc-youtoseigen"
+  ],
+  "description": "法律が できた ときや 変わった ときに すでに あった 建物は、新しい 決まりに 合わなくても 違反に なりません。ただし 増築などを する ときは 新しい 決まりに 合わせます。"
+ },
+ {
+  "id": "kc-teisoujuukyyonotak",
+  "name": "低層住居の高さの限度",
+  "reading": "ていそうじゅうきょのたかさのげんど",
+  "journey": "kenchiku",
+  "category": "高さ・斜線・日影",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏡",
+  "mapNode": "kenchiku:teiso",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-zettaitakasanoseig",
+   "kc-teisoujuukyyosenyo"
+  ],
+  "description": "低層住居専用地域と 田園住居地域では、建物の 高さは 10m か 12mの うち 都市計画で 決めた 数字を こえられません。中高層住居専用地域には この 決まりは ありません。"
+ },
+ {
+  "id": "kc-denenjuukyyochiiki",
+  "name": "田園住居地域の農地",
+  "reading": "でんえんじゅうきょちいきののうち",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "kenchiku:teiso",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-teisoujuukyyosenyo",
+   "kc-youtoseigen"
+  ],
+  "description": "田園住居地域の 農地で 土地の 形を 変えたり 建物を 建てたり する ときは、市町村長の 許可が 要ります。知事では なく 市町村長です。"
+ },
+ {
+  "id": "kc-tenpokenyoujuutaku",
+  "name": "店舗兼用住宅",
+  "reading": "てんぽけんようじゅうたく",
+  "journey": "kenchiku",
+  "category": "用途制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏪",
+  "mapNode": "kenchiku:teiso",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-teisoujuukyyosenyo",
+   "kc-ikkodate"
+  ],
+  "description": "延べ面積の 半分 以上が 住まいで、お店などの 部分が 50㎡ 以下の 兼用住宅は、第一種低層住居専用地域でも 建てられます。"
+ },
+ {
+  "id": "kc-kenchikukyyouteino",
+  "name": "建築協定の認可",
+  "reading": "けんちくきょうていのにんか",
+  "journey": "kenchiku",
+  "category": "協定・そのほか",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "kenchiku:kyotei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukyyoutei",
+   "kc-kenchikukyyouteino2"
+  ],
+  "description": "建築協定は、協定書を つくって 特定行政庁の 認可を 受けます。認可の 公告の 後に 土地を 買った 人にも 効力が およびます。"
+ },
+ {
+  "id": "kc-kenchikukyyouteino2",
+  "name": "建築協定の全員合意",
+  "reading": "けんちくきょうていのぜんいんごうい",
+  "journey": "kenchiku",
+  "category": "協定・そのほか",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙌",
+  "mapNode": "kenchiku:kyotei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukyyouteino",
+   "kc-hitorikyyoutei"
+  ],
+  "description": "建築協定を 結ぶ ときと 変える ときは、土地の 所有者と 借地権者の 全員の 合意が 要ります。やめる(廃止する)ときは 過半数の 合意で できます。"
+ },
+ {
+  "id": "kc-hitorikyyoutei",
+  "name": "一人協定",
+  "reading": "ひとりきょうてい",
+  "journey": "kenchiku",
+  "category": "協定・そのほか",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "kenchiku:kyotei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-kenchikukyyoutei",
+   "kc-kenchikukyyouteino"
+  ],
+  "description": "土地の 所有者が 1人だけの ときに 定める 建築協定です。認可から 3年以内に 所有者などが 2人 以上に なると、ふつうの 協定と 同じ 効力が 生まれます。"
+ },
+ {
+  "id": "kc-kenchikushinsakai",
+  "name": "建築審査会",
+  "reading": "けんちくしんさかい",
+  "journey": "kenchiku",
+  "category": "協定・そのほか",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍⚖️",
+  "mapNode": "kenchiku:kyotei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-youtoseigennotokur",
+   "kc-setsudougimunoreig"
+  ],
+  "description": "建築主事を 置く 市町村と 都道府県に ある 会です。特定行政庁が 特別な 許可を する ときの 同意や、審査請求の 裁決などを します。"
+ },
+ {
+  "id": "kc-keikanchiku",
+  "name": "景観地区",
+  "reading": "けいかんちく",
+  "journey": "kenchiku",
+  "category": "協定・そのほか",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏯",
+  "mapNode": "kenchiku:kyotei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-koudochikunotakasa",
+   "kc-kenchikukyyoutei"
+  ],
+  "description": "町なみを 美しく たもつ ための 地区です。都市計画で 建物の 高さ・壁面の 位置・敷地面積の 最低限度などを 決めると、その 決まりが かかります。"
+ },
+ {
+  "id": "kc-sougousekkeiseido",
+  "name": "総合設計制度",
+  "reading": "そうごうせっけいせいど",
+  "journey": "kenchiku",
+  "category": "協定・そのほか",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "kenchiku:kyotei",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "kc-yousekiritsu",
+   "kc-kenchikushinsakai"
+  ],
+  "description": "敷地の 中に 広い 空き地を とった 建物は、特定行政庁の 許可で 容積率や 高さの 決まりを こえられます。許可の 前に 建築審査会の 同意が 要ります。"
+ }
+]

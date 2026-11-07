@@ -1,0 +1,2221 @@
+[
+ {
+  "id": "g2-kougyouboki",
+  "name": "工業簿記",
+  "reading": "こうぎょうぼき",
+  "journey": "2kogyo",
+  "category": "原価の 分類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "2kogyo:bunrui",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-genka",
+   "g2-seizougenka",
+   "g2-shikakarihin"
+  ],
+  "description": "ものを 作る 会社の 簿記です。材料を 使い、人が 働き、製品が できるまでの お金の 流れを、材料 → 仕掛品 → 製品 → 売上原価 の 勘定で 記録します。"
+ },
+ {
+  "id": "g2-genka",
+  "name": "原価",
+  "reading": "げんか",
+  "journey": "2kogyo",
+  "category": "原価の 分類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "2kogyo:bunrui",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seizougenka",
+   "g2-higenkakoumoku",
+   "g2-chokusetsuhi"
+  ],
+  "description": "製品を 作るのに かかった お金です。材料費・労務費・経費の 3つに 分けます。製品を 作る ことに 関係しない 支払利息などは 原価に 入れません。"
+ },
+ {
+  "id": "g2-zairyouhi",
+  "name": "材料費",
+  "reading": "ざいりょうひ",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪵",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zairyou",
+   "g2-chokusetsuzairyouhi",
+   "g2-kansetsuzairyouhi"
+  ],
+  "description": "ものを 作るのに 材料を 使った 額です。材料勘定から 仕掛品(直接材料費)や 製造間接費(間接材料費)へ 振り替えます。"
+ },
+ {
+  "id": "g2-roumuhi",
+  "name": "労務費",
+  "reading": "ろうむひ",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👷",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chingin",
+   "g2-chokusetsuroumuhi",
+   "g2-kansetsuroumuhi"
+  ],
+  "description": "工場で 人が 働いた ことに かかる 原価です。賃金・給料・賞与 などで、作業の しかたに よって 直接労務費と 間接労務費に 分けます。"
+ },
+ {
+  "id": "g2-keihi",
+  "name": "経費",
+  "reading": "けいひ",
+  "journey": "2kogyo",
+  "category": "経費",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "2kogyo:keihi",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chokusetsukeihi",
+   "g2-kansetsukeihi",
+   "g2-gaichuukakouchin"
+  ],
+  "description": "材料費と 労務費 以外の 原価です。工場の 電気代・減価償却費・外注加工賃 などで、外注加工賃の ような 直接経費は 少なく、ほとんどが 間接経費です。"
+ },
+ {
+  "id": "g2-chokusetsuhi",
+  "name": "直接費",
+  "reading": "ちょくせつひ",
+  "journey": "2kogyo",
+  "category": "原価の 分類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "2kogyo:bunrui",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kansetsuhi",
+   "g2-chokusetsuzairyouhi",
+   "g2-chokusetsuroumuhi"
+  ],
+  "description": "どの 製品の ために 使ったか はっきり わかる 原価です。製品に そのまま 集計するので、仕掛品勘定の 借方へ 直接 振り替えます。"
+ },
+ {
+  "id": "g2-kansetsuhi",
+  "name": "間接費",
+  "reading": "かんせつひ",
+  "journey": "2kogyo",
+  "category": "原価の 分類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "2kogyo:bunrui",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chokusetsuhi",
+   "g2-seizoukansetsuhi",
+   "g2-haifu"
+  ],
+  "description": "いくつもの 製品に 共通して かかり、製品ごとの 額が わからない 原価です。いったん 製造間接費勘定に 集めてから、基準を 決めて 配賦します。"
+ },
+ {
+  "id": "g2-seizougenka",
+  "name": "製造原価",
+  "reading": "せいぞうげんか",
+  "journey": "2kogyo",
+  "category": "原価の 分類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "2kogyo:bunrui",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-genka",
+   "g2-seizougenkahoukokus",
+   "g2-kanseihingenka"
+  ],
+  "description": "製品を 作るのに かかった 原価の 合計です。直接材料費・直接労務費・直接経費・製造間接費を 足した もので、販売費や 一般管理費は 入りません。"
+ },
+ {
+  "id": "g2-shikakarihin",
+  "name": "仕掛品",
+  "reading": "しかかりひん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "2kogyo:kobetsu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seihin",
+   "g2-kanseihingenka",
+   "g2-getsumatsushikakari"
+  ],
+  "description": "まだ 作っている 途中の 製品で、資産です。製造原価は まず 仕掛品勘定の 借方に 集め、完成した 分を 貸方から 製品勘定へ 振り替えます。"
+ },
+ {
+  "id": "g2-seihin",
+  "name": "製品",
+  "reading": "せいひん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "2kogyo:kobetsu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-shikakarihin",
+   "g2-kanseihin",
+   "g2-kanseihingenka"
+  ],
+  "description": "完成して 売れる 状態に なった もので、資産です。完成すると 借方に ふえ、売れると 貸方から 売上原価勘定へ 振り替えます。"
+ },
+ {
+  "id": "g2-zairyou",
+  "name": "材料",
+  "reading": "ざいりょう",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪵",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zairyouhi",
+   "g2-kounyuugenka",
+   "g2-zairyoumotochou"
+  ],
+  "description": "製品の もとに なる 物で、資産の 勘定です。買うと 借方、使う(消費する)と 貸方に 書き、仕掛品や 製造間接費へ 振り替えます。"
+ },
+ {
+  "id": "g2-chingin",
+  "name": "賃金",
+  "reading": "ちんぎん",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-roumuhi",
+   "g2-yoteichinritsu",
+   "g2-mibaraichingin"
+  ],
+  "description": "工場の 工員に はらう 給与です。賃金・給料勘定は 支払った ときに 借方、消費した ときに 貸方へ 書きます。支払額と 消費額は 同じとは かぎりません。"
+ },
+ {
+  "id": "g2-haifu",
+  "name": "配賦",
+  "reading": "はいふ",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍰",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seizoukansetsuhi",
+   "g2-yoteihaifu",
+   "g2-jissaihaifu"
+  ],
+  "description": "製造間接費を、作業時間 などの 基準で 製品ごとに 割り当てる ことです。製造間接費勘定の 貸方から 仕掛品勘定の 借方へ 振り替えます。"
+ },
+ {
+  "id": "g2-seizoukansetsuhi",
+  "name": "製造間接費",
+  "reading": "せいぞうかんせつひ",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kansetsuhi",
+   "g2-haifu",
+   "g2-yoteihaifu"
+  ],
+  "description": "製品ごとに 分けられない 間接材料費・間接労務費・間接経費を 集める 勘定です。発生額を 借方に 集め、配賦額を 貸方から 仕掛品へ 振り替えます。"
+ },
+ {
+  "id": "g2-kobetsugenkakeisan",
+  "name": "個別原価計算",
+  "reading": "こべつげんかけいさん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "2kogyo:kobetsu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seizousashizusho",
+   "g2-genkakeisanhyou",
+   "g2-sougougenkakeisan"
+  ],
+  "description": "お客さんの 注文ごとに 製品を 作る 会社の 原価計算です。製造指図書ごとに 原価を 集めます。船や 特注の 機械 などで 使います。"
+ },
+ {
+  "id": "g2-sougougenkakeisan",
+  "name": "総合原価計算",
+  "reading": "そうごうげんかけいさん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kobetsugenkakeisan",
+   "g2-kanseihinkansanryou",
+   "g2-gesshoshikakarihin"
+  ],
+  "description": "同じ 製品を くり返し たくさん 作る 会社の 原価計算です。1か月分の 原価を まとめ、完成品と 月末仕掛品に 分けて 1個 あたりを 出します。"
+ },
+ {
+  "id": "g2-hyoujungenkakeisan",
+  "name": "標準原価計算",
+  "reading": "ひょうじゅんげんかけいさん",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-hyoujungenka",
+   "g2-genkasai",
+   "g2-genkahyoujun"
+  ],
+  "description": "前もって 目標の 原価(標準原価)を 決め、実際の 原価と くらべて 差異を 分析する 原価計算です。むだを 見つけて 原価を 下げる ために 使います。"
+ },
+ {
+  "id": "g2-chokusetsugenkakeis",
+  "name": "直接原価計算",
+  "reading": "ちょくせつげんかけいさん",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "2kogyo:chokusetsu",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zenbugenkakeisan",
+   "g2-hendouhi",
+   "g2-koukenrieki"
+  ],
+  "description": "変動費だけで 製品原価を 計算し、固定費は その期の 費用に する 方法です。売上と 利益の 関係が わかりやすく、利益計画に 役立ちます。"
+ },
+ {
+  "id": "g2-sonekibunkiten",
+  "name": "損益分岐点",
+  "reading": "そんえきぶんきてん",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "2kogyo:cvp",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-sonekibunkitenuriag",
+   "g2-anzenyoyuuritsu",
+   "g2-shibuipibunseki"
+  ],
+  "description": "売上高と 原価が ちょうど 同じで、利益が ゼロに なる 点です。これより 売れば 利益、少なければ 損失に なります。"
+ },
+ {
+  "id": "g2-shisonji",
+  "name": "仕損",
+  "reading": "しそんじ",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "2kogyo:shison",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-shisonhi",
+   "g2-seijoushisonji",
+   "g2-genson"
+  ],
+  "description": "製品を 作りそこなう ことです。作りそこなった 品を 仕損品と いい、その ために かかった 原価が 仕損費です。"
+ },
+ {
+  "id": "g2-chokusetsuzairyouhi",
+  "name": "直接材料費",
+  "reading": "ちょくせつざいりょうひ",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪵",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zairyouhi",
+   "g2-kansetsuzairyouhi",
+   "g2-chokusetsuhi"
+  ],
+  "description": "どの 製品に 使ったか わかる 材料費で、主要材料費や 買入部品費です。材料勘定から 仕掛品勘定の 借方へ 振り替えます。"
+ },
+ {
+  "id": "g2-kansetsuzairyouhi",
+  "name": "間接材料費",
+  "reading": "かんせつざいりょうひ",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chokusetsuzairyouhi",
+   "g2-seizoukansetsuhi",
+   "g2-zairyouhi"
+  ],
+  "description": "補助材料費・工場消耗品費・消耗工具器具備品費 など、製品ごとに 分けられない 材料費です。材料勘定から 製造間接費勘定の 借方へ 振り替えます。"
+ },
+ {
+  "id": "g2-chokusetsuroumuhi",
+  "name": "直接労務費",
+  "reading": "ちょくせつろうむひ",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👷",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kansetsuroumuhi",
+   "g2-chokusetsusagyoujik",
+   "g2-yoteichinritsu"
+  ],
+  "description": "直接工が 製品を 作る 直接作業を した 時間の 賃金です。賃金・給料勘定から 仕掛品勘定の 借方へ 振り替えます。"
+ },
+ {
+  "id": "g2-kansetsuroumuhi",
+  "name": "間接労務費",
+  "reading": "かんせつろうむひ",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chokusetsuroumuhi",
+   "g2-kansetsusagyoujikan",
+   "g2-temachijikan"
+  ],
+  "description": "直接工の 間接作業・手待時間の 賃金や、間接工の 賃金・事務員の 給料 などです。賃金・給料勘定から 製造間接費勘定へ 振り替えます。"
+ },
+ {
+  "id": "g2-chokusetsukeihi",
+  "name": "直接経費",
+  "reading": "ちょくせつけいひ",
+  "journey": "2kogyo",
+  "category": "経費",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "2kogyo:keihi",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-gaichuukakouchin",
+   "g2-kansetsukeihi",
+   "g2-keihi"
+  ],
+  "description": "どの 製品の ためか わかる 経費で、代表は 外注加工賃です。仕掛品勘定の 借方に 書きます。2級では 直接経費は ほぼ 外注加工賃と 覚えます。"
+ },
+ {
+  "id": "g2-kansetsukeihi",
+  "name": "間接経費",
+  "reading": "かんせつけいひ",
+  "journey": "2kogyo",
+  "category": "経費",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "2kogyo:keihi",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chokusetsukeihi",
+   "g2-tsukiwarikeihi",
+   "g2-sokuteikeihi"
+  ],
+  "description": "工場の 電力料・減価償却費・保険料・修繕費 など、製品ごとに 分けられない 経費です。製造間接費勘定の 借方に 集めます。"
+ },
+ {
+  "id": "g2-gaichuukakouchin",
+  "name": "外注加工賃",
+  "reading": "がいちゅうかこうちん",
+  "journey": "2kogyo",
+  "category": "経費",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "2kogyo:keihi",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chokusetsukeihi",
+   "g2-keihi",
+   "g2-shiharaikeihi"
+  ],
+  "description": "材料の 加工を 外の 会社に 頼んだ ときの 代金です。直接経費なので 仕掛品勘定の 借方に 書きます。⚠️ 製造間接費では ありません。"
+ },
+ {
+  "id": "g2-zairyoufukuhi",
+  "name": "材料副費",
+  "reading": "ざいりょうふくひ",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚛",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kounyuugenka",
+   "g2-zairyou",
+   "g2-zairyoushouhikakaku"
+  ],
+  "description": "材料を 買う ときの 運賃・保険料・検収費・保管費 などです。材料の 購入原価に 入れます。予定配賦率で 加えた ときは 実際との 差が 材料副費差異に なります。"
+ },
+ {
+  "id": "g2-kounyuugenka",
+  "name": "購入原価",
+  "reading": "こうにゅうげんか",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zairyoufukuhi",
+   "g2-zairyou",
+   "g2-zairyoumotochou"
+  ],
+  "description": "材料を 買った ときに 材料勘定に のせる 額です。購入代価に 材料副費(引取運賃 など)を 足して 計算します。",
+  "formula": "購入原価 = 購入代価 + 材料副費"
+ },
+ {
+  "id": "g2-yoteihaifu",
+  "name": "予定配賦",
+  "reading": "よていはいふ",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-yoteihaifuritsu",
+   "g2-seizoukansetsuhihai",
+   "g2-jissaihaifu"
+  ],
+  "description": "前もって 決めた 予定配賦率で 製造間接費を 配賦する ことです。月末を 待たずに 原価が わかります。実際発生額との 差は 製造間接費配賦差異に します。",
+  "formula": "予定配賦額 = 予定配賦率 × 実際操業度"
+ },
+ {
+  "id": "g2-yoteihaifuritsu",
+  "name": "予定配賦率",
+  "reading": "よていはいふりつ",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-yoteihaifu",
+   "g2-kijunsougyoudo",
+   "g2-koushikihouhendouyo"
+  ],
+  "description": "1年間の 製造間接費の 予算を 基準操業度(作業時間 など)で 割った 率です。予定配賦の もとに なります。",
+  "formula": "予定配賦率 = 年間予算 ÷ 基準操業度"
+ },
+ {
+  "id": "g2-seizoukansetsuhihai",
+  "name": "製造間接費配賦差異",
+  "reading": "せいぞうかんせつひはいふさい",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-yoteihaifu",
+   "g2-yosansai",
+   "g2-sougyoudosai"
+  ],
+  "description": "予定配賦額と 実際発生額の 差です。実際が 多ければ 不利差異で 借方、少なければ 有利差異で 貸方に 書きます。⚠️ 原価差異と 書いても よい 場面が あります。"
+ },
+ {
+  "id": "g2-seizousashizusho",
+  "name": "製造指図書",
+  "reading": "せいぞうさしずしょ",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "2kogyo:kobetsu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kobetsugenkakeisan",
+   "g2-genkakeisanhyou",
+   "g2-kanseihingenka"
+  ],
+  "description": "工場に 製品を 作るよう 命じる 書類で、注文ごとに 番号を つけます。個別原価計算では この 番号ごとに 原価を 集めます。"
+ },
+ {
+  "id": "g2-genkakeisanhyou",
+  "name": "原価計算表",
+  "reading": "げんかけいさんひょう",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "2kogyo:kobetsu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seizousashizusho",
+   "g2-kobetsugenkakeisan",
+   "g2-shikakarihin"
+  ],
+  "description": "製造指図書ごとに 直接材料費・直接労務費・直接経費・製造間接費を 書き集める 表です。完成した 指図書の 合計が 完成品原価、未完成が 仕掛品に なります。"
+ },
+ {
+  "id": "g2-kanseihin",
+  "name": "完成品",
+  "reading": "かんせいひん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kanseihingenka",
+   "g2-seihin",
+   "g2-getsumatsushikakari"
+  ],
+  "description": "その 月に できあがった 製品です。完成品の 原価は 仕掛品勘定の 貸方から 製品勘定の 借方へ 振り替えます。"
+ },
+ {
+  "id": "g2-gesshoshikakarihin",
+  "name": "月初仕掛品",
+  "reading": "げっしょしかかりひん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌅",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-getsumatsushikakari",
+   "g2-sougougenkakeisan",
+   "g2-souheikinhou"
+  ],
+  "description": "月の はじめに 残っていた 作りかけの 製品です。前の 月の 月末仕掛品が そのまま 今月の 月初仕掛品に なります。"
+ },
+ {
+  "id": "g2-getsumatsushikakari",
+  "name": "月末仕掛品",
+  "reading": "げつまつしかかりひん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-gesshoshikakarihin",
+   "g2-kanseihinkansanryou",
+   "g2-shinchokudo"
+  ],
+  "description": "月の おわりに 残った 作りかけの 製品です。総合原価計算では 進捗度を かけた 完成品換算量で 加工費を 分けます。"
+ },
+ {
+  "id": "g2-kakouhi",
+  "name": "加工費",
+  "reading": "かこうひ",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-shinchokudo",
+   "g2-kanseihinkansanryou",
+   "g2-chokusetsuzairyouhi"
+  ],
+  "description": "直接材料費 以外の 製造原価で、直接労務費・直接経費・製造間接費の 合計です。総合原価計算では 進捗度に 合わせて 発生すると 考えます。"
+ },
+ {
+  "id": "g2-shinchokudo",
+  "name": "進捗度",
+  "reading": "しんちょくど",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kanseihinkansanryou",
+   "g2-kakouhi",
+   "g2-getsumatsushikakari"
+  ],
+  "description": "作りかけの 製品の 加工が どこまで 進んだかの 割合です。50%なら 半分 できた という 意味です。⚠️ 始点で 投入する 材料費には かけません。"
+ },
+ {
+  "id": "g2-genson",
+  "name": "減損",
+  "reading": "げんそん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "2kogyo:shison",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seijougenson",
+   "g2-shisonji",
+   "g2-kanseihinfutan"
+  ],
+  "description": "製造の 途中で 材料が 蒸発・粉散 などで 消えて 製品に ならない ことです。仕損と ちがい、形の ある 品が 残りません。"
+ },
+ {
+  "id": "g2-hyoujungenka",
+  "name": "標準原価",
+  "reading": "ひょうじゅんげんか",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-genkahyoujun",
+   "g2-hyoujungenkakeisan",
+   "g2-genkasai"
+  ],
+  "description": "科学的な 調べに もとづいて 決めた 目標の 原価です。製品1個の 原価標準に 生産量を かけて 出します。"
+ },
+ {
+  "id": "g2-genkasai",
+  "name": "原価差異",
+  "reading": "げんかさい",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kakakusai",
+   "g2-suuryousai",
+   "g2-hyoujungenkakeisan"
+  ],
+  "description": "標準原価(や 予定原価)と 実際原価の 差です。実際が 多いと 不利差異で 借方、少ないと 有利差異で 貸方に 書きます。"
+ },
+ {
+  "id": "g2-kakakusai",
+  "name": "価格差異",
+  "reading": "かかくさい",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💲",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-suuryousai",
+   "g2-genkasai",
+   "g2-chinritsusai"
+  ],
+  "description": "材料の 単価が 標準と ちがった ことに よる 差異です。(標準単価 − 実際単価)× 実際消費量 で 出します。⚠️ 数量差異は 量の 差に 標準単価を かけます。",
+  "formula": "(標準単価 − 実際単価)× 実際数量"
+ },
+ {
+  "id": "g2-suuryousai",
+  "name": "数量差異",
+  "reading": "すうりょうさい",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kakakusai",
+   "g2-genkasai",
+   "g2-sagyoujikansai"
+  ],
+  "description": "材料を 使った 量が 標準と ちがった ことに よる 差異です。(標準消費量 − 実際消費量)× 標準単価 で 出します。⚠️ 実際単価を かけないように。",
+  "formula": "(標準数量 − 実際数量)× 標準単価"
+ },
+ {
+  "id": "g2-hendouhi",
+  "name": "変動費",
+  "reading": "へんどうひ",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "2kogyo:chokusetsu",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-koteihi",
+   "g2-hendouhiritsu",
+   "g2-koukenrieki"
+  ],
+  "description": "作る 量や 売る 量に 比例して ふえる 原価です。材料費や 出来高払いの 賃金 などが あたります。"
+ },
+ {
+  "id": "g2-koteihi",
+  "name": "固定費",
+  "reading": "こていひ",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "2kogyo:chokusetsu",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-hendouhi",
+   "g2-koteihichousei",
+   "g2-sonekibunkiten"
+  ],
+  "description": "作る 量が 変わっても 一定の 額が かかる 原価です。工場の 減価償却費や 家賃に あたる 支払リース料 などです。"
+ },
+ {
+  "id": "g2-koukenrieki",
+  "name": "貢献利益",
+  "reading": "こうけんりえき",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "2kogyo:chokusetsu",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-koukenriekiritsu",
+   "g2-hendouhi",
+   "g2-chokusetsugenkakeis"
+  ],
+  "description": "売上高から 変動費を 引いた 利益です。ここから 固定費を まかない、残りが 営業利益に なります。限界利益とも いいます。",
+  "formula": "貢献利益 = 売上高 − 変動費"
+ },
+ {
+  "id": "g2-anzenyoyuuritsu",
+  "name": "安全余裕率",
+  "reading": "あんぜんよゆうりつ",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛟",
+  "mapNode": "2kogyo:cvp",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-sonekibunkiten",
+   "g2-sonekibunkitenuriag",
+   "g2-shibuipibunseki"
+  ],
+  "description": "いまの 売上高が 損益分岐点を どれだけ 上回って いるかの 割合です。高いほど 売上が 落ちても 赤字に なりにくい ことを 表します。",
+  "formula": "(売上高 − 損益分岐点売上高)÷ 売上高"
+ },
+ {
+  "id": "g2-shibuipibunseki",
+  "name": "CVP分析",
+  "reading": "しーぶいぴーぶんせき",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "2kogyo:cvp",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-sonekibunkiten",
+   "g2-koukenrieki",
+   "g2-mokuhyourieki"
+  ],
+  "description": "原価(Cost)・営業量(Volume)・利益(Profit)の 関係を 調べる 分析です。原価を 変動費と 固定費に 分けて、損益分岐点や 目標利益の 売上高を 出します。"
+ },
+ {
+  "id": "g2-bumonbetsukeisan",
+  "name": "部門別計算",
+  "reading": "ぶもんべつけいさん",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "2kogyo:bumon",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seizoubumon",
+   "g2-hojobumon",
+   "g2-daiichijishuukei"
+  ],
+  "description": "製造間接費を 部門ごとに 集めてから 製品に 配賦する 計算です。部門ごとの 配賦率を 使うので、製品の 原価が より 正確に なります。"
+ },
+ {
+  "id": "g2-seizoubumon",
+  "name": "製造部門",
+  "reading": "せいぞうぶもん",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔨",
+  "mapNode": "2kogyo:bumon",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-hojobumon",
+   "g2-bumonbetsukeisan",
+   "g2-chokusetsuhaifuhou"
+  ],
+  "description": "切削部・組立部 など、製品を 直接 加工する 部門です。補助部門の 費用も 最後は 製造部門に 集め、そこから 製品へ 配賦します。"
+ },
+ {
+  "id": "g2-hojobumon",
+  "name": "補助部門",
+  "reading": "ほじょぶもん",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "2kogyo:bumon",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seizoubumon",
+   "g2-chokusetsuhaifuhou",
+   "g2-sougohaifuhou"
+  ],
+  "description": "動力部・修繕部・工場事務部 など、製造部門を 支える 部門です。製品を 直接 作らないので、その 費用は 製造部門へ 配賦してから 製品に のせます。⚠️ 製品へ 直接 配賦しません。"
+ },
+ {
+  "id": "g2-bumonkobetsuhi",
+  "name": "部門個別費",
+  "reading": "ぶもんこべつひ",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔖",
+  "mapNode": "2kogyo:bumon",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-bumonkyoutsuuhi",
+   "g2-daiichijishuukei",
+   "g2-bumonbetsukeisan"
+  ],
+  "description": "どの 部門で かかったか はっきり わかる 製造間接費です。その 部門に そのまま 集めます(賦課 または 直課と いいます)。"
+ },
+ {
+  "id": "g2-bumonkyoutsuuhi",
+  "name": "部門共通費",
+  "reading": "ぶもんきょうつうひ",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "2kogyo:bumon",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-bumonkobetsuhi",
+   "g2-daiichijishuukei",
+   "g2-bumonbetsukeisan"
+  ],
+  "description": "工場の 建物の 減価償却費 など、いくつもの 部門に またがる 製造間接費です。床面積 などの 基準で 各部門に 配賦します。"
+ },
+ {
+  "id": "g2-chokusetsuhaifuhou",
+  "name": "直接配賦法",
+  "reading": "ちょくせつはいふほう",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "2kogyo:bumon",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-sougohaifuhou",
+   "g2-hojobumon",
+   "g2-seizoubumon"
+  ],
+  "description": "補助部門の 費用を、補助部門どうしの やりとりを 無視して 製造部門だけに 配賦する 方法です。⚠️ 相互配賦法は 補助部門どうしにも 配賦します。"
+ },
+ {
+  "id": "g2-sougohaifuhou",
+  "name": "相互配賦法",
+  "reading": "そうごはいふほう",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "2kogyo:bumon",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chokusetsuhaifuhou",
+   "g2-hojobumon",
+   "g2-bumonbetsukeisan"
+  ],
+  "description": "補助部門の 費用を、ほかの 補助部門にも 配賦する 方法です。2級では 1回目は 補助部門どうしにも 配り、2回目は 製造部門だけに 配る 簡便法を 使います。"
+ },
+ {
+  "id": "g2-daiichijishuukei",
+  "name": "第1次集計",
+  "reading": "だいいちじしゅうけい",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "2kogyo:bumon",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-bumonkobetsuhi",
+   "g2-bumonkyoutsuuhi",
+   "g2-bumonbetsukeisan"
+  ],
+  "description": "部門個別費を 賦課し、部門共通費を 配賦して、製造間接費を すべての 部門に 集める 手順です。つぎに 補助部門費を 製造部門へ 配る 第2次集計に 進みます。"
+ },
+ {
+  "id": "g2-souheikinhou",
+  "name": "総平均法",
+  "reading": "そうへいきんほう",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zairyoumotochou",
+   "g2-yoteishouhitanka",
+   "g2-gesshoshikakarihin"
+  ],
+  "description": "1か月(一定期間)に 受け入れた 材料の 合計額を 合計数量で 割って 単価を 出す 方法です。月末まで 単価が わからないのが 弱点です。⚠️ 移動平均法は 受け入れの つど 計算します。"
+ },
+ {
+  "id": "g2-yoteishouhitanka",
+  "name": "予定消費単価",
+  "reading": "よていしょうひたんか",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zairyoushouhikakaku",
+   "g2-souheikinhou",
+   "g2-zairyouhi"
+  ],
+  "description": "前もって 決めて おく 材料の 消費単価です。月末を 待たずに 材料費が 計算できます。実際単価との 差は 材料消費価格差異に なります。"
+ },
+ {
+  "id": "g2-zairyoushouhikakaku",
+  "name": "材料消費価格差異",
+  "reading": "ざいりょうしょうひかかくさい",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-yoteishouhitanka",
+   "g2-zairyouhi",
+   "g2-kakakusai"
+  ],
+  "description": "予定消費単価で 計算した 材料費と 実際の 材料費の 差です。実際が 多ければ 不利差異で 借方に 書きます。⚠️ 標準原価計算の 価格差異とは 別の もの。"
+ },
+ {
+  "id": "g2-tanaoroshigenmouhi",
+  "name": "棚卸減耗費",
+  "reading": "たなおろしげんもうひ",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zairyoumotochou",
+   "g2-keizokukirokuhou",
+   "g2-kansetsukeihi"
+  ],
+  "description": "帳簿の 材料の 量より 実際の 量が 少ない ときの 減った 分です。ふつうの 範囲なら 間接経費として 製造間接費勘定の 借方に 書きます。"
+ },
+ {
+  "id": "g2-keizokukirokuhou",
+  "name": "継続記録法",
+  "reading": "けいぞくきろくほう",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗒️",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zairyoumotochou",
+   "g2-tanaoroshigenmouhi",
+   "g2-souheikinhou"
+  ],
+  "description": "材料を 受け入れる たび・使う たびに 材料元帳に 数量を 書く 方法です。帳簿の 残りと 実際の 残りを くらべて 棚卸減耗が わかります。⚠️ 棚卸計算法は 月末の 残りから 消費量を 逆に 出します。"
+ },
+ {
+  "id": "g2-zairyoumotochou",
+  "name": "材料元帳",
+  "reading": "ざいりょうもとちょう",
+  "journey": "2kogyo",
+  "category": "材料費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "2kogyo:zairyo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-keizokukirokuhou",
+   "g2-souheikinhou",
+   "g2-zairyou"
+  ],
+  "description": "材料の 種類ごとに 受け入れ・払い出し・残高を 記録する 補助元帳です。先入先出法や 平均法で 消費単価を 計算します。"
+ },
+ {
+  "id": "g2-yoteichinritsu",
+  "name": "予定賃率",
+  "reading": "よていちんりつ",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chinritsusai",
+   "g2-chokusetsusagyoujik",
+   "g2-chingin"
+  ],
+  "description": "前もって 決めて おく 1時間 あたりの 賃金の 額です。予定賃率 × 作業時間で 労務費の 消費額を 出します。",
+  "formula": "消費賃金 = 予定賃率 × 作業時間"
+ },
+ {
+  "id": "g2-chinritsusai",
+  "name": "賃率差異",
+  "reading": "ちんりつさい",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-yoteichinritsu",
+   "g2-chingin",
+   "g2-kakakusai"
+  ],
+  "description": "予定賃率で 計算した 消費賃金と 実際の 消費賃金の 差です。実際が 多ければ 不利差異で 賃率差異勘定の 借方に 書きます。⚠️ 賃金の 支払額との 差では ありません。"
+ },
+ {
+  "id": "g2-chokusetsusagyoujik",
+  "name": "直接作業時間",
+  "reading": "ちょくせつさぎょうじかん",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛠️",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kansetsusagyoujikan",
+   "g2-chokusetsuroumuhi",
+   "g2-shuugyoujikan"
+  ],
+  "description": "直接工が 製品を 加工・組立する 作業の 時間です。この 時間の 賃金が 直接労務費に なり、製造間接費の 配賦の 基準にも よく 使います。"
+ },
+ {
+  "id": "g2-kansetsusagyoujikan",
+  "name": "間接作業時間",
+  "reading": "かんせつさぎょうじかん",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧽",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chokusetsusagyoujik",
+   "g2-kansetsuroumuhi",
+   "g2-temachijikan"
+  ],
+  "description": "直接工が 材料の 運搬・機械の 修理 など、製品を 直接 作らない 作業を した 時間です。この 時間の 賃金は 間接労務費です。"
+ },
+ {
+  "id": "g2-temachijikan",
+  "name": "手待時間",
+  "reading": "てまちじかん",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kansetsusagyoujikan",
+   "g2-shuugyoujikan",
+   "g2-kansetsuroumuhi"
+  ],
+  "description": "材料が 届かない・機械が 止まった などで、働ける のに 仕事が ない 時間です。直接工でも 間接労務費に なります。"
+ },
+ {
+  "id": "g2-shuugyoujikan",
+  "name": "就業時間",
+  "reading": "しゅうぎょうじかん",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕘",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-temachijikan",
+   "g2-chokusetsusagyoujik",
+   "g2-kansetsusagyoujikan"
+  ],
+  "description": "工場で 実際に 働いた 時間で、直接作業時間・間接作業時間・手待時間の 合計です。休憩時間は 入りません。",
+  "formula": "就業時間 = 実働時間 + 手待時間"
+ },
+ {
+  "id": "g2-mibaraichingin",
+  "name": "未払賃金",
+  "reading": "みばらいちんぎん",
+  "journey": "2kogyo",
+  "category": "労務費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "2kogyo:romu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chingin",
+   "g2-roumuhi",
+   "g2-hasseikeihi"
+  ],
+  "description": "給与の しめ日の あとから 月末までの、まだ 支払って いない 賃金です。月末に 賃金・給料勘定の 貸方に 書き、来月の はじめに 振り戻します。"
+ },
+ {
+  "id": "g2-shiharaikeihi",
+  "name": "支払経費",
+  "reading": "しはらいけいひ",
+  "journey": "2kogyo",
+  "category": "経費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "2kogyo:keihi",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-tsukiwarikeihi",
+   "g2-sokuteikeihi",
+   "g2-hasseikeihi"
+  ],
+  "description": "その月に 支払った 額(前払・未払を 調整した 額)を 消費額と する 経費です。修繕料・旅費交通費・外注加工賃 などです。"
+ },
+ {
+  "id": "g2-tsukiwarikeihi",
+  "name": "月割経費",
+  "reading": "つきわりけいひ",
+  "journey": "2kogyo",
+  "category": "経費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "2kogyo:keihi",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-shiharaikeihi",
+   "g2-sokuteikeihi",
+   "g2-kansetsukeihi"
+  ],
+  "description": "1年分 などの 額を 12か月で 割って 月の 消費額と する 経費です。工場の 減価償却費・保険料・固定資産税 などです。"
+ },
+ {
+  "id": "g2-sokuteikeihi",
+  "name": "測定経費",
+  "reading": "そくていけいひ",
+  "journey": "2kogyo",
+  "category": "経費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "2kogyo:keihi",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-tsukiwarikeihi",
+   "g2-hasseikeihi",
+   "g2-shiharaikeihi"
+  ],
+  "description": "電力料・ガス代・水道料 など、メーターで 測った 使用量から 消費額を 出す 経費です。⚠️ 支払った 額では なく 測った 額を 使います。"
+ },
+ {
+  "id": "g2-hasseikeihi",
+  "name": "発生経費",
+  "reading": "はっせいけいひ",
+  "journey": "2kogyo",
+  "category": "経費",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧯",
+  "mapNode": "2kogyo:keihi",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-sokuteikeihi",
+   "g2-tanaoroshigenmouhi",
+   "g2-shiharaikeihi"
+  ],
+  "description": "棚卸減耗費の ように、その月に 発生した 額を 消費額と する 経費です。お金の 支払いと 関係なく 計算します。"
+ },
+ {
+  "id": "g2-jissaihaifu",
+  "name": "実際配賦",
+  "reading": "じっさいはいふ",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-yoteihaifu",
+   "g2-haifu",
+   "g2-seizoukansetsuhi"
+  ],
+  "description": "その月に 実際に かかった 製造間接費を 実際の 配賦率で 配賦する ことです。月末まで 計算できず、月ごとに 率が ゆれるので、ふつうは 予定配賦を 使います。"
+ },
+ {
+  "id": "g2-kijunsougyoudo",
+  "name": "基準操業度",
+  "reading": "きじゅんそうぎょうど",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-yoteihaifuritsu",
+   "g2-sougyoudosai",
+   "g2-koteiyosan"
+  ],
+  "description": "予定配賦率を 決める ときの もとに する 1年間の 作業時間 などの 量です。製造間接費の 予算を この 量で 割って 配賦率を 出します。"
+ },
+ {
+  "id": "g2-yosansai",
+  "name": "予算差異",
+  "reading": "よさんさい",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💹",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-sougyoudosai",
+   "g2-koushikihouhendouyo",
+   "g2-seizoukansetsuhihai"
+  ],
+  "description": "実際操業度での 予算額と 実際発生額の 差です。費用の 使いすぎ・節約を 表します。⚠️ 操業度差異は 固定費率 ×(実際 − 基準)の 操業度の 差です。",
+  "formula": "予算差異 = 予算許容額 − 実際発生額"
+ },
+ {
+  "id": "g2-sougyoudosai",
+  "name": "操業度差異",
+  "reading": "そうぎょうどさい",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-yosansai",
+   "g2-kijunsougyoudo",
+   "g2-koteiyosan"
+  ],
+  "description": "実際の 操業度が 基準操業度と ちがった ために 生まれる 差異です。公式法変動予算では 固定費率 ×(実際操業度 − 基準操業度)で 出します。",
+  "formula": "固定費率 ×(実際 − 基準操業度)"
+ },
+ {
+  "id": "g2-koteiyosan",
+  "name": "固定予算",
+  "reading": "こていよさん",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-koushikihouhendouyo",
+   "g2-yosansai",
+   "g2-kijunsougyoudo"
+  ],
+  "description": "操業度が 変わっても 予算額を 同じ 額に して おく 予算です。予算差異は 予算額 − 実際発生額で 出します。"
+ },
+ {
+  "id": "g2-koushikihouhendouyo",
+  "name": "公式法変動予算",
+  "reading": "こうしきほうへんどうよさん",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-koteiyosan",
+   "g2-hendouhiritsu",
+   "g2-yosansai"
+  ],
+  "description": "製造間接費の 予算を、変動費率 × 操業度 + 固定費 の 式で 決める 予算です。操業度に 合わせて 予算許容額が 変わります。",
+  "formula": "予算 = 変動費率 × 操業度 + 固定費"
+ },
+ {
+  "id": "g2-hendouhiritsu",
+  "name": "変動費率",
+  "reading": "へんどうひりつ",
+  "journey": "2kogyo",
+  "category": "製造間接費と 部門",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "2kogyo:haifu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-koushikihouhendouyo",
+   "g2-hendouhi",
+   "g2-kouteitenhou"
+  ],
+  "description": "操業度 1単位(1時間 など)あたりの 変動費の 額です。変動費の 予算を 基準操業度で 割って 出します。CVPでは 売上高に 対する 変動費の 割合を 言う ことも あります。"
+ },
+ {
+  "id": "g2-kanseihingenka",
+  "name": "完成品原価",
+  "reading": "かんせいひんげんか",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏆",
+  "mapNode": "2kogyo:kobetsu",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kanseihin",
+   "g2-seihin",
+   "g2-shikakarihin"
+  ],
+  "description": "その月に 完成した 製品の 原価です。仕掛品勘定の 貸方から 製品勘定の 借方へ 振り替えます。",
+  "formula": "月初仕掛品 + 当月製造費用 − 月末仕掛品"
+ },
+ {
+  "id": "g2-shisonhi",
+  "name": "仕損費",
+  "reading": "しそんひ",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧯",
+  "mapNode": "2kogyo:shison",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-shisonhinhyoukagaku",
+   "g2-shisonji",
+   "g2-seijoushisonji"
+  ],
+  "description": "仕損の ために かかった 原価です。個別原価計算では 仕損品の 原価から 評価額を 引いた 額で、もとの 指図書に 賦課します。"
+ },
+ {
+  "id": "g2-shisonhinhyoukagaku",
+  "name": "仕損品評価額",
+  "reading": "しそんひんひょうかがく",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♻️",
+  "mapNode": "2kogyo:shison",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-shisonhi",
+   "g2-shisonji",
+   "g2-seijoushisonji"
+  ],
+  "description": "仕損品を 売ったり 材料に 使ったり できる 値打ちです。仕損品勘定(資産)で 記録し、その 分だけ 仕損費を 少なく します。"
+ },
+ {
+  "id": "g2-seijoushisonji",
+  "name": "正常仕損",
+  "reading": "せいじょうしそんじ",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "2kogyo:shison",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-shisonji",
+   "g2-kanseihinfutan",
+   "g2-ryoushafutan"
+  ],
+  "description": "作る うえで さけられない、ふつうの 量の 仕損です。2級の 総合原価計算では 度外視法で、完成品や 月末仕掛品の 原価に ふくめます。⚠️ 異常な 仕損は 非原価項目です。"
+ },
+ {
+  "id": "g2-seijougenson",
+  "name": "正常減損",
+  "reading": "せいじょうげんそん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "2kogyo:shison",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-genson",
+   "g2-kanseihinfutan",
+   "g2-ryoushafutan"
+  ],
+  "description": "さけられない ふつうの 量の 減損です。仕損と 同じく 度外視法で 良品の 原価に ふくめ、どこで 起きたかで 負担の しかたを 決めます。"
+ },
+ {
+  "id": "g2-kanseihinfutan",
+  "name": "完成品負担",
+  "reading": "かんせいひんふたん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "2kogyo:shison",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-ryoushafutan",
+   "g2-seijoushisonji",
+   "g2-kanseihinkansanryou"
+  ],
+  "description": "正常仕損・減損が 月末仕掛品の 進捗度より あとで 起きた とき、その 原価を 完成品だけに 負担させる ことです。⚠️ 月末仕掛品は 仕損の 地点まで 来ていないからです。"
+ },
+ {
+  "id": "g2-ryoushafutan",
+  "name": "両者負担",
+  "reading": "りょうしゃふたん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "2kogyo:shison",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-kanseihinfutan",
+   "g2-seijougenson",
+   "g2-getsumatsushikakari"
+  ],
+  "description": "正常仕損・減損が 月末仕掛品の 進捗度より 前(工程の はじめ など)で 起きた とき、その 原価を 完成品と 月末仕掛品の 両方に 負担させる ことです。"
+ },
+ {
+  "id": "g2-kanseihinkansanryou",
+  "name": "完成品換算量",
+  "reading": "かんせいひんかんさんりょう",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-shinchokudo",
+   "g2-kakouhi",
+   "g2-getsumatsushikakari"
+  ],
+  "description": "作りかけの 量を「完成品 なら 何個分か」に なおした 量です。加工費を 分ける ときに 使います。",
+  "formula": "完成品換算量 = 数量 × 進捗度"
+ },
+ {
+  "id": "g2-toukyuubetsusougoug",
+  "name": "等級別総合原価計算",
+  "reading": "とうきゅうべつそうごうげんかけいさん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-toukakeisuu",
+   "g2-kumibetsusougougenk",
+   "g2-sougougenkakeisan"
+  ],
+  "description": "同じ 種類で 大きさ・重さ などが ちがう 製品を 作る ときの 総合原価計算です。完成品原価を 等価係数で 等級ごとに 分けます。⚠️ 種類が ちがう 製品なら 組別総合原価計算です。"
+ },
+ {
+  "id": "g2-toukakeisuu",
+  "name": "等価係数",
+  "reading": "とうかけいすう",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔣",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-toukyuubetsusougoug",
+   "g2-sougougenkakeisan",
+   "g2-kumibetsusougougenk"
+  ],
+  "description": "等級ごとの 原価の 重さの 比率です。完成品数量 × 等価係数(積数)の 割合で 完成品原価を 分けます。"
+ },
+ {
+  "id": "g2-kumibetsusougougenk",
+  "name": "組別総合原価計算",
+  "reading": "くみべつそうごうげんかけいさん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-toukyuubetsusougoug",
+   "g2-kouteibetsusougouge",
+   "g2-sougougenkakeisan"
+  ],
+  "description": "種類の ちがう 製品(組)を 作る ときの 総合原価計算です。組直接費は 各組に 賦課し、組間接費は 基準で 配賦してから 組ごとに 計算します。"
+ },
+ {
+  "id": "g2-kouteibetsusougouge",
+  "name": "工程別総合原価計算",
+  "reading": "こうていべつそうごうげんかけいさん",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-ruikahou",
+   "g2-zenkouteihi",
+   "g2-sougougenkakeisan"
+  ],
+  "description": "製造が いくつかの 工程に 分かれる ときの 総合原価計算です。工程ごとに 完成品原価を 出し、次の 工程へ 送ります。"
+ },
+ {
+  "id": "g2-ruikahou",
+  "name": "累加法",
+  "reading": "るいかほう",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zenkouteihi",
+   "g2-kouteibetsusougouge",
+   "g2-kanseihingenka"
+  ],
+  "description": "前の 工程の 完成品原価を 次の 工程の 前工程費として 足しながら、順に 計算する 工程別の 方法です。最後の 工程の 完成品原価が 製品の 原価です。"
+ },
+ {
+  "id": "g2-zenkouteihi",
+  "name": "前工程費",
+  "reading": "ぜんこうていひ",
+  "journey": "2kogyo",
+  "category": "原価計算の 方法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "2kogyo:sogo",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-ruikahou",
+   "g2-kouteibetsusougouge",
+   "g2-shinchokudo"
+  ],
+  "description": "前の 工程から 送られて きた 原価です。次の 工程では はじめに 投入する 材料と 同じに 考えるので、⚠️ 月末仕掛品にも 進捗度を かけません。"
+ },
+ {
+  "id": "g2-hyoujungenkakado",
+  "name": "標準原価カード",
+  "reading": "ひょうじゅんげんかかーど",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-genkahyoujun",
+   "g2-hyoujungenka",
+   "g2-hyoujungenkakeisan"
+  ],
+  "description": "製品1個の 標準原価を、直接材料費・直接労務費・製造間接費ごとに 標準単価 × 標準数量で 書いた 表です。"
+ },
+ {
+  "id": "g2-pasharupuran",
+  "name": "パーシャル・プラン",
+  "reading": "ぱーしゃるぷらん",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🅿️",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-shingurupuran",
+   "g2-genkasai",
+   "g2-hyoujungenkakeisan"
+  ],
+  "description": "標準原価計算の 記帳で、仕掛品勘定の 借方(当月製造費用)に 実際原価を 書く 方法です。差異は 仕掛品勘定で 計算します。⚠️ シングル・プランは 差異を 材料などの 勘定で 出します。"
+ },
+ {
+  "id": "g2-shingurupuran",
+  "name": "シングル・プラン",
+  "reading": "しんぐるぷらん",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-pasharupuran",
+   "g2-genkasai",
+   "g2-hyoujungenkakeisan"
+  ],
+  "description": "標準原価計算の 記帳で、仕掛品勘定の 借方に 標準原価を 書く 方法です。差異は 材料・賃金・製造間接費の 勘定で 計算します。"
+ },
+ {
+  "id": "g2-sagyoujikansai",
+  "name": "作業時間差異",
+  "reading": "さぎょうじかんさい",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chinritsusai",
+   "g2-suuryousai",
+   "g2-nouritsusai"
+  ],
+  "description": "直接労務費の 差異の うち、作業時間が 標準と ちがった ことに よる 分です。(標準時間 − 実際時間)× 標準賃率 で 出します。⚠️ 賃率差異は 賃率の 差に 実際時間を かけます。",
+  "formula": "(標準時間 − 実際時間)× 標準賃率"
+ },
+ {
+  "id": "g2-nouritsusai",
+  "name": "能率差異",
+  "reading": "のうりつさい",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-sagyoujikansai",
+   "g2-sougyoudosai",
+   "g2-yosansai"
+  ],
+  "description": "製造間接費の 差異の うち、作業の 能率が 標準と ちがった ために 生まれる 分です。(標準時間 − 実際時間)× 標準配賦率(または 変動費率)で 出します。"
+ },
+ {
+  "id": "g2-genkahyoujun",
+  "name": "原価標準",
+  "reading": "げんかひょうじゅん",
+  "journey": "2kogyo",
+  "category": "標準原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "2kogyo:hyojun",
+  "field": "標準原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-hyoujungenkakado",
+   "g2-hyoujungenka",
+   "g2-hyoujungenkakeisan"
+  ],
+  "description": "製品1個 あたりの 標準原価です。これに 生産量を かけると、完成品や 仕掛品の 標準原価に なります。⚠️ 標準原価は 生産量を かけた 合計の 額です。"
+ },
+ {
+  "id": "g2-koteihichousei",
+  "name": "固定費調整",
+  "reading": "こていひちょうせい",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "2kogyo:chokusetsu",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-zenbugenkakeisan",
+   "g2-chokusetsugenkakeis",
+   "g2-koteihi"
+  ],
+  "description": "直接原価計算の 営業利益を 全部原価計算の 営業利益に なおす 計算です。期末の 在庫に ふくまれる 固定製造原価を 足し、期首の 分を 引きます。"
+ },
+ {
+  "id": "g2-zenbugenkakeisan",
+  "name": "全部原価計算",
+  "reading": "ぜんぶげんかけいさん",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "2kogyo:chokusetsu",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-chokusetsugenkakeis",
+   "g2-koteihichousei",
+   "g2-koteihi"
+  ],
+  "description": "変動費も 固定製造原価も ぜんぶ 製品の 原価に 入れる 原価計算です。外へ 出す 財務諸表は この 方法で 作ります。⚠️ 在庫が ふえると 直接原価計算より 利益が 大きく 出ます。"
+ },
+ {
+  "id": "g2-kouteitenhou",
+  "name": "高低点法",
+  "reading": "こうていてんほう",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛰️",
+  "mapNode": "2kogyo:cvp",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-hendouhiritsu",
+   "g2-koteihi",
+   "g2-hendouhi"
+  ],
+  "description": "最高の 操業度と 最低の 操業度の 原価の 差から、変動費率と 固定費を 出す 方法です。",
+  "formula": "変動費率 = 原価の 差 ÷ 操業度の 差"
+ },
+ {
+  "id": "g2-sonekibunkitenuriag",
+  "name": "損益分岐点売上高",
+  "reading": "そんえきぶんきてんうりあげだか",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "2kogyo:cvp",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-sonekibunkiten",
+   "g2-koukenriekiritsu",
+   "g2-anzenyoyuuritsu"
+  ],
+  "description": "利益が ゼロに なる 売上高です。固定費を 貢献利益率で 割って 出します。",
+  "formula": "固定費 ÷ 貢献利益率"
+ },
+ {
+  "id": "g2-mokuhyourieki",
+  "name": "目標利益",
+  "reading": "もくひょうりえき",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "2kogyo:cvp",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-sonekibunkitenuriag",
+   "g2-koukenriekiritsu",
+   "g2-shibuipibunseki"
+  ],
+  "description": "会社が ねらう 営業利益の 額です。目標利益を 出すのに 要る 売上高は、固定費と 目標利益の 合計を 貢献利益率で 割って 求めます。",
+  "formula": "(固定費 + 目標利益)÷ 貢献利益率"
+ },
+ {
+  "id": "g2-koukenriekiritsu",
+  "name": "貢献利益率",
+  "reading": "こうけんりえきりつ",
+  "journey": "2kogyo",
+  "category": "直接原価と CVP",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥧",
+  "mapNode": "2kogyo:cvp",
+  "field": "直接原価",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-koukenrieki",
+   "g2-sonekibunkitenuriag",
+   "g2-mokuhyourieki"
+  ],
+  "description": "売上高に しめる 貢献利益の 割合です。1 − 変動費率 でも 出せます。損益分岐点の 計算で 固定費を この 率で 割ります。",
+  "formula": "貢献利益 ÷ 売上高"
+ },
+ {
+  "id": "g2-seizougenkahoukokus",
+  "name": "製造原価報告書",
+  "reading": "せいぞうげんかほうこくしょ",
+  "journey": "2kogyo",
+  "category": "原価の 分類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "2kogyo:bunrui",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seizougenka",
+   "g2-kanseihingenka",
+   "g2-shikakarihin"
+  ],
+  "description": "その 期の 製造原価の 内わけを 書いた 書類です。材料費・労務費・経費を 足した 当期製造費用に 期首・期末の 仕掛品を 調整して 当期製品製造原価を 出します。"
+ },
+ {
+  "id": "g2-koujoumotochou",
+  "name": "工場元帳",
+  "reading": "こうじょうもとちょう",
+  "journey": "2kogyo",
+  "category": "原価の 分類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "2kogyo:bunrui",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-seizougenka",
+   "g2-higenkakoumoku",
+   "g2-kougyouboki"
+  ],
+  "description": "工場の 帳簿を 本社から 独立させた ときに 工場で つける 元帳です。本社との 取引は 工場では 本社勘定、本社では 工場勘定で 記録します。"
+ },
+ {
+  "id": "g2-higenkakoumoku",
+  "name": "非原価項目",
+  "reading": "ひげんかこうもく",
+  "journey": "2kogyo",
+  "category": "原価の 分類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "2kogyo:bunrui",
+  "field": "原価計算",
+  "ruleset": "工業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "g2-genka",
+   "g2-seizougenka",
+   "g2-seijoushisonji"
+  ],
+  "description": "原価に 入れない もので、支払利息 などの 営業外費用・災害の 損失・異常な 仕損 などです。損益計算書の 別の 区分に 書きます。"
+ }
+]

@@ -110,8 +110,8 @@ GAMES = {
     #   ことばは tools/nail/terms-<旅>.json → nail/terms.js(tools/nail/terms_js.py)。しくみは nail/nail.js(NAIL。気象予報士を 写して 🧮 計算問題を 外した。📝 検定の 札・🧩 4択)。
     #   ⚠️⚠️ 医療と まぜない(診断・治療を 書かない)・くすりの 量や 時間・手順を 書かない・ブランド名を 出さない(決まりは tools/nail/PROMPT.md)。
     #   絵は まだ。届いたら tools/nail/art/square-src.png → tools/icon_from_square.py nail(iconv を +1)/ title-src.png → tools/title_from_art.py nail(logo を True・art.word を 実寸に)/ nail/hero.webp(hero を True)
-    "nail": dict(name="フリックネイリスト", modes="NAIL", kinds=set(), color="#e64980", hero=False, logo=False,
-                 art=dict(word=(900, 211), hero=(1536, 1024), alt="フリックネイリスト", iconv=1, wordv=1),
+    "nail": dict(name="フリックネイリスト", modes="NAIL", kinds=set(), color="#e64980", hero=True, logo=False,
+                 art=dict(word=(900, 211), hero=(1536, 1024), alt="フリックネイリスト", iconv=1, wordv=2),
                  lead="爪と 手の しくみ・衛生と 爪の トラブル・ケアと 道具・ポリッシュと 色・ジェルネイル・スカルプチュアと 長さだし・ネイルアート・接客と カウンセリング・サロンの 開業と 経営の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 検定で 出るか(ネイリスト技能検定・ジェルネイル技能検定・衛生)が わかるよ。ネイルが すきな 子の ことばから、プロの ネイリスト・サロンを 開く 人の ことばまで 990語。4択クイズで 検定の 筆記の 練習も できるよ。",
                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。爪の トラブルは 皮膚科で みてもらってね。塗る・削る・アートの 手の 技術は、スクールや サロンで 練習して 身に つくよ。くすりの 使いかたや 時間は のせていないよ。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、指先の おしゃれの しくみが 見えてくるよ。ネイリストの 検定の 団体とは 関係ありません。"),

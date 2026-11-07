@@ -12,7 +12,7 @@
 <meta property="og:title" content="フリックネイリスト｜かずとも">
 <meta property="og:description" content="爪と 手の しくみ・衛生と 爪の トラブル・ケアと 道具・ポリッシュと 色・ジェルネイル・スカルプチュアと 長さだし・ネイルアート・接客と カウンセリング・サロンの 開業と 経営の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 検定で 出るか(ネイリスト技能検定・ジェルネイル技能検定・衛生)が わかるよ。ネイルが すきな 子の ことばから、プロの ネイリスト・サロンを 開く 人の ことばまで 990語。4択クイズで 検定の 筆記の 練習も できるよ。 かずともの フリックゲーム。">
 <meta property="og:url" content="https://kazutomo.app/flick/nail/">
-<meta property="og:image" content="https://kazutomo.app/flick/hero.webp">
+<meta property="og:image" content="https://kazutomo.app/flick/nail/hero.webp">
 <meta property="og:locale" content="ja_JP">
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
@@ -451,6 +451,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックネイリスト</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリックネイリスト" width="1536" height="1024">
     <!-- 🙂 さいしょに マイページで ニックネームと アイコン(けいくん 2026-11-02。いちばん下の 遊びかたでは 見つからなかった → 説明の すぐ下へ)。アイコンが まだ 無い 人にだけ -->
     <p class="how0 hidden" id="how0">🙂 さいしょに 右上の <button type="button" class="lnk" id="how0-btn">マイページ</button> で ニックネームと アイコンを 決めてね。きろくは その なまえで のこるよ。</p>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
@@ -590,7 +591,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"nail", name:"フリックネイリスト", modes:(typeof NAIL === "object" ? NAIL.modes : []), assets:"../", logo:false, hero:false, dir:"nail/", lead:"爪と 手の しくみ・衛生と 爪の トラブル・ケアと 道具・ポリッシュと 色・ジェルネイル・スカルプチュアと 長さだし・ネイルアート・接客と カウンセリング・サロンの 開業と 経営の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 検定で 出るか(ネイリスト技能検定・ジェルネイル技能検定・衛生)が わかるよ。ネイルが すきな 子の ことばから、プロの ネイリスト・サロンを 開く 人の ことばまで 990語。4択クイズで 検定の 筆記の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。爪の トラブルは 皮膚科で みてもらってね。塗る・削る・アートの 手の 技術は、スクールや サロンで 練習して 身に つくよ。くすりの 使いかたや 時間は のせていないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、指先の おしゃれの しくみが 見えてくるよ。ネイリストの 検定の 団体とは 関係ありません。" };
+const GAME = { id:"nail", name:"フリックネイリスト", modes:(typeof NAIL === "object" ? NAIL.modes : []), assets:"../", logo:false, hero:true, dir:"nail/", lead:"爪と 手の しくみ・衛生と 爪の トラブル・ケアと 道具・ポリッシュと 色・ジェルネイル・スカルプチュアと 長さだし・ネイルアート・接客と カウンセリング・サロンの 開業と 経営の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 検定で 出るか(ネイリスト技能検定・ジェルネイル技能検定・衛生)が わかるよ。ネイルが すきな 子の ことばから、プロの ネイリスト・サロンを 開く 人の ことばまで 990語。4択クイズで 検定の 筆記の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。爪の トラブルは 皮膚科で みてもらってね。塗る・削る・アートの 手の 技術は、スクールや サロンで 練習して 身に つくよ。くすりの 使いかたや 時間は のせていないよ。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、指先の おしゃれの しくみが 見えてくるよ。ネイリストの 検定の 団体とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

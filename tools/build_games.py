@@ -100,9 +100,9 @@ GAMES = {
     #   絵は まだ(仮の アイコン tools/kisho/placeholder_icon.py)。届いたら tools/kisho/art/square-src.png → tools/icon_from_square.py kisho(iconv を +1)/ title-src.png → tools/title_from_art.py kisho(logo を True・art.word を 実寸に)/ kisho/hero.webp(hero を True)
     # フリック自動車運転免許(けいくん 2026-11-05「フリック自動車運転免許を 免許が受かるレベルで 作成したい」→「すべてお願いします」)。まとめは docs/フリック自動車運転免許-はじめかた.md。
     #   ことばは tools/menkyo/terms-<旅>.json・⭕❌ は maru-<旅>.json・危険予測は kiken-q.json・標識は signs.json → menkyo/terms.js(tools/menkyo/terms_js.py)。しくみは menkyo/menkyo.js(MENKYO。気象予報士を 写して ⭕❌・模擬試験・危険予測・標識クイズ・❌ 復習(運転免許だけの 例外)を 足した)。
-    #   絵は まだ(仮の アイコンは tools/menkyo/placeholder_icon.py)。届いたら square-src.png → icon_from_square.py menkyo / title-src.png → title_from_art.py menkyo(logo を True)/ menkyo/hero.webp(hero を True)
+    #   トップの 絵・アイコンは 入れた(2026-11-07)。題名は まだ。届いたら title-src.png → title_from_art.py menkyo(logo を True)/ menkyo/hero.webp(hero を True)
     "menkyo": dict(name="フリック自動車運転免許", modes="MENKYO", kinds=set(), color="#2f9e44", hero=True, logo=False,
-                   art=dict(word=(900, 211), hero=(1536, 1024), alt="フリック自動車運転免許", iconv=1, wordv=2),
+                   art=dict(word=(900, 211), hero=(1536, 1024), alt="フリック自動車運転免許", iconv=2, wordv=2),
                    lead="信号と 合図・標識・標示と 走る 場所・歩行者と 自転車を 守る・速さと 追い越し・交差点と 駐停車と 踏切・高速道路と 夜と 悪天候・安全運転の 心と 危険予測・免許と 車の きまりの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、仮免・本免の どちらで 出るかが わかるよ。歩く 人・自転車の 人として 知っておく きまりから、運転免許の 学科試験の 範囲の めやすまで 990語。⭕❌ もんだい・本番と 同じ 形の 模擬試験・危険予測・標識クイズで 学科試験の 練習も できるよ。",
                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 試験の 前には 教習所の 教本と「交通の教則」で 確かめてね。運転の 練習(技能)は 教習所で してね。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、道の きまりと 思いやりが 見えてくるよ。警察庁・都道府県の 公安委員会とは 関係ありません。"),

@@ -1697,8 +1697,10 @@
   ・ふりがなの 直しは `tools/takken/rbfix-*.json`(宅建士の 中だけ)。見かたは `python3 tools/takken/ruby_dump.py <旅>`
 - 作りかた: 事実を 確かめる 係 3人 → 置き場所 1人 → 旅ごとに 書く 係 9人(ことば・⭕❌・数字)→ **別の 係 9人が 1語・1問ずつ 条文と 見くらべた**。おもな 直し: 所有権留保の 登記の 期限(43条: 引渡しまで)の 答えが 逆 / 報酬の 区分(200万円を こえ 400万円 以下 4.4%)/ 仮使用の 認定(2025年4月から 2階建ての 住宅も)/ 外壁の開口部(かいこうぶ)/ 生前贈与の 加算(7年へ 少しずつ)/ 代襲相続の 書きかた / 同じ ことの ⭕版と ❌版の 入れかえ
 - **トップの 絵は 入れた**(2026-11-07。`takken/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。1回目は 札 32こ中 23こが ゲームに 無い ことば・5番「取引のきまり」の 箱が 無い・コインの 山と 上がる 矢印・題名の 士/土が あいまい で 入れなかった。2回目は 9つの 箱 × 4こ ぜんぶ ゲームの 読み。のこった 3か所は **絵の 中で 直した**(`tools/takken/fix_text.py`): 「たゅうかいですうりょう」→「ちゅうかいてすうりょう」/「いっちだて」→「いっこだて」/ 下の 札の くずれた「模擬試験で」を 書きなおし。人は まん中に 大きい(頼んだ 下 3分の1では ない)が けいくんの 絵の まま。もとの 絵は 入れものに 入れていない
-- アイコン・題名は まだ(仮の アイコン `tools/takken/placeholder_icon.py` = 家と 鍵。`logo=False`)。届いたら square-src.png → `icon_from_square.py takken`(iconv +1)/ title-src.png → `title_from_art.py takken`(`logo=True`・`art.word` を 実寸)/ `takken/hero.webp`(`hero=True`)。
-  ⚠️ 絵を 頼む ときは 実在の 不動産会社の ロゴ・看板・物件の 値段を 描かせない。人物は 下 3分の1に 小さく。**「宅建土」(士 と 土)に なりやすい**ので 届いた 字を かならず 読む。販売ページ `HOME_GAMES` と 規約の 一覧 `FLICK_SERIES_GAMES` は 絵が 届いてから
+- **アイコンも 入れた**(2026-11-07。けいくんの 四角い 絵 1254px を 切らずに そのまま `tools/takken/art/square-src.png` → `python3 tools/icon_from_square.py takken`。`iconv` = 2。札は トップの 絵と 同じで、ちゅうかいてすうりょう・いっこだて も 正しい)。
+  **題名も 入れた**(2026-11-07。けいくんの ChatGPT の 切りぬき `tools/takken/art/title-src.png` 2185×720 → `python3 tools/title_from_art.py takken` → `takken/logo-word.webp` 900×195。`logo=True`・`wordv` = 3)。「フリック宅建士」7字を 読んで 確かめた(士 = 上の 横線が 長い)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
+  差しかえる ときは square-src.png → `icon_from_square.py takken`(iconv +1)/ title-src.png → `title_from_art.py takken`(`art.word` を 実寸・wordv +1)。
+  ⚠️ 絵を 頼む ときは 実在の 不動産会社の ロゴ・看板・物件の 値段を 描かせない。人物は 下 3分の1に 小さく。**「宅建土」(士 と 土)に なりやすい**ので 届いた 字を かならず 読む。販売ページ `HOME_GAMES`(夢のしごと の 章、税理士の となり)と 規約の 一覧 `FLICK_SERIES_GAMES` にも 2026-11-07 に 足した(speed-king)
 - 確かめかた: `node tools/play-all.mjs takken/`(全198ステージ)/ `node tools/click-all.mjs takken/`(W=320 も)。2026-11-07 に 通した
 
 ## フリック気象予報士(`kisho/`。けいくん 2026-10-31「新しいセッションで フリック気象予報士を作成したい。気象予報士のテストに受かるレベルになるために必要な 知識をフリック形式の問題にしてください」→ 名前「おすすめのまま」・旅と 段は「これで受かるレベルになるの？」→「**気象予報士に受かるレベルになるように作成してください**」。まとめは `docs/フリック気象予報士-はじめかた.md`)

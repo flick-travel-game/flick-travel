@@ -1,0 +1,2114 @@
+[
+ {
+  "id": "s2-ginkoukanjouchousei",
+  "name": "銀行勘定調整表",
+  "reading": "ぎんこうかんじょうちょうせいひょう",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kigyouzandakakijunh",
+   "s2-renrakumitsuuchi",
+   "s2-ginkouzandakashoume"
+  ],
+  "description": "会社の 当座預金の 帳簿残高と、銀行の 残高証明書の 残高が ちがう ときに、その わけを ならべて 合わせる 表です。会社の 記帳に もれや まちがいが あれば 修正仕訳を します。"
+ },
+ {
+  "id": "s2-yuukashouken",
+  "name": "有価証券",
+  "reading": "ゆうかしょうけん",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-baibaimokutekiyuuka",
+   "s2-mankihoyuumokutekis",
+   "s2-sonotayuukashouken"
+  ],
+  "description": "株式や 社債・国債などの 証券です。持つ 目的で 売買目的有価証券・満期保有目的債券・子会社株式・関連会社株式・その他有価証券に 分けて、決算の 評価の しかたも 変わります。"
+ },
+ {
+  "id": "s2-baibaimokutekiyuuka",
+  "name": "売買目的有価証券",
+  "reading": "ばいばいもくてきゆうかしょうけん",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-jikahou",
+   "s2-yuukashoukenhyoukas",
+   "s2-yuukashoukenbaikyak"
+  ],
+  "description": "値上がりで もうけを 出すために 短い あいだ 持つ 有価証券です。資産なので 買ったら 借方。決算では 時価で 評価し、差額は 有価証券評価損益(損益計算書)に します。"
+ },
+ {
+  "id": "s2-mankihoyuumokutekis",
+  "name": "満期保有目的債券",
+  "reading": "まんきほゆうもくてきさいけん",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shoukyakugenkahou",
+   "s2-yuukashoukenrisoku"
+  ],
+  "description": "満期まで 持ちつづける つもりの 社債などです。時価で 評価しません。額面と 取得価額の 差が 金利の 調整なら、償却原価法で 毎期 少しずつ 帳簿価額を 額面に 近づけます。"
+ },
+ {
+  "id": "s2-kogaishakabushiki",
+  "name": "子会社株式",
+  "reading": "こがいしゃかぶしき",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kanrengaishakabushi",
+   "s2-sonotayuukashouken"
+  ],
+  "description": "ほかの 会社を 支配する ために 持つ 株式です。売る つもりが ないので、決算でも 時価で 評価せず、取得原価の まま 貸借対照表に のせます。"
+ },
+ {
+  "id": "s2-sonotayuukashouken",
+  "name": "その他有価証券",
+  "reading": "そのたゆうかしょうけん",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-sonotayuukashoukenh",
+   "s2-zenbujunshisanchoku",
+   "s2-araigaehou"
+  ],
+  "description": "売買目的・満期保有・子会社・関連会社の どれにも 当たらない 有価証券です。決算で 時価に しますが、差額は 損益に せず 純資産の その他有価証券評価差額金に 入れます。"
+ },
+ {
+  "id": "s2-seisandakahireihou",
+  "name": "生産高比例法",
+  "reading": "せいさんだかひれいほう",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-nihyakupasentoteiri",
+   "s2-hoshouritsu"
+  ],
+  "description": "使った 量や 走った きょりに 比例させて 減価償却費を 出す 方法です。総量が 見積もれる 鉱業用の 設備や 車両・航空機などで 使います。",
+  "formula": "減価償却費 = (取得原価 − 残存価額) × 当期利用量 ÷ 総利用可能量"
+ },
+ {
+  "id": "s2-asshukukichou",
+  "name": "圧縮記帳",
+  "reading": "あっしゅくきちょう",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗜️",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kokkohojokinjuzouek",
+   "s2-koteishisanasshukus"
+  ],
+  "description": "国などから 補助金を もらって 固定資産を 買った とき、補助金の 額だけ 取得原価を 下げる 処理です。2級は 直接減額方式で、借方 固定資産圧縮損・貸方 その 固定資産と 書きます。"
+ },
+ {
+  "id": "s2-risutorihiki",
+  "name": "リース取引",
+  "reading": "りーすとりひき",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shiyoukenshisan",
+   "s2-risufusai",
+   "s2-karite"
+  ],
+  "description": "機械や 車などを 一定の 期間 借りて 使い、リース料を はらう 取引です。2級は 借手の 処理だけで、使う 権利を 使用権資産、はらう 義務を リース負債と して のせます。"
+ },
+ {
+  "id": "s2-gaikadatetorihiki",
+  "name": "外貨建取引",
+  "reading": "がいかだてとりひき",
+  "journey": "2shogyo",
+  "category": "外貨建取引",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "2shogyo:gaika",
+  "field": "外貨",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kawasereto",
+   "s2-torihikibireto",
+   "s2-kessanbireto"
+  ],
+  "description": "代金を ドルなど 外国の お金で 決める 取引です。帳簿は 円で 書くので、為替レートで 円に 換算します。取引の とき・決算の とき・決済の ときの 3つの 場面が あります。"
+ },
+ {
+  "id": "s2-kawasereto",
+  "name": "為替レート",
+  "reading": "かわせれーと",
+  "journey": "2shogyo",
+  "category": "外貨建取引",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💱",
+  "mapNode": "2shogyo:gaika",
+  "field": "外貨",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-torihikibireto",
+   "s2-kawasesasoneki"
+  ],
+  "description": "円と 外国の お金を 取りかえる ときの 比率です。1ドル 150円 のように あらわします。レートが 動くと、同じ 1ドルでも 円の 金額が かわり、為替差損益が 生まれます。"
+ },
+ {
+  "id": "s2-shuuzenhikiatekin",
+  "name": "修繕引当金",
+  "reading": "しゅうぜんひきあてきん",
+  "journey": "2shogyo",
+  "category": "引当金",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛠️",
+  "mapNode": "2shogyo:hikiate",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shuuzenhikiatekinku",
+   "s2-shihontekishishutsu"
+  ],
+  "description": "毎年は しないが 何年かに 1回 する 修繕に そなえて、当期の 分を 見積もって 積む 負債です。決算で 借方 修繕引当金繰入・貸方 修繕引当金。修繕したら 取りくずします。"
+ },
+ {
+  "id": "s2-shouyohikiatekin",
+  "name": "賞与引当金",
+  "reading": "しょうよひきあてきん",
+  "journey": "2shogyo",
+  "category": "引当金",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "2shogyo:hikiate",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shouyohikiatekinkur",
+   "s2-taishokukyuufuhikia"
+  ],
+  "description": "次の ボーナスの うち 当期に はたらいた 分を 見積もって 積む 負債です。決算で 借方 賞与引当金繰入・貸方 賞与引当金。はらう ときは 引当金を へらし、こえた 分は 賞与に します。"
+ },
+ {
+  "id": "s2-taishokukyuufuhikia",
+  "name": "退職給付引当金",
+  "reading": "たいしょくきゅうふひきあてきん",
+  "journey": "2shogyo",
+  "category": "引当金",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👴",
+  "mapNode": "2shogyo:hikiate",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-taishokukyuufuhiyou",
+   "s2-shouyohikiatekin"
+  ],
+  "description": "社員が やめる ときの 退職金や 年金に そなえて 積む 負債です。毎期 借方 退職給付費用・貸方 退職給付引当金。退職金を はらったら 退職給付引当金を へらします。"
+ },
+ {
+  "id": "s2-shuuekininshiki",
+  "name": "収益認識",
+  "reading": "しゅうえきにんしき",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "2shogyo:shueki",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-rikougimu",
+   "s2-ichijitendejuusoku",
+   "s2-hendoutaika"
+  ],
+  "description": "売上を いつ・いくらで 計上するかの 考えかたです。契約を 見て、約束(履行義務)を はたした ときに、もらえる と 見こむ 対価の 額で 収益に します。"
+ },
+ {
+  "id": "s2-ekimushuueki",
+  "name": "役務収益",
+  "reading": "えきむしゅうえき",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💼",
+  "mapNode": "2shogyo:service",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-ekimugenka",
+   "s2-sabisugyounoshikaka"
+  ],
+  "description": "学習塾・旅行・設計など サービスを 提供して 得る 収益です。収益の 箱なので 計上したら 貸方。物を 売る 業の「売上」に あたる 勘定科目です。"
+ },
+ {
+  "id": "s2-honten",
+  "name": "本店",
+  "reading": "ほんてん",
+  "journey": "2shogyo",
+  "category": "本支店会計",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "2shogyo:honshi",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shiten",
+   "s2-shitenkanjou"
+  ],
+  "description": "会社の 中心と なる 店です。本支店会計では 本店も 支店も それぞれ 帳簿を つけ、本店の 帳簿には 支店との やりとりを まとめる「支店」勘定を 置きます。"
+ },
+ {
+  "id": "s2-shiten",
+  "name": "支店",
+  "reading": "してん",
+  "journey": "2shogyo",
+  "category": "本支店会計",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏪",
+  "mapNode": "2shogyo:honshi",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-honten",
+   "s2-hontenkanjou"
+  ],
+  "description": "本店とは べつの 場所に ある 店です。支店が 自分で 帳簿を つける ときは、本店との やりとりを「本店」勘定に 記録します。決算で 本店と 合わせて 1つの 会社の 表に します。"
+ },
+ {
+  "id": "s2-shiyoukenshisan",
+  "name": "使用権資産",
+  "reading": "しようけんしさん",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔑",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-risufusai",
+   "s2-shiyoukenshisangenk",
+   "s2-shiyoukenshisannoge"
+  ],
+  "description": "リースで 借りた 物を 使う 権利を あらわす 資産です。リース開始日に 借方 使用権資産・貸方 リース負債。⚠️ 前の 試験では「リース資産」と よんで いました。"
+ },
+ {
+  "id": "s2-urikakesaikennojout",
+  "name": "売掛債権の譲渡",
+  "reading": "うりかけさいけんのじょうと",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "2shogyo:denshi2",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-urikakesaikenbaikya",
+   "s2-fuakutaringu"
+  ],
+  "description": "まだ もらって いない 売掛金を、期日より 前に ほかの 会社へ 売って お金に かえる ことです。売掛金を 貸方で へらし、受け取りが 少ない 差額は 売掛債権売却損に します。"
+ },
+ {
+  "id": "s2-jikangaiazukeire",
+  "name": "時間外預入",
+  "reading": "じかんがいあずけいれ",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-ginkougawanochousei",
+   "s2-ginkoukanjouchousei"
+  ],
+  "description": "銀行の 営業時間の あとに 預けた お金で、銀行では 翌日の 入金に なります。会社の 記帳は 正しいので 修正仕訳は いりません。調整表では 銀行の 残高に 加えます。"
+ },
+ {
+  "id": "s2-renrakumitsuuchi",
+  "name": "連絡未通知",
+  "reading": "れんらくみつうち",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📭",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-hikiotoshimikichou",
+   "s2-ginkoukanjouchousei"
+  ],
+  "description": "振込の 入金や 引落しが あったのに、銀行からの 知らせが 届かず 会社が まだ 記帳して いない ものです。会社の 記帳もれなので 修正仕訳を します(例 借方 当座預金・貸方 売掛金)。"
+ },
+ {
+  "id": "s2-gokinyuu",
+  "name": "誤記入",
+  "reading": "ごきにゅう",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-renrakumitsuuchi",
+   "s2-kigyouzandakakijunh"
+  ],
+  "description": "会社が 金額や 科目を まちがえて 記帳した ものです。会社の 帳簿が まちがいなので、正しい 金額との 差だけ 修正仕訳を します。銀行の 残高は 正しいので 直しません。"
+ },
+ {
+  "id": "s2-yuukashoukenbaikyak",
+  "name": "有価証券売却益",
+  "reading": "ゆうかしょうけんばいきゃくえき",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎉",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-baibaimokutekiyuuka",
+   "s2-yuukashouken"
+  ],
+  "description": "売買目的有価証券を 帳簿価額より 高く 売った ときの もうけです。収益なので 貸方。⚠️ 売った 手数料は 売却益から 引くか 支払手数料に するか 問題の 指示を 見ます。"
+ },
+ {
+  "id": "s2-yuukashoukenhyoukas",
+  "name": "有価証券評価損益",
+  "reading": "ゆうかしょうけんひょうかそんえき",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-jikahou",
+   "s2-kirihanashihou"
+  ],
+  "description": "売買目的有価証券を 決算で 時価に 直した ときの 差額です。時価が 上がれば 貸方 有価証券評価益、下がれば 借方 有価証券評価損。損益計算書の 営業外の 区分に のります。"
+ },
+ {
+  "id": "s2-hasuurisoku",
+  "name": "端数利息",
+  "reading": "はすうりそく",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-yuukashoukenrisoku",
+   "s2-rifuda"
+  ],
+  "description": "社債などを 利払日の あいだで 売り買い した とき、前の 利払日から 売買の 日までの 利息です。買った 側が 立てかえて はらい、借方 有価証券利息と します(次の 利払日に 全額 もらうため)。",
+  "formula": "端数利息 = 額面 × 年利率 × 経過日数 ÷ 365"
+ },
+ {
+  "id": "s2-kanrengaishakabushi",
+  "name": "関連会社株式",
+  "reading": "かんれんがいしゃかぶしき",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kogaishakabushiki",
+   "s2-sonotayuukashouken"
+  ],
+  "description": "支配までは しないが、経営に 大きな 影響を あたえる 会社の 株式です。決算でも 時価で 評価せず 取得原価の まま。子会社株式と いっしょに 貸借対照表の 投資の 区分に のります。"
+ },
+ {
+  "id": "s2-sonotayuukashoukenh",
+  "name": "その他有価証券評価差額金",
+  "reading": "そのたゆうかしょうけんひょうかさがくきん",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-sonotayuukashouken",
+   "s2-zenbujunshisanchoku"
+  ],
+  "description": "その他有価証券を 時価に 直した 差額を 入れる 純資産の 勘定です。時価が 上がれば 貸方。損益計算書は 通らず、次の 期首には 洗替法で 元の 帳簿価額に もどします。"
+ },
+ {
+  "id": "s2-kawasesasoneki",
+  "name": "為替差損益",
+  "reading": "かわせさそんえき",
+  "journey": "2shogyo",
+  "category": "外貨建取引",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "2shogyo:gaika",
+  "field": "外貨",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kawasereto",
+   "s2-kaheikoumoku"
+  ],
+  "description": "為替レートの 変動で 生まれる 損や 益を まとめる 勘定です。円の 受取が ふえれば 貸方(益)、へれば 借方(損)。決算で 残った 向きで 為替差益か 為替差損と して 表示します。"
+ },
+ {
+  "id": "s2-kawaseyoyaku",
+  "name": "為替予約",
+  "reading": "かわせよやく",
+  "journey": "2shogyo",
+  "category": "外貨建取引",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "2shogyo:gaika",
+  "field": "外貨",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-furiateshori",
+   "s2-kawasesasoneki"
+  ],
+  "description": "将来 外貨を 取りかえる ときの レートを 前もって 銀行と 決めて おく 約束です。レートの 変動の 心配が なくなります。2級は 予約レートで 円に する 振当処理を 学びます。"
+ },
+ {
+  "id": "s2-kokkohojokinjuzouek",
+  "name": "国庫補助金受贈益",
+  "reading": "こっこほじょきんじゅぞうえき",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-asshukukichou",
+   "s2-koteishisanasshukus"
+  ],
+  "description": "国や 自治体から 設備の ための 補助金を もらった ときの 収益です。収益なので 貸方。のちに 圧縮記帳を すると、同じ 額の 固定資産圧縮損で 打ち消されます。"
+ },
+ {
+  "id": "s2-koteishisanasshukus",
+  "name": "固定資産圧縮損",
+  "reading": "こていしさんあっしゅくそん",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗜️",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-asshukukichou",
+   "s2-kokkohojokinjuzouek"
+  ],
+  "description": "圧縮記帳で 固定資産の 取得原価を 下げた 額の 費用です。借方 固定資産圧縮損・貸方 建物 など。⚠️ 固定資産除却損とは ちがい、物は 使いつづけます。"
+ },
+ {
+  "id": "s2-kensetsukarikanjou",
+  "name": "建設仮勘定",
+  "reading": "けんせつかりかんじょう",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏗️",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shihontekishishutsu",
+   "s2-mukeikoteishisan"
+  ],
+  "description": "建物などを 建てて いる 途中に はらった お金を 集めて おく 資産です。完成して 引き渡されたら 建物などへ 振り替えます。⚠️ 完成前は 減価償却を しません。"
+ },
+ {
+  "id": "s2-shihontekishishutsu",
+  "name": "資本的支出",
+  "reading": "しほんてきししゅつ",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shuuzenhikiatekin",
+   "s2-kensetsukarikanjou"
+  ],
+  "description": "固定資産の 価値を 高めたり 使える 年数を のばしたり する 支出です。その 資産の 取得原価に 加えます(借方 建物 など)。元の 状態に もどす だけの 支出は 修繕費(収益的支出)です。"
+ },
+ {
+  "id": "s2-shouhinhyoukason",
+  "name": "商品評価損",
+  "reading": "しょうひんひょうかそん",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "2shogyo:shohin2",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shoumibaikyakukagak",
+   "s2-tanaoroshigenmouson"
+  ],
+  "description": "期末の 商品の 正味売却価額が 原価より 下がった ときの 損です。(原価 − 正味売却価額)× 実地数量。⚠️ 数が 足りない 棚卸減耗損とは ちがい、こちらは 値打ちの 下がりです。",
+  "formula": "商品評価損 = (原価 − 正味売却価額) × 実地数量"
+ },
+ {
+  "id": "s2-tanaoroshigenmouson",
+  "name": "棚卸減耗損",
+  "reading": "たなおろしげんもうそん",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "2shogyo:shohin2",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shouhinhyoukason",
+   "s2-sakiiresakidashihou"
+  ],
+  "description": "帳簿の 数より 実際の 在庫が 少ない ときの 損です。なくした・こわれた などが 原因です。原価 ×(帳簿数量 − 実地数量)で、借方 棚卸減耗損・貸方 繰越商品。",
+  "formula": "棚卸減耗損 = 原価 × (帳簿数量 − 実地数量)"
+ },
+ {
+  "id": "s2-shoumibaikyakukagak",
+  "name": "正味売却価額",
+  "reading": "しょうみばいきゃくかがく",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "2shogyo:shohin2",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shouhinhyoukason",
+   "s2-tanaoroshigenmouson"
+  ],
+  "description": "売れる 見込みの 値段から、売る ために まだ かかる 費用を 引いた 額です。これが 原価より 下なら、その 差が 商品評価損に なります。"
+ },
+ {
+  "id": "s2-keiyakushisan",
+  "name": "契約資産",
+  "reading": "けいやくしさん",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📑",
+  "mapNode": "2shogyo:shueki",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-keiyakufusai",
+   "s2-rikougimu"
+  ],
+  "description": "約束の 一部を はたしたが、まだ 請求できない(ほかの 約束も はたす 必要が ある)対価の 権利です。資産なので 借方。⚠️ 無条件で 請求できる なら 売掛金です。"
+ },
+ {
+  "id": "s2-keiyakufusai",
+  "name": "契約負債",
+  "reading": "けいやくふさい",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "2shogyo:shueki",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-keiyakushisan",
+   "s2-henkinfusai"
+  ],
+  "description": "商品や サービスを わたす 前に 受け取った 対価です。負債なので 受け取ったら 貸方。わたした ときに 借方で へらし、売上などに 振り替えます。"
+ },
+ {
+  "id": "s2-henkinfusai",
+  "name": "返金負債",
+  "reading": "へんきんふさい",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "2shogyo:shueki",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-hendoutaika",
+   "s2-uriagewarimodoshi"
+  ],
+  "description": "売上割戻などで あとで お客さんに 返す と 見こむ 額の 負債です。その 分は 売上に せず 貸方 返金負債に します。返したら 借方で へらします。"
+ },
+ {
+  "id": "s2-ekimugenka",
+  "name": "役務原価",
+  "reading": "えきむげんか",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "2shogyo:service",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-ekimushuueki",
+   "s2-sabisugyounoshikaka"
+  ],
+  "description": "サービスを 提供する ために かかった 給料や 交通費などを まとめた 費用です。役務収益を 計上した ときに、仕掛品から 振り替える などして 借方 役務原価と します。"
+ },
+ {
+  "id": "s2-shitenkanjou",
+  "name": "支店勘定",
+  "reading": "してんかんじょう",
+  "journey": "2shogyo",
+  "category": "本支店会計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "2shogyo:honshi",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-hontenkanjou",
+   "s2-honten"
+  ],
+  "description": "本店の 帳簿に 置く、支店との 貸し借りを 記録する 勘定です。支店へ お金や 商品を 送ると 借方。⚠️ 本店の「支店」と 支店の「本店」は 金額が 同じで 向きが 逆に なります。"
+ },
+ {
+  "id": "s2-hontenkanjou",
+  "name": "本店勘定",
+  "reading": "ほんてんかんじょう",
+  "journey": "2shogyo",
+  "category": "本支店会計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "2shogyo:honshi",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shitenkanjou",
+   "s2-shiten"
+  ],
+  "description": "支店の 帳簿に 置く、本店との 貸し借りを 記録する 勘定です。本店から 受け取ると 貸方。本店の「支店」勘定と 貸借が 逆で 残高が 一致します。"
+ },
+ {
+  "id": "s2-risufusai",
+  "name": "リース負債",
+  "reading": "りーすふさい",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📃",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shiyoukenshisan",
+   "s2-rishikomihou",
+   "s2-rishinukihou"
+  ],
+  "description": "リース料を はらう 義務を あらわす 負債です。リース開始日に 貸方、リース料を はらう たびに 借方で へらします。⚠️ 前の 試験では「リース債務」と よんで いました。"
+ },
+ {
+  "id": "s2-shiyoukenshisangenk",
+  "name": "使用権資産減価償却累計額",
+  "reading": "しようけんしさんげんかしょうきゃくるいけいがく",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shiyoukenshisan",
+   "s2-shiyoukenshisannoge"
+  ],
+  "description": "使用権資産の 減価償却費を 積み上げる 勘定です。間接法で 記帳する とき、借方 減価償却費・貸方 使用権資産減価償却累計額と します。資産から 差し引く 形で 表示します。"
+ },
+ {
+  "id": "s2-urikakesaikenbaikya",
+  "name": "売掛債権売却損",
+  "reading": "うりかけさいけんばいきゃくそん",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "2shogyo:denshi2",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-urikakesaikennojout",
+   "s2-fuakutaringu"
+  ],
+  "description": "売掛金を 期日前に 売った とき、売掛金の 額より 受け取りが 少ない 差額の 費用です。借方。⚠️ 電子記録債権を 割り引いた ときは 電子記録債権売却損で 科目が ちがいます。"
+ },
+ {
+  "id": "s2-eigyougaidenshikiro",
+  "name": "営業外電子記録債権",
+  "reading": "えいぎょうがいでんしきろくさいけん",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "2shogyo:denshi2",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-eigyougaidenshikir2",
+   "s2-denshikirokusaikenn"
+  ],
+  "description": "商品では なく 土地や 備品などを 売った 代金を 電子記録で 受け取る 権利です。本業の 売掛金と 分けて、借方 営業外電子記録債権と します。"
+ },
+ {
+  "id": "s2-eigyougaidenshikir2",
+  "name": "営業外電子記録債務",
+  "reading": "えいぎょうがいでんしきろくさいむ",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "2shogyo:denshi2",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-eigyougaidenshikiro",
+   "s2-urikakesaikennojout"
+  ],
+  "description": "土地や 備品などを 買った 代金を 電子記録で はらう 義務です。本業の 仕入では ないので 電子記録債務と 分け、貸方 営業外電子記録債務と します。"
+ },
+ {
+  "id": "s2-karite",
+  "name": "借手",
+  "reading": "かりて",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-risutorihiki",
+   "s2-shiyoukenshisan"
+  ],
+  "description": "リース取引で 物件を 借りて 使い、リース料を はらう 側です。2級は 借手の 処理だけを 学びます(貸す 側は 貸手)。"
+ },
+ {
+  "id": "s2-shiyoukenshisannoge",
+  "name": "使用権資産の減価償却",
+  "reading": "しようけんしさんのげんかしょうきゃく",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shiyoukenshisangenk",
+   "s2-risukaishibi"
+  ],
+  "description": "使用権資産も 使った 分だけ 減価償却を します。所有権が 移らない リースは、ふつう リース期間を 耐用年数・残存価額 ゼロと して 定額法で 計算します(問題の 指示に したがう)。"
+ },
+ {
+  "id": "s2-kigyouzandakakijunh",
+  "name": "企業残高基準法",
+  "reading": "きぎょうざんだかきじゅんほう",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-ginkouzandakakijunh",
+   "s2-ryoushakubunchousei"
+  ],
+  "description": "会社の 帳簿残高を 出発点に して、加えたり 引いたり して 銀行の 残高に 合わせる 調整表の 作りかたです。"
+ },
+ {
+  "id": "s2-ginkouzandakakijunh",
+  "name": "銀行残高基準法",
+  "reading": "ぎんこうざんだかきじゅんほう",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kigyouzandakakijunh",
+   "s2-ryoushakubunchousei"
+  ],
+  "description": "銀行の 残高証明書の 残高を 出発点に して、加えたり 引いたり して 会社の 帳簿残高に 合わせる 作りかたです。"
+ },
+ {
+  "id": "s2-ryoushakubunchousei",
+  "name": "両者区分調整法",
+  "reading": "りょうしゃくぶんちょうせいほう",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kigyouzandakakijunh",
+   "s2-ginkougawanochousei"
+  ],
+  "description": "会社の 残高と 銀行の 残高の 両方を それぞれ 直して、最後に 同じ 額に そろえる 作りかたです。⚠️ 会社側の 調整だけが 修正仕訳に なり、銀行側の 調整は 仕訳しません。"
+ },
+ {
+  "id": "s2-ginkouzandakashoume",
+  "name": "銀行残高証明書",
+  "reading": "ぎんこうざんだかしょうめいしょ",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-ginkoukanjouchousei",
+   "s2-jikangaiazukeire"
+  ],
+  "description": "決算日の 預金残高を 銀行が 証明する 書類です。会社の 帳簿残高と くらべて、ちがえば 銀行勘定調整表で 原因を 調べます。"
+ },
+ {
+  "id": "s2-shoukyakugenkahou",
+  "name": "償却原価法",
+  "reading": "しょうきゃくげんかほう",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-mankihoyuumokutekis",
+   "s2-yuukashoukenrisoku"
+  ],
+  "description": "額面より 安く(高く)買った 満期保有目的債券の 差額を、満期までの 期間に 配分して 帳簿価額を 額面に 近づける 方法です。2級は 定額法で、借方 満期保有目的債券・貸方 有価証券利息。",
+  "formula": "償却額 = (額面 − 取得価額) × 当期の月数 ÷ 満期までの月数"
+ },
+ {
+  "id": "s2-yuukashoukenrisoku",
+  "name": "有価証券利息",
+  "reading": "ゆうかしょうけんりそく",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-hasuurisoku",
+   "s2-shoukyakugenkahou"
+  ],
+  "description": "社債や 国債などの 利息の 収益です。貸方。⚠️ 預金の 利息は 受取利息、社債などの 利息は 有価証券利息と 分けます。償却原価法の 償却額も ここに 入れます。"
+ },
+ {
+  "id": "s2-zenbujunshisanchoku",
+  "name": "全部純資産直入法",
+  "reading": "ぜんぶじゅんしさんちょくにゅうほう",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-sonotayuukashoukenh",
+   "s2-sonotayuukashouken"
+  ],
+  "description": "その他有価証券の 評価差額を、プラスも マイナスも すべて 純資産の その他有価証券評価差額金に 入れる 方法です。2級は この 方法です。⚠️ 損益計算書には のりません。"
+ },
+ {
+  "id": "s2-jikahou",
+  "name": "時価法",
+  "reading": "じかほう",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-baibaimokutekiyuuka",
+   "s2-kirihanashihou",
+   "s2-araigaehou"
+  ],
+  "description": "期末に 有価証券を 時価で 評価する 方法です。売買目的有価証券と その他有価証券に 使います。⚠️ 満期保有目的債券・子会社株式・関連会社株式は 時価法を 使いません。"
+ },
+ {
+  "id": "s2-kirihanashihou",
+  "name": "切放法",
+  "reading": "きりはなしほう",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-araigaehou",
+   "s2-yuukashoukenhyoukas"
+  ],
+  "description": "評価した あとの 時価を 次の 期の 帳簿価額と して そのまま 使う 方法です。期首に もどす 仕訳を しません。売買目的有価証券では 切放法と 洗替法の どちらも あります。"
+ },
+ {
+  "id": "s2-araigaehou",
+  "name": "洗替法",
+  "reading": "あらいがえほう",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kirihanashihou",
+   "s2-sonotayuukashoukenh"
+  ],
+  "description": "次の 期首に 評価の 仕訳を 逆に して、元の 帳簿価額に もどす 方法です。その他有価証券は いつも 洗替法です。⚠️ 売買目的有価証券では 切放法も えらべます。"
+ },
+ {
+  "id": "s2-rifuda",
+  "name": "利札",
+  "reading": "りふだ",
+  "journey": "2shogyo",
+  "category": "有価証券",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎟️",
+  "mapNode": "2shogyo:yuka",
+  "field": "有価証券",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-yuukashoukenrisoku",
+   "s2-hasuurisoku"
+  ],
+  "description": "社債券に ついて いる、利払日に 利息を 受け取る ための 券です。期限が 来た 利札は お金と 同じ あつかいで、借方 現金・貸方 有価証券利息と します。"
+ },
+ {
+  "id": "s2-hoshouritsu",
+  "name": "保証率",
+  "reading": "ほしょうりつ",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-nihyakupasentoteiri",
+   "s2-seisandakahireihou"
+  ],
+  "description": "200%定率法で、償却額が 少なく なりすぎない ための 目安の 率です。取得原価 × 保証率 = 償却保証額。ふつうの 償却額が これを 下回ったら 改定償却率に 切り替えます。",
+  "formula": "償却保証額 = 取得原価 × 保証率"
+ },
+ {
+  "id": "s2-nihyakupasentoteiri",
+  "name": "200%定率法",
+  "reading": "にひゃくぱーせんとていりつほう",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-hoshouritsu",
+   "s2-seisandakahireihou"
+  ],
+  "description": "定額法の 償却率(1 ÷ 耐用年数)の 2倍を 償却率に する 定率法です。未償却残高 × 償却率で 計算し、はじめに 多く 償却します。⚠️ 取得原価では なく 未償却残高に かけます。",
+  "formula": "償却率 = 1 ÷ 耐用年数 × 2"
+ },
+ {
+  "id": "s2-mukeikoteishisan",
+  "name": "無形固定資産",
+  "reading": "むけいこていしさん",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-sofutouea",
+   "s2-tokkyoken"
+  ],
+  "description": "特許権・商標権・ソフトウェア・のれんなど、形は ないが 長く 役立つ 資産です。償却は ふつう 残存価額 ゼロの 定額法で、累計額を 使わない 直接法で 記帳します。"
+ },
+ {
+  "id": "s2-sofutouea",
+  "name": "ソフトウェア",
+  "reading": "そふとうぇあ",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💾",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-mukeikoteishisan",
+   "s2-tokkyoken"
+  ],
+  "description": "自社で 使う ための プログラムで、無形固定資産です。ふつう 5年 以内の 定額法で 償却し、借方 ソフトウェア償却・貸方 ソフトウェア。開発中の 支払いは ソフトウェア仮勘定に 入れます。"
+ },
+ {
+  "id": "s2-tokkyoken",
+  "name": "特許権",
+  "reading": "とっきょけん",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-mukeikoteishisan",
+   "s2-sofutouea"
+  ],
+  "description": "発明を 一定の 期間 ひとりじめできる 権利で、無形固定資産です。買ったら 借方 特許権。償却は 直接法で 借方 特許権償却・貸方 特許権と します。"
+ },
+ {
+  "id": "s2-mikessan",
+  "name": "未決算",
+  "reading": "みけっさん",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kasaisonshitsu",
+   "s2-hokensaeki"
+  ],
+  "description": "火災に あった 建物などに 保険を かけて いて、もらえる 保険金が まだ 決まって いない ときに 帳簿価額を 一時 入れて おく 勘定です。保険金が 決まったら 未収入金へ 振り替えます。"
+ },
+ {
+  "id": "s2-kasaisonshitsu",
+  "name": "火災損失",
+  "reading": "かさいそんしつ",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-mikessan",
+   "s2-hokensaeki"
+  ],
+  "description": "火災で 固定資産や 商品を 失った ときの 損です。保険が ない とき、または 保険金が 未決算の 額より 少ない ときの 差額を 借方 火災損失と します。特別損失の 区分です。"
+ },
+ {
+  "id": "s2-hokensaeki",
+  "name": "保険差益",
+  "reading": "ほけんさえき",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "2shogyo:kotei2",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-mikessan",
+   "s2-kasaisonshitsu"
+  ],
+  "description": "決まった 保険金が 未決算の 額(失った 資産の 帳簿価額など)より 多い ときの 差額の 利益です。貸方。特別利益の 区分に のります。"
+ },
+ {
+  "id": "s2-rishikomihou",
+  "name": "利子込み法",
+  "reading": "りしこみほう",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-rishinukihou",
+   "s2-risuryousougaku"
+  ],
+  "description": "リース料総額を そのまま 使用権資産・リース負債と する 方法です。利息を 分けないので、はらう ときは 借方 リース負債だけ。⚠️ 支払利息は 出てきません。"
+ },
+ {
+  "id": "s2-rishinukihou",
+  "name": "利子抜き法",
+  "reading": "りしぬきほう",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-rishikomihou",
+   "s2-risuryousougaku"
+  ],
+  "description": "リース料総額から 利息に あたる 分を 除いた 額で 使用権資産・リース負債と する 方法です。2級は 利息を 定額法で 毎期 同じ 額 配分し、はらう ときに 借方 支払利息も 出します。",
+  "formula": "毎期の 支払利息 = (リース料総額 − 計上額) ÷ 年数"
+ },
+ {
+  "id": "s2-shiharairisuryou",
+  "name": "支払リース料",
+  "reading": "しはらいりーすりょう",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-tankirisu",
+   "s2-shougakurisu"
+  ],
+  "description": "短期リースや 少額リースで、使用権資産に のせず 費用に する リース料です。2級 以上では 事務所などの 賃料も 支払リース料です。⚠️ 3級の 支払家賃とは 科目が ちがいます。"
+ },
+ {
+  "id": "s2-risuryousougaku",
+  "name": "リース料総額",
+  "reading": "りーすりょうそうがく",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-rishikomihou",
+   "s2-rishinukihou"
+  ],
+  "description": "リース期間の あいだに はらう リース料の 合計です。年 120,000円 × 5年 なら 600,000円。利子込み法では この 額が 使用権資産の 取得原価に なります。",
+  "formula": "リース料総額 = 1回の リース料 × 回数"
+ },
+ {
+  "id": "s2-torihikibireto",
+  "name": "取引日レート",
+  "reading": "とりひきびれーと",
+  "journey": "2shogyo",
+  "category": "外貨建取引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "2shogyo:gaika",
+  "field": "外貨",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kessanbireto",
+   "s2-gaikadatetorihiki"
+  ],
+  "description": "取引を した 日の 為替レートです。外貨での 仕入や 売上は この レートで 円に 換算して 記帳します。前払金や 前受金が ある ときは その 部分は 受け払いの 日の レートの まま。"
+ },
+ {
+  "id": "s2-kessanbireto",
+  "name": "決算日レート",
+  "reading": "けっさんびれーと",
+  "journey": "2shogyo",
+  "category": "外貨建取引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "2shogyo:gaika",
+  "field": "外貨",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kaheikoumoku",
+   "s2-torihikibireto"
+  ],
+  "description": "決算日の 為替レートです。外貨の 売掛金・買掛金・預金など 貨幣項目は この レートで 換算し直し、差額を 為替差損益に します。"
+ },
+ {
+  "id": "s2-kaheikoumoku",
+  "name": "貨幣項目",
+  "reading": "かへいこうもく",
+  "journey": "2shogyo",
+  "category": "外貨建取引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪙",
+  "mapNode": "2shogyo:gaika",
+  "field": "外貨",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kessanbireto",
+   "s2-kawasesasoneki"
+  ],
+  "description": "外貨の 現金・預金・売掛金・買掛金・借入金など、お金で 受け払い する 項目です。決算日レートで 換算し直します。⚠️ 前払金・前受金・商品は 貨幣項目では ないので 換算し直しません。"
+ },
+ {
+  "id": "s2-furiateshori",
+  "name": "振当処理",
+  "reading": "ふりあてしょり",
+  "journey": "2shogyo",
+  "category": "外貨建取引",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "2shogyo:gaika",
+  "field": "外貨",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-kawaseyoyaku",
+   "s2-kawasesasoneki"
+  ],
+  "description": "為替予約を した とき、外貨建ての 売掛金や 買掛金を 予約レートで 円に する 処理です。予約が 取引より あとなら、取引日レートとの 差額を 為替差損益に します(2級は その 期に 全額)。"
+ },
+ {
+  "id": "s2-shuuzenhikiatekinku",
+  "name": "修繕引当金繰入",
+  "reading": "しゅうぜんひきあてきんくりいれ",
+  "journey": "2shogyo",
+  "category": "引当金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "2shogyo:hikiate",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shuuzenhikiatekin",
+   "s2-shihontekishishutsu"
+  ],
+  "description": "決算で 修繕引当金を 積む ときの 費用です。借方 修繕引当金繰入・貸方 修繕引当金。⚠️ 当期に 実際に 修繕した 費用は 修繕費なので まちがえない ように します。"
+ },
+ {
+  "id": "s2-shouyohikiatekinkur",
+  "name": "賞与引当金繰入",
+  "reading": "しょうよひきあてきんくりいれ",
+  "journey": "2shogyo",
+  "category": "引当金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎀",
+  "mapNode": "2shogyo:hikiate",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shouyohikiatekin",
+   "s2-taishokukyuufuhiyou"
+  ],
+  "description": "決算で 賞与引当金を 積む ときの 費用です。借方 賞与引当金繰入・貸方 賞与引当金。⚠️ ボーナスを はらう ときの 引当金を こえる 分は 賞与と します。"
+ },
+ {
+  "id": "s2-taishokukyuufuhiyou",
+  "name": "退職給付費用",
+  "reading": "たいしょくきゅうふひよう",
+  "journey": "2shogyo",
+  "category": "引当金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "2shogyo:hikiate",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-taishokukyuufuhikia",
+   "s2-shouyohikiatekinkur"
+  ],
+  "description": "当期に はたらいた 分の 退職給付の 費用です。借方 退職給付費用・貸方 退職給付引当金。⚠️ 名前に「繰入」が つかない ので、退職給付引当金繰入とは 書きません。"
+ },
+ {
+  "id": "s2-shouhinhoshouhikiat",
+  "name": "商品保証引当金",
+  "reading": "しょうひんほしょうひきあてきん",
+  "journey": "2shogyo",
+  "category": "引当金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "2shogyo:hikiate",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shuuzenhikiatekin",
+   "s2-henkinfusai"
+  ],
+  "description": "売った 商品を 保証期間 中 無料で 直す 約束に そなえて 見積もって 積む 負債です。決算で 借方 商品保証引当金繰入・貸方 商品保証引当金。修理したら 取りくずします。"
+ },
+ {
+  "id": "s2-rikougimu",
+  "name": "履行義務",
+  "reading": "りこうぎむ",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "2shogyo:shueki",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shuuekininshiki",
+   "s2-ichijitendejuusoku",
+   "s2-itteikikanniwatarij"
+  ],
+  "description": "お客さんに 商品や サービスを わたす 約束の 1つ 1つです。商品と 保守サービスを いっしょに 売れば 履行義務は 2つ。それぞれを はたした ときに 収益に します。"
+ },
+ {
+  "id": "s2-hendoutaika",
+  "name": "変動対価",
+  "reading": "へんどうたいか",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "2shogyo:shueki",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-henkinfusai",
+   "s2-uriagewarimodoshi"
+  ],
+  "description": "値引き・割戻・返品などで 金額が かわる かもしれない 対価です。もらえると 見こむ 額だけを 収益に し、返す 見込みの 分は 返金負債に します。"
+ },
+ {
+  "id": "s2-ichijitendejuusoku",
+  "name": "一時点で充足",
+  "reading": "いちじてんでじゅうそく",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "2shogyo:shueki",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-itteikikanniwatarij",
+   "s2-rikougimu"
+  ],
+  "description": "商品の 引渡しのように、ある 時点で 約束が はたされる 履行義務です。その 時点で 収益に します。出荷基準・着荷基準・検収基準などが あります。"
+ },
+ {
+  "id": "s2-itteikikanniwatarij",
+  "name": "一定期間にわたり充足",
+  "reading": "いっていきかんにわたりじゅうそく",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "2shogyo:shueki",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-ichijitendejuusoku",
+   "s2-rikougimu"
+  ],
+  "description": "保守サービスや 長い 工事のように、期間を 通して 少しずつ 約束が はたされる 履行義務です。進みぐあいに 応じて 収益に します(1年 契約なら 月割など)。"
+ },
+ {
+  "id": "s2-uriagewarimodoshi",
+  "name": "売上割戻",
+  "reading": "うりあげわりもどし",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎊",
+  "mapNode": "2shogyo:shueki",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-henkinfusai",
+   "s2-hendoutaika"
+  ],
+  "description": "たくさん 買って くれた お客さんに 代金の 一部を 返す 約束です。返す 見込みの 分は 売上に せず 返金負債と します。⚠️ 今は 売上の 時点で 見積もるので、返した ときに 売上を へらしません。"
+ },
+ {
+  "id": "s2-sabisugyounoshikaka",
+  "name": "サービス業の仕掛品",
+  "reading": "さーびすぎょうのしかかりひん",
+  "journey": "2shogyo",
+  "category": "収益認識と サービス業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "2shogyo:service",
+  "field": "収益認識",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-ekimugenka",
+   "s2-ekimushuueki"
+  ],
+  "description": "サービスを まだ 提供し 終えて いない ときに、すでに かかった 給料などを 一時 入れて おく 資産です。完成して 役務収益を 計上する ときに 役務原価へ 振り替えます。"
+ },
+ {
+  "id": "s2-honshitengappeizaim",
+  "name": "本支店合併財務諸表",
+  "reading": "ほんしてんがっぺいざいむしょひょう",
+  "journey": "2shogyo",
+  "category": "本支店会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "2shogyo:honshi",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-naiburieki",
+   "s2-mitatsutorihiki"
+  ],
+  "description": "本店と 支店の 帳簿を 合わせて、会社 全体の 損益計算書と 貸借対照表を 作る ものです。未達取引を 整理し、支店勘定と 本店勘定は 打ち消し合って 消えます。"
+ },
+ {
+  "id": "s2-naiburieki",
+  "name": "内部利益",
+  "reading": "ないぶりえき",
+  "journey": "2shogyo",
+  "category": "本支店会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "2shogyo:honshi",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-honshitengappeizaim",
+   "s2-shitenkanjou"
+  ],
+  "description": "本店が 支店へ 原価に 利益を 加えて 商品を 送った とき、会社の 中だけで 生まれた 利益です。外に 売れて いない 在庫に ふくまれる 分は、合併する ときに 取り除きます。"
+ },
+ {
+  "id": "s2-shitendokuritsukaik",
+  "name": "支店独立会計制度",
+  "reading": "してんどくりつかいけいせいど",
+  "journey": "2shogyo",
+  "category": "本支店会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "2shogyo:honshi",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-hontenshuuchuukeisa",
+   "s2-shitenkanjou"
+  ],
+  "description": "支店も 自分の 帳簿を 持ち、本店と べつべつに 記帳する しくみです。本店との やりとりは 本店勘定・支店勘定で 記録します。"
+ },
+ {
+  "id": "s2-hontenshuuchuukeisa",
+  "name": "本店集中計算制度",
+  "reading": "ほんてんしゅうちゅうけいさんせいど",
+  "journey": "2shogyo",
+  "category": "本支店会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "2shogyo:honshi",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shitendokuritsukaik",
+   "s2-hontenkanjou"
+  ],
+  "description": "支店どうしの 取引を、本店を 通した ものと して 記帳する 方法です。A支店は 相手を「本店」と 書き、本店は 借方 B支店・貸方 A支店と 書きます。⚠️ 支店どうしの 勘定は 使いません。"
+ },
+ {
+  "id": "s2-mitatsutorihiki",
+  "name": "未達取引",
+  "reading": "みたつとりひき",
+  "journey": "2shogyo",
+  "category": "本支店会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "2shogyo:honshi",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-honshitengappeizaim",
+   "s2-hontenkanjou"
+  ],
+  "description": "本店か 支店の 片方だけが 記帳し、相手は 知らせが 届かず まだ 記帳して いない 取引です。決算で 届いて いない 側が 仕訳を して、本店勘定と 支店勘定を 一致させます。"
+ },
+ {
+  "id": "s2-denshikirokusaikenn",
+  "name": "電子記録債権の譲渡",
+  "reading": "でんしきろくさいけんのじょうと",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "2shogyo:denshi2",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-denshikirokusaikenb",
+   "s2-eigyougaidenshikiro"
+  ],
+  "description": "持っている 電子記録債権を、買掛金の 支払いの かわりに 取引先へ 譲る ことです。借方 買掛金・貸方 電子記録債権。⚠️ 銀行で お金に かえる 割引とは ちがいます。"
+ },
+ {
+  "id": "s2-denshikirokusaikenb",
+  "name": "電子記録債権売却損",
+  "reading": "でんしきろくさいけんばいきゃくそん",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "2shogyo:denshi2",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-denshikirokusaikenn",
+   "s2-urikakesaikenbaikya"
+  ],
+  "description": "電子記録債権を 期日前に 銀行などで 割り引いて お金に かえた とき、額面との 差の 費用です。借方。⚠️ 売掛金を 売った ときは 売掛債権売却損です。"
+ },
+ {
+  "id": "s2-sakiiresakidashihou",
+  "name": "先入先出法",
+  "reading": "さきいれさきだしほう",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "2shogyo:shohin2",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-idouheikinhou",
+   "s2-tanaoroshigenmouson"
+  ],
+  "description": "先に 受け入れた 商品から 先に 払い出したと 考えて 単価を 決める 方法です。期末の 在庫は 新しく 仕入れた 単価で 残ります。"
+ },
+ {
+  "id": "s2-idouheikinhou",
+  "name": "移動平均法",
+  "reading": "いどうへいきんほう",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "2shogyo:shohin2",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-sakiiresakidashihou",
+   "s2-shouhinhyoukason"
+  ],
+  "description": "商品を 受け入れる たびに、それまでの 残高と 合わせて 平均単価を 出し直す 方法です。払い出しは その 平均単価で 計算します。",
+  "formula": "平均単価 = (残高の 金額 + 受入金額) ÷ (残高数量 + 受入数量)"
+ },
+ {
+  "id": "s2-eigyougaihiyou",
+  "name": "営業外費用",
+  "reading": "えいぎょうがいひよう",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "2shogyo:zaimu2",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-eigyougaishuueki",
+   "s2-keijourieki"
+  ],
+  "description": "支払利息・有価証券評価損・有価証券売却損など、本業の 外で ふだん 出る 費用です。営業利益から 引いて 経常利益を 出します。⚠️ 臨時の 大きな 損は 特別損失です。"
+ },
+ {
+  "id": "s2-eigyougaishuueki",
+  "name": "営業外収益",
+  "reading": "えいぎょうがいしゅうえき",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "2shogyo:zaimu2",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-eigyougaihiyou",
+   "s2-keijourieki"
+  ],
+  "description": "受取利息・有価証券利息・受取配当金など、本業の 外で ふだん 入る 収益です。営業利益に 加えて 経常利益を 出します。"
+ },
+ {
+  "id": "s2-tokubetsurieki",
+  "name": "特別利益",
+  "reading": "とくべつりえき",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌟",
+  "mapNode": "2shogyo:zaimu2",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-tokubetsusonshitsu",
+   "s2-keijourieki"
+  ],
+  "description": "固定資産売却益・保険差益・国庫補助金受贈益など、臨時に 出る 利益です。経常利益の あとに 加えて 税引前当期純利益を 出します。"
+ },
+ {
+  "id": "s2-tokubetsusonshitsu",
+  "name": "特別損失",
+  "reading": "とくべつそんしつ",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "2shogyo:zaimu2",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-tokubetsurieki",
+   "s2-eigyougaihiyou"
+  ],
+  "description": "固定資産売却損・固定資産除却損・火災損失・固定資産圧縮損など、臨時に 出る 損です。⚠️ 支払利息は ふだんの 費用なので 営業外費用です。"
+ },
+ {
+  "id": "s2-keijourieki",
+  "name": "経常利益",
+  "reading": "けいじょうりえき",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "2shogyo:zaimu2",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-eigyougaishuueki",
+   "s2-eigyougaihiyou"
+  ],
+  "description": "営業利益に 営業外収益を 加え、営業外費用を 引いた 利益です。会社の ふだんの 活動の 力を あらわします。",
+  "formula": "経常利益 = 営業利益 + 営業外収益 − 営業外費用"
+ },
+ {
+  "id": "s2-ichinenkijun",
+  "name": "一年基準",
+  "reading": "いちねんきじゅん",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "2shogyo:zaimu2",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-seijoueigyoujunkank",
+   "s2-eigyougaihiyou"
+  ],
+  "description": "決算日の 翌日から 1年 以内に お金に なる・はらう ものを 流動、1年を こえる ものを 固定と 分ける 決まりです。⚠️ 売掛金などの 営業の 債権は まず 正常営業循環基準で 流動に なります。"
+ },
+ {
+  "id": "s2-seijoueigyoujunkank",
+  "name": "正常営業循環基準",
+  "reading": "せいじょうえいぎょうじゅんかんきじゅん",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♻️",
+  "mapNode": "2shogyo:zaimu2",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-ichinenkijun",
+   "s2-hanbaihioyobiippank"
+  ],
+  "description": "仕入れ → 販売 → 代金の 回収という 本業の 流れの 中に ある 資産・負債を、期間に 関係なく 流動に する 決まりです。売掛金・買掛金・商品などに 使います。"
+ },
+ {
+  "id": "s2-hanbaihioyobiippank",
+  "name": "販売費及び一般管理費",
+  "reading": "はんばいひおよびいっぱんかんりひ",
+  "journey": "2shogyo",
+  "category": "商品と 損益計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "2shogyo:zaimu2",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-eigyougaihiyou",
+   "s2-keijourieki"
+  ],
+  "description": "給料・広告宣伝費・減価償却費・貸倒引当金繰入など、売る ため・会社を 管理する ための 費用です。売上総利益から 引いて 営業利益を 出します。"
+ },
+ {
+  "id": "s2-tankirisu",
+  "name": "短期リース",
+  "reading": "たんきりーす",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏲️",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shougakurisu",
+   "s2-shiharairisuryou"
+  ],
+  "description": "リース期間が 12か月 以内の リースです。2級では 使用権資産に のせず、はらった ときに 借方 支払リース料と する 方法が えらべます。"
+ },
+ {
+  "id": "s2-shougakurisu",
+  "name": "少額リース",
+  "reading": "しょうがくりーす",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪶",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-tankirisu",
+   "s2-shiharairisuryou"
+  ],
+  "description": "金額の 小さい リースです。使用権資産・リース負債に のせず、借方 支払リース料と して 費用に できます。どの 額から 少額かは 問題の 指示に したがいます。"
+ },
+ {
+  "id": "s2-fuakutaringu",
+  "name": "ファクタリング",
+  "reading": "ふぁくたりんぐ",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏧",
+  "mapNode": "2shogyo:denshi2",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-urikakesaikennojout",
+   "s2-urikakesaikenbaikya"
+  ],
+  "description": "売掛金などを 期日前に 専門の 会社へ 売って お金に かえる しくみです。簿記では 売掛債権の譲渡と して、差額を 売掛債権売却損に します。"
+ },
+ {
+  "id": "s2-ginkougawanochousei",
+  "name": "銀行側の調整",
+  "reading": "ぎんこうがわのちょうせい",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛️",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-jikangaiazukeire",
+   "s2-ryoushakubunchousei"
+  ],
+  "description": "銀行の 残高の ほうを 直す 調整です。時間外預入の ように 会社の 記帳は 正しく、銀行の 記帳が おくれて いる だけ なので、修正仕訳は しません。"
+ },
+ {
+  "id": "s2-hikiotoshimikichou",
+  "name": "引落未記帳",
+  "reading": "ひきおとしみきちょう",
+  "journey": "2shogyo",
+  "category": "現金預金と 債権",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "2shogyo:ginko",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-renrakumitsuuchi",
+   "s2-ginkoukanjouchousei"
+  ],
+  "description": "電気代・リース料などが 口座から 引き落とされたのに、会社が まだ 記帳して いない ものです。修正仕訳で 借方 水道光熱費など・貸方 当座預金と します。"
+ },
+ {
+  "id": "s2-risukaishibi",
+  "name": "リース開始日",
+  "reading": "りーすかいしび",
+  "journey": "2shogyo",
+  "category": "固定資産と リース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "2shogyo:lease",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "s2-shiyoukenshisan",
+   "s2-risufusai"
+  ],
+  "description": "借手が リースの 物件を 使い はじめられる 日です。この 日に 使用権資産と リース負債を 計上し、減価償却も この 日から はじめます(月割)。"
+ }
+]

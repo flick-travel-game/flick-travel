@@ -1,0 +1,1984 @@
+[
+ {
+  "id": "ts-machizukuri",
+  "name": "まちづくり",
+  "reading": "まちづくり",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "toshi:toshikeikaku",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikaku",
+   "ts-chikukeikaku"
+  ],
+  "description": "みんなが 住みやすく、はたらきやすい まちを つくる 取り組みです。どこに 家・お店・工場・公園を 置くかを 決める 都市計画は、まちづくりの 土台です。"
+ },
+ {
+  "id": "ts-toshikeikaku",
+  "name": "都市計画",
+  "reading": "としけいかく",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "toshi:toshikeikaku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakukuiki",
+   "ts-youtochiiki"
+  ],
+  "description": "まちの 土地の 使いかたや 道路・公園などを 決める 計画です。都市計画法に もとづいて 都道府県や 市町村が 決めます。家を 買う ときは、その 土地に どんな 計画が あるかを 確かめます。"
+ },
+ {
+  "id": "ts-juutakuchi",
+  "name": "住宅地",
+  "reading": "じゅうたくち",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "toshi:yoto",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-youtochiiki",
+   "ts-daiisshuteisoujuuk"
+  ],
+  "description": "住まいが 中心の 場所です。都市計画では、住居の 環境を 守る ための 用途地域(第一種低層住居専用地域 など)を 決めて、静かな まちを たもちます。"
+ },
+ {
+  "id": "ts-shougyyouchi",
+  "name": "商業地",
+  "reading": "しょうぎょうち",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "toshi:yoto",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shougyyouchiiki",
+   "ts-kinrinshougyyouchi"
+  ],
+  "description": "お店や 事務所が 多い 場所です。用途地域では 商業地域・近隣商業地域の 2つが 商業の ための 地域に あたります。"
+ },
+ {
+  "id": "ts-kougyyouchi",
+  "name": "工業地",
+  "reading": "こうぎょうち",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "toshi:yoto",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kougyyousenyouchii",
+   "ts-junkougyyouchiiki"
+  ],
+  "description": "工場が 多い 場所です。用途地域では 準工業地域・工業地域・工業専用地域の 3つが 工業の ための 地域に あたります。"
+ },
+ {
+  "id": "ts-tanbo",
+  "name": "田んぼ",
+  "reading": "たんぼ",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-nouchi",
+   "ts-hatake"
+  ],
+  "description": "お米を 育てる 田です。農地の ひとつなので、売ったり 家を 建てる 土地に したり する ときは 農地法の 許可や 届出が 必要に なります。"
+ },
+ {
+  "id": "ts-hatake",
+  "name": "畑",
+  "reading": "はたけ",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥬",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-nouchi",
+   "ts-tanbo"
+  ],
+  "description": "野菜などを 育てる 土地です。田と 同じく 農地なので、農地法で 守られて います。"
+ },
+ {
+  "id": "ts-nouchi",
+  "name": "農地",
+  "reading": "のうち",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚜",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-nouchihou",
+   "ts-nouchinotenyou"
+  ],
+  "description": "耕して 作物を 育てる ための 土地です。農地かどうかは 登記の 地目では なく、いま 耕作に 使われているかで 見ます。農地法の 3条・4条・5条で 守られます。"
+ },
+ {
+  "id": "ts-kouen",
+  "name": "公園",
+  "reading": "こうえん",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "toshi:jigyo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakujigyyo",
+   "ts-toshikeikakudouro"
+  ],
+  "description": "みんなが 使う 公園は、道路と 同じく 都市計画で 決める 都市施設の ひとつです。都市計画事業として 整えられる ことが あります。"
+ },
+ {
+  "id": "ts-toshikeikakudouro",
+  "name": "都市計画道路",
+  "reading": "としけいかくどうろ",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛣",
+  "mapNode": "toshi:jigyo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakushiset",
+   "ts-kouen"
+  ],
+  "description": "都市計画で 場所が 決まった 道路です。予定の 道路の 区域で 建物を 建てるには、原則として 都道府県知事等の 許可が 必要です。重要事項の説明でも 伝えます。"
+ },
+ {
+  "id": "ts-shigaichi",
+  "name": "市街地",
+  "reading": "しがいち",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "toshi:senbiki",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shigaikakuiki",
+   "ts-senbiki"
+  ],
+  "description": "建物が 多く 集まっている ところです。すでに 市街地に なっている 区域は、市街化区域に 入ります。"
+ },
+ {
+  "id": "ts-takuchizousei",
+  "name": "宅地造成",
+  "reading": "たくちぞうせい",
+  "journey": "toshi",
+  "category": "盛土規制法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏗",
+  "mapNode": "toshi:morido",
+  "field": "盛土規制法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-moridokiseihou",
+   "ts-takuchizouseitouko"
+  ],
+  "description": "山や 田畑を けずったり 土を 盛ったり して、家が 建てられる 土地に 整える ことです。いまは 盛土規制法で、くずれない ように 決まりが あります。"
+ },
+ {
+  "id": "ts-gake",
+  "name": "がけ",
+  "reading": "がけ",
+  "journey": "toshi",
+  "category": "盛土規制法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "toshi:morido",
+  "field": "盛土規制法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-takuchizouseitouko2",
+   "ts-takuchizousei"
+  ],
+  "description": "急な 斜面です。盛土規制法では、盛土や 切土で 一定の 高さを こえる 崖が できる 工事に、許可が 必要です。安全な 擁壁で 守ります。"
+ },
+ {
+  "id": "ts-kukakuseiri",
+  "name": "区画整理",
+  "reading": "くかくせいり",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-tochikukakuseiriji",
+   "ts-kanchi"
+  ],
+  "description": "でこぼこな 土地の 区画を ととのえ、道路や 公園も つくって 使いやすい まちに する ことです。土地区画整理法の 事業で 行います。"
+ },
+ {
+  "id": "ts-tochitorihiki",
+  "name": "土地取引",
+  "reading": "とちとりひき",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kokudoriyoukeikaku",
+   "ts-jigotodokede"
+  ],
+  "description": "土地を 売り買いする ことなどです。広い 土地の 取引は、国土利用計画法で 届出が 必要に なる ことが あります。"
+ },
+ {
+  "id": "ts-hazadomappu",
+  "name": "ハザードマップ",
+  "reading": "はざーどまっぷ",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "toshi:sonota",
+  "field": "くらし",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-zouseitakuchibousa",
+   "ts-machizukuri"
+  ],
+  "description": "大雨や 地震で 起こりうる 災害の 場所を 地図に した ものです。家を 選ぶ ときに、安全な 場所かを 確かめる 手がかりに なります。"
+ },
+ {
+  "id": "ts-kaihatsu",
+  "name": "開発",
+  "reading": "かいはつ",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kaihatsukoui",
+   "ts-kaihatsukyyoka"
+  ],
+  "description": "土地を ととのえて 建物が 建てられる ように する ことです。都市計画法では 建物の ための 土地の 区画形質の 変更を「開発行為」と よびます。"
+ },
+ {
+  "id": "ts-keikan",
+  "name": "景観",
+  "reading": "けいかん",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌇",
+  "mapNode": "toshi:sonota",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-fuuchichiku",
+   "ts-machizukuri"
+  ],
+  "description": "まちの ながめや ふんいきです。建物の 色や 高さを そろえて、きれいな まちなみを 守る 決まりを つくる ことが あります。"
+ },
+ {
+  "id": "ts-ryyokuchi",
+  "name": "緑地",
+  "reading": "りょくち",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌿",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-seisanryyokuchi",
+   "ts-fuuchichiku"
+  ],
+  "description": "木や 草が 多い 場所です。まちの 中の 緑を 残す ため、都市計画で 地区を 決めて 守る ことが あります。"
+ },
+ {
+  "id": "ts-senbiki",
+  "name": "線引き",
+  "reading": "せんびき",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "toshi:senbiki",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kuikikubun",
+   "ts-shigaikakuiki",
+   "ts-shigaikachouseikui"
+  ],
+  "description": "都市計画区域を 市街化区域と 市街化調整区域に 線を 引いて 分ける ことです。正式には 区域区分と いいます。"
+ },
+ {
+  "id": "ts-toshikeikakukuiki",
+  "name": "都市計画区域",
+  "reading": "としけいかくくいき",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "toshi:toshikeikaku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakukuikin",
+   "ts-juntoshikeikakukui"
+  ],
+  "description": "都市計画を 決めて まちを 整える 区域です。原則として 都道府県が 指定します。市町村の 区域を こえて 指定する ことも できます。"
+ },
+ {
+  "id": "ts-juntoshikeikakukui",
+  "name": "準都市計画区域",
+  "reading": "じゅんとしけいかくくいき",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "toshi:toshikeikaku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakukuiki",
+   "ts-toshikeikakukuikig"
+  ],
+  "description": "都市計画区域の 外で、このままでは まちづくりに 支障が 出る おそれの ある 区域を、都道府県が 指定できます。開発許可は 3,000㎡以上で 必要です。"
+ },
+ {
+  "id": "ts-shigaikakuiki",
+  "name": "市街化区域",
+  "reading": "しがいかくいき",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "toshi:senbiki",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shigaikakuikinoyou",
+   "ts-kaihatsukyyokanome"
+  ],
+  "description": "すでに 市街地に なっている 区域と、おおむね 10年以内に 優先的・計画的に 市街化を はかるべき 区域です。かならず 用途地域を 定めます。"
+ },
+ {
+  "id": "ts-shigaikachouseikui",
+  "name": "市街化調整区域",
+  "reading": "しがいかちょうせいくいき",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "toshi:senbiki",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shigaikaoyokuseisu",
+   "ts-shigaikachouseikui3"
+  ],
+  "description": "市街化を おさえる べき 区域です。建物は 原則として 建てにくく、開発には 面積に かかわらず 許可が 必要です。用途地域は 原則として 定めません。"
+ },
+ {
+  "id": "ts-hisenbikikuiki",
+  "name": "非線引区域",
+  "reading": "ひせんびきくいき",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "toshi:senbiki",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kuikikubun",
+   "ts-kaihatsukyyokanome"
+  ],
+  "description": "都市計画区域の うち、区域区分(線引き)を していない 区域です。正式には「区域区分が 定められていない 都市計画区域」と いい、開発許可は 3,000㎡以上で 必要です。"
+ },
+ {
+  "id": "ts-youtochiiki",
+  "name": "用途地域",
+  "reading": "ようとちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-juusanshuruinoyout",
+   "ts-shigaikakuikinoyou"
+  ],
+  "description": "土地の 使いかたを 13種類に 分けて、建てられる 建物を 決める 地域です。住まい・お店・工場が まざって 困らない ように します。"
+ },
+ {
+  "id": "ts-daiisshuteisoujuuk",
+  "name": "第一種低層住居専用地域",
+  "reading": "だいいっしゅていそうじゅうきょせんようちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏡",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-youtochiiki",
+   "ts-denenjuukyyochiiki"
+  ],
+  "description": "低層住宅の 良い 住まいの 環境を 守る ための 地域です。13種類の 中で いちばん 静かな 住宅地に なります。"
+ },
+ {
+  "id": "ts-shougyyouchiiki",
+  "name": "商業地域",
+  "reading": "しょうぎょうちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kinrinshougyyouchi",
+   "ts-youtochiiki"
+  ],
+  "description": "主として 商業などの 業務の 便利さを ふやす ための 地域です。大きな お店や 事務所が 集まる 駅前などに 定められます。"
+ },
+ {
+  "id": "ts-kougyyousenyouchii",
+  "name": "工業専用地域",
+  "reading": "こうぎょうせんようちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-junkougyyouchiiki",
+   "ts-youtochiiki"
+  ],
+  "description": "工業の 便利さを ふやす ための 地域です。工業の ための 地域で、住宅は 建てられません。"
+ },
+ {
+  "id": "ts-chiikichiku",
+  "name": "地域地区",
+  "reading": "ちいきちく",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-tokubetsuyoutochik",
+   "ts-koudochiku"
+  ],
+  "description": "用途地域・特別用途地区・高度地区・防火地域 など、都市計画で 決める 地域や 地区を まとめた よび名です。"
+ },
+ {
+  "id": "ts-chikukeikaku",
+  "name": "地区計画",
+  "reading": "ちくけいかく",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-chikukeikakunotodo",
+   "ts-machizukuri"
+  ],
+  "description": "ひとつの 地区を その 特性に あった 良い 環境に 整える ための、こまかい まちづくりの 計画です。市町村が 決めます。"
+ },
+ {
+  "id": "ts-koudochiku",
+  "name": "高度地区",
+  "reading": "こうどちく",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-koudoriyouchiku",
+   "ts-chiikichiku"
+  ],
+  "description": "用途地域の 中で、建物の 高さの 最高限度 または 最低限度を 決める 地区です。名前が にている 高度利用地区と まちがえない ように します。"
+ },
+ {
+  "id": "ts-kaihatsukoui",
+  "name": "開発行為",
+  "reading": "かいはつこうい",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚜",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kaihatsukyyoka",
+   "ts-kaihatsu"
+  ],
+  "description": "主として 建物を 建てる ためや 特定工作物を つくる ために 行う、土地の 区画形質の 変更です。ゴルフコースなどの 大きな 工作物も ふくみます。"
+ },
+ {
+  "id": "ts-kaihatsukyyoka",
+  "name": "開発許可",
+  "reading": "かいはつきょか",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kaihatsukoui",
+   "ts-kaihatsukyyokanome"
+  ],
+  "description": "開発行為を する 前に 受ける 許可です。原則として 都道府県知事(指定都市・中核市は その 長)が 出します。売る 前に 許可を 受けているかを 確かめます。"
+ },
+ {
+  "id": "ts-koujikanryyounokou",
+  "name": "工事完了の公告",
+  "reading": "こうじかんりょうのこうこく",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "toshi:kaihatsugo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-koujikanryyoumaeno",
+   "ts-koujikanryyougonok"
+  ],
+  "description": "開発の 工事が 終わり、知事の 検査で 検査済証が 出た あとに 行われる 公告です。この 公告が あるまでは、原則として 建物を 建てられません。"
+ },
+ {
+  "id": "ts-yoteikenchikubutsu",
+  "name": "予定建築物",
+  "reading": "よていけんちくぶつ",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "toshi:kaihatsugo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-koujikanryyougonok",
+   "ts-kaihatsukyyoka"
+  ],
+  "description": "開発許可の ときに 予定した 建物です。工事完了の 公告の あとは、予定建築物 以外の 建物は 原則として 建てられません。"
+ },
+ {
+  "id": "ts-kokudoriyoukeikaku",
+  "name": "国土利用計画法",
+  "reading": "こくどりようけいかくほう",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-jigotodokede",
+   "ts-jizentodokede"
+  ],
+  "description": "広い 土地の 取引を 届出などで 見守り、地価の 上がりすぎや ふさわしくない 使いかたを ふせぐ 法律です。"
+ },
+ {
+  "id": "ts-jigotodokede",
+  "name": "事後届出",
+  "reading": "じごとどけで",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-jigotodokedenomens",
+   "ts-jigotodokedenokige"
+  ],
+  "description": "一定の 広さ 以上の 土地の 売買などの 契約を した あと、買った がわ(権利取得者)が 都道府県知事に 届け出る しくみです。市町村長を 経由して 出します。"
+ },
+ {
+  "id": "ts-jizentodokede",
+  "name": "事前届出",
+  "reading": "じぜんとどけで",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗒",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-chuushikuiki",
+   "ts-kanshikuiki"
+  ],
+  "description": "注視区域や 監視区域で、土地の 売買などの 契約を する 前に 届け出る しくみです。事後届出とは 届け出る 時期が ちがいます。"
+ },
+ {
+  "id": "ts-nouchihou",
+  "name": "農地法",
+  "reading": "のうちほう",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📗",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-sanjoukyyoka",
+   "ts-yonjoukyyoka",
+   "ts-gojoukyyoka"
+  ],
+  "description": "農地を 守り、耕作する 人が 農地を 持てる ように する 法律です。農地の 売り買い(3条)・転用(4条)・転用目的の 売り買い(5条)に 許可が 必要です。"
+ },
+ {
+  "id": "ts-sanjoukyyoka",
+  "name": "3条許可",
+  "reading": "さんじょうきょか",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "3️⃣",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-nouchihou",
+   "ts-kyyokanonaikeiyaku"
+  ],
+  "description": "農地を 農地の まま 売ったり 貸したり する ときの 許可です。当事者が 農業委員会の 許可を 受けます。市街化区域でも 届出で すませる 特例は ありません。"
+ },
+ {
+  "id": "ts-yonjoukyyoka",
+  "name": "4条許可",
+  "reading": "よんじょうきょか",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "4️⃣",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-nouchinotenyou",
+   "ts-shigaikakuikinaino"
+  ],
+  "description": "自分の 農地を 家の 敷地や 駐車場など 農地 以外に する ときの 許可です。都道府県知事等が 出します。市街化区域内は 農業委員会への 届出で すみます。"
+ },
+ {
+  "id": "ts-gojoukyyoka",
+  "name": "5条許可",
+  "reading": "ごじょうきょか",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "5️⃣",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-yonjoukyyoka",
+   "ts-sanjoukyyoka"
+  ],
+  "description": "農地を 農地 以外に する ために 売ったり 貸したり する ときの 許可です。当事者が 都道府県知事等の 許可を 受けます。市街化区域内は 事前の 届出で すみます。"
+ },
+ {
+  "id": "ts-moridokiseihou",
+  "name": "盛土規制法",
+  "reading": "もりどきせいほう",
+  "journey": "toshi",
+  "category": "盛土規制法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛰",
+  "mapNode": "toshi:morido",
+  "field": "盛土規制法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-takuchizouseitouko",
+   "ts-tokuteimoridotouki"
+  ],
+  "description": "正式には 宅地造成及び特定盛土等規制法です。2023年5月から、宅地だけで なく 農地や 森林の 盛土も 対象です。前は 宅地造成等規制法と よばれていました。"
+ },
+ {
+  "id": "ts-takuchizouseitouko",
+  "name": "宅地造成等工事規制区域",
+  "reading": "たくちぞうせいとうこうじきせいくいき",
+  "journey": "toshi",
+  "category": "盛土規制法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "toshi:morido",
+  "field": "盛土規制法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-takuchizouseitouko2",
+   "ts-tokuteimoridotouki"
+  ],
+  "description": "市街地や これから 市街地に なる 区域などで、都道府県知事が 指定する 区域です。この 中で 一定の 規模の 宅地造成等の 工事を するには 許可が 必要です。"
+ },
+ {
+  "id": "ts-tochikukakuseiriji",
+  "name": "土地区画整理事業",
+  "reading": "とちくかくせいりじぎょう",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kanchi",
+   "ts-kanchishobun"
+  ],
+  "description": "都市計画区域内の 土地で、道路や 公園を 整え、区画を ととのえて 宅地を 使いやすく する 事業です。組合や 市町村などが 施行します。"
+ },
+ {
+  "id": "ts-kanchi",
+  "name": "換地",
+  "reading": "かんち",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kanchishobun",
+   "ts-karikanchi"
+  ],
+  "description": "区画整理の あとに、もとの 土地(従前の 宅地)の かわりに わたされる 土地です。換地処分の 公告の 翌日から、もとの 土地と みなされます。"
+ },
+ {
+  "id": "ts-karikanchi",
+  "name": "仮換地",
+  "reading": "かりかんち",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-karikanchinoshiyou",
+   "ts-kanchi"
+  ],
+  "description": "換地処分の 前に、かりに 使う ことに なる 土地です。施行者が 指定します。指定されると、もとの 土地では なく 仮換地を 使います。"
+ },
+ {
+  "id": "ts-toshikeikakujigyyo",
+  "name": "都市計画事業",
+  "reading": "としけいかくじぎょう",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏗",
+  "mapNode": "toshi:jigyo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-jigyyouchinainosei",
+   "ts-toshikeikakushiset"
+  ],
+  "description": "都市計画で 決めた 道路・公園などの 都市施設や、市街地開発事業を 実際に つくる 事業です。認可などの 告示の あとは、事業地内の 建築などに 許可が 必要です。"
+ },
+ {
+  "id": "ts-seisanryyokuchi",
+  "name": "生産緑地",
+  "reading": "せいさんりょくち",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥕",
+  "mapNode": "toshi:sonota",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-ryyokuchi",
+   "ts-nouchi"
+  ],
+  "description": "市街化区域の 中の 農地を、緑や 防災の ために 残す 地区です。都市計画で 定めます。売買の ときに 生産緑地かを 確かめます。"
+ },
+ {
+  "id": "ts-toshikeikakukuikin",
+  "name": "都市計画区域の指定権者",
+  "reading": "としけいかくくいきのしていけんじゃ",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "toshi:toshikeikaku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakukuiki",
+   "ts-toshikeikakunokett"
+  ],
+  "description": "都市計画区域を 指定するのは 原則として 都道府県です。2つ 以上の 都府県に またがる ときは 国土交通大臣です。市町村が 指定する、と いう ひっかけに 気を つけます。"
+ },
+ {
+  "id": "ts-toshikeikakunokett",
+  "name": "都市計画の決定権者",
+  "reading": "としけいかくのけっていけんじゃ",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "toshi:toshikeikaku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kuikikubun",
+   "ts-toshikeikakukuikin"
+  ],
+  "description": "区域区分などの 広い 都市計画は 都道府県が、それ 以外は 市町村が 決めます。地区計画は 市町村の 役わりです。だれが 決めるかの 入れかえに 気を つけます。"
+ },
+ {
+  "id": "ts-toshikeikakunoanno",
+  "name": "都市計画の案の縦覧",
+  "reading": "としけいかくのあんのじゅうらん",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "toshi:toshikeikaku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakunokett",
+   "ts-toshikeikakunoteia"
+  ],
+  "description": "都市計画を 決める 前に、案を 公告の 日から 2週間 みんなが 見られる ように する ことです。住民や 利害関係人は 意見書を 出せます。1か月では ありません。"
+ },
+ {
+  "id": "ts-toshikeikakunoteia",
+  "name": "都市計画の提案制度",
+  "reading": "としけいかくのていあんせいど",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "toshi:toshikeikaku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakunoanno",
+   "ts-machizukuri"
+  ],
+  "description": "土地の 所有者や 借地権者などが、都市計画を 決めたり 変えたり するよう 提案できる しくみです。区域内の 土地所有者等の 3分の2以上の 同意が 必要です。"
+ },
+ {
+  "id": "ts-kuikikubun",
+  "name": "区域区分",
+  "reading": "くいきくぶん",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "toshi:toshikeikaku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-senbiki",
+   "ts-hisenbikikuiki"
+  ],
+  "description": "都市計画区域を 市街化区域と 市街化調整区域に 分ける ことです。原則として「定める ことが できる」もので、どの 都市計画区域でも かならず 定める わけでは ありません。"
+ },
+ {
+  "id": "ts-shigaikakuikinoyou",
+  "name": "市街化区域の用途地域",
+  "reading": "しがいかくいきのようとちいき",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "toshi:senbiki",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shigaikakuiki",
+   "ts-shigaikachouseikui2"
+  ],
+  "description": "市街化区域には、少なくとも 用途地域を 定めます。用途地域が ない 市街化区域は ない、と おぼえます。"
+ },
+ {
+  "id": "ts-shigaikachouseikui2",
+  "name": "市街化調整区域の用途地域",
+  "reading": "しがいかちょうせいくいきのようとちいき",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "toshi:senbiki",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shigaikachouseikui",
+   "ts-shigaikakuikinoyou"
+  ],
+  "description": "市街化調整区域には、原則として 用途地域を 定めません。「定めては ならない」と 言いきる 文では なく「原則として」です。"
+ },
+ {
+  "id": "ts-shigaikaoyokuseisu",
+  "name": "市街化を抑制すべき区域",
+  "reading": "しがいかをよくせいすべきくいき",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "toshi:senbiki",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shigaikachouseikui",
+   "ts-shigaikakuiki"
+  ],
+  "description": "市街化調整区域の 定めかたの ことばです。市街化区域の「10年以内に 市街化を はかる」と ことばを 入れかえた ひっかけに 気を つけます。"
+ },
+ {
+  "id": "ts-denenjuukyyochiiki",
+  "name": "田園住居地域",
+  "reading": "でんえんじゅうきょちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌻",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-daiisshuteisoujuuk",
+   "ts-juusanshuruinoyout"
+  ],
+  "description": "農業の 便利さを はかりながら、それと 調和した 低層住宅の 良い 住まいの 環境を 守る 地域です。住居系の 用途地域の ひとつです。"
+ },
+ {
+  "id": "ts-junjuukyyochiiki",
+  "name": "準住居地域",
+  "reading": "じゅんじゅうきょちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-youtochiiki",
+   "ts-juusanshuruinoyout"
+  ],
+  "description": "道路の 沿道に ふさわしい 業務の 便利さを はかりながら、それと 調和した 住まいの 環境を 守る 地域です。住居系の 用途地域です。"
+ },
+ {
+  "id": "ts-dainishuchuukousou",
+  "name": "第二種中高層住居専用地域",
+  "reading": "だいにしゅちゅうこうそうじゅうきょせんようちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-daiisshuteisoujuuk",
+   "ts-youtochiiki"
+  ],
+  "description": "主として 中高層住宅の 良い 住まいの 環境を 守る 地域です。「第一種」は「主として」が つかない ことと くらべて おぼえます。"
+ },
+ {
+  "id": "ts-junkougyyouchiiki",
+  "name": "準工業地域",
+  "reading": "じゅんこうぎょうちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kougyyousenyouchii",
+   "ts-kougyyouchi"
+  ],
+  "description": "主として 環境の 悪化を もたらす おそれの ない 工業の 便利さを ふやす 地域です。住宅も 建てられます。"
+ },
+ {
+  "id": "ts-kinrinshougyyouchi",
+  "name": "近隣商業地域",
+  "reading": "きんりんしょうぎょうちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shougyyouchiiki",
+   "ts-shougyyouchi"
+  ],
+  "description": "近くの 住宅地の 人に 日用品を 売る 商業などの 便利さを ふやす 地域です。商業系の 用途地域です。"
+ },
+ {
+  "id": "ts-juusanshuruinoyout",
+  "name": "13種類の用途地域",
+  "reading": "じゅうさんしゅるいのようとちいき",
+  "journey": "toshi",
+  "category": "用途地域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "toshi:yoto",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-youtochiiki",
+   "ts-denenjuukyyochiiki"
+  ],
+  "description": "用途地域は 13種類です。住居系 8(田園住居地域を ふくむ)・商業系 2・工業系 3です。12種類と いう 古い 数に 気を つけます。"
+ },
+ {
+  "id": "ts-tokubetsuyoutochik",
+  "name": "特別用途地区",
+  "reading": "とくべつようとちく",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-tokuteiyoutoseigen",
+   "ts-chiikichiku"
+  ],
+  "description": "用途地域の 中で、その 指定を 補って 決める 地区です。用途地域の 外で 決める 特定用途制限地域と 入れかえる ひっかけに 気を つけます。"
+ },
+ {
+  "id": "ts-tokuteiyoutoseigen",
+  "name": "特定用途制限地域",
+  "reading": "とくていようとせいげんちいき",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚷",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-tokubetsuyoutochik",
+   "ts-hisenbikikuiki"
+  ],
+  "description": "用途地域が 定められていない 区域(市街化調整区域を 除く)で、制限する 建物の 用途を 決める 地域です。市街化調整区域には 定めません。"
+ },
+ {
+  "id": "ts-koudoriyouchiku",
+  "name": "高度利用地区",
+  "reading": "こうどりようちく",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-koudochiku",
+   "ts-chiikichiku"
+  ],
+  "description": "用途地域の 中で、容積率の 最高限度と 最低限度・建蔽率の 最高限度 などを 決めて、土地を 高度に 使う 地区です。高さを 決める 高度地区とは ちがいます。"
+ },
+ {
+  "id": "ts-kousoujuukyyoyuudo",
+  "name": "高層住居誘導地区",
+  "reading": "こうそうじゅうきょゆうどうちく",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-koudoriyouchiku",
+   "ts-tokureiyousekirits"
+  ],
+  "description": "住まいと それ 以外を ほどよく 配分し、便利な 高層住宅を ふやす ための 地区です。第一種住居地域 などの 決まった 用途地域で 定めます。"
+ },
+ {
+  "id": "ts-chikukeikakunotodo",
+  "name": "地区計画の届出",
+  "reading": "ちくけいかくのとどけで",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-chikukeikaku",
+   "ts-jigotodokede"
+  ],
+  "description": "地区計画の 区域で 土地の 区画形質の 変更や 建築などを する 人は、着手の 30日前までに 市町村長に 届け出ます。許可では なく 届出です。"
+ },
+ {
+  "id": "ts-tokureiyousekirits",
+  "name": "特例容積率適用地区",
+  "reading": "とくれいようせきりつてきようちく",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "toshi:chiku",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kousoujuukyyoyuudo",
+   "ts-koudoriyouchiku"
+  ],
+  "description": "使われていない 容積を ほかの 敷地へ うつして 活用し、土地を 高度に 使う ための 地区です。低層住居専用地域では 定めません。"
+ },
+ {
+  "id": "ts-kaihatsukyyokanome",
+  "name": "開発許可の面積",
+  "reading": "かいはつきょかのめんせき",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kaihatsukyyoka",
+   "ts-shigaikachouseikui3"
+  ],
+  "description": "許可が いるのは 市街化区域で 1,000㎡以上、非線引きの 都市計画区域と 準都市計画区域で 3,000㎡以上です。三大都市圏の 一部の 市街化区域は 500㎡以上です。"
+ },
+ {
+  "id": "ts-shigaikachouseikui3",
+  "name": "市街化調整区域の開発",
+  "reading": "しがいかちょうせいくいきのかいはつ",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shigaikachouseikui",
+   "ts-nougyyouyoukenchik"
+  ],
+  "description": "市街化調整区域では、小さな 開発でも 面積に かかわらず 許可が 必要です。「1,000㎡未満なら 不要」は 市街化区域の 話です。"
+ },
+ {
+  "id": "ts-nougyyouyoukenchik",
+  "name": "農業用建築物の例外",
+  "reading": "のうぎょうようけんちくぶつのれいがい",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐄",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shigaikachouseikui3",
+   "ts-kouekijouhitsuyoun"
+  ],
+  "description": "畜舎・温室・農業を する 人の 住宅などの ための 開発は 許可が いりません。ただし 市街化区域では この 例外が 使えない 点が ひっかけです。"
+ },
+ {
+  "id": "ts-kouekijouhitsuyoun",
+  "name": "公益上必要な建築物",
+  "reading": "こうえきじょうひつようなけんちくぶつ",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚉",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-nougyyouyoukenchik",
+   "ts-kaihatsukyyoka"
+  ],
+  "description": "駅舎・図書館・公民館・変電所 などの ための 開発は、どの 区域でも 許可が いりません。"
+ },
+ {
+  "id": "ts-koukyyoushisetsuka",
+  "name": "公共施設管理者の同意",
+  "reading": "こうきょうしせつかんりしゃのどうい",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kaihatsukyyoka",
+   "ts-kaihatsukoui"
+  ],
+  "description": "開発許可を 申請する 前に、かかわる 道路などの 公共施設の 管理者と 協議して 同意を 得ます。申請の あとでは ありません。"
+ },
+ {
+  "id": "ts-kaihatsushinsakai",
+  "name": "開発審査会",
+  "reading": "かいはつしんさかい",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kaihatsukyyoka",
+   "ts-shigaikachouseikui4"
+  ],
+  "description": "開発許可などの 処分に 不服が ある ときの 審査請求は、開発審査会に します。審査会は 原則 2か月以内に 裁決します。"
+ },
+ {
+  "id": "ts-toshikeikakukuikig",
+  "name": "都市計画区域外の開発許可",
+  "reading": "としけいかくくいきがいのかいはつきょか",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏞",
+  "mapNode": "toshi:kaihatsu",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-juntoshikeikakukui",
+   "ts-kaihatsukyyokanome"
+  ],
+  "description": "都市計画区域と 準都市計画区域の どちらでも ない 区域では、1ヘクタール(10,000㎡)以上の 開発に 知事の 許可が 必要です。"
+ },
+ {
+  "id": "ts-koujikanryyoumaeno",
+  "name": "工事完了前の建築制限",
+  "reading": "こうじかんりょうまえのけんちくせいげん",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "toshi:kaihatsugo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-koujikanryyounokou",
+   "ts-koujikanryyougonok"
+  ],
+  "description": "開発許可を 受けた 土地では、工事完了の 公告が あるまで 原則として 建物を 建てられません。工事用の 仮設建築物や 知事が 認めた ときは 例外です。"
+ },
+ {
+  "id": "ts-koujikanryyougonok",
+  "name": "工事完了後の建築制限",
+  "reading": "こうじかんりょうごのけんちくせいげん",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "toshi:kaihatsugo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-yoteikenchikubutsu",
+   "ts-koujikanryyounokou"
+  ],
+  "description": "工事完了の 公告の あとは、予定建築物 以外の 建物を 建てるには 原則として 知事の 許可が 必要です。用途地域などが 定められていれば この 制限は ありません。"
+ },
+ {
+  "id": "ts-shigaikachouseikui4",
+  "name": "市街化調整区域の建築許可",
+  "reading": "しがいかちょうせいくいきのけんちくきょか",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏚",
+  "mapNode": "toshi:kaihatsugo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-shigaikachouseikui",
+   "ts-kaihatsushinsakai"
+  ],
+  "description": "市街化調整区域で、開発許可を 受けた 区域の 外で 建物を 新築・改築・用途変更 するには 知事の 許可が 必要です。農林漁業用の 建物などは 除きます。"
+ },
+ {
+  "id": "ts-kaihatsukyyokanohe",
+  "name": "開発許可の変更",
+  "reading": "かいはつきょかのへんこう",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "toshi:kaihatsugo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kaihatsukyyoka",
+   "ts-kaihatsukouinohais"
+  ],
+  "description": "開発許可の 内容を 変えるには 知事の 許可が 必要です。ただし 軽微な 変更は、変更した あと 遅滞なく 届け出れば よい しくみです。"
+ },
+ {
+  "id": "ts-kaihatsukouinohais",
+  "name": "開発行為の廃止の届出",
+  "reading": "かいはつこういのはいしのとどけで",
+  "journey": "toshi",
+  "category": "開発許可",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "toshi:kaihatsugo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kaihatsukyyokanohe",
+   "ts-kaihatsukyyoka"
+  ],
+  "description": "開発の 工事を やめた ときは、遅滞なく 知事に 届け出ます。許可では なく 届出で、「◯日前まで」でも ありません。"
+ },
+ {
+  "id": "ts-jigotodokedenomens",
+  "name": "事後届出の面積",
+  "reading": "じごとどけでのめんせき",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-jigotodokede",
+   "ts-ichidannotochi"
+  ],
+  "description": "届出が いるのは 市街化区域で 2,000㎡以上、ほかの 都市計画区域で 5,000㎡以上、都市計画区域の 外で 10,000㎡以上です。開発許可の 面積と まぜない ように します。"
+ },
+ {
+  "id": "ts-jigotodokedenokige",
+  "name": "事後届出の期限",
+  "reading": "じごとどけでのきげん",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-jigotodokede",
+   "ts-riyoumokutekinokan"
+  ],
+  "description": "事後届出は、契約を 結んだ 日から 2週間以内に 出します。届け出るのは 買った がわの 権利取得者で、売った がわでは ありません。"
+ },
+ {
+  "id": "ts-chuushikuiki",
+  "name": "注視区域",
+  "reading": "ちゅうしくいき",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👁",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kanshikuiki",
+   "ts-jizentodokede"
+  ],
+  "description": "地価が 相当な 程度を こえて 上がる おそれが ある とき、知事が 指定できる 区域です。契約の 前に 届け出ます。"
+ },
+ {
+  "id": "ts-kanshikuiki",
+  "name": "監視区域",
+  "reading": "かんしくいき",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-chuushikuiki",
+   "ts-kiseikuiki"
+  ],
+  "description": "地価が 急に 上がる おそれが ある とき、知事が 指定できる 区域です。契約の 前に 届け出ます。届出の いる 面積を 都道府県の 規則で 小さく できます。"
+ },
+ {
+  "id": "ts-kiseikuiki",
+  "name": "規制区域",
+  "reading": "きせいくいき",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kanshikuiki",
+   "ts-kyyokanonaikeiyaku"
+  ],
+  "description": "土地の 契約に 知事の 許可が 必要な 区域です。許可の ない 契約は 効力を 生じません。届出では なく 許可で ある 点が ひっかけです。"
+ },
+ {
+  "id": "ts-ichidannotochi",
+  "name": "一団の土地",
+  "reading": "いちだんのとち",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-jigotodokedenomens",
+   "ts-jigotodokede"
+  ],
+  "description": "ひとつ ずつは 小さくても、まとめて 取引した 土地を 合わせて 届出の 面積を 見る 考えかたです。合わせて 届出の 面積 以上なら 届出が 必要です。"
+ },
+ {
+  "id": "ts-riyoumokutekinokan",
+  "name": "利用目的の勧告",
+  "reading": "りようもくてきのかんこく",
+  "journey": "toshi",
+  "category": "国土利用計画法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "toshi:kokudo",
+  "field": "国土利用計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-jigotodokede",
+   "ts-jigotodokedenokige"
+  ],
+  "description": "事後届出の 利用目的が 計画に 合わない とき、知事は 届出から 3週間以内に 変更を 勧告できます。従わない ときは 公表できますが、契約が 無効に なる わけでは ありません。"
+ },
+ {
+  "id": "ts-shigaikakuikinaino",
+  "name": "市街化区域内の届出の特例",
+  "reading": "しがいかくいきないのとどけでのとくれい",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-yonjoukyyoka",
+   "ts-gojoukyyoka"
+  ],
+  "description": "市街化区域内の 農地の 転用(4条・5条)は、あらかじめ 農業委員会に 届け出れば 許可が いりません。3条には この 特例が ない 点が ひっかけです。"
+ },
+ {
+  "id": "ts-nouchinotenyou",
+  "name": "農地の転用",
+  "reading": "のうちのてんよう",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-yonjoukyyoka",
+   "ts-ichijitenyou"
+  ],
+  "description": "農地を 家の 敷地や 駐車場など、農地 以外の ものに する ことです。勝手に 転用すると、原状回復などを 命じられる ことが あります。"
+ },
+ {
+  "id": "ts-saisouhoubokuchi",
+  "name": "採草放牧地",
+  "reading": "さいそうほうぼくち",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐮",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-sanjoukyyoka",
+   "ts-nouchi"
+  ],
+  "description": "草を とったり 家畜を 放したり する ための 土地です。採草放牧地の 権利移動にも 3条の 許可が 必要です。"
+ },
+ {
+  "id": "ts-souzokuniyorushuto",
+  "name": "相続による取得の届出",
+  "reading": "そうぞくによるしゅとくのとどけで",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📬",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-sanjoukyyoka",
+   "ts-nouchihou"
+  ],
+  "description": "相続などで 農地の 権利を 取得した ときは、3条の 許可は いりませんが、遅滞なく 農業委員会に 届け出ます。「許可が 必要」は ひっかけです。"
+ },
+ {
+  "id": "ts-ichijitenyou",
+  "name": "一時転用",
+  "reading": "いちじてんよう",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-nouchinotenyou",
+   "ts-gojoukyyoka"
+  ],
+  "description": "工事の 資材置き場などで、一時的に 農地を ほかの ことに 使う ことです。一時的でも 転用なので、許可が 必要です。"
+ },
+ {
+  "id": "ts-kyyokanonaikeiyaku",
+  "name": "許可のない契約の効力",
+  "reading": "きょかのないけいやくのこうりょく",
+  "journey": "toshi",
+  "category": "農地法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❌",
+  "mapNode": "toshi:noti",
+  "field": "農地法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-sanjoukyyoka",
+   "ts-gojoukyyoka"
+  ],
+  "description": "3条・5条の 許可を 受けないで した 売買などは、効力を 生じません。契約書が あっても、権利は うつりません。"
+ },
+ {
+  "id": "ts-tokuteimoridotouki",
+  "name": "特定盛土等規制区域",
+  "reading": "とくていもりどとうきせいくいき",
+  "journey": "toshi",
+  "category": "盛土規制法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏔",
+  "mapNode": "toshi:morido",
+  "field": "盛土規制法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-takuchizouseitouko",
+   "ts-moridokiseihou"
+  ],
+  "description": "宅地造成等工事規制区域 以外で、盛土などで 人に 危害が 出る おそれが 特に 大きい 区域を 知事が 指定します。工事は 着手の 30日前までに 届出、大きい ものは 許可です。"
+ },
+ {
+  "id": "ts-takuchizouseitouko2",
+  "name": "宅地造成等工事の許可",
+  "reading": "たくちぞうせいとうこうじのきょか",
+  "journey": "toshi",
+  "category": "盛土規制法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "toshi:morido",
+  "field": "盛土規制法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-takuchizouseitouko",
+   "ts-moridonochuukanken"
+  ],
+  "description": "宅地造成等工事規制区域で 一定の 規模の 工事を するには、工事主が 着手の 前に 知事の 許可を 受けます。盛土で 1mを こえる 崖が できる ときなどです。"
+ },
+ {
+  "id": "ts-zouseitakuchibousa",
+  "name": "造成宅地防災区域",
+  "reading": "ぞうせいたくちぼうさいくいき",
+  "journey": "toshi",
+  "category": "盛土規制法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "toshi:morido",
+  "field": "盛土規制法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-tochinohozengimu",
+   "ts-hazadomappu"
+  ],
+  "description": "宅地造成等工事規制区域の 外で、造成した 宅地の 災害の おそれが 大きい 区域を 知事が 指定します。規制区域の 中には 指定しません。"
+ },
+ {
+  "id": "ts-tochinohozengimu",
+  "name": "土地の保全義務",
+  "reading": "とちのほぜんぎむ",
+  "journey": "toshi",
+  "category": "盛土規制法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "toshi:morido",
+  "field": "盛土規制法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-zouseitakuchibousa",
+   "ts-takuchizouseitouko"
+  ],
+  "description": "規制区域内の 土地の 所有者・管理者・占有者は、土地を 安全に たもつ よう 努めます。義務と いっても「努めなければ ならない」で、知事は 勧告が できます。"
+ },
+ {
+  "id": "ts-moridonochuukanken",
+  "name": "盛土の中間検査",
+  "reading": "もりどのちゅうかんけんさ",
+  "journey": "toshi",
+  "category": "盛土規制法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "toshi:morido",
+  "field": "盛土規制法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-takuchizouseitouko2",
+   "ts-takuchizouseitouko"
+  ],
+  "description": "大きな 盛土などの 工事では、決まった 工程が 終わる たびに 知事の 中間検査を 受けます。合格するまで つぎの 工程に 進めません。"
+ },
+ {
+  "id": "ts-horyyuuchi",
+  "name": "保留地",
+  "reading": "ほりゅうち",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💰",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kanchishobun",
+   "ts-kanchikeikaku"
+  ],
+  "description": "事業の 費用に あてる ためなどで、換地に しないで 残す 土地です。換地処分の 公告の 翌日に 施行者が 取得します。"
+ },
+ {
+  "id": "ts-kanchishobun",
+  "name": "換地処分",
+  "reading": "かんちしょぶん",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kanchi",
+   "ts-seisankin"
+  ],
+  "description": "換地計画に 定めた 内容を 関係権利者に 通知して 行う 処分です。原則 工事が ぜんぶ 終わった あとです。公告の 翌日から 換地が もとの 土地と みなされます。"
+ },
+ {
+  "id": "ts-seisankin",
+  "name": "清算金",
+  "reading": "せいさんきん",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kanchishobun",
+   "ts-kanchi"
+  ],
+  "description": "換地の 価値が もとの 土地と つりあわない とき、お金で 調整する ものです。換地処分の 公告の 翌日に 確定します。"
+ },
+ {
+  "id": "ts-karikanchinoshiyou",
+  "name": "仮換地の使用収益",
+  "reading": "かりかんちのしようしゅうえき",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔑",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-karikanchi",
+   "ts-kanchi"
+  ],
+  "description": "仮換地が 指定されると、もとの 土地を 使っていた 人は 仮換地を 使えるように なり、もとの 土地は 使えなく なります。所有権が うつる わけでは ありません。"
+ },
+ {
+  "id": "ts-kanchikeikaku",
+  "name": "換地計画",
+  "reading": "かんちけいかく",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📑",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-kanchishobun",
+   "ts-horyyuuchi"
+  ],
+  "description": "どの 土地に どの 換地を わたすかを 決める 計画です。施行者が 定め、組合や 市町村などの 施行では 都道府県知事の 認可を 受けます。"
+ },
+ {
+  "id": "ts-nanajuurokujounoky",
+  "name": "76条の許可",
+  "reading": "ななじゅうろくじょうのきょか",
+  "journey": "toshi",
+  "category": "土地区画整理法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "toshi:kukaku",
+  "field": "土地区画整理法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-tochikukakuseiriji",
+   "ts-kanchishobun"
+  ],
+  "description": "事業計画の 認可などの 公告の あと 換地処分の 公告まで、施行地区内で 建築などを するには 知事等の 許可が 必要です。施行者の 許可では ない 点が ひっかけです。"
+ },
+ {
+  "id": "ts-toshikeikakushiset",
+  "name": "都市計画施設の区域内の建築",
+  "reading": "としけいかくしせつのくいきないのけんちく",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏗",
+  "mapNode": "toshi:jigyo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakudouro",
+   "ts-jigyyouchinainosei"
+  ],
+  "description": "都市計画施設の 区域などで 建物を 建てるには 知事等の 許可が 必要です。2階 以下・地階なしで 木造などの 動かしやすい 建物は 許可しなければ なりません。"
+ },
+ {
+  "id": "ts-shigaichikaihatsuj",
+  "name": "市街地開発事業",
+  "reading": "しがいちかいはつじぎょう",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏙",
+  "mapNode": "toshi:jigyo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-tochikukakuseiriji",
+   "ts-toshikeikakujigyyo"
+  ],
+  "description": "土地区画整理事業や 市街地再開発事業 など、まちを まとめて 整える 事業です。都市計画で 区域を 決めます。"
+ },
+ {
+  "id": "ts-jigyyouchinainosei",
+  "name": "事業地内の制限",
+  "reading": "じぎょうちないのせいげん",
+  "journey": "toshi",
+  "category": "都市計画と区域",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "toshi:jigyo",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-toshikeikakujigyyo",
+   "ts-toshikeikakushiset"
+  ],
+  "description": "都市計画事業の 認可などの 告示の あと、事業地内で 事業の じゃまに なる 建築・土地の 形質の 変更・重い 物の 堆積などには 知事等の 許可が 必要です。"
+ },
+ {
+  "id": "ts-fuuchichiku",
+  "name": "風致地区",
+  "reading": "ふうちちく",
+  "journey": "toshi",
+  "category": "地域地区",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍁",
+  "mapNode": "toshi:sonota",
+  "field": "都市計画法",
+  "ruleset": "法令上の制限",
+  "relatedTerms": [
+   "ts-keikan",
+   "ts-ryyokuchi"
+  ],
+  "description": "都市の 風致(自然の 美しさ)を たもつ ために 定める 地区です。地域地区の ひとつで、建物や 木の 伐採などに 条例の 決まりが あります。"
+ }
+]

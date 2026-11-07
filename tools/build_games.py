@@ -116,9 +116,9 @@ GAMES = {
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、家と まちの きまりが 見えてくるよ。不動産適正取引推進機構・国土交通省とは 関係ありません。"),
     # フリック日商簿記(けいくん 2026-11-07「フリック日商簿記を 3級から1級まで 合格レベルで」→ 6つの 問いに「ぜんぶ おすすめで」・範囲は 2027年度版)。まとめは docs/フリック日商簿記-はじめかた.md。
     #   ことば・問題は tools/boki/{terms,shiwake,maru}-<旅>.json + calc.js → boki/terms.js・boki/calc.js(tools/boki/terms_js.py)。しくみは boki/boki.js(BOKI。宅建士を 写した。🧾 仕訳・🧮 計算・📝 ⭕❌・🎯 級ごとの 模擬テスト・❌ 復習)。
-    #   絵は まだ(仮の アイコン tools/boki/placeholder_icon.py・hero=False・logo=False)。届いたら icon_from_square.py boki / title_from_art.py boki / boki/hero.webp
-    "boki": dict(name="フリック日商簿記", modes="BOKI", kinds=set(), color="#e8590c", hero=False, logo=False,
-                 art=dict(word=(900, 195), hero=(1536, 1024), alt="フリック日商簿記", iconv=1, wordv=1),
+    #   トップの 絵は けいくんの ChatGPT の 絵(2026-11-07。字は tools/boki/fix_text.py で 1字 直した)。アイコン・題名は まだ(仮の アイコン tools/boki/placeholder_icon.py・logo=False)
+    "boki": dict(name="フリック日商簿記", modes="BOKI", kinds=set(), color="#e8590c", hero=True, logo=False,
+                 art=dict(word=(900, 195), hero=(1536, 1024), alt="フリック日商簿記", iconv=1, wordv=2),
                  lead="簿記の きほん・3級の 取引と 決算・2級の 商業簿記・会社の 会計と 連結・工業簿記・1級の 商業簿記・会計学・原価計算の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 級の どの 科目で 出るかが わかるよ。お店の お金の ことばから、日商簿記 1級の 範囲の めやすまで 990語。🧾 仕訳クイズ・🧮 計算問題・📝 ⭕❌・級ごとの 模擬テストで 試験の 練習も できるよ。",
                  how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは 簿記の ことばと 仕訳を おぼえる ゲームだよ。総合問題(精算表・財務諸表を 作る)は 問題集で 練習してね。",
                  rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、お金の 流れが 見えてくるよ。日本商工会議所とは 関係ありません。"),

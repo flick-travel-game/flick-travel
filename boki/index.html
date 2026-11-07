@@ -12,7 +12,7 @@
 <meta property="og:title" content="フリック日商簿記｜かずとも">
 <meta property="og:description" content="簿記の きほん・3級の 取引と 決算・2級の 商業簿記・会社の 会計と 連結・工業簿記・1級の 商業簿記・会計学・原価計算の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 級の どの 科目で 出るかが わかるよ。お店の お金の ことばから、日商簿記 1級の 範囲の めやすまで 990語。🧾 仕訳クイズ・🧮 計算問題・📝 ⭕❌・級ごとの 模擬テストで 試験の 練習も できるよ。 かずともの フリックゲーム。">
 <meta property="og:url" content="https://kazutomo.app/flick/boki/">
-<meta property="og:image" content="https://kazutomo.app/flick/hero.webp">
+<meta property="og:image" content="https://kazutomo.app/flick/boki/hero.webp">
 <meta property="og:locale" content="ja_JP">
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
@@ -451,6 +451,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリック日商簿記</h1>
+    <img class="hero" src="hero.webp?v=2" alt="フリック日商簿記" width="1536" height="1024">
     <!-- 🙂 さいしょに マイページで ニックネームと アイコン(けいくん 2026-11-02。いちばん下の 遊びかたでは 見つからなかった → 説明の すぐ下へ)。アイコンが まだ 無い 人にだけ -->
     <p class="how0 hidden" id="how0">🙂 さいしょに 右上の <button type="button" class="lnk" id="how0-btn">マイページ</button> で ニックネームと アイコンを 決めてね。きろくは その なまえで のこるよ。</p>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
@@ -591,7 +592,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"boki", name:"フリック日商簿記", modes:(typeof BOKI === "object" ? BOKI.modes : []), assets:"../", logo:false, hero:false, dir:"boki/", lead:"簿記の きほん・3級の 取引と 決算・2級の 商業簿記・会社の 会計と 連結・工業簿記・1級の 商業簿記・会計学・原価計算の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 級の どの 科目で 出るかが わかるよ。お店の お金の ことばから、日商簿記 1級の 範囲の めやすまで 990語。🧾 仕訳クイズ・🧮 計算問題・📝 ⭕❌・級ごとの 模擬テストで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは 簿記の ことばと 仕訳を おぼえる ゲームだよ。総合問題(精算表・財務諸表を 作る)は 問題集で 練習してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、お金の 流れが 見えてくるよ。日本商工会議所とは 関係ありません。" };
+const GAME = { id:"boki", name:"フリック日商簿記", modes:(typeof BOKI === "object" ? BOKI.modes : []), assets:"../", logo:false, hero:true, dir:"boki/", lead:"簿記の きほん・3級の 取引と 決算・2級の 商業簿記・会社の 会計と 連結・工業簿記・1級の 商業簿記・会計学・原価計算の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、どの 級の どの 科目で 出るかが わかるよ。お店の お金の ことばから、日商簿記 1級の 範囲の めやすまで 990語。🧾 仕訳クイズ・🧮 計算問題・📝 ⭕❌・級ごとの 模擬テストで 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは 簿記の ことばと 仕訳を おぼえる ゲームだよ。総合問題(精算表・財務諸表を 作る)は 問題集で 練習してね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、お金の 流れが 見えてくるよ。日本商工会議所とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

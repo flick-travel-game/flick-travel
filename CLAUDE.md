@@ -1728,7 +1728,7 @@
 - ことばは `tools/boki/terms-<旅>.json`(決まり `PROMPT.md`・置き場所 `plan.json`・図の 箱 `nodes.json`)→ `python3 tools/boki/terms_js.py`(確かめは `--check`)→ `boki/terms.js` + `data/boki.json`。旅・称号・模擬テストは `mkmeta.py` → `meta.json`
   ・BAN の「殺」は 簿記の ことば「相殺」だけ `BAN_WORD_OK` で 通す / ふりがなの 直しは `rbfix-a.json`(仕掛品 = しかかりひん)
   ・1級の 工業簿記には 公式の 許容勘定科目表が ないので、繰延固定費・本社売上・第1等級製品 などは この ゲームで えらんだ 名前
-- 作りかた: 事実を 確かめる 係 1人(`facts.md`)・置き場所 1人・🧮 1人 → 旅ごとに 書く 係 9人 → **別の 係 9人が 1問ずつ 先に 自分で 解いてから くらべた**。仕訳の 答えの まちがいは 0、直したのは 説明の 向き(未払賃金・償却債権取立益)・答えが 1つに 決まらない 問題文・正解に なって しまう `ng`(未払金・仮払金・価格差異 など)・範囲外の 手形の 科目 など 約30か所
+- 作りかた: 事実を 確かめる 係 1人(`facts.md`)・置き場所 1人・🧮 1人 → 旅ごとに 書く 係 9人 → **別の 係 9人が 1問ずつ 先に 自分で 解いてから くらべた**。仕訳の 答えの まちがいは 0、直したのは 説明の 向き(未払賃金・償却債権取立益)・答えが 1つに 決まらない 問題文・正解に なって しまう `ng`(未払金・仮払金・価格差異 など)・範囲外の 手形の 科目 など 約40か所(ほかに 1級 会計学の ⭕❌ の よりどころ 20問)
 - ⏳ **絵は まだ**(仮の アイコン `tools/boki/placeholder_icon.py`・`hero=False`・`logo=False`)。届いたら 四角 → `tools/icon_from_square.py boki`・題名 → `tools/title_from_art.py boki`・トップ → `boki/hero.webp`。⚠️ 題名は「簿 と 薄」を かならず 読む
 - かずとも(speed-king): `FLICK_MODES` に bzkihon … bzmas、`FLICK_LINK_TARGETS` に boki。`HOME_GAMES` / `FLICK_SERIES_GAMES` は 絵が 届いてから
 

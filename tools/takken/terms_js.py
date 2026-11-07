@@ -121,8 +121,11 @@ def main():
                 if x.get("term") in tids: o["t"] = x["term"]
                 maru.append(o)
     js["maru"] = maru
-    f = HERE / "num.json"
-    js["num"] = [dict(id=x["id"], j=x["j"], rs=x["rs"], q=x["q"], a=x["a"], o=x["opts"], w=x["why"], lw=x.get("law", "")) for x in json.loads(f.read_text(encoding="utf-8"))] if f.exists() else []
+    js["num"] = []  # 🔢 数字クイズは 旅ごとの num-<旅>.json(id は 旅の 中で n001〜。ゲームでは「<旅>-n001」)
+    for J in m["journeys"]:
+        f = HERE / f"num-{J['id']}.json"
+        if f.exists():
+            js["num"] += [dict(id=J["id"] + "-" + x["id"], j=J["id"], rs=x["rs"], q=x["q"], a=x["a"], o=x["opts"], w=x["why"], lw=x.get("law", "")) for x in json.loads(f.read_text(encoding="utf-8"))]
     (ROOT / "takken").mkdir(exist_ok=True)
     (ROOT / "takken/terms.js").write_text("/* tools/takken/terms-*.json から tools/takken/terms_js.py が 作る。手で 直さない */\nconst TAKKEN_TERMS = " +
                                          json.dumps(js, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")

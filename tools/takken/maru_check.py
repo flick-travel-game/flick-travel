@@ -49,21 +49,23 @@ def main():
     qs = sorted(allq, key=lambda x: x[1])
     for a, b in zip(qs, qs[1:]):
         if difflib.SequenceMatcher(None, a[1], b[1]).ratio() > .92: warn.append(f"{a[0]} と {b[0]} が ほとんど 同じ 文")
-    f = HERE / "num.json"
-    if f.exists() and not only:
-        N = json.loads(f.read_text(encoding="utf-8")); nid = set()
+    nall = 0
+    for j in (only or JR):
+        f = HERE / f"num-{j}.json"
+        if not f.exists(): continue
+        N = json.loads(f.read_text(encoding="utf-8")); nid = set(); nall += len(N)
         for k in N:
-            i = k.get("id", "?")
-            if not re.fullmatch(r"n\d{3}", i) or i in nid: errs.append(f"{i}: id は n000 で かぶらない")
-            nid.add(i)
-            if k.get("j") not in JR: errs.append(f"{i}: j「{k.get('j')}」")
-            elif k.get("rs") not in RS_OF[k["j"]]: errs.append(f"{i}: rs「{k.get('rs')}」")
+            i = j + ":" + str(k.get("id", "?"))
+            if not re.fullmatch(r"n\d{3}", str(k.get("id"))) or k.get("id") in nid: errs.append(f"{i}: id は n000 で かぶらない")
+            nid.add(k.get("id"))
+            if k.get("j") != j: errs.append(f"{i}: j は「{j}」")
+            if k.get("rs") not in RS_OF[j]: errs.append(f"{i}: rs「{k.get('rs')}」")
             if not k.get("q") or len(k["q"]) > 70: errs.append(f"{i}: q が 空か 70字より 長い")
             if not k.get("why") or len(k["why"]) > 90: errs.append(f"{i}: why が 空か 90字より 長い")
             o = k.get("opts") or []
             if len(o) != 4 or len(set(o)) != 4 or k.get("a") not in o: errs.append(f"{i}: opts は ちがう 4つで a を ふくむ")
             for w in banned(json.dumps(k, ensure_ascii=False)): errs.append(f"{i}: 「{w}」は 使わない")
-        print(f"数字クイズ: {len(N)}問")
+    print(f"数字クイズ: {nall}問")
     print("⭕❌ ぜんぶで", total, "問")
     for w in warn: print("⚠️", w)
     if errs:

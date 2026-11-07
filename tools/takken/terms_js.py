@@ -18,6 +18,11 @@ BAN = ["死亡", "死者", "死ぬ", "死な", "死ん", "遺体", "犠牲", "�
 OLD_NAMES = []
 OLD_OK = re.compile(r"(もとは|まえは|前は|以前は|かつては|これまでは|それまでは|むかしは|変わり|かわり|なくなり|廃止|改め|改正|引き下げ)")
 BAN_OK = {}  # "id": ["字"](どうしても 要る ときだけ)
+# 法律の ことばの 中に たまたま 入る 字(相殺の「殺」・半血の「血」)。この ことばを 外してから BAN を 見る
+BAN_WORD_OK = ["相殺", "半血"]
+def ban_text(txt):
+    for w in BAN_WORD_OK: txt = txt.replace(w, "")
+    return txt
 RB_FIX = {
     "1<ruby>人<rt>ひと</rt></ruby>": "<ruby>1人<rt>ひとり</rt></ruby>",
     "2<ruby>人<rt>ひと</rt></ruby>": "<ruby>2人<rt>ふたり</rt></ruby>",
@@ -56,7 +61,7 @@ def check(d):
         if len(t.get("description", "")) > 130: warn.append(f"{tid}: 説明が 長い({len(t['description'])}字)")
         if t.get("field") not in FIELDS: errs.append(f"{tid}: field「{t.get('field')}」は {sorted(FIELDS)} の どれか")
         if t.get("formula") and len(t["formula"]) > 40: warn.append(f"{tid}: 公式が 長い")
-        txt = " / ".join([t.get("name", ""), t.get("description", ""), t.get("example", ""), t.get("kotoba", "")])
+        txt = ban_text(" / ".join([t.get("name", ""), t.get("description", ""), t.get("example", ""), t.get("kotoba", "")]))
         for w in BAN:
             if w in BAN_OK.get(tid, []): continue
             if w in txt:

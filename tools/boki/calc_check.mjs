@@ -1,6 +1,6 @@
 // フリック日商簿記 calc.js の 検査: 各 generator を N 回 まわす
 import fs from "fs";
-const file = process.argv[2] || "/home/user/flick-travel/tools/boki/calc.js";
+const file = process.argv[2] || new URL("./calc.js", import.meta.url).pathname;  // node tools/boki/calc_check.mjs [calc.js] [回数] [--show]
 const N = +(process.argv[3] || 3000);
 const text = fs.readFileSync(file, "utf8");
 const { CALC, CALC_G, CALC_LV } = new Function(text + "; return {CALC, CALC_G, CALC_LV};")();

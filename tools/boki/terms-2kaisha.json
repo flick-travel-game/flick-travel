@@ -1,0 +1,2158 @@
+[
+ {
+  "id": "c2-shihonjunbikin",
+  "name": "資本準備金",
+  "reading": "しほんじゅんびきん",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-nibunnoichikijun",
+   "c2-kabunushishihon",
+   "c2-shinkabunohakkou"
+  ],
+  "description": "株主が 払い込んだ お金の うち、資本金に しなかった 分を ためておく 純資産です。株式を 発行した ときに 貸方に 書きます。会社法で 決められた 準備金の 1つです。"
+ },
+ {
+  "id": "c2-kabunushishihon",
+  "name": "株主資本",
+  "reading": "かぶぬししほん",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shihonjunbikin",
+   "c2-jouyokin",
+   "c2-junshisannobu"
+  ],
+  "description": "純資産の うち、株主の ものと なる 部分で、資本金・資本剰余金・利益剰余金 から できています。⚠️ 評価・換算差額等は ふくみません。",
+  "formula": "株主資本 = 資本金 + 資本剰余金 + 利益剰余金"
+ },
+ {
+  "id": "c2-jouyokin",
+  "name": "剰余金",
+  "reading": "じょうよきん",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪙",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonotashihonjouyoki",
+   "c2-sonotariekijouyokin",
+   "c2-jouyokinnohaitou"
+  ],
+  "description": "純資産の うち 資本金を こえる 部分で、資本剰余金と 利益剰余金に 分かれます。配当に 使えるのは その他資本剰余金と その他利益剰余金です。"
+ },
+ {
+  "id": "c2-jouyokinnohaitou",
+  "name": "剰余金の配当",
+  "reading": "じょうよきんのはいとう",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-riekijunbikinnotsum",
+   "c2-kabunushihaitoukin",
+   "c2-haitouzaigen"
+  ],
+  "description": "株主総会などで 決めて、剰余金を 株主に 分ける ことです。借方に 繰越利益剰余金、貸方に 未払配当金と 利益準備金を 書きます。"
+ },
+ {
+  "id": "c2-sonotashihonjouyoki",
+  "name": "その他資本剰余金",
+  "reading": "そのたしほんじょうよきん",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shihonjunbikin",
+   "c2-genshi",
+   "c2-haitouzaigen"
+  ],
+  "description": "資本剰余金の うち 資本準備金 以外の 部分です。資本金や 資本準備金を 減らした ときに ふえ、配当の 財源にも なります。"
+ },
+ {
+  "id": "c2-sonotariekijouyokin",
+  "name": "その他利益剰余金",
+  "reading": "そのたりえきじょうよきん",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-ninitsumitatekin",
+   "c2-jouyokin",
+   "c2-haitouzaigen"
+  ],
+  "description": "利益剰余金の うち 利益準備金 以外の 部分で、任意積立金と 繰越利益剰余金から できています。配当の おもな 財源です。"
+ },
+ {
+  "id": "c2-zeikoukakaikei",
+  "name": "税効果会計",
+  "reading": "ぜいこうかかいけい",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-ichijisai",
+   "c2-houjinzeitouchousei",
+   "c2-kurinobezeikinshisa"
+  ],
+  "description": "会計の 利益と 税の 所得の ずれの うち、いずれ なくなる ものに ついて、法人税等を 会計の 利益に 合うよう 調整する しくみです。法人税等調整額を 使います。"
+ },
+ {
+  "id": "c2-kurinobezeikinshisa",
+  "name": "繰延税金資産",
+  "reading": "くりのべぜいきんしさん",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shouraigensanichiji",
+   "c2-houjinzeitouchousei",
+   "c2-kurinobezeikinfusai"
+  ],
+  "description": "将来の 税金を 減らす 効果を 資産として のせた ものです。将来減算一時差異 × 法定実効税率で 計算し、ふえたら 借方。相手は ふつう 法人税等調整額です。",
+  "formula": "繰延税金資産 = 将来減算一時差異 × 税率"
+ },
+ {
+  "id": "c2-kurinobezeikinfusai",
+  "name": "繰延税金負債",
+  "reading": "くりのべぜいきんふさい",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📤",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shouraikasanichijis",
+   "c2-hyoukasagakunozeiko",
+   "c2-kurinobezeikinshisa"
+  ],
+  "description": "将来 払う 税金が ふえる 分を 負債に した ものです。その他有価証券の 値上がり などの 将来加算一時差異から 生まれ、ふえたら 貸方に 書きます。"
+ },
+ {
+  "id": "c2-gappei",
+  "name": "合併",
+  "reading": "がっぺい",
+  "journey": "2kaisha",
+  "category": "合併",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "2kaisha:gappei",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kyuushuugappei",
+   "c2-pachiesuhou",
+   "c2-noren"
+  ],
+  "description": "2つ 以上の 会社が 1つに なる ことです。2級では 1社が 残って ほかの 会社を 受け入れる 吸収合併を、受け入れた 資産・負債の 時価で 仕訳します。"
+ },
+ {
+  "id": "c2-renketsu",
+  "name": "連結",
+  "reading": "れんけつ",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "2kaisha:renketsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-oyagaisha",
+   "c2-kogaisha",
+   "c2-renketsuzaimushohyo"
+  ],
+  "description": "親会社と 子会社を 1つの グループと みて、グループ 全体の 財務諸表を 作る ことです。各社の 数字を 合算し、グループ内の 取引を 消去します。"
+ },
+ {
+  "id": "c2-oyagaisha",
+  "name": "親会社",
+  "reading": "おやがいしゃ",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "2kaisha:renketsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kogaisha",
+   "c2-shihai",
+   "c2-renketsu"
+  ],
+  "description": "ほかの 会社の 意思決定を 支配している 会社です。連結財務諸表を 作るのは 親会社で、子会社株式を 持っています。"
+ },
+ {
+  "id": "c2-kogaisha",
+  "name": "子会社",
+  "reading": "こがいしゃ",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "2kaisha:renketsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-oyagaisha",
+   "c2-giketsuken",
+   "c2-renketsunohani"
+  ],
+  "description": "親会社に 支配されている 会社です。議決権の 過半数を 持たれて いる ときなどが あたり、原則として すべて 連結の 範囲に 入れます。"
+ },
+ {
+  "id": "c2-noren",
+  "name": "のれん",
+  "reading": "のれん",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "2kaisha:noren",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-norenshoukyaku",
+   "c2-funonorenhasseieki",
+   "c2-shoukyakukikan"
+  ],
+  "description": "会社を 買った ときに、受け入れた 純資産の 時価より 多く 払った 分です。ブランドや 人材などの 力を あらわす 資産で、20年 以内で 償却します。",
+  "formula": "のれん = 取得の 対価 − 受け入れた 純資産"
+ },
+ {
+  "id": "c2-hishihaikabunushimo",
+  "name": "非支配株主持分",
+  "reading": "ひしはいかぶぬしもちぶん",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👪",
+  "mapNode": "2kaisha:hishihai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-hishihaikabunushini",
+   "c2-mochibun",
+   "c2-shihonrenketsu"
+  ],
+  "description": "子会社の 純資産の うち、親会社 以外の 株主の 取り分です。連結貸借対照表の 純資産の 部に のせ、資本連結では 貸方に 書きます。",
+  "formula": "子会社の 資本 × 非支配株主の 持分割合"
+ },
+ {
+  "id": "c2-renketsuzaimushohyo",
+  "name": "連結財務諸表",
+  "reading": "れんけつざいむしょひょう",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "2kaisha:renzai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-renketsutaishakutai",
+   "c2-renketsusonekikeisa",
+   "c2-kobetsuzaimushohyou"
+  ],
+  "description": "親会社が 企業集団 全体に ついて 作る 財務諸表です。連結貸借対照表・連結損益計算書・連結株主資本等変動計算書 などが あります。"
+ },
+ {
+  "id": "c2-kabunushishihontouh",
+  "name": "株主資本等変動計算書",
+  "reading": "かぶぬししほんとうへんどうけいさんしょ",
+  "journey": "2kaisha",
+  "category": "株主資本等変動計算書",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📑",
+  "mapNode": "2kaisha:hendo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-toukishuzandaka",
+   "c2-toukihendougaku",
+   "c2-toukimatsuzandaka"
+  ],
+  "description": "純資産の 各項目が 1年で どう 動いたかを、当期首残高・当期変動額・当期末残高の 形で あらわす 表です。配当や 当期純利益に よる 動きが わかります。"
+ },
+ {
+  "id": "c2-naibutorihiki",
+  "name": "内部取引",
+  "reading": "ないぶとりひき",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "2kaisha:naibu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-saikensaimunosousai",
+   "c2-uriagedakatouriageg",
+   "c2-mijitsugenrieki"
+  ],
+  "description": "親会社と 子会社、子会社どうしの ような グループ内の 取引です。外から みると 取引では ないので、連結では 売上高と 売上原価、債権と 債務を 消去します。"
+ },
+ {
+  "id": "c2-mijitsugenrieki",
+  "name": "未実現利益",
+  "reading": "みじつげんりえき",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "2kaisha:mijitsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shouhinnomijitsugen",
+   "c2-tochinomijitsugenri",
+   "c2-daunsutorimu"
+  ],
+  "description": "グループ内で 売った 商品などが まだ グループの 外に 売れず 残っている ときの 利益です。連結では 消去して、資産を もとの 原価に もどします。"
+ },
+ {
+  "id": "c2-shihonrenketsu",
+  "name": "資本連結",
+  "reading": "しほんれんけつ",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "2kaisha:shihon",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-toushitoshihonnosou",
+   "c2-shihaikakutokubi",
+   "c2-noren"
+  ],
+  "description": "親会社の 投資(子会社株式)と 子会社の 資本を 消去する 連結の 手続きです。差額は のれん、親会社 以外の 取り分は 非支配株主持分に します。"
+ },
+ {
+  "id": "c2-ninitsumitatekin",
+  "name": "任意積立金",
+  "reading": "にんいつみたてきん",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-bettotsumitatekin",
+   "c2-shinchikutsumitatek",
+   "c2-ninitsumitatekinnot"
+  ],
+  "description": "会社が 株主総会などの 決議で 自由に 積み立てる 利益剰余金です。別途積立金や 新築積立金が あり、積み立てる ときは 繰越利益剰余金を 借方に 書きます。"
+ },
+ {
+  "id": "c2-bettotsumitatekin",
+  "name": "別途積立金",
+  "reading": "べっとつみたてきん",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-ninitsumitatekin",
+   "c2-ninitsumitatekinnot"
+  ],
+  "description": "使いみちを 決めずに 積み立てる 任意積立金です。積み立てると 貸方、取り崩して 繰越利益剰余金に もどすと 借方に 書きます。"
+ },
+ {
+  "id": "c2-shinchikutsumitatek",
+  "name": "新築積立金",
+  "reading": "しんちくつみたてきん",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏗️",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-ninitsumitatekin",
+   "c2-ninitsumitatekinnot"
+  ],
+  "description": "建物の 新築に そなえて 積み立てる 任意積立金です。⚠️ 建物が できても 自動では 消えず、取り崩す 決議を して 繰越利益剰余金に 振り替えます。"
+ },
+ {
+  "id": "c2-riekijunbikinnotsum",
+  "name": "利益準備金の積立",
+  "reading": "りえきじゅんびきんのつみたて",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪣",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-juubunnoichinotsumi",
+   "c2-yonbunnoichikijun",
+   "c2-jouyokinnohaitou"
+  ],
+  "description": "繰越利益剰余金から 配当する ときに、会社法で 決められた 額を 利益準備金に 積み立てる ことです。貸方に 利益準備金を 書きます。"
+ },
+ {
+  "id": "c2-yonbunnoichikijun",
+  "name": "4分の1基準",
+  "reading": "よんぶんのいちきじゅん",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-juubunnoichinotsumi",
+   "c2-riekijunbikinnotsum"
+  ],
+  "description": "資本準備金と 利益準備金の 合計が 資本金の 4分の1に なるまで、配当の とき 準備金を 積み立てる 決まりです。達していれば 積み立ては いりません。",
+  "formula": "上限 = 資本金 × 1/4 − 準備金の 合計"
+ },
+ {
+  "id": "c2-juubunnoichinotsumi",
+  "name": "10分の1の積立",
+  "reading": "じゅうぶんのいちのつみたて",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-yonbunnoichikijun",
+   "c2-riekijunbikinnotsum"
+  ],
+  "description": "配当する ときは、配当額の 10分の1を 準備金に 積み立てます。ただし 4分の1基準までの 残りが それより 小さければ、その 残りの 額だけです。",
+  "formula": "積立額 = 配当額 × 1/10 と 上限の 小さい ほう"
+ },
+ {
+  "id": "c2-kabushikimoushikomi",
+  "name": "株式申込証拠金",
+  "reading": "かぶしきもうしこみしょうこきん",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shinkabunohakkou",
+   "c2-shihonjunbikin"
+  ],
+  "description": "株式の 払込期日 前に 申込者から 受け取る お金です。純資産の 一時的な 科目で 貸方に 書き、払込期日に 資本金などへ 振り替えます。お金は 別段預金に 入れます。"
+ },
+ {
+  "id": "c2-kabushikikoufuhi",
+  "name": "株式交付費",
+  "reading": "かぶしきこうふひ",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shinkabunohakkou",
+   "c2-souritsuhi"
+  ],
+  "description": "新しく 株式を 発行する ときに かかった 広告や 手数料 などです。原則 費用(営業外費用)で 借方に 書きます。⚠️ 資本金からは 引きません。"
+ },
+ {
+  "id": "c2-souritsuhi",
+  "name": "創立費",
+  "reading": "そうりつひ",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏁",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kaigyouhi",
+   "c2-kabushikikoufuhi"
+  ],
+  "description": "会社を つくる までに かかった 定款の 作成や 登記の 費用です。原則 費用で 借方に 書きます。会社が できた あと 開業 までの 費用は 開業費です。"
+ },
+ {
+  "id": "c2-kaigyouhi",
+  "name": "開業費",
+  "reading": "かいぎょうひ",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎌",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-souritsuhi",
+   "c2-kabushikikoufuhi"
+  ],
+  "description": "会社が できてから 営業を 始める までに かかった 広告や 準備の 費用です。原則 費用で 借方に 書きます。⚠️ 設立 前の 費用は 創立費と 分けます。"
+ },
+ {
+  "id": "c2-houjinzeitouchousei",
+  "name": "法人税等調整額",
+  "reading": "ほうじんぜいとうちょうせいがく",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kurinobezeikinshisa",
+   "c2-zeikoukakaikei",
+   "c2-kurinobezeikinfusai"
+  ],
+  "description": "税効果会計で 法人税等を 調整する 損益の 科目です。繰延税金資産が ふえると 貸方、へると 借方に 書きます。損益計算書では 法人税等の 下に のせます。"
+ },
+ {
+  "id": "c2-ichijisai",
+  "name": "一時差異",
+  "reading": "いちじさい",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shouraigensanichiji",
+   "c2-shouraikasanichijis",
+   "c2-eikyuusai"
+  ],
+  "description": "会計の 資産・負債の 額と 税の うえの 額の 差で、いずれ 解消する ものです。税効果会計の 対象で、将来減算と 将来加算の 2つが あります。"
+ },
+ {
+  "id": "c2-shouraigensanichiji",
+  "name": "将来減算一時差異",
+  "reading": "しょうらいげんさんいちじさい",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kurinobezeikinshisa",
+   "c2-sonkinsannyuugendoc",
+   "c2-ichijisai"
+  ],
+  "description": "解消する ときに 将来の 課税所得を 減らす 一時差異です。貸倒引当金や 減価償却費の 損金不算入額で 生まれ、繰延税金資産を 計上します。"
+ },
+ {
+  "id": "c2-shouraikasanichijis",
+  "name": "将来加算一時差異",
+  "reading": "しょうらいかさんいちじさい",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kurinobezeikinfusai",
+   "c2-hyoukasagakunozeiko",
+   "c2-ichijisai"
+  ],
+  "description": "解消する ときに 将来の 課税所得を ふやす 一時差異です。2級では その他有価証券の 値上がりで 生まれ、繰延税金負債を 計上します。"
+ },
+ {
+  "id": "c2-houteijikkouzeirits",
+  "name": "法定実効税率",
+  "reading": "ほうていじっこうぜいりつ",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kurinobezeikinshisa",
+   "c2-shisanfusaihou"
+  ],
+  "description": "法人税・住民税・事業税を あわせた 実質の 税率です。一時差異に この 率を かけて 繰延税金資産・負債を 計算します。試験では 問題文に 示されます。",
+  "formula": "繰延税金資産 = 一時差異 × 法定実効税率"
+ },
+ {
+  "id": "c2-kyuushuugappei",
+  "name": "吸収合併",
+  "reading": "きゅうしゅうがっぺい",
+  "journey": "2kaisha",
+  "category": "合併",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "2kaisha:gappei",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonzokugaisha",
+   "c2-shoumetsugaisha",
+   "c2-koufukabushiki"
+  ],
+  "description": "1つの 会社が 残り、ほかの 会社の 資産と 負債を 受け入れる 合併です。残る 会社は 株式を 交付して、資本金などを ふやします。"
+ },
+ {
+  "id": "c2-funonorenhasseieki",
+  "name": "負ののれん発生益",
+  "reading": "ふののれんはっせいえき",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "2kaisha:noren",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-noren",
+   "c2-ukeirejunshisan"
+  ],
+  "description": "受け入れた 純資産の 時価より 安く 会社を 取得した ときの 差額です。資産には せず、発生した 年の 利益(特別利益)として 貸方に 書きます。"
+ },
+ {
+  "id": "c2-norenshoukyaku",
+  "name": "のれん償却",
+  "reading": "のれんしょうきゃく",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "2kaisha:noren",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-noren",
+   "c2-shoukyakukikan"
+  ],
+  "description": "のれんを 20年 以内の 期間で 定額法などで 費用に する ことです。借方に のれん償却、貸方に のれんを 書きます。連結でも 毎期 行います。",
+  "formula": "のれん償却 = のれん ÷ 償却年数"
+ },
+ {
+  "id": "c2-shihai",
+  "name": "支配",
+  "reading": "しはい",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎮",
+  "mapNode": "2kaisha:renketsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shihairyokukijun",
+   "c2-giketsuken",
+   "c2-kogaisha"
+  ],
+  "description": "ほかの 会社の 財務や 営業の 方針を 決められる 状態です。議決権の 過半数を 持つ ことが 典型で、支配して いれば その 会社は 子会社です。"
+ },
+ {
+  "id": "c2-shihaikakutokubi",
+  "name": "支配獲得日",
+  "reading": "しはいかくとくび",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "2kaisha:shihon",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shihonrenketsu",
+   "c2-toushitoshihonnosou",
+   "c2-zenmenjikahyoukahou"
+  ],
+  "description": "親会社が 子会社の 支配を 手に入れた 日です。この 日の 子会社の 資本で 資本連結を して、のれんと 非支配株主持分を 決めます。この 日は 連結貸借対照表だけ 作ります。"
+ },
+ {
+  "id": "c2-toushitoshihonnosou",
+  "name": "投資と資本の相殺消去",
+  "reading": "とうしとしほんのそうさいしょうきょ",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "2kaisha:shihon",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shihonrenketsu",
+   "c2-noren",
+   "c2-hishihaikabunushimo"
+  ],
+  "description": "親会社の 子会社株式と、子会社の 資本金・資本剰余金・利益剰余金を 消去する 仕訳です。差額は のれん、親会社 以外の 分は 非支配株主持分に します。"
+ },
+ {
+  "id": "c2-kaishishiwake",
+  "name": "開始仕訳",
+  "reading": "かいししわけ",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔂",
+  "mapNode": "2kaisha:shihon",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-renketsushuuseishiw",
+   "c2-taimuteburu"
+  ],
+  "description": "前の 年までの 連結修正仕訳を、当期の はじめに もう一度 する 仕訳です。連結の 修正は 個別の 帳簿に 残らないためです。⚠️ 前の 年の 損益の 科目は 利益剰余金で 書きます。"
+ },
+ {
+  "id": "c2-hishihaikabunushini",
+  "name": "非支配株主に帰属する当期純利益",
+  "reading": "ひしはいかぶぬしにきぞくするとうきじゅんりえき",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍰",
+  "mapNode": "2kaisha:hishihai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-riekinoanbun",
+   "c2-hishihaikabunushimo",
+   "c2-oyagaishakabunushin"
+  ],
+  "description": "子会社の 当期純利益の うち、非支配株主の 取り分です。借方に この 科目、貸方に 非支配株主持分を 書きます。",
+  "formula": "子会社の 当期純利益 × 非支配株主の 割合"
+ },
+ {
+  "id": "c2-oyagaishakabunushin",
+  "name": "親会社株主に帰属する当期純利益",
+  "reading": "おやがいしゃかぶぬしにきぞくするとうきじゅんりえき",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏆",
+  "mapNode": "2kaisha:hishihai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-hishihaikabunushini",
+   "c2-renketsusonekikeisa"
+  ],
+  "description": "連結の 当期純利益から 非支配株主の 取り分を 引いた、親会社の 株主の 取り分です。連結損益計算書の いちばん 下に のせます。",
+  "formula": "当期純利益 − 非支配株主に帰属する分"
+ },
+ {
+  "id": "c2-saikensaimunosousai",
+  "name": "債権債務の相殺消去",
+  "reading": "さいけんさいむのそうさいしょうきょ",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "2kaisha:naibu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kashidaorehikiateki",
+   "c2-risokunosousai",
+   "c2-naibutorihiki"
+  ],
+  "description": "グループ内の 売掛金と 買掛金、貸付金と 借入金 などを 消去する ことです。借方に 債務、貸方に 債権を 書いて なくします。"
+ },
+ {
+  "id": "c2-uriagedakatouriageg",
+  "name": "売上高と売上原価の相殺",
+  "reading": "うりあげだかとうりあげげんかのそうさい",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "2kaisha:naibu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-naibutorihiki",
+   "c2-shouhinnomijitsugen"
+  ],
+  "description": "グループ内の 商品の 売り買いを 消去する ことです。借方に 売上高、貸方に 売上原価を 書いて、同じ 額だけ 両方を 減らします。"
+ },
+ {
+  "id": "c2-daunsutorimu",
+  "name": "ダウンストリーム",
+  "reading": "だうんすとりーむ",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⤵️",
+  "mapNode": "2kaisha:mijitsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-appusutorimu",
+   "c2-kimatsumijitsugenri"
+  ],
+  "description": "親会社が 子会社に 商品などを 売る 取引です。子会社の 在庫に ふくまれる 未実現利益は、全額 消去して 親会社が 負担します。非支配株主には 負担させません。"
+ },
+ {
+  "id": "c2-appusutorimu",
+  "name": "アップストリーム",
+  "reading": "あっぷすとりーむ",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⤴️",
+  "mapNode": "2kaisha:mijitsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-daunsutorimu",
+   "c2-hishihaikabunushimo"
+  ],
+  "description": "子会社が 親会社に 商品などを 売る 取引です。未実現利益は 全額 消去し、その うち 非支配株主の 持分割合だけ 非支配株主持分に 負担させます。"
+ },
+ {
+  "id": "c2-renketsuseisanhyou",
+  "name": "連結精算表",
+  "reading": "れんけつせいさんひょう",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗒️",
+  "mapNode": "2kaisha:renzai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-gassan",
+   "c2-renketsushuuseishiw",
+   "c2-kobetsuzaimushohyou"
+  ],
+  "description": "親会社と 子会社の 個別財務諸表を 合算し、連結修正仕訳を 加えて 連結財務諸表の 数字を 出す 表です。修正の 欄は 借方・貸方の 向きに 注意します。"
+ },
+ {
+  "id": "c2-renketsusonekikeisa",
+  "name": "連結損益計算書",
+  "reading": "れんけつそんえきけいさんしょ",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "2kaisha:renzai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-oyagaishakabunushin",
+   "c2-hishihaikabunushini",
+   "c2-renketsuzaimushohyo"
+  ],
+  "description": "企業集団 全体の 1年の 損益を あらわす 表です。グループ内の 売上高と 売上原価は 消去され、当期純利益を 非支配株主と 親会社株主の 分に 分けて 示します。"
+ },
+ {
+  "id": "c2-haraikomishihon",
+  "name": "払込資本",
+  "reading": "はらいこみしほん",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shihonjunbikin",
+   "c2-nibunnoichikijun"
+  ],
+  "description": "株主が 払い込んだ 資本で、資本金と 資本剰余金の ことです。⚠️ 利益から ためた 利益剰余金とは 分けて 考えます。"
+ },
+ {
+  "id": "c2-kaishahou",
+  "name": "会社法",
+  "reading": "かいしゃほう",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-nibunnoichikijun",
+   "c2-yonbunnoichikijun"
+  ],
+  "description": "株式会社の つくり方・機関・配当の 決まり などを 定めた 法律です。資本金の 2分の1基準や 準備金の 積立は この 法律の 決まりです。"
+ },
+ {
+  "id": "c2-nibunnoichikijun",
+  "name": "2分の1基準",
+  "reading": "にぶんのいちきじゅん",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shihonjunbikin",
+   "c2-shinkabunohakkou",
+   "c2-kaishahou"
+  ],
+  "description": "株式を 発行した ときは 払込金額の 2分の1 以上を 資本金に しなければ なりません。資本金に しない 残りは 資本準備金に します。",
+  "formula": "資本金 ≧ 払込金額 × 1/2"
+ },
+ {
+  "id": "c2-shinkabunohakkou",
+  "name": "新株の発行",
+  "reading": "しんかぶのはっこう",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🆕",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-nibunnoichikijun",
+   "c2-kabushikikoufuhi",
+   "c2-kabushikimoushikomi"
+  ],
+  "description": "会社が できた あと 新しく 株式を 発行して 資金を 集める ことで、増資とも いいます。払込金額を 資本金と 資本準備金に 分け、費用は 株式交付費です。"
+ },
+ {
+  "id": "c2-genshi",
+  "name": "減資",
+  "reading": "げんし",
+  "journey": "2kaisha",
+  "category": "株主資本",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔻",
+  "mapNode": "2kaisha:kabunushi",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonotashihonjouyoki",
+   "c2-kessontenpo"
+  ],
+  "description": "資本金を 減らす ことです。減らした 額は その他資本剰余金へ 振り替えたり、欠損てん補に あてたり します。借方に 資本金を 書きます。"
+ },
+ {
+  "id": "c2-junbikinnotorikuzus",
+  "name": "準備金の取崩し",
+  "reading": "じゅんびきんのとりくずし",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kessontenpo",
+   "c2-sonotashihonjouyoki"
+  ],
+  "description": "株主総会などの 決議で 資本準備金や 利益準備金を 減らす ことです。資本準備金は その他資本剰余金へ、利益準備金は 繰越利益剰余金へ 振り替えます。⚠️ 資本と 利益を 混ぜません。"
+ },
+ {
+  "id": "c2-ninitsumitatekinnot",
+  "name": "任意積立金の取崩し",
+  "reading": "にんいつみたてきんのとりくずし",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔓",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-ninitsumitatekin",
+   "c2-bettotsumitatekin",
+   "c2-kessontenpo"
+  ],
+  "description": "積み立てて いた 任意積立金を 繰越利益剰余金に もどす ことです。借方に 積立金、貸方に 繰越利益剰余金を 書きます。"
+ },
+ {
+  "id": "c2-kessontenpo",
+  "name": "欠損てん補",
+  "reading": "けっそんてんぽ",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-junbikinnotorikuzus",
+   "c2-ninitsumitatekinnot",
+   "c2-genshi"
+  ],
+  "description": "繰越利益剰余金が マイナス(借方残高)の ときに、準備金や 積立金を 取り崩して うめる ことです。貸方に 繰越利益剰余金を 書いて 0に 近づけます。"
+ },
+ {
+  "id": "c2-haitouzaigen",
+  "name": "配当財源",
+  "reading": "はいとうざいげん",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonotariekijouyokin",
+   "c2-sonotashihonjouyoki",
+   "c2-jouyokinnohaitou"
+  ],
+  "description": "配当に 使う 剰余金です。その他利益剰余金か その他資本剰余金です。⚠️ その他資本剰余金から 配当したら 資本準備金を、利益から なら 利益準備金を 積みます。"
+ },
+ {
+  "id": "c2-chuukanhaitou",
+  "name": "中間配当",
+  "reading": "ちゅうかんはいとう",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌗",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-jouyokinnohaitou",
+   "c2-riekijunbikinnotsum"
+  ],
+  "description": "取締役会の 決議で 期の 途中に 1回だけ 行える 配当です。仕訳は ふつうの 配当と 同じで、準備金の 積み立ても 必要です。"
+ },
+ {
+  "id": "c2-kabunushihaitoukin",
+  "name": "株主配当金",
+  "reading": "かぶぬしはいとうきん",
+  "journey": "2kaisha",
+  "category": "剰余金の 配当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✉️",
+  "mapNode": "2kaisha:haito",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-jouyokinnohaitou",
+   "c2-chuukanhaitou"
+  ],
+  "description": "株主に 払う 配当の 額です。決議の ときは 未払配当金として 貸方に 書き、支払った ときに 借方に 書きます。⚠️ 費用では ありません。"
+ },
+ {
+  "id": "c2-toukihendougaku",
+  "name": "当期変動額",
+  "reading": "とうきへんどうがく",
+  "journey": "2kaisha",
+  "category": "株主資本等変動計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↕️",
+  "mapNode": "2kaisha:hendo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-toukishuzandaka",
+   "c2-toukimatsuzandaka",
+   "c2-kabunushishihontouh"
+  ],
+  "description": "株主資本等変動計算書で、その 年の 増減を あらわす 欄です。新株の発行・剰余金の配当・当期純利益 などの 理由ごとに 書きます。"
+ },
+ {
+  "id": "c2-toukishuzandaka",
+  "name": "当期首残高",
+  "reading": "とうきしゅざんだか",
+  "journey": "2kaisha",
+  "category": "株主資本等変動計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌅",
+  "mapNode": "2kaisha:hendo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-toukimatsuzandaka",
+   "c2-toukihendougaku"
+  ],
+  "description": "株主資本等変動計算書の はじめの 行で、前の 期末の 残高と 同じです。これに 当期変動額を 足すと 当期末残高に なります。",
+  "formula": "当期末残高 = 当期首残高 + 当期変動額"
+ },
+ {
+  "id": "c2-toukimatsuzandaka",
+  "name": "当期末残高",
+  "reading": "とうきまつざんだか",
+  "journey": "2kaisha",
+  "category": "株主資本等変動計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌇",
+  "mapNode": "2kaisha:hendo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-toukishuzandaka",
+   "c2-junshisannobu"
+  ],
+  "description": "株主資本等変動計算書の 最後の 行です。貸借対照表の 純資産の 部の 金額と 一致します。"
+ },
+ {
+  "id": "c2-kabunushishihonigai",
+  "name": "株主資本以外の項目",
+  "reading": "かぶぬししほんいがいのこうもく",
+  "journey": "2kaisha",
+  "category": "株主資本等変動計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "2kaisha:hendo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-hyoukakansansagakut",
+   "c2-kabunushishihontouh"
+  ],
+  "description": "株主資本等変動計算書で、評価・換算差額等 などの 動きを まとめる 欄です。その他有価証券評価差額金は 理由を 分けず、純額で 書きます。"
+ },
+ {
+  "id": "c2-hyoukakansansagakut",
+  "name": "評価・換算差額等",
+  "reading": "ひょうかかんさんさがくとう",
+  "journey": "2kaisha",
+  "category": "株主資本等変動計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "2kaisha:hendo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kabunushishihonigai",
+   "c2-hyoukasagakunozeiko",
+   "c2-junshisannobu"
+  ],
+  "description": "純資産の 部の 区分の 1つで、資産を 時価で 評価した 差額などです。2級では その他有価証券評価差額金が あたります。⚠️ 株主資本では ありません。"
+ },
+ {
+  "id": "c2-junshisannobu",
+  "name": "純資産の部",
+  "reading": "じゅんしさんのぶ",
+  "journey": "2kaisha",
+  "category": "株主資本等変動計算書",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "2kaisha:hendo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kabunushishihon",
+   "c2-hyoukakansansagakut",
+   "c2-hishihaikabunushimo"
+  ],
+  "description": "貸借対照表で 資産から 負債を 引いた 部分です。株主資本と 評価・換算差額等、連結では さらに 非支配株主持分 などに 分けて のせます。"
+ },
+ {
+  "id": "c2-sonkinfusannyuu",
+  "name": "損金不算入",
+  "reading": "そんきんふさんにゅう",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonkinsannyuu",
+   "c2-sonkinsannyuugendoc",
+   "c2-kazeishotoku"
+  ],
+  "description": "会計では 費用に したが、税の 計算では 費用(損金)と 認められない ことです。その 分だけ 課税所得が ふえます。限度を こえた 貸倒引当金繰入 などが 例です。"
+ },
+ {
+  "id": "c2-sonkinsannyuu",
+  "name": "損金算入",
+  "reading": "そんきんさんにゅう",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonkinfusannyuu",
+   "c2-sainokaishou"
+  ],
+  "description": "税の 計算で 費用(損金)と 認める ことです。前に 損金不算入だった 額が のちに 認められると、一時差異が 解消して 繰延税金資産を 減らします。"
+ },
+ {
+  "id": "c2-eikyuusai",
+  "name": "永久差異",
+  "reading": "えいきゅうさい",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♾️",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-ichijisai",
+   "c2-zeikoukakaikei"
+  ],
+  "description": "会計と 税の ずれの うち、ずっと 解消しない ものです。交際費の 一部 などが あたり、税効果会計の 対象に しません。⚠️ 一時差異と 区別します。"
+ },
+ {
+  "id": "c2-kazeishotoku",
+  "name": "課税所得",
+  "reading": "かぜいしょとく",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonkinfusannyuu",
+   "c2-sonkinsannyuu"
+  ],
+  "description": "法人税等の 計算の もとに なる 所得です。会計の 利益に 損金不算入額などを 足したり 引いたり して 求めます。",
+  "formula": "課税所得 = 税引前当期純利益 ± 調整"
+ },
+ {
+  "id": "c2-sonkinsannyuugendoc",
+  "name": "損金算入限度超過額",
+  "reading": "そんきんさんにゅうげんどちょうかがく",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📛",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonkinfusannyuu",
+   "c2-shouraigensanichiji"
+  ],
+  "description": "税の 決まりで 費用に できる 限度を こえた 額です。貸倒引当金繰入や 減価償却費で 出て、将来減算一時差異と なります。"
+ },
+ {
+  "id": "c2-hyoukasagakunozeiko",
+  "name": "評価差額の税効果",
+  "reading": "ひょうかさがくのぜいこうか",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💹",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kurinobezeikinfusai",
+   "c2-hyoukakansansagakut",
+   "c2-shouraikasanichijis"
+  ],
+  "description": "その他有価証券を 時価に した 差額の うち、税金に あたる 分を 繰延税金資産・負債に する 処理です。⚠️ 相手は 法人税等調整額では なく その他有価証券評価差額金です。"
+ },
+ {
+  "id": "c2-shisanfusaihou",
+  "name": "資産負債法",
+  "reading": "しさんふさいほう",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-houteijikkouzeirits",
+   "c2-ichijisai"
+  ],
+  "description": "税効果を、一時差異が 解消する ときの 税率で 計算する 考えかたです。税率が 変われば 繰延税金資産・負債も 見なおします。"
+ },
+ {
+  "id": "c2-sousaihyouji",
+  "name": "相殺表示",
+  "reading": "そうさいひょうじ",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪞",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kurinobezeikinshisa",
+   "c2-kurinobezeikinfusai"
+  ],
+  "description": "繰延税金資産と 繰延税金負債を 差し引きして、多い ほうの 差額だけ 貸借対照表に のせる ことです。⚠️ 両方を そのまま 並べて 書くのでは ありません。"
+ },
+ {
+  "id": "c2-sainokaishou",
+  "name": "差異の解消",
+  "reading": "さいのかいしょう",
+  "journey": "2kaisha",
+  "category": "税効果会計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌤️",
+  "mapNode": "2kaisha:zeikoka",
+  "field": "税効果",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonkinsannyuu",
+   "c2-houjinzeitouchousei"
+  ],
+  "description": "一時差異が なくなる ことです。将来減算一時差異が 解消すると 繰延税金資産を 減らし、借方に 法人税等調整額を 書きます。"
+ },
+ {
+  "id": "c2-ukeirejunshisan",
+  "name": "受入純資産",
+  "reading": "うけいれじゅんしさん",
+  "journey": "2kaisha",
+  "category": "合併",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "2kaisha:gappei",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-noren",
+   "c2-funonorenhasseieki",
+   "c2-pachiesuhou"
+  ],
+  "description": "合併で 受け入れた 資産から 負債を 引いた 額(時価)です。対価の 額より 小さければ のれん、大きければ 負ののれん発生益です。",
+  "formula": "受入純資産 = 受け入れた 資産 − 負債"
+ },
+ {
+  "id": "c2-sonzokugaisha",
+  "name": "存続会社",
+  "reading": "そんぞくがいしゃ",
+  "journey": "2kaisha",
+  "category": "合併",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛️",
+  "mapNode": "2kaisha:gappei",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shoumetsugaisha",
+   "c2-kyuushuugappei",
+   "c2-koufukabushiki"
+  ],
+  "description": "合併の あとも 残る 会社です。消滅会社の 資産・負債を 受け入れ、株式を 交付して 資本金・資本準備金・その他資本剰余金を ふやします。"
+ },
+ {
+  "id": "c2-shoumetsugaisha",
+  "name": "消滅会社",
+  "reading": "しょうめつがいしゃ",
+  "journey": "2kaisha",
+  "category": "合併",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "2kaisha:gappei",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonzokugaisha",
+   "c2-kyuushuugappei"
+  ],
+  "description": "吸収合併で なくなる 会社です。資産と 負債は すべて 存続会社に 引きつがれ、株主は 存続会社の 株式を 受け取ります。"
+ },
+ {
+  "id": "c2-koufukabushiki",
+  "name": "交付株式",
+  "reading": "こうふかぶしき",
+  "journey": "2kaisha",
+  "category": "合併",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "2kaisha:gappei",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-sonzokugaisha",
+   "c2-ukeirejunshisan"
+  ],
+  "description": "合併の 対価として 消滅会社の 株主に 渡す 株式です。時価で 計算し、その 額を 資本金・資本準備金・その他資本剰余金に 分けます。",
+  "formula": "対価 = 交付株式数 × 1株の 時価"
+ },
+ {
+  "id": "c2-pachiesuhou",
+  "name": "パーチェス法",
+  "reading": "ぱーちぇすほう",
+  "journey": "2kaisha",
+  "category": "合併",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "2kaisha:gappei",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-ukeirejunshisan",
+   "c2-noren",
+   "c2-gappei"
+  ],
+  "description": "合併などで 受け入れる 資産と 負債を 時価で 評価する 方法です。対価との 差額を のれん、または 負ののれん発生益に します。⚠️ 帳簿価額では 受け入れません。"
+ },
+ {
+  "id": "c2-mochikabuhiritsu",
+  "name": "持株比率",
+  "reading": "もちかぶひりつ",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥧",
+  "mapNode": "2kaisha:renketsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-giketsuken",
+   "c2-mochibun",
+   "c2-riekinoanbun"
+  ],
+  "description": "発行された 株式(議決権)の うち、持っている 割合です。親会社が 80%なら 非支配株主は 20%で、利益や 純資産を この 割合で 分けます。"
+ },
+ {
+  "id": "c2-giketsuken",
+  "name": "議決権",
+  "reading": "ぎけつけん",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗳️",
+  "mapNode": "2kaisha:renketsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-mochikabuhiritsu",
+   "c2-shihai"
+  ],
+  "description": "株主総会で 会社の ことを 決める 投票の 権利です。過半数を 持てば 原則 子会社に なります。"
+ },
+ {
+  "id": "c2-shihairyokukijun",
+  "name": "支配力基準",
+  "reading": "しはいりょくきじゅん",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕹️",
+  "mapNode": "2kaisha:renketsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shihai",
+   "c2-renketsunohani",
+   "c2-giketsuken"
+  ],
+  "description": "議決権の 割合だけで なく、実際に 支配しているかで 子会社を 決める 考えかたです。40%以上でも 役員の 過半数を 送るなど すれば 子会社に なります。"
+ },
+ {
+  "id": "c2-renketsunohani",
+  "name": "連結の範囲",
+  "reading": "れんけつのはんい",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "2kaisha:renketsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kogaisha",
+   "c2-shihairyokukijun"
+  ],
+  "description": "連結に ふくめる 子会社の はんいです。子会社は 原則 すべて ふくめます。⚠️ 支配が 一時的な 会社などは 外します。"
+ },
+ {
+  "id": "c2-zenmenjikahyoukahou",
+  "name": "全面時価評価法",
+  "reading": "ぜんめんじかひょうかほう",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "2kaisha:shihon",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-hyoukasagaku",
+   "c2-kogaishanoshihon",
+   "c2-shihaikakutokubi"
+  ],
+  "description": "支配獲得日に 子会社の 資産と 負債を、非支配株主の 分も ふくめて すべて 時価で 評価する 方法です。差額は 評価差額として 子会社の 資本に 入れます。"
+ },
+ {
+  "id": "c2-hyoukasagaku",
+  "name": "評価差額",
+  "reading": "ひょうかさがく",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "2kaisha:shihon",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-zenmenjikahyoukahou",
+   "c2-kogaishanoshihon"
+  ],
+  "description": "子会社の 資産・負債の 時価と 帳簿価額の 差です。子会社の 資本に ふくめて 資本連結で 消去します。土地が 値上がり していれば 借方に 土地、貸方に 評価差額です。"
+ },
+ {
+  "id": "c2-kogaishanoshihon",
+  "name": "子会社の資本",
+  "reading": "こがいしゃのしほん",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "2kaisha:shihon",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-hyoukasagaku",
+   "c2-toushitoshihonnosou",
+   "c2-mochibun"
+  ],
+  "description": "支配獲得日の 子会社の 資本金・資本剰余金・利益剰余金と 評価差額の 合計です。親会社の 持分は 投資と 消去し、残りは 非支配株主持分に します。"
+ },
+ {
+  "id": "c2-taimuteburu",
+  "name": "タイムテーブル",
+  "reading": "たいむてーぶる",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕰️",
+  "mapNode": "2kaisha:shihon",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kaishishiwake",
+   "c2-kogaishanoshihon"
+  ],
+  "description": "支配獲得日から いままでの 子会社の 資本の 動きを 時間の 順に 書き、のれん・非支配株主持分・利益剰余金を 整理する 下書きの 表です。"
+ },
+ {
+  "id": "c2-renketsushuuseishiw",
+  "name": "連結修正仕訳",
+  "reading": "れんけつしゅうせいしわけ",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "2kaisha:shihon",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kaishishiwake",
+   "c2-renketsuseisanhyou"
+  ],
+  "description": "個別財務諸表を 合算した あとに、連結の ために 加える 仕訳です。資本連結・のれん償却・内部取引の 消去・未実現利益の 消去 などが あります。"
+ },
+ {
+  "id": "c2-shoukyakukikan",
+  "name": "償却期間",
+  "reading": "しょうきゃくきかん",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "2kaisha:noren",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-norenshoukyaku",
+   "c2-noren"
+  ],
+  "description": "のれんを 費用に していく 期間で、効果が およぶ 20年 以内の 期間です。⚠️ 負ののれんは 償却せず、生じた 年の 利益に します。"
+ },
+ {
+  "id": "c2-riekinoanbun",
+  "name": "利益の按分",
+  "reading": "りえきのあんぶん",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍕",
+  "mapNode": "2kaisha:hishihai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-hishihaikabunushini",
+   "c2-mochikabuhiritsu"
+  ],
+  "description": "子会社の 当期純利益を 親会社と 非支配株主の 持分割合で 分ける ことです。非支配株主の 分は 非支配株主に帰属する当期純利益に します。"
+ },
+ {
+  "id": "c2-hishihaikabunushim2",
+  "name": "非支配株主持分当期変動額",
+  "reading": "ひしはいかぶぬしもちぶんとうきへんどうがく",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "2kaisha:hishihai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-hishihaikabunushimo",
+   "c2-renketsukabunushish"
+  ],
+  "description": "連結株主資本等変動計算書で、非支配株主持分の 1年の 増減を 示す 欄です。子会社の 利益の 取り分で ふえ、配当で へります。"
+ },
+ {
+  "id": "c2-haitoukinnoshuusei",
+  "name": "配当金の修正",
+  "reading": "はいとうきんのしゅうせい",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "2kaisha:hishihai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-uketorihaitoukin",
+   "c2-hishihaikabunushimo"
+  ],
+  "description": "子会社が 払った 配当を 連結で 消去する 処理です。親会社の 受取配当金を 消し、非支配株主の 分は 非支配株主持分を 減らします。"
+ },
+ {
+  "id": "c2-uketorihaitoukin",
+  "name": "受取配当金",
+  "reading": "うけとりはいとうきん",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📬",
+  "mapNode": "2kaisha:hishihai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-haitoukinnoshuusei"
+  ],
+  "description": "持っている 株式の 配当を 受け取った ときの 収益です。⚠️ 連結では、子会社から 受け取った 分は グループ内の お金の 移動なので 消去します。"
+ },
+ {
+  "id": "c2-mochibun",
+  "name": "持分",
+  "reading": "もちぶん",
+  "journey": "2kaisha",
+  "category": "資本連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥧",
+  "mapNode": "2kaisha:hishihai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-mochikabuhiritsu",
+   "c2-kogaishanoshihon"
+  ],
+  "description": "株主が 会社の 純資産に 対して 持つ 取り分です。連結では 子会社の 資本を 親会社の 持分と 非支配株主の 持分に 分けます。"
+ },
+ {
+  "id": "c2-kashidaorehikiateki",
+  "name": "貸倒引当金の修正",
+  "reading": "かしだおれひきあてきんのしゅうせい",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "2kaisha:naibu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-saikensaimunosousai"
+  ],
+  "description": "グループ内の 売掛金を 消去したら、その 売掛金に 設定した 貸倒引当金も 減らす 処理です。借方に 貸倒引当金、貸方に 貸倒引当金繰入を 書きます。"
+ },
+ {
+  "id": "c2-risokunosousai",
+  "name": "利息の相殺",
+  "reading": "りそくのそうさい",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💱",
+  "mapNode": "2kaisha:naibu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-saikensaimunosousai",
+   "c2-naibutorihiki"
+  ],
+  "description": "グループ内で お金を 貸し借り した ときの 受取利息と 支払利息を 消去する ことです。未収収益と 未払費用が あれば それも 消します。"
+ },
+ {
+  "id": "c2-denshikirokusaikenn",
+  "name": "電子記録債権の相殺",
+  "reading": "でんしきろくさいけんのそうさい",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "2kaisha:naibu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-saikensaimunosousai"
+  ],
+  "description": "グループ内の 電子記録債権と 電子記録債務を 消去する ことです。借方に 電子記録債務、貸方に 電子記録債権を 書きます。前は 手形でも 同じ 処理を しました。"
+ },
+ {
+  "id": "c2-shouhinnomijitsugen",
+  "name": "商品の未実現利益",
+  "reading": "しょうひんのみじつげんりえき",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "2kaisha:mijitsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kimatsumijitsugenri",
+   "c2-riekiritsu",
+   "c2-kishumijitsugenriek"
+  ],
+  "description": "グループ内で 仕入れた 商品が 期末に 残って いる とき、その 中の 利益です。借方に 売上原価、貸方に 商品を 書いて 消去します。",
+  "formula": "未実現利益 = 期末在庫 × 売上総利益率"
+ },
+ {
+  "id": "c2-kishumijitsugenriek",
+  "name": "期首未実現利益",
+  "reading": "きしゅみじつげんりえき",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔙",
+  "mapNode": "2kaisha:mijitsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kimatsumijitsugenri",
+   "c2-kaishishiwake"
+  ],
+  "description": "前の 年に 消去した 在庫の 未実現利益です。当期に 外へ 売れて 実現したと みて、借方に 利益剰余金、貸方に 売上原価を 書いて もどします。"
+ },
+ {
+  "id": "c2-kimatsumijitsugenri",
+  "name": "期末未実現利益",
+  "reading": "きまつみじつげんりえき",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔚",
+  "mapNode": "2kaisha:mijitsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kishumijitsugenriek",
+   "c2-appusutorimu",
+   "c2-shouhinnomijitsugen"
+  ],
+  "description": "期末の 在庫に ふくまれる グループ内の 利益です。売上原価を ふやし 商品を 減らして 消去します。アップストリームなら 非支配株主にも 負担させます。"
+ },
+ {
+  "id": "c2-tochinomijitsugenri",
+  "name": "土地の未実現利益",
+  "reading": "とちのみじつげんりえき",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "2kaisha:mijitsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-mijitsugenrieki",
+   "c2-daunsutorimu"
+  ],
+  "description": "グループ内で 土地を 売った ときの 売却益です。土地が グループ内に 残る かぎり、借方に 固定資産売却益、貸方に 土地を 書いて 消去します。"
+ },
+ {
+  "id": "c2-riekiritsu",
+  "name": "利益率",
+  "reading": "りえきりつ",
+  "journey": "2kaisha",
+  "category": "成果連結",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "2kaisha:mijitsu",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-shouhinnomijitsugen"
+  ],
+  "description": "売上高に 対する 利益の 割合です。⚠️「原価の 25%の 利益を 加える」なら、売価に 対する 利益率は 20%です。",
+  "formula": "利益率 = 利益 ÷ 売上高"
+ },
+ {
+  "id": "c2-renketsutaishakutai",
+  "name": "連結貸借対照表",
+  "reading": "れんけつたいしゃくたいしょうひょう",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏗️",
+  "mapNode": "2kaisha:renzai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-renketsuzaimushohyo",
+   "c2-noren",
+   "c2-hishihaikabunushimo"
+  ],
+  "description": "企業集団の 期末の 財政状態を あらわす 表です。子会社株式は 消え、のれんと 非支配株主持分が あらたに あらわれます。"
+ },
+ {
+  "id": "c2-renketsukabunushish",
+  "name": "連結株主資本等変動計算書",
+  "reading": "れんけつかぶぬししほんとうへんどうけいさんしょ",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "2kaisha:renzai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-hishihaikabunushim2",
+   "c2-renketsuzaimushohyo"
+  ],
+  "description": "企業集団の 純資産の 1年の 動きを 示す 表です。親会社株主に帰属する当期純利益で 利益剰余金が ふえ、非支配株主持分の 動きも のせます。"
+ },
+ {
+  "id": "c2-kobetsuzaimushohyou",
+  "name": "個別財務諸表",
+  "reading": "こべつざいむしょひょう",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "2kaisha:renzai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-gassan",
+   "c2-renketsuzaimushohyo"
+  ],
+  "description": "親会社や 子会社が それぞれ 1社ごとに 作る 財務諸表です。連結は これらを 合算する ことから 始まります。"
+ },
+ {
+  "id": "c2-gassan",
+  "name": "合算",
+  "reading": "がっさん",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "2kaisha:renzai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-kobetsuzaimushohyou",
+   "c2-renketsuseisanhyou"
+  ],
+  "description": "親会社と 子会社の 個別財務諸表の 同じ 科目どうしを 足しあわせる ことです。合算した あとに 連結修正仕訳で 内部取引などを 消去します。"
+ },
+ {
+  "id": "c2-renketsukessanbi",
+  "name": "連結決算日",
+  "reading": "れんけつけっさんび",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "2kaisha:renzai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-renketsukaikeinendo"
+  ],
+  "description": "連結財務諸表を 作る 基準の 日で、親会社の 決算日に 合わせます。子会社の 決算日との 差が 3か月 以内なら、子会社の 数字を そのまま 使えます。"
+ },
+ {
+  "id": "c2-renketsukaikeinendo",
+  "name": "連結会計年度",
+  "reading": "れんけつかいけいねんど",
+  "journey": "2kaisha",
+  "category": "連結の きほん",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "2kaisha:renzai",
+  "field": "連結",
+  "ruleset": "商業簿記",
+  "grade": "2級",
+  "relatedTerms": [
+   "c2-renketsukessanbi",
+   "c2-renketsuzaimushohyo"
+  ],
+  "description": "連結財務諸表の 対象と なる 1年の 期間です。親会社の 会計期間に 合わせます。"
+ }
+]

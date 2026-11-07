@@ -98,7 +98,7 @@
   "difficulty": 1,
   "type": "concept",
   "emoji": "🏘",
-  "mapNode": "kenchiku:takasa",
+  "mapNode": "kenchiku:kakunin",
   "field": "くらし",
   "ruleset": "法令上の制限",
   "relatedTerms": [
@@ -225,8 +225,8 @@
   "type": "concept",
   "emoji": "🏠",
   "mapNode": "kenchiku:shasen",
-  "field": "土地・建物",
-  "ruleset": "免除科目",
+  "field": "建築基準法",
+  "ruleset": "法令上の制限",
   "relatedTerms": [
    "kc-shasenseigen",
    "kc-boukachiiki"
@@ -447,7 +447,7 @@
    "kc-kenchikumenseki",
    "kc-kenpeiritsunokanwa"
   ],
-  "description": "建築面積の 敷地面積に 対する 割合です。商業地域は 10分の8、ほかの 地域は 都市計画で 決めた 数字が 上限です。"
+  "description": "建築面積の 敷地面積に 対する 割合です。商業地域は 10分の8、ほかの 用途地域は 都市計画で 決めた 数字が 上限です。"
  },
  {
   "id": "kc-kenpeiritsunokanwa",
@@ -555,7 +555,7 @@
    "kc-douroshasennotekiy",
    "kc-shasenseigen"
   ],
-  "description": "前の 道路の 反対側の 境界線から ななめの 線で 高さを おさえる 決まりです。用途地域の どの 地域にも かかります。"
+  "description": "前の 道路の 反対側の 境界線から ななめの 線で 高さを おさえる 決まりです。用途地域の ない ところも ふくめ、都市計画区域などの 中なら どこでも かかります。"
  },
  {
   "id": "kc-rinchishasenseigen",
@@ -879,7 +879,7 @@
    "kc-kenchikukyyouteino",
    "kc-kenchikukyyouteino2"
   ],
-  "description": "土地の 所有者などが、建物の 用途・形・色 などに ついて 自分たちで 結ぶ 約束です。市町村の 条例で 定めた 区域で 結べます。"
+  "description": "土地の 所有者などが、建物の 用途・形・デザイン などに ついて 自分たちで 結ぶ 約束です。市町村の 条例で 定めた 区域で 結べます。"
  },
  {
   "id": "kc-youtohenkou",
@@ -890,7 +890,7 @@
   "difficulty": 2,
   "type": "concept",
   "emoji": "🔄",
-  "mapNode": "kenchiku:kyotei",
+  "mapNode": "kenchiku:kakunin",
   "field": "建築基準法",
   "ruleset": "法令上の制限",
   "relatedTerms": [
@@ -1419,7 +1419,7 @@
    "kc-shasenseigen",
    "kc-douroshasennotekiy"
   ],
-  "description": "ある 位置から 空が 見える 割合です。斜線制限と 同じ くらい 採光・通風を 確保できる 建物は、斜線制限が かかりません。"
+  "description": "ある 位置から 空が 見える 割合です。斜線制限と 同じ くらい 採光・通風を 確保できる 建物は、その 斜線制限が かかりません。日影規制には この 決まりは ありません。"
  },
  {
   "id": "kc-nichieikiseinotais",
@@ -1473,7 +1473,7 @@
    "kc-nichieikiseinotais2",
    "kc-nichieikisei"
   ],
-  "description": "日影を はかる 水平面の 高さで、平均地盤面から はかります。低層住居専用地域などは 1.5m、ほかの 地域は 4m か 6.5mです。"
+  "description": "日影を はかる 水平面の 高さで、平均地盤面から はかります。低層住居専用地域などは 1.5m、中高層住居専用地域などは 4m か 6.5mです。"
  },
  {
   "id": "kc-kuikigainokenchiku",
@@ -1568,7 +1568,7 @@
  {
   "id": "kc-gaihekinokoukoubu",
   "name": "外壁の開口部",
-  "reading": "がいへきのこうこうぶ",
+  "reading": "がいへきのかいこうぶ",
   "journey": "kenchiku",
   "category": "防火",
   "difficulty": 3,
@@ -1707,7 +1707,7 @@
    "kc-kanryyoukensa",
    "kc-kenchikukakunin"
   ],
-  "description": "大きな 建物は 検査済証の 前に 使えないのが 原則ですが、特定行政庁などが 安全と 認めれば 仮に 使えます。申請の 受理から 7日 たった ときも 使えます。"
+  "description": "2階建てや 200㎡超などの 建物を 新築した ときは、検査済証の 前に 使えないのが 原則ですが、特定行政庁などが 安全と 認めれば 仮に 使えます。申請の 受理から 7日 たった ときも 使えます。"
  },
  {
   "id": "kc-kyyoshitsunosaikou",
@@ -1845,7 +1845,7 @@
   "type": "concept",
   "emoji": "🌾",
   "mapNode": "kenchiku:teiso",
-  "field": "建築基準法",
+  "field": "都市計画法",
   "ruleset": "法令上の制限",
   "relatedTerms": [
    "kc-teisoujuukyyosenyo",

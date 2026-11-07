@@ -1,0 +1,2128 @@
+[
+ {
+  "id": "s3-shouhin",
+  "name": "商品",
+  "reading": "しょうひん",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-sanbunpou",
+   "s3-uriagegenkatairitsu"
+  ],
+  "description": "売るために 仕入れた ものです。三分法では 買った ときに「商品」では なく「仕入」(費用)で 記録し、決算で 残った 分を「繰越商品」に します。"
+ },
+ {
+  "id": "s3-sanbunpou",
+  "name": "三分法",
+  "reading": "さんぶんぽう",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shouhin",
+   "s3-kakeuri",
+   "s3-kakeshiire"
+  ],
+  "description": "商品売買を「仕入」「売上」「繰越商品」の 3つの 勘定で 記録する 方法です。仕入れたら 仕入(費用)が 借方、売ったら 売上(収益)が 貸方に ふえます。",
+  "formula": "売上原価 = 期首商品 + 当期仕入 − 期末商品"
+ },
+ {
+  "id": "s3-henpin",
+  "name": "返品",
+  "reading": "へんぴん",
+  "journey": "3shiwake",
+  "category": "返品と 値引き",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "3shiwake:henpin",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shiiremodoshi",
+   "s3-uriagemodori"
+  ],
+  "description": "買った 商品を 返す こと、または 売った 商品が 返って くる ことです。仕訳は もとの 仕訳を 逆に して、返した 分の 金額を 取り消します。"
+ },
+ {
+  "id": "s3-kashitsukekin",
+  "name": "貸付金",
+  "reading": "かしつけきん",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kariirekin",
+   "s3-risoku",
+   "s3-kashitsukekinnokais"
+  ],
+  "description": "取引先などに お金を 貸した ときの、返して もらう 権利です。資産なので 貸したら 借方、返して もらったら 貸方に 書きます。"
+ },
+ {
+  "id": "s3-kariirekin",
+  "name": "借入金",
+  "reading": "かりいれきん",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kashitsukekin",
+   "s3-hensai",
+   "s3-risoku"
+  ],
+  "description": "銀行などから お金を 借りた ときの、返す 義務です。負債なので 借りたら 貸方、返したら 借方に 書きます。はらう 利息は 支払利息(費用)です。"
+ },
+ {
+  "id": "s3-maebaraikin",
+  "name": "前払金",
+  "reading": "まえばらいきん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "3shiwake:mae",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-maeukekin",
+   "s3-uchikin",
+   "s3-juutou"
+  ],
+  "description": "商品を 受け取る 前に 代金の 一部を 先に はらった ときの 資産です。はらったら 借方。商品が とどいたら 代金に あてて 貸方に 書きます。"
+ },
+ {
+  "id": "s3-maeukekin",
+  "name": "前受金",
+  "reading": "まえうけきん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "3shiwake:mae",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-maebaraikin",
+   "s3-tetsukekin"
+  ],
+  "description": "商品を わたす 前に 代金の 一部を 先に 受け取った ときの 負債です。受け取ったら 貸方。商品を わたしたら 代金に あてて 借方に 書きます。"
+ },
+ {
+  "id": "s3-karibaraikin",
+  "name": "仮払金",
+  "reading": "かりばらいきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-karibaraikinnoseisa",
+   "s3-gaisanbarai",
+   "s3-kariukekin"
+  ],
+  "description": "使いみちや 金額が まだ 決まって いない 支払いを、とりあえず 記録する 資産です。出張の 旅費の 前わたしや ICカードへの 入金で 使います。"
+ },
+ {
+  "id": "s3-kariukekin",
+  "name": "仮受金",
+  "reading": "かりうけきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-naiyoufumeinonyuuki",
+   "s3-karibaraikin"
+  ],
+  "description": "内容が わからない 入金を、とりあえず 記録する 負債です。あとで 理由が わかったら 借方に 書いて、売掛金や 前受金などに 振り替えます。"
+ },
+ {
+  "id": "s3-mibaraikin",
+  "name": "未払金",
+  "reading": "みばらいきん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "3shiwake:mishu",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-mishuunyuukin",
+   "s3-kakeshiire"
+  ],
+  "description": "商品 以外の もの(備品・土地・消耗品など)を 買って、代金を あとで はらう ときの 負債です。⚠️ 商品の 代金なら 買掛金に します。"
+ },
+ {
+  "id": "s3-mishuunyuukin",
+  "name": "未収入金",
+  "reading": "みしゅうにゅうきん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "3shiwake:mishu",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-mibaraikin",
+   "s3-koteishisannobaikya"
+  ],
+  "description": "商品 以外の もの(土地・備品など)を 売って、代金を あとで もらう ときの 資産です。⚠️ 商品の 代金なら 売掛金に します。"
+ },
+ {
+  "id": "s3-tatemono",
+  "name": "建物",
+  "reading": "たてもの",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shutokugenka",
+   "s3-toukiryou",
+   "s3-chuukaitesuuryou"
+  ],
+  "description": "店舗・事務所・倉庫などの 建物です。資産なので 買ったら 借方。仲介手数料や 登記料も ふくめた 取得原価で 記録します。"
+ },
+ {
+  "id": "s3-tochi",
+  "name": "土地",
+  "reading": "とち",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏞️",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-seichihiyou",
+   "s3-shutokugenka"
+  ],
+  "description": "店や 工場の 敷地です。使っても 価値が へらないので 減価償却を しません。整地費用や 仲介手数料も 土地の 取得原価に ふくめます。"
+ },
+ {
+  "id": "s3-bihin",
+  "name": "備品",
+  "reading": "びひん",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-suetsukehi",
+   "s3-shutokugenka"
+  ],
+  "description": "机・いす・パソコン・陳列棚など、長く 使う 道具です。資産なので 買ったら 借方。据付費や 運賃も 備品の 取得原価に ふくめます。"
+ },
+ {
+  "id": "s3-shouhizei",
+  "name": "消費税",
+  "reading": "しょうひぜい",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:zei",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-karibaraishouhizei",
+   "s3-kariukeshouhizei",
+   "s3-zeinukihoushiki"
+  ],
+  "description": "ものや サービスを 買う ときに かかる 税です。3級は 税抜方式で、仕入で はらった 分は 仮払消費税、売上で 受け取った 分は 仮受消費税に します。"
+ },
+ {
+  "id": "s3-ryoushuusho",
+  "name": "領収書",
+  "reading": "りょうしゅうしょ",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shouhyou",
+   "s3-seikyuusho",
+   "s3-shuunyuuinshi"
+  ],
+  "description": "代金を 受け取った ことを 証明する 書類です。はらった がわが 受け取り、何に いくら 使ったかを 読んで 仕訳の もとに します。"
+ },
+ {
+  "id": "s3-jokyaku",
+  "name": "除却",
+  "reading": "じょきゃく",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗑️",
+  "mapNode": "3shiwake:jokyaku",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-koteishisanjokyakus",
+   "s3-mitsumoribaikyakuka",
+   "s3-haiki"
+  ],
+  "description": "使わなく なった 固定資産を 帳簿から 外す ことです。売れる 見込みの 額は 貯蔵品に、帳簿価額との 差は 固定資産除却損に します。"
+ },
+ {
+  "id": "s3-haiki",
+  "name": "廃棄",
+  "reading": "はいき",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗑️",
+  "mapNode": "3shiwake:jokyaku",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-koteishisanhaikison",
+   "s3-shobunhiyou",
+   "s3-jokyaku"
+  ],
+  "description": "使わなく なった 固定資産を 捨てる ことです。残って いた 帳簿価額が そのまま 損に なり、固定資産廃棄損(費用)で 借方に 書きます。"
+ },
+ {
+  "id": "s3-risoku",
+  "name": "利息",
+  "reading": "りそく",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-riritsu",
+   "s3-tsukiwarikeisan"
+  ],
+  "description": "お金を 貸し借り した ときの お礼の お金です。もらう 利息は 受取利息(収益)、はらう 利息は 支払利息(費用)に します。",
+  "formula": "利息 = 元金 × 年利率 × 月数 ÷ 12"
+ },
+ {
+  "id": "s3-daikin",
+  "name": "代金",
+  "reading": "だいきん",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kakeuri",
+   "s3-kakeshiire"
+  ],
+  "description": "商品や サービスの 値段の お金です。すぐ はらうか、あとで はらうか(掛け)で、使う 勘定科目が かわります。"
+ },
+ {
+  "id": "s3-shiiremodoshi",
+  "name": "仕入戻し",
+  "reading": "しいれもどし",
+  "journey": "3shiwake",
+  "category": "返品と 値引き",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "3shiwake:henpin",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-henpin",
+   "s3-shiirenebiki"
+  ],
+  "description": "仕入れた 商品を 返品する ことです。仕入を へらすので 貸方に 仕入、掛けの 分は 借方に 買掛金を 書きます(仕入の 仕訳の 逆)。"
+ },
+ {
+  "id": "s3-uriagemodori",
+  "name": "売上戻り",
+  "reading": "うりあげもどり",
+  "journey": "3shiwake",
+  "category": "返品と 値引き",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "3shiwake:henpin",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-henpin",
+   "s3-uriagenebiki"
+  ],
+  "description": "売った 商品が 返品される ことです。売上を へらすので 借方に 売上、掛けの 分は 貸方に 売掛金を 書きます(売上の 仕訳の 逆)。"
+ },
+ {
+  "id": "s3-kakeuri",
+  "name": "掛け売り",
+  "reading": "かけうり",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kakeshiire",
+   "s3-kakedaikinnokaishuu"
+  ],
+  "description": "商品を 売って、代金を あとで 受け取る ことです。借方に 売掛金(資産)、貸方に 売上(収益)を 書きます。"
+ },
+ {
+  "id": "s3-kakeshiire",
+  "name": "掛け仕入",
+  "reading": "かけしいれ",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kakeuri",
+   "s3-mibaraikin"
+  ],
+  "description": "商品を 仕入れて、代金を あとで はらう ことです。借方に 仕入(費用)、貸方に 買掛金(負債)を 書きます。⚠️ 未払金では ありません。"
+ },
+ {
+  "id": "s3-shogakari",
+  "name": "諸掛り",
+  "reading": "しょがかり",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-hikitoriunchin",
+   "s3-souryou"
+  ],
+  "description": "商品の 売り買いに かかる 運賃・保険料などの 費用です。仕入の 諸掛りは 仕入に ふくめ、売る ときの 送料(当店負担)は 発送費(費用)に します。"
+ },
+ {
+  "id": "s3-hikitoriunchin",
+  "name": "引取運賃",
+  "reading": "ひきとりうんちん",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shogakari",
+   "s3-souryou"
+  ],
+  "description": "商品を 仕入れる ときに 自分で はらう 運賃です。仕入原価に ふくめるので、借方の 仕入に 足します。⚠️ 発送費には しません。"
+ },
+ {
+  "id": "s3-kurejittourikakekin",
+  "name": "クレジット売掛金",
+  "reading": "くれじっとうりかけきん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "3shiwake:credit",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shinpangaisha",
+   "s3-kurejittotesuuryou",
+   "s3-kyasshuresukessai"
+  ],
+  "description": "クレジットカードや キャッシュレス決済で 売った ときの、信販会社などから 代金を もらう 権利です。ふつうの 売掛金とは 分けて 記録する 資産です。"
+ },
+ {
+  "id": "s3-denshikirokusaiken",
+  "name": "電子記録債権",
+  "reading": "でんしきろくさいけん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "3shiwake:denshi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-denshikirokusaimu",
+   "s3-hasseikiroku",
+   "s3-denshikirokusaikenn"
+  ],
+  "description": "電子債権記録機関に 発生記録を して 生まれた、お金を もらう 権利です。資産で、売掛金を この 形に すると 借方に 電子記録債権、貸方に 売掛金です。"
+ },
+ {
+  "id": "s3-denshikirokusaimu",
+  "name": "電子記録債務",
+  "reading": "でんしきろくさいむ",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "3shiwake:denshi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-denshikirokusaiken",
+   "s3-saimushaseikyuuhous"
+  ],
+  "description": "電子記録で 生まれた、お金を はらう 義務です。負債で、買掛金を この 形に すると 借方に 買掛金、貸方に 電子記録債務と 書きます。"
+ },
+ {
+  "id": "s3-tatekaekin",
+  "name": "立替金",
+  "reading": "たてかえきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-juugyouintatekaekin",
+   "s3-tatekaebarai"
+  ],
+  "description": "取引先などが はらう べき お金を、一時 かわりに はらった ときの 資産です。あとで 返して もらう 権利なので 借方に 書きます。"
+ },
+ {
+  "id": "s3-azukarikin",
+  "name": "預り金",
+  "reading": "あずかりきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shotokuzeiazukariki",
+   "s3-shakaihokenryouazuk",
+   "s3-juugyouinazukarikin"
+  ],
+  "description": "人から 一時的に 預かった お金で、あとで 返したり 代わりに 納めたり する 負債です。預かったら 貸方、返したら 借方に 書きます。"
+ },
+ {
+  "id": "s3-juugyouintatekaekin",
+  "name": "従業員立替金",
+  "reading": "じゅうぎょういんたてかえきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-tatekaekin",
+   "s3-tatekaebarai"
+  ],
+  "description": "従業員が はらう べき お金を 会社が 立て替えた ときの 資産です。給料を はらう ときに 差し引いて 回収する ことが 多いです。"
+ },
+ {
+  "id": "s3-shotokuzeiazukariki",
+  "name": "所得税預り金",
+  "reading": "しょとくぜいあずかりきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-gensenchoushuu",
+   "s3-azukarikin"
+  ],
+  "description": "給料から 天引きした 所得税です。会社が あとで 税務署に 納めるので 負債で、天引きしたら 貸方、納めたら 借方に 書きます。"
+ },
+ {
+  "id": "s3-shakaihokenryouazuk",
+  "name": "社会保険料預り金",
+  "reading": "しゃかいほけんりょうあずかりきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-azukarikin",
+   "s3-shotokuzeiazukariki"
+  ],
+  "description": "給料から 天引きした 健康保険料・厚生年金保険料などの 従業員の 負担分です。納める ときは 会社の 負担分を 法定福利費(費用)に します。"
+ },
+ {
+  "id": "s3-sharyouunpangu",
+  "name": "車両運搬具",
+  "reading": "しゃりょううんぱんぐ",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shutokugenka",
+   "s3-fuzuihiyou"
+  ],
+  "description": "トラックや 営業車などの 乗りものです。資産で、買ったら 借方。登録の 手数料なども 取得原価に ふくめ、使う 期間に 合わせて 減価償却します。"
+ },
+ {
+  "id": "s3-fuzuihiyou",
+  "name": "付随費用",
+  "reading": "ふずいひよう",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shutokugenka",
+   "s3-kounyuudaika"
+  ],
+  "description": "固定資産を 使える ように するまでに かかった 手数料・運賃・据付費などです。費用に せず、資産の 取得原価に ふくめます。",
+  "formula": "取得原価 = 購入代価 + 付随費用"
+ },
+ {
+  "id": "s3-koteishisanbaikyaku",
+  "name": "固定資産売却益",
+  "reading": "こていしさんばいきゃくえき",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-koteishisanbaikyak2",
+   "s3-choubokagaku"
+  ],
+  "description": "固定資産を 帳簿価額より 高く 売った ときの 差額です。収益なので 貸方に 書きます。⚠️ くらべるのは 取得原価では なく 帳簿価額です。",
+  "formula": "売却益 = 売却価額 − 帳簿価額"
+ },
+ {
+  "id": "s3-koteishisanbaikyak2",
+  "name": "固定資産売却損",
+  "reading": "こていしさんばいきゃくそん",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-koteishisanbaikyaku",
+   "s3-choubokagaku"
+  ],
+  "description": "固定資産を 帳簿価額より 安く 売った ときの 差額です。費用なので 借方に 書きます。帳簿価額は 取得原価から 減価償却累計額を 引いた 額です。",
+  "formula": "売却損 = 帳簿価額 − 売却価額"
+ },
+ {
+  "id": "s3-kabushikinohakkou",
+  "name": "株式の発行",
+  "reading": "かぶしきのはっこう",
+  "journey": "3shiwake",
+  "category": "株式会社",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:kabu",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-haraikomikingaku",
+   "s3-setsuritsu",
+   "s3-zoushi"
+  ],
+  "description": "株式を 発行して 株主から お金を 集める ことです。3級では 払い込まれた 全額を 資本金(純資産)として 貸方に 書きます。"
+ },
+ {
+  "id": "s3-kabushikigaisha",
+  "name": "株式会社",
+  "reading": "かぶしきがいしゃ",
+  "journey": "3shiwake",
+  "category": "株式会社",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "3shiwake:kabu",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kabunushi",
+   "s3-kabushikinohakkou"
+  ],
+  "description": "株式を 発行して 集めた お金で 事業を する 会社です。3級は 小さな 株式会社を 考え、元手は 資本金、たまった 利益は 繰越利益剰余金に します。"
+ },
+ {
+  "id": "s3-karibaraishouhizei",
+  "name": "仮払消費税",
+  "reading": "かりばらいしょうひぜい",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:zei",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kariukeshouhizei",
+   "s3-zeinukihoushiki"
+  ],
+  "description": "商品などを 買った ときに はらった 消費税です。あとで 納める 税から 引けるので 資産として 借方に 書きます。"
+ },
+ {
+  "id": "s3-kariukeshouhizei",
+  "name": "仮受消費税",
+  "reading": "かりうけしょうひぜい",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:zei",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-karibaraishouhizei",
+   "s3-shouhizei"
+  ],
+  "description": "商品などを 売った ときに 受け取った 消費税です。国に 納める ために 預かって いるので 負債として 貸方に 書きます。"
+ },
+ {
+  "id": "s3-zeinukihoushiki",
+  "name": "税抜方式",
+  "reading": "ぜいぬきほうしき",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:zei",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-zeikomihoushiki",
+   "s3-karibaraishouhizei",
+   "s3-kariukeshouhizei"
+  ],
+  "description": "消費税を 売上や 仕入に ふくめず、仮払消費税・仮受消費税に 分けて 記録する 方法です。決算で 差額を 未払消費税に します。",
+  "formula": "未払消費税 = 仮受消費税 − 仮払消費税"
+ },
+ {
+  "id": "s3-seikyuusho",
+  "name": "請求書",
+  "reading": "せいきゅうしょ",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shouhyou",
+   "s3-nouhinsho",
+   "s3-ryoushuusho"
+  ],
+  "description": "代金を はらって ほしいと 相手に 伝える 書類です。受け取った がわは 仕入や 未払金の、出した がわは 売上や 売掛金の 仕訳の もとに します。"
+ },
+ {
+  "id": "s3-shouhyou",
+  "name": "証ひょう",
+  "reading": "しょうひょう",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📑",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-seikyuusho",
+   "s3-ryoushuusho",
+   "s3-nouhinsho"
+  ],
+  "description": "取引が あった ことを 示す 書類です。請求書・領収書・納品書・通帳の 記録などを 読んで、仕訳を 書きます。"
+ },
+ {
+  "id": "s3-uketorishouhinken",
+  "name": "受取商品券",
+  "reading": "うけとりしょうひんけん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "3shiwake:credit",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shouhinken",
+   "s3-kurejittobarai"
+  ],
+  "description": "ほかの 店や 自治体などが 発行した 商品券を、代金として 受け取った ときの 資産です。あとで 発行元に 換金して もらいます。"
+ },
+ {
+  "id": "s3-sashiirehoshoukin",
+  "name": "差入保証金",
+  "reading": "さしいれほしょうきん",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔑",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kashitsukekin",
+   "s3-chuukaitesuuryou"
+  ],
+  "description": "店や 事務所を 借りる ときに 敷金として 預けた お金です。出て いく ときに 返して もらえるので 資産です。⚠️ 仲介手数料は 支払手数料(費用)です。"
+ },
+ {
+  "id": "s3-kurejittotesuuryou",
+  "name": "クレジット手数料",
+  "reading": "くれじっとてすうりょう",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "3shiwake:credit",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kurejittourikakekin",
+   "s3-shinpangaisha"
+  ],
+  "description": "クレジット販売で 信販会社に はらう 手数料です。売った ときに 支払手数料(費用)として 計上し、その 分を 引いた 額を クレジット売掛金に します。"
+ },
+ {
+  "id": "s3-koteishisanjokyakus",
+  "name": "固定資産除却損",
+  "reading": "こていしさんじょきゃくそん",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗑️",
+  "mapNode": "3shiwake:jokyaku",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-jokyaku",
+   "s3-mitsumoribaikyakuka",
+   "s3-choubokagaku"
+  ],
+  "description": "固定資産を 除却した ときの 損です。帳簿価額から 見積売却価額(貯蔵品)を 引いた 額を 費用として 借方に 書きます。",
+  "formula": "除却損 = 帳簿価額 − 見積売却価額"
+ },
+ {
+  "id": "s3-koteishisanhaikison",
+  "name": "固定資産廃棄損",
+  "reading": "こていしさんはいきそん",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗑️",
+  "mapNode": "3shiwake:jokyaku",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-haiki",
+   "s3-shobunhiyou"
+  ],
+  "description": "固定資産を 廃棄した ときの 損です。帳簿価額の 全部に、処分に かかった 費用を 足して、費用として 借方に 書きます。",
+  "formula": "廃棄損 = 帳簿価額 + 処分費用"
+ },
+ {
+  "id": "s3-shiharaikijitsu",
+  "name": "支払期日",
+  "reading": "しはらいきじつ",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "3shiwake:mishu",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-denshikirokusaimu",
+   "s3-denshikirokusaikenn"
+  ],
+  "description": "代金を はらうと 約束した 日です。電子記録債務は この 日に 口座から 引き落とされ、負債が へります。受け取る がわは 電子記録債権が へります。"
+ },
+ {
+  "id": "s3-hasseikiroku",
+  "name": "発生記録",
+  "reading": "はっせいきろく",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "3shiwake:denshi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-denshikirokusaiken",
+   "s3-saimushaseikyuuhous",
+   "s3-denshisaikenkirokuk"
+  ],
+  "description": "電子債権記録機関に 記録して、電子記録債権・電子記録債務を 生み出す 手続きです。この 記録で 売掛金・買掛金から 振り替えます。"
+ },
+ {
+  "id": "s3-denshisaikenkirokuk",
+  "name": "電子債権記録機関",
+  "reading": "でんしさいけんきろくきかん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "3shiwake:denshi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-hasseikiroku",
+   "s3-denshikirokusaiken"
+  ],
+  "description": "電子記録債権の 記録を 管理する 機関です。発生や 支払いの 記録を ここで 行い、その 記録が 権利の よりどころに なります。"
+ },
+ {
+  "id": "s3-shinpangaisha",
+  "name": "信販会社",
+  "reading": "しんぱんがいしゃ",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "3shiwake:credit",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kurejittourikakekin",
+   "s3-kurejittotesuuryou"
+  ],
+  "description": "クレジットカードの 代金を、お客さんの かわりに 店に はらう 会社です。クレジット売掛金は この 会社に 対する 権利で、手数料を 引いた 額が 入金されます。"
+ },
+ {
+  "id": "s3-kurejittobarai",
+  "name": "クレジット払い",
+  "reading": "くれじっとばらい",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "3shiwake:credit",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kurejittourikakekin",
+   "s3-kyasshuresukessai"
+  ],
+  "description": "お客さんが クレジットカードで はらう ことです。売った がわは ふつうの 売掛金では なく、クレジット売掛金(資産)を 借方に 書きます。"
+ },
+ {
+  "id": "s3-shouhinken",
+  "name": "商品券",
+  "reading": "しょうひんけん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "3shiwake:credit",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-uketorishouhinken",
+   "s3-kurejittobarai"
+  ],
+  "description": "商品と 引きかえる ことが できる 券です。ほかの 店などが 発行した 商品券を 代金として 受け取ったら、受取商品券(資産)で 記録します。"
+ },
+ {
+  "id": "s3-risokunotenbiki",
+  "name": "利息の天引き",
+  "reading": "りそくのてんびき",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kariirekin",
+   "s3-risoku"
+  ],
+  "description": "お金を 貸し借り する ときに、利息を 先に 差し引いて わたす ことです。⚠️ 借りた がわは 手取額では なく 元金 全額を 借入金に、引かれた 分を 支払利息に します。"
+ },
+ {
+  "id": "s3-yakuinkashitsukekin",
+  "name": "役員貸付金",
+  "reading": "やくいんかしつけきん",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kashitsukekin",
+   "s3-yakuinkariirekin"
+  ],
+  "description": "会社の 役員に お金を 貸した ときの 資産です。ふつうの 貸付金と 分けて 記録します。"
+ },
+ {
+  "id": "s3-yakuinkariirekin",
+  "name": "役員借入金",
+  "reading": "やくいんかりいれきん",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kariirekin",
+   "s3-yakuinkashitsukekin"
+  ],
+  "description": "会社の 役員から お金を 借りた ときの 負債です。銀行からの 借入金と 分けて 記録します。"
+ },
+ {
+  "id": "s3-shakuyoushousho",
+  "name": "借用証書",
+  "reading": "しゃくようしょうしょ",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kashitsukekin",
+   "s3-kariirekin"
+  ],
+  "description": "お金を 借りた ことを 示す 証書です。証書を 使う 貸し借りも、貸付金・借入金で 記録します。"
+ },
+ {
+  "id": "s3-riritsu",
+  "name": "利率",
+  "reading": "りりつ",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-risoku",
+   "s3-tsukiwarikeisan"
+  ],
+  "description": "元金に 対する 1年分の 利息の 割合です。「年2%」なら 1年で 元金の 2%の 利息に なります。⚠️ 期間が 1年より 短い ときは 月割で 計算します。"
+ },
+ {
+  "id": "s3-tsukiwarikeisan",
+  "name": "月割計算",
+  "reading": "つきわりけいさん",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-riritsu",
+   "s3-risoku"
+  ],
+  "description": "1年分の 金額を 12で わって、その 月の 数を かける 計算です。利息や 減価償却費で 使います。⚠️ 月割を わすれて 1年分で 計算する まちがいが 多いです。"
+ },
+ {
+  "id": "s3-kashitsukekinnokais",
+  "name": "貸付金の回収",
+  "reading": "かしつけきんのかいしゅう",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kashitsukekin",
+   "s3-risoku"
+  ],
+  "description": "貸した お金を 返して もらう ことです。借方に 現金や 普通預金、貸方に 貸付金と 受取利息(収益)を 書きます。"
+ },
+ {
+  "id": "s3-hensai",
+  "name": "返済",
+  "reading": "へんさい",
+  "journey": "3shiwake",
+  "category": "貸し借り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "3shiwake:kashi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kariirekin",
+   "s3-risoku"
+  ],
+  "description": "借りた お金を 返す ことです。借方に 借入金と 支払利息(費用)、貸方に 現金や 普通預金を 書きます。"
+ },
+ {
+  "id": "s3-uchikin",
+  "name": "内金",
+  "reading": "うちきん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "3shiwake:mae",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-maebaraikin",
+   "s3-tetsukekin",
+   "s3-juutou"
+  ],
+  "description": "代金の 一部を 先に はらう お金です。はらった がわは 前払金(資産)、受け取った がわは 前受金(負債)で 記録します。"
+ },
+ {
+  "id": "s3-tetsukekin",
+  "name": "手付金",
+  "reading": "てつけきん",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "3shiwake:mae",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-uchikin",
+   "s3-maeukekin"
+  ],
+  "description": "契約の しるしとして 先に わたす お金です。内金と 同じく、はらったら 前払金、受け取ったら 前受金に します。"
+ },
+ {
+  "id": "s3-juutou",
+  "name": "充当",
+  "reading": "じゅうとう",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "3shiwake:mae",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-maebaraikin",
+   "s3-maeukekin"
+  ],
+  "description": "先に はらった 前払金などを 代金に あてる ことです。商品が とどいたら 前払金を 貸方に 書いて、残りだけを 買掛金などに します。"
+ },
+ {
+  "id": "s3-karibaraikinnoseisa",
+  "name": "仮払金の精算",
+  "reading": "かりばらいきんのせいさん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-karibaraikin",
+   "s3-gaisanbarai"
+  ],
+  "description": "仮払金の 使いみちが 決まったら、正しい 勘定に 振り替える ことです。旅費交通費などを 借方、仮払金を 貸方に 書き、あまりや 不足は 現金で 調整します。"
+ },
+ {
+  "id": "s3-gaisanbarai",
+  "name": "概算払い",
+  "reading": "がいさんばらい",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-karibaraikin",
+   "s3-karibaraikinnoseisa"
+  ],
+  "description": "使う 金額が まだ わからない ときに、おおよその 額を 先に わたす ことです。わたした 額は 費用では なく 仮払金で 記録します。"
+ },
+ {
+  "id": "s3-naiyoufumeinonyuuki",
+  "name": "内容不明の入金",
+  "reading": "ないようふめいのにゅうきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kariukekin",
+   "s3-karibaraikin"
+  ],
+  "description": "口座に 入った お金の 理由が わからない ときは、仮受金(負債)で 貸方に 書きます。理由が わかったら 売掛金などに 振り替えます。"
+ },
+ {
+  "id": "s3-gensenchoushuu",
+  "name": "源泉徴収",
+  "reading": "げんせんちょうしゅう",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shotokuzeiazukariki",
+   "s3-juuminzeiazukarikin"
+  ],
+  "description": "給料を はらう ときに、所得税を 先に 差し引いて 会社が かわりに 納める しくみです。引いた 額は 所得税預り金で 貸方に 書きます。"
+ },
+ {
+  "id": "s3-juuminzeiazukarikin",
+  "name": "住民税預り金",
+  "reading": "じゅうみんぜいあずかりきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-gensenchoushuu",
+   "s3-azukarikin"
+  ],
+  "description": "給料から 天引きした 住民税です。あとで 市区町村に 納めるので 負債です。⚠️ 会社の 費用(租税公課)では ありません。"
+ },
+ {
+  "id": "s3-juugyouinazukarikin",
+  "name": "従業員預り金",
+  "reading": "じゅうぎょういんあずかりきん",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-azukarikin",
+   "s3-juugyouintatekaekin"
+  ],
+  "description": "従業員から 一時的に 預かった お金です。あとで 返すので 負債として 貸方に 書きます。⚠️ 立て替えた お金(従業員立替金)とは 逆です。"
+ },
+ {
+  "id": "s3-tatekaebarai",
+  "name": "立替払い",
+  "reading": "たてかえばらい",
+  "journey": "3shiwake",
+  "category": "仮払い・預り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "3shiwake:kari",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-tatekaekin",
+   "s3-juugyouintatekaekin"
+  ],
+  "description": "ほかの 人が はらう べき お金を、一時 かわりに はらう ことです。はらった 額は 立替金(資産)に します。⚠️ 自分の 費用には しません。"
+ },
+ {
+  "id": "s3-shutokugenka",
+  "name": "取得原価",
+  "reading": "しゅとくげんか",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kounyuudaika",
+   "s3-fuzuihiyou"
+  ],
+  "description": "固定資産を 手に 入れた ときに 帳簿に のせる 金額です。本体の 値段に 付随費用を 足して 求めます。",
+  "formula": "取得原価 = 購入代価 + 付随費用"
+ },
+ {
+  "id": "s3-kounyuudaika",
+  "name": "購入代価",
+  "reading": "こうにゅうだいか",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shutokugenka",
+   "s3-fuzuihiyou"
+  ],
+  "description": "固定資産 本体の 値段です。手数料などの 付随費用を 足すと 取得原価に なります。"
+ },
+ {
+  "id": "s3-toukiryou",
+  "name": "登記料",
+  "reading": "とうきりょう",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-tatemono",
+   "s3-tochi",
+   "s3-fuzuihiyou"
+  ],
+  "description": "土地や 建物の 持ち主を 国の 記録に 登録する ための 費用です。買った ときの 登記料は 土地・建物の 取得原価に ふくめます。"
+ },
+ {
+  "id": "s3-chuukaitesuuryou",
+  "name": "仲介手数料",
+  "reading": "ちゅうかいてすうりょう",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-toukiryou",
+   "s3-sashiirehoshoukin"
+  ],
+  "description": "不動産会社に はらう 手数料です。⚠️ 土地・建物を 買う ときは 取得原価に ふくめ、店を 借りる ときは 支払手数料(費用)に します。"
+ },
+ {
+  "id": "s3-suetsukehi",
+  "name": "据付費",
+  "reading": "すえつけひ",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-bihin",
+   "s3-fuzuihiyou"
+  ],
+  "description": "機械や 備品を 使える ように 取り付ける 費用です。備品などの 取得原価に ふくめ、費用には しません。"
+ },
+ {
+  "id": "s3-seichihiyou",
+  "name": "整地費用",
+  "reading": "せいちひよう",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚜",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-tochi",
+   "s3-fuzuihiyou"
+  ],
+  "description": "買った 土地を 平らに ならす 費用です。土地の 取得原価に ふくめます。"
+ },
+ {
+  "id": "s3-koteishisannobaikya",
+  "name": "固定資産の売却",
+  "reading": "こていしさんのばいきゃく",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-koteishisanbaikyaku",
+   "s3-koteishisanbaikyak2",
+   "s3-choubokagaku"
+  ],
+  "description": "使って いた 固定資産を 売る ことです。帳簿価額と 売った 値段の 差が 売却益か 売却損に なります。代金が あとなら 未収入金です。"
+ },
+ {
+  "id": "s3-choubokagaku",
+  "name": "帳簿価額",
+  "reading": "ちょうぼかがく",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "3shiwake:kotei",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shutokugenka",
+   "s3-koteishisannobaikya"
+  ],
+  "description": "帳簿に 記録されて いる 金額です。固定資産では 取得原価から 減価償却累計額を 引いた 額です。",
+  "formula": "帳簿価額 = 取得原価 − 減価償却累計額"
+ },
+ {
+  "id": "s3-kabunushi",
+  "name": "株主",
+  "reading": "かぶぬし",
+  "journey": "3shiwake",
+  "category": "株式会社",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "3shiwake:kabu",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kabushikigaisha",
+   "s3-shusshi"
+  ],
+  "description": "株式を 持って いる 人です。会社に お金を 出して 株式を 受け取り、利益の 中から 配当を もらう ことが できます。"
+ },
+ {
+  "id": "s3-haraikomikingaku",
+  "name": "払込金額",
+  "reading": "はらいこみきんがく",
+  "journey": "3shiwake",
+  "category": "株式会社",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:kabu",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kabushikinohakkou",
+   "s3-zoushi"
+  ],
+  "description": "株主が 株式と ひきかえに 払い込んだ お金です。3級では 全額を 資本金に します。",
+  "formula": "資本金 = 1株の 払込金額 × 株数"
+ },
+ {
+  "id": "s3-setsuritsu",
+  "name": "設立",
+  "reading": "せつりつ",
+  "journey": "3shiwake",
+  "category": "株式会社",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎉",
+  "mapNode": "3shiwake:kabu",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kabushikinohakkou",
+   "s3-kabushikigaisha"
+  ],
+  "description": "株式会社を 新しく つくる ことです。株式を 発行して 払い込まれた お金を、借方に 普通預金など、貸方に 資本金と 書きます。"
+ },
+ {
+  "id": "s3-zoushi",
+  "name": "増資",
+  "reading": "ぞうし",
+  "journey": "3shiwake",
+  "category": "株式会社",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "3shiwake:kabu",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-setsuritsu",
+   "s3-kabushikinohakkou"
+  ],
+  "description": "会社が できた 後に、新しく 株式を 発行して 資本金を ふやす ことです。仕訳は 設立の ときと 同じ 形です。"
+ },
+ {
+  "id": "s3-shusshi",
+  "name": "出資",
+  "reading": "しゅっし",
+  "journey": "3shiwake",
+  "category": "株式会社",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "3shiwake:kabu",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kabunushi",
+   "s3-haraikomikingaku"
+  ],
+  "description": "会社に お金などを 出す ことです。株式会社では 出資した 人が 株主に なり、出資額は 資本金に なります。⚠️ 借入金とは ちがい 返す 義務は ありません。"
+ },
+ {
+  "id": "s3-inshizei",
+  "name": "印紙税",
+  "reading": "いんしぜい",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shuunyuuinshi",
+   "s3-koteishisanzei"
+  ],
+  "description": "契約書や 領収書などに かかる 税です。収入印紙を 買って はって 納め、会社では 租税公課(費用)で 記録します。"
+ },
+ {
+  "id": "s3-koteishisanzei",
+  "name": "固定資産税",
+  "reading": "こていしさんぜい",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-inshizei",
+   "s3-tatemono"
+  ],
+  "description": "土地や 建物を 持って いると かかる 税です。会社が 納めたら 租税公課(費用)で 借方に 書きます。⚠️ 固定資産の 取得原価には ふくめません。"
+ },
+ {
+  "id": "s3-shuunyuuinshi",
+  "name": "収入印紙",
+  "reading": "しゅうにゅういんし",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-inshizei",
+   "s3-ryoushuusho"
+  ],
+  "description": "印紙税を 納める ための 印紙です。買ったら 租税公課(費用)で 記録し、決算で 使って いない 分は 貯蔵品に 振り替えます。"
+ },
+ {
+  "id": "s3-nouhinsho",
+  "name": "納品書",
+  "reading": "のうひんしょ",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-okurijou",
+   "s3-seikyuusho",
+   "s3-shouhyou"
+  ],
+  "description": "商品を とどけた ときに いっしょに わたす、品名・数量・金額を 書いた 書類です。仕入や 売上の 仕訳の もとに なります。"
+ },
+ {
+  "id": "s3-okurijou",
+  "name": "送り状",
+  "reading": "おくりじょう",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-nouhinsho",
+   "s3-shouhyou"
+  ],
+  "description": "商品を 送った ことを 知らせる 書類です。品名・数量・金額が 書いて あり、届いた がわは 仕入の 証ひょうに します。"
+ },
+ {
+  "id": "s3-uriageshuukeihyou",
+  "name": "売上集計表",
+  "reading": "うりあげしゅうけいひょう",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shouhyou",
+   "s3-shiwakenikkeihyou"
+  ],
+  "description": "1日の 売上を 商品ごとに まとめた 表です。合計の 売上と 消費税を 読み取って、1日分を まとめて 仕訳します。"
+ },
+ {
+  "id": "s3-nyuukindenpyou",
+  "name": "入金伝票",
+  "reading": "にゅうきんでんぴょう",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shukkindenpyou",
+   "s3-furikaedenpyou",
+   "s3-sandenpyousei"
+  ],
+  "description": "現金が 入った 取引を 書く 伝票です。借方は いつも 現金なので、貸方の 勘定科目と 金額だけを 書きます。"
+ },
+ {
+  "id": "s3-shukkindenpyou",
+  "name": "出金伝票",
+  "reading": "しゅっきんでんぴょう",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-nyuukindenpyou",
+   "s3-sandenpyousei"
+  ],
+  "description": "現金を はらった 取引を 書く 伝票です。貸方は いつも 現金なので、借方の 勘定科目と 金額だけを 書きます。"
+ },
+ {
+  "id": "s3-furikaedenpyou",
+  "name": "振替伝票",
+  "reading": "ふりかえでんぴょう",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-nyuukindenpyou",
+   "s3-shukkindenpyou"
+  ],
+  "description": "現金が 動かない 取引を 書く 伝票です。ふつうの 仕訳と 同じく、借方と 貸方の 両方を 書きます。"
+ },
+ {
+  "id": "s3-shiwakenikkeihyou",
+  "name": "仕訳日計表",
+  "reading": "しわけにっけいひょう",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-sandenpyousei",
+   "s3-furikaedenpyou"
+  ],
+  "description": "1日分の 伝票を 勘定科目ごとに 集計した 表です。借方と 貸方の 合計が 一致する ことを 確かめてから 総勘定元帳に 転記します。"
+ },
+ {
+  "id": "s3-sandenpyousei",
+  "name": "三伝票制",
+  "reading": "さんでんぴょうせい",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:zei",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-nyuukindenpyou",
+   "s3-shukkindenpyou",
+   "s3-furikaedenpyou"
+  ],
+  "description": "入金伝票・出金伝票・振替伝票の 3種類で 取引を 記録する 方法です。現金を 一部 ふくむ 取引は、2つの 伝票に 分けて 書きます。"
+ },
+ {
+  "id": "s3-zeikomihoushiki",
+  "name": "税込方式",
+  "reading": "ぜいこみほうしき",
+  "journey": "3shiwake",
+  "category": "税金と 証ひょう",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3shiwake:zei",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-zeinukihoushiki",
+   "s3-shouhizei"
+  ],
+  "description": "消費税を 売上や 仕入に ふくめて 記録する 方法です。3級の 仕訳は 税抜方式で 書くので、問題文の ことわりを よく 読みます。"
+ },
+ {
+  "id": "s3-souryou",
+  "name": "送料",
+  "reading": "そうりょう",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shogakari",
+   "s3-hikitoriunchin"
+  ],
+  "description": "商品を 送る 料金です。仕入で 自分が はらえば 仕入に ふくめ、売る ときに 自分が はらえば 発送費(費用)に します。⚠️ どちらの 取引かで 科目が かわります。"
+ },
+ {
+  "id": "s3-shiirenebiki",
+  "name": "仕入値引",
+  "reading": "しいれねびき",
+  "journey": "3shiwake",
+  "category": "返品と 値引き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "3shiwake:henpin",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-shiiremodoshi",
+   "s3-uriagenebiki"
+  ],
+  "description": "仕入れた 商品の 傷などで 代金を 安く して もらう ことです。仕入を へらすので 借方に 買掛金、貸方に 仕入と 書きます。"
+ },
+ {
+  "id": "s3-uriagenebiki",
+  "name": "売上値引",
+  "reading": "うりあげねびき",
+  "journey": "3shiwake",
+  "category": "返品と 値引き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "3shiwake:henpin",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-uriagemodori",
+   "s3-shiirenebiki"
+  ],
+  "description": "売った 商品の 代金を 安く する ことです。売上を へらすので 借方に 売上、貸方に 売掛金と 書きます。"
+ },
+ {
+  "id": "s3-teiseishiwake",
+  "name": "訂正仕訳",
+  "reading": "ていせいしわけ",
+  "journey": "3shiwake",
+  "category": "返品と 値引き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "3shiwake:henpin",
+  "field": "簿記の きほん",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-uriagemodori",
+   "s3-shiiremodoshi"
+  ],
+  "description": "まちがえた 仕訳を 直す ための 仕訳です。まちがいの 仕訳を 逆に して 消し、正しい 仕訳を 足して、残った ところだけを まとめて 書きます。"
+ },
+ {
+  "id": "s3-kakedaikinnokaishuu",
+  "name": "掛代金の回収",
+  "reading": "かけだいきんのかいしゅう",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kakeuri",
+   "s3-kakeshiire"
+  ],
+  "description": "売掛金を 受け取る ことです。借方に 現金や 普通預金、貸方に 売掛金を 書きます。⚠️ 売上を もう 一度 書かない ように します。"
+ },
+ {
+  "id": "s3-uriagegenkatairitsu",
+  "name": "売上原価対立法",
+  "reading": "うりあげげんかたいりつほう",
+  "journey": "3shiwake",
+  "category": "商品売買",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "3shiwake:sanbun",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-sanbunpou",
+   "s3-shouhin"
+  ],
+  "description": "商品を 買ったら 商品(資産)に 書き、売る たびに 原価を 商品から 売上原価(費用)に 振り替える 方法です。⚠️ 三分法の「仕入」は 使いません。"
+ },
+ {
+  "id": "s3-mitsumoribaikyakuka",
+  "name": "見積売却価額",
+  "reading": "みつもりばいきゃくかがく",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗑️",
+  "mapNode": "3shiwake:jokyaku",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-jokyaku",
+   "s3-koteishisanjokyakus"
+  ],
+  "description": "除却した 固定資産が 売れると 見込まれる 金額です。この 額は 貯蔵品(資産)に して、帳簿価額との 差を 固定資産除却損に します。"
+ },
+ {
+  "id": "s3-shobunhiyou",
+  "name": "処分費用",
+  "reading": "しょぶんひよう",
+  "journey": "3shiwake",
+  "category": "固定資産",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗑️",
+  "mapNode": "3shiwake:jokyaku",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-haiki",
+   "s3-koteishisanhaikison"
+  ],
+  "description": "固定資産を 捨てる ときに 業者に はらう 費用です。廃棄の ときは 固定資産廃棄損に ふくめて 借方に 書きます。"
+ },
+ {
+  "id": "s3-saimushaseikyuuhous",
+  "name": "債務者請求方式",
+  "reading": "さいむしゃせいきゅうほうしき",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "3shiwake:denshi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-hasseikiroku",
+   "s3-denshikirokusaimu"
+  ],
+  "description": "お金を はらう がわ(債務者)が 電子債権記録機関に 発生記録を 請求する 方法です。はらう がわは 買掛金を 電子記録債務に 振り替えます。"
+ },
+ {
+  "id": "s3-kyasshuresukessai",
+  "name": "キャッシュレス決済",
+  "reading": "きゃっしゅれすけっさい",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📱",
+  "mapNode": "3shiwake:credit",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-kurejittourikakekin",
+   "s3-kurejittobarai"
+  ],
+  "description": "現金を 使わずに カードや スマホなどで はらう ことです。売った がわは 決済会社から 入金されるまで、クレジット売掛金で 記録します。"
+ },
+ {
+  "id": "s3-denshikirokusaikenn",
+  "name": "電子記録債権の消滅",
+  "reading": "でんしきろくさいけんのしょうめつ",
+  "journey": "3shiwake",
+  "category": "債権と 債務",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "3shiwake:denshi",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "s3-denshikirokusaiken",
+   "s3-shiharaikijitsu"
+  ],
+  "description": "支払期日に 代金が 口座に 入り、電子記録債権が なくなる ことです。借方に 普通預金など、貸方に 電子記録債権を 書きます。"
+ }
+]

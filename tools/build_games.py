@@ -108,9 +108,9 @@ GAMES = {
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、道の きまりと 思いやりが 見えてくるよ。警察庁・都道府県の 公安委員会とは 関係ありません。"),
     # フリック宅建士(けいくん 2026-11-07「フリック宅地建物取引士を 受かるレベルに」→「ぜんぶ おすすめで」)。まとめは docs/フリック宅地建物取引士-はじめかた.md。
     #   ことばは tools/takken/terms-<旅>.json・⭕❌ は maru-<旅>.json・数字クイズは num.json → takken/terms.js(tools/takken/terms_js.py)。しくみは takken/takken.js(TAKKEN。運転免許を 写して 🎯 模擬試験を 宅建の 4択 50問に・🔢 数字クイズを 足した。❌ 復習は 2つめの 例外)。
-    #   絵は まだ。届いたら tools/takken/art/square-src.png → tools/icon_from_square.py takken(iconv を +1)/ title-src.png → tools/title_from_art.py takken(logo を True・art.word を 実寸に)/ takken/hero.webp(hero を True)
-    "takken": dict(name="フリック宅建士", modes="TAKKEN", kinds=set(), color="#1c7ed6", hero=False, logo=False,
-                   art=dict(word=(900, 211), hero=(1536, 1024), alt="フリック宅建士", iconv=1, wordv=1),
+    #   トップの 絵は 入れた(2026-11-07。けいくんの ChatGPT の 2回目。字の まちがい 3つは tools/takken/fix_text.py で 絵の 中で 直した)。四角い 絵・題名は まだ: square-src.png → tools/icon_from_square.py takken(iconv を +1)/ title-src.png → tools/title_from_art.py takken(logo を True・art.word を 実寸に)
+    "takken": dict(name="フリック宅建士", modes="TAKKEN", kinds=set(), color="#1c7ed6", hero=True, logo=False,
+                   art=dict(word=(900, 211), hero=(1536, 1024), alt="フリック宅建士", iconv=1, wordv=2),
                    lead="契約と 権利・物権と 登記・相続・宅建業の きまり・取引の きまり・土地の 使いかた・建物の 決まり・税金・価格と そのほかの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、宅建試験の どの 科目で 出るかが わかるよ。家を 借りる・買う ときの くらしの ことばから、宅地建物取引士の 試験の 範囲の めやすまで 990語。⭕❌ 一問一答・数字クイズ・本番と 同じ 形の 模擬試験で 試験の 練習も できるよ。",
                    how="表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 試験の 前には 最新の テキストと 試験の 案内で 確かめてね。",
                    rule="ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、家と まちの きまりが 見えてくるよ。不動産適正取引推進機構・国土交通省とは 関係ありません。"),

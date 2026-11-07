@@ -1,0 +1,2122 @@
+[
+ {
+  "id": "k3-kessan",
+  "name": "決算",
+  "reading": "けっさん",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "3kessan:seiri",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kessanseiri",
+   "k3-choubonoshimekiri"
+  ],
+  "description": "1年の 区切り(期末)に 帳簿を 整えて、もうけ(損益)と 財産(資産・負債・純資産)の ようすを まとめる 手続きです。損益計算書と 貸借対照表を 作ります。"
+ },
+ {
+  "id": "k3-kessanseiri",
+  "name": "決算整理",
+  "reading": "けっさんせいり",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "3kessan:seiri",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kessan",
+   "k3-kessanseirijikou",
+   "k3-kessanseirishiwake"
+  ],
+  "description": "期末に、帳簿の 金額を 正しい 金額に 直す 作業です。売上原価の 計算・貸倒引当金・減価償却・経過勘定 などが あります。"
+ },
+ {
+  "id": "k3-uriagegenka",
+  "name": "売上原価",
+  "reading": "うりあげげんか",
+  "journey": "3kessan",
+  "category": "売上原価",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "3kessan:genka",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kurikoshishouhin",
+   "k3-shikurikurishi",
+   "k3-uriagesourieki"
+  ],
+  "description": "売れた 商品の 仕入れの 値段の 合計です。費用の 仲間で、期首の 商品と 当期の 仕入を 足し、期末に 残った 商品を 引いて 求めます。",
+  "formula": "売上原価 = 期首商品 + 当期仕入 − 期末商品"
+ },
+ {
+  "id": "k3-kurikoshishouhin",
+  "name": "繰越商品",
+  "reading": "くりこししょうひん",
+  "journey": "3kessan",
+  "category": "売上原価",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗃️",
+  "mapNode": "3kessan:genka",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-uriagegenka",
+   "k3-kimatsushouhintanao"
+  ],
+  "description": "期末に 売れ残った 商品を 表す 資産の 勘定です。決算で 期末の 在庫を 借方に 入れ、次の 期へ 持ちこします。貸借対照表では「商品」と 表示します。"
+ },
+ {
+  "id": "k3-kashidaore",
+  "name": "貸倒れ",
+  "reading": "かしだおれ",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "😢",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorehikiateki",
+   "k3-kashidaoresonshitsu"
+  ],
+  "description": "売った 相手の お店が つぶれる などして、売掛金などの 代金が もらえなく なる ことです。もらえない 分は 資産(売掛金)を へらして 貸方に 書きます。"
+ },
+ {
+  "id": "k3-kashidaorehikiateki",
+  "name": "貸倒引当金",
+  "reading": "かしだおれひきあてきん",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorehikiatek2",
+   "k3-kashidaore",
+   "k3-hyoukakanjou"
+  ],
+  "description": "次の 期に 貸倒れに なりそうな 金額を 前もって 見積もった ものです。売掛金などから 差し引く 評価勘定で、ふえたら 貸方に 書きます。"
+ },
+ {
+  "id": "k3-genkashoukyaku",
+  "name": "減価償却",
+  "reading": "げんかしょうきゃく",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏚️",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkashoukyakuhi",
+   "k3-teigakuhou",
+   "k3-teiritsuhou"
+  ],
+  "description": "建物や 備品は 使うほど 古く なって 価値が へります。その へった 分を、使った 期間に 少しずつ 費用(減価償却費)に して いく 手続きです。"
+ },
+ {
+  "id": "k3-teigakuhou",
+  "name": "定額法",
+  "reading": "ていがくほう",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkashoukyaku",
+   "k3-teiritsuhou",
+   "k3-zanzonkagaku"
+  ],
+  "description": "減価償却を 毎年 同じ 金額で 行う 方法です。取得原価から 残存価額を 引き、耐用年数で わって 1年分を 出します。",
+  "formula": "(取得原価 − 残存価額)÷ 耐用年数"
+ },
+ {
+  "id": "k3-genkinkabusoku",
+  "name": "現金過不足",
+  "reading": "げんきんかぶそく",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪙",
+  "mapNode": "3kessan:kabusoku",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-zasson",
+   "k3-zatsueki",
+   "k3-genkinnojissaiarida"
+  ],
+  "description": "帳簿の 現金の 残高と、金庫に 実際に ある 現金が ちがう とき、その ずれを 一時的に 入れて おく 勘定です。帳簿を 実際の 額に 合わせて 使います。"
+ },
+ {
+  "id": "k3-chozouhin",
+  "name": "貯蔵品",
+  "reading": "ちょぞうひん",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✉️",
+  "mapNode": "3kessan:chozo",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-yuubinkitte",
+   "k3-chozouhinhenofurika"
+  ],
+  "description": "期末に 使わずに 残った 郵便切手や 収入印紙を 表す 資産の 勘定です。決算で 通信費や 租税公課から 振り替えて 借方に 書きます。"
+ },
+ {
+  "id": "k3-seisanhyou",
+  "name": "精算表",
+  "reading": "せいさんひょう",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "3kessan:seisan",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-hachiketaseisanhyou",
+   "k3-shuuseikinyuuran"
+  ],
+  "description": "決算整理前の 残高試算表から 決算整理を 書き入れ、損益計算書と 貸借対照表の 形に まとめる 一覧の 表です。決算の 流れが ひと目で わかります。"
+ },
+ {
+  "id": "k3-houjinzeitou",
+  "name": "法人税等",
+  "reading": "ほうじんぜいとう",
+  "journey": "3kessan",
+  "category": "税金",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏛️",
+  "mapNode": "3kessan:hojin",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-houjinzeijuuminzeio",
+   "k3-karibaraihoujinzeit",
+   "k3-mibaraihoujinzeitou"
+  ],
+  "description": "会社の もうけに かかる 法人税・住民税・事業税を まとめた 呼びかたです。費用として 損益計算書の 税引前当期純利益の 下に 書きます。"
+ },
+ {
+  "id": "k3-kurikoshiriekijouyo",
+  "name": "繰越利益剰余金",
+  "reading": "くりこしりえきじょうよきん",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💰",
+  "mapNode": "3kessan:joyo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-riekinofurikae",
+   "k3-haitou"
+  ],
+  "description": "会社が これまでに 得た もうけの うち、配当などに 使わず 会社に 残して いる 分です。純資産なので、ふえたら 貸方に 書きます。"
+ },
+ {
+  "id": "k3-maebaraihiyou",
+  "name": "前払費用",
+  "reading": "まえばらいひよう",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-hiyounokurinobe",
+   "k3-maebaraiyachin",
+   "k3-maebaraihokenryou"
+  ],
+  "description": "次の 期の 分まで 先に はらった 費用の うち、まだ 来て いない 期間の 分です。決算で 費用を へらし、資産として 借方に 書きます。"
+ },
+ {
+  "id": "k3-maeukeshuueki",
+  "name": "前受収益",
+  "reading": "まえうけしゅうえき",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-shuuekinokurinobe",
+   "k3-maeukechidai"
+  ],
+  "description": "次の 期の 分まで 先に 受け取った 収益の うち、まだ 来て いない 期間の 分です。決算で 収益を へらし、負債として 貸方に 書きます。"
+ },
+ {
+  "id": "k3-mibaraihiyou",
+  "name": "未払費用",
+  "reading": "みばらいひよう",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-hiyounomikoshi",
+   "k3-mibarairisoku",
+   "k3-mibaraikyuuryou"
+  ],
+  "description": "当期に もう サービスを 受けたのに、まだ はらって いない 費用です。決算で 費用を ふやし、負債として 貸方に 書きます。"
+ },
+ {
+  "id": "k3-mishuushuueki",
+  "name": "未収収益",
+  "reading": "みしゅうしゅうえき",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-shuuekinomikoshi",
+   "k3-mishuurisoku"
+  ],
+  "description": "当期に もう サービスを 提供したのに、まだ 受け取って いない 収益です。決算で 収益を ふやし、資産として 借方に 書きます。"
+ },
+ {
+  "id": "k3-zasson",
+  "name": "雑損",
+  "reading": "ざっそん",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "3kessan:kabusoku",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkinkabusoku",
+   "k3-zatsueki"
+  ],
+  "description": "現金の ずれの 原因が 決算日まで わからず、現金が 足りない ままの ときに 使う 費用の 勘定です。借方に 書きます。"
+ },
+ {
+  "id": "k3-zatsueki",
+  "name": "雑益",
+  "reading": "ざつえき",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "3kessan:kabusoku",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkinkabusoku",
+   "k3-zasson"
+  ],
+  "description": "現金の ずれの 原因が 決算日まで わからず、現金が 多い ままの ときに 使う 収益の 勘定です。貸方に 書きます。"
+ },
+ {
+  "id": "k3-zanzonkagaku",
+  "name": "残存価額",
+  "reading": "ざんぞんかがく",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🪵",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-teigakuhou",
+   "k3-taiyounensuu"
+  ],
+  "description": "耐用年数が 終わった あとに 残ると 見込む 価値です。定額法では 取得原価から 残存価額を 引いて 計算します。問題文に「残存価額ゼロ」と 書かれる ことも 多いです。"
+ },
+ {
+  "id": "k3-kishushouhintanaoro",
+  "name": "期首商品棚卸高",
+  "reading": "きしゅしょうひんたなおろしだか",
+  "journey": "3kessan",
+  "category": "売上原価",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "3kessan:genka",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kimatsushouhintanao",
+   "k3-uriagegenka"
+  ],
+  "description": "期の はじめに 残って いた 商品の 金額で、決算整理前の 繰越商品の 残高です。決算では 繰越商品から 仕入へ 振り替えて 売上原価に 足します。"
+ },
+ {
+  "id": "k3-kimatsushouhintanao",
+  "name": "期末商品棚卸高",
+  "reading": "きまつしょうひんたなおろしだか",
+  "journey": "3kessan",
+  "category": "売上原価",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📤",
+  "mapNode": "3kessan:genka",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kishushouhintanaoro",
+   "k3-jicchitanaoroshi",
+   "k3-kurikoshishouhin"
+  ],
+  "description": "期末に 売れ残って いる 商品の 金額です。売上原価から 引き、仕入から 繰越商品へ 振り替えて 次の 期へ 持ちこします。"
+ },
+ {
+  "id": "k3-shikurikurishi",
+  "name": "しーくり・くりしー",
+  "reading": "しーくりくりしー",
+  "journey": "3kessan",
+  "category": "売上原価",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎵",
+  "mapNode": "3kessan:genka",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-uriagegenka",
+   "k3-kurikoshishouhin"
+  ],
+  "description": "売上原価を 仕入勘定で 出す 仕訳の おぼえかたです。「しーくり」= 借方 仕入・貸方 繰越商品(期首分)、「くりしー」= 借方 繰越商品・貸方 仕入(期末分)です。"
+ },
+ {
+  "id": "k3-kashidaorehikiatek2",
+  "name": "貸倒引当金繰入",
+  "reading": "かしだおれひきあてきんくりいれ",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorehikiateki",
+   "k3-sagakuhojuuhou",
+   "k3-kashidaorehikiatek3"
+  ],
+  "description": "貸倒引当金を 設定・補充する ときの 費用の 勘定です。借方に 書き、相手は 貸倒引当金です。⚠️ 引当金が 多すぎて へらす ときは 繰入では なく 戻入を 使います。"
+ },
+ {
+  "id": "k3-kashidaoresonshitsu",
+  "name": "貸倒損失",
+  "reading": "かしだおれそんしつ",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💔",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaore",
+   "k3-toukihasseinosaiken"
+  ],
+  "description": "貸倒れの うち、貸倒引当金で まかなえない 分を 表す 費用の 勘定です。当期に 発生した 売掛金の 貸倒れや、引当金が 足りない ときに 借方に 書きます。"
+ },
+ {
+  "id": "k3-sagakuhojuuhou",
+  "name": "差額補充法",
+  "reading": "さがくほじゅうほう",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorehikiatek2",
+   "k3-kashidaorehikiatek4"
+  ],
+  "description": "期末に 必要な 貸倒引当金と、いま 残って いる 引当金の 差だけを 足す(または 戻す)方法です。3級の 決算は ふつう この 方法です。",
+  "formula": "繰入額 = 設定額 − 引当金の 残高"
+ },
+ {
+  "id": "k3-kashidaorehikiatek3",
+  "name": "貸倒引当金戻入",
+  "reading": "かしだおれひきあてきんもどしいれ",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorehikiatek2",
+   "k3-sagakuhojuuhou"
+  ],
+  "description": "残って いる 貸倒引当金が、期末に 必要な 額より 多い とき、多い 分を 戻す 収益の 勘定です。借方 貸倒引当金・貸方 貸倒引当金戻入と 書きます。"
+ },
+ {
+  "id": "k3-shoukyakusaikentori",
+  "name": "償却債権取立益",
+  "reading": "しょうきゃくさいけんとりたてえき",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaore",
+   "k3-zenkihasseinosaiken"
+  ],
+  "description": "前の 期までに 貸倒れとして 処理した 代金を、当期に 回収できた ときの 収益の 勘定です。⚠️ 当期の 貸倒れを 回収した なら、売掛金などを もとに 戻します。"
+ },
+ {
+  "id": "k3-genkashoukyakuhi",
+  "name": "減価償却費",
+  "reading": "げんかしょうきゃくひ",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔻",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkashoukyaku",
+   "k3-genkashoukyakuruike"
+  ],
+  "description": "当期の 減価償却の 金額を 表す 費用の 勘定です。借方に 書きます。間接法なら 相手は 減価償却累計額です。"
+ },
+ {
+  "id": "k3-genkashoukyakuruike",
+  "name": "減価償却累計額",
+  "reading": "げんかしょうきゃくるいけいがく",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kansetsuhou",
+   "k3-bihingenkashoukyaku",
+   "k3-hyoukakanjou"
+  ],
+  "description": "これまでに 行った 減価償却の 合計です。固定資産から 差し引く 評価勘定で、ふえたら 貸方に 書きます。取得原価との 差が いまの 帳簿価額です。"
+ },
+ {
+  "id": "k3-kansetsuhou",
+  "name": "間接法",
+  "reading": "かんせつほう",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkashoukyakuruike",
+   "k3-chokusetsuhou"
+  ],
+  "description": "減価償却費を、固定資産を 直接 へらさず、減価償却累計額を ふやして 記録する 方法です。取得原価が 帳簿に 残るので、買った 値段が わかります。"
+ },
+ {
+  "id": "k3-taiyounensuu",
+  "name": "耐用年数",
+  "reading": "たいようねんすう",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-teigakuhou",
+   "k3-zanzonkagaku"
+  ],
+  "description": "固定資産を 使える と 見込む 年数です。定額法では 取得原価から 残存価額を 引いた 額を この 年数で わります。"
+ },
+ {
+  "id": "k3-keikakanjou",
+  "name": "経過勘定",
+  "reading": "けいかかんじょう",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕰️",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maebaraihiyou",
+   "k3-mibaraihiyou",
+   "k3-saifurikaeshiwake"
+  ],
+  "description": "時間の 経過で 生じる 費用・収益を 正しい 期に 合わせる ための 勘定です。前払費用・前受収益・未払費用・未収収益の 4つが あります。"
+ },
+ {
+  "id": "k3-maebaraiyachin",
+  "name": "前払家賃",
+  "reading": "まえばらいやちん",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maebaraihiyou",
+   "k3-hiyounokurinobe"
+  ],
+  "description": "次の 期の 分まで 先に はらった 家賃です。決算で 支払家賃を へらし(貸方)、前払家賃(資産)を 借方に 書きます。"
+ },
+ {
+  "id": "k3-maeukechidai",
+  "name": "前受地代",
+  "reading": "まえうけちだい",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maeukeshuueki",
+   "k3-shuuekinokurinobe"
+  ],
+  "description": "次の 期の 分まで 先に 受け取った 地代です。決算で 受取地代を へらし(借方)、前受地代(負債)を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-mibarairisoku",
+  "name": "未払利息",
+  "reading": "みばらいりそく",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mibaraihiyou",
+   "k3-hiyounomikoshi"
+  ],
+  "description": "借入金の 利息の うち、当期の 分なのに まだ はらって いない 額です。決算で 支払利息を 借方、未払利息(負債)を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-mishuurisoku",
+  "name": "未収利息",
+  "reading": "みしゅうりそく",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐷",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mishuushuueki",
+   "k3-shuuekinomikoshi"
+  ],
+  "description": "貸付金の 利息の うち、当期の 分なのに まだ 受け取って いない 額です。決算で 未収利息(資産)を 借方、受取利息を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-maebaraihokenryou",
+  "name": "前払保険料",
+  "reading": "まえばらいほけんりょう",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☂️",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maebaraihiyou",
+   "k3-hiyounokurinobe"
+  ],
+  "description": "1年分 まとめて はらった 保険料の うち、次の 期の 分です。決算で 保険料を へらし、前払保険料(資産)を 借方に 書きます。月割で 計算します。"
+ },
+ {
+  "id": "k3-mibaraishouhizei",
+  "name": "未払消費税",
+  "reading": "みばらいしょうひぜい",
+  "journey": "3kessan",
+  "category": "税金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3kessan:hojin",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-shouhizeinoseiri",
+   "k3-houjinzeitou"
+  ],
+  "description": "決算で 仮受消費税から 仮払消費税を 引いて、あとで 国に 納める 消費税の 額です。負債なので 貸方に 書きます。"
+ },
+ {
+  "id": "k3-karibaraihoujinzeit",
+  "name": "仮払法人税等",
+  "reading": "かりばらいほうじんぜいとう",
+  "journey": "3kessan",
+  "category": "税金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "3kessan:hojin",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-chuukanshinkoku",
+   "k3-mibaraihoujinzeitou"
+  ],
+  "description": "期の 途中に 中間申告で 先に 納めた 法人税等を 入れて おく 資産の 勘定です。決算で 法人税等が 決まると 貸方に 書いて 消します。"
+ },
+ {
+  "id": "k3-mibaraihoujinzeitou",
+  "name": "未払法人税等",
+  "reading": "みばらいほうじんぜいとう",
+  "journey": "3kessan",
+  "category": "税金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "3kessan:hojin",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-karibaraihoujinzeit",
+   "k3-kakuteishinkoku"
+  ],
+  "description": "決算で 決まった 法人税等から 仮払法人税等を 引いた、まだ 納めて いない 額です。負債なので 貸方に 書き、確定申告で 納めると へります。",
+  "formula": "法人税等 − 仮払法人税等"
+ },
+ {
+  "id": "k3-chuukanshinkoku",
+  "name": "中間申告",
+  "reading": "ちゅうかんしんこく",
+  "journey": "3kessan",
+  "category": "税金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "3kessan:hojin",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-karibaraihoujinzeit",
+   "k3-kakuteishinkoku"
+  ],
+  "description": "期の 途中で 法人税などを 申告して 先に 一部を 納める ことです。納めた 額は 仮払法人税等(資産)の 借方に 書きます。"
+ },
+ {
+  "id": "k3-sonekikanjou",
+  "name": "損益勘定",
+  "reading": "そんえきかんじょう",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "3kessan:shime",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-sonekifurikae",
+   "k3-shihonfurikae"
+  ],
+  "description": "決算で 収益と 費用を すべて 集める ための 勘定です。貸方に 収益、借方に 費用が 集まり、差額が 当期純利益(または 当期純損失)です。"
+ },
+ {
+  "id": "k3-kessanfurikae",
+  "name": "決算振替",
+  "reading": "けっさんふりかえ",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "3kessan:shime",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-sonekifurikae",
+   "k3-shihonfurikae"
+  ],
+  "description": "決算で ある 勘定の 残高を 別の 勘定へ 移す 仕訳です。収益・費用を 損益勘定へ、損益勘定の 差額を 繰越利益剰余金へ 移します。"
+ },
+ {
+  "id": "k3-uriagesourieki",
+  "name": "売上総利益",
+  "reading": "うりあげそうりえき",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥇",
+  "mapNode": "3kessan:zaimu",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-uriagegenka",
+   "k3-eigyourieki",
+   "k3-uriagedaka"
+  ],
+  "description": "売上高から 売上原価を 引いた 利益で、商品を 売って 得た もうけの 大きさを 表します。損益計算書で いちばん はじめに 出る 利益です。",
+  "formula": "売上総利益 = 売上高 − 売上原価"
+ },
+ {
+  "id": "k3-kurikoshishisanhyou",
+  "name": "繰越試算表",
+  "reading": "くりこししさんひょう",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "3kessan:shime",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-eibeishikikessanhou",
+   "k3-kurikoshikinyuu"
+  ],
+  "description": "英米式決算法で、次の 期へ 繰り越す 資産・負債・純資産の 残高を 集めて、借方と 貸方の 合計が 合うか 確かめる 表です。収益・費用は 入りません。"
+ },
+ {
+  "id": "k3-saifurikaeshiwake",
+  "name": "再振替仕訳",
+  "reading": "さいふりかえしわけ",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-keikakanjou",
+   "k3-maebaraihiyou"
+  ],
+  "description": "次の 期の はじめに、前の 期末の 経過勘定の 仕訳を 逆に して もとの 費用・収益の 勘定へ 戻す 仕訳です。たとえば 借方 支払家賃・貸方 前払家賃です。"
+ },
+ {
+  "id": "k3-yuubinkitte",
+  "name": "郵便切手",
+  "reading": "ゆうびんきって",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "3kessan:chozo",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-chozouhin",
+   "k3-chozouhinhenofurika"
+  ],
+  "description": "手紙を 送る ための 切手で、買った ときは 通信費(費用)です。期末に 使わずに 残った 分は 貯蔵品(資産)に 振り替えます。"
+ },
+ {
+  "id": "k3-kessanseirimaezanda",
+  "name": "決算整理前残高試算表",
+  "reading": "けっさんせいりまえざんだかしさんひょう",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "3kessan:seisan",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kessanseirigozandak",
+   "k3-seisanhyou"
+  ],
+  "description": "決算整理を する 前の、各勘定の 残高を 集めた 表です。精算表の いちばん 左の 欄(残高試算表欄)に なります。"
+ },
+ {
+  "id": "k3-teiritsuhou",
+  "name": "定率法",
+  "reading": "ていりつほう",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-shoukyakuritsu",
+   "k3-teigakuhou"
+  ],
+  "description": "減価償却を、まだ 償却して いない 額(帳簿価額)に 償却率を かけて 行う 方法です。はじめの 年ほど 多く 償却します。⚠️ 取得原価に かけるのは まちがい。",
+  "formula": "(取得原価 − 累計額)× 償却率"
+ },
+ {
+  "id": "k3-kessanseirijikou",
+  "name": "決算整理事項",
+  "reading": "けっさんせいりじこう",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📑",
+  "mapNode": "3kessan:seiri",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kessanseiri",
+   "k3-kessanseirishiwake"
+  ],
+  "description": "決算で 直す ことの 一覧です。期末の 商品の 額・貸倒引当金の 率・減価償却の 条件・経過勘定などが 書かれ、1つずつ 仕訳に します。"
+ },
+ {
+  "id": "k3-kessanseirishiwake",
+  "name": "決算整理仕訳",
+  "reading": "けっさんせいりしわけ",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✍️",
+  "mapNode": "3kessan:seiri",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kessanseirijikou",
+   "k3-shuuseikinyuuran"
+  ],
+  "description": "決算整理の ための 仕訳です。売上原価・貸倒引当金・減価償却・経過勘定・法人税等 などが あり、精算表では 修正記入欄に 書きます。"
+ },
+ {
+  "id": "k3-kessanseirigozandak",
+  "name": "決算整理後残高試算表",
+  "reading": "けっさんせいりござんだかしさんひょう",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "3kessan:seisan",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kessanseirimaezanda",
+   "k3-sonekikeisanshoran"
+  ],
+  "description": "決算整理を した あとの 各勘定の 残高を 集めた 表です。この 表から 損益計算書と 貸借対照表を 作れます。"
+ },
+ {
+  "id": "k3-shuuseikinyuuran",
+  "name": "修正記入欄",
+  "reading": "しゅうせいきにゅうらん",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖊️",
+  "mapNode": "3kessan:seisan",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-hachiketaseisanhyou",
+   "k3-kessanseirishiwake"
+  ],
+  "description": "精算表で 決算整理仕訳を 書きこむ 欄です。⚠️ 残高試算表欄と 同じ 側なら 足し、反対の 側なら 引いて 右の 欄へ 写します。"
+ },
+ {
+  "id": "k3-sonekikeisanshoran",
+  "name": "損益計算書欄",
+  "reading": "そんえきけいさんしょらん",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📗",
+  "mapNode": "3kessan:seisan",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-taishakutaishouhyou",
+   "k3-hachiketaseisanhyou"
+  ],
+  "description": "精算表で 収益と 費用を 書く 欄です。収益は 貸方、費用は 借方に 書き、差額が 当期純利益です。⚠️ 利益は 借方に 書いて 合計を 合わせます。"
+ },
+ {
+  "id": "k3-taishakutaishouhyou",
+  "name": "貸借対照表欄",
+  "reading": "たいしゃくたいしょうひょうらん",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "3kessan:seisan",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-sonekikeisanshoran",
+   "k3-hachiketaseisanhyou"
+  ],
+  "description": "精算表で 資産・負債・純資産を 書く 欄です。資産は 借方、負債・純資産は 貸方です。当期純利益は ここでは 貸方に 書き、損益計算書欄と 同じ 額に なります。"
+ },
+ {
+  "id": "k3-hachiketaseisanhyou",
+  "name": "8桁精算表",
+  "reading": "はちけたせいさんひょう",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "3kessan:seisan",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-seisanhyou",
+   "k3-shuuseikinyuuran"
+  ],
+  "description": "残高試算表・修正記入・損益計算書・貸借対照表の 4つの 欄に、それぞれ 借方と 貸方が ある 精算表です。4 × 2 = 8 けたです。",
+  "acceptedReadings": [
+   "はちけたせいさんひょう",
+   "はっけたせいさんひょう"
+  ]
+ },
+ {
+  "id": "k3-shiirekanjoudenokei",
+  "name": "仕入勘定での計算",
+  "reading": "しいれかんじょうでのけいさん",
+  "journey": "3kessan",
+  "category": "売上原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "3kessan:genka",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-shikurikurishi",
+   "k3-uriagegenkakanjou"
+  ],
+  "description": "仕入勘定を そのまま 売上原価の 計算に 使う 方法です。期首商品を 仕入へ 足し(しーくり)、期末商品を 仕入から 引く(くりしー)と、仕入の 残高が 売上原価に なります。"
+ },
+ {
+  "id": "k3-uriagegenkakanjou",
+  "name": "売上原価勘定",
+  "reading": "うりあげげんかかんじょう",
+  "journey": "3kessan",
+  "category": "売上原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "3kessan:genka",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-shiirekanjoudenokei",
+   "k3-uriagegenka"
+  ],
+  "description": "売上原価を 計算する ために 作る 別の 勘定です。期首商品と 当期仕入を 売上原価へ 振り替え、期末商品を 売上原価から 繰越商品へ 振り替えます。"
+ },
+ {
+  "id": "k3-jicchitanaoroshi",
+  "name": "実地棚卸",
+  "reading": "じっちたなおろし",
+  "journey": "3kessan",
+  "category": "売上原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "3kessan:genka",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-choubotanaoroshi",
+   "k3-kimatsushouhintanao"
+  ],
+  "description": "期末に 倉庫や 店の 商品を 実際に 数えて、本当に ある 数を たしかめる ことです。帳簿の 数と くらべて、ずれを 見つけます。"
+ },
+ {
+  "id": "k3-choubotanaoroshi",
+  "name": "帳簿棚卸",
+  "reading": "ちょうぼたなおろし",
+  "journey": "3kessan",
+  "category": "売上原価",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "3kessan:genka",
+  "field": "商品売買",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-jicchitanaoroshi",
+   "k3-kimatsushouhintanao"
+  ],
+  "description": "商品有高帳などの 帳簿の 上で わかる 期末の 商品の 数や 金額です。⚠️ 実地棚卸の 数より 多い とき、なくなった 分の ずれが あります。"
+ },
+ {
+  "id": "k3-kashidaorejissekiri",
+  "name": "貸倒実績率",
+  "reading": "かしだおれじっせきりつ",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorehikiatek4",
+   "k3-sagakuhojuuhou"
+  ],
+  "description": "これまでの 貸倒れの 割合を もとに 決めた 率です。期末の 売掛金などの 残高に この 率を かけて、貸倒引当金の 額を 決めます。"
+ },
+ {
+  "id": "k3-zenkihasseinosaiken",
+  "name": "前期発生の債権",
+  "reading": "ぜんきはっせいのさいけん",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorehikiateki",
+   "k3-toukihasseinosaiken"
+  ],
+  "description": "前の 期以前に 生まれた 売掛金などです。貸倒れに なったら、まず 貸倒引当金を 取りくずし、足りない 分だけ 貸倒損失に します。"
+ },
+ {
+  "id": "k3-toukihasseinosaiken",
+  "name": "当期発生の債権",
+  "reading": "とうきはっせいのさいけん",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🆕",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-zenkihasseinosaiken",
+   "k3-kashidaoresonshitsu"
+  ],
+  "description": "当期に 生まれた 売掛金などです。⚠️ 当期の 債権には まだ 引当金を 設定して いないので、貸倒れに なったら 引当金を 使わず 貸倒損失に します。"
+ },
+ {
+  "id": "k3-kashidaorehikiatek4",
+  "name": "貸倒引当金の設定",
+  "reading": "かしだおれひきあてきんのせってい",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorejissekiri",
+   "k3-sagakuhojuuhou",
+   "k3-kashidaorehikiatek2"
+  ],
+  "description": "期末に 売掛金・電子記録債権などの 残高に 貸倒実績率を かけて 引当金の 額を 決め、差額補充法で 仕訳する ことです。",
+  "formula": "設定額 = 期末の 債権 × 実績率"
+ },
+ {
+  "id": "k3-hyoukakanjou",
+  "name": "評価勘定",
+  "reading": "ひょうかかんじょう",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorehikiateki",
+   "k3-genkashoukyakuruike"
+  ],
+  "description": "資産の 金額を 正しく 見せる ため、その 資産から 差し引く 勘定です。貸倒引当金や 減価償却累計額が そうで、貸方に 残高が あります。"
+ },
+ {
+  "id": "k3-uriagesaiken",
+  "name": "売上債権",
+  "reading": "うりあげさいけん",
+  "journey": "3kessan",
+  "category": "貸倒れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📃",
+  "mapNode": "3kessan:kashidaore",
+  "field": "債権債務",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kashidaorehikiatek4",
+   "k3-kashidaore"
+  ],
+  "description": "商品を 売って まだ もらって いない 代金の 権利の まとまりで、売掛金・クレジット売掛金・電子記録債権などです。貸倒引当金を 設定する もとに なります。"
+ },
+ {
+  "id": "k3-genkashoukyakunotsu",
+  "name": "減価償却の月割",
+  "reading": "げんかしょうきゃくのつきわり",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kichuushutoku",
+   "k3-kichuubaikyaku"
+  ],
+  "description": "1年分の 減価償却費を、その 期に 使った 月数で わりあてる ことです。たとえば 9か月 使ったなら 1年分 × 9/12 です。",
+  "formula": "1年分 × 使った 月数 ÷ 12"
+ },
+ {
+  "id": "k3-kichuushutoku",
+  "name": "期中取得",
+  "reading": "きちゅうしゅとく",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛍️",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkashoukyakunotsu",
+   "k3-teigakuhou"
+  ],
+  "description": "期の 途中で 固定資産を 買う ことです。その 期の 減価償却費は、買った 月から 決算日までの 月数で 月割します。⚠️ 1年分を 計上すると まちがいです。"
+ },
+ {
+  "id": "k3-chokusetsuhou",
+  "name": "直接法",
+  "reading": "ちょくせつほう",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kansetsuhou",
+   "k3-genkashoukyakuhi"
+  ],
+  "description": "減価償却費の 分だけ、固定資産の 勘定を 直接 へらす 記帳の 方法です。⚠️ 3級の 問題は ふつう 間接法で、累計額を 使わない この 方法と まちがえない ように します。"
+ },
+ {
+  "id": "k3-bihingenkashoukyaku",
+  "name": "備品減価償却累計額",
+  "reading": "びひんげんかしょうきゃくるいけいがく",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkashoukyakuruike",
+   "k3-kansetsuhou"
+  ],
+  "description": "備品の 減価償却の 合計を 表す 評価勘定です。間接法で 備品を 償却する とき 貸方に 書きます。減価償却累計額と 書いても 許されます。"
+ },
+ {
+  "id": "k3-tatemonogenkashouky",
+  "name": "建物減価償却累計額",
+  "reading": "たてものげんかしょうきゃくるいけいがく",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkashoukyakuruike",
+   "k3-kansetsuhou"
+  ],
+  "description": "建物の 減価償却の 合計を 表す 評価勘定です。間接法で 建物を 償却する とき 貸方に 書きます。建物 そのものの 勘定は へらしません。"
+ },
+ {
+  "id": "k3-kichuubaikyaku",
+  "name": "期中売却",
+  "reading": "きちゅうばいきゃく",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkashoukyakunotsu",
+   "k3-genkashoukyakuruike"
+  ],
+  "description": "期の 途中で 固定資産を 売る ことです。期首から 売った 月までの 減価償却費を 月割で 計上し、帳簿価額と 売った 値段の 差を 固定資産売却益(損)に します。"
+ },
+ {
+  "id": "k3-hishoukyakushisan",
+  "name": "非償却資産",
+  "reading": "ひしょうきゃくしさん",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkashoukyaku",
+   "k3-tatemonogenkashouky"
+  ],
+  "description": "使っても 価値が へらない ので、減価償却を しない 固定資産です。土地が その 代表です。⚠️ 土地に 減価償却費を 計上しない ように します。"
+ },
+ {
+  "id": "k3-maebarairisoku",
+  "name": "前払利息",
+  "reading": "まえばらいりそく",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maebaraihiyou",
+   "k3-hiyounokurinobe"
+  ],
+  "description": "借入れの ときに 先に はらった 利息の うち、次の 期の 分です。決算で 支払利息を へらし、前払利息(資産)を 借方に 書きます。"
+ },
+ {
+  "id": "k3-mibaraiyachin",
+  "name": "未払家賃",
+  "reading": "みばらいやちん",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏘️",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mibaraihiyou",
+   "k3-hiyounomikoshi"
+  ],
+  "description": "当期に 借りた 分なのに、まだ はらって いない 家賃です。決算で 支払家賃を 借方、未払家賃(負債)を 貸方に 書きます。⚠️ 未払金と 書かない ように。"
+ },
+ {
+  "id": "k3-mishuuyachin",
+  "name": "未収家賃",
+  "reading": "みしゅうやちん",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏡",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mishuushuueki",
+   "k3-shuuekinomikoshi"
+  ],
+  "description": "当期に 貸した 分なのに、まだ 受け取って いない 家賃です。決算で 未収家賃(資産)を 借方、受取家賃を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-maeukerisoku",
+  "name": "前受利息",
+  "reading": "まえうけりそく",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪙",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maeukeshuueki",
+   "k3-shuuekinokurinobe"
+  ],
+  "description": "貸付けの ときに 先に 受け取った 利息の うち、次の 期の 分です。決算で 受取利息を へらし、前受利息(負債)を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-mibaraikyuuryou",
+  "name": "未払給料",
+  "reading": "みばらいきゅうりょう",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👷",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mibaraihiyou",
+   "k3-hiyounomikoshi"
+  ],
+  "description": "当期に 働いて もらったのに、まだ はらって いない 給料です。決算で 給料を 借方、未払給料(負債)を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-maeuketesuuryou",
+  "name": "前受手数料",
+  "reading": "まえうけてすうりょう",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maeukeshuueki",
+   "k3-shuuekinokurinobe"
+  ],
+  "description": "次の 期に 行う サービスの 手数料を 先に 受け取った 分です。決算で 受取手数料を へらし、前受手数料(負債)を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-mishuutesuuryou",
+  "name": "未収手数料",
+  "reading": "みしゅうてすうりょう",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔔",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mishuushuueki",
+   "k3-shuuekinomikoshi"
+  ],
+  "description": "当期に サービスを 行ったのに、まだ 受け取って いない 手数料です。決算で 未収手数料(資産)を 借方、受取手数料を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-mibaraichidai",
+  "name": "未払地代",
+  "reading": "みばらいちだい",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mibaraihiyou",
+   "k3-hiyounomikoshi"
+  ],
+  "description": "当期に 土地を 借りた 分なのに、まだ はらって いない 地代です。決算で 支払地代を 借方、未払地代(負債)を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-maebaraichidai",
+  "name": "前払地代",
+  "reading": "まえばらいちだい",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maebaraihiyou",
+   "k3-hiyounokurinobe"
+  ],
+  "description": "次の 期の 分まで 先に はらった 地代です。決算で 支払地代を へらし、前払地代(資産)を 借方に 書きます。"
+ },
+ {
+  "id": "k3-hiyounokurinobe",
+  "name": "費用の繰延べ",
+  "reading": "ひようのくりのべ",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏭️",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maebaraihiyou",
+   "k3-hiyounomikoshi"
+  ],
+  "description": "はらった 費用の うち 次の 期の 分を、当期の 費用から 除いて 前払費用に する ことです。⚠️「繰延べ」は 先払い、「見越し」は 後払いです。"
+ },
+ {
+  "id": "k3-shuuekinokurinobe",
+  "name": "収益の繰延べ",
+  "reading": "しゅうえきのくりのべ",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-maeukeshuueki",
+   "k3-shuuekinomikoshi"
+  ],
+  "description": "受け取った 収益の うち 次の 期の 分を、当期の 収益から 除いて 前受収益に する ことです。収益を 借方で へらし、負債を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-hiyounomikoshi",
+  "name": "費用の見越し",
+  "reading": "ひようのみこし",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mibaraihiyou",
+   "k3-hiyounokurinobe"
+  ],
+  "description": "当期の 分なのに まだ はらって いない 費用を、当期の 費用に 足して 未払費用に する ことです。費用を 借方、負債を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-shuuekinomikoshi",
+  "name": "収益の見越し",
+  "reading": "しゅうえきのみこし",
+  "journey": "3kessan",
+  "category": "経過勘定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌅",
+  "mapNode": "3kessan:keika",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mishuushuueki",
+   "k3-shuuekinokurinobe"
+  ],
+  "description": "当期の 分なのに まだ 受け取って いない 収益を、当期の 収益に 足して 未収収益に する ことです。資産を 借方、収益を 貸方に 書きます。"
+ },
+ {
+  "id": "k3-genkinnojissaiarida",
+  "name": "現金の実際有高",
+  "reading": "げんきんのじっさいありだか",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👛",
+  "mapNode": "3kessan:kabusoku",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkinkabusoku",
+   "k3-geninfumei"
+  ],
+  "description": "金庫や レジに 実際に ある 現金の 額です。帳簿の 残高と ちがう ときは、帳簿の 方を 実際の 額に 合わせます。"
+ },
+ {
+  "id": "k3-geninfumei",
+  "name": "原因不明",
+  "reading": "げんいんふめい",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "3kessan:kabusoku",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-zasson",
+   "k3-zatsueki",
+   "k3-geninhanmei"
+  ],
+  "description": "現金の ずれの 理由が 決算日まで わからない ことです。現金過不足の 残高を、借方残なら 雑損、貸方残なら 雑益に 振り替えます。"
+ },
+ {
+  "id": "k3-geninhanmei",
+  "name": "原因判明",
+  "reading": "げんいんはんめい",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "3kessan:kabusoku",
+  "field": "現金預金",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-genkinkabusoku",
+   "k3-geninfumei"
+  ],
+  "description": "現金の ずれの 理由が わかる ことです。たとえば 通信費の 記入もれなら、借方 通信費・貸方 現金過不足のように 正しい 勘定へ 振り替えます。"
+ },
+ {
+  "id": "k3-touzakarikoshinofur",
+  "name": "当座借越の振替",
+  "reading": "とうざかりこしのふりかえ",
+  "journey": "3kessan",
+  "category": "決算整理と 精算表",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "3kessan:seiri",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kessanseiri",
+   "k3-kessanseirishiwake"
+  ],
+  "description": "期末に 当座預金の 残高が 貸方(マイナス)に なって いる とき、その 額を 当座借越(負債)へ 振り替える ことです。借方 当座預金・貸方 当座借越です。"
+ },
+ {
+  "id": "k3-shoumouhin",
+  "name": "消耗品",
+  "reading": "しょうもうひん",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📎",
+  "mapNode": "3kessan:chozo",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-chozouhin",
+   "k3-chozouhinhenofurika"
+  ],
+  "description": "文房具など、使うと なくなる 品物です。3級では ふつう 買った ときに 消耗品費(費用)と します。⚠️ 未使用の 切手・印紙と ちがい、決算で 貯蔵品に しない 問題が 多いです。"
+ },
+ {
+  "id": "k3-chozouhinhenofurika",
+  "name": "貯蔵品への振替",
+  "reading": "ちょぞうひんへのふりかえ",
+  "journey": "3kessan",
+  "category": "現金と 貯蔵品",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "3kessan:chozo",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-chozouhin",
+   "k3-yuubinkitte"
+  ],
+  "description": "期末に 使わずに 残った 切手や 収入印紙の 分を、費用(通信費・租税公課)から 貯蔵品(資産)へ 移す 仕訳です。次の 期首には 再振替します。"
+ },
+ {
+  "id": "k3-shouhizeinoseiri",
+  "name": "消費税の整理",
+  "reading": "しょうひぜいのせいり",
+  "journey": "3kessan",
+  "category": "税金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "3kessan:hojin",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mibaraishouhizei",
+   "k3-houjinzeitou"
+  ],
+  "description": "決算で 仮受消費税と 仮払消費税を 相殺し、差額を 未払消費税に する 仕訳です。借方 仮受消費税・貸方 仮払消費税と 未払消費税です。"
+ },
+ {
+  "id": "k3-houjinzeijuuminzeio",
+  "name": "法人税、住民税及び事業税",
+  "reading": "ほうじんぜいじゅうみんぜいおよびじぎょうぜい",
+  "journey": "3kessan",
+  "category": "税金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛️",
+  "mapNode": "3kessan:hojin",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-houjinzeitou",
+   "k3-mibaraihoujinzeitou"
+  ],
+  "description": "法人税等の 正式な 勘定科目の 名前です。費用の 仲間で、決算で 借方に 書きます。「法人税等」と 書いても 許されます。"
+ },
+ {
+  "id": "k3-kakuteishinkoku",
+  "name": "確定申告",
+  "reading": "かくていしんこく",
+  "journey": "3kessan",
+  "category": "税金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📬",
+  "mapNode": "3kessan:hojin",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-mibaraihoujinzeitou",
+   "k3-chuukanshinkoku"
+  ],
+  "description": "決算の あとに 1年分の 法人税などを 確定させて 申告し、残りを 納める ことです。納めた ときは 未払法人税等を 借方に 書いて 消します。"
+ },
+ {
+  "id": "k3-zeibikimaetoukijunr",
+  "name": "税引前当期純利益",
+  "reading": "ぜいびきまえとうきじゅんりえき",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "3kessan:zaimu",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-houjinzeitou",
+   "k3-eigyourieki"
+  ],
+  "description": "法人税等を 引く 前の 当期の 利益です。ここから 法人税、住民税及び事業税を 引くと 当期純利益に なります。"
+ },
+ {
+  "id": "k3-eigyourieki",
+  "name": "営業利益",
+  "reading": "えいぎょうりえき",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏪",
+  "mapNode": "3kessan:zaimu",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-uriagesourieki",
+   "k3-zeibikimaetoukijunr"
+  ],
+  "description": "本業で 得た 利益で、売上総利益から 給料・広告宣伝費・減価償却費 などの 販売費及び一般管理費を 引いて 求めます。",
+  "formula": "売上総利益 − 販売費及び一般管理費"
+ },
+ {
+  "id": "k3-riekinofurikae",
+  "name": "利益の振替",
+  "reading": "りえきのふりかえ",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "3kessan:joyo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-shihonfurikae",
+   "k3-kurikoshiriekijouyo"
+  ],
+  "description": "決算で 損益勘定に 出た 当期純利益を 繰越利益剰余金へ 移す 仕訳です。借方 損益・貸方 繰越利益剰余金です。損失なら 逆に なります。"
+ },
+ {
+  "id": "k3-shihonfurikae",
+  "name": "資本振替",
+  "reading": "しほんふりかえ",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔃",
+  "mapNode": "3kessan:joyo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-riekinofurikae",
+   "k3-sonekikanjou"
+  ],
+  "description": "損益勘定の 差額(当期純利益・当期純損失)を 純資産の 勘定へ 移す 決算振替です。株式会社では 繰越利益剰余金へ 振り替えます。"
+ },
+ {
+  "id": "k3-haitou",
+  "name": "配当",
+  "reading": "はいとう",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍰",
+  "mapNode": "3kessan:joyo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-riekijunbikin",
+   "k3-mibaraihaitoukin",
+   "k3-kabunushisoukai"
+  ],
+  "description": "会社の もうけの 一部を 株主に 分けて わたす ことです。株主総会で 決まると、繰越利益剰余金を へらして 借方に 書きます。"
+ },
+ {
+  "id": "k3-riekijunbikin",
+  "name": "利益準備金",
+  "reading": "りえきじゅんびきん",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "3kessan:joyo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-haitou",
+   "k3-kurikoshiriekijouyo"
+  ],
+  "description": "繰越利益剰余金から 配当する とき、会社法の 決まりで 積み立てる 純資産の 勘定です。積み立てると 貸方に 書きます。"
+ },
+ {
+  "id": "k3-mibaraihaitoukin",
+  "name": "未払配当金",
+  "reading": "みばらいはいとうきん",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "3kessan:joyo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-haitou",
+   "k3-kabunushisoukai"
+  ],
+  "description": "株主総会で 配当が 決まり、まだ 株主に はらって いない 額を 表す 負債です。決まった ときに 貸方、はらった ときに 借方に 書きます。"
+ },
+ {
+  "id": "k3-kabunushisoukai",
+  "name": "株主総会",
+  "reading": "かぶぬしそうかい",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗳️",
+  "mapNode": "3kessan:joyo",
+  "field": "株式会社",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-haitou",
+   "k3-mibaraihaitoukin"
+  ],
+  "description": "株主が 集まって 会社の 大事な ことを 決める 会議です。繰越利益剰余金から 配当を 出す ことも ここで 決めます。"
+ },
+ {
+  "id": "k3-choubonoshimekiri",
+  "name": "帳簿の締切",
+  "reading": "ちょうぼのしめきり",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "3kessan:shime",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-eibeishikikessanhou",
+   "k3-kurikoshikinyuu"
+  ],
+  "description": "決算の 最後に、総勘定元帳の 勘定を 締めて、当期の 記録を 終わらせる ことです。収益・費用は 損益勘定へ、資産・負債・純資産は 次期へ 繰り越します。"
+ },
+ {
+  "id": "k3-eibeishikikessanhou",
+  "name": "英米式決算法",
+  "reading": "えいべいしきけっさんほう",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🇬🇧",
+  "mapNode": "3kessan:shime",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-kurikoshikinyuu",
+   "k3-kurikoshishisanhyou"
+  ],
+  "description": "資産・負債・純資産の 勘定を、仕訳を 作らずに 元帳の 上で「次期繰越」と 書いて 締める 方法です。正しさは 繰越試算表で 確かめます。"
+ },
+ {
+  "id": "k3-kurikoshikinyuu",
+  "name": "繰越記入",
+  "reading": "くりこしきにゅう",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖋️",
+  "mapNode": "3kessan:shime",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-eibeishikikessanhou",
+   "k3-choubonoshimekiri"
+  ],
+  "description": "資産・負債・純資産の 勘定に、残高と 同じ 額を 少ない 側へ「次期繰越」と 書き、借方と 貸方の 合計を そろえる ことです。次の 期首には「前期繰越」と 書きます。"
+ },
+ {
+  "id": "k3-sonekifurikae",
+  "name": "損益振替",
+  "reading": "そんえきふりかえ",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "3kessan:shime",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-sonekikanjou",
+   "k3-kessanfurikae"
+  ],
+  "description": "収益と 費用の 勘定の 残高を 損益勘定へ 移す 仕訳です。収益は 借方 収益・貸方 損益、費用は 借方 損益・貸方 費用と 書きます。"
+ },
+ {
+  "id": "k3-uriagedaka",
+  "name": "売上高",
+  "reading": "うりあげだか",
+  "journey": "3kessan",
+  "category": "締め切りと 剰余金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛍️",
+  "mapNode": "3kessan:zaimu",
+  "field": "決算",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-uriagesourieki",
+   "k3-uriagegenka"
+  ],
+  "description": "損益計算書で「売上」勘定の 金額を 表す 名前です。⚠️ 勘定科目は「売上」、表示は「売上高」です。売上原価は「仕入」の 金額では なく 計算後の 額です。"
+ },
+ {
+  "id": "k3-shoukyakuritsu",
+  "name": "償却率",
+  "reading": "しょうきゃくりつ",
+  "journey": "3kessan",
+  "category": "減価償却",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "3kessan:gensho",
+  "field": "固定資産",
+  "ruleset": "商業簿記",
+  "grade": "3級",
+  "relatedTerms": [
+   "k3-teiritsuhou",
+   "k3-genkashoukyaku"
+  ],
+  "description": "定率法で 帳簿価額に かける 率です。3級では 問題文に 示されます。⚠️ 2年目は 取得原価では なく、1年目の 償却後の 額に かけます。"
+ }
+]

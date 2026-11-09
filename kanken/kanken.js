@@ -462,10 +462,26 @@ const KANKEN = (() => {
      ・合えば その 1画が お手本の きれいな 線に なる。ちがえば 赤く 出て 消える(まちがい 1回)
      ・2回 つづけて まちがえると、つぎの 1画が うすく 見える(💡 ヒントを おしても 見える。まちがい 1回)
      ・⚠️ 書いた 線は どこにも 送らない(ぜんぶ スマホの 中) */
+  /* 書き順の 番号を 置く 場所。書きはじめの 左上が きほん。ほかの 番号と かさなる ときは まわりの あいている ところへ ずらす
+     (厂 の 1・2画め、口 の 1・2画め の ように 書きはじめが 同じ 画は 番号が かさなって 読めなかった) */
+  function labelPos(S){
+    const OFF = [[-4,-4],[4,-4],[-4,4],[4,4],[0,-6],[-6,0],[6,0],[0,6],[-8,-8],[8,-8],[-8,8],[8,8],[0,-10],[-10,0],[10,0],[0,10]], out = [];
+    for(const s of S){
+      const x = s[1][0], y = s[1][1]; let best = null, bd = -1;
+      for(const o of OFF){
+        const c = [Math.max(5, Math.min(104, x + o[0])), Math.max(5, Math.min(104, y + o[1]))];
+        let d = 1e9; for(const q of out) d = Math.min(d, Math.hypot(q[0] - c[0], q[1] - c[1]));
+        if(d >= 8){ best = c; break; }
+        if(d > bd){ bd = d; best = c; }
+      }
+      out.push(best);
+    }
+    return out;
+  }
   const PAD = (() => {
     const U = 109, N = 16;
     let el = null, cv = null, ctx = null, q = null, S = [], k = 0, miss = 0, hint = false, acc = [], done = false, pts = null, red = null;
-    let show = false, showT = 0, showAt = 0, raf = 0;  // 👀 答え(全画を うすく + 書き順の 番号。1画ずつ のびる)
+    let show = false, showT = 0, showAt = 0, raf = 0, LP = [];  // 👀 答え(全画を うすく + 書き順の 番号。1画ずつ のびる)
     const STEP = 450;  // 1画 ぶんの 時間(図鑑の 書き順アニメと 同じ)
     const P = s => { const a = []; for(let i = 0; i < s.length; i += 2) a.push([s[i], s[i + 1]]); return a; };
     const dist = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1]);
@@ -491,8 +507,8 @@ const KANKEN = (() => {
       const sc = su > 3 && st > 3 ? Math.min(1.8, Math.max(.55, st / su)) : 1;
       return a => [ct[0] + (a[0] - cu[0]) * sc, ct[1] + (a[1] - cu[1]) * sc];
     }
-    function judge(raw){
-      const T = P(S[k][1]), u = resample(raw), U2 = u.map(fit());
+    /* お手本 T と 書いた 線 U2 を くらべる。false = ちがう / true = 合格(くせの 合わせには 入れない)/ 2 = 合格(くせの 合わせに 入れる) */
+    function match(T, U2){
       const lt = lenOf(T), lu = lenOf(U2), cT = mid(T), cU = mid(U2);
       const tolPos = (acc.length >= 2 ? 15 : 22) + Math.min(8, lt / 10);
       if(dist(cT, cU) > tolPos) return false;
@@ -517,7 +533,17 @@ const KANKEN = (() => {
       const vt = [T[N - 1][0] - T[0][0], T[N - 1][1] - T[0][1]], vu = [U2[N - 1][0] - U2[0][0], U2[N - 1][1] - U2[0][1]];
       const nt = Math.hypot(...vt), nu = Math.hypot(...vu);
       if(nt > 15 && nu > 4 && (vt[0] * vu[0] + vt[1] * vu[1]) / (nt * nu) < .2) return false;  // 向きが ちがう
-      acc.push({ u, t:T }); return true;
+      return 2;
+    }
+    /* ⭐ くせを 合わせた 線で ちがっても、書いた そのままの 線で もう一度 くらべる(けいくん 2026-11-10「願」の 3画めが「反応しない」)。
+       はじめの 2画を お手本と ちがう 大きさ・場所に 書くと、3画めから「くせの 合わせ」が かかる。そのあと 💡 ヒント・👀 答えの
+       うすい 線を なぞると、なぞった 線が くせの ぶん ずらされて 何回 書いても × に なっていた(とくに 3画め)。⚠️ この 2回めを 消さない */
+    function judge(raw){
+      const T = P(S[k][1]), u = resample(raw);
+      let r = match(T, u.map(fit()));
+      if(!r && acc.length >= 2) r = match(T, u);
+      if(r === 2) acc.push({ u, t:T });
+      return !!r;
     }
     function draw(){
       if(!ctx) return;
@@ -532,8 +558,6 @@ const KANKEN = (() => {
           ctx.strokeStyle = "rgba(201,42,42,.28)"; ctx.lineWidth = 5;
           if(f < 1){ ctx.setLineDash([L * f, L + 10]); }
           ctx.stroke(new Path2D(S[i][0])); ctx.setLineDash([]);
-          ctx.fillStyle = "#c92a2a"; ctx.font = "800 7px sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
-          ctx.fillText(String(i + 1), p[0] - 4, p[1] - 4);
         }
       }
       if(hint && k < S.length){
@@ -545,6 +569,16 @@ const KANKEN = (() => {
       for(const [line, color] of [[pts, "#1e1b4b"], [red, "#e03131"]]) if(line && line.length){
         ctx.strokeStyle = color; ctx.lineWidth = 4.4; ctx.beginPath(); ctx.moveTo(line[0][0], line[0][1]);
         for(const a of line.slice(1)) ctx.lineTo(a[0], a[1]); if(line.length === 1) ctx.lineTo(line[0][0] + .1, line[0][1]); ctx.stroke();
+      }
+      /* 書き順の 番号は いちばん 上に かく(書いた 線の 下に かくれない)。もう 書いた 画の 番号は 出さない。つぎの 1画の 番号は 大きく こく */
+      if(show){
+        ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.lineJoin = "round";
+        for(let i = k; i < S.length; i++){
+          if(showT - i <= 0) break;
+          const nx = i === k; ctx.font = "800 " + (nx ? 9 : 7) + "px sans-serif";
+          ctx.strokeStyle = "#fffdf7"; ctx.lineWidth = 2.4; ctx.strokeText(String(i + 1), LP[i][0], LP[i][1]);
+          ctx.fillStyle = nx ? "#a50e0e" : "#c92a2a"; ctx.fillText(String(i + 1), LP[i][0], LP[i][1]);
+        }
       }
       const c = el && el.querySelector(".kk-cnt"); if(c) c.textContent = k + " / " + S.length + "画";
     }
@@ -589,7 +623,7 @@ const KANKEN = (() => {
         needStrokes([qq.kj]).then(() => { delete box.dataset.wait; mount(qq); });
         return;
       }
-      box.dataset.on = "1"; el = box; q = qq; S = SK[qq.kj] || []; k = 0; miss = 0; hint = false; acc = []; done = false; pts = null; red = null;
+      box.dataset.on = "1"; el = box; q = qq; S = SK[qq.kj] || []; LP = labelPos(S); k = 0; miss = 0; hint = false; acc = []; done = false; pts = null; red = null;
       cancelAnimationFrame(raf); show = false; showT = 0;
       cv = box.querySelector("canvas"); ctx = cv.getContext("2d");
       const card = document.getElementById("card"), w = (card ? card.clientWidth : 300) - 34;
@@ -613,10 +647,10 @@ const KANKEN = (() => {
   if(typeof ans === "object" && ans) ans.addEventListener("focus", () => { if(document.body.classList.contains("kk-writing")) ans.blur(); });
   /* 図鑑・結果の 書き順(1画ずつ 線が のびる。おすと もう一度) */
   function orderSvg(ch){
-    const S = SK[ch] || [];
+    const S = SK[ch] || [], L = labelPos(S);
     return '<svg class="kk-order" viewBox="0 0 109 109" role="img" aria-label="' + esc(ch) + 'の 書き順"><path d="M54.5 4V105M4 54.5H105" class="kk-og"/>' +
       S.map((s, i) => '<path d="' + s[0] + '" pathLength="1" class="kk-o" style="animation-delay:' + (i * .45).toFixed(2) + 's"/>').join("") +
-      S.map((s, i) => '<text x="' + (s[1][0] - 3).toFixed(1) + '" y="' + (s[1][1] - 2).toFixed(1) + '" class="kk-on" style="animation-delay:' + (i * .45).toFixed(2) + 's">' + (i + 1) + '</text>').join("") + '</svg>';
+      S.map((s, i) => '<text x="' + (L[i][0] - 2).toFixed(1) + '" y="' + (L[i][1] + 2.5).toFixed(1) + '" class="kk-on" style="animation-delay:' + (i * .45).toFixed(2) + 's">' + (i + 1) + '</text>').join("") + '</svg>';
   }
   document.addEventListener("click", e => { const sv = e.target.closest && e.target.closest(".kk-order"); if(sv){ const c = sv.cloneNode(true); sv.replaceWith(c); } });
 

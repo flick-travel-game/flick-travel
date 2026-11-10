@@ -1,0 +1,1808 @@
+[
+ {
+  "id": "sb-kanki",
+  "name": "換気",
+  "reading": "かんき",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "shokuba:kanki",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-mado",
+   "sb-hitsuyokanki"
+  ],
+  "description": "窓や 換気設備で 部屋の 空気を 入れかえる ことです。人が 吐く 二酸化炭素や においが たまらない ように、衛生管理者は 職場の 換気を 見て まわります。"
+ },
+ {
+  "id": "sb-shomei",
+  "name": "照明",
+  "reading": "しょうめい",
+  "journey": "shokuba",
+  "category": "明るさ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "shokuba:shomei",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-shodo",
+   "sb-glare"
+  ],
+  "description": "作業に 合った 明るさを 照明の 器具で つくる ことです。暗すぎても まぶしすぎても 目が 疲れるので、明暗の 差が 大きく ならない ように します。"
+ },
+ {
+  "id": "sb-danbo",
+  "name": "暖房",
+  "reading": "だんぼう",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "shokuba:onshitsu",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-jyudo",
+   "sb-shitsuon"
+  ],
+  "description": "寒い ときに 部屋を あたためる ことです。事務所では 気温が 低く なりすぎたら、暖房などで 温度を 調節する 決まりが あります。"
+ },
+ {
+  "id": "sb-reibo",
+  "name": "冷房",
+  "reading": "れいぼう",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "❄️",
+  "mapNode": "shokuba:onshitsu",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-ondosa",
+   "sb-shitsuon"
+  ],
+  "description": "暑い ときに 部屋を 冷やす ことです。外との 温度差が 大きすぎると 体に 負担が かかるので、冷やしすぎに 気を つけます。"
+ },
+ {
+  "id": "sb-seiriseiton",
+  "name": "整理整頓",
+  "reading": "せいりせいとん",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "shokuba:seiri",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-seiso",
+   "sb-eiseikyoiku"
+  ],
+  "description": "いらない ものを 片づけ、使う ものを 決まった 場所に 置く ことです。つまずきを 防ぎ、働きやすい 職場を つくります。雇入れ時の 教育の 項目にも あります。"
+ },
+ {
+  "id": "sb-seiso",
+  "name": "清掃",
+  "reading": "せいそう",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧽",
+  "mapNode": "shokuba:seiri",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-osoji",
+   "sb-seiriseiton"
+  ],
+  "description": "職場を そうじして 清潔に 保つ ことです。毎日の 日常清掃に くわえて、決まった 間隔で 大掃除も 行います。"
+ },
+ {
+  "id": "sb-yotsu",
+  "name": "腰痛",
+  "reading": "ようつう",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "shokuba:yotsu",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yotsushishin",
+   "sb-juryotoriatsukai"
+  ],
+  "description": "腰の 痛みです。重い ものを 持つ・中腰を 続ける・長く 座る などで 起こりやすく、作業の しかたや 道具を 見直して 防ぎます。"
+ },
+ {
+  "id": "sb-stretch",
+  "name": "ストレッチ",
+  "reading": "すとれっち",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤸",
+  "mapNode": "shokuba:yotsu",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yotsu",
+   "sb-undoshukan"
+  ],
+  "description": "筋肉を ゆっくり のばして 体を ほぐす 運動です。同じ 姿勢を 続けた あとに 行うと、肩や 腰の こりを やわらげる 助けに なります。"
+ },
+ {
+  "id": "sb-kitsuen",
+  "name": "喫煙",
+  "reading": "きつえん",
+  "journey": "shokuba",
+  "category": "受動喫煙",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚬",
+  "mapNode": "shokuba:kitsuen",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-judokitsuen",
+   "sb-senyoshitsu"
+  ],
+  "description": "たばこを 吸う ことです。職場では 吸わない 人が けむりを 吸わされない ように、吸う 場所を 分けるなどの 対策を とります。"
+ },
+ {
+  "id": "sb-judokitsuen",
+  "name": "受動喫煙",
+  "reading": "じゅどうきつえん",
+  "journey": "shokuba",
+  "category": "受動喫煙",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚭",
+  "mapNode": "shokuba:kitsuen",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kenkozoshinho",
+   "sb-judodoryoku"
+  ],
+  "description": "他人の たばこから 出た けむりに さらされる ことです。健康増進法で 決められた ことばで、職場では 事業者が 防ぐ 対策を とります。"
+ },
+ {
+  "id": "sb-mental",
+  "name": "メンタルヘルス",
+  "reading": "めんたるへるす",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💚",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yottsunokea",
+   "sb-mentalshishin"
+  ],
+  "description": "心の 健康の ことです。仕事の なやみや ストレスを ひとりで かかえこまない ように、職場ぐるみで 気づき、相談できる しくみを つくります。"
+ },
+ {
+  "id": "sb-kyuyoshitsu",
+  "name": "休養室",
+  "reading": "きゅうようしつ",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛏️",
+  "mapNode": "shokuba:seiri",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-danjobetsu",
+   "sb-kyukeisetsubi"
+  ],
+  "description": "気分が 悪く なった 人が 横に なって 休める 部屋です。働く 人が 多い 職場では、男性用と 女性用に 分けて 設けます。"
+ },
+ {
+  "id": "sb-benjo",
+  "name": "便所",
+  "reading": "べんじょ",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚻",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-benbo",
+   "sb-koshitsu"
+  ],
+  "description": "トイレの ことです。事務所の 便所は 男性用と 女性用に 分け、手洗いの 設備も 設けるのが 決まりです。"
+ },
+ {
+  "id": "sb-pasokon",
+  "name": "パソコン作業",
+  "reading": "ぱそこんさぎょう",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "shokuba:vdt",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-johokiki",
+   "sb-gansei"
+  ],
+  "description": "パソコンを 使う 仕事です。画面を 見続けると 目や 肩が 疲れるので、ときどき 休みを とり、いすや 画面の 位置を 体に 合わせます。"
+ },
+ {
+  "id": "sb-undoshukan",
+  "name": "運動習慣",
+  "reading": "うんどうしゅうかん",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "shokuba:thp",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-thp",
+   "sb-stretch"
+  ],
+  "description": "ふだんから 体を 動かす 習慣です。生活習慣病の 予防に 役立ち、職場の 健康づくり(THP)でも 運動指導として 取り入れられて います。"
+ },
+ {
+  "id": "sb-jimushosoku",
+  "name": "事務所衛生基準規則",
+  "reading": "じむしょえいせいきじゅんきそく",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kiseki",
+   "sb-shodo",
+   "sb-benjo"
+  ],
+  "description": "事務所の 空気・温度・明るさ・便所 などの 決まりで、事務所則とも いいます。事務所には 安衛則の 衛生基準(第3編)では なく、この 規則が 使われます。"
+ },
+ {
+  "id": "sb-kiseki",
+  "name": "気積",
+  "reading": "きせき",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-jimushosoku",
+   "sb-kanki"
+  ],
+  "description": "部屋の 空気の 量(容積)です。設備の 容積と 床から 4mを こえる 部分を 除いて、労働者 1人 あたり 10立方メートル以上に します。"
+ },
+ {
+  "id": "sb-hitsuyokanki",
+  "name": "必要換気量",
+  "reading": "ひつようかんきりょう",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "shokuba:kanki",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-keisan",
+   "sb-co2nodo"
+  ],
+  "description": "部屋の 空気を きれいに 保つ ために 必要な 換気の 量です。ふつうは 人が 吐く 二酸化炭素を めやすに し、1人 1時間 あたりの 立方メートルで 表します。"
+ },
+ {
+  "id": "sb-co2nodo",
+  "name": "二酸化炭素濃度",
+  "reading": "にさんかたんそのうど",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "shokuba:kanki",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kucho",
+   "sb-hitsuyokanki"
+  ],
+  "description": "空気の よごれ具合の めやすです。空気調和設備で 送る 空気は 1,000ppm以下、部屋の 空気は 5,000ppm以下と 事務所則で 決まって います。"
+ },
+ {
+  "id": "sb-shodo",
+  "name": "照度",
+  "reading": "しょうど",
+  "journey": "shokuba",
+  "category": "明るさ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔆",
+  "mapNode": "shokuba:shomei",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-lux",
+   "sb-ippanjimu"
+  ],
+  "description": "作業面の 明るさの 度合いで、単位は ルクスです。事務所則では 作業の 種類ごとに、照度の 下限が 決まって います。"
+ },
+ {
+  "id": "sb-lux",
+  "name": "ルクス",
+  "reading": "るくす",
+  "journey": "shokuba",
+  "category": "明るさ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "shokuba:shomei",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-shodo",
+   "sb-fuzuijimu"
+  ],
+  "description": "照度の 単位です。数字が 大きいほど 明るい ことを 表します。事務所の 一般的な 事務作業では 300ルクス以上が 必要です。"
+ },
+ {
+  "id": "sb-saiko",
+  "name": "採光",
+  "reading": "さいこう",
+  "journey": "shokuba",
+  "category": "明るさ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "shokuba:shomei",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-shomei",
+   "sb-glare"
+  ],
+  "description": "窓から 自然の 光を 取り入れる ことです。照明と 同じく、明暗の 差が 大きすぎず、まぶしさを 生じない ように する 決まりが あります。"
+ },
+ {
+  "id": "sb-glare",
+  "name": "グレア",
+  "reading": "ぐれあ",
+  "journey": "shokuba",
+  "category": "明るさ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "😎",
+  "mapNode": "shokuba:shomei",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-saiko",
+   "sb-johokiki"
+  ],
+  "description": "目に 入る まぶしさの ことで、画面への 照明の 映りこみも ふくみます。情報機器作業では、グレアを 防ぐ 照明や 画面の 向きを 工夫します。"
+ },
+ {
+  "id": "sb-shitsuon",
+  "name": "室温",
+  "reading": "しつおん",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "shokuba:onshitsu",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-sotaishitsudo",
+   "sb-kucho"
+  ],
+  "description": "部屋の 温度です。空気調和設備を 使う 部屋では、気温を 18℃以上 28℃以下に なるよう 努めます(努力義務)。"
+ },
+ {
+  "id": "sb-sotaishitsudo",
+  "name": "相対湿度",
+  "reading": "そうたいしつど",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "shokuba:onshitsu",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-shitsuon",
+   "sb-kiryu"
+  ],
+  "description": "空気の しめり具合を %で 表した ものです。空気調和設備を 使う 部屋では、40%以上 70%以下に なるよう 努めます。"
+ },
+ {
+  "id": "sb-kiryu",
+  "name": "気流",
+  "reading": "きりゅう",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍃",
+  "mapNode": "shokuba:onshitsu",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kucho",
+   "sb-sotaishitsudo"
+  ],
+  "description": "部屋の 中の 空気の 流れです。空気調和設備などが ある 部屋の 気流は 毎秒 0.5m以下に し、流れこむ 空気が 特定の 人に 当たり続けない ように します。"
+ },
+ {
+  "id": "sb-johokiki",
+  "name": "情報機器作業",
+  "reading": "じょうほうききさぎょう",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "shokuba:vdt",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-vdtguide",
+   "sb-kyushi"
+  ],
+  "description": "パソコンや タブレットなどで、入力したり 画面を 見たり する 作業です。前は VDT作業と よばれました。いまは 国の ガイドラインで 健康管理の しかたが 示されて います。"
+ },
+ {
+  "id": "sb-gansei",
+  "name": "眼精疲労",
+  "reading": "がんせいひろう",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "shokuba:vdt",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-johokiki",
+   "sb-kyushi"
+  ],
+  "description": "目の 疲れ・かすみ・痛みが 休んでも 残る 状態です。画面を 長く 見る 作業で 起こりやすく、作業の 合間の 休止や 明るさの 調整で 防ぎます。"
+ },
+ {
+  "id": "sb-yotsushishin",
+  "name": "職場における腰痛予防対策指針",
+  "reading": "しょくばにおけるようつうよぼうたいさくししん",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "shokuba:yotsu",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yotsu",
+   "sb-juryotoriatsukai",
+   "sb-yotsukenshin"
+  ],
+  "description": "厚生労働省が 示した、腰痛を 防ぐ ための 指針です。重量物の 取扱いや 介護などの 作業ごとの 対策と、作業管理・作業環境管理・健康管理・教育の しかたが 書かれて います。"
+ },
+ {
+  "id": "sb-juryotoriatsukai",
+  "name": "重量物の取扱い",
+  "reading": "じゅうりょうぶつのとりあつかい",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏋️",
+  "mapNode": "shokuba:yotsu",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yotsushishin",
+   "sb-belt"
+  ],
+  "description": "重い ものを 持ち運ぶ 作業です。腰痛予防対策指針では、満18歳以上の 男性が 人力だけで 扱う 重さは、体重の おおむね 40%以下が めやすです。"
+ },
+ {
+  "id": "sb-yottsunokea",
+  "name": "4つのケア",
+  "reading": "よっつのけあ",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-selfcare",
+   "sb-linecare",
+   "sb-staffcare"
+  ],
+  "description": "メンタルヘルス指針の 4つの ケアです。セルフケア・ラインによるケア・事業場内産業保健スタッフ等によるケア・事業場外資源によるケアを 組み合わせて 進めます。"
+ },
+ {
+  "id": "sb-selfcare",
+  "name": "セルフケア",
+  "reading": "せるふけあ",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧘",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yottsunokea",
+   "sb-linecare"
+  ],
+  "description": "働く 人 自身が ストレスに 気づき、自分で 対処する ことです。事業者は その ための 教育や 情報を 用意します。"
+ },
+ {
+  "id": "sb-linecare",
+  "name": "ラインによるケア",
+  "reading": "らいんによるけあ",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yottsunokea",
+   "sb-selfcare"
+  ],
+  "description": "毎日 部下と 接する 管理監督者が、職場の 環境を 直したり、部下の いつもと ちがう ようすに 気づいて 相談に のったり する ケアです。"
+ },
+ {
+  "id": "sb-thp",
+  "name": "THP",
+  "reading": "てぃーえいちぴー",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "shokuba:thp",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-thpshishin",
+   "sb-undoshukan"
+  ],
+  "description": "トータル・ヘルスプロモーション・プランの 略で、働く 人の 心と 体の 健康づくりです。運動指導・メンタルヘルスケア・栄養指導・口腔保健指導・保健指導などを 行います。"
+ },
+ {
+  "id": "sb-kenkosokutei",
+  "name": "健康測定",
+  "reading": "けんこうそくてい",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "shokuba:thp",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-thp",
+   "sb-thpshishin"
+  ],
+  "description": "健康指導の 前に 行う 調査や 測定です。健康診断を 生かしつつ、生活状況の 調査などを 足します。THP指針では 産業医等が 中心と なって 行います。"
+ },
+ {
+  "id": "sb-senyoshitsu",
+  "name": "喫煙専用室",
+  "reading": "きつえんせんようしつ",
+  "journey": "shokuba",
+  "category": "受動喫煙",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "shokuba:kitsuen",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-hatachi",
+   "sb-dai2shisetsu"
+  ],
+  "description": "屋内で たばこを 吸う ことだけに 使う 部屋です。出入口で 外から 中へ 流れこむ 気流を 毎秒 0.2m以上に し、壁で 区切り、けむりを 屋外へ 出す 基準が あります。"
+ },
+ {
+  "id": "sb-kenkozoshinho",
+  "name": "健康増進法",
+  "reading": "けんこうぞうしんほう",
+  "journey": "shokuba",
+  "category": "受動喫煙",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📕",
+  "mapNode": "shokuba:kitsuen",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-judokitsuen",
+   "sb-dai1shisetsu",
+   "sb-dai2shisetsu"
+  ],
+  "description": "国民の 健康づくりの 法律です。改正で 受動喫煙の 対策が 強まり、2020年4月に 全面施行されました。施設の 種類ごとに 喫煙の 決まりが あります。"
+ },
+ {
+  "id": "sb-yushokenritsu",
+  "name": "有所見率",
+  "reading": "ゆうしょけんりつ",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-seitai",
+   "sb-yubyoritsu"
+  ],
+  "description": "健康診断を 受けた 人の うち、何かの 所見が あった 人の 割合です。ある 時点の ようすを 表す 静態データの 1つです。"
+ },
+ {
+  "id": "sb-shippeikyugyonissu",
+  "name": "疾病休業日数率",
+  "reading": "しっぺいきゅうぎょうにっすうりつ",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-senninritsu",
+   "sb-byokyu"
+  ],
+  "description": "病気で 仕事を 休んだ 日数の 多さを 割合で 表す 指標です。職場の 健康の ようすを、ほかの 年や 事業場と くらべる ときに 使います。"
+ },
+ {
+  "id": "sb-eiseikyoiku",
+  "name": "労働衛生教育",
+  "reading": "ろうどうえいせいきょういく",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "shokuba:kyoiku",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-noryoku",
+   "sb-kanritaisei"
+  ],
+  "description": "働く 人に、健康を 守る ための 知識や 作業の しかたを 教える ことです。雇入れ時の 教育などで 行い、作業環境管理・作業管理・健康管理を 支えます。"
+ },
+ {
+  "id": "sb-osoji",
+  "name": "大掃除",
+  "reading": "おおそうじ",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪣",
+  "mapNode": "shokuba:seiri",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-seiso",
+   "sb-nezumi"
+  ],
+  "description": "日常の 清掃の ほかに、職場 全体を まとめて そうじする ことです。事務所則では 6か月以内ごとに 1回、統一的に 行います。"
+ },
+ {
+  "id": "sb-nezumi",
+  "name": "ねずみ等の防除",
+  "reading": "ねずみとうのぼうじょ",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐭",
+  "mapNode": "shokuba:seiri",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-osoji",
+   "sb-seiso"
+  ],
+  "description": "ねずみや 虫が 出たり すみついたり するのを 防ぐ ことです。6か月以内ごとに 1回、発生の 場所や 入り道などを 調べ、結果に もとづいて 防ぐ 手を 打ちます。"
+ },
+ {
+  "id": "sb-inryosui",
+  "name": "飲料水",
+  "reading": "いんりょうすい",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚰",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-zanryuenso",
+   "sb-senmen"
+  ],
+  "description": "飲む ための 水です。事業者は 十分に 用意し、水道以外の 給水設備では 水質の 基準に 合っているか 確かめます。"
+ },
+ {
+  "id": "sb-senmen",
+  "name": "洗面設備",
+  "reading": "せんめんせつび",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧼",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-inryosui",
+   "sb-benjo"
+  ],
+  "description": "手や 顔を 洗う 設備です。事務所に 設ける 決まりが あります。服が よごれたり ぬれたり する 人の ためには、更衣や 服を かわかす 設備も 用意します。"
+ },
+ {
+  "id": "sb-shokudo",
+  "name": "食堂",
+  "reading": "しょくどう",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍽️",
+  "mapNode": "shokuba:seiri",
+  "field": "安衛則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-eiyoshi",
+   "sb-kyuyoshitsu"
+  ],
+  "description": "事業場の 食堂の 床面積は、食事の とき 1人 1平方メートル以上に します。食堂と 炊事場は 分け、炊事を する 人 専用の 休憩室と 便所も 設けます。"
+ },
+ {
+  "id": "sb-benbo",
+  "name": "便房の数",
+  "reading": "べんぼうのかず",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚽",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-shobenjo",
+   "sb-koshitsu"
+  ],
+  "description": "男性用 大便所の 便房は、同時に 働く 男性 60人以内ごとに 1個以上、女性用は 女性 20人以内ごとに 1個以上です。男女で 数が ちがうので 注意します。"
+ },
+ {
+  "id": "sb-shobenjo",
+  "name": "小便所の数",
+  "reading": "しょうべんじょのかず",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚹",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-benbo",
+   "sb-benjo"
+  ],
+  "description": "男性用 小便所は、同時に 働く 男性 30人以内ごとに 1か所以上 設けます。大便所の「60人」と 取りちがえやすい 数字です。"
+ },
+ {
+  "id": "sb-koshitsu",
+  "name": "独立個室型の便所",
+  "reading": "どくりつこしつがたのべんじょ",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-benbo",
+   "sb-benjo"
+  ],
+  "description": "1つずつ 区切られた 個室の 便所です。同時に 働く 人が 常時 10人以内なら、男女別で ない この 便所 1個で よい 特例が あります。"
+ },
+ {
+  "id": "sb-nensho",
+  "name": "燃焼器具の点検",
+  "reading": "ねんしょうきぐのてんけん",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-coshitsunai",
+   "sb-kanki"
+  ],
+  "description": "ストーブなど 火を 使う 器具の 点検です。排気筒や 換気扇を 設け、使う ときは 毎日 異常が ないか 点検します。「毎月」では ありません。"
+ },
+ {
+  "id": "sb-kyukyuyogu",
+  "name": "救急用具",
+  "reading": "きゅうきゅうようぐ",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "shokuba:jimusho",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kyuyoshitsu",
+   "sb-seiso"
+  ],
+  "description": "けがの 手当てに 使う 用具と 材料です。備える 場所と 使いかたを 働く 人に 知らせ、清潔に 保ちます。前は 品目が 並べて ありましたが、2021年の 改正で なくなりました。"
+ },
+ {
+  "id": "sb-mado",
+  "name": "窓の面積",
+  "reading": "まどのめんせき",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪟",
+  "mapNode": "shokuba:kanki",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kanki",
+   "sb-kiseki"
+  ],
+  "description": "外に 向かって 開けられる 窓などの 面積は、床面積の 20分の1以上に します。換気設備が あれば、この 決まりは いりません。"
+ },
+ {
+  "id": "sb-coshitsunai",
+  "name": "室内の一酸化炭素濃度",
+  "reading": "しつないのいっさんかたんそのうど",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "shokuba:kanki",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kucho",
+   "sb-nensho"
+  ],
+  "description": "事務所の 部屋の 空気の 一酸化炭素は 50ppm以下に します。空気調和設備で 送る 空気の「10ppm以下」と 数字が ちがうので 注意します。"
+ },
+ {
+  "id": "sb-kucho",
+  "name": "空気調和設備",
+  "reading": "くうきちょうわせつび",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "shokuba:kanki",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-chuokanri",
+   "sb-fuyufunjin",
+   "sb-co2nodo"
+  ],
+  "description": "空気を きれいにし、温度や 湿度を 整えて 送る 設備です。送る 空気の 一酸化炭素は 10ppm以下(外の 空気が よごれて むずかしい ときは 20ppm以下)です。"
+ },
+ {
+  "id": "sb-fuyufunjin",
+  "name": "浮遊粉じん",
+  "reading": "ふゆうふんじん",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "shokuba:kanki",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kucho",
+   "sb-formaldehyde"
+  ],
+  "description": "空気中に ただよう 細かい ちりです。空気調和設備などで 部屋に 送る 空気では、1立方メートル あたり 0.15mg以下に します。"
+ },
+ {
+  "id": "sb-formaldehyde",
+  "name": "ホルムアルデヒド",
+  "reading": "ほるむあるでひど",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "shokuba:kanki",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-fuyufunjin",
+   "sb-kucho"
+  ],
+  "description": "建材などから 出る 化学物質です。送る 空気では 1立方メートル あたり 0.1mg以下に します。建築や 大きな 修繕の あとは、使い始めて 最初に 来る 6月から 9月の 間に 1回 測ります。"
+ },
+ {
+  "id": "sb-chuokanri",
+  "name": "中央管理方式の空気調和設備",
+  "reading": "ちゅうおうかんりほうしきのくうきちょうわせつび",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏙️",
+  "mapNode": "shokuba:kanki",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kucho",
+   "sb-sokuteiichi"
+  ],
+  "description": "建物の 空気を 1か所で まとめて 調整する 空調です。その 事務室は 2か月以内ごとに 1回、一酸化炭素・二酸化炭素・温度・湿度を 測り、記録を 3年 保存します。"
+ },
+ {
+  "id": "sb-keisan",
+  "name": "必要換気量の計算",
+  "reading": "ひつようかんきりょうのけいさん",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "shokuba:kanki",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-hitsuyokanki",
+   "sb-co2nodo"
+  ],
+  "description": "必要換気量は、人が 吐き出す 二酸化炭素の 量を、室内の 基準の 濃度と 外の 空気の 濃度の「差」で 割って 求めます。外の 濃度を 引くのを 忘れない ように します。"
+ },
+ {
+  "id": "sb-ippanjimu",
+  "name": "一般的な事務作業",
+  "reading": "いっぱんてきなじむさぎょう",
+  "journey": "shokuba",
+  "category": "明るさ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "shokuba:shomei",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-fuzuijimu",
+   "sb-shodo"
+  ],
+  "description": "書類を 読み書きする などの ふつうの 事務作業です。事務所則では 300ルクス以上の 明るさが 必要です。2022年12月から この 2つの 区分に なりました。"
+ },
+ {
+  "id": "sb-fuzuijimu",
+  "name": "付随的な事務作業",
+  "reading": "ふずいてきなじむさぎょう",
+  "journey": "shokuba",
+  "category": "明るさ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "shokuba:shomei",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-ippanjimu",
+   "sb-aneishodo"
+  ],
+  "description": "資料の 袋づめなど、細かく 読みこまない 大まかな 事務作業で、前の「粗な 作業」に あたります。事務所則では 150ルクス以上です。安衛則の「粗な 作業」の 70ルクスと 取りちがえない ように します。"
+ },
+ {
+  "id": "sb-shomeitenken",
+  "name": "照明設備の点検",
+  "reading": "しょうめいせつびのてんけん",
+  "journey": "shokuba",
+  "category": "明るさ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shokuba:shomei",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-shomei",
+   "sb-osoji"
+  ],
+  "description": "照明の 器具が 正しく 明るさを 出して いるか 確かめる ことです。6か月以内ごとに 1回 点検します。大掃除と 同じ 間隔です。"
+ },
+ {
+  "id": "sb-aneishodo",
+  "name": "安衛則の照度",
+  "reading": "あんえいそくのしょうど",
+  "journey": "shokuba",
+  "category": "明るさ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "shokuba:shomei",
+  "field": "安衛則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-fuzuijimu",
+   "sb-ippanjimu"
+  ],
+  "description": "工場などの 屋内作業場の 照度で、精密な 作業 300・普通の 作業 150・粗な 作業 70ルクス以上です。事務所則は 2区分に 変わりましたが、安衛則は 3区分の ままです。"
+ },
+ {
+  "id": "sb-jyudo",
+  "name": "気温10℃以下の暖房",
+  "reading": "きおんじゅうどいかのだんぼう",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥶",
+  "mapNode": "shokuba:onshitsu",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-danbo",
+   "sb-ondosa"
+  ],
+  "description": "事務所の 室温が 10℃以下に なる ときは、暖房などで 温度を 調節します。「18℃」は 空気調和設備の 努力の めやすで、別の 決まりです。"
+ },
+ {
+  "id": "sb-ondosa",
+  "name": "冷房の温度差",
+  "reading": "れいぼうのおんどさ",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "shokuba:onshitsu",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-reibo",
+   "sb-jyudo"
+  ],
+  "description": "冷房で 部屋を 外の 気温より 著しく 低く しては いけません。ただし 電子計算機の 部屋などで、保温の ための 服を 着させる ときは 例外です。"
+ },
+ {
+  "id": "sb-sokuteiichi",
+  "name": "室内の測定位置",
+  "reading": "しつないのそくていいち",
+  "journey": "shokuba",
+  "category": "空気と温度",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "shokuba:onshitsu",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-chuokanri",
+   "sb-shitsuon"
+  ],
+  "description": "事務室の 空気を 測る ときは、部屋の 中央部の、床から 75cm以上 120cm以下の 高さで 測ります。"
+ },
+ {
+  "id": "sb-vdtguide",
+  "name": "情報機器作業ガイドライン",
+  "reading": "じょうほうききさぎょうがいどらいん",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📗",
+  "mapNode": "shokuba:vdt",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-johokiki",
+   "sb-kyushi",
+   "sb-vdtkenshin"
+  ],
+  "description": "2019年に 国が 示した、情報機器作業の 健康管理の ガイドラインです。前の VDTガイドラインに かわる ものです。書類や キーボードの 上は 300ルクス以上に します。"
+ },
+ {
+  "id": "sb-kyushi",
+  "name": "作業休止時間",
+  "reading": "さぎょうきゅうしじかん",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏸️",
+  "mapNode": "shokuba:vdt",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-vdtguide",
+   "sb-gansei"
+  ],
+  "description": "情報機器作業では、1回の 連続作業が 1時間を こえない ように し、次の 作業までに 10〜15分の 休止を とります。連続作業の 中でも 1〜2回 小休止を 入れます。"
+ },
+ {
+  "id": "sb-vdtkenshin",
+  "name": "情報機器作業の健康診断",
+  "reading": "じょうほうききさぎょうのけんこうしんだん",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "shokuba:vdt",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-vdtguide",
+   "sb-shisei"
+  ],
+  "description": "情報機器作業を する 人に、配置の 前と 1年以内ごとに 1回 行う 健康診断です。目の 疲れや 肩・腕の 症状、視力などを 調べます。一般の 定期健康診断と いっしょに 行えます。"
+ },
+ {
+  "id": "sb-shisei",
+  "name": "作業姿勢",
+  "reading": "さぎょうしせい",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "shokuba:vdt",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-vdtguide",
+   "sb-yotsu"
+  ],
+  "description": "体に 負担の 少ない 姿勢です。画面とは おおむね 40cm以上 はなれ、画面の 上の はしが 目の 高さと 同じか 少し 下に なる ように します。"
+ },
+ {
+  "id": "sb-yotsukenshin",
+  "name": "腰痛健康診断",
+  "reading": "ようつうけんこうしんだん",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩻",
+  "mapNode": "shokuba:yotsu",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yotsushishin",
+   "sb-juryotoriatsukai"
+  ],
+  "description": "重量物を 扱うなど 腰に 負担の かかる 作業に いつも つく 人に、配置の ときと その後 6月以内ごとに 1回 行う 医師の 健康診断です。指針に もとづく ものです。"
+ },
+ {
+  "id": "sb-kaigo",
+  "name": "介護・看護作業",
+  "reading": "かいごかんごさぎょう",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍🦽",
+  "mapNode": "shokuba:yotsu",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yotsushishin",
+   "sb-belt"
+  ],
+  "description": "人を 抱えたり 支えたり する 作業は、腰の 負担が 大きく なります。腰痛予防対策指針では 福祉用具を 積極的に 使い、原則として 人の 手で 人を 抱え上げない ことを 示して います。"
+ },
+ {
+  "id": "sb-belt",
+  "name": "腰部保護ベルト",
+  "reading": "ようぶほごべると",
+  "journey": "shokuba",
+  "category": "情報機器と腰痛",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎗️",
+  "mapNode": "shokuba:yotsu",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yotsushishin",
+   "sb-kaigo"
+  ],
+  "description": "腰に 巻く ベルトです。腰痛予防対策指針では、全員に 一律に 使わせる のでは なく、1人ずつ 効果を 確かめて 使う ように 示して います。"
+ },
+ {
+  "id": "sb-staffcare",
+  "name": "事業場内産業保健スタッフ等によるケア",
+  "reading": "じぎょうじょうないさんぎょうほけんすたっふとうによるけあ",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍⚕️",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yottsunokea",
+   "sb-kokorokeikaku"
+  ],
+  "description": "産業医・衛生管理者・保健師などが、セルフケアと ラインによるケアを 支える ケアです。メンタルヘルス推進担当者に 人事権を 持つ 人は 適当で ない ことに 注意します。"
+ },
+ {
+  "id": "sb-gaibushigen",
+  "name": "事業場外資源によるケア",
+  "reading": "じぎょうじょうがいしげんによるけあ",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yottsunokea",
+   "sb-staffcare"
+  ],
+  "description": "会社の 外の 専門の 機関や 専門家の 力を かりる ケアです。4つの ケアの 1つで、事業場の 中だけで かかえこまない ことが 大切です。"
+ },
+ {
+  "id": "sb-kokorokeikaku",
+  "name": "心の健康づくり計画",
+  "reading": "こころのけんこうづくりけいかく",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-mentalshishin",
+   "sb-staffcare"
+  ],
+  "description": "メンタルヘルスケアを 進める 計画です。事業者が 衛生委員会などで 十分に 調べ 話し合って 作ります。衛生管理者 1人で 作る ものでは ありません。"
+ },
+ {
+  "id": "sb-fukki",
+  "name": "職場復帰支援",
+  "reading": "しょくばふっきしえん",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-ichijiyobo",
+   "sb-kokorokeikaku"
+  ],
+  "description": "心の 不調などで 休んだ 人が 職場に もどるのを 支える ことです。メンタルヘルス指針では 三次予防に あたり、段階を ふんで 進めます。"
+ },
+ {
+  "id": "sb-ichijiyobo",
+  "name": "一次予防",
+  "reading": "いちじよぼう",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-fukki",
+   "sb-mentalshishin"
+  ],
+  "description": "心の 不調を 起こさない ように 前もって 防ぐ ことです。早く 気づいて 対応するのが 二次予防、職場復帰を 支えるのが 三次予防です。"
+ },
+ {
+  "id": "sb-mentalshishin",
+  "name": "メンタルヘルス指針",
+  "reading": "めんたるへるすししん",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📙",
+  "mapNode": "shokuba:mental",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yottsunokea",
+   "sb-kokorokeikaku"
+  ],
+  "description": "「労働者の心の健康の保持増進のための指針」の ことです。2006年に 示され、2015年に 改正されました。4つの ケアと 心の健康づくり計画を 柱に します。"
+ },
+ {
+  "id": "sb-thpshishin",
+  "name": "THP指針",
+  "reading": "てぃーえいちぴーししん",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "shokuba:thp",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-thp",
+   "sb-population"
+  ],
+  "description": "「事業場における労働者の健康保持増進のための指針」です。安衛法69条の 事業者の 努力義務に もとづき、方針の 表明から 評価と 改善までの 進めかたを 示します。"
+ },
+ {
+  "id": "sb-population",
+  "name": "ポピュレーションアプローチ",
+  "reading": "ぽぴゅれーしょんあぷろーち",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "shokuba:thp",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-thpshishin",
+   "sb-thp"
+  ],
+  "description": "課題の ある 人だけで なく、職場で 働く 人を 集団として とらえて 働きかける 考えかたです。THP指針では、個人向けの 措置と 組み合わせる ことを すすめます。"
+ },
+ {
+  "id": "sb-shinrisodan",
+  "name": "THPのメンタルヘルスケア",
+  "reading": "てぃーえいちぴーのめんたるへるすけあ",
+  "journey": "shokuba",
+  "category": "心と健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗨️",
+  "mapNode": "shokuba:thp",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-thp",
+   "sb-selfcare"
+  ],
+  "description": "THP指針の 健康指導の 1つで、積極的な 健康づくりを めざす 人への、ストレスへの 気づきの 援助や リラクセーションの 指導です。前は「心理相談」と よばれました。"
+ },
+ {
+  "id": "sb-dai1shisetsu",
+  "name": "第一種施設",
+  "reading": "だいいっしゅしせつ",
+  "journey": "shokuba",
+  "category": "受動喫煙",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "shokuba:kitsuen",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-dai2shisetsu",
+   "sb-kenkozoshinho"
+  ],
+  "description": "健康増進法で、学校・病院・児童福祉施設や 行政機関の 庁舎などの ことです。特定屋外喫煙場所を 除いて、敷地内 禁煙です。"
+ },
+ {
+  "id": "sb-dai2shisetsu",
+  "name": "第二種施設",
+  "reading": "だいにしゅしせつ",
+  "journey": "shokuba",
+  "category": "受動喫煙",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "shokuba:kitsuen",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-dai1shisetsu",
+   "sb-senyoshitsu"
+  ],
+  "description": "健康増進法で、事務所・工場・飲食店など、第一種施設 以外の 多くの 人が 使う 施設です。屋内は 原則 禁煙で、喫煙専用室などを 除いて 吸えません。"
+ },
+ {
+  "id": "sb-hatachi",
+  "name": "20歳未満の立入禁止",
+  "reading": "はたちみまんのたちいりきんし",
+  "journey": "shokuba",
+  "category": "受動喫煙",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔞",
+  "mapNode": "shokuba:kitsuen",
+  "field": "健康づくり",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-senyoshitsu",
+   "sb-dai2shisetsu"
+  ],
+  "description": "喫煙専用室には、20歳未満の 人を 立ち入らせては いけません。働く 人でも 同じで、案内も しない ように します。"
+ },
+ {
+  "id": "sb-judodoryoku",
+  "name": "受動喫煙防止の努力義務",
+  "reading": "じゅどうきつえんぼうしのどりょくぎむ",
+  "journey": "shokuba",
+  "category": "受動喫煙",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "shokuba:kitsuen",
+  "field": "安衛法",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-judokitsuen",
+   "sb-kenkozoshinho"
+  ],
+  "description": "安衛法68条の2では、事業者が 職場の 受動喫煙を 防ぐ ため、実情に 合った 措置を とるよう 努めます。安衛法では 義務では なく 努力義務です。"
+ },
+ {
+  "id": "sb-senninritsu",
+  "name": "病休件数年千人率",
+  "reading": "びょうきゅうけんすうねんせんにんりつ",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-shippeikyugyonissu",
+   "sb-byokyu"
+  ],
+  "description": "在籍する 労働者 1,000人 あたり、1年間に 病気で 休んだ 件数を 表す 指標です。疾病休業件数年千人率とも いいます。日数では なく 件数を 数える 点が ポイントです。"
+ },
+ {
+  "id": "sb-byokyu",
+  "name": "病休強度率",
+  "reading": "びょうきゅうきょうどりつ",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-senninritsu",
+   "sb-shippeikyugyonissu"
+  ],
+  "description": "病気で 休んだ 日数を もとに、休業の 重さを 表す 指標です。件数を 数える 指標と ちがい、長く 休むほど 値が 大きく なります。"
+ },
+ {
+  "id": "sb-dosuritsu",
+  "name": "度数率",
+  "reading": "どすうりつ",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-byokyu",
+   "sb-senninritsu"
+  ],
+  "description": "労働災害の 起こりやすさ(頻度)を 表す 指標です。死傷者数を 延べ実労働時間数で 割り、100万を かけます。災害の 重さを 表すのは 強度率です。"
+ },
+ {
+  "id": "sb-yubyoritsu",
+  "name": "有病率",
+  "reading": "ゆうびょうりつ",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-rikanritsu",
+   "sb-seitai"
+  ],
+  "description": "ある 時点で、集団の 中に 病気の 人が どれくらい いるかの 割合です。ある 時点の ようすなので、静態データです。"
+ },
+ {
+  "id": "sb-rikanritsu",
+  "name": "罹患率",
+  "reading": "りかんりつ",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🆕",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yubyoritsu",
+   "sb-dotai"
+  ],
+  "description": "ある 期間に、新しく 病気に なった 人の 割合です。期間の 中の 発生を 見るので、動態データです。有病率と 取りちがえない ように します。"
+ },
+ {
+  "id": "sb-seitai",
+  "name": "静態データ",
+  "reading": "せいたいでーた",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📸",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-dotai",
+   "sb-yubyoritsu"
+  ],
+  "description": "ある 時点の 集団の ようすを 表す データです。有病率や 健康診断の 有所見率などが あたります。写真のように その ときを 切り取る イメージです。"
+ },
+ {
+  "id": "sb-dotai",
+  "name": "動態データ",
+  "reading": "どうたいでーた",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎞️",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-seitai",
+   "sb-rikanritsu"
+  ],
+  "description": "ある 期間の 中での 変化や 発生を 表す データです。罹患率などが あたります。静態データと 組み合わせて、職場の 健康の ようすを 見ます。"
+ },
+ {
+  "id": "sb-giyosei",
+  "name": "偽陽性率",
+  "reading": "ぎようせいりつ",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "shokuba:tokei",
+  "field": "統計",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-yushokenritsu",
+   "sb-seitai"
+  ],
+  "description": "病気で ない 人を、検査で「陽性」と 判定して しまう 割合です。値が 高いと 陽性と する 検査で 基準(カットオフ値)を 低く すると、偽陽性は 増え、見のがし(偽陰性)は 減ります。"
+ },
+ {
+  "id": "sb-noryoku",
+  "name": "能力向上教育",
+  "reading": "のうりょくこうじょうきょういく",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "shokuba:kyoiku",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-eiseikyoiku",
+   "sb-kanritaisei"
+  ],
+  "description": "衛生管理者など 安全衛生の 仕事を する 人の 力を 高める 教育や 講習です。安衛法19条の2で、事業者が 行うよう 努める 努力義務です。"
+ },
+ {
+  "id": "sb-kanritaisei",
+  "name": "労働衛生管理体制",
+  "reading": "ろうどうえいせいかんりたいせい",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛️",
+  "mapNode": "shokuba:kyoiku",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-ms",
+   "sb-noryoku"
+  ],
+  "description": "衛生管理者・産業医・衛生委員会などで、職場の 健康を 守る 体制の ことです。作業環境管理・作業管理・健康管理の 3管理と 教育を 動かす 土台です。"
+ },
+ {
+  "id": "sb-ms",
+  "name": "労働安全衛生マネジメントシステム",
+  "reading": "ろうどうあんぜんえいせいまねじめんとしすてむ",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "shokuba:kyoiku",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-pdca",
+   "sb-kanritaisei"
+  ],
+  "description": "事業者が 方針を 表明し、計画・実施・評価・改善を 続けて くり返す ことで、職場の 安全と 健康の 水準を 上げていく しくみです。"
+ },
+ {
+  "id": "sb-pdca",
+  "name": "PDCA",
+  "reading": "ぴーでぃーしーえー",
+  "journey": "shokuba",
+  "category": "統計と管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "shokuba:kyoiku",
+  "field": "労働衛生管理",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-ms",
+   "sb-thpshishin"
+  ],
+  "description": "計画(Plan)・実施(Do)・評価(Check)・改善(Act)の 流れを くり返す ことです。マネジメントシステムや 健康づくりの 計画で 使われます。"
+ },
+ {
+  "id": "sb-danjobetsu",
+  "name": "休養室の男女別",
+  "reading": "きゅうようしつのだんじょべつ",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👫",
+  "mapNode": "shokuba:seiri",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kyuyoshitsu",
+   "sb-kyukeisetsubi"
+  ],
+  "description": "常時 50人以上 または 常時 女性 30人以上の 労働者を 使う ときは、横に なれる 休養室や 休養所を 男女別に 設けます。「30人」は 女性の 人数です。"
+ },
+ {
+  "id": "sb-eiyoshi",
+  "name": "給食の栄養士",
+  "reading": "きゅうしょくのえいようし",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥗",
+  "mapNode": "shokuba:seiri",
+  "field": "安衛則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-shokudo",
+   "sb-inryosui"
+  ],
+  "description": "1回 100食以上 または 1日 250食以上の 給食を する ときは、栄養士を 置くよう 努めます。義務では なく 努力義務です。"
+ },
+ {
+  "id": "sb-zanryuenso",
+  "name": "遊離残留塩素",
+  "reading": "ゆうりざんりゅうえんそ",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "shokuba:seiri",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-inryosui",
+   "sb-senmen"
+  ],
+  "description": "水道以外の 給水設備の 水では、給水せんの 遊離残留塩素を 0.1ppm以上に 保ちます。汚染の おそれが ある ときは 0.2ppm以上に します。"
+ },
+ {
+  "id": "sb-kyukeisetsubi",
+  "name": "休憩設備",
+  "reading": "きゅうけいせつび",
+  "journey": "shokuba",
+  "category": "事務所の設備",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☕",
+  "mapNode": "shokuba:seiri",
+  "field": "事務所則",
+  "ruleset": "労働衛生(有害以外)",
+  "relatedTerms": [
+   "sb-kyuyoshitsu",
+   "sb-danjobetsu"
+  ],
+  "description": "休けいの ための 設備です。事務所則では 設けるよう 努める(努力義務)と されて います。人数に よって 男女別の 休養室を 設けるのは 義務なので、取りちがえに 注意します。"
+ }
+]

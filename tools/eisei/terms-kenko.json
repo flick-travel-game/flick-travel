@@ -1,0 +1,1821 @@
+[
+ {
+  "id": "ke-kenkoshindan",
+  "name": "健康診断",
+  "reading": "けんこうしんだん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "kenko:teiki",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-teikikenshin",
+   "ke-yatoiirekenshin",
+   "ke-jushingimu"
+  ],
+  "description": "医師が 体の 調子を 調べて、病気の きざしを 早く 見つける しくみです。事業者は 働く 人に 健康診断を 行い、働く 人も 受ける 義務が あります。"
+ },
+ {
+  "id": "ke-teikikenshin",
+  "name": "定期健康診断",
+  "reading": "ていきけんこうしんだん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kenkoshindan",
+   "ke-shoryakudekinai",
+   "ke-tokuteikenshin"
+  ],
+  "description": "常時 使用する 労働者に 1年以内ごとに 1回 行う 健康診断です。血圧・尿・視力・聴力 など 決まった 項目を 調べ、毎年の 変化を 見ます。"
+ },
+ {
+  "id": "ke-yatoiirekenshin",
+  "name": "雇入時の健康診断",
+  "reading": "やといいれじのけんこうしんだん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "kenko:yatoiire",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-santsuki",
+   "ke-nenreishoryaku",
+   "ke-teikikenshin"
+  ],
+  "description": "常時 使用する 労働者を 雇い入れる ときに 行う 健康診断です。働きはじめる ときの 体の ようすを 知り、合った 仕事に つける ために 役立てます。"
+ },
+ {
+  "id": "ke-stresscheck",
+  "name": "ストレスチェック",
+  "reading": "すとれすちぇっく",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "kenko:stress",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kosutoresu",
+   "ke-ryoiki",
+   "ke-stresstsuchi"
+  ],
+  "description": "心の 負担の ぐあいを 質問票で 調べる 検査です。常時 使用する 労働者に 1年以内ごとに 1回 行い、本人が 自分の ストレスに 気づく きっかけに します。"
+ },
+ {
+  "id": "ke-chojikan",
+  "name": "長時間労働",
+  "reading": "ちょうじかんろうどう",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-mensetsushido",
+   "ke-moushide",
+   "ke-haaku"
+  ],
+  "description": "長い 時間 働きつづける ことです。疲れが たまると 体や 心の 不調に つながるため、職場では 労働時間を 把握し、医師の 面接指導で 健康を 守ります。"
+ },
+ {
+  "id": "ke-kenshinkekka",
+  "name": "健康診断の結果",
+  "reading": "けんこうしんだんのけっか",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "kenko:kekka",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-honnintsuchi",
+   "ke-ikenchoshu",
+   "ke-kojinhyo"
+  ],
+  "description": "健康診断で わかった 数値や 所見です。結果は 遅滞なく 本人に 知らせ、本人は 食事・運動・睡眠 など 生活を 見なおす 手がかりに します。"
+ },
+ {
+  "id": "ke-hokenshido",
+  "name": "保健指導",
+  "reading": "ほけんしどう",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "kenko:iken",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kenshinkekka",
+   "ke-jigosochi",
+   "ke-kenkosodan"
+  ],
+  "description": "医師や 保健師が 生活の 工夫を 助言する ことです。とくに 健康の 保持に 努める 必要が ある 人に 行うよう 事業者が 努める もので、努力義務です。"
+ },
+ {
+  "id": "ke-ketsuatsusokutei",
+  "name": "血圧の測定",
+  "reading": "けつあつのそくてい",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💓",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-shoryakudekinai",
+   "ke-nyokensa",
+   "ke-teikikenshin"
+  ],
+  "description": "定期健康診断の 項目の 1つです。医師の 判断でも 省略できない 項目で、高い 血圧は 脳や 心臓の 病気の 大きな 原因に なります。"
+ },
+ {
+  "id": "ke-choryokukensa",
+  "name": "聴力検査",
+  "reading": "ちょうりょくけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-choryoku45",
+   "ke-teikikenshin"
+  ],
+  "description": "音の 聞こえを 調べる 健診の 項目です。ふつうは 1,000ヘルツと 4,000ヘルツの 音で 調べます。音の 大きな 職場では とくに 大切です。"
+ },
+ {
+  "id": "ke-shiryokukensa",
+  "name": "視力検査",
+  "reading": "しりょくけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👓",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-choryokukensa",
+   "ke-teikikenshin"
+  ],
+  "description": "目の 見え方を 調べる 健診の 項目です。パソコンを 長く 使う 仕事や 車を 運転する 仕事では、見え方の 変化に 早く 気づく ことが 大切です。"
+ },
+ {
+  "id": "ke-nyokensa",
+  "name": "尿検査",
+  "reading": "にょうけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-shoryakudekinai",
+   "ke-ketsuatsusokutei"
+  ],
+  "description": "尿の 中に 糖や 蛋白が 出て いないかを 調べる 健診の 項目です。血圧の 測定と 同じく、医師の 判断でも 省略できない 項目です。"
+ },
+ {
+  "id": "ke-shikakenshin",
+  "name": "歯科健診",
+  "reading": "しかけんしん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦷",
+  "mapNode": "kenko:shika",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-shikaishikenshin",
+   "ke-shikahokoku"
+  ],
+  "description": "歯と 口の 健康を 調べる 健診です。歯に 害の ある ガスなどが 出る 職場では、歯科医師による 健康診断が 法令で 決められて います。"
+ },
+ {
+  "id": "ke-kenkozukuri",
+  "name": "健康づくり",
+  "reading": "けんこうづくり",
+  "journey": "kenko",
+  "category": "健康づくり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "kenko:hoji",
+  "field": "健康づくり",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-hojizoshin",
+   "ke-kenkokyoiku",
+   "ke-seikatsushukanbyo"
+  ],
+  "description": "運動・食事・休養 などで 元気に 働ける 体と 心を 保つ 取り組みです。事業者は 働く 人の 健康づくりを 続けて 進めるよう 努めます。"
+ },
+ {
+  "id": "ke-seikatsushukanbyo",
+  "name": "生活習慣病",
+  "reading": "せいかつしゅうかんびょう",
+  "journey": "kenko",
+  "category": "健康づくり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🍙",
+  "mapNode": "kenko:hoji",
+  "field": "健康づくり",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kettokensa",
+   "ke-shishitsukensa",
+   "ke-kenkozukuri"
+  ],
+  "description": "食事・運動・喫煙・飲酒 など 毎日の 習慣が かかわる 病気です。健診の 血圧・血糖・血中脂質の 結果は、早く 気づく ための 手がかりに なります。"
+ },
+ {
+  "id": "ke-kenkosodan",
+  "name": "健康相談",
+  "reading": "けんこうそうだん",
+  "journey": "kenko",
+  "category": "健康づくり",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☎️",
+  "mapNode": "kenko:hoji",
+  "field": "健康づくり",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-hokenshido",
+   "ke-kenkokyoiku"
+  ],
+  "description": "体や 心の 心配を 医師や 保健師に 相談できる 場です。健康相談は 産業医の 職務の 1つで、気軽に 相談できる 職場づくりが 大切です。"
+ },
+ {
+  "id": "ke-tokuteigyomu",
+  "name": "特定業務従事者",
+  "reading": "とくていぎょうむじゅうじしゃ",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "kenko:tokutei",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-tokuteikenshin",
+   "ke-shinyagyo"
+  ],
+  "description": "深夜業を 含む 業務 など、法令で 決めた 業務に 常時 従事する 人です。ふつうより 短い 6か月以内ごとに 1回 健康診断を 受けます。"
+ },
+ {
+  "id": "ke-tokuteikenshin",
+  "name": "特定業務従事者の健康診断",
+  "reading": "とくていぎょうむじゅうじしゃのけんこうしんだん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "kenko:tokutei",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-tokuteigyomu",
+   "ke-tokuteikyobu",
+   "ke-haichigae"
+  ],
+  "description": "特定業務従事者に、その 業務への 配置替えの 際と 6か月以内ごとに 1回 行う 健康診断です。項目は 定期健康診断と 同じです。"
+ },
+ {
+  "id": "ke-tokushukenshin",
+  "name": "特殊健康診断",
+  "reading": "とくしゅけんこうしんだん",
+  "journey": "kenko",
+  "category": "特殊健康診断",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☣️",
+  "mapNode": "kenko:tokushu",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-yukikenshin",
+   "ke-tokushuhokoku",
+   "ke-denrikenshin"
+  ],
+  "description": "有機溶剤・鉛・放射線 など 有害な 業務の 人に、その 害に 合わせた 項目で 行う 健康診断です。多くは 雇入れ・配置替えの 際と 6か月以内ごとに 1回 行います。"
+ },
+ {
+  "id": "ke-kojinhyo",
+  "name": "健康診断個人票",
+  "reading": "けんこうしんだんこじんひょう",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗂",
+  "mapNode": "kenko:kekka",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kojinhyokisai",
+   "ke-kenshinkekka"
+  ],
+  "description": "健康診断の 結果を 1人ずつ まとめた 記録です。事業者が 作って 5年間 保存します。医師から 聴いた 意見も ここに 書きます。"
+ },
+ {
+  "id": "ke-kekkahokoku",
+  "name": "健康診断結果報告",
+  "reading": "けんこうしんだんけっかほうこく",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "kenko:kekka",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-teikikenshin",
+   "ke-tokushuhokoku",
+   "ke-stresshokoku"
+  ],
+  "description": "常時 50人以上の 事業者が 定期健康診断を 行った とき、遅滞なく 所轄労働基準監督署長に 出す 報告です。いまは 電子で 出します。"
+ },
+ {
+  "id": "ke-ikenchoshu",
+  "name": "医師等の意見聴取",
+  "reading": "いしとうのいけんちょうしゅ",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👨‍⚕️",
+  "mapNode": "kenko:iken",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-jigosochi",
+   "ke-kojinhyokisai"
+  ],
+  "description": "異常の 所見が ある 人に ついて、どんな 配慮が 要るか 医師に 意見を 聴く ことです。健康診断の 日から 3か月以内に 行います。"
+ },
+ {
+  "id": "ke-jigosochi",
+  "name": "事後措置",
+  "reading": "じごそち",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "kenko:iken",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-ikenchoshu",
+   "ke-tenkan",
+   "ke-tanshuku"
+  ],
+  "description": "医師の 意見を ふまえて、就業場所の 変更・作業の 転換・労働時間の 短縮 などを 行う ことです。健診は 受けて 終わりではなく、ここまでが 大切です。"
+ },
+ {
+  "id": "ke-mensetsushido",
+  "name": "面接指導",
+  "reading": "めんせつしどう",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗣",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-moushide",
+   "ke-kosutoresu",
+   "ke-mensetsukiroku"
+  ],
+  "description": "医師が 本人と 話して 心身の ようすを 確かめ、助言する ことです。長時間労働の 人や 高ストレス者が 対象で、記録は 5年間 保存します。"
+ },
+ {
+  "id": "ke-moushide",
+  "name": "面接指導の申出",
+  "reading": "めんせつしどうのもうしで",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✋",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-hachiju",
+   "ke-mensetsushido",
+   "ke-kansho"
+  ],
+  "description": "週40時間を こえて 働いた 時間が 1か月 80時間を こえ、疲労の 蓄積が ある 人が 医師の 面接指導を 求める ことです。申し出が あれば 事業者は 遅滞なく 行います。"
+ },
+ {
+  "id": "ke-kosutoresu",
+  "name": "高ストレス者",
+  "reading": "こうすとれすしゃ",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌧",
+  "mapNode": "kenko:stress",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-stresscheck",
+   "ke-mensetsushido",
+   "ke-furieki"
+  ],
+  "description": "ストレスチェックで 心の 負担が 高く、面接指導が 必要と 実施者が 認めた 人です。本人が 申し出れば、事業者は 遅滞なく 医師の 面接指導を 行います。"
+ },
+ {
+  "id": "ke-jisshisha",
+  "name": "ストレスチェックの実施者",
+  "reading": "すとれすちぇっくのじっししゃ",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍⚕️",
+  "mapNode": "kenko:stress",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-jimu",
+   "ke-stresscheck"
+  ],
+  "description": "ストレスチェックを 行う 人です。医師・保健師と、研修を 修了した 歯科医師・看護師・精神保健福祉士・公認心理師が なれます。"
+ },
+ {
+  "id": "ke-stresstsuchi",
+  "name": "ストレスチェック結果の通知",
+  "reading": "すとれすちぇっくけっかのつうち",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✉️",
+  "mapNode": "kenko:stress",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-doi",
+   "ke-jisshisha"
+  ],
+  "description": "ストレスチェックの 結果は、実施者から 本人に 直接 知らせます。本人の 同意が なければ、事業者は 結果を 受け取れません。"
+ },
+ {
+  "id": "ke-kaigaihaken",
+  "name": "海外派遣労働者の健康診断",
+  "reading": "かいがいはけんろうどうしゃのけんこうしんだん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "kenko:shika",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kikokugo",
+   "ke-teikikenshin"
+  ],
+  "description": "海外に 6か月以上 派遣する 人に、あらかじめ 行う 健康診断です。定期健康診断の 項目に 加え、厚生労働大臣が 定める 項目の うち 医師が 必要と 認める ものも 調べます。"
+ },
+ {
+  "id": "ke-kenben",
+  "name": "給食従業員の検便",
+  "reading": "きゅうしょくじゅうぎょういんのけんべん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍱",
+  "mapNode": "kenko:shika",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kaigaihaken",
+   "ke-haichigae"
+  ],
+  "description": "社員食堂 などで 給食の 仕事を する 人に 行う 便の 検査です。雇入れの 際と 配置替えの 際に 行い、食中毒を ふせぎます。"
+ },
+ {
+  "id": "ke-techo",
+  "name": "健康管理手帳",
+  "reading": "けんこうかんりてちょう",
+  "journey": "kenko",
+  "category": "健康管理手帳",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📗",
+  "mapNode": "kenko:techo",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-techokofu",
+   "ke-techotaisho",
+   "ke-seifukenshin"
+  ],
+  "description": "がん など 重い 健康障害の おそれが ある 業務に 従事した 人に 交付される 手帳です。仕事を 離れた あとも 国の 健康診断を 受けられます。"
+ },
+ {
+  "id": "ke-hojizoshin",
+  "name": "健康保持増進",
+  "reading": "けんこうほじぞうしん",
+  "journey": "kenko",
+  "category": "健康づくり",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "kenko:hoji",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kenkozukuri",
+   "ke-kenkokyoiku"
+  ],
+  "description": "働く 人の 健康を 保ち、さらに 高める ための 取り組みです。事業者が 続けて 計画的に 進めるよう 努める もので、THP の 指針が あります。"
+ },
+ {
+  "id": "ke-haaku",
+  "name": "労働時間の状況の把握",
+  "reading": "ろうどうじかんのじょうきょうのはあく",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⌚",
+  "mapNode": "kenko:jikan",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-timecard",
+   "ke-pasokonkiroku",
+   "ke-jikanhozon"
+  ],
+  "description": "面接指導を きちんと 行う ために、働いた 時間を 事業者が つかむ ことです。タイムカード など 客観的な 方法で 把握し、記録は 3年間 保存します。"
+ },
+ {
+  "id": "ke-timecard",
+  "name": "タイムカード",
+  "reading": "たいむかーど",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕘",
+  "mapNode": "kenko:jikan",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-haaku",
+   "ke-pasokonkiroku"
+  ],
+  "description": "出勤と 退勤の 時刻を 記録する しくみです。パソコンの 使用時間の 記録と ならぶ、労働時間の 状況を 客観的に 把握する 方法の 例です。"
+ },
+ {
+  "id": "ke-kioreki",
+  "name": "既往歴",
+  "reading": "きおうれき",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-jikakushojo",
+   "ke-shoryakudekinai"
+  ],
+  "description": "これまでに かかった 病気の ことです。定期健康診断では 業務歴と いっしょに 調べ、医師の 判断でも 省略できない 項目です。"
+ },
+ {
+  "id": "ke-jikakushojo",
+  "name": "自覚症状",
+  "reading": "じかくしょうじょう",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤒",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kioreki",
+   "ke-shoryakudekinai"
+  ],
+  "description": "本人が 感じて いる 体の 不調です。医師が 見て わかる 他覚症状と ともに 調べ、省略できない 項目の 1つです。"
+ },
+ {
+  "id": "ke-kyobuxsen",
+  "name": "胸部エックス線検査",
+  "reading": "きょうぶえっくすせんけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kakutan",
+   "ke-kyobushoryaku"
+  ],
+  "description": "エックス線で 肺の ようすを 写す 健診の 項目です。結核 などの 肺の 病気を 見つける ために 行います。"
+ },
+ {
+  "id": "ke-kakutan",
+  "name": "喀痰検査",
+  "reading": "かくたんけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧫",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kyobuxsen",
+   "ke-komokukaisei"
+  ],
+  "description": "たんを 調べる 健診の 項目です。いまは 定期健康診断の 項目ですが、2027年4月から 外れます。雇入時の 健康診断には もともと ありません。"
+ },
+ {
+  "id": "ke-kankino",
+  "name": "肝機能検査",
+  "reading": "かんきのうけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-komokukaisei",
+   "ke-hinketsushoryaku"
+  ],
+  "description": "血液で 肝臓の 働きを 調べる 健診の 項目です。2027年4月から 名前が GOT は AST、GPT は ALT、γ-GTP は γ-GT に 変わります。"
+ },
+ {
+  "id": "ke-shishitsukensa",
+  "name": "血中脂質検査",
+  "reading": "けっちゅうししつけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧈",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kettokensa",
+   "ke-seikatsushukanbyo"
+  ],
+  "description": "血液の 中の LDLコレステロール・HDLコレステロール・中性脂肪(トリグリセライド)を 調べる 健診の 項目です。"
+ },
+ {
+  "id": "ke-kettokensa",
+  "name": "血糖検査",
+  "reading": "けっとうけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍬",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-shishitsukensa",
+   "ke-seikatsushukanbyo"
+  ],
+  "description": "血液の 中の 糖の 量を 調べる 健診の 項目です。糖尿病の きざしを 早く 見つける 手がかりに なります。"
+ },
+ {
+  "id": "ke-hinketsukensa",
+  "name": "貧血検査",
+  "reading": "ひんけつけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-hinketsushoryaku",
+   "ke-kankino"
+  ],
+  "description": "血液の 中の 血色素量と 赤血球数を 調べる 健診の 項目です。疲れやすさや めまいの 原因を 見つける 手がかりに なります。"
+ },
+ {
+  "id": "ke-shindenzukensa",
+  "name": "心電図検査",
+  "reading": "しんでんずけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-hinketsushoryaku",
+   "ke-ketsuatsusokutei"
+  ],
+  "description": "心臓が 動く ときの 電気の 流れを 記録する 健診の 項目です。雇入時と 定期の どちらの 健康診断にも 入って います。"
+ },
+ {
+  "id": "ke-fukui",
+  "name": "腹囲",
+  "reading": "ふくい",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-fukuishoryaku",
+   "ke-seikatsushukanbyo"
+  ],
+  "description": "おへその 高さで はかる おなか回りの 長さです。内臓脂肪の めやすで、生活習慣病の きざしに 気づく 手がかりに なります。"
+ },
+ {
+  "id": "ke-jushingimu",
+  "name": "労働者の受診義務",
+  "reading": "ろうどうしゃのじゅしんぎむ",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "kenko:yatoiire",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kenkoshindan",
+   "ke-yatoiirekenshin"
+  ],
+  "description": "事業者が 行う 健康診断を、労働者も 受ける 義務が あります。事業者が 指定した 医師が いやなら、ほかの 医師の 健診を 受けて 結果の 書面を 出せます。"
+ },
+ {
+  "id": "ke-shinshinjoho",
+  "name": "心身の状態の情報",
+  "reading": "しんしんのじょうたいのじょうほう",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "kenko:kekka",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-toriatsukaikitei",
+   "ke-kenshinkekka"
+  ],
+  "description": "健康診断の 結果 など、働く 人の 体と 心の 情報です。事業者は 健康を 守るのに 必要な 範囲で 集め、目的の 範囲の 中で 保管・使用します。"
+ },
+ {
+  "id": "ke-santsuki",
+  "name": "3か月以内の健診結果の提出",
+  "reading": "さんかげついないのけんしんけっかのていしゅつ",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "kenko:yatoiire",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-yatoiirekenshin",
+   "ke-nenreishoryaku"
+  ],
+  "description": "医師の 健康診断を 受けて 3か月を たっていない 人を 雇い入れる とき、結果の 書面を 出せば、その 項目は 省略できます。6か月や 1年では ありません。"
+ },
+ {
+  "id": "ke-nenreishoryaku",
+  "name": "雇入時健診の年齢省略",
+  "reading": "やといいれじけんしんのねんれいしょうりゃく",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "kenko:yatoiire",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-yatoiirekenshin",
+   "ke-santsuki",
+   "ke-shinchoshoryaku"
+  ],
+  "description": "雇入時の 健康診断は、年齢で 項目を 省略する ことが できません。年齢などを もとに 医師が 省略できるのは 定期健康診断の 話なので、まぜない ように します。"
+ },
+ {
+  "id": "ke-gakkokenshin",
+  "name": "満15歳以下の学校健診",
+  "reading": "まんじゅうごさいいかのがっこうけんしん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "kenko:yatoiire",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-jojishiyo",
+   "ke-teikikenshin"
+  ],
+  "description": "その 年度に 満15歳以下に なる 人で、学校の 健康診断を 受けた 人には、職場の 定期 などの 健康診断を 行わない ことが できます。二重に 受けなくて よい しくみです。"
+ },
+ {
+  "id": "ke-jojishiyo",
+  "name": "常時使用する労働者",
+  "reading": "じょうじしようするろうどうしゃ",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "kenko:yatoiire",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-yatoiirekenshin",
+   "ke-teikikenshin"
+  ],
+  "description": "雇入時・定期の 一般健康診断の 対象と なる、ふだんから 続けて 使用する 労働者です。正社員か どうかの 呼び名では なく、常時 使用するか どうかで 決まります。"
+ },
+ {
+  "id": "ke-jihatsuteki",
+  "name": "自発的健康診断",
+  "reading": "じはつてきけんこうしんだん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "kenko:tokutei",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-shinyagyo",
+   "ke-ikenchoshu"
+  ],
+  "description": "深夜業を 6か月間の 平均で 月4回以上 した 人が、自分で 受けた 健診の 結果を 出す しくみです。受けて 3か月 以内に 出し、医師の 意見は 2か月以内に 聴きます。"
+ },
+ {
+  "id": "ke-shinyagyo",
+  "name": "深夜業",
+  "reading": "しんやぎょう",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌃",
+  "mapNode": "kenko:tokutei",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-tokuteigyomu",
+   "ke-jihatsuteki",
+   "ke-shinyagensho"
+  ],
+  "description": "夜の 遅い 時間帯に 働く ことです。深夜業を 含む 業務は 特定業務の 1つで、6か月以内ごとに 1回の 健康診断の 対象です。1年ごとでは ありません。"
+ },
+ {
+  "id": "ke-tokuteikyobu",
+  "name": "特定業務従事者の胸部エックス線",
+  "reading": "とくていぎょうむじゅうじしゃのきょうぶえっくすせん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩻",
+  "mapNode": "kenko:tokutei",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-tokuteikenshin",
+   "ke-kyobuxsen"
+  ],
+  "description": "特定業務従事者の 健康診断は 6か月以内ごとに 1回ですが、胸部エックス線検査は 1年以内ごとに 1回で よいと されます。すべての 項目が 6か月ごとでは ありません。"
+ },
+ {
+  "id": "ke-haichigae",
+  "name": "配置替えの際の健診",
+  "reading": "はいちがえのさいのけんしん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kenko:tokutei",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-tokuteikenshin",
+   "ke-kenben"
+  ],
+  "description": "特定業務に つく ために 配置替えを する ときに 行う 健康診断です。雇い入れる ときだけで なく、仕事が 変わる ときにも 必要に なります。"
+ },
+ {
+  "id": "ke-yukikenshin",
+  "name": "有機溶剤健康診断",
+  "reading": "ゆうきようざいけんこうしんだん",
+  "journey": "kenko",
+  "category": "特殊健康診断",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "kenko:tokushu",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-tokushukenshin",
+   "ke-tokushuhokoku"
+  ],
+  "description": "有機溶剤業務に 常時 従事する 人の 特殊健康診断です。雇入れ・配置替えの 際と 6か月以内ごとに 1回。条件を みたせば 1年以内ごとに できます。個人票は 5年 保存です。"
+ },
+ {
+  "id": "ke-tokkakenshin",
+  "name": "特定化学物質健康診断",
+  "reading": "とくていかがくぶっしつけんこうしんだん",
+  "journey": "kenko",
+  "category": "特殊健康診断",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "kenko:tokushu",
+  "field": "特化則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-tokushukenshin",
+   "ke-techotaisho"
+  ],
+  "description": "第1類・第2類の 特定化学物質を 扱う 人の 特殊健康診断です。第3類は 対象外です。特別管理物質の 個人票は 5年ではなく 30年 保存します。"
+ },
+ {
+  "id": "ke-namarikenshin",
+  "name": "鉛健康診断",
+  "reading": "なまりけんこうしんだん",
+  "journey": "kenko",
+  "category": "特殊健康診断",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "kenko:tokushu",
+  "field": "鉛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-tokushukenshin"
+  ],
+  "description": "鉛業務の 人の 特殊健康診断です。血液中の 鉛の 量や 尿中の デルタアミノレブリン酸の 量を 調べます。個人票は 5年 保存です。"
+ },
+ {
+  "id": "ke-denrikenshin",
+  "name": "電離放射線健康診断",
+  "reading": "でんりほうしゃせんけんこうしんだん",
+  "journey": "kenko",
+  "category": "特殊健康診断",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☢️",
+  "mapNode": "kenko:tokushu",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-tokushukenshin"
+  ],
+  "description": "管理区域に 入る 放射線業務の 人の 特殊健康診断です。6か月以内ごとに 1回、白血球数や 白内障に 関する 眼の 検査 などを 行い、個人票は 30年 保存します。"
+ },
+ {
+  "id": "ke-tokushuhokoku",
+  "name": "特殊健康診断の結果報告",
+  "reading": "とくしゅけんこうしんだんのけっかほうこく",
+  "journey": "kenko",
+  "category": "特殊健康診断",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📤",
+  "mapNode": "kenko:tokushu",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-yukikenshin",
+   "ke-kekkahokoku"
+  ],
+  "description": "有機溶剤健康診断 などを 定期に 行った ときは 遅滞なく 所轄労働基準監督署長に 報告します。一般の 定期健康診断と ちがい、常時 50人未満でも 必要です。"
+ },
+ {
+  "id": "ke-toriatsukaikitei",
+  "name": "健康情報の取扱規程",
+  "reading": "けんこうじょうほうのとりあつかいきてい",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "kenko:kekka",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-shinshinjoho",
+   "ke-doi"
+  ],
+  "description": "健康診断の 結果 など 心身の 情報を、だれが どう 扱うかを 決めて おく 職場の きまりです。情報を 正しく 管理する ための 措置として 作ります。"
+ },
+ {
+  "id": "ke-honnintsuchi",
+  "name": "健診結果の本人通知",
+  "reading": "けんしんけっかのほんにんつうち",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📬",
+  "mapNode": "kenko:kekka",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kenshinkekka",
+   "ke-kojinhyo"
+  ],
+  "description": "健康診断の 結果は、雇入時・定期 など どの 健康診断でも 遅滞なく 本人に 知らせます。異常の 所見が ない 人にも 知らせる 点に 気を つけます。"
+ },
+ {
+  "id": "ke-kojinhyokisai",
+  "name": "意見の個人票への記載",
+  "reading": "いけんのこじんひょうへのきさい",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✍️",
+  "mapNode": "kenko:iken",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-ikenchoshu",
+   "ke-kojinhyo"
+  ],
+  "description": "医師から 聴いた 意見は 健康診断個人票に 書きこみます。意見を 聴くのは 健診の 日から 3か月以内で、衛生委員会の 議事録だけに 書くのでは ありません。"
+ },
+ {
+  "id": "ke-tenkan",
+  "name": "作業の転換",
+  "reading": "さぎょうのてんかん",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kenko:iken",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-jigosochi",
+   "ke-bashohenko"
+  ],
+  "description": "医師の 意見を ふまえて、体に 負担の 少ない 作業に かえる 事後措置です。就業場所の 変更・労働時間の 短縮・深夜業の 回数の 減少と ならぶ 措置です。"
+ },
+ {
+  "id": "ke-shinyagensho",
+  "name": "深夜業の回数の減少",
+  "reading": "しんやぎょうのかいすうのげんしょう",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛌",
+  "mapNode": "kenko:iken",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-jigosochi",
+   "ke-shinyagyo"
+  ],
+  "description": "夜の 仕事の 回数を 減らす 事後措置です。睡眠の リズムを 守り、体の 負担を 軽く します。健康診断の あとにも 面接指導の あとにも 使われます。"
+ },
+ {
+  "id": "ke-bashohenko",
+  "name": "就業場所の変更",
+  "reading": "しゅうぎょうばしょのへんこう",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kenko:iken",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-jigosochi",
+   "ke-tenkan"
+  ],
+  "description": "医師の 意見を ふまえて、働く 場所を かえる 事後措置です。体に 合わない 環境から はなす ことで、働く 人の 健康を 守ります。"
+ },
+ {
+  "id": "ke-tanshuku",
+  "name": "労働時間の短縮",
+  "reading": "ろうどうじかんのたんしゅく",
+  "journey": "kenko",
+  "category": "結果と事後措置",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "kenko:iken",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-jigosochi",
+   "ke-mensetsushido"
+  ],
+  "description": "医師の 意見を ふまえて、働く 時間を 短く する 事後措置です。長時間労働の 面接指導の あとの 措置としても 使われます。"
+ },
+ {
+  "id": "ke-hachiju",
+  "name": "80時間超の時間外労働",
+  "reading": "はちじゅうじかんちょうのじかんがいろうどう",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "8️⃣",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-moushide",
+   "ke-santei"
+  ],
+  "description": "週40時間を こえて 働いた 時間が 1か月 80時間を こえた 人には、事業者が その 時間を 本人に 知らせます。「80時間以上」ではなく「こえた」が 条件です。"
+ },
+ {
+  "id": "ke-kenkyukaihatsu",
+  "name": "研究開発業務の面接指導",
+  "reading": "けんきゅうかいはつぎょうむのめんせつしどう",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kodopuromensetsu",
+   "ke-moushide"
+  ],
+  "description": "新しい 技術や 商品の 研究開発の 仕事では、週40時間を こえた 時間が 1か月 100時間を こえると、申し出が なくても 医師の 面接指導を 行います。"
+ },
+ {
+  "id": "ke-kodopuromensetsu",
+  "name": "高度プロフェッショナル制度の面接指導",
+  "reading": "こうどぷろふぇっしょなるせいどのめんせつしどう",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💼",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kenkyukaihatsu",
+   "ke-haaku"
+  ],
+  "description": "高度プロフェッショナル制度の 人は、週40時間を こえた 健康管理時間が 1か月 100時間を こえると、申し出 なしに 面接指導を 行います。労働時間では なく 健康管理時間で 数えます。"
+ },
+ {
+  "id": "ke-mensetsukiroku",
+  "name": "面接指導の記録",
+  "reading": "めんせつしどうのきろく",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗃",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-mensetsushido",
+   "ke-jikanhozon"
+  ],
+  "description": "面接指導の 結果の 記録は 5年間 保存します。労働時間の 状況の 記録の 3年と まちがえやすい ので 注意します。"
+ },
+ {
+  "id": "ke-santei",
+  "name": "時間外労働の算定",
+  "reading": "じかんがいろうどうのさんてい",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-hachiju",
+   "ke-moushide"
+  ],
+  "description": "週40時間を こえた 時間の 計算は、毎月 1回以上、一定の 期日を 決めて 行います。休憩時間は 入れません。その 結果で 面接指導の 対象かを 見ます。"
+ },
+ {
+  "id": "ke-kansho",
+  "name": "産業医の申出の勧奨",
+  "reading": "さんぎょういのもうしでのかんしょう",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-moushide",
+   "ke-mensetsushido"
+  ],
+  "description": "産業医は、要件に あてはまる 人に 面接指導の 申し出を するよう すすめる ことが できます。申し出るのは 本人ですが、産業医が 背中を 押せます。"
+ },
+ {
+  "id": "ke-taishogai",
+  "name": "面接指導の対象外への配慮",
+  "reading": "めんせつしどうのたいしょうがいへのはいりょ",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "kenko:mensetsu",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-mensetsushido",
+   "ke-chojikan"
+  ],
+  "description": "面接指導の 対象に ならない 人でも、健康への 配慮が 必要なら、事業者は 必要な 措置を とるよう 努めます。こちらは 義務では なく 努力義務です。"
+ },
+ {
+  "id": "ke-ryoiki",
+  "name": "ストレスチェックの3つの領域",
+  "reading": "すとれすちぇっくのみっつのりょういき",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔺",
+  "mapNode": "kenko:stress",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-stresscheck",
+   "ke-kosutoresu"
+  ],
+  "description": "ストレスチェックは、心理的な 負担の 原因・心身の 自覚症状・ほかの 労働者からの 支援 の 3つの 領域を 調べます。"
+ },
+ {
+  "id": "ke-doi",
+  "name": "結果の提供の同意",
+  "reading": "けっかのていきょうのどうい",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "kenko:stress",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-stresstsuchi",
+   "ke-stresskiroku"
+  ],
+  "description": "ストレスチェックの 結果は、本人の 同意が なければ 事業者に 渡せません。同意は 書面か 電子の 記録で とります。健康診断の 結果とは 扱いが ちがいます。"
+ },
+ {
+  "id": "ke-furieki",
+  "name": "不利益な取扱いの禁止",
+  "reading": "ふりえきなとりあつかいのきんし",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "kenko:stress",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kosutoresu",
+   "ke-mensetsushido"
+  ],
+  "description": "面接指導を 申し出た ことを 理由に、不利益な 扱いを しては いけません。安心して 申し出られる ための 決まりです。"
+ },
+ {
+  "id": "ke-jimu",
+  "name": "実施の事務",
+  "reading": "じっしのじむ",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗄",
+  "mapNode": "kenko:stress",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-jisshisha",
+   "ke-doi"
+  ],
+  "description": "解雇・昇進・異動に 直接の 権限を もつ 監督的地位の 人は、ストレスチェックの 実施の 事務に 従事できません。結果を 人事に 使わせない ためです。"
+ },
+ {
+  "id": "ke-shudanbunseki",
+  "name": "集団分析",
+  "reading": "しゅうだんぶんせき",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "kenko:stress",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-stresscheck",
+   "ke-ryoiki"
+  ],
+  "description": "ストレスチェックの 結果を 部署 など 集団ごとに まとめて 分析し、職場の 改善に いかす ことです。義務では なく 努力義務です。"
+ },
+ {
+  "id": "ke-stresshokoku",
+  "name": "ストレスチェックの結果報告",
+  "reading": "すとれすちぇっくのけっかほうこく",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "kenko:stress",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-stresscheck",
+   "ke-kekkahokoku",
+   "ke-gimuka"
+  ],
+  "description": "常時 50人以上の 事業者は、ストレスチェックの 結果 などを 1年以内ごとに 1回 所轄労働基準監督署長に 報告します。報告先は 労働局長では ありません。"
+ },
+ {
+  "id": "ke-gimuka",
+  "name": "50人未満の義務化",
+  "reading": "ごじゅうにんみまんのぎむか",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🆕",
+  "mapNode": "kenko:stress",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-stresscheck",
+   "ke-stresshokoku"
+  ],
+  "description": "いま 常時 50人未満の 事業場の ストレスチェックは 努力義務です。改正法で 2028年4月から 義務に なります。2026年の いまは まだ 努力義務です。"
+ },
+ {
+  "id": "ke-stresskiroku",
+  "name": "ストレスチェック結果の記録",
+  "reading": "すとれすちぇっくけっかのきろく",
+  "journey": "kenko",
+  "category": "ストレスチェック",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💾",
+  "mapNode": "kenko:stress",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-doi",
+   "ke-mensetsukiroku"
+  ],
+  "description": "本人の 同意を 得て 事業者が 受け取った ストレスチェックの 結果の 記録は 5年間 保存します。同意が なければ 事業者は 受け取れません。"
+ },
+ {
+  "id": "ke-techokofu",
+  "name": "健康管理手帳の交付",
+  "reading": "けんこうかんりてちょうのこうふ",
+  "journey": "kenko",
+  "category": "健康管理手帳",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "kenko:techo",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-techo",
+   "ke-techotaisho"
+  ],
+  "description": "健康管理手帳は、都道府県労働局長が 離職の 際 または 離職の 後に 交付します。交付するのは 事業者や 監督署長では ありません。"
+ },
+ {
+  "id": "ke-techotaisho",
+  "name": "手帳の対象業務",
+  "reading": "てちょうのたいしょうぎょうむ",
+  "journey": "kenko",
+  "category": "健康管理手帳",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📌",
+  "mapNode": "kenko:techo",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-techo",
+   "ke-techokofu"
+  ],
+  "description": "ベンジジン・ベータ-ナフチルアミン・粉じん作業・クロム酸 など、がん などの おそれが ある 決められた 業務が 健康管理手帳の 対象です。"
+ },
+ {
+  "id": "ke-techojoto",
+  "name": "手帳の譲渡の禁止",
+  "reading": "てちょうのじょうとのきんし",
+  "journey": "kenko",
+  "category": "健康管理手帳",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "kenko:techo",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-techo"
+  ],
+  "description": "健康管理手帳は 本人の ものです。ほかの 人に 譲り渡したり 貸したり する ことは できません。"
+ },
+ {
+  "id": "ke-seifukenshin",
+  "name": "政府が行う健康診断",
+  "reading": "せいふがおこなうけんこうしんだん",
+  "journey": "kenko",
+  "category": "健康管理手帳",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "kenko:techo",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-techo",
+   "ke-techokofu"
+  ],
+  "description": "健康管理手帳を もつ 人は、仕事を 離れた あとも 政府が 行う 健康診断を 受けられます。あとから 出る 病気に 早く 気づく ためです。"
+ },
+ {
+  "id": "ke-kenkokyoiku",
+  "name": "健康教育",
+  "reading": "けんこうきょういく",
+  "journey": "kenko",
+  "category": "健康づくり",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "kenko:hoji",
+  "field": "健康づくり",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-hojizoshin",
+   "ke-kenkosodan"
+  ],
+  "description": "健康に 関する 知識を 伝える 取り組みです。産業医の 職務にも 健康教育・健康相談が あり、健康保持増進の 大切な 柱です。"
+ },
+ {
+  "id": "ke-jikanhozon",
+  "name": "労働時間の記録の保存",
+  "reading": "ろうどうじかんのきろくのほぞん",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗄",
+  "mapNode": "kenko:jikan",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-haaku",
+   "ke-mensetsukiroku"
+  ],
+  "description": "労働時間の 状況の 記録は 3年間 保存します。面接指導の 記録・健康診断個人票の 5年と まちがえない ように します。"
+ },
+ {
+  "id": "ke-kanrikantokuhaaku",
+  "name": "管理監督者の時間の把握",
+  "reading": "かんりかんとくしゃのじかんのはあく",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👔",
+  "mapNode": "kenko:jikan",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-haaku",
+   "ke-kodopuromensetsu"
+  ],
+  "description": "労働時間の 状況の 把握は、管理監督者や 裁量労働制の 人も 対象です。対象から 外れるのは 高度プロフェッショナル制度の 人です。"
+ },
+ {
+  "id": "ke-pasokonkiroku",
+  "name": "パソコンの使用時間の記録",
+  "reading": "ぱそこんのしようじかんのきろく",
+  "journey": "kenko",
+  "category": "面接指導と労働時間",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "kenko:jikan",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-timecard",
+   "ke-haaku"
+  ],
+  "description": "パソコンの 使用時間の 記録は、タイムカードと ならぶ 客観的な 把握の 方法です。いつ 使いはじめ、いつ 終えたかが 記録に 残ります。"
+ },
+ {
+  "id": "ke-shikaishikenshin",
+  "name": "歯科医師による健康診断",
+  "reading": "しかいしによるけんこうしんだん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦷",
+  "mapNode": "kenko:shika",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-shikahokoku",
+   "ke-shikakenshin"
+  ],
+  "description": "塩酸・硝酸・硫酸・弗化水素・黄りん など 歯に 有害な ガスが 出る 場所で 常時 働く 人に、雇入れ・配置替えの 際と 6か月以内ごとに 1回 行います。"
+ },
+ {
+  "id": "ke-shikahokoku",
+  "name": "歯科健診の結果報告",
+  "reading": "しかけんしんのけっかほうこく",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "kenko:shika",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "ke-shikaishikenshin",
+   "ke-kekkahokoku"
+  ],
+  "description": "歯科医師による 定期の 健康診断の 結果報告は、常時 50人未満の 事業場でも 必要です。一般の 定期健康診断の「50人以上」と ちがいます。"
+ },
+ {
+  "id": "ke-kikokugo",
+  "name": "帰国後の健康診断",
+  "reading": "きこくごのけんこうしんだん",
+  "journey": "kenko",
+  "category": "健診の種類",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛬",
+  "mapNode": "kenko:shika",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kaigaihaken"
+  ],
+  "description": "6か月以上 海外に 派遣した 人を 国内の 業務に つかせる ときに 行う 健康診断です。派遣の 前と 帰国の あとの 両方が 決まりです。"
+ },
+ {
+  "id": "ke-choryoku45",
+  "name": "45歳未満の聴力検査",
+  "reading": "よんじゅうごさいみまんのちょうりょくけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎧",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-choryokukensa",
+   "ke-teikikenshin"
+  ],
+  "description": "45歳未満の 人は、医師が 適当と 認める 方法で 聴力検査を して よいと されます。ただし 35歳と 40歳の 人は 1,000ヘルツと 4,000ヘルツで 調べます。"
+ },
+ {
+  "id": "ke-shoryakudekinai",
+  "name": "省略できない項目",
+  "reading": "しょうりゃくできないこうもく",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-ishishoryaku",
+   "ke-ketsuatsusokutei",
+   "ke-nyokensa"
+  ],
+  "description": "定期健康診断で 医師の 判断でも 省略できない 項目は、既往歴・業務歴の 調査、自覚・他覚症状、血圧、尿の 検査です。年齢に 関係なく 毎回 調べます。"
+ },
+ {
+  "id": "ke-ishishoryaku",
+  "name": "医師が認める省略",
+  "reading": "いしがみとめるしょうりゃく",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-shoryakudekinai",
+   "ke-shinchoshoryaku"
+  ],
+  "description": "定期健康診断の 一部の 項目は、厚生労働大臣の 基準に もとづき 医師が 必要でないと 認めれば 省略できます。決めるのは 事業者では なく 医師で、1人ずつ 判断します。"
+ },
+ {
+  "id": "ke-kyobushoryaku",
+  "name": "胸部エックス線の省略",
+  "reading": "きょうぶえっくすせんのしょうりゃく",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kyobuxsen",
+   "ke-ishishoryaku"
+  ],
+  "description": "胸部エックス線検査は、40歳未満で 20・25・30・35歳の どれでもない 人 などは、医師の 判断で 省略できます。節目の 年は 省略できません。"
+ },
+ {
+  "id": "ke-shinchoshoryaku",
+  "name": "身長の省略",
+  "reading": "しんちょうのしょうりゃく",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-ishishoryaku",
+   "ke-fukuishoryaku"
+  ],
+  "description": "身長の 検査は、20歳以上の 人なら 医師の 判断で 省略できます。大人に なると 身長は ほとんど 変わらない ためです。"
+ },
+ {
+  "id": "ke-fukuishoryaku",
+  "name": "腹囲の省略",
+  "reading": "ふくいのしょうりゃく",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-fukui",
+   "ke-ishishoryaku"
+  ],
+  "description": "腹囲の 検査は、40歳未満の 人(35歳を 除く)や BMI が 20未満の 人 などは、医師の 判断で 省略できます。35歳の 人は 省略できない 点が ひっかけです。"
+ },
+ {
+  "id": "ke-hinketsushoryaku",
+  "name": "貧血などの省略",
+  "reading": "ひんけつなどのしょうりゃく",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-hinketsukensa",
+   "ke-ishishoryaku"
+  ],
+  "description": "貧血・肝機能・血中脂質・血糖・心電図の 検査は、35歳未満と 36〜39歳の 人なら 医師の 判断で 省略できます。35歳と 40歳以上は 省略できません。"
+ },
+ {
+  "id": "ke-komokukaisei",
+  "name": "健診項目の改正",
+  "reading": "けんしんこうもくのかいせい",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🆙",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-kakutan",
+   "ke-creatinine",
+   "ke-kankino"
+  ],
+  "description": "2027年4月から 定期健康診断の 項目が 変わります。喀痰検査が 外れ、血清クレアチニン検査が 加わり、肝機能の 名前が AST などに 改められます。いまは 前の 項目です。"
+ },
+ {
+  "id": "ke-creatinine",
+  "name": "血清クレアチニン検査",
+  "reading": "けっせいくれあちにんけんさ",
+  "journey": "kenko",
+  "category": "健診の項目",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫘",
+  "mapNode": "kenko:teiki",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害以外)",
+  "relatedTerms": [
+   "ke-komokukaisei"
+  ],
+  "description": "腎臓の 働きを 調べる 血液の 検査です。2027年4月から 定期健康診断の 項目に 加わります。40歳未満の 人は 医師の 判断で 省略できます。"
+ }
+]

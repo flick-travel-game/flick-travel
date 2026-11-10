@@ -25,7 +25,8 @@
   ・ふりがなの 直しは `tools/eisei/rbfix-*.json`。見かたは `python3 tools/eisei/ruby_dump.py <旅>`
 - **トップの 絵は 入れた**(2026-11-10。`eisei/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。1回目は 札 36こ中 15こが ゲームに 無い ことば・箱が 9こ(からだのしくみ 1・2 が 1つ)・ゲームに 無い「計算問題」「8じかん × 1.25」・どくろの マーク で 入れなかった。2回目は 10の 箱 × 4こ = 40こ ぜんぶ ゲームの 読み(プログラムで 確かめた)。人は まん中に 大きい(頼んだ 下 3分の1では ない)が けいくんの 絵の まま。もとの 絵は 入れものに 入れていない
 - **アイコンも 入れた**(2026-11-10。けいくんの 四角い 絵 1254px を 切らずに そのまま `tools/eisei/art/square-src.png` → `python3 tools/icon_from_square.py eisei`。`iconv` = 3。札 40こは トップの 絵と 同じで ぜんぶ ゲームの 読み)。仮の アイコンの 台本 `placeholder_icon.py` は もう 使わない
-- 題名: **まだ**(文字で 出している)。前の メモ: **まだ 仮の アイコン**(`tools/eisei/placeholder_icon.py`。`hero=False`・`logo=False`)。けいくんの ChatGPT の 絵が 届いたら square-src.png → `python3 tools/icon_from_square.py eisei`(iconv +1)/ title-src.png → `python3 tools/title_from_art.py eisei`(`art.word` を 実寸・wordv +1)/ hero.webp 1536×1024 → `hero=True`。
+- **題名も 入れた**(2026-11-10。けいくんの ChatGPT の 切りぬき `tools/eisei/art/title-src.png` 2440×624 → `python3 tools/title_from_art.py eisei` → `eisei/logo-word.webp` 900×215。`logo=True`・`wordv` = 3)。「フリック衛生管理者」9字を 読んで 確かめた(衛 も くずれて いない)。⚠️ 届いた PNG には「ク」と「衛」の あいだの 下に 背景の 青い かけらが のこって いたので、title-src.png の 中で 白い ふちの 色に ぬった(差しかえる ときは もう一度 見る)。これで 絵は ぜんぶ 入った
+- (前の メモ: **まだ 仮の アイコン**)(`tools/eisei/placeholder_icon.py`。`hero=False`・`logo=False`)。けいくんの ChatGPT の 絵が 届いたら square-src.png → `python3 tools/icon_from_square.py eisei`(iconv +1)/ title-src.png → `python3 tools/title_from_art.py eisei`(`art.word` を 実寸・wordv +1)/ hero.webp 1536×1024 → `hero=True`。
   ⚠️ 絵を 頼む ときは 実在の 会社・製品・事故を 描かせない。こわい ようす(けが・血)は 描かない。人物は 下 3分の1に 小さく
 - ⭐ **できた 数**(2026-11-10): **ことば 1,000語・⭕❌ 1,270問・🔢 数字クイズ 220問**。科目ごとの ⭕❌: 関係法令(有害以外)359 / 関係法令(有害業務)191 / 労働衛生(有害業務)250 / 労働衛生(有害以外)230 / 労働生理 240。
   作りかた: 事実を 確かめる 係 1人(facts-C)→ 置き場所 1人(plan.json)→ 旅ごとに 書く 係 10人 → **別の 係 10人が 1語・1問ずつ 条文と 見くらべた**(`facts-D.md` = 睡眠ガイド2023・身体活動ガイド2023 の 数字)。

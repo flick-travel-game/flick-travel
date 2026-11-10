@@ -23,7 +23,8 @@
 - ことばは `tools/eisei/terms-<旅>.json`(決まり `PROMPT.md`・確かめる係 `CHECKER.md`・置き場所 `plan.json`)→ `tools/eisei/terms_js.py` → `eisei/terms.js` + `data/eisei.json`。旅・図・称号・模擬試験の 数は `mkmeta.py`(+ `exam.txt`・`mock.json`)→ `meta.json`。確かめ `python3 tools/eisei/terms_js.py --check` / `python3 tools/eisei/maru_check.py`
   ・BAN に「死」「殺」が あるが、法令の ことば「殺菌」「死傷病報告」「脳死」だけは `BAN_WORD_OK` で 通す。「死亡」は 使わず「亡くなった とき」
   ・ふりがなの 直しは `tools/eisei/rbfix-*.json`。見かたは `python3 tools/eisei/ruby_dump.py <旅>`
-- 絵: **まだ 仮の アイコン**(`tools/eisei/placeholder_icon.py`。`hero=False`・`logo=False`)。けいくんの ChatGPT の 絵が 届いたら square-src.png → `python3 tools/icon_from_square.py eisei`(iconv +1)/ title-src.png → `python3 tools/title_from_art.py eisei`(`art.word` を 実寸・wordv +1)/ hero.webp 1536×1024 → `hero=True`。
+- **トップの 絵は 入れた**(2026-11-10。`eisei/hero.webp` 1536×1024・`hero=True`・`wordv` = 2)。けいくんの ChatGPT の 絵の **2回目**。1回目は 札 36こ中 15こが ゲームに 無い ことば・箱が 9こ(からだのしくみ 1・2 が 1つ)・ゲームに 無い「計算問題」「8じかん × 1.25」・どくろの マーク で 入れなかった。2回目は 10の 箱 × 4こ = 40こ ぜんぶ ゲームの 読み(プログラムで 確かめた)。人は まん中に 大きい(頼んだ 下 3分の1では ない)が けいくんの 絵の まま。もとの 絵は 入れものに 入れていない
+- アイコン・題名: **まだ 仮の アイコン**(`tools/eisei/placeholder_icon.py`。`hero=False`・`logo=False`)。けいくんの ChatGPT の 絵が 届いたら square-src.png → `python3 tools/icon_from_square.py eisei`(iconv +1)/ title-src.png → `python3 tools/title_from_art.py eisei`(`art.word` を 実寸・wordv +1)/ hero.webp 1536×1024 → `hero=True`。
   ⚠️ 絵を 頼む ときは 実在の 会社・製品・事故を 描かせない。こわい ようす(けが・血)は 描かない。人物は 下 3分の1に 小さく
 - ⭐ **できた 数**(2026-11-10): **ことば 1,000語・⭕❌ 1,270問・🔢 数字クイズ 220問**。科目ごとの ⭕❌: 関係法令(有害以外)359 / 関係法令(有害業務)191 / 労働衛生(有害業務)250 / 労働衛生(有害以外)230 / 労働生理 240。
   作りかた: 事実を 確かめる 係 1人(facts-C)→ 置き場所 1人(plan.json)→ 旅ごとに 書く 係 10人 → **別の 係 10人が 1語・1問ずつ 条文と 見くらべた**(`facts-D.md` = 睡眠ガイド2023・身体活動ガイド2023 の 数字)。

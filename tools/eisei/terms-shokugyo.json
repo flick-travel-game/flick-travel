@@ -1,0 +1,1819 @@
+[
+ {
+  "id": "sh-netchusho",
+  "name": "熱中症",
+  "reading": "ねっちゅうしょう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥵",
+  "mapNode": "shokugyo:netsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-netchushoyobo",
+   "sh-nesshabyo",
+   "sh-alert"
+  ],
+  "description": "暑い 場所で 体温の 調節が うまく いかず、めまいや 頭痛 などが 出る 状態です。2025年6月から、WBGT 28度以上 または 気温 31度以上で 一定の 時間 作業する 職場では、報告の 体制と 手順を 決める ことが 義務に なりました。"
+ },
+ {
+  "id": "sh-netchushoyobo",
+  "name": "熱中症の予防",
+  "reading": "ねっちゅうしょうのよぼう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "shokugyo:netsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-netchusho",
+   "sh-enbun"
+  ],
+  "description": "水分と 塩分を こまめに とり、涼しい 場所で 休む ことが 熱中症の 予防の 基本です。暑さに 体を 慣らす 暑熱順化は 7日以上 かけて 少しずつ 進めます。衛生管理者は WBGT を 見て 作業の 時間を 調整します。"
+ },
+ {
+  "id": "sh-tosho",
+  "name": "凍傷",
+  "reading": "とうしょう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🥶",
+  "mapNode": "shokugyo:reisho",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-toso",
+   "sh-teitaion"
+  ],
+  "description": "強い 寒さで 皮膚や その下の 組織が こおって いたむ 障害です。冷凍倉庫や 冬の 屋外の 作業で 起こりえます。業務上疾病の 一覧でも、寒冷な 場所での 業務による 病気として 凍傷が 挙げられて います。"
+ },
+ {
+  "id": "sh-teitaion",
+  "name": "低体温症",
+  "reading": "ていたいおんしょう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧣",
+  "mapNode": "shokugyo:reisho",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-shinbu",
+   "sh-tosho"
+  ],
+  "description": "寒さで 体の 中心の 温度(深部体温)が 下がり、ふるえや 動きの にぶさが 出る 状態です。冷たい 水や 風に ぬれた ままの 作業で 起こりやすいので、防寒具と あたたかい 休けい場所を 用意します。"
+ },
+ {
+  "id": "sh-chudoku",
+  "name": "中毒",
+  "reading": "ちゅうどく",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "shokugyo:chudoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-bakuro",
+   "sh-kyusei",
+   "sh-mansei"
+  ],
+  "description": "有害な 物が からだに 入り、からだの 働きが みだれる ことです。職場では 吸いこむ・皮膚に つく・口に 入る の 3つの 道が あります。衛生管理者は どの 道から 入るかを 考えて、ふせぐ 手を 選びます。"
+ },
+ {
+  "id": "sh-shippei",
+  "name": "職業性疾病",
+  "reading": "しょくぎょうせいしっぺい",
+  "journey": "shokugyo",
+  "category": "仕事と病気",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "shokugyo:byoki",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-gyomujo",
+   "sh-kanren"
+  ],
+  "description": "仕事の 中の 有害な 要因(化学物質・粉じん・暑さ・騒音・振動 など)で 起こる 病気です。原因が はっきり している ので、作業環境・作業・健康の 3つの 管理で ふせぐ ことが できます。"
+ },
+ {
+  "id": "sh-issankatanso",
+  "name": "一酸化炭素",
+  "reading": "いっさんかたんそ",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-cochudoku",
+   "sh-cohb"
+  ],
+  "description": "色も においも ない ガスで、燃料が 不完全燃焼 すると 出ます。空気と ほぼ 同じ 重さです。血液の ヘモグロビンと 結びつきやすく、からだに 酸素が 届きにくく なります。屋内での エンジンや 炭火の 使用に 注意します。"
+ },
+ {
+  "id": "sh-hifuen",
+  "name": "皮膚炎",
+  "reading": "ひふえん",
+  "journey": "shokugyo",
+  "category": "皮膚と眼",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "shokugyo:hifu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-kabure",
+   "sh-sesshoku"
+  ],
+  "description": "薬品・油・洗剤 などで 皮膚が 赤く なったり かゆく なったり する 状態です。手袋や 保護衣で ふれない ように する ことが 予防の 基本です。業務上疾病の 一覧にも 皮膚の 障害が 多く 挙げられて います。"
+ },
+ {
+  "id": "sh-kabure",
+  "name": "かぶれ",
+  "reading": "かぶれ",
+  "journey": "shokugyo",
+  "category": "皮膚と眼",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "shokugyo:hifu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-hifuen",
+   "sh-sesshoku"
+  ],
+  "description": "皮膚炎の 身近な 言いかたです。セメント・溶剤・洗剤 などで 起こる ことが あります。かぶれた 人が いたら 何に ふれたかを 聞いて、手袋の 種類や 作業の しかたを 見直します。"
+ },
+ {
+  "id": "sh-hiyake",
+  "name": "日焼け",
+  "reading": "ひやけ",
+  "journey": "shokugyo",
+  "category": "皮膚と眼",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☀️",
+  "mapNode": "shokugyo:hifu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-denko",
+   "sh-menoshogai"
+  ],
+  "description": "日光の 紫外線で 皮膚が 赤く なる 状態です。屋外の 作業では 長そで・帽子で 肌を 守ります。紫外線は 皮膚の ほかに 目の 角膜も いためるので、溶接の 光にも 注意します。"
+ },
+ {
+  "id": "sh-menoshogai",
+  "name": "目の障害",
+  "reading": "めのしょうがい",
+  "journey": "shokugyo",
+  "category": "皮膚と眼",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👁️",
+  "mapNode": "shokugyo:hifu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-denko",
+   "sh-hakunaisho",
+   "sh-momaku"
+  ],
+  "description": "強い 光・熱・薬品の しぶき などで 目を いためる ことです。紫外線は 角膜、赤外線や レーザー光線は 網膜を いためやすいと されます。作業に 合った 保護めがねや 遮光の 保護具を 使います。"
+ },
+ {
+  "id": "sh-jinpai",
+  "name": "じん肺",
+  "reading": "じんぱい",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "shokugyo:jinpai",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-keihai",
+   "sh-seni",
+   "sh-gappei"
+  ],
+  "description": "粉じんを 長く 吸いこみ、肺に 線維が ふえて かたく なる 病気です。じん肺法で 健康診断と じん肺管理区分(管理1〜4)が 決められて います。かたく なった 肺は もとに もどりにくいので、吸わせない ことが 大切です。"
+ },
+ {
+  "id": "sh-shokugyogan",
+  "name": "職業がん",
+  "reading": "しょくぎょうがん",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎗️",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-chuhishu",
+   "sh-hakketsubyo",
+   "sh-hatsugan"
+  ],
+  "description": "仕事で ふれた 物質が 原因で 起こる がんです。石綿の 肺がん・中皮腫、ベンゼンの 白血病、塩化ビニルの 肝臓の がん などが 業務上疾病の 一覧に あります。何年も たってから 出る ことが あり、記録を 長く 残します。"
+ },
+ {
+  "id": "sh-sanketsusho",
+  "name": "酸素欠乏症",
+  "reading": "さんそけつぼうしょう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🕳️",
+  "mapNode": "shokugyo:genatsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-ryukasuisochudoku",
+   "sh-chissokusei"
+  ],
+  "description": "酸素が 足りない 空気を 吸って 起こる 障害です。酸欠則では 空気中の 酸素が 18%未満の 状態を 酸素欠乏と いいます。タンクや マンホールの 中で 起こりやすく、作業の 前に 酸素の 濃度を 測ります。"
+ },
+ {
+  "id": "sh-bakuro",
+  "name": "ばく露",
+  "reading": "ばくろ",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "shokugyo:chudoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-chudoku",
+   "sh-ryohanno"
+  ],
+  "description": "有害な 物質や 暑さ・騒音 などに からだが さらされる ことです。ばく露の 量と 時間が ふえるほど 影響が 大きく なりやすいので、衛生管理者は ばく露を へらす 工夫を 考えます。"
+ },
+ {
+  "id": "sh-netsukeiren",
+  "name": "熱けいれん",
+  "reading": "ねつけいれん",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦵",
+  "mapNode": "shokugyo:netsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-enbun",
+   "sh-netsuhiro"
+  ],
+  "description": "大量の 汗で 塩分が 失われ、筋肉が つったり かたく なったり する 状態です。熱中症の 分類では Ⅰ度 に 入ります。水だけで なく 塩分も とる ことが 予防に なります。"
+ },
+ {
+  "id": "sh-netsuhiro",
+  "name": "熱疲労",
+  "reading": "ねつひろう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "😩",
+  "mapNode": "shokugyo:netsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-netsukeiren",
+   "sh-nesshabyo"
+  ],
+  "description": "汗で 水分と 塩分を 失い、頭痛・吐き気・だるさ などが 出る 状態です。熱中症の 分類では Ⅱ度 に 入ります。集中力や 判断力も 下がるので、早めに 作業から 離れて 休みます。"
+ },
+ {
+  "id": "sh-nesshabyo",
+  "name": "熱射病",
+  "reading": "ねっしゃびょう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚑",
+  "mapNode": "shokugyo:netsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-netsuhiro",
+   "sh-shinbu"
+  ],
+  "description": "体温の 調節が きかなく なり、体温が 高く なって 意識の 障害が 出る 重い 状態です。いまの 要綱の 分類では Ⅲ度・Ⅳ度 に 入ります。前は Ⅰ〜Ⅲ度 の 3つで 分けて いました。すぐに 救急の 手配を します。"
+ },
+ {
+  "id": "sh-netsushisshin",
+  "name": "熱失神",
+  "reading": "ねつしっしん",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💫",
+  "mapNode": "shokugyo:netsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-netsukeiren",
+   "sh-netchusho"
+  ],
+  "description": "暑さの 中で 体温を 下げる ために 皮膚の 血管が 広がり、脳への 血流が 一時的に 減って、立ちくらみや 失神が 起こる 状態です。熱中症の 分類では Ⅰ度 に 入ります。ひっかけ: 「失神」でも Ⅲ度 では なく Ⅰ度 です。"
+ },
+ {
+  "id": "sh-cochudoku",
+  "name": "一酸化炭素中毒",
+  "reading": "いっさんかたんそちゅうどく",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-issankatanso",
+   "sh-cohb"
+  ],
+  "description": "一酸化炭素が ヘモグロビンと 結びつき、からだが 酸素 不足に なる 中毒です。頭痛・めまい から 意識の 障害まで 出ます。あとから 記憶の 低下 などの 精神・神経の 障害が 出る ことも あります。"
+ },
+ {
+  "id": "sh-ryukasuisochudoku",
+  "name": "硫化水素中毒",
+  "reading": "りゅうかすいそちゅうどく",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-ryukasuiso",
+   "sh-sanketsusho"
+  ],
+  "description": "下水・汚水の 槽・タンク などで 出る 硫化水素を 吸って 起こる 中毒です。酸欠則では 10ppm を こえる 硫化水素を 吸って 起こる 症状と されます。目や 気道・肺を いため、呼吸の 中枢に 害が 出る ことも あります。"
+ },
+ {
+  "id": "sh-yukichudoku",
+  "name": "有機溶剤中毒",
+  "reading": "ゆうきようざいちゅうどく",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "shokugyo:yukiyo",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-yokusei",
+   "sh-toluene",
+   "sh-dasshi"
+  ],
+  "description": "有機溶剤の 蒸気を 吸ったり 皮膚から 入ったり して 起こる 中毒です。頭痛・めまい や、麻酔のような 中枢神経の 抑制が 出ます。有機則で 局所排気装置・掲示・特殊健康診断(6月以内ごと)が 決められて います。"
+ },
+ {
+  "id": "sh-tahatsu",
+  "name": "多発性神経炎",
+  "reading": "たはつせいしんけいえん",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦶",
+  "mapNode": "shokugyo:yukiyo",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-hexane",
+   "sh-masshoshogai"
+  ],
+  "description": "手足の 末梢神経が いくつも 同時に いたみ、しびれや 力の 入りにくさが 出る 状態です。ノルマルヘキサンの 代表的な 障害です。ひっかけ: ノルマルヘキサンは 中枢では なく 末梢神経の 障害です。"
+ },
+ {
+  "id": "sh-namarichudoku",
+  "name": "鉛中毒",
+  "reading": "なまりちゅうどく",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "shokugyo:kinzoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-ala",
+   "sh-ketchunamari"
+  ],
+  "description": "鉛の 粉じんや ヒュームを 吸いこんで 起こる 中毒で、貧血・腹痛(疝痛)・便秘・末梢神経の 障害 などが 出ます。鉛健康診断では 血液中の 鉛と 尿中の デルタアミノレブリン酸を 調べます。"
+ },
+ {
+  "id": "sh-suigin",
+  "name": "水銀中毒",
+  "reading": "すいぎんちゅうどく",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "shokugyo:kinzoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-mansei",
+   "sh-masshoshogai"
+  ],
+  "description": "水銀の 蒸気 などで 起こる 中毒で、手の ふるえ(振せん)・歩行の 障害、いらいら・不眠 などの 精神の 症状、腎臓の 障害が 出ます。金属の 水銀は ふつうの 温度でも 蒸発するので 換気が 大切です。"
+ },
+ {
+  "id": "sh-cadmium",
+  "name": "カドミウム中毒",
+  "reading": "かどみうむちゅうどく",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "shokugyo:kinzoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-mansei",
+   "sh-kuromu"
+  ],
+  "description": "カドミウムの ヒュームや 粉じんで 起こる 中毒です。気道・肺の 障害、腎臓の 障害、骨が やわらかく なる 骨軟化が 告示に 挙げられて います。健診では 尿中の ベータ2-ミクログロブリンを 調べます。"
+ },
+ {
+  "id": "sh-kuromu",
+  "name": "クロム中毒",
+  "reading": "くろむちゅうどく",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "shokugyo:kinzoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-bichukaku",
+   "sh-haigan"
+  ],
+  "description": "クロム酸 などで 起こる 障害で、皮膚の 障害・鼻中隔穿孔・気道や 肺の 障害が 出ます。クロム酸塩の 製造では 肺がん・上気道の がんも 業務上疾病の 一覧に あります。"
+ },
+ {
+  "id": "sh-chuhishu",
+  "name": "中皮腫",
+  "reading": "ちゅうひしゅ",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎗️",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-sekimenhai",
+   "sh-haigan"
+  ],
+  "description": "胸膜や 腹膜 などに できる がんで、石綿(アスベスト)が 原因に なります。吸ってから 長い 年月の あとに 出る ことが あるため、石綿則で 作業の 記録や 健診の 記録を 40年 保存します。"
+ },
+ {
+  "id": "sh-haigan",
+  "name": "肺がん",
+  "reading": "はいがん",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-chuhishu",
+   "sh-kuromu",
+   "sh-hiso"
+  ],
+  "description": "肺に できる がんです。石綿・クロム酸塩の 製造・砒素・ベリリウム・電離放射線 などが 原因として 業務上疾病の 一覧に あります。たばこの 影響も 大きいので、職場の 禁煙も あわせて すすめます。"
+ },
+ {
+  "id": "sh-keihai",
+  "name": "けい肺",
+  "reading": "けいはい",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛏️",
+  "mapNode": "shokugyo:jinpai",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-jinpai",
+   "sh-seni"
+  ],
+  "description": "岩石や 砂に ふくまれる 遊離けい酸の 粉じんを 吸って 起こる じん肺です。トンネル・採石・鋳物 などの 作業で 問題に なります。じん肺の 中で 代表的な ものです。"
+ },
+ {
+  "id": "sh-sekimenhai",
+  "name": "石綿肺",
+  "reading": "せきめんはい",
+  "acceptedReadings": [
+   "せきめんはい",
+   "いしわたはい"
+  ],
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏚️",
+  "mapNode": "shokugyo:jinpai",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-chuhishu",
+   "sh-jinpai"
+  ],
+  "description": "石綿の 粉じんを 長く 吸って 起こる じん肺です。石綿は 肺がんや 中皮腫の 原因にも なります。いまは 石綿の 製造・使用は 禁止ですが、古い 建物の 解体・改修では 事前調査が 必要です。"
+ },
+ {
+  "id": "sh-genatsusho",
+  "name": "減圧症",
+  "reading": "げんあつしょう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤿",
+  "mapNode": "shokugyo:genatsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-bends",
+   "sh-chokes",
+   "sh-kukisokusen"
+  ],
+  "description": "高い 気圧から 急に 気圧を 下げた ときに、からだに とけていた 窒素が 気泡に なって 起こる 障害です。潜水や 圧気工事で 起こりえます。高圧則では 減圧の 速さを 毎分 0.08MPa 以下と して います。"
+ },
+ {
+  "id": "sh-sansochudoku",
+  "name": "酸素中毒",
+  "reading": "さんそちゅうどく",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "shokugyo:genatsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-chissoyoi",
+   "sh-genatsusho"
+  ],
+  "description": "高い 分圧の 酸素を 吸いつづけて 起こる 中毒で、高圧則の 高気圧障害の 1つです。酸素の 分圧は 18kPa から 160kPa までに 保つよう 決められて います。酸素は 多ければ よい わけでは ありません。"
+ },
+ {
+  "id": "sh-nancho",
+  "name": "騒音性難聴",
+  "reading": "そうおんせいなんちょう",
+  "journey": "shokugyo",
+  "category": "仕事と病気",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔊",
+  "mapNode": "shokugyo:byoki",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-shippei",
+   "sh-gyomujo"
+  ],
+  "description": "大きな 音を 長く 聞きつづけて 起こる 聞こえの 障害です。はじめは 4,000Hz あたりの 高い 音から 聞こえにくく なります。騒音の 健診では 1,000Hz と 4,000Hz の 聴力を 調べます。"
+ },
+ {
+  "id": "sh-hakuro",
+  "name": "白ろう病",
+  "reading": "はくろうびょう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪚",
+  "mapNode": "shokugyo:reisho",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-raynaud",
+   "sh-shindoshogai"
+  ],
+  "description": "チェーンソー などの 振動工具を 長く 使い、指の 血管が 縮んで 白く なる 状態です。振動障害の 代表的な 症状 レイノー現象の 別名で、寒い ときに 出やすく なります。"
+ },
+ {
+  "id": "sh-shindoshogai",
+  "name": "振動障害",
+  "reading": "しんどうしょうがい",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📳",
+  "mapNode": "shokugyo:reisho",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-hakuro",
+   "sh-masshoshogai"
+  ],
+  "description": "手や 腕から 入る 振動で 起こる、血管(末梢循環)・神経(末梢神経)・骨や 関節(運動器)の 障害です。指針では 日振動ばく露量 A(8) で 管理し、限界値の 5.0m/s² を こえては いけません。"
+ },
+ {
+  "id": "sh-toso",
+  "name": "凍瘡",
+  "reading": "とうそう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧊",
+  "mapNode": "shokugyo:reisho",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-tosho",
+   "sh-teitaion"
+  ],
+  "description": "しもやけの ことです。こおる ほどでは ない 寒さと ぬれた 状態が 続いて、手足の 先が 赤く はれたり かゆく なったり します。ひっかけ: 凍傷は 組織が こおる 障害、凍瘡は こおらない 寒さでも 起こります。"
+ },
+ {
+  "id": "sh-denko",
+  "name": "電光性眼炎",
+  "reading": "でんこうせいがんえん",
+  "journey": "shokugyo",
+  "category": "皮膚と眼",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥽",
+  "mapNode": "shokugyo:hifu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-hiyake",
+   "sh-menoshogai"
+  ],
+  "description": "アーク溶接の 強い 紫外線で 目の 角膜が 炎症を 起こす 障害です。作業の あと しばらく たってから 目の 痛みや 充血が 出る ことが あります。雪の 照り返しで 起こる 雪眼炎と 同じ しくみで、遮光保護具で ふせぎます。"
+ },
+ {
+  "id": "sh-hakunaisho",
+  "name": "白内障",
+  "reading": "はくないしょう",
+  "journey": "shokugyo",
+  "category": "皮膚と眼",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "shokugyo:hifu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-momaku",
+   "sh-menoshogai"
+  ],
+  "description": "目の 水晶体が にごる 病気です。職場では 赤外線(ガラスや 金属を とかす 作業)・マイクロ波・電離放射線が 原因に なります。ひっかけ: 業務上疾病の 一覧では、紫外線は 角膜 などの 前眼部の 病気です。"
+ },
+ {
+  "id": "sh-monitoring",
+  "name": "生物学的モニタリング",
+  "reading": "せいぶつがくてきもにたりんぐ",
+  "journey": "shokugyo",
+  "category": "生物学的モニタリング",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧫",
+  "mapNode": "shokugyo:monitoring",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-banyosan",
+   "sh-kyoyochi"
+  ],
+  "description": "尿や 血液を 調べて、からだに 入った 有害物の 量や 影響を みる ことです。作業環境測定が 空気を 測るのに 対し、こちらは 一人ひとりの からだを 測ります。特殊健康診断の 項目にも 入って います。"
+ },
+ {
+  "id": "sh-banyosan",
+  "name": "馬尿酸",
+  "reading": "ばにょうさん",
+  "journey": "shokugyo",
+  "category": "生物学的モニタリング",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "shokugyo:monitoring",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-toluene",
+   "sh-mechiru"
+  ],
+  "description": "トルエンが からだの 中で 変わって 尿に 出る 物質です。有機則の 健診で、トルエンを 扱う 人の 尿中の 馬尿酸を 調べます。ひっかけ: キシレンは メチル馬尿酸です。"
+ },
+ {
+  "id": "sh-kanren",
+  "name": "作業関連疾患",
+  "reading": "さぎょうかんれんしっかん",
+  "journey": "shokugyo",
+  "category": "仕事と病気",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💼",
+  "mapNode": "shokugyo:byoki",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-kajurodo",
+   "sh-keikenwan"
+  ],
+  "description": "高血圧・腰痛・心の 病気 などのように、仕事が 原因の 1つに なったり 悪くなる きっかけに なったり する 病気です。仕事だけが 原因では ないので、職場と くらしの 両方から ふせぎます。"
+ },
+ {
+  "id": "sh-kyusei",
+  "name": "急性中毒",
+  "reading": "きゅうせいちゅうどく",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "shokugyo:chudoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-mansei",
+   "sh-chudoku"
+  ],
+  "description": "短い 時間に 多くの 有害物に さらされて 起こる 中毒です。タンクの 中の 有機溶剤の 蒸気や 一酸化炭素 などで、急に 意識が 遠のく ことが あります。換気と 作業前の 測定で ふせぎます。"
+ },
+ {
+  "id": "sh-mansei",
+  "name": "慢性中毒",
+  "reading": "まんせいちゅうどく",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "shokugyo:chudoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-kyusei",
+   "sh-namarichudoku"
+  ],
+  "description": "少ない 量でも 長い 期間 さらされ 続けて 起こる 中毒です。鉛・水銀・有機溶剤 などで 見られます。気づきにくいので、特殊健康診断で 早く 見つける ことが 大切です。"
+ },
+ {
+  "id": "sh-hatsugan",
+  "name": "発がん性物質",
+  "reading": "はつがんせいぶっしつ",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "☢️",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-shokugyogan",
+   "sh-benzidine"
+  ],
+  "description": "がんを 起こす おそれの ある 物質です。特化則では 特別管理物質として、作業の 記録や 健診の 記録を 30年 保存します。化学物質の 自律的管理でも、がん原性物質の ばく露の 記録を 30年 残します。"
+ },
+ {
+  "id": "sh-ryohanno",
+  "name": "量反応関係",
+  "reading": "りょうはんのうかんけい",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "shokugyo:chudoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-bakuro",
+   "sh-kyoyochi"
+  ],
+  "description": "からだに 入る 有害物の 量が ふえるほど、影響が 強く なったり 影響が 出る 人の 割合が ふえたり する 関係です。許容濃度 などの 考えかたの もとに なり、量を へらせば 影響も へらせる ことを 示します。"
+ },
+ {
+  "id": "sh-shigekisei",
+  "name": "刺激性ガス",
+  "reading": "しげきせいがす",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "😷",
+  "mapNode": "shokugyo:chudoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-enso",
+   "sh-ammonia",
+   "sh-nisankachisso"
+  ],
+  "description": "目・鼻・のど・気道の 粘膜を 刺激して いためる ガスです。塩素・アンモニア・二酸化窒素 などが あります。水に とけやすい ものは 上の 気道を、とけにくい ものは 肺の 奥を いためやすいと いう ちがいが あります。"
+ },
+ {
+  "id": "sh-kansa",
+  "name": "感作",
+  "reading": "かんさ",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤧",
+  "mapNode": "shokugyo:chudoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-zensoku",
+   "sh-sesshoku"
+  ],
+  "description": "ある 物質に 一度 ふれた あと、からだが その 物質に 過敏に なる ことです。次に 少し ふれただけで 皮膚炎や ぜんそくが 出る ことが あります。ひっかけ: 量が 少なくても 起こるので、ふれない 工夫が 大切です。"
+ },
+ {
+  "id": "sh-chissokusei",
+  "name": "窒息性ガス",
+  "reading": "ちっそくせいがす",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-cyan",
+   "sh-issankatanso"
+  ],
+  "description": "からだが 酸素を 使えなく なる ガスです。一酸化炭素は 酸素を 運べなく し、シアン化水素や 硫化水素は 細胞が 酸素を 使う 働きを さまたげます。窒素の ように 酸素を うすめる だけの ガスも 酸欠の 原因に なります。"
+ },
+ {
+  "id": "sh-cohb",
+  "name": "一酸化炭素ヘモグロビン",
+  "reading": "いっさんかたんそへもぐろびん",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-cochudoku",
+   "sh-issankatanso"
+  ],
+  "description": "一酸化炭素が ヘモグロビンと 結びついた もので、酸素を 運べません。一酸化炭素は 酸素よりも ずっと ヘモグロビンと 結びつきやすいので、うすい 濃度でも 長く 吸うと ふえて いきます。"
+ },
+ {
+  "id": "sh-cyan",
+  "name": "シアン化水素",
+  "reading": "しあんかすいそ",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-chissokusei",
+   "sh-shigekisei"
+  ],
+  "description": "シアン化合物の ガスで、細胞が 酸素を 使う 働き(細胞の 呼吸)を さまたげます。頭痛・めまい から、呼吸の 困難・けいれん・意識の 障害まで 出る ことが 告示に あります。めっき などで 扱われます。"
+ },
+ {
+  "id": "sh-enso",
+  "name": "塩素",
+  "reading": "えんそ",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟢",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-shigekisei",
+   "sh-ammonia"
+  ],
+  "description": "黄緑色の 刺激性ガスです。目・気道・肺を いため、歯が とける 歯牙酸蝕も 告示に あります。特化則の 第2類物質です。清掃の 薬剤の まぜあわせでも 出る ことが あるので、職場の 清掃でも 注意します。"
+ },
+ {
+  "id": "sh-nisankachisso",
+  "name": "二酸化窒素",
+  "reading": "にさんかちっそ",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-shigekisei",
+   "sh-enso"
+  ],
+  "description": "水に とけにくい 刺激性ガスで、上の 気道では 気づきにくく、肺の 奥まで 届きます。目や 気道・肺の 障害が 出ます。溶接や エンジンの 排気 などで 出る ことが あります。"
+ },
+ {
+  "id": "sh-ryukasuiso",
+  "name": "硫化水素",
+  "reading": "りゅうかすいそ",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥚",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-ryukasuisochudoku",
+   "sh-chissokusei"
+  ],
+  "description": "卵が くさったような においの ガスで、空気より 重く 低い ところに たまります。ひっかけ: 濃い ときは 鼻が きかなく なり、においでは 気づけません。第2種酸素欠乏危険作業では 10ppm 以下に 保ちます。"
+ },
+ {
+  "id": "sh-ammonia",
+  "name": "アンモニア",
+  "reading": "あんもにあ",
+  "journey": "shokugyo",
+  "category": "中毒とガス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧴",
+  "mapNode": "shokugyo:gas",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-shigekisei",
+   "sh-enso"
+  ],
+  "description": "鼻を つく においの 刺激性ガスで、水に とけやすく、目・鼻・のど など 上の 気道を いためます。特化則の 第3類物質です。冷凍設備 などで 扱われます。防毒マスクの 吸収缶は 緑色です。"
+ },
+ {
+  "id": "sh-toluene",
+  "name": "トルエン",
+  "reading": "とるえん",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖌️",
+  "mapNode": "shokugyo:yukiyo",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-banyosan",
+   "sh-yokusei"
+  ],
+  "description": "塗料や 接着剤に 使われる 有機溶剤(有機則の 第2種)です。頭痛・めまい や 中枢神経の 抑制が 出ます。健診では 尿中の 馬尿酸で、からだに 入った 量を 調べます。"
+ },
+ {
+  "id": "sh-xylene",
+  "name": "キシレン",
+  "reading": "きしれん",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛢️",
+  "mapNode": "shokugyo:yukiyo",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-mechiru",
+   "sh-toluene"
+  ],
+  "description": "塗料の うすめ液 などに 使われる 有機溶剤(有機則の 第2種)です。健診では 尿中の メチル馬尿酸を 調べます。ひっかけ: 馬尿酸は トルエン、メチル馬尿酸は キシレンです。"
+ },
+ {
+  "id": "sh-hexane",
+  "name": "ノルマルヘキサン",
+  "reading": "のるまるへきさん",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧯",
+  "mapNode": "shokugyo:yukiyo",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-tahatsu",
+   "sh-hexanedione"
+  ],
+  "description": "接着剤や 油の 抽出 などに 使われる 有機溶剤(有機則の 第2種)です。手足の しびれ など 末梢神経の 障害(多発性神経炎)を 起こします。健診では 尿中の 2,5-ヘキサンジオンを 調べます。"
+ },
+ {
+  "id": "sh-nisuka",
+  "name": "二硫化炭素",
+  "reading": "にりゅうかたんそ",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "shokugyo:yukiyo",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-yukichudoku",
+   "sh-masshoshogai"
+  ],
+  "description": "有機則の 第1種有機溶剤で、区分の 色は 赤です。せん妄・躁うつ などの 精神の 障害、網膜の 変化を ともなう 脳血管の 障害 などを 起こします。健診では 尿ではなく 眼底検査を 行います。"
+ },
+ {
+  "id": "sh-methanol",
+  "name": "メタノール",
+  "reading": "めたのーる",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍶",
+  "mapNode": "shokugyo:yukiyo",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-yokusei",
+   "sh-hexane"
+  ],
+  "description": "有機溶剤(有機則の 第2種)の 1つで、メチルアルコールとも いいます。中枢神経の 抑制の ほか、視神経の 障害を 起こす ことで 知られます。ひっかけ: 視神経は メタノール、末梢神経は ノルマルヘキサンです。"
+ },
+ {
+  "id": "sh-yokusei",
+  "name": "中枢神経の抑制",
+  "reading": "ちゅうすうしんけいのよくせい",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "😪",
+  "mapNode": "shokugyo:yukiyo",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-yukichudoku",
+   "sh-toluene"
+  ],
+  "description": "有機溶剤 などが 脳の 働きを おさえ、麻酔のように 眠けや ふらつき、意識の 低下を 起こす ことです。有機溶剤の 多くに 共通する 作用で、トルエンや ベンゼンでも 告示に 挙げられて います。"
+ },
+ {
+  "id": "sh-dasshi",
+  "name": "皮膚の脱脂",
+  "reading": "ひふのだっし",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤲",
+  "mapNode": "shokugyo:yukiyo",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-yukichudoku",
+   "sh-sesshoku"
+  ],
+  "description": "有機溶剤が 皮膚の あぶらを とかして うばい、皮膚が かさかさに 荒れる ことです。有機溶剤は 皮膚からも 吸収されるので、手で ふれない ように 溶剤に 合った 手袋を 使います。"
+ },
+ {
+  "id": "sh-kinzokunetsu",
+  "name": "金属熱",
+  "reading": "きんぞくねつ",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔥",
+  "mapNode": "shokugyo:kinzoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-yosetsukohai",
+   "sh-cadmium"
+  ],
+  "description": "亜鉛 などの 金属を とかす 作業や 溶接で 出る ヒュームを 吸い、数時間 あとに 発熱・寒け・筋肉の 痛み・だるさ などが 出る 状態です。ひっかけ: 暑さでは なく 金属の ヒュームが 原因です。"
+ },
+ {
+  "id": "sh-mangan",
+  "name": "マンガン中毒",
+  "reading": "まんがんちゅうどく",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧲",
+  "mapNode": "shokugyo:kinzoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-suigin",
+   "sh-masshoshogai"
+  ],
+  "description": "マンガンの 粉じんや ヒュームで 起こる 中毒で、言葉や 歩きかたの 障害・ふるえ など、パーキンソン症候群に 似た 神経の 症状が 出ます。特化則の 第2類物質で、女性の 就業が 制限される 物質にも 入ります。"
+ },
+ {
+  "id": "sh-beryllium",
+  "name": "ベリリウム中毒",
+  "reading": "べりりうむちゅうどく",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💎",
+  "mapNode": "shokugyo:kinzoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-haigan",
+   "sh-hiso"
+  ],
+  "description": "ベリリウムで 起こる 中毒で、皮膚・目・気道や 肺の 障害が 出ます。肺がんの 原因としても 業務上疾病の 一覧に あります。特化則の 第1類物質で、製造には 厚生労働大臣の 許可が いります。"
+ },
+ {
+  "id": "sh-hiso",
+  "name": "砒素",
+  "reading": "ひそ",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪨",
+  "mapNode": "shokugyo:kinzoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-bichukaku",
+   "sh-haigan"
+  ],
+  "description": "砒素の 化合物 などで 起こる 障害で、皮膚の 障害・鼻中隔穿孔・末梢神経の 障害 などが 出ます。砒素を ふくむ 鉱石の 製錬では、肺がん・皮膚がんが 業務上疾病の 一覧に あります。"
+ },
+ {
+  "id": "sh-bichukaku",
+  "name": "鼻中隔穿孔",
+  "reading": "びちゅうかくせんこう",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👃",
+  "mapNode": "shokugyo:kinzoku",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-kuromu",
+   "sh-hiso"
+  ],
+  "description": "鼻の 左右を 仕切る 鼻中隔に 穴が あく 障害です。クロム酸 などの クロムや 砒素の 化合物で 起こると 告示に あります。ひっかけ: 鼻中隔穿孔は 鉛や 水銀では なく、クロムと 砒素です。"
+ },
+ {
+  "id": "sh-benzene",
+  "name": "ベンゼン",
+  "reading": "べんぜん",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-saiseifuryo",
+   "sh-hakketsubyo"
+  ],
+  "description": "特化則の 第2類物質で、血を つくる 働きを いため、再生不良性貧血 などを 起こします。がんでは 白血病の 原因です。ひっかけ: いまの 健診は 尿中の フェノールでは なく、血液の 検査です。"
+ },
+ {
+  "id": "sh-saiseifuryo",
+  "name": "再生不良性貧血",
+  "reading": "さいせいふりょうせいひんけつ",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦴",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-benzene",
+   "sh-hakketsubyo"
+  ],
+  "description": "骨髄で 血を つくる 力が 下がり、赤血球・白血球・血小板が 減る 病気です。職場では ベンゼンや 電離放射線が 原因として、業務上疾病の 一覧に あります。"
+ },
+ {
+  "id": "sh-hakketsubyo",
+  "name": "白血病",
+  "reading": "はっけつびょう",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧬",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-benzene",
+   "sh-saiseifuryo"
+  ],
+  "description": "血液の がんで、職場では ベンゼンや 電離放射線が 原因として 業務上疾病の 一覧に あります。電離放射線の 健診では 白血球数や 白血球百分率を 調べます。"
+ },
+ {
+  "id": "sh-boko",
+  "name": "膀胱がん",
+  "reading": "ぼうこうがん",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚻",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-benzidine",
+   "sh-shokugyogan"
+  ],
+  "description": "尿を ためる 膀胱に できる がんです。ベンジジンや ベータ-ナフチルアミン などは 尿路系の 腫瘍を、オルト-トルイジンは 膀胱がんを 起こすと 業務上疾病の 一覧に あります。"
+ },
+ {
+  "id": "sh-benzidine",
+  "name": "ベンジジン",
+  "reading": "べんじじん",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-boko",
+   "sh-hatsugan"
+  ],
+  "description": "染料の 原料に 使われた 物質で、膀胱 などの 尿路系の 腫瘍を 起こします。いまは 安衛法55条で 製造・使用 などが 禁止されて います(試験研究の ための ものは 例外)。"
+ },
+ {
+  "id": "sh-enkabinil",
+  "name": "塩化ビニル",
+  "reading": "えんかびにる",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-shokugyogan",
+   "sh-boko"
+  ],
+  "description": "プラスチックの 原料に なる 物質です。肝臓の 血管肉腫や 肝細胞がんの 原因として 業務上疾病の 一覧に あります。特化則の 第2類物質です。ひっかけ: 膀胱がんでは なく 肝臓の がんです。"
+ },
+ {
+  "id": "sh-tankan",
+  "name": "胆管がん",
+  "reading": "たんかんがん",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖨️",
+  "mapNode": "shokugyo:gan",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-shokugyogan",
+   "sh-enkabinil"
+  ],
+  "description": "胆汁の 通り道に できる がんです。洗浄剤 などに 使われた 1,2-ジクロロプロパンや ジクロロメタンが 原因として、業務上疾病の 一覧に 入って います。"
+ },
+ {
+  "id": "sh-seni",
+  "name": "肺の線維化",
+  "reading": "はいのせんいか",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧵",
+  "mapNode": "shokugyo:jinpai",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-jinpai",
+   "sh-keihai"
+  ],
+  "description": "肺の 組織に 線維が ふえて かたく なり、ふくらみにくく なる 変化です。じん肺法は じん肺を 線維増殖性変化を 主と する 病気と しています。息切れや 肺の 機能の 低下に つながります。"
+ },
+ {
+  "id": "sh-kikyo",
+  "name": "続発性気胸",
+  "reading": "ぞくはつせいききょう",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎈",
+  "mapNode": "shokugyo:jinpai",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-gappei",
+   "sh-jinpai"
+  ],
+  "description": "じん肺 などが もとで 肺から 空気が もれ、肺が しぼむ 状態です。じん肺法の 合併症の 1つで、合併症に かかった 人は 療養の 対象に なります。"
+ },
+ {
+  "id": "sh-gappei",
+  "name": "じん肺の合併症",
+  "reading": "じんぱいのがっぺいしょう",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "shokugyo:jinpai",
+  "field": "じん肺法",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-kikyo",
+   "sh-jinpai"
+  ],
+  "description": "じん肺に ともなう 病気で、肺結核・結核性胸膜炎・続発性気管支炎・続発性気管支拡張症・続発性気胸・原発性肺がん の 6つです。ひっかけ: 肺がんも 入ります。かかった 人は 療養の 対象です。"
+ },
+ {
+  "id": "sh-yosetsukohai",
+  "name": "溶接工肺",
+  "reading": "ようせつこうはい",
+  "journey": "shokugyo",
+  "category": "職業がんとじん肺",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👨‍🏭",
+  "mapNode": "shokugyo:jinpai",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-jinpai",
+   "sh-kinzokunetsu"
+  ],
+  "description": "アーク溶接で 出る 金属の ヒュームを 長く 吸って 起こる じん肺です。いまは 金属アーク溶接等作業も 特化則の 対象で、作業主任者の 選任や 呼吸用保護具の 使用が 決められて います。"
+ },
+ {
+  "id": "sh-shinbu",
+  "name": "深部体温",
+  "reading": "しんぶたいおん",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "shokugyo:netsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-nesshabyo",
+   "sh-teitaion"
+  ],
+  "description": "体の 中心の 温度です。熱中症では 深部体温が 上がり、低体温症では 下がります。暑い 職場では 深部体温の 上がりすぎを ふせぐ ため、休けいと 体を 冷やす ことを 組み合わせます。"
+ },
+ {
+  "id": "sh-enbun",
+  "name": "塩分の補給",
+  "reading": "えんぶんのほきゅう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧂",
+  "mapNode": "shokugyo:netsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-netsukeiren",
+   "sh-netchushoyobo"
+  ],
+  "description": "汗には 水分だけで なく 塩分も ふくまれる ので、暑い 職場では 塩分も とります。熱中症の 要綱では 0.1〜0.2% の 食塩水や スポーツドリンク などを 20〜30分ごとに 飲む 目安が 示されて います。"
+ },
+ {
+  "id": "sh-alert",
+  "name": "熱中症警戒アラート",
+  "reading": "ねっちゅうしょうけいかいあらーと",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "shokugyo:netsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-netchusho",
+   "sh-netchushoyobo"
+  ],
+  "description": "暑さ指数(WBGT)が 33 以上に なると 予想される ときに、環境省と 気象庁が 出す 情報です。出た 日は 作業の 中止や 時間の 短縮を 考えます。ひっかけ: 安衛則の 熱中症の 義務は WBGT 28度以上 から です。"
+ },
+ {
+  "id": "sh-raynaud",
+  "name": "レイノー現象",
+  "reading": "れいのーげんしょう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤚",
+  "mapNode": "shokugyo:reisho",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-hakuro",
+   "sh-shindoshogai"
+  ],
+  "description": "振動や 寒さで 指先の 血管が 縮み、指が 白く なる 反応です。しびれ・痛み・冷え を ともないます。振動障害の 代表的な 症状で、振動工具で 起こる ものは 白ろう病とも いいます。寒い 季節に 出やすく なります。"
+ },
+ {
+  "id": "sh-masshoshogai",
+  "name": "末梢神経障害",
+  "reading": "まっしょうしんけいしょうがい",
+  "journey": "shokugyo",
+  "category": "有機溶剤と金属",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "shokugyo:reisho",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-tahatsu",
+   "sh-shindoshogai"
+  ],
+  "description": "手足の 先の 神経が いたみ、しびれや 感覚の にぶさが 出る 障害です。振動工具の ほか、ノルマルヘキサン・鉛・二硫化炭素・砒素 などでも 起こると 告示に あります。"
+ },
+ {
+  "id": "sh-bends",
+  "name": "ベンズ",
+  "reading": "べんず",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦴",
+  "mapNode": "shokugyo:genatsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-genatsusho",
+   "sh-chokes"
+  ],
+  "description": "減圧症の うち、関節や 筋肉が 痛む ものを いいます。減圧症で よく 見られる 型です。高気圧業務の 健診では、関節・腰・下肢の 痛みや 耳鳴り などを 調べます。"
+ },
+ {
+  "id": "sh-chokes",
+  "name": "チョークス",
+  "reading": "ちょーくす",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "😮‍💨",
+  "mapNode": "shokugyo:genatsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-genatsusho",
+   "sh-bends"
+  ],
+  "description": "減圧症の うち、気泡が 肺の 血管に つまって 胸の 苦しさや 息苦しさが 出る 重い 型です。ゆっくり 減圧する ことで ふせぎます。"
+ },
+ {
+  "id": "sh-chissoyoi",
+  "name": "窒素酔い",
+  "reading": "ちっそよい",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "shokugyo:genatsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-sansochudoku",
+   "sh-genatsusho"
+  ],
+  "description": "高い 気圧で 窒素を 吸うと、お酒に 酔ったように 判断力や 集中力が 下がる ことです。高圧則では 窒素の 分圧を 400kPa 以下に 保つよう 決められて います。"
+ },
+ {
+  "id": "sh-kukisokusen",
+  "name": "空気塞栓症",
+  "reading": "くうきそくせんしょう",
+  "journey": "shokugyo",
+  "category": "暑さ・寒さ・気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "shokugyo:genatsu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-genatsusho",
+   "sh-chokes"
+  ],
+  "description": "潜水中の 急な 浮上 などで 肺が ふくらみすぎ、空気の 泡が 血管に 入って 流れを ふさぐ 状態です。減圧症と ならぶ 浮上の ときの 障害で、ゆっくり 浮上する ことで ふせぎます。"
+ },
+ {
+  "id": "sh-sesshoku",
+  "name": "接触皮膚炎",
+  "reading": "せっしょくひふえん",
+  "journey": "shokugyo",
+  "category": "皮膚と眼",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧼",
+  "mapNode": "shokugyo:hifu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-hifuen",
+   "sh-kansa"
+  ],
+  "description": "物質に ふれた 場所に できる 皮膚炎です。刺激で 起こる ものと、感作で 起こる アレルギー性の ものが あります。原因の 物質を 見つけて、手袋や 保護衣で ふれない ように します。"
+ },
+ {
+  "id": "sh-kagakunessho",
+  "name": "化学熱傷",
+  "reading": "かがくねっしょう",
+  "journey": "shokugyo",
+  "category": "皮膚と眼",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "shokugyo:hifu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-sesshoku",
+   "sh-hifuen"
+  ],
+  "description": "酸や アルカリ などの 薬品が 皮膚に ついて 起こる やけどです。弗化水素酸は 皮膚の 障害の ほか、低カルシウム血症も 起こすと 告示に あります。保護めがねと 保護手袋で ふせぎます。"
+ },
+ {
+  "id": "sh-momaku",
+  "name": "網膜の障害",
+  "reading": "もうまくのしょうがい",
+  "journey": "shokugyo",
+  "category": "皮膚と眼",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "shokugyo:hifu",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-hakunaisho",
+   "sh-menoshogai"
+  ],
+  "description": "目の 奥の 網膜が いたむ 障害です。赤外線や レーザー光線で 網膜の 火傷が 起こると、業務上疾病の 一覧に あります。ひっかけ: 紫外線は おもに 角膜(前眼部)、赤外線・レーザーは 網膜です。"
+ },
+ {
+  "id": "sh-mechiru",
+  "name": "メチル馬尿酸",
+  "reading": "めちるばにょうさん",
+  "journey": "shokugyo",
+  "category": "生物学的モニタリング",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "shokugyo:monitoring",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-xylene",
+   "sh-banyosan"
+  ],
+  "description": "キシレンが からだの 中で 変わって 尿に 出る 物質です。有機則の 健診で、キシレンを 扱う 人の 尿中の メチル馬尿酸を 調べます。ひっかけ: トルエンは 馬尿酸です。"
+ },
+ {
+  "id": "sh-hexanedione",
+  "name": "2,5-ヘキサンジオン",
+  "reading": "にごへきさんじおん",
+  "acceptedReadings": [
+   "にごへきさんじおん",
+   "にてんごへきさんじおん"
+  ],
+  "journey": "shokugyo",
+  "category": "生物学的モニタリング",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "shokugyo:monitoring",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-hexane",
+   "sh-tahatsu"
+  ],
+  "description": "ノルマルヘキサンが からだの 中で 変わって 尿に 出る 物質です。有機則の 健診で、ノルマルヘキサンを 扱う 人の 尿を 調べ、末梢神経の 障害の 予防に 役立てます。"
+ },
+ {
+  "id": "sh-mandel",
+  "name": "マンデル酸",
+  "reading": "まんでるさん",
+  "journey": "shokugyo",
+  "category": "生物学的モニタリング",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧫",
+  "mapNode": "shokugyo:monitoring",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-monitoring",
+   "sh-mechiru"
+  ],
+  "description": "スチレンや エチルベンゼンが からだの 中で 変わって 尿に 出る 物質で、特化則の 健診で 調べます(スチレンは フェニルグリオキシル酸との 合計)。どちらも いまは 特化則の 特別有機溶剤です。"
+ },
+ {
+  "id": "sh-ala",
+  "name": "デルタアミノレブリン酸",
+  "reading": "でるたあみのれぶりんさん",
+  "journey": "shokugyo",
+  "category": "生物学的モニタリング",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "shokugyo:monitoring",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-ketchunamari",
+   "sh-namarichudoku"
+  ],
+  "description": "鉛が 血を つくる 働きを じゃまする ことで 尿に ふえる 物質です。鉛健康診断では 血液中の 鉛と あわせて、尿中の デルタアミノレブリン酸の 量を 調べます。"
+ },
+ {
+  "id": "sh-ketchunamari",
+  "name": "血中鉛",
+  "reading": "けっちゅうなまり",
+  "journey": "shokugyo",
+  "category": "生物学的モニタリング",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💉",
+  "mapNode": "shokugyo:monitoring",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-ala",
+   "sh-namarichudoku"
+  ],
+  "description": "血液の 中の 鉛の 量で、鉛が どれだけ からだに 入ったかを みる 指標です。鉛健康診断の 項目の 1つで、健診は 雇入れ・配置替えの ときと、その後 6月以内ごとに 1回 行います(一部の 業務は 1年)。"
+ },
+ {
+  "id": "sh-kyoyochi",
+  "name": "生物学的許容値",
+  "reading": "せいぶつがくてききょようち",
+  "journey": "shokugyo",
+  "category": "生物学的モニタリング",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "shokugyo:monitoring",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-monitoring",
+   "sh-ryohanno"
+  ],
+  "description": "尿や 血液の 中の 有害物の 量に ついての めやすで、日本産業衛生学会が 勧告します。ひっかけ: 空気中の 濃度の めやすは 許容濃度、からだの 中の 量の めやすが 生物学的許容値です。"
+ },
+ {
+  "id": "sh-kajurodo",
+  "name": "過重労働",
+  "reading": "かじゅうろうどう",
+  "journey": "shokugyo",
+  "category": "仕事と病気",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌙",
+  "mapNode": "shokugyo:byoki",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-kanren",
+   "sh-gyomujo"
+  ],
+  "description": "長い 時間の 労働 などで からだに 大きな 負担が かかる ことです。脳・心臓の 病気や 心の 病気の 原因に なります。時間外・休日労働が 月 80時間を こえ、疲れの ある 人が 申し出たら 医師の 面接指導を 行います。"
+ },
+ {
+  "id": "sh-keikenwan",
+  "name": "頸肩腕症候群",
+  "reading": "けいけんわんしょうこうぐん",
+  "journey": "shokugyo",
+  "category": "仕事と病気",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "shokugyo:byoki",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-kanren",
+   "sh-gyomujo"
+  ],
+  "description": "キーボードの 入力 など 手や 腕を くり返し 使う 作業で、首・肩・腕・手指に こりや 痛みが 出る 障害です。業務上疾病の 一覧では、上肢に 負担の かかる 業務による 運動器の 障害と されます。"
+ },
+ {
+  "id": "sh-gyomujo",
+  "name": "業務上疾病",
+  "reading": "ぎょうむじょうしっぺい",
+  "journey": "shokugyo",
+  "category": "仕事と病気",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📕",
+  "mapNode": "shokugyo:byoki",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-shippei",
+   "sh-kajurodo"
+  ],
+  "description": "業務が 原因と 認められる 病気で、労働基準法施行規則の 別表第1の2 に 一覧が あります。熱中症・騒音性難聴・化学物質の 中毒・職業がん・脳や 心臓の 病気 などが 入り、労災の 補償の 対象に なります。"
+ },
+ {
+  "id": "sh-zensoku",
+  "name": "職業性喘息",
+  "reading": "しょくぎょうせいぜんそく",
+  "journey": "shokugyo",
+  "category": "仕事と病気",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "shokugyo:byoki",
+  "field": "職業性疾病",
+  "ruleset": "労働衛生(有害業務)",
+  "relatedTerms": [
+   "sh-kansa",
+   "sh-shigekisei"
+  ],
+  "description": "仕事で ふれる 物質に 感作されて 起こる ぜんそくです。一度 過敏に なると、うすい 濃度でも 発作が 出る ことが あります。原因の 物質から 離れる ことや、ふれない 工夫が 大切です。"
+ }
+]

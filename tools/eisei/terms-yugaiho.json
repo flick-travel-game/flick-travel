@@ -1,0 +1,1806 @@
+[
+ {
+  "id": "yu-yugaibutsu",
+  "name": "有害物",
+  "reading": "ゆうがいぶつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-kagakubusshitsu",
+   "yu-label"
+  ],
+  "description": "働く 人の 健康に 害を 与える おそれの ある 物の ことです。有機溶剤・鉛・粉じん など 種類ごとに 規則が あり、衛生管理者は 職場で 何を 使って いるかを まず 知って おきます。"
+ },
+ {
+  "id": "yu-kagakubusshitsu",
+  "name": "化学物質",
+  "reading": "かがくぶっしつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-label",
+   "yu-sds"
+  ],
+  "description": "職場で 使う 薬品や 原料の ことです。危険や 有害な 性質は、容器の ラベルと 安全データシート(SDS)で 使う 人に 伝えます。正しい 扱いかたを 知る ことが 健康を 守る 第一歩です。"
+ },
+ {
+  "id": "yu-yukiyozai",
+  "name": "有機溶剤",
+  "reading": "ゆうきようざい",
+  "journey": "yugaiho",
+  "category": "有機溶剤",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎨",
+  "mapNode": "yugaiho:yuki",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-yukikubun",
+   "yu-yukishunin"
+  ],
+  "description": "塗料や インク、接着剤を うすめたり 油を 落としたり する 液です。蒸発しやすく、吸いこむと 頭痛や めまいの もとに なります。有機溶剤中毒予防規則(有機則)で 管理します。"
+ },
+ {
+  "id": "yu-namari",
+  "name": "鉛",
+  "reading": "なまり",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "yugaiho:namari",
+  "field": "鉛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-namarigyomu",
+   "yu-namarishunin"
+  ],
+  "description": "重くて やわらかい 金属で、バッテリーや はんだ などに 使われます。鉛中毒予防規則(鉛則)で、作業場の 換気・清掃・健康診断 などを 決めて います。"
+ },
+ {
+  "id": "yu-hoshasen",
+  "name": "放射線",
+  "reading": "ほうしゃせん",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☢️",
+  "mapNode": "yugaiho:denri",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-denrihoshasen",
+   "yu-kanrikuiki"
+  ],
+  "description": "エックス線 など、目に 見えない 強い エネルギーの 流れです。病院の レントゲンや 検査の 機械で 使います。働く 人が 受ける 量は 電離放射線障害防止規則(電離則)で 管理します。"
+ },
+ {
+  "id": "yu-sansoketsubo",
+  "name": "酸素欠乏",
+  "reading": "さんそけつぼう",
+  "journey": "yugaiho",
+  "category": "酸素欠乏",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "yugaiho:sanketsu",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-juhachi",
+   "yu-sanketsukiken"
+  ],
+  "description": "空気中の 酸素が 足りない 状態です。法令では 酸素 18%未満を いいます。井戸・タンク・マンホールの 中 などで 起きやすく、酸素欠乏症等防止規則(酸欠則)で 防ぎます。"
+ },
+ {
+  "id": "yu-funjin",
+  "name": "粉じん",
+  "reading": "ふんじん",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌫️",
+  "mapNode": "yugaiho:funjin",
+  "field": "粉じん則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-jinpaiho",
+   "yu-tokuteifunjin"
+  ],
+  "description": "空気中に ただよう 土・石・金属 などの 細かい ちりです。長い あいだ 吸いこむと 肺の 病気(じん肺)の もとに なります。粉じん障害防止規則(粉じん則)で 管理します。"
+ },
+ {
+  "id": "yu-ishiwata",
+  "name": "石綿",
+  "reading": "せきめん",
+  "acceptedReadings": [
+   "せきめん",
+   "いしわた"
+  ],
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "yugaiho:ishiwata",
+  "field": "石綿則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sekimenkinshi",
+   "yu-jizenchosa"
+  ],
+  "description": "アスベストとも いう 細い 繊維の 鉱物で、いしわたとも 読みます。古い 建物の 断熱材などに 使われました。吸いこむと 長い 年月の あとに 病気に なる ことが あり、石綿則で 管理します。"
+ },
+ {
+  "id": "yu-sagyoshuninsha",
+  "name": "作業主任者",
+  "reading": "さぎょうしゅにんしゃ",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👷",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-shuninshikaku",
+   "yu-shuninshuchi"
+  ],
+  "description": "有害な 作業の 現場で、作業の しかたを 決めて 指揮する 人です。事業者が 免許を 受けた 人か 技能講習を 修了した 人から 選びます。衛生管理者とは 別の 役目です。"
+ },
+ {
+  "id": "yu-label",
+  "name": "ラベル表示",
+  "reading": "らべるひょうじ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sds",
+   "yu-kagakubusshitsu"
+  ],
+  "description": "危険や 有害な 化学物質を 容器に 入れて 渡す とき、容器に 名前や 人体への 作用、扱いの 注意を 表示する ことです(安衛法57条)。使う 人が 一目で 危険を 知る ための しくみです。"
+ },
+ {
+  "id": "yu-kokiatsu",
+  "name": "高気圧作業",
+  "reading": "こうきあつさぎょう",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "yugaiho:kokinatsu",
+  "field": "高圧則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-koatsushitsunai",
+   "yu-koatsusoku"
+  ],
+  "description": "まわりの 気圧より 高い 場所で 行う 作業です。圧気工法の 作業室での 高圧室内作業と、水中の 潜水業務が あります。高気圧作業安全衛生規則(高圧則)で 管理します。"
+ },
+ {
+  "id": "yu-sensui",
+  "name": "潜水業務",
+  "reading": "せんすいぎょうむ",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤿",
+  "mapNode": "yugaiho:kokinatsu",
+  "field": "高圧則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sensuishi",
+   "yu-kokiatsu"
+  ],
+  "description": "潜水器を 使い、空気圧縮機や 手押しポンプからの 送気、または ボンベからの 給気を 受けて 水中で 行う 業務です。潜水士の 免許が ないと つけません。"
+ },
+ {
+  "id": "yu-sokutei",
+  "name": "作業環境測定",
+  "reading": "さぎょうかんきょうそくてい",
+  "journey": "yugaiho",
+  "category": "作業環境測定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "yugaiho:sokutei",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-shiteisagyoba",
+   "yu-kanrikubun"
+  ],
+  "description": "作業場の 空気中の 有害物の 濃度や 騒音 などを、決まった 方法で はかる ことです。粉じん・有機溶剤・騒音 など 場所ごとに はかる 間隔と 記録の 保存の 年数が 決まって います。"
+ },
+ {
+  "id": "yu-tokka",
+  "name": "特定化学物質",
+  "reading": "とくていかがくぶっしつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚗️",
+  "mapNode": "yugaiho:tokka",
+  "field": "特化則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-dai1rui",
+   "yu-tokkashunin"
+  ],
+  "description": "特定化学物質障害予防規則(特化則)で 管理する 化学物質です。がん など 重い 害の おそれが ある 物が 多く、第1類・第2類・第3類に 分けて 決まりを 変えて います。"
+ },
+ {
+  "id": "yu-juryobutsu",
+  "name": "重量物",
+  "reading": "じゅうりょうぶつ",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "yugaiho:josei",
+  "field": "女性則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-juryoseigen",
+   "yu-joseiseigen"
+  ],
+  "description": "重い 物を 持ち上げたり 運んだり する 業務です。女性と 年少者には、年齢ごとに 持たせて よい 重さの 上限が あります。妊娠・出産の 機能や 成長期の からだを 守る ための 決まりです。"
+ },
+ {
+  "id": "yu-yukikubun",
+  "name": "有機溶剤の区分",
+  "reading": "ゆうきようざいのくぶん",
+  "journey": "yugaiho",
+  "category": "有機溶剤",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "yugaiho:yuki",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-iro",
+   "yu-dai1shuyuki"
+  ],
+  "description": "有機溶剤等は 第1種・第2種・第3種に 分けます。第1種は 二硫化炭素 など、第2種は トルエン・アセトン など、第3種は ガソリン など 石油系です。区分で 必要な 設備が 変わります。"
+ },
+ {
+  "id": "yu-yukikeiji",
+  "name": "有機溶剤の掲示",
+  "reading": "ゆうきようざいのけいじ",
+  "journey": "yugaiho",
+  "category": "有機溶剤",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "yugaiho:yuki",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-iro",
+   "yu-yukiyozai"
+  ],
+  "description": "有機溶剤を 使う 屋内作業場などに、起こりうる 病気と 症状・取扱いの 注意・中毒の ときの 応急処置 などを 見やすい 場所に 掲示します。働く 人が いつでも 確かめられる ように します。"
+ },
+ {
+  "id": "yu-iro",
+  "name": "区分の色分け表示",
+  "reading": "くぶんのいろわけひょうじ",
+  "journey": "yugaiho",
+  "category": "有機溶剤",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚥",
+  "mapNode": "yugaiho:yuki",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-yukikubun",
+   "yu-yukikeiji"
+  ],
+  "description": "有機溶剤の 区分を 第1種は 赤、第2種は 黄、第3種は 青で 示します。⚠️ 色分けに くわえて、文字 など 色以外の 方法でも 区分が 分かる ように します。"
+ },
+ {
+  "id": "yu-tokubetsukanri",
+  "name": "特別管理物質",
+  "reading": "とくべつかんりぶっしつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗄️",
+  "mapNode": "yugaiho:tokka",
+  "field": "特化則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-tokkakiroku",
+   "yu-tokkasokutei"
+  ],
+  "description": "特定化学物質の うち、がん など 何年も たってから 出る 害の おそれが ある 物です。作業環境測定の 記録・作業の 記録・健康診断個人票を 30年間 保存します。"
+ },
+ {
+  "id": "yu-dai1rui",
+  "name": "第1類物質",
+  "reading": "だいいちるいぶっしつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔐",
+  "mapNode": "yugaiho:tokka",
+  "field": "特化則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-tokka",
+   "yu-kinshibusshitsu"
+  ],
+  "description": "特定化学物質の うち、PCB・ベリリウム・ジクロルベンジジン など 特に 害の 大きい 物です。製造するには 厚生労働大臣の 許可が 要ります。"
+ },
+ {
+  "id": "yu-namarigyomu",
+  "name": "鉛業務",
+  "reading": "なまりぎょうむ",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔋",
+  "mapNode": "yugaiho:namari",
+  "field": "鉛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-namarisokutei",
+   "yu-namari"
+  ],
+  "description": "鉛や 鉛化合物を 溶かす・混ぜる・削る などの 業務です。屋内作業場の 空気中の 鉛の 濃度を 1年以内ごとに 1回 はかり、鉛健康診断は 6月以内ごとに 1回 行います。"
+ },
+ {
+  "id": "yu-denrihoshasen",
+  "name": "電離放射線",
+  "reading": "でんりほうしゃせん",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚛️",
+  "mapNode": "yugaiho:denri",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-hibakugendo",
+   "yu-hoshasen"
+  ],
+  "description": "物質の 原子から 電子を はじき出す(電離させる)力を もつ 放射線です。エックス線・ガンマ線 などが あり、電離則で 被ばくの 量や 作業の しかたを 管理します。"
+ },
+ {
+  "id": "yu-hibakugendo",
+  "name": "被ばく限度",
+  "reading": "ひばくげんど",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📛",
+  "mapNode": "yugaiho:denri",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-joseihibaku",
+   "yu-denrihoshasen"
+  ],
+  "description": "放射線業務従事者が 受けて よい 量の 上限です。実効線量は 5年間で 100mSv、かつ 1年間で 50mSv。⚠️「5年」と「1年」の 両方を 守ります。"
+ },
+ {
+  "id": "yu-kanrikuiki",
+  "name": "管理区域",
+  "reading": "かんりくいき",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "yugaiho:denri",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-senryosokutei",
+   "yu-xsenshunin"
+  ],
+  "description": "3月間に 1.3mSvを 超える おそれの ある 区域など、放射線を 管理する 場所です。標識で 示し、必要な 人 以外は 立入禁止です。線量当量率は 1か月以内ごとに はかります。"
+ },
+ {
+  "id": "yu-sanketsukiken",
+  "name": "酸素欠乏危険作業",
+  "reading": "さんそけつぼうきけんさぎょう",
+  "journey": "yugaiho",
+  "category": "酸素欠乏",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕳️",
+  "mapNode": "yugaiho:sanketsu",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sansoketsubo",
+   "yu-sanketsushunin"
+  ],
+  "description": "長く 使って いない 井戸、マンホール、密閉した タンク、ドライアイスを 使う 保冷車 など、酸素欠乏の おそれが ある 場所での 作業です。作業主任者と 特別の教育が 要ります。"
+ },
+ {
+  "id": "yu-sansosokutei",
+  "name": "酸素濃度の測定",
+  "reading": "さんそのうどのそくてい",
+  "journey": "yugaiho",
+  "category": "酸素欠乏",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "yugaiho:sanketsu",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-juhachi",
+   "yu-dai2shusanketsu"
+  ],
+  "description": "酸素欠乏危険作業では、その日の 作業を 始める 前に 空気中の 酸素の 濃度を はかります(第2種は 硫化水素も)。記録は 3年間 保存します。"
+ },
+ {
+  "id": "yu-jinpaiho",
+  "name": "じん肺法",
+  "reading": "じんぱいほう",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "yugaiho:funjin",
+  "field": "じん肺法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-jinpaikenshin",
+   "yu-jinpaikubun"
+  ],
+  "description": "粉じん作業を する 人の 健康を 守る ための 法律です。じん肺健康診断や じん肺管理区分、作業の 転換 などを 決めて います。じん肺とは 粉じんで 肺が 硬く なる 病気です。"
+ },
+ {
+  "id": "yu-tokuteifunjin",
+  "name": "特定粉じん作業",
+  "reading": "とくていふんじんさぎょう",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⛏️",
+  "mapNode": "yugaiho:funjin",
+  "field": "粉じん則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-funjin",
+   "yu-shisshiki"
+  ],
+  "description": "特定粉じん発生源で 行う 粉じん作業です。発生源に 湿式化 などの 対策を とり、常時 つかせる 人には 特別の教育を 行います。⚠️ 粉じん作業には 作業主任者の 制度は ありません。"
+ },
+ {
+  "id": "yu-jizenchosa",
+  "name": "事前調査",
+  "reading": "じぜんちょうさ",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "yugaiho:ishiwata",
+  "field": "石綿則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-ishiwata",
+   "yu-fukitsuke"
+  ],
+  "description": "建物などを 解体・改修する 前に、石綿が 使われて いるか を 書面と 目で 調べる ことです。分からなければ 分析して 調べます。記録は 3年間 保存します。"
+ },
+ {
+  "id": "yu-sokuteishi",
+  "name": "作業環境測定士",
+  "reading": "さぎょうかんきょうそくていし",
+  "journey": "yugaiho",
+  "category": "作業環境測定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍🔬",
+  "mapNode": "yugaiho:sokutei",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-shiteisagyoba",
+   "yu-sokutei"
+  ],
+  "description": "作業環境測定を 行う 国家資格を もつ 人です。指定作業場の 測定は、作業環境測定士 または 作業環境測定機関に 行わせます。"
+ },
+ {
+  "id": "yu-shiteisagyoba",
+  "name": "指定作業場",
+  "reading": "していさぎょうば",
+  "journey": "yugaiho",
+  "category": "作業環境測定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "yugaiho:sokutei",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sokuteishi",
+   "yu-sokutei"
+  ],
+  "description": "作業環境測定士が 測定する 作業場で、粉じん・特定化学物質・鉛・有機溶剤・放射線(一部)の 5つです。⚠️ 暑熱・騒音・酸素欠乏・事務室は 指定作業場では ありません。"
+ },
+ {
+  "id": "yu-kanrikubun",
+  "name": "管理区分",
+  "reading": "かんりくぶん",
+  "journey": "yugaiho",
+  "category": "作業環境測定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "yugaiho:sokutei",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-dai1kanri",
+   "yu-dai3kanri"
+  ],
+  "description": "作業環境測定の 結果を 管理濃度と くらべて、第1・第2・第3管理区分に 分けた ものです。第3が いちばん 改善が 必要です。結果に 応じて 設備や 作業を 見直します。"
+ },
+ {
+  "id": "yu-kagakukanrisha",
+  "name": "化学物質管理者",
+  "reading": "かがくぶっしつかんりしゃ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-taishobutsu",
+   "yu-hogogukanri"
+  ],
+  "description": "リスクアセスメント対象物を 製造・取扱う 事業場ごとに、業種や 規模に 関係なく 選ぶ 人です。選ぶ 理由が できてから 14日以内に 選任し、氏名を 掲示 などで 知らせます。"
+ },
+ {
+  "id": "yu-hogogukanri",
+  "name": "保護具着用管理責任者",
+  "reading": "ほごぐちゃくようかんりせきにんしゃ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥽",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-kagakukanrisha",
+   "yu-fittest"
+  ],
+  "description": "リスクアセスメントの 結果で 保護具を 使わせる ときに 選ぶ 人です。保護具の 選びかた・使いかた・手入れを 管理します。14日以内に 選び、氏名を 知らせます。"
+ },
+ {
+  "id": "yu-sds",
+  "name": "SDS",
+  "reading": "えすでぃーえす",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-label",
+   "yu-kagakura"
+  ],
+  "description": "安全データシートの ことです。通知対象物を 渡す 側が、名前・成分・危険性・扱いかた などを 書いて 相手に 伝えます(安衛法57条の2)。リスクアセスメントの 材料に なります。"
+ },
+ {
+  "id": "yu-kagakura",
+  "name": "化学物質のリスクアセスメント",
+  "reading": "かがくぶっしつのりすくあせすめんと",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-taishobutsu",
+   "yu-sds"
+  ],
+  "description": "化学物質の 危険性・有害性を 調べ、働く 人への リスクを 見積もって 対策を 決める ことです。対象物を 新しく 使う ときや 作業の 方法を 変える ときに 行い、結果を 働く 人に 知らせます。"
+ },
+ {
+  "id": "yu-jiritsu",
+  "name": "化学物質の自律的管理",
+  "reading": "かがくぶっしつのじりつてきかんり",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-kagakukanrisha",
+   "yu-nodokijun"
+  ],
+  "description": "細かい 決まりに 頼るだけでなく、事業者が リスクアセスメントで 自ら 対策を 決める 考えかたです。2024年4月に 全面施行され、化学物質管理者の 選任 などが 決まりました。"
+ },
+ {
+  "id": "yu-joseiseigen",
+  "name": "女性の就業制限",
+  "reading": "じょせいのしゅうぎょうせいげん",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚺",
+  "mapNode": "yugaiho:josei",
+  "field": "女性則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-juryoseigen",
+   "yu-yugaibutsugyomu"
+  ],
+  "description": "女性労働基準規則(女性則)で、重量物を 扱う 業務や 一部の 有害物を 出す 場所での 業務に 女性を つかせない 決まりです。妊娠・出産の 機能を 守る ための ものです。"
+ },
+ {
+  "id": "yu-ninsanpukinshi",
+  "name": "妊産婦の禁止業務",
+  "reading": "にんさんぷのきんしぎょうむ",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤰",
+  "mapNode": "yugaiho:josei",
+  "field": "女性則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sango1nen",
+   "yu-joseiseigen"
+  ],
+  "description": "妊娠中の 女性に させては いけない 業務です。重量物・有害物の ほか、著しく 暑い・寒い 場所、異常気圧の 下、著しい 振動を 与える 機械 などの 業務が あります。"
+ },
+ {
+  "id": "yu-koatsushitsunai",
+  "name": "高圧室内作業",
+  "reading": "こうあつしつないさぎょう",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏗️",
+  "mapNode": "yugaiho:kokinatsu",
+  "field": "高圧則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-koatsushunin",
+   "yu-kokiatsu"
+  ],
+  "description": "圧気工法で 地下や 水底の 作業室に 圧縮した 空気を 送り、その中で 行う 作業です。作業室ごとに 免許を もつ 高圧室内作業主任者を 選びます。"
+ },
+ {
+  "id": "yu-sensuishi",
+  "name": "潜水士",
+  "reading": "せんすいし",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "yugaiho:kokinatsu",
+  "field": "高圧則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sensui",
+   "yu-koatsukenshin"
+  ],
+  "description": "潜水業務を する ための 免許を もつ 人です。⚠️ 潜水士は 作業主任者では なく、免許が ないと その 業務に つけない「就業制限」の 資格です。"
+ },
+ {
+  "id": "yu-yukishunin",
+  "name": "有機溶剤作業主任者",
+  "reading": "ゆうきようざいさぎょうしゅにんしゃ",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-yukiyozai",
+   "yu-jishukensa"
+  ],
+  "description": "有機溶剤の 業務で 選ぶ 作業主任者で、技能講習の 修了者から 選びます。作業の しかたの 指揮や、局所排気装置 などを 1月を 超えない 期間ごとに 点検します。"
+ },
+ {
+  "id": "yu-tokkashunin",
+  "name": "特定化学物質作業主任者",
+  "reading": "とくていかがくぶっしつさぎょうしゅにんしゃ",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧯",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "特化則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-tokka",
+   "yu-dai3rui"
+  ],
+  "description": "特定化学物質を 扱う 作業で 選ぶ 作業主任者で、技能講習の 修了者から 選びます。⚠️ 第3類物質の 作業でも 必要です。試験研究の ための 取扱いでは 要りません。"
+ },
+ {
+  "id": "yu-namarishunin",
+  "name": "鉛作業主任者",
+  "reading": "なまりさぎょうしゅにんしゃ",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪛",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "鉛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-namarigyomu",
+   "yu-namari"
+  ],
+  "description": "鉛業務で 選ぶ 作業主任者で、技能講習の 修了者から 選びます。鉛に ふれる 作業の しかたを 指揮し、働く 人が 鉛を 吸いこまない ように 見守ります。"
+ },
+ {
+  "id": "yu-sanketsushunin",
+  "name": "酸素欠乏危険作業主任者",
+  "reading": "さんそけつぼうきけんさぎょうしゅにんしゃ",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍🚒",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sanketsukiken",
+   "yu-dai2shusanketsu"
+  ],
+  "description": "酸素欠乏危険作業で 選ぶ 作業主任者で、技能講習の 修了者から 選びます。⚠️ 第2種の 作業は「酸素欠乏・硫化水素危険作業主任者技能講習」の 修了者だけです。"
+ },
+ {
+  "id": "yu-yukisokutei",
+  "name": "有機溶剤の作業環境測定",
+  "reading": "ゆうきようざいのさぎょうかんきょうそくてい",
+  "journey": "yugaiho",
+  "category": "有機溶剤",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "yugaiho:yuki",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-dai1shuyuki",
+   "yu-sokutei"
+  ],
+  "description": "第1種・第2種の 有機溶剤を 使う 屋内作業場で、6月以内ごとに 1回 行います。記録は 3年間 保存します。⚠️ 第3種だけの 作業場は 測定の 対象では ありません。"
+ },
+ {
+  "id": "yu-dai1shuyuki",
+  "name": "第1種有機溶剤",
+  "reading": "だいいっしゅゆうきようざい",
+  "journey": "yugaiho",
+  "category": "有機溶剤",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔴",
+  "mapNode": "yugaiho:yuki",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-yukikubun",
+   "yu-iro"
+  ],
+  "description": "1,2-ジクロルエチレンと 二硫化炭素、それらを 5%を 超えて 含む 物です。区分の 色は 赤。⚠️ トルエンや アセトンは 第2種、ガソリンは 第3種です。"
+ },
+ {
+  "id": "yu-chozo",
+  "name": "有機溶剤の貯蔵",
+  "reading": "ゆうきようざいのちょぞう",
+  "journey": "yugaiho",
+  "category": "有機溶剤",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛢️",
+  "mapNode": "yugaiho:yuki",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-yukiyozai",
+   "yu-yukikeiji"
+  ],
+  "description": "屋内で 有機溶剤等を 貯めて おく ときは、栓を した 丈夫な 容器に 入れ、関係者 以外が 入らない ように します。空になった 容器は 密閉するか 屋外の 決まった 場所に 集めます。"
+ },
+ {
+  "id": "yu-tank",
+  "name": "タンク等の内部の作業",
+  "reading": "たんくとうのないぶのさぎょう",
+  "journey": "yugaiho",
+  "category": "有機溶剤",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫗",
+  "mapNode": "yugaiho:yuki",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-yukiyozai",
+   "yu-yukishunin"
+  ],
+  "description": "有機溶剤等を 入れた ことの ある タンクの 中の 作業では 送気マスクを 使わせます。前もって 中を 洗い、タンクの 容積の 3倍以上の 空気を 送って 入れかえる などの 手順が 決まって います。"
+ },
+ {
+  "id": "yu-jishukensa",
+  "name": "局所排気装置の定期自主検査",
+  "reading": "きょくしょはいきそうちのていきじしゅけんさ",
+  "journey": "yugaiho",
+  "category": "有機溶剤",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "yugaiho:yuki",
+  "field": "有機則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-yukishunin",
+   "yu-tank"
+  ],
+  "description": "局所排気装置などは 1年以内ごとに 1回 定期自主検査を 行い、記録を 3年間 保存します。⚠️ 作業主任者の「1月を 超えない 期間ごとの 点検」とは 別の ものです。"
+ },
+ {
+  "id": "yu-tokkasokutei",
+  "name": "特定化学物質の作業環境測定",
+  "reading": "とくていかがくぶっしつのさぎょうかんきょうそくてい",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "yugaiho:tokka",
+  "field": "特化則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-tokubetsukanri",
+   "yu-dai2rui"
+  ],
+  "description": "第1類・第2類物質を 扱う 屋内作業場で 6月以内ごとに 1回 行います。記録は 3年間ですが、⚠️ 特別管理物質の 記録は 30年間 保存します。"
+ },
+ {
+  "id": "yu-dai2rui",
+  "name": "第2類物質",
+  "reading": "だいにるいぶっしつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟨",
+  "mapNode": "yugaiho:tokka",
+  "field": "特化則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-tokkasokutei",
+   "yu-dai3rui"
+  ],
+  "description": "塩化ビニル・ベンゼン・カドミウム・水銀・マンガン など、特定化学物質の 多くが 入る グループです。作業環境測定と 特殊健康診断の 対象です。"
+ },
+ {
+  "id": "yu-dai3rui",
+  "name": "第3類物質",
+  "reading": "だいさんるいぶっしつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟦",
+  "mapNode": "yugaiho:tokka",
+  "field": "特化則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-dai2rui",
+   "yu-tokkashunin"
+  ],
+  "description": "アンモニア・一酸化炭素・塩化水素・硫酸 など 8種です。設備から 大量に もれない ための 決まりが 中心です。⚠️ 作業環境測定と 特殊健診の 対象外ですが、作業主任者は 要ります。"
+ },
+ {
+  "id": "yu-kinshibusshitsu",
+  "name": "製造等禁止物質",
+  "reading": "せいぞうとうきんしぶっしつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "yugaiho:tokka",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sekimenkinshi",
+   "yu-dai1rui"
+  ],
+  "description": "黄りんマッチ・ベンジジン・石綿 など、害が 大きいので 製造・輸入・使用 などが 禁止されて いる 物です(安衛法55条)。⚠️ 試験研究の ための 製造・使用 などは 例外です。"
+ },
+ {
+  "id": "yu-tokkakiroku",
+  "name": "特別管理物質の作業の記録",
+  "reading": "とくべつかんりぶっしつのさぎょうのきろく",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "yugaiho:tokka",
+  "field": "特化則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-tokubetsukanri",
+   "yu-gangensei"
+  ],
+  "description": "特別管理物質を 扱う 作業では、働く 人の 氏名や 作業の 内容を 1月を 超えない 期間ごとに 記録し、30年間 保存します。病気が 何年も あとに 出た ときの 手がかりに なります。"
+ },
+ {
+  "id": "yu-namarisokutei",
+  "name": "鉛の作業環境測定",
+  "reading": "なまりのさぎょうかんきょうそくてい",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "yugaiho:namari",
+  "field": "鉛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-namarigyomu",
+   "yu-sokutei"
+  ],
+  "description": "鉛業務を 行う 屋内作業場で、空気中の 鉛の 濃度を 1年以内ごとに 1回 はかり、記録を 3年間 保存します。⚠️ 有機溶剤や 特定化学物質の「6月以内ごと」と まちがえない ように。"
+ },
+ {
+  "id": "yu-namariseiso",
+  "name": "鉛業務の清掃",
+  "reading": "なまりぎょうむのせいそう",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "yugaiho:namari",
+  "field": "鉛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-namarikyukei",
+   "yu-namarigyomu"
+  ],
+  "description": "鉛業務を 行う 屋内作業場や 休憩室・食堂の 床は、毎日 1回以上、真空掃除機か 水洗いで 掃除します。鉛の 粉を 舞い上げず、口に 入らない ように する ためです。"
+ },
+ {
+  "id": "yu-namarikyukei",
+  "name": "鉛作業の休憩設備",
+  "reading": "なまりさぎょうのきゅうけいせつび",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪑",
+  "mapNode": "yugaiho:namari",
+  "field": "鉛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-namariseiso",
+   "yu-namarigyomu"
+  ],
+  "description": "鉛業務を 行う 作業場 以外の 場所に 休憩室を 設けます。入口には 足の 鉛を 落とす マットや 衣服用ブラシを 置き、作業衣に ついた 鉛を 落としてから 入ります。"
+ },
+ {
+  "id": "yu-senryosokutei",
+  "name": "線量当量率の測定",
+  "reading": "せんりょうとうりょうりつのそくてい",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "yugaiho:denri",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-kanrikuiki",
+   "yu-gaibuhibaku"
+  ],
+  "description": "管理区域の 外部放射線の 線量当量率などを 1か月以内ごとに 1回 はかります。記録は 5年間 保存します。⚠️ 被ばく線量の 記録や 健診個人票の 30年と まちがえない ように。"
+ },
+ {
+  "id": "yu-gaibuhibaku",
+  "name": "外部被ばく",
+  "reading": "がいぶひばく",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧥",
+  "mapNode": "yugaiho:denri",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-naibuhibaku",
+   "yu-senryosokutei"
+  ],
+  "description": "からだの 外に ある 放射線源から 放射線を 受ける ことです。量は 線量計で はかり、男性などは 胸部、そのほかの 女性は 腹部に つけます。"
+ },
+ {
+  "id": "yu-naibuhibaku",
+  "name": "内部被ばく",
+  "reading": "ないぶひばく",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫁",
+  "mapNode": "yugaiho:denri",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-gaibuhibaku",
+   "yu-joseihibaku"
+  ],
+  "description": "吸いこんだり 口から 入ったり した 放射性物質から、からだの 中で 放射線を 受ける ことです。空気中の 放射性物質の 濃度を はかって 防ぎます。"
+ },
+ {
+  "id": "yu-joseihibaku",
+  "name": "女性の被ばく限度",
+  "reading": "じょせいのひばくげんど",
+  "journey": "yugaiho",
+  "category": "鉛・放射線",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♀️",
+  "mapNode": "yugaiho:denri",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-hibakugendo",
+   "yu-naibuhibaku"
+  ],
+  "description": "妊娠の 可能性が ない 女性を 除き、女性の 実効線量の 限度は 3月間で 5mSvです。妊娠と 診断された 女性は 出産まで 内部被ばく 1mSv、腹部表面 2mSvが 限度です。"
+ },
+ {
+  "id": "yu-juhachi",
+  "name": "酸素濃度18%未満",
+  "reading": "さんそのうどじゅうはちぱーせんとみまん",
+  "journey": "yugaiho",
+  "category": "酸素欠乏",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "yugaiho:sanketsu",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sansoketsubo",
+   "yu-sanketsukanki"
+  ],
+  "description": "酸欠則では 空気中の 酸素が 18%未満の 状態を 酸素欠乏と いいます。作業中は 換気で 18%以上に 保ちます。⚠️「18%以下」では なく「18%未満」です。"
+ },
+ {
+  "id": "yu-dai2shusanketsu",
+  "name": "第2種酸素欠乏危険作業",
+  "reading": "だいにしゅさんそけつぼうきけんさぎょう",
+  "journey": "yugaiho",
+  "category": "酸素欠乏",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧫",
+  "mapNode": "yugaiho:sanketsu",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sanketsushunin",
+   "yu-sansosokutei"
+  ],
+  "description": "汚水や し尿の タンク・暗きょ など、酸素欠乏に くわえて 硫化水素中毒の おそれも ある 場所の 作業です。酸素 18%以上・硫化水素 10ppm以下に 保ちます。"
+ },
+ {
+  "id": "yu-sanketsukanki",
+  "name": "酸素欠乏の換気",
+  "reading": "さんそけつぼうのかんき",
+  "journey": "yugaiho",
+  "category": "酸素欠乏",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌬️",
+  "mapNode": "yugaiho:sanketsu",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-juhachi",
+   "yu-kanshinin"
+  ],
+  "description": "酸素欠乏危険作業では 換気して 空気を 入れかえます。⚠️ 換気に 純酸素を 使っては いけません。換気できない ときは 空気呼吸器などを 人数分 以上 使わせます。"
+ },
+ {
+  "id": "yu-kanshinin",
+  "name": "監視人",
+  "reading": "かんしにん",
+  "journey": "yugaiho",
+  "category": "酸素欠乏",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "yugaiho:sanketsu",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-jiintenken",
+   "yu-tachiiri"
+  ],
+  "description": "酸素欠乏危険作業の とき、外から 作業の ようすを 見守る 人です。異常に すぐ 気づいて 作業主任者などに 知らせる ために 置きます。"
+ },
+ {
+  "id": "yu-jiintenken",
+  "name": "人員の点検",
+  "reading": "じんいんのてんけん",
+  "journey": "yugaiho",
+  "category": "酸素欠乏",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍🤝‍🧑",
+  "mapNode": "yugaiho:sanketsu",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-kanshinin",
+   "yu-tachiiri"
+  ],
+  "description": "酸素欠乏危険作業の 場所に 入る ときと 出る ときに、人数を 確かめる ことです。中に だれかが 残って いない ことを 確認する ためです。"
+ },
+ {
+  "id": "yu-tachiiri",
+  "name": "酸素欠乏危険場所の立入禁止",
+  "reading": "さんそけつぼうきけんばしょのたちいりきんし",
+  "journey": "yugaiho",
+  "category": "酸素欠乏",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⛔",
+  "mapNode": "yugaiho:sanketsu",
+  "field": "酸欠則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sanketsukiken",
+   "yu-jiintenken"
+  ],
+  "description": "酸素欠乏危険場所には、作業に 従事する 人 以外が 立ち入らない ように 見やすい 場所に 表示 などして 禁止します。うっかり 入って しまう ことを 防ぐ 決まりです。"
+ },
+ {
+  "id": "yu-funjinsokutei",
+  "name": "粉じんの作業環境測定",
+  "reading": "ふんじんのさぎょうかんきょうそくてい",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗃️",
+  "mapNode": "yugaiho:funjin",
+  "field": "粉じん則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-yuriseisan",
+   "yu-funjin"
+  ],
+  "description": "土石・岩石・鉱物 などの 粉じんを 著しく 出す 屋内作業場で、6月以内ごとに 1回 行います。⚠️ 記録の 保存は 7年間で、ほかの 多くの 測定の 3年とは ちがいます。"
+ },
+ {
+  "id": "yu-yuriseisan",
+  "name": "遊離けい酸",
+  "reading": "ゆうりけいさん",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💎",
+  "mapNode": "yugaiho:funjin",
+  "field": "粉じん則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-funjinsokutei",
+   "yu-jinpaiho"
+  ],
+  "description": "石英 などに 含まれる 成分で、じん肺を 起こしやすい ものです。土石・岩石・鉱物の 粉じんの 作業環境測定では、粉じんの 濃度と あわせて 遊離けい酸の 含有率も はかります。"
+ },
+ {
+  "id": "yu-jinpaikubun",
+  "name": "じん肺管理区分",
+  "reading": "じんぱいかんりくぶん",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "yugaiho:funjin",
+  "field": "じん肺法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-jinpaikenshin",
+   "yu-jinpaiho"
+  ],
+  "description": "じん肺健康診断の 結果で 管理1〜管理4に 分けた ものです。⚠️ 決めるのは 事業者でも 医師でもなく 都道府県労働局長です。管理4の 人は 療養が 必要です。"
+ },
+ {
+  "id": "yu-jinpaikenshin",
+  "name": "じん肺健康診断",
+  "reading": "じんぱいけんこうしんだん",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩻",
+  "mapNode": "yugaiho:funjin",
+  "field": "じん肺法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-jinpaikubun",
+   "yu-jinpaiho"
+  ],
+  "description": "常時 粉じん作業を する 人には 3年以内ごとに 1回(管理2・3の 人は 1年以内ごと)行います。胸の エックス線写真が 中心で、記録と 写真は 7年間 保存します。"
+ },
+ {
+  "id": "yu-shisshiki",
+  "name": "湿式化",
+  "reading": "しっしきか",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💧",
+  "mapNode": "yugaiho:funjin",
+  "field": "粉じん則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-tokuteifunjin",
+   "yu-funjin"
+  ],
+  "description": "削る 場所を 水で ぬらしたり 湿式型の 機械を 使ったり して、粉じんが 舞わない ように する 対策です。特定粉じん発生源の 措置の 1つです。"
+ },
+ {
+  "id": "yu-sekimenkiroku",
+  "name": "石綿の作業の記録",
+  "reading": "せきめんのさぎょうのきろく",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "yugaiho:ishiwata",
+  "field": "石綿則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sekimenkenshin",
+   "yu-ishiwata"
+  ],
+  "description": "石綿の 作業の 記録・作業環境測定の 記録・健康診断個人票は、その 作業を しなく なった 日から 40年間 保存します。⚠️ 特別管理物質の 30年より 長い のが ひっかけです。"
+ },
+ {
+  "id": "yu-jokyo",
+  "name": "石綿の除去作業",
+  "reading": "せきめんのじょきょさぎょう",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "yugaiho:ishiwata",
+  "field": "石綿則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-fukitsuke",
+   "yu-sekimenshunin"
+  ],
+  "description": "吹き付けられた 石綿などを 取り除く 作業では、作業場所を ほかから 隔離し、集じん・排気装置で 負圧に 保ちます。出口には 前室・洗身室・更衣室を つなげて 設けます。"
+ },
+ {
+  "id": "yu-fukitsuke",
+  "name": "吹付け石綿",
+  "reading": "ふきつけせきめん",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏚️",
+  "mapNode": "yugaiho:ishiwata",
+  "field": "石綿則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-jokyo",
+   "yu-jizenchosa"
+  ],
+  "description": "建物の 天井や 壁に 吹き付けられた 石綿です。こわれたり 古く なったり して 粉じんが 出る おそれが ある ときは、除去・封じ込め・囲い込み などの 措置を とります。"
+ },
+ {
+  "id": "yu-sekimenkinshi",
+  "name": "石綿の製造禁止",
+  "reading": "せきめんのせいぞうきんし",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚷",
+  "mapNode": "yugaiho:ishiwata",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-ishiwata",
+   "yu-kinshibusshitsu"
+  ],
+  "description": "石綿と、石綿を 重量の 0.1%を 超えて 含む 物は、製造・輸入・使用 などが 禁止されて います。⚠️ 分析用の 試料 など 一部の 例外が あります。"
+ },
+ {
+  "id": "yu-sekimenkenshin",
+  "name": "石綿健康診断",
+  "reading": "せきめんけんこうしんだん",
+  "journey": "yugaiho",
+  "category": "粉じん・石綿",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "yugaiho:ishiwata",
+  "field": "石綿則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sekimenkiroku",
+   "yu-ishiwata"
+  ],
+  "description": "石綿業務に 常時 つく 人に、雇入れ・配置替えの とき、その後 6月以内ごとに 1回 行う 特殊健康診断です。個人票は 40年間 保存します。"
+ },
+ {
+  "id": "yu-shuninshuchi",
+  "name": "作業主任者の周知",
+  "reading": "さぎょうしゅにんしゃのしゅうち",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📢",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "安衛則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sagyoshuninsha",
+   "yu-shuninshikaku"
+  ],
+  "description": "作業主任者を 選んだら、氏名と 行わせる 事項を 作業場の 見やすい 場所に 掲示する などして 働く 人に 知らせます。⚠️ 労働基準監督署への 報告は 要りません。"
+ },
+ {
+  "id": "yu-shuninshikaku",
+  "name": "作業主任者の資格",
+  "reading": "さぎょうしゅにんしゃのしかく",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "安衛法",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sagyoshuninsha",
+   "yu-xsenshunin"
+  ],
+  "description": "作業主任者は 免許か 技能講習の 修了で なれます。⚠️ 有害業務で 免許が 要るのは 高圧室内・エックス線・ガンマ線透過写真撮影の 3つで、有機溶剤や 鉛 などは 技能講習です。"
+ },
+ {
+  "id": "yu-sekimenshunin",
+  "name": "石綿作業主任者",
+  "reading": "せきめんさぎょうしゅにんしゃ",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦺",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "石綿則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-jokyo",
+   "yu-shuninshikaku"
+  ],
+  "description": "石綿を 扱う 作業や 解体の 作業で 選ぶ 作業主任者で、技能講習の 修了者から 選びます。作業の しかたを 決めて 指揮し、保護具の 使いかたを 見守ります。"
+ },
+ {
+  "id": "yu-xsenshunin",
+  "name": "エックス線作業主任者",
+  "reading": "えっくすせんさぎょうしゅにんしゃ",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩻",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "電離則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-kanrikuiki",
+   "yu-shuninshikaku"
+  ],
+  "description": "エックス線を 使う 作業で、管理区域ごとに 選ぶ 作業主任者です。⚠️ 技能講習では なく、免許を 受けた 人から 選びます。"
+ },
+ {
+  "id": "yu-koatsushunin",
+  "name": "高圧室内作業主任者",
+  "reading": "こうあつしつないさぎょうしゅにんしゃ",
+  "journey": "yugaiho",
+  "category": "作業主任者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "yugaiho:sagyoshunin",
+  "field": "高圧則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-koatsushitsunai",
+   "yu-shuninshikaku"
+  ],
+  "description": "高圧室内作業で、作業室ごとに 選ぶ 作業主任者です。⚠️ 免許を 受けた 人から 選びます。潜水業務には 作業主任者は なく、潜水士の 免許が 要ります。"
+ },
+ {
+  "id": "yu-dai3kanri",
+  "name": "第3管理区分",
+  "reading": "だいさんかんりくぶん",
+  "journey": "yugaiho",
+  "category": "作業環境測定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟥",
+  "mapNode": "yugaiho:sokutei",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-dai2kanri",
+   "yu-yugaibutsugyomu"
+  ],
+  "description": "平均の 濃度が 管理濃度を 超える 状態です。直ちに 設備や 作業方法を 点検して 改善し、有効な 呼吸用保護具を 使わせます。⚠️ 女性則の 有害物の 業務では 女性を つかせません。"
+ },
+ {
+  "id": "yu-dai2kanri",
+  "name": "第2管理区分",
+  "reading": "だいにかんりくぶん",
+  "journey": "yugaiho",
+  "category": "作業環境測定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟧",
+  "mapNode": "yugaiho:sokutei",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-dai3kanri",
+   "yu-dai1kanri"
+  ],
+  "description": "平均の 濃度は 管理濃度を 超えないが、場所に よって 高い ところが ある 状態です。点検して 改善するよう 努めます。⚠️ 第3管理区分と ちがい、改善は 努力義務です。"
+ },
+ {
+  "id": "yu-dai1kanri",
+  "name": "第1管理区分",
+  "reading": "だいいちかんりくぶん",
+  "journey": "yugaiho",
+  "category": "作業環境測定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟩",
+  "mapNode": "yugaiho:sokutei",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-dai2kanri",
+   "yu-kanrikubun"
+  ],
+  "description": "作業場の ほとんどの 場所で 管理濃度を 超えない、よい 状態です。⚠️ 連続 3回 第1管理区分 などの 条件を 満たすと、有機溶剤などの 特殊健診を 1年以内ごとに できます。"
+ },
+ {
+  "id": "yu-hyokakijun",
+  "name": "作業環境評価基準",
+  "reading": "さぎょうかんきょうひょうかきじゅん",
+  "journey": "yugaiho",
+  "category": "作業環境測定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "yugaiho:sokutei",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-kanrikubun",
+   "yu-sokuteikijun"
+  ],
+  "description": "測定結果を 管理濃度と くらべて 管理区分を 決める ための 国の 基準です。A測定と B測定の 値から 第1〜第3管理区分に 分けます。"
+ },
+ {
+  "id": "yu-sokuteikijun",
+  "name": "作業環境測定基準",
+  "reading": "さぎょうかんきょうそくていきじゅん",
+  "journey": "yugaiho",
+  "category": "作業環境測定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "yugaiho:sokutei",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-hyokakijun",
+   "yu-sokutei"
+  ],
+  "description": "作業環境測定の しかたを 決めた 国の 基準です。A測定では 測定点を 5以上とり、床から 50cm以上 150cm以下の 高さで、10分間 以上 試料を 採ります。"
+ },
+ {
+  "id": "yu-nodokijun",
+  "name": "濃度基準値",
+  "reading": "のうどきじゅんち",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-tanjikan",
+   "yu-jiritsu"
+  ],
+  "description": "厚生労働大臣が 定める 物に ついて、屋内作業場で 働く 人が 吸う 濃度を この 値 以下に します。8時間の 時間加重平均で 決める 8時間濃度基準値が 基本です。"
+ },
+ {
+  "id": "yu-tanjikan",
+  "name": "短時間濃度基準値",
+  "reading": "たんじかんのうどきじゅんち",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-nodokijun",
+   "yu-taishobutsu"
+  ],
+  "description": "15分間の 時間加重平均で 決める 濃度基準値です。短い 時間に 高い 濃度を 吸う ことを 防ぎます。⚠️ 8時間濃度基準値とは 別に 守ります。"
+ },
+ {
+  "id": "yu-hifutosho",
+  "name": "皮膚等障害化学物質等",
+  "reading": "ひふとうしょうがいかがくぶっしつとう",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧤",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-hogogukanri",
+   "yu-taishobutsu"
+  ],
+  "description": "皮膚や 眼に 障害を 与えたり、皮膚から 吸収されて 害を 与えたり する ことが 明らかな 物です。扱う ときは 不浸透性の 保護衣・保護手袋・保護眼鏡 などを 使わせる 義務が あります。"
+ },
+ {
+  "id": "yu-taishobutsu",
+  "name": "リスクアセスメント対象物",
+  "reading": "りすくあせすめんとたいしょうぶつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-kagakukanrisha",
+   "yu-kagakura"
+  ],
+  "description": "リスクアセスメントを しなければ ならない 化学物質です。これを 製造・取扱う 事業場では、業種や 規模に 関係なく 化学物質管理者を 選びます。"
+ },
+ {
+  "id": "yu-gangensei",
+  "name": "がん原性物質",
+  "reading": "がんげんせいぶっしつ",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧬",
+  "mapNode": "yugaiho:kagaku",
+  "field": "化学物質管理",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-tokkakiroku",
+   "yu-taishobutsu"
+  ],
+  "description": "がんを 起こす おそれが あると 国が 定めた 物です。働く 人の ばく露の ようすや 氏名・作業の 期間などの 記録は、ふつうの 3年では なく 30年間 保存します。"
+ },
+ {
+  "id": "yu-fittest",
+  "name": "フィットテスト",
+  "reading": "ふぃっとてすと",
+  "journey": "yugaiho",
+  "category": "化学物質",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "😷",
+  "mapNode": "yugaiho:kagaku",
+  "field": "作業環境測定",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-hogogukanri",
+   "yu-dai3kanri"
+  ],
+  "description": "呼吸用保護具の 面体が 顔に すき間なく 合って いるか を 確かめる 検査です。改善できない 第3管理区分の 場所で 面体の ある 保護具を 使わせる ときは、1年以内ごとに 1回 行い、記録を 3年間 保存します。"
+ },
+ {
+  "id": "yu-juryoseigen",
+  "name": "重量物の就業制限",
+  "reading": "じゅうりょうぶつのしゅうぎょうせいげん",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏋️",
+  "mapNode": "yugaiho:josei",
+  "field": "女性則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-juryobutsu",
+   "yu-joseiseigen"
+  ],
+  "description": "満18歳以上の 女性は、断続作業 30kg・継続作業 20kg 以上の 重量物を 扱わせては いけません。⚠️ 妊産婦に 限らず すべての 女性が 対象です。"
+ },
+ {
+  "id": "yu-yugaibutsugyomu",
+  "name": "女性則の有害物の業務",
+  "reading": "じょせいそくのゆうがいぶつのぎょうむ",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☣️",
+  "mapNode": "yugaiho:josei",
+  "field": "女性則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-dai3kanri",
+   "yu-joseiseigen"
+  ],
+  "description": "鉛・水銀・トルエン など 26の 物質を 出す 場所で、呼吸用保護具が 要る 業務や 第3管理区分の 場所の 業務には 女性を つかせません。⚠️ 第2管理区分は 対象外です。"
+ },
+ {
+  "id": "yu-sango1nen",
+  "name": "産後1年未満の女性の就業制限",
+  "reading": "さんごいちねんみまんのじょせいのしゅうぎょうせいげん",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍼",
+  "mapNode": "yugaiho:josei",
+  "field": "女性則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-ninsanpukinshi",
+   "yu-joseiseigen"
+  ],
+  "description": "産後1年 たたない 女性に させては いけない 業務です。重量物や 有害物の 業務は 禁止ですが、⚠️ ほかの 多くの 業務は 本人が 申し出た ときに 禁止と なります。"
+ },
+ {
+  "id": "yu-koatsusoku",
+  "name": "高気圧作業安全衛生規則",
+  "reading": "こうきあつさぎょうあんぜんえいせいきそく",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "yugaiho:kokinatsu",
+  "field": "高圧則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-kokiatsu",
+   "yu-genatsusokudo"
+  ],
+  "description": "高圧室内作業と 潜水業務での 減圧症 などの 高気圧障害を 防ぐ 規則です。空気の 成分の 分圧や 減圧の 速さ、作業主任者・健康診断 などを 決めて います。"
+ },
+ {
+  "id": "yu-genatsusokudo",
+  "name": "減圧の速度",
+  "reading": "げんあつのそくど",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🐢",
+  "mapNode": "yugaiho:kokinatsu",
+  "field": "高圧則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-koatsusoku",
+   "yu-koatsukenshin"
+  ],
+  "description": "高気圧の 作業室から 出る ときの 減圧は、毎分 0.08MPa 以下の 速さで ゆっくり 行います。急に 減圧すると 減圧症の もとに なる ためです。"
+ },
+ {
+  "id": "yu-koatsukenshin",
+  "name": "高気圧業務健康診断",
+  "reading": "こうきあつぎょうむけんこうしんだん",
+  "journey": "yugaiho",
+  "category": "女性・高気圧",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👂",
+  "mapNode": "yugaiho:kokinatsu",
+  "field": "高圧則",
+  "ruleset": "関係法令(有害業務)",
+  "relatedTerms": [
+   "yu-sensuishi",
+   "yu-genatsusokudo"
+  ],
+  "description": "高気圧業務に 常時 つく 人に、雇入れ・配置替えの とき、その後 6月以内ごとに 1回 行う 特殊健康診断です。鼓膜・聴力や 肺活量 などを 調べ、個人票は 5年間 保存します。"
+ }
+]

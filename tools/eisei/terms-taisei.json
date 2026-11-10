@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "ta-eiseikanrisha",
+    "name": "衛生管理者",
+    "reading": "えいせいかんりしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🩺",
+    "mapNode": "taisei:eisei",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sangyoi",
+      "ta-eiseijunshi"
+    ],
+    "description": "常時 50人以上の 労働者が いる 事業場で 選ぶ、職場の 衛生を 見る 係です。作業場を 見回って 健康に 害が ある ときは すぐに 防ぐ 手を 打ちます。"
+  },
+  {
+    "id": "ta-sangyoi",
+    "name": "産業医",
+    "reading": "さんぎょうい",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "👩‍⚕️",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseikanrisha",
+      "ta-sangyoijunshi"
+    ],
+    "description": "働く 人の 健康を 医学の 目で 見る 医師です。常時 50人以上の 事業場で 選び、健康診断の あとの 相談や 職場の 見回りを 行います。"
+  },
+  {
+    "id": "ta-anzeneiseiho",
+    "name": "労働安全衛生法",
+    "reading": "ろうどうあんぜんえいせいほう",
+    "journey": "taisei",
+    "category": "法のしくみ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📗",
+    "mapNode": "taisei:anei",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-rodosaigai",
+      "ta-jigyosha"
+    ],
+    "description": "働く 人の 安全と 健康を 守り、快適な 職場を つくる ための 法律です。労働基準法と 組み合わせて、労働災害を 防ぐ しくみを 決めています。"
+  },
+  {
+    "id": "ta-rodosha",
+    "name": "労働者",
+    "reading": "ろうどうしゃ",
+    "journey": "taisei",
+    "category": "法のしくみ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "👷",
+    "mapNode": "taisei:anei",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-jigyosha",
+      "ta-anzeneiseiho"
+    ],
+    "description": "事業に 使われて 賃金を 受ける 人です。安衛法では 同居の 親族だけを 使う 事業で 働く 人と 家事使用人は ふくみません。"
+  },
+  {
+    "id": "ta-jigyosha",
+    "name": "事業者",
+    "reading": "じぎょうしゃ",
+    "journey": "taisei",
+    "category": "法のしくみ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🏭",
+    "mapNode": "taisei:anei",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-rodosha",
+      "ta-sekimu"
+    ],
+    "description": "事業を 行い、労働者を 使う 者です。安衛法の 義務の 多くは 事業者が 負います。衛生管理者は 事業者に かわって 衛生の 仕事を 受けもちます。"
+  },
+  {
+    "id": "ta-jigyojo",
+    "name": "事業場",
+    "reading": "じぎょうじょう",
+    "journey": "taisei",
+    "category": "法のしくみ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🏢",
+    "mapNode": "taisei:anei",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseikanrisha",
+      "ta-ninzu"
+    ],
+    "description": "工場や 事務所 など、1つの 場所で まとまって 仕事を する 単位です。衛生管理者や 産業医が 要るかは、会社 全体では なく 事業場ごとの 人数で 決まります。"
+  },
+  {
+    "id": "ta-eiseiiinkai",
+    "name": "衛生委員会",
+    "reading": "えいせいいいんかい",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🗣",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-iin",
+      "ta-gijikiroku"
+    ],
+    "description": "常時 50人以上の 事業場で 作る、衛生に ついての 話し合いの 場です。毎月 1回以上 ひらき、健康を 守る 対策を 働く 人と いっしょに 考えます。"
+  },
+  {
+    "id": "ta-anzeneiseikyoiku",
+    "name": "安全衛生教育",
+    "reading": "あんぜんえいせいきょういく",
+    "journey": "taisei",
+    "category": "教育",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📚",
+    "mapNode": "taisei:kyoiku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-yatoiirekyoiku",
+      "ta-tokubetsukyoiku"
+    ],
+    "description": "仕事の 危ない ところや 病気の 防ぎかたを 教える ことです。雇い入れた とき・作業が 変わった とき・危ない 業務に つく 前 などに 行います。"
+  },
+  {
+    "id": "ta-rodosaigai",
+    "name": "労働災害",
+    "reading": "ろうどうさいがい",
+    "journey": "taisei",
+    "category": "法のしくみ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🩹",
+    "mapNode": "taisei:anei",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-anzeneiseiho",
+      "ta-shishobyohokoku"
+    ],
+    "description": "仕事が 原因で 働く 人が けがを したり 病気に なったり する ことです。設備・ガス・粉じん や 作業の 動きが 原因に なります。防ぐ ことが いちばん 大切です。"
+  },
+  {
+    "id": "ta-kaitekishokuba",
+    "name": "快適な職場環境",
+    "reading": "かいてきなしょくばかんきょう",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🌿",
+    "mapNode": "taisei:kaiteki",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-kaitekishishin",
+      "ta-doryokugimu"
+    ],
+    "description": "働く 人が 気持ちよく すごせる 職場です。事業者は 作業環境や 作業の 方法を よく して、快適な 職場を つくるよう 努めます(努力義務)。"
+  },
+  {
+    "id": "ta-kantokusho",
+    "name": "労働基準監督署",
+    "reading": "ろうどうきじゅんかんとくしょ",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🏛",
+    "mapNode": "taisei:kantoku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-senninhokoku",
+      "ta-shishobyohokoku"
+    ],
+    "description": "労働基準法や 安衛法が 守られているか 見る 国の 役所です。衛生管理者を 選んだ 報告や 健康診断の 結果の 報告は、所轄の 監督署長に 出します。"
+  },
+  {
+    "id": "ta-junshi",
+    "name": "巡視",
+    "reading": "じゅんし",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "👀",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseijunshi",
+      "ta-sangyoijunshi"
+    ],
+    "description": "作業場を 見回って、健康に 害が ないか たしかめる ことです。衛生管理者と 産業医は 決まった 回数で 巡視を します。"
+  },
+  {
+    "id": "ta-anzenkanrisha",
+    "name": "安全管理者",
+    "reading": "あんぜんかんりしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⛑",
+    "mapNode": "taisei:sokatsu",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-anzengyoshu",
+      "ta-eiseikanrisha"
+    ],
+    "description": "職場の 安全の 技術的な ことを 見る 係です。建設業や 製造業 など 決まった 業種で 常時 50人以上の 事業場に 選びます。衛生の 係とは 別です。"
+  },
+  {
+    "id": "ta-eiseisuishinsha",
+    "name": "衛生推進者",
+    "reading": "えいせいすいしんしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🙋",
+    "mapNode": "taisei:suishin",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-suishinkibo",
+      "ta-anzeneiseisuishinsha"
+    ],
+    "description": "常時 10人以上 50人未満の 小さな 事業場で、衛生の 仕事を すすめる 係です。安全管理者が 要らない 業種で 選びます。"
+  },
+  {
+    "id": "ta-hokenshi",
+    "name": "保健師",
+    "reading": "ほけんし",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "💁",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sangyoi",
+      "ta-sangyoishokumu"
+    ],
+    "description": "健康相談や 保健指導を 行う 専門職です。職場では 健康診断の あとの 保健指導や ストレスチェックの 実施を 受けもつ ことが あります。"
+  },
+  {
+    "id": "ta-sokatsu",
+    "name": "総括安全衛生管理者",
+    "reading": "そうかつあんぜんえいせいかんりしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👔",
+    "mapNode": "taisei:sokatsu",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sokatsukibo",
+      "ta-tokatsu"
+    ],
+    "description": "事業場の 安全と 衛生の 仕事を まとめて 見る 責任者です。業種に よって 常時 100人・300人・1,000人以上の 事業場で 選びます。"
+  },
+  {
+    "id": "ta-eiseisennin",
+    "name": "衛生管理者の選任",
+    "reading": "えいせいかんりしゃのせんにん",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📝",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-juyokka",
+      "ta-senninhokoku"
+    ],
+    "description": "衛生管理者は、選ぶ 必要が 出た 日から 14日以内に 選びます。選んだら 遅滞なく 所轄の 労働基準監督署長に 報告します。"
+  },
+  {
+    "id": "ta-senninhokoku",
+    "name": "選任報告",
+    "reading": "せんにんほうこく",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📮",
+    "mapNode": "taisei:todoke",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseisennin",
+      "ta-hokokufuyo"
+    ],
+    "description": "総括安全衛生管理者・衛生管理者・産業医を 選んだ ときに、遅滞なく 所轄の 労働基準監督署長へ 出す 報告です。いまは 電子で 出します。"
+  },
+  {
+    "id": "ta-daiisshu",
+    "name": "第一種衛生管理者",
+    "reading": "だいいっしゅえいせいかんりしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🥇",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-dainishu",
+      "ta-daiisshugyoshu"
+    ],
+    "description": "すべての 業種で 衛生管理者に なれる 免許です。製造業や 建設業 など 有害な 業務が ある 業種では、この 第一種が 要ります。"
+  },
+  {
+    "id": "ta-dainishu",
+    "name": "第二種衛生管理者",
+    "reading": "だいにしゅえいせいかんりしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🥈",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-daiisshu",
+      "ta-daiisshugyoshu"
+    ],
+    "description": "情報通信業・金融業・小売業 など、有害な 業務との かかわりが 少ない 一部の 業種だけで 衛生管理者に なれる 免許です。"
+  },
+  {
+    "id": "ta-eiseijunshi",
+    "name": "衛生管理者の定期巡視",
+    "reading": "えいせいかんりしゃのていきじゅんし",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚶",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-junshi",
+      "ta-sangyoijunshi"
+    ],
+    "description": "衛生管理者は 少なくとも 毎週 1回 作業場を 巡視します。設備や 作業の しかたに 健康の 害の おそれが あれば、すぐに 防ぐ 手を 打ちます。"
+  },
+  {
+    "id": "ta-sangyoijunshi",
+    "name": "産業医の定期巡視",
+    "reading": "さんぎょういのていきじゅんし",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🩺",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-nikagetsu",
+      "ta-eiseijunshi"
+    ],
+    "description": "産業医は 少なくとも 毎月 1回 作業場を 巡視します。衛生管理者の 毎週 1回と 回数が ちがうので 気を つけます。"
+  },
+  {
+    "id": "ta-sangyoikankoku",
+    "name": "産業医の勧告",
+    "reading": "さんぎょういのかんこく",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "✉️",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sangyoi",
+      "ta-gijikiroku"
+    ],
+    "description": "産業医は 働く 人の 健康の ために 事業者へ 勧告が できます。事業者は 尊重し、勧告の 中身と した ことを 記録して 3年間 保存します。"
+  },
+  {
+    "id": "ta-anzeneiseisuishinsha",
+    "name": "安全衛生推進者",
+    "reading": "あんぜんえいせいすいしんしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🙌",
+    "mapNode": "taisei:suishin",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseisuishinsha",
+      "ta-anzengyoshu"
+    ],
+    "description": "安全管理者が 要る 業種(建設業・製造業 など)で、常時 10人以上 50人未満の 事業場に 選ぶ 係です。安全と 衛生の 両方を 受けもちます。"
+  },
+  {
+    "id": "ta-anzeneiseiiinkai",
+    "name": "安全衛生委員会",
+    "reading": "あんぜんえいせいいいんかい",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🤝",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseiiinkai",
+      "ta-anzeniinkai"
+    ],
+    "description": "安全委員会と 衛生委員会の 両方が 要る ときに、1つに まとめて 作れる 委員会です。安全と 衛生を いっしょに 話し合います。"
+  },
+  {
+    "id": "ta-anzeniinkai",
+    "name": "安全委員会",
+    "reading": "あんぜんいいんかい",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🦺",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-anzeneiseiiinkai",
+      "ta-anzengyoshu"
+    ],
+    "description": "安全に ついて 話し合う 委員会です。業種に よって 常時 50人以上 または 100人以上で 作ります。金融業や 保険業 などには 要りません。"
+  },
+  {
+    "id": "ta-gijikiroku",
+    "name": "議事の記録",
+    "reading": "ぎじのきろく",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗂",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseiiinkai",
+      "ta-gijishuchi"
+    ],
+    "description": "委員会の 意見と それを うけて した こと、重要な 議事を 記録して 3年間 保存します。健康診断の 記録の 5年と まちがえない ように します。"
+  },
+  {
+    "id": "ta-gicho",
+    "name": "委員会の議長",
+    "reading": "いいんかいのぎちょう",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎙",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-iin",
+      "ta-sokatsu"
+    ],
+    "description": "衛生委員会の 議長は、総括安全衛生管理者 または 事業の 実施を 統括管理する 者 などから 1人を 指名します。衛生管理者が 議長に なるとは かぎりません。"
+  },
+  {
+    "id": "ta-yatoiirekyoiku",
+    "name": "雇入れ時の教育",
+    "reading": "やといいれじのきょういく",
+    "journey": "taisei",
+    "category": "教育",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🆕",
+    "mapNode": "taisei:kyoiku",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-hachikomoku",
+      "ta-kyoikushoryaku"
+    ],
+    "description": "労働者を 雇い入れた ときに 遅滞なく 行う 安全衛生教育です。業種や 人数に かかわらず、すべての 事業場で 行います。"
+  },
+  {
+    "id": "ta-henkojikyoiku",
+    "name": "作業内容変更時の教育",
+    "reading": "さぎょうないようへんこうじのきょういく",
+    "journey": "taisei",
+    "category": "教育",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "taisei:kyoiku",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-yatoiirekyoiku",
+      "ta-hakensakikyoiku"
+    ],
+    "description": "作業の 内容が 変わった ときに、雇い入れた ときと 同じ 中身で 行う 教育です。新しい 作業の 危ない ところを 知ってもらいます。"
+  },
+  {
+    "id": "ta-tokubetsukyoiku",
+    "name": "特別教育",
+    "reading": "とくべつきょういく",
+    "journey": "taisei",
+    "category": "教育",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⚠️",
+    "mapNode": "taisei:kyoiku",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-tokubetsukiroku",
+      "ta-funjintokukyo"
+    ],
+    "description": "危ない 業務や 有害な 業務に つかせる 前に 事業者が 行う 教育です。アーク溶接・低い 電圧の 電気・酸素欠乏の おそれが ある 作業 などが あります。"
+  },
+  {
+    "id": "ta-shokuchokyoiku",
+    "name": "職長教育",
+    "reading": "しょくちょうきょういく",
+    "journey": "taisei",
+    "category": "教育",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧑‍🏫",
+    "mapNode": "taisei:kyoiku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-shokuchogyoshu",
+      "ta-tokubetsukyoiku"
+    ],
+    "description": "新しく 職長に なった 人に、作業の 決めかたや 部下の 指導、リスクアセスメント などを 教える 教育です。作業主任者は のぞきます。"
+  },
+  {
+    "id": "ta-shugyoseigen",
+    "name": "就業制限",
+    "reading": "しゅうぎょうせいげん",
+    "journey": "taisei",
+    "category": "就業制限",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚫",
+    "mapNode": "taisei:shugyo",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-menkyo",
+      "ta-ginokoshu"
+    ],
+    "description": "クレーンの 運転や ガス溶接 など 決まった 業務は、免許や 技能講習の 修了 などの 資格が ある 人で なければ つけない 決まりです。"
+  },
+  {
+    "id": "ta-menkyo",
+    "name": "免許",
+    "reading": "めんきょ",
+    "journey": "taisei",
+    "category": "就業制限",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🪪",
+    "mapNode": "taisei:shugyo",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-shugyoseigen",
+      "ta-torikeshi"
+    ],
+    "description": "決まった 業務や 衛生管理者に なる ための 国の 資格です。試験に 受かるなど した 人に、都道府県労働局長が 免許証を 渡します。"
+  },
+  {
+    "id": "ta-ginokoshu",
+    "name": "技能講習",
+    "reading": "ぎのうこうしゅう",
+    "journey": "taisei",
+    "category": "就業制限",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎫",
+    "mapNode": "taisei:shugyo",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-shugyoseigen",
+      "ta-forklift"
+    ],
+    "description": "都道府県労働局長の 登録を 受けた 機関が 行う 講習です。修了すると、フォークリフトの 運転 など 決まった 業務に つけます。"
+  },
+  {
+    "id": "ta-shishobyohokoku",
+    "name": "労働者死傷病報告",
+    "reading": "ろうどうしゃししょうびょうほうこく",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📄",
+    "mapNode": "taisei:todoke",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-shihanki",
+      "ta-rodosaigai"
+    ],
+    "description": "労働災害などで 働く 人が 休業した ときなどに、所轄の 労働基準監督署長へ 出す 報告です。休業が 4日以上なら 遅滞なく 出します。"
+  },
+  {
+    "id": "ta-horeishuchi",
+    "name": "法令等の周知",
+    "reading": "ほうれいとうのしゅうち",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📌",
+    "mapNode": "taisei:kantoku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-hokokushutto",
+      "ta-bassoku"
+    ],
+    "description": "事業者は 安衛法と 命令の 大切な ところを、作業場の 見やすい 場所に 掲示する などして 働く 人に 知らせます。"
+  },
+  {
+    "id": "ta-kaitekishishin",
+    "name": "快適職場指針",
+    "reading": "かいてきしょくばししん",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🌸",
+    "mapNode": "taisei:kaiteki",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-kaitekishokuba",
+      "ta-yottsunosochi"
+    ],
+    "description": "快適な 職場を つくる ために 厚生労働大臣が 公表した 指針です。事業者は この 指針を 参考に 職場を よく していきます。"
+  },
+  {
+    "id": "ta-hakenmoto",
+    "name": "派遣元",
+    "reading": "はけんもと",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏬",
+    "mapNode": "taisei:haken",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-hakensaki",
+      "ta-hakenrodosha"
+    ],
+    "description": "労働者を 雇って 別の 会社へ 派遣する 側です。一般の 健康診断や 雇い入れた ときの 教育は 派遣元が 行います。"
+  },
+  {
+    "id": "ta-hakensaki",
+    "name": "派遣先",
+    "reading": "はけんさき",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏗",
+    "mapNode": "taisei:haken",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-hakenmoto",
+      "ta-hakensakikyoiku"
+    ],
+    "description": "派遣された 労働者が 実際に 働く 側です。有害な 業務の 特殊健康診断や、作業内容変更時の 教育・特別教育は 派遣先が 行います。"
+  },
+  {
+    "id": "ta-bassoku",
+    "name": "罰則",
+    "reading": "ばっそく",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "taisei:kantoku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-bassoku22",
+      "ta-hokokushutto"
+    ],
+    "description": "安衛法の 義務を 守らない ときの 刑罰です。決まりを 守る ことは、働く 人の 健康を 守る ことに つながります。"
+  },
+  {
+    "id": "ta-rodokyokucho",
+    "name": "都道府県労働局長",
+    "reading": "とどうふけんろうどうきょくちょう",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏯",
+    "mapNode": "taisei:kantoku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-menkyo",
+      "ta-kyokuchokankoku"
+    ],
+    "description": "都道府県ごとの 労働局の 長です。免許証を 渡し、総括安全衛生管理者の 仕事の すすめかたに ついて 事業者へ 勧告も できます。"
+  },
+  {
+    "id": "ta-consultant",
+    "name": "労働衛生コンサルタント",
+    "reading": "ろうどうえいせいこんさるたんと",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎓",
+    "mapNode": "taisei:eisei",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseishikaku",
+      "ta-senzokueisei"
+    ],
+    "description": "国家試験に 受かって 登録した、労働衛生の 専門家です。免許が なくても 衛生管理者に なれ、保健衛生の 区分なら 産業医の 要件にも なります。"
+  },
+  {
+    "id": "ta-risuku",
+    "name": "リスクアセスメント",
+    "reading": "りすくあせすめんと",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔍",
+    "mapNode": "taisei:sokatsu",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-keikaku",
+      "ta-chosashingi"
+    ],
+    "description": "職場の 危ない ところや 有害な ところを 見つけ、どれくらい 大きいか 見積もって 減らす とりくみです。総括安全衛生管理者が まとめる 仕事の 1つです。"
+  },
+  {
+    "id": "ta-doryokugimu",
+    "name": "努力義務",
+    "reading": "どりょくぎむ",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💪",
+    "mapNode": "taisei:kaiteki",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-kaitekishokuba",
+      "ta-gojumiman"
+    ],
+    "description": "「〜するよう 努めなければ ならない」と いう 決まりです。守らなくても 罰則は ありません。試験では「義務」との ちがいが よく 問われます。"
+  },
+  {
+    "id": "ta-ninzu",
+    "name": "衛生管理者の人数",
+    "reading": "えいせいかんりしゃのにんずう",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔢",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseikanrisha",
+      "ta-sennineisei"
+    ],
+    "description": "50〜200人は 1人、200人超〜500人は 2人、500人超〜1,000人は 3人と ふえ、3,000人超で 6人です。「以上」と「超」の さかいめに 気を つけます。"
+  },
+  {
+    "id": "ta-senzokueisei",
+    "name": "専属の衛生管理者",
+    "reading": "せんぞくのえいせいかんりしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📍",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-consultant",
+      "ta-sennineisei"
+    ],
+    "description": "衛生管理者は 原則 その 事業場に 専属の 人から 選びます。2人以上 選ぶ ときに 労働衛生コンサルタントが いれば、その うち 1人は 専属で なくて よいです。"
+  },
+  {
+    "id": "ta-sennineisei",
+    "name": "専任の衛生管理者",
+    "reading": "せんにんのえいせいかんりしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-senzokueisei",
+      "ta-ninzu"
+    ],
+    "description": "常時 1,000人超、または 500人超で 有害な 業務に 30人以上が つく 事業場では、少なくとも 1人を 専任に します。深夜業は この 有害な 業務に 入りません。「専属」と「専任」は 意味が ちがいます。"
+  },
+  {
+    "id": "ta-eiseikogaku",
+    "name": "衛生工学衛生管理者",
+    "reading": "えいせいこうがくえいせいかんりしゃ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔧",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害業務)",
+    "relatedTerms": [
+      "ta-kogakukoshu",
+      "ta-sennineisei"
+    ],
+    "description": "常時 500人超で、高熱・粉じん・有害物の ガス など 決まった 有害な 業務に 30人以上が つく 事業場で 1人 選びます。低温・振動・騒音の 業務だけでは 要りません。"
+  },
+  {
+    "id": "ta-eiseikengen",
+    "name": "衛生管理者の権限",
+    "reading": "えいせいかんりしゃのけんげん",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗝",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseijunshi",
+      "ta-eiseikanrisha"
+    ],
+    "description": "事業者は 衛生管理者に、衛生の ために 必要な 措置を とれる 権限を 与えます。見回って 見つけた 問題を すぐに 直せる ように する ためです。"
+  },
+  {
+    "id": "ta-eiseishikaku",
+    "name": "衛生管理者になれる資格",
+    "reading": "えいせいかんりしゃになれるしかく",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📜",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-consultant",
+      "ta-daiisshu"
+    ],
+    "description": "衛生管理者には 免許の ほか、医師・歯科医師・労働衛生コンサルタント なども なれます。試験に 受からなくても なれる 人が いる 点が ひっかけです。"
+  },
+  {
+    "id": "ta-kogakukoshu",
+    "name": "衛生工学衛生管理者講習",
+    "reading": "えいせいこうがくえいせいかんりしゃこうしゅう",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛠",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害業務)",
+    "relatedTerms": [
+      "ta-eiseikogaku",
+      "ta-daiisshu"
+    ],
+    "description": "衛生工学衛生管理者の 免許は 試験では なく、登録を 受けた 機関の 講習を 修了して 得ます。第一種衛生管理者の 試験に 受かった 人 などが 受けられます。"
+  },
+  {
+    "id": "ta-daiisshugyoshu",
+    "name": "第一種免許が要る業種",
+    "reading": "だいいっしゅめんきょがいるぎょうしゅ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏭",
+    "mapNode": "taisei:eisei",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-daiisshu",
+      "ta-dainishu"
+    ],
+    "description": "農林畜水産業・鉱業・建設業・製造業・電気業・ガス業・運送業・医療業・清掃業 などは、第一種 などの 免許が 要ります。医療業と 清掃業を 見おとしやすいです。"
+  },
+  {
+    "id": "ta-senzokusangyoi",
+    "name": "専属の産業医",
+    "reading": "せんぞくのさんぎょうい",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏥",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sangyoifutari",
+      "ta-sangyoi"
+    ],
+    "description": "常時 1,000人以上、または 深夜業 などの 有害な 業務に 常時 500人以上が つく 事業場では、専属の 産業医を 選びます。衛生管理者の「1,000人超」と ちがい「以上」です。"
+  },
+  {
+    "id": "ta-sangyoifutari",
+    "name": "産業医2人以上",
+    "reading": "さんぎょういふたりいじょう",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👥",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-senzokusangyoi",
+      "ta-sangyoi"
+    ],
+    "description": "常時 3,000人を こえる 事業場では、産業医を 2人以上 選びます。3,000人 ちょうどなら 1人で よい 点に 気を つけます。"
+  },
+  {
+    "id": "ta-sangyoiyoken",
+    "name": "産業医の要件",
+    "reading": "さんぎょういのようけん",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎖",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sangyoinarenai",
+      "ta-consultant"
+    ],
+    "description": "産業医に なれるのは、医師の 中でも 決まった 研修を 修了した 人や 労働衛生コンサルタント(保健衛生)など、要件を みたす 人だけです。"
+  },
+  {
+    "id": "ta-sangyoinarenai",
+    "name": "産業医になれない人",
+    "reading": "さんぎょういになれないひと",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🙅",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sangyoiyoken",
+      "ta-tokatsu"
+    ],
+    "description": "医師で あっても、法人の 代表者・事業を 営む 個人・事業の 実施を 統括管理する 者は、その 事業場の 産業医に 選べません。中立を 守る ためです。"
+  },
+  {
+    "id": "ta-nikagetsu",
+    "name": "2か月に1回の巡視",
+    "reading": "にかげつにいっかいのじゅんし",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📆",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sangyoijunshi",
+      "ta-johoteikyo"
+    ],
+    "description": "事業者が 毎月 1回以上 衛生管理者の 巡視の 結果 などの 情報を 産業医に 渡し、事業者の 同意が ある ときは、産業医の 巡視を 2か月に 1回に できます。"
+  },
+  {
+    "id": "ta-johoteikyo",
+    "name": "産業医への情報提供",
+    "reading": "さんぎょういへのじょうほうていきょう",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📨",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-nikagetsu",
+      "ta-sangyoishokumu"
+    ],
+    "description": "事業者は 産業医に、長い 時間 働いた 人の 労働時間 など、健康を 守る ために 必要な 情報を 渡します。2019年4月の 改正で 強められました。"
+  },
+  {
+    "id": "ta-sangyoishokumu",
+    "name": "産業医の職務",
+    "reading": "さんぎょういのしょくむ",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧾",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sangyoi",
+      "ta-johoteikyo"
+    ],
+    "description": "産業医は 健康診断・面接指導・ストレスチェックと その あとの 措置、健康教育・衛生教育、病気の 原因調査 などを 受けもちます。"
+  },
+  {
+    "id": "ta-gojumiman",
+    "name": "50人未満の健康管理",
+    "reading": "ごじゅうにんみまんのけんこうかんり",
+    "journey": "taisei",
+    "category": "産業医",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏠",
+    "mapNode": "taisei:sangyoi",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-doryokugimu",
+      "ta-eiseisuishinsha"
+    ],
+    "description": "常時 50人未満の 事業場には 産業医を 選ぶ 義務は ありません。かわりに 医師 などに 健康管理を 行わせるよう 努めます(努力義務)。"
+  },
+  {
+    "id": "ta-sokatsukibo",
+    "name": "総括安全衛生管理者の規模",
+    "reading": "そうかつあんぜんえいせいかんりしゃのきぼ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "taisei:sokatsu",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sokatsu",
+      "ta-anzengyoshu"
+    ],
+    "description": "林業・建設業・運送業・清掃業 などは 100人以上、製造業・旅館業 などは 300人以上、その他の 業種は 1,000人以上で 選びます。業種の 組み分けが ひっかけです。"
+  },
+  {
+    "id": "ta-tokatsu",
+    "name": "事業の実施を統括管理する者",
+    "reading": "じぎょうのじっしをとうかつかんりするもの",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "taisei:sokatsu",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sokatsu",
+      "ta-sangyoinarenai"
+    ],
+    "description": "工場長 など、その 事業場で 事業の 実施を まとめて 管理する 人です。総括安全衛生管理者に あてます。免許や 資格は 要りません。"
+  },
+  {
+    "id": "ta-kyokuchokankoku",
+    "name": "労働局長の勧告",
+    "reading": "ろうどうきょくちょうのかんこく",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📣",
+    "mapNode": "taisei:sokatsu",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sokatsu",
+      "ta-zoin"
+    ],
+    "description": "都道府県労働局長は、総括安全衛生管理者の 仕事の すすめかたに ついて 事業者に 勧告できます。監督署長の「増員・解任の 命令」と 区別します。"
+  },
+  {
+    "id": "ta-zoin",
+    "name": "増員・解任の命令",
+    "reading": "ぞういんかいにんのめいれい",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔁",
+    "mapNode": "taisei:sokatsu",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-kyokuchokankoku",
+      "ta-kantokusho"
+    ],
+    "description": "衛生管理者や 安全管理者の 増員や 解任を 命じられるのは 労働基準監督署長です。都道府県労働局長では ない ところが ひっかけです。"
+  },
+  {
+    "id": "ta-anzengyoshu",
+    "name": "安全管理者が要る業種",
+    "reading": "あんぜんかんりしゃがいるぎょうしゅ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏗",
+    "mapNode": "taisei:sokatsu",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-anzenkanrisha",
+      "ta-anzeneiseisuishinsha"
+    ],
+    "description": "安全管理者は 建設業・製造業・運送業・各種商品小売業 など 決まった 業種だけで 選びます。金融業や 保険業 などには 要りませんが、衛生管理者は どの 業種でも 要ります。"
+  },
+  {
+    "id": "ta-keikaku",
+    "name": "安全衛生計画",
+    "reading": "あんぜんえいせいけいかく",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗓",
+    "mapNode": "taisei:sokatsu",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-risuku",
+      "ta-sokatsu"
+    ],
+    "description": "安全と 衛生の 目標や とりくみを 決める 計画です。総括安全衛生管理者は、計画の 作成・実施・評価・改善を まとめて 管理します。"
+  },
+  {
+    "id": "ta-suishinkeiji",
+    "name": "推進者の氏名の掲示",
+    "reading": "すいしんしゃのしめいのけいじ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🪧",
+    "mapNode": "taisei:suishin",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-hokokufuyo",
+      "ta-eiseisuishinsha"
+    ],
+    "description": "衛生推進者を 選んだら、氏名を 作業場の 見やすい 場所に 掲示する などして 知らせます。監督署長への 報告は 要りません。"
+  },
+  {
+    "id": "ta-suishinkoshu",
+    "name": "推進者の講習",
+    "reading": "すいしんしゃのこうしゅう",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏫",
+    "mapNode": "taisei:suishin",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseisuishinsha",
+      "ta-suishinkibo"
+    ],
+    "description": "衛生推進者は、都道府県労働局長の 登録を 受けた 機関の 講習を 修了した 人 などから 選びます。原則 その 事業場に 専属の 人です。"
+  },
+  {
+    "id": "ta-suishinkibo",
+    "name": "推進者の規模",
+    "reading": "すいしんしゃのきぼ",
+    "journey": "taisei",
+    "category": "管理者",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📐",
+    "mapNode": "taisei:suishin",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseisuishinsha",
+      "ta-suishinkoshu"
+    ],
+    "description": "衛生推進者を 選ぶのは 常時 10人以上 50人未満の 事業場です。50人に なると 衛生管理者に かわります。「50人以下」では ない 点に 気を つけます。"
+  },
+  {
+    "id": "ta-iin",
+    "name": "衛生委員会の委員",
+    "reading": "えいせいいいんかいのいいん",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🪑",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-gicho",
+      "ta-suisen"
+    ],
+    "description": "衛生委員会の 委員は、議長・衛生管理者・産業医・衛生の 経験が ある 労働者で つくります。作業環境測定士を 委員に する ことも できます。"
+  },
+  {
+    "id": "ta-suisen",
+    "name": "半数の推薦",
+    "reading": "はんすうのすいせん",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "✋",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-iin",
+      "ta-gicho"
+    ],
+    "description": "議長 以外の 委員の 半数は、労働者の 過半数で つくる 労働組合(なければ 過半数の 代表者)の 推薦に もとづいて 指名します。"
+  },
+  {
+    "id": "ta-gijishuchi",
+    "name": "議事の概要の周知",
+    "reading": "ぎじのがいようのしゅうち",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📢",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-gijikiroku",
+      "ta-eiseiiinkai"
+    ],
+    "description": "委員会を ひらく たびに、議事の 概要を 遅滞なく 働く 人に 知らせます。掲示・書面・電子の どれかで よいです。"
+  },
+  {
+    "id": "ta-chosashingi",
+    "name": "調査審議",
+    "reading": "ちょうさしんぎ",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔎",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseiiinkai",
+      "ta-risuku"
+    ],
+    "description": "衛生委員会が 調べて 話し合う ことです。健康障害を 防ぐ 対策の ほか、長時間労働に よる 健康障害の 防止や 心の 健康づくりも 話し合います。"
+  },
+  {
+    "id": "ta-ikennokikai",
+    "name": "関係労働者の意見を聴く機会",
+    "reading": "かんけいろうどうしゃのいけんをきくきかい",
+    "journey": "taisei",
+    "category": "委員会",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👂",
+    "mapNode": "taisei:iinkai",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseiiinkai",
+      "ta-gojumiman"
+    ],
+    "description": "委員会を 作らなくて よい 小さな 事業場でも、事業者は 安全や 衛生に ついて 働く 人の 意見を 聴く 機会を 作ります。"
+  },
+  {
+    "id": "ta-hachikomoku",
+    "name": "教育の8項目",
+    "reading": "きょういくのはちこうもく",
+    "journey": "taisei",
+    "category": "教育",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎒",
+    "mapNode": "taisei:kyoiku",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-yatoiirekyoiku",
+      "ta-kyoikushoryaku"
+    ],
+    "description": "雇入れ時の 教育には、機械や 原材料の 危ない ところ・保護具の 使いかた・作業手順・病気の 予防・整理整頓・事故の ときの 応急措置 など 8つの 項目が あります。"
+  },
+  {
+    "id": "ta-kyoikushoryaku",
+    "name": "教育の省略",
+    "reading": "きょういくのしょうりゃく",
+    "journey": "taisei",
+    "category": "教育",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "✂️",
+    "mapNode": "taisei:kyoiku",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-hachikomoku",
+      "ta-yatoiirekyoiku"
+    ],
+    "description": "十分な 知識と 技能が ある 人には、その 項目の 教育を 省けます。いまの 決まりでは、業種に よって 教育を 省ける きまりは ありません。"
+  },
+  {
+    "id": "ta-tokubetsukiroku",
+    "name": "特別教育の記録",
+    "reading": "とくべつきょういくのきろく",
+    "journey": "taisei",
+    "category": "教育",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗃",
+    "mapNode": "taisei:kyoiku",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-tokubetsukyoiku",
+      "ta-gijikiroku"
+    ],
+    "description": "特別教育を 行ったら、受けた 人や 科目の 記録を 作って 3年間 保存します。健康診断の 記録の 5年と まちがえない ように します。"
+  },
+  {
+    "id": "ta-shokuchogyoshu",
+    "name": "職長教育の業種",
+    "reading": "しょくちょうきょういくのぎょうしゅ",
+    "journey": "taisei",
+    "category": "教育",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏗",
+    "mapNode": "taisei:kyoiku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-shokuchokyoiku",
+      "ta-anzengyoshu"
+    ],
+    "description": "職長教育が 要るのは 建設業・製造業・電気業・ガス業・自動車整備業・機械修理業 などです。製造業でも たばこ・繊維・衣服・紙加工品は のぞかれます。"
+  },
+  {
+    "id": "ta-keitai",
+    "name": "免許証の携帯",
+    "reading": "めんきょしょうのけいたい",
+    "journey": "taisei",
+    "category": "就業制限",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👛",
+    "mapNode": "taisei:shugyo",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-shugyoseigen",
+      "ta-menkyo"
+    ],
+    "description": "就業制限の 業務に つく 人は、免許証や 技能講習の 修了証を 持ち歩かなければ なりません。資格を 持っている だけでは 足りない 点に 気を つけます。"
+  },
+  {
+    "id": "ta-torikeshi",
+    "name": "免許の取消し",
+    "reading": "めんきょのとりけし",
+    "journey": "taisei",
+    "category": "就業制限",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "❎",
+    "mapNode": "taisei:shugyo",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-menkyo",
+      "ta-rodokyokucho"
+    ],
+    "description": "免許証を 他人に 貸した ときなどは 免許が 取り消される ことが あります。取り消された 日から 1年は、免許を 受けられません。"
+  },
+  {
+    "id": "ta-funjintokukyo",
+    "name": "特定粉じん作業の特別教育",
+    "reading": "とくていふんじんさぎょうのとくべつきょういく",
+    "journey": "taisei",
+    "category": "就業制限",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌫",
+    "mapNode": "taisei:shugyo",
+    "field": "粉じん則",
+    "ruleset": "関係法令(有害業務)",
+    "relatedTerms": [
+      "ta-tokubetsukyoiku",
+      "ta-sanketsutokukyo"
+    ],
+    "description": "特定粉じん作業に つかせる 前には 特別教育を 行います。粉じんの 作業には 作業主任者の 決まりが ない ので、教育で 守る しくみです。"
+  },
+  {
+    "id": "ta-sanketsutokukyo",
+    "name": "酸素欠乏危険作業の特別教育",
+    "reading": "さんそけつぼうきけんさぎょうのとくべつきょういく",
+    "journey": "taisei",
+    "category": "就業制限",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🫧",
+    "mapNode": "taisei:shugyo",
+    "field": "酸欠則",
+    "ruleset": "関係法令(有害業務)",
+    "relatedTerms": [
+      "ta-funjintokukyo",
+      "ta-tokubetsukyoiku"
+    ],
+    "description": "酸素欠乏の おそれが ある 場所で 作業させる 前には 特別教育を 行います。作業を 指揮する 人は 技能講習を 修了した 作業主任者です。"
+  },
+  {
+    "id": "ta-forklift",
+    "name": "フォークリフトの区分",
+    "reading": "ふぉーくりふとのくぶん",
+    "journey": "taisei",
+    "category": "就業制限",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚜",
+    "mapNode": "taisei:shugyo",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-ginokoshu",
+      "ta-tokubetsukyoiku"
+    ],
+    "description": "最大荷重 1t以上の フォークリフトの 運転は 技能講習の 修了が 要り、1t未満は 特別教育で よいです。数字の さかいめが よく 問われます。"
+  },
+  {
+    "id": "ta-juyokka",
+    "name": "14日以内の選任",
+    "reading": "じゅうよっかいないのせんにん",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏳",
+    "mapNode": "taisei:todoke",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-eiseisennin",
+      "ta-senninhokoku"
+    ],
+    "description": "総括安全衛生管理者・衛生管理者・産業医・衛生推進者は、選ぶ 必要が 出た 日から 14日以内に 選びます。報告の「遅滞なく」と 区別します。"
+  },
+  {
+    "id": "ta-shihanki",
+    "name": "四半期ごとの報告",
+    "reading": "しはんきごとのほうこく",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗒",
+    "mapNode": "taisei:todoke",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-shishobyohokoku",
+      "ta-kantokusho"
+    ],
+    "description": "休業 4日未満の 労働災害は、1〜3月・4〜6月・7〜9月・10〜12月ごとに まとめ、最後の 月の 翌月末日までに 報告します。"
+  },
+  {
+    "id": "ta-doshugan",
+    "name": "同種のがんの報告",
+    "reading": "どうしゅのがんのほうこく",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧬",
+    "mapNode": "taisei:todoke",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害業務)",
+    "relatedTerms": [
+      "ta-shishobyohokoku",
+      "ta-rodokyokucho"
+    ],
+    "description": "化学物質を あつかう 事業場で 1年以内に 2人以上が 同じ 種類の がんに なったら、医師の 意見を 聴き、仕事が 原因と うたがわれれば 都道府県労働局長へ 報告します。"
+  },
+  {
+    "id": "ta-hokokufuyo",
+    "name": "報告がいらない選任",
+    "reading": "ほうこくがいらないせんにん",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🙆",
+    "mapNode": "taisei:todoke",
+    "field": "安衛則",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-suishinkeiji",
+      "ta-senninhokoku"
+    ],
+    "description": "衛生推進者と 作業主任者は、選んでも 監督署長への 報告は 要りません。氏名などを 掲示して 知らせます。衛生管理者や 産業医とは ちがいます。"
+  },
+  {
+    "id": "ta-yottsunosochi",
+    "name": "快適職場の4つの措置",
+    "reading": "かいてきしょくばのよっつのそち",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🍀",
+    "mapNode": "taisei:kaiteki",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-kaitekishishin",
+      "ta-kaitekishokuba"
+    ],
+    "description": "快適な 職場の ための 措置は、作業環境の 管理・作業方法の 改善・疲れを とる 施設や 設備・その他の 4つです。どれも 努力義務です。"
+  },
+  {
+    "id": "ta-sekimu",
+    "name": "事業者の責務",
+    "reading": "じぎょうしゃのせきむ",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧱",
+    "mapNode": "taisei:kaiteki",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-jigyosha",
+      "ta-kaitekishokuba"
+    ],
+    "description": "事業者は 法律の 最低の 基準を 守る だけで なく、快適な 職場と 労働条件の 改善で 働く 人の 安全と 健康を 守らなければ なりません。"
+  },
+  {
+    "id": "ta-koreihairyo",
+    "name": "高年齢労働者への配慮",
+    "reading": "こうねんれいろうどうしゃへのはいりょ",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧓",
+    "mapNode": "taisei:kaiteki",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-sekimu",
+      "ta-ryoritsu"
+    ],
+    "description": "事業者は 中高年齢者 など 配慮が 要る 人を、心身の 条件に 応じて 適正に 配置するよう 努めます。高年齢の 人の 労働災害を 防ぐ 措置も 努力義務です。"
+  },
+  {
+    "id": "ta-kojinjigyosha",
+    "name": "個人事業者等",
+    "reading": "こじんじぎょうしゃとう",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧑‍🔧",
+    "mapNode": "taisei:kaiteki",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-motokata",
+      "ta-sekimu"
+    ],
+    "description": "労働者では ない 一人親方 などの 人です。2025年に 公布された 改正法で、同じ 場所で 働く 個人事業者等も 安全衛生の 対策の 対象に 広がりました。"
+  },
+  {
+    "id": "ta-ryoritsu",
+    "name": "治療と仕事の両立",
+    "reading": "ちりょうとしごとのりょうりつ",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🤲",
+    "mapNode": "taisei:kaiteki",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-koreihairyo",
+      "ta-kojinjigyosha"
+    ],
+    "description": "病気の 治療を 続けながら 働ける ように 職場が 支える ことです。2025年に 公布された 改正で 事業者の 努力義務に なりました。義務では ありません。"
+  },
+  {
+    "id": "ta-hakenrodosha",
+    "name": "派遣労働者",
+    "reading": "はけんろうどうしゃ",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧳",
+    "mapNode": "taisei:haken",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-hakenmoto",
+      "ta-hakensaki"
+    ],
+    "description": "派遣元に 雇われ、派遣先で 働く 人です。健康診断や 教育は、どちらが 行うか 決まっています。一般の 健康診断は 派遣元、特殊健康診断は 派遣先です。"
+  },
+  {
+    "id": "ta-hakensakikyoiku",
+    "name": "派遣先が行う教育",
+    "reading": "はけんさきがおこなうきょういく",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏷",
+    "mapNode": "taisei:haken",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-hakensaki",
+      "ta-henkojikyoiku"
+    ],
+    "description": "派遣労働者への 作業内容変更時の 教育と 特別教育は 派遣先が 行います。雇い入れた ときの 教育は 派遣元です。どちらが 行うかが ひっかけです。"
+  },
+  {
+    "id": "ta-motokata",
+    "name": "元方事業者",
+    "reading": "もとかたじぎょうしゃ",
+    "journey": "taisei",
+    "category": "快適・派遣",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏗",
+    "mapNode": "taisei:haken",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-kojinjigyosha",
+      "ta-hakensaki"
+    ],
+    "description": "仕事の 一部を 下請に まかせる 元の 事業者です。下請の 人たちが 法律に 反しない ように 指導し、反して いれば 正す ための 指示を します。"
+  },
+  {
+    "id": "ta-hokokushutto",
+    "name": "報告・出頭の命令",
+    "reading": "ほうこくしゅっとうのめいれい",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📞",
+    "mapNode": "taisei:kantoku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-kantokusho",
+      "ta-bassoku"
+    ],
+    "description": "労働基準監督署長 などは、法律を 守らせる ために 事業者に 報告を させたり、出頭を 命じたり できます。"
+  },
+  {
+    "id": "ta-bassoku22",
+    "name": "健康障害防止の罰則",
+    "reading": "けんこうしょうがいぼうしのばっそく",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "taisei:kantoku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-bassoku",
+      "ta-kantokusho"
+    ],
+    "description": "健康障害を 防ぐ 措置(安衛法22条)を 守らないと、6月以下の 拘禁刑 または 50万円以下の 罰金です。2025年6月から 義務に なった 熱中症の 対策も ここに 入ります。"
+  },
+  {
+    "id": "ta-kyokai",
+    "name": "安全衛生技術試験協会",
+    "reading": "あんぜんえいせいぎじゅつしけんきょうかい",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏢",
+    "mapNode": "taisei:kantoku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-menkyoshiken",
+      "ta-rodokyokucho"
+    ],
+    "description": "国の 指定を 受けて 衛生管理者の 免許試験を 行う 団体です。全国 7つの 安全衛生技術センターで 試験を 行います。"
+  },
+  {
+    "id": "ta-menkyoshiken",
+    "name": "衛生管理者免許試験",
+    "reading": "えいせいかんりしゃめんきょしけん",
+    "journey": "taisei",
+    "category": "届出・監督",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "✏️",
+    "mapNode": "taisei:kantoku",
+    "field": "安衛法",
+    "ruleset": "関係法令(有害以外)",
+    "relatedTerms": [
+      "ta-kyokai",
+      "ta-daiisshu"
+    ],
+    "description": "第一種は 44問・第二種は 30問で、どちらも 3時間です。科目ごとに 40%以上、かつ 合計 60%以上で 合格です。1つの 科目でも 40%に 届かないと 不合格です。"
+  }
+]

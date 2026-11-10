@@ -10,7 +10,7 @@ from terms_js import BAN, RULESETS, ban_text
 JR = ["taisei", "kenko", "rokiho", "yugaiho", "kankyo", "shokugyo", "shokuba", "kyukyu", "seiri1", "seiri2"]
 PRE = dict(taisei="ta", kenko="ke", rokiho="ro", yugaiho="yu", kankyo="ka", shokugyo="sh", shokuba="sb", kyukyu="ky", seiri1="sa", seiri2="sn")
 GOAL = dict(taisei=140, kenko=130, rokiho=130, yugaiho=150, kankyo=130, shokugyo=120, shokuba=130, kyukyu=100, seiri1=120, seiri2=120)
-RS_OF = dict(taisei={"関係法令(有害以外)", "関係法令(有害業務)"}, kenko={"関係法令(有害以外)", "関係法令(有害業務)"}, rokiho={"関係法令(有害以外)"}, yugaiho={"関係法令(有害業務)"},
+RS_OF = dict(taisei={"関係法令(有害以外)", "関係法令(有害業務)"}, kenko={"関係法令(有害以外)", "関係法令(有害業務)"}, rokiho={"関係法令(有害以外)", "関係法令(有害業務)"}, yugaiho={"関係法令(有害業務)"},
              kankyo={"労働衛生(有害業務)"}, shokugyo={"労働衛生(有害業務)"}, shokuba={"労働衛生(有害以外)"}, kyukyu={"労働衛生(有害以外)"}, seiri1={"労働生理"}, seiri2={"労働生理"})
 def terms():
     ids = set()

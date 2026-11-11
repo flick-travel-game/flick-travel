@@ -153,10 +153,20 @@ def main():
         f = HERE / f"num-{J['id']}.json"
         if f.exists():
             js["num"] += [dict(id=J["id"] + "-" + x["id"], j=J["id"], rs=x["rs"], q=x["q"], a=x["a"], o=x["opts"], w=x["why"], lw=x.get("law", "")) for x in json.loads(f.read_text(encoding="utf-8"))]
+    js["shimon"] = []  # 📝 本番形式の 4択(shimon-<旅>.json。決まりは SHIMON.md。確かめは shimon_check.py)
+    for J in m["journeys"]:
+        f = HERE / f"shimon-{J['id']}.json"
+        if f.exists():
+            for x in json.loads(f.read_text(encoding="utf-8")):
+                o = dict(id=x["id"], j=J["id"], rs=x["rs"], q=x["q"], a=x["a"], o=x["opts"], w=x["why"], lw=x.get("law", ""), dv=x["dv"])
+                if x.get("term") in tids: o["t"] = x["term"]
+                if x.get("k"): o["k"] = x["k"]
+                if x.get("code"): o["cd"] = x["code"]
+                js["shimon"].append(o)
     (ROOT / "itpass").mkdir(exist_ok=True)
     (ROOT / "itpass/terms.js").write_text("/* tools/itpass/terms-*.json から tools/itpass/terms_js.py が 作る。手で 直さない */\nconst ITPASS_TERMS = " +
                                          json.dumps(js, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
-    print("itpass/terms.js", len(out), "語", len(js["maru"]), "問", len(js["num"]), "数字", (ROOT / "itpass/terms.js").stat().st_size // 1024, "KB")
+    print("itpass/terms.js", len(out), "語", len(js["maru"]), "問", len(js["num"]), "数字", len(js["shimon"]), "本番形式", (ROOT / "itpass/terms.js").stat().st_size // 1024, "KB")
 
 if __name__ == "__main__":
     main()

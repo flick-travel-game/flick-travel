@@ -239,6 +239,7 @@ const ITPASS = (() => {
       '<div class="ai-btns"><button type="button" class="ai-btn" data-ai-open="zukan">📖 ことば図鑑</button>' +
       '<button type="button" class="ai-btn" data-ai-open="maru">⭕❌ 一問一答</button>' +
       '<button type="button" class="ai-btn ip-big" data-ai-open="exam">🎯 模擬試験</button>' +
+      '<button type="button" class="ai-btn" data-ai-open="shimon">📝 本番形式の 4択</button>' +
       '<button type="button" class="ai-btn" data-ai-open="num">🔢 数字クイズ</button>' +
       '<button type="button" class="ai-btn" data-ai-open="review">❌ まちがえた 問題' + (missList().length ? "(" + missList().length + ")" : "") + '</button>' +
       '<button type="button" class="ai-btn" data-ai-open="quiz">🧩 4択クイズ</button>' +
@@ -417,6 +418,10 @@ const ITPASS = (() => {
   const MBY = new Map(MARU.map(m => [m.id, m]));
   const NUM = (D.num || []).map(n => Object.assign({}, n, { jr:JBY[n.j] }));
   const NBY = new Map(NUM.map(n => [n.id, n]));
+  /* 📝 本番形式の 4択(場面の 問題・💻 擬似言語・📊 表計算。tools/itpass/shimon-<旅>.json。決まりは SHIMON.md)。数字クイズと 同じ 形(o = 選択肢・a = 正解の 字)に そろえて 画面を 使いまわす。sh = 本番形式の しるし */
+  const SHIM = (D.shimon || []).map(n => Object.assign({}, n, { jr:JBY[n.j], sh:true }));
+  const SBY = new Map(SHIM.map(n => [n.id, n]));
+  const qKey = m => (m.sh ? "s:" : m.o ? "n:" : "m:") + m.id;
   const MOCK = D.mock || {};
   const OX = a => a ? "⭕" : "❌";
   const RSO = ["ストラテジ系", "マネジメント系", "テクノロジ系"];
@@ -431,7 +436,7 @@ const ITPASS = (() => {
     else if(key in v){ v[key]++; if(v[key] >= 2) delete v[key]; }
     missSet(v);
   }
-  const missList = () => Object.keys(missGet()).filter(k => k[0] === "m" ? MBY.has(k.slice(2)) : NBY.has(k.slice(2)));
+  const missList = () => Object.keys(missGet()).filter(k => (k[0] === "m" ? MBY : k[0] === "s" ? SBY : NBY).has(k.slice(2)));
   const termChip = id => { const q = BY.get(id); return q ? chip(q) : ""; };
   const lawTag = s => s ? '<small class="ip-law">📚 ' + esc(s) + '</small>' : "";
 
@@ -455,9 +460,9 @@ const ITPASS = (() => {
   function startMaru(list){ const pool = list || shuffle(mPool()).slice(0, QN); if(!pool.length){ drawMaru("問題が ないよ。はんいを 広げてね"); return; } mq = { list:pool, i:0, ok:0, picked:undefined, miss:[], review:!!list }; drawMaru(); }
   function drawMaru(msg){
     const sh = document.getElementById("ai-mq"), Q = mq;
-    let h = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>' + (Q && Q.review ? "❌ まちがえた 問題" : Q && Q.list[0] && Q.list[0].o ? "🔢 数字クイズ" : "⭕❌ 一問一答") + '</h2>';
+    let h = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>' + (Q && Q.review ? "❌ まちがえた 問題" : Q && Q.list[0] && Q.list[0].sh ? "📝 本番形式の 4択" : Q && Q.list[0] && Q.list[0].o ? "🔢 数字クイズ" : "⭕❌ 一問一答") + '</h2>';
     if(!Q){
-      h += '<p class="ai-qlead">文を 読んで 正しければ ⭕・まちがいなら ❌。本番の 4択は、この 見分けの 力で 解けるよ。<b>「50人以上 / 50人を こえる」「毎週 / 毎月」「6月以内ごと / 1年以内ごと」「専属 / 専任」「義務 / 努力義務」「上がる / 下がる」</b>の ような ひっかけに 気を つけてね。' + QN + '問。</p>' +
+      h += '<p class="ai-qlead">文を 読んで 正しければ ⭕・まちがいなら ❌。本番の 4択は、この 見分けの 力で 解けるよ。<b>「SaaS / PaaS / IaaS」「機密性 / 完全性 / 可用性」「MTBF / MTTR」「共通鍵 / 公開鍵」「請負 / 派遣」「直列 / 並列」</b>の ような 取りちがえに 気を つけてね。' + QN + '問。</p>' +
         '<div class="ai-zf ai-qset"><select id="ip-mj">' + opt("", "🧭 ぜんぶの 旅", mset.j) + JR.map(J => opt(J.id, J.icon + " " + J.name, mset.j)).join("") + '</select>' +
         '<select id="ip-md">' + opt("", "📶 ぜんぶ", mset.dv) + D.levels.map(L => opt(L.difficulty, L.icon + " " + L.name, mset.dv)).join("") + '</select></div>' +
         '<p class="ai-small ai-muted">この はんいの 問題: ' + mPool().length + '問(ぜんぶで ' + MARU.length + '問)</p>' + (msg ? '<p class="ai-empty">' + esc(msg) + '</p>' : "") +
@@ -468,10 +473,10 @@ const ITPASS = (() => {
         (Q.review ? '<p class="ai-small ai-muted">2回 つづけて 正解すると「まちがえた 問題」から 消えるよ。のこり ' + missList().length + '問</p>' : "") +
         (Q.miss.length ? '<p class="ai-small">🔁 まちがえた 問題</p>' + Q.miss.map(m => m.o ? '<div class="ip-rv"><p>' + esc(m.q) + '</p><b>答え ' + esc(m.a) + '</b> ' + esc(m.w) + '</div>' : '<div class="ip-rv"><p>' + esc(m.q) + '</p><b>答え ' + OX(m.a) + '</b> ' + esc(m.w) + '</div>').join("") : "") +
         (Q.review ? '<button type="button" class="ai-btn ai-wide ai-go" data-ai-open="review">もう一度</button>' :
-          (Q.list[0] && Q.list[0].o ? '<button type="button" class="ai-btn ai-wide ai-go" data-ip-nstart="1">もう一度</button><button type="button" class="ai-btn ai-wide" data-ai-open="num">はんいを えらびなおす</button>' : '<button type="button" class="ai-btn ai-wide ai-go" data-ip-mstart="1">もう一度(同じ はんい)</button><button type="button" class="ai-btn ai-wide" data-ai-open="maru">はんいを えらびなおす</button>'));
+          (Q.list[0] && Q.list[0].sh ? '<button type="button" class="ai-btn ai-wide ai-go" data-ip-sstart="1">もう一度</button><button type="button" class="ai-btn ai-wide" data-ai-open="shimon">はんいを えらびなおす</button>' : Q.list[0] && Q.list[0].o ? '<button type="button" class="ai-btn ai-wide ai-go" data-ip-nstart="1">もう一度</button><button type="button" class="ai-btn ai-wide" data-ai-open="num">はんいを えらびなおす</button>' : '<button type="button" class="ai-btn ai-wide ai-go" data-ip-mstart="1">もう一度(同じ はんい)</button><button type="button" class="ai-btn ai-wide" data-ai-open="maru">はんいを えらびなおす</button>'));
     }else{
       const m = Q.list[Q.i];
-      h += '<p class="ai-qn">' + (Q.i + 1) + ' / ' + Q.list.length + '　<span>' + m.jr.icon + " " + esc(m.jr.name) + (m.dv ? " ・ " + LVN[m.dv].icon + " " + esc(LVN[m.dv].name) : " ・ 🔢 数字") + '</span></p>' + (m.o ? numCard(m, Q.picked) : maruCard(m, Q.picked));
+      h += '<p class="ai-qn">' + (Q.i + 1) + ' / ' + Q.list.length + '　<span>' + m.jr.icon + " " + esc(m.jr.name) + (m.sh ? " ・ " + (m.k === "code" ? "💻 擬似言語" : m.k === "sheet" ? "📊 表計算" : "📝 本番形式") : m.dv ? " ・ " + LVN[m.dv].icon + " " + esc(LVN[m.dv].name) : " ・ 🔢 数字") + '</span></p>' + (m.o ? numCard(m, Q.picked) : maruCard(m, Q.picked));
       if(Q.picked !== undefined) h += '<button type="button" class="ai-btn ai-wide ai-go" data-ip-mnext="1">' + (Q.i + 1 < Q.list.length ? "つぎへ" : "けっかを 見る") + '</button>';
     }
     sh.innerHTML = h + '</div>';
@@ -480,13 +485,14 @@ const ITPASS = (() => {
     if(j) j.onchange = e => { mset.j = e.target.value; drawMaru(); };
     if(d) d.onchange = e => { mset.dv = e.target.value; drawMaru(); };
   }
-  function answerMaru(v){ const Q = mq, m = Q && Q.list[Q.i]; if(!m || Q.picked !== undefined) return; Q.picked = v; const ok = m.o ? m.ch[v] === m.a : v === m.a; if(ok) Q.ok++; else Q.miss.push(m); missMark((m.o ? "n:" : "m:") + m.id, ok); drawMaru(); }
+  function answerMaru(v){ const Q = mq, m = Q && Q.list[Q.i]; if(!m || Q.picked !== undefined) return; Q.picked = v; const ok = m.o ? m.ch[v] === m.a : v === m.a; if(ok) Q.ok++; else Q.miss.push(m); missMark(qKey(m), ok); drawMaru(); }
 
   /* ── 🔢 数字クイズ(数字を 4つから。10問) ── */
   const withChoices = n => Object.assign({}, n, { ch:shuffle(n.o) });
+  const codeBox = n => n.cd ? '<pre class="ip-code">' + esc(n.cd) + '</pre>' : "";
   function numCard(n, picked){
     const done = picked !== undefined;
-    let h = '<p class="ai-qq ip-q">' + esc(n.q) + '</p><div class="ai-qch ip-nch">' + n.ch.map((x, k) => '<button type="button" class="ai-btn' + (done ? (x === n.a ? " ok" : k === picked ? " ng" : "") : "") + '" data-ip-nans="' + k + '"' + (done ? " disabled" : "") + '><b>' + "ABCD"[k] + '</b>' + esc(x) + '</button>').join("") + '</div>';
+    let h = '<p class="ai-qq ip-q">' + esc(n.q) + '</p>' + codeBox(n) + '<div class="ai-qch ip-nch' + (n.sh ? " long" : "") + '">' + n.ch.map((x, k) => '<button type="button" class="ai-btn' + (done ? (x === n.a ? " ok" : k === picked ? " ng" : "") : "") + '" data-ip-nans="' + k + '"' + (done ? " disabled" : "") + '><b>' + "ABCD"[k] + '</b>' + esc(x) + '</button>').join("") + '</div>';
     if(done){ const ok = n.ch[picked] === n.a; h += '<div class="ai-qfb2 ' + (ok ? "ok" : "ng") + '"><b>' + (ok ? "⭕ 正解！" : "❌ 正解は「" + esc(n.a) + "」") + '</b><p>' + esc(n.w) + '</p>' + lawTag(n.lw) + '</div>'; }
     return h;
   }
@@ -506,13 +512,35 @@ const ITPASS = (() => {
   }
   function startNum(list){ const pool = (list || shuffle(nPool()).slice(0, QN)).map(withChoices); if(!pool.length){ drawNumStart("問題が ないよ"); return; } mq = { list:pool, i:0, ok:0, picked:undefined, miss:[], review:!!list }; drawMaru(); }
 
+  /* ── 📝 本番形式の 4択(10問。旅・種類で しぼれる)── */
+  let sset = { j:"", k:"" };
+  const sPool = () => SHIM.filter(n => (!sset.j || n.j === sset.j) && (!sset.k || (sset.k === "scene" ? !n.k : n.k === sset.k)));
+  function openShimon(){ mq = null; sheet("ai-mq"); drawShimonStart(); }
+  function drawShimonStart(msg){
+    const sh = document.getElementById("ai-mq");
+    sh.innerHTML = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>📝 本番形式の 4択</h2>' +
+      '<p class="ai-qlead">本番と 同じ 形の 問題だよ。<b>会社や 学校の 場面を 読んで</b>、いちばん 適切な ものを 4つから えらぼう。<b>💻 擬似言語</b>(プログラムを 読む)・<b>📊 表計算</b>(式を 読む)の 問題も あるよ。' + QN + '問。</p>' +
+      '<div class="ai-zf ai-qset"><select id="ip-sj">' + opt("", "🧭 ぜんぶの 旅", sset.j) + JR.map(J => opt(J.id, J.icon + " " + J.name, sset.j)).join("") + '</select>' +
+      '<select id="ip-sk">' + opt("", "📝 ぜんぶの 種類", sset.k) + opt("scene", "🏢 場面の 問題", sset.k) + opt("code", "💻 擬似言語", sset.k) + opt("sheet", "📊 表計算", sset.k) + '</select></div>' +
+      '<p class="ai-small ai-muted">この はんいの 問題: ' + sPool().length + '問(ぜんぶで ' + SHIM.length + '問)</p>' + (msg ? '<p class="ai-empty">' + esc(msg) + '</p>' : "") +
+      '<button type="button" class="ai-btn ai-wide ai-go" data-ip-sstart="1">はじめる</button>' +
+      '<p class="ai-note">問題は この ゲームが シラバスと 公的な 資料を もとに 作った もので、本物の 試験の 問題では ありません(過去問の 文は 使って いません)。本物の 過去問も IPA の ページで 無料で 解けるよ。</p></div>';
+    sh.querySelector(".ai-x").onclick = () => closeSheet("ai-mq");
+    const j = sh.querySelector("#ip-sj"), k = sh.querySelector("#ip-sk");
+    if(j) j.onchange = e => { sset.j = e.target.value; drawShimonStart(); };
+    if(k) k.onchange = e => { sset.k = e.target.value; drawShimonStart(); };
+  }
+  function startShimon(){ const pool = shuffle(sPool()).slice(0, QN).map(withChoices); if(!pool.length){ drawShimonStart("問題が ないよ。はんいを 広げてね"); return; } mq = { list:pool, i:0, ok:0, picked:undefined, miss:[], review:false }; drawMaru(); }
+
   /* ── 🎯 模擬試験(本番と 同じ 形: 4つから 1つ・100問・120分・分野ごとの 問題数。数字は meta.json の mock = IPA の 公式ページで 確かめた もの)──
-     1問 = ⭕❌ の 文を 同じ 分野から 4つ ならべて「正しいもの(誤っているもの)は どれか」。ときどき 🔢 数字クイズも まざる。
+     1問 = 📝 本番形式の 4択(6割ほど)か、⭕❌ の 文を 同じ 分野から 4つ ならべた「正しいもの(誤っているもの)は どれか」。ときどき 🔢 数字クイズも まざる。
      合格の きまりは 本番と 同じ: 総合 60% 以上 かつ 分野ごとに 30% 以上(本番は 1,000点満点で 600点 / 300点。IRT なので ゲームの 点とは 同じでは ない) */
   let ex = null, exTimer = null, kindId = "ip";
   const KINDS = MOCK.kinds || [], kindOf = id => KINDS.find(k => k.id === id) || KINDS[0];
   const NCH = 4;
   function buildItem(rs, used){
+    const shs = SHIM.filter(n => n.rs === rs && !used.has("s:" + n.id));  // 本番形式を 先に(6割ほど)。足りない ぶんは ⭕❌ の 組み合わせ
+    if(shs.length && Math.random() < .6){ const n = shuffle(shs)[0]; used.add("s:" + n.id); return { t:"n", rs, n:withChoices(n), a:undefined }; }
     const nums = NUM.filter(n => n.rs === rs && !used.has("n:" + n.id));
     if(nums.length && Math.random() < .12){ const n = shuffle(nums)[0]; used.add("n:" + n.id); return { t:"n", rs, n:withChoices(n), a:undefined }; }
     const pool = MARU.filter(m => m.rs === rs && !used.has("m:" + m.id)), wantTrue = Math.random() < .5;  // wantTrue = 「正しいものは どれか」
@@ -548,7 +576,7 @@ const ITPASS = (() => {
       const ok = itemOk(it), b = by[it.rs] = by[it.rs] || { ok:0, n:0, pts:0, max:0 }; b.n++; b.max += it.pt; max += it.pt;
       if(ok){ pts += it.pt; b.pts += it.pt; b.ok++; } else wrong.push(it);
       if(it.a === undefined) continue;  // 答えて いない 問題は 復習に 入れない(採点を いそいだ ときに 44問 入らない ように)
-      if(it.t === "n") missMark("n:" + it.n.id, ok);
+      if(it.t === "n") missMark(qKey(it.n), ok);
       else if(!ok){ missMark("m:" + it.st[it.a].id, false); missMark("m:" + it.st[it.ans].id, false); }  // えらんだ 文と 正解の 文を 復習へ
     }
     const pe = MOCK.passEach || 30, pt = MOCK.passTotal || 60;
@@ -558,7 +586,7 @@ const ITPASS = (() => {
   }
   function submitExam(timeUp){ if(!ex || ex.end) return; clearInterval(exTimer); ex.end = Object.assign(scoreExam(), { timeUp, used:Math.min(ex.min * 60000, ex.min * 60000 - (ex.until - Date.now())) }); drawExam(); const sh = document.getElementById("ai-ex"); if(sh) sh.scrollTop = 0; }
   function itemHtml(it, show){
-    if(it.t === "n") return '<p class="ai-small">🔢 数字の 問題</p>' + (show ? numCard(it.n, it.a) : '<p class="ai-qq ip-q">' + esc(it.n.q) + '</p><div class="ai-qch ip-nch">' + it.n.ch.map((x, k) => '<button type="button" class="ai-btn' + (it.a === k ? " pk" : "") + '" data-ip-xa="' + k + '"><b>' + "ABCD"[k] + '</b>' + esc(x) + '</button>').join("") + '</div>');
+    if(it.t === "n") return (it.n.sh ? "" : '<p class="ai-small">🔢 数字の 問題</p>') + (show ? numCard(it.n, it.a) : '<p class="ai-qq ip-q">' + esc(it.n.q) + '</p>' + codeBox(it.n) + '<div class="ai-qch ip-nch' + (it.n.sh ? " long" : "") + '">' + it.n.ch.map((x, k) => '<button type="button" class="ai-btn' + (it.a === k ? " pk" : "") + '" data-ip-xa="' + k + '"><b>' + "ABCD"[k] + '</b>' + esc(x) + '</button>').join("") + '</div>');
     return '<p class="ai-qq ip-q">' + (it.ask ? "つぎの うち、<b>正しい もの</b>は どれか。" : "つぎの うち、<b>誤っている もの</b>は どれか。") + '</p><ol class="ip-st">' +
       it.st.map((m, k) => '<li class="' + (show ? (k === it.ans ? "ok" : k === it.a ? "ng" : "") : (it.a === k ? "pk" : "")) + '">' +
         (show ? '<p>' + esc(m.q) + '</p><small>' + OX(m.a) + " " + esc(m.w) + (m.lw ? "(" + esc(m.lw) + ")" : "") + '</small>' : '<button type="button" data-ip-xa="' + k + '"><b>' + (k + 1) + '</b> ' + esc(m.q) + '</button>') + '</li>').join("") + '</ol>';
@@ -597,14 +625,14 @@ const ITPASS = (() => {
   /* ── ❌ まちがえた 問題(⭕❌ と 数字。10こずつ) ── */
   function openReview(){
     const keys = shuffle(missList()).slice(0, QN);
-    const list = keys.map(k => k[0] === "m" ? MBY.get(k.slice(2)) : withChoices(NBY.get(k.slice(2))));
-    if(!list.length){ const sh = sheet("ai-mq"); sh.innerHTML = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>❌ まちがえた 問題</h2><p class="ai-empty">まちがえた 問題は ないよ 🎉<br>⭕❌ 一問一答・数字クイズ・模擬試験で まちがえると、ここに 入るよ。2回 つづけて 正解すると 消えるよ。</p></div>'; sh.querySelector(".ai-x").onclick = () => closeSheet("ai-mq"); return; }
+    const list = keys.map(k => k[0] === "m" ? MBY.get(k.slice(2)) : withChoices((k[0] === "s" ? SBY : NBY).get(k.slice(2))));
+    if(!list.length){ const sh = sheet("ai-mq"); sh.innerHTML = '<div class="prof-box ai-zbox"><button type="button" class="ai-x" aria-label="とじる">×</button><h2>❌ まちがえた 問題</h2><p class="ai-empty">まちがえた 問題は ないよ 🎉<br>⭕❌ 一問一答・本番形式の 4択・数字クイズ・模擬試験で まちがえると、ここに 入るよ。2回 つづけて 正解すると 消えるよ。</p></div>'; sh.querySelector(".ai-x").onclick = () => closeSheet("ai-mq"); return; }
     sheet("ai-mq"); mq = { list, i:0, ok:0, picked:undefined, miss:[], review:true }; drawMaru();
   }
 
   /* ── おす(ITパスポートだけの ボタン) ── */
   document.addEventListener("click", e => {
-    const t = e.target.closest && e.target.closest("[data-ip-ox],[data-ip-nans],[data-ip-mstart],[data-ip-mnext],[data-ip-nstart],[data-ip-xstart],[data-ip-xa],[data-ip-xgo],[data-ip-xj],[data-ip-xsubmit],[data-ip-xreset],[data-ip-kind]");
+    const t = e.target.closest && e.target.closest("[data-ip-ox],[data-ip-nans],[data-ip-mstart],[data-ip-mnext],[data-ip-nstart],[data-ip-sstart],[data-ip-xstart],[data-ip-xa],[data-ip-xgo],[data-ip-xj],[data-ip-xsubmit],[data-ip-xreset],[data-ip-kind]");
     if(!t) return;
     const play = () => { if(typeof canPlay === "function" && !canPlay()){ showTrialEnd(); return false; } return true; };
     const ds = t.dataset, top = id => { const sh = document.getElementById(id); if(sh) sh.scrollTop = 0; };
@@ -612,6 +640,7 @@ const ITPASS = (() => {
     if(ds.ipNans) return answerMaru(+ds.ipNans);
     if(ds.ipMstart){ if(play()) startMaru(); return; }
     if(ds.ipNstart){ if(play()) startNum(); return; }
+    if(ds.ipSstart){ if(play()) startShimon(); return; }
     if(ds.ipMnext){ mq.i++; mq.picked = undefined; drawMaru(); top("ai-mq"); return; }
     if(ds.ipXstart){ if(ex && !ex.end && !confirm("いまの 試験を やめて、新しく はじめますか?")) return; if(play()){ ex = null; startExam(); top("ai-ex"); } return; }
     if(ds.ipXa){ ex.list[ex.i].a = +ds.ipXa; drawExam(); return; }
@@ -642,6 +671,7 @@ const ITPASS = (() => {
       if(o === "maru") return openMaru();
       if(o === "exam") return openExam();
       if(o === "num") return openNum();
+      if(o === "shimon") return openShimon();
       if(o === "review") return openReview();
     }
     if(t.dataset.aiDiag){ diagCur = t.dataset.aiDiag; const box = document.querySelector(".ai-dbox"); if(box) box.innerHTML = diagramSvg(diagCur, { counts:countsFor(diagCur) });
@@ -747,7 +777,7 @@ const ITPASS = (() => {
 .ai-qn{margin:0;color:#64748b;font-size:12px;text-align:center}.ai-qq{font-size:15px;line-height:1.9;font-weight:700;margin:6px 0 12px}
 .ai-qch{display:grid;gap:8px}.ai-qch .ai-btn{text-align:left}.ai-qch .ok{background:#dcfce7;border-color:#22c55e}.ai-qch .ng{background:#fee2e2;border-color:#ef4444}
 .ai-qlead{font-size:13.5px;line-height:1.8;margin:4px 0 10px}.ai-qset{grid-template-columns:1fr 1fr}.ai-go{background:#1c7ed6;border-color:#1c7ed6;color:#fff}
-.ai-qn span{font-size:11px}.ai-qch .ai-btn b{display:inline-block;min-width:1.4em;color:#1c7ed6}.ai-qch.long .ai-btn{font-size:13px;font-weight:600;line-height:1.6}
+.ai-qn span{font-size:11px}.ai-qch .ai-btn b{display:inline-block;min-width:1.4em;color:#1c7ed6}.ai-qch.long .ai-btn{font-size:13px;font-weight:600;line-height:1.6;text-align:left}.ip-code{margin:6px 0 8px;padding:8px 10px;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:10px;font:12.5px/1.6 ui-monospace,Menlo,Consolas,"Noto Sans Mono CJK JP",monospace;white-space:pre;overflow-x:auto;color:#0f172a}
 .ai-qch .ai-btn:disabled{opacity:1;color:#1e1b4b}.ai-qch .ai-btn.ok b,.ai-qch .ai-btn.ng b{color:inherit}
 .ai-qfb2{margin:10px 0 0;border-radius:12px;padding:8px 10px;font-size:13px;line-height:1.7}.ai-qfb2.ok{background:#dcfce7}.ai-qfb2.ng{background:#fee2e2}.ai-qfb2 p{margin:4px 0 0}.ai-cex{margin:6px 0 0;padding-left:1.4em}.ai-cex li{margin:2px 0}.ai-btns .ai-btn:last-child:nth-child(odd){grid-column:1/-1}
 .ai-qfb{min-height:1.6em;text-align:center;font-weight:900;margin:10px 0 0}.ai-qres{text-align:center;font-size:22px;font-weight:900;margin:14px 0}

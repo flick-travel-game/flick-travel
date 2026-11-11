@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>フリック社労士</title>
 <!-- 検索・LINE で 出る 説明と 本当の 住所(けいくん 2026-10-10「いますぐ検索に出す」)。⚠️ ゲームごとの 中身は tools/build_games.py が 入れかえる(lead から) -->
-<meta name="description" content="労働基準法の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、社労士試験の どの 科目で 出るかが わかるよ。給料・残業・有給休暇など 働く 人なら 知っておきたい くらしの ことばから、社会保険労務士の 試験の 範囲の めやすまで。⭕❌ 一問一答・数字クイズ・📝 選択式の 練習・本番と 同じ 形の 模擬試験で 試験の 練習も できるよ。(いまは 見本: 労働基準法の 旅だけ。労働安全衛生法・労災保険・雇用保険・徴収法・労務管理と 社会保険の 一般常識・健康保険・厚生年金・国民年金の 旅は これから) かずともの フリックゲーム。">
+<meta name="description" content="労働基準法・労働安全衛生法・労災保険法・雇用保険法・労働保険徴収法・労務管理と 労働の 一般常識・社会保険の 一般常識・健康保険法・厚生年金保険法・国民年金法の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、社労士試験の どの 科目で 出るかが わかるよ。給料・残業・有給休暇・年金など 働く 人なら 知っておきたい くらしの ことばから、社会保険労務士の 試験の 範囲の めやすまで 1,000語。⭕❌ 一問一答・数字クイズ・📝 選択式の 練習・本番と 同じ 形の 模擬試験(択一式 70問)で 試験の 練習も できるよ。 かずともの フリックゲーム。">
 <link rel="canonical" href="https://kazutomo.app/flick/sharoshi/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="かずとも">
 <meta property="og:title" content="フリック社労士｜かずとも">
-<meta property="og:description" content="労働基準法の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、社労士試験の どの 科目で 出るかが わかるよ。給料・残業・有給休暇など 働く 人なら 知っておきたい くらしの ことばから、社会保険労務士の 試験の 範囲の めやすまで。⭕❌ 一問一答・数字クイズ・📝 選択式の 練習・本番と 同じ 形の 模擬試験で 試験の 練習も できるよ。(いまは 見本: 労働基準法の 旅だけ。労働安全衛生法・労災保険・雇用保険・徴収法・労務管理と 社会保険の 一般常識・健康保険・厚生年金・国民年金の 旅は これから) かずともの フリックゲーム。">
+<meta property="og:description" content="労働基準法・労働安全衛生法・労災保険法・雇用保険法・労働保険徴収法・労務管理と 労働の 一般常識・社会保険の 一般常識・健康保険法・厚生年金保険法・国民年金法の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、社労士試験の どの 科目で 出るかが わかるよ。給料・残業・有給休暇・年金など 働く 人なら 知っておきたい くらしの ことばから、社会保険労務士の 試験の 範囲の めやすまで 1,000語。⭕❌ 一問一答・数字クイズ・📝 選択式の 練習・本番と 同じ 形の 模擬試験(択一式 70問)で 試験の 練習も できるよ。 かずともの フリックゲーム。">
 <meta property="og:url" content="https://kazutomo.app/flick/sharoshi/">
 <meta property="og:image" content="https://kazutomo.app/flick/hero.webp">
 <meta property="og:locale" content="ja_JP">
@@ -582,15 +582,15 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 
 <!-- 名所の写真（Wikimedia Commons）の一覧。tools/fetch_photos.py が作る -->
 <script src="../photos.js"></script>
-<script src="terms.js?v=235f191e"></script>
-<script src="sharoshi.js?v=0ed424a8"></script>
+<script src="terms.js?v=f0cef111"></script>
+<script src="sharoshi.js?v=9ad9ecae"></script>
 <script>
 /* ⚠️ 2026-09-30 から 本当の 住所は https://kazutomo.app/flick/…(けいくん決定「置き直してください」。Vercel が この GitHub Pages を 取りついで 出す)。
    前の 住所(github.io)で ひらいた人は そちらへ 移す(#t= の しるしも いっしょに)。かずとも と 同じ 住所に なるので、ログインだけで つながる(Netflix と 同じ 形) */
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"sharoshi", name:"フリック社労士", modes:(typeof SHAROSHI === "object" ? SHAROSHI.modes : []), assets:"../", logo:false, hero:false, dir:"sharoshi/", lead:"労働基準法の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、社労士試験の どの 科目で 出るかが わかるよ。給料・残業・有給休暇など 働く 人なら 知っておきたい くらしの ことばから、社会保険労務士の 試験の 範囲の めやすまで。⭕❌ 一問一答・数字クイズ・📝 選択式の 練習・本番と 同じ 形の 模擬試験で 試験の 練習も できるよ。(いまは 見本: 労働基準法の 旅だけ。労働安全衛生法・労災保険・雇用保険・徴収法・労務管理と 社会保険の 一般常識・健康保険・厚生年金・国民年金の 旅は これから)", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 試験の 前には 最新の テキストと 試験の 案内で 確かめてね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、働く 人を 守る しくみが 見えてくるよ。全国社会保険労務士会連合会 試験センター・厚生労働省とは 関係ありません。" };
+const GAME = { id:"sharoshi", name:"フリック社労士", modes:(typeof SHAROSHI === "object" ? SHAROSHI.modes : []), assets:"../", logo:false, hero:false, dir:"sharoshi/", lead:"労働基準法・労働安全衛生法・労災保険法・雇用保険法・労働保険徴収法・労務管理と 労働の 一般常識・社会保険の 一般常識・健康保険法・厚生年金保険法・国民年金法の ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、社労士試験の どの 科目で 出るかが わかるよ。給料・残業・有給休暇・年金など 働く 人なら 知っておきたい くらしの ことばから、社会保険労務士の 試験の 範囲の めやすまで 1,000語。⭕❌ 一問一答・数字クイズ・📝 選択式の 練習・本番と 同じ 形の 模擬試験(択一式 70問)で 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 試験の 前には 最新の テキストと 試験の 案内で 確かめてね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、働く 人を 守る しくみが 見えてくるよ。全国社会保険労務士会連合会 試験センター・厚生労働省とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},
@@ -619,7 +619,7 @@ const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:
                  {id:"shobo", name:"フリック消防士", icon:"🚒", dir:"shobo/"},
                  {id:"kyukyutai", name:"フリック救急隊員", icon:"🚑", dir:"kyukyutai/"},
                  {id:"bengoshi", name:"フリック弁護士", icon:"⚖️", dir:"bengoshi/"},
-                 {id:"zeirishi", name:"フリック税理士", icon:"🧾", dir:"zeirishi/"}, {id:"takken", name:"フリック宅建士", icon:"🏠", dir:"takken/"}, {id:"eisei", name:"フリック衛生管理者", icon:"🩺", dir:"eisei/"}, {id:"itpass", name:"フリックITパスポート", icon:"🪪", dir:"itpass/"}, {id:"boki", name:"フリック日商簿記", icon:"📒", dir:"boki/"},
+                 {id:"zeirishi", name:"フリック税理士", icon:"🧾", dir:"zeirishi/"}, {id:"takken", name:"フリック宅建士", icon:"🏠", dir:"takken/"}, {id:"eisei", name:"フリック衛生管理者", icon:"🩺", dir:"eisei/"}, {id:"sharoshi", name:"フリック社労士", icon:"🧑‍💼", dir:"sharoshi/"}, {id:"itpass", name:"フリックITパスポート", icon:"🪪", dir:"itpass/"}, {id:"boki", name:"フリック日商簿記", icon:"📒", dir:"boki/"},
                  {id:"shinri", name:"フリック心理学", icon:"🧠", dir:"shinri/"}, {id:"adler", name:"フリックアドラー心理学", icon:"🧠", dir:"adler/"}, {id:"mentalist", name:"フリックメンタリスト", icon:"🎩", dir:"mentalist/"}, {id:"tetsugaku", name:"フリック哲学", icon:"🤔", dir:"tetsugaku/"},
                  {id:"toshika", name:"フリック投資家", icon:"🌱", dir:"toshika/"},
                  {id:"daiku", name:"フリック大工", icon:"🪚", dir:"daiku/"},
@@ -637,7 +637,7 @@ const SERIES_CHAPTERS = [
   { title:"教科をひろげる", ids:["rekishi", "world", "eikaiwa", "supein", "porutogaru", "kankoku", "kyoryu", "uchu", "karada", "ketsueki", "tetsugaku"] },
   { title:"スポーツ", ids:["soccer", "basket", "baseball", "boxing", "volley", "tennis", "supercar"] },
   { title:"くらしと心", ids:["kaji", "manner", "shinri", "adler", "mentalist"] },
-  { title:"夢のしごと", ids:["patissier", "chef", "hanaya", "noka", "yoho", "ishi", "kango", "shika", "yakuzai", "jui", "inu", "anma", "keisatsu", "shobo", "kyukyutai", "hoiku", "kyoshi", "biyo", "nail", "daiku", "seibi", "menkyo", "pilot", "cabin", "bengoshi", "zeirishi", "boki", "takken", "eisei", "itpass", "kisho", "eiga", "gamedev", "code"] },
+  { title:"夢のしごと", ids:["patissier", "chef", "hanaya", "noka", "yoho", "ishi", "kango", "shika", "yakuzai", "jui", "inu", "anma", "keisatsu", "shobo", "kyukyutai", "hoiku", "kyoshi", "biyo", "nail", "daiku", "seibi", "menkyo", "pilot", "cabin", "bengoshi", "zeirishi", "boki", "takken", "eisei", "sharoshi", "itpass", "kisho", "eiga", "gamedev", "code"] },
   { title:"未来をのぞく", ids:["ai", "sumaho", "pasokon", "kabu", "toshika", "kigyo"] } ];
 function gameTilesHtml(){
   const root = GAME.id === "world" ? "./" : "../";

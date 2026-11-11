@@ -1,0 +1,1814 @@
+[
+ {
+  "id": "si-shakaihosho",
+  "name": "社会保障",
+  "reading": "しゃかいほしょう",
+  "journey": "shaichi",
+  "category": "しくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "shaichi:hoken",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shakaihoken",
+   "si-iryohoken"
+  ],
+  "description": "病気・けが・年を とった とき・子育て など、くらしの 困りごとを 社会みんなで 支える しくみです。社会保険は その 大きな 柱の 1つです。"
+ },
+ {
+  "id": "si-shakaihoken",
+  "name": "社会保険",
+  "reading": "しゃかいほけん",
+  "journey": "shaichi",
+  "category": "しくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "shaichi:hoken",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shakaihosho",
+   "si-nenkin"
+  ],
+  "description": "みんなで 保険料を 出しあい、病気・介護・老後 などに 給付を 受ける しくみです。医療保険・介護保険・年金 などが あります。"
+ },
+ {
+  "id": "si-iryohoken",
+  "name": "医療保険",
+  "reading": "いりょうほけん",
+  "journey": "shaichi",
+  "category": "しくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "shaichi:hoken",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho",
+   "si-chiikihoken"
+  ],
+  "description": "病院に かかる ときの 費用を 支える 保険です。勤め先の 健康保険、住んで いる 地域の 国民健康保険、75歳 からの 後期高齢者医療 などが あります。"
+ },
+ {
+  "id": "si-nenkin",
+  "name": "年金",
+  "reading": "ねんきん",
+  "journey": "shaichi",
+  "category": "しくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "shaichi:hoken",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaihonenkin",
+   "si-kigyonenkin"
+  ],
+  "description": "年を とった とき・障害が ある とき などに、毎年 決まった 額を 受け取る お金です。国の 年金に 上乗せする 企業年金や iDeCo も あります。"
+ },
+ {
+  "id": "si-kaihoken",
+  "name": "国民皆保険",
+  "reading": "こくみんかいほけん",
+  "journey": "shaichi",
+  "category": "歴史",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "shaichi:rekishi",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaihonenkin",
+   "si-shinkokuho"
+  ],
+  "description": "すべての 人が なにかの 医療保険に 入る しくみです。1961年に 実現しました。国民健康保険を すべての 市町村で 行う ことに なったのが 決め手です。"
+ },
+ {
+  "id": "si-kaihonenkin",
+  "name": "国民皆年金",
+  "reading": "こくみんかいねんきん",
+  "journey": "shaichi",
+  "category": "歴史",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "shaichi:rekishi",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaihoken",
+   "si-kiso"
+  ],
+  "description": "すべての 人が なにかの 公的年金に 入る しくみです。国民年金の 保険料が 1961年4月から 始まり、国民皆保険と 同じ 年に 実現しました。"
+ },
+ {
+  "id": "si-kokuho",
+  "name": "国民健康保険",
+  "reading": "こくみんけんこうほけん",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "shaichi:kokuho",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-hihokensha",
+   "si-kokuho-hokensha"
+  ],
+  "description": "勤め先の 健康保険に 入って いない 人などが、住んで いる 地域で 入る 医療保険です。「国保」とも いいます。"
+ },
+ {
+  "id": "si-kokikorei",
+  "name": "後期高齢者医療制度",
+  "reading": "こうきこうれいしゃいりょうせいど",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👵",
+  "mapNode": "shaichi:koki",
+  "field": "高確法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-koki-hihokensha",
+   "si-koiki"
+  ],
+  "description": "75歳 以上の 人などが 入る 医療保険です。2008年に できました。都道府県ごとの 広域連合が 運営します。"
+ },
+ {
+  "id": "si-kaigo",
+  "name": "介護",
+  "reading": "かいご",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦯",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaigohoken",
+   "si-caremane"
+  ],
+  "description": "年を とったり 病気に なったり して、ひとりで くらす ことが 難しい 人の 食事・入浴・移動 などを 手助けする ことです。"
+ },
+ {
+  "id": "si-kaigohoken",
+  "name": "介護保険",
+  "reading": "かいごほけん",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦯",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaigo",
+   "si-kaigo-1go"
+  ],
+  "description": "介護が 必要に なった とき、介護サービスを 少ない 負担で 使える ように する 保険です。ふつう 40歳に なると 入ります。2000年に 始まりました。"
+ },
+ {
+  "id": "si-senin",
+  "name": "船員保険",
+  "reading": "せんいんほけん",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⚓",
+  "mapNode": "shaichi:senin",
+  "field": "船員保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-senin-hihokensha",
+   "si-senin-kansho"
+  ],
+  "description": "船で 働く 船員の ための 保険です。病気・けがの 医療の 給付に くわえ、仕事中の けがへの 上乗せの 給付も あります。"
+ },
+ {
+  "id": "si-kigyonenkin",
+  "name": "企業年金",
+  "reading": "きぎょうねんきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "shaichi:kyufu",
+  "field": "確定給付企業年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-db",
+   "si-dc"
+  ],
+  "description": "会社が 国の 年金に 上乗せして 用意する 年金です。もらう 額を 先に 決める 確定給付企業年金と、掛金を 決める 企業型の 確定拠出年金が あります。"
+ },
+ {
+  "id": "si-ideco",
+  "name": "個人型確定拠出年金",
+  "reading": "こじんがたかくていきょしゅつねんきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐷",
+  "mapNode": "shaichi:kakutei",
+  "field": "確定拠出年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-dc",
+   "si-kojin-kanyu"
+  ],
+  "description": "自分で 掛金を 出して 運用し、原則 60歳 から 受け取る 年金です。「iDeCo(イデコ)」とも いいます。運用の 成績で 受け取る 額が 変わります。",
+  "acceptedReadings": [
+   "こじんがたかくていきょしゅつねんきん",
+   "いでこ"
+  ]
+ },
+ {
+  "id": "si-jidoteate",
+  "name": "児童手当",
+  "reading": "じどうてあて",
+  "journey": "shaichi",
+  "category": "児童手当",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧒",
+  "mapNode": "shaichi:jido",
+  "field": "児童手当法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-jido-jido",
+   "si-jido-gaku"
+  ],
+  "description": "子どもを 育てる 人に 出る 手当です。住んで いる 市町村長の 認定を 受けて 支給されます。いまは 高校生の 年代 まで 出ます。"
+ },
+ {
+  "id": "si-sharoshi",
+  "name": "社会保険労務士",
+  "reading": "しゃかいほけんろうむし",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-sharoshiho",
+   "si-1go"
+  ],
+  "description": "労働と 社会保険の 法律の 専門家です。会社の 手続きの 書類を 作ったり、働く ルールの 相談に のったり します。「社労士」とも いいます。",
+  "acceptedReadings": [
+   "しゃかいほけんろうむし",
+   "しゃろうし"
+  ]
+ },
+ {
+  "id": "si-kenpo-seitei",
+  "name": "健康保険法の制定",
+  "reading": "けんこうほけんほうのせいてい",
+  "journey": "shaichi",
+  "category": "歴史",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "shaichi:rekishi",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shinkokuho",
+   "si-rojinhoken"
+  ],
+  "description": "会社で 働く 人の 医療保険の 法律で、1922年(大正11年)に できました。翌年の 関東大震災で 施行は 1927年(昭和2年)に のびました。"
+ },
+ {
+  "id": "si-rojinhoken",
+  "name": "老人保健法",
+  "reading": "ろうじんほけんほう",
+  "journey": "shaichi",
+  "category": "歴史",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👴",
+  "mapNode": "shaichi:rekishi",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-fukushigannen",
+   "si-kokikorei"
+  ],
+  "description": "1982年に できた 法律で、無料だった 老人医療に 一部負担を 取り入れました。いまの 高齢者医療確保法は この 法律を 改めた ものです。"
+ },
+ {
+  "id": "si-kokuho-kumiai",
+  "name": "国民健康保険組合",
+  "reading": "こくみんけんこうほけんくみあい",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "shaichi:kokuho",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-setsuritsu",
+   "si-kokuho-hokensha"
+  ],
+  "description": "同じ 種類の 仕事を する 人が 集まって 作る 国保の 保険者です。都道府県・市町村と ならんで 国民健康保険を 行えます。"
+ },
+ {
+  "id": "si-kokuho-zei",
+  "name": "国民健康保険税",
+  "reading": "こくみんけんこうほけんぜい",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "shaichi:kokuho",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho",
+   "si-kaigonofukin"
+  ],
+  "description": "市町村は 国保の お金を、保険料の かわりに 地方税法の「国民健康保険税」で 集める ことも できます。保険料で 集める ときは 世帯主から 集めます。"
+ },
+ {
+  "id": "si-kokuho-hihokensha",
+  "name": "国保の被保険者",
+  "reading": "こくほのひほけんしゃ",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👤",
+  "mapNode": "shaichi:kokuho",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-jogai",
+   "si-kokuho"
+  ],
+  "description": "都道府県の 区域内に 住所が ある 人は、ほかの 医療保険に 入って いる 人などを 除いて、都道府県等が 行う 国保の 被保険者に なります。"
+ },
+ {
+  "id": "si-kakuhoho",
+  "name": "高齢者医療確保法",
+  "reading": "こうれいしゃいりょうかくほほう",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👵",
+  "mapNode": "shaichi:koki",
+  "field": "高確法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokikorei",
+   "si-tokuteikenshin"
+  ],
+  "description": "「高齢者の医療の確保に関する法律」の 略です。後期高齢者医療制度・前期高齢者の 調整・特定健康診査 などを 決めて います。"
+ },
+ {
+  "id": "si-koiki",
+  "name": "後期高齢者医療広域連合",
+  "reading": "こうきこうれいしゃいりょうこういきれんごう",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "shaichi:koki",
+  "field": "高確法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokikorei",
+   "si-koki-hokenryo"
+  ],
+  "description": "都道府県の 区域ごとに、すべての 市町村が 入って 作る 後期高齢者医療の 運営者です。保険料を 集めるのは 市町村です。"
+ },
+ {
+  "id": "si-tokuteikenshin",
+  "name": "特定健康診査",
+  "reading": "とくていけんこうしんさ",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🩻",
+  "mapNode": "shaichi:koki",
+  "field": "高確法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kakuhoho",
+   "si-kokuho"
+  ],
+  "description": "医療保険の 保険者が 40歳 以上の 加入者に 行う 健康診査です。生活習慣病を 早めに 見つけて ふせぐ ための ものです。"
+ },
+ {
+  "id": "si-kaigo-hokensha",
+  "name": "介護保険の保険者",
+  "reading": "かいごほけんのほけんしゃ",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaigo-1go",
+   "si-yokaigonintei"
+  ],
+  "description": "介護保険を 行うのは 市町村と 特別区(東京23区)です。⚠️ 国保と ちがって 都道府県は 保険者に なりません。"
+ },
+ {
+  "id": "si-yokaigonintei",
+  "name": "要介護認定",
+  "reading": "ようかいごにんてい",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-ninteishinsakai",
+   "si-nintei-kikan"
+  ],
+  "description": "介護が どれだけ 必要かを 市町村が 決める ことです。調査と 主治の 医師の 意見を もとに 審査会が 判定し、効力は 申請の 日に さかのぼります。"
+ },
+ {
+  "id": "si-ninteishinsakai",
+  "name": "介護認定審査会",
+  "reading": "かいごにんていしんさかい",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗂",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-yokaigonintei",
+   "si-yokaigokubun"
+  ],
+  "description": "要介護認定で、調査の 結果と 主治の 医師の 意見を もとに 審査・判定を する 会です。この 判定を うけて 市町村が 認定します。"
+ },
+ {
+  "id": "si-caremane",
+  "name": "介護支援専門員",
+  "reading": "かいごしえんせんもんいん",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍⚕️",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaigo",
+   "si-yokaigonintei"
+  ],
+  "description": "ケアマネジャーとも いいます。都道府県知事の 試験に 合格し 研修を 終えて 登録します。介護支援専門員証の 有効期間は 5年です。",
+  "acceptedReadings": [
+   "かいごしえんせんもんいん",
+   "けあまねじゃー"
+  ]
+ },
+ {
+  "id": "si-senin-hihokensha",
+  "name": "船員保険の被保険者",
+  "reading": "せんいんほけんのひほけんしゃ",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👤",
+  "mapNode": "shaichi:senin",
+  "field": "船員保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-senin",
+   "si-senin-ninkei"
+  ],
+  "description": "船員法の 船員として 船舶所有者に 使われる 人が 船員保険の 被保険者です。やめた あとも 続けられる 疾病任意継続被保険者も あります。"
+ },
+ {
+  "id": "si-senin-kansho",
+  "name": "船員保険の管掌",
+  "reading": "せんいんほけんのかんしょう",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚓",
+  "mapNode": "shaichi:senin",
+  "field": "船員保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-senin",
+   "si-senin-kyogikai"
+  ],
+  "description": "船員保険を 運営するのは 全国健康保険協会です。⚠️ 資格の 確認・標準報酬・保険料の 徴収 などは 厚生労働大臣が 行います。"
+ },
+ {
+  "id": "si-dc",
+  "name": "確定拠出年金",
+  "reading": "かくていきょしゅつねんきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐷",
+  "mapNode": "shaichi:kakutei",
+  "field": "確定拠出年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kigyogata",
+   "si-ideco"
+  ],
+  "description": "出す 掛金が 決まって いて、運用の 結果で 受け取る 額が 変わる 年金です。会社が 行う 企業型年金と、iDeCo(個人型年金)の 2つです。"
+ },
+ {
+  "id": "si-kigyogata",
+  "name": "企業型年金",
+  "reading": "きぎょうがたねんきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "shaichi:kakutei",
+  "field": "確定拠出年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-dc",
+   "si-kigyo-gendo"
+  ],
+  "description": "厚生年金の 適用事業所の 事業主が 行う 確定拠出年金です。加入者は その 会社で 働く 厚生年金の 被保険者で、規約で 資格を 決められます。"
+ },
+ {
+  "id": "si-db",
+  "name": "確定給付企業年金",
+  "reading": "かくていきゅうふきぎょうねんきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "shaichi:kyufu",
+  "field": "確定給付企業年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kiyakugata",
+   "si-kikingata"
+  ],
+  "description": "受け取る 給付の 額を 先に 決めて おく 企業年金です。⚠️ 掛金を 決めて おく 確定拠出年金とは 逆の 考えかたです。"
+ },
+ {
+  "id": "si-nenkinkikin",
+  "name": "企業年金基金",
+  "reading": "きぎょうねんきんききん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "shaichi:kyufu",
+  "field": "確定給付企業年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kikingata",
+   "si-db"
+  ],
+  "description": "確定給付企業年金を 行う ために 作る 法人です。この 基金を 作る 形を「基金型」と いい、設立には 厚生労働大臣の 認可が いります。"
+ },
+ {
+  "id": "si-chiikigata",
+  "name": "地域型国民年金基金",
+  "reading": "ちいきがたこくみんねんきんききん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "shaichi:kikin",
+  "field": "国年法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shokunogata",
+   "si-kikin-kanyu"
+  ],
+  "description": "国民年金基金の 1つの 形で、地域を 単位に 作る 基金です。自営業の 人などが 国民年金に 上乗せの 年金を 用意できます。"
+ },
+ {
+  "id": "si-shokunogata",
+  "name": "職能型国民年金基金",
+  "reading": "しょくのうがたこくみんねんきんききん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍🔧",
+  "mapNode": "shaichi:kikin",
+  "field": "国年法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-chiikigata",
+   "si-kikin-kanyu"
+  ],
+  "description": "国民年金基金の 1つの 形で、同じ 仕事の 人どうしで 作る 基金です。地域型と ならぶ もう 1つの 形です。"
+ },
+ {
+  "id": "si-rengokai",
+  "name": "国民年金基金連合会",
+  "reading": "こくみんねんきんききんれんごうかい",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "shaichi:kikin",
+  "field": "確定拠出年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-ideco",
+   "si-chiikigata"
+  ],
+  "description": "iDeCo(個人型年金)を 行って いる 団体です。⚠️ iDeCoを 行うのは 国でも 会社でも なく、この 連合会です。"
+ },
+ {
+  "id": "si-jidoteateho",
+  "name": "児童手当法",
+  "reading": "じどうてあてほう",
+  "journey": "shaichi",
+  "category": "児童手当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "shaichi:jido",
+  "field": "児童手当法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-jidoteate",
+   "si-jido-kaisei"
+  ],
+  "description": "1971年に できた 法律です。2024年10月の 改正で、高校生の 年代 まで・所得制限 なし・第3子 以降 3万円 などに 広がりました。"
+ },
+ {
+  "id": "si-jido-shiharai",
+  "name": "児童手当の支払月",
+  "reading": "じどうてあてのしはらいづき",
+  "journey": "shaichi",
+  "category": "児童手当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "shaichi:jido",
+  "field": "児童手当法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-jidoteate",
+   "si-jido-nintei"
+  ],
+  "description": "児童手当は 偶数月(2・4・6・8・10・12月)の 年6回、それぞれ 前の 月の ぶんまで 払われます。前は 年3回でした。"
+ },
+ {
+  "id": "si-sharoshiho",
+  "name": "社会保険労務士法",
+  "reading": "しゃかいほけんろうむしほう",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-sharoshi",
+   "si-shimei"
+  ],
+  "description": "社労士の 仕事・資格・登録・義務・懲戒 などを 決めた 法律で、1968年に できました。"
+ },
+ {
+  "id": "si-rengokai-sr",
+  "name": "全国社会保険労務士会連合会",
+  "reading": "ぜんこくしゃかいほけんろうむしかいれんごうかい",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-sharoshi",
+   "si-kinmu"
+  ],
+  "description": "社労士の 名簿を もつ 団体です。試験に 合格した あと、この 名簿に 登録して はじめて 社労士に なれます。"
+ },
+ {
+  "id": "si-hojin",
+  "name": "社会保険労務士法人",
+  "reading": "しゃかいほけんろうむしほうじん",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-sharoshi",
+   "si-tokutei"
+  ],
+  "description": "社労士が 作る 法人です。主な 事務所の 場所で 設立の 登記を して 成り立ちます。紛争解決手続代理は 特定社労士が 社員に いる 法人だけ できます。"
+ },
+ {
+  "id": "si-shinsakan",
+  "name": "社会保険審査官",
+  "reading": "しゃかいほけんしんさかん",
+  "journey": "shaichi",
+  "category": "不服申立て",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "shaichi:shinsa",
+  "field": "社会保険審査",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shinsakai",
+   "si-shinsaseikyu"
+  ],
+  "description": "健康保険や 年金の 処分に 不服が ある とき、まず 審査請求を する 相手です。各 地方厚生局に 置かれて います。"
+ },
+ {
+  "id": "si-shinsakai",
+  "name": "社会保険審査会",
+  "reading": "しゃかいほけんしんさかい",
+  "journey": "shaichi",
+  "category": "不服申立て",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "shaichi:shinsa",
+  "field": "社会保険審査",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shinsakan",
+   "si-saishinsa"
+  ],
+  "description": "審査官の 決定に 不服な とき、再審査請求を する ところです。厚生労働大臣の 所轄の 下に 置かれ、独立して 仕事を します。"
+ },
+ {
+  "id": "si-chiikihoken",
+  "name": "地域保険",
+  "reading": "ちいきほけん",
+  "journey": "shaichi",
+  "category": "しくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "shaichi:hoken",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shokuikihoken",
+   "si-kokuho"
+  ],
+  "description": "住んで いる 地域で 入る 保険です。国民健康保険や 後期高齢者医療が これに あたります。勤め先で 入る 職域保険と 区別します。"
+ },
+ {
+  "id": "si-shokuikihoken",
+  "name": "職域保険",
+  "reading": "しょくいきほけん",
+  "journey": "shaichi",
+  "category": "しくみ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "shaichi:hoken",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-chiikihoken",
+   "si-senin"
+  ],
+  "description": "勤め先で 入る 保険です。健康保険・船員保険・共済組合が これに あたります。住む 地域で 入る 地域保険と 区別します。"
+ },
+ {
+  "id": "si-fukushigannen",
+  "name": "福祉元年",
+  "reading": "ふくしがんねん",
+  "journey": "shaichi",
+  "category": "歴史",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎉",
+  "mapNode": "shaichi:rekishi",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-rojinhoken",
+   "si-kaihoken"
+  ],
+  "description": "1973年(昭和48年)の ことです。老人医療費の 無料化・高額療養費の 制度化・年金の 物価スライドが 入りました。⚠️ 老人医療の 一部負担は 1982年の 老人保健法。"
+ },
+ {
+  "id": "si-shinkokuho",
+  "name": "旧国民健康保険法",
+  "reading": "きゅうこくみんけんこうほけんほう",
+  "journey": "shaichi",
+  "category": "歴史",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "shaichi:rekishi",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaihoken",
+   "si-kenpo-seitei"
+  ],
+  "description": "1938年(昭和13年)に できた 最初の 国保の 法律です。⚠️ いまの 国民健康保険法は 1958年に できて、1961年 までに すべての 市町村で 国保が 行われました。"
+ },
+ {
+  "id": "si-rodoshanenkin",
+  "name": "労働者年金保険法",
+  "reading": "ろうどうしゃねんきんほけんほう",
+  "journey": "shaichi",
+  "category": "歴史",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "shaichi:rekishi",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kiso",
+   "si-senin-seitei"
+  ],
+  "description": "1941年(昭和16年)に できた、工場で 働く 男子の ための 年金の 法律です。1944年に 女子・事務職員へ 広げ、名前を 厚生年金保険に 改めました。"
+ },
+ {
+  "id": "si-kiso",
+  "name": "基礎年金の導入",
+  "reading": "きそねんきんのどうにゅう",
+  "journey": "shaichi",
+  "category": "歴史",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "shaichi:rekishi",
+  "field": "社会保障",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaihonenkin",
+   "si-rodoshanenkin"
+  ],
+  "description": "すべての 人に 共通の 基礎年金が 1986年(昭和61年)に 始まりました。⚠️ 決めた 改正は「1985年 改正」と 呼ばれます。年の ずれに 注意です。"
+ },
+ {
+  "id": "si-kokuho-hokensha",
+  "name": "国保の保険者",
+  "reading": "こくほのほけんしゃ",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "shaichi:kokuho",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-kumiai",
+   "si-kaigo-hokensha"
+  ],
+  "description": "国保は 都道府県が 区域内の 市町村(特別区を 含む)と ともに 行います。国民健康保険組合も 行えます。⚠️ 介護保険の 保険者は 市町村と 特別区だけです。"
+ },
+ {
+  "id": "si-kokuho-jogai",
+  "name": "国保の適用除外",
+  "reading": "こくほのてきようじょがい",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "shaichi:kokuho",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-hihokensha",
+   "si-hiyatoi"
+  ],
+  "description": "健康保険・船員保険・共済の 加入者と その 被扶養者、後期高齢者医療の 被保険者、生活保護を 受けて いる 世帯 などは 都道府県等の 国保に 入りません。"
+ },
+ {
+  "id": "si-kokuho-setsuritsu",
+  "name": "国保組合の設立",
+  "reading": "こくほくみあいのせつりつ",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✍️",
+  "mapNode": "shaichi:kokuho",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-kumiai",
+   "si-kokuho-hokensha"
+  ],
+  "description": "15人 以上の 発起人が 規約を 作り、組合員に なる 人 300人 以上の 同意を 得て、都道府県知事の 認可を 受けます。⚠️ 大臣の 認可では ありません。"
+ },
+ {
+  "id": "si-kokuho-futan",
+  "name": "国保の一部負担金",
+  "reading": "こくほのいちぶふたんきん",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "shaichi:kokuho",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-koki-futan",
+   "si-kokuho"
+  ],
+  "description": "窓口の 負担は 6歳の 年度末 まで 2割、70歳に なる 月 まで 3割、その 翌月から 2割(現役並み 所得は 3割)です。"
+ },
+ {
+  "id": "si-kokuho-jiko",
+  "name": "国保の時効",
+  "reading": "こくほのじこう",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "shaichi:kokuho",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-zei",
+   "si-kokuho"
+  ],
+  "description": "国保の 保険料を 集める 権利と、保険給付を 受ける 権利は 2年で 時効に なります。"
+ },
+ {
+  "id": "si-koki-hihokensha",
+  "name": "後期高齢者医療の被保険者",
+  "reading": "こうきこうれいしゃいりょうのひほけんしゃ",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👵",
+  "mapNode": "shaichi:koki",
+  "field": "高確法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokikorei",
+   "si-koiki"
+  ],
+  "description": "広域連合の 区域内に 住所が ある 75歳 以上の 人と、65歳 以上 75歳 未満で 一定の 障害の 認定を 受けた 人です。⚠️ 障害の ときは 65歳から。"
+ },
+ {
+  "id": "si-koki-futan",
+  "name": "後期高齢者医療の一部負担金",
+  "reading": "こうきこうれいしゃいりょうのいちぶふたんきん",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "shaichi:koki",
+  "field": "高確法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-futan",
+   "si-koki-hihokensha"
+  ],
+  "description": "窓口の 負担は 原則 1割、一定 以上の 所得が ある 人は 2割、現役並み 所得の 人は 3割です。"
+ },
+ {
+  "id": "si-zenki-kofukin",
+  "name": "前期高齢者交付金",
+  "reading": "ぜんきこうれいしゃこうふきん",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "shaichi:koki",
+  "field": "高確法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kakuhoho",
+   "si-kokuho"
+  ],
+  "description": "65歳から 74歳(前期高齢者)が 多い 保険者と 少ない 保険者の 負担の かたよりを ならす お金で、前期高齢者納付金で まかないます。⚠️ 交付するのは 2026年10月から 医療情報基盤・診療報酬審査支払機構(前は 支払基金)です。"
+ },
+ {
+  "id": "si-koki-hokenryo",
+  "name": "後期高齢者医療の保険料",
+  "reading": "こうきこうれいしゃいりょうのほけんりょう",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "shaichi:koki",
+  "field": "高確法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-koiki",
+   "si-koki-hihokensha"
+  ],
+  "description": "保険料率は 広域連合の 条例で 決め、区域の 中で 均一が 原則です。おおむね 2年を 通じて 財政が つりあう ように します。⚠️ 集めるのは 市町村です。"
+ },
+ {
+  "id": "si-kaigo-1go",
+  "name": "介護保険の第1号被保険者",
+  "reading": "かいごほけんのだいいちごうひほけんしゃ",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaigo-2go",
+   "si-kaigo-futan"
+  ],
+  "description": "市町村に 住所が ある 65歳 以上の 人です。介護が 必要に なった 原因を 問わず 給付を 受けられます。"
+ },
+ {
+  "id": "si-kaigo-2go",
+  "name": "介護保険の第2号被保険者",
+  "reading": "かいごほけんのだいにごうひほけんしゃ",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaigo-1go",
+   "si-kaigonofukin"
+  ],
+  "description": "40歳 以上 65歳 未満の 医療保険の 加入者です。⚠️ 介護が 必要に なった 原因が 加齢に よる 特定疾病の ときだけ 給付を 受けられます。"
+ },
+ {
+  "id": "si-yokaigokubun",
+  "name": "要介護状態区分",
+  "reading": "ようかいごじょうたいくぶん",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-yoshienkubun",
+   "si-yokaigonintei"
+  ],
+  "description": "要介護1から 要介護5 までの 5段階です。⚠️ 要支援は 1と 2の 2段階で、合わせて 7段階です。どちらも 6か月 続く 見込みが 前提です。"
+ },
+ {
+  "id": "si-yoshienkubun",
+  "name": "要支援状態区分",
+  "reading": "ようしえんじょうたいくぶん",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-yokaigokubun",
+   "si-nintei-kikan"
+  ],
+  "description": "要支援1と 要支援2の 2段階です。介護が いる ほどでは ないが、ふだんの くらしに 支えが いる 状態です。⚠️ 要介護は 1〜5の 5段階です。"
+ },
+ {
+  "id": "si-nintei-kikan",
+  "name": "要介護認定の有効期間",
+  "reading": "ようかいごにんていのゆうこうきかん",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-yokaigonintei",
+   "si-ninteishinsakai"
+  ],
+  "description": "新しい 認定は 原則 6か月(審査会の 意見で 3〜12か月)、更新は 原則 12か月です。⚠️ 新規と 更新で 長さが ちがいます。"
+ },
+ {
+  "id": "si-kaigo-futan",
+  "name": "介護保険の利用者負担",
+  "reading": "かいごほけんのりようしゃふたん",
+  "journey": "shaichi",
+  "category": "介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "shaichi:kaigo",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaigo-1go",
+   "si-koki-futan"
+  ],
+  "description": "介護サービスの 負担は 原則 1割です。⚠️ 2割・3割に なるのは 一定 以上の 所得が ある 第1号被保険者だけで、第2号被保険者は 1割です。"
+ },
+ {
+  "id": "si-senin-ninkei",
+  "name": "船員保険の疾病任意継続被保険者",
+  "reading": "せんいんほけんのしっぺいにんいけいぞくひほけんしゃ",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "shaichi:senin",
+  "field": "船員保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-senin-hihokensha",
+   "si-senin"
+  ],
+  "description": "船員を やめる 日の 前日 まで 続けて 2か月 以上 被保険者 だった 人が、やめた あとも 船員保険に 入り 続けられる しくみです。"
+ },
+ {
+  "id": "si-senin-shokumu",
+  "name": "船員保険の職務上の給付",
+  "reading": "せんいんほけんのしょくむじょうのきゅうふ",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛟",
+  "mapNode": "shaichi:senin",
+  "field": "船員保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-senin",
+   "si-senin-kansho"
+  ],
+  "description": "船員保険は 仕事の 外の 病気・けがの 給付が 中心ですが、仕事中や 通勤の ときは 労災保険の 給付と あわせて 上乗せの 給付を します。"
+ },
+ {
+  "id": "si-senin-seitei",
+  "name": "船員保険法の制定",
+  "reading": "せんいんほけんほうのせいてい",
+  "journey": "shaichi",
+  "category": "歴史",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "shaichi:senin",
+  "field": "船員保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-senin",
+   "si-rodoshanenkin"
+  ],
+  "description": "1939年(昭和14年)に できました。医療と 年金を かねた 総合的な 保険でした。⚠️ 労働者年金保険法(1941年)より 前です。"
+ },
+ {
+  "id": "si-senin-kyogikai",
+  "name": "船員保険協議会",
+  "reading": "せんいんほけんきょうぎかい",
+  "journey": "shaichi",
+  "category": "医療",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗣",
+  "mapNode": "shaichi:senin",
+  "field": "船員保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-senin-kansho",
+   "si-senin"
+  ],
+  "description": "全国健康保険協会に 置かれ、船員保険の 運営に 意見を 出す 会です。委員は 12人 以内、任期は 2年です。"
+ },
+ {
+  "id": "si-kigyo-gendo",
+  "name": "企業型年金の拠出限度額",
+  "reading": "きぎょうがたねんきんのきょしゅつげんどがく",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "shaichi:kakutei",
+  "field": "確定拠出年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kigyogata",
+   "si-taseido"
+  ],
+  "description": "いまは 月 5万5千円です。確定給付企業年金 などにも 入る 人は、5万5千円 から その 掛金に あたる 額を 引きます。2026年12月から 変わります。"
+ },
+ {
+  "id": "si-kojin-gendo",
+  "name": "個人型年金の拠出限度額",
+  "reading": "こじんがたねんきんのきょしゅつげんどがく",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "shaichi:kakutei",
+  "field": "確定拠出年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kojin-kanyu",
+   "si-kikin-kanyu"
+  ],
+  "description": "いまの 月額は 第1号 6万8千円(国民年金基金と 合わせて)、会社に 企業年金が 無い 第2号と 第3号 2万3千円、企業年金が ある 人 2万円 です。2026年12月から 変わります。"
+ },
+ {
+  "id": "si-kojin-kanyu",
+  "name": "個人型年金加入者",
+  "reading": "こじんがたねんきんかにゅうしゃ",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "shaichi:kakutei",
+  "field": "確定拠出年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-ideco",
+   "si-kojin-gendo"
+  ],
+  "description": "国民年金の 第1号(保険料の 免除を 受ける 人を 除く)・第2号(企業型の 加入者掛金を 出す 人 などを 除く)・第3号被保険者と 任意加入被保険者が iDeCoに 入れます。"
+ },
+ {
+  "id": "si-taseido",
+  "name": "他制度加入者",
+  "reading": "たせいどかにゅうしゃ",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "shaichi:kakutei",
+  "field": "確定拠出年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kigyo-gendo",
+   "si-db"
+  ],
+  "description": "確定給付企業年金 などにも 入って いる 人です。2024年12月から 企業型は「5万5千円 − 他の 制度の 掛金」、iDeCoは 2万円に なりました。前は 2万7千5百円と 1万2千円でした。"
+ },
+ {
+  "id": "si-dc-rorei",
+  "name": "確定拠出年金の老齢給付金",
+  "reading": "かくていきょしゅつねんきんのろうれいきゅうふきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "shaichi:kakutei",
+  "field": "確定拠出年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-dc",
+   "si-db-rorei"
+  ],
+  "description": "60歳から 受け取れます(加入した 期間が 10年 以上の とき。短いと おそく なります)。75歳に なったら 支給します。給付は ほかに 障害給付金・死亡一時金です。"
+ },
+ {
+  "id": "si-kiyakugata",
+  "name": "規約型企業年金",
+  "reading": "きやくがたきぎょうねんきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "shaichi:kyufu",
+  "field": "確定給付企業年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kikingata",
+   "si-db-doi"
+  ],
+  "description": "会社が 規約を 作り、その 規約に 厚生労働大臣の「承認」を 受けて 行う 確定給付企業年金です。⚠️ 基金型は 基金の 設立の「認可」です。"
+ },
+ {
+  "id": "si-kikingata",
+  "name": "基金型企業年金",
+  "reading": "ききんがたきぎょうねんきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "shaichi:kyufu",
+  "field": "確定給付企業年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kiyakugata",
+   "si-nenkinkikin"
+  ],
+  "description": "企業年金基金を 作って 行う 確定給付企業年金です。基金の 設立に 厚生労働大臣の「認可」を 受けます。⚠️ 規約型は 規約の「承認」です。"
+ },
+ {
+  "id": "si-db-doi",
+  "name": "確定給付企業年金の規約の同意",
+  "reading": "かくていきゅうふきぎょうねんきんのきやくのどうい",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "shaichi:kyufu",
+  "field": "確定給付企業年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kiyakugata",
+   "si-kikingata"
+  ],
+  "description": "規約を 作るには、被保険者の 過半数で 作る 労働組合(無ければ 過半数を 代表する 人)の「同意」が いります。⚠️ 意見を 聴く だけでは たりません。"
+ },
+ {
+  "id": "si-db-rorei",
+  "name": "確定給付企業年金の老齢給付金",
+  "reading": "かくていきゅうふきぎょうねんきんのろうれいきゅうふきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "shaichi:kyufu",
+  "field": "確定給付企業年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-dc-rorei",
+   "si-db-dattai"
+  ],
+  "description": "60歳 以上 70歳 以下で 規約に 決めた 年齢から 支給します。⚠️ 加入者期間が 20年を こえる ことを 条件に しては いけません。"
+ },
+ {
+  "id": "si-db-dattai",
+  "name": "確定給付企業年金の脱退一時金",
+  "reading": "かくていきゅうふきぎょうねんきんのだったいいちじきん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "shaichi:kyufu",
+  "field": "確定給付企業年金法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-db-rorei",
+   "si-db"
+  ],
+  "description": "老齢給付金と ならんで 必ず 用意する 給付です。⚠️ 障害給付金・遺族給付金は 規約で 決めた ときだけです。"
+ },
+ {
+  "id": "si-kikin-kanyu",
+  "name": "国民年金基金の加入員",
+  "reading": "こくみんねんきんききんのかにゅういん",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "shaichi:kikin",
+  "field": "国年法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-chiikigata",
+   "si-kojin-gendo"
+  ],
+  "description": "国民年金の 第1号被保険者が 申し出て なります。⚠️ 保険料の 免除を 受ける 人と 農業者年金の 被保険者は なれません。第2号・第3号も なれません。"
+ },
+ {
+  "id": "si-kikin-kyufu",
+  "name": "国民年金基金の給付",
+  "reading": "こくみんねんきんききんのきゅうふ",
+  "journey": "shaichi",
+  "category": "年金",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "shaichi:kikin",
+  "field": "国年法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kikin-kanyu",
+   "si-shokunogata"
+  ],
+  "description": "国民年金基金は 年を とった ときの 年金と、加入員が 亡くなった ときの 一時金を 支給します。"
+ },
+ {
+  "id": "si-jido-jido",
+  "name": "児童手当の児童",
+  "reading": "じどうてあてのじどう",
+  "journey": "shaichi",
+  "category": "児童手当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎒",
+  "mapNode": "shaichi:jido",
+  "field": "児童手当法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-jidoteate",
+   "si-jido-daisanshi"
+  ],
+  "description": "18歳に なった 日 以後の 最初の 3月31日 まで の 子(高校生の 年代 まで)です。⚠️ 2024年9月 までは 中学校を 終える まで でした。"
+ },
+ {
+  "id": "si-jido-gaku",
+  "name": "児童手当の月額",
+  "reading": "じどうてあてのげつがく",
+  "journey": "shaichi",
+  "category": "児童手当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "shaichi:jido",
+  "field": "児童手当法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-jido-daisanshi",
+   "si-jido-jido"
+  ],
+  "description": "3歳 未満 1万5千円、3歳 以上 1万円、第3子 以降は 年れいに かかわらず 3万円です。"
+ },
+ {
+  "id": "si-jido-daisanshi",
+  "name": "児童手当の第3子",
+  "reading": "じどうてあてのだいさんし",
+  "journey": "shaichi",
+  "category": "児童手当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👨‍👩‍👧‍👦",
+  "mapNode": "shaichi:jido",
+  "field": "児童手当法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-jido-gaku",
+   "si-jido-jido"
+  ],
+  "description": "第3子を 数える ときは、22歳の 年度末 まで の 子で、親が 世話を し 生活費を 負担して いる 子も 入れます。⚠️ 支給の 対象は 18歳の 年度末 までです。"
+ },
+ {
+  "id": "si-jido-kaisei",
+  "name": "児童手当の所得制限の撤廃",
+  "reading": "じどうてあてのしょとくせいげんのてっぱい",
+  "journey": "shaichi",
+  "category": "児童手当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔓",
+  "mapNode": "shaichi:jido",
+  "field": "児童手当法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-jidoteateho",
+   "si-jido-shiharai"
+  ],
+  "description": "2024年10月の 改正で、親の 所得に よる 制限が なくなりました。同じ 改正で 支払いも 年3回から 年6回に なりました。"
+ },
+ {
+  "id": "si-jido-nintei",
+  "name": "児童手当の認定",
+  "reading": "じどうてあてのにんてい",
+  "journey": "shaichi",
+  "category": "児童手当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "shaichi:jido",
+  "field": "児童手当法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-jido-shiharai",
+   "si-jidoteate"
+  ],
+  "description": "住所地の 市町村長の 認定を 受けます。⚠️ 支給は 請求した 月の 翌月から です(請求した 月からでは ありません)。"
+ },
+ {
+  "id": "si-1go",
+  "name": "社労士の1号業務",
+  "reading": "しゃろうしのいちごうぎょうむ",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-2go",
+   "si-3go"
+  ],
+  "description": "労働・社会保険の 法令に もとづく 申請書 などを 作る こと、提出の 手続代行・事務代理、特定社労士の 紛争解決手続代理です。"
+ },
+ {
+  "id": "si-2go",
+  "name": "社労士の2号業務",
+  "reading": "しゃろうしのにごうぎょうむ",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📒",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-1go",
+   "si-3go"
+  ],
+  "description": "労働・社会保険の 法令に もとづく 帳簿書類を 作る ことです。⚠️ 申請書は 1号、帳簿書類は 2号です。"
+ },
+ {
+  "id": "si-3go",
+  "name": "社労士の3号業務",
+  "reading": "しゃろうしのさんごうぎょうむ",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-1go",
+   "si-2go"
+  ],
+  "description": "労務管理 などの 相談・指導です。2025年6月から、法令や 就業規則 などが 守られて いるかを 監査する ことも 入ると 書かれました。"
+ },
+ {
+  "id": "si-tokutei",
+  "name": "特定社会保険労務士",
+  "reading": "とくていしゃかいほけんろうむし",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎖",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-1go",
+   "si-hojin"
+  ],
+  "description": "紛争解決手続代理業務試験に 合格し 付記を 受けた 社労士です。あっせん などで 代理できます。⚠️ 民間の 手続きで 120万円を こえる ときは 弁護士と 共同で 受けます。"
+ },
+ {
+  "id": "si-chokai",
+  "name": "社労士の懲戒",
+  "reading": "しゃろうしのちょうかい",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-sharoshiho",
+   "si-shimei"
+  ],
+  "description": "戒告・1年 以内の 業務の 停止・失格処分の 3つで、厚生労働大臣が 行います。⚠️ 戒告・業務停止の 前には 公開の 聴聞を します。処分は 官報で 知らせます。"
+ },
+ {
+  "id": "si-shimei",
+  "name": "社労士の使命",
+  "reading": "しゃろうしのしめい",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌟",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-sharoshiho",
+   "si-3go"
+  ],
+  "description": "2025年6月の 改正で、法律の 1条が「目的」から「使命」に 変わりました。適切な 労務管理と 個人の 尊厳が 守られた 働く 環境づくりに 役立つ ことが 書かれて います。"
+ },
+ {
+  "id": "si-kinmu",
+  "name": "勤務社会保険労務士",
+  "reading": "きんむしゃかいほけんろうむし",
+  "journey": "shaichi",
+  "category": "社労士",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "shaichi:sharoshi",
+  "field": "社労士法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-rengokai-sr",
+   "si-sharoshi"
+  ],
+  "description": "会社に 勤めて その 会社の 仕事を する 社労士です。開業する 人は 事務所を、勤務の 人は 勤め先の 事業所も 登録します。⚠️ 資格には 試験の 合格と 通算 2年 以上の 実務 などが いります。"
+ },
+ {
+  "id": "si-shinsaseikyu",
+  "name": "社一の審査請求",
+  "reading": "しゃいちのしんさせいきゅう",
+  "journey": "shaichi",
+  "category": "不服申立て",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "shaichi:shinsa",
+  "field": "社会保険審査",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-saishinsa",
+   "si-shinsa-2nen"
+  ],
+  "description": "社会保険審査官への 審査請求は、処分が あった ことを 知った 日の 翌日から 3か月 以内です。⚠️ 再審査請求は 2か月です。"
+ },
+ {
+  "id": "si-saishinsa",
+  "name": "社一の再審査請求",
+  "reading": "しゃいちのさいしんさせいきゅう",
+  "journey": "shaichi",
+  "category": "不服申立て",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "shaichi:shinsa",
+  "field": "社会保険審査",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shinsaseikyu",
+   "si-shinsakai"
+  ],
+  "description": "社会保険審査会への 再審査請求は、審査官の 決定書の 謄本が 送られた 日の 翌日から 2か月 以内です。⚠️ 審査請求の 3か月と 区別します。"
+ },
+ {
+  "id": "si-shinsa-2nen",
+  "name": "社一の審査請求の2年",
+  "reading": "しゃいちのしんさせいきゅうのにねん",
+  "journey": "shaichi",
+  "category": "不服申立て",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "shaichi:shinsa",
+  "field": "社会保険審査",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shinsaseikyu",
+   "si-shinsakan"
+  ],
+  "description": "被保険者の 資格や 標準報酬 などの 処分は、知らなくても 処分の 翌日から 2年を すぎると 審査請求が できません。"
+ },
+ {
+  "id": "si-shinsakai-iin",
+  "name": "社会保険審査会の委員",
+  "reading": "しゃかいほけんしんさかいのいいん",
+  "journey": "shaichi",
+  "category": "不服申立て",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "shaichi:shinsa",
+  "field": "社会保険審査",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-shinsakai",
+   "si-shinsakan"
+  ],
+  "description": "委員長と 委員 5人で 作ります。両議院の 同意を 得て 厚生労働大臣が 任命します。⚠️ 審査官は 地方厚生局に 置かれます。"
+ },
+ {
+  "id": "si-kokuho-shinsakai",
+  "name": "国民健康保険審査会",
+  "reading": "こくみんけんこうほけんしんさかい",
+  "journey": "shaichi",
+  "category": "不服申立て",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "shaichi:shinsa",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaigo-shinsakai",
+   "si-shinsakan"
+  ],
+  "description": "国保の 処分に 不服な ときに 審査請求を する ところで、各 都道府県に 置かれます。⚠️ 健康保険の 不服は 社会保険審査官です。"
+ },
+ {
+  "id": "si-kaigo-shinsakai",
+  "name": "介護保険審査会",
+  "reading": "かいごほけんしんさかい",
+  "journey": "shaichi",
+  "category": "不服申立て",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🦯",
+  "mapNode": "shaichi:shinsa",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-shinsakai",
+   "si-yokaigonintei"
+  ],
+  "description": "要介護認定 など 介護保険の 処分に 不服な ときに 審査請求を する ところで、各 都道府県に 置かれます。⚠️ 保険者の 市町村では ありません。"
+ },
+ {
+  "id": "si-kaigonofukin",
+  "name": "介護納付金",
+  "reading": "かいごのうふきん",
+  "journey": "shaichi",
+  "category": "しくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "shaichi:hoken",
+  "field": "介護保険法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kaigo-2go",
+   "si-kokuho-zei"
+  ],
+  "description": "第2号被保険者の ぶんの 介護保険の お金を、医療保険の 保険者が 集めて 機構に 納める ものです。国保では 第2号被保険者に 保険料を かけて まかないます。"
+ },
+ {
+  "id": "si-hiyatoi",
+  "name": "国保と日雇特例被保険者",
+  "reading": "こくほとひやといとくれいひほけんしゃ",
+  "journey": "shaichi",
+  "category": "しくみ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "shaichi:hoken",
+  "field": "国保法",
+  "ruleset": "社一",
+  "relatedTerms": [
+   "si-kokuho-jogai",
+   "si-kokuho-hihokensha"
+  ],
+  "description": "健康保険の 被保険者は 国保に 入りませんが、日雇特例被保険者は その 号の 例外です。⚠️ ただし 日雇特例被保険者手帳に 印紙を はる 余白が ある あいだは、別の 号で 国保から 除かれます。"
+ }
+]

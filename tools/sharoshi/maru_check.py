@@ -11,13 +11,15 @@ from terms_js import BAN, RULESETS, ban_text
 JR = ["roki", "anei", "rosai", "koyo", "choshu", "roichi", "shaichi", "kenpo", "kosei", "kokunen"]
 PRE = dict(roki="rk", anei="an", rosai="rs", koyo="ko", choshu="ch", roichi="ri", shaichi="si", kenpo="kp", kosei="ks", kokunen="kn")
 GOAL = dict(roki=150, anei=100, rosai=130, koyo=130, choshu=100, roichi=130, shaichi=120, kenpo=150, kosei=150, kokunen=140)
-SGOAL = dict(roki=30, anei=20, rosai=30, koyo=30, choshu=20, roichi=40, shaichi=30, kenpo=35, kosei=35, kokunen=30)  # 📝 選択式(約300)
+SGOAL = dict(roki=30, anei=20, rosai=35, koyo=35, choshu=0, roichi=40, shaichi=40, kenpo=35, kosei=35, kokunen=30)  # 📝 選択式(約300)。⚠️ 本物の 選択式に 徴収法は 出ないので choshu は 0
 RS_OF = dict(roki={"労基・安衛"}, anei={"労基・安衛"}, rosai={"労災"}, koyo={"雇用"}, choshu={"徴収"}, roichi={"労一"}, shaichi={"社一"}, kenpo={"健保"}, kosei={"厚年"}, kokunen={"国年"})
 def terms():
     ids = set()
     for j in JR:
         f = HERE / f"terms-{j}.json"
-        if f.exists(): ids |= {t["id"] for t in json.loads(f.read_text(encoding="utf-8"))}
+        if f.exists():
+            try: ids |= {t["id"] for t in json.loads(f.read_text(encoding="utf-8"))}
+            except json.JSONDecodeError: pass  # ほかの 係が 書いて いる とちゅう
     return ids
 def banned(txt): return [w for w in BAN if w in ban_text(txt)]
 def main():

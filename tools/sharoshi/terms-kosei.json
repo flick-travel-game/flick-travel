@@ -1,0 +1,1823 @@
+[
+ {
+  "id": "ks-koseinenkin",
+  "name": "厚生年金",
+  "reading": "こうせいねんきん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kaisha",
+   "ks-nikai"
+  ],
+  "description": "会社などで 働く 人が 入る 公的な 年金です。年を とった とき・障害の 状態に なった とき・家族を のこして 亡くなった とき に、年金が 出ます。"
+ },
+ {
+  "id": "ks-kaisha",
+  "name": "会社で入る年金",
+  "reading": "かいしゃではいるねんきん",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kosei:tekiyo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-koseinenkin",
+   "ks-tekiyojigyosho"
+  ],
+  "description": "会社員に なると、ふつうは 厚生年金に 入ります。入る 手続きは 本人では なく 会社(事業主)が します。国民年金にも 同時に 入って いる ことに なります。"
+ },
+ {
+  "id": "ks-nikai",
+  "name": "年金の2階部分",
+  "reading": "ねんきんのにかいぶぶん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-koseinenkin",
+   "ks-kisotokosei"
+  ],
+  "description": "日本の 公的な 年金は 2階建てで、1階が みんな 共通の 国民年金(基礎年金)、2階が 会社員などの 厚生年金です。厚生年金は 給料に 応じて 額が 決まります。"
+ },
+ {
+  "id": "ks-rorei",
+  "name": "老齢厚生年金",
+  "reading": "ろうれいこうせいねんきん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hoshuhirei",
+   "ks-jukyushikaku"
+  ],
+  "description": "厚生年金に 入って いた 人が 年を とって から もらう 年金です。原則 65歳 から で、入って いた 期間と 給料の 額で 金額が 決まります。"
+ },
+ {
+  "id": "ks-shogai",
+  "name": "障害厚生年金",
+  "reading": "しょうがいこうせいねんきん",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦽",
+  "mapNode": "kosei:shogai",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-ninteibi",
+   "ks-sankyu"
+  ],
+  "description": "厚生年金に 入って いる 間に 初めて 病院に かかった 病気や けがで、障害の 状態に なった とき に 出る 年金です。等級は 1級・2級・3級 です。"
+ },
+ {
+  "id": "ks-izoku",
+  "name": "遺族厚生年金",
+  "reading": "いぞくこうせいねんきん",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🕊",
+  "mapNode": "kosei:izoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-izokuhani",
+   "ks-yonbun"
+  ],
+  "description": "厚生年金に 入って いた 人が 亡くなった とき に、生計を 維持されて いた 家族(遺族)に 出る 年金です。のこされた 家族の くらしを 支えます。"
+ },
+ {
+  "id": "ks-kisobango",
+  "name": "基礎年金番号通知書",
+  "reading": "きそねんきんばんごうつうちしょ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hihokensha",
+   "ks-teikibin"
+  ],
+  "description": "公的な 年金で 1人に 1つ ずつ ついて いる 基礎年金番号が 書かれた 通知書です。会社を かわっても 同じ 番号で、厚生年金の 記録が つながります。"
+ },
+ {
+  "id": "ks-nanajusai",
+  "name": "厚年は70歳まで",
+  "reading": "こうねんはななじゅっさいまで",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎂",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hihokensha",
+   "ks-nanajuijo"
+  ],
+  "description": "厚生年金の 被保険者に なるのは 70歳 未満の 人です。70歳に 達した 日(誕生日の 前日)に 資格を なくし、それから 先は 保険料を 払いません。",
+  "acceptedReadings": [
+   "こうねんはななじゅっさいまで",
+   "こうねんはななじっさいまで"
+  ]
+ },
+ {
+  "id": "ks-part",
+  "name": "パートの厚生年金",
+  "reading": "ぱーとのこうせいねんきん",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "kosei:tanjikan",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-tanjikan",
+   "ks-tokuteitekiyo"
+  ],
+  "description": "パートや アルバイトでも、働く 時間が 長い 人や 一定の 条件を 満たす 人は 厚生年金に 入ります。入る 人を ふやす 見なおしが 続いて います。"
+ },
+ {
+  "id": "ks-meisai",
+  "name": "給料明細の厚生年金",
+  "reading": "きゅうりょうめいさいのこうせいねんきん",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-seppan",
+   "ks-kojo"
+  ],
+  "description": "給料明細の「厚生年金」の 欄は、働く 人が 払う ぶんの 保険料です。会社が 給料から 差し引いて、会社の ぶんと あわせて 納めます。"
+ },
+ {
+  "id": "ks-seppan",
+  "name": "厚年の保険料の折半",
+  "reading": "こうねんのほけんりょうのせっぱん",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-meisai",
+   "ks-ritsu"
+  ],
+  "description": "厚生年金の 保険料は、働く 人(被保険者)と 会社(事業主)が 半分ずつ 負担します。納める 義務は 会社に あります。"
+ },
+ {
+  "id": "ks-teikibin",
+  "name": "ねんきん定期便",
+  "reading": "ねんきんていきびん",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✉️",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kisobango",
+   "ks-seppan"
+  ],
+  "description": "これまで 入って いた 月数・標準報酬・払った 保険料・年金の 見込額 などを 知らせる お知らせです。35歳・45歳・59歳 には 書面で くわしく 届きます。"
+ },
+ {
+  "id": "ks-rokujugo",
+  "name": "厚生年金は65歳から",
+  "reading": "こうせいねんきんはろくじゅうごさいから",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "kosei:kuriage",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kuriage",
+   "ks-kurisage"
+  ],
+  "description": "老齢厚生年金は 原則 65歳 から です。希望すれば 早く もらう 繰上げ(減る)や、おそく もらう 繰下げ(増える)も えらべます。"
+ },
+ {
+  "id": "ks-rikon",
+  "name": "離婚時の年金分割",
+  "reading": "りこんじのねんきんぶんかつ",
+  "journey": "kosei",
+  "category": "分割・手続",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "kosei:bunkatsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-goi",
+   "ks-sangobunkatsu"
+  ],
+  "description": "離婚した とき、結婚して いた 間の 厚生年金の 記録(標準報酬)を 2人で 分ける しくみです。分けた 記録で 将来の 年金額が 計算されます。"
+ },
+ {
+  "id": "ks-hatarakinagara",
+  "name": "働きながらもらう年金",
+  "reading": "はたらきながらもらうねんきん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💼",
+  "mapNode": "kosei:zaishoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-zairo",
+   "ks-chouseigaku"
+  ],
+  "description": "年金を もらう 年に なっても 会社で 働いて 厚生年金に 入る と、給料と 年金の 合計が 多い 月は 年金の 一部が 止まる ことが あります。在職老齢年金と いいます。"
+ },
+ {
+  "id": "ks-tekiyojigyosho",
+  "name": "厚年の適用事業所",
+  "reading": "こうねんのてきようじぎょうしょ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kosei:tekiyo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kyoseitekiyo",
+   "ks-niniteki"
+  ],
+  "description": "厚生年金が 適用される 事業所です。法律で 必ず 適用される 強制適用事業所と、認可を 受けて 適用される 任意適用事業所が あります。"
+ },
+ {
+  "id": "ks-kyoseitekiyo",
+  "name": "厚年の強制適用事業所",
+  "reading": "こうねんのきょうせいてきようじぎょうしょ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "kosei:tekiyo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-tekiyojigyosho",
+   "ks-kojin5nin"
+  ],
+  "description": "法定の 業種で 常時 5人 以上を 使う 事業所、国・地方公共団体・法人で 常時 従業員を 使う 事業所、船員が 乗り組む 船舶は、必ず 厚生年金の 適用事業所です。"
+ },
+ {
+  "id": "ks-shinkitekiyo",
+  "name": "厚年の新規適用届",
+  "reading": "こうねんのしんきてきようとどけ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "kosei:tekiyo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-tekiyojigyosho",
+   "ks-shutokutodoke"
+  ],
+  "description": "初めて 適用事業所に なった 事業主は、その 日から 5日 以内に 届書を 日本年金機構に 出します。やめる・休む などで 適用事業所で なくなった ときも 5日 以内です。"
+ },
+ {
+  "id": "ks-hihokensha",
+  "name": "厚年の被保険者",
+  "reading": "こうねんのひほけんしゃ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👤",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-shutokutodoke",
+   "ks-soshitsu"
+  ],
+  "description": "適用事業所に 使用される 70歳 未満の 人は、本人の 希望に かかわらず 被保険者に なります(当然被保険者)。会社が 手続きを します。"
+ },
+ {
+  "id": "ks-shutokutodoke",
+  "name": "厚年の資格取得届",
+  "reading": "こうねんのしかくしゅとくとどけ",
+  "journey": "kosei",
+  "category": "分割・手続",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hihokensha",
+   "ks-shinkitekiyo"
+  ],
+  "description": "人を やとって 被保険者に なった とき、事業主は 5日 以内に 資格取得届を 出します。資格の 取得は 厚生労働大臣の 確認で 効力が 生じます。"
+ },
+ {
+  "id": "ks-soshitsu",
+  "name": "厚年の資格喪失",
+  "reading": "こうねんのしかくそうしつ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hihokensha",
+   "ks-kikan"
+  ],
+  "description": "退職して 使用されなく なった ときは その 日の 翌日に 資格を なくします。⚠️ 70歳に 達した ときは 翌日では なく その 日(誕生日の 前日)に なくします。"
+ },
+ {
+  "id": "ks-kikan",
+  "name": "厚年の被保険者期間",
+  "reading": "こうねんのひほけんしゃきかん",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-soshitsu",
+   "ks-dogetsu"
+  ],
+  "description": "月 単位で 数え、資格を 取った 月から なくした 月の 前の 月 まで を 入れます。月末に 退職すると 喪失は 翌月 1日 なので、退職した 月まで 数えます。"
+ },
+ {
+  "id": "ks-tanjikan",
+  "name": "厚年の短時間労働者",
+  "reading": "こうねんのたんじかんろうどうしゃ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏱",
+  "mapNode": "kosei:tanjikan",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-part",
+   "ks-shu20"
+  ],
+  "description": "週の 労働時間か 月の 日数が ふつうの 人の 4分の3 未満の 人です。特定適用事業所 などでは、週 20時間 以上で 学生で ない 人は 被保険者に なります。"
+ },
+ {
+  "id": "ks-tokuteitekiyo",
+  "name": "厚年の特定適用事業所",
+  "reading": "こうねんのとくていてきようじぎょうしょ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "kosei:tanjikan",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-tanjikan",
+   "ks-kibo"
+  ],
+  "description": "被保険者(短時間労働者を 除く)が 常時 50人を こえる(51人 以上の)企業 などです。1年の うち 6か月 以上 そう なる 見こみで 見ます。法人は 法人番号が 同じ 事業所を 合計します。"
+ },
+ {
+  "id": "ks-hyojungetsugaku",
+  "name": "厚年の標準報酬月額",
+  "reading": "こうねんのひょうじゅんほうしゅうげつがく",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "kosei:hyojun",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-sanjuni",
+   "ks-teiji"
+  ],
+  "description": "給料などの 報酬を 区切りの よい 等級に あてはめた 額で、保険料と 年金額の 計算に 使います。厚生年金は 1級 88,000円 〜 32級 650,000円 です。"
+ },
+ {
+  "id": "ks-shoyo",
+  "name": "厚年の標準賞与額",
+  "reading": "こうねんのひょうじゅんしょうよがく",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "kosei:hyojun",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hyojungetsugaku",
+   "ks-sanjuni"
+  ],
+  "description": "賞与の 1,000円 未満を 切り捨てた 額で、保険料が かかります。上限は 1か月 150万円。⚠️ 健康保険は 年度の 合計 573万円 なので 区切りが ちがいます。"
+ },
+ {
+  "id": "ks-teiji",
+  "name": "厚年の定時決定",
+  "reading": "こうねんのていじけってい",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "kosei:hyojun",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hyojungetsugaku",
+   "ks-zuiji"
+  ],
+  "description": "毎年 7月1日に 使用される 人の、4月・5月・6月の 報酬(支払の 基礎日数 17日 以上の 月)の 平均で 標準報酬月額を 決めます。9月 から 翌年 8月 まで 使います。"
+ },
+ {
+  "id": "ks-zuiji",
+  "name": "厚年の随時改定",
+  "reading": "こうねんのずいじかいてい",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "kosei:hyojun",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-teiji",
+   "ks-ikukyushuryo"
+  ],
+  "description": "昇給などで 続けて 3か月(各月 17日 以上)の 報酬の 平均が 大きく 変わった とき、その 翌月 から 標準報酬月額を 改定します。"
+ },
+ {
+  "id": "ks-hoshuhirei",
+  "name": "報酬比例部分",
+  "reading": "ほうしゅうひれいぶぶん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-rorei",
+   "ks-jojo"
+  ],
+  "description": "老齢厚生年金の 中心の 部分で、入って いた 間の 給料と 賞与の 平均と 月数に 比例して 額が 決まります。給料が 高く 期間が 長い ほど 多く なります。"
+ },
+ {
+  "id": "ks-jukyushikaku",
+  "name": "厚年の受給資格期間",
+  "reading": "こうねんのじゅきゅうしかくきかん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-rorei",
+   "ks-kisotokosei"
+  ],
+  "description": "老齢厚生年金は、厚生年金の 被保険者期間が あり、65歳 以上で、保険料納付済期間と 保険料免除期間を 合わせて 10年 以上 ある とき に もらえます。"
+ },
+ {
+  "id": "ks-kakyu",
+  "name": "加給年金額",
+  "reading": "かきゅうねんきんがく",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-haigushateishi",
+   "ks-tokubetsukasan"
+  ],
+  "description": "被保険者期間が 240月(20年)以上 ある 人に、生計を 維持する 65歳 未満の 配偶者や 子が いる とき に 足される 額です。令和8年度は 配偶者 243,800円 です。"
+ },
+ {
+  "id": "ks-tokubetsushikyu",
+  "name": "特別支給の老齢厚生年金",
+  "reading": "とくべつしきゅうのろうれいこうせいねんきん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "kosei:tokubetsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kaishinenrei",
+   "ks-teigaku"
+  ],
+  "description": "65歳より 前の 60歳台 前半に 出る 老齢厚生年金です。60歳 以上・被保険者期間 1年 以上・受給資格期間 10年 が 要件で、生年月日で 開始年齢が 決まります。"
+ },
+ {
+  "id": "ks-teigaku",
+  "name": "定額部分",
+  "reading": "ていがくぶぶん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🟰",
+  "mapNode": "kosei:tokubetsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-tokubetsushikyu",
+   "ks-keikateki"
+  ],
+  "description": "特別支給の 老齢厚生年金で、加入の 月数で 決まる 部分です。令和8年度は 1,766円 × 月数(昭和31年4月1日 以前 生まれは 1,761円)。いまは 特例の 人だけに 出ます。"
+ },
+ {
+  "id": "ks-zairo",
+  "name": "在職老齢年金",
+  "reading": "ざいしょくろうれいねんきん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💼",
+  "mapNode": "kosei:zaishoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-chouseigaku",
+   "ks-sohoshu"
+  ],
+  "description": "老齢厚生年金を もらう 人が 厚生年金に 入って 働く と、年金の 月額と 給料・賞与の 合計が 基準を こえた とき、年金の 一部か 全部が 止まります。"
+ },
+ {
+  "id": "ks-sohoshu",
+  "name": "総報酬月額相当額",
+  "reading": "そうほうしゅうげつがくそうとうがく",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💹",
+  "mapNode": "kosei:zaishoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-zairo",
+   "ks-kihongetsugaku"
+  ],
+  "description": "在職老齢年金で 使う 給料の 額で、その 月の 標準報酬月額 + その 月 以前 1年の 標準賞与額の 合計 ÷ 12 です。賞与も 入る ことに 注意します。"
+ },
+ {
+  "id": "ks-zaishokuteiji",
+  "name": "在職定時改定",
+  "reading": "ざいしょくていじかいてい",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kosei:zaishoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-zairo",
+   "ks-rorei"
+  ],
+  "description": "老齢厚生年金を もらって 働く 人の 年金を、毎年 9月1日 時点の 加入の 記録で 計算しなおし、10月 から 額を ふやす しくみです。退職を 待たずに 年金に 反映します。"
+ },
+ {
+  "id": "ks-ninteibi",
+  "name": "厚年の障害認定日",
+  "reading": "こうねんのしょうがいにんていび",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "kosei:shogai",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-shogai",
+   "ks-jigojusho"
+  ],
+  "description": "初めて 病院に かかった 日(初診日)から 1年6か月 たった 日、その 前に 治った ときは 治った 日です。この 日に 障害等級に 当たると 障害厚生年金が 出ます。"
+ },
+ {
+  "id": "ks-teatekin",
+  "name": "障害手当金",
+  "reading": "しょうがいてあてきん",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💰",
+  "mapNode": "kosei:shogai",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-sankyu",
+   "ks-shogai"
+  ],
+  "description": "初診日から 5年 以内に 治って、3級より 軽い 障害が のこった とき に 1回だけ 出る 一時金です。額は 報酬比例の 計算の 200%。⚠️ 年金では ありません。"
+ },
+ {
+  "id": "ks-izokuhani",
+  "name": "遺族厚生年金の遺族",
+  "reading": "いぞくこうせいねんきんのいぞく",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👨‍👩‍👧",
+  "mapNode": "kosei:izoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-izoku",
+   "ks-otto55"
+  ],
+  "description": "亡くなった 人に 生計を 維持されて いた 配偶者・子・父母・孫・祖父母 です。順位は 配偶者と 子 → 父母 → 孫 → 祖父母。兄弟姉妹は 入りません。"
+ },
+ {
+  "id": "ks-goi",
+  "name": "合意分割",
+  "reading": "ごういぶんかつ",
+  "journey": "kosei",
+  "category": "分割・手続",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "kosei:bunkatsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-anbun",
+   "ks-seikyukigen"
+  ],
+  "description": "離婚した 2人が 話しあって 分ける 割合(按分割合)を 決めて、標準報酬の 改定を 請求する 分割です。話が まとまらない ときは 家庭裁判所が 決めます。"
+ },
+ {
+  "id": "ks-sangobunkatsu",
+  "name": "3号分割",
+  "reading": "さんごうぶんかつ",
+  "journey": "kosei",
+  "category": "分割・手続",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "kosei:bunkatsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-goi",
+   "ks-goitosango"
+  ],
+  "description": "相手の 被扶養配偶者(国民年金の 第3号被保険者)だった 期間の 標準報酬を 2分の1 ずつに 分ける 分割です。相手の 合意は いらず、請求だけで できます。"
+ },
+ {
+  "id": "ks-kuriage",
+  "name": "厚年の繰上げ",
+  "reading": "こうねんのくりあげ",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏪",
+  "mapNode": "kosei:kuriage",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-genngakuritsu",
+   "ks-dojikuriage"
+  ],
+  "description": "60歳 から 65歳に なる まで の 間に 請求して、老齢厚生年金を 早く もらう しくみです。早めた 月数に 応じて 減り、減った 率は 一生 変わりません。取り消せません。"
+ },
+ {
+  "id": "ks-kurisage",
+  "name": "厚年の繰下げ",
+  "reading": "こうねんのくりさげ",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "kosei:kuriage",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-zogakuritsu",
+   "ks-jogen75"
+  ],
+  "description": "65歳で もらわずに 待って、66歳 以後に 申し出て おそく もらう しくみです。待った 月数に 応じて 増え、増えた 率は 一生 続きます。"
+ },
+ {
+  "id": "ks-nofukigen",
+  "name": "厚年の保険料の納付期限",
+  "reading": "こうねんのほけんりょうののうふきげん",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-seppan",
+   "ks-kojo"
+  ],
+  "description": "毎月の 保険料は 翌月の 末日 まで に 事業主が 納めます。たとえば 4月分は 5月 末日 まで です。"
+ },
+ {
+  "id": "ks-kojo",
+  "name": "厚年の保険料の控除",
+  "reading": "こうねんのほけんりょうのこうじょ",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-meisai",
+   "ks-nofukigen"
+  ],
+  "description": "事業主は 給料から 前の 月の ぶんの 保険料を 差し引けます。退職する ときは 前月と その 月の 2か月 ぶんを 引けます。引いたら 計算書で 本人に 知らせます。"
+ },
+ {
+  "id": "ks-niniteki",
+  "name": "厚年の任意適用事業所",
+  "reading": "こうねんのにんいてきようじぎょうしょ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "kosei:tekiyo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-torikeshi",
+   "ks-gisei"
+  ],
+  "description": "強制適用で ない 事業所も、厚生労働大臣の 認可を 受ければ 適用事業所に なれます。⚠️ 申請には 使われる 人の 2分の1 以上の 同意が いります(取消しは 4分の3)。"
+ },
+ {
+  "id": "ks-torikeshi",
+  "name": "厚年の任意適用の取消し",
+  "reading": "こうねんのにんいてきようのとりけし",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "kosei:tekiyo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-niniteki",
+   "ks-gisei"
+  ],
+  "description": "任意適用事業所を やめる ときは、使われる 人の 4分の3 以上の 同意を 得て、大臣の 認可を 受けます。⚠️ 入る ときの 2分の1 と 数字が ちがいます。"
+ },
+ {
+  "id": "ks-gisei",
+  "name": "厚年の任意適用の擬制",
+  "reading": "こうねんのにんいてきようのぎせい",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪄",
+  "mapNode": "kosei:tekiyo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-niniteki",
+   "ks-kojin5nin"
+  ],
+  "description": "強制適用事業所が 人が へる などで 要件を 欠いても、すぐには 外れず、任意適用の 認可が あった もの と みなされます。働く 人の 加入が とぎれません。"
+ },
+ {
+  "id": "ks-kojin5nin",
+  "name": "厚年の個人事業所の5人",
+  "reading": "こうねんのこじんじぎょうしょのごにん",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖐",
+  "mapNode": "kosei:tekiyo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kyoseitekiyo",
+   "ks-niniteki"
+  ],
+  "description": "⚠️ 法人は 常時 従業員を 使えば 人数に かかわらず 強制適用ですが、個人の 事業所は 法定の 業種で 常時 5人 以上の とき だけ です。それ 以外は 任意適用に なります。"
+ },
+ {
+  "id": "ks-tandoku",
+  "name": "厚年の任意単独被保険者",
+  "reading": "こうねんのにんいたんどくひほけんしゃ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hihokensha",
+   "ks-koreinini"
+  ],
+  "description": "適用事業所 以外で 使われる 70歳 未満の 人が、大臣の 認可を 受けて 1人だけ 被保険者に なる しくみです。⚠️ 認可を 受ける には 事業主の 同意が いります。"
+ },
+ {
+  "id": "ks-koreinini",
+  "name": "厚年の高齢任意加入被保険者",
+  "reading": "こうねんのこうれいにんいかにゅうひほけんしゃ",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👴",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-nanajuijo",
+   "ks-tandoku"
+  ],
+  "description": "70歳 以上で 働いて いても、老齢の 年金の 受給権が ない 人は、申し出て 厚生年金に 入れます。年金の 受給資格期間を 満たす ための しくみです。"
+ },
+ {
+  "id": "ks-jogai",
+  "name": "厚年の適用除外",
+  "reading": "こうねんのてきようじょがい",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hihokensha",
+   "ks-dogetsu"
+  ],
+  "description": "日々 雇われる 人(1か月を こえたら 加入)・2か月 以内の 期間で 雇われる 人・季節的な 仕事で 4か月 以内・臨時の 事業で 6か月 以内 の 人 などは 被保険者に なりません。"
+ },
+ {
+  "id": "ks-dogetsu",
+  "name": "厚年の同月得喪",
+  "reading": "こうねんのどうげつとくそう",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kikan",
+   "ks-jogai"
+  ],
+  "description": "同じ 月に 資格を 取って なくした ときは、その 月を 1か月 と 数えます。⚠️ ただし その 月に また 厚生年金か 国民年金(第2号を 除く)の 資格を 取ったら 数えません。"
+ },
+ {
+  "id": "ks-nanajuijo",
+  "name": "70歳以上の使用される者",
+  "reading": "ななじゅっさいいじょうのしようされるもの",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "kosei:hihokensha",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-nanajusai",
+   "ks-zairo"
+  ],
+  "description": "70歳を こえて 適用事業所で 働く 人は 被保険者では ないので 保険料は ありませんが、事業主は 届出を します。⚠️ 在職老齢年金の しくみは かかります。",
+  "acceptedReadings": [
+   "ななじゅっさいいじょうのしようされるもの",
+   "ななじっさいいじょうのしようされるもの"
+  ]
+ },
+ {
+  "id": "ks-kibo",
+  "name": "厚年の企業規模要件",
+  "reading": "こうねんのきぎょうきぼようけん",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "kosei:tanjikan",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-tokuteitekiyo",
+   "ks-tanjikan"
+  ],
+  "description": "いまは 被保険者 51人 以上の 企業で 短時間労働者が 入ります。2027年10月 から 36人 以上、2029年10月 から 21人 以上 と 段階的に 広がり、2035年10月に なくなります。"
+ },
+ {
+  "id": "ks-shu20",
+  "name": "厚年の週20時間",
+  "reading": "こうねんのしゅうにじゅうじかん",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "kosei:tanjikan",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-tanjikan",
+   "ks-gakusei"
+  ],
+  "description": "短時間労働者が 入るのは 週の 所定労働時間が 20時間 以上の とき です。⚠️ 月 8.8万円の 賃金の 要件は 2026年10月 から なくなりました。",
+  "acceptedReadings": [
+   "こうねんのしゅうにじゅうじかん",
+   "こうねんのしゅうにじっかん",
+   "こうねんのしゅうにじゅっかん"
+  ]
+ },
+ {
+  "id": "ks-gakusei",
+  "name": "厚年の学生の適用除外",
+  "reading": "こうねんのがくせいのてきようじょがい",
+  "journey": "kosei",
+  "category": "加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "kosei:tanjikan",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-shu20",
+   "ks-tanjikan"
+  ],
+  "description": "4分の3 未満で 働く 短時間労働者のうち、学生 などは 週 20時間 以上でも 被保険者に なりません。⚠️ 4分の3 以上 働く 学生は ふつうに 入ります。"
+ },
+ {
+  "id": "ks-chosei",
+  "name": "保険料調整制度",
+  "reading": "ほけんりょうちょうせいせいど",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kosei:tanjikan",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kibo",
+   "ks-seppan"
+  ],
+  "description": "令和8年10月 以降に 新しく 適用に なった 事業所 などで、短時間労働者の 保険料の 本人負担を 軽く する しくみです。新しく 入る 人の 手取りが 急に へらない ように します。"
+ },
+ {
+  "id": "ks-sanjuni",
+  "name": "厚年の32等級",
+  "reading": "こうねんのさんじゅうにとうきゅう",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "kosei:hyojun",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-hyojungetsugaku",
+   "ks-toukyutsuika"
+  ],
+  "description": "⚠️ 厚生年金は 32等級(上限 65万円)、健康保険は 50等級(上限 139万円)です。2027年9月 から 68万円・33等級 へと 上限を 段階的に 上げる 予定です。"
+ },
+ {
+  "id": "ks-toukyutsuika",
+  "name": "厚年の等級の追加",
+  "reading": "こうねんのとうきゅうのついか",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "kosei:hyojun",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-sanjuni",
+   "ks-hyojungetsugaku"
+  ],
+  "description": "全被保険者の 標準報酬月額の 平均の 200% が 最高等級を こえる 状態が 続く とき、その 年の 9月1日 から 政令で 上に 等級を 足せます。32級も この 政令で できました。"
+ },
+ {
+  "id": "ks-ikukyushuryo",
+  "name": "厚年の育児休業等終了時改定",
+  "reading": "こうねんのいくじきゅうぎょうとうしゅうりょうじかいてい",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👶",
+  "mapNode": "kosei:hyojun",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-zuiji",
+   "ks-yoiku"
+  ],
+  "description": "育児休業 などを 終えて 3歳 未満の 子を 育てる 人が 申し出れば、終えた 後 3か月の 報酬で 標準報酬月額を 改定します。⚠️ 随時改定の「著しい 変動」の 条件は ありません。"
+ },
+ {
+  "id": "ks-yoiku",
+  "name": "養育期間の標準報酬月額の特例",
+  "reading": "よういくきかんのひょうじゅんほうしゅうげつがくのとくれい",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧸",
+  "mapNode": "kosei:hyojun",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-ikukyushuryo",
+   "ks-heikin"
+  ],
+  "description": "3歳 未満の 子を 育てて 標準報酬月額が 下がっても、申し出れば 年金額は 前の 高い 額で 計算します。⚠️ 保険料は 下がった 額の まま で、年金だけ 守られます。"
+ },
+ {
+  "id": "ks-kisotokosei",
+  "name": "老齢厚生年金と老齢基礎年金",
+  "reading": "ろうれいこうせいねんきんとろうれいきそねんきん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-nikai",
+   "ks-keikateki"
+  ],
+  "description": "1階の 老齢基礎年金は 国民年金から、2階の 老齢厚生年金は 厚生年金から 出ます。⚠️ 会社員の 期間は 両方に 数えられ、65歳 から 2つ セットで もらいます。"
+ },
+ {
+  "id": "ks-keikateki",
+  "name": "経過的加算",
+  "reading": "けいかてきかさん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-teigaku",
+   "ks-kisotokosei"
+  ],
+  "description": "定額部分に あたる 額が 65歳 からの 老齢基礎年金より 多い とき、その 差を 老齢厚生年金に 足す ものです。20歳 前や 60歳 以後の 加入期間が ある 人に 出ます。"
+ },
+ {
+  "id": "ks-jojo",
+  "name": "厚年の給付乗率",
+  "reading": "こうねんのきゅうふじょうりつ",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✖️",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-heikin",
+   "ks-hoshuhirei"
+  ],
+  "description": "報酬比例部分の 計算で かける 率で、平成15年4月 以後の 期間は 1000分の5.481、平成15年3月 までの 期間は 1000分の7.125 です。賞与を 入れる かで 率が ちがいます。"
+ },
+ {
+  "id": "ks-heikin",
+  "name": "平均標準報酬額",
+  "reading": "へいきんひょうじゅんほうしゅうがく",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-jojo",
+   "ks-hoshuhirei"
+  ],
+  "description": "⚠️ 平成15年4月 以後は 賞与も 入れた「平均標準報酬額」、それより 前は 月給だけの「平均標準報酬月額」で 計算します。どちらも 今の 価値に 直した 額です。"
+ },
+ {
+  "id": "ks-haigushateishi",
+  "name": "配偶者の加給年金額の停止",
+  "reading": "はいぐうしゃのかきゅうねんきんがくのていし",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏸",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kakyu",
+   "ks-tokubetsukasan"
+  ],
+  "description": "配偶者が 被保険者期間 20年 以上の 老齢厚生年金の 受給権を 持つ と、配偶者の 加給年金額は 止まります。⚠️ 令和4年4月 から、実際に もらって いなくても 止まります。"
+ },
+ {
+  "id": "ks-tokubetsukasan",
+  "name": "加給年金額の特別加算",
+  "reading": "かきゅうねんきんがくのとくべつかさん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌟",
+  "mapNode": "kosei:rorei",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kakyu",
+   "ks-haigushateishi"
+  ],
+  "description": "配偶者の 加給年金額には 生年月日に 応じた 特別加算が つき、令和8年度は 合わせて 最大 423,700円 です。⚠️ 子の 加給年金額には つきません。"
+ },
+ {
+  "id": "ks-kaishinenrei",
+  "name": "支給開始年齢の引上げ",
+  "reading": "しきゅうかいしねんれいのひきあげ",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "kosei:tokubetsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-joshi5nen",
+   "ks-tokubetsushikyu"
+  ],
+  "description": "特別支給の 報酬比例部分は、男性で 昭和28年4月2日〜30年4月1日 生まれが 61歳、… 昭和36年4月1日 生まれ までが 64歳 です。昭和36年4月2日 以後 生まれは ありません。"
+ },
+ {
+  "id": "ks-joshi5nen",
+  "name": "厚年の女子の5年おくれ",
+  "reading": "こうねんのじょしのごねんおくれ",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "kosei:tokubetsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kaishinenrei",
+   "ks-tokubetsushikyu"
+  ],
+  "description": "第1号厚生年金被保険者の 女性は、特別支給の 開始年齢が 男性より 5年 おくれて 上がります。⚠️ 昭和41年4月2日 以後 生まれで なくなります。公務員 などの 女性は 男性と 同じ です。"
+ },
+ {
+  "id": "ks-choki",
+  "name": "長期加入者の特例",
+  "reading": "ちょうきかにゅうしゃのとくれい",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏅",
+  "mapNode": "kosei:tokubetsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-teigaku",
+   "ks-shogaishatokurei"
+  ],
+  "description": "厚生年金の 加入が 44年 以上の 人は、被保険者で ない とき、特別支給の 開始年齢から 報酬比例部分と 定額部分を あわせて もらえます。⚠️ 種類ごとに 単独で 44年 が いります。"
+ },
+ {
+  "id": "ks-shogaishatokurei",
+  "name": "障害者特例",
+  "reading": "しょうがいしゃとくれい",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "♿",
+  "mapNode": "kosei:tokubetsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-choki",
+   "ks-sankyu"
+  ],
+  "description": "特別支給の 年齢の 人が 障害等級 1級〜3級の 状態で、被保険者で ない とき 請求すれば、定額部分も もらえます。⚠️ 請求した 月の 翌月分 から です。"
+ },
+ {
+  "id": "ks-chouseigaku",
+  "name": "支給停止調整額",
+  "reading": "しきゅうていしちょうせいがく",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎚",
+  "mapNode": "kosei:zaishoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-zairo",
+   "ks-nibunnoichi"
+  ],
+  "description": "在職老齢年金の 基準額で、令和8年度は 65万円(令和7年度は 51万円)です。法律の 額は 62万円で、賃金の 変動に 合わせて 毎年度 見なおします。"
+ },
+ {
+  "id": "ks-kihongetsugaku",
+  "name": "基本月額",
+  "reading": "きほんげつがく",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "kosei:zaishoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-sohoshu",
+   "ks-chouseigaku"
+  ],
+  "description": "在職老齢年金で 使う 年金の 月額で、加給年金額を 除いた 老齢厚生年金(報酬比例部分)の 12分の1 です。⚠️ 老齢基礎年金は 入りません。"
+ },
+ {
+  "id": "ks-nibunnoichi",
+  "name": "在職老齢年金の2分の1",
+  "reading": "ざいしょくろうれいねんきんのにぶんのいち",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➗",
+  "mapNode": "kosei:zaishoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-chouseigaku",
+   "ks-zengaku"
+  ],
+  "description": "基本月額と 総報酬月額相当額の 合計が 支給停止調整額を こえた とき、こえた ぶんの 2分の1 が 止まります。こえた ぶん 全部では ありません。"
+ },
+ {
+  "id": "ks-zengaku",
+  "name": "在職老齢年金で止まらないもの",
+  "reading": "ざいしょくろうれいねんきんでとまらないもの",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "kosei:zaishoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-nibunnoichi",
+   "ks-keikateki"
+  ],
+  "description": "⚠️ 在職老齢年金で 止まるのは 老齢厚生年金(全部 止まる ときは 加給年金額も)。老齢基礎年金・繰下げ加算額・65歳 以後の 経過的加算は 全額 出ます。"
+ },
+ {
+  "id": "ks-sankyu",
+  "name": "障害厚生年金の3級",
+  "reading": "しょうがいこうせいねんきんのさんきゅう",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "3️⃣",
+  "mapNode": "kosei:shogai",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-saitei",
+   "ks-teatekin"
+  ],
+  "description": "⚠️ 障害基礎年金は 1級・2級 だけ ですが、障害厚生年金には 3級が あります。3級は 厚生年金だけの 年金で、配偶者の 加給年金額は つきません。"
+ },
+ {
+  "id": "ks-saitei",
+  "name": "障害厚生年金の最低保障額",
+  "reading": "しょうがいこうせいねんきんのさいていほしょうがく",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "kosei:shogai",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-sankyu",
+   "ks-sanbyaku"
+  ],
+  "description": "障害基礎年金が 出ない 3級 などでは、障害基礎年金の 額の 4分の3 が 最低の 額です。令和8年度は 635,500円 です。"
+ },
+ {
+  "id": "ks-sanbyaku",
+  "name": "障害厚生年金の300月",
+  "reading": "しょうがいこうせいねんきんのさんびゃくつき",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💯",
+  "mapNode": "kosei:shogai",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-saitei",
+   "ks-ikkyu"
+  ],
+  "description": "障害厚生年金は、加入の 月数が 300月(25年)より 少なくても 300月 と みなして 計算します。若い ときの 障害でも 額が 少なく なりすぎない ように する ためです。",
+  "acceptedReadings": [
+   "しょうがいこうせいねんきんのさんびゃくつき",
+   "しょうがいこうせいねんきんのさんびゃくげつ"
+  ]
+ },
+ {
+  "id": "ks-ikkyu",
+  "name": "障害厚生年金の1級",
+  "reading": "しょうがいこうせいねんきんのいっきゅう",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "kosei:shogai",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-sanbyaku",
+   "ks-sankyu"
+  ],
+  "description": "1級は 報酬比例の 計算の 100分の125、2級と 3級は 100分の100 です。1級・2級 には 障害基礎年金も あわせて 出て、配偶者の 加給年金額も つきます。"
+ },
+ {
+  "id": "ks-jigojusho",
+  "name": "厚年の事後重症",
+  "reading": "こうねんのじごじゅうしょう",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "kosei:shogai",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-ninteibi",
+   "ks-shogai"
+  ],
+  "description": "障害認定日には 等級に 当たらなくても、その 後 65歳に なる 日の 前日 までに 重く なれば、その 間に 請求して 障害厚生年金を もらえます。請求した 月の 翌月分 から です。"
+ },
+ {
+  "id": "ks-yonbun",
+  "name": "遺族厚生年金の4分の3",
+  "reading": "いぞくこうせいねんきんのよんぶんのさん",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥧",
+  "mapNode": "kosei:izoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-izoku",
+   "ks-tanki"
+  ],
+  "description": "遺族厚生年金の 額は、亡くなった 人の 報酬比例の 計算の 4分の3 です。⚠️ 3分の2 や 2分の1 と まちがえ やすい 数字です。"
+ },
+ {
+  "id": "ks-tanki",
+  "name": "短期要件と長期要件",
+  "reading": "たんきようけんとちょうきようけん",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kosei:izoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-yonbun",
+   "ks-chukorei"
+  ],
+  "description": "被保険者が 亡くなった ときなどは 短期要件で、300月 みなしが あり 保険料納付要件(3分の2)を 見ます。受給資格期間 25年 以上の 人は 長期要件で、実際の 月数で 計算します。"
+ },
+ {
+  "id": "ks-chukorei",
+  "name": "中高齢寡婦加算",
+  "reading": "ちゅうこうれいかふかさん",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌸",
+  "mapNode": "kosei:izoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-tanki",
+   "ks-otto55"
+  ],
+  "description": "夫が 亡くなった とき 40歳 以上 65歳 未満 などの 妻に、65歳 まで 足される 額で、令和8年度は 635,500円 です。⚠️ 遺族基礎年金を もらう 間は 止まり、長期要件は 240月 以上が いります。"
+ },
+ {
+  "id": "ks-otto55",
+  "name": "遺族厚生年金の夫の55歳",
+  "reading": "いぞくこうせいねんきんのおっとのごじゅうごさい",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👨",
+  "mapNode": "kosei:izoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-izokuhani",
+   "ks-wakai"
+  ],
+  "description": "⚠️ 妻は 年齢の 要件が ありませんが、夫・父母・祖父母は 55歳 以上で 遺族に なり、60歳 まで 止まります(夫が 遺族基礎年金を もらう ときは 除く)。2028年4月 から 見なおされます。"
+ },
+ {
+  "id": "ks-wakai",
+  "name": "30歳未満の妻の5年",
+  "reading": "さんじゅっさいみまんのつまのごねん",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏲",
+  "mapNode": "kosei:izoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-otto55",
+   "ks-chukorei"
+  ],
+  "description": "夫が 亡くなった とき 30歳 未満で 子が いない 妻の 遺族厚生年金は、5年で 終わります。⚠️ 子が いて 遺族基礎年金を もらう 妻は、30歳 前に それが なくなった とき から 5年 です。",
+  "acceptedReadings": [
+   "さんじゅっさいみまんのつまのごねん",
+   "さんじっさいみまんのつまのごねん"
+  ]
+ },
+ {
+  "id": "ks-rokujugochosei",
+  "name": "65歳からの遺族厚生年金の調整",
+  "reading": "ろくじゅうごさいからのいぞくこうせいねんきんのちょうせい",
+  "journey": "kosei",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kosei:izoku",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-yonbun",
+   "ks-rorei"
+  ],
+  "description": "65歳 以上で 自分の 老齢厚生年金が ある 人は、まず 自分の 年金を もらい、遺族厚生年金は その 額に あたる ぶんが 止まります。差の ぶんだけ 遺族厚生年金が 出ます。"
+ },
+ {
+  "id": "ks-seikyukigen",
+  "name": "年金分割の請求期限",
+  "reading": "ねんきんぶんかつのせいきゅうきげん",
+  "journey": "kosei",
+  "category": "分割・手続",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "kosei:bunkatsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-goi",
+   "ks-sangobunkatsu"
+  ],
+  "description": "合意分割も 3号分割も、離婚した 日の 翌日 から 5年 以内に 請求します。⚠️ 2026年4月1日 から 2年 → 5年に のびました。"
+ },
+ {
+  "id": "ks-anbun",
+  "name": "按分割合",
+  "reading": "あんぶんわりあい",
+  "journey": "kosei",
+  "category": "分割・手続",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kosei:bunkatsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-goi",
+   "ks-goitosango"
+  ],
+  "description": "合意分割で 決める 分ける 割合で、2人の 標準報酬の 合計に しめる 少ない ほうの 割合を こえ、2分の1 以下の 範囲で 決めます。⚠️ 2分の1を こえては 決められません。"
+ },
+ {
+  "id": "ks-goitosango",
+  "name": "合意分割と3号分割",
+  "reading": "ごういぶんかつとさんごうぶんかつ",
+  "journey": "kosei",
+  "category": "分割・手続",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🆚",
+  "mapNode": "kosei:bunkatsu",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-goi",
+   "ks-sangobunkatsu"
+  ],
+  "description": "⚠️ 合意分割は 2人の 合意(か 家庭裁判所)で 2分の1 以下の 割合。3号分割は 第3号被保険者 だった 期間を 合意 なしで 必ず 2分の1。どちらも 請求は 5年 以内 です。"
+ },
+ {
+  "id": "ks-genngakuritsu",
+  "name": "厚年の繰上げの減額率",
+  "reading": "こうねんのくりあげのげんがくりつ",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "kosei:kuriage",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kuriage",
+   "ks-zogakuritsu"
+  ],
+  "description": "繰上げは 1か月 0.4% 減って、60歳 なら 最大 24% 減ります。⚠️ 昭和37年4月1日 以前 生まれは 1か月 0.5%(最大 30%)です。"
+ },
+ {
+  "id": "ks-zogakuritsu",
+  "name": "厚年の繰下げの増額率",
+  "reading": "こうねんのくりさげのぞうがくりつ",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "kosei:kuriage",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kurisage",
+   "ks-jogen75"
+  ],
+  "description": "繰下げは 1か月 0.7% 増えて、70歳 なら 42%、75歳 なら 最大 84% 増えます。⚠️ 繰上げの 0.4% と 数字を 取りちがえ ないように。加給年金額は 増えません。"
+ },
+ {
+  "id": "ks-jogen75",
+  "name": "厚年の繰下げの上限",
+  "reading": "こうねんのくりさげのじょうげん",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔚",
+  "mapNode": "kosei:kuriage",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-zogakuritsu",
+   "ks-minashi"
+  ],
+  "description": "繰下げで 数える 月数は 120か月(75歳)まで です。75歳を すぎて 申し出ても 率は ふえません。⚠️ 昭和27年4月1日 以前 生まれは 70歳 まで です。"
+ },
+ {
+  "id": "ks-dojikuriage",
+  "name": "厚年の繰上げは基礎と同時",
+  "reading": "こうねんのくりあげはきそとどうじ",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👯",
+  "mapNode": "kosei:kuriage",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-kuriage",
+   "ks-kurisage"
+  ],
+  "description": "⚠️ 繰上げは 老齢基礎年金と 老齢厚生年金を 同時に 請求します。繰下げは どちらか 片方だけ でも できる ので、ここが 大きな ちがい です。"
+ },
+ {
+  "id": "ks-minashi",
+  "name": "特例的な繰下げみなし増額",
+  "reading": "とくれいてきなくりさげみなしぞうがく",
+  "journey": "kosei",
+  "category": "老齢",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔙",
+  "mapNode": "kosei:kuriage",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-jogen75",
+   "ks-kurisage"
+  ],
+  "description": "70歳を すぎてから 繰下げを やめて さかのぼって もらう とき、請求の 5年 前に 繰下げを 申し出た もの と みなし、増えた 額の 5年 ぶんを まとめて もらえます。"
+ },
+ {
+  "id": "ks-ritsu",
+  "name": "厚年の保険料率",
+  "reading": "こうねんのほけんりょうりつ",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-seppan",
+   "ks-sanjuni"
+  ],
+  "description": "厚生年金の 保険料率は 1000分の183(18.3%)で、平成29年9月 から 固定です。本人と 会社で 半分ずつ なので、本人の 負担は 9.15% です。令和8年度も 同じ です。"
+ },
+ {
+  "id": "ks-jiko",
+  "name": "厚年の時効",
+  "reading": "こうねんのじこう",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-ritsu",
+   "ks-shinsa"
+  ],
+  "description": "⚠️ 保険料を 集める・返して もらう 権利は 2年、年金などの 保険給付を 受ける 権利は 5年で 時効に なります。2年 と 5年を 取りちがえ ないように します。"
+ },
+ {
+  "id": "ks-ikukyumenjo",
+  "name": "厚年の育児休業等の保険料免除",
+  "reading": "こうねんのいくじきゅうぎょうとうのほけんりょうめんじょ",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍼",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-sanzenmenjo",
+   "ks-yoiku"
+  ],
+  "description": "育児休業 などの 間は、事業主が 申し出れば 本人分も 会社分も 保険料が かかりません。⚠️ 始めた 月と 終わる 日の 翌日の 月が 同じ ときは、その 月に 14日 以上 休めば 免除です。"
+ },
+ {
+  "id": "ks-sanzenmenjo",
+  "name": "厚年の産前産後休業の保険料免除",
+  "reading": "こうねんのさんぜんさんごきゅうぎょうのほけんりょうめんじょ",
+  "journey": "kosei",
+  "category": "標準報酬・保険料",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤰",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-ikukyumenjo",
+   "ks-seppan"
+  ],
+  "description": "産前産後休業の 間も、事業主が 申し出れば 保険料が 免除 されます。始めた 月 から 終わる 日の 翌日が ある 月の 前の 月 まで が 免除の 期間です。"
+ },
+ {
+  "id": "ks-shinsa",
+  "name": "厚年の審査請求",
+  "reading": "こうねんのしんさせいきゅう",
+  "journey": "kosei",
+  "category": "分割・手続",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍⚖️",
+  "mapNode": "kosei:hokenryo",
+  "field": "厚年法",
+  "ruleset": "厚年",
+  "relatedTerms": [
+   "ks-jiko",
+   "ks-ritsu"
+  ],
+  "description": "資格・標準報酬・保険給付の 処分に 不服なら 社会保険審査官 → 社会保険審査会の 2段階です。⚠️ 保険料の 処分は いきなり 社会保険審査会へ 審査請求します。"
+ }
+]

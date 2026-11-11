@@ -36,7 +36,11 @@ def load():
     have = []
     for J in d["meta"]["journeys"]:
         f = HERE / f"terms-{J['id']}.json"
-        if f.exists(): d["terms"] += json.loads(f.read_text(encoding="utf-8")); have.append(J["id"])
+        if not f.exists(): continue
+        try: d["terms"] += json.loads(f.read_text(encoding="utf-8")); have.append(J["id"])
+        except json.JSONDecodeError as e:  # ほかの 係が 書いて いる とちゅう(--check の ときだけ とばす)
+            if "--check" not in sys.argv: raise
+            print("⚠️", f.name, "は 読めない(書きかけ?)ので とばした:", e)
     d["meta"]["journeys"] = [J for J in d["meta"]["journeys"] if J["id"] in have]  # まだ 作っていない 旅は 出さない
     d["meta"]["diagrams"] = {k: v for k, v in d["meta"]["diagrams"].items() if k in have}
     return d

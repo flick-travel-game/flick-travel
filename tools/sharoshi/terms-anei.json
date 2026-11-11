@@ -1080,24 +1080,6 @@
   "description": "医師でも、法人の 代表者・事業を 営む 個人・事業の 実施を 統括管理する 人は、その 事業場の 産業医に 選べません。会社から 独立して 意見が 言える ように する ためです。"
  },
  {
-  "id": "an-sangyoijoho",
-  "name": "産業医への情報提供",
-  "reading": "さんぎょういへのじょうほうていきょう",
-  "journey": "anei",
-  "category": "管理体制",
-  "difficulty": 3,
-  "type": "concept",
-  "emoji": "📊",
-  "mapNode": "anei:sangyoi",
-  "field": "安衛法",
-  "ruleset": "労基・安衛",
-  "relatedTerms": [
-   "an-sangyoi",
-   "an-tsuki80"
-  ],
-  "description": "産業医を 選んだ 事業者は、長く 働いた 人の 労働時間 など、健康管理に 必要な 情報を 産業医に 提供します。"
- },
- {
   "id": "an-sangyoijinin",
   "name": "産業医の辞任の報告",
   "reading": "さんぎょういのじにんのほうこく",
@@ -1147,27 +1129,9 @@
   "ruleset": "労基・安衛",
   "relatedTerms": [
    "an-suishinsha",
-   "an-suishinsenzoku"
+   "an-suishinkeiji"
   ],
   "description": "推進者は、都道府県労働局長の 登録を 受けた 人が 行う 講習を 修了した 人 などから 選びます。免許は いりません。"
- },
- {
-  "id": "an-suishinsenzoku",
-  "name": "推進者の専属",
-  "reading": "すいしんしゃのせんぞく",
-  "journey": "anei",
-  "category": "管理体制",
-  "difficulty": 3,
-  "type": "concept",
-  "emoji": "🏠",
-  "mapNode": "anei:suishin",
-  "field": "安衛則",
-  "ruleset": "労基・安衛",
-  "relatedTerms": [
-   "an-suishinkoshu",
-   "an-eiseisuishin"
-  ],
-  "description": "推進者は 原則 その 事業場に 専属の 人を 選びます。労働安全コンサルタント・労働衛生コンサルタント などから 選ぶ ときは 専属で なくて よい 例外が あります。"
  },
  {
   "id": "an-ikennokikai",
@@ -1365,7 +1329,7 @@
    "an-shugyoseigen",
    "an-tokubetsukyoiku"
   ],
-  "description": "つり上げ荷重 5トン以上の クレーンの 運転は、免許を 受けた 人で なければ できません。⚠️ 5トン未満の クレーンの 運転は 特別教育で よい 業務です。"
+  "description": "つり上げ荷重 5トン以上の クレーンの 運転は 就業制限の 業務で、原則 免許が いります(床上操作式は 技能講習でも よい)。⚠️ 5トン未満の クレーンの 運転は 特別教育で よい 業務です。"
  },
  {
   "id": "an-forklift",
@@ -1779,7 +1743,7 @@
    "an-bassoku",
    "an-jigyosha"
   ],
-  "description": "社員 などが 会社の 業務で 違反を したとき、違反した 本人だけで なく、会社(法人) にも 罰金刑を 科す 決まりです。"
+  "description": "社員 などが 会社の 業務で 違反を したとき、違反した 本人だけで なく、会社(法人)にも 罰金刑を 科す 決まりです。"
  },
  {
   "id": "an-kaizenkeikaku",
@@ -1815,7 +1779,7 @@
    "an-rodosaigai",
    "an-kenshinhokoku"
   ],
-  "description": "労働災害で 働く 人が 亡くなった り 休業した ときに 監督署長に 出す 報告です。4日以上の 休業は 遅滞なく、⚠️ 4日未満は 3か月ごとに まとめて 翌月末までに 出します。"
+  "description": "労働災害で 働く 人が 亡くなったり 休業した ときに 監督署長に 出す 報告です。4日以上の 休業は 遅滞なく、⚠️ 4日未満は 3か月ごとに まとめて 翌月末までに 出します。"
  },
  {
   "id": "an-necchusho",

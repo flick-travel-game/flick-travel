@@ -1,0 +1,1799 @@
+[
+ {
+  "id": "rs-rosaihoken",
+  "name": "労災保険",
+  "reading": "ろうさいほけん",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏥",
+  "mapNode": "rosai:tekiyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-rosaiho",
+   "rs-gyomusaigai"
+  ],
+  "description": "仕事中や 通勤中の けが・病気などに 備える 国の 保険です。労働者を 1人でも 使う 事業は 原則 適用事業に なります。正式な 名前は 労働者災害補償保険です。"
+ },
+ {
+  "id": "rs-rosaiho",
+  "name": "労働者災害補償保険法",
+  "reading": "ろうどうしゃさいがいほしょうほけんほう",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "rosai:tekiyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-rosaihoken",
+   "rs-hokenkyufu"
+  ],
+  "description": "労災保険の しくみを 決めた 法律で、社労士試験では 労災法と 略します。業務災害・複数業務要因災害・通勤災害・二次健康診断等給付の 4つの 保険給付を 定めて います。"
+ },
+ {
+  "id": "rs-gyomusaigai",
+  "name": "業務災害",
+  "reading": "ぎょうむさいがい",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "rosai:gyomu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tsukinsaigai",
+   "rs-gyomu7"
+  ],
+  "description": "仕事が もとで 起きた けが・病気・障害、亡くなる ことです。業務災害の 給付には「療養補償給付」の ように「補償」の 字が つきます。"
+ },
+ {
+  "id": "rs-tsukinsaigai",
+  "name": "通勤災害",
+  "reading": "つうきんさいがい",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚃",
+  "mapNode": "rosai:tsukin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-gyomusaigai",
+   "rs-tsukin7"
+  ],
+  "description": "通勤の とちゅうで 起きた けがや 病気などです。通勤災害の 給付は「療養給付」「休業給付」の ように「補償」の 字が つきません。"
+ },
+ {
+  "id": "rs-ryoyohosho",
+  "name": "療養補償給付",
+  "reading": "りょうようほしょうきゅうふ",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-ryoyonokyufu",
+   "rs-kyugyohosho"
+  ],
+  "description": "業務災害の けがや 病気を 治す ための 給付です。原則は お金では なく、診察・薬・手術・入院などの 治療 そのもの(療養の 給付)で 受けます。"
+ },
+ {
+  "id": "rs-kyugyohosho",
+  "name": "休業補償給付",
+  "reading": "きゅうぎょうほしょうきゅうふ",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🛌",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-taiki",
+   "rs-kyugyotokushi"
+  ],
+  "description": "業務災害で 療養の ため 働けず、賃金を 受けない 日の 4日目から 出る 給付です。額は 1日 給付基礎日額の 60%です。"
+ },
+ {
+  "id": "rs-shogaihosho",
+  "name": "障害補償給付",
+  "reading": "しょうがいほしょうきゅうふ",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🦽",
+  "mapNode": "rosai:shogai",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shogainenkin",
+   "rs-shogaiichijikin"
+  ],
+  "description": "業務災害の けがや 病気が 治った あとに 障害が 残った ときの 給付です。障害等級 1〜7級は 年金、8〜14級は 一時金です。"
+ },
+ {
+  "id": "rs-izokuhosho",
+  "name": "遺族補償給付",
+  "reading": "いぞくほしょうきゅうふ",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🕊",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-izokunenkin",
+   "rs-izokuichiji"
+  ],
+  "description": "業務災害で 労働者が 亡くなった とき、遺族に 出る 給付です。遺族補償年金と 遺族補償一時金の 2つが あります。"
+ },
+ {
+  "id": "rs-sosairyo",
+  "name": "葬祭料",
+  "reading": "そうさいりょう",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💐",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-sosaigaku",
+   "rs-izokuhosho"
+  ],
+  "description": "業務災害で 亡くなった 人の 葬祭を 行う 人に 出る 給付です。通勤災害では 同じ 給付を「葬祭給付」と 呼びます。"
+ },
+ {
+  "id": "rs-kaigohosho",
+  "name": "介護補償給付",
+  "reading": "かいごほしょうきゅうふ",
+  "journey": "rosai",
+  "category": "傷病・介護",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "rosai:shobyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kaigotaisho",
+   "rs-shobyonenkin"
+  ],
+  "description": "障害補償年金 または 傷病補償年金を 受ける 人が、重い 障害の ため 介護を 受けて いる ときの 給付です。月を 単位に、請求に もとづいて 出ます。"
+ },
+ {
+  "id": "rs-tokubetsukanyu",
+  "name": "特別加入",
+  "reading": "とくべつかにゅう",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧑‍🔧",
+  "mapNode": "rosai:tokubetsu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-hitorioyakata",
+   "rs-chusho"
+  ],
+  "description": "労働者では ない 中小事業主・一人親方・海外派遣者なども、申請して 政府の 承認を 受ければ 労災保険に 入れる しくみです。"
+ },
+ {
+  "id": "rs-hitorioyakata",
+  "name": "一人親方",
+  "reading": "ひとりおやかた",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔨",
+  "mapNode": "rosai:tokubetsu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tokubetsukanyu",
+   "rs-hitorioyakatatsukin"
+  ],
+  "description": "労働者を 使わずに 1人で 仕事を する 大工さんや 個人タクシーの 運転手などです。団体を 通じて 特別加入すると 労災保険の 給付を 受けられます。"
+ },
+ {
+  "id": "rs-kyufukiso",
+  "name": "給付基礎日額",
+  "reading": "きゅうふきそにちがく",
+  "journey": "rosai",
+  "category": "給付基礎日額",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "rosai:kisonichigaku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-vsheikin",
+   "rs-santeijiyu"
+  ],
+  "description": "労災の 給付の 額を 計算する もとに なる 1日あたりの 額です。原則として 労働基準法の 平均賃金に 相当する 額です。"
+ },
+ {
+  "id": "rs-nijikenshin",
+  "name": "二次健康診断等給付",
+  "reading": "にじけんこうしんだんとうきゅうふ",
+  "journey": "rosai",
+  "category": "二次健診",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🩺",
+  "mapNode": "rosai:nijikenshin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-ichijikenshin",
+   "rs-hokenshido"
+  ],
+  "description": "会社の 健康診断で 血圧・血中脂質・血糖・腹囲などの 項目 すべてに 異常が 見つかった 人が、脳や 心臓の 病気を 予防する ために 受けられる 健診と 保健指導です。"
+ },
+ {
+  "id": "rs-rosaijiko",
+  "name": "労災の時効",
+  "reading": "ろうさいのじこう",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-jiko5",
+   "rs-tokushikigen"
+  ],
+  "description": "労災の 給付を 請求できる 期間です。療養・休業・葬祭・介護の 給付は 2年、障害・遺族の 給付は 5年で 時効に なります。"
+ },
+ {
+  "id": "rs-tekiyojigyo",
+  "name": "労災の適用事業",
+  "reading": "ろうさいのてきようじぎょう",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "rosai:tekiyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kunichokuei",
+   "rs-zantei"
+  ],
+  "description": "労働者を 使用する 事業は、人数に 関係なく 労災保険の 適用事業です。ただし 国の 直営事業と 官公署の 事業(一部を 除く)には 適用されません。"
+ },
+ {
+  "id": "rs-zantei",
+  "name": "暫定任意適用事業",
+  "reading": "ざんていにんいてきようじぎょう",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "rosai:tekiyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-zanteishinsei",
+   "rs-zanteidattai"
+  ],
+  "description": "個人経営で 常時 5人未満の 労働者を 使う 農林・畜産・養蚕・水産の 事業です。加入するか どうかは、事業主の 申請と 厚生労働大臣の 認可で 決まります。"
+ },
+ {
+  "id": "rs-seiritsu",
+  "name": "労災の保険関係の成立",
+  "reading": "ろうさいのほけんかんけいのせいりつ",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "rosai:tekiyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tekiyojigyo",
+   "rs-zanteishinsei"
+  ],
+  "description": "適用事業の 労災の 保険関係は、事業が 始まった 日に 自動で 成立します。事業主は 10日以内に 成立届を 出します。暫定任意適用事業は 認可の 日に 成立します。"
+ },
+ {
+  "id": "rs-hokenkyufu",
+  "name": "労災の保険給付",
+  "reading": "ろうさいのほけんきゅうふ",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "rosai:gyomu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-gyomu7",
+   "rs-tsukin7",
+   "rs-nijidokuritsu"
+  ],
+  "description": "労災保険の 給付は、業務災害・複数業務要因災害・通勤災害に それぞれ 7種類 ずつと、二次健康診断等給付が あります。"
+ },
+ {
+  "id": "rs-daisansha",
+  "name": "第三者行為災害",
+  "reading": "だいさんしゃこういさいがい",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚗",
+  "mapNode": "rosai:gyomu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyusho",
+   "rs-kojo"
+  ],
+  "description": "交通事故など、会社や 本人 以外の 人(第三者)の 行為で 起きた 労災です。損害賠償と 労災の 給付が 二重に ならない よう 調整されます。"
+ },
+ {
+  "id": "rs-goriteki",
+  "name": "合理的な経路及び方法",
+  "reading": "ごうりてきなけいろおよびほうほう",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗺",
+  "mapNode": "rosai:tsukin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-itsudatsu",
+   "rs-tsukinsaigai"
+  ],
+  "description": "通勤と 認められる ための 条件です。住居と 就業の 場所の 往復などを、ふつう 使う 道と 手段で 行う ことが 必要です。業務の 性質が ある 移動は 通勤では ありません。"
+ },
+ {
+  "id": "rs-itsudatsu",
+  "name": "逸脱・中断",
+  "reading": "いつだつちゅうだん",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "↪️",
+  "mapNode": "rosai:tsukin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-nichijo",
+   "rs-goriteki"
+  ],
+  "description": "通勤の 道から それる こと(逸脱)と、通勤と 関係ない ことを する こと(中断)です。その 間と その あとの 移動は 通勤に なりません。"
+ },
+ {
+  "id": "rs-nichijo",
+  "name": "日常生活上必要な行為",
+  "reading": "にちじょうせいかつじょうひつようなこうい",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛒",
+  "mapNode": "rosai:tsukin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-itsudatsu",
+   "rs-goriteki"
+  ],
+  "description": "日用品の 買い物・選挙の 投票・病院での 診察などです。やむを得ず 最小限度で 行う ときは、逸脱・中断の 間を 除き、もとの 道に 戻った あとは 通勤に なります。"
+ },
+ {
+  "id": "rs-fukusurodosha",
+  "name": "複数事業労働者",
+  "reading": "ふくすうじぎょうろうどうしゃ",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "rosai:fukusu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-gassan",
+   "rs-fukusuyoin"
+  ],
+  "description": "2つ 以上の 事業で 働く 人などです。労災では 事業 ごとの 給付基礎日額を 合わせた 額で 給付を 出すので、副業を して いる 人も 守られます。"
+ },
+ {
+  "id": "rs-fukusuyoin",
+  "name": "複数業務要因災害",
+  "reading": "ふくすうぎょうむよういんさいがい",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "rosai:fukusu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-fukusurodosha",
+   "rs-fukusukyugyo"
+  ],
+  "description": "複数事業労働者の 2つ 以上の 事業の 仕事を 要因と する 病気などです。1つの 会社の 仕事だけでは 業務災害と 認められない ときも、合わせて 見て 判断します。"
+ },
+ {
+  "id": "rs-ryoyonokyufu",
+  "name": "労災の療養の給付",
+  "reading": "ろうさいのりょうようのきゅうふ",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏨",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-ryoyonohiyo",
+   "rs-ryoyohosho"
+  ],
+  "description": "治療 そのものを 受けられる 現物の 給付です。診察・薬・処置や 手術・居宅の 看護・入院と 看護・移送が 入ります。業務災害なら 一部負担金も ありません。"
+ },
+ {
+  "id": "rs-ryoyonohiyo",
+  "name": "労災の療養の費用",
+  "reading": "ろうさいのりょうようのひよう",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-ryoyonokyufu",
+   "rs-ryoyohosho"
+  ],
+  "description": "療養の 給付を 受けるのが むずかしい ときなどに、かかった 治療の 費用を お金で 受ける 方法です。療養補償給付は 療養の 給付が 原則で、こちらは 例外です。"
+ },
+ {
+  "id": "rs-kyugyotokushi",
+  "name": "休業特別支給金",
+  "reading": "きゅうぎょうとくべつしきゅうきん",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyugyohosho",
+   "rs-tokushi"
+  ],
+  "description": "休業補償給付に 上乗せして 出る お金で、1日 休業給付基礎日額の 20%です。休業補償給付の 60%と あわせて 80%に なります。ふつう 請求と 同時に 申請します。"
+ },
+ {
+  "id": "rs-taiki",
+  "name": "労災の待期",
+  "reading": "ろうさいのたいき",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏸",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-taikihosho",
+   "rs-kyugyohosho"
+  ],
+  "description": "休業(補償)給付が 出ない 最初の 3日間です。給付は 4日目から 始まります。業務災害なら この 3日間は、使用者が 労働基準法の 休業補償を 払います。"
+ },
+ {
+  "id": "rs-shogainenkin",
+  "name": "障害補償年金",
+  "reading": "しょうがいほしょうねんきん",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "rosai:shogai",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shogainissu",
+   "rs-7kyu8kyu"
+  ],
+  "description": "障害等級 1〜7級の ときに 出る 年金です。1年分は、1級が 給付基礎日額の 313日分、7級が 131日分です。"
+ },
+ {
+  "id": "rs-shogaiichijikin",
+  "name": "障害補償一時金",
+  "reading": "しょうがいほしょういちじきん",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💰",
+  "mapNode": "rosai:shogai",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-7kyu8kyu",
+   "rs-shogainenkin"
+  ],
+  "description": "障害等級 8〜14級の ときに 1回だけ 出る お金です。8級は 給付基礎日額の 503日分、14級は 56日分です。"
+ },
+ {
+  "id": "rs-shogaitokyu",
+  "name": "労災の障害等級",
+  "reading": "ろうさいのしょうがいとうきゅう",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "rosai:shogai",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shogaihosho",
+   "rs-henko"
+  ],
+  "description": "けがや 病気が 治った あとに 残った 障害の 重さを 1〜14級に 分けた ものです。1級が いちばん 重く、等級で 年金か 一時金かが 決まります。"
+ },
+ {
+  "id": "rs-izokunenkin",
+  "name": "遺族補償年金",
+  "reading": "いぞくほしょうねんきん",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-jukyushikaku",
+   "rs-izokujuni"
+  ],
+  "description": "亡くなった 労働者の 収入で 生計を 維持して いた 遺族の うち、いちばん 順位が 高い 人に 出る 年金です。額は 遺族の 人数で 変わります。"
+ },
+ {
+  "id": "rs-izokuichiji",
+  "name": "遺族補償一時金",
+  "reading": "いぞくほしょういちじきん",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✉️",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-izokunenkin",
+   "rs-izokuhosho"
+  ],
+  "description": "遺族補償年金を 受けられる 遺族が いない ときに 出る 一時金です。額は 給付基礎日額の 1,000日分です。"
+ },
+ {
+  "id": "rs-jukyushikaku",
+  "name": "遺族補償年金の受給資格者",
+  "reading": "いぞくほしょうねんきんのじゅきゅうしかくしゃ",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👨‍👩‍👧",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-izokujuni",
+   "rs-jakunen"
+  ],
+  "description": "生計維持の 配偶者・子・父母・孫・祖父母・兄弟姉妹です。妻 以外は 要件が あり、夫・父母・祖父母は 60歳以上、子・孫は 18歳の 年度末までです。2027年4月から 夫の 年齢の 要件は なくなります。"
+ },
+ {
+  "id": "rs-shobyonenkin",
+  "name": "傷病補償年金",
+  "reading": "しょうびょうほしょうねんきん",
+  "journey": "rosai",
+  "category": "傷病・介護",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛏",
+  "mapNode": "rosai:shobyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-1nen6",
+   "rs-shokken"
+  ],
+  "description": "療養を 始めて 1年6か月 たっても 治らず、障害の 程度が 傷病等級 1〜3級に あたる ときに 出る 年金です。休業補償給付から 切りかわります。"
+ },
+ {
+  "id": "rs-shobyotokyu",
+  "name": "傷病等級",
+  "reading": "しょうびょうとうきゅう",
+  "journey": "rosai",
+  "category": "傷病・介護",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "rosai:shobyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shobyonenkin",
+   "rs-shogainissu"
+  ],
+  "description": "治って いない けがや 病気の 重さの 等級で、1〜3級だけです。年金は 1級 313日・2級 277日・3級 245日分で、障害等級の 1〜3級と 同じです。"
+ },
+ {
+  "id": "rs-hokenshido",
+  "name": "二次健診の特定保健指導",
+  "reading": "にじけんしんのとくていほけんしどう",
+  "journey": "rosai",
+  "category": "二次健診",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍎",
+  "mapNode": "rosai:nijikenshin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-nijikaisu",
+   "rs-nijikenshin"
+  ],
+  "description": "二次健康診断の 結果を もとに、医師 または 保健師が 行う 食事・運動などの 指導です。二次健康診断 ごとに 1回 受けられます。"
+ },
+ {
+  "id": "rs-ichijikenshin",
+  "name": "一次健康診断の異常所見",
+  "reading": "いちじけんこうしんだんのいじょうしょけん",
+  "journey": "rosai",
+  "category": "二次健診",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "rosai:nijikenshin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-nijikenshin",
+   "rs-nijigai"
+  ],
+  "description": "二次健康診断等給付の 条件です。直近の 一次健康診断で、血圧・血中脂質・血糖・腹囲(または BMI)の すべてに 異常の 所見が ある ことが 必要です。"
+ },
+ {
+  "id": "rs-santeijiyu",
+  "name": "算定事由発生日",
+  "reading": "さんていじゆうはっせいび",
+  "journey": "rosai",
+  "category": "給付基礎日額",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "rosai:kisonichigaku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyufukiso",
+   "rs-vsheikin"
+  ],
+  "description": "給付基礎日額を 計算する 基準の 日です。けがなら 事故が 起きた 日、病気なら 診断で 病気の 発生が 確定した 日です。"
+ },
+ {
+  "id": "rs-chusho",
+  "name": "中小事業主の特別加入",
+  "reading": "ちゅうしょうじぎょうぬしのとくべつかにゅう",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏪",
+  "mapNode": "rosai:tokubetsu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-chushokibo",
+   "rs-jimuitaku"
+  ],
+  "description": "第1種の 特別加入です。中小事業主が、家族従事者など その 事業に 従事する 人を まとめて 申請し、政府の 承認を 受けます。"
+ },
+ {
+  "id": "rs-kaigaihaken",
+  "name": "海外派遣者の特別加入",
+  "reading": "かいがいはけんしゃのとくべつかにゅう",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "rosai:tokubetsu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tokubetsukanyu",
+   "rs-chusho"
+  ],
+  "description": "第3種の 特別加入です。国内の 事業主が 海外の 事業で 働かせる ために 派遣する 人などが 対象です。ひっかけ: 有期事業からの 派遣は 入れません。"
+ },
+ {
+  "id": "rs-shakaifukki",
+  "name": "社会復帰促進等事業",
+  "reading": "しゃかいふっきそくしんとうじぎょう",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tokushi",
+   "rs-kyugyotokushi"
+  ],
+  "description": "労災保険が 保険給付の ほかに 行う 事業です。社会復帰の 促進・被災労働者等の 援護・安全衛生の 確保等の 3つの 柱が あります。特別支給金も ここから 出ます。"
+ },
+ {
+  "id": "rs-tokushi",
+  "name": "特別支給金",
+  "reading": "とくべつしきゅうきん",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎁",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shakaifukki",
+   "rs-tokushikigen"
+  ],
+  "description": "社会復帰促進等事業から 保険給付に 上乗せして 出る お金です。休業・障害・遺族・傷病の 特別支給金などが あります。保険給付 そのものでは ありません。"
+ },
+ {
+  "id": "rs-shinsaseikyu",
+  "name": "労災の審査請求",
+  "reading": "ろうさいのしんさせいきゅう",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shinsakikan",
+   "rs-zenchi"
+  ],
+  "description": "労災の 給付の 決定に 不服が ある とき、労働者災害補償保険審査官に 申し立てる ことです。その 決定にも 不服なら 労働保険審査会に 再審査請求が できます。"
+ },
+ {
+  "id": "rs-kunichokuei",
+  "name": "国の直営事業の適用除外",
+  "reading": "くにのちょくえいじぎょうのてきようじょがい",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "rosai:tekiyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tekiyojigyo"
+  ],
+  "description": "国の 直営事業と 官公署の 事業には 労災保険が 適用されません。ひっかけ: 官公署の 事業でも、労働基準法 別表第一に あたる 事業は 除外に なりません。"
+ },
+ {
+  "id": "rs-zanteishinsei",
+  "name": "暫定任意適用の加入申請",
+  "reading": "ざんていにんいてきようのかにゅうしんせい",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "rosai:tekiyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-zantei",
+   "rs-zanteidattai"
+  ],
+  "description": "暫定任意適用事業は、事業主の 申請に 厚生労働大臣の 認可が あった 日に 保険関係が 成立します。ひっかけ: 労働者の 過半数が 希望する ときは 申請しなければ なりません。"
+ },
+ {
+  "id": "rs-zanteidattai",
+  "name": "暫定任意適用の脱退",
+  "reading": "ざんていにんいてきようのだったい",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "rosai:tekiyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-zanteishinsei",
+   "rs-zantei"
+  ],
+  "description": "脱退の 申請には、労働者の 過半数の 同意と、成立から 1年を 経過して いる ことが 必要です。保険関係は 認可の 翌日に 消滅します。加入は 過半数の「希望」、脱退は「同意」です。"
+ },
+ {
+  "id": "rs-gyomu7",
+  "name": "業務災害の7つの給付",
+  "reading": "ぎょうむさいがいのななつのきゅうふ",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "7️⃣",
+  "mapNode": "rosai:gyomu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tsukin7",
+   "rs-sosairyo"
+  ],
+  "description": "療養補償給付・休業補償給付・障害補償給付・遺族補償給付・葬祭料・傷病補償年金・介護補償給付です。ひっかけ: 葬祭だけは「葬祭補償給付」では なく「葬祭料」です。"
+ },
+ {
+  "id": "rs-shikyuseigen",
+  "name": "労災の支給制限",
+  "reading": "ろうさいのしきゅうせいげん",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "rosai:gyomu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-fusei",
+   "rs-hiyochoshu"
+  ],
+  "description": "労働者が わざと けがなどを した ときは 給付を 行いません。故意の 犯罪行為・重大な 過失・療養の 指示に 従わない ときは、全部 または 一部を 行わない ことが「できる」です。"
+ },
+ {
+  "id": "rs-kyusho",
+  "name": "第三者行為災害の求償",
+  "reading": "だいさんしゃこういさいがいのきゅうしょう",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "rosai:gyomu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kojo",
+   "rs-daisansha"
+  ],
+  "description": "政府が 先に 労災の 給付を した ときは、その 価額の 限度で、被災者が 第三者に 持つ 損害賠償の 請求権を 取得します。これを 求償と いいます。"
+ },
+ {
+  "id": "rs-kojo",
+  "name": "第三者行為災害の控除",
+  "reading": "だいさんしゃこういさいがいのこうじょ",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➖",
+  "mapNode": "rosai:gyomu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyusho",
+   "rs-daisansha"
+  ],
+  "description": "被災者が 先に 第三者から 損害賠償を 受けた ときは、政府は その 価額の 限度で 給付を しない ことが できます。先に 給付なら 求償、先に 賠償なら 控除です。"
+ },
+ {
+  "id": "rs-fusei",
+  "name": "不正受給の費用徴収",
+  "reading": "ふせいじゅきゅうのひようちょうしゅう",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "rosai:gyomu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-hiyochoshu",
+   "rs-shikyuseigen"
+  ],
+  "description": "偽りや 不正の 手段で 給付を 受けた 人から、政府は 費用の 全部 または 一部を 徴収できます。事業主が うその 報告や 証明を した ときは、連帯して 納付を 命じられます。"
+ },
+ {
+  "id": "rs-tsukin7",
+  "name": "通勤災害の7つの給付",
+  "reading": "つうきんさいがいのななつのきゅうふ",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚉",
+  "mapNode": "rosai:tsukin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-gyomu7",
+   "rs-ichibufutan"
+  ],
+  "description": "療養給付・休業給付・障害給付・遺族給付・葬祭給付・傷病年金・介護給付です。ひっかけ: 業務災害と ちがい「補償」の 字が つかず、葬祭も「葬祭料」では なく「葬祭給付」です。"
+ },
+ {
+  "id": "rs-ichibufutan",
+  "name": "労災の一部負担金",
+  "reading": "ろうさいのいちぶふたんきん",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪙",
+  "mapNode": "rosai:tsukin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tsukin7",
+   "rs-ryoyonokyufu"
+  ],
+  "description": "通勤災害の 療養給付を 受ける 人から 200円(日雇特例被保険者は 100円)を 徴収します。業務災害には ありません。第三者行為災害や 休業給付を 受けない 人などは 除かれます。"
+ },
+ {
+  "id": "rs-shugyobasho",
+  "name": "就業の場所間の移動",
+  "reading": "しゅうぎょうのばしょかんのいどう",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "rosai:tsukin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-jukyokan",
+   "rs-fukusurodosha"
+  ],
+  "description": "副業先など、ある 就業の 場所から 別の 就業の 場所への 移動も 通勤です。住居と 就業の 場所の 往復・住居間の 移動と あわせて、通勤は 3つの 移動です。"
+ },
+ {
+  "id": "rs-jukyokan",
+  "name": "住居間の移動",
+  "reading": "じゅうきょかんのいどう",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏘",
+  "mapNode": "rosai:tsukin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shugyobasho",
+   "rs-goriteki"
+  ],
+  "description": "単身赴任の 人が、赴任先の 住居と 家族の いる 住居の あいだを 移動する ことなどです。転任に ともなう 別居など、省令の 要件を みたせば 通勤に なります。"
+ },
+ {
+  "id": "rs-gassan",
+  "name": "複数事業労働者の日額の合算",
+  "reading": "ふくすうじぎょうろうどうしゃのにちがくのがっさん",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "rosai:fukusu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-fukusurodosha",
+   "rs-kyufukiso"
+  ],
+  "description": "複数事業労働者の 給付基礎日額は、事業 ごとに 出した 額を 合算して 決めます。ひっかけ: けがを した 会社の 賃金 だけでは 出しません。"
+ },
+ {
+  "id": "rs-fukusukyugyo",
+  "name": "複数事業労働者休業給付",
+  "reading": "ふくすうじぎょうろうどうしゃきゅうぎょうきゅうふ",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛋",
+  "mapNode": "rosai:fukusu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-fukusuyoin",
+   "rs-kyugyohosho"
+  ],
+  "description": "複数業務要因災害の 休業の 給付です。業務災害の 休業補償給付と 同じく 4日目から 出ますが、名前に「補償」の 字は つきません。"
+ },
+ {
+  "id": "rs-fukusuizoku",
+  "name": "複数事業労働者遺族給付",
+  "reading": "ふくすうじぎょうろうどうしゃいぞくきゅうふ",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌷",
+  "mapNode": "rosai:fukusu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-fukusuyoin",
+   "rs-izokuhosho"
+  ],
+  "description": "複数業務要因災害で 亡くなった ときの 遺族の 給付で、年金と 一時金が あります。複数業務要因災害の 7つの 給付は、どれも 名前の 頭に「複数事業労働者」が つきます。"
+ },
+ {
+  "id": "rs-fukusushobyo",
+  "name": "複数事業労働者傷病年金",
+  "reading": "ふくすうじぎょうろうどうしゃしょうびょうねんきん",
+  "journey": "rosai",
+  "category": "災害の 認定",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷",
+  "mapNode": "rosai:fukusu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shobyonenkin",
+   "rs-fukusuyoin"
+  ],
+  "description": "複数業務要因災害の 傷病の 年金です。業務災害は「傷病補償年金」、通勤災害は「傷病年金」、複数業務要因災害は この 名前と、災害の 種類で 名前を 区別します。"
+ },
+ {
+  "id": "rs-vskyugyoteate",
+  "name": "休業補償給付と休業手当",
+  "reading": "きゅうぎょうほしょうきゅうふときゅうぎょうてあて",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyugyohosho",
+   "rs-taikihosho"
+  ],
+  "description": "どちらも 60%ですが 別物です。休業補償給付は 労災の けがで 休む ときに 国から 出る 給付、労働基準法の 休業手当は 会社の 都合で 休ませた ときに 会社が 払う 賃金です。"
+ },
+ {
+  "id": "rs-taikihosho",
+  "name": "待期期間の休業補償",
+  "reading": "たいききかんのきゅうぎょうほしょう",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-taiki",
+   "rs-vskyugyoteate"
+  ],
+  "description": "業務災害の 待期 3日間は 労災から 出ないので、使用者が 労働基準法の 休業補償(平均賃金の 60%)を 払います。ひっかけ: 通勤災害の 待期には この 義務が ありません。"
+ },
+ {
+  "id": "rs-vsshobyoteate",
+  "name": "労災と傷病手当金",
+  "reading": "ろうさいとしょうびょうてあてきん",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💊",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyugyohosho",
+   "rs-kyugyotokushi"
+  ],
+  "description": "健康保険の 傷病手当金は 仕事と 関係ない 病気や けがで 休む ときの 給付で、3分の2・待期 3日です。労災の 休業補償給付は 60%で、特別支給金を 足すと 80%です。"
+ },
+ {
+  "id": "rs-bubunsantei",
+  "name": "部分算定日",
+  "reading": "ぶぶんさんていび",
+  "journey": "rosai",
+  "category": "療養・休業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏲",
+  "mapNode": "rosai:ryoyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyugyohosho"
+  ],
+  "description": "療養中に 一部だけ 働いた 日です。その 日の 休業補償給付は、給付基礎日額から 働いた 分の 賃金を 引いた 額の 60%に なります。"
+ },
+ {
+  "id": "rs-shogainissu",
+  "name": "障害補償年金の日数",
+  "reading": "しょうがいほしょうねんきんのにっすう",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "rosai:shogai",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shogainenkin",
+   "rs-shobyotokyu"
+  ],
+  "description": "1年分の 額を 給付基礎日額の 何日分かで 決めます。1級 313日・2級 277日・3級 245日・4級 213日・5級 184日・6級 156日・7級 131日です。"
+ },
+ {
+  "id": "rs-7kyu8kyu",
+  "name": "障害の7級と8級の境目",
+  "reading": "しょうがいのななきゅうとはちきゅうのさかいめ",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "rosai:shogai",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shogainenkin",
+   "rs-shogaiichijikin"
+  ],
+  "description": "労災の 障害補償給付は 7級までが 年金、8級からが 一時金です。ひっかけ: 7級の 年金は 毎年 131日分、8級の 一時金は 1回 503日分で、数字だけで くらべません。"
+ },
+ {
+  "id": "rs-henko",
+  "name": "障害の程度の変更",
+  "reading": "しょうがいのていどのへんこう",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "rosai:shogai",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shogaitokyu",
+   "rs-shogainenkin"
+  ],
+  "description": "障害補償年金を 受ける 人の 障害の 程度が 変わり、ほかの 等級に あたる ように なった ときは、新しい 等級の 年金 または 一時金に 変わります。ひっかけ: 年金を 受ける 人が 対象です。"
+ },
+ {
+  "id": "rs-shogaitokushi",
+  "name": "障害特別支給金",
+  "reading": "しょうがいとくべつしきゅうきん",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎀",
+  "mapNode": "rosai:shogai",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tokushi",
+   "rs-shogaihosho"
+  ],
+  "description": "障害補償給付に 上乗せして 1回だけ 出る お金で、1級 342万円から 14級 8万円まで あります。ひっかけ: 年金の 等級(1〜7級)でも 一時金で 出ます。"
+ },
+ {
+  "id": "rs-izokujuni",
+  "name": "遺族補償年金の順位",
+  "reading": "いぞくほしょうねんきんのじゅんい",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥇",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-jukyushikaku",
+   "rs-tenkyu"
+  ],
+  "description": "受ける 順位は 配偶者・子・父母・孫・祖父母・兄弟姉妹です。いちばん 先の 順位の 人が 受給権者に なり、額は 生計を 同じく する 資格者の 人数で 決まります。"
+ },
+ {
+  "id": "rs-izokunissu",
+  "name": "遺族補償年金の日数",
+  "reading": "いぞくほしょうねんきんのにっすう",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-izokunenkin",
+   "rs-izokujuni"
+  ],
+  "description": "1人 153日(55歳以上 または 障害の ある 妻は 175日)・2人 201日・3人 223日・4人以上 245日分です。2027年4月から 1人は 175日に そろいます。"
+ },
+ {
+  "id": "rs-jakunen",
+  "name": "労災の若年停止",
+  "reading": "ろうさいのじゃくねんていし",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏯",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-jukyushikaku",
+   "rs-izokujuni"
+  ],
+  "description": "当分の 間、55歳以上 60歳未満の 夫・父母・祖父母・兄弟姉妹も 遺族補償年金の 資格者です。ただし 60歳に なるまで 支給は 停止され、順位も 本来の 遺族の あとです。"
+ },
+ {
+  "id": "rs-tenkyu",
+  "name": "労災の転給",
+  "reading": "ろうさいのてんきゅう",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-izokujuni",
+   "rs-izokunenkin"
+  ],
+  "description": "遺族補償年金の 受給権者が 婚姻などで 権利を 失い、同じ 順位の 人が いない ときは、次の 順位の 人に 年金が 移ります。これを 転給と いいます。"
+ },
+ {
+  "id": "rs-sosaigaku",
+  "name": "葬祭料の額",
+  "reading": "そうさいりょうのがく",
+  "journey": "rosai",
+  "category": "障害・遺族",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "rosai:izoku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-sosairyo",
+   "rs-tsukin7"
+  ],
+  "description": "33万円に 給付基礎日額の 30日分を 足した 額です。それが 60日分に 満たない ときは 60日分に なります。通勤災害の 葬祭給付も 同じ 額です。"
+ },
+ {
+  "id": "rs-1nen6",
+  "name": "療養開始後1年6か月",
+  "reading": "りょうようかいしごいちねんろっかげつ",
+  "journey": "rosai",
+  "category": "傷病・介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "rosai:shobyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shobyonenkin",
+   "rs-nenreikaiso"
+  ],
+  "description": "傷病補償年金に 切りかわるかを 見る 時期です。治って いない・傷病等級に あたる の 両方を みたせば 年金に なります。休業の 年齢階層別の 限度額も この 時から 使います。"
+ },
+ {
+  "id": "rs-shokken",
+  "name": "傷病補償年金の支給決定",
+  "reading": "しょうびょうほしょうねんきんのしきゅうけってい",
+  "journey": "rosai",
+  "category": "傷病・介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖋",
+  "mapNode": "rosai:shobyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shobyonenkin",
+   "rs-kaigohosho"
+  ],
+  "description": "本人の 請求では なく、所轄労働基準監督署長の 職権で 支給が 決まります。1年6か月を 過ぎて 治って いない ときは 1か月以内に 届書を 出します。ひっかけ: 介護補償給付は 請求です。"
+ },
+ {
+  "id": "rs-uchikiri",
+  "name": "労災の打切補償のみなし",
+  "reading": "ろうさいのうちきりほしょうのみなし",
+  "journey": "rosai",
+  "category": "傷病・介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔓",
+  "mapNode": "rosai:shobyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shobyonenkin",
+   "rs-1nen6"
+  ],
+  "description": "療養を 始めて 3年 たった 日に 傷病補償年金を 受けて いれば、使用者は 打切補償を 払った ものと みなされ、労働基準法の 解雇制限が 解けます。"
+ },
+ {
+  "id": "rs-heikyu",
+  "name": "傷病補償年金と休業補償給付",
+  "reading": "しょうびょうほしょうねんきんときゅうぎょうほしょうきゅうふ",
+  "journey": "rosai",
+  "category": "傷病・介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "rosai:shobyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shobyonenkin",
+   "rs-kyugyohosho"
+  ],
+  "description": "傷病補償年金を 受ける 人には 休業補償給付は 出ません。ひっかけ: 療養補償給付は 止まらず、治療は 続けて 受けられます。"
+ },
+ {
+  "id": "rs-kaigotaisho",
+  "name": "介護補償給付の対象",
+  "reading": "かいごほしょうきゅうふのたいしょう",
+  "journey": "rosai",
+  "category": "傷病・介護",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏡",
+  "mapNode": "rosai:shobyo",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kaigohosho",
+   "rs-shokken"
+  ],
+  "description": "障害補償年金 または 傷病補償年金の 受給権者で、常時 または 随時 介護を 受けて いる 人です。ひっかけ: 障害者支援施設に 入所中や 病院に 入院中の 間は 出ません。"
+ },
+ {
+  "id": "rs-nijikaisu",
+  "name": "二次健康診断の回数",
+  "reading": "にじけんこうしんだんのかいすう",
+  "journey": "rosai",
+  "category": "二次健診",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "rosai:nijikenshin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-hokenshido",
+   "rs-nijikigen"
+  ],
+  "description": "二次健康診断は 1年度に 1回、特定保健指導は 二次健康診断 ごとに 1回 受けられます。脳と 心臓の 状態を 調べる 健診です。"
+ },
+ {
+  "id": "rs-nijikigen",
+  "name": "二次健康診断等給付の請求期限",
+  "reading": "にじけんこうしんだんとうきゅうふのせいきゅうきげん",
+  "journey": "rosai",
+  "category": "二次健診",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "rosai:nijikenshin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-nijikaisu",
+   "rs-ichijikenshin"
+  ],
+  "description": "一次健康診断を 受けた 日から 3か月以内に、健診給付病院等を 通して 所轄都道府県労働局長に 請求します。ひっかけ: 請求先は 労働基準監督署長では ありません。"
+ },
+ {
+  "id": "rs-nijigai",
+  "name": "二次健康診断等給付の対象外",
+  "reading": "にじけんこうしんだんとうきゅうふのたいしょうがい",
+  "journey": "rosai",
+  "category": "二次健診",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙅",
+  "mapNode": "rosai:nijikenshin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-ichijikenshin",
+   "rs-hokenshido"
+  ],
+  "description": "すでに 脳や 心臓の 病気の 症状が ある 人は 対象外です。二次健康診断で 症状が あると 分かった 人にも、特定保健指導は 行いません。"
+ },
+ {
+  "id": "rs-nijidokuritsu",
+  "name": "二次健康診断等給付の位置づけ",
+  "reading": "にじけんこうしんだんとうきゅうふのいちづけ",
+  "journey": "rosai",
+  "category": "二次健診",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "rosai:nijikenshin",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-nijikenshin",
+   "rs-hokenkyufu"
+  ],
+  "description": "業務災害・複数業務要因災害・通勤災害と ならぶ 4つめの 保険給付です。けがや 病気を 予防する ための もので、名前に「補償」の 字は つきません。"
+ },
+ {
+  "id": "rs-saiteihosho",
+  "name": "給付基礎日額の最低保障額",
+  "reading": "きゅうふきそにちがくのさいていほしょうがく",
+  "journey": "rosai",
+  "category": "給付基礎日額",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛟",
+  "mapNode": "rosai:kisonichigaku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyufukiso",
+   "rs-nenreikaiso"
+  ],
+  "description": "給付基礎日額には 最低保障額(自動変更対象額)が あり、毎年 変わります。令和8年度(2026年8月から)は 4,350円です(前は 4,250円)。"
+ },
+ {
+  "id": "rs-hasu",
+  "name": "給付基礎日額の端数",
+  "reading": "きゅうふきそにちがくのはすう",
+  "journey": "rosai",
+  "category": "給付基礎日額",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "rosai:kisonichigaku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyufukiso"
+  ],
+  "description": "給付基礎日額に 1円未満の 端数が 出た ときは、1円に 切り上げます。ひっかけ: 切り捨てでは ありません。"
+ },
+ {
+  "id": "rs-kyugyoslide",
+  "name": "休業給付基礎日額のスライド",
+  "reading": "きゅうぎょうきゅうふきそにちがくのすらいど",
+  "journey": "rosai",
+  "category": "給付基礎日額",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "rosai:kisonichigaku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-nenkinslide",
+   "rs-nenreikaiso"
+  ],
+  "description": "四半期 ごとの 平均給与額が 10%を こえて 上下した ときは、その 翌々四半期の 初日から 休業の 日額を 改定します。ひっかけ: 年金の スライドには 10%の 幅が ありません。"
+ },
+ {
+  "id": "rs-nenreikaiso",
+  "name": "年齢階層別の限度額",
+  "reading": "ねんれいかいそうべつのげんどがく",
+  "journey": "rosai",
+  "category": "給付基礎日額",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎚",
+  "mapNode": "rosai:kisonichigaku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-1nen6",
+   "rs-saiteihosho"
+  ],
+  "description": "年齢 ごとに 給付基礎日額の 最低と 最高の 限度額が あります。休業(補償)給付は 療養開始から 1年6か月 たった 日 以後の 分から、年金は はじめから 使います。"
+ },
+ {
+  "id": "rs-nenkinslide",
+  "name": "年金給付基礎日額のスライド",
+  "reading": "ねんきんきゅうふきそにちがくのすらいど",
+  "journey": "rosai",
+  "category": "給付基礎日額",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "rosai:kisonichigaku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyugyoslide"
+  ],
+  "description": "年金の 日額は、算定事由発生日の 年度の 翌々年度の 8月 以後の 分から、平均給与額の 変わり方に 合わせて 改定します。障害・遺族の 一時金にも 同じ スライドが あります。"
+ },
+ {
+  "id": "rs-vsheikin",
+  "name": "平均賃金と給付基礎日額",
+  "reading": "へいきんちんぎんときゅうふきそにちがく",
+  "journey": "rosai",
+  "category": "給付基礎日額",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🟰",
+  "mapNode": "rosai:kisonichigaku",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-kyufukiso",
+   "rs-santeijiyu"
+  ],
+  "description": "給付基礎日額は 労働基準法の 平均賃金に 相当する 額が 原則です。平均賃金で 出すのが 適当で ない ときは、所轄労働基準監督署長が 決めます。"
+ },
+ {
+  "id": "rs-chushokibo",
+  "name": "中小事業主の規模",
+  "reading": "ちゅうしょうじぎょうぬしのきぼ",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "rosai:tokubetsu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-chusho",
+   "rs-jimuitaku"
+  ],
+  "description": "常時 300人以下(金融業・保険業・不動産業・小売業は 50人以下、卸売業・サービス業は 100人以下)の 労働者を 使う 事業主です。"
+ },
+ {
+  "id": "rs-jimuitaku",
+  "name": "特別加入の事務組合への委託",
+  "reading": "とくべつかにゅうのじむくみあいへのいたく",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "rosai:tokubetsu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-chusho",
+   "rs-chushokibo"
+  ],
+  "description": "中小事業主が 特別加入する には、労働保険事務組合に 労働保険の 事務を 委託して いる ことが 条件です。ひっかけ: 一人親方は 事務組合では なく 団体を 通じて 入ります。"
+ },
+ {
+  "id": "rs-hitorioyakatatsukin",
+  "name": "一人親方の通勤災害",
+  "reading": "ひとりおやかたのつうきんさいがい",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚕",
+  "mapNode": "rosai:tokubetsu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-hitorioyakata",
+   "rs-tsukinsaigai"
+  ],
+  "description": "個人タクシーの 運転手など、住居と 仕事場の 往復の ようすから 省令で 決めた 一人親方は、通勤災害が 対象外です。業務災害と 複数業務要因災害だけ 受けます。"
+ },
+ {
+  "id": "rs-tokukanikkyu",
+  "name": "特別加入の給付基礎日額",
+  "reading": "とくべつかにゅうのきゅうふきそにちがく",
+  "journey": "rosai",
+  "category": "適用・特別加入",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "rosai:tokubetsu",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-chusho",
+   "rs-kyufukiso"
+  ],
+  "description": "特別加入する 人には 賃金が ないので、第1種の 給付基礎日額は 3,500円から 25,000円までの 16段階から 決めます。保険料も この 額を もとに 計算します。"
+ },
+ {
+  "id": "rs-jiko5",
+  "name": "時効が5年の給付",
+  "reading": "じこうがごねんのきゅうふ",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "5️⃣",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-rosaijiko",
+   "rs-tokushikigen"
+  ],
+  "description": "障害(補償)給付と 遺族(補償)給付が 5年、療養・休業・葬祭・介護・二次健康診断等給付は 2年です。ひっかけ: 傷病(補償)年金は 職権で 決まるので この 一覧に 入りません。"
+ },
+ {
+  "id": "rs-tokushikigen",
+  "name": "特別支給金の申請期限",
+  "reading": "とくべつしきゅうきんのしんせいきげん",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-tokushi",
+   "rs-jiko5"
+  ],
+  "description": "休業特別支給金は 2年、障害・遺族・傷病の 特別支給金は 5年 以内に 申請します。休業は 2年、障害・遺族は 5年と、保険給付の 時効と そろえて おぼえます。"
+ },
+ {
+  "id": "rs-shinsakikan",
+  "name": "労災の審査請求の期間",
+  "reading": "ろうさいのしんさせいきゅうのきかん",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shinsaseikyu",
+   "rs-kikyaku"
+  ],
+  "description": "審査請求は 決定を 知った 日の 翌日から 3か月以内、再審査請求は 決定書の 謄本が 送られた 日の 翌日から 2か月以内です。"
+ },
+ {
+  "id": "rs-zenchi",
+  "name": "労災の審査請求前置",
+  "reading": "ろうさいのしんさせいきゅうぜんち",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shinsaseikyu",
+   "rs-kikyaku"
+  ],
+  "description": "労災の 給付の 決定の 取消しを 裁判所に 求める ときは、先に 審査官の 決定を 受けなければ なりません。ひっかけ: 再審査請求まで 経る 必要は ありません。"
+ },
+ {
+  "id": "rs-kikyaku",
+  "name": "労災の棄却のみなし",
+  "reading": "ろうさいのききゃくのみなし",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-shinsakikan",
+   "rs-zenchi"
+  ],
+  "description": "審査請求から 3か月 たっても 審査官の 決定が ない ときは、棄却された ものと みなす ことが できます。審査請求は 時効の 上では 裁判上の 請求と みなされます。"
+ },
+ {
+  "id": "rs-hiyochoshu",
+  "name": "事業主からの費用徴収",
+  "reading": "じぎょうぬしからのひようちょうしゅう",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💸",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-fusei",
+   "rs-seiritsu"
+  ],
+  "description": "故意・重大な 過失で 成立の 届出を して いない 間の 事故、督促の 期限 後も 保険料を 納めて いない 間の 事故、事業主の 故意・重大な 過失の 事故は、給付の 費用を 事業主から 徴収できます。"
+ },
+ {
+  "id": "rs-jukyuken",
+  "name": "労災の受給権の保護",
+  "reading": "ろうさいのじゅきゅうけんのほご",
+  "journey": "rosai",
+  "category": "時効・手続き",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "rosai:jiko",
+  "field": "労災法",
+  "ruleset": "労災",
+  "relatedTerms": [
+   "rs-rosaijiko",
+   "rs-fusei"
+  ],
+  "description": "労災の 給付を 受ける 権利は、会社を 退職しても 変わりません。人に ゆずる・担保に する・差し押さえる ことも できません。"
+ }
+]

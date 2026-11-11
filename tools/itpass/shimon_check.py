@@ -24,6 +24,9 @@ def main():
             if len(o) != 4 or len(set(o)) != 4: errs.append(f"{i}: opts は ちがう 4つ")
             if m.get("a") not in o: errs.append(f"{i}: a が opts に ない")
             else: pos[o.index(m["a"])] += 1
+            if m.get("a") in o and len(o) == 4 and not m.get("code"):
+                ls = sorted(len(x) for x in o if x != m["a"])
+                if len(m["a"]) >= ls[-1] * 1.4 and len(m["a"]) - ls[-1] >= 8: warn.append(f"{i}: 正解だけ 長い({len(m['a'])}字 / ほかは {ls[-1]}字まで)。読むだけで 当たる")
             for x in o:
                 if not x or len(x) > 60: errs.append(f"{i}: 選択肢が 空か 60字より 長い「{x[:20]}」")
                 if re.search(r"(すべて|全て)(正しい|誤り)|どれでもない|いずれでもない", x): errs.append(f"{i}: 「すべて正しい」「どれでもない」は 使わない")

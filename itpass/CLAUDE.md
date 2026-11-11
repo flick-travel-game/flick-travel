@@ -25,6 +25,8 @@
   → **新しい 要綱が 出たら 分野の 札(`FIELD_RS`・`mock.json`・`maru_check.py` の `RS_OF`)を 3つの 新しい 分野に 付けかえる**。ことばと 問題の 多くは そのまま 使える はず
 - ことばは `tools/itpass/terms-<旅>.json`(決まり `PROMPT.md`・確かめる係 `CHECKER.md`・置き場所 `plan.json`)→ `tools/itpass/terms_js.py` → `itpass/terms.js` + `data/itpass.json`。旅・図・称号・模擬試験は `mkmeta.py`(+ `exam.txt`・`mock.json`)→ `meta.json`。
   確かめ `python3 tools/itpass/terms_js.py --check` / `python3 tools/itpass/maru_check.py`。⚠️ 10字を こえる 読みは 旅ごとに 10語まで(`LONG_READ`)。ふりがなの 見かたは `python3 tools/itpass/ruby_dump.py <旅>`
+- **トップの 絵は 入れた**(2026-11-11。`itpass/hero.webp` 1536×1024・`hero=True`・`wordv` = 1)。けいくんの ChatGPT の 絵の **2回目**。1回目は 箱が 9こ(コンピュータと ネットワークが 1つ)・札 36こ中 14こが ゲームに 無い ことば・「まーけていんぐ」「えるえー(SLA)」で 入れなかった。2回目は 10の 箱 × 4こ = 40こ ぜんぶ ゲームの 読み(プログラムで 確かめた)。
+  ⚠️ 2回目にも 字の まちがいが 2つ: 6番「へるぶですく」(正しくは へるぷ)・10番の 見出し「じょうほうせきゅりてい」(正しくは せきゅりてぃ)。直した 絵が 届いたら 差しかえて `wordv` を +1(かずともの `games.ts` の `art` の `?v=` も)
 - **まだ 仮の アイコン**(`tools/itpass/placeholder_icon.py`。青い 空・ノートパソコン・鍵の 盾。`hero=False`・`logo=False`)。けいくんの ChatGPT の 絵が 届いたら square-src.png → `python3 tools/icon_from_square.py itpass`(`art` を 足して iconv)/ title-src.png → `python3 tools/title_from_art.py itpass` / hero.webp 1536×1024 → `hero=True`。
   ⚠️ 絵を 頼む ときは 実在の ロゴ(OS・スマホ・検索の 会社 など)を 描かせない。人物は 下 3分の1に 小さく。題名の「ITパスポート」の **T と パ**、「ト」が「卜」に なりやすい
 - 確かめかた: `node tools/play-all.mjs itpass/` / `node tools/click-all.mjs itpass/`(W=320 も)。模擬試験は scratchpad の `mock.js`(terms.js と itpass.js を 読んで 100回 組み、100問・35 / 20 / 45・4つの 文の うち 答えが 1つ・同じ 文を 2回 使わない を 確かめる)

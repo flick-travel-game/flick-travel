@@ -12,13 +12,13 @@
 <meta property="og:title" content="フリックITパスポート｜かずとも">
 <meta property="og:description" content="企業活動と 会計・法務・経営戦略・システム戦略・開発と プロジェクト・サービスマネジメントと 監査・基礎理論と アルゴリズム・コンピュータ・ネットワークと データベース・情報セキュリティの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、ITパスポート試験の どの 分野で 出るかが わかるよ。学校や 会社で IT を 使う ときの ことばから、ITパスポート試験の 範囲の めやすまで 1,000語。⭕❌ 一問一答・計算クイズ・本番と 同じ 形の 模擬試験で 試験の 練習も できるよ。 かずともの フリックゲーム。">
 <meta property="og:url" content="https://kazutomo.app/flick/itpass/">
-<meta property="og:image" content="https://kazutomo.app/flick/hero.webp">
+<meta property="og:image" content="https://kazutomo.app/flick/itpass/hero.webp">
 <meta property="og:locale" content="ja_JP">
 <!-- ⚠️ ホーム画面に 足すと「かずとも」の アプリに なる(けいくん決定 2026-09-30「その使い方をデフォルトにしよう!」)。
      iPhone は アイコンごとに 別の アプリ(別の ログイン)なので、ゲームごとに 足すと ログインが ばらばらに なる。
      どの ゲームから 足しても 同じ「かずとも」(ホームから はじまる)に して、ログインを 1つに する。manifest・絵・名前は かずとも本体の もの -->
 <link rel="apple-touch-icon" href="/apple-icon.png">
-<link rel="icon" type="image/png" href="../favicon.png?v=2">
+<link rel="icon" type="image/png" href="favicon.png?v=2">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="かずとも">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -446,10 +446,12 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
     <!-- ⚠️ ロゴは AI の絵(hero.webp)の中の題名を 切りぬいた 画像(tools/logo-word-cut.py)。CSS・フォントで 似せない(speed-king の docs/ロゴの文字.md)。
          読みあげソフトには かくして、下の <h1> が 名前を言う -->
     <div class="logo">
+      <img class="logo-mark" src="logo-mark2.webp" alt="" width="144" height="144" aria-hidden="true">
       <span class="logo-text">フリックITパスポート</span>
       <button class="prof-btn" id="prof-btn" aria-label="マイページ"><span class="nm"></span><span class="tile sm sk-card" id="prof-tile">?</span></button>
     </div>
     <h1 class="sr-only">フリックITパスポート</h1>
+    <img class="hero" src="hero.webp?v=1" alt="フリックITパスポート。オフィスを うしろに 男の子と 女の子と 白い 犬が 笑っていて、まわりに 10の 旅の ことばの 札と ⭕❌ 一問一答・計算クイズ・模擬試験の 見本が ならんでいる" width="1536" height="1024">
     <!-- 🙂 さいしょに マイページで ニックネームと アイコン(けいくん 2026-11-02。いちばん下の 遊びかたでは 見つからなかった → 説明の すぐ下へ)。アイコンが まだ 無い 人にだけ -->
     <p class="how0 hidden" id="how0">🙂 さいしょに 右上の <button type="button" class="lnk" id="how0-btn">マイページ</button> で ニックネームと アイコンを 決めてね。きろくは その なまえで のこるよ。</p>
     <p class="lead" id="lead">世界と日本の名所・地名・首都を、ひらがなでどれだけ速く打てるか。10問のトータルタイムで勝負しながら、旅に出よう。</p>
@@ -589,7 +591,7 @@ ruby.nm rt{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.02e
 if(location.hostname === "flick-travel-game.github.io"){ try{ location.replace("https://kazutomo.app/flick/" + location.pathname.replace(/^\/flick-travel\/?/, "") + location.search + location.hash); }catch(e){} }
 /* どのゲームか(フリック旅行シリーズ。けいくん 2026-09-26「このゲームすべて作成してください」)。
    tools/build_games.py が 歴史・宇宙・からだ の ページを 作るとき この2行を 書きかえる。GAME-START */
-const GAME = { id:"itpass", name:"フリックITパスポート", modes:(typeof ITPASS === "object" ? ITPASS.modes : []), assets:"../", logo:false, hero:false, dir:"itpass/", lead:"企業活動と 会計・法務・経営戦略・システム戦略・開発と プロジェクト・サービスマネジメントと 監査・基礎理論と アルゴリズム・コンピュータ・ネットワークと データベース・情報セキュリティの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、ITパスポート試験の どの 分野で 出るかが わかるよ。学校や 会社で IT を 使う ときの ことばから、ITパスポート試験の 範囲の めやすまで 1,000語。⭕❌ 一問一答・計算クイズ・本番と 同じ 形の 模擬試験で 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 試験の 前には 最新の シラバスと 試験の 案内で 確かめてね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、IT で 仕事を する しくみが 見えてくるよ。情報処理推進機構(IPA)とは 関係ありません。" };
+const GAME = { id:"itpass", name:"フリックITパスポート", modes:(typeof ITPASS === "object" ? ITPASS.modes : []), assets:"../", logo:false, hero:true, dir:"itpass/", lead:"企業活動と 会計・法務・経営戦略・システム戦略・開発と プロジェクト・サービスマネジメントと 監査・基礎理論と アルゴリズム・コンピュータ・ネットワークと データベース・情報セキュリティの ことばを、ひらがなで フリック入力。打つと その ことばの 意味と、ITパスポート試験の どの 分野で 出るかが わかるよ。学校や 会社で IT を 使う ときの ことばから、ITパスポート試験の 範囲の めやすまで 1,000語。⭕❌ 一問一答・計算クイズ・本番と 同じ 形の 模擬試験で 試験の 練習も できるよ。", how:"表示された ひらがなを、そのまま打ち写してね。1回は かならず 10問。どのステージも いつも同じ10問なので、タイムをくらべられるよ。これは ことばを おぼえる ゲームだよ。本当の 試験の 前には 最新の シラバスと 試験の 案内で 確かめてね。", rule:"ルール：予測変換は使わずに、自分の指で打ち切ろう。あそぶほど、IT で 仕事を する しくみが 見えてくるよ。情報処理推進機構(IPA)とは 関係ありません。" };
 /* GAME-END */
 /* シリーズの 一覧(いちばん下の リンク)。dir は この index.html からの 相対の道 */
 const SERIES = [ {id:"world", name:"フリック世界旅行", icon:"🌍", dir:""}, {id:"rekishi", name:"フリック歴史", icon:"📜", dir:"rekishi/"},

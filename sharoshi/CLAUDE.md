@@ -28,6 +28,9 @@
 - 絵は まだ(仮の アイコン `tools/sharoshi/placeholder_icon.py`。`hero=False`・`logo=False`)。けいくんに ChatGPT で 頼む 文は はじめかた.md の 10
 - 確かめかた: `python3 tools/sharoshi/terms_js.py --check` / `python3 tools/sharoshi/maru_check.py` / `node tools/play-all.mjs sharoshi/` / `node tools/click-all.mjs sharoshi/`(W=320 も)。模擬試験は 100回 組んで「問題数・5つの 文の うち 答えが 1つ・同じ 文を 2回 使わない」を 見た
 
+- ⭐ **法令と 数字の 見なおしは 年2回**(けいくん決定 2026-11-11「予約入れて」): 毎年 **4月15日 10:12**(新しい 年度の 数字 = `nendo.json`・その年の 試験の 告示(4月10日ごろ)・4月 施行の 改正)と **10月2日 10:12**(その年の 合格基準点(10月1日 発表)→ `mock.json` の `pastPass` を 新しい 5年に・8月 / 10月 施行の 改正)に 見なおしの セッションが 始まる 予約が ある(1回目は 2027-04-15 / 2027-10-02)。
+  ⚠️ 予約から 始まる セッションは GitHub の 道具(MCP)を 持たない。直して PR まで できない ときは、けいくんが ふつうの セッションで 頼む(衛生管理者と 同じ)
+
 ## 🎨 けいくんに ChatGPT で 頼む 文(2026-11-11。札の 字は ぜんぶ ゲームの 読み)
 - 届いたら: 四角 → `tools/sharoshi/art/square-src.png` → `python3 tools/icon_from_square.py sharoshi`(`iconv` +1)/ 題名 → `tools/sharoshi/art/title-src.png` → `python3 tools/title_from_art.py sharoshi`(`logo=True`・`art.word` を 実寸・`wordv` +1)/ トップ → `sharoshi/hero.webp` 1536×1024(`hero=True`)。札の 字を プログラムで 読んで ゲームの 読みか 確かめる。speed-king の `HOME_GAMES` に `art`・`word` を 足す
 

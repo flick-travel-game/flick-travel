@@ -83,7 +83,7 @@
 - `menkyo/CLAUDE.md` … フリック自動車運転免許
 - `nail/CLAUDE.md` … フリックネイリスト
 - `takken/CLAUDE.md` … フリック宅建士
-- `sharoshi/CLAUDE.md` … フリック社労士(2026-11-11 は 見本 = 労働基準法の 旅だけ。シリーズの 一覧には まだ 出さない)
+- `sharoshi/CLAUDE.md` … フリック社労士
 - `itpass/CLAUDE.md` … フリックITパスポート(衛生管理者の メモは まだ 一覧に 無いが `eisei/CLAUDE.md`)
 - `boki/CLAUDE.md` … フリック日商簿記
 - `kisho/CLAUDE.md` … フリック気象予報士

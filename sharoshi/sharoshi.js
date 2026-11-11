@@ -3,14 +3,14 @@
    ことばは tools/sharoshi/meta.json + tools/sharoshi/terms-*.json(+ maru-*.json・num-*.json・sentaku-*.json)→ tools/sharoshi/terms_js.py が data/sharoshi.json と sharoshi/terms.js(SHAROSHI_TERMS)に する。
    **ことば・問題を 足す・直すのは tools/sharoshi/ の json だけ**
    ・もとは フリック衛生管理者(eisei/eisei.js)を 写して 作った。見た目の class 名(ai-… / ek-…)は この ページだけの CSS
-   ・旅は 10(試験の 科目 そのまま)+ 🏆 マスター。1,000語(旅ごとに 入門15・中級30・上級55)。⚠️ 2026-11-11 は 見本で 労働基準法だけ(terms-<旅>.json が ある 旅だけ 出る)
+   ・旅は 10(試験の 科目 そのまま)+ 🏆 マスター。1,000語(旅ごとに 入門15・中級30・上級55)。terms-<旅>.json が ある 旅だけ 出る
    ・こたえると 説明・📘 法律・📝 科目の 札が 出る。図鑑は 📝 札でも しぼれる
    ・⭕❌ 一問一答・🔢 数字クイズ・📝 選択式の 練習(空欄 1つを 5つから)・🎯 模擬試験(択一式: 5択・70問・210分・科目ごとの 基準点 + 過去の 総得点の 基準点の はば)・❌ まちがえた 問題(宅建士・衛生管理者と 同じ 例外)・🧩 4択クイズ
    ⚠️ ことばを おぼえる ゲーム。本当の 試験の 前には 最新の テキストと 試験の 案内で 確かめる */
 const SHAROSHI = (() => {
   const D = SHAROSHI_TERMS;
   const ROUNDS = 10;
-  const RANK_READY = false;  // かずともの FLICK_MODES に rmroki … rmmas を 足したら true に(speed-king)。false の あいだは ランキングを 出さない・送らない(2026-11-11 は 見本なので まだ)
+  const RANK_READY = true;  // かずともの FLICK_MODES に rmroki … rmmas を 足した(speed-king 2026-11-11)。false に すると ランキングを 出さない・送らない
   const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const fmt = n => n.toLocaleString("ja-JP");
   const JR = D.journeys, JBY = Object.fromEntries(JR.map(j => [j.id, j]));

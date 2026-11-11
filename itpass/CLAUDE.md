@@ -28,7 +28,7 @@
 - **トップの 絵は 入れた**(2026-11-11。`itpass/hero.webp` 1536×1024・`hero=True`・`wordv` = 1)。けいくんの ChatGPT の 絵の **2回目**。1回目は 箱が 9こ(コンピュータと ネットワークが 1つ)・札 36こ中 14こが ゲームに 無い ことば・「まーけていんぐ」「えるえー(SLA)」で 入れなかった。2回目は 10の 箱 × 4こ = 40こ ぜんぶ ゲームの 読み(プログラムで 確かめた)。
   ⚠️ 2回目にも 字の まちがいが 2つ: 6番「へるぶですく」(正しくは へるぷ)・10番の 見出し「じょうほうせきゅりてい」(正しくは せきゅりてぃ)。直した 絵が 届いたら 差しかえて `wordv` を +1(かずともの `games.ts` の `art` の `?v=` も)
 - **アイコンと 題名も 入れた**(2026-11-11)。四角い 絵 1254px → `tools/itpass/art/square-src.png` → `python3 tools/icon_from_square.py itpass`(`iconv` = 2)。題名の 透明 PNG 2172×724 → `tools/itpass/art/title-src.png` → `python3 tools/title_from_art.py itpass` → `itpass/logo-word.webp` 900×211(`logo=True`・`wordv` = 2)。「フリックITパスポート」11字を 読んで 確かめた(T・パ・ト も くずれて いない)。
-  ⚠️ 四角い 絵の 中の 小さな 札には 字の まちがいが いくつか ある(しするむ・あるうりずむ・でーどうぇあ・ふぁいあうぇうる・へるぶ・せきゅりてい)。アイコンの 大きさでは 読めないので そのまま 入れた。直した 絵が 届いたら 差しかえて iconv +1
+  ⚠️ 四角い 絵の 中の 小さな 札には 字の まちがいが いくつか ある(しするむ・あるうりずむ・でーどうぇあ・ふぁいあうぇうる・へるぶ・せきゅりてい)。アイコンの 大きさでは 読めないので そのまま 入れた。直した 絵が 届いたら 差しかえて iconv +1。→ 2026-11-11 に 直った 絵(しすてむ・ぷろじぇくと・へるぷ・ふぁいあうぉーる・せきゅりてぃ)に 差しかえた(iconv = 3)。のこりは ⑦「あるうりずむ」・⑨「でーどうぇあ」
 - (前の メモ)**まだ 仮の アイコン**(`tools/itpass/placeholder_icon.py`。青い 空・ノートパソコン・鍵の 盾。`hero=False`・`logo=False`)。けいくんの ChatGPT の 絵が 届いたら square-src.png → `python3 tools/icon_from_square.py itpass`(`art` を 足して iconv)/ title-src.png → `python3 tools/title_from_art.py itpass` / hero.webp 1536×1024 → `hero=True`。
   ⚠️ 絵を 頼む ときは 実在の ロゴ(OS・スマホ・検索の 会社 など)を 描かせない。人物は 下 3分の1に 小さく。題名の「ITパスポート」の **T と パ**、「ト」が「卜」に なりやすい
 - 確かめかた: `node tools/play-all.mjs itpass/` / `node tools/click-all.mjs itpass/`(W=320 も)。模擬試験は scratchpad の `mock.js`(terms.js と itpass.js を 読んで 100回 組み、100問・35 / 20 / 45・4つの 文の うち 答えが 1つ・同じ 文を 2回 使わない を 確かめる)

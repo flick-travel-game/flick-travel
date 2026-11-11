@@ -1,0 +1,1858 @@
+[
+ {
+  "id": "ko-koyohoken",
+  "name": "雇用保険",
+  "reading": "こようほけん",
+  "journey": "koyo",
+  "category": "しくみ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💼",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-hihokensha",
+   "ko-kihonteate"
+  ],
+  "description": "働く 人が 仕事を 失った とき・育児休業を とる とき・学び直す ときに 給付を 出す 国の 保険です。労働者を 1人でも 雇う 事業は 原則 入ります。"
+ },
+ {
+  "id": "ko-hihokensha",
+  "name": "雇保の被保険者",
+  "reading": "こほのひほけんしゃ",
+  "journey": "koyo",
+  "category": "被保険者",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ippanhihokensha",
+   "ko-tekiyojogai"
+  ],
+  "description": "雇用保険に 入っている 労働者の ことです。週20時間 以上 働き、31日 以上 雇われる 見込みが ある 人が 原則 対象で、会社が 手続きを します。",
+  "acceptedReadings": [
+   "こほのひほけんしゃ",
+   "こようほけんのひほけんしゃ"
+  ]
+ },
+ {
+  "id": "ko-shitsugyo",
+  "name": "失業",
+  "reading": "しつぎょう",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kyushokunomoshikomi",
+   "ko-jukyushikaku"
+  ],
+  "description": "仕事を やめた 人が、働く 気持ちと 力が あるのに 仕事に 就けない 状態の ことです。仕事を 探して いない ときは 法律の「失業」に なりません。"
+ },
+ {
+  "id": "ko-kyushokunomoshikomi",
+  "name": "求職の申込み",
+  "reading": "きゅうしょくのもうしこみ",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shitsugyo",
+   "ko-shitsugyononintei"
+  ],
+  "description": "仕事を 探して いると ハローワークに 申し出る ことです。基本手当を 受ける ときは、離職したあと ハローワークに 行き、まず 求職の 申込みを します。"
+ },
+ {
+  "id": "ko-kihonteate",
+  "name": "基本手当",
+  "reading": "きほんてあて",
+  "journey": "koyo",
+  "category": "基本手当",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "koyo:kihon",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shitsugyononintei",
+   "ko-shoteikyufunissu"
+  ],
+  "description": "仕事を やめて 次の 仕事を 探す あいだ、生活を 支える ために 出る お金です。「失業手当」と よぶ 人も います。雇用保険の 給付の 中心です。"
+ },
+ {
+  "id": "ko-shitsugyononintei",
+  "name": "失業の認定",
+  "reading": "しつぎょうのにんてい",
+  "journey": "koyo",
+  "category": "基本手当",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "koyo:kihon",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kihonteate",
+   "ko-kyushokunomoshikomi"
+  ],
+  "description": "仕事を 探して いた ことを ハローワークで 確かめて もらう ことです。原則 4週間に 1回、前の 28日 ぶんに ついて 行い、その 日数 ぶんの 基本手当が 出ます。"
+ },
+ {
+  "id": "ko-shoteikyufunissu",
+  "name": "所定給付日数",
+  "reading": "しょていきゅうふにっすう",
+  "journey": "koyo",
+  "category": "基本手当",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📅",
+  "mapNode": "koyo:nissu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kihonteate",
+   "ko-santeikisokikan"
+  ],
+  "description": "基本手当を 受けられる 日数の 上限です。雇用保険に 入っていた 長さ・年齢・やめた 理由で 決まり、90日から 360日まで あります。"
+ },
+ {
+  "id": "ko-jikotsugotaishoku",
+  "name": "自己都合退職",
+  "reading": "じこつごうたいしょく",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kyufuseigen",
+   "ko-kyufuseigen1"
+  ],
+  "description": "自分の 都合で 仕事を やめる ことです。正当な 理由が ない ときは、基本手当が すぐには 出ない 期間(給付制限)が あります。"
+ },
+ {
+  "id": "ko-saishushokuteate",
+  "name": "再就職手当",
+  "reading": "さいしゅうしょくてあて",
+  "journey": "koyo",
+  "category": "就職促進",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "koyo:shushoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shikyuzannissu",
+   "ko-saishushokukyufuritsu"
+  ],
+  "description": "基本手当を 多く 残して 早めに 安定した 仕事に 就いた ときに もらえる お祝いの ような お金です。早く 仕事に もどる ことを 応援します。"
+ },
+ {
+  "id": "ko-kyoikukunrenkyufu",
+  "name": "教育訓練給付",
+  "reading": "きょういくくんれんきゅうふ",
+  "journey": "koyo",
+  "category": "教育訓練",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "koyo:kyoiku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ippankyoikukunren",
+   "ko-senmonjissen"
+  ],
+  "description": "働く 人が 厚生労働大臣の 指定した 講座で 学んだ とき、受講料の 一部を 雇用保険から 出す しくみです。資格の 勉強にも 使えます。"
+ },
+ {
+  "id": "ko-ikujikyugyokyufukin",
+  "name": "育児休業給付金",
+  "reading": "いくじきゅうぎょうきゅうふきん",
+  "journey": "koyo",
+  "category": "育児休業",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "👶",
+  "mapNode": "koyo:ikukyu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ikukyu180",
+   "ko-shusshojikyufukin"
+  ],
+  "description": "子どもを 育てる ために 育児休業を とった 人に、休業中の 生活を 支える ために 雇用保険から 出る お金です。会社から 給料が 出ない 期間を 支えます。"
+ },
+ {
+  "id": "ko-kaigokyugyokyufukin",
+  "name": "介護休業給付金",
+  "reading": "かいごきゅうぎょうきゅうふきん",
+  "journey": "koyo",
+  "category": "雇用継続",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "koyo:keizoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kaigo93",
+   "ko-kaigotaisho"
+  ],
+  "description": "家族の 介護の ために 介護休業を とった 人に 雇用保険から 出る お金です。仕事を やめずに 介護と 両立できる ように 支えます。"
+ },
+ {
+  "id": "ko-koyochoseijoseikin",
+  "name": "雇用調整助成金",
+  "reading": "こようちょうせいじょせいきん",
+  "journey": "koyo",
+  "category": "二事業",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "koyo:nijigyo",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-nijigyo",
+   "ko-koyoantei"
+  ],
+  "description": "景気が 悪く なって 会社が 従業員を 休ませる とき、休業手当などの 一部を 国が 助ける お金です。従業員を 解雇せずに 守る ための しくみです。"
+ },
+ {
+  "id": "ko-shokuan",
+  "name": "公共職業安定所",
+  "reading": "こうきょうしょくぎょうあんていしょ",
+  "journey": "koyo",
+  "category": "届出",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "koyo:tetsuzuki",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-rishokuhyo",
+   "ko-shikakushutoku"
+  ],
+  "description": "「ハローワーク」とも いいます。仕事の 紹介と、雇用保険の 手続き(加入の 届出・基本手当の 支給)を する 国の 窓口です。",
+  "acceptedReadings": [
+   "こうきょうしょくぎょうあんていしょ",
+   "はろーわーく"
+  ]
+ },
+ {
+  "id": "ko-rishokuhyo",
+  "name": "離職票",
+  "reading": "りしょくひょう",
+  "journey": "koyo",
+  "category": "届出",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "koyo:tetsuzuki",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-rishokushomeisho",
+   "ko-shokuan"
+  ],
+  "description": "仕事を やめた 人が 基本手当の 手続きで ハローワークに 出す 書類です。会社が 出した 離職証明書を もとに、ハローワークが 交付します。"
+ },
+ {
+  "id": "ko-ippanhihokensha",
+  "name": "一般被保険者",
+  "reading": "いっぱんひほけんしゃ",
+  "journey": "koyo",
+  "category": "被保険者",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👤",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konenreihihokensha",
+   "ko-tankitokurei"
+  ],
+  "description": "高年齢・短期雇用特例・日雇労働の 3つ 以外の 被保険者です。会社員の 多くが これで、離職した ときは 基本手当を 受けます。"
+ },
+ {
+  "id": "ko-konenreihihokensha",
+  "name": "高年齢被保険者",
+  "reading": "こうねんれいひほけんしゃ",
+  "journey": "koyo",
+  "category": "被保険者",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konenreikyushokusha",
+   "ko-konenreikeizokukihon"
+  ],
+  "description": "65歳 以上の 被保険者です(短期雇用特例・日雇を 除く)。離職した ときは 基本手当では なく、一時金の 高年齢求職者給付金を 受けます。"
+ },
+ {
+  "id": "ko-tankitokurei",
+  "name": "短期雇用特例被保険者",
+  "reading": "たんきこようとくれいひほけんしゃ",
+  "journey": "koyo",
+  "category": "被保険者",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏖",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-tokureiichijikin",
+   "ko-ippanhihokensha"
+  ],
+  "description": "季節的に 雇われる 被保険者です(冬だけの 仕事 など)。離職した ときは 一時金の 特例一時金を 受けます。"
+ },
+ {
+  "id": "ko-jukyushikaku",
+  "name": "受給資格",
+  "reading": "じゅきゅうしかく",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-santeitaishokikan",
+   "ko-tokuteijukyu"
+  ],
+  "description": "基本手当を 受けられる 条件です。原則 離職の 日 以前 2年間に、被保険者期間が 通算して 12か月 以上 ある ことが 必要です。"
+ },
+ {
+  "id": "ko-hihokenshakikan",
+  "name": "雇保の被保険者期間",
+  "reading": "こほのひほけんしゃきかん",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗓",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-jukyushikaku",
+   "ko-chinginshiharai"
+  ],
+  "description": "受給資格を 数える ための 期間です。離職日から 1か月ごとに さかのぼり、賃金の 出た 日が 11日 以上 ある 月を 1か月と 数えます。",
+  "acceptedReadings": [
+   "こほのひほけんしゃきかん",
+   "こようほけんのひほけんしゃきかん"
+  ]
+ },
+ {
+  "id": "ko-tokuteijukyu",
+  "name": "特定受給資格者",
+  "reading": "とくていじゅきゅうしかくしゃ",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏚",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-tokuteiriyu",
+   "ko-tokuteinissu"
+  ],
+  "description": "会社の 倒産や 解雇 などで、準備の 時間が ないまま 離職した 人です。受給資格は 1年間に 6か月 以上で よく、所定給付日数も 多く なります。"
+ },
+ {
+  "id": "ko-tokuteiriyu",
+  "name": "特定理由離職者",
+  "reading": "とくていりゆうりしょくしゃ",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📃",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-tokuteijukyu",
+   "ko-tokuteiriyuzantei"
+  ],
+  "description": "期間の 定めの ある 契約が 終わり、更新を 希望したのに 更新されなかった 人 など、やむを得ない 理由で 離職した 人です。受給資格は 1年間に 6か月 以上で よいです。"
+ },
+ {
+  "id": "ko-chinginnichigaku",
+  "name": "賃金日額",
+  "reading": "ちんぎんにちがく",
+  "journey": "koyo",
+  "category": "基本手当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💰",
+  "mapNode": "koyo:kihon",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kihonteatenichigaku",
+   "ko-kyufuritsu"
+  ],
+  "description": "基本手当の もとに なる 1日の 賃金です。最後の 6か月間の 賃金の 合計を 180で わって 出します。賞与 など 3か月を こえる ごとに 出る 賃金は 入れません。"
+ },
+ {
+  "id": "ko-kihonteatenichigaku",
+  "name": "基本手当の日額",
+  "reading": "きほんてあてのにちがく",
+  "journey": "koyo",
+  "category": "基本手当",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "koyo:kihon",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-chinginnichigaku",
+   "ko-nichigakujogen"
+  ],
+  "description": "基本手当として 1日に もらえる 額です。賃金日額に 50%から 80%の 率を かけて 出し、賃金が 低い 人ほど 高い 率に なります。"
+ },
+ {
+  "id": "ko-santeikisokikan",
+  "name": "算定基礎期間",
+  "reading": "さんていきそきかん",
+  "journey": "koyo",
+  "category": "所定給付日数",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "koyo:nissu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shoteikyufunissu",
+   "ko-santeitsusan"
+  ],
+  "description": "所定給付日数を 決める ための、同じ 会社で 被保険者として 雇われた 期間です。前の 会社の 期間も 1年 以内に つながれば 通算します。"
+ },
+ {
+  "id": "ko-shushokukonnan",
+  "name": "就職困難者",
+  "reading": "しゅうしょくこんなんしゃ",
+  "journey": "koyo",
+  "category": "所定給付日数",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🦯",
+  "mapNode": "koyo:nissu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konnannissu",
+   "ko-shoteikyufunissu"
+  ],
+  "description": "障害者 など、仕事を 見つける のが むずかしいと 省令で 決められた 人です。所定給付日数が 長く、45歳 以上 65歳 未満で 1年 以上なら 360日です。"
+ },
+ {
+  "id": "ko-taiki",
+  "name": "基本手当の待期",
+  "reading": "きほんてあてのたいき",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏸",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-taiki7to3",
+   "ko-kyufuseigen"
+  ],
+  "description": "求職の 申込みを した あと、失業して いる 日が 通算 7日に なるまでは 基本手当が 出ない しくみです。病気や けがで 働けない 日も 数えます。"
+ },
+ {
+  "id": "ko-kyufuseigen",
+  "name": "雇保の給付制限",
+  "reading": "こほのきゅうふせいげん",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kyufuseigen1",
+   "ko-kyufuseigen3"
+  ],
+  "description": "待期の あとも しばらく 基本手当が 出ない 期間です。重責解雇や 正当な 理由の ない 自己都合退職の ときに、1か月 以上 3か月 以内で 決まります。",
+  "acceptedReadings": [
+   "こほのきゅうふせいげん",
+   "こようほけんのきゅうふせいげん"
+  ]
+ },
+ {
+  "id": "ko-jukyukikan",
+  "name": "受給期間",
+  "reading": "じゅきゅうきかん",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⌛",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-jukyuenchou",
+   "ko-shoteikyufunissu"
+  ],
+  "description": "基本手当を 受けられる 期限で、離職の 日の 翌日から 原則 1年です。所定給付日数が 残って いても、受給期間が 過ぎると もう 受けられません。"
+ },
+ {
+  "id": "ko-shushokusokushin",
+  "name": "就職促進給付",
+  "reading": "しゅうしょくそくしんきゅうふ",
+  "journey": "koyo",
+  "category": "就職促進",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "koyo:shushoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shugyosokushin",
+   "ko-itenhi"
+  ],
+  "description": "早く 再就職できる ように 後押しする 給付です。就業促進手当・移転費・求職活動支援費の 3つが あります。"
+ },
+ {
+  "id": "ko-shugyosokushin",
+  "name": "就業促進手当",
+  "reading": "しゅうぎょうそくしんてあて",
+  "journey": "koyo",
+  "category": "就職促進",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "koyo:shushoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-saishushokuteate",
+   "ko-joyoshitaku"
+  ],
+  "description": "就職促進給付の 1つで、再就職手当と 常用就職支度手当の 2つが あります。支給残日数が 3分の1 以上 残るか どうかで 分かれます。"
+ },
+ {
+  "id": "ko-ippankyoikukunren",
+  "name": "一般教育訓練",
+  "reading": "いっぱんきょういくくんれん",
+  "journey": "koyo",
+  "category": "教育訓練",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📗",
+  "mapNode": "koyo:kyoiku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-tokuteiippan",
+   "ko-senmonjissen"
+  ],
+  "description": "いちばん 基本の 教育訓練給付です。修了すると 受講料 などの 20%(上限 10万円)が 出ます。"
+ },
+ {
+  "id": "ko-senmonjissen",
+  "name": "専門実践教育訓練",
+  "reading": "せんもんじっせんきょういくくんれん",
+  "journey": "koyo",
+  "category": "教育訓練",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏅",
+  "mapNode": "koyo:kyoiku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ippankyoikukunren",
+   "ko-shikyuyokenkikan"
+  ],
+  "description": "仕事の 力を 長く 高める 講座の 教育訓練給付です。受講料の 50%、資格を 取って 就職すると 70%、さらに 賃金が 5% 以上 上がると 80%に なります。"
+ },
+ {
+  "id": "ko-koyokeizoku",
+  "name": "雇用継続給付",
+  "reading": "こようけいぞくきゅうふ",
+  "journey": "koyo",
+  "category": "雇用継続",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "koyo:keizoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konenreikeizokukihon",
+   "ko-kaigokyugyokyufukin"
+  ],
+  "description": "仕事を 続けにくく なる ときに 支える 給付です。高年齢雇用継続基本給付金・高年齢再就職給付金・介護休業給付金が あります。"
+ },
+ {
+  "id": "ko-konenreikeizokukihon",
+  "name": "高年齢雇用継続基本給付金",
+  "reading": "こうねんれいこようけいぞくきほんきゅうふきん",
+  "journey": "koyo",
+  "category": "雇用継続",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧓",
+  "mapNode": "koyo:keizoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konenreishikyuritsu",
+   "ko-konenreisaishushoku"
+  ],
+  "description": "60歳 以上 65歳 未満で 働き続け、賃金が 60歳の ときの 75% 未満に 下がった 人に 出ます。雇用保険に 5年 以上 入っている ことが 必要です。"
+ },
+ {
+  "id": "ko-ikujikyugyotokyufu",
+  "name": "育児休業等給付",
+  "reading": "いくじきゅうぎょうとうきゅうふ",
+  "journey": "koyo",
+  "category": "育児休業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍼",
+  "mapNode": "koyo:ikukyu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ikujikyugyokyufukin",
+   "ko-shussangoshien"
+  ],
+  "description": "育児休業給付・出生後休業支援給付・育児時短就業給付を まとめた 呼び名です。失業等給付とは 別の グループに 分けられて います。"
+ },
+ {
+  "id": "ko-shusshojikyufukin",
+  "name": "出生時育児休業給付金",
+  "reading": "しゅっしょうじいくじきゅうぎょうきゅうふきん",
+  "journey": "koyo",
+  "category": "育児休業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐣",
+  "mapNode": "koyo:ikukyu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shusshoji28",
+   "ko-shussangoshien"
+  ],
+  "description": "「産後パパ育休」の 給付です。子どもが 生まれて 8週間の うちに とる 休業で、通算 28日まで・2回まで 分けて 受けられます。"
+ },
+ {
+  "id": "ko-nijigyo",
+  "name": "雇用保険二事業",
+  "reading": "こようほけんにじぎょう",
+  "journey": "koyo",
+  "category": "二事業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏗",
+  "mapNode": "koyo:nijigyo",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-koyoantei",
+   "ko-noryokukaihatsu"
+  ],
+  "description": "雇用安定事業と 能力開発事業の 2つを まとめた 呼び名です。失業を 防ぎ、働く 人の 力を 高める ための 事業です。"
+ },
+ {
+  "id": "ko-koyoantei",
+  "name": "雇用安定事業",
+  "reading": "こようあんていじぎょう",
+  "journey": "koyo",
+  "category": "二事業",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🛡",
+  "mapNode": "koyo:nijigyo",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-koyochoseijoseikin",
+   "ko-nijigyo"
+  ],
+  "description": "失業を 防ぐ ための 事業です。休業させる 会社への 助成・高年齢者の 雇用延長・障害者の 雇入れの 支援 などを 行います。"
+ },
+ {
+  "id": "ko-shikakushutoku",
+  "name": "雇保の資格取得届",
+  "reading": "こほのしかくしゅとくとどけ",
+  "journey": "koyo",
+  "category": "届出",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "koyo:tetsuzuki",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-todokedekigen",
+   "ko-shikakusoshitsu"
+  ],
+  "description": "労働者を 雇って 被保険者に なった ときに、会社が ハローワークに 出す 届出です。被保険者に なった 日の 月の 翌月10日までに 出します。",
+  "acceptedReadings": [
+   "こほのしかくしゅとくとどけ",
+   "こようほけんのしかくしゅとくとどけ"
+  ]
+ },
+ {
+  "id": "ko-shikakusoshitsu",
+  "name": "雇保の資格喪失届",
+  "reading": "こほのしかくそうしつとどけ",
+  "journey": "koyo",
+  "category": "届出",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📮",
+  "mapNode": "koyo:tetsuzuki",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-rishokushomeisho",
+   "ko-todokedekigen"
+  ],
+  "description": "被保険者が 離職した ときなどに 会社が 出す 届出です。その 翌日から 10日 以内に、離職した 人には 離職証明書を そえて 出します。",
+  "acceptedReadings": [
+   "こほのしかくそうしつとどけ",
+   "こようほけんのしかくそうしつとどけ"
+  ]
+ },
+ {
+  "id": "ko-rishokushomeisho",
+  "name": "離職証明書",
+  "reading": "りしょくしょうめいしょ",
+  "journey": "koyo",
+  "category": "届出",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🖊",
+  "mapNode": "koyo:tetsuzuki",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-rishokuhyo",
+   "ko-shikakusoshitsu"
+  ],
+  "description": "会社が 離職の 理由と 賃金を 書いて ハローワークに 出す 書類です。これを もとに 離職票が 作られるので、正しく 書く ことが 大切です。"
+ },
+ {
+  "id": "ko-koyojiko",
+  "name": "雇保の時効",
+  "reading": "こほのじこう",
+  "journey": "koyo",
+  "category": "時効・不服",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "koyo:jiko",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-fuseijukyu",
+   "ko-koyoshinsakan"
+  ],
+  "description": "雇用保険の 給付を 受ける 権利は 2年で 時効に なります。労災の 障害・遺族の 給付の 5年と ちがい、雇用保険の 給付は 2年です。",
+  "acceptedReadings": [
+   "こほのじこう",
+   "こようほけんのじこう"
+  ]
+ },
+ {
+  "id": "ko-koyoshinsakan",
+  "name": "雇用保険審査官",
+  "reading": "こようほけんしんさかん",
+  "journey": "koyo",
+  "category": "時効・不服",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "koyo:jiko",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shinsaseikyu",
+   "ko-saishinsa"
+  ],
+  "description": "雇用保険の 処分に 不服が ある ときに、さいしょに 審査請求を する 相手です。都道府県労働局に 置かれて います。"
+ },
+ {
+  "id": "ko-shinsaseikyu",
+  "name": "雇保の審査請求",
+  "reading": "こほのしんさせいきゅう",
+  "journey": "koyo",
+  "category": "時効・不服",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗣",
+  "mapNode": "koyo:jiko",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-koyoshinsakan",
+   "ko-saishinsa"
+  ],
+  "description": "被保険者に なった ことの 確認や 給付の 処分に 不服が ある とき、雇用保険審査官に 見直しを 求める ことです。決定にも 不服なら 再審査請求へ 進みます。",
+  "acceptedReadings": [
+   "こほのしんさせいきゅう",
+   "こようほけんのしんさせいきゅう"
+  ]
+ },
+ {
+  "id": "ko-hiyatoi",
+  "name": "日雇労働被保険者",
+  "reading": "ひやといろうどうひほけんしゃ",
+  "journey": "koyo",
+  "category": "被保険者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔨",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-hiyatoikyushoku",
+   "ko-tekiyojogai"
+  ],
+  "description": "日々 雇われる 人や 30日 以内の 期間で 雇われる 人の 被保険者です。⭐ 前2月の 各月に 18日 以上・または 31日 以上 同じ 会社で 働くと 原則 一般などに 切りかわります。"
+ },
+ {
+  "id": "ko-hiyatoikyushoku",
+  "name": "日雇労働求職者給付金",
+  "reading": "ひやといろうどうきゅうしょくしゃきゅうふきん",
+  "journey": "koyo",
+  "category": "被保険者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎫",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-hiyatoi",
+   "ko-tokureiichijikin"
+  ],
+  "description": "日雇労働被保険者が 仕事の ない 日に 受ける 給付です。⭐ 前2月間に 印紙保険料が 通算 26日分 以上 納められて いる ことが 条件です。"
+ },
+ {
+  "id": "ko-tekiyojogai",
+  "name": "雇保の適用除外",
+  "reading": "こほのてきようじょがい",
+  "journey": "koyo",
+  "category": "被保険者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-hihokensha",
+   "ko-multijob"
+  ],
+  "description": "週20時間 未満・31日 以上 雇われる 見込みが ない・昼間学生 などは 被保険者に なりません。⭐ 2028年10月から 週10時間 未満に 変わります。",
+  "acceptedReadings": [
+   "こほのてきようじょがい",
+   "こようほけんのてきようじょがい"
+  ]
+ },
+ {
+  "id": "ko-zanteinini",
+  "name": "雇保の暫定任意適用事業",
+  "reading": "こほのざんていにんいてきようじぎょう",
+  "journey": "koyo",
+  "category": "被保険者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌾",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-koyohoken",
+   "ko-tekiyojogai"
+  ],
+  "description": "個人の 農林水産業の 一部は 加入が 任意です。⭐ 加入の 申請は 労働者の 2分の1 以上の 同意、やめる 申請は 4分の3 以上の 同意が 必要です。",
+  "acceptedReadings": [
+   "こほのざんていにんいてきようじぎょう",
+   "こようほけんのざんていにんいてきようじぎょう"
+  ]
+ },
+ {
+  "id": "ko-multijob",
+  "name": "マルチジョブホルダー",
+  "reading": "まるちじょぶほるだー",
+  "journey": "koyo",
+  "category": "被保険者",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "koyo:hihokensha",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konenreihihokensha",
+   "ko-tekiyojogai"
+  ],
+  "description": "2つ 以上の 会社で 働く 65歳 以上の 人です。⭐ 1つでは 週20時間 未満でも、2つの 合計が 週20時間 以上なら、本人が 申し出て 高年齢被保険者に なれます。"
+ },
+ {
+  "id": "ko-santeitaishokikan",
+  "name": "算定対象期間",
+  "reading": "さんていたいしょうきかん",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-jukyushikaku",
+   "ko-santeikisokikan"
+  ],
+  "description": "受給資格を 見る 離職前 2年間の ことです。⭐ 病気 などで 30日 以上 賃金が 出なかった ときは その 日数を 足し、最長 4年まで のびます。算定基礎期間と 区別します。"
+ },
+ {
+  "id": "ko-chinginshiharai",
+  "name": "賃金支払基礎日数",
+  "reading": "ちんぎんしはらいきそにっすう",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-hihokenshakikan",
+   "ko-soshitsuotobi"
+  ],
+  "description": "被保険者期間の 1か月を 数える 日数です。⭐ 11日 以上で 1か月、足りない 月も 80時間 以上なら 数えます。2028年10月から 6日 以上・40時間 以上に 変わります。"
+ },
+ {
+  "id": "ko-soshitsuotobi",
+  "name": "喪失応当日",
+  "reading": "そうしつおうとうび",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-hihokenshakikan",
+   "ko-chinginshiharai"
+  ],
+  "description": "被保険者で なくなった 日と、各月で 同じ 日付の 日です。⭐ 被保険者期間は この 日から 1か月ずつ さかのぼって 区切り、暦の 月で 数えるのでは ありません。"
+ },
+ {
+  "id": "ko-tokutei2",
+  "name": "特定受給資格者と特定理由離職者",
+  "reading": "とくていじゅきゅうしかくしゃととくていりゆうりしょくしゃ",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-tokuteijukyu",
+   "ko-tokuteiriyu"
+  ],
+  "description": "⭐ 受給資格は どちらも 1年間に 6か月 以上。倒産・解雇 などが 特定受給資格者、更新されなかった 有期契約 などが 特定理由離職者。所定給付日数の 表の あつかいが ちがいます。"
+ },
+ {
+  "id": "ko-konenreikyushokusha",
+  "name": "高年齢求職者給付金",
+  "reading": "こうねんれいきゅうしょくしゃきゅうふきん",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧳",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konenreihihokensha",
+   "ko-konenreikeizokukihon"
+  ],
+  "description": "高年齢被保険者が 離職した ときの 一時金です。1年 以上なら 基本手当の 50日分、未満なら 30日分。⭐ 働き続ける 60歳台の 高年齢雇用継続給付とは 別ものです。"
+ },
+ {
+  "id": "ko-tokureiichijikin",
+  "name": "特例一時金",
+  "reading": "とくれいいちじきん",
+  "journey": "koyo",
+  "category": "受給資格",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎐",
+  "mapNode": "koyo:shikaku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-tankitokurei",
+   "ko-konenreikyushokusha"
+  ],
+  "description": "短期雇用特例被保険者が 離職した ときの 一時金です。⭐ 法の 字は 基本手当の 30日分ですが、当分の間 40日分。離職の 翌日から 6か月 以内に 認定を 受けます。"
+ },
+ {
+  "id": "ko-kyufuritsu",
+  "name": "基本手当の給付率",
+  "reading": "きほんてあてのきゅうふりつ",
+  "journey": "koyo",
+  "category": "基本手当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "koyo:kihon",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kihonteatenichigaku",
+   "ko-chinginnichigaku"
+  ],
+  "description": "賃金日額に かける 率で、原則 50%〜80%です。⭐ 離職の 日に 60歳 以上 65歳 未満の 人は 45%〜80%と、下の 率が 低く なります。"
+ },
+ {
+  "id": "ko-nichigakujogen",
+  "name": "基本手当日額の上限",
+  "reading": "きほんてあてにちがくのじょうげん",
+  "journey": "koyo",
+  "category": "基本手当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔝",
+  "mapNode": "koyo:kihon",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-nichigakukagen",
+   "ko-kihonteatenichigaku"
+  ],
+  "description": "年齢で ちがいます。2026年8月1日から 30歳 未満 7,450円・30〜44歳 8,270円・45〜59歳 9,110円・60〜64歳 7,830円。⭐ 45〜59歳が いちばん 高いです。"
+ },
+ {
+  "id": "ko-nichigakukagen",
+  "name": "基本手当日額の下限",
+  "reading": "きほんてあてにちがくのかげん",
+  "journey": "koyo",
+  "category": "基本手当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔻",
+  "mapNode": "koyo:kihon",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-nichigakujogen",
+   "ko-koujogaku"
+  ],
+  "description": "2026年8月1日から すべての 年齢で 2,562円です。上限と ちがい 年齢で 分かれません。⭐ 最低賃金を もとに 毎年 8月1日に 見直されます。"
+ },
+ {
+  "id": "ko-koujogaku",
+  "name": "基本手当の控除額",
+  "reading": "きほんてあてのこうじょがく",
+  "journey": "koyo",
+  "category": "基本手当",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "koyo:kihon",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kihonteatenichigaku",
+   "ko-shitsugyononintei"
+  ],
+  "description": "失業中に 少し 働いて 収入が あった とき、基本手当を 減らす 計算で 引く 額です。⭐ 2026年8月1日から 1,429円(前は 1,391円)。"
+ },
+ {
+  "id": "ko-ippanrishoku",
+  "name": "一般の離職者",
+  "reading": "いっぱんのりしょくしゃ",
+  "journey": "koyo",
+  "category": "所定給付日数",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙂",
+  "mapNode": "koyo:nissu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shoteikyufunissu",
+   "ko-tokuteinissu"
+  ],
+  "description": "自己都合や 定年 などで 離職した 人です。⭐ 所定給付日数は 年齢に 関係なく、10年 未満 90日・20年 未満 120日・20年 以上 150日です。"
+ },
+ {
+  "id": "ko-tokuteinissu",
+  "name": "特定受給資格者の給付日数",
+  "reading": "とくていじゅきゅうしかくしゃのきゅうふにっすう",
+  "journey": "koyo",
+  "category": "所定給付日数",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "koyo:nissu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-tokuteijukyu",
+   "ko-ippanrishoku"
+  ],
+  "description": "年齢と 算定基礎期間で 90日〜330日です。⭐ いちばん 長い 330日は 45歳 以上 60歳 未満で 20年 以上の 人。受給期間も 1年に 30日 足されます。"
+ },
+ {
+  "id": "ko-konnannissu",
+  "name": "就職困難者の給付日数",
+  "reading": "しゅうしょくこんなんしゃのきゅうふにっすう",
+  "journey": "koyo",
+  "category": "所定給付日数",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗂",
+  "mapNode": "koyo:nissu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shushokukonnan",
+   "ko-tokuteinissu"
+  ],
+  "description": "算定基礎期間 1年 未満は 150日、1年 以上は 45歳 未満 300日・45歳 以上 65歳 未満 360日です。⭐ 360日の 人は 受給期間が 1年に 60日 足されます。"
+ },
+ {
+  "id": "ko-tokuteiriyuzantei",
+  "name": "特定理由離職者の暫定措置",
+  "reading": "とくていりゆうりしょくしゃのざんていそち",
+  "journey": "koyo",
+  "category": "所定給付日数",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕰",
+  "mapNode": "koyo:nissu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-tokuteiriyu",
+   "ko-tokuteinissu"
+  ],
+  "description": "更新されずに 契約が 終わった 特定理由離職者は、離職日が 2027年3月31日 までなら、所定給付日数が 特定受給資格者と 同じに なる 期限つきの 特例です。"
+ },
+ {
+  "id": "ko-santeitsusan",
+  "name": "算定基礎期間の通算",
+  "reading": "さんていきそきかんのつうさん",
+  "journey": "koyo",
+  "category": "所定給付日数",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "koyo:nissu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-santeikisokikan",
+   "ko-shoteikyufunissu"
+  ],
+  "description": "前の 会社の 期間も 1年 以内に つながれば 足せます。⭐ ただし 前に 基本手当や 特例一時金を 受けた ときの 期間と、育児休業給付金を 受けた 休業期間は 足しません。"
+ },
+ {
+  "id": "ko-taiki7to3",
+  "name": "待期7日と待期3日",
+  "reading": "たいきなのかとたいきみっか",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-taiki",
+   "ko-kyufuseigen"
+  ],
+  "description": "⭐ 雇用保険の 基本手当の 待期は 通算 7日。健康保険の 傷病手当金・労災の 休業補償給付の 待期は 3日です。数を 取りちがえない ように しましょう。"
+ },
+ {
+  "id": "ko-kyufuseigen1",
+  "name": "給付制限1か月",
+  "reading": "きゅうふせいげんいっかげつ",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "1️⃣",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kyufuseigen3",
+   "ko-kyufuseigen"
+  ],
+  "description": "⭐ 2025年4月1日 以後に 正当な 理由なく 自己都合で 離職した ときの 給付制限は 原則 1か月です。前は 原則 2か月でした。"
+ },
+ {
+  "id": "ko-kyufuseigen3",
+  "name": "給付制限3か月",
+  "reading": "きゅうふせいげんさんかげつ",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "3️⃣",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kyufuseigen1",
+   "ko-jusekikaiko"
+  ],
+  "description": "⭐ 重責解雇の ときと、5年間に 2回 以上 自己都合で 受給資格決定を 受けて いて 今回が 3回目 以上の ときは、給付制限が 3か月に なります。"
+ },
+ {
+  "id": "ko-jusekikaiko",
+  "name": "重責解雇",
+  "reading": "じゅうせきかいこ",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚠️",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kyufuseigen3",
+   "ko-jikotsugotaishoku"
+  ],
+  "description": "自分の 重い 責任で 解雇された ことです。⭐ 会社都合の 解雇と ちがい、特定受給資格者には ならず、給付制限が 3か月 つきます。"
+ },
+ {
+  "id": "ko-kyufuseigenkaijo",
+  "name": "給付制限の解除",
+  "reading": "きゅうふせいげんのかいじょ",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔓",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kyufuseigen1",
+   "ko-ippankyoikukunren"
+  ],
+  "description": "⭐ 2025年4月から、自己都合で 離職しても、離職前 1年 以内や 離職後に 教育訓練 などを 受けると 給付制限が 解除されます。学び直しを 後押しする しくみです。"
+ },
+ {
+  "id": "ko-jukyuenchou",
+  "name": "受給期間の延長",
+  "reading": "じゅきゅうきかんのえんちょう",
+  "journey": "koyo",
+  "category": "待期・給付制限",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "koyo:seigen",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-jukyukikan",
+   "ko-shoteikyufunissu"
+  ],
+  "description": "妊娠・出産・育児・病気 などで 引き続き 30日 以上 働けない ときは、申し出て その 日数を 受給期間に 足せます。⭐ 足しても 最長 4年までです。"
+ },
+ {
+  "id": "ko-shikyuzannissu",
+  "name": "支給残日数",
+  "reading": "しきゅうざんにっすう",
+  "journey": "koyo",
+  "category": "就職促進",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "koyo:shushoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-saishushokuteate",
+   "ko-saishushokukyufuritsu"
+  ],
+  "description": "所定給付日数の うち まだ 受けて いない 日数です。⭐ 再就職手当は 3分の1 以上 残る ときだけ。3分の1 未満なら 常用就職支度手当の 道に なります。"
+ },
+ {
+  "id": "ko-saishushokukyufuritsu",
+  "name": "再就職手当の給付率",
+  "reading": "さいしゅうしょくてあてのきゅうふりつ",
+  "journey": "koyo",
+  "category": "就職促進",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "koyo:shushoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shikyuzannissu",
+   "ko-saishushokuyoken"
+  ],
+  "description": "⭐ 基本手当日額 × 支給残日数 × 60%。残日数が 3分の2 以上なら 70%です。早く 決まるほど 多く なり、受けた ぶんは 基本手当を 受けたと みなされます。"
+ },
+ {
+  "id": "ko-saishushokuyoken",
+  "name": "再就職手当の要件",
+  "reading": "さいしゅうしょくてあてのようけん",
+  "journey": "koyo",
+  "category": "就職促進",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☑️",
+  "mapNode": "koyo:shushoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-saishushokuteate",
+   "ko-kyufuseigen1"
+  ],
+  "description": "⭐ 待期の あとの 就職・前の 会社に もどるので ない・申込みの 前に 約束した 会社で ない など。給付制限中は はじめ 1か月は ハローワーク などの 紹介が 必要です。"
+ },
+ {
+  "id": "ko-joyoshitaku",
+  "name": "常用就職支度手当",
+  "reading": "じょうようしゅうしょくしたくてあて",
+  "journey": "koyo",
+  "category": "就職促進",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "koyo:shushoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shugyosokushin",
+   "ko-shushokukonnan"
+  ],
+  "description": "障害者 など 就職が むずかしい 人が 安定した 仕事に 就いた ときの 手当です。⭐ 支給残日数が 3分の1 未満でも 受けられ、高年齢・特例・日雇の 受給資格者も 対象です。"
+ },
+ {
+  "id": "ko-itenhi",
+  "name": "移転費",
+  "reading": "いてんひ",
+  "journey": "koyo",
+  "category": "就職促進",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "koyo:shushoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shushokusokushin",
+   "ko-shokuan"
+  ],
+  "description": "ハローワークの 紹介した 仕事に 就く ためや 公共職業訓練を 受ける ために 住所を 変える とき、引っ越しの 費用を 出す 就職促進給付です。"
+ },
+ {
+  "id": "ko-tokuteiippan",
+  "name": "特定一般教育訓練",
+  "reading": "とくていいっぱんきょういくくんれん",
+  "journey": "koyo",
+  "category": "教育訓練",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📘",
+  "mapNode": "koyo:kyoiku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ippankyoikukunren",
+   "ko-senmonjissen"
+  ],
+  "description": "早く 再就職や キャリア形成に つながる 講座です。⭐ 受講料の 40%(上限 20万円)、資格を 取って 就職 などで 50%(上限 25万円)。一般の 20%と 区別します。"
+ },
+ {
+  "id": "ko-shikyuyokenkikan",
+  "name": "支給要件期間",
+  "reading": "しきゅうようけんきかん",
+  "journey": "koyo",
+  "category": "教育訓練",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "koyo:kyoiku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kyoikukunrenkyufu",
+   "ko-senmonjissen"
+  ],
+  "description": "教育訓練給付に 必要な 雇用保険の 期間です。⭐ 原則 3年 以上。はじめての 人は 一般・特定一般 1年、専門実践 2年で よく、前の 受給から 3年は 受けられません。"
+ },
+ {
+  "id": "ko-kyoikukyuka",
+  "name": "教育訓練休暇給付金",
+  "reading": "きょういくくんれんきゅうかきゅうふきん",
+  "journey": "koyo",
+  "category": "教育訓練",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "koyo:kyoiku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shikyuyokenkikan",
+   "ko-kyoikukunrenkyufu"
+  ],
+  "description": "2025年10月から。⭐ 一般被保険者が 無給の 休暇を とって 学ぶ とき、基本手当の 日額に あたる 額が 出ます。算定基礎期間 5年 以上が 条件です。"
+ },
+ {
+  "id": "ko-ippanshinsei",
+  "name": "一般教育訓練の支給申請",
+  "reading": "いっぱんきょういくくんれんのしきゅうしんせい",
+  "journey": "koyo",
+  "category": "教育訓練",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "koyo:kyoiku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ippankyoikukunren",
+   "ko-shikyuyokenkikan"
+  ],
+  "description": "⭐ 修了した 日の 翌日から 1か月 以内に ハローワークに 申請します。計算した 額が 4,000円を こえない ときは 支給されません。"
+ },
+ {
+  "id": "ko-konenreishikyuritsu",
+  "name": "高年齢雇用継続給付の支給率",
+  "reading": "こうねんれいこようけいぞくきゅうふのしきゅうりつ",
+  "journey": "koyo",
+  "category": "雇用継続",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "koyo:keizoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konenreikeizokukihon",
+   "ko-konenreisaishushoku"
+  ],
+  "description": "⭐ 2025年4月1日 以後に 60歳に なった 人は、賃金が 60歳時点の 64% 未満で 賃金の 10%。前は 61% 以下で 15%でした。"
+ },
+ {
+  "id": "ko-konenreisaishushoku",
+  "name": "高年齢再就職給付金",
+  "reading": "こうねんれいさいしゅうしょくきゅうふきん",
+  "journey": "koyo",
+  "category": "雇用継続",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌅",
+  "mapNode": "koyo:keizoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konenreikeizokukihon",
+   "ko-saishushokuteate"
+  ],
+  "description": "60歳 以後に 基本手当を 100日 以上 残して 再就職した 人の 給付です。⭐ 残日数 200日 以上で 2年、100日 以上で 1年。再就職手当とは どちらか 一方です。"
+ },
+ {
+  "id": "ko-kaigo93",
+  "name": "介護休業給付金の93日",
+  "reading": "かいごきゅうぎょうきゅうふきんのきゅうじゅうさんにち",
+  "journey": "koyo",
+  "category": "雇用継続",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📆",
+  "mapNode": "koyo:keizoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kaigokyugyokyufukin",
+   "ko-kaigotaisho"
+  ],
+  "description": "⭐ 同じ 家族に ついて 通算 93日まで、3回まで 分けて 受けられます。額は 賃金の 67%(法の 字は 40%で、当分の間 67%)です。"
+ },
+ {
+  "id": "ko-kaigotaisho",
+  "name": "介護休業給付の対象家族",
+  "reading": "かいごきゅうぎょうきゅうふのたいしょうかぞく",
+  "journey": "koyo",
+  "category": "雇用継続",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👪",
+  "mapNode": "koyo:keizoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kaigo93",
+   "ko-kaigokyugyokyufukin"
+  ],
+  "description": "配偶者(事実婚も)・父母・子・配偶者の 父母と、省令で 定める 家族です。⭐ 休業を 始める 前 2年間に みなし被保険者期間が 12か月 以上 必要です。"
+ },
+ {
+  "id": "ko-konenreikubetsu",
+  "name": "高年齢被保険者と高年齢雇用継続給付",
+  "reading": "こうねんれいひほけんしゃとこうねんれいこようけいぞくきゅうふ",
+  "journey": "koyo",
+  "category": "雇用継続",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "koyo:keizoku",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-konenreihihokensha",
+   "ko-konenreikeizokukihon"
+  ],
+  "description": "⭐ 高年齢被保険者は 65歳 以上。高年齢雇用継続給付は 60歳 以上 65歳 未満で 働く 人。年齢の 線が ちがうので まぜない ように しましょう。"
+ },
+ {
+  "id": "ko-shussangoshien",
+  "name": "出生後休業支援給付金",
+  "reading": "しゅっせいごきゅうぎょうしえんきゅうふきん",
+  "journey": "koyo",
+  "category": "育児休業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💞",
+  "mapNode": "koyo:ikukyu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shusshojikyufukin",
+   "ko-ikukyu180"
+  ],
+  "description": "2025年4月から。⭐ 本人と 配偶者が それぞれ 14日 以上 休むと(配偶者の 要件が いらない 場合も あり)、28日を 上限に 賃金の 13%が 出ます。67%と 足すと 80%です。"
+ },
+ {
+  "id": "ko-jitan",
+  "name": "育児時短就業給付金",
+  "reading": "いくじじたんしゅうぎょうきゅうふきん",
+  "journey": "koyo",
+  "category": "育児休業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏲",
+  "mapNode": "koyo:ikukyu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ikujikyugyotokyufu",
+   "ko-konenreishikyuritsu"
+  ],
+  "description": "2025年4月から。⭐ 2歳 未満の 子を 育てる ため 短い 時間で 働く とき、賃金の 10%が 出ます。高年齢雇用継続給付とは どちらか 一方です。"
+ },
+ {
+  "id": "ko-ikukyu180",
+  "name": "育児休業給付金の180日",
+  "reading": "いくじきゅうぎょうきゅうふきんのひゃくはちじゅうにち",
+  "journey": "koyo",
+  "category": "育児休業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "koyo:ikukyu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ikujikyugyokyufukin",
+   "ko-ikukyuenchou"
+  ],
+  "description": "⭐ 育児休業給付金は 休業日数が 通算 180日に なるまでは 賃金の 67%、そのあとは 50%です。出生時育児休業給付金も 67%です。"
+ },
+ {
+  "id": "ko-ikukyuenchou",
+  "name": "育児休業給付金の支給延長",
+  "reading": "いくじきゅうぎょうきゅうふきんのしきゅうえんちょう",
+  "journey": "koyo",
+  "category": "育児休業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏫",
+  "mapNode": "koyo:ikukyu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-ikukyu180",
+   "ko-ikujikyugyokyufukin"
+  ],
+  "description": "原則は 子が 1歳に なるまで。⭐ 保育所に 入れない などの ときは 1歳6か月、さらに 2歳まで のびます。両親とも 休む ときは 1歳2か月までの 特例も あります。"
+ },
+ {
+  "id": "ko-shusshoji28",
+  "name": "出生時育児休業給付金の28日",
+  "reading": "しゅっしょうじいくじきゅうぎょうきゅうふきんのにじゅうはちにち",
+  "journey": "koyo",
+  "category": "育児休業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍀",
+  "mapNode": "koyo:ikukyu",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shusshojikyufukin",
+   "ko-shussangoshien"
+  ],
+  "description": "⭐ 子の 出生から 8週間の うちに 通算 28日まで、2回まで。額は 賃金 × 休業日数 × 67%です。母の 対象期間が 16週間の 出生後休業支援給付金と 区別します。"
+ },
+ {
+  "id": "ko-noryokukaihatsu",
+  "name": "能力開発事業",
+  "reading": "のうりょくかいはつじぎょう",
+  "journey": "koyo",
+  "category": "二事業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛠",
+  "mapNode": "koyo:nijigyo",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-nijigyo",
+   "ko-nijigyofutan"
+  ],
+  "description": "働く 人の 仕事の 力を 高める ための 事業です。⭐ 雇用安定事業と あわせて 雇用保険二事業。失業等給付とは ちがい、保険料は 会社だけが 負担します。"
+ },
+ {
+  "id": "ko-shitsugyotokyufu",
+  "name": "失業等給付",
+  "reading": "しつぎょうとうきゅうふ",
+  "journey": "koyo",
+  "category": "二事業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "koyo:nijigyo",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-kyushokushakyufu",
+   "ko-shushokusokushin"
+  ],
+  "description": "⭐ 求職者給付・就職促進給付・教育訓練給付・雇用継続給付の 4つです。育児休業等給付は 別の 章の 給付で、ここには 入りません。"
+ },
+ {
+  "id": "ko-kyushokushakyufu",
+  "name": "求職者給付",
+  "reading": "きゅうしょくしゃきゅうふ",
+  "journey": "koyo",
+  "category": "二事業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "koyo:nijigyo",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shitsugyotokyufu",
+   "ko-kihonteate"
+  ],
+  "description": "一般被保険者は 基本手当・技能習得手当・寄宿手当・傷病手当。⭐ 高年齢は 高年齢求職者給付金、短期雇用特例は 特例一時金、日雇は 日雇労働求職者給付金です。"
+ },
+ {
+  "id": "ko-nijigyofutan",
+  "name": "二事業の事業主負担",
+  "reading": "にじぎょうのじぎょうぬしふたん",
+  "journey": "koyo",
+  "category": "二事業",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏦",
+  "mapNode": "koyo:nijigyo",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-nijigyo",
+   "ko-noryokukaihatsu"
+  ],
+  "description": "⭐ 雇用保険の 保険料の うち 二事業の ぶんは 会社だけが 負担し、働く 人は 払いません。失業等給付と 育児休業等給付の ぶんは 会社と 働く 人で 負担します。"
+ },
+ {
+  "id": "ko-hihokenkakunin",
+  "name": "被保険者となったことの確認",
+  "reading": "ひほけんしゃとなったことのかくにん",
+  "journey": "koyo",
+  "category": "届出",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "koyo:tetsuzuki",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shikakushutoku",
+   "ko-shinsaseikyu"
+  ],
+  "description": "会社の 届出 などを もとに、厚生労働大臣(ハローワーク)が 被保険者に なった ことを 確かめる ことです。⭐ この 確認も 審査請求の 対象に なります。"
+ },
+ {
+  "id": "ko-todokedekigen",
+  "name": "雇保の届出の期限",
+  "reading": "こほのとどけでのきげん",
+  "journey": "koyo",
+  "category": "届出",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "koyo:tetsuzuki",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shikakushutoku",
+   "ko-shikakusoshitsu"
+  ],
+  "description": "⭐ 資格取得届は なった 日の 月の 翌月10日まで、資格喪失届は 翌日から 10日 以内。健康保険の 資格取得届の 5日 以内とも ちがうので 区別しましょう。",
+  "acceptedReadings": [
+   "こほのとどけでのきげん",
+   "こようほけんのとどけでのきげん"
+  ]
+ },
+ {
+  "id": "ko-saishinsa",
+  "name": "雇保の再審査請求",
+  "reading": "こほのさいしんさせいきゅう",
+  "journey": "koyo",
+  "category": "時効・不服",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛",
+  "mapNode": "koyo:jiko",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shinsaseikyu",
+   "ko-shinsazenchi"
+  ],
+  "description": "雇用保険審査官の 決定に 不服が ある とき、労働保険審査会に 求める 見直しです。⭐ 労災保険と 同じ 2段の しくみです。",
+  "acceptedReadings": [
+   "こほのさいしんさせいきゅう",
+   "こようほけんのさいしんさせいきゅう"
+  ]
+ },
+ {
+  "id": "ko-shinsazenchi",
+  "name": "雇保の審査請求前置",
+  "reading": "こほのしんさせいきゅうぜんち",
+  "journey": "koyo",
+  "category": "時効・不服",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚦",
+  "mapNode": "koyo:jiko",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shinsaseikyu",
+   "ko-saishinsa"
+  ],
+  "description": "⭐ 処分の 取消しの 訴えは、雇用保険審査官の 決定を 経てから。審査請求から 3か月 決定が ない ときは、棄却されたと みなして 進めます。",
+  "acceptedReadings": [
+   "こほのしんさせいきゅうぜんち",
+   "こようほけんのしんさせいきゅうぜんち"
+  ]
+ },
+ {
+  "id": "ko-fuseijukyu",
+  "name": "雇保の不正受給",
+  "reading": "こほのふせいじゅきゅう",
+  "journey": "koyo",
+  "category": "時効・不服",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛑",
+  "mapNode": "koyo:jiko",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-koyojiko",
+   "ko-shinsaseikyu"
+  ],
+  "description": "偽りで 給付を 受けると、その 日 以後の 基本手当は 出ず、返還に 加えて 不正の 額の 2倍 以下の 納付を 命じられる ことが あります。正しく 申告する ことが 大切です。",
+  "acceptedReadings": [
+   "こほのふせいじゅきゅう",
+   "こようほけんのふせいじゅきゅう"
+  ]
+ },
+ {
+  "id": "ko-hokenryofufuku",
+  "name": "雇保と徴収法の不服申立て",
+  "reading": "こほとちょうしゅうほうのふふくもうしたて",
+  "journey": "koyo",
+  "category": "時効・不服",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "koyo:jiko",
+  "field": "雇用法",
+  "ruleset": "雇用",
+  "relatedTerms": [
+   "ko-shinsaseikyu",
+   "ko-saishinsa"
+  ],
+  "description": "⭐ 給付や 被保険者の 確認は 雇用保険審査官へ。保険料に 関する 処分は 徴収法の 話で、雇用保険審査官への 審査請求の 対象では ありません。"
+ }
+]

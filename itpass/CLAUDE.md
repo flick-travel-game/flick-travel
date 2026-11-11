@@ -36,3 +36,5 @@
 - (前の メモ)**まだ 仮の アイコン**(`tools/itpass/placeholder_icon.py`。青い 空・ノートパソコン・鍵の 盾。`hero=False`・`logo=False`)。けいくんの ChatGPT の 絵が 届いたら square-src.png → `python3 tools/icon_from_square.py itpass`(`art` を 足して iconv)/ title-src.png → `python3 tools/title_from_art.py itpass` / hero.webp 1536×1024 → `hero=True`。
   ⚠️ 絵を 頼む ときは 実在の ロゴ(OS・スマホ・検索の 会社 など)を 描かせない。人物は 下 3分の1に 小さく。題名の「ITパスポート」の **T と パ**、「ト」が「卜」に なりやすい
 - 確かめかた: `node tools/play-all.mjs itpass/` / `node tools/click-all.mjs itpass/`(W=320 も)。模擬試験は scratchpad の `mock.js`(terms.js と itpass.js を 読んで 100回 組み、100問・35 / 20 / 45・4つの 文の うち 答えが 1つ・同じ 文を 2回 使わない を 確かめる)
+
+- 2026-11-11: 四角い 絵を ⑦「あるごりずむ」⑨「でーたべーす」が 直った もの(iconv = 4)に。のこりは ⑩「ばすわーど」(ぱ)だけ。アイコンの 大きさでは 読めない

@@ -1,0 +1,1817 @@
+[
+  {
+    "id": "se-swot",
+    "name": "SWOT分析",
+    "reading": "すうぉっとぶんせき",
+    "acceptedReadings": [
+      "すうぉっとぶんせき",
+      "すわっとぶんせき"
+    ],
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-3c",
+      "se-ppm",
+      "se-vrio"
+    ],
+    "description": "強み(Strengths)・弱み(Weaknesses)・機会(Opportunities)・脅威(Threats)の 4つで 会社を 見る 分析です。強み と 弱みは 内部環境、機会 と 脅威は 外部環境です。"
+  },
+  {
+    "id": "se-shijochosa",
+    "name": "市場調査",
+    "reading": "しじょうちょうさ",
+    "journey": "senryaku",
+    "category": "顧客と市場",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔍",
+    "mapNode": "senryaku:kokyaku",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-kokyakumanzoku",
+      "se-positioning"
+    ],
+    "description": "お客さんが 何を ほしがっているか、市場が どのくらい 大きいか などを 調べる ことです。アンケートや 販売の データを 使い、商品づくりや 販売の 計画に 生かします。"
+  },
+  {
+    "id": "se-kokyakumanzoku",
+    "name": "顧客満足",
+    "reading": "こきゃくまんぞく",
+    "journey": "senryaku",
+    "category": "顧客と市場",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "😊",
+    "mapNode": "senryaku:kokyaku",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-shijochosa",
+      "se-ux",
+      "se-crm"
+    ],
+    "description": "商品や サービスに お客さんが どれだけ 満足しているか の ことで、CS(Customer Satisfaction)とも いいます。満足した お客さんは また 買ってくれるので、会社の 大切な 目標に なります。"
+  },
+  {
+    "id": "se-koukoku",
+    "name": "広告",
+    "reading": "こうこく",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📣",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-hanbaisokushin",
+      "se-listing"
+    ],
+    "description": "商品や サービスを 多くの 人に 知らせる ための 活動です。テレビ・新聞の ほか、インターネット広告や バナー広告、駅などの デジタルサイネージも あります。"
+  },
+  {
+    "id": "se-hanbaisokushin",
+    "name": "販売促進",
+    "reading": "はんばいそくしん",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🏷️",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-koukoku",
+      "se-4p"
+    ],
+    "description": "商品が 売れるように お客さんに 働きかける 活動で、4P の Promotion に あたります。広告・値引き・試供品・キャンペーン などが あります。"
+  },
+  {
+    "id": "se-innovation",
+    "name": "イノベーション",
+    "reading": "いのべーしょん",
+    "journey": "senryaku",
+    "category": "技術戦略",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "💡",
+    "mapNode": "senryaku:gijutsu",
+    "field": "技術戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-openinnovation",
+      "se-mot"
+    ],
+    "description": "新しい 技術や しくみで、これまでに ない 価値を 生み出す ことです。新しい 製品を 生む プロダクトイノベーション と、作りかたを 変える プロセスイノベーション が あります。"
+  },
+  {
+    "id": "se-pos",
+    "name": "POSシステム",
+    "reading": "ぽすしすてむ",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧾",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-iccard",
+      "se-selfregi"
+    ],
+    "description": "POS(Point of Sales:販売時点情報管理)システムは、レジで 商品が 売れた ときに、何が いつ いくつ 売れたかを 記録する しくみです。データは 仕入れや 品ぞろえの 見なおしに 使います。"
+  },
+  {
+    "id": "se-iccard",
+    "name": "ICカード",
+    "reading": "あいしーかーど",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "💳",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-rfid",
+      "se-denshimoney"
+    ],
+    "description": "IC チップを 入れた カードです。磁気の カードより 多くの 情報を 持てて、偽造されにくい ことが 特長です。交通系の カードや マイナンバーカードなどで 使われます。"
+  },
+  {
+    "id": "se-selfregi",
+    "name": "セルフレジ",
+    "reading": "せるふれじ",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🛒",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-pos",
+      "se-cashless"
+    ],
+    "description": "お客さんが 自分で 商品の バーコードを 読みとらせて 会計する レジです。店員の 手間を へらし、レジの 待ち時間を 短く できます。"
+  },
+  {
+    "id": "se-ec",
+    "name": "EC",
+    "reading": "いーしー",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🛍️",
+    "mapNode": "senryaku:ebiz",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-edi",
+      "se-o2o",
+      "se-longtail"
+    ],
+    "description": "EC(Electronic Commerce:電子商取引)は、インターネットなどの ネットワークを 使って 商品や サービスを 売り買いする ことです。店を 持たずに 少ない 投資で 始められる ことが あります。"
+  },
+  {
+    "id": "se-denshimoney",
+    "name": "電子マネー",
+    "reading": "でんしまねー",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "💴",
+    "mapNode": "senryaku:fintech",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-cashless",
+      "se-iccard"
+    ],
+    "description": "お金の 価値を データに して、カードや スマートフォンで 支払える ように した ものです。キャッシュレス決済の 1つで、前もって お金を 入れて おく ものが 多いです。"
+  },
+  {
+    "id": "se-cashless",
+    "name": "キャッシュレス決済",
+    "reading": "きゃっしゅれすけっさい",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📲",
+    "mapNode": "senryaku:fintech",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-qr",
+      "se-denshimoney"
+    ],
+    "description": "現金を 使わずに 支払う ことです。クレジットカード・電子マネー・非接触 IC 決済・QR コード決済・スマートフォンの キャリア決済 などが あります。"
+  },
+  {
+    "id": "se-iot",
+    "name": "IoT",
+    "reading": "あいおーてぃー",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📡",
+    "mapNode": "senryaku:iot",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-kumikomi",
+      "se-smartcity"
+    ],
+    "description": "IoT(Internet of Things)は、家電・車・機械 などの モノが インターネットに つながり、データを やりとりする しくみです。監視・制御・最適化・自律化 などの 効果が あります。"
+  },
+  {
+    "id": "se-drone",
+    "name": "ドローン",
+    "reading": "どろーん",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚁",
+    "mapNode": "senryaku:iot",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-iot",
+      "se-smartnogyo"
+    ],
+    "description": "遠くから 操作したり 自動で 飛んだり できる 小さな 無人の 飛行機です。空からの 撮影・荷物の 運搬・農薬の 散布・点検 などに 使われます。"
+  },
+  {
+    "id": "se-jidounten",
+    "name": "自動運転",
+    "reading": "じどううんてん",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚗",
+    "mapNode": "senryaku:iot",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-maas",
+      "se-iot"
+    ],
+    "description": "車が センサーや AI で まわりを 見て、人の かわりに 運転する しくみです。どこまで 車に まかせるかは 自動運転レベルで 分けて 表します。"
+  },
+  {
+    "id": "se-ma",
+    "name": "M&A",
+    "reading": "えむあんどえー",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🤝",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-tob",
+      "se-corecompetence"
+    ],
+    "description": "M&A(Mergers and Acquisitions)は、会社どうしが 1つに なる 合併と、ほかの 会社を 買う 買収の ことです。新しい 事業や 技術を はやく 手に 入れる ために 行います。"
+  },
+  {
+    "id": "se-ppm",
+    "name": "PPM",
+    "reading": "ぴーぴーえむ",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗂️",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-swot",
+      "se-plc"
+    ],
+    "description": "PPM(Product Portfolio Management)は、市場成長率と 市場占有率で 事業を 花形・金のなる木・問題児・負け犬の 4つに 分け、お金の 配りかたを 考える 手法です。"
+  },
+  {
+    "id": "se-3c",
+    "name": "3C分析",
+    "reading": "さんしーぶんせき",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔺",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-swot",
+      "se-positioning"
+    ],
+    "description": "市場・顧客(Customer)・競合(Competitor)・自社(Company)の 3つの 目線で 事業の まわりを 分析する 手法です。どこで どう 勝つかを 考える ときに 使います。"
+  },
+  {
+    "id": "se-corecompetence",
+    "name": "コアコンピタンス",
+    "reading": "こあこんぴたんす",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💎",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-vrio",
+      "se-niche"
+    ],
+    "description": "ほかの 会社が かんたんには まねできない、その 会社の 中心と なる 強みの ことです。強みに 集中し、ほかの 部分は アウトソーシングや アライアンスを 使う ことも あります。"
+  },
+  {
+    "id": "se-4p",
+    "name": "4P",
+    "reading": "ふぉーぴー",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧩",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-hanbaisokushin",
+      "se-positioning"
+    ],
+    "description": "製品(Product)・価格(Price)・流通(Place)・販売促進(Promotion)の 4つを 組み合わせて 売りかたを 考える ことです。4P は 売り手の 目線で、買い手の 目線に した ものが 4C です。"
+  },
+  {
+    "id": "se-seo",
+    "name": "SEO",
+    "reading": "えすいーおー",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔎",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-listing",
+      "se-affiliate"
+    ],
+    "description": "SEO(Search Engine Optimization:検索エンジン最適化)は、検索の 結果で 自分の Web ページが 上の ほうに 出るように 工夫する ことです。お金を 払って 出す 広告とは ちがいます。"
+  },
+  {
+    "id": "se-affiliate",
+    "name": "アフィリエイト",
+    "reading": "あふぃりえいと",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔗",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-seo",
+      "se-listing"
+    ],
+    "description": "ブログや Web サイトに 商品の 広告や リンクを のせ、そこから 商品が 買われたら のせた 人に 成果報酬が 支払われる しくみです。"
+  },
+  {
+    "id": "se-listing",
+    "name": "リスティング広告",
+    "reading": "りすてぃんぐこうこく",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📝",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-seo",
+      "se-koukoku"
+    ],
+    "description": "検索連動型広告とも いい、検索した ことばに 合わせて 検索結果の 画面に 出る インターネット広告です。SEO は 広告ではなく 自然な 検索結果で 上に 出す 工夫です。"
+  },
+  {
+    "id": "se-recommend",
+    "name": "レコメンデーション",
+    "reading": "れこめんでーしょん",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👍",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-longtail",
+      "se-ec"
+    ],
+    "description": "お客さんの 買った 物や 見た ページの 記録を もとに、その 人が 気に入りそうな 商品を おすすめする しくみです。ネットの お店で よく 使われます。"
+  },
+  {
+    "id": "se-ux",
+    "name": "UX",
+    "reading": "ゆーえっくす",
+    "journey": "senryaku",
+    "category": "顧客と市場",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "✨",
+    "mapNode": "senryaku:kokyaku",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-cx",
+      "se-designthinking"
+    ],
+    "description": "UX(User Experience)は、製品や サービスを 使った ときに 利用者が 感じる 使いやすさや 楽しさ などの 体験です。CX は 買う 前から 後までの 顧客体験 ぜんたいを 指します。"
+  },
+  {
+    "id": "se-positioning",
+    "name": "ポジショニング",
+    "reading": "ぽじしょにんぐ",
+    "journey": "senryaku",
+    "category": "顧客と市場",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📍",
+    "mapNode": "senryaku:kokyaku",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-3c",
+      "se-4p"
+    ],
+    "description": "お客さんから 見て、自社の 商品を 競合と くらべて 市場の どこに 置くかを 決める ことです。価格や 品質などの 軸で 立ち位置を はっきり させます。"
+  },
+  {
+    "id": "se-brand",
+    "name": "ブランド戦略",
+    "reading": "ぶらんどせんりゃく",
+    "journey": "senryaku",
+    "category": "顧客と市場",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎀",
+    "mapNode": "senryaku:kokyaku",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-positioning",
+      "se-kokyakumanzoku"
+    ],
+    "description": "商品や 会社の 名前・マーク・イメージの 価値を 育てる 戦略です。「この 名前なら 安心」と 思ってもらえると、ほかの 商品と 区別され 選ばれやすく なります。"
+  },
+  {
+    "id": "se-kpi",
+    "name": "KPI",
+    "reading": "けーぴーあい",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📊",
+    "mapNode": "senryaku:mokuhyo",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-kgi",
+      "se-csf",
+      "se-bsc"
+    ],
+    "description": "KPI(Key Performance Indicator:重要業績評価指標)は、最終目標に 向かう 途中の 進みぐあいを はかる 数字です。最終目標を はかる KGI と 区別します。"
+  },
+  {
+    "id": "se-kgi",
+    "name": "KGI",
+    "reading": "けーじーあい",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏁",
+    "mapNode": "senryaku:mokuhyo",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-kpi",
+      "se-csf"
+    ],
+    "description": "KGI(Key Goal Indicator:重要目標達成指標)は、最終的に 達成したい 目標を 数字で 表した ものです。たとえば「年間の 売上高」などで、そこへの 途中の 指標が KPI です。"
+  },
+  {
+    "id": "se-crm",
+    "name": "CRM",
+    "reading": "しーあーるえむ",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🫶",
+    "mapNode": "senryaku:system",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-sfa",
+      "se-scm",
+      "se-erp"
+    ],
+    "description": "CRM(Customer Relationship Management:顧客関係管理)は、お客さんの 情報や やりとりを まとめて 管理し、長く よい 関係を つづける 考えかたと しくみです。"
+  },
+  {
+    "id": "se-scm",
+    "name": "SCM",
+    "reading": "えすしーえむ",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚚",
+    "mapNode": "senryaku:system",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-crm",
+      "se-erp",
+      "se-logistics"
+    ],
+    "description": "SCM(Supply Chain Management:供給連鎖管理)は、材料の 調達・生産・物流・販売までを 会社を こえて つなぎ、在庫や 時間の むだを へらす 管理です。"
+  },
+  {
+    "id": "se-erp",
+    "name": "ERP",
+    "reading": "いーあーるぴー",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏢",
+    "mapNode": "senryaku:system",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-crm",
+      "se-scm"
+    ],
+    "description": "ERP(Enterprise Resource Planning:企業資源計画)は、人・物・金・情報 などの 経営資源を 会社 全体で まとめて 管理する 考えかたです。そのための ソフトが ERP パッケージです。"
+  },
+  {
+    "id": "se-designthinking",
+    "name": "デザイン思考",
+    "reading": "でざいんしこう",
+    "journey": "senryaku",
+    "category": "技術戦略",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎨",
+    "mapNode": "senryaku:gijutsu",
+    "field": "技術戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-ux",
+      "se-leanstartup"
+    ],
+    "description": "使う 人の 立場に なって 本当の 困りごとを 見つけ、アイデアを 出して 試作し、試しながら 解決策を 作る 考えかたです。ペルソナ法などと いっしょに 使います。"
+  },
+  {
+    "id": "se-gps",
+    "name": "GPS",
+    "reading": "じーぴーえす",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🛰️",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-gis",
+      "se-jidounten"
+    ],
+    "description": "GPS(Global Positioning System:全地球測位システム)は、人工衛星の 電波で 今いる 場所を 知る しくみです。カーナビや 配送の 管理などの GPS 応用システムで 使われます。"
+  },
+  {
+    "id": "se-rfid",
+    "name": "RFID",
+    "reading": "あーるえふあいでぃー",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏷️",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-iccard",
+      "se-traceability"
+    ],
+    "description": "RFID は IC タグとも いい、電波を 使って ふれずに タグの 情報を 読み書きする 技術です。まとめて 読みとれるので、在庫の 管理や 商品の 追跡に 使われます。"
+  },
+  {
+    "id": "se-mynumbercard",
+    "name": "マイナンバーカード",
+    "reading": "まいなんばーかーど",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🪪",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-myportal",
+      "se-digitalgov"
+    ],
+    "description": "マイナンバー(個人番号)を のせた IC カードです。本人確認の 書類に なるほか、電子証明書で 行政の 電子申請や マイナポータルへの ログインに 使えます。"
+  },
+  {
+    "id": "se-cad",
+    "name": "CAD",
+    "reading": "きゃど",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📐",
+    "mapNode": "senryaku:seisan",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-kanban",
+      "se-digitaltwin"
+    ],
+    "description": "CAD(Computer Aided Design)は、コンピュータを 使って 製品や 建物の 設計図を 作る しくみです。図面の 修正や 使いまわしが かんたんに なります。"
+  },
+  {
+    "id": "se-kanban",
+    "name": "かんばん方式",
+    "reading": "かんばんほうしき",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📋",
+    "mapNode": "senryaku:seisan",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-jit",
+      "se-mrp"
+    ],
+    "description": "後の 工程が 必要な 部品を「かんばん」と いう 札で 前の 工程に 伝え、必要な 分だけ 作る 方式です。ジャストインタイムを 実現する ための 道具です。"
+  },
+  {
+    "id": "se-crowdfunding",
+    "name": "クラウドファンディング",
+    "reading": "くらうどふぁんでぃんぐ",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🙌",
+    "mapNode": "senryaku:ebiz",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-crowdsourcing",
+      "se-fintech"
+    ],
+    "description": "インターネットで 計画を 見せて、賛成した 多くの 人から 少しずつ お金を 集める しくみです。仕事を 頼む クラウドソーシングとは ちがい、集めるのは お金です。"
+  },
+  {
+    "id": "se-fintech",
+    "name": "フィンテック",
+    "reading": "ふぃんてっく",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏦",
+    "mapNode": "senryaku:fintech",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-cashless",
+      "se-angoshisan",
+      "se-ekyc"
+    ],
+    "description": "フィンテック(FinTech)は、金融(Finance)と 技術(Technology)を 合わせた ことばで、IT を 使った 新しい 金融サービスの ことです。スマホ決済や 家計簿アプリ などが あります。"
+  },
+  {
+    "id": "se-angoshisan",
+    "name": "暗号資産",
+    "reading": "あんごうしさん",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🪙",
+    "mapNode": "senryaku:fintech",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-nft",
+      "se-fintech"
+    ],
+    "description": "インターネット上で やりとりされる、データの 形の 財産的価値です。ブロックチェーンの 技術が 使われます。前は 仮想通貨と 呼ばれていました。"
+  },
+  {
+    "id": "se-qr",
+    "name": "QRコード決済",
+    "reading": "きゅーあーるこーどけっさい",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔳",
+    "mapNode": "senryaku:fintech",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-cashless",
+      "se-denshimoney"
+    ],
+    "description": "スマートフォンで QR コードを 読みとったり 見せたり して 支払う キャッシュレス決済です。お店は 専用の 機械が なくても 始めやすい ことが 特長です。"
+  },
+  {
+    "id": "se-seiseiai",
+    "name": "生成AI",
+    "reading": "せいせいえーあい",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🤖",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-hallucination",
+      "se-recommend"
+    ],
+    "description": "文章・画像・音声 などを 新しく 作り出す AI です。要約や アイデア出しに 便利ですが、まちがいが 入る ことや 著作権・情報漏えいに 気を つけ、人が 確かめて 使います。"
+  },
+  {
+    "id": "se-vr",
+    "name": "VRゴーグル",
+    "reading": "ぶいあーるごーぐる",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🥽",
+    "mapNode": "senryaku:iot",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-ar",
+      "se-iot"
+    ],
+    "description": "頭に つけて 目の 前を おおい、コンピュータが 作った 仮想の 世界に 入りこんだ ように 見せる 機器です。現実の 景色に 情報を 重ねる AR グラスとは ちがいます。"
+  },
+  {
+    "id": "se-smartcity",
+    "name": "スマートシティ",
+    "reading": "すまーとしてぃ",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏙️",
+    "mapNode": "senryaku:oyo",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-iot",
+      "se-maas",
+      "se-hems"
+    ],
+    "description": "IoT や データを 使って、交通・エネルギー・防災 などの 街の 困りごとを 解決し、暮らしやすく する 街づくりです。"
+  },
+  {
+    "id": "se-vrio",
+    "name": "VRIO分析",
+    "reading": "ぶりおぶんせき",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔬",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-swot",
+      "se-corecompetence"
+    ],
+    "description": "経済価値(Value)・希少性(Rarity)・模倣困難性(Imitability)・組織(Organization)の 4つで、自社の 経営資源が 強みに なるかを 見る 分析です。外の 環境を 見る ものでは ありません。"
+  },
+  {
+    "id": "se-niche",
+    "name": "ニッチ戦略",
+    "reading": "にっちせんりゃく",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-blueocean",
+      "se-corecompetence"
+    ],
+    "description": "大きな 会社が 手を 出しにくい 小さな 市場に しぼって、そこで 一番を めざす 戦略です。ライバルと 同じ ことを して 差を なくす 同質化戦略とは ちがいます。"
+  },
+  {
+    "id": "se-blueocean",
+    "name": "ブルーオーシャン戦略",
+    "reading": "ぶるーおーしゃんせんりゃく",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌊",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-niche",
+      "se-innovation"
+    ],
+    "description": "競争の はげしい 市場(レッドオーシャン)を さけ、新しい 価値で まだ 競争の ない 市場を 作り出す 戦略です。小さな 既存市場に しぼる ニッチ戦略とは ちがいます。"
+  },
+  {
+    "id": "se-oem",
+    "name": "OEM",
+    "reading": "おーいーえむ",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏭",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-fabless",
+      "se-ma"
+    ],
+    "description": "OEM(Original Equipment Manufacturer:相手先ブランド製造)は、ほかの 会社の ブランドの 製品を 作って 渡す ことです。工場を 持たず 製造を 外に 任せる ファブレスと 区別します。"
+  },
+  {
+    "id": "se-fabless",
+    "name": "ファブレス",
+    "reading": "ふぁぶれす",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "✏️",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-oem",
+      "se-corecompetence"
+    ],
+    "description": "自社では 工場を 持たず、企画・設計・販売に 集中して、製造は ほかの 会社に 任せる 経営の やりかたです。製造を 引き受ける 側が OEM の ことも あります。"
+  },
+  {
+    "id": "se-esg",
+    "name": "ESG投資",
+    "reading": "いーえすじーとうし",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌱",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-ma",
+      "se-tob"
+    ],
+    "description": "環境(Environment)・社会(Social)・企業統治(Governance)への 取り組みも 見て、投資先を えらぶ ことです。売上や 利益の 数字だけで 決めない 投資の 考えかたです。"
+  },
+  {
+    "id": "se-tob",
+    "name": "TOB",
+    "reading": "てぃーおーびー",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📜",
+    "mapNode": "senryaku:shuho",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-ma",
+      "se-esg"
+    ],
+    "description": "TOB(Take Over Bid:公開買付け)は、買う 期間・株数・値段を 公に 示して、市場の 外で 株を 買い集める ことです。経営陣が 自社を 買う MBO とは ちがいます。"
+  },
+  {
+    "id": "se-abtest",
+    "name": "A/Bテスト",
+    "reading": "えーびーてすと",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🆎",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-seo",
+      "se-listing"
+    ],
+    "description": "Web ページや 広告で ちがう 2つの 案を 用意し、利用者を 分けて 見せて、どちらが 成果が よいかを くらべる 方法です。数字で 良い 案を えらべます。"
+  },
+  {
+    "id": "se-push",
+    "name": "プッシュ戦略",
+    "reading": "ぷっしゅせんりゃく",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👉",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-pull",
+      "se-hanbaisokushin"
+    ],
+    "description": "メーカーが 店や 販売員に 働きかけ、売る 側から お客さんに 商品を 押し出して 売る 戦略です。広告などで お客さんの 方から 買いに こさせる のは プル戦略です。"
+  },
+  {
+    "id": "se-pull",
+    "name": "プル戦略",
+    "reading": "ぷるせんりゃく",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧲",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-push",
+      "se-koukoku"
+    ],
+    "description": "広告や 口コミで お客さんに 商品を 知ってもらい、お客さんの 方から 店に 買いに こさせる 戦略です。売る 側から 押し出す プッシュ戦略と 反対です。"
+  },
+  {
+    "id": "se-dynamicpricing",
+    "name": "ダイナミックプライシング",
+    "reading": "だいなみっくぷらいしんぐ",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📈",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-penetration",
+      "se-recommend"
+    ],
+    "description": "需要と 供給の ようすに 合わせて、同じ 商品や サービスの 値段を その ときどきで 変える 価格の 決めかたです。混む 日は 高く、空く 日は 安く する などです。"
+  },
+  {
+    "id": "se-penetration",
+    "name": "ペネトレーションプライシング",
+    "reading": "ぺねとれーしょんぷらいしんぐ",
+    "journey": "senryaku",
+    "category": "マーケティング",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💰",
+    "mapNode": "senryaku:marketing",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-dynamicpricing",
+      "se-plc"
+    ],
+    "description": "新しい 商品を はじめから 安く 売り出し、はやく 多くの お客さんに 広めて 市場の シェアを とる 価格の 決めかたです。はじめを 高く する スキミングプライシングと 反対です。"
+  },
+  {
+    "id": "se-cx",
+    "name": "CX",
+    "reading": "しーえっくす",
+    "journey": "senryaku",
+    "category": "顧客と市場",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌈",
+    "mapNode": "senryaku:kokyaku",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-ux",
+      "se-omnichannel"
+    ],
+    "description": "CX(Customer Experience:顧客体験)は、商品を 知る ときから 買う とき、使った 後までの お客さんの 体験 ぜんたいです。製品を 使う ときの 体験を 指す UX より 広い ことばです。"
+  },
+  {
+    "id": "se-rfm",
+    "name": "RFM分析",
+    "reading": "あーるえふえむぶんせき",
+    "journey": "senryaku",
+    "category": "顧客と市場",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧮",
+    "mapNode": "senryaku:kokyaku",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-crm",
+      "se-shijochosa"
+    ],
+    "description": "最終購買日(Recency)・購買頻度(Frequency)・累計購買金額(Monetary)の 3つで お客さんを 分ける 分析です。よく 買う 人や 最近 来ない 人を 見つけ、販売促進に 生かします。"
+  },
+  {
+    "id": "se-omnichannel",
+    "name": "オムニチャネル",
+    "reading": "おむにちゃねる",
+    "journey": "senryaku",
+    "category": "顧客と市場",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "senryaku:kokyaku",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-o2o",
+      "se-cx"
+    ],
+    "description": "お店・Web サイト・アプリ などの 売り場を つなぎ、どこから でも 同じように 買い物が できるように する 考えかたです。在庫や ポイントも 共通に します。"
+  },
+  {
+    "id": "se-plc",
+    "name": "プロダクトライフサイクル",
+    "reading": "ぷろだくとらいふさいくる",
+    "journey": "senryaku",
+    "category": "顧客と市場",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏳",
+    "mapNode": "senryaku:kokyaku",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-ppm",
+      "se-penetration"
+    ],
+    "description": "製品が 市場に 出てから 消えるまでを、導入期・成長期・成熟期・衰退期の 4つの 段階に 分けて 考える ことです。段階ごとに 売りかたを 変えます。"
+  },
+  {
+    "id": "se-bsc",
+    "name": "BSC",
+    "reading": "びーえすしー",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "senryaku:mokuhyo",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-csf",
+      "se-kpi"
+    ],
+    "description": "BSC(Balanced Scorecard:バランススコアカード)は、財務・顧客・業務プロセス・学習と成長の 4つの 視点で 戦略を 目標に 落とし、バランスよく 評価する 手法です。"
+  },
+  {
+    "id": "se-csf",
+    "name": "CSF",
+    "reading": "しーえすえふ",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔑",
+    "mapNode": "senryaku:mokuhyo",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-kpi",
+      "se-kgi",
+      "se-bsc"
+    ],
+    "description": "CSF(Critical Success Factors:重要成功要因)は、目標を 達成する ために とくに 大事な 成功の カギです。CSF を 決めてから、その 進みぐあいを はかる KPI を 決めます。"
+  },
+  {
+    "id": "se-ve",
+    "name": "バリューエンジニアリング",
+    "reading": "ばりゅーえんじにありんぐ",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔧",
+    "mapNode": "senryaku:mokuhyo",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-tqm",
+      "se-csf"
+    ],
+    "description": "バリューエンジニアリング(VE)は、価値を 機能 ÷ コストで とらえ、機能を 保って コストを 下げる・コストを 変えずに 機能を 上げる などして 価値を 高める 手法です。",
+    "formula": "価値 = 機能 ÷ コスト"
+  },
+  {
+    "id": "se-seci",
+    "name": "SECIモデル",
+    "reading": "せきもでる",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔁",
+    "mapNode": "senryaku:system",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-knowledge",
+      "se-tqm"
+    ],
+    "description": "SECI モデルは、共同化(Socialization)・表出化(Externalization)・連結化(Combination)・内面化(Internalization)の 4つで、知識を 生み出し 共有する 流れを 表した モデルです。"
+  },
+  {
+    "id": "se-tqm",
+    "name": "TQM",
+    "reading": "てぃーきゅーえむ",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏅",
+    "mapNode": "senryaku:system",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-sixsigma",
+      "se-seci"
+    ],
+    "description": "TQM(Total Quality Management:総合的品質管理)は、品質管理の 考えを 経営 全体に 広げた 取り組みです。現場を 中心に 進める TQC(全社的品質管理)から 発展しました。"
+  },
+  {
+    "id": "se-sixsigma",
+    "name": "シックスシグマ",
+    "reading": "しっくすしぐま",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📉",
+    "mapNode": "senryaku:system",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-tqm",
+      "se-ve"
+    ],
+    "description": "仕事の 結果の ばらつきを 統計で はかり、不良や ミスを 大きく へらす ことを めざす 品質管理の 手法です。データに もとづいて 改善を 進めます。"
+  },
+  {
+    "id": "se-knowledge",
+    "name": "ナレッジマネジメント",
+    "reading": "なれっじまねじめんと",
+    "journey": "senryaku",
+    "category": "目標と管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📚",
+    "mapNode": "senryaku:system",
+    "field": "経営戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-seci",
+      "se-crm"
+    ],
+    "description": "社員 一人ひとりが 持つ 知識や ノウハウを 会社の 中で 共有し、仕事に 生かす 経営の やりかたです。SECI モデルが 代表的な 考えかたです。"
+  },
+  {
+    "id": "se-mot",
+    "name": "MOT",
+    "reading": "えむおーてぃー",
+    "journey": "senryaku",
+    "category": "技術戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⚙️",
+    "mapNode": "senryaku:gijutsu",
+    "field": "技術戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-innovation",
+      "se-chasm"
+    ],
+    "description": "MOT(Management Of Technology:技術経営)は、技術を 事業の 成果に つなげる ための 経営の 考えかたです。技術開発の テーマを えらび、ロードマップに そって 進めます。"
+  },
+  {
+    "id": "se-openinnovation",
+    "name": "オープンイノベーション",
+    "reading": "おーぷんいのべーしょん",
+    "journey": "senryaku",
+    "category": "技術戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌐",
+    "mapNode": "senryaku:gijutsu",
+    "field": "技術戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-innovation",
+      "se-cvc"
+    ],
+    "description": "自社の 中だけで なく、大学・ほかの 会社・スタートアップ などの 外の 技術や アイデアも 取り入れて、新しい 価値を 生み出す ことです。"
+  },
+  {
+    "id": "se-chasm",
+    "name": "キャズム",
+    "reading": "きゃずむ",
+    "journey": "senryaku",
+    "category": "技術戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🕳️",
+    "mapNode": "senryaku:gijutsu",
+    "field": "技術戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-mot",
+      "se-leanstartup"
+    ],
+    "description": "新しい 商品が 新しい もの好きの 一部の 人から 多くの ふつうの 人に 広まる 前に ある、大きな みぞの ことです。研究が 製品に なる 前の「魔の川」「死の谷」とは 別の 話です。"
+  },
+  {
+    "id": "se-poc",
+    "name": "PoC",
+    "reading": "ぴーおーしー",
+    "journey": "senryaku",
+    "category": "技術戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧪",
+    "mapNode": "senryaku:gijutsu",
+    "field": "技術戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-leanstartup",
+      "se-designthinking"
+    ],
+    "description": "PoC(Proof of Concept:概念実証)は、新しい アイデアや 技術が 本当に 実現できるかを 小さく 試して 確かめる ことです。価値が あるかを 確かめる のは PoV(価値実証)です。"
+  },
+  {
+    "id": "se-leanstartup",
+    "name": "リーンスタートアップ",
+    "reading": "りーんすたーとあっぷ",
+    "journey": "senryaku",
+    "category": "技術戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚀",
+    "mapNode": "senryaku:gijutsu",
+    "field": "技術戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-poc",
+      "se-designthinking"
+    ],
+    "description": "最小限の 製品を すばやく 作って お客さんに 試してもらい、反応を 見て 直す ことを くりかえす 事業の 進めかたです。むだな 開発を へらせます。"
+  },
+  {
+    "id": "se-cvc",
+    "name": "CVC",
+    "reading": "しーぶいしー",
+    "journey": "senryaku",
+    "category": "技術戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🐣",
+    "mapNode": "senryaku:gijutsu",
+    "field": "技術戦略マネジメント",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-openinnovation",
+      "se-ma"
+    ],
+    "description": "CVC(Corporate Venture Capital)は、事業会社が 自分の 事業との 相乗効果を ねらって スタートアップに 投資する ことです。投資の もうけが 主な 目的の VC(ベンチャーキャピタル)とは 区別します。"
+  },
+  {
+    "id": "se-gis",
+    "name": "GIS",
+    "reading": "じーあいえす",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗺️",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-gps",
+      "se-smartcity"
+    ],
+    "description": "GIS(Geographic Information System:地理情報システム)は、地図の 上に いろいろな データを 重ねて 見たり 分析したり する しくみです。場所を はかる GPS とは ちがいます。"
+  },
+  {
+    "id": "se-sfa",
+    "name": "SFA",
+    "reading": "えすえふえー",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💼",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-crm",
+      "se-pos"
+    ],
+    "description": "SFA(Sales Force Automation:営業支援システム)は、営業の 活動や 商談の 進みぐあいを 記録・共有して、営業を 効率よく する しくみです。"
+  },
+  {
+    "id": "se-traceability",
+    "name": "トレーサビリティ",
+    "reading": "とれーさびりてぃ",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👣",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-rfid",
+      "se-scm"
+    ],
+    "description": "商品が 作られてから お客さんに 届くまでの 流れを、あとから たどって 確かめられる ことです。食品の 産地の 確認などに 使われ、RFID や ブロックチェーンも 役立ちます。"
+  },
+  {
+    "id": "se-digitaltwin",
+    "name": "デジタルツイン",
+    "reading": "でじたるついん",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🪞",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-cps",
+      "se-smartfactory"
+    ],
+    "description": "現実の 工場や 街などを センサーの データで コンピュータの 中に そっくり 再現する ことです。中で 試してから 現実に 生かせます。"
+  },
+  {
+    "id": "se-digitalgov",
+    "name": "デジタルガバメント",
+    "reading": "でじたるがばめんと",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏛️",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-myportal",
+      "se-mynumbercard"
+    ],
+    "description": "デジタルの 技術で 行政の 手続きや サービスを 便利に し、国や 自治体の しくみを 作りかえる ことです。ガバメントクラウドや 電子申請も その 一部です。"
+  },
+  {
+    "id": "se-myportal",
+    "name": "マイナポータル",
+    "reading": "まいなぽーたる",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚪",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-mynumbercard",
+      "se-digitalgov"
+    ],
+    "description": "国が 運営する 行政の オンラインサービスです。マイナンバーカードで ログインし、行政の 手続きを したり 自分の 情報を 確かめたり できます。"
+  },
+  {
+    "id": "se-jit",
+    "name": "ジャストインタイム",
+    "reading": "じゃすといんたいむ",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏱️",
+    "mapNode": "senryaku:seisan",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-kanban",
+      "se-mrp"
+    ],
+    "description": "JIT(Just In Time:ジャストインタイム)は、必要な ものを 必要な ときに 必要な 量だけ 作ったり 運んだり して、在庫を へらす 生産方式です。かんばん方式で 実現します。"
+  },
+  {
+    "id": "se-mrp",
+    "name": "MRP",
+    "reading": "えむあーるぴー",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧱",
+    "mapNode": "senryaku:seisan",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-jit",
+      "se-kanban"
+    ],
+    "description": "MRP(Material Requirements Planning:資材所要量計画)は、生産計画と 部品表・在庫から、どの 部品が いつ いくつ 足りなくなるかを 計算する 方法です。",
+    "formula": "必要量 = 総所要量 − 在庫"
+  },
+  {
+    "id": "se-logistics",
+    "name": "ロジスティクス",
+    "reading": "ろじすてぃくす",
+    "journey": "senryaku",
+    "category": "経営戦略",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "senryaku:seisan",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-scm",
+      "se-jit"
+    ],
+    "description": "材料の 調達から 生産・保管・販売までの 物の 流れを まとめて 考え、むだなく 管理する ことです。会社を こえて 供給の つながり 全体を 管理する のは SCM です。"
+  },
+  {
+    "id": "se-longtail",
+    "name": "ロングテール",
+    "reading": "ろんぐてーる",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🦎",
+    "mapNode": "senryaku:ebiz",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-ec",
+      "se-recommend"
+    ],
+    "description": "ネットの お店では、少ししか 売れない 商品も たくさん そろえられるので、その 売上の 合計が 大きく なる という 考えかたです。品ぞろえが 多い EC の 強みを 表します。"
+  },
+  {
+    "id": "se-freemium",
+    "name": "フリーミアム",
+    "reading": "ふりーみあむ",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎁",
+    "mapNode": "senryaku:ebiz",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-longtail",
+      "se-ec"
+    ],
+    "description": "基本の サービスは 無料で 使えるように して 多くの 利用者を 集め、もっと 便利な 機能を 使いたい 一部の 人から お金を もらう しくみです。"
+  },
+  {
+    "id": "se-o2o",
+    "name": "O2O",
+    "reading": "おーつーおー",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏪",
+    "mapNode": "senryaku:ebiz",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-omnichannel",
+      "se-ec"
+    ],
+    "description": "O2O(Online to Offline)は、ネットの クーポンなどで お客さんを 実際の お店に つれてくる 取り組みです。ネットと 店の 区別なく 一つに とらえる OMO とは ちがいます。"
+  },
+  {
+    "id": "se-edi",
+    "name": "EDI",
+    "reading": "いーでぃーあい",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔃",
+    "mapNode": "senryaku:ebiz",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-ec",
+      "se-scm"
+    ],
+    "description": "EDI(Electronic Data Interchange:電子データ交換)は、会社どうしで 注文書や 請求書 などの 取引データを 決まった 形で ネットワークを 通じて やりとりする ことです。"
+  },
+  {
+    "id": "se-crowdsourcing",
+    "name": "クラウドソーシング",
+    "reading": "くらうどそーしんぐ",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👥",
+    "mapNode": "senryaku:ebiz",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-crowdfunding",
+      "se-ec"
+    ],
+    "description": "インターネットで 不特定多数の 人に 仕事を 頼む ことです。お金を 集める クラウドファンディングと 名前が 似ていますが、集めるのは 人の 力です。"
+  },
+  {
+    "id": "se-nft",
+    "name": "NFT",
+    "reading": "えぬえふてぃー",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🖼️",
+    "mapNode": "senryaku:fintech",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-angoshisan",
+      "se-fintech"
+    ],
+    "description": "NFT(Non-Fungible Token:非代替性トークン)は、ブロックチェーンを 使って、デジタルの 作品などが ほかと 区別できる 1つだけの ものだと 示す しくみです。"
+  },
+  {
+    "id": "se-hallucination",
+    "name": "ハルシネーション",
+    "reading": "はるしねーしょん",
+    "journey": "senryaku",
+    "category": "ビジネスシステム",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌀",
+    "mapNode": "senryaku:business",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-seiseiai",
+      "se-ekyc"
+    ],
+    "description": "生成 AI が、事実と ちがう 内容を もっともらしく 出して しまう ことです。生成 AI の 答えは そのまま 使わず、人が 出典や 事実を 確かめる ことが 大切です。"
+  },
+  {
+    "id": "se-ekyc",
+    "name": "eKYC",
+    "reading": "いーけーわいしー",
+    "journey": "senryaku",
+    "category": "e-ビジネスと決済",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🤳",
+    "mapNode": "senryaku:fintech",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-fintech",
+      "se-mynumbercard"
+    ],
+    "description": "eKYC(electronic Know Your Customer)は、店に 行かずに オンラインで 本人確認を する ことです。本人確認書類と 顔の 写真を スマートフォンで 送る 方法 などが あります。"
+  },
+  {
+    "id": "se-ar",
+    "name": "ARグラス",
+    "reading": "えーあーるぐらす",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👓",
+    "mapNode": "senryaku:iot",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-vr",
+      "se-digitaltwin"
+    ],
+    "description": "目の 前の 現実の 景色に、コンピュータの 情報や 映像を 重ねて 見せる めがね型の 機器です。仮想の 世界だけを 見せる VR ゴーグルとは ちがいます。"
+  },
+  {
+    "id": "se-maas",
+    "name": "MaaS",
+    "reading": "まーす",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚌",
+    "mapNode": "senryaku:iot",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-jidounten",
+      "se-smartcity"
+    ],
+    "description": "MaaS(Mobility as a Service)は、電車・バス・タクシー・シェアサイクル などの 移動手段を 1つの サービスに まとめ、探す・予約・支払いを まとめて できるように する ことです。"
+  },
+  {
+    "id": "se-firmware",
+    "name": "ファームウェア",
+    "reading": "ふぁーむうぇあ",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💾",
+    "mapNode": "senryaku:iot",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-kumikomi",
+      "se-iot"
+    ],
+    "description": "機械の 中に 組み込まれ、その 機械を 動かす ための ソフトウェアです。家電や ルータ などに 入っていて、更新で 不具合や 弱点を 直せる ことも あります。"
+  },
+  {
+    "id": "se-kumikomi",
+    "name": "組込みシステム",
+    "reading": "くみこみしすてむ",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔌",
+    "mapNode": "senryaku:iot",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-firmware",
+      "se-iot"
+    ],
+    "description": "家電・車・産業用ロボット などの 機械の 中に 組み込まれ、決まった 仕事を する コンピュータの しくみです。ファームウェアで 動きます。"
+  },
+  {
+    "id": "se-smartfactory",
+    "name": "スマートファクトリー",
+    "reading": "すまーとふぁくとりー",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏗️",
+    "mapNode": "senryaku:oyo",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-digitaltwin",
+      "se-iot"
+    ],
+    "description": "工場の 機械や ロボットを IoT で つなぎ、集めた データを 分析して 生産を 最適化する 工場です。"
+  },
+  {
+    "id": "se-smartnogyo",
+    "name": "スマート農業",
+    "reading": "すまーとのうぎょう",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌾",
+    "mapNode": "senryaku:oyo",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-drone",
+      "se-iot"
+    ],
+    "description": "ロボット・ドローン・センサー などの IT を 使って、農作業の 手間を へらし、作物の 質や 量を 高める 農業です。"
+  },
+  {
+    "id": "se-smartgrid",
+    "name": "スマートグリッド",
+    "reading": "すまーとぐりっど",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⚡",
+    "mapNode": "senryaku:oyo",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-hems",
+      "se-smartcity"
+    ],
+    "description": "IT を 使って 電気を 使う 側と 送る 側の 情報を やりとりし、電気の 流れを 賢く 調整する 電力網です。家の エネルギーを 管理する HEMS とも つながります。"
+  },
+  {
+    "id": "se-hems",
+    "name": "HEMS",
+    "reading": "へむす",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏠",
+    "mapNode": "senryaku:oyo",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-smartgrid",
+      "se-iot"
+    ],
+    "description": "HEMS(Home Energy Management System)は、家の 電気の 使用量を 見える化し、家電を 制御して エネルギーを むだなく 使う しくみです。"
+  },
+  {
+    "id": "se-cps",
+    "name": "CPS",
+    "reading": "しーぴーえす",
+    "journey": "senryaku",
+    "category": "IoT と生産",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "senryaku:oyo",
+    "field": "ビジネスインダストリ",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "se-digitaltwin",
+      "se-iot"
+    ],
+    "description": "CPS(サイバーフィジカルシステム)は、現実の 世界の データを センサーで 集め、コンピュータで 分析して、その 結果を 現実の 世界に 返して 役立てる しくみです。"
+  }
+]

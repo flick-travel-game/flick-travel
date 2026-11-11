@@ -1,0 +1,1813 @@
+[
+ {
+  "id": "ki-nishinsu",
+  "name": "2進数",
+  "reading": "にしんすう",
+  "journey": "kiso",
+  "category": "数の表しかた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kiso:shinsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-jusshinsu",
+   "ki-kisuhenkan"
+  ],
+  "description": "0 と 1 の 2つの 数字だけで 数を 表す 方法です。コンピュータの 中では 数を 2進数で 扱います。2進数の 101 は 10進数の 5 です。",
+  "formula": "101(2) = 4 + 0 + 1 = 5"
+ },
+ {
+  "id": "ki-jusshinsu",
+  "name": "10進数",
+  "reading": "じゅっしんすう",
+  "acceptedReadings": [
+   "じゅっしんすう",
+   "じっしんすう"
+  ],
+  "journey": "kiso",
+  "category": "数の表しかた",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔟",
+  "mapNode": "kiso:shinsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-nishinsu",
+   "ki-kisuhenkan"
+  ],
+  "description": "0〜9 の 10個の 数字で 数を 表す、ふだん 使っている 数の 表しかたです。ITパスポートでは 2進数との 変換(基数変換)が よく 問われます。"
+ },
+ {
+  "id": "ki-bitto",
+  "name": "ビット",
+  "reading": "びっと",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💡",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-baito",
+   "ki-nishinsu"
+  ],
+  "description": "0 か 1 の どちらかを 表す、情報量の いちばん 小さい 単位です。n ビット あれば 2 の n乗 通りを 区別でき、8ビットなら 256通りです。",
+  "formula": "nビット → 2ⁿ 通り"
+ },
+ {
+  "id": "ki-baito",
+  "name": "バイト",
+  "reading": "ばいと",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💾",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-bitto"
+  ],
+  "description": "8ビットを まとめた 情報量の 単位です。大きな 量は k(キロ)・M(メガ)・G(ギガ)・T(テラ)などの 接頭語を 付けて 表します。ビットと バイトの 8倍の ちがいに 注意します。",
+  "formula": "1バイト = 8ビット"
+ },
+ {
+  "id": "ki-dejitaruka",
+  "name": "デジタル化",
+  "reading": "でじたるか",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎙️",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hyohonka",
+   "ki-adhenkan"
+  ],
+  "description": "音や 画像のような アナログの 情報を、コンピュータで 扱える 数値(デジタル)に 直す ことです。標本化・量子化・符号化の 順に 進めます。"
+ },
+ {
+  "id": "ki-mojikodo",
+  "name": "文字コード",
+  "reading": "もじこーど",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-unicode",
+   "ki-shiftjis"
+  ],
+  "description": "文字の 1つ1つに 番号(数値)を 割り当てる 決まりです。コンピュータの 中では 文字も 数値で 表しています。送る 側と 読む 側で 文字コードが ちがうと 文字化けします。"
+ },
+ {
+  "id": "ki-ai",
+  "name": "AI",
+  "reading": "えーあい",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🤖",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kikaigakushu",
+   "ki-deeplearning"
+  ],
+  "description": "Artificial Intelligence(人工知能)の 略で、人の 知的な はたらきを コンピュータで まねる 技術です。文章の 理解(自然言語処理)や 音声・画像の 認識などに 使われます。"
+ },
+ {
+  "id": "ki-kikaigakushu",
+  "name": "機械学習",
+  "reading": "きかいがくしゅう",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧠",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kyoshiari",
+   "ki-kyoshinashi",
+   "ki-kyokagakushu"
+  ],
+  "description": "人が 細かい ルールを 書く 代わりに、コンピュータが データから 規則や パターンを 学ぶ AI の 方法です。教師あり学習・教師なし学習・強化学習の 3つが あります。"
+ },
+ {
+  "id": "ki-heikinchi",
+  "name": "平均値",
+  "reading": "へいきんち",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-chuochi",
+   "ki-saihinchi"
+  ],
+  "description": "データの 合計を 個数で わった、代表値の 1つです。たとえば 2・4・9 の 平均値は 15 ÷ 3 = 5 です。とびぬけた 値に 引っぱられやすい 点に 注意します。",
+  "formula": "合計 ÷ 個数"
+ },
+ {
+  "id": "ki-benzu",
+  "name": "ベン図",
+  "reading": "べんず",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⭕",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-shugo",
+   "ki-and"
+  ],
+  "description": "集合どうしの 重なりを 円で 表した 図です。2つの 円が 重なった 部分は 両方に あてはまる もの(AND)、どちらかの 円の 中は OR の 範囲に なります。"
+ },
+ {
+  "id": "ki-arugorizumu",
+  "name": "アルゴリズム",
+  "reading": "あるごりずむ",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kiso:algo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-nagarezu",
+   "ki-gijigengo"
+  ],
+  "description": "問題を 解く ための 手順を、だれが やっても 同じ 結果に なるように 決めた ものです。流れ図や 擬似言語で 表し、プログラム言語で 書けば コンピュータで 動かせます。"
+ },
+ {
+  "id": "ki-nagarezu",
+  "name": "流れ図",
+  "reading": "ながれず",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "kiso:nagare",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-arugorizumu",
+   "ki-kurikaeshi"
+  ],
+  "description": "フローチャートとも いい、処理の 手順を 決まった 記号と 矢印で かいた 図です。順次・選択・繰返しの 流れが 目で 見て 分かります。"
+ },
+ {
+  "id": "ki-hensu",
+  "name": "変数",
+  "reading": "へんすう",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "kiso:kozo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-dainyu",
+   "ki-detagata"
+  ],
+  "description": "データを 入れておく、名前の 付いた 箱のような ものです。プログラムの 中で 値を 入れたり(代入)、取り出して 計算に 使ったり します。"
+ },
+ {
+  "id": "ki-puroguramugengo",
+  "name": "プログラム言語",
+  "reading": "ぷろぐらむげんご",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-python",
+   "ki-java"
+  ],
+  "description": "アルゴリズムを コンピュータが 実行できる 形で 書く ための ことばです。シラバスには C・Java・Python・JavaScript・R などが あり、目的に 合わせて えらびます。"
+ },
+ {
+  "id": "ki-html",
+  "name": "HTML",
+  "reading": "えいちてぃーえむえる",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "kiso:markup",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-xml",
+   "ki-sgml"
+  ],
+  "description": "Hyper Text Markup Language の 略で、Webページを 書く ための マークアップ言語です。見出しや リンクなどを タグで 囲んで 表します。"
+ },
+ {
+  "id": "ki-kisuhenkan",
+  "name": "基数変換",
+  "reading": "きすうへんかん",
+  "journey": "kiso",
+  "category": "数の表しかた",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kiso:shinsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-nishinsu",
+   "ki-juroku"
+  ],
+  "description": "2進数・10進数・16進数など、表しかたの ちがう 数に 直す 計算です。2進数 → 10進数は、けたの 重み(1・2・4・8 …)を 1 の ところだけ 足して 求めます。",
+  "formula": "1101(2) = 8 + 4 + 0 + 1 = 13"
+ },
+ {
+  "id": "ki-juroku",
+  "name": "16進数",
+  "reading": "じゅうろくしんすう",
+  "journey": "kiso",
+  "category": "数の表しかた",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔠",
+  "mapNode": "kiso:shinsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kisuhenkan",
+   "ki-nishinsu"
+  ],
+  "description": "0〜9 と A〜F の 16個の 記号で 数を 表す 方法です。A は 10、F は 15 に あたります。2進数の 4けたが 16進数の 1けたに なるので、長い 2進数を 短く 書けます。",
+  "formula": "1111(2) = F(16) = 15"
+ },
+ {
+  "id": "ki-ronrienzan",
+  "name": "論理演算",
+  "reading": "ろんりえんざん",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔣",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-and",
+   "ki-or",
+   "ki-not"
+  ],
+  "description": "真(1)と 偽(0)を 使って 行う 計算です。AND・OR・NOT・XOR などが あり、データの 条件検索にも 使われます。"
+ },
+ {
+  "id": "ki-shinrichihyo",
+  "name": "真理値表",
+  "reading": "しんりちひょう",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-ronrienzan",
+   "ki-xor"
+  ],
+  "description": "論理演算で、入力の 真・偽の すべての 組合せと、その 結果を 一覧に した 表です。入力が 2つなら 2 の 2乗 = 4通りの 行が できます。"
+ },
+ {
+  "id": "ki-and",
+  "name": "AND",
+  "reading": "あんど",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-or",
+   "ki-benzu"
+  ],
+  "description": "論理積とも いい、2つの 条件が 両方とも 真の ときだけ 真に なる 演算です。条件検索で「東京 AND 会議」と すると、両方を 含む ものだけに しぼりこめます。"
+ },
+ {
+  "id": "ki-or",
+  "name": "OR",
+  "reading": "おあ",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-and",
+   "ki-xor"
+  ],
+  "description": "論理和とも いい、2つの 条件の どちらか 一方でも 真なら 真に なる 演算です。条件検索で 使うと、見つかる 件数は AND の ときと 同じか それより 多く なります。"
+ },
+ {
+  "id": "ki-not",
+  "name": "NOT",
+  "reading": "のっと",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚫",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-and",
+   "ki-or"
+  ],
+  "description": "否定とも いい、真を 偽に、偽を 真に 入れかえる 演算です。条件検索で 使うと「その 言葉を 含まない もの」を えらべます。"
+ },
+ {
+  "id": "ki-chuochi",
+  "name": "中央値",
+  "reading": "ちゅうおうち",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-heikinchi",
+   "ki-saihinchi"
+  ],
+  "description": "メジアンとも いい、データを 小さい 順に ならべた ときの まん中の 値です。個数が 偶数なら まん中 2つの 平均を とります。とびぬけた 値の 影響を 受けにくい 代表値です。"
+ },
+ {
+  "id": "ki-saihinchi",
+  "name": "最頻値",
+  "reading": "さいひんち",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏆",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-heikinchi",
+   "ki-chuochi"
+  ],
+  "description": "モードとも いい、データの 中で いちばん 多く 出てくる 値です。たとえば 1・2・2・3 なら 最頻値は 2 です。平均値・中央値と ならぶ 代表値の 1つです。"
+ },
+ {
+  "id": "ki-hyojunhensa",
+  "name": "標準偏差",
+  "reading": "ひょうじゅんへんさ",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-bunsan",
+   "ki-heikinchi"
+  ],
+  "description": "データの ばらつきの 大きさを 表す 値で、分散の 正の 平方根です。値が 大きいほど 平均から はなれた データが 多く、0 なら すべて 同じ 値です。",
+  "formula": "標準偏差 = √分散"
+ },
+ {
+  "id": "ki-hisutoguramu",
+  "name": "ヒストグラム",
+  "reading": "ひすとぐらむ",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-saihinchi",
+   "ki-heikinchi"
+  ],
+  "description": "データを 区間ごとに 数えた 度数分布表を、柱の 高さで 表した グラフです。データが どの あたりに 多く 集まり、どう ちらばって いるかが 分かります。"
+ },
+ {
+  "id": "ki-hyohonka",
+  "name": "標本化",
+  "reading": "ひょうほんか",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-ryoshika",
+   "ki-dejitaruka"
+  ],
+  "description": "サンプリングとも いい、アナログの 波を 一定の 時間 間隔で 区切り、その 時点の 値を 取り出す ことです。デジタル化の 最初の 手順です。"
+ },
+ {
+  "id": "ki-ryoshika",
+  "name": "量子化",
+  "reading": "りょうしか",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hyohonka",
+   "ki-fugoka"
+  ],
+  "description": "標本化で 取り出した 値を、決まった 段階の 数値に あてはめる ことです。段階の 数が 多いほど もとの 音や 画像に 近く なりますが、データ量は ふえます。"
+ },
+ {
+  "id": "ki-fugoka",
+  "name": "符号化",
+  "reading": "ふごうか",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-ryoshika",
+   "ki-adhenkan"
+  ],
+  "description": "量子化した 数値を、0 と 1 の ならび(2進数)に 置きかえる ことです。デジタル化は 標本化 → 量子化 → 符号化の 順に 進みます。"
+ },
+ {
+  "id": "ki-unicode",
+  "name": "Unicode",
+  "reading": "ゆにこーど",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-mojikodo",
+   "ki-shiftjis"
+  ],
+  "description": "世界の いろいろな 言語の 文字を、1つの 体系で 表せるように した 文字コードです。日本語と 外国語が まざった 文書も、文字化けを 少なく 扱えます。"
+ },
+ {
+  "id": "ki-deeplearning",
+  "name": "ディープラーニング",
+  "reading": "でぃーぷらーにんぐ",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏙️",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-neural",
+   "ki-cnn"
+  ],
+  "description": "深層学習とも いい、何層にも 重ねた ニューラルネットワークで 学ぶ 機械学習の 方法です。画像や 音声の 認識、文章の 生成などで 使われています。"
+ },
+ {
+  "id": "ki-kyoshiari",
+  "name": "教師あり学習",
+  "reading": "きょうしありがくしゅう",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👩‍🏫",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kyoshinashi",
+   "ki-kikaigakushu"
+  ],
+  "description": "問題と 正解(ラベル)を 組に した データで 学ぶ 機械学習です。学んだ ことを もとに、売上や 成約などを 予測する ときに 使われます。"
+ },
+ {
+  "id": "ki-neural",
+  "name": "ニューラルネットワーク",
+  "reading": "にゅーらるねっとわーく",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🕸️",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-deeplearning",
+   "ki-backprop"
+  ],
+  "description": "人の 脳の 神経細胞の つながりを まねて、たくさんの 計算の 単位を 層に して つないだ モデルです。層を 深く 重ねた ものが ディープラーニングです。"
+ },
+ {
+  "id": "ki-llm",
+  "name": "LLM",
+  "reading": "えるえるえむ",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "kiso:seisei",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kibanmodel",
+   "ki-prompt"
+  ],
+  "description": "Large Language Model(大規模言語モデル)の 略で、ぼう大な 文章で 学習し、文の 続きを 予測して 文章を 作れる モデルです。質問への 答えや 要約、翻訳などに 使われます。"
+ },
+ {
+  "id": "ki-hairetsu",
+  "name": "配列",
+  "reading": "はいれつ",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗃️",
+  "mapNode": "kiso:kozo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hensu",
+   "ki-risuto"
+  ],
+  "description": "同じ 型の データを、番号(要素番号)を 付けて ならべた データ構造です。ITパスポートの 擬似言語では 要素番号を 1 から 数えます。"
+ },
+ {
+  "id": "ki-sutakku",
+  "name": "スタック",
+  "reading": "すたっく",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🥞",
+  "mapNode": "kiso:kozo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kyu",
+   "ki-risuto"
+  ],
+  "description": "後から 入れた データを 先に 取り出す(後入れ先出し・LIFO)データ構造です。積んだ 本を 上から 取るのと 同じです。先入れ先出しの キューと 取りちがえないように します。"
+ },
+ {
+  "id": "ki-kyu",
+  "name": "キュー",
+  "reading": "きゅー",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "kiso:kozo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-sutakku",
+   "ki-machigyoretsu"
+  ],
+  "description": "先に 入れた データから 順に 取り出す(先入れ先出し・FIFO)データ構造です。レジの 列と 同じで、印刷の 順番待ちなどに 使われます。"
+ },
+ {
+  "id": "ki-nibuntansaku",
+  "name": "2分探索法",
+  "reading": "にぶんたんさくほう",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "kiso:algo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-senkeitansaku",
+   "ki-nibungi"
+  ],
+  "description": "整列ずみの データの まん中と くらべ、探す 範囲を 半分ずつ しぼる 探索法です。1,024個でも 約 10回で 見つかります。整列していない データには 使えません。",
+  "formula": "最大 およそ log₂n 回"
+ },
+ {
+  "id": "ki-senkeitansaku",
+  "name": "線形探索法",
+  "reading": "せんけいたんさくほう",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔦",
+  "mapNode": "kiso:algo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-nibuntansaku"
+  ],
+  "description": "データの 先頭から 順に 1つずつ くらべて 探す 方法です。データが 整列していなくても 使えますが、n個 あると 最大 n回 くらべます。",
+  "formula": "最大 n 回"
+ },
+ {
+  "id": "ki-kurikaeshi",
+  "name": "繰返し",
+  "reading": "くりかえし",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "kiso:nagare",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-nagarezu",
+   "ki-jokenshiki"
+  ],
+  "description": "条件を みたす あいだ 同じ 処理を くり返す、アルゴリズムの 基本構造の 1つです。ほかに 上から 順に 進む「順次」と、条件で 分かれる「選択」が あります。"
+ },
+ {
+  "id": "ki-gijigengo",
+  "name": "擬似言語",
+  "reading": "ぎじげんご",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "kiso:nagare",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-dainyu",
+   "ki-nagarezu"
+  ],
+  "description": "アルゴリズムを、特定の プログラム言語に たよらず 日本語と 記号で 書き表す 方法です。ITパスポートでは「変数 ← 式」で 代入を 表す 書きかたが 使われます。"
+ },
+ {
+  "id": "ki-python",
+  "name": "Python",
+  "reading": "ぱいそん",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🐍",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-puroguramugengo",
+   "ki-raiburari"
+  ],
+  "description": "シラバスに 名前が ある プログラム言語の 1つです。読みやすく 書けて ライブラリも 多く、AI や データ分析の 分野で よく 使われています。"
+ },
+ {
+  "id": "ki-api",
+  "name": "API",
+  "reading": "えーぴーあい",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-raiburari",
+   "ki-json"
+  ],
+  "description": "Application Programming Interface の 略で、ソフトウェアの 機能を ほかの プログラムから 呼び出す ための 窓口(決まり)です。Web で 使える ものは WebAPI と いいます。"
+ },
+ {
+  "id": "ki-xml",
+  "name": "XML",
+  "reading": "えっくすえむえる",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "kiso:markup",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-html",
+   "ki-sgml"
+  ],
+  "description": "Extensible Markup Language の 略です。タグを 自分で 決めて データの 意味を 表せる マークアップ言語で、データの 表現や やり取りに 使われます。"
+ },
+ {
+  "id": "ki-json",
+  "name": "JSON",
+  "reading": "じぇいそん",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "kiso:markup",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-xml",
+   "ki-javascript"
+  ],
+  "description": "JavaScript Object Notation の 略で、ちがう プログラム言語で 書かれた プログラムの あいだで データを やり取りする ときに 使う データ記述言語です。名前と 値の 組で 書きます。"
+ },
+ {
+  "id": "ki-kyoshinashi",
+  "name": "教師なし学習",
+  "reading": "きょうしなしがくしゅう",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kyoshiari",
+   "ki-kyokagakushu"
+  ],
+  "description": "正解の ない データから、似ている もの どうしを グループに 分ける 機械学習です。顧客の グループ分けに 使います。正解つきで 予測する 教師あり学習と 取りちがえないように。"
+ },
+ {
+  "id": "ki-kyokagakushu",
+  "name": "強化学習",
+  "reading": "きょうかがくしゅう",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎮",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kyoshiari",
+   "ki-kyoshinashi"
+  ],
+  "description": "試しに 行動して、報酬(ほうび)が 多く なる 行動を 学ぶ 機械学習です。自動車の 自動走行などの 制御に 使われます。正解の データを 与える 教師あり学習とは ちがいます。"
+ },
+ {
+  "id": "ki-kagakushu",
+  "name": "過学習",
+  "reading": "かがくしゅう",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kikaigakushu",
+   "ki-tokuchoryo"
+  ],
+  "description": "学習データに 合わせすぎて、学習データでは よく 当たるのに 新しい データでは 当たらなく なる 状態です。学習に 使っていない データで 確かめて 気づきます。"
+ },
+ {
+  "id": "ki-xor",
+  "name": "XOR",
+  "reading": "えっくすおあ",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-or",
+   "ki-shinrichihyo"
+  ],
+  "description": "排他的論理和とも いい、2つの 入力が ちがう ときだけ 真に なる 演算です。両方 真なら 偽に なる 点が、どちらかが 真なら 真に なる OR との ちがいです。"
+ },
+ {
+  "id": "ki-finetuning",
+  "name": "ファインチューニング",
+  "reading": "ふぁいんちゅーにんぐ",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "kiso:seisei",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-jizengakushu",
+   "ki-ten-igakushu"
+  ],
+  "description": "事前学習ずみの モデルに、目的に 合った データで 追加の 学習を させて 調整する ことです。ゼロから 学習させるより 少ない データで 用途に 合わせられます。"
+ },
+ {
+  "id": "ki-gan",
+  "name": "GAN",
+  "reading": "ぎゃん",
+  "acceptedReadings": [
+   "ぎゃん",
+   "がん"
+  ],
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎭",
+  "mapNode": "kiso:seisei",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-deeplearning",
+   "ki-cnn"
+  ],
+  "description": "Generative Adversarial Network(敵対的生成ネットワーク)の 略です。データを 作る 側と 本物か 見分ける 側の 2つの モデルを 競わせて、本物らしい 画像などを 作ります。"
+ },
+ {
+  "id": "ki-prompt",
+  "name": "プロンプトエンジニアリング",
+  "reading": "ぷろんぷとえんじにありんぐ",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✍️",
+  "mapNode": "kiso:seisei",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-llm",
+   "ki-kibanmodel"
+  ],
+  "description": "生成 AI に わたす 指示文(プロンプト)を 工夫して、ほしい 答えを 引き出す 技術です。目的・条件・出力の 形を はっきり 書くと、答えが 求める 形に 近づきます。"
+ },
+ {
+  "id": "ki-kibanmodel",
+  "name": "基盤モデル",
+  "reading": "きばんもでる",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏗️",
+  "mapNode": "kiso:seisei",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-llm",
+   "ki-jizengakushu"
+  ],
+  "description": "大量の データで 事前学習し、追加の 調整で 文章・画像など いろいろな 用途に 使える AI の モデルです。LLM も その 1つです。"
+ },
+ {
+  "id": "ki-bunsan",
+  "name": "分散",
+  "reading": "ぶんさん",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌪️",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hyojunhensa",
+   "ki-heikinchi"
+  ],
+  "description": "データの ばらつきを 表す 値で、各値と 平均の 差を 2乗して 平均した ものです。分散の 正の 平方根が 標準偏差なので、2つを 取りちがえないように します。",
+  "formula": "(値 − 平均)² の 平均"
+ },
+ {
+  "id": "ki-sokankeisu",
+  "name": "相関係数",
+  "reading": "そうかんけいすう",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📈",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kaiki",
+   "ki-setsumeihensu"
+  ],
+  "description": "2つの データの 関係の 強さを −1 から 1 の 値で 表した ものです。1 に 近いほど 正の 相関、−1 に 近いほど 負の 相関、0 に 近いと 関係が 弱いと 見ます。"
+ },
+ {
+  "id": "ki-kaiki",
+  "name": "回帰分析",
+  "reading": "かいきぶんせき",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-setsumeihensu",
+   "ki-mokutekihensu"
+  ],
+  "description": "説明変数(原因の 側)を 使って、目的変数(結果の 側)を 予測する 式を 求める 分析です。たとえば 気温から アイスの 売上を 予測する ときに 使います。"
+ },
+ {
+  "id": "ki-jutsugoronri",
+  "name": "述語論理",
+  "reading": "じゅつごろんり",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-eneki",
+   "ki-kino"
+  ],
+  "description": "「すべての 人は 呼吸する」のような 自然言語の 文を、記号を 使って 論理的に 表す 方法です。シラバスでは 論理的な 記述の 用語として 出てきます。"
+ },
+ {
+  "id": "ki-eneki",
+  "name": "演繹推論",
+  "reading": "えんえきすいろん",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬇️",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kino",
+   "ki-jutsugoronri"
+  ],
+  "description": "一般的な きまりから、個別の 結論を 導く 推論です。「人は みな 呼吸する。A さんは 人だ。だから A さんは 呼吸する」の 形です。帰納推論とは 向きが 逆です。"
+ },
+ {
+  "id": "ki-kino",
+  "name": "帰納推論",
+  "reading": "きのうすいろん",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬆️",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-eneki",
+   "ki-jutsugoronri"
+  ],
+  "description": "いくつもの 個別の 例から、一般的な きまりを 導く 推論です。「見た カラスは みな 黒い。だから カラスは 黒い」の 形で、例外が 見つかると くずれます。"
+ },
+ {
+  "id": "ki-bubblesort",
+  "name": "バブルソート",
+  "reading": "ばぶるそーと",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫧",
+  "mapNode": "kiso:algo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-sentakusort",
+   "ki-quicksort"
+  ],
+  "description": "となりどうしの データを くらべて、順番が 逆なら 入れかえる ことを くり返す 整列の 方法です。大きい(小さい)値が 泡のように 端へ 移っていきます。"
+ },
+ {
+  "id": "ki-sentakusort",
+  "name": "選択ソート",
+  "reading": "せんたくそーと",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👆",
+  "mapNode": "kiso:algo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-bubblesort",
+   "ki-quicksort"
+  ],
+  "description": "残りの データの 中から 最小(最大)の 値を 選び、先頭と 入れかえる ことを くり返す 整列の 方法です。となりどうしを くらべる バブルソートとの ちがいが 問われます。"
+ },
+ {
+  "id": "ki-quicksort",
+  "name": "クイックソート",
+  "reading": "くいっくそーと",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "kiso:algo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-bubblesort",
+   "ki-sentakusort"
+  ],
+  "description": "基準の 値を 1つ 決め、それより 小さい グループと 大きい グループに 分ける ことを くり返す 整列の 方法です。一般に 速く 並べられる ことで 知られます。"
+ },
+ {
+  "id": "ki-kikozo",
+  "name": "木構造",
+  "reading": "きこうぞう",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "kiso:kozo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-nibungi",
+   "ki-risuto"
+  ],
+  "description": "データを 親と 子の 関係で、木の 枝のように 枝分かれさせて つなぐ データ構造です。会社の 組織図や フォルダの 階層のような 形です。"
+ },
+ {
+  "id": "ki-nibungi",
+  "name": "2分木",
+  "reading": "にぶんぎ",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌲",
+  "mapNode": "kiso:kozo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kikozo",
+   "ki-nibuntansaku"
+  ],
+  "description": "木構造の うち、どの 親も 子を 2つまで しか 持たない ものです。左の 子と 右の 子に 分けて データを 整理し、探索などに 使います。"
+ },
+ {
+  "id": "ki-hikisu",
+  "name": "引数",
+  "reading": "ひきすう",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "kiso:nagare",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-modorichi",
+   "ki-kansu"
+  ],
+  "description": "関数や 手続を 呼び出す ときに わたす 値です。2つの 数の 合計を 求める 関数なら、その 2つの 数が 引数です。関数から 返ってくる 戻り値と 取りちがえないように。"
+ },
+ {
+  "id": "ki-modorichi",
+  "name": "戻り値",
+  "reading": "もどりち",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📤",
+  "mapNode": "kiso:nagare",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hikisu",
+   "ki-kansu"
+  ],
+  "description": "関数が 処理を 終えて、呼び出した 側に 返す 結果の 値です。関数に わたす 値は 引数、返ってくる 値が 戻り値です。"
+ },
+ {
+  "id": "ki-nocode",
+  "name": "ノーコード",
+  "reading": "のーこーど",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖱️",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-lowcode"
+  ],
+  "description": "プログラムの コードを 書かずに、画面の 操作だけで アプリや 業務の しくみを 作る 方法です。少しだけ コードを 書く ローコードとの ちがいが 問われます。"
+ },
+ {
+  "id": "ki-lowcode",
+  "name": "ローコード",
+  "reading": "ろーこーど",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-nocode",
+   "ki-raiburari"
+  ],
+  "description": "多くを 画面の 操作で 作り、必要な ところだけ 少し コードを 書く 開発の 方法です。まったく 書かない ノーコードと 区別します。"
+ },
+ {
+  "id": "ki-machigyoretsu",
+  "name": "待ち行列",
+  "reading": "まちぎょうれつ",
+  "journey": "kiso",
+  "category": "応用数学",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧍",
+  "mapNode": "kiso:oyo",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kyu",
+   "ki-saitekika"
+  ],
+  "description": "レジの 列のように、サービスを 受ける ために 順番を 待つ ようすを 考える しくみです。ITパスポートでは M/M/1 など 理論的な 計算の 中身は 問われません。"
+ },
+ {
+  "id": "ki-shiftjis",
+  "name": "シフトJISコード",
+  "reading": "しふとじすこーど",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗾",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-unicode",
+   "ki-mojikodo"
+  ],
+  "description": "日本語の かな・漢字などを 表す ために 使われてきた 文字コードの 1つです。世界の 文字を 1つに まとめた Unicode とは 別の 決まりで、取りちがえて 読むと 文字化けします。"
+ },
+ {
+  "id": "ki-shugo",
+  "name": "集合",
+  "reading": "しゅうごう",
+  "journey": "kiso",
+  "category": "論理と集合",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫙",
+  "mapNode": "kiso:ronri",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-benzu",
+   "ki-and"
+  ],
+  "description": "条件に あてはまる ものの 集まりです。2つの 集合の どちらかに 入る ものを 和集合、両方に 入る ものを 積集合と いい、ベン図で 表せます。"
+ },
+ {
+  "id": "ki-kasetsukentei",
+  "name": "仮説検定",
+  "reading": "かせつけんてい",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-sokankeisu",
+   "ki-kaiki"
+  ],
+  "description": "「差は ない」などの 仮説を 立て、データから その 仮説が 正しいと いえるかを 確率を 使って 判断する 方法です。統計の 用語として シラバスに あります。"
+ },
+ {
+  "id": "ki-kumiawase",
+  "name": "組合せ",
+  "reading": "くみあわせ",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎲",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-heikinchi"
+  ],
+  "description": "いくつかの 中から 順番を 考えずに えらぶ 選びかたです。5人から 2人 選ぶ 組合せは 10通りで、順番も 区別する 順列(20通り)と 取りちがえないように します。",
+  "formula": "nCr = n! ÷ (r! × (n − r)!)"
+ },
+ {
+  "id": "ki-setsumeihensu",
+  "name": "説明変数",
+  "reading": "せつめいへんすう",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-mokutekihensu",
+   "ki-kaiki"
+  ],
+  "description": "結果に 影響を あたえる、原因の 側の 変数です。気温で アイスの 売上を 予測するなら 気温が 説明変数です。予測したい 側の 目的変数と 逆に しないように。"
+ },
+ {
+  "id": "ki-mokutekihensu",
+  "name": "目的変数",
+  "reading": "もくてきへんすう",
+  "journey": "kiso",
+  "category": "確率と統計",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🍦",
+  "mapNode": "kiso:kakuritsu",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-setsumeihensu",
+   "ki-kaiki"
+  ],
+  "description": "分析で 予測したい・説明したい 結果の 側の 変数です。気温で アイスの 売上を 予測するなら、売上が 目的変数です。"
+ },
+ {
+  "id": "ki-yukograph",
+  "name": "有向グラフ",
+  "reading": "ゆうこうぐらふ",
+  "journey": "kiso",
+  "category": "応用数学",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kiso:oyo",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-mukograph"
+  ],
+  "description": "頂点(ノード)を つなぐ 辺(エッジ)に 向きが ある グラフです。一方通行の 道や 作業の 順番のように、向きに 意味が ある 関係を 表せます。"
+ },
+ {
+  "id": "ki-mukograph",
+  "name": "無向グラフ",
+  "reading": "むこうぐらふ",
+  "journey": "kiso",
+  "category": "応用数学",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↔️",
+  "mapNode": "kiso:oyo",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-yukograph"
+  ],
+  "description": "頂点(ノード)を つなぐ 辺(エッジ)に 向きが ない グラフです。「A と B が つながっている」ことだけを 表し、駅と 線路などに 使えます。"
+ },
+ {
+  "id": "ki-meigishakudo",
+  "name": "名義尺度",
+  "reading": "めいぎしゃくど",
+  "journey": "kiso",
+  "category": "応用数学",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "kiso:oyo",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-junjoshakudo"
+  ],
+  "description": "区別する ためだけに 数や 名前を 割り当てた 尺度です。血液型や 背番号などで、大小や 平均には 意味が ありません。"
+ },
+ {
+  "id": "ki-junjoshakudo",
+  "name": "順序尺度",
+  "reading": "じゅんじょしゃくど",
+  "journey": "kiso",
+  "category": "応用数学",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🥇",
+  "mapNode": "kiso:oyo",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-meigishakudo",
+   "ki-kankakushakudo"
+  ],
+  "description": "順番には 意味が あるが、間の 差には 意味が ない 尺度です。順位などで、1位と 2位の 差が 2位と 3位の 差と 同じとは かぎりません。"
+ },
+ {
+  "id": "ki-kankakushakudo",
+  "name": "間隔尺度",
+  "reading": "かんかくしゃくど",
+  "journey": "kiso",
+  "category": "応用数学",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌡️",
+  "mapNode": "kiso:oyo",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hireishakudo",
+   "ki-junjoshakudo"
+  ],
+  "description": "目もりの 間が 等しく、差に 意味が ある 尺度です。気温(℃)などで、0 が「何も ない」では ないので、20℃ が 10℃ の 2倍とは いえません。比例尺度と 区別します。"
+ },
+ {
+  "id": "ki-hireishakudo",
+  "name": "比例尺度",
+  "reading": "ひれいしゃくど",
+  "journey": "kiso",
+  "category": "応用数学",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kiso:oyo",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kankakushakudo"
+  ],
+  "description": "0 が「何も ない」ことを 表し、差だけで なく 比(何倍か)にも 意味が ある 尺度です。長さ・重さ・金額などで、10kg は 5kg の 2倍と いえます。"
+ },
+ {
+  "id": "ki-saitekika",
+  "name": "最適化問題",
+  "reading": "さいてきかもんだい",
+  "journey": "kiso",
+  "category": "応用数学",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kiso:oyo",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-machigyoretsu"
+  ],
+  "description": "決められた 条件の 中で、費用を いちばん 少なく するなど、いちばん よい 答えを 探す 問題です。配送の 道順や 人の 配置を 決める ときに 使います。"
+ },
+ {
+  "id": "ki-adhenkan",
+  "name": "A/D変換",
+  "reading": "えーでぃーへんかん",
+  "journey": "kiso",
+  "category": "情報とデジタル化",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "kiso:joho",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-dejitaruka",
+   "ki-hyohonka"
+  ],
+  "description": "音や 光などの アナログ 信号を、デジタルの 数値に 変える ことです。標本化・量子化・符号化の 手順で 行います。逆に デジタルを アナログに もどすのは D/A 変換です。"
+ },
+ {
+  "id": "ki-tokuchoryo",
+  "name": "特徴量",
+  "reading": "とくちょうりょう",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kikaigakushu",
+   "ki-kagakushu"
+  ],
+  "description": "データの 特徴を 数値で 表した もので、機械学習は これを 手がかりに 学びます。家の 値段を 予測するなら、広さや 駅からの 距離が 特徴量に なります。"
+ },
+ {
+  "id": "ki-rulebase",
+  "name": "ルールベース",
+  "reading": "るーるべーす",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kikaigakushu",
+   "ki-ai"
+  ],
+  "description": "人が「もし ◯◯なら △△」という ルールを 決めて 書き、その とおりに 判断させる AI の 方法です。データから 規則を 学ぶ 機械学習との ちがいが ポイントです。"
+ },
+ {
+  "id": "ki-backprop",
+  "name": "バックプロパゲーション",
+  "reading": "ばっくぷろぱげーしょん",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↩️",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-neural",
+   "ki-deeplearning"
+  ],
+  "description": "誤差逆伝播法とも いい、出力と 正解の ずれ(誤差)を 出力側から 入力側へ さかのぼって 伝え、つながりの 重みを 直す ニューラルネットワークの 学習の 方法です。"
+ },
+ {
+  "id": "ki-cnn",
+  "name": "CNN",
+  "reading": "しーえぬえぬ",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖼️",
+  "mapNode": "kiso:ai",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-deeplearning",
+   "ki-neural"
+  ],
+  "description": "Convolutional Neural Network(畳み込みニューラルネットワーク)の 略で、画像の 特徴を とらえるのが 得意です。画像認識に よく 使われます。"
+ },
+ {
+  "id": "ki-jizengakushu",
+  "name": "事前学習",
+  "reading": "じぜんがくしゅう",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "kiso:seisei",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-finetuning",
+   "ki-kibanmodel"
+  ],
+  "description": "特定の 用途に 使う 前に、ぼう大な データで モデルに 広く 学ばせておく ことです。その あと ファインチューニングで 目的に 合わせて 調整します。"
+ },
+ {
+  "id": "ki-ten-igakushu",
+  "name": "転移学習",
+  "reading": "てんいがくしゅう",
+  "journey": "kiso",
+  "category": "AI の技術",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "kiso:seisei",
+  "field": "基礎理論",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-finetuning",
+   "ki-jizengakushu"
+  ],
+  "description": "ある 目的で 学習した モデルの 知識を、別の 目的の 学習に 使い回す 方法です。少ない データでも よい モデルを 作りやすく なります。"
+ },
+ {
+  "id": "ki-risuto",
+  "name": "リスト",
+  "reading": "りすと",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "kiso:kozo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hairetsu",
+   "ki-kikozo"
+  ],
+  "description": "データと、次の データの 場所(ポインタ)を 組に して、くさりのように つないだ データ構造です。つなぎかえるだけで、とちゅうへの 追加や 削除が しやすいです。"
+ },
+ {
+  "id": "ki-dainyu",
+  "name": "代入",
+  "reading": "だいにゅう",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⬅️",
+  "mapNode": "kiso:nagare",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hensu",
+   "ki-gijigengo"
+  ],
+  "description": "変数に 値を 入れる ことです。擬似言語では「x ← 5」のように 左向きの 矢印で 書き、x に 5 が 入ります。右から 左へ 入る 向きに 注意します。"
+ },
+ {
+  "id": "ki-jokenshiki",
+  "name": "条件式",
+  "reading": "じょうけんしき",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "❓",
+  "mapNode": "kiso:nagare",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kurikaeshi",
+   "ki-detagata"
+  ],
+  "description": "結果が 真(true)か 偽(false)に なる 式です。「x > 10」などで、if の 選択や while の 繰返しを 続けるか どうかを 決めます。"
+ },
+ {
+  "id": "ki-kansu",
+  "name": "関数",
+  "reading": "かんすう",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚙️",
+  "mapNode": "kiso:nagare",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hikisu",
+   "ki-modorichi"
+  ],
+  "description": "決まった 処理を まとめて 名前を 付け、引数を 受け取って 結果(戻り値)を 返す しくみです。同じ 処理を 何度も 書かずに すみます。"
+ },
+ {
+  "id": "ki-detagata",
+  "name": "データ型",
+  "reading": "でーたがた",
+  "journey": "kiso",
+  "category": "データ構造とアルゴリズム",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kiso:nagare",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-hensu",
+   "ki-jokenshiki"
+  ],
+  "description": "変数に 入れる データの 種類です。整数型・実数型・論理型(true / false)・文字型などが あり、擬似言語では「整数型: x」のように 型を 決めて 変数を 宣言します。"
+ },
+ {
+  "id": "ki-java",
+  "name": "Java",
+  "reading": "じゃば",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-javascript",
+   "ki-puroguramugengo"
+  ],
+  "description": "シラバスに 名前が ある プログラム言語の 1つで、オブジェクト指向の 考えかたで 作られています。名前が にている JavaScript とは 別の 言語です。"
+ },
+ {
+  "id": "ki-javascript",
+  "name": "JavaScript",
+  "reading": "じゃばすくりぷと",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✨",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-java",
+   "ki-json"
+  ],
+  "description": "Web ブラウザの 中で 動き、Webページに 動きを 付ける ために よく 使われる プログラム言語です。名前は にていますが、Java とは 別の 言語です。"
+ },
+ {
+  "id": "ki-raiburari",
+  "name": "ライブラリ",
+  "reading": "らいぶらり",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-api",
+   "ki-subroutine"
+  ],
+  "description": "よく 使う 処理を 部品として まとめ、ほかの プログラムから 使えるように した ものです。外部の ライブラリを 使うと、1から 作らずに 効率よく プログラムを 作れます。"
+ },
+ {
+  "id": "ki-subroutine",
+  "name": "サブルーチン",
+  "reading": "さぶるーちん",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪆",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-kansu",
+   "ki-raiburari"
+  ],
+  "description": "メインルーチン(主な 流れ)から 呼び出されて 動く、処理の まとまりです。同じ 処理を 1か所に まとめられ、プログラムが 読みやすく なります。"
+ },
+ {
+  "id": "ki-jisage",
+  "name": "字下げ",
+  "reading": "じさげ",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "↘️",
+  "mapNode": "kiso:gengo",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-subroutine"
+  ],
+  "description": "インデンテーションとも いい、行の 頭を 下げて、処理の まとまりや ネスト(入れ子)の 深さを 見やすく する ことです。コーディング標準で 決めておきます。"
+ },
+ {
+  "id": "ki-sgml",
+  "name": "SGML",
+  "reading": "えすじーえむえる",
+  "journey": "kiso",
+  "category": "プログラムと言語",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "kiso:markup",
+  "field": "アルゴリズムとプログラミング",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "ki-html",
+   "ki-xml"
+  ],
+  "description": "タグで 文書の 構造を 表す マークアップ言語です。XML は SGML の 一部(サブセット)として 作られ、HTML も もとは SGML の 決まりで 定められていました。"
+ }
+]

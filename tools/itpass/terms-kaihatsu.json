@@ -1,0 +1,1925 @@
+[
+ {
+  "id": "ka-waterfall",
+  "name": "ウォーターフォールモデル",
+  "reading": "うぉーたーふぉーるもでる",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🌊",
+  "mapNode": "kaihatsu:model",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-prototyping",
+   "ka-spiral",
+   "ka-agile"
+  ],
+  "description": "要件定義 → 設計 → プログラミング → テスト の ように、上の 工程から 順に 進める 開発モデルです。計画が 立てやすい 一方、前の 工程に もどるのが 大変です。"
+ },
+ {
+  "id": "ka-agile",
+  "name": "アジャイル",
+  "reading": "あじゃいる",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐇",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-scrum",
+   "ka-xp",
+   "ka-waterfall"
+  ],
+  "description": "短い 期間で 作って 見せて 直す ことを くりかえす、軽くて すばやい 開発の 進めかたです。変わる 要望に 合わせやすいのが 特徴です。"
+ },
+ {
+  "id": "ka-tantai-test",
+  "name": "単体テスト",
+  "reading": "たんたいてすと",
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "kaihatsu:test",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-togo-test",
+   "ka-whitebox",
+   "ka-programming"
+  ],
+  "description": "1つ 1つの プログラムに 誤り(バグ)が ないかを 確かめる テストです。シラバスでは プログラミングの 工程に ふくまれます。"
+ },
+ {
+  "id": "ka-gantt",
+  "name": "ガントチャート",
+  "reading": "がんとちゃーと",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "kaihatsu:schedule",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-arrow",
+   "ka-shinchoku",
+   "ka-schedule-kanri"
+  ],
+  "description": "作業ごとの 予定と 実績を 横向きの 棒で 表した 図です。どの 作業が いつ 行われ、どこまで 進んだかが ひと目で 分かります。"
+ },
+ {
+  "id": "ka-project",
+  "name": "プロジェクト",
+  "reading": "ぷろじぇくと",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kaihatsu:pm",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-pm",
+   "ka-pmgr",
+   "ka-member"
+  ],
+  "description": "決まった 期間の 中で 目標を 達成する ための、一度きりの 仕事です。システム開発は ふつう プロジェクトとして 進めます。"
+ },
+ {
+  "id": "ka-hoshu",
+  "name": "保守",
+  "reading": "ほしゅ",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔧",
+  "mapNode": "kaihatsu:unyo",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-iko",
+   "ka-hoshusei",
+   "ka-kaihatsu-process"
+  ],
+  "description": "動き出した システムを 安定して 使える よう、直したり 変えたり よく したり する ことです。IT の 進歩や 経営戦略の 変化にも 合わせます。"
+ },
+ {
+  "id": "ka-sekkei",
+  "name": "設計",
+  "reading": "せっけい",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "kaihatsu:sekkei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-system-sekkei",
+   "ka-software-sekkei",
+   "ka-shosai-sekkei"
+  ],
+  "description": "決まった 要件を どのような しくみで 作るかを 決める 工程です。システム設計や ソフトウェア設計などが あります。"
+ },
+ {
+  "id": "ka-bug",
+  "name": "バグ",
+  "reading": "ばぐ",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🐛",
+  "mapNode": "kaihatsu:jisso",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-debug",
+   "ka-tantai-test",
+   "ka-program"
+  ],
+  "description": "プログラムの 中の 誤りの ことです。思った とおりに 動かない 原因に なるので、テストで 見つけて 直します。"
+ },
+ {
+  "id": "ka-debug",
+  "name": "デバッグ",
+  "reading": "でばっぐ",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "kaihatsu:jisso",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-bug",
+   "ka-tantai-test",
+   "ka-coding"
+  ],
+  "description": "プログラムの 誤り(バグ)を 見つけて 直す 作業です。プログラミングの 工程で、単体テストと あわせて 行います。"
+ },
+ {
+  "id": "ka-programming",
+  "name": "プログラミング",
+  "reading": "ぷろぐらみんぐ",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💻",
+  "mapNode": "kaihatsu:jisso",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-coding",
+   "ka-tantai-test",
+   "ka-sekkei"
+  ],
+  "description": "設計に したがって プログラムを 作る 工程です。シラバスでは 作った プログラムの 単体テストまでを ふくみます。"
+ },
+ {
+  "id": "ka-test",
+  "name": "テスト",
+  "reading": "てすと",
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "✅",
+  "mapNode": "kaihatsu:test",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-test-keikaku",
+   "ka-tantai-test",
+   "ka-togo-test"
+  ],
+  "description": "作った システムが 要件どおりに 動くかを 確かめる ことです。テストには 計画・実施・評価の サイクルが あり、目標に 対する 実績を 評価します。"
+ },
+ {
+  "id": "ka-coding",
+  "name": "コーディング",
+  "reading": "こーでぃんぐ",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "⌨️",
+  "mapNode": "kaihatsu:jisso",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-programming",
+   "ka-code-review",
+   "ka-debug"
+  ],
+  "description": "設計を もとに、プログラム言語で ソースコードを 書く ことです。書いた コードは コードレビューや テストで 確かめます。"
+ },
+ {
+  "id": "ka-iko",
+  "name": "移行",
+  "reading": "いこう",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "kaihatsu:unyo",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-ukeire-test",
+   "ka-hoshu",
+   "ka-kyoiku-kunren"
+  ],
+  "description": "今まで 使っていた しくみから 新しい システムへ 切りかえる ことです。データの 移しかえや 切りかえの 日の 計画が 大切です。"
+ },
+ {
+  "id": "ka-shinchoku",
+  "name": "進捗",
+  "reading": "しんちょく",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚶",
+  "mapNode": "kaihatsu:schedule",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-gantt",
+   "ka-shinchoku-hokoku",
+   "ka-schedule-kanri"
+  ],
+  "description": "仕事が 予定に 対して どこまで 進んだかの ことです。おくれに 早く 気づけば、人を 足すなどの 手を 早めに 打てます。"
+ },
+ {
+  "id": "ka-schedule-kanri",
+  "name": "スケジュール管理",
+  "reading": "すけじゅーるかんり",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗓️",
+  "mapNode": "kaihatsu:schedule",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-gantt",
+   "ka-arrow",
+   "ka-shinchoku"
+  ],
+  "description": "プロジェクトが 予定どおりに 進むよう、作業の 順番や 日にちを 決めて 見守る ことです。ガントチャートや アローダイアグラムを 使います。"
+ },
+ {
+  "id": "ka-pm",
+  "name": "プロジェクトマネジメント",
+  "reading": "ぷろじぇくとまねじめんと",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "kaihatsu:pm",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-project",
+   "ka-pmgr",
+   "ka-kensho"
+  ],
+  "description": "プロジェクトを 立ち上げ、計画に もとづいて 進め、進捗・コスト・品質・資源を 管理して 目標を 達成する 活動です。"
+ },
+ {
+  "id": "ka-wbs",
+  "name": "WBS",
+  "reading": "だぶりゅーびーえす",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌳",
+  "mapNode": "kaihatsu:wbs",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-scope-only",
+   "ka-scope",
+   "ka-gantt"
+  ],
+  "description": "Work Breakdown Structure の 略です。プロジェクトの 作業を 大きな ものから 小さな ものへ 分けて、木の ような 階層で 表した ものです。"
+ },
+ {
+  "id": "ka-blackbox",
+  "name": "ブラックボックステスト",
+  "reading": "ぶらっくぼっくすてすと",
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬛",
+  "mapNode": "kaihatsu:test",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-whitebox",
+   "ka-togo-test",
+   "ka-test-data"
+  ],
+  "description": "プログラムの 中の しくみを 見ずに、入力と 出力だけで 仕様どおりかを 確かめる テストです。中の 流れを 見る ホワイトボックステストと 取りちがえないように しましょう。"
+ },
+ {
+  "id": "ka-whitebox",
+  "name": "ホワイトボックステスト",
+  "reading": "ほわいとぼっくすてすと",
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⬜",
+  "mapNode": "kaihatsu:jisso",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-blackbox",
+   "ka-tantai-test",
+   "ka-test-data"
+  ],
+  "description": "プログラムの 中の 命令や 分岐の 流れを 見て、通り道が 正しく 動くかを 確かめる テストです。シラバスでは プログラミング(単体テスト)の 用語例です。"
+ },
+ {
+  "id": "ka-togo-test",
+  "name": "統合テスト",
+  "reading": "とうごうてすと",
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "kaihatsu:test",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-tantai-test",
+   "ka-blackbox",
+   "ka-kaiki-test"
+  ],
+  "description": "単体テストが すんだ プログラムを 組み合わせて、システムが 要件どおりに 動くかを 確かめる テストです。シラバスでは「結合テスト」では なく この 名前です。"
+ },
+ {
+  "id": "ka-ukeire-test",
+  "name": "受入れテスト",
+  "reading": "うけいれてすと",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "kaihatsu:unyo",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-shutokusha",
+   "ka-datosei-test",
+   "ka-nonyu"
+  ],
+  "description": "システムを 頼んだ 取得者(委託側)が、実際に 使う 環境で 意図どおりかを 確かめる テストです。問題が なければ 納入されます。"
+ },
+ {
+  "id": "ka-kaiki-test",
+  "name": "回帰テスト",
+  "reading": "かいきてすと",
+  "acceptedReadings": [
+   "かいきてすと",
+   "りぐれっしょんてすと"
+  ],
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "kaihatsu:test",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-togo-test",
+   "ka-refactoring",
+   "ka-ci"
+  ],
+  "description": "リグレッションテスト とも いいます。プログラムを 直した ことで、ほかの 正しく 動いていた ところが こわれて いないかを 確かめる テストです。"
+ },
+ {
+  "id": "ka-scrum",
+  "name": "スクラム",
+  "reading": "すくらむ",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏉",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-sprint",
+   "ka-scrum-team",
+   "ka-agile"
+  ],
+  "description": "アジャイルの 進めかたの 1つです。チームで スプリントと いう 短い 期間を くりかえし、少しずつ 価値の ある ものを 作ります。"
+ },
+ {
+  "id": "ka-sprint",
+  "name": "スプリント",
+  "reading": "すぷりんと",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏃",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-scrum",
+   "ka-sprint-backlog",
+   "ka-furikaeri"
+  ],
+  "description": "スクラムで くりかえす、1か月 以内の 決まった 長さの 期間です。スプリントごとに 計画し、作り、ふりかえります。"
+ },
+ {
+  "id": "ka-devops",
+  "name": "DevOps",
+  "reading": "でぶおぷす",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "♾️",
+  "mapNode": "kaihatsu:devops",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-ci",
+   "ka-mlops",
+   "ka-agile"
+  ],
+  "description": "開発(Development)と 運用(Operations)の チームが 協力し、新しい 機能を すばやく 安全に 届ける ための 考えかたです。"
+ },
+ {
+  "id": "ka-prototyping",
+  "name": "プロトタイピングモデル",
+  "reading": "ぷろとたいぴんぐもでる",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "kaihatsu:model",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-waterfall",
+   "ka-spiral",
+   "ka-rad"
+  ],
+  "description": "早い うちに 試作品(プロトタイプ)を 作って 利用者に 見てもらい、意見を 聞きながら 進める 開発モデルです。要件の くいちがいを へらせます。"
+ },
+ {
+  "id": "ka-spiral",
+  "name": "スパイラルモデル",
+  "reading": "すぱいらるもでる",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌀",
+  "mapNode": "kaihatsu:model",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-waterfall",
+   "ka-prototyping",
+   "ka-agile"
+  ],
+  "description": "システムを いくつかに 分け、設計・開発・テストを うずまきの ように くりかえして 少しずつ 仕上げる 開発モデルです。"
+ },
+ {
+  "id": "ka-arrow",
+  "name": "アローダイアグラム",
+  "reading": "あろーだいあぐらむ",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "➡️",
+  "mapNode": "kaihatsu:schedule",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-gantt",
+   "ka-schedule-kanri",
+   "ka-wbs"
+  ],
+  "description": "作業の 順番と 日数を 矢印で つないで 表す 図です。いちばん 時間の かかる 経路(クリティカルパス)が 全体の 日数を 決めます。",
+  "formula": "全体の 日数 = いちばん 長い 経路の 日数の 合計"
+ },
+ {
+  "id": "ka-pmgr",
+  "name": "プロジェクトマネージャ",
+  "reading": "ぷろじぇくとまねーじゃ",
+  "acceptedReadings": [
+   "ぷろじぇくとまねーじゃ",
+   "ぷろじぇくとまねーじゃー"
+  ],
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍✈️",
+  "mapNode": "kaihatsu:pm",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-pm",
+   "ka-member",
+   "ka-kensho"
+  ],
+  "description": "プロジェクト全体に 責任を もつ 人です。計画を 立て、メンバーや ステークホルダと 話し合いながら 目標の 達成を めざします。"
+ },
+ {
+  "id": "ka-seino-test",
+  "name": "性能テスト",
+  "reading": "せいのうてすと",
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏱️",
+  "mapNode": "kaihatsu:test",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-fuka-test",
+   "ka-togo-test",
+   "ka-test-keikaku"
+  ],
+  "description": "応答時間や 処理の 速さなどが、決めた 要件を 満たしているかを 確かめる テストです。"
+ },
+ {
+  "id": "ka-fuka-test",
+  "name": "負荷テスト",
+  "reading": "ふかてすと",
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏋️",
+  "mapNode": "kaihatsu:test",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-seino-test",
+   "ka-togo-test",
+   "ka-test-data"
+  ],
+  "description": "たくさんの 利用や 大量の データを 一度に かけて、システムが 耐えられるかを 確かめる テストです。"
+ },
+ {
+  "id": "ka-code-review",
+  "name": "コードレビュー",
+  "reading": "こーどれびゅー",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👀",
+  "mapNode": "kaihatsu:jisso",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-review",
+   "ka-coding",
+   "ka-pair"
+  ],
+  "description": "書いた ソースコードを ほかの 人が 読んで、誤りや 分かりにくい ところが ないかを 確かめる ことです。テストの 前に 誤りを 見つけられます。"
+ },
+ {
+  "id": "ka-shosai-sekkei",
+  "name": "詳細設計",
+  "reading": "しょうさいせっけい",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔬",
+  "mapNode": "kaihatsu:sekkei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kino-sekkei",
+   "ka-sekkei",
+   "ka-programming"
+  ],
+  "description": "プログラムを 作れる ところまで、処理の 中身や データを 細かく 決める 設計です。シラバスの 設計の 用語例の 1つです。"
+ },
+ {
+  "id": "ka-kino-sekkei",
+  "name": "機能設計",
+  "reading": "きのうせっけい",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "kaihatsu:sekkei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-shosai-sekkei",
+   "ka-sekkei",
+   "ka-system-sekkei"
+  ],
+  "description": "システムに 必要な 機能を どう 分けて、どのように 実現するかを 決める 設計です。シラバスの 設計の 用語例の 1つです。"
+ },
+ {
+  "id": "ka-object",
+  "name": "オブジェクト指向",
+  "reading": "おぶじぇくとしこう",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "kaihatsu:model",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-uml",
+   "ka-kozoka",
+   "ka-kaihatsu-shuho"
+  ],
+  "description": "データと その データを あつかう 処理を ひとまとまり(オブジェクト)に して 作る 開発手法です。部品として 使い回しやすく なります。"
+ },
+ {
+  "id": "ka-uml",
+  "name": "UML",
+  "reading": "ゆーえむえる",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "kaihatsu:sekkei",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-usecase",
+   "ka-object",
+   "ka-sekkei"
+  ],
+  "description": "Unified Modeling Language の 略です。システムの 設計を 決まった 書きかたの 図で 表す 表記法で、ユースケース図などが あります。"
+ },
+ {
+  "id": "ka-pair",
+  "name": "ペアプログラミング",
+  "reading": "ぺあぷろぐらみんぐ",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "kaihatsu:jisso",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-xp",
+   "ka-code-review",
+   "ka-tdd"
+  ],
+  "description": "2人が 1台の コンピュータに 向かい、書く 人と 確かめる 人に 分かれて プログラムを 作る やりかたです。XP の 実践の 1つです。"
+ },
+ {
+  "id": "ka-refactoring",
+  "name": "リファクタリング",
+  "reading": "りふぁくたりんぐ",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "kaihatsu:jisso",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kaiki-test",
+   "ka-xp",
+   "ka-tdd"
+  ],
+  "description": "プログラムの 外から 見た 動きは 変えずに、中の 書きかたを 読みやすく 直しやすく 整える ことです。機能を 足す ことでは ありません。"
+ },
+ {
+  "id": "ka-tdd",
+  "name": "テスト駆動開発",
+  "reading": "てすとくどうかいはつ",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "kaihatsu:test",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-xp",
+   "ka-pair",
+   "ka-test"
+  ],
+  "description": "先に テストを 書き、その テストに 通る ように プログラムを 書く 開発の やりかたです。XP の 実践の 1つです。"
+ },
+ {
+  "id": "ka-kyotsu-frame",
+  "name": "共通フレーム",
+  "reading": "きょうつうふれーむ",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📚",
+  "mapNode": "kaihatsu:devops",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-slcp",
+   "ka-cmmi",
+   "ka-kaihatsu-process"
+  ],
+  "description": "ソフトウェア開発と その 取引を 正しく 進める ため、作業項目を 1つずつ 決めて 標準化した ものです。頼む 側と 作る 側が 同じ 言葉で 話せます。"
+ },
+ {
+  "id": "ka-manual",
+  "name": "利用者マニュアル",
+  "reading": "りようしゃまにゅある",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "kaihatsu:unyo",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kyoiku-kunren",
+   "ka-ukeire-test",
+   "ka-iko"
+  ],
+  "description": "利用者が システムの 使いかたを 知る ための 説明書です。導入・受入れの ときに 用意します。"
+ },
+ {
+  "id": "ka-user-story",
+  "name": "ユーザーストーリー",
+  "reading": "ゆーざーすとーりー",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗣️",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-product-backlog",
+   "ka-agile",
+   "ka-sotai"
+  ],
+  "description": "利用者の 目線で「◯◯として、△△したい」の ように、ほしい 機能を 短い 文で 書いた ものです。アジャイル開発で 要求を 表します。"
+ },
+ {
+  "id": "ka-ci",
+  "name": "CI",
+  "reading": "しーあい",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔄",
+  "mapNode": "kaihatsu:devops",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-devops",
+   "ka-kaiki-test",
+   "ka-xp"
+  ],
+  "description": "継続的インテグレーション(Continuous Integration)の 略です。こまめに コードを まとめて、そのつど 自動で ビルドや テストを 行います。"
+ },
+ {
+  "id": "ka-scrum-master",
+  "name": "スクラムマスター",
+  "reading": "すくらむますたー",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧑‍🏫",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-scrum-team",
+   "ka-product-owner",
+   "ka-kaihatsusha"
+  ],
+  "description": "スクラムが うまく 回るよう、チームを 支える 役です。仕事を 命令する 上司では なく、進めかたの じゃまを 取りのぞきます。"
+ },
+ {
+  "id": "ka-product-owner",
+  "name": "プロダクトオーナー",
+  "reading": "ぷろだくとおーなー",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👑",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-product-backlog",
+   "ka-scrum-team",
+   "ka-scrum-master"
+  ],
+  "description": "プロダクトの 価値を 最大に する 責任を もつ 役です。プロダクトバックログの 順番を 決めます。委員会では なく 1人が 受けもちます。"
+ },
+ {
+  "id": "ka-product-backlog",
+  "name": "プロダクトバックログ",
+  "reading": "ぷろだくとばっくろぐ",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-sprint-backlog",
+   "ka-product-owner",
+   "ka-user-story"
+  ],
+  "description": "プロダクトに 必要な ものを、大事な 順に ならべた 一覧です。順番は プロダクトオーナーが 決めます。1回の スプリントの 計画である スプリントバックログと 区別しましょう。"
+ },
+ {
+  "id": "ka-sprint-backlog",
+  "name": "スプリントバックログ",
+  "reading": "すぷりんとばっくろぐ",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📝",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-product-backlog",
+   "ka-sprint",
+   "ka-kaihatsusha"
+  ],
+  "description": "その スプリントで 取り組む 項目と、それを やりとげる ための 作業の 計画です。プロダクト全体の 一覧である プロダクトバックログとは ちがいます。"
+ },
+ {
+  "id": "ka-scrum-team",
+  "name": "スクラムチーム",
+  "reading": "すくらむちーむ",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍🤝‍🧑",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-product-owner",
+   "ka-scrum-master",
+   "ka-kaihatsusha"
+  ],
+  "description": "スクラムで 開発する チームです。プロダクトオーナー・開発者・スクラムマスターの 3つの 役で つくり、ふつう 10人 以下です。"
+ },
+ {
+  "id": "ka-furikaeri",
+  "name": "ふりかえり",
+  "reading": "ふりかえり",
+  "acceptedReadings": [
+   "ふりかえり",
+   "れとろすぺくてぃぶ"
+  ],
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪞",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-sprint",
+   "ka-scrum",
+   "ka-agile"
+  ],
+  "description": "レトロスペクティブ とも いいます。スプリントの 終わりに、チームの 進めかたを 見なおして 次の 改善を 決める ことです。"
+ },
+ {
+  "id": "ka-xp",
+  "name": "XP",
+  "reading": "えっくすぴー",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-tdd",
+   "ka-pair",
+   "ka-refactoring"
+  ],
+  "description": "エクストリームプログラミングの 略です。テスト駆動開発・ペアプログラミング・リファクタリングなどの 実践を まとめた アジャイルの 手法です。"
+ },
+ {
+  "id": "ka-kaihatsusha",
+  "name": "開発者",
+  "reading": "かいはつしゃ",
+  "journey": "kaihatsu",
+  "category": "アジャイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛠️",
+  "mapNode": "kaihatsu:agile",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-scrum-team",
+   "ka-sprint-backlog",
+   "ka-scrum-master"
+  ],
+  "description": "スクラムチームの 役の 1つで、スプリントで 実際に 作る 人たちです。シラバスでは「開発チーム」では なく「開発者」と 書きます。"
+ },
+ {
+  "id": "ka-mlops",
+  "name": "MLOps",
+  "reading": "えむえるおぷす",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤖",
+  "mapNode": "kaihatsu:devops",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-devops",
+   "ka-ci",
+   "ka-kaihatsu-shuho"
+  ],
+  "description": "機械学習の モデルを、開発から 運用・見なおしまで 続けて 回す ための しくみです。DevOps の 考えかたを 機械学習に 広げた ものです。"
+ },
+ {
+  "id": "ka-slcp",
+  "name": "SLCP",
+  "reading": "えすえるしーぴー",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "kaihatsu:devops",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kyotsu-frame",
+   "ka-cmmi",
+   "ka-kaihatsu-process"
+  ],
+  "description": "Software Life Cycle Process の 略です。共通フレームとして、開発や 取引の もとに なる 作業項目を 1つずつ 定義し 標準化した ものです。"
+ },
+ {
+  "id": "ka-cmmi",
+  "name": "CMMI",
+  "reading": "しーえむえむあい",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "kaihatsu:devops",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-seijukudo",
+   "ka-seijukudo-level",
+   "ka-slcp"
+  ],
+  "description": "能力成熟度モデル統合(Capability Maturity Model Integration)の 略です。開発組織の プロセスの 成熟度を モデル化し、5段階の レベルで 表します。"
+ },
+ {
+  "id": "ka-seijukudo",
+  "name": "プロセス成熟度",
+  "reading": "ぷろせすせいじゅくど",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌱",
+  "mapNode": "kaihatsu:devops",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-cmmi",
+   "ka-seijukudo-level",
+   "ka-kaihatsu-process"
+  ],
+  "description": "開発組織の プロセスが どれだけ 整い、よく なっているかの 度合いです。CMMI は これを モデル化して 評価と 改善に 使います。"
+ },
+ {
+  "id": "ka-kozoka",
+  "name": "構造化手法",
+  "reading": "こうぞうかしゅほう",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏗️",
+  "mapNode": "kaihatsu:model",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-object",
+   "ka-kaihatsu-shuho",
+   "ka-kino-sekkei"
+  ],
+  "description": "大きな 機能を 小さな 機能に 分けて、上から 順に 細かく して いく 開発手法です。処理の 流れを 中心に 考えます。"
+ },
+ {
+  "id": "ka-usecase",
+  "name": "ユースケース",
+  "reading": "ゆーすけーす",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎬",
+  "mapNode": "kaihatsu:sekkei",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-uml",
+   "ka-user-story",
+   "ka-object"
+  ],
+  "description": "利用者と システムの やりとりを、使う 場面ごとに 表した ものです。UML の ユースケース図で、だれが 何を するかを 描きます。"
+ },
+ {
+  "id": "ka-rad",
+  "name": "RAD",
+  "reading": "らど",
+  "acceptedReadings": [
+   "らど",
+   "あーるえーでぃー"
+  ],
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏎️",
+  "mapNode": "kaihatsu:model",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-prototyping",
+   "ka-agile",
+   "ka-waterfall"
+  ],
+  "description": "Rapid Application Development の 略です。少ない 人数・短い 期間で、開発の 道具や 試作を 使って すばやく 作る 開発モデルです。"
+ },
+ {
+  "id": "ka-reverse",
+  "name": "リバースエンジニアリング",
+  "reading": "りばーすえんじにありんぐ",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔙",
+  "mapNode": "kaihatsu:model",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-hoshu",
+   "ka-sekkei",
+   "ka-rad"
+  ],
+  "description": "すでに ある プログラムを 調べて、その 仕様や 設計を 取り出す ことです。古い システムの 保守や 作りかえの 前に 使います。"
+ },
+ {
+  "id": "ka-kyodo-review",
+  "name": "共同レビュー",
+  "reading": "きょうどうれびゅー",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🫱",
+  "mapNode": "kaihatsu:sekkei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-review",
+   "ka-shutokusha",
+   "ka-kyokyusha"
+  ],
+  "description": "取得者(頼む 側)と 供給者(作る 側)が いっしょに 成果物を 確かめる レビューです。シラバスでは 要件定義の 用語例です。"
+ },
+ {
+  "id": "ka-hinshitsu-tokusei",
+  "name": "品質特性",
+  "reading": "ひんしつとくせい",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⭐",
+  "mapNode": "kaihatsu:sekkei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kinosei",
+   "ka-shiyosei",
+   "ka-hoshusei"
+  ],
+  "description": "ソフトウェアの 品質を はかる 物差しです。シラバスでは 機能性・効率性・使用性・信頼性などが 例に あげられ、要件定義で 決めます。"
+ },
+ {
+  "id": "ka-kinosei",
+  "name": "機能性",
+  "reading": "きのうせい",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "kaihatsu:risk",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-hinshitsu-tokusei",
+   "ka-shiyosei",
+   "ka-ishokusei"
+  ],
+  "description": "品質特性の 1つで、必要な 機能が そろい、正しく 動くかの 度合いです。使いやすさの 使用性と 区別しましょう。"
+ },
+ {
+  "id": "ka-shiyosei",
+  "name": "使用性",
+  "reading": "しようせい",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖐️",
+  "mapNode": "kaihatsu:risk",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-hinshitsu-tokusei",
+   "ka-kinosei",
+   "ka-manual"
+  ],
+  "description": "品質特性の 1つで、利用者に とって 分かりやすく 使いやすいかの 度合いです。機能が そろっているかは 機能性です。"
+ },
+ {
+  "id": "ka-hoshusei",
+  "name": "保守性",
+  "reading": "ほしゅせい",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔩",
+  "mapNode": "kaihatsu:risk",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-hinshitsu-tokusei",
+   "ka-hoshu",
+   "ka-ishokusei"
+  ],
+  "description": "品質特性の 1つで、ソフトウェアの 直しやすさ・変えやすさの 度合いです。ほかの 環境への 移しやすさは 移植性です。"
+ },
+ {
+  "id": "ka-ishokusei",
+  "name": "移植性",
+  "reading": "いしょくせい",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧳",
+  "mapNode": "kaihatsu:risk",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-hinshitsu-tokusei",
+   "ka-hoshusei",
+   "ka-kinosei"
+  ],
+  "description": "品質特性の 1つで、ソフトウェアを ほかの 環境(機械や OS など)へ 移しやすいかの 度合いです。直しやすさは 保守性です。"
+ },
+ {
+  "id": "ka-datosei-test",
+  "name": "妥当性確認テスト",
+  "reading": "だとうせいかくにんてすと",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎯",
+  "mapNode": "kaihatsu:unyo",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-ukeire-test",
+   "ka-shutokusha",
+   "ka-nonyu"
+  ],
+  "description": "システムが 意図した 用途を 本当に 達成しているかを 確かめる テストです。シラバスでは 導入・受入れの 用語例です。"
+ },
+ {
+  "id": "ka-fp",
+  "name": "ファンクションポイント法",
+  "reading": "ふぁんくしょんぽいんとほう",
+  "acceptedReadings": [
+   "ふぁんくしょんぽいんとほう",
+   "えふぴーほう"
+  ],
+  "journey": "kaihatsu",
+  "category": "見積り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "kaihatsu:kotei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-ruisui",
+   "ka-sotai",
+   "ka-kaihatsu-kibo"
+  ],
+  "description": "FP 法(ファンクションポイント法)は、画面・帳票・ファイルなどの 機能の 数と 複雑さを 点数に して、開発規模を 見積る 方法です。"
+ },
+ {
+  "id": "ka-ruisui",
+  "name": "類推見積法",
+  "reading": "るいすいみつもりほう",
+  "journey": "kaihatsu",
+  "category": "見積り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "kaihatsu:kotei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-fp",
+   "ka-sotai",
+   "ka-mitsumori"
+  ],
+  "description": "よく 似た 過去の プロジェクトの 実績を もとに、規模や 工数を 見積る 方法です。機能を 点数に する FP 法と 区別しましょう。"
+ },
+ {
+  "id": "ka-sotai",
+  "name": "相対見積",
+  "reading": "そうたいみつもり",
+  "journey": "kaihatsu",
+  "category": "見積り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚖️",
+  "mapNode": "kaihatsu:kotei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-fp",
+   "ka-ruisui",
+   "ka-user-story"
+  ],
+  "description": "基準に する 作業と くらべて「その 何倍くらいか」で 大きさを 見積る 方法です。アジャイル開発で よく 使われます。"
+ },
+ {
+  "id": "ka-system-sekkei",
+  "name": "システム設計",
+  "reading": "しすてむせっけい",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏛️",
+  "mapNode": "kaihatsu:sekkei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-software-sekkei",
+   "ka-sekkei",
+   "ka-kino-sekkei"
+  ],
+  "description": "システム全体を どのような 構成に し、それぞれに どんな 役割を もたせるかを 決める 設計です。"
+ },
+ {
+  "id": "ka-software-sekkei",
+  "name": "ソフトウェア設計",
+  "reading": "そふとうぇあせっけい",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧬",
+  "mapNode": "kaihatsu:sekkei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-system-sekkei",
+   "ka-shosai-sekkei",
+   "ka-sekkei"
+  ],
+  "description": "システム設計で 決めた ソフトウェアの 部分を、どのような 部品や 処理に 分けて 作るかを 決める 設計です。"
+ },
+ {
+  "id": "ka-shutokusha",
+  "name": "取得者",
+  "reading": "しゅとくしゃ",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "kaihatsu:unyo",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kyokyusha",
+   "ka-ukeire-test",
+   "ka-kyodo-review"
+  ],
+  "description": "システムを 頼んで 受け取る 側(委託側)です。受入れテストは 供給者の 手助けを 受けながら、取得者が 行います。"
+ },
+ {
+  "id": "ka-kyokyusha",
+  "name": "供給者",
+  "reading": "きょうきゅうしゃ",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏭",
+  "mapNode": "kaihatsu:unyo",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-shutokusha",
+   "ka-nonyu",
+   "ka-ukeire-test"
+  ],
+  "description": "システムを 作って わたす 側(受託側)です。受入れテストでは 取得者を 支援する 立場で、テストの 主役では ありません。"
+ },
+ {
+  "id": "ka-nonyu",
+  "name": "納入",
+  "reading": "のうにゅう",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "kaihatsu:unyo",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-ukeire-test",
+   "ka-shutokusha",
+   "ka-kyokyusha"
+  ],
+  "description": "できあがった システムを 取得者に 納める ことです。取得者による 受入れテストで 問題が なければ 行われます。"
+ },
+ {
+  "id": "ka-kyoiku-kunren",
+  "name": "教育訓練",
+  "reading": "きょういくくんれん",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎓",
+  "mapNode": "kaihatsu:unyo",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-manual",
+   "ka-iko",
+   "ka-ukeire-test"
+  ],
+  "description": "新しい システムの 運用者や 利用者などに、使いかたを 教えて 練習して もらう ことです。導入・受入れの ときに 行います。"
+ },
+ {
+  "id": "ka-kosu",
+  "name": "開発工数",
+  "reading": "かいはつこうすう",
+  "journey": "kaihatsu",
+  "category": "見積り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "👷",
+  "mapNode": "kaihatsu:kotei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kaihatsu-kikan",
+   "ka-kaihatsu-kibo",
+   "ka-mitsumori"
+  ],
+  "description": "開発に かかる 作業の 量です。人月(1人が 1か月 働く 量)などで 表し、開発規模や 開発環境を もとに 見積ります。",
+  "formula": "工数(人月)= 人数 × 月数"
+ },
+ {
+  "id": "ka-kaihatsu-kikan",
+  "name": "開発期間",
+  "reading": "かいはつきかん",
+  "journey": "kaihatsu",
+  "category": "見積り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏳",
+  "mapNode": "kaihatsu:kotei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kosu",
+   "ka-kaihatsu-kibo",
+   "ka-mitsumori"
+  ],
+  "description": "開発を 始めてから 終わるまでに かかる 期間です。工数と、作業する 人数を もとに 見積ります。",
+  "formula": "期間(月)= 工数(人月)÷ 人数"
+ },
+ {
+  "id": "ka-kaihatsu-kibo",
+  "name": "開発規模",
+  "reading": "かいはつきぼ",
+  "journey": "kaihatsu",
+  "category": "見積り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "kaihatsu:kotei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-fp",
+   "ka-kosu",
+   "ka-kaihatsu-kikan"
+  ],
+  "description": "作る ソフトウェアの 大きさです。FP 法などで はかり、開発工数や 開発期間を 見積る もとに なります。"
+ },
+ {
+  "id": "ka-kaihatsu-kankyo",
+  "name": "開発環境",
+  "reading": "かいはつかんきょう",
+  "journey": "kaihatsu",
+  "category": "見積り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "kaihatsu:kotei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kaihatsu-kibo",
+   "ka-kosu",
+   "ka-mitsumori"
+  ],
+  "description": "開発に 使う 道具・機械・プログラム言語などの ことです。開発規模と ならんで、見積りの もとに なります。"
+ },
+ {
+  "id": "ka-mitsumori",
+  "name": "見積り",
+  "reading": "みつもり",
+  "journey": "kaihatsu",
+  "category": "見積り",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧮",
+  "mapNode": "kaihatsu:kotei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-fp",
+   "ka-ruisui",
+   "ka-kosu"
+  ],
+  "description": "開発規模や 開発環境を もとに、開発工数・開発期間などを 前もって 計算する ことです。FP 法・類推見積法・相対見積などが あります。"
+ },
+ {
+  "id": "ka-kaihatsu-process",
+  "name": "開発プロセス",
+  "reading": "かいはつぷろせす",
+  "journey": "kaihatsu",
+  "category": "開発の流れ",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🪜",
+  "mapNode": "kaihatsu:kotei",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-sekkei",
+   "ka-test",
+   "ka-hoshu"
+  ],
+  "description": "システム開発の 工程の 流れです。要件定義 → 設計 → プログラミング → 統合・テスト → 導入・受入れ → 保守 の 順に 進みます。"
+ },
+ {
+  "id": "ka-kaihatsu-shuho",
+  "name": "開発手法",
+  "reading": "かいはつしゅほう",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "kaihatsu:model",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kozoka",
+   "ka-object",
+   "ka-devops"
+  ],
+  "description": "ソフトウェアの 作りかたの 考えかたです。シラバスでは 構造化手法・オブジェクト指向・DevOps・MLOps などが 例です。"
+ },
+ {
+  "id": "ka-review",
+  "name": "レビュー",
+  "reading": "れびゅー",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗒️",
+  "mapNode": "kaihatsu:jisso",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-code-review",
+   "ka-kyodo-review",
+   "ka-sekkei"
+  ],
+  "description": "設計書や プログラムなどの 成果物を 人が 読んで 確かめ、誤りを 早く 見つける ことです。後の 工程ほど 直すのが 大変に なります。"
+ },
+ {
+  "id": "ka-program",
+  "name": "プログラム",
+  "reading": "ぷろぐらむ",
+  "journey": "kaihatsu",
+  "category": "設計と実装",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "kaihatsu:jisso",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-programming",
+   "ka-coding",
+   "ka-bug"
+  ],
+  "description": "コンピュータに させたい 処理を、命令として 順に ならべた ものです。プログラミングの 工程で 作ります。"
+ },
+ {
+  "id": "ka-test-data",
+  "name": "テストデータ",
+  "reading": "てすとでーた",
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "kaihatsu:test",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-test-keikaku",
+   "ka-blackbox",
+   "ka-whitebox"
+  ],
+  "description": "テストの ときに 入れる データです。正しい 値だけで なく、まちがった 値や 区切りの 値も 用意すると 誤りを 見つけやすく なります。"
+ },
+ {
+  "id": "ka-test-keikaku",
+  "name": "テスト計画",
+  "reading": "てすとけいかく",
+  "journey": "kaihatsu",
+  "category": "テスト",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "kaihatsu:test",
+  "field": "システム開発技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-test",
+   "ka-test-data",
+   "ka-togo-test"
+  ],
+  "description": "何を、どの 順で、どのように テストするかを 先に 決めた ものです。テストは 計画・実施・評価の サイクルで 進めます。"
+ },
+ {
+  "id": "ka-kensho",
+  "name": "プロジェクト憲章",
+  "reading": "ぷろじぇくとけんしょう",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "kaihatsu:pm",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-pm",
+   "ka-pmgr",
+   "ka-scope"
+  ],
+  "description": "プロジェクトを 正式に 始める ための 文書です。目的や 責任者などを はっきり させ、プロジェクトの 立ち上げで 作ります。"
+ },
+ {
+  "id": "ka-member",
+  "name": "プロジェクトメンバー",
+  "reading": "ぷろじぇくとめんばー",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙋",
+  "mapNode": "kaihatsu:pm",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-pmgr",
+   "ka-project",
+   "ka-shigen-kanri"
+  ],
+  "description": "プロジェクトで それぞれの 作業を 受けもつ 人たちです。プロジェクトマネージャの もとで 協力して 進めます。"
+ },
+ {
+  "id": "ka-scope-only",
+  "name": "スコープ",
+  "reading": "すこーぷ",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔭",
+  "mapNode": "kaihatsu:wbs",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-scope",
+   "ka-wbs",
+   "ka-kensho"
+  ],
+  "description": "プロジェクトで 作る 成果物と、その ための 作業の 範囲の ことです。範囲が あいまいだと、作業が ふくらみやすく なります。"
+ },
+ {
+  "id": "ka-cost-kanri",
+  "name": "コスト管理",
+  "reading": "こすとかんり",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💴",
+  "mapNode": "kaihatsu:wbs",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-shigen-kanri",
+   "ka-pm",
+   "ka-shinchoku"
+  ],
+  "description": "プロジェクトに かかる お金を 計画し、予算の 中に おさまるよう 見守る ことです。進捗・品質・資源と ならぶ 管理の 対象です。"
+ },
+ {
+  "id": "ka-shinchoku-hokoku",
+  "name": "進捗報告",
+  "reading": "しんちょくほうこく",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📣",
+  "mapNode": "kaihatsu:schedule",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-shinchoku",
+   "ka-gantt",
+   "ka-pmgr"
+  ],
+  "description": "作業が 予定に 対して どこまで 進んだかを 関係者に 伝える ことです。おくれや 問題は 早めに 報告すると 手を 打ちやすく なります。"
+ },
+ {
+  "id": "ka-taiosaku",
+  "name": "リスクの対応策",
+  "reading": "りすくのたいおうさく",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛡️",
+  "mapNode": "kaihatsu:risk",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-kaihi",
+   "ka-keigen",
+   "ka-tenka"
+  ],
+  "description": "プロジェクトの リスクへの 備えかたで、シラバスでは 回避・軽減・受容・転嫁の 4つです。情報セキュリティの リスク対応(回避・共有・保有)とは 字が ちがうので 混ぜないように しましょう。"
+ },
+ {
+  "id": "ka-keigen",
+  "name": "軽減",
+  "reading": "けいげん",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📉",
+  "mapNode": "kaihatsu:risk",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-taiosaku",
+   "ka-kaihi",
+   "ka-juyo"
+  ],
+  "description": "リスクの対応策の 1つで、リスクが 起こる 見こみや 起きた ときの 影響を 小さく する ことです。ゼロに するのは 回避です。"
+ },
+ {
+  "id": "ka-juyo",
+  "name": "受容",
+  "reading": "じゅよう",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🙆",
+  "mapNode": "kaihatsu:risk",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-taiosaku",
+   "ka-keigen",
+   "ka-tenka"
+  ],
+  "description": "リスクの対応策の 1つで、前もって 特別な 手を 打たず、起きたら 対応すると 決めて 受け入れる ことです。影響が 小さい リスクに 使います。"
+ },
+ {
+  "id": "ka-tenka",
+  "name": "転嫁",
+  "reading": "てんか",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "kaihatsu:risk",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-taiosaku",
+   "ka-juyo",
+   "ka-kaihi"
+  ],
+  "description": "リスクの対応策の 1つで、保険や 契約などで リスクの 影響を ほかの 人や 会社に 移す ことです。リスク 自体が なくなる わけでは ありません。"
+ },
+ {
+  "id": "ka-kaihi",
+  "name": "回避",
+  "reading": "かいひ",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "kaihatsu:risk",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-taiosaku",
+   "ka-keigen",
+   "ka-tenka"
+  ],
+  "description": "リスクの対応策の 1つで、原因を 取りのぞいたり 計画を 変えたり して、リスクが 起きないように する ことです。"
+ },
+ {
+  "id": "ka-scope",
+  "name": "スコープマネジメント",
+  "reading": "すこーぷまねじめんと",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "kaihatsu:wbs",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-scope-only",
+   "ka-wbs",
+   "ka-kensho"
+  ],
+  "description": "プロジェクトで 作る ものと 作業の 範囲(スコープ)を 決め、その とおりに 進むよう 管理する ことです。WBS を 作るのも ここに ふくまれます。"
+ },
+ {
+  "id": "ka-seijukudo-level",
+  "name": "成熟度レベル",
+  "reading": "せいじゅくどれべる",
+  "journey": "kaihatsu",
+  "category": "開発モデルと手法",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "kaihatsu:devops",
+  "field": "ソフトウェア開発管理技術",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-cmmi",
+   "ka-seijukudo",
+   "ka-slcp"
+  ],
+  "description": "CMMI で 開発組織の プロセスの 成熟度を 表す 段階です。5段階の レベルで 定義され、上の レベルほど プロセスが 整っています。"
+ },
+ {
+  "id": "ka-shigen-kanri",
+  "name": "資源管理",
+  "reading": "しげんかんり",
+  "journey": "kaihatsu",
+  "category": "プロジェクト管理",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍🔧",
+  "mapNode": "kaihatsu:wbs",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-member",
+   "ka-cost-kanri",
+   "ka-pmgr"
+  ],
+  "description": "プロジェクトに 必要な 人・機材などの 資源を 用意し、うまく 割りあてる ことです。人を 最適に 配置する ことも ふくみます。"
+ },
+ {
+  "id": "ka-hinshitsu-kanri",
+  "name": "品質管理",
+  "reading": "ひんしつかんり",
+  "journey": "kaihatsu",
+  "category": "品質とリスク",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏅",
+  "mapNode": "kaihatsu:risk",
+  "field": "プロジェクトマネジメント",
+  "ruleset": "マネジメント系",
+  "relatedTerms": [
+   "ka-hinshitsu-tokusei",
+   "ka-review",
+   "ka-test"
+  ],
+  "description": "プロジェクトの 成果物が 決めた 品質を 満たすよう、レビューや テストで 確かめて 管理する ことです。進捗・コスト・資源と ならぶ 管理の 対象です。"
+ }
+]

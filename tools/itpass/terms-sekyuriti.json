@@ -1,0 +1,1842 @@
+[
+  {
+    "id": "sc-password",
+    "name": "パスワード",
+    "reading": "ぱすわーど",
+    "journey": "sekyuriti",
+    "category": "認証",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔑",
+    "mapNode": "sekyuriti:ninsho",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-mfa",
+      "sc-otp",
+      "sc-password-list"
+    ],
+    "description": "システムを 使う 本人だけが 知っている 合言葉で、利用者ID と 組み合わせて 本人を 確かめます。長く 推測されにくい ものに し、ほかの サービスと 使い回さない ことが 大切です。"
+  },
+  {
+    "id": "sc-malware",
+    "name": "マルウェア",
+    "reading": "まるうぇあ",
+    "journey": "sekyuriti",
+    "category": "マルウェア",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🐛",
+    "mapNode": "sekyuriti:malware",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-virus",
+      "sc-ransomware",
+      "sc-worm"
+    ],
+    "description": "利用者に 害を 与える 悪意の ある ソフトウェアの 総称です。ウイルス・ワーム・トロイの木馬・ボット・スパイウェア・ランサムウェアなどが あり、対策ソフトと 定義ファイルの 更新で 守ります。"
+  },
+  {
+    "id": "sc-virus",
+    "name": "コンピュータウイルス",
+    "reading": "こんぴゅーたういるす",
+    "journey": "sekyuriti",
+    "category": "マルウェア",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🦠",
+    "mapNode": "sekyuriti:malware",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-malware",
+      "sc-worm"
+    ],
+    "description": "ほかの プログラムや ファイルに 入りこんで 増え、感染を 広げる マルウェアです。メールの 添付ファイルや USB メモリから 入る ことが あり、知らない 添付ファイルを 開かない ことが 対策に なります。"
+  },
+  {
+    "id": "sc-phishing",
+    "name": "フィッシング",
+    "reading": "ふぃっしんぐ",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🎣",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-narisumashi",
+      "sc-server-cert"
+    ],
+    "description": "実在の 会社などを よそおった メールや SMS で にせの Web サイトに 誘い、ID・パスワードや カード番号を 入力させて だまし取る 攻撃です。メールの リンクではなく、いつもの 正しい 入口から ひらくと 防げます。"
+  },
+  {
+    "id": "sc-narisumashi",
+    "name": "なりすまし",
+    "reading": "なりすまし",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🎭",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-mfa",
+      "sc-digital-signature",
+      "sc-shinsei"
+    ],
+    "description": "他人の ID や 名前を 使って、その 人の ふりを する ことです。シラバスでは 人的脅威の 1つで、多要素認証や デジタル署名で 本人か どうかを 確かめる ことが 対策に なります。"
+  },
+  {
+    "id": "sc-roei",
+    "name": "漏えい",
+    "reading": "ろうえい",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "💧",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kimitsusei",
+      "sc-dlp",
+      "sc-funshitsu"
+    ],
+    "description": "顧客情報などの 大事な 情報が、許可されていない 外部に もれる ことです。誤送信や 持ち出しなど 人が 原因の ことも 多く、シラバスでは 人的脅威の 代表として あつかいます。"
+  },
+  {
+    "id": "sc-funshitsu",
+    "name": "紛失",
+    "reading": "ふんしつ",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧳",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-disk-angoka",
+      "sc-roei",
+      "sc-mdm"
+    ],
+    "description": "ノートPC や USB メモリ、書類などを なくす ことで、情報漏えいの 原因に なります。人的脅威の 1つで、ディスク暗号化や 画面ロックを しておくと 中身を 読まれにくく なります。"
+  },
+  {
+    "id": "sc-angoka",
+    "name": "暗号化",
+    "reading": "あんごうか",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔒",
+    "mapNode": "sekyuriti:angou",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-fukugo",
+      "sc-kyotsukagi",
+      "sc-kokaikagi"
+    ],
+    "description": "データを 決まった 方法と 鍵で 変換し、鍵を 持たない 第三者には 読めない 形に する ことです。もとに もどす ことを 復号と いい、通信や 保存する データの 機密性を 守ります。"
+  },
+  {
+    "id": "sc-firewall",
+    "name": "ファイアウォール",
+    "reading": "ふぁいあうぉーる",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧱",
+    "mapNode": "sekyuriti:network",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-waf",
+      "sc-dmz",
+      "sc-ids"
+    ],
+    "description": "社内の ネットワークと インターネットの 境目に 置き、決めた ルールに 合う 通信だけを 通して 外からの 不正な 侵入を 防ぐ しくみです。技術的セキュリティ対策の 基本です。"
+  },
+  {
+    "id": "sc-mfa",
+    "name": "多要素認証",
+    "reading": "たようそにんしょう",
+    "journey": "sekyuriti",
+    "category": "認証",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📲",
+    "mapNode": "sekyuriti:ninsho",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-password",
+      "sc-seitai",
+      "sc-otp"
+    ],
+    "description": "知っている もの(パスワード)・持っている もの(スマホ・IC カード)・本人自身の もの(指紋・顔)の うち 2つ以上を 組み合わせて 本人を 確かめる 方式です。2つなら 二要素認証と いいます。"
+  },
+  {
+    "id": "sc-seitai",
+    "name": "生体認証",
+    "reading": "せいたいにんしょう",
+    "journey": "sekyuriti",
+    "category": "認証",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "👆",
+    "mapNode": "sekyuriti:ninsho",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kao",
+      "sc-kosai",
+      "sc-frr"
+    ],
+    "description": "指紋・顔・静脈・虹彩・声紋など、人ごとに ちがう 体の 特徴で 本人を 確かめる 方式で、バイオメトリクス認証とも いいます。忘れたり なくしたり する 心配が 少ない ことが 長所です。"
+  },
+  {
+    "id": "sc-zeijakusei",
+    "name": "脆弱性",
+    "reading": "ぜいじゃくせい",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🕳️",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kyoi",
+      "sc-patch",
+      "sc-shadow-it"
+    ],
+    "description": "情報システムの 欠陥(バグ・セキュリティホール)や、ルールが 守られていない などの、セキュリティ上の 弱い ところです。脅威は この 弱点を ついて 被害を 起こすので、修正や 教育で ふさぎます。"
+  },
+  {
+    "id": "sc-ransomware",
+    "name": "ランサムウェア",
+    "reading": "らんさむうぇあ",
+    "journey": "sekyuriti",
+    "category": "マルウェア",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔏",
+    "mapNode": "sekyuriti:malware",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-enkaku-backup",
+      "sc-malware"
+    ],
+    "description": "ファイルを 暗号化して 使えなく し、元に もどす かわりに 身代金を 求める マルウェアです。支払っても 戻る とは かぎらないので、ふだんから バックアップを 取って おく ことが いちばんの 備えです。"
+  },
+  {
+    "id": "sc-kanshi-camera",
+    "name": "監視カメラ",
+    "reading": "かんしかめら",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📹",
+    "mapNode": "sekyuriti:butsuri",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-nyutaishitsu",
+      "sc-sejo"
+    ],
+    "description": "建物の 出入口や サーバ室などを 映して 記録する カメラで、物理的セキュリティ対策の 1つです。不正な 侵入や 持ち出しを 思いとどまらせ、あとから 確かめる 記録にも なります。"
+  },
+  {
+    "id": "sc-kao",
+    "name": "顔認証",
+    "reading": "かおにんしょう",
+    "journey": "sekyuriti",
+    "category": "認証",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🙂",
+    "mapNode": "sekyuriti:ninsho",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-seitai",
+      "sc-nyutaishitsu"
+    ],
+    "description": "顔の 目・鼻・口の 位置や 形などの 特徴で 本人を 確かめる 生体認証です。スマホの ロック解除や 入退室管理で 使われ、カメラに 顔を 向ける だけで 認証できます。"
+  },
+  {
+    "id": "sc-kyoi",
+    "name": "脅威",
+    "reading": "きょうい",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⚡",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-zeijakusei",
+      "sc-joho-shisan"
+    ],
+    "description": "情報資産に 被害を 与える 原因に なる ものです。シラバスでは 人的脅威(漏えい・なりすまし)・技術的脅威(マルウェア)・物理的脅威(災害・破壊)に 分けます。弱点を 表す 脆弱性と 区別します。"
+  },
+  {
+    "id": "sc-joho-shisan",
+    "name": "情報資産",
+    "reading": "じょうほうしさん",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💎",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kyoi",
+      "sc-kimitsusei"
+    ],
+    "description": "会社に とって 価値が あり、守るべき 情報の ことです。代表は 顧客情報・営業情報・知的財産関連情報・人事情報で、何を どれだけ 守るかを 決める 出発点に なります。"
+  },
+  {
+    "id": "sc-naibu-fusei",
+    "name": "内部不正",
+    "reading": "ないぶふせい",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏢",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-fusei-triangle",
+      "sc-access-ken",
+      "sc-dlp"
+    ],
+    "description": "社員や 委託先など 組織の 中の 人が、情報を 持ち出したり 消したり する 不正です。IPA の「組織における内部不正防止ガイドライン」が あり、アクセス権を 必要な 分だけに する ことや 監視が 対策です。"
+  },
+  {
+    "id": "sc-social",
+    "name": "ソーシャルエンジニアリング",
+    "reading": "そーしゃるえんじにありんぐ",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗣️",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-narisumashi",
+      "sc-clear-screen"
+    ],
+    "description": "上司を よそおった 電話や 肩ごしの のぞき見など、人の 心理的な すきを ついて パスワードなどを 聞き出す 人的脅威です。技術では 防ぎにくいので、教育と ルールで 守ります。"
+  },
+  {
+    "id": "sc-worm",
+    "name": "ワーム",
+    "reading": "わーむ",
+    "journey": "sekyuriti",
+    "category": "マルウェア",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🪱",
+    "mapNode": "sekyuriti:malware",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-virus",
+      "sc-malware"
+    ],
+    "description": "ほかの ファイルに 寄生せず、自分自身を 複製して ネットワークを 通じて 広がる マルウェアです。ほかの ファイルに 入りこむ コンピュータウイルスとの ちがいが ひっかけに なります。"
+  },
+  {
+    "id": "sc-trojan",
+    "name": "トロイの木馬",
+    "reading": "とろいのもくば",
+    "journey": "sekyuriti",
+    "category": "マルウェア",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🐴",
+    "mapNode": "sekyuriti:malware",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-virus",
+      "sc-backdoor"
+    ],
+    "description": "役に立つ ソフトの ふりを して 入りこみ、中に ひそんで 情報を 送ったり 侵入の 手助けを したり する マルウェアです。自分で 増える 力は 持たない 点が ウイルスや ワームと ちがいます。"
+  },
+  {
+    "id": "sc-spyware",
+    "name": "スパイウェア",
+    "reading": "すぱいうぇあ",
+    "journey": "sekyuriti",
+    "category": "マルウェア",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🕵️",
+    "mapNode": "sekyuriti:malware",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-keylogger",
+      "sc-malware"
+    ],
+    "description": "利用者が 気づかない うちに 個人情報や 閲覧の 記録などを 集めて 外部に 送る マルウェアです。入れた 覚えの ない ソフトを 入れない ことや 対策ソフトが 守りに なります。"
+  },
+  {
+    "id": "sc-bot",
+    "name": "ボット",
+    "reading": "ぼっと",
+    "journey": "sekyuriti",
+    "category": "マルウェア",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🤖",
+    "mapNode": "sekyuriti:malware",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-ddos",
+      "sc-malware"
+    ],
+    "description": "感染した コンピュータを 外部から 遠隔操作できる ように する マルウェアです。たくさんの 感染機器が まとめて 操られ、DDoS 攻撃や 迷惑メールの 送信の 踏み台に されます。"
+  },
+  {
+    "id": "sc-hyotekigata",
+    "name": "標的型攻撃",
+    "reading": "ひょうてきがたこうげき",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-bec",
+      "sc-jcrat",
+      "sc-phishing"
+    ],
+    "description": "特定の 組織を ねらい、機密情報や ID・パスワードを 盗もうと する 攻撃です。APT・水飲み場型攻撃・やり取り型攻撃などが あり、標的型メールの 訓練で 見ぬく 力を つける ことが 対策です。"
+  },
+  {
+    "id": "sc-dos",
+    "name": "DoS攻撃",
+    "reading": "どすこうげき",
+    "acceptedReadings": [
+      "どすこうげき",
+      "でぃーおーえすこうげき"
+    ],
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚧",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-ddos",
+      "sc-kayosei"
+    ],
+    "description": "サーバに 大量の 要求を 送って 負荷を かけ、サービスを 使えなく する 攻撃で、サービス妨害攻撃とも いいます。ねらわれるのは 情報セキュリティの 要素の うち 可用性です。"
+  },
+  {
+    "id": "sc-ddos",
+    "name": "DDoS攻撃",
+    "reading": "でぃーどすこうげき",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🌊",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-dos",
+      "sc-bot"
+    ],
+    "description": "たくさんの 機器から いっせいに 行う 分散型の DoS 攻撃です。ボットに 感染した 機器が 使われる ことが 多く、1か所からの 通信を 止める だけでは 防ぎにくい のが 特徴です。"
+  },
+  {
+    "id": "sc-brute-force",
+    "name": "総当たり攻撃",
+    "reading": "そうあたりこうげき",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔁",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-password",
+      "sc-password-list"
+    ],
+    "description": "ブルートフォース攻撃とも いい、パスワードに なりうる 文字の 組み合わせを 次々に 試す 攻撃です。長く 複雑な パスワードに する ことや、何回か まちがえたら ロックする しくみで 守ります。"
+  },
+  {
+    "id": "sc-password-list",
+    "name": "パスワードリスト攻撃",
+    "reading": "ぱすわーどりすとこうげき",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📋",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-password",
+      "sc-brute-force",
+      "sc-mfa"
+    ],
+    "description": "クレデンシャルスタッフィングとも いい、ほかの サービスから もれた ID と パスワードの 組を 使って ログインを 試みる 攻撃です。同じ パスワードを 使い回さない ことが いちばんの 対策です。"
+  },
+  {
+    "id": "sc-isms",
+    "name": "ISMS",
+    "reading": "あいえすえむえす",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📘",
+    "mapNode": "sekyuriti:isms",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-policy",
+      "sc-kimitsusei"
+    ],
+    "description": "情報セキュリティマネジメントシステムの 略です。組織が 情報を 守る ための 方針を 決め、PDCA で 見なおし つづける しくみで、認証基準は JIS Q 27001(ISO/IEC 27001)です。"
+  },
+  {
+    "id": "sc-kimitsusei",
+    "name": "機密性",
+    "reading": "きみつせい",
+    "journey": "sekyuriti",
+    "category": "セキュリティの要素",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🤫",
+    "mapNode": "sekyuriti:isms",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kanzensei",
+      "sc-kayosei",
+      "sc-angoka"
+    ],
+    "description": "情報セキュリティの 要素の 1つで、許可された 人だけが 情報に アクセスできる ように する ことです。暗号化や アクセス制御で 守ります。正しさの 完全性・使える ことの 可用性と 区別します。"
+  },
+  {
+    "id": "sc-kanzensei",
+    "name": "完全性",
+    "reading": "かんぜんせい",
+    "journey": "sekyuriti",
+    "category": "セキュリティの要素",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "✅",
+    "mapNode": "sekyuriti:isms",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kimitsusei",
+      "sc-kayosei",
+      "sc-hash"
+    ],
+    "description": "情報や 処理が 正確で、欠けたり 改ざんされたり していない 状態を 守る ことです。ハッシュ関数や デジタル署名で 改ざんを 見つけられます。見せない ことの 機密性と 取りちがえない ように します。"
+  },
+  {
+    "id": "sc-kayosei",
+    "name": "可用性",
+    "reading": "かようせい",
+    "journey": "sekyuriti",
+    "category": "セキュリティの要素",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🟢",
+    "mapNode": "sekyuriti:isms",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kimitsusei",
+      "sc-kanzensei",
+      "sc-dos"
+    ],
+    "description": "許可された 人が 必要な ときに 情報や システムを 使える ように する ことです。機器の 二重化や バックアップで 高めます。DoS 攻撃は この 可用性を ねらう 攻撃です。"
+  },
+  {
+    "id": "sc-policy",
+    "name": "情報セキュリティポリシー",
+    "reading": "じょうほうせきゅりてぃぽりしー",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📜",
+    "mapNode": "sekyuriti:isms",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-isms",
+      "sc-csirt"
+    ],
+    "description": "組織が 情報セキュリティに どう 取り組むかを 定めた 方針で、シラバスでは 情報セキュリティ方針とも 書きます。機密性・完全性・可用性を 守る ための 行動の よりどころで、社員みんなが 守ります。"
+  },
+  {
+    "id": "sc-csirt",
+    "name": "CSIRT",
+    "reading": "しーさーと",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚒",
+    "mapNode": "sekyuriti:soshiki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-soc",
+      "sc-policy"
+    ],
+    "description": "Computer Security Incident Response Team の 略で、セキュリティの 事故(インシデント)が 起きて いないか 見張り、起きたら 原因や 影響の 範囲を 調べて 対応する 組織内の チームです。"
+  },
+  {
+    "id": "sc-otp",
+    "name": "ワンタイムパスワード",
+    "reading": "わんたいむぱすわーど",
+    "journey": "sekyuriti",
+    "category": "認証",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⏱️",
+    "mapNode": "sekyuriti:ninsho",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-password",
+      "sc-mfa"
+    ],
+    "description": "一度 使うと 使えなく なる、その 場かぎりの パスワードです。スマホの アプリや 専用の 機器、SMS で 届く 番号などを 使い、もれても 使い回されにくい ことが 長所です。"
+  },
+  {
+    "id": "sc-sso",
+    "name": "シングルサインオン",
+    "reading": "しんぐるさいんおん",
+    "journey": "sekyuriti",
+    "category": "認証",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎟️",
+    "mapNode": "sekyuriti:ninsho",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-password",
+      "sc-mfa"
+    ],
+    "description": "1回の 認証で、ゆるされた 複数の システムや サービスを 使える ように する しくみです。覚える パスワードが 減って 便利な 反面、その 1回の 認証を 多要素認証などで 強く 守る ことが 大切です。"
+  },
+  {
+    "id": "sc-fukugo",
+    "name": "復号",
+    "reading": "ふくごう",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔓",
+    "mapNode": "sekyuriti:angou",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-angoka",
+      "sc-kokaikagi"
+    ],
+    "description": "暗号化された データを 鍵を 使って もとの 読める 形に もどす ことです。暗号化と 対の ことばで、鍵を 持つ 人だけが 復号できる ことで 機密性が 守られます。"
+  },
+  {
+    "id": "sc-kyotsukagi",
+    "name": "共通鍵暗号",
+    "reading": "きょうつうかぎあんごう",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗝️",
+    "mapNode": "sekyuriti:angou",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kokaikagi",
+      "sc-hybrid"
+    ],
+    "description": "暗号化と 復号に 同じ 鍵を 使う 方式で、共通鍵暗号方式とも いいます。相手ごとに 鍵を 用意し ひみつに 渡す 必要が あります。ちがう 鍵を 使う 公開鍵暗号との ちがいが よく 出ます。",
+    "formula": "n人の鍵の数 = n × (n − 1) ÷ 2"
+  },
+  {
+    "id": "sc-kokaikagi",
+    "name": "公開鍵暗号",
+    "reading": "こうかいかぎあんごう",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📮",
+    "mapNode": "sekyuriti:angou",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kyotsukagi",
+      "sc-digital-signature",
+      "sc-pki"
+    ],
+    "description": "公開鍵と 秘密鍵の 対に なった ちがう 鍵を 使う 方式です。送る 人は 相手の 公開鍵で 暗号化し、受け取った 人だけが 自分の 秘密鍵で 復号できます。多くの 人と やり取りする ときに 向きます。",
+    "formula": "n人の鍵の数 = 2 × n"
+  },
+  {
+    "id": "sc-digital-signature",
+    "name": "デジタル署名",
+    "reading": "でじたるしょめい",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "✍️",
+    "mapNode": "sekyuriti:shomei",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kokaikagi",
+      "sc-hinin",
+      "sc-timestamp"
+    ],
+    "description": "送る 人が 自分の 秘密鍵(署名鍵)で 作り、受け取った 人が 送り手の 公開鍵(検証鍵)で 確かめる しくみです。なりすましと 改ざんが ない ことを 確かめられ、否認防止にも なります。"
+  },
+  {
+    "id": "sc-ca",
+    "name": "認証局",
+    "reading": "にんしょうきょく",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏛️",
+    "mapNode": "sekyuriti:shomei",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-pki",
+      "sc-crl",
+      "sc-root-cert"
+    ],
+    "description": "Certification Authority の 略で、公開鍵が 本人の もので ある ことを 証明する デジタル証明書を 発行・失効する 第三者の 機関です。PKI(公開鍵基盤)の 中心に なります。"
+  },
+  {
+    "id": "sc-vpn",
+    "name": "VPN",
+    "reading": "ぶいぴーえぬ",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚇",
+    "mapNode": "sekyuriti:network",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-tls",
+      "sc-firewall"
+    ],
+    "description": "Virtual Private Network の 略で、インターネットなどの 上に 暗号化した 通信路を 作り、専用線の ように 安全に 拠点や 自宅と 社内を つなぐ しくみです。テレワークでも 使われます。"
+  },
+  {
+    "id": "sc-nyutaishitsu",
+    "name": "入退室管理",
+    "reading": "にゅうたいしつかんり",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🪪",
+    "mapNode": "sekyuriti:butsuri",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-antipassback",
+      "sc-kanshi-camera",
+      "sc-sejo"
+    ],
+    "description": "IC カードや 生体認証などで、だれが いつ 部屋や 建物に 出入りしたかを 記録し、入れる 人を 限る 物理的セキュリティ対策です。サーバ室など 大事な 場所で 使われます。"
+  },
+  {
+    "id": "sc-clear-desk",
+    "name": "クリアデスク",
+    "reading": "くりあですく",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗂️",
+    "mapNode": "sekyuriti:butsuri",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-clear-screen",
+      "sc-social"
+    ],
+    "description": "席を はなれる ときや 帰る ときに、書類や USB メモリを 机の 上に 置いた ままに せず 片づける ルールです。のぞき見や 持ち出しを 防ぎ、画面を ロックする クリアスクリーンと セットで 行います。"
+  },
+  {
+    "id": "sc-risk-kaihi",
+    "name": "リスク回避",
+    "reading": "りすくかいひ",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "↩️",
+    "mapNode": "sekyuriti:risk",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-risk-taio",
+      "sc-risk-iten",
+      "sc-risk-hoyu"
+    ],
+    "description": "リスクの 原因と なる 仕事の やりかたや 情報を やめたり 変えたり して、リスク そのものを なくす 対応です。保険などで 損失を ほかへ 移す リスク移転とは ちがいます。"
+  },
+  {
+    "id": "sc-shadow-it",
+    "name": "シャドーIT",
+    "reading": "しゃどーあいてぃー",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌑",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-zeijakusei",
+      "sc-mdm"
+    ],
+    "description": "会社が 認めて いない 個人の スマホや クラウドサービスを 仕事に 使う ことです。会社が 管理できず 情報漏えいの もとに なるので、シラバスでは 脆弱性の 1つと して あつかいます。"
+  },
+  {
+    "id": "sc-fusei-triangle",
+    "name": "不正のトライアングル",
+    "reading": "ふせいのとらいあんぐる",
+    "journey": "sekyuriti",
+    "category": "脅威と脆弱性",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔺",
+    "mapNode": "sekyuriti:kyoi",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-naibu-fusei"
+    ],
+    "description": "不正が 起きる 3つの 要因を 表した 考えかたで、機会(できて しまう 環境)・動機(お金に こまる など)・正当化(自分は 悪くないと 思う 気持ち)が そろうと 不正が 起きやすく なります。"
+  },
+  {
+    "id": "sc-keylogger",
+    "name": "キーロガー",
+    "reading": "きーろがー",
+    "journey": "sekyuriti",
+    "category": "マルウェア",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⌨️",
+    "mapNode": "sekyuriti:malware",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-spyware",
+      "sc-password"
+    ],
+    "description": "キーボードで 打った 内容を 記録する しくみで、マルウェアとして 使われると ID・パスワードや カード番号が ぬすまれます。共用の パソコンで 大事な 情報を 入力しない ことも 対策です。"
+  },
+  {
+    "id": "sc-backdoor",
+    "name": "バックドア",
+    "reading": "ばっくどあ",
+    "journey": "sekyuriti",
+    "category": "マルウェア",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚪",
+    "mapNode": "sekyuriti:malware",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-trojan",
+      "sc-edr"
+    ],
+    "description": "あとから 気づかれずに 外から 入れる ように しかけられた 裏口です。いちど 侵入された システムに 残される ことが あるので、侵入が わかったら システム全体を 調べなおします。"
+  },
+  {
+    "id": "sc-bec",
+    "name": "ビジネスメール詐欺",
+    "reading": "びじねすめーるさぎ",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📧",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-hyotekigata",
+      "sc-narisumashi"
+    ],
+    "description": "BEC(Business E-mail Compromise)とも いい、取引先や 社長を よそおった メールで、にせの 口座に お金を 振り込ませる 詐欺です。振込先の 変更などは メール以外の 方法で 確かめて 防ぎます。"
+  },
+  {
+    "id": "sc-zeroday",
+    "name": "ゼロデイ攻撃",
+    "reading": "ぜろでいこうげき",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📆",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-patch",
+      "sc-zeijakusei",
+      "sc-ips"
+    ],
+    "description": "ソフトウェアの 脆弱性が 見つかってから 修正プログラムが 出るまでの 間に、その 弱点を ねらう 攻撃です。パッチが まだ ないので、IPS や EDR など ほかの 対策を 重ねて 守ります。"
+  },
+  {
+    "id": "sc-sqli",
+    "name": "SQLインジェクション",
+    "reading": "えすきゅーえるいんじぇくしょん",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗃️",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-xss",
+      "sc-waf"
+    ],
+    "description": "Web の 入力欄から データベースを 不正に 操作する 命令を 入れられ、情報を ぬすまれたり 書きかえられたり する 攻撃です。入力を そのまま 使わず、エスケープ処理などで 無害に する ことが 対策です。"
+  },
+  {
+    "id": "sc-xss",
+    "name": "クロスサイトスクリプティング",
+    "reading": "くろすさいとすくりぷてぃんぐ",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌐",
+    "mapNode": "sekyuriti:kogeki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-sqli",
+      "sc-waf",
+      "sc-by-design"
+    ],
+    "description": "Web サイトの 脆弱性を ついて 悪意の ある スクリプトを 埋め込み、見に 来た 人の ブラウザで 動かされる 攻撃です。表示する 前に 特別な 文字を 無害な 形に 変える エスケープ処理が 対策です。"
+  },
+  {
+    "id": "sc-risk-hyoka",
+    "name": "リスク評価",
+    "reading": "りすくひょうか",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "sekyuriti:risk",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-risk-taio"
+    ],
+    "description": "リスクアセスメントの 3つめの 段階で、分析した リスクの 大きさを 基準と くらべて、対応が 必要か、どれから 対応するかを 決めます。流れは リスク特定 → リスク分析 → リスク評価 です。"
+  },
+  {
+    "id": "sc-risk-taio",
+    "name": "リスク対応",
+    "reading": "りすくたいおう",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "sekyuriti:risk",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-risk-kaihi",
+      "sc-risk-kyoyu",
+      "sc-risk-hoyu"
+    ],
+    "description": "リスク評価の 結果に もとづいて、リスクに どう 向き合うかを 決める ことです。シラバスでは リスク回避・リスク共有(リスク移転・リスク分散)・リスク保有が 用語例に あります。"
+  },
+  {
+    "id": "sc-risk-iten",
+    "name": "リスク移転",
+    "reading": "りすくいてん",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "sekyuriti:risk",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-risk-kyoyu",
+      "sc-cyber-hoken",
+      "sc-risk-kaihi"
+    ],
+    "description": "保険に 入ったり 業務を 外部に 委託したり して、リスクによる 損失を ほかの 組織に 移す 対応です。シラバスでは リスク共有の 1つです。原因を なくす リスク回避とは ちがいます。"
+  },
+  {
+    "id": "sc-risk-hoyu",
+    "name": "リスク保有",
+    "reading": "りすくほゆう",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🤲",
+    "mapNode": "sekyuriti:risk",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-risk-taio",
+      "sc-risk-kaihi"
+    ],
+    "description": "リスクが 小さい ときや 対策の 費用が 損害より 大きい ときに、特に 対策を せず その リスクを 受け入れる 対応です。何も しないと 決めて おく ことが ポイントです。"
+  },
+  {
+    "id": "sc-risk-kyoyu",
+    "name": "リスク共有",
+    "reading": "りすくきょうゆう",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🤝",
+    "mapNode": "sekyuriti:risk",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-risk-iten",
+      "sc-risk-taio"
+    ],
+    "description": "リスクを ほかの 組織などと 分け合う 対応で、シラバスでは リスク移転と リスク分散を ふくみます。保険や 外部委託、拠点を 分けて おく ことが 例です。"
+  },
+  {
+    "id": "sc-cyber-hoken",
+    "name": "サイバー保険",
+    "reading": "さいばーほけん",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛟",
+    "mapNode": "sekyuriti:risk",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-risk-iten"
+    ],
+    "description": "サイバー攻撃や 情報漏えいなどの 事故で 生じた 損害や 対応の 費用に そなえる 保険です。シラバスでは 個人情報保護の 用語例に あり、リスク対応では リスク移転の 例に なります。"
+  },
+  {
+    "id": "sc-shinsei",
+    "name": "真正性",
+    "reading": "しんせいせい",
+    "journey": "sekyuriti",
+    "category": "セキュリティの要素",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏷️",
+    "mapNode": "sekyuriti:isms",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-narisumashi",
+      "sc-sekinin",
+      "sc-hinin"
+    ],
+    "description": "情報セキュリティの 要素の 1つで、利用者や 情報が 主張どおりの 本物で ある ことです。なりすましで ない ことを 確かめる 考えかたで、デジタル署名などで 確かめます。"
+  },
+  {
+    "id": "sc-sekinin",
+    "name": "責任追跡性",
+    "reading": "せきにんついせきせい",
+    "journey": "sekyuriti",
+    "category": "セキュリティの要素",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👣",
+    "mapNode": "sekyuriti:isms",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-shinsei",
+      "sc-hinin"
+    ],
+    "description": "情報セキュリティの 要素の 1つで、だれが いつ 何を したかを あとから たどれる ことです。ログ(記録)を 残し、利用者ごとに ID を 分けて おく ことで 高まります。"
+  },
+  {
+    "id": "sc-hinin",
+    "name": "否認防止",
+    "reading": "ひにんぼうし",
+    "journey": "sekyuriti",
+    "category": "セキュリティの要素",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧾",
+    "mapNode": "sekyuriti:isms",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-digital-signature",
+      "sc-timestamp",
+      "sc-sekinin"
+    ],
+    "description": "送った 人や 受け取った 人が、あとから「送っていない」「受け取っていない」と 否定できない ように 証拠を 残す ことです。デジタル署名や タイムスタンプが 役に立ちます。"
+  },
+  {
+    "id": "sc-soc",
+    "name": "SOC",
+    "reading": "そっく",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔭",
+    "mapNode": "sekyuriti:soshiki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-csirt",
+      "sc-siem"
+    ],
+    "description": "Security Operation Center の 略で、ネットワークや 機器を 見張りつづけ、攻撃の きざしを 見つけて 分析する 組織です。事故への 対応を 中心に 行う CSIRT との ちがいに 注意します。"
+  },
+  {
+    "id": "sc-ismap",
+    "name": "ISMAP",
+    "reading": "いずまっぷ",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "☁️",
+    "mapNode": "sekyuriti:soshiki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-jcsip"
+    ],
+    "description": "政府情報システムのための セキュリティ評価制度の 略で、政府が 使う クラウドサービスを 前もって 評価し、基準を みたした ものを 登録する 制度です。"
+  },
+  {
+    "id": "sc-jcsip",
+    "name": "J-CSIP",
+    "reading": "じぇいしっぷ",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📡",
+    "mapNode": "sekyuriti:soshiki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-jcrat",
+      "sc-ismap"
+    ],
+    "description": "サイバー情報共有イニシアティブの 略で、IPA が 中心と なり、参加する 企業や 団体の 間で サイバー攻撃の 情報を 共有して 被害の 広がりを 防ぐ 取り組みです。"
+  },
+  {
+    "id": "sc-jcrat",
+    "name": "J-CRAT",
+    "reading": "じぇいくらーと",
+    "journey": "sekyuriti",
+    "category": "管理と組織",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚑",
+    "mapNode": "sekyuriti:soshiki",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-jcsip",
+      "sc-hyotekigata"
+    ],
+    "description": "サイバーレスキュー隊の ことで、IPA が 標的型サイバー攻撃の 被害を 受けた 組織の 相談を 受け、被害の 広がりを 防ぐ ための 支援を します。",
+    "acceptedReadings": [
+      "じぇいくらーと",
+      "じぇいくらっと"
+    ]
+  },
+  {
+    "id": "sc-kosai",
+    "name": "虹彩認証",
+    "reading": "こうさいにんしょう",
+    "journey": "sekyuriti",
+    "category": "認証",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👁️",
+    "mapNode": "sekyuriti:ninsho",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-seitai",
+      "sc-kao"
+    ],
+    "description": "目の 黒目の まわりに ある 虹彩の もようで 本人を 確かめる 生体認証です。もようは 人ごとに ちがい、目の 奥を 見る 網膜認証とは 見る ところが ちがいます。"
+  },
+  {
+    "id": "sc-frr",
+    "name": "本人拒否率",
+    "reading": "ほんにんきょひりつ",
+    "journey": "sekyuriti",
+    "category": "認証",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🙅",
+    "mapNode": "sekyuriti:ninsho",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-far",
+      "sc-seitai"
+    ],
+    "description": "本人拒否率(FRR)は、本人なのに 認証に 失敗して はじかれて しまう 割合です。判定を きびしく すると 本人拒否率は 上がり、他人受入率(FAR)は 下がる という 関係が よく 出ます。"
+  },
+  {
+    "id": "sc-far",
+    "name": "他人受入率",
+    "reading": "たにんうけいれりつ",
+    "journey": "sekyuriti",
+    "category": "認証",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🙆",
+    "mapNode": "sekyuriti:ninsho",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-frr",
+      "sc-seitai"
+    ],
+    "description": "他人受入率(FAR)は、本人で ない 他人を まちがって 受け入れて しまう 割合です。安全を 重く 見るなら 低く したい 値で、本人拒否率(FRR)と 入れかえる ひっかけに 注意します。"
+  },
+  {
+    "id": "sc-hybrid",
+    "name": "ハイブリッド暗号",
+    "reading": "はいぶりっどあんごう",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔀",
+    "mapNode": "sekyuriti:angou",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kyotsukagi",
+      "sc-kokaikagi",
+      "sc-tls"
+    ],
+    "description": "共通鍵暗号と 公開鍵暗号を 組み合わせる 方式です。データは 処理の 速い 共通鍵で 暗号化し、その 共通鍵を 公開鍵暗号で 相手に 安全に 渡します。SSL/TLS などで 使われます。"
+  },
+  {
+    "id": "sc-hash",
+    "name": "ハッシュ関数",
+    "reading": "はっしゅかんすう",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "#️⃣",
+    "mapNode": "sekyuriti:angou",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-kanzensei",
+      "sc-digital-signature"
+    ],
+    "description": "データから 決まった 長さの 値(ハッシュ値)を 作る 関数です。データが 少しでも 変わると 値が 大きく 変わり、値から もとの データには もどせないので、改ざんの 確認に 使います。"
+  },
+  {
+    "id": "sc-disk-angoka",
+    "name": "ディスク暗号化",
+    "reading": "でぃすくあんごうか",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💽",
+    "mapNode": "sekyuriti:angou",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-funshitsu",
+      "sc-tpm",
+      "sc-angoka"
+    ],
+    "description": "パソコンの ディスク全体を まるごと 暗号化して おく ことです。パソコンを 紛失したり 盗まれたり しても、中の データを 読まれにくく します。1つずつ 暗号化する ファイル暗号化と くらべて 覚えます。"
+  },
+  {
+    "id": "sc-sukashi",
+    "name": "電子透かし",
+    "reading": "でんしすかし",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🖼️",
+    "mapNode": "sekyuriti:angou",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-hash"
+    ],
+    "description": "画像・音楽・動画などに、ふだんは 気づかない 形で 作者などの 情報を 埋め込む 技術です。不正な コピーを 見つけたり 著作権を 示したり する ことに 使われます。"
+  },
+  {
+    "id": "sc-wpa2",
+    "name": "WPA2",
+    "reading": "だぶりゅぴーえーつー",
+    "acceptedReadings": [
+      "だぶりゅぴーえーつー",
+      "だぶりゅーぴーえーつー"
+    ],
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📶",
+    "mapNode": "sekyuriti:angou",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-angoka",
+      "sc-vpn"
+    ],
+    "description": "無線LAN の 通信を 暗号化する 方式の 1つで、Wi-Fi Protected Access(WPA)を 改良した 版です。強い 暗号の AES を 使います。暗号化 されていない 無線LAN では 大事な 情報を 送らない ように します。"
+  },
+  {
+    "id": "sc-pki",
+    "name": "PKI",
+    "reading": "ぴーけーあい",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏗️",
+    "mapNode": "sekyuriti:shomei",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-ca",
+      "sc-root-cert",
+      "sc-kokaikagi"
+    ],
+    "description": "Public Key Infrastructure(公開鍵基盤)の 略で、認証局が 発行する デジタル証明書に よって、公開鍵が たしかに 本人の もので ある ことを 保証する しくみです。"
+  },
+  {
+    "id": "sc-root-cert",
+    "name": "ルート証明書",
+    "reading": "るーとしょうめいしょ",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌳",
+    "mapNode": "sekyuriti:shomei",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-ca",
+      "sc-pki",
+      "sc-server-cert"
+    ],
+    "description": "認証局の 階層の いちばん 上に ある ルート認証局が、自分自身を 証明した 証明書です。信頼の 基点(トラストアンカー)と なり、ブラウザなどに 前もって 入って います。"
+  },
+  {
+    "id": "sc-server-cert",
+    "name": "サーバ証明書",
+    "reading": "さーばしょうめいしょ",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📄",
+    "mapNode": "sekyuriti:shomei",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-tls",
+      "sc-ca",
+      "sc-root-cert"
+    ],
+    "description": "Web サイトの サーバが 本物で ある ことを 認証局が 証明する デジタル証明書です。SSL/TLS で 使われ、にせの サイトで ない ことを 確かめられます。利用者側の クライアント証明書と 区別します。"
+  },
+  {
+    "id": "sc-crl",
+    "name": "CRL",
+    "reading": "しーあーるえる",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📃",
+    "mapNode": "sekyuriti:shomei",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-ca",
+      "sc-pki"
+    ],
+    "description": "Certificate Revocation List(証明書失効リスト)の 略で、有効期限の 前に 取り消された デジタル証明書の 一覧です。秘密鍵が もれた ときなどに 認証局が 失効させ、この リストで 公開します。"
+  },
+  {
+    "id": "sc-timestamp",
+    "name": "タイムスタンプ",
+    "reading": "たいむすたんぷ",
+    "journey": "sekyuriti",
+    "category": "暗号と署名",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⏰",
+    "mapNode": "sekyuriti:shomei",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-digital-signature",
+      "sc-hinin"
+    ],
+    "description": "時刻認証とも いい、電子データが その 時刻に たしかに あった ことと、それ以降 改ざんされて いない ことを 証明する 技術です。デジタル署名と 組み合わせて 使われます。"
+  },
+  {
+    "id": "sc-waf",
+    "name": "WAF",
+    "reading": "わふ",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛡️",
+    "mapNode": "sekyuriti:network",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-firewall",
+      "sc-sqli",
+      "sc-xss"
+    ],
+    "description": "Web Application Firewall の 略で、Web アプリケーションへの 通信の 中身を 調べ、SQL インジェクションや クロスサイトスクリプティングなどの 攻撃を 防ぎます。ふつうの ファイアウォールより 細かく 見ます。"
+  },
+  {
+    "id": "sc-ids",
+    "name": "IDS",
+    "reading": "あいでぃーえす",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚨",
+    "mapNode": "sekyuriti:network",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-ips",
+      "sc-firewall"
+    ],
+    "description": "Intrusion Detection System(侵入検知システム)の 略で、通信を 見張って 不正な 侵入の きざしを 見つけ、管理者に 知らせます。通信を 止める ところまで 行う IPS との ちがいが よく 出ます。"
+  },
+  {
+    "id": "sc-ips",
+    "name": "IPS",
+    "reading": "あいぴーえす",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⛔",
+    "mapNode": "sekyuriti:network",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-ids",
+      "sc-zeroday"
+    ],
+    "description": "Intrusion Prevention System(侵入防止システム)の 略で、不正な 通信を 見つけると 自動で その 通信を 止めて 侵入を 防ぎます。見つけて 知らせる だけの IDS と 区別します。"
+  },
+  {
+    "id": "sc-dmz",
+    "name": "DMZ",
+    "reading": "でぃーえむぜっと",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏝️",
+    "mapNode": "sekyuriti:network",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-firewall",
+      "sc-waf"
+    ],
+    "description": "非武装地帯とも いい、インターネットと 社内LAN の 間に ファイアウォールで 区切って 作る 区画です。Web サーバなど 外に 公開する サーバを 置き、社内LAN を 直接 さらさない ように します。"
+  },
+  {
+    "id": "sc-tls",
+    "name": "TLS",
+    "reading": "てぃーえるえす",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔗",
+    "mapNode": "sekyuriti:network",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-server-cert",
+      "sc-hybrid",
+      "sc-vpn"
+    ],
+    "description": "SSL/TLS の ことで、インターネットの 通信を 暗号化し、なりすましを 防ぐ プロトコルです。いまは SSL を 改良した TLS が 使われ、Web では HTTPS で 始まる URL の 通信に 使われます。"
+  },
+  {
+    "id": "sc-kenneki",
+    "name": "検疫ネットワーク",
+    "reading": "けんえきねっとわーく",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏥",
+    "mapNode": "sekyuriti:network",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-patch",
+      "sc-mdm"
+    ],
+    "description": "社外から 持ち帰った パソコンなどを 社内LAN に つなぐ 前に、いったん 別の ネットワークで ウイルス対策や 修正プログラムの 状態を 確かめてから 接続を 許す しくみです。"
+  },
+  {
+    "id": "sc-mdm",
+    "name": "MDM",
+    "reading": "えむでぃーえむ",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📱",
+    "mapNode": "sekyuriti:network",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-funshitsu",
+      "sc-shadow-it",
+      "sc-kenneki"
+    ],
+    "description": "Mobile Device Management の 略で、会社が 社員に 配る スマホや タブレットを まとめて 管理する しくみです。設定を 一度に 配ったり、紛失した ときに 遠くから ロックしたり できます。"
+  },
+  {
+    "id": "sc-sejo",
+    "name": "施錠管理",
+    "reading": "せじょうかんり",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔐",
+    "mapNode": "sekyuriti:butsuri",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-nyutaishitsu",
+      "sc-kanshi-camera"
+    ],
+    "description": "サーバ室・書庫・机の 引き出しなどに 鍵を かけ、鍵の 貸し出しや 返却も 記録して 管理する 物理的セキュリティ対策です。大事な 書類や 機器に 近づける 人を 限ります。"
+  },
+  {
+    "id": "sc-antipassback",
+    "name": "アンチパスバック",
+    "reading": "あんちぱすばっく",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "sekyuriti:butsuri",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-nyutaishitsu"
+    ],
+    "description": "入室の 記録が ない IC カードでは 退室できない など、入る ときと 出る ときの 記録を 照らし合わせる 入退室管理の しくみです。前の 人に ついて 一緒に 入る ことを 防ぎます。"
+  },
+  {
+    "id": "sc-clear-screen",
+    "name": "クリアスクリーン",
+    "reading": "くりあすくりーん",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🖥️",
+    "mapNode": "sekyuriti:butsuri",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-clear-desk",
+      "sc-social"
+    ],
+    "description": "席を はなれる ときに パソコンの 画面を ロックし、ほかの 人に 画面を 見られたり 操作されたり しない ように する ルールです。書類を 片づける クリアデスクと 組み合わせます。"
+  },
+  {
+    "id": "sc-enkaku-backup",
+    "name": "遠隔バックアップ",
+    "reading": "えんかくばっくあっぷ",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗺️",
+    "mapNode": "sekyuriti:butsuri",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-ransomware",
+      "sc-kayosei"
+    ],
+    "description": "データの 複製を はなれた 場所に 置き、災害などで 1か所の データが 失われても 復旧できる ように します。3-2-1 ルールでは コピーを 本体を ふくめ 3つ・2種類の 媒体に し、1つを 別の 拠点に 置きます。"
+  },
+  {
+    "id": "sc-access-ken",
+    "name": "アクセス権",
+    "reading": "あくせすけん",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔖",
+    "mapNode": "sekyuriti:butsuri",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-naibu-fusei",
+      "sc-kimitsusei"
+    ],
+    "description": "だれが どの 情報や システムを 見たり 変えたり できるかを 決める 権限です。仕事に 必要な 分だけを 与え、異動や 退職の ときは すぐに 見なおす ことで、内部不正や 漏えいを 防ぎます。"
+  },
+  {
+    "id": "sc-edr",
+    "name": "EDR",
+    "reading": "いーでぃーあーる",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛰️",
+    "mapNode": "sekyuriti:zero",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-siem",
+      "sc-zeroday"
+    ],
+    "description": "Endpoint Detection and Response の 略で、パソコンなどの 端末(エンドポイント)の 動きを 見張り、あやしい 動きを 見つけたら 隔離などの 対応を すばやく 行う しくみです。"
+  },
+  {
+    "id": "sc-siem",
+    "name": "SIEM",
+    "reading": "しーむ",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📊",
+    "mapNode": "sekyuriti:zero",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-soc",
+      "sc-edr"
+    ],
+    "description": "Security Information and Event Management の 略で、ファイアウォールや サーバなど いろいろな 機器の ログを 集めて 関連づけて 分析し、攻撃の きざしを 見つける しくみです。"
+  },
+  {
+    "id": "sc-dlp",
+    "name": "DLP",
+    "reading": "でぃーえるぴー",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📤",
+    "mapNode": "sekyuriti:zero",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-roei",
+      "sc-naibu-fusei"
+    ],
+    "description": "Data Loss Prevention の 略で、機密情報を 見分けて、メールでの 送信や USB メモリへの コピーなどの 持ち出しを 見張り、止める しくみです。情報漏えいを 防ぎます。"
+  },
+  {
+    "id": "sc-by-design",
+    "name": "セキュリティバイデザイン",
+    "reading": "せきゅりてぃばいでざいん",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📐",
+    "mapNode": "sekyuriti:zero",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-xss",
+      "sc-sqli"
+    ],
+    "description": "システムの 企画・設計の 段階から セキュリティを 組み込んで おく 考えかたです。あとから 対策を 足すより 手間や 費用を おさえられます。個人情報の 保護を 組み込む プライバシーバイデザインも あります。"
+  },
+  {
+    "id": "sc-prompt-injection",
+    "name": "プロンプトインジェクション",
+    "reading": "ぷろんぷといんじぇくしょん",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💬",
+    "mapNode": "sekyuriti:zero",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-adversarial"
+    ],
+    "description": "生成AI に 渡す 文章などに、本来の 指示を くつがえす 命令を まぎれ込ませ、まちがった 答えや 秘密の 情報を 出させる 攻撃です。AI に 渡す 情報や 権限を 限って 守ります。"
+  },
+  {
+    "id": "sc-adversarial",
+    "name": "敵対的サンプル",
+    "reading": "てきたいてきさんぷる",
+    "journey": "sekyuriti",
+    "category": "攻撃の種類",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧪",
+    "mapNode": "sekyuriti:zero",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-prompt-injection"
+    ],
+    "description": "人には わからない ほどの 小さな 細工を 加えた データで、AI の 判断を まちがえさせる ものです。画像認識などを ねらう 新しい 脅威で、シラバスでは 攻撃手法の 用語例に あります。"
+  },
+  {
+    "id": "sc-patch",
+    "name": "セキュリティパッチ",
+    "reading": "せきゅりてぃぱっち",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🩹",
+    "mapNode": "sekyuriti:zero",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-zeijakusei",
+      "sc-zeroday"
+    ],
+    "description": "ソフトウェアの 脆弱性や 不具合を 直す ために あとから 配られる 修正プログラムです。OS アップデートと あわせて 早めに 適用する ことが 脆弱性管理の 基本です。"
+  },
+  {
+    "id": "sc-tamper",
+    "name": "耐タンパ性",
+    "reading": "たいたんぱせい",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧰",
+    "mapNode": "sekyuriti:zero",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-tpm"
+    ],
+    "description": "機器の 中を こじあけたり 調べたり しても、中の 情報を 読み取られにくい 性質です。IC カードや IoT 機器、TPM などで 大事な 鍵を 守る ために 高めて おきます。"
+  },
+  {
+    "id": "sc-tpm",
+    "name": "TPM",
+    "reading": "てぃーぴーえむ",
+    "journey": "sekyuriti",
+    "category": "対策の技術",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💾",
+    "mapNode": "sekyuriti:zero",
+    "field": "セキュリティ",
+    "ruleset": "テクノロジ系",
+    "relatedTerms": [
+      "sc-tamper",
+      "sc-disk-angoka"
+    ],
+    "description": "Trusted Platform Module の 略で、セキュリティチップとも いいます。パソコンなどに 組み込まれ、暗号の 鍵を 耐タンパ性の ある チップの 中で 守ります。ディスク暗号化などで 使われます。"
+  }
+]

@@ -1,0 +1,1803 @@
+[
+  {
+    "id": "ss-cloudservice",
+    "name": "クラウドサービス",
+    "reading": "くらうどさーびす",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "☁️",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-saas",
+      "ss-onpremise"
+    ],
+    "description": "インターネット ごしに、事業者の ソフトや サーバを 必要な ぶんだけ 使う サービスです。自分で 機器を 持たずに すぐ 使い始められ、SaaS・PaaS・IaaS などの 形が あります。"
+  },
+  {
+    "id": "ss-email",
+    "name": "電子メール",
+    "reading": "でんしめーる",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📧",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-chat",
+      "ss-kyoyufile"
+    ],
+    "description": "インターネットで 文章や ファイルを 送りあう しくみです。仕事では 記録が 残る 連絡に 使い、宛先の まちがいや 添付ファイルの 送りまちがいに 気を つけます。"
+  },
+  {
+    "id": "ss-webkaigi",
+    "name": "Web会議",
+    "reading": "うぇぶかいぎ",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🎥",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-chat",
+      "ss-email"
+    ],
+    "description": "インターネットを 通して、離れた 場所の 人と 画面や 声で 会議を する しくみです。移動の 時間や 費用を へらせて、テレワークでも よく 使われます。"
+  },
+  {
+    "id": "ss-chat",
+    "name": "チャット",
+    "reading": "ちゃっと",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "💬",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-email",
+      "ss-sns"
+    ],
+    "description": "短い 文を その場で やりとりする しくみです。メールより 気軽に 早く 相談でき、グループで 話を 進める ときに 便利です。"
+  },
+  {
+    "id": "ss-sns",
+    "name": "SNS",
+    "reading": "えすえぬえす",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📱",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-blog",
+      "ss-keijiban"
+    ],
+    "description": "Social Networking Service の 略で、人と 人の つながりを 作り、投稿や 交流を する サービスです。会社の 情報発信にも 使いますが、投稿する 内容には 注意が 要ります。"
+  },
+  {
+    "id": "ss-blog",
+    "name": "ブログ",
+    "reading": "ぶろぐ",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📝",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-sns",
+      "ss-keijiban"
+    ],
+    "description": "日記の ように 記事を 時間の 順に のせていく Web サイトです。会社や 個人が 情報を 発信したり、読んだ 人が コメントを 書いたり できます。"
+  },
+  {
+    "id": "ss-groupware",
+    "name": "グループウェア",
+    "reading": "ぐるーぷうぇあ",
+    "journey": "shisutemu",
+    "category": "業務の効率化",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🗓️",
+    "mapNode": "shisutemu:rpa",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-workflow",
+      "ss-chat"
+    ],
+    "description": "予定表・掲示板・文書の 共有 など、チームで 仕事を する ための 機能を まとめた ソフトです。情報を みんなで 共有して、連絡や 調整の 手間を へらします。"
+  },
+  {
+    "id": "ss-gyomukoritsuka",
+    "name": "業務効率化",
+    "reading": "ぎょうむこうりつか",
+    "journey": "shisutemu",
+    "category": "業務の効率化",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⚡",
+    "mapNode": "shisutemu:rpa",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-rpa",
+      "ss-groupware"
+    ],
+    "description": "IT などを 使って 仕事の むだや 手間を へらし、少ない 時間や 費用で 同じ 成果を 出せる ように する ことです。システム化や RPA の 目的の 1つです。"
+  },
+  {
+    "id": "ss-workflow",
+    "name": "ワークフロー",
+    "reading": "わーくふろー",
+    "journey": "shisutemu",
+    "category": "業務プロセス",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔄",
+    "mapNode": "shisutemu:process",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-gyomuprocess",
+      "ss-groupware"
+    ],
+    "description": "申請 → 承認 → 処理 の ような 仕事の 流れの ことで、それを システムで 回す しくみも 指します。紙の 回覧を へらし、いま だれの ところで 止まって いるかが 分かります。"
+  },
+  {
+    "id": "ss-gyomuprocess",
+    "name": "業務プロセス",
+    "reading": "ぎょうむぷろせす",
+    "journey": "shisutemu",
+    "category": "業務プロセス",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧩",
+    "mapNode": "shisutemu:process",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-modeling",
+      "ss-bpr"
+    ],
+    "description": "仕事を 進める 手順の つながりの ことです。業務を 改善する ときは、まず いまの 業務プロセスを 分析して 図などで つかみ、問題点を 見つけます。"
+  },
+  {
+    "id": "ss-johosystem",
+    "name": "情報システム",
+    "reading": "じょうほうしすてむ",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🗄️",
+    "mapNode": "shisutemu:senryaku",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-johosystemsenryaku",
+      "ss-keieisenryaku"
+    ],
+    "description": "情報を 集めて ためて 処理し、必要な 人に とどける しくみです。会社では 経営戦略や 事業戦略を 実現する ために 作られます。"
+  },
+  {
+    "id": "ss-digitalliteracy",
+    "name": "デジタルリテラシー",
+    "reading": "でじたるりてらしー",
+    "journey": "shisutemu",
+    "category": "活用と評価",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🎓",
+    "mapNode": "shisutemu:hyoka",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-digitaldivide",
+      "ss-fukyukeihatsu"
+    ],
+    "description": "コンピュータや アプリなどの デジタル技術を 理解して、仕事で 上手に 使いこなす 力です。情報システムを 生かす ために、働く 人 みんなに 求められます。"
+  },
+  {
+    "id": "ss-outsourcing",
+    "name": "アウトソーシング",
+    "reading": "あうとそーしんぐ",
+    "journey": "shisutemu",
+    "category": "ソリューション",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🤝",
+    "mapNode": "shisutemu:solution",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-managed",
+      "ss-jishakaihatsu"
+    ],
+    "description": "会社の 仕事の 一部を、外の 専門の 会社に まかせる ことです。システムの 開発や 運用を まかせて、自社は 本来の 仕事に 力を 入れられます。"
+  },
+  {
+    "id": "ss-yokenteigi",
+    "name": "要件定義",
+    "reading": "ようけんていぎ",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📋",
+    "mapNode": "shisutemu:yoken",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-kinoyoken",
+      "ss-gyomuyokenteigi"
+    ],
+    "description": "作る システムに 求める 機能や 条件を はっきり 決める ことです。経営戦略や 利用者の ニーズを 考えて 決め、利用者と 開発者で 合意します。"
+  },
+  {
+    "id": "ss-chotatsu",
+    "name": "調達",
+    "reading": "ちょうたつ",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🛒",
+    "mapNode": "shisutemu:chotatsu",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-rfi",
+      "ss-rfp"
+    ],
+    "description": "システムや サービスを 外の 会社から 手に入れる ことです。RFI → RFP → 選定基準の 作成 → 提案書・見積書の 入手 → 比較評価 → 選定 → 契約 → 受入れ・検収 の 順に 進めます。"
+  },
+  {
+    "id": "ss-johosystemsenryaku",
+    "name": "情報システム戦略",
+    "reading": "じょうほうしすてむせんりゃく",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "shisutemu:senryaku",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-keieisenryaku",
+      "ss-senryakumokuhyo"
+    ],
+    "description": "経営戦略を 実現する ために、情報システムを どう 作り 使うかを 決める 計画です。IT の ための IT では なく、会社の 経営戦略・事業戦略から 考えるのが 大事です。"
+  },
+  {
+    "id": "ss-senryakumokuhyo",
+    "name": "戦略目標",
+    "reading": "せんりゃくもくひょう",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "shisutemu:senryaku",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-johosystemsenryaku",
+      "ss-ea"
+    ],
+    "description": "経営環境の 分析や SWOT 分析 などを 通じて 決める、具体的な 目標です。情報システム戦略も この 目標を 実現する ために 立てます。"
+  },
+  {
+    "id": "ss-ea",
+    "name": "EA",
+    "reading": "いーえー",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏛️",
+    "mapNode": "shisutemu:ea",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-sor",
+      "ss-gyomumodel"
+    ],
+    "description": "Enterprise Architecture の 略で、会社 全体の 業務と システムを 見わたし、全体最適の 形に 整える ための 考えかたです。部門ごとに ばらばらな システムを へらします。"
+  },
+  {
+    "id": "ss-bpr",
+    "name": "BPR",
+    "reading": "びーぴーあーる",
+    "journey": "shisutemu",
+    "category": "業務プロセス",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💥",
+    "mapNode": "shisutemu:process",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-bpm",
+      "ss-gyomuprocess"
+    ],
+    "description": "Business Process Reengineering の 略で、業務プロセスを 根本から 見なおして 作りなおす ことです。改善を 続けて 回す BPM と ちがい、大きく 作りかえるのが 特徴です。"
+  },
+  {
+    "id": "ss-modeling",
+    "name": "モデリング",
+    "reading": "もでりんぐ",
+    "journey": "shisutemu",
+    "category": "業務プロセス",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "✏️",
+    "mapNode": "shisutemu:process",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-dfd",
+      "ss-bpmn"
+    ],
+    "description": "ビジネスの しくみや 業務プロセスを、図などで 目に 見える 形に 表す ことです。E-R 図・DFD・BPMN などの 書きかたが あります。"
+  },
+  {
+    "id": "ss-dfd",
+    "name": "DFD",
+    "reading": "でぃーえふでぃー",
+    "journey": "shisutemu",
+    "category": "業務プロセス",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "➡️",
+    "mapNode": "shisutemu:process",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-modeling",
+      "ss-bpmn"
+    ],
+    "description": "Data Flow Diagram の 略で、データが どこから 来て、どんな 処理を 通り、どこに たまるかを 表す 図です。データの 流れに 注目するのが 特徴です。"
+  },
+  {
+    "id": "ss-rpa",
+    "name": "RPA",
+    "reading": "あーるぴーえー",
+    "journey": "shisutemu",
+    "category": "業務の効率化",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🤖",
+    "mapNode": "shisutemu:rpa",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-gyomukoritsuka",
+      "ss-whitecollar"
+    ],
+    "description": "Robotic Process Automation の 略で、パソコンで 人が して いた 決まった 作業を、ソフトウェアの ロボットに 自動で させる ことです。転記や 集計 などの 定型作業に 向いて います。"
+  },
+  {
+    "id": "ss-byod",
+    "name": "BYOD",
+    "reading": "びーわいおーでぃー",
+    "journey": "shisutemu",
+    "category": "業務の効率化",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💼",
+    "mapNode": "shisutemu:rpa",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-m2m",
+      "ss-groupware"
+    ],
+    "description": "Bring Your Own Device の 略で、社員が 自分の スマートフォンや パソコンを 仕事に 使う ことです。便利ですが、情報が もれない ように ルールと 対策が 要ります。"
+  },
+  {
+    "id": "ss-si",
+    "name": "SI",
+    "reading": "えすあい",
+    "journey": "shisutemu",
+    "category": "ソリューション",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔧",
+    "mapNode": "shisutemu:solution",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-solutionbiz",
+      "ss-outsourcing"
+    ],
+    "description": "System Integration の 略で、お客さんの ために、いくつもの 機器や ソフトを 組み合わせて 1つの システムに まとめ、企画から 開発・運用までを 引き受ける ことです。"
+  },
+  {
+    "id": "ss-saas",
+    "name": "SaaS",
+    "reading": "さーす",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-paas",
+      "ss-iaas"
+    ],
+    "description": "Software as a Service の 略で、事業者の アプリケーションを ネット ごしに 使う 形です。利用者は OS も アプリも 管理しません。PaaS は 開発の 土台、IaaS は サーバなどの 基盤を 借ります。"
+  },
+  {
+    "id": "ss-paas",
+    "name": "PaaS",
+    "reading": "ぱーす",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧱",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-saas",
+      "ss-iaas"
+    ],
+    "description": "Platform as a Service の 略で、アプリを 作って 動かす ための 土台(OS・ミドルウェア・開発ツール など)を 借りる 形です。利用者は 自分で 載せた アプリを 管理します。"
+  },
+  {
+    "id": "ss-iaas",
+    "name": "IaaS",
+    "reading": "いあーす",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🖥️",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-saas",
+      "ss-paas"
+    ],
+    "description": "Infrastructure as a Service の 略で、サーバ・ストレージ・ネットワーク などの 基盤を 借りる 形です。OS から 上は 利用者が 管理するので、自由が 大きい ぶん 手間も かかります。"
+  },
+  {
+    "id": "ss-onpremise",
+    "name": "オンプレミス",
+    "reading": "おんぷれみす",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏢",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-cloudservice",
+      "ss-hybrid"
+    ],
+    "description": "システムの 機器を 自社で 持ち、自社の 建物などで 運用する 形です。自由に 作れる 反面、機器の 購入や 保守を 自分で 行います。クラウドと くらべて 出る ことばです。"
+  },
+  {
+    "id": "ss-public",
+    "name": "パブリッククラウド",
+    "reading": "ぱぶりっくくらうど",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🌍",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-private",
+      "ss-hybrid"
+    ],
+    "description": "だれでも 申しこんで 使える、事業者が 提供する クラウドです。設備を ほかの 利用者と いっしょに 使うので、すぐに 安く 始めやすいのが 特徴です。"
+  },
+  {
+    "id": "ss-private",
+    "name": "プライベートクラウド",
+    "reading": "ぷらいべーとくらうど",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔐",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-public",
+      "ss-hybrid"
+    ],
+    "description": "1つの 会社が 専用に 使う クラウドです。自社の 中に 作る ことも、事業者の 設備を 専用で 借りる ことも あり、自社の ルールに 合わせやすいのが 特徴です。"
+  },
+  {
+    "id": "ss-sms",
+    "name": "SMS",
+    "reading": "えすえむえす",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "✉️",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-email",
+      "ss-chat"
+    ],
+    "description": "Short Message Service の 略で、携帯電話の 電話番号を 宛先に して 短い 文を 送る しくみです。本人確認の コードを 送る ときにも 使われます。"
+  },
+  {
+    "id": "ss-legacy",
+    "name": "レガシーシステム",
+    "reading": "れがしーしすてむ",
+    "journey": "shisutemu",
+    "category": "活用と評価",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏚️",
+    "mapNode": "shisutemu:hyoka",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-lifecycle",
+      "ss-maintenance"
+    ],
+    "description": "古い 技術で 作られ、長く 使う うちに 複雑に なった システムです。時代の 変化で 安全性や 効率性が 下がったら、廃棄・刷新を 考えます。"
+  },
+  {
+    "id": "ss-digitaldivide",
+    "name": "デジタルディバイド",
+    "reading": "でじたるでぃばいど",
+    "journey": "shisutemu",
+    "category": "活用と評価",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📶",
+    "mapNode": "shisutemu:hyoka",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-digitalliteracy",
+      "ss-fukyukeihatsu"
+    ],
+    "description": "IT を 使える 人と 使えない 人の あいだに できる 差の ことです。手に入る 情報や 機会の 差に つながるので、教育などの 普及啓発で 差を 小さく します。"
+  },
+  {
+    "id": "ss-systemkakeikaku",
+    "name": "システム化計画",
+    "reading": "しすてむかけいかく",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗺️",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-koso",
+      "ss-kihonhoshin"
+    ],
+    "description": "情報システム戦略に もとづき 対象業務を 分析して、システム化構想と 基本方針を 立て、開発順序・概算コスト・効果 など システム化の 全体像を 明らかに する ことです。"
+  },
+  {
+    "id": "ss-hiyotaikoka",
+    "name": "費用対効果",
+    "reading": "ひようたいこうか",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-toshitaikoka",
+      "ss-gaisan"
+    ],
+    "description": "かかる 費用に くらべて、どれだけの 効果が 得られるかの ことです。システム化計画で 見積もり、導入後も 費用対効果分析で 確かめます。"
+  },
+  {
+    "id": "ss-schedule",
+    "name": "スケジュール",
+    "reading": "すけじゅーる",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📅",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-systemkakeikaku",
+      "ss-taisei"
+    ],
+    "description": "システム化計画で 決める、いつ 何を 進めるかの 日程です。体制・リスク分析・費用対効果・適用範囲と ならんで 計画に 入れる ことがらです。"
+  },
+  {
+    "id": "ss-kinoyoken",
+    "name": "機能要件",
+    "reading": "きのうようけん",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⚙️",
+    "mapNode": "shisutemu:yoken",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-hikinoyoken",
+      "ss-gyomuyoken"
+    ],
+    "description": "システムが 何を するか(業務の 機能)に ついての 要件です。たとえば「注文を 受け付ける」です。速さや 安全性 などの 性質は 非機能要件と 呼び、分けて 考えます。"
+  },
+  {
+    "id": "ss-hikinoyoken",
+    "name": "非機能要件",
+    "reading": "ひきのうようけん",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🛡️",
+    "mapNode": "shisutemu:yoken",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-kinoyoken",
+      "ss-gyomuyokenteigi"
+    ],
+    "description": "機能 以外の 要件で、速さ・使いやすさ・信頼性・安全性・保守の しやすさ などの 性質です。「何を するか」は 機能要件なので、取りちがえない ように します。"
+  },
+  {
+    "id": "ss-gyomuyokenteigi",
+    "name": "業務要件定義",
+    "reading": "ぎょうむようけんていぎ",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧾",
+    "mapNode": "shisutemu:yoken",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-kinoyoken",
+      "ss-goi"
+    ],
+    "description": "経営戦略や システム戦略、利用者の ニーズを 考えて、システムに 求める 機能と 要件を 決める ことです。要求の 調査や 現行業務の 分析を して、最後に 要件を 合意します。"
+  },
+  {
+    "id": "ss-rfi",
+    "name": "RFI",
+    "reading": "あーるえふあい",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📨",
+    "mapNode": "shisutemu:chotatsu",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-rfp",
+      "ss-johoteikyoirai"
+    ],
+    "description": "Request For Information の 略語で、日本語の 名前は 情報提供依頼です。RFP を 作る 前に、システム化の 目的や 業務概要を 示して、ベンダー企業に 手段や 技術動向の 情報を 頼みます。"
+  },
+  {
+    "id": "ss-rfp",
+    "name": "RFP",
+    "reading": "あーるえふぴー",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📑",
+    "mapNode": "shisutemu:chotatsu",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-rfi",
+      "ss-teiansho"
+    ],
+    "description": "Request For Proposal の 略語で、日本語の 名前は 提案依頼書です。導入システムの 概要・提案依頼事項・調達条件 などを 書いて ベンダー企業に 配り、提案書を 出して もらいます。RFI より 後です。"
+  },
+  {
+    "id": "ss-teiansho",
+    "name": "提案書",
+    "reading": "ていあんしょ",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💡",
+    "mapNode": "shisutemu:chotatsu",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-rfp",
+      "ss-mitsumorisho"
+    ],
+    "description": "ベンダー企業が RFP を もとに、システム構成や 開発手法 などを 考えて 依頼元に 出す 文書です。依頼元が 作るのは 提案依頼書(RFP)なので、取りちがえない ように します。"
+  },
+  {
+    "id": "ss-mitsumorisho",
+    "name": "見積書",
+    "reading": "みつもりしょ",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧮",
+    "mapNode": "shisutemu:chotatsu",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-teiansho",
+      "ss-hacchu"
+    ],
+    "description": "システムの 開発・運用・保守 などに かかる 費用を 示す 文書です。調達先を えらぶ ときや、発注する 内容を 確かめる ときに 大事に なります。"
+  },
+  {
+    "id": "ss-kenshu",
+    "name": "検収",
+    "reading": "けんしゅう",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "✅",
+    "mapNode": "shisutemu:sentei",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-ukeire",
+      "ss-keiyakuteiketsu"
+    ],
+    "description": "納品された システムや 成果物が、契約の とおりに できて いるかを 確かめて 受け取る ことです。調達の 流れの 最後の「受入れ・検収」に あたります。"
+  },
+  {
+    "id": "ss-vendor",
+    "name": "ベンダー企業",
+    "reading": "べんだーきぎょう",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏭",
+    "mapNode": "shisutemu:sentei",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-rfp",
+      "ss-teiansho"
+    ],
+    "description": "システムや ソフトウェア、サービスを 作って 売る 会社です。調達では、ベンダー企業に RFI や RFP を 出し、提案書と 見積書を 受け取ります。"
+  },
+  {
+    "id": "ss-keieisenryaku",
+    "name": "経営戦略",
+    "reading": "けいえいせんりゃく",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏯",
+    "mapNode": "shisutemu:senryaku",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-johosystemsenryaku",
+      "ss-senryakumokuhyo"
+    ],
+    "description": "会社が 目標を 実現する ための 大きな 方針です。情報システム戦略は 経営戦略を 実現する ために 立てるので、順番は「経営戦略 → 情報システム戦略」です。"
+  },
+  {
+    "id": "ss-enterprisesearch",
+    "name": "エンタープライズサーチ",
+    "reading": "えんたーぷらいずさーち",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔍",
+    "mapNode": "shisutemu:senryaku",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-johosystem",
+      "ss-kyoyufile"
+    ],
+    "description": "社内の 文書や データベース など、ばらばらに ある 情報を まとめて さがせる しくみです。必要な 情報を すぐ 見つけられ、仕事の 効率が 上がります。"
+  },
+  {
+    "id": "ss-sor",
+    "name": "SoR",
+    "reading": "えすおーあーる",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📚",
+    "mapNode": "shisutemu:ea",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-soe",
+      "ss-ea"
+    ],
+    "description": "Systems of Record の 略で、取引や 会計 などを 正しく 記録する ための システムです。お客さんとの つながりを 作る ための SoE(Systems of Engagement)と 対に なります。"
+  },
+  {
+    "id": "ss-soe",
+    "name": "SoE",
+    "reading": "えすおーいー",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🤳",
+    "mapNode": "shisutemu:ea",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-sor",
+      "ss-ea"
+    ],
+    "description": "Systems of Engagement の 略で、お客さんや 利用者との つながりを 作り、深める ための システムです。変化に 合わせて すばやく 直します。記録を 正しく 残すのは SoR です。"
+  },
+  {
+    "id": "ss-gyomumodel",
+    "name": "業務モデル",
+    "reading": "ぎょうむもでる",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗂️",
+    "mapNode": "shisutemu:ea",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-modeling",
+      "ss-ea"
+    ],
+    "description": "業務の しくみや 流れを、図などで 分かりやすく 表した ものです。業務モデルを 作って いまの 業務を つかみ、どこを システム化するかを 考えます。"
+  },
+  {
+    "id": "ss-bpmn",
+    "name": "BPMN",
+    "reading": "びーぴーえむえぬ",
+    "journey": "shisutemu",
+    "category": "業務プロセス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔷",
+    "mapNode": "shisutemu:process",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-dfd",
+      "ss-modeling"
+    ],
+    "description": "Business Process Model and Notation の 略で、業務の 流れを 決まった 記号で 書く 表記法です。だれが どの 順で 何を するかを 図に します。データの 流れが 中心の DFD とは ちがいます。"
+  },
+  {
+    "id": "ss-bpm",
+    "name": "BPM",
+    "reading": "びーぴーえむ",
+    "journey": "shisutemu",
+    "category": "業務プロセス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "♻️",
+    "mapNode": "shisutemu:process",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-bpr",
+      "ss-gyomuprocess"
+    ],
+    "description": "Business Process Management の 略で、業務プロセスを 分析・設計・実行・評価して 改善を 続けていく 取り組みです。根本から 作りなおす BPR と ちがい、続けて 見なおすのが 特徴です。"
+  },
+  {
+    "id": "ss-m2m",
+    "name": "M2M",
+    "reading": "えむつーえむ",
+    "journey": "shisutemu",
+    "category": "業務の効率化",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔗",
+    "mapNode": "shisutemu:rpa",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-byod",
+      "ss-rpa"
+    ],
+    "description": "Machine to Machine の 略で、機械と 機械が 人を 通さずに ネットワークで 直接 情報を やりとりする ことです。モノを インターネットに つなぐ IoT と ならんで 出る ことばです。"
+  },
+  {
+    "id": "ss-whitecollar",
+    "name": "ホワイトカラー",
+    "reading": "ほわいとからー",
+    "journey": "shisutemu",
+    "category": "業務の効率化",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👔",
+    "mapNode": "shisutemu:rpa",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-rpa",
+      "ss-gyomukoritsuka"
+    ],
+    "description": "事務・企画・営業 など、主に 机の 上で する 仕事を する 人の ことです。シラバスでは、IT を 使えば ホワイトカラーを 含む 業務の 効率化が 図れると されて います。"
+  },
+  {
+    "id": "ss-solutionbiz",
+    "name": "ソリューションビジネス",
+    "reading": "そりゅーしょんびじねす",
+    "journey": "shisutemu",
+    "category": "ソリューション",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛠️",
+    "mapNode": "shisutemu:solution",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-solution",
+      "ss-si"
+    ],
+    "description": "お客さんとの 信頼関係を 築いて 問題点を 知り、解決案を 提案して、解決まで 支える ビジネスです。製品を 売る だけで なく、問題の 解決を 提供します。"
+  },
+  {
+    "id": "ss-jishakaihatsu",
+    "name": "自社開発",
+    "reading": "じしゃかいはつ",
+    "journey": "shisutemu",
+    "category": "ソリューション",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏗️",
+    "mapNode": "shisutemu:solution",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-outsourcing",
+      "ss-solution"
+    ],
+    "description": "自分の 会社で システムを 作る ことです。ソリューションの 形には、自社開発・ソフトウェアパッケージの 導入・他社の サービスの 活用 などが あります。"
+  },
+  {
+    "id": "ss-asp",
+    "name": "ASP",
+    "reading": "えーえすぴー",
+    "journey": "shisutemu",
+    "category": "ソリューション",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌐",
+    "mapNode": "shisutemu:solution",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-saas",
+      "ss-hosting"
+    ],
+    "description": "Application Service Provider の 略で、アプリケーションを ネットワーク ごしに 貸す 事業者、または その サービスです。考えかたは SaaS に 近く、ならんで 出ます。"
+  },
+  {
+    "id": "ss-hosting",
+    "name": "ホスティングサービス",
+    "reading": "ほすてぃんぐさーびす",
+    "journey": "shisutemu",
+    "category": "ソリューション",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏨",
+    "mapNode": "shisutemu:solution",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-housing",
+      "ss-managed"
+    ],
+    "description": "事業者が 持つ サーバを 借りて、自社の システムや Web サイトを 動かす サービスです。自社の サーバを 事業者の 建物に 置くのは ハウジングなので、取りちがえない ように します。"
+  },
+  {
+    "id": "ss-housing",
+    "name": "ハウジングサービス",
+    "reading": "はうじんぐさーびす",
+    "journey": "shisutemu",
+    "category": "ソリューション",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏠",
+    "mapNode": "shisutemu:solution",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-hosting",
+      "ss-onpremise"
+    ],
+    "description": "自社の サーバや 機器を、事業者の データセンター などの 建物に 置かせて もらう サービスです。電源や 回線は 事業者が 用意します。サーバを 借りるのは ホスティングです。"
+  },
+  {
+    "id": "ss-managed",
+    "name": "マネージドサービス",
+    "reading": "まねーじどさーびす",
+    "journey": "shisutemu",
+    "category": "ソリューション",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧑‍🔧",
+    "mapNode": "shisutemu:solution",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-hosting",
+      "ss-outsourcing"
+    ],
+    "description": "サーバや システムの 運用・監視・保守 などを、事業者に まかせる サービスです。機器を 借りる だけで なく、運用の 手間まで まとめて 任せられるのが 特徴です。"
+  },
+  {
+    "id": "ss-daas",
+    "name": "DaaS",
+    "reading": "だーす",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🖱️",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-saas",
+      "ss-iaas"
+    ],
+    "description": "Desktop as a Service の 略で、パソコンの デスクトップ環境を クラウドから 借りる 形です。端末に データを 残さずに 仕事が でき、テレワークでも 使われます。"
+  },
+  {
+    "id": "ss-hybrid",
+    "name": "ハイブリッドクラウド",
+    "reading": "はいぶりっどくらうど",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔀",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-multicloud",
+      "ss-private"
+    ],
+    "description": "パブリッククラウド・プライベートクラウド・オンプレミス などの ちがう 種類を 組み合わせて 使う 形です。いくつもの 事業者の クラウドを 使うのは マルチクラウドです。"
+  },
+  {
+    "id": "ss-multicloud",
+    "name": "マルチクラウド",
+    "reading": "まるちくらうど",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌥️",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-hybrid",
+      "ss-public"
+    ],
+    "description": "いくつもの クラウド事業者の サービスを 組み合わせて 使う 形です。1つの 事業者に 頼りきらずに すみ、用途に 合わせて えらべます。ちがう 種類を 組み合わせるのは ハイブリッドクラウドです。"
+  },
+  {
+    "id": "ss-cloudcomputing",
+    "name": "クラウドコンピューティング",
+    "reading": "くらうどこんぴゅーてぃんぐ",
+    "journey": "shisutemu",
+    "category": "クラウド",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⛅",
+    "mapNode": "shisutemu:cloud",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-cloudservice",
+      "ss-saas"
+    ],
+    "description": "サーバや ソフトウェア などの 資源を、インターネット ごしに 必要な ときに 必要な ぶんだけ 使う 考えかたです。SaaS・PaaS・IaaS などの 提供形態が あります。"
+  },
+  {
+    "id": "ss-keijiban",
+    "name": "電子掲示板",
+    "reading": "でんしけいじばん",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📌",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-groupware",
+      "ss-blog"
+    ],
+    "description": "ネット上で 多くの 人が 書きこみ、読みあえる 掲示板です。社内の お知らせや 意見の 共有にも 使い、グループウェアの 機能の 1つと して 入って いる ことも あります。"
+  },
+  {
+    "id": "ss-sharing",
+    "name": "シェアリングエコノミー",
+    "reading": "しぇありんぐえこのみー",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚲",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-sns",
+      "ss-lifelog"
+    ],
+    "description": "個人などが 持つ モノ・場所・スキルを、インターネットの サービスを 通して ほかの 人と 分けあう しくみです。使って いない 部屋や 車を 貸す 例が あります。"
+  },
+  {
+    "id": "ss-lifelog",
+    "name": "ライフログ",
+    "reading": "らいふろぐ",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👣",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-pds",
+      "ss-johoginko"
+    ],
+    "description": "歩いた 歩数・食事・行動 など、毎日の 生活を デジタルで 記録した ものです。健康の 管理や サービスの 提案に 生かします。個人の 情報なので 扱いに 注意します。"
+  },
+  {
+    "id": "ss-johoginko",
+    "name": "情報銀行",
+    "reading": "じょうほうぎんこう",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏦",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-pds",
+      "ss-lifelog"
+    ],
+    "description": "本人との 契約に もとづいて 個人の データを 預かり、本人の 指示や 決めた 条件に そって ほかの 事業者に 提供する 事業です。総務省・経済産業省の 指針では 情報信託機能と 呼びます。"
+  },
+  {
+    "id": "ss-pds",
+    "name": "PDS",
+    "reading": "ぴーでぃーえす",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗃️",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-johoginko",
+      "ss-lifelog"
+    ],
+    "description": "Personal Data Store の 略で、個人が 自分の データを ためて 自分で 管理し、だれに 出すかを 決められる しくみです。情報銀行が データの 管理に 使う ことも あります。"
+  },
+  {
+    "id": "ss-kyoyufile",
+    "name": "共有ファイル",
+    "reading": "きょうゆうふぁいる",
+    "journey": "shisutemu",
+    "category": "コミュニケーションと活用",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📂",
+    "mapNode": "shisutemu:katsuyo",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-groupware",
+      "ss-email"
+    ],
+    "description": "サーバや クラウドに 置いて、チームの みんなで 見たり 直したり できる ファイルです。業務では 共有ファイルを アップロードして 使います。見られる 人の 設定に 注意します。"
+  },
+  {
+    "id": "ss-fukyukeihatsu",
+    "name": "普及啓発",
+    "reading": "ふきゅうけいはつ",
+    "journey": "shisutemu",
+    "category": "活用と評価",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📣",
+    "mapNode": "shisutemu:hyoka",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-gamification",
+      "ss-digitaldivide"
+    ],
+    "description": "情報システムを 仕事に 生かせる ように、教育 などで IT の 使いかたを 広める 活動です。研修の ほか、ゲーミフィケーションを 取り入れる 方法も あります。"
+  },
+  {
+    "id": "ss-gamification",
+    "name": "ゲーミフィケーション",
+    "reading": "げーみふぃけーしょん",
+    "journey": "shisutemu",
+    "category": "活用と評価",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎮",
+    "mapNode": "shisutemu:hyoka",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-fukyukeihatsu",
+      "ss-digitalliteracy"
+    ],
+    "description": "ポイント・ランキング・バッジ など、ゲームの しくみを ゲーム 以外に 取り入れて、やる気を 引き出す 方法です。システムの 使いかたを 広める 普及啓発にも 使われます。"
+  },
+  {
+    "id": "ss-manzokudo",
+    "name": "利用者満足度調査",
+    "reading": "りようしゃまんぞくどちょうさ",
+    "journey": "shisutemu",
+    "category": "活用と評価",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "😊",
+    "mapNode": "shisutemu:hyoka",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-toshitaikoka",
+      "ss-legacy"
+    ],
+    "description": "情報システムを 使う 人に、使いやすさや 役に 立つか などを たずねて 満足の 度合いを 調べる ことです。投資対効果分析と ならぶ、利用実態の 評価・検証の 方法です。"
+  },
+  {
+    "id": "ss-lifecycle",
+    "name": "システムライフサイクル",
+    "reading": "しすてむらいふさいくる",
+    "journey": "shisutemu",
+    "category": "活用と評価",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔁",
+    "mapNode": "shisutemu:hyoka",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-legacy",
+      "ss-maintenance"
+    ],
+    "description": "情報システムが 企画 → 開発 → 運用・保守 → 廃棄 と 移りかわる 一生の 流れです。全体を 見て 考えると、古く なった システムを 刷新する 時期も 判断できます。"
+  },
+  {
+    "id": "ss-maintenance",
+    "name": "メンテナンスコスト",
+    "reading": "めんてなんすこすと",
+    "journey": "shisutemu",
+    "category": "活用と評価",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔩",
+    "mapNode": "shisutemu:hyoka",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-legacy",
+      "ss-lifecycle"
+    ],
+    "description": "システムを 動かし つづける ための 保守に かかる 費用です。古い レガシーシステムほど ふえやすく、廃棄・刷新を 考える きっかけに なります。"
+  },
+  {
+    "id": "ss-toshitaikoka",
+    "name": "投資対効果",
+    "reading": "とうしたいこうか",
+    "journey": "shisutemu",
+    "category": "活用と評価",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📈",
+    "mapNode": "shisutemu:hyoka",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-hiyotaikoka",
+      "ss-manzokudo"
+    ],
+    "description": "情報システムへの 投資に くらべて、どれだけの 効果が あったかを 調べる ことです。導入後に 投資対効果分析で 利用実態を 評価し、検証します。",
+    "formula": "回収期間 = 投資額 ÷ 1年の 効果額"
+  },
+  {
+    "id": "ss-koso",
+    "name": "システム化構想",
+    "reading": "しすてむかこうそう",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💭",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-systemkakeikaku",
+      "ss-kihonhoshin"
+    ],
+    "description": "情報システム戦略に もとづいて、どの 業務を どんな システムに するかを 大きく 描いた 考えです。システム化計画で、システム化基本方針と いっしょに 立てます。"
+  },
+  {
+    "id": "ss-kihonhoshin",
+    "name": "システム化基本方針",
+    "reading": "しすてむかきほんほうしん",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧷",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-koso",
+      "ss-systemkakeikaku"
+    ],
+    "description": "システム化を 進める うえでの 目的や 進めかたの 方針です。システム化計画で システム化構想と ともに 立て、各システムの 開発順序や 概算コストに つなげます。"
+  },
+  {
+    "id": "ss-tekiyohani",
+    "name": "適用範囲",
+    "reading": "てきようはんい",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📐",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-systemkakeikaku",
+      "ss-gaisan"
+    ],
+    "description": "システム化の 対象に する 業務や 部門の 範囲です。どこまで システムに するかを 決めて おかないと、費用や 日程が ふくらむ もとに なります。"
+  },
+  {
+    "id": "ss-kikakuprocess",
+    "name": "企画プロセス",
+    "reading": "きかくぷろせす",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🪧",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-systemkakeikaku",
+      "ss-yokenteigi"
+    ],
+    "description": "システムを 作る 前に、経営の 目標から 必要な システムの 構想や 計画を 立てる 段階です。システム化計画の 用語例に あり、要件定義より 前に 行います。"
+  },
+  {
+    "id": "ss-taisei",
+    "name": "体制",
+    "reading": "たいせい",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👥",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-schedule",
+      "ss-systemkakeikaku"
+    ],
+    "description": "システム化を 進める ために、だれが どの 役割を 受け持つかの 組み合わせです。システム化計画で、スケジュールや 費用対効果と ともに 決めます。"
+  },
+  {
+    "id": "ss-gaisan",
+    "name": "概算コスト",
+    "reading": "がいさんこすと",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💴",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-kaihatsujunjo",
+      "ss-hiyotaikoka"
+    ],
+    "description": "計画の 段階で 見積もる、おおよその 費用です。システム化計画で 各システムの 開発順序や 効果と いっしょに 示し、投資を するか どうかの 判断に 使います。"
+  },
+  {
+    "id": "ss-kaihatsujunjo",
+    "name": "開発順序",
+    "reading": "かいはつじゅんじょ",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔢",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-gaisan",
+      "ss-systemkakeikaku"
+    ],
+    "description": "いくつもの システムを 作る とき、どれから 先に 作るかの 順番です。システム化計画で、効果や 急ぎ具合、システムどうしの つながりを 考えて 決めます。"
+  },
+  {
+    "id": "ss-goi",
+    "name": "要件の合意",
+    "reading": "ようけんのごうい",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🙆",
+    "mapNode": "shisutemu:yoken",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-gyomuyokenteigi",
+      "ss-needs"
+    ],
+    "description": "業務要件定義の 最後に、決めた 要件を 利用者と 開発する 側で 確かめあい、合意する ことです。合意が ないまま 進むと、あとで 作りなおしが 起きやすく なります。"
+  },
+  {
+    "id": "ss-genjo",
+    "name": "現状分析",
+    "reading": "げんじょうぶんせき",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔬",
+    "mapNode": "shisutemu:yoken",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-gyomuyokenteigi",
+      "ss-needs"
+    ],
+    "description": "いまの 業務の 進めかたや 問題点を 調べて 整理する ことです。業務要件定義では、現状分析を もとに 新しい システムに 求める 要件を 考えます。"
+  },
+  {
+    "id": "ss-needs",
+    "name": "利用者ニーズ",
+    "reading": "りようしゃにーず",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🙋",
+    "mapNode": "shisutemu:yoken",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-genjo",
+      "ss-gyomuyokenteigi"
+    ],
+    "description": "システムを 使う 人が 求めて いる こと・困って いる ことです。業務要件定義では、経営戦略や システム戦略と ともに 利用者ニーズを 考えて 要件を 決めます。"
+  },
+  {
+    "id": "ss-chotatsukeikaku",
+    "name": "調達計画",
+    "reading": "ちょうたつけいかく",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗒️",
+    "mapNode": "shisutemu:chotatsu",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-chotatsu",
+      "ss-rfi"
+    ],
+    "description": "システムや サービスを、何を・いつ・どこから・どう 手に入れるかの 計画です。調達計画を 立てて から、RFI や RFP で ベンダー企業に 声を かけます。"
+  },
+  {
+    "id": "ss-green",
+    "name": "グリーン調達",
+    "reading": "ぐりーんちょうたつ",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌱",
+    "mapNode": "shisutemu:chotatsu",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-chotatsu",
+      "ss-senteikijun"
+    ],
+    "description": "製品や サービスを 調達する とき、環境への 負担が 少ない ものを えらぶ ことです。値段や 性能 だけで なく、環境への 配慮も えらぶ 理由に します。"
+  },
+  {
+    "id": "ss-senteikijun",
+    "name": "選定基準",
+    "reading": "せんていきじゅん",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "shisutemu:sentei",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-hikakuhyoka",
+      "ss-rfp"
+    ],
+    "description": "提案を くらべて 調達先を えらぶ ための 物差しです。調達の 流れでは、RFP を 配った あと、提案書が とどく 前に 作って おきます。"
+  },
+  {
+    "id": "ss-hikakuhyoka",
+    "name": "比較評価",
+    "reading": "ひかくひょうか",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📊",
+    "mapNode": "shisutemu:sentei",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-senteikijun",
+      "ss-teiansho"
+    ],
+    "description": "ベンダー企業から とどいた 提案書と 見積書の 内容を、選定基準に そって くらべて 評価する ことです。その 結果で 調達先を 選定します。"
+  },
+  {
+    "id": "ss-keiyakuteiketsu",
+    "name": "契約締結",
+    "reading": "けいやくていけつ",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "✍️",
+    "mapNode": "shisutemu:sentei",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-hikakuhyoka",
+      "ss-kenshu"
+    ],
+    "description": "調達先を えらんだ あとに、仕事の 範囲・費用・納期 などを 決めて 正式に 契約を 結ぶ ことです。調達の 流れでは、選定の 後、受入れ・検収の 前です。"
+  },
+  {
+    "id": "ss-ukeire",
+    "name": "受入れ",
+    "reading": "うけいれ",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📥",
+    "mapNode": "shisutemu:sentei",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-kenshu",
+      "ss-keiyakuteiketsu"
+    ],
+    "description": "納品された システムを 受け取り、求めた とおりに できて いるかを 確かめる ことです。調達の 流れの 最後に「受入れ・検収」と して 行います。"
+  },
+  {
+    "id": "ss-riskbunseki",
+    "name": "リスク分析",
+    "reading": "りすくぶんせき",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚧",
+    "mapNode": "shisutemu:keikaku",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-systemkakeikaku",
+      "ss-taisei"
+    ],
+    "description": "システム化計画で、計画を さまたげる おそれの ある ことを 洗い出し、起こりやすさや 影響の 大きさを 調べる ことです。前もって 対策を 考えて おけます。"
+  },
+  {
+    "id": "ss-teianiraisho",
+    "name": "提案依頼書",
+    "reading": "ていあんいらいしょ",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📄",
+    "mapNode": "shisutemu:chotatsu",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-rfp",
+      "ss-johoteikyoirai"
+    ],
+    "description": "略語 RFP(Request For Proposal)の 日本語の 名前です。導入システムの 概要や 調達条件を 示して、ベンダー企業に 提案書を 出して もらう 文書で、情報提供依頼の 後に 作ります。"
+  },
+  {
+    "id": "ss-johoteikyoirai",
+    "name": "情報提供依頼",
+    "reading": "じょうほうていきょういらい",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗞️",
+    "mapNode": "shisutemu:chotatsu",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-rfi",
+      "ss-teianiraisho"
+    ],
+    "description": "略語 RFI(Request For Information)の 日本語の 名前です。提案依頼書を 作る 前に、ベンダー企業に 考えられる 手段や 技術動向の 情報を 出して もらう よう 頼む ことです。"
+  },
+  {
+    "id": "ss-solution",
+    "name": "ソリューション",
+    "reading": "そりゅーしょん",
+    "journey": "shisutemu",
+    "category": "ソリューション",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔑",
+    "mapNode": "shisutemu:solution",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-solutionbiz",
+      "ss-jishakaihatsu"
+    ],
+    "description": "お客さんの 問題を 解決する ための しくみや サービスの ことです。システム化の ソリューションには、自社開発・パッケージの 導入・他社の サービスの 活用 などが あります。"
+  },
+  {
+    "id": "ss-johoka",
+    "name": "情報化",
+    "reading": "じょうほうか",
+    "journey": "shisutemu",
+    "category": "戦略と全体最適",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💻",
+    "mapNode": "shisutemu:senryaku",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-johosystem",
+      "ss-systemkakeikaku"
+    ],
+    "description": "業務に IT を 取り入れて、情報を 生かして 仕事を 進められる ように する ことです。担当業務の 情報化や システム化を 考える ときは、システム化計画の 目的を 知って おきます。"
+  },
+  {
+    "id": "ss-gyomudata",
+    "name": "業務データ",
+    "reading": "ぎょうむでーた",
+    "journey": "shisutemu",
+    "category": "業務プロセス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📉",
+    "mapNode": "shisutemu:process",
+    "field": "システム戦略",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-gyomuprocess",
+      "ss-modeling"
+    ],
+    "description": "売上や 作業時間 など、業務の 中で 生まれる データです。表や グラフで 表した 業務データを 読み取ると、業務の 問題点を 見つけて 改善に つなげられます。"
+  },
+  {
+    "id": "ss-gyomuyoken",
+    "name": "業務要件",
+    "reading": "ぎょうむようけん",
+    "journey": "shisutemu",
+    "category": "企画と要件",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏷️",
+    "mapNode": "shisutemu:yoken",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-kinoyoken",
+      "ss-hikinoyoken"
+    ],
+    "description": "業務の 面から 見て、新しい システムに 求める ことです。業務要件を 定義した 上で、システムが する ことを 機能要件、性能 などを 非機能要件と して 決めます。"
+  },
+  {
+    "id": "ss-hacchu",
+    "name": "発注",
+    "reading": "はっちゅう",
+    "journey": "shisutemu",
+    "category": "調達と契約",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📮",
+    "mapNode": "shisutemu:sentei",
+    "field": "システム企画",
+    "ruleset": "ストラテジ系",
+    "relatedTerms": [
+      "ss-mitsumorisho",
+      "ss-keiyakuteiketsu"
+    ],
+    "description": "仕事や 品物を、相手の 会社に 正式に 頼む ことです。見積書で 費用や 発注内容を 確かめて から 発注します。"
+  }
+]

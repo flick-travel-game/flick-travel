@@ -1,0 +1,1903 @@
+[
+  {
+    "id": "sv-system-kansa",
+    "name": "システム監査",
+    "reading": "しすてむかんさ",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔍",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansanin",
+      "sv-kansa-kijun",
+      "sv-is-risk"
+    ],
+    "description": "情報システムに まつわる リスクに きちんと 対応して いるかを、独立した 立場の システム監査人が 確かめる ことです。結果を もとに 保証や 助言を 行い、会社の 目標達成を 助けます。"
+  },
+  {
+    "id": "sv-service-desk",
+    "name": "サービスデスク",
+    "reading": "さーびすですく",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "☎️",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-help-desk",
+      "sv-spoc",
+      "sv-toiawase"
+    ],
+    "description": "IT サービスを 使う 人からの 問合せを 受ける 窓口です。ヘルプデスクとも いい、困った ときは まず ここに 連絡します。受けた 内容を 記録して、解決や 担当への 引きつぎを 行います。"
+  },
+  {
+    "id": "sv-incident",
+    "name": "インシデント",
+    "reading": "いんしでんと",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🚨",
+    "mapNode": "service:incident",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-incident-kanri",
+      "sv-mondai-kanri",
+      "sv-service-desk"
+    ],
+    "description": "IT サービスが 止まったり、ふだんより 遅く なったり する、計画して いなかった できごとです。たとえば「メールが 送れない」も インシデントで、すぐに もとに もどす 対応を します。"
+  },
+  {
+    "id": "sv-naibu-tosei",
+    "name": "内部統制",
+    "reading": "ないぶとうせい",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🏛",
+    "mapNode": "service:naibu",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-shokumu-bunsho",
+      "sv-monitoring",
+      "sv-check-taisei"
+    ],
+    "description": "健全で 効率的な 組織運営の ための 体制を、会社が 自ら 作って 運用する しくみです。業務プロセスの 明確化・職務分掌・実施ルールの 設定・チェック体制の 確立が 必要です。"
+  },
+  {
+    "id": "sv-ups",
+    "name": "UPS",
+    "reading": "ゆーぴーえす",
+    "journey": "service",
+    "category": "ファシリティ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔋",
+    "mapNode": "service:facility",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-jikahatsuden",
+      "sv-surge",
+      "sv-setsubi"
+    ],
+    "description": "無停電電源装置(Uninterruptible Power Supply)の 略です。停電した とき、しばらくの あいだ 電池から 電気を 送り、コンピュータを 安全に 止める 時間を 作ります。"
+  },
+  {
+    "id": "sv-help-desk",
+    "name": "ヘルプデスク",
+    "reading": "へるぷですく",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🙋",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-desk",
+      "sv-faq",
+      "sv-toiawase"
+    ],
+    "description": "利用者からの 問合せを 受ける 窓口の ことで、サービスデスクの 別の 呼び名です。パスワードを 忘れた・画面が 動かない などの 相談を 受けて、解決まで 面倒を 見ます。"
+  },
+  {
+    "id": "sv-faq",
+    "name": "FAQ",
+    "reading": "えふえーきゅー",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "❓",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-help-desk",
+      "sv-chatbot",
+      "sv-service-desk"
+    ],
+    "description": "Frequently Asked Questions の 略で、よく ある 質問と その 答えを まとめた 一覧です。利用者が 自分で 調べて 解決できるので、サービスデスクへの 問合せを 減らせます。"
+  },
+  {
+    "id": "sv-service",
+    "name": "サービス",
+    "reading": "さーびす",
+    "journey": "service",
+    "category": "サービスの基本",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🎁",
+    "mapNode": "service:service",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-mgmt",
+      "sv-it-service",
+      "sv-riyosha"
+    ],
+    "description": "利用者に 価値を とどける ことです。会社の 中では、メールや 社内システムを いつでも 使える ように する ことも 大切な IT の サービスです。"
+  },
+  {
+    "id": "sv-kansa",
+    "name": "監査",
+    "reading": "かんさ",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🧐",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-system-kansa",
+      "sv-kaikei-kansa",
+      "sv-gyomu-kansa"
+    ],
+    "description": "仕事や お金の 扱い、情報システムが 正しく 行われて いるかを、決まった 基準に そって 確かめる ことです。種類には 会計監査・業務監査・情報セキュリティ監査・システム監査 が あります。"
+  },
+  {
+    "id": "sv-unyo",
+    "name": "運用",
+    "reading": "うんよう",
+    "journey": "service",
+    "category": "サービスの基本",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "⚙️",
+    "mapNode": "service:service",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-mgmt",
+      "sv-service",
+      "sv-it-service"
+    ],
+    "description": "完成した 情報システムを 毎日 動かしつづける ことです。サービスマネジメントでは、システムを 安定して 効率よく 運用し、サービスの 品質を 保つ ことを 大切に します。"
+  },
+  {
+    "id": "sv-chatbot",
+    "name": "チャットボット",
+    "reading": "ちゃっとぼっと",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🤖",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-faq",
+      "sv-aiops",
+      "sv-service-desk"
+    ],
+    "description": "文字の やりとりで、質問に 自動で 答える しくみです。サービスデスクで 使うと、夜や 休みの 日でも よく ある 質問に すぐ 答えられ、担当者は むずかしい 相談に 集中できます。"
+  },
+  {
+    "id": "sv-jikahatsuden",
+    "name": "自家発電装置",
+    "reading": "じかはつでんそうち",
+    "journey": "service",
+    "category": "ファシリティ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🏭",
+    "mapNode": "service:facility",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-ups",
+      "sv-setsubi",
+      "sv-keizoku-kanri"
+    ],
+    "description": "停電が 長く つづく ときに、自分で 電気を 作る 装置です。UPS が 短い 時間を つなぎ、その あいだに 自家発電装置が 動き出す、という 組み合わせで 使われます。"
+  },
+  {
+    "id": "sv-toiawase",
+    "name": "問合せ",
+    "reading": "といあわせ",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "📨",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-desk",
+      "sv-help-desk",
+      "sv-madoguchi"
+    ],
+    "description": "利用者からの 質問や 依頼の ことです。サービスデスクは 問合せを 受けたら 記録して 分類し、優先度を 付けて 対応し、さいごに 結果を 記録します。"
+  },
+  {
+    "id": "sv-madoguchi",
+    "name": "窓口",
+    "reading": "まどぐち",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🪟",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-spoc",
+      "sv-service-desk",
+      "sv-toiawase"
+    ],
+    "description": "問合せを 受け付ける ところです。サービスデスクは 窓口を 1つに まとめ、利用者が「どこに 聞けば いいか」で 迷わない ように します。"
+  },
+  {
+    "id": "sv-setsubi",
+    "name": "設備",
+    "reading": "せつび",
+    "journey": "service",
+    "category": "ファシリティ",
+    "difficulty": 1,
+    "type": "concept",
+    "emoji": "🔌",
+    "mapNode": "service:facility",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-shisetsu",
+      "sv-ups",
+      "sv-iji-hozen"
+    ],
+    "description": "電源や 空調 など、コンピュータや ネットワークを 動かす ための 機械や 道具です。システム環境を よい 状態に 保つ ため、施設と いっしょに 維持保全します。"
+  },
+  {
+    "id": "sv-sla",
+    "name": "SLA",
+    "reading": "えすえるえー",
+    "journey": "service",
+    "category": "サービスレベル",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🤝",
+    "mapNode": "service:sla",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-slo",
+      "sv-sli",
+      "sv-slm"
+    ],
+    "description": "Service Level Agreement(サービスレベル合意書)の 略です。サービスの 中身と、合意した パフォーマンスを 決めた、サービスを 出す 組織と 顧客との 間の 合意文書です。"
+  },
+  {
+    "id": "sv-itil",
+    "name": "ITIL",
+    "reading": "あいてぃる",
+    "journey": "service",
+    "category": "サービスの基本",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📚",
+    "mapNode": "service:service",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-mgmt",
+      "sv-sla",
+      "sv-it-service"
+    ],
+    "description": "Information Technology Infrastructure Library の 略で、IT サービスマネジメントの フレームワークです。うまく いった やりかたを まとめた もので、多くの 会社が 参考に しています。"
+  },
+  {
+    "id": "sv-service-mgmt",
+    "name": "サービスマネジメント",
+    "reading": "さーびすまねじめんと",
+    "journey": "service",
+    "category": "サービスの基本",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧭",
+    "mapNode": "service:service",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-itil",
+      "sv-sms",
+      "sv-service"
+    ],
+    "description": "価値を 提供する ため、サービスの 計画立案・設計・移行・提供・改善の 活動と 資源を 指揮し、管理する 一連の 能力と プロセスです。"
+  },
+  {
+    "id": "sv-incident-kanri",
+    "name": "インシデント管理",
+    "reading": "いんしでんとかんり",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚑",
+    "mapNode": "service:incident",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-incident",
+      "sv-mondai-kanri",
+      "sv-escalation"
+    ],
+    "description": "インシデントで 止まった サービスを、できるだけ 早く もとに もどす 活動です。ひっかけ注意: 根本の 原因を 調べて 再発を ふせぐのは 問題管理で、こちらは まず 復旧を 急ぎます。"
+  },
+  {
+    "id": "sv-mondai-kanri",
+    "name": "問題管理",
+    "reading": "もんだいかんり",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔬",
+    "mapNode": "service:incident",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-incident-kanri",
+      "sv-incident",
+      "sv-henko-kanri"
+    ],
+    "description": "インシデントの 根本の 原因を 調べて、同じ ことが 起きない ように する 活動です。ひっかけ注意: いま 止まって いる サービスを 早く もどすのは インシデント管理の 仕事です。"
+  },
+  {
+    "id": "sv-henko-kanri",
+    "name": "変更管理",
+    "reading": "へんこうかんり",
+    "journey": "service",
+    "category": "変更とリリース",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📝",
+    "mapNode": "service:henko",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-release-kanri",
+      "sv-kosei-kanri",
+      "sv-mondai-kanri"
+    ],
+    "description": "システムや サービスを 変える 依頼を 記録し、影響を 評価して、承認してから 進める 活動です。思いつきの 変更で サービスが 止まる ことを ふせぎます。"
+  },
+  {
+    "id": "sv-kosei-kanri",
+    "name": "構成管理",
+    "reading": "こうせいかんり",
+    "journey": "service",
+    "category": "変更とリリース",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧩",
+    "mapNode": "service:kosei",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-henko-kanri",
+      "sv-release-kanri",
+      "sv-kayosei-kanri"
+    ],
+    "description": "サービスを 作って いる ハードウェア・ソフトウェア・文書 などの 情報を、正しく 記録して 管理する 活動です。何が どこに あるかが 分かると、変更や 障害の 影響を 早く 調べられます。"
+  },
+  {
+    "id": "sv-release-kanri",
+    "name": "リリース管理",
+    "reading": "りりーすかんり",
+    "journey": "service",
+    "category": "変更とリリース",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🚀",
+    "mapNode": "service:henko",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-henko-kanri",
+      "sv-release",
+      "sv-tenkai"
+    ],
+    "description": "承認された 変更を 本番の 環境に 出し、利用者の ところへ 広げる 活動です。シラバスの 名前は「リリース及び展開管理」です。ひっかけ注意: 変更して よいか 決めるのは 変更管理です。"
+  },
+  {
+    "id": "sv-service-level",
+    "name": "サービスレベル",
+    "reading": "さーびすれべる",
+    "journey": "service",
+    "category": "サービスレベル",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📶",
+    "mapNode": "service:sla",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-sla",
+      "sv-slm",
+      "sv-service-hinshitsu"
+    ],
+    "description": "サービスの 水準の ことです。たとえば「使える 時間」や「問合せへの 返事の 速さ」など、どの くらいの 質で サービスを 出すかを 表します。"
+  },
+  {
+    "id": "sv-spoc",
+    "name": "SPOC",
+    "reading": "すぽっく",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-madoguchi",
+      "sv-service-desk",
+      "sv-help-desk"
+    ],
+    "description": "Single Point Of Contact の 略で、単一の 窓口の ことです。サービスデスクが 問合せの 窓口を 1つに まとめ、利用者は 何でも まず ここに 連絡すれば よい ように します。"
+  },
+  {
+    "id": "sv-escalation",
+    "name": "エスカレーション",
+    "reading": "えすかれーしょん",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⬆️",
+    "mapNode": "service:incident",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-incident-kanri",
+      "sv-service-desk",
+      "sv-yusendo"
+    ],
+    "description": "自分たちで 解決できない ときに、もっと くわしい 担当や 上の 立場の 人に 対応を 引きつぐ ことです。サービスデスクで 解けない 問合せを 専門の チームに わたす ときに 使います。"
+  },
+  {
+    "id": "sv-facility-mgmt",
+    "name": "ファシリティマネジメント",
+    "reading": "ふぁしりてぃまねじめんと",
+    "journey": "service",
+    "category": "ファシリティ",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🏢",
+    "mapNode": "service:facility",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-setsubi",
+      "sv-shisetsu",
+      "sv-system-kankyo"
+    ],
+    "description": "建物や 設備 などの 資源が 最適な 状態に なる ように、改善して いく 考えかたです。シラバスの 用語例には、環境に やさしい IT の 使いかた である グリーン IT が あります。"
+  },
+  {
+    "id": "sv-kansanin",
+    "name": "システム監査人",
+    "reading": "しすてむかんさにん",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🕵️",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-system-kansa",
+      "sv-dokuritsusei",
+      "sv-rinrikan"
+    ],
+    "description": "システム監査を 行う 人です。高い 倫理観の 下、監査する 相手から 独立した、客観的な 立場で 情報システムを 検証・評価し、保証や 助言を 行います。"
+  },
+  {
+    "id": "sv-kansa-kijun",
+    "name": "システム監査基準",
+    "reading": "しすてむかんさきじゅん",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansanin",
+      "sv-system-kansa",
+      "sv-kansa-tetsuzuki"
+    ],
+    "description": "システム監査人が 監査を 行う ときの よりどころと なる 基準で、経済産業省が 定めています。令和5年に 改訂され、シラバスも それに 合わせて 用語が 見なおされました。"
+  },
+  {
+    "id": "sv-dokuritsusei",
+    "name": "独立性",
+    "reading": "どくりつせい",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗽",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kyakkansei",
+      "sv-kansanin",
+      "sv-system-kansa"
+    ],
+    "description": "監査する 相手から はなれた 立場に いる ことです。自分が 作った システムを 自分で 監査すると 正しく 評価できないので、システム監査人には 独立した 立場が 求められます。"
+  },
+  {
+    "id": "sv-kansa-shoko",
+    "name": "監査証拠",
+    "reading": "かんさしょうこ",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🧾",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansa-tetsuzuki",
+      "sv-kansa-chosho",
+      "sv-hon-chosa"
+    ],
+    "description": "監査の 結論を ささえる 事実や 資料です。システム監査人は 監査手続を 行って 監査証拠を 入手し、それを 評価して 結論を 出します。思いこみでは なく 証拠で 判断します。"
+  },
+  {
+    "id": "sv-kansa-hokokusho",
+    "name": "監査報告書",
+    "reading": "かんさほうこくしょ",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📑",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kaizen-teian",
+      "sv-followup",
+      "sv-kansa-iken"
+    ],
+    "description": "監査の 結果を まとめた 書類で、正式には システム監査報告書と いいます。見つかった 問題と 改善提案を 書き、監査を 頼んだ 人に 報告します。"
+  },
+  {
+    "id": "sv-followup",
+    "name": "フォローアップ",
+    "reading": "ふぉろーあっぷ",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔁",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kaizen-teian",
+      "sv-kansa-hokokusho",
+      "sv-kansa-keikaku"
+    ],
+    "description": "監査報告の あとで、改善提案が 本当に 実行されたかを 確かめる ことです。システム監査は 監査計画 → 監査の 実施 → 監査報告と フォローアップ の 流れで 進みます。"
+  },
+  {
+    "id": "sv-shokumu-bunsho",
+    "name": "職務分掌",
+    "reading": "しょくむぶんしょう",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "✂️",
+    "mapNode": "service:naibu",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-naibu-tosei",
+      "sv-check-taisei",
+      "sv-jisshi-rule"
+    ],
+    "description": "仕事と 権限を 分けて、1人の 人に 集めない ことです。たとえば お金を 払う 人と それを 認める 人を 分けると、不正や まちがいに 気づき やすく なります。内部統制に 必要な ことの 1つです。"
+  },
+  {
+    "id": "sv-it-governance",
+    "name": "ITガバナンス",
+    "reading": "あいてぃーがばなんす",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👑",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-it-senryaku",
+      "sv-torishimariyakukai",
+      "sv-it-mgmt"
+    ],
+    "description": "取締役会等が、組織の 価値と 信頼を 高める ため、IT の 利活用の あるべき 姿を 示す IT戦略と 方針を 作り、実現する 活動です。規格には JIS Q 38500 が あります。"
+  },
+  {
+    "id": "sv-kaikei-kansa",
+    "name": "会計監査",
+    "reading": "かいけいかんさ",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "💴",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-gyomu-kansa",
+      "sv-kansa",
+      "sv-system-kansa"
+    ],
+    "description": "会社の 決算書(財務諸表)が 正しく 作られて いるかを 確かめる 監査です。ひっかけ注意: 情報システムの リスクへの 対応を 確かめるのは システム監査です。"
+  },
+  {
+    "id": "sv-gyomu-kansa",
+    "name": "業務監査",
+    "reading": "ぎょうむかんさ",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗃",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kaikei-kansa",
+      "sv-kansa",
+      "sv-isec-kansa"
+    ],
+    "description": "会計 以外の 仕事の やりかたが、決まりに そって 適切に 行われて いるかを 確かめる 監査です。会計監査・情報セキュリティ監査・システム監査と ならぶ 監査の 種類です。"
+  },
+  {
+    "id": "sv-isec-kansa",
+    "name": "情報セキュリティ監査",
+    "reading": "じょうほうせきゅりてぃかんさ",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔐",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-system-kansa",
+      "sv-gyomu-kansa",
+      "sv-kansa"
+    ],
+    "description": "情報セキュリティの 対策が 適切に 作られ、運用されて いるかを 確かめる 監査です。会計監査・業務監査・システム監査と ならぶ 監査の 種類の 1つです。"
+  },
+  {
+    "id": "sv-surge",
+    "name": "サージ防護",
+    "reading": "さーじぼうご",
+    "journey": "service",
+    "category": "ファシリティ",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "⚡",
+    "mapNode": "service:facility",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-ups",
+      "sv-setsubi",
+      "sv-jikahatsuden"
+    ],
+    "description": "雷などで 急に 高い 電圧(サージ)が 流れた ときに、コンピュータや ネットワーク機器が こわれない ように 守る ことです。ひっかけ注意: 停電に そなえるのは UPS です。"
+  },
+  {
+    "id": "sv-monitoring",
+    "name": "モニタリング",
+    "reading": "もにたりんぐ",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "👀",
+    "mapNode": "service:naibu",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-naibu-tosei",
+      "sv-check-taisei",
+      "sv-reputation"
+    ],
+    "description": "内部統制が きちんと 動いて いるかを、見つづけて 評価する ことです。内部統制の 基本的要素の 1つで、問題が あれば 早く 見つけて 直します。"
+  },
+  {
+    "id": "sv-yobi-chosa",
+    "name": "予備調査",
+    "reading": "よびちょうさ",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗺",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-hon-chosa",
+      "sv-kansa-keikaku",
+      "sv-kansa-tetsuzuki"
+    ],
+    "description": "本調査の 前に、資料を 読んだり 話を 聞いたり して、監査する 相手の 様子を つかむ 調査です。監査の 実施は 予備調査 → 本調査 → 評価 → 結論 の 順で 進みます。"
+  },
+  {
+    "id": "sv-hon-chosa",
+    "name": "本調査",
+    "reading": "ほんちょうさ",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🔎",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-yobi-chosa",
+      "sv-kansa-shoko",
+      "sv-kansa-tetsuzuki"
+    ],
+    "description": "予備調査の あとに、監査手続を 実施して 監査証拠を 集める 調査です。インタビューや ドキュメントレビュー、現地調査 などの システム監査技法を 使います。"
+  },
+  {
+    "id": "sv-kansa-chosho",
+    "name": "監査調書",
+    "reading": "かんさちょうしょ",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗂",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansa-shoko",
+      "sv-kansa-tetsuzuki",
+      "sv-kansa-hokokusho"
+    ],
+    "description": "監査で 行った ことや 集めた 監査証拠を まとめた 記録です。監査の 結論の よりどころに なるので、作った あとは きちんと 保管します。"
+  },
+  {
+    "id": "sv-slm",
+    "name": "サービスレベル管理",
+    "reading": "さーびすれべるかんり",
+    "journey": "service",
+    "category": "サービスレベル",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "📈",
+    "mapNode": "service:sla",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-sla",
+      "sv-service-level",
+      "sv-slo"
+    ],
+    "description": "SLM(Service Level Management)とも いいます。SLA で サービスレベルを 合意し、実績を 測って 報告し、足りない ところを 見なおし つづける 活動です。"
+  },
+  {
+    "id": "sv-kansa-keikaku",
+    "name": "監査計画",
+    "reading": "かんさけいかく",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 2,
+    "type": "concept",
+    "emoji": "🗓",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-yobi-chosa",
+      "sv-risk-approach",
+      "sv-followup"
+    ],
+    "description": "監査の 目的・範囲・日程 などを 決める 計画で、システム監査の はじめの 段階に 作ります。シラバスでは「システム監査計画」と 書かれています。"
+  },
+  {
+    "id": "sv-slo",
+    "name": "SLO",
+    "reading": "えすえるおー",
+    "journey": "service",
+    "category": "サービスレベル",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "service:sla",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-sli",
+      "sv-sla",
+      "sv-slm"
+    ],
+    "description": "Service Level Objective の 略で、サービスレベルの 目標値です。ひっかけ注意: 測る ものさしは SLI、目標の 数字が SLO、顧客との 合意文書が SLA です。"
+  },
+  {
+    "id": "sv-sli",
+    "name": "SLI",
+    "reading": "えすえるあい",
+    "journey": "service",
+    "category": "サービスレベル",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📏",
+    "mapNode": "service:sla",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-slo",
+      "sv-sla",
+      "sv-kayosei-kanri"
+    ],
+    "description": "Service Level Indicator の 略で、サービスレベルを 測る ための ものさし(指標)です。たとえば 稼働率や 応答時間です。ひっかけ注意: 目標の 値そのものは SLO です。",
+    "formula": "稼働率 = 動いた 時間 ÷ 全部の 時間"
+  },
+  {
+    "id": "sv-sms",
+    "name": "サービスマネジメントシステム",
+    "reading": "さーびすまねじめんとしすてむ",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗄",
+    "mapNode": "service:sms",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-mgmt",
+      "sv-slm",
+      "sv-keizokuteki-kaizen"
+    ],
+    "description": "サービスマネジメントの 活動を 管理する しくみです。組織に 求められる ことが 決められて いて、サービスレベル管理・インシデント管理・変更管理 などの 活動が ふくまれます。"
+  },
+  {
+    "id": "sv-juyo-kanri",
+    "name": "需要管理",
+    "reading": "じゅようかんり",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📊",
+    "mapNode": "service:kosei",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kayosei-kanri",
+      "sv-keizoku-kanri",
+      "sv-slm"
+    ],
+    "description": "サービスが どの くらい 使われるかを 予測して、必要な 準備を する 活動です。利用が ふえる 時期を 先に 知って おくと、足りなく なって 遅く なる ことを ふせげます。"
+  },
+  {
+    "id": "sv-yokyu-kanri",
+    "name": "サービス要求管理",
+    "reading": "さーびすようきゅうかんり",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎫",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-yokyu",
+      "sv-service-desk",
+      "sv-kiroku-bunrui"
+    ],
+    "description": "利用者からの 決まった 依頼を 受けて 実現する 活動です。記録と 分類・優先度付け・実現・終了と 対応結果の 記録 などを 行います。サービスデスクの 大切な 仕事です。"
+  },
+  {
+    "id": "sv-kayosei-kanri",
+    "name": "可用性管理",
+    "reading": "かようせいかんり",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🟢",
+    "mapNode": "service:kosei",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-keizoku-kanri",
+      "sv-sli",
+      "sv-juyo-kanri"
+    ],
+    "description": "シラバスでは「サービス可用性管理」と いい、合意した ときに サービスが 使える 状態を 保つ 活動です。ひっかけ注意: 災害の ときに 続ける 備えは サービス継続管理です。"
+  },
+  {
+    "id": "sv-keizoku-kanri",
+    "name": "サービス継続管理",
+    "reading": "さーびすけいぞくかんり",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛟",
+    "mapNode": "service:kosei",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kayosei-kanri",
+      "sv-jikahatsuden",
+      "sv-juyo-kanri"
+    ],
+    "description": "大きな 災害 などが 起きても、合意した サービスを 続けられる ように 備える 活動です。ふだんの「使える 時間」を 保つ 可用性管理とは 目的が ちがいます。"
+  },
+  {
+    "id": "sv-hokoku",
+    "name": "サービスの報告",
+    "reading": "さーびすのほうこく",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📣",
+    "mapNode": "service:sms",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-slm",
+      "sv-sla",
+      "sv-keizokuteki-kaizen"
+    ],
+    "description": "サービスが どの くらい 合意どおりに 出せたか などの 実績を まとめて、顧客に 伝える 活動です。報告を もとに 話し合い、サービスを よく して いきます。"
+  },
+  {
+    "id": "sv-catalog",
+    "name": "サービスカタログ",
+    "reading": "さーびすかたろぐ",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📖",
+    "mapNode": "service:sms",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service",
+      "sv-sla",
+      "sv-yokyu-kanri"
+    ],
+    "description": "いま 提供して いる サービスの 一覧と、その 中身・使いかた などを まとめた ものです。利用者は カタログを 見て、どんな サービスを 頼めるかを 知る ことが できます。"
+  },
+  {
+    "id": "sv-service-iko",
+    "name": "サービスの移行",
+    "reading": "さーびすのいこう",
+    "journey": "service",
+    "category": "変更とリリース",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚚",
+    "mapNode": "service:henko",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-ukeire-kijun",
+      "sv-release-kanri",
+      "sv-service-sekkei"
+    ],
+    "description": "新しい サービスや 変えた サービスを、実際に 使える 状態へ 移す ことです。サービスマネジメントの 計画立案・設計・移行・提供・改善の 1つです。"
+  },
+  {
+    "id": "sv-ukeire-kijun",
+    "name": "サービス受入れ基準",
+    "reading": "さーびすうけいれきじゅん",
+    "journey": "service",
+    "category": "変更とリリース",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "✅",
+    "mapNode": "service:henko",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-iko",
+      "sv-release",
+      "sv-sla"
+    ],
+    "description": "新しい サービスや 変えた サービスを 受け入れて よいかを 決める ための 条件です。前もって 決めて おき、条件を みたして から 本番で 使い はじめます。"
+  },
+  {
+    "id": "sv-aiops",
+    "name": "AIOps",
+    "reading": "えーあいおぷす",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧠",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-chatbot",
+      "sv-service-desk",
+      "sv-incident-kanri"
+    ],
+    "description": "AI(人工知能)を システムの 運用に 使う 考えかたです。たくさんの 記録から ふだんと ちがう 動きを 見つけたり、対応を 助けたり します。シラバスでは サービスデスクの 用語例です。"
+  },
+  {
+    "id": "sv-yusendo",
+    "name": "優先度付け",
+    "reading": "ゆうせんどづけ",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🔢",
+    "mapNode": "service:incident",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kiroku-bunrui",
+      "sv-incident-kanri",
+      "sv-escalation"
+    ],
+    "description": "受けた 依頼や インシデントに、どれから 対応するかの 順番を 付ける ことです。影響の 大きさや 急ぎぐあいを もとに 決め、大事な ものから 先に 対応します。"
+  },
+  {
+    "id": "sv-release",
+    "name": "リリース",
+    "reading": "りりーす",
+    "journey": "service",
+    "category": "変更とリリース",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📦",
+    "mapNode": "service:henko",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-release-kanri",
+      "sv-tenkai",
+      "sv-henko-kanri"
+    ],
+    "description": "変更した サービスや ソフトウェアを、本番で 使える ように 出す ことです。リリースした ものを 利用者の 環境に 広げる ことを 展開と いいます。"
+  },
+  {
+    "id": "sv-kyakkansei",
+    "name": "客観性",
+    "reading": "きゃっかんせい",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "⚖️",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-dokuritsusei",
+      "sv-kansanin",
+      "sv-kansa-shoko"
+    ],
+    "description": "思いこみや 好ききらいに よらず、事実と 証拠に もとづいて 判断する ことです。システム監査人は 独立かつ 客観的な 立場で 監査を 行います。"
+  },
+  {
+    "id": "sv-hosho-iken",
+    "name": "保証意見",
+    "reading": "ほしょういけん",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛡",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-jogen-iken",
+      "sv-kansa-iken",
+      "sv-system-kansa"
+    ],
+    "description": "保証を 目的と した システム監査で、監査人が 証拠を 客観的に 評価して、コントロールなどが 適切かに ついて 述べる 意見です。ひっかけ注意: 改善の 助言を 伝えるのは 助言意見です。"
+  },
+  {
+    "id": "sv-jogen-iken",
+    "name": "助言意見",
+    "reading": "じょげんいけん",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💡",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-hosho-iken",
+      "sv-kaizen-teian",
+      "sv-kansa-iken"
+    ],
+    "description": "助言を 目的と した システム監査で、依頼者の 求めに 応じて、改善の ための 助言や 提案を 伝える 意見です。ひっかけ注意: 適切かを 評価して 保証を 与えるのは 保証意見です。"
+  },
+  {
+    "id": "sv-is-risk",
+    "name": "情報システムリスク",
+    "reading": "じょうほうしすてむりすく",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌪",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-system-kansa",
+      "sv-risk-approach",
+      "sv-kansanin"
+    ],
+    "description": "情報システムに まつわる リスクの ことです。システム監査は、会社が 情報システムリスクに 適切に 対応して いるかを 確かめます。"
+  },
+  {
+    "id": "sv-risk-approach",
+    "name": "リスクアプローチ",
+    "reading": "りすくあぷろーち",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎯",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansa-tetsuzuki",
+      "sv-is-risk",
+      "sv-kansa-keikaku"
+    ],
+    "description": "リスクの 大きい ところに 重点を おいて 監査する 考えかたです。すべてを 同じ ように 調べるのでは なく、大事な ところに 時間を かけて 効率よく 監査します。"
+  },
+  {
+    "id": "sv-kansa-tetsuzuki",
+    "name": "監査手続",
+    "reading": "かんさてつづき",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🪜",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansa-shoko",
+      "sv-kansa-giho",
+      "sv-risk-approach"
+    ],
+    "description": "監査証拠を 集める ための 具体的な 手順です。リスクアプローチに 基づいて 監査手続を 決め、本調査で 実施します。"
+  },
+  {
+    "id": "sv-kansa-giho",
+    "name": "システム監査技法",
+    "reading": "しすてむかんさぎほう",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧰",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-interview",
+      "sv-doc-review",
+      "sv-genchi"
+    ],
+    "description": "監査証拠を 集める ための 方法です。たとえば 関係者に 聞く インタビュー、書類を 読む ドキュメントレビュー、現場に 行く 現地調査 などが あります。"
+  },
+  {
+    "id": "sv-kaizen-teian",
+    "name": "改善提案",
+    "reading": "かいぜんていあん",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🛠",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-followup",
+      "sv-kansa-hokokusho",
+      "sv-jogen-iken"
+    ],
+    "description": "監査で 見つかった 問題を 直す ための 提案です。システム監査報告書に 書いて 伝え、あとで フォローアップで 実行されたかを 確かめます。"
+  },
+  {
+    "id": "sv-reputation",
+    "name": "レピュテーションリスク",
+    "reading": "れぴゅてーしょんりすく",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📰",
+    "mapNode": "service:naibu",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-naibu-tosei",
+      "sv-monitoring",
+      "sv-setsumei-sekinin"
+    ],
+    "description": "悪い うわさや 評判が 広がって、会社の 信用が 下がる リスクです。内部統制の 用語例で、ルールを 守る しくみを 作る ことが 信用を 守る ことに つながります。"
+  },
+  {
+    "id": "sv-check-taisei",
+    "name": "チェック体制",
+    "reading": "ちぇっくたいせい",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "☑️",
+    "mapNode": "service:naibu",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-naibu-tosei",
+      "sv-shokumu-bunsho",
+      "sv-monitoring"
+    ],
+    "description": "仕事が 決まりどおりに 行われて いるかを 確かめる しくみです。内部統制の 実現には 業務プロセスの 明確化・職務分掌・実施ルールの 設定・チェック体制の 確立が 必要です。"
+  },
+  {
+    "id": "sv-jisshi-rule",
+    "name": "実施ルール",
+    "reading": "じっしるーる",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📜",
+    "mapNode": "service:naibu",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-naibu-tosei",
+      "sv-shokumu-bunsho",
+      "sv-check-taisei"
+    ],
+    "description": "仕事を どう 進めるかを 決めた 決まりです。内部統制では 実施ルールを 設定し、だれが やっても 同じ ように 正しく 仕事が できる ように します。"
+  },
+  {
+    "id": "sv-it-mgmt",
+    "name": "ITマネジメント",
+    "reading": "あいてぃーまねじめんと",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎛",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-it-governance",
+      "sv-control",
+      "sv-keieisha"
+    ],
+    "description": "IT戦略の 目標を 達成する ため、IT の 利活用を コントロールし、結果を 経営者に 報告する 体制を 作って 運用する 活動です。ひっかけ注意: 戦略と 方針を 示すのは ITガバナンスです。"
+  },
+  {
+    "id": "sv-it-senryaku",
+    "name": "IT戦略",
+    "reading": "あいてぃーせんりゃく",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗺",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-it-governance",
+      "sv-it-mgmt",
+      "sv-torishimariyakukai"
+    ],
+    "description": "組織の 中で IT を どう 使うのが よいか、その あるべき 姿を 示した 戦略です。ITガバナンスでは 取締役会等が IT戦略と 方針を 作り、ITマネジメントで 目標を 達成します。"
+  },
+  {
+    "id": "sv-torishimariyakukai",
+    "name": "取締役会",
+    "reading": "とりしまりやくかい",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🪑",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-it-governance",
+      "sv-keieisha",
+      "sv-it-senryaku"
+    ],
+    "description": "会社の 大事な ことを 決める 取締役の 集まりです。ITガバナンスは 取締役会等が、ステークホルダの ニーズに 基づいて 進めます。"
+  },
+  {
+    "id": "sv-control",
+    "name": "コントロール",
+    "reading": "こんとろーる",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🕹",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-it-mgmt",
+      "sv-it-governance",
+      "sv-monitoring"
+    ],
+    "description": "物ごとが 方針や 計画どおりに なる ように 管理する ことです。ITマネジメントでは、IT の 利活用に 関する コントロールを 実行します。"
+  },
+  {
+    "id": "sv-service-sekkei",
+    "name": "サービスの設計",
+    "reading": "さーびすのせっけい",
+    "journey": "service",
+    "category": "サービスの基本",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "✏️",
+    "mapNode": "service:service",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-keikaku-ritsuan",
+      "sv-service-iko",
+      "sv-service-teikyo"
+    ],
+    "description": "利用者に とどける サービスの 中身や しくみを 決める ことです。サービスマネジメントは 計画立案・設計・移行・提供・改善の 活動を 管理します。"
+  },
+  {
+    "id": "sv-service-teikyo",
+    "name": "サービスの提供",
+    "reading": "さーびすのていきょう",
+    "journey": "service",
+    "category": "サービスの基本",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🍱",
+    "mapNode": "service:service",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-sekkei",
+      "sv-service-kaizen",
+      "sv-sla"
+    ],
+    "description": "合意した 内容の サービスを、実際に 利用者に とどける ことです。サービスマネジメントの 計画立案・設計・移行・提供・改善の 1つです。"
+  },
+  {
+    "id": "sv-service-hinshitsu",
+    "name": "サービスの品質",
+    "reading": "さーびすのひんしつ",
+    "journey": "service",
+    "category": "サービスレベル",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💎",
+    "mapNode": "service:sla",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-level",
+      "sv-sla",
+      "sv-service-kaizen"
+    ],
+    "description": "サービスの よさの ことです。サービスマネジメントでは、情報システムを 安定して 運用し、利用者に 対する サービスの 品質を 維持・向上させる ことを 目指します。"
+  },
+  {
+    "id": "sv-it-service",
+    "name": "ITサービス",
+    "reading": "あいてぃーさーびす",
+    "journey": "service",
+    "category": "サービスの基本",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "💻",
+    "mapNode": "service:service",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service",
+      "sv-itil",
+      "sv-service-mgmt"
+    ],
+    "description": "情報システムを 使って 提供する サービスです。社内の メール・ファイル共有・業務システム などが 例で、決まった 品質で いつも 使える ように 管理します。"
+  },
+  {
+    "id": "sv-keikaku-ritsuan",
+    "name": "計画立案",
+    "reading": "けいかくりつあん",
+    "journey": "service",
+    "category": "サービスの基本",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧠",
+    "mapNode": "service:sms",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-sekkei",
+      "sv-service-mgmt",
+      "sv-service-kaizen"
+    ],
+    "description": "どんな サービスを どう 出すかを 考えて 計画を 立てる ことです。サービスマネジメントの 計画立案・設計・移行・提供・改善の はじめの 活動です。"
+  },
+  {
+    "id": "sv-iji-hozen",
+    "name": "維持保全",
+    "reading": "いじほぜん",
+    "journey": "service",
+    "category": "ファシリティ",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧹",
+    "mapNode": "service:facility",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-setsubi",
+      "sv-shisetsu",
+      "sv-system-kankyo"
+    ],
+    "description": "システム環境・施設・設備を、よい 状態に 保ち つづける ことです。点検や 手入れを して、こわれたり 止まったり しない ように します。"
+  },
+  {
+    "id": "sv-rinrikan",
+    "name": "倫理観",
+    "reading": "りんりかん",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌟",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansanin",
+      "sv-dokuritsusei",
+      "sv-kyakkansei"
+    ],
+    "description": "正しい ことを 正しく 行おうと する 心がまえです。システム監査人は 高い 倫理観の 下、独立かつ 客観的な 立場で 監査を 行います。"
+  },
+  {
+    "id": "sv-setsumei-sekinin",
+    "name": "説明責任",
+    "reading": "せつめいせきにん",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗣",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-rigai",
+      "sv-system-kansa",
+      "sv-it-governance"
+    ],
+    "description": "自分たちの 活動や 結果に ついて、関係する 人に きちんと 説明する 責任です。システム監査の 目的には、利害関係者に 対する 説明責任を 果たす ことも ふくまれます。"
+  },
+  {
+    "id": "sv-service-yokyu",
+    "name": "サービス要求",
+    "reading": "さーびすようきゅう",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📮",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-yokyu-kanri",
+      "sv-incident",
+      "sv-service-desk"
+    ],
+    "description": "利用者からの 決まった 依頼です。たとえば パスワードの 再発行や 使う 権限の 追加です。ひっかけ注意: サービスが 止まる などの 計画外の できごとは インシデントです。"
+  },
+  {
+    "id": "sv-kiroku-bunrui",
+    "name": "記録と分類",
+    "reading": "きろくとぶんるい",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏷",
+    "mapNode": "service:incident",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-yusendo",
+      "sv-yokyu-kanri",
+      "sv-toiawase"
+    ],
+    "description": "受けた 問合せや 依頼を 記録に 残し、種類ごとに 分ける ことです。サービス要求管理は 記録と 分類 → 優先度付け → 実現 → 終了と 対応結果の 記録 の 順で 進みます。"
+  },
+  {
+    "id": "sv-soshikitai",
+    "name": "組織体",
+    "reading": "そしきたい",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏢",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-it-governance",
+      "sv-system-kansa",
+      "sv-rigai"
+    ],
+    "description": "会社や 団体などの 組織の ことです。システム監査は 組織体の 目標達成に 寄与し、ITガバナンスは 組織体の 価値と 信頼を 高める ために 行います。"
+  },
+  {
+    "id": "sv-doc-review",
+    "name": "ドキュメントレビュー",
+    "reading": "どきゅめんとれびゅー",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "📄",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansa-giho",
+      "sv-interview",
+      "sv-genchi"
+    ],
+    "description": "書類や 記録を 手に 入れて 読み、決まりどおりに 仕事が されて いるかを 確かめる システム監査技法です。紙の 書類だけで なく 電子データも 対象に します。"
+  },
+  {
+    "id": "sv-interview",
+    "name": "インタビュー法",
+    "reading": "いんたびゅーほう",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🎤",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansa-giho",
+      "sv-doc-review",
+      "sv-genchi"
+    ],
+    "description": "監査する 部門の 関係者に 直接 話を 聞く システム監査技法です。システム監査基準では、口頭の 証拠だけに たよらず、書類 などの 証拠で 裏付けを 取る ことを 求めています。"
+  },
+  {
+    "id": "sv-genchi",
+    "name": "現地調査法",
+    "reading": "げんちちょうさほう",
+    "journey": "service",
+    "category": "監査の進めかた",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🚶",
+    "mapNode": "service:tejun",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-kansa-giho",
+      "sv-interview",
+      "sv-doc-review"
+    ],
+    "description": "システム監査人が 現場に 行き、自分の 目で 確かめて 評価する システム監査技法です。設備の 置きかたや 仕事の 様子を 実際に 見て 調べます。"
+  },
+  {
+    "id": "sv-service-kaizen",
+    "name": "サービスの改善",
+    "reading": "さーびすのかいぜん",
+    "journey": "service",
+    "category": "サービスの基本",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌱",
+    "mapNode": "service:sms",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-keizokuteki-kaizen",
+      "sv-service-teikyo",
+      "sv-hokoku"
+    ],
+    "description": "サービスを 今よりも よく する ことです。サービスマネジメントの 計画立案・設計・移行・提供・改善の 1つで、実績を 見て 足りない ところを 直します。"
+  },
+  {
+    "id": "sv-shisetsu",
+    "name": "施設",
+    "reading": "しせつ",
+    "journey": "service",
+    "category": "ファシリティ",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏬",
+    "mapNode": "service:facility",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-setsubi",
+      "sv-iji-hozen",
+      "sv-facility-mgmt"
+    ],
+    "description": "コンピュータを 置く 建物や 部屋の ことです。システム環境整備では、コンピュータ・ネットワークと いっしょに 施設や 設備を 維持保全します。"
+  },
+  {
+    "id": "sv-keieisha",
+    "name": "経営者",
+    "reading": "けいえいしゃ",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👔",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-it-mgmt",
+      "sv-torishimariyakukai",
+      "sv-it-governance"
+    ],
+    "description": "会社を 動かす 責任を もつ 人です。ITマネジメントでは、IT の 利活用を コントロールした 結果を 経営者に 報告します。"
+  },
+  {
+    "id": "sv-tenkai",
+    "name": "展開",
+    "reading": "てんかい",
+    "journey": "service",
+    "category": "変更とリリース",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌐",
+    "mapNode": "service:henko",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-release",
+      "sv-release-kanri",
+      "sv-service-iko"
+    ],
+    "description": "リリースした サービスや ソフトウェアを、利用者の 環境へ 広げて 使える ように する ことです。シラバスの「リリース及び展開管理」の 展開です。"
+  },
+  {
+    "id": "sv-kansa-iken",
+    "name": "監査意見",
+    "reading": "かんさいけん",
+    "journey": "service",
+    "category": "システム監査",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🗨",
+    "mapNode": "service:kansa",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-hosho-iken",
+      "sv-jogen-iken",
+      "sv-kansa-hokokusho"
+    ],
+    "description": "システム監査人が、監査証拠に もとづいて 示す 判断です。保証を 目的と する 保証意見と、改善を 目的と する 助言意見が あり、システム監査報告書で 伝えます。"
+  },
+  {
+    "id": "sv-rigai",
+    "name": "利害関係者",
+    "reading": "りがいかんけいしゃ",
+    "journey": "service",
+    "category": "内部統制とガバナンス",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "👥",
+    "mapNode": "service:governance",
+    "field": "システム監査",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-setsumei-sekinin",
+      "sv-soshikitai",
+      "sv-system-kansa"
+    ],
+    "description": "会社の 活動に よって 得を したり 損を したり する 人たちです。株主・お客さま・社員 などで、システム監査には 利害関係者への 説明責任を 果たす 目的が あります。"
+  },
+  {
+    "id": "sv-keizokuteki-kaizen",
+    "name": "継続的改善",
+    "reading": "けいぞくてきかいぜん",
+    "journey": "service",
+    "category": "サービスの管理",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "♻️",
+    "mapNode": "service:sms",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-kaizen",
+      "sv-sms",
+      "sv-hokoku"
+    ],
+    "description": "サービスを 一回で 終わらせず、PDCA の サイクルで ずっと 見なおし つづける ことです。サービスマネジメントシステムの 用語例です。"
+  },
+  {
+    "id": "sv-kokyaku",
+    "name": "顧客",
+    "reading": "こきゃく",
+    "journey": "service",
+    "category": "サービスレベル",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧑‍💼",
+    "mapNode": "service:sla",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-sla",
+      "sv-goi-bunsho",
+      "sv-riyosha"
+    ],
+    "description": "サービスを 受ける 側です。SLA は サービスを 出す 組織と 顧客との 間で、サービスの 中身と 水準を 決める 合意文書です。"
+  },
+  {
+    "id": "sv-performance",
+    "name": "パフォーマンス",
+    "reading": "ぱふぉーまんす",
+    "journey": "service",
+    "category": "サービスレベル",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🏃",
+    "mapNode": "service:sla",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-sla",
+      "sv-sli",
+      "sv-service-level"
+    ],
+    "description": "サービスの 出来ばえの ことで、速さや 使える 時間 などで 表します。SLA には サービスと その 合意された パフォーマンスを 書きます。"
+  },
+  {
+    "id": "sv-goi-bunsho",
+    "name": "合意文書",
+    "reading": "ごういぶんしょ",
+    "journey": "service",
+    "category": "サービスレベル",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "✍️",
+    "mapNode": "service:sla",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-sla",
+      "sv-kokyaku",
+      "sv-slo"
+    ],
+    "description": "おたがいに 話し合って 決めた ことを 書いた 文書です。SLA は サービスを 出す 組織と 顧客との 間の 合意文書で、サービスの 中身と パフォーマンスを 決めます。"
+  },
+  {
+    "id": "sv-riyosha",
+    "name": "利用者",
+    "reading": "りようしゃ",
+    "journey": "service",
+    "category": "サービスデスク",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🧑‍💻",
+    "mapNode": "service:desk",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-service-desk",
+      "sv-kokyaku",
+      "sv-toiawase"
+    ],
+    "description": "実際に サービスを 使う 人です。サービスデスクは 利用者からの 問合せに 対して、単一の 窓口(SPOC)を 用意します。"
+  },
+  {
+    "id": "sv-system-kankyo",
+    "name": "システム環境",
+    "reading": "しすてむかんきょう",
+    "journey": "service",
+    "category": "ファシリティ",
+    "difficulty": 3,
+    "type": "concept",
+    "emoji": "🌡",
+    "mapNode": "service:facility",
+    "field": "サービスマネジメント",
+    "ruleset": "マネジメント系",
+    "relatedTerms": [
+      "sv-iji-hozen",
+      "sv-facility-mgmt",
+      "sv-setsubi"
+    ],
+    "description": "コンピュータ・ネットワーク などの、システムが 動く まわりの 環境です。システム環境整備では、システム環境や 施設・設備を よい 状態に 保ちます。"
+  }
+]

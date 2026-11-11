@@ -1,0 +1,1919 @@
+[
+ {
+  "id": "nw-lan",
+  "name": "LAN",
+  "reading": "らん",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏢",
+  "mapNode": "nettowaku:lan",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-wan",
+   "nw-musen-lan",
+   "nw-ethernet"
+  ],
+  "description": "Local Area Network の 略で、会社の 建物の 中や 家の 中など せまい 範囲で パソコンや プリンタを つなぐ ネットワークです。はなれた 拠点を 結ぶ WAN と 組み合わせて 職場の ネットワークが できています。"
+ },
+ {
+  "id": "nw-ip-address",
+  "name": "IPアドレス",
+  "reading": "あいぴーあどれす",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "nettowaku:ip",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-ipv4",
+   "nw-ipv6",
+   "nw-domain"
+  ],
+  "description": "インターネットなどで 通信相手を 見分ける ための 番号で、ネットワークの 上の 住所の ような ものです。いまは 32ビットの IPv4 と 128ビットの IPv6 が 使われています。"
+ },
+ {
+  "id": "nw-router",
+  "name": "ルーター",
+  "reading": "るーたー",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔀",
+  "mapNode": "nettowaku:kiki",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-network-layer",
+   "nw-default-gateway",
+   "nw-switch"
+  ],
+  "description": "ネットワークと ネットワークを つなぎ、IPアドレスを 見て データの 行き先を えらぶ 機器です。社内の LAN を インターネットに つなぐ ときにも 使います。"
+ },
+ {
+  "id": "nw-wifi",
+  "name": "Wi-Fi",
+  "reading": "わいふぁい",
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-musen-lan",
+   "nw-wifi6",
+   "nw-ap"
+  ],
+  "description": "無線LAN の 規格に 合っている 機器に 付けられる 呼び名です。ケーブルなしで パソコンや スマートフォンを ネットワークに つなげます。"
+ },
+ {
+  "id": "nw-database",
+  "name": "データベース",
+  "reading": "でーたべーす",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🗄️",
+  "mapNode": "nettowaku:db",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-dbms",
+   "nw-rdb",
+   "nw-table"
+  ],
+  "description": "決まった 形で 整理して ためた データの 集まりです。たくさんの 人が 同じ データを 正しく 取り出したり 更新したり できるように、DBMS で 管理します。"
+ },
+ {
+  "id": "nw-url",
+  "name": "URL",
+  "reading": "ゆーあーるえる",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-domain",
+   "nw-http",
+   "nw-https"
+  ],
+  "description": "Web ページなどが インターネットの どこに あるかを あらわす 書きかたです。「https://」の あとに ドメイン名や ファイルの 場所が 続きます。"
+ },
+ {
+  "id": "nw-domain",
+  "name": "ドメイン名",
+  "reading": "どめいんめい",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "nettowaku:ip",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-dns",
+   "nw-ip-address",
+   "nw-url"
+  ],
+  "description": "数字の IPアドレスの かわりに 使う、人が 覚えやすい コンピュータの 名前です。メールアドレスの @ の うしろや URL の 中に 入っています。"
+ },
+ {
+  "id": "nw-musen-lan",
+  "name": "無線LAN",
+  "reading": "むせんらん",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "nettowaku:lan",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-wifi",
+   "nw-ap",
+   "nw-essid"
+  ],
+  "description": "ケーブルの かわりに 電波で つなぐ LAN です。配線が いらず 席を 移っても 使えますが、通信を 暗号化する 設定を して 使う ことが 大切です。"
+ },
+ {
+  "id": "nw-cc",
+  "name": "cc",
+  "reading": "しーしー",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📨",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-bcc",
+   "nw-smtp",
+   "nw-mailing-list"
+  ],
+  "description": "メールの 写しを 送る 宛先です。cc に 入れた アドレスは ほかの 受信者にも 見えるので、たがいに 知り合いの 人に 「念のため 共有」する ときに 使います。"
+ },
+ {
+  "id": "nw-bcc",
+  "name": "bcc",
+  "reading": "びーしーしー",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🙈",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-cc",
+   "nw-mailing-list",
+   "nw-smtp"
+  ],
+  "description": "ほかの 受信者に アドレスが 見えない 宛先です。おたがいを 知らない 大勢に 同じ メールを 送る ときは bcc を 使います。cc に 入れると 全員の アドレスが 見えてしまいます。"
+ },
+ {
+  "id": "nw-tethering",
+  "name": "テザリング",
+  "reading": "てざりんぐ",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📱",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-sim",
+   "nw-5g",
+   "nw-packet"
+  ],
+  "description": "スマートフォンを 親機に して、パソコンや タブレットを モバイル回線で インターネットに つなぐ 使いかたです。外出先で Wi-Fi が ない ときに 便利です。"
+ },
+ {
+  "id": "nw-5g",
+  "name": "5G",
+  "reading": "ふぁいぶじー",
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "🚀",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-lte",
+   "nw-tethering",
+   "nw-edge"
+  ],
+  "description": "第5世代の 移動体通信規格です。超高速(最高 10Gbps)・超低遅延(1ミリ秒 程度)・多数同時接続(1平方キロメートルに 100万台)が 特長で、IoT にも 使われます。"
+ },
+ {
+  "id": "nw-protocol",
+  "name": "通信プロトコル",
+  "reading": "つうしんぷろとこる",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "📜",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-tcpip",
+   "nw-osi",
+   "nw-http"
+  ],
+  "description": "コンピュータどうしが 通信する ための 共通の 決まりごとです。送る 側と 受ける 側が 同じ プロトコルを 使う ことで、ちがう 会社の 機器どうしでも やりとり できます。"
+ },
+ {
+  "id": "nw-sim",
+  "name": "SIMカード",
+  "reading": "しむかーど",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "💳",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-esim",
+   "nw-mnp",
+   "nw-mvno"
+  ],
+  "description": "スマートフォンなどに 入れて、モバイル通信の 契約者を 見分ける ための 小さな IC カードです。電話番号などの 契約の 情報が 記録されています。"
+ },
+ {
+  "id": "nw-online-storage",
+  "name": "オンラインストレージ",
+  "reading": "おんらいんすとれーじ",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 1,
+  "type": "concept",
+  "emoji": "☁️",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-url",
+   "nw-https",
+   "nw-isp"
+  ],
+  "description": "インターネット上の サーバに ファイルを 保存できる サービスです。どこからでも 使えて 共有も かんたんですが、公開範囲の 設定を まちがえると 情報が もれる ので 注意します。"
+ },
+ {
+  "id": "nw-wan",
+  "name": "WAN",
+  "reading": "わん",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌏",
+  "mapNode": "nettowaku:lan",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-lan",
+   "nw-tsushin-kaisen",
+   "nw-isp"
+  ],
+  "description": "Wide Area Network の 略で、本社と 支店の ように はなれた 場所の LAN どうしを 通信事業者の 回線で 結ぶ 広い ネットワークです。建物の 中の せまい 範囲なら LAN です。"
+ },
+ {
+  "id": "nw-dns",
+  "name": "DNS",
+  "reading": "でぃーえぬえす",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📖",
+  "mapNode": "nettowaku:ip",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-domain",
+   "nw-ip-address",
+   "nw-url"
+  ],
+  "description": "Domain Name System の 略で、ドメイン名と IPアドレスを 対応させる しくみです。URL を 打つと DNS が IPアドレスを 調べて くれるので、数字を 覚えなくても Web を 見られます。"
+ },
+ {
+  "id": "nw-dhcp",
+  "name": "DHCP",
+  "reading": "でぃーえいちしーぴー",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎟️",
+  "mapNode": "nettowaku:ip",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-ip-address",
+   "nw-private-address",
+   "nw-default-gateway"
+  ],
+  "description": "パソコンが ネットワークに つながった ときに、IPアドレスなどの 設定を 自動で 割り当てる プロトコルです。一台ずつ 手で 設定しなくて よく なります。"
+ },
+ {
+  "id": "nw-https",
+  "name": "HTTPS",
+  "reading": "えいちてぃーてぃーぴーえす",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-http",
+   "nw-url",
+   "nw-port"
+  ],
+  "description": "HTTP over TLS の ことで、Web の 通信を TLS で 暗号化した ものです。入力した 内容が 途中で 読まれたり 書きかえられたり しにくく なります。ふつうの ポート番号は 443 です。"
+ },
+ {
+  "id": "nw-http",
+  "name": "HTTP",
+  "reading": "えいちてぃーてぃーぴー",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-https",
+   "nw-url",
+   "nw-application-layer"
+  ],
+  "description": "HyperText Transfer Protocol の 略で、Web ブラウザと Web サーバが Web ページを やりとりする プロトコルです。暗号化 しないので、大事な 情報は HTTPS で 送ります。"
+ },
+ {
+  "id": "nw-smtp",
+  "name": "SMTP",
+  "reading": "えすえむてぃーぴー",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📤",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-pop",
+   "nw-imap",
+   "nw-mime"
+  ],
+  "description": "Simple Mail Transfer Protocol の 略で、メールを 送る ときや サーバどうしで 中継する ときに 使う プロトコルです。受け取る 側で 使う POP・IMAP と 取りちがえない ように します。"
+ },
+ {
+  "id": "nw-pop",
+  "name": "POP",
+  "reading": "ぽっぷ",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📥",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-imap",
+   "nw-smtp",
+   "nw-cc"
+  ],
+  "description": "メールサーバに 届いた メールを 自分の 端末に 受け取る プロトコルです(いまは POP3)。ふつうは 受け取った メールを 手元に 移すので、ほかの 端末からは 読みにくく なります。"
+ },
+ {
+  "id": "nw-imap",
+  "name": "IMAP",
+  "reading": "あいまっぷ",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🗂️",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-pop",
+   "nw-smtp",
+   "nw-online-storage"
+  ],
+  "description": "メールを サーバに 置いたまま 読んだり 整理したり する プロトコルです。パソコンと スマートフォンなど 複数の 端末で 同じ メールを 見られます。受け取って 手元に 移すのは POP です。"
+ },
+ {
+  "id": "nw-tcpip",
+  "name": "TCP/IP",
+  "reading": "てぃーしーぴーあいぴー",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧱",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-osi",
+   "nw-udp",
+   "nw-protocol"
+  ],
+  "description": "インターネットで 標準的に 使われる プロトコルの 集まりです。TCP/IP 階層モデルは ネットワークインタフェース層・インターネット層・トランスポート層・アプリケーション層の 4層です。"
+ },
+ {
+  "id": "nw-cookie",
+  "name": "cookie",
+  "reading": "くっきー",
+  "acceptedReadings": [
+   "くっきー"
+  ],
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🍪",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-http",
+   "nw-url",
+   "nw-https"
+  ],
+  "description": "Web サイトが ブラウザに 保存させる 小さな 情報です。ログインの 状態や 買い物かごの 中身を 覚えて おくのに 使われます。共用の パソコンでは 使いおわったら ログアウトします。"
+ },
+ {
+  "id": "nw-mailing-list",
+  "name": "メーリングリスト",
+  "reading": "めーりんぐりすと",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "👥",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-bcc",
+   "nw-cc",
+   "nw-smtp"
+  ],
+  "description": "決まった 1つの アドレスに メールを 送ると、登録している 人 全員に 同じ メールが 届く しくみです。チームや 部署の 連絡に 使われます。"
+ },
+ {
+  "id": "nw-hub",
+  "name": "ハブ",
+  "reading": "はぶ",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "nettowaku:kiki",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-switch",
+   "nw-lan",
+   "nw-physical-layer"
+  ],
+  "description": "LAN の ケーブルを 束ねて 機器を つなぐ 集線装置です。かんたんな ハブは 受けた データを ほかの ポート ぜんぶに 流します。宛先を 見て 送り先を えらぶのは スイッチです。"
+ },
+ {
+  "id": "nw-switch",
+  "name": "スイッチ",
+  "reading": "すいっち",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🎚️",
+  "mapNode": "nettowaku:kiki",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-hub",
+   "nw-mac-address",
+   "nw-datalink-layer"
+  ],
+  "description": "宛先の MACアドレスを 見て、データを 必要な ポートだけに 送る 集線装置です(スイッチングハブ)。OSI の データリンク層で 働きます。IPアドレスで ネットワークを つなぐのは ルーターです。"
+ },
+ {
+  "id": "nw-mac-address",
+  "name": "MACアドレス",
+  "reading": "まっくあどれす",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🪪",
+  "mapNode": "nettowaku:kiki",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-switch",
+   "nw-ip-address",
+   "nw-datalink-layer"
+  ],
+  "description": "ネットワークに つなぐ 機器(ネットワークインタフェースカード)に 1つずつ 付けられた 番号です。同じ LAN の 中で 相手を 見分けるのに 使います。IPアドレスとは 別の 番号です。"
+ },
+ {
+  "id": "nw-ap",
+  "name": "アクセスポイント",
+  "reading": "あくせすぽいんと",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "nettowaku:kiki",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-musen-lan",
+   "nw-essid",
+   "nw-wifi"
+  ],
+  "description": "無線LAN の 親機で、パソコンや スマートフォンを 電波で つなぎ、有線の ネットワークへの 入口に なる 機器です。AP とも 書きます。"
+ },
+ {
+  "id": "nw-isp",
+  "name": "ISP",
+  "reading": "あいえすぴー",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏬",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-wan",
+   "nw-mvno",
+   "nw-tsushin-kaisen"
+  ],
+  "description": "Internet Service Provider の 略で、家庭や 会社を インターネットに つなぐ サービスを 行う 事業者です。インターネット接続サービス事業者とも いいます。"
+ },
+ {
+  "id": "nw-primary-key",
+  "name": "主キー",
+  "reading": "しゅきー",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔑",
+  "mapNode": "nettowaku:sekkei",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-foreign-key",
+   "nw-table",
+   "nw-record"
+  ],
+  "description": "表の 中の 1行を 1つに 決める ための 項目です。同じ 値が 2つ あっては ならず、空(値なし)にも できません。社員番号や 商品コードなどが 使われます。"
+ },
+ {
+  "id": "nw-foreign-key",
+  "name": "外部キー",
+  "reading": "がいぶきー",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧷",
+  "mapNode": "nettowaku:sekkei",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-primary-key",
+   "nw-table",
+   "nw-ketsugo"
+  ],
+  "description": "ほかの 表の 主キーを 参照する 項目です。参照先に 無い 値は 入れられないので、表と 表の つながりが くずれません。行を 1つに 決めるのは 主キーで、外部キーでは ありません。"
+ },
+ {
+  "id": "nw-rdb",
+  "name": "関係データベース",
+  "reading": "かんけいでーたべーす",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📊",
+  "mapNode": "nettowaku:db",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-table",
+   "nw-sql",
+   "nw-nosql"
+  ],
+  "description": "データを 行と 列の 表(テーブル)で あらわし、表どうしを 項目で 関連づける データベースです。管理する ソフトを RDBMS と いい、操作には SQL を 使います。"
+ },
+ {
+  "id": "nw-dbms",
+  "name": "DBMS",
+  "reading": "でぃーびーえむえす",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧰",
+  "mapNode": "nettowaku:db",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-database",
+   "nw-haita",
+   "nw-shogai-kaifuku"
+  ],
+  "description": "Database Management System の 略で、データベースを 管理する ソフトです。データの 一貫性を 保ち、同時に 使う ときの 排他制御や、障害の あとの 回復の 機能を もちます。"
+ },
+ {
+  "id": "nw-sql",
+  "name": "SQL",
+  "reading": "えすきゅーえる",
+  "acceptedReadings": [
+   "えすきゅーえる",
+   "しーくえる"
+  ],
+  "journey": "nettowaku",
+  "category": "データ操作",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "💬",
+  "mapNode": "nettowaku:sosa",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-rdb",
+   "nw-sentaku",
+   "nw-shaei"
+  ],
+  "description": "関係データベースに データの 検索・追加・更新・削除を たのむ ための 言語です。規格は JIS X 3005 で 決まっています。ITパスポート試験では 文法は 問われません。"
+ },
+ {
+  "id": "nw-table",
+  "name": "テーブル",
+  "reading": "てーぶる",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📋",
+  "mapNode": "nettowaku:sekkei",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-record",
+   "nw-field",
+   "nw-primary-key"
+  ],
+  "description": "関係データベースで データを しまう 行と 列の 表です。1行が 1件の データ(レコード)、1列が 1つの 項目(フィールド)を あらわします。"
+ },
+ {
+  "id": "nw-record",
+  "name": "レコード",
+  "reading": "れこーど",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🧾",
+  "mapNode": "nettowaku:sekkei",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-table",
+   "nw-field",
+   "nw-primary-key"
+  ],
+  "description": "表の 中の 1行ぶん、つまり 1件ぶんの データです。たとえば 社員の 表なら 1人ぶんの 社員番号・氏名・所属が 1つの レコードです。"
+ },
+ {
+  "id": "nw-transaction",
+  "name": "トランザクション",
+  "reading": "とらんざくしょん",
+  "journey": "nettowaku",
+  "category": "トランザクション",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "📦",
+  "mapNode": "nettowaku:transaction",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-acid",
+   "nw-rollback",
+   "nw-haita"
+  ],
+  "description": "データベースで 切りはなせない ひとまとまりの 処理の 単位です。振込なら「出金」と「入金」の 両方が 終わって はじめて 確定し、途中で 失敗したら どちらも 取り消します。"
+ },
+ {
+  "id": "nw-haita",
+  "name": "排他制御",
+  "reading": "はいたせいぎょ",
+  "journey": "nettowaku",
+  "category": "トランザクション",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🚧",
+  "mapNode": "nettowaku:transaction",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-transaction",
+   "nw-deadlock",
+   "nw-acid"
+  ],
+  "description": "同時実行制御とも いい、複数の 人が 同じ データを 同時に 更新して 中身が くずれないよう、使っている あいだ ほかの 人を 待たせる(ロックする)しくみです。"
+ },
+ {
+  "id": "nw-rollback",
+  "name": "ロールバック",
+  "reading": "ろーるばっく",
+  "journey": "nettowaku",
+  "category": "トランザクション",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "⏪",
+  "mapNode": "nettowaku:kaifuku",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-rollforward",
+   "nw-transaction",
+   "nw-checkpoint"
+  ],
+  "description": "バックワードリカバリとも いい、トランザクションの 途中で 失敗した ときに、更新前の 状態へ もどす ことです。バックアップと ログで 前に 進めて 直すのは ロールフォワードです。"
+ },
+ {
+  "id": "nw-ipv6",
+  "name": "IPv6",
+  "reading": "あいぴーぶいしっくす",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "nettowaku:ip",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-ipv4",
+   "nw-ip-address",
+   "nw-global-address"
+  ],
+  "description": "IPアドレスの 長さを 128ビットに した 新しい 版です。IPv4(32ビット)では 足りなく なった アドレスの 数を 大きく ふやせます。"
+ },
+ {
+  "id": "nw-private-address",
+  "name": "プライベートアドレス",
+  "reading": "ぷらいべーとあどれす",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🏠",
+  "mapNode": "nettowaku:ip",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-global-address",
+   "nw-ipv4",
+   "nw-dhcp"
+  ],
+  "description": "会社や 家の 中の ネットワークだけで 使う IPアドレスです。10.0.0.0〜10.255.255.255・172.16.0.0〜172.31.255.255・192.168.0.0〜192.168.255.255 の 3つの 範囲が あります。"
+ },
+ {
+  "id": "nw-global-address",
+  "name": "グローバルアドレス",
+  "reading": "ぐろーばるあどれす",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "🌍",
+  "mapNode": "nettowaku:ip",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-private-address",
+   "nw-ip-address",
+   "nw-isp"
+  ],
+  "description": "インターネットの 上で 重ならない ように 割り当てられる IPアドレスです。組織の 中だけで 使う プライベートアドレスとは ちがい、インターネットと 直接 通信できます。"
+ },
+ {
+  "id": "nw-packet",
+  "name": "パケット通信",
+  "reading": "ぱけっとつうしん",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 2,
+  "type": "concept",
+  "emoji": "✉️",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-tethering",
+   "nw-sim",
+   "nw-mvno"
+  ],
+  "description": "データを パケットと いう 小さな 単位に 分けて 送る 通信です。回線を ほかの 人と 分けあって 使えます。料金には 使った 量に 応じる 従量制と、決まった 額の 定額制が あります。"
+ },
+ {
+  "id": "nw-ipv4",
+  "name": "IPv4",
+  "reading": "あいぴーぶいふぉー",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔢",
+  "mapNode": "nettowaku:ip",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-ipv6",
+   "nw-private-address",
+   "nw-ip-address"
+  ],
+  "description": "32ビットの IPアドレスで、8ビットずつ 4つに 区切って 192.168.1.1 の ように 書きます。作れる 数は 2の32乗で 約43億 個です。IPv6 は 128ビットなので 取りちがえない ように します。",
+  "formula": "2³² ≒ 約43億"
+ },
+ {
+  "id": "nw-port",
+  "name": "ポート番号",
+  "reading": "ぽーとばんごう",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-tcpip",
+   "nw-transport-layer",
+   "nw-https"
+  ],
+  "description": "同じ コンピュータの 中の どの アプリ(サービス)あての 通信かを 見分ける 番号です。たとえば HTTP は 80、HTTPS は 443、SMTP は 25、POP3 は 110、IMAP は 143 が ふつうです。"
+ },
+ {
+  "id": "nw-udp",
+  "name": "UDP",
+  "reading": "ゆーでぃーぴー",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💨",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-tcpip",
+   "nw-transport-layer",
+   "nw-port"
+  ],
+  "description": "トランスポート層の プロトコルで、届いたかの 確認や 再送を はぶいて 速く 送ります。動画や 音声、時刻合わせの NTP などに 向いています。確認しながら 確実に 送るのは TCP です。"
+ },
+ {
+  "id": "nw-osi",
+  "name": "OSI参照モデル",
+  "reading": "おーえすあいさんしょうもでる",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏗️",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-tcpip",
+   "nw-network-layer",
+   "nw-physical-layer"
+  ],
+  "description": "ISO が 作った 7層の ネットワークアーキテクチャ(OSI 基本参照モデル)です。下から 物理層・データリンク層・ネットワーク層・トランスポート層・セション層・プレゼンテーション層・アプリケーション層です。"
+ },
+ {
+  "id": "nw-network-layer",
+  "name": "ネットワーク層",
+  "reading": "ねっとわーくそう",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧭",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-router",
+   "nw-osi",
+   "nw-ip-address"
+  ],
+  "description": "OSI 基本参照モデルの 第3層です。IPアドレスを もとに、はなれた ネットワークまで データを 届ける 道すじを 決めます。ルーターが この 層で 働きます。"
+ },
+ {
+  "id": "nw-transport-layer",
+  "name": "トランスポート層",
+  "reading": "とらんすぽーとそう",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚚",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-udp",
+   "nw-port",
+   "nw-osi"
+  ],
+  "description": "OSI 基本参照モデルの 第4層で、TCP/IP 階層モデルにも 同じ 名前の 層が あります。TCP や UDP が 働き、ポート番号で アプリを 見分けて データを 届けます。"
+ },
+ {
+  "id": "nw-datalink-layer",
+  "name": "データリンク層",
+  "reading": "でーたりんくそう",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-switch",
+   "nw-mac-address",
+   "nw-osi"
+  ],
+  "description": "OSI 基本参照モデルの 第2層です。同じ ネットワークの 中で、MACアドレスを 使って となりの 機器へ 正しく データを 送ります。スイッチが この 層で 働きます。"
+ },
+ {
+  "id": "nw-application-layer",
+  "name": "アプリケーション層",
+  "reading": "あぷりけーしょんそう",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🖥️",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-http",
+   "nw-smtp",
+   "nw-osi"
+  ],
+  "description": "OSI 基本参照モデルの いちばん 上の 第7層で、TCP/IP 階層モデルでも いちばん 上の 層です。HTTP・SMTP・POP・IMAP・FTP・DHCP など、利用者が 使う サービスの プロトコルが 働きます。"
+ },
+ {
+  "id": "nw-physical-layer",
+  "name": "物理層",
+  "reading": "ぶつりそう",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⚡",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-osi",
+   "nw-hub",
+   "nw-tsushin-kaisen"
+  ],
+  "description": "OSI 基本参照モデルの いちばん 下の 第1層です。ケーブルや 電波で 0と1を 電気・光・電波の 信号に して 送る 決まりを あつかいます。"
+ },
+ {
+  "id": "nw-ftp",
+  "name": "FTP",
+  "reading": "えふてぃーぴー",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📁",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-port",
+   "nw-tcpip",
+   "nw-application-layer"
+  ],
+  "description": "File Transfer Protocol の 略で、ネットワークで ファイルを 送ったり 受け取ったり する プロトコルです。制御に 21番、データに 20番の ポートを 使います。"
+ },
+ {
+  "id": "nw-ntp",
+  "name": "NTP",
+  "reading": "えぬてぃーぴー",
+  "journey": "nettowaku",
+  "category": "通信プロトコル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏰",
+  "mapNode": "nettowaku:protocol",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-udp",
+   "nw-protocol",
+   "nw-port"
+  ],
+  "description": "Network Time Protocol の 略で、ネットワークで つながった 機器の 時計を 正しい 時刻に 合わせる プロトコルです。ログの 時刻を そろえるのに 役立ちます。ポート番号は 123 です。"
+ },
+ {
+  "id": "nw-default-gateway",
+  "name": "デフォルトゲートウェイ",
+  "reading": "でふぉるとげーとうぇい",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚪",
+  "mapNode": "nettowaku:kiki",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-router",
+   "nw-dhcp",
+   "nw-ip-address"
+  ],
+  "description": "自分の ネットワークの 外へ 出る データを まず 送る 出入口の 機器で、ふつうは ルーターです。パソコンの ネットワーク設定で IPアドレスと いっしょに 指定します。"
+ },
+ {
+  "id": "nw-proxy",
+  "name": "プロキシ",
+  "reading": "ぷろきし",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧑‍💼",
+  "mapNode": "nettowaku:kiki",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-http",
+   "nw-default-gateway",
+   "nw-router"
+  ],
+  "description": "社内の パソコンの かわりに Web サイトへ アクセスする 中継の サーバです。プロキシサーバとも いい、通信の 記録や、見ては いけない サイトへの アクセスの 制限に 使われます。"
+ },
+ {
+  "id": "nw-ethernet",
+  "name": "イーサネット",
+  "reading": "いーさねっと",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔌",
+  "mapNode": "nettowaku:lan",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-lan",
+   "nw-hub",
+   "nw-mac-address"
+  ],
+  "description": "有線LAN の 代表的な 方式です。ケーブルと スイッチで 機器を つなぎ、MACアドレスで 相手を 見分けて データを 送ります。"
+ },
+ {
+  "id": "nw-vlan",
+  "name": "VLAN",
+  "reading": "ぶいらん",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧩",
+  "mapNode": "nettowaku:lan",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-lan",
+   "nw-switch",
+   "nw-sdn"
+  ],
+  "description": "Virtual LAN の 略で、実際の ケーブルの つなぎかたとは 関係なく、スイッチの 設定で 1つの LAN を 部署ごとなどに 論理的に 分ける しくみです。"
+ },
+ {
+  "id": "nw-sdn",
+  "name": "SDN",
+  "reading": "えすでぃーえぬ",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🎛️",
+  "mapNode": "nettowaku:lan",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-vlan",
+   "nw-router",
+   "nw-switch"
+  ],
+  "description": "Software-Defined Networking の 略で、ネットワーク機器の 動きを ソフトウェアで まとめて 設定・制御する 考えかたです。機器を 1台ずつ 設定しなくても 構成を 変えられます。"
+ },
+ {
+  "id": "nw-bps",
+  "name": "bps",
+  "reading": "びーぴーえす",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📏",
+  "mapNode": "nettowaku:lan",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-tsushin-kaisen",
+   "nw-lan",
+   "nw-5g"
+  ],
+  "description": "bits per second(ビット/秒)の 略で、1秒に 何ビット 送れるかを あらわす 伝送速度の 単位です。1バイト = 8ビットなので、転送時間は データ量を ビットに 直して 速度で 割ります。",
+  "formula": "転送時間 = データ量(ビット)÷ bps"
+ },
+ {
+  "id": "nw-tsushin-kaisen",
+  "name": "通信回線",
+  "reading": "つうしんかいせん",
+  "journey": "nettowaku",
+  "category": "LANと機器",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛤️",
+  "mapNode": "nettowaku:lan",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-wan",
+   "nw-bps",
+   "nw-isp"
+  ],
+  "description": "データを 運ぶ ための 線や 回路です。光ファイバや 電話の 線、モバイルの 電波などが あり、会社は 回線事業者と 契約して 拠点どうしや インターネットに つなぎます。"
+ },
+ {
+  "id": "nw-mime",
+  "name": "MIME",
+  "reading": "まいむ",
+  "journey": "nettowaku",
+  "category": "インターネット",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📎",
+  "mapNode": "nettowaku:web",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-smtp",
+   "nw-pop",
+   "nw-cc"
+  ],
+  "description": "Multipurpose Internet Mail Extensions の 略で、文字だけを 送る ために 作られた 電子メールで、画像や 音声などの ファイルや いろいろな 文字を 送れる ように する しくみです。"
+ },
+ {
+  "id": "nw-lte",
+  "name": "LTE",
+  "reading": "えるてぃーいー",
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📶",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-5g",
+   "nw-packet",
+   "nw-handover"
+  ],
+  "description": "スマートフォンなどで 広く 使われている 移動体通信規格の 1つで、5G より 前から 普及しました。シラバスでは 5G と ならんで 移動体通信規格の 例に あがっています。"
+ },
+ {
+  "id": "nw-wifi6",
+  "name": "Wi-Fi 6",
+  "reading": "わいふぁいしっくす",
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "6️⃣",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-wifi",
+   "nw-mesh-wifi",
+   "nw-musen-lan"
+  ],
+  "description": "無線LAN の 規格 IEEE 802.11ax の 名前です。Wi-Fi 4 = 802.11n、Wi-Fi 5 = 802.11ac と 世代の 番号で よびます。Wi-Fi 6E は Wi-Fi 6 を 6GHz 帯でも 使える ように した ものです。"
+ },
+ {
+  "id": "nw-mesh-wifi",
+  "name": "メッシュWi-Fi",
+  "reading": "めっしゅわいふぁい",
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🕸️",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-wifi",
+   "nw-ap",
+   "nw-wifi6"
+  ],
+  "description": "親機と 中継機を 網の目の ように つないで、家や 事務所の 広い 範囲を 1つの 無線LAN で おおう しくみです。電波が 届きにくい 部屋を へらせます。"
+ },
+ {
+  "id": "nw-wps",
+  "name": "WPS",
+  "reading": "だぶりゅぴーえす",
+  "acceptedReadings": [
+   "だぶりゅぴーえす",
+   "だぶりゅーぴーえす"
+  ],
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔘",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-ap",
+   "nw-essid",
+   "nw-musen-lan"
+  ],
+  "description": "Wi-Fi Protected Setup の 略で、ボタンを 押すなどの かんたんな 操作で、無線LAN の 親機と 子機の 接続や 暗号化の 設定を できる しくみです。"
+ },
+ {
+  "id": "nw-essid",
+  "name": "ESSID",
+  "reading": "いーえすえすあいでぃー",
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏷️",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-ap",
+   "nw-musen-lan",
+   "nw-wps"
+  ],
+  "description": "Extended Service Set Identifier の 略で、無線LAN の ネットワークを 見分ける ための 名前です。つなぐ ときは 一覧から 正しい ESSID を えらび、パスワード(暗号化の 鍵)を 入れます。"
+ },
+ {
+  "id": "nw-wimax",
+  "name": "WiMAX",
+  "reading": "わいまっくす",
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📡",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-lte",
+   "nw-musen-lan",
+   "nw-tsushin-kaisen"
+  ],
+  "description": "広い 範囲で 使える 無線の 高速通信の 規格です。シラバスでは 無線LAN や VLAN と ならんで ネットワークの 構成要素の 例に あがっています。"
+ },
+ {
+  "id": "nw-ble",
+  "name": "BLE",
+  "reading": "びーえるいー",
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔷",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-lpwa",
+   "nw-beacon",
+   "nw-edge"
+  ],
+  "description": "Bluetooth Low Energy の 略で、少ない 電力で 動く 近い 距離の 無線通信です。電池で 長く 動かしたい IoT 機器や ビーコンに 使われます。遠くまで 届けるのは LPWA です。"
+ },
+ {
+  "id": "nw-lpwa",
+  "name": "LPWA",
+  "reading": "えるぴーだぶりゅえー",
+  "acceptedReadings": [
+   "えるぴーだぶりゅえー",
+   "えるぴーだぶりゅーえー"
+  ],
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🛰️",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-ble",
+   "nw-edge",
+   "nw-5g"
+  ],
+  "description": "Low Power Wide Area の 略で、少ない 電力で 遠くまで 届く 無線通信の 方式です。速さは 低いですが、電池で 長く 動く センサーなど IoT 機器の 通信に 向いています。"
+ },
+ {
+  "id": "nw-beacon",
+  "name": "ビーコン",
+  "reading": "びーこん",
+  "journey": "nettowaku",
+  "category": "無線とモバイル",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📍",
+  "mapNode": "nettowaku:musen",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-ble",
+   "nw-lpwa",
+   "nw-edge"
+  ],
+  "description": "決まった 場所に 置いて 電波を 出しつづけ、近くの スマートフォンなどに 位置や 情報を 知らせる 小さな 機器です。店の 案内や 建物の 中の 位置の 確認に 使われます。"
+ },
+ {
+  "id": "nw-mvno",
+  "name": "MVNO",
+  "reading": "えむぶいえぬおー",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🏪",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-isp",
+   "nw-sim",
+   "nw-mnp"
+  ],
+  "description": "Mobile Virtual Network Operator(仮想移動体通信事業者)の 略で、自分では 基地局などの 設備を もたず、ほかの 回線事業者の 回線を 借りて モバイル通信の サービスを する 事業者です。"
+ },
+ {
+  "id": "nw-handover",
+  "name": "ハンドオーバー",
+  "reading": "はんどおーばー",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🤝",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-roaming",
+   "nw-lte",
+   "nw-5g"
+  ],
+  "description": "スマートフォンを 持って 移動している ときに、通信を 切らずに つなぐ 基地局や アクセスポイントを 切りかえる ことです。ほかの 事業者の 回線を 使う ローミングとは ちがいます。"
+ },
+ {
+  "id": "nw-roaming",
+  "name": "ローミング",
+  "reading": "ろーみんぐ",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✈️",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-handover",
+   "nw-mvno",
+   "nw-sim"
+  ],
+  "description": "契約している 通信事業者の サービスの 範囲の 外で、提携する ほかの 事業者の 回線を 使って 通信する ことです。海外で 自分の スマートフォンを 使う ときなどです。"
+ },
+ {
+  "id": "nw-platinum-band",
+  "name": "プラチナバンド",
+  "reading": "ぷらちなばんど",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "💎",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-lte",
+   "nw-5g",
+   "nw-handover"
+  ],
+  "description": "電波が 建物の かげに 回りこみやすく、ビルの 中や 地下でも つながりやすい 周波数帯の 呼び名です。移動体通信で つながりやすさに かかわります。"
+ },
+ {
+  "id": "nw-esim",
+  "name": "eSIM",
+  "reading": "いーしむ",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📲",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-sim",
+   "nw-mnp",
+   "nw-mvno"
+  ],
+  "description": "embedded SIM の 略で、機器の 中に はじめから 組み込まれた SIM です。カードを 差しかえなくても、契約の 情報を 書きこんで 通信事業者を 使い分けられます。"
+ },
+ {
+  "id": "nw-mnp",
+  "name": "MNP",
+  "reading": "えむえぬぴー",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔁",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-sim",
+   "nw-mvno",
+   "nw-esim"
+  ],
+  "description": "Mobile Number Portability の 略で、携帯電話の 番号を そのまま 変えずに、ほかの 通信事業者へ 乗りかえられる しくみです。"
+ },
+ {
+  "id": "nw-ip-phone",
+  "name": "IP電話",
+  "reading": "あいぴーでんわ",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "☎️",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-packet",
+   "nw-tcpip",
+   "nw-isp"
+  ],
+  "description": "インターネットなどで 使われる IP の 技術を 使って 音声を パケットで 送る 電話です。電話と データの 回線を まとめられ、通話の 費用を おさえやすく なります。"
+ },
+ {
+  "id": "nw-edge",
+  "name": "エッジコンピューティング",
+  "reading": "えっじこんぴゅーてぃんぐ",
+  "journey": "nettowaku",
+  "category": "通信サービス",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🌐",
+  "mapNode": "nettowaku:oyo",
+  "field": "ネットワーク",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-lpwa",
+   "nw-5g",
+   "nw-ble"
+  ],
+  "description": "IoT 機器の 近くに 置いた コンピュータで データを 処理する 考えかたです。遠くの サーバまで 送らない ので、応答の 遅れや 通信量を へらせます。"
+ },
+ {
+  "id": "nw-acid",
+  "name": "ACID特性",
+  "reading": "あしっどとくせい",
+  "journey": "nettowaku",
+  "category": "トランザクション",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧪",
+  "mapNode": "nettowaku:transaction",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-transaction",
+   "nw-haita",
+   "nw-shogai-kaifuku"
+  ],
+  "description": "トランザクションが 守るべき 4つの 性質の 頭文字です。Atomicity(全部 やるか 全く やらないか)・Consistency(矛盾が ない)・Isolation(たがいに じゃましない)・Durability(確定した 結果は 消えない)です。"
+ },
+ {
+  "id": "nw-deadlock",
+  "name": "デッドロック",
+  "reading": "でっどろっく",
+  "journey": "nettowaku",
+  "category": "トランザクション",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔒",
+  "mapNode": "nettowaku:transaction",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-haita",
+   "nw-transaction",
+   "nw-2pc"
+  ],
+  "description": "2つの トランザクションが、たがいに 相手が ロックした データの 解放を 待ちつづけて、どちらも 先へ 進めなく なる 状態です。ロックする 順番を そろえると 起きにくく なります。"
+ },
+ {
+  "id": "nw-2pc",
+  "name": "2相コミットメント",
+  "reading": "にそうこみっとめんと",
+  "journey": "nettowaku",
+  "category": "トランザクション",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✌️",
+  "mapNode": "nettowaku:transaction",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-transaction",
+   "nw-acid",
+   "nw-deadlock"
+  ],
+  "description": "複数の データベースに またがる トランザクションを 確定する 手順です。まず 全部が 確定できるかを 確かめ、全部 よい ときだけ 確定し、1つでも だめなら 全部を 取り消します。"
+ },
+ {
+  "id": "nw-rollforward",
+  "name": "ロールフォワード",
+  "reading": "ろーるふぉわーど",
+  "journey": "nettowaku",
+  "category": "トランザクション",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "⏩",
+  "mapNode": "nettowaku:kaifuku",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-rollback",
+   "nw-checkpoint",
+   "nw-shogai-kaifuku"
+  ],
+  "description": "フォワードリカバリとも いい、ディスクが こわれた ときに、バックアップの データへ 更新後の ログを 当てて、障害の 直前の 状態まで 進めて 回復する ことです。更新前に もどすのは ロールバックです。"
+ },
+ {
+  "id": "nw-checkpoint",
+  "name": "チェックポイント",
+  "reading": "ちぇっくぽいんと",
+  "journey": "nettowaku",
+  "category": "トランザクション",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🚩",
+  "mapNode": "nettowaku:kaifuku",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-rollforward",
+   "nw-rollback",
+   "nw-shogai-kaifuku"
+  ],
+  "description": "メモリの 中で 更新した データを、決まった ときに まとめて ディスクに 書き出す 時点です。障害の あとは この 時点から 回復を 始められるので、回復の 時間が 短く なります。"
+ },
+ {
+  "id": "nw-shogai-kaifuku",
+  "name": "障害回復",
+  "reading": "しょうがいかいふく",
+  "journey": "nettowaku",
+  "category": "トランザクション",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🩹",
+  "mapNode": "nettowaku:kaifuku",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-rollback",
+   "nw-rollforward",
+   "nw-checkpoint"
+  ],
+  "description": "システムの 障害で データが おかしく なった ときに、DBMS の リカバリ機能で 正しい 状態に もどす ことです。ロールバック と ロールフォワードを 使い分けます。"
+ },
+ {
+  "id": "nw-er",
+  "name": "E-R図",
+  "reading": "いーあーるず",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗺️",
+  "mapNode": "nettowaku:sekkei",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-table",
+   "nw-primary-key",
+   "nw-seikika"
+  ],
+  "description": "Entity Relationship(実体と 関連)の 図で、「顧客」「注文」などの 実体と、それらの あいだの 関連を 線で 描いて データの 関係を 整理する 図です。データベースの 設計に 使います。"
+ },
+ {
+  "id": "nw-seikika",
+  "name": "正規化",
+  "reading": "せいきか",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✂️",
+  "mapNode": "nettowaku:sekkei",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-table",
+   "nw-er",
+   "nw-primary-key"
+  ],
+  "description": "同じ データが 何か所にも 重ならない ように、表を 分けて 整理する ことです。更新の ときの 食いちがいを 防げます。ITパスポート試験では 正規化の 必要性を 理解します。"
+ },
+ {
+  "id": "nw-index",
+  "name": "インデックス",
+  "reading": "いんでっくす",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔍",
+  "mapNode": "nettowaku:sekkei",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-table",
+   "nw-primary-key",
+   "nw-sentaku"
+  ],
+  "description": "本の 索引の ように、表の 中の データを 速く 探せる ように 作る しくみです。検索は 速く なりますが、データを 追加・更新する ときは 索引も 直す 手間が かかります。"
+ },
+ {
+  "id": "nw-field",
+  "name": "フィールド",
+  "reading": "ふぃーるど",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔤",
+  "mapNode": "nettowaku:sekkei",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-record",
+   "nw-table",
+   "nw-shaei"
+  ],
+  "description": "表の 1列ぶん、つまり 1つの 項目です。社員の 表なら「氏名」「所属」などが フィールドで、1行ぶんの データは レコードです。"
+ },
+ {
+  "id": "nw-cleansing",
+  "name": "データクレンジング",
+  "reading": "でーたくれんじんぐ",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧹",
+  "mapNode": "nettowaku:sekkei",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-database",
+   "nw-seikika",
+   "nw-field"
+  ],
+  "description": "データの 重なり・書きかたの ゆれ・まちがいなどを 見つけて 直し、使える きれいな データに する ことです。全角と 半角の ちがいや 同じ 人の 二重登録などを 整えます。"
+ },
+ {
+  "id": "nw-nosql",
+  "name": "NoSQL",
+  "reading": "のーえすきゅーえる",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🧺",
+  "mapNode": "nettowaku:db",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-kvs",
+   "nw-document-db",
+   "nw-rdb"
+  ],
+  "description": "関係データベース(表と SQL)とは ちがう 形の データベースの 総称です。キーバリューストア・ドキュメント指向データベース・グラフ指向データベースなどが あり、大量の データを あつかうのに 向きます。"
+ },
+ {
+  "id": "nw-kvs",
+  "name": "キーバリューストア",
+  "reading": "きーばりゅーすとあ",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🗝️",
+  "mapNode": "nettowaku:db",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-nosql",
+   "nw-document-db",
+   "nw-index"
+  ],
+  "description": "キーバリューストア(KVS)は、キー(見出し)と 値を 1組に して しまう NoSQL の データベースです。キーを 指定して すばやく 値を 取り出せます。"
+ },
+ {
+  "id": "nw-document-db",
+  "name": "ドキュメント指向データベース",
+  "reading": "どきゅめんとしこうでーたべーす",
+  "journey": "nettowaku",
+  "category": "データベース",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📄",
+  "mapNode": "nettowaku:db",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-nosql",
+   "nw-kvs",
+   "nw-rdb"
+  ],
+  "description": "JSON などの 形の 文書(ドキュメント)を 1つの 単位と して しまう NoSQL の データベースです。項目の 数や 形が データごとに ちがっても しまえます。"
+ },
+ {
+  "id": "nw-sentaku",
+  "name": "選択",
+  "reading": "せんたく",
+  "journey": "nettowaku",
+  "category": "データ操作",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔎",
+  "mapNode": "nettowaku:sosa",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-shaei",
+   "nw-ketsugo",
+   "nw-sql"
+  ],
+  "description": "表から 条件に 合う 行だけを 取り出す 関係データベースの 操作です。たとえば「所属が 営業部の 社員」の 行を 取り出します。列を 取り出すのは 射影です。"
+ },
+ {
+  "id": "nw-shaei",
+  "name": "射影",
+  "reading": "しゃえい",
+  "journey": "nettowaku",
+  "category": "データ操作",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "📐",
+  "mapNode": "nettowaku:sosa",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-sentaku",
+   "nw-ketsugo",
+   "nw-field"
+  ],
+  "description": "表から 必要な 列(項目)だけを 取り出す 関係データベースの 操作です。たとえば 社員の 表から「氏名」と「内線番号」の 列だけを 取り出します。行を しぼるのは 選択です。"
+ },
+ {
+  "id": "nw-ketsugo",
+  "name": "結合",
+  "reading": "けつごう",
+  "journey": "nettowaku",
+  "category": "データ操作",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "🔗",
+  "mapNode": "nettowaku:sosa",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-foreign-key",
+   "nw-sentaku",
+   "nw-shaei"
+  ],
+  "description": "2つの 表を 共通の 項目で つないで、1つの 表に する 関係データベースの 操作です。たとえば 注文の 表と 顧客の 表を 顧客番号で つなぎます。"
+ },
+ {
+  "id": "nw-sonyu",
+  "name": "挿入",
+  "reading": "そうにゅう",
+  "journey": "nettowaku",
+  "category": "データ操作",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "➕",
+  "mapNode": "nettowaku:sosa",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-koshin",
+   "nw-table",
+   "nw-primary-key"
+  ],
+  "description": "表に 新しい 行(レコード)を 加える 関係データベースの 操作です。主キーが すでに ある 値と 同じ 行は 加えられません。"
+ },
+ {
+  "id": "nw-koshin",
+  "name": "更新",
+  "reading": "こうしん",
+  "journey": "nettowaku",
+  "category": "データ操作",
+  "difficulty": 3,
+  "type": "concept",
+  "emoji": "✏️",
+  "mapNode": "nettowaku:sosa",
+  "field": "データベース",
+  "ruleset": "テクノロジ系",
+  "relatedTerms": [
+   "nw-sonyu",
+   "nw-transaction",
+   "nw-haita"
+  ],
+  "description": "表に ある 行の 値を 書きかえる 関係データベースの 操作です。同じ 行を 同時に 更新して 中身が くずれない ように、排他制御で 守ります。"
+ }
+]

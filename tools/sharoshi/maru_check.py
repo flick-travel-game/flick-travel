@@ -17,7 +17,9 @@ def terms():
     ids = set()
     for j in JR:
         f = HERE / f"terms-{j}.json"
-        if f.exists(): ids |= {t["id"] for t in json.loads(f.read_text(encoding="utf-8"))}
+        if f.exists():
+            try: ids |= {t["id"] for t in json.loads(f.read_text(encoding="utf-8"))}
+            except json.JSONDecodeError: pass  # ほかの 係が 書いて いる とちゅう
     return ids
 def banned(txt): return [w for w in BAN if w in ban_text(txt)]
 def main():

@@ -1,0 +1,2191 @@
+{
+ "meta": {
+  "version": 1,
+  "asOf": "2026年11月",
+  "note": "社会保険労務士の ことばを おぼえる ゲームです。本当の 試験の 前には 最新の テキストと 試験の 案内で 確かめてください。全国社会保険労務士会連合会 試験センター・厚生労働省とは 関係ありません。",
+  "exam": "(2026年11月11日に 厚生労働省の 告示・試験センターの 受験案内と 合格基準の 発表で 確かめた)\n・社会保険労務士(社労士)は 社会保険労務士法の 国家資格。会社と 働く 人の 労働保険・社会保険の 手続きや、労働時間・賃金・年金の 相談を します。\n・試験は 厚生労働大臣が 行い、事務は 全国社会保険労務士会連合会 試験センター。年 1回、8月の 日曜(令和8年度の 第58回は 8月23日)。受けるには 学歴・実務 3年・国家試験の 合格 などの 受験資格が いります。\n・選択式(条文の 空欄を うめる)8問・80分 と、択一式(5つから 1つ)70問・210分。出題の もとの 法令は 試験の 年の 4月10日 現在 施行の もの。\n・合格は 選択式・択一式 それぞれで「総得点の 基準点」かつ「科目ごとの 基準点」を 同時に こえる こと。基準点は 毎年 補正されます(択一式の 総得点は 令和4〜8年度で 42〜47点)。\n・受かった あと: 労働社会保険諸法令の 事務 2年 以上 か 厚生労働大臣が 指定した 講習を 終えて、社会保険労務士名簿に 登録します。\n・「受かる レベル」は、10の 法律の ことばと 数字(日数・年数・%)を ひととおり 知っていて、⭕❌ の ひっかけと 似た 制度の 区別に 気づけて、模擬試験で 過去の 基準点の はばを 何回も こえられる こと。ゲームだけで 合格を 約束する ものでは ありません。",
+  "mock": {
+   "n": 70,
+   "min": 210,
+   "subjects": [
+    {
+     "name": "労働基準法・労働安全衛生法",
+     "parts": [
+      {
+       "rs": [
+        "労基・安衛"
+       ],
+       "n": 10
+      }
+     ]
+    },
+    {
+     "name": "労災保険法",
+     "parts": [
+      {
+       "rs": [
+        "労災"
+       ],
+       "n": 7
+      },
+      {
+       "rs": [
+        "徴収"
+       ],
+       "n": 3,
+       "label": "徴収法"
+      }
+     ]
+    },
+    {
+     "name": "雇用保険法",
+     "parts": [
+      {
+       "rs": [
+        "雇用"
+       ],
+       "n": 7
+      },
+      {
+       "rs": [
+        "徴収"
+       ],
+       "n": 3,
+       "label": "徴収法"
+      }
+     ]
+    },
+    {
+     "name": "労務管理その他の 労働 及び 社会保険に 関する 一般常識",
+     "parts": [
+      {
+       "rs": [
+        "労一"
+       ],
+       "n": 5
+      },
+      {
+       "rs": [
+        "社一"
+       ],
+       "n": 5
+      }
+     ]
+    },
+    {
+     "name": "健康保険法",
+     "parts": [
+      {
+       "rs": [
+        "健保"
+       ],
+       "n": 10
+      }
+     ]
+    },
+    {
+     "name": "厚生年金保険法",
+     "parts": [
+      {
+       "rs": [
+        "厚年"
+       ],
+       "n": 10
+      }
+     ]
+    },
+    {
+     "name": "国民年金法",
+     "parts": [
+      {
+       "rs": [
+        "国年"
+       ],
+       "n": 10
+      }
+     ]
+    }
+   ],
+   "passEach": 4,
+   "pastPass": [
+    {
+     "year": "令和4年度(第54回)",
+     "total": 44,
+     "each": "全科目 4点"
+    },
+    {
+     "year": "令和5年度(第55回)",
+     "total": 45,
+     "each": "全科目 4点"
+    },
+    {
+     "year": "令和6年度(第56回)",
+     "total": 44,
+     "each": "全科目 4点"
+    },
+    {
+     "year": "令和7年度(第57回)",
+     "total": 42,
+     "each": "4点(雇用保険法は 3点)"
+    },
+    {
+     "year": "令和8年度(第58回)",
+     "total": 47,
+     "each": "全科目 4点"
+    }
+   ],
+   "checked": "2026年11月11日",
+   "note": "本番の 択一式は 5つから 1つ えらぶ 70問・210分(13:20〜16:50)。採点の 科目は 7つ(1科目 10点)で、労災保険法と 雇用保険法の 10問には 徴収法が 3問ずつ 入る。合格は 総得点の 基準点 かつ 科目ごとの 基準点(ふつう 4点)。基準点は 毎年 補正される(厚生労働省の 告示・合格基準の 発表で 2026年11月11日に 確かめた)。"
+  },
+  "journeys": [
+   {
+    "id": "roki",
+    "name": "労働基準法",
+    "icon": "📜",
+    "color": "#7048e8",
+    "diagram": "roki",
+    "goal": "労基法マスター",
+    "lead": "労働条件の 原則・労働契約と 明示・解雇と 退職・賃金と 平均賃金・労働時間と 休憩と 休日・変形労働時間制と フレックス・時間外労働と 36協定と 割増賃金・みなし労働と 裁量労働・年次有給休暇・年少者と 妊産婦・就業規則・記録と 災害補償と 監督など、労働基準法の ことば",
+    "stops": [
+     {
+      "name": "原則の 入口",
+      "icon": "⚖️"
+     },
+     {
+      "name": "契約の 窓口",
+      "icon": "✍️"
+     },
+     {
+      "name": "時計台",
+      "icon": "⏱"
+     },
+     {
+      "name": "休みの 公園",
+      "icon": "🏖"
+     },
+     {
+      "name": "規則の 書斎",
+      "icon": "📘"
+     }
+    ]
+   }
+  ],
+  "levels": [
+   {
+    "difficulty": 1,
+    "name": "入門",
+    "icon": "🌱",
+    "lead": "働く 人なら 知っておきたい 給料・休み・保険の ことば(小学生も)"
+   },
+   {
+    "difficulty": 2,
+    "name": "中級",
+    "icon": "📘",
+    "lead": "社労士試験の 基本の ことば"
+   },
+   {
+    "difficulty": 3,
+    "name": "上級",
+    "icon": "🎓",
+    "lead": "社労士試験に 受かる 人の ことば(数字・例外・似た 制度の 区別)"
+   }
+  ],
+  "titles": [
+   [
+    10,
+    "🌱",
+    "はじめての 給料明細"
+   ],
+   [
+    40,
+    "📜",
+    "労働条件の 読み手"
+   ],
+   [
+    90,
+    "⏱",
+    "労働時間の 番人"
+   ],
+   [
+    150,
+    "🏥",
+    "労災の 案内人"
+   ],
+   [
+    230,
+    "💼",
+    "雇用保険の 相談係"
+   ],
+   [
+    320,
+    "🧾",
+    "保険料の 計算係"
+   ],
+   [
+    420,
+    "💊",
+    "健康保険の 物知り"
+   ],
+   [
+    530,
+    "🏦",
+    "年金の 案内人"
+   ],
+   [
+    650,
+    "📊",
+    "一般常識の 達人"
+   ],
+   [
+    800,
+    "🧑‍💼",
+    "手続きの プロ"
+   ],
+   [
+    930,
+    "🏅",
+    "社労士への 道"
+   ]
+  ],
+  "allTitle": [
+   "🏆",
+   "フリック社労士マスター"
+  ],
+  "diagrams": {
+   "roki": {
+    "name": "労働基準法",
+    "w": 360,
+    "h": 360,
+    "icon": "📜",
+    "bg": "",
+    "nodes": [
+     {
+      "id": "gensoku",
+      "label": "総則・労働条件の 原則",
+      "icon": "⚖️",
+      "x": 60,
+      "y": 40
+     },
+     {
+      "id": "keiyaku",
+      "label": "労働契約・明示",
+      "icon": "✍️",
+      "x": 180,
+      "y": 40
+     },
+     {
+      "id": "kaiko",
+      "label": "解雇・退職",
+      "icon": "🚪",
+      "x": 300,
+      "y": 40
+     },
+     {
+      "id": "chingin",
+      "label": "賃金・平均賃金",
+      "icon": "💴",
+      "x": 60,
+      "y": 130
+     },
+     {
+      "id": "jikan",
+      "label": "労働時間・休憩・休日",
+      "icon": "⏱",
+      "x": 180,
+      "y": 130
+     },
+     {
+      "id": "henkei",
+      "label": "変形労働時間制・フレックス",
+      "icon": "🔄",
+      "x": 300,
+      "y": 130
+     },
+     {
+      "id": "saburoku",
+      "label": "時間外・36協定・割増",
+      "icon": "📝",
+      "x": 60,
+      "y": 220
+     },
+     {
+      "id": "minashi",
+      "label": "みなし労働・裁量・適用除外",
+      "icon": "🧭",
+      "x": 180,
+      "y": 220
+     },
+     {
+      "id": "nenkyu",
+      "label": "年次有給休暇",
+      "icon": "🏖",
+      "x": 300,
+      "y": 220
+     },
+     {
+      "id": "hogo",
+      "label": "年少者・妊産婦",
+      "icon": "🤰",
+      "x": 60,
+      "y": 310
+     },
+     {
+      "id": "kisoku",
+      "label": "就業規則・寄宿舎",
+      "icon": "📘",
+      "x": 180,
+      "y": 310
+     },
+     {
+      "id": "kantoku",
+      "label": "記録・災害補償・監督・罰則",
+      "icon": "🗂",
+      "x": 300,
+      "y": 310
+     }
+    ],
+    "edges": [
+     [
+      "gensoku",
+      "keiyaku",
+      ""
+     ],
+     [
+      "keiyaku",
+      "kaiko",
+      ""
+     ],
+     [
+      "chingin",
+      "kaiko",
+      "予告手当"
+     ],
+     [
+      "jikan",
+      "henkei",
+      ""
+     ],
+     [
+      "jikan",
+      "saburoku",
+      "こえる"
+     ],
+     [
+      "kisoku",
+      "kantoku",
+      "届出"
+     ]
+    ]
+   }
+  }
+ },
+ "terms": [
+  {
+   "id": "rk-rokiho",
+   "name": "労働基準法",
+   "reading": "ろうどうきじゅんほう",
+   "journey": "roki",
+   "category": "総則",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📜",
+   "mapNode": "roki:gensoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-rodosha",
+    "rk-gensoku"
+   ],
+   "description": "働く 人の 労働条件の 最低の 基準を 決めた 法律で、1947年に できました。社労士試験では 労働安全衛生法と あわせて 1科目で、選択式 1問・択一式 10問が 出ます。"
+  },
+  {
+   "id": "rk-chingin",
+   "name": "賃金",
+   "reading": "ちんぎん",
+   "journey": "roki",
+   "category": "賃金",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "💴",
+   "mapNode": "roki:chingin",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-gogensoku",
+    "rk-heikinchingin"
+   ],
+   "description": "給料の ことです。給料・手当・賞与 など、名前が なんで あっても、働いた ことの 対価として 使用者が 労働者に 払う ものは すべて 賃金に なります。"
+  },
+  {
+   "id": "rk-rodojikan",
+   "name": "労働時間",
+   "reading": "ろうどうじかん",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "⏱",
+   "mapNode": "roki:jikan",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-hoteijikan",
+    "rk-kyukei"
+   ],
+   "description": "休憩時間を 除いて 働く 時間です。法律で 決まった 上限が あり、こえて 働く ときには 決まった 手続きと 割増賃金が 必要です。"
+  },
+  {
+   "id": "rk-kyukei",
+   "name": "休憩",
+   "reading": "きゅうけい",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "☕",
+   "mapNode": "roki:jikan",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-jiyuriyo",
+    "rk-rodojikan"
+   ],
+   "description": "仕事の 途中で 仕事から はなれて 休む 時間です。働く 時間が 6時間を こえると 45分、8時間を こえると 1時間を、働く 時間の 途中に とります。"
+  },
+  {
+   "id": "rk-kyujitsu",
+   "name": "休日",
+   "reading": "きゅうじつ",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📅",
+   "mapNode": "roki:jikan",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-hoteikyujitsu",
+    "rk-rodojikan"
+   ],
+   "description": "働く 義務の ない 日です。使用者は 毎週 少なくとも 1回の 休日を 与えるのが 原則です。"
+  },
+  {
+   "id": "rk-nenkyu",
+   "name": "年次有給休暇",
+   "reading": "ねんじゆうきゅうきゅうか",
+   "journey": "roki",
+   "category": "年次有給休暇",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🏖",
+   "mapNode": "roki:nenkyu",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-fuyonissu",
+    "rk-jikishiteiken"
+   ],
+   "description": "お休みしても 賃金が もらえる 休みです。「有給休暇」「年休」とも いいます。6か月 続けて 働き、出勤が 8割以上 なら 10日 もらえます。"
+  },
+  {
+   "id": "rk-jikangai",
+   "name": "時間外労働",
+   "reading": "じかんがいろうどう",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🌆",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-saburoku",
+    "rk-warimashi"
+   ],
+   "description": "法定労働時間を こえて 働く ことで、「残業」とも いいます。ふだんは 36協定を 結んで 届け出て はじめて させられ、割増賃金も 払います。会社が 決めた 所定労働時間を こえても、法定の 中なら 時間外労働では ありません。"
+  },
+  {
+   "id": "rk-shugyokisoku",
+   "name": "就業規則",
+   "reading": "しゅうぎょうきそく",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "📘",
+   "mapNode": "roki:kisoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kisokutodokede",
+    "rk-zettai"
+   ],
+   "description": "職場の 働きかたの ルールを まとめた ものです。始業と 終業の 時刻・休日・賃金・退職 などを 書き、働く 人が いつでも 見られる ように します。"
+  },
+  {
+   "id": "rk-rodokeiyaku",
+   "name": "労働契約",
+   "reading": "ろうどうけいやく",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🤝",
+   "mapNode": "roki:keiyaku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-meiji",
+    "rk-keiyakukikan"
+   ],
+   "description": "働く 人が 働き、使用者が 賃金を 払う という 約束です。労働基準法の 基準に 届かない 部分は 無効と なり、法律の 基準に おきかわります。"
+  },
+  {
+   "id": "rk-kaiko",
+   "name": "解雇",
+   "reading": "かいこ",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🚪",
+   "mapNode": "roki:kaiko",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kaikoyokoku",
+    "rk-kaikoseigen"
+   ],
+   "description": "使用者の 側から 労働契約を 終わらせる ことです。働く 人の くらしに 大きく かかわる ので、予告の 決まりや 解雇できない 期間が 決められています。"
+  },
+  {
+   "id": "rk-taishoku",
+   "name": "退職",
+   "reading": "たいしょく",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🎓",
+   "mapNode": "roki:kaiko",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-shomei",
+    "rk-kinpin"
+   ],
+   "description": "働く 人が 仕事を やめる ことです。退職の ルールは 就業規則に かならず 書く ことに なっていて、やめる ときには 証明書を 求める ことも できます。"
+  },
+  {
+   "id": "rk-rodosha",
+   "name": "労働者",
+   "reading": "ろうどうしゃ",
+   "journey": "roki",
+   "category": "総則",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🧑‍🔧",
+   "mapNode": "roki:gensoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-shiyosha",
+    "rk-chingin"
+   ],
+   "description": "仕事の 種類を 問わず、事業や 事務所に 使われて 賃金を 払われる 人です。正社員でも パートでも アルバイトでも 労働者です。"
+  },
+  {
+   "id": "rk-shiyosha",
+   "name": "使用者",
+   "reading": "しようしゃ",
+   "journey": "roki",
+   "category": "総則",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "👔",
+   "mapNode": "roki:gensoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-rodosha",
+    "rk-kanrikantoku"
+   ],
+   "description": "事業主・経営の 担当者、そして 労働者に 関する ことで 事業主の ために 行為を する すべての 人です。社長だけで なく、部長や 課長も その 場面では 使用者に なります。"
+  },
+  {
+   "id": "rk-sanzensango",
+   "name": "産前産後休業",
+   "reading": "さんぜんさんごきゅうぎょう",
+   "journey": "roki",
+   "category": "年少者・妊産婦",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🤰",
+   "mapNode": "roki:hogo",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-sanzen",
+    "rk-sango"
+   ],
+   "description": "赤ちゃんを 産む 前と 産んだ あとの お休みです。産む 前は 請求すれば 6週間、産んだ あとは 8週間、お母さんの からだを 守る ために 休めます。"
+  },
+  {
+   "id": "rk-kantokusho",
+   "name": "労働基準監督署",
+   "reading": "ろうどうきじゅんかんとくしょ",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 1,
+   "type": "concept",
+   "emoji": "🏢",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kantokukan",
+    "rk-kisokutodokede"
+   ],
+   "description": "労働基準法が 守られて いるかを 見守る 国の 役所です。36協定や 就業規則の 届出先で、働く 人や 会社からの 相談も 受けて います。「監督署」とも いいます。"
+  },
+  {
+   "id": "rk-gensoku",
+   "name": "労働条件の原則",
+   "reading": "ろうどうじょうけんのげんそく",
+   "journey": "roki",
+   "category": "総則",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "roki:gensoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-rokiho",
+    "rk-kinto"
+   ],
+   "description": "労働条件は 人たるに値する 生活を 営める ものでなければ ならない という 決まりです。法律の 基準は 最低の もので、それを 理由に 労働条件を 下げては いけません。"
+  },
+  {
+   "id": "rk-roshikyotei",
+   "name": "労使協定",
+   "reading": "ろうしきょうてい",
+   "journey": "roki",
+   "category": "総則",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "✍️",
+   "mapNode": "roki:gensoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kahansu",
+    "rk-saburoku"
+   ],
+   "description": "過半数で つくる 労働組合、無ければ 過半数代表者と 使用者が 書面で 結ぶ 約束です。36協定は 届出が いりますが、清算期間 1か月以内の フレックスの 協定は 届出が いりません。"
+  },
+  {
+   "id": "rk-meiji",
+   "name": "労働条件の明示",
+   "reading": "ろうどうじょうけんのめいじ",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📄",
+   "mapNode": "roki:keiyaku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-henkohani",
+    "rk-rodokeiyaku"
+   ],
+   "description": "労働契約を 結ぶ とき、使用者が 賃金や 労働時間 などを 示す ことです。大事な 事項は 書面で 渡します(本人が 望めば メールも 可)。事実と ちがえば 働く 人は すぐに 契約を やめられます。"
+  },
+  {
+   "id": "rk-kaikoyokoku",
+   "name": "解雇予告",
+   "reading": "かいこよこく",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📢",
+   "mapNode": "roki:kaiko",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-yokokuteate",
+    "rk-yokokujogai"
+   ],
+   "description": "使用者が 解雇する ときは 少なくとも 30日前に 予告します。1日分の 平均賃金を 払えば、その 日数だけ 予告を 短く できます。社労士は 予告の 日数と 手当の 日数を 足して 30日に なるかを 確かめます。"
+  },
+  {
+   "id": "rk-yokokuteate",
+   "name": "解雇予告手当",
+   "reading": "かいこよこくてあて",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "💰",
+   "mapNode": "roki:kaiko",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kaikoyokoku",
+    "rk-heikinchingin"
+   ],
+   "description": "予告を しないで すぐに 解雇する ときに 払う お金で、30日分 以上の 平均賃金です。10日前に 予告すれば 残りの 20日分 以上を 払います。"
+  },
+  {
+   "id": "rk-kaikoseigen",
+   "name": "解雇制限",
+   "reading": "かいこせいげん",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🛡",
+   "mapNode": "roki:kaiko",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-uchikiri",
+    "rk-kyugyohosho"
+   ],
+   "description": "仕事の けがや 病気で 休む 期間と その後 30日間、産前産後休業の 期間と その後 30日間は 解雇できません。⚠️ 例外は 打切補償を 払う ときと、天災事変 などで 事業が 続けられない とき(監督署長の 認定が いる)です。"
+  },
+  {
+   "id": "rk-heikinchingin",
+   "name": "平均賃金",
+   "reading": "へいきんちんぎん",
+   "journey": "roki",
+   "category": "賃金",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧮",
+   "mapNode": "roki:chingin",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-saiteihosho",
+    "rk-yokokuteate"
+   ],
+   "description": "その日 以前 3か月間の 賃金の 合計を、その 期間の 総日数で わった 1日分の 額です。業務上の 休業・産前産後休業・試の 使用期間 などは 日数と 賃金から 除きます。"
+  },
+  {
+   "id": "rk-gogensoku",
+   "name": "賃金支払の5原則",
+   "reading": "ちんぎんしはらいのごげんそく",
+   "journey": "roki",
+   "category": "賃金",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "✋",
+   "mapNode": "roki:chingin",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-chingin",
+    "rk-hijoji"
+   ],
+   "description": "賃金は ①通貨で ②直接 ③全額を ④毎月 1回以上 ⑤一定の 期日を 決めて 払う 決まりです。法令や 労使協定に 定めが あれば 一部を 差し引けます。"
+  },
+  {
+   "id": "rk-kyugyoteate",
+   "name": "休業手当",
+   "reading": "きゅうぎょうてあて",
+   "journey": "roki",
+   "category": "賃金",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🏠",
+   "mapNode": "roki:chingin",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kyugyohosho",
+    "rk-heikinchingin"
+   ],
+   "description": "使用者の 都合(責めに 帰すべき 事由)で 休ませた とき、平均賃金の 100分の60 以上を 払う 決まりです。仕事の けがで 休む ときの 休業補償とは 別の しくみです。"
+  },
+  {
+   "id": "rk-hoteijikan",
+   "name": "法定労働時間",
+   "reading": "ほうていろうどうじかん",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🕗",
+   "mapNode": "roki:jikan",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-tokurei",
+    "rk-henkei"
+   ],
+   "description": "法律が 決めた 労働時間の 上限で、休憩を 除いて 1週 40時間・1日 8時間です。会社が 決める 所定労働時間は この 中で 決めます。"
+  },
+  {
+   "id": "rk-hoteikyujitsu",
+   "name": "法定休日",
+   "reading": "ほうていきゅうじつ",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🗓",
+   "mapNode": "roki:jikan",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kyujitsu",
+    "rk-warimashi"
+   ],
+   "description": "法律で かならず 与える 休日で、毎週 少なくとも 1回です。4週間で 4日以上 与える やりかた(変形休日制)も 認められて います。法定休日に 働くと 3割5分の 割増に なります。"
+  },
+  {
+   "id": "rk-henkei",
+   "name": "変形労働時間制",
+   "reading": "へんけいろうどうじかんせい",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔄",
+   "mapNode": "roki:henkei",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-ikkagetsu",
+    "rk-ichinen"
+   ],
+   "description": "ある 期間を 平均して 週40時間 以内なら、忙しい 日や 週に 8時間・40時間を こえて 働ける しくみです。1か月単位・1年単位・1週間単位の 3つが あります。"
+  },
+  {
+   "id": "rk-flex",
+   "name": "フレックスタイム制",
+   "reading": "ふれっくすたいむせい",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🕰",
+   "mapNode": "roki:henkei",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-seisan",
+    "rk-roshikyotei"
+   ],
+   "description": "始業と 終業の 時刻を 働く 人に まかせる しくみです。⚠️ 就業規則 などに 定める ことと、労使協定で 対象者・清算期間・総労働時間 などを 決める ことの 両方が いります。コアタイムは 決めなくても かまいません。"
+  },
+  {
+   "id": "rk-ikkagetsu",
+   "name": "1か月単位の変形労働時間制",
+   "reading": "いっかげつたんいのへんけいろうどうじかんせい",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📆",
+   "mapNode": "roki:henkei",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-henkei",
+    "rk-ichinen"
+   ],
+   "description": "1か月 以内の 期間を 平均して 週40時間を こえない ように 働く 日を 決める しくみです。労使協定 だけで なく 就業規則でも 決められる のが 1年単位との ちがいです。"
+  },
+  {
+   "id": "rk-saburoku",
+   "name": "36協定",
+   "reading": "さぶろくきょうてい",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📝",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-gendojikan",
+    "rk-tokubetsu"
+   ],
+   "description": "時間外労働・休日労働を させる ための 労使協定で、36条から この 名前です。⚠️ 結ぶ だけでは 足りず、所轄労働基準監督署長に 届け出て はじめて 法定を こえて 働かせられます。対象期間は 1年間です。"
+  },
+  {
+   "id": "rk-warimashi",
+   "name": "割増賃金",
+   "reading": "わりましちんぎん",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📈",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-rokujujikan",
+    "rk-shinya"
+   ],
+   "description": "時間外は 2割5分 以上、休日は 3割5分 以上、深夜は 2割5分 以上を 上乗せして 払う 賃金です。計算の もとに 家族手当や 通勤手当は 入れません。"
+  },
+  {
+   "id": "rk-gendojikan",
+   "name": "限度時間",
+   "reading": "げんどじかん",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🚧",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-saburoku",
+    "rk-tokubetsu"
+   ],
+   "description": "36協定で 時間外労働を のばせる ふだんの 上限で、月45時間・年360時間です。⚠️ 休日労働は 入らない 時間です。対象期間が 3か月を こえる 1年単位の 変形制では 月42時間・年320時間です。"
+  },
+  {
+   "id": "rk-minashi",
+   "name": "みなし労働時間制",
+   "reading": "みなしろうどうじかんせい",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧭",
+   "mapNode": "roki:minashi",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-jigyojogai",
+    "rk-senmon"
+   ],
+   "description": "実際の 時間に かかわらず、決めた 時間 働いたと みなす しくみです。事業場外労働・専門業務型裁量労働制・企画業務型裁量労働制の 3つが あります。"
+  },
+  {
+   "id": "rk-fuyonissu",
+   "name": "年休の付与日数",
+   "reading": "ねんきゅうのふよにっすう",
+   "journey": "roki",
+   "category": "年次有給休暇",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🔢",
+   "mapNode": "roki:nenkyu",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-nenkyu",
+    "rk-hirei"
+   ],
+   "description": "6か月で 10日、そこから 1年ごとに 11・12・14・16・18日、6年6か月 以上で 20日です。業務上の けがの 休業・育児休業・介護休業・産前産後休業の 期間は 出勤したと みなします。"
+  },
+  {
+   "id": "rk-jikishiteiken",
+   "name": "時季指定権",
+   "reading": "じきしていけん",
+   "journey": "roki",
+   "category": "年次有給休暇",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🙋",
+   "mapNode": "roki:nenkyu",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-jikihenko",
+    "rk-nenkyu"
+   ],
+   "description": "年次有給休暇を いつ とるか、働く 人が 決めて 請求できる 権利です。使用者は 請求された 時季に 与えるのが 原則です。"
+  },
+  {
+   "id": "rk-ninsanpu",
+   "name": "妊産婦",
+   "reading": "にんさんぷ",
+   "journey": "roki",
+   "category": "年少者・妊産婦",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🍼",
+   "mapNode": "roki:hogo",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-sanzen",
+    "rk-ikujijikan"
+   ],
+   "description": "妊娠中の 女性と 産後 1年を 過ぎない 女性です。請求が あれば 時間外・休日・深夜の 労働を させず、変形労働時間制でも 1日 8時間・1週 40時間を こえさせません。"
+  },
+  {
+   "id": "rk-nenshosha",
+   "name": "年少者",
+   "reading": "ねんしょうしゃ",
+   "journey": "roki",
+   "category": "年少者・妊産婦",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🧒",
+   "mapNode": "roki:hogo",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-saiteinenrei",
+    "rk-ninsanpu"
+   ],
+   "description": "満18歳 未満の 人です。午後10時〜午前5時の 深夜業は 原則 させず、36協定や 変形労働時間制も 原則 使えません。年齢を 証明する 戸籍証明書を 事業場に 備えます。"
+  },
+  {
+   "id": "rk-ikujijikan",
+   "name": "育児時間",
+   "reading": "いくじじかん",
+   "journey": "roki",
+   "category": "年少者・妊産婦",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "👶",
+   "mapNode": "roki:hogo",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-ninsanpu",
+    "rk-sanzensango"
+   ],
+   "description": "1歳に ならない 子を 育てる 女性が 請求できる 時間で、1日 2回・それぞれ 少なくとも 30分です。⚠️ 女性の 請求が あって はじめて 与える もので、休憩時間とは 別に 与えます。"
+  },
+  {
+   "id": "rk-seirikyuka",
+   "name": "生理休暇",
+   "reading": "せいりきゅうか",
+   "journey": "roki",
+   "category": "年少者・妊産婦",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🌸",
+   "mapNode": "roki:hogo",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-ninsanpu",
+    "rk-ikujijikan"
+   ],
+   "description": "生理日の 仕事が とても むずかしい 女性が 請求した とき、その 日に 働かせない 決まりです。本人の 請求が 条件で、からだを 守る ための しくみです。"
+  },
+  {
+   "id": "rk-kisokutodokede",
+   "name": "就業規則の届出",
+   "reading": "しゅうぎょうきそくのとどけで",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📮",
+   "mapNode": "roki:kisoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-ikenchoshu",
+    "rk-zettai"
+   ],
+   "description": "常時 10人 以上の 労働者を 使う 使用者は、就業規則を 作って 所轄労働基準監督署長に 届け出ます。変えた ときも 意見書を 添えて 届け出ます。10人 未満なら 届出の 義務は ありませんが、作る ことは できます。"
+  },
+  {
+   "id": "rk-ikenchoshu",
+   "name": "就業規則の意見聴取",
+   "reading": "しゅうぎょうきそくのいけんちょうしゅ",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "👂",
+   "mapNode": "roki:kisoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kahansu",
+    "rk-kisokutodokede"
+   ],
+   "description": "就業規則を 作る・変える ときは、過半数労働組合(なければ 過半数代表者)の 意見を 聴き、意見書を 届出に 添えます。⚠️ 聴くのは 意見で 同意は いりません。寄宿舎規則の 起床・就寝・外出 などは 寄宿する 人の 同意が いります。"
+  },
+  {
+   "id": "rk-meibo",
+   "name": "労働者名簿",
+   "reading": "ろうどうしゃめいぼ",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📇",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-daicho",
+    "rk-hozon"
+   ],
+   "description": "事業場ごとに 労働者 1人ずつ 作る 名簿で、氏名・生年月日・履歴・雇入れの 日・退職の 日と 事由 などを 書きます。日日 雇い入れる 人の ぶんは いりません。"
+  },
+  {
+   "id": "rk-daicho",
+   "name": "賃金台帳",
+   "reading": "ちんぎんだいちょう",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "📒",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-meibo",
+    "rk-hozon"
+   ],
+   "description": "賃金を 払う たびに 記入する 帳簿です。賃金計算期間・労働日数・労働時間数・時間外や 深夜の 時間数・賃金の 種類ごとの 額・控除した 額 などを 書きます。"
+  },
+  {
+   "id": "rk-kantokukan",
+   "name": "労働基準監督官",
+   "reading": "ろうどうきじゅんかんとくかん",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🕵️",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kantokusho",
+    "rk-bassoku"
+   ],
+   "description": "事業場に 立ち入る 臨検を して 帳簿を 見たり 話を 聞いたり できる 国の 職員です。法律の 違反の 罪に ついては 司法警察官の 仕事も します。"
+  },
+  {
+   "id": "rk-saigaihosho",
+   "name": "災害補償",
+   "reading": "さいがいほしょう",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 2,
+   "type": "concept",
+   "emoji": "🩹",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kyugyohosho",
+    "rk-uchikiri"
+   ],
+   "description": "仕事の けがや 病気の とき 使用者が 行う 補償です。療養補償・休業補償・障害補償・遺族補償(1,000日分)・葬祭料(60日分)・打切補償 などが あります。"
+  },
+  {
+   "id": "rk-kinto",
+   "name": "均等待遇",
+   "reading": "きんとうたいぐう",
+   "journey": "roki",
+   "category": "総則",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🤲",
+   "mapNode": "roki:gensoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-danjo",
+    "rk-gensoku"
+   ],
+   "description": "国籍・信条・社会的身分を 理由に、賃金や 労働時間 などの 労働条件で 差別しては いけない 決まりです。⚠️ この 条文に「性別」は 入って いません。"
+  },
+  {
+   "id": "rk-danjo",
+   "name": "男女同一賃金の原則",
+   "reading": "だんじょどういつちんぎんのげんそく",
+   "journey": "roki",
+   "category": "総則",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🟰",
+   "mapNode": "roki:gensoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kinto",
+    "rk-chingin"
+   ],
+   "description": "女性で ある ことを 理由に、賃金に ついて 男性と 差別しては いけない 決まりです。⚠️ 労働基準法の この 条文が 対象に するのは 賃金 だけで、ほかの 労働条件は 均等法などで 見ます。"
+  },
+  {
+   "id": "rk-chukan",
+   "name": "中間搾取の排除",
+   "reading": "ちゅうかんさくしゅのはいじょ",
+   "journey": "roki",
+   "category": "総則",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🚫",
+   "mapNode": "roki:gensoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kinto",
+    "rk-bassoku"
+   ],
+   "description": "法律で 許される 場合の ほか、だれも 業として 他人の 就業に 入りこんで 利益を 得ては いけない 決まりです。⚠️ 主語は「何人も」で、使用者に かぎりません。"
+  },
+  {
+   "id": "rk-komin",
+   "name": "公民権行使の保障",
+   "reading": "こうみんけんこうしのほしょう",
+   "journey": "roki",
+   "category": "総則",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗳",
+   "mapNode": "roki:gensoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kinto",
+    "rk-rodojikan"
+   ],
+   "description": "働く 時間中でも、選挙権 などの 権利を 使う ためや 公の 職務の ための 時間を 請求されたら 拒めない 決まりです。さしつかえ なければ 請求された 時刻を 変える ことは できます。"
+  },
+  {
+   "id": "rk-keiyakukikan",
+   "name": "契約期間の上限",
+   "reading": "けいやくきかんのじょうげん",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⏳",
+   "mapNode": "roki:keiyaku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-rodokeiyaku",
+    "rk-mukitenkan"
+   ],
+   "description": "期間の ある 労働契約は 原則 3年までです。高度な 専門知識の ある 人と 満60歳 以上の 人は 5年まで。一定の 事業の 完了までの 契約は 例外です。"
+  },
+  {
+   "id": "rk-baisho",
+   "name": "賠償予定の禁止",
+   "reading": "ばいしょうよていのきんし",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🙅",
+   "mapNode": "roki:keiyaku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-zenshaku",
+    "rk-kyoseichokin"
+   ],
+   "description": "労働契約を 守らなかった ときの 違約金や、損害賠償の 額を 前もって 決めておく 契約を しては いけない 決まりです。やめにくく させる 足かせを ふせぎます。"
+  },
+  {
+   "id": "rk-zenshaku",
+   "name": "前借金相殺の禁止",
+   "reading": "ぜんしゃくきんそうさいのきんし",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔗",
+   "mapNode": "roki:keiyaku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-baisho",
+    "rk-kyoseichokin"
+   ],
+   "description": "働く ことを 条件に 前もって 貸した お金(前借金)を、賃金と 相殺しては いけない 決まりです。お金を 貸す こと そのものが 禁止では ありません。"
+  },
+  {
+   "id": "rk-kyoseichokin",
+   "name": "強制貯金の禁止",
+   "reading": "きょうせいちょきんのきんし",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🐷",
+   "mapNode": "roki:keiyaku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-baisho",
+    "rk-roshikyotei"
+   ],
+   "description": "労働契約に つけて 貯金を させる 契約は できません。働く 人に たのまれて 管理する ときは、労使協定を 届け出て 規程を 周知し、預金で 受け入れる なら 利子を つけ、返して と 言われたら すぐ 返します。"
+  },
+  {
+   "id": "rk-henkohani",
+   "name": "変更の範囲の明示",
+   "reading": "へんこうのはんいのめいじ",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗺",
+   "mapNode": "roki:keiyaku",
+   "field": "労基則",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-meiji",
+    "rk-mukitenkan"
+   ],
+   "description": "2024年4月から、就業の 場所と 業務に ついて、はじめの ものに くわえて 将来 変わりうる 範囲も 書面で 示す ことに なりました。有期契約の 更新の 上限も 示します。"
+  },
+  {
+   "id": "rk-mukitenkan",
+   "name": "無期転換申込機会の明示",
+   "reading": "むきてんかんもうしこみきかいのめいじ",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔓",
+   "mapNode": "roki:keiyaku",
+   "field": "労基則",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-henkohani",
+    "rk-keiyakukikan"
+   ],
+   "description": "2024年4月から、労働契約法の 無期転換を 申し込める ように なる 有期労働契約を 結ぶ とき、申し込める ことと 転換後の 労働条件を 示す ことに なりました。"
+  },
+  {
+   "id": "rk-yokokujogai",
+   "name": "解雇予告の適用除外",
+   "reading": "かいこよこくのてきようじょがい",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧾",
+   "mapNode": "roki:kaiko",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kaikoyokoku",
+    "rk-jogainintei"
+   ],
+   "description": "日日 雇い入れる 人・2か月 以内・季節的業務で 4か月 以内の 契約の 人・試の 使用期間中の 人には 解雇予告が いりません。日日は 1か月、試用は 14日を こえると 必要です。"
+  },
+  {
+   "id": "rk-uchikiri",
+   "name": "打切補償",
+   "reading": "うちきりほしょう",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "✂️",
+   "mapNode": "roki:kaiko",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kaikoseigen",
+    "rk-saigaihosho"
+   ],
+   "description": "業務上の けがや 病気で 療養を 始めて 3年 たっても 治らない とき、平均賃金の 1,200日分を 払えば、労基法の 補償を 打ち切れます。⚠️ 解雇制限の 例外に なり、天災事変と ちがって 監督署長の 認定は いりません。"
+  },
+  {
+   "id": "rk-jogainintei",
+   "name": "解雇予告除外認定",
+   "reading": "かいこよこくじょがいにんてい",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏛",
+   "mapNode": "roki:kaiko",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-yokokujogai",
+    "rk-kaikoseigen"
+   ],
+   "description": "天災事変 などで 事業が 続けられない とき、または 労働者の 責めに 帰す 事由の ときは、監督署長の 認定で 予告なしに 解雇できます。⚠️ 解雇制限の 期間中は、労働者の 責めが あっても この 例外では 解雇できません。"
+  },
+  {
+   "id": "rk-shomei",
+   "name": "退職時等の証明",
+   "reading": "たいしょくじとうのしょうめい",
+   "journey": "roki",
+   "category": "労働契約・解雇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📜",
+   "mapNode": "roki:kaiko",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-taishoku",
+    "rk-kinpin"
+   ],
+   "description": "退職する 人が 請求すれば、使用期間・業務の 種類・地位・賃金・退職の 事由の 証明書を すぐ 渡します。⚠️ 働く 人が 請求して いない 事項を 書いては いけません。"
+  },
+  {
+   "id": "rk-kinpin",
+   "name": "金品の返還",
+   "reading": "きんぴんのへんかん",
+   "journey": "roki",
+   "category": "賃金",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎁",
+   "mapNode": "roki:chingin",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-shomei",
+    "rk-hijoji"
+   ],
+   "description": "働く 人が 退職したり 亡くなったり した とき、請求が あれば 7日 以内に 賃金を 払い、積立金や 保証金 などを 返す 決まりです。争いの ある ぶんは、争いの ない 部分を 先に 返します。"
+  },
+  {
+   "id": "rk-hijoji",
+   "name": "非常時払",
+   "reading": "ひじょうじばらい",
+   "journey": "roki",
+   "category": "賃金",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🚑",
+   "mapNode": "roki:chingin",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-gogensoku",
+    "rk-kinpin"
+   ],
+   "description": "働く 人や 家族の 出産・病気・災害 など 非常の 場合に 請求されたら、給料日の 前でも すでに 働いた ぶんの 賃金を 払う 決まりです。⚠️ 払うのは 既往の 労働の ぶんで、前貸しまでは 求められません。"
+  },
+  {
+   "id": "rk-hoshokyu",
+   "name": "出来高払制の保障給",
+   "reading": "できだかばらいせいのほしょうきゅう",
+   "journey": "roki",
+   "category": "賃金",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⚙️",
+   "mapNode": "roki:chingin",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-saiteihosho",
+    "rk-chingin"
+   ],
+   "description": "出来高払制 など 請負制で 働く 人には、労働時間に 応じて 一定額の 賃金を 保障する 決まりです。仕事の 量が 少ない 月にも くらしが 成り立つ ように します。"
+  },
+  {
+   "id": "rk-saiteihosho",
+   "name": "平均賃金の最低保障",
+   "reading": "へいきんちんぎんのさいていほしょう",
+   "journey": "roki",
+   "category": "賃金",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧷",
+   "mapNode": "roki:chingin",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-heikinchingin",
+    "rk-hoshokyu"
+   ],
+   "description": "日給・時給・出来高払の 人は、賃金の 合計を 働いた 日数で わった 額の 100分の60を 平均賃金の 下限に します。⚠️ ふだんの 計算は 総日数で わり、ここは 労働日数で わります。"
+  },
+  {
+   "id": "rk-tokurei",
+   "name": "特例事業の44時間",
+   "reading": "とくれいじぎょうのよんじゅうよじかん",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏪",
+   "mapNode": "roki:jikan",
+   "field": "労基則",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-hoteijikan",
+    "rk-henkei"
+   ],
+   "description": "常時 10人 未満の 商業・映画演劇(映画の 製作を 除く)・保健衛生・接客娯楽の 事業場だけ、週の 法定労働時間が 44時間に なる 特例です。⚠️ 1日は 8時間の ままで、18歳 未満の 人には 使えません。",
+   "acceptedReadings": [
+    "とくれいじぎょうのよんじゅうよじかん",
+    "とくれいじぎょうのよんじゅうよんじかん"
+   ]
+  },
+  {
+   "id": "rk-jiyuriyo",
+   "name": "休憩の自由利用",
+   "reading": "きゅうけいのじゆうりよう",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌳",
+   "mapNode": "roki:jikan",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kyukei",
+    "rk-roshikyotei"
+   ],
+   "description": "休憩は 自由に 使わせ、みんな 一斉に 与えるのが 原則です。一斉に 与える 原則は 労使協定で はずせます(届出は いりません)。坑内労働では 一斉付与も 自由利用も 適用されません。"
+  },
+  {
+   "id": "rk-saigaiji",
+   "name": "災害時の時間外労働",
+   "reading": "さいがいじのじかんがいろうどう",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌀",
+   "mapNode": "roki:jikan",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-saburoku",
+    "rk-kantokusho"
+   ],
+   "description": "災害 などで 臨時の 必要が ある ときは、監督署長の 許可で 時間外・休日労働を させられます。急ぎで 許可を 受ける 暇が なければ、あとで すぐ 届け出ます。⚠️ ここは 協定では なく 許可です。"
+  },
+  {
+   "id": "rk-ichinen",
+   "name": "1年単位の変形労働時間制",
+   "reading": "いちねんたんいのへんけいろうどうじかんせい",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗓",
+   "mapNode": "roki:henkei",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-ikkagetsu",
+    "rk-gendojikan"
+   ],
+   "description": "1か月を こえ 1年 以内の 期間を 平均して 週40時間 以内に する しくみです。⚠️ 労使協定(届出)が 必要で 就業規則 だけでは できません。上限は 1日 10時間・1週 52時間です。"
+  },
+  {
+   "id": "rk-isshukan",
+   "name": "1週間単位の非定型的変形労働時間制",
+   "reading": "いっしゅうかんたんいのひていけいてきへんけいろうどうじかんせい",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🍽",
+   "mapNode": "roki:henkei",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-henkei",
+    "rk-ichinen"
+   ],
+   "description": "日ごとの 忙しさの 差が 大きい 小売業・旅館・料理店・飲食店で、常時 30人 未満の 事業場だけが 使えます。労使協定を 届け出て 1日 10時間まで。⚠️ 各日の 時間は その 週が 始まる 前に 書面で 知らせます。"
+  },
+  {
+   "id": "rk-seisan",
+   "name": "清算期間",
+   "reading": "せいさんきかん",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🧾",
+   "mapNode": "roki:henkei",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-flex",
+    "rk-roshikyotei"
+   ],
+   "description": "フレックスタイム制で 労働時間を 清算する 期間で、上限は 3か月です。⚠️ 協定の 届出が いるのは 1か月を こえる ときだけで、その ときは 1か月ごとの 平均で 週50時間を こえない ことも 条件です。"
+  },
+  {
+   "id": "rk-tokubetsu",
+   "name": "特別条項",
+   "reading": "とくべつじょうこう",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⚠️",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-gendojikan",
+    "rk-hyakujikan"
+   ],
+   "description": "ふだん 予想できない 臨時の 忙しさの ときに 限度時間を こえる ための 36協定の 定めです。年 720時間 以内、月45時間を こえられるのは 年 6か月までです。"
+  },
+  {
+   "id": "rk-hyakujikan",
+   "name": "単月100時間未満",
+   "reading": "たんげつひゃくじかんみまん",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "💯",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-heikin80",
+    "rk-tokubetsu"
+   ],
+   "description": "1か月の 時間外労働と 休日労働を あわせて 100時間 未満に する 上限です。特別条項が あっても 守ります。⚠️「以下」では なく「未満」で、休日労働も 入ります。"
+  },
+  {
+   "id": "rk-heikin80",
+   "name": "複数月平均80時間",
+   "reading": "ふくすうげつへいきんはちじゅうじかん",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📊",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-hyakujikan",
+    "rk-tokubetsu"
+   ],
+   "description": "直前の 2か月〜6か月の どの 期間で 平均しても、時間外労働と 休日労働の 合計が 月80時間 以内と する 上限です。⚠️ こちらは「以内」で、休日労働も 入ります。"
+  },
+  {
+   "id": "rk-kensetsu",
+   "name": "建設事業の上限規制",
+   "reading": "けんせつじぎょうのじょうげんきせい",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🏗️",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-tokubetsu",
+    "rk-hyakujikan",
+    "rk-unten"
+   ],
+   "description": "工作物の 建設の 事業は 5年の 猶予が 終わり、2024年4月から 時間外労働の 上限規制が すべて かかります。⚠️ 災害の 復旧・復興の 事業だけは、月100時間 未満と 複数月平均80時間 以内の 規制が 当分の 間 かかりません。"
+  },
+  {
+   "id": "rk-unten",
+   "name": "自動車運転業務の上限規制",
+   "reading": "じどうしゃうんてんぎょうむのじょうげんきせい",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🚚",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-tokubetsu",
+    "rk-kensetsu",
+    "rk-ishi"
+   ],
+   "description": "トラックや タクシー などの 運転の 業務は、2024年4月から 特別条項の 時間外労働の 上限が 年960時間です。⚠️ 月100時間 未満・複数月平均80時間 以内・月45時間超は 年6か月まで の 規制は 当分の 間 かかりません。"
+  },
+  {
+   "id": "rk-ishi",
+   "name": "医師の上限規制",
+   "reading": "いしのじょうげんきせい",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🩺",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-unten",
+    "rk-kensetsu",
+    "rk-hyakujikan"
+   ],
+   "description": "医業に 従事する 医師は、2024年4月から 省令の 上限が かかります。時間外・休日労働の 年の 上限は A水準・連携B水準が 960時間、B水準・C水準が 1,860時間です。⚠️ どれも 休日労働を ふくむ 時間です。"
+  },
+  {
+   "id": "rk-rokujujikan",
+   "name": "月60時間超の割増",
+   "reading": "つきろくじゅうじかんちょうのわりまし",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔥",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-warimashi",
+    "rk-shinya"
+   ],
+   "description": "1か月の 時間外労働が 60時間を こえた 部分は 5割 以上の 割増賃金です。労使協定を 結べば、引き上げた ぶんの 支払いに かえて 有給の 代替休暇を 与えられます。"
+  },
+  {
+   "id": "rk-shinya",
+   "name": "深夜の割増賃金",
+   "reading": "しんやのわりましちんぎん",
+   "journey": "roki",
+   "category": "時間外・割増",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌙",
+   "mapNode": "roki:saburoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-warimashi",
+    "rk-kanrikantoku"
+   ],
+   "description": "午後10時から 午前5時までに 働かせた ときは 2割5分 以上の 割増です。⚠️ 管理監督者にも 深夜の 割増は 払います。時間外と 重なれば 割増は 合わせて 5割 以上です。"
+  },
+  {
+   "id": "rk-jigyojogai",
+   "name": "事業場外労働のみなし",
+   "reading": "じぎょうじょうがいろうどうのみなし",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🚶",
+   "mapNode": "roki:minashi",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-minashi",
+    "rk-senmon"
+   ],
+   "description": "営業や 出張 など 事業場の 外で 働き、労働時間を 算定しがたい ときの みなしです。原則は 所定労働時間、ふだん こえる 仕事なら 通常 必要な 時間です。⚠️ その 時間を 協定で 決め、法定労働時間を こえる なら 届け出ます。"
+  },
+  {
+   "id": "rk-senmon",
+   "name": "専門業務型裁量労働制",
+   "reading": "せんもんぎょうむがたさいりょうろうどうせい",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔬",
+   "mapNode": "roki:minashi",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kikaku",
+    "rk-minashi"
+   ],
+   "description": "研究開発・デザイン など 省令で 決めた 専門の 業務で、労使協定で 決めた 時間 働いたと みなす しくみです。協定は 届け出ます。⚠️ 2024年4月から 本人の 同意も いる ように なりました(企画業務型は 労使委員会の 決議)。"
+  },
+  {
+   "id": "rk-kikaku",
+   "name": "企画業務型裁量労働制",
+   "reading": "きかくぎょうむがたさいりょうろうどうせい",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗂",
+   "mapNode": "roki:minashi",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-senmon",
+    "rk-kodopro"
+   ],
+   "description": "会社の 運営の 企画・立案・調査・分析の 業務で 使う みなしの しくみです。労使委員会の 5分の4 以上の 決議・届出・本人の 同意が いり、同意しない 人を 不利に 扱っては いけません。"
+  },
+  {
+   "id": "rk-kanrikantoku",
+   "name": "管理監督者",
+   "reading": "かんりかんとくしゃ",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎖",
+   "mapNode": "roki:minashi",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-shinya",
+    "rk-kanshi"
+   ],
+   "description": "監督や 管理の 地位に ある 人で、労働時間・休憩・休日の 規定が 適用されません。⚠️ 深夜の 割増賃金の 規定は 適用されるので、深夜に 働けば 割増を 払います。"
+  },
+  {
+   "id": "rk-kanshi",
+   "name": "監視断続的労働",
+   "reading": "かんしだんぞくてきろうどう",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "👀",
+   "mapNode": "roki:minashi",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kanrikantoku",
+    "rk-kantokusho"
+   ],
+   "description": "見守る だけの 仕事や、手待ちが 多く とぎれとぎれに 働く 仕事です。⚠️ 監督署長の 許可を 受けた ときに かぎり、労働時間・休憩・休日の 規定が 適用されません。"
+  },
+  {
+   "id": "rk-kodopro",
+   "name": "高度プロフェッショナル制度",
+   "reading": "こうどぷろふぇっしょなるせいど",
+   "journey": "roki",
+   "category": "労働時間",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "💼",
+   "mapNode": "roki:minashi",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kikaku",
+    "rk-kanrikantoku"
+   ],
+   "description": "年収が 基準年間平均給与額の 3倍を 相当程度 上回る 専門職を、労働時間・休憩・休日・深夜の 割増の 規定から はずす しくみです。⚠️ 管理監督者と ちがい 深夜の 割増も 外れます。労使委員会の 決議・届出・本人の 書面の 同意が いります。"
+  },
+  {
+   "id": "rk-hirei",
+   "name": "比例付与",
+   "reading": "ひれいふよ",
+   "journey": "roki",
+   "category": "年次有給休暇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🪜",
+   "mapNode": "roki:nenkyu",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-fuyonissu",
+    "rk-jikantani"
+   ],
+   "description": "パートなど 働く 日が 少ない 人の 年休を、週の 日数に 合わせて 少なく する しくみです。⚠️ 週30時間 未満 かつ 週4日 以下(年216日 以下)の 両方が 条件で、週30時間 以上なら 週4日でも 10日からです。"
+  },
+  {
+   "id": "rk-jikantani",
+   "name": "時間単位年休",
+   "reading": "じかんたんいねんきゅう",
+   "journey": "roki",
+   "category": "年次有給休暇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⌛",
+   "mapNode": "roki:nenkyu",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-keikaku",
+    "rk-roshikyotei"
+   ],
+   "description": "労使協定を 結べば、年休を 1時間 単位で とれる ように できます。⚠️ 1年に 5日分 までで、協定の 届出は いりません。とるか どうかは 働く 人が えらびます。"
+  },
+  {
+   "id": "rk-keikaku",
+   "name": "計画的付与",
+   "reading": "けいかくてきふよ",
+   "journey": "roki",
+   "category": "年次有給休暇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗒",
+   "mapNode": "roki:nenkyu",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-jikantani",
+    "rk-jikishitei"
+   ],
+   "description": "労使協定で 年休を とる 日を 前もって 決める しくみで、夏の 一斉休暇 などに 使います。⚠️ 協定の 届出は いりませんが、決められるのは 5日を こえる 部分だけで、5日は 本人が 自由に とれる ように 残します。"
+  },
+  {
+   "id": "rk-jikishitei",
+   "name": "年休の時季指定義務",
+   "reading": "ねんきゅうのじきしていぎむ",
+   "journey": "roki",
+   "category": "年次有給休暇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "📌",
+   "mapNode": "roki:nenkyu",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-hozon",
+    "rk-keikaku"
+   ],
+   "description": "年休が 10日 以上 つく 人に、基準日から 1年 以内に 5日を 使用者が 時季を 決めて とらせる 義務です。⚠️ 本人の 意見を 聴いて 決め、年次有給休暇管理簿に 記録して 5年間(当分の 間は 3年間)保存します。"
+  },
+  {
+   "id": "rk-jikihenko",
+   "name": "時季変更権",
+   "reading": "じきへんこうけん",
+   "journey": "roki",
+   "category": "年次有給休暇",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔁",
+   "mapNode": "roki:nenkyu",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-jikishiteiken",
+    "rk-keikaku"
+   ],
+   "description": "請求された 日に 年休を 与えると 事業の 正常な 運営が さまたげられる とき、使用者が ほかの 日に 変えられる 権利です。⚠️ 年休を 与えない 権利では ありません。"
+  },
+  {
+   "id": "rk-sanzen",
+   "name": "産前休業",
+   "reading": "さんぜんきゅうぎょう",
+   "journey": "roki",
+   "category": "年少者・妊産婦",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🫶",
+   "mapNode": "roki:hogo",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-sango",
+    "rk-ninsanpu"
+   ],
+   "description": "出産予定日の 6週間 以内(ふたご 以上は 14週間 以内)の 女性が 請求したら 働かせない 決まりです。⚠️ 産前は 本人の 請求が 条件です。"
+  },
+  {
+   "id": "rk-sango",
+   "name": "産後休業",
+   "reading": "さんごきゅうぎょう",
+   "journey": "roki",
+   "category": "年少者・妊産婦",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🌷",
+   "mapNode": "roki:hogo",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-sanzen",
+    "rk-kaikoseigen"
+   ],
+   "description": "出産の あと 8週間は、原則 働かせては いけない 休業です。⚠️ 例外は 6週間を 過ぎて 本人が 請求し、医師が 支障ないと 認めた 業務だけ。請求が 条件の 産前休業との ちがいに 注意します。"
+  },
+  {
+   "id": "rk-saiteinenrei",
+   "name": "最低年齢",
+   "reading": "さいていねんれい",
+   "journey": "roki",
+   "category": "年少者・妊産婦",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🎒",
+   "mapNode": "roki:hogo",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-nenshosha",
+    "rk-kantokusho"
+   ],
+   "description": "満15歳に なった 日 以後の 最初の 3月31日までの 児童は 使えません。軽い 仕事なら 監督署長の 許可で 満13歳 以上、映画や 演劇の 子役なら 13歳 未満も 働けます。"
+  },
+  {
+   "id": "rk-kahansu",
+   "name": "過半数代表者",
+   "reading": "かはんすうだいひょうしゃ",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🙌",
+   "mapNode": "roki:kisoku",
+   "field": "労基則",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-roshikyotei",
+    "rk-ikenchoshu"
+   ],
+   "description": "過半数で つくる 労働組合が ない とき、労使協定や 意見の ために 選ぶ 代表です。管理監督者で ない 人を、投票や 挙手 などで 選びます。使用者の 意向で 選んでは いけません。"
+  },
+  {
+   "id": "rk-zettai",
+   "name": "絶対的必要記載事項",
+   "reading": "ぜったいてきひつようきさいじこう",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "❗",
+   "mapNode": "roki:kisoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-sotai",
+    "rk-kisokutodokede"
+   ],
+   "description": "就業規則に かならず 書く 事項で、①始業・終業の 時刻・休憩・休日・休暇・交替制 ②賃金の 決めかた・計算と 払いかた・締切と 支払の 時期・昇給 ③退職(解雇の 事由を ふくむ)です。⚠️ 退職手当は 相対的の ほうです。"
+  },
+  {
+   "id": "rk-sotai",
+   "name": "相対的必要記載事項",
+   "reading": "そうたいてきひつようきさいじこう",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "❕",
+   "mapNode": "roki:kisoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-zettai",
+    "rk-genkyu"
+   ],
+   "description": "定めを する なら 就業規則に 書く 事項です。退職手当・賞与・食費 などの 負担・安全衛生・職業訓練・災害補償・表彰と 制裁 などが あります。"
+  },
+  {
+   "id": "rk-genkyu",
+   "name": "減給の制裁",
+   "reading": "げんきゅうのせいさい",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "➖",
+   "mapNode": "roki:kisoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-sotai",
+    "rk-heikinchingin"
+   ],
+   "description": "ルール違反への 制裁で 賃金を 減らす ときの 上限です。1回の 額は 平均賃金の 1日分の 半額 以内、合計は 1回の 賃金支払期の 賃金総額の 10分の1 以内です。"
+  },
+  {
+   "id": "rk-hozon",
+   "name": "記録の保存",
+   "reading": "きろくのほぞん",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🗄",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-meibo",
+    "rk-daicho"
+   ],
+   "description": "労働者名簿・賃金台帳・雇入れや 解雇・災害補償・賃金 などの 大事な 書類は 5年間 保存します。⚠️ ただし 当分の 間は 3年間です。賃金台帳は 最後に 記入した 日から 数えます。"
+  },
+  {
+   "id": "rk-jiko",
+   "name": "労基法の時効",
+   "reading": "ろうきほうのじこう",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⌚",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-hozon",
+    "rk-fukakin"
+   ],
+   "description": "賃金の 請求権は 5年(当分の 間は 3年)、退職手当は 5年です。⚠️ 災害補償や 年次有給休暇 など 賃金 以外の 請求権は 2年です。"
+  },
+  {
+   "id": "rk-fukakin",
+   "name": "付加金",
+   "reading": "ふかきん",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "⚖️",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-yokokuteate",
+    "rk-jiko"
+   ],
+   "description": "解雇予告手当・休業手当・割増賃金・年休中の 賃金を 払わない とき、働く 人の 請求で 裁判所が 未払い分と 同じ 額を 上乗せして 命じる ことが できる お金です。"
+  },
+  {
+   "id": "rk-kyugyohosho",
+   "name": "休業補償",
+   "reading": "きゅうぎょうほしょう",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🛌",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-kyugyoteate",
+    "rk-saigaihosho"
+   ],
+   "description": "仕事の けがや 病気の 療養で 働けない とき、平均賃金の 100分の60を 払う 補償です。⚠️ 同じ 60%でも、使用者の 都合で 休ませる 休業手当とは 別の 条文です。"
+  },
+  {
+   "id": "rk-bassoku",
+   "name": "労基法の罰則",
+   "reading": "ろうきほうのばっそく",
+   "journey": "roki",
+   "category": "就業規則・監督",
+   "difficulty": 3,
+   "type": "concept",
+   "emoji": "🔨",
+   "mapNode": "roki:kantoku",
+   "field": "労基法",
+   "ruleset": "労基・安衛",
+   "relatedTerms": [
+    "rk-fukakin",
+    "rk-chukan"
+   ],
+   "description": "いちばん 重いのは 強制労働で、1年 以上 10年 以下の 拘禁刑 または 20万円 以上 300万円 以下の 罰金です。2025年6月から「懲役」は「拘禁刑」に なりました。"
+  }
+ ]
+}
